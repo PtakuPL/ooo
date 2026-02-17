@@ -106870,5 +106870,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T03:12:34.439437Z"
+  },
+  "scripts.movements_sacrifice_foods.msg_1": {
+    "src_hash": "71b1daed685515d95c1db7a04e26e17b",
+    "text": "Ukończyłeś rytuał ofiary z pożywienia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.165466Z"
+  },
+  "scripts.movements_seal.msg_1": {
+    "src_hash": "e55bdd7f9395556098104206dbbc2872",
+    "text": "Musisz odczekać, zanim znów zmierzysz się z tym bossem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.166586Z"
+  },
+  "scripts.movements_seal.msg_4": {
+    "src_hash": "eb9aca3f0c6a372bcdaf9a5dc2603dea",
+    "text": "Portal prowadzi cię do ostatecznego wyzwania.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.168490Z"
+  },
+  "scripts.movements_spike_teleport.msg_1": {
+    "src_hash": "9fc31469b46e5b0df51537b64e737c24",
+    "text": "Tylko konta premium mogą używać tego teleportera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.172085Z"
+  },
+  "scripts.movements_strangely_glowing_mark.msg_1": {
+    "src_hash": "8fbe73be5033ef0ec52b7da890a4c1cc",
+    "text": "Mityczne ognie pod twoimi stopami cię leczą.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.174273Z"
+  },
+  "scripts.movements_strangely_glowing_mark.msg_2": {
+    "src_hash": "77c4367806c8acc8d9bf0ecbc8c549bb",
+    "text": "Mityczne ognie pod twoimi stopami dały ci szybkość.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.175312Z"
+  },
+  "scripts.movements_tar.msg_2": {
+    "src_hash": "1ce84a661acf6f037903800a49bf5eba",
+    "text": "Przechodzisz przez smołę bez szwanku.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.177056Z"
+  },
+  "scripts.movements_teleport_tree.msg_1": {
+    "src_hash": "fb7638f0de3bfca8a377d31ac8a789ab",
+    "text": "Nie spełniasz żadnego warunku, aby tu wejść.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.183152Z"
+  },
+  "scripts.movements_teleports.msg_1": {
+    "src_hash": "fa1fd641d2373b304b1b8892ca9ae799",
+    "text": "Musisz założyć hełm głębin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.184111Z"
+  },
+  "scripts.movements_teleports.msg_2": {
+    "src_hash": "fa1fd641d2373b304b1b8892ca9ae799",
+    "text": "Musisz założyć hełm głębin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.185058Z"
+  },
+  "scripts.movements_teleports.msg_3": {
+    "src_hash": "9cc8cfcd87dbe13cae49baf0c55fd003",
+    "text": "Nie jesteś jeszcze we właściwym miejscu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.186015Z"
+  },
+  "scripts.movements_vortex_crackler.msg_1": {
+    "src_hash": "4e71ef9f9a3276440a3dcf8c2564117b",
+    "text": "Twoja obecność zaczyna polaryzować obszar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.189541Z"
+  },
+  "scripts.movements_warzone_entrance.msg_2": {
+    "src_hash": "615a02038b1f299229b3cd74491d4096",
+    "text": "Nie możesz wejść do tej strefy wojny. Wróg wciąż pompuje lawę do tego obszaru. Znajdź sposób, by zatrzymać pompy!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.191202Z"
+  },
+  "scripts.movements_warzone_entrance.msg_5": {
+    "src_hash": "32850037d44e1cbc5713faf7e6695f85",
+    "text": "Nie możesz wejść do tej strefy wojny. Wróg wciąż pompuje lawę do tego obszaru. Znajdź sposób, by zatrzymać pompy!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.193321Z"
+  },
+  "scripts.movements_warzone_entrance.msg_8": {
+    "src_hash": "615a02038b1f299229b3cd74491d4096",
+    "text": "Nie możesz wejść do tej strefy wojny. Wróg wciąż pompuje lawę do tego obszaru. Znajdź sposób, by zatrzymać pompy!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.195438Z"
+  },
+  "scripts.movements_yalahar_machine_war_golems.msg_1": {
+    "src_hash": "e52b2791b2423728520fdd30e651cd62",
+    "text": "Maszyny nie są aktywowane.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.196738Z"
+  },
+  "scripts.music.msg_1": {
+    "src_hash": "0d71a979be8186c9b39faa7ce9898f11",
+    "text": "W tajemniczy sposób z fletni Pana spada kilka kolorowych nut. - Pośpiesz się, szybko znikną.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.202270Z"
+  },
+  "scripts.nightmare_beast_curse.msg_1": {
+    "src_hash": "892435d766abce593cc36cf509a396c6",
+    "text": "Bestia rzuciła na ciebie straszną klątwę!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.208339Z"
+  },
+  "scripts.northern_fishburger.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.209211Z"
+  },
+  "scripts.pot_of_blackjack.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.230627Z"
+  },
+  "scripts.quest_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Drzwi wydają się być zabezpieczone przed niechcianymi intruzami.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.241445Z"
+  },
+  "scripts.rafzane_elevator.msg_1": {
+    "src_hash": "87cd4819a72b1330a710ede3cb23c10e",
+    "text": "Aby skorzystać z windy, wejdź do środka.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.244909Z"
+  },
+  "scripts.register_actions.msg_10": {
+    "src_hash": "4174dfa9efc40d93af2472d565f77247",
+    "text": "Podczas kopania znalazłeś {}.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.251393Z"
+  },
+  "scripts.register_actions.msg_11": {
+    "src_hash": "457859cd03d9e4c29df2a967ad8acb12",
+    "text": "Ten stół jest zrobiony z kilku starych drzwi. Jedne z nich mają wyraźny, ozdobny zamek. Może dałoby się go podważyć narzędziem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.252590Z"
+  },
+  "scripts.register_actions.msg_12": {
+    "src_hash": "b40a3788093c2b5203775fef1998e752",
+    "text": "Już usunąłeś stary zamek.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.253623Z"
+  },
+  "scripts.register_actions.msg_16": {
+    "src_hash": "457859cd03d9e4c29df2a967ad8acb12",
+    "text": "Ten stół jest zrobiony z kilku starych drzwi. Jedne z nich mają wyraźny, ozdobny zamek. Może dałoby się go podważyć narzędziem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.256044Z"
+  },
+  "scripts.register_actions.msg_17": {
+    "src_hash": "b40a3788093c2b5203775fef1998e752",
+    "text": "Już usunąłeś stary zamek.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.257067Z"
+  },
+  "scripts.register_actions.msg_7": {
+    "src_hash": "22cbfb574aa718a3ac1cf440f48a8c3f",
+    "text": "Wykopałeś dół! Wejdź na niego, póki jest otwarty, aby wskoczyć do leśnej jaskini.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.260439Z"
+  },
+  "scripts.register_actions.msg_9": {
+    "src_hash": "68b3b2037548d7d2f96c36135aa2439e",
+    "text": "Pojawia się rozdarty fragment zwoju. Prawdopodobnie ogryziony przez szczury.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.261887Z"
+  },
+  "scripts.roasted_dragon_wings.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.272313Z"
+  },
+  "scripts.rook_village.msg_1": {
+    "src_hash": "797b88d42c9e98832686f5ac1ae57cba",
+    "text": "Nie masz już tam nic do roboty.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.273723Z"
+  },
+  "scripts.roshamuul_carpet.msg_1": {
+    "src_hash": "6a5687ef714f8fac0aad1f89c50499db",
+    "text": "Latający dywan przeniósł cię z powrotem do Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.274829Z"
+  },
+  "scripts.rotworm_stew.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Musisz poczekać zanim użyjesz tego ponownie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.276393Z"
+  },
+  "scripts.schrodingers_island_teleport_lvl_999.msg_1": {
+    "src_hash": "414a776dd8b476b776201820fe383717",
+    "text": "Potrzebujesz poziomu 999, aby wejść tutaj.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.279735Z"
+  },
+  "scripts.seacrest.msg_1": {
+    "src_hash": "5147c955481cbf7abcc4b32850c6898d",
+    "text": "Wchodzisz na teren Seacrest.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T03:14:23.281463Z"
   }
 }

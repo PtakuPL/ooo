@@ -30574,5 +30574,109 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:49:11.983047Z"
+  },
+  "quests.movements_stepin.msg_1": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Вы должны подождать. Кто-то бросает вызов ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:28.566837Z"
+  },
+  "quests.mission09_rock_troll.say_1": {
+    "src_hash": "5bf39cb0fedb3760737d4a684763bde6",
+    "text": "<трещина>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:32.209561Z"
+  },
+  "quests.mission12_into_fortress.say_1": {
+    "src_hash": "a1ddd32035d30c2aee67c2f6e877b8a3",
+    "text": "<клик>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:32.209774Z"
+  },
+  "quests.moveevent_drume_entrance.msg_1": {
+    "src_hash": "189edafc7a6e2993bafd344758296338",
+    "text": "Вы участвовали в перестрелке последние 10 часов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:32.210281Z"
+  },
+  "quests.movements.you_need_a_premium_account_to": {
+    "src_hash": "db2cfa02e7868b5579081b243f9697a0",
+    "text": "Для доступа к этой области вам понадобится премиум-аккаунт.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:32.210696Z"
+  },
+  "quests.movements_arena_pit.say_2": {
+    "src_hash": "9224728568a2f95e3e8af3a1e4dcf35c",
+    "text": "Респект и честь тебе, чемпион!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:34.813221Z"
+  },
+  "quests.movements_arena_pit.say_3": {
+    "src_hash": "82a08c8672f5afbd168b2c3b7859d310",
+    "text": "Поздравляю, храбрый воин!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:34.813545Z"
+  },
+  "quests.movements_arena_pit.say_4": {
+    "src_hash": "8f0c30ed83be4ee852a61ebd6ba6f196",
+    "text": "С возвращением, маленький герой!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:34.813863Z"
+  },
+  "quests.movements_boat_puzzle.msg_1": {
+    "src_hash": "79d210c9061eaa6163df6f7d629fc9a6",
+    "text": "Без каких-либо ориентиров вы никогда не найдете дорогу назад. Попробуйте найти способ улучшить свою навигацию.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:34.814517Z"
+  },
+  "quests.movements_boat_puzzle.msg_2": {
+    "src_hash": "652ebfa490c71173522b14a875f77e01",
+    "text": "Вы видите разбросанные части разбитого корабля. Корабельный телескоп чудом уцелел после крушения и, кажется, до сих пор цел.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:34.815156Z"
+  },
+  "quests.movements_boat_puzzle.msg_3": {
+    "src_hash": "44d1a30bcfafa886f4ae741d76ffd4d5",
+    "text": "Вы используете трос, чтобы связать оторвавшиеся доски. Теперь плот должен быть готов к плаванию.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:36.969954Z"
+  },
+  "quests.movements_boat_puzzle.msg_4": {
+    "src_hash": "fac8a8c193d48bec357bdb0982588571",
+    "text": "Есть еще несколько незакрепленных досок и тросов. Так плотом пользоваться нельзя, он наверняка утонет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:36.970609Z"
+  },
+  "quests.movements_boat_puzzle.msg_5": {
+    "src_hash": "da53a77f40f0b3c056e242b35c37fcfe",
+    "text": "Вы видите разбросанные части разбитого корабля. Корабельный телескоп чудом уцелел после крушения и, похоже, остался целым.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:36.971209Z"
   }
 }

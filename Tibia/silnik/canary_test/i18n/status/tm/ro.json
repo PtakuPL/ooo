@@ -15269,7 +15269,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:02:41.429371Z"
+    "updated_at": "2026-02-17T04:49:53.814573Z"
   },
   "spell.physical_barrage.name": {
     "src_hash": "f016f2d1ee6271217f8a124d87c4e3c9",
@@ -17213,7 +17213,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:02:44.016952Z"
+    "updated_at": "2026-02-17T04:49:56.388362Z"
   },
   "spell.twins_skill_reducer.name": {
     "src_hash": "a20dfa07e9723568a769dec77f7d0ba9",
@@ -20917,7 +20917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:02:46.627199Z"
+    "updated_at": "2026-02-17T04:49:59.015207Z"
   },
   "spell.drillworm_paralyze.name": {
     "src_hash": "d1a55dc23ab4afc71794ac1d8b3d2f82",
@@ -24461,7 +24461,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:02:49.219178Z"
+    "updated_at": "2026-02-17T04:50:01.601589Z"
   },
   "spell.deathstrike_paralyze.name": {
     "src_hash": "73e6c65b950c8f94bffbe7edb4f2e43a",
@@ -26157,7 +26157,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:02:54.388148Z"
+    "updated_at": "2026-02-17T04:50:06.806729Z"
   },
   "spell.orewalker_wave.name": {
     "src_hash": "b283edf33f20d365e9f2f7b1edeae7ae",
@@ -31149,7 +31149,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:02:59.524566Z"
+    "updated_at": "2026-02-17T04:50:12.001519Z"
   },
   "spell.monstor_summon.name": {
     "src_hash": "d2fba4b6b9f56ff5500630bda09d65be",
@@ -42158,5 +42158,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:48:06.856909Z"
+  },
+  "spell.ancient_scarab_paralyze.name": {
+    "src_hash": "a7ec3187b906ce76a472b670d87f59b9",
+    "text": "scarabeul antic paralizează",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:14.624855Z"
+  },
+  "spell.generator_wave.name": {
+    "src_hash": "ab2a716270aa45c393073a5b0cbc665c",
+    "text": "undă generatoare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:14.625095Z"
+  },
+  "spell.arachnophobica_wavedice.name": {
+    "src_hash": "ceaf2de7274aa3e8be1650ebcd31c3a2",
+    "text": "arahnofobicawavedice",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:14.625352Z"
+  },
+  "spell.ghazbaran_summon.name": {
+    "src_hash": "0010d2177ff532e38ed4cad053dd2e57",
+    "text": "ghazbaran sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:14.625573Z"
+  },
+  "spell.dirtbeard_summon.name": {
+    "src_hash": "a868a6e090eb520a4548f1b26b16737f",
+    "text": "dirtbeard sum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:50:14.625782Z"
   }
 }

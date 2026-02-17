@@ -147430,5 +147430,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:00:07.404900Z"
+  },
+  "otclient_modules.ruleviolation.tr_15": {
+    "src_hash": "7e015b62703c0b31707f9a9dbf81db4f",
+    "text": "Notación",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:08:14.635640Z"
+  },
+  "otclient_modules.ruleviolation.tr_16": {
+    "src_hash": "eed4b66f573eb0ba115f34f57e1c6e10",
+    "text": "Muerte excesiva de jugadores injustificada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:08:14.635977Z"
+  },
+  "otclient_modules.ruleviolation.tr_17": {
+    "src_hash": "a4dc38ecc431b64c4d486feecdb113dd",
+    "text": "Comportamiento destructivo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:08:14.636226Z"
+  },
+  "otclient_modules.ruleviolation.tr_18": {
+    "src_hash": "a0d57bb72291f4ed42002ab7eea4f324",
+    "text": "4c) Informe falso al Gamemaster",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:08:14.636514Z"
+  },
+  "otclient_modules.ruleviolation.tr_19": {
+    "src_hash": "18b564798fa69925f086254108e92a18",
+    "text": "4b) Pretender tener influencia en la aplicación de las normas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:08:17.472138Z"
+  },
+  "otclient_modules.ruleviolation.tr_20": {
+    "src_hash": "03b5ff00d82c8bde4319366ac7dd9c39",
+    "text": "4a) Director de juego amenazador",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:08:17.472860Z"
   }
 }

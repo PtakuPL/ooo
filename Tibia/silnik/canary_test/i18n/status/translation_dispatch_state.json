@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-17T04:06:47.718781Z",
-  "cycle_counter": 1474,
-  "last_target_key": "es:questlog.json",
-  "last_pending_total": 1638,
+  "timestamp": "2026-02-17T04:07:50.015385Z",
+  "cycle_counter": 1477,
+  "last_target_key": "es:otclient_modules.json",
+  "last_pending_total": 209,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 193,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 225,
+  "cache_cycle": 226,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -389,7 +389,7 @@
       "ro": 24.12,
       "it": 15.26,
       "sr": 11.47,
-      "sv": 9.33
+      "sv": 9.36
     }
   }
 }

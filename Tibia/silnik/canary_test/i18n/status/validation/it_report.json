@@ -2,10 +2,10 @@
   "lang": "it",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 8504,
-  "identical_to_en": 2442,
-  "placeholder_keys": 45082,
-  "coverage_pct": 15.9,
+  "translated": 8689,
+  "identical_to_en": 2443,
+  "placeholder_keys": 44897,
+  "coverage_pct": 16.2,
   "issues_total": 6,
   "issues_by_type": {
     "V4_artifact": 5,
@@ -64,5 +64,5 @@
     "length_ratio": 10,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-17T03:44:47.626286Z"
+  "validated_at": "2026-02-17T04:08:58.734945Z"
 }

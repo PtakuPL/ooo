@@ -1,14 +1,14 @@
 {
   "lang": "ru",
-  "coverage_pct": 38.0,
+  "coverage_pct": 38.2,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T03:44:56.236791Z",
-  "issues_total": 103,
+  "checked_at": "2026-02-17T04:09:08.928340Z",
+  "issues_total": 107,
   "issues_by_type": {
-    "consistency_in_language": 50,
-    "pl_reference_missing_translation": 29,
+    "consistency_in_language": 52,
+    "pl_reference_missing_translation": 31,
     "length_ratio_crosscheck": 24
   },
   "consistency_issues": [
@@ -74,6 +74,37 @@
       "examples": [
         "client:client.entergame.text2",
         "otclient_modules:otclient_modules.entergame.tr_15"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Open Bosstiary dialog",
+      "variants": [
+        "Открыть Bosstiary dialog",
+        "Открыть диалог Босстиары"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "client:client.game_cyclopedia.text3",
+        "otclient_modules:otclient_modules.game_cyclopedia.tr_4"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "All States",
+      "variants": [
+        "Все States",
+        "Все штаты"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "client:client.house.text2",
+        "client:client.house.text5",
+        "otclient_modules:otclient_modules.house.tr_101",
+        "otclient_modules:otclient_modules.house.tr_48",
+        "otclient_modules:otclient_modules.house.tr_54"
       ]
     },
     {
@@ -1055,6 +1086,24 @@
       "en": "The",
       "pl": "To",
       "lang": "The"
+    },
+    {
+      "key": "spell.naga_death_wave.name",
+      "category": "spells",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "nagadeath",
+      "pl": "nagadata",
+      "lang": "nagadeath"
+    },
+    {
+      "key": "spell.tyrn_heal.name",
+      "category": "spells",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "tyrn heal",
+      "pl": "tyrn leczy",
+      "lang": "tyrn heal"
     }
   ],
   "length_ratio_issues": [
@@ -1276,8 +1325,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 29,
-    "applied": 0,
+    "attempted": 31,
+    "applied": 2,
     "skipped": 29,
     "errors": 0
   }

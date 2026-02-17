@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-02-17T04:07:17.126485Z",
+  "timestamp": "2026-02-17T04:08:19.345068Z",
   "checked_entries": 100,
-  "issues_found": 27,
+  "issues_found": 30,
   "issues_by_type": {
-    "identical_to_en_exempt": 13,
-    "identical_to_en": 20,
+    "identical_to_en": 23,
+    "identical_to_en_exempt": 47,
     "artifact_token": 7,
-    "suspicious_log_high": 111,
-    "suspicious_log_low": 42,
-    "suspicious_log_critical": 47,
+    "suspicious_log_low": 26,
+    "suspicious_log_high": 96,
+    "suspicious_log_critical": 78,
     "suspicious_rejected_critical": 174,
     "suspicious_rejected_high": 26
   },
@@ -201,6 +201,27 @@
       "type": "artifact_token",
       "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
       "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "otclient_modules.character_otui.tr_27",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Depot",
+      "translated": "Depot"
+    },
+    {
+      "key": "otclient_modules.game_cyclopedia.tr_6",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
+    },
+    {
+      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
     }
   ],
   "threshold": 10,

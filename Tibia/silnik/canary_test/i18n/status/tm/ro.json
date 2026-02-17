@@ -55158,5 +55158,285 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T08:37:40.152459Z"
+  },
+  "scripts.actions_mission9_catacombs_lever.say_3": {
+    "src_hash": "d1970dffce18bb4514127a3a44158f60",
+    "text": "Nu se mișcă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:18.223766Z"
+  },
+  "scripts.dark_cathedral_teleports.say_1": {
+    "src_hash": "d1970dffce18bb4514127a3a44158f60",
+    "text": "Nu se mișcă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:18.263631Z"
+  },
+  "scripts.actions_mission9_catacombs_lever.say_2": {
+    "src_hash": "c8773405488f3fd287a31345e89a0f0f",
+    "text": "Pârghia nu se va mișca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:25.208710Z"
+  },
+  "scripts.actions_mysterious_metal_egg.say_1": {
+    "src_hash": "8010185d10dbfd3137ea993e2e372eaa",
+    "text": "Acest ou de metal pare a fi blocat printr-un mecanism ciudat. Momentul ca acesta să-și dezvăluie conținutul nu a sosit încă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:25.209336Z"
+  },
+  "scripts.actions_mysterious_scroll.msg_1": {
+    "src_hash": "b565aaea5180b6481625cf2a7b07f8e4",
+    "text": "Indiferent cât de des ai încerca, nu poți descifra nimic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:25.209747Z"
+  },
+  "scripts.actions_mysterious_scroll.msg_2": {
+    "src_hash": "f74783ab2e1d7e06aaf358d52243d5d7",
+    "text": "Descifrezi ceva! Primești un alergător care să te însoțească în călătoria ta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:25.210275Z"
+  },
+  "scripts.actions_nests.msg_1": {
+    "src_hash": "fef363bec76627c1d876f7e952b30be4",
+    "text": "Ai distrus un cuib de monstru.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:27.859497Z"
+  },
+  "scripts.actions_notescoordinates.msg_1": {
+    "src_hash": "0214c298a23af94b667a3fe7d5d06529",
+    "text": "Ați găsit note și coordonate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:27.859900Z"
+  },
+  "scripts.actions_oasis_lever_door.msg_1": {
+    "src_hash": "7bbc4c59760d2bcf1842a53690ee5564",
+    "text": "Mai întâi trebuie să găsiți Morcovul sub una dintre cele trei pălării pentru a obține accesul!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:27.860394Z"
+  },
+  "scripts.actions_oasis_lever_door.msg_2": {
+    "src_hash": "e510f9518fd800448511537270d4eee8",
+    "text": "Ai găsit morcovul! Ușa este deschisă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:27.860785Z"
+  },
+  "scripts.actions_oasis_lever_door.msg_3": {
+    "src_hash": "c58d014e2cdeae20b0f4d252b2a765ef",
+    "text": "Ai ghicit greșit! Ia asta! Morcovul a schimbat acum Pălăria!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:27.861194Z"
+  },
+  "scripts.actions_oil.say_1": {
+    "src_hash": "ddbd3f875878b8e00d05184abed9bd3b",
+    "text": "Pârghia scârțâie și ruginește.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:31.730630Z"
+  },
+  "scripts.actions_oldLock.msg_1": {
+    "src_hash": "7a6d23bac82ce5906f6cb32c76cc2d8d",
+    "text": "Insezi vechea broasca in usa. Se potrivește perfect.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:31.731032Z"
+  },
+  "scripts.actions_old_desk.msg_1": {
+    "src_hash": "033f908b6837e564b466f4b91e421871",
+    "text": "Ai primit deja o cheie de argint veche.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:31.731343Z"
+  },
+  "scripts.actions_old_desk.msg_2": {
+    "src_hash": "508293e3d7ed6c045d9df2924b04b947",
+    "text": "Găsești o cheie de argint veche în interiorul dăgașului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:31.731732Z"
+  },
+  "scripts.actions_old_desk.msg_3": {
+    "src_hash": "9357bd2ca0730e7628e83a029ac73173",
+    "text": "Primești deja o notă veche.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:31.732056Z"
+  },
+  "scripts.actions_old_desk.msg_4": {
+    "src_hash": "ecb7f4a78e1e64eba1ccd320dd59b2f0",
+    "text": "Pe măsură ce deschizi setul, o apariție fantomatică apare în scurt timp plutind deasupra biroului. Găsești o bancnotă veche în interiorul dăruitorului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:35.532360Z"
+  },
+  "scripts.actions_ore_wagon.msg_1": {
+    "src_hash": "36e2511acf93d9ed7d367f024b98abd9",
+    "text": "Încă nu aveți permisiunea de a utiliza acest lucru.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:35.532772Z"
+  },
+  "scripts.actions_ore_wagon.msg_2": {
+    "src_hash": "952d68749fac40bd7c7a893a69b373be",
+    "text": "Încă nu știi cum să folosești asta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:35.533109Z"
+  },
+  "scripts.actions_ore_wagon.say_1": {
+    "src_hash": "9375b969b89a43e98c0a759867b10708",
+    "text": "Trebuie să îndepărtați moloz pentru a trece în siguranță de tunel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:35.533505Z"
+  },
+  "scripts.actions_ore_wagon.say_2": {
+    "src_hash": "15532e277b2337fd378e5263ac3c6e36",
+    "text": "Ai trecut cu bine de tunel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:35.533814Z"
+  },
+  "scripts.actions_ore_wagon.say_3": {
+    "src_hash": "21feaca3662bfcbad7c0dc9ca4abdb3f",
+    "text": "Ai trecut în siguranță de gol, dar podul tău s-a prăbușit în spatele tău.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:38.152342Z"
+  },
+  "scripts.actions_ore_wagon.say_4": {
+    "src_hash": "44d076329150ad790d1d62e933ad340e",
+    "text": "Trebuie să construiți un pod pentru a trece decalajul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:38.152788Z"
+  },
+  "scripts.actions_paint.say_1": {
+    "src_hash": "b8c2f9154046a235887d887b29a3d609",
+    "text": "Ai pictat un pui de focă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:38.153108Z"
+  },
+  "scripts.actions_parchment.say_1": {
+    "src_hash": "af4daff6d7a6bceefa21b451d2273060",
+    "text": "CUNOAȘTEREA ÎNTUNECĂ PILELE CARTEA CU PUTEREA BRUDE. GATA SĂ FIE DEZLANȚAT!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:38.154052Z"
+  },
+  "scripts.actions_parchment.say_2": {
+    "src_hash": "02021b0406da5d6be6e18788f2e3ce05",
+    "text": "DESCĂRCAREA CĂRTII RUPE POZIȚIA LOKATHMORS!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:40.879170Z"
+  },
+  "scripts.actions_peeler.msg_1": {
+    "src_hash": "82e12715e1434699f28fe1b534e1bbab",
+    "text": "Ați găsit un curățător de coajă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:40.879502Z"
+  },
+  "scripts.actions_peelerfun.msg_1": {
+    "src_hash": "cb298a4ae6c77ed8f197b11c52b658db",
+    "text": "Decojiți o bucată de tark de pe copacul din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:40.879908Z"
+  },
+  "scripts.actions_pickenchanted.msg_1": {
+    "src_hash": "fb9d34da72cc5f6f1c95cf1b19ea2f48",
+    "text": "Scoateți niște tagralt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:40.880202Z"
+  },
+  "scripts.actions_plant.msg_1": {
+    "src_hash": "2218f4ca9795863a9640c66efff7f96d",
+    "text": "Ai plantat niște semințe în sol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:40.880528Z"
+  },
+  "scripts.actions_plant.msg_2": {
+    "src_hash": "20f382ee2143fd203f98fa3afff9cd91",
+    "text": "Mesteacănul crește pe măsură ce turnați peste el apa sclipitoare din fiolă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:43.969902Z"
+  },
+  "scripts.actions_plant.msg_3": {
+    "src_hash": "81f7826bad933ff78c3d2e6d30dfc6aa",
+    "text": "Nu puteți folosi fiola cât timp copacii au încă viață și culoare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:43.970400Z"
+  },
+  "scripts.actions_plant.msg_4": {
+    "src_hash": "dbae0926d3ed10c91f6f663ba886cd12",
+    "text": "Se pare că nu faci să crească destui copaci sau nu eliberezi papagalii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:43.970864Z"
+  },
+  "scripts.actions_plant.msg_5": {
+    "src_hash": "c5958bcf813dccf58ae2ddb553ab17bb",
+    "text": "Deodată, zona se luminează și totul în jurul tău începe să înflorească și să prospere cu viață și culoare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:43.971381Z"
+  },
+  "scripts.actions_portal_brain_head.msg_1": {
+    "src_hash": "a48c3c6b749b7683a55c6d8344d55f91",
+    "text": "Trebuie să aveți nivelul {} sau mai mare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T08:46:43.971754Z"
   }
 }

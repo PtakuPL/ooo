@@ -1,8 +1,8 @@
 {
-  "total_cycles": 385,
+  "total_cycles": 386,
   "mode": "AUTO_TRANSLATE",
-  "category": "es",
-  "last_update": "2026-02-17T09:45:54.263351",
+  "category": "ro",
+  "last_update": "2026-02-17T09:46:47.347215",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,14 +26,135 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "es",
-    "json_file": "otclient_modules.json",
-    "keys_to_translate": 49,
-    "guard_fail": 0,
+    "language": "ro",
+    "json_file": "scripts.json",
+    "keys_to_translate": 1461,
+    "guard_fail": 12,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 0,
-    "recent_examples": []
+    "recent_translated": 38,
+    "recent_examples": [
+      {
+        "key": "scripts.actions_old_desk.msg_3",
+        "en": "You already get an old note.",
+        "translated": "Prime\u0219ti deja o not\u0103 veche.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_old_desk.msg_4",
+        "en": "As you open the drower a ghostly apparition shortly appears hovering over the desk. You find an old note inside of the drower.",
+        "translated": "Pe m\u0103sur\u0103 ce deschizi setul, o apari\u021bie fantomatic\u0103 apare \u00een scurt timp plutind deasupra biroului. G\u0103se\u0219ti o bancnot\u0103 veche \u00een interiorul d\u0103ruitorului.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_ore_wagon.msg_1",
+        "en": "You don't have permission to use this yet.",
+        "translated": "\u00cenc\u0103 nu ave\u021bi permisiunea de a utiliza acest lucru.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_ore_wagon.msg_2",
+        "en": "You don't know how to use this yet.",
+        "translated": "\u00cenc\u0103 nu \u0219tii cum s\u0103 folose\u0219ti asta.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_ore_wagon.say_1",
+        "en": "You need to remove rubble to safely passed the tunnel.",
+        "translated": "Trebuie s\u0103 \u00eendep\u0103rta\u021bi moloz pentru a trece \u00een siguran\u021b\u0103 de tunel.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_ore_wagon.say_2",
+        "en": "You safely passed the tunnel.",
+        "translated": "Ai trecut cu bine de tunel.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_ore_wagon.say_3",
+        "en": "You safely passed the gap but your bridge collapsed behind you.",
+        "translated": "Ai trecut \u00een siguran\u021b\u0103 de gol, dar podul t\u0103u s-a pr\u0103bu\u0219it \u00een spatele t\u0103u.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_ore_wagon.say_4",
+        "en": "You need to build a bridge to pass the gap.",
+        "translated": "Trebuie s\u0103 construi\u021bi un pod pentru a trece decalajul.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_paint.say_1",
+        "en": "You painted a baby seal.",
+        "translated": "Ai pictat un pui de foc\u0103.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_parchment.say_1",
+        "en": "THE DARK KNOWLEDGE PILLS THE BOOK WITH RAW POWER. READY TO BE UNLEASHED!",
+        "translated": "CUNOA\u0218TEREA \u00ceNTUNEC\u0102 PILELE CARTEA CU PUTEREA BRUDE. GATA S\u0102 FIE DEZLAN\u021aAT!",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_parchment.say_2",
+        "en": "THE DISCHARGE OF THE BOOK BREAKS LOKATHMORS STANCE!",
+        "translated": "DESC\u0102RCAREA C\u0102RTII RUPE POZI\u021aIA LOKATHMORS!",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_peeler.msg_1",
+        "en": "You have found a bark peeler.",
+        "translated": "A\u021bi g\u0103sit un cur\u0103\u021b\u0103tor de coaj\u0103.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_peelerfun.msg_1",
+        "en": "You are peeling a piece of tark off the again tree.",
+        "translated": "Decoji\u021bi o bucat\u0103 de tark de pe copacul din nou.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_pickenchanted.msg_1",
+        "en": "You are quarrying some tagralt.",
+        "translated": "Scoate\u021bi ni\u0219te tagralt.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_plant.msg_1",
+        "en": "You planted some seeds into the soil.",
+        "translated": "Ai plantat ni\u0219te semin\u021be \u00een sol.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_plant.msg_2",
+        "en": "The birch grows as you pour the sparkling water from the phial over it.",
+        "translated": "Mesteac\u0103nul cre\u0219te pe m\u0103sur\u0103 ce turna\u021bi peste el apa sclipitoare din fiol\u0103.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_plant.msg_3",
+        "en": "You cannot use the phial while the trees still have life and colour.",
+        "translated": "Nu pute\u021bi folosi fiola c\u00e2t timp copacii au \u00eenc\u0103 via\u021b\u0103 \u0219i culoare.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_plant.msg_4",
+        "en": "Seems that you don't make grow enough trees or not free the parrots.",
+        "translated": "Se pare c\u0103 nu faci s\u0103 creasc\u0103 destui copaci sau nu eliberezi papagalii.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_plant.msg_5",
+        "en": "Suddenly the area brightens and everything around you starts to bloom and thrive with life and colour.",
+        "translated": "Deodat\u0103, zona se lumineaz\u0103 \u0219i totul \u00een jurul t\u0103u \u00eencepe s\u0103 \u00eenfloreasc\u0103 \u0219i s\u0103 prospere cu via\u021b\u0103 \u0219i culoare.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.actions_portal_brain_head.msg_1",
+        "en": "You must be level {} or higher.",
+        "translated": "Trebuie s\u0103 ave\u021bi nivelul {} sau mai mare.",
+        "source": "google_translate"
+      }
+    ]
   },
   "idle": {
     "new_files_detected": 152,

@@ -173430,5 +173430,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T09:46:32.616415Z"
+  },
+  "monster.nomad.name": {
+    "src_hash": "aef878e6f44bed61b63c5c91bfdd756c",
+    "text": "Номад",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:10.066522Z"
+  },
+  "monster.nomad_blue.name": {
+    "src_hash": "aef878e6f44bed61b63c5c91bfdd756c",
+    "text": "Номад",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:10.117695Z"
+  },
+  "monster.nomad_female.name": {
+    "src_hash": "aef878e6f44bed61b63c5c91bfdd756c",
+    "text": "Номад",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:10.135810Z"
+  },
+  "monster.frost_troll.voice_3": {
+    "src_hash": "081b99983f3751c20ea157a31fde8ae9",
+    "text": "Бррр",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:10.720099Z"
+  },
+  "monster.dwarf_guard.voice_1": {
+    "src_hash": "49426d97d054a6a3c0eeac774d12bbc5",
+    "text": "Поздрав __ПХ0__!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:15.383360Z"
+  },
+  "monster.corym_skirmisher.voice_2": {
+    "src_hash": "4ef515e12f1aeec7c194c24f92854b8a",
+    "text": "__ПХ0__ __ПХ1__ __ПХ2__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:15.383765Z"
+  },
+  "monster.elf_scout.voice_1": {
+    "src_hash": "d77afb96313bbcfcd135fceb025ace61",
+    "text": "Тха'схи __ПХ0__!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:15.384227Z"
+  },
+  "monster.dwarf_geomancer.voice_1": {
+    "src_hash": "49426d97d054a6a3c0eeac774d12bbc5",
+    "text": "Поздрав __ПХ0__!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:15.384623Z"
+  },
+  "monster.troll_legionnaire.voice_2": {
+    "src_hash": "7f8548c6866d449a88e5d81d6e0f6d50",
+    "text": "Грааааар!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:15.384887Z"
+  },
+  "monster.glooth_powered_minotaur.voice_1": {
+    "src_hash": "819d05ed7f1614834262b93390d06b39",
+    "text": "ПОООВЕЕР!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:21.637270Z"
+  },
+  "monster.minotaur_hunter.name": {
+    "src_hash": "7f7c3dcca16fb3e07b4d633c15a0260a",
+    "text": "Минотаур __ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:21.637780Z"
+  },
+  "monster.dwarf.voice_1": {
+    "src_hash": "49426d97d054a6a3c0eeac774d12bbc5",
+    "text": "Поздрав __ПХ0__!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:21.638278Z"
+  },
+  "monster.dwarf_soldier.voice_1": {
+    "src_hash": "49426d97d054a6a3c0eeac774d12bbc5",
+    "text": "Поздрав __ПХ0__!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:21.638709Z"
+  },
+  "monster.animated_cyclops.name": {
+    "src_hash": "3553cbe8bc1f16e2884d6b363b49e67e",
+    "text": "Анимирани __ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:21.639254Z"
+  },
+  "monster.barkless_devotee.name": {
+    "src_hash": "aa5b981c1b2147b24a12a2b9bcfa2029",
+    "text": "__ПХ0__ Девотее",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:26.255525Z"
+  },
+  "monster.misguided_bully.name": {
+    "src_hash": "7aa4adcbc447fcc09ca14b8d049cc3cc",
+    "text": "__ПХ0__ Силеџија",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:57:26.255998Z"
   }
 }

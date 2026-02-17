@@ -1,17 +1,31 @@
 {
   "lang": "it",
-  "coverage_pct": 47.7,
+  "coverage_pct": 48.2,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T06:53:03.959548Z",
-  "issues_total": 424,
+  "checked_at": "2026-02-17T07:39:40.485920Z",
+  "issues_total": 426,
   "issues_by_type": {
-    "consistency_in_language": 7,
+    "consistency_in_language": 8,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 17
+    "length_ratio_crosscheck": 18
   },
   "consistency_issues": [
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You read: ",
+      "variants": [
+        "Leggi:",
+        "Leggi: "
+      ],
+      "variants_count": 2,
+      "examples": [
+        "books:ui.readable.you_read_prefix",
+        "cpp:cpp.look.you_read"
+      ]
+    },
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
@@ -140,33 +154,6 @@
       "lang": "config.otml"
     },
     {
-      "key": "client.player.text2",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Elite Knight",
-      "pl": "Elitarny Rycerz",
-      "lang": "Elite Knight"
-    },
-    {
-      "key": "client.player.text3",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Royal Paladin",
-      "pl": "Królewski Paladyn",
-      "lang": "Royal Paladin"
-    },
-    {
-      "key": "client.player.text4",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Master Sorcerer",
-      "pl": "Arcyczarnoksiężnik",
-      "lang": "Master Sorcerer"
-    },
-    {
       "key": "client.house.text1",
       "category": "client",
       "type": "pl_reference_missing_translation",
@@ -183,6 +170,33 @@
       "en": "RightBase",
       "pl": "Prawa baza",
       "lang": "RightBase"
+    },
+    {
+      "key": "client.map.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "MarkListItem",
+      "pl": "MarkListPrzedmiot",
+      "lang": "MarkListItem"
+    },
+    {
+      "key": "client.imbuementtracker.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ImbuementTracker",
+      "pl": "Śledzenie nasycenia",
+      "lang": "ImbuementTracker"
+    },
+    {
+      "key": "client.game_shop.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GameShopExtended",
+      "pl": "GameShopRozszerzony",
+      "lang": "GameShopExtended"
     },
     {
       "key": "cpp.inspect.hitchance",
@@ -203,141 +217,6 @@
       "lang": " oz"
     },
     {
-      "key": "cpp.inspect.speed_value",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "speed {0}",
-      "pl": "prędkość {0}",
-      "lang": "speed {0}"
-    },
-    {
-      "key": "cpp.inspect.tier",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tier",
-      "pl": "Rząd",
-      "lang": "Tier"
-    },
-    {
-      "key": "cpp.inspect.tradeable",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tradeable",
-      "pl": "Możliwość handlu",
-      "lang": "Tradeable"
-    },
-    {
-      "key": "cpp.inspect.two_handed",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "two-handed",
-      "pl": "dwa-handed",
-      "lang": "two-handed"
-    },
-    {
-      "key": "cpp.inspect.weight",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Weight",
-      "pl": "Waga",
-      "lang": "Weight"
-    },
-    {
-      "key": "cpp.inspect.yes",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "yes",
-      "pl": "Tak",
-      "lang": "yes"
-    },
-    {
-      "key": "cpp.look.and_connector",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " and ",
-      "pl": "i ",
-      "lang": " and "
-    },
-    {
-      "key": "cpp.look.and_short",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " and",
-      "pl": "i",
-      "lang": " and"
-    },
-    {
-      "key": "cpp.look.arm",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Arm:",
-      "pl": "Ramię, ręka:",
-      "lang": "Arm:"
-    },
-    {
-      "key": "cpp.look.at_range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "at range",
-      "pl": "w zasięgu",
-      "lang": "at range"
-    },
-    {
-      "key": "cpp.look.atk",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Atk:",
-      "pl": "Atak:",
-      "lang": "Atk:"
-    },
-    {
-      "key": "cpp.look.cleave_lower",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "cleave",
-      "pl": "rozszczepiać",
-      "lang": "cleave"
-    },
-    {
-      "key": "cpp.look.cleave_upper",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cleave",
-      "pl": "Rozszczepiać",
-      "lang": "Cleave"
-    },
-    {
-      "key": "cpp.look.day_many",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} days",
-      "pl": "{0} dni",
-      "lang": "{0} days"
-    },
-    {
-      "key": "cpp.look.day_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} day",
-      "pl": "{0} dzień",
-      "lang": "{0} day"
-    },
-    {
       "key": "cpp.look.def",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -345,258 +224,6 @@
       "en": "Def:",
       "pl": "def:",
       "lang": "Def:"
-    },
-    {
-      "key": "cpp.look.empty_slot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Empty Slot",
-      "pl": "Puste miejsce",
-      "lang": "Empty Slot"
-    },
-    {
-      "key": "cpp.look.field",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " field",
-      "pl": " ognia",
-      "lang": " field"
-    },
-    {
-      "key": "cpp.look.hit_pct",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hit%",
-      "pl": "Uderzyć%",
-      "lang": "Hit%"
-    },
-    {
-      "key": "cpp.look.hour_many",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} hours",
-      "pl": "{0} godziny",
-      "lang": "{0} hours"
-    },
-    {
-      "key": "cpp.look.hour_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} hour",
-      "pl": "{0} godzina",
-      "lang": "{0} hour"
-    },
-    {
-      "key": "cpp.look.key_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Key:{0}",
-      "pl": "Klucz:{0}",
-      "lang": "Key:{0}"
-    },
-    {
-      "key": "cpp.look.level_n",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " level {0}",
-      "pl": "poziom {0}",
-      "lang": " level {0}"
-    },
-    {
-      "key": "cpp.look.minute_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} minute",
-      "pl": "{0} minuta",
-      "lang": "{0} minute"
-    },
-    {
-      "key": "cpp.look.of",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " of ",
-      "pl": "z ",
-      "lang": " of "
-    },
-    {
-      "key": "cpp.look.of_connector",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " of",
-      "pl": "z",
-      "lang": " of"
-    },
-    {
-      "key": "cpp.look.on_date",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " on ",
-      "pl": "na ",
-      "lang": " on "
-    },
-    {
-      "key": "cpp.look.or_higher",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " or higher",
-      "pl": "lub wyższy",
-      "lang": " or higher"
-    },
-    {
-      "key": "cpp.look.physical_plus",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " physical + ",
-      "pl": " fizyczny + ",
-      "lang": " physical + "
-    },
-    {
-      "key": "cpp.look.players",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "players",
-      "pl": "gracze",
-      "lang": "players"
-    },
-    {
-      "key": "cpp.look.premium",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "premium ",
-      "pl": "premia ",
-      "lang": "premium "
-    },
-    {
-      "key": "cpp.look.protection",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "protection ",
-      "pl": "ochrona, osłona ",
-      "lang": "protection "
-    },
-    {
-      "key": "cpp.look.range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Range:",
-      "pl": "Zakres:",
-      "lang": "Range:"
-    },
-    {
-      "key": "cpp.look.second_one",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0} second",
-      "pl": "{0} sekunda",
-      "lang": "{0} second"
-    },
-    {
-      "key": "cpp.look.speed_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "speed",
-      "pl": "szybkość",
-      "lang": "speed"
-    },
-    {
-      "key": "cpp.look.tier_ruse",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "{0}% Ruse",
-      "pl": "{0}% Podstęp",
-      "lang": "{0}% Ruse"
-    },
-    {
-      "key": "cpp.look.vol",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vol:",
-      "pl": "Tom:",
-      "lang": "Vol:"
-    },
-    {
-      "key": "cpp.look.with",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " with",
-      "pl": "z",
-      "lang": " with"
-    },
-    {
-      "key": "cpp.look.wrote",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " wrote",
-      "pl": "wrote",
-      "lang": " wrote"
-    },
-    {
-      "key": "cpp.look.you_read",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You read: ",
-      "pl": "Ty czytać, przeczytać: ",
-      "lang": "You read: "
-    },
-    {
-      "key": "cpp.look.you_see",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You see ",
-      "pl": "Widzisz ",
-      "lang": "You see "
-    },
-    {
-      "key": "cpp.player.corpse_and",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " and {0}",
-      "pl": "i {0}",
-      "lang": " and {0}"
-    },
-    {
-      "key": "cpp.player.corpse_and_others",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " and others",
-      "pl": "i drugi, pozostały",
-      "lang": " and others"
-    },
-    {
-      "key": "cpp.player.list_and",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "and ",
-      "pl": "i ",
-      "lang": "and "
     },
     {
       "key": "cpp.player.list_delimiter",
@@ -608,51 +235,6 @@
       "lang": ", "
     },
     {
-      "key": "cpp.player.look.article_a",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a",
-      "pl": "jeden",
-      "lang": "a"
-    },
-    {
-      "key": "cpp.player.look.article_an",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an",
-      "pl": "jeden",
-      "lang": "an"
-    },
-    {
-      "key": "cpp.player.look.guild_prefix_self",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are",
-      "pl": "Jesteś",
-      "lang": "You are"
-    },
-    {
-      "key": "cpp.player.look.level_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level {0}",
-      "pl": "poziom {0}",
-      "lang": "Level {0}"
-    },
-    {
-      "key": "cpp.player.look.self",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "yourself",
-      "pl": "siebie",
-      "lang": "yourself"
-    },
-    {
       "key": "cpp.player.look.verb_vip",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -662,69 +244,6 @@
       "lang": "{0} VIP."
     },
     {
-      "key": "cpp.protocol.married_to_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Married to",
-      "pl": "Żonaty, zamężna do",
-      "lang": "Married to"
-    },
-    {
-      "key": "cpp.protocol.support_outfit_gamemaster",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gamemaster",
-      "pl": "Mistrz Gry",
-      "lang": "Gamemaster"
-    },
-    {
-      "key": "cpp.protocol.vocation_all",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "(all)",
-      "pl": "(wszystkie)",
-      "lang": "(all)"
-    },
-    {
-      "key": "cpp.returnvalue.no_error",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No error.",
-      "pl": "Nie błąd.",
-      "lang": "No error."
-    },
-    {
-      "key": "cpp.skill.life_leech",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "life leech",
-      "pl": "Życie Lecha",
-      "lang": "life leech"
-    },
-    {
-      "key": "cpp.skill.mana_leech",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "mana leech",
-      "pl": "mana pijawka",
-      "lang": "mana leech"
-    },
-    {
-      "key": "cpp.title.name_17",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Demondoom",
-      "pl": "Demoniczna zagłada",
-      "lang": "Demondoom"
-    },
-    {
       "key": "cpp.title.name_18",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -732,114 +251,6 @@
       "en": "Drakenbane",
       "pl": "Smocza zguba",
       "lang": "Drakenbane"
-    },
-    {
-      "key": "cpp.title.name_19",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Silencer",
-      "pl": "Tłumik",
-      "lang": "Silencer"
-    },
-    {
-      "key": "cpp.title.name_20",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Exalted",
-      "pl": "Wysoki",
-      "lang": "Exalted"
-    },
-    {
-      "key": "cpp.title.name_22",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Big Boss",
-      "pl": "Duży, wielki Boss",
-      "lang": "Big Boss"
-    },
-    {
-      "key": "cpp.title.name_34",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bipedantic",
-      "pl": "Dwunożny",
-      "lang": "Bipedantic"
-    },
-    {
-      "key": "cpp.title.name_44",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Handyman",
-      "pl": "Złota rączka",
-      "lang": "Handyman"
-    },
-    {
-      "key": "cpp.title.name_44_female",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Handywoman",
-      "pl": "Złota rączka",
-      "lang": "Handywoman"
-    },
-    {
-      "key": "cpp.title.name_45",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Huntsman",
-      "pl": "Myśliwy",
-      "lang": "Huntsman"
-    },
-    {
-      "key": "cpp.title.name_45_female",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Huntress",
-      "pl": "Łowczyni",
-      "lang": "Huntress"
-    },
-    {
-      "key": "cpp.title.name_47",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Manhunter",
-      "pl": "Pościg, obława",
-      "lang": "Manhunter"
-    },
-    {
-      "key": "cpp.title.name_49",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ooze Blues",
-      "pl": "Orzeźwiający blues",
-      "lang": "Ooze Blues"
-    },
-    {
-      "key": "cpp.title.name_50",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sea Bane",
-      "pl": "Morze Bane",
-      "lang": "Sea Bane"
-    },
-    {
-      "key": "cpp.title.name_52",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tumbler",
-      "pl": "Szklanka",
-      "lang": "Tumbler"
     },
     {
       "key": "cpp.title.name_53",
@@ -1695,6 +1106,15 @@
       "en": "Grrrrunt",
       "pl": "Wrrrr",
       "lang": "Grrrrunt"
+    },
+    {
+      "key": "monster.stolen_knowledge_of_lifesteal.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Stolen Knowledge of Lifesteal",
+      "pl": "Skradziono Knowledge kradzieży życia",
+      "lang": "Stolen Knowledge of Lifesteal"
     },
     {
       "key": "monster.mean_maw.voice_2",
@@ -2795,6 +2215,42 @@
       "lang": "Bye, bye."
     },
     {
+      "key": "npc.amanda.stdmod_16",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "So receive my prayer: 'Wicked curses shall be broken'. Now, bring your stake to Kasmir in Darashia for the next line of the prayer. I will inform him what to do.",
+      "pl": "Przyjmij więc moją modlitwę: 'Wicked curses shall be broken'. Teraz przynieś swój kołek Kasmirowi w Darashia, aby wysłuchać następnej linijki modlitwy. Poinformuję go, co ma robić.",
+      "lang": "So receive my prayer: 'Wicked curses shall be broken'. Now, bring your stake to Kasmir in Darashia for the next line of the prayer. I will inform him what to do."
+    },
+    {
+      "key": "npc.amanda.stdmod_18",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You should visit Kasmir in Darashia now, my child.",
+      "pl": "Powinieneś teraz odwiedzić Kasmira w Darashii, moje dziecko.",
+      "lang": "You should visit Kasmir in Darashia now, my child."
+    },
+    {
+      "key": "npc.angelo.say_10",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "MoTA is short for the recently founded Museum of Tibian Arts. We work together in close collaboration. New {results} are communicated to the museum instantly.",
+      "pl": "MoTA to skrót od niedawno założonego Muzeum Sztuki Tibijskiej. Współpracujemy ze sobą w ścisłej współpracy. Nowe {results} są natychmiast przekazywane muzeum.",
+      "lang": "MoTA is short for the recently founded Museum of Tibian Arts. We work together in close collaboration. New {results} are communicated to the museum instantly."
+    },
+    {
+      "key": "npc.angus.say_16",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Did you get the requested pickaxe from Uzgod in Kazordoon?",
+      "pl": "Zdobyłeś zamówiony kilof od Uzgoda w Kazordoon?",
+      "lang": "Did you get the requested pickaxe from Uzgod in Kazordoon?"
+    },
+    {
       "key": "npc.barnabas_dee.say_8",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -2822,6 +2278,15 @@
       "lang": "Futchi."
     },
     {
+      "key": "npc.brewster.stdmod_15",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You should visit Tyrias in Liberty Bay now.",
+      "pl": "Powinieneś teraz odwiedzić Tyriasa w Liberty Bay.",
+      "lang": "You should visit Tyrias in Liberty Bay now."
+    },
+    {
       "key": "npc.budrik.farewell_msg_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -2838,6 +2303,96 @@
       "en": "Bye, bye.",
       "pl": "Pa, cześć, pa, cześć.",
       "lang": "Bye, bye."
+    },
+    {
+      "key": "npc.captain_bluebear.stdmod_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "My name is Captain Bluebear from the Royal Tibia Line.",
+      "pl": "Nazywam się Kapitan Bluebear z Królewskiej Linii Tibia.",
+      "lang": "My name is Captain Bluebear from the Royal Tibia Line."
+    },
+    {
+      "key": "npc.captain_cookie.stdmod_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I can bring you to our base in Liberty Bay for |TRAVELCOST|. Is that what you want?",
+      "pl": "Mogę Cię zabrać do naszej bazy w Liberty Bay na |TRAVELCOST|. Czy tego właśnie chcesz?",
+      "lang": "I can bring you to our base in Liberty Bay for |TRAVELCOST|. Is that what you want?"
+    },
+    {
+      "key": "npc.captain_greyhound.stdmod_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "My name is Captain Greyhound from the Royal Tibia Line.",
+      "pl": "Nazywam się Kapitan Greyhound z Królewskiej Linii Tibia.",
+      "lang": "My name is Captain Greyhound from the Royal Tibia Line."
+    },
+    {
+      "key": "npc.chief_grarkharok.say_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You help?? Human know troll lady for Grarkharok??",
+      "pl": "Pomagasz?? Człowiek zna trollową panią z Grarkharok??",
+      "lang": "You help?? Human know troll lady for Grarkharok??"
+    },
+    {
+      "key": "npc.chief_grarkharok.stdmod_7",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Like it?? Hope troll lady also like it!",
+      "pl": "Podoba Ci się?? Mam nadzieję, że trollowej pani też się spodoba!",
+      "lang": "Like it?? Hope troll lady also like it!"
+    },
+    {
+      "key": "npc.chrak.multi_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "For now ze mazter will zee zat you and your alliez are zpared of ze wraz of ze dragon emperor az you are unimportant for hiz goalz. ...",
+      "pl": "Na razie mazter będzie wiedział, że ty i twoi sojusznicy zostaniecie zparowani ze wraz ze smokiem cesarza, az jesteście nieważni dla jego bramki. ...",
+      "lang": "For now ze mazter will zee zat you and your alliez are zpared of ze wraz of ze dragon emperor az you are unimportant for hiz goalz. ..."
+    },
+    {
+      "key": "npc.chrak.multi_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "If you know ze rulez, you might enter ze arena for ze {battle}.",
+      "pl": "Jeśli znasz ze rulez, możesz wejść na arenę ze {battle}.",
+      "lang": "If you know ze rulez, you might enter ze arena for ze {battle}."
+    },
+    {
+      "key": "npc.cornelia.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome to the finest {armor} shop in the land, |PLAYERNAME|!",
+      "pl": "Witaj w najlepszym sklepie z {armor} w tej krainie, |PLAYERNAME|!",
+      "lang": "Welcome to the finest {armor} shop in the land, |PLAYERNAME|!"
+    },
+    {
+      "key": "npc.dallheim.stdmod_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "For Rookgaard! For Tibia!",
+      "pl": "Za Rookgaard! Za Tibię!",
+      "lang": "For Rookgaard! For Tibia!"
+    },
+    {
+      "key": "npc.dallheim.voice_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "For Rookgaard! For Tibia!",
+      "pl": "Za Rookgaard! Za Tibię!",
+      "lang": "For Rookgaard! For Tibia!"
     },
     {
       "key": "npc.denominator.say_12",
@@ -2867,6 +2422,15 @@
       "lang": "Hi!"
     },
     {
+      "key": "npc.gnomaticus.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hi there! Are you here for the {shooting} test or to {report} your success?",
+      "pl": "Cześć! Czy jesteś tu, aby {shooting} przetestować lub {report} swój sukces?",
+      "lang": "Hi there! Are you here for the {shooting} test or to {report} your success?"
+    },
+    {
       "key": "npc.gnombold.greet_msg_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -2883,6 +2447,87 @@
       "en": "Hi!",
       "pl": "Cześć, siemasz!",
       "lang": "Hi!"
+    },
+    {
+      "key": "npc.gnommander.say_11",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Do you want to buy the first addon for 2000 Gold?",
+      "pl": "Chcesz kupić pierwszy dodatek za 2000 sztuk złota?",
+      "lang": "Do you want to buy the first addon for 2000 Gold?"
+    },
+    {
+      "key": "npc.gnommander.say_15",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Do you want to buy the second addon for 3000 Gold?",
+      "pl": "Czy chcesz kupić drugi dodatek za 3000 sztuk złota?",
+      "lang": "Do you want to buy the second addon for 3000 Gold?"
+    },
+    {
+      "key": "npc.gnommander.say_7",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Do you want to buy the basic outfit for 1000 Gold?",
+      "pl": "Chcesz kupić podstawowy strój za 1000 sztuk złota?",
+      "lang": "Do you want to buy the basic outfit for 1000 Gold?"
+    },
+    {
+      "key": "npc.guide_behil.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Daraman's blessings, enjoy your stay in Darashia, |PLAYERNAME|",
+      "pl": "Błogosławieństwo Daramana, miłego pobytu w Darashii, |PLAYERNAME|",
+      "lang": "Daraman's blessings, enjoy your stay in Darashia, |PLAYERNAME|"
+    },
+    {
+      "key": "npc.guide_behil.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Daraman's blessings, Black Sabbatth, welcome to Darashia! Would you like some information and a map guide?",
+      "pl": "Błogosławieństwo Daramana, Black Sabbatth, witaj w Darashii! Chcesz trochę informacji i przewodnik po mapie?",
+      "lang": "Daraman's blessings, Black Sabbatth, welcome to Darashia! Would you like some information and a map guide?"
+    },
+    {
+      "key": "npc.halvar.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hello competitor! Do you want to {fight} in the arena or shall I explain the {rules} first?",
+      "pl": "Witaj, zawodniku! Chcesz {fight} na arenie, czy mam najpierw wyjaśnić {rules}?",
+      "lang": "Hello competitor! Do you want to {fight} in the arena or shall I explain the {rules} first?"
+    },
+    {
+      "key": "npc.iptar_sin.stdmod_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "So receive my prayer: 'Light shall be near - and darkness afar'. Now, bring your stake to Tibra in the Carlin church for the next line of the prayer. I will inform her what to do.",
+      "pl": "Przyjmij więc moją modlitwę: 'Light shall be near - and darkness afar'. Teraz przynieś swój kołek do Tibry w kościele Carlin, aby wysłuchać następnej linijki modlitwy. Poinformuję ją, co ma robić.",
+      "lang": "So receive my prayer: 'Light shall be near - and darkness afar'. Now, bring your stake to Tibra in the Carlin church for the next line of the prayer. I will inform her what to do."
+    },
+    {
+      "key": "npc.isimov.stdmod_13",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "So receive my prayer: 'Unclean spirits shall be repelled'. Now, bring your stake to Amanda in Edron for the next line of the prayer. I will inform her what to do.",
+      "pl": "Przyjmij więc moją modlitwę: 'Unclean spirits shall be repelled'. Teraz przynieś swój kołek Amandzie w Edron, aby wysłuchać następnej linijki modlitwy. Poinformuję ją, co ma robić.",
+      "lang": "So receive my prayer: 'Unclean spirits shall be repelled'. Now, bring your stake to Amanda in Edron for the next line of the prayer. I will inform her what to do."
+    },
+    {
+      "key": "npc.isimov.stdmod_15",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You should visit Amanda in Edron now, kid.",
+      "pl": "Powinieneś teraz odwiedzić Amandę w Edron, dzieciaku.",
+      "lang": "You should visit Amanda in Edron now, kid."
     },
     {
       "key": "npc.iwan.farewell_msg_1",
@@ -2903,6 +2548,24 @@
       "lang": "Bye, bye."
     },
     {
+      "key": "npc.iwar.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hiho Storm Killer! Welcome to Kazordoon furniture store.",
+      "pl": "Hej ho, Pogromco Burz! Witaj w sklepie meblowym Kazordoon.",
+      "lang": "Hiho Storm Killer! Welcome to Kazordoon furniture store."
+    },
+    {
+      "key": "npc.jack_drone.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today? I can travel you back to {thais}.",
+      "pl": "Witaj na pokładzie, |PLAYERNAME|. Dokąd mam cię dziś {sail}? Mogę zabrać cię z powrotem do {thais}.",
+      "lang": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today? I can travel you back to {thais}."
+    },
+    {
       "key": "npc.jondrin.greet_msg_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -2910,6 +2573,24 @@
       "en": "Hi!",
       "pl": "Cześć, siemasz!",
       "lang": "Hi!"
+    },
+    {
+      "key": "npc.kasmir.stdmod_15",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You should visit Rahkem in Ankrahmun now, pilgrim.",
+      "pl": "Powinieneś teraz odwiedzić Rahkema w Ankrahmun, pielgrzymie.",
+      "lang": "You should visit Rahkem in Ankrahmun now, pilgrim."
+    },
+    {
+      "key": "npc.kevin.say_51",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good, so listen. Hugo Chief informed me that he needs the measurements of our postofficers. Go and bring me the measurements of Ben, Lokur, Dove, Liane, Chrystal and Olrik.",
+      "pl": "Dobrze, więc słuchaj. Hugo Chief poinformował mnie, że potrzebuje wymiarów naszych urzędników pocztowych. Idź i przynieś mi wymiary Bena, Lokura, Dove, Liane, Chrystal i Olrika.",
+      "lang": "Good, so listen. Hugo Chief informed me that he needs the measurements of our postofficers. Go and bring me the measurements of Ben, Lokur, Dove, Liane, Chrystal and Olrik."
     },
     {
       "key": "npc.klom_stonecutter.voice_1",
@@ -2930,6 +2611,15 @@
       "lang": "Bye, bye."
     },
     {
+      "key": "npc.maealil.stdmod_15",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You should visit Yberius in the Venore temple now.",
+      "pl": "Powinieneś teraz odwiedzić Yberiusa w świątyni Venore.",
+      "lang": "You should visit Yberius in the Venore temple now."
+    },
+    {
       "key": "npc.menesto.say_2",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -2946,6 +2636,69 @@
       "en": "Hmm. ...",
       "pl": "Hmm....",
       "lang": "Hmm. ..."
+    },
+    {
+      "key": "npc.miraia.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Daraman's blessings, |PLAYERNAME|. Welcome to the Enlightened Oasis. Sit down, have a {drink} or some {food}!",
+      "pl": "Błogosławieństwo Daramana, |PLAYERNAME|. Witaj w Oświeconej Oazie. Usiądź, napij się {drink} albo zjedz coś {food}!",
+      "lang": "Daraman's blessings, |PLAYERNAME|. Welcome to the Enlightened Oasis. Sit down, have a {drink} or some {food}!"
+    },
+    {
+      "key": "npc.mortimer.say_11",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Did you get the requested pickaxe from Uzgod in Kazordoon?",
+      "pl": "Zdobyłeś zamówiony kilof od Uzgoda w Kazordoon?",
+      "lang": "Did you get the requested pickaxe from Uzgod in Kazordoon?"
+    },
+    {
+      "key": "npc.muhad.stdmod_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I am the leader of the true sons of {Daraman}.",
+      "pl": "I am the lider, przywódca z the prawdziwy syn z {Daraman}.",
+      "lang": "I am the leader of the true sons of {Daraman}."
+    },
+    {
+      "key": "npc.muhad.stdmod_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I am the leader of the true sons of {Daraman}.",
+      "pl": "I am the lider, przywódca z the prawdziwy syn z {Daraman}.",
+      "lang": "I am the leader of the true sons of {Daraman}."
+    },
+    {
+      "key": "npc.nilsor.say_15",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Thank you for this ingredient. Now bring me Fine {Sulphur}.",
+      "pl": "Dziękuję za ten składnik. Teraz przynieś mi Dobrze {Sulphur}.",
+      "lang": "Thank you for this ingredient. Now bring me Fine {Sulphur}."
+    },
+    {
+      "key": "npc.nilsor.say_19",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Thank you for this ingredient Now bring me Purple Kiss {Blossom}.",
+      "pl": "Dziękuję za ten składnik. Teraz przynieś mi Fioletowy Pocałunek {Blossom}.",
+      "lang": "Thank you for this ingredient Now bring me Purple Kiss {Blossom}."
+    },
+    {
+      "key": "npc.ninev.stdmod_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "So receive my prayer: 'Light shall be near - and darkness afar'. Now, bring your stake to Tibra in the Carlin church for the next line of the prayer. I will inform her what to do.",
+      "pl": "Przyjmij więc moją modlitwę: 'Light shall be near - and darkness afar'. Teraz przynieś swój kołek do Tibry w kościele Carlin, aby wysłuchać następnej linijki modlitwy. Poinformuję ją, co ma robić.",
+      "lang": "So receive my prayer: 'Light shall be near - and darkness afar'. Now, bring your stake to Tibra in the Carlin church for the next line of the prayer. I will inform her what to do."
     },
     {
       "key": "npc.noodles.voice_3",
@@ -2984,24 +2737,6 @@
       "lang": "Oh "
     },
     {
-      "key": "npc.palimuth.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Greetings.",
-      "pl": "Pozdrowienia.",
-      "lang": "Greetings."
-    },
-    {
-      "key": "npc.pemaret.say_4",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Then no.",
-      "pl": "Wtedy Nie.",
-      "lang": "Then no."
-    },
-    {
       "key": "npc.peter.stdmod_10",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3027,33 +2762,6 @@
       "en": "Oink.",
       "pl": "Chrum.",
       "lang": "Oink."
-    },
-    {
-      "key": "npc.pino.keyword_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hold on!",
-      "pl": "Hold na!",
-      "lang": "Hold on!"
-    },
-    {
-      "key": "npc.pino.stdmod_4",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hold on!",
-      "pl": "Hold na!",
-      "lang": "Hold on!"
-    },
-    {
-      "key": "npc.pompan.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hello.",
-      "pl": "Cześć, dzień dobry.",
-      "lang": "Hello."
     },
     {
       "key": "npc.prisoner.voice_4",
@@ -3720,6 +3428,312 @@
       "en": "TIC",
       "pl": "TIK",
       "lang": "TIC"
+    },
+    {
+      "key": "raid.lions.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lions",
+      "pl": "Lew",
+      "lang": "Lions"
+    },
+    {
+      "key": "raid.minotaurs.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Minotaurs",
+      "pl": "MiNietaurs",
+      "lang": "Minotaurs"
+    },
+    {
+      "key": "raid.example.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Example",
+      "pl": "Przykład",
+      "lang": "Example"
+    },
+    {
+      "key": "raid.priestesses.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Priestesses",
+      "pl": "Kapłanka",
+      "lang": "Priestesses"
+    },
+    {
+      "key": "raid.barbarian.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Barbarian",
+      "pl": "Barbarzyńca",
+      "lang": "Barbarian"
+    },
+    {
+      "key": "raid.dragons.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dragons",
+      "pl": "Smok",
+      "lang": "Dragons"
+    },
+    {
+      "key": "raid.wasp_bear.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Wasp Bear",
+      "pl": "Osa Bear",
+      "lang": "Wasp Bear"
+    },
+    {
+      "key": "raid.lizards.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lizards",
+      "pl": "Jaszczurka",
+      "lang": "Lizards"
+    },
+    {
+      "key": "raid.orc.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Orc",
+      "pl": "Ork",
+      "lang": "Orc"
+    },
+    {
+      "key": "raid.nomad.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Nomad",
+      "pl": "Niemad",
+      "lang": "Nomad"
+    },
+    {
+      "key": "raid.bone_beast.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bone Beast",
+      "pl": "Kość Bestia",
+      "lang": "Bone Beast"
+    },
+    {
+      "key": "raid.tigers.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tigers",
+      "pl": "Tygrys",
+      "lang": "Tigers"
+    },
+    {
+      "key": "raid.tortoises.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tortoises",
+      "pl": "Żółw",
+      "lang": "Tortoises"
+    },
+    {
+      "key": "raid.undead.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Undead",
+      "pl": "Nieumarły",
+      "lang": "Undead"
+    },
+    {
+      "key": "raid.hunter.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hunter",
+      "pl": "Myśliwy",
+      "lang": "Hunter"
+    },
+    {
+      "key": "raid.goblins.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Goblins",
+      "pl": "Chochlik",
+      "lang": "Goblins"
+    },
+    {
+      "key": "raid.horned.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Horned",
+      "pl": "Róg",
+      "lang": "Horned"
+    },
+    {
+      "key": "raid.beetles.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Beetles",
+      "pl": "Żuk, chrząszcz",
+      "lang": "Beetles"
+    },
+    {
+      "key": "scripts.action_horn.say_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grr.",
+      "pl": "gr.",
+      "lang": "Grr."
+    },
+    {
+      "key": "scripts.action_switch.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "CLICK",
+      "pl": "TRZASK",
+      "lang": "CLICK"
+    },
+    {
+      "key": "scripts.actions_brain.msg_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<brzzl> <frzzp> <fsssh>",
+      "pl": "<bzzzt> <frzzp> <fsssh>",
+      "lang": "<brzzl> <frzzp> <fsssh>"
+    },
+    {
+      "key": "scripts.actions_lever_barrel.say_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "KABOOM!!",
+      "pl": "KABUOM!!",
+      "lang": "KABOOM!!"
+    },
+    {
+      "key": "scripts.actions_lord_of_elements_lever.say_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ZOOOOOOOOM",
+      "pl": "ZOOOOOOOM",
+      "lang": "ZOOOOOOOOM"
+    },
+    {
+      "key": "scripts.actions_machine2.say_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ON",
+      "pl": "NA",
+      "lang": "ON"
+    },
+    {
+      "key": "scripts.actions_the_shatterer_levers.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "CLICK",
+      "pl": "TRZASK",
+      "lang": "CLICK"
+    },
+    {
+      "key": "scripts.actions_treasure_chest.msg_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You found ",
+      "pl": "Ty znaleziono ",
+      "lang": "You found "
+    },
+    {
+      "key": "scripts.actions_treasure_chest.msg_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You found ",
+      "pl": "Ty znaleziono ",
+      "lang": "You found "
+    },
+    {
+      "key": "scripts.afk.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "AFK !",
+      "pl": "AFK!",
+      "lang": "AFK !"
+    },
+    {
+      "key": "scripts.banana_chocolate_shake.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slurp.",
+      "pl": "Siorbać.",
+      "lang": "Slurp."
+    },
+    {
+      "key": "scripts.blessed_steak.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chomp.",
+      "pl": "Chop.",
+      "lang": "Chomp."
+    },
+    {
+      "key": "scripts.blueberry_cupcake.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mmmm.",
+      "pl": "Mmm.",
+      "lang": "Mmmm."
+    },
+    {
+      "key": "scripts.carrot_cake.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mmmm.",
+      "pl": "Mmm.",
+      "lang": "Mmmm."
+    },
+    {
+      "key": "scripts.coconut_shrimp_bake.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yum.",
+      "pl": "Mniam.",
+      "lang": "Yum."
+    },
+    {
+      "key": "scripts.creaturescripts_energy_prism.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*zap!*",
+      "pl": "*zastrzelić!*",
+      "lang": "*zap!*"
     }
   ],
   "length_ratio_issues": [
@@ -3832,6 +3846,15 @@
       "pl_ratio": 3.125
     },
     {
+      "key": "npc.pompan.greet_msg_1",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 6,
+      "lang_ratio": 0.833,
+      "pl_ratio": 3.167
+    },
+    {
       "key": "npc.telas.greet_msg_1",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
@@ -3879,8 +3902,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 70,
-    "skipped": 10,
+    "applied": 46,
+    "skipped": 34,
     "errors": 0
   }
 }

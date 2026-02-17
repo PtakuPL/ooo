@@ -51206,5 +51206,389 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:34:09.616137Z"
+  },
+  "item.173.desc": {
+    "src_hash": "00e5dd72cab829b0daab21ada7969d81",
+    "text": "Scrie 'Roses are red...'",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:52.757331Z"
+  },
+  "item.22747.desc": {
+    "src_hash": "d4f15e5ab0bb7646eafb423e81990cea",
+    "text": "Te apropie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.153309Z"
+  },
+  "item.22761.desc": {
+    "src_hash": "d4f15e5ab0bb7646eafb423e81990cea",
+    "text": "Te apropie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.155339Z"
+  },
+  "item.228.name": {
+    "src_hash": "4cfde997d77c96cd2498273fa05e9af6",
+    "text": "vază fină",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.161637Z"
+  },
+  "item.22875.name": {
+    "src_hash": "e6c230fec8ac33d15259b3d248b5da97",
+    "text": "bazin de cărbune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.167344Z"
+  },
+  "item.22876.name": {
+    "src_hash": "e6c230fec8ac33d15259b3d248b5da97",
+    "text": "bazin de cărbune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.167774Z"
+  },
+  "item.232.name": {
+    "src_hash": "431369719ea01e4118be66bfd4c3b4d7",
+    "text": "zid de ardere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.178567Z"
+  },
+  "item.233.name": {
+    "src_hash": "6a41c922c62d46e82ad24e725c5b5aab",
+    "text": "ou de păianjen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.179025Z"
+  },
+  "item.23363.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "Există o gaură în tavan.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.180169Z"
+  },
+  "item.23537.desc": {
+    "src_hash": "a86d55343b92f471ff88bd7015c0755d",
+    "text": "Acest covor este extrem de moale la atingere - și va fi pentru totdeauna.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.225409Z"
+  },
+  "item.23676.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.242978Z"
+  },
+  "item.23677.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.243814Z"
+  },
+  "item.23677.name": {
+    "src_hash": "080c297384be922d304cc2163d9d0d52",
+    "text": "cutie muzicală",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.244243Z"
+  },
+  "item.23678.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.244861Z"
+  },
+  "item.23679.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.245732Z"
+  },
+  "item.23680.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.246585Z"
+  },
+  "item.23681.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.247610Z"
+  },
+  "item.23682.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.248484Z"
+  },
+  "item.23683.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.249986Z"
+  },
+  "item.2445.name": {
+    "src_hash": "1371cdad2e9124027162e04f7e764afb",
+    "text": "ceas cu pendul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.283875Z"
+  },
+  "item.2446.name": {
+    "src_hash": "1371cdad2e9124027162e04f7e764afb",
+    "text": "ceas cu pendul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.284278Z"
+  },
+  "item.2447.name": {
+    "src_hash": "1371cdad2e9124027162e04f7e764afb",
+    "text": "ceas cu pendul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.284661Z"
+  },
+  "item.2448.name": {
+    "src_hash": "1371cdad2e9124027162e04f7e764afb",
+    "text": "ceas cu pendul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.285446Z"
+  },
+  "item.24492.name": {
+    "src_hash": "f4eb56362e30e64f82b8d92a8d1f26ae",
+    "text": "carne prăjită",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.286657Z"
+  },
+  "item.2474.name": {
+    "src_hash": "a1e3452ac026dc5378845dfe6deafaaa",
+    "text": "sicriu de lemn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.292157Z"
+  },
+  "item.2475.name": {
+    "src_hash": "a1e3452ac026dc5378845dfe6deafaaa",
+    "text": "sicriu de lemn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.292548Z"
+  },
+  "item.2476.name": {
+    "src_hash": "a1e3452ac026dc5378845dfe6deafaaa",
+    "text": "sicriu de lemn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.292992Z"
+  },
+  "item.2477.name": {
+    "src_hash": "a1e3452ac026dc5378845dfe6deafaaa",
+    "text": "sicriu de lemn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.293379Z"
+  },
+  "item.25205.desc": {
+    "src_hash": "f8260ddde642e2d75b0a592e57332de8",
+    "text": "A fost acordat în cadrul festivităților aniversării lui Tibia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.339624Z"
+  },
+  "item.25509.name": {
+    "src_hash": "79de7a615c87693691e95d90d8c0ca96",
+    "text": "fântână",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.350478Z"
+  },
+  "item.25710.name": {
+    "src_hash": "2df9afbfe1cce6c91473779893f48ef9",
+    "text": "resturi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.357929Z"
+  },
+  "item.25761.name": {
+    "src_hash": "98695ff5ca1c07290cf0149cd234f6be",
+    "text": "obiect magică",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.363537Z"
+  },
+  "item.25979.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.408508Z"
+  },
+  "item.25980.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.409346Z"
+  },
+  "item.25981.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.410355Z"
+  },
+  "item.25982.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.411158Z"
+  },
+  "item.26123.name": {
+    "src_hash": "12a7b6eefac4175c0e27614db28baf78",
+    "text": "scânduri de lemn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.465527Z"
+  },
+  "item.27448.name": {
+    "src_hash": "796ab53acf966fbacf8f078ecd10a9ce",
+    "text": "bibliotecă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.492878Z"
+  },
+  "item.27493.name": {
+    "src_hash": "ba6e7efe4ef9d89a520466f4fb894a0b",
+    "text": "pârghie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.497130Z"
+  },
+  "item.2789.desc": {
+    "src_hash": "dadc5485afc486e3c4b1d0f7732f325d",
+    "text": "Folosește-l în casa ta pentru a construi un sertar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.567719Z"
+  },
+  "item.2814.name": {
+    "src_hash": "cc1681e61a641db82e00cdadd74596e3",
+    "text": "pergament",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.575510Z"
+  },
+  "item.2819.name": {
+    "src_hash": "cc1681e61a641db82e00cdadd74596e3",
+    "text": "pergament",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.577542Z"
+  },
+  "item.2833.name": {
+    "src_hash": "cc1681e61a641db82e00cdadd74596e3",
+    "text": "pergament",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.579453Z"
+  },
+  "item.2835.name": {
+    "src_hash": "cc1681e61a641db82e00cdadd74596e3",
+    "text": "pergament",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.579846Z"
+  },
+  "item.28468.name": {
+    "src_hash": "8eb3f23bebeafee88a27a134ecdf9933",
+    "text": "găleată umplută cu cretă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.588855Z"
+  },
+  "item.28651.name": {
+    "src_hash": "1c2123d726ed9e6bc173b68f13915566",
+    "text": "scoici",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.633293Z"
+  },
+  "item.28894.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.693291Z"
+  },
+  "item.28895.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Suvenir de la Muzeul Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:36:54.694149Z"
   }
 }

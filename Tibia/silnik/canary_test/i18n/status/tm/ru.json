@@ -34534,5 +34534,365 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:34:33.947455Z"
+  },
+  "monster.yalahari.voice_1": {
+    "src_hash": "abf7c5581c993aa8b962d663577749d2",
+    "text": "Добро пожаловать в Yalahar, чужак.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:11.856341Z"
+  },
+  "monster.yalahari.voice_7": {
+    "src_hash": "36d56763b89b92208b4a490e7a2b21ab",
+    "text": "Однажды Yalahar вернет свою былую славу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:11.860227Z"
+  },
+  "monster.schiach.voice_2": {
+    "src_hash": "5acfb309564e08d22fe9578d5e2302b7",
+    "text": "Пш пш пш!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:11.876078Z"
+  },
+  "monster.mephiles.voice_4": {
+    "src_hash": "a7557386c29e2fdc07216e70d1b07b8f",
+    "text": "Богатство, Power, всё у вас под рукой. Все, что вам нужно сделать, это немного шантажировать и запугивать.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:11.943032Z"
+  },
+  "monster.xogixath.name": {
+    "src_hash": "59e6eb78ab5a77f19d0b609a18e4f3d0",
+    "text": "Хогишат",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:11.997034Z"
+  },
+  "monster.ferumbras_essence.name": {
+    "src_hash": "193ed1ab7ad96292c91db104225b5003",
+    "text": "Сущность ферумбры",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:11.999514Z"
+  },
+  "monster.zorvorax.name": {
+    "src_hash": "80c04b42271d9f49b38453faaac73c56",
+    "text": "Зорворакс",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.069864Z"
+  },
+  "monster.cosmic_energy_prism_b.name": {
+    "src_hash": "f95565db7e2ae86a220d11e020e9bb74",
+    "text": "Космическая энергетическая призма B",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.088175Z"
+  },
+  "monster.cosmic_energy_prism_b.desc": {
+    "src_hash": "9d151c9e985724a5a4bd4f4e0153b6f8",
+    "text": "призма космической энергии B",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.089854Z"
+  },
+  "monster.cosmic_energy_prism_c.name": {
+    "src_hash": "b37cd9e7bae5e0b0b4f7395fe114841f",
+    "text": "Космическая энергетическая призма C",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.093835Z"
+  },
+  "monster.cosmic_energy_prism_c.desc": {
+    "src_hash": "870ee438d34acfde50dac2b72a7cc009",
+    "text": "призма космической энергии C",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.095583Z"
+  },
+  "monster.cosmic_energy_prism_d_invu.name": {
+    "src_hash": "9927ed75a4fe02599e87bf8360fce9b2",
+    "text": "Космическая энергетическая призма D",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.097347Z"
+  },
+  "monster.cosmic_energy_prism_d_invu.desc": {
+    "src_hash": "4bb2e83d9a070e7c8e3c3eb1e8161e45",
+    "text": "призма космической энергии D",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.098800Z"
+  },
+  "monster.cosmic_energy_prism_b_invu.name": {
+    "src_hash": "f95565db7e2ae86a220d11e020e9bb74",
+    "text": "Космическая энергетическая призма B",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.103795Z"
+  },
+  "monster.cosmic_energy_prism_d.name": {
+    "src_hash": "9927ed75a4fe02599e87bf8360fce9b2",
+    "text": "Космическая энергетическая призма D",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.106200Z"
+  },
+  "monster.cosmic_energy_prism_d.desc": {
+    "src_hash": "b5da065601952a7734fb863e8f8a2d97",
+    "text": "призма космической энергии D",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.107645Z"
+  },
+  "monster.bound_astral_power.name": {
+    "src_hash": "f6732821353f6c977735c07053d1aa38",
+    "text": "Связанный Астрал Power",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.109028Z"
+  },
+  "monster.the_shielded_thorn_knight.name": {
+    "src_hash": "772d90bd8a3f689870a842f1519b18f9",
+    "text": "Экранированный Шип Knight",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.111784Z"
+  },
+  "monster.the_shielded_thorn_knight.desc": {
+    "src_hash": "73fa2b21e3e8e893a7b88d4fa1f86ee8",
+    "text": "экранированный Шип Knight",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.113173Z"
+  },
+  "monster.the_enraged_thorn_knight.name": {
+    "src_hash": "0e39d755d5c7e5bffb9b2fc5018a69d2",
+    "text": "Разъяренный Шип Knight",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.118002Z"
+  },
+  "monster.the_enraged_thorn_knight.desc": {
+    "src_hash": "79deae5cef78f6fee13d8c43d255a9d3",
+    "text": "разъяренный Торн Knight",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.119448Z"
+  },
+  "monster.mounted_thorn_knight.name": {
+    "src_hash": "2697eff1e5cf358848e4e37a5169a9e1",
+    "text": "Установленный Шип Knight",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.132187Z"
+  },
+  "monster.mounted_thorn_knight.desc": {
+    "src_hash": "3f91ad9e36be5d1c586798bcbca7428e",
+    "text": "установленный Шип Knight",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.133671Z"
+  },
+  "monster.cosmic_energy_prism_c_invu.name": {
+    "src_hash": "b37cd9e7bae5e0b0b4f7395fe114841f",
+    "text": "Космическая энергетическая призма C",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.137985Z"
+  },
+  "monster.cosmic_energy_prism_c_invu.desc": {
+    "src_hash": "000a87efa1ba22bd599e89a9c03f4b54",
+    "text": "призма космической энергии C",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.139420Z"
+  },
+  "monster.jaul.voice_2": {
+    "src_hash": "92f20ec1056ef772bf964d1796ebebd8",
+    "text": "QJELL ДАЛЕКО ГОУ ДЖЕЙ!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.336051Z"
+  },
+  "monster.minishabaal.voice_5": {
+    "src_hash": "61629063f539d6dd945dc701537275bc",
+    "text": "Он он он",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.497135Z"
+  },
+  "monster.mummy.voice_5": {
+    "src_hash": "54ce72b6cacdafca8295ce54f713e300",
+    "text": "Ахкара exura белил морт!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.565010Z"
+  },
+  "monster.undead_elite_gladiator.name": {
+    "src_hash": "d46e0c7763a589c43100938aabc96e2c",
+    "text": "Undead Элитный гладиатор",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.596408Z"
+  },
+  "monster.foreman_kneebiter.voice_1": {
+    "src_hash": "605f0416cc3df56c82a0f50f818fad73",
+    "text": "Клянусь бородой Durin!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.735395Z"
+  },
+  "monster.zulazza_the_corruptor.voice_3": {
+    "src_hash": "5bc858b26ff5cfb6a67004af520990d9",
+    "text": "Ззайон — наш последний ззтанд! Я не оставлю wizzout бой!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.744416Z"
+  },
+  "monster.chizzoron_the_distorter.voice_1": {
+    "src_hash": "7dd406058e987d272ec20ae3b890c5b0",
+    "text": "Человечествоззз! Оставьте Зайон в onzzzze!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.748416Z"
+  },
+  "monster.deepling_worker.voice_1": {
+    "src_hash": "1956f027b34d238a3e2d89543e742f74",
+    "text": "Qjell издалека, гоу джей!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:12.957601Z"
+  },
+  "monster.hardened_usurper_warlock.name": {
+    "src_hash": "625510d3c3688c2cf32227df3e4b3944",
+    "text": "Закоренелый узурпатор Warlock",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:13.080727Z"
+  },
+  "monster.usurper_knight.voice_3": {
+    "src_hash": "b5ad86c424be5dd0347a61b2e0658d92",
+    "text": "Ты не заслуживаешь Bounac!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:13.094373Z"
+  },
+  "monster.hardened_usurper_knight.name": {
+    "src_hash": "b3905e0a87df816ec12c33596d71509a",
+    "text": "Закоренелый узурпатор Knight",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:13.163048Z"
+  },
+  "monster.dryad.voice_1": {
+    "src_hash": "54e948a21ef82e39edc09764aeed2742",
+    "text": "Почувствуй гнев матери Tibia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:13.389077Z"
+  },
+  "monster.water_elemental.voice_1": {
+    "src_hash": "c5866c6ede2a7bb1a64f16b2eb93e768",
+    "text": "СПЛИС СПЛЭШ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:13.455033Z"
+  },
+  "monster.the_first_dragon.name": {
+    "src_hash": "3e9ff2fb268bac02d2f150cae0aab8c5",
+    "text": "Первый дракон",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:13.648408Z"
+  },
+  "monster.zushuka.name": {
+    "src_hash": "f7d3f936c82d25f009159f66874105e9",
+    "text": "Дзушука",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:13.655971Z"
+  },
+  "monster.mad_mage.name": {
+    "src_hash": "7cb4e60cd0927f995c74a12fe8154ebc",
+    "text": "Безумный маг",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:13.689207Z"
+  },
+  "monster.zevelon_duskbringer.voice_3": {
+    "src_hash": "b846515bb4e74ae201b0f449f7418514",
+    "text": "Я буду рядом, когда моя гонка 'noble' закончится.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:13.708148Z"
+  },
+  "monster.diblis_the_fair.desc": {
+    "src_hash": "5cd6555c19e0b434371a7a34d538792b",
+    "text": "Диблис Ярмарка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:13.765976Z"
+  },
+  "monster.zarabustor.name": {
+    "src_hash": "2b504587d0e3d0f15f2db9979f009302",
+    "text": "Зарабустор",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:13.809662Z"
+  },
+  "monster.yielothax.voice_2": {
+    "src_hash": "45ff2a0c2874a0ab338ccfefab90a5e2",
+    "text": "Бсссссссм Бсссссссм Бсссссссм!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:13.832015Z"
   }
 }

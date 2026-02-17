@@ -57630,5 +57630,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T07:34:22.042426Z"
+  },
+  "monster.orc_warlord.voice_4": {
+    "src_hash": "01cfd95dddedebee628502180fd2becc",
+    "text": "Futchi Maruk Buta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:03.295685Z"
+  },
+  "monster.kalyassa.desc": {
+    "src_hash": "8eb76610bc95eb3ae228605ad80bc631",
+    "text": "Kaliassa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:03.702516Z"
+  },
+  "monster.abyssador.voice_7": {
+    "src_hash": "c43a7103890fce2bc835c9451393576d",
+    "text": "*** ESISTENZA *** FUTILE ***",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:03.818665Z"
+  },
+  "monster.minishabaal.voice_5": {
+    "src_hash": "61629063f539d6dd945dc701537275bc",
+    "text": "Lui Lui Lui",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T07:37:04.092291Z"
   }
 }

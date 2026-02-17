@@ -1,10 +1,10 @@
 {
   "lang": "es",
-  "coverage_pct": 84.6,
+  "coverage_pct": 84.8,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T06:51:53.392690Z",
+  "checked_at": "2026-02-17T07:38:29.823433Z",
   "issues_total": 513,
   "issues_by_type": {
     "consistency_in_language": 70,
@@ -1774,15 +1774,6 @@
       "en": "Chchch",
       "pl": "Chch",
       "lang": "Chchch"
-    },
-    {
-      "key": "monster.poodle.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Poodle",
-      "pl": "Pudel",
-      "lang": "Poodle"
     },
     {
       "key": "monster.hyaena.name",
@@ -4098,60 +4089,6 @@
       "lang": "Yep."
     },
     {
-      "key": "npc.tom.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "D'oh?",
-      "pl": "Eee?",
-      "lang": "D'oh?"
-    },
-    {
-      "key": "npc.uzon.keyword_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hold on!",
-      "pl": "Hold na!",
-      "lang": "Hold on!"
-    },
-    {
-      "key": "npc.uzon.stdmod_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hold on!",
-      "pl": "Hold na!",
-      "lang": "Hold on!"
-    },
-    {
-      "key": "npc.uzon_back.keyword_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hold on!",
-      "pl": "Hold na!",
-      "lang": "Hold on!"
-    },
-    {
-      "key": "npc.uzon_back.stdmod_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hold on!",
-      "pl": "Hold na!",
-      "lang": "Hold on!"
-    },
-    {
-      "key": "npc.vascalir.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Farewell.",
-      "pl": "Żegnaj.",
-      "lang": "Farewell."
-    },
-    {
       "key": "npc.vascalir.stdmod_4",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -4159,15 +4096,6 @@
       "en": "OK, dude!",
       "pl": "OK, stary!",
       "lang": "OK, dude!"
-    },
-    {
-      "key": "npc.vascalir.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Farewell.",
-      "pl": "Żegnaj.",
-      "lang": "Farewell."
     },
     {
       "key": "npc.warbert.say_1",
@@ -4240,24 +4168,6 @@
       "en": "Me Yasir.",
       "pl": "Mnie, mi Yasir.",
       "lang": "Me Yasir."
-    },
-    {
-      "key": "npc.zerbrus.stdmod_14",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fine.",
-      "pl": "Dobrze.",
-      "lang": "Fine."
-    },
-    {
-      "key": "npc.zumtah.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Muhahaha.",
-      "pl": "Muhahaha!",
-      "lang": "Muhahaha."
     },
     {
       "key": "otclient_data.40_outfitwindow_otui.tr_21",
@@ -4663,6 +4573,96 @@
       "en": "Orcs",
       "pl": "Orki",
       "lang": "Orcs"
+    },
+    {
+      "key": "raid.orc.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Orc",
+      "pl": "Ork",
+      "lang": "Orc"
+    },
+    {
+      "key": "raid.bone_beast.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bone Beast",
+      "pl": "Kość Bestia",
+      "lang": "Bone Beast"
+    },
+    {
+      "key": "raid.tigers.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tigers",
+      "pl": "Tygrys",
+      "lang": "Tigers"
+    },
+    {
+      "key": "raid.tortoises.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tortoises",
+      "pl": "Żółw",
+      "lang": "Tortoises"
+    },
+    {
+      "key": "raid.undead.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Undead",
+      "pl": "Nieumarły",
+      "lang": "Undead"
+    },
+    {
+      "key": "raid.orc_backpack.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Orc Backpack",
+      "pl": "Orc plecak",
+      "lang": "Orc Backpack"
+    },
+    {
+      "key": "raid.goblins.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Goblins",
+      "pl": "Chochlik",
+      "lang": "Goblins"
+    },
+    {
+      "key": "raid.horned.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Horned",
+      "pl": "Róg",
+      "lang": "Horned"
+    },
+    {
+      "key": "raid.beetles.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Beetles",
+      "pl": "Żuk, chrząszcz",
+      "lang": "Beetles"
+    },
+    {
+      "key": "gamestore.modal.error",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Error",
+      "pl": "Błąd",
+      "lang": "Error"
     }
   ],
   "length_ratio_issues": [

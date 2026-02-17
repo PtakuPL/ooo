@@ -1,10 +1,10 @@
 {
   "lang": "sv",
-  "coverage_pct": 27.6,
+  "coverage_pct": 27.7,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T06:55:11.262916Z",
+  "checked_at": "2026-02-17T07:41:22.916897Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -2741,15 +2741,6 @@
       "lang": "<Fart>"
     },
     {
-      "key": "monster.minishabaal.voice_6",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Pftt, Ferumbras such an upstart.",
-      "pl": "Pftt, Ferumbras taki nowicjusz.",
-      "lang": "Pftt, Ferumbras such an upstart."
-    },
-    {
       "key": "monster.iks_pututu.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3612,6 +3603,15 @@
       "en": "Rooawwrr",
       "pl": "Rooawrr",
       "lang": "Rooawwrr"
+    },
+    {
+      "key": "monster.wyrm.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRR",
+      "pl": "Wrr",
+      "lang": "GRRR"
     }
   ],
   "length_ratio_issues": [

@@ -1,17 +1,33 @@
 {
   "lang": "sr",
-  "coverage_pct": 44.7,
+  "coverage_pct": 44.8,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T06:55:10.896574Z",
-  "issues_total": 433,
+  "checked_at": "2026-02-17T07:41:22.591943Z",
+  "issues_total": 435,
   "issues_by_type": {
-    "consistency_in_language": 8,
+    "consistency_in_language": 9,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 25
+    "length_ratio_crosscheck": 26
   },
   "consistency_issues": [
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You found ",
+      "variants": [
+        "Нашли сте",
+        "Нашли сте "
+      ],
+      "variants_count": 2,
+      "examples": [
+        "actions:actions.random_items.say_1",
+        "quests:quests.actions_rewards.msg_1",
+        "quests:quests.actions_rewards.msg_2",
+        "scripts:scripts.action_tortoise_egg_nargor.msg_1"
+      ]
+    },
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
@@ -132,366 +148,6 @@
   ],
   "pl_reference_issues": [
     {
-      "key": "achievement.402.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Spin-Off",
-      "pl": "I.-Off",
-      "lang": "Spin-Off"
-    },
-    {
-      "key": "achievement.410.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hat Hunter",
-      "pl": "Kapelusz Myśliwy",
-      "lang": "Hat Hunter"
-    },
-    {
-      "key": "achievement.411.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ogre Chef",
-      "pl": "Ogr, potwór Szef kuchni, kucharz",
-      "lang": "Ogre Chef"
-    },
-    {
-      "key": "achievement.432.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Contender",
-      "pl": "Pretendent",
-      "lang": "Contender"
-    },
-    {
-      "key": "achievement.486.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bewitcher",
-      "pl": "Oczarowywać",
-      "lang": "Bewitcher"
-    },
-    {
-      "key": "achievement.506.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Falconer",
-      "pl": "Sokół",
-      "lang": "Falconer"
-    },
-    {
-      "key": "achievement.521.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Pied Piper",
-      "pl": "Pied Kobziarz, dudziarz",
-      "lang": "Pied Piper"
-    },
-    {
-      "key": "achievement.537.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Snake Pit",
-      "pl": "Wąż Dół, jama",
-      "lang": "Snake Pit"
-    },
-    {
-      "key": "actions.random_items.say_1",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You found ",
-      "pl": "Znalazłeś ",
-      "lang": "You found "
-    },
-    {
-      "key": "ui.house.rent_period_daily",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "daily",
-      "pl": "codziennie",
-      "lang": "daily"
-    },
-    {
-      "key": "ui.house.rent_period_monthly",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "monthly",
-      "pl": "miesięczny",
-      "lang": "monthly"
-    },
-    {
-      "key": "ui.house.rent_period_weekly",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "weekly",
-      "pl": "tygodnik",
-      "lang": "weekly"
-    },
-    {
-      "key": "ui.house.rent_period_yearly",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "annual",
-      "pl": "coroczny",
-      "lang": "annual"
-    },
-    {
-      "key": "ui.readable.wrote",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " wrote",
-      "pl": "wrote",
-      "lang": " wrote"
-    },
-    {
-      "key": "ui.readable.wrote_on_date",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " wrote on ",
-      "pl": "wrote na ",
-      "lang": " wrote on "
-    },
-    {
-      "key": "ui.readable.you_read_prefix",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You read: ",
-      "pl": "Ty czytać, przeczytać: ",
-      "lang": "You read: "
-    },
-    {
-      "key": "channel.tutor.name",
-      "category": "chatchannels",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tutor",
-      "pl": "Korepetytor",
-      "lang": "Tutor"
-    },
-    {
-      "key": "channel.help.name",
-      "category": "chatchannels",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Help",
-      "pl": "Pomoc",
-      "lang": "Help"
-    },
-    {
-      "key": "channel.gamemaster.name",
-      "category": "chatchannels",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gamemaster",
-      "pl": "Mistrz Gry",
-      "lang": "Gamemaster"
-    },
-    {
-      "key": "channel.world_chat.name",
-      "category": "chatchannels",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "World Chat",
-      "pl": "Czat światowy",
-      "lang": "World Chat"
-    },
-    {
-      "key": "client.game_store.text1",
-      "category": "client",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "HomePanel",
-      "pl": "Panel główny",
-      "lang": "HomePanel"
-    },
-    {
-      "key": "cpp.augment.damage",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "damage",
-      "pl": "szkoda",
-      "lang": "damage"
-    },
-    {
-      "key": "cpp.augment.healing",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "healing",
-      "pl": "Gojenie : zdrowienie",
-      "lang": "healing"
-    },
-    {
-      "key": "cpp.bestiary.charm_category_major",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Major",
-      "pl": "Główny",
-      "lang": "Major"
-    },
-    {
-      "key": "cpp.bestiary.charm_category_minor",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Minor",
-      "pl": "Mini",
-      "lang": "Minor"
-    },
-    {
-      "key": "cpp.combat.agony",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "agony",
-      "pl": "cierpienie",
-      "lang": "agony"
-    },
-    {
-      "key": "cpp.combat.death",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "death",
-      "pl": "śmierć",
-      "lang": "death"
-    },
-    {
-      "key": "cpp.combat.drown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "drown",
-      "pl": "topić się, tonąć",
-      "lang": "drown"
-    },
-    {
-      "key": "cpp.combat.earth",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "earth",
-      "pl": "ziemia",
-      "lang": "earth"
-    },
-    {
-      "key": "cpp.combat.energy",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "energy",
-      "pl": "energia",
-      "lang": "energy"
-    },
-    {
-      "key": "cpp.combat.fire",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fire",
-      "pl": "ogień",
-      "lang": "fire"
-    },
-    {
-      "key": "cpp.combat.healing",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "healing",
-      "pl": "Gojenie : zdrowienie",
-      "lang": "healing"
-    },
-    {
-      "key": "cpp.combat.holy",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "holy",
-      "pl": "święty",
-      "lang": "holy"
-    },
-    {
-      "key": "cpp.combat.ice",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "cpp.combat.lifedrain",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "lifedrain",
-      "pl": "drenaż życia",
-      "lang": "lifedrain"
-    },
-    {
-      "key": "cpp.combat.neutral",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "neutral",
-      "pl": "neutralny",
-      "lang": "neutral"
-    },
-    {
-      "key": "cpp.combat.physical",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "physical",
-      "pl": "Fizyczny",
-      "lang": "physical"
-    },
-    {
-      "key": "cpp.combat.undefined",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "undefined",
-      "pl": "nieokreślony",
-      "lang": "undefined"
-    },
-    {
-      "key": "cpp.combat.unknown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
-    },
-    {
-      "key": "cpp.forge.consumed",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "consumed",
-      "pl": "strawiony",
-      "lang": "consumed"
-    },
-    {
       "key": "cpp.forge.cores_one",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -526,330 +182,6 @@
       "en": "{0} dust",
       "pl": "{0} kurz",
       "lang": "{0} dust"
-    },
-    {
-      "key": "cpp.forge.successful",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Successful",
-      "pl": "sukcesful",
-      "lang": "Successful"
-    },
-    {
-      "key": "cpp.forge.unchanged",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unchanged",
-      "pl": "niezmienione",
-      "lang": "unchanged"
-    },
-    {
-      "key": "cpp.forge.unknown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "(unknown)",
-      "pl": "(nieznany)",
-      "lang": "(unknown)"
-    },
-    {
-      "key": "cpp.game.hazard_tag",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " (Hazard)",
-      "pl": "(I.)",
-      "lang": " (Hazard)"
-    },
-    {
-      "key": "cpp.game.highscore_category_fishing",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fishing",
-      "pl": "Rybacki",
-      "lang": "Fishing"
-    },
-    {
-      "key": "cpp.game.highscore_category_shielding",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Shielding",
-      "pl": "Zastawianie",
-      "lang": "Shielding"
-    },
-    {
-      "key": "cpp.game.no_loot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No loot",
-      "pl": "Żadnych łupów",
-      "lang": "No loot"
-    },
-    {
-      "key": "cpp.game.offline_training_button_cancel",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cancel",
-      "pl": "Anuluj",
-      "lang": "Cancel"
-    },
-    {
-      "key": "cpp.game.offline_training_button_ok",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Okay",
-      "pl": "Dobrze",
-      "lang": "Okay"
-    },
-    {
-      "key": "cpp.game.tentugly_name",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tentugly",
-      "pl": "Delikatnie",
-      "lang": "Tentugly"
-    },
-    {
-      "key": "cpp.game.you_looted",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You looted ",
-      "pl": "Zrabowałeś ",
-      "lang": "You looted "
-    },
-    {
-      "key": "cpp.inspect.and_connector",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " and ",
-      "pl": "i ",
-      "lang": " and "
-    },
-    {
-      "key": "cpp.inspect.armor",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Armor",
-      "pl": "Zbroja",
-      "lang": "Armor"
-    },
-    {
-      "key": "cpp.inspect.at_range",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " at range ",
-      "pl": "w zasięgu ",
-      "lang": " at range "
-    },
-    {
-      "key": "cpp.inspect.attack",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Attack",
-      "pl": "Atak",
-      "lang": "Attack"
-    },
-    {
-      "key": "cpp.inspect.augments",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Augments",
-      "pl": "Zwiększać",
-      "lang": "Augments"
-    },
-    {
-      "key": "cpp.inspect.body_body",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "body",
-      "pl": "ciało",
-      "lang": "body"
-    },
-    {
-      "key": "cpp.inspect.body_both_hands",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "both hands",
-      "pl": "obaj hands",
-      "lang": "both hands"
-    },
-    {
-      "key": "cpp.inspect.body_container",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "container",
-      "pl": "pojemnik",
-      "lang": "container"
-    },
-    {
-      "key": "cpp.inspect.body_extra_slot",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "extra slot",
-      "pl": "dodatkowe gniazdo",
-      "lang": "extra slot"
-    },
-    {
-      "key": "cpp.inspect.body_feet",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "feet",
-      "pl": "stopy",
-      "lang": "feet"
-    },
-    {
-      "key": "cpp.inspect.body_finger",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "finger",
-      "pl": "palec",
-      "lang": "finger"
-    },
-    {
-      "key": "cpp.inspect.body_head",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "head",
-      "pl": "Głowa",
-      "lang": "head"
-    },
-    {
-      "key": "cpp.inspect.body_legs",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "legs",
-      "pl": "noga",
-      "lang": "legs"
-    },
-    {
-      "key": "cpp.inspect.body_neck",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "neck",
-      "pl": "szyja",
-      "lang": "neck"
-    },
-    {
-      "key": "cpp.inspect.brand_new",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "brand-new",
-      "pl": "I.-new",
-      "lang": "brand-new"
-    },
-    {
-      "key": "cpp.inspect.capacity",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Capacity",
-      "pl": "Udźperuka",
-      "lang": "Capacity"
-    },
-    {
-      "key": "cpp.inspect.charges",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Charges",
-      "pl": "Ładunki",
-      "lang": "Charges"
-    },
-    {
-      "key": "cpp.inspect.cleave",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cleave",
-      "pl": "Rozszczepiać",
-      "lang": "Cleave"
-    },
-    {
-      "key": "cpp.inspect.contain",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Contain",
-      "pl": "Zawierać",
-      "lang": "Contain"
-    },
-    {
-      "key": "cpp.inspect.defence",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Defence",
-      "pl": "Obrona",
-      "lang": "Defence"
-    },
-    {
-      "key": "cpp.inspect.effect",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Effect",
-      "pl": "Efekt",
-      "lang": "Effect"
-    },
-    {
-      "key": "cpp.inspect.empty",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "empty",
-      "pl": "puste",
-      "lang": "empty"
-    },
-    {
-      "key": "cpp.inspect.expires",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Expires",
-      "pl": "Wygasa",
-      "lang": "Expires"
-    },
-    {
-      "key": "cpp.inspect.hitchance",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "HitChance",
-      "pl": "Szansa na trafienie",
-      "lang": "HitChance"
-    },
-    {
-      "key": "cpp.inspect.key",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Key",
-      "pl": "Klucz",
-      "lang": "Key"
     },
     {
       "key": "cpp.inspect.n_fields",
@@ -3300,87 +2632,6 @@
       "lang": "TIC"
     },
     {
-      "key": "raid.lions.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lions",
-      "pl": "Lew",
-      "lang": "Lions"
-    },
-    {
-      "key": "raid.minotaurs.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Minotaurs",
-      "pl": "MiNietaurs",
-      "lang": "Minotaurs"
-    },
-    {
-      "key": "raid.example.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Example",
-      "pl": "Przykład",
-      "lang": "Example"
-    },
-    {
-      "key": "raid.barbarian.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Barbarian",
-      "pl": "Barbarzyńca",
-      "lang": "Barbarian"
-    },
-    {
-      "key": "raid.dragons.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dragons",
-      "pl": "Smok",
-      "lang": "Dragons"
-    },
-    {
-      "key": "raid.wasp_bear.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Wasp Bear",
-      "pl": "Osa Bear",
-      "lang": "Wasp Bear"
-    },
-    {
-      "key": "raid.lizards.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lizards",
-      "pl": "Jaszczurka",
-      "lang": "Lizards"
-    },
-    {
-      "key": "raid.rats.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rats",
-      "pl": "Szczur",
-      "lang": "Rats"
-    },
-    {
-      "key": "raid.orcs.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Orcs",
-      "pl": "Orki",
-      "lang": "Orcs"
-    },
-    {
       "key": "raid.orc.name",
       "category": "raids",
       "type": "pl_reference_missing_translation",
@@ -3433,15 +2684,6 @@
       "en": "Undead",
       "pl": "Nieumarły",
       "lang": "Undead"
-    },
-    {
-      "key": "raid.hunter.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hunter",
-      "pl": "Myśliwy",
-      "lang": "Hunter"
     },
     {
       "key": "raid.goblins.name",
@@ -3730,6 +2972,780 @@
       "en": "Hail!",
       "pl": "Grad!",
       "lang": "Hail!"
+    },
+    {
+      "key": "scripts.dolls.18343_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hail!",
+      "pl": "Grad!",
+      "lang": "Hail!"
+    },
+    {
+      "key": "scripts.dolls.21947_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hail!",
+      "pl": "Grad!",
+      "lang": "Hail!"
+    },
+    {
+      "key": "scripts.dolls.21947_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Purrrrrrr!",
+      "pl": "Mrrrrrrr!",
+      "lang": "Purrrrrrr!"
+    },
+    {
+      "key": "scripts.dolls.5080_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hug me!",
+      "pl": "Przytul mnie!",
+      "lang": "Hug me!"
+    },
+    {
+      "key": "scripts.dolls.6566_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zchhhhhh!",
+      "pl": "Chhhhhh!",
+      "lang": "Zchhhhhh!"
+    },
+    {
+      "key": "scripts.dolls.8154_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hail!",
+      "pl": "Grad!",
+      "lang": "Hail!"
+    },
+    {
+      "key": "scripts.dolls.8154_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "So cold.",
+      "pl": "Tak zimno.",
+      "lang": "So cold."
+    },
+    {
+      "key": "scripts.dolls.9144_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hauopa!",
+      "pl": "Haupa!",
+      "lang": "Hauopa!"
+    },
+    {
+      "key": "scripts.dolls.9144_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yala Boom",
+      "pl": "Yala Bum",
+      "lang": "Yala Boom"
+    },
+    {
+      "key": "scripts.fibula.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slrrp!",
+      "pl": "Srrrr!",
+      "lang": "Slrrp!"
+    },
+    {
+      "key": "scripts.filled_jalapeno_peppers.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Munch.",
+      "pl": "Przeżuwać.",
+      "lang": "Munch."
+    },
+    {
+      "key": "scripts.find_fiend.level_easy",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Easy",
+      "pl": "Łatwo",
+      "lang": "Easy"
+    },
+    {
+      "key": "scripts.find_fiend.level_hard",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hard",
+      "pl": "Twardy",
+      "lang": "Hard"
+    },
+    {
+      "key": "scripts.find_fiend.level_harmless",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Harmless",
+      "pl": "Nieszkodliwy",
+      "lang": "Harmless"
+    },
+    {
+      "key": "scripts.find_fiend.level_medium",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Medium",
+      "pl": "Średni",
+      "lang": "Medium"
+    },
+    {
+      "key": "scripts.find_fiend.level_trivial",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Trivial",
+      "pl": "Nie znaczący, banalny",
+      "lang": "Trivial"
+    },
+    {
+      "key": "scripts.find_fiend.level_unknown",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Unknown",
+      "pl": "unkNiewn",
+      "lang": "Unknown"
+    },
+    {
+      "key": "scripts.find_person.dir_east",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "east",
+      "pl": "Wschód",
+      "lang": "east"
+    },
+    {
+      "key": "scripts.find_person.dir_north",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "north",
+      "pl": "Nierth",
+      "lang": "north"
+    },
+    {
+      "key": "scripts.find_person.dir_northeast",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "north-east",
+      "pl": "północ-wschód",
+      "lang": "north-east"
+    },
+    {
+      "key": "scripts.find_person.dir_northwest",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "north-west",
+      "pl": "północ-zachód",
+      "lang": "north-west"
+    },
+    {
+      "key": "scripts.find_person.dir_south",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "south",
+      "pl": "Południe",
+      "lang": "south"
+    },
+    {
+      "key": "scripts.find_person.dir_southeast",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "south-east",
+      "pl": "południe-wschód",
+      "lang": "south-east"
+    },
+    {
+      "key": "scripts.find_person.dir_southwest",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "south-west",
+      "pl": "południe-zachód",
+      "lang": "south-west"
+    },
+    {
+      "key": "scripts.find_person.dir_west",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "west",
+      "pl": "Zachód",
+      "lang": "west"
+    },
+    {
+      "key": "scripts.fire_bug.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "OUCH!",
+      "pl": "AU!",
+      "lang": "OUCH!"
+    },
+    {
+      "key": "scripts.fluids.gulp",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gulp.",
+      "pl": "Łyk.",
+      "lang": "Gulp."
+    },
+    {
+      "key": "scripts.fluids.msg_3",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Urgh!",
+      "pl": "Ugh!",
+      "lang": "Urgh!"
+    },
+    {
+      "key": "scripts.fluids.msg_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Aaaah...",
+      "pl": "Aaaa...",
+      "lang": "Aaaah..."
+    },
+    {
+      "key": "scripts.fluids.msg_5",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mmmh.",
+      "pl": "Mmm.",
+      "lang": "Mmmh."
+    },
+    {
+      "key": "scripts.foods.sound_burp",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Burp.",
+      "pl": "Beknięcie.",
+      "lang": "Burp."
+    },
+    {
+      "key": "scripts.foods.sound_chomp",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chomp.",
+      "pl": "Chop.",
+      "lang": "Chomp."
+    },
+    {
+      "key": "scripts.foods.sound_crunch",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crunch.",
+      "pl": "Schrupać.",
+      "lang": "Crunch."
+    },
+    {
+      "key": "scripts.foods.sound_gulp",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gulp.",
+      "pl": "Łyk.",
+      "lang": "Gulp."
+    },
+    {
+      "key": "scripts.foods.sound_hum",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hum.",
+      "pl": "Szum.",
+      "lang": "Hum."
+    },
+    {
+      "key": "scripts.foods.sound_mmmm",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mmmm.",
+      "pl": "Mmm.",
+      "lang": "Mmmm."
+    },
+    {
+      "key": "scripts.foods.sound_munch",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Munch.",
+      "pl": "Przeżuwać.",
+      "lang": "Munch."
+    },
+    {
+      "key": "scripts.foods.sound_phew",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Phew!",
+      "pl": "Uff!",
+      "lang": "Phew!"
+    },
+    {
+      "key": "scripts.foods.sound_slurp",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slurp.",
+      "pl": "Siorbać.",
+      "lang": "Slurp."
+    },
+    {
+      "key": "scripts.foods.sound_smack",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Smack.",
+      "pl": "Zadatki.",
+      "lang": "Smack."
+    },
+    {
+      "key": "scripts.foods.sound_urgh",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Urgh.",
+      "pl": "Ugh.",
+      "lang": "Urgh."
+    },
+    {
+      "key": "scripts.foods.sound_yum",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yum.",
+      "pl": "Mniam.",
+      "lang": "Yum."
+    },
+    {
+      "key": "scripts.gaz'haragoth_iceball.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chill out!",
+      "pl": "Wyluzuj!",
+      "lang": "Chill out!"
+    },
+    {
+      "key": "scripts.hireling_foods.sound_blurg",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blurg.",
+      "pl": "Rozmycie.",
+      "lang": "Blurg."
+    },
+    {
+      "key": "scripts.hireling_foods.sound_chomp",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chomp.",
+      "pl": "Chop.",
+      "lang": "Chomp."
+    },
+    {
+      "key": "scripts.hireling_foods.sound_munch",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Munch.",
+      "pl": "Przeżuwać.",
+      "lang": "Munch."
+    },
+    {
+      "key": "scripts.hireling_foods.sound_yummm",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yummm.",
+      "pl": "Mniam.",
+      "lang": "Yummm."
+    },
+    {
+      "key": "scripts.horestis_jars.fail_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Waaaaaah",
+      "pl": "Waaaah",
+      "lang": "Waaaaaah"
+    },
+    {
+      "key": "scripts.hydra_tongue_salad.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chomp.",
+      "pl": "Chop.",
+      "lang": "Chomp."
+    },
+    {
+      "key": "scripts.info.access",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Access: ",
+      "pl": "Dostęp: ",
+      "lang": "Access: "
+    },
+    {
+      "key": "scripts.info.ip",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "IP: ",
+      "pl": "IP: ",
+      "lang": "IP: "
+    },
+    {
+      "key": "scripts.info.name",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Name: ",
+      "pl": "Nazwa: ",
+      "lang": "Name: "
+    },
+    {
+      "key": "scripts.info.position",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Position: ",
+      "pl": "Pozycja: ",
+      "lang": "Position: "
+    },
+    {
+      "key": "scripts.info.skill_level",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "* Level: ",
+      "pl": "* poziom: ",
+      "lang": "* Level: "
+    },
+    {
+      "key": "scripts.info.skills_header",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Skills:",
+      "pl": "Umiejętności:",
+      "lang": "Skills:"
+    },
+    {
+      "key": "scripts.info.speed",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Speed: ",
+      "pl": "Szybkość: ",
+      "lang": "Speed: "
+    },
+    {
+      "key": "scripts.lemon_cupcake.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mmmm.",
+      "pl": "Mmm.",
+      "lang": "Mmmm."
+    },
+    {
+      "key": "scripts.malofur_explosion.say_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BOOOM!",
+      "pl": "BUM!",
+      "lang": "BOOOM!"
+    },
+    {
+      "key": "scripts.malofur_explosion.say_5",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BOOM!",
+      "pl": "WYSIĘGNIK!",
+      "lang": "BOOM!"
+    },
+    {
+      "key": "scripts.mirror.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "KABOOM !!",
+      "pl": "KABOOM!!",
+      "lang": "KABOOM !!"
+    },
+    {
+      "key": "scripts.mounts.fail_30",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Splosh!",
+      "pl": "Plusk!",
+      "lang": "Splosh!"
+    },
+    {
+      "key": "scripts.movement_third_floor_ghoul.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<click>",
+      "pl": "<kliknij>",
+      "lang": "<click>"
+    },
+    {
+      "key": "scripts.movement_third_floor_ghoul.say_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<click>",
+      "pl": "<kliknij>",
+      "lang": "<click>"
+    },
+    {
+      "key": "scripts.movements_deep_terror.say_3",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Time out!",
+      "pl": "Czas out!",
+      "lang": "Time out!"
+    },
+    {
+      "key": "scripts.movements_exit.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slurp!",
+      "pl": "Siorbać!",
+      "lang": "Slurp!"
+    },
+    {
+      "key": "scripts.movements_glooth_horror.say_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Time out!",
+      "pl": "Czas out!",
+      "lang": "Time out!"
+    },
+    {
+      "key": "scripts.movements_professor_maxxen.say_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Time out!",
+      "pl": "Czas out!",
+      "lang": "Time out!"
+    },
+    {
+      "key": "scripts.movements_throne.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Begone!",
+      "pl": "Precz!",
+      "lang": "Begone!"
+    },
+    {
+      "key": "scripts.movements_throne.say_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Begone!",
+      "pl": "Precz!",
+      "lang": "Begone!"
+    },
+    {
+      "key": "scripts.moviments_bellow.say_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "TSSSSHHHHH",
+      "pl": "TSSSHHHHH",
+      "lang": "TSSSSHHHHH"
+    },
+    {
+      "key": "scripts.music_box.sound_enraged_white_deer",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*bell*",
+      "pl": "*dzwonek, dzwon*",
+      "lang": "*bell*"
+    },
+    {
+      "key": "scripts.music_box.sound_ironblight",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Plinngggg",
+      "pl": "Plinggggg",
+      "lang": "Plinngggg"
+    },
+    {
+      "key": "scripts.music_box.sound_midnight_panther",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Purrrrrrr",
+      "pl": "Mrrrrrrr",
+      "lang": "Purrrrrrr"
+    },
+    {
+      "key": "scripts.music_box.sound_wailing_widow",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sssssssss",
+      "pl": "Sssssss",
+      "lang": "Sssssssss"
+    },
+    {
+      "key": "scripts.music_box.sound_wild_horse",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*snort*",
+      "pl": "*sNiert*",
+      "lang": "*snort*"
+    },
+    {
+      "key": "scripts.northern_fishburger.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Smack.",
+      "pl": "Zadatki.",
+      "lang": "Smack."
+    },
+    {
+      "key": "scripts.offline_training.and",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "and",
+      "pl": "i",
+      "lang": "and"
+    },
+    {
+      "key": "scripts.offline_training.hours_plural",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "%s hours",
+      "pl": "%s godziny",
+      "lang": "%s hours"
+    },
+    {
+      "key": "scripts.offline_training.hours_singular",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1 hour",
+      "pl": "1 godzina",
+      "lang": "1 hour"
+    },
+    {
+      "key": "scripts.offline_training.minutes_plural",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "%s minutes",
+      "pl": "%s minuty",
+      "lang": "%s minutes"
+    },
+    {
+      "key": "scripts.offline_training.minutes_singular",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1 minute",
+      "pl": "1 minuta",
+      "lang": "1 minute"
+    },
+    {
+      "key": "scripts.oramond_entrance.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slrrp!",
+      "pl": "Srrrr!",
+      "lang": "Slrrp!"
+    },
+    {
+      "key": "scripts.oramond_entrance.say_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slrrp!",
+      "pl": "Srrrr!",
+      "lang": "Slrrp!"
+    },
+    {
+      "key": "scripts.oramond_movements.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slrrp!",
+      "pl": "Srrrr!",
+      "lang": "Slrrp!"
+    },
+    {
+      "key": "scripts.oramond_teleport.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slrrp!",
+      "pl": "Srrrr!",
+      "lang": "Slrrp!"
+    },
+    {
+      "key": "scripts.oramond_teleport.say_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slrrp!",
+      "pl": "Srrrr!",
+      "lang": "Slrrp!"
     }
   ],
   "length_ratio_issues": [
@@ -3831,6 +3847,15 @@
       "en_len": 12,
       "lang_ratio": 1.0,
       "pl_ratio": 3.0
+    },
+    {
+      "key": "achievement.411.name",
+      "category": "achievements",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 9,
+      "lang_ratio": 1.0,
+      "pl_ratio": 3.556
     },
     {
       "key": "monster.abyssador.voice_1",
@@ -3961,8 +3986,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 76,
-    "skipped": 4,
+    "applied": 61,
+    "skipped": 19,
     "errors": 0
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17T07:32:42.467588Z",
+  "timestamp": "2026-02-17T07:37:27.977372Z",
   "priority_langs": [
     "es",
     "pl",
@@ -73,10 +73,10 @@
     "de": 659,
     "fr": 578,
     "hu": 663,
-    "it": 479,
+    "it": 480,
     "nl": 691,
     "pt": 620,
-    "ro": 382,
+    "ro": 456,
     "ru": 60,
     "sk": 663,
     "tr": 542,
@@ -634,7 +634,7 @@
     {
       "lang": "it",
       "json_file": "monsters.json",
-      "identical_to_en": 26,
+      "identical_to_en": 27,
       "domain_priority": 8
     },
     {
@@ -826,7 +826,7 @@
     {
       "lang": "ro",
       "json_file": "npc.json",
-      "identical_to_en": 11,
+      "identical_to_en": 85,
       "domain_priority": 0
     },
     {

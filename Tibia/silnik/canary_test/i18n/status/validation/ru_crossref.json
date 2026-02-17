@@ -1,13 +1,13 @@
 {
   "lang": "ru",
-  "coverage_pct": 49.7,
+  "coverage_pct": 49.9,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T06:54:09.532135Z",
-  "issues_total": 128,
+  "checked_at": "2026-02-17T07:40:36.282566Z",
+  "issues_total": 129,
   "issues_by_type": {
-    "consistency_in_language": 56,
+    "consistency_in_language": 57,
     "pl_reference_missing_translation": 29,
     "length_ratio_crosscheck": 43
   },
@@ -120,6 +120,20 @@
         "client:client.boss_slots.text3",
         "client:client.bosstiary.text2",
         "otclient_modules:otclient_modules.boss_slots.tr_2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Updater Error",
+      "variants": [
+        "Updater Ошибка",
+        "Ошибка программы обновления"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "client:client.updater.text3",
+        "otclient_modules:otclient_modules.updater.tr_1"
       ]
     },
     {

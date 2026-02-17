@@ -30910,5 +30910,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T05:06:05.233771Z"
+  },
+  "data.otservbr.global.scripts.quests.the.order.of.lion.moveevent.drume.entrance.L5.1644": {
+    "src_hash": "189edafc7a6e2993bafd344758296338",
+    "text": "Вы участвовали в перестрелке последние 10 часов.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:12:59.964700Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L13.2312": {
+    "src_hash": "da53a77f40f0b3c056e242b35c37fcfe",
+    "text": "Вы видите разбросанные части разбитого корабля. Корабельный телескоп чудом уцелел после крушения и, похоже, остался целым.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:12:59.971489Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L16.2313": {
+    "src_hash": "fac8a8c193d48bec357bdb0982588571",
+    "text": "Есть еще несколько незакрепленных досок и тросов. Так плотом пользоваться нельзя, он наверняка утонет.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:12:59.972179Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L21.2314": {
+    "src_hash": "44d1a30bcfafa886f4ae741d76ffd4d5",
+    "text": "Вы используете трос, чтобы связать оторвавшиеся доски. Теперь плот должен быть готов к плаванию.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:12:59.972769Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L27.2315": {
+    "src_hash": "652ebfa490c71173522b14a875f77e01",
+    "text": "Вы видите разбросанные части разбитого корабля. Корабельный телескоп чудом уцелел после крушения и, кажется, до сих пор цел.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:12:59.973483Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.movements.boat.puzzle.L30.2316": {
+    "src_hash": "79d210c9061eaa6163df6f7d629fc9a6",
+    "text": "Без каких-либо ориентиров вы никогда не найдете дорогу назад. Попробуйте найти способ улучшить свою навигацию.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T05:12:59.974203Z"
   }
 }

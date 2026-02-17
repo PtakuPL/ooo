@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-17T05:12:27.248325Z",
-  "cycle_counter": 1601,
-  "last_target_key": "pl:raids.json",
-  "last_pending_total": 112,
-  "last_tier": 1,
-  "last_cat_priority": 8,
+  "timestamp": "2026-02-17T05:12:58.118358Z",
+  "cycle_counter": 1604,
+  "last_target_key": "ru:server.json",
+  "last_pending_total": 1963,
+  "last_tier": 2,
+  "last_cat_priority": 3,
   "candidates_count": 192,
   "active_candidates_count": 179,
   "skipped_backoff": 13,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 269,
+  "cache_cycle": 270,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -389,7 +389,7 @@
       "sv"
     ],
     "lang_completion": {
-      "pl": 47.36,
+      "pl": 47.42,
       "es": 74.91,
       "ru": 38.23,
       "ro": 24.98,

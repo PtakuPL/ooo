@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-02-16T23:57:25.807329Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 24,
+  "timestamp": "2026-02-17T00:00:06.377347Z",
+  "language": "ro",
+  "json_file": "cpp.json",
+  "translated": 47,
   "entries": [
     {
-      "key": "npc.arkulius.voice_3",
-      "en": "<mumbles>",
-      "translated": "<mumbles>",
-      "source": "tm"
+      "key": "cpp.badge.name_10",
+      "en": "Global Player (Grade 2)",
+      "translated": "Jucător global (clasa 2)",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "cpp.badge.name_11",
+      "en": "Global Player (Grade 3)",
+      "translated": "Jucător global (clasa 3)",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "cpp.badge.name_15",
+      "en": "Freshman of the Tournament",
+      "translated": "Boboc al turneului",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "cpp.badge.name_16",
+      "en": "Regular of the Tournament",
+      "translated": "Regular al turneului",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "cpp.badge.name_17",
+      "en": "Hero of the Tournament",
+      "translated": "Eroul turneului",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "cpp.badge.name_18",
+      "en": "Tournament Competitor",
+      "translated": "Concurent la turneu",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
-      "source": "tm"
+      "key": "cpp.badge.name_19",
+      "en": "Tournament Challenger",
+      "translated": "Challenger de turneu",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
-      "source": "tm"
+      "key": "cpp.badge.name_2",
+      "en": "Veteran Hero",
+      "translated": "Erou Veteran",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
-      "source": "tm"
+      "key": "cpp.badge.name_20",
+      "en": "Tournament Master",
+      "translated": "Maestru de turneu",
+      "source": "google_translate"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
-      "source": "tm"
+      "key": "cpp.badge.name_21",
+      "en": "Tournament Champion",
+      "translated": "Campion de turneu",
+      "source": "google_translate"
     },
     {
-      "key": "npc.cruleo.voice_1",
-      "en": "<gulp gulp>",
-      "translated": "<gulp gulp>",
-      "source": "tm"
+      "key": "cpp.badge.name_3",
+      "en": "Senior Hero",
+      "translated": "Erou senior",
+      "source": "google_translate"
     },
     {
-      "key": "npc.elliott.greet_msg_1",
-      "en": "<nods>",
-      "translated": "<nods>",
-      "source": "tm"
+      "key": "cpp.badge.name_4",
+      "en": "Ancient Hero",
+      "translated": "Erou antic",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_11",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "cpp.badge.name_5",
+      "en": "Exalted Hero",
+      "translated": "Erou exaltat",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_13",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "cpp.badge.name_6",
+      "en": "Tibia Loyalist (Grade 1)",
+      "translated": "Tibia Loialist (clasa 1)",
+      "source": "google_translate"
     },
     {
-      "key": "npc.gnomus.say_15",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "cpp.badge.name_7",
+      "en": "Tibia Loyalist (Grade 2)",
+      "translated": "Tibia loial (gradul 2)",
+      "source": "google_translate"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
-      "source": "tm"
+      "key": "cpp.badge.name_8",
+      "en": "Tibia Loyalist (Grade 3)",
+      "translated": "Tibia Loialist (clasa a 3-a)",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "cpp.badge.name_9",
+      "en": "Global Player (Grade 1)",
+      "translated": "Jucător global (clasa 1)",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
-      "source": "tm"
+      "key": "cpp.bed.nobody_sleeping",
+      "en": "Nobody is sleeping there.",
+      "translated": "Nimeni nu doarme acolo.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "cpp.bed.sleeping",
+      "en": "{0} is sleeping there.",
+      "translated": "{0} doarme acolo.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
+      "key": "cpp.bestiary.already_set_charm",
+      "en": "You already have this monster set on another {0} Charm!",
+      "translated": "Aveți deja acest monstru pus pe alt {0} Farmecul!",
+      "source": "google_translate"
     }
   ]
 }

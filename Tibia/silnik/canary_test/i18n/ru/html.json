@@ -45,7 +45,7 @@
   "html.account.welcome_mail.html.text2": "[EN] {{ config.lua.serverName }}",
   "html.account.welcome_mail.html.text3": "[RU] Account {% if constant('USE_ACCOUNT_NAME') %}name{% else %}number{% endif %}: ",
   "html.account.welcome_mail.html.text4": " (скрыто из соображений безопасности)",
-  "html.achievements.html.text1": "Достижения — это дополнительные цели, которые вы можете выполнять во время игры в Tibia. Этот список даёт обзор всех общих достижений, которые можно получить в Tibia. Однако существует также ряд",
+  "html.achievements.html.text1": "Достижения — это дополнительные цели, которые вы можете выполнять во время игры в Tibia. Этот список даёт обзор всех общих достижений, которые можно получить в Tibia. Однако существует также ряд ",
   "html.achievements.html.text2": "Сравните себя с другими персонажами вашего мира в «Highscores». Достижения дают определённое количество очков в зависимости от уровня сложности:",
   "html.achievements.html.text3": "Достижения 1-го уровня",
   "html.achievements.html.text4": "[EN] {{ achievement.name }}",

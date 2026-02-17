@@ -1,47 +1,16 @@
 {
-  "timestamp": "2026-02-16T23:57:26.647265Z",
+  "timestamp": "2026-02-17T00:00:07.575260Z",
   "checked_entries": 100,
-  "issues_found": 11,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en": 4,
-    "identical_to_en_exempt": 11,
+    "identical_to_en_exempt": 13,
     "artifact_token": 7,
-    "suspicious_log_critical": 85,
-    "suspicious_log_high": 94,
-    "suspicious_log_low": 14,
-    "suspicious_log_medium": 7,
+    "suspicious_log_high": 197,
+    "suspicious_log_low": 3,
     "suspicious_rejected_critical": 157,
     "suspicious_rejected_high": 43
   },
   "issues": [
-    {
-      "key": "otclient_modules.spelllist_otui.tr_12",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Druid",
-      "translated": "Druid"
-    },
-    {
-      "key": "otclient_modules.game_shop.tr_3",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "No",
-      "translated": "No"
-    },
-    {
-      "key": "otclient_modules.game_shop.tr_5",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "No",
-      "translated": "No"
-    },
-    {
-      "key": "otclient_modules.game_stash_otui.tr_1",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ok",
-      "translated": "Ok"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -93,5 +62,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

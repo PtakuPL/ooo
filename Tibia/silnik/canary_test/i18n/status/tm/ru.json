@@ -20150,5 +20150,405 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:56:13.435848Z"
+  },
+  "web.tpl.guilds.manager.set_1": {
+    "src_hash": "cafda7f7cefc45741a048f956cd5c957",
+    "text": "Добавить новый rank",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.622233Z"
+  },
+  "web.tpl.guilds.manager.b_7": {
+    "src_hash": "e0fbf3568e415c67cd6fff5b7ad2a01e",
+    "text": "Изменить MOTD гильдии.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.624231Z"
+  },
+  "web.tpl.monsters.th_8": {
+    "src_hash": "f460cdc8aef294faf9dbaa2ed67200e0",
+    "text": "Монстрs",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.642344Z"
+  },
+  "web.tpl.guilds.change_motd.set_1": {
+    "src_hash": "708dc3fe07b0720315585ebbcf63b396",
+    "text": "Изменить MOTD гильдии",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.666688Z"
+  },
+  "web.tpl.online.b_6": {
+    "src_hash": "48b526d0b591335f8259bcdd2c34c6c4",
+    "text": "PvP Введите:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.672670Z"
+  },
+  "web.tpl.guilds.view.set_7": {
+    "src_hash": "2d26152d960deeab6b514a522b4d3de8",
+    "text": "Редактировать Ranks",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.676818Z"
+  },
+  "web.tpl.admin.tools.teleport.label_2": {
+    "src_hash": "fc88379b3f248c764f9a94f3af47e53e",
+    "text": "Координата X",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.688001Z"
+  },
+  "web.tpl.admin.tools.teleport.label_3": {
+    "src_hash": "49b3d57c9699059f01fdd9cd2f513ec7",
+    "text": "Координата Y",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.688775Z"
+  },
+  "web.tpl.admin.tools.teleport.label_4": {
+    "src_hash": "1aeaed74793bd62048781eca9fe67125",
+    "text": "Координата Z",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.689528Z"
+  },
+  "web.tpl.faq.form.td_1": {
+    "src_hash": "41e94aa2ea70937dbbcc787d8d5f1a2a",
+    "text": "Заданиеion:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.690939Z"
+  },
+  "web.tpl.characters.b_16": {
+    "src_hash": "e34f8da975d37162e184369dc7aca213",
+    "text": "Заданиеs",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.695819Z"
+  },
+  "web.tpl.account.change_email.set_1": {
+    "src_hash": "0d98d15e617ed62fdc4e98b222da2b29",
+    "text": "Изменить адрес e-mail",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.700434Z"
+  },
+  "web.tpl.forum.edit_post.b_1": {
+    "src_hash": "17ebfcf145608c383876bfdcdd90b901",
+    "text": "Редактировать Post",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.708743Z"
+  },
+  "web.tpl.gallery.form.td_2": {
+    "src_hash": "3622ad4366bd3a945a59773f725aa7f6",
+    "text": "URL изображения:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.713599Z"
+  },
+  "web.tpl.account.characters.create.b_3": {
+    "src_hash": "36f6c53cef25fd1b4066ab23a78e8ff7",
+    "text": "Выбрать your профессия:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.715116Z"
+  },
+  "html.guilds.manager.html.text5": {
+    "src_hash": "e0fbf3568e415c67cd6fff5b7ad2a01e",
+    "text": "Изменить MOTD гильдии.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.738883Z"
+  },
+  "html.account.characters.create.html.text4": {
+    "src_hash": "36f6c53cef25fd1b4066ab23a78e8ff7",
+    "text": "Выбрать your профессия:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.760744Z"
+  },
+  "html.account.logout.html.text1": {
+    "src_hash": "bb9a95727f1f1baaf2f3a9db73be69eb",
+    "text": "Вы вышли из аккаунта {{ config.serverName }}. Чтобы просмотреть аккаунт, вам нужно ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.762264Z"
+  },
+  "html.27_downloads.text1": {
+    "src_hash": "578253dcdcc22c0eedc514f0995c0f19",
+    "text": "Мы используем официальный клиент Tibia ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.763704Z"
+  },
+  "html.27_downloads.text3": {
+    "src_hash": "cf24fdc232193d17f72df80d7e46bb66",
+    "text": "Скачать клиент Tibia ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.764646Z"
+  },
+  "html.jquery.text5": {
+    "src_hash": "76c168720e4a05177fe39b82796fde90",
+    "text": " , на Луну 20 июля 1969 года в 20:18 UTC. Армстронг стал первым, кто ступил на поверхность Луны 6 часов спустя — 21 июля в 02:56 UTC.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.773653Z"
+  },
+  "html.easyimage.text3": {
+    "src_hash": "a0871c4fbe6575b6aabdedeeba2b921c",
+    "text": "Этот пример показывает прогресс работы над Easy Image. Перетащите файл изображения в редактор, чтобы увидеть, насколько легко можно работать с изображениями.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.775793Z"
+  },
+  "html.easyimage.text5": {
+    "src_hash": "76c168720e4a05177fe39b82796fde90",
+    "text": " , на Луну 20 июля 1969 года в 20:18 UTC. Армстронг стал первым, кто ступил на поверхность Луны 6 часов спустя — 21 июля в 02:56 UTC.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.778024Z"
+  },
+  "html.inlineall.text2": {
+    "src_hash": "d1ad95493dd222b0b14f3343e90cf008",
+    "text": " &raquo; Массовое встроенное редактирование",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.780462Z"
+  },
+  "html.inlineall.text4": {
+    "src_hash": "a15bfc4da00817e0cc8a9b301255c5a7",
+    "text": "Эта демонстрационная страница показывает функцию встроенного редактирования — экземпляры CKEditor будут создаваться автоматически из элементов страницы с ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.782170Z"
+  },
+  "html.toolbar.text4": {
+    "src_hash": "a25e40c2dacc8a91dc0706067356843a",
+    "text": "Чтобы добавить экземпляр CKEditor с пользовательской панелью инструментов, вставьте следующий вызов JavaScript в ваш код:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.785134Z"
+  },
+  "html.enterkey.text4": {
+    "src_hash": "f174c33965c60cdac70555b1f21cccab",
+    "text": " &ndash; строки переносятся с помощью ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.787562Z"
+  },
+  "html.inlinebycode.text5": {
+    "src_hash": "76c168720e4a05177fe39b82796fde90",
+    "text": " , на Луну 20 июля 1969 года в 20:18 UTC. Армстронг стал первым, кто ступил на поверхность Луны 6 часов спустя — 21 июля в 02:56 UTC.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.791341Z"
+  },
+  "html.base.html.text4": {
+    "src_hash": "b6f60784c4965c2332d55e61facae720",
+    "text": "АВТОРСКИЕ ПРАВА &copy; 2022",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.793109Z"
+  },
+  "html.paymentconfirm.html.text1": {
+    "src_hash": "51f5822b18e36a5907852a41d95b6b5a",
+    "text": "{{ coins }} монет (передаваемые)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.795445Z"
+  },
+  "html.paymentconfirm.html.text2": {
+    "src_hash": "482865c4641adc7185e452c73c89f8a1",
+    "text": "Я прочитал(а) и согласен(на) с Расширенным соглашением об услугах Tibia и Политикой конфиденциальности Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.796950Z"
+  },
+  "html.boostablebosses.html.text3": {
+    "src_hash": "8aaba94a5b4b61f9255e1dfc2d8f06c7",
+    "text": "Победа над усиленным боссом особенно выгодна. Усиленные боссы содержат больше добычи и засчитывают больше убийств для вашего Bosstiary.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.802071Z"
+  },
+  "html.achievements.html.text2": {
+    "src_hash": "a365b70a0a71007ab9961358c4865a70",
+    "text": "Сравните себя с другими персонажами вашего мира в «Highscores». Достижения дают определённое количество очков в зависимости от уровня сложности:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.804810Z"
+  },
+  "html.downloads.html.text2": {
+    "src_hash": "43b4a3ed399ace5814f761fea0ce5b06",
+    "text": "Процессор: Pentium 4 1,5 ГГц или эквивалент с поддержкой набора инструкций SSE2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.823269Z"
+  },
+  "html.editdescription.html.text1": {
+    "src_hash": "f655503dc6344ca12810ada991076531",
+    "text": "Редактировать Guild Описание",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.826127Z"
+  },
+  "html.activitylog.html.text1": {
+    "src_hash": "8b5468b77fb675ec8878352398ec888f",
+    "text": "Нетv 28 2022, 14:10:18",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.828472Z"
+  },
+  "html.activitylog.html.text3": {
+    "src_hash": "8b5468b77fb675ec8878352398ec888f",
+    "text": "Нетv 28 2022, 14:10:18",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.829567Z"
+  },
+  "html.activitylog.html.text5": {
+    "src_hash": "8b5468b77fb675ec8878352398ec888f",
+    "text": "Нетv 28 2022, 14:10:18",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.830785Z"
+  },
+  "html.require.text4": {
+    "src_hash": "df6afaafb052198fad3efdef3ecfb646",
+    "text": "Вам нужен PHP 7.2.5 или новее, с ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.870504Z"
+  },
+  "html.credits.text1": {
+    "src_hash": "a2d73855255bc0ddf9a87ef81595865c",
+    "text": "Благодарности &#8212; документация phpMyAdmin 5.2.2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.871792Z"
+  },
+  "html.user.text1": {
+    "src_hash": "ac9a9649718196f0a76a5669d968e6b3",
+    "text": "Руководство пользователя &#8212; документация phpMyAdmin 5.2.2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.875309Z"
+  },
+  "html.user.text5": {
+    "src_hash": "a633148d0fab0519adf678405e570b71",
+    "text": "Приложение-аутентификатор (2FA)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.878421Z"
+  },
+  "html.privileges.text1": {
+    "src_hash": "293b61ee15ed6afceefe84cacd78a9de",
+    "text": "Управление пользователями &#8212; документация phpMyAdmin 5.2.2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.879647Z"
+  },
+  "html.privileges.text3": {
+    "src_hash": "2fd7ae21acf930bd194911fef20bb92a",
+    "text": "В phpMyAdmin управление пользователями осуществляется через ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.881828Z"
+  },
+  "html.import_export.text1": {
+    "src_hash": "7fd66369367d4c4f4b815086863ba61d",
+    "text": "Импорт и экспорт &#8212; документация phpMyAdmin 5.2.2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.903466Z"
+  },
+  "html.config.text1": {
+    "src_hash": "84cbfbb9d4c63e31278411211734f78e",
+    "text": "Конфигурация &#8212; документация phpMyAdmin 5.2.2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.906197Z"
+  },
+  "html.two_factor.text1": {
+    "src_hash": "8482eb7888cf12a4802be3154ec8d7ca",
+    "text": "Двухфакторная аутентификация &#8212; документация phpMyAdmin 5.2.2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.908540Z"
+  },
+  "html.transformations.text1": {
+    "src_hash": "0039fa398560ec5c10e990252436f2ec",
+    "text": "Преобразования &#8212; документация phpMyAdmin 5.2.2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.912223Z"
+  },
+  "html.copyright.text1": {
+    "src_hash": "de9c4336bb403b5f20192736223e26bb",
+    "text": "Авторские права &#8212; документация phpMyAdmin 5.2.2",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.915434Z"
+  },
+  "html.vendors.text3": {
+    "src_hash": "4044d62553aac7be88a5747971dff66c",
+    "text": "Распространение и упаковка phpMyAdmin",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:16.928944Z"
   }
 }

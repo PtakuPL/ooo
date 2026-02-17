@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-16T23:56:15.528590Z",
-  "cycle_counter": 996,
-  "last_target_key": "ro:questlog.json",
-  "last_pending_total": 1903,
+  "timestamp": "2026-02-16T23:59:19.359725Z",
+  "cycle_counter": 999,
+  "last_target_key": "ro:cpp.json",
+  "last_pending_total": 861,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 196,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 61,
+  "cache_cycle": 62,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -306,7 +306,10 @@
     "ru:talkactions.json": 0,
     "ro:achievements.json": 0,
     "sv:spells.json": 0,
-    "es:achievements.json": 0
+    "es:achievements.json": 0,
+    "ro:questlog.json": 0,
+    "it:html.json": 0,
+    "ru:html.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -359,10 +362,10 @@
     ],
     "lang_completion": {
       "pl": 44.26,
-      "es": 74.15,
-      "ru": 35.87,
-      "ro": 20.2,
-      "it": 11.13,
+      "es": 74.16,
+      "ru": 35.97,
+      "ro": 20.26,
+      "it": 11.22,
       "sr": 10.04,
       "sv": 7.92
     }

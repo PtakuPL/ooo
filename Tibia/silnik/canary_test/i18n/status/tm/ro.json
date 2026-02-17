@@ -22630,5 +22630,381 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:57:10.499737Z"
+  },
+  "cpp.cancel.construct_inside_house": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Poți construi acest lucru doar în interiorul unei case.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.342221Z"
+  },
+  "cpp.combat.earth": {
+    "src_hash": "852488ddd9570bc877783bf4397563e0",
+    "text": "pământ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.345244Z"
+  },
+  "cpp.game.highscore_category_magic_level": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Nivel magic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.350672Z"
+  },
+  "cpp.game.offline_training_button_cancel": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.352055Z"
+  },
+  "cpp.inspect.armor": {
+    "src_hash": "c77a8030f463c2c14aebd6452fc9f0a8",
+    "text": "Armură",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.354246Z"
+  },
+  "cpp.inspect.attack": {
+    "src_hash": "dcfafcb4323b102c7e204555d313ba0a",
+    "text": "Atac",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.354585Z"
+  },
+  "cpp.inspect.description": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descriere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.356678Z"
+  },
+  "cpp.inspect.magic_level": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Nivel magic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.357793Z"
+  },
+  "cpp.look.magic_level_label": {
+    "src_hash": "35e304d91aea4e7e22e337bf6da2a949",
+    "text": "Nivel magic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.362603Z"
+  },
+  "cpp.protocol.level_label": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.371902Z"
+  },
+  "cpp.returnvalue.not_enough_level": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Nu ai suficient nivel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.376249Z"
+  },
+  "cpp.returnvalue.you_are_exhausted": {
+    "src_hash": "a7ea8fed6bcc46c21a5a700eaa4620c0",
+    "text": "Ești epuizat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.378042Z"
+  },
+  "cpp.returnvalue.you_are_not_the_owner": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Nu ești proprietarul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.378451Z"
+  },
+  "cpp.skill.level": {
+    "src_hash": "c9e9a848920877e76685b2e4e76de38d",
+    "text": "Nivel",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.379989Z"
+  },
+  "cpp.skill.magic_level": {
+    "src_hash": "35e304d91aea4e7e22e337bf6da2a949",
+    "text": "Nivel magic",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.380483Z"
+  },
+  "cpp.title.name_37": {
+    "src_hash": "3a6270ea8ec1341b2cb7d0c8f671e107",
+    "text": "Moarte de Jos",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.387736Z"
+  },
+  "cpp.title.name_45": {
+    "src_hash": "f4f7985b69acaebc7c2973b30f734182",
+    "text": "Vânător",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.388711Z"
+  },
+  "cpp.title.name_51": {
+    "src_hash": "766fa2e9a4d5ca2587ef6f40f7fb4e59",
+    "text": "Fermecător de șerpi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.389677Z"
+  },
+  "cpp.weapon.sword": {
+    "src_hash": "f3b462d93b24cb0538f5d864546bc3e0",
+    "text": "sabie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:20.394693Z"
+  },
+  "cpp.augment.augments_label": {
+    "src_hash": "3bf857eb851edbb5d0122a2f56c2c08e",
+    "text": "\nAugmente: ({0}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:26.242617Z"
+  },
+  "cpp.augment.damage": {
+    "src_hash": "da14a7168b547f35ea0c6fa9f50de63e",
+    "text": "deteriora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:26.242815Z"
+  },
+  "cpp.augment.format_base": {
+    "src_hash": "dc54bea4632ace9fb160b037fea86598",
+    "text": "{0} -> {1:+}% {2} {3}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:26.243744Z"
+  },
+  "cpp.augment.format_cooldown": {
+    "src_hash": "544be79d302efbc5f8613ef088309d6b",
+    "text": "{0} -> {1}{2}s {3}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:26.244046Z"
+  },
+  "cpp.augment.format_no_value": {
+    "src_hash": "0a80f1fc5203b9a4cfb998c9545b319c",
+    "text": "{0} -> {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:26.244247Z"
+  },
+  "cpp.augment.format_with_value": {
+    "src_hash": "3ea290c4a5fc79c644ebdacc9841f3a3",
+    "text": "{0} -> {1:+}% {2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:32.324249Z"
+  },
+  "cpp.augment.healing": {
+    "src_hash": "062e646df3d1e69f2dc83ad109835455",
+    "text": "vindecare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:32.324514Z"
+  },
+  "cpp.badge.name_1": {
+    "src_hash": "866513cf9da1225b68f7ddba852357b4",
+    "text": "Erou Fledegeling",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:32.324768Z"
+  },
+  "cpp.badge.name_10": {
+    "src_hash": "3bcf13a179ce88693b131c2a06cee98f",
+    "text": "Jucător global (clasa 2)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:32.325098Z"
+  },
+  "cpp.badge.name_11": {
+    "src_hash": "f3f20eb4a38b586035729259f702f3b2",
+    "text": "Jucător global (clasa 3)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:32.325398Z"
+  },
+  "cpp.badge.name_15": {
+    "src_hash": "aa2045442a847a3fdb351b934395101e",
+    "text": "Boboc al turneului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:39.678617Z"
+  },
+  "cpp.badge.name_16": {
+    "src_hash": "9474f91d37ea76ea708fd516780c6c0d",
+    "text": "Regular al turneului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:39.678877Z"
+  },
+  "cpp.badge.name_17": {
+    "src_hash": "41a32725f7431746def01d442c02a10b",
+    "text": "Eroul turneului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:48.091224Z"
+  },
+  "cpp.badge.name_18": {
+    "src_hash": "fd942790a41b15497eba2518ac3af2fc",
+    "text": "Concurent la turneu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:48.091503Z"
+  },
+  "cpp.badge.name_19": {
+    "src_hash": "dcb854249c04978e315145798e79815f",
+    "text": "Challenger de turneu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:48.091747Z"
+  },
+  "cpp.badge.name_2": {
+    "src_hash": "c8c23d1ecc1bc4ba44108dbbfc8f4727",
+    "text": "Erou Veteran",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:48.091944Z"
+  },
+  "cpp.badge.name_20": {
+    "src_hash": "d4675c48c7763eb2ec58da3658f0c697",
+    "text": "Maestru de turneu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:48.092160Z"
+  },
+  "cpp.badge.name_21": {
+    "src_hash": "5d7a24925d90015a268de468703d7d2e",
+    "text": "Campion de turneu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:55.325623Z"
+  },
+  "cpp.badge.name_3": {
+    "src_hash": "6776c826266920e800560c621811745c",
+    "text": "Erou senior",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:55.325834Z"
+  },
+  "cpp.badge.name_4": {
+    "src_hash": "962f30ca16e6d44ae77192b43da0297a",
+    "text": "Erou antic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:55.326025Z"
+  },
+  "cpp.badge.name_5": {
+    "src_hash": "3ad4a39c067765b570cbe1bf8bd24d00",
+    "text": "Erou exaltat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:55.326287Z"
+  },
+  "cpp.badge.name_6": {
+    "src_hash": "36dd65f81f731b09330b25557dead495",
+    "text": "Tibia Loialist (clasa 1)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:55.326799Z"
+  },
+  "cpp.badge.name_7": {
+    "src_hash": "bb5f7090a7a1fa38a66dd425d225b79e",
+    "text": "Tibia loial (gradul 2)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:03.543200Z"
+  },
+  "cpp.badge.name_8": {
+    "src_hash": "a128a1dbc2cafd8e1c443c674aaacb8d",
+    "text": "Tibia Loialist (clasa a 3-a)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:03.543633Z"
+  },
+  "cpp.badge.name_9": {
+    "src_hash": "574951c030bb79855ca9d28cbd1f0292",
+    "text": "Jucător global (clasa 1)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:03.543938Z"
+  },
+  "cpp.bed.nobody_sleeping": {
+    "src_hash": "c5bc51c4e1c3a4526609fc4bdd5589d6",
+    "text": "Nimeni nu doarme acolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:03.544209Z"
+  },
+  "cpp.bed.sleeping": {
+    "src_hash": "e25169810744a47f596a64a5e415fdcc",
+    "text": "{0} doarme acolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:03.544457Z"
+  },
+  "cpp.bestiary.already_set_charm": {
+    "src_hash": "91bb37a3a8ee779633c104fdfbc8f9db",
+    "text": "Aveți deja acest monstru pus pe alt {0} Farmecul!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:00:06.336060Z"
   }
 }

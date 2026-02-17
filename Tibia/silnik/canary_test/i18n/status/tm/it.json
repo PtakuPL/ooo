@@ -28566,5 +28566,373 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-16T23:55:23.728131Z"
+  },
+  "web.tpl.guilds.list.b_2": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descrizione",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.495206Z"
+  },
+  "web.tpl.highscores.b_4": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.496203Z"
+  },
+  "web.tpl.experience_stages.b_3": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.498508Z"
+  },
+  "web.tpl.guilds.manager.b_3": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descrizione",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.499503Z"
+  },
+  "web.tpl.spells.th_2": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.501992Z"
+  },
+  "web.tpl.spells.th_4": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.502294Z"
+  },
+  "web.tpl.spells.th_7": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.502707Z"
+  },
+  "web.tpl.spells.th_9": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.502979Z"
+  },
+  "web.tpl.spells.th_12": {
+    "src_hash": "7d74f3b92b19da5e606d737d339a9679",
+    "text": "Oggetto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.503372Z"
+  },
+  "web.tpl.spells.th_15": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.503659Z"
+  },
+  "web.tpl.spells.th_16": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.503884Z"
+  },
+  "web.tpl.spells.th_17": {
+    "src_hash": "6e142665254eccd39cf91a20382eca8e",
+    "text": "Livello magico",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.504273Z"
+  },
+  "web.tpl.spells.th_18": {
+    "src_hash": "7d74f3b92b19da5e606d737d339a9679",
+    "text": "Oggetto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.504471Z"
+  },
+  "web.tpl.monsters.th_1": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.504771Z"
+  },
+  "web.tpl.monsters.th_3": {
+    "src_hash": "605669cab962bf944d99ce89cf9e58d9",
+    "text": "Salute",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.505183Z"
+  },
+  "web.tpl.account.management.th_12": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.506839Z"
+  },
+  "web.tpl.account.management.th_13": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.507060Z"
+  },
+  "web.tpl.changelog.b_4": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descrizione",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.508092Z"
+  },
+  "web.tpl.admin.news.table.th_3": {
+    "src_hash": "636da1d35e805b00eae0fcd8333f9234",
+    "text": "Giocatore",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.509237Z"
+  },
+  "web.tpl.team.b_3": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.510259Z"
+  },
+  "web.tpl.team.b_10": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.510827Z"
+  },
+  "web.tpl.admin.changelog.th_2": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descrizione",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.511648Z"
+  },
+  "web.tpl.guilds.view.td_3": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.513305Z"
+  },
+  "web.tpl.guilds.view.b_5": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.513684Z"
+  },
+  "web.tpl.houses.b_1": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.517806Z"
+  },
+  "web.tpl.admin.plugins.th_2": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.518585Z"
+  },
+  "web.tpl.admin.pages.th_1": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.519664Z"
+  },
+  "web.tpl.experience_table.b_2": {
+    "src_hash": "a0db49ba470c1c9ae2128c3470339153",
+    "text": "Livello",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.520484Z"
+  },
+  "web.tpl.account.characters.create.span_1": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.521220Z"
+  },
+  "web.tpl.buttons.cancel.set_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annulla",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.521656Z"
+  },
+  "web.tpl.commands.b_2": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descrizione",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.522590Z"
+  },
+  "web.tpl.balance.th_2": {
+    "src_hash": "636da1d35e805b00eae0fcd8333f9234",
+    "text": "Giocatore",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.523129Z"
+  },
+  "web.tpl.lastlogin.th_2": {
+    "src_hash": "636da1d35e805b00eae0fcd8333f9234",
+    "text": "Giocatore",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:56.523494Z"
+  },
+  "web.tpl.forum.add_board.td_1": {
+    "src_hash": "4e140ba723a03baa6948340bf90e2ef6",
+    "text": "Nome:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:59.912354Z"
+  },
+  "web.tpl.forum.add_board.td_2": {
+    "src_hash": "d0042a700e9bdf79689d63ee6846dc0e",
+    "text": "Descrizione:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:59.912568Z"
+  },
+  "web.tpl.forum.add_board.td_3": {
+    "src_hash": "91b87910e0ec30a301a00465837a6bc6",
+    "text": "Accesso:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:59.912738Z"
+  },
+  "web.tpl.guilds.list.set_1": {
+    "src_hash": "c026541afa61e406ad6b875d46387705",
+    "text": "Trovato Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:58:59.914206Z"
+  },
+  "web.tpl.guilds.list.set_2": {
+    "src_hash": "0741993b9cc3e306fa9b5f538ae8be87",
+    "text": "_sbutton_foundguild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:03.207394Z"
+  },
+  "web.tpl.guilds.list.set_3": {
+    "src_hash": "c026541afa61e406ad6b875d46387705",
+    "text": "Trovato Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:03.207848Z"
+  },
+  "web.tpl.guilds.list.set_4": {
+    "src_hash": "0741993b9cc3e306fa9b5f538ae8be87",
+    "text": "_sbutton_foundguild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:03.208145Z"
+  },
+  "web.tpl.guilds.list.b_4": {
+    "src_hash": "4743b7dd287301b1d81f813c79e46a44",
+    "text": "Crea Guild",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:03.208847Z"
+  },
+  "web.tpl.guilds.list.b_5": {
+    "src_hash": "15be5768d3c4652ccbdbf688ff580765",
+    "text": "Prima di poter creare una gilda devi effettuare il login.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:09.317702Z"
+  },
+  "web.tpl.guilds.create.success.set_1": {
+    "src_hash": "b39eef6ed76f852540f8b106c19c4026",
+    "text": "Gilda creata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:09.317966Z"
+  },
+  "web.tpl.guilds.create.success.set_2": {
+    "src_hash": "1f68faadf12faba4c4debef5fff0697f",
+    "text": "e mod",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:09.318272Z"
+  },
+  "web.tpl.guilds.create.success.b_1": {
+    "src_hash": "1a81759353d36dbd31059fc261af0aa2",
+    "text": "Congratulazioni!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:09.318525Z"
+  },
+  "web.tpl.admin.tools.account.label_1": {
+    "src_hash": "dbabdb6263c2c47d45467b4e502d2ebf",
+    "text": "Punti Premium",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-16T23:59:12.321681Z"
   }
 }

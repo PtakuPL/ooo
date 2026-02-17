@@ -9177,19 +9177,19 @@
   },
   "scripts.actions_gnome_items.msg_4": {
     "src_hash": "947b915abfadca7bdc405c1541974c61",
-    "text": "It is empty.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "È vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.858673Z"
+    "updated_at": "2026-02-17T04:57:14.083715Z"
   },
   "scripts.actions_gnomish_chest.msg_2": {
     "src_hash": "947b915abfadca7bdc405c1541974c61",
-    "text": "It is empty.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "È vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.859771Z"
+    "updated_at": "2026-02-17T04:57:17.958829Z"
   },
   "scripts.actions_mission3_chest.msg_2": {
     "src_hash": "a96509dffb06f1f5933de18be57bb03e",
@@ -48902,5 +48902,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:48:40.185802Z"
+  },
+  "scripts.actions_idol_of_tukh.msg_1": {
+    "src_hash": "df3c4b2b4bd3cf1975d03f384d86e691",
+    "text": "Hai ricevuto il vestito {}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:56:41.854317Z"
+  },
+  "scripts.actions_nests.msg_2": {
+    "src_hash": "cc0de8c609ff56ab02375c8c034787a7",
+    "text": "Segnala l'incarico a Gnombold.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:56:41.864111Z"
+  },
+  "scripts.actions_rewards.msg_1": {
+    "src_hash": "06f02d4c547b12ce2b8804695b9f0aea",
+    "text": "Hai trovato {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:56:41.873285Z"
+  },
+  "scripts.actions_yselda_entrances.msg_1": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Per entrare è necessario almeno il livello 250.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:56:41.887889Z"
+  },
+  "scripts.fire_bug.say_1": {
+    "src_hash": "e45ec5ddcf330bfeff658e1fcf19b871",
+    "text": "Ahi!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:56:41.916876Z"
+  },
+  "scripts.movements_blood_entrance.msg_1": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Per entrare è necessario almeno il livello 250.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:56:41.950473Z"
+  },
+  "scripts.actions_ghost_detector.msg_1": {
+    "src_hash": "9e0d72a8f95c36c4f96a96988ed359e7",
+    "text": "Hai completato l'attività del rilevatore di fantasmi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:56:53.219681Z"
+  },
+  "scripts.actions_ghost_detector.msg_2": {
+    "src_hash": "6afa5f16705b387cb8fb48fb55bf97d4",
+    "text": "Il rilevatore tace.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:56:53.219959Z"
+  },
+  "scripts.actions_ghost_detector.msg_3": {
+    "src_hash": "4c78d2f5ec175e91f217f89a0ffd21b1",
+    "text": "Il rilevatore reagisce. Continua a cercare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:56:53.220268Z"
+  },
+  "scripts.actions_ghost_detector.msg_4": {
+    "src_hash": "6ea0e6595f9303d0633d586b4e71ba79",
+    "text": "Il rilevatore punta {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:56:53.220534Z"
+  },
+  "scripts.actions_girl_picture.msg_1": {
+    "src_hash": "7a27db3320b55e3379409c2dde388248",
+    "text": "Sembra che nel cassetto appaia una vecchia chiave d'argento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:56:53.220876Z"
+  },
+  "scripts.actions_glasshoneyfun.msg_1": {
+    "src_hash": "c286835a0afa8e3a39e0c4533364f97e",
+    "text": "Stai schiacciando delicatamente alcuni fiori di palma e il miele dorato si sta riversando nella brocca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:00.675418Z"
+  },
+  "scripts.actions_glooth_fairy_lever.msg_1": {
+    "src_hash": "7520c29b5800fd0242924d7bc7a51100",
+    "text": "È necessario attendere 15 minuti per riutilizzarlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:00.675795Z"
+  },
+  "scripts.actions_glooth_fairy_lever.say_1": {
+    "src_hash": "f858330ad0fd628d32b5020a7387e6b5",
+    "text": "Tutti in questo posto verranno teletrasportati nel nascondiglio di Glooth Fairy tra un minuto. Non si torna indietro!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:00.676243Z"
+  },
+  "scripts.actions_gnome_chart.msg_1": {
+    "src_hash": "912f8fc846951c223a1f55bf41b6e216",
+    "text": "Hai tracciato la posizione e le dimensioni di una strana struttura, un antico cancello.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:00.676679Z"
+  },
+  "scripts.actions_gnome_chart.msg_2": {
+    "src_hash": "768bc326b118e9437537bef4279e71f8",
+    "text": "Hai tracciato la posizione e le dimensioni di una strana struttura, una piccola rovina.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:00.677076Z"
+  },
+  "scripts.actions_gnome_chart.msg_3": {
+    "src_hash": "0710be37e70c376c6738022133b8b6f1",
+    "text": "Hai tracciato la posizione e le dimensioni di una strana struttura, somigliante a una faccia di pietra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:08.821678Z"
+  },
+  "scripts.actions_gnome_chart.msg_4": {
+    "src_hash": "884c0dcf03a8f5d8d2c34c6186c063f9",
+    "text": "Hai tracciato la posizione e le dimensioni di una strana struttura, un avamposto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:08.822152Z"
+  },
+  "scripts.actions_gnome_chart.msg_5": {
+    "src_hash": "9074c5b87cded213a6b2c0658b28d913",
+    "text": "Hai tracciato la posizione e le dimensioni di una strana struttura, un bastione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:08.822555Z"
+  },
+  "scripts.actions_gnome_chart.msg_6": {
+    "src_hash": "2239381d7c7daedafec02ecae7283a90",
+    "text": "Hai tracciato la posizione e le dimensioni di una strana struttura, una torre rotta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:08.822961Z"
+  },
+  "scripts.actions_gnome_items.msg_1": {
+    "src_hash": "8f8ae0bbc960b0e7c432304a999b957d",
+    "text": "Hai trovato uno gnomo grafici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:08.823259Z"
+  },
+  "scripts.actions_gnome_items.msg_2": {
+    "src_hash": "861ab2588f39c57f58d9f463bdc28f4e",
+    "text": "Non puoi utilizzare di nuovo questo oggetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:14.083182Z"
+  },
+  "scripts.actions_gnome_items.msg_3": {
+    "src_hash": "c640067d5fadf2d094bbc35f3dd5350f",
+    "text": "Hai trovato un trignometro da gnomo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:14.083505Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_1": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Hai sondato la posizione con successo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:14.084022Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_2": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Hai sondato la posizione con successo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:14.084357Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_3": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Hai sondato la posizione con successo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:17.957453Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_4": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Hai sondato la posizione con successo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:17.957774Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_5": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Hai sondato la posizione con successo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:17.958142Z"
+  },
+  "scripts.actions_gnomish_chest.msg_1": {
+    "src_hash": "0f05e4f332a3edab0ec548f5a26655fb",
+    "text": "Hai trovato pesticidi gnomi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:17.958544Z"
+  },
+  "scripts.actions_gnomish_pesticide.msg_1": {
+    "src_hash": "12df7c33b31ae10bbbcffc40c3459b3c",
+    "text": "Solo i cadaveri semidecomposti possono essere neutralizzati con questi pesticidi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:25.448338Z"
+  },
+  "scripts.actions_goldenIdol.msg_1": {
+    "src_hash": "d8f1a1cdd7c4b9b8fec918889daa347c",
+    "text": "Hai posizionato tutti gli idoli sugli altari e hai sbloccato il tempio!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:25.448729Z"
+  },
+  "scripts.actions_goldenIdol.msg_2": {
+    "src_hash": "55c38f7eb32df2ebb650f72cea066491",
+    "text": "C'è già un idolo qui. Prova un altro altare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:25.449090Z"
+  },
+  "scripts.actions_goldenidol.say_1": {
+    "src_hash": "24263c389a810706241cfee3fa3589cd",
+    "text": "**posizionamento dell'idolo**",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:25.449325Z"
+  },
+  "scripts.actions_gooey_mass.msg_2": {
+    "src_hash": "dc8f264ddf3d7612d894cfb02d522500",
+    "text": "Hai trovato un {}. Con un peso di {} oz è troppo pesante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:25.449710Z"
+  },
+  "scripts.actions_gooey_mass.msg_3": {
+    "src_hash": "de1c9c7d7e9ac42617aa8857a4e2225f",
+    "text": "Hai trovato un {}, ma non hai spazio per prenderlo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:27.851544Z"
   }
 }

@@ -42526,5 +42526,317 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:51:58.370421Z"
+  },
+  "scripts.actions_idol_of_tukh.msg_1": {
+    "src_hash": "df3c4b2b4bd3cf1975d03f384d86e691",
+    "text": "Ai primit ținuta {}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:36.537985Z"
+  },
+  "scripts.actions_rewards.msg_1": {
+    "src_hash": "06f02d4c547b12ce2b8804695b9f0aea",
+    "text": "Ați găsit {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:36.553640Z"
+  },
+  "scripts.actions_steal_from_thieves.msg_1": {
+    "src_hash": "5aa8c1c1a34504833d9a6d8df2560762",
+    "text": "E gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:36.557810Z"
+  },
+  "scripts.actions_entrances.msg_2": {
+    "src_hash": "10fd367d0a0791a7d1920b1af8d2d755",
+    "text": "Ar trebui să-i arăți respect pentru Bloodshade care păzește acest tărâm înainte de a intra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:40.629547Z"
+  },
+  "scripts.actions_entrances.msg_3": {
+    "src_hash": "847fdad9643ba6035c384df9583436bc",
+    "text": "Ai nevoie de cel puțin nivelul 250 pentru a intra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:40.629937Z"
+  },
+  "scripts.actions_entrances.msg_4": {
+    "src_hash": "70d060181fda1275fca32e6cec32644c",
+    "text": "Mai trebuie să învingi: {}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:40.630299Z"
+  },
+  "scripts.actions_fertilizer.msg_1": {
+    "src_hash": "cc0de8c609ff56ab02375c8c034787a7",
+    "text": "Raportați sarcina lui Gnombold.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:43.223082Z"
+  },
+  "scripts.actions_final_lever.msg_1": {
+    "src_hash": "2121ec6cdb04e75616068d53a2d940d6",
+    "text": "Ai nevoie de cel puțin 3 jucători, fiecare într-o coloană.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:43.223487Z"
+  },
+  "scripts.actions_final_lever.say_1": {
+    "src_hash": "6c8d5dd28c2d2f88d2773cc09236380b",
+    "text": "Odată cu mânia, foamea și distrugerea dispărute, ești absorbit în inima distrugerii!! VA ASTEPTĂ DEVORATORUL LUMII!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:43.224032Z"
+  },
+  "scripts.actions_final_lever.say_2": {
+    "src_hash": "45092d6a5e03a282b9df8127198e24b9",
+    "text": "O schimbare de polaritate te mută într-o altă parte a inimii distrugerii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:43.224463Z"
+  },
+  "scripts.actions_final_lever.say_3": {
+    "src_hash": "45092d6a5e03a282b9df8127198e24b9",
+    "text": "O schimbare de polaritate te mută într-o altă parte a inimii distrugerii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:43.224887Z"
+  },
+  "scripts.actions_final_lever.say_4": {
+    "src_hash": "45092d6a5e03a282b9df8127198e24b9",
+    "text": "O schimbare de polaritate te mută într-o altă parte a inimii distrugerii.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:47.691123Z"
+  },
+  "scripts.actions_fire_bug.say_1": {
+    "src_hash": "e45ec5ddcf330bfeff658e1fcf19b871",
+    "text": "AU!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:47.691311Z"
+  },
+  "scripts.actions_fire_bug.say_2": {
+    "src_hash": "48ba07e7bb343f2777d316ce0ada8c2f",
+    "text": "Ai urcat pe ultimul bazin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:47.691591Z"
+  },
+  "scripts.actions_fish_napping_door.say_1": {
+    "src_hash": "7f20881f99b79d1a1e23ab3ed70d1381",
+    "text": "Te strecori pe uşă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:47.691871Z"
+  },
+  "scripts.actions_fish_napping_key.say_1": {
+    "src_hash": "e99c6ecff758cfdc1f39f31a28f3634f",
+    "text": "În graba ta spargi cheia în timp ce te strecori înăuntru.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:47.692284Z"
+  },
+  "scripts.actions_flask.msg_1": {
+    "src_hash": "5f122d3da4629bffbde1b1c3d44754e9",
+    "text": "Făcut! Raportați înapoi la Omrabas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:50.296086Z"
+  },
+  "scripts.actions_flower_puzzle_lever.msg_1": {
+    "src_hash": "88cda7654762a022fbb195ee138048fe",
+    "text": "Ordinea florilor din grădină este greșită.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:50.296454Z"
+  },
+  "scripts.actions_flower_puzzle_lever.msg_2": {
+    "src_hash": "d985281164095a47a746695286cccc17",
+    "text": "Portalul încă activat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:50.296730Z"
+  },
+  "scripts.actions_flower_puzzle_lever.msg_3": {
+    "src_hash": "1acce27ff56e61e64182ecc91614cf06",
+    "text": "Un portal se formează în timp ce două grinzi dintr-o construcție ciudată care despart această cameră se deplasează una spre alta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:50.297280Z"
+  },
+  "scripts.actions_formula.say_1": {
+    "src_hash": "507ac195b47931f43e901bfbf790522d",
+    "text": "Ai ars formula alchimistului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:50.297571Z"
+  },
+  "scripts.actions_fount.msg_1": {
+    "src_hash": "a078052af6499123bf065d74d77c7209",
+    "text": "O fiolă cu apă proaspătă de iaz. Arată limpede și strălucește puțin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:53.657294Z"
+  },
+  "scripts.actions_fountain.say_1": {
+    "src_hash": "d3756fe3bdf655cc4a665292bae36915",
+    "text": "Te simți foarte împrospătat și relaxat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:53.657646Z"
+  },
+  "scripts.actions_frozen_horror.msg_1": {
+    "src_hash": "09cd280cb68b9a10ec8828dd50e89162",
+    "text": "Trebuie să așteptați puțin, recent cineva provoacă Frozen Horror.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:53.658053Z"
+  },
+  "scripts.actions_ghost.say_1": {
+    "src_hash": "b24131380a7645919d0ba96744614081",
+    "text": "Farmecul fantomă se încarcă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:53.658536Z"
+  },
+  "scripts.actions_ghost_detector.msg_1": {
+    "src_hash": "9e0d72a8f95c36c4f96a96988ed359e7",
+    "text": "Ați finalizat sarcina detector de fantome.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:58.369536Z"
+  },
+  "scripts.actions_ghost_detector.msg_2": {
+    "src_hash": "6afa5f16705b387cb8fb48fb55bf97d4",
+    "text": "Detectorul tace.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:58.369805Z"
+  },
+  "scripts.actions_ghost_detector.msg_3": {
+    "src_hash": "4c78d2f5ec175e91f217f89a0ffd21b1",
+    "text": "Detectorul reacţionează. Continuați să căutați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:58.370208Z"
+  },
+  "scripts.actions_ghost_detector.msg_4": {
+    "src_hash": "6ea0e6595f9303d0633d586b4e71ba79",
+    "text": "Detectorul indică {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:58.370492Z"
+  },
+  "scripts.actions_girl_picture.msg_1": {
+    "src_hash": "7a27db3320b55e3379409c2dde388248",
+    "text": "Se pare că o cheie de argint veche apare în dâră.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:57:58.370871Z"
+  },
+  "scripts.actions_glasshoneyfun.msg_1": {
+    "src_hash": "c286835a0afa8e3a39e0c4533364f97e",
+    "text": "Strângeți ușor câteva dintre florile de palmier cu miere și mierea aurie se varsă în ulcior.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:58:03.099510Z"
+  },
+  "scripts.actions_glooth_fairy_lever.msg_1": {
+    "src_hash": "7520c29b5800fd0242924d7bc7a51100",
+    "text": "Trebuie să așteptați 15 minute pentru a utiliza din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:58:03.099911Z"
+  },
+  "scripts.actions_glooth_fairy_lever.say_1": {
+    "src_hash": "f858330ad0fd628d32b5020a7387e6b5",
+    "text": "Toți cei din acest loc vor fi teleportați în ascunzătoarea lui Glooth Fairy într-un minut. Nicio cale de întoarcere!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:58:03.100445Z"
+  },
+  "scripts.actions_gnome_chart.msg_1": {
+    "src_hash": "912f8fc846951c223a1f55bf41b6e216",
+    "text": "Ai trasat locația și dimensiunile unei structuri ciudate, o poartă străveche.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:58:03.100892Z"
+  },
+  "scripts.actions_gnome_chart.msg_2": {
+    "src_hash": "768bc326b118e9437537bef4279e71f8",
+    "text": "Ai trasat locația și dimensiunile unei structuri ciudate, a unei mici ruine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:58:03.101328Z"
+  },
+  "scripts.actions_gnome_chart.msg_3": {
+    "src_hash": "0710be37e70c376c6738022133b8b6f1",
+    "text": "Ai trasat locația și dimensiunile unei structuri ciudate, care seamănă cu o față de piatră.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:58:05.450018Z"
+  },
+  "scripts.actions_gnome_chart.msg_4": {
+    "src_hash": "884c0dcf03a8f5d8d2c34c6186c063f9",
+    "text": "Ai trasat locația și dimensiunile unei structuri ciudate, un avanpost.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:58:05.450529Z"
+  },
+  "scripts.actions_gnome_chart.msg_5": {
+    "src_hash": "9074c5b87cded213a6b2c0658b28d913",
+    "text": "Ai trasat locația și dimensiunile unei structuri ciudate, un bastion.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:58:05.450953Z"
+  },
+  "scripts.actions_gnome_chart.msg_6": {
+    "src_hash": "2239381d7c7daedafec02ecae7283a90",
+    "text": "Ai trasat locația și dimensiunile unei structuri ciudate, un turn spart.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T04:58:05.451387Z"
   }
 }

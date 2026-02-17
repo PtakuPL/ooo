@@ -1,193 +1,16 @@
 {
-  "timestamp": "2026-02-17T04:55:25.950236Z",
+  "timestamp": "2026-02-17T04:58:06.864463Z",
   "checked_entries": 100,
-  "issues_found": 32,
+  "issues_found": 7,
   "issues_by_type": {
-    "identical_to_en_exempt": 32,
-    "artifact_token": 9,
-    "identical_to_en": 23,
-    "suspicious_log_low": 39,
-    "suspicious_log_critical": 73,
-    "suspicious_log_high": 88,
+    "identical_to_en_exempt": 10,
+    "artifact_token": 7,
+    "suspicious_log_high": 143,
+    "suspicious_log_critical": 57,
     "suspicious_rejected_critical": 166,
     "suspicious_rejected_high": 34
   },
   "issues": [
-    {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "questlog.quest_11.mission_42.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Sea Serpents",
-      "translated": "Paw and Fur: Sea Serpents"
-    },
-    {
-      "key": "questlog.quest_11.mission_43.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Hellhounds",
-      "translated": "Paw and Fur: Hellhounds"
-    },
-    {
-      "key": "questlog.quest_11.mission_45.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Drakens",
-      "translated": "Paw and Fur: Drakens"
-    },
-    {
-      "key": "questlog.quest_11.mission_46.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Destroyers",
-      "translated": "Paw and Fur: Destroyers"
-    },
-    {
-      "key": "questlog.quest_11.mission_48.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Demons",
-      "translated": "Paw and Fur: Demons"
-    },
-    {
-      "key": "questlog.quest_11.mission_50.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Hide",
-      "translated": "Paw and Fur: Hide"
-    },
-    {
-      "key": "questlog.quest_11.mission_51.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Deathbine",
-      "translated": "Paw and Fur: Deathbine"
-    },
-    {
-      "key": "questlog.quest_11.mission_52.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: The Bloodtusk",
-      "translated": "Paw and Fur: The Bloodtusk"
-    },
-    {
-      "key": "questlog.quest_11.mission_53.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Shardhead",
-      "translated": "Paw and Fur: Shardhead"
-    },
-    {
-      "key": "questlog.quest_11.mission_54.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Esmerelda",
-      "translated": "Paw and Fur: Esmerelda"
-    },
-    {
-      "key": "questlog.quest_11.mission_55.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Fleshcrawler",
-      "translated": "Paw and Fur: Fleshcrawler"
-    },
-    {
-      "key": "questlog.quest_11.mission_56.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Ribstride",
-      "translated": "Paw and Fur: Ribstride"
-    },
-    {
-      "key": "questlog.quest_11.mission_57.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Bloodweb",
-      "translated": "Paw and Fur: Bloodweb"
-    },
-    {
-      "key": "questlog.quest_11.mission_58.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Thul",
-      "translated": "Paw and Fur: Thul"
-    },
-    {
-      "key": "questlog.quest_11.mission_59.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: The Old Widow",
-      "translated": "Paw and Fur: The Old Widow"
-    },
-    {
-      "key": "questlog.quest_11.mission_60.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Hemming",
-      "translated": "Paw and Fur: Hemming"
-    },
-    {
-      "key": "questlog.quest_11.mission_61.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Tormentor",
-      "translated": "Paw and Fur: Tormentor"
-    },
-    {
-      "key": "questlog.quest_11.mission_62.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Flameborn",
-      "translated": "Paw and Fur: Flameborn"
-    },
-    {
-      "key": "questlog.quest_11.mission_63.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Fazzrah",
-      "translated": "Paw and Fur: Fazzrah"
-    },
-    {
-      "key": "questlog.quest_11.mission_64.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Tromphonyte",
-      "translated": "Paw and Fur: Tromphonyte"
-    },
-    {
-      "key": "otclient_modules.character_otui.tr_27",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Depot",
-      "translated": "Depot"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia.tr_6",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -239,5 +62,5 @@
     }
   ],
   "threshold": 10,
-  "slow_mode": true
+  "slow_mode": false
 }

@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-17T05:06:08.183113Z",
-  "cycle_counter": 1592,
-  "last_target_key": "ro:monsters.json",
-  "last_pending_total": 5059,
-  "last_tier": 2,
-  "last_cat_priority": 2,
+  "timestamp": "2026-02-17T05:10:36.561615Z",
+  "cycle_counter": 1598,
+  "last_target_key": "es:quests.json",
+  "last_pending_total": 17,
+  "last_tier": 1,
+  "last_cat_priority": 5,
   "candidates_count": 192,
   "active_candidates_count": 179,
   "skipped_backoff": 13,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 266,
+  "cache_cycle": 268,
   "no_progress_counts": {
     "pl:items.json": 0,
     "es:items.json": 3,
@@ -389,13 +389,13 @@
       "sv"
     ],
     "lang_completion": {
-      "pl": 47.24,
-      "es": 74.86,
-      "ru": 38.2,
+      "pl": 47.28,
+      "es": 74.91,
+      "ru": 38.23,
       "ro": 24.98,
       "it": 16.11,
       "sr": 11.74,
-      "sv": 9.65
+      "sv": 9.71
     }
   }
 }

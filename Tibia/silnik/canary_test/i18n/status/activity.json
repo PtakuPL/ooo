@@ -1,9 +1,9 @@
 {
-  "category": "it",
-  "cycle": 266,
+  "category": "es",
+  "cycle": 268,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-17T05:06:49Z",
+  "generated_at_utc": "2026-02-17T05:10:51Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -15,102 +15,102 @@
     {
       "action": "update",
       "category": "es",
-      "cycle": 266,
+      "cycle": 268,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-17T05:06:40Z"
+      "t": "2026-02-17T05:10:43Z"
     },
     {
       "action": "update",
-      "category": "ro",
-      "cycle": 266,
-      "file": "monsters.json",
+      "category": "pl",
+      "cycle": 268,
+      "file": "quests.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-17T05:06:08Z"
+      "t": "2026-02-17T05:09:25Z"
     },
     {
       "action": "update",
-      "category": "ro",
-      "cycle": 266,
-      "file": "monsters.json",
+      "category": "pl",
+      "cycle": 268,
+      "file": "quests.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-17T05:06:08Z"
+      "t": "2026-02-17T05:09:25Z"
     },
     {
       "action": "update",
-      "category": "ru",
-      "cycle": 266,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-17T05:05:39Z"
-    },
-    {
-      "action": "update",
-      "category": "ru",
-      "cycle": 266,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-17T05:05:39Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 266,
-      "file": "monsters.json",
+      "category": "es",
+      "cycle": 268,
+      "file": "spells.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_done",
-      "t": "2026-02-17T05:05:36Z"
+      "t": "2026-02-17T05:09:22Z"
     },
     {
       "action": "update",
-      "category": "it",
-      "cycle": 266,
-      "file": "monsters.json",
+      "category": "es",
+      "cycle": 268,
+      "file": "spells.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-17T05:05:34Z"
+      "t": "2026-02-17T05:08:38Z"
     },
     {
       "action": "update",
-      "category": "it",
-      "cycle": 266,
-      "file": "monsters.json",
+      "category": "es",
+      "cycle": 268,
+      "file": "spells.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_start",
-      "t": "2026-02-17T05:05:34Z"
+      "t": "2026-02-17T05:08:37Z"
     },
     {
       "action": "update",
-      "category": "ro",
-      "cycle": 265,
-      "file": "items.json",
+      "category": "pl",
+      "cycle": 267,
+      "file": "spells.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-17T05:04:51Z"
+      "t": "2026-02-17T05:07:41Z"
     },
     {
       "action": "update",
-      "category": "ro",
-      "cycle": 265,
-      "file": "items.json",
+      "category": "pl",
+      "cycle": 267,
+      "file": "spells.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-17T05:04:51Z"
+      "t": "2026-02-17T05:07:41Z"
+    },
+    {
+      "action": "update",
+      "category": "sr",
+      "cycle": 267,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-17T05:07:37Z"
+    },
+    {
+      "action": "update",
+      "category": "sr",
+      "cycle": 267,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-17T05:07:37Z"
     }
   ],
   "stage": "cycle_end",

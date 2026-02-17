@@ -3921,19 +3921,19 @@
   },
   "spell.curse.name": {
     "src_hash": "738ca3cb200c27b4996ed320eee15705",
-    "text": "Curse",
+    "text": "Przekleństwo",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-12T21:56:15.344228Z"
+    "updated_at": "2026-02-17T05:08:04.424640Z"
   },
   "spell.whirlwind_throw.name": {
     "src_hash": "b4059a8b7bb59a3194a68ec2a13da3f2",
-    "text": "Whirlwind Throw",
+    "text": "Rzut Wichru",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-12T21:56:15.344632Z"
+    "updated_at": "2026-02-17T05:08:04.425486Z"
   },
   "module.hireling_module.text2": {
     "src_hash": "3529de591833040eced95ee7377b1f42",
@@ -83713,11 +83713,11 @@
   },
   "spell.abyssador_skill_reducer_1.name": {
     "src_hash": "9e9a4234c4bde5d881f3576f61b5c7c9",
-    "text": "abyssador skill reducer 1",
+    "text": "Reduktor umiejętności Otchłani 1",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:30:53.354604Z"
+    "updated_at": "2026-02-17T05:07:53.909696Z"
   },
   "spell.hells_core.words": {
     "src_hash": "e077afa126207cc6dc36afc6c4f68572",
@@ -83745,11 +83745,11 @@
   },
   "spell.executioners_throw.name": {
     "src_hash": "87bee2f42bd3eae06b694a27794d9d6c",
-    "text": "Executioner's Throw",
+    "text": "Rzut Kata",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T11:30:55.966640Z"
+    "updated_at": "2026-02-17T05:08:17.379695Z"
   },
   "spell.rage_of_the_skies.words": {
     "src_hash": "2887c375b9e94ea1262fcc74e7522abe",
@@ -96629,7 +96629,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:42:01.779537Z"
+    "updated_at": "2026-02-17T05:07:44.752204Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -98981,7 +98981,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:42:01.780578Z"
+    "updated_at": "2026-02-17T05:07:44.753024Z"
   },
   "spell.shock_head_paralyze.name": {
     "src_hash": "261c1b218a892245cd6eea042796e605",
@@ -110966,5 +110966,509 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T05:02:36.637303Z"
+  },
+  "spell.glooth_anemone_summon.name": {
+    "src_hash": "46de46015ba570a06602b58803c2f34f",
+    "text": "przywołanie gloothowego anemonu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:53.909988Z"
+  },
+  "spell.great_death_beam.name": {
+    "src_hash": "e94f79f22af9bff717a11d53abfcdba4",
+    "text": "Wielki Promień Śmierci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:00.340178Z"
+  },
+  "spell.great_death_beam.words": {
+    "src_hash": "feb6b1e27d32865ee0f12c58ec858b02",
+    "text": "exevo max mort",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:00.340589Z"
+  },
+  "spell.front_sweep.name": {
+    "src_hash": "bf98a10fbf82bc4457da2f4dbf8ba9e7",
+    "text": "Zamiatanie przodu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:00.340862Z"
+  },
+  "spell.ultimate_flame_strike.words": {
+    "src_hash": "a1eee5d6d0f1c3225e9ba6021dfe704b",
+    "text": "exori max flam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:00.341173Z"
+  },
+  "spell.divine_caldera.name": {
+    "src_hash": "2275e2fe6687d2c4c46ce48323e825e7",
+    "text": "Boska Kaldera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:00.341399Z"
+  },
+  "spell.divine_caldera.words": {
+    "src_hash": "3b5c064a5e654d4a3be6cc97aaf96144",
+    "text": "exevo mas san",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:04.424421Z"
+  },
+  "spell.terra_wave.name": {
+    "src_hash": "e3a4241a45c4747ac02615702b1e0163",
+    "text": "Fala Terra",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:04.424868Z"
+  },
+  "spell.terra_wave.words": {
+    "src_hash": "2559e690cd3439df960da26b5870ea7f",
+    "text": "exevo tera hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:04.425189Z"
+  },
+  "spell.physical_strike.name": {
+    "src_hash": "5c39d319c8cf1fa7657158909122ee39",
+    "text": "Uderzenie fizyczne",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:09.810307Z"
+  },
+  "spell.physical_strike.words": {
+    "src_hash": "972facee93e7eb9f825cbaa3f063c6c2",
+    "text": "exori moe ico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:09.810705Z"
+  },
+  "spell.strong_ethereal_spear.name": {
+    "src_hash": "5e9ae8bc54f6401387b7984a0d2bdbca",
+    "text": "Silna eteryczna włócznia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:09.811025Z"
+  },
+  "spell.strong_ethereal_spear.words": {
+    "src_hash": "58a3875cd62d7f7149d577a494338a46",
+    "text": "exori gran con",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:09.811299Z"
+  },
+  "spell.ice_strike.name": {
+    "src_hash": "fc1004d8fd277440d39892c05dc602f4",
+    "text": "Lodowe uderzenie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:09.811515Z"
+  },
+  "spell.ice_strike.words": {
+    "src_hash": "d9d027923474bf7c4bf90eb0c60095c6",
+    "text": "exori frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:13.671643Z"
+  },
+  "spell.great_fire_wave.name": {
+    "src_hash": "02ea0bdaee37bce462b8005718fe732d",
+    "text": "Wielka fala ognia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:13.671975Z"
+  },
+  "spell.strong_ice_wave.name": {
+    "src_hash": "9e52fb214d329256f6802c40897a470a",
+    "text": "Silna fala lodowa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:13.672266Z"
+  },
+  "spell.executioners_throw.words": {
+    "src_hash": "757855743f8868ef8a59da255425e7ce",
+    "text": "exori amp kor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:17.380046Z"
+  },
+  "spell.ultimate_terra_strike.words": {
+    "src_hash": "f753c45c9d6963be5d83007c4a841fc3",
+    "text": "exori max tera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:17.380375Z"
+  },
+  "spell.mud_attack.words": {
+    "src_hash": "8936fecc0445afbadbb896256c31dc5c",
+    "text": "exori infir tera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:17.380701Z"
+  },
+  "spell.ice_burst.name": {
+    "src_hash": "ad4cb9a2cc034253a7c49c705afbf82c",
+    "text": "Wybuch lodu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:19.996364Z"
+  },
+  "spell.ice_burst.words": {
+    "src_hash": "e4a7f867be477d51cdff816968a50abe",
+    "text": "exevo ulus frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:19.996723Z"
+  },
+  "quests.rookie_guard.m04.not_hyacinth_north": {
+    "src_hash": "860c4533bc9747a178e2aaa8d1030cf3",
+    "text": "To nie jest droga do Hiacynta. Podążaj ścieżką do północnego wyjścia z wioski.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:30.368979Z"
+  },
+  "quests.rookie_guard.m04.not_hyacinth_stay": {
+    "src_hash": "78f62d4d069dd9e52c49c0976e3243bb",
+    "text": "To nie jest droga do Hiacynta. Pozostań na ścieżce nieco bardziej na północ, aby znaleźć domek Hiacynta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:38.383336Z"
+  },
+  "quests.rookie_guard.m04.not_lily": {
+    "src_hash": "b75de9056a3f78512d4451edf4b933bc",
+    "text": "To nie jest droga do Lily. Podążaj drogą prowadzącą na południowy zachód, aby znaleźć jej sklep.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:38.384375Z"
+  },
+  "quests.rookie_guard.m05.follow_north": {
+    "src_hash": "a5bf51f908af9ade3bfffc340ca8e014",
+    "text": "Podążaj małą ścieżką na północ, aby dotrzeć do legowiska pająków.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:38.385197Z"
+  },
+  "quests.rookie_guard.m05.not_tarantula_sw": {
+    "src_hash": "b1fdf58d0b8057244bab5a710d42a616",
+    "text": "To nie jest droga do legowiska tarantuli. Kieruj się małą rampą na południowy zachód.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:38.386229Z"
+  },
+  "quests.rookie_guard.m05.remember_web": {
+    "src_hash": "39a2d466181dc92312224cea243c06c7",
+    "text": "Pamiętaj, że musisz zdobyć próbkę internetową dla Vascalira. Bez niego nie należy opuszczać tej jaskini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:38.387317Z"
+  },
+  "quests.rookie_guard.m05.walk_west": {
+    "src_hash": "cd2910c5de542301bf729e89347f87e5",
+    "text": "Przejdź stąd na zachód, by dotrzeć do dziury prowadzącej do legowiska tarantul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:46.829719Z"
+  },
+  "quests.rookie_guard.m06.dead_wolf": {
+    "src_hash": "cd8a0378d33f62cc3ee5742430d9196a",
+    "text": "Jest martwy wilk wojenny! Użyj noża, a następnie użyj go na jego ciele, aby zdobyć trochę skóry - ale szybko!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:46.830346Z"
+  },
+  "quests.rookie_guard.m06.exit_time": {
+    "src_hash": "17007160bd3124ad631c587fa066a70e",
+    "text": "Dotarłeś do wyjścia na czas! Uff... wracamy do Toma.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:46.830732Z"
+  },
+  "quests.rookie_guard.m06.follow_ne": {
+    "src_hash": "d660a6b81f70a077aa8cc985ceb95661",
+    "text": "Podążaj północno-wschodnią ścieżką do lasu. Uwaga na wilki!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:46.831130Z"
+  },
+  "quests.rookie_guard.m06.not_wolf_stay": {
+    "src_hash": "989a7ab9eb5e0a97e828d346f52de900",
+    "text": "To nie jest droga do wilczego lasu. Trzymaj się południowej ścieżki prowadzącej na północny wschód!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:46.831629Z"
+  },
+  "quests.rookie_guard.m06.plans_changed": {
+    "src_hash": "a6dabc80da026b6c74b055d2631f0bd2",
+    "text": "Wygląda na to, że plany się zmieniły. Twoim zadaniem jest teraz odnalezienie martwego wilka bojowego i użycie na nim noża do skórowania, aby zdobyć trochę skóry.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:54.580992Z"
+  },
+  "quests.rookie_guard.m06.poacher_dead": {
+    "src_hash": "ad864d48132584f629f65e54cc4dc9dc",
+    "text": "Cóż... to wygląda na kłusownika. Martwy. Sprawdź jego ciało - może ma jeszcze coś, co możesz wykorzystać.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:54.581535Z"
+  },
+  "quests.rookie_guard.m06.wolf_den_hole": {
+    "src_hash": "8ff82dfeee21b161eacc6351bd96bb4f",
+    "text": "Ta dziura prowadzi do jaskini wilków. Wejdź tylko jeśli masz pełne zdrowie i żywność - może to być niebezpieczne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:54.582136Z"
+  },
+  "quests.rookie_guard.m07.chest_flames": {
+    "src_hash": "b7c6b9d06f88f8be6cd061c750b49f8d",
+    "text": "To musi być skrzynia z księgą, ale jest w płomieniach!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:54.582645Z"
+  },
+  "quests.rookie_guard.m07.rune_table": {
+    "src_hash": "6002e2799edcb38d0d9a8a27e3adb6bc",
+    "text": "Kliknij prawym przyciskiem myszy szarą runę na stole, a następnie lewym przyciskiem myszy kliknij ogień! Nie możesz wziąć runy, ale ona działa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:54.583311Z"
+  },
+  "quests.rookie_guard.m07.stairs_vault": {
+    "src_hash": "1c62d45cabc3f18ede97039fa7995f24",
+    "text": "Zejdź po schodach, aby dotrzeć do skarbca. Tam na dole śmierdzi ogniem. Upewnij się, że jesteś zdrowy!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:02.084121Z"
+  },
+  "quests.rookie_guard.m07.vault_fire": {
+    "src_hash": "ca5a077ce0747edac556d29d78a7241a",
+    "text": "Skarbiec się pali! Prawie nie ma tu powietrza. Nie masz dużo czasu na znalezienie książki. Spieszyć się!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:02.084688Z"
+  },
+  "quests.rookie_guard.m09.not_troll_caves": {
+    "src_hash": "53ae08babd37bc33bccc6047edabfdbb",
+    "text": "To nie jest droga do jaskiń trolli. Wróć po schodach i idź na północ, aby je znaleźć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:02.085178Z"
+  },
+  "quests.rookie_guard.m09.troll_tunnel": {
+    "src_hash": "6aa6afffb59b2e2f20b38e3d07846679",
+    "text": "Dotarłeś do nowo wykopanego tunelu trolli. Weź to, co znajdziesz w tej skrzyni i użyj tego, aby zniszczyć wszystkie belki nośne!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:02.085745Z"
+  },
+  "quests.rookie_guard.m09.tunnel_collapsed": {
+    "src_hash": "c93f44b7a93c422a03c1a7b607c9f512",
+    "text": "Słyszysz kruszenie się pod tobą. Tunel się zawalił. Vascalir będzie zadowolony, gdy się o tym dowie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:02.086317Z"
+  },
+  "quests.rookie_guard.m10.crypt_explore": {
+    "src_hash": "428682d8033f91ba852ac8e9c68c9bd6",
+    "text": "To jest krypta, o której mówił Vascalir. Zbadaj go i przeszukaj trumny - w jednej z nich musi znajdować się ładna, mięsista kość.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:10.577374Z"
+  },
+  "quests.rookie_guard.m10.deeper_crypt": {
+    "src_hash": "86e1952c650fefd39f45d3647768aa98",
+    "text": "Wydaje się, że te drzwi prowadzą w głąb krypty. Zejdź na dół i poszukaj specjalnej trumny. Uważaj na chodzące trupy!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:10.577947Z"
+  },
+  "quests.rookie_guard.m10.fleshy_bone": {
+    "src_hash": "0f7d3784d552ac18699272146e625d18",
+    "text": "Teraz, gdy masz już mięsistą kość, czas dowiedzieć się, czego chciał od niej Vascalir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:10.578450Z"
+  },
+  "quests.rookie_guard.m10.sarcophagus": {
+    "src_hash": "2b6990f31c3b6910b0745f3d72b72720",
+    "text": "Ten sarkofag wydaje się wyjątkowy. Mówi się, że sarkofagi przechowują mięso dłużej niż zwykłe trumny – może będziesz mieć szczęście.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:10.579138Z"
+  },
+  "quests.rookie_guard.m11.wasp_tower": {
+    "src_hash": "e55b94869184f9b0d4ea4fcd017c20ba",
+    "text": "Znalazłeś wieżę os. Zabij osę i użyj butelki otrzymanej od Vascalira na jej zwłokach, aby odzyskać część trucizny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:17.704240Z"
+  },
+  "quests.rookie_guard.m11.wasps_nest": {
+    "src_hash": "d39e080a30dc5e5fa81ee9ec692e0118",
+    "text": "Przejdź przez most na zachód i idź na południe, aby dotrzeć do gniazda os.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:17.704704Z"
+  },
+  "quests.rookie_guard.m12.approaching": {
+    "src_hash": "ceb1407d6af7b56efe088971f0bab81b",
+    "text": "Uważaj... zbliżasz się do pokoju Kraknaknorka. Po wejściu masz tylko 5 minut na zabicie go, zanim cię wyrzuci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:17.705258Z"
+  },
+  "quests.rookie_guard.m12.chest_items": {
+    "src_hash": "ad45b9bd37d7566a86cf5513f140bd29",
+    "text": "W tej skrzyni powinno znajdować się wszystko, czego potrzebujesz, aby przedostać się do twierdzy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:17.705724Z"
+  },
+  "quests.rookie_guard.m12.distraction_bone_1": {
+    "src_hash": "982a4987dd4f5f2f1dab1b667a90610a",
+    "text": "Nie możesz mieć nadziei, że przemkniesz obok tego strażnika. Może odrobina odwrócenia uwagi by pomogła? Mógłbyś spróbować użyć na nim mięsistej kości...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:17.706345Z"
+  },
+  "quests.rookie_guard.m12.energy_barrier": {
+    "src_hash": "59b91fb81cfc924a472db48066e96b1a",
+    "text": "Kraknaknork utrzymuje silne bariery energetyczne. Jest tylko jeden sposób, aby je wyłączyć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:24.782850Z"
+  },
+  "quests.rookie_guard.m12.guard_pass": {
+    "src_hash": "ba93d5ee5a7d338995fd8d4402f8278c",
+    "text": "Ten strażnik na pewno Cię nie przepuści. Przekradnij się po fortecy, aby znaleźć sposób na przebranie się.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:24.783430Z"
+  },
+  "quests.rookie_guard.m12.interior": {
+    "src_hash": "0c8af191ec0630b1c630530a474e5e0b",
+    "text": "Udało ci się dotrzeć do wnętrza fortecy orków. Przygotuj się na walkę i rozejrzyj się za kociołkiem z zupą.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:24.784063Z"
+  },
+  "quests.rookie_guard.m12.items_infiltrate": {
+    "src_hash": "7d1f6fbf68d2a7a08c4093307f1ad8fb",
+    "text": "Te przedmioty powinny być tym, czego potrzebujesz, aby przedostać się do twierdzy. Wróć w pobliże gniazda os i idź stamtąd na południe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:24.784656Z"
+  },
+  "quests.rookie_guard.m12.kitchen": {
+    "src_hash": "6b1b898af80c38869a62267a419b1466",
+    "text": "Najwyraźniej jesteś w kuchni. Jeśli znajdziesz duży kocioł, użyj na nim butelki z trucizną na osę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:24.785159Z"
+  },
+  "quests.rookie_guard.m12.lever_barrier": {
+    "src_hash": "517a365908f493329e1f686aa921d23b",
+    "text": "Bariera energetyczna na południu chwilowo zniknęła.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:31.434713Z"
+  },
+  "quests.rookie_guard.m12.no_poison_yet": {
+    "src_hash": "4e1417b973e1a5704aa0563eb141e17f",
+    "text": "Nie użyłeś jeszcze trucizny na zupie Kraknaknorka. Nie próbuj z nim walczyć wcześniej, bo na pewno cię zabije.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:31.435371Z"
+  },
+  "quests.rookie_guard.m12.orc_break": {
+    "src_hash": "4dc27b230216ab6553d9993600fefdbf",
+    "text": "Ten ork odwrócił się do ciebie plecami i najwyraźniej robi sobie przerwę. Użyj na nim wałka do ciasta, aby go znokautować!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:31.436001Z"
+  },
+  "quests.rookie_guard.m12.sneaked_in": {
+    "src_hash": "9c7ac86a98efc8c0c4fce6b33e774143",
+    "text": "Wkradłeś się do fortecy orków. Uważaj teraz, nie wychodź więcej na zewnątrz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:31.436443Z"
+  },
+  "quests.rookie_guard.m12.trap_ready": {
+    "src_hash": "3a644ca296978982bc5bf37f75bb03b0",
+    "text": "Czy masz już przygotowaną pułapkę na tarantule? Być może wkrótce będziesz musiał z niego skorzystać...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:31.436938Z"
+  },
+  "quests.rookie_guard.missions.bank_academy": {
+    "src_hash": "970c5993868a32eadf2faf5c2e83756d",
+    "text": "Bank znajduje się pod akademią. Idź na północ, skieruj się w dół po schodach i w prawo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:10:34.307051Z"
   }
 }

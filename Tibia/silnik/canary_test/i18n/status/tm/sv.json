@@ -24158,5 +24158,277 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T04:52:01.934875Z"
+  },
+  "npc.a_sleeping_dragon.multi_19": {
+    "src_hash": "791b4b36f3b71d7c38493b3e30b76237",
+    "text": "När dina ögon anpassar sig till den plötsliga minskningen av ljusstyrkan ser du grindens gigantiska vingar innan du går åt sidan. Du kan också urskilja något glänsande på marken.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:16.185557Z"
+  },
+  "npc.a_sleeping_dragon.multi_20": {
+    "src_hash": "2f2109a72068de305a9443412ff32999",
+    "text": "Du plockar spegeln från marken.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:16.185901Z"
+  },
+  "npc.a_sleeping_dragon.multi_21": {
+    "src_hash": "4c26b218f329957ec066a35cf4c9405d",
+    "text": "Drakdrömmar är gyllene. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:16.186263Z"
+  },
+  "npc.a_sleeping_dragon.multi_22": {
+    "src_hash": "34250643c73b08b49a6fab210c7bc0c4",
+    "text": "Ett brett mörker omger dig som om en tung gardin sluter sig framför dina ögon. Efter vad som verkar som minuter av att sväva genom tomheten får du känslan av att ett hål öppnar sig i mörkret framför dig. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:16.187042Z"
+  },
+  "npc.a_sleeping_dragon.multi_23": {
+    "src_hash": "92a1fcad690cb48948dcf8d8defc5129",
+    "text": "Hålet växer sig större, du kan inte blunda. En ofattbar svart. Djupare och mörkare än någonting du kan tänka dig drar dig in i det. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:16.187696Z"
+  },
+  "npc.a_sleeping_dragon.multi_24": {
+    "src_hash": "f2cf7d86540c1405ea910ab146d852e6",
+    "text": "Det känns som om du inte kan andas längre. I samma sekund som du släpper loss ditt medvetande känner du att all tyngd runt dig lyfts. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:18.760999Z"
+  },
+  "npc.a_sleeping_dragon.multi_25": {
+    "src_hash": "fb3eb01906a6037673dafee918fc8213",
+    "text": "Du dyker ner i ett hav av smaragdljus. Att känna sig född på nytt är färgen runt omkring dig nästan överväldigande. Otaliga föremål av alla former och storlekar rusar förbi dig. Tävlande mot varandra, miljontals stöter ihop i fjärran. ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:18.761860Z"
+  },
+  "npc.a_sleeping_dragon.multi_26": {
+    "src_hash": "78364ddf49f6d5722ee53c7a25348d26",
+    "text": "Ljudstyrkan från det gigantiska spektaklet runt dig spränger din hörsel, ändå absorberar du alla ljud runt omkring dig. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:18.762513Z"
+  },
+  "npc.a_sleeping_dragon.multi_27": {
+    "src_hash": "c42d69935dea4179e66969ccdb3aed5e",
+    "text": "När flera stora hinder rör sig åt sidan direkt framför dig, hoppar ett intensivt ljust centrum in i din syn. Även om du inte kan uppfatta hur snabb du är, verkar ditt tempo för långsamt. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:18.763238Z"
+  },
+  "npc.a_sleeping_dragon.multi_28": {
+    "src_hash": "a70857cffa61d3635e2308ed40fdc91d",
+    "text": "Med ständig inbromsning närmar du dig till slut en mitt i detta kaos av gröna toner. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:18.763704Z"
+  },
+  "npc.a_sleeping_dragon.multi_29": {
+    "src_hash": "405803fd9a90b647e0df17a586553f6b",
+    "text": "När du kommer närmare det, omfamnar gulaktiga nyanser av orange dig, mjukare former dyker upp och du glömmer nästan kaoset innan. I varm komfort ser du vad som ligger i hjärtat av det hela. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:22.497663Z"
+  },
+  "npc.a_sleeping_dragon.multi_30": {
+    "src_hash": "561aa27c3ac58b8b86feed5ae68f3dfb",
+    "text": "En majestätisk drake i sömnen är omgiven av vad som verkar vara värmen och energin från tusen solar. Stillheten i dess syn får dig att le försiktigt. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:22.498380Z"
+  },
+  "npc.a_sleeping_dragon.multi_31": {
+    "src_hash": "71d47ef87b2021f0289ea4b660a86a9b",
+    "text": "Du känner en perfekt blandning av glädje, medkänsla och plötslig lugn. Ljusa xantous intryck av topas, orange och vitt välkomnar dig vid det sista stoppet av din resa. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:22.499055Z"
+  },
+  "npc.a_sleeping_dragon.multi_32": {
+    "src_hash": "4c26b218f329957ec066a35cf4c9405d",
+    "text": "Drakdrömmar är gyllene. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:22.499353Z"
+  },
+  "npc.a_sleeping_dragon.multi_33": {
+    "src_hash": "2857a39f8d648b3b1dd35100ce9f03de",
+    "text": "Du befinner dig i drakens dröm. Du kan {look} runt eller {go} i en specifik riktning. Du kan också {take} eller {use} ett objekt. Ange {help} för att visa denna information när som helst.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:22.500095Z"
+  },
+  "npc.a_sleeping_dragon.multi_5": {
+    "src_hash": "5413fbb342cce5e40e131c197c65f83a",
+    "text": "Överföringen lyckades. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:26.552786Z"
+  },
+  "npc.a_sleeping_dragon.multi_6": {
+    "src_hash": "9dca37c81c8fb23fca9d424d916549b3",
+    "text": "Du är nu beredd att gå in i ondskans rike. Jag är tacksam för din hjälp, vägfarare. Om du söker mitt råd, använd denna charm som jag överlåter till dig. För min ande kommer att vägleda dig var du än är. Må du njuta av en skyddad framtid, du ska segra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:26.553704Z"
+  },
+  "npc.a_sleeping_dragon.multi_8": {
+    "src_hash": "ae1846f5fcb59591a3521d7f4d7960ef",
+    "text": "Jag antar att du måste ta dig genom porten för att nå illgäraren. Jag kan hjälpa dig om du litar på mig, vägfarare. Jag kommer att dela en del av mitt sinne med dig som borde göra det möjligt för dig att kliva in genom porten. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:26.554706Z"
+  },
+  "npc.a_sleeping_dragon.multi_9": {
+    "src_hash": "80f688fec5f39b9ff2f0df02e7b214e9",
+    "text": "Denna procedur kan vara ansträngande. Är du beredd att ta emot min nyckel?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:26.555132Z"
+  },
+  "npc.a_sleeping_dragon.say_1": {
+    "src_hash": "2857a39f8d648b3b1dd35100ce9f03de",
+    "text": "Du befinner dig i drakens dröm. Du kan {look} runt eller {go} i en specifik riktning. Du kan också {take} eller {use} ett objekt. Ange {help} för att visa denna information när som helst.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:29.410492Z"
+  },
+  "npc.a_sleeping_dragon.say_10": {
+    "src_hash": "3dfc299ef9bb06feb416cd56e55b57f8",
+    "text": "Du återvänder genom den halvgenomskinliga porten i väster. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:29.410904Z"
+  },
+  "npc.a_sleeping_dragon.say_11": {
+    "src_hash": "3cf73e85054a92f8968d144c3db334e5",
+    "text": "Du går tillbaka norrut till platån. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:29.411234Z"
+  },
+  "npc.a_sleeping_dragon.say_12": {
+    "src_hash": "ba787ce232620c16a0c665d7de2c954f",
+    "text": "Du reser österut över flera stora smaragdbluffar och kanter. Alla möjliga ädelstenar är utspridda längs din väg. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:29.411762Z"
+  },
+  "npc.a_sleeping_dragon.say_13": {
+    "src_hash": "3988a48325cf8b6da4fc1f68b204db4f",
+    "text": "Du tar en ganska stor rubin ur en hög framför dig. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:29.412138Z"
+  },
+  "npc.a_sleeping_dragon.say_14": {
+    "src_hash": "01035bcddef5e83e2f82ef180af0066a",
+    "text": "Du beger dig norrut och passerar otaliga stenar i det röda havet av stenar under dina fötter.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:31.995102Z"
+  },
+  "npc.a_sleeping_dragon.say_15": {
+    "src_hash": "389827eea938b1ec81fa8c1253752583",
+    "text": "Undviker det starka ljuset, lägger du försiktigt fästet ovanpå det konstiga uttaget. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:31.995580Z"
+  },
+  "npc.a_sleeping_dragon.say_16": {
+    "src_hash": "71c018dceebc102602a24f5dc7a3b779",
+    "text": "Din väg norrut är öppen. Du passerar de gigantiska portvingarna till vänster och höger när du avancerar. Efter ungefär en timmes resa hör man ett lätt prasslande i fjärran. Du går vidare i den riktningen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:31.996353Z"
+  },
+  "npc.a_sleeping_dragon.say_17": {
+    "src_hash": "c3aac5f8ce3c6a1bfe094eb637ef4b7e",
+    "text": "Du reser hela vägen tillbaka ner för dynen och genom porten i söder. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:31.996778Z"
+  },
+  "npc.a_sleeping_dragon.say_18": {
+    "src_hash": "f35087ef016a6d78d3d7bb34b7fac6fa",
+    "text": "Du återvänder till det röda havet av rubiner i söder. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:31.997153Z"
+  },
+  "npc.a_sleeping_dragon.say_19": {
+    "src_hash": "a665ef483bf0191e81c101b1b5474c6f",
+    "text": "Du reser tillbaka till platån i väster. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:34.581894Z"
+  },
+  "npc.a_sleeping_dragon.say_2": {
+    "src_hash": "1da87c3f233509a7475150303e2e53da",
+    "text": "När du avancerar västerut känner du igen en ökning av onyx på marken.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:34.582360Z"
+  },
+  "npc.a_sleeping_dragon.say_20": {
+    "src_hash": "d53b6007f7cf8df6f86e50c019390f67",
+    "text": "När du avancerar västerut känner du igen en ökning av onyx på marken. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:34.582845Z"
+  },
+  "npc.a_sleeping_dragon.say_21": {
+    "src_hash": "c6c234a6b18e0208dfc1002f8ca483b6",
+    "text": "Du fortsätter resa det karga havet av ädelstenar norrut. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:34.583244Z"
+  },
+  "npc.a_sleeping_dragon.say_22": {
+    "src_hash": "4c685f91e7e0761fd8a8980ebbf57f96",
+    "text": "Du lämnar den massiva öppna porten bakom dig och går västerut. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:07:34.583676Z"
   }
 }

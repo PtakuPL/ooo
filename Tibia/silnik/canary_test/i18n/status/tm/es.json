@@ -144821,7 +144821,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:43:37.605733Z"
+    "updated_at": "2026-02-17T05:08:45.249221Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -147525,7 +147525,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T04:43:48.982947Z"
+    "updated_at": "2026-02-17T05:08:51.508711Z"
   },
   "spell.azerus_skill_reducer_3.name": {
     "src_hash": "b38b1973057027ce0ac17b6655bf5684",
@@ -147766,5 +147766,221 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T04:54:13.424995Z"
+  },
+  "spell.single_death_chain.name": {
+    "src_hash": "a02961d385f37635ed4701f197ebb7f8",
+    "text": "cadena de muerte única",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:51.508990Z"
+  },
+  "spell.zugurosh_pillar_skill_reducer.name": {
+    "src_hash": "7a27843768e9f0e76d42051750d82a72",
+    "text": "reductor de habilidades del pilar zugurosh",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:56.536710Z"
+  },
+  "spell.undertaker_square_explosion.name": {
+    "src_hash": "1fc35b28fbc60c7ce946a0c477205c1e",
+    "text": "explosión de la plaza funeraria",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:56.537016Z"
+  },
+  "spell.grand_mother_foulscale_summon.name": {
+    "src_hash": "7b708ee438ad0e9f09a5637635fc3fc8",
+    "text": "invocación de escamas sucias de la abuela",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:56.537342Z"
+  },
+  "spell.zavarash_heal.name": {
+    "src_hash": "135e011beddf23c8f0af9c905bc267a8",
+    "text": "sanar zavarash",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:56.537544Z"
+  },
+  "spell.fury_skill_reducer_2.name": {
+    "src_hash": "f86e8e4cb79667e4d020ac3a499458ce",
+    "text": "reductor de habilidad de furia 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:08:56.537799Z"
+  },
+  "spell.massive_fire_elemental_soulfire.name": {
+    "src_hash": "7c5c70852014a445d8dc7608611428a0",
+    "text": "fuego masivo elemental fuego del alma",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:01.162441Z"
+  },
+  "spell.furyosa_summon.name": {
+    "src_hash": "81eb198d71dfa0dc14dd3386e7acf025",
+    "text": "invocar furyosa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:01.162657Z"
+  },
+  "spell.hellspawn_soulfire.name": {
+    "src_hash": "d0fe4e79c3bc48d8d61c1e17d1080875",
+    "text": "fuego del alma engendro del infierno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:01.162910Z"
+  },
+  "spell.energized_raging_mage_skill_reducer.name": {
+    "src_hash": "b4dfef074ef9875ac89095b68ad2b4e1",
+    "text": "reductor de habilidades de mago furioso energizado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:01.163246Z"
+  },
+  "spell.devourer_death_wave.name": {
+    "src_hash": "10e3e19bb69445be737c88eaccc8e0ca",
+    "text": "ola de muerte devoradora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:06.771246Z"
+  },
+  "spell.azerus_skill_reducer_1.name": {
+    "src_hash": "031d9477c0d8ff8150202356447acf7f",
+    "text": "reductor de habilidades azerus 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:06.771528Z"
+  },
+  "spell.emerald_tortoise_small_ring.name": {
+    "src_hash": "8e19e5f1686cce2d10cfd623c66058d4",
+    "text": "anillo pequeño tortuga esmeralda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:06.771821Z"
+  },
+  "spell.ocyakao_freeze.name": {
+    "src_hash": "11d90e2b972e1b3b7972f298543011fd",
+    "text": "congelación de ocyakao",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:06.772074Z"
+  },
+  "spell.grandfather_tridian_paralyze.name": {
+    "src_hash": "7dd00114bfc72f42bd90f9a1a1b2d7c0",
+    "text": "abuelo tridiano paraliza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:06.772339Z"
+  },
+  "spell.furyosa_soulfire.name": {
+    "src_hash": "c80c0887a1304f177e47e46778324964",
+    "text": "fuego del alma furyosa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:12.275404Z"
+  },
+  "spell.war_golem_electrify.name": {
+    "src_hash": "a4bae54f86b9911c7f21ee75b720f737",
+    "text": "golem de guerra electrificar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:12.275674Z"
+  },
+  "spell.mutated_bat_curse.name": {
+    "src_hash": "aa9746de5b3643b6abfb4a34d4100f3a",
+    "text": "maldición del murciélago mutado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:12.275941Z"
+  },
+  "spell.energy_pulse_explosion.name": {
+    "src_hash": "8830edf36a11d56157d7f9b7838e7ba4",
+    "text": "explosión de pulso de energía",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:12.276212Z"
+  },
+  "spell.the_ravager_heal.name": {
+    "src_hash": "4e00f2bc972185bad86797bf84766b1c",
+    "text": "el devastador sana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:12.276433Z"
+  },
+  "spell.silencer_skill_reducer.name": {
+    "src_hash": "c4e710b6a95ef41854782db271578e3b",
+    "text": "reductor de habilidad silenciador",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:18.455448Z"
+  },
+  "spell.big_lifedrain_wave.name": {
+    "src_hash": "ee7026a8942cab13c77f33fa56ad8423",
+    "text": "gran ola de drenaje de vida",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:18.455720Z"
+  },
+  "spell.boogey_summon.name": {
+    "src_hash": "77a352c0e0eca2098afe5e249c1d9d17",
+    "text": "invocación fantasma",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:18.455961Z"
+  },
+  "spell.diblis_the_fair_summon.name": {
+    "src_hash": "394187005194086cf1ef3e2cc4c2c68d",
+    "text": "diblis la feria convocar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:18.456720Z"
+  },
+  "spell.outburst_explode.name": {
+    "src_hash": "f78e1f053282706b0d3a4f4b06c06eb1",
+    "text": "estallido explotar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:21.777599Z"
+  },
+  "spell.the_dreadorian_curse.name": {
+    "src_hash": "5dac6619e575ba048dac40b8637a5500",
+    "text": "la maldición aterradora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:21.777873Z"
+  },
+  "spell.dreadwing_skill_reducer.name": {
+    "src_hash": "77815ad37e94d459e5fb291efd7bce0c",
+    "text": "reductor de habilidades de ala aterradora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T05:09:21.778317Z"
   }
 }

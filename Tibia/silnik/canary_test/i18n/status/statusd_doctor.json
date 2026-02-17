@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-17T03:22:53.739060Z",
+  "timestamp": "2026-02-17T03:23:55.504912Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 1,
   "warnings_count": 12,
   "ok_count": 11,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=51843 rate=196.435% window=6.0h top_lang=ro:18102 per_lang=[ro:18102(447.737%/critical),ru:13275(304.403%/critical),es:11584(215.918%/critical),pl:4504(127.809%/critical),it:2191(46.243%/warning)] per_domain=[items.json:27000(990.826%/critical),npc.json:13587(203.795%/critical),monsters.json:5788(198.696%/critical),server.json:1602(49.156%/warning),spells.json:865(46.06%/warning)]"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=49897 rate=189.097% window=6.0h top_lang=ro:16833 per_lang=[ro:16833(420.3%/critical),ru:12609(292.484%/critical),es:11559(212.17%/critical),pl:4523(126.553%/critical),it:2186(46.63%/warning)] per_domain=[items.json:25060(968.69%/critical),npc.json:13553(203.529%/critical),monsters.json:5788(198.696%/critical),server.json:1602(49.156%/warning),spells.json:865(46.06%/warning)]"
   ],
   "warnings": [
     "WORKER_TRANSLATION_CONTRACT_WARNING: pid=1330775 translations_only=1 use_gt=1 no_git=0 priority_gate=1 priority_langs=[pl,es,ru,ro,it,sr,sv] pending=[pl,es,ru,ro,it,sr,sv] reason=priority_langs_not_es_pl",
@@ -23,17 +23,17 @@
     "LANG_PARITY_WARN: tr has 48694 [EN]-backlog after 67h (should be ≤5000)"
   ],
   "ok": [
-    "heartbeat_fresh (49s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (43s)",
-    "guard_report_fresh (100s)",
-    "dispatch_fresh (31s)",
+    "heartbeat_fresh (14s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (7s)",
+    "guard_report_fresh (9s)",
+    "dispatch_fresh (6s)",
     "worker_pid_alive (1330775)",
-    "worker_process_topology_ok (main=1330775 matching=2 extras=1 desc=1 foreign=0 oldest_desc=30s oldest_foreign=0s status=single_descendant_observed)",
-    "queue_freshness_ok (258s, WARN>900s CRIT>1800s)",
+    "worker_process_topology_ok (main=1330775 matching=2 extras=1 desc=1 foreign=0 oldest_desc=0s oldest_foreign=0s status=single_descendant_observed)",
+    "queue_freshness_ok (0s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
-    "priority_gate_tracking (pending=[es,it,pl,ro,ru,sr,sv] active_minutes=307.0 cycle_delta=574 best_quality_drop=32.062%)",
+    "priority_gate_tracking (pending=[es,it,pl,ro,ru,sr,sv] active_minutes=308.1 cycle_delta=578 best_quality_drop=39.015%)",
     "forced_cmd_sla_ok (samples=0 sla_target=45s p95_roundtrip=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0)",
-    "repair_tuning_active (samples_2h=38)"
+    "repair_tuning_active (samples_2h=39)"
   ],
   "metrics_drift": {
     "available": true,
@@ -68,9 +68,9 @@
       "sr",
       "sv"
     ],
-    "active_minutes": 307.046,
-    "cycle_delta": 574,
-    "best_quality_drop_pct": 32.062,
+    "active_minutes": 308.075,
+    "cycle_delta": 578,
+    "best_quality_drop_pct": 39.015,
     "thresholds": {
       "max_active_minutes": 1440.0,
       "max_cycles": 960,
@@ -109,20 +109,20 @@
     "main_pid": 1330775,
     "matched_pids": [
       1330775,
-      1530196
+      1531435
     ],
     "extra_pids": [
-      1530196
+      1531435
     ],
     "descendant_extra_pids": [
-      1530196
+      1531435
     ],
     "foreign_extra_pids": [],
     "total_matching": 2,
     "extra_count": 1,
     "descendant_extra_count": 1,
     "foreign_extra_count": 0,
-    "oldest_descendant_age_s": 30,
+    "oldest_descendant_age_s": 0,
     "oldest_foreign_age_s": 0,
     "warn_persist_seconds": 900,
     "critical_persist_seconds": 1800

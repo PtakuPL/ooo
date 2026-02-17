@@ -1,52 +1,129 @@
 {
-  "timestamp": "2026-02-17T09:26:15.791056Z",
+  "timestamp": "2026-02-17T09:30:34.939898Z",
   "checked_entries": 100,
-  "issues_found": 26,
+  "issues_found": 32,
   "issues_by_type": {
-    "identical_to_en": 10,
     "identical_to_en_exempt": 6,
+    "identical_to_en": 16,
     "artifact_token": 16,
-    "suspicious_log_high": 151,
-    "suspicious_log_critical": 35,
-    "suspicious_log_low": 14,
-    "suspicious_rejected_critical": 169,
-    "suspicious_rejected_high": 31
+    "suspicious_log_high": 150,
+    "suspicious_log_critical": 34,
+    "suspicious_log_low": 16,
+    "suspicious_rejected_critical": 171,
+    "suspicious_rejected_high": 29
   },
   "issues": [
     {
-      "key": "monster.the_welter.desc",
-      "lang": "it",
+      "key": "spell.great_fireball_rune.words",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
+      "en": "adori mas flam",
+      "translated": "adori mas flam"
     },
     {
-      "key": "monster.morgaroth.name",
-      "lang": "it",
+      "key": "spell.avalanche_rune.words",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
+      "en": "adori mas frigo",
+      "translated": "adori mas frigo"
     },
     {
-      "key": "monster.morgaroth.desc",
-      "lang": "it",
+      "key": "spell.conjure_piercing_bolt.words",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Morgaroth",
-      "translated": "Morgaroth"
+      "en": "exevo con grav",
+      "translated": "exevo con grav"
     },
     {
-      "key": "monster.ferumbras.name",
-      "lang": "it",
+      "key": "spell.wild_growth_rune.words",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
+      "en": "adevo grav vita",
+      "translated": "adevo grav vita"
     },
     {
-      "key": "monster.ferumbras.desc",
-      "lang": "it",
+      "key": "spell.arrow_call.words",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Ferumbras",
-      "translated": "Ferumbras"
+      "en": "exevo infir con",
+      "translated": "exevo infir con"
+    },
+    {
+      "key": "spell.icicle_rune.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "adori frigo",
+      "translated": "adori frigo"
+    },
+    {
+      "key": "spell.enchant_spear.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "exeta con",
+      "translated": "exeta con"
+    },
+    {
+      "key": "spell.energy_bomb_rune.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "adevo mas vis",
+      "translated": "adevo mas vis"
+    },
+    {
+      "key": "spell.poison_bomb_rune.words",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "adevo mas pox",
+      "translated": "adevo mas pox"
+    },
+    {
+      "key": "spell.energy_beam.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exevo vis lux",
+      "translated": "exevo vis lux"
+    },
+    {
+      "key": "spell.salvation.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exura gran san",
+      "translated": "exura gran san"
+    },
+    {
+      "key": "spell.magic_patch.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exura infir",
+      "translated": "exura infir"
+    },
+    {
+      "key": "spell.fair_wound_cleansing.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exura med ico",
+      "translated": "exura med ico"
+    },
+    {
+      "key": "spell.bruise_bane.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exura infir ico",
+      "translated": "exura infir ico"
+    },
+    {
+      "key": "spell.intense_wound_cleansing.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "exura gran ico",
+      "translated": "exura gran ico"
+    },
+    {
+      "key": "spell.enchant_party.words",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "utori mas sio",
+      "translated": "utori mas sio"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
@@ -159,41 +236,6 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "monster.dharalion.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.dharalion.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Dharalion",
-      "translated": "Dharalion"
-    },
-    {
-      "key": "monster.apocalypse.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.apocalypse.desc",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Apocalypse",
-      "translated": "Apocalypse"
-    },
-    {
-      "key": "monster.cyclops.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Cyclops",
-      "translated": "Cyclops"
     }
   ],
   "threshold": 10,

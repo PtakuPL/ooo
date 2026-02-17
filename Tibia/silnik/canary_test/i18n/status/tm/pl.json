@@ -85601,19 +85601,19 @@
   },
   "spell.stalagmite_rune.name": {
     "src_hash": "52fa8546e780281f489552902d938467",
-    "text": "Stalagmite Rune",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Runa stalagmitu",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T12:17:59.985376Z"
+    "updated_at": "2026-02-17T09:29:19.858597Z"
   },
   "spell.fireball_rune.name": {
     "src_hash": "a61a86a92bf13c2a03a91a5ac28008fb",
-    "text": "Fireball Rune",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Runa Ognistej Kuli",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T12:17:59.986756Z"
+    "updated_at": "2026-02-17T09:29:19.858873Z"
   },
   "spell.fire_field_rune.name": {
     "src_hash": "46dd0c35782bd2e15960e1af4c10fb80",
@@ -96629,7 +96629,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T08:33:50.502937Z"
+    "updated_at": "2026-02-17T09:28:59.913759Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -98981,7 +98981,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T08:33:50.503759Z"
+    "updated_at": "2026-02-17T09:28:59.914733Z"
   },
   "spell.shock_head_paralyze.name": {
     "src_hash": "261c1b218a892245cd6eea042796e605",
@@ -115526,5 +115526,85 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:35:53.233287Z"
+  },
+  "spell.great_fireball_rune.words": {
+    "src_hash": "1164cba35c28e873414f4bda704b0ffa",
+    "text": "adori mas flam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:16.204381Z"
+  },
+  "spell.avalanche_rune.words": {
+    "src_hash": "a0f5a850ef8e5a95042576df0bbd6b10",
+    "text": "adori mas frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:19.858009Z"
+  },
+  "spell.conjure_piercing_bolt.words": {
+    "src_hash": "b73544593288f4655a740e2eb8f4e5f4",
+    "text": "exevo con grav",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:19.858363Z"
+  },
+  "spell.wild_growth_rune.words": {
+    "src_hash": "152b1d6136b00229ac20d867db280a95",
+    "text": "adevo grav vita",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:19.859153Z"
+  },
+  "spell.arrow_call.words": {
+    "src_hash": "d9546660ea090e539b0691dfbc638b69",
+    "text": "exevo infir con",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:22.529477Z"
+  },
+  "spell.icicle_rune.words": {
+    "src_hash": "80e1afeec81da3a7dcaf5fc5f02dfb2c",
+    "text": "adori frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:22.530251Z"
+  },
+  "spell.enchant_spear.words": {
+    "src_hash": "181e091c27662efb7deb5c17594ff20e",
+    "text": "exeta con",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:22.530884Z"
+  },
+  "spell.energy_bomb_rune.words": {
+    "src_hash": "7c6e40a81355d51da81f9d0498d59b06",
+    "text": "adevo mas vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:22.531477Z"
+  },
+  "spell.animate_dead_rune.name": {
+    "src_hash": "accc3ea714009108a8530ed67049bb8c",
+    "text": "Animuj martwą runę",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:25.388286Z"
+  },
+  "spell.poison_bomb_rune.words": {
+    "src_hash": "e861f6b0b2da0e36767c3310bc3ec07a",
+    "text": "adevo mas pox",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:25.388792Z"
   }
 }

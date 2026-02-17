@@ -144821,7 +144821,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T08:34:26.260366Z"
+    "updated_at": "2026-02-17T09:29:36.768777Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -147525,7 +147525,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T08:34:31.589199Z"
+    "updated_at": "2026-02-17T09:29:41.996681Z"
   },
   "spell.azerus_skill_reducer_3.name": {
     "src_hash": "b38b1973057027ce0ac17b6655bf5684",
@@ -150582,5 +150582,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T08:34:48.280891Z"
+  },
+  "spell.energy_beam.words": {
+    "src_hash": "26e99e7bbd3694f6e1ae8fb87e438084",
+    "text": "exevo vis lux",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:50.015298Z"
+  },
+  "spell.electrify.name": {
+    "src_hash": "a7431b61f5f88047cfd3080fc978d82b",
+    "text": "Electrizar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:52.669713Z"
+  },
+  "spell.berserk.name": {
+    "src_hash": "41c71f8fbc23d3cd1fa6045d4ee0c391",
+    "text": "Enloquecido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:52.669912Z"
+  },
+  "spell.salvation.name": {
+    "src_hash": "383d3c6196730404cbef87d1d9a1fa63",
+    "text": "Salvación",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:52.670119Z"
+  },
+  "spell.salvation.words": {
+    "src_hash": "d64307fe9380ba9860255e26d5e20125",
+    "text": "exura gran san",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:52.670491Z"
+  },
+  "spell.magic_patch.words": {
+    "src_hash": "cc7e25ec73e78b4e52f486480b5296f3",
+    "text": "exura infir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:56.412653Z"
+  },
+  "spell.recovery.name": {
+    "src_hash": "d8afbc541b39d23648c823057cffe3a5",
+    "text": "Recuperación",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:56.412871Z"
+  },
+  "spell.fair_wound_cleansing.words": {
+    "src_hash": "5dc9cabb6ab33a2c94a0bbe8911717aa",
+    "text": "exura med ico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:56.413170Z"
+  },
+  "spell.cure_curse.name": {
+    "src_hash": "c9bf31438c5c2b31b51b9f528ad59c64",
+    "text": "Curar la maldición",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:56.413396Z"
+  },
+  "spell.bruise_bane.words": {
+    "src_hash": "de0693aa207e04d7be548543b6d95d10",
+    "text": "exura infir ico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:56.413662Z"
+  },
+  "spell.intense_wound_cleansing.words": {
+    "src_hash": "d7a2bb57e5fbf05423f17cb2d360e20e",
+    "text": "exura gran ico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:58.578298Z"
+  },
+  "spell.enchant_party.words": {
+    "src_hash": "d9cb563a4d4e641dae18e48de2889302",
+    "text": "utori mas sio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T09:29:58.578616Z"
   }
 }

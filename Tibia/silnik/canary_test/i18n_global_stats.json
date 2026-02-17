@@ -1,8 +1,8 @@
 {
-  "total_cycles": 406,
+  "total_cycles": 407,
   "mode": "AUTO_TRANSLATE",
-  "category": "ro",
-  "last_update": "2026-02-17T10:28:31.582014",
+  "category": "pl",
+  "last_update": "2026-02-17T10:30:35.100957",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,10 +26,10 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "ro",
-    "json_file": "monsters.json",
-    "keys_to_translate": 5022,
-    "guard_fail": 0,
+    "language": "pl",
+    "json_file": "spells.json",
+    "keys_to_translate": 62,
+    "guard_fail": 34,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

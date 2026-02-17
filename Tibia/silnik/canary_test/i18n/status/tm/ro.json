@@ -30390,5 +30390,333 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T01:52:06.418053Z"
+  },
+  "npc.arkulius.farewell_msg_1": {
+    "src_hash": "404f1fe1d825b9bf7a18fb5e4f2d119a",
+    "text": "În sfârșit! Lucrurile bune vin la cei care așteaptă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.108846Z"
+  },
+  "npc.arkulius.walkaway_msg_1": {
+    "src_hash": "6ea6014947c483c1731424f40d13069a",
+    "text": "La revedere și te rog stai departe, bine?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.111942Z"
+  },
+  "npc.armenius.greet_msg_1": {
+    "src_hash": "fcb9f6ad1690cb4901c3fb2a6e6f04ff",
+    "text": "Ah, un aventurier. Fiți salutați și luați loc. Cum te pot {serve}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.112453Z"
+  },
+  "npc.armenius.walkaway_msg_1": {
+    "src_hash": "27ea99152a6a515b8419ea36106638eb",
+    "text": "Oh, nervii. Du-te la șobolanii care te-au crescut.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.113152Z"
+  },
+  "npc.aruda.walkaway_msg_1": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Sper să ne vedem curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.116343Z"
+  },
+  "npc.guard_saros.walkaway_msg_1": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Sper să ne vedem curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.391051Z"
+  },
+  "npc.yaman.say_9": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Poftim.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.890421Z"
+  },
+  "npc.yaman.sendtrade_msg_1": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "La dispoziția dumneavoastră, doar răsfoiți prin marfa mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.890871Z"
+  },
+  "npc.yberius.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.892644Z"
+  },
+  "npc.yberius.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.893330Z"
+  },
+  "npc.yberius.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nicio problemă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.893665Z"
+  },
+  "npc.yberius.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nicio problemă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.895208Z"
+  },
+  "npc.yberius.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.895924Z"
+  },
+  "npc.yonan.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.896485Z"
+  },
+  "npc.yonan.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.896773Z"
+  },
+  "npc.yonan.greet_msg_3": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Cum te pot ajuta?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.897241Z"
+  },
+  "npc.yonan.say_3": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Scuze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.897622Z"
+  },
+  "npc.yonan.say_6": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Scuze.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.898116Z"
+  },
+  "npc.yonan.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Bine, atunci pa.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.898590Z"
+  },
+  "npc.zedrulon_the_fallen.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Fie ca zeii să te binecuvânteze, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.906117Z"
+  },
+  "npc.zedrulon_the_fallen.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bun venit, tânără |PLAYERNAME|! Dacă ești grav rănit sau otrăvit, te pot {heal} gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.906801Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nicio problemă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.907132Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Nicio problemă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.908341Z"
+  },
+  "npc.zedrulon_the_fallen.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Ține minte: dacă ești grav rănit sau otrăvit, te pot vindeca gratuit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.909062Z"
+  },
+  "npc.zerbrus.farewell_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Pa, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.909377Z"
+  },
+  "npc.zerbrus.stdmod_8": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Pa, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.912663Z"
+  },
+  "npc.ziyad.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Atunci la revedere.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.915436Z"
+  },
+  "npc.znozel.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.917538Z"
+  },
+  "npc.znozel.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "O zi frumoasă.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.918027Z"
+  },
+  "npc.zora.farewell_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.918927Z"
+  },
+  "npc.zora.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Nu ai destui bani.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.919454Z"
+  },
+  "npc.zora.walkaway_msg_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:28.919979Z"
+  },
+  "npc.a_dead_bureaucrat1.say_8": {
+    "src_hash": "68c9f9ee9212c1c305a253d3d1aebeb0",
+    "text": "Mare. Poftim. Formularul 411. Reveniți oricând doriți să vorbiți. la revedere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:34.009660Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Acum unde am pus formularul acela?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:34.010165Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Bucură-te Pumin. Da, grindină.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:34.010484Z"
+  },
+  "npc.a_dead_bureaucrat2.say_1": {
+    "src_hash": "14fd31f81c485fd102c189615f61a284",
+    "text": "Sigur, o poți obține de la mine. Poftim. la revedere",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:34.010925Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Acum unde am pus formularul acela?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:40.212491Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Bucură-te Pumin. Da, grindină.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:40.212809Z"
+  },
+  "npc.a_dead_bureaucrat3.say_1": {
+    "src_hash": "015bef68461eea886ca860eae9b35852",
+    "text": "Am fost și eu un {}, înainte de a muri!! Ce vrei de la mine?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:40.213228Z"
+  },
+  "npc.a_dead_bureaucrat3.say_3": {
+    "src_hash": "42b8982fe2885887a8bed5a3e2fc0184",
+    "text": "Așa e, poți obține formularul 145 de la mine. Totuși, am nevoie de formularul 411 mai întâi. Întoarce-te când o ai.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:40.213769Z"
+  },
+  "npc.a_dead_bureaucrat3.say_4": {
+    "src_hash": "4338fd8c8c7f05bf1780ecc3a5c6f70f",
+    "text": "Bine făcut! Ai formularul 411!! Iată Formularul 145. Distrează-te cu el.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T01:56:40.214256Z"
   }
 }

@@ -32686,5 +32686,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T02:22:38.041351Z"
+  },
+  "monster.walker.desc": {
+    "src_hash": "fee7bc41b43bd12113bfab4408543287",
+    "text": "un plimbător",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:59.160501Z"
   }
 }

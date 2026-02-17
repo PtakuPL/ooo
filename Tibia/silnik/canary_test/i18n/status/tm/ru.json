@@ -26046,5 +26046,149 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T02:21:28.644429Z"
+  },
+  "monster.ocyakao.voice_4": {
+    "src_hash": "e53b60ccbd49b146734b9098de879bee",
+    "text": "Сувитука сик чуква!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:08.396696Z"
+  },
+  "monster.ocyakao.voice_5": {
+    "src_hash": "935aa6b22850012ad46710d17512279f",
+    "text": "Кийоса сипаджу!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:08.397011Z"
+  },
+  "monster.clubarc_the_plunderer.voice_1": {
+    "src_hash": "870ee547ba365096f210475f381891f5",
+    "text": "Орк арга Хууммак!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:08.563156Z"
+  },
+  "monster.crazed_summer_vanguard.desc": {
+    "src_hash": "491946c4c168e7afd0f5194d06226b1d",
+    "text": "сумасшедший летний авангард",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:22.897252Z"
+  },
+  "monster.crazed_summer_vanguard.voice_1": {
+    "src_hash": "5fc0c3a29b79ae51075923b6f27c463d",
+    "text": "Я вижу цвета, все цвета! Или это всего лишь иллюзии?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:22.897701Z"
+  },
+  "monster.crazed_summer_vanguard.voice_2": {
+    "src_hash": "8419e7c3a3c40b33863bb209cac91992",
+    "text": "Ла ди да ди ду!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:22.897977Z"
+  },
+  "monster.dwarf_miner.name": {
+    "src_hash": "d44d69cbc728465f5dcfcdfd0648b1bb",
+    "text": "Карлик-шахтер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:22.898226Z"
+  },
+  "monster.dwarf_miner.desc": {
+    "src_hash": "007fc5d729ddd77f339c38e39f6f838b",
+    "text": "карлик-шахтер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:26.204226Z"
+  },
+  "monster.dwarf_miner.voice_1": {
+    "src_hash": "26f2e42393a2d4284e0c725558be947d",
+    "text": "Работайте, работайте!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:26.204729Z"
+  },
+  "monster.dwarf_miner.voice_2": {
+    "src_hash": "86d322bac81ae8f44df9b7f322d0d3d1",
+    "text": "Злоумышленники в шахтах!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:26.205287Z"
+  },
+  "monster.dwarf_miner.voice_3": {
+    "src_hash": "5ecab21e838899ebcf70618ca76ebb2e",
+    "text": "Моё, всё моё!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:26.205764Z"
+  },
+  "monster.running_elite_orc_guard.name": {
+    "src_hash": "1b169590ec450cfd41a76a5e90058fd5",
+    "text": "Бегущий элитный страж орков",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:26.206718Z"
+  },
+  "monster.running_elite_orc_guard.desc": {
+    "src_hash": "3f0f8d489404d373fdddd59cee277c66",
+    "text": "бегущий элитный орк-охранник",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:29.490481Z"
+  },
+  "monster.running_elite_orc_guard.voice_1": {
+    "src_hash": "1eb86726a44fbe77398fceaea118a6b8",
+    "text": "УАААА ФЕТЧИ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:29.490737Z"
+  },
+  "monster.minotaur_cult_follower.name": {
+    "src_hash": "2c407009b19b2f0ef0d46c2a4e2e3174",
+    "text": "Последователь культа Минотавра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:29.491028Z"
+  },
+  "monster.minotaur_cult_follower.desc": {
+    "src_hash": "d67f9b74182c9a5f4f0f1529ab828f2d",
+    "text": "последователь культа минотавра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:29.491315Z"
+  },
+  "monster.minotaur_cult_follower.voice_1": {
+    "src_hash": "b9e6fc3f8a8ba5c285a9e4404df96ad6",
+    "text": "Мы будем править!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:29.491558Z"
+  },
+  "monster.elite_pirat.name": {
+    "src_hash": "d8af9e1ccd46e293d4e61dceb9ef7a30",
+    "text": "Элитный пират",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T02:23:32.137557Z"
   }
 }

@@ -7173,7 +7173,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T02:20:59.410985Z"
+    "updated_at": "2026-02-17T00:03:27.709607Z"
   },
   "talkaction.god.achievement.msg_remove_invalid": {
     "src_hash": "7879bd592d152bea01623b163613ff3c",
@@ -144614,5 +144614,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-16T23:55:01.183930Z"
+  },
+  "talkaction.gm.spy.msg_specify_name": {
+    "src_hash": "95c7b984f7921ff2f8b24d92e5e0060f",
+    "text": "Escribe el nombre del personaje a espiar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-17T00:03:23.550216Z"
   }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-17T00:03:03.767674Z",
+  "timestamp": "2026-02-17T00:04:13.146603Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771286486352263735,
+          1771286648184884859,
           1848295
         ],
         [
@@ -7500,8 +7500,8 @@
         [
           "talkactions.json",
           1,
-          1771272699988408796,
-          18204
+          1771286626689109080,
+          18188
         ],
         [
           "ui.json",
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 39734,
+        "translated_keys": 39738,
         "english_copy_keys": 2633,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 74.15,
+        "completion_pct": 74.16,
         "server_keys": 49731,
-        "server_translated": 37220,
-        "server_pct": 74.84,
+        "server_translated": 37224,
+        "server_pct": 74.85,
         "client_keys": 3855,
         "client_translated": 2514,
         "client_pct": 65.21
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771286486352263735,
+            1771286648184884859,
             1848295
           ],
           "row": {
@@ -8027,12 +8027,12 @@
         "talkactions.json": {
           "sig": [
             1,
-            1771272699988408796,
-            18204
+            1771286626689109080,
+            18188
           ],
           "row": {
             "total_reference_keys": 199,
-            "translated_keys": 152,
+            "translated_keys": 156,
             "english_copy_keys": 3,
             "missing_keys": 0,
             "missing_files": 0
@@ -25395,7 +25395,7 @@
         [
           "modules.json",
           1,
-          1771272700144408610,
+          1771286632505096943,
           1097
         ],
         [
@@ -25531,7 +25531,7 @@
         "scope": "global",
         "total_reference_keys": 53586,
         "translated_keys": 23733,
-        "english_copy_keys": 1921,
+        "english_copy_keys": 1922,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 44.29,
@@ -25770,13 +25770,13 @@
         "modules.json": {
           "sig": [
             1,
-            1771272700144408610,
+            1771286632505096943,
             1097
           ],
           "row": {
             "total_reference_keys": 19,
             "translated_keys": 16,
-            "english_copy_keys": 0,
+            "english_copy_keys": 1,
             "missing_keys": 0,
             "missing_files": 0
           }

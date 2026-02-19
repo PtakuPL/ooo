@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T21:29:08.251145Z",
+  "checked_at": "2026-02-19T22:07:44.070915Z",
   "issues_total": 515,
   "issues_by_type": {
     "consistency_in_language": 70,
@@ -344,6 +344,21 @@
         "quests:quests.the_secret_library_quest.you_do_not_have_enough_level",
         "scripts:scripts.actions_doors.msg_1",
         "server:data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.doors.L16.2310"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "orc's jaw shredder",
+      "variants": [
+        "jaw shredder de Orc",
+        "trituradora de mandíbulas de orco"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.10800.name",
+        "items:item.10801.name",
+        "items:item.19155.name"
       ]
     },
     {
@@ -696,20 +711,6 @@
         "scripts:scripts.prince_drazzak_knight.say_2",
         "scripts:scripts.prince_drazzak_paladin.say_2",
         "scripts:scripts.prince_drazzak_sorcerer.say_2"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Vok the Freakish",
-      "variants": [
-        "Vok freakish",
-        "vok freakish"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "monsters:monster.vok_the_freakish.name",
-        "monsters:monster.vok_the_freakish.desc"
       ]
     },
     {

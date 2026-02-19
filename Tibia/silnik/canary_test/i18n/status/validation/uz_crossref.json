@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T21:30:39.124407Z",
+  "checked_at": "2026-02-19T22:09:32.420792Z",
   "issues_total": 404,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -13,6 +13,15 @@
   },
   "consistency_issues": [],
   "pl_reference_issues": [
+    {
+      "key": "achievement.20.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huntsman",
+      "pl": "Myśliwy",
+      "lang": "Huntsman"
+    },
     {
       "key": "achievement.28.name",
       "category": "achievements",
@@ -32,6 +41,15 @@
       "lang": "Explorer"
     },
     {
+      "key": "achievement.119.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cursed!",
+      "pl": "Przeklęty!",
+      "lang": "Cursed!"
+    },
+    {
       "key": "achievement.123.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -39,6 +57,15 @@
       "en": "Berserker",
       "pl": "To go berserk",
       "lang": "Berserker"
+    },
+    {
+      "key": "achievement.186.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fire Devil",
+      "pl": "Ognisty Diabeł",
+      "lang": "Fire Devil"
     },
     {
       "key": "achievement.264.name",
@@ -3585,33 +3612,6 @@
       "en": "Maeh",
       "pl": "Mae",
       "lang": "Maeh"
-    },
-    {
-      "key": "monster.vampire_pig.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oink",
-      "pl": "Chrum",
-      "lang": "Oink"
-    },
-    {
-      "key": "monster.vampire_pig.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oink oink",
-      "pl": "Chrum chrum",
-      "lang": "Oink oink"
-    },
-    {
-      "key": "monster.boar.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grunt",
-      "pl": "Chrząknięcie",
-      "lang": "Grunt"
     }
   ],
   "length_ratio_issues": [

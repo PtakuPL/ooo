@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T21:30:37.857559Z",
+  "checked_at": "2026-02-19T22:09:30.773786Z",
   "issues_total": 408,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -13,6 +13,33 @@
   },
   "consistency_issues": [],
   "pl_reference_issues": [
+    {
+      "key": "achievement.20.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huntsman",
+      "pl": "Myśliwy",
+      "lang": "Huntsman"
+    },
+    {
+      "key": "achievement.119.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cursed!",
+      "pl": "Przeklęty!",
+      "lang": "Cursed!"
+    },
+    {
+      "key": "achievement.186.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fire Devil",
+      "pl": "Ognisty Diabeł",
+      "lang": "Fire Devil"
+    },
     {
       "key": "achievement.432.name",
       "category": "achievements",
@@ -3585,33 +3612,6 @@
       "en": "Text",
       "pl": "Tekst",
       "lang": "Text"
-    },
-    {
-      "key": "web.tpl.experience_table.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level",
-      "pl": "poziom",
-      "lang": "Level"
-    },
-    {
-      "key": "web.tpl.experience_table.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Experience",
-      "pl": "Doświadczenie",
-      "lang": "Experience"
-    },
-    {
-      "key": "web.tpl.guilds.create.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Leader:",
-      "pl": "Lider:",
-      "lang": "Leader:"
     }
   ],
   "length_ratio_issues": [

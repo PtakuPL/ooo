@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T21:28:43.381045Z",
+  "checked_at": "2026-02-19T22:07:17.318024Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -14,6 +14,15 @@
   "consistency_issues": [],
   "pl_reference_issues": [
     {
+      "key": "achievement.20.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huntsman",
+      "pl": "Myśliwy",
+      "lang": "Huntsman"
+    },
+    {
       "key": "achievement.67.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -21,6 +30,24 @@
       "en": "High-Flyer",
       "pl": "I.-Lotnik",
       "lang": "High-Flyer"
+    },
+    {
+      "key": "achievement.119.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cursed!",
+      "pl": "Przeklęty!",
+      "lang": "Cursed!"
+    },
+    {
+      "key": "achievement.186.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fire Devil",
+      "pl": "Ognisty Diabeł",
+      "lang": "Fire Devil"
     },
     {
       "key": "achievement.201.name",
@@ -3585,33 +3612,6 @@
       "en": "Oink",
       "pl": "Chrum",
       "lang": "Oink"
-    },
-    {
-      "key": "monster.panda.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
-    },
-    {
-      "key": "monster.panda.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrr",
-      "pl": "Wrrrr",
-      "lang": "Grrrr"
-    },
-    {
-      "key": "monster.bear.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrr",
-      "pl": "Wrrrr",
-      "lang": "Grrrr"
     }
   ],
   "length_ratio_issues": [

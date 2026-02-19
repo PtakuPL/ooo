@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T21:28:43.924316Z",
+  "checked_at": "2026-02-19T22:07:18.146842Z",
   "issues_total": 400,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -21,6 +21,24 @@
       "en": "Chorister",
       "pl": "Chórzysta",
       "lang": "Chorister"
+    },
+    {
+      "key": "achievement.8.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dread Lord",
+      "pl": "Straszny Panie",
+      "lang": "Dread Lord"
+    },
+    {
+      "key": "achievement.20.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huntsman",
+      "pl": "Myśliwy",
+      "lang": "Huntsman"
     },
     {
       "key": "achievement.28.name",
@@ -59,6 +77,15 @@
       "lang": "Teamplayer"
     },
     {
+      "key": "achievement.119.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cursed!",
+      "pl": "Przeklęty!",
+      "lang": "Cursed!"
+    },
+    {
       "key": "achievement.123.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -75,6 +102,15 @@
       "en": "Bad Timing",
       "pl": "Zły, niedobry Poczucie czasu, wyczucie chwili",
       "lang": "Bad Timing"
+    },
+    {
+      "key": "achievement.186.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fire Devil",
+      "pl": "Ognisty Diabeł",
+      "lang": "Fire Devil"
     },
     {
       "key": "achievement.199.name",
@@ -3576,42 +3612,6 @@
       "en": "*wheeze*",
       "pl": "*I.*",
       "lang": "*wheeze*"
-    },
-    {
-      "key": "monster.wolf.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
-    },
-    {
-      "key": "monster.starving_wolf.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gnoorrr",
-      "pl": "GNieorrr",
-      "lang": "Gnoorrr"
-    },
-    {
-      "key": "monster.horse.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*snort*",
-      "pl": "*sNiert*",
-      "lang": "*snort*"
-    },
-    {
-      "key": "monster.cave_rat.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Meep!",
-      "pl": "Mip!",
-      "lang": "Meep!"
     }
   ],
   "length_ratio_issues": [],

@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T21:29:30.163587Z",
+  "checked_at": "2026-02-19T22:08:10.205870Z",
   "issues_total": 477,
   "issues_by_type": {
     "consistency_in_language": 54,
@@ -853,6 +853,24 @@
   ],
   "pl_reference_issues": [
     {
+      "key": "achievement.20.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huntsman",
+      "pl": "Myśliwy",
+      "lang": "Huntsman"
+    },
+    {
+      "key": "achievement.119.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cursed!",
+      "pl": "Przeklęty!",
+      "lang": "Cursed!"
+    },
+    {
       "key": "achievement.123.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -860,6 +878,15 @@
       "en": "Berserker",
       "pl": "To go berserk",
       "lang": "Berserker"
+    },
+    {
+      "key": "achievement.186.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fire Devil",
+      "pl": "Ognisty Diabeł",
+      "lang": "Fire Devil"
     },
     {
       "key": "achievement.221.name",
@@ -4424,33 +4451,6 @@
       "en": "lavahole",
       "pl": "Dziura lawowa",
       "lang": "lavahole"
-    },
-    {
-      "key": "item.7890.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "vines",
-      "pl": "winorośle",
-      "lang": "vines"
-    },
-    {
-      "key": "item.7902.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "drawbar",
-      "pl": "ciągło",
-      "lang": "drawbar"
-    },
-    {
-      "key": "item.7905.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "drawbar",
-      "pl": "ciągło",
-      "lang": "drawbar"
     }
   ],
   "length_ratio_issues": [
@@ -4664,8 +4664,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 0,
-    "skipped": 80,
+    "applied": 3,
+    "skipped": 77,
     "errors": 0
   }
 }

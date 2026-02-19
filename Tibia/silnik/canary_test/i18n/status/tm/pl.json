@@ -116518,5 +116518,397 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T21:37:42.115269Z"
+  },
+  "achievement.2.description": {
+    "src_hash": "a5d30c2fa7f7351769ddb417c4ee83e1",
+    "text": "Lalalala... znasz już na pamięć hymn kultu śpiewany w Liberty Bay. To nic trudnego, biorąc pod uwagę, że składa się głównie z dwóch nut i powtarzalnego tekstu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:03:45.844643Z"
+  },
+  "achievement.11.name": {
+    "src_hash": "2eb3aaf43d2a13b06a997ef53a62237c",
+    "text": "Kość Brat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:03:45.859859Z"
+  },
+  "achievement.20.name": {
+    "src_hash": "f4f7985b69acaebc7c2973b30f734182",
+    "text": "Myśliwy",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:03:45.869680Z"
+  },
+  "achievement.119.name": {
+    "src_hash": "494eb599eba47573e7da6f67cdc62e3e",
+    "text": "Przeklęty!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:03:46.013330Z"
+  },
+  "achievement.125.name": {
+    "src_hash": "efe3d2b02b49c973f309da5a27f75f30",
+    "text": "Strzelec wyborowy",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:03:46.024371Z"
+  },
+  "achievement.164.name": {
+    "src_hash": "745e8600f5a851ce1e1cb53b1343329a",
+    "text": "Dziki Wojownik",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:03:46.072894Z"
+  },
+  "achievement.186.name": {
+    "src_hash": "1a15ce236e5ddcbd2d36969e7d467b64",
+    "text": "Ognisty Diabeł",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:03:46.116788Z"
+  },
+  "achievement.271.name": {
+    "src_hash": "e0623786548dad8a5760dcf4d06c18c1",
+    "text": "Tępiciel",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:03:46.298598Z"
+  },
+  "achievement.316.name": {
+    "src_hash": "3a6270ea8ec1341b2cb7d0c8f671e107",
+    "text": "Śmierć z dołu",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:03:46.369672Z"
+  },
+  "achievement.326.name": {
+    "src_hash": "41c9a4f0a182d00173d25b206c72d367",
+    "text": "Grabarz",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:03:46.385622Z"
+  },
+  "achievement.367.name": {
+    "src_hash": "766fa2e9a4d5ca2587ef6f40f7fb4e59",
+    "text": "Zaklinacz Węży",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:03:46.454483Z"
+  },
+  "achievement.401.name": {
+    "src_hash": "7d8b2b0db57597bd612d2cd6fa0fe4a5",
+    "text": "Bagno Bestia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:03:46.514594Z"
+  },
+  "achievement.416.name": {
+    "src_hash": "02d58e30f839f743e12509fd81cafca8",
+    "text": "Zakazany owoc",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:03:46.539229Z"
+  },
+  "achievement.482.name": {
+    "src_hash": "7579bc2a8bcfac8a8e597922a8cfbaf7",
+    "text": "Łapacz snów",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:03:46.649744Z"
+  },
+  "achievement.4.description": {
+    "src_hash": "0675c378fd6137029a5f61bd1eb3b5c4",
+    "text": "Zawsze byłeś buntownikiem – przyznaj się! Zaopatrywanie więźniów, opieka nad wyrzutkami, okradanie bogatych i dawanie biednym – nie, czekaj, to inna historia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.302935Z"
+  },
+  "achievement.5.name": {
+    "src_hash": "9dd2641df949d80dc881d2695c6b8e95",
+    "text": "Mistrz Kulinarny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.303308Z"
+  },
+  "achievement.5.description": {
+    "src_hash": "1188d91fa4e9bbced579775219f60653",
+    "text": "Proste szynki i chleb po prostu rozśmieszają. Jesteś mistrzem niezwykłego, topiącego ser, smażącego skrzydła nietoperza i shakera do koktajli. Pyszne!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.304494Z"
+  },
+  "achievement.6.name": {
+    "src_hash": "e359e40748d791696c890d719d4daa00",
+    "text": "Poszukiwacz skorup",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.304958Z"
+  },
+  "achievement.6.description": {
+    "src_hash": "3e14310d947d545e4a21da6397788c33",
+    "text": "Znalazłeś sto pięknych pereł w dużych muszlach morskich. Naszyjnik powinien być już gotowy – i miejmy nadzieję, że podczas tego procesu nie uciskałeś palców zbyt często.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.306170Z"
+  },
+  "achievement.7.description": {
+    "src_hash": "27603598d2983f39ab0090ebb0fd954d",
+    "text": "Jeśli ktoś zgubił przypadkową rzecz w przypadkowym miejscu, prawdopodobnie jesteś dobrą osobą, aby zapytać i poszukać jej, nawet jeśli nie wiesz co i gdzie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.307184Z"
+  },
+  "achievement.8.name": {
+    "src_hash": "ec56fcb08a9eef2332163d47b8b222c8",
+    "text": "Straszny Panie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.307527Z"
+  },
+  "achievement.8.description": {
+    "src_hash": "d7f9ca4429a65e439ad6d956d27ee0a1",
+    "text": "Nie interesują Cię zasady, które ustanawiają inni i kształtują świat według Twoich upodobań. Porzuciwszy bezsensowne konwencje i moralność, cenisz tylko władzę, którą dzierżysz. Jesteś panem swojego losu i walczysz o oczyszczenie świata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.308872Z"
+  },
+  "achievement.9.name": {
+    "src_hash": "189d4baff9dd822bda8f3c39e883c348",
+    "text": "Lord Protektor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.309259Z"
+  },
+  "achievement.9.description": {
+    "src_hash": "b46e03cea86a74a72a3b2c9430efcfb8",
+    "text": "Udowodniłeś, że jesteś – nie tylko w swoich snach – i posiadasz silny i duchowy umysł. Twoja waleczna walka z demonami i plagą nieumarłych zapewniła ci najwyższą i najbardziej szanowaną rangę wśród Rycerzy Koszmaru.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.311195Z"
+  },
+  "achievement.10.name": {
+    "src_hash": "3276843ca45bdc1579b70e19957b1777",
+    "text": "Koszmar Knight",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.312204Z"
+  },
+  "achievement.10.description": {
+    "src_hash": "c5f4538a8ee340724486d2cfb36400aa",
+    "text": "Podążasz ścieżką marzeń i odpowiedzialności bez egocentrycznej mocy. Wolny od chciwości i egoizmu pomagasz innym, nie oczekując nagrody.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.313155Z"
+  },
+  "achievement.11.description": {
+    "src_hash": "b70bed37bcfecf42d7772965eed5f178",
+    "text": "Dołączyłeś do nieumarłych braci kości – czyniąc śmierć swoim wrogiem, a także swoją bronią. Twoim głównym celem jest pożeranie tego, co słabe i pozostawienie miejsca dla tego, co mocne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.314327Z"
+  },
+  "achievement.12.description": {
+    "src_hash": "25c4e54b14bf563713193caf9577b2a6",
+    "text": "Podróżowałeś po świecie, prosząc o niemal bezsensowną modlitwę – ale przynajmniej nie musisz tego robić ponownie i możesz w mgnieniu oka otrzymać nowy błogosławiony kołek.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.315362Z"
+  },
+  "achievement.13.description": {
+    "src_hash": "cb44699ab33f889bb9bc0b39654471d2",
+    "text": "Jesteś utalentowanym kupcem, który potrafi ostrożnie obchodzić się z towarami, znajduje dobre oferty i od czasu do czasu wykopuje rzadkie przedmioty. Nigdy nie spóźniaj się z realizacją zamówienia, jesteś niezawodnym traderem – przynajmniej w oczach Rashid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.316899Z"
+  },
+  "achievement.14.name": {
+    "src_hash": "34394481b66e734afe39929b6493fec7",
+    "text": "Fontanna Życia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.317880Z"
+  },
+  "achievement.14.description": {
+    "src_hash": "e56cc87a57478633b370f6c399a17586",
+    "text": "Znalazłeś i wypiłeś łyk z Fontanny Życia. Myślałam, że nie daje ci to życia wiecznego, czujesz się odmieniony i w jakiś sposób spokojny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.319073Z"
+  },
+  "achievement.15.description": {
+    "src_hash": "04eba6738e582460f351b4da0541bf2b",
+    "text": "Podróżowałeś po surrealistycznej krainie sfer żywiołów, przyzywałeś i zabijałeś Władcę Żywiołów, a wszystko po to, aby odzyskać neutralną materię. I choć byłeś odważny, nie dałbyś rady bez swojego zespołu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.320276Z"
+  },
+  "achievement.16.description": {
+    "src_hash": "f7c0845acc0957699b11544a8f9b39dc",
+    "text": "Odtworzyłaś Poskromienie złośnicy na plaży i udowodniłaś, że całkiem nieźle radzisz sobie z kapryśnymi dziewczynami. Z rybimi ogonami lub bez.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.321165Z"
+  },
+  "achievement.17.description": {
+    "src_hash": "2837f13089c53fdc13a5e5f24da7dec6",
+    "text": "Kiedy coś robisz, robisz to dobrze. Masz swoje zdanie i podtrzymujesz je - i nikt Cię nie przekona, że ​​jest inaczej. Na marginesie, jesteś trochę brutalny i nastawiony na wojnę, ale to nie jest złe, prawda?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:04.322826Z"
+  },
+  "achievement.18.description": {
+    "src_hash": "391c3a169ccf83f20a1a0ef334ee550f",
+    "text": "Jesteś żołnierzem sił pokojowych i słuchaj, co mają do powiedzenia mali ludzie. Podjąłeś decyzję i wiesz, komu i z jakich powodów pomóc – i robisz to konsekwentnie. Wasza wojna toczy się rozumem, a nie bronią.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.332798Z"
+  },
+  "achievement.19.name": {
+    "src_hash": "e696ef14a14b97d9a6a3e5901a10000a",
+    "text": "Elita Hunter",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.333961Z"
+  },
+  "achievement.19.description": {
+    "src_hash": "be793613eb297e7440c0b053c23aac59",
+    "text": "Wykorzystujesz każdą okazję, aby podjąć oferowane ci wyzwanie łowieckie i wykonywać te zadania z zabójczą precyzją. W głębi serca jesteś myśliwym i cennym członkiem stowarzyszenia Paw & Fur Society.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.335577Z"
+  },
+  "achievement.20.description": {
+    "src_hash": "f582cb3a61b3736efb6f7309257b49da",
+    "text": "Zadania myśliwskie znasz i wykonałeś już ich sporo. Przed nami świetlana kariera myśliwego w stowarzyszeniu Paw & Fur!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.337344Z"
+  },
+  "achievement.21.description": {
+    "src_hash": "6a89f9d165b3afd26104a748cb1f9d89",
+    "text": "Dla Ciebie pocałunek to coś więcej niż zwykły dotyk ust. Całujesz dziewice i martwe istoty z niezrównanym uczuciem, a poprzez pocałunek królowej banshee stawiasz czoła śmierci i odrodzeniu. Szczęśliwi są ci, którzy mogą dzielić z Tobą tak intymne chwile!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.339271Z"
+  },
+  "achievement.22.name": {
+    "src_hash": "3f5bcdc44ba2ec5cfa72f8ea81c243e2",
+    "text": "Najlepszy agent AVIN",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.339946Z"
+  },
+  "achievement.22.description": {
+    "src_hash": "3da7b3ab8d934c0a182f9dd3c59ac7e9",
+    "text": "Udowodniłeś, że jesteś godnym członkiem 'family' i pomyślnie przeprowadziłeś liczne misje szpiegowskie dla swojego 'uncle', aby wspierać handlarzy z Venore i ich cele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.342022Z"
+  },
+  "achievement.23.description": {
+    "src_hash": "615e0d5b3eab0e23b899ac4f2e80479f",
+    "text": "Moc dziewczyny! Niezależnie od tego, czy jesteś kobietą, czy nie, udowodniłaś absolutną lojalność i chęć poświęcenia życia dla brygady dziewcząt Carlin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.343754Z"
+  },
+  "achievement.24.description": {
+    "src_hash": "c4c6049e01f2e11201af76f4d22b100f",
+    "text": "Konspiracje i otwarte tajemnice to Twój chleb powszedni. Okazałeś lojalność wobec korony Thais poprzez swoją odwagę w starciach z wrogami i wypełnianiu misji szpiegowskich. Jesteś doskonałym agentem terenowym TBI.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.345290Z"
+  },
+  "achievement.25.name": {
+    "src_hash": "c3e86b95ca6e31cdce53c9bc624b3494",
+    "text": "Wywiadowca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.345668Z"
+  },
+  "achievement.25.description": {
+    "src_hash": "229cac5c53e6ffac9741c2338d2601eb",
+    "text": "Spakuj swój sprzęt szpiegowski i przygotuj się na niebezpieczne misje w służbie tajnej agencji. Pokazałeś, że chcesz – ale czy naprawdę możesz to zrobić? Czas pokaże.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.346690Z"
+  },
+  "achievement.26.name": {
+    "src_hash": "ca312a49e0307ca52e28bb7fe4582c07",
+    "text": "Golem w Gearsach",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.347068Z"
+  },
+  "achievement.26.description": {
+    "src_hash": "511d1056a4ef03124d0f9754539c1e67",
+    "text": "Jesteś początkującym mago-mechanikiem. W twoich oczach nauka i magia dobrze ze sobą współdziałają – i choć prawdopodobnie podczas pracy dla Telasa dostarczyłeś niezliczoną ilość błędnych ładunków, być może posiadasz wystarczającą wiedzę, aby teraz zbudować własnego golema.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.348967Z"
+  },
+  "achievement.27.description": {
+    "src_hash": "9ccfcd08e1aef594cfe17cd28e9b82d2",
+    "text": "Wiersze, wiersze, piosenki i rymowanki, które recytowałeś wielokrotnie. Minąłeś tajemnicze drzwi, gawędziarz starożytnej wiedzy. Nawet na elfach zrobiłeś wrażenie, więc wygląda na to, że jesteś naprawdę błogosławiony.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.351449Z"
+  },
+  "achievement.28.description": {
+    "src_hash": "f8d5cf3d3147edad7bbf26efbbd59186",
+    "text": "Poradzisz sobie z każdym instrumentem muzycznym, jaki ci dasz – i faktycznie zdołasz wydobyć z niego przyjemny dźwięk. W większości tawern jesteś mile widzianym gościem i artystą.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:04:22.353164Z"
   }
 }

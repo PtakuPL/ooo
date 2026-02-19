@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T21:30:27.875216Z",
+  "checked_at": "2026-02-19T22:09:16.696644Z",
   "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -21,6 +21,33 @@
       "en": "Vive la Resistance",
       "pl": "Vive la Opór",
       "lang": "Vive la Resistance"
+    },
+    {
+      "key": "achievement.9.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lord Protector",
+      "pl": "Lord Protektor",
+      "lang": "Lord Protector"
+    },
+    {
+      "key": "achievement.11.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bone Brother",
+      "pl": "Kość Brat",
+      "lang": "Bone Brother"
+    },
+    {
+      "key": "achievement.20.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huntsman",
+      "pl": "Myśliwy",
+      "lang": "Huntsman"
     },
     {
       "key": "achievement.28.name",
@@ -41,6 +68,15 @@
       "lang": "Oops"
     },
     {
+      "key": "achievement.119.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cursed!",
+      "pl": "Przeklęty!",
+      "lang": "Cursed!"
+    },
+    {
       "key": "achievement.123.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -50,6 +86,24 @@
       "lang": "Berserker"
     },
     {
+      "key": "achievement.125.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sharpshooter",
+      "pl": "Strzelec wyborowy",
+      "lang": "Sharpshooter"
+    },
+    {
+      "key": "achievement.164.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Wild Warrior",
+      "pl": "Dziki Wojownik",
+      "lang": "Wild Warrior"
+    },
+    {
       "key": "achievement.177.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -57,6 +111,15 @@
       "en": "Baby Sitter",
       "pl": "Niemowlę Sitter",
       "lang": "Baby Sitter"
+    },
+    {
+      "key": "achievement.186.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fire Devil",
+      "pl": "Ognisty Diabeł",
+      "lang": "Fire Devil"
     },
     {
       "key": "achievement.201.name",
@@ -75,6 +138,15 @@
       "en": "Hive Infiltrator",
       "pl": "Ul Infiltrator",
       "lang": "Hive Infiltrator"
+    },
+    {
+      "key": "achievement.271.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Exterminator",
+      "pl": "Tępiciel",
+      "lang": "Exterminator"
     },
     {
       "key": "achievement.286.name",
@@ -122,6 +194,15 @@
       "lang": "Task Manager"
     },
     {
+      "key": "achievement.326.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gravedigger",
+      "pl": "Grabarz",
+      "lang": "Gravedigger"
+    },
+    {
       "key": "achievement.359.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -129,6 +210,15 @@
       "en": "Rathleton Squire",
       "pl": "Rathleton Dziedzic, pan",
       "lang": "Rathleton Squire"
+    },
+    {
+      "key": "achievement.367.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Snake Charmer",
+      "pl": "Zaklinacz Węży",
+      "lang": "Snake Charmer"
     },
     {
       "key": "achievement.402.name",
@@ -255,6 +345,15 @@
       "en": "Tied the Knot",
       "pl": "Tied the KNiet",
       "lang": "Tied the Knot"
+    },
+    {
+      "key": "achievement.482.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dream Catcher",
+      "pl": "Łapacz snów",
+      "lang": "Dream Catcher"
     },
     {
       "key": "achievement.486.name",
@@ -3513,105 +3612,6 @@
       "en": "GRRR",
       "pl": "Wrr",
       "lang": "GRRR"
-    },
-    {
-      "key": "monster.the_welter.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "FCHHHHH",
-      "pl": "Fchhhh",
-      "lang": "FCHHHHH"
-    },
-    {
-      "key": "monster.furyosa.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Die!",
-      "pl": "UMIERAĆ!",
-      "lang": "Die!"
-    },
-    {
-      "key": "monster.fernfang.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
-    },
-    {
-      "key": "monster.black_sheep.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Maeh",
-      "pl": "Mae",
-      "lang": "Maeh"
-    },
-    {
-      "key": "monster.evil_sheep.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrr",
-      "pl": "Wrrrr",
-      "lang": "Grrrr"
-    },
-    {
-      "key": "monster.evil_sheep_lord.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Maeh!",
-      "pl": "Mae!",
-      "lang": "Maeh!"
-    },
-    {
-      "key": "monster.desperate_white_deer.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*bell*",
-      "pl": "*dzwonek, dzwon*",
-      "lang": "*bell*"
-    },
-    {
-      "key": "monster.desperate_white_deer.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*sniff*",
-      "pl": "*I.*",
-      "lang": "*sniff*"
-    },
-    {
-      "key": "monster.desperate_white_deer.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*wheeze*",
-      "pl": "*I.*",
-      "lang": "*wheeze*"
-    },
-    {
-      "key": "monster.wolf.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
-    },
-    {
-      "key": "monster.starving_wolf.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gnoorrr",
-      "pl": "GNieorrr",
-      "lang": "Gnoorrr"
     }
   ],
   "length_ratio_issues": [

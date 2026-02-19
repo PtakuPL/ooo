@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T21:29:08.782024Z",
+  "checked_at": "2026-02-19T22:07:44.554123Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -23,6 +23,69 @@
       "lang": "Vive la Resistance"
     },
     {
+      "key": "achievement.9.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lord Protector",
+      "pl": "Lord Protektor",
+      "lang": "Lord Protector"
+    },
+    {
+      "key": "achievement.20.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huntsman",
+      "pl": "Myśliwy",
+      "lang": "Huntsman"
+    },
+    {
+      "key": "achievement.119.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cursed!",
+      "pl": "Przeklęty!",
+      "lang": "Cursed!"
+    },
+    {
+      "key": "achievement.125.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sharpshooter",
+      "pl": "Strzelec wyborowy",
+      "lang": "Sharpshooter"
+    },
+    {
+      "key": "achievement.164.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Wild Warrior",
+      "pl": "Dziki Wojownik",
+      "lang": "Wild Warrior"
+    },
+    {
+      "key": "achievement.186.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fire Devil",
+      "pl": "Ognisty Diabeł",
+      "lang": "Fire Devil"
+    },
+    {
+      "key": "achievement.271.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Exterminator",
+      "pl": "Tępiciel",
+      "lang": "Exterminator"
+    },
+    {
       "key": "achievement.295.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -39,6 +102,15 @@
       "en": "Gnomelike",
       "pl": "GNiemelike",
       "lang": "Gnomelike"
+    },
+    {
+      "key": "achievement.316.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Death from Below",
+      "pl": "Śmierć z dołu",
+      "lang": "Death from Below"
     },
     {
       "key": "achievement.317.name",
@@ -75,6 +147,15 @@
       "en": "Task Manager",
       "pl": "Zadanie, zajęcie Dyrektor, kierownik",
       "lang": "Task Manager"
+    },
+    {
+      "key": "achievement.326.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gravedigger",
+      "pl": "Grabarz",
+      "lang": "Gravedigger"
     },
     {
       "key": "achievement.327.name",
@@ -212,6 +293,15 @@
       "lang": "Publicity"
     },
     {
+      "key": "achievement.367.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Snake Charmer",
+      "pl": "Zaklinacz Węży",
+      "lang": "Snake Charmer"
+    },
+    {
       "key": "achievement.371.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -338,6 +428,15 @@
       "lang": "Lucky Horseshoe"
     },
     {
+      "key": "achievement.401.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Swamp Beast",
+      "pl": "Bagno Bestia",
+      "lang": "Swamp Beast"
+    },
+    {
       "key": "achievement.402.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -390,6 +489,15 @@
       "en": "Rhino Rider",
       "pl": "RhiNie Jeździec",
       "lang": "Rhino Rider"
+    },
+    {
+      "key": "achievement.416.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Forbidden Fruit",
+      "pl": "Zakazany owoc",
+      "lang": "Forbidden Fruit"
     },
     {
       "key": "achievement.417.name",
@@ -579,6 +687,15 @@
       "en": "Tied the Knot",
       "pl": "Tied the KNiet",
       "lang": "Tied the Knot"
+    },
+    {
+      "key": "achievement.482.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Dream Catcher",
+      "pl": "Łapacz snów",
+      "lang": "Dream Catcher"
     },
     {
       "key": "achievement.486.name",
@@ -3495,123 +3612,6 @@
       "en": "Backtrace:",
       "pl": "Ślad wsteczny:",
       "lang": "Backtrace:"
-    },
-    {
-      "key": "web.tpl.account.characters.delete.span_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Password:",
-      "pl": "Hasło:",
-      "lang": "Password:"
-    },
-    {
-      "key": "web.tpl.team.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Group",
-      "pl": "Grupa",
-      "lang": "Group"
-    },
-    {
-      "key": "web.tpl.team.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Outfit",
-      "pl": "Strój",
-      "lang": "Outfit"
-    },
-    {
-      "key": "web.tpl.team.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Name",
-      "pl": "Nazwa",
-      "lang": "Name"
-    },
-    {
-      "key": "web.tpl.team.b_5",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "World",
-      "pl": "Świat",
-      "lang": "World"
-    },
-    {
-      "key": "web.tpl.team.b_6",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Last login",
-      "pl": "Ostatnie logowanie",
-      "lang": "Last login"
-    },
-    {
-      "key": "web.tpl.team.b_7",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Online",
-      "pl": "W Internecie",
-      "lang": "Online"
-    },
-    {
-      "key": "web.tpl.team.b_8",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Offline",
-      "pl": "Trening",
-      "lang": "Offline"
-    },
-    {
-      "key": "web.tpl.team.b_9",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Outfit",
-      "pl": "Strój",
-      "lang": "Outfit"
-    },
-    {
-      "key": "web.tpl.team.b_10",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Name",
-      "pl": "Nazwa",
-      "lang": "Name"
-    },
-    {
-      "key": "web.tpl.team.b_12",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "World",
-      "pl": "Świat",
-      "lang": "World"
-    },
-    {
-      "key": "web.tpl.team.b_13",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Last login",
-      "pl": "Ostatnie logowanie",
-      "lang": "Last login"
-    },
-    {
-      "key": "web.tpl.team.b_14",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Online",
-      "pl": "W Internecie",
-      "lang": "Online"
     }
   ],
   "length_ratio_issues": [

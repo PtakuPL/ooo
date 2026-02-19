@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T21:30:38.505088Z",
+  "checked_at": "2026-02-19T22:09:31.630339Z",
   "issues_total": 401,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -21,6 +21,15 @@
       "en": "Chorister",
       "pl": "Chórzysta",
       "lang": "Chorister"
+    },
+    {
+      "key": "achievement.20.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huntsman",
+      "pl": "Myśliwy",
+      "lang": "Huntsman"
     },
     {
       "key": "achievement.28.name",
@@ -68,6 +77,15 @@
       "lang": "Oops"
     },
     {
+      "key": "achievement.119.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cursed!",
+      "pl": "Przeklęty!",
+      "lang": "Cursed!"
+    },
+    {
       "key": "achievement.157.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -75,6 +93,15 @@
       "en": "Aristocrat",
       "pl": "Arystokrata",
       "lang": "Aristocrat"
+    },
+    {
+      "key": "achievement.186.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fire Devil",
+      "pl": "Ognisty Diabeł",
+      "lang": "Fire Devil"
     },
     {
       "key": "achievement.199.name",
@@ -3585,33 +3612,6 @@
       "en": "Signature",
       "pl": "Podpis",
       "lang": "Signature"
-    },
-    {
-      "key": "web.tpl.characters.td_21",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Website:",
-      "pl": "Strona internetowa:",
-      "lang": "Website:"
-    },
-    {
-      "key": "web.tpl.characters.td_25",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Position:",
-      "pl": "Pozycja:",
-      "lang": "Position:"
-    },
-    {
-      "key": "web.tpl.characters.b_26",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Characters",
-      "pl": "Pismo",
-      "lang": "Characters"
     }
   ],
   "length_ratio_issues": [

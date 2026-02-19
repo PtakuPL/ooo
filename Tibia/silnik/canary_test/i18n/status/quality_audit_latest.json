@@ -1,23 +1,248 @@
 {
-  "timestamp": "2026-02-19T21:41:30.168320Z",
+  "timestamp": "2026-02-19T22:07:15.619269Z",
   "checked_entries": 100,
-  "issues_found": 17,
+  "issues_found": 49,
   "issues_by_type": {
-    "identical_to_en_exempt": 6,
-    "identical_to_en": 1,
+    "identical_to_en": 33,
+    "identical_to_en_exempt": 1,
     "artifact_token": 16,
-    "suspicious_log_high": 128,
+    "suspicious_log_high": 82,
+    "suspicious_log_low": 46,
     "suspicious_log_critical": 72,
-    "suspicious_rejected_critical": 153,
-    "suspicious_rejected_high": 47
+    "suspicious_rejected_critical": 146,
+    "suspicious_rejected_high": 54
   },
   "issues": [
     {
-      "key": "achievement.170.name",
+      "key": "monster.white_pale.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.the_welter.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.the_welter.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.water_buffalo.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
+    },
+    {
+      "key": "monster.feverish_citizen.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "monster.serpent_spawn.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn"
+    },
+    {
+      "key": "monster.mad_mage.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Mad Mage",
+      "translated": "Mad Mage"
+    },
+    {
+      "key": "monster.zevelon_duskbringer.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
+    },
+    {
+      "key": "monster.zevelon_duskbringer.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
+    },
+    {
+      "key": "monster.weakened_shlorg.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
+    },
+    {
+      "key": "monster.weakened_shlorg.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
+    },
+    {
+      "key": "monster.diblis_the_fair.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Diblis The Fair",
+      "translated": "Diblis The Fair"
+    },
+    {
+      "key": "monster.old_wolf.voice_1",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Yoooohhuuuu!",
+      "translated": "Yoooohhuuuu!"
+    },
+    {
+      "key": "monster.morgaroth.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.ferumbras.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.ferumbras.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.furyosa.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "monster.furyosa.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "monster.fernfang.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Fernfang",
+      "translated": "Fernfang"
+    },
+    {
+      "key": "monster.fernfang.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Fernfang",
+      "translated": "Fernfang"
+    },
+    {
+      "key": "monster.badger.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Badger",
+      "translated": "Badger"
+    },
+    {
+      "key": "monster.yeti.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Yeti",
+      "translated": "Yeti"
+    },
+    {
+      "key": "monster.warlock.name",
       "lang": "ro",
       "type": "identical_to_en",
       "en": "Warlock",
       "translated": "Warlock"
+    },
+    {
+      "key": "monster.nomad.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "monster.nomad_blue.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "monster.nomad_female.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "monster.cobra.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Cobra",
+      "translated": "Cobra"
+    },
+    {
+      "key": "monster.scarab.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Scarab",
+      "translated": "Scarab"
+    },
+    {
+      "key": "monster.terramite.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Terramite",
+      "translated": "Terramite"
+    },
+    {
+      "key": "monster.gargoyle.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Gargoyle",
+      "translated": "Gargoyle"
+    },
+    {
+      "key": "monster.zushuka.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Zushuka",
+      "translated": "Zushuka"
+    },
+    {
+      "key": "monster.munster.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Munster",
+      "translated": "Munster"
+    },
+    {
+      "key": "monster.munster.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Munster",
+      "translated": "Munster"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

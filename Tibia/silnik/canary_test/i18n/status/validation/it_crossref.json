@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 51.6,
+  "coverage_pct": 51.9,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T21:29:52.453710Z",
+  "checked_at": "2026-02-19T22:08:37.306176Z",
   "issues_total": 429,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -346,6 +346,15 @@
       "lang": "Ghoul"
     },
     {
+      "key": "monster.cyclops_drone.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cyclops Drone",
+      "pl": "Cyclops Dron",
+      "lang": "Cyclops Drone"
+    },
+    {
       "key": "monster.behemoth.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -587,6 +596,15 @@
       "en": "Grrrrunt",
       "pl": "Wrrrr",
       "lang": "Grrrrunt"
+    },
+    {
+      "key": "monster.knowledge_raider.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knowledge Raider",
+      "pl": "KNiewledge Raider",
+      "lang": "Knowledge Raider"
     },
     {
       "key": "monster.mean_maw.voice_2",
@@ -985,6 +1003,15 @@
       "lang": "Rrrah!"
     },
     {
+      "key": "monster.quara_predator_scout.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a quara predator scout",
+      "pl": "zwiadowca drapieżników quara",
+      "lang": "a quara predator scout"
+    },
+    {
       "key": "monster.quara_predator_scout.voice_3",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1001,6 +1028,24 @@
       "en": "BOQOL\"°",
       "pl": "BOQOL”°",
       "lang": "BOQOL\"°"
+    },
+    {
+      "key": "monster.renegade_quara_constrictor.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a renegade quara constrictor",
+      "pl": "renegat quara constrictor",
+      "lang": "a renegade quara constrictor"
+    },
+    {
+      "key": "monster.quara_constrictor_scout.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Quara Constrictor Scout",
+      "pl": "Zwiadowca Quara Constrictor",
+      "lang": "Quara Constrictor Scout"
     },
     {
       "key": "monster.quara_constrictor_scout.voice_4",
@@ -1021,6 +1066,15 @@
       "lang": "Blib!"
     },
     {
+      "key": "monster.quara_hydromancer_scout.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a quara hydromancer scout",
+      "pl": "zwiadowca Quara Hydromancer",
+      "lang": "a quara hydromancer scout"
+    },
+    {
       "key": "monster.quara_raider.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -1028,6 +1082,33 @@
       "en": "<blubber>",
       "pl": "<beczeć>",
       "lang": "<blubber>"
+    },
+    {
+      "key": "monster.renegade_quara_mantassin.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Renegade Quara Mantassin",
+      "pl": "Renegat Quara Mantassin",
+      "lang": "Renegade Quara Mantassin"
+    },
+    {
+      "key": "monster.renegade_quara_mantassin.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a renegade quara mantassin",
+      "pl": "renegata quara mantassina",
+      "lang": "a renegade quara mantassin"
+    },
+    {
+      "key": "monster.renegade_quara_pincher.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a renegade quara pincher",
+      "pl": "renegata Quara Pincher",
+      "lang": "a renegade quara pincher"
     },
     {
       "key": "monster.nomad.name",
@@ -3656,87 +3737,6 @@
       "en": "Purrrrrrr",
       "pl": "Mrrrrrrr",
       "lang": "Purrrrrrr"
-    },
-    {
-      "key": "scripts.music_box.sound_wailing_widow",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sssssssss",
-      "pl": "Sssssss",
-      "lang": "Sssssssss"
-    },
-    {
-      "key": "scripts.northern_fishburger.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Smack.",
-      "pl": "Zadatki.",
-      "lang": "Smack."
-    },
-    {
-      "key": "scripts.offline_training.and",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "and",
-      "pl": "i",
-      "lang": "and"
-    },
-    {
-      "key": "scripts.offline_training.hours_plural",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "%s hours",
-      "pl": "%s godziny",
-      "lang": "%s hours"
-    },
-    {
-      "key": "scripts.offline_training.hours_singular",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1 hour",
-      "pl": "1 godzina",
-      "lang": "1 hour"
-    },
-    {
-      "key": "scripts.offline_training.minutes_plural",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "%s minutes",
-      "pl": "%s minuty",
-      "lang": "%s minutes"
-    },
-    {
-      "key": "scripts.offline_training.minutes_singular",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "1 minute",
-      "pl": "1 minuta",
-      "lang": "1 minute"
-    },
-    {
-      "key": "scripts.oramond_entrance.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Slrrp!",
-      "pl": "Srrrr!",
-      "lang": "Slrrp!"
-    },
-    {
-      "key": "scripts.oramond_entrance.say_2",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Slrrp!",
-      "pl": "Srrrr!",
-      "lang": "Slrrp!"
     }
   ],
   "length_ratio_issues": [
@@ -3932,8 +3932,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 0,
-    "skipped": 80,
+    "applied": 2,
+    "skipped": 78,
     "errors": 0
   }
 }

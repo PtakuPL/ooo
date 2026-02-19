@@ -103,15 +103,19 @@ GLOBAL_QUALITY_LANG_VALIDATION_INTERVAL="${GLOBAL_QUALITY_LANG_VALIDATION_INTERV
 GLOBAL_QUALITY_AUDIT_EVERY_CYCLES="${GLOBAL_QUALITY_AUDIT_EVERY_CYCLES:-5}"
 GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT="${GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT:-80}"
 
-
 # Nowe opcje (Agent 2)
 NO_GIT=false                # Flaga --no-git: wyłącza git add/commit/push
 TRANSLATE_LIMIT=0           # --translate-limit N: max kluczy do przetłumaczenia na cykl (0=brak limitu)
 TRANSLATIONS_ONLY=false     # --translations-only: tylko tłumaczenia, bez migracji kodu
 TRANSLATIONS_STRICT=false   # Tryb strict: zero nowych kluczy, tylko istniejące wpisy do tłumaczenia
 USE_GOOGLE_TRANSLATE=false  # --use-gt: używaj Google Translate jako fallback po słownikach
+USE_GOOGLE_CLOUD_TRANSLATE=false  # --use-cloud-gt: Google Cloud Translation API (płatne, lepsza jakość)
+GOOGLE_CLOUD_PROJECT="${GOOGLE_CLOUD_PROJECT:-}"  # GCP project ID
+GOOGLE_CLOUD_GLOSSARY="${GOOGLE_CLOUD_GLOSSARY:-}"  # opcjonalny glossary ID
 GT_BATCH_SIZE=50            # ile kluczy tłumaczyć w jednym batchu GT
+GT_CLOUD_BATCH_SIZE=128     # batch size dla Cloud API (większy bo szybsze)
 GT_DELAY=1.5                # sekundy przerwy między batchami GT (anty rate-limit)
+GT_CLOUD_DELAY=0.3          # delay dla Cloud API (mniejszy — oficjalne API)
 GT_BATCH_TIMEOUT=18         # timeout (s) na pojedynczy request translate_batch
 GT_SINGLE_TIMEOUT=7         # timeout (s) na pojedynczy request translate
 FORCED_AUTO_FAST_LANE_MAX_LIMIT="${FORCED_AUTO_FAST_LANE_MAX_LIMIT:-30}"  # AUTO N<=X używa operator fast-lane
@@ -218,6 +222,9 @@ apply_global_quality_mode() {
     QUALITY_AUDIT_EVERY_CYCLES="$audit_every"
 
     USE_GOOGLE_TRANSLATE=true
+    if [ -n "${GOOGLE_CLOUD_PROJECT:-}" ] && [ -n "${GOOGLE_APPLICATION_CREDENTIALS:-}" ]; then
+        USE_GOOGLE_CLOUD_TRANSLATE=true
+    fi
     CROSSREF_AUTO_FIX=true
     if [ "${CROSSREF_AUTO_FIX_LIMIT:-0}" -lt "$crossref_limit" ] 2>/dev/null; then
         CROSSREF_AUTO_FIX_LIMIT="$crossref_limit"
@@ -238,6 +245,9 @@ apply_global_quality_mode() {
     export LANG_VALIDATION_INTERVAL
     export QUALITY_AUDIT_EVERY_CYCLES
     export USE_GOOGLE_TRANSLATE
+    export USE_GOOGLE_CLOUD_TRANSLATE
+    export GOOGLE_CLOUD_PROJECT
+    export GOOGLE_CLOUD_GLOSSARY
     export CROSSREF_AUTO_FIX
     export CROSSREF_AUTO_FIX_LIMIT
 }
@@ -2141,6 +2151,65 @@ recent_translation_md = "\n".join(
     [f"- {str(it.get('en', ''))[:80]} → {str(it.get('translated', ''))[:80]} ({it.get('key', '-')})" for it in recent_translations[-20:]]
 ) if recent_translations else "- Brak nowych tłumaczeń w ostatnim cyklu"
 
+recent_hidden_latest = 0
+recent_hidden_threshold = 5
+recent_hidden_alert_latest = False
+recent_hidden_trend_alert = False
+recent_hidden_trend_md = "brak danych"
+try:
+    if isinstance(recent_translation_entry, dict):
+        recent_hidden_latest = int(recent_translation_entry.get("recent_hidden_high_critical", 0) or 0)
+        recent_hidden_threshold = int(recent_translation_entry.get("recent_hidden_alert_threshold", 5) or 5)
+        recent_hidden_alert_latest = bool(recent_translation_entry.get("recent_hidden_alert", False))
+except Exception:
+    recent_hidden_latest = 0
+    recent_hidden_threshold = 5
+    recent_hidden_alert_latest = False
+
+recent_hidden_series = []
+try:
+    report_path = os.path.join(status_translation_dir, "translation_recent_report.jsonl")
+    if os.path.exists(report_path):
+        with open(report_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    obj = json.loads(line)
+                except Exception:
+                    continue
+                if "recent_hidden_high_critical" not in obj:
+                    continue
+                recent_hidden_series.append(int(obj.get("recent_hidden_high_critical", 0) or 0))
+    recent_hidden_series = recent_hidden_series[-40:]
+except Exception:
+    recent_hidden_series = []
+
+try:
+    if recent_hidden_series:
+        last_slice = recent_hidden_series[-10:]
+        avg_last = sum(last_slice) / max(1, len(last_slice))
+        prev_pool = recent_hidden_series[:-10]
+        prev_slice = prev_pool[-10:] if prev_pool else []
+        if prev_slice:
+            avg_prev = sum(prev_slice) / max(1, len(prev_slice))
+            delta = avg_last - avg_prev
+            trend = "↑" if delta > 0.1 else ("↓" if delta < -0.1 else "→")
+            recent_hidden_trend_md = f"{trend} last10={avg_last:.2f}, prev10={avg_prev:.2f}, latest={recent_hidden_latest}"
+            if avg_last >= recent_hidden_threshold and avg_last >= (avg_prev * 1.25):
+                recent_hidden_trend_alert = True
+        else:
+            recent_hidden_trend_md = f"latest={recent_hidden_latest}"
+except Exception:
+    recent_hidden_trend_md = "brak danych"
+
+recent_hidden_alarm = bool(recent_hidden_alert_latest or recent_hidden_trend_alert)
+recent_hidden_quality_md = (
+    f"{'🚨 ALERT' if recent_hidden_alarm else '✅ OK'} | hidden={recent_hidden_latest}, "
+    f"threshold={recent_hidden_threshold}, trend={recent_hidden_trend_md}"
+)
+
 perf_latest = {}
 perf_summary_md = "-"
 try:
@@ -2432,6 +2501,79 @@ strict_top_targets_md = ", ".join(
     ]
 ) if strict_top_guard_fail_targets else "-"
 
+pack_regression_payload = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "window_start_utc": strict_window_payload.get("window_start_utc"),
+    "window_end_utc": strict_window_payload.get("window_end_utc"),
+    "by_lang": {},
+    "failed": False,
+}
+
+try:
+    critical_by_lang = {"pl": 0, "es": 0}
+    rejected_path = os.path.join(status_translation_dir, "suspicious_rejected.jsonl")
+    if os.path.exists(rejected_path):
+        with open(rejected_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    row = json.loads(line)
+                except Exception:
+                    continue
+                lang = str(row.get("lang", "")).lower()
+                if lang not in critical_by_lang:
+                    continue
+                if str(row.get("severity", "")).upper() != "CRITICAL":
+                    continue
+                row_dt = _parse_iso_any(row.get("timestamp"))
+                if strict_cutoff and row_dt and row_dt < strict_cutoff:
+                    continue
+                if strict_now and row_dt and row_dt > strict_now:
+                    continue
+                critical_by_lang[lang] += 1
+
+    review_dir = os.path.join(I18N_DIR, "overrides", "review_queue")
+    for lang in ("pl", "es"):
+        pack_path = os.path.join(review_dir, f"critical_bad_keys_pack_{lang}_latest.json")
+        pack_count = 0
+        try:
+            if os.path.exists(pack_path):
+                with open(pack_path, "r", encoding="utf-8") as f:
+                    pack_payload = json.load(f)
+                entries = pack_payload.get("entries", []) if isinstance(pack_payload, dict) else []
+                pack_count = len(entries) if isinstance(entries, list) else 0
+        except Exception:
+            pack_count = 0
+        critical_count = int(critical_by_lang.get(lang, 0) or 0)
+        ok = (critical_count == 0) or (pack_count > 0)
+        if not ok:
+            pack_regression_payload["failed"] = True
+        pack_regression_payload["by_lang"][lang] = {
+            "critical_in_window": critical_count,
+            "pack_entries": pack_count,
+            "ok": ok,
+        }
+
+    reg_latest = os.path.join(status_translation_dir, "critical_bad_keys_pack_regression_latest.json")
+    reg_report = os.path.join(status_translation_dir, "critical_bad_keys_pack_regression_report.jsonl")
+    with open(reg_latest, "w", encoding="utf-8") as f:
+        json.dump(pack_regression_payload, f, indent=2, ensure_ascii=False)
+    with open(reg_report, "a", encoding="utf-8") as f:
+        f.write(json.dumps(pack_regression_payload, ensure_ascii=False) + "\n")
+except Exception:
+    pass
+
+if pack_regression_payload.get("failed"):
+    parts = []
+    for _lang, _row in (pack_regression_payload.get("by_lang", {}) or {}).items():
+        if isinstance(_row, dict) and not bool(_row.get("ok", True)):
+            parts.append(f"{_lang}(critical={int(_row.get('critical_in_window', 0) or 0)}, pack={int(_row.get('pack_entries', 0) or 0)})")
+    critical_pack_regression_md = "🚨 FAIL: " + (", ".join(parts) if parts else "brak szczegółów")
+else:
+    critical_pack_regression_md = "✅ PASS"
+
 try:
     with open(os.path.join(status_translation_dir, "strict_hourly_window_latest.json"), "w", encoding="utf-8") as f:
         json.dump(strict_window_payload, f, indent=2, ensure_ascii=False)
@@ -2467,6 +2609,8 @@ try:
     qa_status = "SLOW_MODE" if qa_slow else "OK"
     if qa_checked > 0 or qa_issues > 0:
         quality_summary_md = f"{qa_status} | {qa_issues} issue(s) / {qa_checked} entries | {qa_ts}"
+    if recent_hidden_quality_md:
+        quality_summary_md = f"{quality_summary_md} | recent_hidden={recent_hidden_latest}"
 
     by_type = quality_audit_latest.get("issues_by_type", {}) if isinstance(quality_audit_latest.get("issues_by_type", {}), dict) else {}
     top_types = sorted(by_type.items(), key=lambda x: int(x[1] or 0), reverse=True)[:5]
@@ -2546,6 +2690,13 @@ overview_payload = {
         "dashboard": quality_dashboard,
         "summary": quality_summary_md,
         "guard_fail_breakdown_summary": guard_fail_breakdown_md,
+        "recent_hidden_high_critical": {
+            "latest": recent_hidden_latest,
+            "threshold": recent_hidden_threshold,
+            "alarm": recent_hidden_alarm,
+            "trend": recent_hidden_trend_md,
+        },
+        "critical_bad_keys_pack_regression": pack_regression_payload,
     },
     "languages": translation_lang_overview,
 }
@@ -3969,9 +4120,11 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 {quality_section_hdr}
 
 - **Ostatni audyt:** {quality_summary_md}
+- **Alarm recent hidden HIGH/CRITICAL:** {recent_hidden_quality_md}
+- **Regresja critical bad keys pack:** {critical_pack_regression_md}
 - **Top 5 typów problemów:** {quality_top_issues_md}
 - **Języki o najsłabszej jakości:** {quality_worst_langs_md}
-- **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`
+- **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`, `i18n/status/critical_bad_keys_pack_regression_latest.json`
 
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
@@ -11068,7 +11221,25 @@ def _load_translation_overrides(i18n_dir: str, lang: str):
     except Exception:
         return {}
 
-def _load_reviewed_critical_overrides(i18n_dir: str, lang: str):
+def _quick_token_sets(text: str):
+    t = str(text or "")
+    placeholders = set(re.findall(r"\{[^}]+\}", t))
+    commands = set(re.findall(r"'[^']+?'", t))
+    pipes = set(re.findall(r"\|[^|]+\|", t))
+    return placeholders, commands, pipes
+
+def _load_en_reference_map(i18n_dir: str, file_name: str):
+    try:
+        path = os.path.join(i18n_dir, "en", str(file_name or ""))
+        if not os.path.isfile(path):
+            return {}
+        with open(path, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+        return payload if isinstance(payload, dict) else {}
+    except Exception:
+        return {}
+
+def _load_reviewed_critical_overrides(i18n_dir: str, lang: str, en_reference: dict):
     overrides = {}
     try:
         path = os.path.join(i18n_dir, "overrides", "reviewed", f"{lang}.json")
@@ -11077,20 +11248,33 @@ def _load_reviewed_critical_overrides(i18n_dir: str, lang: str):
         with open(path, "r", encoding="utf-8") as f:
             payload = json.load(f)
         if not isinstance(payload, dict):
-        def _load_reviewed_critical_overrides(i18n_dir: str, lang: str, en_reference: dict):
+            return overrides
         for key, value in payload.items():
             if not isinstance(key, str):
                 continue
             if key.startswith("_"):
                 continue
-            if isinstance(value, str) and value.strip():
-                overrides[key] = value
+            if key not in en_reference:
+                continue
+            if not (isinstance(value, str) and value.strip()):
+                continue
+            en_text = str(en_reference.get(key, ""))
+            en_ph, en_cmd, en_pipe = _quick_token_sets(en_text)
+            rv_ph, rv_cmd, rv_pipe = _quick_token_sets(value)
+            if en_ph != rv_ph:
+                continue
+            if en_cmd and en_cmd != rv_cmd:
+                continue
+            if en_pipe != rv_pipe:
+                continue
+            overrides[key] = value
         return overrides
     except Exception:
         return {}
 
 _base_overrides = _load_translation_overrides(I18N_DIR, target_lang)
-_reviewed_overrides = _load_reviewed_critical_overrides(I18N_DIR, target_lang)
+_en_reference_map = _load_en_reference_map(I18N_DIR, json_file)
+_reviewed_overrides = _load_reviewed_critical_overrides(I18N_DIR, target_lang, _en_reference_map)
 if _reviewed_overrides:
     _base_overrides.update(_reviewed_overrides)
 TRANSLATION_OVERRIDES = {target_lang: _base_overrides}
@@ -11109,8 +11293,7 @@ gt_single_timeout = _env_float("GT_SINGLE_TIMEOUT", 7.0)
 if gt_delay < 0:
     gt_delay = 0.0
 if gt_batch_timeout < 1:
-        _en_reference_map = _load_en_reference_map(I18N_DIR, json_file)
-        _reviewed_overrides = _load_reviewed_critical_overrides(I18N_DIR, target_lang, _en_reference_map)
+    gt_batch_timeout = 18.0
 if gt_single_timeout < 1:
     gt_single_timeout = 7.0
 
@@ -11140,8 +11323,6 @@ def _call_with_timeout(seconds, fn, *args, **kwargs):
 
     def _handler(signum, frame):
         raise _GTTimeout(f"timeout after {timeout_s}s")
-
-                "recent_hidden_alert_threshold": recent_hidden_alert_threshold,
     prev_handler = signal.getsignal(signal.SIGALRM)
     try:
         signal.signal(signal.SIGALRM, _handler)
@@ -11151,11 +11332,9 @@ def _call_with_timeout(seconds, fn, *args, **kwargs):
         signal.setitimer(signal.ITIMER_REAL, 0)
         signal.signal(signal.SIGALRM, prev_handler)
 
-        recent_hidden_alert = recent_hidden_high_critical >= recent_hidden_alert_threshold
 def _protect_placeholders(text):
     """Zamień placeholdery, HTML tagi, escape sequences i nazwy własne na tokeny ochronne przed GT."""
     replacements = {}
-            quality_data["recent_hidden_alert"] = recent_hidden_alert
     idx = [0]
     def _replace(m):
         token = f"__PH{idx[0]}__"
@@ -11164,8 +11343,6 @@ def _protect_placeholders(text):
         return token
     protected = str(text)
     # Krok 1: Chroń nazwy własne Tibia NAJPIERW (zanim regex zamieni otaczające tagi)
-                "recent_hidden_alert_threshold": recent_hidden_alert_threshold,
-                "recent_hidden_alert": recent_hidden_alert,
     if TIBIA_PROPER_NOUNS:
         sorted_nouns = sorted(
             (n for n in TIBIA_PROPER_NOUNS if len(n) > 4),
@@ -11173,180 +11350,21 @@ def _protect_placeholders(text):
         )
         for noun in sorted_nouns:
             if noun in protected:
-        recent_hidden_latest = 0
-        recent_hidden_threshold = 5
-        recent_hidden_alert = False
-        recent_hidden_trend_alert = False
-        recent_hidden_trend_md = "brak danych"
-        try:
-            if isinstance(recent_translation_entry, dict):
-                recent_hidden_latest = int(recent_translation_entry.get("recent_hidden_high_critical", 0) or 0)
-                recent_hidden_threshold = int(recent_translation_entry.get("recent_hidden_alert_threshold", 5) or 5)
-                recent_hidden_alert = bool(recent_translation_entry.get("recent_hidden_alert", False))
-        except Exception:
-            recent_hidden_latest = 0
-            recent_hidden_threshold = 5
-            recent_hidden_alert = False
-
-        recent_hidden_series = []
-        try:
-            report_path = os.path.join(status_translation_dir, "translation_recent_report.jsonl")
-            if os.path.exists(report_path):
-                with open(report_path, "r", encoding="utf-8") as f:
-                    for line in f:
-                        line = line.strip()
-                        if not line:
-                            continue
-                        try:
-                            obj = json.loads(line)
-                        except Exception:
-                            continue
-                        if "recent_hidden_high_critical" not in obj:
-                            continue
-                        recent_hidden_series.append(int(obj.get("recent_hidden_high_critical", 0) or 0))
-            recent_hidden_series = recent_hidden_series[-40:]
-        except Exception:
-            recent_hidden_series = []
-
-        try:
-            if recent_hidden_series:
-                last_slice = recent_hidden_series[-10:]
-                avg_last = sum(last_slice) / max(1, len(last_slice))
-                prev_pool = recent_hidden_series[:-10]
-                prev_slice = prev_pool[-10:] if prev_pool else []
-                if prev_slice:
-                    avg_prev = sum(prev_slice) / max(1, len(prev_slice))
-                    delta = avg_last - avg_prev
-                    trend = "↑" if delta > 0.1 else ("↓" if delta < -0.1 else "→")
-                    recent_hidden_trend_md = f"{trend} last10={avg_last:.2f}, prev10={avg_prev:.2f}, latest={recent_hidden_latest}"
-                    if avg_last >= recent_hidden_threshold and avg_last >= (avg_prev * 1.25):
-                        recent_hidden_trend_alert = True
-                else:
-                    recent_hidden_trend_md = f"latest={recent_hidden_latest}"
-        except Exception:
-            recent_hidden_trend_md = "brak danych"
-
-        recent_hidden_alarm = bool(recent_hidden_alert or recent_hidden_trend_alert)
-        recent_hidden_quality_md = (
-            f"{'🚨 ALERT' if recent_hidden_alarm else '✅ OK'} | hidden={recent_hidden_latest}, "
-            f"threshold={recent_hidden_threshold}, trend={recent_hidden_trend_md}"
-        )
-
-        pack_regression_payload = {
-            "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-            "window_start_utc": strict_window_payload.get("window_start_utc"),
-            "window_end_utc": strict_window_payload.get("window_end_utc"),
-            "by_lang": {},
-            "failed": False,
-        }
-
-        def _parse_iso_z_like(value):
-            try:
-                s = str(value or "")
-                if not s:
-                    return None
-                if s.endswith("Z"):
-                    s = s[:-1] + "+00:00"
-                return datetime.fromisoformat(s)
-            except Exception:
-                return None
-
-        try:
-            window_start_dt = _parse_iso_z_like(strict_window_payload.get("window_start_utc"))
-            window_end_dt = _parse_iso_z_like(strict_window_payload.get("window_end_utc"))
-            critical_by_lang = {"pl": 0, "es": 0}
-            rejected_path = os.path.join(status_translation_dir, "suspicious_rejected.jsonl")
-            if os.path.exists(rejected_path):
-                with open(rejected_path, "r", encoding="utf-8") as f:
-                    for line in f:
-                        line = line.strip()
-                        if not line:
-                            continue
-                        try:
-                            row = json.loads(line)
-                        except Exception:
-                            continue
-                        lang = str(row.get("lang", "")).lower()
-                        if lang not in critical_by_lang:
-                            continue
-                        if str(row.get("severity", "")).upper() != "CRITICAL":
-                            continue
-                        row_dt = _parse_iso_z_like(row.get("timestamp"))
-                        if window_start_dt and row_dt and row_dt < window_start_dt:
-                            continue
-                        if window_end_dt and row_dt and row_dt > window_end_dt:
-                            continue
-                        critical_by_lang[lang] += 1
-
-            review_dir = os.path.join(I18N_DIR, "overrides", "review_queue")
-            for lang in ("pl", "es"):
-                pack_path = os.path.join(review_dir, f"critical_bad_keys_pack_{lang}_latest.json")
-                pack_count = 0
-                try:
-                    if os.path.exists(pack_path):
-                        with open(pack_path, "r", encoding="utf-8") as f:
-                            pack_payload = json.load(f)
-                        entries = pack_payload.get("entries", []) if isinstance(pack_payload, dict) else []
-                        pack_count = len(entries) if isinstance(entries, list) else 0
-                except Exception:
-                    pack_count = 0
-                critical_count = int(critical_by_lang.get(lang, 0) or 0)
-                ok = (critical_count == 0) or (pack_count > 0)
-                if not ok:
-                    pack_regression_payload["failed"] = True
-                pack_regression_payload["by_lang"][lang] = {
-                    "critical_in_window": critical_count,
-                    "pack_entries": pack_count,
-                    "ok": ok,
-                }
-
-            try:
-                reg_latest = os.path.join(status_translation_dir, "critical_bad_keys_pack_regression_latest.json")
-                reg_report = os.path.join(status_translation_dir, "critical_bad_keys_pack_regression_report.jsonl")
-                with open(reg_latest, "w", encoding="utf-8") as f:
-                    json.dump(pack_regression_payload, f, indent=2, ensure_ascii=False)
-                with open(reg_report, "a", encoding="utf-8") as f:
-                    f.write(json.dumps(pack_regression_payload, ensure_ascii=False) + "\n")
-            except Exception:
-                pass
-        except Exception:
-            pass
-
-        if pack_regression_payload.get("failed"):
-            parts = []
-            for _lang, _row in (pack_regression_payload.get("by_lang", {}) or {}).items():
-                if isinstance(_row, dict) and not bool(_row.get("ok", True)):
-                    parts.append(f"{_lang}(critical={int(_row.get('critical_in_window', 0) or 0)}, pack={int(_row.get('pack_entries', 0) or 0)})")
-            critical_pack_regression_md = "🚨 FAIL: " + (", ".join(parts) if parts else "brak szczegółów")
-        else:
-            critical_pack_regression_md = "✅ PASS"
                 pattern = r'\b' + re.escape(noun) + r'\b'
                 protected = re.sub(pattern, lambda m, n=noun: _replace(m), protected, count=0)
     # Krok 2: Chroń placeholdery, tagi HTML, escape sequences, komendy
-            if recent_hidden_quality_md:
-                quality_summary_md = f"{quality_summary_md} | recent_hidden={recent_hidden_latest}"
     protected = re.sub(
         r"\{[^}]*\}"               # {0}, {player}, {}
         r"|%[0-9]*[sdifuxXcp%]"    # %s, %d, %02d, %%
         r"|\|[A-Z_]+\|"           # |PLAYERNAME|, |NAME|
         r"|''[^']*''"             # ''trade'', ''job''
         r"|(?<!['\w])'([^']{1,40}?)'(?!')"    # 'task', 'keyword' — short single-quoted commands only (max 40 chars)
-                "recent_hidden_high_critical": {
-                    "latest": recent_hidden_latest,
-                    "threshold": recent_hidden_threshold,
-                    "alarm": recent_hidden_alarm,
-                    "trend": recent_hidden_trend_md,
-                },
-                "critical_bad_keys_pack_regression": pack_regression_payload,
         r"|'\/[a-zA-Z]+'"         # '/heal', '/cast'
         r"|<(?:b|i|u|s|em|strong|br|hr|p|div|span|font|img|a|li|ul|ol|table|tr|td|th|h[1-6]|pre|code|sub|sup|/[a-zA-Z]+)[\s>/]?[^>]*>"  # Tylko prawdziwe HTML tagi (nie narracyjne <gives you...>)
         r"|\\[ntr]"               # \n, \t, \r
         r"|&[a-zA-Z]+;"          # &amp;, &lt;, &gt;
-        - **Alarm recent hidden HIGH/CRITICAL:** {recent_hidden_quality_md}
-        - **Regresja critical bad keys pack:** {critical_pack_regression_md}
         , _replace, protected)
     return protected, replacements
-        - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`, `i18n/status/critical_bad_keys_pack_regression_latest.json`
 def _restore_placeholders(text, replacements):
     """Przywróć oryginalne placeholdery po tłumaczeniu GT."""
     for token, original in replacements.items():
@@ -15022,6 +15040,15 @@ suspicious_detected = 0
 suspicious_rejected = 0
 suspicious_high = 0
 recent_translations = []
+recent_hidden_high_critical = 0
+recent_include_high_critical = str(os.getenv("RECENT_INCLUDE_HIGH_CRITICAL", "0")).strip().lower() in {"1", "true", "yes", "on"}
+try:
+    recent_hidden_alert_threshold = int(os.getenv("RECENT_HIDDEN_HIGH_CRITICAL_ALERT_THRESHOLD", "5") or "5")
+except Exception:
+    recent_hidden_alert_threshold = 5
+if recent_hidden_alert_threshold < 1:
+    recent_hidden_alert_threshold = 1
+recent_hidden_alert = False
 gt_pending = []  # Klucze do tłumaczenia przez Google Translate
 suspicious_log_path = os.path.join(status_dir, "suspicious_log.jsonl")
 suspicious_rejected_path = os.path.join(status_dir, "suspicious_rejected.jsonl")
@@ -15905,6 +15932,7 @@ if all_recent:
         "very_short_translations": very_short,
         "very_long_translations": very_long,
         "recent_include_high_critical": recent_include_high_critical,
+        "recent_hidden_alert_threshold": recent_hidden_alert_threshold,
     }
 
 # Zapisz quality_report.jsonl
@@ -15969,9 +15997,11 @@ else:
     ]
     recent_hidden_high_critical = max(0, len(_all_recent) - len(filtered_recent))
     recent_translations = filtered_recent[-20:]
+recent_hidden_alert = recent_hidden_high_critical >= recent_hidden_alert_threshold
 
 if quality_data:
     quality_data["recent_hidden_high_critical"] = recent_hidden_high_critical
+    quality_data["recent_hidden_alert"] = recent_hidden_alert
 try:
     os.makedirs(status_dir, exist_ok=True)
     recent_entry = {
@@ -15981,6 +16011,8 @@ try:
         "translated": translated,
         "recent_include_high_critical": recent_include_high_critical,
         "recent_hidden_high_critical": recent_hidden_high_critical,
+        "recent_hidden_alert_threshold": recent_hidden_alert_threshold,
+        "recent_hidden_alert": recent_hidden_alert,
         "entries": recent_translations,
     }
     with open(os.path.join(status_dir, "translation_recent_latest.json"), "w", encoding="utf-8") as f:

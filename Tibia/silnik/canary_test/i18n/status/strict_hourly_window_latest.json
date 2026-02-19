@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-19T20:41:37.074753Z",
-  "window_end_utc": "2026-02-19T21:41:37.074753Z",
+  "window_start_utc": "2026-02-19T21:09:44.405748Z",
+  "window_end_utc": "2026-02-19T22:09:44.405748Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,41 +8,23 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/suspicious_rejected.jsonl"
   ],
-  "total_cycles": 83,
+  "total_cycles": 43,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 83
+    "AUTO_TRANSLATE": 43
   },
-  "auto_translate_cycles": 83,
+  "auto_translate_cycles": 43,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 965,
-  "guard_fail": 571,
-  "guard_fail_rate_pct": 37.2,
-  "no_progress_entries": 35,
-  "no_progress_rate_pct": 53.8,
-  "throughput_keys_per_h": 654.8,
-  "suspicious_total": 5742,
+  "translated": 380,
+  "guard_fail": 271,
+  "guard_fail_rate_pct": 41.6,
+  "no_progress_entries": 24,
+  "no_progress_rate_pct": 66.7,
+  "throughput_keys_per_h": 489.3,
+  "suspicious_total": 7577,
   "top_guard_fail_targets": [
-    {
-      "target": "pl/books.json",
-      "translated": 0,
-      "guard_fail": 50,
-      "guard_command": 0
-    },
-    {
-      "target": "es/books.json",
-      "translated": 2,
-      "guard_fail": 48,
-      "guard_command": 0
-    },
-    {
-      "target": "ru/raids.json",
-      "translated": 5,
-      "guard_fail": 45,
-      "guard_command": 0
-    },
     {
       "target": "sv/spells.json",
       "translated": 6,
@@ -62,15 +44,33 @@
       "guard_command": 0
     },
     {
-      "target": "es/questlog.json",
-      "translated": 41,
-      "guard_fail": 39,
-      "guard_command": 0
-    },
-    {
       "target": "ro/achievements.json",
       "translated": 16,
       "guard_fail": 34,
+      "guard_command": 0
+    },
+    {
+      "target": "it/books.json",
+      "translated": 22,
+      "guard_fail": 28,
+      "guard_command": 0
+    },
+    {
+      "target": "it/monsters.json",
+      "translated": 35,
+      "guard_fail": 22,
+      "guard_command": 0
+    },
+    {
+      "target": "ru/client.json",
+      "translated": 23,
+      "guard_fail": 21,
+      "guard_command": 0
+    },
+    {
+      "target": "ro/cpp.json",
+      "translated": 31,
+      "guard_fail": 19,
       "guard_command": 0
     }
   ]

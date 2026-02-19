@@ -76,6 +76,26 @@ Uwagi wykonawcze:
 - Priorytet „jednym zdaniem” (zgodnie z sugestią): najpierw wdrożyć i egzekwować jednolitą macierz priorytetów źródeł + logowanie decyzji konfliktowych.
 - To zadanie bezpośrednio chroni ręcznie kuratorowane tłumaczenia przed degradacją przez późniejsze warstwy pipeline.
 
+## 🛠️ Aktualizacja wykonania (2026-02-19 22:00 UTC — stabilizacja WQ-HARD-18/19/20 po regresji patchowej)
+
+Wybrane do realizacji pełne zadania:
+- **Przywrócić poprawną składnię i integralność `i18n_worker_simple.sh` po awarii sekcji nagłówkowej**
+- **Domknąć generowanie artefaktów regresji `critical_bad_keys_pack_*`**
+- **Potwierdzić render nowych linii QUALITY w `I18N_STATUS.md`**
+
+Status realizacji (graficznie):
+
+| Status | Zadanie | Szczegóły |
+|---|---|---|
+| ✅ ZROBIONE | Naprawa sekcji startowej workera | Odtworzono brakujące deklaracje opcji i helpery (`is_enabled`, `apply_global_quality_mode`, `status_update_activity`, `status_log_op`, `STATUS_DIR`, `I18N_SCOPE`). |
+| ✅ ZROBIONE | Naprawa root-cause braku artefaktów regresji | W bloku Python zamieniono odwołania do niezdefiniowanych zmiennych okna (`strict_window_start/end`) na istniejące (`strict_cutoff`, `strict_now`). |
+| ✅ ZROBIONE | Walidacja składni | `bash -n i18n_worker_simple.sh` przechodzi bez błędów. |
+| ✅ ZROBIONE | Regeneracja statusu | `bash i18n_worker_simple.sh --update-status` wykonane poprawnie. |
+| ✅ ZROBIONE | Potwierdzenie artefaktów QUALITY | Wygenerowano `i18n/status/critical_bad_keys_pack_regression_latest.json` i `..._report.jsonl`; `I18N_STATUS.md` pokazuje linie alarmu/trendu i regresji packa. |
+
+Uwagi:
+- Bieżący stan regresji jest **FAIL** (PL/ES mają wpisy `CRITICAL` w oknie, a pack review jest pusty), co jest oczekiwanym sygnałem jakościowym, a nie awarią generatora.
+
 ## 🛠️ Aktualizacja wykonania (2026-02-19 22:35 UTC — weryfikacja fizycznych JSON + QUALITY status + guard-fail root-cause)
 
 Wybrane do realizacji pełne zadania:
@@ -437,9 +457,9 @@ head -n 100 i18n/status/pl_es_problem_cases_*.txt
 - [x] `WQ-HARD-15 (P1)`: Dodać `proper_noun_exemption` + whitelisty domenowe, aby ograniczyć false-positive.
 - [x] `WQ-HARD-16 (P1)`: Dodać tryb audytu „recent keys without HIGH/CRITICAL” do dashboardu.
 - [x] `WQ-HARD-17 (P0)`: Przygotować „critical bad keys pack” PL/ES i zassać do `i18n/overrides/{lang}.json` po review.
-- [ ] `WQ-HARD-18 (P0)`: Dodać test regresji `critical_bad_keys_pack` (plik latest nie może być pusty dla PL/ES, jeśli są CRITICAL w cyklu).
-- [ ] `WQ-HARD-19 (P1)`: Dodać alarm trendu `recent_hidden_high_critical` (próg + alert w `I18N_STATUS.md`).
-- [ ] `WQ-HARD-20 (P0)`: Dodać walidator review-override (`i18n/overrides/reviewed/{lang}.json`) z checkiem placeholder/pipe/command przed merge do runtime.
+- [x] `WQ-HARD-18 (P0)`: Dodać test regresji `critical_bad_keys_pack` (plik latest nie może być pusty dla PL/ES, jeśli są CRITICAL w cyklu).
+- [x] `WQ-HARD-19 (P1)`: Dodać alarm trendu `recent_hidden_high_critical` (próg + alert w `I18N_STATUS.md`).
+- [x] `WQ-HARD-20 (P0)`: Dodać walidator review-override (`i18n/overrides/reviewed/{lang}.json`) z checkiem placeholder/pipe/command przed merge do runtime.
 
 ### 4.1) Status wdrożenia (2026-02-19)
 
@@ -467,6 +487,17 @@ Aktualizacja 2026-02-19 (WQ-HARD-15/16/17):
 - `WQ-HARD-15`: dodano domenowe whitelisty nazw własnych (`npc`, `monster`, `spell`, `book`, `quest`, `raid`) i warunek `_is_domain_whitelisted_proper_noun`.
 - `WQ-HARD-16`: `translation_recent_latest.json` domyślnie ukrywa wpisy `HIGH/CRITICAL`; dodano metryki `recent_include_high_critical` i `recent_hidden_high_critical`.
 - `WQ-HARD-17`: dodano pack review `i18n/overrides/review_queue/critical_bad_keys_pack_{pl|es}_latest.json` + historia `*_report.jsonl`; runtime merge z `i18n/overrides/reviewed/{lang}.json` jest aktywny.
+
+Aktualizacja 2026-02-19 (WQ-HARD-18/19/20):
+- `WQ-HARD-18`: dodano regresję packów krytycznych:
+  - artefakt `i18n/status/critical_bad_keys_pack_regression_latest.json` + historia `critical_bad_keys_pack_regression_report.jsonl`,
+  - skrypt testowy `tools/i18n_assert_critical_bad_keys_pack.py` (exit code `1` przy fail).
+- `WQ-HARD-19`: dodano alarm trendu `recent_hidden_high_critical`:
+  - metryki `recent_hidden_alert_threshold`, `recent_hidden_alert` w `translation_recent_latest.json`,
+  - sygnalizacja `ALERT/OK` i trend (`last10` vs `prev10`) w sekcji QUALITY (`I18N_STATUS.md`).
+- `WQ-HARD-20`: włączono walidator review-override przed merge do runtime:
+  - checki `placeholder/command/pipe` względem EN (`i18n/en/{json_file}`),
+  - ignorowanie wpisów niespełniających kontraktu tokenów.
 
 ### 5) Zakres na teraz
 

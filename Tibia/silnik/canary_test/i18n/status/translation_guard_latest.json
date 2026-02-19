@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-19T21:40:56.927325Z",
-  "cycle": 7,
-  "language": "ru",
-  "json_file": "items.json",
-  "translated": 0,
+  "timestamp": "2026-02-19T22:06:31.638014Z",
+  "cycle": 1,
+  "language": "ro",
+  "json_file": "monsters.json",
+  "translated": 50,
   "placeholders": 0,
   "guard_fail": 0,
   "guard": {
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 0
+  "strict_skipped_done": 405
 }

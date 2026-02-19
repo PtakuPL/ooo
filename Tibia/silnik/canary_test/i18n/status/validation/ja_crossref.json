@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T21:29:52.711128Z",
+  "checked_at": "2026-02-19T22:08:37.621017Z",
   "issues_total": 419,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -13,6 +13,33 @@
   },
   "consistency_issues": [],
   "pl_reference_issues": [
+    {
+      "key": "achievement.20.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Huntsman",
+      "pl": "Myśliwy",
+      "lang": "Huntsman"
+    },
+    {
+      "key": "achievement.119.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cursed!",
+      "pl": "Przeklęty!",
+      "lang": "Cursed!"
+    },
+    {
+      "key": "achievement.186.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fire Devil",
+      "pl": "Ognisty Diabeł",
+      "lang": "Fire Devil"
+    },
     {
       "key": "ui.house.rent_period_daily",
       "category": "books",
@@ -3585,33 +3612,6 @@
       "en": "Author:",
       "pl": "Autor:",
       "lang": "Author:"
-    },
-    {
-      "key": "web.tpl.account.characters.create.span_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Name",
-      "pl": "Nazwa",
-      "lang": "Name"
-    },
-    {
-      "key": "web.tpl.account.characters.create.span_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sex",
-      "pl": "Seks",
-      "lang": "Sex"
-    },
-    {
-      "key": "web.tpl.buttons.cancel.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cancel",
-      "pl": "Anuluj",
-      "lang": "Cancel"
     }
   ],
   "length_ratio_issues": [

@@ -1,24 +1,24 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-19T20:32:18Z",
+  "generated_at_utc": "2026-02-19T21:01:51Z",
   "config": {
     "mtime_restart_min_interval_sec": 90,
     "restart_failure_backoff_base_sec": 20,
     "restart_failure_backoff_max_sec": 300
   },
   "last_restart": {
-    "timestamp": "2026-02-19T20:32:18Z",
+    "timestamp": "2026-02-19T21:01:51Z",
     "cause": "mtime",
     "success": true,
-    "pid": "1057726"
+    "pid": "1082297"
   },
   "failure_streak": 0,
   "cooldown_active": false,
   "cooldown_remaining_sec": 0,
   "next_allowed_utc": "",
   "totals": {
-    "attempts": 1442,
-    "successes": 1440,
+    "attempts": 1444,
+    "successes": 1442,
     "failures": 2,
     "blocked": 107
   },
@@ -30,8 +30,8 @@
       "blocked": 2
     },
     "mtime": {
-      "attempts": 156,
-      "successes": 154,
+      "attempts": 158,
+      "successes": 156,
       "failures": 2,
       "blocked": 105
     },
@@ -43,24 +43,6 @@
     }
   },
   "recent_events": [
-    {
-      "timestamp": "2026-02-19T19:51:25Z",
-      "type": "result",
-      "cause": "health_stuck",
-      "success": true,
-      "pid": "1021095",
-      "reason": "pid_file",
-      "backoff_sec": 0
-    },
-    {
-      "timestamp": "2026-02-19T19:52:00Z",
-      "type": "result",
-      "cause": "health_stuck",
-      "success": true,
-      "pid": "1021625",
-      "reason": "pid_file",
-      "backoff_sec": 0
-    },
     {
       "timestamp": "2026-02-19T19:52:35Z",
       "type": "result",
@@ -220,6 +202,24 @@
       "cause": "mtime",
       "success": true,
       "pid": "1057726",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-19T20:58:39Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "1080237",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-19T21:01:51Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "1082297",
       "reason": "pid_file",
       "backoff_sec": 0
     }

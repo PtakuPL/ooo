@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 51.3,
+  "coverage_pct": 51.5,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T20:37:51.022644Z",
+  "checked_at": "2026-02-19T21:03:47.168893Z",
   "issues_total": 429,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -2974,22 +2974,13 @@
       "lang": "CLICK"
     },
     {
-      "key": "scripts.actions_treasure_chest.msg_1",
+      "key": "scripts.actions_ultimate_booze_beer_bottle.say_1",
       "category": "scripts",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You found ",
-      "pl": "Ty znaleziono ",
-      "lang": "You found "
-    },
-    {
-      "key": "scripts.actions_treasure_chest.msg_2",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You found ",
-      "pl": "Ty znaleziono ",
-      "lang": "You found "
+      "en": "GULP, GULP, GULP",
+      "pl": "ŁUP, ŁUP, ŁUP",
+      "lang": "GULP, GULP, GULP"
     },
     {
       "key": "scripts.afk.say_1",
@@ -3044,15 +3035,6 @@
       "en": "Yum.",
       "pl": "Mniam.",
       "lang": "Yum."
-    },
-    {
-      "key": "scripts.creaturescripts_energy_prism.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*zap!*",
-      "pl": "*zastrzelić!*",
-      "lang": "*zap!*"
     },
     {
       "key": "scripts.decay_to.voice_23443",
@@ -3737,6 +3719,24 @@
       "en": "1 minute",
       "pl": "1 minuta",
       "lang": "1 minute"
+    },
+    {
+      "key": "scripts.oramond_entrance.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slrrp!",
+      "pl": "Srrrr!",
+      "lang": "Slrrp!"
+    },
+    {
+      "key": "scripts.oramond_entrance.say_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slrrp!",
+      "pl": "Srrrr!",
+      "lang": "Slrrp!"
     }
   ],
   "length_ratio_issues": [

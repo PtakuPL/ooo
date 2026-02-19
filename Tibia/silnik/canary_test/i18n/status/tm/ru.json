@@ -37774,5 +37774,69 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T20:53:24.017783Z"
+  },
+  "book.otbm.devised_dissolved_in_the_void": {
+    "src_hash": "8acd936251c05103d5aef5abd2174b0e",
+    "text": "задуманное растворилось в пустоте еще до того, как было завершено.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:38.863307Z"
+  },
+  "book.otbm.diary_of_hengis_wulfsonnni_can": {
+    "src_hash": "da656bbddd8d90f11098f9c9d2a6317e",
+    "text": "Дневник Хенгиса Вульфсона\\n...\\nЯ могу только надеяться, что когда-нибудь мне удастся спастись от \\nциклопа. На данный момент я\\nзанимаю их начальника попыткой\\nнаучиться читать и писать, но\\nкак долго?\\nЯ в таком отчаянии.\\nКакая глупая идея поехать сюда, чтобы\\nискать знаменитые сокровища этого\\nдревнего рыцарского ордена.\\nМне бы хотелось никогда об этом не слышать.\\nЛучше бы я никогда не пел об этом песня.\\nПонятия не имею, сколько несчастных душ я\\nзаманил ею на смерть.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:38.868030Z"
+  },
+  "book.otbm.died_but_i_could_make": {
+    "src_hash": "0ab68f3c79946809546fa1b7d22889d3",
+    "text": "... умер, но смог добраться до трона. Мои обереги пока сдерживают воющих призраков и призраков, и я готовлюсь высвободить силу трона...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:38.869733Z"
+  },
+  "book.otbm.different_to_the_clear_working": {
+    "src_hash": "5ac5502c13452eaae725f46845a76b82",
+    "text": "отличался от ясной работы Фардо, потому что тайны и тайны были аспектами его существа. Умань и Затрот",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:38.871120Z"
+  },
+  "book.otbm.digging_not_a_single_trace": {
+    "src_hash": "c950d6b4960fd844d2c668f9cb60335c",
+    "text": "Копаем. Ни единого следа ни двери, ни даже окна. Может быть, это дом какого-то малоизвестного культа тьмы? Может быть, существа ночи? Убежище для гулей? Возможно, я работаю недостаточно усердно. Хм, кажется, там, у стены, есть странное пятно, я отсюда его хорошо вижу. Я попробую его тут же подтолкнуть или потянуть! Слава и богатство, вот и я!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:42.606522Z"
+  },
+  "book.otbm.diptrah_the_high_priest_master": {
+    "src_hash": "18e57afb8b79d567ea90ffdc5e40c07c",
+    "text": "Диптра — верховный жрец, повелитель разума, обладатель тайных сил, хранитель древнейших ритуалов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:42.608627Z"
+  },
+  "book.otbm.divinity_was_weakened_by_the": {
+    "src_hash": "ec7b040050da6c58ac5a4de7453c9189",
+    "text": "божественность была ослаблена творением, и без подозрений и сопротивления смертельная атака проникла в самую суть ее",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:42.610130Z"
+  },
+  "book.otbm.dixis_armors_and_shields": {
+    "src_hash": "cf49f561e8909a5efab8a99b1e35a514",
+    "text": "Доспехи и щиты Дикси",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:42.610635Z"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-19T20:56:40.694737Z",
-  "built_cycle": 8,
+  "timestamp": "2026-02-19T21:02:09.719400Z",
+  "built_cycle": 1,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -322,9 +322,9 @@
     {
       "lang": "es",
       "json_file": "npclib.json",
-      "pending_total": 67,
-      "todo": 67,
-      "simple_todo": 14,
+      "pending_total": 19,
+      "todo": 19,
+      "simple_todo": 2,
       "missing_in_lang": 0
     },
     {
@@ -554,9 +554,9 @@
     {
       "lang": "it",
       "json_file": "otclient_modules.json",
-      "pending_total": 1342,
-      "todo": 1342,
-      "simple_todo": 1145,
+      "pending_total": 1294,
+      "todo": 1294,
+      "simple_todo": 1098,
       "missing_in_lang": 0
     },
     {
@@ -642,9 +642,9 @@
     {
       "lang": "ru",
       "json_file": "books.json",
-      "pending_total": 1129,
-      "todo": 1129,
-      "simple_todo": 299,
+      "pending_total": 1121,
+      "todo": 1121,
+      "simple_todo": 298,
       "missing_in_lang": 0
     },
     {
@@ -1410,9 +1410,9 @@
     {
       "lang": "sr",
       "json_file": "monsters.json",
-      "pending_total": 128,
-      "todo": 128,
-      "simple_todo": 118,
+      "pending_total": 123,
+      "todo": 123,
+      "simple_todo": 113,
       "missing_in_lang": 0
     },
     {

@@ -2235,6 +2235,10 @@ strict_susp_entries = _jsonl_window(
     os.path.join(status_translation_dir, "suspicious_log.jsonl"),
     strict_cutoff,
 )
+strict_rejected_entries = _jsonl_window(
+    os.path.join(status_translation_dir, "suspicious_rejected.jsonl"),
+    strict_cutoff,
+)
 
 strict_mode_counts = {}
 strict_migration_cats = {}
@@ -2295,6 +2299,98 @@ strict_top_guard_fail_targets = sorted(
     reverse=True,
 )[:8]
 
+def _safe_issue_type(v):
+    text = str(v or "").strip().lower()
+    return text if text else "unknown"
+
+guard_fail_by_type = {}
+guard_fail_by_source = {}
+guard_fail_by_lang = {}
+guard_fail_by_category = {}
+guard_fail_by_severity = {}
+guard_fail_key_counter = {}
+for _row in strict_rejected_entries:
+    _lang = str(_row.get("lang", "?") or "?").lower()
+    _cat = str(_row.get("category", "?") or "?")
+    _src = str(_row.get("source", "unknown") or "unknown")
+    _sev = str(_row.get("severity", "UNKNOWN") or "UNKNOWN").upper()
+    _key = str(_row.get("key", "") or "")
+
+    guard_fail_by_lang[_lang] = int(guard_fail_by_lang.get(_lang, 0)) + 1
+    guard_fail_by_category[_cat] = int(guard_fail_by_category.get(_cat, 0)) + 1
+    guard_fail_by_source[_src] = int(guard_fail_by_source.get(_src, 0)) + 1
+    guard_fail_by_severity[_sev] = int(guard_fail_by_severity.get(_sev, 0)) + 1
+
+    _issues = _row.get("issues", []) if isinstance(_row.get("issues", []), list) else []
+    if not _issues:
+        guard_fail_by_type["unknown"] = int(guard_fail_by_type.get("unknown", 0)) + 1
+    for _it in _issues:
+        _itype = _safe_issue_type(_it.get("type")) if isinstance(_it, dict) else _safe_issue_type(_it)
+        guard_fail_by_type[_itype] = int(guard_fail_by_type.get(_itype, 0)) + 1
+        if _key:
+            _kg = guard_fail_key_counter.get(_key, {"key": _key, "count": 0, "types": {}})
+            _kg["count"] = int(_kg.get("count", 0)) + 1
+            _tmap = _kg.get("types", {}) if isinstance(_kg.get("types", {}), dict) else {}
+            _tmap[_itype] = int(_tmap.get(_itype, 0)) + 1
+            _kg["types"] = _tmap
+            guard_fail_key_counter[_key] = _kg
+
+guard_fail_top_types = [
+    {"type": _k, "count": int(_v)}
+    for _k, _v in sorted(guard_fail_by_type.items(), key=lambda x: int(x[1]), reverse=True)[:15]
+]
+guard_fail_top_keys = sorted(
+    [
+        {
+            "key": _k,
+            "count": int(_row.get("count", 0)),
+            "types": _row.get("types", {}),
+        }
+        for _k, _row in guard_fail_key_counter.items()
+    ],
+    key=lambda x: int(x.get("count", 0)),
+    reverse=True,
+)[:20]
+
+guard_fail_breakdown_payload = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "window_start_utc": strict_cutoff.isoformat().replace("+00:00", "Z"),
+    "window_end_utc": strict_now.isoformat().replace("+00:00", "Z"),
+    "window_hours": round(strict_window_hours, 3),
+    "sources": {
+        "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
+        "suspicious_log": "i18n/status/suspicious_log.jsonl",
+        "translation_guard_report": "i18n/status/translation_guard_report.jsonl",
+    },
+    "rejected_entries": len(strict_rejected_entries),
+    "suspicious_entries": len(strict_susp_entries),
+    "guard_fail_entries": len(strict_guard_entries),
+    "guard_fail_sum": strict_guard_fail,
+    "by_type": guard_fail_by_type,
+    "by_source": guard_fail_by_source,
+    "by_language": guard_fail_by_lang,
+    "by_category": guard_fail_by_category,
+    "by_severity": guard_fail_by_severity,
+    "top_types": guard_fail_top_types,
+    "top_keys": guard_fail_top_keys,
+}
+
+guard_fail_breakdown_md = "-"
+if guard_fail_top_types:
+    guard_fail_breakdown_md = ", ".join([f"{it['type']}={it['count']}" for it in guard_fail_top_types[:5]])
+
+try:
+    with open(os.path.join(status_translation_dir, "guard_fail_breakdown_latest.json"), "w", encoding="utf-8") as f:
+        json.dump(guard_fail_breakdown_payload, f, indent=2, ensure_ascii=False)
+except Exception:
+    pass
+
+try:
+    with open(os.path.join(status_translation_dir, "guard_fail_breakdown_report.jsonl"), "a", encoding="utf-8") as f:
+        f.write(json.dumps(guard_fail_breakdown_payload, ensure_ascii=False) + "\n")
+except Exception:
+    pass
+
 strict_window_payload = {
     "window_start_utc": strict_cutoff.isoformat().replace("+00:00", "Z"),
     "window_end_utc": strict_now.isoformat().replace("+00:00", "Z"),
@@ -2303,6 +2399,7 @@ strict_window_payload = {
         "i18n/status/worker_cycle_perf.jsonl",
         "i18n/status/translation_guard_report.jsonl",
         "i18n/status/suspicious_log.jsonl",
+        "i18n/status/suspicious_rejected.jsonl",
     ],
     "total_cycles": strict_total_cycles,
     "mode_distribution": strict_mode_counts,
@@ -2443,10 +2540,12 @@ overview_payload = {
     },
     "profiler_latest": perf_latest,
     "strict_hourly_window": strict_window_payload,
+    "guard_fail_breakdown": guard_fail_breakdown_payload,
     "quality": {
         "audit_latest": quality_audit_latest,
         "dashboard": quality_dashboard,
         "summary": quality_summary_md,
+        "guard_fail_breakdown_summary": guard_fail_breakdown_md,
     },
     "languages": translation_lang_overview,
 }
@@ -3002,6 +3101,26 @@ translation_last_update = next(
 )
 quality_source = "quality_audit_latest.json"
 quality_last_update = str(quality_audit_latest.get("timestamp", "-")) if isinstance(quality_audit_latest, dict) else "-"
+guard_fail_breakdown_latest = {}
+try:
+    _gfbd_path = os.path.join(status_translation_dir, "guard_fail_breakdown_latest.json")
+    if os.path.exists(_gfbd_path):
+        with open(_gfbd_path, "r", encoding="utf-8") as _gfbd_f:
+            guard_fail_breakdown_latest = json.load(_gfbd_f)
+except Exception:
+    guard_fail_breakdown_latest = {}
+guard_breakdown_ts = str(guard_fail_breakdown_latest.get("timestamp", "-")) if isinstance(guard_fail_breakdown_latest, dict) else "-"
+if quality_last_update == "-" and guard_breakdown_ts != "-":
+    quality_last_update = guard_breakdown_ts
+elif quality_last_update != "-" and guard_breakdown_ts != "-":
+    try:
+        _qa_dt = _parse_iso_any(quality_last_update)
+        _gb_dt = _parse_iso_any(guard_breakdown_ts)
+        if _qa_dt and _gb_dt and _gb_dt > _qa_dt:
+            quality_last_update = guard_breakdown_ts
+    except Exception:
+        pass
+quality_source = "quality_audit_latest.json + guard_fail_breakdown_latest.json"
 history_source = "daily/*.json / ops.jsonl"
 history_last_update = timestamp
 
@@ -14158,6 +14277,33 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
             "severity": "HIGH",
             "message": "Wykryto mieszane skrypty Unicode",
         })
+
+    # S5b: PL/ES explicit markers and worker artifacts
+    if lang_lower in {"pl", "es"} and tr_len > 0:
+        if "[EN]" in tr:
+            issues.append({
+                "type": "en_marker",
+                "severity": "CRITICAL",
+                "message": "Pozostał marker [EN] w tłumaczeniu",
+            })
+        if re.search(r"\[(?:PL|ES|LANG)\]", tr):
+            issues.append({
+                "type": "lang_marker",
+                "severity": "HIGH",
+                "message": "Wykryto marker językowy [PL]/[ES]/[LANG]",
+            })
+        if "npc.bozo.mission_" in tr:
+            issues.append({
+                "type": "mission_token",
+                "severity": "CRITICAL",
+                "message": "Wykryto artefakt klucza npc.bozo.mission_ w tłumaczeniu",
+            })
+        if re.search(r"(?i)(?:^|\b)(?:mango\s+fx|fxhttpresponse|fx\s+handlehttpresponse|fx\b)", tr):
+            issues.append({
+                "type": "fx_token",
+                "severity": "HIGH",
+                "message": "Wykryto artefakt tokenu fx/fxHttpResponse",
+            })
 
     # S6: Artifacts (exclude roman numerals [II],[III],[IV] and ≤3 question marks)
     if re.search(r"\?{4,}|\[(?![IVXLCDM]{1,8}\])[A-Z]{2,}(?:[-_][A-Z]{2,})?\]|TODO|FIXME", tr):

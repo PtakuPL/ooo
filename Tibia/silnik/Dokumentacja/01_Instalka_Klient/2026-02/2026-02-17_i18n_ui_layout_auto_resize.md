@@ -1146,3 +1146,435 @@ Oba pliki zachowują `/Od /Ob0 /d2SSAOptimizer-` + `SKIP_PRECOMPILE_HEADERS ON` 
 - Build #4373 (pre-split): **FAILED** — ICE C1001 w luafunctions.cpp mimo /d2SSAOptimizer-
 - Build #4374 (post-split): **TRIGGERED** — oczekiwanie na wynik
 
+---
+
+## 13. Audyt produkcyjny — brakujące elementy i dalsze wzmocnienia (2026-02-19)
+
+Przegląd zidentyfikował 6 obszarów wymagających dopracowania, aby mechanizm `auto-fit-parent`
+i cała strategia i18n layoutu były "produkcyjnie odporne", a nie tylko "działa w większości przypadków".
+
+### 13.1 (A) Window Clamp Policy — max-width/max-height + fallback UX
+
+**Problem**: `autoFitParent()` powiększa okno w górę bez ograniczeń. Jeśli tekst
+w DE/RU/PL jest absurdalnie długi (np. złożone słowa w języku niemieckim typu
+"Geschwindigkeitseinstellungen"), okno może wyjść poza ekran. W planie są `min-*`,
+ale brakuje polityki "co jeśli tekst jest za długi nawet po auto-resize".
+
+**Co trzeba dodać**: "Window Clamp Policy" na 3 poziomach:
+
+#### Poziom 1: max-width / max-height w OTUI (ISTNIEJĄCY mechanizm)
+
+Silnik **JUŻ** obsługuje `max-width` / `max-height` w `setRect()` (linia 1050 uiwidget.cpp):
+```cpp
+clampedRect = rect.clamp(minSize, maxSize);
+```
+
+Wystarczy dodać w OTUI:
+```yaml
+# options.otui — okno główne
+MainWindow
+  id: optionsWindow
+  min-width: 686
+  min-height: 534
+  max-width: 1024    # ← NOWE: nie szerzej niż 1024px
+  max-height: 768    # ← NOWE: nie wyżej niż 768px
+```
+
+#### Poziom 2: Screen-clamping (Lua)
+
+Po każdym auto-resize okna, sprawdzić czy nie wychodzi poza ekran:
+```lua
+-- W options.lua — po załadowaniu okna lub onResize callback
+function clampToScreen(window)
+    local screenWidth = g_window.getWidth()
+    local screenHeight = g_window.getHeight()
+    local w = math.min(window:getWidth(), screenWidth - 40)  -- 20px margin z każdej strony
+    local h = math.min(window:getHeight(), screenHeight - 40)
+    window:setSize({width = w, height = h})
+    -- Wycentruj ponownie
+    window:setPosition({
+        x = math.max(20, (screenWidth - w) / 2),
+        y = math.max(20, (screenHeight - h) / 2)
+    })
+end
+```
+
+#### Poziom 3: Fallback per widget type (polityka "co zamiast rośnij")
+
+| Widget type | Gdy tekst > max-width | Fallback |
+|---|---|---|
+| `Button` / `QtButton` | `text-horizontal-auto-resize` + `max-width: 250` | Text ellipsis (`text-ellipsis: true` — JUŻ w silniku, `PropTextEllipsis`) + tooltip z pełnym tekstem |
+| `OptionCheckBox` | `text-wrap: true` (JUŻ dodane) | Łamanie tekstu w wielu liniach + auto-fit-parent-height |
+| `OptionsCategory` | `auto-fit-parent-width` (JUŻ dodane) | max-width: 200, powyżej → text ellipsis + tooltip |
+| `MainWindow` | `auto-fit-parent` + max-size | Scrollbar wewnętrzny (dodać `UIScrollArea` jako wrapper paneli) |
+| `QtComboBox` | `min-width` per-entry | Dropdown może być szerszy niż sam combo box (istniejące zachowanie) |
+
+**Priorytet**: WYSOKI — należy dodać `max-width`/`max-height` co najmniej do MainWindow
+i OptionsCategory PRZED włączeniem długich tłumaczeń (DE, RU).
+
+**Status**: ⬜ DO ZROBIENIA
+
+---
+
+### 13.2 (B) Testy wizualne / regresyjne — automatyczna bramka jakości
+
+**Problem**: Zmiany globalne (`10-buttons.otui`, `auto-fit-parent` w C++) mogą
+rozjechać UI w wielu innych oknach (inventory, trade, NPC dialog, battle list...).
+Mamy "testy wizualne" jako krok, ale brak automatu.
+
+**Co trzeba dodać**: "UI Layout Regression Harness" — 3-warstwowy system:
+
+#### Warstwa 1: Heurystyczny test overflow (Lua, runtime)
+
+Skrypt Lua do uruchomienia w trybie debug — iteruje po wszystkich widocznych widgetach
+i sprawdza czy dziecko wychodzi poza paddingRect rodzica:
+```lua
+-- modules/corelib/ui_layout_check.lua
+function checkLayoutOverflow(widget, results, depth)
+    depth = depth or 0
+    results = results or {}
+    if not widget:isVisible() then return results end
+    
+    local parent = widget:getParent()
+    if parent then
+        local pr = parent:getPaddingRect()
+        local cr = widget:getRect()
+        
+        -- Overflow check
+        if cr:right() > pr:right() + 2 then  -- 2px tolerance
+            table.insert(results, {
+                widget = widget:getId() or "?",
+                parent = parent:getId() or "?",
+                axis = "width",
+                overflow = cr:right() - pr:right(),
+                depth = depth
+            })
+        end
+        if cr:bottom() > pr:bottom() + 2 then
+            table.insert(results, {
+                widget = widget:getId() or "?",
+                parent = parent:getId() or "?",
+                axis = "height",
+                overflow = cr:bottom() - pr:bottom(),
+                depth = depth
+            })
+        end
+    end
+    
+    for i = 1, widget:getChildCount() do
+        checkLayoutOverflow(widget:getChildByIndex(i), results, depth + 1)
+    end
+    return results
+end
+
+-- Użycie: w konsoli klienta
+-- local r = checkLayoutOverflow(rootWidget) ; for _,v in ipairs(r) do print(v.widget, v.axis, v.overflow) end
+```
+
+#### Warstwa 2: Golden screenshots (CI/CD)
+
+Wymaga headless rendering (OTClient wspiera `--headless` częściowo). Plan:
+1. Uruchomić klienta z `--locale=en`, `--locale=ru`, `--locale=pl`, `--locale=zh`
+2. Otworzyć panel Options, przejść po wszystkich zakładkach
+3. Zrobić screenshot każdej zakładki w rozdzielczości 1024x768 i 1920x1080
+4. Porównać z "golden" (reference) screenshotami — diff > 5% = FAIL
+5. Narzędzie: `pixelmatch` (npm) lub `ImageMagick compare`
+
+**Realistyczna ocena**: Pełne golden screenshots wymagają headless OpenGL + X11 virtual
+framebuffer (Xvfb). To dużo pracy. **Warstwa 1 (heurystyczny overflow check) jest
+wystarczająca na start.**
+
+#### Warstwa 3: Matryca scenariuszy testowych
+
+| # | Scenariusz | Warunki zaliczenia | Locale |
+|---|---|---|---|
+| 1 | Options window — domyślna rozdzielczość | Okno mieści się na 1024x768, wszystkie przyciski widoczne | en, ru, pl, zh |
+| 2 | Sidebar kategorie — wszystkie nazwy | Żaden tekst nie jest ucięty, nie wychodzi poza sidebar | en, ru, de |
+| 3 | OptionCheckBox — długi tekst | Tekst się zawija (text-wrap), parent rośnie w pionie | ru, de |
+| 4 | QtButton — auto-resize | Przycisk rośnie, ale nie szerszy niż max-width | ru, de |
+| 5 | Kaskada sidebar→okno | Gdy sidebar urośnie, okno główne rośnie proporcjonalnie | ru |
+| 6 | Zmiana locale w runtime | Przełączenie en→ru nie psuje layoutu, okno się dostosowuje | en→ru |
+| 7 | Okno po resize nie wychodzi za ekran | max-width/max-height respektowane | de (najdłuższy) |
+| 8 | SmallReversedQtPanel z text-wrap | Checkbox z zawiniętym tekstem — panel rośnie w pionie | ru, de |
+| 9 | OptionScaleScroll po resize | Label nie nachodzi na scrollbar | ru |
+| 10 | NPC dialog (regresja) | Brak zmian w wyglądzie NPC dialog po globalnej zmianie Button | en |
+| 11 | Trade window (regresja) | Brak zmian w wyglądzie Trade after zmianie Button style | en |
+| 12 | Battle list (regresja) | Brak zmian w wyglądzie battle list | en |
+
+**Priorytet**: WYSOKI (warstwa 1 + matryca scenariuszy), ŚREDNI (golden screenshots)
+
+**Status**: ⬜ DO ZROBIENIA
+
+---
+
+### 13.3 (C) Globalna zmiana Button/QtButton — izolacja stylu
+
+**Problem**: W Sekcji 11.2 zmieniono **globalny** styl `Button` / `QtButton` w
+`data/styles/10-buttons.otui`:
+```yaml
+# ZMIENIONO globalnie:
+Button < UIButton
+  min-width: 106
+  height: 23
+  text-horizontal-auto-resize: true  # ← NOWE — dotyczy WSZYSTKICH przycisków w grze!
+```
+
+To może mieć skutki uboczne:
+- Przyciski w trade window, NPC dialog, battle list mogą się rozszerzyć niechcąco
+- Layouty oparte o "stałą szerokość Button" (np. 2 przyciski obok siebie = 212px) mogą się rozjechać
+- W modułach z `anchors.left + anchors.right` nie będzie problemu (priorytet anchors > auto-resize)
+
+**Alternatywne podejście** (bezpieczniejsze): Zamiast globalnej zmiany, stworzyć dedykowany styl:
+
+```yaml
+# data/styles/10-buttons.otui — NOWY styl, NIE zmieniać oryginalnego Button
+I18NButton < UIButton
+  font: noto-12
+  min-width: 106
+  height: 23
+  text-horizontal-auto-resize: true
+  color: #dfdfdfff
+  image-source: /images/ui/button-grey-up
+  image-border: 5
+  $hover:
+    image-source: /images/ui/button-grey-hover
+  $pressed:
+    image-source: /images/ui/button-grey-down
+  $disabled:
+    image-source: /images/ui/button-grey-disabled
+    color: #dfdfdf88
+
+I18NQtButton < UIButton
+  font: noto-12
+  min-width: 106
+  height: 23
+  text-horizontal-auto-resize: true
+  color: #dfdfdfff
+  image-source: /images/ui/button_new
+  image-border: 5
+  # ...
+```
+
+Użycie TYLKO w modułach z tłumaczeniami:
+```yaml
+# general.otui
+I18NQtButton    # zamiast QtButton
+  id: hotkeysButton
+  min-width: 120
+  height: 20
+```
+
+**Decyzja do podjęcia**: 
+- Opcja 1: Zostawić globalną zmianę, ale dodać regresyjne sprawdzenie (Sekcja 13.2)
+- Opcja 2: Wycofać globalną zmianę Button, stworzyć I18NButton/I18NQtButton
+- **Rekomendacja**: Opcja 2 jest bezpieczniejsza. Opcja 1 potencjalnie poprawia UX
+  globalnie (wszystkie przyciski lepiej obsługują tłumaczenia), ale ryzyko regresji
+  jest wysokie bez pełnych testów wizualnych.
+
+**Priorytet**: ŚREDNI — wymaga decyzji. Można zostawić globalne na razie, ale mieć
+plan rollback jeśli testy pokażą regresje.
+
+**Status**: ⬜ DECYZJA OCZEKUJE
+
+---
+
+### 13.4 (D) Klucze tłumaczeń kategorii — stabilne namespace ID
+
+**Problem**: W Sekcji 11.3 owinięto nazwy kategorii w `tr()`:
+```lua
+text = tr("Controls")       -- gołe stringi jako klucze
+text = tr("General Hotkeys")
+text = tr("Graphics")
+```
+
+To jest słabsze niż stabilne namespace ID bo:
+- "Controls" może wystąpić w wielu kontekstach (NPC dialog, battle list, keybinds)
+- Trudniej utrzymać spójnie w i18n (różne tłumaczenie "Controls" w zależności od kontekstu)
+- Plan sam sugerował w Sekcji 6 użycie `tr("otclient_modules.options.category_controls")`
+
+**Co trzeba zrobić**: Ujednolicić do namespace ID:
+
+```lua
+-- PRZED (obecny stan):
+text = tr("Controls")
+text = tr("General Hotkeys")
+text = tr("Graphics")
+text = tr("Sound")
+text = tr("Misc.")
+text = tr("Interface")
+text = tr("Console")
+text = tr("HUD")
+text = tr("Effects")
+text = tr("Help")
+
+-- PO (docelowy):
+text = tr("otclient_modules.options.category_controls")
+text = tr("otclient_modules.options.category_general_hotkeys")
+text = tr("otclient_modules.options.category_graphics")
+text = tr("otclient_modules.options.category_sound")
+text = tr("otclient_modules.options.category_misc")
+text = tr("otclient_modules.options.category_interface")
+text = tr("otclient_modules.options.category_console")
+text = tr("otclient_modules.options.category_hud")
+text = tr("otclient_modules.options.category_effects")
+text = tr("otclient_modules.options.category_help")
+```
+
+Klucze w plikach locale:
+```json
+// i18n/pl/otclient_modules.json
+{
+  "otclient_modules.options.category_controls": "Sterowanie",
+  "otclient_modules.options.category_general_hotkeys": "Ogólne skróty klawiszowe",
+  "otclient_modules.options.category_graphics": "Grafika",
+  "otclient_modules.options.category_sound": "Dźwięk",
+  "otclient_modules.options.category_misc": "Różne",
+  "otclient_modules.options.category_interface": "Interfejs",
+  "otclient_modules.options.category_console": "Konsola",
+  "otclient_modules.options.category_hud": "HUD",
+  "otclient_modules.options.category_effects": "Efekty",
+  "otclient_modules.options.category_help": "Pomoc"
+}
+```
+
+**Priorytet**: ŚREDNI — obecne `tr("Controls")` DZIAŁA (bo fallback = klucz = angielski),
+ale docelowo powinno być zamienione na namespace ID dla spójności z resztą systemu i18n.
+
+**Status**: ⬜ DO ZROBIENIA (ale nie blokujące)
+
+---
+
+### 13.5 (E) Height problem — text-wrap bez auto-fit-parent-height ucina tekst
+
+**Problem**: Dodano `text-wrap: true` do `OptionCheckBox` (Sekcja 11.2), ale:
+- `SmallReversedQtPanel` ma `height: 22` (stałe) — zawinięty tekst 2-linijkowy
+  wymaga ~44px, ale parent panel na to nie pozwala
+- Element `OptionCheckBox` jest anchored `left+right` → szerokość OK, ale
+  `height` nie rośnie automatycznie bo:
+  - `text-wrap: true` łamie tekst — ✅
+  - `text-vertical-auto-resize` MUSIAŁBY być dodane żeby widget urósł w pionie — ❌ brak
+  - Nawet jeśli widget urośnie — rodzic `SmallReversedQtPanel` ma stałą wysokość 22px
+
+**Łańcuch napraw wymagany** (od dołu do góry):
+
+```
+OptionCheckBox (text-wrap: true → tekst się łamie)
+  + text-vertical-auto-resize: true  ← DODAĆ (widget rośnie w pionie)
+  + auto-fit-parent-height: true     ← DODAĆ (informuje SmallReversedQtPanel)
+
+SmallReversedQtPanel (height: 22 → ZMIENIĆ)
+  - height: 22                       ← USUNĄĆ
+  + min-height: 22                   ← DODAĆ (zamiast stałego height)
+  + auto-fit-parent-height: true     ← DODAĆ (informuje panel treści)
+```
+
+**Pliki do modyfikacji**:
+
+| Plik | Zmiana |
+|---|---|
+| `data/styles/10-checkboxes.otui` | `OptionCheckBox`: + `text-vertical-auto-resize: true` + `auto-fit-parent-height: true` |
+| `modules/client_options/styles/controls/general.otui` | `SmallReversedQtPanel`: `height: 22` → `min-height: 22` |
+| `modules/client_options/styles/graphics/graphics.otui` | j.w. |
+| `modules/client_options/styles/interface/interface.otui` | j.w. |
+| `modules/client_options/styles/interface/console.otui` | j.w. |
+| `modules/client_options/styles/interface/HUD.otui` | j.w. |
+| `modules/client_options/styles/effects/effects.otui` | j.w. |
+| `modules/client_options/styles/audio/audio.otui` | j.w. (height: 22 i 44) |
+| `modules/client_options/styles/misc/misc.otui` | j.w. (height: 22 i 55) |
+
+**Uwaga na audio/misc**: Niektóre panele mają height: 44 lub 55 (slider + label).
+Te wymagają `min-height` odpowiednio 44 / 55, nie 22.
+
+**Priorytet**: WYSOKI — bez tego text-wrap jest kosmetyczny (tekst się łamie ale
+jest ucięty przez stałą wysokość rodzica). To jest **must-have** przed włączeniem
+tłumaczeń z dłuższymi tekstami.
+
+**Status**: ⬜ DO ZROBIENIA (zaplanowane jako Faza 4 w Sekcji 10)
+
+---
+
+### 13.6 (F) Observability — debug logging w autoFitParent()
+
+**Problem**: Przy problemach z UI, bez logów debug będzie męką. Nie wiadomo
+który widget spowodował resize, o ile pikseli, w której osi.
+
+**Co trzeba dodać**: Tryb debug włączany flagą, logujący decyzje resize:
+
+```cpp
+// W autoFitParent() — po obliczeniu needsResize:
+if (needsResize) {
+    #ifdef DEBUG_AUTO_FIT_PARENT
+    g_logger.debug(stdext::format(
+        "[autoFitParent] widget '%s' overflows parent '%s': "
+        "fitW=%s fitH=%s overflow=(%d, %d) oldSize=(%d,%d) newSize=(%d,%d)",
+        getId(), parent->getId(),
+        fitWidth ? "true" : "false", fitHeight ? "true" : "false",
+        fitWidth ? (maxChildRight - parentPaddingRect.right()) : 0,
+        fitHeight ? (maxChildBottom - parentPaddingRect.bottom()) : 0,
+        parent->getWidth(), parent->getHeight(),
+        newParentWidth, newParentHeight
+    ));
+    #endif
+    
+    // ... existing resize code ...
+}
+
+// Przy skip z powodu dual-anchored:
+if (skipWidth && skipHeight) {
+    #ifdef DEBUG_AUTO_FIT_PARENT
+    g_logger.debug(stdext::format(
+        "[autoFitParent] widget '%s' SKIPPED — dual-anchored to parent '%s' (skipW=%s skipH=%s)",
+        getId(), parent->getId(),
+        skipWidth ? "true" : "false", skipHeight ? "true" : "false"
+    ));
+    #endif
+}
+```
+
+**Alternatywa** (bez #ifdef, runtime): Użyć istniejącego systemu logowania z poziomem:
+```cpp
+// Użycie g_logger.trace() — domyślnie wyłączone, włączane przez --log-level=trace
+if (needsResize)
+    g_logger.trace(stdext::format("[autoFitParent] '%s' → parent '%s': +%dpx width, +%dpx height",
+        getId(), parent->getId(),
+        newParentWidth - parent->getWidth(), newParentHeight - parent->getHeight()));
+```
+
+**Do Lua też** — expose trybu debug:
+```lua
+-- Włączenie debug w runtime (konsola klienta):
+g_ui.setAutoFitParentDebug(true)
+-- Wyłączenie:
+g_ui.setAutoFitParentDebug(false)
+```
+
+**Priorytet**: NISKI — przydatne przy debugowaniu, ale nie blokujące.
+Najłatwiej dodać `g_logger.trace()` (jedna linia) bez żadnych nowych flag/API.
+
+**Status**: ⬜ DO ZROBIENIA (niskoprzychodowy, ale tani do dodania)
+
+---
+
+### 13.7 Podsumowanie priorytetów
+
+| Punkt | Opis | Priorytet | Trudność | Zależności |
+|---|---|---|---|---|
+| **A** | Window clamp policy (max-width/max-height) | **WYSOKI** | Łatwa | Tylko OTUI + opcjonalnie Lua |
+| **B** | Testy regresyjne (overflow check + matryca) | **WYSOKI** | Średnia | Lua skrypt + ręczne testy |
+| **C** | Izolacja stylu Button (I18NButton) | **ŚREDNI** | Łatwa | Decyzja architektoniczna |
+| **D** | Namespace ID kluczy tłumaczeń | **ŚREDNI** | Łatwa | Lua + pliki locale |
+| **E** | text-wrap + auto-fit-parent-height chain | **WYSOKI** | Średnia | C++ + OTUI (wiele plików) |
+| **F** | Debug logging autoFitParent() | **NISKI** | Trivial | 1-3 linie C++ |
+
+**Gdyby wybrać JEDNĄ rzecz**: Punkt **A + E** łącznie — dodać `max-width`/`max-height`
+jako limity bezpieczeństwa PLUS naprawić łańcuch `text-wrap` → `auto-fit-parent-height`
+żeby zawinięty tekst nie był ucinany. Te dwa razem eliminują >80% ryzyka regresji.
+
+**Kolejność implementacji**:
+1. **E** — height chain (must-have, bo bez tego text-wrap nie działa poprawnie)
+2. **A** — max-size clamp (safety net, OTUI-only, szybka zmiana)
+3. **B** — overflow check Lua + scenariusze (walidacja po E+A)
+4. **D** — namespace ID (cleanup, nie blokujące)
+5. **C** — izolacja Button stylu (jeśli regresje z B pokażą problemy)
+6. **F** — debug logging (nice-to-have)
+

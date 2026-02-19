@@ -1,10 +1,10 @@
 {
   "lang": "es",
-  "coverage_pct": 85.0,
+  "coverage_pct": 85.1,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T20:35:47.531648Z",
+  "checked_at": "2026-02-19T21:02:50.558712Z",
   "issues_total": 515,
   "issues_by_type": {
     "consistency_in_language": 70,
@@ -4422,6 +4422,15 @@
       "lang": "col-12 col-sm-12 col-lg-10"
     },
     {
+      "key": "questlog.quest_37.mission_3.name",
+      "category": "questlog",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knowledge",
+      "pl": "Wiedzy",
+      "lang": "Knowledge"
+    },
+    {
       "key": "quests.dreamers_challenge.clock_word_3",
       "category": "quests",
       "type": "pl_reference_missing_translation",
@@ -4654,15 +4663,6 @@
       "en": "<screeeech> <squeak> <squeaaaaal>",
       "pl": "<skrzyp> <pisk> <przeciągły pisk>",
       "lang": "<screeeech> <squeak> <squeaaaaal>"
-    },
-    {
-      "key": "scripts.blueberry_cupcake.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mmmm.",
-      "pl": "Mmm.",
-      "lang": "Mmmm."
     }
   ],
   "length_ratio_issues": [

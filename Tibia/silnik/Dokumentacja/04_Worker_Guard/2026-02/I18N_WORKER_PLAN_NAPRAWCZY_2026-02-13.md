@@ -431,12 +431,29 @@ head -n 100 i18n/status/pl_es_problem_cases_*.txt
 
 ### 4) Plan wdrożeniowy (zadania)
 
-- [ ] `WQ-HARD-12 (P0)`: Implementować `guard_fail_breakdown_latest.json` + publikację w `I18N_STATUS.md`.
-- [ ] `WQ-HARD-13 (P0)`: Dodać detektory `en_marker_present`, `artifact_token_detected`, `mixed_language_ratio` dla PL/ES.
+- [x] `WQ-HARD-12 (P0)`: Implementować `guard_fail_breakdown_latest.json` + publikację w `I18N_STATUS.md`.
+- [x] `WQ-HARD-13 (P0)`: Dodać detektory `en_marker_present`, `artifact_token_detected`, `mixed_language_ratio` dla PL/ES.
 - [ ] `WQ-HARD-14 (P0)`: Dodać auto-fix klasy `AUTO_FIX_NOW` (`[EN]`, tokeny artefaktowe, hybrydy oczywiste).
 - [ ] `WQ-HARD-15 (P1)`: Dodać `proper_noun_exemption` + whitelisty domenowe, aby ograniczyć false-positive.
 - [ ] `WQ-HARD-16 (P1)`: Dodać tryb audytu „recent keys without HIGH/CRITICAL” do dashboardu.
 - [ ] `WQ-HARD-17 (P0)`: Przygotować „critical bad keys pack” PL/ES i zassać do `i18n/overrides/{lang}.json` po review.
+
+### 4.1) Status wdrożenia (2026-02-19)
+
+Wdrożone w kodzie worker/status:
+- `WQ-HARD-12`: nowy artefakt `i18n/status/guard_fail_breakdown_latest.json` + historia `i18n/status/guard_fail_breakdown_report.jsonl`.
+- Breakdown liczy: `by_type`, `by_source`, `by_language`, `by_category`, `by_severity`, `top_types`, `top_keys` (okno `STATUS_STRICT_WINDOW_HOURS`).
+- Artefakt jest podpięty pod status globalny (`translation_global_overview.json`) i summary QUALITY (`guard_fail_breakdown_summary`).
+
+- `WQ-HARD-13`: dodane dedykowane detektory dla PL/ES w `detect_suspicious`:
+  - `en_marker` (`[EN]`),
+  - `lang_marker` (`[PL]/[ES]/[LANG]`),
+  - `mission_token` (`npc.bozo.mission_`),
+  - `fx_token` (`fx`, `fxHttpResponse`, `mango fx`).
+
+Efekt operacyjny:
+- QUALITY sekcja korzysta teraz z obu źródeł (`quality_audit_latest.json` + `guard_fail_breakdown_latest.json`) i bierze najnowszy timestamp.
+- Mamy gotowy fundament telemetryczny pod kolejne zadania (`WQ-HARD-14..17`).
 
 ### 5) Zakres na teraz
 

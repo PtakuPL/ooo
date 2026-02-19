@@ -71742,5 +71742,389 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T20:49:49.325090Z"
+  },
+  "otclient_modules.character.tr_22": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "Dalla Ruota",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.404639Z"
+  },
+  "otclient_modules.character.tr_23": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "Dall'attrezzatura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.405107Z"
+  },
+  "otclient_modules.character.tr_24": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Dalla Base",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.405510Z"
+  },
+  "otclient_modules.character.tr_29": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "Dalla Ruota",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.406477Z"
+  },
+  "otclient_modules.character.tr_3": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Dalla Base",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.406922Z"
+  },
+  "otclient_modules.character.tr_30": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "Dall'attrezzatura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.407553Z"
+  },
+  "otclient_modules.character.tr_34": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "Dalla Ruota",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.408222Z"
+  },
+  "otclient_modules.character.tr_35": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "Dall'attrezzatura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.409241Z"
+  },
+  "otclient_modules.character.tr_36": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Dalla Base",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.410456Z"
+  },
+  "otclient_modules.character.tr_40": {
+    "src_hash": "7bd2fce7008b193b40988850bddd4d9e",
+    "text": "Dall'amplificazione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.412660Z"
+  },
+  "otclient_modules.character.tr_41": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Dalla Base",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.413578Z"
+  },
+  "otclient_modules.character.tr_43": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "Dalla Ruota",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.414634Z"
+  },
+  "otclient_modules.character.tr_44": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "Dall'attrezzatura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.416204Z"
+  },
+  "otclient_modules.character.tr_45": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Dalla Base",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.417952Z"
+  },
+  "otclient_modules.character.tr_47": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "Dalla Ruota",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.421624Z"
+  },
+  "otclient_modules.character.tr_48": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "Dall'attrezzatura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.422874Z"
+  },
+  "otclient_modules.character.tr_49": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Dalla Base",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.424203Z"
+  },
+  "otclient_modules.character.tr_52": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "Dall'attrezzatura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.425802Z"
+  },
+  "otclient_modules.character.tr_6": {
+    "src_hash": "7bd2fce7008b193b40988850bddd4d9e",
+    "text": "Dall'amplificazione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.427664Z"
+  },
+  "otclient_modules.character.tr_7": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Dalla Base",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.429870Z"
+  },
+  "otclient_modules.character.tr_9": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "Dalla Ruota",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.432678Z"
+  },
+  "otclient_modules.character_otui.tr_14": {
+    "src_hash": "c1e1720c794250f5f1eeec1221d407e4",
+    "text": "Benedizioni",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.434555Z"
+  },
+  "otclient_modules.character_otui.tr_36": {
+    "src_hash": "b1c94ca2fbc3e78fc30069c8d0f01680",
+    "text": "Tutto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.438017Z"
+  },
+  "otclient_modules.charms.tr_58": {
+    "src_hash": "b01b83048682460e96eb4bd2482b8c32",
+    "text": "Schivare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.460951Z"
+  },
+  "otclient_modules.createaccount.tr_1": {
+    "src_hash": "b1c94ca2fbc3e78fc30069c8d0f01680",
+    "text": "Tutto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.495517Z"
+  },
+  "otclient_modules.createaccount.tr_2": {
+    "src_hash": "b1c94ca2fbc3e78fc30069c8d0f01680",
+    "text": "Tutto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.496399Z"
+  },
+  "otclient_modules.game_stash_otui.tr_5": {
+    "src_hash": "4cfa6c981549e990fe2344e4c805405e",
+    "text": "Trovare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.557138Z"
+  },
+  "otclient_modules.gameinterface.tr_33": {
+    "src_hash": "d1d839ea1702ef006d8b44a77b3e869c",
+    "text": "Sfoglia campo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.566499Z"
+  },
+  "otclient_modules.gameinterface.tr_39": {
+    "src_hash": "c3bf447eabe632720a3aa1a7ce401274",
+    "text": "Aprire",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.567603Z"
+  },
+  "otclient_modules.gameinterface.tr_41": {
+    "src_hash": "c3bf447eabe632720a3aa1a7ce401274",
+    "text": "Aprire",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.568161Z"
+  },
+  "otclient_modules.items.tr_4": {
+    "src_hash": "b1c94ca2fbc3e78fc30069c8d0f01680",
+    "text": "Tutto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.656424Z"
+  },
+  "otclient_modules.key_edit_otui.tr_4": {
+    "src_hash": "408821667f19315b91358f483ff8ca0c",
+    "text": "Questo tasto di scelta rapida è già in uso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.662531Z"
+  },
+  "otclient_modules.key_edit_otui.tr_5": {
+    "src_hash": "86bf8c83da4f5af265f1b9bd9ca54afb",
+    "text": "Questa azione deve essere associata a una singola chiave.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.663229Z"
+  },
+  "otclient_modules.keybinds_otui.tr_3": {
+    "src_hash": "12b85f0c6014754a8a24ca2317db6453",
+    "text": "Chiave secondaria",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.665359Z"
+  },
+  "otclient_modules.keybinds_otui.tr_4": {
+    "src_hash": "5b5ad81b074b5c50c4572d2945eeb06b",
+    "text": "Chiave primaria",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.665861Z"
+  },
+  "otclient_modules.keybinds_otui.tr_8": {
+    "src_hash": "ef5f632a19ebffc1a66684faa729528b",
+    "text": "Modalità chat disattivata",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.667298Z"
+  },
+  "otclient_modules.keybinds_otui.tr_9": {
+    "src_hash": "2aaf58cf1cc24ecdd65a8d45166107ee",
+    "text": "Modalità chat attivata",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.667964Z"
+  },
+  "otclient_modules.mainpanel.tr_1": {
+    "src_hash": "a3a08e8fe1d8358180652735a1c0f31f",
+    "text": "Pulsanti di controllo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.670844Z"
+  },
+  "otclient_modules.mainpanel.tr_4": {
+    "src_hash": "a3a08e8fe1d8358180652735a1c0f31f",
+    "text": "Pulsanti di controllo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.671888Z"
+  },
+  "otclient_modules.mainpanel.tr_6": {
+    "src_hash": "a3a08e8fe1d8358180652735a1c0f31f",
+    "text": "Pulsanti di controllo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.672644Z"
+  },
+  "otclient_modules.market.tr_17": {
+    "src_hash": "b5397350cbd6dcc4fe899771c728f5d1",
+    "text": "Bilancia:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.675185Z"
+  },
+  "otclient_modules.skills_otui.tr_3": {
+    "src_hash": "37323780191d51a33d295ac10fb98f06",
+    "text": "Slancio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.721872Z"
+  },
+  "otclient_modules.skills_otui.tr_31": {
+    "src_hash": "37323780191d51a33d295ac10fb98f06",
+    "text": "Slancio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.722841Z"
+  },
+  "otclient_modules.skills_otui.tr_32": {
+    "src_hash": "b01b83048682460e96eb4bd2482b8c32",
+    "text": "Schivare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.723725Z"
+  },
+  "otclient_modules.skills_otui.tr_5": {
+    "src_hash": "b01b83048682460e96eb4bd2482b8c32",
+    "text": "Schivare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:14.732489Z"
+  },
+  "otclient_modules.character.tr_25": {
+    "src_hash": "7c2d5c73ed9d8b142c16ea01c83d8661",
+    "text": "Dalle tattiche di combattimento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:17.442204Z"
+  },
+  "otclient_modules.character.tr_26": {
+    "src_hash": "13bc1cebc074005a56d4340643202b24",
+    "text": "Dalla schermatura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:17.442763Z"
+  },
+  "otclient_modules.character.tr_27": {
+    "src_hash": "05b12fcc019db2164e02024fe9578620",
+    "text": "Mitigazione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:59:17.443087Z"
   }
 }

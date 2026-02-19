@@ -174550,5 +174550,109 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T20:42:18.045378Z"
+  },
+  "monster.inky.voice_2": {
+    "src_hash": "5a633e68eefac8100e3a4b591ea0fcdd",
+    "text": "Гаааххх!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:57:31.840234Z"
+  },
+  "monster.quara_constrictor.voice_4": {
+    "src_hash": "5a633e68eefac8100e3a4b591ea0fcdd",
+    "text": "Гаааххх!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:57:33.066367Z"
+  },
+  "monster.quara_constrictor_scout.voice_2": {
+    "src_hash": "5a633e68eefac8100e3a4b591ea0fcdd",
+    "text": "Гаааххх!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:57:33.132122Z"
+  },
+  "monster.inky.voice_1": {
+    "src_hash": "e762b0133b132a4bfc8e79d8d8e177b6",
+    "text": "Тсссс!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:57:39.325943Z"
+  },
+  "monster.azerus2.name": {
+    "src_hash": "b4e4bfc24fbda1ea27b6d8c5a2f0ed0e",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:57:39.326604Z"
+  },
+  "monster.azerus2.desc": {
+    "src_hash": "b4e4bfc24fbda1ea27b6d8c5a2f0ed0e",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:57:44.946371Z"
+  },
+  "monster.azerus.name": {
+    "src_hash": "b4e4bfc24fbda1ea27b6d8c5a2f0ed0e",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:57:44.947224Z"
+  },
+  "monster.azerus.desc": {
+    "src_hash": "b4e4bfc24fbda1ea27b6d8c5a2f0ed0e",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:57:44.948156Z"
+  },
+  "monster.yalahari.voice_2": {
+    "src_hash": "e01705bf48fdb0c5ebd7178746830ec9",
+    "text": "Поздрав __ПХ0__.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:57:44.948980Z"
+  },
+  "monster.tormented_ghost.voice_1": {
+    "src_hash": "ef0f2ac3017d06998f9dbac5be6f956d",
+    "text": "Хаааххх",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:57:44.949589Z"
+  },
+  "monster.tormented_ghost.voice_2": {
+    "src_hash": "97a130bddb1867754449179de6285f3e",
+    "text": "Грргллл",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:57:49.964288Z"
+  },
+  "monster.sharptooth.voice_1": {
+    "src_hash": "69ed25be895c3bbd444a1ab42ad03bc0",
+    "text": "Гнаррр!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:57:49.964677Z"
+  },
+  "monster.sharptooth.voice_2": {
+    "src_hash": "f4eac71ef6f50c82aaaf527c0bb7a09e",
+    "text": "Тцхаррр!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:57:49.965107Z"
   }
 }

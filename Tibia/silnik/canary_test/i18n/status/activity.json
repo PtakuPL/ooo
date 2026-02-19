@@ -1,9 +1,9 @@
 {
-  "category": "ru",
-  "cycle": 8,
+  "category": "ro",
+  "cycle": 1,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-19T20:56:50Z",
+  "generated_at_utc": "2026-02-19T21:04:38Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -14,103 +14,103 @@
   "recent": [
     {
       "action": "update",
-      "category": "sv",
-      "cycle": 8,
-      "file": "monsters.json",
+      "category": "ru",
+      "cycle": 1,
+      "file": "cpp.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-19T20:56:41Z"
-    },
-    {
-      "action": "update",
-      "category": "sv",
-      "cycle": 8,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-19T20:56:40Z"
-    },
-    {
-      "action": "update",
-      "category": "ro",
-      "cycle": 8,
-      "file": "otclient_modules.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-19T20:56:04Z"
-    },
-    {
-      "action": "update",
-      "category": "ro",
-      "cycle": 8,
-      "file": "otclient_modules.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-19T20:56:04Z"
+      "t": "2026-02-19T21:02:10Z"
     },
     {
       "action": "update",
       "category": "ru",
-      "cycle": 8,
+      "cycle": 1,
+      "file": "cpp.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-19T21:02:09Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 1,
+      "file": "questlog.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-19T21:02:01Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 1,
+      "file": "questlog.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-19T21:02:01Z"
+    },
+    {
+      "action": "update",
+      "category": "ro",
+      "cycle": 1,
       "file": "questlog.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_done",
-      "t": "2026-02-19T20:56:01Z"
+      "t": "2026-02-19T21:01:57Z"
     },
     {
       "action": "update",
-      "category": "ru",
-      "cycle": 8,
+      "category": "ro",
+      "cycle": 1,
       "file": "questlog.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-19T20:55:42Z"
+      "t": "2026-02-19T21:01:52Z"
     },
     {
       "action": "update",
-      "category": "ru",
-      "cycle": 8,
+      "category": "ro",
+      "cycle": 1,
       "file": "questlog.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_start",
-      "t": "2026-02-19T20:55:42Z"
+      "t": "2026-02-19T21:01:52Z"
     },
     {
       "action": "update",
       "category": "es",
-      "cycle": 7,
+      "cycle": 1,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-19T20:54:26Z"
+      "t": "2026-02-19T20:59:58Z"
     },
     {
       "action": "update",
-      "category": "it",
-      "cycle": 7,
-      "file": "raids.json",
+      "category": "ru",
+      "cycle": 1,
+      "file": "books.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-19T20:54:06Z"
+      "t": "2026-02-19T20:59:22Z"
     },
     {
       "action": "update",
-      "category": "it",
-      "cycle": 7,
-      "file": "raids.json",
+      "category": "ru",
+      "cycle": 1,
+      "file": "books.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-19T20:54:06Z"
+      "t": "2026-02-19T20:59:22Z"
     }
   ],
   "stage": "cycle_end",

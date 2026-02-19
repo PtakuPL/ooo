@@ -1,8 +1,8 @@
 {
-  "total_cycles": 8,
+  "total_cycles": 1,
   "mode": "AUTO_TRANSLATE",
-  "category": "ru",
-  "last_update": "2026-02-19T21:56:50.034493",
+  "category": "ro",
+  "last_update": "2026-02-19T22:04:38.657615",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,9 +26,9 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "ru",
+    "language": "ro",
     "json_file": "questlog.json",
-    "keys_to_translate": 1825,
+    "keys_to_translate": 1785,
     "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",

@@ -1,17 +1,17 @@
 {
   "total_languages": 53,
   "total_en_keys": 53586,
-  "validated_at": "2026-02-19T20:38:49.306961Z",
+  "validated_at": "2026-02-19T21:04:38.294664Z",
   "by_score": {
     "ru": {
       "score": 62.7,
-      "coverage_pct": 50.4,
+      "coverage_pct": 50.5,
       "issues": 6585,
       "critical": 148,
       "high": 6429,
       "crossref_issues": 129,
       "crossref_autofix_applied": 0,
-      "translated": 27027,
+      "translated": 27051,
       "script_group": "cyrillic"
     },
     "bn": {
@@ -258,13 +258,13 @@
     },
     "es": {
       "score": 99.9,
-      "coverage_pct": 85.0,
-      "issues": 45,
+      "coverage_pct": 85.1,
+      "issues": 44,
       "critical": 0,
       "high": 42,
       "crossref_issues": 515,
       "crossref_autofix_applied": 0,
-      "translated": 45538,
+      "translated": 45586,
       "script_group": "latin"
     },
     "et": {
@@ -407,7 +407,7 @@
       "high": 13,
       "crossref_issues": 0,
       "crossref_autofix_applied": 0,
-      "translated": 47028,
+      "translated": 47070,
       "script_group": "latin"
     },
     "sk": {
@@ -451,7 +451,7 @@
       "high": 11,
       "crossref_issues": 65,
       "crossref_autofix_applied": 0,
-      "translated": 24333,
+      "translated": 24342,
       "script_group": "cyrillic"
     },
     "sw": {
@@ -511,13 +511,13 @@
     },
     "it": {
       "score": 100.0,
-      "coverage_pct": 51.3,
+      "coverage_pct": 51.5,
       "issues": 9,
       "critical": 0,
       "high": 9,
       "crossref_issues": 429,
       "crossref_autofix_applied": 0,
-      "translated": 27504,
+      "translated": 27581,
       "script_group": "latin"
     },
     "ja": {
@@ -544,24 +544,24 @@
     },
     "ro": {
       "score": 100.0,
-      "coverage_pct": 42.4,
+      "coverage_pct": 42.5,
       "issues": 3,
       "critical": 0,
       "high": 2,
       "crossref_issues": 419,
       "crossref_autofix_applied": 0,
-      "translated": 22712,
+      "translated": 22775,
       "script_group": "latin"
     },
     "sv": {
       "score": 100.0,
-      "coverage_pct": 28.9,
+      "coverage_pct": 29.0,
       "issues": 3,
       "critical": 1,
       "high": 2,
       "crossref_issues": 410,
       "crossref_autofix_applied": 0,
-      "translated": 15478,
+      "translated": 15517,
       "script_group": "latin"
     },
     "tr": {

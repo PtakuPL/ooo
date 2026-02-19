@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-19T20:34:18.952598Z",
+  "timestamp": "2026-02-19T20:44:25.246780Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,10 +65,10 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 698,
+  "entries_total": 699,
   "entries_by_lang": {
     "es": 277,
-    "pl": 139,
+    "pl": 142,
     "cs": 641,
     "de": 659,
     "fr": 578,
@@ -108,7 +108,7 @@
     "sl": 663,
     "sq": 663,
     "sr": 50,
-    "sv": 543,
+    "sv": 535,
     "sw": 905,
     "ta": 905,
     "te": 905,
@@ -256,6 +256,12 @@
     {
       "lang": "pl",
       "json_file": "client.json",
+      "identical_to_en": 3,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pl",
+      "json_file": "questlog.json",
       "identical_to_en": 3,
       "domain_priority": 9
     },
@@ -1313,12 +1319,6 @@
       "lang": "bg",
       "json_file": "questlog.json",
       "identical_to_en": 29,
-      "domain_priority": 9
-    },
-    {
-      "lang": "bg",
-      "json_file": "books.json",
-      "identical_to_en": 7,
       "domain_priority": 9
     }
   ],

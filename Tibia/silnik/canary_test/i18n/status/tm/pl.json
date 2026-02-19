@@ -116014,5 +116014,341 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T20:10:37.203520Z"
+  },
+  "questlog.quest_12.mission_14.name": {
+    "src_hash": "6e80d49f9e9e54275a090ff0dc3d227d",
+    "text": "Czarodziej Strój Zadanie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:01.888241Z"
+  },
+  "questlog.quest_12.mission_2.name": {
+    "src_hash": "4946a94cf07bce08b29a3b08cf435d75",
+    "text": "Obywatel Dodatek: Plecak",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:01.900142Z"
+  },
+  "questlog.quest_12.mission_3.name": {
+    "src_hash": "95046f2f1a95a85982ebb2906fa6cd74",
+    "text": "Obywatel Dodatek: Pióro Kapelusz",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:01.902100Z"
+  },
+  "questlog.quest_12.mission_6.name": {
+    "src_hash": "ddc8d93e7e901debfad40b29bad5ac73",
+    "text": "Druid Strój Zadanie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:01.914105Z"
+  },
+  "questlog.quest_12.mission_7.name": {
+    "src_hash": "3ccf612e9e60ec163184fa509bbbe12c",
+    "text": "Myśliwy Strój Zadanie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:01.919007Z"
+  },
+  "questlog.quest_12.mission_8.name": {
+    "src_hash": "a5d747348d1106920e2ff2592e56de5c",
+    "text": "Rycerz Dodatek: Hełm",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:01.921927Z"
+  },
+  "questlog.quest_21.mission_3.name": {
+    "src_hash": "6120e120be5c90e1ba9483f89b67cf4b",
+    "text": "Pythius Zgniły",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.031047Z"
+  },
+  "questlog.quest_26.mission_3.name": {
+    "src_hash": "2d4d6e770025e9ca97d6ff68b88b72c7",
+    "text": "Misja 3: Zaproszenie",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.174006Z"
+  },
+  "questlog.quest_26.mission_8.name": {
+    "src_hash": "ff959525eb27a2cffef10341d010eee7",
+    "text": "Misja 8: Wiadomość",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.190837Z"
+  },
+  "questlog.quest_27.mission_1.name": {
+    "src_hash": "8031f4869353ccccaf4e272470058ddc",
+    "text": "Misja 1: Trofeum",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.195049Z"
+  },
+  "questlog.quest_27.mission_3.name": {
+    "src_hash": "7c3e15bd5dd99c12b7de8e673c7657db",
+    "text": "Misja 3: Ser",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.199061Z"
+  },
+  "questlog.quest_28.mission_15.state_57": {
+    "src_hash": "297961cfcc588d3cff4c1fab08d8e558",
+    "text": "Udaj się do Okolnir i spróbuj znaleźć dowód na istnienie tam w dawnych czasach smoczych władców. Myślę, że stary Buddel mógłby cię tam zaprowadzić.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.215389Z"
+  },
+  "questlog.quest_28.mission_17.state_1": {
+    "src_hash": "b5eaf991a53a83dcad04574ca21f9632",
+    "text": "Kapitan Max zabierze cię do Calassa, kiedy tylko będziesz gotowy. Spróbuj odzyskać brakujący dziennik pokładowy, który musi znajdować się w jednym z zatopionych wraków.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.218922Z"
+  },
+  "questlog.quest_37.mission_3.name": {
+    "src_hash": "1e984dbe12c8a779526c498701b8bc73",
+    "text": "Wiedzy",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.359152Z"
+  },
+  "questlog.quest_37.name": {
+    "src_hash": "3e9ff2fb268bac02d2f150cae0aab8c5",
+    "text": "Pierwszy smok",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.361046Z"
+  },
+  "questlog.quest_42.mission_7.name": {
+    "src_hash": "63d0dda8546f560698c2824465b72ce8",
+    "text": "Misja 07: Atak!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.459568Z"
+  },
+  "questlog.quest_44.mission_3.name": {
+    "src_hash": "56f5c16c635720afeb25c7ab75d8bc3e",
+    "text": "Sekunda Misja",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.503042Z"
+  },
+  "questlog.quest_46.name": {
+    "src_hash": "a3ae225b7a5bb6a177c3dbe88511665e",
+    "text": "Krew Brat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.522021Z"
+  },
+  "questlog.quest_47.name": {
+    "src_hash": "99ef7c45c0dcfceeaacda911fba49a1a",
+    "text": "Grób Niebezpieczeństwo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.537509Z"
+  },
+  "questlog.quest_6.mission_2.state_2": {
+    "src_hash": "69591c705500b2dc3734eb7efb703dca",
+    "text": "Świątynia została zniszczona i zagubiona. Należy o tym jak najszybciej poinformować Zalamona.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.589600Z"
+  },
+  "questlog.quest_6.mission_4.state_2": {
+    "src_hash": "a636973c11a833c204194e7d7d92a1f9",
+    "text": "Ryż został zatruty. To znacznie osłabi armię cesarza. Wróć i opowiedz Zalamonowi o swoim sukcesie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.594404Z"
+  },
+  "questlog.quest_6.mission_5.state_4": {
+    "src_hash": "6cc64a1768db7e87acc0887eac7fe4ac",
+    "text": "Ze względu na to, że są wyjątkowo tłuste, listwy można teraz przesuwać.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:02.597799Z"
+  },
+  "questlog.common.mission_completed_format": {
+    "src_hash": "5c60f96b6affcb675f69133dc8c002fd",
+    "text": "%s (ukończone)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:06.743338Z"
+  },
+  "questlog.quest_1.mission_1.description": {
+    "src_hash": "84506f123942e87bbdb223433b1d0aa2",
+    "text": "Złamałeś pierwszą pieczęć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:06.743645Z"
+  },
+  "questlog.quest_1.mission_1.name": {
+    "src_hash": "90155bb7a9269a145cdb34f33bc6ec4b",
+    "text": "The Hidden Seal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:06.744275Z"
+  },
+  "questlog.quest_1.mission_2.description": {
+    "src_hash": "aa451c0927ac398a0c9607e68cabae40",
+    "text": "Złamałeś drugą pieczęć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:06.744593Z"
+  },
+  "questlog.quest_1.mission_2.name": {
+    "src_hash": "5d62cb4a590965bb7e705d2c1b6477b2",
+    "text": "The Plague Seal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:06.744980Z"
+  },
+  "questlog.quest_1.mission_3.description": {
+    "src_hash": "1b87b7e9e62dc33b3fced8800f935200",
+    "text": "Złamałeś trzecią pieczęć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:10.652505Z"
+  },
+  "questlog.quest_1.mission_4.description": {
+    "src_hash": "0664bf4422c184b63c1256f5b92c9fed",
+    "text": "Złamałeś czwartą pieczęć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:10.653383Z"
+  },
+  "questlog.quest_1.mission_5.description": {
+    "src_hash": "6fd3cbde44ef19588ccba52fc0e89d3e",
+    "text": "Złamałeś piątą pieczęć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:10.654600Z"
+  },
+  "questlog.quest_1.mission_6.description": {
+    "src_hash": "a6f58f97f0d653eded324c90dddb6e30",
+    "text": "Złamałeś szóstą pieczęć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:14.524651Z"
+  },
+  "questlog.quest_1.mission_7.description": {
+    "src_hash": "5df93ab653c84807b0cd359f4d7334cd",
+    "text": "Królowa Banshee cię pocałowała. Oznaczało to twoją śmierć, a część twojej duszy zawsze należy teraz do niej. Złamałeś ostatnią pieczęć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:14.525335Z"
+  },
+  "questlog.quest_1.mission_8.description": {
+    "src_hash": "9c32ee478633abbd64b5e57921dcd7cd",
+    "text": "Stawiłeś czoła wszystkim niebezpieczeństwom związanym z Wyprawą Banshee i uciekłeś żywy z lochów. Od tej chwili ostatnie pomieszczenie jest dla ciebie zamknięte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:18.216063Z"
+  },
+  "questlog.quest_1.mission_8.name": {
+    "src_hash": "51ae86f3a85c461e5e822d56e933ae93",
+    "text": "The Final Battle",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:18.216593Z"
+  },
+  "questlog.quest_10.mission_1.state_1": {
+    "src_hash": "7f6f2bdcc9d70c426a6e07eb1cd71a97",
+    "text": "Palimuth poprosił cię o pomoc w przypadku awarii kanalizacji. Będziesz potrzebował Łomu, są 4 miejsca, do których musisz się udać, zaznaczonych X na mapie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:18.217537Z"
+  },
+  "questlog.quest_10.mission_1.state_2": {
+    "src_hash": "e6e64f9275238b6ecc99b59f64a11a91",
+    "text": "Wyczyściłeś 1 rurę z 4 ze śmieci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:24.083360Z"
+  },
+  "questlog.quest_10.mission_1.state_3": {
+    "src_hash": "2776538e7a93252ae04bfd7069ef3c03",
+    "text": "Wyczyściłeś 2 rury z 4 ze śmieci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:24.083747Z"
+  },
+  "questlog.quest_10.mission_1.state_4": {
+    "src_hash": "60858fcece906d6ec05690e42c17b571",
+    "text": "Wyczyściłeś 3 rury z 4 ze śmieci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:24.084210Z"
+  },
+  "questlog.quest_10.mission_1.state_5": {
+    "src_hash": "c41b0c7d66177065ad1e3c2d575e5e29",
+    "text": "Wyczyściłeś 4 rury po 4 ze śmieci. Wróć do Palimuth i zgłoś swoją misję",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:24.084665Z"
+  },
+  "questlog.quest_10.mission_1.state_6": {
+    "src_hash": "ff42da2d6a89bd6a1df1efdc1d4c7152",
+    "text": "Oczyściłeś wszystkie rury ze śmieci! Wróć do Palimuth i poproś o misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:24.085123Z"
+  },
+  "questlog.quest_10.mission_10.state_1": {
+    "src_hash": "1c32cc3091d0dcf983a5e914e76e7e6e",
+    "text": "Palimuth powiedział ci, że krąg Yalahari planuje jakiś rytuał. Planują stworzyć portal dla potężnych demonów i wypuścić je w mieście, aby raz na zawsze 'purge'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:27.296575Z"
+  },
+  "questlog.quest_10.mission_10.state_2": {
+    "src_hash": "e7da10bf26b2899190b4fd22ca60b0a9",
+    "text": "Wejście do ich wewnętrznego sanktuarium zostało dla ciebie otwarte. Przygotuj się na TWARDĄ bitwę! Lepiej zbierz kilku przyjaciół, którzy ci pomogą.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:43:27.297745Z"
   }
 }

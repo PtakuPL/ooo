@@ -1,79 +1,178 @@
 {
-  "timestamp": "2026-02-19T20:42:22.310605Z",
+  "timestamp": "2026-02-19T20:45:06.718599Z",
   "checked_entries": 100,
-  "issues_found": 25,
+  "issues_found": 39,
   "issues_by_type": {
-    "artifact_token": 25,
-    "identical_to_en_exempt": 7,
-    "suspicious_log_high": 176,
-    "suspicious_log_critical": 22,
-    "suspicious_log_low": 2,
-    "suspicious_rejected_critical": 181,
-    "suspicious_rejected_high": 19
+    "identical_to_en": 23,
+    "identical_to_en_exempt": 2,
+    "artifact_token": 16,
+    "suspicious_log_high": 101,
+    "suspicious_log_low": 62,
+    "suspicious_log_critical": 37,
+    "suspicious_rejected_critical": 186,
+    "suspicious_rejected_high": 14
   },
   "issues": [
     {
-      "key": "npc.mother_of_jack.voice_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
-      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?"
+      "key": "questlog.quest_1.mission_1.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Hidden Seal",
+      "translated": "The Hidden Seal"
     },
     {
-      "key": "npc.navigator.multi_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
-      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ..."
+      "key": "questlog.quest_1.mission_2.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Plague Seal",
+      "translated": "The Plague Seal"
     },
     {
-      "key": "npc.navigator.multi_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
-      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ..."
+      "key": "questlog.quest_1.mission_8.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Final Battle",
+      "translated": "The Final Battle"
     },
     {
-      "key": "npc.omrabas.multi_35",
+      "key": "questlog.quest_11.mission_42.name",
       "lang": "es",
-      "type": "artifact_token",
-      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
-      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!"
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Sea Serpents",
+      "translated": "Paw and Fur: Sea Serpents"
     },
     {
-      "key": "npc.omrabas.multi_82",
+      "key": "questlog.quest_11.mission_43.name",
       "lang": "es",
-      "type": "artifact_token",
-      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
-      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!"
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Hellhounds",
+      "translated": "Paw and Fur: Hellhounds"
     },
     {
-      "key": "npc.omrabas.voice_2",
+      "key": "questlog.quest_11.mission_45.name",
       "lang": "es",
-      "type": "artifact_token",
-      "en": "He will PAY for this... They will ALL pay!",
-      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!"
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Drakens",
+      "translated": "Paw and Fur: Drakens"
     },
     {
-      "key": "npc.pythius_the_rotten.stdmod_12",
+      "key": "questlog.quest_11.mission_46.name",
       "lang": "es",
-      "type": "artifact_token",
-      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
-      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!"
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Destroyers",
+      "translated": "Paw and Fur: Destroyers"
     },
     {
-      "key": "npc.raymond_striker.multi_21",
+      "key": "questlog.quest_11.mission_48.name",
       "lang": "es",
-      "type": "artifact_token",
-      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Demons",
+      "translated": "Paw and Fur: Demons"
     },
     {
-      "key": "npc.sane_mage.multi_5",
+      "key": "questlog.quest_11.mission_50.name",
       "lang": "es",
-      "type": "artifact_token",
-      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Hide",
+      "translated": "Paw and Fur: Hide"
+    },
+    {
+      "key": "questlog.quest_11.mission_51.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Deathbine",
+      "translated": "Paw and Fur: Deathbine"
+    },
+    {
+      "key": "questlog.quest_11.mission_52.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: The Bloodtusk",
+      "translated": "Paw and Fur: The Bloodtusk"
+    },
+    {
+      "key": "questlog.quest_11.mission_53.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Shardhead",
+      "translated": "Paw and Fur: Shardhead"
+    },
+    {
+      "key": "questlog.quest_11.mission_54.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Esmerelda",
+      "translated": "Paw and Fur: Esmerelda"
+    },
+    {
+      "key": "questlog.quest_11.mission_55.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Fleshcrawler",
+      "translated": "Paw and Fur: Fleshcrawler"
+    },
+    {
+      "key": "questlog.quest_11.mission_56.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Ribstride",
+      "translated": "Paw and Fur: Ribstride"
+    },
+    {
+      "key": "questlog.quest_11.mission_57.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Bloodweb",
+      "translated": "Paw and Fur: Bloodweb"
+    },
+    {
+      "key": "questlog.quest_11.mission_58.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Thul",
+      "translated": "Paw and Fur: Thul"
+    },
+    {
+      "key": "questlog.quest_11.mission_59.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: The Old Widow",
+      "translated": "Paw and Fur: The Old Widow"
+    },
+    {
+      "key": "questlog.quest_11.mission_60.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Hemming",
+      "translated": "Paw and Fur: Hemming"
+    },
+    {
+      "key": "questlog.quest_11.mission_61.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Tormentor",
+      "translated": "Paw and Fur: Tormentor"
+    },
+    {
+      "key": "questlog.quest_11.mission_62.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Flameborn",
+      "translated": "Paw and Fur: Flameborn"
+    },
+    {
+      "key": "questlog.quest_11.mission_63.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Fazzrah",
+      "translated": "Paw and Fur: Fazzrah"
+    },
+    {
+      "key": "questlog.quest_11.mission_64.name",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Tromphonyte",
+      "translated": "Paw and Fur: Tromphonyte"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

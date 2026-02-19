@@ -32350,5 +32350,173 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T22:10:38.817802Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.wooden.trash.L12.2226": {
+    "src_hash": "ff4835c520d079c29c29fafb7687a7d2",
+    "text": "Du startade en eskort, få din fånge till dvärgposten!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.648189Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.wooden.trash.L24.2227": {
+    "src_hash": "464917965b3891096e423e2362e7f69c",
+    "text": "Du hittar inget av intresse under spillrorna.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.649062Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.first.L14.1928": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Något klickade samtidigt som ett bultande ljud nästan dövar dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.655198Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.second.L14.1971": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Något klickade samtidigt som ett bultande ljud nästan dövar dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.656046Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.lever.third.L14.1930": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Något klickade samtidigt som ett bultande ljud nästan dövar dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.656983Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.cobra.bastion.actions.scarlett.L77.2279": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Du får inte använda detta ännu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.660737Z"
+  },
+  "data.otservbr.global.scripts.quests.grave.danger.quest.cobra.bastion.actions.scarlett.L90.2280": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Du håller Galtheins gamla bröstskylt framför dig. Den passar inte och alldeles för gammal för att stå emot någon attack.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.661861Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tortoise.L5.1674": {
+    "src_hash": "0c1801ce0701d967a387328550672b5e",
+    "text": "Sköldpadda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.680168Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L54.2286": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "Sonden har justerats.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.685468Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L64.2287": {
+    "src_hash": "5ddadd6ad0c06716b93e59f10d11de37",
+    "text": "Enheten läser: \"onormal glooth-struktur upptäckt, möjlig sonderingsplats\"",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.686650Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L66.2288": {
+    "src_hash": "9d0ce14678d498a52e1d256ff430a7ca",
+    "text": "Hm... enheten läser: 0,0,zero,0,zero vilket ungefär kan översättas till: INGENTING AV INTRESSE HÄR",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.687906Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.probing.actions.mono.detector.strange.probing.device.L98.2289": {
+    "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
+    "text": "Du har framgångsrikt samlat in data.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.688776Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L13.2281": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Du skördar framgångsrikt några saftiga rötter.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.689573Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L26.2282": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Ditt skördeförsök förstörde mer av de saftiga rötterna än du kunde rädda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.690627Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L33.2283": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Du skördar framgångsrikt några saftiga rötter.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.691314Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L46.2284": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Ditt skördeförsök förstörde mer av de saftiga rötterna än du kunde rädda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.692074Z"
+  },
+  "data.otservbr.global.scripts.quests.oramond.to.take.roots.actions.to.take.roots.L52.2285": {
+    "src_hash": "092cbfa5e145ba8cdcd95cb397121daf",
+    "text": "Denna rot är redan skördad, inget att vinna här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.692764Z"
+  },
+  "data.otservbr.global.scripts.quests.rotten.blood.quest.actions.sacrifice.L6.2056": {
+    "src_hash": "95b20291f7eaa52a1751aa57227581e6",
+    "text": "Du har redan tillgång.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.695232Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.high.and.dry.isles.actions.telescope.L6.2318": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Teleskopet ger en perfekt utsikt över det ändlösa havet - inget land i sikte",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.723523Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.lament.asuras.actions.fragrance.L4.2306": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmm, vilken förtjusande doft!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.735197Z"
+  },
+  "data.otservbr.global.scripts.quests.the.secret.library.quest.the.order.of.the.falcon.actions.entrance.L17.2297": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Än en gång blandar du krita med en droppe av ditt blod och lite vatten och förnyar symbolen på golvet...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:23:17.740075Z"
   }
 }

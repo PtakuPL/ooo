@@ -174998,5 +174998,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T21:26:20.353819Z"
+  },
+  "data.otservbr.global.npc.captain.haba.open.sea.L162.1353": {
+    "src_hash": "4389112dadbf0109f2cda25d30028e4a",
+    "text": "Видимо се, ландлуббер!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:05.286199Z"
+  },
+  "data.otservbr.global.npc.captain.haba.open.sea.L176.1354": {
+    "src_hash": "2b367ae557ede3dde2b5e8540df6985c",
+    "text": "Изволите! Користите га на дизалици када видите чудовиште. Затим га допуните сваки пут када користите телескоп.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:05.288205Z"
   }
 }

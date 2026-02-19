@@ -116966,5 +116966,661 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T22:14:43.276456Z"
+  },
+  "questlog.quest_10.mission_10.state_3": {
+    "src_hash": "9e21da6fcc29ffa6c9847a3cf880135f",
+    "text": "Zgłoś się do dyrektora, któremu zdecydowałeś się pomóc, a otrzymasz stroje Yalaharian.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:36.703558Z"
+  },
+  "questlog.quest_10.mission_10.state_4": {
+    "src_hash": "50a2c9d2146acd319c824479bfe72f1e",
+    "text": "Masz dostęp do pokoju nagród. Wybierz ostrożnie, jaką nagrodę wybierzesz, ponieważ możesz wziąć tylko jeden przedmiot.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:36.705508Z"
+  },
+  "questlog.quest_10.mission_10.state_5": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Ukończyłeś zadanie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:42.118676Z"
+  },
+  "questlog.quest_10.mission_2.state_1": {
+    "src_hash": "5bc3655eef8888e19dd9be2b708ff629",
+    "text": "Musisz odnaleźć wszystkich 7 strażników i złożyć im raport. Powinieneś zacząć od Dzielnicy Zagranicznej lub Dzielnicy Handlowej i postępować zgodnie z kolejnością ścieżki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:42.119961Z"
+  },
+  "questlog.quest_10.mission_2.state_2": {
+    "src_hash": "38cb6d3e90758a5bfd5f69736361467c",
+    "text": "Zgłosiłeś się do jednego z 7 strażników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:42.120541Z"
+  },
+  "questlog.quest_10.mission_2.state_3": {
+    "src_hash": "2018efd17565ec9e1c23a13eb3bd3e88",
+    "text": "Zgłosiłeś się do 2 z 7 strażników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:42.121014Z"
+  },
+  "questlog.quest_10.mission_2.state_4": {
+    "src_hash": "454eb54b63e54a46ebf8cc00c95a37e6",
+    "text": "Zgłosiłeś się do 3 z 7 strażników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:48.159609Z"
+  },
+  "questlog.quest_10.mission_2.state_5": {
+    "src_hash": "a09cca3b675899dcd04da16bad8271b1",
+    "text": "Zgłosiłeś się do 4 z 7 strażników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:48.160716Z"
+  },
+  "questlog.quest_10.mission_2.state_6": {
+    "src_hash": "6a4ebae6d5875e626c9fb8590c195a5f",
+    "text": "Zgłosiłeś się do 5 z 7 strażników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:48.161689Z"
+  },
+  "questlog.quest_10.mission_2.state_7": {
+    "src_hash": "09a446a399d845cd713fd928e1fca7eb",
+    "text": "Zgłosiłeś się do 6 z 7 strażników",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:48.162706Z"
+  },
+  "questlog.quest_10.mission_2.state_8": {
+    "src_hash": "57274bdf136c3b2ee8b35d70518a5cf9",
+    "text": "Zgłosiłeś się do 7 z 7 strażników! Wróć do Palimuth i poproś o misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:48.164045Z"
+  },
+  "questlog.quest_10.mission_3.state_1": {
+    "src_hash": "1f7a97487f6700ecc85e5495a14ff655",
+    "text": "Zdobądź notatki w pokoju Palimutha i przeczytaj je. Po przeczytaniu notatek ponownie porozmawiaj z Palimuthem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:54.149540Z"
+  },
+  "questlog.quest_10.mission_3.state_2": {
+    "src_hash": "4eca682ed9c39d3560a345eed921f9ab",
+    "text": "Porozmawiaj z Azerus Yalahari w centrum miasta, aby otrzymać kolejną misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:54.150854Z"
+  },
+  "questlog.quest_10.mission_3.state_3": {
+    "src_hash": "61082b1b6594f55cb26a778dae44c37c",
+    "text": "Zdobądź notatki za Yalahari i przeczytaj je. Porozmawiaj ponownie z Azerus i po przeczytaniu notatek poproś go o misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:54.151747Z"
+  },
+  "questlog.quest_10.mission_3.state_4": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Poproś Palimutha o misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:54.152507Z"
+  },
+  "questlog.quest_10.mission_3.state_5": {
+    "src_hash": "8daaf77f13a72bbe0a6a03de55f12006",
+    "text": "Najpierw musisz zabić trzech nosicieli zarazy, a następnie zdobyć Formuły Alchemików. Kiedy już to zrobisz, wróć do Palimutha (dobra strona) lub Yalahari (Azerus) (zła strona).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:58.560768Z"
+  },
+  "questlog.quest_10.mission_4.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Poproś Palimutha o misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:58.562437Z"
+  },
+  "questlog.quest_10.mission_4.state_2": {
+    "src_hash": "73dca76c968e0da6c4e9b731c7c600d9",
+    "text": "W tej misji musisz udać się do Dzielnicy Handlowej i negocjować lub grozić panu Westowi. Po raz kolejny uzyskasz dostęp do mechanizmu, chociaż jeśli zdecydujesz się pomóc Palimuthowi, warto przejść kanałami.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:24:58.566572Z"
+  },
+  "questlog.quest_10.mission_4.state_3": {
+    "src_hash": "cde06a4d5da79510f0df9202c90a5e05",
+    "text": "Postanowiłeś pomóc Palimuthowi i zgłosić mu swoją misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:04.386378Z"
+  },
+  "questlog.quest_10.mission_4.state_4": {
+    "src_hash": "9fe5da3c0f71c8a09af85510534c8ba9",
+    "text": "Zdecydowałeś się pomóc Azerus, zgłoś mu swoją misję. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:04.387143Z"
+  },
+  "questlog.quest_10.mission_4.state_5": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Wróć do Azerus i zgłoś mu swoją misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:04.387807Z"
+  },
+  "questlog.quest_10.mission_4.state_6": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Poproś Azerus o misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:04.388304Z"
+  },
+  "questlog.quest_10.mission_5.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Poproś Palimutha o misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:10.803463Z"
+  },
+  "questlog.quest_10.mission_5.state_2": {
+    "src_hash": "2b3b293eb63c29ebf8c014c7b6971b72",
+    "text": "W tej misji zostaniesz poproszony o odnalezienie druida o imieniu Tamerin w Dzielnicy Areny. Masz teraz uprawnienia do korzystania z mechanizmu bramy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:10.804703Z"
+  },
+  "questlog.quest_10.mission_5.state_3": {
+    "src_hash": "62b9d2d37746c892dd4df931a0a33898",
+    "text": "Pierwszym z nich jest przyniesienie Tamerinowi butelki Animal Cure, którą możesz kupić od Siflinda na Nibelorze (na północny wschód od Svargrond).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:10.805736Z"
+  },
+  "questlog.quest_10.mission_5.state_4": {
+    "src_hash": "739c0509ff0989bf4f80c0f630a78c52",
+    "text": "teraz musisz zabić Gladiatora Morika i jako dowód przynieść jego hełm Tamerinowi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:10.806433Z"
+  },
+  "questlog.quest_10.mission_5.state_5": {
+    "src_hash": "393997f8fae41e4e5ae2b8e9a55ebb73",
+    "text": "Zdaj raport Tamerinowi, który wysłucha twojej prośby i możesz teraz dokonać wyboru: Bydło dla Palimutha (dobra strona), Bestie bojowe dla Yalahari (Azerus) (zła strona). Następnie zgłoś tego, dla którego zdecydowałeś się na misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:10.807539Z"
+  },
+  "questlog.quest_10.mission_5.state_6": {
+    "src_hash": "cde06a4d5da79510f0df9202c90a5e05",
+    "text": "Postanowiłeś pomóc Palimuthowi i zgłosić mu swoją misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:13.684484Z"
+  },
+  "questlog.quest_10.mission_5.state_7": {
+    "src_hash": "4958a0cafba75b54582d823362abf797",
+    "text": "Zdecydowałeś się pomóc Azerus, zgłoś mu swoją misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:13.685182Z"
+  },
+  "questlog.quest_10.mission_5.state_8": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Poproś Azerus o misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:13.685677Z"
+  },
+  "questlog.quest_10.mission_6.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Poproś Palimutha o misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:13.686310Z"
+  },
+  "questlog.quest_10.mission_6.state_2": {
+    "src_hash": "091357b2dd39db47864e2b36201e4ed6",
+    "text": "Yalahari (Azerus) zleca ci udanie się do Dzielnicy Cmentarnej i odnalezienie Dziwnej Rzeźby. Daje ci Urok Ducha i każe naładować go udręczonymi duszami duchów, które się tam znajdują, i wykorzystać je jako źródło energii. Palimuth chce Zaklęcia Naładowanego Ducha, aby uwolnić te dusze. Możesz teraz na nowo skorzystać z mechanizmu Dzielnicy Cmentarnej. Udaj się do dużego budynku w Dzielnicy Cmentarnej i użyj Uroku Ducha na Dziwnej Rzeźbie z tyłu pomieszczenia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:17.321604Z"
+  },
+  "questlog.quest_10.mission_6.state_3": {
+    "src_hash": "23cf4798636fbc19425b77e1f719de58",
+    "text": "Dobra strona: idź do Palimutha, zapytaj go o swoją misję i oddaj amulet. Zła strona: Zapytaj o swoją misję w Yalahari (Azerus) i oddaj ją.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:25:17.322951Z"
+  },
+  "achievement.29.name": {
+    "src_hash": "cedc49e0269758727254e72c75aa5dcd",
+    "text": "Przyjaciel małp",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:29:46.214277Z"
+  },
+  "achievement.29.description": {
+    "src_hash": "b4f2c90efb0ccb79dce18ad1c8f02572",
+    "text": "Znasz Banuta jak własną kieszeń i jesteś dobry w niszczeniu trumien i urn. Widok gigantycznych śladów stóp również nie powstrzymuje Cię przed eksploracją nieznanych obszarów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:29:46.217339Z"
+  },
+  "achievement.30.description": {
+    "src_hash": "a0917e973f1c35f0233ce5cfd68f30b4",
+    "text": "Twoja mapa jest Twoim przyjacielem — zawsze w tylnej kieszeni i pokryta niezliczonymi oznaczeniami ciekawych i przydatnych lokalizacji. Można powiedzieć, że bez tego możesz się zgubić – ale na szczęście nie ma sposobu, aby ci to odebrać.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:29:46.222319Z"
+  },
+  "achievement.31.description": {
+    "src_hash": "7df02b1b513daadb82b11fe0039b2095",
+    "text": "Udowodniłeś, że jesteś cennym sojusznikiem Maridów, a Gabel z radością zaprosił cię do handlu z Harounem i Nah'Bob, kiedy tylko chcesz. Choć wojna z Dżinami wciąż się nie skończyła, Maridowie nie mogą zawieść, mając cię po swojej stronie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:29:46.227673Z"
+  },
+  "achievement.32.name": {
+    "src_hash": "61ac595863ca09842f09930e5c3828ad",
+    "text": "Sojusznik Efreeta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:29:53.540106Z"
+  },
+  "achievement.32.description": {
+    "src_hash": "20b988aac29e27c26eec9c8256ddabd2",
+    "text": "Mimo że Efreetowie witali cię niechętnie i przez jakiś czas postrzegali cię jako „tylko człowieka”, udało ci się zaimponować Malorowi i zyskać jego szacunek oraz możliwości handlu z zielonymi dżinami.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:29:53.542351Z"
+  },
+  "achievement.33.description": {
+    "src_hash": "1c6fff7a4c743f2a409ea69ba581e37a",
+    "text": "Marzenia – czy są Twoją rzeczywistością? Dziwne wizje, tykanie zegarów, kładzenie się spać i budzenie się gdzie indziej – to była podróż, ale jesteś prawie pewien, że naprawdę ci się podobała.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:29:53.543887Z"
+  },
+  "achievement.34.description": {
+    "src_hash": "248af42ee7f522116370517a97a396d2",
+    "text": "Byłeś w miejscach, których większość ludzi nawet nie zna nazw. Zbieranie próbek botanicznych, zoologicznych i ektoplazmatycznych to Twoja codzienność i zawsze jesteś przygotowany na odkrywanie nowych horyzontów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:29:53.545953Z"
+  },
+  "achievement.35.name": {
+    "src_hash": "8e8b3c8ad5454c90b46c63685a0a6529",
+    "text": "Skaut morski",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:29:53.546277Z"
+  },
+  "achievement.35.description": {
+    "src_hash": "ebd201b31774f115a9c154c7be9b4398",
+    "text": "Nawet wrogie podwodne środowisko nie powstrzymuje Cię od wykonywania obowiązków na rzecz Explorer Society. Zwiad w krainie Quara to dla ciebie bułka z masłem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:39.593171Z"
+  },
+  "achievement.36.description": {
+    "src_hash": "655a8075a2d43bb9dee1f5b1e640d2be",
+    "text": "Wow – co to było? Nie wiesz, jak tu trafiłeś, ale jakimś cudem ci się to udało. Jak dostać się z Beregar do Kazordoon w mgnieniu oka - to coś, co te krasnoludy chciałyby wiedzieć, ale nie jesteście do końca pewni, jak to odtworzyć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:39.594906Z"
+  },
+  "achievement.37.name": {
+    "src_hash": "7c4fd821b693753b5075f58d226ec894",
+    "text": "Niedźwiedź",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:39.595261Z"
+  },
+  "achievement.37.description": {
+    "src_hash": "53439cb1241fbedd492a1c97544e0243",
+    "text": "Ciepły, futrzany i milutki – choć ten sam miś, którego właśnie przytuliłeś, prawdopodobnie rozerwałby cię na kawałki, gdyby był przytomny, przypominał ci tego starego pluszowego misia, który zawsze spał w twoim łóżku, gdy byłeś jeszcze mały.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:39.596651Z"
+  },
+  "achievement.38.name": {
+    "src_hash": "89b6492afd0a1d3c3ad2500e66397daf",
+    "text": "Zaklinacz duchów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:39.597083Z"
+  },
+  "achievement.38.description": {
+    "src_hash": "0dd5fcbb010b21e6048ac08453c2f649",
+    "text": "Nie polujesz na nich, rozmawiasz z nimi. Wiesz, że duchy mogą kryć tajemnice, które dawno zaginęły wśród żywych, i potrafisz namawiać je, aby ci je wyjawiły.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:46.030371Z"
+  },
+  "achievement.39.name": {
+    "src_hash": "81a750ab96522a925322085f1303be3b",
+    "text": "Aktywista na rzecz zwierząt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:46.031389Z"
+  },
+  "achievement.39.description": {
+    "src_hash": "a8b23e5d4644b8e5d4e2a30f6b7340ae",
+    "text": "Masz słabość do małych, słabych zwierzątek i robisz wszystko, co w Twojej mocy, aby je chronić – nawet jeśli prawdopodobnie zjadasz smoki na śniadanie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:46.033557Z"
+  },
+  "achievement.40.description": {
+    "src_hash": "a11e085ea30cd241684c85edebb64cd6",
+    "text": "Uściskałeś niedźwiedzie, pchałeś mamuty i udowodniłeś, że potrafisz pić. I choć masz lekkiego kaca, częściowo złamane żebro i tłusty włos na języku, z dumą możesz odtąd nazywać siebie honorowym barbarzyńcą.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:46.046655Z"
+  },
+  "achievement.41.name": {
+    "src_hash": "0c8b36785921bfb6224400066661e371",
+    "text": "Wysoki Inkwizytor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:46.048687Z"
+  },
+  "achievement.41.description": {
+    "src_hash": "c1b0412b48a32220db629bdc91bb0461",
+    "text": "To ty zadajesz tutaj pytania i wiesz, jak uzyskać odpowiedzi, które chcesz usłyszeć. Poza tym jesteś sławnym egzorcystą i tu i ówdzie zabijasz kilka wampirów i demonów. Ty i Twoja stawka stanowicie doskonały zespół.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:51.472467Z"
+  },
+  "achievement.42.name": {
+    "src_hash": "a26769bc849474f9dcbcee586572b8c1",
+    "text": "Pogromca robaków",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:51.472856Z"
+  },
+  "achievement.42.description": {
+    "src_hash": "214150f7556bed0d12fe763bfc4c2bca",
+    "text": "Weehee! Uderz te robaki! Na pewno wiesz, jak obchodzić się z dużym młotkiem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:51.473584Z"
+  },
+  "achievement.43.name": {
+    "src_hash": "510adea9c3474fd4333bb735820cb1d0",
+    "text": "Fan Króla Tibianusa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:51.474362Z"
+  },
+  "achievement.43.description": {
+    "src_hash": "3addbb5c1108d22c9a004fbc144267c9",
+    "text": "Nie jesteś pewien, co to jest, ale czujesz pociąg do rodziny królewskiej. Twoje kolana są zawsze trochę otarcia od pełzania przed tronami i uwielbiasz spędzać czas w zamkach. Może powinieneś rozważyć aplikację jako ochroniarz?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:51.475679Z"
+  },
+  "achievement.44.description": {
+    "src_hash": "638776e8a8b27f6f979d517032838461",
+    "text": "Szybko biegasz i potrafisz dostarczać towary, które z pewnością zepsują się w mgnieniu oka, nawet jeśli nie możesz skorzystać z żadnego środka transportu lub jeśli przy okazji zmarzniesz lub śmierdzisz rękami.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:57.168710Z"
+  },
+  "achievement.45.name": {
+    "src_hash": "b03003fb8539b2d1b82e434bacc170fb",
+    "text": "Idealny głupiec",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:57.169167Z"
+  },
+  "achievement.45.description": {
+    "src_hash": "6e6cca722d251f4842d26dd59a3dc8fb",
+    "text": "Uwielbiasz żartować z innych i oszukiwać ich, aby wyglądali trochę głupio. Machające języki mówią, że moment uświadomienia sobie w oczach twoich ofiar jest nagrodą, którą się żywisz, ale prawdopodobnie tylko żartujesz i dobrze się z nimi bawisz… prawda?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:57.170819Z"
+  },
+  "achievement.46.name": {
+    "src_hash": "fe483c23e2ddd96a5090627085a83778",
+    "text": "Matematyk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:57.171356Z"
+  },
+  "achievement.46.description": {
+    "src_hash": "41efc8600448edf1c55e579bd2b871b8",
+    "text": "Czasami największe sekrety życia mogą mieć proste rozwiązanie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:30:57.172302Z"
+  },
+  "achievement.47.name": {
+    "src_hash": "93d576f08824f587e6e677006d8c1fe1",
+    "text": "Arcypoczta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:03.756063Z"
+  },
+  "achievement.47.description": {
+    "src_hash": "b59a88bf591715d5ae6294105b2ad446",
+    "text": "Doręczanie listów i paczek od zawsze było Twoją sekretną pasją, a teraz możesz już oficjalnie założyć niebieski kapelusz, zadąć w róg pocztowy i robić to, co lubisz najbardziej. Uwaga na psy!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:03.757435Z"
+  },
+  "achievement.48.name": {
+    "src_hash": "47f25e9e58f8a293d28b68f7c5913561",
+    "text": "Swat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:03.757802Z"
+  },
+  "achievement.48.description": {
+    "src_hash": "454735cd122784e2efcaa25c9b0ca97b",
+    "text": "Nie wierzysz, że romans jest dziełem przypadku lub miłością od pierwszego wejrzenia. W rzeczywistości – eliksiry miłosne, bukiety kwiatów i tandetne wiersze radzą sobie znacznie lepiej niż kiedykolwiek. Utrzymuj przepływ tych hormonów!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:03.759183Z"
+  },
+  "achievement.49.name": {
+    "src_hash": "2f910d21c4ef377912944ff2a828d6df",
+    "text": "Jego Prawdziwe Oblicze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:03.759630Z"
+  },
+  "achievement.49.description": {
+    "src_hash": "ba425e27c3d0f6040bac1d45054257f5",
+    "text": "Jesteś jednym z niewielu Tibijczyków, którym Armenius zdecydował się pokazać swoją prawdziwą twarz – i zmusił cię do walki z nim. Albo oznacza to, że masz dużo szczęścia, albo bardzo pecha, ale jedno jest pewne – zdarza się to niezwykle rzadko.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:10.269441Z"
+  },
+  "achievement.50.name": {
+    "src_hash": "707e66ee97ec84531029a7a52a96326a",
+    "text": "Niszczenie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:10.269786Z"
+  },
+  "achievement.50.description": {
+    "src_hash": "a6e525e23de208b0636713661f08de68",
+    "text": "Osoby z ostrymi kłami lepiej się na ciebie strzegą, zwłaszcza w nocy, gdyż mogą znaleźć kołek między żebrami. Jesteś bezlitosnym łowcą wampirów i jako dowód zebrałeś liczne żetony.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:10.270893Z"
+  },
+  "achievement.51.name": {
+    "src_hash": "276fa9d276e962431879fdcf9ae65915",
+    "text": "Mistrz Złodziei",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:10.271232Z"
+  },
+  "achievement.51.description": {
+    "src_hash": "35c4a95060c74d1098f635f0e9a9ca37",
+    "text": "Okradanie, zapraszanie się na imprezy VIP, fałszowanie umów i udawanie kogoś innego – jesteś specjalistą od wszelkich nielegalnych działań. Nie bierzesz jeńców, z wyjątkiem okazjonalnych złotych rybek.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:10.272475Z"
+  },
+  "achievement.52.name": {
+    "src_hash": "584d402ecc6f1c14dcdc5555055d6f32",
+    "text": "Aktor amator",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:16.207238Z"
+  },
+  "achievement.52.description": {
+    "src_hash": "7a337a0aa8da7a2204b5901211138f08",
+    "text": "Pomogłeś ożywić Księżniczkę Jaskier, Doktora Dumbnessa i Cudownego Psa Lucky’ego – i prawdopodobnie będziesz o nich śnił dziś wieczorem, ponieważ doskonale zapamiętałeś swoje kwestie. Cóż za… wyjątkowy kawałek… scenariusza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:16.208640Z"
+  },
+  "achievement.53.name": {
+    "src_hash": "42a07db3b617cae8c9df0f38d2553f43",
+    "text": "Skrobaczka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:16.208972Z"
+  },
+  "achievement.53.description": {
+    "src_hash": "98a969872cd5a711a818b676fdb5408c",
+    "text": "Zgasiłeś płomienie Ducha Ognia na arenie Svargrond. Walki na arenie są dla Ciebie - uczciwe, kwadratowe, z prostymi zasadami i bitwami jeden na jednego.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:16.210092Z"
+  },
+  "achievement.54.name": {
+    "src_hash": "10db3c8d5f48d25e0769372cb464a14d",
+    "text": "Żółtodziób",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:16.210452Z"
+  },
+  "achievement.54.description": {
+    "src_hash": "49592f6643b61b0df6a052cc54248ea2",
+    "text": "Zniszczyłeś Orcusa Okrutnego na Arenie Svargrond. Nadal jesteś trochę zielony za uszami, ale jest w tym duży potencjał.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:21.389025Z"
+  },
+  "achievement.55.description": {
+    "src_hash": "cc95f4d2a7fb87944e57ba836eebd53f",
+    "text": "Wysłałeś Obliveratora w zapomnienie na arenie Svargrond i po drodze pokonałeś dziewięciu innych niebezpiecznych wrogów. Witamy wodza Svargrond!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:21.390042Z"
+  },
+  "achievement.56.name": {
+    "src_hash": "1029736e995a0add53f08dbcd9c77e3d",
+    "text": "Herbicyd",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:21.390344Z"
+  },
+  "achievement.56.description": {
+    "src_hash": "c6cd4ba092800561821b46e28d0bbf7f",
+    "text": "Jesteś jednym z odważnych bohaterów, którzy muszą stawić czoła tajemniczemu demonicznemu dębowi i wszystkim stworzeniom, które rzucił ci w twarz i pokonać je. Dzierżąc swój błogosławiony topór, żadne drzewo nie odważy się stanąć ci na drodze – demoniczne czy nie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:21.391722Z"
+  },
+  "achievement.57.name": {
+    "src_hash": "1f7f1b477642e497c88d0d00f1fb98a5",
+    "text": "Niszczyciel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:31:21.392084Z"
   }
 }

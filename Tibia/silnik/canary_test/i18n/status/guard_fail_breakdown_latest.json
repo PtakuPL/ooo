@@ -1,150 +1,99 @@
 {
-  "timestamp": "2026-02-19T22:22:47.270019Z",
-  "window_start_utc": "2026-02-19T21:22:42.574908Z",
-  "window_end_utc": "2026-02-19T22:22:42.574908Z",
+  "timestamp": "2026-02-19T22:40:37.962021Z",
+  "window_start_utc": "2026-02-19T21:40:35.251577Z",
+  "window_end_utc": "2026-02-19T22:40:35.251577Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 226,
-  "suspicious_entries": 7512,
-  "guard_fail_entries": 43,
-  "guard_fail_sum": 347,
+  "rejected_entries": 166,
+  "suspicious_entries": 5154,
+  "guard_fail_entries": 30,
+  "guard_fail_sum": 372,
   "by_type": {
-    "identical_to_en": 156,
-    "mixed_language": 35,
-    "word_salad": 15,
-    "mixed_scripts": 20,
-    "cyrillic_latin_mix": 20,
-    "contains_tibia_proper_noun": 11
+    "identical_to_en": 124,
+    "word_salad": 13,
+    "mixed_language": 14,
+    "contains_tibia_proper_noun": 8,
+    "mixed_scripts": 15,
+    "cyrillic_latin_mix": 15
   },
   "by_source": {
-    "google_translate": 226
+    "google_translate": 166
   },
   "by_language": {
-    "sv": 16,
-    "es": 42,
-    "it": 46,
-    "ru": 20,
-    "ro": 55,
-    "pl": 47
+    "es": 32,
+    "it": 44,
+    "ro": 52,
+    "ru": 15,
+    "pl": 15,
+    "sv": 8
   },
   "by_category": {
-    "spells.json": 116,
-    "npc.json": 14,
-    "chatchannels.json": 1,
-    "client.json": 2,
-    "achievements.json": 5,
-    "talkactions.json": 3,
-    "items.json": 53,
-    "server.json": 3,
+    "npc.json": 10,
     "monsters.json": 18,
+    "items.json": 18,
+    "spells.json": 100,
     "quests.json": 3,
-    "scripts.json": 8
+    "scripts.json": 8,
+    "server.json": 8,
+    "achievements.json": 1
   },
   "by_severity": {
-    "CRITICAL": 171,
-    "HIGH": 55
+    "CRITICAL": 137,
+    "HIGH": 29
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 156
-    },
-    {
-      "type": "mixed_language",
-      "count": 35
+      "count": 124
     },
     {
       "type": "mixed_scripts",
-      "count": 20
-    },
-    {
-      "type": "cyrillic_latin_mix",
-      "count": 20
-    },
-    {
-      "type": "word_salad",
       "count": 15
     },
     {
+      "type": "cyrillic_latin_mix",
+      "count": 15
+    },
+    {
+      "type": "mixed_language",
+      "count": 14
+    },
+    {
+      "type": "word_salad",
+      "count": 13
+    },
+    {
       "type": "contains_tibia_proper_noun",
-      "count": 11
+      "count": 8
     }
   ],
   "top_keys": [
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 7,
+      "count": 5,
       "types": {
-        "identical_to_en": 7
+        "identical_to_en": 5
       }
     },
     {
       "key": "npc.al_dee.stdmod_41",
-      "count": 7,
+      "count": 5,
       "types": {
-        "word_salad": 7
+        "word_salad": 5
       }
     },
     {
       "key": "spell.quara_constrictor_electrify.name",
-      "count": 6,
+      "count": 5,
       "types": {
-        "mixed_language": 3,
+        "mixed_language": 2,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1,
         "identical_to_en": 1
-      }
-    },
-    {
-      "key": "spell.urmahlullu_ring.name",
-      "count": 4,
-      "types": {
-        "identical_to_en": 4
-      }
-    },
-    {
-      "key": "achievement.351.name",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "achievement.493.name",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "achievement.524.name",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "item.10388.name",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "item.10391.name",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
       }
     },
     {
@@ -234,6 +183,54 @@
       "count": 3,
       "types": {
         "identical_to_en": 3
+      }
+    },
+    {
+      "key": "spell.makara_watersplash.name",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
+      }
+    },
+    {
+      "key": "spell.urmahlullu_ring.name",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
+      }
+    },
+    {
+      "key": "spell.quara_raider_icering.name",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
+      }
+    },
+    {
+      "key": "spell.quara_constrictor_freeze.name",
+      "count": 3,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1,
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "spell.furyosa_deathball.name",
+      "count": 3,
+      "types": {
+        "contains_tibia_proper_noun": 1,
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.tenebris_ultimate.name",
+      "count": 3,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1,
+        "identical_to_en": 1
       }
     }
   ]

@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-19T22:22:18.787135Z",
-  "cycle_counter": 5673,
-  "last_target_key": "ro:quests.json",
-  "last_pending_total": 10,
-  "last_tier": 2,
-  "last_cat_priority": 5,
+  "timestamp": "2026-02-19T22:39:38.073824Z",
+  "cycle_counter": 5682,
+  "last_target_key": "pl:books.json",
+  "last_pending_total": 77,
+  "last_tier": 1,
+  "last_cat_priority": 9,
   "candidates_count": 183,
   "active_candidates_count": 183,
   "skipped_backoff": 0,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 3,
+  "cache_cycle": 6,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -74,9 +74,9 @@
     "sr:server.json": 0,
     "pl:questlog.json": 0,
     "es:questlog.json": 0,
-    "pl:achievements.json": 1,
+    "pl:achievements.json": 0,
     "es:books.json": 0,
-    "es:html.json": 1,
+    "es:html.json": 0,
     "pl:books.json": 2,
     "it:scripts.json": 0,
     "ru:scripts.json": 0,
@@ -195,13 +195,13 @@
       "sv"
     ],
     "lang_completion": {
-      "pl": 87.58,
+      "pl": 87.72,
       "es": 84.47,
       "ru": 50.32,
       "ro": 41.87,
       "it": 50.94,
       "sr": 45.38,
-      "sv": 27.94
+      "sv": 27.98
     }
   }
 }

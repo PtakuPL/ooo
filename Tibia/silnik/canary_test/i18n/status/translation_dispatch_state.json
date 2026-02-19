@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-19T21:31:47.604164Z",
-  "cycle_counter": 5635,
-  "last_target_key": "ro:talkactions.json",
-  "last_pending_total": 99,
-  "last_tier": 2,
-  "last_cat_priority": 9,
-  "candidates_count": 184,
-  "active_candidates_count": 184,
+  "timestamp": "2026-02-19T21:34:16.032895Z",
+  "cycle_counter": 5638,
+  "last_target_key": "pl:items.json",
+  "last_pending_total": 1070,
+  "last_tier": 1,
+  "last_cat_priority": 0,
+  "candidates_count": 183,
+  "active_candidates_count": 183,
   "skipped_backoff": 0,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 2,
+  "cache_cycle": 3,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -137,7 +137,10 @@
     "pl:html.json": 0,
     "es:otclient_modules.json": 0,
     "pl:talkactions.json": 1,
-    "es:talkactions.json": 1
+    "es:talkactions.json": 1,
+    "ro:talkactions.json": 1,
+    "it:npclib.json": 1,
+    "ru:movements.json": 1
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -192,8 +195,8 @@
       "pl": 87.44,
       "es": 84.42,
       "ru": 50.32,
-      "ro": 41.59,
-      "it": 50.59,
+      "ro": 41.62,
+      "it": 50.6,
       "sr": 45.38,
       "sv": 27.88
     }

@@ -37838,5 +37838,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T20:59:42.610635Z"
+  },
+  "movement.claw_noxious.msg_stab": {
+    "src_hash": "14fab215c855b69507b9a0142a705f00",
+    "text": "Ой! Змеиный коготь пронзил тебя.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:34:13.676870Z"
   }
 }

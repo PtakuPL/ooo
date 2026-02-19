@@ -72622,5 +72622,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T21:31:32.771646Z"
+  },
+  "npclib.bank_system.say_4": {
+    "src_hash": "932405ed00983a70764473feb855e5aa",
+    "text": "A quale gilda vorresti trasferire {} oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:25.168720Z"
+  },
+  "npclib.bank_system.say_5": {
+    "src_hash": "b8045be4d69a1763526040613fcac092",
+    "text": "Quindi vorresti trasferire {} oro dal tuo account di gilda alla gilda {}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:25.169294Z"
+  },
+  "npclib.bank_system.say_9": {
+    "src_hash": "c0bbe2361536121213729be4e9f8df89",
+    "text": "Vorresti davvero depositare {} oro sul tuo {guild account}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:25.170111Z"
+  },
+  "npclib.handler.need_space": {
+    "src_hash": "be8d0a2a108980d9dfcd47cf15341ae0",
+    "text": "Non c'è abbastanza spazio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:25.173074Z"
+  },
+  "npclib.handler.sendtrade": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturalmente, basta sfogliare la mia merce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:25.174078Z"
+  },
+  "npclib.modules.promote_success": {
+    "src_hash": "b16b6f7e9ba0adb52c44ffb607511f3e",
+    "text": "Congratulazioni! Ora sei promosso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:25.176087Z"
+  },
+  "npclib.modules.travel_depart": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Alziamo le vele!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:25.177416Z"
+  },
+  "npclib.bank_system.say_6": {
+    "src_hash": "66f8222f1435cf4f513e060209201771",
+    "text": "Abbiamo effettuato un ordine per prelevare {} oro dal tuo account di gilda. \\z\n                            Controlla la tua casella di posta per la conferma.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:29.550967Z"
+  },
+  "npclib.bank_system.say_7": {
+    "src_hash": "021381bc06fb00fb0bc4c60afaf41915",
+    "text": "Sei sicuro di voler prelevare {} oro dal tuo account di gilda?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:29.551359Z"
+  },
+  "npclib.bank_system.say_8": {
+    "src_hash": "253e7db9204c9768ac5c5ea75d439649",
+    "text": "Perfetto, abbiamo effettuato un ordine per depositare l'importo di {} oro su \\z\n                           il tuo account di gilda. Controlla la tua casella di posta per la conferma.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:29.552024Z"
+  },
+  "npclib.handler.already_focused": {
+    "src_hash": "75cb906e2ea6af69d3e2b0d9db5c7f35",
+    "text": "{0}, ti sto già parlando.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:29.552345Z"
+  },
+  "npclib.handler.buy": {
+    "src_hash": "114f3934c2fb667bfed44da9f8b80e9d",
+    "text": "Vuoi acquistare {0} {1} per {2} monete d'oro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:29.552721Z"
+  },
+  "npclib.handler.farewell": {
+    "src_hash": "63c16b9228e904e7d7f562396bbc6fec",
+    "text": "Arrivederci, {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:33.821815Z"
+  },
+  "npclib.handler.greet": {
+    "src_hash": "badac7549fdf42d99c78303ae9f5d698",
+    "text": "Saluti, {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:33.822076Z"
+  },
+  "npclib.handler.missing_item": {
+    "src_hash": "16bcf74b510050f662c91a89c301a2fd",
+    "text": "Non ne hai così tanti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:33.822480Z"
+  },
+  "npclib.handler.need_item": {
+    "src_hash": "e99300d8a6151a7d4df212c544198c73",
+    "text": "Non hai questo oggetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:33.822887Z"
+  },
+  "npclib.handler.need_more_space": {
+    "src_hash": "38f3d735fbd1c97e97aaf1fa1989be6b",
+    "text": "Non hai abbastanza capacità per tutti gli articoli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:33.823377Z"
+  },
+  "npclib.handler.noshop": {
+    "src_hash": "fb493b842c28f1d432b28e163702c545",
+    "text": "Mi spiace, non offro nulla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:40.776521Z"
+  },
+  "npclib.handler.oncloseshop": {
+    "src_hash": "4550cf1e6e98345740da49701cd30afd",
+    "text": "Grazie, torna ogni volta che hai bisogno di qualcos'altro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:40.777186Z"
+  },
+  "npclib.handler.sendtrade_choose_wisely_with_categories": {
+    "src_hash": "db6f69373f813af4286d9a8d46450595",
+    "text": "Scegli saggiamente! O forse vuoi guardare solo {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:40.777922Z"
+  },
+  "npclib.handler.sendtrade_have_a_look_with_categories": {
+    "src_hash": "b226702484e7cb369b95958ac3c3f1d2",
+    "text": "Dai un'occhiata. Ma forse vuoi solo vedere il mio {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:40.778608Z"
+  },
+  "npclib.handler.sendtrade_lootmonger_with_categories": {
+    "src_hash": "1e7c9d5891b1d9f14624d9e5f01475f9",
+    "text": "Ah, un cliente! Fatti salutare, {0}! Compro ogni tipo di bottino, daresti un'occhiata a {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:40.779343Z"
+  },
+  "npclib.handler.sendtrade_with_categories": {
+    "src_hash": "ed7fe928684aa8acb54c2f49ec9a5aba",
+    "text": "Naturalmente, basta sfogliare la mia merce. Oppure vuoi guardare solo {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:45.056241Z"
+  },
+  "npclib.modules.already_promoted": {
+    "src_hash": "223e933bc53b5190244858c88216f4a3",
+    "text": "Sei già promosso!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:45.056528Z"
+  },
+  "npclib.modules.bless_already_have": {
+    "src_hash": "299238c1ad2213c614a5b40865f27a1d",
+    "text": "Possiedi già questa benedizione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:45.056837Z"
+  },
+  "npclib.modules.bless_need_geomancer": {
+    "src_hash": "c1964a0fc61830e95915a5f9d177805d",
+    "text": "Prima hai bisogno della benedizione del grande geomante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:45.057203Z"
+  },
+  "npclib.modules.bless_no_money": {
+    "src_hash": "1bea18537dd48f110c12f6a69623bdf6",
+    "text": "OH. Non hai abbastanza soldi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:45.057500Z"
+  },
+  "npclib.modules.bless_success": {
+    "src_hash": "59e88928ed3b2f80e0ec474b073bb8ec",
+    "text": "Sei stato benedetto da uno dei sette dei!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:51.056235Z"
+  },
+  "npclib.modules.confirm_need_premium": {
+    "src_hash": "ece1faef6daa65dbe6e4c6908f51f7f4",
+    "text": "Posso consentire solo ai giocatori premium di viaggiare lì.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:51.056628Z"
+  },
+  "npclib.modules.confirm_no_money": {
+    "src_hash": "3c4ac29a8444d4809c80c54448057274",
+    "text": "Non hai abbastanza soldi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:51.056911Z"
+  },
+  "npclib.modules.confirm_pz_locked": {
+    "src_hash": "438ebe015499210487a70448a74bcd34",
+    "text": "Esci da lì con questo sangue.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:51.057250Z"
+  },
+  "npclib.modules.confirm_success": {
+    "src_hash": "1a8e839c01cb9fbdb8a4df46ddd31cbf",
+    "text": "È stato un piacere fare affari con te.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:51.057590Z"
+  },
+  "npclib.modules.promote_no_money": {
+    "src_hash": "3c4ac29a8444d4809c80c54448057274",
+    "text": "Non hai abbastanza soldi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:56.330649Z"
+  },
+  "npclib.modules.say_1": {
+    "src_hash": "a0128d8433eac608a3cf63d83caf1d2e",
+    "text": "Vuoi viaggiare a '{}' per '{}' monete d'oro?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:56.331077Z"
+  },
+  "npclib.modules.say_2": {
+    "src_hash": "35d00319ec2163ce87c66f9ec45741f9",
+    "text": "Non hai nessuna delle altre benedizioni né un amuleto della perdita, \\z\n                           quindi non avrebbe senso concederti questa protezione adesso. \\z\n                           Ricorda che può solo proteggerti dalla perdita di quelli!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:33:56.331995Z"
+  },
+  "npclib.modules.say_4": {
+    "src_hash": "5e77293aa3d93f8035d5bf4ce1919284",
+    "text": "Hai imparato '{}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:34:01.993685Z"
+  },
+  "npclib.modules.say_5": {
+    "src_hash": "8b9a1ee72c7994ccfca297659d05b4c4",
+    "text": "Non hai abbastanza soldi, questo incantesimo costa {} oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:34:01.994109Z"
+  },
+  "npclib.modules.say_6": {
+    "src_hash": "0ea6405ab8134a43236323b8bff735ce",
+    "text": "Mi dispiace, ma posso promuoverti solo quando avrai raggiunto il livello {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:34:01.994505Z"
+  },
+  "npclib.modules.spell_already_known": {
+    "src_hash": "ece2642e6cbfd586858d7e741a950a86",
+    "text": "Conosci già questo incantesimo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:34:01.994814Z"
+  },
+  "npclib.modules.spell_cannot_learn": {
+    "src_hash": "c4644938660de39c56f93ef7fde5af89",
+    "text": "Non puoi imparare questo incantesimo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:34:01.995167Z"
+  },
+  "npclib.modules.travel_destinations": {
+    "src_hash": "42373289e7def0c59441aebd43c94d22",
+    "text": "Posso portarti a {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:34:07.957457Z"
+  },
+  "npclib.modules.travel_exhaustion": {
+    "src_hash": "bece00e7ad4b25794382943ad5f454a3",
+    "text": "Siamo spiacenti, ma devi attendere tre secondi prima di viaggiare nuovamente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:34:07.957850Z"
+  },
+  "npclib.modules.travel_level_req": {
+    "src_hash": "8530a962e2cdc42d02111cc358830ca8",
+    "text": "Devi raggiungere il livello {0} prima che io possa lasciarti andare lì.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:34:07.958276Z"
+  },
+  "npclib.modules.travel_need_premium": {
+    "src_hash": "06053b39eaee5cd4fc1eab9f5ab5e758",
+    "text": "Mi dispiace, ma per viaggiare a bordo delle nostre navi è necessario un account premium.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:34:07.958737Z"
+  },
+  "npclib.modules.travel_pz_locked": {
+    "src_hash": "af9ac68c752383a2a4e7eca1ed20dafc",
+    "text": "Per prima cosa sbarazzati di quelle macchie di sangue! Non rovinerai il mio veicolo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:34:07.959132Z"
   }
 }

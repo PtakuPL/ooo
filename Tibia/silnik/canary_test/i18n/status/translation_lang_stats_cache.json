@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-19T20:15:22.598849Z",
+  "timestamp": "2026-02-19T20:17:19.338706Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 49,
-  "cache_misses": 3,
-  "file_cache_hits": 1973,
-  "file_cache_misses": 3,
+  "cache_hits": 50,
+  "cache_misses": 2,
+  "file_cache_hits": 1974,
+  "file_cache_misses": 2,
   "langs": {
     "ar": {
       "sig": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771532069679814793,
+          1771532232342152712,
           1847374
         ],
         [
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771532069679814793,
+            1771532232342152712,
             1847374
           ],
           "row": {
@@ -16005,7 +16005,7 @@
         [
           "monsters.json",
           1,
-          1771486013128599560,
+          1771532146356567461,
           341177
         ],
         [
@@ -16388,7 +16388,7 @@
         "monsters.json": {
           "sig": [
             1,
-            1771486013128599560,
+            1771532146356567461,
             341177
           ],
           "row": {
@@ -26967,8 +26967,8 @@
         [
           "monsters.json",
           1,
-          1771329475701970829,
-          348390
+          1771532196496148945,
+          348396
         ],
         [
           "mounts.json",
@@ -27096,13 +27096,13 @@
         "language_name": "Rumuński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 22141,
+        "translated_keys": 22144,
         "english_copy_keys": 2304,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 41.32,
         "server_keys": 49731,
-        "server_translated": 20915,
+        "server_translated": 20918,
         "server_pct": 42.06,
         "client_keys": 3855,
         "client_translated": 1226,
@@ -27350,12 +27350,12 @@
         "monsters.json": {
           "sig": [
             1,
-            1771329475701970829,
-            348390
+            1771532196496148945,
+            348396
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 906,
+            "translated_keys": 909,
             "english_copy_keys": 710,
             "missing_keys": 0,
             "missing_files": 0
@@ -27750,7 +27750,7 @@
         [
           "monsters.json",
           1,
-          1771329359101625100,
+          1771532157208819528,
           410150
         ],
         [
@@ -28133,7 +28133,7 @@
         "monsters.json": {
           "sig": [
             1,
-            1771329359101625100,
+            1771532157208819528,
             410150
           ],
           "row": {

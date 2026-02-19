@@ -63406,5 +63406,29 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T20:15:14.675728Z"
+  },
+  "monster.glooth_golem.name": {
+    "src_hash": "688c15f6d7aafcc919429eb8d3f9672c",
+    "text": "Golem Glooth",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:16:22.568072Z"
+  },
+  "monster.diamond_servant_replica.name": {
+    "src_hash": "6d7b25f0c4add431b95bc36abf60424b",
+    "text": "Replica servitorului de diamant",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:16:31.528632Z"
+  },
+  "monster.infernal_frog.voice_3": {
+    "src_hash": "d1b2c4f05882e3e46872752f28a46703",
+    "text": "Fara pupici pentru tine!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:16:36.487210Z"
   }
 }

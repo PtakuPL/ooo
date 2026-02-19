@@ -1,15 +1,179 @@
 {
-  "timestamp": "2026-02-19T20:15:17.823703Z",
+  "timestamp": "2026-02-19T20:17:14.525276Z",
   "checked_entries": 100,
-  "issues_found": 16,
+  "issues_found": 39,
   "issues_by_type": {
-    "identical_to_en_exempt": 2,
+    "identical_to_en": 23,
+    "identical_to_en_exempt": 6,
     "artifact_token": 16,
-    "suspicious_log_high": 200,
-    "suspicious_rejected_critical": 178,
-    "suspicious_rejected_high": 22
+    "suspicious_log_high": 169,
+    "suspicious_log_low": 5,
+    "suspicious_log_critical": 26,
+    "suspicious_rejected_high": 20,
+    "suspicious_rejected_critical": 180
   },
   "issues": [
+    {
+      "key": "monster.ghazbaran.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ghazbaran",
+      "translated": "Ghazbaran"
+    },
+    {
+      "key": "monster.hirintror.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Hirintror",
+      "translated": "Hirintror"
+    },
+    {
+      "key": "monster.hirintror.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Hirintror",
+      "translated": "Hirintror"
+    },
+    {
+      "key": "monster.sir_valorcrest.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.sir_valorcrest.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.draptor.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Draptor",
+      "translated": "Draptor"
+    },
+    {
+      "key": "monster.chayenne.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "monster.chayenne.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "monster.orshabaal.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
+    },
+    {
+      "key": "monster.orshabaal.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Orshabaal",
+      "translated": "Orshabaal"
+    },
+    {
+      "key": "monster.white_pale.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.white_pale.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.the_welter.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.the_welter.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.morgaroth.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.morgaroth.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Morgaroth",
+      "translated": "Morgaroth"
+    },
+    {
+      "key": "monster.ferumbras.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.ferumbras.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Ferumbras",
+      "translated": "Ferumbras"
+    },
+    {
+      "key": "monster.dharalion.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Dharalion",
+      "translated": "Dharalion"
+    },
+    {
+      "key": "monster.dharalion.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Dharalion",
+      "translated": "Dharalion"
+    },
+    {
+      "key": "monster.apocalypse.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Apocalypse",
+      "translated": "Apocalypse"
+    },
+    {
+      "key": "monster.apocalypse.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Apocalypse",
+      "translated": "Apocalypse"
+    },
+    {
+      "key": "monster.cyclops.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Cyclops",
+      "translated": "Cyclops"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

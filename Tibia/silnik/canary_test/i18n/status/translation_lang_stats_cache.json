@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-19T20:11:39.448245Z",
+  "timestamp": "2026-02-19T20:13:17.259994Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 50,
-  "cache_misses": 2,
-  "file_cache_hits": 1974,
-  "file_cache_misses": 2,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 1975,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -7392,7 +7392,7 @@
         [
           "monsters.json",
           1,
-          1771320398242721882,
+          1771531924779120963,
           339643
         ],
         [
@@ -7775,7 +7775,7 @@
         "monsters.json": {
           "sig": [
             1,
-            1771320398242721882,
+            1771531924779120963,
             339643
           ],
           "row": {
@@ -25491,8 +25491,8 @@
         [
           "server.json",
           1,
-          1771362065422186365,
-          297390
+          1771531989870444902,
+          297389
         ],
         [
           "spells.json",
@@ -25994,8 +25994,8 @@
         "server.json": {
           "sig": [
             1,
-            1771362065422186365,
-            297390
+            1771531989870444902,
+            297389
           ],
           "row": {
             "total_reference_keys": 2574,

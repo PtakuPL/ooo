@@ -151174,5 +151174,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T20:09:57.746524Z"
+  },
+  "monster.shulgrax.voice_3": {
+    "src_hash": "938409a560e325337886a0173f1c36ce",
+    "text": "¡ESTÁIS TODOS MALDITOS!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:12:04.319338Z"
+  },
+  "monster.prince_drazzak.voice_9": {
+    "src_hash": "4133e19cff6d78a5865b13b2c5c29b2a",
+    "text": "¡TODOS PAGARÁN!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:12:04.445950Z"
   }
 }

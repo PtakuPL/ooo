@@ -1,40 +1,40 @@
 {
-  "timestamp": "2026-02-19T22:47:16.984108Z",
-  "window_start_utc": "2026-02-19T21:47:14.435903Z",
-  "window_end_utc": "2026-02-19T22:47:14.435903Z",
+  "timestamp": "2026-02-19T22:48:38.673608Z",
+  "window_start_utc": "2026-02-19T21:48:36.072724Z",
+  "window_end_utc": "2026-02-19T22:48:36.072724Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 233,
-  "suspicious_entries": 5981,
-  "guard_fail_entries": 35,
-  "guard_fail_sum": 2449,
+  "rejected_entries": 235,
+  "suspicious_entries": 6623,
+  "guard_fail_entries": 37,
+  "guard_fail_sum": 2455,
   "by_type": {
-    "identical_to_en": 174,
+    "identical_to_en": 175,
     "mixed_language": 30,
     "contains_tibia_proper_noun": 8,
     "mixed_scripts": 15,
     "cyrillic_latin_mix": 15,
-    "word_salad": 14
+    "word_salad": 15
   },
   "by_source": {
-    "google_translate": 233
+    "google_translate": 235
   },
   "by_language": {
     "it": 48,
     "ro": 59,
     "ru": 15,
-    "es": 55,
+    "es": 57,
     "pl": 48,
     "sv": 8
   },
   "by_category": {
     "monsters.json": 18,
     "items.json": 53,
-    "npc.json": 10,
+    "npc.json": 12,
     "spells.json": 100,
     "quests.json": 3,
     "scripts.json": 19,
@@ -43,13 +43,13 @@
     "otclient_modules.json": 21
   },
   "by_severity": {
-    "CRITICAL": 188,
+    "CRITICAL": 190,
     "HIGH": 45
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 174
+      "count": 175
     },
     {
       "type": "mixed_language",
@@ -65,7 +65,7 @@
     },
     {
       "type": "word_salad",
-      "count": 14
+      "count": 15
     },
     {
       "type": "contains_tibia_proper_noun",
@@ -75,16 +75,16 @@
   "top_keys": [
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 5,
+      "count": 6,
       "types": {
-        "identical_to_en": 5
+        "identical_to_en": 6
       }
     },
     {
       "key": "npc.al_dee.stdmod_41",
-      "count": 5,
+      "count": 6,
       "types": {
-        "word_salad": 5
+        "word_salad": 6
       }
     },
     {

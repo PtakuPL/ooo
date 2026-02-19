@@ -117630,5 +117630,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T22:47:04.626233Z"
+  },
+  "monster.shaburak_demon.desc": {
+    "src_hash": "735ff4205c3966d79247594e578ad9f7",
+    "text": "demon Shaburak",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:47:41.562669Z"
+  },
+  "monster.askarak_demon.desc": {
+    "src_hash": "9b53f32b14e9922dee5b68bd6574303e",
+    "text": "demon askarak",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:47:41.577841Z"
+  },
+  "monster.the_first_dragon.name": {
+    "src_hash": "3e9ff2fb268bac02d2f150cae0aab8c5",
+    "text": "Pierwszy smok",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:47:41.835468Z"
   }
 }

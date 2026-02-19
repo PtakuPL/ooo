@@ -1,18 +1,108 @@
 {
-  "timestamp": "2026-02-19T22:47:09.451622Z",
+  "timestamp": "2026-02-19T22:48:30.659369Z",
   "checked_entries": 100,
-  "issues_found": 16,
+  "issues_found": 29,
   "issues_by_type": {
     "identical_to_en_exempt": 2,
-    "artifact_token": 16,
-    "suspicious_log_high": 115,
-    "suspicious_log_low": 2,
-    "suspicious_log_medium": 58,
-    "suspicious_log_critical": 25,
-    "suspicious_rejected_high": 41,
-    "suspicious_rejected_critical": 159
+    "identical_to_en": 8,
+    "artifact_token": 21,
+    "suspicious_log_high": 120,
+    "suspicious_log_critical": 80,
+    "suspicious_rejected_high": 39,
+    "suspicious_rejected_critical": 161
   },
   "issues": [
+    {
+      "key": "monster.white_pale.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.white_pale.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.the_welter.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.the_welter.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.water_buffalo.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
+    },
+    {
+      "key": "monster.feverish_citizen.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "monster.serpent_spawn.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn"
+    },
+    {
+      "key": "monster.mad_mage.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Mad Mage",
+      "translated": "Mad Mage"
+    },
+    {
+      "key": "monster.shulgrax.voice_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "YOU ARE ALL DAMNED!",
+      "translated": "¡ESTÁIS TODOS MALDITOS!"
+    },
+    {
+      "key": "monster.ferumbras_mortal_shell.voice_4",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "I WILL MAKE ALL OF YOU SUFFER!",
+      "translated": "¡LOS HARÉ SUFRIR A TODOS!"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_4",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "CRUSH THEM ALL!",
+      "translated": "¡¡APLASTADLES A TODOS!!"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_8",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!",
+      "translated": "AUN CON TODO ESE TIEMPO EN LA PRISIÓN QUE ME DEBILITÓ, ¡NO ERES COMPATIBLE PARA MÍ!"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_9",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "THEY WILL ALL PAY!",
+      "translated": "¡TODOS PAGARÁN!"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

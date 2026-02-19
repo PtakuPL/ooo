@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-19T20:34:01.307655Z",
-  "cycle": 1,
-  "language": "ru",
-  "json_file": "quests.json",
-  "translated": 3,
+  "timestamp": "2026-02-19T20:42:20.712192Z",
+  "cycle": 2,
+  "language": "sr",
+  "json_file": "server.json",
+  "translated": 50,
   "placeholders": 0,
   "guard_fail": 0,
   "guard": {
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 96
+  "strict_skipped_done": 208
 }

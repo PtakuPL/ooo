@@ -1,87 +1,17 @@
 {
-  "timestamp": "2026-02-19T20:35:09.597053Z",
+  "timestamp": "2026-02-19T20:42:22.310605Z",
   "checked_entries": 100,
-  "issues_found": 35,
+  "issues_found": 25,
   "issues_by_type": {
-    "identical_to_en": 3,
-    "identical_to_en_exempt": 6,
-    "artifact_token": 32,
-    "suspicious_log_high": 171,
-    "suspicious_log_critical": 29,
+    "artifact_token": 25,
+    "identical_to_en_exempt": 7,
+    "suspicious_log_high": 176,
+    "suspicious_log_critical": 22,
+    "suspicious_log_low": 2,
     "suspicious_rejected_critical": 181,
     "suspicious_rejected_high": 19
   },
   "issues": [
-    {
-      "key": "spell.ice_wave.words",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "exevo frigo hur",
-      "translated": "exevo frigo hur"
-    },
-    {
-      "key": "spell.fire_wave.words",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "exevo flam hur",
-      "translated": "exevo flam hur"
-    },
-    {
-      "key": "spell.energy_wave.words",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "exevo vis hur",
-      "translated": "exevo vis hur"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
-    {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-    },
     {
       "key": "npc.mother_of_jack.voice_1",
       "lang": "es",

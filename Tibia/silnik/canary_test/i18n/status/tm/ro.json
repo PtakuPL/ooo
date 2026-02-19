@@ -63790,5 +63790,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T20:29:25.151119Z"
+  },
+  "quests.roshamuul_quest.use_on_silencer_plateau_is_located": {
+    "src_hash": "91ae36b3e633dc84bb2f68f0b3d77f95",
+    "text": "Utilizarea pe Platoul Silencer este situată în partea de sud-est a Roshamuul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:41:45.395688Z"
   }
 }

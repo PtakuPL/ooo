@@ -31670,5 +31670,381 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T20:17:57.193767Z"
+  },
+  "data.otservbr.global.npc.melian.L96.778": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.822058Z"
+  },
+  "data.otservbr.global.npc.memech.L61.1195": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Må upplysning vara din väg.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.822544Z"
+  },
+  "data.otservbr.global.npc.myra.L320.1419": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "Farväl, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.827718Z"
+  },
+  "data.otservbr.global.npc.nydala.L58.953": {
+    "src_hash": "0766cd691c0208c136e812d2734e77a5",
+    "text": "Ta en titt. De flesta möbler kommer i praktiska kit. Använd dem bara i ditt hus för att montera möblerna. Vill du bara se en viss {type} möbler?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.837260Z"
+  },
+  "data.otservbr.global.npc.obi.L129.247": {
+    "src_hash": "77bb511948fe892bc1857d82e9b46603",
+    "text": "Jaha, bra dag.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.837614Z"
+  },
+  "data.otservbr.global.npc.olrik.L89.583": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Här. Glöm inte att du måste köpa en etikett också om du vill skicka ett paket. Skriv alltid namnet på {receiver} på första raden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.841676Z"
+  },
+  "data.otservbr.global.npc.pino.L89.1405": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.849931Z"
+  },
+  "data.otservbr.global.npc.pino.L90.1406": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.850318Z"
+  },
+  "data.otservbr.global.npc.pukosch.L87.1589": {
+    "src_hash": "74af8429056cd1b6c12ccb10e67902c1",
+    "text": "Välkommen, |PLAYERNAME|! Känner du dig äventyrlig? Vill du ha en veckovis {ticket} för malmvagnssystemet här? Du kan använda den här för att komma till centrum av Kazordoon!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.854850Z"
+  },
+  "data.otservbr.global.npc.pukosch.L88.1590": {
+    "src_hash": "4c63e8ef9d6c6b447464c244c3d4b195",
+    "text": "Hoppas vi ses igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.855241Z"
+  },
+  "data.otservbr.global.npc.queen.eloise.L249.210": {
+    "src_hash": "f2fb8fae97707ee162c0df0618bb26f0",
+    "text": "Farväl, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.856143Z"
+  },
+  "data.otservbr.global.npc.rowenna.L60.476": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Hej då. Kom tillbaka snart.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.871280Z"
+  },
+  "data.otservbr.global.npc.rowenna.L61.477": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Hej då. Kom tillbaka snart.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.871673Z"
+  },
+  "data.otservbr.global.npc.sam.L155.912": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Hej då och kom igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.873518Z"
+  },
+  "data.otservbr.global.npc.shanar.L64.783": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.878702Z"
+  },
+  "data.otservbr.global.npc.shiriel.L142.1146": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Hälsningar, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.883005Z"
+  },
+  "data.otservbr.global.npc.shiriel.L143.1147": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Adjö, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.883358Z"
+  },
+  "data.otservbr.global.npc.shiriel.L144.1148": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Adjö, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.883657Z"
+  },
+  "data.otservbr.global.npc.shirith.L88.16": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.884635Z"
+  },
+  "data.otservbr.global.npc.shirith.L89.17": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.884971Z"
+  },
+  "data.otservbr.global.npc.shirtalis.of.the.summer.court.L83.56": {
+    "src_hash": "1d4aed09bf4b360d0fe917e2de3b88d4",
+    "text": "Hej fighter. Jag antar att du är här för att {fight} för vår ädla {cause}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.885667Z"
+  },
+  "data.otservbr.global.npc.sigurd.L145.1169": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Hej då. Kom tillbaka snart.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.888106Z"
+  },
+  "data.otservbr.global.npc.sigurd.L146.1170": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Hej då. Kom tillbaka snart.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.888738Z"
+  },
+  "data.otservbr.global.npc.skjaar.L90.1579": {
+    "src_hash": "f2fb8fae97707ee162c0df0618bb26f0",
+    "text": "Farväl, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.891418Z"
+  },
+  "data.otservbr.global.npc.the.beggar.king.L104.329": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.900448Z"
+  },
+  "data.otservbr.global.npc.trisha.L234.109": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Var försiktig på dina resor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.912421Z"
+  },
+  "data.otservbr.global.npc.ukea.L57.1102": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.917203Z"
+  },
+  "data.otservbr.global.npc.walter.jaeger.L294.1181": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Se till att du har lediga platser i din butiks inkorg.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.933920Z"
+  },
+  "data.otservbr.global.npc.willard.L87.1038": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "Farväl, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.938756Z"
+  },
+  "data.otservbr.global.npc.willard.L88.1039": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "Farväl, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.939132Z"
+  },
+  "data.otservbr.global.npc.xodet.L176.346": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Hej då och kom igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.941709Z"
+  },
+  "data.otservbr.global.npc.xodet.L177.347": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Hej då och kom igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.942137Z"
+  },
+  "data.otservbr.global.npc.yoem.L61.188": {
+    "src_hash": "62708e79dd3db472e596d09d559f1e3a",
+    "text": "Hej |PLAYERNAME|! Behöver du lite utrustning till ditt hus?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.949398Z"
+  },
+  "data.otservbr.global.npc.yoem.L62.189": {
+    "src_hash": "0766cd691c0208c136e812d2734e77a5",
+    "text": "Ta en titt. De flesta möbler kommer i praktiska kit. Använd dem bara i ditt hus för att montera möblerna. Vill du bara se en viss {type} möbler?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.950940Z"
+  },
+  "data.otservbr.global.scripts.actions.object.imbuement.shrine.L9.2355": {
+    "src_hash": "79a564e6f5c8ba706ef71bbcfe5f2ecc",
+    "text": "Du kan bara använda helgedomen på ett giltigt föremål.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.967319Z"
+  },
+  "data.otservbr.global.scripts.actions.other.construction.kits.L123.2359": {
+    "src_hash": "cb245eea788d1e92bb6681bbb0d18c93",
+    "text": "Lägg byggsatsen på golvet först.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.968528Z"
+  },
+  "data.otservbr.global.scripts.actions.other.construction.kits.L125.2360": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Du får endast bygga detta i ett hus.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.969397Z"
+  },
+  "data.otservbr.global.scripts.actions.other.fishing.L41.2361": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Du är inte ägaren.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.970070Z"
+  },
+  "data.otservbr.global.scripts.actions.other.kits.L26.2363": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Du får endast bygga detta i ett hus.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.973010Z"
+  },
+  "data.otservbr.global.scripts.actions.other.mechanical.fishing.L19.2358": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Du är inte ägaren.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.973647Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.golden.L29.2388": {
+    "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+    "text": "Du behöver 5 spelare för att slåss med den här chefen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.976315Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.golden.L37.2389": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Någon slåss mot chefen! Du måste vänta ett tag.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.977271Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.keys.L68.2391": {
+    "src_hash": "f36cd2ccc4e01638476226fc450b4fe0",
+    "text": "Du har gått in i en gammal demonfängelsecell!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.978212Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.keys.L69.2392": {
+    "src_hash": "809edf5650f2f960145b436e7ce40397",
+    "text": "Du har femton minuter på dig att döda och plundra den här chefen, annars kommer du att förlora den chansen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.979508Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L434.2218": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Denna kristallgeod skakar av en strid i närheten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.995298Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L469.2220": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Denna kristallgeod skakar av en strid i närheten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.996241Z"
+  },
+  "data.otservbr.global.scripts.quests.dangerous.depth.actions.using.crystals.L504.2222": {
+    "src_hash": "4ece41ce875a4c261bd613cdc1472980",
+    "text": "Denna kristallgeod skakar av en strid i närheten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:04.996816Z"
   }
 }

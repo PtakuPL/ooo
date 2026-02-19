@@ -174518,5 +174518,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T10:59:28.351526Z"
+  },
+  "data.otservbr.global.npc.captain.gulliver.L92.845": {
+    "src_hash": "ec55ea745dcb993d67258d2187325c82",
+    "text": "Добродошли на брод, господине |PLAYERNAME|. Где могу да вас {sail} данас?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:18.043341Z"
+  },
+  "data.otservbr.global.npc.captain.gulliver.L93.846": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Збогом. Препоручите нас ако сте задовољни нашом услугом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:18.043848Z"
+  },
+  "data.otservbr.global.npc.captain.haba.L68.190": {
+    "src_hash": "b8f8a44ad2efd8539527730f329f0592",
+    "text": "Харрр, ландлуббер шта желиш? Тражите {passage}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:18.044956Z"
+  },
+  "data.otservbr.global.npc.captain.haba.L70.191": {
+    "src_hash": "55c25d3f0e5b57d85680d257424e0bca",
+    "text": "Харрр, ландлуббер шта желиш?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:42:18.045378Z"
   }
 }

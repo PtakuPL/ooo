@@ -139,16 +139,18 @@ if (MSVC)
       $<$<CONFIG:Release>:/O1>
       $<$<CONFIG:RelWithDebInfo>:/O1>
     )
-    # Per-file ICE suppression for the two OTML TUs that consistently crash.
-    # NOTE: COMPILE_OPTIONS on set_source_files_properties does NOT work with
-    # Ninja generator. Use COMPILE_FLAGS (space-separated, older CMake property
-    # that works reliably with all generators) instead.
+    # ── Per-file ICE C1001 suppression ────────────────────────────────────
+    # MSVC 14.44 P2 codegen (p2/main.cpp:258) crashes on template-heavy TUs.
+    # Strategy: /Od (no optimization), /Ob0 (no inlining), /d2SSAOptimizer-
+    # (disable SSA optimizer). SKIP_PRECOMPILE_HEADERS ON is required —
+    # otherwise MSVC warns C4653 and IGNORES our /Od flag.
     #
-    # CRITICAL: SKIP_PRECOMPILE_HEADERS must be ON for these files!
-    # Without it, MSVC warns C4653 (optimization inconsistent with PCH)
-    # and IGNORES our /Od flag, so the ICE still occurs.
-    # The files still get all headers via their own #include chain:
-    #   declarations.h -> global.h -> pch.h
+    # NOTE: Use COMPILE_FLAGS (not COMPILE_OPTIONS) — Ninja requires it.
+    #
+    # Files get headers via include chain: declarations.h -> global.h -> pch.h
+
+    # Group 1: OTML files — additionally need OTML_NO_FMT to avoid fmt in
+    #          non-PCH mode (fmt headers aren't available without PCH).
     set_source_files_properties(
       framework/otml/otmlnode.cpp
       framework/otml/otmlparser.cpp
@@ -156,6 +158,40 @@ if (MSVC)
         COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer-"
         SKIP_PRECOMPILE_HEADERS ON
         COMPILE_DEFINITIONS "OTML_NO_FMT"
+    )
+
+    # Group 2: Lua binding files — 800-950 template instantiations of
+    #          bind_singleton_mem_fun / bind_mem_fun via luabinder.h.
+    #          These are the heaviest template TUs in the project.
+    set_source_files_properties(
+      framework/luafunctions.cpp
+      client/luafunctions.cpp
+      PROPERTIES
+        COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer-"
+        SKIP_PRECOMPILE_HEADERS ON
+    )
+
+    # Group 3: Lua value cast files — heavy template specializations
+    #          for luavalue_cast<> (87+ instantiations).
+    set_source_files_properties(
+      client/luavaluecasts_client.cpp
+      framework/luaengine/luavaluecasts.cpp
+      PROPERTIES
+        COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer-"
+        SKIP_PRECOMPILE_HEADERS ON
+    )
+
+    # Group 4: Large complex TUs — lighter protection (/d2SSAOptimizer- only,
+    #          keep /O1 optimization). These have some risk factors:
+    #          uiwidget.cpp: 2168 lines, 23× std::ranges, luainterface include
+    #          uiwidgetbasestyle.cpp: 22× safe_cast<> template instantiations
+    #          protocolgameparse.cpp: 6222 lines, 48× fmt calls
+    set_source_files_properties(
+      framework/ui/uiwidget.cpp
+      framework/ui/uiwidgetbasestyle.cpp
+      client/protocolgameparse.cpp
+      PROPERTIES
+        COMPILE_FLAGS "/d2SSAOptimizer-"
     )
     set_target_properties(${PROJECT_NAME} PROPERTIES
       INTERPROCEDURAL_OPTIMIZATION FALSE

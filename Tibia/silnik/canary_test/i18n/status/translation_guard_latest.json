@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-02-19T21:10:37.920990Z",
-  "cycle": 1,
-  "language": "pl",
+  "timestamp": "2026-02-19T21:14:13.029889Z",
+  "cycle": 2,
+  "language": "es",
   "json_file": "talkactions.json",
   "translated": 0,
   "placeholders": 0,
-  "guard_fail": 41,
+  "guard_fail": 43,
   "guard": {
     "placeholder": 0,
-    "command": 0,
+    "command": 1,
     "pipe": 1
   },
   "strict_missing_file": 0,

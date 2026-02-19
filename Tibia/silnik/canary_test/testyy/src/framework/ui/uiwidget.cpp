@@ -1295,6 +1295,13 @@ void UIWidget::autoFitParent()
         newParentWidth = std::max(newParentWidth, parent->getWidth());
         newParentHeight = std::max(newParentHeight, parent->getHeight());
 
+        g_logger.fine("[autoFitParent] '{}' → parent '{}': overflow +{}w +{}h, resize {}x{} → {}x{}",
+            getId(), parent->getId(),
+            fitWidth ? (maxChildRight - parentPaddingRect.right()) : 0,
+            fitHeight ? (maxChildBottom - parentPaddingRect.bottom()) : 0,
+            parent->getWidth(), parent->getHeight(),
+            newParentWidth, newParentHeight);
+
         // Synchronous resize with recursion guard — eliminates multi-frame cascade delay.
         // The guard flag prevents: parent->resize -> updateLayout -> child->setRect -> autoFitParent -> loop
         parent->setProp(PropAutoFitParentUpdating, true);

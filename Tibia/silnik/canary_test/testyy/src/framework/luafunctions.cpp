@@ -36,6 +36,10 @@
 // Graphics/UI includes moved to luafunctions_graphics.cpp
 // Sound includes moved to luafunctions_ui.cpp
 
+#ifdef FRAMEWORK_GRAPHICS
+#include <framework/core/graphicalapplication.h>
+#endif
+
 #ifdef FRAMEWORK_NET
 #include <framework/net/httplogin.h>
 #include <framework/net/protocol.h>

@@ -166,6 +166,7 @@ if (MSVC)
     set_source_files_properties(
       framework/luafunctions.cpp
       framework/luafunctions_graphics.cpp
+      framework/luafunctions_gfx_singletons.cpp
       framework/luafunctions_ui.cpp
       client/luafunctions.cpp
       PROPERTIES
@@ -694,6 +695,7 @@ set(SOURCE_FILES
         framework/luaengine/luavaluecasts.cpp
         framework/luafunctions.cpp
         framework/luafunctions_graphics.cpp
+        framework/luafunctions_gfx_singletons.cpp
         framework/luafunctions_ui.cpp
         framework/net/connection.cpp
         framework/net/inputmessage.cpp

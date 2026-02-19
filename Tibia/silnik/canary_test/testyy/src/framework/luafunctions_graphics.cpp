@@ -22,9 +22,8 @@
 
 // Split from luafunctions.cpp to avoid MSVC ICE C1001 caused by too many
 // template instantiations (luabinder.h) in a single translation unit.
-// This file contains GraphicalApplication, PlatformWindow, Mouse, Graphics,
-// TextureManager, UIManager, FontManager, ParticleManager, and ShaderManager
-// singleton bindings.
+// This file contains GraphicalApplication and PlatformWindow bindings.
+// Mouse, Graphics, UI, Fonts, Particles, Shaders are in luafunctions_gfx_singletons.cpp.
 
 #include <framework/core/application.h>
 #include <framework/core/eventdispatcher.h>
@@ -32,15 +31,7 @@
 #include <framework/luaengine/luainterface.h>
 
 #ifdef FRAMEWORK_GRAPHICS
-#include "framework/graphics/fontmanager.h"
-#include "framework/graphics/graphics.h"
-#include "framework/graphics/particleeffect.h"
-#include "framework/graphics/particlemanager.h"
-#include "framework/graphics/shadermanager.h"
-#include "framework/graphics/texturemanager.h"
-#include "framework/input/mouse.h"
 #include "framework/platform/platformwindow.h"
-#include "framework/ui/ui.h"
 #endif
 
 void registerLuaFunctions_Graphics()
@@ -115,76 +106,8 @@ void registerLuaFunctions_Graphics()
     g_lua.bindSingletonFunction("g_window", "getDisplayDensity", &PlatformWindow::getDisplayDensity, &g_window);
     g_lua.bindSingletonFunction("g_window", "setKeyDelay", &PlatformWindow::setKeyDelay, &g_window);
 
-    // Input
-    g_lua.registerSingletonClass("g_mouse");
-    g_lua.bindSingletonFunction("g_mouse", "loadCursors", &Mouse::loadCursors, &g_mouse);
-    g_lua.bindSingletonFunction("g_mouse", "addCursor", &Mouse::addCursor, &g_mouse);
-    g_lua.bindSingletonFunction("g_mouse", "pushCursor", &Mouse::pushCursor, &g_mouse);
-    g_lua.bindSingletonFunction("g_mouse", "popCursor", &Mouse::popCursor, &g_mouse);
-    g_lua.bindSingletonFunction("g_mouse", "isCursorChanged", &Mouse::isCursorChanged, &g_mouse);
-    g_lua.bindSingletonFunction("g_mouse", "isPressed", &Mouse::isPressed, &g_mouse);
-
-    // Graphics
-    g_lua.registerSingletonClass("g_graphics");
-    g_lua.bindSingletonFunction("g_graphics", "getViewportSize", &Graphics::getViewportSize, &g_graphics);
-    g_lua.bindSingletonFunction("g_graphics", "getVendor", &Graphics::getVendor, &g_graphics);
-    g_lua.bindSingletonFunction("g_graphics", "getRenderer", &Graphics::getRenderer, &g_graphics);
-    g_lua.bindSingletonFunction("g_graphics", "getVersion", &Graphics::getVersion, &g_graphics);
-
-    // Textures
-    g_lua.registerSingletonClass("g_textures");
-    g_lua.bindSingletonFunction("g_textures", "preload", &TextureManager::preload, &g_textures);
-    g_lua.bindSingletonFunction("g_textures", "clearCache", &TextureManager::clearCache, &g_textures);
-    g_lua.bindSingletonFunction("g_textures", "liveReload", &TextureManager::liveReload, &g_textures);
-
-    // UI
-    g_lua.registerSingletonClass("g_ui");
-    g_lua.bindSingletonFunction("g_ui", "clearStyles", &UIManager::clearStyles, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "importStyle", &UIManager::importStyle, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "getStyle", &UIManager::getStyle, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "getStyleName", &UIManager::getStyleName, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "getStyleClass", &UIManager::getStyleClass, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "loadUI", &UIManager::loadUI, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "loadUIFromString", &UIManager::loadUIFromString, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "displayUI", &UIManager::displayUI, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "createWidget", &UIManager::createWidget, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "createWidgetFromOTML", &UIManager::createWidgetFromOTML, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "getRootWidget", &UIManager::getRootWidget, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "getDraggingWidget", &UIManager::getDraggingWidget, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "getPressedWidget", &UIManager::getPressedWidget, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "setDebugBoxesDrawing", &UIManager::setDebugBoxesDrawing, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "isDrawingDebugBoxes", &UIManager::isDrawingDebugBoxes, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "isMouseGrabbed", &UIManager::isMouseGrabbed, &g_ui);
-    g_lua.bindSingletonFunction("g_ui", "isKeyboardGrabbed", &UIManager::isKeyboardGrabbed, &g_ui);
-
-    // FontManager
-    g_lua.registerSingletonClass("g_fonts");
-    g_lua.bindSingletonFunction("g_fonts", "clearFonts", &FontManager::clearFonts, &g_fonts);
-    g_lua.bindSingletonFunction("g_fonts", "clearGlyphCaches", &FontManager::clearGlyphCaches, &g_fonts);
-    g_lua.bindSingletonFunction("g_fonts", "setLocaleTag", &FontManager::setLocaleTag, &g_fonts);
-    g_lua.bindSingletonFunction("g_fonts", "getLocaleTag", &FontManager::getLocaleTag, &g_fonts);
-    g_lua.bindSingletonFunction("g_fonts", "importFont", &FontManager::importFont, &g_fonts);
-    g_lua.bindSingletonFunction("g_fonts", "fontExists", &FontManager::fontExists, &g_fonts);
-
-    // ParticleManager
-    g_lua.registerSingletonClass("g_particles");
-    g_lua.bindSingletonFunction("g_particles", "importParticle", &ParticleManager::importParticle, &g_particles);
-    g_lua.bindSingletonFunction("g_particles", "getEffectsTypes", &ParticleManager::getEffectsTypes, &g_particles);
-    g_lua.bindSingletonFunction("g_particles", "terminate", &ParticleManager::terminate, &g_particles);
-
-    // ShaderManager
-    g_lua.registerSingletonClass("g_shaders");
-    g_lua.bindSingletonFunction("g_shaders", "createShader", &ShaderManager::createShader, &g_shaders);
-    g_lua.bindSingletonFunction("g_shaders", "createFragmentShader", &ShaderManager::createFragmentShader, &g_shaders);
-    g_lua.bindSingletonFunction("g_shaders", "createFragmentShaderFromCode", &ShaderManager::createFragmentShaderFromCode, &g_shaders);
-    g_lua.bindSingletonFunction("g_shaders", "setupMapShader", &ShaderManager::setupMapShader, &g_shaders);
-    g_lua.bindSingletonFunction("g_shaders", "setupItemShader", &ShaderManager::setupItemShader, &g_shaders);
-    g_lua.bindSingletonFunction("g_shaders", "setupOutfitShader", &ShaderManager::setupOutfitShader, &g_shaders);
-    g_lua.bindSingletonFunction("g_shaders", "setupMountShader", &ShaderManager::setupMountShader, &g_shaders);
-    g_lua.bindSingletonFunction("g_shaders", "addMultiTexture", &ShaderManager::addMultiTexture, &g_shaders);
-    g_lua.bindSingletonFunction("g_shaders", "getShader", &ShaderManager::getShader, &g_shaders);
-    g_lua.bindClassStaticFunction("g_shaders", "clear", [] {
-        g_mainDispatcher.addEvent([] { g_shaders.clear(); });
-    });
+    // Mouse, Graphics, Textures, UI, Fonts, Particles, Shaders
+    extern void registerLuaFunctions_GfxSingletons();
+    registerLuaFunctions_GfxSingletons();
 #endif
 }

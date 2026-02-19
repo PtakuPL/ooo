@@ -70446,5 +70446,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T11:54:34.952611Z"
+  },
+  "achievement.392.name": {
+    "src_hash": "b6141c09806e6b4abf759909284ee365",
+    "text": "Inchiodato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:02.421436Z"
   }
 }

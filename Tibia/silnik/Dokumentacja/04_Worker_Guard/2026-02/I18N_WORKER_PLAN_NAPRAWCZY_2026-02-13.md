@@ -11,6 +11,32 @@
 
 ---
 
+## 🛠️ Aktualizacja wykonania (2026-02-19 20:50 UTC — awaria `TRANSLATION_OVERRIDES` + przywrócenie pracy workera)
+
+Wybrane do realizacji pełne zadania:
+- **Przywrócić stabilną pracę workera po `NameError: TRANSLATION_OVERRIDES`**
+- **Domknąć kontrakt manual override dla tłumaczeń (priorytet nad TM/GT)**
+- **Utrzymać czytelny status postępu w formie graficznej**
+
+Status realizacji (graficznie):
+
+| Status | Zadanie | Szczegóły |
+|---|---|---|
+| ✅ ZROBIONE | Diagnoza root-cause | Potwierdzono: `TRANSLATION_OVERRIDES` używane bez definicji w `i18n_worker_simple.sh` (AUTOTRANSPY, okolice traceback `<stdin>:3918`). |
+| ✅ ZROBIONE | Weryfikacja dokumentacji | Sprawdzono najnowsze pliki `Dokumentacja/**/*.md`; istnieje opis priorytetu nadpisywań manualnych, ale bez literalnej nazwy `TRANSLATION_OVERRIDES`. |
+| ✅ ZROBIONE | Implementacja naprawy runtime | Dodano bezpieczny loader override + fallback `{}` + walidację formatu danych (bez crashy przy brakującym/zepsutym pliku). |
+| ✅ ZROBIONE | Walidacja po restarcie | Restart `i18n-guardian.service` wykonany; w logach po restarcie brak `NameError: TRANSLATION_OVERRIDES`. |
+| ✅ ZROBIONE | Domknięcie kontraktu docs | Potwierdzono i opisano źródło override: `i18n/overrides/{lang}.json` (ręczne nadpisania o najwyższym priorytecie). |
+
+Kontrakt `translation overrides` (kanoniczny):
+- Lokalizacja: `canary_test/i18n/overrides/{lang}.json` (np. `i18n/overrides/pl.json`).
+- Format: płaski słownik `"pełny_klucz_i18n" -> "tekst_docelowy"`.
+- Klucze zaczynające się od `_` są traktowane jako metadane/komentarze i są ignorowane.
+- Priorytet runtime: `override` > `TM` > `SIMPLE/WORD` > `GT`.
+
+Cel jakości:
+- Dążyć do jakości produkcyjnej tłumaczeń (gry/UI/dialogi), ale traktować to jako proces iteracyjny z guardami jakości i manualnym review dla przypadków wysokiego ryzyka semantycznego.
+
 ## 🛠️ Aktualizacja wykonania (2026-02-17 14:00 UTC — fix progress 0/0 LIVE + E4 Δ24h trendy + analiza GitHub Actions spam)
 
 Wybrane do realizacji pełne zadania:

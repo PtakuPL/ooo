@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T07:20:56.088674Z",
+  "checked_at": "2026-02-19T20:05:50.185527Z",
   "issues_total": 429,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -562,69 +562,6 @@
       "lang": "SHWAARR!"
     },
     {
-      "key": "monster.cosmic_energy_prism_a_invu.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*Zap!*",
-      "pl": "*zastrzelić!*",
-      "lang": "*Zap!*"
-    },
-    {
-      "key": "monster.cosmic_energy_prism_b.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*Zap!*",
-      "pl": "*zastrzelić!*",
-      "lang": "*Zap!*"
-    },
-    {
-      "key": "monster.cosmic_energy_prism_c.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*Zap!*",
-      "pl": "*zastrzelić!*",
-      "lang": "*Zap!*"
-    },
-    {
-      "key": "monster.cosmic_energy_prism_d_invu.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*Zap!*",
-      "pl": "*zastrzelić!*",
-      "lang": "*Zap!*"
-    },
-    {
-      "key": "monster.cosmic_energy_prism_a.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*Zap!*",
-      "pl": "*zastrzelić!*",
-      "lang": "*Zap!*"
-    },
-    {
-      "key": "monster.cosmic_energy_prism_b_invu.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*Zap!*",
-      "pl": "*zastrzelić!*",
-      "lang": "*Zap!*"
-    },
-    {
-      "key": "monster.cosmic_energy_prism_d.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*Zap!*",
-      "pl": "*zastrzelić!*",
-      "lang": "*Zap!*"
-    },
-    {
       "key": "monster.the_enraged_thorn_knight.voice_3",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -641,15 +578,6 @@
       "en": "Blackout!",
       "pl": "Zaciemnienie!",
       "lang": "Blackout!"
-    },
-    {
-      "key": "monster.cosmic_energy_prism_c_invu.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*Zap!*",
-      "pl": "*zastrzelić!*",
-      "lang": "*Zap!*"
     },
     {
       "key": "monster.minion_of_versperoth.voice_1",
@@ -868,24 +796,6 @@
       "lang": "Grrrrrr"
     },
     {
-      "key": "monster.fox.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
-    },
-    {
-      "key": "monster.clomp.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Snarl!",
-      "pl": "Warczenie!",
-      "lang": "Snarl!"
-    },
-    {
       "key": "monster.rat.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -913,24 +823,6 @@
       "lang": "Oink"
     },
     {
-      "key": "monster.vampire_pig.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oink oink",
-      "pl": "Chrum chrum",
-      "lang": "Oink oink"
-    },
-    {
-      "key": "monster.husky.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
-    },
-    {
       "key": "monster.vulcongra.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -940,15 +832,6 @@
       "lang": "Fuchah!"
     },
     {
-      "key": "monster.pig.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oink oink",
-      "pl": "Chrum chrum",
-      "lang": "Oink oink"
-    },
-    {
       "key": "monster.pig.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -956,15 +839,6 @@
       "en": "Oink",
       "pl": "Chrum",
       "lang": "Oink"
-    },
-    {
-      "key": "monster.panda.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
     },
     {
       "key": "monster.panda.voice_2",
@@ -3737,6 +3611,132 @@
       "en": "Splosh!",
       "pl": "Plusk!",
       "lang": "Splosh!"
+    },
+    {
+      "key": "scripts.movements_deep_terror.say_3",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Time out!",
+      "pl": "Czas out!",
+      "lang": "Time out!"
+    },
+    {
+      "key": "scripts.movements_glooth_horror.say_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Time out!",
+      "pl": "Czas out!",
+      "lang": "Time out!"
+    },
+    {
+      "key": "scripts.movements_professor_maxxen.say_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Time out!",
+      "pl": "Czas out!",
+      "lang": "Time out!"
+    },
+    {
+      "key": "scripts.movements_throne.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Begone!",
+      "pl": "Precz!",
+      "lang": "Begone!"
+    },
+    {
+      "key": "scripts.movements_throne.say_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Begone!",
+      "pl": "Precz!",
+      "lang": "Begone!"
+    },
+    {
+      "key": "scripts.moviments_bellow.say_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "TSSSSHHHHH",
+      "pl": "TSSSHHHHH",
+      "lang": "TSSSSHHHHH"
+    },
+    {
+      "key": "scripts.music_box.sound_ironblight",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Plinngggg",
+      "pl": "Plinggggg",
+      "lang": "Plinngggg"
+    },
+    {
+      "key": "scripts.music_box.sound_midnight_panther",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Purrrrrrr",
+      "pl": "Mrrrrrrr",
+      "lang": "Purrrrrrr"
+    },
+    {
+      "key": "scripts.music_box.sound_wailing_widow",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sssssssss",
+      "pl": "Sssssss",
+      "lang": "Sssssssss"
+    },
+    {
+      "key": "scripts.northern_fishburger.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Smack.",
+      "pl": "Zadatki.",
+      "lang": "Smack."
+    },
+    {
+      "key": "scripts.offline_training.and",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "and",
+      "pl": "i",
+      "lang": "and"
+    },
+    {
+      "key": "scripts.offline_training.hours_plural",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "%s hours",
+      "pl": "%s godziny",
+      "lang": "%s hours"
+    },
+    {
+      "key": "scripts.offline_training.hours_singular",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1 hour",
+      "pl": "1 godzina",
+      "lang": "1 hour"
+    },
+    {
+      "key": "scripts.offline_training.minutes_plural",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "%s minutes",
+      "pl": "%s minuty",
+      "lang": "%s minutes"
     }
   ],
   "length_ratio_issues": [
@@ -3932,8 +3932,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 8,
-    "skipped": 72,
+    "applied": 0,
+    "skipped": 80,
     "errors": 0
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-19T07:18:46.629767Z",
+  "timestamp": "2026-02-19T20:04:10.701927Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 699,
+  "entries_total": 698,
   "entries_by_lang": {
     "es": 277,
     "pl": 139,
@@ -73,7 +73,7 @@
     "de": 659,
     "fr": 578,
     "hu": 663,
-    "it": 463,
+    "it": 455,
     "nl": 691,
     "pt": 620,
     "ro": 430,
@@ -107,7 +107,7 @@
     "no": 663,
     "sl": 663,
     "sq": 663,
-    "sr": 62,
+    "sr": 50,
     "sv": 543,
     "sw": 905,
     "ta": 905,
@@ -634,7 +634,7 @@
     {
       "lang": "it",
       "json_file": "monsters.json",
-      "identical_to_en": 26,
+      "identical_to_en": 18,
       "domain_priority": 8
     },
     {

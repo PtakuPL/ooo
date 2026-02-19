@@ -10928,6 +10928,29 @@ try:
 except Exception:
     TIBIA_PROPER_NOUNS = set()
 
+def _load_translation_overrides(i18n_dir: str, lang: str):
+    overrides = {}
+    try:
+        path = os.path.join(i18n_dir, "overrides", f"{lang}.json")
+        if not os.path.isfile(path):
+            return overrides
+        with open(path, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+        if not isinstance(payload, dict):
+            return overrides
+        for key, value in payload.items():
+            if not isinstance(key, str):
+                continue
+            if key.startswith("_"):
+                continue
+            if isinstance(value, str) and value.strip():
+                overrides[key] = value
+        return overrides
+    except Exception:
+        return {}
+
+TRANSLATION_OVERRIDES = {target_lang: _load_translation_overrides(I18N_DIR, target_lang)}
+
 # Google Translate config (from env)
 use_google_translate = os.environ.get("USE_GOOGLE_TRANSLATE", "false") == "true"
 gt_batch_size = int(os.environ.get("GT_BATCH_SIZE", "50"))

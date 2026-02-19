@@ -1,49 +1,73 @@
 {
-  "window_start_utc": "2026-02-19T06:24:03.452104Z",
-  "window_end_utc": "2026-02-19T07:24:03.452104Z",
+  "window_start_utc": "2026-02-19T19:06:50.931419Z",
+  "window_end_utc": "2026-02-19T20:06:50.931419Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
     "i18n/status/translation_guard_report.jsonl",
     "i18n/status/suspicious_log.jsonl"
   ],
-  "total_cycles": 6,
+  "total_cycles": 84,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 6
+    "AUTO_TRANSLATE": 84
   },
-  "auto_translate_cycles": 6,
+  "auto_translate_cycles": 84,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 0,
-  "guard_fail": 0,
-  "guard_fail_rate_pct": 0.0,
-  "no_progress_entries": 4,
-  "no_progress_rate_pct": 100.0,
-  "throughput_keys_per_h": 0.0,
-  "suspicious_total": 0,
+  "translated": 58,
+  "guard_fail": 26,
+  "guard_fail_rate_pct": 31.0,
+  "no_progress_entries": 180,
+  "no_progress_rate_pct": 98.4,
+  "throughput_keys_per_h": 559.9,
+  "suspicious_total": 197,
   "top_guard_fail_targets": [
     {
-      "target": "pl/spells.json",
+      "target": "it/achievements.json",
+      "translated": 3,
+      "guard_fail": 15,
+      "guard_command": 0
+    },
+    {
+      "target": "ru/achievements.json",
+      "translated": 19,
+      "guard_fail": 8,
+      "guard_command": 0
+    },
+    {
+      "target": "ro/libs.json",
+      "translated": 36,
+      "guard_fail": 3,
+      "guard_command": 0
+    },
+    {
+      "target": "ru/npclib.json",
       "translated": 0,
       "guard_fail": 0,
       "guard_command": 0
     },
     {
-      "target": "es/spells.json",
+      "target": "ro/startup.json",
       "translated": 0,
       "guard_fail": 0,
       "guard_command": 0
     },
     {
-      "target": "pl/scripts.json",
+      "target": "it/otclient_data.json",
       "translated": 0,
       "guard_fail": 0,
       "guard_command": 0
     },
     {
-      "target": "es/scripts.json",
+      "target": "ru/creaturescripts.json",
+      "translated": 0,
+      "guard_fail": 0,
+      "guard_command": 0
+    },
+    {
+      "target": "ro/example_merchant.json",
       "translated": 0,
       "guard_fail": 0,
       "guard_command": 0

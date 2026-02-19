@@ -62582,5 +62582,293 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T11:57:32.544770Z"
+  },
+  "lib.player.loyalty_title_6": {
+    "src_hash": "3565d675e7e3e8a0c335110aab098b94",
+    "text": "Războinicul lui Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.881154Z"
+  },
+  "lib.player.loyalty_title_7": {
+    "src_hash": "d0d1197accc46c113ddf321715d3dc73",
+    "text": "Deținătorul Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.881514Z"
+  },
+  "lib.player.loyalty_title_8": {
+    "src_hash": "51243a5dd0c8f1f3781c5a10b0ca6274",
+    "text": "Gardianul lui Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.881878Z"
+  },
+  "lib.player.loyalty_title_9": {
+    "src_hash": "5cfd7d039312bf87947fc6d23328ba6e",
+    "text": "Înțeleptul lui Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.882198Z"
+  },
+  "lib.player.msg1": {
+    "src_hash": "70e1805b803ae7b2ba2119ad2d5d4500",
+    "text": "Suma articolului este greșită, vă rugăm să contactați un administrator.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.882620Z"
+  },
+  "lib.player.msg3": {
+    "src_hash": "b62304fa1ffa58d5ef2ddcd033a8948c",
+    "text": "Elementul de recompensă este greșit, vă rugăm să contactați un administrator.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.883052Z"
+  },
+  "lib.player.msg_1": {
+    "src_hash": "b62304fa1ffa58d5ef2ddcd033a8948c",
+    "text": "Elementul de recompensă este greșit, vă rugăm să contactați un administrator.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.883455Z"
+  },
+  "lib.player.msg_3": {
+    "src_hash": "70e1805b803ae7b2ba2119ad2d5d4500",
+    "text": "Suma articolului este greșită, vă rugăm să contactați un administrator.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.883901Z"
+  },
+  "lib.player.msg_found_item": {
+    "src_hash": "5bc1c770318bc16688474ebce58036c7",
+    "text": "Ați găsit un {itemName}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.884201Z"
+  },
+  "lib.player.msg_found_no_room": {
+    "src_hash": "c9499e120b66fd0fae028c209ce3d8d0",
+    "text": "Ați găsit un {itemName}, dar nu aveți loc să îl luați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.884599Z"
+  },
+  "lib.player.msg_found_too_heavy": {
+    "src_hash": "e4d00b7f259b906fef99fce9909c1ebe",
+    "text": "Ați găsit un {itemName}. Cântărind {weight} oz, este prea greu pentru a fi transportat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.885106Z"
+  },
+  "lib.player.msg_monster_not_found": {
+    "src_hash": "dd4b132c13641042c97da481798fb2fc",
+    "text": "Monstru nu a fost găsit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.885388Z"
+  },
+  "lib.player.msg_need_premium": {
+    "src_hash": "d10e0f3404950e7ed3fccf7a8dbd72a3",
+    "text": "Ai nevoie de un cont premium.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.885666Z"
+  },
+  "lib.player.msg_no_other_summons": {
+    "src_hash": "f8bfd1361103ea1a8a59f9cc8731aca3",
+    "text": "Nu poți avea altă somație.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.885993Z"
+  },
+  "lib.player.msg_paid_inventory": {
+    "src_hash": "213135402a56d93835c1ed7a79149928",
+    "text": "A plătit {amount} aur din inventar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.886329Z"
+  },
+  "lib.player.msg_paid_mixed": {
+    "src_hash": "9ab0b3d6f4d401f0ba121e9e09305972",
+    "text": "A plătit {inventoryAmount} din inventar și {bankAmount} aur din contul bancar. Soldul contului dvs. este acum {balance} aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.887238Z"
+  },
+  "lib.quests.msg1": {
+    "src_hash": "3a8b46b6187246602db4445aed35296d",
+    "text": "Jurnalul dvs. de misiuni a fost actualizat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:03:41.887667Z"
+  },
+  "lib.quests.msg_updated": {
+    "src_hash": "3a8b46b6187246602db4445aed35296d",
+    "text": "Jurnalul dvs. de misiuni a fost actualizat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.343466Z"
+  },
+  "lib.soul_war.msg1": {
+    "src_hash": "05b201a3d4df50623b0843236820b860",
+    "text": "Ai câștigat ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.343782Z"
+  },
+  "lib.their_masters_voice.say_1": {
+    "src_hash": "58b351493343b9b5dd577ffd4f62a910",
+    "text": "HAI! Slujitorii mei! CREŞTERE!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.344137Z"
+  },
+  "lib.their_masters_voice.say_2": {
+    "src_hash": "0f566a18b8140a810eea067ede21ea0e",
+    "text": "Ai înghițit suficient slime pentru a prinde bine podeaua alunecoasă a temniței.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.344591Z"
+  },
+  "lib.their_masters_voice.say_3": {
+    "src_hash": "f2cff31321f293cfaeafe3834add58bb",
+    "text": "Înghițitorul de slime înghite bucăți mari din ciuperca slime cu mare satisfacție.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.345085Z"
+  },
+  "lib.vip.msg1": {
+    "src_hash": "03278cc9bc5c69ee894aaa8213e03074",
+    "text": "Statutul tău VIP a expirat. Toate beneficiile VIP au fost eliminate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.345505Z"
+  },
+  "lib.vip.msg2": {
+    "src_hash": "0e4d8cc238d8f1ecb4331c973d5d33bf",
+    "text": "Ai statut VIP nelimitat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.345819Z"
+  },
+  "lib.vip.msg3": {
+    "src_hash": "3e8a081024cb53ed57fe2da8cd4c9b16",
+    "text": "Statutul tău VIP este momentan inactiv.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.346283Z"
+  },
+  "lib.vip.msg_expired": {
+    "src_hash": "03278cc9bc5c69ee894aaa8213e03074",
+    "text": "Statutul tău VIP a expirat. Toate beneficiile VIP au fost eliminate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.346793Z"
+  },
+  "lib.vip.msg_granted": {
+    "src_hash": "3f219dcd31cad1e6380a1ff606f3eec5",
+    "text": "Vi s-au acordat {days} zile de statut VIP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.347139Z"
+  },
+  "lib.vip.msg_inactive": {
+    "src_hash": "3e8a081024cb53ed57fe2da8cd4c9b16",
+    "text": "Statutul tău VIP este momentan inactiv.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.347511Z"
+  },
+  "lib.vip.msg_remaining": {
+    "src_hash": "3e29108a44876517f25e6f1c6d78492f",
+    "text": "Mai aveți {time} de timp VIP rămas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.348118Z"
+  },
+  "lib.vip.msg_unlimited": {
+    "src_hash": "0e4d8cc238d8f1ecb4331c973d5d33bf",
+    "text": "Ai statut VIP nelimitat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.348503Z"
+  },
+  "misc.compat.msg_1": {
+    "src_hash": "557c8cc08c97134aa5959bb081ae55a2",
+    "text": "Ești deja într-o petrecere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.348825Z"
+  },
+  "misc.daily_reward.msg_1": {
+    "src_hash": "c7837b98e38b5a76905046080e0f2ec9",
+    "text": "Un minut de rezistență a fost reumplut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.349166Z"
+  },
+  "misc.daily_reward.msg_2": {
+    "src_hash": "45b4f7e1effacb1929a28e3d56a24129",
+    "text": "Un punct de suflet a fost restaurat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.349601Z"
+  },
+  "misc.functions.msg_1": {
+    "src_hash": "992b3e68e66a27e80e942e6247011fd3",
+    "text": "Ai fost lovit de depășirea timpului în camera șefului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.349986Z"
+  },
+  "misc.hireling.msg_1": {
+    "src_hash": "d3677b4a244db7874e0f34804cd22d9b",
+    "text": "Nu ești stăpânul acestui angajat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.350337Z"
+  },
+  "rune.msg_cannot_control_more": {
+    "src_hash": "d1aecbe926f46087e00e677738916ee6",
+    "text": "Nu poți controla mai multe creaturi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:04:01.350673Z"
   }
 }

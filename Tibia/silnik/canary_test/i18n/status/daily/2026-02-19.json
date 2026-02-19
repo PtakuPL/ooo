@@ -1,18 +1,38 @@
 {
-  "cycles": 2,
+  "cycles": 3,
   "date": "2026-02-19",
   "errors": {
-    "count": 0
+    "count": 20
   },
-  "generated_at_utc": "2026-02-19T07:23:57Z",
+  "generated_at_utc": "2026-02-19T20:06:46Z",
   "work": {
     "auto_translate": {
       "langs": {
         "ES": {
           "skipped": 0,
-          "translated": 0
+          "translated": 25
+        },
+        "IT": {
+          "skipped": 0,
+          "translated": 3
         },
         "PL": {
+          "skipped": 0,
+          "translated": 0
+        },
+        "RO": {
+          "skipped": 0,
+          "translated": 36
+        },
+        "RU": {
+          "skipped": 0,
+          "translated": 19
+        },
+        "SR": {
+          "skipped": 0,
+          "translated": 0
+        },
+        "SV": {
           "skipped": 0,
           "translated": 0
         }

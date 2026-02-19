@@ -3931,3 +3931,36 @@
 {"timestamp": "2026-02-17T11:57:55.865197Z", "language": "ro", "json_file": "monsters.json", "translated": 10, "quality": {"avg_en_len": 8.0, "avg_translated_len": 8.5, "length_ratio": 1.062, "source_breakdown": {"tm": 9, "simple": 1}, "suspicious_count": 37, "suspicious_rejected": 37, "suspicious_high": 37, "gt_guard_fails": 40, "identical_to_en": 5, "identical_to_en_exempt": 4, "very_short_translations": 0, "very_long_translations": 0}}
 {"timestamp": "2026-02-17T11:58:12.730184Z", "language": "sv", "json_file": "npc.json", "translated": 50, "quality": {"avg_en_len": 71.2, "avg_translated_len": 67.9, "length_ratio": 0.954, "source_breakdown": {"tm": 9, "simple": 41}, "suspicious_count": 31, "suspicious_rejected": 0, "suspicious_high": 31, "gt_guard_fails": 0, "identical_to_en": 0, "identical_to_en_exempt": 4, "very_short_translations": 0, "very_long_translations": 0}}
 {"timestamp": "2026-02-17T11:58:26.623538Z", "language": "sr", "json_file": "npc.json", "translated": 50, "quality": {"avg_en_len": 127.2, "avg_translated_len": 121.6, "length_ratio": 0.956, "source_breakdown": {"tm": 50}, "suspicious_count": 50, "suspicious_rejected": 0, "suspicious_high": 50, "gt_guard_fails": 0, "identical_to_en": 0, "identical_to_en_exempt": 0, "very_short_translations": 0, "very_long_translations": 0}}
+{"timestamp": "2026-02-19T07:47:50.514171Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T09:06:11.836218Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T09:18:04.067317Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T10:05:19.097413Z", "language": "pl", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T10:16:08.450380Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T10:46:32.004745Z", "language": "pl", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T10:57:11.803378Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T11:35:38.578679Z", "language": "pl", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T11:48:18.203072Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T12:35:30.419817Z", "language": "pl", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T12:46:01.363082Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T13:16:45.917099Z", "language": "pl", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T13:27:02.187612Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T14:04:43.428047Z", "language": "pl", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T14:17:07.770768Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T15:04:25.886097Z", "language": "pl", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T15:15:05.976290Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T15:46:16.196183Z", "language": "pl", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T15:57:09.808638Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T16:36:32.219243Z", "language": "pl", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T16:50:04.847022Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T17:34:52.372572Z", "language": "pl", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T17:44:50.495952Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T18:13:44.487549Z", "language": "pl", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T18:23:49.918222Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T19:00:01.256998Z", "language": "pl", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T19:11:43.079703Z", "language": "it", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T19:59:17.223396Z", "language": "pl", "json_file": "example_merchant.json", "translated": 0, "quality": {}}
+{"timestamp": "2026-02-19T20:02:53.352168Z", "language": "ro", "json_file": "client.json", "translated": 2, "quality": {"avg_en_len": 16.5, "avg_translated_len": 15.5, "length_ratio": 0.939, "source_breakdown": {"tm": 2}, "suspicious_count": 7, "suspicious_rejected": 6, "suspicious_high": 7, "gt_guard_fails": 12, "identical_to_en": 0, "identical_to_en_exempt": 1, "very_short_translations": 0, "very_long_translations": 0}}
+{"timestamp": "2026-02-19T20:03:02.543836Z", "language": "it", "json_file": "achievements.json", "translated": 3, "quality": {"avg_en_len": 10.7, "avg_translated_len": 10.3, "length_ratio": 0.969, "source_breakdown": {"tm": 2, "google_translate": 1}, "suspicious_count": 13, "suspicious_rejected": 13, "suspicious_high": 13, "gt_guard_fails": 15, "identical_to_en": 1, "identical_to_en_exempt": 1, "very_short_translations": 0, "very_long_translations": 0}}
+{"timestamp": "2026-02-19T20:03:12.422607Z", "language": "ru", "json_file": "achievements.json", "translated": 19, "quality": {"avg_en_len": 128.5, "avg_translated_len": 127.8, "length_ratio": 0.995, "source_breakdown": {"tm": 19}, "suspicious_count": 27, "suspicious_rejected": 5, "suspicious_high": 27, "gt_guard_fails": 8, "identical_to_en": 0, "identical_to_en_exempt": 0, "very_short_translations": 0, "very_long_translations": 0}}
+{"timestamp": "2026-02-19T20:04:01.480770Z", "language": "ro", "json_file": "libs.json", "translated": 36, "quality": {"avg_en_len": 42.3, "avg_translated_len": 45.2, "length_ratio": 1.068, "source_breakdown": {"google_translate": 36}, "suspicious_count": 0, "suspicious_rejected": 0, "suspicious_high": 0, "gt_guard_fails": 3, "identical_to_en": 0, "identical_to_en_exempt": 0, "very_short_translations": 0, "very_long_translations": 0}}
+{"timestamp": "2026-02-19T20:04:39.130921Z", "language": "es", "json_file": "npc.json", "translated": 25, "quality": {"avg_en_len": 74.7, "avg_translated_len": 79.5, "length_ratio": 1.064, "source_breakdown": {"tm": 25}, "suspicious_count": 69, "suspicious_rejected": 2, "suspicious_high": 69, "gt_guard_fails": 26, "identical_to_en": 0, "identical_to_en_exempt": 4, "very_short_translations": 0, "very_long_translations": 0}}

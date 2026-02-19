@@ -74046,5 +74046,261 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T22:19:25.927280Z"
+  },
+  "scripts.blessing.already_possess": {
+    "src_hash": "299238c1ad2213c614a5b40865f27a1d",
+    "text": "Possiedi già questa benedizione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:41:37.184935Z"
+  },
+  "scripts.actions_vocation_reward.msg_2": {
+    "src_hash": "599cf90440973dd912f8996689e2fa2b",
+    "text": "Hai trovato un {}. Non c'è spazio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:41:50.053841Z"
+  },
+  "scripts.actions_waldos_posthorn.msg_1": {
+    "src_hash": "358e1871d6927f9c6a51a8f8e300b4f6",
+    "text": "Hai trovato il corno della posta di Waldo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:41:50.054259Z"
+  },
+  "scripts.actions_waldos_posthorn.msg_2": {
+    "src_hash": "952f56962331136fbc510393bd0ab94e",
+    "text": "L'umano morto è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:41:50.054540Z"
+  },
+  "scripts.actions_warrior_skeleton.msg_1": {
+    "src_hash": "80d457dae23708dcc3b6cd172fd0a4e0",
+    "text": "Hai scoperto lo scheletro di un guerriero deceduto. Sembra che abbia provato a dare la caccia ai draghi da queste parti... e abbia fallito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:41:50.055136Z"
+  },
+  "scripts.actions_warrior_skeleton.msg_2": {
+    "src_hash": "89f9a53b30b87ed685542d56c12b171b",
+    "text": "L'esploratore morto è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:41:50.055438Z"
+  },
+  "scripts.actions_yakchal.say_1": {
+    "src_hash": "2144bcb8d71f4344fe6b00158f77e29d",
+    "text": "Yakchal è già stato risvegliato oggi. Dovresti riprovare domani.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:41:56.649878Z"
+  },
+  "scripts.actions_yakchal.say_2": {
+    "src_hash": "e28e22403ac4c71dfd23694e150f6e0b",
+    "text": "La luce stellare ghiacciata si è frantumata, ma hai risvegliato la strega del ghiaccio Yakchal dal suo sonno! Non sembra divertita...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:41:56.650567Z"
+  },
+  "scripts.actions_yakchal.say_3": {
+    "src_hash": "05f569068b7c49699bd4fcc86f27f3da",
+    "text": "Hai risvegliato la strega del ghiaccio Yakchal dal suo sonno! Non sembra divertita...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:41:56.650960Z"
+  },
+  "scripts.actions_yalahar_machine_war_golems.msg_1": {
+    "src_hash": "a25f971cea94edfe9bc6fdba575342b6",
+    "text": "Non hai abbastanza ruote dentate per attivare la macchina.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:41:56.651297Z"
+  },
+  "scripts.actions_yalahar_machine_war_golems.msg_2": {
+    "src_hash": "5161e3c160b510f6be4cbee835b70524",
+    "text": "Inserisci tutte e 4 le ruote dentate, regolando il teletrasporto per trasportarti al piano più profondo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:41:56.651824Z"
+  },
+  "scripts.actions_yselda_shortcut.msg_1": {
+    "src_hash": "b098102bc8283f62fb35ba0a9d9b31c1",
+    "text": "Questa radice sembra ispessirsi e avvolgersi nel momento in cui provi ad afferrarla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:03.708207Z"
+  },
+  "scripts.add_addon.msg_1": {
+    "src_hash": "2fde20b0bd6f461fcd73afd762358332",
+    "text": "{} ti ha aggiunto il componente aggiuntivo {} per looktype {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:03.708655Z"
+  },
+  "scripts.add_addon.msg_2": {
+    "src_hash": "eb7fa1ec0c564386588f4f41b228b5c7",
+    "text": "Componente aggiuntivo {} per looktype {} impostato per il giocatore {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:03.709011Z"
+  },
+  "scripts.add_addon.msg_3": {
+    "src_hash": "f9299abc8b7cafdc63693138fc4eb1a2",
+    "text": "Hai aggiunto con successo il componente aggiuntivo {} a tutti i looktype del giocatore {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:03.709396Z"
+  },
+  "scripts.add_addon.msg_4": {
+    "src_hash": "723d449c477613b81630465bdf8bcf0b",
+    "text": "{} ha aggiunto il componente aggiuntivo {} a tutti i tuoi looktype.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:03.709779Z"
+  },
+  "scripts.add_bosstiary_kills.msg_1": {
+    "src_hash": "9ab812f39402e47b0afa5e522a9acd9e",
+    "text": "Hai ricevuto uccisioni: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:09.158824Z"
+  },
+  "scripts.add_money.msg_1": {
+    "src_hash": "535aedda7acc93d249730d24896cda7b",
+    "text": "Aggiunte {} monete d'oro a {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:09.159140Z"
+  },
+  "scripts.add_mount.msg_1": {
+    "src_hash": "6e81a9a1ff0e699766f397f3eb43ca56",
+    "text": "Hai aggiunto con successo la cavalcatura {} al giocatore {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:09.159523Z"
+  },
+  "scripts.add_mount.msg_2": {
+    "src_hash": "70e2fb46c65a2ebd70a5c7693e90eb58",
+    "text": "{} ha aggiunto una nuova cavalcatura per te.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:09.159932Z"
+  },
+  "scripts.add_mount.msg_3": {
+    "src_hash": "2493ad822fa033e21b0e5c33f6dfded0",
+    "text": "Hai aggiunto con successo tutte le cavalcature al giocatore {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:09.160284Z"
+  },
+  "scripts.add_mount.msg_4": {
+    "src_hash": "d6d266e0a11ca61528ae84be11c29e76",
+    "text": "{} ti ha aggiunto tutte le cavalcature.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:15.110208Z"
+  },
+  "scripts.add_skill.msg_1": {
+    "src_hash": "3ce2966dae545431ec46c202a56f5d3a",
+    "text": "Hai aggiunto con successo {} {} {} al giocatore {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:15.110687Z"
+  },
+  "scripts.add_skill.msg_2": {
+    "src_hash": "529c3b6c2ed40df9ddb77bed014e451c",
+    "text": "{} ti ha aggiunto {} {} {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:15.110993Z"
+  },
+  "scripts.add_skill.msg_3": {
+    "src_hash": "c82a9aef78964af6d48e2761e1964ee7",
+    "text": "Hai aggiunto con successo {} {} al giocatore {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:15.111326Z"
+  },
+  "scripts.add_skill.msg_4": {
+    "src_hash": "8d816f304880ba3d0bc40448234a1b3e",
+    "text": "{} ti ha aggiunto {} {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:15.111644Z"
+  },
+  "scripts.add_skill.msg_5": {
+    "src_hash": "c82a9aef78964af6d48e2761e1964ee7",
+    "text": "Hai aggiunto con successo {} {} al giocatore {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:20.076433Z"
+  },
+  "scripts.add_skill.msg_6": {
+    "src_hash": "8d816f304880ba3d0bc40448234a1b3e",
+    "text": "{} ti ha aggiunto {} {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:20.076794Z"
+  },
+  "scripts.adventurers_stone.teleport_center": {
+    "src_hash": "a0f870d3cf5e211dacf22ee0824fa37b",
+    "text": "Prova a spostarti di più al centro di un %s per utilizzare l'energia spirituale per un teletrasporto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:20.077355Z"
+  },
+  "scripts.afk.msg_1": {
+    "src_hash": "b70a848bfe9ddd5a3f28d57f2b24cbb5",
+    "text": "Ora sei AFK!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:20.077612Z"
+  },
+  "scripts.afk.msg_2": {
+    "src_hash": "d437074784dd88edc289d4e83d5c9ff5",
+    "text": "Non sei più AFK!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:20.077887Z"
+  },
+  "scripts.afk.msg_3": {
+    "src_hash": "d437074784dd88edc289d4e83d5c9ff5",
+    "text": "Non sei più AFK!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:21.816966Z"
   }
 }

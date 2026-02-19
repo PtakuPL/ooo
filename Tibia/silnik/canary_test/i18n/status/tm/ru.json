@@ -37862,5 +37862,93 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T21:40:05.942239Z"
+  },
+  "scripts.movements_ice_death.msg_2": {
+    "src_hash": "b672ce7a028242c04ff678350b11c1e8",
+    "text": "Вы по-прежнему благословлены Мудростью Одиночества, Искрой Феникса, Огнем Солнца, Духовной Защитой, Объятиями Tibia, Сердцем Горы, Кровью Горы и Иронией Судьбы.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:28.771916Z"
+  },
+  "scripts.movements_ice_death.msg_3": {
+    "src_hash": "02fa17a605269f87fa10c47485e9c71d",
+    "text": "Вы потеряли 0 опыта и 0,00% всех своих навыков.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:28.772789Z"
+  },
+  "scripts.movements_ice_death.msg_4": {
+    "src_hash": "876100b2613145ed31ff3d03f7ff32f0",
+    "text": "Вы не потеряли ни одного предмета.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:28.773525Z"
+  },
+  "scripts.movements_ice_death.msg_5": {
+    "src_hash": "198d0ed74fb8276a08ae3495d9728972",
+    "text": "Холод почти исчез из вашего тела, и вам становится теплее. Вам необходимо обновить все препараты для очищения.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:28.774565Z"
+  },
+  "scripts.movements_looktype.msg_1": {
+    "src_hash": "f63172a1154915358fe43472244f3753",
+    "text": "Благодаря силе орка вы сможете пройти этот разлом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:28.777299Z"
+  },
+  "scripts.movements_looktype.msg_2": {
+    "src_hash": "5780f4e260596790a62174cb2eb3eb82",
+    "text": "Чтобы пройти этот разлом, вам понадобится сила орка.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:28.778076Z"
+  },
+  "scripts.movements_looktype.msg_3": {
+    "src_hash": "7a638c3796a56a658ecd6766d5bae285",
+    "text": "С помощью мощи военачальника орков вы сможете пройти этот разлом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:28.778927Z"
+  },
+  "scripts.movements_looktype.msg_4": {
+    "src_hash": "5d7faab34e87edf199151a77019e54e2",
+    "text": "Чтобы преодолеть этот разлом, вам понадобится мощь орка-вождя.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:28.779706Z"
+  },
+  "scripts.movements_looktype.msg_5": {
+    "src_hash": "f8f3f68362432c916119c16693a3d7fe",
+    "text": "С помощью мудрости орка-шамана вам удастся пройти этот разлом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:28.780569Z"
+  },
+  "scripts.movements_looktype.msg_6": {
+    "src_hash": "b4cf57e69592de8eeeb6dc676ae8af9b",
+    "text": "Чтобы пройти этот разлом, вам понадобится мудрость орка-шамана.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:28.781555Z"
+  },
+  "scripts.movements_plagirath_access.say_1": {
+    "src_hash": "0312af301fcba4f7d8f2f72f22c83b4e",
+    "text": "У вас пока нет доступа к этому телепорту.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:42:28.784154Z"
   }
 }

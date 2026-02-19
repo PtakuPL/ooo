@@ -2,15 +2,15 @@
   "cycles": 9,
   "date": "2026-02-19",
   "errors": {
-    "count": 41
+    "count": 43
   },
-  "generated_at_utc": "2026-02-19T20:45:14Z",
+  "generated_at_utc": "2026-02-19T20:47:04Z",
   "work": {
     "auto_translate": {
       "langs": {
         "ES": {
           "skipped": 0,
-          "translated": 374
+          "translated": 376
         },
         "IT": {
           "skipped": 0,
@@ -18,7 +18,7 @@
         },
         "PL": {
           "skipped": 0,
-          "translated": 186
+          "translated": 236
         },
         "RO": {
           "skipped": 0,

@@ -65790,5 +65790,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T22:16:01.487347Z"
+  },
+  "spell.avalanche_rune.name": {
+    "src_hash": "dcd935be2b7c1db717e7982ea7c77439",
+    "text": "Avalanche Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:20:02.465668Z"
   }
 }

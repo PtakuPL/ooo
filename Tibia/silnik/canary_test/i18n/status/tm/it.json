@@ -74022,5 +74022,29 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T22:15:42.947279Z"
+  },
+  "spell.avalanche_rune.name": {
+    "src_hash": "dcd935be2b7c1db717e7982ea7c77439",
+    "text": "Avalanche Rune",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:19:01.625077Z"
+  },
+  "spell.ultimate_ice_strike.words": {
+    "src_hash": "f8d1aa9ce25522aebd5adbb04d2b4b5f",
+    "text": "exori max frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:19:25.926983Z"
+  },
+  "spell.buzz.name": {
+    "src_hash": "f285bec73b34c6b77026c180aae0e5ba",
+    "text": "Ronzio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:19:25.927280Z"
   }
 }

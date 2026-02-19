@@ -144821,7 +144821,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T10:29:35.671510Z"
+    "updated_at": "2026-02-19T20:21:30.048774Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -147525,7 +147525,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T10:29:42.620025Z"
+    "updated_at": "2026-02-19T20:21:41.485852Z"
   },
   "spell.azerus_skill_reducer_3.name": {
     "src_hash": "b38b1973057027ce0ac17b6655bf5684",
@@ -151190,5 +151190,61 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T20:12:04.445950Z"
+  },
+  "spell.great_light.words": {
+    "src_hash": "f41a86ba86aec4488a8d52bd91291e3e",
+    "text": "utevo gran lux",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:21:59.276000Z"
+  },
+  "spell.divine_empowerment.words": {
+    "src_hash": "fecb35dc3ae0be75735259c1a706d017",
+    "text": "utevo grav san",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:21:59.276371Z"
+  },
+  "spell.avatar_of_nature.words": {
+    "src_hash": "b496f0447b1e9762d7d0bfbaf14c931a",
+    "text": "uteta res dru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:21:59.276732Z"
+  },
+  "spell.blood_rage.name": {
+    "src_hash": "c180dcbbf5dd7cdf6cb3dfe83bc594ec",
+    "text": "Rabia de sangre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:21:59.276971Z"
+  },
+  "spell.blood_rage.words": {
+    "src_hash": "ac7d6aacc7d8bf76df0da878c26909b1",
+    "text": "utito tempo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:22:01.563850Z"
+  },
+  "spell.challenge.name": {
+    "src_hash": "b5f5623b6137a89a1dadf079a5e92266",
+    "text": "Desafío",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:22:01.564348Z"
+  },
+  "spell.sharpshooter.words": {
+    "src_hash": "e26849bac30a0495a8c22f443b809444",
+    "text": "utito tempo san",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:22:01.565051Z"
   }
 }

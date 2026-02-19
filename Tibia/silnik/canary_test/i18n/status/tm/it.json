@@ -71182,5 +71182,301 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T20:15:00.871995Z"
+  },
+  "data.otservbr.global.npc.dario.L64.1243": {
+    "src_hash": "21b517b3ab7a281b76460d3e51fefb7e",
+    "text": "Ashari, |PLAYERNAME|. Se sei un combattente a distanza, potresti voler dare un'occhiata alle mie merci e ai miei incantesimi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.140738Z"
+  },
+  "data.otservbr.global.npc.dedoras.L309.220": {
+    "src_hash": "fd3ed5a081549232786a3ce7741beddd",
+    "text": "Saluti cercatori di conoscenza. Sembra che tu sia proprio la persona per cui sono {looking}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.142084Z"
+  },
+  "data.otservbr.global.npc.denominator.L57.152": {
+    "src_hash": "328200f8a9c7c2a9c9d051689bd862d8",
+    "text": "Inserisci le risposte per quanto segue {questions}:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.143870Z"
+  },
+  "data.otservbr.global.npc.denominator.L59.153": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Saluti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.144337Z"
+  },
+  "data.otservbr.global.npc.dermot.L100.1152": {
+    "src_hash": "5f84d27aa53c0c7bbd3c36c0a9842ddc",
+    "text": "Ciao viaggiatore |PLAYERNAME|. Come posso aiutarla?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.144895Z"
+  },
+  "data.otservbr.global.npc.dermot.L101.1153": {
+    "src_hash": "7f376862254f94333fa097c1c3ff3d83",
+    "text": "Ci vediamo di nuovo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.145456Z"
+  },
+  "data.otservbr.global.npc.dermot.L102.1154": {
+    "src_hash": "7f376862254f94333fa097c1c3ff3d83",
+    "text": "Ci vediamo di nuovo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.145781Z"
+  },
+  "data.otservbr.global.npc.dixi.L146.1518": {
+    "src_hash": "77bb511948fe892bc1857d82e9b46603",
+    "text": "Ehm sì, buona giornata.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.146146Z"
+  },
+  "data.otservbr.global.npc.dixi.L147.1519": {
+    "src_hash": "885c73613d44a471d6cdeb87b1bf48c5",
+    "text": "Ecco, dai un'occhiata e scegli qualcosa di carino per te!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.146882Z"
+  },
+  "data.otservbr.global.npc.doctor.gnomedix.L42.1229": {
+    "src_hash": "62e334145868f2a562254cca26636c92",
+    "text": "Rimani fermo sulla pedana d'esame |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.147604Z"
+  },
+  "data.otservbr.global.npc.dorian.L232.267": {
+    "src_hash": "2dfbfe54731299f6fd8070958be48381",
+    "text": "Arrivederci, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.148683Z"
+  },
+  "data.otservbr.global.npc.dorian.L233.268": {
+    "src_hash": "2dfbfe54731299f6fd8070958be48381",
+    "text": "Arrivederci, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.149145Z"
+  },
+  "data.otservbr.global.npc.dorian.L234.269": {
+    "src_hash": "7153dd44b82bf473079274cf8fb08b5f",
+    "text": "Saluti, |PLAYERNAME|! Perché mi disturbi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.150008Z"
+  },
+  "data.otservbr.global.npc.doubleday.L157.1240": {
+    "src_hash": "ad0d8c54f5ad8eace6e30a7a02db62da",
+    "text": "Ciao a tutti, hmm... aspetta e basta, sarò da te tra un secondo. Ho appena finito di fare questo {experiment}...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.150816Z"
+  },
+  "data.otservbr.global.npc.dukosch.L87.1221": {
+    "src_hash": "74af8429056cd1b6c12ccb10e67902c1",
+    "text": "Benvenuto, |PLAYERNAME|! Ti senti avventuroso? Vuoi un {ticket} settimanale per il sistema dei carri minerari qui? Puoi usarlo proprio qui per raggiungere il centro di Kazordoon!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.152229Z"
+  },
+  "data.otservbr.global.npc.dukosch.L88.1222": {
+    "src_hash": "4c63e8ef9d6c6b447464c244c3d4b195",
+    "text": "Spero di rivederti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.153226Z"
+  },
+  "data.otservbr.global.npc.duncan.L184.162": {
+    "src_hash": "dd0c5a6ebb54ab7a4eb1e1fd85a5799f",
+    "text": "Ciao, avvicinati. Dai un'occhiata alla mia merce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.153689Z"
+  },
+  "data.otservbr.global.npc.duria.L58.1130": {
+    "src_hash": "86ccce933c59e083001a3775642a2635",
+    "text": "Ciao, compagno cavaliere |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.154255Z"
+  },
+  "data.otservbr.global.npc.duria.L59.1131": {
+    "src_hash": "0101977b4093f837ff6276a762fba7be",
+    "text": "Arrivederci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.154585Z"
+  },
+  "data.otservbr.global.npc.duria.L60.1132": {
+    "src_hash": "11d751d2df754e2029e4f6214d040890",
+    "text": "Stai attento là fuori, jawoll.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.155169Z"
+  },
+  "data.otservbr.global.npc.ebenizer.L76.1493": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.155668Z"
+  },
+  "data.otservbr.global.npc.eclesius.L64.1506": {
+    "src_hash": "c098e886ff29c2d14acb4d167fdb587f",
+    "text": "Chi sei? Cosa vuoi? Sembri troppo esperto per diventare mio assistente. Per favore, vattene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.156695Z"
+  },
+  "data.otservbr.global.npc.eddy.L61.826": {
+    "src_hash": "62708e79dd3db472e596d09d559f1e3a",
+    "text": "Ciao |PLAYERNAME|! Hai bisogno di qualche attrezzatura per la tua casa?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.157452Z"
+  },
+  "data.otservbr.global.npc.eddy.L62.827": {
+    "src_hash": "0766cd691c0208c136e812d2734e77a5",
+    "text": "Dai un'occhiata. La maggior parte dei mobili viene fornita in pratici kit. Usali a casa tua per assemblare i mobili. Vuoi vedere solo un certo {type} di mobili?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.158251Z"
+  },
+  "data.otservbr.global.npc.edgar.ellen.L84.292": {
+    "src_hash": "46a3cb17a692efa2d52cc38c68e38648",
+    "text": "Questo mondo non è niente senza la poesia, non credi? Ci dà speranza, invoca amore. È stimolante e rinvigorente allo stesso tempo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.159101Z"
+  },
+  "data.otservbr.global.npc.edgar.ellen.L85.293": {
+    "src_hash": "128c1b29a7690881dd1a8ecbfaedd038",
+    "text": "Arrivederci e addio, amico mio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.159495Z"
+  },
+  "data.otservbr.global.npc.edowir.L61.1248": {
+    "src_hash": "0740f98b9fc488bf49d92f1690772f42",
+    "text": "Oh, ciao |PLAYERNAME|! Che carino da parte tua far visita a un vecchio come me.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.160038Z"
+  },
+  "data.otservbr.global.npc.edowir.L62.1249": {
+    "src_hash": "65fc24ac414996a095430cbce165952a",
+    "text": "Torna ogni volta che hai bisogno di saggezza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.160489Z"
+  },
+  "data.otservbr.global.npc.edowir.L63.1250": {
+    "src_hash": "65fc24ac414996a095430cbce165952a",
+    "text": "Torna ogni volta che hai bisogno di saggezza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.160912Z"
+  },
+  "data.otservbr.global.npc.edvard.L62.1320": {
+    "src_hash": "0766cd691c0208c136e812d2734e77a5",
+    "text": "Dai un'occhiata. La maggior parte dei mobili viene fornita in pratici kit. Usali a casa tua per assemblare i mobili. Vuoi vedere solo un certo {type} di mobili?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.161814Z"
+  },
+  "data.otservbr.global.npc.eighty.L71.779": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.162317Z"
+  },
+  "data.otservbr.global.npc.elane.L242.585": {
+    "src_hash": "8d3141687ce8d1c9fd3be03230cac91d",
+    "text": "Benvenuto nella gilda dei paladini, |PLAYERNAME|! Come posso aiutarla?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.163640Z"
+  },
+  "data.otservbr.global.npc.elathriel.L237.785": {
+    "src_hash": "cc6cdbefd365a6db6760f9a5eec04879",
+    "text": "Asha Thrazi, straniera!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.165149Z"
+  },
+  "data.otservbr.global.npc.elathriel.L238.786": {
+    "src_hash": "cc6cdbefd365a6db6760f9a5eec04879",
+    "text": "Asha Thrazi, straniera!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.165902Z"
+  },
+  "data.otservbr.global.npc.eleonore.L145.243": {
+    "src_hash": "65f937d87cd51fc2a63e02196208a9e5",
+    "text": "Fatti salutare. Cosa ti porta {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.166619Z"
+  },
+  "data.otservbr.global.npc.eleonore.L147.245": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Vabbè.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.167628Z"
+  },
+  "data.otservbr.global.npc.elgar.L81.567": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:24:31.168872Z"
   }
 }

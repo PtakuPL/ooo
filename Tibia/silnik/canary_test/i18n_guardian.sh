@@ -948,6 +948,73 @@ sync_worker_mtime_checkpoint() {
     fi
 }
 
+post_restart_sanity_check() {
+    local enabled timeout_sec interval_sec tail_lines
+    enabled="${GUARDIAN_POST_RESTART_SANITY_ENABLED:-1}"
+    timeout_sec="${GUARDIAN_POST_RESTART_SANITY_TIMEOUT_SEC:-45}"
+    interval_sec="${GUARDIAN_POST_RESTART_SANITY_POLL_SEC:-3}"
+    tail_lines="${GUARDIAN_POST_RESTART_SANITY_TAIL_LINES:-8000}"
+
+    if [ "$enabled" != "1" ]; then
+        log_guardian "ℹ️ Post-restart sanity check: wyłączony (GUARDIAN_POST_RESTART_SANITY_ENABLED=$enabled)"
+        return 0
+    fi
+
+    local elapsed=0
+    while [ "$elapsed" -lt "$timeout_sec" ]; do
+        local sanity_out=""
+        sanity_out=$(python3 - "$LOG_FILE" "$tail_lines" <<'PYSANITY'
+import sys
+from collections import deque
+
+log_file = sys.argv[1]
+tail_lines = max(int(sys.argv[2]), 1)
+
+try:
+    with open(log_file, encoding="utf-8", errors="replace") as f:
+        lines = [ln.rstrip("\n") for ln in deque(f, maxlen=tail_lines)]
+except Exception:
+    lines = []
+
+marker = None
+for idx, line in enumerate(lines):
+    if "🔄 CYKL #1 -" in line:
+        marker = idx
+
+if marker is None:
+    print("WAIT no_cycle1_marker")
+    sys.exit(3)
+
+segment = lines[marker:]
+needle = "NameError: name 'TRANSLATION_OVERRIDES'"
+for i, line in enumerate(segment, start=1):
+    if needle in line:
+        print(f"FAIL marker_rel_line={i} reason=translation_overrides_nameerror")
+        sys.exit(2)
+
+print("OK no_translation_overrides_nameerror_after_cycle1")
+sys.exit(0)
+PYSANITY
+)
+        local sanity_rc=$?
+
+        if [ "$sanity_rc" -eq 0 ]; then
+            log_guardian "✅ Post-restart sanity check: ${sanity_out:-OK}"
+            return 0
+        fi
+        if [ "$sanity_rc" -eq 2 ]; then
+            log_guardian "❌ Post-restart sanity check: ${sanity_out:-FAIL}"
+            return 1
+        fi
+
+        sleep "$interval_sec"
+        elapsed=$((elapsed + interval_sec))
+    done
+
+    log_guardian "⚠️ Post-restart sanity check timeout (${timeout_sec}s) — brak markera CYKL #1; pomijam fail restartu"
+    return 0
+}
+
 restart_worker() {
     local cause="${1:-unknown}"
     local precheck allow reason wait_sec
@@ -981,6 +1048,11 @@ restart_worker() {
         local pid
         pid=$(cat "$PID_FILE" 2>/dev/null)
         if [ -n "$pid" ] && ps -p "$pid" >/dev/null 2>&1; then
+            if ! post_restart_sanity_check; then
+                log_guardian "❌ Worker sanity check niezaliczony po restarcie (PID: $pid)"
+                restart_policy_record_event "result" "$cause" "0" "$pid" "sanity_check_failed" "0"
+                return 1
+            fi
             log_guardian "✅ Worker uruchomiony PID: $pid"
             restart_policy_record_event "result" "$cause" "1" "$pid" "pid_file" "0"
             sync_worker_mtime_checkpoint
@@ -992,6 +1064,11 @@ restart_worker() {
     fallback_pid=$(pgrep -n -f "$WORKER_SCRIPT --continuous" 2>/dev/null || true)
     if [ -n "$fallback_pid" ] && ps -p "$fallback_pid" >/dev/null 2>&1; then
         echo "$fallback_pid" > "$PID_FILE"
+        if ! post_restart_sanity_check; then
+            log_guardian "❌ Worker sanity check niezaliczony po restarcie (fallback PID: $fallback_pid)"
+            restart_policy_record_event "result" "$cause" "0" "$fallback_pid" "sanity_check_failed" "0"
+            return 1
+        fi
         log_guardian "✅ Worker uruchomiony PID: $fallback_pid (fallback pgrep)"
         restart_policy_record_event "result" "$cause" "1" "$fallback_pid" "fallback_pgrep" "0"
         sync_worker_mtime_checkpoint

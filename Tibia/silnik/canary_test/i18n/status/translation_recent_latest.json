@@ -1,32 +1,128 @@
 {
-  "timestamp": "2026-02-19T20:18:43.571238Z",
-  "language": "pl",
-  "json_file": "spells.json",
-  "translated": 4,
+  "timestamp": "2026-02-19T20:24:31.649451Z",
+  "language": "it",
+  "json_file": "server.json",
+  "translated": 50,
   "entries": [
     {
-      "key": "spell.azerus_soulfire_1.name",
-      "en": "azerus soulfire 1",
-      "translated": "Azerus Soulfire 1",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.duria.L58.1130",
+      "en": "Hiho, fellow knight |PLAYERNAME|!",
+      "translated": "Ciao, compagno cavaliere |PLAYERNAME|!",
+      "source": "simple"
     },
     {
-      "key": "spell.azerus_soulfire_2.name",
-      "en": "azerus soulfire 2",
-      "translated": "Azerus Soulfire 2",
-      "source": "tm"
+      "key": "data.otservbr.global.npc.duria.L59.1131",
+      "en": "Goodbye.",
+      "translated": "Arrivederci.",
+      "source": "simple"
     },
     {
-      "key": "spell.quara_constrictor_electrify.name",
-      "en": "quara constrictor electrify",
-      "translated": "quara constrictor elektryzuje",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.duria.L60.1132",
+      "en": "Be carefull out there, jawoll.",
+      "translated": "Stai attento là fuori, jawoll.",
+      "source": "simple"
     },
     {
-      "key": "spell.lava_golem_soulfire2.name",
-      "en": "lava golem soulfire2",
-      "translated": "lawowy golem soulfire2",
-      "source": "google_translate"
+      "key": "data.otservbr.global.npc.ebenizer.L76.1493",
+      "en": "Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps?",
+      "translated": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.eclesius.L64.1506",
+      "en": "Who are you? What do you want? You seem too experienced to become my assistant. Please leave.",
+      "translated": "Chi sei? Cosa vuoi? Sembri troppo esperto per diventare mio assistente. Per favore, vattene.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.eddy.L61.826",
+      "en": "Hello |PLAYERNAME|! Do you need some equipment for your house?",
+      "translated": "Ciao |PLAYERNAME|! Hai bisogno di qualche attrezzatura per la tua casa?",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.eddy.L62.827",
+      "en": "Have a look. Most furniture comes in handy kits. Just use them in your house to assemble the furniture. Do you want to see only a certain {type} of furniture?",
+      "translated": "Dai un'occhiata. La maggior parte dei mobili viene fornita in pratici kit. Usali a casa tua per assemblare i mobili. Vuoi vedere solo un certo {type} di mobili?",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.edgar.ellen.L84.292",
+      "en": "This world is nothing without poetry, don't you think? It gives us hope, it envokes love. It's inciting and invigorating all the same.",
+      "translated": "Questo mondo non è niente senza la poesia, non credi? Ci dà speranza, invoca amore. È stimolante e rinvigorente allo stesso tempo.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.edgar.ellen.L85.293",
+      "en": "Goodbye and farewell, my friend.",
+      "translated": "Arrivederci e addio, amico mio.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.edowir.L61.1248",
+      "en": "Oh, hello |PLAYERNAME|! How nice of you to visit an old man like me.",
+      "translated": "Oh, ciao |PLAYERNAME|! Che carino da parte tua far visita a un vecchio come me.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.edowir.L62.1249",
+      "en": "Come back whenever you're in need of wisdom.",
+      "translated": "Torna ogni volta che hai bisogno di saggezza.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.edowir.L63.1250",
+      "en": "Come back whenever you're in need of wisdom.",
+      "translated": "Torna ogni volta che hai bisogno di saggezza.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.edvard.L62.1320",
+      "en": "Have a look. Most furniture comes in handy kits. Just use them in your house to assemble the furniture. Do you want to see only a certain {type} of furniture?",
+      "translated": "Dai un'occhiata. La maggior parte dei mobili viene fornita in pratici kit. Usali a casa tua per assemblare i mobili. Vuoi vedere solo un certo {type} di mobili?",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.eighty.L71.779",
+      "en": "Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps?",
+      "translated": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.elane.L242.585",
+      "en": "Welcome to the paladins' guild, |PLAYERNAME|! How can I help you?",
+      "translated": "Benvenuto nella gilda dei paladini, |PLAYERNAME|! Come posso aiutarla?",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.elathriel.L237.785",
+      "en": "Asha Thrazi, stranger!",
+      "translated": "Asha Thrazi, straniera!",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.elathriel.L238.786",
+      "en": "Asha Thrazi, stranger!",
+      "translated": "Asha Thrazi, straniera!",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.eleonore.L145.243",
+      "en": "Be greeted. What brings you {here}?",
+      "translated": "Fatti salutare. Cosa ti porta {here}?",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.eleonore.L147.245",
+      "en": "Oh well.",
+      "translated": "Vabbè.",
+      "source": "simple"
+    },
+    {
+      "key": "data.otservbr.global.npc.elgar.L81.567",
+      "en": "Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps?",
+      "translated": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+      "source": "simple"
     }
   ]
 }

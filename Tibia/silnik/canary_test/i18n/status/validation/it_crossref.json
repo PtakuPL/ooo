@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 51.1,
+  "coverage_pct": 51.3,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T20:05:50.185527Z",
+  "checked_at": "2026-02-19T20:26:08.260855Z",
   "issues_total": 429,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -2263,15 +2263,6 @@
       "lang": "Hi!"
     },
     {
-      "key": "npc.simon_the_beggar.no_i_see",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "I see.",
-      "pl": "Rozumiem.",
-      "lang": "I see."
-    },
-    {
       "key": "npc.sister_of_jack.voice_3",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3737,6 +3728,15 @@
       "en": "%s minutes",
       "pl": "%s minuty",
       "lang": "%s minutes"
+    },
+    {
+      "key": "scripts.offline_training.minutes_singular",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1 minute",
+      "pl": "1 minuta",
+      "lang": "1 minute"
     }
   ],
   "length_ratio_issues": [

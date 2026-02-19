@@ -37,6 +37,45 @@ Kontrakt `translation overrides` (kanoniczny):
 Cel jakości:
 - Dążyć do jakości produkcyjnej tłumaczeń (gry/UI/dialogi), ale traktować to jako proces iteracyjny z guardami jakości i manualnym review dla przypadków wysokiego ryzyka semantycznego.
 
+## 🛠️ Aktualizacja wykonania (2026-02-19 21:22 UTC — hardening wg sugestii ChatGPT + sanity check post-restart)
+
+Zakres tej aktualizacji:
+- Formalizacja zaleceń A–F jako backlog wdrożeniowy.
+- Domknięcie automatycznej walidacji „po restarcie” pod błąd `TRANSLATION_OVERRIDES`.
+- Potwierdzenie, że worker wykonuje realną pracę w bieżących cyklach.
+
+Status realizacji (graficznie):
+
+| Status | Obszar | Szczegóły |
+|---|---|---|
+| ✅ ZROBIONE | Runtime sanity check | `i18n_guardian.sh`: dodano `post_restart_sanity_check()` uruchamiany po starcie workera; sprawdza najnowszy segment logu od `🔄 CYKL #1` i wykrywa świeży `NameError: TRANSLATION_OVERRIDES`. |
+| ✅ ZROBIONE | Potwierdzenie pracy workera | Log runtime pokazuje aktywne cykle i tłumaczenia (`CYKL #8`, `AUTO TRANSLATE`, aktualizacje `I18N_STATUS.md`). |
+| 🟡 W TRAKCIE | A) Macierz priorytetów źródeł | Jest częściowy kontrakt (`override > TM > SIMPLE/WORD > GT`), brak pełnego, jednolitego kontraktu dla wszystkich warstw i ścieżek zapisu. |
+| ⬜ DO ZROBIENIA | B) Proces zarządzania overrides | Brak formalnego schematu metadanych, review workflow i lint CI dedykowanego `i18n/overrides/*.json`. |
+| ⬜ DO ZROBIENIA | C) Golden set regresji jakości | Brak stałego zestawu 200–500 kluczy „must be perfect” z automatycznym testem porównawczym. |
+| ⬜ DO ZROBIENIA | D) TM quarantine/versioning | Brak twardej polityki wersjonowania i kwarantanny wpisów TM (z rollbackiem i reason codes). |
+| ⬜ DO ZROBIENIA | E) Glossary/styl | Brak formalnej warstwy terminologii (spójny słownik i reguły stylistyczne PL/ES) spiętej z pipeline. |
+| 🟡 W TRAKCIE | F) Jedna prawda planistyczna | Ten plik jest archiwum; zadania trzeba zsynchronizować z planem kanonicznym `docs/I18N_UNIFIED_EXECUTION_PLAN_2026-02-13.md`. |
+
+### Backlog zadań (rozpisanie A–F na taski wdrożeniowe)
+
+- [x] `WQ-HARD-0 (P0)`: Dodać automatyczny sanity check post-restart (`TRANSLATION_OVERRIDES`) w guardianie.
+- [ ] `WQ-HARD-1 (P0)`: Spisać i wymusić „Source-of-truth & precedence contract” dla wszystkich źródeł:
+  - `manual overrides` > `curated dictionary` > `TM verified` > `TM unverified` > `GT` > `external simple/word` > `EN fallback (exempt only)`.
+  - Wymóg: przy konflikcie logować zwycięską warstwę i reason code.
+- [ ] `WQ-HARD-2 (P0)`: Dodać `override governance`:
+  - minimalny schema metadanych (`author`, `timestamp`, `reason`, `issue_ref`),
+  - językowy review flow (owner/reviewer),
+  - lint CI (`placeholder`, spacje końcowe, interpunkcja, zakazane formy).
+- [ ] `WQ-HARD-3 (P0)`: Wdrożyć `golden quality set` (200–500 kluczy PL/ES) + test regresji failujący build przy znanych błędach kontraktu.
+- [ ] `WQ-HARD-4 (P1)`: Wprowadzić `TM quarantine store` + dzienne snapshoty TM + procedurę rollback.
+- [ ] `WQ-HARD-5 (P1)`: Dodać `glossary` (100–300 terminów) jako warstwę pre-processing i walidacji spójności stylu.
+- [ ] `WQ-HARD-6 (P0)`: Zsynchronizować powyższe taski z planem kanonicznym (`docs/I18N_UNIFIED_EXECUTION_PLAN_2026-02-13.md`) i utrzymać jedną prawdę.
+
+Uwagi wykonawcze:
+- Priorytet „jednym zdaniem” (zgodnie z sugestią): najpierw wdrożyć i egzekwować jednolitą macierz priorytetów źródeł + logowanie decyzji konfliktowych.
+- To zadanie bezpośrednio chroni ręcznie kuratorowane tłumaczenia przed degradacją przez późniejsze warstwy pipeline.
+
 ## 🛠️ Aktualizacja wykonania (2026-02-17 14:00 UTC — fix progress 0/0 LIVE + E4 Δ24h trendy + analiza GitHub Actions spam)
 
 Wybrane do realizacji pełne zadania:

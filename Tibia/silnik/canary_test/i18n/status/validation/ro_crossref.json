@@ -1,10 +1,10 @@
 {
   "lang": "ro",
-  "coverage_pct": 42.2,
+  "coverage_pct": 42.3,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T20:06:13.901950Z",
+  "checked_at": "2026-02-19T20:28:13.044897Z",
   "issues_total": 419,
   "issues_by_type": {
     "consistency_in_language": 6,
@@ -590,6 +590,42 @@
       "en": "Evilina",
       "pl": "Ewilina",
       "lang": "Evilina"
+    },
+    {
+      "key": "item.16255.desc",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is a voucher for a basic crystal warlord outfit",
+      "pl": "To jest jeden bon, bloczek dla jeden podstawowy crystal warlord strój",
+      "lang": "It is a voucher for a basic crystal warlord outfit"
+    },
+    {
+      "key": "item.17112.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "sorc and druid attack rune",
+      "pl": "Runa ataku sorka i druida",
+      "lang": "sorc and druid attack rune"
+    },
+    {
+      "key": "item.20108.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "blister egg plant",
+      "pl": "pęcherzykowa roślina jajeczna",
+      "lang": "blister egg plant"
+    },
+    {
+      "key": "item.20115.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "blister egg plant",
+      "pl": "pęcherzykowa roślina jajeczna",
+      "lang": "blister egg plant"
     },
     {
       "key": "monster.old_bonelord.voice_1",
@@ -3668,42 +3704,6 @@
       "en": "Ribbit!",
       "pl": "Kum!",
       "lang": "Ribbit!"
-    },
-    {
-      "key": "monster.frost_troll.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Broar!",
-      "pl": "Bracie!",
-      "lang": "Broar!"
-    },
-    {
-      "key": "monster.troll.voice_6",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrr",
-      "pl": "Wrr",
-      "lang": "Grrr"
-    },
-    {
-      "key": "monster.troll.voice_7",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
-    },
-    {
-      "key": "monster.troll.voice_9",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hmmm, bugs",
-      "pl": "Hmmm, błędy",
-      "lang": "Hmmm, bugs"
     }
   ],
   "length_ratio_issues": [
@@ -3827,8 +3827,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 0,
-    "skipped": 80,
+    "applied": 4,
+    "skipped": 76,
     "errors": 0
   }
 }

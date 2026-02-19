@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-19T20:18:06.494240Z",
-  "cycle_counter": 5561,
-  "last_target_key": "pl:spells.json",
-  "last_pending_total": 40,
-  "last_tier": 1,
-  "last_cat_priority": 4,
+  "timestamp": "2026-02-19T20:24:27.348139Z",
+  "cycle_counter": 5569,
+  "last_target_key": "it:server.json",
+  "last_pending_total": 1530,
+  "last_tier": 2,
+  "last_cat_priority": 3,
   "candidates_count": 184,
   "active_candidates_count": 184,
   "skipped_backoff": 0,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 8,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -55,12 +55,12 @@
     "ro:monsters.json": 0,
     "sv:npc.json": 0,
     "sr:npc.json": 0,
-    "pl:spells.json": 1,
-    "es:spells.json": 1,
+    "pl:spells.json": 0,
+    "es:spells.json": 0,
     "es:quests.json": 1,
-    "pl:scripts.json": 1,
-    "pl:raids.json": 1,
-    "es:raids.json": 1,
+    "pl:scripts.json": 0,
+    "pl:raids.json": 0,
+    "es:raids.json": 0,
     "it:server.json": 1,
     "ru:server.json": 1,
     "ro:server.json": 1,
@@ -132,7 +132,8 @@
     "it:achievements.json": 0,
     "ru:achievements.json": 0,
     "ro:libs.json": 0,
-    "it:globalevents.json": 0
+    "it:globalevents.json": 0,
+    "pl:quests.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -185,12 +186,12 @@
     ],
     "lang_completion": {
       "pl": 87.37,
-      "es": 84.32,
+      "es": 84.33,
       "ru": 50.27,
       "ro": 41.32,
       "it": 50.26,
       "sr": 45.28,
-      "sv": 27.72
+      "sv": 27.79
     }
   }
 }

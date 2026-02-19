@@ -2,10 +2,10 @@
   "lang": "pl",
   "script_group": "latin",
   "total_keys": 53586,
-  "translated": 47017,
+  "translated": 47028,
   "identical_to_en": 1810,
-  "placeholder_keys": 6569,
-  "coverage_pct": 87.7,
+  "placeholder_keys": 6558,
+  "coverage_pct": 87.8,
   "issues_total": 56,
   "issues_by_type": {
     "V6_newline_mismatch": 42,
@@ -149,5 +149,5 @@
     "length_ratio": 0,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-19T20:05:53.252775Z"
+  "validated_at": "2026-02-19T20:26:15.248801Z"
 }

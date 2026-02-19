@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-19T21:08:51.102529Z",
-  "cycle_counter": 5611,
-  "last_target_key": "sr:items.json",
-  "last_pending_total": 15837,
-  "last_tier": 3,
-  "last_cat_priority": 3,
+  "timestamp": "2026-02-19T21:10:41.115364Z",
+  "cycle_counter": 5615,
+  "last_target_key": "es:otclient_data.json",
+  "last_pending_total": 2,
+  "last_tier": 1,
+  "last_cat_priority": 9,
   "candidates_count": 184,
   "active_candidates_count": 184,
   "skipped_backoff": 0,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 2,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -105,9 +105,9 @@
     "ru:html.json": 2,
     "ro:books.json": 2,
     "sv:items.json": 2,
-    "sr:items.json": 1,
+    "sr:items.json": 2,
     "pl:php.json": 1,
-    "es:modules.json": 1,
+    "es:modules.json": 0,
     "es:otclient_data.json": 1,
     "pl:startup.json": 1,
     "pl:modules.json": 1,
@@ -135,7 +135,8 @@
     "it:globalevents.json": 0,
     "pl:quests.json": 0,
     "pl:html.json": 0,
-    "es:otclient_modules.json": 0
+    "es:otclient_modules.json": 0,
+    "pl:talkactions.json": 1
   },
   "bootstrap_priority": {
     "enabled": true,

@@ -433,7 +433,7 @@ head -n 100 i18n/status/pl_es_problem_cases_*.txt
 
 - [x] `WQ-HARD-12 (P0)`: Implementować `guard_fail_breakdown_latest.json` + publikację w `I18N_STATUS.md`.
 - [x] `WQ-HARD-13 (P0)`: Dodać detektory `en_marker_present`, `artifact_token_detected`, `mixed_language_ratio` dla PL/ES.
-- [ ] `WQ-HARD-14 (P0)`: Dodać auto-fix klasy `AUTO_FIX_NOW` (`[EN]`, tokeny artefaktowe, hybrydy oczywiste).
+- [x] `WQ-HARD-14 (P0)`: Dodać auto-fix klasy `AUTO_FIX_NOW` (`[EN]`, tokeny artefaktowe, hybrydy oczywiste).
 - [ ] `WQ-HARD-15 (P1)`: Dodać `proper_noun_exemption` + whitelisty domenowe, aby ograniczyć false-positive.
 - [ ] `WQ-HARD-16 (P1)`: Dodać tryb audytu „recent keys without HIGH/CRITICAL” do dashboardu.
 - [ ] `WQ-HARD-17 (P0)`: Przygotować „critical bad keys pack” PL/ES i zassać do `i18n/overrides/{lang}.json` po review.
@@ -454,6 +454,11 @@ Wdrożone w kodzie worker/status:
 Efekt operacyjny:
 - QUALITY sekcja korzysta teraz z obu źródeł (`quality_audit_latest.json` + `guard_fail_breakdown_latest.json`) i bierze najnowszy timestamp.
 - Mamy gotowy fundament telemetryczny pod kolejne zadania (`WQ-HARD-14..17`).
+
+Aktualizacja 2026-02-19 (WQ-HARD-14):
+- dodana klasa `AUTO_FIX_NOW` (PL/ES): `en_marker`, `lang_marker`, `mission_token`, `fx_token`, `word_salad`, `mixed_language`.
+- dla źródeł `TM` i `simple` przypadki `AUTO_FIX_NOW` są kierowane na szybki fallback do `google_translate` zamiast kończyć odrzuceniem.
+- dla `GT` rozszerzono typy odrzucenia `HIGH` o artefakty PL/ES, aby nie wpuszczać skażonych wpisów do finalnych JSON.
 
 ### 5) Zakres na teraz
 

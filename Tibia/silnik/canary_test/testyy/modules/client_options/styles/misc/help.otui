@@ -7,18 +7,20 @@ UIWidget
     anchors.top: parent.top
     min-height: 60
 
-    QtButton
+    I18NQtButton
       !text: tr("otclient_modules.help_otui.tr_4")
       anchors.left: parent.left
       anchors.top: parent.top
-      size: 130 20
+      min-width: 130
+      height: 20
       margin-bottom: 10
       margin-right: 10
       @onClick: g_platform.openUrl("https://github.com/mehah/otclient/wiki")
 
-    QtButton
+    I18NQtButton
       !text: tr("otclient_modules.help_otui.tr_3")
-      size: 130 20
+      min-width: 130
+      height: 20
       margin-top: 5
      
       anchors.top: prev.bottom
@@ -33,9 +35,10 @@ UIWidget
     min-height: 55
     margin-top: 5
 
-    QtButton
+    I18NQtButton
       !text: tr("otclient_modules.help_otui.tr_2")
-      size: 130 20
+      min-width: 130
+      height: 20
       margin-bottom: 10
       margin-right: 10
       anchors.left: parent.left
@@ -45,9 +48,10 @@ UIWidget
         controller:scheduleEvent(function()
           g_app.restart()
         end, 1000)
-    QtButton
+    I18NQtButton
       !text: tr("otclient_modules.help_otui.tr_1")
-      size: 130 20
+      min-width: 130
+      height: 20
       margin-top: 5
       anchors.top: prev.bottom
       anchors.left: parent.left

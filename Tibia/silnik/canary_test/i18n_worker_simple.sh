@@ -14168,6 +14168,21 @@ def _has_issue_type(issues, issue_type: str) -> bool:
             return True
     return False
 
+_AUTO_FIX_NOW_ISSUE_TYPES = {
+    "en_marker",
+    "lang_marker",
+    "mission_token",
+    "fx_token",
+    "word_salad",
+    "mixed_language",
+}
+
+def _has_auto_fix_now_issue(issues) -> bool:
+    for _t in _AUTO_FIX_NOW_ISSUE_TYPES:
+        if _has_issue_type(issues, _t):
+            return True
+    return False
+
 def _is_probably_nontranslatable_text(text: str) -> bool:
     t = str(text or "").strip()
     if not t:
@@ -14277,6 +14292,8 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
             "severity": "HIGH",
             "message": "Wykryto mieszane skrypty Unicode",
         })
+
+    lang_lower = str(lang or "").lower()
 
     # S5b: PL/ES explicit markers and worker artifacts
     if lang_lower in {"pl", "es"} and tr_len > 0:
@@ -14409,7 +14426,6 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
         "fi": r"[äö]",
         "et": r"[äöüõ]",
     }
-    lang_lower = str(lang or "").lower()
     diac_pattern = EXPECTED_DIACRITICS.get(lang_lower)
     if diac_pattern and tr_len > 80 and tr != en:
         if not re.search(diac_pattern, tr, re.IGNORECASE):
@@ -15098,7 +15114,10 @@ for key, en_text in iter_items:
                     continue
                 # HIGH severity from TM — reject script/quality issues, redirect to GT
                 if max_sev == "HIGH":
-                    _tm_reject_types = {"wrong_script", "cyrillic_latin_mix", "rtl_insufficient", "i_dot_artifact", "word_salad", "mixed_language"}
+                    _tm_reject_types = {
+                        "wrong_script", "cyrillic_latin_mix", "rtl_insufficient", "i_dot_artifact",
+                        "word_salad", "mixed_language", "en_marker", "lang_marker", "fx_token",
+                    }
                     if any(_has_issue_type(issues, t) for t in _tm_reject_types):
                         if use_google_translate:
                             gt_pending.append((key, en_text, h, suspicious_existing_current))
@@ -15215,6 +15234,21 @@ for key, en_text in iter_items:
                     "translated": str(simple),
                 }
                 if len(issues) > 3:
+                    if use_google_translate and _has_auto_fix_now_issue(issues):
+                        gt_pending.append((key, en_text, h, suspicious_existing_current))
+                        _append_jsonl(suspicious_log_path, {
+                            "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                            "lang": target_lang,
+                            "category": json_file,
+                            "key": key,
+                            "source": "simple",
+                            "severity": max_sev,
+                            "issues": issues,
+                            "action": "auto_fix_now_fallback_to_google_translate",
+                            "en": str(en_text),
+                            "translated": str(simple),
+                        })
+                        continue
                     suspicious_rejected += 1
                     _append_jsonl(suspicious_rejected_path, log_entry)
                     _enqueue_manual_review(status_dir, {
@@ -15238,7 +15272,7 @@ for key, en_text in iter_items:
                         placeholders += 1
                     continue
                 if max_sev == "CRITICAL":
-                    if _has_issue_type(issues, "identical_to_en") and use_google_translate:
+                    if (_has_issue_type(issues, "identical_to_en") or _has_auto_fix_now_issue(issues)) and use_google_translate:
                         # Simple/TM-text dał EN-copy dla PL/ES — przekieruj do GT.
                         gt_pending.append((key, en_text, h, suspicious_existing_current))
                         _append_jsonl(suspicious_log_path, {
@@ -15266,7 +15300,10 @@ for key, en_text in iter_items:
                     continue
                 # HIGH severity from simple — reject script/quality issues, redirect to GT
                 if max_sev == "HIGH":
-                    _sim_reject_types = {"wrong_script", "cyrillic_latin_mix", "rtl_insufficient", "i_dot_artifact", "word_salad", "mixed_language"}
+                    _sim_reject_types = {
+                        "wrong_script", "cyrillic_latin_mix", "rtl_insufficient", "i_dot_artifact",
+                        "word_salad", "mixed_language", "en_marker", "lang_marker", "fx_token",
+                    }
                     if any(_has_issue_type(issues, t) for t in _sim_reject_types):
                         if use_google_translate:
                             gt_pending.append((key, en_text, h, suspicious_existing_current))
@@ -15483,7 +15520,10 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                             continue
                         # HIGH severity from GT — reject script/quality issues (last resort)
                         if max_sev == "HIGH":
-                            _gt_reject_types = {"wrong_script", "cyrillic_latin_mix", "rtl_insufficient", "i_dot_artifact", "word_salad"}
+                            _gt_reject_types = {
+                                "wrong_script", "cyrillic_latin_mix", "rtl_insufficient", "i_dot_artifact",
+                                "word_salad", "mixed_language", "en_marker", "lang_marker", "fx_token", "mission_token",
+                            }
                             if any(_has_issue_type(issues, t) for t in _gt_reject_types):
                                 suspicious_rejected += 1
                                 _append_jsonl(suspicious_rejected_path, log_entry)

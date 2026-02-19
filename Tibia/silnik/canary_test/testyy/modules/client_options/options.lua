@@ -14,36 +14,40 @@ panels = {
 -- LuaFormatter off
 local buttons = { {
 
-    text = tr("Controls"),
+    text = tr("otclient_modules.options.category_controls"),
     icon = "/images/icons/icon_controls",
     open = "generalPanel",
+    categoryId = "controls",
     subCategories = { {
-        text = tr("General Hotkeys"),
+        text = tr("otclient_modules.options.category_general_hotkeys"),
         open = "keybindsPanel"
     } }
 }, {
-    text = tr("Interface"),
+    text = tr("otclient_modules.options.category_interface"),
     icon = "/images/icons/icon_interface",
     open = "interface",
+    categoryId = "interface",
     subCategories = { {
-        text = tr("HUD"),
+        text = tr("otclient_modules.options.category_hud"),
         open = "interfaceHUD"
     }, {
-        text = tr("Console"),
+        text = tr("otclient_modules.options.category_console"),
         open = "interfaceConsole"
     } }
 }, {
-    text = tr("Graphics"),
+    text = tr("otclient_modules.options.category_graphics"),
     icon = "/images/icons/icon_graphics",
     open = "graphicsPanel",
+    categoryId = "graphics",
     subCategories = { {
-        text = tr("Effects"),
+        text = tr("otclient_modules.options.category_effects"),
         open = "graphicsEffectsPanel"
     } }
 }, {
-    text = tr("Sound"),
+    text = tr("otclient_modules.options.category_sound"),
     icon = "/images/icons/icon_sound",
-    open = "soundPanel"
+    open = "soundPanel",
+    categoryId = "sound"
     --[[     subCategories = {{
         text = tr("Battle Sounds"),
         open = "Battle_Sounds"
@@ -52,9 +56,10 @@ local buttons = { {
         open = "UI_Sounds"
     }} ]]
 }, {
-    text = tr("Misc."),
+    text = tr("otclient_modules.options.category_misc"),
     icon = "/images/icons/icon_misc",
     open = "misc",
+    categoryId = "misc",
     subCategories = { --[[ {
         text = tr("GamePlay"),
         open = "GamePlay"
@@ -62,7 +67,7 @@ local buttons = { {
         text = tr("Screenshots"),
         open = "Screenshots"
     }, ]] {
-        text = tr("Help"),
+        text = tr("otclient_modules.options.category_help"),
         open = "miscHelp"
     } }
 } }
@@ -462,7 +467,7 @@ function configureCharacterCategories()
 
             for subId, subButton in ipairs(button.subCategories) do
                 local subWidget = createSubWidget(widget, subId, subButton)
-                if button.text == "Controls" then
+                if button.categoryId == "controls" then
                     subWidget.Button.Title:setMarginLeft(-5)
                 end
             end

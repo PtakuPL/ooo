@@ -160,13 +160,12 @@ UIWidget
         local value = modules.client_options.getOption('walkStairsDelay')
         self:setText(tr("otclient_modules.general_otui.tr_2", value))
 
-  QtButton
+  I18NQtButton
     id: hotkeysButton
     !text: tr("otclient_modules.general_otui.tr_1")
     @onClick: modules.game_hotkeys.show()
     anchors.top: prev.bottom
     anchors.left: parent.left
     margin-top: 12
-    text-horizontal-auto-resize: true
     min-width: 120
     height: 20

@@ -1,9 +1,7 @@
 Button < UIButton
   font: noto-12
   color: #dfdfdfff
-  min-width: 106
-  height: 23
-  text-horizontal-auto-resize: true
+  size: 106 23
   text-offset: 0 0
   image-source: /images/ui/button
   image-color: #dfdfdf
@@ -171,9 +169,7 @@ NextQtButton < UIButton
 
 QtButton < UIButton
   font: noto-12
-  min-width: 106
-  height: 23
-  text-horizontal-auto-resize: true
+  size: 106 23
   text-offset: 0 0
   image-source: /images/ui/button
   image-clip: 0 0 22 23
@@ -209,4 +205,47 @@ MiniPremiumButton < UIButton
   image-clip: 0 0 26 22
   $pressed:
     image-clip: 0 22 26 22
+
+I18NButton < UIButton
+  font: noto-12
+  color: #dfdfdfff
+  min-width: 106
+  height: 23
+  text-horizontal-auto-resize: true
+  text-offset: 0 0
+  image-source: /images/ui/button
+  image-color: #dfdfdf
+  image-clip: 0 0 22 23
+  image-border: 3
+  padding: 5 10 5 10
+  opacity: 1.0
+
+  $pressed:
+    image-clip: 0 46 22 23
+    text-offset: 1 1
+
+  $disabled:
+    color: #dfdfdf88
+    opacity: 0.8
+
+I18NQtButton < UIButton
+  font: noto-12
+  min-width: 106
+  height: 23
+  text-horizontal-auto-resize: true
+  text-offset: 0 0
+  image-source: /images/ui/button
+  image-clip: 0 0 22 23
+  image-border: 3
+  padding: 5 10 5 10
+  opacity: 1.0
+  color: #b9b9b9ff
+
+  $pressed:
+    image-clip: 0 46 22 23
+    text-offset: 1 1
+
+  $disabled:
+    color: #dfdfdf88
+    opacity: 0.8
 

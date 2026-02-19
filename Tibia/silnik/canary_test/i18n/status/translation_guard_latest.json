@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-02-19T21:08:57.638552Z",
-  "cycle": 2,
-  "language": "sr",
-  "json_file": "items.json",
+  "timestamp": "2026-02-19T21:10:37.920990Z",
+  "cycle": 1,
+  "language": "pl",
+  "json_file": "talkactions.json",
   "translated": 0,
   "placeholders": 0,
-  "guard_fail": 0,
+  "guard_fail": 41,
   "guard": {
     "placeholder": 0,
     "command": 0,
-    "pipe": 0
+    "pipe": 1
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 0
+  "strict_skipped_done": 199
 }

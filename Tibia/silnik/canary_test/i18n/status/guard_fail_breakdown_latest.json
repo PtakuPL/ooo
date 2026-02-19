@@ -1,38 +1,39 @@
 {
-  "timestamp": "2026-02-19T21:09:11.340519Z",
-  "window_start_utc": "2026-02-19T20:09:07.200062Z",
-  "window_end_utc": "2026-02-19T21:09:07.200062Z",
+  "timestamp": "2026-02-19T21:12:45.749735Z",
+  "window_start_utc": "2026-02-19T20:12:43.328591Z",
+  "window_end_utc": "2026-02-19T21:12:43.328591Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 252,
-  "suspicious_entries": 8078,
-  "guard_fail_entries": 61,
-  "guard_fail_sum": 1861,
+  "rejected_entries": 247,
+  "suspicious_entries": 6286,
+  "guard_fail_entries": 59,
+  "guard_fail_sum": 715,
   "by_type": {
-    "word_salad": 43,
-    "identical_to_en": 191,
+    "word_salad": 35,
+    "identical_to_en": 193,
     "contains_tibia_proper_noun": 16,
     "mixed_scripts": 18,
     "cyrillic_latin_mix": 18,
-    "diacritics_missing": 1
+    "diacritics_missing": 1,
+    "mixed_language": 1
   },
   "by_source": {
-    "simple": 31,
-    "google_translate": 221
+    "simple": 25,
+    "google_translate": 222
   },
   "by_language": {
-    "pl": 41,
-    "es": 73,
     "it": 39,
+    "es": 71,
     "ro": 81,
-    "ru": 18
+    "ru": 18,
+    "pl": 38
   },
   "by_category": {
-    "npc.json": 29,
+    "npc.json": 19,
     "items.json": 1,
     "monsters.json": 40,
     "spells.json": 89,
@@ -40,20 +41,22 @@
     "scripts.json": 27,
     "questlog.json": 11,
     "books.json": 5,
-    "otclient_modules.json": 46
+    "otclient_modules.json": 46,
+    "modules.json": 2,
+    "talkactions.json": 3
   },
   "by_severity": {
-    "CRITICAL": 234,
-    "HIGH": 18
+    "CRITICAL": 228,
+    "HIGH": 19
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 191
+      "count": 193
     },
     {
       "type": "word_salad",
-      "count": 43
+      "count": 35
     },
     {
       "type": "mixed_scripts",
@@ -70,21 +73,25 @@
     {
       "type": "diacritics_missing",
       "count": 1
+    },
+    {
+      "type": "mixed_language",
+      "count": 1
     }
   ],
   "top_keys": [
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 10,
+      "count": 8,
       "types": {
-        "identical_to_en": 10
+        "identical_to_en": 8
       }
     },
     {
       "key": "npc.al_dee.stdmod_41",
-      "count": 10,
+      "count": 8,
       "types": {
-        "word_salad": 10
+        "word_salad": 8
       }
     },
     {

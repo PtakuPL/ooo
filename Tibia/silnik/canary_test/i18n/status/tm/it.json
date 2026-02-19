@@ -9401,19 +9401,19 @@
   },
   "scripts.actions_treasure_chest.msg_1": {
     "src_hash": "2dba8779b7220248332287566af0d980",
-    "text": "You found",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Hai trovato ",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.900019Z"
+    "updated_at": "2026-02-19T20:49:37.734090Z"
   },
   "scripts.actions_treasure_chest.msg_2": {
     "src_hash": "2dba8779b7220248332287566af0d980",
-    "text": "You found",
-    "source": "simple_dict",
-    "confidence": 0.98,
+    "text": "Hai trovato ",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.900366Z"
+    "updated_at": "2026-02-19T20:49:43.411211Z"
   },
   "scripts.actions_ungreez_door.msg_1": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
@@ -71502,5 +71502,245 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T20:30:21.053168Z"
+  },
+  "scripts.actions_tuning_fork.msg_1": {
+    "src_hash": "1fb08088101b8002a91bbe2c8648b740",
+    "text": "Segnala l'incarico a Gnomilly.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:04.658963Z"
+  },
+  "scripts.creaturescripts_energy_prism.say_1": {
+    "src_hash": "40eeefad3ef6c3a31f3e1bc946fdfa16",
+    "text": "*Zup!*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:04.673435Z"
+  },
+  "scripts.enchanting.say_2": {
+    "src_hash": "f6786da93512a5110e0c75948aaf4855",
+    "text": "Spegnere prima la macchina.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:04.692351Z"
+  },
+  "scripts.free_quest.msg_1": {
+    "src_hash": "9f78cd07a4952ce2aec875b30e947e8d",
+    "text": "Il giocatore FreeQuest è completo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:04.707321Z"
+  },
+  "scripts.free_quest.msg_2": {
+    "src_hash": "c89e8e5830ed7bbdd0fff0e334e22dc9",
+    "text": "Giocatore FreeQuest in corso..",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:04.708010Z"
+  },
+  "scripts.goblin_temple_quest.msg_1": {
+    "src_hash": "9bd9442de08fedcaa4b3d38791da086a",
+    "text": "Hai trovato una borsa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:04.712792Z"
+  },
+  "scripts.goblin_temple_quest.msg_2": {
+    "src_hash": "9bd9442de08fedcaa4b3d38791da086a",
+    "text": "Hai trovato una borsa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:04.713156Z"
+  },
+  "scripts.actions_the_rare_herb.msg_1": {
+    "src_hash": "1deab6975af73c713be793a50755bfa0",
+    "text": "Hai raccolto alcuni boccioli di fiori dell'erba. Porta loro Morris per una ricompensa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:27.029792Z"
+  },
+  "scripts.actions_thermometer.msg_1": {
+    "src_hash": "03de06efaeede3f79178d8fca5e856bd",
+    "text": "Wow! Faceva così caldo che si sciolse il termometro! Almeno hai trovato il punto caldo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:27.030686Z"
+  },
+  "scripts.actions_thermometer.msg_2": {
+    "src_hash": "5b0988e5f853d415fc34053cc10feb86",
+    "text": "Questo non è il punto caldo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:27.031139Z"
+  },
+  "scripts.actions_time_machine.msg_1": {
+    "src_hash": "4af4503d487cba3ad875975c67fa389c",
+    "text": "Il meccanismo ti riporta indietro nel tempo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:27.031659Z"
+  },
+  "scripts.actions_time_machine.msg_2": {
+    "src_hash": "4af4503d487cba3ad875975c67fa389c",
+    "text": "Il meccanismo ti riporta indietro nel tempo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:27.032154Z"
+  },
+  "scripts.actions_time_machine.msg_3": {
+    "src_hash": "af13692f0a7bdbfa9260b979d6b3e487",
+    "text": "Bisogna aspettare un po' prima di viaggiare nel tempo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:31.839961Z"
+  },
+  "scripts.actions_time_machine.msg_4": {
+    "src_hash": "4af4503d487cba3ad875975c67fa389c",
+    "text": "Il meccanismo ti riporta indietro nel tempo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:31.840442Z"
+  },
+  "scripts.actions_time_machine.msg_5": {
+    "src_hash": "4af4503d487cba3ad875975c67fa389c",
+    "text": "Il meccanismo ti riporta indietro nel tempo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:31.840928Z"
+  },
+  "scripts.actions_tincture.msg_1": {
+    "src_hash": "1c515751e73b487c2c45cf91c696cde0",
+    "text": "Rompi la fiala e versi la tintura di sangue. Questo altare è unto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:31.841536Z"
+  },
+  "scripts.actions_tools.say_1": {
+    "src_hash": "5fd8554890c305d5ec529fb6ca51e145",
+    "text": "Nel pacco hai trovato un piccolo strumento utile per gli agenti segreti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:31.842143Z"
+  },
+  "scripts.actions_torch.msg_1": {
+    "src_hash": "4854b59cfd2c644e8e313775e6de1a6f",
+    "text": "Senti un forte rumore stridente non molto lontano da te. qualcosa di molto pesante sembra essersi mosso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:37.731842Z"
+  },
+  "scripts.actions_tortoise.msg_1": {
+    "src_hash": "70c07abb473fda5ebb8cef18df22fc77",
+    "text": "Il nido delle tartarughe è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:37.732320Z"
+  },
+  "scripts.actions_treasure.msg_1": {
+    "src_hash": "2bc9d9a96b2460f687623c9704dedd76",
+    "text": "È impossibile portare con sé tutti i tesori qui. Ma tu scegli {}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:37.732990Z"
+  },
+  "scripts.actions_treasure.msg_2": {
+    "src_hash": "79160e6b066237c7c12eb0cc702123d8",
+    "text": "Cerchi di raccogliere un tesoro, ma senti altri draghi avvicinarsi. Dovresti ucciderne altri prima di scegliere qualcosa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:37.733778Z"
+  },
+  "scripts.actions_tumulo.msg_1": {
+    "src_hash": "28f1a6c6eb00bf9831ac00fa04d9ca56",
+    "text": "La tomba è vuota. Nient'altro che un vuoto spalancato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:43.411961Z"
+  },
+  "scripts.actions_tumuloerro.msg_1": {
+    "src_hash": "28f1a6c6eb00bf9831ac00fa04d9ca56",
+    "text": "La tomba è vuota. Nient'altro che un vuoto spalancato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:43.412503Z"
+  },
+  "scripts.actions_ultimate_booze_beer_bottle.say_1": {
+    "src_hash": "05d7597d2424445ea103aaaf2dd7a744",
+    "text": "GULP, GULP, GULP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:43.412988Z"
+  },
+  "scripts.actions_ursagrodon.msg_1": {
+    "src_hash": "d0d3617b1cd884278a414fdbabd6b439",
+    "text": "Hai già l'obbedienza di Ursagrodon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:43.413490Z"
+  },
+  "scripts.actions_ursagrodon.msg_2": {
+    "src_hash": "4db1a87ec2c30e5b5d9e61fb6c1d97d3",
+    "text": "Il ghiaccio si è rotto e con esso la creatura congelata: fai più attenzione la prossima volta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:49.321913Z"
+  },
+  "scripts.actions_ursagrodon.msg_3": {
+    "src_hash": "125d3b04bcaf892fb2386fb00ac1921a",
+    "text": "Sei riuscito a sciogliere circa la metà del blocco di ghiaccio. Presto qui fa freddo e il blocco di ghiaccio potrebbe congelarsi di nuovo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:49.322824Z"
+  },
+  "scripts.actions_ursagrodon.msg_4": {
+    "src_hash": "5fcfa4caa955ed25132384275eb6caec",
+    "text": "Sei riuscito a sciogliere quasi l'intero blocco, solo i piedi della creatura sono ancora bloccati nel ghiaccio. Finisci il lavoro!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:49.323562Z"
+  },
+  "scripts.actions_ursagrodon.msg_5": {
+    "src_hash": "e28b127eca3173abd0c728adc49379a2",
+    "text": "L'Ursagrodon liberato ti guarda con occhi luminosi e obbedienti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:49.324409Z"
+  },
+  "scripts.actions_vocation_reward.msg_1": {
+    "src_hash": "1b196f133787b2ece397fe8e02781728",
+    "text": "Hai trovato un {}. Con un peso di {} oz, è troppo pesante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:49:49.325090Z"
   }
 }

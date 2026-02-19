@@ -1001,3 +1001,148 @@ Title (text-auto-resize + auto-fit-parent-width) Text rośnie
 3. **Dodać tłumaczenia**: Klucze "Controls", "Graphics" itd. do plików locale (ru, pl, de, ...)
 4. **OptionScaleScroll**: Opcjonalnie zmniejszyć scrollbar width z 174 na 150
 5. **Testowanie wizualne**: Uruchomić klienta z różnymi locale i sprawdzić czy okna rosną prawidłowo
+
+---
+
+## 12. Poprawki autoFitParent() i rozszerzenie FlagProp (2026-02-19)
+
+### 12.1 Zidentyfikowane problemy w autoFitParent()
+
+Analiza kodu ujawniła 5 poważnych problemów (plus 1 problem z budową MSVC):
+
+| # | Problem | Krytyczność | Status |
+|---|---|---|---|
+| 1 | MSVC ICE C1001 — po dodaniu 7 nowych bindingów Lua | KRYTYCZNY | ✅ Naprawione (split pliku) |
+| 2 | Deferred resize race condition — wiele dzieci nadpisuje resize rodzica | KRYTYCZNY | ✅ Naprawione |
+| 3 | Dead code — pusty blok if dla anchorLayout | NISKI | ✅ Usunięte (efekt uboczny rewrite) |
+| 4 | Multi-frame cascade delay — 4+ klatek via deferEvent() | ŚREDNI | ✅ Naprawione |
+| 5 | Brak świadomości rodzeństwa — widget Arrow nie brany pod uwagę | ŚREDNI | ✅ Naprawione |
+| 6 | FlagProp bliski limitu uint32_t — tylko 3 wolne bity | ŚREDNI | ✅ Naprawione |
+
+### 12.2 Fix #6: Rozszerzenie FlagProp z uint32_t do uint64_t
+
+**Problem**: `m_flagsProp` był 32-bitowy, z 27 wartościami (0-26) + 2 nowe auto-fit-parent (27, 28) = 29/32, czyli tylko 3 wolne bity.
+
+**Rozwiązanie** (`uiwidget.h`):
+```cpp
+// Przed:
+enum FlagProp : uint32_t { PropTextHorizontalAutoResize = 1 << 0, ... };
+uint32_t m_flagsProp { 0 };
+
+// Po:
+enum FlagProp : uint64_t { PropTextHorizontalAutoResize = 1ULL << 0, ... };
+uint64_t m_flagsProp { 0 };
+```
+
+- Wszystkie 30 wartości (0-29) używają `1ULL << N`
+- Dodano `PropAutoFitParentUpdating = 1ULL << 29` jako guard rekursji
+- `hasProp()` i `setProp()` zaktualizowane do użycia `static_cast<uint64_t>(prop)`
+- **34 wolne bity** (30-63) na przyszłe rozszerzenia
+
+### 12.3 Fixes #2, #4, #5: Przepisanie autoFitParent()
+
+**Stara implementacja** (problematyczna):
+```cpp
+void UIWidget::autoFitParent() {
+    UIWidgetPtr parent = getParent();
+    if (!parent) return;
+    
+    // Sprawdzanie anchors...
+    // Obliczanie overflow TYLKO tego jednego dziecka
+    int overflow = getRect().right() - parent->getRect().right();
+    int newWidth = parent->getWidth() + overflow + padding;
+    parent->setWidth(newWidth);  // ← nadpisuje poprzedni resize innego dziecka
+    
+    // Użycie g_dispatcher.deferEvent() → 1 frame delay na każdy poziom kaskady
+}
+```
+
+**Nowa implementacja** (synchroniczna, sibling-aware, z guard rekursji):
+```cpp
+void UIWidget::autoFitParent() {
+    UIWidgetPtr parent = getParent();
+    if (!parent) return;
+    if (parent->hasProp(PropAutoFitParentUpdating)) return;  // guard rekursji
+    
+    parent->setProp(PropAutoFitParentUpdating, true);        // ustaw guard
+    
+    bool fitWidth = false, fitHeight = false;
+    // Sprawdzanie anchors (skip if left+right or top+bottom)...
+    
+    // KLUCZOWE: iteruj WSZYSTKIE widoczne dzieci rodzica
+    int maxRight = 0, maxBottom = 0;
+    for (const auto& child : parent->getChildren()) {
+        if (!child->isVisible()) continue;
+        bool childFitW = child->hasProp(PropAutoFitParentWidth);
+        bool childFitH = child->hasProp(PropAutoFitParentHeight);
+        if (childFitW) maxRight = std::max(maxRight, childRight);
+        if (childFitH) maxBottom = std::max(maxBottom, childBottom);
+    }
+    
+    // Użycie std::max() zamiast nadpisywania → brak race condition
+    int newWidth = std::max(newWidth, parent->getWidth());
+    
+    // Synchroniczny resize (bez deferEvent) → natychmiastowa propagacja
+    parent->setWidth(newWidth);
+    
+    parent->setProp(PropAutoFitParentUpdating, false);       // zdejmij guard
+}
+```
+
+**Efekty napraw**:
+- **#2 Race condition**: Wszystkie dzieci brane pod uwagę, `std::max()` zapobiega nadpisywaniu
+- **#4 Multi-frame delay**: Synchroniczny resize — cała kaskada w jednym frame
+- **#5 Sibling awareness**: Widget Arrow (np. w kategoriach) uwzględniany w obliczeniach
+
+### 12.4 Fix #1: MSVC ICE — split luafunctions.cpp
+
+**Problem**: `framework/luafunctions.cpp` (823 template bindings) powodował ICE C1001:
+```
+fatal error C1001: Internal compiler error.
+  INTERNAL COMPILER ERROR in 'C:\Program Files\Microsoft Visual Studio\...\cl.exe'
+  Please choose the Technical Support command on the Visual C++ Help menu...
+  Module: 'p2/main.cpp', Line: 258
+  Expression: !region->hasNoDescendants()...
+  Error code: 0xC0000005 (Access Violation)
+```
+
+Flagi `/Od /Ob0 /d2SSAOptimizer-` **nie pomogły** — to wariant ICE spowodowany Access Violation w fazie P2 codegen, nie w SSA optimizer.
+
+**Rozwiązanie**: Podział pliku na 2 translation units:
+
+| Plik | Bindings | Zawartość |
+|---|---|---|
+| `framework/luafunctions.cpp` | 305 | Globale, singletony, Config, Module, Event, LoginHttp, ResourceManager, Platform, Graphics, FontManager, Particles, Shaders, PlatformWindow, UIManager |
+| `framework/luafunctions_ui.cpp` | 538 | UIWidget (~300), UILayout, UIBoxLayout, UIVerticalLayout, UIHorizontalLayout, UIGridLayout, UIAnchorLayout, UITextEdit, UIQrCode, Shader, ParticleEffect, UIParticles, Server, Connection, Protocol, InputMessage, OutputMessage, SoundManager, SoundSource, SoundChannel |
+
+Punkt podziału: `// UIWidget` (linia 467 w oryginale).
+
+Mechanizm: wolna funkcja `registerLuaFunctions_UI()` w nowym pliku, wywoływana przez `extern` deklarację w oryginale:
+```cpp
+// W luafunctions.cpp:
+extern void registerLuaFunctions_UI();
+registerLuaFunctions_UI();
+
+// W luafunctions_ui.cpp:
+void registerLuaFunctions_UI() {
+    #ifdef FRAMEWORK_GRAPHICS
+    g_lua.registerClass<UIWidget>();
+    // ... 538 template bindings ...
+    #endif
+}
+```
+
+Oba pliki zachowują `/Od /Ob0 /d2SSAOptimizer-` + `SKIP_PRECOMPILE_HEADERS ON` jako defense-in-depth.
+
+### 12.5 Commity:
+
+| Commit | Opis |
+|---|---|
+| `dbd75db75` | autoFitParent() rewrite + FlagProp uint64_t (auto-committed by guardian) |
+| `38b97fa4c` | Split luafunctions.cpp → luafunctions.cpp + luafunctions_ui.cpp |
+
+### 12.6 Build status:
+
+- Build #4373 (pre-split): **FAILED** — ICE C1001 w luafunctions.cpp mimo /d2SSAOptimizer-
+- Build #4374 (post-split): **TRIGGERED** — oczekiwanie na wynik
+

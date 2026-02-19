@@ -113,6 +113,193 @@ Uwagi:
 - Wysoki `guard fail` sam w sobie nie oznacza awarii guardów; oznacza słaby strumień kandydatów. Plan musi równolegle poprawić **jakość generacji** i utrzymać **restrykcyjność walidacji**.
 - Dla transparentności operacyjnej trzeba raportować nie tylko `% fail`, ale też **dlaczego** kandydaci odpadają (reason-coded telemetry).
 
+## 🛠️ Aktualizacja wykonania (2026-02-19 23:10 UTC — audyt błędnych tłumaczeń PL/ES w fizycznych `.json` + komendy diagnostyczne + plan naprawy workera)
+
+Cel tej aktualizacji:
+- **Wyszukać i potwierdzić błędne tłumaczenia PL/ES bezpośrednio w fizycznych plikach `.json`**
+- **Dopisać komendy do kontroli każdego przypadku pracy workera (operacyjnie, cykl po cyklu)**
+- **Rozpisać precyzyjny plan zmian, aby worker wykrywał i naprawiał te przypadki automatycznie**
+
+### 1) Potwierdzone przykłady błędnych tłumaczeń (fizyczne pliki JSON)
+
+#### A. Język polski (`i18n/pl/*.json`)
+
+Przypadki mieszania EN/PL i nienaturalnych form:
+- `i18n/pl/items.json`
+  - `item.25907.name = "supreme Zdrowie keg"`
+  - `item.25906.name = "ultimate Zdrowie keg"`
+  - `item.21001.name = "martwy minotaur amazon"`
+- `i18n/pl/items.json`
+  - `item.10727.name = "dreadcoil"` (identical_to_en — wymaga klasyfikacji: nazwa własna vs brak tłumaczenia)
+
+Przypadki z flagą nieprzetłumaczonego tekstu:
+- `i18n/pl/achievements.json`
+  - `achievement.1.name = "[EN] Castlemania"`
+  - wiele kolejnych wpisów (`achievement.*`) także pozostaje jako `[EN] ...`
+
+Przypadki `spells` (już poprawione i zabezpieczone override, nadal wymagają rozszerzenia polityki):
+- `i18n/pl/spells.json`
+  - `spell.quara_constrictor_electrify.name = "Elektryzacja Quara Constrictora"`
+  - `spell.lava_golem_soulfire2.name = "Ogień duszy lawowego golema 2"`
+
+#### B. Język hiszpański (`i18n/es/*.json`)
+
+Przypadki artefaktów/tokenów technicznych zamiast docelowego tłumaczenia użytkowego:
+- `i18n/es/npc.json`
+  - `npc.bozo.stdmod_98 = "npc.bozo.mission_18_t1_1\\z ..."`
+  - `npc.bozo.stdmod_99 = "npc.bozo.mission_19_t1\\z ..."`
+
+Przypadki jakości językowej i artefaktów:
+- `i18n/es/npc.json`
+  - `npc.captain_haba_open_sea.larboard_1 = "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"`
+  - `npc.captain_haba_open_sea.say_3 = "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"`
+  - `npc.captain_haba_open_sea.straight_3 = "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"`
+
+Przypadki nieprzetłumaczonych wpisów `[EN]`:
+- `i18n/es/npclib.json`
+  - `misc.bank_system.say_1 = "[EN] You do not have enough gold."`
+  - kolejne wpisy `misc.bank_system.say_*` analogicznie.
+
+Uwaga semantyczna (ważna):
+- Część wpisów wykrywanych jako `word_salad` może być poprawnym tłumaczeniem naturalnym. Dlatego potrzebny jest etap klasyfikacji reguł (true positive vs false positive), a nie tylko „twarde” reject-all.
+
+---
+
+### 2) Komendy operacyjne do sprawdzania KAŻDEGO przypadku pracy workera
+
+#### 2.1. Szybki podgląd bieżącego cyklu i guardów
+
+```bash
+# aktualny stan sekcji i faz
+cat i18n/status/status_sections_latest.json | jq .
+
+# ostatni wynik guarda (1 target)
+cat i18n/status/translation_guard_latest.json | jq .
+
+# metryki okna 1h (guard_fail_rate, top targety)
+cat i18n/status/strict_hourly_window_latest.json | jq .
+```
+
+#### 2.2. Ostatnie tłumaczenia + szybki audyt wartości
+
+```bash
+# ostatnie przetłumaczone klucze (z source)
+cat i18n/status/translation_recent_latest.json | jq .
+
+# odrzucone podejrzane wpisy PL/ES (ostatnie 200)
+tail -n 200 i18n/status/suspicious_rejected.jsonl | jq -c 'select(.lang=="pl" or .lang=="es")'
+
+# pełny suspicious log PL/ES (ostatnie 200)
+tail -n 200 i18n/status/suspicious_log.jsonl | jq -c 'select(.lang=="pl" or .lang=="es")'
+```
+
+#### 2.3. Weryfikacja konkretnego klucza w fizycznym JSON
+
+```bash
+# przykład: pojedynczy klucz
+grep -R --line-number '"spell.lava_golem_soulfire2.name"' i18n/pl i18n/es
+
+# batch kluczy problematycznych
+grep -R --line-number -E '"(item.25907.name|item.25906.name|npc.bozo.stdmod_99|npc.captain_haba_open_sea.larboard_1)"' i18n/pl i18n/es
+```
+
+#### 2.4. Audyt regexowy „flag jakości” w JSON (PL/ES)
+
+```bash
+# [EN] markers
+grep -R --line-number '".*\[EN\]' i18n/pl i18n/es | head -n 200
+
+# techniczne tokeny / artefakty
+grep -R --line-number -E 'npc\.bozo\.mission_|\[LANG\]|TODO|\?\?\?\?' i18n/pl i18n/es | head -n 200
+
+# podejrzane hybrydy EN/PL/ES (przykład słów)
+grep -R --line-number -E 'soulfire|keg|ultimate|supreme|strong|great' i18n/pl i18n/es | head -n 200
+```
+
+#### 2.5. Korelacja: co odrzucone vs co aktualnie siedzi w JSON
+
+```bash
+python3 - <<'PY'
+import json,glob,os
+langs={'pl':'i18n/pl','es':'i18n/es'}
+current={}
+for lang,p in langs.items():
+    cur={}
+    for fp in glob.glob(f"{p}/*.json"):
+        cat=os.path.basename(fp)
+        data=json.load(open(fp,encoding='utf-8'))
+        for k,v in data.items():
+            cur[k]=(cat,v)
+    current[lang]=cur
+
+for line in open('i18n/status/suspicious_rejected.jsonl',encoding='utf-8',errors='ignore'):
+    o=json.loads(line)
+    if o.get('lang') not in ('pl','es'):
+        continue
+    k=o.get('key')
+    if not k:
+        continue
+    cur=current[o['lang']].get(k)
+    if cur:
+        cat,val=cur
+        print(f"{o['lang']}\t{k}\t{cat}\t{val[:120] if isinstance(val,str) else val}")
+PY
+```
+
+---
+
+### 3) Co worker musi dostać, żeby wykrywać i poprawiać te przypadki
+
+#### 3.1. Warstwa detekcji (P0)
+- Dodać `reason-coded` reguły per język i per domena (`items`, `npc`, `spells`, `quests`):
+  - `en_marker_present` (`[EN] ...`),
+  - `mixed_language_ratio` (EN leak powyżej progu),
+  - `artifact_token_detected` (`npc.bozo.mission_*`, `TODO`, `[LANG]`, `????`),
+  - `unnatural_collocation` (np. `ultimate Zdrowie keg`),
+  - `proper_noun_exemption` (kontrolowane whitelisty nazw własnych, by ograniczyć false-positive).
+
+#### 3.2. Warstwa klasyfikacji (P0)
+- Rozdzielić wpisy na 3 klasy akcji:
+  1. `AUTO_FIX_NOW` — pewne błędy (`[EN]`, token artefakty, ewidentne hybrydy).
+  2. `RETRANSLATE_WITH_CONSTRAINTS` — tłumaczyć ponownie z hintami/glossary.
+  3. `MANUAL_REVIEW` — niejednoznaczne przypadki (np. potencjalna nazwa własna).
+
+#### 3.3. Warstwa auto-poprawy (P0/P1)
+- Dla `AUTO_FIX_NOW`:
+  - wymusić retranslate przez `TM verified`/`curated dictionary`/`GT` z guardem,
+  - zapisać poprawkę i od razu dopisać do `overrides/{lang}.json` jeśli klucz jest krytyczny.
+- Dla `RETRANSLATE_WITH_CONSTRAINTS`:
+  - podawać do translatora kontekst domeny + glossary + zakazane tokeny.
+
+#### 3.4. Warstwa telemetry i audytu (P0)
+- Dodać nowy raport: `i18n/status/guard_fail_breakdown_latest.json`:
+  - `by_lang`, `by_file`, `by_reason_code`, `by_source`.
+- Dodać licznik skuteczności auto-fix:
+  - `auto_fix_attempted`, `auto_fix_success`, `auto_fix_rejected_again`.
+
+#### 3.5. Warstwa jakości „recent keys” (P1)
+- Nie pokazywać w sekcji „recent translated keys” wpisów, które w tym samym cyklu mają `HIGH/CRITICAL` suspicious (albo oznaczać je jawnie badge `⚠`).
+
+---
+
+### 4) Plan wdrożeniowy (zadania)
+
+- [ ] `WQ-HARD-12 (P0)`: Implementować `guard_fail_breakdown_latest.json` + publikację w `I18N_STATUS.md`.
+- [ ] `WQ-HARD-13 (P0)`: Dodać detektory `en_marker_present`, `artifact_token_detected`, `mixed_language_ratio` dla PL/ES.
+- [ ] `WQ-HARD-14 (P0)`: Dodać auto-fix klasy `AUTO_FIX_NOW` (`[EN]`, tokeny artefaktowe, hybrydy oczywiste).
+- [ ] `WQ-HARD-15 (P1)`: Dodać `proper_noun_exemption` + whitelisty domenowe, aby ograniczyć false-positive.
+- [ ] `WQ-HARD-16 (P1)`: Dodać tryb audytu „recent keys without HIGH/CRITICAL” do dashboardu.
+- [ ] `WQ-HARD-17 (P0)`: Przygotować „critical bad keys pack” PL/ES i zassać do `i18n/overrides/{lang}.json` po review.
+
+### 5) Zakres na teraz
+
+W tej iteracji wykonano:
+- identyfikację i potwierdzenie przypadków w fizycznych `.json`,
+- przygotowanie komend operacyjnych do pełnej diagnostyki cykli,
+- rozpisanie planu implementacyjnego (detekcja + klasyfikacja + auto-fix + telemetry).
+
+Implementacja kodowa `WQ-HARD-12..17` jest następnym krokiem.
+
 ## 🛠️ Aktualizacja wykonania (2026-02-17 14:00 UTC — fix progress 0/0 LIVE + E4 Δ24h trendy + analiza GitHub Actions spam)
 
 Wybrane do realizacji pełne zadania:

@@ -2,9 +2,9 @@
   "lang": "ru",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 26997,
+  "translated": 27024,
   "identical_to_en": 1460,
-  "placeholder_keys": 26589,
+  "placeholder_keys": 26562,
   "coverage_pct": 50.4,
   "issues_total": 6585,
   "issues_by_type": {
@@ -19,7 +19,7 @@
     "MEDIUM": 8,
     "LOW": 0
   },
-  "score": 62.6,
+  "score": 62.7,
   "worst_keys": [
     {
       "key": "html.statistics.html.text2",
@@ -150,5 +150,5 @@
     "length_ratio": 43,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-17T11:37:15.147360Z"
+  "validated_at": "2026-02-19T07:21:59.613763Z"
 }

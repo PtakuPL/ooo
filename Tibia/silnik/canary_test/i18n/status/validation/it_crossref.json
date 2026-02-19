@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 50.9,
+  "coverage_pct": 51.1,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-17T11:35:42.097921Z",
+  "checked_at": "2026-02-19T07:20:56.088674Z",
   "issues_total": 429,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -2335,15 +2335,6 @@
       "lang": "Fine."
     },
     {
-      "key": "npc.sam.say_15",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Then no.",
-      "pl": "Wtedy Nie.",
-      "lang": "Then no."
-    },
-    {
       "key": "npc.sandomo.multi_11",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -2351,24 +2342,6 @@
       "en": "You killed ",
       "pl": "Zabiłeś ",
       "lang": "You killed "
-    },
-    {
-      "key": "npc.sebastian.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oh well.",
-      "pl": "O well.",
-      "lang": "Oh well."
-    },
-    {
-      "key": "npc.sebastian_nargor.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oh well.",
-      "pl": "O well.",
-      "lang": "Oh well."
     },
     {
       "key": "npc.shauna.stdmod_4",
@@ -3737,6 +3710,33 @@
       "en": "BOOOM!",
       "pl": "BUM!",
       "lang": "BOOOM!"
+    },
+    {
+      "key": "scripts.malofur_explosion.say_5",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "BOOM!",
+      "pl": "WYSIĘGNIK!",
+      "lang": "BOOM!"
+    },
+    {
+      "key": "scripts.mirror.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "KABOOM !!",
+      "pl": "KABOOM!!",
+      "lang": "KABOOM !!"
+    },
+    {
+      "key": "scripts.mounts.fail_30",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Splosh!",
+      "pl": "Plusk!",
+      "lang": "Splosh!"
     }
   ],
   "length_ratio_issues": [
@@ -3932,8 +3932,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 0,
-    "skipped": 80,
+    "applied": 8,
+    "skipped": 72,
     "errors": 0
   }
 }

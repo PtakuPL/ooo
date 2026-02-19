@@ -8285,3 +8285,6 @@
 {"timestamp": "2026-02-17T11:57:27.747189Z", "cycle": 473, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "dispatch", "duration_ms": 3229, "detail": "count=monsters.json"}
 {"timestamp": "2026-02-17T11:58:31.298737Z", "cycle": 473, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "mode_run", "duration_ms": 63323, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-17T11:58:45.844182Z", "cycle": 473, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "status_update", "duration_ms": 14068, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-19T07:18:12.863632Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "dispatch", "duration_ms": 2095, "detail": "count=spells.json"}
+{"timestamp": "2026-02-19T07:23:10.302882Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "mode_run", "duration_ms": 297306, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-19T07:23:21.740032Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "status_update", "duration_ms": 9355, "detail": "throttle_every=1"}

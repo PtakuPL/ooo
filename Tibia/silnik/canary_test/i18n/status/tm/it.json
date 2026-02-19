@@ -70454,5 +70454,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T20:03:02.421436Z"
+  },
+  "globalevents.online_record": {
+    "src_hash": "61601b90ebd05b9654009190617e9037",
+    "text": "Nuovo record: i giocatori %s hanno effettuato l'accesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:07:41.467015Z"
+  },
+  "globalevents.save_interval.complete_plural": {
+    "src_hash": "713aad5758d57fc11f0ed6893211996b",
+    "text": "Salvataggio del server completato. Prossimo salvataggio tra %s %ss!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:07:41.467396Z"
+  },
+  "globalevents.save_interval.complete_singular": {
+    "src_hash": "0af56522408580ddef1c9721cf8cad91",
+    "text": "Salvataggio del server completato. Prossimo salvataggio tra %s %s!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:07:41.467729Z"
+  },
+  "globalevents.save_interval.warning": {
+    "src_hash": "21c66b9893b15898ff500b68821832c7",
+    "text": "Il server salverà tutti gli account entro %s secondi. Potresti rallentare o bloccarti per 5 secondi, trova un posto sicuro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:07:41.468361Z"
+  },
+  "globalevents.server_save.warning": {
+    "src_hash": "7f9ea16a22ee0dc335a63fb281403e42",
+    "text": "Il server salverà il gioco tra %s minuto/i. Per favore disconnettiti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:07:41.468760Z"
   }
 }

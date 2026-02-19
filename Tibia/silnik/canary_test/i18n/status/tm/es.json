@@ -150790,5 +150790,389 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:29:59.772706Z"
+  },
+  "item.19103.name": {
+    "src_hash": "a63bf0c49a6ac9185023bed34138b340",
+    "text": "dead Noble lion",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:33.128988Z"
+  },
+  "item.19104.name": {
+    "src_hash": "a63bf0c49a6ac9185023bed34138b340",
+    "text": "dead Noble lion",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:33.129568Z"
+  },
+  "item.19105.name": {
+    "src_hash": "a63bf0c49a6ac9185023bed34138b340",
+    "text": "dead Noble lion",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:33.130178Z"
+  },
+  "item.19106.name": {
+    "src_hash": "a63bf0c49a6ac9185023bed34138b340",
+    "text": "dead Noble lion",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:33.130876Z"
+  },
+  "item.21875.name": {
+    "src_hash": "0e5f6bb1d8e1c70a6892ec8582aca3c3",
+    "text": "pressure gauge",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:33.590584Z"
+  },
+  "item.29276.name": {
+    "src_hash": "2f00d19e4fb2d9e1c321035e9ad9a8d2",
+    "text": "Cazador de Sueños",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:34.881372Z"
+  },
+  "item.30282.name": {
+    "src_hash": "7a86206888f63fc8eecdf49ae2ca8280",
+    "text": "muerto escoba",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:35.082179Z"
+  },
+  "item.30352.name": {
+    "src_hash": "967bbe1c45741df2525e7967e0e78d74",
+    "text": "dead lost gNome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:35.116002Z"
+  },
+  "item.30353.name": {
+    "src_hash": "967bbe1c45741df2525e7967e0e78d74",
+    "text": "dead lost gNome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:35.116798Z"
+  },
+  "item.30354.name": {
+    "src_hash": "967bbe1c45741df2525e7967e0e78d74",
+    "text": "dead lost gNome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:35.117568Z"
+  },
+  "item.30355.name": {
+    "src_hash": "967bbe1c45741df2525e7967e0e78d74",
+    "text": "dead lost gNome",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:35.118517Z"
+  },
+  "item.31709.name": {
+    "src_hash": "e0c23104d992a02c65bebe8f75e3e1a3",
+    "text": "kilmar tablets",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:35.399084Z"
+  },
+  "item.32726.name": {
+    "src_hash": "52c280400c51b9df51e6c5af4a33c450",
+    "text": "weak spot",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:35.589563Z"
+  },
+  "item.36783.name": {
+    "src_hash": "e0548d2b45fbcc4e1f28f2c043634b4a",
+    "text": "tyrant muerto cabeza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:36.174497Z"
+  },
+  "item.36784.name": {
+    "src_hash": "878e6626b460bd72bea2009e1dd3943c",
+    "text": "tyrant muerto concha",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:36.175618Z"
+  },
+  "item.36789.name": {
+    "src_hash": "ae658a17ad0e48dc0453ab2c9e6f1182",
+    "text": "strider muerto cabeza",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:36.178028Z"
+  },
+  "item.5745.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La puerta parece estar sellada contra intrusos no deseados.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:37.934698Z"
+  },
+  "item.5746.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La puerta parece estar sellada contra intrusos no deseados.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:37.936220Z"
+  },
+  "item.5748.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La puerta parece estar sellada contra intrusos no deseados.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:37.937582Z"
+  },
+  "item.5749.desc": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "La puerta parece estar sellada contra intrusos no deseados.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:37.938977Z"
+  },
+  "item.7453.name": {
+    "src_hash": "eb3a4014ffdf770c9ad5c1df73bc21af",
+    "text": "Verdugo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:38.267205Z"
+  },
+  "item.10011.name": {
+    "src_hash": "36227190a857cf681921d9bf34a765ad",
+    "text": "mapa a lo desconocido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:48.768592Z"
+  },
+  "item.10159.desc": {
+    "src_hash": "b7366edafc0bd113da5467c420cc0e40",
+    "text": "Una vez perteneció a un antepasado de Lazaran. Obviamente tenía muy mala dentadura.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:48.769274Z"
+  },
+  "item.10183.desc": {
+    "src_hash": "ce781ba138e3fa2c9204d1340ba90409",
+    "text": "Este veneno está destinado a debilitar al enemigo y debe usarse en los campos de arroz cerca de Chaochai.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:48.769977Z"
+  },
+  "item.10184.desc": {
+    "src_hash": "2828b3fef703beeeedd8f585b3d35387",
+    "text": "Un mapa que muestra los movimientos recientes de tropas e instrucciones tácticas de partes del ejército del Emperador.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:48.770630Z"
+  },
+  "item.10190.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "maestro de guerra draco muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:48.771136Z"
+  },
+  "item.10191.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "maestro de guerra draco muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:48.771486Z"
+  },
+  "item.10192.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "maestro de guerra draco muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:48.771876Z"
+  },
+  "item.10193.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "maestro de guerra draco muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:48.772171Z"
+  },
+  "item.10209.desc": {
+    "src_hash": "efcad34d251c0a3866a9744ef41df9b0",
+    "text": "Úselo en su casa para construir un estante para armas de lagarto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:48.772671Z"
+  },
+  "item.10216.desc": {
+    "src_hash": "f5983fdd8fd2e2fc1c22faaa80439f68",
+    "text": "Úsalo en tu casa para construir una estatua de dragón.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:48.773079Z"
+  },
+  "item.10217.desc": {
+    "src_hash": "95fc558d85dc30bac93a98ad1a8bd42f",
+    "text": "Lleva este libro cifrado a un sabio en Farmine para obtener sabiduría o desbloquear más cultura de Zao.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:48.773899Z"
+  },
+  "item.10217.name": {
+    "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
+    "text": "Tomo de Knowledge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:48.774349Z"
+  },
+  "item.10218.desc": {
+    "src_hash": "4277fbe6c944de4097a47b4cc39005bc",
+    "text": "Este pescado ha sido salado y ya preparado como provisión para los soldados.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:48.774879Z"
+  },
+  "item.10221.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "caimán asesino muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:48.775137Z"
+  },
+  "item.10222.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "caimán asesino muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:57.742059Z"
+  },
+  "item.10223.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "caimán asesino muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:57.742338Z"
+  },
+  "item.10224.name": {
+    "src_hash": "4212181ee4e21c2ab9a4a71943c92c0e",
+    "text": "caimán asesino muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:57.742628Z"
+  },
+  "item.10283.name": {
+    "src_hash": "7a89c42b9c239f19082d6d687c0d44ff",
+    "text": "trozo de carne a medio digerir",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:57.742921Z"
+  },
+  "item.10288.desc": {
+    "src_hash": "353e14b2a3f813f1fb537fbaeec1166f",
+    "text": "Úsalo en tu casa para construir un trono de dragón.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:57.743471Z"
+  },
+  "item.10306.name": {
+    "src_hash": "ec98bcab585b9e48d89dfc985a77455f",
+    "text": "esencia de un mal sueño",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:57.743824Z"
+  },
+  "item.10309.name": {
+    "src_hash": "c752a633fac9d8b23b5fef3fdc67a11f",
+    "text": "mechón de pelo de medusa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:57.744116Z"
+  },
+  "item.10310.desc": {
+    "src_hash": "54c0829bb824b2efd5badf352c95c231",
+    "text": "Algo precioso podría estar sellado en él.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:57.744493Z"
+  },
+  "item.10320.name": {
+    "src_hash": "a4e41a29f24a163a9c6d6ccbdc280f20",
+    "text": "libro de rituales nigrománticos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:57.744822Z"
+  },
+  "item.10341.desc": {
+    "src_hash": "e408525d9e7f310b0d2eac9e0d8251f0",
+    "text": "La Chispa del Fénix está contenida en él.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:57.745178Z"
+  },
+  "item.10342.desc": {
+    "src_hash": "ee84f406d5c15014e49371ad87c9d2de",
+    "text": "El Abrazo de Tibia está contenido en él.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:57.745770Z"
+  },
+  "item.10343.desc": {
+    "src_hash": "2b1e8854868003f233139b0d72613a37",
+    "text": "El Escudo Espiritual está contenido en él.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:57.746145Z"
+  },
+  "item.10344.desc": {
+    "src_hash": "a3edec8c157a4898748edb27135adb5a",
+    "text": "El Fuego de los Soles está contenido en él.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:09:57.746524Z"
   }
 }

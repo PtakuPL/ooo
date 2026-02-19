@@ -1,26 +1,16 @@
 {
-  "timestamp": "2026-02-19T20:06:45.175365Z",
+  "timestamp": "2026-02-19T20:09:59.857097Z",
   "checked_entries": 100,
-  "issues_found": 17,
+  "issues_found": 16,
   "issues_by_type": {
-    "identical_to_en_exempt": 4,
-    "identical_to_en": 1,
+    "identical_to_en_exempt": 2,
     "artifact_token": 16,
-    "suspicious_log_high": 168,
-    "suspicious_log_medium": 1,
-    "suspicious_log_low": 5,
-    "suspicious_log_critical": 26,
-    "suspicious_rejected_critical": 166,
-    "suspicious_rejected_high": 34
+    "suspicious_log_high": 197,
+    "suspicious_log_low": 3,
+    "suspicious_rejected_high": 23,
+    "suspicious_rejected_critical": 177
   },
   "issues": [
-    {
-      "key": "achievement.170.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Warlock",
-      "translated": "Warlock"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

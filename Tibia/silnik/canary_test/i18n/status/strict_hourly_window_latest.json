@@ -1,29 +1,41 @@
 {
-  "window_start_utc": "2026-02-19T19:06:50.931419Z",
-  "window_end_utc": "2026-02-19T20:06:50.931419Z",
+  "window_start_utc": "2026-02-19T19:10:04.687035Z",
+  "window_end_utc": "2026-02-19T20:10:04.687035Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
     "i18n/status/translation_guard_report.jsonl",
     "i18n/status/suspicious_log.jsonl"
   ],
-  "total_cycles": 84,
+  "total_cycles": 83,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 84
+    "AUTO_TRANSLATE": 83
   },
-  "auto_translate_cycles": 84,
+  "auto_translate_cycles": 83,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 58,
-  "guard_fail": 26,
-  "guard_fail_rate_pct": 31.0,
-  "no_progress_entries": 180,
-  "no_progress_rate_pct": 98.4,
-  "throughput_keys_per_h": 559.9,
-  "suspicious_total": 197,
+  "translated": 130,
+  "guard_fail": 1361,
+  "guard_fail_rate_pct": 91.3,
+  "no_progress_entries": 165,
+  "no_progress_rate_pct": 96.5,
+  "throughput_keys_per_h": 579.8,
+  "suspicious_total": 1725,
   "top_guard_fail_targets": [
+    {
+      "target": "pl/items.json",
+      "translated": 18,
+      "guard_fail": 822,
+      "guard_command": 0
+    },
+    {
+      "target": "es/items.json",
+      "translated": 49,
+      "guard_fail": 513,
+      "guard_command": 0
+    },
     {
       "target": "it/achievements.json",
       "translated": 3,
@@ -43,31 +55,19 @@
       "guard_command": 0
     },
     {
-      "target": "ru/npclib.json",
+      "target": "ru/globalevents.json",
       "translated": 0,
       "guard_fail": 0,
       "guard_command": 0
     },
     {
-      "target": "ro/startup.json",
+      "target": "it/dataroot.json",
       "translated": 0,
       "guard_fail": 0,
       "guard_command": 0
     },
     {
-      "target": "it/otclient_data.json",
-      "translated": 0,
-      "guard_fail": 0,
-      "guard_command": 0
-    },
-    {
-      "target": "ru/creaturescripts.json",
-      "translated": 0,
-      "guard_fail": 0,
-      "guard_command": 0
-    },
-    {
-      "target": "ro/example_merchant.json",
+      "target": "sv/otclient_modules.json",
       "translated": 0,
       "guard_fail": 0,
       "guard_command": 0

@@ -116414,5 +116414,109 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T21:37:00.922812Z"
+  },
+  "monster.wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:41.827350Z"
+  },
+  "monster.starving_wolf.voice_3": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:41.829681Z"
+  },
+  "monster.winter_wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:41.832660Z"
+  },
+  "monster.war_wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:41.840956Z"
+  },
+  "monster.sibang.voice_2": {
+    "src_hash": "839ecd442cee1635fe1c557c63ca54fa",
+    "text": "Huh! huh! huh!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:41.865490Z"
+  },
+  "monster.hideous_fungus.voice_1": {
+    "src_hash": "7ca2399084055ad89da1f6ae2834a0bf",
+    "text": "Przeżuwać przeżuwać przeżuwać!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:41.895492Z"
+  },
+  "monster.humongous_fungus.voice_1": {
+    "src_hash": "7ca2399084055ad89da1f6ae2834a0bf",
+    "text": "Przeżuwać przeżuwać przeżuwać!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:41.900435Z"
+  },
+  "monster.deepling_worker.voice_1": {
+    "src_hash": "1956f027b34d238a3e2d89543e742f74",
+    "text": "Qjell daleko gou jey!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:41.935741Z"
+  },
+  "monster.quara_mantassin.desc": {
+    "src_hash": "b8902f8d0f5a6a96a724acdbbbb9516a",
+    "text": "quara mantassin",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:41.940330Z"
+  },
+  "monster.quara_hydromancer.desc": {
+    "src_hash": "891c6fea5823d61559c964dde31456c5",
+    "text": "hydromancer quara",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:41.944931Z"
+  },
+  "monster.manta_ray.voice_1": {
+    "src_hash": "a63374bf6a29ae7214840e68732a2283",
+    "text": "Klapa klapa klapa!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:41.958196Z"
+  },
+  "monster.deepling_spellsinger.voice_1": {
+    "src_hash": "433bc4fdaf2596a85d2de587f527ce57",
+    "text": "Jey Obu Giotja!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:41.961191Z"
+  },
+  "monster.diabolic_imp.voice_2": {
+    "src_hash": "537ce78edca57070a9f90afb3bde18c9",
+    "text": "On on on.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:42.115269Z"
   }
 }

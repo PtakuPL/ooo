@@ -151910,5 +151910,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T21:36:36.853561Z"
+  },
+  "monster.vok_the_freakish.desc": {
+    "src_hash": "02ec83b1969636560afa169dad4a54e8",
+    "text": "Vok freakish",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:50.791229Z"
   }
 }

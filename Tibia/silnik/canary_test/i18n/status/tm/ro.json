@@ -64606,5 +64606,117 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T21:21:12.237204Z"
+  },
+  "talkaction.god.kv.msg_player_not_found": {
+    "src_hash": "0cc258c8d0e8df7a0b2cbded6b7b0f72",
+    "text": "Jucătorul {name} nu a fost găsit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:31:50.633302Z"
+  },
+  "talkaction.player.buy_house.msg_need_premium": {
+    "src_hash": "d10e0f3404950e7ed3fccf7a8dbd72a3",
+    "text": "Ai nevoie de un cont premium.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:31:50.638423Z"
+  },
+  "talkaction.player.hidden_shop.msg_item_not_found": {
+    "src_hash": "d8b10078093317959154f9ab6ed2eccc",
+    "text": "Nu există niciun articol cu ​​acel id sau nume.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:31:50.639558Z"
+  },
+  "talkaction.god.kv.msg_key_not_found": {
+    "src_hash": "e70b5d93f62fc90ef9d033aeba850a56",
+    "text": "Cheia {key} nu a fost găsită pentru {name}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:32:39.386310Z"
+  },
+  "talkaction.god.kv.msg_player_invalid": {
+    "src_hash": "e8aa9c8843fb1324ecfa486dad887645",
+    "text": "Jucătorul '{name}' nu a fost găsit sau nu este un jucător valid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:32:39.386738Z"
+  },
+  "talkaction.god.manage_vip.msg_not_enabled": {
+    "src_hash": "23cb9446fae3b7baad3feb75228d4eee",
+    "text": "Sistemul VIP nu este activat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:32:46.366726Z"
+  },
+  "talkaction.god.manage_vip.msg_numeric_required": {
+    "src_hash": "dfab4acd35d4557882ef356e14575b2b",
+    "text": "<valoare> trebuie să fie o valoare numerică.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:32:46.367084Z"
+  },
+  "talkaction.god.money.msg_failed": {
+    "src_hash": "1f2bb6c63393006d6a30fb9ff034a788",
+    "text": "Nu s-au adăugat bani la {name}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:32:46.367401Z"
+  },
+  "talkaction.god.money.msg_invalid_amount": {
+    "src_hash": "c8e98927245ea8a864fd479aabe18b3a",
+    "text": "Sumă nevalidă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:32:46.367621Z"
+  },
+  "talkaction.god.money.msg_target": {
+    "src_hash": "ca39b546e19d9afe2a4b98365342da74",
+    "text": "{admin} a adăugat {amount} monede de aur personajului tău.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:32:52.356214Z"
+  },
+  "talkaction.god.monster.msg_name_required": {
+    "src_hash": "c47434bd12cae8c932341e8106a024ea",
+    "text": "Este necesar un parametru de nume monstru.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:32:52.356535Z"
+  },
+  "talkaction.god.mount.msg_invalid_id": {
+    "src_hash": "e9e847d7ec98d20a698998d015c166cd",
+    "text": "ID de montare nevalid.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:32:52.356781Z"
+  },
+  "talkaction.god.raids.msg_could_not_start": {
+    "src_hash": "cc325a23a77fbd2be73ae3361bfe5905",
+    "text": "Raidul {name} nu a putut fi pornit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:32:56.332511Z"
+  },
+  "talkaction.god.raids.msg_list": {
+    "src_hash": "738e6abc069ced4bb8b76bf34e9da45a",
+    "text": "Raiduri înregistrate: {list}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:32:56.332879Z"
   }
 }

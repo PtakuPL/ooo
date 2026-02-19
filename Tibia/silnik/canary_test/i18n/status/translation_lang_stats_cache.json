@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-19T21:30:46.244641Z",
+  "timestamp": "2026-02-19T21:33:02.897788Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 52,
-  "cache_misses": 0,
-  "file_cache_hits": 1976,
-  "file_cache_misses": 0,
+  "cache_hits": 49,
+  "cache_misses": 3,
+  "file_cache_hits": 1973,
+  "file_cache_misses": 3,
   "langs": {
     "ar": {
       "sig": [
@@ -15927,8 +15927,8 @@
         [
           "client.json",
           1,
-          1771327459255925694,
-          15888
+          1771536692771528156,
+          15878
         ],
         [
           "cpp.json",
@@ -16134,17 +16134,17 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 27109,
+        "translated_keys": 27114,
         "english_copy_keys": 2115,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 50.59,
+        "completion_pct": 50.6,
         "server_keys": 49731,
         "server_translated": 25783,
         "server_pct": 51.84,
         "client_keys": 3855,
-        "client_translated": 1326,
-        "client_pct": 34.4
+        "client_translated": 1331,
+        "client_pct": 34.53
       },
       "files": {
         "achievements.json": {
@@ -16206,12 +16206,12 @@
         "client.json": {
           "sig": [
             1,
-            1771327459255925694,
-            15888
+            1771536692771528156,
+            15878
           ],
           "row": {
             "total_reference_keys": 242,
-            "translated_keys": 212,
+            "translated_keys": 217,
             "english_copy_keys": 26,
             "missing_keys": 0,
             "missing_files": 0
@@ -27075,8 +27075,8 @@
         [
           "talkactions.json",
           1,
-          1771327590936566993,
-          17974
+          1771536776330665288,
+          18012
         ],
         [
           "ui.json",
@@ -27096,14 +27096,14 @@
         "language_name": "Rumuński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 22288,
+        "translated_keys": 22302,
         "english_copy_keys": 2299,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 41.59,
+        "completion_pct": 41.62,
         "server_keys": 49731,
-        "server_translated": 21032,
-        "server_pct": 42.29,
+        "server_translated": 21046,
+        "server_pct": 42.32,
         "client_keys": 3855,
         "client_translated": 1256,
         "client_pct": 32.58
@@ -27602,12 +27602,12 @@
         "talkactions.json": {
           "sig": [
             1,
-            1771327590936566993,
-            17974
+            1771536776330665288,
+            18012
           ],
           "row": {
             "total_reference_keys": 199,
-            "translated_keys": 100,
+            "translated_keys": 114,
             "english_copy_keys": 5,
             "missing_keys": 0,
             "missing_files": 0
@@ -27648,7 +27648,7 @@
         [
           "achievements.json",
           1,
-          1771531392419247626,
+          1771536704627496141,
           192131
         ],
         [
@@ -27895,7 +27895,7 @@
         "achievements.json": {
           "sig": [
             1,
-            1771531392419247626,
+            1771536704627496141,
             192131
           ],
           "row": {

@@ -72582,5 +72582,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T21:19:47.196681Z"
+  },
+  "client.console.text3": {
+    "src_hash": "d69a5199c2561c8cc6effc17d85d8265",
+    "text": "Canale di chat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:31:24.654335Z"
+  },
+  "client.console.text4": {
+    "src_hash": "9b05a4052f2dde9a744953ef20b469db",
+    "text": "Canale successivo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:31:24.655350Z"
+  },
+  "client.console.text5": {
+    "src_hash": "d69a5199c2561c8cc6effc17d85d8265",
+    "text": "Canale di chat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:31:24.655920Z"
+  },
+  "client.game_store.text2": {
+    "src_hash": "98cb12b5c5e159c21e71266f823c0c9e",
+    "text": "Errore HTTP:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:31:32.771252Z"
+  },
+  "client.blessing.text2": {
+    "src_hash": "8125ed414e6337ef17bbb808e59df9c4",
+    "text": ".. ingresso.negozio ..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:31:32.771646Z"
   }
 }

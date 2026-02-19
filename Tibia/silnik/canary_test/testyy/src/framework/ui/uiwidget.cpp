@@ -1212,25 +1212,22 @@ void UIWidget::autoFitParent()
     if (!parent || parent->isDestroyed())
         return;
 
+    // Guard against recursive calls (parent->resize -> updateLayout -> child->setRect -> autoFitParent)
+    if (parent->hasProp(PropAutoFitParentUpdating))
+        return;
+
     // Check if this child is anchored to parent on BOTH sides in an axis.
     // If so, do NOT propagate in that axis — the child is "stretched" by anchors
     // and would cause an infinite resize loop.
     bool skipWidth = false;
     bool skipHeight = false;
 
-    if (const auto& anchorLayout = parent->getAnchoredLayout()) {
-        // Note: getAnchoredLayout() checks parent->parent's layout, not parent's.
-        // We need parent's layout to check OUR anchors.
-    }
-
-    // Use our own getAnchorsGroup() which looks at parent's layout
     if (isAnchored()) {
         const auto& anchors = getAnchorsGroup();
         bool anchoredLeft = false, anchoredRight = false;
         bool anchoredTop = false, anchoredBottom = false;
 
         for (const auto& anchor : anchors) {
-            // Check if this anchor hooks to the parent widget
             auto hookedWidget = anchor->getHookedWidget(static_self_cast<UIWidget>(), parent);
             if (hookedWidget == parent) {
                 Fw::AnchorEdge anchoredEdge = anchor->getAnchoredEdge();
@@ -1241,7 +1238,6 @@ void UIWidget::autoFitParent()
             }
         }
 
-        // If anchored on both sides to parent, skip that axis
         if (anchoredLeft && anchoredRight) skipWidth = true;
         if (anchoredTop && anchoredBottom) skipHeight = true;
     }
@@ -1252,41 +1248,58 @@ void UIWidget::autoFitParent()
     if (!fitWidth && !fitHeight)
         return;
 
+    // Measure overflow considering ALL visible children of parent (sibling awareness).
+    // This prevents the race condition where two siblings compute overflow independently
+    // and the last one overwrites the first one's resize.
     const auto& parentPaddingRect = parent->getPaddingRect();
-    const auto& childRect = getRect();
+    int maxChildRight = parentPaddingRect.right();
+    int maxChildBottom = parentPaddingRect.bottom();
+
+    for (const auto& sibling : parent->getChildren()) {
+        if (!sibling->isExplicitlyVisible())
+            continue;
+
+        const auto& siblingRect = sibling->getRect();
+
+        if (fitWidth) {
+            int sibRight = siblingRect.right() + sibling->getMarginRight();
+            if (sibRight > maxChildRight)
+                maxChildRight = sibRight;
+        }
+
+        if (fitHeight) {
+            int sibBottom = siblingRect.bottom() + sibling->getMarginBottom();
+            if (sibBottom > maxChildBottom)
+                maxChildBottom = sibBottom;
+        }
+    }
+
     bool needsResize = false;
     int newParentWidth = parent->getWidth();
     int newParentHeight = parent->getHeight();
 
-    if (fitWidth) {
-        int childRight = childRect.right() + getMarginRight();
-        int parentContentRight = parentPaddingRect.right();
-
-        if (childRight > parentContentRight) {
-            int overflow = childRight - parentContentRight;
-            newParentWidth += overflow;
-            needsResize = true;
-        }
+    if (fitWidth && maxChildRight > parentPaddingRect.right()) {
+        int overflow = maxChildRight - parentPaddingRect.right();
+        newParentWidth += overflow;
+        needsResize = true;
     }
 
-    if (fitHeight) {
-        int childBottom = childRect.bottom() + getMarginBottom();
-        int parentContentBottom = parentPaddingRect.bottom();
-
-        if (childBottom > parentContentBottom) {
-            int overflow = childBottom - parentContentBottom;
-            newParentHeight += overflow;
-            needsResize = true;
-        }
+    if (fitHeight && maxChildBottom > parentPaddingRect.bottom()) {
+        int overflow = maxChildBottom - parentPaddingRect.bottom();
+        newParentHeight += overflow;
+        needsResize = true;
     }
 
     if (needsResize) {
-        // Deferred resize to avoid recursion in setRect() -> updateLayout() -> setRect()
-        auto parentPtr = parent;
-        g_dispatcher.deferEvent([parentPtr, newParentWidth, newParentHeight] {
-            if (!parentPtr->isDestroyed())
-                parentPtr->resize(newParentWidth, newParentHeight);
-        });
+        // Use max to avoid shrinking if parent was already resized by another path
+        newParentWidth = std::max(newParentWidth, parent->getWidth());
+        newParentHeight = std::max(newParentHeight, parent->getHeight());
+
+        // Synchronous resize with recursion guard — eliminates multi-frame cascade delay.
+        // The guard flag prevents: parent->resize -> updateLayout -> child->setRect -> autoFitParent -> loop
+        parent->setProp(PropAutoFitParentUpdating, true);
+        parent->resize(newParentWidth, newParentHeight);
+        parent->setProp(PropAutoFitParentUpdating, false);
     }
 }
 
@@ -1629,7 +1642,7 @@ void UIWidget::setProp(const FlagProp prop, const bool v, const bool callEvent)
             callLuaField("onPropertyChange", prop, v, lastProp);
     }
 
-    if (v) m_flagsProp |= prop; else m_flagsProp &= ~prop;
+    if (v) m_flagsProp |= static_cast<uint64_t>(prop); else m_flagsProp &= ~static_cast<uint64_t>(prop);
 }
 
 bool UIWidget::setState(const Fw::WidgetState state, const bool on)

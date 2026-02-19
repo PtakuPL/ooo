@@ -1,116 +1,18 @@
 {
-  "timestamp": "2026-02-19T20:17:14.525276Z",
+  "timestamp": "2026-02-19T20:18:45.496495Z",
   "checked_entries": 100,
-  "issues_found": 39,
+  "issues_found": 25,
   "issues_by_type": {
-    "identical_to_en": 23,
+    "identical_to_en": 9,
     "identical_to_en_exempt": 6,
     "artifact_token": 16,
-    "suspicious_log_high": 169,
-    "suspicious_log_low": 5,
-    "suspicious_log_critical": 26,
-    "suspicious_rejected_high": 20,
-    "suspicious_rejected_critical": 180
+    "suspicious_log_high": 151,
+    "suspicious_log_critical": 40,
+    "suspicious_log_low": 9,
+    "suspicious_rejected_critical": 185,
+    "suspicious_rejected_high": 15
   },
   "issues": [
-    {
-      "key": "monster.ghazbaran.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Ghazbaran",
-      "translated": "Ghazbaran"
-    },
-    {
-      "key": "monster.hirintror.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.hirintror.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Hirintror",
-      "translated": "Hirintror"
-    },
-    {
-      "key": "monster.sir_valorcrest.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.draptor.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Draptor",
-      "translated": "Draptor"
-    },
-    {
-      "key": "monster.chayenne.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.chayenne.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Chayenne",
-      "translated": "Chayenne"
-    },
-    {
-      "key": "monster.orshabaal.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.orshabaal.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orshabaal",
-      "translated": "Orshabaal"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
     {
       "key": "monster.morgaroth.name",
       "lang": "it",

@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-19T20:16:37.107009Z",
-  "cycle": 7,
-  "language": "ro",
-  "json_file": "monsters.json",
-  "translated": 12,
+  "timestamp": "2026-02-19T20:18:44.305693Z",
+  "cycle": 8,
+  "language": "pl",
+  "json_file": "spells.json",
+  "translated": 4,
   "placeholders": 0,
-  "guard_fail": 38,
+  "guard_fail": 36,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 471
+  "strict_skipped_done": 1520
 }

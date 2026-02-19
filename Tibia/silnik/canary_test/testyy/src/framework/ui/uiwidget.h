@@ -45,37 +45,38 @@ struct EdgeGroup
     T left;
 };
 
-enum FlagProp : uint32_t
+enum FlagProp : uint64_t
 {
-    PropTextWrap = 1 << 0,
-    PropTextVerticalAutoResize = 1 << 1,
-    PropTextHorizontalAutoResize = 1 << 2,
-    PropTextOnlyUpperCase = 1 << 3,
-    PropEnabled = 1 << 4,
-    PropVisible = 1 << 5,
-    PropFocusable = 1 << 6,
-    PropFixedSize = 1 << 7,
-    PropPhantom = 1 << 8,
-    PropDraggable = 1 << 9,
-    PropDestroyed = 1 << 10,
-    PropClipping = 1 << 11,
-    PropCustomId = 1 << 12,
-    PropUpdateEventScheduled = 1 << 13,
-    PropUpdatingMove = 1 << 14,
-    PropLoadingStyle = 1 << 15,
-    PropUpdateStyleScheduled = 1 << 16,
-    PropFirstOnStyle = 1 << 17,
-    PropImageBordered = 1 << 18,
-    PropImageFixedRatio = 1 << 19,
-    PropImageRepeated = 1 << 20,
-    PropImageSmooth = 1 << 21,
-    PropImageAutoResize = 1 << 22,
-    PropImageIndividualAnimation = 1 << 23,
-    PropUpdateChildrenIndexStates = 1 << 24,
-    PropDisableUpdateTemporarily = 1 << 25,
-    PropOnHTML = 1 << 26,
-    PropAutoFitParentWidth = 1 << 27,
-    PropAutoFitParentHeight = 1 << 28
+    PropTextWrap = 1ULL << 0,
+    PropTextVerticalAutoResize = 1ULL << 1,
+    PropTextHorizontalAutoResize = 1ULL << 2,
+    PropTextOnlyUpperCase = 1ULL << 3,
+    PropEnabled = 1ULL << 4,
+    PropVisible = 1ULL << 5,
+    PropFocusable = 1ULL << 6,
+    PropFixedSize = 1ULL << 7,
+    PropPhantom = 1ULL << 8,
+    PropDraggable = 1ULL << 9,
+    PropDestroyed = 1ULL << 10,
+    PropClipping = 1ULL << 11,
+    PropCustomId = 1ULL << 12,
+    PropUpdateEventScheduled = 1ULL << 13,
+    PropUpdatingMove = 1ULL << 14,
+    PropLoadingStyle = 1ULL << 15,
+    PropUpdateStyleScheduled = 1ULL << 16,
+    PropFirstOnStyle = 1ULL << 17,
+    PropImageBordered = 1ULL << 18,
+    PropImageFixedRatio = 1ULL << 19,
+    PropImageRepeated = 1ULL << 20,
+    PropImageSmooth = 1ULL << 21,
+    PropImageAutoResize = 1ULL << 22,
+    PropImageIndividualAnimation = 1ULL << 23,
+    PropUpdateChildrenIndexStates = 1ULL << 24,
+    PropDisableUpdateTemporarily = 1ULL << 25,
+    PropOnHTML = 1ULL << 26,
+    PropAutoFitParentWidth = 1ULL << 27,
+    PropAutoFitParentHeight = 1ULL << 28,
+    PropAutoFitParentUpdating = 1ULL << 29  // guard against recursive autoFitParent calls
 };
 
 // @bindclass
@@ -228,7 +229,7 @@ public:
     bool hasShader() { return m_shader != nullptr; }
 
     void setProp(FlagProp prop, bool v, bool callEvent = false);
-    bool hasProp(const FlagProp prop) { return (m_flagsProp & prop); }
+    bool hasProp(const FlagProp prop) { return (m_flagsProp & static_cast<uint64_t>(prop)) != 0; }
 
     void disableUpdateTemporarily();
     void addOnDestroyCallback(const std::string& id, const std::function<void()>&& callback);
@@ -241,7 +242,7 @@ public:
     void setBorderDrawOrder(const uint8_t order) { m_borderDrawOrder = static_cast<DrawOrder>(std::min<uint8_t>(order, LAST - 1)); }
 
 private:
-    uint32_t m_flagsProp{ 0 };
+    uint64_t m_flagsProp{ 0 };
     PainterShaderProgramPtr m_shader;
 
     void autoFitParent();

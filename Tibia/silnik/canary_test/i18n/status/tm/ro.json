@@ -65798,5 +65798,261 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T22:20:02.465668Z"
+  },
+  "scripts.bank.msg_2": {
+    "src_hash": "c8e98927245ea8a864fd479aabe18b3a",
+    "text": "Sumă nevalidă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:03.513979Z"
+  },
+  "scripts.bank.msg_5": {
+    "src_hash": "c8e98927245ea8a864fd479aabe18b3a",
+    "text": "Sumă nevalidă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:03.515066Z"
+  },
+  "scripts.bank.msg_8": {
+    "src_hash": "c8e98927245ea8a864fd479aabe18b3a",
+    "text": "Sumă nevalidă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:03.515902Z"
+  },
+  "scripts.actions_yakchal.say_3": {
+    "src_hash": "05f569068b7c49699bd4fcc86f27f3da",
+    "text": "Ai trezit-o pe vrăjitoarea de gheață Yakchal din somnul ei! Nu pare amuzata...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:19.254937Z"
+  },
+  "scripts.actions_yalahar_machine_war_golems.msg_1": {
+    "src_hash": "a25f971cea94edfe9bc6fdba575342b6",
+    "text": "Nu aveți suficiente roți dințate pentru a activa mașina.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:19.255355Z"
+  },
+  "scripts.actions_yalahar_machine_war_golems.msg_2": {
+    "src_hash": "5161e3c160b510f6be4cbee835b70524",
+    "text": "Insezi toate cele 4 roți dințate, ele ajustând teleportatorul pentru a te transporta la podeaua mai adâncă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:19.255983Z"
+  },
+  "scripts.actions_yselda_shortcut.msg_1": {
+    "src_hash": "b098102bc8283f62fb35ba0a9d9b31c1",
+    "text": "Această rădăcină pare să se îngroașe și să se încoroneze în momentul în care încerci să o apuci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:19.256462Z"
+  },
+  "scripts.add_addon.msg_1": {
+    "src_hash": "2fde20b0bd6f461fcd73afd762358332",
+    "text": "{} ți-a adăugat suplimentul {} pentru tipul de aspect {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:19.256880Z"
+  },
+  "scripts.add_addon.msg_2": {
+    "src_hash": "eb7fa1ec0c564386588f4f41b228b5c7",
+    "text": "Suplimentul {} pentru tipul de aspect {} setat pentru playerul {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:25.828216Z"
+  },
+  "scripts.add_addon.msg_3": {
+    "src_hash": "f9299abc8b7cafdc63693138fc4eb1a2",
+    "text": "Ați adăugat cu succes suplimentul {} la toate tipurile de look ale jucătorului {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:25.828834Z"
+  },
+  "scripts.add_addon.msg_4": {
+    "src_hash": "723d449c477613b81630465bdf8bcf0b",
+    "text": "{} a adăugat suplimentul {} la toate tipurile dvs. de aspect.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:25.829620Z"
+  },
+  "scripts.add_bosstiary_kills.msg_1": {
+    "src_hash": "9ab812f39402e47b0afa5e522a9acd9e",
+    "text": "Ai primit ucideri: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:25.830182Z"
+  },
+  "scripts.add_money.msg_1": {
+    "src_hash": "535aedda7acc93d249730d24896cda7b",
+    "text": "S-au adăugat {} monede de aur la {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:25.830582Z"
+  },
+  "scripts.add_mount.msg_1": {
+    "src_hash": "6e81a9a1ff0e699766f397f3eb43ca56",
+    "text": "Ați adăugat cu succes montura {} playerului {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:32.369079Z"
+  },
+  "scripts.add_mount.msg_2": {
+    "src_hash": "70e2fb46c65a2ebd70a5c7693e90eb58",
+    "text": "{} a adăugat o montură nouă pentru tine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:32.369626Z"
+  },
+  "scripts.add_mount.msg_3": {
+    "src_hash": "2493ad822fa033e21b0e5c33f6dfded0",
+    "text": "Ați adăugat cu succes toate monturile la jucătorul {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:32.370112Z"
+  },
+  "scripts.add_mount.msg_4": {
+    "src_hash": "d6d266e0a11ca61528ae84be11c29e76",
+    "text": "{} v-a adăugat toate monturile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:32.370513Z"
+  },
+  "scripts.add_skill.msg_1": {
+    "src_hash": "3ce2966dae545431ec46c202a56f5d3a",
+    "text": "Ați adăugat cu succes {} {} {} la player {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:32.370992Z"
+  },
+  "scripts.add_skill.msg_2": {
+    "src_hash": "529c3b6c2ed40df9ddb77bed014e451c",
+    "text": "{} v-a adăugat {} {} {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:38.144551Z"
+  },
+  "scripts.add_skill.msg_3": {
+    "src_hash": "c82a9aef78964af6d48e2761e1964ee7",
+    "text": "Ați adăugat cu succes {} {} la player {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:38.145134Z"
+  },
+  "scripts.add_skill.msg_4": {
+    "src_hash": "8d816f304880ba3d0bc40448234a1b3e",
+    "text": "{} v-a adăugat {} {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:38.145493Z"
+  },
+  "scripts.add_skill.msg_5": {
+    "src_hash": "c82a9aef78964af6d48e2761e1964ee7",
+    "text": "Ați adăugat cu succes {} {} la player {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:38.145987Z"
+  },
+  "scripts.add_skill.msg_6": {
+    "src_hash": "8d816f304880ba3d0bc40448234a1b3e",
+    "text": "{} v-a adăugat {} {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:38.146351Z"
+  },
+  "scripts.adventurers_stone.teleport_center": {
+    "src_hash": "a0f870d3cf5e211dacf22ee0824fa37b",
+    "text": "Încercați să vă mutați mai mult în centrul unui %s pentru a utiliza energia spirituală pentru o teleportare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:44.795542Z"
+  },
+  "scripts.afk.msg_1": {
+    "src_hash": "b70a848bfe9ddd5a3f28d57f2b24cbb5",
+    "text": "Acum ești AFK!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:44.795910Z"
+  },
+  "scripts.afk.msg_2": {
+    "src_hash": "d437074784dd88edc289d4e83d5c9ff5",
+    "text": "Nu mai ești AFK!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:44.796193Z"
+  },
+  "scripts.afk.msg_3": {
+    "src_hash": "d437074784dd88edc289d4e83d5c9ff5",
+    "text": "Nu mai ești AFK!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:44.796459Z"
+  },
+  "scripts.afk.say_1": {
+    "src_hash": "176793ac6d75de96d62c5b2e4a173dc9",
+    "text": "AFK!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:44.796695Z"
+  },
+  "scripts.anniversary_balloons.msg_1": {
+    "src_hash": "65806796b53f86abda7c761f12589945",
+    "text": "Puteți utiliza acest lucru numai în interiorul unei case.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:50.181329Z"
+  },
+  "scripts.aol.msg_1": {
+    "src_hash": "b90584a10f733686a691ad1d6fa42115",
+    "text": "Ai cumpărat o amuletă a pierderii pentru {} aur!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:50.181728Z"
+  },
+  "scripts.ashfalor_summon.say_1": {
+    "src_hash": "8da719135345d936bc1cea3810f2349d",
+    "text": "Ridicați-mi slujitorii! CREŞTERE!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:50.182046Z"
+  },
+  "scripts.auto_loot.msg_1": {
+    "src_hash": "7a01ca72e0f89443db54f2145c540f98",
+    "text": "Valoare de autoloot nevalidă. Valori valide: [{}].",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:43:50.182415Z"
   }
 }

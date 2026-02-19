@@ -1,55 +1,59 @@
 {
-  "timestamp": "2026-02-19T22:42:40.128151Z",
-  "window_start_utc": "2026-02-19T21:42:37.591523Z",
-  "window_end_utc": "2026-02-19T22:42:37.591523Z",
+  "timestamp": "2026-02-19T22:45:29.198479Z",
+  "window_start_utc": "2026-02-19T21:45:26.127982Z",
+  "window_end_utc": "2026-02-19T22:45:26.127982Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 189,
-  "suspicious_entries": 4261,
-  "guard_fail_entries": 30,
-  "guard_fail_sum": 416,
+  "rejected_entries": 231,
+  "suspicious_entries": 4643,
+  "guard_fail_entries": 33,
+  "guard_fail_sum": 1268,
   "by_type": {
-    "identical_to_en": 148,
-    "mixed_language": 14,
+    "identical_to_en": 172,
+    "mixed_language": 30,
     "contains_tibia_proper_noun": 8,
     "mixed_scripts": 15,
     "cyrillic_latin_mix": 15,
-    "word_salad": 12
+    "word_salad": 14
   },
   "by_source": {
-    "google_translate": 189
+    "google_translate": 231
   },
   "by_language": {
     "it": 48,
-    "ro": 52,
+    "ro": 59,
     "ru": 15,
-    "es": 51,
-    "pl": 15,
+    "es": 53,
+    "pl": 48,
     "sv": 8
   },
   "by_category": {
     "monsters.json": 18,
-    "items.json": 18,
-    "npc.json": 8,
+    "items.json": 51,
+    "npc.json": 10,
     "spells.json": 100,
     "quests.json": 3,
-    "scripts.json": 12,
+    "scripts.json": 19,
     "server.json": 8,
     "achievements.json": 1,
     "otclient_modules.json": 21
   },
   "by_severity": {
-    "CRITICAL": 160,
-    "HIGH": 29
+    "CRITICAL": 186,
+    "HIGH": 45
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 148
+      "count": 172
+    },
+    {
+      "type": "mixed_language",
+      "count": 30
     },
     {
       "type": "mixed_scripts",
@@ -60,12 +64,8 @@
       "count": 15
     },
     {
-      "type": "mixed_language",
-      "count": 14
-    },
-    {
       "type": "word_salad",
-      "count": 12
+      "count": 14
     },
     {
       "type": "contains_tibia_proper_noun",
@@ -74,6 +74,20 @@
   ],
   "top_keys": [
     {
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "count": 5,
+      "types": {
+        "identical_to_en": 5
+      }
+    },
+    {
+      "key": "npc.al_dee.stdmod_41",
+      "count": 5,
+      "types": {
+        "word_salad": 5
+      }
+    },
+    {
       "key": "spell.quara_constrictor_electrify.name",
       "count": 5,
       "types": {
@@ -81,20 +95,6 @@
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1,
         "identical_to_en": 1
-      }
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 4,
-      "types": {
-        "identical_to_en": 4
-      }
-    },
-    {
-      "key": "npc.al_dee.stdmod_41",
-      "count": 4,
-      "types": {
-        "word_salad": 4
       }
     },
     {

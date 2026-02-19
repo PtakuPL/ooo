@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-02-19T22:42:25.201794Z",
-  "cycle_counter": 5685,
-  "last_target_key": "ru:scripts.json",
-  "last_pending_total": 1550,
-  "last_tier": 2,
-  "last_cat_priority": 6,
+  "timestamp": "2026-02-19T22:43:59.318492Z",
+  "cycle_counter": 5688,
+  "last_target_key": "pl:items.json",
+  "last_pending_total": 1070,
+  "last_tier": 1,
+  "last_cat_priority": 0,
   "candidates_count": 183,
-  "active_candidates_count": 183,
-  "skipped_backoff": 0,
+  "active_candidates_count": 182,
+  "skipped_backoff": 1,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
   "tier_config": {
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 7,
+  "cache_cycle": 8,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -81,7 +81,7 @@
     "it:scripts.json": 0,
     "ru:scripts.json": 0,
     "ro:scripts.json": 0,
-    "it:actions.json": 2,
+    "it:actions.json": 3,
     "ru:raids.json": 0,
     "ro:raids.json": 0,
     "it:raids.json": 0,
@@ -197,9 +197,9 @@
     "lang_completion": {
       "pl": 87.72,
       "es": 84.47,
-      "ru": 50.32,
+      "ru": 50.34,
       "ro": 41.87,
-      "it": 50.94,
+      "it": 51.0,
       "sr": 45.38,
       "sv": 27.98
     }

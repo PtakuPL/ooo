@@ -76,6 +76,43 @@ Uwagi wykonawcze:
 - Priorytet „jednym zdaniem” (zgodnie z sugestią): najpierw wdrożyć i egzekwować jednolitą macierz priorytetów źródeł + logowanie decyzji konfliktowych.
 - To zadanie bezpośrednio chroni ręcznie kuratorowane tłumaczenia przed degradacją przez późniejsze warstwy pipeline.
 
+## 🛠️ Aktualizacja wykonania (2026-02-19 22:35 UTC — weryfikacja fizycznych JSON + QUALITY status + guard-fail root-cause)
+
+Wybrane do realizacji pełne zadania:
+- **Zweryfikować błędne tłumaczenia bezpośrednio w fizycznych plikach `.json`**
+- **Wyjaśnić i naprawić status `QUALITY` jako „nieaktywny” podczas aktywnej fazy tłumaczeń**
+- **Rozbić wysokie `guard fail` na przyczyny i zapisać plan naprawczy jako taski**
+
+Wykonane:
+- ✅ Potwierdzono problem w fizycznym pliku `canary_test/i18n/pl/spells.json` (nie tylko dashboard):
+  - `spell.azerus_soulfire_1.name` było: `Azerus Soulfire 1`
+  - `spell.quara_constrictor_electrify.name` było: `quara constrictor elektryzuje`
+  - `spell.lava_golem_soulfire2.name` było: `lawowy golem soulfire2`
+- ✅ Wprowadzono poprawki bezpośrednio do `canary_test/i18n/pl/spells.json`:
+  - `Ogień duszy Azerusa 1`
+  - `Elektryzacja Quara Constrictora`
+  - `Ogień duszy lawowego golema 2`
+- ✅ Dodano zabezpieczenie regresji w `canary_test/i18n/overrides/pl.json` dla ww. kluczy (priorytet runtime nad TM/GT).
+- ✅ Naprawiono semantykę statusu `QUALITY` w `i18n_worker_simple.sh`:
+  - sekcja QUALITY nie jest już oznaczana jako nieaktywna wyłącznie dlatego, że worker jest w `AUTO_TRANSLATE`.
+  - `QUALITY` traktuje teraz jako fazy aktywne: `VALIDATION`, `AUTO_TRANSLATE`, `TRANSLATION_SYNC`.
+
+Root-cause wysokiego `guard fail` (snapshot ~70%+):
+- Duża część kandydatów pochodzi z jakościowo trudnych kluczy (NPC/spelle/techniczne tokeny), gdzie silniki fallback (SIMPLE/GT) generują hybrydy EN/PL lub formy nienaturalne.
+- Guard jest obecnie celowo restrykcyjny (odrzuca podejrzane wzorce), więc wysoki odsetek odrzuceń oznacza, że filtr działa agresywnie — ale też że jakość wejścia do guardów wymaga poprawy.
+- Dotychczasowy dashboard mógł wzmacniać mylne wrażenie przez sekcję `QUALITY` jako „nieaktywną” podczas aktywnego tłumaczenia.
+
+Nowe taski naprawcze (wymagane):
+- [ ] `WQ-HARD-7 (P0)`: Dodać metrykę `guard_fail_breakdown` per reason code (np. placeholder mismatch / EN-leak / malformed token / glossary violation) publikowaną do `i18n/status/` i `I18N_STATUS.md`.
+- [ ] `WQ-HARD-8 (P0)`: Dodać strictejszy pre-filter dla nazw zaklęć/bytów (`spell.*.name`) zanim trafią do GT fallback (ochrona przed formami typu `... soulfire2`).
+- [ ] `WQ-HARD-9 (P0)`: Rozszerzyć `overrides/pl.json` o paczkę „critical bad keys” (min. 100 kluczy) + owner review.
+- [ ] `WQ-HARD-10 (P1)`: Dodać test regresji „recent translations quality sample” — losowa próbka N=50 z ostatniej godziny i automatyczny fail przy przekroczeniu progu błędów semantycznych.
+- [ ] `WQ-HARD-11 (P1)`: Wydzielić reguły językowe per domena (`spells`, `npc`, `quests`) i podpiąć jako dodatkowy scoring przed akceptacją tłumaczenia.
+
+Uwagi:
+- Wysoki `guard fail` sam w sobie nie oznacza awarii guardów; oznacza słaby strumień kandydatów. Plan musi równolegle poprawić **jakość generacji** i utrzymać **restrykcyjność walidacji**.
+- Dla transparentności operacyjnej trzeba raportować nie tylko `% fail`, ale też **dlaczego** kandydaci odpadają (reason-coded telemetry).
+
 ## 🛠️ Aktualizacja wykonania (2026-02-17 14:00 UTC — fix progress 0/0 LIVE + E4 Δ24h trendy + analiza GitHub Actions spam)
 
 Wybrane do realizacji pełne zadania:

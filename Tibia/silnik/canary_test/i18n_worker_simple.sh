@@ -2977,7 +2977,7 @@ sec_migration_state, sec_migration_reason = _section_state(
 sec_translation_state, sec_translation_reason = _section_state(
     ["AUTO_TRANSLATE", "TRANSLATION_SYNC"], _current_phase
 )
-sec_quality_state, sec_quality_reason = _section_state(["VALIDATION"], _current_phase)
+sec_quality_state, sec_quality_reason = _section_state(["VALIDATION", "AUTO_TRANSLATE", "TRANSLATION_SYNC"], _current_phase)
 sec_history_state, sec_history_reason = "🟢 AKTYWNY", ""
 
 # Section sources + last_update

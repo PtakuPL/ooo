@@ -1,7 +1,7 @@
 {
   "total_languages": 53,
   "total_en_keys": 53586,
-  "validated_at": "2026-02-19T20:28:45.415788Z",
+  "validated_at": "2026-02-19T20:38:49.306961Z",
   "by_score": {
     "ru": {
       "score": 62.7,
@@ -517,7 +517,7 @@
       "high": 9,
       "crossref_issues": 429,
       "crossref_autofix_applied": 0,
-      "translated": 27501,
+      "translated": 27504,
       "script_group": "latin"
     },
     "ja": {
@@ -544,13 +544,13 @@
     },
     "ro": {
       "score": 100.0,
-      "coverage_pct": 42.3,
+      "coverage_pct": 42.4,
       "issues": 3,
       "critical": 0,
       "high": 2,
       "crossref_issues": 419,
-      "crossref_autofix_applied": 4,
-      "translated": 22667,
+      "crossref_autofix_applied": 0,
+      "translated": 22712,
       "script_group": "latin"
     },
     "sv": {
@@ -654,5 +654,5 @@
     ]
   },
   "crossref_total_issues": 20428,
-  "crossref_autofix_total_applied": 4
+  "crossref_autofix_total_applied": 0
 }

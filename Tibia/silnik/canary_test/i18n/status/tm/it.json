@@ -30917,7 +30917,7 @@
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T10:33:10.520101Z"
+    "updated_at": "2026-02-19T20:29:48.722985Z"
   },
   "spell.koshei_the_deathless_curse.name": {
     "src_hash": "03a1c28d392da32d21f8695c80cfba99",
@@ -71478,5 +71478,29 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T20:24:31.168872Z"
+  },
+  "spell.ice_wave.words": {
+    "src_hash": "01866fc85cfc2a3fa0a21c030a8b2ae2",
+    "text": "exevo frigo hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:30:21.052362Z"
+  },
+  "spell.fire_wave.words": {
+    "src_hash": "d58420dad4d6031d7d8f1caf292be669",
+    "text": "exevo flam hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:30:21.052719Z"
+  },
+  "spell.energy_wave.words": {
+    "src_hash": "14bc3f6553c127a76ab72757a60108f0",
+    "text": "exevo vis hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:30:21.053168Z"
   }
 }

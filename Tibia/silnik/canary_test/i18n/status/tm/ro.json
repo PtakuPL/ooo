@@ -63430,5 +63430,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T20:16:36.487210Z"
+  },
+  "data.otservbr.global.npc.galuna.L59.1204": {
+    "src_hash": "17e44e52564b6c011e931eddf5c008cd",
+    "text": "Oh, te rog intră, |PLAYERNAME|. De ce ai nevoie? Arme la distanță? Le vând multe.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.090979Z"
+  },
+  "data.otservbr.global.npc.gamel.L103.431": {
+    "src_hash": "2c06b22f948013cb7c9cc96ca316478c",
+    "text": "La revedere. Spune altora despre... micul meu magazin de aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.095013Z"
+  },
+  "data.otservbr.global.npc.gamel.L104.432": {
+    "src_hash": "2c06b22f948013cb7c9cc96ca316478c",
+    "text": "La revedere. Spune altora despre... micul meu magazin de aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.096636Z"
+  },
+  "data.otservbr.global.npc.gamel.L71.430": {
+    "src_hash": "85a7df9a3b20746ffa8c96a1c8edebd4",
+    "text": "Pssst! Taci. Vrei să {buy} ceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.097681Z"
+  },
+  "data.otservbr.global.npc.gamon.L75.376": {
+    "src_hash": "3380dac1fb5dd4320d19d854113a9f5a",
+    "text": "Mă bucur să vă cunosc, domnule |PLAYERNAME|! Cauti mobila? Ai venit la locul potrivit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.098837Z"
+  },
+  "data.otservbr.global.npc.gamon.L76.377": {
+    "src_hash": "4e73f4b084d53ec679e0a62d8efaaa16",
+    "text": "Te vei întoarce. Toate o fac.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.099659Z"
+  },
+  "data.otservbr.global.npc.gamon.L78.379": {
+    "src_hash": "43a2e4f95e5ae7de6833153915380c4e",
+    "text": "Aruncă o privire. Majoritatea mobilierului vine în truse la îndemână. Folosește-le în casa ta pentru a asambla mobila. Vrei să vezi doar un anumit tip de mobilier?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.101828Z"
+  },
+  "data.otservbr.global.npc.gareth.L59.1399": {
+    "src_hash": "d4a74b09413ac14b6808e25e31c96fa4",
+    "text": "Bine ați venit la minunatul și recent deschis Muzeu de Arte Tibiene! Intrarea liberă pentru toată lumea, dar patronii artelor sunt căutați și favorizați.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.103981Z"
+  },
+  "data.otservbr.global.npc.gareth.L61.1400": {
+    "src_hash": "2f266aed5a3292e96ab3f29915dfa20d",
+    "text": "Druid al lui Crunor te-a trimis? Se pare că știe că acest nou muzeu strălucește ca un diamant. Bucură-te de șederea ta! Dacă îți place să {support} ​​acest loc, vorbește cu mine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.105582Z"
+  },
+  "data.otservbr.global.npc.gareth.L65.1402": {
+    "src_hash": "41d1ae4731e2260597d822dd0f0d05f5",
+    "text": "Tu din nou? Cum ai putut să fugi de la ultimul etaj. Cultiștii ar trebui să aibă 'dealt' cu tine! Asta mă depășește. Trebuie să părăsești acest loc chiar acum. Nu mai e nimic de spus.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.107890Z"
+  },
+  "data.otservbr.global.npc.gate.guardian.L75.1275": {
+    "src_hash": "716f2c74dc95c2c80ed625ec37878d7e",
+    "text": "Chhhhzzz. Urâtă umanzzz! Ar fi bine să ai o bună încredere să fii aici!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.108998Z"
+  },
+  "data.otservbr.global.npc.gelagos.L62.303": {
+    "src_hash": "be2f7f5e179e50adc279f491ac58a681",
+    "text": "Sper să mori și să-l pierzi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.110042Z"
+  },
+  "data.otservbr.global.npc.gelidrazahs.thirst.L83.286": {
+    "src_hash": "4ff16a7f17b7c7f22cf480bcd0060d48",
+    "text": "Ai venit să răspunzi la întrebările lui Gelidrazah?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.112203Z"
+  },
+  "data.otservbr.global.npc.gerimor.L452.371": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.114300Z"
+  },
+  "data.otservbr.global.npc.gerimor.L58.366": {
+    "src_hash": "3c780c4126efe612c9dab5df4895ab7e",
+    "text": "Salutare, |PLAYERNAME|! Vă urez bun venit în acest sacru {place}. Dacă sunteți interesat de {missions}, întrebați.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.115415Z"
+  },
+  "data.otservbr.global.npc.gewen.L120.1496": {
+    "src_hash": "14b3e81ec8e2ff2c2783c71d1f831c03",
+    "text": "Salutări, călător |PLAYERNAME|. Unde vrei să te {fly}? Sau aveți nevoie de un bilet săptămânal pentru transportul public cu camion Kazordoon?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.117201Z"
+  },
+  "data.otservbr.global.npc.ghorza.L137.1510": {
+    "src_hash": "0aa148b4c69185fdc45f079e06ff358c",
+    "text": "Bună, om slăbit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.118849Z"
+  },
+  "data.otservbr.global.npc.ghorza.L138.1511": {
+    "src_hash": "f21779bf8c308ffdca4bad84d7587194",
+    "text": "Ai grijă de spiritele rele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.119609Z"
+  },
+  "data.otservbr.global.npc.ghorza.L139.1512": {
+    "src_hash": "f21779bf8c308ffdca4bad84d7587194",
+    "text": "Ai grijă de spiritele rele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.120389Z"
+  },
+  "data.otservbr.global.npc.ghost.of.a.priest.L196.1000": {
+    "src_hash": "2a976d6738b63899089f925186228939",
+    "text": "Salutări {mortal}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.122392Z"
+  },
+  "data.otservbr.global.npc.ghostly.wolf.L101.460": {
+    "src_hash": "ae4f7a73512ed0ce588afc8b02b07cbd",
+    "text": "Vorbești limba animalelor? sunt surprins. Dar nu sunt în starea potrivită pentru o conversație.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.123510Z"
+  },
+  "data.otservbr.global.npc.gnomad.L86.976": {
+    "src_hash": "030191415e3db032c8d20aab65d070bc",
+    "text": "Bună! Sunt gata să vă informez cu un sfat {tactical}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.124519Z"
+  },
+  "data.otservbr.global.npc.gnomad.L87.977": {
+    "src_hash": "62b703e7a17bc181a01c27654db49179",
+    "text": "La revedere si ai grija!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.125373Z"
+  },
+  "data.otservbr.global.npc.gnomadness.L105.257": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Salutare și bun venit în grădinile Gnomprona",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.126395Z"
+  },
+  "data.otservbr.global.npc.gnomally.L201.1371": {
+    "src_hash": "9ff401ef405038ea1958e078e11cee8a",
+    "text": "Oh, salut! Sunt asistentul de relații gnom-umane. Sunt aici pentru a vă schimba jetoanele pentru {equipment}, pentru a vă reaproviziona cu misiunea {items} și pentru a vă vorbi despre {relations} pentru noi gnomii! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.127708Z"
+  },
+  "data.otservbr.global.npc.gnomaticus.L86.449": {
+    "src_hash": "f313a27e873e04c1c2537e0c6df2ee03",
+    "text": "Bună! Ești aici pentru testul {shooting} sau pentru {report} succesul tău?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.128511Z"
+  },
+  "data.otservbr.global.npc.gnome.trooper.L79.595": {
+    "src_hash": "315cec7b15984b34b0413b34e095bd15",
+    "text": "Ai ceva de livrat?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.128921Z"
+  },
+  "data.otservbr.global.npc.gnomegica.L151.921": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "La revedere și vino din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.129389Z"
+  },
+  "data.otservbr.global.npc.gnomegica.L152.922": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "La revedere și vino din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.129976Z"
+  },
+  "data.otservbr.global.npc.gnomelvis.L99.1340": {
+    "src_hash": "83d31689ea16e8c391e21d5bf865f983",
+    "text": "Buna ziua. Pentru mine ești {looking}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.131383Z"
+  },
+  "data.otservbr.global.npc.gnomeral.L251.1059": {
+    "src_hash": "41cc0b97a4666275845c1a1d3430ba16",
+    "text": "Bună, recrutează!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.132083Z"
+  },
+  "data.otservbr.global.npc.gnomercy.L77.968": {
+    "src_hash": "030191415e3db032c8d20aab65d070bc",
+    "text": "Bună! Sunt gata să vă informez cu un sfat {tactical}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.133049Z"
+  },
+  "data.otservbr.global.npc.gnomercy.L78.969": {
+    "src_hash": "62b703e7a17bc181a01c27654db49179",
+    "text": "La revedere si ai grija!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.134005Z"
+  },
+  "data.otservbr.global.npc.gnomerik.L309.871": {
+    "src_hash": "d37821eaad4cf997b81c210ffc65d5c7",
+    "text": "Salutare și bine ați venit în biroul gnomului {recruitment}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.134929Z"
+  },
+  "data.otservbr.global.npc.gnomespector.L81.678": {
+    "src_hash": "1198b5aaa05117427ad78a461413d466",
+    "text": "Bună neînfricat {recruit}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.135691Z"
+  },
+  "data.otservbr.global.npc.gnomewart.L83.317": {
+    "src_hash": "520ec9389f4c5870f288a59e6684e798",
+    "text": "Oh! Bună! Presupun că ești aici pentru testul {endurance}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.136672Z"
+  },
+  "data.otservbr.global.npc.gnominer.L57.1605": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Salutare și bun venit în grădinile Gnomprona",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.140034Z"
+  },
+  "data.otservbr.global.npc.gnominus.L99.233": {
+    "src_hash": "1696d17e5337bf2b4779c8c335dc7123",
+    "text": "Bună! Bun venit la micuța mea {tavern}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.140937Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.cathing.L56.931": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Salutare și bun venit în grădinile Gnomprona",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.142358Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.gt.m.01.L56.348": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Salutare și bun venit în grădinile Gnomprona",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.144282Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.raiders.L56.246": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Salutare și bun venit în grădinile Gnomprona",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.146313Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.resonating.L56.174": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Salutare și bun venit în grădinile Gnomprona",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.147596Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.volcano.L56.1367": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Salutare și bun venit în grădinile Gnomprona",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.148692Z"
+  },
+  "data.otservbr.global.npc.gnomission.L161.4": {
+    "src_hash": "406af1b405914ad476cd4b1fc2491153",
+    "text": "Salut |PLAYERNAME|. Probabil că ești nerăbdător să intri în {warzones}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.149998Z"
+  },
+  "data.otservbr.global.npc.gnommander.L174.870": {
+    "src_hash": "0d5102525432f77b580ffc1d90cf9e67",
+    "text": "Bună! Bine ați venit la vârf.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:29:25.151119Z"
   }
 }

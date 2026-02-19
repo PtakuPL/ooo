@@ -7,7 +7,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: parent.top
 
-    height: 60
+    min-height: 60
   
     OptionCheckBox
       id: enableLights
@@ -48,7 +48,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 32
+    min-height: 32
   
     Label
       !text: tr("otclient_modules.effects_otui.tr_6")
@@ -70,7 +70,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
 
     OptionCheckBoxMarked
       id: drawEffectOnTop
@@ -82,7 +82,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
   
     OptionCheckBoxMarked
       id: limitVisibleDimension
@@ -94,7 +94,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
   
     OptionCheckBox
       id: floatingEffect
@@ -105,7 +105,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
 
     OptionScaleScroll
       id: setEffectAlphaScroll
@@ -119,7 +119,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
 
     OptionScaleScroll
       id: setMissileAlphaScroll

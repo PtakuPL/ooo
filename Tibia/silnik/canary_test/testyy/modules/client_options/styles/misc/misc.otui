@@ -5,7 +5,7 @@ UIWidget
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: parent.top
-    height: 22
+    min-height: 22
 
     OptionCheckBox
       id: autoChaseOverride
@@ -15,7 +15,7 @@ UIWidget
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
-    height: 55
+    min-height: 55
     margin-top: 10
     Label
       !text: tr("otclient_modules.misc_otui.tr_1")

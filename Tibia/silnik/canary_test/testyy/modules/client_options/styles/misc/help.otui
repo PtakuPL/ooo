@@ -5,7 +5,7 @@ UIWidget
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: parent.top
-    height: 60
+    min-height: 60
 
     QtButton
       !text: tr("otclient_modules.help_otui.tr_4")
@@ -30,7 +30,7 @@ UIWidget
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
-    height: 55
+    min-height: 55
     margin-top: 5
 
     QtButton

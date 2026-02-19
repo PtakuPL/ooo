@@ -6,7 +6,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: parent.top
 
-    height: 22
+    min-height: 22
   
     OptionCheckBox
       id: displayNames
@@ -17,7 +17,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
   
     OptionCheckBox
       id: displayHealth
@@ -28,7 +28,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
   
     OptionCheckBox
       id: displayMana
@@ -39,7 +39,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
 
     $!mobile:
       height: 0
@@ -57,7 +57,7 @@ UIWidget
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
-    height: 22
+    min-height: 22
     margin-top: 7
     OptionScaleScroll
       id: hudScale
@@ -70,7 +70,7 @@ UIWidget
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
-    height: 22
+    min-height: 22
     margin-top: 7
     OptionScaleScroll
       id: creatureInformationScale
@@ -84,7 +84,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
 
     OptionScaleScroll
       id: staticTextScale
@@ -98,7 +98,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
 
     OptionScaleScroll
       id: animatedTextScale

@@ -9523,3 +9523,11 @@
 {"timestamp": "2026-02-19T21:01:51.968402Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "dispatch", "duration_ms": 3070, "detail": "count=questlog.json"}
 {"timestamp": "2026-02-19T21:04:38.517242Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "mode_run", "duration_ms": 166293, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-19T21:04:50.507498Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "status_update", "duration_ms": 11506, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-19T21:05:10.437992Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "cycle_total", "duration_ms": 202732, "detail": "delay=4"}
+{"timestamp": "2026-02-19T21:05:17.512454Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "dispatch", "duration_ms": 1846, "detail": "count=html.json"}
+{"timestamp": "2026-02-19T21:08:13.037452Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "mode_run", "duration_ms": 175163, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-19T21:08:26.210884Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "status_update", "duration_ms": 12654, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-19T21:08:29.460237Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "cycle_total", "duration_ms": 194243, "detail": "delay=4"}
+{"timestamp": "2026-02-19T21:08:36.874456Z", "cycle": 2, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "dispatch", "duration_ms": 2912, "detail": "count=books.json"}
+{"timestamp": "2026-02-19T21:08:59.439183Z", "cycle": 2, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "mode_run", "duration_ms": 22325, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-19T21:09:11.897227Z", "cycle": 2, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "status_update", "duration_ms": 12097, "detail": "throttle_every=1"}

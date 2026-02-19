@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-19T21:02:09.719400Z",
-  "built_cycle": 1,
+  "timestamp": "2026-02-19T21:08:51.005395Z",
+  "built_cycle": 2,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -786,9 +786,9 @@
     {
       "lang": "ru",
       "json_file": "questlog.json",
-      "pending_total": 1825,
-      "todo": 1825,
-      "simple_todo": 627,
+      "pending_total": 1824,
+      "todo": 1824,
+      "simple_todo": 626,
       "missing_in_lang": 0
     },
     {

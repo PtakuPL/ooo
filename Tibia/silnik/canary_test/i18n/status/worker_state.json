@@ -378,7 +378,7 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-19T21:04:39Z",
+  "generated_at_utc": "2026-02-19T21:09:00Z",
   "global": {
     "en_keys_total": 53586,
     "errors_total": 2573,
@@ -389,8 +389,8 @@
     "i18n_global_stats": {
       "auto_translate": {
         "guard_fail": 0,
-        "json_file": "questlog.json",
-        "keys_to_translate": 1785,
+        "json_file": "books.json",
+        "keys_to_translate": 1053,
         "language": "ro",
         "recent_examples": [],
         "recent_translated": 0,
@@ -403,7 +403,7 @@
         "new_files_detected": 152,
         "quality_issues": 2875
       },
-      "last_update": "2026-02-19T22:04:38.657615",
+      "last_update": "2026-02-19T22:08:59.580664",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -422,7 +422,7 @@
         "registry_reconcile_adjustment": 53586
       },
       "mode": "AUTO_TRANSLATE",
-      "total_cycles": 1,
+      "total_cycles": 2,
       "translation_sync": {
         "json_file": "scripts.json",
         "keys_to_sync": 0,
@@ -452,12 +452,12 @@
       },
       "stage": "cycle_end"
     },
-    "cycle": 1,
-    "heartbeat_at_utc": "2026-02-19T21:04:38Z",
+    "cycle": 2,
+    "heartbeat_at_utc": "2026-02-19T21:08:59Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",
-    "pid": 1082297,
+    "pid": 1087444,
     "status": "running",
     "version": "unknown"
   }

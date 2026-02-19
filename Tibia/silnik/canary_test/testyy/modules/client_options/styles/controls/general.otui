@@ -5,7 +5,7 @@ UIWidget
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: parent.top
-    height: 22
+    min-height: 22
 
     OptionCheckBoxMarked
       id: showPing
@@ -16,7 +16,7 @@ UIWidget
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
-    height: 22
+    min-height: 22
     margin-top: 7
 
     $mobile:
@@ -36,7 +36,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
   
     OptionCheckBox
       id: autoChaseOverride
@@ -47,7 +47,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
   
     OptionCheckBox
       id: moveStack
@@ -58,7 +58,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
   
     OptionCheckBoxMarked
       id: smartWalk
@@ -70,7 +70,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
   
     OptionCheckBox
       id: openMaximized
@@ -81,7 +81,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
   
     OptionCheckBox
       id: displayText
@@ -93,7 +93,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
 
     OptionScaleScroll
       id: hotkeyDelay
@@ -111,7 +111,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
 
     OptionScaleScroll
       id: walkTurnDelay
@@ -129,7 +129,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
 
     OptionScaleScroll
       id: walkTeleportDelay
@@ -147,7 +147,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
 
     OptionScaleScroll
       id: walkStairsDelay

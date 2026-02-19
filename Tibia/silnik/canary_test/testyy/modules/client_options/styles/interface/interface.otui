@@ -5,7 +5,7 @@ UIWidget
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: parent.top
-    height: 22
+    min-height: 22
 
     OptionCheckBox
       id: enableHighlightMouseTarget
@@ -16,7 +16,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
 
     $mobile:
       height: 0
@@ -35,7 +35,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
   
     OptionCheckBox
       id: showRightExtraPanel
@@ -46,7 +46,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
 
     OptionCheckBox
       id: showActionbar
@@ -56,7 +56,7 @@ UIWidget
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
-    height: 22
+    min-height: 22
     margin-top: 5
 
     OptionCheckBoxMarked
@@ -69,7 +69,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 32
+    min-height: 32
   
     Label
       !text: tr("otclient_modules.interface_otui.tr_9")
@@ -91,7 +91,7 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 86
+    min-height: 86
 
     Label
       !text: tr("otclient_modules.interface_otui.tr_8")

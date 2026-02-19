@@ -64,6 +64,8 @@ OptionCheckBox < QtCheckBox
   anchors.top: parent.top
   color: #c0c0c0ff
   text-wrap: true
+  text-vertical-auto-resize: true
+  auto-fit-parent-height: true
   @onCheckChange: modules.client_options.setOption(self:getId(), self:isChecked())
 
 OptionCheckBoxMarked < OptionCheckBox
@@ -123,6 +125,8 @@ MainWindow
   id: optionsWindow
   min-width: 686
   min-height: 534
+  max-width: 1024
+  max-height: 768
   size: 686 534
   anchors.centerIn: parent
   visible: false

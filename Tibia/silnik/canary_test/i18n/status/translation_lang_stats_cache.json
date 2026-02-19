@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-19T20:55:11.509159Z",
+  "timestamp": "2026-02-19T20:56:57.128082Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -27009,8 +27009,8 @@
         [
           "otclient_modules.json",
           1,
-          1771325191829114193,
-          137699
+          1771534597165041647,
+          137614
         ],
         [
           "otclient_src.json",
@@ -27096,17 +27096,17 @@
         "language_name": "Rumuński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 22221,
+        "translated_keys": 22251,
         "english_copy_keys": 2300,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 41.47,
+        "completion_pct": 41.52,
         "server_keys": 49731,
         "server_translated": 20995,
         "server_pct": 42.22,
         "client_keys": 3855,
-        "client_translated": 1226,
-        "client_pct": 31.8
+        "client_translated": 1256,
+        "client_pct": 32.58
       },
       "files": {
         "achievements.json": {
@@ -27448,12 +27448,12 @@
         "otclient_modules.json": {
           "sig": [
             1,
-            1771325191829114193,
-            137699
+            1771534597165041647,
+            137614
           ],
           "row": {
             "total_reference_keys": 1987,
-            "translated_keys": 692,
+            "translated_keys": 722,
             "english_copy_keys": 30,
             "missing_keys": 0,
             "missing_files": 0
@@ -27816,7 +27816,7 @@
         [
           "questlog.json",
           1,
-          1771325157733013270,
+          1771534560447988961,
           248912
         ],
         [
@@ -28287,7 +28287,7 @@
         "questlog.json": {
           "sig": [
             1,
-            1771325157733013270,
+            1771534560447988961,
             248912
           ],
           "row": {
@@ -31665,7 +31665,7 @@
         [
           "monsters.json",
           1,
-          1771325222165220537,
+          1771534605349729632,
           334020
         ],
         [
@@ -32048,7 +32048,7 @@
         "monsters.json": {
           "sig": [
             1,
-            1771325222165220537,
+            1771534605349729632,
             334020
           ],
           "row": {

@@ -64062,5 +64062,245 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T20:54:00.009067Z"
+  },
+  "otclient_modules.character.tr_85": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "Mai aveți %s ore și %s minute",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.413470Z"
+  },
+  "otclient_modules.character.tr_87": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "Mai aveți %s ore și %s minute",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.414274Z"
+  },
+  "otclient_modules.character.tr_94": {
+    "src_hash": "07ad815187b53dc2ceaf5ad6e0a12bb1",
+    "text": "Nivel:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.416532Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_16": {
+    "src_hash": "c92ad71f199aa86db4dc69a0ebcdf34f",
+    "text": "Statistici generale",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.470091Z"
+  },
+  "otclient_modules.market.tr_17": {
+    "src_hash": "b5397350cbd6dcc4fe899771c728f5d1",
+    "text": "Echilibru:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.604295Z"
+  },
+  "otclient_modules.options_otui.tr_3": {
+    "src_hash": "c92ad71f199aa86db4dc69a0ebcdf34f",
+    "text": "Statistici generale",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.617849Z"
+  },
+  "otclient_modules.skills.tr_13": {
+    "src_hash": "b0ff400dd8b2803e52487b21ccef0f8c",
+    "text": "Mai aveți %s la sută de plecat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.642803Z"
+  },
+  "otclient_modules.skills.tr_14": {
+    "src_hash": "b0ff400dd8b2803e52487b21ccef0f8c",
+    "text": "Mai aveți %s la sută de plecat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.643410Z"
+  },
+  "otclient_modules.skills.tr_15": {
+    "src_hash": "686d4ebf33f5dd41a66565edbdcc74fe",
+    "text": "Ai %s la sută",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.644003Z"
+  },
+  "otclient_modules.skills.tr_16": {
+    "src_hash": "7d2c99ec2c6bfa57eaa477689d4c0f86",
+    "text": "Este posibil să nu primești experiență și pradă de la monștri",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.644744Z"
+  },
+  "otclient_modules.skills.tr_17": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "Mai aveți %s ore și %s minute",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.645398Z"
+  },
+  "otclient_modules.skills.tr_18": {
+    "src_hash": "c9fabc9f075a2ea68f92b5bedbc93aac",
+    "text": "Câștigă doar 50%% de experiență și nu poți câștiga prada de la monștri",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.646380Z"
+  },
+  "otclient_modules.skills.tr_19": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "Mai aveți %s ore și %s minute",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.646985Z"
+  },
+  "otclient_modules.skills.tr_20": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "Mai aveți %s ore și %s minute",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.647673Z"
+  },
+  "otclient_modules.skills.tr_22": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "Mai aveți %s ore și %s minute",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.648577Z"
+  },
+  "otclient_modules.skills.tr_24": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "Mai aveți %s ore și %s minute",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.649243Z"
+  },
+  "otclient_modules.skills.tr_26": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "Mai aveți %s ore și %s minute",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.649891Z"
+  },
+  "otclient_modules.skills.tr_30": {
+    "src_hash": "b0ff400dd8b2803e52487b21ccef0f8c",
+    "text": "Mai aveți %s la sută de plecat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.650861Z"
+  },
+  "otclient_modules.skills_otui.tr_2": {
+    "src_hash": "62eaa5650c462dd0fba71d9d2d159f0f",
+    "text": "Transcendența",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.654740Z"
+  },
+  "otclient_modules.skills_otui.tr_30": {
+    "src_hash": "62eaa5650c462dd0fba71d9d2d159f0f",
+    "text": "Transcendența",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.658214Z"
+  },
+  "otclient_modules.ui_otui.tr_1": {
+    "src_hash": "c92ad71f199aa86db4dc69a0ebcdf34f",
+    "text": "Statistici generale",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:07.687016Z"
+  },
+  "otclient_modules.character.tr_84": {
+    "src_hash": "37f438e61c309c1f880c3bc228758207",
+    "text": "Nu vei câștiga cu 50%% mai multă experiență pentru că nu ești jucător premium, acum primești doar 1x puncte de experiență",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:31.340606Z"
+  },
+  "otclient_modules.character.tr_86": {
+    "src_hash": "272fc6b45f857121e43f3bc445b56563",
+    "text": "Acum vei câștiga cu 50%% mai multă experiență",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:31.341690Z"
+  },
+  "otclient_modules.character.tr_88": {
+    "src_hash": "78a878dc05adde9347b36298aee52245",
+    "text": "Mai aveți %s la sută de plecat ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:31.342892Z"
+  },
+  "otclient_modules.character.tr_89": {
+    "src_hash": "94da3d3061c3ff2ce498fa095e9bc741",
+    "text": "%s: %.0f minute",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:31.343684Z"
+  },
+  "otclient_modules.character.tr_90": {
+    "src_hash": "5af722fe59d9cc70989eef347b08b45b",
+    "text": "După data deblocării",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:31.344631Z"
+  },
+  "otclient_modules.character.tr_91": {
+    "src_hash": "448841b1b0181a650f0a83273baa7e6c",
+    "text": "După grad",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:37.157646Z"
+  },
+  "otclient_modules.character.tr_92": {
+    "src_hash": "05602ad27c432a05f26a92b6bc277994",
+    "text": "Alfabetic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:37.158053Z"
+  },
+  "otclient_modules.character_otui.tr_1": {
+    "src_hash": "71bf0edb2e38954ab9b7db4bd7c98e8b",
+    "text": "Articole de casă achiziționate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:37.158503Z"
+  },
+  "otclient_modules.character_otui.tr_10": {
+    "src_hash": "ee342e958534d058445a3144a4857a76",
+    "text": "Wildcards pradă:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:56:37.159309Z"
   }
 }

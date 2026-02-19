@@ -1,32 +1,32 @@
 {
-  "timestamp": "2026-02-19T21:35:36.907922Z",
-  "window_start_utc": "2026-02-19T20:35:34.315939Z",
-  "window_end_utc": "2026-02-19T21:35:34.315939Z",
+  "timestamp": "2026-02-19T21:37:17.140758Z",
+  "window_start_utc": "2026-02-19T20:37:14.369649Z",
+  "window_end_utc": "2026-02-19T21:37:14.369649Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 227,
-  "suspicious_entries": 2592,
-  "guard_fail_entries": 55,
+  "rejected_entries": 229,
+  "suspicious_entries": 3959,
+  "guard_fail_entries": 57,
   "guard_fail_sum": 571,
   "by_type": {
     "word_salad": 21,
     "contains_tibia_proper_noun": 7,
     "diacritics_missing": 1,
-    "identical_to_en": 159,
+    "identical_to_en": 161,
     "mixed_scripts": 21,
     "cyrillic_latin_mix": 21,
     "mixed_language": 26
   },
   "by_source": {
     "simple": 11,
-    "google_translate": 216
+    "google_translate": 218
   },
   "by_language": {
-    "es": 57,
+    "es": 59,
     "it": 7,
     "ro": 65,
     "pl": 49,
@@ -47,16 +47,16 @@
     "achievements.json": 36,
     "spells.json": 28,
     "chatchannels.json": 1,
-    "items.json": 33
+    "items.json": 35
   },
   "by_severity": {
-    "CRITICAL": 180,
+    "CRITICAL": 182,
     "HIGH": 47
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 159
+      "count": 161
     },
     {
       "type": "mixed_language",

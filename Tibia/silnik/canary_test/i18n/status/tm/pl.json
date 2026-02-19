@@ -116350,5 +116350,69 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T20:43:27.297745Z"
+  },
+  "npc.zizzle.greet_msg_1": {
+    "src_hash": "09f27c9b71c96dc1e2e3b4380d6908a7",
+    "text": "Ach, nasi ludzcy {alliez} wreszcie przybyli! Już obawiałem się, że siły cesarza was dopadły. Wasza wytrzymałość i waleczność są imponujące.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:36:53.237116Z"
+  },
+  "npc.zlak.farewell_msg_1": {
+    "src_hash": "ea117cbc62dbedb33f7909388af03d19",
+    "text": "Pozoztaw mnie w spokoju.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:36:53.245634Z"
+  },
+  "npc.zoltan.greet_msg_1": {
+    "src_hash": "789e50ae24df69fde783c72a3a56b7d9",
+    "text": "Witaj |PLAYERNAME|, uczniu sztuk tajemnych. Uczę najpotężniejszych dostępnych {spells}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:36:53.254750Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_1": {
+    "src_hash": "dff36104bc875d708f69d7668d7b162e",
+    "text": "485611800364197.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:36:56.720212Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_2": {
+    "src_hash": "a9c3a1056e6dde2147a9e1475a18b0a7",
+    "text": "78572611857643646724.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:36:56.720489Z"
+  },
+  "npc.a_wrinkled_bonelord.voice_1": {
+    "src_hash": "dff36104bc875d708f69d7668d7b162e",
+    "text": "485611800364197.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:00.922254Z"
+  },
+  "npc.a_wrinkled_bonelord.voice_2": {
+    "src_hash": "a9c3a1056e6dde2147a9e1475a18b0a7",
+    "text": "78572611857643646724.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:00.922499Z"
+  },
+  "npc.ajax.say_9": {
+    "src_hash": "8b4ab579d1bc0c286fa1aa7706d9801b",
+    "text": "Przynosisz 100 rudy żelaza?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:37:00.922812Z"
   }
 }

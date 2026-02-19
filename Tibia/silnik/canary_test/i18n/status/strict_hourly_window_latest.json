@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-19T20:35:34.315939Z",
-  "window_end_utc": "2026-02-19T21:35:34.315939Z",
+  "window_start_utc": "2026-02-19T20:37:14.369649Z",
+  "window_end_utc": "2026-02-19T21:37:14.369649Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,11 +8,11 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/suspicious_rejected.jsonl"
   ],
-  "total_cycles": 71,
+  "total_cycles": 75,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 71
+    "AUTO_TRANSLATE": 75
   },
-  "auto_translate_cycles": 71,
+  "auto_translate_cycles": 75,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
@@ -20,10 +20,10 @@
   "translated": 965,
   "guard_fail": 571,
   "guard_fail_rate_pct": 37.2,
-  "no_progress_entries": 25,
-  "no_progress_rate_pct": 45.5,
-  "throughput_keys_per_h": 635.0,
-  "suspicious_total": 2592,
+  "no_progress_entries": 27,
+  "no_progress_rate_pct": 47.4,
+  "throughput_keys_per_h": 609.4,
+  "suspicious_total": 3959,
   "top_guard_fail_targets": [
     {
       "target": "pl/books.json",

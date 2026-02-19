@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-19T21:34:53.734328Z",
-  "cycle": 3,
+  "timestamp": "2026-02-19T21:37:05.763908Z",
+  "cycle": 4,
   "language": "pl",
-  "json_file": "items.json",
+  "json_file": "npc.json",
   "translated": 0,
   "placeholders": 0,
   "guard_fail": 0,

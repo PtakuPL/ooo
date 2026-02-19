@@ -378,10 +378,10 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-19T22:09:35Z",
+  "generated_at_utc": "2026-02-19T22:18:32Z",
   "global": {
     "en_keys_total": 53586,
-    "errors_total": 2587,
+    "errors_total": 2593,
     "files_processed_total": 6443,
     "languages_total": 55
   },
@@ -389,8 +389,8 @@
     "i18n_global_stats": {
       "auto_translate": {
         "guard_fail": 0,
-        "json_file": "monsters.json",
-        "keys_to_translate": 633,
+        "json_file": "server.json",
+        "keys_to_translate": 1493,
         "language": "it",
         "recent_examples": [],
         "recent_translated": 0,
@@ -403,7 +403,7 @@
         "new_files_detected": 152,
         "quality_issues": 2875
       },
-      "last_update": "2026-02-19T23:09:33.713733",
+      "last_update": "2026-02-19T23:18:14.327083",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -453,11 +453,11 @@
       "stage": "cycle_end"
     },
     "cycle": 1,
-    "heartbeat_at_utc": "2026-02-19T22:09:34Z",
+    "heartbeat_at_utc": "2026-02-19T22:18:14Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",
-    "pid": 1131211,
+    "pid": 1139062,
     "status": "running",
     "version": "unknown"
   }

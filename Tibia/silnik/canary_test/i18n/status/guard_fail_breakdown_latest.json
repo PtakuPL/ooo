@@ -1,61 +1,62 @@
 {
-  "timestamp": "2026-02-19T22:09:48.991201Z",
-  "window_start_utc": "2026-02-19T21:09:44.405748Z",
-  "window_end_utc": "2026-02-19T22:09:44.405748Z",
+  "timestamp": "2026-02-19T22:18:25.802380Z",
+  "window_start_utc": "2026-02-19T21:18:21.692560Z",
+  "window_end_utc": "2026-02-19T22:18:21.692560Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 191,
-  "suspicious_entries": 7577,
-  "guard_fail_entries": 36,
-  "guard_fail_sum": 271,
+  "rejected_entries": 205,
+  "suspicious_entries": 7426,
+  "guard_fail_entries": 40,
+  "guard_fail_sum": 272,
   "by_type": {
-    "identical_to_en": 135,
-    "mixed_language": 26,
-    "word_salad": 7,
+    "identical_to_en": 145,
     "mixed_scripts": 23,
     "cyrillic_latin_mix": 23,
+    "mixed_language": 25,
+    "word_salad": 12,
     "contains_tibia_proper_noun": 9
   },
   "by_source": {
-    "google_translate": 191
+    "google_translate": 205
   },
   "by_language": {
-    "pl": 36,
-    "es": 25,
-    "ro": 64,
     "it": 15,
     "ru": 23,
-    "sv": 28
+    "ro": 52,
+    "sv": 28,
+    "es": 40,
+    "pl": 47
   },
   "by_category": {
-    "talkactions.json": 9,
-    "npc.json": 14,
-    "php.json": 2,
-    "cpp.json": 13,
+    "cpp.json": 1,
     "client.json": 14,
     "achievements.json": 36,
-    "spells.json": 28,
+    "spells.json": 55,
+    "npc.json": 12,
     "chatchannels.json": 1,
+    "talkactions.json": 3,
     "items.json": 53,
     "server.json": 3,
-    "monsters.json": 18
+    "monsters.json": 18,
+    "quests.json": 1,
+    "scripts.json": 8
   },
   "by_severity": {
-    "CRITICAL": 142,
-    "HIGH": 49
+    "CRITICAL": 157,
+    "HIGH": 48
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 135
+      "count": 145
     },
     {
       "type": "mixed_language",
-      "count": 26
+      "count": 25
     },
     {
       "type": "mixed_scripts",
@@ -66,41 +67,27 @@
       "count": 23
     },
     {
-      "type": "contains_tibia_proper_noun",
-      "count": 9
+      "type": "word_salad",
+      "count": 12
     },
     {
-      "type": "word_salad",
-      "count": 7
+      "type": "contains_tibia_proper_noun",
+      "count": 9
     }
   ],
   "top_keys": [
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 7,
+      "count": 6,
       "types": {
-        "identical_to_en": 7
+        "identical_to_en": 6
       }
     },
     {
       "key": "npc.al_dee.stdmod_41",
-      "count": 7,
+      "count": 6,
       "types": {
-        "word_salad": 7
-      }
-    },
-    {
-      "key": "talkaction.gm.spy.msg_stack_count",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "talkaction.god.kv.msg_allkv_value",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
+        "word_salad": 6
       }
     },
     {
@@ -199,20 +186,6 @@
       }
     },
     {
-      "key": "talkaction.god.achievement.msg_check_usage",
-      "count": 2,
-      "types": {
-        "mixed_language": 2
-      }
-    },
-    {
-      "key": "cpp.look.def",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "client.entergame.text1",
       "count": 2,
       "types": {
@@ -230,6 +203,38 @@
     },
     {
       "key": "client.game_healthcircle.text4",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "client.walk.text1",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "client.walk.text2",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "client.walk.text3",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "client.mounts.text1",
       "count": 2,
       "types": {
         "mixed_scripts": 1,

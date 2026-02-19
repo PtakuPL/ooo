@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-19T21:09:44.405748Z",
-  "window_end_utc": "2026-02-19T22:09:44.405748Z",
+  "window_start_utc": "2026-02-19T21:18:21.692560Z",
+  "window_end_utc": "2026-02-19T22:18:21.692560Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,23 +8,29 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/suspicious_rejected.jsonl"
   ],
-  "total_cycles": 43,
+  "total_cycles": 42,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 43
+    "AUTO_TRANSLATE": 42
   },
-  "auto_translate_cycles": 43,
+  "auto_translate_cycles": 42,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 380,
-  "guard_fail": 271,
-  "guard_fail_rate_pct": 41.6,
-  "no_progress_entries": 24,
-  "no_progress_rate_pct": 66.7,
-  "throughput_keys_per_h": 489.3,
-  "suspicious_total": 7577,
+  "translated": 604,
+  "guard_fail": 272,
+  "guard_fail_rate_pct": 31.1,
+  "no_progress_entries": 22,
+  "no_progress_rate_pct": 55.0,
+  "throughput_keys_per_h": 878.5,
+  "suspicious_total": 7426,
   "top_guard_fail_targets": [
+    {
+      "target": "es/scripts.json",
+      "translated": 17,
+      "guard_fail": 48,
+      "guard_command": 0
+    },
     {
       "target": "sv/spells.json",
       "translated": 6,
@@ -32,27 +38,15 @@
       "guard_command": 0
     },
     {
-      "target": "es/talkactions.json",
-      "translated": 0,
-      "guard_fail": 43,
-      "guard_command": 1
-    },
-    {
-      "target": "pl/talkactions.json",
-      "translated": 0,
-      "guard_fail": 41,
+      "target": "pl/spells.json",
+      "translated": 4,
+      "guard_fail": 36,
       "guard_command": 0
     },
     {
       "target": "ro/achievements.json",
       "translated": 16,
       "guard_fail": 34,
-      "guard_command": 0
-    },
-    {
-      "target": "it/books.json",
-      "translated": 22,
-      "guard_fail": 28,
       "guard_command": 0
     },
     {
@@ -71,6 +65,12 @@
       "target": "ro/cpp.json",
       "translated": 31,
       "guard_fail": 19,
+      "guard_command": 0
+    },
+    {
+      "target": "es/quests.json",
+      "translated": 0,
+      "guard_fail": 15,
       "guard_command": 0
     }
   ]

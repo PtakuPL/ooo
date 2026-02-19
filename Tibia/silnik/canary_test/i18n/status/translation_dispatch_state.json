@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-19T22:06:20.150393Z",
-  "cycle_counter": 5654,
-  "last_target_key": "ro:monsters.json",
-  "last_pending_total": 5002,
+  "timestamp": "2026-02-19T22:15:56.032149Z",
+  "cycle_counter": 5667,
+  "last_target_key": "ro:server.json",
+  "last_pending_total": 1319,
   "last_tier": 2,
-  "last_cat_priority": 2,
+  "last_cat_priority": 3,
   "candidates_count": 183,
   "active_candidates_count": 183,
   "skipped_backoff": 0,
@@ -57,7 +57,7 @@
     "sr:npc.json": 0,
     "pl:spells.json": 0,
     "es:spells.json": 0,
-    "es:quests.json": 1,
+    "es:quests.json": 2,
     "pl:scripts.json": 0,
     "pl:raids.json": 0,
     "es:raids.json": 0,
@@ -142,7 +142,8 @@
     "it:npclib.json": 1,
     "ru:movements.json": 1,
     "pl:monsters.json": 1,
-    "es:server.json": 1
+    "es:server.json": 1,
+    "es:scripts.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -194,13 +195,13 @@
       "sv"
     ],
     "lang_completion": {
-      "pl": 87.56,
-      "es": 84.46,
+      "pl": 87.58,
+      "es": 84.47,
       "ru": 50.32,
-      "ro": 41.69,
-      "it": 50.84,
+      "ro": 41.79,
+      "it": 50.87,
       "sr": 45.38,
-      "sv": 27.88
+      "sv": 27.94
     }
   }
 }

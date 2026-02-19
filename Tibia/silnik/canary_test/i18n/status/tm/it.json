@@ -73726,5 +73726,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T22:05:57.326414Z"
+  },
+  "data.otservbr.global.npc.eliyas.L68.1302": {
+    "src_hash": "c0bddf3746d07eca97d3a84bb9d04884",
+    "text": "Fatti salutare, |PLAYERNAME|. Quale delle mie belle gemme fai {need}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.912797Z"
+  },
+  "data.otservbr.global.npc.eliyas.L69.1303": {
+    "src_hash": "45f2935aa8a5385fe0bbcc2fa0a3ec47",
+    "text": "Le benedizioni di Daraman e un arrivederci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.913462Z"
+  },
+  "data.otservbr.global.npc.eliyas.L70.1304": {
+    "src_hash": "45f2935aa8a5385fe0bbcc2fa0a3ec47",
+    "text": "Le benedizioni di Daraman e un arrivederci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.914028Z"
+  },
+  "data.otservbr.global.npc.elliott.L129.31": {
+    "src_hash": "da47bc03b09e8160817c49ca2a9016f8",
+    "text": "<annuisce>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.914534Z"
+  },
+  "data.otservbr.global.npc.elliott.L130.32": {
+    "src_hash": "9e3e936cab858ca704431e48e8847e12",
+    "text": "<annuisce> Sì.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.914958Z"
+  },
+  "data.otservbr.global.npc.elyen.ravenlock.L106.387": {
+    "src_hash": "673a629cf6241970a6488e5b6cff839a",
+    "text": "Un'ombra ti ha preceduto. Desideri un {scroll} o un {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.916078Z"
+  },
+  "data.otservbr.global.npc.emael.L95.1464": {
+    "src_hash": "9dd6f7746b4df0255bd73d567d9aece4",
+    "text": "Ti auguro una buona caccia. Arrivederci!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.916707Z"
+  },
+  "data.otservbr.global.npc.emael.L96.1465": {
+    "src_hash": "5c48d766485716d20a6b9ac0b5136c7f",
+    "text": "Buona caccia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.917342Z"
+  },
+  "data.otservbr.global.npc.emma.L293.238": {
+    "src_hash": "23f9be5bcded3ba8ae71b1126a8d5f00",
+    "text": "SALUTE ALLA REGINA!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.917807Z"
+  },
+  "data.otservbr.global.npc.emma.L294.239": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "VIVA LA REGINA! Puoi andartene adesso!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.918413Z"
+  },
+  "data.otservbr.global.npc.emperor.kruzak.L184.1301": {
+    "src_hash": "986986ec5082bb37c9b0a14bd1acf9dc",
+    "text": "Addio, |PLAYERNAME|, figlia mia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.918984Z"
+  },
+  "data.otservbr.global.npc.erayo.L130.1378": {
+    "src_hash": "6e3e6967ef071f66260733538ee2808f",
+    "text": "Ma che... voglio dire, certo che ti ho percepito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.919626Z"
+  },
+  "data.otservbr.global.npc.eremo.L218.525": {
+    "src_hash": "3025033ce084ef8f6a0d689751bb8ca1",
+    "text": "Benvenuto nel mio piccolo giardino, avventuriero |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.920548Z"
+  },
+  "data.otservbr.global.npc.eremo.L219.526": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "È stato un piacere aiutarti, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.921175Z"
+  },
+  "data.otservbr.global.npc.eremo.L220.527": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "È stato un piacere aiutarti, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.921856Z"
+  },
+  "data.otservbr.global.npc.eroth.L101.509": {
+    "src_hash": "640fe76f81e1265f08e3fbf38a1d7eed",
+    "text": "Ti saluto, straniero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.922376Z"
+  },
+  "data.otservbr.global.npc.eruaran.L212.792": {
+    "src_hash": "df513f5c220cc8dcd6f923a6a42f3f54",
+    "text": "Benvenuto |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.923256Z"
+  },
+  "data.otservbr.global.npc.esrik.L172.1134": {
+    "src_hash": "ff95be6fc5bad950efcdd88276866ceb",
+    "text": "Ciao, |PLAYERNAME| e benvenuto nella mia piccola fucina.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.924850Z"
+  },
+  "data.otservbr.global.npc.eustacio.L61.180": {
+    "src_hash": "98f3c34590e4f06e26ada187b435d360",
+    "text": "Ciao amico mio. Che piacere vederti, anche in una giornata impegnativa. Puoi controllare il tuo stato o chiedermi informazioni sulla posizione dei raid in corso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.926010Z"
+  },
+  "data.otservbr.global.npc.eva.L76.990": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.926797Z"
+  },
+  "data.otservbr.global.npc.ezebeth.L118.93": {
+    "src_hash": "c670a71dc9166a3109f2ba824b9b5fc1",
+    "text": "Ciao! Immagino che tu sia qui per un {mission}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.928339Z"
+  },
+  "data.otservbr.global.npc.fa.hradin.L138.1293": {
+    "src_hash": "54125fbcb905788a203c25152ce56f1b",
+    "text": "Addio, umano. Ti ricorderò sempre. A meno che non ti dimentichi, ovviamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.929158Z"
+  },
+  "data.otservbr.global.npc.fa.hradin.L139.1294": {
+    "src_hash": "54125fbcb905788a203c25152ce56f1b",
+    "text": "Addio, umano. Ti ricorderò sempre. A meno che non ti dimentichi, ovviamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.929993Z"
+  },
+  "data.otservbr.global.npc.falonzo.L125.1061": {
+    "src_hash": "659730d6abe6b16385a0a4be867d87b2",
+    "text": "Saluti, avventuriero!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.930743Z"
+  },
+  "data.otservbr.global.npc.faloriel.L90.1317": {
+    "src_hash": "ff27ed07c1861e5d20958b05901228dd",
+    "text": "Saluti, caro ospite e benvenuto nel mio negozio {potion}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.932099Z"
+  },
+  "data.otservbr.global.npc.farhilorn.of.the.winter.court.L83.1006": {
+    "src_hash": "1d4aed09bf4b360d0fe917e2de3b88d4",
+    "text": "Ciao combattente. Immagino che tu sia qui per {fight} per il nostro nobile {cause}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.933674Z"
+  },
+  "data.otservbr.global.npc.feizuhl.L59.360": {
+    "src_hash": "fd3d0ca55545e2ddeaee117f819e7179",
+    "text": "Sii compianto pellegrino in carne e ossa e benvenuto nel negozio di mobili.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.934649Z"
+  },
+  "data.otservbr.global.npc.feizuhl.L60.361": {
+    "src_hash": "43a2e4f95e5ae7de6833153915380c4e",
+    "text": "Dai un'occhiata. La maggior parte dei mobili viene fornita in pratici kit. Usali a casa tua per assemblare i mobili. Vuoi vedere solo un certo tipo di arredamento?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.935634Z"
+  },
+  "data.otservbr.global.npc.fenbala.L85.521": {
+    "src_hash": "751dae74b8bd3077f153231056399027",
+    "text": "VIVA LA REGINA! Puoi andartene adesso!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.937212Z"
+  },
+  "data.otservbr.global.npc.fenech.L169.1388": {
+    "src_hash": "3db673da51407607f7374e85fb546aed",
+    "text": "Sii compianto pellegrino in carne e ossa e benvenuto nel negozio di magia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.938021Z"
+  },
+  "data.otservbr.global.npc.fenech.L170.1389": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Possa l'illuminazione essere la tua strada.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.938618Z"
+  },
+  "data.otservbr.global.npc.fenech.L171.1390": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Possa l'illuminazione essere la tua strada.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.939237Z"
+  },
+  "data.otservbr.global.npc.ferks.L76.440": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.940890Z"
+  },
+  "data.otservbr.global.npc.finarfin.L71.1173": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.944218Z"
+  },
+  "data.otservbr.global.npc.fiona.L62.820": {
+    "src_hash": "d22d25583f0b1de590010f2d40b39f92",
+    "text": "Arrivederci e per favore torna presto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.945639Z"
+  },
+  "data.otservbr.global.npc.fiona.L63.821": {
+    "src_hash": "d22d25583f0b1de590010f2d40b39f92",
+    "text": "Arrivederci e per favore torna presto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.946192Z"
+  },
+  "data.otservbr.global.npc.fiona.L64.822": {
+    "src_hash": "002e4dfefafb258208d6c4b110f2099e",
+    "text": "Certo, dai un'occhiata. Oltre a questi, compro anche alcuni dei beni di famosi signori dei demoni e boss. Chiedimelo se hai trovato qualcosa di interessante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:15:42.947279Z"
   }
 }

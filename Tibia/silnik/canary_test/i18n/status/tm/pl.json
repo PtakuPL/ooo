@@ -116910,5 +116910,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T22:04:22.353164Z"
+  },
+  "spell.energy_field_rune.words": {
+    "src_hash": "62e0b5d08779ea75df6c0bb579c688e4",
+    "text": "adevo grav vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:11:16.013109Z"
+  },
+  "spell.lightest_missile_rune.words": {
+    "src_hash": "ddc26eef01d07f0653ffa78418fb9fd6",
+    "text": "adori infir vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:11:16.014153Z"
+  },
+  "spell.conjure_power_bolt.words": {
+    "src_hash": "1ee1f9aa02bb5391f9449ac172590eae",
+    "text": "exevo con vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:11:16.014746Z"
+  },
+  "raids.farmine.beetles.msg_1": {
+    "src_hash": "9c8deb58a970dfa0f0151dd485592f96",
+    "text": "Chrząszcze ułanów gromadzą się w Farmine. Strzec się!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:14:43.273947Z"
+  },
+  "raids.farmine.beetles.msg_2": {
+    "src_hash": "147a4a2d2b29b637de3077c7e4ccb1fe",
+    "text": "Stado chrząszczy ułanów zmierza w stronę wybrzeża!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:14:43.274580Z"
+  },
+  "raids.farmine.gnarlhounds.msg_2": {
+    "src_hash": "75ed73b5010cf6099628130c31dd516b",
+    "text": "Gnarlhoundy wydają się mnożyć z każdą minutą.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:14:43.275293Z"
+  },
+  "raids.farmine.gnarlhounds.msg_3": {
+    "src_hash": "ff17b33d3da58c40492d98b6d531a231",
+    "text": "Gnarlhoundy wędrują swobodnie po Zao Steppe. Uważaj!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:14:43.276456Z"
   }
 }

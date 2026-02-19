@@ -1505,11 +1505,11 @@
   },
   "npc.lardoc_bashsmite.say_9": {
     "src_hash": "69ce05199222d304e8f82cb747eed8ab",
-    "text": "Don't waste my time.",
+    "text": "Slösa inte min tid.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:10:52.919624Z"
+    "updated_at": "2026-02-19T22:10:38.759356Z"
   },
   "npc.lokur.say_5": {
     "src_hash": "12d673409d71f1fc127ebad108378378",
@@ -32062,5 +32062,293 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T21:23:14.498004Z"
+  },
+  "npc.kulag_the_guard.stdmod_1": {
+    "src_hash": "9f8faef9b0ab426a0e0ee29611a81085",
+    "text": "Det är min plikt att skydda staden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.735757Z"
+  },
+  "npc.lardoc_bashsmite.say_11": {
+    "src_hash": "66fc7cda8144816a796bb014e25892f0",
+    "text": "Du har inte tillräckligt med misstänkta enheter.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.742358Z"
+  },
+  "npc.lardoc_bashsmite.say_13": {
+    "src_hash": "66fc7cda8144816a796bb014e25892f0",
+    "text": "Du har inte tillräckligt med misstänkta enheter.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.744843Z"
+  },
+  "npc.lardoc_bashsmite.say_15": {
+    "src_hash": "66fc7cda8144816a796bb014e25892f0",
+    "text": "Du har inte tillräckligt med misstänkta enheter.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.747107Z"
+  },
+  "npc.lardoc_bashsmite.say_2": {
+    "src_hash": "6a9350fb722588784168d702f11406b5",
+    "text": "Tomtarna är fortfarande i behov av din hjälp, medlem av Bigfoot's Brigade. Bevisa ditt värde genom att svara på deras samtal! ({}/10)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.749299Z"
+  },
+  "npc.lardoc_bashsmite.say_3": {
+    "src_hash": "7ba0ff1dbed60b1c917a31393f2ef9ea",
+    "text": "Dvärgarna är fortfarande i behov av din hjälp, medlem av Bigfoot's Brigade. Bevisa ditt värde genom att svara på deras samtal! ({}/10)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.751297Z"
+  },
+  "npc.lardoc_bashsmite.say_4": {
+    "src_hash": "60f3ddb904bf1f6c8f085b75e33f4ed0",
+    "text": "Scouterna är fortfarande i behov av din hjälp, medlem av Bigfoot's Brigade. Bevisa ditt värde genom att svara på deras samtal! ({}/10)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.753629Z"
+  },
+  "npc.lardoc_bashsmite.say_5": {
+    "src_hash": "922613a768393e5249553458ec30cb48",
+    "text": "Jag behöver inte din hjälp just nu. Kom tillbaka senare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.755002Z"
+  },
+  "npc.lardoc_bashsmite.say_8": {
+    "src_hash": "0f152bedcc5a9f407b202ee4a03a458b",
+    "text": "Om du ger mig några misstänkta anordningar på varelser du dödar här, ska jag göra det värt mödan genom att berätta för de andra om din generositet. Hur många vill du erbjuda? ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.757800Z"
+  },
+  "npc.lavirias.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Adjö, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.761829Z"
+  },
+  "npc.lavirias.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.762786Z"
+  },
+  "npc.lavirias.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Hälsningar, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.763759Z"
+  },
+  "npc.lea.greet_msg_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Hälsningar, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.768376Z"
+  },
+  "npc.lee_delle.stdmod_26": {
+    "src_hash": "ce6b61c8f2e16d8a4b54ad73138ee5ca",
+    "text": "Be mig bara om en {trade} för att se vad jag köper av dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.771429Z"
+  },
+  "npc.lee_delle.stdmod_33": {
+    "src_hash": "c6111c0ce62b4701d6f63762fb96fc6e",
+    "text": "Nåväl, inget guld, ingen affär. Tjäna guld genom att slåss mot {monsters} och plocka upp sakerna de bär. Sälj den till {merchants} för att tjäna pengar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.772946Z"
+  },
+  "npc.lee_delle.stdmod_37": {
+    "src_hash": "c7b698bf128650165ce7b3f169e297ff",
+    "text": "Han ägnade sitt liv åt att välkomna nykomlingar till denna ö.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.774016Z"
+  },
+  "npc.lee_delle.stdmod_38": {
+    "src_hash": "9e48c63b7708028e36d3561878e4eb33",
+    "text": "Stackars gumman, hennes son {Tom} besöker henne aldrig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.774719Z"
+  },
+  "npc.lee_delle.stdmod_45": {
+    "src_hash": "1eb45a909a22c6117d2ec6f884f996fa",
+    "text": "Han stannar mest för sig själv. Han är en eremit utanför staden - lycka till att hitta honom.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.776190Z"
+  },
+  "npc.lee_delle.stdmod_50": {
+    "src_hash": "e8899364d696c697b01a31b7ce5a01ca",
+    "text": "Han är den lokala garvaren. Du kan försöka sälja färska lik eller läder till honom.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.777540Z"
+  },
+  "npc.lee_delle.stdmod_52": {
+    "src_hash": "ca5af46d9c20d6cbd9f33d8c59caee9d",
+    "text": "Vill du köpa en fotboll för 111 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.779091Z"
+  },
+  "npc.lee_delle.stdmod_53": {
+    "src_hash": "f7a36ec47fbec38cdc3589f7871ee30c",
+    "text": "Varsågod.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.780078Z"
+  },
+  "npc.leeland.say_4": {
+    "src_hash": "e04607d84a383e8cbb7db9ec770f05da",
+    "text": "Fel ord.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.782344Z"
+  },
+  "npc.leeland.say_8": {
+    "src_hash": "e04607d84a383e8cbb7db9ec770f05da",
+    "text": "Fel ord.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.783593Z"
+  },
+  "npc.liane.say_3": {
+    "src_hash": "310b4b316baf2b1142fe07bc8d96dc9b",
+    "text": "Åh, det har du inte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.786956Z"
+  },
+  "npc.liane.sendtrade_msg_1": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Här. Glöm inte att du måste köpa en etikett också om du vill skicka ett paket. Skriv alltid namnet på {receiver} på första raden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.789361Z"
+  },
+  "npc.liane.voice_1": {
+    "src_hash": "600057e0b95043563622fa58cb570b47",
+    "text": "Välkommen till posten!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.790406Z"
+  },
+  "npc.liane.voice_2": {
+    "src_hash": "611f89c7262e935f33b9114aa8652e11",
+    "text": "Hej, skicka ett brev till din vän då och då. Håll kontakten, du vet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.792211Z"
+  },
+  "npc.liane.voice_3": {
+    "src_hash": "2951906ee85e50cb7be4866a3c95ec80",
+    "text": "Behöver du hjälp med brev eller paket är det bara att fråga mig. Jag kan förklara allt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.793799Z"
+  },
+  "npc.lily.keyword_1": {
+    "src_hash": "8ad971c5d8a76d2b69437c57eda95147",
+    "text": "Ja?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.796567Z"
+  },
+  "npc.lily.stdmod_23": {
+    "src_hash": "e1358dab3ba6953efb2d59f54724b812",
+    "text": "Om du säger till mig namnet på en medborgare, ska jag berätta vad jag vet om honom eller henne.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.800490Z"
+  },
+  "npc.lily.stdmod_39": {
+    "src_hash": "7defe47d2884475b8bd17dca63d0bcd8",
+    "text": "För att se erbjudanden från en handlare, prata helt enkelt med honom eller henne och be om ett {trade}. De visar dig gärna sina erbjudanden och även de saker de köper av dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.805385Z"
+  },
+  "npc.lily.stdmod_58": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "Som du vill.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.809764Z"
+  },
+  "npc.lisander.say_3": {
+    "src_hash": "ca1cb9230c8ebfe2c7f5b120cca6c871",
+    "text": "Errrkss - hosta - vad fan stoppade du in där? Försvinn ur min syn!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.814430Z"
+  },
+  "npc.llathriel.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Adjö, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.815624Z"
+  },
+  "npc.llathriel.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.816621Z"
+  },
+  "npc.llathriel.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Hälsningar, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:10:38.817802Z"
   }
 }

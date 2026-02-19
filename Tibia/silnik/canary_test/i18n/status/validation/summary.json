@@ -1,7 +1,7 @@
 {
   "total_languages": 53,
   "total_en_keys": 53586,
-  "validated_at": "2026-02-19T22:09:33.109944Z",
+  "validated_at": "2026-02-19T22:18:13.873607Z",
   "by_score": {
     "ru": {
       "score": 62.7,
@@ -153,7 +153,7 @@
       "critical": 99,
       "high": 4,
       "crossref_issues": 477,
-      "crossref_autofix_applied": 3,
+      "crossref_autofix_applied": 0,
       "translated": 18353,
       "script_group": "latin"
     },
@@ -264,7 +264,7 @@
       "high": 42,
       "crossref_issues": 515,
       "crossref_autofix_applied": 0,
-      "translated": 45608,
+      "translated": 45613,
       "script_group": "latin"
     },
     "et": {
@@ -407,7 +407,7 @@
       "high": 13,
       "crossref_issues": 0,
       "crossref_autofix_applied": 0,
-      "translated": 47136,
+      "translated": 47143,
       "script_group": "latin"
     },
     "sk": {
@@ -449,8 +449,8 @@
       "issues": 11,
       "critical": 0,
       "high": 11,
-      "crossref_issues": 68,
-      "crossref_autofix_applied": 3,
+      "crossref_issues": 65,
+      "crossref_autofix_applied": 0,
       "translated": 24384,
       "script_group": "cyrillic"
     },
@@ -516,8 +516,8 @@
       "critical": 0,
       "high": 9,
       "crossref_issues": 429,
-      "crossref_autofix_applied": 2,
-      "translated": 27787,
+      "crossref_autofix_applied": 0,
+      "translated": 27823,
       "script_group": "latin"
     },
     "ja": {
@@ -549,8 +549,8 @@
       "critical": 0,
       "high": 2,
       "crossref_issues": 419,
-      "crossref_autofix_applied": 4,
-      "translated": 22915,
+      "crossref_autofix_applied": 0,
+      "translated": 22957,
       "script_group": "latin"
     },
     "sv": {
@@ -561,7 +561,7 @@
       "high": 2,
       "crossref_issues": 410,
       "crossref_autofix_applied": 0,
-      "translated": 15517,
+      "translated": 15551,
       "script_group": "latin"
     },
     "tr": {
@@ -653,6 +653,6 @@
       "zh_TW"
     ]
   },
-  "crossref_total_issues": 20431,
-  "crossref_autofix_total_applied": 12
+  "crossref_total_issues": 20428,
+  "crossref_autofix_total_applied": 0
 }

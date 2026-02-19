@@ -151918,5 +151918,61 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T21:37:50.791229Z"
+  },
+  "spell.creature_illusion.words": {
+    "src_hash": "7f7161483061732b84fd592d3bdc7516",
+    "text": "utevo res ina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:12:23.412913Z"
+  },
+  "spell.ultimate_light.words": {
+    "src_hash": "8fedb1a3fb846e73f3ba3a5cf4d8acc3",
+    "text": "utevo vis lux",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:12:23.414807Z"
+  },
+  "spell.divine_dazzle.words": {
+    "src_hash": "c43346a515abc6ef758e2706da82a909",
+    "text": "exana amp res",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:12:23.419226Z"
+  },
+  "spell.swift_foot.name": {
+    "src_hash": "64c90e322c760fed2c85e9756ec61fe3",
+    "text": "Pie veloz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:12:23.420739Z"
+  },
+  "spell.swift_foot.words": {
+    "src_hash": "b50209f50e0d3589d320bdc0d839f00b",
+    "text": "utamo tempo san",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:12:23.421903Z"
+  },
+  "spell.#example.name": {
+    "src_hash": "ea46a71ced32dc4f89c0a12b1cea144c",
+    "text": "runa de prueba",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:12:23.422686Z"
+  },
+  "spell.sudden_death_rune.words": {
+    "src_hash": "298c9ba9bdcf5bf6384c034990b5ee72",
+    "text": "adori gran mort",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:12:23.423600Z"
   }
 }

@@ -1,32 +1,32 @@
 {
-  "timestamp": "2026-02-19T21:38:40.758869Z",
-  "window_start_utc": "2026-02-19T20:38:38.350899Z",
-  "window_end_utc": "2026-02-19T21:38:38.350899Z",
+  "timestamp": "2026-02-19T21:41:41.261942Z",
+  "window_start_utc": "2026-02-19T20:41:37.074753Z",
+  "window_end_utc": "2026-02-19T21:41:37.074753Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 231,
-  "suspicious_entries": 4595,
-  "guard_fail_entries": 59,
+  "rejected_entries": 236,
+  "suspicious_entries": 5742,
+  "guard_fail_entries": 65,
   "guard_fail_sum": 571,
   "by_type": {
-    "word_salad": 22,
+    "word_salad": 23,
     "contains_tibia_proper_noun": 7,
     "diacritics_missing": 1,
-    "identical_to_en": 162,
+    "identical_to_en": 166,
     "mixed_scripts": 21,
     "cyrillic_latin_mix": 21,
     "mixed_language": 26
   },
   "by_source": {
     "simple": 11,
-    "google_translate": 220
+    "google_translate": 225
   },
   "by_language": {
-    "es": 61,
+    "es": 66,
     "it": 7,
     "ro": 65,
     "pl": 49,
@@ -35,7 +35,7 @@
   },
   "by_category": {
     "questlog.json": 11,
-    "npc.json": 18,
+    "npc.json": 20,
     "books.json": 5,
     "otclient_modules.json": 46,
     "scripts.json": 11,
@@ -47,16 +47,17 @@
     "achievements.json": 36,
     "spells.json": 28,
     "chatchannels.json": 1,
-    "items.json": 35
+    "items.json": 35,
+    "server.json": 3
   },
   "by_severity": {
-    "CRITICAL": 184,
+    "CRITICAL": 189,
     "HIGH": 47
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 162
+      "count": 166
     },
     {
       "type": "mixed_language",
@@ -64,7 +65,7 @@
     },
     {
       "type": "word_salad",
-      "count": 22
+      "count": 23
     },
     {
       "type": "mixed_scripts",
@@ -86,16 +87,16 @@
   "top_keys": [
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 9,
+      "count": 10,
       "types": {
-        "identical_to_en": 9
+        "identical_to_en": 10
       }
     },
     {
       "key": "npc.al_dee.stdmod_41",
-      "count": 9,
+      "count": 10,
       "types": {
-        "word_salad": 9
+        "word_salad": 10
       }
     },
     {

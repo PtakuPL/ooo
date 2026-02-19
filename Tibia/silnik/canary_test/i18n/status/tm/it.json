@@ -72982,5 +72982,693 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T21:34:07.959132Z"
+  },
+  "npc.sissek.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Non dimenticare di depositare i tuoi soldi qui nella Banca Globale prima di partire per l'avventura.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.247491Z"
+  },
+  "npc.skjaar.farewell_msg_1": {
+    "src_hash": "f2fb8fae97707ee162c0df0618bb26f0",
+    "text": "Addio, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.249633Z"
+  },
+  "npc.skjaar.say_4": {
+    "src_hash": "fbce1a9805b1a6b71d800ff6907da5fa",
+    "text": "Non hai abbastanza soldi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.250426Z"
+  },
+  "npc.spectulus.multi_8": {
+    "src_hash": "82e244c7a9c7bbb6bb9429d1079ebe3c",
+    "text": "Sei disposto ad aiutarmi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.259547Z"
+  },
+  "npc.stricken_soul.say_3": {
+    "src_hash": "c066542c456632337339c67bf887b0a8",
+    "text": "Scusa, non ho capito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.285700Z"
+  },
+  "npc.stutch.farewell_msg_1": {
+    "src_hash": "2303a1d196e96f4f401a39fa25e92876",
+    "text": "LUNGA VITA AL RE! Puoi andartene adesso!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.287400Z"
+  },
+  "npc.stutch.greet_1": {
+    "src_hash": "d0e12fd7c549bed11b5ac6d677e977a8",
+    "text": "SALUTE AL RE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.288639Z"
+  },
+  "npc.stutch.greet_2": {
+    "src_hash": "d0e12fd7c549bed11b5ac6d677e977a8",
+    "text": "SALUTE AL RE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.289723Z"
+  },
+  "npc.stutch.stdmod_1": {
+    "src_hash": "3eba532f0ba74efb42e5f3aaa344ba0b",
+    "text": "ATTENZIONE ALLE MANIERE COMUNI! Per rivolgersi al re salutare con il suo titolo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.291219Z"
+  },
+  "npc.stutch.stdmod_2": {
+    "src_hash": "3eba532f0ba74efb42e5f3aaa344ba0b",
+    "text": "ATTENZIONE ALLE MANIERE COMUNI! Per rivolgersi al re salutare con il suo titolo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.292221Z"
+  },
+  "npc.sundara.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturalmente, basta sfogliare la mia merce. Puoi anche guardare {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.293646Z"
+  },
+  "npc.sundara.voice_1": {
+    "src_hash": "e90dd74cd1d388754108ef3af946dba3",
+    "text": "Pozioni di salute! Pozioni di mana! Acquistali qui!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.294676Z"
+  },
+  "npc.sundara.voice_2": {
+    "src_hash": "2e96e0843517997dfabc696186c3ce05",
+    "text": "Tutti i tipi di pozioni disponibili qui!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.295426Z"
+  },
+  "npc.suzy.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.296662Z"
+  },
+  "npc.suzy.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Non dimenticare di depositare i tuoi soldi qui nella Banca Globale prima di partire per l'avventura.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.297612Z"
+  },
+  "npc.sven.say_3": {
+    "src_hash": "b19bd8f83790783e2b72177a25781b71",
+    "text": "Va bene, siamo pari!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.301504Z"
+  },
+  "npc.sven.say_4": {
+    "src_hash": "7ea7e35a27335c39b262632da226a243",
+    "text": "Non ne hai abbastanza. Portami i soldi e me ne dimenticherò.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.302025Z"
+  },
+  "npc.svenson.stdmod_1": {
+    "src_hash": "b42ce445bbb5d3ce8d4dd0b5edc94823",
+    "text": "Vuoi navigare {0}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.303175Z"
+  },
+  "npc.svenson.stdmod_2": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vorremmo servirti un po' di tempo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.303610Z"
+  },
+  "npc.svenson.stdmod_4": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Sono il capitano di questa nave.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.304220Z"
+  },
+  "npc.svenson.stdmod_5": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Sono il capitano di questa nave.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.304640Z"
+  },
+  "npc.taegen.farewell_msg_1": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Possa l'illuminazione essere il tuo percorso, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.305497Z"
+  },
+  "npc.taegen.multi_14": {
+    "src_hash": "43ac27d0ac82215053757aa1dad8cb94",
+    "text": "C'è una fata che una volta mi parlò di questo incantesimo. Forse condividerà la sua conoscenza. Puoi trovarla in un piccolo villaggio fatato nel sud-ovest di Feyrist.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.306965Z"
+  },
+  "npc.taegen.multi_7": {
+    "src_hash": "48eba4176f3059b7968230dd4b0c9c50",
+    "text": "Ma c'è una fata che una volta me ne parlò. Forse condividerà la sua conoscenza. Puoi trovarla in un piccolo villaggio fatato nel sud-ovest di Feyrist.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.308444Z"
+  },
+  "npc.taegen.walkaway_msg_1": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Possa l'illuminazione essere il tuo percorso, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.309494Z"
+  },
+  "npc.talila.farewell_msg_1": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Possa l'illuminazione essere il tuo percorso, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.309947Z"
+  },
+  "npc.tandros.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturalmente, basta sfogliare la mia merce. Puoi anche guardare {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.313718Z"
+  },
+  "npc.tanyt.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Arrivederci. Consigliateci se siete rimasti soddisfatti del nostro servizio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.314442Z"
+  },
+  "npc.tanyt.stdmod_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Senti il ​​vento tra i capelli durante uno dei miei giri sul tappeto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.315060Z"
+  },
+  "npc.tanyt.stdmod_3": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Cerchi un passaggio a {0} per {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.315735Z"
+  },
+  "npc.tanyt.stdmod_4": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vorremmo servirti un po' di tempo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.316215Z"
+  },
+  "npc.tanyt.voice_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Senti il ​​vento tra i capelli durante uno dei miei giri sul tappeto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.317161Z"
+  },
+  "npc.tarak_inner.say_2": {
+    "src_hash": "88ef5e9e3e756c3fab6b1c47f569d2fe",
+    "text": "Non hai abbastanza soldi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.317790Z"
+  },
+  "npc.tefrit.say_1": {
+    "src_hash": "69a94b4b8dd8f6664c57a1839020af33",
+    "text": "Potresti aiutarmi a fare un rituale?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.321282Z"
+  },
+  "npc.tefrit.say_4": {
+    "src_hash": "765186bb3941e992a07b41a07e462e07",
+    "text": "Hai portato tutto il materiale di cui ti avevo informato?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.322228Z"
+  },
+  "npc.tefrit.say_5": {
+    "src_hash": "1c59347447abf5fbb119ca8a48703ac4",
+    "text": "Grazie questa fase del rituale è completa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.322685Z"
+  },
+  "npc.telas.say_7": {
+    "src_hash": "e04607d84a383e8cbb7db9ec770f05da",
+    "text": "Parola sbagliata.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.325304Z"
+  },
+  "npc.tesha.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.334280Z"
+  },
+  "npc.tesha.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Non dimenticare di depositare i tuoi soldi qui nella Banca Globale prima di partire per l'avventura.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:39:59.334834Z"
+  },
+  "item.28919.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.834234Z"
+  },
+  "item.29108.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.838015Z"
+  },
+  "item.29109.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.838304Z"
+  },
+  "item.29110.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.838775Z"
+  },
+  "item.29111.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.839022Z"
+  },
+  "item.29112.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.839294Z"
+  },
+  "item.29113.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.839598Z"
+  },
+  "item.29114.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.839887Z"
+  },
+  "item.29115.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.840318Z"
+  },
+  "item.29136.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.840681Z"
+  },
+  "item.29137.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.840921Z"
+  },
+  "item.29138.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.841362Z"
+  },
+  "item.29139.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.841629Z"
+  },
+  "item.2914.name": {
+    "src_hash": "263addb7611158a2c3db7c164a20cc2f",
+    "text": "lampada",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.841866Z"
+  },
+  "item.29140.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.842100Z"
+  },
+  "item.29141.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.842368Z"
+  },
+  "item.29142.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.842755Z"
+  },
+  "item.29143.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.842997Z"
+  },
+  "item.2920.name": {
+    "src_hash": "69756f3cd326cb18036b1cb8f8e9f77f",
+    "text": "torcia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.843628Z"
+  },
+  "item.2922.name": {
+    "src_hash": "69756f3cd326cb18036b1cb8f8e9f77f",
+    "text": "torcia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.843981Z"
+  },
+  "item.2924.name": {
+    "src_hash": "69756f3cd326cb18036b1cb8f8e9f77f",
+    "text": "torcia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.844419Z"
+  },
+  "item.2928.name": {
+    "src_hash": "596220a2316d94e2554ef21812bb6d07",
+    "text": "portatore di fiaccola",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.845452Z"
+  },
+  "item.29290.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.846424Z"
+  },
+  "item.29295.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.847321Z"
+  },
+  "item.293.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "erba",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.848253Z"
+  },
+  "item.2930.name": {
+    "src_hash": "596220a2316d94e2554ef21812bb6d07",
+    "text": "portatore di fiaccola",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.848550Z"
+  },
+  "item.294.name": {
+    "src_hash": "86e79fae37e1a12435e54bc8dc33a767",
+    "text": "trappola",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.852008Z"
+  },
+  "item.2940.name": {
+    "src_hash": "596220a2316d94e2554ef21812bb6d07",
+    "text": "portatore di fiaccola",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.852337Z"
+  },
+  "item.2942.name": {
+    "src_hash": "596220a2316d94e2554ef21812bb6d07",
+    "text": "portatore di fiaccola",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.854927Z"
+  },
+  "item.29434.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.857996Z"
+  },
+  "item.30008.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.869775Z"
+  },
+  "item.30032.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.872826Z"
+  },
+  "item.30130.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.886913Z"
+  },
+  "item.30199.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.895402Z"
+  },
+  "item.30207.name": {
+    "src_hash": "f13460bd46c28e73e8d2b6122bea2241",
+    "text": "cranio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.897941Z"
+  },
+  "item.30217.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.901422Z"
+  },
+  "item.30226.name": {
+    "src_hash": "9603a224b40d7b67210b78f2e390d00f",
+    "text": "ramo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.902994Z"
+  },
+  "item.30277.name": {
+    "src_hash": "390b9d5a0b69278a88df6b20792532b5",
+    "text": "Ghiacciolo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.908585Z"
+  },
+  "item.304.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "erba",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.915931Z"
+  },
+  "item.3059.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Mostra i tuoi incantesimi e può anche proteggere dagli attacchi quando indossato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.925041Z"
+  },
+  "item.30756.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.930020Z"
+  },
+  "item.30757.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.930278Z"
+  },
+  "item.30758.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.930578Z"
+  },
+  "item.30759.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.930991Z"
+  },
+  "item.30760.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.931282Z"
+  },
+  "item.30761.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.931538Z"
+  },
+  "item.30762.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:48.931795Z"
   }
 }

@@ -1345,11 +1345,11 @@
   },
   "npc.lardoc_bashsmite.say_9": {
     "src_hash": "69ce05199222d304e8f82cb747eed8ab",
-    "text": "Don't waste my time.",
+    "text": "Nu-mi pierde timpul.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:46:54.060336Z"
+    "updated_at": "2026-02-19T21:40:38.699055Z"
   },
   "npc.lokur.say_5": {
     "src_hash": "12d673409d71f1fc127ebad108378378",
@@ -64718,5 +64718,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T21:32:56.332879Z"
+  },
+  "npc.klom_stonecutter.say_6": {
+    "src_hash": "a91afb072f11b3e7803589203909e107",
+    "text": "Întoarce-te când ți-ai terminat treaba.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.681982Z"
+  },
+  "npc.lardoc_bashsmite.say_11": {
+    "src_hash": "66fc7cda8144816a796bb014e25892f0",
+    "text": "Nu aveți suficiente dispozitive suspecte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.689288Z"
+  },
+  "npc.lardoc_bashsmite.say_13": {
+    "src_hash": "66fc7cda8144816a796bb014e25892f0",
+    "text": "Nu aveți suficiente dispozitive suspecte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.690699Z"
+  },
+  "npc.lardoc_bashsmite.say_15": {
+    "src_hash": "66fc7cda8144816a796bb014e25892f0",
+    "text": "Nu aveți suficiente dispozitive suspecte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.692198Z"
+  },
+  "npc.lardoc_bashsmite.say_2": {
+    "src_hash": "6a9350fb722588784168d702f11406b5",
+    "text": "Gnomii încă au nevoie de ajutorul tău, membru al Brigăzii lui Bigfoot. Demonstrează-ți valoarea răspunzând la apelurile lor! ({}/10)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.693528Z"
+  },
+  "npc.lardoc_bashsmite.say_3": {
+    "src_hash": "7ba0ff1dbed60b1c917a31393f2ef9ea",
+    "text": "Piticii încă au nevoie de ajutorul tău, membru al Brigăzii lui Bigfoot. Demonstrează-ți valoarea răspunzând la apelurile lor! ({}/10)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.694271Z"
+  },
+  "npc.lardoc_bashsmite.say_4": {
+    "src_hash": "60f3ddb904bf1f6c8f085b75e33f4ed0",
+    "text": "Cercetașii încă au nevoie de ajutorul tău, membru al Brigăzii lui Bigfoot. Demonstrează-ți valoarea răspunzând la apelurile lor! ({}/10)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.695258Z"
+  },
+  "npc.lardoc_bashsmite.say_5": {
+    "src_hash": "922613a768393e5249553458ec30cb48",
+    "text": "Nu am nevoie de ajutorul tău deocamdată. Întoarce-te mai târziu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.696852Z"
+  },
+  "npc.lardoc_bashsmite.say_8": {
+    "src_hash": "0f152bedcc5a9f407b202ee4a03a458b",
+    "text": "Dacă îmi aduci orice dispozitive suspecte cu privire la creaturile pe care le ucizi aici, voi face să merite, spunându-le celorlalți despre generozitatea ta. Câte vrei să oferi? ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.697836Z"
+  },
+  "npc.lavirias.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.701371Z"
+  },
+  "npc.lee_delle.stdmod_26": {
+    "src_hash": "ce6b61c8f2e16d8a4b54ad73138ee5ca",
+    "text": "Doar cere-mi un {trade} pentru a vedea ce cumpăr de la tine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.707582Z"
+  },
+  "npc.lee_delle.stdmod_33": {
+    "src_hash": "c6111c0ce62b4701d6f63762fb96fc6e",
+    "text": "Ei bine, fără aur, fără înțelegere. Câștigă aur luptând cu {monsters} și ridicând lucrurile pe care le poartă. Vinde-l la {merchants} pentru a face profit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.710127Z"
+  },
+  "npc.lee_delle.stdmod_37": {
+    "src_hash": "c7b698bf128650165ce7b3f169e297ff",
+    "text": "Și-a dedicat viața pentru a-i primi pe nou-veniți pe această insulă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.712038Z"
+  },
+  "npc.lee_delle.stdmod_38": {
+    "src_hash": "9e48c63b7708028e36d3561878e4eb33",
+    "text": "Biata bătrână, fiul ei {Tom} nu o vizitează niciodată.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.713059Z"
+  },
+  "npc.lee_delle.stdmod_45": {
+    "src_hash": "1eb45a909a22c6117d2ec6f884f996fa",
+    "text": "În mare parte, el rămâne singur. Este un pustnic în afara orașului - noroc să-l găsești.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.715527Z"
+  },
+  "npc.lee_delle.stdmod_50": {
+    "src_hash": "e8899364d696c697b01a31b7ce5a01ca",
+    "text": "El este bronzerul local. Ai putea încerca să-i vinzi cadavre proaspete sau piele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.716841Z"
+  },
+  "npc.lee_delle.stdmod_52": {
+    "src_hash": "ca5af46d9c20d6cbd9f33d8c59caee9d",
+    "text": "Vrei să cumperi o minge de fotbal pentru 111 aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.718034Z"
+  },
+  "npc.leeland.say_4": {
+    "src_hash": "e04607d84a383e8cbb7db9ec770f05da",
+    "text": "Cuvânt greșit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.720278Z"
+  },
+  "npc.leeland.say_8": {
+    "src_hash": "e04607d84a383e8cbb7db9ec770f05da",
+    "text": "Cuvânt greșit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.722556Z"
+  },
+  "npc.liane.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "A fost o plăcere să vă ajut, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.724294Z"
+  },
+  "npc.liane.say_3": {
+    "src_hash": "310b4b316baf2b1142fe07bc8d96dc9b",
+    "text": "Oh, nu-l ai.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.725688Z"
+  },
+  "npc.liane.sendtrade_msg_1": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Aici. Nu uitați că trebuie să cumpărați și o etichetă dacă doriți să trimiteți un colet. Scrieți întotdeauna numele lui {receiver} în primul rând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.727496Z"
+  },
+  "npc.liane.voice_1": {
+    "src_hash": "600057e0b95043563622fa58cb570b47",
+    "text": "Bine ați venit la oficiul poștal!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.728668Z"
+  },
+  "npc.liane.voice_2": {
+    "src_hash": "611f89c7262e935f33b9114aa8652e11",
+    "text": "Hei, trimite-i o scrisoare prietenului tău din când în când. Ține legătura, știi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.730055Z"
+  },
+  "npc.liane.voice_3": {
+    "src_hash": "2951906ee85e50cb7be4866a3c95ec80",
+    "text": "Dacă aveți nevoie de ajutor cu scrisori sau pachete, întrebați-mă. Pot să explic totul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.731320Z"
+  },
+  "npc.liane.walkaway_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "A fost o plăcere să vă ajut, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.732799Z"
+  },
+  "npc.lily.keyword_1": {
+    "src_hash": "8ad971c5d8a76d2b69437c57eda95147",
+    "text": "Da?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.734111Z"
+  },
+  "npc.lily.stdmod_23": {
+    "src_hash": "e1358dab3ba6953efb2d59f54724b812",
+    "text": "Dacă îmi spui numele unui cetățean, îți voi spune ce știu despre el sau ea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.737726Z"
+  },
+  "npc.lily.stdmod_39": {
+    "src_hash": "7defe47d2884475b8bd17dca63d0bcd8",
+    "text": "Pentru a vedea ofertele unui comerciant, pur și simplu vorbiți cu acesta și cereți un {trade}. Îți vor arăta cu plăcere ofertele lor și, de asemenea, lucrurile pe care le cumpără de la tine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.741526Z"
+  },
+  "npc.lily.stdmod_58": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "Cum doriți.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.745803Z"
+  },
+  "npc.lisander.say_3": {
+    "src_hash": "ca1cb9230c8ebfe2c7f5b120cca6c871",
+    "text": "Errrkss - tuse - ce naiba ai pus acolo? Pleacă din ochi!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.750873Z"
+  },
+  "npc.llathriel.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.752029Z"
+  },
+  "npc.lokur.say_1": {
+    "src_hash": "f861e7ec394314cc88a104df2e9bb60c",
+    "text": "Biletul dvs. săptămânal este încă valabil. Ar fi o pierdere de bani să cumperi al doilea",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.754889Z"
+  },
+  "npc.lokur.say_2": {
+    "src_hash": "78c8e8f1e0c24e044738d408a4bdd010",
+    "text": "Doriți să cumpărați un bilet săptămânal pentru vagoanele cu minereu? Cu el poți călători liber și rapid prin Kazordoon timp de o săptămână. Doar 250 de aur. Afacere?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.755891Z"
+  },
+  "npc.lokur.say_4": {
+    "src_hash": "622d7ed7c7070fcb0a5487989b8ba4da",
+    "text": "Iată ștampila ta. Nu poate fi transferat unei alte persoane și va dura peste o săptămână. Veți primi o notificare când utilizați un vagon de minereu când acesta nu mai este valabil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.757800Z"
+  },
+  "npc.lorbas.say_2": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Nu ai nicio prăjitură pe care mi-aș dori.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.760525Z"
+  },
+  "npc.lorek.stdmod_1": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Cauți o trecere la {0} pentru {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:40:38.763192Z"
   }
 }

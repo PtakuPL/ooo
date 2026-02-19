@@ -37606,5 +37606,29 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-17T11:52:52.508831Z"
+  },
+  "npc.brodrosch.greet_msg_1": {
+    "src_hash": "d4efc2d0aac57a2547e5d7db78fe4450",
+    "text": "Добро пожаловать, |PLAYERNAME|! Пусть земля защитит тебя на каменистых землях. Если вам нужен {passage}, я могу вам помочь.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:48.741740Z"
+  },
+  "npc.brodrosch.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "У вас недостаточно денег.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:48.742327Z"
+  },
+  "npc.brodrosch.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Тогда до свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:48.744003Z"
   }
 }

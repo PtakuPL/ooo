@@ -70494,5 +70494,317 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T20:07:41.468760Z"
+  },
+  "npc.ser_tybald.stdmod_12": {
+    "src_hash": "8f64ff0dc19109a2bbe1f2facbcf7cfd",
+    "text": "Un giovane molto testardo, anche se apprezzo la sua devozione all'arte di preparare pozioni. \\z\n\t\tNessun rispetto per l'autorità senior o per l'età! Tranne forse un piccolo debole per il signor Morris.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.334705Z"
+  },
+  "npc.ser_tybald.stdmod_13": {
+    "src_hash": "bb307923d19e6276118a25b4ce47a266",
+    "text": "Uno strano giovane. Sembra motivato, secondo me. Con quale forza, non lo so. \\z\n\t\tImmagino che il mondo abbia bisogno di avventurieri come lui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.335402Z"
+  },
+  "npc.ser_tybald.stdmod_14": {
+    "src_hash": "0b92ef836bb0fa26d11a4550048f20f4",
+    "text": "Riscattare la propria anima diventando impiegato? Non molto probabile. Una volta pirata, sempre pirata. \\z\n\t\tMa è un vecchio e affascinante ladro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.336160Z"
+  },
+  "npc.ser_tybald.stdmod_16": {
+    "src_hash": "902b5d31d369e5d04ec4f6158fd4d95c",
+    "text": "È esperto nelle arti marziali. Un insegnante molto abile di incantesimi per cavalieri e paladini. \\z\n\t\tSe questa è la tua vocazione, dovresti parlare con Ser Tybald.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.337185Z"
+  },
+  "npc.ser_tybald.stdmod_17": {
+    "src_hash": "c82b0aad3e136b13688f992a06d6be31",
+    "text": "Ah, sì. Ho viaggiato molto con Plunderpurse, se ricordo bene. Capitano Plunderpurse, allora. \\z\n\t\t\tHa la testa piena di numeri e statistiche, quel ragazzo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.337949Z"
+  },
+  "npc.ser_tybald.stdmod_5": {
+    "src_hash": "edfb216b80cdf02895b39beabbb5f16a",
+    "text": "Sono Garamond Starstream.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.338629Z"
+  },
+  "npc.ser_tybald.stdmod_6": {
+    "src_hash": "44ca56ea100283d3a8307a98b4af3c69",
+    "text": "Non hai ascoltato? Sono l'insegnante degli incantesimi da druido e stregone dal livello 8 al 18. \\z\n\t\tInsegno ai giovani avventurieri gli incantesimi che potranno usare una volta ottenuta la giusta vocazione: druido o stregone.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.339435Z"
+  },
+  "npc.ser_tybald.stdmod_7": {
+    "src_hash": "acefac1b3eccbd6ea4d08ab12deb5507",
+    "text": "Ho un vecchio amico lì. Non lo sento da un po'.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.339990Z"
+  },
+  "npc.ser_tybald.stdmod_8": {
+    "src_hash": "f1ba5e2a1b4d8a9622d9c95c6441edf6",
+    "text": "Oh, non è poi così male qui, credimi. Almeno ottengo sempre discepoli giovani ed entusiasti! \\z\n\t\tAnche se devo confessare che mi manca la vastità della pianura tibiana. <sighs>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.340810Z"
+  },
+  "npc.ser_tybald.stdmod_9": {
+    "src_hash": "55daa5399f2bd04c879447383de167bc",
+    "text": "Un vecchio cacciatore gentile. Ama vedere la vita giovane in giro, assumendo le vie e le caratteristiche della terra. \\z\n\t\tSe hai qualche domanda, chiedi aiuto a Inigo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.341492Z"
+  },
+  "npc.serafin.say_2": {
+    "src_hash": "92874d037552d6ed7c7552ac9eeebf3b",
+    "text": "Sarebbe meglio che te ne andassi adesso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.342177Z"
+  },
+  "npc.servant_sentry.farewell_msg_1": {
+    "src_hash": "278e8d7cf138ee431778a655a1a0f78b",
+    "text": "Arrivederci. Umano. Essendo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.342764Z"
+  },
+  "npc.servant_sentry.walkaway_msg_1": {
+    "src_hash": "278e8d7cf138ee431778a655a1a0f78b",
+    "text": "Arrivederci. Umano. Essendo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.343818Z"
+  },
+  "npc.shanar.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.353064Z"
+  },
+  "npc.shiantis.greet_msg_1": {
+    "src_hash": "f8af583ca7dedc60cc41adfd0f017472",
+    "text": "Oh, per favore entra, |PLAYERNAME|. Cosa posso fare per lei? Se hai bisogno di attrezzatura per l'avventura, chiedimi un {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.358205Z"
+  },
+  "npc.shiantis.say_1": {
+    "src_hash": "ca5af46d9c20d6cbd9f33d8c59caee9d",
+    "text": "Vuoi comprare un pallone da calcio per 111 oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.358634Z"
+  },
+  "npc.shiantis.sendtrade_msg_1": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturalmente, basta sfogliare la mia merce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.359652Z"
+  },
+  "npc.shimun.say_1": {
+    "src_hash": "69a94b4b8dd8f6664c57a1839020af33",
+    "text": "Potresti aiutarmi a fare un rituale?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.361295Z"
+  },
+  "npc.shimun.say_5": {
+    "src_hash": "1c59347447abf5fbb119ca8a48703ac4",
+    "text": "Grazie questa fase del rituale è completa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.362183Z"
+  },
+  "npc.shiriel.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.362876Z"
+  },
+  "npc.shiriel.farewell_msg_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.363385Z"
+  },
+  "npc.shiriel.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturalmente, basta sfogliare la mia merce. Puoi anche guardare {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.363895Z"
+  },
+  "npc.shiriel.walkaway_msg_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.364274Z"
+  },
+  "npc.shirtalis_of_the_summer_court.greet_msg_1": {
+    "src_hash": "1d4aed09bf4b360d0fe917e2de3b88d4",
+    "text": "Ciao combattente. Immagino che tu sia qui per {fight} per il nostro nobile {cause}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.365940Z"
+  },
+  "npc.shirtalis_of_the_summer_court.say_1": {
+    "src_hash": "749d9909035452a589e191811401db0f",
+    "text": "Permettiamo ai campioni capaci di tutte le razze di lottare per la nostra causa contro le sfide del {arena}. Allora sei interessato? Non mi interessano i giochi di parole fantasiosi, quindi basterà un semplice {yes} o {no}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.367332Z"
+  },
+  "npc.shirtalis_of_the_summer_court.say_2": {
+    "src_hash": "b44e223dae3e67dc1e85cf990136f5b5",
+    "text": "Ora puoi entrare nel teletrasporto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.368064Z"
+  },
+  "npc.shirtalis_of_the_summer_court.say_4": {
+    "src_hash": "4dd892d9ddd77849696806ed20b195f9",
+    "text": "Questo luogo è sempre stato il luogo in cui i campioni dell'estate e dell'inverno si sono scontrati in battaglia. Nel corso dei secoli questo spettacolo ha attirato qui molte creature per osservare, partecipare e dedicarsi ad attività meno gustose.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.369600Z"
+  },
+  "npc.siestaar.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.374264Z"
+  },
+  "npc.siestaar.voice_1": {
+    "src_hash": "cf448ab6d7c715b449b2ad0bf53e3791",
+    "text": "Non dimenticare di depositare i tuoi soldi qui alla Tibian Bank prima di partire per l'avventura.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.374885Z"
+  },
+  "npc.siflind.say_14": {
+    "src_hash": "5eb2b67d37a6f7a2aecb45059ac3372b",
+    "text": "Ora non ho alcuna missione per te.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.376446Z"
+  },
+  "npc.siflind.say_30": {
+    "src_hash": "86bc7d7b8b310e87b8592ce776aca2cf",
+    "text": "Sono esaurito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.378153Z"
+  },
+  "npc.siflind.say_32": {
+    "src_hash": "81f2ff9dc5b557adaa90be6c37a8e445",
+    "text": "Non hai abbastanza monete d'oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.379042Z"
+  },
+  "npc.sigurd.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturalmente, basta sfogliare la mia merce. Puoi anche guardare {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.380392Z"
+  },
+  "npc.simon_the_beggar.no_i_see": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "Vedo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.382833Z"
+  },
+  "npc.simon_the_beggar.say_11": {
+    "src_hash": "7b82e1e922974120118a565d5e316935",
+    "text": "Non hai tutti gli elementi richiesti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.383636Z"
+  },
+  "npc.simon_the_beggar.say_12": {
+    "src_hash": "7b82e1e922974120118a565d5e316935",
+    "text": "Non hai tutti gli elementi richiesti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.384085Z"
+  },
+  "npc.simon_the_beggar.say_13": {
+    "src_hash": "67ee55e526e40a4f4eb7b2add1c18927",
+    "text": "Sembra che tu abbia già questo componente aggiuntivo, non provare a prendermi in giro, figliolo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.384800Z"
+  },
+  "npc.simon_the_beggar.say_24": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Non hai nessun biscotto che vorrei.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.385954Z"
+  },
+  "npc.sissek.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:13:43.391028Z"
   }
 }

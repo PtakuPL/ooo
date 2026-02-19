@@ -32046,5 +32046,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T20:42:04.996816Z"
+  },
+  "spell.lloyd_wave.name": {
+    "src_hash": "ad4c98b912a97a74be4871d555f23792",
+    "text": "lloyd våg",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:23:14.497377Z"
+  },
+  "spell.foam_splash.name": {
+    "src_hash": "bc1f2119da4063a52687b9fba86321ef",
+    "text": "skumstänk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:23:14.498004Z"
   }
 }

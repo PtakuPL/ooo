@@ -11068,7 +11068,32 @@ def _load_translation_overrides(i18n_dir: str, lang: str):
     except Exception:
         return {}
 
-TRANSLATION_OVERRIDES = {target_lang: _load_translation_overrides(I18N_DIR, target_lang)}
+def _load_reviewed_critical_overrides(i18n_dir: str, lang: str):
+    overrides = {}
+    try:
+        path = os.path.join(i18n_dir, "overrides", "reviewed", f"{lang}.json")
+        if not os.path.isfile(path):
+            return overrides
+        with open(path, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+        if not isinstance(payload, dict):
+            return overrides
+        for key, value in payload.items():
+            if not isinstance(key, str):
+                continue
+            if key.startswith("_"):
+                continue
+            if isinstance(value, str) and value.strip():
+                overrides[key] = value
+        return overrides
+    except Exception:
+        return {}
+
+_base_overrides = _load_translation_overrides(I18N_DIR, target_lang)
+_reviewed_overrides = _load_reviewed_critical_overrides(I18N_DIR, target_lang)
+if _reviewed_overrides:
+    _base_overrides.update(_reviewed_overrides)
+TRANSLATION_OVERRIDES = {target_lang: _base_overrides}
 
 # Google Translate config (from env)
 use_google_translate = os.environ.get("USE_GOOGLE_TRANSLATE", "false") == "true"
@@ -13430,6 +13455,43 @@ def _is_game_nontranslatable(key, en_value):
         return True
     return False
 
+_PROPER_NOUN_DOMAIN_WHITELIST = {
+    "monster": {"ferumbras", "morgaroth", "orshabaal", "ghazbaran", "yalahari", "azerus"},
+    "npc": {"palimuth", "yalahari", "azerus", "omrabas", "haba", "budrik"},
+    "spell": {"exura", "exori", "exevo", "utana", "utevo", "adori", "avalanche", "sudden"},
+    "book": {"tibia", "yalahar", "demona", "fardos", "zathroth", "umdar"},
+    "quest": {"inquisition", "dreamers", "bigfoot", "oramond", "yalahar"},
+    "raid": {"ferumbras", "orshabaal", "morgaroth", "ghazbaran"},
+}
+
+def _key_domain(key: str) -> str:
+    k = str(key or "")
+    if k.startswith("book.otbm."):
+        return "book"
+    return k.split(".", 1)[0] if "." in k else k
+
+def _is_domain_whitelisted_proper_noun(key: str, en_value: str) -> bool:
+    en_stripped = str(en_value or "").strip()
+    if not en_stripped:
+        return False
+    domain = _key_domain(key)
+    if domain not in _PROPER_NOUN_DOMAIN_WHITELIST:
+        return False
+    if not str(key or "").endswith((".name", ".title", ".desc")):
+        return False
+    words = [w for w in re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ]+", en_stripped)]
+    if not (1 <= len(words) <= 4):
+        return False
+    if not all(w[:1].isupper() for w in words):
+        return False
+    whitelist = _PROPER_NOUN_DOMAIN_WHITELIST.get(domain, set())
+    matched = 0
+    for w in words:
+        lw = w.lower()
+        if w in TIBIA_PROPER_NOUNS or lw in whitelist:
+            matched += 1
+    return matched >= max(1, len(words) - 1)
+
 def _is_proper_noun_key(key, en_value):
     """Klucz z nazwą własną — identyczna wartość = poprawne tłumaczenie."""
     # Nie traktujemy już masowo item/monster/spell name jako "proper noun":
@@ -13457,6 +13519,10 @@ def _is_proper_noun_key(key, en_value):
         words = [w for w in re.findall(r"[A-Za-zÀ-ÿ]+", en_stripped)]
         if 1 <= len(words) <= 3 and all(w[:1].isupper() for w in words):
             return True
+    # Domenowa whitelista nazw własnych (WQ-HARD-15): ogranicza false-positive
+    # bez globalnego przepuszczania EN-copy.
+    if _is_domain_whitelisted_proper_noun(key, en_stripped):
+        return True
     # All-uppercase/digit strings (abbreviations, codes)
     if en_stripped and all(c.isupper() or c.isdigit() or c in ".-_/ " for c in en_stripped):
         return True
@@ -15675,6 +15741,7 @@ if all_recent:
         "identical_to_en_exempt": identical_to_en_exempt,
         "very_short_translations": very_short,
         "very_long_translations": very_long,
+        "recent_include_high_critical": recent_include_high_critical,
     }
 
 # Zapisz quality_report.jsonl
@@ -15729,7 +15796,19 @@ try:
 except Exception:
     pass
 
-recent_translations = recent_translations[-20:]
+_all_recent = list(recent_translations)
+if recent_include_high_critical:
+    recent_translations = _all_recent[-20:]
+else:
+    filtered_recent = [
+        e for e in _all_recent
+        if str(e.get("severity", "LOW")).upper() not in {"HIGH", "CRITICAL"}
+    ]
+    recent_hidden_high_critical = max(0, len(_all_recent) - len(filtered_recent))
+    recent_translations = filtered_recent[-20:]
+
+if quality_data:
+    quality_data["recent_hidden_high_critical"] = recent_hidden_high_critical
 try:
     os.makedirs(status_dir, exist_ok=True)
     recent_entry = {
@@ -15737,12 +15816,34 @@ try:
         "language": target_lang,
         "json_file": json_file,
         "translated": translated,
+        "recent_include_high_critical": recent_include_high_critical,
+        "recent_hidden_high_critical": recent_hidden_high_critical,
         "entries": recent_translations,
     }
     with open(os.path.join(status_dir, "translation_recent_latest.json"), "w", encoding="utf-8") as f:
         json.dump(recent_entry, f, indent=2, ensure_ascii=False)
     with open(os.path.join(status_dir, "translation_recent_report.jsonl"), "a", encoding="utf-8") as f:
         f.write(json.dumps(recent_entry, ensure_ascii=False) + "\n")
+except Exception:
+    pass
+
+try:
+    if str(target_lang or "").lower() in {"pl", "es"}:
+        review_dir = os.path.join(i18n_dir, "overrides", "review_queue")
+        os.makedirs(review_dir, exist_ok=True)
+        pack_entry = {
+            "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+            "language": target_lang,
+            "json_file": json_file,
+            "critical_count": len(critical_bad_keys_pack),
+            "entries": critical_bad_keys_pack,
+        }
+        latest_name = f"critical_bad_keys_pack_{str(target_lang).lower()}_latest.json"
+        report_name = f"critical_bad_keys_pack_{str(target_lang).lower()}_report.jsonl"
+        with open(os.path.join(review_dir, latest_name), "w", encoding="utf-8") as f:
+            json.dump(pack_entry, f, indent=2, ensure_ascii=False)
+        with open(os.path.join(review_dir, report_name), "a", encoding="utf-8") as f:
+            f.write(json.dumps(pack_entry, ensure_ascii=False) + "\n")
 except Exception:
     pass
 

@@ -434,9 +434,12 @@ head -n 100 i18n/status/pl_es_problem_cases_*.txt
 - [x] `WQ-HARD-12 (P0)`: Implementować `guard_fail_breakdown_latest.json` + publikację w `I18N_STATUS.md`.
 - [x] `WQ-HARD-13 (P0)`: Dodać detektory `en_marker_present`, `artifact_token_detected`, `mixed_language_ratio` dla PL/ES.
 - [x] `WQ-HARD-14 (P0)`: Dodać auto-fix klasy `AUTO_FIX_NOW` (`[EN]`, tokeny artefaktowe, hybrydy oczywiste).
-- [ ] `WQ-HARD-15 (P1)`: Dodać `proper_noun_exemption` + whitelisty domenowe, aby ograniczyć false-positive.
-- [ ] `WQ-HARD-16 (P1)`: Dodać tryb audytu „recent keys without HIGH/CRITICAL” do dashboardu.
-- [ ] `WQ-HARD-17 (P0)`: Przygotować „critical bad keys pack” PL/ES i zassać do `i18n/overrides/{lang}.json` po review.
+- [x] `WQ-HARD-15 (P1)`: Dodać `proper_noun_exemption` + whitelisty domenowe, aby ograniczyć false-positive.
+- [x] `WQ-HARD-16 (P1)`: Dodać tryb audytu „recent keys without HIGH/CRITICAL” do dashboardu.
+- [x] `WQ-HARD-17 (P0)`: Przygotować „critical bad keys pack” PL/ES i zassać do `i18n/overrides/{lang}.json` po review.
+- [ ] `WQ-HARD-18 (P0)`: Dodać test regresji `critical_bad_keys_pack` (plik latest nie może być pusty dla PL/ES, jeśli są CRITICAL w cyklu).
+- [ ] `WQ-HARD-19 (P1)`: Dodać alarm trendu `recent_hidden_high_critical` (próg + alert w `I18N_STATUS.md`).
+- [ ] `WQ-HARD-20 (P0)`: Dodać walidator review-override (`i18n/overrides/reviewed/{lang}.json`) z checkiem placeholder/pipe/command przed merge do runtime.
 
 ### 4.1) Status wdrożenia (2026-02-19)
 
@@ -459,6 +462,11 @@ Aktualizacja 2026-02-19 (WQ-HARD-14):
 - dodana klasa `AUTO_FIX_NOW` (PL/ES): `en_marker`, `lang_marker`, `mission_token`, `fx_token`, `word_salad`, `mixed_language`.
 - dla źródeł `TM` i `simple` przypadki `AUTO_FIX_NOW` są kierowane na szybki fallback do `google_translate` zamiast kończyć odrzuceniem.
 - dla `GT` rozszerzono typy odrzucenia `HIGH` o artefakty PL/ES, aby nie wpuszczać skażonych wpisów do finalnych JSON.
+
+Aktualizacja 2026-02-19 (WQ-HARD-15/16/17):
+- `WQ-HARD-15`: dodano domenowe whitelisty nazw własnych (`npc`, `monster`, `spell`, `book`, `quest`, `raid`) i warunek `_is_domain_whitelisted_proper_noun`.
+- `WQ-HARD-16`: `translation_recent_latest.json` domyślnie ukrywa wpisy `HIGH/CRITICAL`; dodano metryki `recent_include_high_critical` i `recent_hidden_high_critical`.
+- `WQ-HARD-17`: dodano pack review `i18n/overrides/review_queue/critical_bad_keys_pack_{pl|es}_latest.json` + historia `*_report.jsonl`; runtime merge z `i18n/overrides/reviewed/{lang}.json` jest aktywny.
 
 ### 5) Zakres na teraz
 

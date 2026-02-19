@@ -72302,5 +72302,285 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T21:17:20.505805Z"
+  },
+  "cpp.protocol.character_title_label": {
+    "src_hash": "580dfdf7a982fd2c57e001a2b5ed6d5b",
+    "text": "Titolo del personaggio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:07.776710Z"
+  },
+  "cpp.protocol.enter_email": {
+    "src_hash": "2a9bd612fa1ef9cffa1033f9640fb3f8",
+    "text": "Devi inserire la tua email.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:07.777028Z"
+  },
+  "cpp.protocol.enter_username": {
+    "src_hash": "0f717a14bd5e8363222d7d62777d101f",
+    "text": "Devi inserire il tuo nome utente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:07.777373Z"
+  },
+  "cpp.protocol.game_going_down": {
+    "src_hash": "ecb808f0c921e7edae64c994e73fff28",
+    "text": "Il gioco sta andando giù.\nPer favore riprova più tardi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:13.747038Z"
+  },
+  "cpp.protocol.gameworld_maintenance": {
+    "src_hash": "1a9fd9e35bd952f6709e3e0c4b5f94b6",
+    "text": "Gameworld è in manutenzione. Per favore riconnettiti tra poco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:13.747672Z"
+  },
+  "cpp.protocol.gameworld_starting": {
+    "src_hash": "04d8c8ada4ba9400e6c469b732bc25b5",
+    "text": "Il mondo del gioco si sta avviando. Attendere prego.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:13.749177Z"
+  },
+  "cpp.protocol.invalid_password": {
+    "src_hash": "855eb8db89b4921c42072832d33d2dc2",
+    "text": "Password non valida.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:13.749427Z"
+  },
+  "cpp.protocol.ip_banned_until": {
+    "src_hash": "98cfd90e59bf9891ac20e2330d6c70a1",
+    "text": "Il tuo IP è stato bannato fino al {0} da {1}.\n\nMotivo specificato:\n{2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:13.749855Z"
+  },
+  "cpp.protocol.loyalty_title_label": {
+    "src_hash": "112b314742b7a70942d64141ba000b08",
+    "text": "Titolo fedeltà",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:20.114717Z"
+  },
+  "cpp.protocol.max_chars_online": {
+    "src_hash": "8c72b40b88913bc4ce5c9e0d3cfa2017",
+    "text": "Puoi accedere solo con {0} caratteri\ndel tuo account contemporaneamente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:20.115206Z"
+  },
+  "cpp.protocol.max_chars_outside_pz": {
+    "src_hash": "c17b15e63bd374988c6a1bd29fa4afd0",
+    "text": "Puoi avere solo {0} caratteri dal tuo account al di fuori di una zona di protezione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:20.115639Z"
+  },
+  "cpp.protocol.only_clients": {
+    "src_hash": "3339dcbaabcaa8fd96a09bc6b43059ea",
+    "text": "Sono ammessi solo client con protocollo {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:20.116033Z"
+  },
+  "cpp.protocol.only_clients_or_old": {
+    "src_hash": "8e8842d7a1b207078b807ecebc479d79",
+    "text": "Sono ammessi solo client con protocollo {0} o 11.00!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:20.116380Z"
+  },
+  "cpp.protocol.premium_expired": {
+    "src_hash": "1268cee2a00d8a6c82c2c2526c3d2b30",
+    "text": "Il tuo tempo premium per questo account è scaduto.\n\nPer giocare acquista ulteriore tempo premium dal nostro sito web",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:25.276647Z"
+  },
+  "cpp.protocol.prey_bonus_improved_damage": {
+    "src_hash": "99129da58e9e25108670093a261e8611",
+    "text": "Danno migliorato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:25.277116Z"
+  },
+  "cpp.protocol.prey_bonus_improved_defense": {
+    "src_hash": "a2b82a196de8d5e9088418de5dfd5490",
+    "text": "Difesa migliorata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:25.277570Z"
+  },
+  "cpp.protocol.prey_bonus_improved_experience": {
+    "src_hash": "b8c7677ea9475abf4c42c9d720ebca13",
+    "text": "Esperienza migliorata",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:25.278035Z"
+  },
+  "cpp.protocol.prey_bonus_improved_loot": {
+    "src_hash": "519909d173e6998ea82d9f67382fc8e7",
+    "text": "Bottino migliorato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:25.278482Z"
+  },
+  "cpp.protocol.prey_bonus_unknown": {
+    "src_hash": "cef9dd58434c651d2731498024377b16",
+    "text": "Bonus sconosciuto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:31.588243Z"
+  },
+  "cpp.protocol.resting_active_bonuses": {
+    "src_hash": "97ae17978ead02542736505c2e581610",
+    "text": "Bonus area di riposo attiva:\n{0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:31.588625Z"
+  },
+  "cpp.protocol.resting_hp_regen": {
+    "src_hash": "2576744e8dd2fd30d1883cb5b679cb64",
+    "text": "Rigenerazione dei punti ferita",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:31.588918Z"
+  },
+  "cpp.protocol.resting_hp_regen_double": {
+    "src_hash": "4a7e354670e24c02df35e9936e500c67",
+    "text": "Rigenerazione doppia dei punti ferita",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:31.589325Z"
+  },
+  "cpp.protocol.resting_mana_regen": {
+    "src_hash": "4c0f163ea1f867b77dc335148fae81d8",
+    "text": "Rigenerazione punti mana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:31.589594Z"
+  },
+  "cpp.protocol.resting_mana_regen_double": {
+    "src_hash": "f4e23225a1be33a6438c511b4e2872ce",
+    "text": "Rigenerazione doppia dei punti mana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:38.036696Z"
+  },
+  "cpp.protocol.resting_soul_regen": {
+    "src_hash": "85f5b5de237017ae21137db198e2d050",
+    "text": "Rigenerazione dei punti anima",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:38.037062Z"
+  },
+  "cpp.protocol.resting_stamina_regen": {
+    "src_hash": "16698fbf38ddda80e963ad266f089378",
+    "text": "Rigenerazione punti resistenza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:38.037355Z"
+  },
+  "cpp.protocol.server_closed": {
+    "src_hash": "8a740b89ac7c768e69b4ef52e36bea28",
+    "text": "Il server è attualmente chiuso.\nPer favore riprova più tardi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:38.037732Z"
+  },
+  "cpp.protocol.session_expired": {
+    "src_hash": "c52a96d67f00273196a818c747912148",
+    "text": "La tua sessione è scaduta. Effettua nuovamente l'accesso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:41.581332Z"
+  },
+  "cpp.protocol.support_outfit_community_manager": {
+    "src_hash": "34903a37debb5bba48d5769720230949",
+    "text": "Responsabile della comunità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:41.581615Z"
+  },
+  "cpp.protocol.support_outfit_customer_support": {
+    "src_hash": "45db51f999b9e9fc7263a7e0ebc2d7f0",
+    "text": "Assistenza clienti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:41.581838Z"
+  },
+  "cpp.protocol.temple_position_wrong": {
+    "src_hash": "737f34e09dd097314633dbd006385552",
+    "text": "La posizione del tempio è sbagliata. Per favore, contatta l'amministratore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:41.582240Z"
+  },
+  "cpp.protocol.unknown_creature": {
+    "src_hash": "bdd6e978162accd8dc94e48d751655b5",
+    "text": "Creatura sconosciuta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:41.582464Z"
+  },
+  "cpp.protocol.waiting_list": {
+    "src_hash": "561d3d4a258f3c5faa85d1a11b8cb556",
+    "text": "Troppi giocatori online.\nTi trovi al posto {0} nella lista d'attesa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:47.195575Z"
+  },
+  "cpp.protocol.wrong_username_password": {
+    "src_hash": "397e8e13f17fa4fac7a20acfe3b595a6",
+    "text": "Il tuo nome utente o password non sono corretti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:47.196259Z"
+  },
+  "cpp.returnvalue.action_not_permitted_in_a_no_pvp_zone": {
+    "src_hash": "5a71883100183c6d485d26beb222ecba",
+    "text": "Questa azione non è consentita in una zona non PvP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:19:47.196681Z"
   }
 }

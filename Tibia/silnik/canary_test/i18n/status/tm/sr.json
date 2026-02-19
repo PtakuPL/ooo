@@ -174654,5 +174654,349 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T20:57:49.965107Z"
+  },
+  "spell.sorcerer_familiar.name": {
+    "src_hash": "fe695fb861f4a78482830bcb8e24bee3",
+    "text": "__ПХ0__ познато",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:00.664760Z"
+  },
+  "spell.knight_familiar.name": {
+    "src_hash": "59bb8dfecc548a5d097b6f0b0d0149e4",
+    "text": "__ПХ0__ познато",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:00.665659Z"
+  },
+  "spell.paladin_familiar.name": {
+    "src_hash": "394dc0c96d4265282f9b9e07a32e4dae",
+    "text": "__ПХ0__ познато",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:00.666233Z"
+  },
+  "spell.druid_familiar.name": {
+    "src_hash": "99443d0ef921af33631809b8edfb838c",
+    "text": "__ПХ0__ познато",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:00.666973Z"
+  },
+  "spell.spawn_of_the_welter_heal2.name": {
+    "src_hash": "ff0014097463582a82b1da1180176b26",
+    "text": "Спавн оф __ПХ0__ Хеал2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:07.515808Z"
+  },
+  "spell.furyosa_deathball.name": {
+    "src_hash": "daf7bc73713b5f8d891c98d697d4bdf1",
+    "text": "__ПХ0__ Деатхбалл",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:07.516423Z"
+  },
+  "spell.the_pale_count_manadrain.name": {
+    "src_hash": "7f991595682c6f8c3de5284694b224d5",
+    "text": "__ПХ0__ Манадраин",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:07.517068Z"
+  },
+  "spell.prince_drazzak_paladin.name": {
+    "src_hash": "bc401da9608e731041a4ba1904f33b99",
+    "text": "Принц Драззак __ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:07.517649Z"
+  },
+  "spell.large_fire_ring.words": {
+    "src_hash": "409173720fb670fa7d5551d41f8463a8",
+    "text": "###ларге_фире_ринг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:07.518056Z"
+  },
+  "spell.large_poison_ring.words": {
+    "src_hash": "bf59fb280b10863844ba37f008761c19",
+    "text": "###ларге_поисон_ринг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:15.224261Z"
+  },
+  "spell.quara_raider_watercreature.words": {
+    "src_hash": "a96d0a96b13924dae67c594a16a3545f",
+    "text": "###куара_сеа_монстер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:15.224701Z"
+  },
+  "spell.quara_raider_icering.words": {
+    "src_hash": "c1f5028fd85c2ff7a116a94b2a3f533c",
+    "text": "###куара_ларге_ице_ринг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:15.225200Z"
+  },
+  "spell.quara_plunderer_cross.words": {
+    "src_hash": "38c94988e5aad88194374365fd1748bc",
+    "text": "###куара_цросс_деатх",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:15.225585Z"
+  },
+  "spell.mitmah_vanguard_hugeblackring.words": {
+    "src_hash": "3ef6c03c11adf3a26333ad5180f176d6",
+    "text": "###хуге_блацк_ринг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:15.225987Z"
+  },
+  "spell.large_pink_ring.words": {
+    "src_hash": "cbf8148400b132cc3a2c59640538a3bd",
+    "text": "###ларге_пинк_ринг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:23.410917Z"
+  },
+  "spell.large_purple_ring_smoke.words": {
+    "src_hash": "bded71426d1b420d44bdde86835e4ea3",
+    "text": "###ларге_пурпле_ринг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:23.411385Z"
+  },
+  "spell.quara_raider_watersplash.words": {
+    "src_hash": "2dc5b1b7f52099443cad5fe2a320d74a",
+    "text": "###куара_ватер_спласх",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:23.411949Z"
+  },
+  "spell.large_blackportal_ring.words": {
+    "src_hash": "ecd759d0c0b1ec1105193ea413ac9732",
+    "text": "###ларге_деатх_ринг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:23.412408Z"
+  },
+  "spell.tarbaz_tp.name": {
+    "src_hash": "fe0a93794bfaca6e36cd08bf5329a3ee",
+    "text": "тарбаз тп",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:23.412748Z"
+  },
+  "spell.quara_looter_small_icering.words": {
+    "src_hash": "005fee865ace267139355aaa7c081005",
+    "text": "###куара_смалл_ице_ринг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:32.182745Z"
+  },
+  "spell.rotthing_explo.words": {
+    "src_hash": "0dd624fdfa2f5551fb845038aff057b8",
+    "text": "###роттх_екпло",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:32.183119Z"
+  },
+  "spell.large_holy_ring.words": {
+    "src_hash": "e6208d5775f272d425b4dcc0b071d929",
+    "text": "###ларге_холи_ринг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:32.183551Z"
+  },
+  "spell.quara_raider_shoot.words": {
+    "src_hash": "de4c23b1a4b7fa4966dbf7e22960962c",
+    "text": "###раидер_схоот",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:32.183958Z"
+  },
+  "spell.rotthing_ulus.words": {
+    "src_hash": "02d84512ac358fe2002d7dd61e3103ee",
+    "text": "###роттх_улус",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:32.184293Z"
+  },
+  "spell.large_red_ring.words": {
+    "src_hash": "96d37389d06599da3b3e9858a7ce6e63",
+    "text": "###ларге_ред_ринг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:38.499595Z"
+  },
+  "spell.quara_plunderer_smoke.words": {
+    "src_hash": "f9b3033ce3b3278925e16fd642d7c573",
+    "text": "###куара_смоке_деатх",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:38.500048Z"
+  },
+  "spell.large_energy_ring.words": {
+    "src_hash": "da9ad40bc3aabbabeb308b3ec4c80b78",
+    "text": "###ларге_енерги_ринг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:38.500466Z"
+  },
+  "spell.great_death_beam.words": {
+    "src_hash": "feb6b1e27d32865ee0f12c58ec858b02",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:38.500995Z"
+  },
+  "spell.ultimate_flame_strike.words": {
+    "src_hash": "a1eee5d6d0f1c3225e9ba6021dfe704b",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:38.501579Z"
+  },
+  "spell.divine_caldera.words": {
+    "src_hash": "3b5c064a5e654d4a3be6cc97aaf96144",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:41.756180Z"
+  },
+  "spell.terra_wave.words": {
+    "src_hash": "2559e690cd3439df960da26b5870ea7f",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:41.758432Z"
+  },
+  "spell.strong_energy_strike.words": {
+    "src_hash": "ed99353603c3aa24b5818ac2821e3f7a",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:41.759553Z"
+  },
+  "spell.physical_strike.words": {
+    "src_hash": "972facee93e7eb9f825cbaa3f063c6c2",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:41.760538Z"
+  },
+  "spell.strong_flame_strike.words": {
+    "src_hash": "9d398473b7c97f18377d604eb115acaa",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:41.761278Z"
+  },
+  "spell.strong_ethereal_spear.words": {
+    "src_hash": "58a3875cd62d7f7149d577a494338a46",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:44.712919Z"
+  },
+  "spell.ice_strike.words": {
+    "src_hash": "d9d027923474bf7c4bf90eb0c60095c6",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:25:44.713378Z"
+  },
+  "spell.executioners_throw.words": {
+    "src_hash": "757855743f8868ef8a59da255425e7ce",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:26:17.420249Z"
+  },
+  "spell.ultimate_terra_strike.words": {
+    "src_hash": "f753c45c9d6963be5d83007c4a841fc3",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:26:17.422452Z"
+  },
+  "spell.mud_attack.words": {
+    "src_hash": "8936fecc0445afbadbb896256c31dc5c",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:26:17.427694Z"
+  },
+  "spell.ice_burst.words": {
+    "src_hash": "e4a7f867be477d51cdff816968a50abe",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:26:17.428480Z"
+  },
+  "spell.ice_wave.words": {
+    "src_hash": "01866fc85cfc2a3fa0a21c030a8b2ae2",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:26:20.351261Z"
+  },
+  "spell.fire_wave.words": {
+    "src_hash": "d58420dad4d6031d7d8f1caf292be669",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:26:20.352881Z"
+  },
+  "spell.energy_wave.words": {
+    "src_hash": "14bc3f6553c127a76ab72757a60108f0",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:26:20.353819Z"
   }
 }

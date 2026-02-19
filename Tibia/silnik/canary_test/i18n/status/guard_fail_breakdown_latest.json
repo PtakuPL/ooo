@@ -1,77 +1,82 @@
 {
-  "timestamp": "2026-02-19T21:17:36.616107Z",
-  "window_start_utc": "2026-02-19T20:17:33.638942Z",
-  "window_end_utc": "2026-02-19T21:17:33.638942Z",
+  "timestamp": "2026-02-19T21:30:49.837674Z",
+  "window_start_utc": "2026-02-19T20:30:46.401313Z",
+  "window_end_utc": "2026-02-19T21:30:46.401313Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 206,
-  "suspicious_entries": 2642,
-  "guard_fail_entries": 54,
-  "guard_fail_sum": 653,
+  "rejected_entries": 224,
+  "suspicious_entries": 2380,
+  "guard_fail_entries": 52,
+  "guard_fail_sum": 624,
   "by_type": {
-    "identical_to_en": 159,
-    "word_salad": 30,
-    "mixed_scripts": 13,
-    "cyrillic_latin_mix": 13,
+    "identical_to_en": 165,
+    "word_salad": 25,
+    "mixed_scripts": 25,
+    "cyrillic_latin_mix": 25,
     "contains_tibia_proper_noun": 6,
     "diacritics_missing": 1,
-    "mixed_language": 4
+    "mixed_language": 9
   },
   "by_source": {
-    "google_translate": 185,
-    "simple": 21
+    "google_translate": 210,
+    "simple": 14
   },
   "by_language": {
-    "pl": 38,
-    "es": 74,
-    "it": 36,
-    "ru": 13,
-    "ro": 45
+    "es": 59,
+    "ru": 25,
+    "ro": 88,
+    "it": 8,
+    "pl": 16,
+    "sv": 28
   },
   "by_category": {
-    "spells.json": 89,
-    "quests.json": 4,
-    "scripts.json": 27,
-    "npc.json": 14,
+    "npc.json": 18,
+    "spells.json": 63,
+    "quests.json": 3,
     "questlog.json": 11,
     "books.json": 5,
     "otclient_modules.json": 46,
+    "scripts.json": 11,
     "modules.json": 2,
     "talkactions.json": 6,
-    "php.json": 2
+    "php.json": 2,
+    "cpp.json": 13,
+    "client.json": 12,
+    "achievements.json": 31,
+    "chatchannels.json": 1
   },
   "by_severity": {
-    "CRITICAL": 189,
-    "HIGH": 17
+    "CRITICAL": 190,
+    "HIGH": 34
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 159
+      "count": 165
     },
     {
       "type": "word_salad",
-      "count": 30
+      "count": 25
     },
     {
       "type": "mixed_scripts",
-      "count": 13
+      "count": 25
     },
     {
       "type": "cyrillic_latin_mix",
-      "count": 13
+      "count": 25
+    },
+    {
+      "type": "mixed_language",
+      "count": 9
     },
     {
       "type": "contains_tibia_proper_noun",
       "count": 6
-    },
-    {
-      "type": "mixed_language",
-      "count": 4
     },
     {
       "type": "diacritics_missing",
@@ -81,95 +86,35 @@
   "top_keys": [
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 7,
+      "count": 9,
       "types": {
-        "identical_to_en": 7
+        "identical_to_en": 9
       }
     },
     {
       "key": "npc.al_dee.stdmod_41",
-      "count": 7,
+      "count": 9,
       "types": {
-        "word_salad": 7
-      }
-    },
-    {
-      "key": "spell.rotthingholy_ulus.name",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "spell.single_ice_chain.name",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "spell.podzillaphys_chain.name",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "spell.iksyapunac_wave.name",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "spell.mitmahseer_wave.name",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "spell.makara_watersplash.name",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "spell.urmahlullu_ring.name",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "spell.quara_raider_icering.name",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "scripts.action_cushion.say_1",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "scripts.actions_lever_barrel.say_1",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
+        "word_salad": 9
       }
     },
     {
       "key": "spell.quara_constrictor_freeze.name",
-      "count": 3,
+      "count": 4,
       "types": {
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1,
-        "identical_to_en": 1
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.quara_constrictor_electrify.name",
+      "count": 4,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1,
+        "identical_to_en": 1,
+        "mixed_language": 1
       }
     },
     {
@@ -179,15 +124,6 @@
         "contains_tibia_proper_noun": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "spell.quara_constrictor_electrify.name",
-      "count": 3,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1,
-        "identical_to_en": 1
       }
     },
     {
@@ -233,6 +169,80 @@
         "contains_tibia_proper_noun": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.ravennouslavalurkertarget.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.lava_golem_soulfire2.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.maxxen_teleport.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.gnomevil_skill_reducer_1.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.rotthingholy_ulus.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.plagirath_heal.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.djinn_electrify.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.alptramun_summon.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.tenebris_summon.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.ashfalor_summon.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
       }
     }
   ]

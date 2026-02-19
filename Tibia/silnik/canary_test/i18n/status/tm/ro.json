@@ -64302,5 +64302,309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T20:56:37.159309Z"
+  },
+  "cpp.returnvalue.you_need_premium_account": {
+    "src_hash": "d10e0f3404950e7ed3fccf7a8dbd72a3",
+    "text": "Ai nevoie de un cont premium.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T21:17:56.611281Z"
+  },
+  "cpp.player.no_blessings": {
+    "src_hash": "1df5fdbf5d50e614517e0999175b4e60",
+    "text": "Nu ai fost protejat cu nicio binecuvântare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:17.972890Z"
+  },
+  "cpp.player.not_enough_gold": {
+    "src_hash": "e972fc0652cc4daaa91d5931f9c44b8e",
+    "text": "Nu aveți {0} monede de aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:25.724272Z"
+  },
+  "cpp.player.skill_advance": {
+    "src_hash": "907de2907365bfe1e58651fc95b8aee1",
+    "text": "Ați avansat la {0} nivelul {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:25.724638Z"
+  },
+  "cpp.player.skill_changed_offline": {
+    "src_hash": "48d9df5fa9b3f25161b222758eb4064a",
+    "text": "Abilitatea ta {0} s-a schimbat de la nivelul {1} (cu {2}% progres către nivelul {3}) la nivelul {4} (cu {5}% progres către nivelul {6})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:25.725252Z"
+  },
+  "cpp.player.still_blessed_with": {
+    "src_hash": "483246b1a51387b19fe399daa761f5fc",
+    "text": "Încă ești binecuvântat cu {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:25.725645Z"
+  },
+  "cpp.player.stowed_objects": {
+    "src_hash": "ef31349292992fd70fcb7d2e0d278003",
+    "text": "{0} obiect{1} depozitat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:25.725905Z"
+  },
+  "cpp.player.stowed_objects_one": {
+    "src_hash": "83845eb1fb5504d839f0d461214810f8",
+    "text": "{0} obiect depozitat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:32.600839Z"
+  },
+  "cpp.player.stowed_objects_other": {
+    "src_hash": "83672fbed2c110e901d4f2efaed3c0ad",
+    "text": "{0} obiecte depozitate.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:32.601229Z"
+  },
+  "cpp.player.using_from_stash": {
+    "src_hash": "443b383ba87e84e3cd8b3f76aa0e6bbd",
+    "text": "Folosind {0}x {1} din stocul tău. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:32.601777Z"
+  },
+  "cpp.protocol.account_banned_permanent": {
+    "src_hash": "c50beb39bda2de713cf48b37a3b845a3",
+    "text": "Contul dvs. a fost interzis definitiv de {0}.\n\nMotivul specificat:\n{1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:32.602379Z"
+  },
+  "cpp.protocol.account_banned_until": {
+    "src_hash": "40239c5f032255e85f737b9645ae5d66",
+    "text": "Contul dvs. a fost interzis până la {0} de către {1}.\n\nMotivul specificat:\n{2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:32.603684Z"
+  },
+  "cpp.protocol.active_prey_desc": {
+    "src_hash": "8d45051899aa9b191a41ac17d746c91e",
+    "text": "{0} ({1} +{2}%, restul {3})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:40.729108Z"
+  },
+  "cpp.protocol.active_prey_label": {
+    "src_hash": "528d0fa86274cad4e17052f55afdd80a",
+    "text": "Pradă activă {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:40.729617Z"
+  },
+  "cpp.protocol.already_connected_other_client": {
+    "src_hash": "9a4d250c6bf1404f1721849d29672a0f",
+    "text": "Sunteți deja conectat printr-un alt client. Vă rugăm să utilizați un singur client la un moment dat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:40.730290Z"
+  },
+  "cpp.protocol.already_logged_in": {
+    "src_hash": "442c6f0b512ae9e89a35ff8ca836d470",
+    "text": "Sunteți deja autentificat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:40.730609Z"
+  },
+  "cpp.protocol.already_logged_protocol": {
+    "src_hash": "a170233fccfe7945e00322ef67b58ad8",
+    "text": "Sunteți deja conectat folosind protocolul '{0}'. Vă rugăm să vă deconectați de la cealaltă sesiune pentru a vă conecta aici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:40.731208Z"
+  },
+  "cpp.protocol.browse_field": {
+    "src_hash": "d1d839ea1702ef006d8b44a77b3e869c",
+    "text": "Răsfoiți câmpul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:46.889609Z"
+  },
+  "cpp.protocol.char_could_not_be_loaded": {
+    "src_hash": "bc27af7208b2117b513b44b360af97d2",
+    "text": "Personajul tău nu a putut fi încărcat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:46.889985Z"
+  },
+  "cpp.protocol.char_load_failed_contact_admin": {
+    "src_hash": "df6391a3559d9fdcd1e0424e1d9145e7",
+    "text": "Personajul dvs. nu a putut fi încărcat, vă rugăm să contactați un administrator.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:46.890425Z"
+  },
+  "cpp.protocol.char_namelocked": {
+    "src_hash": "1637b142f21e9fd35ae5a24ce0229a7d",
+    "text": "Personajul tău a fost blocat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:46.890783Z"
+  },
+  "cpp.protocol.character_title_label": {
+    "src_hash": "580dfdf7a982fd2c57e001a2b5ed6d5b",
+    "text": "Titlul personajului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:46.891012Z"
+  },
+  "cpp.protocol.enter_email": {
+    "src_hash": "2a9bd612fa1ef9cffa1033f9640fb3f8",
+    "text": "Trebuie să introduceți adresa dvs. de e-mail.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:50.229786Z"
+  },
+  "cpp.protocol.enter_username": {
+    "src_hash": "0f717a14bd5e8363222d7d62777d101f",
+    "text": "Trebuie să introduceți numele dvs. de utilizator.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:18:50.230204Z"
+  },
+  "achievement.206.description": {
+    "src_hash": "81e0ff6bef569e916b9024ccd96c4b7d",
+    "text": "Ai stăpânit provocarea lui Kurik în toate formele posibile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:20:39.746829Z"
+  },
+  "achievement.207.description": {
+    "src_hash": "088e01c8c277f28667181c55a24c8d9c",
+    "text": "Cu ajutorul micului tău ajutor prietenos, ai înghițit peste 500 de bucăți de slime. Bravo, Slimer.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:20:45.340232Z"
+  },
+  "achievement.208.name": {
+    "src_hash": "9eced36b97dbab0b65d1e2faee071889",
+    "text": "Magesuager",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:20:45.340573Z"
+  },
+  "achievement.208.description": {
+    "src_hash": "68128ba9e1b7b155c894b20c7ece1a2f",
+    "text": "L-ai ucis pe magul furios în turnul lui la sud de Zao. Din nou. Dar acesta continuă să se întoarcă. Portalul dimensional s-a prăbușit încă o dată și știi că în cele din urmă se va întoarce, dar hei - un mag furios, e ca și cum ai cere asta...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:20:45.344099Z"
+  },
+  "achievement.209.name": {
+    "src_hash": "145896ab3cca2a939bde5239d584aa23",
+    "text": "Biodegradabil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:20:45.344665Z"
+  },
+  "achievement.209.description": {
+    "src_hash": "b36e745b5d1a979c98e3af50ed798df9",
+    "text": "Ai prins cincizeci de înotători rari. Să scapi de toate acele cadavre aruncându-le în lac chiar a meritat, nu-i așa? Stai, nu s-a mișcat ceva în apă acum...?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:20:45.345423Z"
+  },
+  "achievement.211.description": {
+    "src_hash": "f82941f71d4c6874df0cba1754147582",
+    "text": "Multe creaturi din adâncuri și-au pierdut viața de mâna ta. Trei sute au intrat în adâncurile eternității. Probabil că ar trebui să te temi de răzbunarea Ochilor Adâncului.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:20:51.968297Z"
+  },
+  "achievement.212.name": {
+    "src_hash": "b74ad4852301652bdbe405413f9a4b49",
+    "text": "Pompier",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:20:51.968570Z"
+  },
+  "achievement.212.description": {
+    "src_hash": "e91c57442dec17af9cbea168e40a9e83",
+    "text": "Ai stins 500 de focuri de spini! Ai fost acolo când Firestarters au preluat Shadowthorn. Ai salvat ziua - și casa unor spiriduși care vor încerca totuși să te omoare. Nu este frumos să vezi totul restaurat așa cum a fost înainte...?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:20:51.969925Z"
+  },
+  "achievement.213.description": {
+    "src_hash": "8c43eb02395e30b862977c9e6774d35c",
+    "text": "Ai reușit să omori mai mult de patru sute de căprioare albe - se pare că ești unul dintre principalele motive pentru care vor fi considerați în curând dispăruți, mai departe!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:20:51.970959Z"
+  },
+  "achievement.216.description": {
+    "src_hash": "9dc2fe3cd772db86d49b940f8a12add1",
+    "text": "Ai spart borcanul lui Horestis – de cincizeci de ori. Fie nu cunoști frica, fie pur și simplu o ignori. Oricare ar fi cazul, ești într-adevăr „neînfricat”.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:21:08.836483Z"
+  },
+  "achievement.217.description": {
+    "src_hash": "23e354a7112376798babdf4dfe4dc459",
+    "text": "A sunat cineva un doctor? I-ai livrat 100 de pungi cu medicamente lui Ottokar de la casa săracă Venore în vremuri de mare nevoie, bravo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:21:12.234661Z"
+  },
+  "achievement.218.description": {
+    "src_hash": "da4650d94d93f845a6f4f7a6efe139e1",
+    "text": "Ați ajutat în mod semnificativ cetățenii afectați din Venore în vremuri de mare nevoie. Cumva te simți încă aproape de victimele focarului de febră. Hainele tale te fac unul dintre ei, un biet suflet printre nenumărații suferinzi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:21:12.235656Z"
+  },
+  "achievement.219.description": {
+    "src_hash": "02e893f6aa5da2533f92519381fc2110",
+    "text": "L-ai învins pe magul nebun, l-ai stăpânit pe magul furios - nici un autoexpozitor de vrăji nu îți poate sta în cale. Cu toate acestea, sunteți destul de absorbit de studiile magice. Chiar această țesătură reflectă această aprobare personală a artelor magice.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T21:21:12.237204Z"
   }
 }

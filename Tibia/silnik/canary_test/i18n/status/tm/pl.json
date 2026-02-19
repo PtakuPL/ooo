@@ -117622,5 +117622,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T22:31:21.392084Z"
+  },
+  "npc.an_idol.say_1": {
+    "src_hash": "5c32b014f6386340dacd8f77421d501b",
+    "text": "J-T B^C J^BXT°",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:47:04.626233Z"
   }
 }

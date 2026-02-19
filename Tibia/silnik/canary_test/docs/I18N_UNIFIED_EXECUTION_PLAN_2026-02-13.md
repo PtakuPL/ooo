@@ -6,6 +6,70 @@
 
 ---
 
+## Update wykonania (2026-02-19 23:40 UTC) — plan zwiększenia throughput tłumaczeń/h (bez zmian architektury)
+
+Cel tej aktualizacji:
+- zwiększyć liczbę realnie przetłumaczonych kluczy na godzinę,
+- bez obniżania jakości i bez regresji guardów,
+- najpierw przez tuning runtime/env (bez refaktoru pipeline).
+
+### Pakiet zadań THROUGHPUT (P0/P1)
+
+- [ ] `WQ-THROUGHPUT-1 (P0)`: Ustawić i utrwalić profil runtime „GT throughput baseline”
+  - `USE_GOOGLE_TRANSLATE=true` jako tryb domyślny profilu tłumaczeń.
+  - Potwierdzić, że worker nie startuje w trybie fallback-only (bez GT) w cyklu nocnym.
+  - Dodać check operacyjny w statusie: czy GT jest aktywny (`gt_translated > 0` w oknie).
+  - **Kryterium sukcesu:** w oknie 60 min występują cykle z `gt_translated>0` i brak spike `gt_guard_fail`.
+
+- [ ] `WQ-THROUGHPUT-2 (P0)`: Zablokować limit tłumaczeń w paśmie „fast-lane safe”
+  - Ustawić `TRANSLATE_LIMIT` operacyjnie na zakres `25–30` (domyślnie `30`).
+  - Nie przekraczać `30` bez testu A/B, bo fast-lane może zostać wyłączony i throughput netto spada.
+  - Dodać checklistę restartową: po zmianie limitu sprawdzić 3 kolejne cykle (`translated`, `guard_fail`, `strict_skipped_done`).
+  - **Kryterium sukcesu:** `net_effective_translated/h` wyższy niż baseline przy stabilnym `guard_fail_rate`.
+
+- [ ] `WQ-THROUGHPUT-3 (P0)`: Strojenie GT batch/rate-limit krokowe (bez skoków)
+  - Start: `GT_BATCH_SIZE=50`, `GT_DELAY=1.5`.
+  - Kroki tuningowe:
+    - Krok A: `GT_BATCH_SIZE=60`, `GT_DELAY=1.0`
+    - Krok B: `GT_BATCH_SIZE=70`, `GT_DELAY=0.6`
+  - Każdy krok utrzymać min. 30–60 min i porównać KPI do poprzedniego.
+  - Natychmiastowy rollback kroku, jeśli rośnie `guard_fail_rate` lub `gt_guard_fail` (trend >20% względem poprzedniego kroku).
+  - **Kryterium sukcesu:** dodatni trend `translated/h` i brak trwałego wzrostu odrzuceń.
+
+- [ ] `WQ-THROUGHPUT-4 (P1)`: Ograniczyć koszt odrzuceń przez poprawę jakości wejścia
+  - Cotygodniowo (lub co noc przy dużym ruchu) zasilać `i18n/overrides/reviewed/{lang}.json` kluczami o wysokiej częstotliwości odrzuceń.
+  - Priorytet dla kluczy, które powtarzają `CRITICAL/HIGH` w `suspicious_rejected.jsonl`.
+  - Traktować poprawki reviewed jako „throughput multiplier” (mniej retry i mniej guard_fail).
+  - **Kryterium sukcesu:** spadek `suspicious_rejected` dla top-50 problematycznych kluczy.
+
+- [ ] `WQ-THROUGHPUT-5 (P1)`: Priorytetyzacja kolejki pod realny zysk tłumaczeń
+  - Preferować pliki/kategorie z większą szansą realnego postępu (`description`/dłuższe treści) nad krótkimi nazwami własnymi.
+  - Dla nazw własnych utrzymać ścieżkę review/whitelist, żeby nie marnować batchy GT na EN-identical.
+  - W telemetry oznaczać, które kategorie generują najwyższy udział `translated=0` przy wysokim koszcie cyklu.
+  - **Kryterium sukcesu:** większy udział cykli z dodatnim `translated` w tej samej jednostce czasu.
+
+- [ ] `WQ-THROUGHPUT-6 (P0)`: Ujednolicić KPI wydajności na metryce netto
+  - Metryka główna (operatorska):
+    - `effective_share = translated / (translated + guard_fail + strict_skipped_done)`
+    - monitorowana razem z `net_effective_translated/h`.
+  - Dodać monitoring trendu 1h/6h dla `effective_share` i alert przy trwałym spadku.
+  - Decyzje tuningowe (batch/delay/limit) podejmować wyłącznie na metryce netto, nie na samym `translated`.
+  - **Kryterium sukcesu:** stabilny wzrost `effective_share` i `net_effective_translated/h` przez kolejne okna.
+
+### Plan wdrożenia etapami (operacyjnie)
+
+1. **Etap A (P0, dzień 1):** wdrożyć `WQ-THROUGHPUT-1/2/6` i zebrać baseline 1h + 6h.
+2. **Etap B (P0, dzień 1–2):** wdrożyć `WQ-THROUGHPUT-3` w krokach A/B z rollbackiem progowym.
+3. **Etap C (P1, dzień 2+):** wdrożyć `WQ-THROUGHPUT-4/5` dla trwałego obniżenia odrzuceń i stabilizacji zysku/h.
+
+### Guardrails i rollback
+
+- Każdy tuning wykonujemy pojedynczą zmianą parametru (single-variable change).
+- Jeśli po zmianie występuje degradacja jakości (wzrost `guard_fail`/`gt_guard_fail`) przez >=2 kolejne okna pomiarowe:
+  - wrócić do poprzedniego kroku,
+  - oznaczyć krok jako `rejected-by-quality`,
+  - nie łączyć kolejnej zmiany zanim trend się nie ustabilizuje.
+
 ## Update wykonania (2026-02-14 11:22 UTC) — status auto-refresh + kontrakt tłumaczeń + audyt LT/CS/EL/IT
 
 Zrealizowane pełne zadania:

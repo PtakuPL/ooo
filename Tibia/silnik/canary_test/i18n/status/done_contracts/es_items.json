@@ -14,9 +14,9 @@
     },
     "coverage_above_95pct": {
       "ok": false,
-      "coverage_pct": 93.3,
+      "coverage_pct": 93.4,
       "total_keys": 17057,
-      "real_translations": 15912
+      "real_translations": 15928
     },
     "quality_entry_present": {
       "ok": true,
@@ -24,5 +24,5 @@
     }
   },
   "is_done": false,
-  "timestamp": "2026-02-19T20:09:58.133017Z"
+  "timestamp": "2026-02-19T22:46:35.172480Z"
 }

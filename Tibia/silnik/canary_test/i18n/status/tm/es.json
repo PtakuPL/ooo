@@ -151974,5 +151974,277 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T22:12:23.423600Z"
+  },
+  "item.12572.desc": {
+    "src_hash": "d2ef0d1b5d0bdfa5ff747ebbe260a7c8",
+    "text": "Una copa forjada por el dragón Khax que representa todo el conocimiento y sabiduría de TibiaVenezuela",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:45:55.741511Z"
+  },
+  "item.37059.name": {
+    "src_hash": "40b25f4a6a4f4fa20e43c63414523461",
+    "text": "amuleto del trébol de la suerte",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:01.225437Z"
+  },
+  "item.11426.name": {
+    "src_hash": "d17288949dcee1f46b06c9ba595a3bf3",
+    "text": "hoja de papel garabateada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:07.530969Z"
+  },
+  "item.11443.name": {
+    "src_hash": "ed3094cef1a7b094d8d5aba6b09bff33",
+    "text": "decoración del cabello de niña",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:07.531323Z"
+  },
+  "item.11446.name": {
+    "src_hash": "2f18c3c12be8b77c18256ff350f2f6c6",
+    "text": "pelo de alma en pena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:11.654275Z"
+  },
+  "item.11447.desc": {
+    "src_hash": "8bb86703e2cddbfd4e63b28a2cf0a5cb",
+    "text": "Parece perfecto para darle forma a un arma. Seguro que a alguien le puede interesar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:11.655086Z"
+  },
+  "item.11449.desc": {
+    "src_hash": "8fdc146aa065bb63cd8fe5ea4e87704a",
+    "text": "Alguien le puso una pajita de cóctel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:11.655496Z"
+  },
+  "item.11450.desc": {
+    "src_hash": "d6b653a50f25e62246a453c249eb38ba",
+    "text": "Contiene una larga lista de 'saved maidens' y sus direcciones. A alguien le puede interesar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:11.656201Z"
+  },
+  "item.11458.desc": {
+    "src_hash": "5e7a9f20b3ca724e4814ad79f6b9a2f7",
+    "text": "Es demasiado pequeño para ser usado por humanos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:11.656597Z"
+  },
+  "item.11464.name": {
+    "src_hash": "45e3766919d931582bced08b9ddaa58f",
+    "text": "vaso de exploración élfico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:15.928507Z"
+  },
+  "item.11473.desc": {
+    "src_hash": "dae0b5d5321efbca600ef5014f1d45bf",
+    "text": "Es demasiado grande para ser usado por humanos, pero más bien liviano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:15.929013Z"
+  },
+  "item.11475.desc": {
+    "src_hash": "a2fc8dd8312a961ee4c663cacdce0a6a",
+    "text": "Una oscura maldición te impide usarlo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:15.929393Z"
+  },
+  "item.11510.name": {
+    "src_hash": "248342cf3fbecf198a17fc729700b40d",
+    "text": "pergamino de hazañas heroicas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:15.929712Z"
+  },
+  "item.11515.name": {
+    "src_hash": "96e6cce00bdc97375798343dc62e4f08",
+    "text": "raíz troll",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:15.929926Z"
+  },
+  "item.11541.desc": {
+    "src_hash": "22ef1a85bc4349ea3650e6f55912a5c6",
+    "text": "Te lo dio el djinn ma?tre y contiene nuevas recetas que cocinaste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:20.382663Z"
+  },
+  "item.11543.desc": {
+    "src_hash": "754120dc5aff478e74582317146aee1a",
+    "text": "Supuestamente la última voluntad de alguien. Todo lo que pudiera haber escrito en él hace tiempo que desapareció.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:20.383983Z"
+  },
+  "item.11544.desc": {
+    "src_hash": "9b97e51580254e42e5f7bf6be4b2f286",
+    "text": "Supuestamente la última voluntad de alguien. Lo que sea que haya sido escrito en él desapareció hace mucho tiempo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:20.385096Z"
+  },
+  "item.11551.desc": {
+    "src_hash": "534e51a9c6b22b3e16a1212a3f3961dd",
+    "text": "Es capaz de almacenar recuerdos y pensamientos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:20.385783Z"
+  },
+  "item.11552.desc": {
+    "src_hash": "3ce49eff7f272f394b24a787054137cf",
+    "text": "Es capaz de almacenar recuerdos y pensamientos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:23.864493Z"
+  },
+  "item.11571.name": {
+    "src_hash": "6cad1db00d36e31b4b13a5ca351a0bcd",
+    "text": "insecto de azufre muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:23.864772Z"
+  },
+  "item.11572.name": {
+    "src_hash": "6cad1db00d36e31b4b13a5ca351a0bcd",
+    "text": "insecto de azufre muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:23.865021Z"
+  },
+  "item.11582.name": {
+    "src_hash": "6cad1db00d36e31b4b13a5ca351a0bcd",
+    "text": "insecto de azufre muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:23.865266Z"
+  },
+  "item.11583.name": {
+    "src_hash": "6cad1db00d36e31b4b13a5ca351a0bcd",
+    "text": "insecto de azufre muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:23.865512Z"
+  },
+  "item.11584.desc": {
+    "src_hash": "426fbf7b62552eb2a213f7df0209cdb2",
+    "text": "Parece como si estuviera sellado con bondad lechosa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:27.934686Z"
+  },
+  "item.11587.desc": {
+    "src_hash": "f539323da6ba32246e972e54c6b33137",
+    "text": "Nunca estás seguro de qué harán las bolas de caramelo demoníacas, pero seguro que tienen un sabor dulce y emocionante.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:27.935235Z"
+  },
+  "item.11588.desc": {
+    "src_hash": "800d3525d4c7f9e6935c6754392d2c44",
+    "text": "Se dice que tiene efectos increíbles si lo bebes mientras llevas ciertos anillos mágicos. Entonces no funcionará en todos los tipos de ellos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:27.935947Z"
+  },
+  "item.11588.name": {
+    "src_hash": "94c787c150718839f5d9c52eed5269b6",
+    "text": "elixir dulce de mangonesa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:27.936232Z"
+  },
+  "item.116.desc": {
+    "src_hash": "d39b035f5735b0e6910169571f7eebfc",
+    "text": "Contiene el suministro diario para la tienda de Xodet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:27.936567Z"
+  },
+  "item.11603.desc": {
+    "src_hash": "964010137d180c408e8d0cf4efe3bf94",
+    "text": "Es una runa curativa suprema adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:31.608812Z"
+  },
+  "item.11604.desc": {
+    "src_hash": "964010137d180c408e8d0cf4efe3bf94",
+    "text": "Es una runa curativa suprema adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:31.609208Z"
+  },
+  "item.11604.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "emblema de runa dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:31.609507Z"
+  },
+  "item.11605.desc": {
+    "src_hash": "b04025ee41c84df346408e1b41be6fbf",
+    "text": "Es una runa de misil mágico pesado adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:31.609852Z"
+  },
+  "item.11606.desc": {
+    "src_hash": "b04025ee41c84df346408e1b41be6fbf",
+    "text": "Es una runa de misil mágico pesado adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:31.610188Z"
+  },
+  "item.11606.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "emblema de runa dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T22:46:33.341507Z"
   }
 }

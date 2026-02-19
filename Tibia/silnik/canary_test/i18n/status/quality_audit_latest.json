@@ -1,59 +1,15 @@
 {
-  "timestamp": "2026-02-19T20:14:31.473050Z",
+  "timestamp": "2026-02-19T20:15:17.823703Z",
   "checked_entries": 100,
-  "issues_found": 22,
+  "issues_found": 16,
   "issues_by_type": {
-    "artifact_token": 22,
     "identical_to_en_exempt": 2,
-    "suspicious_log_high": 137,
-    "suspicious_log_critical": 54,
-    "suspicious_log_low": 9,
+    "artifact_token": 16,
+    "suspicious_log_high": 200,
     "suspicious_rejected_critical": 178,
     "suspicious_rejected_high": 22
   },
   "issues": [
-    {
-      "key": "monster.dracola.voice_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "YOU ARE ALL DOOMED!",
-      "translated": "¡ESTÁIS TODOS CONDENADOS!"
-    },
-    {
-      "key": "monster.shulgrax.voice_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "YOU ARE ALL DAMNED!",
-      "translated": "¡ESTÁIS TODOS MALDITOS!"
-    },
-    {
-      "key": "monster.ferumbras_mortal_shell.voice_4",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "I WILL MAKE ALL OF YOU SUFFER!",
-      "translated": "¡LOS HARÉ SUFRIR A TODOS!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_4",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "CRUSH THEM ALL!",
-      "translated": "¡¡APLASTADLES A TODOS!!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_8",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!",
-      "translated": "AUN CON TODO ESE TIEMPO EN LA PRISIÓN QUE ME DEBILITÓ, ¡NO ERES COMPATIBLE PARA MÍ!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_9",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "THEY WILL ALL PAY!",
-      "translated": "¡TODOS PAGARÁN!"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

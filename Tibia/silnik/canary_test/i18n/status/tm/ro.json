@@ -63198,5 +63198,213 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T20:13:56.156929Z"
+  },
+  "item.799.name": {
+    "src_hash": "2b93fbdf27d43547bec8794054c28e00",
+    "text": "zăpadă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.548917Z"
+  },
+  "item.8150.name": {
+    "src_hash": "45b870ac42abc36964b1fb198c84aab0",
+    "text": "cheia a numeroase încuietori",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.583552Z"
+  },
+  "item.8154.name": {
+    "src_hash": "508ca7cc112449d6c18b591aafcc35b7",
+    "text": "păpuşă norvegiană",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.584427Z"
+  },
+  "item.8156.name": {
+    "src_hash": "13f27b1072bbf7719d0d267b083ff91c",
+    "text": "abac",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.584805Z"
+  },
+  "item.8157.name": {
+    "src_hash": "508ca7cc112449d6c18b591aafcc35b7",
+    "text": "păpuşă norvegiană",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.585243Z"
+  },
+  "item.8180.name": {
+    "src_hash": "e3c7552b6b3fd33df13fc349512f2b45",
+    "text": "ceva târându-se",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.586479Z"
+  },
+  "item.870.name": {
+    "src_hash": "eafe04976b36dd06e554acd5aa86761f",
+    "text": "trotuar pietruit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.605025Z"
+  },
+  "item.8708.name": {
+    "src_hash": "8181bae588bff486e40a8657f05f5b3d",
+    "text": "ușă trapă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.605312Z"
+  },
+  "item.8716.name": {
+    "src_hash": "5d47a77d32202c58837f269a0d1c60c7",
+    "text": "troll",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.605778Z"
+  },
+  "item.8737.name": {
+    "src_hash": "e40a11578769485d190e51230f5967de",
+    "text": "Jeton CM",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.606817Z"
+  },
+  "item.8776.name": {
+    "src_hash": "81b7d73f65ee73dbe866bc9ac588267d",
+    "text": "cristal mare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.610468Z"
+  },
+  "item.8865.name": {
+    "src_hash": "0020d86c1466ce2bd9f0d1b02a0f7686",
+    "text": "coloana de cristal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.614096Z"
+  },
+  "item.9071.desc": {
+    "src_hash": "ec385e5717e19a2037e8986fc553a3e8",
+    "text": "Această plantă are nevoie urgent de puțină apă, altfel se va ofili și va dispărea complet",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.657558Z"
+  },
+  "item.9072.desc": {
+    "src_hash": "ec385e5717e19a2037e8986fc553a3e8",
+    "text": "Această plantă are nevoie urgent de puțină apă, altfel se va ofili și va dispărea complet",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.658504Z"
+  },
+  "item.9100.name": {
+    "src_hash": "0f3d898b85bafe642b1cd56de135b0b4",
+    "text": "flacără mistică",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.667573Z"
+  },
+  "item.9105.name": {
+    "src_hash": "8df897a106143920124afb643cce4d93",
+    "text": "minge de cristal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.668266Z"
+  },
+  "item.9133.name": {
+    "src_hash": "0020d86c1466ce2bd9f0d1b02a0f7686",
+    "text": "coloana de cristal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.672227Z"
+  },
+  "item.9134.name": {
+    "src_hash": "0020d86c1466ce2bd9f0d1b02a0f7686",
+    "text": "coloana de cristal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.672523Z"
+  },
+  "item.9135.name": {
+    "src_hash": "0020d86c1466ce2bd9f0d1b02a0f7686",
+    "text": "coloana de cristal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.672948Z"
+  },
+  "item.9136.name": {
+    "src_hash": "0020d86c1466ce2bd9f0d1b02a0f7686",
+    "text": "coloana de cristal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.673224Z"
+  },
+  "item.9137.name": {
+    "src_hash": "0020d86c1466ce2bd9f0d1b02a0f7686",
+    "text": "coloana de cristal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.673490Z"
+  },
+  "item.9138.name": {
+    "src_hash": "0020d86c1466ce2bd9f0d1b02a0f7686",
+    "text": "coloana de cristal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.673774Z"
+  },
+  "item.9139.name": {
+    "src_hash": "0020d86c1466ce2bd9f0d1b02a0f7686",
+    "text": "coloana de cristal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.674070Z"
+  },
+  "item.9140.name": {
+    "src_hash": "0020d86c1466ce2bd9f0d1b02a0f7686",
+    "text": "coloana de cristal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.674459Z"
+  },
+  "item.9141.name": {
+    "src_hash": "12a7b6eefac4175c0e27614db28baf78",
+    "text": "scânduri de lemn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.674737Z"
+  },
+  "item.9149.desc": {
+    "src_hash": "dd244aa20b20e7d8fa380018045b1f16",
+    "text": "Conține cerneala unei cariere proaspăt ucise.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:15:14.675728Z"
   }
 }

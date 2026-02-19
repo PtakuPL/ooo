@@ -74302,5 +74302,317 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T22:42:21.816966Z"
+  },
+  "npc.the_empress.greet_msg_1": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Saluti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.384617Z"
+  },
+  "npc.the_lootmonger.say_1": {
+    "src_hash": "46767821d220df513037f0a25e3170c7",
+    "text": "Vendo una selezione di {}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.390022Z"
+  },
+  "npc.the_lootmonger.say_2": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturalmente, basta sfogliare la mia merce. Puoi anche guardare {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.390639Z"
+  },
+  "npc.the_orc_king.say_6": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Non hai nessun biscotto che vorrei.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.393308Z"
+  },
+  "npc.thorgrin.keyword_1": {
+    "src_hash": "85467327989ec3f06366c501660d8e59",
+    "text": "Avanti tutta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.399073Z"
+  },
+  "npc.thorgrin.stdmod_2": {
+    "src_hash": "85467327989ec3f06366c501660d8e59",
+    "text": "Avanti tutta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.399435Z"
+  },
+  "npc.tibra.greet_msg_1": {
+    "src_hash": "41a97395a5729feeab77ee7495736313",
+    "text": "Benvenuto nel nome degli dei, pellegrino |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.400800Z"
+  },
+  "npc.tibra.stdmod_1": {
+    "src_hash": "53fd81ac2bcfd6002315412b51616c27",
+    "text": "Penso che tu abbia dimenticato di portare la tua posta, figlia mia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.401342Z"
+  },
+  "npc.tibra.stdmod_18": {
+    "src_hash": "b303be1cbbb9590b627a5c390d8cb0a1",
+    "text": "Adesso è |TIME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.402356Z"
+  },
+  "npc.tibra.stdmod_2": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Sì, sono stato informato su cosa fare. Siete pronti a ricevere la mia linea di preghiera?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.403157Z"
+  },
+  "npc.tibra.stdmod_4": {
+    "src_hash": "0f31738909d8dfb4a29c446aefa592e1",
+    "text": "Ti aspetterò.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.405083Z"
+  },
+  "npc.tibra.stdmod_9": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Non hai un bell'aspetto. Mi spiace, non posso aiutarti. Ma se stai cercando una protezione aggiuntiva dovresti andare sullo {pilgrimage} di Ash o ottenere la protezione di {twist of fate} qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.407180Z"
+  },
+  "npc.tim_the_guard.stdmod_1": {
+    "src_hash": "9f8faef9b0ab426a0e0ee29611a81085",
+    "text": "È mio dovere proteggere la città.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.409680Z"
+  },
+  "npc.topsy.say_1": {
+    "src_hash": "b62a0dd738c7bd24999a8405be0ab6de",
+    "text": "Quindi mi chiedi un {{}} per iniziare la tua avventura?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.419453Z"
+  },
+  "npc.topsy.say_2": {
+    "src_hash": "42f4f7cc57059d2b7623f11666f8882b",
+    "text": "Che cosa? Te ne ho già regalato uno {{}}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.420061Z"
+  },
+  "npc.topsy.say_3": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturalmente, basta sfogliare la mia merce. Puoi anche guardare {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.420541Z"
+  },
+  "npc.torkada.say_5": {
+    "src_hash": "66edd2e4f8cd1499c8e0412f667914e9",
+    "text": "Ok allora no.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.421868Z"
+  },
+  "npc.trisha.say_7": {
+    "src_hash": "84bef6784099863dfeb03302de8845ca",
+    "text": "Hai capito tutto quello che ti ho detto e sei disposto a gestire questo compito?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.424254Z"
+  },
+  "npc.trisha.stdmod_3": {
+    "src_hash": "2a717547889752d87b24c8a11762f691",
+    "text": "Posso insegnarti {healing spells} e {support spells}. Che tipo di incantesimo desideri imparare? Puoi anche dirmi per quale livello vorresti imparare un incantesimo, se lo preferisci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.425463Z"
+  },
+  "npc.trisha.walkaway_msg_1": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Fai attenzione durante i tuoi viaggi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.426290Z"
+  },
+  "npc.tristan.stdmod_3": {
+    "src_hash": "abd3dbcaaae2af1f628f80fc7dd6c9e1",
+    "text": "Posso insegnarti {healing spells}, {attack spells} e {support spells}. Che tipo di incantesimo desideri imparare? Puoi anche dirmi per quale livello vorresti imparare un incantesimo, se lo preferisci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.427471Z"
+  },
+  "npc.turvy.sendtrade_msg_1": {
+    "src_hash": "cf71d2704783ce2e26c071a358672aca",
+    "text": "Naturalmente basta sfogliare le mie offerte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.428343Z"
+  },
+  "npc.tyrias.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Quindi ricevi la protezione dello scherzo del destino, pellegrino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.429863Z"
+  },
+  "npc.tyrias.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Quindi ricevi la protezione dello scherzo del destino, pellegrino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.430312Z"
+  },
+  "npc.tyrias.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Non hai un bell'aspetto. Mi spiace, non posso aiutarti. Ma se stai cercando una protezione aggiuntiva dovresti andare sullo {pilgrimage} di Ash o ottenere la protezione di {twist of fate} qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.432527Z"
+  },
+  "npc.tyrias.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bene. Sei libero di rifiutare la mia offerta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.432986Z"
+  },
+  "npc.tyrias.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Ogni volta che ricevi una ferita letale, la tua forza vitale viene danneggiata e c'è la possibilità che tu perda parte del tuo equipaggiamento. Con ognuno dei cinque {blessings} che hai, questo danno e la possibilità di perdita saranno ridotti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.434032Z"
+  },
+  "npc.tyrias.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Vedo che hai ricevuto la protezione spirituale nel tempio dei fiori bianchi a sud di Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.435014Z"
+  },
+  "npc.tyrias.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Sento che i druidi a nord di Carlin ti hanno fornito l'Abbraccio di Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.435660Z"
+  },
+  "npc.tyrias.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Vedo che hai ricevuto la benedizione dei due soli nella torre del sole vicino a Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.436481Z"
+  },
+  "npc.tyrias.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Sento che la scintilla della fenice ti è già stata donata dai sacerdoti nani della terra e del fuoco in Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.437278Z"
+  },
+  "npc.tyrias.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Sento che hai già parlato con l'eremita Eremo sull'isola di Cormaya e hai ricevuto questa benedizione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.437976Z"
+  },
+  "npc.tyrias.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puoi chiedere la benedizione della protezione spirituale nel tempio dei fiori bianchi a sud di Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.438725Z"
+  },
+  "npc.tyrias.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "I druidi a nord di Carlin ti forniranno l'abbraccio di Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.439261Z"
+  },
+  "npc.tyrias.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puoi chiedere la benedizione dei due soli nella torre solare vicino a Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.439959Z"
+  },
+  "npc.tyrias.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Conserva bene la tua pietra dell'avventuriero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.440401Z"
+  },
+  "npc.tyrias.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "La scintilla della fenice è data dai sacerdoti nani della terra e del fuoco in Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.441079Z"
+  },
+  "npc.tyrias.stdmod_32": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Questa è una benedizione speciale che posso concederti una volta ottenuta almeno una delle altre benedizioni e che funziona in modo leggermente diverso. ...\\z\n\tFunziona solo quando vieni ucciso da altri avventurieri, il che significa che almeno la metà del danno che ha portato alla tua morte è stato causato da altri, non da mostri o dall'ambiente. ...\\z\n\tLo {twist of fate} non ridurrà la pena di morte come le altre benedizioni, ma invece ti impedirà di perdere le tue altre benedizioni e l'amuleto della perdita, se ne indossi uno. Costa lo stesso delle altre benedizioni. ...\\z\n\tTi piacerebbe ricevere quella protezione per un sacrificio di |PVPBLESSCOST| oro, bambino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.443379Z"
+  },
+  "npc.tyrias.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vuoi sostituire gratuitamente la tua pietra dell'avventuriero?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T22:49:48.443857Z"
   }
 }

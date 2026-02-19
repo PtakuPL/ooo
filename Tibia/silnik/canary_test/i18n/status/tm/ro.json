@@ -63798,5 +63798,261 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T20:41:45.395688Z"
+  },
+  "scripts.actions_tuning_fork.msg_1": {
+    "src_hash": "1fb08088101b8002a91bbe2c8648b740",
+    "text": "Raportați sarcina lui Gnomilly.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:34.788336Z"
+  },
+  "scripts.enchanting.say_2": {
+    "src_hash": "f6786da93512a5110e0c75948aaf4855",
+    "text": "Opriți mai întâi aparatul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:34.836448Z"
+  },
+  "scripts.goblin_temple_quest.msg_1": {
+    "src_hash": "9bd9442de08fedcaa4b3d38791da086a",
+    "text": "Ai găsit o geantă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:34.854574Z"
+  },
+  "scripts.goblin_temple_quest.msg_2": {
+    "src_hash": "9bd9442de08fedcaa4b3d38791da086a",
+    "text": "Ai găsit o geantă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:34.855190Z"
+  },
+  "scripts.actions_thermometer.msg_2": {
+    "src_hash": "5b0988e5f853d415fc34053cc10feb86",
+    "text": "Acesta nu este punctul fierbinte!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:59.650908Z"
+  },
+  "scripts.actions_time_machine.msg_1": {
+    "src_hash": "4af4503d487cba3ad875975c67fa389c",
+    "text": "Mecanismul te duce înapoi în timp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:59.651421Z"
+  },
+  "scripts.actions_time_machine.msg_2": {
+    "src_hash": "4af4503d487cba3ad875975c67fa389c",
+    "text": "Mecanismul te duce înapoi în timp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:59.651937Z"
+  },
+  "scripts.actions_time_machine.msg_3": {
+    "src_hash": "af13692f0a7bdbfa9260b979d6b3e487",
+    "text": "Trebuie să așteptați puțin înainte de a călători în timp!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:59.652517Z"
+  },
+  "scripts.actions_time_machine.msg_4": {
+    "src_hash": "4af4503d487cba3ad875975c67fa389c",
+    "text": "Mecanismul te duce înapoi în timp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:59.652999Z"
+  },
+  "scripts.actions_time_machine.msg_5": {
+    "src_hash": "4af4503d487cba3ad875975c67fa389c",
+    "text": "Mecanismul te duce înapoi în timp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:06.229111Z"
+  },
+  "scripts.actions_tincture.msg_1": {
+    "src_hash": "1c515751e73b487c2c45cf91c696cde0",
+    "text": "Prăbușiți flaconul și vărsați tinctura de sânge. Acest altar este uns.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:06.229804Z"
+  },
+  "scripts.actions_tools.say_1": {
+    "src_hash": "5fd8554890c305d5ec529fb6ca51e145",
+    "text": "Ați găsit un mic instrument util pentru agenții secreti în colet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:06.230468Z"
+  },
+  "scripts.actions_torch.msg_1": {
+    "src_hash": "4854b59cfd2c644e8e313775e6de1a6f",
+    "text": "Auzi un sunet puternic de măcinat nu foarte departe de tine. ceva foarte greu pare să se fi mutat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:06.231256Z"
+  },
+  "scripts.actions_tortoise.msg_1": {
+    "src_hash": "70c07abb473fda5ebb8cef18df22fc77",
+    "text": "Cuibul de broasca testoasa gol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:06.231672Z"
+  },
+  "scripts.actions_treasure.msg_1": {
+    "src_hash": "2bc9d9a96b2460f687623c9704dedd76",
+    "text": "Este imposibil să iei cu tine toate comorile de aici. Dar alegi {}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:12.662589Z"
+  },
+  "scripts.actions_treasure.msg_2": {
+    "src_hash": "79160e6b066237c7c12eb0cc702123d8",
+    "text": "Încercați să alegeți o comoară, dar auziți alți dragoni apropiindu-se. Ar trebui să mai ucizi înainte de a alege ceva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:12.663479Z"
+  },
+  "scripts.actions_tumulo.msg_1": {
+    "src_hash": "28f1a6c6eb00bf9831ac00fa04d9ca56",
+    "text": "Mormântul este gol. Nimic decât un gol căscat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:12.664127Z"
+  },
+  "scripts.actions_tumuloerro.msg_1": {
+    "src_hash": "28f1a6c6eb00bf9831ac00fa04d9ca56",
+    "text": "Mormântul este gol. Nimic decât un gol căscat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:12.664654Z"
+  },
+  "scripts.actions_ultimate_booze_beer_bottle.say_1": {
+    "src_hash": "05d7597d2424445ea103aaaf2dd7a744",
+    "text": "GULP, GULP, GULP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:12.665111Z"
+  },
+  "scripts.actions_ursagrodon.msg_1": {
+    "src_hash": "d0d3617b1cd884278a414fdbabd6b439",
+    "text": "Ai deja supunerea lui ursagrodon.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:19.420507Z"
+  },
+  "scripts.actions_ursagrodon.msg_2": {
+    "src_hash": "4db1a87ec2c30e5b5d9e61fb6c1d97d3",
+    "text": "Gheața a crăpat și creatura înghețată cu ea - fii mai atent data viitoare!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:19.421202Z"
+  },
+  "scripts.actions_ursagrodon.msg_3": {
+    "src_hash": "125d3b04bcaf892fb2386fb00ac1921a",
+    "text": "Ai reușit să topești aproximativ jumătate din patul de gheață. Imediat acum, este rece ca gheața aici și blocul de gheață ar putea îngheța din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:19.422134Z"
+  },
+  "scripts.actions_ursagrodon.msg_4": {
+    "src_hash": "5fcfa4caa955ed25132384275eb6caec",
+    "text": "Ai reușit să topești aproape tot blocul, doar picioarele creaturii sunt încă blocate în gheață. Termină treaba!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:19.423151Z"
+  },
+  "scripts.actions_ursagrodon.msg_5": {
+    "src_hash": "e28b127eca3173abd0c728adc49379a2",
+    "text": "Ursagrodonul eliberat se uită la tine cu ochi strălucitori, ascultători.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:19.423866Z"
+  },
+  "scripts.actions_vocation_reward.msg_1": {
+    "src_hash": "1b196f133787b2ece397fe8e02781728",
+    "text": "Ați găsit un {}. Cântărind {} oz, este prea greu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:24.222001Z"
+  },
+  "scripts.actions_vocation_reward.msg_2": {
+    "src_hash": "599cf90440973dd912f8996689e2fa2b",
+    "text": "Ați găsit un {}. Nu este loc.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:24.222557Z"
+  },
+  "scripts.actions_waldos_posthorn.msg_1": {
+    "src_hash": "358e1871d6927f9c6a51a8f8e300b4f6",
+    "text": "Ai găsit cornul de poștă al lui Waldo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:24.223088Z"
+  },
+  "scripts.actions_waldos_posthorn.msg_2": {
+    "src_hash": "952f56962331136fbc510393bd0ab94e",
+    "text": "Omul mort este gol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:24.223501Z"
+  },
+  "scripts.actions_warrior_skeleton.msg_1": {
+    "src_hash": "80d457dae23708dcc3b6cd172fd0a4e0",
+    "text": "Ai descoperit scheletul unui războinic decedat. Se pare că a încercat să vâneze dragonii de aici - și nu a reușit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:24.224419Z"
+  },
+  "scripts.actions_warrior_skeleton.msg_2": {
+    "src_hash": "89f9a53b30b87ed685542d56c12b171b",
+    "text": "Exploratorul mort este gol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:29.106588Z"
+  },
+  "scripts.actions_yakchal.say_1": {
+    "src_hash": "2144bcb8d71f4344fe6b00158f77e29d",
+    "text": "Yakchal a fost deja trezit astăzi. Ar trebui să încerci din nou mâine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:29.107292Z"
+  },
+  "scripts.actions_yakchal.say_2": {
+    "src_hash": "e28e22403ac4c71dfd23694e150f6e0b",
+    "text": "Lumina înghețată a stelelor s-a spulberat, dar ai trezit-o pe vrăjitoarea de gheață Yakchal din somnul ei! Nu pare amuzata...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-19T20:52:29.108192Z"
   }
 }

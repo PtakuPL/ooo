@@ -37630,5 +37630,109 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T20:13:48.744003Z"
+  },
+  "scripts.blessing.already_possess": {
+    "src_hash": "299238c1ad2213c614a5b40865f27a1d",
+    "text": "Вы уже обладаете этим благословением.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:25.552908Z"
+  },
+  "scripts.movements_check_oasis.msg_1": {
+    "src_hash": "b926bc58edb99304bcfeb775f69723de",
+    "text": "Вы нашли прекрасный оазис с зеленой фауной и сочными фруктами. Вы этого не ожидали.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:25.718318Z"
+  },
+  "scripts.movements_energy_fence.msg_1": {
+    "src_hash": "ac4ce451e97f5f5ca9b2988f963b65e4",
+    "text": "Будучи сосудом, связывающим силу белых душ, вы преодолеваете магический барьер.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:25.727098Z"
+  },
+  "scripts.movements_energy_fence.msg_2": {
+    "src_hash": "a2542379d4a2a531f8331c4477d6d437",
+    "text": "Объединенные силы разлагающихся душ, бродящих по этим залам, могут помочь преодолеть этот барьер, для этого нужен лишь сосуд, чтобы связать их.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:25.729174Z"
+  },
+  "scripts.movements_energy_fence.msg_3": {
+    "src_hash": "ac4ce451e97f5f5ca9b2988f963b65e4",
+    "text": "Будучи сосудом, связывающим силу белых душ, вы преодолеваете магический барьер.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:25.730110Z"
+  },
+  "scripts.movements_energy_fence.msg_4": {
+    "src_hash": "a2542379d4a2a531f8331c4477d6d437",
+    "text": "Объединенные силы разлагающихся душ, бродящих по этим залам, могут помочь преодолеть этот барьер, для этого нужен лишь сосуд, чтобы связать их.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:25.731426Z"
+  },
+  "scripts.movements_energy_fence.msg_5": {
+    "src_hash": "d29f48181caf41d19ccd37214bc8e268",
+    "text": "Когда вы пересекаете порог внутреннего святилища культа Misguided, вы чувствуете жуткое присутствие вокруг себя.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:25.733013Z"
+  },
+  "scripts.movements_enter_realm.msg_1": {
+    "src_hash": "301dc366a591a5b91aeb25943417a15b",
+    "text": "Вы входите в царство мечты.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:25.733750Z"
+  },
+  "scripts.movements_enter_realm.msg_2": {
+    "src_hash": "0e5950001ece13da6f3dac61bd04e7ee",
+    "text": "У вас нет уровня 40+ и вам не хватает волшебного ключа Chayenne.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:25.735120Z"
+  },
+  "scripts.movements_enter_realm.msg_3": {
+    "src_hash": "5a07e7668949fbce9f8027e938202e95",
+    "text": "Прощай, путешественник мечты...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:25.735971Z"
+  },
+  "scripts.movements_gnome_ordnance.msg_1": {
+    "src_hash": "e08280b1abb63ecae52b001fe7ef41c2",
+    "text": "Вы организовали эскорт, доставьте всех в безопасное место!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:25.741846Z"
+  },
+  "scripts.movements_ice.msg_1": {
+    "src_hash": "5576bad117adbe85b18fac4085eed026",
+    "text": "Немного тепла возвращается в ваше тело, когда вы покидаете ледяную пещеру.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:25.746112Z"
+  },
+  "scripts.movements_ice_death.msg_1": {
+    "src_hash": "8c3b0542a4e39034f0fc70ffaf915bc1",
+    "text": "Вас убило что-то злое и другие.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:51:25.746983Z"
   }
 }

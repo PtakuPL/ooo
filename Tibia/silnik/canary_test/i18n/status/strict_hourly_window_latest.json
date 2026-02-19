@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-19T21:21:19.244052Z",
-  "window_end_utc": "2026-02-19T22:21:19.244052Z",
+  "window_start_utc": "2026-02-19T21:22:42.574908Z",
+  "window_end_utc": "2026-02-19T22:22:42.574908Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,22 +8,22 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/suspicious_rejected.jsonl"
   ],
-  "total_cycles": 45,
+  "total_cycles": 49,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 45
+    "AUTO_TRANSLATE": 49
   },
-  "auto_translate_cycles": 45,
+  "auto_translate_cycles": 49,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 566,
-  "guard_fail": 366,
-  "guard_fail_rate_pct": 39.3,
+  "translated": 559,
+  "guard_fail": 347,
+  "guard_fail_rate_pct": 38.3,
   "no_progress_entries": 22,
-  "no_progress_rate_pct": 53.7,
-  "throughput_keys_per_h": 722.8,
-  "suspicious_total": 7530,
+  "no_progress_rate_pct": 51.2,
+  "throughput_keys_per_h": 661.5,
+  "suspicious_total": 7512,
   "top_guard_fail_targets": [
     {
       "target": "ro/spells.json",
@@ -62,15 +62,15 @@
       "guard_command": 0
     },
     {
-      "target": "ro/achievements.json",
-      "translated": 16,
-      "guard_fail": 34,
-      "guard_command": 0
-    },
-    {
       "target": "it/monsters.json",
       "translated": 35,
       "guard_fail": 22,
+      "guard_command": 0
+    },
+    {
+      "target": "es/quests.json",
+      "translated": 0,
+      "guard_fail": 15,
       "guard_command": 0
     }
   ]

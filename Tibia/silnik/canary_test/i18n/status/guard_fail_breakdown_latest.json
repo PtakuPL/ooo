@@ -1,38 +1,38 @@
 {
-  "timestamp": "2026-02-19T22:21:23.163472Z",
-  "window_start_utc": "2026-02-19T21:21:19.244052Z",
-  "window_end_utc": "2026-02-19T22:21:19.244052Z",
+  "timestamp": "2026-02-19T22:22:47.270019Z",
+  "window_start_utc": "2026-02-19T21:22:42.574908Z",
+  "window_end_utc": "2026-02-19T22:22:42.574908Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 236,
-  "suspicious_entries": 7530,
-  "guard_fail_entries": 41,
-  "guard_fail_sum": 366,
+  "rejected_entries": 226,
+  "suspicious_entries": 7512,
+  "guard_fail_entries": 43,
+  "guard_fail_sum": 347,
   "by_type": {
-    "identical_to_en": 168,
+    "identical_to_en": 156,
     "mixed_language": 35,
-    "word_salad": 13,
+    "word_salad": 15,
     "mixed_scripts": 20,
     "cyrillic_latin_mix": 20,
     "contains_tibia_proper_noun": 11
   },
   "by_source": {
-    "google_translate": 236
+    "google_translate": 226
   },
   "by_language": {
-    "sv": 28,
+    "sv": 16,
     "es": 42,
-    "it": 44,
+    "it": 46,
     "ru": 20,
     "ro": 55,
     "pl": 47
   },
   "by_category": {
-    "spells.json": 128,
+    "spells.json": 116,
     "npc.json": 14,
     "chatchannels.json": 1,
     "client.json": 2,
@@ -41,17 +41,17 @@
     "items.json": 53,
     "server.json": 3,
     "monsters.json": 18,
-    "quests.json": 1,
+    "quests.json": 3,
     "scripts.json": 8
   },
   "by_severity": {
-    "CRITICAL": 181,
+    "CRITICAL": 171,
     "HIGH": 55
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 168
+      "count": 156
     },
     {
       "type": "mixed_language",
@@ -67,7 +67,7 @@
     },
     {
       "type": "word_salad",
-      "count": 13
+      "count": 15
     },
     {
       "type": "contains_tibia_proper_noun",
@@ -97,22 +97,6 @@
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1,
         "identical_to_en": 1
-      }
-    },
-    {
-      "key": "spell.rotthingholy_ulus.name",
-      "count": 4,
-      "types": {
-        "identical_to_en": 4
-      }
-    },
-    {
-      "key": "spell.quara_constrictor_freeze.name",
-      "count": 4,
-      "types": {
-        "identical_to_en": 2,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
       }
     },
     {
@@ -218,6 +202,13 @@
       }
     },
     {
+      "key": "spell.rotthingholy_ulus.name",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
+      }
+    },
+    {
       "key": "spell.single_ice_chain.name",
       "count": 3,
       "types": {
@@ -233,6 +224,13 @@
     },
     {
       "key": "spell.iksyapunac_wave.name",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
+      }
+    },
+    {
+      "key": "spell.mitmahseer_wave.name",
       "count": 3,
       "types": {
         "identical_to_en": 3

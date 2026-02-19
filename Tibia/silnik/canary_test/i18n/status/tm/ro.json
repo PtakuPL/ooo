@@ -64054,5 +64054,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T20:52:29.108192Z"
+  },
+  "raid.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Vânător",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:54:00.009067Z"
   }
 }

@@ -1,44 +1,241 @@
 {
-  "timestamp": "2026-02-19T20:52:41.541629Z",
+  "timestamp": "2026-02-19T20:55:04.504529Z",
   "checked_entries": 100,
-  "issues_found": 21,
+  "issues_found": 48,
   "issues_by_type": {
-    "identical_to_en_exempt": 8,
-    "identical_to_en": 5,
+    "identical_to_en": 32,
+    "identical_to_en_exempt": 10,
     "artifact_token": 16,
+    "suspicious_log_low": 74,
+    "suspicious_log_high": 100,
     "suspicious_log_critical": 26,
-    "suspicious_log_high": 174,
-    "suspicious_rejected_high": 11,
-    "suspicious_rejected_critical": 189
+    "suspicious_rejected_critical": 191,
+    "suspicious_rejected_high": 9
   },
   "issues": [
     {
-      "key": "otclient_modules.character_otui.tr_27",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Depot",
-      "translated": "Depot"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia.tr_6",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
-    {
       "key": "scripts.actions_ultimate_booze_beer_bottle.say_1",
-      "lang": "it",
+      "lang": "ro",
       "type": "identical_to_en",
       "en": "GULP, GULP, GULP",
       "translated": "GULP, GULP, GULP"
+    },
+    {
+      "key": "raid.cyclops.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Cyclops",
+      "translated": "Cyclops"
+    },
+    {
+      "key": "raid.wild_horses.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
+    },
+    {
+      "key": "raid.sheng.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Sheng",
+      "translated": "Sheng"
+    },
+    {
+      "key": "raid.munster.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Munster",
+      "translated": "Munster"
+    },
+    {
+      "key": "raid.teleskor.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Teleskor",
+      "translated": "Teleskor"
+    },
+    {
+      "key": "raid.furyosa.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "raid.chayenne.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "raid.omrafir.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Omrafir",
+      "translated": "Omrafir"
+    },
+    {
+      "key": "raid.gaz_haragoth.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth"
+    },
+    {
+      "key": "raid.yeti.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Yeti",
+      "translated": "Yeti"
+    },
+    {
+      "key": "raid.gargoyle.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Gargoyle",
+      "translated": "Gargoyle"
+    },
+    {
+      "key": "raid.nomad.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "raid.cobra.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Cobra",
+      "translated": "Cobra"
+    },
+    {
+      "key": "raid.bone_beast.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Bone Beast",
+      "translated": "Bone Beast"
+    },
+    {
+      "key": "raid.terramite.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Terramite",
+      "translated": "Terramite"
+    },
+    {
+      "key": "raid.lizards.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Lizards",
+      "translated": "Lizards"
+    },
+    {
+      "key": "raid.cyclops.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Cyclops",
+      "translated": "Cyclops"
+    },
+    {
+      "key": "raid.wild_horses.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
+    },
+    {
+      "key": "raid.sheng.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Sheng",
+      "translated": "Sheng"
+    },
+    {
+      "key": "raid.munster.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Munster",
+      "translated": "Munster"
+    },
+    {
+      "key": "raid.teleskor.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Teleskor",
+      "translated": "Teleskor"
+    },
+    {
+      "key": "raid.furyosa.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Furyosa",
+      "translated": "Furyosa"
+    },
+    {
+      "key": "raid.chayenne.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Chayenne",
+      "translated": "Chayenne"
+    },
+    {
+      "key": "raid.omrafir.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Omrafir",
+      "translated": "Omrafir"
+    },
+    {
+      "key": "raid.gaz_haragoth.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth"
+    },
+    {
+      "key": "raid.yeti.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Yeti",
+      "translated": "Yeti"
+    },
+    {
+      "key": "raid.gargoyle.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Gargoyle",
+      "translated": "Gargoyle"
+    },
+    {
+      "key": "raid.nomad.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Nomad",
+      "translated": "Nomad"
+    },
+    {
+      "key": "raid.cobra.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Cobra",
+      "translated": "Cobra"
+    },
+    {
+      "key": "raid.bone_beast.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Bone Beast",
+      "translated": "Bone Beast"
+    },
+    {
+      "key": "raid.terramite.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Terramite",
+      "translated": "Terramite"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
@@ -151,13 +348,6 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "scripts.actions_ultimate_booze_beer_bottle.say_1",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "GULP, GULP, GULP",
-      "translated": "GULP, GULP, GULP"
     }
   ],
   "threshold": 10,

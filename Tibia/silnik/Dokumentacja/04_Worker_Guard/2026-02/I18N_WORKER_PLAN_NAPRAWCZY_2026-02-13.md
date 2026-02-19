@@ -122,6 +122,123 @@ Cel tej aktualizacji:
 
 ### 1) Potwierdzone przykłady błędnych tłumaczeń (fizyczne pliki JSON)
 
+#### 1.0. Skala problemu (snapshot PL/ES)
+
+Na podstawie pełnego skanu fizycznych plików `i18n/pl/*.json` i `i18n/es/*.json`:
+- `pl`:
+  - `total_keys=53577`
+  - `en_marker([EN])=5972`
+  - `lang_marker([PL]/[ES])=541`
+  - `mission_token(npc.bozo.mission_*)=36`
+  - `fx_token=3`
+- `es`:
+  - `total_keys=53577`
+  - `en_marker([EN])=6298`
+  - `lang_marker([PL]/[ES])=1747`
+  - `mission_token(npc.bozo.mission_*)=34`
+  - `fx_token=3`
+  - `todo_artifact=30`
+
+To potwierdza, że problem jest szeroki i nie ogranicza się do kilku kluczy.
+
+#### 1.1. Przykłady startowe „Enter Game / Create Account” (rozszerzenie)
+
+##### PL (`i18n/pl`)
+
+`otclient_modules.entergame*`:
+- `otclient_modules.entergame.tr_1 = "Wiadomość z the Dzień"` (mix EN/PL)
+- `otclient_modules.entergame.tr_20 = "Wiadomość z the Dzień"` (powtórka błędu)
+- `otclient_modules.entergame.tr_9 = "[PL] ERROR , try adding ..."` (artefakt techniczny, nie tłumaczenie UI)
+
+`otclient_modules.entergame_otui*`:
+- `otclient_modules.entergame_otui.tr_1 = "Utwórz Twojego"` (nienaturalna składnia)
+- `otclient_modules.entergame_otui.tr_12 = "Znak"` (zły termin domenowy dla „character”)
+
+`client.createaccount*`:
+- `client.createaccount.text1 = "fx handleHttpResponse"` (token techniczny)
+- `client.createaccount.text3 = "fx handleHttpResponse"`
+- `client.createaccount.text5 = "fx handleHttpResponse"`
+
+`html.createaccount*`:
+- `html.createaccount.html.text3 = "[EN] Caps Lock is enabled!"`
+- `html.createaccount_confirm.html.text1 = "[EN] {{ account.premdays }}"`
+- `html.createaccount_confirm.html.text2 = "[EN] {{ character.name }}"`
+
+##### ES (`i18n/es`)
+
+`otclient_modules.entergame*`:
+- `otclient_modules.entergame.tr_17 = "Viaje hacia adelante"` (nienaturalne dla CTA „continue journey / enter game”)
+- `otclient_modules.entergame.tr_9 = "[ES] ERROR , try adding ..."` (artefakt techniczny)
+
+`otclient_modules.entergame_otui*`:
+- `otclient_modules.entergame_otui.tr_12 = "Simbólico"` (błędny termin domenowy)
+- `otclient_modules.entergame_otui.tr_2 = "Acceso"` (semantycznie zbyt ogólne w miejscu login action)
+
+`client.createaccount*`:
+- `client.createaccount.text1 = "mango fxHttpResponse"` (artefakt tokena)
+- `client.createaccount.text2 = "[EN] ERROR: JSON not found in the response"`
+- `client.createaccount.text3 = "mango fxHttpResponse"`
+- `client.createaccount.text5 = "mango fxHttpResponse"`
+
+`html.createaccount*`:
+- `html.createaccount_confirm.html.text1 = "[EN] {{ account.premdays }}"`
+- `html.createaccount_confirm.html.text2 = "[EN] {{ character.name }}"`
+
+#### 1.2. Rozszerzona lista innych przypadków (poza Enter Game)
+
+##### PL (`i18n/pl`)
+
+`items.json`:
+- `item.25907.name = "supreme Zdrowie keg"`
+- `item.25906.name = "ultimate Zdrowie keg"`
+- `item.25905.name = "great Zdrowie keg"`
+- `item.25904.name = "strong Zdrowie keg"`
+- `item.21001.name = "martwy minotaur amazon"`
+- `item.10727.name = "dreadcoil"`
+
+`npc.json`:
+- `npc.bozo.stdmod_81..115` zawierają artefakty `npc.bozo.mission_*` zamiast finalnego tekstu użytkowego.
+
+`otclient_modules.json`:
+- `otclient_modules.bestiary_otui.tr_2 = "[EN] ?"`
+- `otclient_modules.bestiary_otui.tr_3 = "[EN] ?"`
+- `otclient_modules.character_otui.tr_46 = "[EN] Description"`
+- `otclient_modules.editvip_otui.tr_7 = "[EN] Description"`
+
+`scripts.json`:
+- `scripts.actions_bonefiddle.msg_4 = "[EN] You are playing the Peacock Ballad and the portal opens."`
+- `scripts.actions_frozen_horror.msg_2 = "[EN] Someone is fighting with Frozen Horror."`
+- `scripts.movements_mission4_parchment_decyphering.say_1 = "[EN] !-! -O- I_I (/( --I Morgathla"`
+
+##### ES (`i18n/es`)
+
+`npc.json`:
+- `npc.bozo.stdmod_98 = "npc.bozo.mission_18_t1_1\\z ..."`
+- `npc.bozo.stdmod_99 = "npc.bozo.mission_19_t1\\z ..."`
+- `npc.captain_haba_open_sea.larboard_1 = "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"`
+- `npc.captain_haba_open_sea.say_3 = "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"`
+- `npc.captain_haba_open_sea.straight_3 = "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"`
+
+`npclib.json`:
+- `misc.bank_system.say_1 = "[EN] You do not have enough gold."`
+- `misc.bank_system.say_10 = "[EN] Whoah, hold on, you have no free capacity to carry all those coins!"`
+
+`client.json`:
+- `client.http.text3 = "[EN] HTTP.getJSON is not supported"`
+- `client.http.text4 = "[EN] HTTP.post is not supported"`
+- `client.http.text5 = "[EN] HTTP.postJSON is not supported"`
+
+`scripts.json`:
+- `scripts.actions_vocation_reward.msg_2 = "[EN] You have found a {}. There is no room."`
+- `scripts.movements_teleportto.say_1 = "[EN] rkawdmawfjawkjnfjkawnkjnawkdjawkfmalkwmflkmawkfnzxc"`
+- `scripts.movements_habitats_access.msg_1 = "[EN] You not proven your worth. There is no escape for you here."`
+
+`talkactions.json`:
+- wiele wpisów z markerem `[ES]` pozostawionym w treści runtime (nie powinien trafiać do finalnej warstwy UI), np.:
+  - `talkaction.refill.msg_refilled`
+  - `talkaction.god.zones.msg_size`
+  - `talkaction.god.forge.msg_add_target`
+
 #### A. Język polski (`i18n/pl/*.json`)
 
 Przypadki mieszania EN/PL i nienaturalnych form:
@@ -244,6 +361,36 @@ for line in open('i18n/status/suspicious_rejected.jsonl',encoding='utf-8',errors
         cat,val=cur
         print(f"{o['lang']}\t{k}\t{cat}\t{val[:120] if isinstance(val,str) else val}")
 PY
+```
+
+#### 2.6. Generowanie pełnej listy przypadków do review (PL/ES) — raport plikowy
+
+```bash
+python3 - <<'PY' > i18n/status/pl_es_problem_cases_$(date +%Y%m%d_%H%M%S).txt
+import json,glob,os,re
+langs=['pl','es']
+rules=[
+ ('en_marker',lambda v:'[EN]' in v),
+ ('lang_marker',lambda v:'[PL]' in v or '[ES]' in v),
+ ('mission_token',lambda v:'npc.bozo.mission_' in v),
+ ('fx_token',lambda v:'fx ' in v.lower() or 'fxhttpresponse' in v.lower() or 'mango fx' in v.lower()),
+ ('todo_artifact',lambda v:('TODO' in v or '[LANG]' in v or '????' in v)),
+]
+for lang in langs:
+  for fp in glob.glob(f'i18n/{lang}/*.json'):
+    cat=os.path.basename(fp)
+    data=json.load(open(fp,encoding='utf-8'))
+    for k,v in data.items():
+      if not isinstance(v,str):
+        continue
+      tags=[n for n,f in rules if f(v)]
+      if tags:
+        print(f"{lang}\t{cat}\t{k}\ttags={','.join(tags)}\t{v[:180]}")
+PY
+
+# szybki podgląd ile przypadków i sample
+wc -l i18n/status/pl_es_problem_cases_*.txt
+head -n 100 i18n/status/pl_es_problem_cases_*.txt
 ```
 
 ---

@@ -37734,5 +37734,45 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T20:51:25.746983Z"
+  },
+  "raid.arachir_the_ancient_one.name": {
+    "src_hash": "0a30cc23ffefbf66b30e5409951d05dc",
+    "text": "Арачир Древний",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:53:23.989655Z"
+  },
+  "raid.zushuka.name": {
+    "src_hash": "f7d3f936c82d25f009159f66874105e9",
+    "text": "Дзушука",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:53:23.998085Z"
+  },
+  "raid.diblis_the_fair.name": {
+    "src_hash": "5cd6555c19e0b434371a7a34d538792b",
+    "text": "Диблис Ярмарка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:53:24.009742Z"
+  },
+  "raid.mad_mage.name": {
+    "src_hash": "7cb4e60cd0927f995c74a12fe8154ebc",
+    "text": "Безумный маг",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:53:24.016076Z"
+  },
+  "raid.zulazza_the_corruptor.name": {
+    "src_hash": "50f128ec9e12698f936e0ea56a2b2b61",
+    "text": "Зулацца Развратительница",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:53:24.017783Z"
   }
 }

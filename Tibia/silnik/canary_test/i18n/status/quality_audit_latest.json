@@ -1,37 +1,15 @@
 {
-  "timestamp": "2026-02-19T21:15:39.347297Z",
+  "timestamp": "2026-02-19T21:17:28.706614Z",
   "checked_entries": 100,
-  "issues_found": 35,
+  "issues_found": 32,
   "issues_by_type": {
-    "artifact_token": 35,
     "identical_to_en_exempt": 11,
-    "suspicious_log_high": 99,
-    "suspicious_log_critical": 101,
-    "suspicious_rejected_critical": 185,
-    "suspicious_rejected_high": 15
+    "artifact_token": 32,
+    "suspicious_log_high": 200,
+    "suspicious_rejected_critical": 183,
+    "suspicious_rejected_high": 17
   },
   "issues": [
-    {
-      "key": "book.otbm.battletactics_for_mages_ii",
-      "lang": "ru",
-      "type": "artifact_token",
-      "en": "Battletactics for Mages [II]",
-      "translated": "Тактика боя для магов [II]"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iii",
-      "lang": "ru",
-      "type": "artifact_token",
-      "en": "Battletactics for Mages [III]",
-      "translated": "Тактика боя для магов [III]"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iv",
-      "lang": "ru",
-      "type": "artifact_token",
-      "en": "Battletactics for Mages [IV]",
-      "translated": "Тактика боя для магов [IV]"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

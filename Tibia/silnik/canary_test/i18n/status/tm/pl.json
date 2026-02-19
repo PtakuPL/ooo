@@ -115918,5 +115918,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-17T10:29:24.498395Z"
+  },
+  "npc.zarifan.greet_msg_1": {
+    "src_hash": "29202e33b375df84ccfd8396a31d455f",
+    "text": "... ... cześć...magiczne... słowa?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:10:37.110941Z"
+  },
+  "npc.zedrulon_the_fallen.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Niech bogowie ci błogosławią, |PLAYERNAME|!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:10:37.123813Z"
+  },
+  "npc.zedrulon_the_fallen.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:10:37.125218Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Przyjmij ochronę zrządzenia losu, pielgrzymie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:10:37.125908Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_25": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:10:37.145333Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Pilnuj dobrze swojego kamienia poszukiwacza przygód.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:10:37.145933Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:10:37.147016Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Proszę bardzo. Uważaj na siebie.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-19T20:10:37.148238Z"
+  },
+  "npc.zirella.greet_msg_7": {
+    "src_hash": "469c65c9fe47d49850f841d142b7485d",
+    "text": "Och, kochanie, jest jakiś problem z questem? Mam to znowu {explain}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:10:37.190556Z"
+  },
+  "npc.zirella.greet_msg_9": {
+    "src_hash": "851e7c81240b849bc5e550b1fa68ea46",
+    "text": "Och, witaj ponownie, drogi Isleth Eagonst! Przyszedłeś na małą pogawędkę? Użyj ponownie podświetlonych {keywords}, aby wybrać {topic}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:10:37.193257Z"
+  },
+  "npc.zirella.walkaway_msg_1": {
+    "src_hash": "4375d28b335c873732dd7ca1986ee4c7",
+    "text": "Do widzenia, podróżniku, uważaj na siebie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:10:37.201620Z"
+  },
+  "npc.ziyad.greet_msg_1": {
+    "src_hash": "5b7bae4e2b720bbffb3dd63b5f3b1f4e",
+    "text": "Ach, wiatr przywiał kolejnego gościa. Witaj, drogi gościu. Szukasz {passage} na moim dywanie?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-19T20:10:37.203520Z"
   }
 }

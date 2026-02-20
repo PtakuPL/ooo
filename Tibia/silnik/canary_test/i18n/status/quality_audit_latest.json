@@ -1,12 +1,14 @@
 {
-  "timestamp": "2026-02-20T17:55:21.195667Z",
+  "timestamp": "2026-02-20T17:55:59.174547Z",
   "checked_entries": 100,
-  "issues_found": 32,
+  "issues_found": 46,
   "issues_by_type": {
-    "identical_to_en_exempt": 8,
-    "artifact_token": 32,
-    "suspicious_log_critical": 42,
-    "suspicious_log_high": 28,
+    "identical_to_en_exempt": 23,
+    "artifact_token": 34,
+    "identical_to_en": 12,
+    "suspicious_log_high": 34,
+    "suspicious_log_critical": 56,
+    "suspicious_log_low": 28,
     "suspicious_rejected_critical": 143,
     "suspicious_rejected_high": 26
   },
@@ -234,6 +236,104 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "scripts.auto_loot.msg_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "Autoloot mode set to ALL.",
+      "translated": "Modo de autoloot establecido a TODO."
+    },
+    {
+      "key": "scripts.prince_drazzak_summon.say_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "CRUSH THEM ALL!",
+      "translated": "¡¡APLASTADLES A TODOS!!"
+    },
+    {
+      "key": "raid.serpent_spawn.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn"
+    },
+    {
+      "key": "raid.wild_horses.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
+    },
+    {
+      "key": "raid.gaz_haragoth.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth"
+    },
+    {
+      "key": "raid.diblis_the_fair.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Diblis The Fair",
+      "translated": "Diblis The Fair"
+    },
+    {
+      "key": "raid.the_old_widow.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Old Widow",
+      "translated": "The Old Widow"
+    },
+    {
+      "key": "raid.feverish_citizen.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "raid.water_buffalo.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
+    },
+    {
+      "key": "raid.sir_valorcrest.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "raid.mad_mage.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Mad Mage",
+      "translated": "Mad Mage"
+    },
+    {
+      "key": "raid.weakened_shlorg.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
+    },
+    {
+      "key": "raid.zevelon_duskbringer.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
+    },
+    {
+      "key": "raid.zulazza_the_corruptor.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Zulazza The Corruptor",
+      "translated": "Zulazza The Corruptor"
     }
   ],
   "threshold": 10,

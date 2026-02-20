@@ -8,8 +8,8 @@
   },
   "start_cycle": 2,
   "checks_required": 3,
-  "checks_done": 2,
-  "status": "in_progress",
+  "checks_done": 3,
+  "status": "completed",
   "checks": [
     {
       "timestamp": "2026-02-20T17:24:28.811837Z",
@@ -30,6 +30,17 @@
       "guard_fail": 0,
       "strict_skipped_done": 517,
       "guard_fail_rate_pct": 0.0
+    },
+    {
+      "timestamp": "2026-02-20T17:26:33.517792Z",
+      "cycle": 4,
+      "lang": "it",
+      "json_file": "spells.json",
+      "translated": 0,
+      "guard_fail": 30,
+      "strict_skipped_done": 1404,
+      "guard_fail_rate_pct": 100.0
     }
-  ]
+  ],
+  "completed_at": "2026-02-20T17:26:33.517823Z"
 }

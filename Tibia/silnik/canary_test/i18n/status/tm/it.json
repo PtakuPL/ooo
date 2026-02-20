@@ -79598,5 +79598,101 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T20:07:30.103285Z"
+  },
+  "scripts.bank.deposit_success": {
+    "src_hash": "e70cdaf45087e3f9f710fa8dd55cdbac",
+    "text": "Depositate {} monete d'oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:13:38.375536Z"
+  },
+  "scripts.bank.msg_11": {
+    "src_hash": "d88f7ca59893bb7cfc846bc0a199eb87",
+    "text": "Trasferimento non riuscito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:13:38.375793Z"
+  },
+  "scripts.bank.msg_2": {
+    "src_hash": "c8e98927245ea8a864fd479aabe18b3a",
+    "text": "Importo non valido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:13:38.376013Z"
+  },
+  "scripts.bank.msg_3": {
+    "src_hash": "58b8d3b491658029f693e2429c532650",
+    "text": "Non hai abbastanza contanti per depositare tale importo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:13:38.376351Z"
+  },
+  "scripts.bank.msg_5": {
+    "src_hash": "c8e98927245ea8a864fd479aabe18b3a",
+    "text": "Importo non valido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:13:38.376572Z"
+  },
+  "scripts.bank.msg_6": {
+    "src_hash": "e8973573f46c474ffce04ae8349dccf4",
+    "text": "Non hai abbastanza soldi nel tuo conto bancario.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:13:44.278833Z"
+  },
+  "scripts.bank.msg_8": {
+    "src_hash": "c8e98927245ea8a864fd479aabe18b3a",
+    "text": "Importo non valido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:13:44.279171Z"
+  },
+  "scripts.bank.msg_9": {
+    "src_hash": "be3c108751f1fcf6ec011a50ce3efd0a",
+    "text": "Fornisci il nome di un giocatore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:13:44.279477Z"
+  },
+  "scripts.bank.player_not_exists": {
+    "src_hash": "5e6cbbbe2a9daaf0bdb8d78dc6912ac9",
+    "text": "Il giocatore {} non esiste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:13:44.279763Z"
+  },
+  "scripts.bank.transfer_success": {
+    "src_hash": "0265a9b872dbaae130bec6e6786407d1",
+    "text": "Trasferito {} monete d'oro a {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:13:44.280097Z"
+  },
+  "scripts.bank.withdraw_success": {
+    "src_hash": "8d4402b8cbe7b388bfbab0d530545fda",
+    "text": "Ritirato {} monete d'oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:13:47.861642Z"
+  },
+  "scripts.bed_modification_kits.msg_1": {
+    "src_hash": "c43902468e14c10e72f9b8eefd3cc887",
+    "text": "Hai già questa modifica del valore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:13:47.861993Z"
   }
 }

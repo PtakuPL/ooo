@@ -1,45 +1,45 @@
 {
-  "timestamp": "2026-02-20T20:12:55.138210Z",
-  "window_start_utc": "2026-02-20T19:12:54.429040Z",
-  "window_end_utc": "2026-02-20T20:12:54.429040Z",
+  "timestamp": "2026-02-20T20:14:31.495921Z",
+  "window_start_utc": "2026-02-20T19:14:30.834357Z",
+  "window_end_utc": "2026-02-20T20:14:30.834357Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 214,
-  "rejected_entries_raw": 377,
+  "rejected_entries": 218,
+  "rejected_entries_raw": 386,
   "suspicious_entries": 3668,
-  "suspicious_entries_raw": 22110,
-  "guard_fail_entries": 128,
-  "guard_fail_sum": 5918,
+  "suspicious_entries_raw": 20770,
+  "guard_fail_entries": 126,
+  "guard_fail_sum": 5938,
   "by_type": {
-    "identical_to_en": 172,
-    "word_salad": 7,
+    "identical_to_en": 176,
     "mixed_language": 10,
+    "word_salad": 7,
     "mixed_scripts": 22,
     "cyrillic_latin_mix": 22,
     "contains_tibia_proper_noun": 17,
     "fx_token": 3
   },
   "by_source": {
-    "google_translate": 214
+    "google_translate": 218
   },
   "by_language": {
-    "ro": 57,
     "es": 40,
     "pl": 43,
-    "it": 41,
+    "it": 45,
+    "ro": 57,
     "ru": 22,
     "sv": 11
   },
   "by_category": {
-    "items.json": 27,
-    "npc.json": 4,
     "spells.json": 53,
     "quests.json": 3,
-    "scripts.json": 6,
+    "scripts.json": 10,
+    "npc.json": 4,
+    "items.json": 27,
     "server.json": 17,
     "books.json": 1,
     "otclient_modules.json": 29,
@@ -52,13 +52,13 @@
     "modules.json": 3
   },
   "by_severity": {
-    "CRITICAL": 179,
+    "CRITICAL": 183,
     "HIGH": 35
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 172
+      "count": 176
     },
     {
       "type": "mixed_scripts",
@@ -93,6 +93,13 @@
         "mixed_language": 2,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "scripts.action_cushion.say_1",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
       }
     },
     {
@@ -215,13 +222,6 @@
         "contains_tibia_proper_noun": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
       }
     },
     {

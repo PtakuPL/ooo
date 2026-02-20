@@ -33,12 +33,12 @@
     "issues_count": 1417
   },
   "es": {
-    "last_cycle": "2026-02-20T22:32:38.700161Z",
+    "last_cycle": "2026-02-20T22:35:21.251423Z",
     "last_translated": 23,
-    "total_suspicious": 68010,
-    "total_rejected": 2223,
-    "total_gt_guard_fail": 22425,
-    "cycles": 1677,
+    "total_suspicious": 68071,
+    "total_rejected": 2224,
+    "total_gt_guard_fail": 22445,
+    "cycles": 1678,
     "quality_score": 60.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 350877
@@ -99,13 +99,13 @@
     "issues_count": 649
   },
   "sv": {
-    "last_cycle": "2026-02-20T22:27:51.318314Z",
-    "last_translated": 30,
-    "total_suspicious": 4629,
-    "total_rejected": 307,
-    "total_gt_guard_fail": 757,
-    "cycles": 170,
-    "quality_score": 72.9,
+    "last_cycle": "2026-02-20T22:34:31.587464Z",
+    "last_translated": 3,
+    "total_suspicious": 4638,
+    "total_rejected": 315,
+    "total_gt_guard_fail": 784,
+    "cycles": 171,
+    "quality_score": 72.8,
     "last_audit": "2026-02-20T22:12:42.470260Z",
     "issues_count": 32351
   },
@@ -418,13 +418,13 @@
     "issues_count": 111
   },
   "sr": {
-    "last_cycle": "2026-02-20T22:27:58.173516Z",
+    "last_cycle": "2026-02-20T22:34:39.782882Z",
     "last_translated": 30,
-    "total_suspicious": 3247,
+    "total_suspicious": 3268,
     "total_rejected": 1,
     "total_gt_guard_fail": 499,
-    "cycles": 166,
-    "quality_score": 64.7,
+    "cycles": 167,
+    "quality_score": 64.9,
     "last_audit": "2026-02-20T21:57:44.900702Z",
     "issues_count": 87233
   },
@@ -550,13 +550,13 @@
     "issues_count": 958
   },
   "ro": {
-    "last_cycle": "2026-02-20T22:32:01.482565Z",
-    "last_translated": 7,
-    "total_suspicious": 87403,
+    "last_cycle": "2026-02-20T22:34:08.021616Z",
+    "last_translated": 4,
+    "total_suspicious": 87404,
     "total_rejected": 3194,
-    "total_gt_guard_fail": 5106,
-    "cycles": 416,
-    "quality_score": 60.3,
+    "total_gt_guard_fail": 5112,
+    "cycles": 417,
+    "quality_score": 60.4,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 190054
   },

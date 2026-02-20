@@ -175582,5 +175582,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T19:44:37.002196Z"
+  },
+  "data.otservbr.global.npc.captain.harava.L88.950": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Збогом. Препоручите нас ако сте задовољни нашом услугом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:34:38.943054Z"
+  },
+  "data.otservbr.global.npc.captain.harava.L89.951": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Збогом онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:34:38.943487Z"
+  },
+  "data.otservbr.global.npc.captain.jack.rat.L57.982": {
+    "src_hash": "8127fe4721dc499181b3719b97e2e801",
+    "text": "Живео, гусаре! Укрцајте се да идете кући! Добродошли на брод Флиинг Бат. Да ли треба да поставим {sail}с?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:34:38.945098Z"
+  },
+  "data.otservbr.global.npc.captain.pelagia.L103.863": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Збогом. Препоручите нас ако сте задовољни нашом услугом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:34:38.948767Z"
+  },
+  "data.otservbr.global.npc.captain.pelagia.L104.864": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Збогом онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:34:38.949154Z"
+  },
+  "data.otservbr.global.npc.captain.seagull.L106.1470": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Збогом. Препоручите нас ако сте задовољни нашом услугом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:34:38.950514Z"
+  },
+  "data.otservbr.global.npc.captain.seahorse.L87.1620": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Збогом. Препоручите нас ако сте задовољни нашом услугом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:34:38.951525Z"
+  },
+  "data.otservbr.global.npc.captain.seahorse.L88.1621": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Збогом онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:34:38.952082Z"
+  },
+  "data.otservbr.global.npc.captain.sinbeard.L100.751": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Збогом онда.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:34:38.952454Z"
+  },
+  "data.otservbr.global.npc.captain.sinbeard.L99.750": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Збогом. Препоручите нас ако сте задовољни нашом услугом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:34:38.953656Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.L97.707": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Поздрав, смели авантуристе. Ако вам треба {passage}, јавите ми.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:34:38.954931Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.island.L61.1025": {
+    "src_hash": "b881a2f946b2000c7b5d245b2e9f3ec7",
+    "text": "Поздрав, смели авантуристе. Ако вам треба повраћај {passage}, обавестите ме.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:34:38.956987Z"
   }
 }

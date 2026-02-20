@@ -1,23 +1,108 @@
 {
-  "timestamp": "2026-02-20T18:12:29.482829Z",
+  "timestamp": "2026-02-20T18:13:42.381861Z",
   "checked_entries": 100,
-  "issues_found": 17,
+  "issues_found": 29,
   "issues_by_type": {
-    "artifact_token": 17,
-    "identical_to_en_exempt": 9,
-    "suspicious_log_high": 70,
-    "suspicious_log_critical": 50,
-    "suspicious_log_low": 9,
-    "suspicious_rejected_critical": 118,
+    "identical_to_en": 13,
+    "identical_to_en_exempt": 1,
+    "artifact_token": 16,
+    "suspicious_log_critical": 48,
+    "suspicious_log_high": 52,
+    "suspicious_log_low": 19,
+    "suspicious_rejected_critical": 111,
     "suspicious_rejected_high": 26
   },
   "issues": [
     {
-      "key": "monster.dracola.voice_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "YOU ARE ALL DOOMED!",
-      "translated": "¡ESTÁIS TODOS CONDENADOS!"
+      "key": "monster.white_pale.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.white_pale.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.the_welter.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.the_welter.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.water_buffalo.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
+    },
+    {
+      "key": "monster.feverish_citizen.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "monster.serpent_spawn.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn"
+    },
+    {
+      "key": "monster.mad_mage.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Mad Mage",
+      "translated": "Mad Mage"
+    },
+    {
+      "key": "monster.zevelon_duskbringer.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
+    },
+    {
+      "key": "monster.zevelon_duskbringer.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
+    },
+    {
+      "key": "monster.weakened_shlorg.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
+    },
+    {
+      "key": "monster.weakened_shlorg.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
+    },
+    {
+      "key": "monster.diblis_the_fair.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Diblis The Fair",
+      "translated": "Diblis The Fair"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

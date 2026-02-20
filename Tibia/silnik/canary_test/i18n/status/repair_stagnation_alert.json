@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-20T17:42:15.096093Z",
+  "timestamp": "2026-02-20T18:13:14.947388Z",
   "window_hours": 6.0,
   "min_samples": 6,
   "min_drop_required": 1,
   "status": "warming_up",
   "alert": false,
-  "message": "Stagnation window not ready (window_too_short), span=1.41h samples=29",
+  "message": "Stagnation window not ready (window_too_short), span=1.93h samples=42",
   "reason": "window_too_short",
   "top_key": "es:npc.json",
   "top_count": 51,
@@ -13,9 +13,9 @@
   "new_total": 37894,
   "decrease_pct": 0.0,
   "old_ts": "2026-02-19T22:48:01.515374Z",
-  "new_ts": "2026-02-20T17:40:27.900536Z",
-  "hours_elapsed": 1.412,
-  "sample_count": 29,
+  "new_ts": "2026-02-20T18:11:23.832161Z",
+  "hours_elapsed": 1.928,
+  "sample_count": 42,
   "per_lang_trend": {
     "ar": {
       "old": 904,

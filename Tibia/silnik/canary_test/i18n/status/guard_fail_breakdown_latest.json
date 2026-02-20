@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T22:30:12.229574Z",
-  "window_start_utc": "2026-02-20T21:30:11.045939Z",
-  "window_end_utc": "2026-02-20T22:30:11.045939Z",
+  "timestamp": "2026-02-20T22:31:05.222463Z",
+  "window_start_utc": "2026-02-20T21:31:04.102410Z",
+  "window_end_utc": "2026-02-20T22:31:04.102410Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,31 +9,31 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 93,
-  "rejected_entries_raw": 289,
-  "suspicious_entries": 3193,
-  "suspicious_entries_raw": 25110,
-  "guard_fail_entries": 107,
-  "guard_fail_sum": 7424,
+  "rejected_entries_raw": 287,
+  "suspicious_entries": 3234,
+  "suspicious_entries_raw": 25046,
+  "guard_fail_entries": 109,
+  "guard_fail_sum": 7426,
   "by_type": {
     "identical_to_en": 86,
-    "word_salad": 1,
     "contains_tibia_proper_noun": 5,
+    "word_salad": 1,
     "mixed_language": 6
   },
   "by_source": {
     "google_translate": 93
   },
   "by_language": {
-    "es": 28,
     "pl": 35,
+    "es": 28,
     "it": 2,
     "ro": 28
   },
   "by_category": {
-    "npc.json": 4,
     "cpp.json": 5,
     "achievements.json": 5,
     "items.json": 28,
+    "npc.json": 4,
     "server.json": 2,
     "monsters.json": 23,
     "spells.json": 26
@@ -61,13 +61,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
     {
       "key": "cpp.title.name_38",
       "count": 2,
@@ -99,6 +92,13 @@
     },
     {
       "key": "item.13670.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2
@@ -151,13 +151,6 @@
       }
     },
     {
-      "key": "npc.al_dee.stdmod_41",
-      "count": 1,
-      "types": {
-        "word_salad": 1
-      }
-    },
-    {
       "key": "cpp.title.name_14",
       "count": 1,
       "types": {
@@ -201,6 +194,13 @@
     },
     {
       "key": "achievement.165.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "achievement.209.name",
       "count": 1,
       "types": {
         "identical_to_en": 1

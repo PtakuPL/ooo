@@ -200,9 +200,9 @@ Wszystkie kroki 2A + 2B + 2C zaimplementować RAZEM w jednym commicie:
 | Priorytet | Krok | Zmiana | Szansa | Ryzyko | Czas |
 |-----------|------|--------|--------|--------|------|
 | ✅ Zrobione | Krok 1: Include'y | kod (.cpp) | — | — | — |
-| **1** | Krok 2A: Flagi `/d2FH4-` `/d2notypeopt` `/permissive-` + `/diagnostics:caret` | CMakeLists.txt | ~60% | zerowe | 5 min |
-| **2** | Krok 2B: Fix `if constexpr` | luainterface.h | ~30% | zerowe | 5 min |
-| **3** | Krok 2C: Fold expressions | luabinder.h | ~90% | średnie | 30 min |
+| ✅ Zrobione | Krok 2A: Flagi `/d2FH4-` `/d2notypeopt` `/permissive-` + `/diagnostics:caret` | CMakeLists.txt | ~60% | zerowe | 5 min |
+| ✅ Zrobione | Krok 2B: Fix `if constexpr` | luainterface.h | ~30% | zerowe | 5 min |
+| ✅ Zrobione | Krok 2C: Fold expressions | luabinder.h | ~90% | średnie | 30 min |
 | *backup* | Krok 2D: ClangCL / pin MSVC | workflow | ~100% | wysokie | 20 min |
 | *opcja* | Krok 2E: Ulepszenia CI (compile_commands, itp.) | workflow | — | zerowe | 5 min |
 
@@ -213,8 +213,11 @@ Wszystkie kroki 2A + 2B + 2C zaimplementować RAZEM w jednym commicie:
 ## Status realizacji
 
 - [x] Krok 1: Dodanie include'ów ✅ (commit: 2026-02-20, naprawiono C2139/C2665)
-- [ ] Krok 2A: Flagi `/d2FH4-` `/d2notypeopt` `/permissive-` + `/diagnostics:caret` w CMakeLists.txt
-- [ ] Krok 2B: Fix `if constexpr` / `else if` w luainterface.h
-- [ ] Krok 2C: Refaktor rekurencyjnych szablonów → fold expressions w luabinder.h
+- [x] Krok 2A: Flagi `/d2FH4-` `/d2notypeopt` `/permissive-` + `/diagnostics:caret` w CMakeLists.txt ✅ (commit: 2026-02-20, auto-commit guardian Cykl #6)
+- [x] Krok 2B: Fix `if constexpr` / `else if` w luainterface.h ✅ (commit: 2026-02-20, auto-commit guardian Cykl #7)
+- [x] Krok 2C: Refaktor rekurencyjnych szablonów → fold expressions w luabinder.h ✅ (commit: 2026-02-20, auto-commit guardian Cykl #7)
 - [ ] Krok 2D: Backup — ClangCL lub pin MSVC (jeśli 2A-2C zawiodą)
 - [ ] Krok 2E: Opcjonalne ulepszenia CI
+
+**CI Windows Build uruchomiony:** `gh workflow run "Build - Windows"` — 2026-02-20 ~23:30 UTC  
+**Oczekiwany wynik:** ~3h (do ~02:30 UTC 2026-02-21)

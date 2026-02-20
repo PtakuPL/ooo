@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T22:30:10.591405Z",
+  "timestamp": "2026-02-20T22:31:03.531108Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -7476,8 +7476,8 @@
         [
           "scripts.json",
           1,
-          1771622355804115376,
-          200996
+          1771626639192999363,
+          200905
         ],
         [
           "server.json",
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 45567,
+        "translated_keys": 45582,
         "english_copy_keys": 2151,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 85.04,
+        "completion_pct": 85.06,
         "server_keys": 49731,
-        "server_translated": 42501,
-        "server_pct": 85.46,
+        "server_translated": 42516,
+        "server_pct": 85.49,
         "client_keys": 3855,
         "client_translated": 3066,
         "client_pct": 79.53
@@ -7971,12 +7971,12 @@
         "scripts.json": {
           "sig": [
             1,
-            1771622355804115376,
-            200996
+            1771626639192999363,
+            200905
           ],
           "row": {
             "total_reference_keys": 2170,
-            "translated_keys": 2079,
+            "translated_keys": 2094,
             "english_copy_keys": 48,
             "missing_keys": 0,
             "missing_files": 0
@@ -25479,7 +25479,7 @@
         [
           "raids.json",
           1,
-          1771622392028327109,
+          1771626650952361322,
           18501
         ],
         [
@@ -25966,7 +25966,7 @@
         "raids.json": {
           "sig": [
             1,
-            1771622392028327109,
+            1771626650952361322,
             18501
           ],
           "row": {

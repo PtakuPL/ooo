@@ -154318,5 +154318,125 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:00:03.893944Z"
+  },
+  "scripts.gnomprona.msg_1": {
+    "src_hash": "0312af301fcba4f7d8f2f72f22c83b4e",
+    "text": "Aún no tienes acceso a este teletransporte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.104754Z"
+  },
+  "scripts.movement_jail_exit.msg_1": {
+    "src_hash": "7bffea93687b99d694d5f232890a8bbc",
+    "text": "No tienes acceso a esta área.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.514076Z"
+  },
+  "scripts.movement_minotaur_boss.msg_1": {
+    "src_hash": "7bffea93687b99d694d5f232890a8bbc",
+    "text": "No tienes acceso a esta área.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.518667Z"
+  },
+  "scripts.movements_habitats_access.msg_1": {
+    "src_hash": "630788ab036f43255374086d3a4468be",
+    "text": "No has demostrado tu valía. No hay escapatoria para ti aquí.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.592528Z"
+  },
+  "scripts.movements_mission9_the_deepest_catacomb_teleport.msg_2": {
+    "src_hash": "7bffea93687b99d694d5f232890a8bbc",
+    "text": "No tienes acceso a esta área.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.627933Z"
+  },
+  "scripts.movements_plagirath_access.say_1": {
+    "src_hash": "0312af301fcba4f7d8f2f72f22c83b4e",
+    "text": "Aún no tienes acceso a este teletransporte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.636416Z"
+  },
+  "scripts.movements_razzagorn_access.say_1": {
+    "src_hash": "0312af301fcba4f7d8f2f72f22c83b4e",
+    "text": "Aún no tienes acceso a este teletransporte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.650696Z"
+  },
+  "scripts.movements_seal.msg_2": {
+    "src_hash": "630788ab036f43255374086d3a4468be",
+    "text": "No has demostrado tu valía. No hay escapatoria para ti aquí.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.657480Z"
+  },
+  "scripts.movements_seal.msg_3": {
+    "src_hash": "630788ab036f43255374086d3a4468be",
+    "text": "No has demostrado tu valía. No hay escapatoria para ti aquí.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.660250Z"
+  },
+  "scripts.movements_shulgrax_lever.msg_1": {
+    "src_hash": "630788ab036f43255374086d3a4468be",
+    "text": "No has demostrado tu valía. No hay escapatoria para ti aquí.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.665468Z"
+  },
+  "scripts.movements_teleport_heart.msg_2": {
+    "src_hash": "02801376ae2373cd280d10a0e56a18f0",
+    "text": "No tienes acceso a este portal.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.680156Z"
+  },
+  "scripts.movements_teleport_heart.msg_4": {
+    "src_hash": "02801376ae2373cd280d10a0e56a18f0",
+    "text": "No tienes acceso a este portal.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.682836Z"
+  },
+  "scripts.movements_teleport_heart.msg_6": {
+    "src_hash": "02801376ae2373cd280d10a0e56a18f0",
+    "text": "No tienes acceso a este portal.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.684940Z"
+  },
+  "scripts.movements_zamulosh_teleport.msg_2": {
+    "src_hash": "0312af301fcba4f7d8f2f72f22c83b4e",
+    "text": "Aún no tienes acceso a este teletransporte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.710528Z"
+  },
+  "scripts.movements_zamulosh_teleport.msg_4": {
+    "src_hash": "0312af301fcba4f7d8f2f72f22c83b4e",
+    "text": "Aún no tienes acceso a este teletransporte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:30:38.713197Z"
   }
 }

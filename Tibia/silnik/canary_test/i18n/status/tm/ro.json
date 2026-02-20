@@ -72134,5 +72134,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T20:51:59.113210Z"
+  },
+  "npc.simon_the_beggar.say_24": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Nu ai nicio prăjitură pe care mi-aș dori.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.079637Z"
+  },
+  "npc.sissek.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Nu uitați să vă depuneți banii aici în Banca Globală înainte de a pleca în aventură.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.083873Z"
+  },
+  "npc.skjaar.farewell_msg_1": {
+    "src_hash": "f2fb8fae97707ee162c0df0618bb26f0",
+    "text": "La revedere, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.085278Z"
+  },
+  "npc.skjaar.say_4": {
+    "src_hash": "fbce1a9805b1a6b71d800ff6907da5fa",
+    "text": "Nu ai destui bani",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.085883Z"
+  },
+  "npc.stricken_soul.say_3": {
+    "src_hash": "c066542c456632337339c67bf887b0a8",
+    "text": "Scuze, nu am inteles.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.099138Z"
+  },
+  "npc.stutch.greet_1": {
+    "src_hash": "d0e12fd7c549bed11b5ac6d677e977a8",
+    "text": "SALUTĂ REGE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.099520Z"
+  },
+  "npc.stutch.greet_2": {
+    "src_hash": "d0e12fd7c549bed11b5ac6d677e977a8",
+    "text": "SALUTĂ REGE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.099819Z"
+  },
+  "npc.sundara.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Desigur, răsfoiește-mi produsele. Puteți să vă uitați și la {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.101205Z"
+  },
+  "npc.sundara.voice_1": {
+    "src_hash": "e90dd74cd1d388754108ef3af946dba3",
+    "text": "Poțiuni de sănătate! Poțiuni de mana! Cumpără-le aici!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.101782Z"
+  },
+  "npc.sundara.voice_2": {
+    "src_hash": "2e96e0843517997dfabc696186c3ce05",
+    "text": "Tot felul de poțiuni disponibile aici!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.102187Z"
+  },
+  "npc.suzy.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Nu uitați să vă depuneți banii aici în Banca Globală înainte de a pleca în aventură.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.103455Z"
+  },
+  "npc.svenson.say_2": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Iată-l.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.105361Z"
+  },
+  "npc.svenson.stdmod_1": {
+    "src_hash": "b42ce445bbb5d3ce8d4dd0b5edc94823",
+    "text": "Vrei să navighezi {0}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.106000Z"
+  },
+  "npc.svenson.stdmod_2": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Am dori să vă servim ceva timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.106397Z"
+  },
+  "npc.svenson.stdmod_4": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Eu sunt căpitanul acestei nave.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.106953Z"
+  },
+  "npc.svenson.stdmod_5": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Eu sunt căpitanul acestei nave.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:17.107420Z"
   }
 }

@@ -2176,6 +2176,69 @@ except Exception:
     recent_translation_entry = {}
     recent_translations = []
 
+# Preferuj agregację z raportu wielocyklicznego (multi-lang), aby sekcja
+# "Ostatnie 10-20 kluczy" nie wyglądała na zablokowaną na jednym języku.
+try:
+    recent_report_path = os.path.join(status_translation_dir, "translation_recent_report.jsonl")
+    if os.path.exists(recent_report_path):
+        with open(recent_report_path, "r", encoding="utf-8") as _rrf:
+            _rr_lines = [x.strip() for x in _rrf if x.strip()][-120:]
+        _flat = []
+        for _line in _rr_lines:
+            try:
+                _obj = json.loads(_line)
+            except Exception:
+                continue
+            _lang = str(_obj.get("language", "") or "")
+            _jfile = str(_obj.get("json_file", "") or "")
+            _ts = str(_obj.get("timestamp", "") or "")
+            _entries = _obj.get("entries", []) if isinstance(_obj.get("entries", []), list) else []
+            for _e in _entries:
+                if not isinstance(_e, dict):
+                    continue
+                _flat.append({
+                    "lang": _lang,
+                    "json_file": _jfile,
+                    "timestamp": _ts,
+                    "key": str(_e.get("key", "") or "-"),
+                    "en": str(_e.get("en", "") or ""),
+                    "translated": str(_e.get("translated", "") or ""),
+                })
+
+        if _flat:
+            # Ostatnie wpisy z wielu cykli/języków (realny rolling window)
+            # z balansowaniem per język, aby sekcja nie była zdominowana
+            # przez pojedynczy batch (np. tylko ES).
+            _flat_rev = list(reversed(_flat))
+            _lang_order = []
+            _lang_buckets = {}
+            for _it in _flat_rev:
+                _lg = str(_it.get("lang", "") or "").lower()
+                if _lg not in _lang_buckets:
+                    _lang_buckets[_lg] = []
+                    _lang_order.append(_lg)
+                _lang_buckets[_lg].append(_it)
+
+            _balanced = []
+            while len(_balanced) < 20:
+                _added = False
+                for _lg in _lang_order:
+                    _bucket = _lang_buckets.get(_lg, [])
+                    if _bucket:
+                        _balanced.append(_bucket.pop(0))
+                        _added = True
+                        if len(_balanced) >= 20:
+                            break
+                if not _added:
+                    break
+
+            if _balanced:
+                recent_translations = list(reversed(_balanced))
+            else:
+                recent_translations = _flat[-20:]
+except Exception:
+    pass
+
 translation_guard_latest = {}
 try:
     guard_latest_path = os.path.join(status_translation_dir, "translation_guard_latest.json")
@@ -2186,8 +2249,13 @@ except Exception:
     translation_guard_latest = {}
 
 recent_translation_md = "\n".join(
-    [f"- {str(it.get('en', ''))[:80]} → {str(it.get('translated', ''))[:80]} ({it.get('key', '-')})" for it in recent_translations[-20:]]
-) if recent_translations else "- Brak nowych tłumaczeń w ostatnim cyklu"
+    [
+        f"- [{str(it.get('lang', '-')).upper()}/{str(it.get('json_file', '-'))}] "
+        f"{str(it.get('en', ''))[:80]} → {str(it.get('translated', ''))[:80]} "
+        f"({it.get('key', '-')})"
+        for it in recent_translations[-20:]
+    ]
+) if recent_translations else "- Brak nowych tłumaczeń w ostatnich cyklach"
 
 recent_hidden_latest = 0
 recent_hidden_threshold = 5

@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-02-20T23:37:03.763592Z",
-  "cycle_counter": 6657,
-  "last_target_key": "ru:cpp.json",
-  "last_pending_total": 299,
-  "last_tier": 2,
+  "timestamp": "2026-02-20T23:41:26.577012Z",
+  "cycle_counter": 6665,
+  "last_target_key": "es:talkactions.json",
+  "last_pending_total": 43,
+  "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 179,
   "active_candidates_count": 167,
   "skipped_backoff": 10,
   "skipped_guard_fail": 2,
   "guard_fail_blacklist": {
-    "pl:items.json": 6683,
+    "pl:items.json": 6691,
     "pl:npc.json": 6672
   },
   "guard_fail_blocked_count": 2,
   "guard_fail_blocked_preview": [
     {
       "target": "pl:items.json",
-      "until_cycle": 6683,
+      "until_cycle": 6691,
       "remaining_cycles": 26,
       "guard_fail_rate": 0.9968,
       "guard_fail": 4077,
@@ -51,7 +51,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 7,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -237,7 +237,7 @@
       "ro": 43.91,
       "it": 52.77,
       "sr": 45.46,
-      "sv": 29.27
+      "sv": 29.32
     }
   }
 }

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-20T23:37:03.746299Z",
-  "built_cycle": 7,
+  "timestamp": "2026-02-20T23:41:26.558077Z",
+  "built_cycle": 1,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -826,8 +826,8 @@
     {
       "lang": "ro",
       "json_file": "books.json",
-      "pending_total": 1053,
-      "todo": 1053,
+      "pending_total": 1052,
+      "todo": 1052,
       "simple_todo": 294,
       "missing_in_lang": 0
     },
@@ -866,9 +866,9 @@
     {
       "lang": "ro",
       "json_file": "html.json",
-      "pending_total": 1191,
-      "todo": 1191,
-      "simple_todo": 385,
+      "pending_total": 1189,
+      "todo": 1189,
+      "simple_todo": 383,
       "missing_in_lang": 0
     },
     {
@@ -1098,9 +1098,9 @@
     {
       "lang": "sv",
       "json_file": "items.json",
-      "pending_total": 16166,
-      "todo": 16166,
-      "simple_todo": 13694,
+      "pending_total": 16139,
+      "todo": 16139,
+      "simple_todo": 13667,
       "missing_in_lang": 0
     },
     {
@@ -1338,9 +1338,9 @@
     {
       "lang": "sr",
       "json_file": "items.json",
-      "pending_total": 15807,
-      "todo": 15807,
-      "simple_todo": 13336,
+      "pending_total": 15777,
+      "todo": 15777,
+      "simple_todo": 13306,
       "missing_in_lang": 0
     },
     {

@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-02-20T23:37:20.312379Z",
-  "window_start_utc": "2026-02-20T22:37:19.090055Z",
-  "window_end_utc": "2026-02-20T23:37:19.090055Z",
+  "timestamp": "2026-02-20T23:44:28.900726Z",
+  "window_start_utc": "2026-02-20T22:44:27.768351Z",
+  "window_end_utc": "2026-02-20T23:44:27.768351Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 110,
-  "rejected_entries_raw": 118,
-  "suspicious_entries": 4003,
-  "suspicious_entries_raw": 8924,
-  "guard_fail_entries": 87,
-  "guard_fail_sum": 2229,
+  "rejected_entries": 90,
+  "rejected_entries_raw": 97,
+  "suspicious_entries": 4064,
+  "suspicious_entries_raw": 8910,
+  "guard_fail_entries": 89,
+  "guard_fail_sum": 2250,
   "by_type": {
-    "identical_to_en": 96,
+    "identical_to_en": 76,
     "contains_tibia_proper_noun": 1,
     "mixed_language": 10,
     "mixed_scripts": 3,
@@ -23,20 +23,19 @@
     "word_salad": 1
   },
   "by_source": {
-    "google_translate": 110
+    "google_translate": 90
   },
   "by_language": {
-    "es": 20,
-    "it": 10,
-    "ro": 42,
+    "ro": 36,
+    "es": 10,
     "sv": 5,
     "pl": 29,
+    "it": 6,
     "ru": 4
   },
   "by_category": {
+    "otclient_modules.json": 20,
     "npc.json": 3,
-    "otclient_modules.json": 30,
-    "scripts.json": 10,
     "monsters.json": 5,
     "cpp.json": 19,
     "modules.json": 2,
@@ -49,13 +48,13 @@
     "server.json": 1
   },
   "by_severity": {
-    "CRITICAL": 97,
+    "CRITICAL": 77,
     "HIGH": 13
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 96
+      "count": 76
     },
     {
       "type": "mixed_language",
@@ -80,42 +79,14 @@
   ],
   "top_keys": [
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "otclient_modules.bestiary.tr_7",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "scripts.action_cushion.say_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "scripts.actions_lever_barrel.say_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "scripts.actions_resonance_chamber.say_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "otclient_modules.addserver_otui.tr_4",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2
@@ -196,28 +167,56 @@
       }
     },
     {
-      "key": "otclient_modules.addserver.tr_1",
+      "key": "otclient_modules.addserver_otui.tr_3",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "otclient_modules.calendar.otui_text_1",
+      "key": "otclient_modules.assign_text_otui.tr_4",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "otclient_modules.character_otui.tr_32",
+      "key": "otclient_modules.bestiary.tr_7",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "otclient_modules.characterlist.tr_2",
+      "key": "otclient_modules.bestiary_otui.tr_10",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "otclient_modules.bestiary_otui.tr_12",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "otclient_modules.boss_slots_otui.tr_2",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "otclient_modules.bosstiary.tr_8",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "otclient_modules.bosstiary_otui.tr_8",
       "count": 1,
       "types": {
         "identical_to_en": 1

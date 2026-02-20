@@ -1,131 +1,29 @@
 {
-  "timestamp": "2026-02-20T23:37:07.877889Z",
-  "language": "ru",
-  "json_file": "cpp.json",
-  "translated": 30,
+  "timestamp": "2026-02-20T23:41:47.886827Z",
+  "language": "es",
+  "json_file": "talkactions.json",
+  "translated": 3,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "cpp.bestiary.creature_set_premium",
-      "en": "Creature has been set! You are a Premium player, so you benefit from up to 6 runes! Charm Expansion allow you to set creatures to all runes at once!",
-      "translated": "Существо установлено! Вы являетесь Премиум-игроком и получаете до 6 рун! Расширение Чарм позволяет вам назначать существам все руны одновременно!",
+      "key": "talkaction.gm.kick.msg_cannot_kick",
+      "en": "You cannot kick this player.",
+      "translated": "No puedes expulsar a este jugador.",
       "source": "tm"
     },
     {
-      "key": "cpp.cancel.cannot_stow_containers",
-      "en": "You cannot stow containers.",
-      "translated": "Нельзя складывать контейнеры в stash.",
+      "key": "talkaction.gm.push_creature.msg_cannot_teleport",
+      "en": "You can not teleport {name}.",
+      "translated": "No puedes teletransportarte a {name}.",
       "source": "tm"
     },
     {
-      "key": "cpp.cancel.cannot_stow_here",
-      "en": "This item cannot be stowed here.",
-      "translated": "Этот предмет нельзя здесь поместить в stash.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.cancel.no_stowable_items",
-      "en": "There are no stowable items in this container.",
-      "translated": "В этом контейнере нет предметов, которые можно поместить в stash.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.inspect.imbuement_info",
-      "en": "{0} {1} ({2}), lasts {3}:{4}h while fighting.",
-      "translated": "{0} {1} ({2}), длится {3}:{4}h во время боя.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.inspect.physical_plus",
-      "en": "{0} physical + {1}",
-      "translated": "{0} физический + {1}",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.npc.bought_bag_currency",
-      "en": "Bought {0}x {1} for {2} {3} and 1 shopping bag for {4} gold coins.",
-      "translated": "Купили {0}x {1} за {2} {3} и 1 сумку для покупок за {4} золотых монет.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.npc.bought_bag_gold",
-      "en": "Bought {0}x {1} and 1 shopping bag for {2} gold coins.",
-      "translated": "Купили {0}x {1} и 1 сумку для покупок за {2} золотых монет.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.npc.bought_bags_currency",
-      "en": "Bought {0}x {1} for {2} {3} and {4}x shopping bags for {5} gold coins.",
-      "translated": "Купили {0}x {1} за сумки {2} {3} и {4}x за {5} золотых монет.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.npc.bought_bags_gold",
-      "en": "Bought {0}x {1} and {2} shopping bags for {3} gold coins.",
-      "translated": "Купили сумки для покупок {0}x {1} и {2} за {3} золотых монет.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.npc.bought_currency",
-      "en": "Bought {0}x {1} for {2} {3}.",
-      "translated": "Купил {0}x {1} за {2} {3}.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.npc.bought_gold",
-      "en": "Bought {0}x {1} for {2} gold coins.",
-      "translated": "Купили {0}x {1} за {2} золотых монет.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.player.corpse_killed_by",
-      "en": "{0} {1} killed by {2}",
-      "translated": "{0} {1} убит {2}",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.player.death_pve",
-      "en": "You died during PvE.",
-      "translated": "Вы умерли во время PvE.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.player.death_pvp",
-      "en": "You died during PvP.",
-      "translated": "Вы умерли во время PvP.",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.player.using_from_stash",
-      "en": "Using {0}x {1} from your stash. ",
-      "translated": "Используется {0}x {1} из вашего тайника. ",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.title.name_4",
-      "en": "Beaststrider (Grade 1)",
-      "translated": "Покоритель зверей (Граде 1)",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.title.name_5",
-      "en": "Beaststrider (Grade 2)",
-      "translated": "Покоритель зверей (Граде 2)",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.title.name_6",
-      "en": "Beaststrider (Grade 3)",
-      "translated": "Покоритель зверей (Граде 3)",
-      "source": "tm"
-    },
-    {
-      "key": "cpp.title.name_7",
-      "en": "Beaststrider (Grade 4)",
-      "translated": "Покоритель зверей (Граде 4)",
+      "key": "talkaction.god.money.msg_failed",
+      "en": "Failed to add money to {name}.",
+      "translated": "No se pudo agregar dinero a {name}.",
       "source": "tm"
     }
   ]

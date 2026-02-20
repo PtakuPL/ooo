@@ -74814,5 +74814,29 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:30:00.232056Z"
+  },
+  "web.tpl.forum.boards.b_6": {
+    "src_hash": "dae8ace18bdcbcc6ae5aece263e14fe8",
+    "text": "Opțiuni",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:37:41.510656Z"
+  },
+  "web.tpl.commands.b_3": {
+    "src_hash": "dae8ace18bdcbcc6ae5aece263e14fe8",
+    "text": "Opțiuni",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:37:41.520981Z"
+  },
+  "book.otbm.and_to_remedy_that_he": {
+    "src_hash": "3d8347c1c9bffcf1ca359ce6b3b65696",
+    "text": "Și pentru a remedia că a inventat TIMPUL!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:38:33.349946Z"
   }
 }

@@ -1,87 +1,17 @@
 {
-  "timestamp": "2026-02-20T20:25:33.047920Z",
+  "timestamp": "2026-02-20T20:26:28.166846Z",
   "checked_entries": 100,
-  "issues_found": 26,
+  "issues_found": 16,
   "issues_by_type": {
-    "identical_to_en": 10,
-    "identical_to_en_exempt": 8,
+    "identical_to_en_exempt": 16,
     "artifact_token": 16,
-    "suspicious_log_critical": 45,
-    "suspicious_log_high": 62,
-    "suspicious_rejected_critical": 117,
+    "suspicious_log_high": 42,
+    "suspicious_log_critical": 57,
+    "suspicious_log_medium": 13,
+    "suspicious_rejected_critical": 118,
     "suspicious_rejected_high": 14
   },
   "issues": [
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.water_buffalo.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo"
-    },
-    {
-      "key": "monster.feverish_citizen.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Feverish Citizen",
-      "translated": "Feverish Citizen"
-    },
-    {
-      "key": "monster.serpent_spawn.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Serpent Spawn",
-      "translated": "Serpent Spawn"
-    },
-    {
-      "key": "monster.mad_mage.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Mad Mage",
-      "translated": "Mad Mage"
-    },
-    {
-      "key": "monster.zevelon_duskbringer.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
-    {
-      "key": "monster.zevelon_duskbringer.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
-    {
-      "key": "monster.weakened_shlorg.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Weakened Shlorg",
-      "translated": "Weakened Shlorg"
-    },
-    {
-      "key": "monster.weakened_shlorg.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Weakened Shlorg",
-      "translated": "Weakened Shlorg"
-    },
-    {
-      "key": "monster.diblis_the_fair.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Diblis The Fair",
-      "translated": "Diblis The Fair"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

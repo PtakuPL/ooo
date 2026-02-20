@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-20T20:24:53.360252Z",
+  "timestamp": "2026-02-20T20:25:55.537032Z",
   "version": "statusd-mvp-1.0",
   "worker": {
     "pid": 114825,
-    "heartbeat_at": "2026-02-20T20:22:58Z",
-    "heartbeat_age_s": 115.4,
+    "heartbeat_at": "2026-02-20T20:25:33Z",
+    "heartbeat_age_s": 22.5,
     "cycle": 151,
     "mode": "continuous",
     "category": "?",
@@ -12,10 +12,10 @@
   },
   "guardian": {
     "state": "degraded",
-    "throughput_per_h": 2492.0,
-    "guard_fail_rate_pct": 77.3,
+    "throughput_per_h": 2360.0,
+    "guard_fail_rate_pct": 78.0,
     "issues": [
-      "high_guard_fail_rate (77.3% > 15%)"
+      "high_guard_fail_rate (78.0% > 15%)"
     ]
   },
   "translation_kpi": {
@@ -63,16 +63,16 @@
   },
   "adaptive_batch": {
     "batch_size": 5,
-    "guard_fail_rate": 19.16,
-    "reason": "stable_fail_rate=19.2%"
+    "guard_fail_rate": 21.38,
+    "reason": "decrease_high_fail_rate=21.4%"
   },
   "dispatch": {
-    "last_target": "pl:spells.json",
-    "cycle_counter": 6256,
-    "pending_total": 37,
-    "candidates": 171,
+    "last_target": "es:spells.json",
+    "cycle_counter": 6257,
+    "pending_total": 60,
+    "candidates": 172,
     "skipped_backoff": 8,
-    "skipped_guard_fail": 2,
+    "skipped_guard_fail": 1,
     "priority_gate": {
       "enabled": true,
       "active": true,
@@ -102,7 +102,7 @@
         "ro": 43.24,
         "it": 52.25,
         "sr": 45.5,
-        "sv": 28.7
+        "sv": 28.73
       }
     }
   },
@@ -280,7 +280,7 @@
     "ro": {
       "coverage_pct": 43.24,
       "missing": 0,
-      "en_copy": 2349
+      "en_copy": 2345
     },
     "ru": {
       "coverage_pct": 50.37,
@@ -392,7 +392,7 @@
     "npc_total": 1027,
     "npc_migrated": 699,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-02-20T20:24:53.489216Z",
+    "statusd_live_snapshot_at_utc": "2026-02-20T20:25:55.630080Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -1156,11 +1156,11 @@
       "sv"
     ],
     "pending_key": "es,it,pl,ro,ru,sr,sv",
-    "cycle_counter": 6256,
+    "cycle_counter": 6257,
     "start_cycle": 818,
-    "cycle_delta": 5438,
+    "cycle_delta": 5439,
     "started_at": "2026-02-16T22:15:50.792950Z",
-    "active_minutes": 5649.043,
+    "active_minutes": 5650.079,
     "baseline_quality_rate_pct": 228.112,
     "current_quality_rate_pct": 494.667,
     "best_quality_rate_pct": 228.112,
@@ -1173,7 +1173,7 @@
       "ro": 43.24,
       "it": 52.25,
       "sr": 45.5,
-      "sv": 28.7
+      "sv": 28.73
     },
     "detected": true,
     "severity": "critical",

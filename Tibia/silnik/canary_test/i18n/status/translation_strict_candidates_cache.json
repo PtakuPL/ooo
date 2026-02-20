@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-20T18:57:06.182593Z",
-  "built_cycle": 78,
+  "timestamp": "2026-02-20T18:58:05.597959Z",
+  "built_cycle": 79,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -282,9 +282,9 @@
     {
       "lang": "es",
       "json_file": "items.json",
-      "pending_total": 3070,
-      "todo": 3070,
-      "simple_todo": 1857,
+      "pending_total": 3063,
+      "todo": 3063,
+      "simple_todo": 1856,
       "missing_in_lang": 0
     },
     {

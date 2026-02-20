@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-02-20T18:56:37.348072Z",
+  "timestamp": "2026-02-20T18:57:39.250967Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 2,
   "warnings_count": 14,
   "ok_count": 10,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=43569 rate=493.588% window=6.0h top_lang=ro:18768 per_lang=[ro:18768(1712.409%/critical),es:10616(416.314%/critical),ru:6900(394.963%/critical),pl:4916(502.658%/critical),it:1456(100.483%/critical)] per_domain=[items.json:28446(1686.189%/critical),npc.json:7632(187.013%/critical),monsters.json:6285(354.484%/critical),server.json:358(83.063%/warning),spells.json:313(467.164%/critical)]",
-    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5560.8 cycle_delta=5220 best_quality_drop=0.000% reason=active_time_without_quality_drop"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=43713 rate=491.654% window=6.0h top_lang=ro:18791 per_lang=[ro:18791(1708.273%/critical),es:10616(416.314%/critical),ru:6980(392.797%/critical),pl:4916(502.658%/critical),it:1497(101.217%/critical)] per_domain=[items.json:28446(1686.189%/critical),npc.json:7632(187.013%/critical),monsters.json:6429(349.973%/critical),server.json:358(83.063%/warning),spells.json:313(467.164%/critical)]",
+    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5561.8 cycle_delta=5223 best_quality_drop=0.000% reason=active_time_without_quality_drop"
   ],
   "warnings": [
     "BLACKLISTED_TARGET: pl:items.json ma 6048 guard_fail w blackliście",
-    "BLACKLISTED_TARGET: pl:npc.json ma 6039 guard_fail w blackliście",
+    "BLACKLISTED_TARGET: pl:npc.json ma 6049 guard_fail w blackliście",
     "WORKER_TRANSLATION_CONTRACT_WARNING: pid=114825 translations_only=1 use_gt=1 no_git=0 priority_gate=1 priority_langs=[pl,es,ru,ro,it,sr,sv] pending=[pl,es,ru,ro,it,sr,sv] reason=priority_langs_not_es_pl",
     "GUARDIAN_DEGRADED: guardian raportuje degraded",
     "LANG_PARITY_WARN: cs has 49655 [EN]-backlog after 154h (should be ≤5000)",
@@ -26,13 +26,13 @@
     "LANG_PARITY_WARN: tr has 48694 [EN]-backlog after 154h (should be ≤5000)"
   ],
   "ok": [
-    "heartbeat_fresh (1s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (69s)",
-    "guard_report_fresh (34s)",
-    "dispatch_fresh (44s)",
+    "heartbeat_fresh (15s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (10s)",
+    "guard_report_fresh (15s)",
+    "dispatch_fresh (33s)",
     "worker_pid_alive (114825)",
     "worker_process_topology_ok (main=114825 matching=1 extras=0 desc=0 foreign=0 oldest_desc=0s oldest_foreign=0s status=clean)",
-    "queue_freshness_ok (27s, WARN>900s CRIT>1800s)",
+    "queue_freshness_ok (89s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
     "forced_cmd_sla_ok (samples=0 sla_target=45s p95_roundtrip=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0)",
     "repair_tuning_active (samples_2h=49)"
@@ -70,8 +70,8 @@
       "sr",
       "sv"
     ],
-    "active_minutes": 5560.771,
-    "cycle_delta": 5220,
+    "active_minutes": 5561.803,
+    "cycle_delta": 5223,
     "best_quality_drop_pct": 0.0,
     "thresholds": {
       "max_active_minutes": 1440.0,

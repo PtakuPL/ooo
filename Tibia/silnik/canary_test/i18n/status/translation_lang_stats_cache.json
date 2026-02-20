@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T18:57:28.240208Z",
+  "timestamp": "2026-02-20T18:58:10.071273Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -7368,8 +7368,8 @@
         [
           "items.json",
           1,
-          1771613082307719509,
-          894405
+          1771613882932909185,
+          894377
         ],
         [
           "libs.json",
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 45408,
+        "translated_keys": 45415,
         "english_copy_keys": 2160,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 84.74,
+        "completion_pct": 84.75,
         "server_keys": 49731,
-        "server_translated": 42342,
-        "server_pct": 85.14,
+        "server_translated": 42349,
+        "server_pct": 85.16,
         "client_keys": 3855,
         "client_translated": 3066,
         "client_pct": 79.53
@@ -7719,12 +7719,12 @@
         "items.json": {
           "sig": [
             1,
-            1771613082307719509,
-            894405
+            1771613882932909185,
+            894377
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 13987,
+            "translated_keys": 13994,
             "english_copy_keys": 78,
             "missing_keys": 0,
             "missing_files": 0

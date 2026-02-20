@@ -153598,5 +153598,85 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T18:44:42.280164Z"
+  },
+  "item.12809.desc": {
+    "src_hash": "1c5365d2350b3c54f3b453d06a55391c",
+    "text": "Este sombrero fue hecho a mano por Uman el Sabio y maldecido por Zathroth el Destructor. Es otorgado por TibiaWiki.com.br",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:57:53.942272Z"
+  },
+  "item.12811.desc": {
+    "src_hash": "6ca8ec4ba5935e75f6de2557c574ebdc",
+    "text": "Conoce todos los secretos de todos los números. Fue premiado por Exhiti.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:57:53.942723Z"
+  },
+  "item.12819.desc": {
+    "src_hash": "cb4a051f4b3005c172f505951719fe56",
+    "text": "Este cubo está especialmente preparado para agua mágica, que se sabe que escapa de casi cualquier recipiente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:57:58.987450Z"
+  },
+  "item.129.desc": {
+    "src_hash": "31010c3bb49db66e2b28bdc4aef33fc6",
+    "text": "Aún no está firmado.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:57:58.987743Z"
+  },
+  "item.12904.desc": {
+    "src_hash": "2f72b9851935416f450b642959f13155",
+    "text": "Brilla con energía positiva y fue premiado por FunTibia.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:57:58.988387Z"
+  },
+  "item.12905.desc": {
+    "src_hash": "2f72b9851935416f450b642959f13155",
+    "text": "Brilla con energía positiva y fue premiado por FunTibia.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:57:58.988947Z"
+  },
+  "item.131.desc": {
+    "src_hash": "34727b291f7fe31f4bf308bfbbc6fba9",
+    "text": "Está lleno de un hueso profanado.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:57:58.989293Z"
+  },
+  "item.13155.name": {
+    "src_hash": "e1a46d747e3efdb5ebb0fff1c6c7c5ff",
+    "text": "gran voluta fósil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:58:02.902299Z"
+  },
+  "item.13156.name": {
+    "src_hash": "a5027eebd67c4ad3d9a781d47e17bcab",
+    "text": "pequeña voluta fósil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:58:02.902569Z"
+  },
+  "item.132.name": {
+    "src_hash": "1fcaf02be62bcd0692222074a81d0ff0",
+    "text": "bola de cristal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:58:02.902806Z"
   }
 }

@@ -1,8 +1,8 @@
 {
-  "total_cycles": 78,
+  "total_cycles": 79,
   "mode": "AUTO_TRANSLATE",
-  "category": "it",
-  "last_update": "2026-02-20T19:57:24.512726",
+  "category": "es",
+  "last_update": "2026-02-20T19:58:06.274048",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,14 +26,135 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "it",
-    "json_file": "monsters.json",
-    "keys_to_translate": 609,
-    "guard_fail": 26,
+    "language": "es",
+    "json_file": "items.json",
+    "keys_to_translate": 3070,
+    "guard_fail": 520,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 0,
-    "recent_examples": []
+    "recent_translated": 22,
+    "recent_examples": [
+      {
+        "key": "item.19104.name",
+        "en": "dead noble lion",
+        "translated": "dead Noble lion",
+        "source": "tm"
+      },
+      {
+        "key": "item.19105.name",
+        "en": "dead noble lion",
+        "translated": "dead Noble lion",
+        "source": "tm"
+      },
+      {
+        "key": "item.19106.name",
+        "en": "dead noble lion",
+        "translated": "dead Noble lion",
+        "source": "tm"
+      },
+      {
+        "key": "item.21875.name",
+        "en": "a pressure gauge",
+        "translated": "pressure gauge",
+        "source": "tm"
+      },
+      {
+        "key": "item.30352.name",
+        "en": "dead lost gnome",
+        "translated": "dead lost gNome",
+        "source": "tm"
+      },
+      {
+        "key": "item.30353.name",
+        "en": "dead lost gnome",
+        "translated": "dead lost gNome",
+        "source": "tm"
+      },
+      {
+        "key": "item.30354.name",
+        "en": "dead lost gnome",
+        "translated": "dead lost gNome",
+        "source": "tm"
+      },
+      {
+        "key": "item.30355.name",
+        "en": "dead lost gnome",
+        "translated": "dead lost gNome",
+        "source": "tm"
+      },
+      {
+        "key": "item.31709.name",
+        "en": "the kilmar tablets",
+        "translated": "kilmar tablets",
+        "source": "tm"
+      },
+      {
+        "key": "item.32726.name",
+        "en": "a weak spot",
+        "translated": "weak spot",
+        "source": "tm"
+      },
+      {
+        "key": "item.12809.desc",
+        "en": "This hat was handcrafted by Uman the Wise and cursed by Zathroth the Destroyer. It is awarded by TibiaWiki.com.br",
+        "translated": "Este sombrero fue hecho a mano por Uman el Sabio y maldecido por Zathroth el Destructor. Es otorgado por TibiaWiki.com.br",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.12811.desc",
+        "en": "It knows all secrets of all numbers. It was awarded by the Exhiti.com",
+        "translated": "Conoce todos los secretos de todos los n\u00fameros. Fue premiado por Exhiti.com",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.12819.desc",
+        "en": "This bucket is specially prepared for magical water, which is known to escape just about any vessel",
+        "translated": "Este cubo est\u00e1 especialmente preparado para agua m\u00e1gica, que se sabe que escapa de casi cualquier recipiente.",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.129.desc",
+        "en": "It is not signed yet.",
+        "translated": "A\u00fan no est\u00e1 firmado.",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.12904.desc",
+        "en": "It is shining with positive energy and was awarded by FunTibia.com",
+        "translated": "Brilla con energ\u00eda positiva y fue premiado por FunTibia.com",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.12905.desc",
+        "en": "It is shining with positive energy and was awarded by FunTibia.com",
+        "translated": "Brilla con energ\u00eda positiva y fue premiado por FunTibia.com",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.131.desc",
+        "en": "It is filled with a desecrated bone.",
+        "translated": "Est\u00e1 lleno de un hueso profanado.",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.13155.name",
+        "en": "large fossil volute",
+        "translated": "gran voluta f\u00f3sil",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.13156.name",
+        "en": "small fossil volute",
+        "translated": "peque\u00f1a voluta f\u00f3sil",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.132.name",
+        "en": "scrying crystal ball",
+        "translated": "bola de cristal",
+        "source": "google_translate"
+      }
+    ]
   },
   "idle": {
     "new_files_detected": 152,

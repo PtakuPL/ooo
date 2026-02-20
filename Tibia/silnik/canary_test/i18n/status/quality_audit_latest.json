@@ -1,17 +1,46 @@
 {
-  "timestamp": "2026-02-20T19:33:17.463652Z",
+  "timestamp": "2026-02-20T19:35:26.108863Z",
   "checked_entries": 100,
-  "issues_found": 26,
+  "issues_found": 40,
   "issues_by_type": {
-    "artifact_token": 23,
-    "identical_to_en_exempt": 20,
-    "identical_to_en": 3,
-    "suspicious_log_high": 60,
-    "suspicious_log_critical": 49,
-    "suspicious_rejected_critical": 112,
+    "artifact_token": 27,
+    "identical_to_en_exempt": 13,
+    "identical_to_en": 13,
+    "suspicious_log_low": 22,
+    "suspicious_log_high": 53,
+    "suspicious_log_critical": 41,
+    "suspicious_rejected_critical": 122,
     "suspicious_rejected_high": 11
   },
   "issues": [
+    {
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "npc.mother_of_jack.voice_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
+      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?"
+    },
+    {
+      "key": "npc.navigator.multi_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
+      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ..."
+    },
     {
       "key": "npc.navigator.multi_2",
       "lang": "es",
@@ -62,25 +91,95 @@
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
     },
     {
+      "key": "raid.serpent_spawn.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn"
+    },
+    {
+      "key": "raid.wild_horses.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
+    },
+    {
+      "key": "raid.gaz_haragoth.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth"
+    },
+    {
+      "key": "raid.bone_beast.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Bone Beast",
+      "translated": "Bone Beast"
+    },
+    {
+      "key": "raid.diblis_the_fair.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Diblis The Fair",
+      "translated": "Diblis The Fair"
+    },
+    {
+      "key": "raid.the_old_widow.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Old Widow",
+      "translated": "The Old Widow"
+    },
+    {
+      "key": "raid.feverish_citizen.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "raid.water_buffalo.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
+    },
+    {
+      "key": "raid.sir_valorcrest.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "raid.mad_mage.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Mad Mage",
+      "translated": "Mad Mage"
+    },
+    {
+      "key": "raid.weakened_shlorg.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
+    },
+    {
+      "key": "raid.gnarlhounds.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Gnarlhounds",
+      "translated": "Gnarlhounds"
+    },
+    {
       "key": "otclient_modules.character_otui.tr_27",
-      "lang": "es",
+      "lang": "ro",
       "type": "identical_to_en",
       "en": "Depot",
       "translated": "Depot"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia.tr_6",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-20T19:32:51.387485Z",
+  "timestamp": "2026-02-20T19:34:59.504592Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 699,
+  "entries_total": 700,
   "entries_by_lang": {
     "es": 277,
     "pl": 148,
@@ -76,7 +76,7 @@
     "it": 440,
     "nl": 691,
     "pt": 620,
-    "ro": 423,
+    "ro": 424,
     "ru": 59,
     "sk": 663,
     "tr": 542,
@@ -926,6 +926,12 @@
       "domain_priority": 9
     },
     {
+      "lang": "ro",
+      "json_file": "otclient_modules.json",
+      "identical_to_en": 1,
+      "domain_priority": 9
+    },
+    {
       "lang": "ru",
       "json_file": "npc.json",
       "identical_to_en": 1,
@@ -1313,12 +1319,6 @@
       "lang": "bg",
       "json_file": "scripts.json",
       "identical_to_en": 153,
-      "domain_priority": 9
-    },
-    {
-      "lang": "bg",
-      "json_file": "questlog.json",
-      "identical_to_en": 29,
       "domain_priority": 9
     }
   ],

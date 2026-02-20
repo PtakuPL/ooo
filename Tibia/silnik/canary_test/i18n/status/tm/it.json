@@ -79278,5 +79278,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T19:32:37.588557Z"
+  },
+  "raid.weakened_shlorg.name": {
+    "src_hash": "7d6db214fa9761098b8e5462761b864c",
+    "text": "Weakened Shlorg",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:34:21.210468Z"
+  },
+  "raid.gnarlhounds.name": {
+    "src_hash": "2eb6e51fdfb88602e0edca297082c641",
+    "text": "Gnarlhounds",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:34:21.210872Z"
   }
 }

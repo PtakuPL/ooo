@@ -70734,5 +70734,205 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T19:25:40.723220Z"
+  },
+  "scripts.blessed_steak.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.782922Z"
+  },
+  "scripts.blueberry_cupcake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.783685Z"
+  },
+  "scripts.carrot_cake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.785284Z"
+  },
+  "scripts.coconut_shrimp_bake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.787523Z"
+  },
+  "scripts.demonic_candy_ball.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.799256Z"
+  },
+  "scripts.filled_jalapeno_peppers.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.807974Z"
+  },
+  "scripts.hydra_tongue_salad.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.822417Z"
+  },
+  "scripts.lemon_cupcake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.828138Z"
+  },
+  "scripts.northern_fishburger.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.866679Z"
+  },
+  "scripts.pot_of_blackjack.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.871321Z"
+  },
+  "scripts.roasted_dragon_wings.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.880356Z"
+  },
+  "scripts.rotworm_stew.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.881172Z"
+  },
+  "scripts.strawberry_cupcake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.888410Z"
+  },
+  "scripts.sweet_mangonaise_elixir.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.889114Z"
+  },
+  "scripts.tropical_fried_terrorbird.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.895633Z"
+  },
+  "scripts.veggie_casserole.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:33:37.897254Z"
+  },
+  "otclient_modules.character_otui.tr_19": {
+    "src_hash": "19068a7dcdd98d1c5c07b3dbdd6f82ee",
+    "text": "Monturi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:34:47.701470Z"
+  },
+  "otclient_modules.character_otui.tr_2": {
+    "src_hash": "b12566f2accca6bffd0414d4836e63eb",
+    "text": "Ținute de angajare:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:34:47.701740Z"
+  },
+  "otclient_modules.character_otui.tr_20": {
+    "src_hash": "7b5b60516ac0f4bb07dadb3fe25ac24c",
+    "text": "Ținute",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:34:47.701953Z"
+  },
+  "otclient_modules.character_otui.tr_21": {
+    "src_hash": "ea5233faf55b53a87747eab131c80d3d",
+    "text": "arata ca grila",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:34:47.702161Z"
+  },
+  "otclient_modules.character_otui.tr_22": {
+    "src_hash": "a3d303c4568830066e943204dbaed76e",
+    "text": "arata ca lista",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:34:47.702358Z"
+  },
+  "otclient_modules.character_otui.tr_24": {
+    "src_hash": "072f47e07cfd88191099900e59e1cb2d",
+    "text": "Magazin Inbox",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:34:52.225428Z"
+  },
+  "otclient_modules.character_otui.tr_26": {
+    "src_hash": "ea7cda1d559f7a95a9ea0cb5f1255897",
+    "text": "Aprovizionare Stash",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:34:52.226111Z"
+  },
+  "otclient_modules.character_otui.tr_27": {
+    "src_hash": "b06cb914f0c5010cad4dd85d84a47495",
+    "text": "Depot",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:34:52.226476Z"
+  },
+  "otclient_modules.character_otui.tr_28": {
+    "src_hash": "4d604dd8f008145471dc845683399189",
+    "text": "Inventar",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:34:52.226666Z"
   }
 }

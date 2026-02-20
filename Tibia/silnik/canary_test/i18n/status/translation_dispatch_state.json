@@ -1,20 +1,19 @@
 {
-  "timestamp": "2026-02-20T19:32:41.846008Z",
-  "cycle_counter": 6132,
-  "last_target_key": "ru:scripts.json",
-  "last_pending_total": 1539,
+  "timestamp": "2026-02-20T19:34:30.221859Z",
+  "cycle_counter": 6138,
+  "last_target_key": "ro:otclient_modules.json",
+  "last_pending_total": 1254,
   "last_tier": 2,
-  "last_cat_priority": 6,
+  "last_cat_priority": 9,
   "candidates_count": 183,
-  "active_candidates_count": 171,
+  "active_candidates_count": 172,
   "skipped_backoff": 7,
-  "skipped_guard_fail": 5,
+  "skipped_guard_fail": 4,
   "guard_fail_blacklist": {
-    "pl:items.json": 6138,
-    "es:items.json": 6133,
-    "es:server.json": 6137,
+    "es:items.json": 6143,
+    "es:server.json": 6152,
     "ro:monsters.json": 6139,
-    "pl:spells.json": 6133
+    "pl:spells.json": 6143
   },
   "tier_config": {
     "tier1": [
@@ -40,7 +39,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 109,
+  "cache_cycle": 111,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -88,7 +87,7 @@
     "ru:scripts.json": 0,
     "ro:scripts.json": 0,
     "it:actions.json": 3,
-    "ru:raids.json": 1,
+    "ru:raids.json": 2,
     "ro:raids.json": 0,
     "it:raids.json": 0,
     "ru:questlog.json": 0,
@@ -206,8 +205,8 @@
       "pl": 87.82,
       "es": 84.75,
       "ru": 50.35,
-      "ro": 43.01,
-      "it": 52.11,
+      "ro": 43.04,
+      "it": 52.15,
       "sr": 45.44,
       "sv": 28.64
     }

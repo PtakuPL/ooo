@@ -1,61 +1,65 @@
 {
-  "timestamp": "2026-02-20T19:33:22.365608Z",
-  "window_start_utc": "2026-02-20T18:33:21.668892Z",
-  "window_end_utc": "2026-02-20T19:33:21.668892Z",
+  "timestamp": "2026-02-20T19:35:30.876381Z",
+  "window_start_utc": "2026-02-20T18:35:30.192330Z",
+  "window_end_utc": "2026-02-20T19:35:30.192330Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 140,
-  "rejected_entries_raw": 331,
-  "suspicious_entries": 3438,
-  "suspicious_entries_raw": 25227,
-  "guard_fail_entries": 134,
-  "guard_fail_sum": 3182,
+  "rejected_entries": 156,
+  "rejected_entries_raw": 345,
+  "suspicious_entries": 3429,
+  "suspicious_entries_raw": 25208,
+  "guard_fail_entries": 133,
+  "guard_fail_sum": 3226,
   "by_type": {
-    "identical_to_en": 119,
-    "word_salad": 6,
+    "identical_to_en": 134,
+    "word_salad": 7,
     "contains_tibia_proper_noun": 6,
     "mixed_language": 8,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7
   },
   "by_source": {
-    "google_translate": 140
+    "google_translate": 156
   },
   "by_language": {
-    "it": 24,
+    "ro": 51,
     "es": 34,
-    "ro": 35,
     "pl": 32,
+    "it": 24,
     "ru": 7,
     "sv": 8
   },
   "by_category": {
-    "npc.json": 4,
     "items.json": 26,
+    "npc.json": 4,
     "spells.json": 53,
     "monsters.json": 23,
     "server.json": 17,
     "quests.json": 3,
-    "scripts.json": 3,
+    "scripts.json": 6,
     "books.json": 1,
-    "otclient_modules.json": 10
+    "otclient_modules.json": 23
   },
   "by_severity": {
-    "CRITICAL": 125,
+    "CRITICAL": 141,
     "HIGH": 15
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 119
+      "count": 134
     },
     {
       "type": "mixed_language",
       "count": 8
+    },
+    {
+      "type": "word_salad",
+      "count": 7
     },
     {
       "type": "mixed_scripts",
@@ -64,10 +68,6 @@
     {
       "type": "cyrillic_latin_mix",
       "count": 7
-    },
-    {
-      "type": "word_salad",
-      "count": 6
     },
     {
       "type": "contains_tibia_proper_noun",

@@ -1,51 +1,51 @@
 {
-  "timestamp": "2026-02-20T19:15:48.510995Z",
-  "window_start_utc": "2026-02-20T18:15:47.822769Z",
-  "window_end_utc": "2026-02-20T19:15:47.822769Z",
+  "timestamp": "2026-02-20T19:16:29.557118Z",
+  "window_start_utc": "2026-02-20T18:16:28.878552Z",
+  "window_end_utc": "2026-02-20T19:16:28.878552Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 83,
+  "rejected_entries": 85,
   "rejected_entries_raw": 345,
-  "suspicious_entries": 3141,
-  "suspicious_entries_raw": 25192,
-  "guard_fail_entries": 128,
-  "guard_fail_sum": 5717,
+  "suspicious_entries": 3189,
+  "suspicious_entries_raw": 25059,
+  "guard_fail_entries": 129,
+  "guard_fail_sum": 5706,
   "by_type": {
-    "identical_to_en": 75,
-    "word_salad": 2,
+    "identical_to_en": 76,
+    "word_salad": 3,
     "mixed_language": 6,
     "contains_tibia_proper_noun": 4
   },
   "by_source": {
-    "google_translate": 83
+    "google_translate": 85
   },
   "by_language": {
-    "es": 21,
+    "es": 23,
     "it": 2,
     "ro": 28,
     "pl": 32
   },
   "by_category": {
-    "server.json": 2,
     "npc.json": 4,
     "items.json": 26,
     "spells.json": 26,
     "monsters.json": 23,
+    "server.json": 2,
     "quests.json": 1,
-    "scripts.json": 1
+    "scripts.json": 3
   },
   "by_severity": {
-    "CRITICAL": 77,
+    "CRITICAL": 79,
     "HIGH": 6
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 75
+      "count": 76
     },
     {
       "type": "mixed_language",
@@ -57,7 +57,7 @@
     },
     {
       "type": "word_salad",
-      "count": 2
+      "count": 3
     }
   ],
   "top_keys": [
@@ -136,20 +136,6 @@
       }
     },
     {
-      "key": "data.otservbr.global.npc.anerui.L71.1487",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.brasith.L59.1211",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
       "key": "npc.al_dee.stdmod_41",
       "count": 1,
       "types": {
@@ -200,6 +186,20 @@
     },
     {
       "key": "spell.rotthingholy_ulus.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "spell.single_ice_chain.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "spell.podzillaphys_chain.name",
       "count": 1,
       "types": {
         "identical_to_en": 1

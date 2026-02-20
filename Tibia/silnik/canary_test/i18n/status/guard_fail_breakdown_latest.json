@@ -1,45 +1,43 @@
 {
-  "timestamp": "2026-02-20T18:44:04.970358Z",
-  "window_start_utc": "2026-02-20T17:44:04.302115Z",
-  "window_end_utc": "2026-02-20T18:44:04.302115Z",
+  "timestamp": "2026-02-20T18:45:23.572190Z",
+  "window_start_utc": "2026-02-20T17:45:22.899988Z",
+  "window_end_utc": "2026-02-20T18:45:22.899988Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 147,
-  "rejected_entries_raw": 373,
+  "rejected_entries": 141,
+  "rejected_entries_raw": 371,
   "suspicious_entries": 3112,
-  "suspicious_entries_raw": 25372,
-  "guard_fail_entries": 125,
-  "guard_fail_sum": 7550,
+  "suspicious_entries_raw": 26258,
+  "guard_fail_entries": 123,
+  "guard_fail_sum": 8023,
   "by_type": {
-    "identical_to_en": 118,
-    "contains_tibia_proper_noun": 7,
-    "mixed_language": 18,
-    "word_salad": 4,
+    "identical_to_en": 114,
+    "word_salad": 3,
+    "mixed_language": 17,
     "mixed_scripts": 7,
-    "cyrillic_latin_mix": 7
+    "cyrillic_latin_mix": 7,
+    "contains_tibia_proper_noun": 6
   },
   "by_source": {
-    "google_translate": 147
+    "google_translate": 141
   },
   "by_language": {
-    "it": 29,
-    "ro": 48,
-    "es": 28,
+    "es": 30,
     "pl": 35,
+    "it": 22,
+    "ro": 47,
     "ru": 7
   },
   "by_category": {
-    "html.json": 7,
-    "books.json": 1,
     "npc.json": 4,
     "php.json": 3,
     "modules.json": 2,
     "talkactions.json": 6,
-    "items.json": 24,
+    "items.json": 26,
     "spells.json": 72,
     "quests.json": 1,
     "scripts.json": 2,
@@ -47,21 +45,17 @@
     "monsters.json": 23
   },
   "by_severity": {
-    "CRITICAL": 122,
-    "HIGH": 25
+    "CRITICAL": 117,
+    "HIGH": 24
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 118
+      "count": 114
     },
     {
       "type": "mixed_language",
-      "count": 18
-    },
-    {
-      "type": "contains_tibia_proper_noun",
-      "count": 7
+      "count": 17
     },
     {
       "type": "mixed_scripts",
@@ -72,8 +66,12 @@
       "count": 7
     },
     {
+      "type": "contains_tibia_proper_noun",
+      "count": 6
+    },
+    {
       "type": "word_salad",
-      "count": 4
+      "count": 3
     }
   ],
   "top_keys": [
@@ -126,14 +124,6 @@
         "contains_tibia_proper_noun": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "web.tpl.forum.add_board.td_4",
-      "count": 2,
-      "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
       }
     },
     {
@@ -222,6 +212,13 @@
     },
     {
       "key": "spell.podzillaphys_chain.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.rotthing_shaper.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

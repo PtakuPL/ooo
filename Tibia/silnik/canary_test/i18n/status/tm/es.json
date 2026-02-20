@@ -153510,5 +153510,93 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T18:24:39.536894Z"
+  },
+  "item.9149.desc": {
+    "src_hash": "dd244aa20b20e7d8fa380018045b1f16",
+    "text": "Contiene la tinta de una quara recién sacrificada.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:44:26.831818Z"
+  },
+  "item.12740.desc": {
+    "src_hash": "fff50d9458a47df2047de708e226bda5",
+    "text": "Este es un objeto de misión y no se puede utilizar para nada más.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:44:33.630813Z"
+  },
+  "item.12784.desc": {
+    "src_hash": "a634332a9884ba0cc8816b58e9883f9b",
+    "text": "Es muy tóxico. Nunca bebas líquidos verdes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:44:33.631803Z"
+  },
+  "item.12785.desc": {
+    "src_hash": "ea09e3143c78bfc7ae5e54c16b25c08a",
+    "text": "Vascalir te lo dio para recolectar veneno de avispa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:44:33.632144Z"
+  },
+  "item.12786.desc": {
+    "src_hash": "3721d15cbdb3bbcae2e14198ccf619c0",
+    "text": "Parece ser parte de un traje. Si eres dueño del atuendo, puedes refinarlo usando el artículo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:44:33.632631Z"
+  },
+  "item.12787.desc": {
+    "src_hash": "3721d15cbdb3bbcae2e14198ccf619c0",
+    "text": "Parece ser parte de un traje. Si eres dueño del atuendo, puedes refinarlo usando el artículo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:44:38.948105Z"
+  },
+  "item.12794.desc": {
+    "src_hash": "f5c6560b9a644e0ee602799caca7c8e2",
+    "text": "No puedes usar este artículo por un corto tiempo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:44:38.948472Z"
+  },
+  "item.12794.name": {
+    "src_hash": "a6c3416cbfee83e9993e4797f921248c",
+    "text": "recarga de trampa para tarántulas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:44:38.948766Z"
+  },
+  "item.12801.name": {
+    "src_hash": "50e5e3f6c349c8a22912af6e02e1c6ee",
+    "text": "lata dorada de aceite",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:44:38.949012Z"
+  },
+  "item.12804.name": {
+    "src_hash": "1517b2400d61d244b34fbaca04c5a644",
+    "text": "taza de oro fundido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:44:38.949255Z"
+  },
+  "item.12805.desc": {
+    "src_hash": "ea9cd51edcc4c1cc68ae6dc16b9704a7",
+    "text": "Un trozo de piel de yielothax. En su superficie se ven pequeños pelos que parecen estar vivos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:44:42.280164Z"
   }
 }

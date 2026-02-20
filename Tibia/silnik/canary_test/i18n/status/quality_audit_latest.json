@@ -1,38 +1,18 @@
 {
-  "timestamp": "2026-02-20T20:54:36.269049Z",
+  "timestamp": "2026-02-20T20:55:28.431838Z",
   "checked_entries": 100,
-  "issues_found": 29,
+  "issues_found": 26,
   "issues_by_type": {
-    "identical_to_en": 13,
-    "identical_to_en_exempt": 5,
+    "identical_to_en": 10,
+    "identical_to_en_exempt": 8,
     "artifact_token": 16,
-    "suspicious_log_high": 64,
-    "suspicious_log_critical": 41,
-    "suspicious_rejected_high": 11,
-    "suspicious_rejected_critical": 135
+    "suspicious_log_critical": 60,
+    "suspicious_log_high": 61,
+    "suspicious_log_low": 5,
+    "suspicious_rejected_critical": 126,
+    "suspicious_rejected_high": 9
   },
   "issues": [
-    {
-      "key": "monster.white_pale.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
     {
       "key": "monster.the_welter.desc",
       "lang": "it",

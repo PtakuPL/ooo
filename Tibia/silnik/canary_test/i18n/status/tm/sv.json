@@ -35902,5 +35902,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T20:46:50.141308Z"
+  },
+  "npc.quentin.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Jag kan känna att du redan pratade med eremiten Eremo på ön Cormaya och fick denna välsignelse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.871787Z"
+  },
+  "npc.quentin.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Du kan be om välsignelsen av andlig avskärmning i whiteflower-templet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.872455Z"
+  },
+  "npc.quentin.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druiderna norr om Carlin kommer att förse dig med Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.872947Z"
+  },
+  "npc.quentin.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Du kan be om välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.873599Z"
+  },
+  "npc.quentin.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Fenixens gnista ges av jord- och eldens dvärgpräster i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.874239Z"
+  },
+  "npc.quentin.stdmod_33": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Detta är en speciell välsignelse som jag kan skänka dig när du har fått åtminstone en av de andra välsignelserna och som fungerar lite annorlunda. ... \\z\n\tDet fungerar bara när du dödas av andra äventyrare, vilket betyder att minst hälften av skadan som ledde till din död orsakades av andra, inte av monster eller miljön. ... \\z\n\t{twist of fate} kommer inte att minska dödsstraffet som de andra välsignelserna, utan istället hindra dig från att förlora dina andra välsignelser såväl som förlustamuletten, om du bär en. Det kostar lika mycket som de andra välsignelserna. ... \\z\n\tSkulle du vilja få det skyddet för ett offer på |PVPBLESSCOST| guld, barn?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.876395Z"
+  },
+  "npc.quentin.stdmod_7": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Du har redan fått min bönrad.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.877021Z"
+  },
+  "npc.quentin.stdmod_8": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.877464Z"
+  },
+  "npc.quentin.stdmod_9": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bra. Du är fri att tacka nej till mitt erbjudande.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.877868Z"
+  },
+  "npc.rabaz.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.879627Z"
+  },
+  "npc.rachel.say_1": {
+    "src_hash": "b62a0dd738c7bd24999a8405be0ab6de",
+    "text": "Så du ber mig om en {{}} för att börja ditt äventyr?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.880798Z"
+  },
+  "npc.rachel.say_2": {
+    "src_hash": "42f4f7cc57059d2b7623f11666f8882b",
+    "text": "Vad? Jag har redan gett dig en {{}}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.881190Z"
+  },
+  "npc.rachel.say_3": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.881663Z"
+  },
+  "npc.raffael.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Glöm inte att sätta in dina pengar här i Global Bank innan du ger dig ut på äventyr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.883288Z"
+  },
+  "npc.rahkem.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.884619Z"
+  },
+  "npc.rahkem.stdmod_10": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Tyvärr, du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:54:58.885166Z"
   }
 }

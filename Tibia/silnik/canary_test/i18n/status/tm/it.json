@@ -81214,5 +81214,197 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:50:02.316633Z"
+  },
+  "talkaction.god.money.msg_invalid_amount": {
+    "src_hash": "c8e98927245ea8a864fd479aabe18b3a",
+    "text": "Importo non valido.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:15.860682Z"
+  },
+  "talkaction.gm.spy.slot_amulet": {
+    "src_hash": "8ab7b3f922dcbea814209decbc6571ed",
+    "text": "Amuleto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:21.294050Z"
+  },
+  "talkaction.gm.spy.slot_arrow": {
+    "src_hash": "0f4e1aaabd074689b7d3ead824d1ee8e",
+    "text": "Freccia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:24.772169Z"
+  },
+  "talkaction.gm.spy.slot_backpack": {
+    "src_hash": "10df2101dd922fefc0e66be49b7723c2",
+    "text": "Zaino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:24.772358Z"
+  },
+  "talkaction.gm.spy.slot_boots": {
+    "src_hash": "797e65b9c5cd0da25a932f2b0947b94b",
+    "text": "Stivali",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:24.772522Z"
+  },
+  "talkaction.gm.spy.slot_ring": {
+    "src_hash": "d4db177c94738b72bf9ce61e988ab1f1",
+    "text": "Squillo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:24.772679Z"
+  },
+  "talkaction.gm.teleport.msg_declare_xyz": {
+    "src_hash": "bd8e7388abd38e401ff411e20df342d2",
+    "text": "È necessario dichiarare X, Y e Z di destinazione. Per favore usa \"/teleport X, Y, Z\".",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:24.773163Z"
+  },
+  "talkaction.gm.teleport.msg_invalid_destination": {
+    "src_hash": "983d0222bc41e5e073712607fea284ee",
+    "text": "La posizione di destinazione non è valida.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:31.645407Z"
+  },
+  "talkaction.gm.teleport.msg_town_not_found": {
+    "src_hash": "5c8a17f7e2260e25d9a924d43a1134e4",
+    "text": "Città non trovata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:31.645659Z"
+  },
+  "talkaction.gm.unban.msg_unbanned": {
+    "src_hash": "a40463213e23d9ba449707d406bf8ec1",
+    "text": "{name} è stato sbloccato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:31.645958Z"
+  },
+  "talkaction.god.achievement.msg_add_invalid": {
+    "src_hash": "e656f3a6672df3bbc9f7359b726afcb9",
+    "text": "Obiettivo non valido. Utilizza un ID o un nome valido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:31.646291Z"
+  },
+  "talkaction.god.achievement.msg_add_usage": {
+    "src_hash": "96b36ea5b2bbbd3798e8c5d11f9f8537",
+    "text": "Utilizzo: /addachievement nomegiocatore, conseguimentoId|Nome",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:31.646641Z"
+  },
+  "talkaction.god.achievement.msg_check_list": {
+    "src_hash": "f816f029b5d2d50423fccce8255d39e1",
+    "text": "Risultati: {list}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:38.650425Z"
+  },
+  "talkaction.god.achievement.msg_check_usage": {
+    "src_hash": "1498377915ca8c25a3d1634a54a9f82e",
+    "text": "Utilizzo: /checkachievements nomegiocatore",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:38.650746Z"
+  },
+  "talkaction.god.achievement.msg_remove_invalid": {
+    "src_hash": "7879bd592d152bea01623b163613ff3c",
+    "text": "Identificatore del risultato non valido. Utilizza l'ID o il nome.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:38.651202Z"
+  },
+  "talkaction.god.addon.msg_invalid_looktype": {
+    "src_hash": "9882ea3c619b81d9f358342c74343d7a",
+    "text": "Tipo di aspetto non valido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:38.651571Z"
+  },
+  "talkaction.god.addon.msg_invalid_value": {
+    "src_hash": "e52511bb3913b543444dace6e36a2191",
+    "text": "Valore aggiuntivo non valido. Dovrebbe essere compreso tra 0 e 3.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:44.891524Z"
+  },
+  "talkaction.god.attributes.msg_cannot_add_creature": {
+    "src_hash": "07f6503a1be02f9ea242e74d2feb088e",
+    "text": "Non puoi aggiungere quell'attributo a questa creatura.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:44.892040Z"
+  },
+  "talkaction.god.attributes.msg_cannot_add_item": {
+    "src_hash": "075825cff31921f7b8ece3859fe2ef2a",
+    "text": "Non puoi aggiungere quell'attributo a questo articolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:44.892376Z"
+  },
+  "talkaction.god.attributes.msg_cannot_add_player": {
+    "src_hash": "5b727dde7a3d2537f6e70458eea350ea",
+    "text": "Non puoi aggiungere quell'attributo a questo giocatore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:44.892762Z"
+  },
+  "talkaction.god.attributes.msg_item_not_found": {
+    "src_hash": "eb54be9c4f538c494adafef0dc984ad4",
+    "text": "Articolo non trovato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:49.817983Z"
+  },
+  "talkaction.god.attributes.msg_unknown": {
+    "src_hash": "1808250bba66c982e229c5157e063b77",
+    "text": "Attributo sconosciuto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:49.818223Z"
+  },
+  "talkaction.god.bosstiary.msg_invalid_kills": {
+    "src_hash": "aedf4661198891c4912ed00c3434bd3d",
+    "text": "Conteggio uccisioni non valido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:49.818484Z"
+  },
+  "talkaction.god.bosstiary.msg_target_not_found": {
+    "src_hash": "9cf369831e139447ebde4c7fa6d9bb06",
+    "text": "Giocatore target non trovato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:49.818751Z"
   }
 }

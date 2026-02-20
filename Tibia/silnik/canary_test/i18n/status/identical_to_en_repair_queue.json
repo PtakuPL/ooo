@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-20T22:47:39.786849Z",
+  "timestamp": "2026-02-20T22:54:53.541103Z",
   "priority_langs": [
     "es",
     "pl",
@@ -73,11 +73,11 @@
     "de": 659,
     "fr": 578,
     "hu": 663,
-    "it": 428,
+    "it": 423,
     "nl": 691,
     "pt": 620,
     "ro": 424,
-    "ru": 73,
+    "ru": 74,
     "sk": 663,
     "tr": 542,
     "ar": 904,
@@ -622,7 +622,7 @@
     {
       "lang": "it",
       "json_file": "talkactions.json",
-      "identical_to_en": 8,
+      "identical_to_en": 3,
       "domain_priority": 2
     },
     {
@@ -946,7 +946,7 @@
     {
       "lang": "ru",
       "json_file": "talkactions.json",
-      "identical_to_en": 2,
+      "identical_to_en": 3,
       "domain_priority": 2
     },
     {

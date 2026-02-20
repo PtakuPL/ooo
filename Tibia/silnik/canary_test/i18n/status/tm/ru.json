@@ -38734,5 +38734,77 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:50:08.056024Z"
+  },
+  "talkaction.player.buy_house.msg_need_premium": {
+    "src_hash": "d10e0f3404950e7ed3fccf7a8dbd72a3",
+    "text": "Вам нужен премиум-аккаунт.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:53:55.027398Z"
+  },
+  "talkaction.gm.skip_tiles.msg_cannot_teleport": {
+    "src_hash": "8ed1dc1ccafe9e206a8dd11e16f6a49b",
+    "text": "Вы не можете телепортироваться туда.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:54:02.120895Z"
+  },
+  "talkaction.gm.spy.msg_offline": {
+    "src_hash": "cb0a5b9a465d744f7b71b15696393515",
+    "text": "Этот плеер не в сети или не существует.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:54:02.121338Z"
+  },
+  "talkaction.gm.spy.msg_equipment_of": {
+    "src_hash": "e9bda010c672529150bcae3e51004b67",
+    "text": "Оборудование {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:54:02.121610Z"
+  },
+  "talkaction.gm.spy.msg_specify_name": {
+    "src_hash": "95c7b984f7921ff2f8b24d92e5e0060f",
+    "text": "Напишите имя персонажа, за которым нужно шпионить.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:54:02.122042Z"
+  },
+  "talkaction.gm.spy.slot_amulet": {
+    "src_hash": "8ab7b3f922dcbea814209decbc6571ed",
+    "text": "Амулет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:54:05.956504Z"
+  },
+  "talkaction.gm.teleport.msg_declare_xyz": {
+    "src_hash": "bd8e7388abd38e401ff411e20df342d2",
+    "text": "Вам необходимо указать X, Y или Z пункта назначения. Пожалуйста, используйте «/teleport X, Y, Z».",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:54:05.958341Z"
+  },
+  "talkaction.gm.teleport.msg_invalid_destination": {
+    "src_hash": "983d0222bc41e5e073712607fea284ee",
+    "text": "Позиция назначения недействительна.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:54:05.958831Z"
+  },
+  "talkaction.gm.teleport.msg_town_not_found": {
+    "src_hash": "5c8a17f7e2260e25d9a924d43a1134e4",
+    "text": "Город не найден.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:54:05.959365Z"
   }
 }

@@ -1,41 +1,41 @@
 {
-  "timestamp": "2026-02-20T22:52:59.402456Z",
-  "window_start_utc": "2026-02-20T21:52:58.673978Z",
-  "window_end_utc": "2026-02-20T22:52:58.673978Z",
+  "timestamp": "2026-02-20T22:55:21.578114Z",
+  "window_start_utc": "2026-02-20T21:55:20.808567Z",
+  "window_end_utc": "2026-02-20T22:55:20.808567Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 171,
-  "rejected_entries_raw": 233,
-  "suspicious_entries": 3821,
-  "suspicious_entries_raw": 23918,
-  "guard_fail_entries": 97,
-  "guard_fail_sum": 2593,
+  "rejected_entries": 177,
+  "rejected_entries_raw": 239,
+  "suspicious_entries": 3840,
+  "suspicious_entries_raw": 24063,
+  "guard_fail_entries": 100,
+  "guard_fail_sum": 2610,
   "by_type": {
-    "identical_to_en": 157,
+    "identical_to_en": 161,
     "word_salad": 1,
     "mixed_language": 8,
     "contains_tibia_proper_noun": 7,
-    "mixed_scripts": 5,
-    "cyrillic_latin_mix": 5
+    "mixed_scripts": 7,
+    "cyrillic_latin_mix": 7
   },
   "by_source": {
-    "google_translate": 171
+    "google_translate": 177
   },
   "by_language": {
+    "ro": 70,
     "es": 35,
-    "ro": 68,
     "pl": 43,
-    "it": 7,
-    "ru": 5,
+    "it": 8,
+    "ru": 8,
     "sv": 13
   },
   "by_category": {
-    "npc.json": 4,
     "items.json": 28,
+    "npc.json": 4,
     "spells.json": 31,
     "server.json": 17,
     "monsters.json": 28,
@@ -44,16 +44,17 @@
     "cpp.json": 19,
     "modules.json": 2,
     "chatchannels.json": 1,
-    "otclient_data.json": 1
+    "otclient_data.json": 3,
+    "talkactions.json": 4
   },
   "by_severity": {
-    "CRITICAL": 158,
-    "HIGH": 13
+    "CRITICAL": 162,
+    "HIGH": 15
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 157
+      "count": 161
     },
     {
       "type": "mixed_language",
@@ -65,11 +66,11 @@
     },
     {
       "type": "mixed_scripts",
-      "count": 5
+      "count": 7
     },
     {
       "type": "cyrillic_latin_mix",
-      "count": 5
+      "count": 7
     },
     {
       "type": "word_salad",

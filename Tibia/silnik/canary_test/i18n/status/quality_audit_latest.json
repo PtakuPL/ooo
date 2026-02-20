@@ -1,16 +1,17 @@
 {
-  "timestamp": "2026-02-20T18:13:42.381861Z",
+  "timestamp": "2026-02-20T18:14:34.586195Z",
   "checked_entries": 100,
-  "issues_found": 29,
+  "issues_found": 30,
   "issues_by_type": {
-    "identical_to_en": 13,
-    "identical_to_en_exempt": 1,
+    "identical_to_en": 14,
+    "identical_to_en_exempt": 5,
     "artifact_token": 16,
-    "suspicious_log_critical": 48,
-    "suspicious_log_high": 52,
-    "suspicious_log_low": 19,
-    "suspicious_rejected_critical": 111,
-    "suspicious_rejected_high": 26
+    "suspicious_log_high": 63,
+    "suspicious_log_low": 1,
+    "suspicious_log_medium": 24,
+    "suspicious_log_critical": 19,
+    "suspicious_rejected_critical": 117,
+    "suspicious_rejected_high": 24
   },
   "issues": [
     {
@@ -215,6 +216,13 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "monster.undead_cavebear.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Undead Cavebear",
+      "translated": "Undead Cavebear"
     }
   ],
   "threshold": 10,

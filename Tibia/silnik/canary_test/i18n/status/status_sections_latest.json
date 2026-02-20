@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-20T18:13:47.300670Z",
+  "generated_at_utc": "2026-02-20T18:14:39.494653Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,7 +9,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-02-20 18:13:46"
+      "last_update": "2026-02-20 18:14:38"
     },
     "LIVE": {
       "state": "active",
@@ -17,23 +17,23 @@
       "reason": "",
       "freshness": "5s temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-02-20T18:13:42Z"
+      "last_update": "2026-02-20T18:14:34Z"
     },
     "MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "34s temu",
+      "freshness": "24s temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-02-20 18:13:46"
+      "last_update": "2026-02-20 18:14:38"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "38s temu",
+      "freshness": "5s temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-02-20T18:13:08.487650Z"
+      "last_update": "2026-02-20T18:14:33.964998Z"
     },
     "QUALITY": {
       "state": "active",
@@ -41,7 +41,7 @@
       "reason": "",
       "freshness": "0s temu",
       "source": "quality_audit_latest.json + guard_fail_breakdown_latest.json",
-      "last_update": "2026-02-20T18:13:47.198528Z"
+      "last_update": "2026-02-20T18:14:39.388585Z"
     },
     "HISTORY": {
       "state": "active",
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-02-20 18:13:46"
+      "last_update": "2026-02-20 18:14:38"
     }
   }
 }

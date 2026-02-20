@@ -69046,5 +69046,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:12:21.160956Z"
+  },
+  "monster.undead_cavebear.name": {
+    "src_hash": "64e09822bd15852b6ce465912554b067",
+    "text": "Undead Cavebear",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:14:07.495863Z"
   }
 }

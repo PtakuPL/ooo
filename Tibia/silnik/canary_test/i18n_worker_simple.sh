@@ -13781,6 +13781,51 @@ def _key_domain(key: str) -> str:
         return "book"
     return k.split(".", 1)[0] if "." in k else k
 
+def _lang_base(lang: str) -> str:
+    return str(lang or "").lower().replace("_", "-").split("-", 1)[0]
+
+def _is_cyrillic_lang(lang: str) -> bool:
+    return _lang_base(lang) in {"ru", "uk", "bg", "sr", "mk"}
+
+def _contains_latin_word_4plus(text: str) -> bool:
+    return bool(re.search(r"[A-Za-z]{4,}", str(text or "")))
+
+_NONTRANSLATABLE_WORLD_TERMS = {
+    # miasta / lokacje
+    "dawnport", "thais", "carlin", "venore", "ab'dendriel", "kazordoon", "edron", "darashia",
+    "ankrahmun", "farmine", "liberty bay", "port hope", "svargrond", "yalahar", "krailos",
+    "issavi", "roshamuul", "feyrist", "oramond", "gray island", "zao", "deeper banuta",
+    "goroma", "demona", "mintwallin", "fibula", "venore swamp", "cormaya",
+    # bossy / postacie / frakcje
+    "ferumbras", "orshabaal", "morgaroth", "ghazbaran", "zushuka", "zathroth", "fardos",
+    "urmalulu", "goshnar", "oberon", "timira", "urmahlullu", "yirkas", "vok",
+    # potoczne termy świata gry
+    "bosstiary", "bestiary", "imbuement", "imbuements", "prey", "charms", "runes", "runestone",
+    "stamina", "premium", "highscore", "highscores", "hotkey", "hotkeys", "loot",
+    # nazwy szkół / profesji / archetypy, które zwykle transliterujemy w cyrylicy
+    "paladin", "sorcerer", "druid", "knight", "familiar",
+    # potwory i klasyczne nazwy własne świata
+    "demon", "demons", "behemoth", "dragon lord", "warlock", "hydra", "cyclops",
+    "necromancer", "vampire", "minotaur", "orc", "troll", "elf", "bonelord",
+}
+
+_LANG_EXEMPT_MODE = {
+    # W łacińskich językach dopuszczamy EN-copy dla części termów świata gry.
+    "pl": "keep",
+    "es": "keep",
+    "it": "keep",
+    "ro": "keep",
+    "pt": "keep",
+    "fr": "keep",
+    "de": "keep",
+    # W cyrylicy EN-copy NIE jest dopuszczalne — term ma być transliterowany.
+    "ru": "transliterate",
+    "uk": "transliterate",
+    "bg": "transliterate",
+    "sr": "transliterate",
+    "mk": "transliterate",
+}
+
 _DOMAIN_IDENTICAL_EXEMPT_TERMS = {
     "demon",
     "demons",
@@ -13789,14 +13834,17 @@ _DOMAIN_IDENTICAL_EXEMPT_DOMAINS = {
     "monster", "item", "spell", "npc", "book", "quest", "raid",
 }
 
-def _is_domain_identical_exempt(key: str, en_value: str) -> bool:
+def _is_domain_identical_exempt(key: str, en_value: str, lang: str = "") -> bool:
     text = str(en_value or "").strip()
     if not text:
+        return False
+    mode = _LANG_EXEMPT_MODE.get(_lang_base(lang), "keep")
+    if mode != "keep":
         return False
     words = [w.lower() for w in re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ]+", text)]
     if not words:
         return False
-    if not any(w in _DOMAIN_IDENTICAL_EXEMPT_TERMS for w in words):
+    if not any((w in _DOMAIN_IDENTICAL_EXEMPT_TERMS) or (w in _NONTRANSLATABLE_WORLD_TERMS) for w in words):
         return False
     if not str(key or "").endswith((".name", ".title", ".desc")):
         return False
@@ -14017,6 +14065,7 @@ def _auto_transliterate_cyrillic_proper_nouns(en_text: str, translated_text: str
         for w in re.findall(r"[A-Za-z][A-Za-z'-]*", str(en_text or ""))
         if w[:1].isupper() and len(w) >= 4
     }
+    policy_terms = {w for w in _NONTRANSLATABLE_WORLD_TERMS if isinstance(w, str)}
     changed = 0
 
     def _replace(match):
@@ -14025,7 +14074,7 @@ def _auto_transliterate_cyrillic_proper_nouns(en_text: str, translated_text: str
         tl = tok.lower()
         if tl in _CYRILLIC_TRANSLIT_DENY_TERMS:
             return tok
-        if tl in proper_terms or tl in en_title_words:
+        if tl in proper_terms or tl in en_title_words or tl in policy_terms:
             new_tok = _transliterate_latin_word_ru(tok)
             if new_tok != tok:
                 changed += 1
@@ -14749,7 +14798,7 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
         forced_retranslate = _should_force_en_copy_retranslate(key, en, lang)
         if forced_retranslate or (
             not _is_probably_nontranslatable_text(en)
-            and not _is_domain_identical_exempt(key, en)
+            and not _is_domain_identical_exempt(key, en, lang)
         ):
             issues.append({
                 "type": "identical_to_en",
@@ -15445,13 +15494,22 @@ for key, en_text in iter_items:
 
         force_en_copy_retranslate = (
             current_value == str(en_text)
-            and not _is_proper_noun_key(key, str(en_text))
-            and _should_force_en_copy_retranslate(key, str(en_text), target_lang, json_file)
+            and (
+                (_is_cyrillic_lang(target_lang) and _contains_latin_word_4plus(current_value))
+                or (
+                    not _is_proper_noun_key(key, str(en_text))
+                    and _should_force_en_copy_retranslate(key, str(en_text), target_lang, json_file)
+                )
+            )
         )
 
         # W strict tłumaczymy tylko placeholdery / TODO / wartości równe EN
         if strict_mode:
-            if current_value == en_text and _is_proper_noun_key(key, en_text):
+            if (
+                current_value == en_text
+                and _is_proper_noun_key(key, en_text)
+                and not (_is_cyrillic_lang(target_lang) and _contains_latin_word_4plus(current_value))
+            ):
                 skipped_not_placeholder += 1  # Nazwa własna — identyczna = OK
                 continue
             # Stabilizuj już naprawione frazy wymuszone (short NPC + quest concat),
@@ -16162,7 +16220,7 @@ if all_recent:
             continue
         if _should_force_en_copy_retranslate(key_text, en_text, target_lang, json_file):
             identical_to_en_translatable += 1
-        elif _is_domain_identical_exempt(key_text, en_text):
+        elif _is_domain_identical_exempt(key_text, en_text, target_lang):
             identical_to_en_exempt += 1
         elif _is_probably_nontranslatable_text(en_text):
             identical_to_en_exempt += 1
@@ -21537,7 +21595,7 @@ for e in entries:
             issues.append({"key": key, "lang": lang, "type": "identical_to_en", "en": en, "translated": tr})
             issue_counter["identical_to_en"] += 1
             lang_issue_counter[lang] += 1
-        elif _is_domain_identical_exempt(key, en):
+        elif _is_domain_identical_exempt(key, en, lang):
             issue_counter["identical_to_en_exempt"] += 1
         elif _is_probably_nontranslatable_text(en):
             issue_counter["identical_to_en_exempt"] += 1

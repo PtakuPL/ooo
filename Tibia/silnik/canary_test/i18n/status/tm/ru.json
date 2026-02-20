@@ -38526,5 +38526,125 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:44:36.858104Z"
+  },
+  "otclient_modules.assign_object_otui.tr_3": {
+    "src_hash": "6a344362d7ec25b9667aeaefe33b5a7a",
+    "text": "Выбрать Обйект",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:06.971773Z"
+  },
+  "otclient_modules.battle_otui.tr_4": {
+    "src_hash": "ee8405395b7ab2150baf8e20c5254add",
+    "text": "Скрыть Нпкс",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:06.986876Z"
+  },
+  "otclient_modules.bestiary.tr_3": {
+    "src_hash": "9c73770b7f4e462b6fc5b27903543845",
+    "text": "Стоп Траккинг",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:06.994399Z"
+  },
+  "otclient_modules.bestiary_otui.tr_10": {
+    "src_hash": "ba79bc10653863243469213e946899e9",
+    "text": "Итого Киллс",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:07.003242Z"
+  },
+  "otclient_modules.bestiary_otui.tr_13": {
+    "src_hash": "5e2dc2efe9702dd86d89378e76f5201b",
+    "text": "Креатуре Имя",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:07.004608Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_2": {
+    "src_hash": "ba79bc10653863243469213e946899e9",
+    "text": "Итого Киллс",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:07.033239Z"
+  },
+  "otclient_modules.bosstiary_otui.tr_7": {
+    "src_hash": "9943f1008433c572d639480b41f0d942",
+    "text": "Нет Киллс",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:07.046677Z"
+  },
+  "otclient_modules.browse_otui.tr_5": {
+    "src_hash": "7b84c49b8fab415c7ae4cde3bf0ba89a",
+    "text": "Показать Депот Онлй",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:07.052630Z"
+  },
+  "otclient_modules.character.tr_10": {
+    "src_hash": "7bd2fce7008b193b40988850bddd4d9e",
+    "text": "Из Амплификатион",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:07.071506Z"
+  },
+  "otclient_modules.character.tr_11": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "Из Екуипмент",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:07.072520Z"
+  },
+  "otclient_modules.character.tr_18": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "Из Вхеел",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:07.075128Z"
+  },
+  "otclient_modules.character.tr_19": {
+    "src_hash": "7bd2fce7008b193b40988850bddd4d9e",
+    "text": "Из Амплификатион",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:07.076154Z"
+  },
+  "otclient_modules.character.tr_2": {
+    "src_hash": "e77090418ce18db48ce38a0bc92460e3",
+    "text": "Из Бонус",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:07.077061Z"
+  },
+  "otclient_modules.character.tr_20": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Из Басе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:07.077941Z"
+  },
+  "otclient_modules.character.tr_22": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "Из Вхеел",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:07.079616Z"
   }
 }

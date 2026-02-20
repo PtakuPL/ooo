@@ -81062,5 +81062,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:44:30.477130Z"
+  },
+  "book.otbm.at_the_bottom_of_those": {
+    "src_hash": "c637a45a699600f6c107885a133edbe7",
+    "text": "in fondo a quelle pagine*",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:48:44.948461Z"
+  },
+  "book.otbm.chain_armor_brass_armor_leather": {
+    "src_hash": "89dc7999b6e3976ab83479214ea6e6a5",
+    "text": "armatura a catena, armatura in ottone, armatura in cuoio, elmo a catena, elmo in cuoio, scudo in acciaio, scudo vichingo, scudo in legno, gambe a catena",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:48:47.948041Z"
+  },
+  "book.otbm.house_of_wealth_bank_jewels_59d3083c": {
+    "src_hash": "59d3083c0579a11aa4c63c67354ac901",
+    "text": "Casa della ricchezza - Banca, gioielli, Depot",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:48:58.118597Z"
+  },
+  "book.otbm.houses_ascendants_phases_of_the": {
+    "src_hash": "1837cf115983b3cfd387252514117e98",
+    "text": "Case, Ascendenti, Fasi Lunari nei diversi Ordini Oscuri. Un'analisi comparativa del grafico di Antaly di Drefia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:48:58.119608Z"
   }
 }

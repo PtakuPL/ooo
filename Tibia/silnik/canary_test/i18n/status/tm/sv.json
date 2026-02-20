@@ -37278,5 +37278,117 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:38:53.673837Z"
+  },
+  "npc.stutch.greet_1": {
+    "src_hash": "d0e12fd7c549bed11b5ac6d677e977a8",
+    "text": "HEJA KUNGEN!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:52:37.831671Z"
+  },
+  "npc.stutch.greet_2": {
+    "src_hash": "d0e12fd7c549bed11b5ac6d677e977a8",
+    "text": "HEJA KUNGEN!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:52:37.831966Z"
+  },
+  "npc.sundara.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:52:37.833401Z"
+  },
+  "npc.sundara.voice_1": {
+    "src_hash": "e90dd74cd1d388754108ef3af946dba3",
+    "text": "Hälsodrycker! Mana drycker! Köp dem här!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:52:37.833952Z"
+  },
+  "npc.sundara.voice_2": {
+    "src_hash": "2e96e0843517997dfabc696186c3ce05",
+    "text": "Alla typer av drycker finns här!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:52:37.834371Z"
+  },
+  "npc.suzy.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Glöm inte att sätta in dina pengar här i Global Bank innan du ger dig ut på äventyr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:52:37.835598Z"
+  },
+  "npc.svenson.say_2": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Här är den.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:52:37.837400Z"
+  },
+  "npc.svenson.stdmod_1": {
+    "src_hash": "b42ce445bbb5d3ce8d4dd0b5edc94823",
+    "text": "Vill du segla {0}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:52:37.838077Z"
+  },
+  "npc.svenson.stdmod_2": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vi skulle vilja tjäna dig lite tid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:52:37.838523Z"
+  },
+  "npc.svenson.stdmod_4": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Jag är kapten på det här fartyget.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:52:37.839156Z"
+  },
+  "npc.svenson.stdmod_5": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Jag är kapten på det här fartyget.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:52:37.839537Z"
+  },
+  "npc.taegen.multi_14": {
+    "src_hash": "43ac27d0ac82215053757aa1dad8cb94",
+    "text": "Det finns en älva som en gång berättade för mig om den här besvärjelsen. Hon kanske delar med sig av sin kunskap. Du kan hitta henne i en liten älvaby i sydväst om Feyrist.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:52:37.841134Z"
+  },
+  "npc.taegen.multi_7": {
+    "src_hash": "48eba4176f3059b7968230dd4b0c9c50",
+    "text": "Men det finns en älva som en gång berättade om det för mig. Hon kanske delar med sig av sin kunskap. Du kan hitta henne i en liten älvaby i sydväst om Feyrist.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:52:37.842344Z"
+  },
+  "npc.tandros.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:52:37.845932Z"
   }
 }

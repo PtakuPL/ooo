@@ -174,6 +174,8 @@ if (MSVC)
       framework/luafunctions_net.cpp
       framework/luafunctions_sound.cpp
       client/luafunctions.cpp
+      client/luafunctions_entities.cpp
+      client/luafunctions_ui_client.cpp
       PROPERTIES
         COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer- /d2FH4- /d2notypeopt /permissive-"
         SKIP_PRECOMPILE_HEADERS ON
@@ -761,6 +763,8 @@ set(SOURCE_FILES
         client/lightview.cpp
         client/localplayer.cpp
         client/luafunctions.cpp
+        client/luafunctions_entities.cpp
+        client/luafunctions_ui_client.cpp
         client/luavaluecasts_client.cpp
         client/map.cpp
         client/mapio.cpp

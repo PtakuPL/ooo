@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-20T22:52:18.029093Z",
-  "window_end_utc": "2026-02-20T23:52:18.029093Z",
+  "window_start_utc": "2026-02-20T22:53:15.893653Z",
+  "window_end_utc": "2026-02-20T23:53:15.893653Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -17,14 +17,14 @@
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 1633,
-  "guard_fail": 2827,
-  "guard_fail_rate_pct": 63.4,
+  "translated": 1694,
+  "guard_fail": 2871,
+  "guard_fail_rate_pct": 62.9,
   "no_progress_entries": 5,
-  "no_progress_rate_pct": 5.7,
-  "throughput_keys_per_h": 975.1,
-  "suspicious_total": 4068,
-  "suspicious_total_raw": 14008,
+  "no_progress_rate_pct": 5.5,
+  "throughput_keys_per_h": 1064.5,
+  "suspicious_total": 4072,
+  "suspicious_total_raw": 14148,
   "gt_translated": 149,
   "gt_active": true,
   "top_guard_fail_targets": [
@@ -53,6 +53,12 @@
       "guard_command": 0
     },
     {
+      "target": "pl/spells.json",
+      "translated": 2,
+      "guard_fail": 58,
+      "guard_command": 0
+    },
+    {
       "target": "ru/server.json",
       "translated": 30,
       "guard_fail": 51,
@@ -68,12 +74,6 @@
       "target": "it/npc.json",
       "translated": 25,
       "guard_fail": 35,
-      "guard_command": 0
-    },
-    {
-      "target": "es/server.json",
-      "translated": 28,
-      "guard_fail": 32,
       "guard_command": 0
     }
   ]

@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T17:23:07.953849Z",
+  "checked_at": "2026-02-20T17:42:38.856393Z",
   "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -84,6 +84,33 @@
       "en": "Herbicide",
       "pl": "Herbicyd",
       "lang": "Herbicide"
+    },
+    {
+      "key": "achievement.63.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Wayfarer",
+      "pl": "Wędrowiec",
+      "lang": "Wayfarer"
+    },
+    {
+      "key": "achievement.65.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rockstar",
+      "pl": "Gwiazda rocka",
+      "lang": "Rockstar"
+    },
+    {
+      "key": "achievement.71.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Firewalker",
+      "pl": "Chodzący po ogniu",
+      "lang": "Firewalker"
     },
     {
       "key": "achievement.119.name",
@@ -3585,33 +3612,6 @@
       "en": "Filename",
       "pl": "Nazwa pliku",
       "lang": "Filename"
-    },
-    {
-      "key": "web.tpl.forum.boards.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Boards",
-      "pl": "Deski",
-      "lang": "Boards"
-    },
-    {
-      "key": "web.tpl.forum.boards.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Board",
-      "pl": "Tablica",
-      "lang": "Board"
-    },
-    {
-      "key": "web.tpl.forum.boards.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Posts",
-      "pl": "Posty",
-      "lang": "Posts"
     }
   ],
   "length_ratio_issues": [

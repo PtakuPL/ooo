@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T17:24:10.952213Z",
+  "checked_at": "2026-02-20T17:43:45.185952Z",
   "issues_total": 404,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -93,6 +93,33 @@
       "en": "Herbicide",
       "pl": "Herbicyd",
       "lang": "Herbicide"
+    },
+    {
+      "key": "achievement.63.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Wayfarer",
+      "pl": "Wędrowiec",
+      "lang": "Wayfarer"
+    },
+    {
+      "key": "achievement.65.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rockstar",
+      "pl": "Gwiazda rocka",
+      "lang": "Rockstar"
+    },
+    {
+      "key": "achievement.71.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Firewalker",
+      "pl": "Chodzący po ogniu",
+      "lang": "Firewalker"
     },
     {
       "key": "achievement.119.name",
@@ -3585,33 +3612,6 @@
       "en": "Grrrrrr",
       "pl": "Wrrrr",
       "lang": "Grrrrrr"
-    },
-    {
-      "key": "monster.stone_rhino.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "SNIFF!",
-      "pl": "WĘSZY!",
-      "lang": "SNIFF!"
-    },
-    {
-      "key": "monster.fox.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Yip! Yip!",
-      "pl": "Tak! Tak!",
-      "lang": "Yip! Yip!"
-    },
-    {
-      "key": "monster.fox.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
     }
   ],
   "length_ratio_issues": [

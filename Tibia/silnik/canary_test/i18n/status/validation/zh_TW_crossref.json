@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T17:24:11.455596Z",
+  "checked_at": "2026-02-20T17:43:45.528657Z",
   "issues_total": 422,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -138,6 +138,42 @@
       "en": "Annihilator",
       "pl": "Niszczyciel",
       "lang": "Annihilator"
+    },
+    {
+      "key": "achievement.63.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Wayfarer",
+      "pl": "Wędrowiec",
+      "lang": "Wayfarer"
+    },
+    {
+      "key": "achievement.65.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rockstar",
+      "pl": "Gwiazda rocka",
+      "lang": "Rockstar"
+    },
+    {
+      "key": "achievement.69.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Masquerader",
+      "pl": "Maskarada",
+      "lang": "Masquerader"
+    },
+    {
+      "key": "achievement.71.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Firewalker",
+      "pl": "Chodzący po ogniu",
+      "lang": "Firewalker"
     },
     {
       "key": "achievement.119.name",
@@ -3576,42 +3612,6 @@
       "en": "Rune Spell Name",
       "pl": "Rune zaklęcie Nazwa",
       "lang": "Rune Spell Name"
-    },
-    {
-      "key": "cpp.inspect.skill_boost",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Skill Boost",
-      "pl": "Zwiększenie umiejętności",
-      "lang": "Skill Boost"
-    },
-    {
-      "key": "cpp.inspect.speed",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Speed",
-      "pl": "Szybkość",
-      "lang": "Speed"
-    },
-    {
-      "key": "cpp.inspect.speed_value",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "speed {0}",
-      "pl": "prędkość {0}",
-      "lang": "speed {0}"
-    },
-    {
-      "key": "cpp.inspect.tier",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tier",
-      "pl": "Rząd",
-      "lang": "Tier"
     }
   ],
   "length_ratio_issues": [

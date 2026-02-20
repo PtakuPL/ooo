@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 52.7,
+  "coverage_pct": 52.8,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T17:23:28.691361Z",
+  "checked_at": "2026-02-20T17:42:59.490888Z",
   "issues_total": 429,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -155,6 +155,15 @@
       "en": "Matchmaker",
       "pl": "Swat",
       "lang": "Matchmaker"
+    },
+    {
+      "key": "achievement.65.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rockstar",
+      "pl": "Gwiazda rocka",
+      "lang": "Rockstar"
     },
     {
       "key": "achievement.123.name",
@@ -2956,6 +2965,15 @@
       "lang": "Undead"
     },
     {
+      "key": "raid.orc_backpack.name",
+      "category": "raids",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Orc Backpack",
+      "pl": "Orc plecak",
+      "lang": "Orc Backpack"
+    },
+    {
       "key": "raid.goblins.name",
       "category": "raids",
       "type": "pl_reference_missing_translation",
@@ -3053,24 +3071,6 @@
       "en": "GULP, GULP, GULP",
       "pl": "ŁUP, ŁUP, ŁUP",
       "lang": "GULP, GULP, GULP"
-    },
-    {
-      "key": "scripts.afk.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "AFK !",
-      "pl": "AFK!",
-      "lang": "AFK !"
-    },
-    {
-      "key": "scripts.banana_chocolate_shake.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Slurp.",
-      "pl": "Siorbać.",
-      "lang": "Slurp."
     },
     {
       "key": "scripts.blessed_steak.say_1",

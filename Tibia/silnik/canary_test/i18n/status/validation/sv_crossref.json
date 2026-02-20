@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T17:24:09.684814Z",
+  "checked_at": "2026-02-20T17:43:44.160987Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -77,6 +77,24 @@
       "lang": "Herbicide"
     },
     {
+      "key": "achievement.63.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Wayfarer",
+      "pl": "Wędrowiec",
+      "lang": "Wayfarer"
+    },
+    {
+      "key": "achievement.65.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rockstar",
+      "pl": "Gwiazda rocka",
+      "lang": "Rockstar"
+    },
+    {
       "key": "achievement.67.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -84,6 +102,15 @@
       "en": "High-Flyer",
       "pl": "I.-Lotnik",
       "lang": "High-Flyer"
+    },
+    {
+      "key": "achievement.71.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Firewalker",
+      "pl": "Chodzący po ogniu",
+      "lang": "Firewalker"
     },
     {
       "key": "achievement.119.name",
@@ -2768,6 +2795,15 @@
       "lang": "Stolen Tome of Portals"
     },
     {
+      "key": "monster.knowledge_raider.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knowledge Raider",
+      "pl": "KNiewledge Raider",
+      "lang": "Knowledge Raider"
+    },
+    {
       "key": "monster.mean_maw.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3371,6 +3407,24 @@
       "lang": "BOQOL\"°"
     },
     {
+      "key": "monster.renegade_quara_constrictor.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a renegade quara constrictor",
+      "pl": "renegat quara constrictor",
+      "lang": "a renegade quara constrictor"
+    },
+    {
+      "key": "monster.renegade_quara_hydromancer.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a renegade quara hydromancer",
+      "pl": "zbuntowany hydromancer Quara",
+      "lang": "a renegade quara hydromancer"
+    },
+    {
       "key": "monster.quara_constrictor_scout.voice_4",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3396,6 +3450,24 @@
       "en": "<blubber>",
       "pl": "<beczeć>",
       "lang": "<blubber>"
+    },
+    {
+      "key": "monster.renegade_quara_mantassin.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a renegade quara mantassin",
+      "pl": "renegata quara mantassina",
+      "lang": "a renegade quara mantassin"
+    },
+    {
+      "key": "monster.renegade_quara_pincher.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "a renegade quara pincher",
+      "pl": "renegata Quara Pincher",
+      "lang": "a renegade quara pincher"
     },
     {
       "key": "monster.amazon.voice_3",
@@ -3540,78 +3612,6 @@
       "en": "Bssssss",
       "pl": "Bsssss",
       "lang": "Bssssss"
-    },
-    {
-      "key": "monster.cliff_strider.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Knorrrr",
-      "pl": "KNierrrr",
-      "lang": "Knorrrr"
-    },
-    {
-      "key": "monster.ironblight.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Yowl!",
-      "pl": "Wycie!",
-      "lang": "Yowl!"
-    },
-    {
-      "key": "monster.dragonling.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "FCHHHHH",
-      "pl": "Fchhhh",
-      "lang": "FCHHHHH"
-    },
-    {
-      "key": "monster.midnight_panther.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Purrrrrrr",
-      "pl": "Mrrrrrrr",
-      "lang": "Purrrrrrr"
-    },
-    {
-      "key": "monster.choking_fear.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "kchh",
-      "pl": "chch",
-      "lang": "kchh"
-    },
-    {
-      "key": "monster.munster.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Meep!",
-      "pl": "Mip!",
-      "lang": "Meep!"
-    },
-    {
-      "key": "monster.breach_brood.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hisss!",
-      "pl": "Syk!",
-      "lang": "Hisss!"
-    },
-    {
-      "key": "monster.instable_breach_brood.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hisss!",
-      "pl": "Syk!",
-      "lang": "Hisss!"
     }
   ],
   "length_ratio_issues": [

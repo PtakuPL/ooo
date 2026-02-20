@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T17:41:02.086872Z",
+  "timestamp": "2026-02-20T17:43:49.542179Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 48,
-  "cache_misses": 4,
-  "file_cache_hits": 1972,
-  "file_cache_misses": 4,
+  "cache_hits": 49,
+  "cache_misses": 3,
+  "file_cache_hits": 1973,
+  "file_cache_misses": 3,
   "langs": {
     "ar": {
       "sig": [
@@ -10422,8 +10422,8 @@
         [
           "achievements.json",
           1,
-          1771604228835276876,
-          125469
+          1771609338541179702,
+          125482
         ],
         [
           "actions.json",
@@ -10654,7 +10654,7 @@
         "scope": "global",
         "total_reference_keys": 53586,
         "translated_keys": 17731,
-        "english_copy_keys": 3791,
+        "english_copy_keys": 3788,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 33.09,
@@ -10669,13 +10669,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1771604228835276876,
-            125469
+            1771609338541179702,
+            125482
           ],
           "row": {
             "total_reference_keys": 1048,
             "translated_keys": 538,
-            "english_copy_keys": 38,
+            "english_copy_keys": 35,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -16071,7 +16071,7 @@
         [
           "questlog.json",
           1,
-          1771325686342596541,
+          1771609286902844342,
           244548
         ],
         [
@@ -16542,7 +16542,7 @@
         "questlog.json": {
           "sig": [
             1,
-            1771325686342596541,
+            1771609286902844342,
             244548
           ],
           "row": {
@@ -26937,7 +26937,7 @@
         [
           "html.json",
           1,
-          1771325818766993530,
+          1771609311287663274,
           105954
         ],
         [
@@ -27280,7 +27280,7 @@
         "html.json": {
           "sig": [
             1,
-            1771325818766993530,
+            1771609311287663274,
             105954
           ],
           "row": {
@@ -27678,7 +27678,7 @@
         [
           "cpp.json",
           1,
-          1771325712386667652,
+          1771609291656792577,
           70126
         ],
         [
@@ -27965,7 +27965,7 @@
         "cpp.json": {
           "sig": [
             1,
-            1771325712386667652,
+            1771609291656792577,
             70126
           ],
           "row": {
@@ -30780,8 +30780,8 @@
         [
           "achievements.json",
           1,
-          1771604310767142415,
-          169039
+          1771609415787398344,
+          169065
         ],
         [
           "actions.json",
@@ -31012,7 +31012,7 @@
         "scope": "global",
         "total_reference_keys": 53586,
         "translated_keys": 24320,
-        "english_copy_keys": 1073,
+        "english_copy_keys": 1070,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 45.38,
@@ -31027,13 +31027,13 @@
         "achievements.json": {
           "sig": [
             1,
-            1771604310767142415,
-            169039
+            1771609415787398344,
+            169065
           ],
           "row": {
             "total_reference_keys": 1048,
             "translated_keys": 752,
-            "english_copy_keys": 34,
+            "english_copy_keys": 31,
             "missing_keys": 0,
             "missing_files": 0
           }

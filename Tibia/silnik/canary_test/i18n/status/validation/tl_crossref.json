@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T17:24:10.522211Z",
+  "checked_at": "2026-02-20T17:43:44.821132Z",
   "issues_total": 401,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -113,6 +113,24 @@
       "lang": "Herbicide"
     },
     {
+      "key": "achievement.63.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Wayfarer",
+      "pl": "Wędrowiec",
+      "lang": "Wayfarer"
+    },
+    {
+      "key": "achievement.65.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rockstar",
+      "pl": "Gwiazda rocka",
+      "lang": "Rockstar"
+    },
+    {
       "key": "achievement.67.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -120,6 +138,15 @@
       "en": "High-Flyer",
       "pl": "I.-Lotnik",
       "lang": "High-Flyer"
+    },
+    {
+      "key": "achievement.71.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Firewalker",
+      "pl": "Chodzący po ogniu",
+      "lang": "Firewalker"
     },
     {
       "key": "achievement.96.name",
@@ -3585,33 +3612,6 @@
       "en": "Sex:",
       "pl": "Seks:",
       "lang": "Sex:"
-    },
-    {
-      "key": "web.tpl.characters.td_5",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level:",
-      "pl": "Poziom:",
-      "lang": "Level:"
-    },
-    {
-      "key": "web.tpl.characters.td_8",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Frags:",
-      "pl": "Fragi:",
-      "lang": "Frags:"
-    },
-    {
-      "key": "web.tpl.characters.td_9",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Residence:",
-      "pl": "Rezydencja:",
-      "lang": "Residence:"
     }
   ],
   "length_ratio_issues": [

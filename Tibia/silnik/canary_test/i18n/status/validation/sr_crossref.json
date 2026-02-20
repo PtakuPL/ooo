@@ -4,11 +4,11 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T17:24:09.382319Z",
-  "issues_total": 65,
+  "checked_at": "2026-02-20T17:43:43.950177Z",
+  "issues_total": 68,
   "issues_by_type": {
     "consistency_in_language": 9,
-    "pl_reference_missing_translation": 28,
+    "pl_reference_missing_translation": 31,
     "length_ratio_crosscheck": 28
   },
   "consistency_issues": [
@@ -148,6 +148,33 @@
     }
   ],
   "pl_reference_issues": [
+    {
+      "key": "achievement.63.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Wayfarer",
+      "pl": "Wędrowiec",
+      "lang": "Wayfarer"
+    },
+    {
+      "key": "achievement.65.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Rockstar",
+      "pl": "Gwiazda rocka",
+      "lang": "Rockstar"
+    },
+    {
+      "key": "achievement.71.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Firewalker",
+      "pl": "Chodzący po ogniu",
+      "lang": "Firewalker"
+    },
     {
       "key": "cpp.forge.cores_one",
       "category": "cpp",
@@ -656,8 +683,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 28,
-    "applied": 0,
+    "attempted": 31,
+    "applied": 3,
     "skipped": 28,
     "errors": 0
   }

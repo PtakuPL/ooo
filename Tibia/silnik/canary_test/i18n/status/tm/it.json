@@ -78118,5 +78118,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:51:38.837271Z"
+  },
+  "data.otservbr.global.npc.gnomewart.L83.317": {
+    "src_hash": "520ec9389f4c5870f288a59e6684e798",
+    "text": "OH! Ciao! Immagino che tu sia qui per il test {endurance}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.902793Z"
+  },
+  "data.otservbr.global.npc.gnomillion.L76.446": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.903346Z"
+  },
+  "data.otservbr.global.npc.gnominer.L57.1605": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Ciao e benvenuto nei Gnomprona Giardini",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.904429Z"
+  },
+  "data.otservbr.global.npc.gnominus.L99.233": {
+    "src_hash": "1696d17e5337bf2b4779c8c335dc7123",
+    "text": "Ciao! Benvenuto nel mio piccolo {tavern}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.904851Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.cathing.L56.931": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Ciao e benvenuto nei Gnomprona Giardini",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.905521Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.gt.m.01.L56.348": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Ciao e benvenuto nei Gnomprona Giardini",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.906053Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.raiders.L56.246": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Ciao e benvenuto nei Gnomprona Giardini",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.906618Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.resonating.L56.174": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Ciao e benvenuto nei Gnomprona Giardini",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.907191Z"
+  },
+  "data.otservbr.global.npc.gnomish.operative.volcano.L56.1367": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Ciao e benvenuto nei Gnomprona Giardini",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.907721Z"
+  },
+  "data.otservbr.global.npc.gnomission.L161.4": {
+    "src_hash": "406af1b405914ad476cd4b1fc2491153",
+    "text": "Ciao |PLAYERNAME|. Probabilmente non vedi l'ora di entrare nel {warzones}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.908305Z"
+  },
+  "data.otservbr.global.npc.gnommander.L174.870": {
+    "src_hash": "0d5102525432f77b580ffc1d90cf9e67",
+    "text": "Ciao! Benvenuti allo spuntone.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.908702Z"
+  },
+  "data.otservbr.global.npc.gnomole.L77.803": {
+    "src_hash": "030191415e3db032c8d20aab65d070bc",
+    "text": "Ciao! Sono pronto a informarti con {tactical} consigli.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.909135Z"
+  },
+  "data.otservbr.global.npc.gnomole.L78.804": {
+    "src_hash": "62b703e7a17bc181a01c27654db49179",
+    "text": "Arrivederci e abbi cura di te!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.909515Z"
+  },
+  "data.otservbr.global.npc.gnomus.L335.1016": {
+    "src_hash": "e69ed03192654cd9aa88eae8b3814f63",
+    "text": "Saluti, membro della Brigata Bigfoot. Ci farebbe davvero piacere un po' di {help} da parte tua in questo momento. Dovresti dimostrare {worthy} alla nostra alleanza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.910541Z"
+  },
+  "data.otservbr.global.npc.gorn.L109.58": {
+    "src_hash": "2c0de480c3b051be4c0d710cb7e77aef",
+    "text": "Oh, per favore entra, |PLAYERNAME|. Di che cosa hai bisogno?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.911238Z"
+  },
+  "data.otservbr.global.npc.gorn.L112.61": {
+    "src_hash": "89273fe355e78aabc6426673feb65476",
+    "text": "Naturalmente, basta sfogliare la mia merce. {Footballs} devono essere acquistati separatamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.912187Z"
+  },
+  "data.otservbr.global.npc.gregor.L347.159": {
+    "src_hash": "c38b0cd1026d39fd6896d6be648916d6",
+    "text": "Saluti, |PLAYERNAME|. Cosa vuoi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:20.913033Z"
   }
 }

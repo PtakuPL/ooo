@@ -68558,5 +68558,205 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:51:31.922965Z"
+  },
+  "data.otservbr.global.scripts.quests.rotten.blood.quest.actions.sacrifice.L11.2057": {
+    "src_hash": "8bf5443d627c50bb0f553b965975e833",
+    "text": "Găsiți păstrătorul lacrimilor sanguine și oferă fluidele sale vieți stăpânului sanguin al acestui tărâm.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.890922Z"
+  },
+  "data.otservbr.global.scripts.quests.rotten.blood.quest.actions.sacrifice.L16.2058": {
+    "src_hash": "99e8b14525a94f991e0fc49346b3efae",
+    "text": "Întărește-ți sacrificiul pentru o lacrimă de sânge pentru stăpânul sanguin al acestui tărâm pentru a pecetlui acest comerț.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.891669Z"
+  },
+  "data.otservbr.global.scripts.quests.rotten.blood.quest.actions.sacrifice.L23.2059": {
+    "src_hash": "1411681fb4a9149426cbda58a4895f5b",
+    "text": "Sacrificiul tău a fost acceptat de stăpânul sangvin al acestui tărâm.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.892191Z"
+  },
+  "data.otservbr.global.scripts.quests.rotten.blood.quest.actions.sacrifice.L25.2060": {
+    "src_hash": "9437e8d85edc3490d14156aad4fc9cfe",
+    "text": "Sacrificiile voastre au fost acceptate de stăpânul sangvin al acestui tărâm. Ieși și îngrozi rădăcina ta cu apele vieții.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.892884Z"
+  },
+  "data.otservbr.global.scripts.quests.rotten.blood.quest.actions.sacrifice.L6.2056": {
+    "src_hash": "95b20291f7eaa52a1751aa57227581e6",
+    "text": "Ai deja acces.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.903647Z"
+  },
+  "data.otservbr.global.scripts.quests.soulpit.exalted.core.L78.2001": {
+    "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+    "text": "Nu ai suficientă capacitate.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.926816Z"
+  },
+  "data.otservbr.global.scripts.quests.soulpit.soul.prism.L87.1994": {
+    "src_hash": "e8171b1e5ecaea0e0ed448151b738c8b",
+    "text": "Nu ai suficientă capacitate.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.927812Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.actions.ghost.detector.L91.1898": {
+    "src_hash": "1fb08088101b8002a91bbe2c8648b740",
+    "text": "Raportați sarcina lui Gnomilly.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.929077Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.actions.nests.L15.1905": {
+    "src_hash": "fef363bec76627c1d876f7e952b30be4",
+    "text": "Ai distrus un cuib de monstru.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.929540Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.actions.spirit.shovel.L33.1892": {
+    "src_hash": "1fb08088101b8002a91bbe2c8648b740",
+    "text": "Raportați sarcina lui Gnomilly.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.930367Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.actions.thermometer.L29.1893": {
+    "src_hash": "03de06efaeede3f79178d8fca5e856bd",
+    "text": "Uf! Era atât de fierbinte, a topit termometrul! Cel puțin ai găsit punctul fierbinte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.931014Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.actions.thermometer.L31.1894": {
+    "src_hash": "5b0988e5f853d415fc34053cc10feb86",
+    "text": "Acesta nu este punctul fierbinte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.931377Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.actions.tuning.fork.L16.1895": {
+    "src_hash": "1fb08088101b8002a91bbe2c8648b740",
+    "text": "Raportați sarcina lui Gnomilly.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.931754Z"
+  },
+  "data.otservbr.global.scripts.quests.spike.tasks.creaturescripts.upper.spike.kill.L19.1897": {
+    "src_hash": "1fb08088101b8002a91bbe2c8648b740",
+    "text": "Raportați sarcina lui Gnomilly.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.932766Z"
+  },
+  "data.otservbr.global.scripts.quests.the.ancient.tombs.actions.oasis.lever.door.L18.1884": {
+    "src_hash": "7bbc4c59760d2bcf1842a53690ee5564",
+    "text": "Mai întâi trebuie să găsiți Morcovul sub una dintre cele trei pălării pentru a obține accesul!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.934053Z"
+  },
+  "data.otservbr.global.scripts.quests.the.ancient.tombs.actions.oasis.lever.door.L32.1885": {
+    "src_hash": "e510f9518fd800448511537270d4eee8",
+    "text": "Ai găsit morcovul! Ușa este deschisă!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.934471Z"
+  },
+  "data.otservbr.global.scripts.quests.the.ancient.tombs.actions.oasis.lever.door.L43.1886": {
+    "src_hash": "c58d014e2cdeae20b0f4d252b2a765ef",
+    "text": "Ai ghicit greșit! Ia asta! Morcovul a schimbat acum Pălăria!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.935096Z"
+  },
+  "data.otservbr.global.scripts.quests.the.ancient.tombs.actions.ruins.instruments.L16.1889": {
+    "src_hash": "483049a99075a7682976f6b44fef6bca",
+    "text": "Ai jucat greșit, acum trebuie să începi din nou cu primul!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.935596Z"
+  },
+  "data.otservbr.global.scripts.quests.the.ancient.tombs.actions.ruins.instruments.L31.1890": {
+    "src_hash": "bfc5a2b8e73ee0b52d9a03d612b45930",
+    "text": "Le-ai jucat în ordinea corectă și ai avut acces prin ușă!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.936080Z"
+  },
+  "data.otservbr.global.scripts.quests.the.ancient.tombs.actions.ruins.instruments.L38.1891": {
+    "src_hash": "483049a99075a7682976f6b44fef6bca",
+    "text": "Ai jucat greșit, acum trebuie să începi din nou cu primul!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.936547Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.magicalPaint.L24.1837": {
+    "src_hash": "f895fc31c4c101ca64377c59aea81108",
+    "text": "Pictezi cu grijă peste imagine. Pe măsură ce faci asta, pictura plată se adâncește. Acum arată ca o cameră în care poți intra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.950389Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.magicalPaint.L38.1838": {
+    "src_hash": "43ea929b13e66da7b49c83f9670973a2",
+    "text": "Acesta nu mai este o lucrare normală. Folosind vopsea magică, l-ați transformat într-un portal și îl puteți trece cu ușurință.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.951062Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.oldLock.L15.1845": {
+    "src_hash": "7a6d23bac82ce5906f6cb32c76cc2d8d",
+    "text": "Insezi vechea broasca in usa. Se potrivește perfect.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.951643Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.questDoors.L115.1860": {
+    "src_hash": "d4968acad5491a047d752050ab450ef9",
+    "text": "Pe măsură ce Unguentul Medusei își face efectul, ușa este nepietrificată. Îl poți folosi acum.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.952548Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.questDoors.L128.1861": {
+    "src_hash": "7b63561c09cf1dac7914f0e9ecab30b9",
+    "text": "Încuietoarea acestei uși lipsește. Poate găsiți undeva un lacăt potrivit?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:56:30.953123Z"
   }
 }

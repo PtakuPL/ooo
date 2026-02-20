@@ -1,17 +1,16 @@
 {
-  "timestamp": "2026-02-20T17:55:58.668012Z",
-  "cycle_counter": 5899,
-  "last_target_key": "es:raids.json",
-  "last_pending_total": 23,
-  "last_tier": 1,
-  "last_cat_priority": 8,
+  "timestamp": "2026-02-20T17:56:28.506261Z",
+  "cycle_counter": 5902,
+  "last_target_key": "ro:server.json",
+  "last_pending_total": 1204,
+  "last_tier": 2,
+  "last_cat_priority": 3,
   "candidates_count": 183,
-  "active_candidates_count": 176,
+  "active_candidates_count": 177,
   "skipped_backoff": 5,
-  "skipped_guard_fail": 2,
+  "skipped_guard_fail": 1,
   "guard_fail_blacklist": {
-    "pl:spells.json": 5902,
-    "ro:monsters.json": 5900
+    "ro:monsters.json": 5910
   },
   "tier_config": {
     "tier1": [
@@ -37,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 28,
+  "cache_cycle": 29,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,

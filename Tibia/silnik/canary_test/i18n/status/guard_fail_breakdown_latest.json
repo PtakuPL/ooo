@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-02-20T17:45:46.044684Z",
-  "window_start_utc": "2026-02-20T16:45:45.430112Z",
-  "window_end_utc": "2026-02-20T17:45:45.430112Z",
+  "timestamp": "2026-02-20T17:46:24.275825Z",
+  "window_start_utc": "2026-02-20T16:46:23.652478Z",
+  "window_end_utc": "2026-02-20T17:46:23.652478Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 295,
-  "rejected_entries_raw": 539,
-  "suspicious_entries": 4207,
-  "suspicious_entries_raw": 20694,
-  "guard_fail_entries": 101,
-  "guard_fail_sum": 3810,
+  "rejected_entries": 296,
+  "rejected_entries_raw": 532,
+  "suspicious_entries": 4214,
+  "suspicious_entries_raw": 20702,
+  "guard_fail_entries": 103,
+  "guard_fail_sum": 3808,
   "by_type": {
     "identical_to_en": 240,
-    "mixed_language": 31,
     "word_salad": 8,
+    "mixed_language": 32,
     "contains_tibia_proper_noun": 15,
     "mixed_scripts": 13,
     "cyrillic_latin_mix": 13,
     "fx_token": 3
   },
   "by_source": {
-    "google_translate": 295
+    "google_translate": 296
   },
   "by_language": {
     "sv": 13,
@@ -32,7 +32,7 @@
     "ro": 115,
     "it": 49,
     "ru": 13,
-    "pl": 61
+    "pl": 62
   },
   "by_category": {
     "server.json": 16,
@@ -48,11 +48,12 @@
     "client.json": 4,
     "cpp.json": 6,
     "otclient_data.json": 1,
-    "html.json": 18
+    "html.json": 18,
+    "php.json": 1
   },
   "by_severity": {
     "CRITICAL": 248,
-    "HIGH": 47
+    "HIGH": 48
   },
   "top_types": [
     {
@@ -61,7 +62,7 @@
     },
     {
       "type": "mixed_language",
-      "count": 31
+      "count": 32
     },
     {
       "type": "contains_tibia_proper_noun",
@@ -217,6 +218,13 @@
       }
     },
     {
+      "key": "data.otservbr.global.npc.edala.L72.181",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
       "key": "data.otservbr.global.npc.anerui.L71.1487",
       "count": 2,
       "types": {
@@ -225,13 +233,6 @@
     },
     {
       "key": "data.otservbr.global.npc.brasith.L59.1211",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.edala.L72.181",
       "count": 2,
       "types": {
         "identical_to_en": 2

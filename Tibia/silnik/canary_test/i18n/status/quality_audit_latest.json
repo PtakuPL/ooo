@@ -1,102 +1,17 @@
 {
-  "timestamp": "2026-02-20T17:45:41.293970Z",
+  "timestamp": "2026-02-20T17:46:19.195209Z",
   "checked_entries": 100,
-  "issues_found": 28,
+  "issues_found": 16,
   "issues_by_type": {
-    "identical_to_en_exempt": 27,
-    "identical_to_en": 12,
+    "identical_to_en_exempt": 18,
     "artifact_token": 16,
-    "suspicious_log_high": 63,
+    "suspicious_log_high": 62,
     "suspicious_log_medium": 1,
-    "suspicious_log_critical": 41,
-    "suspicious_rejected_critical": 161,
-    "suspicious_rejected_high": 21
+    "suspicious_log_critical": 43,
+    "suspicious_rejected_critical": 160,
+    "suspicious_rejected_high": 22
   },
   "issues": [
-    {
-      "key": "questlog.quest_11.mission_10.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Carniphilas",
-      "translated": "Paw and Fur: Carniphilas"
-    },
-    {
-      "key": "questlog.quest_11.mission_12.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Mammoths",
-      "translated": "Paw and Fur: Mammoths"
-    },
-    {
-      "key": "questlog.quest_11.mission_13.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Gnarlhounds",
-      "translated": "Paw and Fur: Gnarlhounds"
-    },
-    {
-      "key": "questlog.quest_11.mission_14.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Terramites",
-      "translated": "Paw and Fur: Terramites"
-    },
-    {
-      "key": "questlog.quest_11.mission_15.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Apes",
-      "translated": "Paw and Fur: Apes"
-    },
-    {
-      "key": "questlog.quest_11.mission_17.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Gargoyles",
-      "translated": "Paw and Fur: Gargoyles"
-    },
-    {
-      "key": "questlog.quest_11.mission_18.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Ice Golems",
-      "translated": "Paw and Fur: Ice Golems"
-    },
-    {
-      "key": "questlog.quest_11.mission_22.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Wyverns",
-      "translated": "Paw and Fur: Wyverns"
-    },
-    {
-      "key": "questlog.quest_11.mission_26.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Bonebeasts",
-      "translated": "Paw and Fur: Bonebeasts"
-    },
-    {
-      "key": "questlog.quest_11.mission_31.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Werewolves",
-      "translated": "Paw and Fur: Werewolves"
-    },
-    {
-      "key": "questlog.quest_11.mission_32.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Nightmares",
-      "translated": "Paw and Fur: Nightmares"
-    },
-    {
-      "key": "questlog.quest_11.mission_33.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Hellspawns",
-      "translated": "Paw and Fur: Hellspawns"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

@@ -1,15 +1,16 @@
 {
-  "timestamp": "2026-02-20T19:49:17.764883Z",
+  "timestamp": "2026-02-20T19:50:20.312196Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 2,
-  "warnings_count": 12,
+  "warnings_count": 13,
   "ok_count": 10,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=56671 rate=486.613% window=6.0h top_lang=ro:24109 per_lang=[ro:24109(1674.236%/critical),es:13888(412.842%/critical),ru:8774(379.334%/critical),pl:6713(516.782%/critical),it:1967(103.799%/critical)] per_domain=[items.json:36130(1747.099%/critical),npc.json:9998(195.273%/critical),monsters.json:8755(363.58%/critical),server.json:533(84.738%/warning),spells.json:387(460.714%/critical)]",
-    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5613.4 cycle_delta=5352 best_quality_drop=0.000% reason=active_time_without_quality_drop"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=56749 rate=486.239% window=6.0h top_lang=ro:24109 per_lang=[ro:24109(1674.236%/critical),es:13966(412.098%/critical),ru:8774(379.334%/critical),pl:6713(516.782%/critical),it:1967(103.799%/critical)] per_domain=[items.json:36130(1747.099%/critical),npc.json:10069(195.781%/critical),monsters.json:8755(363.58%/critical),server.json:540(85.578%/critical),spells.json:387(460.714%/critical)]",
+    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5614.5 cycle_delta=5354 best_quality_drop=0.000% reason=active_time_without_quality_drop"
   ],
   "warnings": [
+    "BLACKLISTED_TARGET: es:server.json ma 6187 guard_fail w blackliście",
     "WORKER_TRANSLATION_CONTRACT_WARNING: pid=114825 translations_only=1 use_gt=1 no_git=0 priority_gate=1 priority_langs=[pl,es,ru,ro,it,sr,sv] pending=[pl,es,ru,ro,it,sr,sv] reason=priority_langs_not_es_pl",
     "GUARDIAN_DEGRADED: guardian raportuje degraded",
     "LANG_PARITY_WARN: cs has 49655 [EN]-backlog after 155h (should be ≤5000)",
@@ -24,16 +25,16 @@
     "LANG_PARITY_WARN: tr has 48694 [EN]-backlog after 155h (should be ≤5000)"
   ],
   "ok": [
-    "heartbeat_fresh (19s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (13s)",
-    "guard_report_fresh (12s)",
-    "dispatch_fresh (11s)",
+    "heartbeat_fresh (41s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (36s)",
+    "guard_report_fresh (4s)",
+    "dispatch_fresh (2s)",
     "worker_pid_alive (114825)",
-    "worker_subprocess_observed (main=114825 matching=4 extras=3 desc=3 foreign=0 oldest_desc=4s oldest_foreign=0s status=extra_descendants_detected)",
-    "queue_freshness_ok (5s, WARN>900s CRIT>1800s)",
+    "worker_subprocess_observed (main=114825 matching=4 extras=3 desc=3 foreign=0 oldest_desc=2s oldest_foreign=0s status=extra_descendants_detected)",
+    "queue_freshness_ok (67s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
     "forced_cmd_sla_ok (samples=0 sla_target=45s p95_roundtrip=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0)",
-    "repair_tuning_active (samples_2h=52)"
+    "repair_tuning_active (samples_2h=53)"
   ],
   "metrics_drift": {
     "available": true,
@@ -68,8 +69,8 @@
       "sr",
       "sv"
     ],
-    "active_minutes": 5613.445,
-    "cycle_delta": 5352,
+    "active_minutes": 5614.478,
+    "cycle_delta": 5354,
     "best_quality_drop_pct": 0.0,
     "thresholds": {
       "max_active_minutes": 1440.0,
@@ -109,26 +110,26 @@
     "main_pid": 114825,
     "matched_pids": [
       114825,
-      308138,
-      308178,
-      308180
+      309452,
+      309465,
+      309467
     ],
     "extra_pids": [
-      308138,
-      308178,
-      308180
+      309452,
+      309465,
+      309467
     ],
     "descendant_extra_pids": [
-      308138,
-      308178,
-      308180
+      309452,
+      309465,
+      309467
     ],
     "foreign_extra_pids": [],
     "total_matching": 4,
     "extra_count": 3,
     "descendant_extra_count": 3,
     "foreign_extra_count": 0,
-    "oldest_descendant_age_s": 4,
+    "oldest_descendant_age_s": 2,
     "oldest_foreign_age_s": 0,
     "warn_persist_seconds": 900,
     "critical_persist_seconds": 1800

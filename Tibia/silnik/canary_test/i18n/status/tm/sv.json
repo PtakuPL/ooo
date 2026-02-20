@@ -33678,5 +33678,301 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:11:05.728051Z"
+  },
+  "npc.mortimer.say_19": {
+    "src_hash": "d2ef0a97c44d4bfe0a19b1453939c6c1",
+    "text": "Använd den här botanikerns behållare på en häxa kittel för att samla ett prov åt oss. Ta med den här och rapportera om din växtsamling.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.768474Z"
+  },
+  "npc.mortimer.say_2": {
+    "src_hash": "4b60bc43dabd9b31255e05f2ed853731",
+    "text": "Åh ja, ett intressant ämne. Vi hade livliga diskussioner om denna upptäckt. Men vad är det du vill ha?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.769214Z"
+  },
+  "npc.mortimer.say_20": {
+    "src_hash": "5b714d0c80a6c73bd18e2df74f730aff",
+    "text": "Fick du provet på häxgrytan vi letar efter?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.769680Z"
+  },
+  "npc.mortimer.say_21": {
+    "src_hash": "45aced636b00875c88331e566ef329fe",
+    "text": "Använd den här botanikerns behållare på en gigantisk djungelros för att få ett prov åt oss. Ta med den här och rapportera om din växtsamling.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.770474Z"
+  },
+  "npc.mortimer.say_22": {
+    "src_hash": "c2d1281ef23ec34e1af4f0f25617ec8f",
+    "text": "Fick du provet på den gigantiska djungelrosen vi letar efter?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.770974Z"
+  },
+  "npc.mortimer.say_23": {
+    "src_hash": "4371136e87655e87a08b2762f638571f",
+    "text": "Upptäckarsällskapet skulle vilja förvärva en gammal urna som är någon slags relik till ödlfolket i Tiquanda. Vill du acceptera detta uppdrag?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.771853Z"
+  },
+  "npc.mortimer.say_24": {
+    "src_hash": "6d81757f3a07c512f691dc53e8f417b5",
+    "text": "Lyckades du få tag i den antika urnan?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.772336Z"
+  },
+  "npc.mortimer.say_25": {
+    "src_hash": "d01610bec3f9aa1d641a66728fdba293",
+    "text": "Har du hittat något bevis på att pyramiden byggdes av bonelords?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.772826Z"
+  },
+  "npc.mortimer.say_26": {
+    "src_hash": "4da05c5cff71811eafc918ece4baf9e0",
+    "text": "Har du skaffat lite av orchpulvret?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.773198Z"
+  },
+  "npc.mortimer.say_27": {
+    "src_hash": "d21dd9e4c1f95849b7d472d91b0718db",
+    "text": "Skaffade du ett exemplar av 'Songs of the Forest' åt oss?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.773696Z"
+  },
+  "npc.mortimer.say_28": {
+    "src_hash": "61e73ea9002abf2e5503325e2fba6707",
+    "text": "Kunde du skaffa dig en minnessten för vårt samhälle?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.774131Z"
+  },
+  "npc.mortimer.say_29": {
+    "src_hash": "b9664a6fed43fe030bbffde8c246b60a",
+    "text": "Har du skapat en kopia av de gamla runorna som efterfrågat?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.774721Z"
+  },
+  "npc.mortimer.say_30": {
+    "src_hash": "3c7e67a8006b35c46056046ea55303d4",
+    "text": "Vi ska se om du klarar av denna enkla uppgift. Hämta hackan från Uzgod i Kazordoon och ta med den till en av våra baser. Rapportera där om hackan.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.775579Z"
+  },
+  "npc.mortimer.say_31": {
+    "src_hash": "629d910af5dde1cd49ef6668c71f4629",
+    "text": "Precis i tid. Tyvärr finns det inte mycket is över men det räcker. Tack igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.776103Z"
+  },
+  "npc.mortimer.say_32": {
+    "src_hash": "75e23fa5e7ea295bab95f02fcb87da94",
+    "text": "*suck* Jag tror att det är dags att ge dig en ny chans att få den isen. Skynda dig den här gången.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.776711Z"
+  },
+  "npc.mortimer.say_33": {
+    "src_hash": "1d5709217f20cd4e7fa2c8d7790602cd",
+    "text": "Lite misshandlad men det räcker. Tack! Om du tror att du är redo, be om en annan fjärilsjakt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.777414Z"
+  },
+  "npc.mortimer.say_34": {
+    "src_hash": "1d5709217f20cd4e7fa2c8d7790602cd",
+    "text": "Lite misshandlad men det räcker. Tack! Om du tror att du är redo, be om en annan fjärilsjakt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.778006Z"
+  },
+  "npc.mortimer.say_35": {
+    "src_hash": "cf2b7509a49a476394c81bb35b756343",
+    "text": "Det är en extraordinär art du har tagit med dig. Tack! Det var den sista fjärilen vi behövde.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.778578Z"
+  },
+  "npc.mortimer.say_36": {
+    "src_hash": "5314393005ceda61c12e558cfde8584b",
+    "text": "Bra! Här tar den här botanikerns behållare. Använd den på en växt med djungelklockor för att samla ett prov åt oss. Rapportera om din växtsamling när du har lyckats.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.779334Z"
+  },
+  "npc.mortimer.say_37": {
+    "src_hash": "d409060cae1e1afa8ed6fda102390165",
+    "text": "Jag förstår. Det verkar som att du har ett ganska användbart exempel av ren tur. Tack! Säg bara till när du är redo att fortsätta med växtinsamlingen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.780054Z"
+  },
+  "npc.mortimer.say_38": {
+    "src_hash": "64024d3e00566b410b05cad88bba44b8",
+    "text": "Ah, äntligen. Jag började undra vad som tog dig så lång tid. Men tack! Ännu ett fint prov, faktiskt. Säg bara till när du är redo att fortsätta med växtinsamlingen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.780962Z"
+  },
+  "npc.mortimer.say_39": {
+    "src_hash": "a01623d80f525791fd50f405b01080c3",
+    "text": "Vilket härligt prov! Med det har du avslutat dina växtinsamlingsuppdrag.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.781508Z"
+  },
+  "npc.mortimer.say_40": {
+    "src_hash": "7e9f05215be2c5facc7b1eb4f193fe81",
+    "text": "Ja, det är den prisade reliken vi har letat efter så länge. Du gjorde ett bra jobb, tack.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.782083Z"
+  },
+  "npc.mortimer.say_41": {
+    "src_hash": "bde80b5801b93e2a562d7032d2a75766",
+    "text": "Du gjorde det! Excellent! Den vetenskapliga världen kommer att skakas av denna upptäckt!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.782633Z"
+  },
+  "npc.mortimer.say_42": {
+    "src_hash": "5b68986936d2cf2f19e239f5d5271b7c",
+    "text": "Förstod du verkligen det? Underbart! Tack för dina ansträngningar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.783228Z"
+  },
+  "npc.mortimer.say_43": {
+    "src_hash": "5582d4cc8e410855776de910e64d2d99",
+    "text": "Excellent. Det här uppdraget är enkelt men inte desto mindre viktigt. Res till Ab'Dendriel och hämta boken.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.783889Z"
+  },
+  "npc.mortimer.say_44": {
+    "src_hash": "3fcee0d6d20b6feacf3d48a381273654",
+    "text": "Låt mig ta en titt! Ja, det var det vi ville. En kopia av 'Songs of the Forest'. Jag kommer inte att ställa några frågor om de där blodfläckarna.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.784614Z"
+  },
+  "npc.mortimer.say_45": {
+    "src_hash": "752ad02c95663065643ddb2cbb0eba6f",
+    "text": "I ruinerna av nordvästra Edron bör du kunna hitta en minnessten. Lycka till.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.785208Z"
+  },
+  "npc.mortimer.say_46": {
+    "src_hash": "8c4f1ba35fd944537024447060580139",
+    "text": "En felfri minnessten! Otrolig! Det kommer att ta år till och med att ta reda på hur det fungerar men vilken möjlighet för vetenskapen, tack!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.785904Z"
+  },
+  "npc.mortimer.say_47": {
+    "src_hash": "ebcb9e8bd25ae349497b3f6dcebbbe0d",
+    "text": "Excellent! Här, ta detta kalkerpapper och använd det på föremålet du hittar där för att skapa en kopia av de gamla runorna.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.786730Z"
+  },
+  "npc.mortimer.say_48": {
+    "src_hash": "5422b9d288accc73fd08f3e84df0b995",
+    "text": "Det är lite skrynkligt men det går. Tack igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.787180Z"
+  },
+  "npc.mortimer.say_49": {
+    "src_hash": "76dcfff8b34ee35c2095bc5bd09e09a3",
+    "text": "Bra! Ta den här behållaren och använd den på ett spöke som nyligen dödades. Återvänd med den insamlade ektoplasman och ge mig den där behållaren ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.787917Z"
+  },
+  "npc.mortimer.say_50": {
+    "src_hash": "fbce7abbb475bf041704b5f202089ded",
+    "text": "Tappa inte bort behållaren. De är dyra!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.788395Z"
+  },
+  "npc.mortimer.say_51": {
+    "src_hash": "b9af714075d6eefefd238229b94c4824",
+    "text": "Puh, jag hade ingen aning om att ektoplasma skulle lukta det... åh, det är du, ja, förlåt. Tack för ektoplasman.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.789106Z"
+  },
+  "npc.mortimer.say_53": {
+    "src_hash": "61aecb7779029ce6572c4444b2f2f841",
+    "text": "Stackars Ratha. Tack för att du lämnade tillbaka denna skalle till samhället. Vi kommer att se till en hedervärd begravning av Ratha.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.789800Z"
+  },
+  "npc.mortimer.say_54": {
+    "src_hash": "e9a092e7ae087d1047467afc9d84f3c2",
+    "text": "Återkom när du hittar någon information.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.790189Z"
+  },
+  "npc.mortimer.say_55": {
+    "src_hash": "8cda3e27bec6c10527fa23bdbd4612fe",
+    "text": "Underbar! Du tog med dig en gigantisk smedhammare till upptäcktsresandet!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:20:31.790692Z"
   }
 }

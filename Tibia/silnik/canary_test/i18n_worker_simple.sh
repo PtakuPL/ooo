@@ -107,7 +107,7 @@ GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT="${GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT
 
 # Nowe opcje (Agent 2)
 NO_GIT=false                # Flaga --no-git: wyłącza git add/commit/push
-TRANSLATE_LIMIT=0           # --translate-limit N: max kluczy do przetłumaczenia na cykl (0=brak limitu)
+TRANSLATE_LIMIT=30          # --translate-limit N: bezpieczny fast-lane (domyślnie 30)
 TRANSLATIONS_ONLY=false     # --translations-only: tylko tłumaczenia, bez migracji kodu
 TRANSLATIONS_STRICT=false   # Tryb strict: zero nowych kluczy, tylko istniejące wpisy do tłumaczenia
 USE_GOOGLE_TRANSLATE=false  # --use-gt: używaj Google Translate jako fallback po słownikach
@@ -121,6 +121,9 @@ GT_CLOUD_DELAY=0.3          # delay dla Cloud API (mniejszy — oficjalne API)
 GT_BATCH_TIMEOUT=18         # timeout (s) na pojedynczy request translate_batch
 GT_SINGLE_TIMEOUT=7         # timeout (s) na pojedynczy request translate
 FORCED_AUTO_FAST_LANE_MAX_LIMIT="${FORCED_AUTO_FAST_LANE_MAX_LIMIT:-30}"  # AUTO N<=X używa operator fast-lane
+FAST_LANE_SAFE_MIN="${FAST_LANE_SAFE_MIN:-25}"                            # bezpieczne minimum limitu AUTO
+FAST_LANE_SAFE_MAX="${FAST_LANE_SAFE_MAX:-30}"                            # bezpieczne maksimum limitu AUTO
+FAST_LANE_SAFE_DEFAULT="${FAST_LANE_SAFE_DEFAULT:-30}"                    # domyślny limit AUTO
 CROSSREF_AUTO_FIX=false     # --auto-fix-crossref: faza 4.5 (Tryb 2), domyślnie OFF
 CROSSREF_AUTO_FIX_LIMIT=30  # maksymalna liczba auto-fix na język / przebieg walidacji
 PINNED_AUTO_LANG=""        # SWITCH:<lang> - przypięty język AUTO_TRANSLATE między cyklami
@@ -3665,6 +3668,34 @@ _hourly_suspicious = len(strict_susp_entries)
 _hourly_gt_translated = int(strict_window_payload.get("gt_translated", 0) or 0)
 _hourly_gt_active = bool(strict_window_payload.get("gt_active", False))
 _hourly_gt_status = "✅ TAK" if _hourly_gt_active else "❌ NIE"
+_limit_checklist_status = "-"
+_limit_checklist_detail = "-"
+try:
+    _lc_path = os.path.join(status_dir, "translate_limit_checklist.json")
+    if os.path.exists(_lc_path):
+        with open(_lc_path, "r", encoding="utf-8") as _lcf:
+            _lc = json.load(_lcf)
+        if isinstance(_lc, dict):
+            _lc_done = int(_lc.get("checks_done", 0) or 0)
+            _lc_req = int(_lc.get("checks_required", 3) or 3)
+            _lc_eff = int(_lc.get("effective_limit", 0) or 0)
+            _lc_state = str(_lc.get("status", "-") or "-")
+            _limit_checklist_status = f"{_lc_done}/{_lc_req} ({_lc_state})"
+            _recent_checks = _lc.get("checks", []) if isinstance(_lc.get("checks", []), list) else []
+            if _recent_checks:
+                _last = _recent_checks[-3:]
+                _parts = []
+                for _it in _last:
+                    if not isinstance(_it, dict):
+                        continue
+                    _parts.append(
+                        f"C{int(_it.get('cycle', 0) or 0)}: t={int(_it.get('translated', 0) or 0)}, gf={int(_it.get('guard_fail', 0) or 0)}, skip={int(_it.get('strict_skipped_done', 0) or 0)}"
+                    )
+                _limit_checklist_detail = f"limit={_lc_eff}; " + (" | ".join(_parts) if _parts else "-")
+            else:
+                _limit_checklist_detail = f"limit={_lc_eff}; oczekiwanie na wpisy guard"
+except Exception:
+    pass
 
 # ============ E1-E4: ETA + paski postępu per język ============
 _eta_rows = []
@@ -3991,6 +4022,8 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 | ⚠️ Podejrzane | {_hourly_suspicious} |
 | 🌐 GT aktywny (1h) | {_hourly_gt_status} |
 | 🔤 GT tłumaczeń (1h) | {_hourly_gt_translated} |
+| ✅ Checklist limitu (3 cykle) | {_limit_checklist_status} |
+| 🧪 Ostatnie checki limitu | {_limit_checklist_detail} |
 
 ---
 
@@ -16354,6 +16387,156 @@ PYGUARD
 # Edytuj plik worker_config.json aby zmienić zachowanie workera w locie.
 WORKER_CONFIG_FILE="worker_config.json"
 
+normalize_fast_lane_bounds() {
+    case "${FAST_LANE_SAFE_MIN:-}" in ''|*[!0-9]*) FAST_LANE_SAFE_MIN=25 ;; esac
+    case "${FAST_LANE_SAFE_MAX:-}" in ''|*[!0-9]*) FAST_LANE_SAFE_MAX=30 ;; esac
+    case "${FAST_LANE_SAFE_DEFAULT:-}" in ''|*[!0-9]*) FAST_LANE_SAFE_DEFAULT=30 ;; esac
+    if [ "$FAST_LANE_SAFE_MIN" -lt 1 ] 2>/dev/null; then
+        FAST_LANE_SAFE_MIN=1
+    fi
+    if [ "$FAST_LANE_SAFE_MAX" -lt "$FAST_LANE_SAFE_MIN" ] 2>/dev/null; then
+        FAST_LANE_SAFE_MAX="$FAST_LANE_SAFE_MIN"
+    fi
+    if [ "$FAST_LANE_SAFE_DEFAULT" -lt "$FAST_LANE_SAFE_MIN" ] 2>/dev/null; then
+        FAST_LANE_SAFE_DEFAULT="$FAST_LANE_SAFE_MIN"
+    fi
+    if [ "$FAST_LANE_SAFE_DEFAULT" -gt "$FAST_LANE_SAFE_MAX" ] 2>/dev/null; then
+        FAST_LANE_SAFE_DEFAULT="$FAST_LANE_SAFE_MAX"
+    fi
+}
+
+clamp_translate_limit_fast_lane() {
+    local value="${1:-}"
+    normalize_fast_lane_bounds
+    case "$value" in
+        ''|*[!0-9]*)
+            echo "$FAST_LANE_SAFE_DEFAULT"
+            return 0
+            ;;
+    esac
+    if [ "$value" -lt "$FAST_LANE_SAFE_MIN" ] 2>/dev/null; then
+        echo "$FAST_LANE_SAFE_MIN"
+    elif [ "$value" -gt "$FAST_LANE_SAFE_MAX" ] 2>/dev/null; then
+        echo "$FAST_LANE_SAFE_MAX"
+    else
+        echo "$value"
+    fi
+}
+
+start_translate_limit_checklist() {
+    local requested_limit="${1:-}"
+    local effective_limit="${2:-}"
+    local cycle="${3:-0}"
+    normalize_fast_lane_bounds
+    mkdir -p "$STATUS_DIR" 2>/dev/null || true
+    python3 - "$STATUS_DIR/translate_limit_checklist.json" "$requested_limit" "$effective_limit" "$FAST_LANE_SAFE_MIN" "$FAST_LANE_SAFE_MAX" "$cycle" << 'PYLIMITSTART'
+import json
+import os
+import sys
+from datetime import datetime, timezone
+
+path = sys.argv[1]
+requested = sys.argv[2]
+effective = int(sys.argv[3] or 0)
+safe_min = int(sys.argv[4] or 25)
+safe_max = int(sys.argv[5] or 30)
+cycle = int(sys.argv[6] or 0)
+
+payload = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "requested_limit": requested,
+    "effective_limit": effective,
+    "safe_range": {"min": safe_min, "max": safe_max},
+    "start_cycle": cycle,
+    "checks_required": 3,
+    "checks_done": 0,
+    "status": "in_progress",
+    "checks": [],
+}
+tmp = path + ".tmp"
+with open(tmp, "w", encoding="utf-8") as f:
+    json.dump(payload, f, indent=2, ensure_ascii=False)
+os.replace(tmp, path)
+print(f"CHECKLIST_STARTED cycle={cycle} limit={effective} requested={requested}")
+PYLIMITSTART
+}
+
+update_translate_limit_checklist_progress() {
+    local cycle="${1:-0}"
+    local lang="${2:-}"
+    local json_file="${3:-}"
+    local translated="${4:-0}"
+    local guard_fail="${5:-0}"
+    local strict_skipped_done="${6:-0}"
+    local checklist_file="$STATUS_DIR/translate_limit_checklist.json"
+    [ -f "$checklist_file" ] || return 0
+    local _msg
+    _msg=$(python3 - "$checklist_file" "$cycle" "$lang" "$json_file" "$translated" "$guard_fail" "$strict_skipped_done" << 'PYLIMITPROGRESS'
+import json
+import os
+import sys
+from datetime import datetime, timezone
+
+path = sys.argv[1]
+cycle = int(sys.argv[2] or 0)
+lang = str(sys.argv[3] or "")
+json_file = str(sys.argv[4] or "")
+translated = int(sys.argv[5] or 0)
+guard_fail = int(sys.argv[6] or 0)
+strict_skipped_done = int(sys.argv[7] or 0)
+
+try:
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+except Exception:
+    print("")
+    raise SystemExit(0)
+
+if not isinstance(data, dict) or data.get("status") != "in_progress":
+    print("")
+    raise SystemExit(0)
+
+required = int(data.get("checks_required", 3) or 3)
+checks = data.get("checks", []) if isinstance(data.get("checks", []), list) else []
+start_cycle = int(data.get("start_cycle", 0) or 0)
+
+if cycle < start_cycle:
+    print("")
+    raise SystemExit(0)
+
+if any(int(c.get("cycle", -1)) == cycle for c in checks if isinstance(c, dict)):
+    print("")
+    raise SystemExit(0)
+
+total_attempts = max(1, translated + guard_fail)
+entry = {
+    "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    "cycle": cycle,
+    "lang": lang,
+    "json_file": json_file,
+    "translated": translated,
+    "guard_fail": guard_fail,
+    "strict_skipped_done": strict_skipped_done,
+    "guard_fail_rate_pct": round((guard_fail / total_attempts) * 100.0, 1),
+}
+checks.append(entry)
+data["checks"] = checks
+data["checks_done"] = len(checks)
+if len(checks) >= required:
+    data["status"] = "completed"
+    data["completed_at"] = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+tmp = path + ".tmp"
+with open(tmp, "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=2, ensure_ascii=False)
+os.replace(tmp, path)
+
+print(f"CHECKLIST_PROGRESS {len(checks)}/{required} cycle={cycle} lang={lang} translated={translated} guard_fail={guard_fail} skipped_done={strict_skipped_done}")
+PYLIMITPROGRESS
+)
+    [ -n "${_msg:-}" ] && echo "   📋 ${_msg}"
+}
+
 save_default_worker_config() {
     [ -f "$WORKER_CONFIG_FILE" ] && return 0
     cat > "$WORKER_CONFIG_FILE" << 'WCEOF'
@@ -16364,7 +16547,7 @@ save_default_worker_config() {
   "use_gt": false,
   "gt_batch_size": 50,
   "gt_delay": 1.5,
-  "translate_limit": 0,
+    "translate_limit": 30,
   "parallel_langs": 3,
   "adaptive_batch": true,
   "crossref_auto_fix": false,
@@ -16470,10 +16653,12 @@ LOADCFGPY
         GT_DELAY="$CFG_GT_DELAY"
     fi
 
-    # translate_limit (config override, 0 = let adaptive decide)
+    # translate_limit (config override) — clamp do bezpiecznego pasma fast-lane
     if [ "${CFG_TRANSLATE_LIMIT:-0}" -gt 0 ] 2>/dev/null && [ "${USER_TRANSLATE_LIMIT:-0}" -eq 0 ] 2>/dev/null; then
-        TRANSLATE_LIMIT="$CFG_TRANSLATE_LIMIT"
-        changed="${changed} limit=$CFG_TRANSLATE_LIMIT"
+        local _cfg_limit_clamped
+        _cfg_limit_clamped="$(clamp_translate_limit_fast_lane "$CFG_TRANSLATE_LIMIT")"
+        TRANSLATE_LIMIT="$_cfg_limit_clamped"
+        changed="${changed} limit=$_cfg_limit_clamped"
     fi
 
     # parallel_langs
@@ -22262,7 +22447,8 @@ PYFORCEDMETRIC
             export GLOBAL_QUALITY_PRIORITY_GATE_ENABLED
 
         # 8.3: Zapamiętaj user-specified translate limit (0 = nie ustawiony → adaptive)
-        USER_TRANSLATE_LIMIT="${TRANSLATE_LIMIT:-0}"
+        USER_TRANSLATE_LIMIT="$(clamp_translate_limit_fast_lane "${TRANSLATE_LIMIT:-$FAST_LANE_SAFE_DEFAULT}")"
+        TRANSLATE_LIMIT="$USER_TRANSLATE_LIMIT"
         # CLI flags: zachowane żeby config nie nadpisywał explicit CLI
         CLI_USE_GT="${USE_GOOGLE_TRANSLATE:-false}"
 
@@ -22338,7 +22524,7 @@ PYFORCEDMETRIC
             PREEMPT_PENDING_FORCED_CMD=false
 
             # === 8.3: Reset translate_limit na początku cyklu (dla adaptive batch recalc) ===
-            TRANSLATE_LIMIT="${USER_TRANSLATE_LIMIT:-0}"
+            TRANSLATE_LIMIT="$(clamp_translate_limit_fast_lane "${USER_TRANSLATE_LIMIT:-$FAST_LANE_SAFE_DEFAULT}")"
 
             # === Runtime config: wczytaj worker_config.json co cykl ===
             load_worker_config
@@ -22863,11 +23049,13 @@ TESTALLPY
                         update_worker_config "use_gt" "false" >/dev/null 2>&1 || true
                         ;;
                     BATCH:*)
-                        NEW_BATCH=$(echo "$CMD" | cut -d: -f2)
-                        echo "📊 BATCH: ustawiam translate_limit=$NEW_BATCH"
+                        NEW_BATCH_RAW=$(echo "$CMD" | cut -d: -f2)
+                        NEW_BATCH=$(clamp_translate_limit_fast_lane "$NEW_BATCH_RAW")
+                        echo "📊 BATCH: request=$NEW_BATCH_RAW -> effective=$NEW_BATCH (safe range ${FAST_LANE_SAFE_MIN}-${FAST_LANE_SAFE_MAX})"
                         TRANSLATE_LIMIT="$NEW_BATCH"
                         USER_TRANSLATE_LIMIT="$NEW_BATCH"
                         update_worker_config "translate_limit" "$NEW_BATCH" >/dev/null 2>&1 || true
+                        start_translate_limit_checklist "$NEW_BATCH_RAW" "$NEW_BATCH" "$CYCLE" >/dev/null 2>&1 || true
                         ;;
                     SET:*)
                         # Format: SET:key=value — zmienia wartość w worker_config.json
@@ -23271,6 +23459,7 @@ PREMIGPY
                     fi
 
                     append_translation_guard_report "$CYCLE" "$MODE_CAT" "$MODE_COUNT" "$AT_TRANSLATED" "$AT_PLACEHOLDERS" "$AT_GUARD_FAIL" "$AT_GUARD_PLACEHOLDER" "$AT_GUARD_COMMAND" "$AT_GUARD_PIPE" "$AT_SKIPPED_MISSING_FILE" "$AT_SKIPPED_MISSING_KEY" "$AT_SKIPPED_NOT_PLACEHOLDER"
+                    update_translate_limit_checklist_progress "$CYCLE" "$MODE_CAT" "$MODE_COUNT" "$AT_TRANSLATED" "$AT_GUARD_FAIL" "$AT_SKIPPED_NOT_PLACEHOLDER"
 
                     AUTO_RESULT_STATUS="ok"
                     AUTO_DETAIL="lang=${MODE_CAT} file=${MODE_COUNT}"
@@ -23347,6 +23536,7 @@ PREMIGPY
                             P_GUARD_FAIL=${P_GUARD_FAIL:-0}
 
                             append_translation_guard_report "$CYCLE" "$P_LANG" "$P_FILE" "${P_TRANSLATED:-0}" "${P_PLACEHOLDERS:-0}" "${P_GUARD_FAIL:-0}" "${P_GUARD_PLACEHOLDER:-0}" "${P_GUARD_COMMAND:-0}" "${P_GUARD_PIPE:-0}" "${P_SKIP_FILE:-0}" "${P_SKIP_KEY:-0}" "${P_SKIP_DONE:-0}"
+                            update_translate_limit_checklist_progress "$CYCLE" "$P_LANG" "$P_FILE" "${P_TRANSLATED:-0}" "${P_GUARD_FAIL:-0}" "${P_SKIP_DONE:-0}"
 
                             echo "   🔀 Parallel result: $P_LANG/$P_FILE → translated=$P_TRANSLATED guard_fail=$P_GUARD_FAIL"
                             status_log_op "$CYCLE" "AUTO_TRANSLATE" "PARALLEL_TRANSLATE_DONE" "$P_LANG" "$P_FILE" "ok" "parallel lang=${P_LANG} file=${P_FILE}" "" "" "" "$P_TRANSLATED" "$P_PLACEHOLDERS"

@@ -28,6 +28,7 @@
 #include <framework/core/modulemanager.h>
 #include <framework/core/resourcemanager.h>
 #include <framework/luaengine/luainterface.h>
+#include <framework/otml/otmlnode.h>
 #include <framework/platform/platform.h>
 #include <framework/proxy/proxy.h>
 #include <framework/stdext/net.h>

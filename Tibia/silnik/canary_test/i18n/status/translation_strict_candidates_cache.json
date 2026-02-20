@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-20T17:19:38.486953Z",
-  "built_cycle": 3,
+  "timestamp": "2026-02-20T17:24:40.463077Z",
+  "built_cycle": 2,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -394,9 +394,9 @@
     {
       "lang": "es",
       "json_file": "spells.json",
-      "pending_total": 63,
-      "todo": 63,
-      "simple_todo": 63,
+      "pending_total": 60,
+      "todo": 60,
+      "simple_todo": 60,
       "missing_in_lang": 0
     },
     {
@@ -1178,8 +1178,8 @@
     {
       "lang": "sv",
       "json_file": "npc.json",
-      "pending_total": 7708,
-      "todo": 7708,
+      "pending_total": 7671,
+      "todo": 7671,
       "simple_todo": 764,
       "missing_in_lang": 0
     },

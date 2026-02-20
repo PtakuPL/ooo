@@ -36,6 +36,7 @@
 #include "framework/graphics/texturemanager.h"
 #include "framework/input/mouse.h"
 #include "framework/ui/uimanager.h"
+#include "framework/ui/uiwidget.h"
 #endif
 
 void registerLuaFunctions_GfxSingletons()

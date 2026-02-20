@@ -153174,5 +153174,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T17:13:14.484142Z"
+  },
+  "spell.poison_bomb_rune.words": {
+    "src_hash": "e861f6b0b2da0e36767c3310bc3ec07a",
+    "text": "adevo mas pox",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:21:09.496088Z"
+  },
+  "spell.fire_bomb_rune.words": {
+    "src_hash": "a7612568623118009c3032d2810a0c67",
+    "text": "adevo mas flam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:21:11.710773Z"
+  },
+  "spell.explosion_rune.words": {
+    "src_hash": "73f08a3adbe2607348897be0d1ce7c25",
+    "text": "adevo mas hur",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:21:11.711180Z"
   }
 }

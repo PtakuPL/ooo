@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-20T18:39:59.600465Z",
+  "timestamp": "2026-02-20T18:40:23.780164Z",
   "checked_entries": 100,
-  "issues_found": 32,
+  "issues_found": 35,
   "issues_by_type": {
-    "identical_to_en_exempt": 5,
-    "artifact_token": 32,
-    "suspicious_log_critical": 43,
-    "suspicious_log_high": 31,
+    "identical_to_en_exempt": 4,
+    "artifact_token": 35,
+    "suspicious_log_high": 66,
+    "suspicious_log_critical": 51,
     "suspicious_rejected_critical": 62,
     "suspicious_rejected_high": 4
   },
@@ -234,6 +234,27 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "monster.the_pit_lord.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "I'LL GET YOU ALL!",
+      "translated": "¡LOS CONSEGUIRÉ A TODOS!"
+    },
+    {
+      "key": "monster.deathbringer.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "YOU ALL WILL DIE!",
+      "translated": "¡TODOS MORIRÉIS!"
+    },
+    {
+      "key": "monster.dracola.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "YOU ARE ALL DOOMED!",
+      "translated": "¡ESTÁIS TODOS CONDENADOS!"
     }
   ],
   "threshold": 10,

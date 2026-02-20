@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-20T18:40:04.527606Z",
+  "timestamp": "2026-02-20T18:40:28.770319Z",
   "global": {
     "total_reference_keys": 2786472,
     "translated_keys": 386060,
@@ -49,34 +49,34 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 6788,
-    "guard_reports_blocked": 3896,
+    "guard_reports_total": 6789,
+    "guard_reports_blocked": 3897,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 3896
+    "cannot_translate_reports_visible": 3897
   },
   "cache": {
-    "lang_stats_hits": 50,
-    "lang_stats_misses": 2,
-    "lang_stats_hit_pct": 96.2,
+    "lang_stats_hits": 51,
+    "lang_stats_misses": 1,
+    "lang_stats_hit_pct": 98.1,
     "lang_stats_mode": "mixed",
-    "lang_file_hits": 1974,
-    "lang_file_misses": 2,
+    "lang_file_hits": 1975,
+    "lang_file_misses": 1,
     "lang_file_hit_pct": 99.9,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-20T18:39:59.649608Z",
-    "cycle": 63,
+    "timestamp": "2026-02-20T18:40:23.831050Z",
+    "cycle": 64,
     "mode": "AUTO_TRANSLATE",
-    "category": "pl",
+    "category": "es",
     "events": {
-      "dispatch": 1718,
-      "mode_run": 38153
+      "dispatch": 479,
+      "mode_run": 6734
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-20T17:40:03.760925Z",
-    "window_end_utc": "2026-02-20T18:40:03.760925Z",
+    "window_start_utc": "2026-02-20T17:40:28.089839Z",
+    "window_end_utc": "2026-02-20T18:40:28.089839Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -84,23 +84,23 @@
       "i18n/status/suspicious_log.jsonl",
       "i18n/status/suspicious_rejected.jsonl"
     ],
-    "total_cycles": 193,
+    "total_cycles": 197,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 193
+      "AUTO_TRANSLATE": 197
     },
-    "auto_translate_cycles": 193,
+    "auto_translate_cycles": 197,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 2657,
-    "guard_fail": 7541,
-    "guard_fail_rate_pct": 73.9,
+    "translated": 2642,
+    "guard_fail": 7526,
+    "guard_fail_rate_pct": 74.0,
     "no_progress_entries": 5,
     "no_progress_rate_pct": 4.2,
-    "throughput_keys_per_h": 1486.9,
+    "throughput_keys_per_h": 1463.7,
     "suspicious_total": 3107,
-    "suspicious_total_raw": 25136,
+    "suspicious_total_raw": 25115,
     "gt_translated": 37,
     "gt_active": true,
     "top_guard_fail_targets": [
@@ -155,9 +155,9 @@
     ]
   },
   "guard_fail_breakdown": {
-    "timestamp": "2026-02-20T18:40:04.525010Z",
-    "window_start_utc": "2026-02-20T17:40:03.760925Z",
-    "window_end_utc": "2026-02-20T18:40:03.760925Z",
+    "timestamp": "2026-02-20T18:40:28.768028Z",
+    "window_start_utc": "2026-02-20T17:40:28.089839Z",
+    "window_end_utc": "2026-02-20T18:40:28.089839Z",
     "window_hours": 1.0,
     "sources": {
       "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -167,9 +167,9 @@
     "rejected_entries": 158,
     "rejected_entries_raw": 352,
     "suspicious_entries": 3107,
-    "suspicious_entries_raw": 25136,
-    "guard_fail_entries": 120,
-    "guard_fail_sum": 7541,
+    "suspicious_entries_raw": 25115,
+    "guard_fail_entries": 119,
+    "guard_fail_sum": 7526,
     "by_type": {
       "identical_to_en": 128,
       "word_salad": 4,
@@ -387,14 +387,14 @@
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-20T18:39:59.600465Z",
+      "timestamp": "2026-02-20T18:40:23.780164Z",
       "checked_entries": 100,
-      "issues_found": 32,
+      "issues_found": 35,
       "issues_by_type": {
-        "identical_to_en_exempt": 5,
-        "artifact_token": 32,
-        "suspicious_log_critical": 43,
-        "suspicious_log_high": 31,
+        "identical_to_en_exempt": 4,
+        "artifact_token": 35,
+        "suspicious_log_high": 66,
+        "suspicious_log_critical": 51,
         "suspicious_rejected_critical": 62,
         "suspicious_rejected_high": 4
       },
@@ -622,6 +622,27 @@
           "type": "artifact_token",
           "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
           "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+        },
+        {
+          "key": "monster.the_pit_lord.voice_2",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "I'LL GET YOU ALL!",
+          "translated": "¡LOS CONSEGUIRÉ A TODOS!"
+        },
+        {
+          "key": "monster.deathbringer.voice_2",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "YOU ALL WILL DIE!",
+          "translated": "¡TODOS MORIRÉIS!"
+        },
+        {
+          "key": "monster.dracola.voice_2",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "YOU ARE ALL DOOMED!",
+          "translated": "¡ESTÁIS TODOS CONDENADOS!"
         }
       ],
       "threshold": 10,
@@ -647,8 +668,8 @@
         "total_gt_guard_fail": 5080,
         "cycles": 1074,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T18:39:59.600465Z",
-        "issues_count": 183798
+        "last_audit": "2026-02-20T18:40:23.780164Z",
+        "issues_count": 183828
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -662,15 +683,15 @@
         "issues_count": 1417
       },
       "es": {
-        "last_cycle": "2026-02-20T18:39:56.846602Z",
-        "last_translated": 23,
-        "total_suspicious": 52345,
+        "last_cycle": "2026-02-20T18:40:21.157303Z",
+        "last_translated": 30,
+        "total_suspicious": 52415,
         "total_rejected": 1785,
         "total_gt_guard_fail": 18828,
-        "cycles": 1491,
+        "cycles": 1492,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T18:39:59.600465Z",
-        "issues_count": 328058
+        "last_audit": "2026-02-20T18:40:23.780164Z",
+        "issues_count": 328216
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -701,9 +722,9 @@
         "total_rejected": 770,
         "total_gt_guard_fail": 2251,
         "cycles": 377,
-        "quality_score": 77.8,
-        "last_audit": "2026-02-20T18:39:59.600465Z",
-        "issues_count": 73150
+        "quality_score": 85.1,
+        "last_audit": "2026-02-20T18:40:23.780164Z",
+        "issues_count": 73152
       },
       "ru": {
         "last_cycle": "2026-02-20T18:38:03.148490Z",
@@ -1186,8 +1207,8 @@
         "total_gt_guard_fail": 4437,
         "cycles": 339,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T18:39:59.600465Z",
-        "issues_count": 179395
+        "last_audit": "2026-02-20T18:40:23.780164Z",
+        "issues_count": 179423
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -1201,7 +1222,7 @@
         "issues_count": 80
       }
     },
-    "summary": "SLOW_MODE | 32 issue(s) / 100 entries | 2026-02-20T18:39:59.600465Z | recent_hidden=0",
+    "summary": "SLOW_MODE | 35 issue(s) / 100 entries | 2026-02-20T18:40:23.780164Z | recent_hidden=0",
     "guard_fail_breakdown_summary": "identical_to_en=128, mixed_language=19, contains_tibia_proper_noun=8, mixed_scripts=7, cyrillic_latin_mix=7",
     "recent_hidden_high_critical": {
       "latest": 0,
@@ -1210,9 +1231,9 @@
       "trend": "→ last10=0.00, prev10=0.00, latest=0"
     },
     "critical_bad_keys_pack_regression": {
-      "timestamp": "2026-02-20T18:40:04.526196Z",
-      "window_start_utc": "2026-02-20T17:40:03.760925Z",
-      "window_end_utc": "2026-02-20T18:40:03.760925Z",
+      "timestamp": "2026-02-20T18:40:28.769029Z",
+      "window_start_utc": "2026-02-20T17:40:28.089839Z",
+      "window_end_utc": "2026-02-20T18:40:28.089839Z",
       "by_lang": {
         "pl": {
           "critical_in_window": 30,

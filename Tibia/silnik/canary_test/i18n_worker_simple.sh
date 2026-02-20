@@ -20634,6 +20634,10 @@ if candidates:
     #   provider_error → 3 cykle (tymczasowe, szybki retry)
     GUARD_FAIL_THRESHOLD = 0.80
     GUARD_FAIL_WINDOW = 5
+    GUARD_FAIL_HARD_THRESHOLD = 0.92
+    GUARD_FAIL_HARD_WINDOW = 8
+    GUARD_FAIL_HARD_MIN_COUNT = 120
+    GUARD_FAIL_HARD_COOLDOWN = 45
     RETRY_COOLDOWN_PER_REASON = {
         "placeholder": 15,
         "pipe": 15,
@@ -20644,6 +20648,9 @@ if candidates:
         "default": 10,
     }
     guard_fail_blacklist = state.get("guard_fail_blacklist", {})
+    guard_fail_block_meta = state.get("guard_fail_block_meta", {})
+    if not isinstance(guard_fail_block_meta, dict):
+        guard_fail_block_meta = {}
     current_cycle_num = state.get("cycle_counter", 0) + 1
     state["cycle_counter"] = current_cycle_num
 
@@ -20680,17 +20687,57 @@ if candidates:
                 if stats["entries"] >= GUARD_FAIL_WINDOW and total_attempts > 0:
                     gf_rate = stats["guard_fail"] / total_attempts
                     if gf_rate >= GUARD_FAIL_THRESHOLD:
-                        if tkey not in guard_fail_blacklist or guard_fail_blacklist[tkey] <= current_cycle_num:
-                            # Wybierz cooldown na podstawie dominującej przyczyny
-                            dominant_reason = "default"
-                            if stats["reasons"]:
-                                dominant_reason = stats["reasons"].most_common(1)[0][0]
-                            cooldown_cycles = RETRY_COOLDOWN_PER_REASON.get(dominant_reason, RETRY_COOLDOWN_PER_REASON["default"])
-                            guard_fail_blacklist[tkey] = current_cycle_num + cooldown_cycles
+                        # Wybierz cooldown na podstawie dominującej przyczyny
+                        dominant_reason = "default"
+                        if stats["reasons"]:
+                            dominant_reason = stats["reasons"].most_common(1)[0][0]
+                        cooldown_cycles = RETRY_COOLDOWN_PER_REASON.get(dominant_reason, RETRY_COOLDOWN_PER_REASON["default"])
+                        # Skala cooldown przy dużej liczbie guard_fail
+                        cooldown_cycles += min(30, int(stats["guard_fail"] / 250))
+
+                        is_hard_block = (
+                            stats["entries"] >= GUARD_FAIL_HARD_WINDOW
+                            and gf_rate >= GUARD_FAIL_HARD_THRESHOLD
+                            and stats["guard_fail"] >= GUARD_FAIL_HARD_MIN_COUNT
+                        )
+                        if is_hard_block:
+                            cooldown_cycles = max(cooldown_cycles, GUARD_FAIL_HARD_COOLDOWN)
+
+                        next_cycle = current_cycle_num + int(cooldown_cycles)
+                        existing_until = int(guard_fail_blacklist.get(tkey, 0) or 0)
+                        if next_cycle > existing_until:
+                            guard_fail_blacklist[tkey] = next_cycle
+
+                        guard_fail_block_meta[tkey] = {
+                            "until_cycle": int(guard_fail_blacklist.get(tkey, next_cycle) or next_cycle),
+                            "entries": int(stats["entries"]),
+                            "translated": int(stats["translated"]),
+                            "guard_fail": int(stats["guard_fail"]),
+                            "guard_fail_rate": round(gf_rate, 4),
+                            "dominant_reason": dominant_reason,
+                            "hard_block": bool(is_hard_block),
+                            "updated_cycle": int(current_cycle_num),
+                        }
     except Exception:
         pass
 
+    # Czyść wygasłe blokady i metadane
+    guard_fail_blacklist = {
+        k: int(v)
+        for k, v in guard_fail_blacklist.items()
+        if int(v or 0) > current_cycle_num
+    }
+    cleaned_meta = {}
+    for mk, mv in guard_fail_block_meta.items():
+        if not isinstance(mv, dict):
+            continue
+        until_cycle = int(mv.get("until_cycle", 0) or 0)
+        if until_cycle > current_cycle_num and mk in guard_fail_blacklist:
+            cleaned_meta[mk] = mv
+    guard_fail_block_meta = cleaned_meta
+
     state["guard_fail_blacklist"] = guard_fail_blacklist
+    state["guard_fail_block_meta"] = guard_fail_block_meta
 
     # Przefiltruj kandydatów: pomiń tych z backoff LUB guard_fail blacklist
     active_candidates = []
@@ -20821,6 +20868,25 @@ if candidates:
         "skipped_backoff": skipped_backoff,
         "skipped_guard_fail": skipped_guard_fail,
         "guard_fail_blacklist": {k: v for k, v in guard_fail_blacklist.items() if v > current_cycle_num},
+        "guard_fail_blocked_count": int(len(guard_fail_blacklist)),
+        "guard_fail_blocked_preview": [
+            {
+                "target": tkey,
+                "until_cycle": int(meta.get("until_cycle", 0) or 0),
+                "remaining_cycles": max(0, int(meta.get("until_cycle", 0) or 0) - int(current_cycle_num)),
+                "guard_fail_rate": float(meta.get("guard_fail_rate", 0.0) or 0.0),
+                "guard_fail": int(meta.get("guard_fail", 0) or 0),
+                "translated": int(meta.get("translated", 0) or 0),
+                "entries": int(meta.get("entries", 0) or 0),
+                "dominant_reason": str(meta.get("dominant_reason", "default") or "default"),
+                "hard_block": bool(meta.get("hard_block", False)),
+            }
+            for tkey, meta in sorted(
+                guard_fail_block_meta.items(),
+                key=lambda kv: (float((kv[1] or {}).get("guard_fail_rate", 0.0) or 0.0), int((kv[1] or {}).get("guard_fail", 0) or 0)),
+                reverse=True,
+            )[:8]
+        ],
         "tier_config": {"tier1": sorted(TIER1_LANGS), "tier2": sorted(TIER2_LANGS),
                         "w1": TIER1_WEIGHT, "w2": TIER2_WEIGHT, "w3": TIER3_WEIGHT},
         "cache_hit": bool(cache_hit),

@@ -1,58 +1,57 @@
 {
-  "timestamp": "2026-02-20T18:51:54.700753Z",
-  "window_start_utc": "2026-02-20T17:51:53.997527Z",
-  "window_end_utc": "2026-02-20T18:51:53.997527Z",
+  "timestamp": "2026-02-20T18:55:28.661529Z",
+  "window_start_utc": "2026-02-20T17:55:27.996761Z",
+  "window_end_utc": "2026-02-20T18:55:27.996761Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 130,
-  "rejected_entries_raw": 397,
-  "suspicious_entries": 3113,
-  "suspicious_entries_raw": 25349,
-  "guard_fail_entries": 124,
-  "guard_fail_sum": 8856,
+  "rejected_entries": 116,
+  "rejected_entries_raw": 376,
+  "suspicious_entries": 3112,
+  "suspicious_entries_raw": 25141,
+  "guard_fail_entries": 121,
+  "guard_fail_sum": 8831,
   "by_type": {
-    "identical_to_en": 108,
-    "word_salad": 3,
-    "mixed_language": 12,
+    "identical_to_en": 97,
+    "word_salad": 2,
+    "mixed_language": 10,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7,
     "contains_tibia_proper_noun": 6
   },
   "by_source": {
-    "google_translate": 130
+    "google_translate": 116
   },
   "by_language": {
-    "es": 23,
-    "ro": 47,
-    "pl": 31,
+    "es": 10,
     "it": 22,
-    "ru": 7
+    "ru": 7,
+    "ro": 47,
+    "pl": 30
   },
   "by_category": {
-    "npc.json": 4,
-    "items.json": 26,
-    "spells.json": 72,
-    "quests.json": 1,
     "scripts.json": 2,
+    "npc.json": 4,
+    "spells.json": 59,
+    "items.json": 26,
     "server.json": 2,
     "monsters.json": 23
   },
   "by_severity": {
-    "CRITICAL": 111,
-    "HIGH": 19
+    "CRITICAL": 99,
+    "HIGH": 17
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 108
+      "count": 97
     },
     {
       "type": "mixed_language",
-      "count": 12
+      "count": 10
     },
     {
       "type": "mixed_scripts",
@@ -68,25 +67,18 @@
     },
     {
       "type": "word_salad",
-      "count": 3
+      "count": 2
     }
   ],
   "top_keys": [
     {
       "key": "spell.quara_constrictor_electrify.name",
-      "count": 5,
+      "count": 4,
       "types": {
-        "mixed_language": 2,
+        "mixed_language": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1,
         "identical_to_en": 1
-      }
-    },
-    {
-      "key": "spell.makara_watersplash.name",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
       }
     },
     {
@@ -131,49 +123,7 @@
       }
     },
     {
-      "key": "spell.urmahlullu_ring.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.quara_raider_icering.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.zamulosh_tp.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.bulltaur_ewave.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.rotthing_explo.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.iksyapunac_wave.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.mitmahseer_wave.name",
+      "key": "spell.makara_watersplash.name",
       "count": 2,
       "types": {
         "identical_to_en": 2
@@ -220,6 +170,59 @@
       "types": {
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.tenebris_ultimate.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.lava_golem_soulfire2.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "item.10388.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.10391.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.12742.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "monster.sorcerer_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "monster.knight_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
       }
     }
   ]

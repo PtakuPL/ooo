@@ -69766,5 +69766,149 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:46:57.422801Z"
+  },
+  "npc.queen_eloise.say_14": {
+    "src_hash": "1c2974aa5ece2c40315db395e71a13e5",
+    "text": "Mai întâi trebuie să donezi suplimentul {helmet}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.678539Z"
+  },
+  "npc.queen_eloise.say_15": {
+    "src_hash": "7346bd095953094daa8fe43a55c46780",
+    "text": "Așadar, ați dori să donați 500.000.000 de piese de aur care, în schimb, vă vor da dreptul să porți o armură unică?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.679217Z"
+  },
+  "npc.queen_eloise.say_16": {
+    "src_hash": "198357327b9821aea565dbe508d1d3c2",
+    "text": "Așadar, ați dori să donați 250.000.000 de piese de aur care, în schimb, vă vor da dreptul să purtați o cască unică?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.679856Z"
+  },
+  "npc.queen_eloise.say_17": {
+    "src_hash": "52d6e7e3f5eb1ef4e02292b7ce660565",
+    "text": "Așadar, ai dori să donezi 250.000.000 de piese de aur care, în schimb, îți vor da dreptul să porți cizme unice?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.680637Z"
+  },
+  "npc.queen_eloise.say_2": {
+    "src_hash": "c65af90ce2c9ecc9ed1080eb962ba346",
+    "text": "În acest caz, întoarce-te la mine după ce te-ai hotărât.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.681122Z"
+  },
+  "npc.queen_eloise.say_3": {
+    "src_hash": "64e60fb1b5a64f94a1e4ae355404764b",
+    "text": "Luați această armură ca pe un semn de mare recunoștință. Să ne amintim pentru totdeauna această zi, prietene!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.681720Z"
+  },
+  "npc.queen_eloise.say_5": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Nu ai suficienți bani pentru a dona acea sumă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.682610Z"
+  },
+  "npc.queen_eloise.say_6": {
+    "src_hash": "ee2bcc845502cad1564baad182aef32d",
+    "text": "Ai deja acel supliment.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.683112Z"
+  },
+  "npc.queen_eloise.say_7": {
+    "src_hash": "c3b7f6d809dff613b8443e33af06db32",
+    "text": "Luați această cască ca pe un semn de mare recunoștință. Să ne amintim pentru totdeauna această zi, prietene. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.683728Z"
+  },
+  "npc.queen_eloise.say_8": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Nu ai suficienți bani pentru a dona acea sumă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.684177Z"
+  },
+  "npc.queen_eloise.say_9": {
+    "src_hash": "96b8026cc2b958c7b7b9c982cdb8193a",
+    "text": "Ai deja acea ținută.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.684565Z"
+  },
+  "npc.queen_eloise.stdmod_1": {
+    "src_hash": "8bde248f2855df0ec9b4de274f833a89",
+    "text": "Te pot promova cu 20000 de monede de aur. Vrei să te promovez?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.685060Z"
+  },
+  "npc.queen_eloise.stdmod_13": {
+    "src_hash": "5b3edcf522c874340c892f2fd8f7060b",
+    "text": "Multumesc, sunt bine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.685622Z"
+  },
+  "npc.queen_eloise.stdmod_2": {
+    "src_hash": "b16b6f7e9ba0adb52c44ffb607511f3e",
+    "text": "Felicitări! Acum ești promovat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.686490Z"
+  },
+  "npc.queen_eloise.stdmod_3": {
+    "src_hash": "a58748e248a0a19dfaa510c40513daad",
+    "text": "Bine atunci, revino când ești gata.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.687472Z"
+  },
+  "npc.queen_eloise.walkaway_msg_1": {
+    "src_hash": "f2fb8fae97707ee162c0df0618bb26f0",
+    "text": "La revedere, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.689316Z"
+  },
+  "npc.quentin.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.690354Z"
+  },
+  "npc.quentin.stdmod_10": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Păstrează-ți bine piatra de aventurier.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:53:35.690802Z"
   }
 }

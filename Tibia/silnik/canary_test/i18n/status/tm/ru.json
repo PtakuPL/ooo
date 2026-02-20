@@ -39310,5 +39310,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:49:02.583583Z"
+  },
+  "item.12801.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Отшельник рядом с Карлин может рассказать вам об этом больше.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:50:33.623545Z"
+  },
+  "item.12802.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Отшельник рядом с Карлин может рассказать вам об этом больше.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:50:33.625793Z"
   }
 }

@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T23:50:01.555542Z",
-  "window_start_utc": "2026-02-20T22:50:00.481739Z",
-  "window_end_utc": "2026-02-20T23:50:00.481739Z",
+  "timestamp": "2026-02-20T23:50:56.570366Z",
+  "window_start_utc": "2026-02-20T22:50:55.572079Z",
+  "window_end_utc": "2026-02-20T23:50:55.572079Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,11 +9,11 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 43,
-  "rejected_entries_raw": 48,
-  "suspicious_entries": 4035,
-  "suspicious_entries_raw": 10386,
+  "rejected_entries_raw": 47,
+  "suspicious_entries": 4050,
+  "suspicious_entries_raw": 13667,
   "guard_fail_entries": 85,
-  "guard_fail_sum": 2809,
+  "guard_fail_sum": 2805,
   "by_type": {
     "identical_to_en": 30,
     "mixed_scripts": 3,
@@ -25,15 +25,15 @@
     "google_translate": 43
   },
   "by_language": {
-    "ro": 10,
     "it": 5,
     "ru": 4,
+    "ro": 10,
     "es": 8,
     "pl": 16
   },
   "by_category": {
-    "otclient_data.json": 3,
     "talkactions.json": 4,
+    "otclient_data.json": 3,
     "npc.json": 3,
     "client.json": 2,
     "php.json": 7,

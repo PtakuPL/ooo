@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-20T23:49:16.758853Z",
-  "cycle": 4,
+  "timestamp": "2026-02-20T23:50:48.262291Z",
+  "cycle": 5,
   "language": "ro",
-  "json_file": "npc.json",
-  "translated": 30,
+  "json_file": "items.json",
+  "translated": 25,
   "placeholders": 0,
-  "guard_fail": 0,
+  "guard_fail": 9,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 6205
+  "strict_skipped_done": 7019
 }

@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-02-20T17:50:26.796987Z",
-  "window_start_utc": "2026-02-20T16:50:26.134550Z",
-  "window_end_utc": "2026-02-20T17:50:26.134550Z",
+  "timestamp": "2026-02-20T17:51:15.619579Z",
+  "window_start_utc": "2026-02-20T16:51:15.006242Z",
+  "window_end_utc": "2026-02-20T17:51:15.006242Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 300,
+  "rejected_entries": 302,
   "rejected_entries_raw": 538,
-  "suspicious_entries": 4165,
-  "suspicious_entries_raw": 20850,
-  "guard_fail_entries": 104,
-  "guard_fail_sum": 4219,
+  "suspicious_entries": 4153,
+  "suspicious_entries_raw": 19867,
+  "guard_fail_entries": 106,
+  "guard_fail_sum": 4179,
   "by_type": {
-    "identical_to_en": 241,
+    "identical_to_en": 243,
     "word_salad": 7,
     "mixed_language": 36,
     "contains_tibia_proper_noun": 15,
@@ -24,20 +24,20 @@
     "fx_token": 3
   },
   "by_source": {
-    "google_translate": 300
+    "google_translate": 302
   },
   "by_language": {
     "es": 50,
     "ro": 115,
-    "it": 49,
+    "it": 51,
     "ru": 13,
     "pl": 65,
     "sv": 8
   },
   "by_category": {
-    "items.json": 57,
-    "npc.json": 2,
+    "npc.json": 4,
     "server.json": 11,
+    "items.json": 57,
     "monsters.json": 65,
     "spells.json": 73,
     "quests.json": 3,
@@ -54,13 +54,13 @@
     "talkactions.json": 6
   },
   "by_severity": {
-    "CRITICAL": 248,
+    "CRITICAL": 250,
     "HIGH": 52
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 241
+      "count": 243
     },
     {
       "type": "mixed_language",
@@ -220,6 +220,13 @@
       }
     },
     {
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
       "key": "data.otservbr.global.npc.anerui.L71.1487",
       "count": 2,
       "types": {
@@ -242,13 +249,6 @@
     },
     {
       "key": "monster.sandcrawler.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "monster.bazir.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

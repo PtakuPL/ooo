@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T18:45:23.572190Z",
-  "window_start_utc": "2026-02-20T17:45:22.899988Z",
-  "window_end_utc": "2026-02-20T18:45:22.899988Z",
+  "timestamp": "2026-02-20T18:46:15.618755Z",
+  "window_start_utc": "2026-02-20T17:46:14.872399Z",
+  "window_end_utc": "2026-02-20T18:46:14.872399Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -10,14 +10,14 @@
   },
   "rejected_entries": 141,
   "rejected_entries_raw": 371,
-  "suspicious_entries": 3112,
-  "suspicious_entries_raw": 26258,
-  "guard_fail_entries": 123,
-  "guard_fail_sum": 8023,
+  "suspicious_entries": 3103,
+  "suspicious_entries_raw": 25422,
+  "guard_fail_entries": 124,
+  "guard_fail_sum": 8068,
   "by_type": {
+    "mixed_language": 17,
     "identical_to_en": 114,
     "word_salad": 3,
-    "mixed_language": 17,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7,
     "contains_tibia_proper_noun": 6
@@ -26,17 +26,17 @@
     "google_translate": 141
   },
   "by_language": {
-    "es": 30,
     "pl": 35,
+    "es": 30,
     "it": 22,
     "ro": 47,
     "ru": 7
   },
   "by_category": {
-    "npc.json": 4,
     "php.json": 3,
     "modules.json": 2,
     "talkactions.json": 6,
+    "npc.json": 4,
     "items.json": 26,
     "spells.json": 72,
     "quests.json": 1,
@@ -45,8 +45,8 @@
     "monsters.json": 23
   },
   "by_severity": {
-    "CRITICAL": 117,
-    "HIGH": 24
+    "HIGH": 24,
+    "CRITICAL": 117
   },
   "top_types": [
     {
@@ -127,13 +127,6 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "php.players.text5",
       "count": 2,
       "types": {
@@ -149,6 +142,13 @@
     },
     {
       "key": "talkaction.god.kv.msg_allkv_value",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2

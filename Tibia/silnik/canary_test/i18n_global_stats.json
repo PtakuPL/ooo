@@ -1,8 +1,8 @@
 {
-  "total_cycles": 68,
+  "total_cycles": 69,
   "mode": "AUTO_TRANSLATE",
-  "category": "es",
-  "last_update": "2026-02-20T19:45:18.749408",
+  "category": "pl",
+  "last_update": "2026-02-20T19:46:10.864220",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,10 +26,10 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "es",
-    "json_file": "items.json",
-    "keys_to_translate": 3081,
-    "guard_fail": 519,
+    "language": "pl",
+    "json_file": "monsters.json",
+    "keys_to_translate": 304,
+    "guard_fail": 41,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

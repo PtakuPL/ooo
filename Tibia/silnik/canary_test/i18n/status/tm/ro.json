@@ -73678,5 +73678,69 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:31:48.377613Z"
+  },
+  "gamestore.error.purchase_cancelled": {
+    "src_hash": "47e0f6edcb93ba7d0b54b2b95de4e92c",
+    "text": "Ceva a mers prost. Achiziția dvs. a fost anulată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:43:48.247599Z"
+  },
+  "scripts.clay_lump.sound_fail": {
+    "src_hash": "627629de0fe0dc39eb8ce71cd5e9d70c",
+    "text": "Omule. Asta nu a mers prea bine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:01.061537Z"
+  },
+  "scripts.close_server.msg_1": {
+    "src_hash": "333827699856cd0b1f779bfca0e48fff",
+    "text": "Serverul este setat pe modul de întreținere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:01.062291Z"
+  },
+  "scripts.close_server.msg_2": {
+    "src_hash": "7912bf524f6d3d3f2dc409220aa11b8e",
+    "text": "Serverul este acum închis.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:01.062883Z"
+  },
+  "scripts.closing_door.msg_2": {
+    "src_hash": "227c86ee15812ee3777b6d25c989a4f6",
+    "text": "Numai cei vrednici pot trece.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:01.063483Z"
+  },
+  "scripts.cobra_flask.msg_1": {
+    "src_hash": "328a604233c4aebfa641bd98989394eb",
+    "text": "Turnați cu grijă doar o mică, mică, fin dozată... și acolo merge tot conținutul sticlei. Stai înapoi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:04.577235Z"
+  },
+  "scripts.coconut_shrimp_bake.msg_2": {
+    "src_hash": "aa142f58af05f46cbbdebce92dbd7e65",
+    "text": "Ar trebui să mănânci acest fel de mâncare numai atunci când porți o cască de adâncime sau o galea de adâncime și mergi sub apă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:04.577826Z"
+  },
+  "scripts.coconut_shrimp_bake.msg_3": {
+    "src_hash": "aa142f58af05f46cbbdebce92dbd7e65",
+    "text": "Ar trebui să mănânci acest fel de mâncare numai atunci când porți o cască de adâncime sau o galea de adâncime și mergi sub apă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:04.578396Z"
   }
 }

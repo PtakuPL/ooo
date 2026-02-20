@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-20T16:52:21.853614Z",
-  "window_end_utc": "2026-02-20T17:52:21.853614Z",
+  "window_start_utc": "2026-02-20T16:53:01.776824Z",
+  "window_end_utc": "2026-02-20T17:53:01.776824Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,23 +8,23 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/suspicious_rejected.jsonl"
   ],
-  "total_cycles": 163,
+  "total_cycles": 165,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 163
+    "AUTO_TRANSLATE": 165
   },
-  "auto_translate_cycles": 163,
+  "auto_translate_cycles": 165,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 2704,
-  "guard_fail": 3663,
-  "guard_fail_rate_pct": 57.5,
+  "translated": 2715,
+  "guard_fail": 3641,
+  "guard_fail_rate_pct": 57.3,
   "no_progress_entries": 9,
   "no_progress_rate_pct": 8.3,
-  "throughput_keys_per_h": 1562.4,
+  "throughput_keys_per_h": 1557.7,
   "suspicious_total": 4158,
-  "suspicious_total_raw": 20450,
+  "suspicious_total_raw": 22842,
   "gt_translated": 115,
   "gt_active": true,
   "top_guard_fail_targets": [
@@ -60,8 +60,8 @@
     },
     {
       "target": "es/npc.json",
-      "translated": 115,
-      "guard_fail": 115,
+      "translated": 92,
+      "guard_fail": 88,
       "guard_command": 0
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "target": "ro/items.json",
-      "translated": 48,
-      "guard_fail": 60,
+      "translated": 72,
+      "guard_fail": 70,
       "guard_command": 0
     }
   ]

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T16:33:55.484544Z",
+  "timestamp": "2026-02-20T16:35:37.296601Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1975,
-  "file_cache_misses": 1,
+  "cache_hits": 49,
+  "cache_misses": 3,
+  "file_cache_hits": 1972,
+  "file_cache_misses": 4,
   "langs": {
     "ar": {
       "sig": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771605110889301769,
+          1771605332006961869,
           1847374
         ],
         [
@@ -7482,7 +7482,7 @@
         [
           "server.json",
           1,
-          1771546115466886216,
+          1771605284389766674,
           299762
         ],
         [
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771605110889301769,
+            1771605332006961869,
             1847374
           ],
           "row": {
@@ -7985,7 +7985,7 @@
         "server.json": {
           "sig": [
             1,
-            1771546115466886216,
+            1771605284389766674,
             299762
           ],
           "row": {
@@ -16023,8 +16023,8 @@
         [
           "npc.json",
           1,
-          1771603882388161617,
-          1836659
+          1771605295109607565,
+          1836593
         ],
         [
           "npclib.json",
@@ -16134,14 +16134,14 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 27420,
-        "english_copy_keys": 2137,
+        "translated_keys": 27455,
+        "english_copy_keys": 2133,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 51.17,
+        "completion_pct": 51.24,
         "server_keys": 49731,
-        "server_translated": 26089,
-        "server_pct": 52.46,
+        "server_translated": 26124,
+        "server_pct": 52.53,
         "client_keys": 3855,
         "client_translated": 1331,
         "client_pct": 34.53
@@ -16430,13 +16430,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771603882388161617,
-            1836659
+            1771605295109607565,
+            1836593
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 9868,
-            "english_copy_keys": 290,
+            "translated_keys": 9903,
+            "english_copy_keys": 286,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27768,8 +27768,8 @@
         [
           "npc.json",
           1,
-          1771603882444164713,
-          1835026
+          1771605299718925195,
+          1835041
         ],
         [
           "npclib.json",
@@ -27879,13 +27879,13 @@
         "language_name": "Rosyjski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 26979,
+        "translated_keys": 26980,
         "english_copy_keys": 1457,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 50.35,
         "server_keys": 49731,
-        "server_translated": 24183,
+        "server_translated": 24184,
         "server_pct": 48.63,
         "client_keys": 3855,
         "client_translated": 2796,
@@ -28175,12 +28175,12 @@
         "npc.json": {
           "sig": [
             1,
-            1771603882444164713,
-            1835026
+            1771605299718925195,
+            1835041
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 845,
+            "translated_keys": 846,
             "english_copy_keys": 42,
             "missing_keys": 0,
             "missing_files": 0

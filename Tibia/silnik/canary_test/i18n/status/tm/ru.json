@@ -37966,5 +37966,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T22:49:55.958840Z"
+  },
+  "npc.bruno.greet_msg_1": {
+    "src_hash": "059e1779562262cde06156c3a7f61f6d",
+    "text": "Ахой, |PLAYERNAME|. Хотите купить свежей рыбы?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:59.479150Z"
   }
 }

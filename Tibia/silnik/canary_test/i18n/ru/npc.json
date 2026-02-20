@@ -1851,7 +1851,7 @@
   "npc.bruce.say_1": "[EN] Well, .. <gives a short and precise report>.",
   "npc.bruce.say_2": "[EN] You can {pass} either to the {Alchemist Quarter} or {Cemetery Quarter}. Which one will it be?",
   "npc.bruno.farewell_msg_1": "До свидания и приходите снова!",
-  "npc.bruno.greet_msg_1": "[EN] Ahoi, |PLAYERNAME|. You want to buy some fresh fish?",
+  "npc.bruno.greet_msg_1": "Ахой, |PLAYERNAME|. Хотите купить свежей рыбы?",
   "npc.bruno.sendtrade_msg_1": "[EN] Buy all the fish you want. It's fresh and healthy, promised.",
   "npc.bruno.stdmod_1": "[EN] Well, I sell freshly caught fish. You like some? Of course, you can buy more than one at once. *grin* Just ask me for a {trade}.",
   "npc.bruno.stdmod_2": "[EN] Well, I sell freshly caught fish. You like some? Of course, you can buy more than one at once. *grin* Just ask me for a {trade}.",

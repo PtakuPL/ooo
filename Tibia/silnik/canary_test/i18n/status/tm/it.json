@@ -75038,5 +75038,317 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T16:19:44.939947Z"
+  },
+  "npc.tyrias.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Ecco. Occuparsi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.824066Z"
+  },
+  "npc.tyrias.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vuoi sostituire la tua pietra dell'avventuriero per 30 monete d'oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.824747Z"
+  },
+  "npc.tyrias.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Ecco. Occuparsi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.825212Z"
+  },
+  "npc.tyrias.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Mi dispiace, non hai abbastanza soldi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.825631Z"
+  },
+  "npc.ubaid.multi_14": {
+    "src_hash": "d9a9d403c1ba480d6703285ada8cf247",
+    "text": "Ahahahah! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.826783Z"
+  },
+  "npc.ubaid.multi_15": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, sembrava quasi la parola di saluto. Umani: sono carini!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.827464Z"
+  },
+  "npc.ubaid.multi_16": {
+    "src_hash": "d9a9d403c1ba480d6703285ada8cf247",
+    "text": "Ahahahah! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.827758Z"
+  },
+  "npc.ubaid.multi_17": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, sembrava quasi la parola di saluto. Umani: sono carini!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.828285Z"
+  },
+  "npc.ubaid.say_1": {
+    "src_hash": "17bb78642c4a960215206201b82d1feb",
+    "text": "Spingiti via, piccolo! Gli esseri umani non sono i benvenuti qui, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.829438Z"
+  },
+  "npc.ukea.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Arrivederci, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.830438Z"
+  },
+  "npc.umar.multi_12": {
+    "src_hash": "d9a9d403c1ba480d6703285ada8cf247",
+    "text": "Ahahahah! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.832524Z"
+  },
+  "npc.umar.multi_13": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, sembrava quasi la parola di saluto. Umani: sono carini!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.833035Z"
+  },
+  "npc.umar.multi_14": {
+    "src_hash": "d9a9d403c1ba480d6703285ada8cf247",
+    "text": "Ahahahah! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.833323Z"
+  },
+  "npc.umar.multi_15": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, sembrava quasi la parola di saluto. Umani: sono carini!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.833948Z"
+  },
+  "npc.umar.say_1": {
+    "src_hash": "53f59a9ef75a585e8d262642a3166d45",
+    "text": "Ehi! Un essere umano! Questo non è posto per te, |PLAYERNAME|. Vai a giocare da qualche altra parte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.835082Z"
+  },
+  "npc.uncle.say_10": {
+    "src_hash": "467bd5450601d1e96f97267a198f8e44",
+    "text": "Per favore, portami la prova della sconfitta del folle tecnomante!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.838046Z"
+  },
+  "npc.undal.say_14": {
+    "src_hash": "c066542c456632337339c67bf887b0a8",
+    "text": "Scusa, non ho capito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.841706Z"
+  },
+  "npc.urks_the_mute.farewell_msg_1": {
+    "src_hash": "8c767380dfcf1e12c4c84eef6324bdca",
+    "text": "Alla prossima volta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.842908Z"
+  },
+  "npc.urks_the_mute.greet_msg_1": {
+    "src_hash": "b6febd60d615e293d143caedc364bcfe",
+    "text": "Benvenuto, |PLAYERNAME|! Bel battello a vapore, vero? Posso anche offrirti un {passage} se vuoi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.843594Z"
+  },
+  "npc.urks_the_mute.walkaway_msg_1": {
+    "src_hash": "8c767380dfcf1e12c4c84eef6324bdca",
+    "text": "Alla prossima volta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.844467Z"
+  },
+  "npc.uso.stdmod_3": {
+    "src_hash": "abd3dbcaaae2af1f628f80fc7dd6c9e1",
+    "text": "Posso insegnarti {healing spells}, {attack spells} e {support spells}. Che tipo di incantesimo desideri imparare? Puoi anche dirmi per quale livello vorresti imparare un incantesimo, se lo preferisci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.845491Z"
+  },
+  "npc.uzon.keyword_1": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Aspettare!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.847911Z"
+  },
+  "npc.uzon.stdmod_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Senti il ​​vento tra i capelli durante uno dei miei giri sul tappeto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.848455Z"
+  },
+  "npc.uzon.stdmod_2": {
+    "src_hash": "065a3336d2940946dccb9d6a186f5671",
+    "text": "Non ho mai sentito parlare di un posto come questo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.849636Z"
+  },
+  "npc.uzon.stdmod_3": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Aspettare!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.850304Z"
+  },
+  "npc.uzon.stdmod_4": {
+    "src_hash": "8f3b71da455041c184184618a35b40fb",
+    "text": "Non dovresti perdere l'esperienza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.850814Z"
+  },
+  "npc.uzon.voice_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Senti il ​​vento tra i capelli durante uno dei miei giri sul tappeto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.851739Z"
+  },
+  "npc.uzon_back.keyword_1": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Aspettare!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.852344Z"
+  },
+  "npc.uzon_back.stdmod_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Senti il ​​vento tra i capelli durante uno dei miei giri sul tappeto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.852886Z"
+  },
+  "npc.uzon_back.stdmod_2": {
+    "src_hash": "065a3336d2940946dccb9d6a186f5671",
+    "text": "Non ho mai sentito parlare di un posto come questo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.853304Z"
+  },
+  "npc.uzon_back.stdmod_3": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Aspettare!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.853630Z"
+  },
+  "npc.uzon_back.stdmod_4": {
+    "src_hash": "8f3b71da455041c184184618a35b40fb",
+    "text": "Non dovresti perdere l'esperienza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.854012Z"
+  },
+  "npc.uzon_back.voice_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Senti il ​​vento tra i capelli durante uno dei miei giri sul tappeto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.854957Z"
+  },
+  "npc.valentina.farewell_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Per favore, torna di tanto in tanto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.855578Z"
+  },
+  "npc.valentina.walkaway_msg_1": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Per favore, torna di tanto in tanto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.856184Z"
+  },
+  "npc.valindara.farewell_msg_1": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Possa l'illuminazione essere il tuo percorso, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.856743Z"
+  },
+  "npc.vanys.say_14": {
+    "src_hash": "c066542c456632337339c67bf887b0a8",
+    "text": "Scusa, non ho capito.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.858963Z"
+  },
+  "npc.vera.voice_1": {
+    "src_hash": "1fa395c2991033dc8cbf3014b1df5c4a",
+    "text": "Ti sei trasferito in una nuova casa? Sono lo specialista per equipaggiarlo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.868648Z"
+  },
+  "npc.virgil.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:34:54.872089Z"
   }
 }

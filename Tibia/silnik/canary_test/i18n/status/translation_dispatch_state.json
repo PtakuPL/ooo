@@ -1,19 +1,21 @@
 {
-  "timestamp": "2026-02-20T21:01:53.597530Z",
-  "cycle_counter": 6345,
-  "last_target_key": "ro:monsters.json",
-  "last_pending_total": 4949,
-  "last_tier": 2,
-  "last_cat_priority": 2,
+  "timestamp": "2026-02-20T21:02:50.686809Z",
+  "cycle_counter": 6347,
+  "last_target_key": "es:npc.json",
+  "last_pending_total": 2355,
+  "last_tier": 1,
+  "last_cat_priority": 1,
   "candidates_count": 181,
-  "active_candidates_count": 168,
+  "active_candidates_count": 166,
   "skipped_backoff": 9,
-  "skipped_guard_fail": 4,
+  "skipped_guard_fail": 6,
   "guard_fail_blacklist": {
     "pl:items.json": 6351,
     "pl:npc.json": 6353,
-    "es:server.json": 6346,
-    "es:spells.json": 6353
+    "es:server.json": 6361,
+    "es:spells.json": 6353,
+    "ro:monsters.json": 6356,
+    "es:items.json": 6357
   },
   "tier_config": {
     "tier1": [
@@ -39,7 +41,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 182,
+  "cache_cycle": 183,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,

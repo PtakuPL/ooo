@@ -1,8 +1,8 @@
 {
-  "total_cycles": 182,
+  "total_cycles": 183,
   "mode": "AUTO_TRANSLATE",
-  "category": "it",
-  "last_update": "2026-02-20T22:02:11.948130",
+  "category": "es",
+  "last_update": "2026-02-20T22:02:51.371339",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,14 +26,129 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "it",
-    "json_file": "monsters.json",
-    "keys_to_translate": 609,
-    "guard_fail": 26,
+    "language": "es",
+    "json_file": "items.json",
+    "keys_to_translate": 3035,
+    "guard_fail": 523,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 0,
-    "recent_examples": []
+    "recent_translated": 19,
+    "recent_examples": [
+      {
+        "key": "item.173.desc",
+        "en": "It says 'Roses are red...'",
+        "translated": "Dice 'Roses are red...'",
+        "source": "tm"
+      },
+      {
+        "key": "item.19103.name",
+        "en": "dead noble lion",
+        "translated": "dead Noble lion",
+        "source": "tm"
+      },
+      {
+        "key": "item.19104.name",
+        "en": "dead noble lion",
+        "translated": "dead Noble lion",
+        "source": "tm"
+      },
+      {
+        "key": "item.19105.name",
+        "en": "dead noble lion",
+        "translated": "dead Noble lion",
+        "source": "tm"
+      },
+      {
+        "key": "item.19106.name",
+        "en": "dead noble lion",
+        "translated": "dead Noble lion",
+        "source": "tm"
+      },
+      {
+        "key": "item.21875.name",
+        "en": "a pressure gauge",
+        "translated": "pressure gauge",
+        "source": "tm"
+      },
+      {
+        "key": "item.30352.name",
+        "en": "dead lost gnome",
+        "translated": "dead lost gNome",
+        "source": "tm"
+      },
+      {
+        "key": "item.30353.name",
+        "en": "dead lost gnome",
+        "translated": "dead lost gNome",
+        "source": "tm"
+      },
+      {
+        "key": "item.30354.name",
+        "en": "dead lost gnome",
+        "translated": "dead lost gNome",
+        "source": "tm"
+      },
+      {
+        "key": "item.30355.name",
+        "en": "dead lost gnome",
+        "translated": "dead lost gNome",
+        "source": "tm"
+      },
+      {
+        "key": "item.31709.name",
+        "en": "the kilmar tablets",
+        "translated": "kilmar tablets",
+        "source": "tm"
+      },
+      {
+        "key": "item.32726.name",
+        "en": "a weak spot",
+        "translated": "weak spot",
+        "source": "tm"
+      },
+      {
+        "key": "item.14094.name",
+        "en": "dead deepling worker",
+        "translated": "trabajador profundo muerto",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.14095.name",
+        "en": "dead deepling worker",
+        "translated": "trabajador profundo muerto",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.14096.name",
+        "en": "dead deepling worker",
+        "translated": "trabajador profundo muerto",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.14097.name",
+        "en": "dead deepling worker",
+        "translated": "trabajador profundo muerto",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.14156.desc",
+        "en": "It belongs to Noodles, the King's dog",
+        "translated": "Pertenece a Noodles, el perro del Rey.",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.14176.name",
+        "en": "notes and coordinates",
+        "translated": "notas y coordenadas",
+        "source": "google_translate"
+      },
+      {
+        "key": "item.14237.desc",
+        "en": "The chair is tied to this strange machine. You could use this if you had appropriate instructions.",
+        "translated": "La silla est\u00e1 atada a esta extra\u00f1a m\u00e1quina. Podr\u00edas usar esto si tuvieras las instrucciones adecuadas.",
+        "source": "google_translate"
+      }
+    ]
   },
   "idle": {
     "new_files_detected": 152,

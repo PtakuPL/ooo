@@ -154094,5 +154094,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T20:39:21.614869Z"
+  },
+  "item.14094.name": {
+    "src_hash": "0832bb65dfe78004ef68bb7ab4a6e4d1",
+    "text": "trabajador profundo muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:02:44.317896Z"
+  },
+  "item.14095.name": {
+    "src_hash": "0832bb65dfe78004ef68bb7ab4a6e4d1",
+    "text": "trabajador profundo muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:02:44.318164Z"
+  },
+  "item.14096.name": {
+    "src_hash": "0832bb65dfe78004ef68bb7ab4a6e4d1",
+    "text": "trabajador profundo muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:02:44.318404Z"
+  },
+  "item.14097.name": {
+    "src_hash": "0832bb65dfe78004ef68bb7ab4a6e4d1",
+    "text": "trabajador profundo muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:02:44.318667Z"
+  },
+  "item.14156.desc": {
+    "src_hash": "882b90c9255a91937336187045f9561f",
+    "text": "Pertenece a Noodles, el perro del Rey.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:02:47.680857Z"
+  },
+  "item.14176.name": {
+    "src_hash": "582f313605bda0e61ff57635515ad203",
+    "text": "notas y coordenadas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:02:47.681120Z"
+  },
+  "item.14237.desc": {
+    "src_hash": "e651d792e0f39e1745df3e5f891c26ea",
+    "text": "La silla está atada a esta extraña máquina. Podrías usar esto si tuvieras las instrucciones adecuadas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:02:47.681617Z"
   }
 }

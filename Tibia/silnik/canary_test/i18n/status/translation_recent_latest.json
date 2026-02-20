@@ -1,36 +1,126 @@
 {
-  "timestamp": "2026-02-20T21:02:10.436051Z",
-  "language": "ro",
-  "json_file": "monsters.json",
-  "translated": 4,
+  "timestamp": "2026-02-20T21:02:47.962349Z",
+  "language": "es",
+  "json_file": "items.json",
+  "translated": 19,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "monster.orewalker.voice_1",
-      "en": "CLONK!",
-      "translated": "CLONK!",
+      "key": "item.173.desc",
+      "en": "It says 'Roses are red...'",
+      "translated": "Dice 'Roses are red...'",
       "source": "tm"
     },
     {
-      "key": "monster.ice_golem.voice_1",
-      "en": "Chrrr.",
-      "translated": "Chrrr.",
+      "key": "item.19103.name",
+      "en": "dead noble lion",
+      "translated": "dead Noble lion",
       "source": "tm"
     },
     {
-      "key": "monster.ice_golem.voice_2",
-      "en": "Crrrrk.",
-      "translated": "Crrrrk.",
+      "key": "item.19104.name",
+      "en": "dead noble lion",
+      "translated": "dead Noble lion",
       "source": "tm"
     },
     {
-      "key": "monster.ice_golem.voice_3",
-      "en": "Gnarr.",
-      "translated": "Gnarr.",
+      "key": "item.19105.name",
+      "en": "dead noble lion",
+      "translated": "dead Noble lion",
       "source": "tm"
+    },
+    {
+      "key": "item.19106.name",
+      "en": "dead noble lion",
+      "translated": "dead Noble lion",
+      "source": "tm"
+    },
+    {
+      "key": "item.21875.name",
+      "en": "a pressure gauge",
+      "translated": "pressure gauge",
+      "source": "tm"
+    },
+    {
+      "key": "item.30352.name",
+      "en": "dead lost gnome",
+      "translated": "dead lost gNome",
+      "source": "tm"
+    },
+    {
+      "key": "item.30353.name",
+      "en": "dead lost gnome",
+      "translated": "dead lost gNome",
+      "source": "tm"
+    },
+    {
+      "key": "item.30354.name",
+      "en": "dead lost gnome",
+      "translated": "dead lost gNome",
+      "source": "tm"
+    },
+    {
+      "key": "item.30355.name",
+      "en": "dead lost gnome",
+      "translated": "dead lost gNome",
+      "source": "tm"
+    },
+    {
+      "key": "item.31709.name",
+      "en": "the kilmar tablets",
+      "translated": "kilmar tablets",
+      "source": "tm"
+    },
+    {
+      "key": "item.32726.name",
+      "en": "a weak spot",
+      "translated": "weak spot",
+      "source": "tm"
+    },
+    {
+      "key": "item.14094.name",
+      "en": "dead deepling worker",
+      "translated": "trabajador profundo muerto",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.14095.name",
+      "en": "dead deepling worker",
+      "translated": "trabajador profundo muerto",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.14096.name",
+      "en": "dead deepling worker",
+      "translated": "trabajador profundo muerto",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.14097.name",
+      "en": "dead deepling worker",
+      "translated": "trabajador profundo muerto",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.14156.desc",
+      "en": "It belongs to Noodles, the King's dog",
+      "translated": "Pertenece a Noodles, el perro del Rey.",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.14176.name",
+      "en": "notes and coordinates",
+      "translated": "notas y coordenadas",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.14237.desc",
+      "en": "The chair is tied to this strange machine. You could use this if you had appropriate instructions.",
+      "translated": "La silla está atada a esta extraña máquina. Podrías usar esto si tuvieras las instrucciones adecuadas.",
+      "source": "google_translate"
     }
   ]
 }

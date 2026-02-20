@@ -1,66 +1,66 @@
 {
-  "timestamp": "2026-02-20T21:02:17.063514Z",
-  "window_start_utc": "2026-02-20T20:02:16.313385Z",
-  "window_end_utc": "2026-02-20T21:02:16.313385Z",
+  "timestamp": "2026-02-20T21:02:56.016668Z",
+  "window_start_utc": "2026-02-20T20:02:55.300418Z",
+  "window_end_utc": "2026-02-20T21:02:55.300418Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 163,
-  "rejected_entries_raw": 452,
+  "rejected_entries": 164,
+  "rejected_entries_raw": 456,
   "suspicious_entries": 3550,
-  "suspicious_entries_raw": 24449,
-  "guard_fail_entries": 120,
-  "guard_fail_sum": 4801,
+  "suspicious_entries_raw": 25433,
+  "guard_fail_entries": 121,
+  "guard_fail_sum": 5324,
   "by_type": {
-    "identical_to_en": 139,
-    "word_salad": 7,
+    "identical_to_en": 140,
     "mixed_language": 7,
+    "word_salad": 7,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7,
     "contains_tibia_proper_noun": 6,
     "fx_token": 3
   },
   "by_source": {
-    "google_translate": 163
+    "google_translate": 164
   },
   "by_language": {
-    "es": 39,
     "pl": 38,
+    "es": 40,
     "ro": 56,
     "ru": 7,
     "it": 8,
     "sv": 15
   },
   "by_category": {
-    "npc.json": 4,
     "spells.json": 33,
     "quests.json": 3,
     "scripts.json": 14,
+    "npc.json": 4,
     "server.json": 17,
     "books.json": 1,
     "otclient_modules.json": 30,
-    "items.json": 27,
+    "items.json": 28,
     "monsters.json": 30,
     "client.json": 4
   },
   "by_severity": {
-    "CRITICAL": 146,
+    "CRITICAL": 147,
     "HIGH": 17
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 139
-    },
-    {
-      "type": "word_salad",
-      "count": 7
+      "count": 140
     },
     {
       "type": "mixed_language",
+      "count": 7
+    },
+    {
+      "type": "word_salad",
       "count": 7
     },
     {
@@ -130,13 +130,6 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "spell.iksyapunac_wave.name",
       "count": 2,
       "types": {
@@ -145,6 +138,13 @@
     },
     {
       "key": "spell.mitmahseer_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2

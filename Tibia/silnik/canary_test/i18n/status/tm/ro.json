@@ -66678,5 +66678,365 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T16:38:35.674279Z"
+  },
+  "data.otservbr.global.npc.rowenna.L61.477": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "La revedere. Întoarce-te curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.856012Z"
+  },
+  "data.otservbr.global.npc.sam.L155.912": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "La revedere și vino din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.857708Z"
+  },
+  "data.otservbr.global.npc.sebastian.L116.1348": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Salutări, aventurier îndrăzneț. Dacă aveți nevoie de un {passage}, anunțați-mă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.861065Z"
+  },
+  "data.otservbr.global.npc.sebastian.L118.1350": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh bine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.861563Z"
+  },
+  "data.otservbr.global.npc.sebastian.nargor.L68.1109": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Salutări, aventurier îndrăzneț. Dacă aveți nevoie de un {passage}, anunțați-mă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.862074Z"
+  },
+  "data.otservbr.global.npc.sebastian.nargor.L70.1111": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh bine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.862726Z"
+  },
+  "data.otservbr.global.npc.shiriel.L143.1147": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.867034Z"
+  },
+  "data.otservbr.global.npc.shiriel.L144.1148": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.867345Z"
+  },
+  "data.otservbr.global.npc.shirtalis.of.the.summer.court.L83.56": {
+    "src_hash": "1d4aed09bf4b360d0fe917e2de3b88d4",
+    "text": "Bună luptător. Presupun că ești aici pentru a {fight} pentru nobilul nostru {cause}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.868809Z"
+  },
+  "data.otservbr.global.npc.sigurd.L145.1169": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "La revedere. Întoarce-te curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.870610Z"
+  },
+  "data.otservbr.global.npc.sigurd.L146.1170": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "La revedere. Întoarce-te curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.871201Z"
+  },
+  "data.otservbr.global.npc.skjaar.L90.1579": {
+    "src_hash": "f2fb8fae97707ee162c0df0618bb26f0",
+    "text": "La revedere, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.873732Z"
+  },
+  "data.otservbr.global.npc.tanyt.L101.1188": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.877761Z"
+  },
+  "data.otservbr.global.npc.willard.L87.1038": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.898439Z"
+  },
+  "data.otservbr.global.npc.willard.L88.1039": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.898749Z"
+  },
+  "data.otservbr.global.npc.xodet.L176.346": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "La revedere și vino din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.900210Z"
+  },
+  "data.otservbr.global.npc.xodet.L177.347": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "La revedere și vino din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.900617Z"
+  },
+  "data.otservbr.global.npc.yoem.L61.188": {
+    "src_hash": "62708e79dd3db472e596d09d559f1e3a",
+    "text": "Salut |PLAYERNAME|! Ai nevoie de ceva echipament pentru casa ta?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.903528Z"
+  },
+  "data.otservbr.global.npc.yoem.L62.189": {
+    "src_hash": "0766cd691c0208c136e812d2734e77a5",
+    "text": "Aruncă o privire. Majoritatea mobilierului vine în truse la îndemână. Folosește-le în casa ta pentru a asambla mobila. Vrei să vezi doar un anumit {type} de mobilier?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.904290Z"
+  },
+  "data.otservbr.global.npc.ziyad.L101.873": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.908139Z"
+  },
+  "data.otservbr.global.scripts.actions.rookgaard.goblin.temple.quest.L25.2376": {
+    "src_hash": "9bd9442de08fedcaa4b3d38791da086a",
+    "text": "Ai găsit o geantă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.915960Z"
+  },
+  "data.otservbr.global.scripts.actions.rookgaard.goblin.temple.quest.L59.2377": {
+    "src_hash": "9bd9442de08fedcaa4b3d38791da086a",
+    "text": "Ai găsit o geantă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.916299Z"
+  },
+  "data.otservbr.global.scripts.quests.a.pirates.tail.actions.rascacoon.shortcut.L13.1980": {
+    "src_hash": "ded2b9f120cca0d28d8c1118c78bbbcf",
+    "text": "Ai nevoie de cel puțin nivelul 200 pentru a intra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.921476Z"
+  },
+  "data.otservbr.global.scripts.quests.adventures.of.galthen.actions.yselda.shortcut.L13.1754": {
+    "src_hash": "b098102bc8283f62fb35ba0a9d9b31c1",
+    "text": "Această rădăcină pare să se îngroașe și să se încoroneze în momentul în care încerci să o apuci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.922884Z"
+  },
+  "data.otservbr.global.scripts.quests.chayenne.realm.actions.reward.L16.1687": {
+    "src_hash": "af25ee5b09695cf2151c647c8f101d29",
+    "text": "Ai primit deja recompensa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.924078Z"
+  },
+  "data.otservbr.global.scripts.quests.children.of.the.revolution.actions.mission3.chest.L7.2155": {
+    "src_hash": "42dd3838d3aa4aa1f0ad19c9a81066ed",
+    "text": "Ai găsit un balon cu otravă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.924690Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.magnifier.L19.2122": {
+    "src_hash": "babb8f6619bceca2d20d80e35dbedf4e",
+    "text": "Nimic special. Această imagine pare autentică.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.931576Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.magnifier.L24.2123": {
+    "src_hash": "b5d561af2c0da7158e0a87633ace58c1",
+    "text": "Asta este. Se pare că a fost pictat de un copil!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.932046Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.misguided.L62.2109": {
+    "src_hash": "213142cf1bfe9d48b7002860d1b169c7",
+    "text": "Paralizezi bătăușul și amuleta dezvăluie adevărata față a creaturii din spatele posesiei acestei creaturi greșite.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.932666Z"
+  },
+  "data.otservbr.global.scripts.quests.cults.of.tibia.actions.torch.L18.2116": {
+    "src_hash": "4854b59cfd2c644e8e313775e6de1a6f",
+    "text": "Auzi un sunet puternic de măcinat nu foarte departe de tine. ceva foarte greu pare să se fi mutat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.933360Z"
+  },
+  "data.otservbr.global.scripts.quests.dawnport.actions.the.rare.herb.L7.2052": {
+    "src_hash": "1deab6975af73c713be793a50755bfa0",
+    "text": "Ai recoltat niște muguri florali ai plantei. Adu-i Morris pentru o recompensă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.946918Z"
+  },
+  "data.otservbr.global.scripts.quests.deeplings.worldchange.actions.questfirst.L6.2259": {
+    "src_hash": "9f9e02fa22f76e390f72963c1c599e10",
+    "text": "Ai găsit o recompensă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.950044Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.mysterious.scroll.L4.1937": {
+    "src_hash": "b565aaea5180b6481625cf2a7b07f8e4",
+    "text": "Indiferent cât de des ai încerca, nu poți descifra nimic.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.963194Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.mysterious.scroll.L8.1938": {
+    "src_hash": "f74783ab2e1d7e06aaf358d52243d5d7",
+    "text": "Descifrezi ceva! Primești un alergător care să te însoțească în călătoria ta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.963716Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.tarbaz.notes.L13.1936": {
+    "src_hash": "505f3aa556efbce55378be5a627927b5",
+    "text": "Brusc, îl vezi pe ultimul A. Totul are sens acum. Și atunci tu acum secretul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.964501Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.actions.tarbaz.notes.L7.1935": {
+    "src_hash": "40379152511299b8861f33068f43b5c3",
+    "text": "Brusc, vezi imaginea de ansamblu. Totul are sens acum. Și atunci disperi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.965014Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.lost.time.L9.2127": {
+    "src_hash": "e765991be3e63a9ff069546c348d7240",
+    "text": "Pierdetorul de timp consumă cu foame timpul și dispare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.968621Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.old.desk.L14.2136": {
+    "src_hash": "9357bd2ca0730e7628e83a029ac73173",
+    "text": "Primești deja o notă veche.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.968997Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.old.desk.L17.2137": {
+    "src_hash": "ecb7f4a78e1e64eba1ccd320dd59b2f0",
+    "text": "Pe măsură ce deschizi setul, o apariție fantomatică apare în scurt timp plutind deasupra biroului. Găsești o bancnotă veche în interiorul dăruitorului.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.969794Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.old.desk.L4.2134": {
+    "src_hash": "033f908b6837e564b466f4b91e421871",
+    "text": "Ai primit deja o cheie de argint veche.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.970189Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.old.desk.L8.2135": {
+    "src_hash": "508293e3d7ed6c045d9df2924b04b947",
+    "text": "Găsești o cheie de argint veche în interiorul dăgașului.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.970638Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.plant.L422.2141": {
+    "src_hash": "2218f4ca9795863a9640c66efff7f96d",
+    "text": "Ai plantat niște semințe în sol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.971051Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.plant.L430.2142": {
+    "src_hash": "20f382ee2143fd203f98fa3afff9cd91",
+    "text": "Mesteacănul crește pe măsură ce turnați peste el apa sclipitoare din fiolă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.971555Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.plant.L438.2143": {
+    "src_hash": "81f7826bad933ff78c3d2e6d30dfc6aa",
+    "text": "Nu puteți folosi fiola cât timp copacii au încă viață și culoare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.972174Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.plant.L442.2144": {
+    "src_hash": "dbae0926d3ed10c91f6f663ba886cd12",
+    "text": "Se pare că nu faci să crească destui copaci sau nu eliberezi papagalii.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:10.972704Z"
   }
 }

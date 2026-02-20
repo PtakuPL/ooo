@@ -75870,5 +75870,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T16:42:12.517229Z"
+  },
+  "spell.buzz.words": {
+    "src_hash": "9649bc31b35fcdfa4dc4381fe9415be9",
+    "text": "exori infir vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:42.929028Z"
+  },
+  "spell.holy_flash.name": {
+    "src_hash": "b6ea61e581046ccc47d1e52af1bab082",
+    "text": "Santo Flash",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:43:42.929255Z"
   }
 }

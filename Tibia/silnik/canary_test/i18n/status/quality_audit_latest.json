@@ -1,59 +1,18 @@
 {
-  "timestamp": "2026-02-20T16:42:50.886577Z",
+  "timestamp": "2026-02-20T16:44:10.744744Z",
   "checked_entries": 100,
-  "issues_found": 25,
+  "issues_found": 20,
   "issues_by_type": {
-    "identical_to_en_exempt": 21,
-    "artifact_token": 18,
-    "identical_to_en": 7,
-    "suspicious_log_high": 128,
+    "identical_to_en": 4,
+    "identical_to_en_exempt": 3,
+    "artifact_token": 16,
+    "suspicious_log_high": 127,
     "suspicious_log_critical": 72,
-    "suspicious_rejected_high": 41,
-    "suspicious_rejected_critical": 159
+    "suspicious_log_low": 1,
+    "suspicious_rejected_critical": 166,
+    "suspicious_rejected_high": 34
   },
   "issues": [
-    {
-      "key": "scripts.auto_loot.msg_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "Autoloot mode set to ALL.",
-      "translated": "Modo de autoloot establecido a TODO."
-    },
-    {
-      "key": "scripts.prince_drazzak_summon.say_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "CRUSH THEM ALL!",
-      "translated": "¡¡APLASTADLES A TODOS!!"
-    },
-    {
-      "key": "raid.barba_svar.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barba Svar",
-      "translated": "Barba Svar"
-    },
-    {
-      "key": "raid.barba_bittermor.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Barba Bittermor",
-      "translated": "Barba Bittermor"
-    },
-    {
-      "key": "raid.wild_horses.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Wild Horses",
-      "translated": "Wild Horses"
-    },
-    {
-      "key": "raid.sir_valorcrest.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
     {
       "key": "raid.zevelon_duskbringer.name",
       "lang": "es",
@@ -186,6 +145,13 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "spell.buzz.words",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "exori infir vis",
+      "translated": "exori infir vis"
     }
   ],
   "threshold": 10,

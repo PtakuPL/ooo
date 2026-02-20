@@ -153894,5 +153894,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T19:46:38.719495Z"
+  },
+  "item.39556.name": {
+    "src_hash": "0d258c304f3ca5be0d9adc820abc6b9d",
+    "text": "coral lechuga de palma",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:55:24.602798Z"
+  },
+  "item.13772.name": {
+    "src_hash": "4e4fb72e3c1f49820ea1cae2844c1d48",
+    "text": "cantante de hechizos profundo muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:55:31.653780Z"
+  },
+  "item.13773.name": {
+    "src_hash": "4e4fb72e3c1f49820ea1cae2844c1d48",
+    "text": "cantante de hechizos profundo muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:55:35.471590Z"
+  },
+  "item.13774.name": {
+    "src_hash": "4e4fb72e3c1f49820ea1cae2844c1d48",
+    "text": "cantante de hechizos profundo muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:55:35.471904Z"
+  },
+  "item.138.desc": {
+    "src_hash": "389aaeeed0088e546fffaa5e87801226",
+    "text": "Es la botella que te dio Boozer para la cerveza marrón.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:55:35.472284Z"
+  },
+  "item.13844.desc": {
+    "src_hash": "e6e62717bd57e0a20c779bd981b1b809",
+    "text": "Parecen tener efectos extraños en otras plantas y también pueden convertirse en una planta propia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:55:35.472765Z"
+  },
+  "item.139.desc": {
+    "src_hash": "2ad4d54729d4a18de4f9fb5fef449c3c",
+    "text": "Este es el viejo casco de minero de Budrik.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:55:35.473174Z"
+  },
+  "item.140.desc": {
+    "src_hash": "c0b89e9ef530b1575bb04fc07a8feda8",
+    "text": "Es la parcela de la torre de vigilancia de la Femor Hills",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:55:38.355558Z"
+  },
+  "item.14008.desc": {
+    "src_hash": "7bf8db3d65d88cea788b1160c811bd35",
+    "text": "El sello usado por los hechiceros de las profundidades.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:55:38.356191Z"
   }
 }

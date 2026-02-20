@@ -36158,5 +36158,117 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T21:06:42.627860Z"
+  },
+  "npc.rahkem.stdmod_33": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Detta är en speciell välsignelse som jag kan skänka dig när du har fått åtminstone en av de andra välsignelserna och som fungerar lite annorlunda. ... \\z\n\tDet fungerar bara när du dödas av andra äventyrare, vilket betyder att minst hälften av skadan som ledde till din död orsakades av andra, inte av monster eller miljön. ... \\z\n\t{twist of fate} kommer inte att minska dödsstraffet som de andra välsignelserna, utan istället hindra dig från att förlora dina andra välsignelser såväl som förlustamuletten, om du bär en. Det kostar lika mycket som de andra välsignelserna. ... \\z\n\tSkulle du vilja få det skyddet för ett offer på |PVPBLESSCOST| guld, barn?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:11:21.799745Z"
+  },
+  "npc.rahkem.stdmod_4": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Håll din äventyrarsten väl.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:11:21.800220Z"
+  },
+  "npc.rahkem.stdmod_5": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vill du byta ut din äventyrarsten gratis?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:11:21.800800Z"
+  },
+  "npc.rahkem.stdmod_6": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:11:21.801182Z"
+  },
+  "npc.rahkem.stdmod_8": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vill du byta ut din äventyrarsten mot 30 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:11:21.801835Z"
+  },
+  "npc.rahkem.stdmod_9": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:11:21.802210Z"
+  },
+  "npc.rapanaio_boat.stdmod_2": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Söker du en passage till {0} för {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:11:21.803393Z"
+  },
+  "npc.rapanaio_boat.stdmod_3": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vi skulle vilja tjäna dig lite tid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:11:21.803800Z"
+  },
+  "npc.rapanaio_isle_of_evil.stdmod_2": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Söker du en passage till {0} för {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:11:21.804993Z"
+  },
+  "npc.rapanaio_isle_of_evil.stdmod_3": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vi skulle vilja tjäna dig lite tid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:11:21.805463Z"
+  },
+  "npc.razan.multi_6": {
+    "src_hash": "84bef6784099863dfeb03302de8845ca",
+    "text": "Förstod du allt jag sa till dig och är villig att hantera denna uppgift?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:11:21.818250Z"
+  },
+  "npc.robson.voice_1": {
+    "src_hash": "0956ea7b6f3efbdd2358779cf3a7afd7",
+    "text": "<mumlar>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:11:21.824882Z"
+  },
+  "npc.rock_in_a_hard_place.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:11:21.825645Z"
+  },
+  "npc.rock_with_a_soft_spot.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:11:21.827080Z"
   }
 }

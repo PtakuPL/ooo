@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T21:11:04.537813Z",
-  "window_start_utc": "2026-02-20T20:11:03.811140Z",
-  "window_end_utc": "2026-02-20T21:11:03.811140Z",
+  "timestamp": "2026-02-20T21:12:25.992617Z",
+  "window_start_utc": "2026-02-20T20:12:25.185176Z",
+  "window_end_utc": "2026-02-20T21:12:25.185176Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,14 +9,14 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 164,
-  "rejected_entries_raw": 434,
-  "suspicious_entries": 3558,
-  "suspicious_entries_raw": 27773,
-  "guard_fail_entries": 129,
-  "guard_fail_sum": 5221,
+  "rejected_entries_raw": 447,
+  "suspicious_entries": 3107,
+  "suspicious_entries_raw": 25248,
+  "guard_fail_entries": 131,
+  "guard_fail_sum": 5249,
   "by_type": {
-    "identical_to_en": 140,
     "word_salad": 7,
+    "identical_to_en": 140,
     "mixed_language": 7,
     "contains_tibia_proper_noun": 6,
     "mixed_scripts": 7,
@@ -35,10 +35,10 @@
     "sv": 15
   },
   "by_category": {
-    "npc.json": 4,
     "books.json": 1,
     "otclient_modules.json": 30,
     "scripts.json": 14,
+    "npc.json": 4,
     "items.json": 28,
     "server.json": 17,
     "monsters.json": 30,
@@ -130,13 +130,6 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "otclient_modules.bestiary.tr_7",
       "count": 2,
       "types": {
@@ -152,6 +145,13 @@
     },
     {
       "key": "scripts.actions_resonance_chamber.say_1",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2

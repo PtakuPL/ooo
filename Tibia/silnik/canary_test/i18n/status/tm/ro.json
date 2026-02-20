@@ -72710,5 +72710,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T21:27:32.992679Z"
+  },
+  "otclient_modules.prey.tr_13": {
+    "src_hash": "d0f2e5376298c880665077b565ffd7dd",
+    "text": "Blocat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:28:44.948769Z"
+  },
+  "otclient_modules.character_otui.tr_38": {
+    "src_hash": "591e428ab7ae1bfb6b05f759532cafeb",
+    "text": "Clasa 3: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:29:00.444693Z"
+  },
+  "otclient_modules.character_otui.tr_39": {
+    "src_hash": "5cc77be3819f331003d1995823f63b27",
+    "text": "Clasa 2: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:29:00.444892Z"
+  },
+  "otclient_modules.character_otui.tr_4": {
+    "src_hash": "d0c35dceccfc2b8aeadb9ead07e1c9c4",
+    "text": "Angajați achiziționați:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:29:00.445159Z"
+  },
+  "otclient_modules.character_otui.tr_40": {
+    "src_hash": "522d9da85e11937f88e38de98634e27f",
+    "text": "Clasa 1: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:29:05.502898Z"
+  },
+  "otclient_modules.character_otui.tr_41": {
+    "src_hash": "4a77238b5c1da6c73723e228d573038f",
+    "text": "Puncte de realizare: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:29:05.503234Z"
+  },
+  "otclient_modules.character_otui.tr_42": {
+    "src_hash": "511924d4430637cef309c7e64fe5c38f",
+    "text": "Pagina 1 / 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:29:05.503667Z"
   }
 }

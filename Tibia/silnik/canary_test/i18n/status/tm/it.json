@@ -81702,5 +81702,29 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:18:20.409362Z"
+  },
+  "quests.rookie_guard.m06.exit_time": {
+    "src_hash": "17007160bd3124ad631c587fa066a70e",
+    "text": "Hai raggiunto l'uscita in tempo! Uff... torniamo a Tom.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:20:16.971149Z"
+  },
+  "quests.soul_war.dread_tear_apart": {
+    "src_hash": "97b3befc9e1b92dabf46f2030f01d40f",
+    "text": "Il tormento del Dread comincia a farti a pezzi!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:20:17.027714Z"
+  },
+  "quests.soul_war.msg_3": {
+    "src_hash": "97b3befc9e1b92dabf46f2030f01d40f",
+    "text": "Il tormento del Dread comincia a farti a pezzi!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:20:17.043346Z"
   }
 }

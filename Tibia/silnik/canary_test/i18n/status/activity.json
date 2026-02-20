@@ -1,9 +1,9 @@
 {
-  "category": "ro",
-  "cycle": 8,
+  "category": "pl",
+  "cycle": 9,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-20T23:21:56Z",
+  "generated_at_utc": "2026-02-20T23:22:51Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -12,6 +12,56 @@
     "unit": "units"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 9,
+      "file": "questlog.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-20T23:22:44Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 9,
+      "file": "questlog.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-20T23:22:43Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 9,
+      "file": "questlog.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-20T23:22:42Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 9,
+      "file": "questlog.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-20T23:22:26Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 9,
+      "file": "questlog.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-20T23:22:26Z"
+    },
     {
       "action": "update",
       "category": "es",
@@ -61,56 +111,6 @@
       "result": "ok",
       "stage": "parallel_start",
       "t": "2026-02-20T23:20:57Z"
-    },
-    {
-      "action": "update",
-      "category": "ro",
-      "cycle": 8,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-02-20T23:20:56Z"
-    },
-    {
-      "action": "update",
-      "category": "ro",
-      "cycle": 8,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-20T23:20:49Z"
-    },
-    {
-      "action": "update",
-      "category": "ro",
-      "cycle": 8,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-20T23:20:48Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 7,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-20T23:20:12Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 7,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-20T23:20:12Z"
     }
   ],
   "stage": "cycle_end",

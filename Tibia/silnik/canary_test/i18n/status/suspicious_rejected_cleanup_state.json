@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-20T23:21:54.788562Z",
-  "last_cycle": 8,
+  "timestamp": "2026-02-20T23:22:48.116348Z",
+  "last_cycle": 9,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -370,6 +370,8 @@
       "data.otservbr.global.npc.charles.L142.1490",
       "data.otservbr.global.npc.chartan.L107.1622",
       "data.otservbr.global.npc.chavis.L118.1346"
-    ]
+    ],
+    "pl|questlog.json": [],
+    "es|questlog.json": []
   }
 }

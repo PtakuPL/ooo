@@ -154678,5 +154678,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T23:17:42.810026Z"
+  },
+  "questlog.quest_11.mission_19.state_2": {
+    "src_hash": "a1721900165c17ec2018086a9746faab",
+    "text": "Has cazado con éxito a 400 exploradores quara.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:22:47.749497Z"
+  },
+  "questlog.quest_11.mission_24.state_2": {
+    "src_hash": "9b32eeb509a05bd6b417c930fe000509",
+    "text": "Has cazado con éxito a 400 viudas que lloraban.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:22:47.758746Z"
   }
 }

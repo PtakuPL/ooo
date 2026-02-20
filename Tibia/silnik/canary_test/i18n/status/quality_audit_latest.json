@@ -1,16 +1,30 @@
 {
-  "timestamp": "2026-02-20T18:26:50.778653Z",
+  "timestamp": "2026-02-20T18:27:49.068235Z",
   "checked_entries": 100,
-  "issues_found": 46,
+  "issues_found": 51,
   "issues_by_type": {
-    "artifact_token": 46,
-    "identical_to_en_exempt": 2,
-    "suspicious_log_critical": 41,
-    "suspicious_log_high": 28,
-    "suspicious_rejected_critical": 76,
-    "suspicious_rejected_high": 16
+    "identical_to_en_exempt": 3,
+    "artifact_token": 51,
+    "suspicious_log_high": 54,
+    "suspicious_log_critical": 61,
+    "suspicious_rejected_high": 15,
+    "suspicious_rejected_critical": 75
   },
   "issues": [
+    {
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.say_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
+    },
     {
       "key": "npc.captain_haba_open_sea.starboard_1",
       "lang": "es",
@@ -220,6 +234,27 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "monster.the_pit_lord.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "I'LL GET YOU ALL!",
+      "translated": "¡LOS CONSEGUIRÉ A TODOS!"
+    },
+    {
+      "key": "monster.deathbringer.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "YOU ALL WILL DIE!",
+      "translated": "¡TODOS MORIRÉIS!"
+    },
+    {
+      "key": "monster.dracola.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "YOU ARE ALL DOOMED!",
+      "translated": "¡ESTÁIS TODOS CONDENADOS!"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

@@ -154742,5 +154742,21 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T23:45:40.064142Z"
+  },
+  "scripts.actions_vocation_reward.msg_2": {
+    "src_hash": "599cf90440973dd912f8996689e2fa2b",
+    "text": "Has encontrado un {}. No hay lugar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:13.065877Z"
+  },
+  "scripts.citizen.msg_2": {
+    "src_hash": "a77c39e3ccc38694ad61f849b12281c3",
+    "text": "Has cambiado tu ciudad a {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:13.066215Z"
   }
 }

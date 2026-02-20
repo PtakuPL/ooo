@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T23:54:47.206285Z",
-  "window_start_utc": "2026-02-20T22:54:46.529152Z",
-  "window_end_utc": "2026-02-20T23:54:46.529152Z",
+  "timestamp": "2026-02-20T23:55:32.806318Z",
+  "window_start_utc": "2026-02-20T22:55:32.139218Z",
+  "window_end_utc": "2026-02-20T23:55:32.139218Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,11 +9,11 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 36,
-  "rejected_entries_raw": 40,
+  "rejected_entries_raw": 39,
   "suspicious_entries": 4053,
-  "suspicious_entries_raw": 14298,
-  "guard_fail_entries": 91,
-  "guard_fail_sum": 2892,
+  "suspicious_entries_raw": 14238,
+  "guard_fail_entries": 93,
+  "guard_fail_sum": 2905,
   "by_type": {
     "identical_to_en": 25,
     "mixed_language": 9,
@@ -25,17 +25,17 @@
     "google_translate": 36
   },
   "by_language": {
-    "es": 8,
     "it": 4,
     "ro": 7,
     "ru": 1,
+    "es": 8,
     "pl": 16
   },
   "by_category": {
-    "npc.json": 3,
     "client.json": 2,
     "php.json": 7,
     "chatchannels.json": 1,
+    "npc.json": 3,
     "items.json": 22,
     "server.json": 1
   },
@@ -67,18 +67,18 @@
   ],
   "top_keys": [
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "php.mailer.text1",
       "count": 2,
       "types": {
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
       }
     },
     {

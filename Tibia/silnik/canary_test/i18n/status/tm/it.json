@@ -80078,5 +80078,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T20:52:57.334404Z"
+  },
+  "item.4995.name": {
+    "src_hash": "d5578710397e82bd3e6da8cee91df34d",
+    "text": "Vaso canopo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:44.140284Z"
+  },
+  "item.4996.name": {
+    "src_hash": "43a28886c43adaea8f8fe35606346a98",
+    "text": "resti di un vaso canopo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:44.140660Z"
+  },
+  "item.5.name": {
+    "src_hash": "6b157916b43b09df5a22f658ccb92b64",
+    "text": "sangue",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:44.140935Z"
+  },
+  "item.5102.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:44.146721Z"
+  },
+  "item.5103.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:44.147118Z"
+  },
+  "item.5111.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:58:44.149102Z"
   }
 }

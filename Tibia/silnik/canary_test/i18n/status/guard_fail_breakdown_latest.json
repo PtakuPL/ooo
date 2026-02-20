@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-02-20T19:35:30.876381Z",
-  "window_start_utc": "2026-02-20T18:35:30.192330Z",
-  "window_end_utc": "2026-02-20T19:35:30.192330Z",
+  "timestamp": "2026-02-20T19:36:25.797690Z",
+  "window_start_utc": "2026-02-20T18:36:25.110738Z",
+  "window_end_utc": "2026-02-20T19:36:25.110738Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 156,
-  "rejected_entries_raw": 345,
-  "suspicious_entries": 3429,
-  "suspicious_entries_raw": 25208,
+  "rejected_entries": 165,
+  "rejected_entries_raw": 349,
+  "suspicious_entries": 3407,
+  "suspicious_entries_raw": 25139,
   "guard_fail_entries": 133,
-  "guard_fail_sum": 3226,
+  "guard_fail_sum": 3239,
   "by_type": {
-    "identical_to_en": 134,
+    "identical_to_en": 143,
     "word_salad": 7,
     "contains_tibia_proper_noun": 6,
     "mixed_language": 8,
@@ -23,35 +23,35 @@
     "cyrillic_latin_mix": 7
   },
   "by_source": {
-    "google_translate": 156
+    "google_translate": 165
   },
   "by_language": {
-    "ro": 51,
     "es": 34,
-    "pl": 32,
+    "pl": 38,
     "it": 24,
+    "ro": 51,
     "ru": 7,
-    "sv": 8
+    "sv": 11
   },
   "by_category": {
-    "items.json": 26,
     "npc.json": 4,
     "spells.json": 53,
-    "monsters.json": 23,
+    "items.json": 26,
+    "monsters.json": 26,
     "server.json": 17,
     "quests.json": 3,
     "scripts.json": 6,
     "books.json": 1,
-    "otclient_modules.json": 23
+    "otclient_modules.json": 29
   },
   "by_severity": {
-    "CRITICAL": 141,
+    "CRITICAL": 150,
     "HIGH": 15
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 134
+      "count": 143
     },
     {
       "type": "mixed_language",
@@ -180,6 +180,13 @@
       }
     },
     {
+      "key": "monster.deathspawn.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
       "key": "monster.sorcerer_familiar.name",
       "count": 2,
       "types": {
@@ -213,13 +220,6 @@
     },
     {
       "key": "item.10388.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.10391.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

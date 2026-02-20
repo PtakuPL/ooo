@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-20T19:34:30.221859Z",
-  "cycle_counter": 6138,
-  "last_target_key": "ro:otclient_modules.json",
-  "last_pending_total": 1254,
-  "last_tier": 2,
+  "timestamp": "2026-02-20T19:36:03.719478Z",
+  "cycle_counter": 6141,
+  "last_target_key": "pl:otclient_modules.json",
+  "last_pending_total": 49,
+  "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 183,
   "active_candidates_count": 172,
@@ -12,7 +12,7 @@
   "guard_fail_blacklist": {
     "es:items.json": 6143,
     "es:server.json": 6152,
-    "ro:monsters.json": 6139,
+    "ro:monsters.json": 6149,
     "pl:spells.json": 6143
   },
   "tier_config": {
@@ -39,7 +39,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 111,
+  "cache_cycle": 112,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -205,7 +205,7 @@
       "pl": 87.82,
       "es": 84.75,
       "ru": 50.35,
-      "ro": 43.04,
+      "ro": 43.05,
       "it": 52.15,
       "sr": 45.44,
       "sv": 28.64

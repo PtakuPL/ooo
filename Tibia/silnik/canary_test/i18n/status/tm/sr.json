@@ -175334,5 +175334,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:46:07.055716Z"
+  },
+  "monster.lizard_sentinel.voice_1": {
+    "src_hash": "e762b0133b132a4bfc8e79d8d8e177b6",
+    "text": "Тсссс!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:35:58.512398Z"
+  },
+  "monster.lizard_legionnaire.voice_1": {
+    "src_hash": "e762b0133b132a4bfc8e79d8d8e177b6",
+    "text": "Тсссс!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:35:58.516832Z"
   }
 }

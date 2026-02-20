@@ -35374,5 +35374,45 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T19:23:00.725751Z"
+  },
+  "monster.munster.desc": {
+    "src_hash": "ad3f071289dbbac276fadf870913fbf9",
+    "text": "Munster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:35:48.045023Z"
+  },
+  "monster.diblis_the_fair.desc": {
+    "src_hash": "5cd6555c19e0b434371a7a34d538792b",
+    "text": "Mässan Diblis",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:35:48.062519Z"
+  },
+  "monster.teleskor.name": {
+    "src_hash": "39b531430b46066d965dffc91ef989fc",
+    "text": "Teleskor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:35:48.076080Z"
+  },
+  "monster.teleskor.desc": {
+    "src_hash": "39b531430b46066d965dffc91ef989fc",
+    "text": "Teleskor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:35:48.076491Z"
+  },
+  "monster.yielothax.voice_1": {
+    "src_hash": "bda662559164a8a7f8a888756cc276c7",
+    "text": "IEEH!! Iiih iih ih iiih!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:35:48.096024Z"
   }
 }

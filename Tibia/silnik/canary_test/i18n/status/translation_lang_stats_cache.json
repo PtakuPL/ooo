@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T22:02:50.088041Z",
+  "timestamp": "2026-02-20T22:03:44.864081Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 50,
-  "cache_misses": 2,
-  "file_cache_hits": 1973,
-  "file_cache_misses": 3,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 1975,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771624869261242965,
+          1771625011445517688,
           1847374
         ],
         [
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771624869261242965,
+            1771625011445517688,
             1847374
           ],
           "row": {

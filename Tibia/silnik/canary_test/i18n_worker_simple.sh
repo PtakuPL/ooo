@@ -2166,22 +2166,48 @@ except Exception:
     recent_hidden_threshold = 5
     recent_hidden_alert_latest = False
 
+def _iter_jsonl_tail_lines(path: str):
+    max_bytes = 6 * 1024 * 1024
+    try:
+        max_bytes = int(os.environ.get("STATUS_JSONL_SCAN_MAX_BYTES", str(max_bytes)) or max_bytes)
+    except Exception:
+        max_bytes = 6 * 1024 * 1024
+    if max_bytes < 256 * 1024:
+        max_bytes = 256 * 1024
+
+    try:
+        with open(path, "rb") as f:
+            f.seek(0, os.SEEK_END)
+            total_size = f.tell()
+            start_pos = max(0, total_size - max_bytes)
+            f.seek(start_pos)
+            raw = f.read()
+
+        if start_pos > 0:
+            first_nl = raw.find(b"\n")
+            if first_nl != -1:
+                raw = raw[first_nl + 1:]
+
+        for line in raw.decode("utf-8", errors="replace").splitlines():
+            yield line
+    except Exception:
+        return
+
 recent_hidden_series = []
 try:
     report_path = os.path.join(status_translation_dir, "translation_recent_report.jsonl")
     if os.path.exists(report_path):
-        with open(report_path, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    obj = json.loads(line)
-                except Exception:
-                    continue
-                if "recent_hidden_high_critical" not in obj:
-                    continue
-                recent_hidden_series.append(int(obj.get("recent_hidden_high_critical", 0) or 0))
+        for line in _iter_jsonl_tail_lines(report_path):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                obj = json.loads(line)
+            except Exception:
+                continue
+            if "recent_hidden_high_critical" not in obj:
+                continue
+            recent_hidden_series.append(int(obj.get("recent_hidden_high_critical", 0) or 0))
     recent_hidden_series = recent_hidden_series[-40:]
 except Exception:
     recent_hidden_series = []
@@ -2261,18 +2287,17 @@ def _jsonl_window(path: str, cutoff_dt: datetime):
     if not os.path.exists(path):
         return rows
     try:
-        with open(path, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    obj = json.loads(line)
-                except Exception:
-                    continue
-                ts = _parse_iso_any(obj.get("timestamp"))
-                if ts and ts >= cutoff_dt:
-                    rows.append(obj)
+        for line in _iter_jsonl_tail_lines(path):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                obj = json.loads(line)
+            except Exception:
+                continue
+            ts = _parse_iso_any(obj.get("timestamp"))
+            if ts and ts >= cutoff_dt:
+                rows.append(obj)
     except Exception:
         pass
     return rows
@@ -2511,28 +2536,15 @@ pack_regression_payload = {
 
 try:
     critical_by_lang = {"pl": 0, "es": 0}
-    rejected_path = os.path.join(status_translation_dir, "suspicious_rejected.jsonl")
-    if os.path.exists(rejected_path):
-        with open(rejected_path, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    row = json.loads(line)
-                except Exception:
-                    continue
-                lang = str(row.get("lang", "")).lower()
-                if lang not in critical_by_lang:
-                    continue
-                if str(row.get("severity", "")).upper() != "CRITICAL":
-                    continue
-                row_dt = _parse_iso_any(row.get("timestamp"))
-                if strict_cutoff and row_dt and row_dt < strict_cutoff:
-                    continue
-                if strict_now and row_dt and row_dt > strict_now:
-                    continue
-                critical_by_lang[lang] += 1
+    for row in strict_rejected_entries:
+        if not isinstance(row, dict):
+            continue
+        lang = str(row.get("lang", "")).lower()
+        if lang not in critical_by_lang:
+            continue
+        if str(row.get("severity", "")).upper() != "CRITICAL":
+            continue
+        critical_by_lang[lang] += 1
 
     review_dir = os.path.join(I18N_DIR, "overrides", "review_queue")
     for lang in ("pl", "es"):
@@ -23722,6 +23734,10 @@ SAVEPY
                                 exit 0
                             fi
                             git add -A 2>/dev/null
+                            # Nie commituj ciężkich logów, które blokują push na GitHub (>100MB)
+                            for _skip in i18n/status/suspicious_log.jsonl i18n/status/suspicious_rejected.jsonl; do
+                                git reset -q -- "$_skip" 2>/dev/null || true
+                            done
                             # Zlicz TOTAL kluczy ze wszystkich JSON (nie tylko NPC completed)
                             TOTAL_KEYS=$(python3 -c "
 import json, os
@@ -23744,6 +23760,10 @@ print(total)
                                 exit 0
                             fi
                             git add -A 2>/dev/null
+                            # Nie commituj ciężkich logów, które blokują push na GitHub (>100MB)
+                            for _skip in i18n/status/suspicious_log.jsonl i18n/status/suspicious_rejected.jsonl; do
+                                git reset -q -- "$_skip" 2>/dev/null || true
+                            done
                             # Zlicz TOTAL kluczy ze wszystkich JSON (nie tylko NPC completed)
                             TOTAL_KEYS=$(python3 -c "
 import json, os

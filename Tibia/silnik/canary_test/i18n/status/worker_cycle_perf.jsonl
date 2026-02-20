@@ -9629,3 +9629,6 @@
 {"timestamp": "2026-02-19T22:49:05.322865Z", "cycle": 11, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 2351, "detail": "count=server.json"}
 {"timestamp": "2026-02-19T22:49:59.269424Z", "cycle": 11, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "mode_run", "duration_ms": 53774, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-19T22:50:09.003255Z", "cycle": 11, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "status_update", "duration_ms": 9467, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-20T16:15:34.134494Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "dispatch", "duration_ms": 1406, "detail": "count=npc.json"}
+{"timestamp": "2026-02-20T16:18:41.258318Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "mode_run", "duration_ms": 186981, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-20T16:18:47.513558Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "status_update", "duration_ms": 5102, "detail": "throttle_every=1"}

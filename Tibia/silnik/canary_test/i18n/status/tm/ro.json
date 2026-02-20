@@ -1369,35 +1369,35 @@
   },
   "npc.lugri.say_13": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
+    "text": "Nu il ai...",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:46:54.077983Z"
+    "updated_at": "2026-02-20T16:15:48.625359Z"
   },
   "npc.lugri.say_15": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
+    "text": "Nu il ai...",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:46:54.078380Z"
+    "updated_at": "2026-02-20T16:15:48.626077Z"
   },
   "npc.lugri.say_17": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
+    "text": "Nu il ai...",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:46:54.078744Z"
+    "updated_at": "2026-02-20T16:15:48.626749Z"
   },
   "npc.lugri.say_19": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
+    "text": "Nu il ai...",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:46:54.079100Z"
+    "updated_at": "2026-02-20T16:15:48.627257Z"
   },
   "npc.lukosch.say_5": {
     "src_hash": "12d673409d71f1fc127ebad108378378",
@@ -66054,5 +66054,277 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-19T22:43:50.182415Z"
+  },
+  "npc.lorek.stdmod_2": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Poate alta data.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.586309Z"
+  },
+  "npc.lorietta.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.588050Z"
+  },
+  "npc.lorietta.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.588808Z"
+  },
+  "npc.lorietta.stdmod_11": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Ești rănit, copilul meu. Îți voi vindeca rănile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.589645Z"
+  },
+  "npc.lorietta.stdmod_12": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Nu arăți așa de rău. Scuze, nu te pot ajuta. Dar dacă cauți protecție suplimentară, ar trebui să mergi pe {pilgrimage} de cenușă sau să obții protecția {twist of fate} aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.590518Z"
+  },
+  "npc.lorietta.stdmod_13": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Ori de câte ori primești o rană letală, forța ta vitală este deteriorată și există șansa să pierzi o parte din echipamentul tău. Cu fiecare dintre cele cinci {blessings} pe care le aveți, această daune și șansa de pierdere vor fi reduse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.591576Z"
+  },
+  "npc.lorietta.stdmod_15": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Văd că ai primit scutul spiritual în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.592371Z"
+  },
+  "npc.lorietta.stdmod_16": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Simt că druidii de la nord de Carlin ți-au oferit Îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.593027Z"
+  },
+  "npc.lorietta.stdmod_17": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Văd că ai primit binecuvântarea celor doi sori în solar lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.593690Z"
+  },
+  "npc.lorietta.stdmod_18": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Îmi dau seama că scânteia phoenixului ți-a fost deja dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.594381Z"
+  },
+  "npc.lorietta.stdmod_19": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Simt că ai vorbit deja cu pustnicul Eremo de pe insula Cormaya și ai primit această binecuvântare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.595153Z"
+  },
+  "npc.lorietta.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Amenda. Sunteți liber să refuzați oferta mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.595630Z"
+  },
+  "npc.lorietta.stdmod_20": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puteți cere binecuvântarea scuturilor spirituale în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.596462Z"
+  },
+  "npc.lorietta.stdmod_21": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druizii la nord de Carlin vă vor oferi îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.597012Z"
+  },
+  "npc.lorietta.stdmod_22": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puteți cere binecuvântarea celor doi sori în bronzul de lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.597654Z"
+  },
+  "npc.lorietta.stdmod_23": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Scânteia phoenixului este dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.598220Z"
+  },
+  "npc.lorietta.stdmod_25": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Aceasta este o binecuvântare specială pe care ți-o pot acorda odată ce ai obținut cel puțin una dintre celelalte binecuvântări și care funcționează puțin diferit. ... \\z\n\tFuncționează doar atunci când ești ucis de alți aventurieri, ceea ce înseamnă că cel puțin jumătate din daunele care au dus la moartea ta au fost cauzate de alții, nu de monștri sau de mediu. ... \\z\n\t{twist of fate} nu va reduce pedeapsa cu moartea la fel ca celelalte binecuvântări, ci, în schimb, vă va împiedica să vă pierdeți celelalte binecuvântări, precum și amuleta pierderii, dacă purtați una. Costa la fel ca si celelalte binecuvantari. ... \\z\n\tȚi-ar plăcea să primești acea protecție pentru un sacrificiu de |PVPBLESSCOST| aur, copile?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.600642Z"
+  },
+  "npc.lorietta.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Păstrează-ți bine piatra de aventurier.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.601186Z"
+  },
+  "npc.lorietta.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vrei să înlocuiești gratis piatra de aventurier?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.601684Z"
+  },
+  "npc.lorietta.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Poftim. Ai grijă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.602018Z"
+  },
+  "npc.lorietta.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vrei să înlocuiești piatra de aventurier cu 30 de aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.602737Z"
+  },
+  "npc.lorietta.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Poftim. Ai grijă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.603217Z"
+  },
+  "npc.lorietta.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Scuze, nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.603622Z"
+  },
+  "npc.lubo.say_10": {
+    "src_hash": "d5ded97668b3577c5a3a5f487d5e1121",
+    "text": "Mare! Bine, am nevoie de ceva timp să termin acest rucsac pentru tine. Vino să mă întrebi mai târziu, bine?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.610006Z"
+  },
+  "npc.lubo.say_11": {
+    "src_hash": "0673fa365b1423afe8658fe30aa444a2",
+    "text": "Știu, e destul de multă muncă... nu-ți pierde inima, continuă să omori minotauri și în cele din urmă vei avea noroc. Preferă să cumperi un rucsac normal pentru 10 aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.610836Z"
+  },
+  "npc.lubo.say_2": {
+    "src_hash": "b72e7f8fb14c914d28d67e2587789e92",
+    "text": "Ah, corect, aproape că am uitat de rucsac! Mi-ați adus 100 de bucăți de piele de minotaur așa cum v-am cerut?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.611818Z"
+  },
+  "npc.lubo.say_3": {
+    "src_hash": "eb55d899c046f1ae90f82e6cdeffbcb4",
+    "text": "Tocmai la timp! Rucsacul tău este terminat. Poftim, sper să vă placă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.612365Z"
+  },
+  "npc.lubo.say_4": {
+    "src_hash": "4a723411c4e5e088b4f0f2974ca16068",
+    "text": "Uh... Nu mă așteptam să te întorci așa devreme. Îmi pare rău, dar încă nu am terminat cu rucsacul tău. Fac tot ce pot, am promis.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.613069Z"
+  },
+  "npc.lubo.say_5": {
+    "src_hash": "a422cba09f0199c184a1800b12dc405d",
+    "text": "Îmi pare rău, dar nu pot face decât un rucsac de persoană, altfel ar trebui să-mi închid magazinul și să deschid o fabrică de piele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.613770Z"
+  },
+  "npc.lubo.say_6": {
+    "src_hash": "848c7b73e272a8a1b769639e859d49e8",
+    "text": "Ei bine, dacă îți place foarte mult acest rucsac, aș putea să-ți fac unul, dar pielea de minotaur este greu de găsit în zilele noastre. Ești dispus să depui ceva de lucru în asta?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.614832Z"
+  },
+  "npc.lubo.say_7": {
+    "src_hash": "f985eb8b80214d769af000c03e0301e1",
+    "text": "Bine atunci, dacă îmi aduci 100 de bucăți de piele fină de minotaur, voi vedea ce pot face pentru tine. Probabil că trebuie să ucizi foarte mulți minotauri, totuși... așa că mult noroc!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.616599Z"
+  },
+  "npc.lubo.say_8": {
+    "src_hash": "469e693a0673803c34829dd52fdd320e",
+    "text": "Îmi pare rău, dar nu conduc un birou de asistență socială, știi... fără durere, fără câștig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.617776Z"
+  },
+  "npc.lubo.say_9": {
+    "src_hash": "9ff43a2d5c70bf1b382016e7f7050bf9",
+    "text": "Ne pare rău, dar încă nu este suficientă piele pentru a face unul dintre aceste rucsacuri. Preferă să cumperi un rucsac normal pentru 10 aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.619221Z"
+  },
+  "npc.lugri.say_21": {
+    "src_hash": "235c3e61bedc3e4295235cc4c6e633dc",
+    "text": "Atunci nu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:15:48.627846Z"
   }
 }

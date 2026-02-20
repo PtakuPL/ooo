@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T22:18:01.828545Z",
+  "checked_at": "2026-02-20T16:18:28.287074Z",
   "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -57,6 +57,123 @@
       "en": "Minstrel",
       "pl": "Bard",
       "lang": "Minstrel"
+    },
+    {
+      "key": "achievement.32.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Efreet Ally",
+      "pl": "Sojusznik Efreeta",
+      "lang": "Efreet Ally"
+    },
+    {
+      "key": "achievement.37.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bearhugger",
+      "pl": "Niedźwiedź",
+      "lang": "Bearhugger"
+    },
+    {
+      "key": "achievement.38.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ghostwhisperer",
+      "pl": "Zaklinacz duchów",
+      "lang": "Ghostwhisperer"
+    },
+    {
+      "key": "achievement.42.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Worm Whacker",
+      "pl": "Pogromca robaków",
+      "lang": "Worm Whacker"
+    },
+    {
+      "key": "achievement.45.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Perfect Fool",
+      "pl": "Idealny głupiec",
+      "lang": "Perfect Fool"
+    },
+    {
+      "key": "achievement.46.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mathemagician",
+      "pl": "Matematyk",
+      "lang": "Mathemagician"
+    },
+    {
+      "key": "achievement.47.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Archpostman",
+      "pl": "Arcypoczta",
+      "lang": "Archpostman"
+    },
+    {
+      "key": "achievement.48.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Matchmaker",
+      "pl": "Swat",
+      "lang": "Matchmaker"
+    },
+    {
+      "key": "achievement.50.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Razing!",
+      "pl": "Niszczenie!",
+      "lang": "Razing!"
+    },
+    {
+      "key": "achievement.53.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Scrapper",
+      "pl": "Skrobaczka",
+      "lang": "Scrapper"
+    },
+    {
+      "key": "achievement.54.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greenhorn",
+      "pl": "Żółtodziób",
+      "lang": "Greenhorn"
+    },
+    {
+      "key": "achievement.56.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Herbicide",
+      "pl": "Herbicyd",
+      "lang": "Herbicide"
+    },
+    {
+      "key": "achievement.57.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Annihilator",
+      "pl": "Niszczyciel",
+      "lang": "Annihilator"
     },
     {
       "key": "achievement.109.name",
@@ -3495,123 +3612,6 @@
       "en": "Chaarr!!",
       "pl": "Charr!!",
       "lang": "Chaarr!!"
-    },
-    {
-      "key": "monster.honour_guard.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vengeance!",
-      "pl": "Zemsta!",
-      "lang": "Vengeance!"
-    },
-    {
-      "key": "monster.gravedigger.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "High Five!",
-      "pl": "Piątka!",
-      "lang": "High Five!"
-    },
-    {
-      "key": "monster.gravedigger.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "scrabble",
-      "pl": "bazgrać",
-      "lang": "scrabble"
-    },
-    {
-      "key": "monster.lost_soul.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Help meee!",
-      "pl": "Pomóż mi!",
-      "lang": "Help meee!"
-    },
-    {
-      "key": "monster.iks_aucar.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cathach!!",
-      "pl": "Catach!!",
-      "lang": "Cathach!!"
-    },
-    {
-      "key": "monster.rot_elemental.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*splib*",
-      "pl": "*dzielenie*",
-      "lang": "*splib*"
-    },
-    {
-      "key": "monster.tyrn.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "GRRR",
-      "pl": "Wrr",
-      "lang": "GRRR"
-    },
-    {
-      "key": "monster.ocyakao.voice_6",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Aiiee!",
-      "pl": "Aiii!",
-      "lang": "Aiiee!"
-    },
-    {
-      "key": "monster.frost_servant.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chrrr.",
-      "pl": "Chrr.",
-      "lang": "Chrrr."
-    },
-    {
-      "key": "monster.frost_servant.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Crrrrk.",
-      "pl": "Crrr.",
-      "lang": "Crrrrk."
-    },
-    {
-      "key": "monster.hirintror.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Krss!",
-      "pl": "Krysiu!",
-      "lang": "Krss!"
-    },
-    {
-      "key": "monster.hirintror.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snirr!",
-      "pl": "prychnięcie!",
-      "lang": "snirr!"
-    },
-    {
-      "key": "monster.draptor.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "GRRR",
-      "pl": "Wrr",
-      "lang": "GRRR"
     }
   ],
   "length_ratio_issues": [

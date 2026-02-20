@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T22:18:12.248497Z",
+  "checked_at": "2026-02-20T16:18:40.352920Z",
   "issues_total": 401,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -48,6 +48,69 @@
       "en": "Explorer",
       "pl": "Badacz, eksplorator",
       "lang": "Explorer"
+    },
+    {
+      "key": "achievement.35.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sea Scout",
+      "pl": "Skaut morski",
+      "lang": "Sea Scout"
+    },
+    {
+      "key": "achievement.37.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bearhugger",
+      "pl": "Niedźwiedź",
+      "lang": "Bearhugger"
+    },
+    {
+      "key": "achievement.48.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Matchmaker",
+      "pl": "Swat",
+      "lang": "Matchmaker"
+    },
+    {
+      "key": "achievement.50.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Razing!",
+      "pl": "Niszczenie!",
+      "lang": "Razing!"
+    },
+    {
+      "key": "achievement.53.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Scrapper",
+      "pl": "Skrobaczka",
+      "lang": "Scrapper"
+    },
+    {
+      "key": "achievement.54.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greenhorn",
+      "pl": "Żółtodziób",
+      "lang": "Greenhorn"
+    },
+    {
+      "key": "achievement.56.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Herbicide",
+      "pl": "Herbicyd",
+      "lang": "Herbicide"
     },
     {
       "key": "achievement.67.name",
@@ -3549,69 +3612,6 @@
       "en": "Residence:",
       "pl": "Rezydencja:",
       "lang": "Residence:"
-    },
-    {
-      "key": "web.tpl.characters.td_10",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Balance:",
-      "pl": "Balansować:",
-      "lang": "Balance:"
-    },
-    {
-      "key": "web.tpl.characters.td_11",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "House:",
-      "pl": "Dom:",
-      "lang": "House:"
-    },
-    {
-      "key": "web.tpl.characters.td_14",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Created:",
-      "pl": "Stworzony:",
-      "lang": "Created:"
-    },
-    {
-      "key": "web.tpl.characters.b_16",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Quests",
-      "pl": "Zadanies",
-      "lang": "Quests"
-    },
-    {
-      "key": "web.tpl.characters.b_17",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Equipment",
-      "pl": "Sprzęt",
-      "lang": "Equipment"
-    },
-    {
-      "key": "web.tpl.characters.b_19",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Victims",
-      "pl": "Ofiary",
-      "lang": "Victims"
-    },
-    {
-      "key": "web.tpl.characters.b_20",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Signature",
-      "pl": "Podpis",
-      "lang": "Signature"
     }
   ],
   "length_ratio_issues": [

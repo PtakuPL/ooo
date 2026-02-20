@@ -1,13 +1,13 @@
 {
   "lang": "es",
-  "coverage_pct": 85.1,
+  "coverage_pct": 85.2,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T22:16:38.491291Z",
-  "issues_total": 515,
+  "checked_at": "2026-02-20T16:17:05.778416Z",
+  "issues_total": 517,
   "issues_by_type": {
-    "consistency_in_language": 70,
+    "consistency_in_language": 72,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 45
   },
@@ -364,6 +364,23 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "golden rune emblem",
+      "variants": [
+        "Oroen rune emblem",
+        "emblema de runa dorada"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.11604.name",
+        "items:item.11606.name",
+        "items:item.11608.name",
+        "items:item.11610.name",
+        "items:item.11612.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "Pinata Dragon",
       "variants": [
         "dragón de Pinata",
@@ -711,6 +728,20 @@
         "scripts:scripts.prince_drazzak_knight.say_2",
         "scripts:scripts.prince_drazzak_paladin.say_2",
         "scripts:scripts.prince_drazzak_sorcerer.say_2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Unaz the Mean",
+      "variants": [
+        "Unaz mean",
+        "unaz mean"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.unaz_the_mean.name",
+        "monsters:monster.unaz_the_mean.desc"
       ]
     },
     {

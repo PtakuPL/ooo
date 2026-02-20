@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 51.9,
+  "coverage_pct": 52.1,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T22:17:25.416753Z",
+  "checked_at": "2026-02-20T16:17:53.991286Z",
   "issues_total": 429,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -138,6 +138,24 @@
     }
   ],
   "pl_reference_issues": [
+    {
+      "key": "achievement.37.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bearhugger",
+      "pl": "Niedźwiedź",
+      "lang": "Bearhugger"
+    },
+    {
+      "key": "achievement.48.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Matchmaker",
+      "pl": "Swat",
+      "lang": "Matchmaker"
+    },
     {
       "key": "achievement.123.name",
       "category": "achievements",
@@ -2380,15 +2398,6 @@
       "lang": "Take care!"
     },
     {
-      "key": "npc.the_empress.greet_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Greetings.",
-      "pl": "Witaj.",
-      "lang": "Greetings."
-    },
-    {
       "key": "npc.the_orc_king.say_8",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3728,15 +3737,6 @@
       "en": "Sssssssss",
       "pl": "Sssssss",
       "lang": "Sssssssss"
-    },
-    {
-      "key": "scripts.northern_fishburger.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Smack.",
-      "pl": "Zadatki.",
-      "lang": "Smack."
     }
   ],
   "length_ratio_issues": [

@@ -1,10 +1,10 @@
 {
   "lang": "sv",
-  "coverage_pct": 29.0,
+  "coverage_pct": 29.1,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T22:18:10.772980Z",
+  "checked_at": "2026-02-20T16:18:39.606759Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -21,6 +21,60 @@
       "en": "Huntsman",
       "pl": "Myśliwy",
       "lang": "Huntsman"
+    },
+    {
+      "key": "achievement.37.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bearhugger",
+      "pl": "Niedźwiedź",
+      "lang": "Bearhugger"
+    },
+    {
+      "key": "achievement.48.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Matchmaker",
+      "pl": "Swat",
+      "lang": "Matchmaker"
+    },
+    {
+      "key": "achievement.50.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Razing!",
+      "pl": "Niszczenie!",
+      "lang": "Razing!"
+    },
+    {
+      "key": "achievement.53.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Scrapper",
+      "pl": "Skrobaczka",
+      "lang": "Scrapper"
+    },
+    {
+      "key": "achievement.54.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greenhorn",
+      "pl": "Żółtodziób",
+      "lang": "Greenhorn"
+    },
+    {
+      "key": "achievement.56.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Herbicide",
+      "pl": "Herbicyd",
+      "lang": "Herbicide"
     },
     {
       "key": "achievement.67.name",
@@ -3558,60 +3612,6 @@
       "en": "Hisss!",
       "pl": "Syk!",
       "lang": "Hisss!"
-    },
-    {
-      "key": "monster.hulking_prehemoth.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "SMAASH!",
-      "pl": "ROZBIERZ!",
-      "lang": "SMAASH!"
-    },
-    {
-      "key": "monster.cyclops.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Toks utat.",
-      "pl": "Wszystko jasne.",
-      "lang": "Toks utat."
-    },
-    {
-      "key": "monster.frost_dragon_hatchling.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rooawwrr",
-      "pl": "Rooawrr",
-      "lang": "Rooawwrr"
-    },
-    {
-      "key": "monster.elder_wyrm.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "GRRR",
-      "pl": "Wrr",
-      "lang": "GRRR"
-    },
-    {
-      "key": "monster.draken_spellweaver.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fissziss!",
-      "pl": "Fiszsziss!",
-      "lang": "Fissziss!"
-    },
-    {
-      "key": "monster.hydra.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "FCHHHHH",
-      "pl": "Fchhhh",
-      "lang": "FCHHHHH"
     }
   ],
   "length_ratio_issues": [

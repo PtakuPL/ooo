@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-19T22:16:07.860641Z",
+  "checked_at": "2026-02-20T16:16:41.495883Z",
   "issues_total": 411,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -21,6 +21,60 @@
       "en": "Huntsman",
       "pl": "Myśliwy",
       "lang": "Huntsman"
+    },
+    {
+      "key": "achievement.37.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bearhugger",
+      "pl": "Niedźwiedź",
+      "lang": "Bearhugger"
+    },
+    {
+      "key": "achievement.48.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Matchmaker",
+      "pl": "Swat",
+      "lang": "Matchmaker"
+    },
+    {
+      "key": "achievement.50.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Razing!",
+      "pl": "Niszczenie!",
+      "lang": "Razing!"
+    },
+    {
+      "key": "achievement.53.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Scrapper",
+      "pl": "Skrobaczka",
+      "lang": "Scrapper"
+    },
+    {
+      "key": "achievement.54.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greenhorn",
+      "pl": "Żółtodziób",
+      "lang": "Greenhorn"
+    },
+    {
+      "key": "achievement.56.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Herbicide",
+      "pl": "Herbicyd",
+      "lang": "Herbicide"
     },
     {
       "key": "achievement.119.name",
@@ -3558,60 +3612,6 @@
       "en": "Text",
       "pl": "Tekst",
       "lang": "Text"
-    },
-    {
-      "key": "web.tpl.experience_table.b_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level",
-      "pl": "poziom",
-      "lang": "Level"
-    },
-    {
-      "key": "web.tpl.experience_table.b_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Experience",
-      "pl": "Doświadczenie",
-      "lang": "Experience"
-    },
-    {
-      "key": "web.tpl.guilds.create.b_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Leader:",
-      "pl": "Lider:",
-      "lang": "Leader:"
-    },
-    {
-      "key": "web.tpl.gallery.form.td_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Comment:",
-      "pl": "Komentarz:",
-      "lang": "Comment:"
-    },
-    {
-      "key": "web.tpl.gallery.form.td_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Image URL:",
-      "pl": "Adres URL obrazu:",
-      "lang": "Image URL:"
-    },
-    {
-      "key": "web.tpl.gallery.form.td_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Author:",
-      "pl": "Autor:",
-      "lang": "Author:"
     }
   ],
   "length_ratio_issues": [

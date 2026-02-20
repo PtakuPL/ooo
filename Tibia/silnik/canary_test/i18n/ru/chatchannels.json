@@ -3,7 +3,7 @@
   "channel.advertising_rook.name": "Реклама-Грач",
   "channel.english_chat.name": "Английский чат",
   "channel.gamemaster.name": "Мастер игры",
-  "channel.guild_leaders.name": "[EN] Guild Leaders",
+  "channel.guild_leaders.name": "Гуилд Лидеры",
   "channel.help.msg_already_muted": "Звук этого проигрывателя уже отключен.",
   "channel.help.msg_muted": "Вы отключены от канала справки за ненадлежащее его использование.",
   "channel.help.msg_not_authorized_mute": "Вы не имеете права отключить звук этого игрока.",

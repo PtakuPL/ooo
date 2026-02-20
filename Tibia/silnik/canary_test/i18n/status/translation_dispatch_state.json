@@ -1,17 +1,43 @@
 {
-  "timestamp": "2026-02-20T22:59:56.719650Z",
-  "cycle_counter": 6592,
-  "last_target_key": "sv:raids.json",
-  "last_pending_total": 129,
-  "last_tier": 3,
-  "last_cat_priority": 8,
-  "candidates_count": 180,
-  "active_candidates_count": 170,
+  "timestamp": "2026-02-20T23:04:32.520894Z",
+  "cycle_counter": 6599,
+  "last_target_key": "es:items.json",
+  "last_pending_total": 3005,
+  "last_tier": 1,
+  "last_cat_priority": 0,
+  "candidates_count": 179,
+  "active_candidates_count": 167,
   "skipped_backoff": 10,
-  "skipped_guard_fail": 0,
-  "guard_fail_blacklist": {},
-  "guard_fail_blocked_count": 0,
-  "guard_fail_blocked_preview": [],
+  "skipped_guard_fail": 2,
+  "guard_fail_blacklist": {
+    "pl:items.json": 6625,
+    "pl:npc.json": 6617
+  },
+  "guard_fail_blocked_count": 2,
+  "guard_fail_blocked_preview": [
+    {
+      "target": "pl:items.json",
+      "until_cycle": 6625,
+      "remaining_cycles": 26,
+      "guard_fail_rate": 0.9968,
+      "guard_fail": 4077,
+      "translated": 13,
+      "entries": 5,
+      "dominant_reason": "default",
+      "hard_block": false
+    },
+    {
+      "target": "pl:npc.json",
+      "until_cycle": 6617,
+      "remaining_cycles": 18,
+      "guard_fail_rate": 0.9337,
+      "guard_fail": 2114,
+      "translated": 150,
+      "entries": 5,
+      "dominant_reason": "default",
+      "hard_block": false
+    }
+  ],
   "tier_config": {
     "tier1": [
       "es",
@@ -36,7 +62,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 2,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -162,7 +188,9 @@
     "it:dataroot.json": 0,
     "ro:php.json": 0,
     "ru:php.json": 0,
-    "ro:chatchannels.json": 0
+    "ro:chatchannels.json": 0,
+    "it:example_merchant.json": 1,
+    "ru:chatchannels.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -219,7 +247,7 @@
       "ru": 50.41,
       "ro": 43.84,
       "it": 52.66,
-      "sr": 45.43,
+      "sr": 45.44,
       "sv": 29.25
     }
   }

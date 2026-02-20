@@ -38878,5 +38878,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:56:40.252047Z"
+  },
+  "channel.guild_leaders.name": {
+    "src_hash": "3def53d49094d463e5369c3f5576a0e6",
+    "text": "Гуилд Лидеры",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:01:15.420616Z"
   }
 }

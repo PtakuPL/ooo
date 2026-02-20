@@ -175678,5 +175678,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:34:38.956987Z"
+  },
+  "actions.outfit_items.msg_already_own": {
+    "src_hash": "ff03bf90647055eb6169fe3518a86e11",
+    "text": "Већ поседујете овај део одеће.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:01:05.424772Z"
+  },
+  "actions.key_door.msg_wrong_key": {
+    "src_hash": "0f9c62489a770c7c23c3b706d5fccb35",
+    "text": "Кључ се не поклапа.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:01:05.425569Z"
+  },
+  "actions.gamestore.msg_no_rookgaard": {
+    "src_hash": "b4299c21f178fe5003979baf89fc88c5",
+    "text": "Продавница нема понуде за Роокгаард Цитизен.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:01:05.442329Z"
+  },
+  "actions.gamestore.msg_exhausted": {
+    "src_hash": "a7ea8fed6bcc46c21a5a700eaa4620c0",
+    "text": "Исцрпљен си.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:01:05.453637Z"
   }
 }

@@ -10850,3 +10850,9 @@
 {"timestamp": "2026-02-20T22:59:44.092982Z", "cycle": 2, "mode": "AUTO_TRANSLATE", "category": "ru", "phase": "dispatch", "duration_ms": 672, "detail": "count=example_merchant.json"}
 {"timestamp": "2026-02-20T23:00:34.822092Z", "cycle": 2, "mode": "AUTO_TRANSLATE", "category": "ru", "phase": "mode_run", "duration_ms": 50388, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-20T23:00:41.618462Z", "cycle": 2, "mode": "AUTO_TRANSLATE", "category": "ru", "phase": "status_update", "duration_ms": 6540, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-20T23:00:49.603600Z", "cycle": 2, "mode": "AUTO_TRANSLATE", "category": "ru", "phase": "cycle_total", "duration_ms": 66404, "detail": "delay=4"}
+{"timestamp": "2026-02-20T23:00:55.863168Z", "cycle": 3, "mode": "AUTO_TRANSLATE", "category": "sr", "phase": "dispatch", "duration_ms": 1990, "detail": "count=actions.json"}
+{"timestamp": "2026-02-20T23:01:00.806044Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "dispatch", "duration_ms": 815, "detail": "count=example_merchant.json"}
+{"timestamp": "2026-02-20T23:03:59.231929Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 2028, "detail": "count=items.json"}
+{"timestamp": "2026-02-20T23:06:48.803062Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "mode_run", "duration_ms": 169393, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-20T23:06:59.543184Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "status_update", "duration_ms": 10353, "detail": "throttle_every=1"}

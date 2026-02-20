@@ -1,26 +1,26 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-20T22:56:41Z",
+  "generated_at_utc": "2026-02-20T23:04:00Z",
   "config": {
     "mtime_restart_min_interval_sec": 90,
     "restart_failure_backoff_base_sec": 20,
     "restart_failure_backoff_max_sec": 300
   },
   "last_restart": {
-    "timestamp": "2026-02-20T22:56:41Z",
+    "timestamp": "2026-02-20T23:04:00Z",
     "cause": "mtime",
     "success": true,
-    "pid": "533975"
+    "pid": "541797"
   },
   "failure_streak": 0,
   "cooldown_active": false,
   "cooldown_remaining_sec": 0,
   "next_allowed_utc": "",
   "totals": {
-    "attempts": 1481,
-    "successes": 1473,
+    "attempts": 1483,
+    "successes": 1475,
     "failures": 8,
-    "blocked": 135
+    "blocked": 136
   },
   "causes": {
     "worker_missing": {
@@ -30,10 +30,10 @@
       "blocked": 20
     },
     "mtime": {
-      "attempts": 177,
-      "successes": 174,
+      "attempts": 179,
+      "successes": 176,
       "failures": 3,
-      "blocked": 115
+      "blocked": 116
     },
     "health_stuck": {
       "attempts": 1206,
@@ -43,31 +43,6 @@
     }
   },
   "recent_events": [
-    {
-      "timestamp": "2026-02-19T22:00:16Z",
-      "type": "result",
-      "cause": "worker_missing",
-      "success": false,
-      "pid": "",
-      "reason": "start_failed",
-      "backoff_sec": 300
-    },
-    {
-      "timestamp": "2026-02-19T22:04:16Z",
-      "type": "blocked",
-      "cause": "mtime",
-      "reason": "failure_backoff",
-      "wait_sec": 60
-    },
-    {
-      "timestamp": "2026-02-19T22:05:43Z",
-      "type": "result",
-      "cause": "mtime",
-      "success": true,
-      "pid": "1131211",
-      "reason": "pid_file",
-      "backoff_sec": 0
-    },
     {
       "timestamp": "2026-02-19T22:12:14Z",
       "type": "result",
@@ -216,6 +191,31 @@
       "cause": "mtime",
       "success": true,
       "pid": "533975",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-20T23:01:04Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "538654",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-20T23:01:46Z",
+      "type": "blocked",
+      "cause": "mtime",
+      "reason": "mtime_debounce",
+      "wait_sec": 48
+    },
+    {
+      "timestamp": "2026-02-20T23:04:00Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "541797",
       "reason": "pid_file",
       "backoff_sec": 0
     }

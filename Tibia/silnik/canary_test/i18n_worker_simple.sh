@@ -15350,33 +15350,34 @@ recent_hidden_alert = False
 gt_pending = []  # Klucze do tłumaczenia przez Google Translate
 suspicious_log_path = os.path.join(status_dir, "suspicious_log.jsonl")
 suspicious_rejected_path = os.path.join(status_dir, "suspicious_rejected.jsonl")
+resolved_rejected_keys = set()
+resolved_rejected_rows = 0
+
+def _mark_rejected_resolved(_key: str):
+    _k = str(_key or "").strip()
+    if _k:
+        resolved_rejected_keys.add(_k)
 
 # WQ-SUSPICIOUS-REPAIR-1: automatyczny backlog napraw z suspicious_rejected.jsonl
 # Cel: worker ma aktywnie wracać do najczęściej odrzuconych kluczy (per lang+plik),
 # zamiast pomijać je przez strict/fast-mode i utrwalać błędy.
 forced_suspicious_repair_keys = set()
 forced_suspicious_repair_counts = {}
-forced_suspicious_repair_types = {
-    "identical_to_en",
-    "word_salad",
-    "mixed_language",
-    "mixed_scripts",
-    "cyrillic_latin_mix",
-    "latin_only_cyrillic",
-    "wrong_script",
-    "fx_token",
-    "artifact_tokens",
-}
+forced_suspicious_repair_type_filter = set()
 try:
     suspicious_repair_enabled = str(os.getenv("SUSPICIOUS_REPAIR_ENABLED", "true")).strip().lower() in {"1", "true", "yes", "on"}
     suspicious_repair_lookback_lines = max(200, int(os.getenv("SUSPICIOUS_REPAIR_LOOKBACK_LINES", "8000") or "8000"))
     suspicious_repair_min_hits = max(1, int(os.getenv("SUSPICIOUS_REPAIR_MIN_HITS", "2") or "2"))
     suspicious_repair_max_keys = max(20, int(os.getenv("SUSPICIOUS_REPAIR_MAX_KEYS", "400") or "400"))
+    suspicious_repair_types_raw = str(os.getenv("SUSPICIOUS_REPAIR_ISSUE_TYPES", "") or "").strip()
+    if suspicious_repair_types_raw:
+        forced_suspicious_repair_type_filter = {x.strip() for x in re.split(r"[\s,;]+", suspicious_repair_types_raw) if x.strip()}
 except Exception:
     suspicious_repair_enabled = True
     suspicious_repair_lookback_lines = 8000
     suspicious_repair_min_hits = 2
     suspicious_repair_max_keys = 400
+    forced_suspicious_repair_type_filter = set()
 
 if suspicious_repair_enabled and os.path.exists(suspicious_rejected_path):
     try:
@@ -15384,6 +15385,7 @@ if suspicious_repair_enabled and os.path.exists(suspicious_rejected_path):
             _sr_lines = [x.strip() for x in _srf if x.strip()][-suspicious_repair_lookback_lines:]
         _sr_counts = {}
         _sr_issue_counts = {}
+        _sr_type_totals = {}
         _target_lang_lc = str(target_lang or "").lower()
         _target_file_lc = str(json_file or "").lower()
         for _line in _sr_lines:
@@ -15402,9 +15404,10 @@ if suspicious_repair_enabled and os.path.exists(suspicious_rejected_path):
             _issues = _row.get("issues", [])
             if isinstance(_issues, list) and _issues and isinstance(_issues[0], dict):
                 _itype = str(_issues[0].get("type", "unknown") or "unknown")
-            if _itype not in forced_suspicious_repair_types:
+            if forced_suspicious_repair_type_filter and _itype not in forced_suspicious_repair_type_filter:
                 continue
             _sr_counts[_key] = int(_sr_counts.get(_key, 0) or 0) + 1
+            _sr_type_totals[_itype] = int(_sr_type_totals.get(_itype, 0) or 0) + 1
             _sr_issue_counts.setdefault(_key, {})
             _sr_issue_counts[_key][_itype] = int(_sr_issue_counts[_key].get(_itype, 0) or 0) + 1
 
@@ -15427,6 +15430,37 @@ if suspicious_repair_enabled and os.path.exists(suspicious_rejected_path):
                 f"🛠️ SUSPICIOUS REPAIR backlog: {len(forced_suspicious_repair_keys)} keys "
                 f"(lang={target_lang}, file={json_file}, lookback={suspicious_repair_lookback_lines}, min_hits={suspicious_repair_min_hits})"
             )
+
+        try:
+            backlog_payload = {
+                "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                "language": target_lang,
+                "json_file": json_file,
+                "lookback_lines": int(suspicious_repair_lookback_lines),
+                "min_hits": int(suspicious_repair_min_hits),
+                "max_keys": int(suspicious_repair_max_keys),
+                "issue_types_filter": sorted(list(forced_suspicious_repair_type_filter)),
+                "selected_keys": int(len(forced_suspicious_repair_keys)),
+                "issue_type_totals": {
+                    k: int(v) for k, v in sorted(_sr_type_totals.items(), key=lambda kv: (int(kv[1] or 0), kv[0]), reverse=True)
+                },
+                "keys": [
+                    {
+                        "key": _k,
+                        "hits": int(forced_suspicious_repair_counts.get(_k, {}).get("hits", 0) or 0),
+                        "top_issue": str(forced_suspicious_repair_counts.get(_k, {}).get("top_issue", "unknown") or "unknown"),
+                    }
+                    for _k in sorted(
+                        forced_suspicious_repair_keys,
+                        key=lambda x: int(forced_suspicious_repair_counts.get(x, {}).get("hits", 0) or 0),
+                        reverse=True,
+                    )[:200]
+                ],
+            }
+            with open(os.path.join(status_dir, "suspicious_rejected_backlog_latest.json"), "w", encoding="utf-8") as _bf:
+                json.dump(backlog_payload, _bf, indent=2, ensure_ascii=False)
+        except Exception:
+            pass
     except Exception:
         forced_suspicious_repair_keys = set()
         forced_suspicious_repair_counts = {}
@@ -15450,6 +15484,7 @@ if str(target_lang or "").lower() in _FORCED_NPC_SHORT_DIALOG_LANGS and str(json
             tm_upsert(_ns_key, src_hash(_ns_en), _cand, "forced_npc_short", 0.996)
             tm_updates += 1
             translated += 1
+            _mark_rejected_resolved(_ns_key)
             forced_npc_short_repairs += 1
             recent_translations.append({
                 "key": _ns_key,
@@ -15480,6 +15515,7 @@ if str(target_lang or "").lower() == "it" and str(json_file or "").lower() == "q
             tm_upsert(_fq_key, src_hash(_fq_en), _cand, "forced_quest_fragment", 0.995)
             tm_updates += 1
             translated += 1
+            _mark_rejected_resolved(_fq_key)
             forced_it_quest_fragment_repairs += 1
             recent_translations.append({
                 "key": _fq_key,
@@ -15649,6 +15685,7 @@ for key, en_text in iter_items:
         if ok_ov:
             lang_data[key] = _override_val_fixed
             translated += 1
+            _mark_rejected_resolved(key)
             h = src_hash(en_text)
             tm_upsert(key, h, _override_val_fixed, "override", 1.0, verified=True)
             _append_jsonl(guard_report_path, {
@@ -15800,6 +15837,7 @@ for key, en_text in iter_items:
                 _append_jsonl(suspicious_log_path, log_entry)
             lang_data[key] = candidate
             translated += 1
+            _mark_rejected_resolved(key)
             recent_translations.append({
                 "key": key,
                 "en": en_text,
@@ -15986,6 +16024,7 @@ for key, en_text in iter_items:
                 _append_jsonl(suspicious_log_path, log_entry)
             lang_data[key] = simple
             translated += 1
+            _mark_rejected_resolved(key)
             source_name = "simple_dict" if simple_translate(en_text, target_lang) else "word_dict"
             tm_upsert(key, h, simple, source_name, 0.98 if source_name == "simple_dict" else 0.92)
             tm_updates += 1
@@ -16193,6 +16232,7 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                     lang_data[key] = candidate
                     gt_translated += 1
                     translated += 1
+                    _mark_rejected_resolved(key)
                     tm_upsert(key, h, candidate, "google_translate", 0.90)
                     tm_updates += 1
                     recent_translations.append({
@@ -16240,6 +16280,62 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                 placeholders += 1
             else:
                 skipped_not_placeholder += 1
+
+# ── Cleanup: usuń z suspicious_rejected wpisy już naprawionych kluczy ──────
+if resolved_rejected_keys and os.path.exists(suspicious_rejected_path):
+    try:
+        with open(suspicious_rejected_path, "r", encoding="utf-8") as _rf:
+            _lines = _rf.readlines()
+
+        _target_lang_lc = str(target_lang or "").lower()
+        _target_file_lc = str(json_file or "").lower()
+        _kept_lines = []
+        _removed = 0
+
+        for _line in _lines:
+            _strip = _line.strip()
+            if not _strip:
+                continue
+            try:
+                _row = json.loads(_strip)
+            except Exception:
+                _kept_lines.append(_line)
+                continue
+
+            _row_lang = str(_row.get("lang", "") or "").lower()
+            _row_cat = str(_row.get("category", "") or "").lower()
+            _row_key = str(_row.get("key", "") or "")
+
+            if _row_lang == _target_lang_lc and _row_cat == _target_file_lc and _row_key in resolved_rejected_keys:
+                _removed += 1
+                continue
+            _kept_lines.append(_line)
+
+        if _removed > 0:
+            import tempfile
+            _dir = os.path.dirname(suspicious_rejected_path) or "."
+            _fd, _tmp = tempfile.mkstemp(dir=_dir, suffix=".tmp")
+            try:
+                with os.fdopen(_fd, "w", encoding="utf-8") as _wf:
+                    for _line in _kept_lines:
+                        if _line.endswith("\n"):
+                            _wf.write(_line)
+                        else:
+                            _wf.write(_line + "\n")
+                os.replace(_tmp, suspicious_rejected_path)
+                resolved_rejected_rows = int(_removed)
+                print(
+                    f"🧹 suspicious_rejected cleanup: removed={_removed}, "
+                    f"resolved_keys={len(resolved_rejected_keys)}, lang={target_lang}, file={json_file}"
+                )
+            except Exception:
+                try:
+                    os.unlink(_tmp)
+                except Exception:
+                    pass
+                raise
+    except Exception as _cleanup_err:
+        print(f"⚠️ suspicious_rejected cleanup failed: {_cleanup_err}")
 
 # ── Guard: zapobiegaj pustym wartościom (defense-in-depth) ─────────────────
 _empty_guard_fixed = 0

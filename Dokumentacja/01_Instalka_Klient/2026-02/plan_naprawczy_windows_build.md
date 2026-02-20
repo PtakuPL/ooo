@@ -195,29 +195,115 @@ Opcja B: **Pin na MSVC 14.29.30133** (jedyny alternatywny toolset na runnerze):
 
 ## Rekomendowana kolejność implementacji
 
-Wszystkie kroki 2A + 2B + 2C zaimplementować RAZEM w jednym commicie:
+Wszystkie kroki 2A + 2B + 2C zaimplementowane RAZEM, dodatkowe poprawki (Runda 3) w osobnym commicie:
 
-| Priorytet | Krok | Zmiana | Szansa | Ryzyko | Czas |
-|-----------|------|--------|--------|--------|------|
-| ✅ Zrobione | Krok 1: Include'y | kod (.cpp) | — | — | — |
-| ✅ Zrobione | Krok 2A: Flagi `/d2FH4-` `/d2notypeopt` `/permissive-` + `/diagnostics:caret` | CMakeLists.txt | ~60% | zerowe | 5 min |
-| ✅ Zrobione | Krok 2B: Fix `if constexpr` | luainterface.h | ~30% | zerowe | 5 min |
-| ✅ Zrobione | Krok 2C: Fold expressions | luabinder.h | ~90% | średnie | 30 min |
-| *backup* | Krok 2D: ClangCL / pin MSVC | workflow | ~100% | wysokie | 20 min |
-| *opcja* | Krok 2E: Ulepszenia CI (compile_commands, itp.) | workflow | — | zerowe | 5 min |
+| Priorytet | Krok | Zmiana | Szansa | Ryzyko | Status |
+|-----------|------|--------|--------|--------|--------|
+| ✅ Zrobione | Krok 1: Include'y | kod (.cpp) | — | — | ✅ commit 2026-02-20 |
+| ✅ Zrobione | Krok 2A: Flagi `/d2FH4-` `/d2notypeopt` `/permissive-` + `/diagnostics:caret` | CMakeLists.txt | ~60% | zerowe | ✅ auto-commit Cykl #6 |
+| ✅ Zrobione | Krok 2B: Fix `if constexpr` | luainterface.h | ~30% | zerowe | ✅ auto-commit Cykl #7 |
+| ✅ Zrobione | Krok 2C: Fold expressions w luabinder.h | luabinder.h | ~90% | średnie | ✅ auto-commit Cykl #7 |
+| ✅ Zrobione | Krok 2C.1: Guard N==0 + `#include <utility>` + `std::size_t` | luabinder.h | poprawa | zerowe | ✅ auto-commit Cykl #16 |
+| ✅ Zrobione | Krok 3A: Usunięcie `#include <protocolhttp.h>` | luafunctions.cpp, luafunctions_ui.cpp | poprawa | zerowe | ✅ commit f94e5c6fc |
+| ✅ Zrobione | Krok 3B: Split luafunctions_ui.cpp → _ui + _net + _sound | 3 nowe pliki, CMakeLists.txt | ~80% | niskie | ✅ commit f94e5c6fc |
+| ✅ Zrobione | Krok 3C: Refaktor tuple templates → fold expressions | luavaluecasts.h | poprawa | niskie | ✅ auto-commit (guardian) |
+| ✅ Zrobione | Krok 3D: Fix `registerClass<PainterShaderProgram, ShaderProgram>()` | luafunctions_ui.cpp | bug fix | zerowe | ✅ commit f94e5c6fc |
+| ✅ Zrobione | Krok 3E: `constexpr auto N` → `constexpr std::size_t N` | luabinder.h | poprawa | zerowe | ✅ auto-commit (guardian) |
+| *backup* | Krok 2D: ClangCL / pin MSVC | workflow | ~100% | wysokie | ❌ nie użyte |
+| *opcja* | Krok 2E: Ulepszenia CI (compile_commands, itp.) | workflow | — | zerowe | ❌ nie użyte |
 
-**Łączna szansa naprawy przy 2A+2B+2C razem: ~95%.**
+**Łączna szansa naprawy przy wszystkich krokach razem: ~98%.**
 
 ---
 
 ## Status realizacji
 
+### Runda 1 → Runda 2 (Krok 1)
 - [x] Krok 1: Dodanie include'ów ✅ (commit: 2026-02-20, naprawiono C2139/C2665)
-- [x] Krok 2A: Flagi `/d2FH4-` `/d2notypeopt` `/permissive-` + `/diagnostics:caret` w CMakeLists.txt ✅ (commit: 2026-02-20, auto-commit guardian Cykl #6)
-- [x] Krok 2B: Fix `if constexpr` / `else if` w luainterface.h ✅ (commit: 2026-02-20, auto-commit guardian Cykl #7)
-- [x] Krok 2C: Refaktor rekurencyjnych szablonów → fold expressions w luabinder.h ✅ (commit: 2026-02-20, auto-commit guardian Cykl #7)
-- [ ] Krok 2D: Backup — ClangCL lub pin MSVC (jeśli 2A-2C zawiodą)
+
+### Runda 2 → Runda 3 (Kroki 2A-2C)
+- [x] Krok 2A: Flagi `/d2FH4-` `/d2notypeopt` `/permissive-` + `/diagnostics:caret` w CMakeLists.txt ✅ (auto-commit guardian Cykl #6)
+- [x] Krok 2B: Fix `if constexpr` / `else if` w luainterface.h ✅ (auto-commit guardian Cykl #7)
+- [x] Krok 2C: Refaktor rekurencyjnych szablonów → fold expressions w luabinder.h ✅ (auto-commit guardian Cykl #7)
+- [x] Krok 2C.1: Poprawki ChatGPT review — guard `if constexpr (N > 0)`, `#include <utility>`, `std::size_t` ✅ (auto-commit guardian Cykl #16)
+
+### Runda 3 — Głębokie badanie .cpp (Kroki 3A-3E, commit f94e5c6fc)
+- [x] Krok 3A: Usunięcie nieużywanego `#include <framework/net/protocolhttp.h>` z `luafunctions_ui.cpp` i `luafunctions.cpp` ✅
+  - Eliminuje `<asio.hpp>` + `<asio/ssl.hpp>` z tych TU (tysiące symboli szablonowych mniej)
+- [x] Krok 3B: Split `luafunctions_ui.cpp` (537 bindów) na 3 pliki ✅
+  - `luafunctions_ui.cpp` — 434 bindów (UIWidget, layouts, textedit, qrcode, shaders, particles)
+  - `luafunctions_net.cpp` — 60 bindów (Server, Connection, Protocol, InputMessage, OutputMessage)
+  - `luafunctions_sound.cpp` — 43 bindów (SoundManager, SoundSource, SoundChannel, SoundEffect)
+  - Nowe pliki dodane do CMakeLists.txt Group 2 (z flagami MSVC ICE workaround)
+- [x] Krok 3C: Refaktor rekurencyjnych szablonów tuple w `luavaluecasts.h` ✅
+  - `push_tuple_internal_luavalue<N>` → `push_tuple_internal_luavalue_impl` (fold expression)
+  - `push_tuple_luavalue<N>` → `push_tuple_luavalue_impl` (fold expression)
+  - Dodano `#include <utility>`, guard `if constexpr (N > 0)`, `if constexpr (sizeof...(I) > 0)`
+- [x] Krok 3D: Fix `registerClass<PainterShaderProgram>()` → `registerClass<PainterShaderProgram, ShaderProgram>()` ✅
+  - PainterShaderProgram dziedziczy z ShaderProgram, nie bezpośrednio z LuaObject
+  - Bez tej poprawki Lua nie widziała metod ShaderProgram na obiektach PainterShaderProgram
+- [x] Krok 3E: `constexpr auto N` → `constexpr std::size_t N` w `luabinder.h` ✅
+  - Jawny typ zamiast `auto` w kontekście constexpr — bezpieczniej na MSVC
+
+### Oczekiwanie na wyniki CI
+- [ ] Krok 2D: Backup — ClangCL lub pin MSVC (jeśli wszystkie kroki zawiodą)
 - [ ] Krok 2E: Opcjonalne ulepszenia CI
 
-**CI Windows Build uruchomiony:** `gh workflow run "Build - Windows"` — 2026-02-20 ~23:30 UTC  
-**Oczekiwany wynik:** ~3h (do ~02:30 UTC 2026-02-21)
+**CI Windows Build:** 2 buildy w trakcie (run ID: 22244152617 i 22243721692) — uruchomione 2026-02-20 ~22:30-22:45 UTC  
+**Oczekiwany wynik:** ~3h (do ~01:45 UTC 2026-02-21)
+
+---
+
+## Pełna lista zmian w plikach (chronologicznie)
+
+| Data | Plik | Zmiana |
+|------|------|--------|
+| 2026-02-20 | `framework/luafunctions_gfx_singletons.cpp` | +`#include <framework/ui/uiwidget.h>` |
+| 2026-02-20 | `framework/luafunctions.cpp` | +`#include <framework/otml/otmlnode.h>` |
+| 2026-02-20 | `src/CMakeLists.txt` | +`/d2FH4- /d2notypeopt /permissive-` (Grupy 2,3), +`/diagnostics:caret` (global) |
+| 2026-02-20 | `framework/luaengine/luainterface.h` | Fix `if constexpr` / `else if` → `else { if }` |
+| 2026-02-20 | `framework/luaengine/luabinder.h` | Rekurencyjne szablony → fold expression + `std::apply` |
+| 2026-02-20 | `framework/luaengine/luabinder.h` | +`#include <utility>`, +`if constexpr (N > 0)`, `auto` → `std::size_t` |
+| 2026-02-21 | `framework/luafunctions.cpp` | −`#include <protocolhttp.h>` |
+| 2026-02-21 | `framework/luafunctions_ui.cpp` | −`#include <protocolhttp.h>`, −NET/SOUND sekcje, fix `PainterShaderProgram` |
+| 2026-02-21 | `framework/luafunctions_net.cpp` | **NOWY** — wydzielone bindy sieciowe |
+| 2026-02-21 | `framework/luafunctions_sound.cpp` | **NOWY** — wydzielone bindy dźwiękowe |
+| 2026-02-21 | `framework/luaengine/luavaluecasts.h` | Rekurencyjne tuple templates → fold expressions, +`#include <utility>` |
+| 2026-02-21 | `src/CMakeLists.txt` | +`luafunctions_net.cpp`, +`luafunctions_sound.cpp` (Group 2 + lista źródeł) |
+
+---
+
+## Potencjalne dalsze problemy
+
+### 1. Jeśli CI nadal failuje — ICE C1001 w pozostałych TU
+
+Mimo drastycznego zmniejszenia template pressure, MSVC 14.44 może nadal crashować na:
+- **`luafunctions_ui.cpp`** (434 bindów) — nadal najcięższy TU. Jeśli failuje, dalszy split na `luafunctions_uiwidget.cpp` (~290 bindów UIWidget) + resta.
+- **`client/luafunctions.cpp`** — nie badany jeszcze, może mieć podobne problemy.
+- **`client/luavaluecasts_client.cpp`** — w Group 3, może mieć rekurencyjne szablony.
+
+### 2. Mieszanie `requires` z `enable_if_t` w `luavaluecasts.h`
+
+Na linii ~157 `push_luavalue(T e) requires (std::is_enum_v<T>)` używa C++20 `requires`,
+podczas gdy reszta overload set (linie ~160, ~165) używa `enable_if_t`.
+Mieszanie paradygmatów w tym samym overload set **może** zmylić MSVC overload resolution.
+**Priorytet:** niski — nie powoduje bezpośrednio ICE, ale może być problemem w przyszłości.
+
+### 3. Logic bug w pair cast (luavaluecasts.h ~555-560)
+
+```cpp
+if (!luavalue_cast(-1, value))
+    pair.first = value;
+```
+Odwrócony warunek `!` — wartość przypisywana tylko gdy cast FAILUJE. To bug logiczny (runtime),
+nie kompilacyjny. **Priorytet:** niski, nie blokuje build.
+
+### 4. Trailing backslash w luainterface.cpp (~linia 736)
+
+Funkcje `luaBitAnd`, `luaBitOr` itd. mają trailing `\` (backslash) z konwersji makro.
+Czysto kosmetyczne, nie wpływa na kompilację.
+
+### 5. Weryfikacja C++20 `/std:c++20` na MSVC
+
+Kod używa `requires` + fold expressions + `if constexpr`. CMake ustawia C++20, ale warto
+zweryfikować czy MSVC 14.44 na runnerze faktycznie kompiluje z `/std:c++20` (nie `/std:c++17`).

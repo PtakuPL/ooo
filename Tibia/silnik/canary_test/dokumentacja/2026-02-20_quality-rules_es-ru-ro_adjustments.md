@@ -77,3 +77,24 @@ Walidacja po update:
 - Cofnięto z listy `_NONTRANSLATABLE_WORLD_TERMS` termy zgłoszone jako tłumaczalne (m.in. `behemoth`, `dragon lord`, `warlock`, `hydra`, `cyclops`, `necromancer`, `vampire`, `minotaur`, `orc`, oraz `imbuement/prey/charms/runes/runestone/stamina/highscore/hotkey/loot`).
 - Cofnięto też role opisowe (`paladin/sorcerer/druid/knight/familiar`) z exempt policy.
 - Efekt: w języku polskim te słowa wracają na normalną ścieżkę tłumaczenia i nie są traktowane jako „nie tłumaczyć”.
+
+### Auto-repair z suspicious_rejected.jsonl
+- Dodano mechanizm backlogu napraw oparty o `i18n/status/suspicious_rejected.jsonl`.
+- Worker buduje listę kluczy do wymuszonej naprawy per `(lang, json_file)` na bazie ostatnich wpisów i częstości wystąpień.
+- Te klucze są przetwarzane nawet w strict/fast-mode (nie są już łatwo pomijane jako „done”).
+- Domyślnie obejmuje wszystkie typy issue z `suspicious_rejected` (chyba że ustawiony filtr ENV).
+
+Nowe ENV:
+- `SUSPICIOUS_REPAIR_ENABLED` (domyślnie `true`)
+- `SUSPICIOUS_REPAIR_LOOKBACK_LINES` (domyślnie `8000`)
+- `SUSPICIOUS_REPAIR_MIN_HITS` (domyślnie `2`)
+- `SUSPICIOUS_REPAIR_MAX_KEYS` (domyślnie `400`)
+- `SUSPICIOUS_REPAIR_ISSUE_TYPES` (opcjonalny filtr, np. `identical_to_en,word_salad`)
+
+Artefakt audytowy:
+- `i18n/status/suspicious_rejected_backlog_latest.json` z listą wybranych kluczy, hit-count i top issue.
+
+### Auto-cleanup suspicious_rejected po naprawie
+- Dodano cleanup końca cyklu: jeśli klucz został skutecznie naprawiony (accepted translation), worker usuwa odpowiadające wpisy z `i18n/status/suspicious_rejected.jsonl` dla bieżącego `(lang, json_file, key)`.
+- Cleanup działa po wszystkich ścieżkach sukcesu (`override`, `tm`, `simple`, `google_translate`, forced repairs).
+- Operacja jest atomowa (tmp + `os.replace`) i loguje podsumowanie: liczba usuniętych wpisów oraz liczba naprawionych kluczy.

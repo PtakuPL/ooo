@@ -154462,5 +154462,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:47:16.777200Z"
+  },
+  "item.6097.desc": {
+    "src_hash": "bae731b49ef5360bc8c08615c4de30d7",
+    "text": "Perteneció una vez a a pirate",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:10.294442Z"
+  },
+  "item.6098.desc": {
+    "src_hash": "bae731b49ef5360bc8c08615c4de30d7",
+    "text": "Perteneció una vez a a pirate",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:10.295646Z"
+  },
+  "item.6126.desc": {
+    "src_hash": "bae731b49ef5360bc8c08615c4de30d7",
+    "text": "Perteneció una vez a a pirate",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:10.307134Z"
+  },
+  "item.15696.name": {
+    "src_hash": "929fa9a99d72d90981e2b8e72b9f6553",
+    "text": "cristal de extracción gnómico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:19.598102Z"
+  },
+  "item.15697.name": {
+    "src_hash": "e34899059c8e2eee597cba7f6a447fe2",
+    "text": "cristal de resonancia gnómico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:19.598701Z"
+  },
+  "item.15698.name": {
+    "src_hash": "e548916dd22fc7b8549694b2bda037c9",
+    "text": "paquete de suministros gnomos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:19.599255Z"
   }
 }

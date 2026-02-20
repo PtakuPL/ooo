@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T22:57:29.749839Z",
+  "checked_at": "2026-02-20T23:04:53.717056Z",
   "issues_total": 517,
   "issues_by_type": {
     "consistency_in_language": 72,

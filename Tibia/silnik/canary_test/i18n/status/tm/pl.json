@@ -118206,5 +118206,125 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:36:07.958219Z"
+  },
+  "item.21212.desc": {
+    "src_hash": "5755d7bd15467e40db844fb4dcb188e7",
+    "text": "Wygląda na to, że to urządzenie właśnie się rozpadło",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:01:24.611385Z"
+  },
+  "item.28746.desc": {
+    "src_hash": "f99d67c17ea0feaef11c7b5adbb04819",
+    "text": "To jest zwyczajnie wyglądająca kosa – a może jednak?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:01:25.968352Z"
+  },
+  "item.12724.desc": {
+    "src_hash": "94211e9208944d920c7cf25a5b0329c9",
+    "text": "Można go używać do uzbrajania katapult",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:01:36.071866Z"
+  },
+  "npc.buddel.keyword_1": {
+    "src_hash": "7691d661dc9b228fd703e454ec341dca",
+    "text": "Get out o' tutaj, tu!*HICKS*",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:28.475547Z"
+  },
+  "npc.buddel.stdmod_6": {
+    "src_hash": "7691d661dc9b228fd703e454ec341dca",
+    "text": "Get out o' tutaj, tu!*HICKS*",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:28.479420Z"
+  },
+  "npc.buddel_helheim.keyword_1": {
+    "src_hash": "7691d661dc9b228fd703e454ec341dca",
+    "text": "Get out o' tutaj, tu!*HICKS*",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:28.480593Z"
+  },
+  "npc.buddel_helheim.stdmod_6": {
+    "src_hash": "7691d661dc9b228fd703e454ec341dca",
+    "text": "Get out o' tutaj, tu!*HICKS*",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:28.484397Z"
+  },
+  "npc.buddel_okolnir.keyword_1": {
+    "src_hash": "7691d661dc9b228fd703e454ec341dca",
+    "text": "Get out o' tutaj, tu!*HICKS*",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:28.485284Z"
+  },
+  "npc.buddel_okolnir.stdmod_6": {
+    "src_hash": "7691d661dc9b228fd703e454ec341dca",
+    "text": "Get out o' tutaj, tu!*HICKS*",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:28.488558Z"
+  },
+  "npc.buddel_raider_camp.keyword_1": {
+    "src_hash": "7691d661dc9b228fd703e454ec341dca",
+    "text": "Get out o' tutaj, tu!*HICKS*",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:28.489543Z"
+  },
+  "npc.buddel_raider_camp.stdmod_6": {
+    "src_hash": "7691d661dc9b228fd703e454ec341dca",
+    "text": "Get out o' tutaj, tu!*HICKS*",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:28.492617Z"
+  },
+  "npc.buddel_tyrsung.keyword_1": {
+    "src_hash": "7691d661dc9b228fd703e454ec341dca",
+    "text": "Get out o' tutaj, tu!*HICKS*",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:28.493563Z"
+  },
+  "npc.buddel_tyrsung.stdmod_6": {
+    "src_hash": "7691d661dc9b228fd703e454ec341dca",
+    "text": "Get out o' tutaj, tu!*HICKS*",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:28.497052Z"
+  },
+  "npc.captain_haba.stdmod_21": {
+    "src_hash": "c92b28e0d953581702e4ce79326d0654",
+    "text": "To nie chłopak ze sklepu, to okręt wojenny!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:28.715779Z"
+  },
+  "npc.captain_haba_open_sea.larboard_4": {
+    "src_hash": "e6978e629dccd1f86f492cbfc7f63bf2",
+    "text": "BAKBURTA!! CZY TO TRZEBA TAK DŁUGO?!? ZACZNIJMY TO!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:04:28.727139Z"
   }
 }

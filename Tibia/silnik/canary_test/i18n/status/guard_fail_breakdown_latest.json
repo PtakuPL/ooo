@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T20:27:42.462615Z",
-  "window_start_utc": "2026-02-20T19:27:41.776882Z",
-  "window_end_utc": "2026-02-20T20:27:41.776882Z",
+  "timestamp": "2026-02-20T20:28:28.237663Z",
+  "window_start_utc": "2026-02-20T19:28:27.562026Z",
+  "window_end_utc": "2026-02-20T20:28:27.562026Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,33 +9,32 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 202,
-  "rejected_entries_raw": 399,
+  "rejected_entries_raw": 398,
   "suspicious_entries": 3646,
-  "suspicious_entries_raw": 22116,
+  "suspicious_entries_raw": 22145,
   "guard_fail_entries": 122,
-  "guard_fail_sum": 7771,
+  "guard_fail_sum": 7763,
   "by_type": {
     "identical_to_en": 161,
-    "mixed_language": 9,
     "word_salad": 7,
     "fx_token": 3,
     "contains_tibia_proper_noun": 17,
     "mixed_scripts": 22,
-    "cyrillic_latin_mix": 22
+    "cyrillic_latin_mix": 22,
+    "mixed_language": 9
   },
   "by_source": {
     "google_translate": 202
   },
   "by_language": {
-    "sv": 11,
     "es": 40,
     "ro": 61,
+    "sv": 11,
     "pl": 43,
     "it": 25,
     "ru": 22
   },
   "by_category": {
-    "server.json": 17,
     "npc.json": 4,
     "books.json": 1,
     "otclient_modules.json": 29,
@@ -48,6 +47,7 @@
     "php.json": 2,
     "modules.json": 3,
     "items.json": 27,
+    "server.json": 17,
     "spells.json": 33,
     "quests.json": 3
   },
@@ -86,20 +86,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "data.otservbr.global.npc.anerui.L71.1487",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.brasith.L59.1211",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
     {
       "key": "scripts.action_cushion.say_1",
       "count": 3,
@@ -198,6 +184,20 @@
       }
     },
     {
+      "key": "data.otservbr.global.npc.anerui.L71.1487",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.brasith.L59.1211",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
+      }
+    },
+    {
       "key": "spell.quara_constrictor_electrify.name",
       "count": 3,
       "types": {
@@ -225,28 +225,28 @@
       }
     },
     {
-      "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2
       }
     },
     {
-      "key": "data.otservbr.global.npc.anerui.L72.1488",
+      "key": "otclient_modules.bestiary.tr_7",
       "count": 2,
       "types": {
         "identical_to_en": 2
       }
     },
     {
-      "key": "data.otservbr.global.npc.anerui.L73.1489",
+      "key": "otclient_modules.addserver_otui.tr_4",
       "count": 2,
       "types": {
         "identical_to_en": 2
       }
     },
     {
-      "key": "data.otservbr.global.npc.brasith.L60.1212",
+      "key": "monster.deathspawn.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

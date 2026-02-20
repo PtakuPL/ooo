@@ -79742,5 +79742,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T20:20:41.594770Z"
+  },
+  "data.otservbr.global.npc.hyacinth.L220.655": {
+    "src_hash": "37106971bf2a1339b11de7e12249b858",
+    "text": "Che Crunor ti benedica.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.587667Z"
+  },
+  "data.otservbr.global.npc.hyacinth.L221.656": {
+    "src_hash": "56bcc5cd8a51fbaa712e5426f2dc3e99",
+    "text": "Qui. Non dimenticare, se acquisti pozioni, c'è un {deposit} di 5 monete d'oro sulla boccetta vuota.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.588381Z"
+  },
+  "data.otservbr.global.npc.hyacinth.L58.651": {
+    "src_hash": "496ad5f3e14146562fd4fa124ab41003",
+    "text": "Saluti, viaggiatore |PLAYERNAME|. Devi essere tu quello mandato da Lily. Hai un sacco di {herbs} per me?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.588936Z"
+  },
+  "data.otservbr.global.npc.hyacinth.L60.652": {
+    "src_hash": "843c94ca8dd14ccdedf91d5a409788a8",
+    "text": "Saluti, viaggiatore |PLAYERNAME|. Ho ancora un regalo per te! Ti piacerebbe averlo adesso?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.589451Z"
+  },
+  "data.otservbr.global.npc.hyacinth.L62.653": {
+    "src_hash": "190ad7101e079d912f649ef487140629",
+    "text": "Saluti, viaggiatore |PLAYERNAME|. Dato che hai trovato la strada per la mia capanna, come posso {help} te?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.589976Z"
+  },
+  "data.otservbr.global.npc.ikassis.L94.1288": {
+    "src_hash": "2b02b65325043632063e437f73ae4e3d",
+    "text": "Una benedizione della natura, viaggiatore!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.590365Z"
+  },
+  "data.otservbr.global.npc.imalas.L55.670": {
+    "src_hash": "2c6fc266297ccd7c56ad4ba34b259141",
+    "text": "Ciao |PLAYERNAME|! Di che cosa hai bisogno? Se è {food}, sei nel posto giusto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.591055Z"
+  },
+  "data.otservbr.global.npc.imalas.L56.671": {
+    "src_hash": "7f11902c4408305e1726523ca95b1f39",
+    "text": "Sì, guarda bene.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.591402Z"
+  },
+  "data.otservbr.global.npc.imbuement.assistant.L360.558": {
+    "src_hash": "028ff767db8f071f3c945cbba81c8bb1",
+    "text": "A più tardi |PLAYERNAME| torna presto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.591910Z"
+  },
+  "data.otservbr.global.npc.imbuement.assistant.L361.559": {
+    "src_hash": "028ff767db8f071f3c945cbba81c8bb1",
+    "text": "A più tardi |PLAYERNAME| torna presto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.592331Z"
+  },
+  "data.otservbr.global.npc.irmana.L275.380": {
+    "src_hash": "43d5fe0a150dec0be2ad2a9ecf6210cb",
+    "text": "Benvenuti nella casa della moda, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.593753Z"
+  },
+  "data.otservbr.global.npc.ishebad.L53.1162": {
+    "src_hash": "f565f4fee9939868e1a59c6891683b49",
+    "text": "Sii pianto, pellegrino in carne e ossa. Cerchi una promozione?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.594320Z"
+  },
+  "data.otservbr.global.npc.ishebad.L54.1163": {
+    "src_hash": "2dfbfe54731299f6fd8070958be48381",
+    "text": "Arrivederci, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.594672Z"
+  },
+  "data.otservbr.global.npc.ishebad.L55.1164": {
+    "src_hash": "2dfbfe54731299f6fd8070958be48381",
+    "text": "Arrivederci, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.595107Z"
+  },
+  "data.otservbr.global.npc.ishina.L111.412": {
+    "src_hash": "c0bddf3746d07eca97d3a84bb9d04884",
+    "text": "Fatti salutare, |PLAYERNAME|. Quale delle mie belle gemme fai {need}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.595564Z"
+  },
+  "data.otservbr.global.npc.ishina.L112.413": {
+    "src_hash": "45f2935aa8a5385fe0bbcc2fa0a3ec47",
+    "text": "Le benedizioni di Daraman e un arrivederci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.595946Z"
+  },
+  "data.otservbr.global.npc.ishina.L113.414": {
+    "src_hash": "45f2935aa8a5385fe0bbcc2fa0a3ec47",
+    "text": "Le benedizioni di Daraman e un arrivederci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:27:58.596460Z"
   }
 }

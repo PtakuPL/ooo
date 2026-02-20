@@ -72262,5 +72262,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T20:58:17.107420Z"
+  },
+  "npc.taegen.multi_14": {
+    "src_hash": "43ac27d0ac82215053757aa1dad8cb94",
+    "text": "Există o zână care mi-a spus odată despre această vrajă. Poate că își va împărtăși cunoștințele. O poți găsi într-un mic sat de zâne din sud-vestul Feyrist.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.607968Z"
+  },
+  "npc.taegen.multi_7": {
+    "src_hash": "48eba4176f3059b7968230dd4b0c9c50",
+    "text": "Dar există o zână care mi-a spus odată despre asta. Poate că își va împărtăși cunoștințele. O poți găsi într-un mic sat de zâne din sud-vestul Feyrist.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.609159Z"
+  },
+  "npc.tandros.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Desigur, răsfoiește-mi produsele. Puteți să vă uitați și la {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.613107Z"
+  },
+  "npc.tanyt.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.613793Z"
+  },
+  "npc.tanyt.stdmod_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Simte vântul în părul tău în timpul uneia dintre plimbările mele pe covor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.614374Z"
+  },
+  "npc.tanyt.stdmod_3": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Cauți o trecere la {0} pentru {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.615021Z"
+  },
+  "npc.tanyt.stdmod_4": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Am dori să vă servim ceva timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.615466Z"
+  },
+  "npc.tanyt.voice_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Simte vântul în părul tău în timpul uneia dintre plimbările mele pe covor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.616270Z"
+  },
+  "npc.tarak_inner.say_2": {
+    "src_hash": "88ef5e9e3e756c3fab6b1c47f569d2fe",
+    "text": "Nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.617060Z"
+  },
+  "npc.telas.say_7": {
+    "src_hash": "e04607d84a383e8cbb7db9ec770f05da",
+    "text": "Cuvânt greșit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.621936Z"
+  },
+  "npc.tereban_functions.say_1": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Nu ești în acea misiune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.625629Z"
+  },
+  "npc.tesha.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Nu uitați să vă depuneți banii aici în Banca Globală înainte de a pleca în aventură.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.627545Z"
+  },
+  "npc.the_lootmonger.say_1": {
+    "src_hash": "46767821d220df513037f0a25e3170c7",
+    "text": "Vând o selecție de {}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.636610Z"
+  },
+  "npc.the_lootmonger.say_2": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Desigur, răsfoiește-mi produsele. Puteți să vă uitați și la {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.637139Z"
+  },
+  "npc.the_orc_king.say_6": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Nu ai nicio prăjitură pe care mi-aș dori.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.638861Z"
+  },
+  "npc.thorgrin.keyword_1": {
+    "src_hash": "85467327989ec3f06366c501660d8e59",
+    "text": "Din plin abur înainte!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:04:45.643208Z"
   }
 }

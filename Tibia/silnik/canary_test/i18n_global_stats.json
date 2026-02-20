@@ -1,8 +1,8 @@
 {
-  "total_cycles": 101,
+  "total_cycles": 102,
   "mode": "AUTO_TRANSLATE",
-  "category": "sv",
-  "last_update": "2026-02-20T20:23:28.824482",
+  "category": "pl",
+  "last_update": "2026-02-20T20:23:57.111452",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,14 +26,21 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "sv",
-    "json_file": "npc.json",
-    "keys_to_translate": 7559,
-    "guard_fail": 28,
+    "language": "pl",
+    "json_file": "quests.json",
+    "keys_to_translate": 7,
+    "guard_fail": 6,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 0,
-    "recent_examples": []
+    "recent_translated": 1,
+    "recent_examples": [
+      {
+        "key": "quests.actions_using_crystals.say_2",
+        "en": "BOOOOM!",
+        "translated": "BOOOOM!",
+        "source": "tm"
+      }
+    ]
   },
   "idle": {
     "new_files_detected": 152,

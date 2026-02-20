@@ -1,23 +1,17 @@
 {
-  "timestamp": "2026-02-20T19:23:26.480346Z",
-  "language": "es",
-  "json_file": "spells.json",
-  "translated": 2,
+  "timestamp": "2026-02-20T19:23:54.287934Z",
+  "language": "pl",
+  "json_file": "quests.json",
+  "translated": 1,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "spell.defiler_paralyze_3.name",
-      "en": "Defiler Paralyze 3",
-      "translated": "Defiler Paralyze 3",
-      "source": "tm"
-    },
-    {
-      "key": "spell.lizard_wave_2.name",
-      "en": "Lizard Wave 2",
-      "translated": "Lizard Wave 2",
+      "key": "quests.actions_using_crystals.say_2",
+      "en": "BOOOOM!",
+      "translated": "BOOOOM!",
       "source": "tm"
     }
   ]

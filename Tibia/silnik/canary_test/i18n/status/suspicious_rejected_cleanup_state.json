@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-20T23:20:20.421144Z",
-  "last_cycle": 7,
+  "timestamp": "2026-02-20T23:21:54.788562Z",
+  "last_cycle": 8,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -183,7 +183,31 @@
       "monster.walker.name",
       "monster.wyrm.name"
     ],
-    "es|npc.json": [],
+    "es|npc.json": [
+      "npc.a_fading_memory.greet_msg_1",
+      "npc.a_sweaty_cyclops.stdmod_1",
+      "npc.a_sweaty_cyclops.voice_1",
+      "npc.barnabas_dee.say_5",
+      "npc.budrik.say_9",
+      "npc.captain_haba_open_sea.larboard_1",
+      "npc.captain_haba_open_sea.say_3",
+      "npc.captain_haba_open_sea.starboard_1",
+      "npc.captain_haba_open_sea.straight_3",
+      "npc.captain_haba_open_sea.straight_5",
+      "npc.elyen_ravenlock.voice_2",
+      "npc.jeronimo.say_3",
+      "npc.lardoc_bashsmite.multi_3",
+      "npc.lardoc_bashsmite.multi_9",
+      "npc.mother_of_jack.voice_1",
+      "npc.navigator.multi_1",
+      "npc.navigator.multi_2",
+      "npc.omrabas.multi_35",
+      "npc.omrabas.multi_82",
+      "npc.omrabas.voice_2",
+      "npc.pythius_the_rotten.stdmod_12",
+      "npc.raymond_striker.multi_21",
+      "npc.sane_mage.multi_5"
+    ],
     "sv|npc.json": [],
     "sr|npc.json": [],
     "pl|spells.json": [],
@@ -303,6 +327,49 @@
       "quests.rookie_guard.m06.exit_time",
       "quests.soul_war.dread_tear_apart",
       "quests.soul_war.msg_3"
+    ],
+    "ro|quests.json": [
+      "quests.actions_boxramp.msg_1",
+      "quests.actions_using_crystals.say_2",
+      "quests.mission09_rock_troll.say_1",
+      "quests.oramond.sewer_fix_2"
+    ],
+    "sv|server.json": [
+      "data.otservbr.global.npc.a.fluffy.squirrel.L72.1053",
+      "data.otservbr.global.npc.a.fluffy.squirrel.L73.1054",
+      "data.otservbr.global.npc.blind.orc.L102.1517"
+    ],
+    "sr|server.json": [
+      "data.otservbr.global.npc.a.beggar.L82.1060",
+      "data.otservbr.global.npc.a.dragon.mother.L58.203",
+      "data.otservbr.global.npc.a.prisoner.L140.263",
+      "data.otservbr.global.npc.a.strange.chalice.L117.1623",
+      "data.otservbr.global.npc.ahmet.L182.407",
+      "data.otservbr.global.npc.albinius.L267.1035",
+      "data.otservbr.global.npc.andrew.lyze.L101.514",
+      "data.otservbr.global.npc.andrew.lyze.L103.515",
+      "data.otservbr.global.npc.andrew.lyze.L105.516",
+      "data.otservbr.global.npc.angelo.L58.1443",
+      "data.otservbr.global.npc.armenius.L86.644",
+      "data.otservbr.global.npc.barnabas.dee.L130.1046",
+      "data.otservbr.global.npc.battlemart.L64.1360",
+      "data.otservbr.global.npc.bloodshade.rotten.L72.427",
+      "data.otservbr.global.npc.bloodshade.sacrifice.L93.1259",
+      "data.otservbr.global.npc.captain.cookie.L64.993",
+      "data.otservbr.global.npc.captain.haba.L68.190",
+      "data.otservbr.global.npc.captain.harava.L87.949",
+      "data.otservbr.global.npc.captain.jack.rat.L57.982",
+      "data.otservbr.global.npc.captain.waverider.L97.707",
+      "data.otservbr.global.npc.captain.waverider.island.L61.1025",
+      "data.otservbr.global.npc.carlos.L107.1095",
+      "data.otservbr.global.npc.carlos.L241.1099",
+      "data.otservbr.global.npc.carlos.L243.1101",
+      "data.otservbr.global.npc.carlos.L91.1090",
+      "data.otservbr.global.npc.carlos.L94.1091",
+      "data.otservbr.global.npc.cerdras.L85.657",
+      "data.otservbr.global.npc.charles.L142.1490",
+      "data.otservbr.global.npc.chartan.L107.1622",
+      "data.otservbr.global.npc.chavis.L118.1346"
     ]
   }
 }

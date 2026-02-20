@@ -175710,5 +175710,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T23:01:05.453637Z"
+  },
+  "data.otservbr.global.npc.carlos.L107.1095": {
+    "src_hash": "00143dd08108a83dcbb73f1a2f6bba1b",
+    "text": "Добродошли назад, Ислетх Еагонст! Да ли још увек имате тај комад меса или шунке? Ако јесте, тражите од мене {trade} и даћу вам нешто злата за то.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:21:21.775613Z"
+  },
+  "data.otservbr.global.npc.carlos.L241.1099": {
+    "src_hash": "e4f61d081116f4ed5def9cd059b7a2db",
+    "text": "Веома лепо! Храна за мене! Продај ми га, брзо! Када ми продате храну, само реците {ready} да бисте ми рекли да сте готови.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:21:21.786014Z"
+  },
+  "data.otservbr.global.npc.carlos.L243.1101": {
+    "src_hash": "fa803dcd4286a1cfa0ba0dfa80ecf665",
+    "text": "Збогом путниче и уживајте у боравку на Роокгаард.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:21:21.791470Z"
+  },
+  "data.otservbr.global.npc.carlos.L91.1090": {
+    "src_hash": "8f3bfe7d9daacf690cfdb7686af3d947",
+    "text": "Хеј, мислио сам да ћеш побећи, али срећом си се вратио. Показаћу ти како да промениш {outfit}, у реду?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:21:21.796885Z"
+  },
+  "data.otservbr.global.npc.carlos.L94.1091": {
+    "src_hash": "f98802d766209a9cc89953b431e09fa3",
+    "text": "Добродошли назад! Знаш, након што сам пружио своју малу услугу одеће, волео бих да те замолим за малу услугу. Можете ли ми {help}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:21:21.810340Z"
+  },
+  "data.otservbr.global.npc.cerdras.L85.657": {
+    "src_hash": "ac222e2ce71c774dfd7615b83f6538df",
+    "text": "Поздрав пријатељу мој!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:21:21.820714Z"
+  },
+  "data.otservbr.global.npc.charles.L142.1490": {
+    "src_hash": "490e8db04e2c02a81dc2a9e424404ac0",
+    "text": "Ахои. Где могу да те отпловим данас?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:21:21.822106Z"
+  },
+  "data.otservbr.global.npc.chartan.L107.1622": {
+    "src_hash": "59ceb2b20041c81e2dc60b6bc0b262ba",
+    "text": "Греат Знаке опрости ми да конверзе виз зиз унворзи бланкзкин.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:21:21.824424Z"
+  },
+  "data.otservbr.global.npc.chavis.L118.1346": {
+    "src_hash": "74bc51c2c9d2b899820180e938426aa0",
+    "text": "Хеј тамо! Случајно немате {food} на себи, вољни сте да поделите? Па где су моји манири, срдачна добродошлица за сада.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:21:21.826021Z"
   }
 }

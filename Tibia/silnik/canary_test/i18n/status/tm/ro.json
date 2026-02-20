@@ -71878,5 +71878,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T20:36:16.435903Z"
+  },
+  "npc.ser_tybald.say_9": {
+    "src_hash": "e1742dda1f03a66f44a17d308bd84e4d",
+    "text": "Arta predării vrăjii este complexă și periculoasă și vom împărtăși cunoștințele noastre valoroase despre o vrajă unui novice doar dacă acesta poate plăti prețul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.075228Z"
+  },
+  "npc.ser_tybald.stdmod_10": {
+    "src_hash": "ad1e3c3e2ede3ff9027511de84a2a3df",
+    "text": "Aspru și înăsprit de tragediile vieții. Un om bun, dar sumbru.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.075817Z"
+  },
+  "npc.ser_tybald.stdmod_11": {
+    "src_hash": "3be359a33153ef3483e8980a3e3a13aa",
+    "text": "Da, copile. Dacă vrei să înveți o vrajă, spune-mi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.077074Z"
+  },
+  "npc.ser_tybald.stdmod_12": {
+    "src_hash": "8f64ff0dc19109a2bbe1f2facbcf7cfd",
+    "text": "Un tânăr foarte încăpățânat, deși îi apreciez devotamentul față de meșteșugul de a face poțiuni. \\z\n\t\tFără respect pentru autoritatea superioară sau vârstă! Cu excepția poate pentru un mic punct slab pentru domnul Morris.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.079134Z"
+  },
+  "npc.ser_tybald.stdmod_13": {
+    "src_hash": "bb307923d19e6276118a25b4ce47a266",
+    "text": "Un tânăr ciudat. În mintea mea pare condus. Cu ce ​​forță, nu știu. \\z\n\t\tÎnțeleg că lumea are nevoie de aventurieri ca el.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.080644Z"
+  },
+  "npc.ser_tybald.stdmod_14": {
+    "src_hash": "0b92ef836bb0fa26d11a4550048f20f4",
+    "text": "Să-ți mântuiești sufletul devenind funcționar? Nu foarte probabil. Odată pirat, mereu pirat. \\z\n\t\tDar el este un bătrân necinstitor fermecător.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.082176Z"
+  },
+  "npc.ser_tybald.stdmod_16": {
+    "src_hash": "902b5d31d369e5d04ec4f6158fd4d95c",
+    "text": "Este priceput în artele marțiale. Un profesor foarte priceput de vrăji pentru cavaleri și paladini. \\z\n\t\tDacă aceasta este vocația ta, ar trebui să vorbești cu Ser Tybald.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.084595Z"
+  },
+  "npc.ser_tybald.stdmod_17": {
+    "src_hash": "c82b0aad3e136b13688f992a06d6be31",
+    "text": "Ah, da. Din câte îmi amintesc, am călătorit mult cu Plunderpurse. Căpitanul Plunderpurse, atunci. \\z\n\t\t\tAvea capul plin de cifre și statistici, băiatul ăla.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.086447Z"
+  },
+  "npc.ser_tybald.stdmod_6": {
+    "src_hash": "44ca56ea100283d3a8307a98b4af3c69",
+    "text": "Nu ai ascultat? Sunt profesor de vrăji de druid și vrăjitor de la nivelul 8 la 18. \\z\n\t\tÎi învăț tinerilor aventurieri vrăji pe care le pot folosi odată ce au vocația potrivită - druid sau vrăjitor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.089009Z"
+  },
+  "npc.ser_tybald.stdmod_7": {
+    "src_hash": "acefac1b3eccbd6ea4d08ab12deb5507",
+    "text": "Am un vechi prieten acolo. Nu am mai auzit de el de ceva vreme.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.090023Z"
+  },
+  "npc.ser_tybald.stdmod_8": {
+    "src_hash": "f1ba5e2a1b4d8a9622d9c95c6441edf6",
+    "text": "Oh, nu e prea rău aici, crede-mă. Cel puțin întotdeauna primesc discipoli tineri și entuziaști! \\z\n\t\tDeși trebuie să mărturisesc că mi-e dor de vastitatea Câmpiilor Tibiene. <sighs>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.091902Z"
+  },
+  "npc.ser_tybald.stdmod_9": {
+    "src_hash": "55daa5399f2bd04c879447383de167bc",
+    "text": "Un bătrân vânător bun. Îi place să vadă viața tânără în jur, preluând căile și aranjamentele pământului. \\z\n\t\tDacă aveți întrebări, cereți ajutor lui Inigo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.093496Z"
+  },
+  "npc.serafin.say_2": {
+    "src_hash": "92874d037552d6ed7c7552ac9eeebf3b",
+    "text": "Ar fi mai bine să pleci acum.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.094658Z"
+  },
+  "npc.shanar.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.108502Z"
+  },
+  "npc.shiantis.say_1": {
+    "src_hash": "ca5af46d9c20d6cbd9f33d8c59caee9d",
+    "text": "Vrei să cumperi o minge de fotbal pentru 111 aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.118185Z"
+  },
+  "npc.shiantis.say_2": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Iată-l.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:42:03.118739Z"
   }
 }

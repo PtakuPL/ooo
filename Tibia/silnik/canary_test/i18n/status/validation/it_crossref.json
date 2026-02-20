@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 53.2,
+  "coverage_pct": 53.3,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T20:24:53.392349Z",
+  "checked_at": "2026-02-20T20:43:40.152404Z",
   "issues_total": 429,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -3082,33 +3082,6 @@
       "lang": "GULP, GULP, GULP"
     },
     {
-      "key": "scripts.blessed_steak.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chomp.",
-      "pl": "Chop.",
-      "lang": "Chomp."
-    },
-    {
-      "key": "scripts.blueberry_cupcake.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mmmm.",
-      "pl": "Mmm.",
-      "lang": "Mmmm."
-    },
-    {
-      "key": "scripts.carrot_cake.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mmmm.",
-      "pl": "Mmm.",
-      "lang": "Mmmm."
-    },
-    {
       "key": "scripts.coconut_shrimp_bake.say_1",
       "category": "scripts",
       "type": "pl_reference_missing_translation",
@@ -3737,6 +3710,33 @@
       "en": "Sssssssss",
       "pl": "Sssssss",
       "lang": "Sssssssss"
+    },
+    {
+      "key": "scripts.northern_fishburger.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Smack.",
+      "pl": "Zadatki.",
+      "lang": "Smack."
+    },
+    {
+      "key": "scripts.offline_training.and",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "and",
+      "pl": "i",
+      "lang": "and"
+    },
+    {
+      "key": "scripts.offline_training.hours_plural",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "%s hours",
+      "pl": "%s godziny",
+      "lang": "%s hours"
     }
   ],
   "length_ratio_issues": [

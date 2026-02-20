@@ -1,42 +1,40 @@
 {
-  "timestamp": "2026-02-20T20:41:13.180722Z",
-  "window_start_utc": "2026-02-20T19:41:12.484065Z",
-  "window_end_utc": "2026-02-20T20:41:12.484065Z",
+  "timestamp": "2026-02-20T20:44:26.179047Z",
+  "window_start_utc": "2026-02-20T19:44:25.467367Z",
+  "window_end_utc": "2026-02-20T20:44:25.467367Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 168,
-  "rejected_entries_raw": 415,
-  "suspicious_entries": 3586,
-  "suspicious_entries_raw": 24271,
-  "guard_fail_entries": 124,
-  "guard_fail_sum": 9618,
+  "rejected_entries": 163,
+  "rejected_entries_raw": 412,
+  "suspicious_entries": 3549,
+  "suspicious_entries_raw": 24371,
+  "guard_fail_entries": 119,
+  "guard_fail_sum": 9620,
   "by_type": {
-    "mixed_language": 9,
-    "mixed_scripts": 10,
-    "cyrillic_latin_mix": 10,
     "identical_to_en": 139,
     "word_salad": 7,
+    "mixed_language": 7,
     "contains_tibia_proper_noun": 6,
+    "mixed_scripts": 7,
+    "cyrillic_latin_mix": 7,
     "fx_token": 3
   },
   "by_source": {
-    "google_translate": 168
+    "google_translate": 163
   },
   "by_language": {
-    "it": 10,
-    "ru": 10,
     "es": 39,
     "pl": 38,
+    "it": 8,
     "ro": 56,
+    "ru": 7,
     "sv": 15
   },
   "by_category": {
-    "php.json": 2,
-    "modules.json": 3,
     "npc.json": 4,
     "items.json": 27,
     "server.json": 17,
@@ -49,8 +47,8 @@
     "client.json": 4
   },
   "by_severity": {
-    "HIGH": 22,
-    "CRITICAL": 146
+    "CRITICAL": 146,
+    "HIGH": 17
   },
   "top_types": [
     {
@@ -58,19 +56,19 @@
       "count": 139
     },
     {
-      "type": "mixed_scripts",
-      "count": 10
-    },
-    {
-      "type": "cyrillic_latin_mix",
-      "count": 10
+      "type": "word_salad",
+      "count": 7
     },
     {
       "type": "mixed_language",
-      "count": 9
+      "count": 7
     },
     {
-      "type": "word_salad",
+      "type": "mixed_scripts",
+      "count": 7
+    },
+    {
+      "type": "cyrillic_latin_mix",
       "count": 7
     },
     {
@@ -129,30 +127,6 @@
       "count": 3,
       "types": {
         "identical_to_en": 3
-      }
-    },
-    {
-      "key": "module.hireling_module.text1",
-      "count": 2,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "module.gamestore.text3",
-      "count": 2,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "module.daily_reward.text1",
-      "count": 2,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
       }
     },
     {
@@ -234,6 +208,27 @@
       "types": {
         "identical_to_en": 1,
         "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "spell.iksyapunac_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.mitmahseer_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
       }
     }
   ]

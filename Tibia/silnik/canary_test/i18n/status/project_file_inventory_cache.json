@@ -1,7 +1,7 @@
 {
-  "timestamp": 1771619627,
+  "timestamp": 1771620261,
   "ttl_sec": 600,
-  "all_project_files": 20601,
+  "all_project_files": 20597,
   "files_by_type": {
     ".yml": 19,
     ".txt": 83,
@@ -14,7 +14,7 @@
     ".bat": 4,
     ".bak": 2576,
     ".faza2": 1,
-    ".json": 2662,
+    ".json": 2661,
     ".yaml": 2,
     ".lock": 4,
     ".md": 969,
@@ -42,7 +42,6 @@
     ".20260214_132041": 1,
     ".prev": 1,
     ".20260214_132040": 1,
-    ".w": 1,
     ".corrupted": 1,
     ".corrupted_backup": 2,
     ".cpp": 373,

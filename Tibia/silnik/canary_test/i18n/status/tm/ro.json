@@ -67342,5 +67342,309 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T16:57:00.122915Z"
+  },
+  "npc.mortimer.multi_44": {
+    "src_hash": "59d832175850554186c76307ef967864",
+    "text": "Acest kit de pregătire vă va permite să colectați un fluture roșu pe care l-ați ucis...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.946798Z"
+  },
+  "npc.mortimer.multi_46": {
+    "src_hash": "cb5598bc461a5a6a5cfae6cfe84f98c4",
+    "text": "Acest kit de pregătire vă va permite să colectați un fluture albastru pe care l-ați ucis...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.947494Z"
+  },
+  "npc.mortimer.multi_48": {
+    "src_hash": "dfc5ac49eb8d3ea80743ffc0306c16d5",
+    "text": "Cele mai bune minți ale noastre au venit cu teoria că, în adâncul insulei de gheață Folda, se poate găsi gheață veche. Pentru a demonstra această teorie, am avea nevoie de o mostră din gheața menționată mai sus...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.948547Z"
+  },
+  "npc.mortimer.multi_5": {
+    "src_hash": "7c10e329b4a57dbd0d3c7175149adf8d",
+    "text": "Societatea oferă o recompensă substanțială pentru recuperarea lui Ratha sau a rămășițelor sale. Ai vești despre Ratha?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.949242Z"
+  },
+  "npc.mortimer.multi_51": {
+    "src_hash": "08cef1cfc8fcecfbf5781c716fe08d8e",
+    "text": "Ambele sculpturi sunt acum încărcate și armonizate. În teorie, ar trebui să poți călători în timp zero de la o bază la alta...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.950083Z"
+  },
+  "npc.mortimer.multi_52": {
+    "src_hash": "07438ccddb233b3362eed211f1015e36",
+    "text": "Cu toate acestea, va trebui să aveți o perlă de orichalc în posesia dumneavoastră pentru a o folosi ca sursă de energie. Acesta va fi distrus în timpul procesului. Vă voi oferi 6 astfel de perle și puteți cumpăra altele noi în bazele noastre...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.951546Z"
+  },
+  "npc.mortimer.multi_53": {
+    "src_hash": "f76f42c4d2ec81f4480932e7fd5e2b89",
+    "text": "În plus, trebuie să fii un explorator premium pentru a folosi călătoria astrală. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.952696Z"
+  },
+  "npc.mortimer.multi_54": {
+    "src_hash": "ac1dbbbb1af69d60e23fe6b662ad0375",
+    "text": "Și ține minte: este un mic teleport pentru tine, dar un mare teleport pentru toți tibienii! Iată un mic cadou pentru eforturile tale!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.954287Z"
+  },
+  "npc.mortimer.multi_55": {
+    "src_hash": "f5ea2129e1be3653ea1f3f0142d972a3",
+    "text": "Cu obiectele pe care le-ați furnizat, cercetătorii noștri vor face progrese constante. Totuși, ne lipsesc câteva rezultate ale testelor de la colegii exploratori...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.955871Z"
+  },
+  "npc.mortimer.multi_57": {
+    "src_hash": "c8b5a09280d3a626d97d77288a558304",
+    "text": "Cercetarea ectoplasmei face progrese bune. Acum avem nevoie de un articol spectral. Oamenii noștri de știință cred că o rochie spectrală ar fi un obiect perfect pentru studiile lor...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.957776Z"
+  },
+  "npc.mortimer.multi_59": {
+    "src_hash": "489c305d7e1c73be47f94d405a2dfe0b",
+    "text": "Poveștile acelea sunt pur și simplu uimitoare! Bărbați cu fețe pe burtă în loc de capete spuneți? Și găinile care depun ouă de aur? Întrucât, cel mai uimitor este această fântână a tinereții pe care ai menționat-o! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.959757Z"
+  },
+  "npc.mortimer.multi_6": {
+    "src_hash": "d9b7079a5ca00792e1442b39336d34a6",
+    "text": "Bine, doar ia această esență spectrală și folosește-o pe sculptura ciudată din această clădire, precum și pe țigla corespunzătoare din baza noastră din Northport...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.961311Z"
+  },
+  "npc.mortimer.multi_60": {
+    "src_hash": "ffb687ecc9d990125f12c0b6a4a6cf90",
+    "text": "Voi trimite imediat câțiva dintre cei mai dedicați exploratori ai noștri să verifice aceste lucruri!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.962706Z"
+  },
+  "npc.mortimer.multi_7": {
+    "src_hash": "f616702d57809f7fb69fbcb6bed9e9b5",
+    "text": "De îndată ce ați încărcat plăcile portalului în acest fel, raportați despre portalurile spectrale.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.964859Z"
+  },
+  "npc.mortimer.multi_8": {
+    "src_hash": "b8a8e31569ad1400711e8b5c46838889",
+    "text": "Este destul de curajos. Știm, este mult ce cerem. Regina banshees-urilor locuiește în așa-numitele Ghostlands, la sud-vest de Carlin. Se zvonește că bârlogul ei este situat în cele mai adânci temnițe de sub acel loc blestemat...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.966810Z"
+  },
+  "npc.mortimer.multi_9": {
+    "src_hash": "f92b7e2780d0361c6781e39ff486b82b",
+    "text": "Orice violență va fi probabil zadarnică, va trebui să negociezi cu ea. Încercați să obțineți o rochie spectrală de la ea. Noroc.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.967672Z"
+  },
+  "npc.mortimer.say_1": {
+    "src_hash": "4004163d9a4de051f32618f25fa503f1",
+    "text": "Vrei să te alături societății exploratorilor?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.968102Z"
+  },
+  "npc.mortimer.say_12": {
+    "src_hash": "c2aafac7aec4ab21a6c7325db8bb361d",
+    "text": "Ai primit gheața pe care o căutăm?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.968733Z"
+  },
+  "npc.mortimer.say_13": {
+    "src_hash": "17784738b379cb7f12cc256ea095876d",
+    "text": "Misiunea vă cere să colectați câteva specii de fluturi, vă interesează?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.969275Z"
+  },
+  "npc.mortimer.say_14": {
+    "src_hash": "202bc421be1d2a8c5a8f5f62d614779c",
+    "text": "Ați achiziționat fluturele violet pe care îl căutăm?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.969740Z"
+  },
+  "npc.mortimer.say_15": {
+    "src_hash": "0791722408ef8fb47b7063a5387323a6",
+    "text": "Ați achiziționat fluturele albastru pe care îl căutăm?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.970311Z"
+  },
+  "npc.mortimer.say_16": {
+    "src_hash": "4b492af572daa4eaa8b008d4b2c1ffcc",
+    "text": "Ați achiziționat fluturele roșu pe care îl căutăm?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.970779Z"
+  },
+  "npc.mortimer.say_17": {
+    "src_hash": "1e3ce998af65b2f9115f67b03275ee2c",
+    "text": "În această misiune, vă solicităm să ne aduceți câteva mostre de plante din plantele Tiquandan. Ți-ar plăcea să îndeplinești această misiune?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.971614Z"
+  },
+  "npc.mortimer.say_18": {
+    "src_hash": "7658be1e78e4fa62af43dfe438c83fa1",
+    "text": "Ați achiziționat eșantionul plantei de clopoței junglei pe care o căutăm?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.972167Z"
+  },
+  "npc.mortimer.say_19": {
+    "src_hash": "d2ef0a97c44d4bfe0a19b1453939c6c1",
+    "text": "Folosește acest recipient de botanist pe un cazan de vrăjitoare pentru a colecta o probă pentru noi. Adu-l aici și raportează despre colecția ta de plante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.972878Z"
+  },
+  "npc.mortimer.say_2": {
+    "src_hash": "4b60bc43dabd9b31255e05f2ed853731",
+    "text": "Da, un subiect interesant. Am avut discuții vii despre această descoperire. Dar ce vrei tu?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.973592Z"
+  },
+  "npc.mortimer.say_20": {
+    "src_hash": "5b714d0c80a6c73bd18e2df74f730aff",
+    "text": "Ați achiziționat eșantionul cazanului de vrăjitoare pe care îl căutăm?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.974091Z"
+  },
+  "npc.mortimer.say_21": {
+    "src_hash": "45aced636b00875c88331e566ef329fe",
+    "text": "Folosiți recipientul acestui botanist pe un trandafir uriaș din junglă pentru a obține o probă pentru noi. Adu-l aici și raportează despre colecția ta de plante.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.974836Z"
+  },
+  "npc.mortimer.say_22": {
+    "src_hash": "c2d1281ef23ec34e1af4f0f25617ec8f",
+    "text": "Ați achiziționat eșantionul de trandafir uriaș din junglă pe care îl căutăm?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.975386Z"
+  },
+  "npc.mortimer.say_23": {
+    "src_hash": "4371136e87655e87a08b2762f638571f",
+    "text": "Societatea de exploratori ar dori să achiziționeze o urnă antică care este un fel de relicvă pentru oamenii șopârle din Tiquanda. Ți-ar plăcea să accepți această misiune?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.976250Z"
+  },
+  "npc.mortimer.say_24": {
+    "src_hash": "6d81757f3a07c512f691dc53e8f417b5",
+    "text": "Ai reușit să obții urna antică?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.976742Z"
+  },
+  "npc.mortimer.say_25": {
+    "src_hash": "d01610bec3f9aa1d641a66728fdba293",
+    "text": "Ați găsit vreo dovadă că piramida a fost construită de stăpâni?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.977219Z"
+  },
+  "npc.mortimer.say_26": {
+    "src_hash": "4da05c5cff71811eafc918ece4baf9e0",
+    "text": "Ați achiziționat o parte din pudra de orci?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.977640Z"
+  },
+  "npc.mortimer.say_28": {
+    "src_hash": "61e73ea9002abf2e5503325e2fba6707",
+    "text": "Ați reușit să obțineți o piatră de memorie pentru societatea noastră?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.978174Z"
+  },
+  "npc.mortimer.say_29": {
+    "src_hash": "b9664a6fed43fe030bbffde8c246b60a",
+    "text": "Ați creat o copie a runelor antice așa cum ați cerut?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.978759Z"
+  },
+  "npc.mortimer.say_30": {
+    "src_hash": "3c7e67a8006b35c46056046ea55303d4",
+    "text": "Vom vedea dacă poți face față acestei sarcini simple. Luați târnacopul de la Uzgod în Kazordoon și aduceți-l la una dintre bazele noastre. Raportează acolo despre târnăcop.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.979626Z"
+  },
+  "npc.mortimer.say_31": {
+    "src_hash": "629d910af5dde1cd49ef6668c71f4629",
+    "text": "Tocmai la timp. Din păcate, nu a mai rămas multă gheață, dar va merge. Multumesc din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.980241Z"
+  },
+  "npc.mortimer.say_32": {
+    "src_hash": "75e23fa5e7ea295bab95f02fcb87da94",
+    "text": "*Suftat* Cred că este momentul potrivit să-ți mai acordăm o șansă de a obține acea gheață. Grăbește-te de data asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:08:25.980859Z"
   }
 }

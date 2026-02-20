@@ -1,15 +1,14 @@
 {
-  "timestamp": "2026-02-20T17:08:04.898785Z",
+  "timestamp": "2026-02-20T17:10:09.720510Z",
   "checked_entries": 100,
-  "issues_found": 37,
+  "issues_found": 29,
   "issues_by_type": {
-    "identical_to_en_exempt": 2,
-    "artifact_token": 37,
-    "suspicious_log_high": 166,
-    "suspicious_log_critical": 16,
-    "suspicious_log_low": 18,
-    "suspicious_rejected_high": 34,
-    "suspicious_rejected_critical": 166
+    "identical_to_en_exempt": 1,
+    "artifact_token": 16,
+    "identical_to_en": 13,
+    "suspicious_log_high": 200,
+    "suspicious_rejected_critical": 164,
+    "suspicious_rejected_high": 36
   },
   "issues": [
     {
@@ -125,151 +124,95 @@
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
+      "key": "monster.white_pale.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
+      "key": "monster.white_pale.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
+      "key": "monster.the_welter.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
+      "key": "monster.the_welter.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
+      "key": "monster.water_buffalo.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+      "key": "monster.feverish_citizen.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+      "key": "monster.serpent_spawn.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn"
     },
     {
-      "key": "npc.mother_of_jack.voice_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
-      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?"
+      "key": "monster.mad_mage.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Mad Mage",
+      "translated": "Mad Mage"
     },
     {
-      "key": "npc.navigator.multi_1",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
-      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ..."
+      "key": "monster.zevelon_duskbringer.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
     },
     {
-      "key": "npc.navigator.multi_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
-      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ..."
+      "key": "monster.zevelon_duskbringer.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
     },
     {
-      "key": "npc.omrabas.multi_35",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
-      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!"
+      "key": "monster.weakened_shlorg.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
     },
     {
-      "key": "npc.omrabas.multi_82",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
-      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!"
+      "key": "monster.weakened_shlorg.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
     },
     {
-      "key": "npc.omrabas.voice_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "He will PAY for this... They will ALL pay!",
-      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!"
-    },
-    {
-      "key": "npc.pythius_the_rotten.stdmod_12",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
-      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!"
-    },
-    {
-      "key": "npc.raymond_striker.multi_21",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
-    },
-    {
-      "key": "npc.sane_mage.multi_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "monster.shulgrax.voice_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "YOU ARE ALL DAMNED!",
-      "translated": "¡ESTÁIS TODOS MALDITOS!"
-    },
-    {
-      "key": "monster.ferumbras_mortal_shell.voice_4",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "I WILL MAKE ALL OF YOU SUFFER!",
-      "translated": "¡LOS HARÉ SUFRIR A TODOS!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_4",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "CRUSH THEM ALL!",
-      "translated": "¡¡APLASTADLES A TODOS!!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_8",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!",
-      "translated": "AUN CON TODO ESE TIEMPO EN LA PRISIÓN QUE ME DEBILITÓ, ¡NO ERES COMPATIBLE PARA MÍ!"
-    },
-    {
-      "key": "monster.prince_drazzak.voice_9",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "THEY WILL ALL PAY!",
-      "translated": "¡TODOS PAGARÁN!"
+      "key": "monster.diblis_the_fair.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Diblis The Fair",
+      "translated": "Diblis The Fair"
     }
   ],
   "threshold": 10,

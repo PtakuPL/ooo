@@ -1,131 +1,131 @@
 {
-  "timestamp": "2026-02-20T17:08:03.538633Z",
+  "timestamp": "2026-02-20T17:10:07.996749Z",
   "language": "ru",
-  "json_file": "npc.json",
-  "translated": 50,
+  "json_file": "monsters.json",
+  "translated": 44,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.aruda.farewell_msg_1",
-      "en": "Good bye, |PLAYERNAME|. I really hope we'll talk again soon.",
-      "translated": "До свидания, |PLAYERNAME|. Я очень надеюсь, что мы скоро снова поговорим.",
+      "key": "monster.jaul.voice_2",
+      "en": "QJELL AFAR GOU JEY!!",
+      "translated": "QJELL ДАЛЕКО ГОУ ДЖЕЙ!!",
       "source": "tm"
     },
     {
-      "key": "npc.aruda.greet_msg_1",
-      "en": "Oh, hello |PLAYERNAME|, your hair looks great! Who did it for you?",
-      "translated": "О, привет |PLAYERNAME|, твои волосы выглядят великолепно! Кто сделал это для тебя?",
+      "key": "monster.the_unwelcome.name",
+      "en": "The Unwelcome",
+      "translated": "The UnДобро пожаловать",
       "source": "tm"
     },
     {
-      "key": "npc.aruda.greet_msg_2",
-      "en": "Oh, hello, handsome! It's a pleasure to meet you, |PLAYERNAME|. Gladly I have the time to {chat} a bit.",
-      "translated": "О, привет, красавчик! Приятно познакомиться, |PLAYERNAME|. С радостью, у меня есть время {chat} немного.",
+      "key": "monster.the_unwelcome.desc",
+      "en": "The Unwelcome",
+      "translated": "The UnДобро пожаловать",
       "source": "tm"
     },
     {
-      "key": "npc.atur.greet_msg_1",
-      "en": "Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps?",
-      "translated": "Да? Что я могу для тебя сделать, |PLAYERNAME|? Банковский бизнес, возможно?",
+      "key": "monster.minishabaal.voice_5",
+      "en": "He He He",
+      "translated": "Он он он",
       "source": "tm"
     },
     {
-      "key": "npc.avar_tar.greet_msg_1",
-      "en": "Greetings, traveller |PLAYERNAME|!",
-      "translated": "Приветствую тебя, путешественник |PLAYERNAME|!",
+      "key": "monster.mummy.voice_5",
+      "en": "Ahkahra exura belil mort!",
+      "translated": "Ахкара exura белил морт!",
       "source": "tm"
     },
     {
-      "key": "npc.azalea.greet_msg_1",
-      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
-      "translated": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+      "key": "monster.undead_elite_gladiator.name",
+      "en": "Undead Elite Gladiator",
+      "translated": "Undead Элитный гладиатор",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.greet_msg_1",
-      "en": "Welcome to my humble abode. If you come for new sorcerer {spells}, you have come to the right place.",
-      "translated": "Добро пожаловать в мою скромную обитель. Если вы пришли за новым колдуном {spells}, вы попали по адресу.",
+      "key": "monster.foreman_kneebiter.voice_1",
+      "en": "By Durin's beard!",
+      "translated": "Клянусь бородой Durin!",
       "source": "tm"
     },
     {
-      "key": "npc.battlemart.farewell_msg_1",
-      "en": "Farewell, |PLAYERNAME|, I'll be here if you need me again.",
-      "translated": "Прощай, |PLAYERNAME|, я буду здесь, если я тебе снова понадоблюсь.",
+      "key": "monster.zulazza_the_corruptor.voice_3",
+      "en": "Zzaion is our last zztand! I will not leave wizzout a fight!",
+      "translated": "Ззайон — наш последний ззтанд! Я не оставлю wizzout бой!",
       "source": "tm"
     },
     {
-      "key": "npc.battlemart.greet_msg_1",
-      "en": "It is good to see you. I'm always at your {shop options}",
-      "translated": "Рад тебя видеть. Я всегда рядом с твоим {shop options}",
+      "key": "monster.chizzoron_the_distorter.voice_1",
+      "en": "Humanzzz! Leave Zzaion at onzzzze!",
+      "translated": "Человечествоззз! Оставьте Зайон в onzzzze!",
       "source": "tm"
     },
     {
-      "key": "npc.benjamin.greet_msg_1",
-      "en": "Hello. How may I help you |PLAYERNAME|? Ask me for a {trade} if you want to buy something. I can also explain the {mail} system.",
-      "translated": "Привет. Чем я могу вам помочь |PLAYERNAME|? Попросите меня поставить {trade}, если хотите что-то купить. Я также могу объяснить систему {mail}.",
+      "key": "monster.deepling_worker.voice_1",
+      "en": "Qjell afar gou jey!",
+      "translated": "Qjell издалека, гоу джей!",
       "source": "tm"
     },
     {
-      "key": "npc.bertha.greet_msg_1",
-      "en": "Oh, please come in, |PLAYERNAME|. What can I do for you? If you need adventure equipment, ask me for a {trade}.",
-      "translated": "О, пожалуйста, заходите, |PLAYERNAME|. Что я могу сделать для вас? Если вам нужно снаряжение для приключений, попросите у меня {trade}.",
+      "key": "monster.hardened_usurper_warlock.name",
+      "en": "Hardened Usurper Warlock",
+      "translated": "Закоренелый узурпатор Warlock",
       "source": "tm"
     },
     {
-      "key": "npc.bertha.sendtrade_msg_1",
-      "en": "Of course, just browse through my wares. {Footballs} have to be purchased separately.",
-      "translated": "Конечно, просто просмотрите мои товары. {Footballs} необходимо приобретать отдельно.",
+      "key": "monster.usurper_knight.voice_3",
+      "en": "You don't deserve Bounac!",
+      "translated": "Ты не заслуживаешь Bounac!",
       "source": "tm"
     },
     {
-      "key": "npc.billy.greet_msg_1",
-      "en": "Howdy |PLAYERNAME|. I'm a farmer and cook, maybe I can interest you in a {trade} with food? You can also ask me for general {hints} about the game.",
-      "translated": "Привет |PLAYERNAME|. Я фермер и повар, может быть, я смогу вас заинтересовать {trade} с едой? Вы также можете задать мне общие вопросы {hints} об игре.",
+      "key": "monster.hardened_usurper_knight.name",
+      "en": "Hardened Usurper Knight",
+      "translated": "Закоренелый узурпатор Knight",
       "source": "tm"
     },
     {
-      "key": "npc.bloodshade_rotten.greet_msg_1",
-      "en": "Mortal! If you are on a {quest} to serve the blood god, my master - be greeted!",
-      "translated": "Смертный! Если вы находитесь на {quest}, чтобы служить богу крови, моему хозяину, добро пожаловать!",
+      "key": "monster.training_machine.voice_6",
+      "en": "klonk klonk klonk",
+      "translated": "клонк клонк клонк",
       "source": "tm"
     },
     {
-      "key": "npc.bloodshade_sacrifice.greet_msg_1",
-      "en": "Mortal! If you are on a {quest} to serve the blood god, my master - be greeted!",
-      "translated": "Смертный! Если вы находитесь на {quest}, чтобы служить богу крови, моему хозяину, добро пожаловать!",
+      "key": "monster.dryad.voice_1",
+      "en": "Feel the wrath of mother Tibia!",
+      "translated": "Почувствуй гнев матери Tibia!",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.greet_msg_2",
-      "en": "Hello, hello, hello, little lady |PLAYERNAME|! What brings you {here}?",
-      "translated": "Привет, привет, привет, маленькая леди |PLAYERNAME|! Что приносит вам {here}?",
+      "key": "monster.zevelon_duskbringer.voice_3",
+      "en": "I will be still around when my 'noble' race is gone.",
+      "translated": "Я буду рядом, когда моя гонка 'noble' закончится.",
       "source": "tm"
     },
     {
-      "key": "npc.brewster.greet_msg_1",
-      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
-      "translated": "Добро пожаловать, юный |PLAYERNAME|! Если вы тяжело ранены или отравлены, я могу {heal} вас бесплатно.",
+      "key": "monster.yielothax.voice_2",
+      "en": "Bsssssssm Bssssssm Bsssssssssssm!",
+      "translated": "Бсссссссм Бсссссссм Бсссссссм!",
       "source": "tm"
     },
     {
-      "key": "npc.brodrosch.greet_msg_1",
-      "en": "Welcome, |PLAYERNAME|! May earth protect you on the rocky grounds. If you need a {passage}, I can help you.",
-      "translated": "Добро пожаловать, |PLAYERNAME|! Пусть земля защитит тебя на каменистых землях. Если вам нужен {passage}, я могу вам помочь.",
+      "key": "monster.juvenile_cyclops.name",
+      "en": "Juvenile Cyclops",
+      "translated": "Несовершеннолетний Cyclops",
       "source": "tm"
     },
     {
-      "key": "npc.bron.greet_msg_2",
-      "en": "Welcome to my humble hut, |PLAYERNAME|.",
-      "translated": "Добро пожаловать в мою скромную хижину, |PLAYERNAME|.",
+      "key": "monster.mummy.voice_11",
+      "en": "Ahkahra exura belil mort!",
+      "translated": "Ахкара exura белил морт!",
       "source": "tm"
     },
     {
-      "key": "npc.bruno.greet_msg_1",
-      "en": "Ahoi, |PLAYERNAME|. You want to buy some fresh fish?",
-      "translated": "Ахой, |PLAYERNAME|. Хотите купить свежей рыбы?",
+      "key": "monster.training_machine.voice_15",
+      "en": "klonk klonk klonk",
+      "translated": "клонк клонк клонк",
       "source": "tm"
     }
   ]

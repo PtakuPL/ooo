@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 53.3,
+  "coverage_pct": 53.4,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T21:17:23.916708Z",
+  "checked_at": "2026-02-20T21:36:26.301877Z",
   "issues_total": 429,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -3370,15 +3370,6 @@
       "lang": "Burp."
     },
     {
-      "key": "scripts.foods.sound_chomp",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chomp.",
-      "pl": "Chop.",
-      "lang": "Chomp."
-    },
-    {
       "key": "scripts.foods.sound_crunch",
       "category": "scripts",
       "type": "pl_reference_missing_translation",
@@ -3404,15 +3395,6 @@
       "en": "Hum.",
       "pl": "Szum.",
       "lang": "Hum."
-    },
-    {
-      "key": "scripts.foods.sound_mmmm",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mmmm.",
-      "pl": "Mmm.",
-      "lang": "Mmmm."
     },
     {
       "key": "scripts.foods.sound_munch",
@@ -3478,15 +3460,6 @@
       "lang": "Blurg."
     },
     {
-      "key": "scripts.hireling_foods.sound_chomp",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chomp.",
-      "pl": "Chop.",
-      "lang": "Chomp."
-    },
-    {
       "key": "scripts.hireling_foods.sound_munch",
       "category": "scripts",
       "type": "pl_reference_missing_translation",
@@ -3512,15 +3485,6 @@
       "en": "Waaaaaah",
       "pl": "Waaaah",
       "lang": "Waaaaaah"
-    },
-    {
-      "key": "scripts.hydra_tongue_salad.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chomp.",
-      "pl": "Chop.",
-      "lang": "Chomp."
     },
     {
       "key": "scripts.info.access",
@@ -3584,15 +3548,6 @@
       "en": "Speed: ",
       "pl": "Szybkość: ",
       "lang": "Speed: "
-    },
-    {
-      "key": "scripts.lemon_cupcake.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mmmm.",
-      "pl": "Mmm.",
-      "lang": "Mmmm."
     },
     {
       "key": "scripts.malofur_explosion.say_4",
@@ -3737,6 +3692,51 @@
       "en": "%s hours",
       "pl": "%s godziny",
       "lang": "%s hours"
+    },
+    {
+      "key": "scripts.offline_training.hours_singular",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1 hour",
+      "pl": "1 godzina",
+      "lang": "1 hour"
+    },
+    {
+      "key": "scripts.offline_training.minutes_plural",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "%s minutes",
+      "pl": "%s minuty",
+      "lang": "%s minutes"
+    },
+    {
+      "key": "scripts.offline_training.minutes_singular",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1 minute",
+      "pl": "1 minuta",
+      "lang": "1 minute"
+    },
+    {
+      "key": "scripts.oramond_entrance.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slrrp!",
+      "pl": "Srrrr!",
+      "lang": "Slrrp!"
+    },
+    {
+      "key": "scripts.oramond_entrance.say_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slrrp!",
+      "pl": "Srrrr!",
+      "lang": "Slrrp!"
     }
   ],
   "length_ratio_issues": [

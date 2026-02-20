@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-02-20T21:33:15.478806Z",
+  "timestamp": "2026-02-20T21:36:22.136451Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 2,
   "warnings_count": 14,
   "ok_count": 10,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=85326 rate=494.902% window=6.0h top_lang=ro:36185 per_lang=[ro:36185(1778.133%/critical),es:21246(420.297%/critical),ru:12664(373.68%/critical),pl:10317(498.647%/critical),it:2948(107.867%/critical)] per_domain=[items.json:53944(1840.464%/critical),npc.json:15413(202.776%/critical),monsters.json:13017(369.381%/critical),server.json:889(95.182%/critical),spells.json:627(464.444%/critical)]",
-    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5717.4 cycle_delta=5607 best_quality_drop=0.000% reason=active_time_without_quality_drop"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=85840 rate=493.418% window=6.0h top_lang=ro:36237 per_lang=[ro:36237(1754.818%/critical),es:21394(418.669%/critical),ru:12697(371.366%/critical),pl:10576(503.859%/critical),it:2970(108.236%/critical)] per_domain=[items.json:53944(1840.464%/critical),npc.json:15591(202.612%/critical),monsters.json:13346(372.377%/critical),server.json:896(95.726%/critical),spells.json:627(464.444%/critical)]",
+    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5720.5 cycle_delta=5612 best_quality_drop=0.000% reason=active_time_without_quality_drop"
   ],
   "warnings": [
     "BLACKLISTED_TARGET: pl:spells.json ma 6431 guard_fail w blackliście",
@@ -26,16 +26,16 @@
     "LANG_PARITY_WARN: tr has 48694 [EN]-backlog after 157h (should be ≤5000)"
   ],
   "ok": [
-    "heartbeat_fresh (22s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (17s)",
-    "guard_report_fresh (58s)",
-    "dispatch_fresh (1s)",
+    "heartbeat_fresh (86s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (29s)",
+    "guard_report_fresh (94s)",
+    "dispatch_fresh (101s)",
     "worker_pid_alive (114825)",
-    "worker_subprocess_observed (main=114825 matching=4 extras=3 desc=3 foreign=0 oldest_desc=0s oldest_foreign=0s status=extra_descendants_detected)",
-    "queue_freshness_ok (50s, WARN>900s CRIT>1800s)",
+    "worker_process_topology_ok (main=114825 matching=2 extras=1 desc=1 foreign=0 oldest_desc=58s oldest_foreign=0s status=single_descendant_observed)",
+    "queue_freshness_ok (86s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
     "forced_cmd_sla_ok (samples=0 sla_target=45s p95_roundtrip=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0)",
-    "repair_tuning_active (samples_2h=50)"
+    "repair_tuning_active (samples_2h=49)"
   ],
   "metrics_drift": {
     "available": true,
@@ -70,8 +70,8 @@
       "sr",
       "sv"
     ],
-    "active_minutes": 5717.407,
-    "cycle_delta": 5607,
+    "active_minutes": 5720.517,
+    "cycle_delta": 5612,
     "best_quality_drop_pct": 0.0,
     "thresholds": {
       "max_active_minutes": 1440.0,
@@ -105,32 +105,26 @@
   },
   "worker_process_watch": {
     "available": true,
-    "severity": "info",
-    "status": "extra_descendants_detected",
-    "reason": "multiple_descendant_worker_processes",
+    "severity": "ok",
+    "status": "single_descendant_observed",
+    "reason": "single_descendant_worker_subprocess",
     "main_pid": 114825,
     "matched_pids": [
       114825,
-      444499,
-      444512,
-      444514
+      447349
     ],
     "extra_pids": [
-      444499,
-      444512,
-      444514
+      447349
     ],
     "descendant_extra_pids": [
-      444499,
-      444512,
-      444514
+      447349
     ],
     "foreign_extra_pids": [],
-    "total_matching": 4,
-    "extra_count": 3,
-    "descendant_extra_count": 3,
+    "total_matching": 2,
+    "extra_count": 1,
+    "descendant_extra_count": 1,
     "foreign_extra_count": 0,
-    "oldest_descendant_age_s": 0,
+    "oldest_descendant_age_s": 58,
     "oldest_foreign_age_s": 0,
     "warn_persist_seconds": 900,
     "critical_persist_seconds": 1800

@@ -72766,5 +72766,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T21:29:05.503667Z"
+  },
+  "npc.tyrias.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Scuze, nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.836684Z"
+  },
+  "npc.ubaid.multi_15": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, aproape că a sunat ca un cuvânt de salut. Oamenii - drăguți sunt!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.838959Z"
+  },
+  "npc.ubaid.multi_17": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, aproape că a sunat ca un cuvânt de salut. Oamenii - drăguți sunt!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.839640Z"
+  },
+  "npc.ubaid.say_1": {
+    "src_hash": "17bb78642c4a960215206201b82d1feb",
+    "text": "Îndepărtează-te, micuțo! Oamenii nu sunt bineveniți aici, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.840846Z"
+  },
+  "npc.ukea.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.841768Z"
+  },
+  "npc.umar.multi_13": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, aproape că a sunat ca un cuvânt de salut. Oamenii - drăguți sunt!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.844098Z"
+  },
+  "npc.umar.multi_15": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, aproape că a sunat ca un cuvânt de salut. Oamenii - drăguți sunt!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.844890Z"
+  },
+  "npc.umar.say_1": {
+    "src_hash": "53f59a9ef75a585e8d262642a3166d45",
+    "text": "Vai! Un om! Acesta nu este un loc pentru tine, |PLAYERNAME|. Du-te și joacă-te în altă parte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.846902Z"
+  },
+  "npc.uncle.say_10": {
+    "src_hash": "467bd5450601d1e96f97267a198f8e44",
+    "text": "Vă rog să-mi aduceți o dovadă a înfrângerii tehnomanților nebuni!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.849548Z"
+  },
+  "npc.undal.say_14": {
+    "src_hash": "c066542c456632337339c67bf887b0a8",
+    "text": "Scuze, nu am inteles.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.852577Z"
+  },
+  "npc.uzon.keyword_1": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Stai!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.855931Z"
+  },
+  "npc.uzon.stdmod_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Simte vântul în părul tău în timpul uneia dintre plimbările mele pe covor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.856483Z"
+  },
+  "npc.uzon.stdmod_2": {
+    "src_hash": "065a3336d2940946dccb9d6a186f5671",
+    "text": "N-am auzit niciodată de un loc ca acesta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.857490Z"
+  },
+  "npc.uzon.stdmod_3": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Stai!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.858085Z"
+  },
+  "npc.uzon.stdmod_4": {
+    "src_hash": "8f3b71da455041c184184618a35b40fb",
+    "text": "Nu trebuie să ratezi experiența.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.858683Z"
+  },
+  "npc.uzon.voice_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Simte vântul în părul tău în timpul uneia dintre plimbările mele pe covor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:34:46.859541Z"
   }
 }

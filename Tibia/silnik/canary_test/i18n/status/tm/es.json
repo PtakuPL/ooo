@@ -154438,5 +154438,29 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-20T22:30:38.713197Z"
+  },
+  "cpp.returnvalue.direct_player_shoot": {
+    "src_hash": "f759286d5c701ed1172aa91292e7ca4a",
+    "text": "No puedes disparar directamente a los jugadores.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:47:16.776530Z"
+  },
+  "cpp.returnvalue.you_may_not_attack_this_creature": {
+    "src_hash": "ba2572d24cbef516bed15f245cc5aa39",
+    "text": "No puedes atacar a esta criatura.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:47:16.776866Z"
+  },
+  "cpp.returnvalue.you_may_not_attack_this_player": {
+    "src_hash": "478650ba57485ce16fa0aad78223cb5f",
+    "text": "No puedes atacar a este jugador.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:47:16.777200Z"
   }
 }

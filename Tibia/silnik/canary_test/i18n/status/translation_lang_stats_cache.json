@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T22:46:56.715297Z",
+  "timestamp": "2026-02-20T22:48:12.953299Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -7320,8 +7320,8 @@
         [
           "cpp.json",
           1,
-          1771616287315817296,
-          58963
+          1771627636776756549,
+          58948
         ],
         [
           "creaturescripts.json",
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771627531921805287,
+          1771627686327933513,
           1847178
         ],
         [
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 45583,
+        "translated_keys": 45586,
         "english_copy_keys": 2151,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 85.07,
         "server_keys": 49731,
-        "server_translated": 42517,
-        "server_pct": 85.49,
+        "server_translated": 42520,
+        "server_pct": 85.5,
         "client_keys": 3855,
         "client_translated": 3066,
         "client_pct": 79.53
@@ -7607,12 +7607,12 @@
         "cpp.json": {
           "sig": [
             1,
-            1771616287315817296,
-            58963
+            1771627636776756549,
+            58948
           ],
           "row": {
             "total_reference_keys": 879,
-            "translated_keys": 867,
+            "translated_keys": 870,
             "english_copy_keys": 12,
             "missing_keys": 0,
             "missing_files": 0
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771627531921805287,
+            1771627686327933513,
             1847178
           ],
           "row": {
@@ -25395,7 +25395,7 @@
         [
           "modules.json",
           1,
-          1771362065382186248,
+          1771627651502097197,
           1097
         ],
         [
@@ -25503,7 +25503,7 @@
         [
           "startup.json",
           1,
-          1771609687504560360,
+          1771627643912168026,
           1663
         ],
         [
@@ -25770,7 +25770,7 @@
         "modules.json": {
           "sig": [
             1,
-            1771362065382186248,
+            1771627651502097197,
             1097
           ],
           "row": {
@@ -26022,7 +26022,7 @@
         "startup.json": {
           "sig": [
             1,
-            1771609687504560360,
+            1771627643912168026,
             1663
           ],
           "row": {

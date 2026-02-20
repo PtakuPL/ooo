@@ -153406,5 +153406,109 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T18:09:55.525243Z"
+  },
+  "item.12580.name": {
+    "src_hash": "9c0a44006bbd6053818d4d98198629a8",
+    "text": "Meandí",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:24:21.106840Z"
+  },
+  "item.4996.name": {
+    "src_hash": "43a28886c43adaea8f8fe35606346a98",
+    "text": "restos de una vasija canopa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:24:25.442687Z"
+  },
+  "item.12577.name": {
+    "src_hash": "b3952bf8fa5443b9aa971154a2fb1bf1",
+    "text": "Imparcial",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:24:31.839848Z"
+  },
+  "item.12581.name": {
+    "src_hash": "b3952bf8fa5443b9aa971154a2fb1bf1",
+    "text": "Imparcial",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:24:31.840049Z"
+  },
+  "item.126.desc": {
+    "src_hash": "dd244aa20b20e7d8fa380018045b1f16",
+    "text": "Contiene la tinta de una quara recién sacrificada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:24:31.840420Z"
+  },
+  "item.12602.desc": {
+    "src_hash": "fd1a09e6b4812bdd72d0993e466e3455",
+    "text": "Este pequeño silbato parece usado. Parece que no hace absolutamente ningún sonido cuando se sopla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:24:31.840946Z"
+  },
+  "item.12603.desc": {
+    "src_hash": "301580ef10720504a1f326a9d31030a7",
+    "text": "Esta varita controla la brecha entre el tiempo y el espacio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:24:31.841301Z"
+  },
+  "item.12669.desc": {
+    "src_hash": "94fa3e44fc00fea44aa714131a4fad7c",
+    "text": "Si lo usas en la ranura de tu anillo, aumentará tu regeneración de salud cuando no tengas hambre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:24:37.330497Z"
+  },
+  "item.12670.desc": {
+    "src_hash": "94fa3e44fc00fea44aa714131a4fad7c",
+    "text": "Si lo usas en la ranura de tu anillo, aumentará tu regeneración de salud cuando no tengas hambre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:24:37.331130Z"
+  },
+  "item.12699.name": {
+    "src_hash": "d80b9d9009200a1649accd5296b806d6",
+    "text": "convertidor de oro mágico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:24:37.331412Z"
+  },
+  "item.12722.desc": {
+    "src_hash": "be9e4f98aa415374ce8e02c78d32bc1c",
+    "text": "Parece que el agua quiere volver al pantano del que salió. Pronto todo se desvanecerá",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:24:37.331995Z"
+  },
+  "item.12733.desc": {
+    "src_hash": "8b2e3e5757e854dc27bfd679326b6701",
+    "text": "Este arco parece estar vivo pero se mantiene perfectamente quieto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:24:37.332351Z"
+  },
+  "item.12737.desc": {
+    "src_hash": "52d071b282edcb429722b5c8548586a6",
+    "text": "Parece que todo su antiguo poder mágico ha abandonado este cadáver roto de un anillo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:24:39.536894Z"
   }
 }

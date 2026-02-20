@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T18:24:03.114338Z",
+  "timestamp": "2026-02-20T18:25:21.991640Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 50,
-  "cache_misses": 2,
-  "file_cache_hits": 1974,
-  "file_cache_misses": 2,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 1975,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -7368,8 +7368,8 @@
         [
           "items.json",
           1,
-          1771610995586694987,
-          894400
+          1771611879565253083,
+          894421
         ],
         [
           "libs.json",
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 45388,
-        "english_copy_keys": 2163,
+        "translated_keys": 45397,
+        "english_copy_keys": 2160,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 84.7,
+        "completion_pct": 84.72,
         "server_keys": 49731,
-        "server_translated": 42322,
-        "server_pct": 85.1,
+        "server_translated": 42331,
+        "server_pct": 85.12,
         "client_keys": 3855,
         "client_translated": 3066,
         "client_pct": 79.53
@@ -7719,13 +7719,13 @@
         "items.json": {
           "sig": [
             1,
-            1771610995586694987,
-            894400
+            1771611879565253083,
+            894421
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 13967,
-            "english_copy_keys": 81,
+            "translated_keys": 13976,
+            "english_copy_keys": 78,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -25377,7 +25377,7 @@
         [
           "items.json",
           1,
-          1771611021498222939,
+          1771611904896346367,
           891471
         ],
         [
@@ -25419,7 +25419,7 @@
         [
           "npc.json",
           1,
-          1771611272922277912,
+          1771611916742600238,
           1865789
         ],
         [
@@ -25728,7 +25728,7 @@
         "items.json": {
           "sig": [
             1,
-            1771611021498222939,
+            1771611904896346367,
             891471
           ],
           "row": {
@@ -25826,7 +25826,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771611272922277912,
+            1771611916742600238,
             1865789
           ],
           "row": {

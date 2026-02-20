@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-20T19:44:39.250033Z",
-  "cycle_counter": 6164,
-  "last_target_key": "it:dataroot.json",
-  "last_pending_total": 3,
-  "last_tier": 2,
-  "last_cat_priority": 9,
-  "candidates_count": 182,
-  "active_candidates_count": 174,
+  "timestamp": "2026-02-20T19:46:40.952731Z",
+  "cycle_counter": 6167,
+  "last_target_key": "pl:npc.json",
+  "last_pending_total": 1432,
+  "last_tier": 1,
+  "last_cat_priority": 1,
+  "candidates_count": 181,
+  "active_candidates_count": 173,
   "skipped_backoff": 7,
   "skipped_guard_fail": 1,
   "guard_fail_blacklist": {
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 120,
+  "cache_cycle": 121,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -158,7 +158,8 @@
     "ru:example_merchant.json": 0,
     "ro:globalevents.json": 0,
     "sv:raids.json": 0,
-    "sr:actions.json": 0
+    "sr:actions.json": 0,
+    "it:dataroot.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -214,9 +215,9 @@
       "es": 84.79,
       "ru": 50.37,
       "ro": 43.13,
-      "it": 52.16,
-      "sr": 45.44,
-      "sv": 28.65
+      "it": 52.17,
+      "sr": 45.5,
+      "sv": 28.67
     }
   }
 }

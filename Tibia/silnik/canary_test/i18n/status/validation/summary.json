@@ -1,7 +1,7 @@
 {
   "total_languages": 53,
   "total_en_keys": 53586,
-  "validated_at": "2026-02-20T19:29:55.179079Z",
+  "validated_at": "2026-02-20T19:48:24.317277Z",
   "by_score": {
     "ru": {
       "score": 62.7,
@@ -11,7 +11,7 @@
       "high": 6429,
       "crossref_issues": 129,
       "crossref_autofix_applied": 0,
-      "translated": 27068,
+      "translated": 27077,
       "script_group": "cyrillic"
     },
     "bn": {
@@ -262,9 +262,9 @@
       "issues": 44,
       "critical": 0,
       "high": 42,
-      "crossref_issues": 517,
+      "crossref_issues": 518,
       "crossref_autofix_applied": 0,
-      "translated": 45762,
+      "translated": 45788,
       "script_group": "latin"
     },
     "et": {
@@ -407,7 +407,7 @@
       "high": 13,
       "crossref_issues": 0,
       "crossref_autofix_applied": 0,
-      "translated": 47279,
+      "translated": 47282,
       "script_group": "latin"
     },
     "sk": {
@@ -451,7 +451,7 @@
       "high": 11,
       "crossref_issues": 65,
       "crossref_autofix_applied": 0,
-      "translated": 24418,
+      "translated": 24447,
       "script_group": "cyrillic"
     },
     "sw": {
@@ -517,7 +517,7 @@
       "high": 9,
       "crossref_issues": 429,
       "crossref_autofix_applied": 0,
-      "translated": 28447,
+      "translated": 28478,
       "script_group": "latin"
     },
     "ja": {
@@ -544,13 +544,13 @@
     },
     "ro": {
       "score": 100.0,
-      "coverage_pct": 44.0,
+      "coverage_pct": 44.1,
       "issues": 3,
       "critical": 0,
       "high": 2,
       "crossref_issues": 419,
-      "crossref_autofix_applied": 4,
-      "translated": 23566,
+      "crossref_autofix_applied": 0,
+      "translated": 23633,
       "script_group": "latin"
     },
     "sv": {
@@ -561,7 +561,7 @@
       "high": 2,
       "crossref_issues": 410,
       "crossref_autofix_applied": 0,
-      "translated": 15923,
+      "translated": 15939,
       "script_group": "latin"
     },
     "tr": {
@@ -653,6 +653,6 @@
       "zh_TW"
     ]
   },
-  "crossref_total_issues": 20430,
-  "crossref_autofix_total_applied": 4
+  "crossref_total_issues": 20431,
+  "crossref_autofix_total_applied": 0
 }

@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T19:29:15.171778Z",
+  "checked_at": "2026-02-20T19:47:44.053845Z",
   "issues_total": 429,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -2803,6 +2803,15 @@
       "lang": "col-12 col-sm-12 col-lg-10"
     },
     {
+      "key": "php.accounts.text1",
+      "category": "php",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "col-12 col-sm-12 col-lg-10",
+      "pl": "kol-12 kol-sm-12 kol-lg-10",
+      "lang": "col-12 col-sm-12 col-lg-10"
+    },
+    {
       "key": "quests.actions_boxramp.msg_1",
       "category": "quests",
       "type": "pl_reference_missing_translation",
@@ -3449,15 +3458,6 @@
       "en": "Phew!",
       "pl": "Uff!",
       "lang": "Phew!"
-    },
-    {
-      "key": "scripts.foods.sound_slurp",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Slurp.",
-      "pl": "Siorbać.",
-      "lang": "Slurp."
     },
     {
       "key": "scripts.foods.sound_smack",

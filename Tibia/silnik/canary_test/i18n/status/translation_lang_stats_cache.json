@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T19:45:26.762293Z",
+  "timestamp": "2026-02-20T19:48:28.702726Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1975,
-  "file_cache_misses": 1,
+  "cache_hits": 52,
+  "cache_misses": 0,
+  "file_cache_hits": 1976,
+  "file_cache_misses": 0,
   "langs": {
     "ar": {
       "sig": [
@@ -7368,8 +7368,8 @@
         [
           "items.json",
           1,
-          1771613882932909185,
-          894377
+          1771616798748476774,
+          894365
         ],
         [
           "libs.json",
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 45433,
+        "translated_keys": 45441,
         "english_copy_keys": 2160,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 84.79,
+        "completion_pct": 84.8,
         "server_keys": 49731,
-        "server_translated": 42367,
-        "server_pct": 85.19,
+        "server_translated": 42375,
+        "server_pct": 85.21,
         "client_keys": 3855,
         "client_translated": 3066,
         "client_pct": 79.53
@@ -7719,12 +7719,12 @@
         "items.json": {
           "sig": [
             1,
-            1771613882932909185,
-            894377
+            1771616798748476774,
+            894365
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 13994,
+            "translated_keys": 14002,
             "english_copy_keys": 78,
             "missing_keys": 0,
             "missing_files": 0
@@ -25377,7 +25377,7 @@
         [
           "items.json",
           1,
-          1771613430847300157,
+          1771616767205200974,
           891471
         ],
         [
@@ -25728,7 +25728,7 @@
         "items.json": {
           "sig": [
             1,
-            1771613430847300157,
+            1771616767205200974,
             891471
           ],
           "row": {

@@ -153822,5 +153822,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T19:38:41.657244Z"
+  },
+  "item.133.desc": {
+    "src_hash": "776c1b7fdab84b050993d5bfd5dffbad",
+    "text": "Contiene agua bendita del monasterio del Cuervo Blanco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:46:24.258262Z"
+  },
+  "item.13429.desc": {
+    "src_hash": "0f8b1ac8a4f5b229d44f291f942011df",
+    "text": "Contiene tanto efectivo que no tendrías idea de cómo usarlo. Devuélvelo a un banco cercano.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:46:24.258768Z"
+  },
+  "item.13429.name": {
+    "src_hash": "324f3809fd6c9a05f4d6055cfebf72ba",
+    "text": "bolsa con oro robado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:46:35.250242Z"
+  },
+  "item.135.desc": {
+    "src_hash": "c8b35b0ae64f4d97406b1f56df215d4a",
+    "text": "Contiene veneno altamente intensificado contra las alimañas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:46:35.250633Z"
+  },
+  "item.136.desc": {
+    "src_hash": "56783cd4c1e639e93f760df5530b55df",
+    "text": "Está lleno de la legendaria cerveza marrón enana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:46:35.251067Z"
+  },
+  "item.13656.desc": {
+    "src_hash": "3578c5b32f47da7a6e917932befd7db6",
+    "text": "Esta lámpara brilla muy débilmente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:46:35.251418Z"
+  },
+  "item.13658.desc": {
+    "src_hash": "3578c5b32f47da7a6e917932befd7db6",
+    "text": "Esta lámpara brilla muy débilmente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:46:35.251729Z"
+  },
+  "item.13676.name": {
+    "src_hash": "0d258c304f3ca5be0d9adc820abc6b9d",
+    "text": "coral lechuga de palma",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:46:38.719211Z"
+  },
+  "item.13771.name": {
+    "src_hash": "4e4fb72e3c1f49820ea1cae2844c1d48",
+    "text": "cantante de hechizos profundo muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:46:38.719495Z"
   }
 }

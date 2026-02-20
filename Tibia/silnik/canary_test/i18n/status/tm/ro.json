@@ -71742,5 +71742,85 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T20:20:16.352140Z"
+  },
+  "scripts.blueberry_cupcake.msg_2": {
+    "src_hash": "6c59c303d9c6d564349fe8399bd8e48a",
+    "text": "Mana ta a fost reumplută.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:34:32.942216Z"
+  },
+  "scripts.blueberry_cupcake.say_1": {
+    "src_hash": "ea4d8bc42a4d61b6c2275e28a8627b34",
+    "text": "Mmmm.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:34:45.525841Z"
+  },
+  "scripts.bound_astral_power.destroy_msg": {
+    "src_hash": "e69dfeb5f82192f407937a95c75181f7",
+    "text": "Distrugerea sursei de energie ți-a câștigat mai mult timp până când gliful este pornit!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:34:45.526344Z"
+  },
+  "scripts.buy_house.msg_1": {
+    "src_hash": "4d32e3a900a37be3456a51ecb07a12bb",
+    "text": "Nu puteți cumpăra această casă, deoarece există articole în interiorul ei. Vă rugăm să contactați un administrator.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:34:45.526860Z"
+  },
+  "scripts.buy_house.msg_2": {
+    "src_hash": "7c3499f3bc080d5489317a6440032f8a",
+    "text": "Ați cumpărat cu succes această casă, asigurați-vă că aveți banii pentru chirie în bancă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:34:45.527368Z"
+  },
+  "scripts.carrot_cake.msg_2": {
+    "src_hash": "7b6b97b7479355493581a2890589d67e",
+    "text": "Te simți mai concentrat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:34:45.527693Z"
+  },
+  "scripts.carrot_cake.say_1": {
+    "src_hash": "ea4d8bc42a4d61b6c2275e28a8627b34",
+    "text": "Mmmm.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:34:50.638601Z"
+  },
+  "scripts.cask_and_kegs.msg_1": {
+    "src_hash": "5db32b66e9f1d04469ad090c46630a3a",
+    "text": "Articolul nu mai are taxe rămase.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:34:50.639056Z"
+  },
+  "scripts.cask_and_kegs.msg_2": {
+    "src_hash": "fcd7ddf780e27fd3e11dbeec9705cbce",
+    "text": "Taxe rămase: {}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:34:50.639327Z"
+  },
+  "scripts.cask_and_kegs.msg_3": {
+    "src_hash": "805c0a4c4398832ff5c6c859f2275b38",
+    "text": "Ai nevoie de baloane pentru a transporta toate astea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:34:50.639640Z"
   }
 }

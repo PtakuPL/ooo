@@ -995,7 +995,7 @@
   "spell.msg_need_learn": "Primero debes aprender este hechizo.",
   "spell.msg_no_creatures_around": "No hay criaturas alrededor",
   "spell.msg_no_party_in_range": "No hay miembros del grupo en rango.",
-  "spell.msg_no_ranged_monsters": "[EN] There are no ranged monsters.",
+  "spell.msg_no_ranged_monsters": "No hay monstruos a distancia.",
   "spell.msg_no_self_cast": "No puedes lanzarte este hechizo a ti mismo.",
   "spell.mud_attack.name": "Barro Ataque",
   "spell.mud_attack.words": "exori infir tera",

@@ -1,37 +1,36 @@
 {
-  "timestamp": "2026-02-20T22:22:48.886682Z",
-  "window_start_utc": "2026-02-20T21:22:47.857967Z",
-  "window_end_utc": "2026-02-20T22:22:47.857967Z",
+  "timestamp": "2026-02-20T22:24:10.739538Z",
+  "window_start_utc": "2026-02-20T21:24:09.256464Z",
+  "window_end_utc": "2026-02-20T22:24:09.256464Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 150,
-  "rejected_entries_raw": 328,
+  "rejected_entries": 142,
+  "rejected_entries_raw": 334,
   "suspicious_entries": 3153,
-  "suspicious_entries_raw": 25301,
-  "guard_fail_entries": 110,
-  "guard_fail_sum": 7499,
+  "suspicious_entries_raw": 25119,
+  "guard_fail_entries": 106,
+  "guard_fail_sum": 7473,
   "by_type": {
-    "identical_to_en": 140,
-    "mixed_language": 7,
+    "identical_to_en": 133,
     "word_salad": 3,
-    "contains_tibia_proper_noun": 5
+    "contains_tibia_proper_noun": 5,
+    "mixed_language": 6
   },
   "by_source": {
-    "google_translate": 150
+    "google_translate": 142
   },
   "by_language": {
-    "sv": 15,
     "es": 39,
     "it": 6,
     "ro": 49,
+    "sv": 7,
     "pl": 41
   },
   "by_category": {
-    "server.json": 10,
     "npc.json": 4,
     "books.json": 1,
     "otclient_modules.json": 30,
@@ -40,20 +39,21 @@
     "cpp.json": 5,
     "achievements.json": 5,
     "items.json": 28,
+    "server.json": 2,
     "spells.json": 26
   },
   "by_severity": {
-    "CRITICAL": 143,
-    "HIGH": 7
+    "CRITICAL": 136,
+    "HIGH": 6
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 140
+      "count": 133
     },
     {
       "type": "mixed_language",
-      "count": 7
+      "count": 6
     },
     {
       "type": "contains_tibia_proper_noun",
@@ -65,20 +65,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "data.otservbr.global.npc.anerui.L71.1487",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.brasith.L59.1211",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
@@ -208,6 +194,20 @@
       "count": 2,
       "types": {
         "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.mitmahseer_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.al_dee.stdmod_41",
+      "count": 1,
+      "types": {
+        "word_salad": 1
       }
     }
   ]

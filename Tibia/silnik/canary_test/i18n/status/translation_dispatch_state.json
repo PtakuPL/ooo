@@ -1,27 +1,28 @@
 {
-  "timestamp": "2026-02-20T22:22:09.710839Z",
-  "cycle_counter": 6522,
-  "last_target_key": "sr:npc.json",
-  "last_pending_total": 774,
-  "last_tier": 3,
-  "last_cat_priority": 0,
+  "timestamp": "2026-02-20T22:23:31.128903Z",
+  "cycle_counter": 6524,
+  "last_target_key": "es:npc.json",
+  "last_pending_total": 2290,
+  "last_tier": 1,
+  "last_cat_priority": 1,
   "candidates_count": 181,
-  "active_candidates_count": 165,
+  "active_candidates_count": 164,
   "skipped_backoff": 10,
-  "skipped_guard_fail": 6,
+  "skipped_guard_fail": 7,
   "guard_fail_blacklist": {
     "pl:items.json": 6542,
     "pl:npc.json": 6536,
     "es:items.json": 6538,
     "es:server.json": 6537,
-    "ro:monsters.json": 6532,
-    "pl:spells.json": 6532
+    "ro:monsters.json": 6534,
+    "pl:spells.json": 6534,
+    "es:spells.json": 6534
   },
-  "guard_fail_blocked_count": 6,
+  "guard_fail_blocked_count": 7,
   "guard_fail_blocked_preview": [
     {
       "target": "pl:spells.json",
-      "until_cycle": 6532,
+      "until_cycle": 6534,
       "remaining_cycles": 10,
       "guard_fail_rate": 0.9667,
       "guard_fail": 145,
@@ -31,19 +32,19 @@
       "hard_block": false
     },
     {
-      "target": "es:server.json",
-      "until_cycle": 6537,
-      "remaining_cycles": 15,
-      "guard_fail_rate": 0.9535,
-      "guard_fail": 205,
-      "translated": 10,
+      "target": "es:spells.json",
+      "until_cycle": 6534,
+      "remaining_cycles": 10,
+      "guard_fail_rate": 0.9267,
+      "guard_fail": 139,
+      "translated": 11,
       "entries": 5,
-      "dominant_reason": "placeholder",
+      "dominant_reason": "default",
       "hard_block": false
     },
     {
       "target": "ro:monsters.json",
-      "until_cycle": 6532,
+      "until_cycle": 6534,
       "remaining_cycles": 10,
       "guard_fail_rate": 0.8667,
       "guard_fail": 130,
@@ -77,7 +78,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 3,
+  "cache_cycle": 4,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -253,12 +254,12 @@
     ],
     "lang_completion": {
       "pl": 87.83,
-      "es": 84.96,
+      "es": 85.0,
       "ru": 50.37,
       "ro": 43.64,
       "it": 52.5,
-      "sr": 45.5,
-      "sv": 29.2
+      "sr": 45.48,
+      "sv": 29.22
     }
   }
 }

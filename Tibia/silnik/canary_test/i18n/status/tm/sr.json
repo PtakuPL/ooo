@@ -176046,5 +176046,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:41:09.743516Z"
+  },
+  "data.otservbr.global.npc.chavis.L119.1347": {
+    "src_hash": "ccf96b7770a6111eaee90ba8e2a6f698",
+    "text": "Чувајте се тамо!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:58:25.030512Z"
+  },
+  "data.otservbr.global.npc.chester.kahs.L304.472": {
+    "src_hash": "0bd7be7fa74c735eed6ca6f3f8f93c97",
+    "text": "Поздрав, странче.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:58:25.032100Z"
+  },
+  "data.otservbr.global.npc.chester.kahs.L305.473": {
+    "src_hash": "ccf96b7770a6111eaee90ba8e2a6f698",
+    "text": "Чувајте се тамо!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:58:25.032401Z"
+  },
+  "data.otservbr.global.npc.chester.kahs.L306.474": {
+    "src_hash": "ccf96b7770a6111eaee90ba8e2a6f698",
+    "text": "Чувајте се тамо!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:58:25.032819Z"
   }
 }

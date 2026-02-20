@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:03:52.219471Z",
-  "window_start_utc": "2026-02-20T18:03:51.542236Z",
-  "window_end_utc": "2026-02-20T19:03:51.542236Z",
+  "timestamp": "2026-02-20T19:04:33.709031Z",
+  "window_start_utc": "2026-02-20T18:04:32.992022Z",
+  "window_end_utc": "2026-02-20T19:04:32.992022Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,11 +9,11 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 68,
-  "rejected_entries_raw": 375,
+  "rejected_entries_raw": 373,
   "suspicious_entries": 3110,
-  "suspicious_entries_raw": 25372,
-  "guard_fail_entries": 128,
-  "guard_fail_sum": 7517,
+  "suspicious_entries_raw": 25428,
+  "guard_fail_entries": 129,
+  "guard_fail_sum": 7524,
   "by_type": {
     "identical_to_en": 63,
     "word_salad": 1,
@@ -24,8 +24,8 @@
     "google_translate": 68
   },
   "by_language": {
-    "es": 8,
     "it": 2,
+    "es": 8,
     "ro": 28,
     "pl": 30
   },
@@ -120,17 +120,17 @@
       }
     },
     {
-      "key": "npc.al_dee.stdmod_41",
-      "count": 1,
-      "types": {
-        "word_salad": 1
-      }
-    },
-    {
       "key": "npc.a_fluffy_squirrel.greet_msg_1",
       "count": 1,
       "types": {
         "identical_to_en": 1
+      }
+    },
+    {
+      "key": "npc.al_dee.stdmod_41",
+      "count": 1,
+      "types": {
+        "word_salad": 1
       }
     },
     {

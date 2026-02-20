@@ -78254,5 +78254,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:56:20.913033Z"
+  },
+  "item.3578.name": {
+    "src_hash": "83e4a96aed96436c621b9809e258b309",
+    "text": "Pescare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:35.920234Z"
+  },
+  "item.3580.name": {
+    "src_hash": "54f813fcbc9ea57c19ff9fb26b3cac79",
+    "text": "Luccio del Nord",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:35.920591Z"
+  },
+  "item.3595.name": {
+    "src_hash": "005d05de29487ec44cd07bd9d757d4e1",
+    "text": "carota",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:35.931631Z"
+  },
+  "item.3606.name": {
+    "src_hash": "0e9312087f58f367d001ec9bae8f325a",
+    "text": "Uovo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:35.934363Z"
+  },
+  "item.36443.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:35.935913Z"
+  },
+  "item.36444.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:35.936159Z"
   }
 }

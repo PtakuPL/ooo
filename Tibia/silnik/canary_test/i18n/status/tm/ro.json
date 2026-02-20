@@ -68758,5 +68758,149 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:56:30.953123Z"
+  },
+  "npc.ninev.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Simt că ai vorbit deja cu pustnicul Eremo de pe insula Cormaya și ai primit această binecuvântare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.149966Z"
+  },
+  "npc.ninev.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puteți cere binecuvântarea scuturilor spirituale în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.150658Z"
+  },
+  "npc.ninev.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druizii la nord de Carlin vă vor oferi îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.151219Z"
+  },
+  "npc.ninev.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puteți cere binecuvântarea celor doi sori în bronzul de lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.152040Z"
+  },
+  "npc.ninev.stdmod_3": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Da, am fost informat ce să fac. Ești pregătit să primești rândul meu de rugăciune?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.152615Z"
+  },
+  "npc.ninev.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Scânteia phoenixului este dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.153187Z"
+  },
+  "npc.ninev.stdmod_33": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Aceasta este o binecuvântare specială pe care ți-o pot acorda odată ce ai obținut cel puțin una dintre celelalte binecuvântări și care funcționează puțin diferit. ... \\z\n\tFuncționează doar atunci când ești ucis de alți aventurieri, ceea ce înseamnă că cel puțin jumătate din daunele care au dus la moartea ta au fost cauzate de alții, nu de monștri sau de mediu. ... \\z\n\t{twist of fate} nu va reduce pedeapsa cu moartea la fel ca celelalte binecuvântări, ci, în schimb, vă va împiedica să vă pierdeți celelalte binecuvântări, precum și amuleta pierderii, dacă purtați una. Costa la fel ca si celelalte binecuvantari. ... \\z\n\tȚi-ar plăcea să primești acea protecție pentru un sacrificiu de |PVPBLESSCOST| aur, copile?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.155695Z"
+  },
+  "npc.ninev.stdmod_7": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Ai primit deja rândul meu de rugăciune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.156409Z"
+  },
+  "npc.ninev.stdmod_8": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.156880Z"
+  },
+  "npc.ninev.stdmod_9": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Amenda. Sunteți liber să refuzați oferta mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.157451Z"
+  },
+  "npc.ninos.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "A fost o plăcere să vă ajut, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.159027Z"
+  },
+  "npc.ninos.say_1": {
+    "src_hash": "6ce3be822150652db4d7ba6002db7105",
+    "text": "O, nu se mai schimbă atât de mult de pe vremuri, deoarece... <spune o poveste plictisitoare și confuză despre o prăjitură, un colet, el și două veverițe, cel puțin îți spune în final măsurătorile lui> ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.160551Z"
+  },
+  "npc.ninos.voice_1": {
+    "src_hash": "600057e0b95043563622fa58cb570b47",
+    "text": "Bine ați venit la oficiul poștal!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.161084Z"
+  },
+  "npc.ninos.voice_2": {
+    "src_hash": "2951906ee85e50cb7be4866a3c95ec80",
+    "text": "Dacă aveți nevoie de ajutor cu scrisori sau pachete, întrebați-mă. Pot să explic totul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.161637Z"
+  },
+  "npc.ninos.voice_3": {
+    "src_hash": "611f89c7262e935f33b9114aa8652e11",
+    "text": "Hei, trimite-i o scrisoare prietenului tău din când în când. Ține legătura, știi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.162192Z"
+  },
+  "npc.nipuna.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Desigur, răsfoiește-mi produsele. Puteți să vă uitați și la {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.162687Z"
+  },
+  "npc.nomad.stdmod_10": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Scânteia phoenixului este dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.164758Z"
+  },
+  "npc.nomad.stdmod_12": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druizii la nord de Carlin vă vor oferi îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:05:29.165401Z"
   }
 }

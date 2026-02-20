@@ -38958,5 +38958,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:10:56.670046Z"
+  },
+  "data.otservbr.global.npc.chief.grarkharok.L158.1407": {
+    "src_hash": "6e99cfbff56cfe44fc4b90c2c9c50ac9",
+    "text": "Я Шеф Грахарок! Нет, делай {nothing}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:26.474586Z"
   }
 }

@@ -81566,5 +81566,141 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-20T23:10:49.364052Z"
+  },
+  "data.otservbr.global.npc.jezzara.L62.1144": {
+    "src_hash": "13c3d970ee6f7254a72d4b3c79841c8e",
+    "text": "Certo, dai un'occhiata alle mie offerte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.399525Z"
+  },
+  "data.otservbr.global.npc.julius.L255.639": {
+    "src_hash": "ffe8aa6deb533fac27719e137420847d",
+    "text": "Arrivederci, |PLAYERNAME|. Non fidarti mai di nessuno.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.400152Z"
+  },
+  "data.otservbr.global.npc.julius.L256.640": {
+    "src_hash": "b87d90cdb5feb0d6f087b3fa0c43367f",
+    "text": "Ti ricompenserò per ogni paio di denti da vampiro che mi porterai.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.400802Z"
+  },
+  "data.otservbr.global.npc.julius.L58.637": {
+    "src_hash": "7681c95c5304928cb451460a53142e2d",
+    "text": "Fatti salutare, avventuriero |PLAYERNAME|. Presumo che tu abbia letto {note} sulla minaccia {vampire} in questa città.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.401508Z"
+  },
+  "data.otservbr.global.npc.julius.L60.638": {
+    "src_hash": "1f13d1d9698ab7c453748ae3daa2dbeb",
+    "text": "Fatti salutare, avventuriero |PLAYERNAME|. Per favore, scusatemi se compaio {distracted}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.402039Z"
+  },
+  "data.otservbr.global.npc.junkar.mines.L68.1372": {
+    "src_hash": "fb2e7252e1bc9a5095b3b4aa8de29f32",
+    "text": "Benvenuto, |PLAYERNAME|! Sei fortunato che il servizio sia attivo in questo momento. Risparmia però il carbone per i giorni a venire!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.402920Z"
+  },
+  "data.otservbr.global.npc.junkar.mines.L69.1373": {
+    "src_hash": "16a245b8e67da46eadf34e9fec871b53",
+    "text": "Alla prossima volta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.403353Z"
+  },
+  "data.otservbr.global.npc.junkar.mines.L70.1374": {
+    "src_hash": "4b508d9118a7a2ee1cf157e9d26496d4",
+    "text": "<Sigh> Niente pazienza!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.403685Z"
+  },
+  "data.otservbr.global.npc.junkar.robsons.L68.898": {
+    "src_hash": "fb2e7252e1bc9a5095b3b4aa8de29f32",
+    "text": "Benvenuto, |PLAYERNAME|! Sei fortunato che il servizio sia attivo in questo momento. Risparmia però il carbone per i giorni a venire!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.404419Z"
+  },
+  "data.otservbr.global.npc.junkar.robsons.L69.899": {
+    "src_hash": "16a245b8e67da46eadf34e9fec871b53",
+    "text": "Alla prossima volta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.404750Z"
+  },
+  "data.otservbr.global.npc.junkar.robsons.L70.900": {
+    "src_hash": "4b508d9118a7a2ee1cf157e9d26496d4",
+    "text": "<Sigh> Niente pazienza!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.405220Z"
+  },
+  "data.otservbr.global.npc.junkar.thais.L68.1410": {
+    "src_hash": "fb2e7252e1bc9a5095b3b4aa8de29f32",
+    "text": "Benvenuto, |PLAYERNAME|! Sei fortunato che il servizio sia attivo in questo momento. Risparmia però il carbone per i giorni a venire!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.405953Z"
+  },
+  "data.otservbr.global.npc.junkar.thais.L69.1411": {
+    "src_hash": "16a245b8e67da46eadf34e9fec871b53",
+    "text": "Alla prossima volta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.406366Z"
+  },
+  "data.otservbr.global.npc.junkar.thais.L70.1412": {
+    "src_hash": "4b508d9118a7a2ee1cf157e9d26496d4",
+    "text": "<Sigh> Niente pazienza!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.406752Z"
+  },
+  "data.otservbr.global.npc.kais.L104.736": {
+    "src_hash": "3b86f64fb67b5c1834d89da8e17d3262",
+    "text": "Hmm... sicuramente hai bisogno di {help} - me lo permetterai? Io sono {Kais} il Vincolato e posso darti una mano {healing} nel tuo corpo e nella tua anima o anche concederti una {enhanced} benedizione!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.408315Z"
+  },
+  "data.otservbr.global.npc.kais.L105.737": {
+    "src_hash": "ec41e7ef103eee05979a58c2f6dd83f3",
+    "text": "Addio... |PLAYERNAME|",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.408963Z"
+  },
+  "data.otservbr.global.npc.kais.L106.738": {
+    "src_hash": "ec41e7ef103eee05979a58c2f6dd83f3",
+    "text": "Addio... |PLAYERNAME|",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:18:20.409362Z"
   }
 }

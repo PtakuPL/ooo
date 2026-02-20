@@ -118198,5 +118198,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:29:14.620719Z"
+  },
+  "questlog.quest_11.mission_17.name": {
+    "src_hash": "44d638356f2b42994960b40b3c89ac45",
+    "text": "Paw and Fur: Gargoyles",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:36:07.958219Z"
   }
 }

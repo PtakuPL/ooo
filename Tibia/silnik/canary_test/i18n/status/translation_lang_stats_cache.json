@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T22:35:29.686796Z",
+  "timestamp": "2026-02-20T22:36:30.233196Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1975,
-  "file_cache_misses": 1,
+  "cache_hits": 50,
+  "cache_misses": 2,
+  "file_cache_hits": 1974,
+  "file_cache_misses": 2,
   "langs": {
     "ar": {
       "sig": [
@@ -7458,7 +7458,7 @@
         [
           "questlog.json",
           1,
-          1771622636414262934,
+          1771626978871113507,
           246931
         ],
         [
@@ -7929,7 +7929,7 @@
         "questlog.json": {
           "sig": [
             1,
-            1771622636414262934,
+            1771626978871113507,
             246931
           ],
           "row": {
@@ -25467,8 +25467,8 @@
         [
           "questlog.json",
           1,
-          1771622629989675752,
-          244413
+          1771626967966861827,
+          244408
         ],
         [
           "quests.json",
@@ -25531,7 +25531,7 @@
         "scope": "global",
         "total_reference_keys": 53586,
         "translated_keys": 47065,
-        "english_copy_keys": 1830,
+        "english_copy_keys": 1831,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 87.83,
@@ -25938,13 +25938,13 @@
         "questlog.json": {
           "sig": [
             1,
-            1771622629989675752,
-            244413
+            1771626967966861827,
+            244408
           ],
           "row": {
             "total_reference_keys": 1918,
             "translated_keys": 104,
-            "english_copy_keys": 18,
+            "english_copy_keys": 19,
             "missing_keys": 0,
             "missing_files": 0
           }

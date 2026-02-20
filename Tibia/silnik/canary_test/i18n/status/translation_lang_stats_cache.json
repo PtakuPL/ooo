@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T20:14:30.565141Z",
+  "timestamp": "2026-02-20T20:15:56.982446Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -235,8 +235,8 @@
   ],
   "cache_hits": 49,
   "cache_misses": 3,
-  "file_cache_hits": 1972,
-  "file_cache_misses": 4,
+  "file_cache_hits": 1973,
+  "file_cache_misses": 3,
   "langs": {
     "ar": {
       "sig": [
@@ -25377,7 +25377,7 @@
         [
           "items.json",
           1,
-          1771617487259785986,
+          1771618551432995517,
           891471
         ],
         [
@@ -25728,7 +25728,7 @@
         "items.json": {
           "sig": [
             1,
-            1771617487259785986,
+            1771618551432995517,
             891471
           ],
           "row": {
@@ -27051,8 +27051,8 @@
         [
           "scripts.json",
           1,
-          1771616022084291825,
-          201525
+          1771618507175257352,
+          201514
         ],
         [
           "server.json",
@@ -27096,14 +27096,14 @@
         "language_name": "Rumuński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 23142,
+        "translated_keys": 23152,
         "english_copy_keys": 2345,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 43.19,
+        "completion_pct": 43.21,
         "server_keys": 49731,
-        "server_translated": 21868,
-        "server_pct": 43.97,
+        "server_translated": 21878,
+        "server_pct": 43.99,
         "client_keys": 3855,
         "client_translated": 1274,
         "client_pct": 33.05
@@ -27546,12 +27546,12 @@
         "scripts.json": {
           "sig": [
             1,
-            1771616022084291825,
-            201525
+            1771618507175257352,
+            201514
           ],
           "row": {
             "total_reference_keys": 2170,
-            "translated_keys": 889,
+            "translated_keys": 899,
             "english_copy_keys": 157,
             "missing_keys": 0,
             "missing_files": 0
@@ -27828,7 +27828,7 @@
         [
           "raids.json",
           1,
-          1771616041856378036,
+          1771618526672413509,
           18785
         ],
         [
@@ -28315,7 +28315,7 @@
         "raids.json": {
           "sig": [
             1,
-            1771616041856378036,
+            1771618526672413509,
             18785
           ],
           "row": {

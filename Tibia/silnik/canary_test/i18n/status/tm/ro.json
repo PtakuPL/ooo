@@ -71526,5 +71526,93 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T20:07:59.285496Z"
+  },
+  "scripts.blessing.already_possess": {
+    "src_hash": "299238c1ad2213c614a5b40865f27a1d",
+    "text": "Dețineți deja această binecuvântare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:14:46.852345Z"
+  },
+  "scripts.bank.msg_11": {
+    "src_hash": "d88f7ca59893bb7cfc846bc0a199eb87",
+    "text": "Transferul a eșuat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:15:00.572886Z"
+  },
+  "scripts.bank.msg_3": {
+    "src_hash": "58b8d3b491658029f693e2429c532650",
+    "text": "Nu aveți suficienți numerar pentru a depune acea sumă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:15:00.573290Z"
+  },
+  "scripts.bank.msg_6": {
+    "src_hash": "e8973573f46c474ffce04ae8349dccf4",
+    "text": "Nu ai suficienți bani în contul tău bancar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:15:00.573652Z"
+  },
+  "scripts.bank.msg_9": {
+    "src_hash": "be3c108751f1fcf6ec011a50ce3efd0a",
+    "text": "Vă rugăm să furnizați un nume de jucător.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:15:00.573972Z"
+  },
+  "scripts.bank.player_not_exists": {
+    "src_hash": "5e6cbbbe2a9daaf0bdb8d78dc6912ac9",
+    "text": "Jucatorul {} nu există.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:15:00.574267Z"
+  },
+  "scripts.bank.transfer_success": {
+    "src_hash": "0265a9b872dbaae130bec6e6786407d1",
+    "text": "S-au transferat {} monede de aur în {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:15:07.174597Z"
+  },
+  "scripts.bank.withdraw_success": {
+    "src_hash": "8d4402b8cbe7b388bfbab0d530545fda",
+    "text": "A retras {} monede de aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:15:07.174895Z"
+  },
+  "scripts.bed_modification_kits.msg_1": {
+    "src_hash": "c43902468e14c10e72f9b8eefd3cc887",
+    "text": "Aveți deja această modificare de valoare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:15:07.175392Z"
+  },
+  "scripts.blessed_steak.msg_2": {
+    "src_hash": "6c59c303d9c6d564349fe8399bd8e48a",
+    "text": "Mana ta a fost reumplută.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:15:07.175713Z"
+  },
+  "scripts.blessed_steak.say_1": {
+    "src_hash": "ee78c76ee6f03bffa84ef210908ff496",
+    "text": "Chomp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:15:07.175948Z"
   }
 }

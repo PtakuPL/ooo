@@ -79102,5 +79102,181 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T19:25:30.634516Z"
+  },
+  "scripts.blessed_steak.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.456748Z"
+  },
+  "scripts.blueberry_cupcake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.457829Z"
+  },
+  "scripts.carpets.msg_1": {
+    "src_hash": "65806796b53f86abda7c761f12589945",
+    "text": "Puoi usarlo solo all'interno di una casa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.458639Z"
+  },
+  "scripts.carpets.msg_2": {
+    "src_hash": "65806796b53f86abda7c761f12589945",
+    "text": "Puoi usarlo solo all'interno di una casa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.459063Z"
+  },
+  "scripts.carrot_cake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.459638Z"
+  },
+  "scripts.coconut_shrimp_bake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.462469Z"
+  },
+  "scripts.demonic_candy_ball.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.475405Z"
+  },
+  "scripts.feroxa_summon.say_1": {
+    "src_hash": "8da719135345d936bc1cea3810f2349d",
+    "text": "ALZATEVI, MIEI SERVI! SALITA!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.484312Z"
+  },
+  "scripts.filled_jalapeno_peppers.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.485330Z"
+  },
+  "scripts.foods.sound_slurp": {
+    "src_hash": "e9c1ecc8d183e0b875a09d1d021d82b9",
+    "text": "Bere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.491843Z"
+  },
+  "scripts.hireling_lamp.msg_1": {
+    "src_hash": "65806796b53f86abda7c761f12589945",
+    "text": "Puoi usarlo solo all'interno di una casa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.499954Z"
+  },
+  "scripts.hydra_tongue_salad.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.502008Z"
+  },
+  "scripts.lemon_cupcake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.508123Z"
+  },
+  "scripts.northern_fishburger.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.550956Z"
+  },
+  "scripts.pot_of_blackjack.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.556455Z"
+  },
+  "scripts.roasted_dragon_wings.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.567457Z"
+  },
+  "scripts.rotworm_stew.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.568361Z"
+  },
+  "scripts.strawberry_cupcake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.576422Z"
+  },
+  "scripts.sweet_mangonaise_elixir.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.577169Z"
+  },
+  "scripts.sweet_mangonaise_elixir.say_1": {
+    "src_hash": "e9c1ecc8d183e0b875a09d1d021d82b9",
+    "text": "Bere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.577734Z"
+  },
+  "scripts.tropical_fried_terrorbird.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.586656Z"
+  },
+  "scripts.veggie_casserole.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:32:37.588557Z"
   }
 }

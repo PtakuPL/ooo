@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T20:26:32.792955Z",
-  "window_start_utc": "2026-02-20T19:26:32.122142Z",
-  "window_end_utc": "2026-02-20T20:26:32.122142Z",
+  "timestamp": "2026-02-20T20:27:42.462615Z",
+  "window_start_utc": "2026-02-20T19:27:41.776882Z",
+  "window_end_utc": "2026-02-20T20:27:41.776882Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -11,13 +11,13 @@
   "rejected_entries": 202,
   "rejected_entries_raw": 399,
   "suspicious_entries": 3646,
-  "suspicious_entries_raw": 22065,
+  "suspicious_entries_raw": 22116,
   "guard_fail_entries": 122,
-  "guard_fail_sum": 7768,
+  "guard_fail_sum": 7771,
   "by_type": {
-    "word_salad": 7,
     "identical_to_en": 161,
     "mixed_language": 9,
+    "word_salad": 7,
     "fx_token": 3,
     "contains_tibia_proper_noun": 17,
     "mixed_scripts": 22,
@@ -27,17 +27,16 @@
     "google_translate": 202
   },
   "by_language": {
-    "it": 25,
-    "es": 40,
     "sv": 11,
+    "es": 40,
     "ro": 61,
     "pl": 43,
+    "it": 25,
     "ru": 22
   },
   "by_category": {
-    "quests.json": 3,
-    "npc.json": 4,
     "server.json": 17,
+    "npc.json": 4,
     "books.json": 1,
     "otclient_modules.json": 29,
     "scripts.json": 14,
@@ -49,7 +48,8 @@
     "php.json": 2,
     "modules.json": 3,
     "items.json": 27,
-    "spells.json": 33
+    "spells.json": 33,
+    "quests.json": 3
   },
   "by_severity": {
     "CRITICAL": 168,
@@ -225,13 +225,6 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
       "count": 2,
       "types": {
@@ -247,6 +240,13 @@
     },
     {
       "key": "data.otservbr.global.npc.anerui.L73.1489",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.brasith.L60.1212",
       "count": 2,
       "types": {
         "identical_to_en": 2

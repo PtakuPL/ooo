@@ -118358,5 +118358,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:07:51.972050Z"
+  },
+  "quests.demon_oak.sound_9": {
+    "src_hash": "b056e7487d9090618cf485296fb9aab9",
+    "text": "ARGG! Torturuj to!! ZABIJ TO POWOLI, MÓJ SŁUCHA!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:16:33.325202Z"
+  },
+  "scripts.giant_spider_wyda_death.say_1": {
+    "src_hash": "ec8994f8421b16596d1b17003f2c1a31",
+    "text": "Wygląda na to, że to była tylko iluzja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:16:42.353460Z"
   }
 }

@@ -1,43 +1,43 @@
 {
-  "timestamp": "2026-02-20T23:22:56.980472Z",
-  "window_start_utc": "2026-02-20T22:22:56.279064Z",
-  "window_end_utc": "2026-02-20T23:22:56.279064Z",
+  "timestamp": "2026-02-20T23:24:22.653669Z",
+  "window_start_utc": "2026-02-20T22:24:21.881670Z",
+  "window_end_utc": "2026-02-20T23:24:21.881670Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 148,
-  "rejected_entries_raw": 164,
+  "rejected_entries": 135,
+  "rejected_entries_raw": 150,
   "suspicious_entries": 3975,
-  "suspicious_entries_raw": 12840,
-  "guard_fail_entries": 94,
-  "guard_fail_sum": 2408,
+  "suspicious_entries_raw": 12857,
+  "guard_fail_entries": 95,
+  "guard_fail_sum": 2415,
   "by_type": {
-    "identical_to_en": 126,
-    "mixed_language": 13,
+    "identical_to_en": 115,
     "contains_tibia_proper_noun": 3,
     "mixed_scripts": 8,
     "cyrillic_latin_mix": 8,
+    "mixed_language": 11,
     "word_salad": 1
   },
   "by_source": {
-    "google_translate": 148
+    "google_translate": 135
   },
   "by_language": {
-    "es": 33,
     "it": 10,
+    "es": 20,
     "ro": 54,
     "ru": 9,
     "sv": 13,
     "pl": 29
   },
   "by_category": {
-    "spells.json": 18,
     "npc.json": 3,
     "items.json": 27,
     "server.json": 16,
+    "spells.json": 5,
     "otclient_modules.json": 30,
     "scripts.json": 10,
     "monsters.json": 5,
@@ -50,17 +50,17 @@
     "php.json": 7
   },
   "by_severity": {
-    "CRITICAL": 127,
-    "HIGH": 21
+    "CRITICAL": 116,
+    "HIGH": 19
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 126
+      "count": 115
     },
     {
       "type": "mixed_language",
-      "count": 13
+      "count": 11
     },
     {
       "type": "mixed_scripts",
@@ -80,15 +80,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "spell.quara_constrictor_electrify.name",
-      "count": 3,
-      "types": {
-        "mixed_language": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
     {
       "key": "data.otservbr.global.npc.anerui.L71.1487",
       "count": 3,
@@ -165,6 +156,14 @@
     },
     {
       "key": "spell.ravennouslavalurkertarget.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.quara_constrictor_electrify.name",
       "count": 2,
       "types": {
         "mixed_scripts": 1,

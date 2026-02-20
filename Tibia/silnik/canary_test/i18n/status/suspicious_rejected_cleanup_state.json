@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-20T23:22:48.116348Z",
-  "last_cycle": 9,
+  "timestamp": "2026-02-20T23:24:14.478191Z",
+  "last_cycle": 10,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -372,6 +372,43 @@
       "data.otservbr.global.npc.chavis.L118.1346"
     ],
     "pl|questlog.json": [],
-    "es|questlog.json": []
+    "es|questlog.json": [],
+    "es|books.json": [
+      "book.otbm.damnation_to_all_who_dare",
+      "book.otbm.tanjis_sabado_15h_21h",
+      "book.otbm.tanjis_sabado_15h_21h_58898ea5"
+    ],
+    "pl|html.json": [
+      "html.account.characters.change_sex.html.text2",
+      "html.admin.news.form.html.text3",
+      "html.admin.news.form.html.text5",
+      "html.admin_bar.html.text1",
+      "html.balance.html.text1",
+      "html.guilds.list.html.text2",
+      "html.highscores.html.text2",
+      "html.install.config.html.text3",
+      "html.install.config.html.text4",
+      "html.monster.html.text1",
+      "html.monster.html.text3",
+      "html.points.html.text2",
+      "html.statistics.html.text1",
+      "html.statistics.html.text2",
+      "html.statistics.html.text3",
+      "html.web_status.text2",
+      "web.tpl.admin.menus.header.b_1",
+      "web.tpl.admin.menus.header.b_2",
+      "web.tpl.admin.open_source.b_2",
+      "web.tpl.buttons.back.set_2",
+      "web.tpl.buttons.base.set_2",
+      "web.tpl.buttons.base.set_3",
+      "web.tpl.buttons.login.set_2",
+      "web.tpl.buttons.register_account.set_3",
+      "web.tpl.buttons.view.set_3",
+      "web.tpl.characters.b_28",
+      "web.tpl.guilds.list.set_2",
+      "web.tpl.guilds.list.set_4",
+      "web.tpl.guilds.view.set_8",
+      "web.tpl.serverinfo.b_9"
+    ]
   }
 }

@@ -36598,5 +36598,117 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T21:56:57.156097Z"
+  },
+  "npc.ser_tybald.say_13": {
+    "src_hash": "e032c3362b6ae215006cc108cf75914f",
+    "text": "Det finns fyra kallelser: riddare, druid, paladin och trollkarl. Om du vill veta mer om dem, prata med Oressa i templet. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:12:41.079658Z"
+  },
+  "npc.ser_tybald.say_14": {
+    "src_hash": "62f69f4dd50b6ca75bdab050de0e2405",
+    "text": "Jag undervisar själv i prova-på-trollformler för båda de magiska klasserna, medan Tybald i nästa rum är specialiserad på riddare och paladin-trollformler.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:12:41.080356Z"
+  },
+  "npc.ser_tybald.say_15": {
+    "src_hash": "98fcd25fdb4a86e21a73b7fe0b3250c1",
+    "text": "En mycket intelligent tjej. Lyssnar hellre på vilda djurs ljud istället för människors, vilket är ganska förståeligt när man tänker efter. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:12:41.081048Z"
+  },
+  "npc.ser_tybald.say_16": {
+    "src_hash": "32d0433ff54aca30d76d1cb77609ee59",
+    "text": "Men hon är också en mycket lämplig healer och kan ge dig råd om ditt val av yrke.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:12:41.081579Z"
+  },
+  "npc.ser_tybald.say_2": {
+    "src_hash": "e4331875ad781395a4930cffc4d48264",
+    "text": "Det finns ett brett utbud av vad trollformler kan göra, vilket du kommer att se när du går vidare. Nästa besvärjelser kan du köpa med nivå 8 och vidare. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:12:41.082522Z"
+  },
+  "npc.ser_tybald.say_3": {
+    "src_hash": "0343271d676ac5ae00c2b752c4412720",
+    "text": "Vissa attacktrollformler kan riktas mot ett enda mål medan andra påverkar ett område, med effekt antingen över tid eller omedelbart. Även andra trollformler skyddar dig, eller kan användas för att skapa runor. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:12:41.083499Z"
+  },
+  "npc.ser_tybald.say_4": {
+    "src_hash": "2a3125de5d8b985b0e3b12907f8f99cd",
+    "text": "Varje yrke har sina egna individuella besvärjelser som ingen av de andra yrkena kan använda. Du kan bara lära dig trollformler hos en trolltränare av ditt yrke. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:12:41.084336Z"
+  },
+  "npc.ser_tybald.say_5": {
+    "src_hash": "c80c4e13cade065728865e84cd237221",
+    "text": "Besvärjelserna här på Dawnport är endast till för att testa, och du kommer att glömma dem när du väl väljer ditt bestämda yrke och åker till fastlandet. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:12:41.085496Z"
+  },
+  "npc.ser_tybald.say_6": {
+    "src_hash": "14e20651657f1919942e2421a64e0d95",
+    "text": "Där kan du gå till en stavningslärare i en stad för att permanent lära dig en trollformel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:12:41.086157Z"
+  },
+  "npc.ser_tybald.say_7": {
+    "src_hash": "3b6e505e9b1ce080890ebff9d1dd5f5d",
+    "text": "Fastlandet erbjuder många fler äventyr, faror och uppdrag än den här lilla ön, och har även stavningslärare där du permanent kan lära dig en trollformel för ditt yrke. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:12:41.087131Z"
+  },
+  "npc.ser_tybald.say_8": {
+    "src_hash": "d0363e20e43e94fc6a8574e399e96715",
+    "text": "När du når nivå 8 kan du välja ditt bestämda yrke och åka till Main. Gå till en stad och leta upp din yrkes trollformelstränare för att lära dig en trollformel. Och se till att du har tillräckligt med guld! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:12:41.088024Z"
+  },
+  "npc.ser_tybald.say_9": {
+    "src_hash": "e1742dda1f03a66f44a17d308bd84e4d",
+    "text": "Konsten att undervisa i stavning är komplex och farlig, och vi kommer bara att förmedla vår värdefulla kunskap om en trollformel till en nybörjare om de kan betala priset.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:12:41.088736Z"
+  },
+  "npc.ser_tybald.stdmod_10": {
+    "src_hash": "ad1e3c3e2ede3ff9027511de84a2a3df",
+    "text": "Ruggad och härdad av livets tragedier. En bra man, men dyster.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:12:41.089227Z"
+  },
+  "npc.ser_tybald.stdmod_11": {
+    "src_hash": "3be359a33153ef3483e8980a3e3a13aa",
+    "text": "Ja, barn. Om du vill lära dig en besvärjelse, berätta för mig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:12:41.089809Z"
   }
 }

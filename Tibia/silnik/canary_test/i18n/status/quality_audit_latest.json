@@ -1,12 +1,14 @@
 {
-  "timestamp": "2026-02-20T22:12:04.384527Z",
+  "timestamp": "2026-02-20T22:12:42.470260Z",
   "checked_entries": 100,
-  "issues_found": 16,
+  "issues_found": 29,
   "issues_by_type": {
-    "identical_to_en_exempt": 5,
+    "identical_to_en_exempt": 6,
     "artifact_token": 16,
-    "suspicious_log_high": 64,
-    "suspicious_log_critical": 41,
+    "identical_to_en": 13,
+    "suspicious_log_high": 81,
+    "suspicious_log_critical": 37,
+    "suspicious_log_low": 2,
     "suspicious_rejected_critical": 77,
     "suspicious_rejected_high": 6
   },
@@ -122,6 +124,97 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "monster.white_pale.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.white_pale.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.the_welter.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.the_welter.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.water_buffalo.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
+    },
+    {
+      "key": "monster.feverish_citizen.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "monster.serpent_spawn.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn"
+    },
+    {
+      "key": "monster.mad_mage.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Mad Mage",
+      "translated": "Mad Mage"
+    },
+    {
+      "key": "monster.zevelon_duskbringer.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
+    },
+    {
+      "key": "monster.zevelon_duskbringer.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
+    },
+    {
+      "key": "monster.weakened_shlorg.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
+    },
+    {
+      "key": "monster.weakened_shlorg.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
+    },
+    {
+      "key": "monster.diblis_the_fair.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Diblis The Fair",
+      "translated": "Diblis The Fair"
     }
   ],
   "threshold": 10,

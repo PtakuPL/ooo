@@ -1,25 +1,26 @@
 {
-  "timestamp": "2026-02-20T22:07:12.144213Z",
-  "cycle_counter": 6496,
-  "last_target_key": "ro:monsters.json",
-  "last_pending_total": 4949,
-  "last_tier": 2,
+  "timestamp": "2026-02-20T22:09:08.105195Z",
+  "cycle_counter": 6498,
+  "last_target_key": "es:monsters.json",
+  "last_pending_total": 800,
+  "last_tier": 1,
   "last_cat_priority": 2,
   "candidates_count": 181,
-  "active_candidates_count": 167,
+  "active_candidates_count": 166,
   "skipped_backoff": 10,
-  "skipped_guard_fail": 4,
+  "skipped_guard_fail": 5,
   "guard_fail_blacklist": {
-    "pl:items.json": 6522,
-    "pl:npc.json": 6515,
-    "es:items.json": 6516,
-    "es:server.json": 6511
+    "pl:items.json": 6524,
+    "pl:npc.json": 6517,
+    "es:items.json": 6518,
+    "es:server.json": 6513,
+    "ro:monsters.json": 6508
   },
-  "guard_fail_blocked_count": 4,
+  "guard_fail_blocked_count": 5,
   "guard_fail_blocked_preview": [
     {
       "target": "pl:items.json",
-      "until_cycle": 6522,
+      "until_cycle": 6524,
       "remaining_cycles": 26,
       "guard_fail_rate": 0.9976,
       "guard_fail": 4080,
@@ -30,7 +31,7 @@
     },
     {
       "target": "es:items.json",
-      "until_cycle": 6516,
+      "until_cycle": 6518,
       "remaining_cycles": 20,
       "guard_fail_rate": 0.9646,
       "guard_fail": 2614,
@@ -41,7 +42,7 @@
     },
     {
       "target": "es:server.json",
-      "until_cycle": 6511,
+      "until_cycle": 6513,
       "remaining_cycles": 15,
       "guard_fail_rate": 0.9535,
       "guard_fail": 205,
@@ -52,11 +53,22 @@
     },
     {
       "target": "pl:npc.json",
-      "until_cycle": 6515,
+      "until_cycle": 6517,
       "remaining_cycles": 19,
       "guard_fail_rate": 0.9416,
       "guard_fail": 2420,
       "translated": 150,
+      "entries": 5,
+      "dominant_reason": "default",
+      "hard_block": false
+    },
+    {
+      "target": "ro:monsters.json",
+      "until_cycle": 6508,
+      "remaining_cycles": 10,
+      "guard_fail_rate": 0.8667,
+      "guard_fail": 130,
+      "translated": 20,
       "entries": 5,
       "dominant_reason": "default",
       "hard_block": false
@@ -86,7 +98,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 10,
+  "cache_cycle": 11,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -236,7 +248,7 @@
   },
   "bootstrap_forced": false,
   "bootstrap_forced_lang": "",
-  "balance_forced": false,
+  "balance_forced": true,
   "global_quality_mode": true,
   "priority_gate": {
     "enabled": true,

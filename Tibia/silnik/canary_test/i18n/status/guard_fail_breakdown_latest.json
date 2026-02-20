@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:20:46.155427Z",
-  "window_start_utc": "2026-02-20T18:20:45.338517Z",
-  "window_end_utc": "2026-02-20T19:20:45.338517Z",
+  "timestamp": "2026-02-20T19:22:37.828860Z",
+  "window_start_utc": "2026-02-20T18:22:37.123791Z",
+  "window_end_utc": "2026-02-20T19:22:37.123791Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,14 +9,14 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 105,
-  "rejected_entries_raw": 367,
+  "rejected_entries_raw": 366,
   "suspicious_entries": 3267,
-  "suspicious_entries_raw": 25678,
-  "guard_fail_entries": 135,
-  "guard_fail_sum": 5743,
+  "suspicious_entries_raw": 27901,
+  "guard_fail_entries": 132,
+  "guard_fail_sum": 5739,
   "by_type": {
-    "identical_to_en": 95,
     "word_salad": 3,
+    "identical_to_en": 95,
     "mixed_language": 7,
     "contains_tibia_proper_noun": 4
   },
@@ -25,14 +25,14 @@
   },
   "by_language": {
     "es": 23,
-    "ro": 28,
     "pl": 32,
-    "it": 22
+    "it": 22,
+    "ro": 28
   },
   "by_category": {
     "npc.json": 4,
-    "items.json": 26,
     "spells.json": 46,
+    "items.json": 26,
     "monsters.json": 23,
     "server.json": 2,
     "quests.json": 1,
@@ -61,13 +61,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
     {
       "key": "spell.rotthingholy_ulus.name",
       "count": 2,
@@ -119,6 +112,13 @@
     },
     {
       "key": "spell.mitmahseer_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2

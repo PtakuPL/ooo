@@ -1,39 +1,37 @@
 {
-  "timestamp": "2026-02-20T23:53:16.646067Z",
-  "window_start_utc": "2026-02-20T22:53:15.893653Z",
-  "window_end_utc": "2026-02-20T23:53:15.893653Z",
+  "timestamp": "2026-02-20T23:54:47.206285Z",
+  "window_start_utc": "2026-02-20T22:54:46.529152Z",
+  "window_end_utc": "2026-02-20T23:54:46.529152Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 43,
-  "rejected_entries_raw": 47,
-  "suspicious_entries": 4072,
-  "suspicious_entries_raw": 14148,
+  "rejected_entries": 36,
+  "rejected_entries_raw": 40,
+  "suspicious_entries": 4053,
+  "suspicious_entries_raw": 14298,
   "guard_fail_entries": 91,
-  "guard_fail_sum": 2871,
+  "guard_fail_sum": 2892,
   "by_type": {
-    "identical_to_en": 30,
-    "mixed_scripts": 3,
-    "cyrillic_latin_mix": 3,
+    "identical_to_en": 25,
     "mixed_language": 9,
+    "mixed_scripts": 1,
+    "cyrillic_latin_mix": 1,
     "word_salad": 1
   },
   "by_source": {
-    "google_translate": 43
+    "google_translate": 36
   },
   "by_language": {
-    "it": 5,
-    "ru": 4,
-    "ro": 10,
     "es": 8,
+    "it": 4,
+    "ro": 7,
+    "ru": 1,
     "pl": 16
   },
   "by_category": {
-    "talkactions.json": 4,
-    "otclient_data.json": 3,
     "npc.json": 3,
     "client.json": 2,
     "php.json": 7,
@@ -42,13 +40,13 @@
     "server.json": 1
   },
   "by_severity": {
-    "CRITICAL": 31,
-    "HIGH": 12
+    "CRITICAL": 26,
+    "HIGH": 10
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 30
+      "count": 25
     },
     {
       "type": "mixed_language",
@@ -56,11 +54,11 @@
     },
     {
       "type": "mixed_scripts",
-      "count": 3
+      "count": 1
     },
     {
       "type": "cyrillic_latin_mix",
-      "count": 3
+      "count": 1
     },
     {
       "type": "word_salad",
@@ -68,29 +66,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "talkaction.gm.spy.msg_stack_count",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "talkaction.gm.afk.msg_already_afk",
-      "count": 2,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "talkaction.gm.namelock.msg_not_found",
-      "count": 2,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
@@ -132,27 +107,6 @@
       "count": 2,
       "types": {
         "identical_to_en": 2
-      }
-    },
-    {
-      "key": "otclient_data.40_inventory_otui.tr_4",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "otclient_data.40_outfitwindow_otui.tr_18",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "otclient_data.40_outfitwindow_otui.tr_21",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
       }
     },
     {
@@ -206,6 +160,48 @@
     },
     {
       "key": "php.exception.text2",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "channel.gamemaster.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "item.10727.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "item.11515.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "item.11808.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "item.12576.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "item.12577.name",
       "count": 1,
       "types": {
         "identical_to_en": 1

@@ -1,27 +1,27 @@
 {
-  "timestamp": "2026-02-20T22:13:30.634811Z",
-  "cycle_counter": 6510,
-  "last_target_key": "es:npc.json",
-  "last_pending_total": 2355,
-  "last_tier": 1,
+  "timestamp": "2026-02-20T22:17:11.476487Z",
+  "cycle_counter": 6516,
+  "last_target_key": "it:items.json",
+  "last_pending_total": 12530,
+  "last_tier": 2,
   "last_cat_priority": 1,
   "candidates_count": 181,
   "active_candidates_count": 165,
   "skipped_backoff": 10,
   "skipped_guard_fail": 6,
   "guard_fail_blacklist": {
-    "pl:items.json": 6536,
-    "pl:npc.json": 6529,
-    "es:items.json": 6530,
-    "es:server.json": 6525,
-    "ro:monsters.json": 6520,
-    "pl:spells.json": 6520
+    "pl:items.json": 6542,
+    "pl:npc.json": 6535,
+    "es:items.json": 6536,
+    "es:server.json": 6531,
+    "ro:monsters.json": 6526,
+    "pl:spells.json": 6526
   },
   "guard_fail_blocked_count": 6,
   "guard_fail_blocked_preview": [
     {
       "target": "pl:items.json",
-      "until_cycle": 6536,
+      "until_cycle": 6542,
       "remaining_cycles": 26,
       "guard_fail_rate": 0.9976,
       "guard_fail": 4080,
@@ -32,7 +32,7 @@
     },
     {
       "target": "pl:spells.json",
-      "until_cycle": 6520,
+      "until_cycle": 6526,
       "remaining_cycles": 10,
       "guard_fail_rate": 0.9667,
       "guard_fail": 145,
@@ -43,7 +43,7 @@
     },
     {
       "target": "es:items.json",
-      "until_cycle": 6530,
+      "until_cycle": 6536,
       "remaining_cycles": 20,
       "guard_fail_rate": 0.9646,
       "guard_fail": 2614,
@@ -54,7 +54,7 @@
     },
     {
       "target": "es:server.json",
-      "until_cycle": 6525,
+      "until_cycle": 6531,
       "remaining_cycles": 15,
       "guard_fail_rate": 0.9535,
       "guard_fail": 205,
@@ -65,7 +65,7 @@
     },
     {
       "target": "pl:npc.json",
-      "until_cycle": 6529,
+      "until_cycle": 6535,
       "remaining_cycles": 19,
       "guard_fail_rate": 0.9416,
       "guard_fail": 2420,
@@ -76,7 +76,7 @@
     },
     {
       "target": "ro:monsters.json",
-      "until_cycle": 6520,
+      "until_cycle": 6526,
       "remaining_cycles": 10,
       "guard_fail_rate": 0.8667,
       "guard_fail": 130,
@@ -110,7 +110,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 15,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,

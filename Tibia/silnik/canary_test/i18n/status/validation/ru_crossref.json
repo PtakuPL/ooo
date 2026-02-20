@@ -4,11 +4,11 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T21:54:40.815384Z",
-  "issues_total": 129,
+  "checked_at": "2026-02-20T22:19:36.458766Z",
+  "issues_total": 155,
   "issues_by_type": {
     "consistency_in_language": 57,
-    "pl_reference_missing_translation": 29,
+    "pl_reference_missing_translation": 55,
     "length_ratio_crosscheck": 43
   },
   "consistency_issues": [
@@ -928,6 +928,240 @@
       "lang": "{0} VIP."
     },
     {
+      "key": "npc.a_beautiful_girl.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "So you have come, |PLAYERNAME|. I hoped you would not...",
+      "pl": "A więc jednak przyszedłeś/przyszłaś, |PLAYERNAME|. Miałam nadzieję, że nie...",
+      "lang": "So you have come, |PLAYERNAME|. I hoped you would not..."
+    },
+    {
+      "key": "npc.a_dead_bureaucrat1.say_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Alright |PLAYERNAME|. Vocation?",
+      "pl": "Alright |PLAYERNAME|. Profesja?",
+      "lang": "Alright |PLAYERNAME|. Vocation?"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat3.say_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Alright |PLAYERNAME|. Vocation?",
+      "pl": "Dobrze |PLAYERNAME|. Profesja?",
+      "lang": "Alright |PLAYERNAME|. Vocation?"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Alright |PLAYERNAME|. Vocation?",
+      "pl": "Dobrze |PLAYERNAME|. Profesja?",
+      "lang": "Alright |PLAYERNAME|. Vocation?"
+    },
+    {
+      "key": "npc.a_majestic_warwolf.say_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I can see in your eyes that you are a honest and friendly person, |PLAYERNAME|. You were patient enough to learn our language and I will grant you a special gift. Will you accept it?",
+      "pl": "Widzę w twoich oczach, że jesteś uczciwą i przyjazną osobą, |PLAYERNAME|. Miałeś/Miałaś dość cierpliwości, by nauczyć się naszego języka, więc dam ci wyjątkowy dar. Przyjmiesz go?",
+      "lang": "I can see in your eyes that you are a honest and friendly person, |PLAYERNAME|. You were patient enough to learn our language and I will grant you a special gift. Will you accept it?"
+    },
+    {
+      "key": "npc.a_majestic_warwolf.say_female",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "From now on, you shall be known as |PLAYERNAME|, the wolf girl. You shall be fast and smart as Morgrar, the great white wolf. He shall guide your path.",
+      "pl": "Od teraz będziesz znana jako |PLAYERNAME|, wilcza dziewczyna. Będziesz szybka i sprytna jak Morgrar, wielki biały wilk. To on poprowadzi twoją ścieżkę.",
+      "lang": "From now on, you shall be known as |PLAYERNAME|, the wolf girl. You shall be fast and smart as Morgrar, the great white wolf. He shall guide your path."
+    },
+    {
+      "key": "npc.a_majestic_warwolf.say_male",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "From now on, you shall be known as |PLAYERNAME|, the bear warrior. You shall be strong and proud as Angros, the great dark bear. He shall guide your path.",
+      "pl": "Od teraz będziesz znany jako |PLAYERNAME|, niedźwiedzi wojownik. Będziesz silny i dumny jak Angros, wielki mroczny niedźwiedź. To on poprowadzi twoją ścieżkę.",
+      "lang": "From now on, you shall be known as |PLAYERNAME|, the bear warrior. You shall be strong and proud as Angros, the great dark bear. He shall guide your path."
+    },
+    {
+      "key": "npc.a_sweaty_cyclops.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hum Humm! Welcume lil' |PLAYERNAME|.",
+      "pl": "Hum, hum! Witamy, mały |PLAYERNAME|.",
+      "lang": "Hum Humm! Welcume lil' |PLAYERNAME|."
+    },
+    {
+      "key": "npc.a_wrinkled_bonelord.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "What is this? An optically challenged entity called |PLAYERNAME|. How fascinating!",
+      "pl": "Cóż to takiego? Optycznie upośledzona istota zwana |PLAYERNAME|. Jakie fascynujące!",
+      "lang": "What is this? An optically challenged entity called |PLAYERNAME|. How fascinating!"
+    },
+    {
+      "key": "npc.alia.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "pl": "Witaj, młody |PLAYERNAME|! Jeśli jesteś ciężko ranny/ranna albo otruty/otruta, mogę cię {heal} za darmo.",
+      "lang": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free."
+    },
+    {
+      "key": "npc.amanda.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "pl": "Witaj, młody |PLAYERNAME|! Jeśli jesteś ciężko ranny/ranna albo otruty/otruta, mogę cię {heal} za darmo.",
+      "lang": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free."
+    },
+    {
+      "key": "npc.amber.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh hello, nice to see you |PLAYERNAME|. Are you here to hear some stories of my {adventures} or do you need {help}?",
+      "pl": "Och, cześć, miło cię widzieć, |PLAYERNAME|. Przyszedłeś/przyszłaś posłuchać opowieści o moich {adventures}, czy potrzebujesz {help}?",
+      "lang": "Oh hello, nice to see you |PLAYERNAME|. Are you here to hear some stories of my {adventures} or do you need {help}?"
+    },
+    {
+      "key": "npc.aneus.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings adventurer |PLAYERNAME|. What leads you to me?",
+      "pl": "Pozdrowienia, poszukiwaczu przygód |PLAYERNAME|. Co cię do mnie sprowadza?",
+      "lang": "Greetings adventurer |PLAYERNAME|. What leads you to me?"
+    },
+    {
+      "key": "npc.aruda.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye, |PLAYERNAME|. I really hope we'll talk again soon.",
+      "pl": "Do widzenia, |PLAYERNAME|. Naprawdę mam nadzieję, że wkrótce znowu porozmawiamy.",
+      "lang": "Good bye, |PLAYERNAME|. I really hope we'll talk again soon."
+    },
+    {
+      "key": "npc.aruda.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh, hello |PLAYERNAME|, your hair looks great! Who did it for you?",
+      "pl": "Och, cześć |PLAYERNAME|, twoje włosy wyglądają świetnie! Kto ci je zrobił?",
+      "lang": "Oh, hello |PLAYERNAME|, your hair looks great! Who did it for you?"
+    },
+    {
+      "key": "npc.aruda.greet_msg_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh, hello, handsome! It's a pleasure to meet you, |PLAYERNAME|. Gladly I have the time to {chat} a bit.",
+      "pl": "Och, cześć, przystojniaku! Miło mi cię poznać, |PLAYERNAME|. Chętnie znajdę chwilę, żeby trochę {chat}.",
+      "lang": "Oh, hello, handsome! It's a pleasure to meet you, |PLAYERNAME|. Gladly I have the time to {chat} a bit."
+    },
+    {
+      "key": "npc.atur.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps?",
+      "pl": "Tak? Co mogę dla ciebie zrobić, |PLAYERNAME|? Sprawy bankowe, być może?",
+      "lang": "Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps?"
+    },
+    {
+      "key": "npc.avar_tar.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings, traveller |PLAYERNAME|!",
+      "pl": "Pozdrowienia, podróżniku |PLAYERNAME|!",
+      "lang": "Greetings, traveller |PLAYERNAME|!"
+    },
+    {
+      "key": "npc.azalea.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "pl": "Witaj, młody |PLAYERNAME|! Jeśli jesteś ciężko ranny/ranna albo otruty/otruta, mogę cię {heal} za darmo.",
+      "lang": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free."
+    },
+    {
+      "key": "npc.battlemart.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Farewell, |PLAYERNAME|, I'll be here if you need me again.",
+      "pl": "Żegnaj, |PLAYERNAME|. Będę tu, jeśli znów będziesz mnie potrzebować.",
+      "lang": "Farewell, |PLAYERNAME|, I'll be here if you need me again."
+    },
+    {
+      "key": "npc.billy.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Howdy |PLAYERNAME|. I'm a farmer and cook, maybe I can interest you in a {trade} with food? You can also ask me for general {hints} about the game.",
+      "pl": "Czołem |PLAYERNAME|. Jestem farmerem i kucharzem, może zainteresuje cię {trade} jedzeniem? Możesz też zapytać mnie o ogólne {hints} dotyczące gry.",
+      "lang": "Howdy |PLAYERNAME|. I'm a farmer and cook, maybe I can interest you in a {trade} with food? You can also ask me for general {hints} about the game."
+    },
+    {
+      "key": "npc.bozo.greet_msg_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hello, hello, hello, little lady |PLAYERNAME|! What brings you {here}?",
+      "pl": "Witaj, witaj, witaj, mała damo |PLAYERNAME|! Co cię tu {here} sprowadza?",
+      "lang": "Hello, hello, hello, little lady |PLAYERNAME|! What brings you {here}?"
+    },
+    {
+      "key": "npc.brewster.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "pl": "Witaj, młody |PLAYERNAME|! Jeśli jesteś ciężko ranny/ranna albo otruty/otruta, mogę cię {heal} za darmo.",
+      "lang": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free."
+    },
+    {
+      "key": "npc.brodrosch.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome, |PLAYERNAME|! May earth protect you on the rocky grounds. If you need a {passage}, I can help you.",
+      "pl": "Witaj, |PLAYERNAME|! Niech ziemia cię chroni na skalistych terenach. Jeśli potrzebujesz {passage}, mogę pomóc.",
+      "lang": "Welcome, |PLAYERNAME|! May earth protect you on the rocky grounds. If you need a {passage}, I can help you."
+    },
+    {
+      "key": "npc.bron.greet_msg_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome to my humble hut, |PLAYERNAME|.",
+      "pl": "Witaj w mojej skromnej chatce, |PLAYERNAME|.",
+      "lang": "Welcome to my humble hut, |PLAYERNAME|."
+    },
+    {
+      "key": "npc.bruno.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ahoi, |PLAYERNAME|. You want to buy some fresh fish?",
+      "pl": "Ahoj, |PLAYERNAME|. Chcesz kupić świeżą rybę?",
+      "lang": "Ahoi, |PLAYERNAME|. You want to buy some fresh fish?"
+    },
+    {
       "key": "npc.menesto.say_2",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -1552,8 +1786,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 29,
-    "applied": 0,
+    "attempted": 55,
+    "applied": 26,
     "skipped": 29,
     "errors": 0
   }

@@ -13781,6 +13781,27 @@ def _key_domain(key: str) -> str:
         return "book"
     return k.split(".", 1)[0] if "." in k else k
 
+_DOMAIN_IDENTICAL_EXEMPT_TERMS = {
+    "demon",
+    "demons",
+}
+_DOMAIN_IDENTICAL_EXEMPT_DOMAINS = {
+    "monster", "item", "spell", "npc", "book", "quest", "raid",
+}
+
+def _is_domain_identical_exempt(key: str, en_value: str) -> bool:
+    text = str(en_value or "").strip()
+    if not text:
+        return False
+    words = [w.lower() for w in re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ]+", text)]
+    if not words:
+        return False
+    if not any(w in _DOMAIN_IDENTICAL_EXEMPT_TERMS for w in words):
+        return False
+    if not str(key or "").endswith((".name", ".title", ".desc")):
+        return False
+    return _key_domain(key) in _DOMAIN_IDENTICAL_EXEMPT_DOMAINS
+
 def _is_domain_whitelisted_proper_noun(key: str, en_value: str) -> bool:
     en_stripped = str(en_value or "").strip()
     if not en_stripped:
@@ -13816,6 +13837,13 @@ def _is_proper_noun_key(key, en_value):
     if key.startswith(("quest.", "raid.", "achievement.")) and key.endswith(".title"):
         return True
     en_stripped = en_value.strip()
+    _never_exempt_descriptive_roles = {
+        "knight", "sorcerer", "druid", "paladin", "familiar",
+        "troll", "orc", "elf", "dragon", "demon", "skeleton", "warrior",
+    }
+    _en_words_lc = {w.lower() for w in re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ]+", en_stripped)}
+    if _en_words_lc & _never_exempt_descriptive_roles:
+        return False
     if len(en_stripped) <= 3:
         return True
     # Code/technical values (regex, format strings, code identifiers)
@@ -13915,6 +13943,97 @@ def _requires_trailing_space_contract(key: str, en_text: str) -> bool:
     if any(tok in src for tok in ("{}", "%s", "{0}", "{1}", "|PLAYERNAME|")):
         return True
     return True
+
+_EN_FUNCTION_WORDS = {
+    'the','a','an','of','in','is','it','its','he','she','his','her',
+    'has','had','was','were','to','by','on','at','for','with','from','that',
+    'this','which','some','they','their','them','you','your','we','our',
+    'my','me','him','up','out','get','got','no','yes','here','there','about',
+    'if','as','so','be','do','but','or','not','will','can','may','all','any',
+    'how','now','too','back','off','down','must','let','go','come','see','make','take',
+}
+_LANG_FUNCTION_FALSE_FRIENDS = {
+    "es": {"has", "a", "as", "no", "me", "he", "us"},
+    "pt": {"a", "as", "no", "me", "he"},
+    "it": {"a", "no", "me"},
+    "ro": {"a", "as", "no"},
+}
+
+def _count_en_function_words(words, lang: str) -> int:
+    lang_lc = str(lang or "").lower().replace("_", "-")
+    lang_base = lang_lc.split("-", 1)[0]
+    false_friends = _LANG_FUNCTION_FALSE_FRIENDS.get(lang_base, set())
+    total = 0
+    for w in words:
+        normalized = w.rstrip('.,!?;:').lower()
+        if normalized in _EN_FUNCTION_WORDS and normalized not in false_friends:
+            total += 1
+    return total
+
+_CYRILLIC_TRANSLIT_DENY_TERMS = {
+    "knight", "sorcerer", "druid", "paladin", "familiar",
+    "troll", "demon", "dragon", "skeleton", "warrior",
+}
+
+def _transliterate_latin_word_ru(token: str) -> str:
+    src = str(token or "")
+    if not src:
+        return src
+    if not re.fullmatch(r"[A-Za-z][A-Za-z'-]*", src):
+        return src
+    low = src.lower()
+    if low in _CYRILLIC_TRANSLIT_DENY_TERMS:
+        return src
+    out = low
+    digraphs = [
+        ("shch", "щ"), ("sch", "щ"), ("zh", "ж"), ("kh", "х"),
+        ("ts", "ц"), ("ch", "ч"), ("sh", "ш"), ("yu", "ю"),
+        ("ya", "я"), ("yo", "ё"), ("ye", "е"),
+    ]
+    for a, b in digraphs:
+        out = out.replace(a, b)
+    cmap = {
+        'a': 'а', 'b': 'б', 'c': 'к', 'd': 'д', 'e': 'е', 'f': 'ф', 'g': 'г',
+        'h': 'х', 'i': 'и', 'j': 'й', 'k': 'к', 'l': 'л', 'm': 'м', 'n': 'н',
+        'o': 'о', 'p': 'п', 'q': 'к', 'r': 'р', 's': 'с', 't': 'т', 'u': 'у',
+        'v': 'в', 'w': 'в', 'x': 'кс', 'y': 'й', 'z': 'з', '-': '-', "'": "ь",
+    }
+    out = "".join(cmap.get(ch, ch) for ch in out)
+    if src[:1].isupper() and out:
+        out = out[0].upper() + out[1:]
+    return out
+
+def _auto_transliterate_cyrillic_proper_nouns(en_text: str, translated_text: str, lang: str):
+    lang_base = str(lang or "").lower().replace("_", "-").split("-", 1)[0]
+    if lang_base not in {"ru", "uk", "bg", "sr", "mk"}:
+        return str(translated_text or ""), 0
+    text = str(translated_text or "")
+    if not re.search(r"[A-Za-z]{3,}", text):
+        return text, 0
+
+    proper_terms = {str(x).strip().lower() for x in TIBIA_PROPER_NOUNS if str(x).strip()}
+    en_title_words = {
+        w.lower()
+        for w in re.findall(r"[A-Za-z][A-Za-z'-]*", str(en_text or ""))
+        if w[:1].isupper() and len(w) >= 4
+    }
+    changed = 0
+
+    def _replace(match):
+        nonlocal changed
+        tok = match.group(0)
+        tl = tok.lower()
+        if tl in _CYRILLIC_TRANSLIT_DENY_TERMS:
+            return tok
+        if tl in proper_terms or tl in en_title_words:
+            new_tok = _transliterate_latin_word_ru(tok)
+            if new_tok != tok:
+                changed += 1
+            return new_tok
+        return tok
+
+    fixed = re.sub(r"\b[A-Za-z][A-Za-z'-]{2,}\b", _replace, text)
+    return fixed, changed
 
 def is_untranslated_value(value, en_value, key=""):
     if value is None:
@@ -14376,6 +14495,13 @@ def _auto_fix_translation(en_text: str, candidate: str, lang: str = ""):
         text = text + '\n'
         fixes.append("trailing_newline")
 
+    # F6b: Dla języków cyrylickich transliteruj tylko nazwy własne/termy świata gry.
+    # Nie transliteruj ról/opisów typu Knight/Sorcerer — te muszą być tłumaczone.
+    text_cyr, cyr_changed = _auto_transliterate_cyrillic_proper_nouns(en_text, text, lang)
+    if cyr_changed > 0:
+        text = text_cyr
+        fixes.append(f"cyrillic_proper_noun_translit:{cyr_changed}")
+
     # F7: Preserve trailing-space contract for concatenated runtime fragments.
     en_trailing_spaces = len(en_text) - len(en_text.rstrip(" "))
     tr_trailing_spaces = len(text) - len(text.rstrip(" "))
@@ -14431,22 +14557,16 @@ def validate_candidate(en_text: str, candidate: str):
         return False, "i_dot_artifact"
 
     # Hard gate: word salad (EN function words >25% of translation)
-    _vc_func = {'the','a','an','of','in','is','it','its','he','she','his','her',
-        'has','had','was','were','to','by','on','at','for','with','from','that',
-        'this','which','some','they','their','them','you','your','we','our',
-        'my','me','him','up','out','get','got','no','yes','here','there','about',
-        'if','as','so','be','do','but','or','not','will','can','may','all','any',
-        'how','now','too','back','off','down','must','let','go','come','see','make','take'}
     _vc_words = candidate.lower().split()
     if len(_vc_words) >= 4:
-        _vc_fc = sum(1 for w in _vc_words if w.rstrip('.,!?;:') in _vc_func)
-        if _vc_fc >= 2 and _vc_fc / len(_vc_words) > 0.25:
-            return False, "word_salad"
-        # Also block high EN content word overlap (keeps many EN words unchanged)
+        _vc_fc = _count_en_function_words(_vc_words, target_lang)
         _vc_en_content = set(w.lower() for w in re.findall(r'[a-zA-Z]{4,}', en_text))
         _vc_tr_content = set(w.lower() for w in re.findall(r'[a-zA-Z]{4,}', candidate))
+        _vc_overlap = _vc_en_content & _vc_tr_content if _vc_en_content else set()
+        if _vc_fc >= 2 and _vc_fc / len(_vc_words) > 0.25 and len(_vc_overlap) >= 2:
+            return False, "word_salad"
+        # Also block high EN content word overlap (keeps many EN words unchanged)
         if _vc_en_content:
-            _vc_overlap = _vc_en_content & _vc_tr_content
             _vc_overlap_ratio = len(_vc_overlap) / len(_vc_en_content)
             _vc_overlap_by_words = len(_vc_overlap) / len(_vc_words)
             if len(_vc_overlap) >= 2 and _vc_overlap_ratio > 0.3 and _vc_overlap_by_words > 0.2:
@@ -14627,7 +14747,10 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
     # S3: Identical to EN (z wykluczeniem nazw własnych i treści technicznych)
     if tr == en and not _is_proper_noun_key(key, en) and (en not in TIBIA_PROPER_NOUNS):
         forced_retranslate = _should_force_en_copy_retranslate(key, en, lang)
-        if forced_retranslate or not _is_probably_nontranslatable_text(en):
+        if forced_retranslate or (
+            not _is_probably_nontranslatable_text(en)
+            and not _is_domain_identical_exempt(key, en)
+        ):
             issues.append({
                 "type": "identical_to_en",
                 "severity": "CRITICAL",
@@ -14989,14 +15112,14 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
 
     # S23: word_salad — tłumaczenie to mix EN function words + częściowe tłumaczenie
     if tr != en and not tr.startswith("[") and tr_len > 15:
-        _ws_func = {'the','a','an','of','in','is','it','its','he','she','his','her',
-            'has','had','was','were','to','by','on','at','for','with','from','that',
-            'this','which','some','they','their','them','you','your','we','our'}
         _ws_words = tr.lower().split()
         if len(_ws_words) >= 4:
-            _ws_func_count = sum(1 for w in _ws_words if w.rstrip('.,!?;:') in _ws_func)
+            _ws_func_count = _count_en_function_words(_ws_words, lang)
             _ws_ratio = _ws_func_count / len(_ws_words)
-            if _ws_func_count >= 2 and _ws_ratio > 0.2:
+            _ws_en_content = set(w.lower() for w in re.findall(r'[a-zA-Z]{4,}', en))
+            _ws_tr_content = set(w.lower() for w in re.findall(r'[a-zA-Z]{4,}', tr))
+            _ws_overlap = _ws_en_content & _ws_tr_content if _ws_en_content else set()
+            if _ws_func_count >= 2 and _ws_ratio > 0.2 and len(_ws_overlap) >= 2:
                 issues.append({
                     "type": "word_salad",
                     "severity": "CRITICAL",
@@ -16039,6 +16162,8 @@ if all_recent:
             continue
         if _should_force_en_copy_retranslate(key_text, en_text, target_lang, json_file):
             identical_to_en_translatable += 1
+        elif _is_domain_identical_exempt(key_text, en_text):
+            identical_to_en_exempt += 1
         elif _is_probably_nontranslatable_text(en_text):
             identical_to_en_exempt += 1
         else:
@@ -21412,6 +21537,8 @@ for e in entries:
             issues.append({"key": key, "lang": lang, "type": "identical_to_en", "en": en, "translated": tr})
             issue_counter["identical_to_en"] += 1
             lang_issue_counter[lang] += 1
+        elif _is_domain_identical_exempt(key, en):
+            issue_counter["identical_to_en_exempt"] += 1
         elif _is_probably_nontranslatable_text(en):
             issue_counter["identical_to_en_exempt"] += 1
         else:

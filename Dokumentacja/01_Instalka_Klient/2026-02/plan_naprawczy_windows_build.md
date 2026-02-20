@@ -1,9 +1,10 @@
 # Plan Naprawczy: Windows Build - Instalka OTC Client
 
 **Data:** 2026-02-20 (aktualizacja: 2026-02-21)  
-**Źródło:** Analiza logów CI + badanie ChatGPT (`badanie_chatgpt_kompilacja.md`)  
+**Źródło:** Analiza logów CI + badanie ChatGPT (`badanie_chatgpt_kompilacja.md` + `analiza_chatgpt_commity_i_diagnostyka.md`)  
 **Run ID (początkowy):** 22203119029 | **Run ID (po Kroku 1):** 22234136342  
-**Kompilator:** MSVC 14.44.35207 / VS 2022 Enterprise, runner windows-2022
+**Kompilator:** MSVC 14.44.35207 / VS 2022 Enterprise, runner windows-2022  
+**Build system:** CMake + Ninja (Release), vcpkg, bez Unity Build
 
 ---
 
@@ -75,16 +76,40 @@ Ale `/d2SSAOptimizer-` wyłącza optymalizator SSA, a crash jest w **P2 codegen*
 
 ---
 
+## Konfrontacja z analizą ChatGPT
+
+Analiza ChatGPT (`analiza_chatgpt_commity_i_diagnostyka.md`) jest ogólna i opisuje strategie diagnostyczne (git bisect, porównanie gałęzi, parsowanie logów). **Nie trafia w sedno naszego problemu (ICE C1001)**, ale zawiera kilka przydatnych obserwacji:
+
+### Co przydatne z analizy ChatGPT:
+1. **`/permissive-`** — wymusza ścisłą zgodność ze standardem C++. Może zmienić ścieżkę template two-phase lookup w kompilatorze, co mogłoby ominąć ICE. **→ Dodane do Kroku 2A.**
+2. **`/diagnostics:caret`** — lepsza diagnostyka kolumn w błędach. **→ Dodane do Kroku 2A.**
+3. **`compile_commands.json`** — `CMAKE_EXPORT_COMPILE_COMMANDS=ON` pozwala reprodukować pojedynczy TU. **→ Dodane do CI workflow jako opcja debugowa.**
+4. **Lawinowa instancjacja szablonów** — ChatGPT trafnie zidentyfikował to jako ryzyko. U nas to dotyczy `luabinder.h` z rekurencyjnymi szablonami. **→ Potwierdza nasz Krok 2C.**
+
+### Co z ChatGPT NIE dotyczy nas:
+- Cała sekcja o i18n/locale/ICU/Boost.Locale — **nieistotne**, nasz problem to pure C++ template ICE w lua binderze
+- Analiza pliku `ItemA.cpp` — **inny kontekst**, nie ma związku z buildem instalki OTC
+- Sekcja o kodowaniu/BOM/codepage — **już rozwiązane** (mamy `/utf-8` w CMakeLists.txt od dawna)
+- `git bisect` — **niepraktyczne**: problem jest specyficzny dla MSVC 14.44 (Linux nie reprodukuje), build trwa 3h+, runner jest drogi
+
+---
+
 ## Nowy plan naprawczy (po Rundzie 2)
 
 ### Krok 2A: Dodatkowe flagi MSVC dla P2 codegen [NIEINWAZYJNY]
 
 Dodać do per-file COMPILE_FLAGS w `src/CMakeLists.txt` (Grupa 2):
 ```cmake
-COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer- /d2FH4- /d2notypeopt"
+COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer- /d2FH4- /d2notypeopt /permissive-"
 ```
 - **`/d2FH4-`** — wyłącza nowy model obsługi wyjątków FH4. Crash w `luabinder.h:171` jest w lambdzie z `throw` — FH4 może generować błędny kod dla exception handling w template-lambdach
 - **`/d2notypeopt`** — wyłącza optymalizację typów w fazie P2, co zapobiega ACCESS VIOLATION w codegeneratorze
+- **`/permissive-`** — wymusza ścisłą zgodność ze standardem C++ (sugestia z analizy ChatGPT). Zmienia ścieżkę template two-phase lookup, co może ominąć buggy codepath w MSVC P2
+
+Dodatkowo dodać **globalnie** dla lepszej diagnostyki:
+```cmake
+target_compile_options(${PROJECT_NAME} PRIVATE /diagnostics:caret)
+```
 
 **Ryzyko:** Zerowe (nie zmienia kodu, tylko flagi kompilatora).
 **Szansa naprawy:** ~60%.
@@ -159,6 +184,12 @@ cmake -G Ninja -DCMAKE_CXX_COMPILER=clang-cl -DCMAKE_C_COMPILER=clang-cl ...
 
 Opcja B: **Pin na MSVC 14.29.30133** (jedyny alternatywny toolset na runnerze):
 ⚠️ Ryzyko: to toolset VS2019-era, `_MSC_VER=1929` — może nie obsługiwać wszystkich użytych features C++20.
+
+### Krok 2E: Ulepszenia CI (opcjonalnie, z sugestii ChatGPT)
+
+1. **`compile_commands.json`** — dodać `CMAKE_EXPORT_COMPILE_COMMANDS=ON` do CI workflow, aby łatwiej reprodukować pojedyncze TU przy debugowaniu
+2. **Weryfikacja wersji akcji** — upewnić się że `upload-artifact` i inne akcje używają v4 (ChatGPT słusznie zwrócił uwagę na deprecjację v3)
+3. **`/VERBOSE:LIB`** — opcjonalnie do linkera w razie problemów LNK w przyszłości
 
 ---
 

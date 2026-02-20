@@ -3,9 +3,9 @@
   "lang": "ru",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": true,
-      "guard_placeholder": 0,
-      "guard_pipe": 0
+      "ok": false,
+      "guard_placeholder": 2,
+      "guard_pipe": 29
     },
     "guard_command_below_threshold": {
       "ok": true,
@@ -16,13 +16,13 @@
       "ok": true,
       "coverage_pct": 100.0,
       "total_keys": 13769,
-      "real_translations": 13768
+      "real_translations": 13769
     },
     "quality_entry_present": {
       "ok": true,
       "has_quality_data": true
     }
   },
-  "is_done": true,
-  "timestamp": "2026-02-20T22:10:42.022715Z"
+  "is_done": false,
+  "timestamp": "2026-02-20T22:16:57.084075Z"
 }

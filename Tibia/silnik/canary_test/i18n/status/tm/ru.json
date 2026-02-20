@@ -38046,5 +38046,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T19:42:12.418155Z"
+  },
+  "npc.bruno.sendtrade_msg_1": {
+    "src_hash": "f5611466111acf02c50fd70a513700e0",
+    "text": "Купите всю рыбу, которую хотите. Обещано, он свежий и полезный.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:16:56.734397Z"
+  },
+  "npc.bunny_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "Да здравствует королева!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:16:56.740369Z"
+  },
+  "npc.bunny_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "Да здравствует королева!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:16:56.742363Z"
+  },
+  "npc.busty_bonecrusher.farewell_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "Да здравствует королева!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:16:56.742721Z"
+  },
+  "npc.busty_bonecrusher.greet_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "Да здравствует королева!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:16:56.743480Z"
   }
 }

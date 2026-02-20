@@ -1,10 +1,10 @@
 {
   "lang": "es",
-  "coverage_pct": 85.5,
+  "coverage_pct": 85.6,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T21:53:29.487581Z",
+  "checked_at": "2026-02-20T22:18:00.994356Z",
   "issues_total": 517,
   "issues_by_type": {
     "consistency_in_language": 72,
@@ -3615,78 +3615,6 @@
       "lang": "FCHHHHH"
     },
     {
-      "key": "npc.a_dead_bureaucrat1.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye and don't forget me!",
-      "pl": "Do widzenia i nie zapomnij o mnie!",
-      "lang": "Good bye and don't forget me!"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye and don't forget me!",
-      "pl": "Do widzenia i nie zapomnij o mnie!",
-      "lang": "Good bye and don't forget me!"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat2.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye and don't forget me!",
-      "pl": "Do widzenia i nie zapomnij o mnie!",
-      "lang": "Good bye and don't forget me!"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat2.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye and don't forget me!",
-      "pl": "Do widzenia i nie zapomnij o mnie!",
-      "lang": "Good bye and don't forget me!"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat3.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye and don't forget me!",
-      "pl": "Do widzenia i nie zapomnij o mnie!",
-      "lang": "Good bye and don't forget me!"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat3.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye and don't forget me!",
-      "pl": "Do widzenia i nie zapomnij o mnie!",
-      "lang": "Good bye and don't forget me!"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye and don't forget me!",
-      "pl": "Do widzenia i nie zapomnij o mnie!",
-      "lang": "Good bye and don't forget me!"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.walkaway_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye and don't forget me!",
-      "pl": "Do widzenia i nie zapomnij o mnie!",
-      "lang": "Good bye and don't forget me!"
-    },
-    {
       "key": "npc.a_dragon_mother.greet_msg_2",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3721,15 +3649,6 @@
       "en": "Chchch",
       "pl": "Chch",
       "lang": "Chchch"
-    },
-    {
-      "key": "npc.a_ghostly_sage.stdmod_4",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dont mind me.",
-      "pl": "Nie zwracaj na mnie uwagi.",
-      "lang": "Dont mind me."
     },
     {
       "key": "npc.a_majestic_warwolf.say_1",
@@ -4693,6 +4612,87 @@
       "en": "<screeeech> <squeak> <squeaaaaal>",
       "pl": "<skrzyp> <pisk> <przeciągły pisk>",
       "lang": "<screeeech> <squeak> <squeaaaaal>"
+    },
+    {
+      "key": "scripts.blueberry_cupcake.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mmmm.",
+      "pl": "Mmm.",
+      "lang": "Mmmm."
+    },
+    {
+      "key": "scripts.carrot_cake.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mmmm.",
+      "pl": "Mmm.",
+      "lang": "Mmmm."
+    },
+    {
+      "key": "scripts.claw_of_the_noxious_spawn.msg_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You are cursed by The Noxious Spawn!",
+      "pl": "Jesteś przeklęty przez Trującego Pomiotu!",
+      "lang": "You are cursed by The Noxious Spawn!"
+    },
+    {
+      "key": "scripts.creaturescripts_lower_spike_kill.msg_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lower Spike task complete.",
+      "pl": "Zadanie Dolnego Spike'a zakończone.",
+      "lang": "Lower Spike task complete."
+    },
+    {
+      "key": "scripts.creaturescripts_upper_spike_kill.msg_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Upper Spike task complete.",
+      "pl": "Zadanie Górnego Kolca ukończone.",
+      "lang": "Upper Spike task complete."
+    },
+    {
+      "key": "scripts.dawnport.third_step.paladin",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You have received the weapons of a paladin. As a paladin, you can use the following spells: Magic Patch, Arrow Call.",
+      "pl": "Otrzymałeś broń paladyna. Jako paladyn możesz używać następujących zaklęć: Magiczna Łatka, Przywołanie Strzały.",
+      "lang": "You have received the weapons of a paladin. As a paladin, you can use the following spells: Magic Patch, Arrow Call."
+    },
+    {
+      "key": "scripts.dawnport.third_step.sorcerer",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You have received the weapons of a sorcerer. As a sorcerer, you can use the following spells: Magic Patch, Buzz, Scorch.",
+      "pl": "Otrzymałeś broń czarownika. Jako czarodziej możesz używać następujących zaklęć: Magiczna Plama, Buzz, Scorch.",
+      "lang": "You have received the weapons of a sorcerer. As a sorcerer, you can use the following spells: Magic Patch, Buzz, Scorch."
+    },
+    {
+      "key": "scripts.exalted_core.msg_4",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Failed to generate a Soul Core.",
+      "pl": "nieudane do wytwarzać, generować jeden Dusza Core.",
+      "lang": "Failed to generate a Soul Core."
+    },
+    {
+      "key": "scripts.find_fiend.level_trivial",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Trivial",
+      "pl": "Nie znaczący, banalny",
+      "lang": "Trivial"
     }
   ],
   "length_ratio_issues": [

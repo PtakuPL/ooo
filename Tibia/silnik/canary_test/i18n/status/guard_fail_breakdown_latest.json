@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T20:08:05.848720Z",
-  "window_start_utc": "2026-02-20T19:08:05.154469Z",
-  "window_end_utc": "2026-02-20T20:08:05.154469Z",
+  "timestamp": "2026-02-20T20:09:21.617164Z",
+  "window_start_utc": "2026-02-20T19:09:20.927506Z",
+  "window_end_utc": "2026-02-20T20:09:20.927506Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,11 +9,11 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 214,
-  "rejected_entries_raw": 372,
+  "rejected_entries_raw": 368,
   "suspicious_entries": 3675,
-  "suspicious_entries_raw": 24586,
-  "guard_fail_entries": 128,
-  "guard_fail_sum": 5862,
+  "suspicious_entries_raw": 24164,
+  "guard_fail_entries": 126,
+  "guard_fail_sum": 5849,
   "by_type": {
     "identical_to_en": 172,
     "word_salad": 7,
@@ -27,17 +27,17 @@
     "google_translate": 214
   },
   "by_language": {
-    "pl": 43,
-    "it": 41,
     "es": 40,
     "ro": 57,
+    "pl": 43,
+    "it": 41,
     "ru": 22,
     "sv": 11
   },
   "by_category": {
-    "spells.json": 53,
     "npc.json": 4,
     "items.json": 27,
+    "spells.json": 53,
     "quests.json": 3,
     "scripts.json": 6,
     "server.json": 17,
@@ -218,35 +218,35 @@
       }
     },
     {
-      "key": "spell.rotthingholy_ulus.name",
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2
       }
     },
     {
-      "key": "spell.single_ice_chain.name",
+      "key": "spell.makara_watersplash.name",
       "count": 2,
       "types": {
         "identical_to_en": 2
       }
     },
     {
-      "key": "spell.podzillaphys_chain.name",
+      "key": "spell.urmahlullu_ring.name",
       "count": 2,
       "types": {
         "identical_to_en": 2
       }
     },
     {
-      "key": "spell.rotthing_shaper.name",
+      "key": "spell.quara_raider_icering.name",
       "count": 2,
       "types": {
         "identical_to_en": 2
       }
     },
     {
-      "key": "spell.tarbaz_tp.name",
+      "key": "spell.zamulosh_tp.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

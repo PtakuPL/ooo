@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-20T23:32:07.108767Z",
-  "cycle_counter": 6648,
-  "last_target_key": "pl:cpp.json",
-  "last_pending_total": 24,
+  "timestamp": "2026-02-20T23:33:51.805477Z",
+  "cycle_counter": 6651,
+  "last_target_key": "pl:otclient_data.json",
+  "last_pending_total": 3,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 179,
@@ -10,14 +10,14 @@
   "skipped_backoff": 10,
   "skipped_guard_fail": 2,
   "guard_fail_blacklist": {
-    "pl:items.json": 6674,
-    "pl:npc.json": 6666
+    "pl:items.json": 6677,
+    "pl:npc.json": 6669
   },
   "guard_fail_blocked_count": 2,
   "guard_fail_blocked_preview": [
     {
       "target": "pl:items.json",
-      "until_cycle": 6674,
+      "until_cycle": 6677,
       "remaining_cycles": 26,
       "guard_fail_rate": 0.9968,
       "guard_fail": 4077,
@@ -28,7 +28,7 @@
     },
     {
       "target": "pl:npc.json",
-      "until_cycle": 6666,
+      "until_cycle": 6669,
       "remaining_cycles": 18,
       "guard_fail_rate": 0.9337,
       "guard_fail": 2114,
@@ -62,7 +62,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 4,
+  "cache_cycle": 5,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,

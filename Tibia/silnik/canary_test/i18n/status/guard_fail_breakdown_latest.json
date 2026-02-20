@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:52:57.108731Z",
-  "window_start_utc": "2026-02-20T18:52:56.414819Z",
-  "window_end_utc": "2026-02-20T19:52:56.414819Z",
+  "timestamp": "2026-02-20T19:54:06.147719Z",
+  "window_start_utc": "2026-02-20T18:54:05.467026Z",
+  "window_end_utc": "2026-02-20T19:54:05.467026Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -10,10 +10,10 @@
   },
   "rejected_entries": 214,
   "rejected_entries_raw": 350,
-  "suspicious_entries": 3680,
-  "suspicious_entries_raw": 25211,
+  "suspicious_entries": 3685,
+  "suspicious_entries_raw": 25806,
   "guard_fail_entries": 130,
-  "guard_fail_sum": 4034,
+  "guard_fail_sum": 4015,
   "by_type": {
     "identical_to_en": 172,
     "word_salad": 7,
@@ -27,16 +27,16 @@
     "google_translate": 214
   },
   "by_language": {
-    "it": 41,
     "ro": 57,
     "es": 40,
+    "it": 41,
     "pl": 43,
     "ru": 22,
     "sv": 11
   },
   "by_category": {
-    "npc.json": 4,
     "items.json": 27,
+    "npc.json": 4,
     "monsters.json": 26,
     "server.json": 17,
     "spells.json": 53,

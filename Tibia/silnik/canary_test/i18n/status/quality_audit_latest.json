@@ -1,16 +1,14 @@
 {
-  "timestamp": "2026-02-20T16:27:40.351347Z",
+  "timestamp": "2026-02-20T16:30:09.129645Z",
   "checked_entries": 100,
-  "issues_found": 54,
+  "issues_found": 53,
   "issues_by_type": {
-    "identical_to_en_exempt": 5,
-    "artifact_token": 48,
-    "identical_to_en": 6,
-    "suspicious_log_critical": 86,
-    "suspicious_log_medium": 42,
-    "suspicious_log_high": 72,
-    "suspicious_rejected_critical": 156,
-    "suspicious_rejected_high": 44
+    "artifact_token": 53,
+    "identical_to_en_exempt": 2,
+    "suspicious_log_high": 127,
+    "suspicious_log_critical": 73,
+    "suspicious_rejected_high": 54,
+    "suspicious_rejected_critical": 146
   },
   "issues": [
     {
@@ -126,48 +124,6 @@
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
     },
     {
-      "key": "spell.conjure_poisoned_arrow.words",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "exevo con pox",
-      "translated": "exevo con pox"
-    },
-    {
-      "key": "spell.lightest_magic_missile_rune.words",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "adori dis min vis",
-      "translated": "adori dis min vis"
-    },
-    {
-      "key": "spell.great_fireball_rune.words",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "adori mas flam",
-      "translated": "adori mas flam"
-    },
-    {
-      "key": "spell.avalanche_rune.words",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "adori mas frigo",
-      "translated": "adori mas frigo"
-    },
-    {
-      "key": "spell.conjure_piercing_bolt.words",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "exevo con grav",
-      "translated": "exevo con grav"
-    },
-    {
-      "key": "spell.wild_growth_rune.words",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "adevo grav vita",
-      "translated": "adevo grav vita"
-    },
-    {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
       "type": "artifact_token",
@@ -278,6 +234,41 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "monster.shulgrax.voice_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "YOU ARE ALL DAMNED!",
+      "translated": "¡ESTÁIS TODOS MALDITOS!"
+    },
+    {
+      "key": "monster.ferumbras_mortal_shell.voice_4",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "I WILL MAKE ALL OF YOU SUFFER!",
+      "translated": "¡LOS HARÉ SUFRIR A TODOS!"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_4",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "CRUSH THEM ALL!",
+      "translated": "¡¡APLASTADLES A TODOS!!"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_8",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "EVEN WITH ALL THAT TIME IN THE PRISON THAT WEAKENED ME, YOU ARE NO MATCH TO ME!",
+      "translated": "AUN CON TODO ESE TIEMPO EN LA PRISIÓN QUE ME DEBILITÓ, ¡NO ERES COMPATIBLE PARA MÍ!"
+    },
+    {
+      "key": "monster.prince_drazzak.voice_9",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "THEY WILL ALL PAY!",
+      "translated": "¡TODOS PAGARÁN!"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

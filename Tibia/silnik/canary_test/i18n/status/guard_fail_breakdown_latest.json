@@ -1,53 +1,53 @@
 {
-  "timestamp": "2026-02-20T16:27:44.700978Z",
-  "window_start_utc": "2026-02-20T15:27:44.534925Z",
-  "window_end_utc": "2026-02-20T16:27:44.534925Z",
+  "timestamp": "2026-02-20T16:30:13.716685Z",
+  "window_start_utc": "2026-02-20T15:30:13.550943Z",
+  "window_end_utc": "2026-02-20T16:30:13.550943Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 146,
-  "suspicious_entries": 235,
-  "guard_fail_entries": 15,
-  "guard_fail_sum": 1714,
+  "rejected_entries": 181,
+  "suspicious_entries": 803,
+  "guard_fail_entries": 18,
+  "guard_fail_sum": 2638,
   "by_type": {
-    "identical_to_en": 114,
-    "word_salad": 4,
-    "mixed_language": 22,
+    "identical_to_en": 132,
+    "word_salad": 5,
+    "mixed_language": 38,
     "contains_tibia_proper_noun": 10,
     "mixed_scripts": 6,
     "cyrillic_latin_mix": 6
   },
   "by_source": {
-    "google_translate": 146
+    "google_translate": 181
   },
   "by_language": {
-    "es": 22,
+    "es": 24,
     "ro": 61,
     "it": 11,
     "ru": 6,
-    "pl": 46
+    "pl": 79
   },
   "by_category": {
-    "npc.json": 8,
-    "items.json": 55,
+    "npc.json": 10,
+    "items.json": 88,
     "monsters.json": 56,
     "spells.json": 27
   },
   "by_severity": {
-    "CRITICAL": 118,
-    "HIGH": 28
+    "CRITICAL": 137,
+    "HIGH": 44
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 114
+      "count": 132
     },
     {
       "type": "mixed_language",
-      "count": 22
+      "count": 38
     },
     {
       "type": "contains_tibia_proper_noun",
@@ -63,10 +63,24 @@
     },
     {
       "type": "word_salad",
-      "count": 4
+      "count": 5
     }
   ],
   "top_keys": [
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "count": 5,
+      "types": {
+        "identical_to_en": 5
+      }
+    },
+    {
+      "key": "npc.al_dee.stdmod_41",
+      "count": 5,
+      "types": {
+        "word_salad": 5
+      }
+    },
     {
       "key": "monster.sorcerer_familiar.name",
       "count": 5,
@@ -108,17 +122,24 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 4,
+      "key": "item.10388.name",
+      "count": 3,
       "types": {
-        "identical_to_en": 4
+        "identical_to_en": 3
       }
     },
     {
-      "key": "npc.al_dee.stdmod_41",
-      "count": 4,
+      "key": "item.10391.name",
+      "count": 3,
       "types": {
-        "word_salad": 4
+        "identical_to_en": 3
+      }
+    },
+    {
+      "key": "item.10727.name",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
       }
     },
     {
@@ -137,27 +158,6 @@
         "contains_tibia_proper_noun": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "item.10388.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.10391.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.10727.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
       }
     },
     {
@@ -196,31 +196,31 @@
       }
     },
     {
-      "key": "item.10096.name",
-      "count": 1,
+      "key": "item.11515.name",
+      "count": 2,
       "types": {
-        "identical_to_en": 1
+        "identical_to_en": 2
       }
     },
     {
-      "key": "item.10180.name",
-      "count": 1,
+      "key": "item.11808.name",
+      "count": 2,
       "types": {
-        "identical_to_en": 1
+        "identical_to_en": 2
       }
     },
     {
-      "key": "item.10190.name",
-      "count": 1,
+      "key": "item.12576.name",
+      "count": 2,
       "types": {
-        "identical_to_en": 1
+        "identical_to_en": 2
       }
     },
     {
-      "key": "item.10191.name",
-      "count": 1,
+      "key": "item.12577.name",
+      "count": 2,
       "types": {
-        "identical_to_en": 1
+        "identical_to_en": 2
       }
     }
   ]

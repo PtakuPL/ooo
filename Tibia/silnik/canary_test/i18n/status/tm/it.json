@@ -79982,5 +79982,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T20:35:48.462971Z"
+  },
+  "item.45160.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:44:47.931481Z"
+  },
+  "item.464.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "pavimento in legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:44:47.933243Z"
+  },
+  "item.4653.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:44:47.933538Z"
+  },
+  "item.479.name": {
+    "src_hash": "9ee0ca64809ac6f3c4eef93d48904c22",
+    "text": "piastrella in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:44:47.981834Z"
+  },
+  "item.4831.name": {
+    "src_hash": "98e50388df431cb56eb12949e5ac0074",
+    "text": "vecchia pergamena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:44:47.999565Z"
+  },
+  "item.4837.name": {
+    "src_hash": "390b9d5a0b69278a88df6b20792532b5",
+    "text": "Ghiacciolo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:44:48.000279Z"
   }
 }

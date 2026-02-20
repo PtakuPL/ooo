@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-20T20:43:38.376943Z",
+  "timestamp": "2026-02-20T20:44:40.981216Z",
   "version": "statusd-mvp-1.0",
   "worker": {
     "pid": 114825,
-    "heartbeat_at": "2026-02-20T20:42:11Z",
-    "heartbeat_age_s": 87.4,
+    "heartbeat_at": "2026-02-20T20:44:21Z",
+    "heartbeat_age_s": 20.0,
     "cycle": 166,
     "mode": "continuous",
     "category": "?",
@@ -12,10 +12,10 @@
   },
   "guardian": {
     "state": "degraded",
-    "throughput_per_h": 2096.0,
-    "guard_fail_rate_pct": 80.1,
+    "throughput_per_h": 2040.0,
+    "guard_fail_rate_pct": 80.3,
     "issues": [
-      "high_guard_fail_rate (80.1% > 15%)"
+      "high_guard_fail_rate (80.3% > 15%)"
     ]
   },
   "translation_kpi": {
@@ -375,8 +375,8 @@
     "scanned_files_live": 15,
     "scanned_files_history_pct": 67.0,
     "scanned_files_live_pct": 0.2,
-    "files_not_scanned_history": 3172,
-    "files_not_scanned_live": 9600,
+    "files_not_scanned_history": 3171,
+    "files_not_scanned_live": 9599,
     "scanned_files_history_minus_live": 6428,
     "files_migrated": 7,
     "files_in_progress": 0,
@@ -392,7 +392,7 @@
     "npc_total": 1027,
     "npc_migrated": 699,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-02-20T20:43:38.470768Z",
+    "statusd_live_snapshot_at_utc": "2026-02-20T20:44:41.075452Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -1160,7 +1160,7 @@
     "start_cycle": 818,
     "cycle_delta": 5482,
     "started_at": "2026-02-16T22:15:50.792950Z",
-    "active_minutes": 5667.793,
+    "active_minutes": 5668.836,
     "baseline_quality_rate_pct": 228.112,
     "current_quality_rate_pct": 481.163,
     "best_quality_rate_pct": 228.112,

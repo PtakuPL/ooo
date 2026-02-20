@@ -1,8 +1,8 @@
 {
-  "total_cycles": 166,
+  "total_cycles": 167,
   "mode": "AUTO_TRANSLATE",
   "category": "it",
-  "last_update": "2026-02-20T21:44:20.987753",
+  "last_update": "2026-02-20T21:45:06.057087",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,9 +27,9 @@
   },
   "auto_translate": {
     "language": "it",
-    "json_file": "npc.json",
-    "keys_to_translate": 3738,
-    "guard_fail": 0,
+    "json_file": "items.json",
+    "keys_to_translate": 12596,
+    "guard_fail": 10,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T20:44:26.179047Z",
-  "window_start_utc": "2026-02-20T19:44:25.467367Z",
-  "window_end_utc": "2026-02-20T20:44:25.467367Z",
+  "timestamp": "2026-02-20T20:45:10.910654Z",
+  "window_start_utc": "2026-02-20T19:45:10.175598Z",
+  "window_end_utc": "2026-02-20T20:45:10.175598Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,14 +9,14 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 163,
-  "rejected_entries_raw": 412,
+  "rejected_entries_raw": 416,
   "suspicious_entries": 3549,
-  "suspicious_entries_raw": 24371,
-  "guard_fail_entries": 119,
-  "guard_fail_sum": 9620,
+  "suspicious_entries_raw": 27400,
+  "guard_fail_entries": 120,
+  "guard_fail_sum": 9629,
   "by_type": {
-    "identical_to_en": 139,
     "word_salad": 7,
+    "identical_to_en": 139,
     "mixed_language": 7,
     "contains_tibia_proper_noun": 6,
     "mixed_scripts": 7,
@@ -130,13 +130,6 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "item.10388.name",
       "count": 2,
       "types": {
@@ -159,6 +152,13 @@
     },
     {
       "key": "item.13670.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2

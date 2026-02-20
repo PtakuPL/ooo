@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T20:50:27.659150Z",
-  "window_start_utc": "2026-02-20T19:50:26.955460Z",
-  "window_end_utc": "2026-02-20T20:50:26.955460Z",
+  "timestamp": "2026-02-20T20:51:10.431282Z",
+  "window_start_utc": "2026-02-20T19:51:09.719080Z",
+  "window_end_utc": "2026-02-20T20:51:09.719080Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,16 +9,16 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 163,
-  "rejected_entries_raw": 446,
+  "rejected_entries_raw": 429,
   "suspicious_entries": 3548,
-  "suspicious_entries_raw": 25135,
-  "guard_fail_entries": 125,
-  "guard_fail_sum": 8375,
+  "suspicious_entries_raw": 25428,
+  "guard_fail_entries": 126,
+  "guard_fail_sum": 7570,
   "by_type": {
     "identical_to_en": 139,
-    "mixed_language": 7,
     "word_salad": 7,
     "contains_tibia_proper_noun": 6,
+    "mixed_language": 7,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7,
     "fx_token": 3
@@ -27,16 +27,16 @@
     "google_translate": 163
   },
   "by_language": {
-    "pl": 38,
     "es": 39,
     "it": 8,
     "ro": 56,
+    "pl": 38,
     "ru": 7,
     "sv": 15
   },
   "by_category": {
-    "items.json": 27,
     "npc.json": 4,
+    "items.json": 27,
     "monsters.json": 30,
     "server.json": 17,
     "spells.json": 33,
@@ -56,11 +56,11 @@
       "count": 139
     },
     {
-      "type": "mixed_language",
+      "type": "word_salad",
       "count": 7
     },
     {
-      "type": "word_salad",
+      "type": "mixed_language",
       "count": 7
     },
     {
@@ -130,34 +130,6 @@
       }
     },
     {
-      "key": "item.10388.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.10391.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.12742.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.13670.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
@@ -208,6 +180,34 @@
       "types": {
         "identical_to_en": 1,
         "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "item.10388.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.10391.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.12742.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.13670.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
       }
     },
     {

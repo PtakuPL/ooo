@@ -73150,5 +73150,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T21:52:27.587484Z"
+  },
+  "npc.wentworth.say_8": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Chiar ți-ar plăcea să depui {} aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.559394Z"
+  },
+  "npc.willard.farewell_msg_1": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.561609Z"
+  },
+  "npc.willard.walkaway_msg_1": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.562933Z"
+  },
+  "npc.wyda.say_3": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Nu ai nicio prăjitură pe care mi-aș dori.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.569896Z"
+  },
+  "npc.wyrdin.say_10": {
+    "src_hash": "e04607d84a383e8cbb7db9ec770f05da",
+    "text": "Cuvânt greșit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.572495Z"
+  },
+  "npc.xodet.farewell_msg_1": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "La revedere și vino din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.577175Z"
+  },
+  "npc.xodet.say_1": {
+    "src_hash": "b62a0dd738c7bd24999a8405be0ab6de",
+    "text": "Deci îmi ceri un {{}} pentru a-ți începe aventura?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.577956Z"
+  },
+  "npc.xodet.say_2": {
+    "src_hash": "42f4f7cc57059d2b7623f11666f8882b",
+    "text": "Ce? Ți-am dat deja unul {{}}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.578754Z"
+  },
+  "npc.xodet.say_3": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Desigur, răsfoiește-mi produsele. Puteți să vă uitați și la {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.579923Z"
+  },
+  "npc.xodet.walkaway_msg_1": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "La revedere și vino din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.580661Z"
+  },
+  "npc.yaman.multi_2": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, aproape că a sunat ca un cuvânt de salut. Oamenii - drăguți sunt!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.588702Z"
+  },
+  "npc.yaman.say_1": {
+    "src_hash": "17bb78642c4a960215206201b82d1feb",
+    "text": "Îndepărtează-te, micuțo! Oamenii nu sunt bineveniți aici, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.589479Z"
+  },
+  "npc.yaman.say_11": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Nu ai nicio prăjitură pe care mi-aș dori.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.590210Z"
+  },
+  "npc.yaman.say_13": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Bine atunci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.590953Z"
+  },
+  "npc.yaman.say_15": {
+    "src_hash": "63349cb1b00c4debabd768c4b022333a",
+    "text": "Îmi pare rău, dar nu ai permisiunea lui Malor să faci schimb cu mine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.592516Z"
+  },
+  "npc.yberius.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:04:47.598412Z"
   }
 }

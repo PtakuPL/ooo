@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-20T22:03:36.351573Z",
-  "cycle_counter": 6487,
-  "last_target_key": "es:monsters.json",
-  "last_pending_total": 800,
-  "last_tier": 1,
-  "last_cat_priority": 2,
+  "timestamp": "2026-02-20T22:04:39.318301Z",
+  "cycle_counter": 6490,
+  "last_target_key": "ro:npc.json",
+  "last_pending_total": 7534,
+  "last_tier": 2,
+  "last_cat_priority": 0,
   "candidates_count": 181,
   "active_candidates_count": 164,
   "skipped_backoff": 10,
@@ -13,16 +13,16 @@
     "ro:monsters.json": 6492,
     "pl:spells.json": 6495,
     "es:spells.json": 6496,
-    "pl:items.json": 6513,
-    "pl:npc.json": 6506,
-    "es:items.json": 6507,
-    "es:server.json": 6502
+    "pl:items.json": 6516,
+    "pl:npc.json": 6509,
+    "es:items.json": 6510,
+    "es:server.json": 6505
   },
   "guard_fail_blocked_count": 7,
   "guard_fail_blocked_preview": [
     {
       "target": "pl:items.json",
-      "until_cycle": 6513,
+      "until_cycle": 6516,
       "remaining_cycles": 26,
       "guard_fail_rate": 0.9976,
       "guard_fail": 4080,
@@ -33,7 +33,7 @@
     },
     {
       "target": "es:items.json",
-      "until_cycle": 6507,
+      "until_cycle": 6510,
       "remaining_cycles": 20,
       "guard_fail_rate": 0.9646,
       "guard_fail": 2614,
@@ -44,7 +44,7 @@
     },
     {
       "target": "es:server.json",
-      "until_cycle": 6502,
+      "until_cycle": 6505,
       "remaining_cycles": 15,
       "guard_fail_rate": 0.9535,
       "guard_fail": 205,
@@ -55,7 +55,7 @@
     },
     {
       "target": "pl:npc.json",
-      "until_cycle": 6506,
+      "until_cycle": 6509,
       "remaining_cycles": 19,
       "guard_fail_rate": 0.9416,
       "guard_fail": 2420,
@@ -89,7 +89,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 7,
+  "cache_cycle": 8,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -239,7 +239,7 @@
   },
   "bootstrap_forced": false,
   "bootstrap_forced_lang": "",
-  "balance_forced": true,
+  "balance_forced": false,
   "global_quality_mode": true,
   "priority_gate": {
     "enabled": true,

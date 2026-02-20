@@ -1,32 +1,18 @@
 {
-  "timestamp": "2026-02-20T20:47:19.730437Z",
+  "timestamp": "2026-02-20T20:47:57.630186Z",
   "checked_entries": 100,
-  "issues_found": 26,
+  "issues_found": 24,
   "issues_by_type": {
-    "identical_to_en": 10,
-    "identical_to_en_exempt": 8,
+    "identical_to_en": 8,
+    "identical_to_en_exempt": 10,
     "artifact_token": 16,
-    "suspicious_log_critical": 60,
-    "suspicious_log_high": 61,
+    "suspicious_log_critical": 57,
+    "suspicious_log_high": 64,
     "suspicious_log_low": 4,
     "suspicious_rejected_critical": 146,
     "suspicious_rejected_high": 17
   },
   "issues": [
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.water_buffalo.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo"
-    },
     {
       "key": "monster.feverish_citizen.name",
       "lang": "it",

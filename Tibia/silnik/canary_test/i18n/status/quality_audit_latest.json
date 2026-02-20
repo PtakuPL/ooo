@@ -1,39 +1,18 @@
 {
-  "timestamp": "2026-02-20T21:20:27.368585Z",
+  "timestamp": "2026-02-20T21:21:14.148291Z",
   "checked_entries": 100,
-  "issues_found": 32,
+  "issues_found": 29,
   "issues_by_type": {
-    "artifact_token": 20,
-    "identical_to_en_exempt": 25,
+    "identical_to_en_exempt": 26,
+    "artifact_token": 17,
     "identical_to_en": 12,
-    "suspicious_log_high": 39,
-    "suspicious_log_critical": 59,
-    "suspicious_log_low": 28,
-    "suspicious_rejected_critical": 68,
+    "suspicious_log_critical": 64,
+    "suspicious_log_high": 55,
+    "suspicious_log_low": 4,
+    "suspicious_rejected_critical": 75,
     "suspicious_rejected_high": 2
   },
   "issues": [
-    {
-      "key": "npc.raymond_striker.multi_21",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
-    },
-    {
-      "key": "npc.sane_mage.multi_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "scripts.auto_loot.msg_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "Autoloot mode set to ALL.",
-      "translated": "Modo de autoloot establecido a TODO."
-    },
     {
       "key": "scripts.prince_drazzak_summon.say_1",
       "lang": "es",

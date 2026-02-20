@@ -80270,5 +80270,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T21:14:51.817245Z"
+  },
+  "data.otservbr.global.npc.iskan.L55.1279": {
+    "src_hash": "8c2be15f64087050fb51f57fae545b95",
+    "text": "Non sei uno di noi. Non voglio parlare con te.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.976189Z"
+  },
+  "data.otservbr.global.npc.iskan.L57.1280": {
+    "src_hash": "983337edfc377e32a812a0a308132a5f",
+    "text": "Mi è stato detto che hai ucciso degli husky qui nel Svargrond! Non farlo mai più, ok? Per noi sono animali preziosi. Datemi 500 monete d'oro e dimenticherò quell'incidente senza dirlo allo Jarl Sven. Va bene?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.977502Z"
+  },
+  "data.otservbr.global.npc.iskan.L59.1281": {
+    "src_hash": "3ac39dbfcbd7770977fff7c140ac7c6a",
+    "text": "SALUTE al Signore della Guerra dell'arena! |PLAYERNAME|, Eroe di Svargrond! Cosa posso {do for you}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.978161Z"
+  },
+  "data.otservbr.global.npc.iskan.L61.1282": {
+    "src_hash": "1f70c3044c3ea23a982b1dd0d61fc964",
+    "text": "Saluti. Cosa posso {do for you}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.978629Z"
+  },
+  "data.otservbr.global.npc.ivalisse.L124.1119": {
+    "src_hash": "f0b27be99dc5c8311301ee5fe06d8f6a",
+    "text": "Ciao, adoratore dei Plasmatori Astrali! Benvenuti al tempio! Mentre sei qui per rendere omaggio, puoi anche imparare qualcosa sull'antica arte dell'infusione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.979378Z"
+  },
+  "data.otservbr.global.npc.iwan.L59.1266": {
+    "src_hash": "9ad6d2c4dbecd894e37fc099d0032119",
+    "text": "Sentiti benvenuto nel mio negozio di gemme, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.980216Z"
+  },
+  "data.otservbr.global.npc.iwan.L62.1269": {
+    "src_hash": "a111fe36589436cf7fadd2cbb749f9eb",
+    "text": "Ecco, dai un'occhiata.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.980676Z"
+  },
+  "data.otservbr.global.npc.iyad.L107.746": {
+    "src_hash": "df894e47fdb48b4f587d24a4d645c85c",
+    "text": "Finalmente! Un c...c...cliente! Dove... dove vuoi c...f...{fly}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.981569Z"
+  },
+  "data.otservbr.global.npc.iyad.L108.747": {
+    "src_hash": "8e0f4300a9c29375ccb4d379315755a4",
+    "text": "D...le benedizioni di Daraman... oh, quanto mi...mi manca il mio caldo Darashia...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.982143Z"
+  },
+  "data.otservbr.global.npc.izsh.L81.1012": {
+    "src_hash": "c542b54bc235472581e51599db1d2bb5",
+    "text": "Salutoz zcalelezz essere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.982681Z"
+  },
+  "data.otservbr.global.npc.jack.L67.1251": {
+    "src_hash": "4e2dd6d8a79d10c357123bcd4d0e66c3",
+    "text": "Voi!! Cos'hai detto alla mia famiglia? Sono arrabbiati con me e non so nemmeno perché! Pensano che io abbia mentito dicendo che lavoravo in Edron in segreto! Perché dovrei farlo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.983733Z"
+  },
+  "data.otservbr.global.npc.jack.L75.1252": {
+    "src_hash": "5ae62e2362c88f90c7477b5d525bc5a4",
+    "text": "Quindi sei tornato su Spectulus? Cosa ha detto, c'è qualcosa che non va? Hai questa strana espressione sul viso: c'è qualcosa che non va? Mi hai detto la verità qui, vero?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.984604Z"
+  },
+  "data.otservbr.global.npc.jack.L77.1253": {
+    "src_hash": "88343b5b53d91f0b3358fbbee649c61f",
+    "text": "SÌ? Cosa posso fare per lei? Spero che non ci vorrà molto, però.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.985133Z"
+  },
+  "data.otservbr.global.npc.jack.drone.L62.505": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Arrivederci. Consigliateci se siete rimasti soddisfatti del nostro servizio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.985664Z"
+  },
+  "data.otservbr.global.npc.jack.fate.L109.733": {
+    "src_hash": "8a3a57974c1e5d4b3e4a66585fd49c38",
+    "text": "Benvenuto a bordo, Signore |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.986440Z"
+  },
+  "data.otservbr.global.npc.jack.fate.L110.734": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Arrivederci. Consigliateci se siete rimasti soddisfatti del nostro servizio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.986892Z"
+  },
+  "data.otservbr.global.npc.jack.springer.L202.393": {
+    "src_hash": "e57480eee7b28c757d6b774410c1bce2",
+    "text": "Naturalmente, amico mio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:20:48.988108Z"
   }
 }

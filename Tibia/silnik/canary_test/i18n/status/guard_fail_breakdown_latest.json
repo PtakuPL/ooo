@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T21:20:32.151317Z",
-  "window_start_utc": "2026-02-20T20:20:31.457263Z",
-  "window_end_utc": "2026-02-20T21:20:31.457263Z",
+  "timestamp": "2026-02-20T21:21:19.039199Z",
+  "window_start_utc": "2026-02-20T20:21:18.301511Z",
+  "window_end_utc": "2026-02-20T21:21:18.301511Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,11 +9,11 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 164,
-  "rejected_entries_raw": 410,
-  "suspicious_entries": 3015,
-  "suspicious_entries_raw": 25187,
+  "rejected_entries_raw": 412,
+  "suspicious_entries": 3080,
+  "suspicious_entries_raw": 25095,
   "guard_fail_entries": 129,
-  "guard_fail_sum": 3319,
+  "guard_fail_sum": 3334,
   "by_type": {
     "identical_to_en": 140,
     "word_salad": 7,
@@ -27,15 +27,14 @@
     "google_translate": 164
   },
   "by_language": {
-    "ro": 56,
     "es": 40,
+    "ro": 56,
     "pl": 38,
     "ru": 7,
     "it": 8,
     "sv": 15
   },
   "by_category": {
-    "items.json": 28,
     "npc.json": 4,
     "monsters.json": 30,
     "spells.json": 33,
@@ -44,7 +43,8 @@
     "server.json": 17,
     "books.json": 1,
     "otclient_modules.json": 30,
-    "client.json": 4
+    "client.json": 4,
+    "items.json": 28
   },
   "by_severity": {
     "CRITICAL": 147,

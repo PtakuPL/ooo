@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T21:20:31.197104Z",
+  "timestamp": "2026-02-20T21:21:18.029466Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -235,8 +235,8 @@
   ],
   "cache_hits": 50,
   "cache_misses": 2,
-  "file_cache_hits": 1973,
-  "file_cache_misses": 3,
+  "file_cache_hits": 1974,
+  "file_cache_misses": 2,
   "langs": {
     "ar": {
       "sig": [
@@ -16095,8 +16095,8 @@
         [
           "server.json",
           1,
-          1771619278791888563,
-          299906
+          1771622449198042911,
+          299889
         ],
         [
           "spells.json",
@@ -16134,14 +16134,14 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 28067,
+        "translated_keys": 28084,
         "english_copy_keys": 2142,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 52.38,
+        "completion_pct": 52.41,
         "server_keys": 49731,
-        "server_translated": 26704,
-        "server_pct": 53.7,
+        "server_translated": 26721,
+        "server_pct": 53.73,
         "client_keys": 3855,
         "client_translated": 1363,
         "client_pct": 35.36
@@ -16598,12 +16598,12 @@
         "server.json": {
           "sig": [
             1,
-            1771619278791888563,
-            299906
+            1771622449198042911,
+            299889
           ],
           "row": {
             "total_reference_keys": 2574,
-            "translated_keys": 1246,
+            "translated_keys": 1263,
             "english_copy_keys": 105,
             "missing_keys": 0,
             "missing_files": 0
@@ -27057,7 +27057,7 @@
         [
           "server.json",
           1,
-          1771619302211180552,
+          1771622472844006261,
           300494
         ],
         [
@@ -27560,7 +27560,7 @@
         "server.json": {
           "sig": [
             1,
-            1771619302211180552,
+            1771622472844006261,
             300494
           ],
           "row": {
@@ -27840,7 +27840,7 @@
         [
           "server.json",
           1,
-          1771619283541926228,
+          1771622454137059192,
           368337
         ],
         [
@@ -28343,7 +28343,7 @@
         "server.json": {
           "sig": [
             1,
-            1771619283541926228,
+            1771622454137059192,
             368337
           ],
           "row": {

@@ -72894,5 +72894,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T21:34:46.859541Z"
+  },
+  "npc.uzon_back.keyword_1": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Stai!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.645794Z"
+  },
+  "npc.uzon_back.stdmod_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Simte vântul în părul tău în timpul uneia dintre plimbările mele pe covor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.646326Z"
+  },
+  "npc.uzon_back.stdmod_2": {
+    "src_hash": "065a3336d2940946dccb9d6a186f5671",
+    "text": "N-am auzit niciodată de un loc ca acesta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.646741Z"
+  },
+  "npc.uzon_back.stdmod_3": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Stai!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.647071Z"
+  },
+  "npc.uzon_back.stdmod_4": {
+    "src_hash": "8f3b71da455041c184184618a35b40fb",
+    "text": "Nu trebuie să ratezi experiența.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.647466Z"
+  },
+  "npc.uzon_back.voice_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Simte vântul în părul tău în timpul uneia dintre plimbările mele pe covor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.648199Z"
+  },
+  "npc.vanys.say_14": {
+    "src_hash": "c066542c456632337339c67bf887b0a8",
+    "text": "Scuze, nu am inteles.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.651135Z"
+  },
+  "npc.vera.voice_1": {
+    "src_hash": "1fa395c2991033dc8cbf3014b1df5c4a",
+    "text": "Te-ai mutat într-o casă nouă? Sunt specialistul în dotarea lui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.657844Z"
+  },
+  "npc.wentworth.say_10": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sigur doriți să retrageți {} aur din contul dvs. bancar?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.666456Z"
+  },
+  "npc.wentworth.say_11": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sigur doriți să retrageți {} aur din contul dvs. bancar?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.666947Z"
+  },
+  "npc.wentworth.say_17": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Nu există suficient aur în contul tău.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.667682Z"
+  },
+  "npc.wentworth.say_18": {
+    "src_hash": "2dd1c8bc6a1cf4797d74f6efeb2f2429",
+    "text": "Nu există suficient aur în contul tău.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.668093Z"
+  },
+  "npc.wentworth.say_19": {
+    "src_hash": "d7abe0eeef508371909784d9060571e5",
+    "text": "Clientul este rege! Reveniți oricând doriți dacă doriți să vă {withdraw} banii.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.668748Z"
+  },
+  "npc.wentworth.say_20": {
+    "src_hash": "93dd2b6294a6e03a0a33654fc2251a7e",
+    "text": "Câte monede de platină ai vrea să obții?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.669227Z"
+  },
+  "npc.wentworth.say_21": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Ne pare rău, nu aveți suficiente monede de aur.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.669652Z"
+  },
+  "npc.wentworth.say_23": {
+    "src_hash": "adfb4adffb543c857e3b2b781c94b58f",
+    "text": "Ne pare rău, nu aveți suficiente monede de aur.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:43:43.670395Z"
   }
 }

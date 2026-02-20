@@ -154262,5 +154262,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T21:40:26.132964Z"
+  },
+  "item.14762.desc": {
+    "src_hash": "55ce058c7a749973063cc5fdd638a4be",
+    "text": "Ves una calavera de medusa. Las serpientes de su pelo siguen vivas. Otorgado sólo en TibiaPic.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:00:00.355900Z"
+  },
+  "item.14764.desc": {
+    "src_hash": "e6f3678bbce3298334d4182492017162",
+    "text": "Los más poderosos. El único. Dios de todos los enanos. Otorgado por Tibia Bariloche",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:00:00.356720Z"
+  },
+  "item.14766.desc": {
+    "src_hash": "75210bdf6b2dabcc0573513ac7c67a22",
+    "text": "Este maravilloso escudo fue diseñado para GuildStats.eu, para honrar a todos los gremios en Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:00:00.357510Z"
+  },
+  "item.14949.name": {
+    "src_hash": "d00e58749aefb83316ee139d4925de67",
+    "text": "grupo de cristales verdes",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:00:00.357861Z"
+  },
+  "item.14955.name": {
+    "src_hash": "9f35b30b0e122e9e91ba0c41ba38eb03",
+    "text": "grupo de cristales azules",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:00:03.893076Z"
+  },
+  "item.14961.name": {
+    "src_hash": "14cf626b52792637613254f7a16987ec",
+    "text": "grupo de cristales rojos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:00:03.893359Z"
+  },
+  "item.15276.desc": {
+    "src_hash": "66fdfbe414a7f182fff9d4d395cd27dc",
+    "text": "Este trofeo fue otorgado en honor a los mejores arquitectos de Tibia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:00:03.893944Z"
   }
 }

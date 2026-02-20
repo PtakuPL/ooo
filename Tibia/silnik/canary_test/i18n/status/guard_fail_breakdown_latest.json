@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T21:59:00.054884Z",
-  "window_start_utc": "2026-02-20T20:58:59.315648Z",
-  "window_end_utc": "2026-02-20T21:58:59.315648Z",
+  "timestamp": "2026-02-20T22:01:20.723351Z",
+  "window_start_utc": "2026-02-20T21:01:19.572781Z",
+  "window_end_utc": "2026-02-20T22:01:19.572781Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,15 +9,15 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 170,
-  "rejected_entries_raw": 368,
-  "suspicious_entries": 3571,
-  "suspicious_entries_raw": 25263,
-  "guard_fail_entries": 121,
-  "guard_fail_sum": 7047,
+  "rejected_entries_raw": 373,
+  "suspicious_entries": 3575,
+  "suspicious_entries_raw": 26457,
+  "guard_fail_entries": 123,
+  "guard_fail_sum": 8055,
   "by_type": {
     "identical_to_en": 149,
-    "word_salad": 7,
     "contains_tibia_proper_noun": 7,
+    "word_salad": 7,
     "mixed_language": 7,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7
@@ -34,9 +34,9 @@
     "sv": 15
   },
   "by_category": {
+    "monsters.json": 30,
     "items.json": 28,
     "npc.json": 4,
-    "monsters.json": 30,
     "spells.json": 33,
     "quests.json": 3,
     "scripts.json": 14,
@@ -56,11 +56,11 @@
       "count": 149
     },
     {
-      "type": "word_salad",
+      "type": "contains_tibia_proper_noun",
       "count": 7
     },
     {
-      "type": "contains_tibia_proper_noun",
+      "type": "word_salad",
       "count": 7
     },
     {
@@ -123,13 +123,6 @@
         "contains_tibia_proper_noun": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
       }
     },
     {
@@ -201,6 +194,13 @@
     },
     {
       "key": "item.13670.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2

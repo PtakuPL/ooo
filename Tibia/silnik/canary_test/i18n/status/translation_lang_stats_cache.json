@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T21:58:58.793489Z",
+  "timestamp": "2026-02-20T22:01:19.090865Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -7368,8 +7368,8 @@
         [
           "items.json",
           1,
-          1771623626162416870,
-          894540
+          1771624803924257084,
+          894550
         ],
         [
           "libs.json",
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771624663673231401,
+          1771624869261242965,
           1847374
         ],
         [
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 45478,
+        "translated_keys": 45485,
         "english_copy_keys": 2160,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 84.87,
+        "completion_pct": 84.88,
         "server_keys": 49731,
-        "server_translated": 42412,
-        "server_pct": 85.28,
+        "server_translated": 42419,
+        "server_pct": 85.3,
         "client_keys": 3855,
         "client_translated": 3066,
         "client_pct": 79.53
@@ -7719,12 +7719,12 @@
         "items.json": {
           "sig": [
             1,
-            1771623626162416870,
-            894540
+            1771624803924257084,
+            894550
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 14039,
+            "translated_keys": 14046,
             "english_copy_keys": 78,
             "missing_keys": 0,
             "missing_files": 0
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771624663673231401,
+            1771624869261242965,
             1847374
           ],
           "row": {
@@ -25419,7 +25419,7 @@
         [
           "npc.json",
           1,
-          1771624070931230991,
+          1771624772131303415,
           1865789
         ],
         [
@@ -25826,7 +25826,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771624070931230991,
+            1771624772131303415,
             1865789
           ],
           "row": {

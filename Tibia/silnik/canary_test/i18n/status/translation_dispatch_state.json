@@ -1,26 +1,28 @@
 {
-  "timestamp": "2026-02-20T21:58:54.299793Z",
-  "cycle_counter": 6479,
-  "last_target_key": "es:items.json",
-  "last_pending_total": 3018,
+  "timestamp": "2026-02-20T22:00:07.279822Z",
+  "cycle_counter": 6482,
+  "last_target_key": "es:npc.json",
+  "last_pending_total": 2355,
   "last_tier": 1,
-  "last_cat_priority": 0,
+  "last_cat_priority": 1,
   "candidates_count": 181,
-  "active_candidates_count": 166,
+  "active_candidates_count": 164,
   "skipped_backoff": 10,
-  "skipped_guard_fail": 5,
+  "skipped_guard_fail": 7,
   "guard_fail_blacklist": {
-    "ro:monsters.json": 6489,
-    "pl:spells.json": 6489,
+    "ro:monsters.json": 6492,
+    "pl:spells.json": 6492,
     "es:server.json": 6485,
-    "es:spells.json": 6489,
-    "pl:items.json": 6505
+    "es:spells.json": 6492,
+    "pl:items.json": 6508,
+    "pl:npc.json": 6501,
+    "es:items.json": 6502
   },
-  "guard_fail_blocked_count": 5,
+  "guard_fail_blocked_count": 7,
   "guard_fail_blocked_preview": [
     {
       "target": "pl:items.json",
-      "until_cycle": 6505,
+      "until_cycle": 6508,
       "remaining_cycles": 26,
       "guard_fail_rate": 0.9976,
       "guard_fail": 4080,
@@ -31,7 +33,7 @@
     },
     {
       "target": "pl:spells.json",
-      "until_cycle": 6489,
+      "until_cycle": 6492,
       "remaining_cycles": 10,
       "guard_fail_rate": 0.9667,
       "guard_fail": 145,
@@ -41,8 +43,30 @@
       "hard_block": false
     },
     {
+      "target": "es:items.json",
+      "until_cycle": 6502,
+      "remaining_cycles": 20,
+      "guard_fail_rate": 0.9646,
+      "guard_fail": 2614,
+      "translated": 96,
+      "entries": 5,
+      "dominant_reason": "default",
+      "hard_block": false
+    },
+    {
+      "target": "pl:npc.json",
+      "until_cycle": 6501,
+      "remaining_cycles": 19,
+      "guard_fail_rate": 0.9416,
+      "guard_fail": 2420,
+      "translated": 150,
+      "entries": 5,
+      "dominant_reason": "default",
+      "hard_block": false
+    },
+    {
       "target": "es:spells.json",
-      "until_cycle": 6489,
+      "until_cycle": 6492,
       "remaining_cycles": 10,
       "guard_fail_rate": 0.9333,
       "guard_fail": 140,
@@ -53,7 +77,7 @@
     },
     {
       "target": "ro:monsters.json",
-      "until_cycle": 6489,
+      "until_cycle": 6492,
       "remaining_cycles": 10,
       "guard_fail_rate": 0.8667,
       "guard_fail": 130,
@@ -87,7 +111,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 4,
+  "cache_cycle": 5,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,

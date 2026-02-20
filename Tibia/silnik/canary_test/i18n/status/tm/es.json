@@ -154694,5 +154694,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:22:47.758746Z"
+  },
+  "item.15699.name": {
+    "src_hash": "64e21a1e9f3d56203337730f1ab24547",
+    "text": "un poco de fertilizante de hongos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:45:37.201236Z"
+  },
+  "item.15703.name": {
+    "src_hash": "e03f782c285cb1749aec8258eaecb0cd",
+    "text": "cristal de reparación gnomo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:45:37.201681Z"
+  },
+  "item.15802.name": {
+    "src_hash": "6b90ae6702b9836ddf729382b3308ed3",
+    "text": "paquete de cristal gnómico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:45:37.202095Z"
+  },
+  "item.15817.desc": {
+    "src_hash": "85c7ef7f6a17d9e060bc0182323c8d83",
+    "text": "Está vacío. Reúne algunas esporas ROJAS",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:45:37.202650Z"
+  },
+  "item.15817.name": {
+    "src_hash": "ef15f8554948e731a1044dbcf7347090",
+    "text": "recolector de esporas gnomo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:45:40.063579Z"
+  },
+  "item.15818.desc": {
+    "src_hash": "de6402e7310054867bd91403eaf4018a",
+    "text": "Contiene esporas rojas. Reúne algunas esporas VERDES",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:45:40.064142Z"
   }
 }

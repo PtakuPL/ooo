@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-20T23:41:47.871489Z",
-  "last_cycle": 1,
+  "timestamp": "2026-02-20T23:46:47.545806Z",
+  "last_cycle": 2,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -803,6 +803,28 @@
       "talkaction.gm.kick.msg_cannot_kick",
       "talkaction.gm.push_creature.msg_cannot_teleport",
       "talkaction.god.money.msg_failed"
+    ],
+    "pl|talkactions.json": [],
+    "es|items.json": [
+      "item.15699.name",
+      "item.15703.name",
+      "item.15802.name",
+      "item.15817.desc",
+      "item.15817.name",
+      "item.15818.desc",
+      "item.173.desc",
+      "item.19103.name",
+      "item.19104.name",
+      "item.19105.name",
+      "item.19106.name",
+      "item.21393.desc",
+      "item.21875.name",
+      "item.30352.name",
+      "item.30353.name",
+      "item.30354.name",
+      "item.30355.name",
+      "item.31709.name",
+      "item.32726.name"
     ]
   }
 }

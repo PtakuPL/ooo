@@ -35774,5 +35774,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T20:22:49.541216Z"
+  },
+  "npc.queen_eloise.stdmod_3": {
+    "src_hash": "a58748e248a0a19dfaa510c40513daad",
+    "text": "Okej då, kom tillbaka när du är redo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.131111Z"
+  },
+  "npc.queen_eloise.walkaway_msg_1": {
+    "src_hash": "f2fb8fae97707ee162c0df0618bb26f0",
+    "text": "Farväl, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.132577Z"
+  },
+  "npc.quentin.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.133472Z"
+  },
+  "npc.quentin.stdmod_10": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Håll din äventyrarsten väl.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.133862Z"
+  },
+  "npc.quentin.stdmod_11": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vill du byta ut din äventyrarsten gratis?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.134304Z"
+  },
+  "npc.quentin.stdmod_12": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.134767Z"
+  },
+  "npc.quentin.stdmod_14": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vill du byta ut din äventyrarsten mot 30 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.135425Z"
+  },
+  "npc.quentin.stdmod_15": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.135791Z"
+  },
+  "npc.quentin.stdmod_16": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Tyvärr, du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.136180Z"
+  },
+  "npc.quentin.stdmod_18": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Du är sårad, mitt barn. Jag ska läka dina sår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.136903Z"
+  },
+  "npc.quentin.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Du ser inte så illa ut. Tyvärr, jag kan inte hjälpa dig. Men om du letar efter ytterligare skydd bör du gå på {pilgrimage} av aska eller få skyddet av {twist of fate} här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.137723Z"
+  },
+  "npc.quentin.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Närhelst du får ett dödligt sår skadas din livskraft och det finns en chans att du tappar bort en del av din utrustning. Med varenda av de fem {blessings} du har kommer denna skada och risken för förlust att minska.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.138680Z"
+  },
+  "npc.quentin.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Jag ser att du fick den andliga avskärmningen i det vita blomtemplet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.139449Z"
+  },
+  "npc.quentin.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Jag kan ana att druiderna norr om Carlin har försett dig med omfamningen Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.139976Z"
+  },
+  "npc.quentin.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Jag kan se att du fick välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.140554Z"
+  },
+  "npc.quentin.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Jag kan ana att gnistan från Fenix ​​redan gavs till dig av dvärgprästerna av jord och eld i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:46:50.141308Z"
   }
 }

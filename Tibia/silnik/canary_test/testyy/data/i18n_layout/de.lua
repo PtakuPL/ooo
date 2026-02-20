@@ -1,0 +1,33 @@
+-- ============================================================================
+-- I18N Layout Overrides — German (de)
+-- ============================================================================
+-- German translations tend to be 30-60% longer than English.
+-- This file provides widget size overrides for German locale.
+--
+-- Format:
+--   ["module_path/otui_file_without_ext"] = {
+--       ["widget_id"] = { ["property"] = value, ... },
+--   }
+--
+-- Supported properties:
+--   width, height, min-width, max-width, min-height, max-height,
+--   text-horizontal-auto-resize (true/false),
+--   text-auto-resize (true/false),
+--   font-scale (float)
+--
+-- To generate initial values, run in game console:
+--   i18nLayout.measureLanguage("de")
+-- ============================================================================
+
+return {
+    -- Example overrides (uncomment and adjust as needed):
+    --
+    -- ["client_entergame/entergame"] = {
+    --     ["serverListButton"] = { ["min-width"] = 150 },
+    --     ["btnCreateNewAccount"] = { ["min-width"] = 160 },
+    -- },
+    --
+    -- ["game_blessing/style"] = {
+    --     ["blessingBuyButton"] = { ["min-width"] = 100 },
+    -- },
+}

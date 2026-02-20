@@ -82078,5 +82078,141 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-20T23:50:25.621327Z"
+  },
+  "data.otservbr.global.npc.karith.L64.599": {
+    "src_hash": "5b7b0861f756c38e7680922d5c9546bd",
+    "text": "Ciao! Dimmi cosa hai in mente. Il tempo è denaro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.848770Z"
+  },
+  "data.otservbr.global.npc.karith.L67.600": {
+    "src_hash": "5b7b0861f756c38e7680922d5c9546bd",
+    "text": "Ciao! Dimmi cosa hai in mente. Il tempo è denaro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.849333Z"
+  },
+  "data.otservbr.global.npc.karl.L96.1575": {
+    "src_hash": "612c4b8e3ab4ee16596f3c54e6b74fbc",
+    "text": "Per favore torna, ma non dirlo agli altri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.849935Z"
+  },
+  "data.otservbr.global.npc.karl.L97.1576": {
+    "src_hash": "612c4b8e3ab4ee16596f3c54e6b74fbc",
+    "text": "Per favore torna, ma non dirlo agli altri.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.850383Z"
+  },
+  "data.otservbr.global.npc.karl.L98.1577": {
+    "src_hash": "bf9e79d102569a312ea94c4c585bb77a",
+    "text": "Pshhhht! Non così forte... ma benvenuto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.850818Z"
+  },
+  "data.otservbr.global.npc.kawill.L88.276": {
+    "src_hash": "375da4c35e8737bfec27241f35bb623c",
+    "text": "Benvenuto |PLAYERNAME|! Che la terra ti protegga!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.852755Z"
+  },
+  "data.otservbr.global.npc.kawill.L89.277": {
+    "src_hash": "8473fa332d7c87ddbb8eca4e3970bde6",
+    "text": "Terra sotto i tuoi piedi, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.853231Z"
+  },
+  "data.otservbr.global.npc.kawill.L90.278": {
+    "src_hash": "0e7c9ac6d5d333fc3f7d39ef117dc3ee",
+    "text": "Terra sotto i tuoi piedi, pellegrino. Cosa ti porta qui?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.853751Z"
+  },
+  "data.otservbr.global.npc.kaya.L76.384": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.854323Z"
+  },
+  "data.otservbr.global.npc.kendra.L83.1057": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Arrivederci. Consigliateci se siete rimasti soddisfatti del nostro servizio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.855700Z"
+  },
+  "data.otservbr.global.npc.kendra.thais.L84.1068": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Arrivederci. Consigliateci se siete rimasti soddisfatti del nostro servizio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.856664Z"
+  },
+  "data.otservbr.global.npc.kepar.L76.1256": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.857402Z"
+  },
+  "data.otservbr.global.npc.king.tibianus.L453.339": {
+    "src_hash": "6fc6fd5473a14ef5faf70b62c9e91b34",
+    "text": "Che scortesia!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.858709Z"
+  },
+  "data.otservbr.global.npc.klaus.L85.424": {
+    "src_hash": "2e3719b37ce682a6f5e621aa9c414bbf",
+    "text": "Oh amico.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.860383Z"
+  },
+  "data.otservbr.global.npc.klaus.L86.425": {
+    "src_hash": "49a8ec2cd2ac4e80af62824803c36fcf",
+    "text": "Ogni volta che hai la gola secca, sai dove trovare la mia taverna.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.860874Z"
+  },
+  "data.otservbr.global.npc.lailene.L55.309": {
+    "src_hash": "a21aa717d510ec030be90be63a987599",
+    "text": "Cosa vuoi nel mio negozio di abiti magici? Dubito di avere qualcosa che ti possa interessare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.863165Z"
+  },
+  "data.otservbr.global.npc.lailene.L56.310": {
+    "src_hash": "5cc6d07cc263deba83a86192ba6e33b2",
+    "text": "Ci vediamo, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:55:51.863553Z"
   }
 }

@@ -81406,5 +81406,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:53:49.818751Z"
+  },
+  "channel.english_chat.name": {
+    "src_hash": "515fd5aa44f6e45f69e03b4f44dabab1",
+    "text": "Chiacchierata inglese",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:41.051126Z"
+  },
+  "channel.guild_leaders.name": {
+    "src_hash": "3def53d49094d463e5369c3f5576a0e6",
+    "text": "Guild Leader",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:41.051566Z"
+  },
+  "channel.advertising_rook.name": {
+    "src_hash": "6e05c72924bf27b2c2c23c64f7e6ca96",
+    "text": "Pubblicità-Rook",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:41.051935Z"
+  },
+  "channel.advertising.name": {
+    "src_hash": "2ce5fc289845ce826261032b9c6749ea",
+    "text": "Pubblicità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:41.052134Z"
+  },
+  "channel.msg_level1_mute": {
+    "src_hash": "60cff1bb0af9c44cc2798270598f2231",
+    "text": "Non puoi parlare nei canali finché sei al livello 1.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:41.052652Z"
+  },
+  "channel.msg_level20_premium": {
+    "src_hash": "8d277f5e9ab42a07de4de61d1f4c5a3f",
+    "text": "Non puoi parlare in questo canale a meno che tu non abbia raggiunto il livello 20 o il tuo account non abbia lo stato premium.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:48.293704Z"
+  },
+  "channel.msg_offer_cooldown": {
+    "src_hash": "850dc62722e516f33bd9915c0ac08fa8",
+    "text": "Puoi inserire una sola offerta in due minuti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:48.294068Z"
+  },
+  "channel.help.msg_muted": {
+    "src_hash": "99fb9d2c297fb6561e7cee65ff71fd4e",
+    "text": "Sei stato escluso dal canale di Aiuto per averlo utilizzato in modo inappropriato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:48.294467Z"
+  },
+  "channel.help.msg_already_muted": {
+    "src_hash": "756a962fefacb7282d9681a0e8220ab8",
+    "text": "Quel giocatore è già disattivato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:48.294788Z"
+  },
+  "channel.help.msg_not_authorized_mute": {
+    "src_hash": "7773df780960ad9f5aa126dff312d97d",
+    "text": "Non sei autorizzato a silenziare quel giocatore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:48.295208Z"
+  },
+  "channel.help.msg_not_muted": {
+    "src_hash": "737678bc7d81e88b098a1a997b648112",
+    "text": "Quel giocatore non è disattivato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:52.157378Z"
+  },
+  "channel.help.msg_not_authorized_unmute": {
+    "src_hash": "dfe2ef952f5b988aa6ea18aa6c48a763",
+    "text": "Non sei autorizzato a riattivare l'audio di quel giocatore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:52.157798Z"
   }
 }

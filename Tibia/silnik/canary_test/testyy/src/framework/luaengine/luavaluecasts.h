@@ -29,6 +29,7 @@
 #include <framework/platform/platform.h>
 
 #include <set>
+#include <utility>
 
 template<typename T>
 int push_internal_luavalue(T v);
@@ -584,54 +585,42 @@ bool luavalue_cast(const int index, std::pair<K, V>& pair)
     return false;
 }
 
-template<int N>
-struct push_tuple_internal_luavalue
+/// Push tuple elements into a Lua table using fold expression (non-recursive).
+/// Original recursive push_tuple_internal_luavalue<N> replaced to avoid deep
+/// template instantiation that can trigger MSVC ICE C1001.
+template<typename Tuple, std::size_t... I>
+void push_tuple_internal_luavalue_impl(const Tuple& tuple, std::index_sequence<I...>)
 {
-    template<typename Tuple>
-    static void call(const Tuple& tuple)
-    {
-        push_internal_luavalue(std::get<N - 1>(tuple));
-        g_lua.rawSeti(N);
-        push_tuple_internal_luavalue<N - 1>::call(tuple);
+    // Push elements in reverse order (N-1 down to 0) to match original behavior.
+    // rawSeti uses 1-based Lua indices so we use (sizeof...(I) - I) as the index.
+    constexpr std::size_t N = sizeof...(I);
+    if constexpr (N > 0) {
+        ((push_internal_luavalue(std::get<N - 1 - I>(tuple)), g_lua.rawSeti(static_cast<int>(N - I))), ...);
     }
-};
-
-template<>
-struct push_tuple_internal_luavalue<0>
-{
-    template<typename Tuple>
-    static void call(const Tuple& /*tuple*/) {}
-};
+}
 
 template<typename... Args>
 int push_internal_luavalue(const std::tuple<Args...>& tuple)
 {
     g_lua.newTable();
-    push_tuple_internal_luavalue<sizeof...(Args)>::call(tuple);
+    push_tuple_internal_luavalue_impl(tuple, std::make_index_sequence<sizeof...(Args)>{});
     return 1;
 }
 
-template<int N>
-struct push_tuple_luavalue
+/// Push each tuple element as a separate Lua stack value using fold expression
+/// (non-recursive). Original recursive push_tuple_luavalue<N> replaced to avoid
+/// deep template instantiation that can trigger MSVC ICE C1001.
+template<typename Tuple, std::size_t... I>
+void push_tuple_luavalue_impl(const Tuple& tuple, std::index_sequence<I...>)
 {
-    template<typename Tuple>
-    static void call(const Tuple& tuple)
-    {
-        push_internal_luavalue(std::get<std::tuple_size_v<Tuple> -N>(tuple));
-        push_tuple_luavalue<N - 1>::call(tuple);
+    if constexpr (sizeof...(I) > 0) {
+        (push_internal_luavalue(std::get<I>(tuple)), ...);
     }
-};
-
-template<>
-struct push_tuple_luavalue<0>
-{
-    template<typename Tuple>
-    static void call(const Tuple& /*tuple*/) {}
-};
+}
 
 template<typename... Args>
 int push_luavalue(const std::tuple<Args...>& tuple)
 {
-    push_tuple_luavalue<sizeof...(Args)>::call(tuple);
+    push_tuple_luavalue_impl(tuple, std::make_index_sequence<sizeof...(Args)>{});
     return sizeof...(Args);
 }

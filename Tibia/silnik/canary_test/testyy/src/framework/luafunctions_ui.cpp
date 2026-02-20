@@ -46,7 +46,6 @@
 
 #ifdef FRAMEWORK_NET
 #include <framework/net/protocol.h>
-#include <framework/net/protocolhttp.h>
 #include <framework/net/server.h>
 #endif
 
@@ -499,7 +498,7 @@ void registerLuaFunctions_UI()
 
     // Shader
     g_lua.registerClass<ShaderProgram>();
-    g_lua.registerClass<PainterShaderProgram>();
+    g_lua.registerClass<PainterShaderProgram, ShaderProgram>();
     g_lua.bindClassMemberFunction<PainterShaderProgram>("addMultiTexture", &PainterShaderProgram::addMultiTexture);
 
     // ParticleEffect

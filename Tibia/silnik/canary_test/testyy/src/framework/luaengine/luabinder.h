@@ -77,7 +77,7 @@ namespace luabinder
     template<typename Ret, typename F, typename Tuple>
     LuaCppFunction bind_fun_specializer(const F& f)
     {
-        constexpr auto N = std::tuple_size_v<Tuple>;
+        constexpr std::size_t N = std::tuple_size_v<Tuple>;
         return [=](LuaInterface* lua) -> int {
             while (lua->stackSize() != N) {
                 if (lua->stackSize() < N)

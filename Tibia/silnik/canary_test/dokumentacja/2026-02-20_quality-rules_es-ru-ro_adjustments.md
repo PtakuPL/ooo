@@ -72,3 +72,8 @@ Wdrożono dodatkową warstwę polityki per-język, aby przyspieszyć tłumaczeni
 Walidacja po update:
 - `bash -n i18n_worker_simple.sh` — OK.
 - `bash i18n_worker_simple.sh --update-status` — OK.
+
+### Korekta po review (ten sam dzień)
+- Cofnięto z listy `_NONTRANSLATABLE_WORLD_TERMS` termy zgłoszone jako tłumaczalne (m.in. `behemoth`, `dragon lord`, `warlock`, `hydra`, `cyclops`, `necromancer`, `vampire`, `minotaur`, `orc`, oraz `imbuement/prey/charms/runes/runestone/stamina/highscore/hotkey/loot`).
+- Cofnięto też role opisowe (`paladin/sorcerer/druid/knight/familiar`) z exempt policy.
+- Efekt: w języku polskim te słowa wracają na normalną ścieżkę tłumaczenia i nie są traktowane jako „nie tłumaczyć”.

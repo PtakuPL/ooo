@@ -1,6 +1,6 @@
 {
-  "file": "php.json",
-  "lang": "ru",
+  "file": "chatchannels.json",
+  "lang": "ro",
   "conditions": {
     "no_critical_token_errors": {
       "ok": true,
@@ -14,9 +14,9 @@
     },
     "coverage_above_95pct": {
       "ok": true,
-      "coverage_pct": 96.6,
-      "total_keys": 59,
-      "real_translations": 57
+      "coverage_pct": 100.0,
+      "total_keys": 16,
+      "real_translations": 16
     },
     "quality_entry_present": {
       "ok": true,
@@ -24,5 +24,5 @@
     }
   },
   "is_done": true,
-  "timestamp": "2026-02-20T22:56:41.263182Z"
+  "timestamp": "2026-02-20T22:57:02.098719Z"
 }

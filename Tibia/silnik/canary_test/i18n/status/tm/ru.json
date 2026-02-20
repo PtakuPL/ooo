@@ -38854,5 +38854,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:55:50.968323Z"
+  },
+  "php.accounts.text1": {
+    "src_hash": "b47b9410367725df48e327131e4850ef",
+    "text": "кол-12 кол-см-12 кол-лг-10",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:40.251058Z"
+  },
+  "php.accounts.text2": {
+    "src_hash": "1c3a471e6ff5a9d34e63038319280b94",
+    "text": "карта-информация о карте",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:40.251489Z"
+  },
+  "php.accounts.text4": {
+    "src_hash": "1080f71ac0a5aa7505c4274d20a0ffa0",
+    "text": "БТН БТН-Успех БТН-СМ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:40.252047Z"
   }
 }

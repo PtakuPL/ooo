@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-20T22:55:53.490423Z",
-  "cycle_counter": 6585,
-  "last_target_key": "ro:php.json",
-  "last_pending_total": 18,
+  "timestamp": "2026-02-20T22:57:04.817416Z",
+  "cycle_counter": 6589,
+  "last_target_key": "it:npclib.json",
+  "last_pending_total": 2,
   "last_tier": 2,
   "last_cat_priority": 9,
-  "candidates_count": 181,
-  "active_candidates_count": 171,
+  "candidates_count": 180,
+  "active_candidates_count": 170,
   "skipped_backoff": 10,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 3,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -159,7 +159,10 @@
     "ro:globalevents.json": 0,
     "sv:raids.json": 0,
     "sr:actions.json": 0,
-    "it:dataroot.json": 0
+    "it:dataroot.json": 0,
+    "ro:php.json": 0,
+    "ru:php.json": 0,
+    "ro:chatchannels.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -213,7 +216,7 @@
     "lang_completion": {
       "pl": 87.83,
       "es": 85.07,
-      "ru": 50.4,
+      "ru": 50.41,
       "ro": 43.81,
       "it": 52.64,
       "sr": 45.43,

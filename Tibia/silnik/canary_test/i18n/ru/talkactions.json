@@ -1,10 +1,10 @@
 {
   "talkaction.common.msg_command_param_required": "Требуется параметр команды.",
-  "talkaction.common.msg_command_param_usage": "Command param required. Usage: {usage}",
+  "talkaction.common.msg_command_param_usage": "Требуется параметр команды. Использование: {usage}",
   "talkaction.common.msg_creature_not_found": "Существо не найдено.",
   "talkaction.common.msg_creature_not_found_verbose": "Существо с таким именем найти не удалось.",
   "talkaction.common.msg_insufficient_parameters": "Недостаточно параметров.",
-  "talkaction.common.msg_insufficient_usage": "Insufficient parameters. Usage: {usage}",
+  "talkaction.common.msg_insufficient_usage": "Недостаточно параметров. Использование: {usage}",
   "talkaction.common.msg_invalid_command_param": "Неверный параметр команды.",
   "talkaction.common.msg_invalid_command_params": "Неверные параметры команды.",
   "talkaction.common.msg_no_active_players": "Активных игроков нет.",

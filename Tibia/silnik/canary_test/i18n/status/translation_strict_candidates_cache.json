@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-20T22:55:53.479167Z",
-  "built_cycle": 3,
+  "timestamp": "2026-02-20T22:57:04.805417Z",
+  "built_cycle": 1,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -441,14 +441,6 @@
     },
     {
       "lang": "it",
-      "json_file": "chatchannels.json",
-      "pending_total": 12,
-      "todo": 12,
-      "simple_todo": 6,
-      "missing_in_lang": 0
-    },
-    {
-      "lang": "it",
       "json_file": "client.json",
       "pending_total": 18,
       "todo": 18,
@@ -762,9 +754,9 @@
     {
       "lang": "ru",
       "json_file": "php.json",
-      "pending_total": 20,
-      "todo": 20,
-      "simple_todo": 10,
+      "pending_total": 17,
+      "todo": 17,
+      "simple_todo": 7,
       "missing_in_lang": 0
     },
     {
@@ -850,9 +842,9 @@
     {
       "lang": "ro",
       "json_file": "chatchannels.json",
-      "pending_total": 13,
-      "todo": 13,
-      "simple_todo": 7,
+      "pending_total": 1,
+      "todo": 1,
+      "simple_todo": 1,
       "missing_in_lang": 0
     },
     {
@@ -954,9 +946,9 @@
     {
       "lang": "ro",
       "json_file": "php.json",
-      "pending_total": 18,
-      "todo": 18,
-      "simple_todo": 8,
+      "pending_total": 14,
+      "todo": 14,
+      "simple_todo": 6,
       "missing_in_lang": 0
     },
     {

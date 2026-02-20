@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T22:52:53.016911Z",
+  "checked_at": "2026-02-20T22:59:19.968115Z",
   "issues_total": 428,
   "issues_by_type": {
     "consistency_in_language": 13,
@@ -812,15 +812,6 @@
       "lang": "<grunt>"
     },
     {
-      "key": "monster.lost_basher.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Yhouuuu!",
-      "pl": "Uuuuu!",
-      "lang": "Yhouuuu!"
-    },
-    {
       "key": "monster.mooh'tah_warrior.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -864,15 +855,6 @@
       "en": "Groar",
       "pl": "ryk",
       "lang": "Groar"
-    },
-    {
-      "key": "monster.swamp_troll.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Groar!",
-      "pl": "Ryk!",
-      "lang": "Groar!"
     },
     {
       "key": "monster.swamp_troll.voice_3",
@@ -3807,6 +3789,24 @@
       "en": "Yeah, so?",
       "pl": "Tak, więc?",
       "lang": "Yeah, so?"
+    },
+    {
+      "key": "npc.willie.stdmod_44",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Overrated.",
+      "pl": "Przereklamowany.",
+      "lang": "Overrated."
+    },
+    {
+      "key": "npc.wyda.say_8",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
     }
   ],
   "length_ratio_issues": [
@@ -3948,8 +3948,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 2,
-    "skipped": 78,
+    "applied": 1,
+    "skipped": 79,
     "errors": 0
   }
 }

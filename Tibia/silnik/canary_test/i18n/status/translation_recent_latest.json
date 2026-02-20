@@ -1,54 +1,11 @@
 {
-  "timestamp": "2026-02-20T22:56:12.401126Z",
-  "language": "ro",
-  "json_file": "php.json",
-  "translated": 7,
+  "timestamp": "2026-02-20T22:57:07.932611Z",
+  "language": "it",
+  "json_file": "npclib.json",
+  "translated": 0,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
-  "entries": [
-    {
-      "key": "php.plugins.text2",
-      "en": "upload_max_filesize",
-      "translated": "upload_max_filesize",
-      "source": "tm"
-    },
-    {
-      "key": "php.menus.text4",
-      "en": "ui-state-default",
-      "translated": "ui-state-default",
-      "source": "tm"
-    },
-    {
-      "key": "php.index.text1",
-      "en": " . BASE_URL . install",
-      "translated": ". BASE_URL . instala",
-      "source": "tm"
-    },
-    {
-      "key": "php.accounts.text1",
-      "en": "col-12 col-sm-12 col-lg-10",
-      "translated": "col-12 col-sm-12 col-lg-10",
-      "source": "simple"
-    },
-    {
-      "key": "php.rfc6238.text1",
-      "en": "234567QWERTYUIOPASDFGHJKLZXCVBNM",
-      "translated": "234567QWERTYUIOPASDFGHJKLZXCVBNM",
-      "source": "google_translate"
-    },
-    {
-      "key": "php.rfc6238.text2",
-      "en": "from $counter <br/>",
-      "translated": "de la $counter <br/>",
-      "source": "google_translate"
-    },
-    {
-      "key": "php.rfc6238.text3",
-      "en": "Prior to HMAC calculation pad with zero on the left until 8 characters.<br/>",
-      "translated": "Înainte de blocul de calcul HMAC cu zero în stânga până la 8 caractere.<br/>",
-      "source": "google_translate"
-    }
-  ]
+  "entries": []
 }

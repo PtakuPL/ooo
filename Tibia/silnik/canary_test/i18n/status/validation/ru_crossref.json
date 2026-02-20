@@ -4,11 +4,11 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T22:52:09.157307Z",
-  "issues_total": 141,
+  "checked_at": "2026-02-20T22:58:41.510759Z",
+  "issues_total": 144,
   "issues_by_type": {
-    "consistency_in_language": 69,
-    "pl_reference_missing_translation": 29,
+    "consistency_in_language": 70,
+    "pl_reference_missing_translation": 31,
     "length_ratio_crosscheck": 43
   },
   "consistency_issues": [
@@ -61,6 +61,20 @@
       "examples": [
         "achievements:achievement.1.description",
         "client:client.utils.text2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Knowledge Raider",
+      "variants": [
+        "KНетwledge Raider",
+        "Кновледге Рейдер"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "achievements:achievement.524.name",
+        "monsters:monster.knowledge_raider.name"
       ]
     },
     {
@@ -1353,6 +1367,24 @@
       "en": "The",
       "pl": "To",
       "lang": "The"
+    },
+    {
+      "key": "talkaction.common.msg_command_param_usage",
+      "category": "talkactions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Command param required. Usage: {usage}",
+      "pl": "Wymagany parametr komendy. Użycie: {usage}",
+      "lang": "Command param required. Usage: {usage}"
+    },
+    {
+      "key": "talkaction.common.msg_insufficient_usage",
+      "category": "talkactions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Insufficient parameters. Usage: {usage}",
+      "pl": "Za mało parametrów. Użycie: {usage}",
+      "lang": "Insufficient parameters. Usage: {usage}"
     }
   ],
   "length_ratio_issues": [
@@ -1745,8 +1777,8 @@
     }
   ],
   "auto_fix": {
-    "attempted": 29,
-    "applied": 0,
+    "attempted": 31,
+    "applied": 2,
     "skipped": 29,
     "errors": 0
   }

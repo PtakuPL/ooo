@@ -78782,5 +78782,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T19:10:41.491775Z"
+  },
+  "data.otservbr.global.npc.gregor.L348.160": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Fai attenzione durante i tuoi viaggi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.422411Z"
+  },
+  "data.otservbr.global.npc.gregor.L349.161": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Fai attenzione durante i tuoi viaggi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.422813Z"
+  },
+  "data.otservbr.global.npc.grizzly.adams.L146.91": {
+    "src_hash": "b941c402448104c20b733c879acba187",
+    "text": "Benvenuti al '⟨0⟩' |PLAYERNAME|. Sentiti libero di fare {tasks} per noi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.423715Z"
+  },
+  "data.otservbr.global.npc.grizzly.adams.L948.92": {
+    "src_hash": "91d8c9993168eaccf2103348568c06c0",
+    "text": "Buona caccia, vecchio mio!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.424100Z"
+  },
+  "data.otservbr.global.npc.grombur.L93.1129": {
+    "src_hash": "ecf362b99c062644fd9d950aba6fcbd0",
+    "text": "FERMATI PROPRIO LÌ!... Oh, solo un essere umano. Che succede, ragazzone?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.425832Z"
+  },
+  "data.otservbr.global.npc.guard.saros.L256.315": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Spero di vedervi presto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.426181Z"
+  },
+  "data.otservbr.global.npc.guard.saros.L257.316": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "Arrivederci, |PLAYERNAME|. Spero davvero che ci riparleremo presto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.426640Z"
+  },
+  "data.otservbr.global.npc.guide.alexena.L104.1375": {
+    "src_hash": "c005a222b255ab879f7deb5c9b8f6b08",
+    "text": "Benvenuto su Carlin, |PLAYERNAME| Desideri informazioni e una mappa guida?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.427421Z"
+  },
+  "data.otservbr.global.npc.guide.davina.L103.1064": {
+    "src_hash": "33356a8dad2f87f779709b47ea94f9a3",
+    "text": "Ciao a tutti, |PLAYERNAME| e benvenuto su Liberty Bay! Desideri qualche informazione e una guida cartografica?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.428683Z"
+  },
+  "data.otservbr.global.npc.guide.edna.L100.147": {
+    "src_hash": "fa4a7a5f26347998d0fba87ddf1e12fe",
+    "text": "Miao, benvenuto su Yalahar |PLAYERNAME|! Anche se potrebbe non sembrarlo, posso darti {information} e una guida {map}. Ne hai bisogno?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.429756Z"
+  },
+  "data.otservbr.global.npc.guide.elena.L107.11": {
+    "src_hash": "7b0af3720125ebc0299a9690e721235a",
+    "text": "Benvenuto su Venore, |PLAYERNAME| Desideri informazioni e una mappa guida?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.430635Z"
+  },
+  "data.otservbr.global.npc.guide.kunibert.L101.835": {
+    "src_hash": "8d5b35490be06573b0d84578330702c1",
+    "text": "Benvenuti a Rathleton, |PLAYERNAME|! Cerchi un mezzo di trasporto per l'isola principale di Oramond o desideri qualche informazione e una mappaguida?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.432041Z"
+  },
+  "data.otservbr.global.npc.guide.luke.L103.466": {
+    "src_hash": "3b3c55987c8a03288b16269c3dff2d65",
+    "text": "Ciao a tutti, |PLAYERNAME| e benvenuto su Thais! Vorresti un po' di {information} e una guida {map}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.432835Z"
+  },
+  "data.otservbr.global.npc.guide.rahlkora.L104.1325": {
+    "src_hash": "52692c98bd63afaf89abaf3f0a156585",
+    "text": "Benvenuto a Ankrahmun, |PLAYERNAME| Questa città all'inizio può creare un po' di confusione. Desideri qualche informazione e una guida cartografica?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.433840Z"
+  },
+  "data.otservbr.global.npc.guide.thelandil.L99.627": {
+    "src_hash": "11b80660f39241a5434022eabd0920c4",
+    "text": "Ciao a tutti, |PLAYERNAME| e benvenuto su Ab'Dendriel! Desideri qualche informazione e una guida cartografica?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.435149Z"
+  },
+  "data.otservbr.global.npc.guide.tiko.L103.800": {
+    "src_hash": "a0b7663b86e7e4547b427353adbbb525",
+    "text": "Ciao a tutti e benvenuti su Port Hope! Desideri qualche informazione e una guida cartografica?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.435666Z"
+  },
+  "data.otservbr.global.npc.gurbasch.L93.937": {
+    "src_hash": "b6febd60d615e293d143caedc364bcfe",
+    "text": "Benvenuto, |PLAYERNAME|! Bel battello a vapore, vero? Posso anche offrirti un {passage} se vuoi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:44.436548Z"
   }
 }

@@ -70342,5 +70342,205 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T19:10:34.750289Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.rosebushUse.L16.1851": {
+    "src_hash": "5a0430ef61db2d1898cff09183d2f681",
+    "text": "Plantați tufa de trandafiri în pământ proaspăt. Portalul verde strălucește mai puternic. Poate o vei trece acum.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.339642Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.sacrophagusUse.L41.1840": {
+    "src_hash": "03817ddcb904e57b7866a9caae3b7c76",
+    "text": "Blestemul de a tulbura această pace fragilă și străveche este prețul tău de plătit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.340238Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.sacrophagusUse.L47.1841": {
+    "src_hash": "bd664ffc6b07649d20c47551253bd5dd",
+    "text": "Deschiderea ultimului sarcofag încă te bântuie. Așteptați ceva timp să vă revină spiritele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.340816Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.strangeBucket.L37.1833": {
+    "src_hash": "c85201d4d79d6b97e1ccea788fc13309",
+    "text": "Nu a mai rămas suficientă ectoplasmă pentru a o umple în găleată.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.341361Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.strangeBucket.L43.1834": {
+    "src_hash": "c85201d4d79d6b97e1ccea788fc13309",
+    "text": "Nu a mai rămas suficientă ectoplasmă pentru a o umple în găleată.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.341883Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.strangeBucket.L49.1835": {
+    "src_hash": "e7e7af2574d6040a7bf0983cec0655cf",
+    "text": "Ectoplasma peste tot acest ou se scurgea deja în interiorul coconului însuși. Reușiți să umpleți o parte din el în găleată.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.342695Z"
+  },
+  "data.otservbr.global.scripts.quests.the.dream.courts.quest.actions.strangeBucket.L69.1836": {
+    "src_hash": "10487b458e46ae82d8aa56f296fb4712",
+    "text": "Toarnă toată ectoplasma peste tine. Fără găleată nu o poți stabiliza, trebuie să te grăbești până se dizolvă!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.343386Z"
+  },
+  "data.otservbr.global.scripts.quests.the.first.dragon.actions.sacrifice.items.L17.1767": {
+    "src_hash": "05d84d3f850e31ca6cbaf40fa904cfd2",
+    "text": "Ați sacrificat deja acest articol pentru a trece.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.345386Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.pyramids2.L18.2027": {
+    "src_hash": "76052c7bfb195c26264ca6133a637a47",
+    "text": "<screeeech> <squeak> <squeaaaaal>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.351726Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.pyramids2.L21.2028": {
+    "src_hash": "e2542a1f02f6de505054977a75841add",
+    "text": "Misiune deja finalizată aici!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.352136Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.scroll.L6.2017": {
+    "src_hash": "19911c332c7c434ad9d77712c72d551f",
+    "text": "Cineva a lăsat un card. Scrie: Cauți sulul? Vino să mă găsești. Urcă scările lângă studenți. Cămin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.352899Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.statue.L12.2018": {
+    "src_hash": "8010a8ce9522f7e248eca68600a4270a",
+    "text": "<BOOOOOOOONGGGGGGG> O pulsație lentă, ca pulsul sângelui, curge prin podea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.353453Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.tears.L9.2021": {
+    "src_hash": "21689dccde68112fb18462636aed408a",
+    "text": "Lacrimile dragonului strălucesc și dispar. Vechile puteri sunt potolite.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.353959Z"
+  },
+  "data.otservbr.global.scripts.quests.the.gravedigger.of.drefia.actions.tincture.L9.2010": {
+    "src_hash": "1c515751e73b487c2c45cf91c696cde0",
+    "text": "Prăbușiți flaconul și vărsați tinctura de sânge. Acest altar este uns.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.354474Z"
+  },
+  "data.otservbr.global.scripts.quests.the.great.dragon.hunt.quest.actions.treasure.L40.1795": {
+    "src_hash": "79160e6b066237c7c12eb0cc702123d8",
+    "text": "Încercați să alegeți o comoară, dar auziți alți dragoni apropiindu-se. Ar trebui să mai ucizi înainte de a alege ceva.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.355795Z"
+  },
+  "data.otservbr.global.scripts.quests.the.great.dragon.hunt.quest.actions.warrior.skeleton.L15.1793": {
+    "src_hash": "89f9a53b30b87ed685542d56c12b171b",
+    "text": "Exploratorul mort este gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.356600Z"
+  },
+  "data.otservbr.global.scripts.quests.the.great.dragon.hunt.quest.actions.warrior.skeleton.L5.1792": {
+    "src_hash": "80d457dae23708dcc3b6cd172fd0a4e0",
+    "text": "Ai descoperit scheletul unui războinic decedat. Se pare că a încercat să vâneze dragonii de aici - și nu a reușit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.357383Z"
+  },
+  "data.otservbr.global.scripts.quests.the.hidden.city.of.beregar.actions.ore.wagon.L103.2158": {
+    "src_hash": "36e2511acf93d9ed7d367f024b98abd9",
+    "text": "Încă nu aveți permisiunea de a utiliza acest lucru.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.358017Z"
+  },
+  "data.otservbr.global.scripts.quests.the.hidden.city.of.beregar.actions.ore.wagon.L176.2159": {
+    "src_hash": "952d68749fac40bd7c7a893a69b373be",
+    "text": "Încă nu știi cum să folosești asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.358421Z"
+  },
+  "data.otservbr.global.scripts.quests.the.hidden.city.of.beregar.moviments.elevator.L23.2160": {
+    "src_hash": "952d68749fac40bd7c7a893a69b373be",
+    "text": "Încă nu știi cum să folosești asta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.358851Z"
+  },
+  "data.otservbr.global.scripts.quests.the.outlaw.camp.actions.the.outlaw.camp.quest.L24.1909": {
+    "src_hash": "9bd9442de08fedcaa4b3d38791da086a",
+    "text": "Ai găsit o geantă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.365121Z"
+  },
+  "data.otservbr.global.scripts.quests.the.postman.missions.quest.actions.waldos.posthorn.L6.2152": {
+    "src_hash": "358e1871d6927f9c6a51a8f8e300b4f6",
+    "text": "Ai găsit cornul de poștă al lui Waldo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.365728Z"
+  },
+  "data.otservbr.global.scripts.quests.the.postman.missions.quest.actions.waldos.posthorn.L8.2153": {
+    "src_hash": "952f56962331136fbc510393bd0ab94e",
+    "text": "Omul mort este gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.366081Z"
+  },
+  "data.otservbr.global.scripts.quests.the.tainted.soul.actions.star.herb.L12.1983": {
+    "src_hash": "4765b47adb008a9887f10901bc3cb19a",
+    "text": "Îl împletești coarnele cu ierburi proaspete.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.381779Z"
+  },
+  "data.otservbr.global.scripts.quests.tinder.box.quest.chyllfroest.actions.ursagrodon.L32.1805": {
+    "src_hash": "d0d3617b1cd884278a414fdbabd6b439",
+    "text": "Ai deja supunerea lui ursagrodon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:16:54.384467Z"
   }
 }

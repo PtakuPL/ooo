@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:16:29.557118Z",
-  "window_start_utc": "2026-02-20T18:16:28.878552Z",
-  "window_end_utc": "2026-02-20T19:16:28.878552Z",
+  "timestamp": "2026-02-20T19:17:33.713408Z",
+  "window_start_utc": "2026-02-20T18:17:33.018772Z",
+  "window_end_utc": "2026-02-20T19:17:33.018772Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -10,10 +10,10 @@
   },
   "rejected_entries": 85,
   "rejected_entries_raw": 345,
-  "suspicious_entries": 3189,
-  "suspicious_entries_raw": 25059,
-  "guard_fail_entries": 129,
-  "guard_fail_sum": 5706,
+  "suspicious_entries": 3260,
+  "suspicious_entries_raw": 25229,
+  "guard_fail_entries": 131,
+  "guard_fail_sum": 5702,
   "by_type": {
     "identical_to_en": 76,
     "word_salad": 3,
@@ -24,8 +24,8 @@
     "google_translate": 85
   },
   "by_language": {
-    "es": 23,
     "it": 2,
+    "es": 23,
     "ro": 28,
     "pl": 32
   },
@@ -136,17 +136,17 @@
       }
     },
     {
-      "key": "npc.al_dee.stdmod_41",
-      "count": 1,
-      "types": {
-        "word_salad": 1
-      }
-    },
-    {
       "key": "npc.a_fluffy_squirrel.greet_msg_1",
       "count": 1,
       "types": {
         "identical_to_en": 1
+      }
+    },
+    {
+      "key": "npc.al_dee.stdmod_41",
+      "count": 1,
+      "types": {
+        "word_salad": 1
       }
     },
     {

@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T20:02:49.256808Z",
-  "window_start_utc": "2026-02-20T19:02:48.563228Z",
-  "window_end_utc": "2026-02-20T20:02:48.563228Z",
+  "timestamp": "2026-02-20T20:03:57.160717Z",
+  "window_start_utc": "2026-02-20T19:03:56.433455Z",
+  "window_end_utc": "2026-02-20T20:03:56.433455Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,33 +9,32 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 214,
-  "rejected_entries_raw": 370,
+  "rejected_entries_raw": 371,
   "suspicious_entries": 3675,
-  "suspicious_entries_raw": 25424,
+  "suspicious_entries_raw": 25077,
   "guard_fail_entries": 134,
-  "guard_fail_sum": 5807,
+  "guard_fail_sum": 5838,
   "by_type": {
     "identical_to_en": 172,
-    "contains_tibia_proper_noun": 17,
     "word_salad": 7,
     "mixed_language": 10,
     "mixed_scripts": 22,
     "cyrillic_latin_mix": 22,
+    "contains_tibia_proper_noun": 17,
     "fx_token": 3
   },
   "by_source": {
     "google_translate": 214
   },
   "by_language": {
-    "ro": 57,
-    "es": 40,
     "it": 41,
+    "es": 40,
+    "ro": 57,
     "pl": 43,
     "ru": 22,
     "sv": 11
   },
   "by_category": {
-    "monsters.json": 26,
     "npc.json": 4,
     "items.json": 27,
     "spells.json": 53,
@@ -44,6 +43,7 @@
     "server.json": 17,
     "books.json": 1,
     "otclient_modules.json": 29,
+    "monsters.json": 26,
     "client.json": 12,
     "cpp.json": 6,
     "achievements.json": 18,
@@ -218,42 +218,38 @@
       }
     },
     {
-      "key": "monster.deathspawn.name",
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2
       }
     },
     {
-      "key": "monster.sorcerer_familiar.name",
+      "key": "spell.rotthingholy_ulus.name",
       "count": 2,
       "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
+        "identical_to_en": 2
       }
     },
     {
-      "key": "monster.knight_familiar.name",
+      "key": "spell.single_ice_chain.name",
       "count": 2,
       "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
+        "identical_to_en": 2
       }
     },
     {
-      "key": "monster.paladin_familiar.name",
+      "key": "spell.podzillaphys_chain.name",
       "count": 2,
       "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
+        "identical_to_en": 2
       }
     },
     {
-      "key": "monster.druid_familiar.name",
+      "key": "spell.rotthing_shaper.name",
       "count": 2,
       "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
+        "identical_to_en": 2
       }
     }
   ]

@@ -1,101 +1,115 @@
 {
-  "timestamp": "2026-02-20T19:23:56.981383Z",
+  "timestamp": "2026-02-20T19:25:09.326745Z",
   "checked_entries": 100,
-  "issues_found": 28,
+  "issues_found": 30,
   "issues_by_type": {
+    "identical_to_en_exempt": 25,
+    "artifact_token": 18,
     "identical_to_en": 12,
-    "identical_to_en_exempt": 7,
-    "artifact_token": 16,
+    "suspicious_log_high": 39,
     "suspicious_log_critical": 57,
-    "suspicious_log_high": 60,
-    "suspicious_log_low": 9,
+    "suspicious_log_low": 28,
     "suspicious_rejected_critical": 98,
     "suspicious_rejected_high": 7
   },
   "issues": [
     {
-      "key": "monster.white_pale.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
+      "key": "scripts.auto_loot.msg_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "Autoloot mode set to ALL.",
+      "translated": "Modo de autoloot establecido a TODO."
     },
     {
-      "key": "monster.the_welter.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
+      "key": "scripts.prince_drazzak_summon.say_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "CRUSH THEM ALL!",
+      "translated": "¡¡APLASTADLES A TODOS!!"
     },
     {
-      "key": "monster.the_welter.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.water_buffalo.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo"
-    },
-    {
-      "key": "monster.feverish_citizen.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Feverish Citizen",
-      "translated": "Feverish Citizen"
-    },
-    {
-      "key": "monster.serpent_spawn.name",
-      "lang": "it",
+      "key": "raid.serpent_spawn.name",
+      "lang": "pl",
       "type": "identical_to_en",
       "en": "Serpent Spawn",
       "translated": "Serpent Spawn"
     },
     {
-      "key": "monster.mad_mage.name",
-      "lang": "it",
+      "key": "raid.wild_horses.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
+    },
+    {
+      "key": "raid.gaz_haragoth.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth"
+    },
+    {
+      "key": "raid.diblis_the_fair.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Diblis The Fair",
+      "translated": "Diblis The Fair"
+    },
+    {
+      "key": "raid.the_old_widow.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Old Widow",
+      "translated": "The Old Widow"
+    },
+    {
+      "key": "raid.feverish_citizen.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "raid.water_buffalo.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
+    },
+    {
+      "key": "raid.sir_valorcrest.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "raid.mad_mage.name",
+      "lang": "pl",
       "type": "identical_to_en",
       "en": "Mad Mage",
       "translated": "Mad Mage"
     },
     {
-      "key": "monster.zevelon_duskbringer.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
-    {
-      "key": "monster.zevelon_duskbringer.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
-    {
-      "key": "monster.weakened_shlorg.name",
-      "lang": "it",
+      "key": "raid.weakened_shlorg.name",
+      "lang": "pl",
       "type": "identical_to_en",
       "en": "Weakened Shlorg",
       "translated": "Weakened Shlorg"
     },
     {
-      "key": "monster.weakened_shlorg.desc",
-      "lang": "it",
+      "key": "raid.zevelon_duskbringer.name",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Weakened Shlorg",
-      "translated": "Weakened Shlorg"
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
     },
     {
-      "key": "monster.diblis_the_fair.desc",
-      "lang": "it",
+      "key": "raid.zulazza_the_corruptor.name",
+      "lang": "pl",
       "type": "identical_to_en",
-      "en": "Diblis The Fair",
-      "translated": "Diblis The Fair"
+      "en": "Zulazza The Corruptor",
+      "translated": "Zulazza The Corruptor"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

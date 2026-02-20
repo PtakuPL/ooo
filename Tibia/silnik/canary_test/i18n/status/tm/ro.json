@@ -67038,5 +67038,309 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T16:43:10.972704Z"
+  },
+  "npc.melian.stdmod_2": {
+    "src_hash": "8f3b71da455041c184184618a35b40fb",
+    "text": "Nu trebuie să ratezi experiența.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.084173Z"
+  },
+  "npc.memech.walkaway_msg_1": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Iluminarea să fie calea ta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.085764Z"
+  },
+  "npc.miraia.multi_6": {
+    "src_hash": "84bef6784099863dfeb03302de8845ca",
+    "text": "Ați înțeles tot ce v-am spus și sunteți dispus să vă ocupați de această sarcină?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.089877Z"
+  },
+  "npc.miraia.say_7": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Iată-l.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.090655Z"
+  },
+  "npc.mordecai.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Desigur, răsfoiește-mi produsele. Puteți să vă uitați și la {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.093490Z"
+  },
+  "npc.morgan.say_10": {
+    "src_hash": "7b82e1e922974120118a565d5e316935",
+    "text": "Nu aveți toate elementele necesare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.095812Z"
+  },
+  "npc.morgan.say_3": {
+    "src_hash": "ba83dfdb46549eda0d8527ebcbaff8aa",
+    "text": "Ai deja această ținută!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.096676Z"
+  },
+  "npc.morgan.say_6": {
+    "src_hash": "7b82e1e922974120118a565d5e316935",
+    "text": "Nu aveți toate elementele necesare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.097187Z"
+  },
+  "npc.morgan.say_7": {
+    "src_hash": "ba83dfdb46549eda0d8527ebcbaff8aa",
+    "text": "Ai deja această ținută!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.097594Z"
+  },
+  "npc.mortimer.multi_1": {
+    "src_hash": "f91a9519d595fa9e2fa986102e0edc06",
+    "text": "Membrii noștri călătoresc în locuri îndepărtate și traversează zone periculoase, mulți cad pradă dușmanilor sau pământului...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.098601Z"
+  },
+  "npc.mortimer.multi_10": {
+    "src_hash": "be89d3dbc12ff96bd10a1c34b442d5c0",
+    "text": "Amenda. Societatea caută noi mijloace de a călători. Unele dintre cele mai strălucite minți ale noastre au câteva teorii despre călătoriile astrale pe care doresc să le cerceteze în continuare...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.100013Z"
+  },
+  "npc.mortimer.multi_11": {
+    "src_hash": "d6b40ee18bd79a975ead70f9cb3fa99e",
+    "text": "Prin urmare, trebuie să colectați niște ectoplasmă din cadavrul unei fantome. Vă vom furniza un colecționar pe care îl puteți folosi pe corpul unei fantome ucise...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.100951Z"
+  },
+  "npc.mortimer.multi_12": {
+    "src_hash": "ad66eef7d46daaeabde9ff86bd71494a",
+    "text": "Crezi că ești pregătit pentru acea misiune?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.101537Z"
+  },
+  "npc.mortimer.multi_13": {
+    "src_hash": "5b243a160c986a49e8a4f4d059e56c96",
+    "text": "Ești un suflet curajos. Din câte ne putem da seama, orcii mențin un fel de centru de antrenament pe un deal din nord-estul orașului lor...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.102354Z"
+  },
+  "npc.mortimer.multi_15": {
+    "src_hash": "25c3ece525ecca75503019d34ce3d886",
+    "text": "Excelent! Așa că călătoriți în orașul Darashia și apoi îndreptați-vă spre nord-est către piramidă...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.103763Z"
+  },
+  "npc.mortimer.multi_17": {
+    "src_hash": "3eff2be74e5f24add41763971c618158",
+    "text": "Ai într-adevăr spiritul de aventurier! În sud-estul Tiquanda se află o mică așezare a oamenilor șopârle...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.104908Z"
+  },
+  "npc.mortimer.multi_2": {
+    "src_hash": "0f6f27bd429a6246e8915eaf4b13629d",
+    "text": "Uneori, broșele de explorator personal pot fi recuperate. Așa aflăm despre soarta membrilor noștri...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.105888Z"
+  },
+  "npc.mortimer.multi_20": {
+    "src_hash": "9870e97492a2ede96cd9beca3a677cb1",
+    "text": "Acest kit de pregătire vă va permite să colectați un fluture violet pe care l-ați ucis...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.106454Z"
+  },
+  "npc.mortimer.multi_22": {
+    "src_hash": "157e99609c7d1a235fee1a026d3e6b58",
+    "text": "Așa că ascultați, vă rog: luați acest gheață și folosiți-l pe un bloc de gheață din peșterile de sub Folda. Ia niște gheață și adu-o aici cât de repede poți...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.107279Z"
+  },
+  "npc.mortimer.multi_24": {
+    "src_hash": "95b026d32f0058017f5e2765d0de290a",
+    "text": "Excelent, ai adus doar unealta de care avem nevoie! Desigur, a fost doar o sarcină simplă. Cu toate acestea...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.108183Z"
+  },
+  "npc.mortimer.multi_26": {
+    "src_hash": "d649bf320c3a3351571eee4877ea1939",
+    "text": "Bine, deși este nevoie de mai mult decât o simplă pronunțare pentru a se alătura rândurilor noastre. Pentru a-ți dovedi dedicarea față de cauză, va trebui să achiziționezi un articol pentru noi...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.109028Z"
+  },
+  "npc.mortimer.multi_27": {
+    "src_hash": "8fb420a67bb8d7182b4262ff964e9344",
+    "text": "Misiunea ar trebui să fie simplu de îndeplinit. Pentru săpăturile noastre am comandat un târnăcop robust în Kazordoon. Ar trebui să-l cauți pe acest comerciant Uzgod și să ne iei târnacopul...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.109860Z"
+  },
+  "npc.mortimer.multi_28": {
+    "src_hash": "f3e9abd3321bf1f39ee49a38b3da9bb7",
+    "text": "Destul de simplu? Ești interesat de această sarcină?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.110329Z"
+  },
+  "npc.mortimer.multi_29": {
+    "src_hash": "2dea33e94c7862cf9525abee5b48ac68",
+    "text": "Am dori să studiem câteva rune antice care au fost folosite de rasa șopârlelor. Suspectăm o relație între șopârlele și fondatorii lui Ankrahmun...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.111398Z"
+  },
+  "npc.mortimer.multi_3": {
+    "src_hash": "a956076fcff01f900a40761fb65e58c6",
+    "text": "Oferim o recompensă pentru fiecare broșă returnată nouă. Ai găsit o broșă de explorator?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.111999Z"
+  },
+  "npc.mortimer.multi_30": {
+    "src_hash": "6d7e02870b1f2bd6a4a75d091d6c2448",
+    "text": "Undeva sub orașul infestat de maimuțe Banuta, se pot găsi temnițe care au fost odată locuite de șopârle...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.112653Z"
+  },
+  "npc.mortimer.multi_31": {
+    "src_hash": "58480b8f06d05b95b682740398ebc477",
+    "text": "Căutați acolo o structură atipică care s-ar potrivi mai degrabă cu Ankrahmun și mormintele sale Ankrahmun. Copiați runele pe care le veți găsi pe această structură...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.113505Z"
+  },
+  "npc.mortimer.multi_32": {
+    "src_hash": "e71d2d46fe9dc56efb9fa1542ac9376c",
+    "text": "Ești pregătit pentru această provocare?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.113919Z"
+  },
+  "npc.mortimer.multi_33": {
+    "src_hash": "606b5e886fe8b7fac68be368feb09fe3",
+    "text": "Am dobândit câteva cunoștințe despre pietrele magice speciale. Unele civilizații pierdute l-au folosit pentru a stoca cunoștințe și știri, la fel cum folosim noi cărți...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.115184Z"
+  },
+  "npc.mortimer.multi_34": {
+    "src_hash": "6d48f259f0e14561b06f20c1c99abbec",
+    "text": "Înțelepciunea din astfel de pietre trebuie să fie imensă, dar la fel sunt și pericolele cu care se confruntă fiecare persoană care încearcă să obțină una...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.115970Z"
+  },
+  "npc.mortimer.multi_35": {
+    "src_hash": "05ee0b0584330b394bb849f53ea366b7",
+    "text": "Din câte știm, ruinele găsite în nord-vestul Edron au fost odată locuite de ființe care foloseau astfel de pietre. Ai inima să mergi acolo și să ne iei o astfel de piatră?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.117066Z"
+  },
+  "npc.mortimer.multi_36": {
+    "src_hash": "39237b534a1923196110ddbbf14ada07",
+    "text": "Unii membri de rang înalt ar dori să studieze poezia elfică. Ei vor cartea rară 'Songs of the Forest'...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.117819Z"
+  },
+  "npc.mortimer.multi_37": {
+    "src_hash": "e674100e4e7ff0c63782c8fc637eb1ae",
+    "text": "Cu siguranță cineva din Ab'Dendriel va deține o copie. Deci ar trebui doar să întrebi pe acolo. Sunteți dispus să acceptați această misiune?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.118755Z"
+  },
+  "npc.mortimer.multi_38": {
+    "src_hash": "aafc5affc270f17961b263faf1cebeff",
+    "text": "Se știe în mod obișnuit că orcii din Uldereks Rock folosesc un fel de pulbere pentru a crește înverșunatul lupilor și berserkerilor lor de război...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.119788Z"
+  },
+  "npc.mortimer.multi_4": {
+    "src_hash": "25094cb87ba0e6f491f2e830082e1eb8",
+    "text": "Ratha a fost un mare explorator și chiar mai mare femeie. Din păcate, nu s-a întors niciodată dintr-o vizită la Amazon. Probabil e mort...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.120579Z"
+  },
+  "npc.mortimer.multi_41": {
+    "src_hash": "fd1ca43a04a60f07f86aaa1d5d924d1a",
+    "text": "Vrem să aflăm mai multe despre vechea rasă a stăpânilor oaselor. Credem că piramida neagră la nord-est de Darashia a fost construită inițial de ei...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.121501Z"
+  },
+  "npc.mortimer.multi_42": {
+    "src_hash": "0f3ace58a37fac6ddbfe8fe8ecc6c7cc",
+    "text": "Vă rugăm să explorați ruinele piramidei negre și să căutați orice semne care dovedesc teoria noastră. Probabil că veți găsi un document cu limbajul numeric bonelord...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.122404Z"
+  },
+  "npc.mortimer.multi_43": {
+    "src_hash": "d259ccb119f75ea227dbd1dad096bb71",
+    "text": "Asta ar fi o dovadă suficientă. Ți-ar plăcea să accepți această misiune?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:00.122915Z"
   }
 }

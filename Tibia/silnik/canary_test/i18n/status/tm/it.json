@@ -2529,11 +2529,11 @@
   },
   "item.3198.name": {
     "src_hash": "914de3c6825f6f3cb25da03b5fb65a8b",
-    "text": "Heavy Magic Missile Rune",
+    "text": "Runa del missile magico pesante",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T23:50:27.694651Z"
+    "updated_at": "2026-02-20T16:57:07.339066Z"
   },
   "item.3200.name": {
     "src_hash": "22494ca9495b54d62a7467fd9018dc7f",
@@ -76198,5 +76198,221 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T16:54:02.854698Z"
+  },
+  "item.31926.name": {
+    "src_hash": "b7191a556bb13541494d8e7a52e6ff07",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.334283Z"
+  },
+  "item.31928.name": {
+    "src_hash": "b7191a556bb13541494d8e7a52e6ff07",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.334653Z"
+  },
+  "item.31930.name": {
+    "src_hash": "b7191a556bb13541494d8e7a52e6ff07",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.335366Z"
+  },
+  "item.31960.name": {
+    "src_hash": "b7191a556bb13541494d8e7a52e6ff07",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.337903Z"
+  },
+  "item.31962.name": {
+    "src_hash": "b7191a556bb13541494d8e7a52e6ff07",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.338298Z"
+  },
+  "item.32021.name": {
+    "src_hash": "431369719ea01e4118be66bfd4c3b4d7",
+    "text": "muro in fiamme",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.340717Z"
+  },
+  "item.32065.name": {
+    "src_hash": "b7191a556bb13541494d8e7a52e6ff07",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.342681Z"
+  },
+  "item.32092.name": {
+    "src_hash": "b7191a556bb13541494d8e7a52e6ff07",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.344522Z"
+  },
+  "item.321.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "vaso di fiori",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.345470Z"
+  },
+  "item.32227.name": {
+    "src_hash": "25b1331a71dad1d01977134b8c6b524f",
+    "text": "Anima perduta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.355710Z"
+  },
+  "item.324.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "vaso di fiori",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.358931Z"
+  },
+  "item.32418.name": {
+    "src_hash": "983b822c1fe9b3a3bd821020d1998e94",
+    "text": "Testa del cervello",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.359895Z"
+  },
+  "item.325.name": {
+    "src_hash": "26829a59cbdbc8bf7ae58fed91a49765",
+    "text": "pianta appassita",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.363196Z"
+  },
+  "item.32572.name": {
+    "src_hash": "2d8bfcfcedb6476af97ced40e762ff3c",
+    "text": "Cervelletto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.368391Z"
+  },
+  "item.326.name": {
+    "src_hash": "26829a59cbdbc8bf7ae58fed91a49765",
+    "text": "pianta appassita",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.371200Z"
+  },
+  "item.3264.name": {
+    "src_hash": "f3b462d93b24cb0538f5d864546bc3e0",
+    "text": "spada",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.374531Z"
+  },
+  "item.327.name": {
+    "src_hash": "26829a59cbdbc8bf7ae58fed91a49765",
+    "text": "pianta appassita",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.375723Z"
+  },
+  "item.328.name": {
+    "src_hash": "26829a59cbdbc8bf7ae58fed91a49765",
+    "text": "pianta appassita",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.384526Z"
+  },
+  "item.329.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "vaso di fiori",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.386877Z"
+  },
+  "item.330.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "vaso di fiori",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.391337Z"
+  },
+  "item.331.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "vaso di fiori",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.394739Z"
+  },
+  "item.33174.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.395941Z"
+  },
+  "item.33175.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.396218Z"
+  },
+  "item.33176.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.396474Z"
+  },
+  "item.33177.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:07.396723Z"
+  },
+  "monster.damaged_worker_golem.voice_1": {
+    "src_hash": "7b06d4c681157c793486deb734643a2f",
+    "text": "Klonk klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:39.219035Z"
+  },
+  "monster.training_machine.voice_15": {
+    "src_hash": "12b2df1cd3a8a5ce3aa54c7a801643e4",
+    "text": "klonk klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:57:40.702806Z"
   }
 }

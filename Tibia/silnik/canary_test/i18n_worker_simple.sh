@@ -2407,13 +2407,36 @@ def _safe_issue_type(v):
     text = str(v or "").strip().lower()
     return text if text else "unknown"
 
+
+def _dedupe_guard_rows(rows):
+    unique = []
+    seen = set()
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        row_id = (
+            str(row.get("lang", "?") or "?").lower(),
+            str(row.get("category", "?") or "?"),
+            str(row.get("key", "") or ""),
+            str(row.get("severity", "UNKNOWN") or "UNKNOWN").upper(),
+        )
+        if row_id in seen:
+            continue
+        seen.add(row_id)
+        unique.append(row)
+    return unique
+
+
+strict_rejected_unique_entries = _dedupe_guard_rows(strict_rejected_entries)
+strict_susp_unique_entries = _dedupe_guard_rows(strict_susp_entries)
+
 guard_fail_by_type = {}
 guard_fail_by_source = {}
 guard_fail_by_lang = {}
 guard_fail_by_category = {}
 guard_fail_by_severity = {}
 guard_fail_key_counter = {}
-for _row in strict_rejected_entries:
+for _row in strict_rejected_unique_entries:
     _lang = str(_row.get("lang", "?") or "?").lower()
     _cat = str(_row.get("category", "?") or "?")
     _src = str(_row.get("source", "unknown") or "unknown")
@@ -2466,8 +2489,10 @@ guard_fail_breakdown_payload = {
         "suspicious_log": "i18n/status/suspicious_log.jsonl",
         "translation_guard_report": "i18n/status/translation_guard_report.jsonl",
     },
-    "rejected_entries": len(strict_rejected_entries),
-    "suspicious_entries": len(strict_susp_entries),
+    "rejected_entries": len(strict_rejected_unique_entries),
+    "rejected_entries_raw": len(strict_rejected_entries),
+    "suspicious_entries": len(strict_susp_unique_entries),
+    "suspicious_entries_raw": len(strict_susp_entries),
     "guard_fail_entries": len(strict_guard_entries),
     "guard_fail_sum": strict_guard_fail,
     "by_type": guard_fail_by_type,
@@ -2518,7 +2543,8 @@ strict_window_payload = {
     "no_progress_entries": strict_no_progress_entries,
     "no_progress_rate_pct": round(strict_no_progress_rate * 100, 1),
     "throughput_keys_per_h": round(strict_throughput, 1),
-    "suspicious_total": len(strict_susp_entries),
+    "suspicious_total": len(strict_susp_unique_entries),
+    "suspicious_total_raw": len(strict_susp_entries),
     "top_guard_fail_targets": strict_top_guard_fail_targets,
 }
 
@@ -2546,28 +2572,13 @@ pack_regression_payload = {
 
 try:
     critical_by_lang = {"pl": 0, "es": 0}
-    rejected_path = os.path.join(status_translation_dir, "suspicious_rejected.jsonl")
-    if os.path.exists(rejected_path):
-        with open(rejected_path, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    row = json.loads(line)
-                except Exception:
-                    continue
-                lang = str(row.get("lang", "")).lower()
-                if lang not in critical_by_lang:
-                    continue
-                if str(row.get("severity", "")).upper() != "CRITICAL":
-                    continue
-                row_dt = _parse_iso_any(row.get("timestamp"))
-                if strict_cutoff and row_dt and row_dt < strict_cutoff:
-                    continue
-                if strict_now and row_dt and row_dt > strict_now:
-                    continue
-                critical_by_lang[lang] += 1
+    for row in strict_rejected_unique_entries:
+        lang = str(row.get("lang", "")).lower()
+        if lang not in critical_by_lang:
+            continue
+        if str(row.get("severity", "")).upper() != "CRITICAL":
+            continue
+        critical_by_lang[lang] += 1
 
     review_dir = os.path.join(I18N_DIR, "overrides", "review_queue")
     for lang in ("pl", "es"):
@@ -21116,6 +21127,7 @@ for e in entries:
         issue_counter["same_translation_many_langs"] += 1
         lang_issue_counter[lang] += 1
 
+seen_suspicious_events = set()
 for path, source in ((suspicious_log_path, "suspicious_log"), (suspicious_rejected_path, "suspicious_rejected")):
     if not os.path.exists(path):
         continue
@@ -21129,6 +21141,12 @@ for path, source in ((suspicious_log_path, "suspicious_log"), (suspicious_reject
                 continue
             lang = str(obj.get("lang", "") or "")
             typ = str(obj.get("severity", "") or "")
+            category = str(obj.get("category", "") or "")
+            key = str(obj.get("key", "") or "")
+            event_id = (source, lang.lower(), category, key, typ.upper())
+            if event_id in seen_suspicious_events:
+                continue
+            seen_suspicious_events.add(event_id)
             if typ:
                 issue_counter[f"{source}_{typ.lower()}"] += 1
                 lang_issue_counter[lang] += 1

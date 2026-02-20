@@ -1,13 +1,13 @@
 {
   "lang": "es",
-  "coverage_pct": 85.3,
+  "coverage_pct": 85.4,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T18:18:18.476006Z",
-  "issues_total": 516,
+  "checked_at": "2026-02-20T18:36:20.400527Z",
+  "issues_total": 517,
   "issues_by_type": {
-    "consistency_in_language": 71,
+    "consistency_in_language": 72,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 45
   },
@@ -359,6 +359,21 @@
         "items:item.10800.name",
         "items:item.10801.name",
         "items:item.19155.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "magic gold converter",
+      "variants": [
+        "convertidor de oro mágico",
+        "magic Oro converter"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.12699.name",
+        "items:item.28525.name",
+        "items:item.28526.name"
       ]
     },
     {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T18:35:17.553738Z",
+  "timestamp": "2026-02-20T18:37:45.791188Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 48,
-  "cache_misses": 4,
-  "file_cache_hits": 1972,
-  "file_cache_misses": 4,
+  "cache_hits": 50,
+  "cache_misses": 2,
+  "file_cache_hits": 1974,
+  "file_cache_misses": 2,
   "langs": {
     "ar": {
       "sig": [
@@ -16005,7 +16005,7 @@
         [
           "monsters.json",
           1,
-          1771612213230112329,
+          1771612556011372062,
           341039
         ],
         [
@@ -16388,7 +16388,7 @@
         "monsters.json": {
           "sig": [
             1,
-            1771612213230112329,
+            1771612556011372062,
             341039
           ],
           "row": {
@@ -26943,8 +26943,8 @@
         [
           "items.json",
           1,
-          1771612157341720786,
-          887987
+          1771612640384407638,
+          888012
         ],
         [
           "libs.json",
@@ -27097,7 +27097,7 @@
         "scope": "global",
         "total_reference_keys": 53586,
         "translated_keys": 22892,
-        "english_copy_keys": 2351,
+        "english_copy_keys": 2347,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 42.72,
@@ -27294,13 +27294,13 @@
         "items.json": {
           "sig": [
             1,
-            1771612157341720786,
-            887987
+            1771612640384407638,
+            888012
           ],
           "row": {
             "total_reference_keys": 17057,
             "translated_keys": 8298,
-            "english_copy_keys": 28,
+            "english_copy_keys": 24,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27726,7 +27726,7 @@
         [
           "items.json",
           1,
-          1771612146823317892,
+          1771612536910966985,
           983333
         ],
         [
@@ -28077,7 +28077,7 @@
         "items.json": {
           "sig": [
             1,
-            1771612146823317892,
+            1771612536910966985,
             983333
           ],
           "row": {

@@ -1,58 +1,59 @@
 {
-  "timestamp": "2026-02-20T19:27:24.406239Z",
-  "window_start_utc": "2026-02-20T18:27:23.693335Z",
-  "window_end_utc": "2026-02-20T19:27:23.693335Z",
+  "timestamp": "2026-02-20T19:30:00.609988Z",
+  "window_start_utc": "2026-02-20T18:29:59.936725Z",
+  "window_end_utc": "2026-02-20T19:29:59.936725Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 121,
-  "rejected_entries_raw": 348,
-  "suspicious_entries": 3290,
-  "suspicious_entries_raw": 25159,
-  "guard_fail_entries": 136,
-  "guard_fail_sum": 3178,
+  "rejected_entries": 129,
+  "rejected_entries_raw": 345,
+  "suspicious_entries": 3322,
+  "suspicious_entries_raw": 25064,
+  "guard_fail_entries": 133,
+  "guard_fail_sum": 3186,
   "by_type": {
-    "identical_to_en": 102,
-    "word_salad": 5,
+    "identical_to_en": 109,
     "contains_tibia_proper_noun": 6,
-    "mixed_language": 7,
+    "word_salad": 5,
+    "mixed_language": 8,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7
   },
   "by_source": {
-    "google_translate": 121
+    "google_translate": 129
   },
   "by_language": {
+    "ro": 35,
     "es": 23,
     "it": 24,
-    "ro": 35,
     "pl": 32,
-    "ru": 7
+    "ru": 7,
+    "sv": 8
   },
   "by_category": {
-    "npc.json": 4,
-    "items.json": 26,
     "monsters.json": 23,
-    "server.json": 9,
+    "npc.json": 4,
+    "server.json": 17,
+    "items.json": 26,
     "spells.json": 53,
     "quests.json": 3,
     "scripts.json": 3
   },
   "by_severity": {
-    "CRITICAL": 107,
-    "HIGH": 14
+    "CRITICAL": 114,
+    "HIGH": 15
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 102
+      "count": 109
     },
     {
       "type": "mixed_language",
-      "count": 7
+      "count": 8
     },
     {
       "type": "mixed_scripts",
@@ -82,6 +83,20 @@
       }
     },
     {
+      "key": "data.otservbr.global.npc.anerui.L71.1487",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.brasith.L59.1211",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
+      }
+    },
+    {
       "key": "spell.furyosa_deathball.name",
       "count": 3,
       "types": {
@@ -97,13 +112,6 @@
         "contains_tibia_proper_noun": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
       }
     },
     {
@@ -139,14 +147,7 @@
       }
     },
     {
-      "key": "data.otservbr.global.npc.anerui.L71.1487",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.brasith.L59.1211",
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2

@@ -72006,5 +72006,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T20:42:03.118739Z"
+  },
+  "npc.shiriel.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.095488Z"
+  },
+  "npc.shiriel.farewell_msg_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.095940Z"
+  },
+  "npc.shiriel.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Desigur, răsfoiește-mi produsele. Puteți să vă uitați și la {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.096925Z"
+  },
+  "npc.shiriel.walkaway_msg_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.097259Z"
+  },
+  "npc.shirith.say_2": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Iată-l.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.098375Z"
+  },
+  "npc.shirtalis_of_the_summer_court.greet_msg_1": {
+    "src_hash": "1d4aed09bf4b360d0fe917e2de3b88d4",
+    "text": "Bună luptător. Presupun că ești aici pentru a {fight} pentru nobilul nostru {cause}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.099432Z"
+  },
+  "npc.shirtalis_of_the_summer_court.say_1": {
+    "src_hash": "749d9909035452a589e191811401db0f",
+    "text": "Permitem campionilor capabili din toate rasele să lupte pentru cauza noastră împotriva provocărilor lui {arena}. Deci te intereseaza? Nu mă interesează jocurile de cuvinte fanteziste, așa că un simplu {yes} sau {no} va fi suficient!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.100355Z"
+  },
+  "npc.shirtalis_of_the_summer_court.say_2": {
+    "src_hash": "b44e223dae3e67dc1e85cf990136f5b5",
+    "text": "Acum poți intra în teleport.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.100881Z"
+  },
+  "npc.shirtalis_of_the_summer_court.say_4": {
+    "src_hash": "4dd892d9ddd77849696806ed20b195f9",
+    "text": "Acest loc a fost întotdeauna un loc în care campionii verii și iernii s-au ciocnit în luptă. De-a lungul secolelor, acest spectacol a atras aici multe creaturi să privească, să participe și să se deda cu activități mai puțin savuroase.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.102429Z"
+  },
+  "npc.sigurd.farewell_msg_1": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "La revedere. Întoarce-te curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.108941Z"
+  },
+  "npc.sigurd.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Desigur, răsfoiește-mi produsele. Puteți să vă uitați și la {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.109480Z"
+  },
+  "npc.sigurd.walkaway_msg_1": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "La revedere. Întoarce-te curând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.109900Z"
+  },
+  "npc.simon_the_beggar.no_i_see": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "Înțeleg.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.111440Z"
+  },
+  "npc.simon_the_beggar.say_11": {
+    "src_hash": "7b82e1e922974120118a565d5e316935",
+    "text": "Nu aveți toate elementele necesare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.112146Z"
+  },
+  "npc.simon_the_beggar.say_12": {
+    "src_hash": "7b82e1e922974120118a565d5e316935",
+    "text": "Nu aveți toate elementele necesare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.112587Z"
+  },
+  "npc.simon_the_beggar.say_13": {
+    "src_hash": "67ee55e526e40a4f4eb7b2add1c18927",
+    "text": "Se pare că ai deja acest supliment, nu încerca să-mi batjocorești fiule!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:51:59.113210Z"
   }
 }

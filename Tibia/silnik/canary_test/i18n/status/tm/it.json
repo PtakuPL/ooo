@@ -78070,5 +78070,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:50:53.047363Z"
+  },
+  "item.345.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "vaso di fiori",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:51:38.831976Z"
+  },
+  "item.3457.name": {
+    "src_hash": "2c997ee34e3a72c17421d81c1c3716ae",
+    "text": "pala",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:51:38.832794Z"
+  },
+  "item.346.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "vaso di fiori",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:51:38.833306Z"
+  },
+  "item.3463.name": {
+    "src_hash": "fbe322a89bc0ba531c3f0050e3935f28",
+    "text": "specchio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:51:38.833822Z"
+  },
+  "item.3473.name": {
+    "src_hash": "0c89c315ed1e1d0d3b56deded8a1ed8b",
+    "text": "mattarello",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:51:38.834782Z"
+  },
+  "item.3503.name": {
+    "src_hash": "e170e3a15923188224c1c2bd1477d451",
+    "text": "pacco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:51:38.837271Z"
   }
 }

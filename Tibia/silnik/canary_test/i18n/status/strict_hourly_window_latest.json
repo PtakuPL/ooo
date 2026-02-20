@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-20T17:09:18.668269Z",
-  "window_end_utc": "2026-02-20T18:09:18.668269Z",
+  "window_start_utc": "2026-02-20T17:10:28.730803Z",
+  "window_end_utc": "2026-02-20T18:10:28.730803Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,30 +8,36 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/suspicious_rejected.jsonl"
   ],
-  "total_cycles": 178,
+  "total_cycles": 177,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 178
+    "AUTO_TRANSLATE": 177
   },
-  "auto_translate_cycles": 178,
+  "auto_translate_cycles": 177,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 2553,
-  "guard_fail": 3925,
-  "guard_fail_rate_pct": 60.6,
+  "translated": 2481,
+  "guard_fail": 5203,
+  "guard_fail_rate_pct": 67.7,
   "no_progress_entries": 11,
-  "no_progress_rate_pct": 9.4,
-  "throughput_keys_per_h": 1480.1,
+  "no_progress_rate_pct": 9.5,
+  "throughput_keys_per_h": 1435.2,
   "suspicious_total": 4095,
-  "suspicious_total_raw": 23232,
-  "gt_translated": 128,
+  "suspicious_total_raw": 21741,
+  "gt_translated": 141,
   "gt_active": true,
   "top_guard_fail_targets": [
     {
+      "target": "pl/items.json",
+      "translated": 4,
+      "guard_fail": 1632,
+      "guard_command": 0
+    },
+    {
       "target": "es/items.json",
-      "translated": 70,
-      "guard_fail": 1034,
+      "translated": 95,
+      "guard_fail": 1551,
       "guard_command": 0
     },
     {
@@ -41,21 +47,9 @@
       "guard_command": 0
     },
     {
-      "target": "pl/items.json",
-      "translated": 2,
-      "guard_fail": 816,
-      "guard_command": 0
-    },
-    {
       "target": "ro/monsters.json",
       "translated": 8,
       "guard_fail": 92,
-      "guard_command": 0
-    },
-    {
-      "target": "ro/items.json",
-      "translated": 96,
-      "guard_fail": 80,
       "guard_command": 0
     },
     {
@@ -72,6 +66,12 @@
     },
     {
       "target": "it/spells.json",
+      "translated": 0,
+      "guard_fail": 60,
+      "guard_command": 0
+    },
+    {
+      "target": "ro/spells.json",
       "translated": 0,
       "guard_fail": 60,
       "guard_command": 0

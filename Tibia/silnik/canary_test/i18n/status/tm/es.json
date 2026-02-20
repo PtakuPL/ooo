@@ -153302,5 +153302,109 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T17:59:31.770575Z"
+  },
+  "item.12477.name": {
+    "src_hash": "736558d9afc17aa871d85062c9e75bb6",
+    "text": "pequeño taborete dorado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:09:46.884739Z"
+  },
+  "item.12479.name": {
+    "src_hash": "992c68cea99543f56194f5fb83b89222",
+    "text": "tarro canopo adornado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:09:46.885000Z"
+  },
+  "item.12495.name": {
+    "src_hash": "2eddf0bc4b623cdd4961cfba6bade222",
+    "text": "sirviente dorado muerto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:09:46.885371Z"
+  },
+  "item.12506.name": {
+    "src_hash": "43a28886c43adaea8f8fe35606346a98",
+    "text": "restos de una vasija canopa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:09:46.885711Z"
+  },
+  "item.12510.desc": {
+    "src_hash": "500567a84c9e2fbbd0496e1244978d17",
+    "text": "Este martillo es una versión menor del legendario Ban-Hammer.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:09:46.886105Z"
+  },
+  "item.12511.name": {
+    "src_hash": "992c68cea99543f56194f5fb83b89222",
+    "text": "tarro canopo adornado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:09:51.872217Z"
+  },
+  "item.12542.name": {
+    "src_hash": "84c5d20ab7460938f93a397ae4b00fd2",
+    "text": "colgante de escorpión dorado",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:09:51.872523Z"
+  },
+  "item.12543.name": {
+    "src_hash": "a20e0869e820d9a7d8c01f7b91c5a8c4",
+    "text": "colgante de hiena dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:09:51.872787Z"
+  },
+  "item.12551.name": {
+    "src_hash": "9c0f4b705e452dc247cd826a090e3af2",
+    "text": "siniestro pedazo de tela",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:09:51.873048Z"
+  },
+  "item.12553.name": {
+    "src_hash": "e994eddb43682e2c9f25476dda4fff7d",
+    "text": "trozo de tela voluminoso",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:09:51.873313Z"
+  },
+  "item.12556.name": {
+    "src_hash": "12ac52d02500b7f1fd3dedd490963907",
+    "text": "trozo de tela luminosa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:09:55.523578Z"
+  },
+  "item.12557.desc": {
+    "src_hash": "95e68430b7fcf60c186f452198fba715",
+    "text": "Este pescado, un ingrediente poco común, sólo se puede encontrar en las aguas más sucias, turbias y fangosas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:09:55.524876Z"
+  },
+  "item.12576.name": {
+    "src_hash": "9c0a44006bbd6053818d4d98198629a8",
+    "text": "Meandí",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T18:09:55.525243Z"
   }
 }

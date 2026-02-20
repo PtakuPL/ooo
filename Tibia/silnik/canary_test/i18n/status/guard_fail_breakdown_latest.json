@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-02-20T18:30:43.966189Z",
-  "window_start_utc": "2026-02-20T17:30:43.274413Z",
-  "window_end_utc": "2026-02-20T18:30:43.274413Z",
+  "timestamp": "2026-02-20T18:31:58.987400Z",
+  "window_start_utc": "2026-02-20T17:31:58.322204Z",
+  "window_end_utc": "2026-02-20T18:31:58.322204Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 213,
-  "rejected_entries_raw": 385,
+  "rejected_entries": 207,
+  "rejected_entries_raw": 379,
   "suspicious_entries": 3277,
-  "suspicious_entries_raw": 25244,
+  "suspicious_entries_raw": 25556,
   "guard_fail_entries": 123,
-  "guard_fail_sum": 7592,
+  "guard_fail_sum": 7596,
   "by_type": {
-    "identical_to_en": 179,
+    "identical_to_en": 173,
     "word_salad": 5,
     "fx_token": 3,
     "contains_tibia_proper_noun": 9,
@@ -24,19 +24,19 @@
     "cyrillic_latin_mix": 7
   },
   "by_source": {
-    "google_translate": 213
+    "google_translate": 207
   },
   "by_language": {
-    "es": 48,
+    "es": 42,
     "it": 33,
     "ro": 78,
     "pl": 47,
     "ru": 7
   },
   "by_category": {
-    "npc.json": 4,
-    "otclient_modules.json": 28,
+    "otclient_modules.json": 22,
     "scripts.json": 13,
+    "npc.json": 4,
     "client.json": 4,
     "cpp.json": 6,
     "achievements.json": 5,
@@ -53,13 +53,13 @@
     "monsters.json": 23
   },
   "by_severity": {
-    "CRITICAL": 184,
+    "CRITICAL": 178,
     "HIGH": 29
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 179
+      "count": 173
     },
     {
       "type": "mixed_language",
@@ -147,20 +147,6 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "otclient_modules.bestiary.tr_7",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "scripts.action_cushion.say_1",
       "count": 2,
       "types": {
@@ -176,6 +162,13 @@
     },
     {
       "key": "scripts.actions_resonance_chamber.say_1",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2
@@ -233,6 +226,13 @@
     },
     {
       "key": "talkaction.god.kv.msg_allkv_value",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.urmahlullu_ring.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

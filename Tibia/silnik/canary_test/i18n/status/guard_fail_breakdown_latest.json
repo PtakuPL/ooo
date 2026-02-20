@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T21:21:19.039199Z",
-  "window_start_utc": "2026-02-20T20:21:18.301511Z",
-  "window_end_utc": "2026-02-20T21:21:18.301511Z",
+  "timestamp": "2026-02-20T21:22:32.640102Z",
+  "window_start_utc": "2026-02-20T20:22:31.940785Z",
+  "window_end_utc": "2026-02-20T21:22:31.940785Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,40 +9,40 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 164,
-  "rejected_entries_raw": 412,
-  "suspicious_entries": 3080,
-  "suspicious_entries_raw": 25095,
-  "guard_fail_entries": 129,
-  "guard_fail_sum": 3334,
+  "rejected_entries_raw": 398,
+  "suspicious_entries": 3096,
+  "suspicious_entries_raw": 25159,
+  "guard_fail_entries": 128,
+  "guard_fail_sum": 3335,
   "by_type": {
     "identical_to_en": 140,
     "word_salad": 7,
-    "contains_tibia_proper_noun": 6,
     "mixed_language": 7,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7,
+    "contains_tibia_proper_noun": 6,
     "fx_token": 3
   },
   "by_source": {
     "google_translate": 164
   },
   "by_language": {
+    "pl": 38,
     "es": 40,
     "ro": 56,
-    "pl": 38,
     "ru": 7,
     "it": 8,
     "sv": 15
   },
   "by_category": {
-    "npc.json": 4,
-    "monsters.json": 30,
     "spells.json": 33,
+    "npc.json": 4,
     "quests.json": 3,
     "scripts.json": 14,
     "server.json": 17,
     "books.json": 1,
     "otclient_modules.json": 30,
+    "monsters.json": 30,
     "client.json": 4,
     "items.json": 28
   },
@@ -130,59 +130,6 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "monster.deathspawn.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "monster.demon.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "monster.sorcerer_familiar.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
-      }
-    },
-    {
-      "key": "monster.knight_familiar.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
-      }
-    },
-    {
-      "key": "monster.paladin_familiar.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
-      }
-    },
-    {
-      "key": "monster.druid_familiar.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
-      }
-    },
-    {
       "key": "spell.iksyapunac_wave.name",
       "count": 2,
       "types": {
@@ -191,6 +138,13 @@
     },
     {
       "key": "spell.mitmahseer_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2
@@ -226,6 +180,52 @@
     },
     {
       "key": "data.otservbr.global.npc.brasith.L61.1213",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.quara_constrictor_freeze.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.ravennouslavalurkertarget.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.tenebris_ultimate.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.lava_golem_soulfire2.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "otclient_modules.bestiary.tr_7",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "scripts.actions_lever_barrel.say_1",
       "count": 2,
       "types": {
         "identical_to_en": 2

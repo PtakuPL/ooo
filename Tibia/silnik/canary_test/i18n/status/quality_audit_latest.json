@@ -1,25 +1,17 @@
 {
-  "timestamp": "2026-02-20T18:49:21.738594Z",
+  "timestamp": "2026-02-20T18:50:32.105448Z",
   "checked_entries": 100,
-  "issues_found": 29,
+  "issues_found": 28,
   "issues_by_type": {
-    "identical_to_en": 13,
+    "identical_to_en": 12,
     "identical_to_en_exempt": 4,
     "artifact_token": 16,
-    "suspicious_log_high": 45,
-    "suspicious_log_critical": 74,
-    "suspicious_log_low": 5,
+    "suspicious_log_high": 98,
+    "suspicious_log_critical": 3,
     "suspicious_rejected_critical": 64,
     "suspicious_rejected_high": 4
   },
   "issues": [
-    {
-      "key": "monster.white_pale.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
     {
       "key": "monster.white_pale.desc",
       "lang": "it",

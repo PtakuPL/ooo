@@ -11,15 +11,15 @@
     "quality_score": 77.5
   },
   "pl": {
-    "last_cycle": "2026-02-20T18:45:41.775226Z",
-    "last_translated": 30,
-    "total_suspicious": 26661,
-    "total_rejected": 1895,
-    "total_gt_guard_fail": 5080,
-    "cycles": 1075,
+    "last_cycle": "2026-02-20T18:50:30.853417Z",
+    "last_translated": 2,
+    "total_suspicious": 26829,
+    "total_rejected": 1925,
+    "total_gt_guard_fail": 5137,
+    "cycles": 1077,
     "quality_score": 60.1,
-    "last_audit": "2026-02-20T18:49:21.738594Z",
-    "issues_count": 184201
+    "last_audit": "2026-02-20T18:50:32.105448Z",
+    "issues_count": 184332
   },
   "az": {
     "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -40,8 +40,8 @@
     "total_gt_guard_fail": 19003,
     "cycles": 1500,
     "quality_score": 60.1,
-    "last_audit": "2026-02-20T18:49:21.738594Z",
-    "issues_count": 328954
+    "last_audit": "2026-02-20T18:50:32.105448Z",
+    "issues_count": 328978
   },
   "pt": {
     "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -72,9 +72,9 @@
     "total_rejected": 774,
     "total_gt_guard_fail": 2289,
     "cycles": 383,
-    "quality_score": 84.3,
-    "last_audit": "2026-02-20T18:49:21.738594Z",
-    "issues_count": 73209
+    "quality_score": 79.4,
+    "last_audit": "2026-02-20T18:50:32.105448Z",
+    "issues_count": 73223
   },
   "ru": {
     "last_cycle": "2026-02-20T18:48:40.311206Z",
@@ -418,13 +418,13 @@
     "issues_count": 111
   },
   "sr": {
-    "last_cycle": "2026-02-20T18:38:24.440352Z",
+    "last_cycle": "2026-02-20T18:49:42.921801Z",
     "last_translated": 30,
-    "total_suspicious": 2567,
+    "total_suspicious": 2597,
     "total_rejected": 1,
     "total_gt_guard_fail": 498,
-    "cycles": 142,
-    "quality_score": 61.0,
+    "cycles": 143,
+    "quality_score": 61.3,
     "last_audit": "2026-02-20T18:39:00.673546Z",
     "issues_count": 86259
   },
@@ -557,8 +557,8 @@
     "total_gt_guard_fail": 4475,
     "cycles": 344,
     "quality_score": 60.1,
-    "last_audit": "2026-02-20T18:49:21.738594Z",
-    "issues_count": 180197
+    "last_audit": "2026-02-20T18:50:32.105448Z",
+    "issues_count": 180225
   },
   "sl": {
     "last_cycle": "2026-02-14T05:30:27.321573Z",

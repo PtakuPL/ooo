@@ -36486,5 +36486,117 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T21:45:35.224779Z"
+  },
+  "npc.sarina.say_1": {
+    "src_hash": "ca5af46d9c20d6cbd9f33d8c59caee9d",
+    "text": "Vill du köpa en fotboll för 111 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:56:57.139927Z"
+  },
+  "npc.sarina.say_2": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Här är den.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:56:57.140253Z"
+  },
+  "npc.scrutinon.stdmod_2": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vi skulle vilja tjäna dig lite tid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:56:57.142283Z"
+  },
+  "npc.sebastian.stdmod_2": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vi skulle vilja tjäna dig lite tid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:56:57.144046Z"
+  },
+  "npc.sebastian.stdmod_4": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Jag är kapten på det här fartyget.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:56:57.144588Z"
+  },
+  "npc.sebastian.stdmod_5": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Jag är kapten på det här fartyget.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:56:57.144952Z"
+  },
+  "npc.sebastian_nargor.stdmod_2": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vi skulle vilja tjäna dig lite tid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:56:57.146305Z"
+  },
+  "npc.sebastian_nargor.stdmod_4": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Jag är kapten på det här fartyget.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:56:57.146707Z"
+  },
+  "npc.sebastian_nargor.stdmod_5": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Jag är kapten på det här fartyget.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:56:57.147258Z"
+  },
+  "npc.ser_tybald.greet_msg_1": {
+    "src_hash": "665387f24d7145588216c95700974267",
+    "text": "Välkommen, barn. Har du kommit för att lära dig om {magic}? Då är du på rätt plats. Jag kan lära dig många användbara {spells}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:56:57.149489Z"
+  },
+  "npc.ser_tybald.say_1": {
+    "src_hash": "c1e746c2a21e46ca4783b2a87dbcf1b0",
+    "text": "Besvärjelser är mycket användbara i strid - inte bara för magiker, även om vi naturligtvis förlitar oss särskilt på dem för mycket av vår skadeproduktion. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:56:57.151106Z"
+  },
+  "npc.ser_tybald.say_10": {
+    "src_hash": "99f18f8cce9818b6a096eb22c8fcaf02",
+    "text": "Åh, skönheten i vår värld! Det är stort och utomordentligt mångsidigt. Märkliga öar, vackra städer och häftiga monster som strövar omkring i vildmarkerna. Mysterier, äventyr, faror runt varje hörn. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:56:57.152912Z"
+  },
+  "npc.ser_tybald.say_11": {
+    "src_hash": "095a07d56a7da82ab7ef9b35a18e4912",
+    "text": "När du har nått nivå 8 är du redo att välja ett yrke och åka till Tibians fastland.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:56:57.154407Z"
+  },
+  "npc.ser_tybald.say_12": {
+    "src_hash": "fabf70ea563b1a2875349fcdabe40dcb",
+    "text": "Ditt val av yrke kommer att avgöra ditt liv i Tibia, och de färdigheter och stridstekniker du kan använda. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:56:57.156097Z"
   }
 }

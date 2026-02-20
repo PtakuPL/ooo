@@ -75574,5 +75574,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T16:37:07.324920Z"
+  },
+  "data.otservbr.global.npc.flickering.soul.L198.1612": {
+    "src_hash": "91a6358bcce8dd45644aa9ba82562ef9",
+    "text": "Sii salutato, anima viva!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.494401Z"
+  },
+  "data.otservbr.global.npc.flora.L93.35": {
+    "src_hash": "d602ed24ed1dafc7a7f11a3fe0ccf18c",
+    "text": "Torna presto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.494851Z"
+  },
+  "data.otservbr.global.npc.florentine.L59.579": {
+    "src_hash": "184ef8a0a9052ac443338e263263ea49",
+    "text": "Benvenuto, |PLAYERNAME|. Cosa posso fare per lei?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.495337Z"
+  },
+  "data.otservbr.global.npc.florentine.L60.580": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturalmente, basta sfogliare la mia merce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.495748Z"
+  },
+  "data.otservbr.global.npc.frafnar.L92.107": {
+    "src_hash": "a7dc2110e3ccad0287415232d7550f4c",
+    "text": "Non vedi che sto cercando di scrivere una poesia? <sighs> Allora qual è il problema?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.496879Z"
+  },
+  "data.otservbr.global.npc.frans.L130.252": {
+    "src_hash": "0544ac07624071c0d88d821ab0a1f9f7",
+    "text": "Ti saluto, Simula! Qual è il tuo bisogno?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.497318Z"
+  },
+  "data.otservbr.global.npc.frederik.L153.759": {
+    "src_hash": "de9745115201ef028dffb3bf12fdd602",
+    "text": "Ciao a tutti e benvenuti nel mio piccolo negozio di magia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.498533Z"
+  },
+  "data.otservbr.global.npc.frederik.L154.760": {
+    "src_hash": "4ce8b0a4753aab87c199d94c7581cf9d",
+    "text": "Sì, ciao.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.498877Z"
+  },
+  "data.otservbr.global.npc.frederik.L155.761": {
+    "src_hash": "4ce8b0a4753aab87c199d94c7581cf9d",
+    "text": "Sì, ciao.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.499253Z"
+  },
+  "data.otservbr.global.npc.freezhild.L80.1296": {
+    "src_hash": "2421dcbda78ddbe68998b2c69cedfd15",
+    "text": "Spero che tu abbia una giornata fredda, amico.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.500038Z"
+  },
+  "data.otservbr.global.npc.freezhild.L81.1297": {
+    "src_hash": "2421dcbda78ddbe68998b2c69cedfd15",
+    "text": "Spero che tu abbia una giornata fredda, amico.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.500556Z"
+  },
+  "data.otservbr.global.npc.freezhild.L82.1298": {
+    "src_hash": "f0c3959750f0568d0e1a58f680a3726a",
+    "text": "Benvenuto, nella mia bella casa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.500936Z"
+  },
+  "data.otservbr.global.npc.frodo.L107.970": {
+    "src_hash": "9de521411dc9efd33e894a0f848a5e01",
+    "text": "Benvenuti nella capanna di Frodo. Hai sentito parlare di {news}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.501375Z"
+  },
+  "data.otservbr.global.npc.frodo.L108.971": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Per favore, torna di tanto in tanto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.501757Z"
+  },
+  "data.otservbr.global.npc.frodo.L109.972": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Per favore, torna di tanto in tanto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.502135Z"
+  },
+  "data.otservbr.global.npc.frosty.L148.1121": {
+    "src_hash": "4ecf3c813ae77e18f6bc627b684b07ce",
+    "text": "No, non puoi avere il mio naso! Se hai bisogno di un {carrot}, vai al mercato o semplicemente trovane uno! Oppure sei venuto a portarmi un {percht skull}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.502966Z"
+  },
+  "data.otservbr.global.npc.gabel.L182.1216": {
+    "src_hash": "1ea1cceeb0403110ed0c10a168ef3913",
+    "text": "Addio, straniero. Possa Uman aprire le vostre menti e i vostri cuori alla saggezza di Daraman!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.503487Z"
+  },
+  "data.otservbr.global.npc.gabel.L183.1217": {
+    "src_hash": "1ea1cceeb0403110ed0c10a168ef3913",
+    "text": "Addio, straniero. Possa Uman aprire le vostre menti e i vostri cuori alla saggezza di Daraman!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.503989Z"
+  },
+  "data.otservbr.global.npc.galuna.L59.1204": {
+    "src_hash": "17e44e52564b6c011e931eddf5c008cd",
+    "text": "Oh, per favore entra, |PLAYERNAME|. Di che cosa hai bisogno? Armi a distanza? Ne vendo moltissimi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.505560Z"
+  },
+  "data.otservbr.global.npc.gamel.L103.431": {
+    "src_hash": "2c06b22f948013cb7c9cc96ca316478c",
+    "text": "Ciao. Racconta agli altri del mio piccolo negozio qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.506455Z"
+  },
+  "data.otservbr.global.npc.gamel.L104.432": {
+    "src_hash": "2c06b22f948013cb7c9cc96ca316478c",
+    "text": "Ciao. Racconta agli altri del mio piccolo negozio qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.506910Z"
+  },
+  "data.otservbr.global.npc.gamel.L71.430": {
+    "src_hash": "85a7df9a3b20746ffa8c96a1c8edebd4",
+    "text": "Pssst! Tacere. Desideri {buy} qualcosa?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.507374Z"
+  },
+  "data.otservbr.global.npc.gamon.L75.376": {
+    "src_hash": "3380dac1fb5dd4320d19d854113a9f5a",
+    "text": "Piacere di conoscerti, Mister |PLAYERNAME|! Cerchi mobili? Sei arrivato nel posto giusto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.507878Z"
+  },
+  "data.otservbr.global.npc.gamon.L76.377": {
+    "src_hash": "4e73f4b084d53ec679e0a62d8efaaa16",
+    "text": "Tornerai. Lo fanno tutti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.508237Z"
+  },
+  "data.otservbr.global.npc.gamon.L78.379": {
+    "src_hash": "43a2e4f95e5ae7de6833153915380c4e",
+    "text": "Dai un'occhiata. La maggior parte dei mobili viene fornita in pratici kit. Usali a casa tua per assemblare i mobili. Vuoi vedere solo un certo tipo di arredamento?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.509224Z"
+  },
+  "data.otservbr.global.npc.gareth.L59.1399": {
+    "src_hash": "d4a74b09413ac14b6808e25e31c96fa4",
+    "text": "Benvenuti nel meraviglioso Museo delle Arti Tibiane, aperto solo di recente! Ingresso gratuito per tutti, ma i mecenati sono ricercati e favoriti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.510051Z"
+  },
+  "data.otservbr.global.npc.gareth.L61.1400": {
+    "src_hash": "2f266aed5a3292e96ab3f29915dfa20d",
+    "text": "Ti ha mandato lo Druid di Crunor? Sembra sapere che questo nuovo museo brilla come un diamante. Buon soggiorno! Se ti piace {support} questo posto, parlami.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.510851Z"
+  },
+  "data.otservbr.global.npc.gareth.L63.1401": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Come va il tuo {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.511337Z"
+  },
+  "data.otservbr.global.npc.gareth.L65.1402": {
+    "src_hash": "41d1ae4731e2260597d822dd0f0d05f5",
+    "text": "Ancora tu? Come hai potuto fuggire dall'ultimo piano? I cultisti dovrebbero avere 'dealt' con te! È più forte di me. Devi lasciare questo posto adesso. Non c'è altro da dire.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.512135Z"
+  },
+  "data.otservbr.global.npc.gate.guardian.L75.1275": {
+    "src_hash": "716f2c74dc95c2c80ed625ec37878d7e",
+    "text": "Chhhhzz. Brutto umanità! Faresti meglio a farti una bella riazzzon per essere qui!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.512652Z"
+  },
+  "data.otservbr.global.npc.gelagos.L61.302": {
+    "src_hash": "fd2aac25f6b1d93adba852f8ca8d2b0c",
+    "text": "Eheheh.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.512999Z"
+  },
+  "data.otservbr.global.npc.gelagos.L62.303": {
+    "src_hash": "be2f7f5e179e50adc279f491ac58a681",
+    "text": "Spero che tu muoia e lo perda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.513390Z"
+  },
+  "data.otservbr.global.npc.gelidrazahs.thirst.L83.286": {
+    "src_hash": "4ff16a7f17b7c7f22cf480bcd0060d48",
+    "text": "Sei venuto a rispondere alle domande di Gelidrazah?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.513928Z"
+  },
+  "data.otservbr.global.npc.gerimor.L452.371": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "Addio, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.515139Z"
+  },
+  "data.otservbr.global.npc.gerimor.L58.366": {
+    "src_hash": "3c780c4126efe612c9dab5df4895ab7e",
+    "text": "Saluti, |PLAYERNAME|! Vi do il benvenuto in questo sacro {place}. Se sei interessato a {missions} basta chiedere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.515702Z"
+  },
+  "data.otservbr.global.npc.gewen.L120.1496": {
+    "src_hash": "14b3e81ec8e2ff2c2783c71d1f831c03",
+    "text": "Saluti, viaggiatore |PLAYERNAME|. Dove vuoi che vada {fly} tu? Oppure ti serve un abbonamento settimanale per il trasporto pubblico camion Kazordoon?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.516460Z"
+  },
+  "data.otservbr.global.npc.ghorza.L137.1510": {
+    "src_hash": "0aa148b4c69185fdc45f079e06ff358c",
+    "text": "Ciao, squallido umano.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:42:12.517229Z"
   }
 }

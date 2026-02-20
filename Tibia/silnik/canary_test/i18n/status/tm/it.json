@@ -78494,5 +78494,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:34:36.208932Z"
+  },
+  "item.37968.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:42:22.993909Z"
+  },
+  "item.37969.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:42:22.994257Z"
+  },
+  "item.37970.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:42:22.994624Z"
+  },
+  "item.386.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "C'è un buco nel soffitto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:42:22.997861Z"
+  },
+  "item.386.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "pavimento sporco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:42:22.998143Z"
+  },
+  "item.388.name": {
+    "src_hash": "c91ec46447c1e698aae4701d667ca1cc",
+    "text": "stalagmiti",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:42:23.001336Z"
   }
 }

@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T18:42:05.300131Z",
-  "window_start_utc": "2026-02-20T17:42:04.567217Z",
-  "window_end_utc": "2026-02-20T18:42:04.567217Z",
+  "timestamp": "2026-02-20T18:42:46.714421Z",
+  "window_start_utc": "2026-02-20T17:42:46.004487Z",
+  "window_end_utc": "2026-02-20T18:42:46.004487Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,11 +9,11 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 147,
-  "rejected_entries_raw": 343,
+  "rejected_entries_raw": 348,
   "suspicious_entries": 3116,
-  "suspicious_entries_raw": 25277,
-  "guard_fail_entries": 119,
-  "guard_fail_sum": 7514,
+  "suspicious_entries_raw": 28157,
+  "guard_fail_entries": 122,
+  "guard_fail_sum": 7524,
   "by_type": {
     "identical_to_en": 118,
     "contains_tibia_proper_noun": 7,

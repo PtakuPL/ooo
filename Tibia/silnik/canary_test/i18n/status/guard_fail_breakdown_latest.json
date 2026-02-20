@@ -1,38 +1,38 @@
 {
-  "timestamp": "2026-02-20T22:26:17.400521Z",
-  "window_start_utc": "2026-02-20T21:26:16.622687Z",
-  "window_end_utc": "2026-02-20T22:26:16.622687Z",
+  "timestamp": "2026-02-20T22:27:18.426506Z",
+  "window_start_utc": "2026-02-20T21:27:16.866050Z",
+  "window_end_utc": "2026-02-20T22:27:16.866050Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 127,
+  "rejected_entries": 124,
   "rejected_entries_raw": 320,
-  "suspicious_entries": 3160,
-  "suspicious_entries_raw": 25301,
-  "guard_fail_entries": 108,
-  "guard_fail_sum": 7465,
+  "suspicious_entries": 3184,
+  "suspicious_entries_raw": 28170,
+  "guard_fail_entries": 110,
+  "guard_fail_sum": 7471,
   "by_type": {
-    "identical_to_en": 119,
-    "word_salad": 2,
+    "identical_to_en": 117,
+    "word_salad": 1,
     "contains_tibia_proper_noun": 5,
     "mixed_language": 6
   },
   "by_source": {
-    "google_translate": 127
+    "google_translate": 124
   },
   "by_language": {
+    "ro": 46,
     "es": 28,
-    "ro": 49,
     "sv": 7,
     "pl": 41,
     "it": 2
   },
   "by_category": {
+    "scripts.json": 4,
     "npc.json": 4,
-    "scripts.json": 7,
     "otclient_modules.json": 20,
     "monsters.json": 30,
     "cpp.json": 5,
@@ -42,13 +42,13 @@
     "spells.json": 26
   },
   "by_severity": {
-    "CRITICAL": 121,
+    "CRITICAL": 118,
     "HIGH": 6
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 119
+      "count": 117
     },
     {
       "type": "mixed_language",
@@ -60,7 +60,7 @@
     },
     {
       "type": "word_salad",
-      "count": 2
+      "count": 1
     }
   ],
   "top_keys": [
@@ -175,38 +175,38 @@
       }
     },
     {
-      "key": "npc.al_dee.stdmod_41",
-      "count": 1,
-      "types": {
-        "word_salad": 1
-      }
-    },
-    {
-      "key": "gamestore.error.purchase_cancelled",
-      "count": 1,
-      "types": {
-        "word_salad": 1
-      }
-    },
-    {
-      "key": "scripts.action_cat_basket.say_1",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "scripts.action_cushion.say_1",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
       "key": "scripts.actions_lever_barrel.say_1",
       "count": 1,
       "types": {
         "identical_to_en": 1
+      }
+    },
+    {
+      "key": "scripts.actions_palanca.msg_1",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "scripts.actions_pyramids1.msg_1",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "scripts.actions_resonance_chamber.say_1",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "npc.al_dee.stdmod_41",
+      "count": 1,
+      "types": {
+        "word_salad": 1
       }
     }
   ]

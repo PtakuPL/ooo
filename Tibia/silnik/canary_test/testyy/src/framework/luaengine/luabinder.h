@@ -37,24 +37,15 @@
 /// pushes the result to lua.
 namespace luabinder
 {
-    /// Pack arguments from lua stack into a tuple recursively
-    template<int N>
-    struct pack_values_into_tuple
+    /// Pack arguments from lua stack into a tuple using fold expression (non-recursive).
+    /// Pops values in reverse order (N-1 down to 0) to match original Lua stack semantics.
+    template<typename Tuple, std::size_t... I>
+    void pack_values_into_tuple_impl(Tuple& tuple, LuaInterface* lua, std::index_sequence<I...>)
     {
-        template<typename Tuple>
-        static void call(Tuple& tuple, LuaInterface* lua)
-        {
-            using ValueType = std::tuple_element_t<N - 1, Tuple>;
-            std::get<N - 1>(tuple) = lua->polymorphicPop<ValueType>();
-            pack_values_into_tuple<N - 1>::call(tuple, lua);
-        }
-    };
-    template<>
-    struct pack_values_into_tuple<0>
-    {
-        template<typename Tuple>
-        static void call(const Tuple& /*tuple*/, const LuaInterface* /*lua*/) {}
-    };
+        constexpr auto N = sizeof...(I);
+        // fold expression: pop in reverse order (N-1, N-2, ..., 0)
+        ((std::get<N - 1 - I>(tuple) = lua->polymorphicPop<std::tuple_element_t<N - 1 - I, Tuple>>()), ...);
+    }
 
     /// C++ function caller that can push results to lua
     template<typename Ret, typename F, typename... Args>
@@ -77,31 +68,13 @@ namespace luabinder
         return 0;
     }
 
-    /// Expand arguments from tuple for later calling the C++ function
-    template<int N, typename Ret>
-    struct expand_fun_arguments
-    {
-        template<typename Tuple, typename F, typename... Args>
-        static int call(const Tuple& tuple, const F& f, LuaInterface* lua, const Args&... args)
-        {
-            return expand_fun_arguments<N - 1, Ret>::call(tuple, f, lua, std::get<N - 1>(tuple), args...);
-        }
-    };
-    template<typename Ret>
-    struct expand_fun_arguments<0, Ret>
-    {
-        template<typename Tuple, typename F, typename... Args>
-        static int call(const Tuple& /*tuple*/, const F& f, LuaInterface* lua, const Args&... args)
-        {
-            return call_fun_and_push_result<Ret>(f, lua, args...);
-        }
-    };
-
-    /// Bind different types of functions generating a lambda
+    /// Bind different types of functions generating a lambda.
+    /// Uses fold expression + std::apply instead of recursive templates
+    /// to avoid deep template instantiation that triggers MSVC ICE C1001.
     template<typename Ret, typename F, typename Tuple>
     LuaCppFunction bind_fun_specializer(const F& f)
     {
-        enum { N = std::tuple_size_v<Tuple> };
+        constexpr auto N = std::tuple_size_v<Tuple>;
         return [=](LuaInterface* lua) -> int {
             while (lua->stackSize() != N) {
                 if (lua->stackSize() < N)
@@ -110,8 +83,10 @@ namespace luabinder
                     g_lua.pop();
             }
             Tuple tuple;
-            pack_values_into_tuple<N>::call(tuple, lua);
-            return expand_fun_arguments<N, Ret>::call(tuple, f, lua);
+            pack_values_into_tuple_impl(tuple, lua, std::make_index_sequence<N>{});
+            return std::apply([&](const auto&... args) {
+                return call_fun_and_push_result<Ret>(f, lua, args...);
+            }, tuple);
         };
     }
 

@@ -485,12 +485,14 @@ T LuaInterface::castValue(int index)
     T o;
     if constexpr (std::is_same_v<T, std::string_view>) {
         o = g_lua.toVString(index);
-    } else if (!luavalue_cast(index, o))
+    } else {
+        if (!luavalue_cast(index, o))
 #ifdef _MSC_VER
-        throw LuaBadValueCastException(typeName(index), "(type info unavailable on MSVC)");
+            throw LuaBadValueCastException(typeName(index), "(type info unavailable on MSVC)");
 #else
-        throw LuaBadValueCastException(typeName(index), stdext::demangle_type<T>());
+            throw LuaBadValueCastException(typeName(index), stdext::demangle_type<T>());
 #endif
+    }
     return o;
 }
 

@@ -38318,5 +38318,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:25:22.572894Z"
+  },
+  "item.12329.name": {
+    "src_hash": "ceb185d06c0e157abe4c7255bc1aad2d",
+    "text": "мёртвый драптор",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:26:40.121815Z"
+  },
+  "item.12330.name": {
+    "src_hash": "ceb185d06c0e157abe4c7255bc1aad2d",
+    "text": "мёртвый драптор",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:26:40.122912Z"
   }
 }

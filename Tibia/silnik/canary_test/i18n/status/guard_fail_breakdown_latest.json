@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-02-20T20:35:30.710807Z",
-  "window_start_utc": "2026-02-20T19:35:29.996961Z",
-  "window_end_utc": "2026-02-20T20:35:29.996961Z",
+  "timestamp": "2026-02-20T20:36:23.239935Z",
+  "window_start_utc": "2026-02-20T19:36:22.519983Z",
+  "window_end_utc": "2026-02-20T20:36:22.519983Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 189,
-  "rejected_entries_raw": 412,
-  "suspicious_entries": 3591,
-  "suspicious_entries_raw": 22288,
+  "rejected_entries": 194,
+  "rejected_entries_raw": 417,
+  "suspicious_entries": 3557,
+  "suspicious_entries_raw": 22229,
   "guard_fail_entries": 123,
-  "guard_fail_sum": 7782,
+  "guard_fail_sum": 7791,
   "by_type": {
-    "identical_to_en": 148,
     "fx_token": 3,
+    "identical_to_en": 153,
     "contains_tibia_proper_noun": 17,
     "word_salad": 7,
     "mixed_scripts": 22,
@@ -24,19 +24,17 @@
     "mixed_language": 9
   },
   "by_source": {
-    "google_translate": 189
+    "google_translate": 194
   },
   "by_language": {
-    "sv": 11,
-    "pl": 43,
     "es": 40,
+    "pl": 37,
     "it": 25,
     "ru": 22,
-    "ro": 48
+    "ro": 62,
+    "sv": 8
   },
   "by_category": {
-    "monsters.json": 26,
-    "otclient_modules.json": 16,
     "client.json": 12,
     "cpp.json": 6,
     "npc.json": 4,
@@ -46,19 +44,21 @@
     "modules.json": 3,
     "items.json": 27,
     "server.json": 17,
+    "monsters.json": 23,
     "spells.json": 33,
     "quests.json": 3,
     "scripts.json": 14,
-    "books.json": 1
+    "books.json": 1,
+    "otclient_modules.json": 24
   },
   "by_severity": {
-    "CRITICAL": 155,
-    "HIGH": 34
+    "HIGH": 34,
+    "CRITICAL": 160
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 148
+      "count": 153
     },
     {
       "type": "mixed_scripts",
@@ -225,13 +225,6 @@
       }
     },
     {
-      "key": "monster.deathspawn.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "cpp.title.name_38",
       "count": 2,
       "types": {
@@ -251,6 +244,14 @@
       "count": 2,
       "types": {
         "identical_to_en": 2
+      }
+    },
+    {
+      "key": "achievement.26.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
       }
     }
   ]

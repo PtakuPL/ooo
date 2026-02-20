@@ -79974,5 +79974,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T20:33:26.095875Z"
+  },
+  "raid.zevelon_duskbringer.name": {
+    "src_hash": "5ce47d3193e6d4fdcb52a667ed3dd600",
+    "text": "Zevelon Duskbringer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:35:48.462971Z"
   }
 }

@@ -71822,5 +71822,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T20:34:50.639640Z"
+  },
+  "otclient_modules.game_stash_otui.tr_6": {
+    "src_hash": "ea7cda1d559f7a95a9ea0cb5f1255897",
+    "text": "Aprovizionare Stash",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:35:59.276389Z"
+  },
+  "otclient_modules.character_otui.tr_3": {
+    "src_hash": "a4222611565566b1896cbf9d327747bf",
+    "text": "Angajarea locurilor de muncă:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:36:11.923641Z"
+  },
+  "otclient_modules.character_otui.tr_32": {
+    "src_hash": "d2203cb1237cb6460cbad94564e39345",
+    "text": "Regulat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:36:11.924198Z"
+  },
+  "otclient_modules.character_otui.tr_33": {
+    "src_hash": "6b46ae48421828d9973deec5fa9aa0c3",
+    "text": "Sorta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:36:11.924370Z"
+  },
+  "otclient_modules.character_otui.tr_34": {
+    "src_hash": "9363c86ac32448d48e5e2fe5a05427ca",
+    "text": "Realizat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:36:16.435525Z"
+  },
+  "otclient_modules.character_otui.tr_35": {
+    "src_hash": "d0f2e5376298c880665077b565ffd7dd",
+    "text": "Blocat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:36:16.435713Z"
+  },
+  "otclient_modules.character_otui.tr_37": {
+    "src_hash": "dacad8af532c23d1dae8df05880d43b3",
+    "text": "Clasa 4: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:36:16.435903Z"
   }
 }

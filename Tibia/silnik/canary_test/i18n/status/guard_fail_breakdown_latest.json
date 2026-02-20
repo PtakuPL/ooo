@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T20:07:14.752200Z",
-  "window_start_utc": "2026-02-20T19:07:14.060987Z",
-  "window_end_utc": "2026-02-20T20:07:14.060987Z",
+  "timestamp": "2026-02-20T20:08:05.848720Z",
+  "window_start_utc": "2026-02-20T19:08:05.154469Z",
+  "window_end_utc": "2026-02-20T20:08:05.154469Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,11 +9,11 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 214,
-  "rejected_entries_raw": 367,
+  "rejected_entries_raw": 372,
   "suspicious_entries": 3675,
-  "suspicious_entries_raw": 24683,
-  "guard_fail_entries": 126,
-  "guard_fail_sum": 5838,
+  "suspicious_entries_raw": 24586,
+  "guard_fail_entries": 128,
+  "guard_fail_sum": 5862,
   "by_type": {
     "identical_to_en": 172,
     "word_salad": 7,
@@ -27,16 +27,16 @@
     "google_translate": 214
   },
   "by_language": {
-    "es": 40,
     "pl": 43,
     "it": 41,
+    "es": 40,
     "ro": 57,
     "ru": 22,
     "sv": 11
   },
   "by_category": {
-    "npc.json": 4,
     "spells.json": 53,
+    "npc.json": 4,
     "items.json": 27,
     "quests.json": 3,
     "scripts.json": 6,
@@ -218,13 +218,6 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "spell.rotthingholy_ulus.name",
       "count": 2,
       "types": {
@@ -247,6 +240,13 @@
     },
     {
       "key": "spell.rotthing_shaper.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.tarbaz_tp.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

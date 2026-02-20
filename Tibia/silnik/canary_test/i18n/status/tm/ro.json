@@ -71518,5 +71518,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T20:00:22.186994Z"
+  },
+  "data.otservbr.global.npc.captain.dreadnought.L433.1018": {
+    "src_hash": "bdb2a6103dff3f59683a577d5858503e",
+    "text": "Ei bine, un nou",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:59.285496Z"
   }
 }

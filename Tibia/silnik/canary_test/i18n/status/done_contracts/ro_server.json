@@ -3,8 +3,8 @@
   "lang": "ro",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": true,
-      "guard_placeholder": 0,
+      "ok": false,
+      "guard_placeholder": 4,
       "guard_pipe": 0
     },
     "guard_command_below_threshold": {
@@ -23,6 +23,6 @@
       "has_quality_data": true
     }
   },
-  "is_done": true,
-  "timestamp": "2026-02-20T19:26:00.397723Z"
+  "is_done": false,
+  "timestamp": "2026-02-20T20:07:59.413542Z"
 }

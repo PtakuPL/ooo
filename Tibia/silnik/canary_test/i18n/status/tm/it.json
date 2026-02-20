@@ -79462,5 +79462,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T20:01:18.254364Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.L64.881": {
+    "src_hash": "91cafd9ed503a906d4a9dbde9373f615",
+    "text": "Ehi, amico! Cerchi uno {passage}, eh.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.095202Z"
+  },
+  "data.otservbr.global.npc.hawkhurst.ingol.L64.808": {
+    "src_hash": "91cafd9ed503a906d4a9dbde9373f615",
+    "text": "Ehi, amico! Cerchi uno {passage}, eh.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.096114Z"
+  },
+  "data.otservbr.global.npc.henricus.L380.1617": {
+    "src_hash": "1f2fe19b292a922bbdcbf6f793f18b01",
+    "text": "Stai sempre in guardia, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.097053Z"
+  },
+  "data.otservbr.global.npc.henricus.L381.1618": {
+    "src_hash": "097549e900b2d712d091f169d833e03b",
+    "text": "Questa fretta sgraziata è molto sospetta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.097478Z"
+  },
+  "data.otservbr.global.npc.hireling.L792.1381": {
+    "src_hash": "f8bfbe1829d4c38e56699f0fb3bb651d",
+    "text": "È bello vederti Sono sempre al tuo {service}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.098025Z"
+  },
+  "data.otservbr.global.npc.hireling.L793.1382": {
+    "src_hash": "c4e64ce0ff5d5866857024d5aec7cf90",
+    "text": "Addio, |PLAYERNAME|, sarò qui se avrai ancora bisogno di me.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.098645Z"
+  },
+  "data.otservbr.global.npc.hireling.L794.1383": {
+    "src_hash": "737f9f60ee1047ae862449129dbe60d6",
+    "text": "Torna presto!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.098967Z"
+  },
+  "data.otservbr.global.npc.hjaern.L234.1020": {
+    "src_hash": "00835d63e500cbea55ad90f8a88d8c16",
+    "text": "Fatti salutare, |PLAYERNAME|. Il mondo {spiritual} guarda te e le tue azioni.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.099458Z"
+  },
+  "data.otservbr.global.npc.hoggle.L59.1549": {
+    "src_hash": "1602b615a53c201714b0acb1d1375a04",
+    "text": "Benvenuti nella mia umile casa!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.099836Z"
+  },
+  "data.otservbr.global.npc.humgolf.L92.710": {
+    "src_hash": "ad046245c4b8bd285492a780cd32ef58",
+    "text": "|PLAYERNAME|, buona giornata.. o buona notte, qualunque cosa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.100724Z"
+  },
+  "data.otservbr.global.npc.humphrey.L111.77": {
+    "src_hash": "5153e3e805fb28dab0342bf66f3dd2b7",
+    "text": "Benvenuto, nobile |PLAYERNAME|",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.101090Z"
+  },
+  "data.otservbr.global.npc.humphrey.L112.78": {
+    "src_hash": "9fd781807a24c6b3d65ea9d240da5bb1",
+    "text": "Addio, nobile |PLAYERNAME|",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.101448Z"
+  },
+  "data.otservbr.global.npc.humphrey.L113.79": {
+    "src_hash": "9fd781807a24c6b3d65ea9d240da5bb1",
+    "text": "Addio, nobile |PLAYERNAME|",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.101823Z"
+  },
+  "data.otservbr.global.npc.huntsman.L101.381": {
+    "src_hash": "c9ddc3fa46cf8dbf1715251d9caa3b8b",
+    "text": "Arrivederci. Occuparsi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.102263Z"
+  },
+  "data.otservbr.global.npc.huntsman.L102.382": {
+    "src_hash": "72c6f681201030fa20c4be66b4fd1131",
+    "text": "Posso ancora vederti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.102610Z"
+  },
+  "data.otservbr.global.npc.huntsman.L103.383": {
+    "src_hash": "ddff1d9bc91d4400197e4cb996c431f5",
+    "text": "Salve socio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.102902Z"
+  },
+  "data.otservbr.global.npc.hyacinth.L219.654": {
+    "src_hash": "37106971bf2a1339b11de7e12249b858",
+    "text": "Che Crunor ti benedica.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:07:30.103285Z"
   }
 }

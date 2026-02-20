@@ -87,11 +87,11 @@
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 105,
-    "consistency": 9,
+    "issues_total": 106,
+    "consistency": 10,
     "pl_reference": 68,
     "length_ratio": 28,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-20T22:42:38.280004Z"
+  "validated_at": "2026-02-20T22:52:26.914502Z"
 }

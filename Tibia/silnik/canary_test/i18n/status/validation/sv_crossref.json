@@ -4,10 +4,10 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T22:43:20.567649Z",
-  "issues_total": 426,
+  "checked_at": "2026-02-20T22:52:53.016911Z",
+  "issues_total": 428,
   "issues_by_type": {
-    "consistency_in_language": 11,
+    "consistency_in_language": 13,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 15
   },
@@ -25,6 +25,38 @@
         "cpp:cpp.inspect.body_head",
         "items:item.33932.name",
         "items:item.33937.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Close",
+      "variants": [
+        "Nära",
+        "Stäng"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "libs:lib.player.modal_button_close",
+        "otclient_modules:otclient_modules.calendar_otui.tr_1",
+        "otclient_modules:otclient_modules.console.tr_32"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "No",
+      "variants": [
+        "Inga",
+        "Nej"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "libs:lib.player.modal_button_no",
+        "otclient_modules:otclient_modules.character.tr_56",
+        "otclient_modules:otclient_modules.charms.tr_1",
+        "otclient_modules:otclient_modules.charms.tr_13",
+        "otclient_modules:otclient_modules.charms.tr_17"
       ]
     },
     {
@@ -510,78 +542,6 @@
       "lang": "manafluid"
     },
     {
-      "key": "item.10201.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dragon scale boots",
-      "pl": "smok łuska buty",
-      "lang": "dragon scale boots"
-    },
-    {
-      "key": "item.10210.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "lizard weapon rack",
-      "pl": "stojak na broń jaszczurczą",
-      "lang": "lizard weapon rack"
-    },
-    {
-      "key": "item.10211.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "lizard weapon rack",
-      "pl": "stojak na broń jaszczurczą",
-      "lang": "lizard weapon rack"
-    },
-    {
-      "key": "item.10216.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dragon statue kit",
-      "pl": "zestaw posągu smoka",
-      "lang": "dragon statue kit"
-    },
-    {
-      "key": "item.10221.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dead killer caiman",
-      "pl": "martwy kajman zabójczy",
-      "lang": "dead killer caiman"
-    },
-    {
-      "key": "item.10222.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dead killer caiman",
-      "pl": "martwy kajman zabójczy",
-      "lang": "dead killer caiman"
-    },
-    {
-      "key": "item.10223.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dead killer caiman",
-      "pl": "martwy kajman zabójczy",
-      "lang": "dead killer caiman"
-    },
-    {
-      "key": "item.10224.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "dead killer caiman",
-      "pl": "martwy kajman zabójczy",
-      "lang": "dead killer caiman"
-    },
-    {
       "key": "item.10389.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -591,123 +551,6 @@
       "lang": "sai"
     },
     {
-      "key": "item.27511.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It's black",
-      "pl": "Jest czarny",
-      "lang": "It's black"
-    },
-    {
-      "key": "item.30215.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.30218.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.30273.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.30336.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snowman",
-      "pl": "sNiewman",
-      "lang": "snowman"
-    },
-    {
-      "key": "item.3274.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "axe",
-      "pl": "Topór",
-      "lang": "axe"
-    },
-    {
-      "key": "item.7107.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.7740.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.800.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
-    },
-    {
-      "key": "item.9083.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sweetness",
-      "pl": "Słodycz",
-      "lang": "Sweetness"
-    },
-    {
-      "key": "lib.player.modal_button_close",
-      "category": "libs",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Close",
-      "pl": "Zamknij",
-      "lang": "Close"
-    },
-    {
-      "key": "lib.player.modal_button_no",
-      "category": "libs",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "lib.player.modal_button_yes",
-      "category": "libs",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Yes",
-      "pl": "Tak",
-      "lang": "Yes"
-    },
-    {
       "key": "module.daily_reward.text2",
       "category": "modules",
       "type": "pl_reference_missing_translation",
@@ -715,15 +558,6 @@
       "en": "12/10/2020 - 20:30",
       "pl": "12.10.2020 - 20:30",
       "lang": "12/10/2020 - 20:30"
-    },
-    {
-      "key": "monster.hunter.name",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hunter",
-      "pl": "Myśliwy",
-      "lang": "Hunter"
     },
     {
       "key": "monster.old_wasp.voice_1",
@@ -805,15 +639,6 @@
       "en": "Rumble!",
       "pl": "Huk!",
       "lang": "Rumble!"
-    },
-    {
-      "key": "monster.glooth_golem.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*clank*",
-      "pl": "*I.*",
-      "lang": "*clank*"
     },
     {
       "key": "monster.rustheap_golem.voice_3",
@@ -3775,6 +3600,213 @@
       "en": "Mhmhmhmhm.",
       "pl": "Mhmhmhm.",
       "lang": "Mhmhmhmhm."
+    },
+    {
+      "key": "npc.spectulus.stdmod_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Precisely.",
+      "pl": "Dokładnie, precyzyjnie.",
+      "lang": "Precisely."
+    },
+    {
+      "key": "npc.spectulus.voice_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Precisely.",
+      "pl": "Dokładnie, precyzyjnie.",
+      "lang": "Precisely."
+    },
+    {
+      "key": "npc.stutch.say_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.taegen.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then not.",
+      "pl": "W takim razie nie.",
+      "lang": "Then not."
+    },
+    {
+      "key": "npc.tarun.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings!",
+      "pl": "Witaj!",
+      "lang": "Greetings!"
+    },
+    {
+      "key": "npc.terrence.say_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ahhhhhhhh! ",
+      "pl": "Aaaaaaachhhhhh! ",
+      "lang": "Ahhhhhhhh! "
+    },
+    {
+      "key": "npc.the_beggar_king.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye!",
+      "pl": "Robić widzenia!",
+      "lang": "Good bye!"
+    },
+    {
+      "key": "npc.the_blind_prophet.say_14",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take care!",
+      "pl": "Trzymaj się!",
+      "lang": "Take care!"
+    },
+    {
+      "key": "npc.the_orc_king.say_8",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
+    },
+    {
+      "key": "npc.timur.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye, bye.",
+      "pl": "Pa, cześć, pa, cześć.",
+      "lang": "Bye, bye."
+    },
+    {
+      "key": "npc.timur.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye, bye.",
+      "pl": "Pa, cześć, pa, cześć.",
+      "lang": "Bye, bye."
+    },
+    {
+      "key": "npc.tom.keyword_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yep.",
+      "pl": "Tak.",
+      "lang": "Yep."
+    },
+    {
+      "key": "npc.tom.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "D'oh?",
+      "pl": "Eee?",
+      "lang": "D'oh?"
+    },
+    {
+      "key": "npc.ukea.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye!",
+      "pl": "Robić widzenia!",
+      "lang": "Good bye!"
+    },
+    {
+      "key": "npc.uzon.keyword_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hold on!",
+      "pl": "Hold na!",
+      "lang": "Hold on!"
+    },
+    {
+      "key": "npc.uzon.stdmod_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hold on!",
+      "pl": "Hold na!",
+      "lang": "Hold on!"
+    },
+    {
+      "key": "npc.uzon_back.keyword_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hold on!",
+      "pl": "Hold na!",
+      "lang": "Hold on!"
+    },
+    {
+      "key": "npc.uzon_back.stdmod_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hold on!",
+      "pl": "Hold na!",
+      "lang": "Hold on!"
+    },
+    {
+      "key": "npc.vascalir.stdmod_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "OK, dude!",
+      "pl": "OK, stary!",
+      "lang": "OK, dude!"
+    },
+    {
+      "key": "npc.warbert.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Take this!",
+      "pl": "Weź to!",
+      "lang": "Take this!"
+    },
+    {
+      "key": "npc.willie.stdmod_12",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Which one?",
+      "pl": "Jaki?",
+      "lang": "Which one?"
+    },
+    {
+      "key": "npc.willie.stdmod_32",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Overrated.",
+      "pl": "Przereklamowany.",
+      "lang": "Overrated."
+    },
+    {
+      "key": "npc.willie.stdmod_43",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yeah, so?",
+      "pl": "Tak, więc?",
+      "lang": "Yeah, so?"
     }
   ],
   "length_ratio_issues": [
@@ -3916,8 +3948,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 23,
-    "skipped": 57,
+    "applied": 2,
+    "skipped": 78,
     "errors": 0
   }
 }

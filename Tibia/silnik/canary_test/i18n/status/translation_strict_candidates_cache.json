@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-20T22:49:02.759283Z",
-  "built_cycle": 22,
+  "timestamp": "2026-02-20T22:50:11.865251Z",
+  "built_cycle": 1,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -458,9 +458,9 @@
     {
       "lang": "it",
       "json_file": "cpp.json",
-      "pending_total": 293,
-      "todo": 293,
-      "simple_todo": 211,
+      "pending_total": 278,
+      "todo": 278,
+      "simple_todo": 201,
       "missing_in_lang": 0
     },
     {
@@ -866,9 +866,9 @@
     {
       "lang": "ro",
       "json_file": "cpp.json",
-      "pending_total": 343,
-      "todo": 343,
-      "simple_todo": 243,
+      "pending_total": 340,
+      "todo": 340,
+      "simple_todo": 242,
       "missing_in_lang": 0
     },
     {

@@ -4,10 +4,10 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T22:42:38.277559Z",
-  "issues_total": 105,
+  "checked_at": "2026-02-20T22:52:26.911923Z",
+  "issues_total": 106,
   "issues_by_type": {
-    "consistency_in_language": 9,
+    "consistency_in_language": 10,
     "pl_reference_missing_translation": 68,
     "length_ratio_crosscheck": 28
   },
@@ -69,6 +69,20 @@
       "examples": [
         "monsters:monster.lovely_souleater.voice_4",
         "monsters:monster.souleater.voice_4"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Ahkahra exura belil mort!",
+      "variants": [
+        "Ахкахра exura белил морт!",
+        "Ахкахра ексура белил морт!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.mummy.voice_5",
+        "monsters:monster.mummy.voice_11"
       ]
     },
     {

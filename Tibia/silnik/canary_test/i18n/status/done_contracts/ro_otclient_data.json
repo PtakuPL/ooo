@@ -1,6 +1,6 @@
 {
-  "file": "client.json",
-  "lang": "ru",
+  "file": "otclient_data.json",
+  "lang": "ro",
   "conditions": {
     "no_critical_token_errors": {
       "ok": true,
@@ -14,9 +14,9 @@
     },
     "coverage_above_95pct": {
       "ok": true,
-      "coverage_pct": 97.5,
-      "total_keys": 242,
-      "real_translations": 236
+      "coverage_pct": 100.0,
+      "total_keys": 72,
+      "real_translations": 72
     },
     "quality_entry_present": {
       "ok": true,
@@ -24,5 +24,5 @@
     }
   },
   "is_done": true,
-  "timestamp": "2026-02-20T22:50:08.425328Z"
+  "timestamp": "2026-02-20T22:50:33.424885Z"
 }

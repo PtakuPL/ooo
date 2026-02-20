@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-20T22:49:02.779326Z",
-  "cycle_counter": 6575,
-  "last_target_key": "ru:otclient_modules.json",
-  "last_pending_total": 231,
+  "timestamp": "2026-02-20T22:50:11.877967Z",
+  "cycle_counter": 6579,
+  "last_target_key": "ro:otclient_data.json",
+  "last_pending_total": 72,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 181,
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 22,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -117,7 +117,7 @@
     "it:books.json": 0,
     "ru:otclient_modules.json": 0,
     "ro:cpp.json": 0,
-    "it:cpp.json": 1,
+    "it:cpp.json": 0,
     "ru:client.json": 0,
     "ro:achievements.json": 0,
     "it:talkactions.json": 1,
@@ -215,7 +215,7 @@
       "es": 85.07,
       "ru": 50.38,
       "ro": 43.7,
-      "it": 52.56,
+      "it": 52.57,
       "sr": 45.43,
       "sv": 29.25
     }

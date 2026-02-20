@@ -38646,5 +38646,93 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:49:07.079616Z"
+  },
+  "client.spells.text3": {
+    "src_hash": "40a2cd84931f4f23fc412feba6b5ece6",
+    "text": "ексура макс. vita",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:07.969426Z"
+  },
+  "client.walk.text1": {
+    "src_hash": "14c3de1beddabd1388e28a54a8b10191",
+    "text": "Ктрл+Правую",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:07.975276Z"
+  },
+  "client.walk.text2": {
+    "src_hash": "26f2c912493c2eac17b81d1c5bae0fc3",
+    "text": "Ктрл+Вниз",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:07.976212Z"
+  },
+  "client.walk.text3": {
+    "src_hash": "87600c6242cc410cfa2eeea2a087bbd9",
+    "text": "Ктрл+Левую",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:07.977165Z"
+  },
+  "client.imbuing.text2": {
+    "src_hash": "18adfb026ad4b2df79b6c2ec81a59f14",
+    "text": "Выбрать Слот:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:08.029807Z"
+  },
+  "client.imbuing.text3": {
+    "src_hash": "bb2a2334aa0d8fbb37d661b97fc6c766",
+    "text": "Имбуе Емптй Слот",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:08.030871Z"
+  },
+  "client.imbuing.text5": {
+    "src_hash": "8915216a0bcb92f0a170985473b74e30",
+    "text": "Очистить Имбуемент",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:08.032461Z"
+  },
+  "client.game_highscore.text3": {
+    "src_hash": "1d9991db33193f3ae843abe8bd836f17",
+    "text": "Ретро Открыть Pvp",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:08.050127Z"
+  },
+  "client.bugreport.text1": {
+    "src_hash": "7b3cebe1aa8d64f4593a414fbadd9042",
+    "text": "Открыть Бугрепорт",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:08.053676Z"
+  },
+  "client.bugreport.text2": {
+    "src_hash": "7b3cebe1aa8d64f4593a414fbadd9042",
+    "text": "Открыть Бугрепорт",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:08.054910Z"
+  },
+  "client.bugreport.text3": {
+    "src_hash": "7b3cebe1aa8d64f4593a414fbadd9042",
+    "text": "Открыть Бугрепорт",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:08.056024Z"
   }
 }

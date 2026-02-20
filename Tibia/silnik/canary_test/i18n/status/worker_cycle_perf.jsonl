@@ -10828,3 +10828,8 @@
 {"timestamp": "2026-02-20T22:48:28.616277Z", "cycle": 22, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 1761, "detail": "count=chatchannels.json"}
 {"timestamp": "2026-02-20T22:49:10.063162Z", "cycle": 22, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "mode_run", "duration_ms": 41295, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-20T22:49:17.824967Z", "cycle": 22, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "status_update", "duration_ms": 6798, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-20T22:49:25.169071Z", "cycle": 22, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "cycle_total", "duration_ms": 58474, "detail": "delay=4"}
+{"timestamp": "2026-02-20T22:49:30.032164Z", "cycle": 23, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "dispatch", "duration_ms": 535, "detail": "count=cpp.json"}
+{"timestamp": "2026-02-20T22:49:33.723622Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "dispatch", "duration_ms": 570, "detail": "count=cpp.json"}
+{"timestamp": "2026-02-20T22:52:54.580352Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "mode_run", "duration_ms": 200718, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-20T22:52:59.759744Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "status_update", "duration_ms": 4943, "detail": "throttle_every=1"}

@@ -81094,5 +81094,125 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:48:58.119608Z"
+  },
+  "cpp.returnvalue.action_not_permitted_in_protection_zone": {
+    "src_hash": "aa06e3388d8cbfb7218c0a56dfc38b3d",
+    "text": "Questa azione non è consentita in una zona di protezione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:42.357899Z"
+  },
+  "cpp.returnvalue.another_raid_is_already_executing": {
+    "src_hash": "439069b07c778746dcf76c7e070ee7ee",
+    "text": "Un altro raid è già in corso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:49.215198Z"
+  },
+  "cpp.returnvalue.both_hands_need_to_be_free": {
+    "src_hash": "bdb2e2734554fdd85370982c0794e423",
+    "text": "Entrambe le mani devono essere libere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:49.215554Z"
+  },
+  "cpp.returnvalue.can_only_use_one_shield": {
+    "src_hash": "87c98f3462012a20dab4519dd8854dae",
+    "text": "Puoi usare solo uno scudo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:49.215921Z"
+  },
+  "cpp.returnvalue.can_only_use_one_weapon": {
+    "src_hash": "40e0f34e4e1336a83ecc24542278894a",
+    "text": "Puoi usare solo un'arma.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:49.216238Z"
+  },
+  "cpp.returnvalue.can_only_use_this_rune_on_creatures": {
+    "src_hash": "8d50aac7531c4cb3295533915ad012d8",
+    "text": "Puoi usare questa runa solo sulle creature.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:49.216587Z"
+  },
+  "cpp.returnvalue.cannot_be_dressed": {
+    "src_hash": "6d3eb61e6970d726fc121e18d5eec0e8",
+    "text": "Non puoi vestire questo oggetto lì.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:55.991418Z"
+  },
+  "cpp.returnvalue.cannot_conjure_item_here": {
+    "src_hash": "93a66f9ae4b32e5a670df705d12e0096",
+    "text": "Non puoi evocare oggetti qui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:55.991724Z"
+  },
+  "cpp.returnvalue.cannot_pickup": {
+    "src_hash": "a71a3a9366ef0ff0a220265670dc7c98",
+    "text": "Non puoi prendere questo oggetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:55.992040Z"
+  },
+  "cpp.returnvalue.cannot_throw": {
+    "src_hash": "5acb3fd705c4091c865feab024b26e7e",
+    "text": "Non puoi lanciare lì.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:55.992354Z"
+  },
+  "cpp.returnvalue.cannot_use_this_object": {
+    "src_hash": "2e8f7dd61de19d4af6d516ccbd7bda39",
+    "text": "Non puoi usare questo oggetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:55.992867Z"
+  },
+  "cpp.returnvalue.contact_administrator": {
+    "src_hash": "11c5b6a2dc274ae6748fe45cd1ff85bf",
+    "text": "Si è verificato un errore, contatta il tuo amministratore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:02.315589Z"
+  },
+  "cpp.returnvalue.container_is_full": {
+    "src_hash": "2f1de3e5c21535a6de9ac2243b1813ed",
+    "text": "Non puoi inserire più articoli in questo contenitore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:02.316000Z"
+  },
+  "cpp.returnvalue.container_not_enough_room": {
+    "src_hash": "73085eb1f727b6fd9a164b9789308fd5",
+    "text": "Non puoi inserire più oggetti in questo contenitore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:02.316366Z"
+  },
+  "cpp.returnvalue.creature_does_not_exist": {
+    "src_hash": "892b20e36ad4ad0e804d65746d9d2665",
+    "text": "La creatura non esiste.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:02.316633Z"
   }
 }

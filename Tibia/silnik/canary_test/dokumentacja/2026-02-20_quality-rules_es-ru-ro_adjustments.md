@@ -50,3 +50,25 @@ Zmniejszyć fałszywe odrzucenia i zbędne retry GT dla przypadków zgłoszonych
 1. Obserwacja 1-2 okien godzinowych: spadek odrzuceń ES/PL i mniejszy churn GT.
 2. Dodać transliterację dla większej liczby nazw własnych RU (mapa aliasów city/boss), ale bez luzowania ról opisowych.
 3. Ewentualnie dodać osobny raport `identical_to_en_exempt_by_term` dla pełnej transparentności.
+
+---
+
+## 2026-02-20 (late update) — Obszerna polityka terminów nieprzetłumaczalnych per język
+
+Wdrożono dodatkową warstwę polityki per-język, aby przyspieszyć tłumaczenia i ograniczyć zbędne retry GT:
+
+1. Dodano rozbudowany zbiór termów świata gry (`_NONTRANSLATABLE_WORLD_TERMS`) — miasta, bossy, lokacje, termy systemowe, nazwy świata Tibii.
+2. Dodano tryby per język (`_LANG_EXEMPT_MODE`):
+  - `keep` dla języków łacińskich (EN-copy może być traktowany jako exempt dla dozwolonych termów),
+  - `transliterate` dla cyrylicy (`ru/uk/bg/sr/mk`) — EN-copy nie jest exemptem.
+3. Dla cyrylicy uszczelniono przepływ:
+  - termy świata i nazwy własne są transliterowane,
+  - role opisowe (`knight/sorcerer/...`) pozostają na ścieżce tłumaczenia semantycznego (bez transliteracji),
+  - surowe EN-copy w cyrylicy nie jest pomijane jako „gotowe”.
+4. Exempt `identical_to_en` stał się językowo zależny (`_is_domain_identical_exempt(..., lang)`), co realizuje zasadę:
+  - łacińskie języki: można zachować wybrane termy,
+  - cyrylica: EN ma zostać usunięte z finalnego tekstu (transliteracja/tłumaczenie), nie przechodzi jako exempt.
+
+Walidacja po update:
+- `bash -n i18n_worker_simple.sh` — OK.
+- `bash i18n_worker_simple.sh --update-status` — OK.

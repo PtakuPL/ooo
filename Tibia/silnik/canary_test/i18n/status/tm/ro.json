@@ -73790,5 +73790,261 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:44:57.976513Z"
+  },
+  "cpp.protocol.game_going_down": {
+    "src_hash": "ecb808f0c921e7edae64c994e73fff28",
+    "text": "Jocul tocmai se prăbușește.\nVă rugăm să încercați din nou mai târziu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:44.304177Z"
+  },
+  "cpp.protocol.gameworld_maintenance": {
+    "src_hash": "1a9fd9e35bd952f6709e3e0c4b5f94b6",
+    "text": "Gameworld este în întreținere. Vă rugăm să vă reconectați peste un timp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:47.724540Z"
+  },
+  "cpp.protocol.gameworld_starting": {
+    "src_hash": "04d8c8ada4ba9400e6c469b732bc25b5",
+    "text": "Gameworld pornește. Va rugam asteptati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:49:47.724977Z"
+  },
+  "otclient_data.30_minimap_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:14.923192Z"
+  },
+  "otclient_data.30_minimap_otui.tr_2": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:14.923881Z"
+  },
+  "otclient_data.30_minimap_otui.tr_3": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descriere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:14.924448Z"
+  },
+  "otclient_data.40_entergame_otui.tr_1": {
+    "src_hash": "e8ac4263140e9f899ed2bbd5b0e9c8c5",
+    "text": "Intră în joc",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:14.933295Z"
+  },
+  "otclient_data.40_inventory_otui.tr_1": {
+    "src_hash": "0323de4f66a1700e2173e9bcdce02715",
+    "text": "Deconectare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:14.933834Z"
+  },
+  "otclient_data.40_minimap_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:14.934381Z"
+  },
+  "otclient_data.40_minimap_otui.tr_3": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:14.934578Z"
+  },
+  "otclient_data.40_minimap_otui.tr_4": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Descriere",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:14.934860Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_1": {
+    "src_hash": "a60852f204ed8028c1c58808b746d115",
+    "text": "Bine",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:14.935317Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_14": {
+    "src_hash": "98921133d10fbdb0fb6dbb7b2648befe",
+    "text": "Cap",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:14.935890Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Anulare",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:14.936412Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_5": {
+    "src_hash": "d7778d0c64b6ba21494c97f77a66885a",
+    "text": "Filtra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:14.938274Z"
+  },
+  "otclient_data.30_minimap_otui.tr_4": {
+    "src_hash": "52f5e0bc3859bc5f5e25130b6c7e8881",
+    "text": "Poziţie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:19.535523Z"
+  },
+  "otclient_data.30_minimap_otui.tr_5": {
+    "src_hash": "432cef6a4477acdc805f743081b1e531",
+    "text": "Creați marcajul hărții",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:19.536127Z"
+  },
+  "otclient_data.30_minimap_otui.tr_6": {
+    "src_hash": "4f1f6016fc9f3f2353c0cc7c67b292bd",
+    "text": "Centru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:19.536488Z"
+  },
+  "otclient_data.40_console_otui.tr_1": {
+    "src_hash": "3438fb8ff7138658a8a9d1ba74a7f15b",
+    "text": "Reglați volumul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:19.536915Z"
+  },
+  "otclient_data.40_console_otui.tr_2": {
+    "src_hash": "9dfab5baaa91e22c69ad63136b286eae",
+    "text": "Ignorați jucătorii",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:19.537369Z"
+  },
+  "otclient_data.40_console_otui.tr_3": {
+    "src_hash": "481ddf27422767090d74e0aba96896bc",
+    "text": "Deschide un canal nou",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:26.430634Z"
+  },
+  "otclient_data.40_console_otui.tr_4": {
+    "src_hash": "1b0e52b2ac73b0fbf9d55a92f4227018",
+    "text": "Ștergeți fereastra mesajului curent",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:26.430972Z"
+  },
+  "otclient_data.40_console_otui.tr_5": {
+    "src_hash": "633af479e304ecf8b57b1aa718dedd05",
+    "text": "Închide acest canal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:26.431285Z"
+  },
+  "otclient_data.40_console_otui.tr_6": {
+    "src_hash": "6223a29e77c4bd67f76a3ccf6b8dccf3",
+    "text": "Dezactivați modul de chat, permiteți să mergeți folosind ASDW",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:26.431697Z"
+  },
+  "otclient_data.40_healthinfo_otui.tr_1": {
+    "src_hash": "ccc9d277fa835157db8a6b0d0889fc6b",
+    "text": "Informații de sănătate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:26.431924Z"
+  },
+  "otclient_data.40_inventory_otui.tr_2": {
+    "src_hash": "a0199cf7be7b241ffef10af0aef3efab",
+    "text": "Taste rapide",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:30.903784Z"
+  },
+  "otclient_data.40_inventory_otui.tr_3": {
+    "src_hash": "dae8ace18bdcbcc6ae5aece263e14fe8",
+    "text": "Opțiuni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:30.904011Z"
+  },
+  "otclient_data.40_inventory_otui.tr_5": {
+    "src_hash": "9b8f749bd07d0e634255997990626153",
+    "text": "Poșeta deschisă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:30.905386Z"
+  },
+  "otclient_data.40_minimap_otui.tr_1": {
+    "src_hash": "82037f1c11a9ab28405f8da146935a82",
+    "text": "Țineți apăsat butonul stâng al mouse-ului pentru a naviga\nDerulați butonul din mijloc al mouse-ului pentru a mări\nButon dreapta al mouse-ului pentru a crea marcaje pe hartă\nApăsați Ctrl+Shift+M pentru a vizualiza întreaga hartă a jocului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:30.906506Z"
+  },
+  "otclient_data.40_minimap_otui.tr_5": {
+    "src_hash": "52f5e0bc3859bc5f5e25130b6c7e8881",
+    "text": "Poziţie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:33.201226Z"
+  },
+  "otclient_data.40_minimap_otui.tr_6": {
+    "src_hash": "432cef6a4477acdc805f743081b1e531",
+    "text": "Creați marcajul hărții",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:33.201726Z"
+  },
+  "otclient_data.40_minimap_otui.tr_7": {
+    "src_hash": "4f1f6016fc9f3f2353c0cc7c67b292bd",
+    "text": "Centru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:50:33.202081Z"
   }
 }

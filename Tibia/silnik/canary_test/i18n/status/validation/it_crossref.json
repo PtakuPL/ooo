@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 53.5,
+  "coverage_pct": 53.6,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T22:40:52.081328Z",
+  "checked_at": "2026-02-20T22:51:38.510401Z",
   "issues_total": 428,
   "issues_by_type": {
     "consistency_in_language": 7,
@@ -2903,15 +2903,6 @@
       "lang": "Lizards"
     },
     {
-      "key": "raid.orc.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Orc",
-      "pl": "Ork",
-      "lang": "Orc"
-    },
-    {
       "key": "raid.nomad.name",
       "category": "raids",
       "type": "pl_reference_missing_translation",
@@ -3714,6 +3705,15 @@
     },
     {
       "key": "scripts.oramond_entrance.say_2",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Slrrp!",
+      "pl": "Srrrr!",
+      "lang": "Slrrp!"
+    },
+    {
+      "key": "scripts.oramond_movements.say_1",
       "category": "scripts",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",

@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-20T20:31:07.161607Z",
-  "cycle_counter": 6274,
-  "last_target_key": "pl:achievements.json",
-  "last_pending_total": 664,
+  "timestamp": "2026-02-20T20:32:31.499499Z",
+  "cycle_counter": 6277,
+  "last_target_key": "es:html.json",
+  "last_pending_total": 699,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 181,
@@ -34,7 +34,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 157,
+  "cache_cycle": 158,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,

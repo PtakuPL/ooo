@@ -1,42 +1,41 @@
 {
-  "timestamp": "2026-02-20T18:46:15.618755Z",
-  "window_start_utc": "2026-02-20T17:46:14.872399Z",
-  "window_end_utc": "2026-02-20T18:46:14.872399Z",
+  "timestamp": "2026-02-20T18:47:36.400660Z",
+  "window_start_utc": "2026-02-20T17:47:35.699111Z",
+  "window_end_utc": "2026-02-20T18:47:35.699111Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 141,
-  "rejected_entries_raw": 371,
-  "suspicious_entries": 3103,
-  "suspicious_entries_raw": 25422,
+  "rejected_entries": 135,
+  "rejected_entries_raw": 369,
+  "suspicious_entries": 3106,
+  "suspicious_entries_raw": 25271,
   "guard_fail_entries": 124,
-  "guard_fail_sum": 8068,
+  "guard_fail_sum": 8051,
   "by_type": {
-    "mixed_language": 17,
-    "identical_to_en": 114,
+    "identical_to_en": 110,
     "word_salad": 3,
+    "mixed_language": 15,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7,
     "contains_tibia_proper_noun": 6
   },
   "by_source": {
-    "google_translate": 141
+    "google_translate": 135
   },
   "by_language": {
-    "pl": 35,
-    "es": 30,
+    "es": 28,
     "it": 22,
     "ro": 47,
+    "pl": 31,
     "ru": 7
   },
   "by_category": {
-    "php.json": 3,
-    "modules.json": 2,
-    "talkactions.json": 6,
     "npc.json": 4,
+    "talkactions.json": 3,
+    "php.json": 2,
     "items.json": 26,
     "spells.json": 72,
     "quests.json": 1,
@@ -45,17 +44,17 @@
     "monsters.json": 23
   },
   "by_severity": {
-    "HIGH": 24,
-    "CRITICAL": 117
+    "CRITICAL": 113,
+    "HIGH": 22
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 114
+      "count": 110
     },
     {
       "type": "mixed_language",
-      "count": 17
+      "count": 15
     },
     {
       "type": "mixed_scripts",
@@ -124,27 +123,6 @@
         "contains_tibia_proper_noun": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "php.players.text5",
-      "count": 2,
-      "types": {
-        "mixed_language": 2
-      }
-    },
-    {
-      "key": "talkaction.gm.spy.msg_stack_count",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "talkaction.god.kv.msg_allkv_value",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
       }
     },
     {
@@ -222,6 +200,28 @@
       "count": 2,
       "types": {
         "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.tarbaz_tp.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.quara_looter_small_icering.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.ravennouslavalurkertarget.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
       }
     }
   ]

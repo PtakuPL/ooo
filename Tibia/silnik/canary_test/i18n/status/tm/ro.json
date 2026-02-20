@@ -69622,5 +69622,149 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:41:11.153544Z"
+  },
+  "npc.prezil.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vrei să înlocuiești piatra de aventurier cu 30 de aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.408124Z"
+  },
+  "npc.prezil.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Poftim. Ai grijă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.408502Z"
+  },
+  "npc.prezil.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Scuze, nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.409022Z"
+  },
+  "npc.pukosch.farewell_msg_1": {
+    "src_hash": "4c63e8ef9d6c6b447464c244c3d4b195",
+    "text": "Sper să te revăd.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.410870Z"
+  },
+  "npc.pukosch.greet_msg_1": {
+    "src_hash": "74af8429056cd1b6c12ccb10e67902c1",
+    "text": "Bun venit, |PLAYERNAME|! Te simți aventuros? Vrei un {ticket} săptămânal pentru sistemul de vagoane de minereu de aici? Îl poți folosi chiar aici pentru a ajunge în centrul Kazordoon!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.411792Z"
+  },
+  "npc.pukosch.say_1": {
+    "src_hash": "78c8e8f1e0c24e044738d408a4bdd010",
+    "text": "Doriți să cumpărați un bilet săptămânal pentru vagoanele cu minereu? Cu el poți călători liber și rapid prin Kazordoon timp de o săptămână. Doar 250 de aur. Afacere?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.412609Z"
+  },
+  "npc.pukosch.say_2": {
+    "src_hash": "f861e7ec394314cc88a104df2e9bb60c",
+    "text": "Biletul dvs. săptămânal este încă valabil. Ar fi o pierdere de bani să cumperi al doilea",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.413208Z"
+  },
+  "npc.pukosch.say_3": {
+    "src_hash": "622d7ed7c7070fcb0a5487989b8ba4da",
+    "text": "Iată ștampila ta. Nu poate fi transferat unei alte persoane și va dura peste o săptămână. Veți primi o notificare când utilizați un vagon de minereu când acesta nu mai este valabil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.414168Z"
+  },
+  "npc.pydar.stdmod_3": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Poate alta data.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.416471Z"
+  },
+  "npc.queen_eloise.multi_1": {
+    "src_hash": "52ab9c4bdd0063e05461de7641aa6b4d",
+    "text": "Excelent! Acum, lasă-mă să explic. Dacă donați 1.000.000.000 de piese de aur, veți avea dreptul să purtați o ținută unică. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.418946Z"
+  },
+  "npc.queen_eloise.multi_2": {
+    "src_hash": "726506912b88ec90b55449190ed2d1bd",
+    "text": "Ce va fi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.419302Z"
+  },
+  "npc.queen_eloise.multi_3": {
+    "src_hash": "726506912b88ec90b55449190ed2d1bd",
+    "text": "Ce va fi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.419710Z"
+  },
+  "npc.queen_eloise.promote_success": {
+    "src_hash": "b16b6f7e9ba0adb52c44ffb607511f3e",
+    "text": "Felicitări! Acum ești promovat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.420113Z"
+  },
+  "npc.queen_eloise.say_1": {
+    "src_hash": "21963d0b9e9a7fcd0f72df2f17e7a62c",
+    "text": "În schimbul unei donații cu adevărat generoase, voi oferi o ținută specială. Vrei să faci o donație?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.420766Z"
+  },
+  "npc.queen_eloise.say_10": {
+    "src_hash": "799b37c2b34f974ac0d9ff25bbba73f1",
+    "text": "Mai întâi trebuie să donezi {armor} ținută.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.421209Z"
+  },
+  "npc.queen_eloise.say_11": {
+    "src_hash": "88ff45ecafedf4db47e12c033cbabb1b",
+    "text": "Luați aceste cizme ca pe un semn de mare recunoștință. Să ne amintim pentru totdeauna această zi, prietene. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.421809Z"
+  },
+  "npc.queen_eloise.say_12": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Nu ai suficienți bani pentru a dona acea sumă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.422412Z"
+  },
+  "npc.queen_eloise.say_13": {
+    "src_hash": "96b8026cc2b958c7b7b9c982cdb8193a",
+    "text": "Ai deja acea ținută.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:46:57.422801Z"
   }
 }

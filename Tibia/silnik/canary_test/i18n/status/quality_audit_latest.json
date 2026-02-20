@@ -1,25 +1,18 @@
 {
-  "timestamp": "2026-02-20T19:37:34.369586Z",
+  "timestamp": "2026-02-20T19:38:10.218016Z",
   "checked_entries": 100,
-  "issues_found": 51,
+  "issues_found": 50,
   "issues_by_type": {
-    "identical_to_en": 19,
-    "identical_to_en_exempt": 5,
+    "identical_to_en_exempt": 8,
     "artifact_token": 32,
+    "identical_to_en": 18,
     "suspicious_log_high": 52,
-    "suspicious_log_critical": 60,
+    "suspicious_log_critical": 61,
     "suspicious_log_low": 5,
     "suspicious_rejected_critical": 128,
     "suspicious_rejected_high": 14
   },
   "issues": [
-    {
-      "key": "otclient_modules.character_otui.tr_27",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Depot",
-      "translated": "Depot"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

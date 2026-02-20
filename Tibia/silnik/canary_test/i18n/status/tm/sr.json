@@ -175782,5 +175782,29 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:21:21.826021Z"
+  },
+  "monster.hemming.voice_2": {
+    "src_hash": "d757f6d62440f09b102236e4bb7ba3fe",
+    "text": "ГРРОАРР",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:34.458897Z"
+  },
+  "monster.leviathan.voice_1": {
+    "src_hash": "d9b27c82026a7ec941c35d53fd34a8e2",
+    "text": "ЦХХХРРРРР",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:34.459370Z"
+  },
+  "monster.leviathan.voice_2": {
+    "src_hash": "4db71e50de8fcfc3ec625f0377b111e7",
+    "text": "ХИСССС",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:34.459660Z"
   }
 }

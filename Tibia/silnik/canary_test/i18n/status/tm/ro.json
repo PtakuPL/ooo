@@ -74702,5 +74702,117 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T23:29:02.954081Z"
+  },
+  "otclient_modules.character_otui.tr_50": {
+    "src_hash": "dd1f775e443ff3b9a89270713580a51b",
+    "text": "Anterior",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:59.970729Z"
+  },
+  "otclient_modules.character_otui.tr_52": {
+    "src_hash": "828b62c77b6e94a93e516205bb69d398",
+    "text": "Date și timp",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:59.971416Z"
+  },
+  "otclient_modules.charms1410_otui.tr_9": {
+    "src_hash": "a7c19032df9d43b8c62a563d6c72e6c3",
+    "text": "Suplimentul 1",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:00.008286Z"
+  },
+  "otclient_modules.console_otui.tr_14": {
+    "src_hash": "9dfab5baaa91e22c69ad63136b286eae",
+    "text": "Ignorați jucătorii",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:00.019105Z"
+  },
+  "otclient_modules.console_otui.tr_15": {
+    "src_hash": "481ddf27422767090d74e0aba96896bc",
+    "text": "Deschide un canal nou",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:00.019584Z"
+  },
+  "otclient_modules.console_otui.tr_16": {
+    "src_hash": "633af479e304ecf8b57b1aa718dedd05",
+    "text": "Închide acest canal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:00.020257Z"
+  },
+  "otclient_modules.gameinterface.tr_28": {
+    "src_hash": "eace16d66cdd93ad876c620db7456077",
+    "text": "Munte",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:00.080327Z"
+  },
+  "otclient_modules.hotkeys_manager.tr_7": {
+    "src_hash": "a0199cf7be7b241ffef10af0aef3efab",
+    "text": "Taste rapide",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:00.091981Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_20": {
+    "src_hash": "a0199cf7be7b241ffef10af0aef3efab",
+    "text": "Taste rapide",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:00.095054Z"
+  },
+  "otclient_modules.inventory_otui.tr_7": {
+    "src_hash": "9b8f749bd07d0e634255997990626153",
+    "text": "Poșeta deschisă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:00.132667Z"
+  },
+  "otclient_modules.options.tr_1": {
+    "src_hash": "dae8ace18bdcbcc6ae5aece263e14fe8",
+    "text": "Opțiuni",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:00.165117Z"
+  },
+  "otclient_modules.options.tr_3": {
+    "src_hash": "dae8ace18bdcbcc6ae5aece263e14fe8",
+    "text": "Opțiuni",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:00.165895Z"
+  },
+  "otclient_modules.options_otui.tr_2": {
+    "src_hash": "dae8ace18bdcbcc6ae5aece263e14fe8",
+    "text": "Opțiuni",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:00.166546Z"
+  },
+  "otclient_modules.tasks_otui.tr_5": {
+    "src_hash": "a15e9d627362cb8837d0b910bc53a55e",
+    "text": "Căutați după nume",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:30:00.232056Z"
   }
 }

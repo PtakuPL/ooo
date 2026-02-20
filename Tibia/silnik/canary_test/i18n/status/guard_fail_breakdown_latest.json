@@ -1,33 +1,33 @@
 {
-  "timestamp": "2026-02-20T20:17:25.132247Z",
-  "window_start_utc": "2026-02-20T19:17:24.442881Z",
-  "window_end_utc": "2026-02-20T20:17:24.442881Z",
+  "timestamp": "2026-02-20T20:18:18.753388Z",
+  "window_start_utc": "2026-02-20T19:18:18.054311Z",
+  "window_end_utc": "2026-02-20T20:18:18.054311Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 221,
-  "rejected_entries_raw": 396,
-  "suspicious_entries": 3627,
-  "suspicious_entries_raw": 21882,
-  "guard_fail_entries": 123,
-  "guard_fail_sum": 7736,
+  "rejected_entries": 201,
+  "rejected_entries_raw": 378,
+  "suspicious_entries": 3625,
+  "suspicious_entries_raw": 22184,
+  "guard_fail_entries": 125,
+  "guard_fail_sum": 7751,
   "by_type": {
-    "identical_to_en": 179,
-    "mixed_language": 10,
+    "identical_to_en": 160,
     "word_salad": 7,
+    "mixed_language": 9,
     "mixed_scripts": 22,
     "cyrillic_latin_mix": 22,
     "contains_tibia_proper_noun": 17,
     "fx_token": 3
   },
   "by_source": {
-    "google_translate": 221
+    "google_translate": 201
   },
   "by_language": {
-    "it": 45,
+    "it": 25,
     "es": 40,
     "ro": 61,
     "pl": 42,
@@ -35,9 +35,9 @@
     "sv": 11
   },
   "by_category": {
-    "spells.json": 53,
     "npc.json": 4,
     "items.json": 27,
+    "spells.json": 33,
     "quests.json": 3,
     "scripts.json": 13,
     "server.json": 17,
@@ -52,13 +52,13 @@
     "modules.json": 3
   },
   "by_severity": {
-    "CRITICAL": 186,
-    "HIGH": 35
+    "CRITICAL": 167,
+    "HIGH": 34
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 179
+      "count": 160
     },
     {
       "type": "mixed_scripts",
@@ -74,7 +74,7 @@
     },
     {
       "type": "mixed_language",
-      "count": 10
+      "count": 9
     },
     {
       "type": "word_salad",
@@ -88,9 +88,9 @@
   "top_keys": [
     {
       "key": "spell.quara_constrictor_electrify.name",
-      "count": 4,
+      "count": 3,
       "types": {
-        "mixed_language": 2,
+        "mixed_language": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
       }
@@ -218,35 +218,35 @@
       }
     },
     {
-      "key": "spell.rotthingholy_ulus.name",
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2
       }
     },
     {
-      "key": "spell.makara_watersplash.name",
+      "key": "spell.iksyapunac_wave.name",
       "count": 2,
       "types": {
         "identical_to_en": 2
       }
     },
     {
-      "key": "spell.urmahlullu_ring.name",
+      "key": "spell.mitmahseer_wave.name",
       "count": 2,
       "types": {
         "identical_to_en": 2
       }
     },
     {
-      "key": "spell.single_ice_chain.name",
+      "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
       "count": 2,
       "types": {
         "identical_to_en": 2
       }
     },
     {
-      "key": "spell.quara_raider_icering.name",
+      "key": "data.otservbr.global.npc.anerui.L72.1488",
       "count": 2,
       "types": {
         "identical_to_en": 2

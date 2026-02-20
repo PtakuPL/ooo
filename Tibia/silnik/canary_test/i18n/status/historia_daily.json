@@ -195,5 +195,108 @@
     },
     "migration_completed": 15,
     "migration_total": 15
+  },
+  {
+    "date": "2026-02-20",
+    "hours_covered": 5,
+    "threshold": 5,
+    "is_final": false,
+    "ts_first": "2026-02-20T16:15:42Z",
+    "ts_last": "2026-02-20T20:17:41Z",
+    "translated": 10631,
+    "guard_fail": 25441,
+    "suspicious_high": 63793,
+    "identical_to_en": 975,
+    "repair_start": 37977,
+    "repair_end": 37892,
+    "cycles": 165,
+    "coverage_start": 13.81,
+    "coverage_end": 13.88,
+    "guard_fail_pct": 70.53,
+    "throughput_per_h": 2126.2,
+    "per_lang": {
+      "ru": {
+        "t": 2465,
+        "gf": 260,
+        "cov": 50.37
+      },
+      "it": {
+        "t": 2034,
+        "gf": 636,
+        "cov": 52.24
+      },
+      "es": {
+        "t": 1682,
+        "gf": 7102,
+        "cov": 84.82
+      },
+      "pl": {
+        "t": 1519,
+        "gf": 16358,
+        "cov": 87.83
+      },
+      "ro": {
+        "t": 1503,
+        "gf": 948,
+        "cov": 43.21
+      },
+      "sr": {
+        "t": 779,
+        "gf": 1,
+        "cov": 45.5
+      },
+      "sv": {
+        "t": 649,
+        "gf": 136,
+        "cov": 28.7
+      }
+    },
+    "per_cat": {
+      "npc.json": {
+        "t": 3539,
+        "gf": 6231
+      },
+      "monsters.json": {
+        "t": 2622,
+        "gf": 589
+      },
+      "items.json": {
+        "t": 2109,
+        "gf": 15793
+      },
+      "server.json": {
+        "t": 730,
+        "gf": 684
+      },
+      "scripts.json": {
+        "t": 347,
+        "gf": 293
+      },
+      "questlog.json": {
+        "t": 275,
+        "gf": 144
+      },
+      "raids.json": {
+        "t": 270,
+        "gf": 113
+      },
+      "html.json": {
+        "t": 226,
+        "gf": 62
+      },
+      "otclient_modules.json": {
+        "t": 94,
+        "gf": 120
+      },
+      "npclib.json": {
+        "t": 48,
+        "gf": 1
+      }
+    },
+    "mode_distribution": {
+      "AUTO_TRANSLATE": 731
+    },
+    "migration_completed": 15,
+    "migration_total": 15
   }
 ]

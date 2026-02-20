@@ -2335,6 +2335,10 @@ strict_guard_entries = _jsonl_window(
     os.path.join(status_translation_dir, "translation_guard_report.jsonl"),
     strict_cutoff,
 )
+strict_recent_entries = _jsonl_window(
+    os.path.join(status_translation_dir, "translation_recent_report.jsonl"),
+    strict_cutoff,
+)
 strict_susp_entries = _jsonl_window(
     os.path.join(status_translation_dir, "suspicious_log.jsonl"),
     strict_cutoff,
@@ -2397,6 +2401,17 @@ strict_no_progress_rate = (
 )
 strict_runtime_h = strict_duration_ms / 3600000.0 if strict_duration_ms > 0 else strict_window_hours
 strict_throughput = strict_translated / strict_runtime_h if strict_runtime_h > 0 else 0.0
+strict_gt_translated = 0
+strict_gt_sources = {"gt", "google_translate"}
+for _row in strict_recent_entries:
+    _entries = _row.get("entries", []) if isinstance(_row.get("entries", []), list) else []
+    for _entry in _entries:
+        if not isinstance(_entry, dict):
+            continue
+        _source = str(_entry.get("source", "") or "").strip().lower()
+        if _source in strict_gt_sources:
+            strict_gt_translated += 1
+strict_gt_active = strict_gt_translated > 0
 strict_top_guard_fail_targets = sorted(
     strict_targets.values(),
     key=lambda x: int(x.get("guard_fail", 0)),
@@ -2545,6 +2560,8 @@ strict_window_payload = {
     "throughput_keys_per_h": round(strict_throughput, 1),
     "suspicious_total": len(strict_susp_unique_entries),
     "suspicious_total_raw": len(strict_susp_entries),
+    "gt_translated": int(strict_gt_translated),
+    "gt_active": bool(strict_gt_active),
     "top_guard_fail_targets": strict_top_guard_fail_targets,
 }
 
@@ -3645,6 +3662,9 @@ _hourly_top_file = max(_hourly_stages, key=_hourly_stages.get) if _hourly_stages
 _hourly_throughput = round(strict_throughput)
 _hourly_gf_rate = round(strict_guard_fail_rate * 100, 1)
 _hourly_suspicious = len(strict_susp_entries)
+_hourly_gt_translated = int(strict_window_payload.get("gt_translated", 0) or 0)
+_hourly_gt_active = bool(strict_window_payload.get("gt_active", False))
+_hourly_gt_status = "✅ TAK" if _hourly_gt_active else "❌ NIE"
 
 # ============ E1-E4: ETA + paski postępu per język ============
 _eta_rows = []
@@ -3969,6 +3989,8 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 | ⚡ Przepustowość | ~{_hourly_throughput} kluczy/h |
 | 🛡️ Guard fail rate | {_hourly_gf_rate}% |
 | ⚠️ Podejrzane | {_hourly_suspicious} |
+| 🌐 GT aktywny (1h) | {_hourly_gt_status} |
+| 🔤 GT tłumaczeń (1h) | {_hourly_gt_translated} |
 
 ---
 

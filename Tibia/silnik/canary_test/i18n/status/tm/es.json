@@ -154030,5 +154030,69 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T20:16:33.219843Z"
+  },
+  "item.14035.desc": {
+    "src_hash": "81f135f61108b2f889855554e4b9a71f",
+    "text": "En él hay una flor reina de las brasas completamente desarrollada. Esta planta ya no puede marchitarse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:39:18.123548Z"
+  },
+  "item.14036.desc": {
+    "src_hash": "cd78f28792de267b8683e8e7778cf680",
+    "text": "En él hay una flor de medianoche completamente desarrollada. Esta planta ya no puede marchitarse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:39:18.124036Z"
+  },
+  "item.14037.desc": {
+    "src_hash": "21de8d2e3df7aebe3d49f73bc68a6470",
+    "text": "En él hay una flor de hada bailarina completamente desarrollada. Esta planta ya no puede marchitarse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:39:18.124504Z"
+  },
+  "item.14038.desc": {
+    "src_hash": "0bc5ac2b4e1b225a78e2bf8c4c7ce54a",
+    "text": "En él hay una planta de pargo completamente desarrollada. Esta planta ya no puede marchitarse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:39:18.124958Z"
+  },
+  "item.14052.name": {
+    "src_hash": "2123daa1bf82c7d44728166efb72aa2e",
+    "text": "matraz de disolvente de quitina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:39:18.125230Z"
+  },
+  "item.14053.name": {
+    "src_hash": "ffd681689188ce24cc2d6c11ec27608a",
+    "text": "matraz de quitina disuelta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:39:21.613882Z"
+  },
+  "item.14055.desc": {
+    "src_hash": "35568aa30965620b19e014181cefc0bd",
+    "text": "Es inestable y pronto perderá sus propiedades agresivas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:39:21.614308Z"
+  },
+  "item.14066.desc": {
+    "src_hash": "5097cef6f1c662ea003a88e9e1dc052d",
+    "text": "Un estuche de filigrana hecho de concha. Parece que hay un pequeño candado en el lateral del estuche.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:39:21.614869Z"
   }
 }

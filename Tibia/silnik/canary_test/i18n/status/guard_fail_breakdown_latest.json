@@ -1,46 +1,43 @@
 {
-  "timestamp": "2026-02-20T20:38:37.213834Z",
-  "window_start_utc": "2026-02-20T19:38:36.535124Z",
-  "window_end_utc": "2026-02-20T20:38:36.535124Z",
+  "timestamp": "2026-02-20T20:41:13.180722Z",
+  "window_start_utc": "2026-02-20T19:41:12.484065Z",
+  "window_end_utc": "2026-02-20T20:41:12.484065Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 201,
-  "rejected_entries_raw": 441,
-  "suspicious_entries": 3630,
-  "suspicious_entries_raw": 22602,
+  "rejected_entries": 168,
+  "rejected_entries_raw": 415,
+  "suspicious_entries": 3586,
+  "suspicious_entries_raw": 24271,
   "guard_fail_entries": 124,
-  "guard_fail_sum": 8608,
+  "guard_fail_sum": 9618,
   "by_type": {
-    "identical_to_en": 160,
-    "contains_tibia_proper_noun": 16,
-    "mixed_scripts": 22,
-    "cyrillic_latin_mix": 22,
-    "word_salad": 7,
     "mixed_language": 9,
+    "mixed_scripts": 10,
+    "cyrillic_latin_mix": 10,
+    "identical_to_en": 139,
+    "word_salad": 7,
+    "contains_tibia_proper_noun": 6,
     "fx_token": 3
   },
   "by_source": {
-    "google_translate": 201
+    "google_translate": 168
   },
   "by_language": {
-    "it": 25,
-    "ru": 22,
-    "ro": 62,
+    "it": 10,
+    "ru": 10,
     "es": 39,
     "pl": 38,
+    "ro": 56,
     "sv": 15
   },
   "by_category": {
-    "achievements.json": 18,
-    "libs.json": 7,
-    "client.json": 12,
-    "npc.json": 4,
     "php.json": 2,
     "modules.json": 3,
+    "npc.json": 4,
     "items.json": 27,
     "server.json": 17,
     "monsters.json": 30,
@@ -48,28 +45,25 @@
     "quests.json": 3,
     "scripts.json": 14,
     "books.json": 1,
-    "otclient_modules.json": 30
+    "otclient_modules.json": 30,
+    "client.json": 4
   },
   "by_severity": {
-    "CRITICAL": 167,
-    "HIGH": 34
+    "HIGH": 22,
+    "CRITICAL": 146
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 160
+      "count": 139
     },
     {
       "type": "mixed_scripts",
-      "count": 22
+      "count": 10
     },
     {
       "type": "cyrillic_latin_mix",
-      "count": 22
-    },
-    {
-      "type": "contains_tibia_proper_noun",
-      "count": 16
+      "count": 10
     },
     {
       "type": "mixed_language",
@@ -80,101 +74,15 @@
       "count": 7
     },
     {
+      "type": "contains_tibia_proper_noun",
+      "count": 6
+    },
+    {
       "type": "fx_token",
       "count": 3
     }
   ],
   "top_keys": [
-    {
-      "key": "lib.player.loyalty_title_1",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "lib.player.loyalty_title_10",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "lib.player.loyalty_title_2",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "lib.player.loyalty_title_3",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "lib.player.loyalty_title_4",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "lib.player.loyalty_title_5",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "lib.player.loyalty_title_6",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "achievement.351.name",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "achievement.493.name",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "achievement.524.name",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
     {
       "key": "data.otservbr.global.npc.anerui.L71.1487",
       "count": 3,
@@ -224,10 +132,27 @@
       }
     },
     {
-      "key": "client.mounts.text3",
+      "key": "module.hireling_module.text1",
       "count": 2,
       "types": {
-        "identical_to_en": 2
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "module.gamestore.text3",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "module.daily_reward.text1",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
       }
     },
     {
@@ -238,19 +163,77 @@
       }
     },
     {
-      "key": "achievement.26.name",
+      "key": "item.10388.name",
       "count": 2,
       "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
+        "identical_to_en": 2
       }
     },
     {
-      "key": "achievement.295.name",
+      "key": "item.10391.name",
       "count": 2,
       "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.12742.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.13670.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "monster.deathspawn.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "monster.demon.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "monster.sorcerer_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "monster.knight_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "monster.paladin_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "monster.druid_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
       }
     }
   ]

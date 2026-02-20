@@ -1,9 +1,9 @@
 {
-  "category": "es",
-  "cycle": 163,
+  "category": "pl",
+  "cycle": 165,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-20T20:38:32Z",
+  "generated_at_utc": "2026-02-20T20:41:08Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -14,103 +14,103 @@
   "recent": [
     {
       "action": "update",
-      "category": "pl",
-      "cycle": 163,
-      "file": "items.json",
+      "category": "es",
+      "cycle": 165,
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-20T20:38:07Z"
+      "t": "2026-02-20T20:40:44Z"
     },
     {
       "action": "update",
-      "category": "pl",
-      "cycle": 163,
-      "file": "items.json",
+      "category": "es",
+      "cycle": 165,
+      "file": "server.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-20T20:38:06Z"
+      "t": "2026-02-20T20:40:44Z"
     },
     {
       "action": "update",
       "category": "es",
-      "cycle": 163,
-      "file": "client.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-02-20T20:38:05Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 163,
-      "file": "client.json",
+      "cycle": 165,
+      "file": "monsters.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-20T20:37:56Z"
+      "t": "2026-02-20T20:40:38Z"
     },
     {
       "action": "update",
       "category": "es",
-      "cycle": 163,
-      "file": "client.json",
+      "cycle": 165,
+      "file": "monsters.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-20T20:40:38Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 165,
+      "file": "monsters.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-20T20:40:36Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 165,
+      "file": "monsters.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-20T20:40:31Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 165,
+      "file": "monsters.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_start",
-      "t": "2026-02-20T20:37:56Z"
+      "t": "2026-02-20T20:40:31Z"
     },
     {
       "action": "update",
       "category": "es",
-      "cycle": 162,
+      "cycle": 164,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-20T20:37:11Z"
+      "t": "2026-02-20T20:39:45Z"
     },
     {
       "action": "update",
-      "category": "pl",
-      "cycle": 162,
-      "file": "otclient_modules.json",
+      "category": "es",
+      "cycle": 164,
+      "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-20T20:36:49Z"
+      "t": "2026-02-20T20:39:24Z"
     },
     {
       "action": "update",
-      "category": "pl",
-      "cycle": 162,
-      "file": "otclient_modules.json",
+      "category": "es",
+      "cycle": 164,
+      "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-20T20:36:49Z"
-    },
-    {
-      "action": "update",
-      "category": "sr",
-      "cycle": 162,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-20T20:36:43Z"
-    },
-    {
-      "action": "update",
-      "category": "sr",
-      "cycle": 162,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-20T20:36:43Z"
+      "t": "2026-02-20T20:39:24Z"
     }
   ],
   "stage": "cycle_end",

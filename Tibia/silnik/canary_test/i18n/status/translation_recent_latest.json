@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T20:38:29.944288Z",
-  "language": "pl",
-  "json_file": "items.json",
+  "timestamp": "2026-02-20T20:41:02.988298Z",
+  "language": "es",
+  "json_file": "server.json",
   "translated": 2,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
@@ -9,15 +9,15 @@
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "item.31576.name",
-      "en": "Regalia of Suon",
-      "translated": "Regalia Suon",
+      "key": "data.otservbr.global.npc.a.fading.memory.L53.1295",
+      "en": "Oh...",
+      "translated": "Oh...",
       "source": "tm"
     },
     {
-      "key": "item.3203.name",
-      "en": "animate dead rune",
-      "translated": "Animate Dead Rune",
+      "key": "data.otservbr.global.npc.a.restless.soul.L53.44",
+      "en": "Uhhhh...",
+      "translated": "Uhhhh...",
       "source": "tm"
     }
   ]

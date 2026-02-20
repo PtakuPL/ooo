@@ -118190,5 +118190,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T21:23:49.987122Z"
+  },
+  "quests.rookie_guard.m10.not_crypt": {
+    "src_hash": "35806744f6d142cb8f7a6a66427f65d9",
+    "text": "To nie jest droga do krypty. Idź na południowy-zachód, by dotrzeć do cmentarza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:29:14.620719Z"
   }
 }

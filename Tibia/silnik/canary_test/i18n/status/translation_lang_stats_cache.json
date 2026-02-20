@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T22:28:41.007804Z",
+  "timestamp": "2026-02-20T22:30:10.591405Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1975,
-  "file_cache_misses": 1,
+  "cache_hits": 50,
+  "cache_misses": 2,
+  "file_cache_hits": 1974,
+  "file_cache_misses": 2,
   "langs": {
     "ar": {
       "sig": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771626511376803910,
+          1771626602443087535,
           1847178
         ],
         [
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771626511376803910,
+            1771626602443087535,
             1847178
           ],
           "row": {
@@ -25473,8 +25473,8 @@
         [
           "quests.json",
           1,
-          1771622317100318859,
-          65636
+          1771626556392561899,
+          65643
         ],
         [
           "raids.json",
@@ -25530,13 +25530,13 @@
         "language_name": "Polski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 47064,
+        "translated_keys": 47065,
         "english_copy_keys": 1830,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 87.83,
         "server_keys": 49731,
-        "server_translated": 44026,
+        "server_translated": 44027,
         "server_pct": 88.53,
         "client_keys": 3855,
         "client_translated": 3038,
@@ -25952,12 +25952,12 @@
         "quests.json": {
           "sig": [
             1,
-            1771622317100318859,
-            65636
+            1771626556392561899,
+            65643
           ],
           "row": {
             "total_reference_keys": 610,
-            "translated_keys": 603,
+            "translated_keys": 604,
             "english_copy_keys": 2,
             "missing_keys": 0,
             "missing_files": 0

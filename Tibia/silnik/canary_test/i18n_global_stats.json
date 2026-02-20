@@ -1,8 +1,8 @@
 {
-  "total_cycles": 8,
+  "total_cycles": 9,
   "mode": "AUTO_TRANSLATE",
-  "category": "ru",
-  "last_update": "2026-02-20T23:28:33.523231",
+  "category": "pl",
+  "last_update": "2026-02-20T23:30:04.629812",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,10 +26,10 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "ru",
-    "json_file": "monsters.json",
-    "keys_to_translate": 141,
-    "guard_fail": 14,
+    "language": "pl",
+    "json_file": "quests.json",
+    "keys_to_translate": 7,
+    "guard_fail": 5,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

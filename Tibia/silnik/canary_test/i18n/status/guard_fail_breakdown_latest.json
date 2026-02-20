@@ -1,53 +1,51 @@
 {
-  "timestamp": "2026-02-20T22:28:43.635566Z",
-  "window_start_utc": "2026-02-20T21:28:42.400682Z",
-  "window_end_utc": "2026-02-20T22:28:42.400682Z",
+  "timestamp": "2026-02-20T22:30:12.229574Z",
+  "window_start_utc": "2026-02-20T21:30:11.045939Z",
+  "window_end_utc": "2026-02-20T22:30:11.045939Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 120,
-  "rejected_entries_raw": 315,
+  "rejected_entries": 93,
+  "rejected_entries_raw": 289,
   "suspicious_entries": 3193,
-  "suspicious_entries_raw": 25339,
-  "guard_fail_entries": 110,
-  "guard_fail_sum": 7464,
+  "suspicious_entries_raw": 25110,
+  "guard_fail_entries": 107,
+  "guard_fail_sum": 7424,
   "by_type": {
-    "identical_to_en": 113,
+    "identical_to_en": 86,
     "word_salad": 1,
     "contains_tibia_proper_noun": 5,
     "mixed_language": 6
   },
   "by_source": {
-    "google_translate": 120
+    "google_translate": 93
   },
   "by_language": {
-    "ro": 42,
-    "sv": 7,
-    "pl": 41,
     "es": 28,
-    "it": 2
+    "pl": 35,
+    "it": 2,
+    "ro": 28
   },
   "by_category": {
-    "otclient_modules.json": 20,
-    "monsters.json": 30,
     "npc.json": 4,
     "cpp.json": 5,
     "achievements.json": 5,
     "items.json": 28,
     "server.json": 2,
+    "monsters.json": 23,
     "spells.json": 26
   },
   "by_severity": {
-    "CRITICAL": 114,
+    "CRITICAL": 87,
     "HIGH": 6
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 113
+      "count": 86
     },
     {
       "type": "mixed_language",
@@ -63,27 +61,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "otclient_modules.addserver_otui.tr_4",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "monster.deathspawn.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "monster.demon.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
@@ -174,35 +151,56 @@
       }
     },
     {
-      "key": "otclient_modules.addserver_otui.tr_3",
+      "key": "npc.al_dee.stdmod_41",
+      "count": 1,
+      "types": {
+        "word_salad": 1
+      }
+    },
+    {
+      "key": "cpp.title.name_14",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "otclient_modules.assign_text_otui.tr_4",
+      "key": "cpp.title.name_42",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "otclient_modules.bestiary.tr_7",
+      "key": "cpp.title.name_83",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "otclient_modules.bestiary_otui.tr_10",
+      "key": "cpp.title.name_87",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "otclient_modules.bestiary_otui.tr_12",
+      "key": "achievement.30.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "achievement.93.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "achievement.165.name",
       "count": 1,
       "types": {
         "identical_to_en": 1

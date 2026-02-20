@@ -154150,5 +154150,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T21:02:47.681617Z"
+  },
+  "item.143.name": {
+    "src_hash": "90e76fcc04bf1b06b0488b4d4a72f8aa",
+    "text": "fardo de tela amarillenta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:31:59.279251Z"
+  },
+  "item.14671.name": {
+    "src_hash": "ca0aebba1633318c38ac742f90b93ac8",
+    "text": "Trofeo del bicho dorado de Delany",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:31:59.279581Z"
+  },
+  "item.14672.name": {
+    "src_hash": "cb14b58a34fe229b504dab56fc5b4fdc",
+    "text": "Trofeo del bicho dorado de Bolfrim",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:31:59.279871Z"
+  },
+  "item.14673.name": {
+    "src_hash": "30c127240064b711cf1c7311ec25d406",
+    "text": "Trofeo del bicho dorado de Siramal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:31:59.280154Z"
+  },
+  "item.14681.desc": {
+    "src_hash": "c372481b5891e946dab650e9d60c9ac3",
+    "text": "Fue creado por los mejores panaderos de Tibia para la celebración de los 15 años de Tibia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:32:02.661005Z"
+  },
+  "item.14682.desc": {
+    "src_hash": "1481c5a049b02850e99ef99d46e4c402",
+    "text": "Nadie sabe realmente a dónde conduce, pero el cementerio de dragones podría revelar el secreto... o no.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:32:02.661542Z"
+  },
+  "item.14691.desc": {
+    "src_hash": "c9cb7bf0b3ee74327c65c8ff9cea1fb3",
+    "text": "Fue pintado al estilo de Penciljack.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:32:02.661866Z"
   }
 }

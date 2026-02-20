@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:05:54.629571Z",
-  "window_start_utc": "2026-02-20T18:05:53.955236Z",
-  "window_end_utc": "2026-02-20T19:05:53.955236Z",
+  "timestamp": "2026-02-20T19:06:35.358779Z",
+  "window_start_utc": "2026-02-20T18:06:34.639725Z",
+  "window_end_utc": "2026-02-20T19:06:34.639725Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,11 +9,11 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 68,
-  "rejected_entries_raw": 375,
+  "rejected_entries_raw": 378,
   "suspicious_entries": 3111,
-  "suspicious_entries_raw": 25270,
-  "guard_fail_entries": 127,
-  "guard_fail_sum": 7524,
+  "suspicious_entries_raw": 28157,
+  "guard_fail_entries": 129,
+  "guard_fail_sum": 7530,
   "by_type": {
     "identical_to_en": 63,
     "word_salad": 1,
@@ -24,14 +24,14 @@
     "google_translate": 68
   },
   "by_language": {
-    "es": 8,
     "ro": 28,
+    "es": 8,
     "pl": 30,
     "it": 2
   },
   "by_category": {
-    "npc.json": 4,
     "items.json": 26,
+    "npc.json": 4,
     "spells.json": 13,
     "monsters.json": 23,
     "server.json": 2
@@ -120,13 +120,6 @@
       }
     },
     {
-      "key": "npc.al_dee.stdmod_41",
-      "count": 1,
-      "types": {
-        "word_salad": 1
-      }
-    },
-    {
       "key": "item.10096.name",
       "count": 1,
       "types": {
@@ -159,6 +152,13 @@
       "count": 1,
       "types": {
         "identical_to_en": 1
+      }
+    },
+    {
+      "key": "npc.al_dee.stdmod_41",
+      "count": 1,
+      "types": {
+        "word_salad": 1
       }
     },
     {

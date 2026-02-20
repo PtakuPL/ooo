@@ -78686,5 +78686,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T19:02:10.599823Z"
+  },
+  "item.408.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "pavimento in legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:06:12.127195Z"
+  },
+  "item.410.name": {
+    "src_hash": "1280e09900d17cacb0c943ac9f2752ec",
+    "text": "pavimento in marmo nero",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:06:12.128788Z"
+  },
+  "item.4140.name": {
+    "src_hash": "1409eaa86688e6b8f31f95d235008f3c",
+    "text": "muro di legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:06:12.132346Z"
+  },
+  "item.4144.name": {
+    "src_hash": "1409eaa86688e6b8f31f95d235008f3c",
+    "text": "muro di legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:06:12.132905Z"
+  },
+  "item.416.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:06:12.134755Z"
+  },
+  "item.418.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:06:12.136328Z"
   }
 }

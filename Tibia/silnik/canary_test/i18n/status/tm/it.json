@@ -79414,5 +79414,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T19:53:21.170682Z"
+  },
+  "item.44945.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:01:18.252886Z"
+  },
+  "item.44946.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:01:18.253211Z"
+  },
+  "item.44947.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:01:18.253449Z"
+  },
+  "item.44948.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:01:18.253681Z"
+  },
+  "item.451.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:01:18.254099Z"
+  },
+  "item.45153.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:01:18.254364Z"
   }
 }

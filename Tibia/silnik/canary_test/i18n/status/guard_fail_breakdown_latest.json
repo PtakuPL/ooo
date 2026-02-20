@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T20:01:01.241849Z",
-  "window_start_utc": "2026-02-20T19:01:00.537681Z",
-  "window_end_utc": "2026-02-20T20:01:00.537681Z",
+  "timestamp": "2026-02-20T20:01:40.668045Z",
+  "window_start_utc": "2026-02-20T19:01:39.942413Z",
+  "window_end_utc": "2026-02-20T20:01:39.942413Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,14 +9,14 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 214,
-  "rejected_entries_raw": 370,
+  "rejected_entries_raw": 374,
   "suspicious_entries": 3672,
-  "suspicious_entries_raw": 25271,
+  "suspicious_entries_raw": 28157,
   "guard_fail_entries": 134,
-  "guard_fail_sum": 5826,
+  "guard_fail_sum": 5813,
   "by_type": {
-    "identical_to_en": 172,
     "word_salad": 7,
+    "identical_to_en": 172,
     "contains_tibia_proper_noun": 17,
     "mixed_language": 10,
     "mixed_scripts": 22,
@@ -218,13 +218,6 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "monster.deathspawn.name",
       "count": 2,
       "types": {
@@ -249,6 +242,14 @@
     },
     {
       "key": "monster.paladin_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "monster.druid_familiar.name",
       "count": 2,
       "types": {
         "identical_to_en": 1,

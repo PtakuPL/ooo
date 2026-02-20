@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T20:01:00.282013Z",
+  "timestamp": "2026-02-20T20:01:39.687360Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 48,
-  "cache_misses": 4,
-  "file_cache_hits": 1972,
-  "file_cache_misses": 4,
+  "cache_hits": 49,
+  "cache_misses": 3,
+  "file_cache_hits": 1973,
+  "file_cache_misses": 3,
   "langs": {
     "ar": {
       "sig": [
@@ -15981,8 +15981,8 @@
         [
           "items.json",
           1,
-          1771617201415877622,
-          902755
+          1771617678478111179,
+          902731
         ],
         [
           "libs.json",
@@ -16134,14 +16134,14 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 27960,
+        "translated_keys": 27966,
         "english_copy_keys": 2144,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 52.18,
+        "completion_pct": 52.19,
         "server_keys": 49731,
-        "server_translated": 26597,
-        "server_pct": 53.48,
+        "server_translated": 26603,
+        "server_pct": 53.49,
         "client_keys": 3855,
         "client_translated": 1363,
         "client_pct": 35.36
@@ -16332,12 +16332,12 @@
         "items.json": {
           "sig": [
             1,
-            1771617201415877622,
-            902755
+            1771617678478111179,
+            902731
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 4449,
+            "translated_keys": 4455,
             "english_copy_keys": 7,
             "missing_keys": 0,
             "missing_files": 0
@@ -26943,7 +26943,7 @@
         [
           "items.json",
           1,
-          1771617268861725633,
+          1771617693885553745,
           887987
         ],
         [
@@ -27294,7 +27294,7 @@
         "items.json": {
           "sig": [
             1,
-            1771617268861725633,
+            1771617693885553745,
             887987
           ],
           "row": {
@@ -27726,7 +27726,7 @@
         [
           "items.json",
           1,
-          1771617207351178941,
+          1771617683161750797,
           983333
         ],
         [
@@ -28077,7 +28077,7 @@
         "items.json": {
           "sig": [
             1,
-            1771617207351178941,
+            1771617683161750797,
             983333
           ],
           "row": {

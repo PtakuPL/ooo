@@ -1,44 +1,42 @@
 {
-  "timestamp": "2026-02-20T21:37:58.042182Z",
-  "window_start_utc": "2026-02-20T20:37:57.146864Z",
-  "window_end_utc": "2026-02-20T21:37:57.146864Z",
+  "timestamp": "2026-02-20T21:39:20.681190Z",
+  "window_start_utc": "2026-02-20T20:39:19.666798Z",
+  "window_end_utc": "2026-02-20T21:39:19.666798Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 174,
-  "rejected_entries_raw": 375,
-  "suspicious_entries": 3451,
-  "suspicious_entries_raw": 28158,
+  "rejected_entries": 153,
+  "rejected_entries_raw": 374,
+  "suspicious_entries": 3446,
+  "suspicious_entries_raw": 25372,
   "guard_fail_entries": 128,
-  "guard_fail_sum": 4287,
+  "guard_fail_sum": 3005,
   "by_type": {
-    "fx_token": 3,
-    "identical_to_en": 150,
-    "mixed_language": 7,
+    "identical_to_en": 136,
     "word_salad": 7,
     "contains_tibia_proper_noun": 7,
+    "mixed_language": 3,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7
   },
   "by_source": {
-    "google_translate": 174
+    "google_translate": 153
   },
   "by_language": {
-    "es": 45,
-    "pl": 43,
+    "es": 41,
     "it": 8,
     "ro": 56,
+    "pl": 26,
     "ru": 7,
     "sv": 15
   },
   "by_category": {
-    "client.json": 4,
-    "items.json": 28,
     "npc.json": 4,
     "server.json": 17,
+    "items.json": 11,
     "monsters.json": 30,
     "spells.json": 33,
     "quests.json": 3,
@@ -49,17 +47,13 @@
     "achievements.json": 5
   },
   "by_severity": {
-    "HIGH": 17,
-    "CRITICAL": 157
+    "CRITICAL": 143,
+    "HIGH": 10
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 150
-    },
-    {
-      "type": "mixed_language",
-      "count": 7
+      "count": 136
     },
     {
       "type": "word_salad",
@@ -78,7 +72,7 @@
       "count": 7
     },
     {
-      "type": "fx_token",
+      "type": "mixed_language",
       "count": 3
     }
   ],
@@ -129,34 +123,6 @@
         "contains_tibia_proper_noun": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "item.10388.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.10391.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.12742.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.13670.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
       }
     },
     {
@@ -228,6 +194,34 @@
     },
     {
       "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L72.1488",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L73.1489",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.brasith.L60.1212",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.brasith.L61.1213",
       "count": 2,
       "types": {
         "identical_to_en": 2

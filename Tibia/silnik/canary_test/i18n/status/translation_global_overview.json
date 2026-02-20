@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-20T16:40:41.387652Z",
+  "timestamp": "2026-02-20T16:41:47.338134Z",
   "global": {
     "total_reference_keys": 2786472,
     "translated_keys": 384980,
@@ -49,34 +49,34 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 6564,
-    "guard_reports_blocked": 3672,
+    "guard_reports_total": 6566,
+    "guard_reports_blocked": 3674,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 3672
+    "cannot_translate_reports_visible": 3674
   },
   "cache": {
-    "lang_stats_hits": 51,
-    "lang_stats_misses": 1,
-    "lang_stats_hit_pct": 98.1,
+    "lang_stats_hits": 50,
+    "lang_stats_misses": 2,
+    "lang_stats_hit_pct": 96.2,
     "lang_stats_mode": "mixed",
-    "lang_file_hits": 1975,
-    "lang_file_misses": 1,
+    "lang_file_hits": 1974,
+    "lang_file_misses": 2,
     "lang_file_hit_pct": 99.9,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-20T16:40:37.109790Z",
-    "cycle": 6,
+    "timestamp": "2026-02-20T16:41:43.221709Z",
+    "cycle": 7,
     "mode": "AUTO_TRANSLATE",
     "category": "pl",
     "events": {
-      "dispatch": 442,
-      "mode_run": 91517
+      "dispatch": 1601,
+      "mode_run": 48590
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-20T15:40:41.100892Z",
-    "window_end_utc": "2026-02-20T16:40:41.100892Z",
+    "window_start_utc": "2026-02-20T15:41:47.050700Z",
+    "window_end_utc": "2026-02-20T16:41:47.050700Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -84,22 +84,22 @@
       "i18n/status/suspicious_log.jsonl",
       "i18n/status/suspicious_rejected.jsonl"
     ],
-    "total_cycles": 51,
+    "total_cycles": 55,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 51
+      "AUTO_TRANSLATE": 55
     },
-    "auto_translate_cycles": 51,
+    "auto_translate_cycles": 55,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 1069,
-    "guard_fail": 3424,
-    "guard_fail_rate_pct": 76.2,
+    "translated": 1111,
+    "guard_fail": 3497,
+    "guard_fail_rate_pct": 75.9,
     "no_progress_entries": 2,
-    "no_progress_rate_pct": 5.7,
-    "throughput_keys_per_h": 1498.0,
-    "suspicious_total": 7123,
+    "no_progress_rate_pct": 5.4,
+    "throughput_keys_per_h": 1466.5,
+    "suspicious_total": 7207,
     "top_guard_fail_targets": [
       {
         "target": "pl/items.json",
@@ -152,52 +152,53 @@
     ]
   },
   "guard_fail_breakdown": {
-    "timestamp": "2026-02-20T16:40:41.336561Z",
-    "window_start_utc": "2026-02-20T15:40:41.100892Z",
-    "window_end_utc": "2026-02-20T16:40:41.100892Z",
+    "timestamp": "2026-02-20T16:41:47.287041Z",
+    "window_start_utc": "2026-02-20T15:41:47.050700Z",
+    "window_end_utc": "2026-02-20T16:41:47.050700Z",
     "window_hours": 1.0,
     "sources": {
       "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
       "suspicious_log": "i18n/status/suspicious_log.jsonl",
       "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
     },
-    "rejected_entries": 304,
-    "suspicious_entries": 7123,
-    "guard_fail_entries": 35,
-    "guard_fail_sum": 3424,
+    "rejected_entries": 320,
+    "suspicious_entries": 7207,
+    "guard_fail_entries": 37,
+    "guard_fail_sum": 3497,
     "by_type": {
-      "identical_to_en": 239,
-      "word_salad": 9,
+      "identical_to_en": 249,
+      "word_salad": 15,
       "mixed_language": 44,
       "contains_tibia_proper_noun": 20,
       "mixed_scripts": 12,
       "cyrillic_latin_mix": 12
     },
     "by_source": {
-      "google_translate": 304
+      "google_translate": 320
     },
     "by_language": {
-      "es": 51,
+      "es": 59,
       "ro": 124,
       "it": 25,
       "ru": 12,
-      "pl": 92
+      "pl": 100
     },
     "by_category": {
       "npc.json": 18,
       "items.json": 112,
       "monsters.json": 117,
       "spells.json": 54,
-      "server.json": 3
+      "server.json": 3,
+      "scripts.json": 16
     },
     "by_severity": {
-      "CRITICAL": 248,
+      "CRITICAL": 264,
       "HIGH": 56
     },
     "top_types": [
       {
         "type": "identical_to_en",
-        "count": 239
+        "count": 249
       },
       {
         "type": "mixed_language",
@@ -208,16 +209,16 @@
         "count": 20
       },
       {
+        "type": "word_salad",
+        "count": 15
+      },
+      {
         "type": "mixed_scripts",
         "count": 12
       },
       {
         "type": "cyrillic_latin_mix",
         "count": 12
-      },
-      {
-        "type": "word_salad",
-        "count": 9
       }
     ],
     "top_keys": [
@@ -381,139 +382,20 @@
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-20T16:40:37.055148Z",
+      "timestamp": "2026-02-20T16:41:43.175011Z",
       "checked_entries": 100,
-      "issues_found": 36,
+      "issues_found": 21,
       "issues_by_type": {
-        "identical_to_en_exempt": 8,
-        "artifact_token": 32,
-        "identical_to_en": 4,
-        "suspicious_log_high": 122,
-        "suspicious_log_critical": 75,
-        "suspicious_log_low": 3,
-        "suspicious_rejected_critical": 155,
-        "suspicious_rejected_high": 45
+        "identical_to_en_exempt": 18,
+        "identical_to_en": 3,
+        "artifact_token": 18,
+        "suspicious_log_critical": 98,
+        "suspicious_log_high": 76,
+        "suspicious_log_medium": 26,
+        "suspicious_rejected_high": 43,
+        "suspicious_rejected_critical": 157
       },
       "issues": [
-        {
-          "key": "npc.captain_haba_open_sea.larboard_1",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-          "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
-        },
-        {
-          "key": "npc.captain_haba_open_sea.say_3",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-          "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
-        },
-        {
-          "key": "npc.captain_haba_open_sea.starboard_1",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-          "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
-        },
-        {
-          "key": "npc.captain_haba_open_sea.straight_3",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-          "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
-        },
-        {
-          "key": "npc.captain_haba_open_sea.straight_5",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-          "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
-        },
-        {
-          "key": "npc.lardoc_bashsmite.multi_3",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-          "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-        },
-        {
-          "key": "npc.lardoc_bashsmite.multi_9",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-          "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
-        },
-        {
-          "key": "npc.mother_of_jack.voice_1",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
-          "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?"
-        },
-        {
-          "key": "npc.navigator.multi_1",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
-          "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ..."
-        },
-        {
-          "key": "npc.navigator.multi_2",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
-          "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ..."
-        },
-        {
-          "key": "npc.omrabas.multi_35",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
-          "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!"
-        },
-        {
-          "key": "npc.omrabas.multi_82",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
-          "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!"
-        },
-        {
-          "key": "npc.omrabas.voice_2",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "He will PAY for this... They will ALL pay!",
-          "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!"
-        },
-        {
-          "key": "npc.pythius_the_rotten.stdmod_12",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
-          "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!"
-        },
-        {
-          "key": "npc.raymond_striker.multi_21",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-          "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
-        },
-        {
-          "key": "npc.sane_mage.multi_5",
-          "lang": "es",
-          "type": "artifact_token",
-          "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-          "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-        },
-        {
-          "key": "monster.makara.voice_1",
-          "lang": "ro",
-          "type": "identical_to_en",
-          "en": "waddle waddle",
-          "translated": "waddle waddle"
-        },
         {
           "key": "spell.arrow_call.words",
           "lang": "es",
@@ -646,6 +528,20 @@
           "type": "artifact_token",
           "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
           "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+        },
+        {
+          "key": "scripts.auto_loot.msg_2",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "Autoloot mode set to ALL.",
+          "translated": "Modo de autoloot establecido a TODO."
+        },
+        {
+          "key": "scripts.prince_drazzak_summon.say_1",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "CRUSH THEM ALL!",
+          "translated": "¡¡APLASTADLES A TODOS!!"
         }
       ],
       "threshold": 10,
@@ -664,15 +560,15 @@
         "quality_score": 77.5
       },
       "pl": {
-        "last_cycle": "2026-02-20T16:39:29.253659Z",
-        "last_translated": 1,
-        "total_suspicious": 22501,
-        "total_rejected": 1701,
-        "total_gt_guard_fail": 4557,
-        "cycles": 1032,
+        "last_cycle": "2026-02-20T16:41:14.351247Z",
+        "last_translated": 25,
+        "total_suspicious": 22541,
+        "total_rejected": 1709,
+        "total_gt_guard_fail": 4582,
+        "cycles": 1033,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T16:40:37.055148Z",
-        "issues_count": 178835
+        "last_audit": "2026-02-20T16:41:43.175011Z",
+        "issues_count": 178964
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -686,15 +582,15 @@
         "issues_count": 1417
       },
       "es": {
-        "last_cycle": "2026-02-20T16:40:35.944449Z",
-        "last_translated": 23,
-        "total_suspicious": 44557,
-        "total_rejected": 1594,
-        "total_gt_guard_fail": 16889,
-        "cycles": 1400,
+        "last_cycle": "2026-02-20T16:41:40.374546Z",
+        "last_translated": 17,
+        "total_suspicious": 44585,
+        "total_rejected": 1602,
+        "total_gt_guard_fail": 16922,
+        "cycles": 1401,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T16:40:37.055148Z",
-        "issues_count": 315639
+        "last_audit": "2026-02-20T16:41:43.175011Z",
+        "issues_count": 315848
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -725,9 +621,9 @@
         "total_rejected": 627,
         "total_gt_guard_fail": 1916,
         "cycles": 337,
-        "quality_score": 68.4,
-        "last_audit": "2026-02-20T16:40:37.055148Z",
-        "issues_count": 69373
+        "quality_score": 69.8,
+        "last_audit": "2026-02-20T16:41:43.175011Z",
+        "issues_count": 69387
       },
       "ru": {
         "last_cycle": "2026-02-20T16:37:18.149608Z",
@@ -736,9 +632,9 @@
         "total_rejected": 837,
         "total_gt_guard_fail": 2206,
         "cycles": 313,
-        "quality_score": 80.0,
-        "last_audit": "2026-02-20T16:40:37.055148Z",
-        "issues_count": 208666
+        "quality_score": 83.2,
+        "last_audit": "2026-02-20T16:41:43.175011Z",
+        "issues_count": 208672
       },
       "nl": {
         "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -1210,8 +1106,8 @@
         "total_gt_guard_fail": 3915,
         "cycles": 302,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T16:40:37.055148Z",
-        "issues_count": 172336
+        "last_audit": "2026-02-20T16:41:43.175011Z",
+        "issues_count": 172399
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -1225,8 +1121,8 @@
         "issues_count": 80
       }
     },
-    "summary": "SLOW_MODE | 36 issue(s) / 100 entries | 2026-02-20T16:40:37.055148Z | recent_hidden=0",
-    "guard_fail_breakdown_summary": "identical_to_en=239, mixed_language=44, contains_tibia_proper_noun=20, mixed_scripts=12, cyrillic_latin_mix=12",
+    "summary": "SLOW_MODE | 21 issue(s) / 100 entries | 2026-02-20T16:41:43.175011Z | recent_hidden=0",
+    "guard_fail_breakdown_summary": "identical_to_en=249, mixed_language=44, contains_tibia_proper_noun=20, word_salad=15, mixed_scripts=12",
     "recent_hidden_high_critical": {
       "latest": 0,
       "threshold": 5,
@@ -1234,17 +1130,17 @@
       "trend": "→ last10=0.00, prev10=0.00, latest=0"
     },
     "critical_bad_keys_pack_regression": {
-      "timestamp": "2026-02-20T16:40:41.337455Z",
-      "window_start_utc": "2026-02-20T15:40:41.100892Z",
-      "window_end_utc": "2026-02-20T16:40:41.100892Z",
+      "timestamp": "2026-02-20T16:41:47.288022Z",
+      "window_start_utc": "2026-02-20T15:41:47.050700Z",
+      "window_end_utc": "2026-02-20T16:41:47.050700Z",
       "by_lang": {
         "pl": {
-          "critical_in_window": 60,
+          "critical_in_window": 68,
           "pack_entries": 0,
           "ok": false
         },
         "es": {
-          "critical_in_window": 47,
+          "critical_in_window": 55,
           "pack_entries": 0,
           "ok": false
         }

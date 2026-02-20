@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:00:29.524010Z",
-  "window_start_utc": "2026-02-20T18:00:28.853897Z",
-  "window_end_utc": "2026-02-20T19:00:28.853897Z",
+  "timestamp": "2026-02-20T19:01:52.801094Z",
+  "window_start_utc": "2026-02-20T18:01:52.134024Z",
+  "window_end_utc": "2026-02-20T19:01:52.134024Z",
   "by_lang": {
     "pl": {
       "critical_in_window": 26,

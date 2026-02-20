@@ -1,19 +1,16 @@
 {
-  "timestamp": "2026-02-20T22:31:43.948141Z",
-  "cycle_counter": 6544,
-  "last_target_key": "ro:server.json",
-  "last_pending_total": 1145,
+  "timestamp": "2026-02-20T22:33:35.776611Z",
+  "cycle_counter": 6547,
+  "last_target_key": "ru:quests.json",
+  "last_pending_total": 3,
   "last_tier": 2,
-  "last_cat_priority": 3,
+  "last_cat_priority": 5,
   "candidates_count": 181,
-  "active_candidates_count": 169,
+  "active_candidates_count": 171,
   "skipped_backoff": 10,
-  "skipped_guard_fail": 2,
-  "guard_fail_blacklist": {
-    "pl:spells.json": 6545,
-    "es:spells.json": 6546
-  },
-  "guard_fail_blocked_count": 2,
+  "skipped_guard_fail": 0,
+  "guard_fail_blacklist": {},
+  "guard_fail_blocked_count": 0,
   "guard_fail_blocked_preview": [],
   "tier_config": {
     "tier1": [
@@ -39,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 11,
+  "cache_cycle": 12,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -216,9 +213,9 @@
     "lang_completion": {
       "pl": 87.83,
       "es": 85.06,
-      "ru": 50.34,
+      "ru": 50.24,
       "ro": 43.67,
-      "it": 52.51,
+      "it": 52.54,
       "sr": 45.47,
       "sv": 29.24
     }

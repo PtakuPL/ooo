@@ -38446,5 +38446,45 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:31:39.737614Z"
+  },
+  "spell.restoration.words": {
+    "src_hash": "40a2cd84931f4f23fc412feba6b5ece6",
+    "text": "ексура макс. vita",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:33:11.251026Z"
+  },
+  "spell.quara_constrictor_freeze.name": {
+    "src_hash": "12b6e90f7c167ea881781f7f0d10220f",
+    "text": "Замораживание Куара Констриктор",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:33:13.031482Z"
+  },
+  "spell.furyosa_deathball.name": {
+    "src_hash": "daf7bc73713b5f8d891c98d697d4bdf1",
+    "text": "Фурёса Смертельный шар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:33:13.036813Z"
+  },
+  "spell.the_pale_count_manadrain.name": {
+    "src_hash": "7f991595682c6f8c3de5284694b224d5",
+    "text": "The Пале Коунт Манадрен",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:33:13.038502Z"
+  },
+  "spell.tenebris_ultimate.name": {
+    "src_hash": "5912095b44eac860fb79a329332874d6",
+    "text": "Тенебрис Ултимате",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:33:15.794465Z"
   }
 }

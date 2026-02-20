@@ -20,6 +20,9 @@
  * THE SOFTWARE.
  */
 
+#ifndef FRAMEWORK_PCH_H
+#define FRAMEWORK_PCH_H
+
 #pragma once
 
  // common C headers
@@ -73,3 +76,5 @@ format_as(E e) {
 #endif // OTML_NO_FMT
 
 using namespace std::literals;
+
+#endif // FRAMEWORK_PCH_H

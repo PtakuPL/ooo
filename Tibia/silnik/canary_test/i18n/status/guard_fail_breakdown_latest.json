@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T21:32:58.540802Z",
-  "window_start_utc": "2026-02-20T20:32:57.657804Z",
-  "window_end_utc": "2026-02-20T21:32:57.657804Z",
+  "timestamp": "2026-02-20T21:34:02.506426Z",
+  "window_start_utc": "2026-02-20T20:34:01.646414Z",
+  "window_end_utc": "2026-02-20T21:34:01.646414Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,14 +9,14 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 174,
-  "rejected_entries_raw": 412,
-  "suspicious_entries": 3453,
-  "suspicious_entries_raw": 26326,
+  "rejected_entries_raw": 404,
+  "suspicious_entries": 3449,
+  "suspicious_entries_raw": 25422,
   "guard_fail_entries": 129,
-  "guard_fail_sum": 4309,
+  "guard_fail_sum": 4324,
   "by_type": {
-    "identical_to_en": 150,
     "word_salad": 7,
+    "identical_to_en": 150,
     "fx_token": 3,
     "mixed_language": 7,
     "contains_tibia_proper_noun": 7,
@@ -27,17 +27,17 @@
     "google_translate": 174
   },
   "by_language": {
-    "es": 45,
-    "it": 8,
     "ro": 56,
+    "es": 45,
     "sv": 15,
     "pl": 43,
+    "it": 8,
     "ru": 7
   },
   "by_category": {
-    "otclient_modules.json": 30,
     "scripts.json": 14,
     "npc.json": 4,
+    "otclient_modules.json": 30,
     "monsters.json": 30,
     "client.json": 4,
     "items.json": 28,

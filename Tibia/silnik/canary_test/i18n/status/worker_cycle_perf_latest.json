@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-20T19:08:45.332190Z",
-  "cycle": 89,
+  "timestamp": "2026-02-20T19:10:11.197945Z",
+  "cycle": 90,
   "mode": "AUTO_TRANSLATE",
-  "category": "sr",
+  "category": "pl",
   "events": {
-    "dispatch": 1891,
-    "mode_run": 42934,
-    "status_update": 4813
+    "dispatch": 474,
+    "mode_run": 69280,
+    "status_update": 4949
   }
 }

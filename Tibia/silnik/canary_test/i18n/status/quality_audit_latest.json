@@ -1,12 +1,13 @@
 {
-  "timestamp": "2026-02-20T19:08:40.257930Z",
+  "timestamp": "2026-02-20T19:10:01.661289Z",
   "checked_entries": 100,
-  "issues_found": 32,
+  "issues_found": 40,
   "issues_by_type": {
-    "identical_to_en_exempt": 5,
-    "artifact_token": 32,
-    "suspicious_log_critical": 43,
-    "suspicious_log_high": 61,
+    "identical_to_en_exempt": 8,
+    "artifact_token": 35,
+    "identical_to_en": 5,
+    "suspicious_log_high": 51,
+    "suspicious_log_critical": 64,
     "suspicious_rejected_critical": 64,
     "suspicious_rejected_high": 4
   },
@@ -122,6 +123,62 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "monster.the_old_widow.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Old Widow",
+      "translated": "The Old Widow"
+    },
+    {
+      "key": "monster.the_pale_count.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Pale Count",
+      "translated": "The Pale Count"
+    },
+    {
+      "key": "monster.the_pale_count.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Pale Count",
+      "translated": "The Pale Count"
+    },
+    {
+      "key": "monster.sir_valorcrest.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.sir_valorcrest.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.the_pit_lord.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "I'LL GET YOU ALL!",
+      "translated": "¡LOS CONSEGUIRÉ A TODOS!"
+    },
+    {
+      "key": "monster.deathbringer.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "YOU ALL WILL DIE!",
+      "translated": "¡TODOS MORIRÉIS!"
+    },
+    {
+      "key": "monster.dracola.voice_2",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "YOU ARE ALL DOOMED!",
+      "translated": "¡ESTÁIS TODOS CONDENADOS!"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

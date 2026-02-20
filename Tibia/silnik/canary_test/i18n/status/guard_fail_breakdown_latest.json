@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:08:44.992726Z",
-  "window_start_utc": "2026-02-20T18:08:44.316050Z",
-  "window_end_utc": "2026-02-20T19:08:44.316050Z",
+  "timestamp": "2026-02-20T19:10:10.837474Z",
+  "window_start_utc": "2026-02-20T18:10:10.165042Z",
+  "window_end_utc": "2026-02-20T19:10:10.165042Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,29 +9,29 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 68,
-  "rejected_entries_raw": 373,
+  "rejected_entries_raw": 369,
   "suspicious_entries": 3111,
-  "suspicious_entries_raw": 25196,
-  "guard_fail_entries": 129,
-  "guard_fail_sum": 7527,
+  "suspicious_entries_raw": 25573,
+  "guard_fail_entries": 131,
+  "guard_fail_sum": 7033,
   "by_type": {
     "identical_to_en": 63,
-    "word_salad": 1,
     "mixed_language": 4,
+    "word_salad": 1,
     "contains_tibia_proper_noun": 4
   },
   "by_source": {
     "google_translate": 68
   },
   "by_language": {
-    "es": 8,
     "pl": 30,
     "it": 2,
+    "es": 8,
     "ro": 28
   },
   "by_category": {
-    "npc.json": 4,
     "items.json": 26,
+    "npc.json": 4,
     "monsters.json": 23,
     "server.json": 2,
     "spells.json": 13
@@ -60,28 +60,14 @@
   ],
   "top_keys": [
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.10388.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.10391.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "item.12742.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2
@@ -120,24 +106,17 @@
       }
     },
     {
-      "key": "npc.al_dee.stdmod_41",
-      "count": 1,
+      "key": "item.10388.name",
+      "count": 2,
       "types": {
-        "word_salad": 1
+        "identical_to_en": 2
       }
     },
     {
-      "key": "item.10727.name",
-      "count": 1,
+      "key": "item.10391.name",
+      "count": 2,
       "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "item.11515.name",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
+        "identical_to_en": 2
       }
     },
     {
@@ -201,6 +180,27 @@
       "count": 1,
       "types": {
         "mixed_language": 1
+      }
+    },
+    {
+      "key": "item.13670.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "item.17809.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "item.17812.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
       }
     }
   ]

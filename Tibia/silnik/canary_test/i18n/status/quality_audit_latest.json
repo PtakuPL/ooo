@@ -1,66 +1,15 @@
 {
-  "timestamp": "2026-02-20T21:37:06.462140Z",
+  "timestamp": "2026-02-20T21:37:52.727408Z",
   "checked_entries": 100,
-  "issues_found": 23,
+  "issues_found": 16,
   "issues_by_type": {
-    "identical_to_en": 4,
-    "artifact_token": 19,
-    "identical_to_en_exempt": 13,
-    "suspicious_log_high": 40,
-    "suspicious_log_critical": 90,
-    "suspicious_rejected_critical": 140,
+    "identical_to_en_exempt": 5,
+    "artifact_token": 16,
+    "suspicious_log_high": 100,
+    "suspicious_rejected_critical": 135,
     "suspicious_rejected_high": 10
   },
   "issues": [
-    {
-      "key": "monster.the_pale_count.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "The Pale Count",
-      "translated": "The Pale Count"
-    },
-    {
-      "key": "monster.the_pale_count.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "The Pale Count",
-      "translated": "The Pale Count"
-    },
-    {
-      "key": "monster.sir_valorcrest.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.the_pit_lord.voice_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "I'LL GET YOU ALL!",
-      "translated": "¡LOS CONSEGUIRÉ A TODOS!"
-    },
-    {
-      "key": "monster.deathbringer.voice_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "YOU ALL WILL DIE!",
-      "translated": "¡TODOS MORIRÉIS!"
-    },
-    {
-      "key": "monster.dracola.voice_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "YOU ARE ALL DOOMED!",
-      "translated": "¡ESTÁIS TODOS CONDENADOS!"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

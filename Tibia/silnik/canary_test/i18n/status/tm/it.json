@@ -80502,5 +80502,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T21:26:13.048466Z"
+  },
+  "item.5686.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "muro di pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:37:31.185487Z"
+  },
+  "item.5730.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "sabbia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:37:31.186589Z"
+  },
+  "item.5907.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un eremita vicino a Carlin potrebbe dirti di più a riguardo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:37:31.196889Z"
+  },
+  "item.593.name": {
+    "src_hash": "f64fec8437198ac7574a80fc3781c81e",
+    "text": "mucchio di pietre",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:37:31.198601Z"
+  },
+  "item.5938.desc": {
+    "src_hash": "18bf53a1e2d29f0fcf6dbaa1b4bf72db",
+    "text": "È vuoto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:37:31.199487Z"
+  },
+  "item.5951.name": {
+    "src_hash": "7ea70296e738e1defb9b7ba1719cf2ca",
+    "text": "coda di pesce",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:37:31.201473Z"
   }
 }

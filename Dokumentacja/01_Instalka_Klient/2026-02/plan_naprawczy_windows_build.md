@@ -1,138 +1,187 @@
 # Plan Naprawczy: Windows Build - Instalka OTC Client
 
-**Data:** 2026-02-20  
+**Data:** 2026-02-20 (aktualizacja: 2026-02-21)  
 **Źródło:** Analiza logów CI + badanie ChatGPT (`badanie_chatgpt_kompilacja.md`)  
-**Run ID:** 22203119029 (MSVC 14.44.35207 / VS 2022, windows-2022)
+**Run ID (początkowy):** 22203119029 | **Run ID (po Kroku 1):** 22234136342  
+**Kompilator:** MSVC 14.44.35207 / VS 2022 Enterprise, runner windows-2022
 
 ---
 
-## Zebrane logi - podsumowanie błędów
+## Historia błędów
 
-Z ostatniego runu CI **Build - Windows** (run ID: `22203119029`, MSVC 14.44.35207 / VS 2022 17.14.x) wyodrębniono **3 kategorie błędów**:
+### Runda 1 (run 22203119029) — 6 błędów
 
 | # | Kod błędu | Plik | Linia | Treść |
 |---|-----------|------|-------|-------|
 | 1 | **fatal error C1001** (ICE) | `luainterface.h` | 484 | Internal compiler error (p2\main.cpp:258) |
 | 2 | **fatal error C1001** (ICE) | `luabinder.h` | 171 | Internal compiler error (p2\main.cpp:258) |
-| 3 | **error C2139** | `luainterface.h` | 488 | `'UIWidget': an undefined class is not allowed as argument to '__is_base_of'` |
-| 4 | **error C2139** | `luainterface.h` | 488 | `'OTMLNode': an undefined class is not allowed as argument to '__is_base_of'` |
-| 5 | **error C2665** | `luainterface.h` | 488 | `'luavalue_cast': no overloaded function could convert all argument types` |
-| 6 | **error C2665** | `luainterface.h` | 403 | `'push_luavalue': no overloaded function could convert all argument types` |
+| 3 | **error C2139** | `luainterface.h` | 488 | `'UIWidget': undefined class in '__is_base_of'` |
+| 4 | **error C2139** | `luainterface.h` | 488 | `'OTMLNode': undefined class in '__is_base_of'` |
+| 5 | **error C2665** | `luainterface.h` | 488 | `'luavalue_cast': no overloaded function` |
+| 6 | **error C2665** | `luainterface.h` | 403 | `'push_luavalue': no overloaded function` |
+
+### Runda 2 (run 22234136342, po Kroku 1) — 3 błędy ✅ Poprawiona C2139/C2665
+
+| # | Kod błędu | Plik kompilacji | Crash w | Treść |
+|---|-----------|-----------------|---------|-------|
+| 1 | **fatal error C1001** (ICE) | `luafunctions_graphics.cpp` | `luainterface.h:484` | Internal compiler error (p2\main.cpp:258) |
+| 2 | **fatal error C1001** (ICE) | `luafunctions_gfx_singletons.cpp` | `luainterface.h:484` | Internal compiler error (p2\main.cpp:258) |
+| 3 | **fatal error C1001** (ICE) | `luafunctions.cpp` | `luabinder.h:171` | Internal compiler error (p2\main.cpp:258) |
+
+**Kody wyjścia:** `3221225477` = `0xC0000005` = ACCESS VIOLATION w `cl.exe`.  
+**D9025:** `overriding '/O1' with '/Od'`, `overriding '/Ob2' with '/Ob0'` — potwierdza że flagi `/Od /Ob0` DZIAŁAJĄ ale ICE i tak występuje.
 
 ---
 
-## Analiza głównej przyczyny
+## Analiza problemów
 
-### Problem bazowy: Niekompletne typy przy `std::is_base_of`
+### ✅ ROZWIĄZANE: Niekompletne typy przy `std::is_base_of` (C2139 + C2665)
 
-Błędy **C2139** i **C2665** mają jedną wspólną przyczynę. W `luavaluecasts.h` (linia ~161-167) jest szablon:
-```cpp
-template<class T>
-std::enable_if_t<std::is_base_of_v<LuaObject, T>, bool>
-luavalue_cast(int index, std::shared_ptr<T>& ptr);
-```
+**Przyczyna:** W `luavaluecasts.h` szablony `push_luavalue` / `luavalue_cast` używają `std::is_base_of_v<LuaObject, T>`, co wymaga pełnej definicji typu. Klasy `UIWidget` i `OTMLNode` były forward-declared.
 
-Kiedy MSVC rozwiązuje overloady (np. dla `std::shared_ptr<UIWidget>`), musi ewaluować `std::is_base_of_v<LuaObject, UIWidget>` - a to **wymaga pełnej definicji klasy**. MSVC używa intrinsica `__is_base_of`, który jest ścisły i odmawia pracy z forward-declared typami.
+**Rozwiązanie (Krok 1):** Dodano include'y:
+- `luafunctions_gfx_singletons.cpp` ← `#include <framework/ui/uiwidget.h>`
+- `luafunctions.cpp` ← `#include <framework/otml/otmlnode.h>`
 
-**Dlaczego działa na Linux (GCC/Clang):** GCC/Clang są bardziej liberalne z `is_base_of` na niekompletnych typach w kontekście SFINAE - mogą odroczyć ewaluację lub traktować to jako soft-fail.
+**Wynik:** ✅ Błędy C2139 i C2665 zniknęły w rundzie 2.
 
-**Konkretne ścieżki problemowe:**
+### ❌ NIEROZWIĄZANE: ICE C1001 — Internal Compiler Error
 
-1. **`luafunctions_gfx_singletons.cpp`** (linia 73) → includuje `uimanager.h` → ten include ciągnie `declarations.h` → **`UIWidget` jest tylko forward-declared** → binduje `UIManager::createWidget()` zwracającą `UIWidgetPtr` → template instantiation wymaga `is_base_of<LuaObject, UIWidget>` → **FAIL**
+**Lokalizacja crash'y:**
+- `luainterface.h:484` → `castValue<T>()` → wywołanie `luavalue_cast(index, o)` — overload resolution wielu szablonowych specjalizacji
+- `luabinder.h:171` → `make_mem_func()` → lambda z `throw` wewnątrz szablonu variadic
 
-2. **`luafunctions.cpp`** (linia 267) → includuje `config.h` → ten include ciągnie `otml/declarations.h` → **`OTMLNode` jest tylko forward-declared** → binduje `Config::setNode(OTMLNodePtr)` → template instantiation wymaga `is_base_of<LuaObject, OTMLNode>` → **FAIL**
+**Faza P2 (p2/main.cpp:258)** = generowanie kodu (codegen), NIE optymalizacja!
 
-### Problem dodatkowy: ICE C1001
-
-Internal Compiler Error na MSVC 14.44 w fazie code generation (`p2\main.cpp:258`). To **bug MSVC**, najprawdopodobniej wyzwalany przez:
-- Głęboko zagnieżdżone template instantiation (variadic templates w `luabinder.h`)
-- Interakcja z niekompletnymi typami, która wprawia kompilator w niespójny stan
-- Znany problem toolsetu 14.44 z ciężkimi szablonami
-
-Uwaga: W workflow komentarz mówi "skips 14.44 to avoid ICE" ale **faktycznie toolset 14.44 jest dalej używany** - filtr został usunięty w poprzedniej poprawce bo powodował fallback na zbyt starą wersję 14.29.
-
----
-
-## Proponowane poprawki (4 kroki)
-
-### Krok 1: Dodanie pełnych include'ów w plikach luafunctions (naprawia C2139 + C2665)
-
-W **`luafunctions_gfx_singletons.cpp`** - dodać:
-```cpp
-#include <framework/ui/uiwidget.h>
-```
-To dostarczy pełną definicję `UIWidget` (dziedziczącą z `LuaObject`), co pozwoli MSVC ewaluować `is_base_of`.
-
-W **`luafunctions.cpp`** - dodać:
-```cpp
-#include <framework/otml/otmlnode.h>
-```
-To dostarczy pełną definicję `OTMLNode` (uwaga: `OTMLNode` **nie** dziedziczy z `LuaObject`, ale MSVC i tak potrzebuje pełnego typu żeby ocenić SFINAE).
-
-W **`luafunctions_graphics.cpp`** - sprawdzić czy nie ma analogicznego problemu (prawdopodobnie nie, bo nie binduje typów opartych na `shared_ptr<T>`).
-
-### Krok 2: Obejście ICE C1001 za pomocą flagi `/d2ReducedOptimizeHugeFunctions` (jeśli ICE nie zniknie po Kroku 1)
-
-Dodać w `CMakeLists.txt` dla MSVC:
+**Dlaczego istniejące flagi nie działają:**
+W `src/CMakeLists.txt` (linie 168-177, Grupa 2) te 3 pliki MAJĄ już:
 ```cmake
-if(MSVC)
-    add_compile_options(/d2ReducedOptimizeHugeFunctions)
-endif()
+set_source_files_properties(
+  framework/luafunctions.cpp
+  framework/luafunctions_graphics.cpp
+  framework/luafunctions_gfx_singletons.cpp
+  ...
+  PROPERTIES
+    COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer-"
+    SKIP_PRECOMPILE_HEADERS ON
+)
 ```
-Ta flaga mówi MSVC, żeby zmniejszył agresywność optymalizacji dla dużych funkcji (szablonów), co eliminuje wiele ICE.
+Ale `/d2SSAOptimizer-` wyłącza optymalizator SSA, a crash jest w **P2 codegen** — w fazie GENEROWANIA kodu, nie optymalizacji. Nawet `/Od` (zero optymalizacji) nie pomaga, bo problem jest w samym kodogeneratorze MSVC 14.44 na skomplikowanych szablonach.
 
-Alternatywnie: dodać pragmę w `luabinder.h`:
-```cpp
-#ifdef _MSC_VER
-#pragma optimize("", off)
-// ... problematic template code ...
-#pragma optimize("", on)
-#endif
-```
-
-### Krok 3: Ulepszenie `luavaluecasts.h` - zabezpieczenie na przyszłość
-
-Dodać `requires` / concept guard, który sprawdzi kompletność typu ZANIM spróbuje `is_base_of`:
-```cpp
-template<class T>
-concept CompleteLuaObjectDerived = requires { sizeof(T); } && std::is_base_of_v<LuaObject, T>;
-
-template<class T>
-std::enable_if_t<CompleteLuaObjectDerived<typename T::element_type>, int>
-push_luavalue(const T& obj);
-```
-Ale to jest bardziej inwazyjne - opcjonalnie, jeśli kroki 1-2 nie wystarczą.
-
-### Krok 4: Korekta workflow CI (opcjonalnie)
-
-Komentarz w workflow twierdzi że toolset 14.44 jest "skippowany", ale kod tego nie robi. Uaktualnić komentarz lub dodać mechanizm pinowania na znanej-dobrej wersji MSVC, np.:
-```yaml
-- name: Select MSVC toolset
-  shell: pwsh  
-  run: |
-    # Pin to 14.43 if available, otherwise latest
-    $root = "..."
-    $toolsets = Get-ChildItem $root | Sort-Object -Descending
-    $selected = $toolsets | Where-Object { $_.Name -lt "14.44" } | Select-Object -First 1
-    if (-not $selected) { $selected = $toolsets[0] }
-```
+**Dwa prawdopodobne wyzwalacze ICE:**
+1. **Rekurencyjne szablony o głębokości N** w `luabinder.h` — `pack_values_into_tuple<N>` i `expand_fun_arguments<N, Ret>` tworzą N poziomów rekurencyjnych instancjacji szablonu
+2. **Mieszanie `if constexpr` z runtime `else if`** w `castValue<T>()` — `} else if (!luavalue_cast(...))` po `if constexpr` to wzorzec który bywa problematyczny na MSVC
+3. **Lambda z `throw` w variadic template** — `make_mem_func<Ret, C, Args...>` tworzy lambdę z exception throw, crash na linii 171
 
 ---
 
-## Priorytet i kolejność
+## Nowy plan naprawczy (po Rundzie 2)
 
-| Priorytet | Krok | Szansa na naprawę | Ryzyko | Czas |
-|-----------|------|-------------------|--------|------|
-| **1 (KRYTYCZNY)** | Krok 1: Dodanie include'ów | ~90% (naprawi C2139/C2665, prawdopodobnie też ICE) | minimalne | 5 min |
-| **2 (JEŚLI POTRZEBNE)** | Krok 2: Flaga /d2ReducedOptimizeHugeFunctions | ~80% (naprawi ICE jeśli Krok 1 nie wystarczy) | niskie | 5 min |
-| **3 (ZAPOBIEGAWCZY)** | Krok 3: Concept guard w luavaluecasts.h | zabezpieczenie na przyszłość | średnie (inwazyjne) | 30 min |
-| **4 (OPCJONALNY)** | Krok 4: Korekta workflow MSVC toolset | porządkowanie CI | niskie | 10 min |
+### Krok 2A: Dodatkowe flagi MSVC dla P2 codegen [NIEINWAZYJNY]
+
+Dodać do per-file COMPILE_FLAGS w `src/CMakeLists.txt` (Grupa 2):
+```cmake
+COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer- /d2FH4- /d2notypeopt"
+```
+- **`/d2FH4-`** — wyłącza nowy model obsługi wyjątków FH4. Crash w `luabinder.h:171` jest w lambdzie z `throw` — FH4 może generować błędny kod dla exception handling w template-lambdach
+- **`/d2notypeopt`** — wyłącza optymalizację typów w fazie P2, co zapobiega ACCESS VIOLATION w codegeneratorze
+
+**Ryzyko:** Zerowe (nie zmienia kodu, tylko flagi kompilatora).
+**Szansa naprawy:** ~60%.
+
+### Krok 2B: Naprawa wzorca `if constexpr` + `else if` [MINIMALNY]
+
+W `luainterface.h:482-490` zmienić:
+```cpp
+// PRZED (problematyczne dla MSVC):
+if constexpr (std::is_same_v<T, std::string_view>) {
+    o = g_lua.toVString(index);
+} else if (!luavalue_cast(index, o))
+    throw LuaBadValueCastException(...);
+
+// PO (bezpieczne):
+if constexpr (std::is_same_v<T, std::string_view>) {
+    o = g_lua.toVString(index);
+} else {
+    if (!luavalue_cast(index, o))
+        throw LuaBadValueCastException(...);
+}
+```
+Mieszanie `if constexpr` z runtime `else if` jest technicznie poprawne ale MSVC ma z tym znane problemy w codegen.
+
+**Ryzyko:** Zerowe (nie zmienia semantyki).
+**Szansa naprawy:** ~30% (sam ten krok).
+
+### Krok 2C: Refaktor rekurencyjnych szablonów na fold expressions [GŁÓWNA NAPRAWA]
+
+Zastąpić dwie rekurencyjne struktury szablonowe w `luabinder.h`:
+
+**1) `pack_values_into_tuple<N>` (rekursywna) → fold expression:**
+```cpp
+// PRZED: N poziomów rekurencyjnych instancjacji szablonu
+template<int N>
+struct pack_values_into_tuple { ... recursive ... };
+
+// PO: 1 poziom, fold expression (C++17)
+template<typename Tuple, std::size_t... I>
+void pack_values_into_tuple_impl(Tuple& tuple, LuaInterface* lua, std::index_sequence<I...>) {
+    constexpr auto N = sizeof...(I);
+    ((std::get<N-1-I>(tuple) = lua->polymorphicPop<std::tuple_element_t<N-1-I, Tuple>>()), ...);
+}
+```
+
+**2) `expand_fun_arguments<N, Ret>` (rekursywna) → `std::apply`:**
+```cpp
+// PRZED: N poziomów rekurencyjnych instancjacji
+template<int N, typename Ret>
+struct expand_fun_arguments { ... recursive ... };
+
+// PO: std::apply (bez rekurencji)
+// Używane w bind_fun_specializer:
+return std::apply([&](const auto&... args) {
+    return call_fun_and_push_result<Ret>(f, lua, args...);
+}, tuple);
+```
+
+**To eliminuje N poziomów rekurencji szablonowej** (gdzie N = liczba argumentów bindowanej funkcji, typowo 2-8), zastępując je jednopoziomowym fold expression / `std::apply`.
+
+**Ryzyko:** Średnie (zmiana implementacji szablonów, ale zachowuje semantykę).
+**Szansa naprawy:** ~90% (to jest główny wyzwalacz ICE).
+**Czas:** ~30 min.
+
+### Krok 2D: Awaryjnie — ClangCL lub pin MSVC [JEŚLI 2A-2C ZAWIODĄ]
+
+Opcja A: **Użycie ClangCL** zamiast MSVC cl.exe:
+```cmake
+cmake -G Ninja -DCMAKE_CXX_COMPILER=clang-cl -DCMAKE_C_COMPILER=clang-cl ...
+```
+⚠️ Ryzyko: protobuf DLL symbol mismatch (vcpkg buduje liby MSVC-em).
+
+Opcja B: **Pin na MSVC 14.29.30133** (jedyny alternatywny toolset na runnerze):
+⚠️ Ryzyko: to toolset VS2019-era, `_MSC_VER=1929` — może nie obsługiwać wszystkich użytych features C++20.
+
+---
+
+## Rekomendowana kolejność implementacji
+
+Wszystkie kroki 2A + 2B + 2C zaimplementować RAZEM w jednym commicie:
+
+| Priorytet | Krok | Zmiana | Szansa | Ryzyko | Czas |
+|-----------|------|--------|--------|--------|------|
+| ✅ Zrobione | Krok 1: Include'y | kod (.cpp) | — | — | — |
+| **1** | Krok 2A: Flagi `/d2FH4-` `/d2notypeopt` | CMakeLists.txt | ~60% | zerowe | 5 min |
+| **2** | Krok 2B: Fix `if constexpr` | luainterface.h | ~30% | zerowe | 5 min |
+| **3** | Krok 2C: Fold expressions | luabinder.h | ~90% | średnie | 30 min |
+| *backup* | Krok 2D: ClangCL / pin MSVC | workflow | ~100% | wysokie | 20 min |
+
+**Łączna szansa naprawy przy 2A+2B+2C razem: ~95%.**
 
 ---
 
 ## Status realizacji
 
-- [ ] Krok 1: Dodanie include'ów
-- [ ] Krok 2: Flaga /d2ReducedOptimizeHugeFunctions (jeśli potrzebne)
-- [ ] Krok 3: Concept guard (jeśli potrzebne)
-- [ ] Krok 4: Korekta workflow (opcjonalnie)
+- [x] Krok 1: Dodanie include'ów ✅ (commit: 2026-02-20, naprawiono C2139/C2665)
+- [ ] Krok 2A: Flagi `/d2FH4-` `/d2notypeopt` w CMakeLists.txt
+- [ ] Krok 2B: Fix `if constexpr` / `else if` w luainterface.h
+- [ ] Krok 2C: Refaktor rekurencyjnych szablonów → fold expressions w luabinder.h
+- [ ] Krok 2D: Backup — ClangCL lub pin MSVC (jeśli 2A-2C zawiodą)

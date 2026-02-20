@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T17:07:31.541036Z",
+  "timestamp": "2026-02-20T17:08:08.752791Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1975,
-  "file_cache_misses": 1,
+  "cache_hits": 49,
+  "cache_misses": 3,
+  "file_cache_hits": 1973,
+  "file_cache_misses": 3,
   "langs": {
     "ar": {
       "sig": [
@@ -7392,7 +7392,7 @@
         [
           "monsters.json",
           1,
-          1771604882889679431,
+          1771607268914376567,
           339638
         ],
         [
@@ -7775,7 +7775,7 @@
         "monsters.json": {
           "sig": [
             1,
-            1771604882889679431,
+            1771607268914376567,
             339638
           ],
           "row": {
@@ -16023,8 +16023,8 @@
         [
           "npc.json",
           1,
-          1771606443100323611,
-          1836504
+          1771607278759432816,
+          1836459
         ],
         [
           "npclib.json",
@@ -16134,14 +16134,14 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 27588,
+        "translated_keys": 27627,
         "english_copy_keys": 2134,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 51.48,
+        "completion_pct": 51.56,
         "server_keys": 49731,
-        "server_translated": 26257,
-        "server_pct": 52.8,
+        "server_translated": 26296,
+        "server_pct": 52.88,
         "client_keys": 3855,
         "client_translated": 1331,
         "client_pct": 34.53
@@ -16430,12 +16430,12 @@
         "npc.json": {
           "sig": [
             1,
-            1771606443100323611,
-            1836504
+            1771607278759432816,
+            1836459
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 9942,
+            "translated_keys": 9981,
             "english_copy_keys": 286,
             "missing_keys": 0,
             "missing_files": 0
@@ -27768,7 +27768,7 @@
         [
           "npc.json",
           1,
-          1771606449038998862,
+          1771607283531716605,
           1835041
         ],
         [
@@ -28175,7 +28175,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771606449038998862,
+            1771607283531716605,
             1835041
           ],
           "row": {

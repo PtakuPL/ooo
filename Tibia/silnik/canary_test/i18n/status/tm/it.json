@@ -76414,5 +76414,317 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T16:57:40.702806Z"
+  },
+  "npc.yberius.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bene. Sei libero di rifiutare la mia offerta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.483132Z"
+  },
+  "npc.yberius.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Ogni volta che ricevi una ferita letale, la tua forza vitale viene danneggiata e c'è la possibilità che tu perda parte del tuo equipaggiamento. Con ognuno dei cinque {blessings} che hai, questo danno e la possibilità di perdita saranno ridotti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.484133Z"
+  },
+  "npc.yberius.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Vedo che hai ricevuto la protezione spirituale nel tempio dei fiori bianchi a sud di Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.484974Z"
+  },
+  "npc.yberius.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Sento che i druidi a nord di Carlin ti hanno fornito l'Abbraccio di Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.485568Z"
+  },
+  "npc.yberius.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Vedo che hai ricevuto la benedizione dei due soli nella torre del sole vicino a Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.486137Z"
+  },
+  "npc.yberius.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Sento che la scintilla della fenice ti è già stata donata dai sacerdoti nani della terra e del fuoco in Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.486921Z"
+  },
+  "npc.yberius.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Sento che hai già parlato con l'eremita Eremo sull'isola di Cormaya e hai ricevuto questa benedizione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.487782Z"
+  },
+  "npc.yberius.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puoi chiedere la benedizione della protezione spirituale nel tempio dei fiori bianchi a sud di Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.488393Z"
+  },
+  "npc.yberius.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "I druidi a nord di Carlin ti forniranno l'abbraccio di Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.488960Z"
+  },
+  "npc.yberius.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puoi chiedere la benedizione dei due soli nella torre solare vicino a Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.489529Z"
+  },
+  "npc.yberius.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Conserva bene la tua pietra dell'avventuriero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.489949Z"
+  },
+  "npc.yberius.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "La scintilla della fenice è data dai sacerdoti nani della terra e del fuoco in Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.490757Z"
+  },
+  "npc.yberius.stdmod_32": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Questa è una benedizione speciale che posso concederti una volta ottenuta almeno una delle altre benedizioni e che funziona in modo leggermente diverso. ...\\z\n\tFunziona solo quando vieni ucciso da altri avventurieri, il che significa che almeno la metà del danno che ha portato alla tua morte è stato causato da altri, non da mostri o dall'ambiente. ...\\z\n\tLo {twist of fate} non ridurrà la pena di morte come le altre benedizioni, ma invece ti impedirà di perdere le tue altre benedizioni e l'amuleto della perdita, se ne indossi uno. Costa lo stesso delle altre benedizioni. ...\\z\n\tTi piacerebbe ricevere quella protezione per un sacrificio di |PVPBLESSCOST| oro, bambino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.493051Z"
+  },
+  "npc.yberius.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vuoi sostituire gratuitamente la tua pietra dell'avventuriero?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.493514Z"
+  },
+  "npc.yberius.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Ecco. Occuparsi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.493899Z"
+  },
+  "npc.yberius.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vuoi sostituire la tua pietra dell'avventuriero per 30 monete d'oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.494696Z"
+  },
+  "npc.yberius.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Ecco. Occuparsi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.495064Z"
+  },
+  "npc.yberius.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Mi dispiace, non hai abbastanza soldi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.495464Z"
+  },
+  "npc.yoem.greet_msg_1": {
+    "src_hash": "62708e79dd3db472e596d09d559f1e3a",
+    "text": "Ciao |PLAYERNAME|! Hai bisogno di qualche attrezzatura per la tua casa?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.496327Z"
+  },
+  "npc.yoem.sendtrade_msg_1": {
+    "src_hash": "0766cd691c0208c136e812d2734e77a5",
+    "text": "Dai un'occhiata. La maggior parte dei mobili viene fornita in pratici kit. Usali a casa tua per assemblare i mobili. Vuoi vedere solo un certo {type} di mobili?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.497130Z"
+  },
+  "npc.yonan.say_1": {
+    "src_hash": "69a94b4b8dd8f6664c57a1839020af33",
+    "text": "Potresti aiutarmi a fare un rituale?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.498485Z"
+  },
+  "npc.yonan.say_5": {
+    "src_hash": "1c59347447abf5fbb119ca8a48703ac4",
+    "text": "Grazie questa fase del rituale è completa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.499358Z"
+  },
+  "npc.zedrulon_the_fallen.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Quindi ricevi la protezione dello scherzo del destino, pellegrino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.511693Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Quindi ricevi la protezione dello scherzo del destino, pellegrino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.512142Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_12": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Non hai un bell'aspetto. Mi spiace, non posso aiutarti. Ma se stai cercando una protezione aggiuntiva dovresti andare sullo {pilgrimage} di Ash o ottenere la protezione di {twist of fate} qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.513565Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_13": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Ogni volta che ricevi una ferita letale, la tua forza vitale viene danneggiata e c'è la possibilità che tu perda parte del tuo equipaggiamento. Con ognuno dei cinque {blessings} che hai, questo danno e la possibilità di perdita saranno ridotti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.514533Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_15": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Vedo che hai ricevuto la protezione spirituale nel tempio dei fiori bianchi a sud di Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.515216Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_16": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Sento che i druidi a nord di Carlin ti hanno fornito l'Abbraccio di Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.515803Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_17": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Vedo che hai ricevuto la benedizione dei due soli nella torre del sole vicino a Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.516448Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_18": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Sento che la scintilla della fenice ti è già stata donata dai sacerdoti nani della terra e del fuoco in Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.517239Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_19": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Sento che hai già parlato con l'eremita Eremo sull'isola di Cormaya e hai ricevuto questa benedizione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.517975Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bene. Sei libero di rifiutare la mia offerta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.518409Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_20": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puoi chiedere la benedizione della protezione spirituale nel tempio dei fiori bianchi a sud di Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.519002Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_21": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "I druidi a nord di Carlin ti forniranno l'abbraccio di Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.519637Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_22": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puoi chiedere la benedizione dei due soli nella torre solare vicino a Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.520171Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_23": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "La scintilla della fenice è data dai sacerdoti nani della terra e del fuoco in Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.520919Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_25": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Questa è una benedizione speciale che posso concederti una volta ottenuta almeno una delle altre benedizioni e che funziona in modo leggermente diverso. ...\\z\n\tFunziona solo quando vieni ucciso da altri avventurieri, il che significa che almeno la metà del danno che ha portato alla tua morte è stato causato da altri, non da mostri o dall'ambiente. ...\\z\n\tLo {twist of fate} non ridurrà la pena di morte come le altre benedizioni, ma invece ti impedirà di perdere le tue altre benedizioni e l'amuleto della perdita, se ne indossi uno. Costa lo stesso delle altre benedizioni. ...\\z\n\tTi piacerebbe ricevere quella protezione per un sacrificio di |PVPBLESSCOST| oro, bambino?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.523217Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Conserva bene la tua pietra dell'avventuriero.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.523653Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vuoi sostituire gratuitamente la tua pietra dell'avventuriero?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:07:58.524226Z"
   }
 }

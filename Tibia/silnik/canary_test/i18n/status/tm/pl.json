@@ -118182,5 +118182,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T20:30:57.841371Z"
+  },
+  "questlog.quest_11.mission_16.state_2": {
+    "src_hash": "88061e86fe608b23cf9d35c263592858",
+    "text": "Udało Ci się upolować 300 żółwi ciernistych.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:23:49.987122Z"
   }
 }

@@ -70542,5 +70542,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T19:16:54.384467Z"
+  },
+  "npc.rapanaio_isle_of_evil.stdmod_2": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Cauți o trecere la {0} pentru {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.021303Z"
+  },
+  "npc.rapanaio_isle_of_evil.stdmod_3": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Am dori să vă servim ceva timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.021730Z"
+  },
+  "npc.raymond_striker.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh bine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.034329Z"
+  },
+  "npc.razan.multi_6": {
+    "src_hash": "84bef6784099863dfeb03302de8845ca",
+    "text": "Ați înțeles tot ce v-am spus și sunteți dispus să vă ocupați de această sarcină?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.036159Z"
+  },
+  "npc.robson.voice_1": {
+    "src_hash": "0956ea7b6f3efbdd2358779cf3a7afd7",
+    "text": "<mormăie>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.042522Z"
+  },
+  "npc.rock_in_a_hard_place.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Desigur, răsfoiește-mi produsele. Puteți să vă uitați și la {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.043302Z"
+  },
+  "npc.rock_with_a_soft_spot.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.044848Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.045329Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_11": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Ești rănit, copilul meu. Îți voi vindeca rănile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.046090Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_12": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Nu arăți așa de rău. Scuze, nu te pot ajuta. Dar dacă cauți protecție suplimentară, ar trebui să mergi pe {pilgrimage} de cenușă sau să obții protecția {twist of fate} aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.046983Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_13": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Ori de câte ori primești o rană letală, forța ta vitală este deteriorată și există șansa să pierzi o parte din echipamentul tău. Cu fiecare dintre cele cinci {blessings} pe care le aveți, această daune și șansa de pierdere vor fi reduse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.048092Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_15": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Văd că ai primit scutul spiritual în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.048737Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_16": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Simt că druidii de la nord de Carlin ți-au oferit Îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.049472Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_17": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Văd că ai primit binecuvântarea celor doi sori în solar lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.050106Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_18": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Îmi dau seama că scânteia phoenixului ți-a fost deja dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.050738Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_19": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Simt că ai vorbit deja cu pustnicul Eremo de pe insula Cormaya și ai primit această binecuvântare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:20:27.051489Z"
   }
 }

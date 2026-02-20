@@ -78446,5 +78446,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:29:01.601866Z"
+  },
+  "item.37546.desc": {
+    "src_hash": "f8260ddde642e2d75b0a592e57332de8",
+    "text": "È stato assegnato durante i festeggiamenti dell'anniversario di Tibia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:36.198657Z"
+  },
+  "item.37963.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:36.207780Z"
+  },
+  "item.37964.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:36.208038Z"
+  },
+  "item.37965.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:36.208407Z"
+  },
+  "item.37966.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:36.208649Z"
+  },
+  "item.37967.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:36.208932Z"
   }
 }

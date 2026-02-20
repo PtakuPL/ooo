@@ -69334,5 +69334,149 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:28:36.229209Z"
+  },
+  "npc.petros.stdmod_2": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Cauți o trecere la {0} pentru {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.675836Z"
+  },
+  "npc.petros.stdmod_3": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Am dori să vă servim ceva timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.676254Z"
+  },
+  "npc.petros.stdmod_5": {
+    "src_hash": "4d68d8ca06217b1e5f1ab8ec2a25a798",
+    "text": "Eu sunt căpitanul acestei nave.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.676668Z"
+  },
+  "npc.petros.stdmod_7": {
+    "src_hash": "19f556be938588db97e786b0841b8152",
+    "text": "Acolo suntem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.677136Z"
+  },
+  "npc.pino.keyword_1": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Stai!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.679620Z"
+  },
+  "npc.pino.stdmod_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Simte vântul în părul tău în timpul uneia dintre plimbările mele pe covor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.680123Z"
+  },
+  "npc.pino.stdmod_3": {
+    "src_hash": "7e7182a67795f240a79194b4d6fb5c54",
+    "text": "Cauți o călătorie până la {0} pentru {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.680558Z"
+  },
+  "npc.pino.stdmod_4": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Stai!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.680974Z"
+  },
+  "npc.pino.voice_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Simte vântul în părul tău în timpul uneia dintre plimbările mele pe covor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.681468Z"
+  },
+  "npc.plunderpurse.say_10": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sigur doriți să retrageți {} aur din contul dvs. bancar?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.682553Z"
+  },
+  "npc.plunderpurse.say_11": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sigur doriți să retrageți {} aur din contul dvs. bancar?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.683103Z"
+  },
+  "npc.plunderpurse.say_5": {
+    "src_hash": "45f1b7f9c5b8645d32e2c1733b7e753d",
+    "text": "Soldul contului dvs. este {} aur.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.691793Z"
+  },
+  "npc.plunderpurse.say_6": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Chiar ți-ar plăcea să depui {} aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.692211Z"
+  },
+  "npc.plunderpurse.say_7": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Chiar ți-ar plăcea să depui {} aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.692620Z"
+  },
+  "npc.plunderpurse.say_8": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Chiar ți-ar plăcea să depui {} aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.693043Z"
+  },
+  "npc.pompan.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "A fost o plăcere să vă ajut, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.695119Z"
+  },
+  "npc.pompan.sendtrade_msg_1": {
+    "src_hash": "7ab7a918399e516ca6b9bc0cc9d8b8f9",
+    "text": "Rețineți că nu veți găsi oferte mai bune aici. Doar răsfoiește-mi mărfurile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.695729Z"
+  },
+  "npc.prezil.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:34:29.697151Z"
   }
 }

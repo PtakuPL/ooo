@@ -152638,5 +152638,277 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T16:42:02.820996Z"
+  },
+  "item.11629.desc": {
+    "src_hash": "1dbfd3e382ac1a742b8bdd461c1df2e6",
+    "text": "Es una runa paralizante adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:50:56.544438Z"
+  },
+  "item.11630.desc": {
+    "src_hash": "1dbfd3e382ac1a742b8bdd461c1df2e6",
+    "text": "Es una runa paralizante adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:50:59.234873Z"
+  },
+  "item.11630.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "emblema de runa dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:50:59.235243Z"
+  },
+  "item.11631.desc": {
+    "src_hash": "cc0e850a0556cdfcfd0c72104d3b71f0",
+    "text": "Es una runa desintegrada adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:50:59.235556Z"
+  },
+  "item.11632.desc": {
+    "src_hash": "cc0e850a0556cdfcfd0c72104d3b71f0",
+    "text": "Es una runa desintegrada adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:50:59.235894Z"
+  },
+  "item.11632.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "emblema de runa dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:50:59.236159Z"
+  },
+  "item.11633.desc": {
+    "src_hash": "2dce5700ee83e199b11c075b5eac05c9",
+    "text": "Es una runa camaleón adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:02.369331Z"
+  },
+  "item.11634.desc": {
+    "src_hash": "2dce5700ee83e199b11c075b5eac05c9",
+    "text": "Es una runa camaleón adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:02.369657Z"
+  },
+  "item.11634.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "emblema de runa dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:02.369912Z"
+  },
+  "item.11635.desc": {
+    "src_hash": "96d91350b79f099110fa17a2e283ea10",
+    "text": "Es una runa de pared de energía adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:02.370274Z"
+  },
+  "item.11636.desc": {
+    "src_hash": "96d91350b79f099110fa17a2e283ea10",
+    "text": "Es una runa de pared de energía adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:02.370601Z"
+  },
+  "item.11636.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "emblema de runa dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:05.254580Z"
+  },
+  "item.11637.desc": {
+    "src_hash": "fa018864c44f3a4090a714a0aa44919c",
+    "text": "Es una runa de fuego de alma adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:05.254895Z"
+  },
+  "item.11638.desc": {
+    "src_hash": "fa018864c44f3a4090a714a0aa44919c",
+    "text": "Es una runa de fuego de alma adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:05.255303Z"
+  },
+  "item.11638.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "emblema de runa dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:05.255587Z"
+  },
+  "item.11639.desc": {
+    "src_hash": "e5a3d42b0b5c54e33cbbb0f9856dad13",
+    "text": "Es una runa de campo de destrucción adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:05.255923Z"
+  },
+  "item.11640.desc": {
+    "src_hash": "e5a3d42b0b5c54e33cbbb0f9856dad13",
+    "text": "Es una runa de campo de destrucción adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:08.254758Z"
+  },
+  "item.11640.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "emblema de runa dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:08.255094Z"
+  },
+  "item.11641.desc": {
+    "src_hash": "ca58523787bd84ca3374d38d14271188",
+    "text": "Es una runa de crecimiento salvaje adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:08.255412Z"
+  },
+  "item.11642.desc": {
+    "src_hash": "ca58523787bd84ca3374d38d14271188",
+    "text": "Es una runa de crecimiento salvaje adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:08.255713Z"
+  },
+  "item.11642.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "emblema de runa dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:08.255959Z"
+  },
+  "item.11643.desc": {
+    "src_hash": "46edde70aac13361c42642da1bb6f745",
+    "text": "Es una runa de bomba incendiaria adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:11.596686Z"
+  },
+  "item.11644.desc": {
+    "src_hash": "46edde70aac13361c42642da1bb6f745",
+    "text": "Es una runa de bomba incendiaria adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:11.597003Z"
+  },
+  "item.11644.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "emblema de runa dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:11.597258Z"
+  },
+  "item.11645.desc": {
+    "src_hash": "0a8e9652f7dd95e9ae4c589b3726e0ba",
+    "text": "Es una runa de bomba venenosa adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:11.597554Z"
+  },
+  "item.11646.desc": {
+    "src_hash": "0a8e9652f7dd95e9ae4c589b3726e0ba",
+    "text": "Es una runa de bomba venenosa adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:11.597850Z"
+  },
+  "item.11646.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "emblema de runa dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:15.038571Z"
+  },
+  "item.11647.desc": {
+    "src_hash": "afdf2f07d4f14040fff552146ae6390d",
+    "text": "Es una runa de misil mágica ligera adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:15.038946Z"
+  },
+  "item.11648.desc": {
+    "src_hash": "afdf2f07d4f14040fff552146ae6390d",
+    "text": "Es una runa de misil mágica ligera adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:15.039324Z"
+  },
+  "item.11648.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "emblema de runa dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:15.039576Z"
+  },
+  "item.11649.desc": {
+    "src_hash": "62b1acf4907ec73623b9c8434b5bcdea",
+    "text": "Es una runa de campo de fuego adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:15.039870Z"
+  },
+  "item.11650.desc": {
+    "src_hash": "62b1acf4907ec73623b9c8434b5bcdea",
+    "text": "Es una runa de campo de fuego adornada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:17.292074Z"
+  },
+  "item.11650.name": {
+    "src_hash": "995b3486f4caf4ec71b7086b3301db06",
+    "text": "emblema de runa dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:17.292342Z"
+  },
+  "item.11667.name": {
+    "src_hash": "770e51ca85f88a2ba066ab1f2ea5c70c",
+    "text": "Abominación draco muerta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:51:17.292605Z"
   }
 }

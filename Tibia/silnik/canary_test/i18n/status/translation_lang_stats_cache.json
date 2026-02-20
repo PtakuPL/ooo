@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T16:49:53.221231Z",
+  "timestamp": "2026-02-20T16:51:58.573826Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 50,
-  "cache_misses": 2,
-  "file_cache_hits": 1974,
-  "file_cache_misses": 2,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 1975,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -7368,8 +7368,8 @@
         [
           "items.json",
           1,
-          1771605062239866191,
-          894251
+          1771606277319163678,
+          894360
         ],
         [
           "libs.json",
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771606099286662469,
+          1771606312659279129,
           1847374
         ],
         [
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 45325,
+        "translated_keys": 45347,
         "english_copy_keys": 2162,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 84.58,
+        "completion_pct": 84.62,
         "server_keys": 49731,
-        "server_translated": 42259,
-        "server_pct": 84.98,
+        "server_translated": 42281,
+        "server_pct": 85.02,
         "client_keys": 3855,
         "client_translated": 3066,
         "client_pct": 79.53
@@ -7719,12 +7719,12 @@
         "items.json": {
           "sig": [
             1,
-            1771605062239866191,
-            894251
+            1771606277319163678,
+            894360
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 13907,
+            "translated_keys": 13929,
             "english_copy_keys": 83,
             "missing_keys": 0,
             "missing_files": 0
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771606099286662469,
+            1771606312659279129,
             1847374
           ],
           "row": {
@@ -25311,7 +25311,7 @@
         [
           "books.json",
           1,
-          1771545856071548362,
+          1771606243077827640,
           313794
         ],
         [
@@ -25574,7 +25574,7 @@
         "books.json": {
           "sig": [
             1,
-            1771545856071548362,
+            1771606243077827640,
             313794
           ],
           "row": {

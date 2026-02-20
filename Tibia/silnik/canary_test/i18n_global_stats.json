@@ -1,8 +1,8 @@
 {
-  "total_cycles": 13,
+  "total_cycles": 14,
   "mode": "AUTO_TRANSLATE",
-  "category": "es",
-  "last_update": "2026-02-20T17:49:48.918112",
+  "category": "pl",
+  "last_update": "2026-02-20T17:51:53.884856",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,10 +26,10 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "es",
+    "language": "pl",
     "json_file": "books.json",
-    "keys_to_translate": 96,
-    "guard_fail": 7,
+    "keys_to_translate": 77,
+    "guard_fail": 516,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

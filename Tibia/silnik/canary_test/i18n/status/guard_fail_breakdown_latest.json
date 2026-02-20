@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-02-20T16:49:53.766580Z",
-  "window_start_utc": "2026-02-20T15:49:53.509057Z",
-  "window_end_utc": "2026-02-20T16:49:53.509057Z",
+  "timestamp": "2026-02-20T16:51:59.121606Z",
+  "window_start_utc": "2026-02-20T15:51:58.821974Z",
+  "window_end_utc": "2026-02-20T16:51:58.821974Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 416,
-  "suspicious_entries": 8057,
-  "guard_fail_entries": 53,
-  "guard_fail_sum": 3805,
+  "rejected_entries": 420,
+  "suspicious_entries": 9379,
+  "guard_fail_entries": 55,
+  "guard_fail_sum": 4371,
   "by_type": {
-    "identical_to_en": 319,
-    "word_salad": 21,
+    "identical_to_en": 322,
+    "word_salad": 22,
     "mixed_language": 55,
     "contains_tibia_proper_noun": 22,
     "mixed_scripts": 21,
     "cyrillic_latin_mix": 21
   },
   "by_source": {
-    "google_translate": 416
+    "google_translate": 420
   },
   "by_language": {
-    "es": 66,
+    "es": 70,
     "ro": 159,
     "it": 57,
     "ru": 21,
@@ -32,8 +32,8 @@
     "sv": 13
   },
   "by_category": {
-    "npc.json": 24,
-    "items.json": 112,
+    "npc.json": 26,
+    "items.json": 114,
     "monsters.json": 117,
     "spells.json": 128,
     "server.json": 16,
@@ -42,25 +42,25 @@
     "books.json": 1
   },
   "by_severity": {
-    "CRITICAL": 340,
+    "CRITICAL": 344,
     "HIGH": 76
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 319
+      "count": 322
     },
     {
       "type": "mixed_language",
       "count": 55
     },
     {
-      "type": "contains_tibia_proper_noun",
+      "type": "word_salad",
       "count": 22
     },
     {
-      "type": "word_salad",
-      "count": 21
+      "type": "contains_tibia_proper_noun",
+      "count": 22
     },
     {
       "type": "mixed_scripts",
@@ -74,16 +74,16 @@
   "top_keys": [
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 12,
+      "count": 13,
       "types": {
-        "identical_to_en": 12
+        "identical_to_en": 13
       }
     },
     {
       "key": "npc.al_dee.stdmod_41",
-      "count": 12,
+      "count": 13,
       "types": {
-        "word_salad": 12
+        "word_salad": 13
       }
     },
     {
@@ -127,6 +127,20 @@
       }
     },
     {
+      "key": "item.10388.name",
+      "count": 6,
+      "types": {
+        "identical_to_en": 6
+      }
+    },
+    {
+      "key": "item.10391.name",
+      "count": 6,
+      "types": {
+        "identical_to_en": 6
+      }
+    },
+    {
       "key": "monster.black_knight.name",
       "count": 6,
       "types": {
@@ -152,20 +166,6 @@
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1,
         "identical_to_en": 1
-      }
-    },
-    {
-      "key": "item.10388.name",
-      "count": 5,
-      "types": {
-        "identical_to_en": 5
-      }
-    },
-    {
-      "key": "item.10391.name",
-      "count": 5,
-      "types": {
-        "identical_to_en": 5
       }
     },
     {

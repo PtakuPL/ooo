@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-20T18:57:09.708748Z",
-  "window_end_utc": "2026-02-20T19:57:09.708748Z",
+  "window_start_utc": "2026-02-20T18:58:56.589785Z",
+  "window_end_utc": "2026-02-20T19:58:56.589785Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,60 +8,54 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/suspicious_rejected.jsonl"
   ],
-  "total_cycles": 205,
+  "total_cycles": 201,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 205
+    "AUTO_TRANSLATE": 201
   },
-  "auto_translate_cycles": 205,
+  "auto_translate_cycles": 201,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 2709,
-  "guard_fail": 5057,
-  "guard_fail_rate_pct": 65.1,
+  "translated": 2657,
+  "guard_fail": 5848,
+  "guard_fail_rate_pct": 68.8,
   "no_progress_entries": 4,
   "no_progress_rate_pct": 3.0,
-  "throughput_keys_per_h": 1544.3,
+  "throughput_keys_per_h": 1520.0,
   "suspicious_total": 3671,
-  "suspicious_total_raw": 25428,
-  "gt_translated": 123,
+  "suspicious_total_raw": 25482,
+  "gt_translated": 113,
   "gt_active": true,
   "top_guard_fail_targets": [
     {
       "target": "pl/items.json",
-      "translated": 4,
-      "guard_fail": 1632,
-      "guard_command": 0
-    },
-    {
-      "target": "es/items.json",
-      "translated": 64,
-      "guard_fail": 1562,
+      "translated": 6,
+      "guard_fail": 2448,
       "guard_command": 0
     },
     {
       "target": "pl/npc.json",
-      "translated": 60,
-      "guard_fail": 968,
+      "translated": 90,
+      "guard_fail": 1452,
+      "guard_command": 0
+    },
+    {
+      "target": "es/items.json",
+      "translated": 42,
+      "guard_fail": 1042,
+      "guard_command": 0
+    },
+    {
+      "target": "es/server.json",
+      "translated": 6,
+      "guard_fail": 123,
       "guard_command": 0
     },
     {
       "target": "it/npc.json",
       "translated": 55,
       "guard_fail": 95,
-      "guard_command": 0
-    },
-    {
-      "target": "es/server.json",
-      "translated": 4,
-      "guard_fail": 82,
-      "guard_command": 0
-    },
-    {
-      "target": "ro/monsters.json",
-      "translated": 12,
-      "guard_fail": 78,
       "guard_command": 0
     },
     {
@@ -74,6 +68,12 @@
       "target": "es/scripts.json",
       "translated": 34,
       "guard_fail": 56,
+      "guard_command": 0
+    },
+    {
+      "target": "ro/monsters.json",
+      "translated": 8,
+      "guard_fail": 52,
       "guard_command": 0
     }
   ]

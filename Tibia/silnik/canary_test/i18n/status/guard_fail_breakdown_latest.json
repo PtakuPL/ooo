@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:57:10.397081Z",
-  "window_start_utc": "2026-02-20T18:57:09.708748Z",
-  "window_end_utc": "2026-02-20T19:57:09.708748Z",
+  "timestamp": "2026-02-20T19:58:57.289666Z",
+  "window_start_utc": "2026-02-20T18:58:56.589785Z",
+  "window_end_utc": "2026-02-20T19:58:56.589785Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,15 +9,15 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 214,
-  "rejected_entries_raw": 378,
+  "rejected_entries_raw": 371,
   "suspicious_entries": 3671,
-  "suspicious_entries_raw": 25428,
-  "guard_fail_entries": 133,
-  "guard_fail_sum": 5057,
+  "suspicious_entries_raw": 25482,
+  "guard_fail_entries": 132,
+  "guard_fail_sum": 5848,
   "by_type": {
     "identical_to_en": 172,
-    "contains_tibia_proper_noun": 17,
     "word_salad": 7,
+    "contains_tibia_proper_noun": 17,
     "mixed_language": 10,
     "mixed_scripts": 22,
     "cyrillic_latin_mix": 22,
@@ -27,18 +27,18 @@
     "google_translate": 214
   },
   "by_language": {
-    "ro": 57,
     "es": 40,
     "it": 41,
+    "ro": 57,
     "pl": 43,
     "ru": 22,
     "sv": 11
   },
   "by_category": {
-    "monsters.json": 26,
-    "items.json": 27,
     "server.json": 17,
     "npc.json": 4,
+    "items.json": 27,
+    "monsters.json": 26,
     "spells.json": 53,
     "quests.json": 3,
     "scripts.json": 6,
@@ -96,14 +96,14 @@
       }
     },
     {
-      "key": "data.otservbr.global.npc.anerui.L71.1487",
+      "key": "data.otservbr.global.npc.brasith.L59.1211",
       "count": 3,
       "types": {
         "identical_to_en": 3
       }
     },
     {
-      "key": "data.otservbr.global.npc.brasith.L59.1211",
+      "key": "data.otservbr.global.npc.anerui.L71.1487",
       "count": 3,
       "types": {
         "identical_to_en": 3
@@ -218,6 +218,13 @@
       }
     },
     {
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
       "key": "monster.deathspawn.name",
       "count": 2,
       "types": {
@@ -242,14 +249,6 @@
     },
     {
       "key": "monster.paladin_familiar.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
-      }
-    },
-    {
-      "key": "monster.druid_familiar.name",
       "count": 2,
       "types": {
         "identical_to_en": 1,

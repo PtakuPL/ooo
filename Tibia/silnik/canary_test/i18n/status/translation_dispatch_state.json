@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-20T19:30:39.715934Z",
-  "cycle_counter": 6126,
-  "last_target_key": "pl:achievements.json",
-  "last_pending_total": 664,
+  "timestamp": "2026-02-20T19:32:01.110859Z",
+  "cycle_counter": 6129,
+  "last_target_key": "es:html.json",
+  "last_pending_total": 699,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 183,
@@ -10,10 +10,10 @@
   "skipped_backoff": 7,
   "skipped_guard_fail": 5,
   "guard_fail_blacklist": {
-    "pl:items.json": 6128,
+    "pl:items.json": 6138,
     "es:items.json": 6133,
     "es:server.json": 6137,
-    "ro:monsters.json": 6129,
+    "ro:monsters.json": 6139,
     "pl:spells.json": 6133
   },
   "tier_config": {
@@ -40,7 +40,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 107,
+  "cache_cycle": 108,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,

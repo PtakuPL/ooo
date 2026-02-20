@@ -33086,5 +33086,301 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T16:46:39.828412Z"
+  },
+  "npc.malor.multi_23": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, det lät nästan som ett hälsningsord. Människor - söta de är!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.661768Z"
+  },
+  "npc.malor.say_1": {
+    "src_hash": "17bb78642c4a960215206201b82d1feb",
+    "text": "Skjut iväg, lilla! Människor är inte välkomna här, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.662665Z"
+  },
+  "npc.malor.say_3": {
+    "src_hash": "d633fb2ee86a70e273e568761f62e8ec",
+    "text": "Du har inte avslutat ditt sista uppdrag än. Ska jag förklara det igen för dig?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.663397Z"
+  },
+  "npc.malor.say_4": {
+    "src_hash": "fb9964a4cf86b5a4454805a50c0b8ef4",
+    "text": "Har du hittat Fa'hradins lampa och placerat den i Malors personliga kammare?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.663863Z"
+  },
+  "npc.marina.say_10": {
+    "src_hash": "cdb68d59dbca33141cac47778a813a31",
+    "text": "Du har inte de nödvändiga föremålen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.665055Z"
+  },
+  "npc.maris.say_2": {
+    "src_hash": "92874d037552d6ed7c7552ac9eeebf3b",
+    "text": "Det är bättre för dig att gå nu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.666060Z"
+  },
+  "npc.markwin.say_5": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Du har ingen kaka som jag vill ha.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.668544Z"
+  },
+  "npc.maryza.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.670373Z"
+  },
+  "npc.melian.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.675959Z"
+  },
+  "npc.melian.stdmod_1": {
+    "src_hash": "7e7182a67795f240a79194b4d6fb5c54",
+    "text": "Söker du skjuts till {0} för {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.676392Z"
+  },
+  "npc.melian.stdmod_2": {
+    "src_hash": "8f3b71da455041c184184618a35b40fb",
+    "text": "Du bör inte missa upplevelsen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.677274Z"
+  },
+  "npc.melian.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.678127Z"
+  },
+  "npc.memech.walkaway_msg_1": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Må upplysning vara din väg.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.678687Z"
+  },
+  "npc.miles_the_guard.stdmod_1": {
+    "src_hash": "9f8faef9b0ab426a0e0ee29611a81085",
+    "text": "Det är min plikt att skydda staden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.680835Z"
+  },
+  "npc.miraia.multi_6": {
+    "src_hash": "84bef6784099863dfeb03302de8845ca",
+    "text": "Förstod du allt jag sa till dig och är villig att hantera denna uppgift?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.684044Z"
+  },
+  "npc.miraia.say_7": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Här är den.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.685038Z"
+  },
+  "npc.mordecai.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.687614Z"
+  },
+  "npc.morgan.say_10": {
+    "src_hash": "7b82e1e922974120118a565d5e316935",
+    "text": "Du har inte alla nödvändiga föremål.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.689168Z"
+  },
+  "npc.morgan.say_3": {
+    "src_hash": "ba83dfdb46549eda0d8527ebcbaff8aa",
+    "text": "Du har redan den här outfiten!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.689784Z"
+  },
+  "npc.morgan.say_6": {
+    "src_hash": "7b82e1e922974120118a565d5e316935",
+    "text": "Du har inte alla nödvändiga föremål.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.690283Z"
+  },
+  "npc.morgan.say_7": {
+    "src_hash": "ba83dfdb46549eda0d8527ebcbaff8aa",
+    "text": "Du har redan den här outfiten!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.690668Z"
+  },
+  "npc.mortimer.multi_1": {
+    "src_hash": "f91a9519d595fa9e2fa986102e0edc06",
+    "text": "Våra medlemmar reser till långt borta platser och korsar farliga områden, många faller offer för fiender eller landet ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.691672Z"
+  },
+  "npc.mortimer.multi_10": {
+    "src_hash": "be89d3dbc12ff96bd10a1c34b442d5c0",
+    "text": "Bra. Samhället letar efter nya sätt att resa. Några av våra mest briljanta hjärnor har några teorier om astrala resor som de vill forska vidare på...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.692700Z"
+  },
+  "npc.mortimer.multi_11": {
+    "src_hash": "d6b40ee18bd79a975ead70f9cb3fa99e",
+    "text": "Därför behöver vi att du samlar in lite ektoplasma från liket av ett spöke. Vi kommer att förse dig med en samlare som du kan använda på kroppen av ett dräpt spöke ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.693515Z"
+  },
+  "npc.mortimer.multi_12": {
+    "src_hash": "ad66eef7d46daaeabde9ff86bd71494a",
+    "text": "Tror du att du är redo för det uppdraget?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.693966Z"
+  },
+  "npc.mortimer.multi_13": {
+    "src_hash": "5b243a160c986a49e8a4f4d059e56c96",
+    "text": "Du är en modig själ. Så vitt vi kan säga har orcherna någon form av träningsanläggning i någon kulle i nordöstra delen av sin stad ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.694633Z"
+  },
+  "npc.mortimer.multi_15": {
+    "src_hash": "25c3ece525ecca75503019d34ce3d886",
+    "text": "Excellent! Så res till staden Darashia och bege dig sedan nordost mot pyramiden ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.695533Z"
+  },
+  "npc.mortimer.multi_17": {
+    "src_hash": "3eff2be74e5f24add41763971c618158",
+    "text": "Du har verkligen en äventyrares anda! I den sydöstra delen av Tiquanda finns en liten bosättning av ödlfolket ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.696312Z"
+  },
+  "npc.mortimer.multi_2": {
+    "src_hash": "0f6f27bd429a6246e8915eaf4b13629d",
+    "text": "Ibland kan de personliga utforskarbroscherna återvinnas. På så sätt lär vi oss om våra medlemmars öde ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.697182Z"
+  },
+  "npc.mortimer.multi_20": {
+    "src_hash": "9870e97492a2ede96cd9beca3a677cb1",
+    "text": "Detta förberedelsepaket låter dig samla en lila fjäril som du har dödat ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.697680Z"
+  },
+  "npc.mortimer.multi_22": {
+    "src_hash": "157e99609c7d1a235fee1a026d3e6b58",
+    "text": "Så lyssna snälla: Ta denna ishacka och använd den på ett isblock i grottorna under Folda. Skaffa lite is och ta med den hit så fort du kan...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.698400Z"
+  },
+  "npc.mortimer.multi_24": {
+    "src_hash": "95b026d32f0058017f5e2765d0de290a",
+    "text": "Utmärkt, du tog med dig precis det verktyg vi behöver! Naturligtvis var det bara en enkel uppgift. Men...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.699418Z"
+  },
+  "npc.mortimer.multi_26": {
+    "src_hash": "d649bf320c3a3351571eee4877ea1939",
+    "text": "Okej, även om det krävs mer än bara läpparnas bekännelse för att gå med i våra led. För att bevisa ditt engagemang för saken måste du skaffa en vara åt oss ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.700185Z"
+  },
+  "npc.mortimer.multi_27": {
+    "src_hash": "8fb420a67bb8d7182b4262ff964e9344",
+    "text": "Uppdraget ska vara enkelt att uppfylla. Till våra utgrävningar har vi beställt en rejäl hacka i Kazordoon. Du skulle behöva söka upp den här handlaren Uzgod och hämta hackan åt oss ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.701133Z"
+  },
+  "npc.mortimer.multi_28": {
+    "src_hash": "f3e9abd3321bf1f39ee49a38b3da9bb7",
+    "text": "Enkelt nog? Är du intresserad av denna uppgift?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.701577Z"
+  },
+  "npc.mortimer.multi_29": {
+    "src_hash": "2dea33e94c7862cf9525abee5b48ac68",
+    "text": "Vi skulle vilja studera några gamla runor som användes av ödlorasen. Vi misstänker någon relation mellan ödlorna och grundarna av Ankrahmun ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.702413Z"
+  },
+  "npc.mortimer.multi_3": {
+    "src_hash": "a956076fcff01f900a40761fb65e58c6",
+    "text": "Vi erbjuder en belöning för varje brosch som returneras till oss. Har du hittat en utforskarbrosch?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:01:02.703088Z"
   }
 }

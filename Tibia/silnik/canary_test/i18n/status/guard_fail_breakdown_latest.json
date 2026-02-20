@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T20:49:15.963180Z",
-  "window_start_utc": "2026-02-20T19:49:15.256987Z",
-  "window_end_utc": "2026-02-20T20:49:15.256987Z",
+  "timestamp": "2026-02-20T20:50:27.659150Z",
+  "window_start_utc": "2026-02-20T19:50:26.955460Z",
+  "window_end_utc": "2026-02-20T20:50:26.955460Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -11,13 +11,13 @@
   "rejected_entries": 163,
   "rejected_entries_raw": 446,
   "suspicious_entries": 3548,
-  "suspicious_entries_raw": 25556,
+  "suspicious_entries_raw": 25135,
   "guard_fail_entries": 125,
   "guard_fail_sum": 8375,
   "by_type": {
     "identical_to_en": 139,
-    "word_salad": 7,
     "mixed_language": 7,
+    "word_salad": 7,
     "contains_tibia_proper_noun": 6,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7,
@@ -27,18 +27,18 @@
     "google_translate": 163
   },
   "by_language": {
-    "es": 39,
     "pl": 38,
+    "es": 39,
     "it": 8,
     "ro": 56,
     "ru": 7,
     "sv": 15
   },
   "by_category": {
-    "npc.json": 4,
-    "server.json": 17,
     "items.json": 27,
+    "npc.json": 4,
     "monsters.json": 30,
+    "server.json": 17,
     "spells.json": 33,
     "quests.json": 3,
     "scripts.json": 14,
@@ -56,11 +56,11 @@
       "count": 139
     },
     {
-      "type": "word_salad",
+      "type": "mixed_language",
       "count": 7
     },
     {
-      "type": "mixed_language",
+      "type": "word_salad",
       "count": 7
     },
     {
@@ -130,13 +130,6 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "item.10388.name",
       "count": 2,
       "types": {
@@ -159,6 +152,13 @@
     },
     {
       "key": "item.13670.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2

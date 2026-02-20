@@ -1,35 +1,35 @@
 {
-  "timestamp": "2026-02-20T22:55:21.578114Z",
-  "window_start_utc": "2026-02-20T21:55:20.808567Z",
-  "window_end_utc": "2026-02-20T22:55:20.808567Z",
+  "timestamp": "2026-02-20T22:56:19.931156Z",
+  "window_start_utc": "2026-02-20T21:56:19.217263Z",
+  "window_end_utc": "2026-02-20T22:56:19.217263Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 177,
-  "rejected_entries_raw": 239,
-  "suspicious_entries": 3840,
-  "suspicious_entries_raw": 24063,
-  "guard_fail_entries": 100,
-  "guard_fail_sum": 2610,
+  "rejected_entries": 185,
+  "rejected_entries_raw": 243,
+  "suspicious_entries": 3884,
+  "suspicious_entries_raw": 21019,
+  "guard_fail_entries": 102,
+  "guard_fail_sum": 2628,
   "by_type": {
-    "identical_to_en": 161,
+    "identical_to_en": 164,
     "word_salad": 1,
-    "mixed_language": 8,
+    "mixed_language": 13,
     "contains_tibia_proper_noun": 7,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7
   },
   "by_source": {
-    "google_translate": 177
+    "google_translate": 185
   },
   "by_language": {
-    "ro": 70,
+    "ro": 76,
     "es": 35,
     "pl": 43,
-    "it": 8,
+    "it": 10,
     "ru": 8,
     "sv": 13
   },
@@ -45,20 +45,22 @@
     "modules.json": 2,
     "chatchannels.json": 1,
     "otclient_data.json": 3,
-    "talkactions.json": 4
+    "talkactions.json": 4,
+    "client.json": 2,
+    "php.json": 6
   },
   "by_severity": {
-    "CRITICAL": 162,
-    "HIGH": 15
+    "CRITICAL": 165,
+    "HIGH": 20
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 161
+      "count": 164
     },
     {
       "type": "mixed_language",
-      "count": 8
+      "count": 13
     },
     {
       "type": "contains_tibia_proper_noun",

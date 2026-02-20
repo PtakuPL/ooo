@@ -38806,5 +38806,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:54:05.959365Z"
+  },
+  "achievement.26.name": {
+    "src_hash": "ca312a49e0307ca52e28bb7fe4582c07",
+    "text": "Голем в Геарс",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:55:47.289565Z"
+  },
+  "achievement.295.name": {
+    "src_hash": "3cd9442a32ca084d09f0178ddfc2a671",
+    "text": "Пвнед весь мех",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:55:47.584492Z"
+  },
+  "achievement.170.name": {
+    "src_hash": "21305b754e03843876abc27387a0e57e",
+    "text": "Варлокк",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:55:49.233339Z"
+  },
+  "achievement.351.name": {
+    "src_hash": "2d92721a74e2d463ab6b0f84cbe0c847",
+    "text": "Ратхлетон Простолюдин",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:55:49.234628Z"
+  },
+  "achievement.493.name": {
+    "src_hash": "109a037d85b96b5cb5f2663da2ac0a4b",
+    "text": "Рука Инкуиситион",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:55:49.235576Z"
+  },
+  "achievement.524.name": {
+    "src_hash": "6884a734b38551b8f9ceaba3f209d091",
+    "text": "Кновледге Рейдер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:55:50.968323Z"
   }
 }

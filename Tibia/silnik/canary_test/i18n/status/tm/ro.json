@@ -74262,5 +74262,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:54:43.728900Z"
+  },
+  "php.accounts.text1": {
+    "src_hash": "b47b9410367725df48e327131e4850ef",
+    "text": "col-12 col-sm-12 col-lg-10",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:55:55.585642Z"
+  },
+  "php.rfc6238.text1": {
+    "src_hash": "d0d1de067b87f89b86f48f7d53e14f56",
+    "text": "234567QWERTYUIOPASDFGHJKLZXCVBNM",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:12.260128Z"
+  },
+  "php.rfc6238.text2": {
+    "src_hash": "bb927042d67b8ccf3c149f0d7d96f35b",
+    "text": "de la $counter <br/>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:12.260407Z"
+  },
+  "php.rfc6238.text3": {
+    "src_hash": "17c3fc007f076da3e1f9ceb26cbfda4d",
+    "text": "Înainte de blocul de calcul HMAC cu zero în stânga până la 8 caractere.<br/>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:56:12.260937Z"
   }
 }

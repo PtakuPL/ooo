@@ -13800,13 +13800,9 @@ _NONTRANSLATABLE_WORLD_TERMS = {
     "ferumbras", "orshabaal", "morgaroth", "ghazbaran", "zushuka", "zathroth", "fardos",
     "urmalulu", "goshnar", "oberon", "timira", "urmahlullu", "yirkas", "vok",
     # potoczne termy świata gry
-    "bosstiary", "bestiary", "imbuement", "imbuements", "prey", "charms", "runes", "runestone",
-    "stamina", "premium", "highscore", "highscores", "hotkey", "hotkeys", "loot",
-    # nazwy szkół / profesji / archetypy, które zwykle transliterujemy w cyrylicy
-    "paladin", "sorcerer", "druid", "knight", "familiar",
-    # potwory i klasyczne nazwy własne świata
-    "demon", "demons", "behemoth", "dragon lord", "warlock", "hydra", "cyclops",
-    "necromancer", "vampire", "minotaur", "orc", "troll", "elf", "bonelord",
+    "bosstiary", "bestiary", "premium",
+    # potwory i klasyczne nazwy własne świata (tylko wyjątki świadomie utrzymywane)
+    "demon", "demons",
 }
 
 _LANG_EXEMPT_MODE = {

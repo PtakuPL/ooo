@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-20T17:29:35.146143Z",
-  "cycle": 6,
+  "timestamp": "2026-02-20T17:30:41.500556Z",
+  "cycle": 7,
   "language": "pl",
-  "json_file": "questlog.json",
-  "translated": 11,
+  "json_file": "achievements.json",
+  "translated": 28,
   "placeholders": 0,
-  "guard_fail": 19,
+  "guard_fail": 2,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 124
+  "strict_skipped_done": 326
 }

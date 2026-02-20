@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-20T17:29:16.530635Z",
-  "cycle_counter": 5835,
-  "last_target_key": "pl:questlog.json",
-  "last_pending_total": 1813,
+  "timestamp": "2026-02-20T17:30:43.017064Z",
+  "cycle_counter": 5838,
+  "last_target_key": "es:books.json",
+  "last_pending_total": 96,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 183,
@@ -39,7 +39,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 6,
+  "cache_cycle": 7,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,

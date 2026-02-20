@@ -117918,5 +117918,229 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T17:29:34.321546Z"
+  },
+  "achievement.57.description": {
+    "src_hash": "4c816f36da1f22ac888a795e56817ba2",
+    "text": "Odważnie wskoczyłeś do niesławnego Annihilatora i przetrwałeś – zabierając do domu sławę, chwałę i nagrodę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:10.281339Z"
+  },
+  "achievement.58.name": {
+    "src_hash": "ac53324f67ccc4d6cf5180d7a2dac0b2",
+    "text": "Mistrz Nexusa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:10.281628Z"
+  },
+  "achievement.58.description": {
+    "src_hash": "bf656a0394291c3d42b7523a027362c5",
+    "text": "Udało ci się przedrzeć przez niezliczone hordy w Kuźni Demonów. Po raz kolejny udowodniliście, że nie ma rzeczy niemożliwych.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:10.282279Z"
+  },
+  "achievement.59.description": {
+    "src_hash": "549821b6df589522566f2d744fce8cb1",
+    "text": "Jesteś panem lub damą tańca i nie boisz się używać swoich umiejętności, aby zaimponować bogom plemiennym. Krok w lewo, jeden skok w prawo, przekręć się i krzycz!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:10.283327Z"
+  },
+  "achievement.60.name": {
+    "src_hash": "135fc91ed0448a1501f38df3b9672505",
+    "text": "Zezwolić na pliki cookie?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:16.201254Z"
+  },
+  "achievement.60.description": {
+    "src_hash": "b3ca1a1b56fc096019d5bae224d18a63",
+    "text": "Z całkowicie nieszkodliwym uśmiechem oszukałeś wszystkich zabawnych facetów, aby zjedli twoje eksplodujące ciasteczka. Następnym razem, gdy zrobisz ten dowcip, rozważ założenie stroju skauta, aby był jeszcze lepszy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:16.202191Z"
+  },
+  "achievement.61.description": {
+    "src_hash": "584f98335e4443b4752ed9deedd71b76",
+    "text": "Dotknąłeś wszystkich tronów Bezlitosnej Siedmiu i wchłonąłeś część ich złego ducha. Być może to zmieniło Cię na zawsze.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:16.203061Z"
+  },
+  "achievement.62.name": {
+    "src_hash": "35152975da0e8de5e4726c0d7dbe1657",
+    "text": "Champion Chazorai",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:16.203688Z"
+  },
+  "achievement.62.description": {
+    "src_hash": "120bf85dbae89adb7fe5da8b4b16060f",
+    "text": "Wygrałeś bezlitosny turniej drużynowy 2 na 2 na Isle of Strife i zniszczyłeś falę za falą przerażających przeciwników. Śmierć lub zwycięstwo - z pewnością wybrałeś to drugie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:16.204449Z"
+  },
+  "achievement.63.name": {
+    "src_hash": "60f06d1f2b26cc7421a8292951756c9d",
+    "text": "Wędrowiec",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:21.444632Z"
+  },
+  "achievement.63.description": {
+    "src_hash": "a9345f0389ff6c0ad0158e6affcbc5c6",
+    "text": "Sny o smokach są złote.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:21.444984Z"
+  },
+  "achievement.64.description": {
+    "src_hash": "80fec27bb62d49ff0497f52b371d325c",
+    "text": "Jedno jest pewne: na pewno kochasz pływanie. Przebywanie na plaży ze znajomymi, jedzenie lodów i gra w piłkę plażową to świetna zabawa!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:21.446288Z"
+  },
+  "achievement.65.name": {
+    "src_hash": "9b997d21495dbcdcb3a00095e4b6e1f5",
+    "text": "Gwiazda rocka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:21.446508Z"
+  },
+  "achievement.65.description": {
+    "src_hash": "1fcbac0f989f980ae26e39288bf5fd38",
+    "text": "Muzyka przychodzi do Ciebie naturalnie. Czujesz się komfortowo na każdej scenie, w dowolnym momencie i w głębi duszy masz nadzieję, że pewnego dnia będziesz w stanie pokonać swoich wrogów, grając wyłącznie muzykę. Daj się ponieść!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:29.169579Z"
+  },
+  "achievement.66.description": {
+    "src_hash": "0810915370ec3e05e0e8fd878e0800bf",
+    "text": "Z pewnością masz swoje sposoby na zdobywanie pieniędzy. Wiele z nich jest różowych i wyłożonych połamanymi fragmentami porcelany.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:29.170203Z"
+  },
+  "achievement.67.description": {
+    "src_hash": "d00e1d84c6a267a87d2d6f84606ea91f",
+    "text": "Wiatr we włosach, palce ściskające brzeg dywanu – tak lubisz podróżować. Szybciej! Wyższy! I od czasu do czasu pętla.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:29.170861Z"
+  },
+  "achievement.68.description": {
+    "src_hash": "e9c9e6d2fab33b42e3586afa63349ffc",
+    "text": "Uwielbiasz moczyć i brudzić ręce – i pokrywać je gliną. Twoja idealna rzeźba Broga, szalejącego Tytana, jest Twoim prawdziwym arcydziełem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:29.171595Z"
+  },
+  "achievement.69.name": {
+    "src_hash": "903d1100b8d77db8a0e87c9a5f8a9e98",
+    "text": "Maskarada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:29.171805Z"
+  },
+  "achievement.69.description": {
+    "src_hash": "235daaa6a90facaedb543f7054da2c02",
+    "text": "Prawdopodobnie nie wiesz już, jak naprawdę wyglądasz – zwykle, gdy patrzysz w lustro, jakiś potwór spogląda na ciebie. Z drugiej strony - może to jest poprawa?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:35.073103Z"
+  },
+  "achievement.70.name": {
+    "src_hash": "51c718c5e9211975e2dd83adfd8a7dfd",
+    "text": "Nurek głębinowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:35.073357Z"
+  },
+  "achievement.70.description": {
+    "src_hash": "b516aba8ef9f3c627f60375951298c74",
+    "text": "Pod powierzchnią morza — może nie jest to Twoja naturalna przestrzeń życiowa, ale na dnie oceanu czujesz się całkiem komfortowo. Quara już Cię nie straszy i czasami śpisz z wciąż wyposażonym hełmem głębin.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:35.074154Z"
+  },
+  "achievement.71.name": {
+    "src_hash": "2dd719d0587fcbf36410e4d984dc107f",
+    "text": "Chodzący po ogniu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:35.074377Z"
+  },
+  "achievement.71.description": {
+    "src_hash": "9998f197b203249fd7faf5f601d078d1",
+    "text": "Bieganie boso po żarze nie jest dla Ciebie! Robisz to w elegancki sposób. Jednak ogólnie rzecz biorąc, pociąga Cię ogień i ciepłe otoczenie – lubisz, gdy jest gorąco!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:35.075132Z"
+  },
+  "achievement.72.description": {
+    "src_hash": "2981f20b49e45b997391833674aa7013",
+    "text": "Ach, zapach morza! Stanie na brzegu i zarzucanie linki to jedno z Twoich ulubionych zajęć. Dla Ciebie łowienie ryb jest relaksujące, a jednocześnie zapewnia łatwe jedzenie. Doskonały!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:40.597245Z"
+  },
+  "achievement.73.name": {
+    "src_hash": "4b6488e8f0bc3039e38d083cefe50376",
+    "text": "Zielony Kciuk",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:40.597515Z"
+  },
+  "achievement.73.description": {
+    "src_hash": "e3f00b5b97057d490e6904d3cc736c19",
+    "text": "Jeśli ktoś daje Ci nasiona, zazwyczaj w ciągu kilku dni wyhodujesz z nich piękną roślinę. Lubisz swój dom zielony i ozdobiony kwiatami. Pewnie też z nimi rozmawiasz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:40.598213Z"
+  },
+  "achievement.74.description": {
+    "src_hash": "8862785603067aff6c9f45e97095be99",
+    "text": "Twój lokalny handlarz magią uważa Cię za jednego ze swoich najlepszych klientów – zazwyczaj kupujesz duże zapasy mikstur, aby nie obudzić się w środku nocy i mieć ochotę na więcej. Jednak zawsze wydaje się, że kończą Ci się one zbyt szybko. Dzięki!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:40.599141Z"
+  },
+  "achievement.75.name": {
+    "src_hash": "0c41dd74f0b30a88e91ad996f8ae3047",
+    "text": "Rzeźbiarz Lodowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:30:40.599380Z"
   }
 }

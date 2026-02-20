@@ -1,16 +1,15 @@
 {
-  "timestamp": "2026-02-20T21:28:42.686692Z",
-  "cycle_counter": 6415,
-  "last_target_key": "ro:otclient_modules.json",
-  "last_pending_total": 1239,
-  "last_tier": 2,
+  "timestamp": "2026-02-20T21:29:44.988905Z",
+  "cycle_counter": 6418,
+  "last_target_key": "pl:otclient_modules.json",
+  "last_pending_total": 49,
+  "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 181,
-  "active_candidates_count": 169,
+  "active_candidates_count": 170,
   "skipped_backoff": 9,
-  "skipped_guard_fail": 3,
+  "skipped_guard_fail": 2,
   "guard_fail_blacklist": {
-    "ro:monsters.json": 6416,
     "pl:spells.json": 6421,
     "es:spells.json": 6425
   },
@@ -38,7 +37,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 206,
+  "cache_cycle": 207,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -216,7 +215,7 @@
       "pl": 87.83,
       "es": 84.84,
       "ru": 50.37,
-      "ro": 43.46,
+      "ro": 43.47,
       "it": 52.43,
       "sr": 45.5,
       "sv": 28.87

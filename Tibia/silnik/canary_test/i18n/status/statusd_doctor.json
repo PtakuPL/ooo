@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-02-20T21:11:32.999661Z",
+  "timestamp": "2026-02-20T21:12:34.951007Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 2,
   "warnings_count": 18,
   "ok_count": 10,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=81364 rate=503.054% window=6.0h top_lang=ro:34830 per_lang=[ro:34830(1787.07%/critical),es:19816(419.742%/critical),ru:12159(379.731%/critical),pl:9957(523.502%/critical),it:2807(108.546%/critical)] per_domain=[items.json:51778(1830.905%/critical),npc.json:14426(200.724%/critical),monsters.json:12578(372.02%/critical),server.json:782(93.541%/critical),spells.json:589(486.777%/critical)]",
-    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5695.7 cycle_delta=5556 best_quality_drop=0.000% reason=active_time_without_quality_drop"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=81453 rate=502.827% window=6.0h top_lang=ro:34830 per_lang=[ro:34830(1787.07%/critical),es:19905(419.406%/critical),ru:12159(379.731%/critical),pl:9957(523.502%/critical),it:2807(108.546%/critical)] per_domain=[items.json:51778(1830.905%/critical),npc.json:14497(201.068%/critical),monsters.json:12578(372.02%/critical),server.json:782(93.541%/critical),spells.json:607(493.496%/critical)]",
+    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5696.7 cycle_delta=5556 best_quality_drop=0.000% reason=active_time_without_quality_drop"
   ],
   "warnings": [
     "BLACKLISTED_TARGET: pl:items.json ma 6381 guard_fail w blackliście",
@@ -30,16 +30,16 @@
     "LANG_PARITY_WARN: tr has 48694 [EN]-backlog after 157h (should be ≤5000)"
   ],
   "ok": [
-    "heartbeat_fresh (34s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (28s)",
-    "guard_report_fresh (5s)",
-    "dispatch_fresh (4s)",
+    "heartbeat_fresh (15s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (9s)",
+    "guard_report_fresh (47s)",
+    "dispatch_fresh (66s)",
     "worker_pid_alive (114825)",
-    "worker_subprocess_observed (main=114825 matching=4 extras=3 desc=3 foreign=0 oldest_desc=3s oldest_foreign=0s status=extra_descendants_detected)",
-    "queue_freshness_ok (103s, WARN>900s CRIT>1800s)",
+    "worker_process_topology_ok (main=114825 matching=1 extras=0 desc=0 foreign=0 oldest_desc=0s oldest_foreign=0s status=clean)",
+    "queue_freshness_ok (41s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
     "forced_cmd_sla_ok (samples=0 sla_target=45s p95_roundtrip=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0)",
-    "repair_tuning_active (samples_2h=48)"
+    "repair_tuning_active (samples_2h=49)"
   ],
   "metrics_drift": {
     "available": true,
@@ -74,7 +74,7 @@
       "sr",
       "sv"
     ],
-    "active_minutes": 5695.699,
+    "active_minutes": 5696.731,
     "cycle_delta": 5556,
     "best_quality_drop_pct": 0.0,
     "thresholds": {
@@ -109,32 +109,21 @@
   },
   "worker_process_watch": {
     "available": true,
-    "severity": "info",
-    "status": "extra_descendants_detected",
-    "reason": "multiple_descendant_worker_processes",
+    "severity": "ok",
+    "status": "clean",
+    "reason": "single_worker_process",
     "main_pid": 114825,
     "matched_pids": [
-      114825,
-      415798,
-      415811,
-      415813
+      114825
     ],
-    "extra_pids": [
-      415798,
-      415811,
-      415813
-    ],
-    "descendant_extra_pids": [
-      415798,
-      415811,
-      415813
-    ],
+    "extra_pids": [],
+    "descendant_extra_pids": [],
     "foreign_extra_pids": [],
-    "total_matching": 4,
-    "extra_count": 3,
-    "descendant_extra_count": 3,
+    "total_matching": 1,
+    "extra_count": 0,
+    "descendant_extra_count": 0,
     "foreign_extra_count": 0,
-    "oldest_descendant_age_s": 3,
+    "oldest_descendant_age_s": 0,
     "oldest_foreign_age_s": 0,
     "warn_persist_seconds": 900,
     "critical_persist_seconds": 1800

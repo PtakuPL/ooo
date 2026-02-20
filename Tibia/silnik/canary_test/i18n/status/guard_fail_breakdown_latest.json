@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-02-20T16:48:24.944304Z",
-  "window_start_utc": "2026-02-20T15:48:24.693573Z",
-  "window_end_utc": "2026-02-20T16:48:24.693573Z",
+  "timestamp": "2026-02-20T16:49:53.766580Z",
+  "window_start_utc": "2026-02-20T15:49:53.509057Z",
+  "window_end_utc": "2026-02-20T16:49:53.509057Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 415,
-  "suspicious_entries": 8013,
-  "guard_fail_entries": 51,
-  "guard_fail_sum": 3750,
+  "rejected_entries": 416,
+  "suspicious_entries": 8057,
+  "guard_fail_entries": 53,
+  "guard_fail_sum": 3805,
   "by_type": {
     "identical_to_en": 319,
-    "word_salad": 20,
+    "word_salad": 21,
     "mixed_language": 55,
     "contains_tibia_proper_noun": 22,
     "mixed_scripts": 21,
     "cyrillic_latin_mix": 21
   },
   "by_source": {
-    "google_translate": 415
+    "google_translate": 416
   },
   "by_language": {
-    "es": 65,
+    "es": 66,
     "ro": 159,
     "it": 57,
     "ru": 21,
@@ -38,10 +38,11 @@
     "spells.json": 128,
     "server.json": 16,
     "scripts.json": 16,
-    "quests.json": 2
+    "quests.json": 2,
+    "books.json": 1
   },
   "by_severity": {
-    "CRITICAL": 339,
+    "CRITICAL": 340,
     "HIGH": 76
   },
   "top_types": [
@@ -58,16 +59,16 @@
       "count": 22
     },
     {
+      "type": "word_salad",
+      "count": 21
+    },
+    {
       "type": "mixed_scripts",
       "count": 21
     },
     {
       "type": "cyrillic_latin_mix",
       "count": 21
-    },
-    {
-      "type": "word_salad",
-      "count": 20
     }
   ],
   "top_keys": [

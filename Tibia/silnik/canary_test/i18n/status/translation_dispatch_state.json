@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-20T16:47:48.229085Z",
-  "cycle_counter": 5756,
-  "last_target_key": "pl:achievements.json",
-  "last_pending_total": 689,
+  "timestamp": "2026-02-20T16:49:48.322750Z",
+  "cycle_counter": 5759,
+  "last_target_key": "es:html.json",
+  "last_pending_total": 699,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 183,
@@ -10,7 +10,7 @@
   "skipped_backoff": 3,
   "skipped_guard_fail": 1,
   "guard_fail_blacklist": {
-    "pl:items.json": 5759
+    "pl:items.json": 5769
   },
   "tier_config": {
     "tier1": [
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 12,
+  "cache_cycle": 13,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -197,7 +197,7 @@
       "sv"
     ],
     "lang_completion": {
-      "pl": 87.72,
+      "pl": 87.77,
       "es": 84.58,
       "ru": 50.35,
       "ro": 42.16,

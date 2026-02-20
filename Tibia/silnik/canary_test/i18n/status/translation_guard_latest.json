@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-20T17:46:18.585098Z",
-  "cycle": 18,
+  "timestamp": "2026-02-20T17:47:09.961497Z",
+  "cycle": 19,
   "language": "pl",
-  "json_file": "php.json",
-  "translated": 2,
+  "json_file": "talkactions.json",
+  "translated": 0,
   "placeholders": 0,
-  "guard_fail": 4,
+  "guard_fail": 30,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 54
+  "strict_skipped_done": 188
 }

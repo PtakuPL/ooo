@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T17:46:24.275825Z",
-  "window_start_utc": "2026-02-20T16:46:23.652478Z",
-  "window_end_utc": "2026-02-20T17:46:23.652478Z",
+  "timestamp": "2026-02-20T17:47:49.653250Z",
+  "window_start_utc": "2026-02-20T16:47:49.038373Z",
+  "window_end_utc": "2026-02-20T17:47:49.038373Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,15 +9,15 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 296,
-  "rejected_entries_raw": 532,
-  "suspicious_entries": 4214,
-  "suspicious_entries_raw": 20702,
-  "guard_fail_entries": 103,
-  "guard_fail_sum": 3808,
+  "rejected_entries_raw": 534,
+  "suspicious_entries": 4171,
+  "suspicious_entries_raw": 20661,
+  "guard_fail_entries": 101,
+  "guard_fail_sum": 3747,
   "by_type": {
-    "identical_to_en": 240,
+    "identical_to_en": 239,
     "word_salad": 8,
-    "mixed_language": 32,
+    "mixed_language": 33,
     "contains_tibia_proper_noun": 15,
     "mixed_scripts": 13,
     "cyrillic_latin_mix": 13,
@@ -27,18 +27,18 @@
     "google_translate": 296
   },
   "by_language": {
-    "sv": 13,
-    "es": 44,
+    "es": 46,
     "ro": 115,
     "it": 49,
     "ru": 13,
-    "pl": 62
+    "pl": 65,
+    "sv": 8
   },
   "by_category": {
-    "server.json": 16,
     "npc.json": 2,
     "books.json": 2,
     "items.json": 57,
+    "server.json": 11,
     "monsters.json": 65,
     "spells.json": 73,
     "quests.json": 3,
@@ -49,20 +49,22 @@
     "cpp.json": 6,
     "otclient_data.json": 1,
     "html.json": 18,
-    "php.json": 1
+    "php.json": 1,
+    "modules.json": 2,
+    "talkactions.json": 3
   },
   "by_severity": {
-    "CRITICAL": 248,
-    "HIGH": 48
+    "CRITICAL": 247,
+    "HIGH": 49
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 240
+      "count": 239
     },
     {
       "type": "mixed_language",
-      "count": 32
+      "count": 33
     },
     {
       "type": "contains_tibia_proper_noun",
@@ -218,13 +220,6 @@
       }
     },
     {
-      "key": "data.otservbr.global.npc.edala.L72.181",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "data.otservbr.global.npc.anerui.L71.1487",
       "count": 2,
       "types": {
@@ -247,6 +242,13 @@
     },
     {
       "key": "monster.sandcrawler.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "monster.bazir.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

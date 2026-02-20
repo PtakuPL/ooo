@@ -1,19 +1,18 @@
 {
-  "timestamp": "2026-02-20T17:46:09.996918Z",
-  "cycle_counter": 5871,
-  "last_target_key": "pl:php.json",
-  "last_pending_total": 6,
+  "timestamp": "2026-02-20T17:47:11.374796Z",
+  "cycle_counter": 5874,
+  "last_target_key": "es:otclient_data.json",
+  "last_pending_total": 2,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 183,
-  "active_candidates_count": 175,
+  "active_candidates_count": 176,
   "skipped_backoff": 4,
-  "skipped_guard_fail": 4,
+  "skipped_guard_fail": 3,
   "guard_fail_blacklist": {
     "pl:items.json": 5880,
     "es:server.json": 5875,
-    "pl:spells.json": 5872,
-    "es:items.json": 5873
+    "pl:spells.json": 5882
   },
   "tier_config": {
     "tier1": [
@@ -39,7 +38,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 18,
+  "cache_cycle": 19,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -111,7 +110,7 @@
     "ro:books.json": 0,
     "sv:items.json": 0,
     "sr:items.json": 0,
-    "pl:php.json": 1,
+    "pl:php.json": 0,
     "es:modules.json": 0,
     "es:otclient_data.json": 1,
     "pl:startup.json": 0,
@@ -141,7 +140,7 @@
     "pl:quests.json": 0,
     "pl:html.json": 0,
     "es:otclient_modules.json": 0,
-    "pl:talkactions.json": 1,
+    "pl:talkactions.json": 2,
     "es:talkactions.json": 1,
     "ro:talkactions.json": 1,
     "it:npclib.json": 1,
@@ -207,7 +206,7 @@
       "ru": 50.35,
       "ro": 42.48,
       "it": 51.85,
-      "sr": 45.38,
+      "sr": 45.44,
       "sv": 28.4
     }
   }

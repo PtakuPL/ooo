@@ -38966,5 +38966,109 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:18:26.474586Z"
+  },
+  "questlog.quest_1.mission_8.name": {
+    "src_hash": "51ae86f3a85c461e5e822d56e933ae93",
+    "text": "The Финал Баттле",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:19.773075Z"
+  },
+  "questlog.quest_10.mission_1.name": {
+    "src_hash": "966f517cb09bd56c5e6ad7a5b4061a8f",
+    "text": "Миссион 01: Сометхинг Роттен",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:19.775491Z"
+  },
+  "questlog.quest_10.mission_10.name": {
+    "src_hash": "48a28be0de35f92b61aaa7b218032a14",
+    "text": "Миссион 10: The Финал Баттле",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:22.579570Z"
+  },
+  "questlog.quest_10.mission_2.name": {
+    "src_hash": "a68b2d5660eec62de10f4d49d0a96043",
+    "text": "Миссион 02: Ватчинг the Ватчмен",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:22.580723Z"
+  },
+  "questlog.quest_10.mission_3.name": {
+    "src_hash": "5793056917eeaaa0e4d5c8e3d41327a8",
+    "text": "Миссион 03: Деатх to the Деатхбрингер",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:22.581803Z"
+  },
+  "questlog.quest_10.mission_4.name": {
+    "src_hash": "a02e8fb26761794ecefa48b397eb170f",
+    "text": "Миссион 04: Гоод to be Кингпин",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:22.583030Z"
+  },
+  "questlog.quest_10.mission_5.name": {
+    "src_hash": "1ff388b5351db5c0f8871c16dfc3b764",
+    "text": "Миссион 05: Фоод or Фигхт",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:22.584066Z"
+  },
+  "questlog.quest_10.mission_6.name": {
+    "src_hash": "a5403756b29f924a1fd4af03512679d1",
+    "text": "Миссион 06: Фригхтенинг Фуел",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:25.378819Z"
+  },
+  "questlog.quest_10.mission_7.name": {
+    "src_hash": "b02573914b8758e3927f680dd8ee2850",
+    "text": "Миссион 07: A Фишй Миссион",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:25.381451Z"
+  },
+  "questlog.quest_10.mission_8.name": {
+    "src_hash": "8d54305f00c8bfb8db0d0d56f45a3d30",
+    "text": "Миссион 08: Дангероус Мачинатионс",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:25.382642Z"
+  },
+  "questlog.quest_10.mission_9.name": {
+    "src_hash": "5828fc788959b84a5136deded2e8243f",
+    "text": "Миссион 09: Декисион",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:25.384195Z"
+  },
+  "questlog.quest_10.name": {
+    "src_hash": "739b160e180fd2cc9117444336f7ee21",
+    "text": "In Сервике of Ялахар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:25.385515Z"
+  },
+  "questlog.quest_11.mission_13.state_1": {
+    "src_hash": "66ee4f06c868532e10d31e8f66bed6cd",
+    "text": "Вы успешно охотились на 300 корявых гончих. Если вы хотите, вы можете выполнить это задание еще раз.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:29:30.899425Z"
   }
 }

@@ -117654,5 +117654,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T22:47:41.835468Z"
+  },
+  "monster.morik_the_gladiator.name": {
+    "src_hash": "70d17cf1d597200fc2a975f2ab3b4d4e",
+    "text": "Morik Gladiator",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:31:58.069096Z"
   }
 }

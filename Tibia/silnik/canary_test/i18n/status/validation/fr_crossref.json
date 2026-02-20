@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T16:17:28.746791Z",
+  "checked_at": "2026-02-20T16:32:46.278338Z",
   "issues_total": 477,
   "issues_by_type": {
     "consistency_in_language": 54,
@@ -860,42 +860,6 @@
       "en": "Bearhugger",
       "pl": "Niedźwiedź",
       "lang": "Bearhugger"
-    },
-    {
-      "key": "achievement.48.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Matchmaker",
-      "pl": "Swat",
-      "lang": "Matchmaker"
-    },
-    {
-      "key": "achievement.50.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Razing!",
-      "pl": "Niszczenie!",
-      "lang": "Razing!"
-    },
-    {
-      "key": "achievement.53.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Scrapper",
-      "pl": "Skrobaczka",
-      "lang": "Scrapper"
-    },
-    {
-      "key": "achievement.54.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Greenhorn",
-      "pl": "Żółtodziób",
-      "lang": "Greenhorn"
     },
     {
       "key": "achievement.56.name",
@@ -4451,6 +4415,42 @@
       "en": "jewel case",
       "pl": "szkatułka na biżuterię",
       "lang": "jewel case"
+    },
+    {
+      "key": "item.7534.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "sundial",
+      "pl": "zegar słoneczny",
+      "lang": "sundial"
+    },
+    {
+      "key": "item.7739.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "rock",
+      "pl": "głaz",
+      "lang": "rock"
+    },
+    {
+      "key": "item.7745.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "lavahole",
+      "pl": "Dziura lawowa",
+      "lang": "lavahole"
+    },
+    {
+      "key": "item.7890.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "vines",
+      "pl": "winorośle",
+      "lang": "vines"
     }
   ],
   "length_ratio_issues": [
@@ -4664,8 +4664,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 4,
-    "skipped": 76,
+    "applied": 0,
+    "skipped": 80,
     "errors": 0
   }
 }

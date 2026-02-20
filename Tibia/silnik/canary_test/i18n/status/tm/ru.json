@@ -38486,5 +38486,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:33:15.794465Z"
+  },
+  "questlog.quest_1.mission_1.name": {
+    "src_hash": "90155bb7a9269a145cdb34f33bc6ec4b",
+    "text": "The Хидден Сеал",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:36.855152Z"
+  },
+  "questlog.quest_1.mission_2.name": {
+    "src_hash": "5d62cb4a590965bb7e705d2c1b6477b2",
+    "text": "The Плагуе Сеал",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:36.855915Z"
+  },
+  "questlog.quest_1.mission_3.name": {
+    "src_hash": "48d9a4f97f5f0796617adf0e891cd44f",
+    "text": "The Сеал of Демонраге",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:36.856687Z"
+  },
+  "questlog.quest_1.mission_4.name": {
+    "src_hash": "e364c546a1e8916a2b527149649c9654",
+    "text": "The Сеал of Сакрифике",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:36.857403Z"
+  },
+  "questlog.quest_1.mission_5.name": {
+    "src_hash": "229fde04bb8840ba15a0dd3a4bafae15",
+    "text": "The Сеал of Труе Патх",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:36.858104Z"
   }
 }

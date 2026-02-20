@@ -33,12 +33,12 @@
     "issues_count": 1417
   },
   "es": {
-    "last_cycle": "2026-02-20T22:38:57.640615Z",
-    "last_translated": 11,
-    "total_suspicious": 68164,
-    "total_rejected": 2235,
-    "total_gt_guard_fail": 22507,
-    "cycles": 1682,
+    "last_cycle": "2026-02-20T22:45:31.926514Z",
+    "last_translated": 23,
+    "total_suspicious": 68225,
+    "total_rejected": 2236,
+    "total_gt_guard_fail": 22527,
+    "cycles": 1683,
     "quality_score": 60.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 350877
@@ -66,24 +66,24 @@
     "issues_count": 2470
   },
   "it": {
-    "last_cycle": "2026-02-20T22:39:33.854751Z",
-    "last_translated": 14,
+    "last_cycle": "2026-02-20T22:44:30.855528Z",
+    "last_translated": 30,
     "total_suspicious": 8563,
     "total_rejected": 877,
     "total_gt_guard_fail": 2862,
-    "cycles": 471,
-    "quality_score": 75.2,
+    "cycles": 472,
+    "quality_score": 75.3,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 77055
   },
   "ru": {
-    "last_cycle": "2026-02-20T22:39:41.248597Z",
+    "last_cycle": "2026-02-20T22:44:36.925615Z",
     "last_translated": 30,
-    "total_suspicious": 48268,
+    "total_suspicious": 48277,
     "total_rejected": 926,
     "total_gt_guard_fail": 2513,
-    "cycles": 448,
-    "quality_score": 66.3,
+    "cycles": 449,
+    "quality_score": 66.4,
     "last_audit": "2026-02-20T22:12:42.470260Z",
     "issues_count": 214898
   },
@@ -550,12 +550,12 @@
     "issues_count": 958
   },
   "ro": {
-    "last_cycle": "2026-02-20T22:44:04.718258Z",
-    "last_translated": 15,
-    "total_suspicious": 87410,
-    "total_rejected": 3200,
-    "total_gt_guard_fail": 5127,
-    "cycles": 418,
+    "last_cycle": "2026-02-20T22:44:58.102140Z",
+    "last_translated": 8,
+    "total_suspicious": 87426,
+    "total_rejected": 3214,
+    "total_gt_guard_fail": 5149,
+    "cycles": 419,
     "quality_score": 60.4,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 190054

@@ -1,8 +1,8 @@
 {
-  "total_cycles": 17,
+  "total_cycles": 18,
   "mode": "AUTO_TRANSLATE",
-  "category": "ro",
-  "last_update": "2026-02-20T23:44:08.678676",
+  "category": "it",
+  "last_update": "2026-02-20T23:45:33.002123",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,105 +26,14 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "ro",
-    "json_file": "scripts.json",
-    "keys_to_translate": 1244,
-    "guard_fail": 15,
+    "language": "it",
+    "json_file": "raids.json",
+    "keys_to_translate": 128,
+    "guard_fail": 22,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 15,
-    "recent_examples": [
-      {
-        "key": "scripts.action_horn.say_4",
-        "en": "Grr.",
-        "translated": "Grr.",
-        "source": "tm"
-      },
-      {
-        "key": "scripts.actions_bosses_levers.say_1",
-        "en": "SPLASH!",
-        "translated": "SPLASH!",
-        "source": "tm"
-      },
-      {
-        "key": "scripts.actions_demon_oak.say_1",
-        "en": "-krrrrak-",
-        "translated": "-krrrrak-",
-        "source": "tm"
-      },
-      {
-        "key": "scripts.banana_chocolate_shake.say_1",
-        "en": "Slurp.",
-        "translated": "Slurp.",
-        "source": "tm"
-      },
-      {
-        "key": "scripts.blessed_steak.say_1",
-        "en": "Chomp.",
-        "translated": "Chomp.",
-        "source": "tm"
-      },
-      {
-        "key": "scripts.blueberry_cupcake.say_1",
-        "en": "Mmmm.",
-        "translated": "Mmmm.",
-        "source": "tm"
-      },
-      {
-        "key": "scripts.carrot_cake.say_1",
-        "en": "Mmmm.",
-        "translated": "Mmmm.",
-        "source": "tm"
-      },
-      {
-        "key": "gamestore.error.purchase_cancelled",
-        "en": "Something went wrong. Your purchase has been cancelled.",
-        "translated": "Ceva a mers prost. Achizi\u021bia dvs. a fost anulat\u0103.",
-        "source": "google_translate"
-      },
-      {
-        "key": "scripts.clay_lump.sound_fail",
-        "en": "Aw man. That did not work out too well.",
-        "translated": "Omule. Asta nu a mers prea bine.",
-        "source": "google_translate"
-      },
-      {
-        "key": "scripts.close_server.msg_1",
-        "en": "Server is set to maintenance mode.",
-        "translated": "Serverul este setat pe modul de \u00eentre\u021binere.",
-        "source": "google_translate"
-      },
-      {
-        "key": "scripts.close_server.msg_2",
-        "en": "Server is now closed.",
-        "translated": "Serverul este acum \u00eenchis.",
-        "source": "google_translate"
-      },
-      {
-        "key": "scripts.closing_door.msg_2",
-        "en": "Only the worthy may pass.",
-        "translated": "Numai cei vrednici pot trece.",
-        "source": "google_translate"
-      },
-      {
-        "key": "scripts.cobra_flask.msg_1",
-        "en": "You carefully pour just a tiny, little, finely dosed... and there goes the whole content of the bottle. Stand back!",
-        "translated": "Turna\u021bi cu grij\u0103 doar o mic\u0103, mic\u0103, fin dozat\u0103... \u0219i acolo merge tot con\u021binutul sticlei. Stai \u00eenapoi!",
-        "source": "google_translate"
-      },
-      {
-        "key": "scripts.coconut_shrimp_bake.msg_2",
-        "en": "You should only eat this dish when wearing a helmet of the deep or a depth galea and walking underwater.",
-        "translated": "Ar trebui s\u0103 m\u0103n\u00e2nci acest fel de m\u00e2ncare numai atunci c\u00e2nd por\u021bi o casc\u0103 de ad\u00e2ncime sau o galea de ad\u00e2ncime \u0219i mergi sub ap\u0103.",
-        "source": "google_translate"
-      },
-      {
-        "key": "scripts.coconut_shrimp_bake.msg_3",
-        "en": "You should only eat this dish when wearing a helmet of the deep or a depth galea and walking underwater.",
-        "translated": "Ar trebui s\u0103 m\u0103n\u00e2nci acest fel de m\u00e2ncare numai atunci c\u00e2nd por\u021bi o casc\u0103 de ad\u00e2ncime sau o galea de ad\u00e2ncime \u0219i mergi sub ap\u0103.",
-        "source": "google_translate"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

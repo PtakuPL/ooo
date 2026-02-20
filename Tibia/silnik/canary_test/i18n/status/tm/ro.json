@@ -73742,5 +73742,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:44:04.578396Z"
+  },
+  "otclient_modules.character_otui.tr_48": {
+    "src_hash": "511924d4430637cef309c7e64fe5c38f",
+    "text": "Pagina 1 / 1",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:41.737444Z"
+  },
+  "otclient_modules.character_otui.tr_43": {
+    "src_hash": "10ac3d04253ef7e1ddc73e6091c0cd55",
+    "text": "Următorul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:54.800199Z"
+  },
+  "otclient_modules.character_otui.tr_44": {
+    "src_hash": "dd1f775e443ff3b9a89270713580a51b",
+    "text": "Anterior",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:54.800388Z"
+  },
+  "otclient_modules.character_otui.tr_47": {
+    "src_hash": "828b62c77b6e94a93e516205bb69d398",
+    "text": "Date și timp",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:54.800614Z"
+  },
+  "otclient_modules.character_otui.tr_49": {
+    "src_hash": "10ac3d04253ef7e1ddc73e6091c0cd55",
+    "text": "Următorul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:57.976313Z"
+  },
+  "otclient_modules.character_otui.tr_5": {
+    "src_hash": "aa178f0075b445caa5b5bfaaed092cc8",
+    "text": "Angajaţi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:57.976513Z"
   }
 }

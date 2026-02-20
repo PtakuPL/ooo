@@ -81054,5 +81054,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:39:33.619812Z"
+  },
+  "raid.orc.name": {
+    "src_hash": "34b0ceb41c3a8896e074f8e59190021b",
+    "text": "Orco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:44:30.477130Z"
   }
 }

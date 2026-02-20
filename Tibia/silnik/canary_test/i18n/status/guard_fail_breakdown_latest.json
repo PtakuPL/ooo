@@ -1,55 +1,55 @@
 {
-  "timestamp": "2026-02-20T22:44:14.692200Z",
-  "window_start_utc": "2026-02-20T21:44:13.851274Z",
-  "window_end_utc": "2026-02-20T22:44:13.851274Z",
+  "timestamp": "2026-02-20T22:45:38.282180Z",
+  "window_start_utc": "2026-02-20T21:45:37.550561Z",
+  "window_end_utc": "2026-02-20T22:45:37.550561Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 123,
-  "rejected_entries_raw": 247,
-  "suspicious_entries": 3545,
-  "suspicious_entries_raw": 25000,
-  "guard_fail_entries": 99,
-  "guard_fail_sum": 4718,
+  "rejected_entries": 137,
+  "rejected_entries_raw": 255,
+  "suspicious_entries": 3629,
+  "suspicious_entries_raw": 25199,
+  "guard_fail_entries": 98,
+  "guard_fail_sum": 4734,
   "by_type": {
-    "identical_to_en": 110,
-    "word_salad": 1,
+    "identical_to_en": 124,
     "mixed_language": 7,
+    "word_salad": 1,
     "contains_tibia_proper_noun": 6,
     "mixed_scripts": 5,
     "cyrillic_latin_mix": 5
   },
   "by_source": {
-    "google_translate": 123
+    "google_translate": 137
   },
   "by_language": {
-    "ro": 41,
-    "es": 33,
     "pl": 30,
+    "es": 33,
     "it": 6,
+    "ro": 55,
     "ru": 5,
     "sv": 8
   },
   "by_category": {
+    "spells.json": 31,
     "items.json": 28,
     "npc.json": 4,
-    "spells.json": 31,
     "server.json": 17,
     "monsters.json": 23,
-    "otclient_modules.json": 10,
+    "otclient_modules.json": 24,
     "scripts.json": 10
   },
   "by_severity": {
-    "CRITICAL": 111,
+    "CRITICAL": 125,
     "HIGH": 12
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 110
+      "count": 124
     },
     {
       "type": "mixed_language",
@@ -115,13 +115,6 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "spell.iksyapunac_wave.name",
       "count": 2,
       "types": {
@@ -158,6 +151,13 @@
     },
     {
       "key": "item.13670.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2

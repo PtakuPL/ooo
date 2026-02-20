@@ -80222,5 +80222,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T21:09:36.611610Z"
+  },
+  "item.5460.desc": {
+    "src_hash": "a532c896c1e7082fcec87ff1946ae285",
+    "text": "Consente l'esplorazione subacquea",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:14:51.809598Z"
+  },
+  "item.5460.name": {
+    "src_hash": "7a8cc8c14b95e1ffddcfb1455eebb909",
+    "text": "elmo degli abissi",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:14:51.809966Z"
+  },
+  "item.562.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:14:51.814778Z"
+  },
+  "item.5647.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "muro di pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:14:51.815643Z"
+  },
+  "item.565.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:14:51.816000Z"
+  },
+  "item.5684.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "muro di pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:14:51.817245Z"
   }
 }

@@ -175014,5 +175014,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T22:24:05.288205Z"
+  },
+  "data.otservbr.global.npc.captain.haba.open.sea.L60.1352": {
+    "src_hash": "71fe91959aa011f89457c38f4d8e183e",
+    "text": "Нашли сте место |PLAYERNAME|!! Узмите себи кацигу дубине и идите да истражите {caves} тамо доле.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:46:50.563484Z"
+  },
+  "data.otservbr.global.npc.captain.harava.L87.949": {
+    "src_hash": "d73132f2878353df2f07230be0e0e6f2",
+    "text": "Добродошли на брод, путниче. Где могу да вас {sail} данас?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:46:50.564515Z"
   }
 }

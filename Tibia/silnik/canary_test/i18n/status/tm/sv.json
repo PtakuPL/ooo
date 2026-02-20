@@ -33078,5 +33078,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T16:38:42.842836Z"
+  },
+  "data.otservbr.global.npc.cobra.L53.1172": {
+    "src_hash": "064cd71852afeb595ee8028d8028b756",
+    "text": "Ge dig ut på förfallets väg!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:46:39.828412Z"
   }
 }

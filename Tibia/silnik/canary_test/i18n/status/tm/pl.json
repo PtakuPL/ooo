@@ -117662,5 +117662,229 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T16:31:58.069096Z"
+  },
+  "questlog.quest_10.mission_6.state_4": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Wróć do Azerus i zgłoś mu swoją misję.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:08.646197Z"
+  },
+  "questlog.quest_10.mission_6.state_5": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Poproś Azerus o misję.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:08.647232Z"
+  },
+  "questlog.quest_10.mission_7.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Poproś Palimutha o misję.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:08.648606Z"
+  },
+  "questlog.quest_10.mission_7.state_5": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Poproś Azerus o misję.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:08.650710Z"
+  },
+  "questlog.quest_10.mission_8.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Poproś Palimutha o misję.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:08.652049Z"
+  },
+  "questlog.quest_10.mission_8.state_3": {
+    "src_hash": "fa2ed0f5aaa65e682c01e59d81356bfd",
+    "text": "Wróć do Azerus i zgłoś mu swoją misję.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:08.653462Z"
+  },
+  "questlog.quest_10.mission_8.state_4": {
+    "src_hash": "1249761aead729b7a52b30070656ad4d",
+    "text": "Poproś Azerus o misję.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:08.654608Z"
+  },
+  "questlog.quest_31.mission_1.state_4": {
+    "src_hash": "0ef4d7f94a08900604a4beeee409741f",
+    "text": "Ukończyłeś zadanie!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:08.999130Z"
+  },
+  "questlog.quest_31.mission_12.state_4": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Ukończyłeś zadanie!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:09.006649Z"
+  },
+  "questlog.quest_31.mission_4.state_6": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Ukończyłeś zadanie!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:09.018250Z"
+  },
+  "questlog.quest_31.mission_5.state_4": {
+    "src_hash": "9dde70531761dee99b86a9aac17b52e8",
+    "text": "Ukończyłeś zadanie!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:09.020550Z"
+  },
+  "questlog.quest_10.mission_7.state_2": {
+    "src_hash": "fe0e78cb6a40e222fca587bcc5dbc1b1",
+    "text": "Zła strona: Yalahari (Azerus) wyśle ​​cię na nową misję, aby udać się do Zatopionej Dzielnicy i zabić Przywódców Quara, Inky'ego, Splashera i Sharptootha. Dobra strona: zamiast walczyć z jakimikolwiek przywódcami Quara, Palimuth wyśle ​​cię, abyś znalazł przyczynę agresywnego zachowania Quaras. Znajdź Maritimę i porozmawiaj z nią o Quarze, a ona wyjaśni, na czym polega ich problem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:21.103095Z"
+  },
+  "questlog.quest_10.mission_7.state_3": {
+    "src_hash": "1e4fdc659915eb097d93e598dad3f11f",
+    "text": "Wróć do Palimutha i zgłoś mu swoją misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:21.103531Z"
+  },
+  "questlog.quest_10.mission_7.state_4": {
+    "src_hash": "5bcb134294e0fb2885b2a082a25ce966",
+    "text": "Zabiłeś Quarabossów. Poproś Azerus o misję.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:21.104053Z"
+  },
+  "questlog.quest_10.mission_8.state_2": {
+    "src_hash": "c70c7412146125f78bd718a987376cdd",
+    "text": "Zła strona: Na potrzeby tej misji Yalahari prosi cię o udanie się do Dzielnicy Fabrycznej i odnalezienie kryształu wzorcowego, który będzie używany do dostarczania broni potrzebnej do przejęcia kontroli nad miastem. Dobra strona: Palimuth wyśle ​​cię tam, abyś użył kryształu do zaopatrzenia miasta w żywność.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:21.105264Z"
+  },
+  "questlog.quest_10.mission_9.name": {
+    "src_hash": "5828fc788959b84a5136deded2e8243f",
+    "text": "Mission 09: Decision",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:24.740531Z"
+  },
+  "questlog.quest_10.mission_9.state_1": {
+    "src_hash": "ff8f647e53532248178a1f7691ff985d",
+    "text": "Musisz teraz wybrać pomiędzy wsparciem Palimutha, a celem Yalahari. Aby wybrać dobrą stronę Palimutha, udaj się do niego i po prostu poproś go o misję. Podobnie, aby dołączyć do Yalahari (Azerus) (zła strona), podejdź do niego i powiedz to samo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:24.741471Z"
+  },
+  "questlog.quest_10.mission_9.state_2": {
+    "src_hash": "3a25445c9f2ee6c336a39167818715dc",
+    "text": "już zdecydowałeś!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:24.741754Z"
+  },
+  "questlog.quest_11.mission_1.description_dynamic": {
+    "src_hash": "e20ecd7ba813f4e84413de44a0bba2bd",
+    "text": "Dołączyłeś do '__PH0__'. Poproś Grizzly Adamsa o kilka zadań myśliwskich. Zdobyłeś już %d punktów. Aktualnie posiadasz %d punktów bossa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:24.742541Z"
+  },
+  "questlog.quest_11.mission_10.name": {
+    "src_hash": "68a18cf378e1ea5f42a1a86c88a16ea0",
+    "text": "Paw and Fur: Carniphilas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:27.548663Z"
+  },
+  "questlog.quest_11.mission_10.state_1": {
+    "src_hash": "3f2648a884235f0ba439126f3ebaef9e",
+    "text": "Udało Ci się upolować 150 drapieżników. Jeśli chcesz, możesz wykonać to zadanie jeszcze raz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:27.549183Z"
+  },
+  "questlog.quest_11.mission_10.state_2": {
+    "src_hash": "88e6f4080c56ab3a04dcfcebc4f1562f",
+    "text": "Udało Ci się upolować 150 drapieżników.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:27.549530Z"
+  },
+  "questlog.quest_11.mission_11.state_1": {
+    "src_hash": "1a702624471b34fa809b6ba8018ec984",
+    "text": "Udało ci się upolować 200 kamiennych golemów. Jeśli chcesz, możesz wykonać to zadanie jeszcze raz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:31.700605Z"
+  },
+  "questlog.quest_11.mission_11.state_2": {
+    "src_hash": "81f34ca15bdf0533eba68b8fcb292fd7",
+    "text": "Udało Ci się upolować 200 kamiennych golemów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:31.700974Z"
+  },
+  "questlog.quest_11.mission_12.name": {
+    "src_hash": "398e4e50b54d2c7a8467d500ba29c302",
+    "text": "Paw and Fur: Mammoths",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:31.701431Z"
+  },
+  "questlog.quest_11.mission_12.state_1": {
+    "src_hash": "a6155e5b6de8511ac31d50d522f68744",
+    "text": "Udało Ci się upolować 300 mamutów. Jeśli chcesz, możesz wykonać to zadanie jeszcze raz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:31.701930Z"
+  },
+  "questlog.quest_11.mission_12.state_2": {
+    "src_hash": "bc232ac9f92b898a89cb97edd7f409a9",
+    "text": "Udało Ci się upolować 300 mamutów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:31.702263Z"
+  },
+  "questlog.quest_11.mission_13.name": {
+    "src_hash": "955c92cbf2e8d4cc898245997d71b344",
+    "text": "Paw and Fur: Gnarlhounds",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:47:33.412606Z"
   }
 }

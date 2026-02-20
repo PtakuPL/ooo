@@ -152574,5 +152574,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T16:31:02.211060Z"
+  },
+  "spell.arrow_call.name": {
+    "src_hash": "1a831bddd744ae70e20fbd7309b9d4b3",
+    "text": "Llamada de flecha",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:39:59.928376Z"
+  },
+  "spell.arrow_call.words": {
+    "src_hash": "d9546660ea090e539b0691dfbc638b69",
+    "text": "exevo infir con",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:39:59.928669Z"
+  },
+  "spell.icicle_rune.words": {
+    "src_hash": "80e1afeec81da3a7dcaf5fc5f02dfb2c",
+    "text": "adori frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:40:02.138488Z"
+  },
+  "spell.energy_bomb_rune.words": {
+    "src_hash": "7c6e40a81355d51da81f9d0498d59b06",
+    "text": "adevo mas vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:40:02.138881Z"
   }
 }

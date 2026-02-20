@@ -1,54 +1,54 @@
 {
-  "timestamp": "2026-02-20T16:38:54.639778Z",
-  "window_start_utc": "2026-02-20T15:38:54.400593Z",
-  "window_end_utc": "2026-02-20T16:38:54.400593Z",
+  "timestamp": "2026-02-20T16:40:41.336561Z",
+  "window_start_utc": "2026-02-20T15:40:41.100892Z",
+  "window_end_utc": "2026-02-20T16:40:41.100892Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 275,
-  "suspicious_entries": 6975,
-  "guard_fail_entries": 33,
-  "guard_fail_sum": 3344,
+  "rejected_entries": 304,
+  "suspicious_entries": 7123,
+  "guard_fail_entries": 35,
+  "guard_fail_sum": 3424,
   "by_type": {
-    "identical_to_en": 213,
-    "word_salad": 8,
-    "mixed_language": 42,
+    "identical_to_en": 239,
+    "word_salad": 9,
+    "mixed_language": 44,
     "contains_tibia_proper_noun": 20,
     "mixed_scripts": 12,
     "cyrillic_latin_mix": 12
   },
   "by_source": {
-    "google_translate": 275
+    "google_translate": 304
   },
   "by_language": {
-    "es": 35,
+    "es": 51,
     "ro": 124,
     "it": 25,
     "ru": 12,
-    "pl": 79
+    "pl": 92
   },
   "by_category": {
-    "npc.json": 16,
+    "npc.json": 18,
     "items.json": 112,
     "monsters.json": 117,
-    "spells.json": 27,
+    "spells.json": 54,
     "server.json": 3
   },
   "by_severity": {
-    "CRITICAL": 221,
-    "HIGH": 54
+    "CRITICAL": 248,
+    "HIGH": 56
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 213
+      "count": 239
     },
     {
       "type": "mixed_language",
-      "count": 42
+      "count": 44
     },
     {
       "type": "contains_tibia_proper_noun",
@@ -64,7 +64,7 @@
     },
     {
       "type": "word_salad",
-      "count": 8
+      "count": 9
     }
   ],
   "top_keys": [
@@ -110,16 +110,16 @@
     },
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 8,
+      "count": 9,
       "types": {
-        "identical_to_en": 8
+        "identical_to_en": 9
       }
     },
     {
       "key": "npc.al_dee.stdmod_41",
-      "count": 8,
+      "count": 9,
       "types": {
-        "word_salad": 8
+        "word_salad": 9
       }
     },
     {
@@ -183,6 +183,20 @@
       }
     },
     {
+      "key": "spell.iksyapunac_wave.name",
+      "count": 4,
+      "types": {
+        "identical_to_en": 4
+      }
+    },
+    {
+      "key": "spell.mitmahseer_wave.name",
+      "count": 4,
+      "types": {
+        "identical_to_en": 4
+      }
+    },
+    {
       "key": "monster.old_pig.voice_2",
       "count": 3,
       "types": {
@@ -205,20 +219,6 @@
     },
     {
       "key": "item.10096.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.10180.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.10190.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

@@ -1,37 +1,37 @@
 {
-  "timestamp": "2026-02-20T21:30:40.996703Z",
-  "window_start_utc": "2026-02-20T20:30:40.231591Z",
-  "window_end_utc": "2026-02-20T21:30:40.231591Z",
+  "timestamp": "2026-02-20T21:31:27.717871Z",
+  "window_start_utc": "2026-02-20T20:31:26.892330Z",
+  "window_end_utc": "2026-02-20T21:31:26.892330Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 164,
-  "rejected_entries_raw": 403,
-  "suspicious_entries": 3391,
-  "suspicious_entries_raw": 25264,
+  "rejected_entries": 174,
+  "rejected_entries_raw": 413,
+  "suspicious_entries": 3399,
+  "suspicious_entries_raw": 25010,
   "guard_fail_entries": 129,
-  "guard_fail_sum": 3336,
+  "guard_fail_sum": 3337,
   "by_type": {
-    "identical_to_en": 140,
+    "identical_to_en": 150,
     "word_salad": 7,
     "fx_token": 3,
     "mixed_language": 7,
-    "contains_tibia_proper_noun": 6,
+    "contains_tibia_proper_noun": 7,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7
   },
   "by_source": {
-    "google_translate": 164
+    "google_translate": 174
   },
   "by_language": {
-    "es": 40,
+    "es": 45,
     "it": 8,
     "ro": 56,
     "sv": 15,
-    "pl": 38,
+    "pl": 43,
     "ru": 7
   },
   "by_category": {
@@ -44,16 +44,18 @@
     "items.json": 28,
     "server.json": 17,
     "spells.json": 33,
-    "quests.json": 3
+    "quests.json": 3,
+    "cpp.json": 5,
+    "achievements.json": 5
   },
   "by_severity": {
-    "CRITICAL": 147,
+    "CRITICAL": 157,
     "HIGH": 17
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 140
+      "count": 150
     },
     {
       "type": "word_salad",
@@ -64,16 +66,16 @@
       "count": 7
     },
     {
+      "type": "contains_tibia_proper_noun",
+      "count": 7
+    },
+    {
       "type": "mixed_scripts",
       "count": 7
     },
     {
       "type": "cyrillic_latin_mix",
       "count": 7
-    },
-    {
-      "type": "contains_tibia_proper_noun",
-      "count": 6
     },
     {
       "type": "fx_token",

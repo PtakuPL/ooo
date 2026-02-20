@@ -1,53 +1,18 @@
 {
-  "timestamp": "2026-02-20T21:30:35.678230Z",
+  "timestamp": "2026-02-20T21:31:22.052343Z",
   "checked_entries": 100,
-  "issues_found": 37,
+  "issues_found": 33,
   "issues_by_type": {
-    "identical_to_en": 21,
-    "identical_to_en_exempt": 3,
+    "identical_to_en": 17,
+    "identical_to_en_exempt": 6,
     "artifact_token": 16,
-    "suspicious_log_high": 56,
-    "suspicious_log_critical": 54,
-    "suspicious_log_low": 4,
-    "suspicious_rejected_critical": 131,
+    "suspicious_log_high": 53,
+    "suspicious_log_critical": 59,
+    "suspicious_log_low": 5,
+    "suspicious_rejected_critical": 141,
     "suspicious_rejected_high": 10
   },
   "issues": [
-    {
-      "key": "raid.water_buffalo.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo"
-    },
-    {
-      "key": "raid.sir_valorcrest.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "raid.mad_mage.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Mad Mage",
-      "translated": "Mad Mage"
-    },
-    {
-      "key": "raid.weakened_shlorg.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Weakened Shlorg",
-      "translated": "Weakened Shlorg"
-    },
-    {
-      "key": "raid.zevelon_duskbringer.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
     {
       "key": "otclient_modules.character_otui.tr_27",
       "lang": "ro",
@@ -271,6 +236,13 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "cpp.vocation.id_2",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Druid",
+      "translated": "Druid"
     }
   ],
   "threshold": 10,

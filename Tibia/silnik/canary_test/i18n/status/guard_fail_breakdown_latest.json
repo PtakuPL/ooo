@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:22:37.828860Z",
-  "window_start_utc": "2026-02-20T18:22:37.123791Z",
-  "window_end_utc": "2026-02-20T19:22:37.123791Z",
+  "timestamp": "2026-02-20T19:23:33.844857Z",
+  "window_start_utc": "2026-02-20T18:23:33.166141Z",
+  "window_end_utc": "2026-02-20T19:23:33.166141Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,14 +9,14 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 105,
-  "rejected_entries_raw": 366,
-  "suspicious_entries": 3267,
-  "suspicious_entries_raw": 27901,
-  "guard_fail_entries": 132,
-  "guard_fail_sum": 5739,
+  "rejected_entries_raw": 365,
+  "suspicious_entries": 3274,
+  "suspicious_entries_raw": 25126,
+  "guard_fail_entries": 134,
+  "guard_fail_sum": 5738,
   "by_type": {
-    "word_salad": 3,
     "identical_to_en": 95,
+    "word_salad": 3,
     "mixed_language": 7,
     "contains_tibia_proper_noun": 4
   },
@@ -31,10 +31,10 @@
   },
   "by_category": {
     "npc.json": 4,
-    "spells.json": 46,
     "items.json": 26,
     "monsters.json": 23,
     "server.json": 2,
+    "spells.json": 46,
     "quests.json": 1,
     "scripts.json": 3
   },
@@ -61,62 +61,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "spell.rotthingholy_ulus.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.single_ice_chain.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.podzillaphys_chain.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.rotthing_shaper.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.tarbaz_tp.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.quara_looter_small_icering.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.iksyapunac_wave.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.mitmahseer_wave.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
@@ -175,6 +119,62 @@
       "types": {
         "identical_to_en": 1,
         "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "spell.rotthingholy_ulus.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.single_ice_chain.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.podzillaphys_chain.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.rotthing_shaper.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.tarbaz_tp.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.quara_looter_small_icering.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.iksyapunac_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.mitmahseer_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
       }
     },
     {

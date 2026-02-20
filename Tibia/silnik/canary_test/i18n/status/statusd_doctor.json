@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-02-20T20:05:49.908575Z",
+  "timestamp": "2026-02-20T20:06:51.780800Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 2,
   "warnings_count": 13,
   "ok_count": 10,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=62702 rate=498.307% window=6.0h top_lang=ro:26767 per_lang=[ro:26767(1724.678%/critical),es:15277(418.433%/critical),ru:9574(384.035%/critical),pl:7638(524.948%/critical),it:2153(105.695%/critical)] per_domain=[items.json:40195(1777.753%/critical),npc.json:11059(196.012%/critical),monsters.json:9608(366.438%/critical),server.json:547(86.414%/critical),spells.json:423(486.207%/critical)]",
-    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5630.0 cycle_delta=5393 best_quality_drop=0.000% reason=active_time_without_quality_drop"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=62724 rate=496.706% window=6.0h top_lang=ro:26767 per_lang=[ro:26767(1724.678%/critical),es:15299(417.094%/critical),ru:9574(384.035%/critical),pl:7638(515.037%/critical),it:2153(105.695%/critical)] per_domain=[items.json:40195(1777.753%/critical),npc.json:11059(196.012%/critical),monsters.json:9608(366.438%/critical),server.json:547(86.414%/critical),spells.json:423(486.207%/critical)]",
+    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5631.0 cycle_delta=5396 best_quality_drop=0.000% reason=active_time_without_quality_drop"
   ],
   "warnings": [
     "BLACKLISTED_TARGET: es:server.json ma 6223 guard_fail w blackliście",
@@ -25,16 +25,16 @@
     "LANG_PARITY_WARN: tr has 48694 [EN]-backlog after 155h (should be ≤5000)"
   ],
   "ok": [
-    "heartbeat_fresh (118s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (105s)",
-    "guard_report_fresh (93s)",
-    "dispatch_fresh (91s)",
+    "heartbeat_fresh (52s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (38s)",
+    "guard_report_fresh (16s)",
+    "dispatch_fresh (14s)",
     "worker_pid_alive (114825)",
-    "worker_process_topology_ok (main=114825 matching=2 extras=1 desc=1 foreign=0 oldest_desc=90s oldest_foreign=0s status=single_descendant_observed)",
-    "queue_freshness_ok (212s, WARN>900s CRIT>1800s)",
+    "worker_subprocess_observed (main=114825 matching=4 extras=3 desc=3 foreign=0 oldest_desc=7s oldest_foreign=0s status=extra_descendants_detected)",
+    "queue_freshness_ok (8s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
     "forced_cmd_sla_ok (samples=0 sla_target=45s p95_roundtrip=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0)",
-    "repair_tuning_active (samples_2h=52)"
+    "repair_tuning_active (samples_2h=51)"
   ],
   "metrics_drift": {
     "available": true,
@@ -69,8 +69,8 @@
       "sr",
       "sv"
     ],
-    "active_minutes": 5629.981,
-    "cycle_delta": 5393,
+    "active_minutes": 5631.012,
+    "cycle_delta": 5396,
     "best_quality_drop_pct": 0.0,
     "thresholds": {
       "max_active_minutes": 1440.0,
@@ -104,26 +104,32 @@
   },
   "worker_process_watch": {
     "available": true,
-    "severity": "ok",
-    "status": "single_descendant_observed",
-    "reason": "single_descendant_worker_subprocess",
+    "severity": "info",
+    "status": "extra_descendants_detected",
+    "reason": "multiple_descendant_worker_processes",
     "main_pid": 114825,
     "matched_pids": [
       114825,
-      329181
+      331257,
+      331270,
+      331272
     ],
     "extra_pids": [
-      329181
+      331257,
+      331270,
+      331272
     ],
     "descendant_extra_pids": [
-      329181
+      331257,
+      331270,
+      331272
     ],
     "foreign_extra_pids": [],
-    "total_matching": 2,
-    "extra_count": 1,
-    "descendant_extra_count": 1,
+    "total_matching": 4,
+    "extra_count": 3,
+    "descendant_extra_count": 3,
     "foreign_extra_count": 0,
-    "oldest_descendant_age_s": 90,
+    "oldest_descendant_age_s": 7,
     "oldest_foreign_age_s": 0,
     "warn_persist_seconds": 900,
     "critical_persist_seconds": 1800

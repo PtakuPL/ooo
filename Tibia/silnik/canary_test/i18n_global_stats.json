@@ -1,8 +1,8 @@
 {
-  "total_cycles": 136,
+  "total_cycles": 137,
   "mode": "AUTO_TRANSLATE",
-  "category": "pl",
-  "last_update": "2026-02-20T21:05:59.953229",
+  "category": "es",
+  "last_update": "2026-02-20T21:07:10.101970",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,21 +26,14 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "pl",
-    "json_file": "quests.json",
-    "keys_to_translate": 7,
-    "guard_fail": 6,
+    "language": "es",
+    "json_file": "scripts.json",
+    "keys_to_translate": 86,
+    "guard_fail": 2,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 1,
-    "recent_examples": [
-      {
-        "key": "quests.actions_using_crystals.say_2",
-        "en": "BOOOOM!",
-        "translated": "BOOOOM!",
-        "source": "tm"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

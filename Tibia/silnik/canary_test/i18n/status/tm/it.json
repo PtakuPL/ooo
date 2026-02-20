@@ -75886,5 +75886,317 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T16:43:42.929255Z"
+  },
+  "npc.virgil.voice_1": {
+    "src_hash": "cf448ab6d7c715b449b2ad0bf53e3791",
+    "text": "Non dimenticare di depositare i tuoi soldi qui alla Tibian Bank prima di partire per l'avventura.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.793776Z"
+  },
+  "npc.walter_jaeger.store_inbox_full": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Assicurati di avere spazi liberi nella casella di posta del tuo negozio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.800001Z"
+  },
+  "npc.wentworth.greet_msg_1": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.801489Z"
+  },
+  "npc.wentworth.say_7": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Vorresti davvero depositare {} oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.812104Z"
+  },
+  "npc.wentworth.say_8": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Vorresti davvero depositare {} oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.812534Z"
+  },
+  "npc.willard.farewell_msg_1": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "Addio, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.814213Z"
+  },
+  "npc.willard.walkaway_msg_1": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "Addio, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.815183Z"
+  },
+  "npc.woblin.say_4": {
+    "src_hash": "e6bee9416879f7ba936e215f46880948",
+    "text": "Meraviglioso. Non credo però che troverai Dormovo vivo. Non sarebbe rimasto all'estero così a lungo senza riempire nuovamente il calamaio per i suoi appunti di ricerca. Ma almeno l'amuleto dovrebbe essere recuperato.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.820589Z"
+  },
+  "npc.wyda.say_3": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Non hai nessun biscotto che vorrei.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.821769Z"
+  },
+  "npc.wyrdin.say_10": {
+    "src_hash": "e04607d84a383e8cbb7db9ec770f05da",
+    "text": "Parola sbagliata.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.823755Z"
+  },
+  "npc.xodet.farewell_msg_1": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Arrivederci e torna di nuovo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.826600Z"
+  },
+  "npc.xodet.say_1": {
+    "src_hash": "b62a0dd738c7bd24999a8405be0ab6de",
+    "text": "Quindi mi chiedi un {{}} per iniziare la tua avventura?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.827138Z"
+  },
+  "npc.xodet.say_2": {
+    "src_hash": "42f4f7cc57059d2b7623f11666f8882b",
+    "text": "Che cosa? Te ne ho già regalato uno {{}}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.827729Z"
+  },
+  "npc.xodet.say_3": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturalmente, basta sfogliare la mia merce. Puoi anche guardare {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.828236Z"
+  },
+  "npc.xodet.walkaway_msg_1": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Arrivederci e torna di nuovo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.828715Z"
+  },
+  "npc.yaman.farewell_msg_1": {
+    "src_hash": "7fd76f3ebaa96874a4886fcf0191f156",
+    "text": "Addio, umano.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.837975Z"
+  },
+  "npc.yaman.multi_1": {
+    "src_hash": "d9a9d403c1ba480d6703285ada8cf247",
+    "text": "Ahahahah! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.838423Z"
+  },
+  "npc.yaman.multi_2": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, sembrava quasi la parola di saluto. Umani: sono carini!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.839022Z"
+  },
+  "npc.yaman.say_1": {
+    "src_hash": "17bb78642c4a960215206201b82d1feb",
+    "text": "Spingiti via, piccolo! Gli esseri umani non sono i benvenuti qui, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.839543Z"
+  },
+  "npc.yaman.say_10": {
+    "src_hash": "ab070b442bac37501609dc199dec3495",
+    "text": "Mi dispiace ma non hai l'articolo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.839962Z"
+  },
+  "npc.yaman.say_11": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Non hai nessun biscotto che vorrei.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.840349Z"
+  },
+  "npc.yaman.say_12": {
+    "src_hash": "cc2883eb38616560b3b92f372aef6541",
+    "text": "Vedi, buone azioni come questa... TU... TU GENERERAI IL MALE! Mi assicurerò che il maestro impari tutto questo!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.841100Z"
+  },
+  "npc.yaman.say_15": {
+    "src_hash": "63349cb1b00c4debabd768c4b022333a",
+    "text": "Mi dispiace, ma non hai il permesso di Malor per commerciare con me.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.842097Z"
+  },
+  "npc.yaman.say_2": {
+    "src_hash": "c8438eed58c1e91e40101ad7c73ffac1",
+    "text": "Fatti salutare, umano |PLAYERNAME|. Come può un umile jinn essere utile?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.842643Z"
+  },
+  "npc.yaman.say_3": {
+    "src_hash": "8f8eed58e9abea63201f88c2ed8d25b1",
+    "text": "Vuoi scambiare Stivali della fretta con Ala di pollo incantata?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.843278Z"
+  },
+  "npc.yaman.say_4": {
+    "src_hash": "13fe36b52e3bbdc572527d0ebac38ae0",
+    "text": "Vuoi scambiare 4 Elmi da Guerriero con Sudore da Guerriero?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.843781Z"
+  },
+  "npc.yaman.say_5": {
+    "src_hash": "d58f07993dd660f50c0fb266a68c10e4",
+    "text": "Vuoi scambiare 2 Elmi Reali con Spirito Guerriero",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.844221Z"
+  },
+  "npc.yaman.say_6": {
+    "src_hash": "eaad0a5043ad82f5f2c83477b8aa44c5",
+    "text": "Vuoi scambiare 3 Spade di Fuoco con Zolfo Magico",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.844680Z"
+  },
+  "npc.yaman.say_7": {
+    "src_hash": "0ee90e6c76f0d38275e7ffe1fb41bcaf",
+    "text": "Scambio Ala di pollo incantata con Stivali della fretta, Sudore del guerriero con 4 elmi del guerriero, Spirito combattivo con 2 elmi reali Zolfo magico con 3 spade di fuoco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.845342Z"
+  },
+  "npc.yaman.say_8": {
+    "src_hash": "23000cefc68cf16bbae59db4c21020da",
+    "text": "Hai portato i biscotti! Che carino da parte tua! Posso averne uno?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.845944Z"
+  },
+  "npc.yaman.walkaway_msg_1": {
+    "src_hash": "7fd76f3ebaa96874a4886fcf0191f156",
+    "text": "Addio, umano.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.846784Z"
+  },
+  "npc.yberius.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Quindi ricevi la protezione dello scherzo del destino, pellegrino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.850034Z"
+  },
+  "npc.yberius.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Quindi ricevi la protezione dello scherzo del destino, pellegrino.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.850516Z"
+  },
+  "npc.yberius.stdmod_11": {
+    "src_hash": "e3b52416cfd3d2c31709860d2eadf7c8",
+    "text": "Penso che tu abbia dimenticato di portare la tua puntata.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.851163Z"
+  },
+  "npc.yberius.stdmod_12": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Sì, sono stato informato su cosa fare. Siete pronti a ricevere la mia linea di preghiera?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.851880Z"
+  },
+  "npc.yberius.stdmod_14": {
+    "src_hash": "0f31738909d8dfb4a29c446aefa592e1",
+    "text": "Ti aspetterò.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.852372Z"
+  },
+  "npc.yberius.stdmod_16": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Hai già ricevuto la mia linea di preghiera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.852849Z"
+  },
+  "npc.yberius.stdmod_17": {
+    "src_hash": "5e61f13b59ea8fb125a6b53b8c7158a2",
+    "text": "Un palo benedetto? È una richiesta strana. Forse Quentin ne sa di più, dopo tutto è uno dei monaci più anziani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.853611Z"
+  },
+  "npc.yberius.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Non hai un bell'aspetto. Mi spiace, non posso aiutarti. Ma se stai cercando una protezione aggiuntiva dovresti andare sullo {pilgrimage} di Ash o ottenere la protezione di {twist of fate} qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:54:02.854698Z"
   }
 }

@@ -2,9 +2,9 @@
   "lang": "sr",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 24386,
+  "translated": 24388,
   "identical_to_en": 1081,
-  "placeholder_keys": 29200,
+  "placeholder_keys": 29198,
   "coverage_pct": 45.5,
   "issues_total": 11,
   "issues_by_type": {
@@ -93,5 +93,5 @@
     "length_ratio": 28,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-20T16:33:50.176104Z"
+  "validated_at": "2026-02-20T16:56:32.715876Z"
 }

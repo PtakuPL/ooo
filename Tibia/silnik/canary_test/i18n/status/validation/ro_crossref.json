@@ -1,10 +1,10 @@
 {
   "lang": "ro",
-  "coverage_pct": 43.0,
+  "coverage_pct": 43.1,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T16:33:34.476984Z",
+  "checked_at": "2026-02-20T16:56:13.842186Z",
   "issues_total": 419,
   "issues_by_type": {
     "consistency_in_language": 6,
@@ -887,6 +887,15 @@
       "en": "Ribbit!",
       "pl": "Kum!",
       "lang": "Ribbit!"
+    },
+    {
+      "key": "monster.makara.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "waddle waddle",
+      "pl": "gadać gadać",
+      "lang": "waddle waddle"
     },
     {
       "key": "monster.crimson_frog.voice_1",
@@ -3695,15 +3704,6 @@
       "en": "Chrrch!",
       "pl": "Chrr!",
       "lang": "Chrrch!"
-    },
-    {
-      "key": "monster.infernal_frog.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
     }
   ],
   "length_ratio_issues": [

@@ -1,10 +1,10 @@
 {
   "lang": "es",
-  "coverage_pct": 85.2,
+  "coverage_pct": 85.3,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T16:32:24.117329Z",
+  "checked_at": "2026-02-20T16:55:06.223757Z",
   "issues_total": 517,
   "issues_by_type": {
     "consistency_in_language": 72,
@@ -364,18 +364,17 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
-      "en": "golden rune emblem",
+      "en": "dead draken abomination",
       "variants": [
-        "Oroen rune emblem",
-        "emblema de runa dorada"
+        "Abominación draco muerta",
+        "draken abomination muerto"
       ],
       "variants_count": 2,
       "examples": [
-        "items:item.11604.name",
-        "items:item.11606.name",
-        "items:item.11608.name",
-        "items:item.11610.name",
-        "items:item.11612.name"
+        "items:item.11667.name",
+        "items:item.11668.name",
+        "items:item.11669.name",
+        "items:item.11670.name"
       ]
     },
     {

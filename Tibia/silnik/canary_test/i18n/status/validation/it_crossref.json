@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 52.2,
+  "coverage_pct": 52.4,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T16:33:08.139713Z",
+  "checked_at": "2026-02-20T16:55:50.716364Z",
   "issues_total": 429,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -407,6 +407,24 @@
       "en": "Zzrrkrrch!",
       "pl": "Zrrrkrrch!",
       "lang": "Zzrrkrrch!"
+    },
+    {
+      "key": "monster.worker_golem.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "klonk klonk klonk",
+      "pl": "klon, klon, klon",
+      "lang": "klonk klonk klonk"
+    },
+    {
+      "key": "monster.war_golem.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Klonk klonk klonk",
+      "pl": "klon, klon, klon",
+      "lang": "Klonk klonk klonk"
     },
     {
       "key": "monster.glooth_golem.voice_2",
@@ -2443,42 +2461,6 @@
       "lang": "D'oh?"
     },
     {
-      "key": "npc.uzon.keyword_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hold on!",
-      "pl": "Hold na!",
-      "lang": "Hold on!"
-    },
-    {
-      "key": "npc.uzon.stdmod_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hold on!",
-      "pl": "Hold na!",
-      "lang": "Hold on!"
-    },
-    {
-      "key": "npc.uzon_back.keyword_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hold on!",
-      "pl": "Hold na!",
-      "lang": "Hold on!"
-    },
-    {
-      "key": "npc.uzon_back.stdmod_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hold on!",
-      "pl": "Hold na!",
-      "lang": "Hold on!"
-    },
-    {
       "key": "npc.vascalir.stdmod_4",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3737,6 +3719,24 @@
       "en": "Sssssssss",
       "pl": "Sssssss",
       "lang": "Sssssssss"
+    },
+    {
+      "key": "scripts.northern_fishburger.say_1",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Smack.",
+      "pl": "Zadatki.",
+      "lang": "Smack."
+    },
+    {
+      "key": "scripts.offline_training.and",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "and",
+      "pl": "i",
+      "lang": "and"
     }
   ],
   "length_ratio_issues": [

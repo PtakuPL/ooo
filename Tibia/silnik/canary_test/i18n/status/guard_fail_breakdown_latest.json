@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:30:00.609988Z",
-  "window_start_utc": "2026-02-20T18:29:59.936725Z",
-  "window_end_utc": "2026-02-20T19:29:59.936725Z",
+  "timestamp": "2026-02-20T19:31:17.344905Z",
+  "window_start_utc": "2026-02-20T18:31:16.591475Z",
+  "window_end_utc": "2026-02-20T19:31:16.591475Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,15 +9,15 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 129,
-  "rejected_entries_raw": 345,
-  "suspicious_entries": 3322,
-  "suspicious_entries_raw": 25064,
-  "guard_fail_entries": 133,
-  "guard_fail_sum": 3186,
+  "rejected_entries_raw": 324,
+  "suspicious_entries": 3363,
+  "suspicious_entries_raw": 25171,
+  "guard_fail_entries": 131,
+  "guard_fail_sum": 3172,
   "by_type": {
     "identical_to_en": 109,
-    "contains_tibia_proper_noun": 6,
     "word_salad": 5,
+    "contains_tibia_proper_noun": 6,
     "mixed_language": 8,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7
@@ -26,19 +26,19 @@
     "google_translate": 129
   },
   "by_language": {
-    "ro": 35,
     "es": 23,
     "it": 24,
+    "ro": 35,
     "pl": 32,
     "ru": 7,
     "sv": 8
   },
   "by_category": {
-    "monsters.json": 23,
     "npc.json": 4,
     "server.json": 17,
     "items.json": 26,
     "spells.json": 53,
+    "monsters.json": 23,
     "quests.json": 3,
     "scripts.json": 3
   },
@@ -115,38 +115,6 @@
       }
     },
     {
-      "key": "monster.sorcerer_familiar.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
-      }
-    },
-    {
-      "key": "monster.knight_familiar.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
-      }
-    },
-    {
-      "key": "monster.paladin_familiar.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
-      }
-    },
-    {
-      "key": "monster.druid_familiar.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
-      }
-    },
-    {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
@@ -207,6 +175,38 @@
       "count": 2,
       "types": {
         "identical_to_en": 2
+      }
+    },
+    {
+      "key": "monster.sorcerer_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "monster.knight_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "monster.paladin_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "monster.druid_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
       }
     },
     {

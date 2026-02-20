@@ -118142,5 +118142,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T17:30:40.599380Z"
+  },
+  "questlog.quest_11.mission_14.state_2": {
+    "src_hash": "2390881906b8dd350356af833bfb3532",
+    "text": "Udało Ci się upolować 300 termitów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:30:28.138086Z"
+  },
+  "questlog.quest_11.mission_15.name": {
+    "src_hash": "4b40ae99828d7de59e3871cebd97e965",
+    "text": "Paw and Fur: Apes",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:30:31.107177Z"
+  },
+  "questlog.quest_11.mission_15.state_1": {
+    "src_hash": "9d20c98a32df994d621d32163241914e",
+    "text": "Udało Ci się upolować 300 małp. Jeśli chcesz, możesz wykonać to zadanie jeszcze raz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:30:31.107820Z"
   }
 }

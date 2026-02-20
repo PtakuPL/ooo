@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-20T19:26:49.561456Z",
+  "timestamp": "2026-02-20T19:30:46.328378Z",
   "priority_langs": [
     "es",
     "pl",
@@ -68,7 +68,7 @@
   "entries_total": 699,
   "entries_by_lang": {
     "es": 277,
-    "pl": 147,
+    "pl": 148,
     "cs": 641,
     "de": 659,
     "fr": 578,
@@ -243,13 +243,13 @@
     },
     {
       "lang": "pl",
-      "json_file": "cpp.json",
-      "identical_to_en": 8,
+      "json_file": "questlog.json",
+      "identical_to_en": 9,
       "domain_priority": 9
     },
     {
       "lang": "pl",
-      "json_file": "questlog.json",
+      "json_file": "cpp.json",
       "identical_to_en": 8,
       "domain_priority": 9
     },

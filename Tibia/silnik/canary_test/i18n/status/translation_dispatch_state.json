@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-20T19:38:09.689479Z",
-  "cycle_counter": 6147,
-  "last_target_key": "pl:otclient_data.json",
-  "last_pending_total": 3,
+  "timestamp": "2026-02-20T19:38:44.858357Z",
+  "cycle_counter": 6149,
+  "last_target_key": "es:startup.json",
+  "last_pending_total": 1,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 183,
@@ -11,7 +11,7 @@
   "skipped_guard_fail": 3,
   "guard_fail_blacklist": {
     "es:server.json": 6152,
-    "ro:monsters.json": 6149,
+    "ro:monsters.json": 6159,
     "pl:spells.json": 6153
   },
   "tier_config": {
@@ -38,7 +38,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 114,
+  "cache_cycle": 115,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,

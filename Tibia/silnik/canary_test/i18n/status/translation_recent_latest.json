@@ -1,42 +1,120 @@
 {
-  "timestamp": "2026-02-20T19:38:07.323356Z",
+  "timestamp": "2026-02-20T19:38:41.912959Z",
   "language": "es",
-  "json_file": "cpp.json",
-  "translated": 5,
+  "json_file": "npclib.json",
+  "translated": 18,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "cpp.augment.format_base",
-      "en": "{0} -> {1:+}% {2} {3}",
-      "translated": "{0} -> {1:+}% {2} {3}",
-      "source": "tm"
+      "key": "misc.bank_system.say_50",
+      "en": "You do not have enough gold.",
+      "translated": "No tienes suficiente oro.",
+      "source": "simple"
     },
     {
-      "key": "cpp.augment.format_with_value",
-      "en": "{0} -> {1:+}% {2}",
-      "translated": "{0} -> {1:+}% {2}",
-      "source": "tm"
+      "key": "misc.bank_system.say_51",
+      "en": "As you wish. Is there something else I can do for you?",
+      "translated": "Como desées. ¿Hay algo más que pueda hacer por ti?",
+      "source": "simple"
     },
     {
-      "key": "cpp.inspect.physical_plus",
-      "en": "{0} physical + {1}",
-      "translated": "{0} físico + {1}",
-      "source": "tm"
+      "key": "misc.bank_system.say_58",
+      "en": "As you wish. Is there something else I can do for you?",
+      "translated": "Como desées. ¿Hay algo más que pueda hacer por ti?",
+      "source": "simple"
     },
     {
-      "key": "cpp.player.look.guild_nick",
-      "en": "({0})",
-      "translated": "({0})",
-      "source": "tm"
+      "key": "misc.bank_system.say_65",
+      "en": "Fill in this field with person who receives your gold!",
+      "translated": "¡Rellena este campo con la persona que recibe tu oro!",
+      "source": "simple"
     },
     {
-      "key": "cpp.protocol.active_prey_desc",
-      "en": "{0} ({1} +{2}%, remaining {3})",
-      "translated": "{0} ({1} +{2}%, restante {3})",
-      "source": "tm"
+      "key": "misc.bank_system.say_67",
+      "en": "Alright, is there something else I can do for you?",
+      "translated": "Muy bien, ¿hay algo más que pueda hacer por ti?",
+      "source": "simple"
+    },
+    {
+      "key": "misc.bank_system.say_52",
+      "en": "I am sorry but it seems you are currently not in any guild.",
+      "translated": "Lo siento, pero parece que actualmente no estás en ningún gremio.",
+      "source": "google_translate"
+    },
+    {
+      "key": "misc.bank_system.say_53",
+      "en": "Only guild leaders or vice leaders can withdraw money from the guild account.",
+      "translated": "Sólo los líderes o vicelíderes del gremio pueden retirar dinero de la cuenta del gremio.",
+      "source": "google_translate"
+    },
+    {
+      "key": "misc.bank_system.say_54",
+      "en": "Are you sure you wish to withdraw {0} gold from your guild account?",
+      "translated": "¿Estás seguro de que deseas retirar {0} oro de tu cuenta de gremio?",
+      "source": "google_translate"
+    },
+    {
+      "key": "misc.bank_system.say_55",
+      "en": "There is not enough gold on your guild account.",
+      "translated": "No hay suficiente oro en tu cuenta de gremio.",
+      "source": "google_translate"
+    },
+    {
+      "key": "misc.bank_system.say_56",
+      "en": "Please tell me how much gold you would like to withdraw from your guild account.",
+      "translated": "Por favor dime cuánto oro te gustaría retirar de tu cuenta del gremio.",
+      "source": "google_translate"
+    },
+    {
+      "key": "misc.bank_system.say_57",
+      "en": "There is not enough gold on your guild account.",
+      "translated": "No hay suficiente oro en tu cuenta de gremio.",
+      "source": "google_translate"
+    },
+    {
+      "key": "misc.bank_system.say_59",
+      "en": "I am sorry but it seems you are currently not in any guild.",
+      "translated": "Lo siento, pero parece que actualmente no estás en ningún gremio.",
+      "source": "google_translate"
+    },
+    {
+      "key": "misc.bank_system.say_60",
+      "en": "Only guild leaders or vice leaders can transfer money from the guild account.",
+      "translated": "Sólo los líderes o vicelíderes del gremio pueden transferir dinero desde la cuenta del gremio.",
+      "source": "google_translate"
+    },
+    {
+      "key": "misc.bank_system.say_61",
+      "en": "There is not enough gold on your guild account.",
+      "translated": "No hay suficiente oro en tu cuenta de gremio.",
+      "source": "google_translate"
+    },
+    {
+      "key": "misc.bank_system.say_62",
+      "en": "Please tell me the amount of gold you would like to transfer to a guild.",
+      "translated": "Por favor dime la cantidad de oro que te gustaría transferir a un gremio.",
+      "source": "google_translate"
+    },
+    {
+      "key": "misc.bank_system.say_63",
+      "en": "There is not enough gold on your guild account.",
+      "translated": "No hay suficiente oro en tu cuenta de gremio.",
+      "source": "google_translate"
+    },
+    {
+      "key": "misc.bank_system.say_66",
+      "en": "This guild does not exist.",
+      "translated": "Este gremio no existe.",
+      "source": "google_translate"
+    },
+    {
+      "key": "misc.bank_system.say_7",
+      "en": "Please tell me how much gold you would like to withdraw.",
+      "translated": "Por favor dime cuánto oro te gustaría retirar.",
+      "source": "google_translate"
     }
   ]
 }

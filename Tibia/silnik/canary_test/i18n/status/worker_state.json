@@ -378,32 +378,141 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-20T19:38:10Z",
+  "generated_at_utc": "2026-02-20T19:38:45Z",
   "global": {
     "en_keys_total": 53586,
-    "errors_total": 2868,
+    "errors_total": 2870,
     "files_processed_total": 6443,
     "languages_total": 55
   },
   "legacy": {
     "i18n_global_stats": {
       "auto_translate": {
-        "guard_fail": 4,
-        "json_file": "client.json",
-        "keys_to_translate": 13,
-        "language": "pl",
-        "recent_examples": [],
-        "recent_translated": 0,
+        "guard_fail": 1,
+        "json_file": "npclib.json",
+        "keys_to_translate": 19,
+        "language": "es",
+        "recent_examples": [
+          {
+            "en": "You do not have enough gold.",
+            "key": "misc.bank_system.say_50",
+            "source": "simple",
+            "translated": "No tienes suficiente oro."
+          },
+          {
+            "en": "As you wish. Is there something else I can do for you?",
+            "key": "misc.bank_system.say_51",
+            "source": "simple",
+            "translated": "Como desées. ¿Hay algo más que pueda hacer por ti?"
+          },
+          {
+            "en": "As you wish. Is there something else I can do for you?",
+            "key": "misc.bank_system.say_58",
+            "source": "simple",
+            "translated": "Como desées. ¿Hay algo más que pueda hacer por ti?"
+          },
+          {
+            "en": "Fill in this field with person who receives your gold!",
+            "key": "misc.bank_system.say_65",
+            "source": "simple",
+            "translated": "¡Rellena este campo con la persona que recibe tu oro!"
+          },
+          {
+            "en": "Alright, is there something else I can do for you?",
+            "key": "misc.bank_system.say_67",
+            "source": "simple",
+            "translated": "Muy bien, ¿hay algo más que pueda hacer por ti?"
+          },
+          {
+            "en": "I am sorry but it seems you are currently not in any guild.",
+            "key": "misc.bank_system.say_52",
+            "source": "google_translate",
+            "translated": "Lo siento, pero parece que actualmente no estás en ningún gremio."
+          },
+          {
+            "en": "Only guild leaders or vice leaders can withdraw money from the guild account.",
+            "key": "misc.bank_system.say_53",
+            "source": "google_translate",
+            "translated": "Sólo los líderes o vicelíderes del gremio pueden retirar dinero de la cuenta del gremio."
+          },
+          {
+            "en": "Are you sure you wish to withdraw {0} gold from your guild account?",
+            "key": "misc.bank_system.say_54",
+            "source": "google_translate",
+            "translated": "¿Estás seguro de que deseas retirar {0} oro de tu cuenta de gremio?"
+          },
+          {
+            "en": "There is not enough gold on your guild account.",
+            "key": "misc.bank_system.say_55",
+            "source": "google_translate",
+            "translated": "No hay suficiente oro en tu cuenta de gremio."
+          },
+          {
+            "en": "Please tell me how much gold you would like to withdraw from your guild account.",
+            "key": "misc.bank_system.say_56",
+            "source": "google_translate",
+            "translated": "Por favor dime cuánto oro te gustaría retirar de tu cuenta del gremio."
+          },
+          {
+            "en": "There is not enough gold on your guild account.",
+            "key": "misc.bank_system.say_57",
+            "source": "google_translate",
+            "translated": "No hay suficiente oro en tu cuenta de gremio."
+          },
+          {
+            "en": "I am sorry but it seems you are currently not in any guild.",
+            "key": "misc.bank_system.say_59",
+            "source": "google_translate",
+            "translated": "Lo siento, pero parece que actualmente no estás en ningún gremio."
+          },
+          {
+            "en": "Only guild leaders or vice leaders can transfer money from the guild account.",
+            "key": "misc.bank_system.say_60",
+            "source": "google_translate",
+            "translated": "Sólo los líderes o vicelíderes del gremio pueden transferir dinero desde la cuenta del gremio."
+          },
+          {
+            "en": "There is not enough gold on your guild account.",
+            "key": "misc.bank_system.say_61",
+            "source": "google_translate",
+            "translated": "No hay suficiente oro en tu cuenta de gremio."
+          },
+          {
+            "en": "Please tell me the amount of gold you would like to transfer to a guild.",
+            "key": "misc.bank_system.say_62",
+            "source": "google_translate",
+            "translated": "Por favor dime la cantidad de oro que te gustaría transferir a un gremio."
+          },
+          {
+            "en": "There is not enough gold on your guild account.",
+            "key": "misc.bank_system.say_63",
+            "source": "google_translate",
+            "translated": "No hay suficiente oro en tu cuenta de gremio."
+          },
+          {
+            "en": "This guild does not exist.",
+            "key": "misc.bank_system.say_66",
+            "source": "google_translate",
+            "translated": "Este gremio no existe."
+          },
+          {
+            "en": "Please tell me how much gold you would like to withdraw.",
+            "key": "misc.bank_system.say_7",
+            "source": "google_translate",
+            "translated": "Por favor dime cuánto oro te gustaría retirar."
+          }
+        ],
+        "recent_translated": 18,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
-      "category": "pl",
+      "category": "es",
       "idle": {
         "last_scan": "2025-12-16T05:59:39.875505",
         "new_files_detected": 152,
         "quality_issues": 2875
       },
-      "last_update": "2026-02-20T20:38:10.353763",
+      "last_update": "2026-02-20T20:38:45.533054",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -422,7 +531,7 @@
         "registry_reconcile_adjustment": 53586
       },
       "mode": "AUTO_TRANSLATE",
-      "total_cycles": 114,
+      "total_cycles": 115,
       "translation_sync": {
         "json_file": "scripts.json",
         "keys_to_sync": 0,
@@ -440,7 +549,7 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "pl",
+      "category": "es",
       "detail": "cycle end",
       "eta_seconds": 0,
       "file": "-",
@@ -452,8 +561,8 @@
       },
       "stage": "cycle_end"
     },
-    "cycle": 114,
-    "heartbeat_at_utc": "2026-02-20T19:38:10Z",
+    "cycle": 115,
+    "heartbeat_at_utc": "2026-02-20T19:38:45Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

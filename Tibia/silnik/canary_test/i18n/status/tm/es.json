@@ -153678,5 +153678,149 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T18:58:02.902806Z"
+  },
+  "misc.bank_system.say_50": {
+    "src_hash": "fe091c6a368a6d0b1599b33455eb0293",
+    "text": "No tienes suficiente oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:30.988253Z"
+  },
+  "misc.bank_system.say_51": {
+    "src_hash": "2d8040b91b06b3a9806972dbeffd9a77",
+    "text": "Como desées. ¿Hay algo más que pueda hacer por ti?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:30.989379Z"
+  },
+  "misc.bank_system.say_58": {
+    "src_hash": "2d8040b91b06b3a9806972dbeffd9a77",
+    "text": "Como desées. ¿Hay algo más que pueda hacer por ti?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:30.992836Z"
+  },
+  "misc.bank_system.say_65": {
+    "src_hash": "1925084bdab11e2023393598880e4306",
+    "text": "¡Rellena este campo con la persona que recibe tu oro!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:30.996668Z"
+  },
+  "misc.bank_system.say_67": {
+    "src_hash": "a0e570ed761553fb2537a4fc5b6a51e0",
+    "text": "Muy bien, ¿hay algo más que pueda hacer por ti?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:30.998150Z"
+  },
+  "misc.bank_system.say_52": {
+    "src_hash": "c57b1e870215b4f06aa82b33171dc20c",
+    "text": "Lo siento, pero parece que actualmente no estás en ningún gremio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:33.775795Z"
+  },
+  "misc.bank_system.say_53": {
+    "src_hash": "0358cd302579864273dd1b1b81f6f12e",
+    "text": "Sólo los líderes o vicelíderes del gremio pueden retirar dinero de la cuenta del gremio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:33.776326Z"
+  },
+  "misc.bank_system.say_54": {
+    "src_hash": "ce3853ad8ba9e162452ef0403288a0e0",
+    "text": "¿Estás seguro de que deseas retirar {0} oro de tu cuenta de gremio?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:33.776781Z"
+  },
+  "misc.bank_system.say_55": {
+    "src_hash": "ef174b0bd56a85d2ca54b09f44df7a04",
+    "text": "No hay suficiente oro en tu cuenta de gremio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:33.777132Z"
+  },
+  "misc.bank_system.say_56": {
+    "src_hash": "ce2882f5828aed19f9a5bebe158ab7a9",
+    "text": "Por favor dime cuánto oro te gustaría retirar de tu cuenta del gremio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:37.601297Z"
+  },
+  "misc.bank_system.say_57": {
+    "src_hash": "ef174b0bd56a85d2ca54b09f44df7a04",
+    "text": "No hay suficiente oro en tu cuenta de gremio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:37.601649Z"
+  },
+  "misc.bank_system.say_59": {
+    "src_hash": "c57b1e870215b4f06aa82b33171dc20c",
+    "text": "Lo siento, pero parece que actualmente no estás en ningún gremio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:37.602082Z"
+  },
+  "misc.bank_system.say_60": {
+    "src_hash": "51be1d2886906a2efbb6077aa1cd824d",
+    "text": "Sólo los líderes o vicelíderes del gremio pueden transferir dinero desde la cuenta del gremio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:37.602544Z"
+  },
+  "misc.bank_system.say_61": {
+    "src_hash": "ef174b0bd56a85d2ca54b09f44df7a04",
+    "text": "No hay suficiente oro en tu cuenta de gremio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:37.602874Z"
+  },
+  "misc.bank_system.say_62": {
+    "src_hash": "80a348875c4550674a7da85ac7f56a22",
+    "text": "Por favor dime la cantidad de oro que te gustaría transferir a un gremio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:41.656213Z"
+  },
+  "misc.bank_system.say_63": {
+    "src_hash": "ef174b0bd56a85d2ca54b09f44df7a04",
+    "text": "No hay suficiente oro en tu cuenta de gremio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:41.656594Z"
+  },
+  "misc.bank_system.say_66": {
+    "src_hash": "0c15e581d4392f78000906f8cc0f71b0",
+    "text": "Este gremio no existe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:41.656880Z"
+  },
+  "misc.bank_system.say_7": {
+    "src_hash": "f355a66a40adb778f8e218cf45e255d3",
+    "text": "Por favor dime cuánto oro te gustaría retirar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:38:41.657244Z"
   }
 }

@@ -1457,11 +1457,11 @@
   },
   "npc.palomino.say_5": {
     "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
-    "text": "Have a nice trip!",
+    "text": "Drum bun!",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:46:54.126101Z"
+    "updated_at": "2026-02-20T18:20:14.540380Z"
   },
   "npc.palomino.say_9": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
@@ -69054,5 +69054,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:14:07.495863Z"
+  },
+  "npc.obi.stdmod_31": {
+    "src_hash": "c6111c0ce62b4701d6f63762fb96fc6e",
+    "text": "Ei bine, fără aur, fără înțelegere. Câștigă aur luptând cu {monsters} și ridicând lucrurile pe care le poartă. Vinde-l la {merchants} pentru a face profit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.499720Z"
+  },
+  "npc.obi.stdmod_9": {
+    "src_hash": "72f97516fb4d02e4719a7ea8bb221c60",
+    "text": "Regele a încurajat vânzătorii să călătorească aici, dar numai eu am îndrăznit să-mi asum riscul și a fost un risc!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.501590Z"
+  },
+  "npc.obi.walkaway_msg_1": {
+    "src_hash": "77bb511948fe892bc1857d82e9b46603",
+    "text": "Da, o zi bună.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.502181Z"
+  },
+  "npc.ocelus.say_1": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "Nu il ai...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.503985Z"
+  },
+  "npc.old_adall.stdmod_2": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Poate alta data.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.505128Z"
+  },
+  "npc.oldrak.say_11": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "Nu atunci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.506103Z"
+  },
+  "npc.oldrak.say_18": {
+    "src_hash": "ee6f327ef4505b5c658ab73887ad7185",
+    "text": "Nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.506871Z"
+  },
+  "npc.olrik.farewell_msg_1": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "A fost o plăcere să vă ajut, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.508933Z"
+  },
+  "npc.olrik.sendtrade_msg_1": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Aici. Nu uitați că trebuie să cumpărați și o etichetă dacă doriți să trimiteți un colet. Scrieți întotdeauna numele lui {receiver} în primul rând.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.510411Z"
+  },
+  "npc.oressa.voice_3": {
+    "src_hash": "a8e6cffd811556ef76d37795d6ad5445",
+    "text": "Vino la mine dacă ai nevoie de vindecare!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.527636Z"
+  },
+  "npc.ortheus.say_2": {
+    "src_hash": "92874d037552d6ed7c7552ac9eeebf3b",
+    "text": "Ar fi mai bine să pleci acum.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.528774Z"
+  },
+  "npc.padreia.say_7": {
+    "src_hash": "235c3e61bedc3e4295235cc4c6e633dc",
+    "text": "Atunci nu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.533971Z"
+  },
+  "npc.palomino.say_2": {
+    "src_hash": "074e62f45ae1a69ab94b899355f02edd",
+    "text": "Vrei să închiriezi un cal pentru o zi la prețul de 500 de aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.539337Z"
+  },
+  "npc.palomino.say_3": {
+    "src_hash": "f0784f215225463661ae1ba31070c042",
+    "text": "Mai întâi scapă de acele pete de sânge!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.539762Z"
+  },
+  "npc.palomino.say_6": {
+    "src_hash": "d43f165f7c95c0ba67cbd5a3adee00d4",
+    "text": "Ai deja un cal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.540763Z"
+  },
+  "npc.palomino.say_7": {
+    "src_hash": "2084cc8bc49ade730b05b460faf76e7c",
+    "text": "Nu ai suficienți bani pentru a închiria un cal!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.541328Z"
+  },
+  "npc.palomino.say_8": {
+    "src_hash": "72d1121f9156271e019454ccefd39ccb",
+    "text": "Îți voi oferi unul dintre cei cu experiență. Ai grijă! Atenție la ramuri joase.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:14.541871Z"
   }
 }

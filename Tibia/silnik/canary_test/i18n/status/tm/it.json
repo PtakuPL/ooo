@@ -78350,5 +78350,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:12:27.600306Z"
+  },
+  "item.36545.name": {
+    "src_hash": "3d7af4f42ed0f5d3a4847e2f3e624bff",
+    "text": "pavimento in marmo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:21.379783Z"
+  },
+  "item.36586.name": {
+    "src_hash": "98e50388df431cb56eb12949e5ac0074",
+    "text": "vecchia pergamena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:21.380590Z"
+  },
+  "item.3682.name": {
+    "src_hash": "a0c7ec247862e459788b61a19178b119",
+    "text": "piccolo abete",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:21.393912Z"
+  },
+  "item.3684.name": {
+    "src_hash": "9603a224b40d7b67210b78f2e390d00f",
+    "text": "ramo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:21.395234Z"
+  },
+  "item.36877.name": {
+    "src_hash": "2eaa316f6b07b80b4f5f7d2d9fe9ec7c",
+    "text": "strano idolo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:21.396702Z"
+  },
+  "item.37058.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Ricordo del Museo Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:20:21.409892Z"
   }
 }

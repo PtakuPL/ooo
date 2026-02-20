@@ -1,41 +1,40 @@
 {
-  "timestamp": "2026-02-20T18:19:48.986489Z",
-  "window_start_utc": "2026-02-20T17:19:48.360328Z",
-  "window_end_utc": "2026-02-20T18:19:48.360328Z",
+  "timestamp": "2026-02-20T18:21:01.037377Z",
+  "window_start_utc": "2026-02-20T17:21:00.386311Z",
+  "window_end_utc": "2026-02-20T18:21:00.386311Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 246,
-  "rejected_entries_raw": 403,
-  "suspicious_entries": 3852,
-  "suspicious_entries_raw": 21047,
+  "rejected_entries": 225,
+  "rejected_entries_raw": 361,
+  "suspicious_entries": 3832,
+  "suspicious_entries_raw": 21183,
   "guard_fail_entries": 119,
-  "guard_fail_sum": 5130,
+  "guard_fail_sum": 5084,
   "by_type": {
-    "identical_to_en": 209,
-    "mixed_language": 20,
+    "identical_to_en": 188,
     "word_salad": 7,
+    "mixed_language": 20,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7,
     "contains_tibia_proper_noun": 9,
     "fx_token": 3
   },
   "by_source": {
-    "google_translate": 246
+    "google_translate": 225
   },
   "by_language": {
-    "ro": 98,
     "es": 49,
     "pl": 49,
     "it": 35,
     "ru": 7,
+    "ro": 77,
     "sv": 8
   },
   "by_category": {
-    "monsters.json": 43,
     "spells.json": 73,
     "npc.json": 4,
     "quests.json": 3,
@@ -51,16 +50,17 @@
     "php.json": 3,
     "modules.json": 2,
     "talkactions.json": 6,
-    "items.json": 24
+    "items.json": 24,
+    "monsters.json": 22
   },
   "by_severity": {
-    "CRITICAL": 216,
+    "CRITICAL": 195,
     "HIGH": 30
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 209
+      "count": 188
     },
     {
       "type": "mixed_language",
@@ -107,14 +107,14 @@
       }
     },
     {
-      "key": "spell.makara_watersplash.name",
+      "key": "spell.rotthingholy_ulus.name",
       "count": 3,
       "types": {
         "identical_to_en": 3
       }
     },
     {
-      "key": "spell.rotthingholy_ulus.name",
+      "key": "spell.makara_watersplash.name",
       "count": 3,
       "types": {
         "identical_to_en": 3
@@ -148,55 +148,6 @@
       }
     },
     {
-      "key": "spell.urmahlullu_ring.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.quara_raider_icering.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.zamulosh_tp.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.bulltaur_ewave.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.rotthing_explo.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.iksyapunac_wave.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.mitmahseer_wave.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
@@ -204,7 +155,21 @@
       }
     },
     {
+      "key": "spell.urmahlullu_ring.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
       "key": "spell.single_ice_chain.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.quara_raider_icering.name",
       "count": 2,
       "types": {
         "identical_to_en": 2
@@ -225,7 +190,21 @@
       }
     },
     {
+      "key": "spell.zamulosh_tp.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
       "key": "spell.tarbaz_tp.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.bulltaur_ewave.name",
       "count": 2,
       "types": {
         "identical_to_en": 2
@@ -236,6 +215,29 @@
       "count": 2,
       "types": {
         "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.rotthing_explo.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.ravennouslavalurkertarget.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.tenebris_ultimate.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
       }
     }
   ]

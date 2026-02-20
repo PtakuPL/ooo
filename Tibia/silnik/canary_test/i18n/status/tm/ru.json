@@ -38206,5 +38206,61 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:20:55.891601Z"
+  },
+  "monster.animated_rhino.name": {
+    "src_hash": "056e94112c574ef9c8fa6cd89849ec27",
+    "text": "Аниматед Стоне RhiНет",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:21:53.549369Z"
+  },
+  "monster.norgle_glacierbeard.name": {
+    "src_hash": "b25a51bb169604a46fcf1b14d11f3701",
+    "text": "Нетrgle Глакиербеард",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:21:53.655074Z"
+  },
+  "monster.norgle_glacierbeard.desc": {
+    "src_hash": "b25a51bb169604a46fcf1b14d11f3701",
+    "text": "Нетrgle Глакиербеард",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:21:53.657006Z"
+  },
+  "monster.gnorre_chyllson.name": {
+    "src_hash": "7c32303e589d4d00d36060228150c708",
+    "text": "GНетrre Чйллсон",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:21:53.669925Z"
+  },
+  "monster.gnorre_chyllson.desc": {
+    "src_hash": "7c32303e589d4d00d36060228150c708",
+    "text": "GНетrre Чйллсон",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:21:53.672001Z"
+  },
+  "monster.lost_gnome.name": {
+    "src_hash": "7a18ee63cd1bb81fe2a4e20c64aad692",
+    "text": "Лост GНетme",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:21:53.901589Z"
+  },
+  "monster.gnome_pack_crawler.name": {
+    "src_hash": "b0f1fa858642799eaf8fb9a3edf56448",
+    "text": "GНетme Пакк Кравлер",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:21:53.907461Z"
   }
 }

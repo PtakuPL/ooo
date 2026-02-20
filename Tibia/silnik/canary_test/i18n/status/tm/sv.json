@@ -36710,5 +36710,117 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:12:41.089809Z"
+  },
+  "npc.ser_tybald.stdmod_12": {
+    "src_hash": "8f64ff0dc19109a2bbe1f2facbcf7cfd",
+    "text": "En mycket egensinnig ung man, även om jag uppskattar hans hängivenhet för hantverket att tillverka drycker. \\z\n\t\tIngen respekt för högre auktoritet eller ålder alls! Utom kanske för en liten svag punkt för Mr Morris.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:22:06.346895Z"
+  },
+  "npc.ser_tybald.stdmod_13": {
+    "src_hash": "bb307923d19e6276118a25b4ce47a266",
+    "text": "En konstig ung man. Han verkar driven, enligt mig. Med vilken kraft vet jag inte. \\z\n\t\tJag antar att världen behöver äventyrare som honom.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:22:06.348002Z"
+  },
+  "npc.ser_tybald.stdmod_14": {
+    "src_hash": "0b92ef836bb0fa26d11a4550048f20f4",
+    "text": "Förlösa sin själ genom att bli kontorist? Inte särskilt troligt. En gång pirat, alltid pirat. \\z\n\t\tMen han är en charmig gammal skurk.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:22:06.348973Z"
+  },
+  "npc.ser_tybald.stdmod_16": {
+    "src_hash": "902b5d31d369e5d04ec4f6158fd4d95c",
+    "text": "Han är skicklig inom kampsport. En mycket skicklig lärare i trollformler för riddare och paladiner. \\z\n\t\tOm det är ditt kall, bör du prata med Ser Tybald.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:22:06.350284Z"
+  },
+  "npc.ser_tybald.stdmod_17": {
+    "src_hash": "c82b0aad3e136b13688f992a06d6be31",
+    "text": "Ah, ja. Reste med Plunderpurse mycket som jag minns. Kapten Plunderpurse alltså. \\z\n\t\t\tHade huvudet fullt av siffror och statistik, den där pojken.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:22:06.351328Z"
+  },
+  "npc.ser_tybald.stdmod_4": {
+    "src_hash": "4b0f7028b894fcff896bed52c1e4abaf",
+    "text": "Jag kan lära dig {healing spells}, {support spells} och {attack spells}. \\z\n\t\tVilken typ av besvärjelse vill du lära dig?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:22:06.352401Z"
+  },
+  "npc.ser_tybald.stdmod_6": {
+    "src_hash": "44ca56ea100283d3a8307a98b4af3c69",
+    "text": "Lyssnade du inte? Jag är lärare i druid- och trollkarlsbesvärjelser för nivå 8 till 18. \\z\n\t\tJag lär unga äventyrare trollformler de kan använda när de väl har rätt kallelse - druid eller trollkarl.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:22:06.353860Z"
+  },
+  "npc.ser_tybald.stdmod_7": {
+    "src_hash": "acefac1b3eccbd6ea4d08ab12deb5507",
+    "text": "Jag har en gammal vän där. Har inte hört från honom på ett tag.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:22:06.354819Z"
+  },
+  "npc.ser_tybald.stdmod_8": {
+    "src_hash": "f1ba5e2a1b4d8a9622d9c95c6441edf6",
+    "text": "Åh, det är inte så illa här, tro mig. Jag får åtminstone alltid unga och entusiastiska lärjungar! \\z\n\t\tÄven om jag måste erkänna att jag saknar vidderna på Tibians slätter. <sighs>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:22:06.356181Z"
+  },
+  "npc.ser_tybald.stdmod_9": {
+    "src_hash": "55daa5399f2bd04c879447383de167bc",
+    "text": "En snäll gammal jägare. Han älskar att se ungt liv runt, ta sig an landets vägar och läggningar. \\z\n\t\tOm du har några frågor, fråga Inigo om hjälp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:22:06.357347Z"
+  },
+  "npc.serafin.say_2": {
+    "src_hash": "92874d037552d6ed7c7552ac9eeebf3b",
+    "text": "Det är bättre för dig att gå nu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:22:06.358228Z"
+  },
+  "npc.shanar.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Adjö, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:22:06.367305Z"
+  },
+  "npc.shanar.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:22:06.367863Z"
+  },
+  "npc.shanar.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Hälsningar, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:22:06.368311Z"
   }
 }

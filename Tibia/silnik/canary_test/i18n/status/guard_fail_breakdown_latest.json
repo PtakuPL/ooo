@@ -1,54 +1,50 @@
 {
-  "timestamp": "2026-02-20T22:21:34.930669Z",
-  "window_start_utc": "2026-02-20T21:21:33.686833Z",
-  "window_end_utc": "2026-02-20T22:21:33.686833Z",
+  "timestamp": "2026-02-20T22:22:48.886682Z",
+  "window_start_utc": "2026-02-20T21:22:47.857967Z",
+  "window_end_utc": "2026-02-20T22:22:47.857967Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 159,
-  "rejected_entries_raw": 339,
-  "suspicious_entries": 3135,
-  "suspicious_entries_raw": 28069,
-  "guard_fail_entries": 109,
-  "guard_fail_sum": 7517,
+  "rejected_entries": 150,
+  "rejected_entries_raw": 328,
+  "suspicious_entries": 3153,
+  "suspicious_entries_raw": 25301,
+  "guard_fail_entries": 110,
+  "guard_fail_sum": 7499,
   "by_type": {
-    "mixed_scripts": 7,
-    "cyrillic_latin_mix": 7,
-    "contains_tibia_proper_noun": 7,
-    "word_salad": 5,
     "identical_to_en": 140,
-    "mixed_language": 7
+    "mixed_language": 7,
+    "word_salad": 3,
+    "contains_tibia_proper_noun": 5
   },
   "by_source": {
-    "google_translate": 159
+    "google_translate": 150
   },
   "by_language": {
-    "ru": 7,
-    "it": 8,
-    "es": 39,
     "sv": 15,
+    "es": 39,
+    "it": 6,
     "ro": 49,
     "pl": 41
   },
   "by_category": {
-    "spells.json": 33,
-    "quests.json": 2,
-    "npc.json": 4,
     "server.json": 10,
+    "npc.json": 4,
     "books.json": 1,
     "otclient_modules.json": 30,
     "scripts.json": 11,
     "monsters.json": 30,
     "cpp.json": 5,
     "achievements.json": 5,
-    "items.json": 28
+    "items.json": 28,
+    "spells.json": 26
   },
   "by_severity": {
-    "HIGH": 14,
-    "CRITICAL": 145
+    "CRITICAL": 143,
+    "HIGH": 7
   },
   "top_types": [
     {
@@ -56,93 +52,19 @@
       "count": 140
     },
     {
-      "type": "mixed_scripts",
-      "count": 7
-    },
-    {
-      "type": "cyrillic_latin_mix",
-      "count": 7
-    },
-    {
-      "type": "contains_tibia_proper_noun",
-      "count": 7
-    },
-    {
       "type": "mixed_language",
       "count": 7
     },
     {
-      "type": "word_salad",
+      "type": "contains_tibia_proper_noun",
       "count": 5
+    },
+    {
+      "type": "word_salad",
+      "count": 3
     }
   ],
   "top_keys": [
-    {
-      "key": "spell.furyosa_deathball.name",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "spell.quara_constrictor_electrify.name",
-      "count": 3,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1,
-        "mixed_language": 1
-      }
-    },
-    {
-      "key": "spell.prince_drazzak_paladin.name",
-      "count": 3,
-      "types": {
-        "contains_tibia_proper_noun": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "spell.quara_constrictor_freeze.name",
-      "count": 2,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "spell.ravennouslavalurkertarget.name",
-      "count": 2,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "spell.tenebris_ultimate.name",
-      "count": 2,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "spell.lava_golem_soulfire2.name",
-      "count": 2,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
     {
       "key": "data.otservbr.global.npc.anerui.L71.1487",
       "count": 2,
@@ -152,6 +74,13 @@
     },
     {
       "key": "data.otservbr.global.npc.brasith.L59.1211",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2
@@ -223,6 +152,59 @@
     },
     {
       "key": "item.10391.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.12742.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.13670.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "monster.sorcerer_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "monster.knight_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "monster.paladin_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "monster.druid_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "spell.iksyapunac_wave.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

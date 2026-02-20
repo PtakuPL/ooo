@@ -81814,5 +81814,229 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T23:25:15.238582Z"
+  },
+  "otclient_modules.character_otui.tr_55": {
+    "src_hash": "fc25cde969a2a9c8d9fec8eeb0b5e50f",
+    "text": "Danno aggiuntivo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:35.716251Z"
+  },
+  "otclient_modules.character_otui.tr_56": {
+    "src_hash": "7fcbebe44a3ba2d162be939560e75688",
+    "text": "Opportunità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:35.716673Z"
+  },
+  "otclient_modules.cyclopedia_widgets_otui.tr_31": {
+    "src_hash": "797e65b9c5cd0da25a932f2b0947b94b",
+    "text": "Stivali",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:35.768700Z"
+  },
+  "otclient_modules.items.tr_31": {
+    "src_hash": "797e65b9c5cd0da25a932f2b0947b94b",
+    "text": "Stivali",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:35.900388Z"
+  },
+  "otclient_modules.prey.tr_14": {
+    "src_hash": "b24ce0cd392a5b0b8dedc66c25213594",
+    "text": "Gratuito",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:35.941562Z"
+  },
+  "otclient_modules.prey.tr_17": {
+    "src_hash": "b24ce0cd392a5b0b8dedc66c25213594",
+    "text": "Gratuito",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:35.942078Z"
+  },
+  "otclient_modules.skills_otui.tr_20": {
+    "src_hash": "c58de8415b504a6ffa5d0b14967f91bb",
+    "text": "Assalto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:35.970588Z"
+  },
+  "otclient_modules.skills_otui.tr_21": {
+    "src_hash": "fc25cde969a2a9c8d9fec8eeb0b5e50f",
+    "text": "Danno aggiuntivo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:35.971110Z"
+  },
+  "otclient_modules.skills_otui.tr_22": {
+    "src_hash": "7fcbebe44a3ba2d162be939560e75688",
+    "text": "Opportunità",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:35.971574Z"
+  },
+  "otclient_modules.skills_otui.tr_28": {
+    "src_hash": "3d92095304f260f4a17317dfb05209fe",
+    "text": "Valore di attacco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:35.973127Z"
+  },
+  "otclient_modules.skills_otui.tr_7": {
+    "src_hash": "ffad71d6db9adb50cc21052c8226cb69",
+    "text": "Valore dell'armatura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:35.982203Z"
+  },
+  "otclient_modules.skills_otui.tr_8": {
+    "src_hash": "976de6de5004ed522085a5e4be455707",
+    "text": "Valore della difesa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:35.982871Z"
+  },
+  "otclient_modules.character.tr_73": {
+    "src_hash": "2d0c23ba8b32b1118eb61df85552ae8b",
+    "text": "Statistiche sugli attacchi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:39.375687Z"
+  },
+  "otclient_modules.character.tr_74": {
+    "src_hash": "401610fb5e01cdaf3a0c67f32b858c38",
+    "text": "Statistiche di combattimento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:39.376013Z"
+  },
+  "otclient_modules.character.tr_75": {
+    "src_hash": "baee7907ee5949952b3e0f34ad532b7d",
+    "text": "Statistiche dei personaggi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:39.376386Z"
+  },
+  "otclient_modules.character.tr_76": {
+    "src_hash": "c92ad71f199aa86db4dc69a0ebcdf34f",
+    "text": "Statistiche generali",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:45.273987Z"
+  },
+  "otclient_modules.character.tr_77": {
+    "src_hash": "b0ff400dd8b2803e52487b21ccef0f8c",
+    "text": "Hai il %s percento da completare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:45.275334Z"
+  },
+  "otclient_modules.character.tr_78": {
+    "src_hash": "b0ff400dd8b2803e52487b21ccef0f8c",
+    "text": "Hai il %s percento da completare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:45.276627Z"
+  },
+  "otclient_modules.character.tr_79": {
+    "src_hash": "686d4ebf33f5dd41a66565edbdcc74fe",
+    "text": "Hai il %s percento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:45.277471Z"
+  },
+  "otclient_modules.character.tr_8": {
+    "src_hash": "62eaa5650c462dd0fba71d9d2d159f0f",
+    "text": "Trascendenza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:45.277998Z"
+  },
+  "otclient_modules.character.tr_80": {
+    "src_hash": "7d2c99ec2c6bfa57eaa477689d4c0f86",
+    "text": "Non puoi ricevere esperienza e bottino dai mostri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:51.772663Z"
+  },
+  "otclient_modules.character.tr_81": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "Ti restano %s ore e %s minuti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:51.773856Z"
+  },
+  "otclient_modules.character.tr_82": {
+    "src_hash": "c9fabc9f075a2ea68f92b5bedbc93aac",
+    "text": "Guadagni solo 50%% esperienza e non puoi ottenere bottino dai mostri",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:51.787277Z"
+  },
+  "otclient_modules.character.tr_83": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "Ti restano %s ore e %s minuti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:51.788321Z"
+  },
+  "otclient_modules.character.tr_84": {
+    "src_hash": "37f438e61c309c1f880c3bc228758207",
+    "text": "Non guadagnerai 50%% esperienza in più perché non sei un giocatore premium, ora riceverai solo 1x punti esperienza",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:51.789967Z"
+  },
+  "otclient_modules.character.tr_85": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "Ti restano %s ore e %s minuti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:55.082853Z"
+  },
+  "otclient_modules.character.tr_86": {
+    "src_hash": "272fc6b45f857121e43f3bc445b56563",
+    "text": "Ora guadagnerai 50%% esperienza in più",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:55.083506Z"
+  },
+  "otclient_modules.character.tr_87": {
+    "src_hash": "b4cc0c028355a4c65f1dc582c9cfec2d",
+    "text": "Ti restano %s ore e %s minuti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:34:55.083959Z"
   }
 }

@@ -1,40 +1,39 @@
 {
-  "timestamp": "2026-02-20T23:34:01.638324Z",
-  "window_start_utc": "2026-02-20T22:34:00.361532Z",
-  "window_end_utc": "2026-02-20T23:34:00.361532Z",
+  "timestamp": "2026-02-20T23:35:58.727667Z",
+  "window_start_utc": "2026-02-20T22:35:57.437468Z",
+  "window_end_utc": "2026-02-20T23:35:57.437468Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 118,
-  "rejected_entries_raw": 127,
-  "suspicious_entries": 3926,
-  "suspicious_entries_raw": 8903,
+  "rejected_entries": 110,
+  "rejected_entries_raw": 118,
+  "suspicious_entries": 3942,
+  "suspicious_entries_raw": 8883,
   "guard_fail_entries": 87,
-  "guard_fail_sum": 2313,
+  "guard_fail_sum": 2247,
   "by_type": {
-    "identical_to_en": 103,
-    "mixed_language": 11,
+    "identical_to_en": 96,
     "contains_tibia_proper_noun": 1,
+    "mixed_language": 10,
     "mixed_scripts": 3,
     "cyrillic_latin_mix": 3,
     "word_salad": 1
   },
   "by_source": {
-    "google_translate": 118
+    "google_translate": 110
   },
   "by_language": {
-    "sv": 13,
     "es": 20,
     "it": 10,
     "ro": 42,
+    "sv": 5,
     "pl": 29,
     "ru": 4
   },
   "by_category": {
-    "server.json": 9,
     "npc.json": 3,
     "otclient_modules.json": 30,
     "scripts.json": 10,
@@ -46,20 +45,21 @@
     "talkactions.json": 4,
     "client.json": 2,
     "php.json": 7,
-    "items.json": 22
+    "items.json": 22,
+    "server.json": 1
   },
   "by_severity": {
-    "CRITICAL": 104,
-    "HIGH": 14
+    "CRITICAL": 97,
+    "HIGH": 13
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 103
+      "count": 96
     },
     {
       "type": "mixed_language",
-      "count": 11
+      "count": 10
     },
     {
       "type": "mixed_scripts",
@@ -79,13 +79,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "data.otservbr.global.npc.anerui.L71.1487",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
@@ -203,21 +196,28 @@
       }
     },
     {
-      "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
+      "key": "otclient_modules.addserver.tr_1",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "data.otservbr.global.npc.a.sweaty.cyclops.L228.69",
+      "key": "otclient_modules.calendar.otui_text_1",
       "count": 1,
       "types": {
-        "mixed_language": 1
+        "identical_to_en": 1
       }
     },
     {
-      "key": "data.otservbr.global.npc.anerui.L72.1488",
+      "key": "otclient_modules.character_otui.tr_32",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "otclient_modules.characterlist.tr_2",
       "count": 1,
       "types": {
         "identical_to_en": 1

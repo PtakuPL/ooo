@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T23:33:59.832890Z",
+  "timestamp": "2026-02-20T23:35:56.924063Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 50,
-  "cache_misses": 2,
-  "file_cache_hits": 1974,
-  "file_cache_misses": 2,
+  "cache_hits": 49,
+  "cache_misses": 3,
+  "file_cache_hits": 1972,
+  "file_cache_misses": 4,
   "langs": {
     "ar": {
       "sig": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771630370652131270,
+          1771630547681659835,
           1847178
         ],
         [
@@ -7422,7 +7422,7 @@
         [
           "otclient_data.json",
           1,
-          1771074893937029553,
+          1771630467870423969,
           4527
         ],
         [
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771630370652131270,
+            1771630547681659835,
             1847178
           ],
           "row": {
@@ -7845,7 +7845,7 @@
         "otclient_data.json": {
           "sig": [
             1,
-            1771074893937029553,
+            1771630467870423969,
             4527
           ],
           "row": {
@@ -16047,8 +16047,8 @@
         [
           "otclient_modules.json",
           1,
-          1771609202097922914,
-          137423
+          1771630495286711826,
+          137353
         ],
         [
           "otclient_src.json",
@@ -16134,17 +16134,17 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 28252,
+        "translated_keys": 28280,
         "english_copy_keys": 2127,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 52.72,
+        "completion_pct": 52.77,
         "server_keys": 49731,
         "server_translated": 26889,
         "server_pct": 54.07,
         "client_keys": 3855,
-        "client_translated": 1363,
-        "client_pct": 35.36
+        "client_translated": 1391,
+        "client_pct": 36.08
       },
       "files": {
         "achievements.json": {
@@ -16486,12 +16486,12 @@
         "otclient_modules.json": {
           "sig": [
             1,
-            1771609202097922914,
-            137423
+            1771630495286711826,
+            137353
           ],
           "row": {
             "total_reference_keys": 1987,
-            "translated_keys": 720,
+            "translated_keys": 748,
             "english_copy_keys": 78,
             "missing_keys": 0,
             "missing_files": 0
@@ -27660,8 +27660,8 @@
         [
           "books.json",
           1,
-          1771609207850509746,
-          333840
+          1771630504139804407,
+          334003
         ],
         [
           "chatchannels.json",
@@ -27923,8 +27923,8 @@
         "books.json": {
           "sig": [
             1,
-            1771609207850509746,
-            333840
+            1771630504139804407,
+            334003
           ],
           "row": {
             "total_reference_keys": 1403,

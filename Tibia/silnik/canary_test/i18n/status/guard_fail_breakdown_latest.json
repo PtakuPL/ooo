@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T21:49:24.206177Z",
-  "window_start_utc": "2026-02-20T20:49:23.291184Z",
-  "window_end_utc": "2026-02-20T21:49:23.291184Z",
+  "timestamp": "2026-02-20T21:51:06.303081Z",
+  "window_start_utc": "2026-02-20T20:51:05.543874Z",
+  "window_end_utc": "2026-02-20T21:51:05.543874Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,11 +9,11 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 170,
-  "rejected_entries_raw": 378,
+  "rejected_entries_raw": 395,
   "suspicious_entries": 3576,
-  "suspicious_entries_raw": 25428,
-  "guard_fail_entries": 128,
-  "guard_fail_sum": 5503,
+  "suspicious_entries_raw": 25389,
+  "guard_fail_entries": 127,
+  "guard_fail_sum": 6308,
   "by_type": {
     "identical_to_en": 149,
     "word_salad": 7,
@@ -26,21 +26,21 @@
     "google_translate": 170
   },
   "by_language": {
-    "es": 41,
     "it": 8,
+    "es": 41,
     "ro": 56,
     "pl": 43,
     "ru": 7,
     "sv": 15
   },
   "by_category": {
-    "server.json": 17,
     "npc.json": 4,
     "items.json": 28,
     "monsters.json": 30,
     "spells.json": 33,
     "quests.json": 3,
     "scripts.json": 14,
+    "server.json": 17,
     "books.json": 1,
     "otclient_modules.json": 30,
     "cpp.json": 5,
@@ -78,20 +78,6 @@
   ],
   "top_keys": [
     {
-      "key": "data.otservbr.global.npc.anerui.L71.1487",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.brasith.L59.1211",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
       "key": "spell.quara_constrictor_electrify.name",
       "count": 3,
       "types": {
@@ -102,6 +88,20 @@
     },
     {
       "key": "scripts.action_cushion.say_1",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L71.1487",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.brasith.L59.1211",
       "count": 3,
       "types": {
         "identical_to_en": 3

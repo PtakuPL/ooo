@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-02-20T16:51:59.121606Z",
-  "window_start_utc": "2026-02-20T15:51:58.821974Z",
-  "window_end_utc": "2026-02-20T16:51:58.821974Z",
+  "timestamp": "2026-02-20T16:53:01.011465Z",
+  "window_start_utc": "2026-02-20T15:53:00.688595Z",
+  "window_end_utc": "2026-02-20T16:53:00.688595Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 420,
-  "suspicious_entries": 9379,
-  "guard_fail_entries": 55,
-  "guard_fail_sum": 4371,
+  "rejected_entries": 422,
+  "suspicious_entries": 9848,
+  "guard_fail_entries": 57,
+  "guard_fail_sum": 4403,
   "by_type": {
-    "identical_to_en": 322,
-    "word_salad": 22,
+    "identical_to_en": 323,
+    "word_salad": 23,
     "mixed_language": 55,
     "contains_tibia_proper_noun": 22,
     "mixed_scripts": 21,
     "cyrillic_latin_mix": 21
   },
   "by_source": {
-    "google_translate": 420
+    "google_translate": 422
   },
   "by_language": {
-    "es": 70,
+    "es": 72,
     "ro": 159,
     "it": 57,
     "ru": 21,
@@ -32,7 +32,7 @@
     "sv": 13
   },
   "by_category": {
-    "npc.json": 26,
+    "npc.json": 28,
     "items.json": 114,
     "monsters.json": 117,
     "spells.json": 128,
@@ -42,13 +42,13 @@
     "books.json": 1
   },
   "by_severity": {
-    "CRITICAL": 344,
+    "CRITICAL": 346,
     "HIGH": 76
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 322
+      "count": 323
     },
     {
       "type": "mixed_language",
@@ -56,7 +56,7 @@
     },
     {
       "type": "word_salad",
-      "count": 22
+      "count": 23
     },
     {
       "type": "contains_tibia_proper_noun",
@@ -74,16 +74,16 @@
   "top_keys": [
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 13,
+      "count": 14,
       "types": {
-        "identical_to_en": 13
+        "identical_to_en": 14
       }
     },
     {
       "key": "npc.al_dee.stdmod_41",
-      "count": 13,
+      "count": 14,
       "types": {
-        "word_salad": 13
+        "word_salad": 14
       }
     },
     {

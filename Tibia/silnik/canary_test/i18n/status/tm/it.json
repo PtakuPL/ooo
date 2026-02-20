@@ -2409,11 +2409,11 @@
   },
   "item.3174.name": {
     "src_hash": "ea8aea2d9723287e660b1406fec99eb1",
-    "text": "Light Magic Missile Rune",
+    "text": "Runa del missile magico leggero",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T23:50:27.690109Z"
+    "updated_at": "2026-02-20T16:36:03.855524Z"
   },
   "item.3175.name": {
     "src_hash": "25854a690aad0b2f569b5c34e1691b91",
@@ -75350,5 +75350,213 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T16:34:54.872089Z"
+  },
+  "item.31277.name": {
+    "src_hash": "1eba044cbf7c341e1121f6b921f9a1fb",
+    "text": "re Zaoan di ossidiana",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.808271Z"
+  },
+  "item.31278.name": {
+    "src_hash": "8a662d54de439b29de39af96ca527428",
+    "text": "vescovo Zaoan di ossidiana",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.808813Z"
+  },
+  "item.31279.name": {
+    "src_hash": "ef301672d4ce193298641c71818d8951",
+    "text": "cavaliere Zaoan di ossidiana",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.809356Z"
+  },
+  "item.31280.name": {
+    "src_hash": "70a380086a3bea811ba4053063897585",
+    "text": "Torre Zaoan di ossidiana",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.809985Z"
+  },
+  "item.31281.name": {
+    "src_hash": "8657165817d4fb8d3ab20268acb531bb",
+    "text": "pedina Zaoan di ossidiana",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.810523Z"
+  },
+  "item.31282.name": {
+    "src_hash": "1c19b2860ae0b51693bbece320f15f74",
+    "text": "Scatola degli scacchi Zaoan",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.811161Z"
+  },
+  "item.31298.name": {
+    "src_hash": "1280e09900d17cacb0c943ac9f2752ec",
+    "text": "pavimento in marmo nero",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.811898Z"
+  },
+  "item.31299.name": {
+    "src_hash": "9ee0ca64809ac6f3c4eef93d48904c22",
+    "text": "piastrella in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.812185Z"
+  },
+  "item.31311.name": {
+    "src_hash": "1280e09900d17cacb0c943ac9f2752ec",
+    "text": "pavimento in marmo nero",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.813406Z"
+  },
+  "item.31313.name": {
+    "src_hash": "9ee0ca64809ac6f3c4eef93d48904c22",
+    "text": "piastrella in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.813864Z"
+  },
+  "item.31315.name": {
+    "src_hash": "e6c230fec8ac33d15259b3d248b5da97",
+    "text": "bacino del carbone",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.814265Z"
+  },
+  "item.31317.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.814728Z"
+  },
+  "item.31319.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.815090Z"
+  },
+  "item.3132.name": {
+    "src_hash": "f13460bd46c28e73e8d2b6122bea2241",
+    "text": "cranio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.815345Z"
+  },
+  "item.31322.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.815859Z"
+  },
+  "item.31326.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "erba",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.816368Z"
+  },
+  "item.31373.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.819130Z"
+  },
+  "item.31415.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.821706Z"
+  },
+  "item.31485.name": {
+    "src_hash": "3f8da8d150df71f64db5f8e96438c567",
+    "text": "Scorpione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.827709Z"
+  },
+  "item.31486.name": {
+    "src_hash": "d7d6ec67ef23ac56142018b7fd378943",
+    "text": "Calamari",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.828017Z"
+  },
+  "item.31491.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.829868Z"
+  },
+  "item.31517.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.831299Z"
+  },
+  "item.316.name": {
+    "src_hash": "5ec35309ee0073919cb69e392b43e430",
+    "text": "vaso di fiori",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.840244Z"
+  },
+  "item.31667.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.848603Z"
+  },
+  "item.31677.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.849504Z"
+  },
+  "item.31912.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:36:03.863800Z"
   }
 }

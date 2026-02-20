@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-20T16:35:00.701888Z",
-  "cycle": 2,
+  "timestamp": "2026-02-20T16:36:09.849283Z",
+  "cycle": 3,
   "language": "ru",
-  "json_file": "npc.json",
+  "json_file": "items.json",
   "translated": 50,
   "placeholders": 0,
   "guard_fail": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 287
+  "strict_skipped_done": 726
 }

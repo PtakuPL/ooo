@@ -66358,5 +66358,309 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T16:20:41.858022Z"
+  },
+  "npc.lukosch.farewell_msg_1": {
+    "src_hash": "4c63e8ef9d6c6b447464c244c3d4b195",
+    "text": "Sper să te revăd.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.179111Z"
+  },
+  "npc.lukosch.greet_msg_1": {
+    "src_hash": "74af8429056cd1b6c12ccb10e67902c1",
+    "text": "Bun venit, |PLAYERNAME|! Te simți aventuros? Vrei un {ticket} săptămânal pentru sistemul de vagoane de minereu de aici? Îl poți folosi chiar aici pentru a ajunge în centrul Kazordoon!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.180005Z"
+  },
+  "npc.lukosch.say_1": {
+    "src_hash": "78c8e8f1e0c24e044738d408a4bdd010",
+    "text": "Doriți să cumpărați un bilet săptămânal pentru vagoanele cu minereu? Cu el poți călători liber și rapid prin Kazordoon timp de o săptămână. Doar 250 de aur. Afacere?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.180762Z"
+  },
+  "npc.lukosch.say_2": {
+    "src_hash": "f861e7ec394314cc88a104df2e9bb60c",
+    "text": "Biletul dvs. săptămânal este încă valabil. Ar fi o pierdere de bani să cumperi al doilea",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.181396Z"
+  },
+  "npc.lukosch.say_3": {
+    "src_hash": "622d7ed7c7070fcb0a5487989b8ba4da",
+    "text": "Iată ștampila ta. Nu poate fi transferat unei alte persoane și va dura peste o săptămână. Veți primi o notificare când utilizați un vagon de minereu când acesta nu mai este valabil.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.182298Z"
+  },
+  "npc.maealil.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.189956Z"
+  },
+  "npc.maealil.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.190431Z"
+  },
+  "npc.maealil.stdmod_12": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Da, am fost informat ce să fac. Ești pregătit să primești rândul meu de rugăciune?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.191331Z"
+  },
+  "npc.maealil.stdmod_16": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Ai primit deja rândul meu de rugăciune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.192070Z"
+  },
+  "npc.maealil.stdmod_18": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Ești rănit, copilul meu. Îți voi vindeca rănile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.192678Z"
+  },
+  "npc.maealil.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Nu arăți așa de rău. Scuze, nu te pot ajuta. Dar dacă cauți protecție suplimentară, ar trebui să mergi pe {pilgrimage} de cenușă sau să obții protecția {twist of fate} aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.193585Z"
+  },
+  "npc.maealil.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Amenda. Sunteți liber să refuzați oferta mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.194077Z"
+  },
+  "npc.maealil.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Ori de câte ori primești o rană letală, forța ta vitală este deteriorată și există șansa să pierzi o parte din echipamentul tău. Cu fiecare dintre cele cinci {blessings} pe care le aveți, această daune și șansa de pierdere vor fi reduse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.195106Z"
+  },
+  "npc.maealil.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Văd că ai primit scutul spiritual în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.195967Z"
+  },
+  "npc.maealil.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Simt că druidii de la nord de Carlin ți-au oferit Îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.196582Z"
+  },
+  "npc.maealil.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Văd că ai primit binecuvântarea celor doi sori în solar lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.197188Z"
+  },
+  "npc.maealil.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Îmi dau seama că scânteia phoenixului ți-a fost deja dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.197835Z"
+  },
+  "npc.maealil.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Simt că ai vorbit deja cu pustnicul Eremo de pe insula Cormaya și ai primit această binecuvântare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.198662Z"
+  },
+  "npc.maealil.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puteți cere binecuvântarea scuturilor spirituale în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.199492Z"
+  },
+  "npc.maealil.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druizii la nord de Carlin vă vor oferi îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.200045Z"
+  },
+  "npc.maealil.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puteți cere binecuvântarea celor doi sori în bronzul de lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.200700Z"
+  },
+  "npc.maealil.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Păstrează-ți bine piatra de aventurier.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.201166Z"
+  },
+  "npc.maealil.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Scânteia phoenixului este dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.201730Z"
+  },
+  "npc.maealil.stdmod_34": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Aceasta este o binecuvântare specială pe care ți-o pot acorda odată ce ai obținut cel puțin una dintre celelalte binecuvântări și care funcționează puțin diferit. ... \\z\n\tFuncționează doar atunci când ești ucis de alți aventurieri, ceea ce înseamnă că cel puțin jumătate din daunele care au dus la moartea ta au fost cauzate de alții, nu de monștri sau de mediu. ... \\z\n\t{twist of fate} nu va reduce pedeapsa cu moartea la fel ca celelalte binecuvântări, ci, în schimb, vă va împiedica să vă pierdeți celelalte binecuvântări, precum și amuleta pierderii, dacă purtați una. Costa la fel ca si celelalte binecuvantari. ... \\z\n\tȚi-ar plăcea să primești acea protecție pentru un sacrificiu de |PVPBLESSCOST| aur, copile?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.204255Z"
+  },
+  "npc.maealil.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vrei să înlocuiești gratis piatra de aventurier?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.204781Z"
+  },
+  "npc.maealil.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Poftim. Ai grijă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.205180Z"
+  },
+  "npc.maealil.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vrei să înlocuiești piatra de aventurier cu 30 de aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.205858Z"
+  },
+  "npc.maealil.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Poftim. Ai grijă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.206385Z"
+  },
+  "npc.maealil.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Scuze, nu ai destui bani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.206775Z"
+  },
+  "npc.malor.multi_23": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, aproape că a sunat ca un cuvânt de salut. Oamenii - drăguți sunt!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.213641Z"
+  },
+  "npc.malor.say_1": {
+    "src_hash": "17bb78642c4a960215206201b82d1feb",
+    "text": "Îndepărtează-te, micuțo! Oamenii nu sunt bineveniți aici, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.214637Z"
+  },
+  "npc.malor.say_3": {
+    "src_hash": "d633fb2ee86a70e273e568761f62e8ec",
+    "text": "Încă nu ți-ai terminat ultima misiune. Să îți explic din nou?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.215385Z"
+  },
+  "npc.malor.say_4": {
+    "src_hash": "fb9964a4cf86b5a4454805a50c0b8ef4",
+    "text": "Ai găsit lampa lui Fa'hradin și ai pus-o în camerele personale ale lui Malor?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.215940Z"
+  },
+  "npc.marina.say_10": {
+    "src_hash": "cdb68d59dbca33141cac47778a813a31",
+    "text": "Nu aveți elementele necesare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.217298Z"
+  },
+  "npc.maris.say_2": {
+    "src_hash": "92874d037552d6ed7c7552ac9eeebf3b",
+    "text": "Ar fi mai bine să pleci acum.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.218492Z"
+  },
+  "npc.markwin.say_5": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Nu ai nicio prăjitură pe care mi-aș dori.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.221275Z"
+  },
+  "npc.mazarius.walkaway_msg_1": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Oh bine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.227937Z"
+  },
+  "npc.melian.stdmod_1": {
+    "src_hash": "7e7182a67795f240a79194b4d6fb5c54",
+    "text": "Cauți o călătorie până la {0} pentru {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:35:57.230872Z"
   }
 }

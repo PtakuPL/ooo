@@ -118326,5 +118326,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:04:28.727139Z"
+  },
+  "monster.execowtioner.voice_1": {
+    "src_hash": "8be3774de8528e143102c6cea0a74565",
+    "text": "To ja wcielam w życie to, co urocze!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:07:50.822341Z"
+  },
+  "monster.crazed_summer_vanguard.voice_1": {
+    "src_hash": "5fc0c3a29b79ae51075923b6f27c463d",
+    "text": "Widzę kolory, wszystkie kolory! A może to tylko iluzje?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:07:50.874611Z"
+  },
+  "monster.omrafir.voice_1": {
+    "src_hash": "b28eb70d925ad6a4cdb6d07e54077a82",
+    "text": "NAJPIERW CIĘ ZNISZCZĘ, A PÓŹNIEJ SPALĘ TO WIĘZIENIE!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:07:51.638077Z"
+  },
+  "monster.grynch_clan_goblin.voice_6": {
+    "src_hash": "6fd60f84958e8d882d49ba283031d302",
+    "text": "Miałem to przez pięć minut. To teraz pamiątka rodzinna!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:07:51.972050Z"
   }
 }

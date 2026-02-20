@@ -1,7 +1,7 @@
-# Podsumowanie statusu ICE C1001 — po Rundzie 2
+# Podsumowanie statusu ICE C1001 — po Rundzie 3
 
-**Data:** 2026-02-21  
-**Kontekst:** Analiza wyników CI po wdrożeniu Kroku 1 (include'y)
+**Data:** 2026-02-21 (aktualizacja)  
+**Kontekst:** Analiza wyników CI + głębokie badanie .cpp/.h + implementacja poprawek Rundy 3
 
 ---
 
@@ -9,68 +9,115 @@
 
 **Krok 1 ✅ — zadziałał:** Dodanie include'ów naprawiło błędy C2139 i C2665 (4 z 6 błędów zniknęło).
 
-**Pozostały problem:** ICE C1001 w **3 plikach** — MSVC 14.44 crashuje (ACCESS VIOLATION w cl.exe) przy generowaniu kodu dla szablonów, **mimo** już zastosowanych flag `/Od /Ob0 /d2SSAOptimizer-`.
+**Kroki 2A-2C ✅ — zaimplementowane:** Flagi MSVC, fix `if constexpr`, fold expressions w luabinder.h.
 
-## Nowy plan — 3 kroki do wdrożenia RAZEM
+**Krok 2C.1 ✅ — poprawki ChatGPT review:** Guard N==0, `#include <utility>`, explicit `std::size_t`.
 
-| Krok | Co | Szansa | Ryzyko |
-|------|----|--------|--------|
-| **2A** | Dodać flagi `/d2FH4-` i `/d2notypeopt` do CMakeLists.txt (Grupa 2) | ~60% | zerowe |
-| **2B** | Naprawić `if constexpr` / `else if` w `luainterface.h:484` — wydzielić do `else { if(...) }` | ~30% | zerowe |
-| **2C** | Refaktoryzacja `luabinder.h` — zamienić rekurencyjne szablony (`pack_values_into_tuple<N>`, `expand_fun_arguments<N>`) na fold expressions / `std::apply` | ~90% | średnie |
+**Kroki 3A-3E ✅ — głębokie badanie (Runda 3):** Usunięcie ciężkiego include'a Asio, split TU, refaktor tuple templates, fix PainterShaderProgram, explicit `std::size_t`.
 
-**Łącznie ~95% szansy na naprawę ICE.**
+**Aktualny status:** 2 buildy CI w trakcie (run 22244152617, 22243721692). Oczekujemy na wyniki.
 
-Krok 2D (backup): ClangCL lub pin MSVC 14.29 — tylko jeśli 2A-2C zawiodą.
+---
 
-## Szczegóły błędów z Rundy 2
+## Co zostało zrobione w Rundzie 3 (2026-02-21)
 
-**Run ID:** 22234136342 (MSVC 14.44.35207)
+### 3A: Usunięcie `#include <framework/net/protocolhttp.h>` ✅
 
-| # | Plik kompilacji | Crash w | Exit code |
-|---|-----------------|---------|-----------|
-| 1 | `luafunctions_graphics.cpp` | `luainterface.h:484` | 0xC0000005 |
-| 2 | `luafunctions_gfx_singletons.cpp` | `luainterface.h:484` | 0xC0000005 |
-| 3 | `luafunctions.cpp` | `luabinder.h:171` | 0xC0000005 |
+**Problem:** `protocolhttp.h` ciągnie `<asio.hpp>` + `<asio/ssl.hpp>` — masywne nagłówki szablonowe. Typ `ProtocolHttp` **nie był nigdzie używany** w `luafunctions_ui.cpp` ani `luafunctions.cpp` (potwierdzone grepem).
 
-**Potwierdzenie flag:** Ostrzeżenia D9025 (`overriding '/O1' with '/Od'`, `overriding '/Ob2' with '/Ob0'`) potwierdzają że per-file flagi DZIAŁAJĄ ale ICE występuje w fazie P2 codegen, nie w optymalizacji.
+**Naprawa:** Usunięto include z obu plików. Eliminuje tysiące symboli szablonowych z tych TU.
 
-## Analiza techniczna crash'ów
+### 3B: Split `luafunctions_ui.cpp` na 3 pliki ✅
 
-### Crash 1 & 2: `luainterface.h:484` — `castValue<T>()`
+**Problem:** 537 template instantiations w jednym TU — główny czynnik ryzyka ICE C1001.
 
+**Naprawa:**
+| Plik | Bindy | Zawartość |
+|------|-------|-----------|
+| `luafunctions_ui.cpp` | 434 | UIWidget (~290), UILayout, UIBoxLayout, UIVerticalLayout, UIHorizontalLayout, UIGridLayout, UIAnchorLayout, UITextEdit, UIQrCode, ShaderProgram, PainterShaderProgram, ParticleEffectType, UIParticles |
+| `luafunctions_net.cpp` **NOWY** | 60 | Server, Connection, Protocol, InputMessage, OutputMessage |
+| `luafunctions_sound.cpp` **NOWY** | 43 | SoundManager (singleton), SoundSource, CombinedSoundSource, StreamSoundSource, SoundEffect, SoundChannel |
+
+Nowe pliki dodane do CMakeLists.txt (Group 2 z flagami ICE workaround + lista źródeł).
+
+### 3C: Refaktor rekurencyjnych tuple templates w `luavaluecasts.h` ✅
+
+**Problem:** `push_tuple_internal_luavalue<N>` i `push_tuple_luavalue<N>` — rekurencyjne struct templates z partial specialization dla N=0. Taki sam wzorzec jak naprawiony w `luabinder.h`.
+
+**Naprawa:** Zamienione na fold expressions:
 ```cpp
-template<class T>
-T LuaInterface::castValue(int index) {
-    T o;
-    if constexpr (std::is_same_v<T, std::string_view>) {
-        o = g_lua.toVString(index);
-    } else if (!luavalue_cast(index, o))   // <-- crash tutaj
-        throw LuaBadValueCastException(...);
-    return o;
+// PRZED (rekurencyjne):
+template<int N>
+struct push_tuple_internal_luavalue {
+    template<typename Tuple>
+    static void call(const Tuple& tuple) {
+        push_internal_luavalue(std::get<N - 1>(tuple));
+        g_lua.rawSeti(N);
+        push_tuple_internal_luavalue<N - 1>::call(tuple);
+    }
+};
+
+// PO (fold expression):
+template<typename Tuple, std::size_t... I>
+void push_tuple_internal_luavalue_impl(const Tuple& tuple, std::index_sequence<I...>) {
+    constexpr std::size_t N = sizeof...(I);
+    if constexpr (N > 0) {
+        ((push_internal_luavalue(std::get<N - 1 - I>(tuple)),
+          g_lua.rawSeti(static_cast<int>(N - I))), ...);
+    }
 }
 ```
+Dodano `#include <utility>` dla `std::index_sequence`.
 
-Problem: Mieszanie `if constexpr` z runtime `else if` + overload resolution `luavalue_cast()` z wieloma template specjalizacjami.
+### 3D: Fix `registerClass<PainterShaderProgram>()` ✅
 
-### Crash 3: `luabinder.h:171` — `bind_fun_specializer`
+**Problem (bug logiczny):** `PainterShaderProgram final : public ShaderProgram`, ale registracja Lua używała `registerClass<PainterShaderProgram>()` co domyślnie ustawia `LuaObject` jako bazę.
 
-```cpp
-template<typename Ret, typename F, typename Tuple>
-LuaCppFunction bind_fun_specializer(const F& f) {
-    enum { N = std::tuple_size_v<Tuple> };
-    return [=](LuaInterface* lua) -> int {
-        // ... pack_values_into_tuple<N>::call(tuple, lua);   <-- rekurencja N
-        // ... expand_fun_arguments<N, Ret>::call(tuple, f, lua);  <-- rekurencja N
-    };
-}
-```
+**Skutek:** Lua nie widziała metod `ShaderProgram` na obiektach `PainterShaderProgram`.
 
-Problem: Rekurencyjne szablony `pack_values_into_tuple<N>` i `expand_fun_arguments<N, Ret>` tworzą N poziomów instancjacji. Przy 800-950 bindowaniach w jednym TU, MSVC P2 codegen pada.
+**Naprawa:** `registerClass<PainterShaderProgram, ShaderProgram>()`
 
-## Dlaczego istniejące flagi nie wystarczają
+### 3E: `constexpr auto N` → `constexpr std::size_t N` ✅
 
-- `/Od` (no optimization) — wyłącza optymalizację, ale crash jest w **codegen** (generowaniu kodu maszynowego), nie w optymalizacji
-- `/Ob0` (no inlining) — zmniejsza presję ale nie eliminuje rekurencyjnych instancjacji szablonów
-- `/d2SSAOptimizer-` — wyłącza SSA optimizer, ale crash jest PRZED SSA (w P2)
-- `SKIP_PRECOMPILE_HEADERS ON` — poprawne, eliminuje interakcję PCH
+**Problem:** `auto` w kontekście constexpr w lambda capture ze szablonami — potencjalnie niejednoznaczne na MSVC.
+
+**Naprawa:** Jawny typ `std::size_t` w `bind_fun_specializer()` w `luabinder.h`.
+
+---
+
+## Bilans zmniejszenia template pressure
+
+### Przed Rundą 3:
+- `luafunctions_ui.cpp`: 537 bindów + `<asio.hpp>` + `<asio/ssl.hpp>` + rekurencyjne tuple szablony
+- Rekurencyjne tuple templates w `luavaluecasts.h` → N poziomów instancjacji
+
+### Po Rundzie 3:
+- `luafunctions_ui.cpp`: 434 bindów, **BEZ Asio**
+- `luafunctions_net.cpp`: 60 bindów (osobna TU)
+- `luafunctions_sound.cpp`: 43 bindów (osobna TU)
+- Tuple templates: fold expressions (1 poziom vs N)
+- Łącznie: **~20% mniej bindów w najcięższym TU** + **eliminacja Asio** + **zero rekurencyjnych szablonów**
+
+---
+
+## Znane pozostałe problemy
+
+### Jeśli CI nadal failuje (priorytet: WYSOKI jeśli wystąpi)
+
+1. **`luafunctions_ui.cpp` (434 bindów)** — nadal najcięższy TU. Dalszy split:
+   - `luafunctions_uiwidget.cpp` (~290 bindów UIWidget)
+   - `luafunctions_ui_misc.cpp` (reszta: layouts, textedit, qrcode, shaders, particles)
+
+2. **`client/luafunctions.cpp`** — nie badany. Może mieć podobne problemy.
+
+3. **Krok 2D (backup):** ClangCL zamiast MSVC cl.exe, lub pin na MSVC 14.29.
+
+### Problemy niskiego priorytetu (nie blokują build)
+
+4. **Mieszanie `requires` z `enable_if_t`** w `luavaluecasts.h` linia ~157 — enum push_luavalue używa C++20 `requires` a reszta overloadu `enable_if_t`. Może zmylić MSVC.
+
+5. **Logic bug w pair cast** (`luavaluecasts.h` ~555-560) — odwrócony warunek `!` przy `luavalue_cast`. Runtime bug, nie kompilacyjny.
+
+6. **Trailing backslash** w `luainterface.cpp` (~linia 736) — kosmetyczne, z konwersji makro.
+
+7. **Weryfikacja `/std:c++20`** na MSVC — kod używa `requires`, fold expressions, `if constexpr`. Warto potwierdzić że CMake ustawia C++20 na runnerze.

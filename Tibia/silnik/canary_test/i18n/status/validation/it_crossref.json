@@ -4,10 +4,10 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T22:18:44.260778Z",
-  "issues_total": 429,
+  "checked_at": "2026-02-20T22:40:52.081328Z",
+  "issues_total": 428,
   "issues_by_type": {
-    "consistency_in_language": 8,
+    "consistency_in_language": 7,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 21
   },
@@ -117,23 +117,6 @@
       "examples": [
         "npc:npc.one_eyed_joe.multi_1",
         "npc:npc.one_eyed_joe.multi_2"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "The chest is empty.",
-      "variants": [
-        "Il baule è vuoto.",
-        "You found."
-      ],
-      "variants_count": 2,
-      "examples": [
-        "quests:quests.bigfoot_burden.chest_empty",
-        "scripts:scripts.actions_boss_timira_fight.msg_3",
-        "scripts:scripts.actions_mission3_chest.msg_2",
-        "scripts:scripts.actions_reward.msg_4",
-        "scripts:scripts.actions_reward.msg_6"
       ]
     }
   ],

@@ -1,10 +1,10 @@
 {
   "lang": "sv",
-  "coverage_pct": 30.0,
+  "coverage_pct": 30.1,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T22:20:21.546303Z",
+  "checked_at": "2026-02-20T22:43:20.567649Z",
   "issues_total": 426,
   "issues_by_type": {
     "consistency_in_language": 11,
@@ -384,33 +384,6 @@
       "lang": "Vol:"
     },
     {
-      "key": "cpp.player.corpse_and",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " and {0}",
-      "pl": "i {0}",
-      "lang": " and {0}"
-    },
-    {
-      "key": "cpp.player.corpse_and_others",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": " and others",
-      "pl": "i drugi, pozostały",
-      "lang": " and others"
-    },
-    {
-      "key": "cpp.player.list_and",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "and ",
-      "pl": "i ",
-      "lang": "and "
-    },
-    {
       "key": "cpp.player.list_delimiter",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -429,42 +402,6 @@
       "lang": "a"
     },
     {
-      "key": "cpp.player.look.article_an",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "an",
-      "pl": "jeden",
-      "lang": "an"
-    },
-    {
-      "key": "cpp.player.look.guild_prefix_self",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are",
-      "pl": "Jesteś",
-      "lang": "You are"
-    },
-    {
-      "key": "cpp.player.look.level_fmt",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Level {0}",
-      "pl": "poziom {0}",
-      "lang": "Level {0}"
-    },
-    {
-      "key": "cpp.player.look.self",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "yourself",
-      "pl": "siebie",
-      "lang": "yourself"
-    },
-    {
       "key": "cpp.player.look.verb_vip",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -474,24 +411,6 @@
       "lang": "{0} VIP."
     },
     {
-      "key": "cpp.protocol.married_to_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Married to",
-      "pl": "Żonaty, zamężna do",
-      "lang": "Married to"
-    },
-    {
-      "key": "cpp.protocol.support_outfit_gamemaster",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Gamemaster",
-      "pl": "Mistrz Gry",
-      "lang": "Gamemaster"
-    },
-    {
       "key": "cpp.protocol.tentugly_name",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -499,87 +418,6 @@
       "en": "Tentugly",
       "pl": "Delikatnie",
       "lang": "Tentugly"
-    },
-    {
-      "key": "cpp.protocol.unknown_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
-    },
-    {
-      "key": "cpp.protocol.vocation_all",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "(all)",
-      "pl": "(wszystkie)",
-      "lang": "(all)"
-    },
-    {
-      "key": "cpp.protocol.vocation_label",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vocation",
-      "pl": "Profesja",
-      "lang": "Vocation"
-    },
-    {
-      "key": "cpp.returnvalue.no_error",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No error.",
-      "pl": "Nie błąd.",
-      "lang": "No error."
-    },
-    {
-      "key": "cpp.skill.fishing",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "fishing",
-      "pl": "Rybacki",
-      "lang": "fishing"
-    },
-    {
-      "key": "cpp.skill.life_leech",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "life leech",
-      "pl": "Życie Lecha",
-      "lang": "life leech"
-    },
-    {
-      "key": "cpp.skill.mana_leech",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "mana leech",
-      "pl": "mana pijawka",
-      "lang": "mana leech"
-    },
-    {
-      "key": "cpp.skill.shielding",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "shielding",
-      "pl": "Zastawianie",
-      "lang": "shielding"
-    },
-    {
-      "key": "cpp.skill.unknown",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
     },
     {
       "key": "cpp.title.name_17",
@@ -600,24 +438,6 @@
       "lang": "Drakenbane"
     },
     {
-      "key": "cpp.title.name_19",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Silencer",
-      "pl": "Tłumik",
-      "lang": "Silencer"
-    },
-    {
-      "key": "cpp.title.name_20",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Exalted",
-      "pl": "Wysoki",
-      "lang": "Exalted"
-    },
-    {
       "key": "cpp.title.name_22",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -627,24 +447,6 @@
       "lang": "Big Boss"
     },
     {
-      "key": "cpp.title.name_34",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bipedantic",
-      "pl": "Dwunożny",
-      "lang": "Bipedantic"
-    },
-    {
-      "key": "cpp.title.name_44",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Handyman",
-      "pl": "Złota rączka",
-      "lang": "Handyman"
-    },
-    {
       "key": "cpp.title.name_44_female",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -652,33 +454,6 @@
       "en": "Handywoman",
       "pl": "Złota rączka",
       "lang": "Handywoman"
-    },
-    {
-      "key": "cpp.title.name_45",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Huntsman",
-      "pl": "Myśliwy",
-      "lang": "Huntsman"
-    },
-    {
-      "key": "cpp.title.name_45_female",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Huntress",
-      "pl": "Łowczyni",
-      "lang": "Huntress"
-    },
-    {
-      "key": "cpp.title.name_47",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Manhunter",
-      "pl": "Pościg, obława",
-      "lang": "Manhunter"
     },
     {
       "key": "cpp.title.name_49",
@@ -699,42 +474,6 @@
       "lang": "Sea Bane"
     },
     {
-      "key": "cpp.title.name_52",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tumbler",
-      "pl": "Szklanka",
-      "lang": "Tumbler"
-    },
-    {
-      "key": "cpp.title.name_53",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Weedkiller",
-      "pl": "Środek chwastobójczy",
-      "lang": "Weedkiller"
-    },
-    {
-      "key": "cpp.title.name_81",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Aeternal",
-      "pl": "Wieczny",
-      "lang": "Aeternal"
-    },
-    {
-      "key": "cpp.title.name_85",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Beastly",
-      "pl": "Paskudny",
-      "lang": "Beastly"
-    },
-    {
       "key": "cpp.title.name_91",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -742,78 +481,6 @@
       "en": "Planegazer",
       "pl": "Planetolog",
       "lang": "Planegazer"
-    },
-    {
-      "key": "cpp.title.name_93",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Truly Boss",
-      "pl": "Naprawdę Boss",
-      "lang": "Truly Boss"
-    },
-    {
-      "key": "cpp.vocation.desc_id_0",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "none",
-      "pl": "Niene",
-      "lang": "none"
-    },
-    {
-      "key": "cpp.vocation.desc_id_1",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a sorcerer",
-      "pl": "jeden sorcerer",
-      "lang": "a sorcerer"
-    },
-    {
-      "key": "cpp.vocation.desc_id_2",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a druid",
-      "pl": "jeden druid",
-      "lang": "a druid"
-    },
-    {
-      "key": "cpp.vocation.desc_id_3",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a paladin",
-      "pl": "jeden paladin",
-      "lang": "a paladin"
-    },
-    {
-      "key": "cpp.vocation.desc_id_4",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "a knight",
-      "pl": "rycerz",
-      "lang": "a knight"
-    },
-    {
-      "key": "cpp.vocation.id_0",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "None",
-      "pl": "Niene",
-      "lang": "None"
-    },
-    {
-      "key": "cpp.vocation.id_1",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sorcerer",
-      "pl": "Czarnoksiężnik",
-      "lang": "Sorcerer"
     },
     {
       "key": "cpp.vocation.id_3",
@@ -825,15 +492,6 @@
       "lang": "Paladin"
     },
     {
-      "key": "cpp.vocation.id_4",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Knight",
-      "pl": "Rycerz",
-      "lang": "Knight"
-    },
-    {
       "key": "cpp.weapon.ammunition",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -841,60 +499,6 @@
       "en": "ammunition",
       "pl": "amunicja",
       "lang": "ammunition"
-    },
-    {
-      "key": "cpp.weapon.axe",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "axe",
-      "pl": "Topór",
-      "lang": "axe"
-    },
-    {
-      "key": "cpp.weapon.club",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "club",
-      "pl": "Obuch",
-      "lang": "club"
-    },
-    {
-      "key": "cpp.weapon.distance",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "distance",
-      "pl": "Dystans",
-      "lang": "distance"
-    },
-    {
-      "key": "cpp.weapon.missile",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "missile",
-      "pl": "pocisk",
-      "lang": "missile"
-    },
-    {
-      "key": "cpp.weapon.sword",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "sword",
-      "pl": "Miecz",
-      "lang": "sword"
-    },
-    {
-      "key": "cpp.weapon.wand",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "wand",
-      "pl": "różdżka",
-      "lang": "wand"
     },
     {
       "key": "item.10.name",
@@ -3775,6 +3379,402 @@
       "en": "Then not.",
       "pl": "W takim razie nie.",
       "lang": "Then not."
+    },
+    {
+      "key": "npc.malunga.voice_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<mumble>",
+      "pl": "<mamroczę>",
+      "lang": "<mumble>"
+    },
+    {
+      "key": "npc.mazarius.say_14",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "What?!",
+      "pl": "Co?!",
+      "lang": "What?!"
+    },
+    {
+      "key": "npc.menesto.say_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "... ...",
+      "pl": "......",
+      "lang": "... ..."
+    },
+    {
+      "key": "npc.menesto.say_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hmm. ...",
+      "pl": "Hmm....",
+      "lang": "Hmm. ..."
+    },
+    {
+      "key": "npc.myzzi.say_6",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "What?!",
+      "pl": "Co?!",
+      "lang": "What?!"
+    },
+    {
+      "key": "npc.nah_bob.say_6",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
+    },
+    {
+      "key": "npc.nah_bob.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye then.",
+      "pl": "Pa, cześć wtedy.",
+      "lang": "Bye then."
+    },
+    {
+      "key": "npc.noodles.say_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Woof!",
+      "pl": "Hau!",
+      "lang": "Woof!"
+    },
+    {
+      "key": "npc.noodles.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Woof!",
+      "pl": "Hau!",
+      "lang": "Woof!"
+    },
+    {
+      "key": "npc.noodles.voice_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<wiggles>",
+      "pl": "<kręci się>",
+      "lang": "<wiggles>"
+    },
+    {
+      "key": "npc.noodles.voice_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<sniff>",
+      "pl": "<węszy>",
+      "lang": "<sniff>"
+    },
+    {
+      "key": "npc.oblivion.voice_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hm.",
+      "pl": "Jego Wysokość, Jej Wysokość.",
+      "lang": "Hm."
+    },
+    {
+      "key": "npc.ocelus.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye.",
+      "pl": "Żegnaj.",
+      "lang": "Good bye."
+    },
+    {
+      "key": "npc.ocelus.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh well.",
+      "pl": "O well.",
+      "lang": "Oh well."
+    },
+    {
+      "key": "npc.omrabas.voice_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<groan>",
+      "pl": "<jęk>",
+      "lang": "<groan>"
+    },
+    {
+      "key": "npc.one_eyed_joe.say_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Too bad.",
+      "pl": "Też, także zły, niedobry.",
+      "lang": "Too bad."
+    },
+    {
+      "key": "npc.oressa.say_19",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "! ...",
+      "pl": "!...",
+      "lang": "! ..."
+    },
+    {
+      "key": "npc.oswald.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Finally!",
+      "pl": "W końcu, ostatecznie!",
+      "lang": "Finally!"
+    },
+    {
+      "key": "npc.padreia.multi_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh ",
+      "pl": "O ",
+      "lang": "Oh "
+    },
+    {
+      "key": "npc.palomino.say_9",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then not.",
+      "pl": "W takim razie nie.",
+      "lang": "Then not."
+    },
+    {
+      "key": "npc.peter.stdmod_10",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Peter.",
+      "pl": "Piotr.",
+      "lang": "Peter."
+    },
+    {
+      "key": "npc.petros.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bye",
+      "pl": "Pa, cześć",
+      "lang": "Bye"
+    },
+    {
+      "key": "npc.pig.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oink.",
+      "pl": "Chrum.",
+      "lang": "Oink."
+    },
+    {
+      "key": "npc.pompan.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hello.",
+      "pl": "Cześć, dzień dobry.",
+      "lang": "Hello."
+    },
+    {
+      "key": "npc.prisoner.voice_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I repent!",
+      "pl": "I żałować!",
+      "lang": "I repent!"
+    },
+    {
+      "key": "npc.prisoner.voice_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Noooooo!",
+      "pl": "Nieooooo!",
+      "lang": "Noooooo!"
+    },
+    {
+      "key": "npc.puffels.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Whatever.",
+      "pl": "Cokolwiek.",
+      "lang": "Whatever."
+    },
+    {
+      "key": "npc.puffels.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Whatever.",
+      "pl": "Cokolwiek.",
+      "lang": "Whatever."
+    },
+    {
+      "key": "npc.pukosch.say_5",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No then.",
+      "pl": "Nie wtedy.",
+      "lang": "No then."
+    },
+    {
+      "key": "npc.quandons_ghost.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hi!",
+      "pl": "Cześć, siemasz!",
+      "lang": "Hi!"
+    },
+    {
+      "key": "npc.rata_mari.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meep!",
+      "pl": "Mip!",
+      "lang": "Meep!"
+    },
+    {
+      "key": "npc.rata_mari.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meep!",
+      "pl": "Mip!",
+      "lang": "Meep!"
+    },
+    {
+      "key": "npc.richard.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Have fun!",
+      "pl": "Baw się dobrze!",
+      "lang": "Have fun!"
+    },
+    {
+      "key": "npc.robson.say_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fine.",
+      "pl": "Dobrze.",
+      "lang": "Fine."
+    },
+    {
+      "key": "npc.robson.say_6",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fine.",
+      "pl": "Dobrze.",
+      "lang": "Fine."
+    },
+    {
+      "key": "npc.rose.say_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Then not.",
+      "pl": "W takim razie nie.",
+      "lang": "Then not."
+    },
+    {
+      "key": "npc.sandomo.multi_11",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You killed ",
+      "pl": "Zabiłeś ",
+      "lang": "You killed "
+    },
+    {
+      "key": "npc.shauna.stdmod_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Just fine.",
+      "pl": "W porządku.",
+      "lang": "Just fine."
+    },
+    {
+      "key": "npc.shirith.farewell_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye!.",
+      "pl": "Robić widzenia!.",
+      "lang": "Good bye!."
+    },
+    {
+      "key": "npc.shoddy_beggar.say_20",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*mumbles*",
+      "pl": "*mamrotać*",
+      "lang": "*mumbles*"
+    },
+    {
+      "key": "npc.shoddy_beggar.voice_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*mumbles*",
+      "pl": "*mamrotać*",
+      "lang": "*mumbles*"
+    },
+    {
+      "key": "npc.sholley.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hi!",
+      "pl": "Cześć, siemasz!",
+      "lang": "Hi!"
+    },
+    {
+      "key": "npc.simon_the_beggar.no_i_see",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
+    },
+    {
+      "key": "npc.sister_of_jack.voice_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mhmhmhmhm.",
+      "pl": "Mhmhmhm.",
+      "lang": "Mhmhmhmhm."
     }
   ],
   "length_ratio_issues": [
@@ -3916,8 +3916,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 44,
-    "skipped": 36,
+    "applied": 23,
+    "skipped": 57,
     "errors": 0
   }
 }

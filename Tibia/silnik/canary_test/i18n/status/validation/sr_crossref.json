@@ -4,11 +4,11 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T22:19:45.477995Z",
-  "issues_total": 65,
+  "checked_at": "2026-02-20T22:42:38.277559Z",
+  "issues_total": 105,
   "issues_by_type": {
     "consistency_in_language": 9,
-    "pl_reference_missing_translation": 28,
+    "pl_reference_missing_translation": 68,
     "length_ratio_crosscheck": 28
   },
   "consistency_issues": [
@@ -320,6 +320,132 @@
       "lang": "{0} VIP."
     },
     {
+      "key": "npc.a_beautiful_girl.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "So you have come, |PLAYERNAME|. I hoped you would not...",
+      "pl": "A więc jednak przyszedłeś/przyszłaś, |PLAYERNAME|. Miałam nadzieję, że nie...",
+      "lang": "So you have come, |PLAYERNAME|. I hoped you would not..."
+    },
+    {
+      "key": "npc.a_majestic_warwolf.say_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I can see in your eyes that you are a honest and friendly person, |PLAYERNAME|. You were patient enough to learn our language and I will grant you a special gift. Will you accept it?",
+      "pl": "Widzę w twoich oczach, że jesteś uczciwą i przyjazną osobą, |PLAYERNAME|. Miałeś/Miałaś dość cierpliwości, by nauczyć się naszego języka, więc dam ci wyjątkowy dar. Przyjmiesz go?",
+      "lang": "I can see in your eyes that you are a honest and friendly person, |PLAYERNAME|. You were patient enough to learn our language and I will grant you a special gift. Will you accept it?"
+    },
+    {
+      "key": "npc.a_majestic_warwolf.say_female",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "From now on, you shall be known as |PLAYERNAME|, the wolf girl. You shall be fast and smart as Morgrar, the great white wolf. He shall guide your path.",
+      "pl": "Od teraz będziesz znana jako |PLAYERNAME|, wilcza dziewczyna. Będziesz szybka i sprytna jak Morgrar, wielki biały wilk. To on poprowadzi twoją ścieżkę.",
+      "lang": "From now on, you shall be known as |PLAYERNAME|, the wolf girl. You shall be fast and smart as Morgrar, the great white wolf. He shall guide your path."
+    },
+    {
+      "key": "npc.a_majestic_warwolf.say_male",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "From now on, you shall be known as |PLAYERNAME|, the bear warrior. You shall be strong and proud as Angros, the great dark bear. He shall guide your path.",
+      "pl": "Od teraz będziesz znany jako |PLAYERNAME|, niedźwiedzi wojownik. Będziesz silny i dumny jak Angros, wielki mroczny niedźwiedź. To on poprowadzi twoją ścieżkę.",
+      "lang": "From now on, you shall be known as |PLAYERNAME|, the bear warrior. You shall be strong and proud as Angros, the great dark bear. He shall guide your path."
+    },
+    {
+      "key": "npc.a_strange_chalice.multi_18",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Well, basically Spectulus is the only one likeminded so far. In fact, he incited me to work in the field in first place. So here I am! {Disguised} as a chalice.",
+      "pl": "Cóż, tak naprawdę Spectulus jest jak dotąd jedynym, który myśli podobnie. Właściwie to on skłonił mnie do pracy w terenie. No i jestem! {Disguised} jako kielich.",
+      "lang": "Well, basically Spectulus is the only one likeminded so far. In fact, he incited me to work in the field in first place. So here I am! {Disguised} as a chalice."
+    },
+    {
+      "key": "npc.a_wrinkled_bonelord.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "What is this? An optically challenged entity called |PLAYERNAME|. How fascinating!",
+      "pl": "Cóż to takiego? Optycznie upośledzona istota zwana |PLAYERNAME|. Jakie fascynujące!",
+      "lang": "What is this? An optically challenged entity called |PLAYERNAME|. How fascinating!"
+    },
+    {
+      "key": "npc.al_dee.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hello, hello, |PLAYERNAME|! Please come in, look, and buy! I'm a specialist for all sorts of {tools}. Just ask me for a {trade} to see my offers! You can also ask me for general {hints} about the game. ...",
+      "pl": "Witaj, witaj, |PLAYERNAME|! Wejdź, obejrzyj i kup! Jestem specjalistą od wszelkiego rodzaju {tools}. Po prostu poproś mnie o {trade}, żeby zobaczyć moje oferty! Możesz też zapytać mnie o ogólne {hints} dotyczące gry...",
+      "lang": "Hello, hello, |PLAYERNAME|! Please come in, look, and buy! I'm a specialist for all sorts of {tools}. Just ask me for a {trade} to see my offers! You can also ask me for general {hints} about the game. ..."
+    },
+    {
+      "key": "npc.al_dee.stdmod_12",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It's about |TIME|. I'm so sorry, I have no watches to sell. Do you want to buy something else?",
+      "pl": "Chodzi o |TIME|. Przykro mi, nie mam zegarków do sprzedania. Chcesz kupić coś innego?",
+      "lang": "It's about |TIME|. I'm so sorry, I have no watches to sell. Do you want to buy something else?"
+    },
+    {
+      "key": "npc.al_dee.stdmod_15",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh, our sewer system is very primitive - it's so primitive that it's overrun by {rats}. But the stuff I sell is safe from them. Just ask me for a {trade} to see it!",
+      "pl": "Och, nasz system kanalizacyjny jest bardzo prymitywny - jest tak prymitywny, że został opanowany przez {rats}. Ale rzeczy, które sprzedaję, są przed nimi bezpieczne. Poproś mnie tylko o {trade}, aby to zobaczyć!",
+      "lang": "Oh, our sewer system is very primitive - it's so primitive that it's overrun by {rats}. But the stuff I sell is safe from them. Just ask me for a {trade} to see it!"
+    },
+    {
+      "key": "npc.al_dee.stdmod_21",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh, I'm sorry, but I don't deal with weapons. That's {Obi's} or {Lee'Delle's} business. I could offer you a {pick} in exchange for a {small axe} if you should happen to own one.",
+      "pl": "Och, przykro mi, ale nie zajmuję się bronią. To jest sprawa {Obi's} lub {Lee'Delle's}. Mógłbym zaoferować Ci {pick} w zamian za {small axe}, jeśli przypadkiem go posiadasz.",
+      "lang": "Oh, I'm sorry, but I don't deal with weapons. That's {Obi's} or {Lee'Delle's} business. I could offer you a {pick} in exchange for a {small axe} if you should happen to own one."
+    },
+    {
+      "key": "npc.al_dee.stdmod_22",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Armor and shields can be bought at {Dixi's} or at {Lee'Delle's}. Dixi runs that shop near {Obi's}.",
+      "pl": "Pancerz i tarcze można kupić w {Dixi's} lub {Lee'Delle's}. Dixi prowadzi ten sklep w pobliżu {Obi's}.",
+      "lang": "Armor and shields can be bought at {Dixi's} or at {Lee'Delle's}. Dixi runs that shop near {Obi's}."
+    },
+    {
+      "key": "npc.al_dee.stdmod_23",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Armor and shields can be bought at {Dixi's} or at {Lee'Delle's}. Dixi runs that shop near {Obi's}.",
+      "pl": "Pancerz i tarcze można kupić w {Dixi's} lub {Lee'Delle's}. Dixi prowadzi ten sklep w pobliżu {Obi's}.",
+      "lang": "Armor and shields can be bought at {Dixi's} or at {Lee'Delle's}. Dixi runs that shop near {Obi's}."
+    },
+    {
+      "key": "npc.al_dee.stdmod_26",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry, I don't sell potions. You should visit {Lily} for that.",
+      "pl": "Przykro mi, nie sprzedaję mikstur. W tej sprawie odwiedź {Lily}.",
+      "lang": "Sorry, I don't sell potions. You should visit {Lily} for that."
+    },
+    {
+      "key": "npc.al_dee.stdmod_27",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hmm, the best address to look for food might be {Willie} or {Billy}. {Norma} also has some snacks for sale.",
+      "pl": "Hmm, najlepszym adresem, żeby poszukać jedzenia, może być {Willie} albo {Billy}. {Norma} też ma trochę przekąsek na sprzedaż.",
+      "lang": "Hmm, the best address to look for food might be {Willie} or {Billy}. {Norma} also has some snacks for sale."
+    },
+    {
       "key": "npc.al_dee.stdmod_29",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -347,6 +473,69 @@
       "lang": "! ..."
     },
     {
+      "key": "data.otservbr.global.npc.a.beautiful.girl.L53.318",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "So you have come, |PLAYERNAME|. I hoped you would not...",
+      "pl": "A więc przyszedłeś, |PLAYERNAME|. Miałam nadzieję, że nie...",
+      "lang": "So you have come, |PLAYERNAME|. I hoped you would not..."
+    },
+    {
+      "key": "data.otservbr.global.npc.a.wrinkled.bonelord.L80.1421",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "What is this? An optically challenged entity called |PLAYERNAME|. How fascinating!",
+      "pl": "Cóż to? Istota z problemami wzroku zwąca się |PLAYERNAME|. Jak fascynujące!",
+      "lang": "What is this? An optically challenged entity called |PLAYERNAME|. How fascinating!"
+    },
+    {
+      "key": "data.otservbr.global.npc.alia.L148.1158",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "pl": "Witaj, młody |PLAYERNAME|! Jeśli jesteś ciężko ranny lub zatruty, mogę cię za darmo {heal}.",
+      "lang": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free."
+    },
+    {
+      "key": "data.otservbr.global.npc.amanda.L200.1226",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "pl": "Witaj, młody |PLAYERNAME|! Jeśli jesteś ciężko ranny lub zatruty, mogę cię za darmo {heal}.",
+      "lang": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free."
+    },
+    {
+      "key": "data.otservbr.global.npc.amber.L428.530",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh hello, nice to see you |PLAYERNAME|. Are you here to hear some stories of my {adventures} or do you need {help}?",
+      "pl": "O, cześć, miło cię widzieć |PLAYERNAME|. Przyszedłeś posłuchać historii moich {adventures}, czy potrzebujesz {help}?",
+      "lang": "Oh hello, nice to see you |PLAYERNAME|. Are you here to hear some stories of my {adventures} or do you need {help}?"
+    },
+    {
+      "key": "data.otservbr.global.npc.anderson.L100.133",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ahoi, young man |PLAYERNAME| and welcome to the Nordic Tibia Ferries. If you need a {passage}, let me know.",
+      "pl": "Ahoj, młodzieńcze |PLAYERNAME|, witaj na Nordyckich Promach Tibii. Jeśli potrzebujesz {passage}, daj znać.",
+      "lang": "Ahoi, young man |PLAYERNAME| and welcome to the Nordic Tibia Ferries. If you need a {passage}, let me know."
+    },
+    {
+      "key": "data.otservbr.global.npc.aneus.L130.1323",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings adventurer |PLAYERNAME|. What leads you to me?",
+      "pl": "Pozdrowienia, poszukiwaczu przygód |PLAYERNAME|. Co cię do mnie sprowadza?",
+      "lang": "Greetings adventurer |PLAYERNAME|. What leads you to me?"
+    },
+    {
       "key": "data.otservbr.global.npc.arkarra.L54.501",
       "category": "server",
       "type": "pl_reference_missing_translation",
@@ -372,6 +561,177 @@
       "en": "...",
       "pl": "(...)",
       "lang": "..."
+    },
+    {
+      "key": "data.otservbr.global.npc.aruda.L257.1339",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye, |PLAYERNAME|. I really hope we'll talk again soon.",
+      "pl": "Do widzenia, |PLAYERNAME|. Naprawdę mam nadzieję, że wkrótce znów porozmawiamy.",
+      "lang": "Good bye, |PLAYERNAME|. I really hope we'll talk again soon."
+    },
+    {
+      "key": "data.otservbr.global.npc.aruda.L64.1336",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh, hello |PLAYERNAME|, your hair looks great! Who did it for you?",
+      "pl": "O, cześć |PLAYERNAME|, świetnie wyglądają twoje włosy! Kto ci je zrobił?",
+      "lang": "Oh, hello |PLAYERNAME|, your hair looks great! Who did it for you?"
+    },
+    {
+      "key": "data.otservbr.global.npc.aruda.L67.1337",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh, hello, handsome! It's a pleasure to meet you, |PLAYERNAME|. Gladly I have the time to {chat} a bit.",
+      "pl": "O, cześć, przystojniaku! Miło cię poznać, |PLAYERNAME|. Chętnie znajdę chwilę, by {chat}.",
+      "lang": "Oh, hello, handsome! It's a pleasure to meet you, |PLAYERNAME|. Gladly I have the time to {chat} a bit."
+    },
+    {
+      "key": "data.otservbr.global.npc.atur.L76.727",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps?",
+      "pl": "Tak? Co mogę dla ciebie zrobić, |PLAYERNAME|? Może sprawy bankowe?",
+      "lang": "Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps?"
+    },
+    {
+      "key": "data.otservbr.global.npc.azalea.L148.851",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "pl": "Witaj, młody |PLAYERNAME|! Jeśli jesteś ciężko ranny lub zatruty, mogę cię za darmo {heal}.",
+      "lang": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free."
+    },
+    {
+      "key": "data.otservbr.global.npc.battlemart.L65.1361",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Farewell, |PLAYERNAME|, I'll be here if you need me again.",
+      "pl": "Żegnaj, |PLAYERNAME|, będę tu, jeśli znów będziesz mnie potrzebować.",
+      "lang": "Farewell, |PLAYERNAME|, I'll be here if you need me again."
+    },
+    {
+      "key": "data.otservbr.global.npc.bertha.L88.1552",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Oh, please come in, |PLAYERNAME|. What can I do for you? If you need adventure equipment, ask me for a {trade}.",
+      "pl": "Och, wejdź proszę, |PLAYERNAME|. Co mogę dla ciebie zrobić? Jeśli potrzebujesz sprzętu na wyprawę, poproś o {trade}.",
+      "lang": "Oh, please come in, |PLAYERNAME|. What can I do for you? If you need adventure equipment, ask me for a {trade}."
+    },
+    {
+      "key": "data.otservbr.global.npc.bertha.L91.1555",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Of course, just browse through my wares. {Footballs} have to be purchased separately.",
+      "pl": "Oczywiście, przejrzyj moje towary. {Footballs} trzeba kupić osobno.",
+      "lang": "Of course, just browse through my wares. {Footballs} have to be purchased separately."
+    },
+    {
+      "key": "data.otservbr.global.npc.billy.L147.1387",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Howdy |PLAYERNAME|. I'm a farmer and cook, maybe I can interest you in a {trade} with food? You can also ask me for general {hints} about the game.",
+      "pl": "Czołem |PLAYERNAME|. Jestem farmerem i kucharzem, może zainteresuje cię {trade} jedzeniem? Możesz też zapytać mnie o ogólne {hints} dotyczące gry.",
+      "lang": "Howdy |PLAYERNAME|. I'm a farmer and cook, maybe I can interest you in a {trade} with food? You can also ask me for general {hints} about the game."
+    },
+    {
+      "key": "data.otservbr.global.npc.bozo.L610.917",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hello, hello, hello, little lady |PLAYERNAME|! What brings you {here}?",
+      "pl": "Witaj, witaj, witaj, mała damo |PLAYERNAME|! Co cię {here} sprowadza?",
+      "lang": "Hello, hello, hello, little lady |PLAYERNAME|! What brings you {here}?"
+    },
+    {
+      "key": "data.otservbr.global.npc.brewster.L185.1484",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free.",
+      "pl": "Witaj, młody |PLAYERNAME|! Jeśli jesteś ciężko ranny lub zatruty, mogę cię za darmo {heal}.",
+      "lang": "Welcome, young |PLAYERNAME|! If you are heavily wounded or poisoned, I can {heal} you for free."
+    },
+    {
+      "key": "data.otservbr.global.npc.brodrosch.L134.319",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome, |PLAYERNAME|! May earth protect you on the rocky grounds. If you need a {passage}, I can help you.",
+      "pl": "Witaj, |PLAYERNAME|! Niech ziemia cię chroni na skalistych terenach. Jeśli potrzebujesz {passage}, mogę pomóc.",
+      "lang": "Welcome, |PLAYERNAME|! May earth protect you on the rocky grounds. If you need a {passage}, I can help you."
+    },
+    {
+      "key": "data.otservbr.global.npc.bron.L188.28",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome to my humble hut, |PLAYERNAME|.",
+      "pl": "Witaj w mojej skromnej chatce, |PLAYERNAME|.",
+      "lang": "Welcome to my humble hut, |PLAYERNAME|."
+    },
+    {
+      "key": "data.otservbr.global.npc.bruno.L61.437",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ahoi, |PLAYERNAME|. You want to buy some fresh fish?",
+      "pl": "Ahoj, |PLAYERNAME|. Chcesz kupić świeżą rybę?",
+      "lang": "Ahoi, |PLAYERNAME|. You want to buy some fresh fish?"
+    },
+    {
+      "key": "data.otservbr.global.npc.buddel.L134.211",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hey big guys. You? {Here}? *HICKS*",
+      "pl": "Hej, duże chłopaki. Ty? {Here}? *HICK*",
+      "lang": "Hey big guys. You? {Here}? *HICKS*"
+    },
+    {
+      "key": "data.otservbr.global.npc.cael.L392.236",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Greetings, |PLAYERNAME|! You must have come around quite a bit. I'm always interested in learning new things about Zao.",
+      "pl": "Pozdrowienia, |PLAYERNAME|! Musiałeś sporo podróżować. Zawsze chętnie poznaję nowe rzeczy o Zao.",
+      "lang": "Greetings, |PLAYERNAME|! You must have come around quite a bit. I'm always interested in learning new things about Zao."
+    },
+    {
+      "key": "data.otservbr.global.npc.captain.chelop.L75.1609",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome on board, recruit |PLAYERNAME|. Where can I {sail} you today?",
+      "pl": "Witamy na pokładzie, rekrucie |PLAYERNAME|. Dokąd mam cię dziś {sail}?",
+      "lang": "Welcome on board, recruit |PLAYERNAME|. Where can I {sail} you today?"
+    },
+    {
+      "key": "data.otservbr.global.npc.captain.gulliver.L92.845",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome on board, Sir |PLAYERNAME|. Where can I {sail} you today?",
+      "pl": "Witamy na pokładzie, Sir |PLAYERNAME|. Dokąd mam cię dziś {sail}?",
+      "lang": "Welcome on board, Sir |PLAYERNAME|. Where can I {sail} you today?"
+    },
+    {
+      "key": "data.otservbr.global.npc.captain.haba.open.sea.L60.1352",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You found the spot |PLAYERNAME|!! Grab yourself a helmet of the deep and go explore the {caves} down there.",
+      "pl": "Znalazłeś miejsce |PLAYERNAME|!! Chwyć hełm głębin i udaj się tam na eksplorację {caves}.",
+      "lang": "You found the spot |PLAYERNAME|!! Grab yourself a helmet of the deep and go explore the {caves} down there."
     },
     {
       "key": "data.otservbr.global.npc.captain.jack.rat.L59.983",
@@ -656,9 +1016,9 @@
     }
   ],
   "auto_fix": {
-    "attempted": 28,
+    "attempted": 68,
     "applied": 0,
-    "skipped": 28,
+    "skipped": 68,
     "errors": 0
   }
 }

@@ -9481,11 +9481,11 @@
   },
   "scripts.chest.msg_1": {
     "src_hash": "a96509dffb06f1f5933de18be57bb03e",
-    "text": "You found.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Il baule è vuoto.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T07:40:04.914569Z"
+    "updated_at": "2026-02-20T22:39:22.952562Z"
   },
   "scripts.closing_door.msg_1": {
     "src_hash": "373a68cb4c35a94b33502f1c96bede67",
@@ -80974,5 +80974,85 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:31:29.005186Z"
+  },
+  "scripts.chest.msg_2": {
+    "src_hash": "ac1f9925628d9e59d3b4385a686c8259",
+    "text": "Hai trovato una spada di legno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:39:22.953004Z"
+  },
+  "scripts.citizen.msg_1": {
+    "src_hash": "b8bb2a5d3b1a405748d53de0babf848e",
+    "text": "Non ti è ancora consentito scegliere Svargrond.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:39:22.953696Z"
+  },
+  "scripts.citizen.msg_2": {
+    "src_hash": "a77c39e3ccc38694ad61f849b12281c3",
+    "text": "Hai cambiato la tua città in {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:39:22.954312Z"
+  },
+  "scripts.citizen_svargrond.say_1": {
+    "src_hash": "25dd53d32a716d2c7f87611e31827ded",
+    "text": "Devi essere un barbaro onorario per accedere al tetto. Parlane con lo Jarl.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:39:22.954920Z"
+  },
+  "scripts.clay_lump.sound_fail": {
+    "src_hash": "627629de0fe0dc39eb8ce71cd5e9d70c",
+    "text": "Oh amico. Non ha funzionato molto bene.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:39:30.028735Z"
+  },
+  "scripts.close_server.msg_1": {
+    "src_hash": "333827699856cd0b1f779bfca0e48fff",
+    "text": "Il server è impostato in modalità manutenzione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:39:30.029281Z"
+  },
+  "scripts.close_server.msg_2": {
+    "src_hash": "7912bf524f6d3d3f2dc409220aa11b8e",
+    "text": "Il server è ora chiuso.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:39:30.029741Z"
+  },
+  "scripts.closing_door.msg_2": {
+    "src_hash": "227c86ee15812ee3777b6d25c989a4f6",
+    "text": "Solo chi ne è degno può passare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:39:30.030487Z"
+  },
+  "scripts.cobra_flask.msg_1": {
+    "src_hash": "328a604233c4aebfa641bd98989394eb",
+    "text": "Ne versi con attenzione solo una piccola quantità, dosata finemente... ed ecco tutto il contenuto della bottiglia. State indietro!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:39:33.618892Z"
+  },
+  "scripts.coconut_shrimp_bake.msg_2": {
+    "src_hash": "aa142f58af05f46cbbdebce92dbd7e65",
+    "text": "Dovresti mangiare questo piatto solo indossando un elmo degli abissi o una galea di profondità e camminando sott'acqua.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:39:33.619812Z"
   }
 }

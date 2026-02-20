@@ -27,6 +27,7 @@
 
 #include <framework/stdext/traits.h>
 #include <tuple>
+#include <utility>
 
 /// This namespace contains some dirty metaprogamming that uses a lot of C++0x features
 /// The purpose here is to create templates that can bind any function from C++
@@ -42,9 +43,11 @@ namespace luabinder
     template<typename Tuple, std::size_t... I>
     void pack_values_into_tuple_impl(Tuple& tuple, LuaInterface* lua, std::index_sequence<I...>)
     {
-        constexpr auto N = sizeof...(I);
-        // fold expression: pop in reverse order (N-1, N-2, ..., 0)
-        ((std::get<N - 1 - I>(tuple) = lua->polymorphicPop<std::tuple_element_t<N - 1 - I, Tuple>>()), ...);
+        constexpr std::size_t N = sizeof...(I);
+        if constexpr (N > 0) {
+            // fold expression: pop in reverse order (N-1, N-2, ..., 0)
+            ((std::get<N - 1 - I>(tuple) = lua->polymorphicPop<std::tuple_element_t<N - 1 - I, Tuple>>()), ...);
+        }
     }
 
     /// C++ function caller that can push results to lua

@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-20T17:36:59.141022Z",
-  "cycle_counter": 5853,
-  "last_target_key": "es:client.json",
-  "last_pending_total": 10,
+  "timestamp": "2026-02-20T17:38:08.428247Z",
+  "cycle_counter": 5856,
+  "last_target_key": "pl:client.json",
+  "last_pending_total": 13,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 183,
@@ -39,7 +39,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 12,
+  "cache_cycle": 13,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -96,9 +96,9 @@
     "sr:monsters.json": 0,
     "pl:otclient_modules.json": 0,
     "es:npclib.json": 0,
-    "pl:cpp.json": 1,
+    "pl:cpp.json": 0,
     "pl:client.json": 1,
-    "es:achievements.json": 1,
+    "es:achievements.json": 2,
     "es:cpp.json": 1,
     "it:otclient_modules.json": 0,
     "ru:books.json": 0,
@@ -148,7 +148,8 @@
     "ru:movements.json": 1,
     "pl:monsters.json": 0,
     "es:server.json": 0,
-    "es:scripts.json": 0
+    "es:scripts.json": 0,
+    "es:client.json": 1
   },
   "bootstrap_priority": {
     "enabled": true,

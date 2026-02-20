@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T20:21:36.313090Z",
-  "window_start_utc": "2026-02-20T19:21:35.601580Z",
-  "window_end_utc": "2026-02-20T20:21:35.601580Z",
+  "timestamp": "2026-02-20T20:22:27.627533Z",
+  "window_start_utc": "2026-02-20T19:22:26.927473Z",
+  "window_end_utc": "2026-02-20T20:22:26.927473Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,15 +9,15 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 201,
-  "rejected_entries_raw": 385,
+  "rejected_entries_raw": 401,
   "suspicious_entries": 3623,
-  "suspicious_entries_raw": 24842,
+  "suspicious_entries_raw": 22185,
   "guard_fail_entries": 125,
-  "guard_fail_sum": 7761,
+  "guard_fail_sum": 7781,
   "by_type": {
     "identical_to_en": 160,
-    "word_salad": 7,
     "mixed_language": 9,
+    "word_salad": 7,
     "mixed_scripts": 22,
     "cyrillic_latin_mix": 22,
     "contains_tibia_proper_noun": 17,
@@ -27,19 +27,18 @@
     "google_translate": 201
   },
   "by_language": {
-    "ro": 61,
     "es": 40,
     "pl": 42,
+    "ro": 61,
     "ru": 22,
     "it": 25,
     "sv": 11
   },
   "by_category": {
-    "items.json": 27,
-    "npc.json": 4,
     "spells.json": 33,
     "quests.json": 3,
     "scripts.json": 13,
+    "npc.json": 4,
     "server.json": 17,
     "books.json": 1,
     "otclient_modules.json": 29,
@@ -49,7 +48,8 @@
     "achievements.json": 18,
     "libs.json": 7,
     "php.json": 2,
-    "modules.json": 3
+    "modules.json": 3,
+    "items.json": 27
   },
   "by_severity": {
     "CRITICAL": 167,
@@ -218,13 +218,6 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "spell.iksyapunac_wave.name",
       "count": 2,
       "types": {
@@ -233,6 +226,13 @@
     },
     {
       "key": "spell.mitmahseer_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2

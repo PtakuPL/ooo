@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:13:44.190614Z",
-  "window_start_utc": "2026-02-20T18:13:43.472430Z",
-  "window_end_utc": "2026-02-20T19:13:43.472430Z",
+  "timestamp": "2026-02-20T19:14:20.160689Z",
+  "window_start_utc": "2026-02-20T18:14:19.460141Z",
+  "window_end_utc": "2026-02-20T19:14:19.460141Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,16 +9,16 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 68,
-  "rejected_entries_raw": 352,
-  "suspicious_entries": 3112,
-  "suspicious_entries_raw": 28315,
-  "guard_fail_entries": 127,
+  "rejected_entries_raw": 335,
+  "suspicious_entries": 3103,
+  "suspicious_entries_raw": 25268,
+  "guard_fail_entries": 129,
   "guard_fail_sum": 6198,
   "by_type": {
     "identical_to_en": 63,
-    "contains_tibia_proper_noun": 4,
     "word_salad": 1,
-    "mixed_language": 4
+    "mixed_language": 4,
+    "contains_tibia_proper_noun": 4
   },
   "by_source": {
     "google_translate": 68
@@ -46,11 +46,11 @@
       "count": 63
     },
     {
-      "type": "contains_tibia_proper_noun",
+      "type": "mixed_language",
       "count": 4
     },
     {
-      "type": "mixed_language",
+      "type": "contains_tibia_proper_noun",
       "count": 4
     },
     {
@@ -59,6 +59,34 @@
     }
   ],
   "top_keys": [
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.10388.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.10391.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.12742.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
     {
       "key": "monster.sorcerer_familiar.name",
       "count": 2,
@@ -92,112 +120,84 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.10388.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.10391.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.12742.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "monster.deathspawn.name",
+      "key": "monster.glooth_golem.voice_1",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "monster.slime.name",
+      "key": "monster.shrieking_cry_stal.voice_1",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "monster.frost_troll.name",
+      "key": "monster.enraged_crystal_golem.voice_1",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "monster.demon.name",
+      "key": "monster.rustheap_golem.voice_2",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "monster.sandcrawler.name",
+      "key": "monster.rustheap_golem.voice_3",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "monster.bazir.name",
+      "key": "npc.al_dee.stdmod_41",
+      "count": 1,
+      "types": {
+        "word_salad": 1
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L71.1487",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "monster.bazir.desc",
+      "key": "data.otservbr.global.npc.brasith.L59.1211",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "monster.dragon.name",
+      "key": "npc.a_fluffy_squirrel.greet_msg_1",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "monster.old_pig.voice_2",
+      "key": "item.10096.name",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "monster.weeper.voice_1",
+      "key": "item.10180.name",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "monster.eternal_guardian.voice_1",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "monster.worker_golem.voice_3",
+      "key": "item.10190.name",
       "count": 1,
       "types": {
         "identical_to_en": 1

@@ -1,8 +1,8 @@
 {
-  "total_cycles": 92,
+  "total_cycles": 93,
   "mode": "AUTO_TRANSLATE",
   "category": "ru",
-  "last_update": "2026-02-20T20:13:38.881722",
+  "last_update": "2026-02-20T20:14:15.280556",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,8 +27,8 @@
   },
   "auto_translate": {
     "language": "ru",
-    "json_file": "items.json",
-    "keys_to_translate": 6310,
+    "json_file": "monsters.json",
+    "keys_to_translate": 141,
     "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",

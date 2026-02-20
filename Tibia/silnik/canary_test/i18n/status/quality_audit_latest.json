@@ -1,14 +1,16 @@
 {
-  "timestamp": "2026-02-20T17:28:31.175805Z",
+  "timestamp": "2026-02-20T17:29:35.760419Z",
   "checked_entries": 100,
-  "issues_found": 32,
+  "issues_found": 39,
   "issues_by_type": {
-    "identical_to_en_exempt": 7,
+    "identical_to_en_exempt": 11,
     "artifact_token": 32,
-    "suspicious_log_high": 62,
-    "suspicious_log_critical": 44,
-    "suspicious_rejected_critical": 144,
-    "suspicious_rejected_high": 25
+    "identical_to_en": 7,
+    "suspicious_log_high": 60,
+    "suspicious_log_critical": 41,
+    "suspicious_log_low": 8,
+    "suspicious_rejected_critical": 151,
+    "suspicious_rejected_high": 26
   },
   "issues": [
     {
@@ -234,6 +236,55 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "questlog.quest_1.mission_1.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Hidden Seal",
+      "translated": "The Hidden Seal"
+    },
+    {
+      "key": "questlog.quest_1.mission_2.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Plague Seal",
+      "translated": "The Plague Seal"
+    },
+    {
+      "key": "questlog.quest_1.mission_8.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Final Battle",
+      "translated": "The Final Battle"
+    },
+    {
+      "key": "questlog.quest_11.mission_10.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Carniphilas",
+      "translated": "Paw and Fur: Carniphilas"
+    },
+    {
+      "key": "questlog.quest_11.mission_12.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Mammoths",
+      "translated": "Paw and Fur: Mammoths"
+    },
+    {
+      "key": "questlog.quest_11.mission_13.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Gnarlhounds",
+      "translated": "Paw and Fur: Gnarlhounds"
+    },
+    {
+      "key": "questlog.quest_11.mission_14.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Paw and Fur: Terramites",
+      "translated": "Paw and Fur: Terramites"
     }
   ],
   "threshold": 10,

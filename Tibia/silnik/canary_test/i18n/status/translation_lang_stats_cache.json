@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T17:28:35.161840Z",
+  "timestamp": "2026-02-20T17:29:39.643649Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1975,
-  "file_cache_misses": 1,
+  "cache_hits": 49,
+  "cache_misses": 3,
+  "file_cache_hits": 1973,
+  "file_cache_misses": 3,
   "langs": {
     "ar": {
       "sig": [
@@ -25467,8 +25467,8 @@
         [
           "questlog.json",
           1,
-          1771606053412584689,
-          244417
+          1771608574326552937,
+          244418
         ],
         [
           "quests.json",
@@ -25530,14 +25530,14 @@
         "language_name": "Polski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 47031,
-        "english_copy_keys": 1831,
+        "translated_keys": 47034,
+        "english_copy_keys": 1832,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 87.77,
         "server_keys": 49731,
-        "server_translated": 43993,
-        "server_pct": 88.46,
+        "server_translated": 43996,
+        "server_pct": 88.47,
         "client_keys": 3855,
         "client_translated": 3038,
         "client_pct": 78.81
@@ -25938,13 +25938,13 @@
         "questlog.json": {
           "sig": [
             1,
-            1771606053412584689,
-            244417
+            1771608574326552937,
+            244418
           ],
           "row": {
             "total_reference_keys": 1918,
-            "translated_keys": 96,
-            "english_copy_keys": 16,
+            "translated_keys": 99,
+            "english_copy_keys": 17,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -30972,7 +30972,7 @@
         [
           "server.json",
           1,
-          1771606010812759809,
+          1771608554670019756,
           315547
         ],
         [
@@ -31475,7 +31475,7 @@
         "server.json": {
           "sig": [
             1,
-            1771606010812759809,
+            1771608554670019756,
             315547
           ],
           "row": {
@@ -31755,7 +31755,7 @@
         [
           "server.json",
           1,
-          1771606005474510557,
+          1771608548587575457,
           298123
         ],
         [
@@ -32258,7 +32258,7 @@
         "server.json": {
           "sig": [
             1,
-            1771606005474510557,
+            1771608548587575457,
             298123
           ],
           "row": {

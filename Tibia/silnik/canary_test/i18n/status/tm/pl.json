@@ -117886,5 +117886,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T16:47:33.412606Z"
+  },
+  "questlog.quest_11.mission_13.state_1": {
+    "src_hash": "66ee4f06c868532e10d31e8f66bed6cd",
+    "text": "Udało Ci się upolować 300 Gnarlhoundów. Jeśli chcesz, możesz wykonać to zadanie jeszcze raz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:29:31.179787Z"
+  },
+  "questlog.quest_11.mission_13.state_2": {
+    "src_hash": "d8cb6c62aca647f0ebd040786a6d177e",
+    "text": "Udało Ci się upolować 300 Gnarlhoundów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:29:34.320496Z"
+  },
+  "questlog.quest_11.mission_14.name": {
+    "src_hash": "76fbd5c00d2b80ae8372f8a5c75f5eff",
+    "text": "Paw and Fur: Terramites",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:29:34.321004Z"
+  },
+  "questlog.quest_11.mission_14.state_1": {
+    "src_hash": "4b3fa88ea1201116e3e0480e1e953a52",
+    "text": "Udało Ci się upolować 300 termitów. Jeśli chcesz, możesz wykonać to zadanie jeszcze raz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:29:34.321546Z"
   }
 }

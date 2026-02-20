@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T20:15:58.064116Z",
-  "window_start_utc": "2026-02-20T19:15:57.243332Z",
-  "window_end_utc": "2026-02-20T20:15:57.243332Z",
+  "timestamp": "2026-02-20T20:17:25.132247Z",
+  "window_start_utc": "2026-02-20T19:17:24.442881Z",
+  "window_end_utc": "2026-02-20T20:17:24.442881Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,15 +9,15 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 221,
-  "rejected_entries_raw": 393,
-  "suspicious_entries": 3636,
-  "suspicious_entries_raw": 20832,
-  "guard_fail_entries": 126,
-  "guard_fail_sum": 6760,
+  "rejected_entries_raw": 396,
+  "suspicious_entries": 3627,
+  "suspicious_entries_raw": 21882,
+  "guard_fail_entries": 123,
+  "guard_fail_sum": 7736,
   "by_type": {
     "identical_to_en": 179,
-    "word_salad": 7,
     "mixed_language": 10,
+    "word_salad": 7,
     "mixed_scripts": 22,
     "cyrillic_latin_mix": 22,
     "contains_tibia_proper_noun": 17,
@@ -27,19 +27,19 @@
     "google_translate": 221
   },
   "by_language": {
-    "es": 40,
     "it": 45,
+    "es": 40,
     "ro": 61,
     "pl": 42,
     "ru": 22,
     "sv": 11
   },
   "by_category": {
-    "scripts.json": 13,
-    "npc.json": 4,
     "spells.json": 53,
+    "npc.json": 4,
     "items.json": 27,
     "quests.json": 3,
+    "scripts.json": 13,
     "server.json": 17,
     "books.json": 1,
     "otclient_modules.json": 29,
@@ -218,13 +218,6 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "spell.rotthingholy_ulus.name",
       "count": 2,
       "types": {
@@ -247,6 +240,13 @@
     },
     {
       "key": "spell.single_ice_chain.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.quara_raider_icering.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

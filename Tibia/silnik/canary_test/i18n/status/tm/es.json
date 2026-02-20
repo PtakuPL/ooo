@@ -153966,5 +153966,69 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T19:55:38.356191Z"
+  },
+  "item.14019.desc": {
+    "src_hash": "fc1bfb61e4688add46f9a06cbdb0c743",
+    "text": "Esta ancla es etérea y perteneció a un capitán que se hundió con su barco hace mucho tiempo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:16:29.581838Z"
+  },
+  "item.14019.name": {
+    "src_hash": "8c3c5a0e24351eb20de02143862c2553",
+    "text": "pequeña ancla dorada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:16:29.582125Z"
+  },
+  "item.14027.name": {
+    "src_hash": "009cd240a1ef26fa37fdb7ebe32bdfe4",
+    "text": "oropel de pared medianera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:16:29.582384Z"
+  },
+  "item.14029.desc": {
+    "src_hash": "3500d6ce1988933c2a8673d623b83dd3",
+    "text": "En él hay una flor de invierno completamente desarrollada. Esta planta ya no puede marchitarse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:16:29.582841Z"
+  },
+  "item.14030.desc": {
+    "src_hash": "629a7f57046555f4d80458c64f333eac",
+    "text": "La planta que contiene parece ser una flor de invierno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:16:29.583295Z"
+  },
+  "item.14031.desc": {
+    "src_hash": "510b3f4228c1cf14292c7bd9c2f5d752",
+    "text": "La planta que contiene parece ser una flor de invierno. La tierra esta un poco seca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:16:33.218722Z"
+  },
+  "item.14033.desc": {
+    "src_hash": "7192d6b8dbcf58360ff86a7ce1e8708f",
+    "text": "En él hay una planta de lengua de lagarto completamente desarrollada. Esta planta ya no puede marchitarse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:16:33.219335Z"
+  },
+  "item.14034.desc": {
+    "src_hash": "348a51b0600ac64b0695498ee960c4b5",
+    "text": "En él se encuentra la flor del corazón de una dríada completamente desarrollada. Esta planta ya no puede marchitarse",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:16:33.219843Z"
   }
 }

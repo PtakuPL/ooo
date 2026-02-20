@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-20T19:39:28.959195Z",
-  "cycle_counter": 6152,
-  "last_target_key": "ro:client.json",
-  "last_pending_total": 31,
+  "timestamp": "2026-02-20T19:40:44.762311Z",
+  "cycle_counter": 6155,
+  "last_target_key": "ro:npclib.json",
+  "last_pending_total": 47,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 183,
@@ -11,7 +11,7 @@
   "skipped_guard_fail": 2,
   "guard_fail_blacklist": {
     "ro:monsters.json": 6159,
-    "pl:spells.json": 6153
+    "pl:spells.json": 6163
   },
   "tier_config": {
     "tier1": [
@@ -37,7 +37,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 116,
+  "cache_cycle": 117,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -131,9 +131,9 @@
     "pl:libs.json": 2,
     "es:libs.json": 2,
     "es:startup.json": 2,
-    "it:client.json": 2,
+    "it:client.json": 0,
     "it:achievements.json": 0,
-    "ru:achievements.json": 1,
+    "ru:achievements.json": 0,
     "ro:libs.json": 0,
     "it:globalevents.json": 0,
     "pl:quests.json": 0,
@@ -149,7 +149,8 @@
     "es:scripts.json": 0,
     "es:client.json": 2,
     "pl:otclient_data.json": 1,
-    "ru:libs.json": 0
+    "ru:libs.json": 0,
+    "ro:client.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,

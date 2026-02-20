@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T19:40:16.383269Z",
+  "timestamp": "2026-02-20T19:41:26.050098Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 48,
-  "cache_misses": 4,
-  "file_cache_hits": 1972,
-  "file_cache_misses": 4,
+  "cache_hits": 49,
+  "cache_misses": 3,
+  "file_cache_hits": 1973,
+  "file_cache_misses": 3,
   "langs": {
     "ar": {
       "sig": [
@@ -15927,7 +15927,7 @@
         [
           "client.json",
           1,
-          1771536692771528156,
+          1771616434536605495,
           15878
         ],
         [
@@ -16206,7 +16206,7 @@
         "client.json": {
           "sig": [
             1,
-            1771536692771528156,
+            1771616434536605495,
             15878
           ],
           "row": {
@@ -26991,8 +26991,8 @@
         [
           "npclib.json",
           1,
-          1771319819508924310,
-          13295
+          1771616480502792799,
+          13176
         ],
         [
           "otclient_data.json",
@@ -27096,14 +27096,14 @@
         "language_name": "Rumuński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 23071,
+        "translated_keys": 23101,
         "english_copy_keys": 2347,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 43.05,
+        "completion_pct": 43.11,
         "server_keys": 49731,
-        "server_translated": 21797,
-        "server_pct": 43.83,
+        "server_translated": 21827,
+        "server_pct": 43.89,
         "client_keys": 3855,
         "client_translated": 1274,
         "client_pct": 33.05
@@ -27406,12 +27406,12 @@
         "npclib.json": {
           "sig": [
             1,
-            1771319819508924310,
-            13295
+            1771616480502792799,
+            13176
           ],
           "row": {
             "total_reference_keys": 147,
-            "translated_keys": 100,
+            "translated_keys": 130,
             "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0
@@ -27648,7 +27648,7 @@
         [
           "achievements.json",
           1,
-          1771536704627496141,
+          1771616442991657831,
           192131
         ],
         [
@@ -27895,7 +27895,7 @@
         "achievements.json": {
           "sig": [
             1,
-            1771536704627496141,
+            1771616442991657831,
             192131
           ],
           "row": {

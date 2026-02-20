@@ -70934,5 +70934,245 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T19:34:52.226666Z"
+  },
+  "npclib.bank_system.say_4": {
+    "src_hash": "932405ed00983a70764473feb855e5aa",
+    "text": "Cărei breasle ai vrea să transferi {} aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:40:46.739791Z"
+  },
+  "npclib.bank_system.say_5": {
+    "src_hash": "b8045be4d69a1763526040613fcac092",
+    "text": "Deci, doriți să transferați {} aur din contul breslei dvs. în breasla {}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:40:46.740326Z"
+  },
+  "npclib.bank_system.say_9": {
+    "src_hash": "c0bbe2361536121213729be4e9f8df89",
+    "text": "Chiar ți-ar plăcea să depui {} aur pe {guild account}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:40:46.741031Z"
+  },
+  "npclib.bank_system.say_32": {
+    "src_hash": "8115996744249c24b181f8afb16dc1d1",
+    "text": "Wow, ai atins cifra magică de un milion de gp!!! \\z\n                           Soldul contului tău este {} aur!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:40:52.469002Z"
+  },
+  "npclib.bank_system.say_33": {
+    "src_hash": "0aaf4f9932c0e5bdbf4bf17953b54254",
+    "text": "Ai făcut zece milioane și tot crește! \\z\n                           Soldul contului dvs. este {} aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:40:52.469549Z"
+  },
+  "npclib.bank_system.say_34": {
+    "src_hash": "e44e53dbc4e7148edbeb5ed74a540067",
+    "text": "Cred că trebuie să fii unul dintre cei mai bogați locuitori din lume! \\z\n                           Soldul contului dvs. este {} aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:40:52.470135Z"
+  },
+  "npclib.bank_system.say_6": {
+    "src_hash": "66f8222f1435cf4f513e060209201771",
+    "text": "Am plasat o comandă de a retrage {} aur din contul breslei tale. \\z\n                            Vă rugăm să vă verificați căsuța de e-mail pentru confirmare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:40:52.470795Z"
+  },
+  "npclib.bank_system.say_7": {
+    "src_hash": "021381bc06fb00fb0bc4c60afaf41915",
+    "text": "Sigur doriți să retrageți {} aur din contul breslei?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:40:52.471225Z"
+  },
+  "npclib.bank_system.say_8": {
+    "src_hash": "253e7db9204c9768ac5c5ea75d439649",
+    "text": "Bine, am plasat o comandă pentru a depune suma de {} aur la \\z\n                           contul breslei tale. Vă rugăm să vă verificați căsuța de e-mail pentru confirmare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:40:59.012161Z"
+  },
+  "npclib.handler.already_focused": {
+    "src_hash": "75cb906e2ea6af69d3e2b0d9db5c7f35",
+    "text": "{0}, vorbesc deja cu tine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:40:59.012484Z"
+  },
+  "npclib.handler.buy": {
+    "src_hash": "114f3934c2fb667bfed44da9f8b80e9d",
+    "text": "Doriți să cumpărați {0} {1} pentru {2} monede de aur?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:40:59.012864Z"
+  },
+  "npclib.handler.farewell": {
+    "src_hash": "63c16b9228e904e7d7f562396bbc6fec",
+    "text": "La revedere, {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:40:59.013094Z"
+  },
+  "npclib.handler.greet": {
+    "src_hash": "badac7549fdf42d99c78303ae9f5d698",
+    "text": "Salutări, {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:40:59.013318Z"
+  },
+  "npclib.handler.missing_item": {
+    "src_hash": "16bcf74b510050f662c91a89c301a2fd",
+    "text": "Nu ai atât de multe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:03.923846Z"
+  },
+  "npclib.handler.need_item": {
+    "src_hash": "e99300d8a6151a7d4df212c544198c73",
+    "text": "Nu aveți acest obiect.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:03.924426Z"
+  },
+  "npclib.handler.need_more_space": {
+    "src_hash": "38f3d735fbd1c97e97aaf1fa1989be6b",
+    "text": "Nu aveți suficientă capacitate pentru toate articolele.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:03.925090Z"
+  },
+  "npclib.handler.noshop": {
+    "src_hash": "fb493b842c28f1d432b28e163702c545",
+    "text": "Scuze, nu ofer nimic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:03.925655Z"
+  },
+  "npclib.handler.oncloseshop": {
+    "src_hash": "4550cf1e6e98345740da49701cd30afd",
+    "text": "Mulțumesc, revino ori de câte ori ai nevoie de altceva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:03.926355Z"
+  },
+  "npclib.handler.sendtrade_choose_wisely_with_categories": {
+    "src_hash": "db6f69373f813af4286d9a8d46450595",
+    "text": "Alege cu înțelepciune! Sau poate vrei să te uiți doar la {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:11.127429Z"
+  },
+  "npclib.handler.sendtrade_have_a_look_with_categories": {
+    "src_hash": "b226702484e7cb369b95958ac3c3f1d2",
+    "text": "Aruncă o privire. Dar poate vrei doar să-mi vezi {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:11.127832Z"
+  },
+  "npclib.handler.sendtrade_lootmonger_with_categories": {
+    "src_hash": "1e7c9d5891b1d9f14624d9e5f01475f9",
+    "text": "Ah, un client! Fii salutat, {0}! Cumpăr tot felul de pradă, te uiți la {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:11.128291Z"
+  },
+  "npclib.handler.sendtrade_with_categories": {
+    "src_hash": "ed7fe928684aa8acb54c2f49ec9a5aba",
+    "text": "Desigur, răsfoiește-mi produsele. Sau vrei să te uiți doar la {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:11.128718Z"
+  },
+  "npclib.modules.already_promoted": {
+    "src_hash": "223e933bc53b5190244858c88216f4a3",
+    "text": "Ești deja promovat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:11.128981Z"
+  },
+  "npclib.modules.bless_already_have": {
+    "src_hash": "299238c1ad2213c614a5b40865f27a1d",
+    "text": "Dețineți deja această binecuvântare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:17.168839Z"
+  },
+  "npclib.modules.bless_need_geomancer": {
+    "src_hash": "c1964a0fc61830e95915a5f9d177805d",
+    "text": "Mai întâi ai nevoie de binecuvântarea marelui geomant.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:17.169235Z"
+  },
+  "npclib.modules.bless_no_money": {
+    "src_hash": "1bea18537dd48f110c12f6a69623bdf6",
+    "text": "Oh. Nu ai destui bani.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:17.169527Z"
+  },
+  "npclib.modules.bless_success": {
+    "src_hash": "59e88928ed3b2f80e0ec474b073bb8ec",
+    "text": "Ai fost binecuvântat de unul dintre cei șapte zei!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:17.169898Z"
+  },
+  "npclib.modules.confirm_need_premium": {
+    "src_hash": "ece1faef6daa65dbe6e4c6908f51f7f4",
+    "text": "Pot să permit doar jucătorilor premium să călătorească acolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:17.170278Z"
+  },
+  "npclib.modules.confirm_no_money": {
+    "src_hash": "3c4ac29a8444d4809c80c54448057274",
+    "text": "Nu ai destui bani!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:20.505539Z"
+  },
+  "npclib.modules.confirm_pz_locked": {
+    "src_hash": "438ebe015499210487a70448a74bcd34",
+    "text": "Pleacă de acolo cu acest sânge.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:20.505879Z"
   }
 }

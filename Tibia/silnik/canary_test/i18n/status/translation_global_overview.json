@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-20T17:38:45.862407Z",
+  "timestamp": "2026-02-20T17:39:23.465735Z",
   "global": {
     "total_reference_keys": 2786472,
     "translated_keys": 385693,
@@ -49,34 +49,34 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 6665,
-    "guard_reports_blocked": 3773,
+    "guard_reports_total": 6667,
+    "guard_reports_blocked": 3775,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 3773
+    "cannot_translate_reports_visible": 3775
   },
   "cache": {
     "lang_stats_hits": 50,
     "lang_stats_misses": 2,
     "lang_stats_hit_pct": 96.2,
     "lang_stats_mode": "mixed",
-    "lang_file_hits": 1973,
-    "lang_file_misses": 3,
-    "lang_file_hit_pct": 99.8,
+    "lang_file_hits": 1974,
+    "lang_file_misses": 2,
+    "lang_file_hit_pct": 99.9,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-20T17:38:41.116917Z",
-    "cycle": 13,
+    "timestamp": "2026-02-20T17:39:18.804748Z",
+    "cycle": 14,
     "mode": "AUTO_TRANSLATE",
-    "category": "pl",
+    "category": "es",
     "events": {
-      "dispatch": 450,
-      "mode_run": 68231
+      "dispatch": 2219,
+      "mode_run": 14931
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-20T16:38:45.239870Z",
-    "window_end_utc": "2026-02-20T17:38:45.239870Z",
+    "window_start_utc": "2026-02-20T16:39:22.847970Z",
+    "window_end_utc": "2026-02-20T17:39:22.847970Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -93,14 +93,14 @@
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 2739,
-    "guard_fail": 4016,
-    "guard_fail_rate_pct": 59.5,
-    "no_progress_entries": 7,
-    "no_progress_rate_pct": 6.7,
-    "throughput_keys_per_h": 1566.0,
-    "suspicious_total": 4086,
-    "suspicious_total_raw": 20912,
+    "translated": 2694,
+    "guard_fail": 4023,
+    "guard_fail_rate_pct": 59.9,
+    "no_progress_entries": 8,
+    "no_progress_rate_pct": 7.6,
+    "throughput_keys_per_h": 1538.8,
+    "suspicious_total": 4090,
+    "suspicious_total_raw": 20810,
     "gt_translated": 143,
     "gt_active": true,
     "top_guard_fail_targets": [
@@ -155,23 +155,23 @@
     ]
   },
   "guard_fail_breakdown": {
-    "timestamp": "2026-02-20T17:38:45.859987Z",
-    "window_start_utc": "2026-02-20T16:38:45.239870Z",
-    "window_end_utc": "2026-02-20T17:38:45.239870Z",
+    "timestamp": "2026-02-20T17:39:23.463312Z",
+    "window_start_utc": "2026-02-20T16:39:22.847970Z",
+    "window_end_utc": "2026-02-20T17:39:22.847970Z",
     "window_hours": 1.0,
     "sources": {
       "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
       "suspicious_log": "i18n/status/suspicious_log.jsonl",
       "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
     },
-    "rejected_entries": 316,
-    "rejected_entries_raw": 639,
-    "suspicious_entries": 4086,
-    "suspicious_entries_raw": 20912,
-    "guard_fail_entries": 104,
-    "guard_fail_sum": 4016,
+    "rejected_entries": 318,
+    "rejected_entries_raw": 628,
+    "suspicious_entries": 4090,
+    "suspicious_entries_raw": 20810,
+    "guard_fail_entries": 105,
+    "guard_fail_sum": 4023,
     "by_type": {
-      "identical_to_en": 253,
+      "identical_to_en": 255,
       "mixed_language": 33,
       "word_salad": 12,
       "mixed_scripts": 15,
@@ -180,11 +180,11 @@
       "fx_token": 3
     },
     "by_source": {
-      "google_translate": 316
+      "google_translate": 318
     },
     "by_language": {
-      "pl": 68,
-      "es": 49,
+      "es": 50,
+      "pl": 69,
       "it": 52,
       "ru": 15,
       "ro": 119,
@@ -202,16 +202,17 @@
       "achievements.json": 7,
       "otclient_modules.json": 28,
       "client.json": 4,
-      "cpp.json": 5
+      "cpp.json": 6,
+      "otclient_data.json": 1
     },
     "by_severity": {
-      "CRITICAL": 265,
+      "CRITICAL": 267,
       "HIGH": 51
     },
     "top_types": [
       {
         "type": "identical_to_en",
-        "count": 253
+        "count": 255
       },
       {
         "type": "mixed_language",
@@ -290,41 +291,6 @@
         }
       },
       {
-        "key": "spell.rotthingholy_ulus.name",
-        "count": 3,
-        "types": {
-          "identical_to_en": 3
-        }
-      },
-      {
-        "key": "spell.single_ice_chain.name",
-        "count": 3,
-        "types": {
-          "identical_to_en": 3
-        }
-      },
-      {
-        "key": "spell.podzillaphys_chain.name",
-        "count": 3,
-        "types": {
-          "identical_to_en": 3
-        }
-      },
-      {
-        "key": "spell.iksyapunac_wave.name",
-        "count": 3,
-        "types": {
-          "identical_to_en": 3
-        }
-      },
-      {
-        "key": "spell.mitmahseer_wave.name",
-        "count": 3,
-        "types": {
-          "identical_to_en": 3
-        }
-      },
-      {
         "key": "spell.makara_watersplash.name",
         "count": 3,
         "types": {
@@ -346,6 +312,20 @@
         }
       },
       {
+        "key": "spell.iksyapunac_wave.name",
+        "count": 3,
+        "types": {
+          "identical_to_en": 3
+        }
+      },
+      {
+        "key": "spell.mitmahseer_wave.name",
+        "count": 3,
+        "types": {
+          "identical_to_en": 3
+        }
+      },
+      {
         "key": "scripts.action_cushion.say_1",
         "count": 3,
         "types": {
@@ -354,6 +334,27 @@
       },
       {
         "key": "scripts.actions_lever_barrel.say_1",
+        "count": 3,
+        "types": {
+          "identical_to_en": 3
+        }
+      },
+      {
+        "key": "spell.rotthingholy_ulus.name",
+        "count": 3,
+        "types": {
+          "identical_to_en": 3
+        }
+      },
+      {
+        "key": "spell.single_ice_chain.name",
+        "count": 3,
+        "types": {
+          "identical_to_en": 3
+        }
+      },
+      {
+        "key": "spell.podzillaphys_chain.name",
         "count": 3,
         "types": {
           "identical_to_en": 3
@@ -408,15 +409,15 @@
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-20T17:38:41.066117Z",
+      "timestamp": "2026-02-20T17:39:18.753185Z",
       "checked_entries": 100,
       "issues_found": 49,
       "issues_by_type": {
         "identical_to_en": 17,
-        "identical_to_en_exempt": 5,
+        "identical_to_en_exempt": 8,
         "artifact_token": 32,
-        "suspicious_log_high": 52,
-        "suspicious_log_critical": 60,
+        "suspicious_log_high": 51,
+        "suspicious_log_critical": 62,
         "suspicious_log_low": 5,
         "suspicious_rejected_critical": 161,
         "suspicious_rejected_high": 25
@@ -782,15 +783,15 @@
         "quality_score": 77.5
       },
       "pl": {
-        "last_cycle": "2026-02-20T17:37:54.559620Z",
-        "last_translated": 6,
-        "total_suspicious": 23708,
-        "total_rejected": 1782,
-        "total_gt_guard_fail": 4838,
-        "cycles": 1050,
-        "quality_score": 69.7,
-        "last_audit": "2026-02-20T17:38:41.066117Z",
-        "issues_count": 181042
+        "last_cycle": "2026-02-20T17:39:16.269998Z",
+        "last_translated": 0,
+        "total_suspicious": 23710,
+        "total_rejected": 1783,
+        "total_gt_guard_fail": 4839,
+        "cycles": 1051,
+        "quality_score": 65.8,
+        "last_audit": "2026-02-20T17:39:18.753185Z",
+        "issues_count": 181091
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -804,15 +805,15 @@
         "issues_count": 1417
       },
       "es": {
-        "last_cycle": "2026-02-20T17:38:40.224514Z",
-        "last_translated": 23,
-        "total_suspicious": 47738,
-        "total_rejected": 1696,
-        "total_gt_guard_fail": 17848,
-        "cycles": 1440,
+        "last_cycle": "2026-02-20T17:39:10.096249Z",
+        "last_translated": 5,
+        "total_suspicious": 47742,
+        "total_rejected": 1697,
+        "total_gt_guard_fail": 17852,
+        "cycles": 1441,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T17:38:41.066117Z",
-        "issues_count": 321520
+        "last_audit": "2026-02-20T17:39:18.753185Z",
+        "issues_count": 321666
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -844,8 +845,8 @@
         "total_gt_guard_fail": 2083,
         "cycles": 354,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T17:38:41.066117Z",
-        "issues_count": 70776
+        "last_audit": "2026-02-20T17:39:18.753185Z",
+        "issues_count": 70807
       },
       "ru": {
         "last_cycle": "2026-02-20T17:35:12.959909Z",
@@ -854,9 +855,9 @@
         "total_rejected": 871,
         "total_gt_guard_fail": 2315,
         "cycles": 331,
-        "quality_score": 70.8,
-        "last_audit": "2026-02-20T17:38:41.066117Z",
-        "issues_count": 210219
+        "quality_score": 72.1,
+        "last_audit": "2026-02-20T17:39:18.753185Z",
+        "issues_count": 210232
       },
       "nl": {
         "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -876,9 +877,9 @@
         "total_rejected": 258,
         "total_gt_guard_fail": 631,
         "cycles": 141,
-        "quality_score": 65.0,
-        "last_audit": "2026-02-20T17:38:41.066117Z",
-        "issues_count": 29912
+        "quality_score": 63.0,
+        "last_audit": "2026-02-20T17:39:18.753185Z",
+        "issues_count": 29932
       },
       "da": {
         "last_cycle": "2026-02-14T07:49:07.893551Z",
@@ -1195,9 +1196,9 @@
         "total_rejected": 1,
         "total_gt_guard_fail": 498,
         "cycles": 137,
-        "quality_score": 64.9,
-        "last_audit": "2026-02-20T17:38:41.066117Z",
-        "issues_count": 86096
+        "quality_score": 68.5,
+        "last_audit": "2026-02-20T17:39:18.753185Z",
+        "issues_count": 86109
       },
       "sw": {
         "last_cycle": "2026-02-14T07:01:40.295561Z",
@@ -1328,8 +1329,8 @@
         "total_gt_guard_fail": 4259,
         "cycles": 320,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T17:38:41.066117Z",
-        "issues_count": 175844
+        "last_audit": "2026-02-20T17:39:18.753185Z",
+        "issues_count": 175925
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -1343,8 +1344,8 @@
         "issues_count": 80
       }
     },
-    "summary": "SLOW_MODE | 49 issue(s) / 100 entries | 2026-02-20T17:38:41.066117Z | recent_hidden=0",
-    "guard_fail_breakdown_summary": "identical_to_en=253, mixed_language=33, mixed_scripts=15, cyrillic_latin_mix=15, contains_tibia_proper_noun=13",
+    "summary": "SLOW_MODE | 49 issue(s) / 100 entries | 2026-02-20T17:39:18.753185Z | recent_hidden=0",
+    "guard_fail_breakdown_summary": "identical_to_en=255, mixed_language=33, mixed_scripts=15, cyrillic_latin_mix=15, contains_tibia_proper_noun=13",
     "recent_hidden_high_critical": {
       "latest": 0,
       "threshold": 5,
@@ -1352,17 +1353,17 @@
       "trend": "→ last10=0.00, prev10=0.00, latest=0"
     },
     "critical_bad_keys_pack_regression": {
-      "timestamp": "2026-02-20T17:38:45.861046Z",
-      "window_start_utc": "2026-02-20T16:38:45.239870Z",
-      "window_end_utc": "2026-02-20T17:38:45.239870Z",
+      "timestamp": "2026-02-20T17:39:23.464385Z",
+      "window_start_utc": "2026-02-20T16:39:22.847970Z",
+      "window_end_utc": "2026-02-20T17:39:22.847970Z",
       "by_lang": {
         "pl": {
-          "critical_in_window": 52,
+          "critical_in_window": 53,
           "pack_entries": 0,
           "ok": false
         },
         "es": {
-          "critical_in_window": 44,
+          "critical_in_window": 45,
           "pack_entries": 0,
           "ok": false
         }

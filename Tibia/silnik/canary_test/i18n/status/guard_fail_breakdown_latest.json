@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T21:09:12.050419Z",
-  "window_start_utc": "2026-02-20T20:09:11.359723Z",
-  "window_end_utc": "2026-02-20T21:09:11.359723Z",
+  "timestamp": "2026-02-20T21:10:20.826660Z",
+  "window_start_utc": "2026-02-20T20:10:20.126745Z",
+  "window_end_utc": "2026-02-20T21:10:20.126745Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,15 +9,15 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 164,
-  "rejected_entries_raw": 435,
+  "rejected_entries_raw": 429,
   "suspicious_entries": 3558,
-  "suspicious_entries_raw": 25211,
+  "suspicious_entries_raw": 25810,
   "guard_fail_entries": 127,
-  "guard_fail_sum": 5268,
+  "guard_fail_sum": 5235,
   "by_type": {
     "identical_to_en": 140,
-    "mixed_language": 7,
     "word_salad": 7,
+    "mixed_language": 7,
     "contains_tibia_proper_noun": 6,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7,
@@ -27,20 +27,20 @@
     "google_translate": 164
   },
   "by_language": {
-    "sv": 15,
     "es": 40,
     "it": 8,
     "ro": 56,
     "pl": 38,
-    "ru": 7
+    "ru": 7,
+    "sv": 15
   },
   "by_category": {
-    "server.json": 17,
     "npc.json": 4,
     "books.json": 1,
     "otclient_modules.json": 30,
     "scripts.json": 14,
     "items.json": 28,
+    "server.json": 17,
     "monsters.json": 30,
     "spells.json": 33,
     "quests.json": 3,
@@ -56,11 +56,11 @@
       "count": 140
     },
     {
-      "type": "mixed_language",
+      "type": "word_salad",
       "count": 7
     },
     {
-      "type": "word_salad",
+      "type": "mixed_language",
       "count": 7
     },
     {
@@ -82,6 +82,13 @@
   ],
   "top_keys": [
     {
+      "key": "scripts.action_cushion.say_1",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
+      }
+    },
+    {
       "key": "data.otservbr.global.npc.anerui.L71.1487",
       "count": 3,
       "types": {
@@ -90,13 +97,6 @@
     },
     {
       "key": "data.otservbr.global.npc.brasith.L59.1211",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "scripts.action_cushion.say_1",
       "count": 3,
       "types": {
         "identical_to_en": 3
@@ -127,41 +127,6 @@
         "contains_tibia_proper_noun": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.anerui.L72.1488",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.anerui.L73.1489",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.brasith.L60.1212",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.brasith.L61.1213",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
       }
     },
     {
@@ -225,6 +190,45 @@
       "count": 2,
       "types": {
         "identical_to_en": 2
+      }
+    },
+    {
+      "key": "monster.demon.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "monster.sorcerer_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "monster.knight_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "monster.paladin_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "monster.druid_familiar.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
       }
     }
   ]

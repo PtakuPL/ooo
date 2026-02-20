@@ -80174,5 +80174,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T21:04:52.539207Z"
+  },
+  "item.5292.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:09:36.609846Z"
+  },
+  "item.5293.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:09:36.610185Z"
+  },
+  "item.5294.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:09:36.610500Z"
+  },
+  "item.5296.name": {
+    "src_hash": "12a7b6eefac4175c0e27614db28baf78",
+    "text": "assi di legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:09:36.610977Z"
+  },
+  "item.5298.name": {
+    "src_hash": "12a7b6eefac4175c0e27614db28baf78",
+    "text": "assi di legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:09:36.611310Z"
+  },
+  "item.5301.name": {
+    "src_hash": "12a7b6eefac4175c0e27614db28baf78",
+    "text": "assi di legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:09:36.611610Z"
   }
 }

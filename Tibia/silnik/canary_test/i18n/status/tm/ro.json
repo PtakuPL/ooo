@@ -74526,5 +74526,109 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:11:06.204779Z"
+  },
+  "monster.amazon.name": {
+    "src_hash": "b3b3a6ac74ecbd56bcdbefa4799fb9df",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:14:20.007123Z"
+  },
+  "monster.bandit.name": {
+    "src_hash": "7534759ceb94c0e91b13a22fe6e16980",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:14:20.008442Z"
+  },
+  "monster.juggernaut.name": {
+    "src_hash": "024fc70d51074c9f42ee7f917c37b4ed",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:14:20.010402Z"
+  },
+  "monster.hellhound.name": {
+    "src_hash": "7f67cc83cb82576db750ab2ba9cbfb17",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:14:20.011319Z"
+  },
+  "monster.frazzlemaw.name": {
+    "src_hash": "1a87e30943cbe3f2e8d894a44f5ce353",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:14:20.016956Z"
+  },
+  "monster.guzzlemaw.name": {
+    "src_hash": "af39e6956034169ca52f6fff8f9fbc5b",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:14:20.017553Z"
+  },
+  "monster.shadowpelt.name": {
+    "src_hash": "3b450842412b3871b7e8e02b8849335c",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:14:20.018581Z"
+  },
+  "monster.behemoth.name": {
+    "src_hash": "be20385e18333edb329d4574f364a1f0",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:14:20.022241Z"
+  },
+  "monster.wyrm.name": {
+    "src_hash": "6ca9ed7b25e26786c48ed48b538b14c3",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:14:20.024056Z"
+  },
+  "monster.metal_gargoyle.name": {
+    "src_hash": "66c2e4dd46456a945e554ed2d3fee6cd",
+    "text": "Gargoyle Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:14:20.036110Z"
+  },
+  "monster.orewalker.name": {
+    "src_hash": "12c4cb93db82d7abaeda85186b68f546",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:14:20.037175Z"
+  },
+  "monster.walker.name": {
+    "src_hash": "d719083f59856e34a37e2137e2241d80",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:14:20.048302Z"
+  },
+  "monster.demon.name": {
+    "src_hash": "300d4af0950c89b847cf6f7500e6060c",
+    "text": "Demon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:14:21.855348Z"
   }
 }

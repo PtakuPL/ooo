@@ -36822,5 +36822,117 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:22:06.368311Z"
+  },
+  "npc.shiantis.say_1": {
+    "src_hash": "ca5af46d9c20d6cbd9f33d8c59caee9d",
+    "text": "Vill du köpa en fotboll för 111 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:50.939740Z"
+  },
+  "npc.shiantis.say_2": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Här är den.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:50.940086Z"
+  },
+  "npc.shiriel.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Adjö, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:50.943513Z"
+  },
+  "npc.shiriel.farewell_msg_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Adjö, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:50.943972Z"
+  },
+  "npc.shiriel.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Hälsningar, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:50.944290Z"
+  },
+  "npc.shiriel.greet_msg_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Hälsningar, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:50.944599Z"
+  },
+  "npc.shiriel.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:50.945104Z"
+  },
+  "npc.shiriel.walkaway_msg_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Adjö, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:50.945437Z"
+  },
+  "npc.shirith.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:50.946209Z"
+  },
+  "npc.shirith.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Hälsningar, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:50.946578Z"
+  },
+  "npc.shirith.say_2": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Här är den.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:50.947118Z"
+  },
+  "npc.shirith.walkaway_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:50.947822Z"
+  },
+  "npc.shirtalis_of_the_summer_court.greet_msg_1": {
+    "src_hash": "1d4aed09bf4b360d0fe917e2de3b88d4",
+    "text": "Hej fighter. Jag antar att du är här för att {fight} för vår ädla {cause}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:50.948343Z"
+  },
+  "npc.shirtalis_of_the_summer_court.say_1": {
+    "src_hash": "749d9909035452a589e191811401db0f",
+    "text": "Vi tillåter duktiga mästare av alla raser att kämpa för vår sak mot utmaningarna från {arena}. Så är du intresserad? Jag är inte intresserad av tjusiga ordspel, så en enkel {yes} eller {no} räcker!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:50.949220Z"
   }
 }

@@ -38334,5 +38334,29 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:26:40.122912Z"
+  },
+  "monster.ugly_monster.name": {
+    "src_hash": "99526855b34f26c8ed537252bf60c256",
+    "text": "Углй Монстр",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:43.353882Z"
+  },
+  "monster.supercharged_mazzinor.name": {
+    "src_hash": "62db3f3b1429bf5096ad6dd7554c76d8",
+    "text": "Суперчаргед MazziНетr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:43.431884Z"
+  },
+  "monster.supercharged_mazzinor.desc": {
+    "src_hash": "62db3f3b1429bf5096ad6dd7554c76d8",
+    "text": "Суперчаргед MazziНетr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:27:43.433126Z"
   }
 }

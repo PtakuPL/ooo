@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T22:27:20.301150Z",
+  "timestamp": "2026-02-20T22:28:41.007804Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 52,
-  "cache_misses": 0,
-  "file_cache_hits": 1976,
-  "file_cache_misses": 0,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 1975,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771626370271857327,
+          1771626511376803910,
           1847178
         ],
         [
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771626370271857327,
+            1771626511376803910,
             1847178
           ],
           "row": {
@@ -27750,8 +27750,8 @@
         [
           "monsters.json",
           1,
-          1771626114425421963,
-          410242
+          1771626463635655312,
+          410266
         ],
         [
           "mounts.json",
@@ -28133,8 +28133,8 @@
         "monsters.json": {
           "sig": [
             1,
-            1771626114425421963,
-            410242
+            1771626463635655312,
+            410266
           ],
           "row": {
             "total_reference_keys": 5915,
@@ -30900,8 +30900,8 @@
         [
           "npc.json",
           1,
-          1771626134723901256,
-          2597743
+          1771626478169862140,
+          2597406
         ],
         [
           "npclib.json",
@@ -31011,14 +31011,14 @@
         "language_name": "SR",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 24370,
-        "english_copy_keys": 1077,
+        "translated_keys": 24365,
+        "english_copy_keys": 1082,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 45.48,
+        "completion_pct": 45.47,
         "server_keys": 49731,
-        "server_translated": 24269,
-        "server_pct": 48.8,
+        "server_translated": 24264,
+        "server_pct": 48.79,
         "client_keys": 3855,
         "client_translated": 101,
         "client_pct": 2.62
@@ -31307,13 +31307,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771626134723901256,
-            2597743
+            1771626478169862140,
+            2597406
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 12984,
-            "english_copy_keys": 38,
+            "translated_keys": 12979,
+            "english_copy_keys": 43,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -31683,8 +31683,8 @@
         [
           "npc.json",
           1,
-          1771626126715225228,
-          1809004
+          1771626471234299464,
+          1808969
         ],
         [
           "npclib.json",
@@ -31794,14 +31794,14 @@
         "language_name": "Szwedzki",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 15659,
-        "english_copy_keys": 2133,
+        "translated_keys": 15671,
+        "english_copy_keys": 2131,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 29.22,
+        "completion_pct": 29.24,
         "server_keys": 49731,
-        "server_translated": 15516,
-        "server_pct": 31.2,
+        "server_translated": 15528,
+        "server_pct": 31.22,
         "client_keys": 3855,
         "client_translated": 143,
         "client_pct": 3.71
@@ -32090,13 +32090,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771626126715225228,
-            1809004
+            1771626471234299464,
+            1808969
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 6387,
-            "english_copy_keys": 267,
+            "translated_keys": 6399,
+            "english_copy_keys": 265,
             "missing_keys": 0,
             "missing_files": 0
           }

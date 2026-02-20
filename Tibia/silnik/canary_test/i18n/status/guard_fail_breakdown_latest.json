@@ -1,40 +1,39 @@
 {
-  "timestamp": "2026-02-20T22:27:18.426506Z",
-  "window_start_utc": "2026-02-20T21:27:16.866050Z",
-  "window_end_utc": "2026-02-20T22:27:16.866050Z",
+  "timestamp": "2026-02-20T22:28:43.635566Z",
+  "window_start_utc": "2026-02-20T21:28:42.400682Z",
+  "window_end_utc": "2026-02-20T22:28:42.400682Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 124,
-  "rejected_entries_raw": 320,
-  "suspicious_entries": 3184,
-  "suspicious_entries_raw": 28170,
+  "rejected_entries": 120,
+  "rejected_entries_raw": 315,
+  "suspicious_entries": 3193,
+  "suspicious_entries_raw": 25339,
   "guard_fail_entries": 110,
-  "guard_fail_sum": 7471,
+  "guard_fail_sum": 7464,
   "by_type": {
-    "identical_to_en": 117,
+    "identical_to_en": 113,
     "word_salad": 1,
     "contains_tibia_proper_noun": 5,
     "mixed_language": 6
   },
   "by_source": {
-    "google_translate": 124
+    "google_translate": 120
   },
   "by_language": {
-    "ro": 46,
-    "es": 28,
+    "ro": 42,
     "sv": 7,
     "pl": 41,
+    "es": 28,
     "it": 2
   },
   "by_category": {
-    "scripts.json": 4,
-    "npc.json": 4,
     "otclient_modules.json": 20,
     "monsters.json": 30,
+    "npc.json": 4,
     "cpp.json": 5,
     "achievements.json": 5,
     "items.json": 28,
@@ -42,13 +41,13 @@
     "spells.json": 26
   },
   "by_severity": {
-    "CRITICAL": 118,
+    "CRITICAL": 114,
     "HIGH": 6
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 117
+      "count": 113
     },
     {
       "type": "mixed_language",
@@ -65,13 +64,6 @@
   ],
   "top_keys": [
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "otclient_modules.addserver_otui.tr_4",
       "count": 2,
       "types": {
@@ -87,6 +79,13 @@
     },
     {
       "key": "monster.demon.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2
@@ -175,38 +174,38 @@
       }
     },
     {
-      "key": "scripts.actions_lever_barrel.say_1",
+      "key": "otclient_modules.addserver_otui.tr_3",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "scripts.actions_palanca.msg_1",
+      "key": "otclient_modules.assign_text_otui.tr_4",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "scripts.actions_pyramids1.msg_1",
+      "key": "otclient_modules.bestiary.tr_7",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "scripts.actions_resonance_chamber.say_1",
+      "key": "otclient_modules.bestiary_otui.tr_10",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "npc.al_dee.stdmod_41",
+      "key": "otclient_modules.bestiary_otui.tr_12",
       "count": 1,
       "types": {
-        "word_salad": 1
+        "identical_to_en": 1
       }
     }
   ]

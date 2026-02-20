@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-20T17:39:23.465735Z",
+  "timestamp": "2026-02-20T17:41:02.991246Z",
   "global": {
     "total_reference_keys": 2786472,
-    "translated_keys": 385693,
+    "translated_keys": 385721,
     "english_copy_keys": 162353,
     "missing_keys": 2155,
     "missing_files": 0,
@@ -49,34 +49,34 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 6667,
-    "guard_reports_blocked": 3775,
+    "guard_reports_total": 6670,
+    "guard_reports_blocked": 3778,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 3775
+    "cannot_translate_reports_visible": 3778
   },
   "cache": {
-    "lang_stats_hits": 50,
-    "lang_stats_misses": 2,
-    "lang_stats_hit_pct": 96.2,
+    "lang_stats_hits": 48,
+    "lang_stats_misses": 4,
+    "lang_stats_hit_pct": 92.3,
     "lang_stats_mode": "mixed",
-    "lang_file_hits": 1974,
-    "lang_file_misses": 2,
-    "lang_file_hit_pct": 99.9,
+    "lang_file_hits": 1972,
+    "lang_file_misses": 4,
+    "lang_file_hit_pct": 99.8,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-20T17:39:18.804748Z",
-    "cycle": 14,
+    "timestamp": "2026-02-20T17:40:58.295988Z",
+    "cycle": 15,
     "mode": "AUTO_TRANSLATE",
-    "category": "es",
+    "category": "it",
     "events": {
-      "dispatch": 2219,
-      "mode_run": 14931
+      "dispatch": 445,
+      "mode_run": 82616
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-20T16:39:22.847970Z",
-    "window_end_utc": "2026-02-20T17:39:22.847970Z",
+    "window_start_utc": "2026-02-20T16:41:02.326722Z",
+    "window_end_utc": "2026-02-20T17:41:02.326722Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -93,15 +93,15 @@
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 2694,
-    "guard_fail": 4023,
-    "guard_fail_rate_pct": 59.9,
+    "translated": 2760,
+    "guard_fail": 3960,
+    "guard_fail_rate_pct": 58.9,
     "no_progress_entries": 8,
-    "no_progress_rate_pct": 7.6,
-    "throughput_keys_per_h": 1538.8,
-    "suspicious_total": 4090,
-    "suspicious_total_raw": 20810,
-    "gt_translated": 143,
+    "no_progress_rate_pct": 7.5,
+    "throughput_keys_per_h": 1597.8,
+    "suspicious_total": 4100,
+    "suspicious_total_raw": 20820,
+    "gt_translated": 159,
     "gt_active": true,
     "top_guard_fail_targets": [
       {
@@ -135,65 +135,65 @@
         "guard_command": 0
       },
       {
-        "target": "pl/spells.json",
-        "translated": 3,
-        "guard_fail": 108,
-        "guard_command": 0
-      },
-      {
         "target": "es/npc.json",
         "translated": 92,
         "guard_fail": 108,
         "guard_command": 0
       },
       {
-        "target": "es/spells.json",
-        "translated": 11,
-        "guard_fail": 89,
+        "target": "ro/spells.json",
+        "translated": 0,
+        "guard_fail": 80,
+        "guard_command": 0
+      },
+      {
+        "target": "it/spells.json",
+        "translated": 2,
+        "guard_fail": 78,
         "guard_command": 0
       }
     ]
   },
   "guard_fail_breakdown": {
-    "timestamp": "2026-02-20T17:39:23.463312Z",
-    "window_start_utc": "2026-02-20T16:39:22.847970Z",
-    "window_end_utc": "2026-02-20T17:39:22.847970Z",
+    "timestamp": "2026-02-20T17:41:02.988830Z",
+    "window_start_utc": "2026-02-20T16:41:02.326722Z",
+    "window_end_utc": "2026-02-20T17:41:02.326722Z",
     "window_hours": 1.0,
     "sources": {
       "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
       "suspicious_log": "i18n/status/suspicious_log.jsonl",
       "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
     },
-    "rejected_entries": 318,
-    "rejected_entries_raw": 628,
-    "suspicious_entries": 4090,
-    "suspicious_entries_raw": 20810,
-    "guard_fail_entries": 105,
-    "guard_fail_sum": 4023,
+    "rejected_entries": 317,
+    "rejected_entries_raw": 613,
+    "suspicious_entries": 4100,
+    "suspicious_entries_raw": 20820,
+    "guard_fail_entries": 106,
+    "guard_fail_sum": 3960,
     "by_type": {
-      "identical_to_en": 255,
-      "mixed_language": 33,
+      "identical_to_en": 254,
       "word_salad": 12,
+      "mixed_language": 33,
       "mixed_scripts": 15,
       "cyrillic_latin_mix": 15,
       "contains_tibia_proper_noun": 13,
       "fx_token": 3
     },
     "by_source": {
-      "google_translate": 318
+      "google_translate": 317
     },
     "by_language": {
+      "pl": 68,
       "es": 50,
-      "pl": 69,
       "it": 52,
       "ru": 15,
       "ro": 119,
       "sv": 13
     },
     "by_category": {
-      "spells.json": 101,
+      "scripts.json": 26,
       "npc.json": 2,
-      "scripts.json": 27,
+      "spells.json": 101,
       "quests.json": 3,
       "server.json": 16,
       "books.json": 1,
@@ -206,13 +206,13 @@
       "otclient_data.json": 1
     },
     "by_severity": {
-      "CRITICAL": 267,
+      "CRITICAL": 266,
       "HIGH": 51
     },
     "top_types": [
       {
         "type": "identical_to_en",
-        "count": 255
+        "count": 254
       },
       {
         "type": "mixed_language",
@@ -291,48 +291,6 @@
         }
       },
       {
-        "key": "spell.makara_watersplash.name",
-        "count": 3,
-        "types": {
-          "identical_to_en": 3
-        }
-      },
-      {
-        "key": "spell.urmahlullu_ring.name",
-        "count": 3,
-        "types": {
-          "identical_to_en": 3
-        }
-      },
-      {
-        "key": "spell.quara_raider_icering.name",
-        "count": 3,
-        "types": {
-          "identical_to_en": 3
-        }
-      },
-      {
-        "key": "spell.iksyapunac_wave.name",
-        "count": 3,
-        "types": {
-          "identical_to_en": 3
-        }
-      },
-      {
-        "key": "spell.mitmahseer_wave.name",
-        "count": 3,
-        "types": {
-          "identical_to_en": 3
-        }
-      },
-      {
-        "key": "scripts.action_cushion.say_1",
-        "count": 3,
-        "types": {
-          "identical_to_en": 3
-        }
-      },
-      {
         "key": "scripts.actions_lever_barrel.say_1",
         "count": 3,
         "types": {
@@ -347,6 +305,20 @@
         }
       },
       {
+        "key": "spell.makara_watersplash.name",
+        "count": 3,
+        "types": {
+          "identical_to_en": 3
+        }
+      },
+      {
+        "key": "spell.urmahlullu_ring.name",
+        "count": 3,
+        "types": {
+          "identical_to_en": 3
+        }
+      },
+      {
         "key": "spell.single_ice_chain.name",
         "count": 3,
         "types": {
@@ -354,7 +326,28 @@
         }
       },
       {
+        "key": "spell.quara_raider_icering.name",
+        "count": 3,
+        "types": {
+          "identical_to_en": 3
+        }
+      },
+      {
         "key": "spell.podzillaphys_chain.name",
+        "count": 3,
+        "types": {
+          "identical_to_en": 3
+        }
+      },
+      {
+        "key": "spell.iksyapunac_wave.name",
+        "count": 3,
+        "types": {
+          "identical_to_en": 3
+        }
+      },
+      {
+        "key": "spell.mitmahseer_wave.name",
         "count": 3,
         "types": {
           "identical_to_en": 3
@@ -404,109 +397,32 @@
           "mixed_scripts": 1,
           "cyrillic_latin_mix": 1
         }
+      },
+      {
+        "key": "item.10388.name",
+        "count": 3,
+        "types": {
+          "identical_to_en": 3
+        }
       }
     ]
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-20T17:39:18.753185Z",
+      "timestamp": "2026-02-20T17:40:54.016933Z",
       "checked_entries": 100,
       "issues_found": 49,
       "issues_by_type": {
-        "identical_to_en": 17,
-        "identical_to_en_exempt": 8,
-        "artifact_token": 32,
-        "suspicious_log_high": 51,
-        "suspicious_log_critical": 62,
-        "suspicious_log_low": 5,
-        "suspicious_rejected_critical": 161,
+        "identical_to_en_exempt": 6,
+        "artifact_token": 35,
+        "identical_to_en": 14,
+        "suspicious_log_high": 57,
+        "suspicious_log_low": 15,
+        "suspicious_log_critical": 41,
+        "suspicious_rejected_critical": 159,
         "suspicious_rejected_high": 25
       },
       "issues": [
-        {
-          "key": "monster.sir_valorcrest.desc",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Sir Valorcrest",
-          "translated": "Sir Valorcrest"
-        },
-        {
-          "key": "monster.white_pale.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "White Pale",
-          "translated": "White Pale"
-        },
-        {
-          "key": "monster.white_pale.desc",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "White Pale",
-          "translated": "White Pale"
-        },
-        {
-          "key": "monster.the_welter.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "The Welter",
-          "translated": "The Welter"
-        },
-        {
-          "key": "monster.the_welter.desc",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "The Welter",
-          "translated": "The Welter"
-        },
-        {
-          "key": "monster.water_buffalo.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Water Buffalo",
-          "translated": "Water Buffalo"
-        },
-        {
-          "key": "monster.feverish_citizen.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Feverish Citizen",
-          "translated": "Feverish Citizen"
-        },
-        {
-          "key": "monster.serpent_spawn.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Serpent Spawn",
-          "translated": "Serpent Spawn"
-        },
-        {
-          "key": "monster.terramite.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Terramite",
-          "translated": "Terramite"
-        },
-        {
-          "key": "monster.gargoyle.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Gargoyle",
-          "translated": "Gargoyle"
-        },
-        {
-          "key": "monster.zushuka.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Zushuka",
-          "translated": "Zushuka"
-        },
-        {
-          "key": "monster.munster.name",
-          "lang": "sv",
-          "type": "identical_to_en",
-          "en": "Munster",
-          "translated": "Munster"
-        },
         {
           "key": "npc.captain_haba_open_sea.larboard_1",
           "lang": "es",
@@ -620,39 +536,123 @@
           "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
         },
         {
-          "key": "otclient_modules.game_cyclopedia.tr_6",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Cyclopedia",
-          "translated": "Cyclopedia"
+          "key": "book.otbm.battletactics_for_mages_ii",
+          "lang": "ru",
+          "type": "artifact_token",
+          "en": "Battletactics for Mages [II]",
+          "translated": "Тактика боя для магов [II]"
         },
         {
-          "key": "otclient_modules.game_cyclopedia_otui.tr_8",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Cyclopedia",
-          "translated": "Cyclopedia"
+          "key": "book.otbm.battletactics_for_mages_iii",
+          "lang": "ru",
+          "type": "artifact_token",
+          "en": "Battletactics for Mages [III]",
+          "translated": "Тактика боя для магов [III]"
         },
         {
-          "key": "otclient_modules.player.tr_6",
-          "lang": "pl",
-          "type": "identical_to_en",
-          "en": "Druid",
-          "translated": "Druid"
+          "key": "book.otbm.battletactics_for_mages_iv",
+          "lang": "ru",
+          "type": "artifact_token",
+          "en": "Battletactics for Mages [IV]",
+          "translated": "Тактика боя для магов [IV]"
         },
         {
-          "key": "otclient_modules.spelllist_otui.tr_12",
-          "lang": "pl",
+          "key": "questlog.quest_1.mission_1.name",
+          "lang": "ro",
           "type": "identical_to_en",
-          "en": "Druid",
-          "translated": "Druid"
+          "en": "The Hidden Seal",
+          "translated": "The Hidden Seal"
         },
         {
-          "key": "cpp.vocation.id_2",
-          "lang": "pl",
+          "key": "questlog.quest_1.mission_2.name",
+          "lang": "ro",
           "type": "identical_to_en",
-          "en": "Druid",
-          "translated": "Druid"
+          "en": "The Plague Seal",
+          "translated": "The Plague Seal"
+        },
+        {
+          "key": "questlog.quest_1.mission_8.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "The Final Battle",
+          "translated": "The Final Battle"
+        },
+        {
+          "key": "questlog.quest_11.mission_10.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Paw and Fur: Carniphilas",
+          "translated": "Paw and Fur: Carniphilas"
+        },
+        {
+          "key": "questlog.quest_11.mission_12.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Paw and Fur: Mammoths",
+          "translated": "Paw and Fur: Mammoths"
+        },
+        {
+          "key": "questlog.quest_11.mission_13.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Paw and Fur: Gnarlhounds",
+          "translated": "Paw and Fur: Gnarlhounds"
+        },
+        {
+          "key": "questlog.quest_11.mission_14.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Paw and Fur: Terramites",
+          "translated": "Paw and Fur: Terramites"
+        },
+        {
+          "key": "questlog.quest_11.mission_15.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Paw and Fur: Apes",
+          "translated": "Paw and Fur: Apes"
+        },
+        {
+          "key": "questlog.quest_11.mission_17.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Paw and Fur: Gargoyles",
+          "translated": "Paw and Fur: Gargoyles"
+        },
+        {
+          "key": "questlog.quest_11.mission_18.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Paw and Fur: Ice Golems",
+          "translated": "Paw and Fur: Ice Golems"
+        },
+        {
+          "key": "questlog.quest_11.mission_22.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Paw and Fur: Wyverns",
+          "translated": "Paw and Fur: Wyverns"
+        },
+        {
+          "key": "questlog.quest_11.mission_26.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Paw and Fur: Bonebeasts",
+          "translated": "Paw and Fur: Bonebeasts"
+        },
+        {
+          "key": "questlog.quest_11.mission_31.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Paw and Fur: Werewolves",
+          "translated": "Paw and Fur: Werewolves"
+        },
+        {
+          "key": "questlog.quest_11.mission_32.name",
+          "lang": "ro",
+          "type": "identical_to_en",
+          "en": "Paw and Fur: Nightmares",
+          "translated": "Paw and Fur: Nightmares"
         },
         {
           "key": "npc.captain_haba_open_sea.larboard_1",
@@ -789,9 +789,9 @@
         "total_rejected": 1783,
         "total_gt_guard_fail": 4839,
         "cycles": 1051,
-        "quality_score": 65.8,
-        "last_audit": "2026-02-20T17:39:18.753185Z",
-        "issues_count": 181091
+        "quality_score": 67.5,
+        "last_audit": "2026-02-20T17:40:54.016933Z",
+        "issues_count": 181106
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -805,15 +805,15 @@
         "issues_count": 1417
       },
       "es": {
-        "last_cycle": "2026-02-20T17:39:10.096249Z",
-        "last_translated": 5,
-        "total_suspicious": 47742,
-        "total_rejected": 1697,
-        "total_gt_guard_fail": 17852,
-        "cycles": 1441,
+        "last_cycle": "2026-02-20T17:40:53.109421Z",
+        "last_translated": 23,
+        "total_suspicious": 47813,
+        "total_rejected": 1699,
+        "total_gt_guard_fail": 17880,
+        "cycles": 1442,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T17:39:18.753185Z",
-        "issues_count": 321666
+        "last_audit": "2026-02-20T17:40:54.016933Z",
+        "issues_count": 321805
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -838,26 +838,26 @@
         "issues_count": 2470
       },
       "it": {
-        "last_cycle": "2026-02-20T17:34:50.416492Z",
-        "last_translated": 29,
+        "last_cycle": "2026-02-20T17:40:02.223590Z",
+        "last_translated": 28,
         "total_suspicious": 5503,
         "total_rejected": 731,
-        "total_gt_guard_fail": 2083,
-        "cycles": 354,
+        "total_gt_guard_fail": 2085,
+        "cycles": 355,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T17:39:18.753185Z",
-        "issues_count": 70807
+        "last_audit": "2026-02-20T17:40:54.016933Z",
+        "issues_count": 70836
       },
       "ru": {
-        "last_cycle": "2026-02-20T17:35:12.959909Z",
-        "last_translated": 25,
-        "total_suspicious": 36087,
+        "last_cycle": "2026-02-20T17:40:07.855817Z",
+        "last_translated": 30,
+        "total_suspicious": 36117,
         "total_rejected": 871,
         "total_gt_guard_fail": 2315,
-        "cycles": 331,
-        "quality_score": 72.1,
-        "last_audit": "2026-02-20T17:39:18.753185Z",
-        "issues_count": 210232
+        "cycles": 332,
+        "quality_score": 67.3,
+        "last_audit": "2026-02-20T17:40:54.016933Z",
+        "issues_count": 210277
       },
       "nl": {
         "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -877,9 +877,9 @@
         "total_rejected": 258,
         "total_gt_guard_fail": 631,
         "cycles": 141,
-        "quality_score": 63.0,
-        "last_audit": "2026-02-20T17:39:18.753185Z",
-        "issues_count": 29932
+        "quality_score": 71.4,
+        "last_audit": "2026-02-20T17:40:54.016933Z",
+        "issues_count": 29940
       },
       "da": {
         "last_cycle": "2026-02-14T07:49:07.893551Z",
@@ -1322,15 +1322,15 @@
         "issues_count": 958
       },
       "ro": {
-        "last_cycle": "2026-02-20T17:35:35.990509Z",
-        "last_translated": 10,
+        "last_cycle": "2026-02-20T17:40:20.796232Z",
+        "last_translated": 15,
         "total_suspicious": 48689,
         "total_rejected": 2637,
-        "total_gt_guard_fail": 4259,
-        "cycles": 320,
+        "total_gt_guard_fail": 4274,
+        "cycles": 321,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T17:39:18.753185Z",
-        "issues_count": 175925
+        "last_audit": "2026-02-20T17:40:54.016933Z",
+        "issues_count": 176035
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -1344,8 +1344,8 @@
         "issues_count": 80
       }
     },
-    "summary": "SLOW_MODE | 49 issue(s) / 100 entries | 2026-02-20T17:39:18.753185Z | recent_hidden=0",
-    "guard_fail_breakdown_summary": "identical_to_en=255, mixed_language=33, mixed_scripts=15, cyrillic_latin_mix=15, contains_tibia_proper_noun=13",
+    "summary": "SLOW_MODE | 49 issue(s) / 100 entries | 2026-02-20T17:40:54.016933Z | recent_hidden=0",
+    "guard_fail_breakdown_summary": "identical_to_en=254, mixed_language=33, mixed_scripts=15, cyrillic_latin_mix=15, contains_tibia_proper_noun=13",
     "recent_hidden_high_critical": {
       "latest": 0,
       "threshold": 5,
@@ -1353,12 +1353,12 @@
       "trend": "→ last10=0.00, prev10=0.00, latest=0"
     },
     "critical_bad_keys_pack_regression": {
-      "timestamp": "2026-02-20T17:39:23.464385Z",
-      "window_start_utc": "2026-02-20T16:39:22.847970Z",
-      "window_end_utc": "2026-02-20T17:39:22.847970Z",
+      "timestamp": "2026-02-20T17:41:02.989838Z",
+      "window_start_utc": "2026-02-20T16:41:02.326722Z",
+      "window_end_utc": "2026-02-20T17:41:02.326722Z",
       "by_lang": {
         "pl": {
-          "critical_in_window": 53,
+          "critical_in_window": 52,
           "pack_entries": 0,
           "ok": false
         },
@@ -1411,17 +1411,17 @@
       "language_name": "Włoski",
       "scope": "global",
       "total_reference_keys": 53586,
-      "translated_keys": 27757,
+      "translated_keys": 27785,
       "english_copy_keys": 2142,
       "missing_keys": 0,
       "missing_files": 0,
-      "completion_pct": 51.8,
+      "completion_pct": 51.85,
       "server_keys": 49731,
       "server_translated": 26426,
       "server_pct": 53.14,
       "client_keys": 3855,
-      "client_translated": 1331,
-      "client_pct": 34.53
+      "client_translated": 1359,
+      "client_pct": 35.25
     },
     {
       "lang": "ru",

@@ -1,9 +1,9 @@
 {
-  "category": "es",
-  "cycle": 14,
+  "category": "it",
+  "cycle": 15,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-20T17:39:18Z",
+  "generated_at_utc": "2026-02-20T17:40:58Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -14,103 +14,103 @@
   "recent": [
     {
       "action": "update",
-      "category": "pl",
-      "cycle": 14,
-      "file": "otclient_data.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-20T17:39:12Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 14,
-      "file": "otclient_data.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-20T17:39:12Z"
-    },
-    {
-      "action": "update",
       "category": "es",
-      "cycle": 14,
-      "file": "cpp.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-02-20T17:39:10Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 14,
-      "file": "cpp.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-20T17:39:04Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 14,
-      "file": "cpp.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-20T17:39:03Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 13,
+      "cycle": 15,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-20T17:38:15Z"
+      "t": "2026-02-20T17:40:28Z"
     },
     {
       "action": "update",
-      "category": "es",
-      "cycle": 13,
-      "file": "achievements.json",
+      "category": "ro",
+      "cycle": 15,
+      "file": "questlog.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-20T17:37:57Z"
+      "t": "2026-02-20T17:40:10Z"
     },
     {
       "action": "update",
-      "category": "es",
-      "cycle": 13,
-      "file": "achievements.json",
+      "category": "ro",
+      "cycle": 15,
+      "file": "questlog.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-20T17:37:57Z"
+      "t": "2026-02-20T17:40:10Z"
     },
     {
       "action": "update",
-      "category": "pl",
-      "cycle": 13,
-      "file": "cpp.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-02-20T17:37:55Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 13,
-      "file": "cpp.json",
+      "category": "ru",
+      "cycle": 15,
+      "file": "books.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-20T17:37:33Z"
+      "t": "2026-02-20T17:40:05Z"
+    },
+    {
+      "action": "update",
+      "category": "ru",
+      "cycle": 15,
+      "file": "books.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-20T17:40:05Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 15,
+      "file": "otclient_modules.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-20T17:40:03Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 15,
+      "file": "otclient_modules.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-20T17:39:35Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 15,
+      "file": "otclient_modules.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-20T17:39:35Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 14,
+      "file": "otclient_data.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-20T17:39:12Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 14,
+      "file": "otclient_data.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-20T17:39:12Z"
     }
   ],
   "stage": "cycle_end",

@@ -77774,5 +77774,229 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T17:34:50.294127Z"
+  },
+  "otclient_modules.character.tr_51": {
+    "src_hash": "7c2d5c73ed9d8b142c16ea01c83d8661",
+    "text": "Dalle tattiche di combattimento",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:37.994263Z"
+  },
+  "otclient_modules.character_otui.tr_78": {
+    "src_hash": "112b314742b7a70942d64141ba000b08",
+    "text": "Titolo fedeltà",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:38.006041Z"
+  },
+  "otclient_modules.prey.tr_19": {
+    "src_hash": "ed7d5c5bc76ffe38c21ba316a34db1d9",
+    "text": "Bonus sconosciuto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:38.145128Z"
+  },
+  "otclient_modules.prey.tr_20": {
+    "src_hash": "ed7d5c5bc76ffe38c21ba316a34db1d9",
+    "text": "Bonus sconosciuto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:38.145599Z"
+  },
+  "otclient_modules.skills_otui.tr_6": {
+    "src_hash": "05b12fcc019db2164e02024fe9578620",
+    "text": "Mitigazione",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:38.163656Z"
+  },
+  "otclient_modules.character.tr_28": {
+    "src_hash": "ffad71d6db9adb50cc21052c8226cb69",
+    "text": "Valore dell'armatura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:40.714472Z"
+  },
+  "otclient_modules.character.tr_31": {
+    "src_hash": "976de6de5004ed522085a5e4be455707",
+    "text": "Valore della difesa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:40.714739Z"
+  },
+  "otclient_modules.character.tr_32": {
+    "src_hash": "582535411f1e1043831c8fc370880869",
+    "text": "dalla portata ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:40.714947Z"
+  },
+  "otclient_modules.character.tr_33": {
+    "src_hash": "eab369f98b26d5d573809e1343e5fb12",
+    "text": "Bonus danno colpo perfetto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:46.390096Z"
+  },
+  "otclient_modules.character.tr_37": {
+    "src_hash": "fc25cde969a2a9c8d9fec8eeb0b5e50f",
+    "text": "Danno aggiuntivo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:46.390320Z"
+  },
+  "otclient_modules.character.tr_38": {
+    "src_hash": "7fcbebe44a3ba2d162be939560e75688",
+    "text": "Opportunità",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:46.390511Z"
+  },
+  "otclient_modules.character.tr_39": {
+    "src_hash": "bebeb822697b052c32c4e819a77bb912",
+    "text": "Colpo critico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:46.390705Z"
+  },
+  "otclient_modules.character.tr_42": {
+    "src_hash": "c58de8415b504a6ffa5d0b14967f91bb",
+    "text": "Assalto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:46.390878Z"
+  },
+  "otclient_modules.character.tr_5": {
+    "src_hash": "d4aafb8980abab7d38e257eb32909378",
+    "text": "Dal bonus evento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:52.783876Z"
+  },
+  "otclient_modules.character.tr_53": {
+    "src_hash": "21202ba35e3fd2f5f5f249e5a154c69e",
+    "text": "Dall'attacco di base",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:52.784128Z"
+  },
+  "otclient_modules.character.tr_54": {
+    "src_hash": "3d92095304f260f4a17317dfb05209fe",
+    "text": "Valore di attacco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:52.784331Z"
+  },
+  "otclient_modules.character.tr_55": {
+    "src_hash": "e40de13b2a25f9ef4cfe8fc1305a8af8",
+    "text": "Danno piatto e guarigione",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:52.784592Z"
+  },
+  "otclient_modules.character.tr_60": {
+    "src_hash": "b24ce0cd392a5b0b8dedc66c25213594",
+    "text": "Gratuito",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:52.784760Z"
+  },
+  "otclient_modules.character.tr_63": {
+    "src_hash": "f0019d7368c6b92536f523dbec203ecf",
+    "text": "Titoli dei personaggi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:57.227658Z"
+  },
+  "otclient_modules.character.tr_64": {
+    "src_hash": "578b503d5e360a0c2b95f8bc41be077b",
+    "text": "Riepilogo del negozio",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:57.227894Z"
+  },
+  "otclient_modules.character.tr_65": {
+    "src_hash": "0ebf14f1c5ff56e87a0c8ad782038ec7",
+    "text": "Apparenze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:57.228079Z"
+  },
+  "otclient_modules.character.tr_66": {
+    "src_hash": "ed2a3e0cc149cc15d0a6e52375f2e1c1",
+    "text": "Riepilogo articolo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:57.228273Z"
+  },
+  "otclient_modules.character.tr_67": {
+    "src_hash": "f5c7922da355fd289ec1d6469e0583a7",
+    "text": "Risultati",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:39:57.228452Z"
+  },
+  "otclient_modules.character.tr_68": {
+    "src_hash": "187d3772e0efd4d5d39f2ea749c6a5a7",
+    "text": "Uccisioni PvP recenti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:40:02.096791Z"
+  },
+  "otclient_modules.character.tr_69": {
+    "src_hash": "c9edae9d10ed1b1dbf0e4e7e94dbfaea",
+    "text": "Morti recenti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:40:02.097012Z"
+  },
+  "otclient_modules.character.tr_70": {
+    "src_hash": "a06ca25c29fd9c1cfddbd74fcc66b979",
+    "text": "Risultati della battaglia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:40:02.097221Z"
+  },
+  "otclient_modules.character.tr_71": {
+    "src_hash": "12854b206c0152dbef6c7a33d55a812f",
+    "text": "Varie Statistiche",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:40:02.097413Z"
+  },
+  "otclient_modules.character.tr_72": {
+    "src_hash": "c93abed797195cfc0df0bd0e6cdf2fd4",
+    "text": "Statistiche di difesa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:40:02.097615Z"
   }
 }

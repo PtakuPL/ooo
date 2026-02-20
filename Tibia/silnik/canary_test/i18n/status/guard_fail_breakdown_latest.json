@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-02-20T18:21:01.037377Z",
-  "window_start_utc": "2026-02-20T17:21:00.386311Z",
-  "window_end_utc": "2026-02-20T18:21:00.386311Z",
+  "timestamp": "2026-02-20T18:21:41.424645Z",
+  "window_start_utc": "2026-02-20T17:21:40.731967Z",
+  "window_end_utc": "2026-02-20T18:21:40.731967Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 225,
-  "rejected_entries_raw": 361,
-  "suspicious_entries": 3832,
-  "suspicious_entries_raw": 21183,
-  "guard_fail_entries": 119,
-  "guard_fail_sum": 5084,
+  "rejected_entries": 224,
+  "rejected_entries_raw": 364,
+  "suspicious_entries": 3829,
+  "suspicious_entries_raw": 24239,
+  "guard_fail_entries": 121,
+  "guard_fail_sum": 5049,
   "by_type": {
-    "identical_to_en": 188,
     "word_salad": 7,
+    "identical_to_en": 187,
     "mixed_language": 20,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7,
@@ -24,10 +24,10 @@
     "fx_token": 3
   },
   "by_source": {
-    "google_translate": 225
+    "google_translate": 224
   },
   "by_language": {
-    "es": 49,
+    "es": 48,
     "pl": 49,
     "it": 35,
     "ru": 7,
@@ -35,10 +35,10 @@
     "sv": 8
   },
   "by_category": {
-    "spells.json": 73,
     "npc.json": 4,
     "quests.json": 3,
     "scripts.json": 13,
+    "spells.json": 72,
     "server.json": 10,
     "achievements.json": 7,
     "otclient_modules.json": 28,
@@ -54,13 +54,13 @@
     "monsters.json": 22
   },
   "by_severity": {
-    "CRITICAL": 195,
+    "CRITICAL": 194,
     "HIGH": 30
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 188
+      "count": 187
     },
     {
       "type": "mixed_language",

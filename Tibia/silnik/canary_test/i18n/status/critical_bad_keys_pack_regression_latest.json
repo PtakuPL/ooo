@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T18:21:01.038617Z",
-  "window_start_utc": "2026-02-20T17:21:00.386311Z",
-  "window_end_utc": "2026-02-20T18:21:00.386311Z",
+  "timestamp": "2026-02-20T18:21:41.425789Z",
+  "window_start_utc": "2026-02-20T17:21:40.731967Z",
+  "window_end_utc": "2026-02-20T18:21:40.731967Z",
   "by_lang": {
     "pl": {
       "critical_in_window": 44,
@@ -9,7 +9,7 @@
       "ok": false
     },
     "es": {
-      "critical_in_window": 40,
+      "critical_in_window": 39,
       "pack_entries": 0,
       "ok": false
     }

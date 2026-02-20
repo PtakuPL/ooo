@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T18:04:12.086919Z",
-  "window_start_utc": "2026-02-20T17:04:11.468074Z",
-  "window_end_utc": "2026-02-20T18:04:11.468074Z",
+  "timestamp": "2026-02-20T18:05:07.937920Z",
+  "window_start_utc": "2026-02-20T17:05:07.291757Z",
+  "window_end_utc": "2026-02-20T18:05:07.291757Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -11,9 +11,9 @@
   "rejected_entries": 286,
   "rejected_entries_raw": 494,
   "suspicious_entries": 4148,
-  "suspicious_entries_raw": 21008,
-  "guard_fail_entries": 115,
-  "guard_fail_sum": 4650,
+  "suspicious_entries_raw": 20984,
+  "guard_fail_entries": 116,
+  "guard_fail_sum": 4641,
   "by_type": {
     "identical_to_en": 239,
     "word_salad": 7,
@@ -35,8 +35,8 @@
     "sv": 8
   },
   "by_category": {
-    "npc.json": 4,
     "server.json": 11,
+    "npc.json": 4,
     "items.json": 41,
     "monsters.json": 65,
     "spells.json": 73,
@@ -220,13 +220,6 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "data.otservbr.global.npc.anerui.L71.1487",
       "count": 2,
       "types": {
@@ -235,6 +228,13 @@
     },
     {
       "key": "data.otservbr.global.npc.brasith.L59.1211",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2

@@ -1,74 +1,16 @@
 {
-  "timestamp": "2026-02-20T17:15:31.269673Z",
+  "timestamp": "2026-02-20T17:18:52.967494Z",
   "checked_entries": 100,
-  "issues_found": 24,
+  "issues_found": 16,
   "issues_by_type": {
-    "identical_to_en": 8,
     "identical_to_en_exempt": 1,
     "artifact_token": 16,
-    "suspicious_log_high": 68,
-    "suspicious_log_critical": 56,
-    "suspicious_log_low": 4,
+    "suspicious_log_high": 64,
+    "suspicious_log_critical": 41,
     "suspicious_rejected_critical": 114,
     "suspicious_rejected_high": 26
   },
   "issues": [
-    {
-      "key": "monster.white_pale.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "White Pale",
-      "translated": "White Pale"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "The Welter",
-      "translated": "The Welter"
-    },
-    {
-      "key": "monster.water_buffalo.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo"
-    },
-    {
-      "key": "monster.feverish_citizen.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Feverish Citizen",
-      "translated": "Feverish Citizen"
-    },
-    {
-      "key": "monster.serpent_spawn.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Serpent Spawn",
-      "translated": "Serpent Spawn"
-    },
-    {
-      "key": "monster.mad_mage.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Mad Mage",
-      "translated": "Mad Mage"
-    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",

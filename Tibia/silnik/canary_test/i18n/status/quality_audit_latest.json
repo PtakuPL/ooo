@@ -1,25 +1,17 @@
 {
-  "timestamp": "2026-02-20T19:25:09.326745Z",
+  "timestamp": "2026-02-20T19:26:01.414575Z",
   "checked_entries": 100,
-  "issues_found": 30,
+  "issues_found": 29,
   "issues_by_type": {
-    "identical_to_en_exempt": 25,
-    "artifact_token": 18,
+    "identical_to_en_exempt": 19,
+    "artifact_token": 17,
     "identical_to_en": 12,
-    "suspicious_log_high": 39,
-    "suspicious_log_critical": 57,
-    "suspicious_log_low": 28,
+    "suspicious_log_critical": 66,
+    "suspicious_log_high": 55,
     "suspicious_rejected_critical": 98,
     "suspicious_rejected_high": 7
   },
   "issues": [
-    {
-      "key": "scripts.auto_loot.msg_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "Autoloot mode set to ALL.",
-      "translated": "Modo de autoloot establecido a TODO."
-    },
     {
       "key": "scripts.prince_drazzak_summon.say_1",
       "lang": "es",

@@ -70670,5 +70670,69 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T19:20:27.051489Z"
+  },
+  "data.otservbr.global.scripts.quests.tinder.box.quest.chyllfroest.actions.ursagrodon.L37.1806": {
+    "src_hash": "4db1a87ec2c30e5b5d9e61fb6c1d97d3",
+    "text": "Gheața a crăpat și creatura înghețată cu ea - fii mai atent data viitoare!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:40.700675Z"
+  },
+  "data.otservbr.global.scripts.quests.tinder.box.quest.chyllfroest.actions.ursagrodon.L43.1807": {
+    "src_hash": "125d3b04bcaf892fb2386fb00ac1921a",
+    "text": "Ai reușit să topești aproximativ jumătate din patul de gheață. Imediat acum, este rece ca gheața aici și blocul de gheață ar putea îngheța din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:40.701433Z"
+  },
+  "data.otservbr.global.scripts.quests.tinder.box.quest.chyllfroest.actions.ursagrodon.L46.1808": {
+    "src_hash": "5fcfa4caa955ed25132384275eb6caec",
+    "text": "Ai reușit să topești aproape tot blocul, doar picioarele creaturii sunt încă blocate în gheață. Termină treaba!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:40.702074Z"
+  },
+  "data.otservbr.global.scripts.quests.tinder.box.quest.chyllfroest.actions.ursagrodon.L49.1809": {
+    "src_hash": "e28b127eca3173abd0c728adc49379a2",
+    "text": "Ursagrodonul eliberat se uită la tine cu ochi strălucitori, ascultători.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:40.702626Z"
+  },
+  "data.otservbr.global.scripts.quests.wrath.of.the.emperor.actions.mission12.just.rewards.L11.1650": {
+    "src_hash": "c2b74d857f2d83d918aa09958fe9dea1",
+    "text": "Dulapul este gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:40.703476Z"
+  },
+  "data.otservbr.global.scripts.quests.wrath.of.the.emperor.actions.mission12.just.rewards.L7.1649": {
+    "src_hash": "b71f332f490d4cf0436dc65fa13cbe22",
+    "text": "Ai găsit niște haine în garderobă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:40.703918Z"
+  },
+  "server.game.msg_21": {
+    "src_hash": "557c8cc08c97134aa5959bb081ae55a2",
+    "text": "Ești deja într-o petrecere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:40.712106Z"
+  },
+  "src.game.game.L8569.2401": {
+    "src_hash": "557c8cc08c97134aa5959bb081ae55a2",
+    "text": "Ești deja într-o petrecere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:40.723220Z"
   }
 }

@@ -78966,5 +78966,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T19:20:33.947330Z"
+  },
+  "data.otservbr.global.npc.gurbasch.L94.938": {
+    "src_hash": "8c767380dfcf1e12c4c84eef6324bdca",
+    "text": "Alla prossima volta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.624000Z"
+  },
+  "data.otservbr.global.npc.gurbasch.L95.939": {
+    "src_hash": "8c767380dfcf1e12c4c84eef6324bdca",
+    "text": "Alla prossima volta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.624337Z"
+  },
+  "data.otservbr.global.npc.hairycles.L56.1001": {
+    "src_hash": "4d984a36878f21f786d9ee11c24866fc",
+    "text": "OH! Ciao! Ciao! Non ho notato!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.625388Z"
+  },
+  "data.otservbr.global.npc.hairycles.L58.1002": {
+    "src_hash": "2809de79894765e53e9373dcb1e1ac78",
+    "text": "Sii salutato, amico del popolo delle scimmie. Se vuoi {trade}, chiedi semplicemente le mie offerte. Se sei ferito, chiedi la guarigione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.626016Z"
+  },
+  "data.otservbr.global.npc.hamish.L204.766": {
+    "src_hash": "2fe2e947d2eceeaa0f687b46131ed917",
+    "text": "Usa le tue rune con saggezza!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.626931Z"
+  },
+  "data.otservbr.global.npc.hamish.L205.767": {
+    "src_hash": "2fe2e947d2eceeaa0f687b46131ed917",
+    "text": "Usa le tue rune con saggezza!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.627318Z"
+  },
+  "data.otservbr.global.npc.hamish.L206.768": {
+    "src_hash": "0906a8c64321591aa58fc77fd2ad5878",
+    "text": "Fai la tua scelta! O forse vuoi guardare solo {potions}, {wands} o {runes}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.627836Z"
+  },
+  "data.otservbr.global.npc.hanna.L121.875": {
+    "src_hash": "56afffb157e0e4ad58f9731e846f8f36",
+    "text": "Oh, per favore entra, |PLAYERNAME|. Di che cosa hai bisogno? Dai un'occhiata al mio meraviglioso {offers} in gemme e gioielli.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.628408Z"
+  },
+  "data.otservbr.global.npc.hardek.L61.756": {
+    "src_hash": "b70b0bfb818df36aacf3825c1a6182b3",
+    "text": "Ciao |PLAYERNAME|! Hai bisogno dei miei servizi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.629314Z"
+  },
+  "data.otservbr.global.npc.hardek.L62.757": {
+    "src_hash": "511be326f0223306e232ba60e626481f",
+    "text": "Arrivederci. Vieni a trovarmi ogni volta che vuoi vendere qualcosa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.629759Z"
+  },
+  "data.otservbr.global.npc.hardek.L63.758": {
+    "src_hash": "511be326f0223306e232ba60e626481f",
+    "text": "Arrivederci. Vieni a trovarmi ogni volta che vuoi vendere qualcosa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.630193Z"
+  },
+  "data.otservbr.global.npc.harog.L68.1499": {
+    "src_hash": "f9776f93ac975cd47b598e34d9242d18",
+    "text": "Ciao.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.631665Z"
+  },
+  "data.otservbr.global.npc.harog.L69.1500": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "È stato un piacere aiutarti, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.632102Z"
+  },
+  "data.otservbr.global.npc.harog.L71.1501": {
+    "src_hash": "7ab7a918399e516ca6b9bc0cc9d8b8f9",
+    "text": "Tieni presente che non troverai offerte migliori qui. Basta sfogliare la mia merce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.632584Z"
+  },
+  "data.otservbr.global.npc.haroun.L142.805": {
+    "src_hash": "31e8eeb709dbdbe39f67da7006e7a38a",
+    "text": "Addio! Possa la luce serena dell'Illuminato risplendere sui tuoi viaggi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.633082Z"
+  },
+  "data.otservbr.global.npc.haroun.L143.806": {
+    "src_hash": "7fd76f3ebaa96874a4886fcf0191f156",
+    "text": "Addio, umano.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.633436Z"
+  },
+  "data.otservbr.global.npc.harsky.L85.888": {
+    "src_hash": "2303a1d196e96f4f401a39fa25e92876",
+    "text": "LUNGA VITA AL RE! Puoi andartene adesso!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:25:30.634516Z"
   }
 }

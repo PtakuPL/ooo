@@ -1,51 +1,51 @@
 {
-  "timestamp": "2026-02-20T19:25:14.149428Z",
-  "window_start_utc": "2026-02-20T18:25:13.475256Z",
-  "window_end_utc": "2026-02-20T19:25:13.475256Z",
+  "timestamp": "2026-02-20T19:26:06.413453Z",
+  "window_start_utc": "2026-02-20T18:26:05.690603Z",
+  "window_end_utc": "2026-02-20T19:26:05.690603Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 105,
-  "rejected_entries_raw": 349,
+  "rejected_entries": 112,
+  "rejected_entries_raw": 339,
   "suspicious_entries": 3274,
-  "suspicious_entries_raw": 25187,
-  "guard_fail_entries": 135,
-  "guard_fail_sum": 4441,
+  "suspicious_entries_raw": 25091,
+  "guard_fail_entries": 136,
+  "guard_fail_sum": 3158,
   "by_type": {
-    "identical_to_en": 95,
-    "mixed_language": 7,
+    "identical_to_en": 102,
     "word_salad": 3,
-    "contains_tibia_proper_noun": 4
+    "contains_tibia_proper_noun": 4,
+    "mixed_language": 7
   },
   "by_source": {
-    "google_translate": 105
+    "google_translate": 112
   },
   "by_language": {
-    "pl": 32,
     "es": 23,
     "it": 22,
-    "ro": 28
+    "ro": 35,
+    "pl": 32
   },
   "by_category": {
-    "items.json": 26,
     "npc.json": 4,
+    "items.json": 26,
     "monsters.json": 23,
-    "server.json": 2,
+    "server.json": 9,
     "spells.json": 46,
     "quests.json": 1,
     "scripts.json": 3
   },
   "by_severity": {
-    "CRITICAL": 98,
+    "CRITICAL": 105,
     "HIGH": 7
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 95
+      "count": 102
     },
     {
       "type": "mixed_language",
@@ -61,27 +61,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "item.10388.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.10391.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.12742.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
@@ -119,6 +98,20 @@
       "types": {
         "identical_to_en": 1,
         "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L71.1487",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.brasith.L59.1211",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
       }
     },
     {
@@ -178,6 +171,27 @@
       }
     },
     {
+      "key": "item.10388.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.10391.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.12742.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
       "key": "spell.quara_constrictor_electrify.name",
       "count": 2,
       "types": {
@@ -186,20 +200,6 @@
     },
     {
       "key": "spell.makara_watersplash.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.urmahlullu_ring.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.quara_raider_icering.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

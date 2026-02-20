@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T21:45:01.903238Z",
-  "window_start_utc": "2026-02-20T20:45:01.078180Z",
-  "window_end_utc": "2026-02-20T21:45:01.078180Z",
+  "timestamp": "2026-02-20T21:45:42.793273Z",
+  "window_start_utc": "2026-02-20T20:45:41.998731Z",
+  "window_end_utc": "2026-02-20T21:45:41.998731Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,16 +9,16 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 170,
-  "rejected_entries_raw": 402,
-  "suspicious_entries": 3581,
-  "suspicious_entries_raw": 28285,
+  "rejected_entries_raw": 387,
+  "suspicious_entries": 3578,
+  "suspicious_entries_raw": 25296,
   "guard_fail_entries": 129,
-  "guard_fail_sum": 4267,
+  "guard_fail_sum": 4257,
   "by_type": {
     "identical_to_en": 149,
-    "contains_tibia_proper_noun": 7,
     "word_salad": 7,
     "mixed_language": 7,
+    "contains_tibia_proper_noun": 7,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7
   },
@@ -34,11 +34,11 @@
     "sv": 15
   },
   "by_category": {
-    "items.json": 28,
     "monsters.json": 30,
     "npc.json": 4,
     "spells.json": 33,
     "server.json": 17,
+    "items.json": 28,
     "quests.json": 3,
     "scripts.json": 14,
     "books.json": 1,
@@ -56,15 +56,15 @@
       "count": 149
     },
     {
-      "type": "contains_tibia_proper_noun",
-      "count": 7
-    },
-    {
       "type": "word_salad",
       "count": 7
     },
     {
       "type": "mixed_language",
+      "count": 7
+    },
+    {
+      "type": "contains_tibia_proper_noun",
       "count": 7
     },
     {
@@ -126,6 +126,27 @@
       }
     },
     {
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.iksyapunac_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.mitmahseer_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
       "key": "monster.deathspawn.name",
       "count": 2,
       "types": {
@@ -169,27 +190,6 @@
       "types": {
         "identical_to_en": 1,
         "contains_tibia_proper_noun": 1
-      }
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.iksyapunac_wave.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.mitmahseer_wave.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
       }
     },
     {

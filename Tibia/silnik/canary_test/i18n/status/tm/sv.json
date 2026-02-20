@@ -1665,11 +1665,11 @@
   },
   "npc.sam.say_10": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
+    "text": "Du har det inte...",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:10:53.031162Z"
+    "updated_at": "2026-02-20T21:45:35.223375Z"
   },
   "npc.sebastian.say_2": {
     "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
@@ -36382,5 +36382,109 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T21:15:47.997044Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_25": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Detta är en speciell välsignelse som jag kan skänka dig när du har fått åtminstone en av de andra välsignelserna och som fungerar lite annorlunda. ... \\z\n\tDet fungerar bara när du dödas av andra äventyrare, vilket betyder att minst hälften av skadan som ledde till din död orsakades av andra, inte av monster eller miljön. ... \\z\n\t{twist of fate} kommer inte att minska dödsstraffet som de andra välsignelserna, utan istället hindra dig från att förlora dina andra välsignelser såväl som förlustamuletten, om du bär en. Det kostar lika mycket som de andra välsignelserna. ... \\z\n\tSkulle du vilja få det skyddet för ett offer på |PVPBLESSCOST| guld, barn?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:45:35.208745Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Håll din äventyrarsten väl.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:45:35.209692Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vill du byta ut din äventyrarsten gratis?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:45:35.210365Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:45:35.210860Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vill du byta ut din äventyrarsten mot 30 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:45:35.211934Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:45:35.212657Z"
+  },
+  "npc.rock_with_a_soft_spot.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Tyvärr, du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:45:35.213110Z"
+  },
+  "npc.rokyn.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Glöm inte att sätta in dina pengar här i Global Bank innan du ger dig ut på äventyr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:45:35.214523Z"
+  },
+  "npc.romir.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:45:35.216220Z"
+  },
+  "npc.rowenna.farewell_msg_1": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Hej då. Kom tillbaka snart.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:45:35.219687Z"
+  },
+  "npc.rowenna.walkaway_msg_1": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Hej då. Kom tillbaka snart.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:45:35.220589Z"
+  },
+  "npc.sam.say_15": {
+    "src_hash": "235c3e61bedc3e4295235cc4c6e633dc",
+    "text": "Då nej.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:45:35.223912Z"
+  },
+  "npc.sam.walkaway_msg_1": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Hej då och kom igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:45:35.224779Z"
   }
 }

@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T21:06:54.430024Z",
-  "window_start_utc": "2026-02-20T20:06:53.718343Z",
-  "window_end_utc": "2026-02-20T21:06:53.718343Z",
+  "timestamp": "2026-02-20T21:08:21.427701Z",
+  "window_start_utc": "2026-02-20T20:08:20.721740Z",
+  "window_end_utc": "2026-02-20T21:08:20.721740Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,17 +9,17 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 164,
-  "rejected_entries_raw": 438,
+  "rejected_entries_raw": 444,
   "suspicious_entries": 3558,
-  "suspicious_entries_raw": 25279,
-  "guard_fail_entries": 127,
-  "guard_fail_sum": 5264,
+  "suspicious_entries_raw": 25264,
+  "guard_fail_entries": 126,
+  "guard_fail_sum": 5276,
   "by_type": {
-    "identical_to_en": 140,
-    "word_salad": 7,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7,
     "contains_tibia_proper_noun": 6,
+    "word_salad": 7,
+    "identical_to_en": 140,
     "mixed_language": 7,
     "fx_token": 3
   },
@@ -27,18 +27,18 @@
     "google_translate": 164
   },
   "by_language": {
-    "es": 40,
-    "ro": 56,
     "ru": 7,
     "it": 8,
+    "es": 40,
     "sv": 15,
+    "ro": 56,
     "pl": 38
   },
   "by_category": {
-    "npc.json": 4,
-    "server.json": 17,
     "spells.json": 33,
     "quests.json": 3,
+    "npc.json": 4,
+    "server.json": 17,
     "books.json": 1,
     "otclient_modules.json": 30,
     "scripts.json": 14,
@@ -47,8 +47,8 @@
     "client.json": 4
   },
   "by_severity": {
-    "CRITICAL": 147,
-    "HIGH": 17
+    "HIGH": 17,
+    "CRITICAL": 147
   },
   "top_types": [
     {
@@ -56,15 +56,15 @@
       "count": 140
     },
     {
-      "type": "word_salad",
-      "count": 7
-    },
-    {
       "type": "mixed_scripts",
       "count": 7
     },
     {
       "type": "cyrillic_latin_mix",
+      "count": 7
+    },
+    {
+      "type": "word_salad",
       "count": 7
     },
     {
@@ -81,20 +81,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "data.otservbr.global.npc.anerui.L71.1487",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.brasith.L59.1211",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
     {
       "key": "spell.furyosa_deathball.name",
       "count": 3,
@@ -123,10 +109,56 @@
       }
     },
     {
+      "key": "data.otservbr.global.npc.anerui.L71.1487",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.brasith.L59.1211",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
+      }
+    },
+    {
       "key": "scripts.action_cushion.say_1",
       "count": 3,
       "types": {
         "identical_to_en": 3
+      }
+    },
+    {
+      "key": "spell.quara_constrictor_freeze.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.ravennouslavalurkertarget.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.tenebris_ultimate.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "spell.lava_golem_soulfire2.name",
+      "count": 2,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1
       }
     },
     {
@@ -169,38 +201,6 @@
       "count": 2,
       "types": {
         "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.quara_constrictor_freeze.name",
-      "count": 2,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "spell.ravennouslavalurkertarget.name",
-      "count": 2,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "spell.tenebris_ultimate.name",
-      "count": 2,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "spell.lava_golem_soulfire2.name",
-      "count": 2,
-      "types": {
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
       }
     },
     {

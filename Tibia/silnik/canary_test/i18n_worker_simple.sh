@@ -15351,6 +15351,86 @@ gt_pending = []  # Klucze do tłumaczenia przez Google Translate
 suspicious_log_path = os.path.join(status_dir, "suspicious_log.jsonl")
 suspicious_rejected_path = os.path.join(status_dir, "suspicious_rejected.jsonl")
 
+# WQ-SUSPICIOUS-REPAIR-1: automatyczny backlog napraw z suspicious_rejected.jsonl
+# Cel: worker ma aktywnie wracać do najczęściej odrzuconych kluczy (per lang+plik),
+# zamiast pomijać je przez strict/fast-mode i utrwalać błędy.
+forced_suspicious_repair_keys = set()
+forced_suspicious_repair_counts = {}
+forced_suspicious_repair_types = {
+    "identical_to_en",
+    "word_salad",
+    "mixed_language",
+    "mixed_scripts",
+    "cyrillic_latin_mix",
+    "latin_only_cyrillic",
+    "wrong_script",
+    "fx_token",
+    "artifact_tokens",
+}
+try:
+    suspicious_repair_enabled = str(os.getenv("SUSPICIOUS_REPAIR_ENABLED", "true")).strip().lower() in {"1", "true", "yes", "on"}
+    suspicious_repair_lookback_lines = max(200, int(os.getenv("SUSPICIOUS_REPAIR_LOOKBACK_LINES", "8000") or "8000"))
+    suspicious_repair_min_hits = max(1, int(os.getenv("SUSPICIOUS_REPAIR_MIN_HITS", "2") or "2"))
+    suspicious_repair_max_keys = max(20, int(os.getenv("SUSPICIOUS_REPAIR_MAX_KEYS", "400") or "400"))
+except Exception:
+    suspicious_repair_enabled = True
+    suspicious_repair_lookback_lines = 8000
+    suspicious_repair_min_hits = 2
+    suspicious_repair_max_keys = 400
+
+if suspicious_repair_enabled and os.path.exists(suspicious_rejected_path):
+    try:
+        with open(suspicious_rejected_path, "r", encoding="utf-8") as _srf:
+            _sr_lines = [x.strip() for x in _srf if x.strip()][-suspicious_repair_lookback_lines:]
+        _sr_counts = {}
+        _sr_issue_counts = {}
+        _target_lang_lc = str(target_lang or "").lower()
+        _target_file_lc = str(json_file or "").lower()
+        for _line in _sr_lines:
+            try:
+                _row = json.loads(_line)
+            except Exception:
+                continue
+            if str(_row.get("lang", "")).lower() != _target_lang_lc:
+                continue
+            if str(_row.get("category", "")).lower() != _target_file_lc:
+                continue
+            _key = str(_row.get("key", "") or "")
+            if not _key:
+                continue
+            _itype = "unknown"
+            _issues = _row.get("issues", [])
+            if isinstance(_issues, list) and _issues and isinstance(_issues[0], dict):
+                _itype = str(_issues[0].get("type", "unknown") or "unknown")
+            if _itype not in forced_suspicious_repair_types:
+                continue
+            _sr_counts[_key] = int(_sr_counts.get(_key, 0) or 0) + 1
+            _sr_issue_counts.setdefault(_key, {})
+            _sr_issue_counts[_key][_itype] = int(_sr_issue_counts[_key].get(_itype, 0) or 0) + 1
+
+        _ordered = sorted(_sr_counts.items(), key=lambda kv: (int(kv[1] or 0), kv[0]), reverse=True)
+        for _k, _cnt in _ordered[:suspicious_repair_max_keys]:
+            if int(_cnt or 0) < suspicious_repair_min_hits:
+                continue
+            forced_suspicious_repair_keys.add(_k)
+            _issue_map = _sr_issue_counts.get(_k, {}) if isinstance(_sr_issue_counts.get(_k, {}), dict) else {}
+            _top_issue = "unknown"
+            if _issue_map:
+                _top_issue = sorted(_issue_map.items(), key=lambda kv: (int(kv[1] or 0), kv[0]), reverse=True)[0][0]
+            forced_suspicious_repair_counts[_k] = {
+                "hits": int(_cnt),
+                "top_issue": _top_issue,
+            }
+
+        if forced_suspicious_repair_keys:
+            print(
+                f"🛠️ SUSPICIOUS REPAIR backlog: {len(forced_suspicious_repair_keys)} keys "
+                f"(lang={target_lang}, file={json_file}, lookback={suspicious_repair_lookback_lines}, min_hits={suspicious_repair_min_hits})"
+            )
+    except Exception:
+        forced_suspicious_repair_keys = set()
+        forced_suspicious_repair_counts = {}
+
 # WQ-NPC-SHORT-1: dedykowany repair pass dla krótkich dialogów NPC (LT/CS/EL/IT)
 # niezależnie od limitu, aby szybko usunąć EN-copy na kluczowych frazach.
 forced_npc_short_repairs = 0
@@ -15421,6 +15501,8 @@ if operator_fast_mode and translate_limit > 0:
             continue
         _cur = str(lang_data.get(_fk, "")) if _has_value else ""
         _is_forced = _is_forced_short_npc_dialogue(_fk, _fe, target_lang) or _is_forced_quest_runtime_fragment(_fk, _fe, json_file)
+        if _fk in forced_suspicious_repair_keys:
+            _is_forced = True
         _needs_repair = False
         if _has_value:
             if _cur.strip() == "" or _cur.startswith("[") or _cur.startswith("[TODO]") or _cur == str(_fe):
@@ -15501,10 +15583,12 @@ for key, en_text in iter_items:
 
         # W strict tłumaczymy tylko placeholdery / TODO / wartości równe EN
         if strict_mode:
+            _force_suspicious_repair = key in forced_suspicious_repair_keys
             if (
                 current_value == en_text
                 and _is_proper_noun_key(key, en_text)
                 and not (_is_cyrillic_lang(target_lang) and _contains_latin_word_4plus(current_value))
+                and not _force_suspicious_repair
             ):
                 skipped_not_placeholder += 1  # Nazwa własna — identyczna = OK
                 continue
@@ -15512,14 +15596,20 @@ for key, en_text in iter_items:
             # aby kolejne cykle strict nie cofały ich do EN przy false-positive quality flags.
             if _is_forced_short_npc_dialogue(key, en_text, target_lang):
                 if current_value and not current_value.startswith("[") and current_value.strip() != str(en_text).strip():
-                    skipped_not_placeholder += 1
-                    continue
+                    if _force_suspicious_repair:
+                        pass
+                    else:
+                        skipped_not_placeholder += 1
+                        continue
             if _is_forced_quest_runtime_fragment(key, en_text, json_file):
                 if current_value and not current_value.startswith("[") and current_value.strip() != str(en_text).strip():
-                    skipped_not_placeholder += 1
-                    continue
+                    if _force_suspicious_repair:
+                        pass
+                    else:
+                        skipped_not_placeholder += 1
+                        continue
             if not (current_value.startswith("[") or current_value.startswith("[TODO]") or current_value == en_text):
-                if operator_fast_mode:
+                if operator_fast_mode and not _force_suspicious_repair:
                     skipped_not_placeholder += 1
                     continue
                 ok_current, _ = validate_candidate(en_text, current_value)
@@ -15529,7 +15619,7 @@ for key, en_text in iter_items:
                     current_issues = detect_suspicious(en_text, current_value, target_lang, key)
                     current_issues.extend(validate_per_lang(en_text, current_value, target_lang, key))
                     current_max_sev = _max_severity(current_issues)
-                if ok_current and current_max_sev == "LOW":
+                if ok_current and current_max_sev == "LOW" and not _force_suspicious_repair:
                     skipped_not_placeholder += 1
                     continue
                 suspicious_existing += 1
@@ -15548,7 +15638,7 @@ for key, en_text in iter_items:
                         "translated": str(current_value),
                     })
         else:
-            if not current_value.startswith("[") and not force_en_copy_retranslate:
+            if not current_value.startswith("[") and not force_en_copy_retranslate and key not in forced_suspicious_repair_keys:
                 continue  # Już przetłumaczone
     
     # ── Semantic Override Check (priorytet nad TM/GT/simple) ────────────

@@ -1,5 +1,5 @@
 {
-  "_comment": "Example NPC-торговец - перевод на английский",
+  "_comment": "Ексампле NPC-торговец - перевод на английский",
   "_file": "[EN] data-otservbr-global/npc/example_merchant_i18n.lua",
   "npc.example_merchant.farewell": "Прощай, %s. Посетите меня снова!",
   "npc.example_merchant.greeting": "Привет, %s! Добро пожаловать в мой магазин. Скажи {trade}, чтобы увидеть мои предложения.",

@@ -36934,5 +36934,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:27:50.949220Z"
+  },
+  "raid.orc.name": {
+    "src_hash": "34b0ceb41c3a8896e074f8e59190021b",
+    "text": "Orc",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:59:59.397147Z"
+  },
+  "raid.zevelon_duskbringer.name": {
+    "src_hash": "5ce47d3193e6d4fdcb52a667ed3dd600",
+    "text": "Zevelon Duskbringer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T22:59:59.397629Z"
   }
 }

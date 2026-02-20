@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-20T22:57:08.386086Z",
-  "cycle": 1,
-  "language": "it",
-  "json_file": "npclib.json",
-  "translated": 0,
+  "timestamp": "2026-02-20T23:00:00.364104Z",
+  "cycle": 2,
+  "language": "sv",
+  "json_file": "raids.json",
+  "translated": 29,
   "placeholders": 0,
-  "guard_fail": 2,
+  "guard_fail": 1,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 147
+  "strict_skipped_done": 117
 }

@@ -1,8 +1,8 @@
 {
-  "total_cycles": 1,
+  "total_cycles": 2,
   "mode": "AUTO_TRANSLATE",
   "category": "ru",
-  "last_update": "2026-02-20T23:59:22.570550",
+  "last_update": "2026-02-21T00:00:34.921636",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,9 +27,9 @@
   },
   "auto_translate": {
     "language": "ru",
-    "json_file": "php.json",
-    "keys_to_translate": 20,
-    "guard_fail": 2,
+    "json_file": "example_merchant.json",
+    "keys_to_translate": 2,
+    "guard_fail": 1,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

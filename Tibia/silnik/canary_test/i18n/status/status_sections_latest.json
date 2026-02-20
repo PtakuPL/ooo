@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-20T18:37:46.864077Z",
+  "generated_at_utc": "2026-02-20T18:39:06.060420Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,31 +9,31 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-02-20 18:37:45"
+      "last_update": "2026-02-20 18:39:04"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "5s temu",
+      "freshness": "6s temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-02-20T18:37:41Z"
+      "last_update": "2026-02-20T18:39:00Z"
     },
     "MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "48s temu",
+      "freshness": "1min temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-02-20 18:37:45"
+      "last_update": "2026-02-20 18:39:04"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "1min temu",
+      "freshness": "40s temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-02-20T18:35:57.346191Z"
+      "last_update": "2026-02-20T18:38:25.701257Z"
     },
     "QUALITY": {
       "state": "active",
@@ -41,7 +41,7 @@
       "reason": "",
       "freshness": "0s temu",
       "source": "quality_audit_latest.json + guard_fail_breakdown_latest.json",
-      "last_update": "2026-02-20T18:37:46.758123Z"
+      "last_update": "2026-02-20T18:39:05.955380Z"
     },
     "HISTORY": {
       "state": "active",
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-02-20 18:37:45"
+      "last_update": "2026-02-20 18:39:04"
     }
   }
 }

@@ -1,42 +1,41 @@
 {
-  "timestamp": "2026-02-20T18:37:46.758123Z",
-  "window_start_utc": "2026-02-20T17:37:46.040327Z",
-  "window_end_utc": "2026-02-20T18:37:46.040327Z",
+  "timestamp": "2026-02-20T18:39:05.955380Z",
+  "window_start_utc": "2026-02-20T17:39:05.277549Z",
+  "window_end_utc": "2026-02-20T18:39:05.277549Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 170,
-  "rejected_entries_raw": 351,
-  "suspicious_entries": 3157,
-  "suspicious_entries_raw": 28187,
-  "guard_fail_entries": 120,
-  "guard_fail_sum": 7535,
+  "rejected_entries": 160,
+  "rejected_entries_raw": 341,
+  "suspicious_entries": 3107,
+  "suspicious_entries_raw": 25398,
+  "guard_fail_entries": 121,
+  "guard_fail_sum": 7514,
   "by_type": {
-    "identical_to_en": 140,
-    "contains_tibia_proper_noun": 9,
+    "identical_to_en": 130,
     "word_salad": 4,
+    "contains_tibia_proper_noun": 8,
     "mixed_language": 19,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7
   },
   "by_source": {
-    "google_translate": 170
+    "google_translate": 160
   },
   "by_language": {
-    "pl": 41,
-    "es": 34,
+    "es": 29,
+    "pl": 36,
     "ro": 59,
     "it": 29,
     "ru": 7
   },
   "by_category": {
-    "cpp.json": 6,
-    "achievements.json": 5,
-    "npc.json": 4,
+    "cpp.json": 1,
     "otclient_data.json": 1,
+    "npc.json": 4,
     "html.json": 18,
     "books.json": 1,
     "php.json": 3,
@@ -50,13 +49,13 @@
     "monsters.json": 23
   },
   "by_severity": {
-    "CRITICAL": 144,
+    "CRITICAL": 134,
     "HIGH": 26
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 140
+      "count": 130
     },
     {
       "type": "mixed_language",
@@ -64,7 +63,7 @@
     },
     {
       "type": "contains_tibia_proper_noun",
-      "count": 9
+      "count": 8
     },
     {
       "type": "mixed_scripts",
@@ -137,14 +136,6 @@
         "contains_tibia_proper_noun": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "cpp.title.name_38",
-      "count": 2,
-      "types": {
-        "identical_to_en": 1,
-        "contains_tibia_proper_noun": 1
       }
     },
     {
@@ -226,6 +217,13 @@
     },
     {
       "key": "spell.rotthing_explo.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.iksyapunac_wave.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

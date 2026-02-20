@@ -34702,5 +34702,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:22:03.773173Z"
+  },
+  "npc.ninev.stdmod_7": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Du har redan fått min bönrad.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.182895Z"
+  },
+  "npc.ninev.stdmod_8": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.183373Z"
+  },
+  "npc.ninev.stdmod_9": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bra. Du är fri att tacka nej till mitt erbjudande.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.183902Z"
+  },
+  "npc.ninos.say_1": {
+    "src_hash": "6ce3be822150652db4d7ba6002db7105",
+    "text": "Åh, de förändras inte så mycket sedan förr i tiden som... <berättar en tråkig och förvirrande historia om en tårta, ett paket, sig själv och två ekorrar, åtminstone berättar han sina mått till slut> ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.186086Z"
+  },
+  "npc.ninos.voice_1": {
+    "src_hash": "600057e0b95043563622fa58cb570b47",
+    "text": "Välkommen till posten!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.186575Z"
+  },
+  "npc.ninos.voice_2": {
+    "src_hash": "2951906ee85e50cb7be4866a3c95ec80",
+    "text": "Behöver du hjälp med brev eller paket är det bara att fråga mig. Jag kan förklara allt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.187146Z"
+  },
+  "npc.ninos.voice_3": {
+    "src_hash": "611f89c7262e935f33b9114aa8652e11",
+    "text": "Hej, skicka ett brev till din vän då och då. Håll kontakten, du vet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.187659Z"
+  },
+  "npc.nipuna.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.188188Z"
+  },
+  "npc.nomad.stdmod_10": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Fenixens gnista ges av jord- och eldens dvärgpräster i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.190047Z"
+  },
+  "npc.nomad.stdmod_12": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druiderna norr om Carlin kommer att förse dig med Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.190547Z"
+  },
+  "npc.nomad.stdmod_3": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bra. Du är fri att tacka nej till mitt erbjudande.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.191163Z"
+  },
+  "npc.nomad.stdmod_4": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Du är sårad, mitt barn. Jag ska läka dina sår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.191604Z"
+  },
+  "npc.nomad.stdmod_5": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Du ser inte så illa ut. Tyvärr, jag kan inte hjälpa dig. Men om du letar efter ytterligare skydd bör du gå på {pilgrimage} av aska eller få skyddet av {twist of fate} här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.192397Z"
+  },
+  "npc.nomad.stdmod_8": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Du kan be om välsignelsen av andlig avskärmning i whiteflower-templet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.193175Z"
+  },
+  "npc.nomad.stdmod_9": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Du kan be om välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.193689Z"
+  },
+  "npc.norf.stdmod_10": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Jag kan ana att gnistan från Fenix ​​redan gavs till dig av dvärgprästerna av jord och eld i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.198638Z"
+  },
+  "npc.norf.stdmod_11": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Jag kan känna att du redan pratade med eremiten Eremo på ön Cormaya och fick denna välsignelse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:38:14.199818Z"
   }
 }

@@ -34838,5 +34838,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:38:14.199818Z"
+  },
+  "npc.norf.stdmod_12": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druiderna norr om Carlin kommer att förse dig med Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.229026Z"
+  },
+  "npc.norf.stdmod_13": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Du kan be om välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.229560Z"
+  },
+  "npc.norf.stdmod_14": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Fenixens gnista ges av jord- och eldens dvärgpräster i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.230234Z"
+  },
+  "npc.norf.stdmod_3": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bra. Du är fri att tacka nej till mitt erbjudande.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.230725Z"
+  },
+  "npc.norf.stdmod_4": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Du är sårad, mitt barn. Jag ska läka dina sår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.231320Z"
+  },
+  "npc.norf.stdmod_5": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Du ser inte så illa ut. Tyvärr, jag kan inte hjälpa dig. Men om du letar efter ytterligare skydd bör du gå på {pilgrimage} av aska eller få skyddet av {twist of fate} här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.232137Z"
+  },
+  "npc.norf.stdmod_6": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Närhelst du får ett dödligt sår skadas din livskraft och det finns en chans att du tappar bort en del av din utrustning. Med varenda av de fem {blessings} du har kommer denna skada och risken för förlust att minska.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.233018Z"
+  },
+  "npc.norf.stdmod_8": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Jag kan ana att druiderna norr om Carlin har försett dig med omfamningen Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.233635Z"
+  },
+  "npc.norf.stdmod_9": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Jag kan se att du fick välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.234257Z"
+  },
+  "npc.norma.stdmod_9": {
+    "src_hash": "7defe47d2884475b8bd17dca63d0bcd8",
+    "text": "För att se erbjudanden från en handlare, prata helt enkelt med honom eller henne och be om ett {trade}. De visar dig gärna sina erbjudanden och även de saker de köper av dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.237853Z"
+  },
+  "npc.nydala.sendtrade_msg_1": {
+    "src_hash": "0766cd691c0208c136e812d2734e77a5",
+    "text": "Ta en titt. De flesta möbler kommer i praktiska kit. Använd dem bara i ditt hus för att montera möblerna. Vill du bara se en viss {type} möbler?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.239336Z"
+  },
+  "npc.obi.stdmod_31": {
+    "src_hash": "c6111c0ce62b4701d6f63762fb96fc6e",
+    "text": "Nåväl, inget guld, ingen affär. Tjäna guld genom att slåss mot {monsters} och plocka upp sakerna de bär. Sälj den till {merchants} för att tjäna pengar!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.241778Z"
+  },
+  "npc.obi.stdmod_9": {
+    "src_hash": "72f97516fb4d02e4719a7ea8bb221c60",
+    "text": "Kungen uppmuntrade försäljare att resa hit, men det var bara jag som vågade ta risken, och det var en risk!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.243433Z"
+  },
+  "npc.obi.walkaway_msg_1": {
+    "src_hash": "77bb511948fe892bc1857d82e9b46603",
+    "text": "Jaha, bra dag.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.243977Z"
+  },
+  "npc.ocelus.say_1": {
+    "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
+    "text": "Du har det inte...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.245609Z"
+  },
+  "npc.old_adall.stdmod_2": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Kanske en annan gång.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.246730Z"
+  },
+  "npc.oldrak.say_11": {
+    "src_hash": "12d673409d71f1fc127ebad108378378",
+    "text": "Nej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:48:48.247605Z"
   }
 }

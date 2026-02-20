@@ -80030,5 +80030,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T20:44:48.000279Z"
+  },
+  "item.4838.name": {
+    "src_hash": "a96c07ca0e309c70a8052729e4e34ec4",
+    "text": "strana polvere",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:52:57.325083Z"
+  },
+  "item.4852.desc": {
+    "src_hash": "18bf53a1e2d29f0fcf6dbaa1b4bf72db",
+    "text": "È vuoto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:52:57.329905Z"
+  },
+  "item.4852.name": {
+    "src_hash": "d082a6e325d079f087b1ae36eff463f5",
+    "text": "contenitore di ectoplasma",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:52:57.330277Z"
+  },
+  "item.4853.name": {
+    "src_hash": "d082a6e325d079f087b1ae36eff463f5",
+    "text": "contenitore di ectoplasma",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:52:57.332829Z"
+  },
+  "item.4863.desc": {
+    "src_hash": "18bf53a1e2d29f0fcf6dbaa1b4bf72db",
+    "text": "È vuoto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:52:57.333672Z"
+  },
+  "item.4867.desc": {
+    "src_hash": "18bf53a1e2d29f0fcf6dbaa1b4bf72db",
+    "text": "È vuoto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:52:57.334404Z"
   }
 }

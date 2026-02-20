@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-20T21:24:05.409993Z",
+  "timestamp": "2026-02-20T21:26:26.748222Z",
   "priority_langs": [
     "es",
     "pl",
@@ -73,7 +73,7 @@
     "de": 659,
     "fr": 578,
     "hu": 663,
-    "it": 437,
+    "it": 429,
     "nl": 691,
     "pt": 620,
     "ro": 424,
@@ -646,7 +646,7 @@
     {
       "lang": "it",
       "json_file": "scripts.json",
-      "identical_to_en": 117,
+      "identical_to_en": 109,
       "domain_priority": 9
     },
     {

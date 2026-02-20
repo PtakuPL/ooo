@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T17:47:48.801854Z",
+  "timestamp": "2026-02-20T17:48:41.635763Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 50,
-  "cache_misses": 2,
-  "file_cache_hits": 1973,
-  "file_cache_misses": 3,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 1975,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -7500,7 +7500,7 @@
         [
           "talkactions.json",
           1,
-          1771535635856962334,
+          1771609715250045078,
           18188
         ],
         [
@@ -8027,7 +8027,7 @@
         "talkactions.json": {
           "sig": [
             1,
-            1771535635856962334,
+            1771609715250045078,
             18188
           ],
           "row": {
@@ -25503,7 +25503,7 @@
         [
           "startup.json",
           1,
-          1771535588086466538,
+          1771609687504560360,
           1663
         ],
         [
@@ -26022,7 +26022,7 @@
         "startup.json": {
           "sig": [
             1,
-            1771535588086466538,
+            1771609687504560360,
             1663
           ],
           "row": {

@@ -1,33 +1,33 @@
 {
-  "timestamp": "2026-02-20T17:47:49.653250Z",
-  "window_start_utc": "2026-02-20T16:47:49.038373Z",
-  "window_end_utc": "2026-02-20T17:47:49.038373Z",
+  "timestamp": "2026-02-20T17:48:42.544140Z",
+  "window_start_utc": "2026-02-20T16:48:41.913755Z",
+  "window_end_utc": "2026-02-20T17:48:41.913755Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 296,
-  "rejected_entries_raw": 534,
-  "suspicious_entries": 4171,
-  "suspicious_entries_raw": 20661,
-  "guard_fail_entries": 101,
-  "guard_fail_sum": 3747,
+  "rejected_entries": 299,
+  "rejected_entries_raw": 535,
+  "suspicious_entries": 4174,
+  "suspicious_entries_raw": 20537,
+  "guard_fail_entries": 103,
+  "guard_fail_sum": 3777,
   "by_type": {
-    "identical_to_en": 239,
     "word_salad": 8,
-    "mixed_language": 33,
+    "identical_to_en": 241,
+    "mixed_language": 34,
     "contains_tibia_proper_noun": 15,
     "mixed_scripts": 13,
     "cyrillic_latin_mix": 13,
     "fx_token": 3
   },
   "by_source": {
-    "google_translate": 296
+    "google_translate": 299
   },
   "by_language": {
-    "es": 46,
+    "es": 49,
     "ro": 115,
     "it": 49,
     "ru": 13,
@@ -35,9 +35,9 @@
     "sv": 8
   },
   "by_category": {
-    "npc.json": 2,
     "books.json": 2,
     "items.json": 57,
+    "npc.json": 2,
     "server.json": 11,
     "monsters.json": 65,
     "spells.json": 73,
@@ -51,20 +51,20 @@
     "html.json": 18,
     "php.json": 1,
     "modules.json": 2,
-    "talkactions.json": 3
+    "talkactions.json": 6
   },
   "by_severity": {
-    "CRITICAL": 247,
-    "HIGH": 49
+    "CRITICAL": 249,
+    "HIGH": 50
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 239
+      "count": 241
     },
     {
       "type": "mixed_language",
-      "count": 33
+      "count": 34
     },
     {
       "type": "contains_tibia_proper_noun",

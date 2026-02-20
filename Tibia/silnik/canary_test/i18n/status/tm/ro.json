@@ -69190,5 +69190,149 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:20:14.541871Z"
+  },
+  "npc.paulie.say_11": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sigur doriți să retrageți {} aur din contul dvs. bancar?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.208085Z"
+  },
+  "npc.paulie.say_12": {
+    "src_hash": "27f766e1fbe3d48101558b8181af1377",
+    "text": "Sigur doriți să retrageți {} aur din contul dvs. bancar?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.208586Z"
+  },
+  "npc.paulie.say_5": {
+    "src_hash": "45f1b7f9c5b8645d32e2c1733b7e753d",
+    "text": "Soldul contului dvs. este {} aur.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.216429Z"
+  },
+  "npc.paulie.say_6": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Chiar ți-ar plăcea să depui {} aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.216857Z"
+  },
+  "npc.paulie.say_7": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Chiar ți-ar plăcea să depui {} aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.217276Z"
+  },
+  "npc.paulie.say_8": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Chiar ți-ar plăcea să depui {} aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.217832Z"
+  },
+  "npc.paulie.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Nu uitați să vă depuneți banii aici în Banca Globală înainte de a pleca în aventură.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.218440Z"
+  },
+  "npc.pemaret.say_4": {
+    "src_hash": "235c3e61bedc3e4295235cc4c6e633dc",
+    "text": "Atunci nu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.219514Z"
+  },
+  "npc.pemaret.stdmod_1": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Cauți o trecere la {0} pentru {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.220056Z"
+  },
+  "npc.pemaret.stdmod_2": {
+    "src_hash": "d9af9f4b1c692be2246179837c0669d5",
+    "text": "Poate mai târziu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.220352Z"
+  },
+  "npc.percybald.say_23": {
+    "src_hash": "64e60fb1b5a64f94a1e4ae355404764b",
+    "text": "Luați această armură ca pe un semn de mare recunoștință. Să ne amintim pentru totdeauna această zi, prietene!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.223177Z"
+  },
+  "npc.percybald.say_25": {
+    "src_hash": "a6830d67383b8b64617c754ce128e690",
+    "text": "Ai deja acel supliment.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.223592Z"
+  },
+  "npc.percybald.say_28": {
+    "src_hash": "188624753f3715de9d5f3b451e230e5e",
+    "text": "Ai deja acea ținută.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.224157Z"
+  },
+  "npc.percybald.say_32": {
+    "src_hash": "188624753f3715de9d5f3b451e230e5e",
+    "text": "Ai deja acea ținută.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.224792Z"
+  },
+  "npc.perod.say_1": {
+    "src_hash": "ca5af46d9c20d6cbd9f33d8c59caee9d",
+    "text": "Vrei să cumperi o minge de fotbal pentru 111 aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.226079Z"
+  },
+  "npc.perod.say_2": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Iată-l.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.226354Z"
+  },
+  "npc.petros.greet_msg_1": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Bun venit la bord, |PLAYERNAME|. Unde te pot {sail} astăzi?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.228798Z"
+  },
+  "npc.petros.stdmod_1": {
+    "src_hash": "5ea0ed4d1fcd3844c445b6cfd58d85d9",
+    "text": "Îmi pare rău, dar nu navighez acolo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:28:36.229209Z"
   }
 }

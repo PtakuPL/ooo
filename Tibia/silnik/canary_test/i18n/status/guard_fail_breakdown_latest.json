@@ -1,55 +1,56 @@
 {
-  "timestamp": "2026-02-20T16:44:14.881914Z",
-  "window_start_utc": "2026-02-20T15:44:14.635686Z",
-  "window_end_utc": "2026-02-20T16:44:14.635686Z",
+  "timestamp": "2026-02-20T16:45:50.304541Z",
+  "window_start_utc": "2026-02-20T15:45:50.057149Z",
+  "window_end_utc": "2026-02-20T16:45:50.057149Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 361,
-  "suspicious_entries": 7515,
-  "guard_fail_entries": 43,
-  "guard_fail_sum": 3592,
+  "rejected_entries": 400,
+  "suspicious_entries": 7703,
+  "guard_fail_entries": 46,
+  "guard_fail_sum": 3651,
   "by_type": {
-    "identical_to_en": 279,
-    "word_salad": 16,
-    "mixed_language": 45,
+    "identical_to_en": 306,
+    "word_salad": 19,
+    "mixed_language": 54,
     "contains_tibia_proper_noun": 22,
     "mixed_scripts": 21,
     "cyrillic_latin_mix": 21
   },
   "by_source": {
-    "google_translate": 361
+    "google_translate": 400
   },
   "by_language": {
-    "es": 61,
-    "ro": 124,
-    "it": 55,
+    "es": 63,
+    "ro": 159,
+    "it": 57,
     "ru": 21,
     "pl": 100
   },
   "by_category": {
-    "npc.json": 20,
+    "npc.json": 22,
     "items.json": 112,
     "monsters.json": 117,
-    "spells.json": 93,
+    "spells.json": 128,
     "server.json": 3,
-    "scripts.json": 16
+    "scripts.json": 16,
+    "quests.json": 2
   },
   "by_severity": {
-    "CRITICAL": 295,
-    "HIGH": 66
+    "CRITICAL": 325,
+    "HIGH": 75
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 279
+      "count": 306
     },
     {
       "type": "mixed_language",
-      "count": 45
+      "count": 54
     },
     {
       "type": "contains_tibia_proper_noun",
@@ -65,22 +66,22 @@
     },
     {
       "type": "word_salad",
-      "count": 16
+      "count": 19
     }
   ],
   "top_keys": [
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 10,
+      "count": 11,
       "types": {
-        "identical_to_en": 10
+        "identical_to_en": 11
       }
     },
     {
       "key": "npc.al_dee.stdmod_41",
-      "count": 10,
+      "count": 11,
       "types": {
-        "word_salad": 10
+        "word_salad": 11
       }
     },
     {
@@ -142,6 +143,16 @@
       }
     },
     {
+      "key": "spell.quara_constrictor_electrify.name",
+      "count": 6,
+      "types": {
+        "mixed_language": 3,
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1,
+        "identical_to_en": 1
+      }
+    },
+    {
       "key": "item.10388.name",
       "count": 5,
       "types": {
@@ -167,15 +178,6 @@
       "count": 5,
       "types": {
         "identical_to_en": 5
-      }
-    },
-    {
-      "key": "spell.quara_constrictor_electrify.name",
-      "count": 5,
-      "types": {
-        "mixed_language": 3,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
       }
     },
     {
@@ -207,24 +209,24 @@
       }
     },
     {
-      "key": "monster.old_pig.voice_2",
-      "count": 3,
+      "key": "spell.rotthingholy_ulus.name",
+      "count": 4,
       "types": {
-        "identical_to_en": 3
+        "identical_to_en": 4
       }
     },
     {
-      "key": "monster.eternal_guardian.voice_1",
-      "count": 3,
+      "key": "spell.single_ice_chain.name",
+      "count": 4,
       "types": {
-        "identical_to_en": 3
+        "identical_to_en": 4
       }
     },
     {
-      "key": "monster.worker_golem.voice_3",
-      "count": 3,
+      "key": "spell.podzillaphys_chain.name",
+      "count": 4,
       "types": {
-        "identical_to_en": 3
+        "identical_to_en": 4
       }
     }
   ]

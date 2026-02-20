@@ -34566,5 +34566,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:07:19.705440Z"
+  },
+  "npc.ninev.stdmod_14": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vill du byta ut din äventyrarsten mot 30 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.760984Z"
+  },
+  "npc.ninev.stdmod_15": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.761501Z"
+  },
+  "npc.ninev.stdmod_16": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Tyvärr, du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.761944Z"
+  },
+  "npc.ninev.stdmod_18": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Du är sårad, mitt barn. Jag ska läka dina sår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.762587Z"
+  },
+  "npc.ninev.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Du ser inte så illa ut. Tyvärr, jag kan inte hjälpa dig. Men om du letar efter ytterligare skydd bör du gå på {pilgrimage} av aska eller få skyddet av {twist of fate} här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.763413Z"
+  },
+  "npc.ninev.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Närhelst du får ett dödligt sår skadas din livskraft och det finns en chans att du tappar bort en del av din utrustning. Med varenda av de fem {blessings} du har kommer denna skada och risken för förlust att minska.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.764497Z"
+  },
+  "npc.ninev.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Jag ser att du fick den andliga avskärmningen i det vita blomtemplet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.765216Z"
+  },
+  "npc.ninev.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Jag kan ana att druiderna norr om Carlin har försett dig med omfamningen Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.765858Z"
+  },
+  "npc.ninev.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Jag kan se att du fick välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.766607Z"
+  },
+  "npc.ninev.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Jag kan ana att gnistan från Fenix ​​redan gavs till dig av dvärgprästerna av jord och eld i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.767283Z"
+  },
+  "npc.ninev.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Jag kan känna att du redan pratade med eremiten Eremo på ön Cormaya och fick denna välsignelse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.767900Z"
+  },
+  "npc.ninev.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Du kan be om välsignelsen av andlig avskärmning i whiteflower-templet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.768611Z"
+  },
+  "npc.ninev.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druiderna norr om Carlin kommer att förse dig med Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.769127Z"
+  },
+  "npc.ninev.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Du kan be om välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.769812Z"
+  },
+  "npc.ninev.stdmod_3": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Ja, jag fick besked om vad jag skulle göra. Är du beredd att ta emot min bönelinje?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.770371Z"
+  },
+  "npc.ninev.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Fenixens gnista ges av jord- och eldens dvärgpräster i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.770937Z"
+  },
+  "npc.ninev.stdmod_33": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Detta är en speciell välsignelse som jag kan skänka dig när du har fått åtminstone en av de andra välsignelserna och som fungerar lite annorlunda. ... \\z\n\tDet fungerar bara när du dödas av andra äventyrare, vilket betyder att minst hälften av skadan som ledde till din död orsakades av andra, inte av monster eller miljön. ... \\z\n\t{twist of fate} kommer inte att minska dödsstraffet som de andra välsignelserna, utan istället hindra dig från att förlora dina andra välsignelser såväl som förlustamuletten, om du bär en. Det kostar lika mycket som de andra välsignelserna. ... \\z\n\tSkulle du vilja få det skyddet för ett offer på |PVPBLESSCOST| guld, barn?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:22:03.773173Z"
   }
 }

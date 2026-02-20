@@ -35646,5 +35646,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T20:02:10.592040Z"
+  },
+  "npc.queen_eloise.say_13": {
+    "src_hash": "96b8026cc2b958c7b7b9c982cdb8193a",
+    "text": "Du har redan den outfiten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.532893Z"
+  },
+  "npc.queen_eloise.say_14": {
+    "src_hash": "1c2974aa5ece2c40315db395e71a13e5",
+    "text": "Du måste donera {helmet}-tillägget först.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.533305Z"
+  },
+  "npc.queen_eloise.say_15": {
+    "src_hash": "7346bd095953094daa8fe43a55c46780",
+    "text": "Så du skulle vilja donera 500.000.000 guldpjäser som i gengäld ger dig rätt att bära en unik rustning?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.533873Z"
+  },
+  "npc.queen_eloise.say_16": {
+    "src_hash": "198357327b9821aea565dbe508d1d3c2",
+    "text": "Så du skulle vilja donera 250.000.000 guldpjäser som i gengäld ger dig rätt att bära unik hjälm?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.534431Z"
+  },
+  "npc.queen_eloise.say_17": {
+    "src_hash": "52d6e7e3f5eb1ef4e02292b7ce660565",
+    "text": "Så du skulle vilja skänka 250.000.000 guldpjäser som i gengäld ger dig rätt att bära en unik känga?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.535304Z"
+  },
+  "npc.queen_eloise.say_2": {
+    "src_hash": "c65af90ce2c9ecc9ed1080eb962ba346",
+    "text": "I så fall, återvänd till mig när du bestämt dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.535761Z"
+  },
+  "npc.queen_eloise.say_3": {
+    "src_hash": "64e60fb1b5a64f94a1e4ae355404764b",
+    "text": "Ta denna rustning som ett tecken på stor tacksamhet. Låt oss för alltid minnas denna dag, min vän!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.536318Z"
+  },
+  "npc.queen_eloise.say_4": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Se till att du har lediga platser i din butiks inkorg.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.536741Z"
+  },
+  "npc.queen_eloise.say_5": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Du har inte tillräckligt med pengar för att donera det beloppet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.537308Z"
+  },
+  "npc.queen_eloise.say_6": {
+    "src_hash": "ee2bcc845502cad1564baad182aef32d",
+    "text": "Du har redan det tillägget.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.537862Z"
+  },
+  "npc.queen_eloise.say_7": {
+    "src_hash": "c3b7f6d809dff613b8443e33af06db32",
+    "text": "Ta den här hjälmen som ett tecken på stor tacksamhet. Låt oss för alltid minnas denna dag, min vän. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.538483Z"
+  },
+  "npc.queen_eloise.say_8": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Du har inte tillräckligt med pengar för att donera det beloppet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.538989Z"
+  },
+  "npc.queen_eloise.say_9": {
+    "src_hash": "96b8026cc2b958c7b7b9c982cdb8193a",
+    "text": "Du har redan den outfiten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.539364Z"
+  },
+  "npc.queen_eloise.stdmod_1": {
+    "src_hash": "8bde248f2855df0ec9b4de274f833a89",
+    "text": "Jag kan marknadsföra dig för 20 000 guldmynt. Vill du att jag ska marknadsföra dig?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.539864Z"
+  },
+  "npc.queen_eloise.stdmod_13": {
+    "src_hash": "5b3edcf522c874340c892f2fd8f7060b",
+    "text": "Tack, jag mår bra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.540449Z"
+  },
+  "npc.queen_eloise.stdmod_2": {
+    "src_hash": "b16b6f7e9ba0adb52c44ffb607511f3e",
+    "text": "Grattis! Du är nu befordrad.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:22:49.541216Z"
   }
 }

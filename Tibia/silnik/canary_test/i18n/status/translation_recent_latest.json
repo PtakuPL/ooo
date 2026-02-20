@@ -1,131 +1,131 @@
 {
-  "timestamp": "2026-02-20T16:16:38.989672Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 23,
+  "timestamp": "2026-02-20T16:20:05.632202Z",
+  "language": "ru",
+  "json_file": "monsters.json",
+  "translated": 44,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "monster.jaul.voice_2",
+      "en": "QJELL AFAR GOU JEY!!",
+      "translated": "QJELL ДАЛЕКО ГОУ ДЖЕЙ!!",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "monster.the_unwelcome.name",
+      "en": "The Unwelcome",
+      "translated": "The UnДобро пожаловать",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "key": "monster.the_unwelcome.desc",
+      "en": "The Unwelcome",
+      "translated": "The UnДобро пожаловать",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "key": "monster.minishabaal.voice_5",
+      "en": "He He He",
+      "translated": "Он он он",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "key": "monster.mummy.voice_5",
+      "en": "Ahkahra exura belil mort!",
+      "translated": "Ахкара exura белил морт!",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "key": "monster.undead_elite_gladiator.name",
+      "en": "Undead Elite Gladiator",
+      "translated": "Undead Элитный гладиатор",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "key": "monster.foreman_kneebiter.voice_1",
+      "en": "By Durin's beard!",
+      "translated": "Клянусь бородой Durin!",
       "source": "tm"
     },
     {
-      "key": "npc.elyen_ravenlock.voice_2",
-      "en": "<chants> Re Ha, Omrah, Tan Ra...",
-      "translated": "<cánticos> Re Ha, Omrah, Tan Ra...",
+      "key": "monster.zulazza_the_corruptor.voice_3",
+      "en": "Zzaion is our last zztand! I will not leave wizzout a fight!",
+      "translated": "Ззайон — наш последний ззтанд! Я не оставлю wizzout бой!",
       "source": "tm"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "key": "monster.chizzoron_the_distorter.voice_1",
+      "en": "Humanzzz! Leave Zzaion at onzzzze!",
+      "translated": "Человечествоззз! Оставьте Зайон в onzzzze!",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "key": "monster.deepling_worker.voice_1",
+      "en": "Qjell afar gou jey!",
+      "translated": "Qjell издалека, гоу джей!",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "key": "monster.hardened_usurper_warlock.name",
+      "en": "Hardened Usurper Warlock",
+      "translated": "Закоренелый узурпатор Warlock",
       "source": "tm"
     },
     {
-      "key": "npc.mother_of_jack.voice_1",
-      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
-      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?",
+      "key": "monster.usurper_knight.voice_3",
+      "en": "You don't deserve Bounac!",
+      "translated": "Ты не заслуживаешь Bounac!",
       "source": "tm"
     },
     {
-      "key": "npc.navigator.multi_1",
-      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
-      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ...",
+      "key": "monster.hardened_usurper_knight.name",
+      "en": "Hardened Usurper Knight",
+      "translated": "Закоренелый узурпатор Knight",
       "source": "tm"
     },
     {
-      "key": "npc.navigator.multi_2",
-      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
-      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ...",
+      "key": "monster.training_machine.voice_6",
+      "en": "klonk klonk klonk",
+      "translated": "клонк клонк клонк",
       "source": "tm"
     },
     {
-      "key": "npc.omrabas.multi_35",
-      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
-      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!",
+      "key": "monster.dryad.voice_1",
+      "en": "Feel the wrath of mother Tibia!",
+      "translated": "Почувствуй гнев матери Tibia!",
       "source": "tm"
     },
     {
-      "key": "npc.omrabas.multi_82",
-      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
-      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!",
+      "key": "monster.zevelon_duskbringer.voice_3",
+      "en": "I will be still around when my 'noble' race is gone.",
+      "translated": "Я буду рядом, когда моя гонка 'noble' закончится.",
       "source": "tm"
     },
     {
-      "key": "npc.omrabas.voice_2",
-      "en": "He will PAY for this... They will ALL pay!",
-      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!",
+      "key": "monster.yielothax.voice_2",
+      "en": "Bsssssssm Bssssssm Bsssssssssssm!",
+      "translated": "Бсссссссм Бсссссссм Бсссссссм!",
       "source": "tm"
     },
     {
-      "key": "npc.pythius_the_rotten.stdmod_12",
-      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
-      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!",
+      "key": "monster.juvenile_cyclops.name",
+      "en": "Juvenile Cyclops",
+      "translated": "Несовершеннолетний Cyclops",
       "source": "tm"
     },
     {
-      "key": "npc.raymond_striker.multi_21",
-      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí...",
+      "key": "monster.mummy.voice_11",
+      "en": "Ahkahra exura belil mort!",
+      "translated": "Ахкара exura белил морт!",
       "source": "tm"
     },
     {
-      "key": "npc.sane_mage.multi_5",
-      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?",
+      "key": "monster.training_machine.voice_15",
+      "en": "klonk klonk klonk",
+      "translated": "клонк клонк клонк",
       "source": "tm"
     }
   ]

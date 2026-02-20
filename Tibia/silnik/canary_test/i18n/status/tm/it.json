@@ -74990,5 +74990,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T16:15:55.679649Z"
+  },
+  "monster.wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:19:44.261772Z"
+  },
+  "monster.starving_wolf.voice_3": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:19:44.264122Z"
+  },
+  "monster.winter_wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:19:44.267024Z"
+  },
+  "monster.war_wolf.voice_1": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:19:44.272746Z"
+  },
+  "monster.wolf.voice_3": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:19:44.939512Z"
+  },
+  "monster.winter_wolf.voice_2": {
+    "src_hash": "95f696e82e34bd498c4d690a75d29058",
+    "text": "Yoooohhuuuu!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:19:44.939947Z"
   }
 }

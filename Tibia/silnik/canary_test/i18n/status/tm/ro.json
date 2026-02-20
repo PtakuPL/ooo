@@ -71614,5 +71614,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T20:15:07.175948Z"
+  },
+  "npc.ser_tybald.greet_msg_1": {
+    "src_hash": "665387f24d7145588216c95700974267",
+    "text": "Bine ai venit, copile. Ai venit să afli despre {magic}? Atunci ești în locul potrivit. Vă pot învăța multe {spells} utile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.339585Z"
+  },
+  "npc.ser_tybald.say_1": {
+    "src_hash": "c1e746c2a21e46ca4783b2a87dbcf1b0",
+    "text": "Vrăjile sunt foarte utile în luptă - nu numai pentru magi, deși bineînțeles că ne bazăm în mod special pe ele pentru o mare parte din producția de daune. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.340384Z"
+  },
+  "npc.ser_tybald.say_10": {
+    "src_hash": "99f18f8cce9818b6a096eb22c8fcaf02",
+    "text": "Ah, frumusețea lumii noastre! Este vast și extraordinar de divers. Insule ciudate, orașe frumoase și monștri fioroși care cutreieră pustii. Mistere, aventuri, pericol la fiecare colț. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.341265Z"
+  },
+  "npc.ser_tybald.say_11": {
+    "src_hash": "095a07d56a7da82ab7ef9b35a18e4912",
+    "text": "Odată ce ai atins nivelul 8, ești gata să alegi o vocație și să mergi pe continentul Tibian.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.342015Z"
+  },
+  "npc.ser_tybald.say_12": {
+    "src_hash": "fabf70ea563b1a2875349fcdabe40dcb",
+    "text": "Alegerea vocației tale îți va determina viața în Tibia și abilitățile și tehnicile de luptă pe care le poți folosi. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.342925Z"
+  },
+  "npc.ser_tybald.say_13": {
+    "src_hash": "e032c3362b6ae215006cc108cf75914f",
+    "text": "Sunt patru vocații: cavaler, druid, paladin și vrăjitor. Dacă vrei să afli mai multe despre ei, vorbește cu Oressa în templu. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.343685Z"
+  },
+  "npc.ser_tybald.say_14": {
+    "src_hash": "62f69f4dd50b6ca75bdab050de0e2405",
+    "text": "Eu însumi predau vrăji de încercare pentru ambele clase de magie, în timp ce Tybald în camera alăturată este specializat în vrăji de cavaler și paladin.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.344463Z"
+  },
+  "npc.ser_tybald.say_15": {
+    "src_hash": "98fcd25fdb4a86e21a73b7fe0b3250c1",
+    "text": "O fată foarte inteligentă. Preferă să asculte zgomotele animalelor sălbatice în loc de ale oamenilor, ceea ce este destul de înțeles când te gândești la asta. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.345260Z"
+  },
+  "npc.ser_tybald.say_16": {
+    "src_hash": "32d0433ff54aca30d76d1cb77609ee59",
+    "text": "Cu toate acestea, ea este, de asemenea, o vindecătoare foarte aptă și vă poate oferi sfaturi cu privire la alegerea voastră a vocației.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.345907Z"
+  },
+  "npc.ser_tybald.say_2": {
+    "src_hash": "e4331875ad781395a4930cffc4d48264",
+    "text": "Există o mare varietate de ceea ce vrăjile pot face, după cum veți vedea pe măsură ce progresați mai departe. Următoarele vrăji le puteți cumpăra cu nivelul 8 și mai departe. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.346824Z"
+  },
+  "npc.ser_tybald.say_3": {
+    "src_hash": "0343271d676ac5ae00c2b752c4412720",
+    "text": "Unele vrăji de atac pot fi direcționate către o singură țintă, în timp ce altele afectează o zonă, având efect fie în timp, fie instantaneu. Chiar și alte vrăji te protejează sau pot fi folosite pentru a crea rune. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.347823Z"
+  },
+  "npc.ser_tybald.say_4": {
+    "src_hash": "2a3125de5d8b985b0e3b12907f8f99cd",
+    "text": "Fiecare vocație are propriile vrăji individuale pe care nici una dintre celelalte vocații nu le poate folosi. Poți învăța vrăji doar la un antrenor de vrăji al vocației tale. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.348685Z"
+  },
+  "npc.ser_tybald.say_5": {
+    "src_hash": "c80c4e13cade065728865e84cd237221",
+    "text": "Vrăjile de aici pe Dawnport sunt doar pentru încercare și le vei uita odată ce îți vei alege vocația sigură și vei pleca în Continent. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.349563Z"
+  },
+  "npc.ser_tybald.say_6": {
+    "src_hash": "14e20651657f1919942e2421a64e0d95",
+    "text": "Acolo, poți merge la un profesor de vrăji dintr-un oraș pentru a învăța permanent o vrajă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.350166Z"
+  },
+  "npc.ser_tybald.say_7": {
+    "src_hash": "3b6e505e9b1ce080890ebff9d1dd5f5d",
+    "text": "Continentul oferă mult mai multe aventuri, pericole și căutări decât această mică insulă și are, de asemenea, profesori de vrăji unde poți învăța permanent o vrajă pentru vocația ta. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.351166Z"
+  },
+  "npc.ser_tybald.say_8": {
+    "src_hash": "d0363e20e43e94fc6a8574e399e96715",
+    "text": "Odată ce ajungi la nivelul 8, poți să-ți alegi vocația sigură și să pleci în Main. Du-te într-un oraș și caută antrenorul de vrăji al vocației tale pentru a învăța o vrajă. Și asigură-te că ai suficient aur! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:20:16.352140Z"
   }
 }

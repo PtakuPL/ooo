@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-20T23:46:47.545806Z",
-  "last_cycle": 2,
+  "timestamp": "2026-02-20T23:48:04.609562Z",
+  "last_cycle": 3,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -825,6 +825,9 @@
       "item.30355.name",
       "item.31709.name",
       "item.32726.name"
-    ]
+    ],
+    "pl|monsters.json": [],
+    "es|monsters.json": [],
+    "es|server.json": []
   }
 }

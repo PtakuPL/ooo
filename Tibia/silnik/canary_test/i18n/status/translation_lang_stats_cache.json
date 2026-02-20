@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T23:46:55.421246Z",
+  "timestamp": "2026-02-20T23:48:15.769069Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -235,8 +235,8 @@
   ],
   "cache_hits": 51,
   "cache_misses": 1,
-  "file_cache_hits": 1974,
-  "file_cache_misses": 2,
+  "file_cache_hits": 1975,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -7392,8 +7392,8 @@
         [
           "monsters.json",
           1,
-          1771626283777190974,
-          339631
+          1771631257758153312,
+          339634
         ],
         [
           "mounts.json",
@@ -7482,7 +7482,7 @@
         [
           "server.json",
           1,
-          1771628956922514552,
+          1771631284619285493,
           299587
         ],
         [
@@ -7521,13 +7521,13 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 45626,
+        "translated_keys": 45627,
         "english_copy_keys": 2151,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 85.15,
         "server_keys": 49731,
-        "server_translated": 42560,
+        "server_translated": 42561,
         "server_pct": 85.58,
         "client_keys": 3855,
         "client_translated": 3066,
@@ -7775,12 +7775,12 @@
         "monsters.json": {
           "sig": [
             1,
-            1771626283777190974,
-            339631
+            1771631257758153312,
+            339634
           ],
           "row": {
             "total_reference_keys": 5915,
-            "translated_keys": 5116,
+            "translated_keys": 5117,
             "english_copy_keys": 729,
             "missing_keys": 0,
             "missing_files": 0
@@ -7985,7 +7985,7 @@
         "server.json": {
           "sig": [
             1,
-            1771628956922514552,
+            1771631284619285493,
             299587
           ],
           "row": {
@@ -25401,7 +25401,7 @@
         [
           "monsters.json",
           1,
-          1771628872607621226,
+          1771631246250694267,
           333924
         ],
         [
@@ -25784,7 +25784,7 @@
         "monsters.json": {
           "sig": [
             1,
-            1771628872607621226,
+            1771631246250694267,
             333924
           ],
           "row": {

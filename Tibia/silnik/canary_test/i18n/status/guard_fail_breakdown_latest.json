@@ -1,60 +1,59 @@
 {
-  "timestamp": "2026-02-20T23:46:56.942785Z",
-  "window_start_utc": "2026-02-20T22:46:55.951275Z",
-  "window_end_utc": "2026-02-20T23:46:55.951275Z",
+  "timestamp": "2026-02-20T23:48:17.958213Z",
+  "window_start_utc": "2026-02-20T22:48:16.802827Z",
+  "window_end_utc": "2026-02-20T23:48:16.802827Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 60,
-  "rejected_entries_raw": 66,
-  "suspicious_entries": 4006,
-  "suspicious_entries_raw": 9900,
+  "rejected_entries": 57,
+  "rejected_entries_raw": 62,
+  "suspicious_entries": 4078,
+  "suspicious_entries_raw": 10185,
   "guard_fail_entries": 85,
-  "guard_fail_sum": 2749,
+  "guard_fail_sum": 2778,
   "by_type": {
-    "identical_to_en": 46,
-    "mixed_language": 10,
+    "identical_to_en": 44,
     "mixed_scripts": 3,
     "cyrillic_latin_mix": 3,
+    "mixed_language": 9,
     "word_salad": 1
   },
   "by_source": {
-    "google_translate": 60
+    "google_translate": 57
   },
   "by_language": {
-    "es": 10,
-    "pl": 18,
+    "es": 9,
     "ro": 22,
     "it": 6,
-    "ru": 4
+    "ru": 4,
+    "pl": 16
   },
   "by_category": {
-    "cpp.json": 14,
-    "modules.json": 2,
-    "npc.json": 3,
     "chatchannels.json": 2,
+    "cpp.json": 13,
     "otclient_data.json": 3,
     "talkactions.json": 4,
+    "npc.json": 3,
     "client.json": 2,
     "php.json": 7,
     "items.json": 22,
     "server.json": 1
   },
   "by_severity": {
-    "CRITICAL": 47,
-    "HIGH": 13
+    "CRITICAL": 45,
+    "HIGH": 12
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 46
+      "count": 44
     },
     {
       "type": "mixed_language",
-      "count": 10
+      "count": 9
     },
     {
       "type": "mixed_scripts",
@@ -70,13 +69,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
     {
       "key": "cpp.look.def",
       "count": 2,
@@ -105,6 +97,13 @@
       "types": {
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
       }
     },
     {
@@ -141,27 +140,6 @@
       "count": 2,
       "types": {
         "identical_to_en": 2
-      }
-    },
-    {
-      "key": "cpp.combat.neutral",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "module.gamestore.text2",
-      "count": 1,
-      "types": {
-        "mixed_language": 1
-      }
-    },
-    {
-      "key": "module.gamestore.text3",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
       }
     },
     {
@@ -208,6 +186,27 @@
     },
     {
       "key": "cpp.look.atk",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "cpp.look.premium",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "cpp.look.tier_momentum",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "cpp.look.tier_ruse",
       "count": 1,
       "types": {
         "identical_to_en": 1

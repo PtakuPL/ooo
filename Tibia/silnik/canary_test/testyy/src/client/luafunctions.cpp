@@ -20,48 +20,25 @@
  * THE SOFTWARE.
  */
 
-#include "animatedtext.h"
-#include "attachedeffect.h"
+// Includes needed only for singleton registrations (g_things, g_map, g_game, etc.)
 #include "attachedeffectmanager.h"
 #include "client.h"
-#include "container.h"
-#include "creature.h"
-#include "effect.h"
 #include "game.h"
 #include "gameconfig.h"
-#include "item.h"
-#include "localplayer.h"
 #include "luavaluecasts_client.h"
 #include "map.h"
 #include "minimap.h"
-#include "missile.h"
 #include "outfit.h"
-#include "player.h"
 #include "protocolgame.h"
 #include "spriteappearances.h"
 #include "spritemanager.h"
-#include "statictext.h"
 #include "thingtypemanager.h"
-#include "tile.h"
-#include "towns.h"
-#include "uicreature.h"
-#include "uieffect.h"
-#include "uiitem.h"
-#include "uimissile.h"
-
-#include "attachableobject.h"
-#include "uigraph.h"
-#include "uimap.h"
-#include "uimapanchorlayout.h"
-#include "uiminimap.h"
-#include "uiprogressrect.h"
-#include "uisprite.h"
-
-#ifdef FRAMEWORK_EDITOR
-#include "houses.h"
-#endif
 
 #include <framework/luaengine/luainterface.h>
+
+// Forward declarations for split TU functions
+extern void registerLuaFunctions_ClientEntities();
+extern void registerLuaFunctions_ClientUI();
 
 void Client::registerLuaFunctions()
 {
@@ -421,11 +398,11 @@ void Client::registerLuaFunctions()
     g_lua.bindGlobalFunction("getAngleFromPos", Position::getAngleFromPositions);
     g_lua.bindGlobalFunction("getDirectionFromPos", Position::getDirectionFromPositions);
 
-    g_lua.registerClass<ProtocolGame, Protocol>();
-    g_lua.bindClassStaticFunction<ProtocolGame>("create", [] { return std::make_shared<ProtocolGame>(); });
-    g_lua.bindClassMemberFunction<ProtocolGame>("sendExtendedOpcode", &ProtocolGame::sendExtendedOpcode);
-
-    g_lua.registerClass<Container>();
+    // Entity and UI class bindings are in separate TUs to reduce
+    // template pressure and avoid MSVC ICE C1001.
+    registerLuaFunctions_ClientEntities();
+    registerLuaFunctions_ClientUI();
+}
     g_lua.bindClassMemberFunction<Container>("getItem", &Container::getItem);
     g_lua.bindClassMemberFunction<Container>("getItems", &Container::getItems);
     g_lua.bindClassMemberFunction<Container>("getItemsCount", &Container::getItemsCount);

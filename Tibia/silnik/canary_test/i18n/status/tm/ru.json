@@ -39326,5 +39326,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:50:33.625793Z"
+  },
+  "monster.grand_canon_dominus.name": {
+    "src_hash": "94e485868f278b0c354166b8e918f145",
+    "text": "Гранд CaНетn Доминус",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:51:25.517624Z"
   }
 }

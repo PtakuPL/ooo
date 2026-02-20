@@ -1,51 +1,57 @@
 {
-  "timestamp": "2026-02-20T16:22:18.858521Z",
-  "window_start_utc": "2026-02-20T15:22:18.365122Z",
-  "window_end_utc": "2026-02-20T16:22:18.365122Z",
+  "timestamp": "2026-02-20T16:24:08.794936Z",
+  "window_start_utc": "2026-02-20T15:24:08.220718Z",
+  "window_end_utc": "2026-02-20T16:24:08.220718Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 82,
-  "suspicious_entries": 4198,
-  "guard_fail_entries": 9,
-  "guard_fail_sum": 92,
+  "rejected_entries": 109,
+  "suspicious_entries": 4221,
+  "guard_fail_entries": 11,
+  "guard_fail_sum": 170,
   "by_type": {
-    "identical_to_en": 70,
+    "identical_to_en": 95,
     "word_salad": 2,
-    "mixed_language": 4,
+    "mixed_language": 6,
     "contains_tibia_proper_noun": 10,
     "mixed_scripts": 6,
     "cyrillic_latin_mix": 6
   },
   "by_source": {
-    "google_translate": 82
+    "google_translate": 109
   },
   "by_language": {
-    "es": 4,
+    "es": 18,
     "ro": 61,
     "it": 11,
-    "ru": 6
+    "ru": 6,
+    "pl": 13
   },
   "by_category": {
     "npc.json": 4,
     "items.json": 22,
-    "monsters.json": 56
+    "monsters.json": 56,
+    "spells.json": 27
   },
   "by_severity": {
-    "CRITICAL": 72,
-    "HIGH": 10
+    "CRITICAL": 97,
+    "HIGH": 12
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 70
+      "count": 95
     },
     {
       "type": "contains_tibia_proper_noun",
       "count": 10
+    },
+    {
+      "type": "mixed_language",
+      "count": 6
     },
     {
       "type": "mixed_scripts",
@@ -54,10 +60,6 @@
     {
       "type": "cyrillic_latin_mix",
       "count": 6
-    },
-    {
-      "type": "mixed_language",
-      "count": 4
     },
     {
       "type": "word_salad",
@@ -159,6 +161,20 @@
       }
     },
     {
+      "key": "spell.iksyapunac_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.mitmahseer_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
       "key": "item.10096.name",
       "count": 1,
       "types": {
@@ -205,20 +221,6 @@
       "count": 1,
       "types": {
         "mixed_language": 1
-      }
-    },
-    {
-      "key": "item.10334.name",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "item.10335.name",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
       }
     }
   ]

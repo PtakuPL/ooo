@@ -152254,5 +152254,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-19T22:47:49.648562Z"
+  },
+  "spell.conjure_poisoned_arrow.words": {
+    "src_hash": "ae0b85856f49bca68bd5b36795eb605b",
+    "text": "exevo con pox",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:23:54.398194Z"
+  },
+  "spell.lightest_magic_missile_rune.words": {
+    "src_hash": "4ea079a0e8a5348c34bc0c1a1e8afdfd",
+    "text": "adori dis min vis",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:23:54.398709Z"
+  },
+  "spell.great_fireball_rune.words": {
+    "src_hash": "1164cba35c28e873414f4bda704b0ffa",
+    "text": "adori mas flam",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:23:54.399271Z"
+  },
+  "spell.avalanche_rune.words": {
+    "src_hash": "a0f5a850ef8e5a95042576df0bbd6b10",
+    "text": "adori mas frigo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:23:56.721393Z"
+  },
+  "spell.conjure_piercing_bolt.words": {
+    "src_hash": "b73544593288f4655a740e2eb8f4e5f4",
+    "text": "exevo con grav",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:23:56.721855Z"
+  },
+  "spell.wild_growth_rune.words": {
+    "src_hash": "152b1d6136b00229ac20d867db280a95",
+    "text": "adevo grav vita",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:23:56.722286Z"
   }
 }

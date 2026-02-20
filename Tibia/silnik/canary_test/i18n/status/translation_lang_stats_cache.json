@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T16:22:18.012367Z",
+  "timestamp": "2026-02-20T16:24:07.855391Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 52,
-  "cache_misses": 0,
-  "file_cache_hits": 1976,
-  "file_cache_misses": 0,
+  "cache_hits": 50,
+  "cache_misses": 2,
+  "file_cache_hits": 1974,
+  "file_cache_misses": 2,
   "langs": {
     "ar": {
       "sig": [
@@ -7488,8 +7488,8 @@
         [
           "spells.json",
           1,
-          1771603882340158963,
-          84922
+          1771604636722712773,
+          84892
         ],
         [
           "startup.json",
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 45293,
-        "english_copy_keys": 2154,
+        "translated_keys": 45299,
+        "english_copy_keys": 2160,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 84.52,
+        "completion_pct": 84.54,
         "server_keys": 49731,
-        "server_translated": 42227,
-        "server_pct": 84.91,
+        "server_translated": 42233,
+        "server_pct": 84.92,
         "client_keys": 3855,
         "client_translated": 3066,
         "client_pct": 79.53
@@ -7999,13 +7999,13 @@
         "spells.json": {
           "sig": [
             1,
-            1771603882340158963,
-            84922
+            1771604636722712773,
+            84892
           ],
           "row": {
             "total_reference_keys": 1534,
-            "translated_keys": 1462,
-            "english_copy_keys": 711,
+            "translated_keys": 1468,
+            "english_copy_keys": 717,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -25497,7 +25497,7 @@
         [
           "spells.json",
           1,
-          1771548134250283769,
+          1771604596993385059,
           84564
         ],
         [
@@ -26008,7 +26008,7 @@
         "spells.json": {
           "sig": [
             1,
-            1771548134250283769,
+            1771604596993385059,
             84564
           ],
           "row": {

@@ -33974,5 +33974,85 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:20:31.790692Z"
+  },
+  "monster.hideous_fungus.voice_1": {
+    "src_hash": "7ca2399084055ad89da1f6ae2834a0bf",
+    "text": "Mumsa mumsa mumsa!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:40.831195Z"
+  },
+  "monster.humongous_fungus.voice_1": {
+    "src_hash": "7ca2399084055ad89da1f6ae2834a0bf",
+    "text": "Mumsa mumsa mumsa!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:40.834377Z"
+  },
+  "monster.serpent_spawn.voice_2": {
+    "src_hash": "1852721d48b3235e0d17c8ca5f048820",
+    "text": "Jag ger dig dödenhhh, mortalssss",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:41.008869Z"
+  },
+  "monster.terramite.name": {
+    "src_hash": "6f60f48e7910fcc0ac596725ef4034f8",
+    "text": "Terramite",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:41.064336Z"
+  },
+  "monster.arachnophobica.voice_2": {
+    "src_hash": "ce8fe9366958b82de45fb0bec645ba5f",
+    "text": "Zip zip zip zip!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:41.089153Z"
+  },
+  "monster.gargoyle.name": {
+    "src_hash": "fa149962cca7ce4eae40089644c4616b",
+    "text": "Gargoyle",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:41.127512Z"
+  },
+  "monster.the_first_dragon.name": {
+    "src_hash": "3e9ff2fb268bac02d2f150cae0aab8c5",
+    "text": "Den första draken",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:41.148203Z"
+  },
+  "monster.zushuka.name": {
+    "src_hash": "f7d3f936c82d25f009159f66874105e9",
+    "text": "Zushuka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:41.152355Z"
+  },
+  "monster.mad_mage.name": {
+    "src_hash": "7cb4e60cd0927f995c74a12fe8154ebc",
+    "text": "Galen mage",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:41.170005Z"
+  },
+  "monster.munster.name": {
+    "src_hash": "ad3f071289dbbac276fadf870913fbf9",
+    "text": "Munster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:41.189842Z"
   }
 }

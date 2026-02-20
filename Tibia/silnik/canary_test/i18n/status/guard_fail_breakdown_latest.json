@@ -1,58 +1,58 @@
 {
-  "timestamp": "2026-02-20T17:34:57.125873Z",
-  "window_start_utc": "2026-02-20T16:34:56.442475Z",
-  "window_end_utc": "2026-02-20T17:34:56.442475Z",
+  "timestamp": "2026-02-20T17:36:19.606549Z",
+  "window_start_utc": "2026-02-20T16:36:18.941913Z",
+  "window_end_utc": "2026-02-20T17:36:18.941913Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 284,
-  "rejected_entries_raw": 690,
-  "suspicious_entries": 3992,
-  "suspicious_entries_raw": 24703,
-  "guard_fail_entries": 105,
-  "guard_fail_sum": 4038,
+  "rejected_entries": 296,
+  "rejected_entries_raw": 702,
+  "suspicious_entries": 4045,
+  "suspicious_entries_raw": 23767,
+  "guard_fail_entries": 104,
+  "guard_fail_sum": 4068,
   "by_type": {
-    "identical_to_en": 224,
-    "word_salad": 12,
+    "identical_to_en": 236,
     "mixed_language": 33,
     "contains_tibia_proper_noun": 12,
     "mixed_scripts": 15,
-    "cyrillic_latin_mix": 15
+    "cyrillic_latin_mix": 15,
+    "word_salad": 12
   },
   "by_source": {
-    "google_translate": 284
+    "google_translate": 296
   },
   "by_language": {
-    "es": 40,
-    "ro": 107,
+    "ro": 119,
     "it": 52,
     "ru": 15,
+    "es": 40,
     "pl": 57,
     "sv": 13
   },
   "by_category": {
-    "npc.json": 2,
     "items.json": 57,
     "monsters.json": 65,
+    "npc.json": 2,
     "spells.json": 101,
     "scripts.json": 27,
     "quests.json": 3,
     "server.json": 16,
     "books.json": 1,
     "achievements.json": 2,
-    "otclient_modules.json": 10
+    "otclient_modules.json": 22
   },
   "by_severity": {
-    "CRITICAL": 236,
+    "CRITICAL": 248,
     "HIGH": 48
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 224
+      "count": 236
     },
     {
       "type": "mixed_language",
@@ -67,11 +67,11 @@
       "count": 15
     },
     {
-      "type": "word_salad",
+      "type": "contains_tibia_proper_noun",
       "count": 12
     },
     {
-      "type": "contains_tibia_proper_noun",
+      "type": "word_salad",
       "count": 12
     }
   ],

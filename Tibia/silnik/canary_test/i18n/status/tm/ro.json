@@ -68334,5 +68334,85 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T17:34:39.043669Z"
+  },
+  "otclient_modules.gameinterface.tr_33": {
+    "src_hash": "d1d839ea1702ef006d8b44a77b3e869c",
+    "text": "Răsfoiți câmpul",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:17.611397Z"
+  },
+  "otclient_modules.skills.tr_23": {
+    "src_hash": "37f438e61c309c1f880c3bc228758207",
+    "text": "Nu vei câștiga cu 50%% mai multă experiență pentru că nu ești jucător premium, acum primești doar 1x puncte de experiență",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:17.682563Z"
+  },
+  "otclient_modules.skills.tr_25": {
+    "src_hash": "272fc6b45f857121e43f3bc445b56563",
+    "text": "Acum vei câștiga cu 50%% mai multă experiență",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:17.683336Z"
+  },
+  "otclient_modules.character_otui.tr_11": {
+    "src_hash": "5e2f01b9ceaa11fd9371fb382d0b0952",
+    "text": "Sloturi de pradă permanente:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:32.362291Z"
+  },
+  "otclient_modules.character_otui.tr_12": {
+    "src_hash": "9282e34be6d6b6e7e29f35964642333b",
+    "text": "Pradă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:32.362586Z"
+  },
+  "otclient_modules.character_otui.tr_13": {
+    "src_hash": "fc5d79f2ae2dccbf765fa1796d08a736",
+    "text": "Binecuvântări disponibile:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:32.362888Z"
+  },
+  "otclient_modules.character_otui.tr_15": {
+    "src_hash": "1a939ec9a2b017617e29bfdde65d20b6",
+    "text": "Timp de creștere XP al recompensei zilnice rămase:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:32.363310Z"
+  },
+  "otclient_modules.character_otui.tr_16": {
+    "src_hash": "238e6d9857126f3d9a3b12c90a52d012",
+    "text": "Timp de creștere XP rămas în magazin:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:32.363637Z"
+  },
+  "otclient_modules.character_otui.tr_17": {
+    "src_hash": "1d795859db3b19d35218da20e59768de",
+    "text": "Boost XP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:35.877892Z"
+  },
+  "otclient_modules.character_otui.tr_18": {
+    "src_hash": "84cb384b7e598f9d3ad258197b20e9ad",
+    "text": "Familiari",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:35:35.878088Z"
   }
 }

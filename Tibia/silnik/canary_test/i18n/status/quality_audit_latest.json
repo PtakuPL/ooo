@@ -1,18 +1,242 @@
 {
-  "timestamp": "2026-02-20T17:34:52.018233Z",
+  "timestamp": "2026-02-20T17:36:14.743777Z",
   "checked_entries": 100,
-  "issues_found": 40,
+  "issues_found": 48,
   "issues_by_type": {
-    "identical_to_en_exempt": 21,
+    "identical_to_en": 32,
+    "identical_to_en_exempt": 11,
     "artifact_token": 16,
-    "identical_to_en": 24,
-    "suspicious_log_high": 35,
-    "suspicious_log_critical": 41,
-    "suspicious_log_low": 58,
-    "suspicious_rejected_critical": 159,
-    "suspicious_rejected_high": 26
+    "suspicious_log_high": 51,
+    "suspicious_log_low": 22,
+    "suspicious_log_critical": 45,
+    "suspicious_rejected_critical": 161,
+    "suspicious_rejected_high": 25
   },
   "issues": [
+    {
+      "key": "raid.undead_cavebear.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Undead Cavebear",
+      "translated": "Undead Cavebear"
+    },
+    {
+      "key": "raid.diblis_the_fair.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Diblis The Fair",
+      "translated": "Diblis The Fair"
+    },
+    {
+      "key": "raid.the_old_widow.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "The Old Widow",
+      "translated": "The Old Widow"
+    },
+    {
+      "key": "raid.orc_backpack.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Orc Backpack",
+      "translated": "Orc Backpack"
+    },
+    {
+      "key": "raid.feverish_citizen.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "raid.water_buffalo.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
+    },
+    {
+      "key": "raid.sir_valorcrest.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "raid.mad_mage.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Mad Mage",
+      "translated": "Mad Mage"
+    },
+    {
+      "key": "raid.serpent_spawn.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn"
+    },
+    {
+      "key": "raid.wild_horses.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
+    },
+    {
+      "key": "raid.gaz_haragoth.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth"
+    },
+    {
+      "key": "raid.bone_beast.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Bone Beast",
+      "translated": "Bone Beast"
+    },
+    {
+      "key": "raid.undead_cavebear.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Undead Cavebear",
+      "translated": "Undead Cavebear"
+    },
+    {
+      "key": "raid.diblis_the_fair.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Diblis The Fair",
+      "translated": "Diblis The Fair"
+    },
+    {
+      "key": "raid.the_old_widow.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "The Old Widow",
+      "translated": "The Old Widow"
+    },
+    {
+      "key": "raid.orc_backpack.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Orc Backpack",
+      "translated": "Orc Backpack"
+    },
+    {
+      "key": "raid.feverish_citizen.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "raid.water_buffalo.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
+    },
+    {
+      "key": "raid.sir_valorcrest.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "raid.mad_mage.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Mad Mage",
+      "translated": "Mad Mage"
+    },
+    {
+      "key": "monster.sir_valorcrest.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.white_pale.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.white_pale.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "White Pale",
+      "translated": "White Pale"
+    },
+    {
+      "key": "monster.the_welter.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.the_welter.desc",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "The Welter",
+      "translated": "The Welter"
+    },
+    {
+      "key": "monster.water_buffalo.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
+    },
+    {
+      "key": "monster.feverish_citizen.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "monster.serpent_spawn.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn"
+    },
+    {
+      "key": "monster.terramite.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Terramite",
+      "translated": "Terramite"
+    },
+    {
+      "key": "monster.gargoyle.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Gargoyle",
+      "translated": "Gargoyle"
+    },
+    {
+      "key": "monster.zushuka.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Zushuka",
+      "translated": "Zushuka"
+    },
+    {
+      "key": "monster.munster.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Munster",
+      "translated": "Munster"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -124,174 +348,6 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "raid.serpent_spawn.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Serpent Spawn",
-      "translated": "Serpent Spawn"
-    },
-    {
-      "key": "raid.wild_horses.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Wild Horses",
-      "translated": "Wild Horses"
-    },
-    {
-      "key": "raid.gaz_haragoth.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Gaz Haragoth",
-      "translated": "Gaz Haragoth"
-    },
-    {
-      "key": "raid.bone_beast.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Bone Beast",
-      "translated": "Bone Beast"
-    },
-    {
-      "key": "raid.undead_cavebear.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Undead Cavebear",
-      "translated": "Undead Cavebear"
-    },
-    {
-      "key": "raid.diblis_the_fair.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Diblis The Fair",
-      "translated": "Diblis The Fair"
-    },
-    {
-      "key": "raid.the_old_widow.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "The Old Widow",
-      "translated": "The Old Widow"
-    },
-    {
-      "key": "raid.orc_backpack.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Orc Backpack",
-      "translated": "Orc Backpack"
-    },
-    {
-      "key": "raid.feverish_citizen.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Feverish Citizen",
-      "translated": "Feverish Citizen"
-    },
-    {
-      "key": "raid.water_buffalo.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo"
-    },
-    {
-      "key": "raid.sir_valorcrest.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "raid.mad_mage.name",
-      "lang": "ro",
-      "type": "identical_to_en",
-      "en": "Mad Mage",
-      "translated": "Mad Mage"
-    },
-    {
-      "key": "raid.serpent_spawn.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Serpent Spawn",
-      "translated": "Serpent Spawn"
-    },
-    {
-      "key": "raid.wild_horses.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Wild Horses",
-      "translated": "Wild Horses"
-    },
-    {
-      "key": "raid.gaz_haragoth.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Gaz Haragoth",
-      "translated": "Gaz Haragoth"
-    },
-    {
-      "key": "raid.bone_beast.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Bone Beast",
-      "translated": "Bone Beast"
-    },
-    {
-      "key": "raid.undead_cavebear.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Undead Cavebear",
-      "translated": "Undead Cavebear"
-    },
-    {
-      "key": "raid.diblis_the_fair.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Diblis The Fair",
-      "translated": "Diblis The Fair"
-    },
-    {
-      "key": "raid.the_old_widow.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "The Old Widow",
-      "translated": "The Old Widow"
-    },
-    {
-      "key": "raid.orc_backpack.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Orc Backpack",
-      "translated": "Orc Backpack"
-    },
-    {
-      "key": "raid.feverish_citizen.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Feverish Citizen",
-      "translated": "Feverish Citizen"
-    },
-    {
-      "key": "raid.water_buffalo.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo"
-    },
-    {
-      "key": "raid.sir_valorcrest.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "raid.mad_mage.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Mad Mage",
-      "translated": "Mad Mage"
     }
   ],
   "threshold": 10,

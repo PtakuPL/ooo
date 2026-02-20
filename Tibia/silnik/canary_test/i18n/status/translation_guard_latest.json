@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-20T17:32:02.300535Z",
-  "cycle": 8,
-  "language": "es",
-  "json_file": "otclient_modules.json",
-  "translated": 11,
+  "timestamp": "2026-02-20T17:33:16.740411Z",
+  "cycle": 9,
+  "language": "ro",
+  "json_file": "scripts.json",
+  "translated": 15,
   "placeholders": 0,
   "guard_fail": 15,
   "guard": {
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 1949
+  "strict_skipped_done": 890
 }

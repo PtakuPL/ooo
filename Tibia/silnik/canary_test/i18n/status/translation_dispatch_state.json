@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-20T17:31:47.711642Z",
-  "cycle_counter": 5841,
-  "last_target_key": "es:otclient_modules.json",
-  "last_pending_total": 49,
-  "last_tier": 1,
-  "last_cat_priority": 9,
+  "timestamp": "2026-02-20T17:32:52.147728Z",
+  "cycle_counter": 5844,
+  "last_target_key": "ro:scripts.json",
+  "last_pending_total": 1297,
+  "last_tier": 2,
+  "last_cat_priority": 6,
   "candidates_count": 183,
   "active_candidates_count": 175,
   "skipped_backoff": 4,
@@ -12,8 +12,8 @@
   "guard_fail_blacklist": {
     "pl:items.json": 5850,
     "es:server.json": 5845,
-    "pl:spells.json": 5842,
-    "es:items.json": 5843
+    "pl:spells.json": 5852,
+    "es:items.json": 5853
   },
   "tier_config": {
     "tier1": [
@@ -39,7 +39,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 8,
+  "cache_cycle": 9,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,

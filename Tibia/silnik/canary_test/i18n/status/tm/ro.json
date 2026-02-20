@@ -68150,5 +68150,101 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:25:15.122788Z"
+  },
+  "scripts.carpets.msg_1": {
+    "src_hash": "65806796b53f86abda7c761f12589945",
+    "text": "Puteți utiliza acest lucru numai în interiorul unei case.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:54.440293Z"
+  },
+  "scripts.carpets.msg_2": {
+    "src_hash": "65806796b53f86abda7c761f12589945",
+    "text": "Puteți utiliza acest lucru numai în interiorul unei case.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:54.440790Z"
+  },
+  "scripts.feroxa_summon.say_1": {
+    "src_hash": "8da719135345d936bc1cea3810f2349d",
+    "text": "Ridicați-mi slujitorii! CREŞTERE!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:54.463905Z"
+  },
+  "scripts.hireling_lamp.msg_1": {
+    "src_hash": "65806796b53f86abda7c761f12589945",
+    "text": "Puteți utiliza acest lucru numai în interiorul unei case.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:54.477914Z"
+  },
+  "scripts.auto_loot.msg_2": {
+    "src_hash": "a5e8b81952865a784dfa4b1130397515",
+    "text": "Modul Autoloot setat la ALL.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:33:10.289528Z"
+  },
+  "scripts.auto_loot.msg_3": {
+    "src_hash": "e9d2c6c5fe27a7316628d7f330a44bcb",
+    "text": "Modul Autoloot setat la ON.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:33:10.289855Z"
+  },
+  "scripts.auto_loot.msg_4": {
+    "src_hash": "43c9b9f55e6bbd8c2bd81da2e3100ad7",
+    "text": "Modul Autoloot este dezactivat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:33:10.290169Z"
+  },
+  "scripts.banana_chocolate_shake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "Trebuie să așteptați înainte de a-l folosi din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:33:10.290604Z"
+  },
+  "scripts.banana_chocolate_shake.msg_2": {
+    "src_hash": "77eac0b4a553c3f1282250cd951e9515",
+    "text": "Nu prea știi ce ți-a făcut asta, dar dintr-o dată te simți foarte fericit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:33:10.291138Z"
+  },
+  "scripts.banana_chocolate_shake.say_1": {
+    "src_hash": "e9c1ecc8d183e0b875a09d1d021d82b9",
+    "text": "Slurp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:33:15.486506Z"
+  },
+  "scripts.bank.balance": {
+    "src_hash": "1a1014ac2e5572879ad3ab24f8eaa11e",
+    "text": "Soldul contului dvs. bancar este de {} monede de aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:33:15.486870Z"
+  },
+  "scripts.bank.deposit_success": {
+    "src_hash": "e70cdaf45087e3f9f710fa8dd55cdbac",
+    "text": "Au depus {} monede de aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:33:15.487214Z"
   }
 }

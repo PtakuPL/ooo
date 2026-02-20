@@ -1,80 +1,37 @@
 {
-  "timestamp": "2026-02-20T17:32:02.906847Z",
+  "timestamp": "2026-02-20T17:33:49.321664Z",
   "checked_entries": 100,
-  "issues_found": 28,
+  "issues_found": 19,
   "issues_by_type": {
-    "identical_to_en": 12,
-    "identical_to_en_exempt": 37,
+    "identical_to_en_exempt": 25,
+    "identical_to_en": 3,
     "artifact_token": 16,
-    "suspicious_log_low": 11,
-    "suspicious_log_high": 45,
-    "suspicious_log_critical": 69,
-    "suspicious_rejected_critical": 160,
+    "suspicious_log_high": 60,
+    "suspicious_log_critical": 49,
+    "suspicious_rejected_critical": 159,
     "suspicious_rejected_high": 26
   },
   "issues": [
     {
-      "key": "questlog.quest_11.mission_42.name",
+      "key": "otclient_modules.character_otui.tr_27",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "Paw and Fur: Sea Serpents",
-      "translated": "Paw and Fur: Sea Serpents"
+      "en": "Depot",
+      "translated": "Depot"
     },
     {
-      "key": "questlog.quest_11.mission_43.name",
+      "key": "otclient_modules.game_cyclopedia.tr_6",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "Paw and Fur: Hellhounds",
-      "translated": "Paw and Fur: Hellhounds"
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
     },
     {
-      "key": "questlog.quest_11.mission_45.name",
+      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
       "lang": "es",
       "type": "identical_to_en",
-      "en": "Paw and Fur: Drakens",
-      "translated": "Paw and Fur: Drakens"
-    },
-    {
-      "key": "questlog.quest_11.mission_46.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Destroyers",
-      "translated": "Paw and Fur: Destroyers"
-    },
-    {
-      "key": "questlog.quest_11.mission_48.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Demons",
-      "translated": "Paw and Fur: Demons"
-    },
-    {
-      "key": "questlog.quest_11.mission_50.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Hide",
-      "translated": "Paw and Fur: Hide"
-    },
-    {
-      "key": "questlog.quest_11.mission_51.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Deathbine",
-      "translated": "Paw and Fur: Deathbine"
-    },
-    {
-      "key": "questlog.quest_11.mission_52.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: The Bloodtusk",
-      "translated": "Paw and Fur: The Bloodtusk"
-    },
-    {
-      "key": "questlog.quest_11.mission_53.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Shardhead",
-      "translated": "Paw and Fur: Shardhead"
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
@@ -187,27 +144,6 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "otclient_modules.character_otui.tr_27",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Depot",
-      "translated": "Depot"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia.tr_6",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
-    },
-    {
-      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia"
     }
   ],
   "threshold": 10,

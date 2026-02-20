@@ -77590,5 +77590,101 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:25:03.456272Z"
+  },
+  "scripts.afk.say_1": {
+    "src_hash": "176793ac6d75de96d62c5b2e4a173dc9",
+    "text": "AFK!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:37.366183Z"
+  },
+  "scripts.anniversary_balloons.msg_1": {
+    "src_hash": "65806796b53f86abda7c761f12589945",
+    "text": "Puoi usarlo solo all'interno di una casa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:37.366525Z"
+  },
+  "scripts.aol.msg_1": {
+    "src_hash": "b90584a10f733686a691ad1d6fa42115",
+    "text": "Hai acquistato un amuleto della perdita per {} oro!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:37.366860Z"
+  },
+  "scripts.ashfalor_summon.say_1": {
+    "src_hash": "8da719135345d936bc1cea3810f2349d",
+    "text": "ALZATEVI, MIEI SERVI! SALITA!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:37.367228Z"
+  },
+  "scripts.auto_loot.msg_1": {
+    "src_hash": "7a01ca72e0f89443db54f2145c540f98",
+    "text": "Valore di bottino automatico non valido. Valori validi: [{}].",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:37.367592Z"
+  },
+  "scripts.auto_loot.msg_2": {
+    "src_hash": "a5e8b81952865a784dfa4b1130397515",
+    "text": "Modalità Autoloot impostata su TUTTI.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:42.785665Z"
+  },
+  "scripts.auto_loot.msg_3": {
+    "src_hash": "e9d2c6c5fe27a7316628d7f330a44bcb",
+    "text": "Modalità di salvataggio automatico impostata su ON.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:42.786005Z"
+  },
+  "scripts.auto_loot.msg_4": {
+    "src_hash": "43c9b9f55e6bbd8c2bd81da2e3100ad7",
+    "text": "Modalità di caricamento automatico impostata su OFF.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:42.786326Z"
+  },
+  "scripts.banana_chocolate_shake.msg_1": {
+    "src_hash": "2f9483cb75ee5364245ca7c48d331858",
+    "text": "È necessario attendere prima di utilizzarlo nuovamente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:42.786679Z"
+  },
+  "scripts.banana_chocolate_shake.msg_2": {
+    "src_hash": "77eac0b4a553c3f1282250cd951e9515",
+    "text": "Non sai davvero cosa ti ha fatto, ma all'improvviso ti senti molto felice.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:42.787141Z"
+  },
+  "scripts.banana_chocolate_shake.say_1": {
+    "src_hash": "e9c1ecc8d183e0b875a09d1d021d82b9",
+    "text": "Bere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:45.440046Z"
+  },
+  "scripts.bank.balance": {
+    "src_hash": "1a1014ac2e5572879ad3ab24f8eaa11e",
+    "text": "Il saldo del tuo conto bancario è di {} monete d'oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:32:45.440438Z"
   }
 }

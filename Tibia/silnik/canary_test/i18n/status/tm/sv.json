@@ -35510,5 +35510,141 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T19:43:59.025538Z"
+  },
+  "npc.prezil.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.578326Z"
+  },
+  "npc.prezil.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vill du byta ut din äventyrarsten mot 30 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.579027Z"
+  },
+  "npc.prezil.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.579410Z"
+  },
+  "npc.prezil.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Tyvärr, du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.579921Z"
+  },
+  "npc.prisoner.voice_2": {
+    "src_hash": "0f0d2c4f84e9f85a56dd9a082cd3ce62",
+    "text": "Vara barmhärtig!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.580817Z"
+  },
+  "npc.pukosch.farewell_msg_1": {
+    "src_hash": "4c63e8ef9d6c6b447464c244c3d4b195",
+    "text": "Hoppas vi ses igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.582042Z"
+  },
+  "npc.pukosch.greet_msg_1": {
+    "src_hash": "74af8429056cd1b6c12ccb10e67902c1",
+    "text": "Välkommen, |PLAYERNAME|! Känner du dig äventyrlig? Vill du ha en veckovis {ticket} för malmvagnssystemet här? Du kan använda den här för att komma till centrum av Kazordoon!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.582968Z"
+  },
+  "npc.pukosch.say_1": {
+    "src_hash": "78c8e8f1e0c24e044738d408a4bdd010",
+    "text": "Vill du köpa en veckobiljett till malmvagnarna? Med den kan du resa fritt och snabbt genom Kazordoon i en vecka. Endast 250 guld. Handla?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.583770Z"
+  },
+  "npc.pukosch.say_2": {
+    "src_hash": "f861e7ec394314cc88a104df2e9bb60c",
+    "text": "Din veckobiljett är fortfarande giltig. Skulle vara slöseri med pengar att köpa en andra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.584324Z"
+  },
+  "npc.pukosch.say_3": {
+    "src_hash": "622d7ed7c7070fcb0a5487989b8ba4da",
+    "text": "Här är din stämpel. Det kan inte överföras till en annan person och kommer att pågå en vecka från och med nu. Du får ett meddelande när du använder en malmvagn när den inte är giltig längre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.585254Z"
+  },
+  "npc.pydar.stdmod_3": {
+    "src_hash": "ebaeda37e982b71a905f5f1995285a85",
+    "text": "Kanske en annan gång.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.587382Z"
+  },
+  "npc.queen_eloise.multi_1": {
+    "src_hash": "52ab9c4bdd0063e05461de7641aa6b4d",
+    "text": "Excellent! Låt mig nu förklara. Om du donerar 1 000 000 000 guldpjäser har du rätt att bära en unik outfit. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.589689Z"
+  },
+  "npc.queen_eloise.multi_2": {
+    "src_hash": "726506912b88ec90b55449190ed2d1bd",
+    "text": "Vad blir det?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.589991Z"
+  },
+  "npc.queen_eloise.multi_3": {
+    "src_hash": "726506912b88ec90b55449190ed2d1bd",
+    "text": "Vad blir det?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.590384Z"
+  },
+  "npc.queen_eloise.promote_success": {
+    "src_hash": "b16b6f7e9ba0adb52c44ffb607511f3e",
+    "text": "Grattis! Du är nu befordrad.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.590754Z"
+  },
+  "npc.queen_eloise.say_11": {
+    "src_hash": "88ff45ecafedf4db47e12c033cbabb1b",
+    "text": "Ta dessa stövlar som ett tecken på stor tacksamhet. Låt oss för alltid minnas denna dag, min vän. ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.591478Z"
+  },
+  "npc.queen_eloise.say_12": {
+    "src_hash": "60f0333c9d913b04dc09f7487b9aa846",
+    "text": "Du har inte tillräckligt med pengar för att donera det beloppet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T20:02:10.592040Z"
   }
 }

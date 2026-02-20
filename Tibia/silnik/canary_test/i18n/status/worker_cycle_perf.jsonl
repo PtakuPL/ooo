@@ -9771,3 +9771,6 @@
 {"timestamp": "2026-02-20T17:13:37.418482Z", "cycle": 12, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 568, "detail": "count=npc.json"}
 {"timestamp": "2026-02-20T17:14:52.853186Z", "cycle": 12, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "mode_run", "duration_ms": 75296, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-20T17:14:59.155563Z", "cycle": 12, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "status_update", "duration_ms": 6035, "detail": "throttle_every=1"}
+{"timestamp": "2026-02-20T17:15:04.667492Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "dispatch", "duration_ms": 1743, "detail": "count=npc.json"}
+{"timestamp": "2026-02-20T17:17:22.925864Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "mode_run", "duration_ms": 138132, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-20T17:17:28.772505Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "status_update", "duration_ms": 5617, "detail": "throttle_every=1"}

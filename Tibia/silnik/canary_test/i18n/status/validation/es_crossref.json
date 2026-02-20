@@ -4,10 +4,10 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T16:58:58.927604Z",
-  "issues_total": 517,
+  "checked_at": "2026-02-20T17:15:55.937324Z",
+  "issues_total": 516,
   "issues_by_type": {
-    "consistency_in_language": 72,
+    "consistency_in_language": 71,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 45
   },
@@ -359,22 +359,6 @@
         "items:item.10800.name",
         "items:item.10801.name",
         "items:item.19155.name"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "dead draken abomination",
-      "variants": [
-        "Abominación draco muerta",
-        "draken abomination muerto"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "items:item.11667.name",
-        "items:item.11668.name",
-        "items:item.11669.name",
-        "items:item.11670.name"
       ]
     },
     {

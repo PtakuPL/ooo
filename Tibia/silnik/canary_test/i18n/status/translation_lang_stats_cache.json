@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T17:14:57.996267Z",
+  "timestamp": "2026-02-20T17:17:27.487265Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1975,
-  "file_cache_misses": 1,
+  "cache_hits": 52,
+  "cache_misses": 0,
+  "file_cache_hits": 1976,
+  "file_cache_misses": 0,
   "langs": {
     "ar": {
       "sig": [
@@ -16023,8 +16023,8 @@
         [
           "npc.json",
           1,
-          1771607278759432816,
-          1836459
+          1771607714048689226,
+          1836451
         ],
         [
           "npclib.json",
@@ -16134,14 +16134,14 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 27653,
+        "translated_keys": 27692,
         "english_copy_keys": 2134,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 51.6,
+        "completion_pct": 51.68,
         "server_keys": 49731,
-        "server_translated": 26322,
-        "server_pct": 52.93,
+        "server_translated": 26361,
+        "server_pct": 53.01,
         "client_keys": 3855,
         "client_translated": 1331,
         "client_pct": 34.53
@@ -16430,12 +16430,12 @@
         "npc.json": {
           "sig": [
             1,
-            1771607278759432816,
-            1836459
+            1771607714048689226,
+            1836451
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 9981,
+            "translated_keys": 10020,
             "english_copy_keys": 286,
             "missing_keys": 0,
             "missing_files": 0
@@ -26943,8 +26943,8 @@
         [
           "items.json",
           1,
-          1771607383742917413,
-          887987
+          1771607819021073418,
+          888012
         ],
         [
           "libs.json",
@@ -26985,8 +26985,8 @@
         [
           "npc.json",
           1,
-          1771607306221723465,
-          1835138
+          1771607729502104506,
+          1835261
         ],
         [
           "npclib.json",
@@ -27096,14 +27096,14 @@
         "language_name": "Rumuński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 22669,
-        "english_copy_keys": 2345,
+        "translated_keys": 22707,
+        "english_copy_keys": 2341,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 42.3,
+        "completion_pct": 42.37,
         "server_keys": 49731,
-        "server_translated": 21413,
-        "server_pct": 43.06,
+        "server_translated": 21451,
+        "server_pct": 43.13,
         "client_keys": 3855,
         "client_translated": 1256,
         "client_pct": 32.58
@@ -27294,13 +27294,13 @@
         "items.json": {
           "sig": [
             1,
-            1771607383742917413,
-            887987
+            1771607819021073418,
+            888012
           ],
           "row": {
             "total_reference_keys": 17057,
             "translated_keys": 8298,
-            "english_copy_keys": 28,
+            "english_copy_keys": 24,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27392,12 +27392,12 @@
         "npc.json": {
           "sig": [
             1,
-            1771607306221723465,
-            1835138
+            1771607729502104506,
+            1835261
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 5785,
+            "translated_keys": 5823,
             "english_copy_keys": 239,
             "missing_keys": 0,
             "missing_files": 0
@@ -27768,7 +27768,7 @@
         [
           "npc.json",
           1,
-          1771607283531716605,
+          1771607720489489636,
           1835041
         ],
         [
@@ -28175,7 +28175,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771607283531716605,
+            1771607720489489636,
             1835041
           ],
           "row": {

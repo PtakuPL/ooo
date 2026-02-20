@@ -67646,5 +67646,309 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:08:25.980859Z"
+  },
+  "npc.mortimer.say_33": {
+    "src_hash": "1d5709217f20cd4e7fa2c8d7790602cd",
+    "text": "Puțin bătut, dar va merge. Multumesc! Dacă crezi că ești gata, cere o altă vânătoare de fluturi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.187636Z"
+  },
+  "npc.mortimer.say_34": {
+    "src_hash": "1d5709217f20cd4e7fa2c8d7790602cd",
+    "text": "Puțin bătut, dar va merge. Multumesc! Dacă crezi că ești gata, cere o altă vânătoare de fluturi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.188387Z"
+  },
+  "npc.mortimer.say_35": {
+    "src_hash": "cf2b7509a49a476394c81bb35b756343",
+    "text": "Aceasta este o specie extraordinară pe care ai adus-o. Multumesc! Acesta a fost ultimul fluture de care aveam nevoie.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.189137Z"
+  },
+  "npc.mortimer.say_36": {
+    "src_hash": "5314393005ceda61c12e558cfde8584b",
+    "text": "Amenda! Aici luați acest recipient al botanistului. Folosiți-l pe o plantă de clopoței din junglă pentru a colecta o probă pentru noi. Raportați despre colecția dvs. de plante când ați avut succes.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.190023Z"
+  },
+  "npc.mortimer.say_37": {
+    "src_hash": "d409060cae1e1afa8ed6fda102390165",
+    "text": "Înțeleg. Se pare că ai un eșantion destul de util din pură noroc. Multumesc! Spune-mi doar când ești gata să continui cu colectarea plantelor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.190788Z"
+  },
+  "npc.mortimer.say_38": {
+    "src_hash": "64024d3e00566b410b05cad88bba44b8",
+    "text": "Ah, în sfârșit. Am început să mă întreb ce ți-a luat atât de mult. Dar multumesc! Un alt eșantion bun, într-adevăr. Spune-mi doar când ești gata să continui cu colectarea plantelor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.191869Z"
+  },
+  "npc.mortimer.say_39": {
+    "src_hash": "a01623d80f525791fd50f405b01080c3",
+    "text": "Ce mostră minunată! Cu asta ți-ai încheiat misiunile de colectare a plantelor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.192432Z"
+  },
+  "npc.mortimer.say_40": {
+    "src_hash": "7e9f05215be2c5facc7b1eb4f193fe81",
+    "text": "Da, aceasta este relicva prețuită pe care o căutăm de atâta timp. Ai făcut o treabă grozavă, mulțumesc.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.193100Z"
+  },
+  "npc.mortimer.say_41": {
+    "src_hash": "bde80b5801b93e2a562d7032d2a75766",
+    "text": "Ai făcut-o! Excelent! Lumea științifică va fi zguduită de această descoperire!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.193645Z"
+  },
+  "npc.mortimer.say_42": {
+    "src_hash": "5b68986936d2cf2f19e239f5d5271b7c",
+    "text": "Chiar ai inteles? Uimitor! Vă mulțumim pentru eforturile dvs.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.194281Z"
+  },
+  "npc.mortimer.say_43": {
+    "src_hash": "5582d4cc8e410855776de910e64d2d99",
+    "text": "Excelent. Această misiune este ușoară, dar totuși vitală. Călătorește la Ab'Dendriel și ia cartea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.195517Z"
+  },
+  "npc.mortimer.say_44": {
+    "src_hash": "3fcee0d6d20b6feacf3d48a381273654",
+    "text": "Lasă-mă să arunc o privire! Da, asta ne-am dorit. O copie a 'Songs of the Forest'. Nu voi pune nicio întrebare despre acele pete de sânge.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.196345Z"
+  },
+  "npc.mortimer.say_45": {
+    "src_hash": "752ad02c95663065643ddb2cbb0eba6f",
+    "text": "În ruinele din nord-vestul Edron ar trebui să puteți găsi o piatră de memorie. Noroc.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.196961Z"
+  },
+  "npc.mortimer.say_46": {
+    "src_hash": "8c4f1ba35fd944537024447060580139",
+    "text": "O piatră de memorie fără cusur! Incredibil! Va dura ani chiar și pentru a-ți da seama cum funcționează, dar ce oportunitate pentru știință, mulțumesc!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.197708Z"
+  },
+  "npc.mortimer.say_47": {
+    "src_hash": "ebcb9e8bd25ae349497b3f6dcebbbe0d",
+    "text": "Excelent! Aici, luați această hârtie de calc și utilizați-o pe obiectul pe care îl veți găsi acolo pentru a crea o copie a runelor antice.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.198627Z"
+  },
+  "npc.mortimer.say_48": {
+    "src_hash": "5422b9d288accc73fd08f3e84df0b995",
+    "text": "Este puțin șifonat, dar se va descurca. Mulțumesc din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.199202Z"
+  },
+  "npc.mortimer.say_49": {
+    "src_hash": "76dcfff8b34ee35c2095bc5bd09e09a3",
+    "text": "Bun! Luați acest recipient și folosiți-l pe o fantomă care a fost ucisă recent. Întoarce-te cu ectoplasma colectată și dă-mi acel recipient...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.200125Z"
+  },
+  "npc.mortimer.say_50": {
+    "src_hash": "fbce7abbb475bf041704b5f202089ded",
+    "text": "Nu pierde recipientul. Sunt scumpe!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.200575Z"
+  },
+  "npc.mortimer.say_51": {
+    "src_hash": "b9af714075d6eefefd238229b94c4824",
+    "text": "Pf, habar n-aveam că ectoplasma va mirosi că... oh, tu ești, ei bine, îmi pare rău. Mulțumesc pentru ectoplasmă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.201489Z"
+  },
+  "npc.mortimer.say_53": {
+    "src_hash": "61aecb7779029ce6572c4444b2f2f841",
+    "text": "Săraca Ratha. Vă mulțumim că ați returnat acest craniu societății. Vom avea grijă de o înmormântare onorabilă a lui Ratha.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.202259Z"
+  },
+  "npc.mortimer.say_54": {
+    "src_hash": "e9a092e7ae087d1047467afc9d84f3c2",
+    "text": "Reveniți când găsiți orice informație.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.202732Z"
+  },
+  "npc.mortimer.say_55": {
+    "src_hash": "8cda3e27bec6c10527fa23bdbd4612fe",
+    "text": "Minunat! Ai adus un ciocan uriaș de fierar pentru societatea de exploratori!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.203374Z"
+  },
+  "npc.mortimer.say_56": {
+    "src_hash": "89af02e4cca5ae12b761d114e42e3a98",
+    "text": "Nu, nu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.203899Z"
+  },
+  "npc.mortimer.say_57": {
+    "src_hash": "073a95013e532e6ca91e0398267c9164",
+    "text": "Este întotdeauna o zi tristă când aflăm despre moartea unui membru. Dar măcar am aflat despre soarta lui. Mulțumesc, aici este recompensa ta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.204619Z"
+  },
+  "npc.mortimer.say_58": {
+    "src_hash": "b005aec84c5ed6ad0ce3bbaa54efd595",
+    "text": "S-a topit?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.204948Z"
+  },
+  "npc.mortimer.say_59": {
+    "src_hash": "e9a092e7ae087d1047467afc9d84f3c2",
+    "text": "Reveniți când găsiți orice informație.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.205366Z"
+  },
+  "npc.mortimer.say_6": {
+    "src_hash": "4a734d935ec4a98c02d45a2bd363a841",
+    "text": "Societatea exploratorilor are nevoie de mult ajutor în cercetarea călătoriilor astrale. Ești dispus să ajuți?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.206054Z"
+  },
+  "npc.mortimer.say_60": {
+    "src_hash": "e061655e8bc968c46643ac73912515e5",
+    "text": "Întoarce-te când găsești unul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.206579Z"
+  },
+  "npc.mortimer.say_61": {
+    "src_hash": "8bd573b4e39779cb39916aaddf74c18f",
+    "text": "Societatea de exploratori caută un ciocan de fierar uriaș pentru colecția noastră. Se zvonește că ciclopzii din Câmpiile Havocului ar putea folosi unul. Ați obținut întâmplător un astfel de ciocan?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.207484Z"
+  },
+  "npc.mortimer.say_7": {
+    "src_hash": "9b7adeb43dbdd78522ce5c54d731724c",
+    "text": "Ai cu tine niște ectoplasmă colectată?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.207950Z"
+  },
+  "npc.mortimer.say_9": {
+    "src_hash": "af6795c8c3d6c71cb42b8077e752f70e",
+    "text": "Oh, da! Spune-i colegului nostru explorator că actele sunt deja prin poștă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.208533Z"
+  },
+  "npc.murim.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Nu uitați să vă depuneți banii aici în Banca Globală înainte de a pleca în aventură.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.216506Z"
+  },
+  "npc.muzir.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Nu uitați să vă depuneți banii aici în Banca Globală înainte de a pleca în aventură.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.218087Z"
+  },
+  "npc.myra.farewell_msg_1": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "La revedere, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.218661Z"
+  },
+  "npc.myra.multi_8": {
+    "src_hash": "84bef6784099863dfeb03302de8845ca",
+    "text": "Ați înțeles tot ce v-am spus și sunteți dispus să vă ocupați de această sarcină?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.219975Z"
+  },
+  "npc.nah_bob.multi_2": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, aproape că a sunat ca un cuvânt de salut. Oamenii - drăguți sunt!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.225290Z"
+  },
+  "npc.nah_bob.say_1": {
+    "src_hash": "53f59a9ef75a585e8d262642a3166d45",
+    "text": "Vai! Un om! Acesta nu este un loc pentru tine, |PLAYERNAME|. Du-te și joacă-te în altă parte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.225953Z"
+  },
+  "npc.nah_bob.say_4": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Nu ai nicio prăjitură pe care mi-aș dori.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:29.226495Z"
   }
 }

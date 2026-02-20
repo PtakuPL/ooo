@@ -1,8 +1,8 @@
 # i18n — Historia postępu
 
-> Ostatnia aktualizacja: 2026-02-20T16:15:42Z  
-> Globalny coverage: **13.81%**  
-> Repair backlog: **37977** kluczy
+> Ostatnia aktualizacja: 2026-02-20T17:16:20Z  
+> Globalny coverage: **13.83%**  
+> Repair backlog: **37894** kluczy
 
 ---
 
@@ -11,6 +11,22 @@
 | Okno | Przetłum. | Guard fail | GF% | Suspicious | Repair Δ | Cykli |
 |------|-----------|------------|-----|------------|----------|-------|
 | 15:15-16:15 | 0 | 0 | 0.0% | 0 | +0 | 1 |
+| 16:16-17:16 | 2,737 | 6878 | 71.53% | 14222 | -83 | 17 |
+
+
+<details><summary>Szczegóły per język (ostatnia godzina)</summary>
+
+| Język | Przetłum. | Guard fail | Coverage |
+|-------|-----------|------------|----------|
+| ru | 541 | 62 | 50.35% |
+| it | 537 | 124 | 51.6% |
+| es | 469 | 2130 | 84.68% |
+| pl | 388 | 4192 | 87.77% |
+| ro | 348 | 324 | 42.3% |
+| sr | 250 | 0 | 45.38% |
+| sv | 204 | 46 | 28.25% |
+
+</details>
 
 
 ---

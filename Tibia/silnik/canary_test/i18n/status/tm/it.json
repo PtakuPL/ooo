@@ -76934,5 +76934,317 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:08:31.885399Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Ecco. Occuparsi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.770292Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vuoi sostituire la tua pietra dell'avventuriero per 30 monete d'oro?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.771044Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Ecco. Occuparsi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.771388Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Mi dispiace, non hai abbastanza soldi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.771935Z"
+  },
+  "npc.zerbrus.farewell_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.772671Z"
+  },
+  "npc.zerbrus.greet_1": {
+    "src_hash": "0a56174c71661a97f1782a25b1d2bf68",
+    "text": "Saluti, |PLAYERNAME|! Stai davvero male. Lascia che guarisca le tue ferite.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.773157Z"
+  },
+  "npc.zerbrus.stdmod_1": {
+    "src_hash": "2851bb88a335de322419abe3d47d0789",
+    "text": "Sei ferito o avvelenato? Vi posso aiutare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.773776Z"
+  },
+  "npc.zerbrus.stdmod_11": {
+    "src_hash": "e28613fb12f121d689f5ec98b893113c",
+    "text": "Sono la guardia di questo ponte. Difendo Rookgaard dalle bestie del {wilderness} e del {dungeons}, e anche dai puzzolenti {sewers}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.774599Z"
+  },
+  "npc.zerbrus.stdmod_12": {
+    "src_hash": "9e1bf346664881cc300d5f3adf470ef4",
+    "text": "Il mio dovere è eterno. Il tempo non ha importanza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.775127Z"
+  },
+  "npc.zerbrus.stdmod_13": {
+    "src_hash": "b0e595d76cca4ce0409f1d10fac76b44",
+    "text": "Prima di combattere i mostri, deposita lì i tuoi soldi. Se muori, non lo perderai se è conservato in banca.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.775752Z"
+  },
+  "npc.zerbrus.stdmod_16": {
+    "src_hash": "ec84fce534f58ecf8e407c25b46e7aac",
+    "text": "Sono un esperto della fauna selvatica e {monsters} di quest'isola.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.776570Z"
+  },
+  "npc.zerbrus.stdmod_19": {
+    "src_hash": "3b992c3f952c1e2a50f66f2fc9c4a954",
+    "text": "Ci sono due tipi di ragni su quest'isola: ragni normali e ragni velenosi. Come dice il loro nome, questi ultimi possono avvelenarti, causando una perdita costante della tua salute. Attenti a loro!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.777553Z"
+  },
+  "npc.zerbrus.stdmod_20": {
+    "src_hash": "b533412a8956a32eea03e9b20fecd32f",
+    "text": "Dopo aver aggiornato un po' il tuo antipasto {equipment} (forse roba di pelle) e ottenuto un'arma migliore e uno scudo, dovresti essere in grado di uccidere i troll.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.778275Z"
+  },
+  "npc.zerbrus.stdmod_21": {
+    "src_hash": "b6f9486b1bbfc2e513ab7cf2d3502aa3",
+    "text": "Hai bisogno di un'arma più forte della mazza iniziale per uccidere i lupi. Forse andrà bene un {sabre} o un breve {sword}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.778974Z"
+  },
+  "npc.zerbrus.stdmod_23": {
+    "src_hash": "f8915564d083b560af44e78b385be2bd",
+    "text": "Minotaurs sono molto forti. Avrai bisogno di un gruppo di persone o almeno di livello 6 e di un buon equipaggiamento per poterli uccidere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.779886Z"
+  },
+  "npc.zerbrus.stdmod_24": {
+    "src_hash": "8966299f56f4b40490ea90a85a471f3b",
+    "text": "Sono un po' più resistenti di quanto sembri, ma sono comunque buoni mostri principianti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.780461Z"
+  },
+  "npc.zerbrus.stdmod_25": {
+    "src_hash": "afe9a4daadc8b45b35829bba3bbf0bd4",
+    "text": "Gli scheletri su quest'isola sono solitamente abbastanza nascosti. Si trovano spesso vicino alle tombe e sempre sottoterra. Fai attenzione alla loro malvagia perdita di vita.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.781123Z"
+  },
+  "npc.zerbrus.stdmod_28": {
+    "src_hash": "42d8b0c85d42f39d9517b1633dded817",
+    "text": "Anche i serpenti possono avvelenarti, ma il loro veleno di solito non è pericoloso come quello dei ragni velenosi. Stai solo attento e uccidili velocemente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.782065Z"
+  },
+  "npc.zerbrus.stdmod_29": {
+    "src_hash": "932d11b688698920f384562ffefc9924",
+    "text": "I guerrieri premium pagano. In questo modo ottengono molti vantaggi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.782589Z"
+  },
+  "npc.zerbrus.stdmod_30": {
+    "src_hash": "d0e12fd7c549bed11b5ac6d677e977a8",
+    "text": "SALUTE AL RE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.782974Z"
+  },
+  "npc.zerbrus.stdmod_32": {
+    "src_hash": "9b33b95a8fba2db96c8499bc9795c9df",
+    "text": "Un luogo di protezione. Niente può farti del male lì.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.783618Z"
+  },
+  "npc.zerbrus.stdmod_33": {
+    "src_hash": "86798f3b06bcf1ffc45d1ea18b202e72",
+    "text": "Posso segnarti alcuni dungeon sulla tua mappa se mi chiedi {monsters} adatti al tuo livello.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.784146Z"
+  },
+  "npc.zerbrus.stdmod_34": {
+    "src_hash": "7050ee5718295ef82411aed7bdbd0a6c",
+    "text": "Le fogne sono affollate di {rats}. Sono ottimi bersagli per i giovani eroi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.784665Z"
+  },
+  "npc.zerbrus.stdmod_41": {
+    "src_hash": "edc421754bd60b42cdd01ca81cdf97cb",
+    "text": "È mio dovere proteggere questo villaggio e i suoi {citizens}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.785715Z"
+  },
+  "npc.zerbrus.stdmod_42": {
+    "src_hash": "8cb3d903de1550854f3a2ef487b5d5bb",
+    "text": "Sembra che tu abbia imparato l'esercitazione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.786128Z"
+  },
+  "npc.zerbrus.stdmod_43": {
+    "src_hash": "60d5a5e49dab6e1a986409226315b06b",
+    "text": "Mi spiace, non faccio scambio. Chiedi invece uno scambio ai proprietari dei negozi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.786617Z"
+  },
+  "npc.zerbrus.stdmod_44": {
+    "src_hash": "37b07ad263ee860fe5c2828c00275662",
+    "text": "Non approvo che lei apra un bar. Quegli avventurieri ubriachi che inciampano sul ponte di notte non sono particolarmente utili per migliorare la situazione.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.787283Z"
+  },
+  "npc.zerbrus.stdmod_46": {
+    "src_hash": "d1e4abebc834ac154b0a5f3089c64ba1",
+    "text": "Vende {weapons}. Il suo negozio è a sud-ovest della città, vicino alla {temple}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.787991Z"
+  },
+  "npc.zerbrus.stdmod_47": {
+    "src_hash": "ca5bf4a826b28113e574b452a1072d5f",
+    "text": "Ha dedicato la sua vita ad accogliere i nuovi arrivati ​​su quest'isola.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.788523Z"
+  },
+  "npc.zerbrus.stdmod_5": {
+    "src_hash": "6ce92a461b926e7793a804f11841aa6a",
+    "text": "Vuoi sapere quali mostri sono adatti a te al tuo livello? Chiedimelo e basta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.789098Z"
+  },
+  "npc.zerbrus.stdmod_51": {
+    "src_hash": "94581c4456361bd80620efd6a7b37dfd",
+    "text": "Egli custodisce il tempio e può curarti se sei gravemente ferito o avvelenato, proprio come me.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.789861Z"
+  },
+  "npc.zerbrus.stdmod_52": {
+    "src_hash": "cb20aeb671ead0cad4965e8c5310bba1",
+    "text": "Lei è {Obi's} nipote e si occupa di {armors} e {shields}. Il suo negozio è a sud-ovest della città, vicino al tempio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.790550Z"
+  },
+  "npc.zerbrus.stdmod_56": {
+    "src_hash": "c06ddadc05733914c9e2f9d0d2aa28e3",
+    "text": "Puoi trovare l'oracolo all'ultimo piano del {academy}, appena sopra {Seymour}. Vai lì quando sei al livello 8.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.791482Z"
+  },
+  "npc.zerbrus.stdmod_6": {
+    "src_hash": "0a56174c71661a97f1782a25b1d2bf68",
+    "text": "Saluti, |PLAYERNAME|! Stai davvero male. Lascia che guarisca le tue ferite.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.792081Z"
+  },
+  "npc.zerbrus.stdmod_8": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.792565Z"
+  },
+  "npc.zerbrus.stdmod_9": {
+    "src_hash": "c87b59f6329b4db4f439b333c79bc60f",
+    "text": "Uhm, |PLAYERNAME|. Davvero non so se dovresti andare nel deserto senza scudo. Dovresti guadagnare un po' di soldi dando prima la caccia ai topi sotto il villaggio finché non potrai permetterti almeno uno scudo di legno.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.793479Z"
+  },
+  "npc.zerbrus.voice_1": {
+    "src_hash": "2851bb88a335de322419abe3d47d0789",
+    "text": "Sei ferito o avvelenato? Vi posso aiutare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.793890Z"
+  },
+  "npc.zerbrus.voice_5": {
+    "src_hash": "6ce92a461b926e7793a804f11841aa6a",
+    "text": "Vuoi sapere quali mostri sono adatti a te al tuo livello? Chiedimelo e basta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.794650Z"
+  },
+  "npc.ziyad.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "Arrivederci. Consigliateci se siete rimasti soddisfatti del nostro servizio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:15:13.797186Z"
   }
 }

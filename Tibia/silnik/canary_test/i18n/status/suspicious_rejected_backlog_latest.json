@@ -1,29 +1,19 @@
 {
-  "timestamp": "2026-02-20T23:47:47.230133Z",
+  "timestamp": "2026-02-20T23:49:31.824131Z",
   "language": "es",
-  "json_file": "server.json",
+  "json_file": "npc.json",
   "lookback_lines": 8000,
   "min_hits": 2,
   "max_keys": 400,
   "issue_types_filter": [],
-  "selected_keys": 3,
+  "selected_keys": 1,
   "issue_type_totals": {
-    "identical_to_en": 62
+    "identical_to_en": 265
   },
   "keys": [
     {
-      "key": "data.otservbr.global.npc.anerui.L71.1487",
-      "hits": 25,
-      "top_issue": "identical_to_en"
-    },
-    {
-      "key": "data.otservbr.global.npc.brasith.L59.1211",
-      "hits": 24,
-      "top_issue": "identical_to_en"
-    },
-    {
-      "key": "data.otservbr.global.npc.edala.L72.181",
-      "hits": 11,
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "hits": 265,
       "top_issue": "identical_to_en"
     }
   ]

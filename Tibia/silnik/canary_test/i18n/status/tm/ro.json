@@ -74838,5 +74838,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T23:38:33.349946Z"
+  },
+  "npc.zerbrus.stdmod_34": {
+    "src_hash": "7050ee5718295ef82411aed7bdbd0a6c",
+    "text": "Canalele sunt aglomerate cu {rats}. Sunt ținte bune pentru tinerii eroi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.094329Z"
+  },
+  "npc.zerbrus.stdmod_36": {
+    "src_hash": "6fa7a1976551bd1c7d047909f5b305be",
+    "text": "Sunt adeptul lui {Banor}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.094993Z"
+  },
+  "npc.zerbrus.stdmod_41": {
+    "src_hash": "edc421754bd60b42cdd01ca81cdf97cb",
+    "text": "Este de datoria mea să protejez acest sat și {citizens}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.096444Z"
+  },
+  "npc.zerbrus.stdmod_42": {
+    "src_hash": "8cb3d903de1550854f3a2ef487b5d5bb",
+    "text": "Se pare că ai stăpânit exercițiul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.097163Z"
+  },
+  "npc.zerbrus.stdmod_43": {
+    "src_hash": "60d5a5e49dab6e1a986409226315b06b",
+    "text": "Îmi pare rău, nu fac schimb. În schimb, cereți proprietarilor magazinelor o tranzacție.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.098038Z"
+  },
+  "npc.zerbrus.stdmod_44": {
+    "src_hash": "37b07ad263ee860fe5c2828c00275662",
+    "text": "Nu sunt de acord ca ea să deschidă un bar. Acei aventurieri beți care se poticnesc peste pod noaptea nu sunt de ajutor în mod deosebit în îmbunătățirea situației.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.099302Z"
+  },
+  "npc.zerbrus.stdmod_46": {
+    "src_hash": "d1e4abebc834ac154b0a5f3089c64ba1",
+    "text": "El vinde {weapons}. Magazinul lui este la sud-vest de oraș, aproape de {temple}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.100494Z"
+  },
+  "npc.zerbrus.stdmod_47": {
+    "src_hash": "ca5bf4a826b28113e574b452a1072d5f",
+    "text": "Și-a dedicat viața primirii noilor veniți pe această insulă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.101291Z"
+  },
+  "npc.zerbrus.stdmod_5": {
+    "src_hash": "6ce92a461b926e7793a804f11841aa6a",
+    "text": "Vrei să știi ce monștri sunt buni pentru tine la nivelul tău? Întreabă-mă!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.102193Z"
+  },
+  "npc.zerbrus.stdmod_51": {
+    "src_hash": "94581c4456361bd80620efd6a7b37dfd",
+    "text": "El păzește templul și te poate vindeca dacă ești grav rănit sau otrăvit, la fel ca mine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.103441Z"
+  },
+  "npc.zerbrus.stdmod_52": {
+    "src_hash": "cb20aeb671ead0cad4965e8c5310bba1",
+    "text": "Ea este nepoată {Obi's} și se ocupă de {armors} și {shields}. Magazinul ei este la sud-vest de oraș, aproape de templu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.104501Z"
+  },
+  "npc.zerbrus.stdmod_56": {
+    "src_hash": "c06ddadc05733914c9e2f9d0d2aa28e3",
+    "text": "Puteți găsi oracolul la ultimul etaj al {academy}, chiar deasupra {Seymour}. Du-te acolo când ești la nivelul 8.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.106106Z"
+  },
+  "npc.zerbrus.stdmod_6": {
+    "src_hash": "0a56174c71661a97f1782a25b1d2bf68",
+    "text": "Salutări, |PLAYERNAME|! Arăți foarte rău. Lasă-mă să-ți vindec rănile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.107410Z"
+  },
+  "npc.zerbrus.stdmod_9": {
+    "src_hash": "c87b59f6329b4db4f439b333c79bc60f",
+    "text": "Hmm, |PLAYERNAME|. Chiar nu știu dacă ar trebui să mergi în sălbăticie fără scut. Ar trebui să câștigi niște bani vânând șobolani sub sat, până când îți poți permite măcar un scut de lemn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.109630Z"
+  },
+  "npc.zerbrus.voice_1": {
+    "src_hash": "2851bb88a335de322419abe3d47d0789",
+    "text": "Ești rănit sau otrăvit? Te pot ajuta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.110287Z"
+  },
+  "npc.zerbrus.voice_5": {
+    "src_hash": "6ce92a461b926e7793a804f11841aa6a",
+    "text": "Vrei să știi ce monștri sunt buni pentru tine la nivelul tău? Întreabă-mă!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:15.111545Z"
   }
 }

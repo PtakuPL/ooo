@@ -39262,5 +39262,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:38:16.573585Z"
+  },
+  "npc.captain_greyhound.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Тогда до свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:02.569824Z"
+  },
+  "npc.captain_gulliver.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "До свидания. Порекомендуйте нас, если вы остались довольны нашим сервисом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:02.570656Z"
+  },
+  "npc.captain_haba.greet_msg_1": {
+    "src_hash": "b8f8a44ad2efd8539527730f329f0592",
+    "text": "Харрр, сухопутный житель, чего ты хочешь? Просишь {passage}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:02.574390Z"
+  },
+  "npc.captain_haba.greet_msg_2": {
+    "src_hash": "55c25d3f0e5b57d85680d257424e0bca",
+    "text": "Харрр, сухопутный житель, чего ты хочешь?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:02.575293Z"
+  },
+  "npc.captain_haba_open_sea.sendtrade_msg_1": {
+    "src_hash": "2b367ae557ede3dde2b5e8540df6985c",
+    "text": "Вот и все! Используйте его на кране, когда увидите монстра. Затем наполняйте его каждый раз, когда пользуетесь телескопом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:02.581826Z"
+  },
+  "npc.captain_haba_open_sea.walkaway_msg_1": {
+    "src_hash": "4389112dadbf0109f2cda25d30028e4a",
+    "text": "Увидимся, сухопутный!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:49:02.583583Z"
   }
 }

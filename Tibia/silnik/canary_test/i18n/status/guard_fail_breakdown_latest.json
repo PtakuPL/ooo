@@ -1,55 +1,54 @@
 {
-  "timestamp": "2026-02-20T23:48:17.958213Z",
-  "window_start_utc": "2026-02-20T22:48:16.802827Z",
-  "window_end_utc": "2026-02-20T23:48:16.802827Z",
+  "timestamp": "2026-02-20T23:50:01.555542Z",
+  "window_start_utc": "2026-02-20T22:50:00.481739Z",
+  "window_end_utc": "2026-02-20T23:50:00.481739Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 57,
-  "rejected_entries_raw": 62,
-  "suspicious_entries": 4078,
-  "suspicious_entries_raw": 10185,
+  "rejected_entries": 43,
+  "rejected_entries_raw": 48,
+  "suspicious_entries": 4035,
+  "suspicious_entries_raw": 10386,
   "guard_fail_entries": 85,
-  "guard_fail_sum": 2778,
+  "guard_fail_sum": 2809,
   "by_type": {
-    "identical_to_en": 44,
+    "identical_to_en": 30,
     "mixed_scripts": 3,
     "cyrillic_latin_mix": 3,
     "mixed_language": 9,
     "word_salad": 1
   },
   "by_source": {
-    "google_translate": 57
+    "google_translate": 43
   },
   "by_language": {
-    "es": 9,
-    "ro": 22,
-    "it": 6,
+    "ro": 10,
+    "it": 5,
     "ru": 4,
+    "es": 8,
     "pl": 16
   },
   "by_category": {
-    "chatchannels.json": 2,
-    "cpp.json": 13,
     "otclient_data.json": 3,
     "talkactions.json": 4,
     "npc.json": 3,
     "client.json": 2,
     "php.json": 7,
+    "chatchannels.json": 1,
     "items.json": 22,
     "server.json": 1
   },
   "by_severity": {
-    "CRITICAL": 45,
+    "CRITICAL": 31,
     "HIGH": 12
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 44
+      "count": 30
     },
     {
       "type": "mixed_language",
@@ -69,13 +68,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "cpp.look.def",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
     {
       "key": "talkaction.gm.spy.msg_stack_count",
       "count": 2,
@@ -143,70 +135,77 @@
       }
     },
     {
-      "key": "channel.tutor.name",
+      "key": "otclient_data.40_inventory_otui.tr_4",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "cpp.bestiary.charm_category_major",
+      "key": "otclient_data.40_outfitwindow_otui.tr_18",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "cpp.bestiary.charm_category_minor",
+      "key": "otclient_data.40_outfitwindow_otui.tr_21",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "cpp.game.tentugly_name",
+      "key": "client.mounts.text3",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "cpp.inspect.premium",
+      "key": "client.htmlparser.text2",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "cpp.inspect.skill_boost",
+      "key": "php.server_status.text3",
       "count": 1,
       "types": {
-        "identical_to_en": 1
+        "mixed_language": 1
       }
     },
     {
-      "key": "cpp.look.atk",
+      "key": "php.menus.text3",
       "count": 1,
       "types": {
-        "identical_to_en": 1
+        "mixed_language": 1
       }
     },
     {
-      "key": "cpp.look.premium",
+      "key": "php.menus.text5",
       "count": 1,
       "types": {
-        "identical_to_en": 1
+        "mixed_language": 1
       }
     },
     {
-      "key": "cpp.look.tier_momentum",
+      "key": "php.players.text3",
       "count": 1,
       "types": {
-        "identical_to_en": 1
+        "mixed_language": 1
       }
     },
     {
-      "key": "cpp.look.tier_ruse",
+      "key": "php.players.text5",
+      "count": 1,
+      "types": {
+        "mixed_language": 1
+      }
+    },
+    {
+      "key": "php.exception.text2",
       "count": 1,
       "types": {
         "identical_to_en": 1

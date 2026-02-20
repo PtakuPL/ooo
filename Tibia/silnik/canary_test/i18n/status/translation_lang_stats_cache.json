@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T20:30:29.274140Z",
+  "timestamp": "2026-02-20T20:31:44.309631Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 49,
-  "cache_misses": 3,
-  "file_cache_hits": 1973,
-  "file_cache_misses": 3,
+  "cache_hits": 52,
+  "cache_misses": 0,
+  "file_cache_hits": 1976,
+  "file_cache_misses": 0,
   "langs": {
     "ar": {
       "sig": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771619374744060808,
+          1771619498111349006,
           1847374
         ],
         [
@@ -7458,7 +7458,7 @@
         [
           "questlog.json",
           1,
-          1771618287547712189,
+          1771619464792275188,
           246931
         ],
         [
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771619374744060808,
+            1771619498111349006,
             1847374
           ],
           "row": {
@@ -7929,7 +7929,7 @@
         "questlog.json": {
           "sig": [
             1,
-            1771618287547712189,
+            1771619464792275188,
             246931
           ],
           "row": {
@@ -25467,8 +25467,8 @@
         [
           "questlog.json",
           1,
-          1771618254911245706,
-          244411
+          1771619457844489272,
+          244415
         ],
         [
           "quests.json",
@@ -25530,14 +25530,14 @@
         "language_name": "Polski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 47062,
+        "translated_keys": 47063,
         "english_copy_keys": 1830,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 87.83,
         "server_keys": 49731,
-        "server_translated": 44024,
-        "server_pct": 88.52,
+        "server_translated": 44025,
+        "server_pct": 88.53,
         "client_keys": 3855,
         "client_translated": 3038,
         "client_pct": 78.81
@@ -25938,12 +25938,12 @@
         "questlog.json": {
           "sig": [
             1,
-            1771618254911245706,
-            244411
+            1771619457844489272,
+            244415
           ],
           "row": {
             "total_reference_keys": 1918,
-            "translated_keys": 102,
+            "translated_keys": 103,
             "english_copy_keys": 18,
             "missing_keys": 0,
             "missing_files": 0

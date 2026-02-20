@@ -73662,5 +73662,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:25:31.940280Z"
+  },
+  "data.otservbr.global.scripts.actions.rookgaard.chest.L10.2375": {
+    "src_hash": "ac1f9925628d9e59d3b4385a686c8259",
+    "text": "Ai găsit o sabie de lemn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:48.366619Z"
+  },
+  "data.otservbr.global.scripts.globalevents.others.check.mount.L28.2345": {
+    "src_hash": "53fb4630c527cc842c731640ece0d1ca",
+    "text": "Contractul tău cu calul tău a expirat și s-a întors înapoi la stația de cai.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:48.377613Z"
   }
 }

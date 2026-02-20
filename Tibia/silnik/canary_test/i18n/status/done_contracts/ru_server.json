@@ -3,9 +3,9 @@
   "lang": "ru",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": true,
-      "guard_placeholder": 0,
-      "guard_pipe": 0
+      "ok": false,
+      "guard_placeholder": 3,
+      "guard_pipe": 51
     },
     "guard_command_below_threshold": {
       "ok": true,
@@ -23,6 +23,6 @@
       "has_quality_data": true
     }
   },
-  "is_done": true,
-  "timestamp": "2026-02-20T21:20:54.146106Z"
+  "is_done": false,
+  "timestamp": "2026-02-20T22:31:40.229208Z"
 }

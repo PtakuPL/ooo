@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-20T22:29:35.521628Z",
+  "timestamp": "2026-02-20T22:32:12.365764Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 699,
+  "entries_total": 700,
   "entries_by_lang": {
     "es": 269,
     "pl": 148,
@@ -73,11 +73,11 @@
     "de": 659,
     "fr": 578,
     "hu": 663,
-    "it": 429,
+    "it": 428,
     "nl": 691,
     "pt": 620,
     "ro": 424,
-    "ru": 84,
+    "ru": 138,
     "sk": 663,
     "tr": 542,
     "ar": 904,
@@ -616,7 +616,7 @@
     {
       "lang": "it",
       "json_file": "server.json",
-      "identical_to_en": 61,
+      "identical_to_en": 60,
       "domain_priority": 1
     },
     {
@@ -936,6 +936,12 @@
       "json_file": "npc.json",
       "identical_to_en": 26,
       "domain_priority": 0
+    },
+    {
+      "lang": "ru",
+      "json_file": "server.json",
+      "identical_to_en": 54,
+      "domain_priority": 1
     },
     {
       "lang": "ru",
@@ -1313,12 +1319,6 @@
       "lang": "bg",
       "json_file": "cpp.json",
       "identical_to_en": 158,
-      "domain_priority": 9
-    },
-    {
-      "lang": "bg",
-      "json_file": "scripts.json",
-      "identical_to_en": 153,
       "domain_priority": 9
     }
   ],

@@ -80838,5 +80838,141 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-20T22:25:39.157035Z"
+  },
+  "data.otservbr.global.npc.jack.springer.L85.390": {
+    "src_hash": "049e45e3a662118a9531760c987d28d1",
+    "text": "Ciao, straniero! Mi sembri sospettoso. Non credo che abbiamo nulla di cui discutere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:28.988317Z"
+  },
+  "data.otservbr.global.npc.jack.springer.L90.392": {
+    "src_hash": "6b5ff900f0fc6473f4ea9c676b2d3009",
+    "text": "Ciao, straniero! Mi dispiace, ma non ho mai sentito parlare di te. Cerco aiuto più esperto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:28.989498Z"
+  },
+  "data.otservbr.global.npc.jacob.L132.763": {
+    "src_hash": "27e435b4c746a3efcf2e9e10c4abb36d",
+    "text": "<annuisce> Ciao.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:28.990030Z"
+  },
+  "data.otservbr.global.npc.jacob.L133.764": {
+    "src_hash": "aa79b18aa374acffc031699d553bd932",
+    "text": "<annuisce> Ci vediamo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:28.990564Z"
+  },
+  "data.otservbr.global.npc.jakahr.L53.433": {
+    "src_hash": "7d211c0df3ce83c165b4b0eb373feeff",
+    "text": "Ciao, compianto pellegrino. Come posso aiutarti |PLAYERNAME|?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:28.991278Z"
+  },
+  "data.otservbr.global.npc.jakahr.L54.434": {
+    "src_hash": "109b98326fce7e48a110e639774441f3",
+    "text": "È stato un onore servirti, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:28.992407Z"
+  },
+  "data.otservbr.global.npc.jakahr.L55.435": {
+    "src_hash": "6439f0565c4ec9567c817eb82519891f",
+    "text": "È stato un onore servirti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:28.993179Z"
+  },
+  "data.otservbr.global.npc.jakahr.L56.436": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Qui. Non dimenticare che se vuoi spedire un pacco devi acquistare anche un'etichetta. Scrivi sempre il nome dello {receiver} nella prima riga.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:28.994243Z"
+  },
+  "data.otservbr.global.npc.jamesfrancis.L64.648": {
+    "src_hash": "cd3304fb7a7199bf44faaf72bcbf139e",
+    "text": "Gerimor ha ragione. Come esperto di minotauri faccio ricerche su queste creature da anni. Pensavo di sapere già molto ma i mostri in questa grotta sono {different}. È un grande {mystery}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:28.996204Z"
+  },
+  "data.otservbr.global.npc.jamesfrancis.L67.649": {
+    "src_hash": "a8d18e5d69db7a2d10b7bff9e9442b49",
+    "text": "Come va il tuo {mission}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:28.997143Z"
+  },
+  "data.otservbr.global.npc.jean.pierre.L116.691": {
+    "src_hash": "03496ec1e1892bafe0f165da12354986",
+    "text": "Saluti, |PLAYERNAME|. Cosa stai facendo qui?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:28.997808Z"
+  },
+  "data.otservbr.global.npc.jefrey.L76.522": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:28.998547Z"
+  },
+  "data.otservbr.global.npc.jerom.L134.948": {
+    "src_hash": "0dd06bc90e410c8c32c7d8878bdce14a",
+    "text": "Ciao. Mi dispiace, ma oggi non sono al meglio {mood}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:29.000597Z"
+  },
+  "data.otservbr.global.npc.jessica.L76.1594": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:29.001352Z"
+  },
+  "data.otservbr.global.npc.jezzara.L59.1141": {
+    "src_hash": "811aca8149aacb1493c2c99c72293f4d",
+    "text": "Sii compianto pellegrino in carne ed ossa. A proposito di carne, forse ti piacerebbe un po' di {food}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:29.003585Z"
+  },
+  "data.otservbr.global.npc.jezzara.L60.1142": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Possa l'illuminazione essere la tua strada.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:29.004399Z"
+  },
+  "data.otservbr.global.npc.jezzara.L61.1143": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Possa l'illuminazione essere la tua strada.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:29.005186Z"
   }
 }

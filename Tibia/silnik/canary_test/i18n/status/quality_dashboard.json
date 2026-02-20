@@ -33,12 +33,12 @@
     "issues_count": 1417
   },
   "es": {
-    "last_cycle": "2026-02-20T22:30:39.639367Z",
-    "last_translated": 30,
-    "total_suspicious": 67949,
-    "total_rejected": 2222,
-    "total_gt_guard_fail": 22405,
-    "cycles": 1676,
+    "last_cycle": "2026-02-20T22:32:38.700161Z",
+    "last_translated": 23,
+    "total_suspicious": 68010,
+    "total_rejected": 2223,
+    "total_gt_guard_fail": 22425,
+    "cycles": 1677,
     "quality_score": 60.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 350877
@@ -66,24 +66,24 @@
     "issues_count": 2470
   },
   "it": {
-    "last_cycle": "2026-02-20T22:27:09.075779Z",
+    "last_cycle": "2026-02-20T22:31:29.550291Z",
     "last_translated": 30,
-    "total_suspicious": 8520,
+    "total_suspicious": 8551,
     "total_rejected": 873,
     "total_gt_guard_fail": 2837,
-    "cycles": 468,
-    "quality_score": 75.1,
+    "cycles": 469,
+    "quality_score": 75.2,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 77055
   },
   "ru": {
-    "last_cycle": "2026-02-20T22:27:43.707096Z",
+    "last_cycle": "2026-02-20T22:31:40.218406Z",
     "last_translated": 30,
-    "total_suspicious": 48198,
+    "total_suspicious": 48227,
     "total_rejected": 921,
     "total_gt_guard_fail": 2500,
-    "cycles": 445,
-    "quality_score": 66.1,
+    "cycles": 446,
+    "quality_score": 66.2,
     "last_audit": "2026-02-20T22:12:42.470260Z",
     "issues_count": 214898
   },
@@ -550,12 +550,12 @@
     "issues_count": 958
   },
   "ro": {
-    "last_cycle": "2026-02-20T22:26:58.316042Z",
-    "last_translated": 24,
-    "total_suspicious": 87396,
-    "total_rejected": 3187,
-    "total_gt_guard_fail": 5083,
-    "cycles": 415,
+    "last_cycle": "2026-02-20T22:32:01.482565Z",
+    "last_translated": 7,
+    "total_suspicious": 87403,
+    "total_rejected": 3194,
+    "total_gt_guard_fail": 5106,
+    "cycles": 416,
     "quality_score": 60.3,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 190054

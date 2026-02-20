@@ -38358,5 +38358,93 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:27:43.433126Z"
+  },
+  "data.otservbr.global.npc.captain.haba.L68.190": {
+    "src_hash": "b8f8a44ad2efd8539527730f329f0592",
+    "text": "Харрр, сухопутный житель, чего ты хочешь? Просишь {passage}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:39.652300Z"
+  },
+  "data.otservbr.global.npc.captain.harava.L87.949": {
+    "src_hash": "d73132f2878353df2f07230be0e0e6f2",
+    "text": "Добро пожаловать на борт, путешественник. Где я могу {sail} тебя сегодня?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:39.659121Z"
+  },
+  "data.otservbr.global.npc.captain.jack.rat.L57.982": {
+    "src_hash": "8127fe4721dc499181b3719b97e2e801",
+    "text": "Привет, пират! Садитесь на борт и отправляйтесь домой! Добро пожаловать на борт корабля Флйинг Bat. Должен ли я установить {sail}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:39.663195Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.L97.707": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Приветствую тебя, отважный искатель приключений. Если вам нужен {passage}, дайте мне знать.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:39.682159Z"
+  },
+  "data.otservbr.global.npc.captain.waverider.island.L61.1025": {
+    "src_hash": "b881a2f946b2000c7b5d245b2e9f3ec7",
+    "text": "Приветствую тебя, отважный искатель приключений. Если вам нужен возврат {passage}, дайте мне знать.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:39.685493Z"
+  },
+  "data.otservbr.global.npc.carlos.L107.1095": {
+    "src_hash": "00143dd08108a83dcbb73f1a2f6bba1b",
+    "text": "С возвращением, Айлет Иагонст! У тебя еще остался этот кусок мяса или ветчина? Если да, попросите у меня {trade}, и я дам вам за это немного золота.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:39.694910Z"
+  },
+  "data.otservbr.global.npc.carlos.L241.1099": {
+    "src_hash": "e4f61d081116f4ed5def9cd059b7a2db",
+    "text": "Очень хорошо! Еда для меня! Продайте мне это, быстро! Как только вы продадите мне свою еду, просто скажите {ready}, чтобы я знал, что все готово.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:39.705344Z"
+  },
+  "data.otservbr.global.npc.carlos.L243.1101": {
+    "src_hash": "fa803dcd4286a1cfa0ba0dfa80ecf665",
+    "text": "Прощай, путешественник, и приятного пребывания на Роокгаард.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:39.707719Z"
+  },
+  "data.otservbr.global.npc.carlos.L91.1090": {
+    "src_hash": "8f3bfe7d9daacf690cfdb7686af3d947",
+    "text": "Эй, я думал, ты собираешься сбежать, но, к счастью, ты вернулся. Я покажу тебе, как изменить свой {outfit}, ладно?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:39.712368Z"
+  },
+  "data.otservbr.global.npc.carlos.L94.1091": {
+    "src_hash": "f98802d766209a9cc89953b431e09fa3",
+    "text": "Добро пожаловать! Знаешь, после того, как я предоставил свою небольшую услугу по экипировке, я хотел бы попросить тебя о небольшой услуге. Можешь {help} мне?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:39.715458Z"
+  },
+  "data.otservbr.global.npc.chavis.L118.1346": {
+    "src_hash": "74bc51c2c9d2b899820180e938426aa0",
+    "text": "Привет! У тебя случайно нет при себе {food}, хочешь поделиться? Ну и где мои манеры, пока теплый прием.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:31:39.737614Z"
   }
 }

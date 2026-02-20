@@ -154510,5 +154510,117 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T23:04:19.599255Z"
+  },
+  "data.otservbr.global.scripts.actions.roshamuul.prison.golden.L49.2390": {
+    "src_hash": "0bfae00b37b76305760c2b4010c30d64",
+    "text": "Te has enfrentado a este jefe en el último",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:14.928086Z"
+  },
+  "data.otservbr.global.scripts.movements.teleport.gnomprona.L28.2322": {
+    "src_hash": "0312af301fcba4f7d8f2f72f22c83b4e",
+    "text": "Aún no tienes acceso a este teletransporte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:14.957697Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.movements.habitats.access.L39.1960": {
+    "src_hash": "630788ab036f43255374086d3a4468be",
+    "text": "No has demostrado tu valía. No hay escapatoria para ti aquí.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:15.064321Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.movements.seal.L111.1949": {
+    "src_hash": "630788ab036f43255374086d3a4468be",
+    "text": "No has demostrado tu valía. No hay escapatoria para ti aquí.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:15.066091Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.movements.seal.L92.1948": {
+    "src_hash": "630788ab036f43255374086d3a4468be",
+    "text": "No has demostrado tu valía. No hay escapatoria para ti aquí.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:15.069538Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.movements.shulgrax.lever.L16.1956": {
+    "src_hash": "630788ab036f43255374086d3a4468be",
+    "text": "No has demostrado tu valía. No hay escapatoria para ti aquí.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:15.071526Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.movements.zamulosh.teleport.L20.1968": {
+    "src_hash": "0312af301fcba4f7d8f2f72f22c83b4e",
+    "text": "Aún no tienes acceso a este teletransporte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:15.075321Z"
+  },
+  "data.otservbr.global.scripts.quests.ferumbras.ascension.movements.zamulosh.teleport.L35.1970": {
+    "src_hash": "0312af301fcba4f7d8f2f72f22c83b4e",
+    "text": "Aún no tienes acceso a este teletransporte.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:15.077881Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.movements.teleport.heart.L104.1873": {
+    "src_hash": "02801376ae2373cd280d10a0e56a18f0",
+    "text": "No tienes acceso a este portal.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:15.114739Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.movements.teleport.heart.L80.1869": {
+    "src_hash": "02801376ae2373cd280d10a0e56a18f0",
+    "text": "No tienes acceso a este portal.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:15.116867Z"
+  },
+  "data.otservbr.global.scripts.quests.heart.of.destruction.movements.teleport.heart.L92.1871": {
+    "src_hash": "02801376ae2373cd280d10a0e56a18f0",
+    "text": "No tienes acceso a este portal.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:15.119965Z"
+  },
+  "data.otservbr.global.scripts.quests.the.ape.city.movements.mission9.the.deepest.catacomb.teleport.L54.2172": {
+    "src_hash": "7bffea93687b99d694d5f232890a8bbc",
+    "text": "No tienes acceso a esta área.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:15.216141Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.movement.jail.exit.L22.2168": {
+    "src_hash": "7bffea93687b99d694d5f232890a8bbc",
+    "text": "No tienes acceso a esta área.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:15.285538Z"
+  },
+  "data.otservbr.global.scripts.quests.the.new.frontier.movement.minotaur.boss.L31.2169": {
+    "src_hash": "7bffea93687b99d694d5f232890a8bbc",
+    "text": "No tienes acceso a esta área.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:15.287070Z"
   }
 }

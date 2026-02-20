@@ -38886,5 +38886,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T23:01:15.420616Z"
+  },
+  "npc.captain_chelop.farewell_msg_1": {
+    "src_hash": "e15da006fade26d444cff6cb29e47778",
+    "text": "От имени инквизиции я прощаюсь с вами.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:51.143058Z"
+  },
+  "npc.captain_chelop.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Тогда до свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:51.145142Z"
+  },
+  "npc.captain_cookie.greet_msg_1": {
+    "src_hash": "4841f91aa535a45a30070b20ec276d8a",
+    "text": "Приветствую тебя, отважный искатель приключений. Если вам нужен {passage}, дайте мне знать.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:51.147250Z"
+  },
+  "npc.captain_dreadnought.farewell_msg_1": {
+    "src_hash": "e3c27cbeadf072acaf19bbad2aaea847",
+    "text": "Ты уверен, что хочешь провести время на этом куске камня? Я могу показать тебе мир! Хм.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:51.148973Z"
+  },
+  "npc.captain_fearless.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "До свидания. Порекомендуйте нас, если вы остались довольны нашим сервисом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:51.152135Z"
+  },
+  "npc.captain_fearless.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Тогда до свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:51.154388Z"
+  },
+  "npc.captain_greyhound.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "До свидания. Порекомендуйте нас, если вы остались довольны нашим сервисом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:51.155361Z"
   }
 }

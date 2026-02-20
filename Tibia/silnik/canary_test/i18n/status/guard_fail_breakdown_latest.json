@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-02-20T23:08:47.583611Z",
-  "window_start_utc": "2026-02-20T22:08:46.548746Z",
-  "window_end_utc": "2026-02-20T23:08:46.548746Z",
+  "timestamp": "2026-02-20T23:10:07.341075Z",
+  "window_start_utc": "2026-02-20T22:10:04.984980Z",
+  "window_end_utc": "2026-02-20T23:10:04.984980Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 160,
-  "rejected_entries_raw": 191,
-  "suspicious_entries": 3901,
-  "suspicious_entries_raw": 16640,
-  "guard_fail_entries": 92,
-  "guard_fail_sum": 2186,
+  "rejected_entries": 161,
+  "rejected_entries_raw": 193,
+  "suspicious_entries": 3906,
+  "suspicious_entries_raw": 16486,
+  "guard_fail_entries": 94,
+  "guard_fail_sum": 2235,
   "by_type": {
-    "identical_to_en": 138,
+    "identical_to_en": 139,
     "mixed_language": 13,
     "contains_tibia_proper_noun": 3,
     "mixed_scripts": 8,
@@ -23,12 +23,12 @@
     "word_salad": 1
   },
   "by_source": {
-    "google_translate": 160
+    "google_translate": 161
   },
   "by_language": {
-    "es": 32,
     "it": 10,
     "ro": 54,
+    "es": 33,
     "pl": 42,
     "ru": 9,
     "sv": 13
@@ -37,7 +37,7 @@
     "npc.json": 3,
     "items.json": 27,
     "spells.json": 31,
-    "server.json": 15,
+    "server.json": 16,
     "otclient_modules.json": 30,
     "scripts.json": 10,
     "monsters.json": 5,
@@ -50,13 +50,13 @@
     "php.json": 7
   },
   "by_severity": {
-    "CRITICAL": 139,
+    "CRITICAL": 140,
     "HIGH": 21
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 138
+      "count": 139
     },
     {
       "type": "mixed_language",
@@ -87,6 +87,13 @@
         "mixed_language": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L71.1487",
+      "count": 3,
+      "types": {
+        "identical_to_en": 3
       }
     },
     {
@@ -130,13 +137,6 @@
     },
     {
       "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.anerui.L71.1487",
       "count": 2,
       "types": {
         "identical_to_en": 2

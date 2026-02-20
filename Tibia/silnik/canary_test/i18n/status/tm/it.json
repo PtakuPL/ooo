@@ -81502,5 +81502,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:56:52.157798Z"
+  },
+  "npc.bunny_bonecrusher.stdmod_2": {
+    "src_hash": "07425008742fd5c9f8306772802af6ca",
+    "text": "Siamo in costante allenamento e in perfetta salute.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:26.212899Z"
+  },
+  "npc.muhad.stdmod_6": {
+    "src_hash": "083cd414baac54b728925551a6c42a1b",
+    "text": "Impazzirei a vivere in una gabbia del genere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:31.243127Z"
+  },
+  "npc.ortheus.stdmod_11": {
+    "src_hash": "9880bf5afd6c1730513c0a2f100ee523",
+    "text": "A volte consegna frutta e verdura in questo quartiere.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:09:31.901061Z"
   }
 }

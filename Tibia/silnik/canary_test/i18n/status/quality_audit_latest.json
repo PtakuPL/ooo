@@ -1,18 +1,88 @@
 {
-  "timestamp": "2026-02-20T19:43:33.001091Z",
+  "timestamp": "2026-02-20T19:45:18.654349Z",
   "checked_entries": 100,
-  "issues_found": 24,
+  "issues_found": 45,
   "issues_by_type": {
-    "artifact_token": 23,
-    "identical_to_en_exempt": 6,
-    "identical_to_en": 1,
-    "suspicious_log_high": 59,
+    "identical_to_en": 13,
+    "identical_to_en_exempt": 10,
+    "artifact_token": 32,
+    "suspicious_log_high": 30,
     "suspicious_log_critical": 41,
-    "suspicious_log_low": 1,
+    "suspicious_log_low": 29,
     "suspicious_rejected_critical": 123,
     "suspicious_rejected_high": 31
   },
   "issues": [
+    {
+      "key": "_file",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "data-otservbr-global/npc/example_merchant_i18n.lua",
+      "translated": "data-otservbr-global/npc/example_merchant_i18n.lua"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.say_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ..."
+    },
+    {
+      "key": "npc.mother_of_jack.voice_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
+      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?"
+    },
+    {
+      "key": "npc.navigator.multi_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
+      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ..."
+    },
     {
       "key": "npc.navigator.multi_2",
       "lang": "es",
@@ -63,11 +133,88 @@
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
     },
     {
-      "key": "_file",
-      "lang": "ro",
+      "key": "raid.serpent_spawn.name",
+      "lang": "sv",
       "type": "identical_to_en",
-      "en": "data-otservbr-global/npc/example_merchant_i18n.lua",
-      "translated": "data-otservbr-global/npc/example_merchant_i18n.lua"
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn"
+    },
+    {
+      "key": "raid.wild_horses.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Wild Horses",
+      "translated": "Wild Horses"
+    },
+    {
+      "key": "raid.gaz_haragoth.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth"
+    },
+    {
+      "key": "raid.undead_cavebear.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Undead Cavebear",
+      "translated": "Undead Cavebear"
+    },
+    {
+      "key": "raid.bone_beast.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Bone Beast",
+      "translated": "Bone Beast"
+    },
+    {
+      "key": "raid.the_old_widow.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "The Old Widow",
+      "translated": "The Old Widow"
+    },
+    {
+      "key": "raid.orc_backpack.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Orc Backpack",
+      "translated": "Orc Backpack"
+    },
+    {
+      "key": "raid.feverish_citizen.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen"
+    },
+    {
+      "key": "raid.water_buffalo.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo"
+    },
+    {
+      "key": "raid.sir_valorcrest.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "raid.weakened_shlorg.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
+    },
+    {
+      "key": "raid.gnarlhounds.name",
+      "lang": "sv",
+      "type": "identical_to_en",
+      "en": "Gnarlhounds",
+      "translated": "Gnarlhounds"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

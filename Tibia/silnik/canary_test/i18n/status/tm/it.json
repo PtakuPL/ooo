@@ -79342,5 +79342,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T19:41:56.316441Z"
+  },
+  "dataroot.global.msg_1": {
+    "src_hash": "e85ad469d321c94b22670553c34055c7",
+    "text": "{} minuto{} di resistenza è stato ricaricato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:44.959293Z"
+  },
+  "dataroot.global.msg_2": {
+    "src_hash": "e7bd82f379d59298dd339cbe69bb38a4",
+    "text": "Non stai più ricaricando la resistenza, \\z\n                                                         perché la tua resistenza è già piena.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:44.959940Z"
+  },
+  "dataroot.global.msg_3": {
+    "src_hash": "0d2a4b6001e5075842e8e0a2e687a1c5",
+    "text": "{} di resistenza è stato ricaricato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:44.960287Z"
   }
 }

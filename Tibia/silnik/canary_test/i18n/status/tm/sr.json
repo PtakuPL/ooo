@@ -175350,5 +175350,237 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T19:35:58.516832Z"
+  },
+  "actions.fluids.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Празан је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:04.935907Z"
+  },
+  "actions.fluids.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Празан је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:04.936232Z"
+  },
+  "actions.quests.msg_1": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Празан је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:04.936713Z"
+  },
+  "actions.quests.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Празан је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:04.937088Z"
+  },
+  "actions.arena_10x10.say_1": {
+    "src_hash": "3906a9833bd6eaee4859a9c344ab622b",
+    "text": "Молимо сачекајте да борци изађу из арене.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:09.975407Z"
+  },
+  "actions.arena_10x10.say_2": {
+    "src_hash": "75409a63d8ae9b241e56c658303a8a6e",
+    "text": "Потребно вам је 10 играча за улазак у арену.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:09.975855Z"
+  },
+  "actions.arena_10x10.say_3": {
+    "src_hash": "75409a63d8ae9b241e56c658303a8a6e",
+    "text": "Потребно вам је 10 играча за улазак у арену.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:09.976248Z"
+  },
+  "actions.arena_10x10.say_4": {
+    "src_hash": "75409a63d8ae9b241e56c658303a8a6e",
+    "text": "Потребно вам је 10 играча за улазак у арену.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:09.976662Z"
+  },
+  "actions.arena_10x10.say_5": {
+    "src_hash": "75409a63d8ae9b241e56c658303a8a6e",
+    "text": "Потребно вам је 10 играча за улазак у арену.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:09.977049Z"
+  },
+  "actions.arena_10x10.say_6": {
+    "src_hash": "3906a9833bd6eaee4859a9c344ab622b",
+    "text": "Молимо сачекајте да борци изађу из арене.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:14.259269Z"
+  },
+  "actions.arena_2x2.say_1": {
+    "src_hash": "3906a9833bd6eaee4859a9c344ab622b",
+    "text": "Молимо сачекајте да борци изађу из арене.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:14.259668Z"
+  },
+  "actions.arena_2x2.say_2": {
+    "src_hash": "c359b845a20ef5b11362d521359033f6",
+    "text": "Потребна су вам 2 играча за улазак у арену.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:14.260088Z"
+  },
+  "actions.arena_2x2.say_3": {
+    "src_hash": "c359b845a20ef5b11362d521359033f6",
+    "text": "Потребна су вам 2 играча за улазак у арену.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:14.260470Z"
+  },
+  "actions.arena_2x2.say_4": {
+    "src_hash": "c359b845a20ef5b11362d521359033f6",
+    "text": "Потребна су вам 2 играча за улазак у арену.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:14.260875Z"
+  },
+  "actions.arena_2x2.say_5": {
+    "src_hash": "c359b845a20ef5b11362d521359033f6",
+    "text": "Потребна су вам 2 играча за улазак у арену.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:19.143320Z"
+  },
+  "actions.arena_2x2.say_6": {
+    "src_hash": "3906a9833bd6eaee4859a9c344ab622b",
+    "text": "Молимо сачекајте да борци изађу из арене.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:19.143721Z"
+  },
+  "actions.construction_kits.msg_1": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Ово можете направити само у кући.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:19.144077Z"
+  },
+  "actions.construction_kits.msg_2": {
+    "src_hash": "cb245eea788d1e92bb6681bbb0d18c93",
+    "text": "Прво ставите комплет за изградњу на под.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:19.144437Z"
+  },
+  "actions.fishing.msg_1": {
+    "src_hash": "42beb1e402e8e22fe8564e3e54add023",
+    "text": "Ви нисте власник.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:19.144708Z"
+  },
+  "actions.golden.msg_1": {
+    "src_hash": "8bf4291a04c245b08078979c19f6d628",
+    "text": "Неко се бори против газде! Треба да сачекате неко време.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:27.942632Z"
+  },
+  "actions.golden.msg_2": {
+    "src_hash": "e8d548071c1f2fc16d9e331b53585349",
+    "text": "Треба вам 5 играча да бисте се борили са овим шефом.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:27.943154Z"
+  },
+  "actions.imbuement_shrine.msg_1": {
+    "src_hash": "79a564e6f5c8ba706ef71bbcfe5f2ecc",
+    "text": "Можете користити светилиште само на важећем предмету.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:27.943633Z"
+  },
+  "actions.imbuement_shrine.msg_2": {
+    "src_hash": "117ed7b2ddb424570148e8383d10a65a",
+    "text": "Нисте прикупили довољно знања од древних Обликоватеља. Посетите храм Схапер у Монтагу за помоћ.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:27.944192Z"
+  },
+  "actions.keys.msg_1": {
+    "src_hash": "809edf5650f2f960145b436e7ce40397",
+    "text": "Имате петнаест минута да убијете и опљачкате овог шефа, иначе ћете изгубити ту шансу.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:27.944684Z"
+  },
+  "actions.keys.msg_2": {
+    "src_hash": "f36cd2ccc4e01638476226fc450b4fe0",
+    "text": "Ушли сте у древну демонску затворску ћелију!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:33.976779Z"
+  },
+  "actions.random_items.say_2": {
+    "src_hash": "74d80babbb9ccde7026dc1f4f3ab692c",
+    "text": "Нисте нашли ништа корисно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:33.977111Z"
+  },
+  "actions.random_items.say_3": {
+    "src_hash": "74d80babbb9ccde7026dc1f4f3ab692c",
+    "text": "Нисте нашли ништа корисно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:33.977420Z"
+  },
+  "actions.hireling_foods.msg_too_full": {
+    "src_hash": "883d6385bdd0fda404b168b90f087063",
+    "text": "Још увек сте превише сити да бисте неко време јели било каква гурманска јела.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:33.977921Z"
+  },
+  "actions.outfit_items.msg_need_outfit": {
+    "src_hash": "6f55a0eedffa63b4bc43323bbb07b0e8",
+    "text": "Потребна вам је одећа за овај део.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:44:37.002196Z"
   }
 }

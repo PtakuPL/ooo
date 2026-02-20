@@ -1,17 +1,16 @@
 {
-  "timestamp": "2026-02-20T19:43:25.806659Z",
-  "cycle_counter": 6161,
-  "last_target_key": "ro:globalevents.json",
+  "timestamp": "2026-02-20T19:44:39.250033Z",
+  "cycle_counter": 6164,
+  "last_target_key": "it:dataroot.json",
   "last_pending_total": 3,
   "last_tier": 2,
   "last_cat_priority": 9,
-  "candidates_count": 183,
+  "candidates_count": 182,
   "active_candidates_count": 174,
   "skipped_backoff": 7,
-  "skipped_guard_fail": 2,
+  "skipped_guard_fail": 1,
   "guard_fail_blacklist": {
-    "ro:monsters.json": 6169,
-    "pl:spells.json": 6163
+    "ro:monsters.json": 6169
   },
   "tier_config": {
     "tier1": [
@@ -37,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 119,
+  "cache_cycle": 120,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -156,7 +155,10 @@
     "ru:modules.json": 0,
     "ro:example_merchant.json": 0,
     "it:libs.json": 1,
-    "ru:example_merchant.json": 0
+    "ru:example_merchant.json": 0,
+    "ro:globalevents.json": 0,
+    "sv:raids.json": 0,
+    "sr:actions.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,

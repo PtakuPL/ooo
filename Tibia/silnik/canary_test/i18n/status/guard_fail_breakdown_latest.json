@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:43:37.859066Z",
-  "window_start_utc": "2026-02-20T18:43:37.173910Z",
-  "window_end_utc": "2026-02-20T19:43:37.173910Z",
+  "timestamp": "2026-02-20T19:45:27.769915Z",
+  "window_start_utc": "2026-02-20T18:45:27.019044Z",
+  "window_end_utc": "2026-02-20T19:45:27.019044Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,11 +9,11 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 213,
-  "rejected_entries_raw": 356,
-  "suspicious_entries": 3465,
-  "suspicious_entries_raw": 25004,
-  "guard_fail_entries": 135,
-  "guard_fail_sum": 3242,
+  "rejected_entries_raw": 350,
+  "suspicious_entries": 3494,
+  "suspicious_entries_raw": 25157,
+  "guard_fail_entries": 137,
+  "guard_fail_sum": 2725,
   "by_type": {
     "identical_to_en": 171,
     "word_salad": 7,
@@ -35,9 +35,9 @@
     "sv": 11
   },
   "by_category": {
+    "server.json": 17,
     "npc.json": 4,
     "items.json": 26,
-    "server.json": 17,
     "spells.json": 53,
     "monsters.json": 26,
     "quests.json": 3,
@@ -225,28 +225,28 @@
       }
     },
     {
-      "key": "item.10388.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.10391.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.12742.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "spell.rotthingholy_ulus.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.single_ice_chain.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.podzillaphys_chain.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.rotthing_shaper.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

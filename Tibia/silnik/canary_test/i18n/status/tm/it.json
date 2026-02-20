@@ -78542,5 +78542,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:42:23.001336Z"
+  },
+  "item.389.name": {
+    "src_hash": "c91ec46447c1e698aae4701d667ca1cc",
+    "text": "stalagmiti",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:47:55.070699Z"
+  },
+  "item.39107.name": {
+    "src_hash": "f76e15f594cd7e6cc9477a0c4602619c",
+    "text": "vaso delicato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:47:55.072138Z"
+  },
+  "item.39336.name": {
+    "src_hash": "4523ed76b14d392a94894520e32a614b",
+    "text": "ala della damigella",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:47:55.082001Z"
+  },
+  "item.39337.name": {
+    "src_hash": "e10021dc0a4d284abf5b8d4943bc210d",
+    "text": "occhio da damigella",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:47:55.082292Z"
+  },
+  "item.395.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:47:55.089374Z"
+  },
+  "item.39551.name": {
+    "src_hash": "a7ef14cb46aa278a6c388136399ba689",
+    "text": "alghe",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:47:55.092365Z"
   }
 }

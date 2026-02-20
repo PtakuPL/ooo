@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-20T19:41:21.418130Z",
-  "cycle": 117,
+  "timestamp": "2026-02-20T19:42:20.957802Z",
+  "cycle": 118,
   "language": "ro",
-  "json_file": "npclib.json",
-  "translated": 30,
+  "json_file": "example_merchant.json",
+  "translated": 9,
   "placeholders": 0,
-  "guard_fail": 0,
+  "guard_fail": 1,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 100
+  "strict_skipped_done": 5
 }

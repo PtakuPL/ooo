@@ -71174,5 +71174,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T19:41:20.505879Z"
+  },
+  "npc.example_merchant.low_level": {
+    "src_hash": "8ed106b17eb3e541a267eb1ce04cf880",
+    "text": "Îmi pare rău, dar ești prea lipsit de experiență. Reveniți când ajungeți la nivelul 8.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:42:16.325845Z"
+  },
+  "npc.example_merchant.help": {
+    "src_hash": "44f922ad592a665c09c99f143c12e55b",
+    "text": "Îți pot vinde poțiuni, arme și armuri. Spune {trade} pentru a-mi răsfoi produsele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:42:16.326953Z"
+  },
+  "npc.example_merchant.job": {
+    "src_hash": "85f48738faa47736979b71b04440e6ac",
+    "text": "Sunt comerciant. Vand diverse bunuri aventurierii.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:42:16.327454Z"
+  },
+  "npc.example_merchant.trade": {
+    "src_hash": "025ffa5f7383d5062f818091cb13b198",
+    "text": "Desigur! Iată ofertele mele.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:42:16.328206Z"
+  },
+  "npc.example_merchant.news_1": {
+    "src_hash": "f91323a89a9995189f7d38f5c7ef5949",
+    "text": "Ai auzit? Dragons au fost zărite în apropierea munților!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:42:16.328948Z"
+  },
+  "npc.example_merchant.news_2": {
+    "src_hash": "277424095e5370279415b09f4d99e841",
+    "text": "Regele caută aventurieri curajoși.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:42:16.329400Z"
+  },
+  "nv.example_merchant.2": {
+    "src_hash": "202780b2ed8917c475ff421fc95e7999",
+    "text": "Arme și armuri de calitate!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:42:16.330056Z"
+  },
+  "nv.example_merchant.3": {
+    "src_hash": "cde7215d4d751c5129510a61f998bfcc",
+    "text": "OFERTE SPECIALE AZI!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:42:16.330394Z"
+  },
+  "_file": {
+    "src_hash": "48aacf7f299cacffeaf96e599e1ea47c",
+    "text": "data-otservbr-global/npc/example_merchant_i18n.lua",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:42:19.712389Z"
   }
 }

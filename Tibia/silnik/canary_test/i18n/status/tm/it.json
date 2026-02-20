@@ -59961,11 +59961,11 @@
   },
   "php.template.text3": {
     "src_hash": "f05fe584a9e3b77bf6bf5028670d6e86",
-    "text": "navbar-navml-auto",
+    "text": "navbar-nav ml-auto",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-17T08:21:08.946567Z"
+    "updated_at": "2026-02-20T19:41:53.863344Z"
   },
   "php.index.text1": {
     "src_hash": "2960aaccfd9458679188ff8836c0f996",
@@ -79294,5 +79294,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T19:34:21.210872Z"
+  },
+  "php.accounts.text1": {
+    "src_hash": "b47b9410367725df48e327131e4850ef",
+    "text": "col-12 col-sm-12 col-lg-10",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:41.431057Z"
+  },
+  "php.accounts.text2": {
+    "src_hash": "1c3a471e6ff5a9d34e63038319280b94",
+    "text": "scheda-info-scheda-schema-scheda",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:41.431426Z"
+  },
+  "php.rfc6238.text1": {
+    "src_hash": "d0d1de067b87f89b86f48f7d53e14f56",
+    "text": "234567QWERTYUIOPASDFGHJKLZXCVBNM",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:53.863660Z"
+  },
+  "php.rfc6238.text2": {
+    "src_hash": "bb927042d67b8ccf3c149f0d7d96f35b",
+    "text": "da $contatore <br/>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:53.863902Z"
+  },
+  "php.rfc6238.text3": {
+    "src_hash": "17c3fc007f076da3e1f9ceb26cbfda4d",
+    "text": "Prima del calcolo HMAC, pad con zero a sinistra fino a 8 caratteri.<br/>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:53.864301Z"
+  },
+  "php.rfc6238.text4": {
+    "src_hash": "bebe8ba63fb75533b6fa54b42dc84078",
+    "text": "conversione dell'hash esadecimale in caratteri<br/>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:41:56.316441Z"
   }
 }

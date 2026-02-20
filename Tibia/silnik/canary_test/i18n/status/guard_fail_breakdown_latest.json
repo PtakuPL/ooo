@@ -1,49 +1,49 @@
 {
-  "timestamp": "2026-02-20T16:26:24.675574Z",
-  "window_start_utc": "2026-02-20T15:26:24.248590Z",
-  "window_end_utc": "2026-02-20T16:26:24.248590Z",
+  "timestamp": "2026-02-20T16:27:44.700978Z",
+  "window_start_utc": "2026-02-20T15:27:44.534925Z",
+  "window_end_utc": "2026-02-20T16:27:44.534925Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 144,
-  "suspicious_entries": 4603,
-  "guard_fail_entries": 13,
-  "guard_fail_sum": 1021,
+  "rejected_entries": 146,
+  "suspicious_entries": 235,
+  "guard_fail_entries": 15,
+  "guard_fail_sum": 1714,
   "by_type": {
-    "identical_to_en": 113,
-    "word_salad": 3,
+    "identical_to_en": 114,
+    "word_salad": 4,
     "mixed_language": 22,
     "contains_tibia_proper_noun": 10,
     "mixed_scripts": 6,
     "cyrillic_latin_mix": 6
   },
   "by_source": {
-    "google_translate": 144
+    "google_translate": 146
   },
   "by_language": {
-    "es": 20,
+    "es": 22,
     "ro": 61,
     "it": 11,
     "ru": 6,
     "pl": 46
   },
   "by_category": {
-    "npc.json": 6,
+    "npc.json": 8,
     "items.json": 55,
     "monsters.json": 56,
     "spells.json": 27
   },
   "by_severity": {
-    "CRITICAL": 116,
+    "CRITICAL": 118,
     "HIGH": 28
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 113
+      "count": 114
     },
     {
       "type": "mixed_language",
@@ -63,7 +63,7 @@
     },
     {
       "type": "word_salad",
-      "count": 3
+      "count": 4
     }
   ],
   "top_keys": [
@@ -109,16 +109,16 @@
     },
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 3,
+      "count": 4,
       "types": {
-        "identical_to_en": 3
+        "identical_to_en": 4
       }
     },
     {
       "key": "npc.al_dee.stdmod_41",
-      "count": 3,
+      "count": 4,
       "types": {
-        "word_salad": 3
+        "word_salad": 4
       }
     },
     {

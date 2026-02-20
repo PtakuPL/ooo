@@ -72646,5 +72646,69 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T21:13:54.653430Z"
+  },
+  "scripts.lemon_cupcake.msg_2": {
+    "src_hash": "7b6b97b7479355493581a2890589d67e",
+    "text": "Te simți mai concentrat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:27:15.136271Z"
+  },
+  "scripts.catch_fish.say_1": {
+    "src_hash": "a8af7995c4cd2f1bfdc48667f5a0e8cc",
+    "text": "Prindeți un pește auriu în castron.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:27:29.214913Z"
+  },
+  "scripts.catch_fish.say_2": {
+    "src_hash": "e44b59480fa9f968d094dfa99a374f80",
+    "text": "Peștele de aur a scăpat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:27:29.215338Z"
+  },
+  "scripts.check_mount.msg_1": {
+    "src_hash": "53fb4630c527cc842c731640ece0d1ca",
+    "text": "Contractul tău cu calul tău a expirat și s-a întors înapoi la stația de cai.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:27:29.215792Z"
+  },
+  "scripts.chest.msg_2": {
+    "src_hash": "ac1f9925628d9e59d3b4385a686c8259",
+    "text": "Ai găsit o sabie de lemn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:27:29.216090Z"
+  },
+  "scripts.citizen.msg_1": {
+    "src_hash": "b8bb2a5d3b1a405748d53de0babf848e",
+    "text": "Încă nu aveți voie să alegeți Svargrond.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:27:29.216617Z"
+  },
+  "scripts.citizen.msg_2": {
+    "src_hash": "a77c39e3ccc38694ad61f849b12281c3",
+    "text": "Ți-ai schimbat orașul în {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:27:32.992106Z"
+  },
+  "scripts.citizen_svargrond.say_1": {
+    "src_hash": "25dd53d32a716d2c7f87611e31827ded",
+    "text": "Trebuie să fii un barbar onorific pentru a accesa acoperișul. Vorbește cu Jarl despre asta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:27:32.992679Z"
   }
 }

@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T21:26:58.023328Z",
-  "window_start_utc": "2026-02-20T20:26:57.317135Z",
-  "window_end_utc": "2026-02-20T21:26:57.317135Z",
+  "timestamp": "2026-02-20T21:28:15.604204Z",
+  "window_start_utc": "2026-02-20T20:28:14.871438Z",
+  "window_end_utc": "2026-02-20T21:28:14.871438Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,17 +9,17 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 164,
-  "rejected_entries_raw": 393,
-  "suspicious_entries": 3249,
-  "suspicious_entries_raw": 25227,
-  "guard_fail_entries": 131,
-  "guard_fail_sum": 3357,
+  "rejected_entries_raw": 396,
+  "suspicious_entries": 3250,
+  "suspicious_entries_raw": 25129,
+  "guard_fail_entries": 129,
+  "guard_fail_sum": 3370,
   "by_type": {
     "identical_to_en": 140,
-    "word_salad": 7,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7,
     "contains_tibia_proper_noun": 6,
+    "word_salad": 7,
     "mixed_language": 7,
     "fx_token": 3
   },
@@ -27,18 +27,18 @@
     "google_translate": 164
   },
   "by_language": {
-    "es": 40,
     "ro": 56,
     "ru": 7,
     "it": 8,
+    "es": 40,
     "sv": 15,
     "pl": 38
   },
   "by_category": {
-    "npc.json": 4,
     "server.json": 17,
     "spells.json": 33,
     "quests.json": 3,
+    "npc.json": 4,
     "books.json": 1,
     "otclient_modules.json": 30,
     "scripts.json": 14,
@@ -56,15 +56,15 @@
       "count": 140
     },
     {
-      "type": "word_salad",
-      "count": 7
-    },
-    {
       "type": "mixed_scripts",
       "count": 7
     },
     {
       "type": "cyrillic_latin_mix",
+      "count": 7
+    },
+    {
+      "type": "word_salad",
       "count": 7
     },
     {
@@ -81,13 +81,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "data.otservbr.global.npc.anerui.L71.1487",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
     {
       "key": "data.otservbr.global.npc.brasith.L59.1211",
       "count": 3,
@@ -123,38 +116,17 @@
       }
     },
     {
-      "key": "scripts.action_cushion.say_1",
+      "key": "data.otservbr.global.npc.anerui.L71.1487",
       "count": 3,
       "types": {
         "identical_to_en": 3
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
+      "key": "scripts.action_cushion.say_1",
+      "count": 3,
       "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.anerui.L72.1488",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.anerui.L73.1489",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
+        "identical_to_en": 3
       }
     },
     {
@@ -201,6 +173,34 @@
       "types": {
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L72.1488",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "data.otservbr.global.npc.anerui.L73.1489",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
       }
     },
     {

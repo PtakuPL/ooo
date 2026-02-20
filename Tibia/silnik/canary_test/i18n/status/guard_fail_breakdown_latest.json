@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T20:32:36.801846Z",
-  "window_start_utc": "2026-02-20T19:32:36.071615Z",
-  "window_end_utc": "2026-02-20T20:32:36.071615Z",
+  "timestamp": "2026-02-20T20:34:08.331207Z",
+  "window_start_utc": "2026-02-20T19:34:07.618326Z",
+  "window_end_utc": "2026-02-20T20:34:07.618326Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,11 +9,11 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 202,
-  "rejected_entries_raw": 407,
+  "rejected_entries_raw": 418,
   "suspicious_entries": 3646,
-  "suspicious_entries_raw": 22338,
-  "guard_fail_entries": 126,
-  "guard_fail_sum": 7809,
+  "suspicious_entries_raw": 22368,
+  "guard_fail_entries": 125,
+  "guard_fail_sum": 7794,
   "by_type": {
     "identical_to_en": 161,
     "word_salad": 7,
@@ -27,17 +27,16 @@
     "google_translate": 202
   },
   "by_language": {
-    "es": 40,
     "ro": 61,
+    "es": 40,
     "sv": 11,
     "pl": 43,
     "it": 25,
     "ru": 22
   },
   "by_category": {
-    "npc.json": 4,
-    "scripts.json": 14,
     "otclient_modules.json": 29,
+    "npc.json": 4,
     "monsters.json": 26,
     "client.json": 12,
     "cpp.json": 6,
@@ -49,6 +48,7 @@
     "server.json": 17,
     "spells.json": 33,
     "quests.json": 3,
+    "scripts.json": 14,
     "books.json": 1
   },
   "by_severity": {
@@ -86,13 +86,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "scripts.action_cushion.say_1",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
     {
       "key": "lib.player.loyalty_title_1",
       "count": 3,
@@ -225,10 +218,10 @@
       }
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
+      "key": "scripts.action_cushion.say_1",
+      "count": 3,
       "types": {
-        "identical_to_en": 2
+        "identical_to_en": 3
       }
     },
     {
@@ -240,6 +233,13 @@
     },
     {
       "key": "otclient_modules.bestiary.tr_7",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2

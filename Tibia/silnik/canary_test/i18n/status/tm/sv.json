@@ -33382,5 +33382,301 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:01:02.703088Z"
+  },
+  "npc.mortimer.multi_30": {
+    "src_hash": "6d7e02870b1f2bd6a4a75d091d6c2448",
+    "text": "Någonstans under den apinfekterade staden Banuta kan man hitta fängelsehålor som en gång beboddes av ödlor...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.703986Z"
+  },
+  "npc.mortimer.multi_31": {
+    "src_hash": "58480b8f06d05b95b682740398ebc477",
+    "text": "Leta där efter en atypisk struktur som hellre skulle passa till Ankrahmun och dess Ankrahmun gravar. Kopiera runorna du hittar på den här strukturen...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.704810Z"
+  },
+  "npc.mortimer.multi_32": {
+    "src_hash": "e71d2d46fe9dc56efb9fa1542ac9376c",
+    "text": "Klarar du den utmaningen?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.705163Z"
+  },
+  "npc.mortimer.multi_33": {
+    "src_hash": "606b5e886fe8b7fac68be368feb09fe3",
+    "text": "Vi skaffade oss lite kunskap om speciella magiska stenar. Vissa förlorade civilisationer använde det för att lagra kunskap och lore, precis som vi använder böcker ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.705976Z"
+  },
+  "npc.mortimer.multi_34": {
+    "src_hash": "6d48f259f0e14561b06f20c1c99abbec",
+    "text": "Visdomen i sådana stenar måste vara enorm, men det är också farorna för varje person som försöker få en...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.706590Z"
+  },
+  "npc.mortimer.multi_35": {
+    "src_hash": "05ee0b0584330b394bb849f53ea366b7",
+    "text": "Såvitt vi vet var ruinerna som hittades i nordvästra Edron en gång bebodda av varelser som använde sådana stenar. Har du hjärta att åka dit och skaffa oss en sådan sten?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.707554Z"
+  },
+  "npc.mortimer.multi_36": {
+    "src_hash": "39237b534a1923196110ddbbf14ada07",
+    "text": "Några högt uppsatta medlemmar skulle vilja studera alvpoesi. De vill ha den sällsynta boken 'Songs of the Forest' ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.708183Z"
+  },
+  "npc.mortimer.multi_37": {
+    "src_hash": "e674100e4e7ff0c63782c8fc637eb1ae",
+    "text": "Säkert kommer någon i Ab'Dendriel att äga en kopia. Så det är bara att fråga runt där. Är du villig att acceptera detta uppdrag?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.708846Z"
+  },
+  "npc.mortimer.multi_38": {
+    "src_hash": "aafc5affc270f17961b263faf1cebeff",
+    "text": "Det är allmänt känt att orcher från Uldereks Rock använder något slags pulver för att öka häftigheten hos sina krigsvargar och bersärkar ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.709605Z"
+  },
+  "npc.mortimer.multi_4": {
+    "src_hash": "25094cb87ba0e6f491f2e830082e1eb8",
+    "text": "Ratha var en stor upptäcktsresande och ännu större damman. Tyvärr återvände han aldrig från ett besök på Amazonas. Förmodligen är han död...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.710294Z"
+  },
+  "npc.mortimer.multi_41": {
+    "src_hash": "fd1ca43a04a60f07f86aaa1d5d924d1a",
+    "text": "Vi vill lära oss mer om den urgamla rasen av bonelords. Vi tror att den svarta pyramiden nordost om Darashia ursprungligen byggdes av dem ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.711009Z"
+  },
+  "npc.mortimer.multi_42": {
+    "src_hash": "0f3ace58a37fac6ddbfe8fe8ecc6c7cc",
+    "text": "Vi ber dig att utforska ruinerna av den svarta pyramiden och leta efter några tecken som bevisar vår teori. Du kanske hittar något dokument med det numeriska bonelord-språket ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.711854Z"
+  },
+  "npc.mortimer.multi_43": {
+    "src_hash": "d259ccb119f75ea227dbd1dad096bb71",
+    "text": "Det skulle vara tillräckligt bevis. Vill du acceptera detta uppdrag?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.712321Z"
+  },
+  "npc.mortimer.multi_44": {
+    "src_hash": "59d832175850554186c76307ef967864",
+    "text": "Detta förberedelsepaket låter dig samla en röd fjäril som du har dödat ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.712809Z"
+  },
+  "npc.mortimer.multi_46": {
+    "src_hash": "cb5598bc461a5a6a5cfae6cfe84f98c4",
+    "text": "Detta förberedelsepaket låter dig samla en blå fjäril som du har dödat ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.713344Z"
+  },
+  "npc.mortimer.multi_48": {
+    "src_hash": "dfc5ac49eb8d3ea80743ffc0306c16d5",
+    "text": "Våra bästa hjärnor kom på teorin att djupt under isön Folda kan hittas som är gammal. För att bevisa denna teori skulle vi behöva ett prov av ovannämnda is ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.714287Z"
+  },
+  "npc.mortimer.multi_5": {
+    "src_hash": "7c10e329b4a57dbd0d3c7175149adf8d",
+    "text": "Sällskapet erbjuder en betydande belöning för att hämta Ratha eller hans kvarlevor. Har du några nyheter om Ratha?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.714934Z"
+  },
+  "npc.mortimer.multi_51": {
+    "src_hash": "08cef1cfc8fcecfbf5781c716fe08d8e",
+    "text": "Båda ristningarna är nu laddade och harmoniserade. I teorin ska du kunna resa på nolltid från en bas till den andra ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.715742Z"
+  },
+  "npc.mortimer.multi_52": {
+    "src_hash": "07438ccddb233b3362eed211f1015e36",
+    "text": "Du måste dock ha en orichalcumpärla i din ägo för att kunna använda den som strömkälla. Det kommer att förstöras under processen. Jag kommer att ge dig 6 sådana pärlor och du kan köpa nya i våra baser ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.716621Z"
+  },
+  "npc.mortimer.multi_53": {
+    "src_hash": "f76f42c4d2ec81f4480932e7fd5e2b89",
+    "text": "Dessutom måste du vara en förstklassig utforskare för att använda den astrala resan. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.717133Z"
+  },
+  "npc.mortimer.multi_54": {
+    "src_hash": "ac1dbbbb1af69d60e23fe6b662ad0375",
+    "text": "Och kom ihåg: det är en liten teleport för dig, men en stor teleport för alla tibianer! Här är en liten present till din insats!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.717926Z"
+  },
+  "npc.mortimer.multi_55": {
+    "src_hash": "f5ea2129e1be3653ea1f3f0142d972a3",
+    "text": "Med de föremål du har tillhandahållit kommer våra forskare att göra stadiga framsteg. Ändå saknar vi några testresultat från andra utforskare ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.718602Z"
+  },
+  "npc.mortimer.multi_57": {
+    "src_hash": "c8b5a09280d3a626d97d77288a558304",
+    "text": "Forskningen om ektoplasma gör goda framsteg. Nu behöver vi någon spektralartikel. Våra forskare tror att en spektral klänning skulle vara ett perfekt föremål för sina studier ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.719587Z"
+  },
+  "npc.mortimer.multi_59": {
+    "src_hash": "489c305d7e1c73be47f94d405a2dfe0b",
+    "text": "De historierna är bara fantastiska! Män med ansikten på magen istället för huvuden säger du? Och höns som lägger guldägg? Medan den mest fantastiska är den här ungdomskällan du har nämnt! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.720419Z"
+  },
+  "npc.mortimer.multi_6": {
+    "src_hash": "d9b7079a5ca00792e1442b39336d34a6",
+    "text": "Bra, ta bara den här spektrala essensen och använd den på den konstiga snidningen i den här byggnaden såväl som på motsvarande kakel i vår bas i Northport ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.721145Z"
+  },
+  "npc.mortimer.multi_60": {
+    "src_hash": "ffb687ecc9d990125f12c0b6a4a6cf90",
+    "text": "Jag skickar omedelbart några av våra mest hängivna upptäcktsresande för att kolla upp dessa saker!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.721795Z"
+  },
+  "npc.mortimer.multi_7": {
+    "src_hash": "f616702d57809f7fb69fbcb6bed9e9b5",
+    "text": "Så fort du har laddat portalbrickorna på det sättet, rapportera om spektralportalerna.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.722308Z"
+  },
+  "npc.mortimer.multi_8": {
+    "src_hash": "b8a8e31569ad1400711e8b5c46838889",
+    "text": "Det är ganska modigt. Vi vet, det är mycket vi efterfrågar. Drottningen av banshees bor i de så kallade Ghostlands, sydväst om Carlin. Det ryktas att hennes lya ligger i de djupaste fängelsehålorna under den förbannade platsen ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.723359Z"
+  },
+  "npc.mortimer.multi_9": {
+    "src_hash": "f92b7e2780d0361c6781e39ff486b82b",
+    "text": "Allt våld kommer förmodligen att vara meningslöst, du måste förhandla med henne. Försök att få en spektral klänning från henne. Lycka till.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.724055Z"
+  },
+  "npc.mortimer.say_1": {
+    "src_hash": "4004163d9a4de051f32618f25fa503f1",
+    "text": "Vill du gå med i utforskarsällskapet?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.724445Z"
+  },
+  "npc.mortimer.say_12": {
+    "src_hash": "c2aafac7aec4ab21a6c7325db8bb361d",
+    "text": "Fick du isen vi letar efter?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.724995Z"
+  },
+  "npc.mortimer.say_13": {
+    "src_hash": "17784738b379cb7f12cc256ea095876d",
+    "text": "Uppdraget ber dig att samla några arter av fjärilar, är du intresserad?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.725476Z"
+  },
+  "npc.mortimer.say_14": {
+    "src_hash": "202bc421be1d2a8c5a8f5f62d614779c",
+    "text": "Har du skaffat den lila fjärilen vi letar efter?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.725890Z"
+  },
+  "npc.mortimer.say_15": {
+    "src_hash": "0791722408ef8fb47b7063a5387323a6",
+    "text": "Har du skaffat den blå fjärilen vi letar efter?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.726425Z"
+  },
+  "npc.mortimer.say_16": {
+    "src_hash": "4b492af572daa4eaa8b008d4b2c1ffcc",
+    "text": "Har du skaffat den röda fjärilen vi letar efter?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.726860Z"
+  },
+  "npc.mortimer.say_17": {
+    "src_hash": "1e3ce998af65b2f9115f67b03275ee2c",
+    "text": "I det här uppdraget kräver vi att du skaffar oss några växtprover från Tiquandan-växter. Skulle du vilja uppfylla detta uppdrag?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.727566Z"
+  },
+  "npc.mortimer.say_18": {
+    "src_hash": "7658be1e78e4fa62af43dfe438c83fa1",
+    "text": "Har du skaffat provet på växten för djungelklockor vi letar efter?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:11:05.728051Z"
   }
 }

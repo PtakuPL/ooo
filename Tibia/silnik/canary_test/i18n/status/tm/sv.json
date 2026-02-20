@@ -34294,5 +34294,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:46:00.258262Z"
+  },
+  "npc.mortimer.say_56": {
+    "src_hash": "89af02e4cca5ae12b761d114e42e3a98",
+    "text": "Nej det gör du inte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.371276Z"
+  },
+  "npc.mortimer.say_57": {
+    "src_hash": "073a95013e532e6ca91e0398267c9164",
+    "text": "Det är alltid en sorglig dag när vi får veta om en medlems död. Men vi fick åtminstone veta om hans öde. Tack, här är din belöning.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.371965Z"
+  },
+  "npc.mortimer.say_58": {
+    "src_hash": "b005aec84c5ed6ad0ce3bbaa54efd595",
+    "text": "Smälte det bort?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.372269Z"
+  },
+  "npc.mortimer.say_59": {
+    "src_hash": "e9a092e7ae087d1047467afc9d84f3c2",
+    "text": "Återkom när du hittar någon information.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.372687Z"
+  },
+  "npc.mortimer.say_6": {
+    "src_hash": "4a734d935ec4a98c02d45a2bd363a841",
+    "text": "Upptäckarsamhället behöver en hel del hjälp i forskningen om astrala resor. Är du villig att hjälpa till?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.373288Z"
+  },
+  "npc.mortimer.say_60": {
+    "src_hash": "e061655e8bc968c46643ac73912515e5",
+    "text": "Kom tillbaka när du hittar en.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.373778Z"
+  },
+  "npc.mortimer.say_61": {
+    "src_hash": "8bd573b4e39779cb39916aaddf74c18f",
+    "text": "Upptäckarsällskapet letar efter en äkta gigantisk smedhammare till vår samling. Det ryktas att cyclopses of the Plains of Havoc kanske använder en. Fick du av en slump en sådan hammare?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.374569Z"
+  },
+  "npc.mortimer.say_7": {
+    "src_hash": "9b7adeb43dbdd78522ce5c54d731724c",
+    "text": "Har du någon insamlad ektoplasma med dig?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.375021Z"
+  },
+  "npc.mortimer.say_9": {
+    "src_hash": "af6795c8c3d6c71cb42b8077e752f70e",
+    "text": "Åh, ja! Berätta för våra andra utforskare att tidningarna redan är på posten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.375574Z"
+  },
+  "npc.murim.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Glöm inte att sätta in dina pengar här i Global Bank innan du ger dig ut på äventyr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.382319Z"
+  },
+  "npc.muzir.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Glöm inte att sätta in dina pengar här i Global Bank innan du ger dig ut på äventyr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.383873Z"
+  },
+  "npc.myra.farewell_msg_1": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "Farväl, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.384422Z"
+  },
+  "npc.myra.multi_8": {
+    "src_hash": "84bef6784099863dfeb03302de8845ca",
+    "text": "Förstod du allt jag sa till dig och är villig att hantera denna uppgift?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.385342Z"
+  },
+  "npc.myra.say_21": {
+    "src_hash": "fb1bdce2ee62f051a30bbc4dd6761f3a",
+    "text": "Vill du att jag ska upprepa uppgiftskraven då?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.386439Z"
+  },
+  "npc.myra.say_24": {
+    "src_hash": "fb1bdce2ee62f051a30bbc4dd6761f3a",
+    "text": "Vill du att jag ska upprepa uppgiftskraven då?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.387020Z"
+  },
+  "npc.myra.say_27": {
+    "src_hash": "fb1bdce2ee62f051a30bbc4dd6761f3a",
+    "text": "Vill du att jag ska upprepa uppgiftskraven då?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.387635Z"
+  },
+  "npc.myra.say_30": {
+    "src_hash": "fb1bdce2ee62f051a30bbc4dd6761f3a",
+    "text": "Vill du att jag ska upprepa uppgiftskraven då?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:53:19.388266Z"
   }
 }

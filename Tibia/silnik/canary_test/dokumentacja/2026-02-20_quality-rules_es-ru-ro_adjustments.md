@@ -112,3 +112,11 @@ Nowe ENV:
 - `SUSPICIOUS_REJECTED_CLEANUP_EVERY` (domyślnie `3`)
 - `SUSPICIOUS_REJECTED_CLEANUP_PENDING_THRESHOLD` (domyślnie `200`)
 - `SUSPICIOUS_REJECTED_WRITE_MODE` (`append|suppress_known|suppress_all`, domyślnie `suppress_all`)
+
+### Safeguard wydajności (po spadku tłumaczeń netto)
+- Wymuszone `forced_suspicious_repair` działa teraz tylko dla kluczy rzeczywiście niedokończonych:
+  - EN-copy,
+  - placeholder (`[XX]`/`[TODO]`),
+  - pusta wartość.
+- Nie wymusza już reprocessingu stabilnych, poprawnie przetłumaczonych wpisów.
+- Cel: ograniczyć przepalanie batchy na „already-good” key i zminimalizować spadki `Tłumaczeń netto`.

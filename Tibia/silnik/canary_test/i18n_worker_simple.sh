@@ -15575,12 +15575,13 @@ if operator_fast_mode and translate_limit > 0:
         if strict_mode and not _has_value:
             continue
         _cur = str(lang_data.get(_fk, "")) if _has_value else ""
+        _cur_unresolved = (not _cur.strip()) or _cur.startswith("[") or _cur.startswith("[TODO]") or _cur == str(_fe)
         _is_forced = _is_forced_short_npc_dialogue(_fk, _fe, target_lang) or _is_forced_quest_runtime_fragment(_fk, _fe, json_file)
-        if _fk in forced_suspicious_repair_keys:
+        if _fk in forced_suspicious_repair_keys and _cur_unresolved:
             _is_forced = True
         _needs_repair = False
         if _has_value:
-            if _cur.strip() == "" or _cur.startswith("[") or _cur.startswith("[TODO]") or _cur == str(_fe):
+            if _cur_unresolved:
                 _needs_repair = True
             elif _requires_trailing_space_contract(_fk, _fe):
                 _en_ts = len(str(_fe)) - len(str(_fe).rstrip(" "))
@@ -15637,6 +15638,7 @@ for key, en_text in iter_items:
 
     if key in lang_data:
         current_value = str(lang_data.get(key, ""))
+        _current_unresolved = (not current_value.strip()) or current_value.startswith("[") or current_value.startswith("[TODO]") or current_value == str(en_text)
         # Napraw kontrakt trailing-space dla fragmentów runtime nawet poza strict-mode.
         if _requires_trailing_space_contract(key, en_text):
             en_ts = len(str(en_text)) - len(str(en_text).rstrip(" "))
@@ -15658,7 +15660,7 @@ for key, en_text in iter_items:
 
         # W strict tłumaczymy tylko placeholdery / TODO / wartości równe EN
         if strict_mode:
-            _force_suspicious_repair = key in forced_suspicious_repair_keys
+            _force_suspicious_repair = key in forced_suspicious_repair_keys and _current_unresolved
             if (
                 current_value == en_text
                 and _is_proper_noun_key(key, en_text)
@@ -15713,7 +15715,8 @@ for key, en_text in iter_items:
                         "translated": str(current_value),
                     })
         else:
-            if not current_value.startswith("[") and not force_en_copy_retranslate and key not in forced_suspicious_repair_keys:
+            _force_suspicious_repair = key in forced_suspicious_repair_keys and _current_unresolved
+            if not current_value.startswith("[") and not force_en_copy_retranslate and not _force_suspicious_repair:
                 continue  # Już przetłumaczone
     
     # ── Semantic Override Check (priorytet nad TM/GT/simple) ────────────

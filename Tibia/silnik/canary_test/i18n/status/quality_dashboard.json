@@ -33,12 +33,12 @@
     "issues_count": 1417
   },
   "es": {
-    "last_cycle": "2026-02-20T23:24:14.579505Z",
+    "last_cycle": "2026-02-20T23:26:13.627498Z",
     "last_translated": 23,
-    "total_suspicious": 69518,
-    "total_rejected": 2270,
-    "total_gt_guard_fail": 22810,
-    "cycles": 1702,
+    "total_suspicious": 69608,
+    "total_rejected": 2281,
+    "total_gt_guard_fail": 22845,
+    "cycles": 1704,
     "quality_score": 60.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 350877
@@ -66,24 +66,24 @@
     "issues_count": 2470
   },
   "it": {
-    "last_cycle": "2026-02-20T23:20:20.618155Z",
-    "last_translated": 5,
-    "total_suspicious": 8691,
-    "total_rejected": 883,
-    "total_gt_guard_fail": 2932,
-    "cycles": 484,
-    "quality_score": 75.4,
+    "last_cycle": "2026-02-20T23:25:15.388617Z",
+    "last_translated": 14,
+    "total_suspicious": 8702,
+    "total_rejected": 887,
+    "total_gt_guard_fail": 2948,
+    "cycles": 485,
+    "quality_score": 75.3,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 77055
   },
   "ru": {
-    "last_cycle": "2026-02-20T23:20:09.003633Z",
-    "last_translated": 13,
-    "total_suspicious": 48824,
+    "last_cycle": "2026-02-20T23:25:21.435248Z",
+    "last_translated": 30,
+    "total_suspicious": 48851,
     "total_rejected": 935,
     "total_gt_guard_fail": 2539,
-    "cycles": 461,
-    "quality_score": 67.3,
+    "cycles": 462,
+    "quality_score": 67.4,
     "last_audit": "2026-02-20T22:12:42.470260Z",
     "issues_count": 214898
   },
@@ -550,12 +550,12 @@
     "issues_count": 958
   },
   "ro": {
-    "last_cycle": "2026-02-20T23:20:54.863083Z",
-    "last_translated": 4,
-    "total_suspicious": 88802,
-    "total_rejected": 3255,
-    "total_gt_guard_fail": 5230,
-    "cycles": 430,
+    "last_cycle": "2026-02-20T23:25:43.581287Z",
+    "last_translated": 15,
+    "total_suspicious": 88808,
+    "total_rejected": 3261,
+    "total_gt_guard_fail": 5245,
+    "cycles": 431,
     "quality_score": 60.7,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 190054

@@ -81726,5 +81726,93 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:20:17.043346Z"
+  },
+  "scripts.coconut_shrimp_bake.msg_3": {
+    "src_hash": "aa142f58af05f46cbbdebce92dbd7e65",
+    "text": "Dovresti mangiare questo piatto solo indossando un elmo degli abissi o una galea di profondità e camminando sott'acqua.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:24:54.936351Z"
+  },
+  "scripts.level_door.msg_1": {
+    "src_hash": "227c86ee15812ee3777b6d25c989a4f6",
+    "text": "Solo chi ne è degno può passare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:24:54.995450Z"
+  },
+  "scripts.coconut_shrimp_bake.msg_4": {
+    "src_hash": "68f3d6d9e553ef4f5ae98b79cbcc3d48",
+    "text": "La tua velocità di camminata subacquea mentre indossi un {} è aumentata per ventiquattro ore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:07.767854Z"
+  },
+  "scripts.coconut_shrimp_bake.say_1": {
+    "src_hash": "fea6ea75f234ce4b728a71482f64a84f",
+    "text": "Yum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:07.768098Z"
+  },
+  "scripts.commands.available_header": {
+    "src_hash": "2dd878ee55d738aa02e6b0b162d45708",
+    "text": "Comandi disponibili:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:07.768355Z"
+  },
+  "scripts.concoctions.msg_1": {
+    "src_hash": "b8e5d8968743df38c0eb259199e70da0",
+    "text": "Hai guadagnato {} minuti di resistenza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:07.768667Z"
+  },
+  "scripts.concoctions.msg_2": {
+    "src_hash": "aed19f55d060493f948e08ab2adb0ccf",
+    "text": "Tutti i tempi di recupero degli incantesimi sono stati cancellati.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:15.235563Z"
+  },
+  "scripts.construction_kits.amphora": {
+    "src_hash": "9177ef079f21142def99d8173cb81457",
+    "text": "Sembra che non ci sia posto migliore per questa anfora che proprio qui.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:15.236113Z"
+  },
+  "scripts.construction_kits.globe": {
+    "src_hash": "2aad593ea503bfac41a52a9e29037d83",
+    "text": "Un mappamondo come questo dovrebbe essere in ogni casa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:15.236749Z"
+  },
+  "scripts.construction_kits.horse": {
+    "src_hash": "2c0d3b5d04765b4a5712d3777e15a56e",
+    "text": "Che cavallo carino - ed è proprio la cosa giusta da posizionare in questa stanza carina.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:15.237710Z"
+  },
+  "scripts.construction_kits.jack_amphora": {
+    "src_hash": "0393288deefc255d61fe9ba7fed3d82e",
+    "text": "Jack: Cerchi di sbarazzarti della tua spazzatura in casa mia? Sembra che io abbia bisogno di un tale... 'vase'?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:15.238582Z"
   }
 }

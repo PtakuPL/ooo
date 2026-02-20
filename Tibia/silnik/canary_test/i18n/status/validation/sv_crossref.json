@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T23:13:40.286348Z",
+  "checked_at": "2026-02-20T23:28:33.653495Z",
   "issues_total": 428,
   "issues_by_type": {
     "consistency_in_language": 13,
@@ -3557,15 +3557,6 @@
       "lang": "Hi!"
     },
     {
-      "key": "npc.simon_the_beggar.no_i_see",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "I see.",
-      "pl": "Rozumiem.",
-      "lang": "I see."
-    },
-    {
       "key": "npc.sister_of_jack.voice_3",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3807,6 +3798,15 @@
       "en": "Ok then.",
       "pl": "Ok wtedy.",
       "lang": "Ok then."
+    },
+    {
+      "key": "npc.yaman.say_14",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I see.",
+      "pl": "Rozumiem.",
+      "lang": "I see."
     }
   ],
   "length_ratio_issues": [

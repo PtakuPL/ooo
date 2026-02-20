@@ -74630,5 +74630,69 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T23:14:21.855348Z"
+  },
+  "scripts.level_door.msg_1": {
+    "src_hash": "227c86ee15812ee3777b6d25c989a4f6",
+    "text": "Numai cei vrednici pot trece.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:27.096034Z"
+  },
+  "scripts.coconut_shrimp_bake.msg_4": {
+    "src_hash": "68f3d6d9e553ef4f5ae98b79cbcc3d48",
+    "text": "Viteza de mers sub apă în timp ce purtați un {} a crescut timp de douăzeci și patru de ore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:39.410130Z"
+  },
+  "scripts.coconut_shrimp_bake.say_1": {
+    "src_hash": "fea6ea75f234ce4b728a71482f64a84f",
+    "text": "Hum.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:39.410318Z"
+  },
+  "scripts.commands.available_header": {
+    "src_hash": "2dd878ee55d738aa02e6b0b162d45708",
+    "text": "Comenzi disponibile:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:39.410602Z"
+  },
+  "scripts.concoctions.msg_1": {
+    "src_hash": "b8e5d8968743df38c0eb259199e70da0",
+    "text": "Ai câștigat {} minute de rezistență.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:39.411023Z"
+  },
+  "scripts.concoctions.msg_2": {
+    "src_hash": "aed19f55d060493f948e08ab2adb0ccf",
+    "text": "Toate perioadele de răcire a vrăjii au fost șterse.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:39.411387Z"
+  },
+  "scripts.construction_kits.amphora": {
+    "src_hash": "9177ef079f21142def99d8173cb81457",
+    "text": "Se pare că nu există loc mai bun pentru această amforă decât aici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:43.441924Z"
+  },
+  "scripts.construction_kits.globe": {
+    "src_hash": "2aad593ea503bfac41a52a9e29037d83",
+    "text": "Un astfel de glob ar trebui să fie în fiecare gospodărie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:25:43.442367Z"
   }
 }

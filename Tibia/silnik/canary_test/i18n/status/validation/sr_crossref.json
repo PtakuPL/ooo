@@ -4,10 +4,10 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T23:13:22.313950Z",
-  "issues_total": 106,
+  "checked_at": "2026-02-20T23:28:14.486807Z",
+  "issues_total": 107,
   "issues_by_type": {
-    "consistency_in_language": 10,
+    "consistency_in_language": 11,
     "pl_reference_missing_translation": 68,
     "length_ratio_crosscheck": 28
   },
@@ -114,6 +114,20 @@
         "npc:npc.eighty.greet_msg_1",
         "npc:npc.elgar.greet_msg_1",
         "npc:npc.eva.greet_msg_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Good bye traveller and enjoy your stay on Rookgaard.",
+      "variants": [
+        "Збогом путниче и уживајте у боравку на Rookgaard.",
+        "Збогом путниче и уживајте у боравку на Роокгаард."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.carlos.walkaway_msg_1",
+        "server:data.otservbr.global.npc.carlos.L243.1101"
       ]
     },
     {

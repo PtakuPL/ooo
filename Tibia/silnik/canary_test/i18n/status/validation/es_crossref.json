@@ -1,13 +1,13 @@
 {
   "lang": "es",
-  "coverage_pct": 85.4,
+  "coverage_pct": 85.5,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T19:47:02.713637Z",
-  "issues_total": 518,
+  "checked_at": "2026-02-20T20:04:39.818828Z",
+  "issues_total": 517,
   "issues_by_type": {
-    "consistency_in_language": 73,
+    "consistency_in_language": 72,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 45
   },
@@ -374,22 +374,6 @@
         "items:item.12699.name",
         "items:item.28525.name",
         "items:item.28526.name"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "dead deepling spellsinger",
-      "variants": [
-        "cantante de hechizos profundo muerto",
-        "deepling spellsinger muerto"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "items:item.13771.name",
-        "items:item.13772.name",
-        "items:item.13773.name",
-        "items:item.13774.name"
       ]
     },
     {

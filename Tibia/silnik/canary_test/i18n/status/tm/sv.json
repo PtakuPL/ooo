@@ -34430,5 +34430,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:53:19.388266Z"
+  },
+  "npc.myra.say_33": {
+    "src_hash": "fb1bdce2ee62f051a30bbc4dd6761f3a",
+    "text": "Vill du att jag ska upprepa uppgiftskraven då?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.687188Z"
+  },
+  "npc.myra.say_36": {
+    "src_hash": "fb1bdce2ee62f051a30bbc4dd6761f3a",
+    "text": "Vill du att jag ska upprepa uppgiftskraven då?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.687819Z"
+  },
+  "npc.myra.say_39": {
+    "src_hash": "fb1bdce2ee62f051a30bbc4dd6761f3a",
+    "text": "Vill du att jag ska upprepa uppgiftskraven då?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.688313Z"
+  },
+  "npc.myra.say_42": {
+    "src_hash": "fb1bdce2ee62f051a30bbc4dd6761f3a",
+    "text": "Vill du att jag ska upprepa uppgiftskraven då?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.688939Z"
+  },
+  "npc.myra.say_45": {
+    "src_hash": "fb1bdce2ee62f051a30bbc4dd6761f3a",
+    "text": "Vill du att jag ska upprepa uppgiftskraven då?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.689544Z"
+  },
+  "npc.myra.say_9": {
+    "src_hash": "fb1bdce2ee62f051a30bbc4dd6761f3a",
+    "text": "Vill du att jag ska upprepa uppgiftskraven då?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.690250Z"
+  },
+  "npc.nah_bob.multi_2": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, det lät nästan som ett hälsningsord. Människor - söta de är!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.692713Z"
+  },
+  "npc.nah_bob.say_1": {
+    "src_hash": "53f59a9ef75a585e8d262642a3166d45",
+    "text": "Oj! En människa! Det här är ingen plats för dig, |PLAYERNAME|. Gå och spela någon annanstans.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.693272Z"
+  },
+  "npc.nah_bob.say_4": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Du har ingen kaka som jag vill ha.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.693684Z"
+  },
+  "npc.nelly.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.699277Z"
+  },
+  "npc.nelly.voice_1": {
+    "src_hash": "600057e0b95043563622fa58cb570b47",
+    "text": "Välkommen till posten!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.699629Z"
+  },
+  "npc.nielson.stdmod_3": {
+    "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
+    "text": "Ha en trevlig resa!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.700473Z"
+  },
+  "npc.nielson.stdmod_4": {
+    "src_hash": "8f3b71da455041c184184618a35b40fb",
+    "text": "Du bör inte missa upplevelsen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.700871Z"
+  },
+  "npc.ninev.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.704111Z"
+  },
+  "npc.ninev.stdmod_10": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Håll din äventyrarsten väl.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.704629Z"
+  },
+  "npc.ninev.stdmod_11": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vill du byta ut din äventyrarsten gratis?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.705053Z"
+  },
+  "npc.ninev.stdmod_12": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:07:19.705440Z"
   }
 }

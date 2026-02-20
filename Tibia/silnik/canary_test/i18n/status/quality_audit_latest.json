@@ -1,17 +1,73 @@
 {
-  "timestamp": "2026-02-20T19:50:44.664492Z",
+  "timestamp": "2026-02-20T19:52:02.760123Z",
   "checked_entries": 100,
-  "issues_found": 49,
+  "issues_found": 52,
   "issues_by_type": {
-    "artifact_token": 44,
-    "identical_to_en_exempt": 4,
-    "identical_to_en": 5,
-    "suspicious_log_high": 98,
-    "suspicious_log_critical": 3,
-    "suspicious_rejected_critical": 127,
+    "identical_to_en": 4,
+    "identical_to_en_exempt": 5,
+    "artifact_token": 48,
+    "suspicious_log_critical": 41,
+    "suspicious_log_high": 28,
+    "suspicious_rejected_critical": 125,
     "suspicious_rejected_high": 34
   },
   "issues": [
+    {
+      "key": "monster.the_pale_count.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Pale Count",
+      "translated": "The Pale Count"
+    },
+    {
+      "key": "monster.the_pale_count.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "The Pale Count",
+      "translated": "The Pale Count"
+    },
+    {
+      "key": "monster.sir_valorcrest.name",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "monster.sir_valorcrest.desc",
+      "lang": "pl",
+      "type": "identical_to_en",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.say_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
+    },
     {
       "key": "npc.captain_haba_open_sea.straight_5",
       "lang": "es",
@@ -207,41 +263,6 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "monster.the_old_widow.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "The Old Widow",
-      "translated": "The Old Widow"
-    },
-    {
-      "key": "monster.the_pale_count.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "The Pale Count",
-      "translated": "The Pale Count"
-    },
-    {
-      "key": "monster.the_pale_count.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "The Pale Count",
-      "translated": "The Pale Count"
-    },
-    {
-      "key": "monster.sir_valorcrest.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
-    },
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest"
     },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",

@@ -78638,5 +78638,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:55:45.196917Z"
+  },
+  "item.39721.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:02:10.580902Z"
+  },
+  "item.39722.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:02:10.581200Z"
+  },
+  "item.4.name": {
+    "src_hash": "c95e3dd9ec9230450a558cb17be2106d",
+    "text": "fango",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:02:10.587959Z"
+  },
+  "item.401.name": {
+    "src_hash": "821f03288846297c2cf43c34766a38f7",
+    "text": "libro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:02:10.589653Z"
+  },
+  "item.4060.name": {
+    "src_hash": "a643f0c67dc8358d762c267269f52f9f",
+    "text": "statua",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:02:10.598226Z"
+  },
+  "item.407.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "erba",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:02:10.599823Z"
   }
 }

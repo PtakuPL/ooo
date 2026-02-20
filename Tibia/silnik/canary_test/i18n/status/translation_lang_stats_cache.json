@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T19:42:57.689146Z",
+  "timestamp": "2026-02-20T19:43:36.919419Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1975,
-  "file_cache_misses": 1,
+  "cache_hits": 49,
+  "cache_misses": 3,
+  "file_cache_hits": 1973,
+  "file_cache_misses": 3,
   "langs": {
     "ar": {
       "sig": [
@@ -15987,7 +15987,7 @@
         [
           "libs.json",
           1,
-          1771313957222468246,
+          1771616599623138057,
           6892
         ],
         [
@@ -16346,7 +16346,7 @@
         "libs.json": {
           "sig": [
             1,
-            1771313957222468246,
+            1771616599623138057,
             6892
           ],
           "row": {
@@ -26931,8 +26931,8 @@
         [
           "globalevents.json",
           1,
-          1771074895273032359,
-          593
+          1771616611206275913,
+          641
         ],
         [
           "html.json",
@@ -27096,13 +27096,13 @@
         "language_name": "Rumuński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 23109,
+        "translated_keys": 23112,
         "english_copy_keys": 2348,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 43.13,
         "server_keys": 49731,
-        "server_translated": 21835,
+        "server_translated": 21838,
         "server_pct": 43.91,
         "client_keys": 3855,
         "client_translated": 1274,
@@ -27266,12 +27266,12 @@
         "globalevents.json": {
           "sig": [
             1,
-            1771074895273032359,
-            593
+            1771616611206275913,
+            641
           ],
           "row": {
             "total_reference_keys": 5,
-            "translated_keys": 2,
+            "translated_keys": 5,
             "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0
@@ -27708,7 +27708,7 @@
         [
           "example_merchant.json",
           1,
-          1771323431807843072,
+          1771616604082256158,
           1598
         ],
         [
@@ -28035,7 +28035,7 @@
         "example_merchant.json": {
           "sig": [
             1,
-            1771323431807843072,
+            1771616604082256158,
             1598
           ],
           "row": {

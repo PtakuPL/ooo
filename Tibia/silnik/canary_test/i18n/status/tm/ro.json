@@ -71246,5 +71246,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T19:42:19.712389Z"
+  },
+  "globalevents.online_record": {
+    "src_hash": "61601b90ebd05b9654009190617e9037",
+    "text": "Record nou: %s jucători sunt conectați.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:43:31.206840Z"
+  },
+  "globalevents.save_interval.warning": {
+    "src_hash": "21c66b9893b15898ff500b68821832c7",
+    "text": "Serverul va salva toate conturile în %s secunde. Este posibil să întârzieți sau să înghețați timp de 5 secunde, vă rugăm să găsiți un loc sigur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:43:31.207893Z"
+  },
+  "globalevents.server_save.warning": {
+    "src_hash": "7f9ea16a22ee0dc335a63fb281403e42",
+    "text": "Serverul salvează jocul în %s minute(e). Vă rugăm să deconectați-vă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T19:43:31.208322Z"
   }
 }

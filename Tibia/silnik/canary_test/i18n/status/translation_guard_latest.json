@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-20T19:42:20.957802Z",
-  "cycle": 118,
+  "timestamp": "2026-02-20T19:43:32.374393Z",
+  "cycle": 119,
   "language": "ro",
-  "json_file": "example_merchant.json",
-  "translated": 9,
+  "json_file": "globalevents.json",
+  "translated": 3,
   "placeholders": 0,
-  "guard_fail": 1,
+  "guard_fail": 0,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 5
+  "strict_skipped_done": 2
 }

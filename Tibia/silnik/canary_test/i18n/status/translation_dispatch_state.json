@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-20T19:42:14.403414Z",
-  "cycle_counter": 6158,
-  "last_target_key": "ro:example_merchant.json",
-  "last_pending_total": 10,
+  "timestamp": "2026-02-20T19:43:25.806659Z",
+  "cycle_counter": 6161,
+  "last_target_key": "ro:globalevents.json",
+  "last_pending_total": 3,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 183,
@@ -10,7 +10,7 @@
   "skipped_backoff": 7,
   "skipped_guard_fail": 2,
   "guard_fail_blacklist": {
-    "ro:monsters.json": 6159,
+    "ro:monsters.json": 6169,
     "pl:spells.json": 6163
   },
   "tier_config": {
@@ -37,7 +37,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 118,
+  "cache_cycle": 119,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -153,7 +153,10 @@
     "ro:client.json": 0,
     "ro:npclib.json": 0,
     "it:php.json": 0,
-    "ru:modules.json": 0
+    "ru:modules.json": 0,
+    "ro:example_merchant.json": 0,
+    "it:libs.json": 1,
+    "ru:example_merchant.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -207,9 +210,9 @@
     "lang_completion": {
       "pl": 87.82,
       "es": 84.79,
-      "ru": 50.35,
-      "ro": 43.11,
-      "it": 52.15,
+      "ru": 50.37,
+      "ro": 43.13,
+      "it": 52.16,
       "sr": 45.44,
       "sv": 28.65
     }

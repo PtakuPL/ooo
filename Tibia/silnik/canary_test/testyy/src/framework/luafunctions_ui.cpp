@@ -23,7 +23,9 @@
  // Split from luafunctions.cpp to avoid MSVC ICE C1001 caused by too many
  // template instantiations (luabinder.h) in a single translation unit.
  // This file contains UI widget, layout, text edit, QR code, shader,
- // particle, network, and sound Lua bindings.
+ // and particle Lua bindings.
+ // Network bindings are in luafunctions_net.cpp.
+ // Sound bindings are in luafunctions_sound.cpp.
 
 #include <framework/luaengine/luainterface.h>
 
@@ -34,23 +36,6 @@
 #include "framework/graphics/shadermanager.h"
 #include "framework/ui/ui.h"
 #endif
-
-#ifdef FRAMEWORK_SOUND
-#include <framework/sound/combinedsoundsource.h>
-#include <framework/sound/soundchannel.h>
-#include <framework/sound/soundeffect.h>
-#include <framework/sound/soundmanager.h>
-#include <framework/sound/soundsource.h>
-#include <framework/sound/streamsoundsource.h>
-#endif
-
-#ifdef FRAMEWORK_NET
-#include <framework/net/protocol.h>
-#include <framework/net/server.h>
-#endif
-
-#include "net/inputmessage.h"
-#include "net/outputmessage.h"
 
 void registerLuaFunctions_UI()
 {
@@ -515,131 +500,11 @@ void registerLuaFunctions_UI()
     g_lua.bindClassMemberFunction<UIParticles>("clearEffects", &UIParticles::clearEffects);
 #endif
 
-#ifdef FRAMEWORK_NET
-#ifndef __EMSCRIPTEN__
-    // Server
-    g_lua.registerClass<Server>();
-    g_lua.bindClassStaticFunction<Server>("create", &Server::create);
-    g_lua.bindClassMemberFunction<Server>("close", &Server::close);
-    g_lua.bindClassMemberFunction<Server>("isOpen", &Server::isOpen);
-    g_lua.bindClassMemberFunction<Server>("acceptNext", &Server::acceptNext);
-#endif
+    // Network bindings are in luafunctions_net.cpp
+    extern void registerLuaFunctions_Net();
+    registerLuaFunctions_Net();
 
-    // Connection
-#ifdef __EMSCRIPTEN__
-    g_lua.registerClass<WebConnection>();
-    g_lua.bindClassMemberFunction<WebConnection>("getIp", &WebConnection::getIp);
-#else
-    g_lua.registerClass<Connection>();
-    g_lua.bindClassMemberFunction<Connection>("getIp", &Connection::getIp);
-#endif
-
-    // Protocol
-    g_lua.registerClass<Protocol>();
-    g_lua.bindClassStaticFunction<Protocol>("create", [] { return std::make_shared<Protocol>(); });
-    g_lua.bindClassMemberFunction<Protocol>("connect", &Protocol::connect);
-    g_lua.bindClassMemberFunction<Protocol>("disconnect", &Protocol::disconnect);
-    g_lua.bindClassMemberFunction<Protocol>("isConnected", &Protocol::isConnected);
-    g_lua.bindClassMemberFunction<Protocol>("isConnecting", &Protocol::isConnecting);
-    g_lua.bindClassMemberFunction<Protocol>("getConnection", &Protocol::getConnection);
-    g_lua.bindClassMemberFunction<Protocol>("setConnection", &Protocol::setConnection);
-    g_lua.bindClassMemberFunction<Protocol>("send", &Protocol::send);
-    g_lua.bindClassMemberFunction<Protocol>("recv", &Protocol::recv);
-    g_lua.bindClassMemberFunction<Protocol>("setXteaKey", &Protocol::setXteaKey);
-    g_lua.bindClassMemberFunction<Protocol>("getXteaKey", &Protocol::getXteaKey);
-    g_lua.bindClassMemberFunction<Protocol>("generateXteaKey", &Protocol::generateXteaKey);
-    g_lua.bindClassMemberFunction<Protocol>("enableXteaEncryption", &Protocol::enableXteaEncryption);
-    g_lua.bindClassMemberFunction<Protocol>("enabledSequencedPackets", &Protocol::enabledSequencedPackets);
-    g_lua.bindClassMemberFunction<Protocol>("enableChecksum", &Protocol::enableChecksum);
-
-    // InputMessage
-    g_lua.registerClass<InputMessage>();
-    g_lua.bindClassStaticFunction<InputMessage>("create", [] { return std::make_shared<InputMessage>(); });
-    g_lua.bindClassMemberFunction<InputMessage>("setBuffer", &InputMessage::setBuffer);
-    g_lua.bindClassMemberFunction<InputMessage>("getBuffer", &InputMessage::getBuffer);
-    g_lua.bindClassMemberFunction<InputMessage>("skipBytes", &InputMessage::skipBytes);
-    g_lua.bindClassMemberFunction<InputMessage>("getU8", &InputMessage::getU8);
-    g_lua.bindClassMemberFunction<InputMessage>("getU16", &InputMessage::getU16);
-    g_lua.bindClassMemberFunction<InputMessage>("getU32", &InputMessage::getU32);
-    g_lua.bindClassMemberFunction<InputMessage>("getU64", &InputMessage::getU64);
-    g_lua.bindClassMemberFunction<InputMessage>("getString", &InputMessage::getString);
-    g_lua.bindClassMemberFunction<InputMessage>("peekU8", &InputMessage::peekU8);
-    g_lua.bindClassMemberFunction<InputMessage>("peekU16", &InputMessage::peekU16);
-    g_lua.bindClassMemberFunction<InputMessage>("peekU32", &InputMessage::peekU32);
-    g_lua.bindClassMemberFunction<InputMessage>("peekU64", &InputMessage::peekU64);
-    g_lua.bindClassMemberFunction<InputMessage>("decryptRsa", &InputMessage::decryptRsa);
-    g_lua.bindClassMemberFunction<InputMessage>("getReadSize", &InputMessage::getReadSize);
-    g_lua.bindClassMemberFunction<InputMessage>("getUnreadSize", &InputMessage::getUnreadSize);
-    g_lua.bindClassMemberFunction<InputMessage>("getMessageSize", &InputMessage::getMessageSize);
-    g_lua.bindClassMemberFunction<InputMessage>("eof", &InputMessage::eof);
-
-    // OutputMessage
-    g_lua.registerClass<OutputMessage>();
-    g_lua.bindClassStaticFunction<OutputMessage>("create", [] { return std::make_shared<OutputMessage>(); });
-    g_lua.bindClassMemberFunction<OutputMessage>("setBuffer", &OutputMessage::setBuffer);
-    g_lua.bindClassMemberFunction<OutputMessage>("getBuffer", &OutputMessage::getBuffer);
-    g_lua.bindClassMemberFunction<OutputMessage>("reset", &OutputMessage::reset);
-    g_lua.bindClassMemberFunction<OutputMessage>("addU8", &OutputMessage::addU8);
-    g_lua.bindClassMemberFunction<OutputMessage>("addU16", &OutputMessage::addU16);
-    g_lua.bindClassMemberFunction<OutputMessage>("addU32", &OutputMessage::addU32);
-    g_lua.bindClassMemberFunction<OutputMessage>("addU64", &OutputMessage::addU64);
-    g_lua.bindClassMemberFunction<OutputMessage>("addString", &OutputMessage::addString);
-    g_lua.bindClassMemberFunction<OutputMessage>("addPaddingBytes", &OutputMessage::addPaddingBytes);
-    g_lua.bindClassMemberFunction<OutputMessage>("encryptRsa", &OutputMessage::encryptRsa);
-    g_lua.bindClassMemberFunction<OutputMessage>("getMessageSize", &OutputMessage::getMessageSize);
-    g_lua.bindClassMemberFunction<OutputMessage>("setMessageSize", &OutputMessage::setMessageSize);
-    g_lua.bindClassMemberFunction<OutputMessage>("getWritePos", &OutputMessage::getWritePos);
-    g_lua.bindClassMemberFunction<OutputMessage>("setWritePos", &OutputMessage::setWritePos);
-#endif
-
-#ifdef FRAMEWORK_SOUND
-    // SoundManager
-    g_lua.registerSingletonClass("g_sounds");
-    g_lua.bindSingletonFunction("g_sounds", "preload", &SoundManager::preload, &g_sounds);
-    g_lua.bindSingletonFunction("g_sounds", "play", &SoundManager::play, &g_sounds);
-    g_lua.bindSingletonFunction("g_sounds", "getChannel", &SoundManager::getChannel, &g_sounds);
-    g_lua.bindSingletonFunction("g_sounds", "stopAll", &SoundManager::stopAll, &g_sounds);
-    g_lua.bindSingletonFunction("g_sounds", "enableAudio", &SoundManager::enableAudio, &g_sounds);
-    g_lua.bindSingletonFunction("g_sounds", "disableAudio", &SoundManager::disableAudio, &g_sounds);
-    g_lua.bindSingletonFunction("g_sounds", "setAudioEnabled", &SoundManager::setAudioEnabled, &g_sounds);
-    g_lua.bindSingletonFunction("g_sounds", "isAudioEnabled", &SoundManager::isAudioEnabled, &g_sounds);
-    g_lua.bindSingletonFunction("g_sounds", "setPosition", &SoundManager::setPosition, &g_sounds);
-    g_lua.bindSingletonFunction("g_sounds", "createSoundEffect", &SoundManager::createSoundEffect, &g_sounds);
-    g_lua.bindSingletonFunction("g_sounds", "isEaxEnabled", &SoundManager::isEaxEnabled, &g_sounds);
-    g_lua.bindSingletonFunction("g_sounds", "loadClientFiles", &SoundManager::loadClientFiles, &g_sounds);
-    g_lua.bindSingletonFunction("g_sounds", "getAudioFileNameById", &SoundManager::getAudioFileNameById, &g_sounds);
-
-    g_lua.registerClass<SoundSource>();
-    g_lua.bindClassStaticFunction<SoundSource>("create", [] { return std::make_shared<SoundSource>(); });
-    g_lua.bindClassMemberFunction<SoundSource>("setName", &SoundSource::setName);
-    g_lua.bindClassMemberFunction<SoundSource>("play", &SoundSource::play);
-    g_lua.bindClassMemberFunction<SoundSource>("stop", &SoundSource::stop);
-    g_lua.bindClassMemberFunction<SoundSource>("isPlaying", &SoundSource::isPlaying);
-    g_lua.bindClassMemberFunction<SoundSource>("setGain", &SoundSource::setGain);
-    g_lua.bindClassMemberFunction<SoundSource>("setPosition", &SoundSource::setPosition);
-    g_lua.bindClassMemberFunction<SoundSource>("setVelocity", &SoundSource::setVelocity);
-    g_lua.bindClassMemberFunction<SoundSource>("setFading", &SoundSource::setFading);
-    g_lua.bindClassMemberFunction<SoundSource>("setLooping", &SoundSource::setLooping);
-    g_lua.bindClassMemberFunction<SoundSource>("setRelative", &SoundSource::setRelative);
-    g_lua.bindClassMemberFunction<SoundSource>("setReferenceDistance", &SoundSource::setReferenceDistance);
-    g_lua.bindClassMemberFunction<SoundSource>("setEffect", &SoundSource::setEffect);
-    g_lua.bindClassMemberFunction<SoundSource>("removeEffect", &SoundSource::removeEffect);
-    g_lua.registerClass<CombinedSoundSource, SoundSource>();
-    g_lua.registerClass<StreamSoundSource, SoundSource>();
-
-    g_lua.registerClass<SoundEffect>();
-    g_lua.bindClassMemberFunction<SoundEffect>("setPreset", &SoundEffect::setPreset);
-
-    g_lua.registerClass<SoundChannel>();
-    g_lua.bindClassMemberFunction<SoundChannel>("play", &SoundChannel::play);
-    g_lua.bindClassMemberFunction<SoundChannel>("stop", &SoundChannel::stop);
-    g_lua.bindClassMemberFunction<SoundChannel>("enqueue", &SoundChannel::enqueue);
-    g_lua.bindClassMemberFunction<SoundChannel>("enable", &SoundChannel::enable);
-    g_lua.bindClassMemberFunction<SoundChannel>("disable", &SoundChannel::disable);
-    g_lua.bindClassMemberFunction<SoundChannel>("setGain", &SoundChannel::setGain);
-    g_lua.bindClassMemberFunction<SoundChannel>("getGain", &SoundChannel::getGain);
-    g_lua.bindClassMemberFunction<SoundChannel>("setEnabled", &SoundChannel::setEnabled);
-    g_lua.bindClassMemberFunction<SoundChannel>("isEnabled", &SoundChannel::isEnabled);
-    g_lua.bindClassMemberFunction<SoundChannel>("getId", &SoundChannel::getId);
-#endif
+    // Sound bindings are in luafunctions_sound.cpp
+    extern void registerLuaFunctions_Sound();
+    registerLuaFunctions_Sound();
 }

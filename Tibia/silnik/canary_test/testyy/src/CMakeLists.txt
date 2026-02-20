@@ -171,6 +171,8 @@ if (MSVC)
       framework/luafunctions_graphics.cpp
       framework/luafunctions_gfx_singletons.cpp
       framework/luafunctions_ui.cpp
+      framework/luafunctions_net.cpp
+      framework/luafunctions_sound.cpp
       client/luafunctions.cpp
       PROPERTIES
         COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer- /d2FH4- /d2notypeopt /permissive-"
@@ -702,6 +704,8 @@ set(SOURCE_FILES
         framework/luafunctions_graphics.cpp
         framework/luafunctions_gfx_singletons.cpp
         framework/luafunctions_ui.cpp
+        framework/luafunctions_net.cpp
+        framework/luafunctions_sound.cpp
         framework/net/connection.cpp
         framework/net/inputmessage.cpp
         framework/net/outputmessage.cpp

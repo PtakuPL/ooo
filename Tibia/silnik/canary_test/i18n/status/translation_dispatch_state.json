@@ -1,26 +1,26 @@
 {
-  "timestamp": "2026-02-20T22:10:44.458196Z",
-  "cycle_counter": 6501,
-  "last_target_key": "ro:npc.json",
-  "last_pending_total": 7519,
+  "timestamp": "2026-02-20T22:11:21.808949Z",
+  "cycle_counter": 6504,
+  "last_target_key": "ro:items.json",
+  "last_pending_total": 8759,
   "last_tier": 2,
-  "last_cat_priority": 0,
+  "last_cat_priority": 1,
   "candidates_count": 181,
   "active_candidates_count": 166,
   "skipped_backoff": 10,
   "skipped_guard_fail": 5,
   "guard_fail_blacklist": {
-    "pl:items.json": 6527,
-    "pl:npc.json": 6520,
-    "es:items.json": 6521,
-    "es:server.json": 6516,
-    "ro:monsters.json": 6511
+    "pl:items.json": 6530,
+    "pl:npc.json": 6523,
+    "es:items.json": 6524,
+    "es:server.json": 6519,
+    "ro:monsters.json": 6514
   },
   "guard_fail_blocked_count": 5,
   "guard_fail_blocked_preview": [
     {
       "target": "pl:items.json",
-      "until_cycle": 6527,
+      "until_cycle": 6530,
       "remaining_cycles": 26,
       "guard_fail_rate": 0.9976,
       "guard_fail": 4080,
@@ -31,7 +31,7 @@
     },
     {
       "target": "es:items.json",
-      "until_cycle": 6521,
+      "until_cycle": 6524,
       "remaining_cycles": 20,
       "guard_fail_rate": 0.9646,
       "guard_fail": 2614,
@@ -42,7 +42,7 @@
     },
     {
       "target": "es:server.json",
-      "until_cycle": 6516,
+      "until_cycle": 6519,
       "remaining_cycles": 15,
       "guard_fail_rate": 0.9535,
       "guard_fail": 205,
@@ -53,7 +53,7 @@
     },
     {
       "target": "pl:npc.json",
-      "until_cycle": 6520,
+      "until_cycle": 6523,
       "remaining_cycles": 19,
       "guard_fail_rate": 0.9416,
       "guard_fail": 2420,
@@ -64,7 +64,7 @@
     },
     {
       "target": "ro:monsters.json",
-      "until_cycle": 6511,
+      "until_cycle": 6514,
       "remaining_cycles": 10,
       "guard_fail_rate": 0.8667,
       "guard_fail": 130,
@@ -98,7 +98,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 12,
+  "cache_cycle": 13,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -276,7 +276,7 @@
       "pl": 87.83,
       "es": 84.88,
       "ru": 50.37,
-      "ro": 43.58,
+      "ro": 43.61,
       "it": 52.48,
       "sr": 45.5,
       "sv": 29.0

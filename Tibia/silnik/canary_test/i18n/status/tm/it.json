@@ -80694,5 +80694,53 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-20T22:06:04.658798Z"
+  },
+  "item.6797.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "entrata",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:11:13.918714Z"
+  },
+  "item.6798.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "entrata",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:11:13.919010Z"
+  },
+  "item.6799.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "entrata",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:11:13.919296Z"
+  },
+  "item.6800.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "entrata",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:11:13.919708Z"
+  },
+  "item.6801.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "entrata",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:11:13.919986Z"
+  },
+  "item.6802.name": {
+    "src_hash": "2a20afe023299a12bce40984ddb2a023",
+    "text": "entrata",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:11:13.920214Z"
   }
 }

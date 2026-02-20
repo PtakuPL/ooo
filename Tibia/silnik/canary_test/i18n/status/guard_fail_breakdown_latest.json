@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T22:10:56.735801Z",
-  "window_start_utc": "2026-02-20T21:10:56.012817Z",
-  "window_end_utc": "2026-02-20T22:10:56.012817Z",
+  "timestamp": "2026-02-20T22:12:10.470592Z",
+  "window_start_utc": "2026-02-20T21:12:09.638605Z",
+  "window_end_utc": "2026-02-20T22:12:09.638605Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,18 +9,18 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 170,
-  "rejected_entries_raw": 349,
-  "suspicious_entries": 3567,
-  "suspicious_entries_raw": 25162,
-  "guard_fail_entries": 114,
-  "guard_fail_sum": 7541,
+  "rejected_entries_raw": 343,
+  "suspicious_entries": 3546,
+  "suspicious_entries_raw": 28285,
+  "guard_fail_entries": 113,
+  "guard_fail_sum": 7519,
   "by_type": {
     "identical_to_en": 149,
-    "mixed_language": 7,
     "word_salad": 7,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7,
-    "contains_tibia_proper_noun": 7
+    "contains_tibia_proper_noun": 7,
+    "mixed_language": 7
   },
   "by_source": {
     "google_translate": 170
@@ -34,12 +34,12 @@
     "sv": 15
   },
   "by_category": {
-    "spells.json": 33,
     "npc.json": 4,
     "items.json": 28,
     "quests.json": 3,
     "scripts.json": 14,
     "server.json": 17,
+    "spells.json": 33,
     "books.json": 1,
     "otclient_modules.json": 30,
     "monsters.json": 30,
@@ -56,10 +56,6 @@
       "count": 149
     },
     {
-      "type": "mixed_language",
-      "count": 7
-    },
-    {
       "type": "word_salad",
       "count": 7
     },
@@ -74,18 +70,13 @@
     {
       "type": "contains_tibia_proper_noun",
       "count": 7
+    },
+    {
+      "type": "mixed_language",
+      "count": 7
     }
   ],
   "top_keys": [
-    {
-      "key": "spell.quara_constrictor_electrify.name",
-      "count": 3,
-      "types": {
-        "mixed_language": 1,
-        "mixed_scripts": 1,
-        "cyrillic_latin_mix": 1
-      }
-    },
     {
       "key": "scripts.action_cushion.say_1",
       "count": 3,
@@ -117,26 +108,21 @@
       }
     },
     {
+      "key": "spell.quara_constrictor_electrify.name",
+      "count": 3,
+      "types": {
+        "mixed_scripts": 1,
+        "cyrillic_latin_mix": 1,
+        "mixed_language": 1
+      }
+    },
+    {
       "key": "spell.prince_drazzak_paladin.name",
       "count": 3,
       "types": {
         "contains_tibia_proper_noun": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "spell.iksyapunac_wave.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.mitmahseer_wave.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
       }
     },
     {
@@ -222,6 +208,20 @@
     },
     {
       "key": "scripts.actions_lever_barrel.say_1",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "scripts.actions_resonance_chamber.say_1",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "otclient_modules.addserver_otui.tr_4",
       "count": 2,
       "types": {
         "identical_to_en": 2

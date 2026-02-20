@@ -1,8 +1,8 @@
 {
-  "total_cycles": 64,
+  "total_cycles": 65,
   "mode": "AUTO_TRANSLATE",
-  "category": "es",
-  "last_update": "2026-02-20T19:40:23.915586",
+  "category": "it",
+  "last_update": "2026-02-20T19:42:00.278350",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,135 +26,14 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "es",
-    "json_file": "monsters.json",
-    "keys_to_translate": 800,
+    "language": "it",
+    "json_file": "npc.json",
+    "keys_to_translate": 3738,
     "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 30,
-    "recent_examples": [
-      {
-        "key": "monster.mezlon_the_defiler_stop.name",
-        "en": "Mezlon The Defiler",
-        "translated": "Mezlon defiler",
-        "source": "tm"
-      },
-      {
-        "key": "monster.mezlon_the_defiler_stop.desc",
-        "en": "Mezlon The Defiler",
-        "translated": "Mezlon defiler",
-        "source": "tm"
-      },
-      {
-        "key": "monster.eliz_the_unyielding.name",
-        "en": "Eliz the Unyielding",
-        "translated": "Eliz unyielding",
-        "source": "tm"
-      },
-      {
-        "key": "monster.eliz_the_unyielding.desc",
-        "en": "Eliz the Unyielding",
-        "translated": "Eliz unyielding",
-        "source": "tm"
-      },
-      {
-        "key": "monster.feeble_glooth_horror.desc",
-        "en": "feeble glooth horror",
-        "translated": "Feeble Glooth Horror",
-        "source": "tm"
-      },
-      {
-        "key": "monster.paiz_the_pauperizer.name",
-        "en": "Paiz the Pauperizer",
-        "translated": "Paiz pauperizer",
-        "source": "tm"
-      },
-      {
-        "key": "monster.paiz_the_pauperizer.desc",
-        "en": "Paiz the Pauperizer",
-        "translated": "Paiz pauperizer",
-        "source": "tm"
-      },
-      {
-        "key": "monster.the_pit_lord.voice_2",
-        "en": "I'LL GET YOU ALL!",
-        "translated": "\u00a1LOS CONSEGUIR\u00c9 A TODOS!",
-        "source": "tm"
-      },
-      {
-        "key": "monster.deathbringer.voice_2",
-        "en": "YOU ALL WILL DIE!",
-        "translated": "\u00a1TODOS MORIR\u00c9IS!",
-        "source": "tm"
-      },
-      {
-        "key": "monster.darakan_the_executioner.name",
-        "en": "Darakan the Executioner",
-        "translated": "Darakan executioner",
-        "source": "tm"
-      },
-      {
-        "key": "monster.darakan_the_executioner.desc",
-        "en": "Darakan the Executioner",
-        "translated": "Darakan executioner",
-        "source": "tm"
-      },
-      {
-        "key": "monster.orcus_the_cruel.name",
-        "en": "Orcus the Cruel",
-        "translated": "Orcus cruel",
-        "source": "tm"
-      },
-      {
-        "key": "monster.orcus_the_cruel.desc",
-        "en": "Orcus the Cruel",
-        "translated": "Orcus cruel",
-        "source": "tm"
-      },
-      {
-        "key": "monster.colerian_the_barbarian.name",
-        "en": "Colerian the Barbarian",
-        "translated": "Colerian barbarian",
-        "source": "tm"
-      },
-      {
-        "key": "monster.colerian_the_barbarian.desc",
-        "en": "Colerian the Barbarian",
-        "translated": "Colerian barbarian",
-        "source": "tm"
-      },
-      {
-        "key": "monster.the_hairy_one.name",
-        "en": "The Hairy One",
-        "translated": "Hairy one",
-        "source": "tm"
-      },
-      {
-        "key": "monster.the_hairy_one.desc",
-        "en": "The Hairy One",
-        "translated": "Hairy one",
-        "source": "tm"
-      },
-      {
-        "key": "monster.kreebosh_the_exile.name",
-        "en": "Kreebosh the Exile",
-        "translated": "Kreebosh exile",
-        "source": "tm"
-      },
-      {
-        "key": "monster.kreebosh_the_exile.desc",
-        "en": "Kreebosh the Exile",
-        "translated": "Kreebosh exile",
-        "source": "tm"
-      },
-      {
-        "key": "monster.dracola.voice_2",
-        "en": "YOU ARE ALL DOOMED!",
-        "translated": "\u00a1EST\u00c1IS TODOS CONDENADOS!",
-        "source": "tm"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

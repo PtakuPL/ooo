@@ -1,131 +1,131 @@
 {
-  "timestamp": "2026-02-20T22:17:37.801346Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 51,
+  "timestamp": "2026-02-20T22:21:25.262748Z",
+  "language": "it",
+  "json_file": "monsters.json",
+  "translated": 30,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.dallheim.stdmod_38",
-      "en": "I'm not interested in such party tricks.",
-      "translated": "No me interesan esos trucos de fiesta.",
+      "key": "monster.zulazza_the_corruptor.name",
+      "en": "Zulazza the Corruptor",
+      "translated": "Zulazza The Corruptor",
       "source": "tm"
     },
     {
-      "key": "npc.elyen_ravenlock.voice_2",
-      "en": "<chants> Re Ha, Omrah, Tan Ra...",
-      "translated": "<cánticos> Re Ha, Omrah, Tan Ra...",
+      "key": "monster.zulazza_the_corruptor.desc",
+      "en": "Zulazza the Corruptor",
+      "translated": "Zulazza The Corruptor",
       "source": "tm"
     },
     {
-      "key": "npc.flickering_soul.say_11",
-      "en": "You haven't killed Malice yet. You haven't killed Hatred yet. You haven't killed Spite yet. You haven't killed Cruelty yet. You haven't killed Greed yet.",
-      "translated": "Aún no has matado a Malice. Aún no has matado al Odio. Aún no has matado a Rencor. Aún no has matado a Cruelty. Aún no has matado a Greed.",
+      "key": "monster.white_pale.name",
+      "en": "White Pale",
+      "translated": "White Pale",
       "source": "tm"
     },
     {
-      "key": "npc.flickering_soul.shards_remaining",
-      "en": "You haven't killed {1} yet.",
-      "translated": "Aún no has matado a {1}.",
+      "key": "monster.white_pale.desc",
+      "en": "White Pale",
+      "translated": "White Pale",
       "source": "tm"
     },
     {
-      "key": "npc.gamel.say_1",
-      "en": "I don't like the way you look. Help me boys!",
-      "translated": "No me gusta tu apariencia. ¡Ayúdenme muchachos!",
+      "key": "monster.the_welter.name",
+      "en": "The Welter",
+      "translated": "The Welter",
       "source": "tm"
     },
     {
-      "key": "npc.gnomargery.say_10",
-      "en": "You have not started that mission.",
-      "translated": "No has comenzado esa misión.",
+      "key": "monster.the_welter.desc",
+      "en": "The Welter",
+      "translated": "The Welter",
       "source": "tm"
     },
     {
-      "key": "npc.gnomargery.say_13",
-      "en": "You have not started that mission.",
-      "translated": "No has comenzado esa misión.",
+      "key": "monster.water_buffalo.name",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo",
       "source": "tm"
     },
     {
-      "key": "npc.gnomargery.say_16",
-      "en": "You have not started that mission.",
-      "translated": "No has comenzado esa misión.",
+      "key": "monster.hyaena.voice_2",
+      "en": "Hou hou hou!",
+      "translated": "Oh oh oh!",
       "source": "tm"
     },
     {
-      "key": "npc.gnomaticus.say_3",
-      "en": "Sorry you are not done yet.",
-      "translated": "Lo siento, aún no has terminado.",
+      "key": "monster.deepling_worker.voice_1",
+      "en": "Qjell afar gou jey!",
+      "translated": "Qjell lontano, gou jey!",
       "source": "tm"
     },
     {
-      "key": "npc.gnombold.say_12",
-      "en": "You have not started that mission.",
-      "translated": "No has comenzado esa misión.",
+      "key": "monster.feverish_citizen.name",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen",
       "source": "tm"
     },
     {
-      "key": "npc.gnombold.say_15",
-      "en": "You have not started that mission.",
-      "translated": "No has comenzado esa misión.",
+      "key": "monster.diabolic_imp.voice_2",
+      "en": "He he he.",
+      "translated": "Eh eh eh.",
       "source": "tm"
     },
     {
-      "key": "npc.gnomeral.say_11",
-      "en": "You are not done yet.",
-      "translated": "Aún no has terminado.",
+      "key": "monster.pigeon.voice_2",
+      "en": "Coo! Coooo! Coo! Cooo!",
+      "translated": "Coo! Coooo! Coo! Cooooo!",
       "source": "tm"
     },
     {
-      "key": "npc.gnomeral.say_16",
-      "en": "You are not done yet.",
-      "translated": "Aún no has terminado.",
+      "key": "monster.serpent_spawn.name",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn",
       "source": "tm"
     },
     {
-      "key": "npc.gnomeral.say_21",
-      "en": "You are not done yet.",
-      "translated": "Aún no has terminado.",
+      "key": "monster.mad_mage.name",
+      "en": "Mad Mage",
+      "translated": "Mad Mage",
       "source": "tm"
     },
     {
-      "key": "npc.gnomeral.say_5",
-      "en": "You are not done yet.",
-      "translated": "Aún no has terminado.",
+      "key": "monster.zevelon_duskbringer.name",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer",
       "source": "tm"
     },
     {
-      "key": "npc.gnomilly.say_12",
-      "en": "You have not started that mission.",
-      "translated": "No has comenzado esa misión.",
+      "key": "monster.zevelon_duskbringer.desc",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer",
       "source": "tm"
     },
     {
-      "key": "npc.gnomilly.say_15",
-      "en": "You have not started that mission.",
-      "translated": "No has comenzado esa misión.",
+      "key": "monster.weakened_shlorg.name",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg",
       "source": "tm"
     },
     {
-      "key": "npc.gorn.stdmod_17",
-      "en": "I hardly know the McRonalds.",
-      "translated": "Casi no conozco a los McRonald.",
+      "key": "monster.weakened_shlorg.desc",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg",
       "source": "tm"
     },
     {
-      "key": "npc.graubart.farewell_msg_1",
-      "en": "Good bye and don't forget me!",
-      "translated": "¡Adiós y no me olvides!",
+      "key": "monster.diblis_the_fair.name",
+      "en": "Diblis the Fair",
+      "translated": "Diblis The Fair",
       "source": "tm"
     },
     {
-      "key": "npc.grizzly_adams.say_22",
-      "en": "You haven't started any task yet.",
-      "translated": "Aún no has iniciado ninguna tarea.",
+      "key": "monster.diblis_the_fair.desc",
+      "en": "Diblis The Fair",
+      "translated": "Diblis The Fair",
       "source": "tm"
     }
   ]

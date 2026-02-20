@@ -38086,5 +38086,125 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:16:56.743480Z"
+  },
+  "item.10384.name": {
+    "src_hash": "816a83cc3d5fc8ccdedf8425b1ea8bff",
+    "text": "Заоан броня",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.547345Z"
+  },
+  "item.10385.name": {
+    "src_hash": "8d6eab3e3370e0ac3a313988aec4e8dc",
+    "text": "Заоан шлем",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.550013Z"
+  },
+  "item.10387.name": {
+    "src_hash": "411591a55c3dee7a454ad2f2113d03dd",
+    "text": "Заоан поножи",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.554039Z"
+  },
+  "item.10390.name": {
+    "src_hash": "4b0ec4077ef1975b9fbb4a9e27217e26",
+    "text": "Заоан меч",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.556598Z"
+  },
+  "item.10406.name": {
+    "src_hash": "0739dcaab1d75cf7d17d46c0bb618068",
+    "text": "Заоан алебарда",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.578764Z"
+  },
+  "item.10430.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "мёртвый террамите",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.602544Z"
+  },
+  "item.10431.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "мёртвый террамите",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.604445Z"
+  },
+  "item.10432.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "мёртвый террамите",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.606068Z"
+  },
+  "item.10433.name": {
+    "src_hash": "4c748764756b140ead5b58a89ccadbc3",
+    "text": "мёртвый террамите",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.607676Z"
+  },
+  "item.10439.name": {
+    "src_hash": "d0077c229b114793d62729c673aac609",
+    "text": "Заоан мантия",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.611780Z"
+  },
+  "item.10454.name": {
+    "src_hash": "c080e1743a7cb74bcb29daa20e48a5e3",
+    "text": "террамите поножи",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.639614Z"
+  },
+  "item.10798.name": {
+    "src_hash": "399dc4d6bd722ec8b0fe3fe2838a81fe",
+    "text": "ферумбрас кукла",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.666095Z"
+  },
+  "item.10799.name": {
+    "src_hash": "399dc4d6bd722ec8b0fe3fe2838a81fe",
+    "text": "ферумбрас кукла",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.667595Z"
+  },
+  "item.11589.name": {
+    "src_hash": "684ad0a9e1bfe5bb67f641f7d178c958",
+    "text": "мёртвый Глиттерскале",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.889570Z"
+  },
+  "item.11590.name": {
+    "src_hash": "441382a125ecbd1875837eaf0bcaaae2",
+    "text": "мёртвый Хеони",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:20:55.891601Z"
   }
 }

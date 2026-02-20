@@ -200,10 +200,11 @@ Wszystkie kroki 2A + 2B + 2C zaimplementować RAZEM w jednym commicie:
 | Priorytet | Krok | Zmiana | Szansa | Ryzyko | Czas |
 |-----------|------|--------|--------|--------|------|
 | ✅ Zrobione | Krok 1: Include'y | kod (.cpp) | — | — | — |
-| **1** | Krok 2A: Flagi `/d2FH4-` `/d2notypeopt` | CMakeLists.txt | ~60% | zerowe | 5 min |
+| **1** | Krok 2A: Flagi `/d2FH4-` `/d2notypeopt` `/permissive-` + `/diagnostics:caret` | CMakeLists.txt | ~60% | zerowe | 5 min |
 | **2** | Krok 2B: Fix `if constexpr` | luainterface.h | ~30% | zerowe | 5 min |
 | **3** | Krok 2C: Fold expressions | luabinder.h | ~90% | średnie | 30 min |
 | *backup* | Krok 2D: ClangCL / pin MSVC | workflow | ~100% | wysokie | 20 min |
+| *opcja* | Krok 2E: Ulepszenia CI (compile_commands, itp.) | workflow | — | zerowe | 5 min |
 
 **Łączna szansa naprawy przy 2A+2B+2C razem: ~95%.**
 
@@ -212,7 +213,8 @@ Wszystkie kroki 2A + 2B + 2C zaimplementować RAZEM w jednym commicie:
 ## Status realizacji
 
 - [x] Krok 1: Dodanie include'ów ✅ (commit: 2026-02-20, naprawiono C2139/C2665)
-- [ ] Krok 2A: Flagi `/d2FH4-` `/d2notypeopt` w CMakeLists.txt
+- [ ] Krok 2A: Flagi `/d2FH4-` `/d2notypeopt` `/permissive-` + `/diagnostics:caret` w CMakeLists.txt
 - [ ] Krok 2B: Fix `if constexpr` / `else if` w luainterface.h
 - [ ] Krok 2C: Refaktor rekurencyjnych szablonów → fold expressions w luabinder.h
 - [ ] Krok 2D: Backup — ClangCL lub pin MSVC (jeśli 2A-2C zawiodą)
+- [ ] Krok 2E: Opcjonalne ulepszenia CI

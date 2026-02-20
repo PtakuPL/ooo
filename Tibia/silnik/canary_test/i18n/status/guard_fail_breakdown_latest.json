@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-02-20T18:31:58.987400Z",
-  "window_start_utc": "2026-02-20T17:31:58.322204Z",
-  "window_end_utc": "2026-02-20T18:31:58.322204Z",
+  "timestamp": "2026-02-20T18:33:12.280718Z",
+  "window_start_utc": "2026-02-20T17:33:11.624941Z",
+  "window_end_utc": "2026-02-20T18:33:11.624941Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 207,
-  "rejected_entries_raw": 379,
+  "rejected_entries": 192,
+  "rejected_entries_raw": 368,
   "suspicious_entries": 3277,
-  "suspicious_entries_raw": 25556,
-  "guard_fail_entries": 123,
-  "guard_fail_sum": 7596,
+  "suspicious_entries_raw": 25135,
+  "guard_fail_entries": 121,
+  "guard_fail_sum": 7607,
   "by_type": {
-    "identical_to_en": 173,
-    "word_salad": 5,
+    "identical_to_en": 159,
+    "word_salad": 4,
     "fx_token": 3,
     "contains_tibia_proper_noun": 9,
     "mixed_language": 19,
@@ -24,19 +24,18 @@
     "cyrillic_latin_mix": 7
   },
   "by_source": {
-    "google_translate": 207
+    "google_translate": 192
   },
   "by_language": {
-    "es": 42,
-    "it": 33,
-    "ro": 78,
+    "es": 38,
+    "ro": 71,
     "pl": 47,
+    "it": 29,
     "ru": 7
   },
   "by_category": {
-    "otclient_modules.json": 22,
-    "scripts.json": 13,
     "npc.json": 4,
+    "otclient_modules.json": 18,
     "client.json": 4,
     "cpp.json": 6,
     "achievements.json": 5,
@@ -49,17 +48,18 @@
     "items.json": 24,
     "spells.json": 72,
     "quests.json": 1,
+    "scripts.json": 2,
     "server.json": 2,
     "monsters.json": 23
   },
   "by_severity": {
-    "CRITICAL": 178,
+    "CRITICAL": 163,
     "HIGH": 29
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 173
+      "count": 159
     },
     {
       "type": "mixed_language",
@@ -79,7 +79,7 @@
     },
     {
       "type": "word_salad",
-      "count": 5
+      "count": 4
     },
     {
       "type": "fx_token",
@@ -144,27 +144,6 @@
         "contains_tibia_proper_noun": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "scripts.action_cushion.say_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "scripts.actions_lever_barrel.say_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "scripts.actions_resonance_chamber.say_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
       }
     },
     {
@@ -233,6 +212,27 @@
     },
     {
       "key": "spell.urmahlullu_ring.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.quara_raider_icering.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.zamulosh_tp.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.bulltaur_ewave.name",
       "count": 2,
       "types": {
         "identical_to_en": 2

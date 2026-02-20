@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-02-20T21:39:14.109060Z",
+  "timestamp": "2026-02-20T21:40:28.948512Z",
   "checked_entries": 100,
   "issues_found": 29,
   "issues_by_type": {
     "identical_to_en": 13,
     "identical_to_en_exempt": 5,
     "artifact_token": 16,
-    "suspicious_log_high": 64,
-    "suspicious_log_critical": 41,
+    "suspicious_log_high": 100,
+    "suspicious_log_low": 1,
     "suspicious_rejected_critical": 143,
-    "suspicious_rejected_high": 10
+    "suspicious_rejected_high": 14
   },
   "issues": [
     {

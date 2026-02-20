@@ -154206,5 +154206,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T21:32:02.661866Z"
+  },
+  "item.14693.desc": {
+    "src_hash": "4473fdb957883a33fce958d5875b211a",
+    "text": "Fue pintado al estilo de Penciljack. Desafortunadamente, hay algunos píxeles azules en esta pieza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:40:22.721654Z"
+  },
+  "item.14695.desc": {
+    "src_hash": "e47a1e92ea70c289d123064c422f0b96",
+    "text": "Fue pintado al estilo de Lyxoph.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:40:22.721973Z"
+  },
+  "item.14697.desc": {
+    "src_hash": "d91347f4625ec77a00bde99f87ac0d82",
+    "text": "Fue pintado al estilo de Lyxoph. Desafortunadamente, hay algunos píxeles azules en esta pieza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:40:22.722450Z"
+  },
+  "item.14750.desc": {
+    "src_hash": "8c661f7846c625d687a687bf6a40c57d",
+    "text": "Úsalo para llevarte una pequeña sorpresa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:40:22.722778Z"
+  },
+  "item.14756.desc": {
+    "src_hash": "502aa3f6387a8aa8f6aef4c3fa1cb124",
+    "text": "Úsalo en tu casa para construir un gabinete para pasteles.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:40:26.132066Z"
+  },
+  "item.14759.desc": {
+    "src_hash": "c4100320883c728a8fdc054c8226cdfc",
+    "text": "Úsalo para llevarte una pequeña sorpresa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:40:26.132410Z"
+  },
+  "item.14760.desc": {
+    "src_hash": "234ede9831e1902a0c3fde8ec8683ebc",
+    "text": "Este es un emblema de sabiduría. Fue premiado por TibiaStat.com",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T21:40:26.132964Z"
   }
 }

@@ -1,132 +1,126 @@
 {
-  "timestamp": "2026-02-20T21:39:12.558002Z",
+  "timestamp": "2026-02-20T21:40:26.473986Z",
   "language": "es",
-  "json_file": "npc.json",
-  "translated": 23,
+  "json_file": "items.json",
+  "translated": 19,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "item.173.desc",
+      "en": "It says 'Roses are red...'",
+      "translated": "Dice 'Roses are red...'",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "item.19103.name",
+      "en": "dead noble lion",
+      "translated": "dead Noble lion",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "key": "item.19104.name",
+      "en": "dead noble lion",
+      "translated": "dead Noble lion",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "key": "item.19105.name",
+      "en": "dead noble lion",
+      "translated": "dead Noble lion",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "key": "item.19106.name",
+      "en": "dead noble lion",
+      "translated": "dead Noble lion",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "key": "item.21875.name",
+      "en": "a pressure gauge",
+      "translated": "pressure gauge",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "key": "item.30352.name",
+      "en": "dead lost gnome",
+      "translated": "dead lost gNome",
       "source": "tm"
     },
     {
-      "key": "npc.elyen_ravenlock.voice_2",
-      "en": "<chants> Re Ha, Omrah, Tan Ra...",
-      "translated": "<cánticos> Re Ha, Omrah, Tan Ra...",
+      "key": "item.30353.name",
+      "en": "dead lost gnome",
+      "translated": "dead lost gNome",
       "source": "tm"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "key": "item.30354.name",
+      "en": "dead lost gnome",
+      "translated": "dead lost gNome",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "key": "item.30355.name",
+      "en": "dead lost gnome",
+      "translated": "dead lost gNome",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "key": "item.31709.name",
+      "en": "the kilmar tablets",
+      "translated": "kilmar tablets",
       "source": "tm"
     },
     {
-      "key": "npc.mother_of_jack.voice_1",
-      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
-      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?",
+      "key": "item.32726.name",
+      "en": "a weak spot",
+      "translated": "weak spot",
       "source": "tm"
     },
     {
-      "key": "npc.navigator.multi_1",
-      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
-      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ...",
-      "source": "tm"
+      "key": "item.14693.desc",
+      "en": "It was painted in the style of Penciljack, Unfortunately, there are some blue pixels in this piece",
+      "translated": "Fue pintado al estilo de Penciljack. Desafortunadamente, hay algunos píxeles azules en esta pieza.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.navigator.multi_2",
-      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
-      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ...",
-      "source": "tm"
+      "key": "item.14695.desc",
+      "en": "It was painted in the style of Lyxoph",
+      "translated": "Fue pintado al estilo de Lyxoph.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.omrabas.multi_35",
-      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
-      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!",
-      "source": "tm"
+      "key": "item.14697.desc",
+      "en": "It was painted in the style of Lyxoph. Unfortunately, there are some blue pixels in this piece",
+      "translated": "Fue pintado al estilo de Lyxoph. Desafortunadamente, hay algunos píxeles azules en esta pieza.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.omrabas.multi_82",
-      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
-      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!",
-      "source": "tm"
+      "key": "item.14750.desc",
+      "en": "Use it to get a little surprise.",
+      "translated": "Úsalo para llevarte una pequeña sorpresa.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.omrabas.voice_2",
-      "en": "He will PAY for this... They will ALL pay!",
-      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!",
-      "source": "tm"
+      "key": "item.14756.desc",
+      "en": "Use it in your house to construct a cake cabinet",
+      "translated": "Úsalo en tu casa para construir un gabinete para pasteles.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.pythius_the_rotten.stdmod_12",
-      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
-      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!",
-      "source": "tm"
+      "key": "item.14759.desc",
+      "en": "Use it to get a little surprise",
+      "translated": "Úsalo para llevarte una pequeña sorpresa.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.raymond_striker.multi_21",
-      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí...",
-      "source": "tm"
-    },
-    {
-      "key": "npc.sane_mage.multi_5",
-      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?",
-      "source": "tm"
+      "key": "item.14760.desc",
+      "en": "This is an emblem of wisdom. It was awarded by TibiaStat.com",
+      "translated": "Este es un emblema de sabiduría. Fue premiado por TibiaStat.com",
+      "source": "google_translate"
     }
   ]
 }

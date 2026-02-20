@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T21:39:19.172532Z",
+  "timestamp": "2026-02-20T21:40:33.211370Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1975,
-  "file_cache_misses": 1,
+  "cache_hits": 50,
+  "cache_misses": 2,
+  "file_cache_hits": 1974,
+  "file_cache_misses": 2,
   "langs": {
     "ar": {
       "sig": [
@@ -7368,7 +7368,7 @@
         [
           "items.json",
           1,
-          1771623122692751658,
+          1771623626162416870,
           894540
         ],
         [
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 45471,
+        "translated_keys": 45478,
         "english_copy_keys": 2160,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 84.86,
+        "completion_pct": 84.87,
         "server_keys": 49731,
-        "server_translated": 42405,
-        "server_pct": 85.27,
+        "server_translated": 42412,
+        "server_pct": 85.28,
         "client_keys": 3855,
         "client_translated": 3066,
         "client_pct": 79.53
@@ -7719,12 +7719,12 @@
         "items.json": {
           "sig": [
             1,
-            1771623122692751658,
+            1771623626162416870,
             894540
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 14032,
+            "translated_keys": 14039,
             "english_copy_keys": 78,
             "missing_keys": 0,
             "missing_files": 0
@@ -25377,7 +25377,7 @@
         [
           "items.json",
           1,
-          1771619909934998488,
+          1771623600962845046,
           891471
         ],
         [
@@ -25728,7 +25728,7 @@
         "items.json": {
           "sig": [
             1,
-            1771619909934998488,
+            1771623600962845046,
             891471
           ],
           "row": {

@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-20T21:39:20.682278Z",
-  "window_start_utc": "2026-02-20T20:39:19.666798Z",
-  "window_end_utc": "2026-02-20T21:39:19.666798Z",
+  "timestamp": "2026-02-20T21:40:34.246767Z",
+  "window_start_utc": "2026-02-20T20:40:33.482830Z",
+  "window_end_utc": "2026-02-20T21:40:33.482830Z",
   "by_lang": {
     "pl": {
-      "critical_in_window": 26,
+      "critical_in_window": 39,
       "pack_entries": 0,
       "ok": false
     },

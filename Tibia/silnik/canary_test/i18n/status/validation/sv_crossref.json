@@ -1,17 +1,165 @@
 {
   "lang": "sv",
-  "coverage_pct": 29.9,
-  "crossref_enabled": false,
-  "auto_fix_enabled": false,
+  "coverage_pct": 30.0,
+  "crossref_enabled": true,
+  "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-20T21:37:04.255192Z",
-  "issues_total": 410,
+  "checked_at": "2026-02-20T21:55:39.968523Z",
+  "issues_total": 420,
   "issues_by_type": {
-    "consistency_in_language": 0,
+    "consistency_in_language": 10,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 10
   },
-  "consistency_issues": [],
+  "consistency_issues": [
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Cosmic Energy Prism B",
+      "variants": [
+        "Kosmisk energi Prisma B",
+        "Kosmisk energi prisma B"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.cosmic_energy_prism_b.name",
+        "monsters:monster.cosmic_energy_prism_b_invu.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The Diamond Blossom",
+      "variants": [
+        "Diamantblomman",
+        "Diamantblomningen"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.the_diamond_blossom.name",
+        "monsters:monster.the_diamond_blossom.desc"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "My lich-knights will conquer this world for me!",
+      "variants": [
+        "Mina lich-riddare kommer att erövra den här världen för mig!",
+        "Mina lich-riddare kommer att erövra denna värld för mig!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.king_zelos.voice_3",
+        "monsters:monster.the_brainstealer.voice_3",
+        "monsters:monster.brain_head.voice_3",
+        "monsters:monster.cerebellum.voice_3"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "I will punish the sinners!",
+      "variants": [
+        "Jag kommer att straffa syndarna!",
+        "Jag ska straffa syndarna!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.monk.voice_3",
+        "monsters:monster.monk.voice_6"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "We are swift as the wind of the desert!",
+      "variants": [
+        "Vi är snabba som ökenvinden!",
+        "Vi är snabba som öknenvinden!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.nomad.voice_4",
+        "monsters:monster.nomad_blue.voice_3",
+        "monsters:monster.nomad_female.voice_3"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The Monster",
+      "variants": [
+        "Monsteret",
+        "Monstret"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.the_monster.name",
+        "monsters:monster.the_monster.desc"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.",
+      "variants": [
+        "Fenixens gnista ges av jord- och eldens dvärgpräster i Kazordoon.",
+        "Gnistan från Fenix ​​ges av jord- och eldens dvärgpräster i Kazordoon."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.alia.stdmod_23",
+        "npc:npc.amanda.stdmod_33",
+        "npc:npc.azalea.stdmod_23",
+        "npc:npc.brewster.stdmod_30",
+        "npc:npc.cedrik.stdmod_23"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Life takes many forms. Plants are a very basic form of life. Its simplicity makes them close to the core of nature.",
+      "variants": [
+        "Livet tar många former. Växter är en mycket grundläggande livsform. Dess enkelhet gör dem nära naturens kärna.",
+        "Livet tar sig många former. Växter är en mycket grundläggande livsform. Dess enkelhet gör dem nära naturens kärna."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.brasith.stdmod_10",
+        "npc:npc.brasith.stdmod_9"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "At your service |PLAYERNAME| and welcome to the post office.",
+      "variants": [
+        "Till din tjänst |PLAYERNAME| och välkommen till posten.",
+        "Till din tjänst |PLAYERNAME| och välkommen till postkontoret."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.chrystal.greet_msg_1",
+        "server:data.otservbr.global.npc.chrystal.L77.787"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Alcohol makes people too aggressive. We don't need such stuff in Carlin.",
+      "variants": [
+        "Alkohol gör människor för aggressiva. Vi behöver inte sådana grejer i Carlin.",
+        "Alkohol gör människor för aggressiva. Vi behöver inte sådana saker i Carlin."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.dane.stdmod_6",
+        "npc:npc.dane.stdmod_7",
+        "npc:npc.dane.stdmod_8"
+      ]
+    }
+  ],
   "pl_reference_issues": [
     {
       "key": "achievement.20.name",
@@ -3707,9 +3855,9 @@
     }
   ],
   "auto_fix": {
-    "attempted": 0,
-    "applied": 0,
-    "skipped": 0,
+    "attempted": 80,
+    "applied": 64,
+    "skipped": 16,
     "errors": 0
   }
 }

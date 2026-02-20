@@ -73022,5 +73022,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T21:43:43.670395Z"
+  },
+  "npc.wentworth.say_24": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.579694Z"
+  },
+  "npc.wentworth.say_27": {
+    "src_hash": "ea6e5fcf7192e299cafe0e828c31f227",
+    "text": "Câte monede de cristal ați dori să obțineți?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.580233Z"
+  },
+  "npc.wentworth.say_28": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.580745Z"
+  },
+  "npc.wentworth.say_29": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.581230Z"
+  },
+  "npc.wentworth.say_31": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.581919Z"
+  },
+  "npc.wentworth.say_32": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.582426Z"
+  },
+  "npc.wentworth.say_33": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.582886Z"
+  },
+  "npc.wentworth.say_35": {
+    "src_hash": "2d26ba0631a4a1101e8acff9425597ea",
+    "text": "Ne pare rău, nu aveți suficiente monede de platină.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.583596Z"
+  },
+  "npc.wentworth.say_36": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.583984Z"
+  },
+  "npc.wentworth.say_37": {
+    "src_hash": "f4e70f4d6ed7ed96d565567af2f6e52a",
+    "text": "Câte monede de cristal ai vrea să schimbi în platină?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.584576Z"
+  },
+  "npc.wentworth.say_38": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Ne pare rău, nu aveți suficiente monede de cristal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.585037Z"
+  },
+  "npc.wentworth.say_40": {
+    "src_hash": "bbdf5368cc845aaad5696132ea000b29",
+    "text": "Ne pare rău, nu aveți suficiente monede de cristal.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.585699Z"
+  },
+  "npc.wentworth.say_41": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Ei bine, te pot ajuta cu altceva?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.586242Z"
+  },
+  "npc.wentworth.say_5": {
+    "src_hash": "45f1b7f9c5b8645d32e2c1733b7e753d",
+    "text": "Soldul contului dvs. este {} aur.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.586614Z"
+  },
+  "npc.wentworth.say_6": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Chiar ți-ar plăcea să depui {} aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.587068Z"
+  },
+  "npc.wentworth.say_7": {
+    "src_hash": "b13eedb8f61c04e0c7b33a5b1bb011f5",
+    "text": "Chiar ți-ar plăcea să depui {} aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:52:27.587484Z"
   }
 }

@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T21:52:01.031623Z",
-  "window_start_utc": "2026-02-20T20:52:00.314563Z",
-  "window_end_utc": "2026-02-20T21:52:00.314563Z",
+  "timestamp": "2026-02-20T21:55:47.288809Z",
+  "window_start_utc": "2026-02-20T20:55:46.511795Z",
+  "window_end_utc": "2026-02-20T21:55:46.511795Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,16 +9,16 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 170,
-  "rejected_entries_raw": 395,
+  "rejected_entries_raw": 352,
   "suspicious_entries": 3576,
-  "suspicious_entries_raw": 25445,
-  "guard_fail_entries": 127,
-  "guard_fail_sum": 6312,
+  "suspicious_entries_raw": 25304,
+  "guard_fail_entries": 121,
+  "guard_fail_sum": 6251,
   "by_type": {
     "identical_to_en": 149,
+    "mixed_language": 7,
     "word_salad": 7,
     "contains_tibia_proper_noun": 7,
-    "mixed_language": 7,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7
   },
@@ -27,17 +27,17 @@
   },
   "by_language": {
     "es": 41,
+    "it": 8,
     "ro": 56,
     "pl": 43,
-    "it": 8,
     "ru": 7,
     "sv": 15
   },
   "by_category": {
+    "spells.json": 33,
     "npc.json": 4,
     "items.json": 28,
     "monsters.json": 30,
-    "spells.json": 33,
     "quests.json": 3,
     "scripts.json": 14,
     "server.json": 17,
@@ -56,15 +56,15 @@
       "count": 149
     },
     {
+      "type": "mixed_language",
+      "count": 7
+    },
+    {
       "type": "word_salad",
       "count": 7
     },
     {
       "type": "contains_tibia_proper_noun",
-      "count": 7
-    },
-    {
-      "type": "mixed_language",
       "count": 7
     },
     {
@@ -126,6 +126,20 @@
       }
     },
     {
+      "key": "spell.iksyapunac_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "spell.mitmahseer_wave.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
@@ -176,20 +190,6 @@
       "types": {
         "identical_to_en": 1,
         "contains_tibia_proper_noun": 1
-      }
-    },
-    {
-      "key": "spell.iksyapunac_wave.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.mitmahseer_wave.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
       }
     },
     {

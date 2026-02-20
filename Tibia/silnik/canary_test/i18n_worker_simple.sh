@@ -3670,6 +3670,8 @@ _hourly_gt_active = bool(strict_window_payload.get("gt_active", False))
 _hourly_gt_status = "✅ TAK" if _hourly_gt_active else "❌ NIE"
 _limit_checklist_status = "-"
 _limit_checklist_detail = "-"
+_dispatch_gf_blocked_count = 0
+_dispatch_gf_blocked_preview = "-"
 try:
     _lc_path = os.path.join(status_dir, "translate_limit_checklist.json")
     if os.path.exists(_lc_path):
@@ -3694,6 +3696,31 @@ try:
                 _limit_checklist_detail = f"limit={_lc_eff}; " + (" | ".join(_parts) if _parts else "-")
             else:
                 _limit_checklist_detail = f"limit={_lc_eff}; oczekiwanie na wpisy guard"
+except Exception:
+    pass
+
+try:
+    _ds_path = os.path.join(status_dir, "translation_dispatch_state.json")
+    if os.path.exists(_ds_path):
+        with open(_ds_path, "r", encoding="utf-8") as _dsf:
+            _ds = json.load(_dsf)
+        if isinstance(_ds, dict):
+            _dispatch_gf_blocked_count = int(_ds.get("guard_fail_blocked_count", 0) or 0)
+            _preview_items = _ds.get("guard_fail_blocked_preview", [])
+            if isinstance(_preview_items, list) and _preview_items:
+                _preview_text = []
+                for _it in _preview_items[:5]:
+                    if not isinstance(_it, dict):
+                        continue
+                    _target = str(_it.get("target", "-") or "-")
+                    _gf_rate = float(_it.get("guard_fail_rate", 0.0) or 0.0) * 100.0
+                    _gf_count = int(_it.get("guard_fail", 0) or 0)
+                    _remaining = int(_it.get("remaining_cycles", 0) or 0)
+                    _hard = bool(_it.get("hard_block", False))
+                    _flag = "H" if _hard else "S"
+                    _preview_text.append(f"{_target} [{_flag}] gf={_gf_count}, {_gf_rate:.1f}%, +{_remaining}c")
+                if _preview_text:
+                    _dispatch_gf_blocked_preview = " | ".join(_preview_text)
 except Exception:
     pass
 
@@ -4024,6 +4051,8 @@ md = f'''# 🌍 System Tłumaczeń I18N — Dashboard na żywo
 | 🔤 GT tłumaczeń (1h) | {_hourly_gt_translated} |
 | ✅ Checklist limitu (3 cykle) | {_limit_checklist_status} |
 | 🧪 Ostatnie checki limitu | {_limit_checklist_detail} |
+| ⛔ Zablokowane targety GF | {_dispatch_gf_blocked_count} |
+| 📌 Hotspoty GF (dispatch) | {_dispatch_gf_blocked_preview} |
 
 ---
 

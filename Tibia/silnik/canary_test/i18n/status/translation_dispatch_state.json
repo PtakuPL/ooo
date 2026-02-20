@@ -1,28 +1,27 @@
 {
-  "timestamp": "2026-02-20T22:04:39.318301Z",
-  "cycle_counter": 6490,
-  "last_target_key": "ro:npc.json",
-  "last_pending_total": 7534,
+  "timestamp": "2026-02-20T22:06:16.424897Z",
+  "cycle_counter": 6493,
+  "last_target_key": "ro:items.json",
+  "last_pending_total": 8759,
   "last_tier": 2,
-  "last_cat_priority": 0,
+  "last_cat_priority": 1,
   "candidates_count": 181,
-  "active_candidates_count": 164,
+  "active_candidates_count": 165,
   "skipped_backoff": 10,
-  "skipped_guard_fail": 7,
+  "skipped_guard_fail": 6,
   "guard_fail_blacklist": {
-    "ro:monsters.json": 6492,
     "pl:spells.json": 6495,
     "es:spells.json": 6496,
-    "pl:items.json": 6516,
-    "pl:npc.json": 6509,
-    "es:items.json": 6510,
-    "es:server.json": 6505
+    "pl:items.json": 6519,
+    "pl:npc.json": 6512,
+    "es:items.json": 6513,
+    "es:server.json": 6508
   },
-  "guard_fail_blocked_count": 7,
+  "guard_fail_blocked_count": 6,
   "guard_fail_blocked_preview": [
     {
       "target": "pl:items.json",
-      "until_cycle": 6516,
+      "until_cycle": 6519,
       "remaining_cycles": 26,
       "guard_fail_rate": 0.9976,
       "guard_fail": 4080,
@@ -33,7 +32,7 @@
     },
     {
       "target": "es:items.json",
-      "until_cycle": 6510,
+      "until_cycle": 6513,
       "remaining_cycles": 20,
       "guard_fail_rate": 0.9646,
       "guard_fail": 2614,
@@ -44,7 +43,7 @@
     },
     {
       "target": "es:server.json",
-      "until_cycle": 6505,
+      "until_cycle": 6508,
       "remaining_cycles": 15,
       "guard_fail_rate": 0.9535,
       "guard_fail": 205,
@@ -55,7 +54,7 @@
     },
     {
       "target": "pl:npc.json",
-      "until_cycle": 6509,
+      "until_cycle": 6512,
       "remaining_cycles": 19,
       "guard_fail_rate": 0.9416,
       "guard_fail": 2420,
@@ -89,7 +88,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 8,
+  "cache_cycle": 9,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -267,7 +266,7 @@
       "pl": 87.83,
       "es": 84.88,
       "ru": 50.37,
-      "ro": 43.55,
+      "ro": 43.58,
       "it": 52.47,
       "sr": 45.5,
       "sv": 29.0

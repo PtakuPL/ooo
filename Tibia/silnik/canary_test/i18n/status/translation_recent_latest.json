@@ -1,132 +1,132 @@
 {
-  "timestamp": "2026-02-20T18:53:36.045859Z",
-  "language": "ro",
+  "timestamp": "2026-02-20T18:56:34.912533Z",
+  "language": "es",
   "json_file": "npc.json",
-  "translated": 30,
+  "translated": 23,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_14",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.say_14",
-      "en": "You need to donate {helmet} addon first.",
-      "translated": "Mai întâi trebuie să donezi suplimentul {helmet}.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.say_15",
-      "en": "So you wold like to donate 500.000.000 gold pieces which in return will entitle you to wear a unique armor?",
-      "translated": "Așadar, ați dori să donați 500.000.000 de piese de aur care, în schimb, vă vor da dreptul să porți o armură unică?",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.say_16",
-      "en": "So you would like to donate 250.000.000 gold pieces which in return will entitle you to wear unique helmet?",
-      "translated": "Așadar, ați dori să donați 250.000.000 de piese de aur care, în schimb, vă vor da dreptul să purtați o cască unică?",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.say_17",
-      "en": "So you would like to donate 250.000.000 gold pieces which in return will entitle you to wear a unique boots?",
-      "translated": "Așadar, ai dori să donezi 250.000.000 de piese de aur care, în schimb, îți vor da dreptul să porți cizme unice?",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.say_2",
-      "en": "In that case, return to me once you made up your mind.",
-      "translated": "În acest caz, întoarce-te la mine după ce te-ai hotărât.",
-      "source": "simple"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.say_3",
-      "en": "Take this armor as a token of great gratitude. Let us forever remember this day, my friend!",
-      "translated": "Luați această armură ca pe un semn de mare recunoștință. Să ne amintim pentru totdeauna această zi, prietene!",
-      "source": "simple"
+      "key": "npc.elyen_ravenlock.voice_2",
+      "en": "<chants> Re Ha, Omrah, Tan Ra...",
+      "translated": "<cánticos> Re Ha, Omrah, Tan Ra...",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.say_5",
-      "en": "You do not have enough money to donate that amount.",
-      "translated": "Nu ai suficienți bani pentru a dona acea sumă.",
-      "source": "simple"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.say_6",
-      "en": "You alread have that addon.",
-      "translated": "Ai deja acel supliment.",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.say_7",
-      "en": "Take this helmet as a token of great gratitude. Let us forever remember this day, my friend. ",
-      "translated": "Luați această cască ca pe un semn de mare recunoștință. Să ne amintim pentru totdeauna această zi, prietene. ",
-      "source": "simple"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.say_8",
-      "en": "You do not have enough money to donate that amount.",
-      "translated": "Nu ai suficienți bani pentru a dona acea sumă.",
-      "source": "simple"
+      "key": "npc.mother_of_jack.voice_1",
+      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
+      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.say_9",
-      "en": "You alread have that outfit.",
-      "translated": "Ai deja acea ținută.",
-      "source": "simple"
+      "key": "npc.navigator.multi_1",
+      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
+      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ...",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.stdmod_1",
-      "en": "I can promote you for 20000 gold coins. Do you want me to promote you?",
-      "translated": "Te pot promova cu 20000 de monede de aur. Vrei să te promovez?",
-      "source": "simple"
+      "key": "npc.navigator.multi_2",
+      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
+      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ...",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.stdmod_13",
-      "en": "Thank you, I'm fine.",
-      "translated": "Multumesc, sunt bine.",
-      "source": "simple"
+      "key": "npc.omrabas.multi_35",
+      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
+      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.stdmod_2",
-      "en": "Congratulations! You are now promoted.",
-      "translated": "Felicitări! Acum ești promovat.",
-      "source": "simple"
+      "key": "npc.omrabas.multi_82",
+      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
+      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.stdmod_3",
-      "en": "Alright then, come back when you are ready.",
-      "translated": "Bine atunci, revino când ești gata.",
-      "source": "simple"
+      "key": "npc.omrabas.voice_2",
+      "en": "He will PAY for this... They will ALL pay!",
+      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!",
+      "source": "tm"
     },
     {
-      "key": "npc.queen_eloise.walkaway_msg_1",
-      "en": "Farewell, |PLAYERNAME|!",
-      "translated": "La revedere, |PLAYERNAME|!",
-      "source": "simple"
+      "key": "npc.pythius_the_rotten.stdmod_12",
+      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
+      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!",
+      "source": "tm"
     },
     {
-      "key": "npc.quentin.keyword_1",
-      "en": "So receive the protection of the twist of fate, pilgrim.",
-      "translated": "Așa că primește protecția întorsăturii destinului, pelerine.",
-      "source": "simple"
+      "key": "npc.raymond_striker.multi_21",
+      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
+      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí...",
+      "source": "tm"
     },
     {
-      "key": "npc.quentin.stdmod_10",
-      "en": "Keep your adventurer's stone well.",
-      "translated": "Păstrează-ți bine piatra de aventurier.",
-      "source": "simple"
+      "key": "npc.sane_mage.multi_5",
+      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
+      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?",
+      "source": "tm"
     }
   ]
 }

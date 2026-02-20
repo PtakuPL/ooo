@@ -78590,5 +78590,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:47:55.092365Z"
+  },
+  "item.39552.name": {
+    "src_hash": "266cc4a8bce8721c1ea11d3279287ba4",
+    "text": "piccolo corallo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:55:45.191546Z"
+  },
+  "item.39555.name": {
+    "src_hash": "266cc4a8bce8721c1ea11d3279287ba4",
+    "text": "piccolo corallo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:55:45.191839Z"
+  },
+  "item.39556.name": {
+    "src_hash": "0d258c304f3ca5be0d9adc820abc6b9d",
+    "text": "corallo di lattuga di palma",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:55:45.192240Z"
+  },
+  "item.39559.name": {
+    "src_hash": "77ad28c28c6036c679f15a05adf28243",
+    "text": "corallo dell'albero",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:55:45.192732Z"
+  },
+  "item.39560.name": {
+    "src_hash": "cc4dd0d71a1a70d1cc513c317f04d5b4",
+    "text": "grande corallo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:55:45.193029Z"
+  },
+  "item.39705.name": {
+    "src_hash": "4c8b23796f49e77da414175d46953f6e",
+    "text": "casella di ricompensa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:55:45.196917Z"
   }
 }

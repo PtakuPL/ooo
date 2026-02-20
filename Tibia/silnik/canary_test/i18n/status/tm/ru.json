@@ -38262,5 +38262,61 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:21:53.907461Z"
+  },
+  "npc.busty_bonecrusher.walkaway_msg_1": {
+    "src_hash": "c43729d1bd63036da7b29fd023b203f2",
+    "text": "Да здравствует королева!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:25:22.560541Z"
+  },
+  "npc.cael.sendtrade_msg_1": {
+    "src_hash": "7ab7a918399e516ca6b9bc0cc9d8b8f9",
+    "text": "Имейте в виду, что более выгодных предложений здесь вы не найдете. Просто просмотрите мои товары.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:25:22.566642Z"
+  },
+  "npc.canary.walkaway_msg_1": {
+    "src_hash": "a10a26d9586cb14bfaa580c34d3db0a0",
+    "text": "У вас нет образования?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:25:22.567967Z"
+  },
+  "npc.captain_bluebear.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "До свидания. Порекомендуйте нас, если вы остались довольны нашим сервисом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:25:22.568527Z"
+  },
+  "npc.captain_bluebear.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Тогда до свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:25:22.571217Z"
+  },
+  "npc.captain_breezelda.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "До свидания. Порекомендуйте нас, если вы остались довольны нашим сервисом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:25:22.571749Z"
+  },
+  "npc.captain_breezelda.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Тогда до свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:25:22.572894Z"
   }
 }

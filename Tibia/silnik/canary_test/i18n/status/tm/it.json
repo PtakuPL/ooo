@@ -80790,5 +80790,53 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-20T22:17:18.502697Z"
+  },
+  "item.6895.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:25:39.154482Z"
+  },
+  "item.6896.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:25:39.155178Z"
+  },
+  "item.6897.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:25:39.155644Z"
+  },
+  "item.6898.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:25:39.156279Z"
+  },
+  "item.6899.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:25:39.156575Z"
+  },
+  "item.6900.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "È chiuso a chiave.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T22:25:39.157035Z"
   }
 }

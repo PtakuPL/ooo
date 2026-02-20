@@ -163,6 +163,9 @@ if (MSVC)
     # Group 2: Lua binding files — 800-950 template instantiations of
     #          bind_singleton_mem_fun / bind_mem_fun via luabinder.h.
     #          These are the heaviest template TUs in the project.
+    #          /d2FH4-      : disable FH4 exception handling (ICE in throw-in-lambda)
+    #          /d2notypeopt : disable P2 type optimization (ACCESS VIOLATION in codegen)
+    #          /permissive- : strict standard conformance (different template lookup path)
     set_source_files_properties(
       framework/luafunctions.cpp
       framework/luafunctions_graphics.cpp
@@ -170,7 +173,7 @@ if (MSVC)
       framework/luafunctions_ui.cpp
       client/luafunctions.cpp
       PROPERTIES
-        COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer-"
+        COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer- /d2FH4- /d2notypeopt /permissive-"
         SKIP_PRECOMPILE_HEADERS ON
     )
 
@@ -180,7 +183,7 @@ if (MSVC)
       client/luavaluecasts_client.cpp
       framework/luaengine/luavaluecasts.cpp
       PROPERTIES
-        COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer-"
+        COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer- /d2FH4- /d2notypeopt /permissive-"
         SKIP_PRECOMPILE_HEADERS ON
     )
 
@@ -217,6 +220,8 @@ if (MSVC)
     endforeach()
     target_link_options(${PROJECT_NAME} PRIVATE /LTCG:OFF)
     target_compile_options(${PROJECT_NAME} PRIVATE /GL-)
+    # Better error diagnostics (column + caret)
+    target_compile_options(${PROJECT_NAME} PRIVATE /diagnostics:caret)
   endif() # CMAKE_CXX_COMPILER_ID STREQUAL "MSVC"
 endif()
 

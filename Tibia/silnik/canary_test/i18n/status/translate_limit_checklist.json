@@ -8,7 +8,7 @@
   },
   "start_cycle": 2,
   "checks_required": 3,
-  "checks_done": 1,
+  "checks_done": 2,
   "status": "in_progress",
   "checks": [
     {
@@ -20,6 +20,16 @@
       "guard_fail": 28,
       "strict_skipped_done": 2103,
       "guard_fail_rate_pct": 62.2
+    },
+    {
+      "timestamp": "2026-02-20T17:25:05.073018Z",
+      "cycle": 3,
+      "lang": "it",
+      "json_file": "server.json",
+      "translated": 30,
+      "guard_fail": 0,
+      "strict_skipped_done": 517,
+      "guard_fail_rate_pct": 0.0
     }
   ]
 }

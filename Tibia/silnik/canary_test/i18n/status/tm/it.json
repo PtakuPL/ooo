@@ -77454,5 +77454,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:17:46.629230Z"
+  },
+  "data.otservbr.global.npc.ghorza.L138.1511": {
+    "src_hash": "f21779bf8c308ffdca4bad84d7587194",
+    "text": "Prenditi cura degli spiriti maligni.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.447461Z"
+  },
+  "data.otservbr.global.npc.ghorza.L139.1512": {
+    "src_hash": "f21779bf8c308ffdca4bad84d7587194",
+    "text": "Prenditi cura degli spiriti maligni.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.447845Z"
+  },
+  "data.otservbr.global.npc.ghost.of.a.priest.L196.1000": {
+    "src_hash": "2a976d6738b63899089f925186228939",
+    "text": "Saluti {mortal}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.448842Z"
+  },
+  "data.otservbr.global.npc.ghostly.wolf.L101.460": {
+    "src_hash": "ae4f7a73512ed0ce588afc8b02b07cbd",
+    "text": "Parli la lingua degli animali? Sono sorpreso. Ma non sono dell'umore giusto per una chiacchierata.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.449405Z"
+  },
+  "data.otservbr.global.npc.gnomad.L86.976": {
+    "src_hash": "030191415e3db032c8d20aab65d070bc",
+    "text": "Ciao! Sono pronto a informarti con {tactical} consigli.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.449864Z"
+  },
+  "data.otservbr.global.npc.gnomad.L87.977": {
+    "src_hash": "62b703e7a17bc181a01c27654db49179",
+    "text": "Arrivederci e abbi cura di te!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.450403Z"
+  },
+  "data.otservbr.global.npc.gnomadness.L105.257": {
+    "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
+    "text": "Ciao e benvenuto nei Gnomprona Giardini",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.450903Z"
+  },
+  "data.otservbr.global.npc.gnomally.L201.1371": {
+    "src_hash": "9ff401ef405038ea1958e078e11cee8a",
+    "text": "Oh, ciao! Sono l'assistente alle relazioni tra gnomi e umani. Sono qui per te per scambiare i tuoi gettoni con {equipment}, rifornirti con la missione {items} e parlarti dei tuoi {relations} con noi gnomi! ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.451778Z"
+  },
+  "data.otservbr.global.npc.gnome.trooper.L79.595": {
+    "src_hash": "315cec7b15984b34b0413b34e095bd15",
+    "text": "Hai qualcosa da consegnare?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.452381Z"
+  },
+  "data.otservbr.global.npc.gnomegica.L151.921": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Arrivederci e torna di nuovo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.452785Z"
+  },
+  "data.otservbr.global.npc.gnomegica.L152.922": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Arrivederci e torna di nuovo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.453292Z"
+  },
+  "data.otservbr.global.npc.gnomelvis.L99.1340": {
+    "src_hash": "83d31689ea16e8c391e21d5bf865f983",
+    "text": "Ciao. È per me che sei {looking}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.454116Z"
+  },
+  "data.otservbr.global.npc.gnomeral.L251.1059": {
+    "src_hash": "41cc0b97a4666275845c1a1d3430ba16",
+    "text": "Ciao recluta!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.454440Z"
+  },
+  "data.otservbr.global.npc.gnomercy.L77.968": {
+    "src_hash": "030191415e3db032c8d20aab65d070bc",
+    "text": "Ciao! Sono pronto a informarti con {tactical} consigli.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.454869Z"
+  },
+  "data.otservbr.global.npc.gnomercy.L78.969": {
+    "src_hash": "62b703e7a17bc181a01c27654db49179",
+    "text": "Arrivederci e abbi cura di te!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.455427Z"
+  },
+  "data.otservbr.global.npc.gnomerik.L309.871": {
+    "src_hash": "d37821eaad4cf997b81c210ffc65d5c7",
+    "text": "Ciao e benvenuto nell'ufficio degli Gnomi {recruitment}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.455863Z"
+  },
+  "data.otservbr.global.npc.gnomespector.L81.678": {
+    "src_hash": "1198b5aaa05117427ad78a461413d466",
+    "text": "Ciao impavido {recruit}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:03.456272Z"
   }
 }

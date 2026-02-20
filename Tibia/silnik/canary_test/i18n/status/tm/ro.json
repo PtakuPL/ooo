@@ -67950,5 +67950,205 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T17:15:29.226495Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.plant.L492.2145": {
+    "src_hash": "c5958bcf813dccf58ae2ddb553ab17bb",
+    "text": "Deodată, zona se luminează și totul în jurul tău începe să înflorească și să prospere cu viață și culoare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.086020Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.secret.wall.L11.2138": {
+    "src_hash": "5a163e4c2b3e29c5e8647b87deb04ea0",
+    "text": "Nu ai cheia de montaj.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.086405Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.time.machine.L13.2147": {
+    "src_hash": "4af4503d487cba3ad875975c67fa389c",
+    "text": "Mecanismul te duce înapoi în timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.086824Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.time.machine.L16.2148": {
+    "src_hash": "af13692f0a7bdbfa9260b979d6b3e487",
+    "text": "Trebuie să așteptați puțin înainte de a călători în timp!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.087428Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.time.machine.L24.2149": {
+    "src_hash": "4af4503d487cba3ad875975c67fa389c",
+    "text": "Mecanismul te duce înapoi în timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.087833Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.time.machine.L29.2150": {
+    "src_hash": "4af4503d487cba3ad875975c67fa389c",
+    "text": "Mecanismul te duce înapoi în timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.088227Z"
+  },
+  "data.otservbr.global.scripts.quests.forgotten.knowledge.actions.time.machine.L7.2146": {
+    "src_hash": "4af4503d487cba3ad875975c67fa389c",
+    "text": "Mecanismul te duce înapoi în timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.088693Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.mechanism.L29.2176": {
+    "src_hash": "50fefff6df347aefc566142681046383",
+    "text": "Mecanismul porții nu se mișcă. Probabil că trebuie să găsești o cale până când îți dai seama cum să acționezi poarta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.099393Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L17.2181": {
+    "src_hash": "9c14fa84bb1c37eee8acbefb8a8ed01b",
+    "text": "Ai găsit o mască yalahari.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.100278Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.reward.L26.2183": {
+    "src_hash": "192cb6d64e0684a75306f923e5fa0600",
+    "text": "Ai găsit o piesă de picior yalahari.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.101255Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.yalahar.machine.war.golems.L38.2177": {
+    "src_hash": "a25f971cea94edfe9bc6fdba575342b6",
+    "text": "Nu aveți suficiente roți dințate pentru a activa mașina.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.102092Z"
+  },
+  "data.otservbr.global.scripts.quests.in.service.of.yalahar.actions.yalahar.machine.war.golems.L49.2178": {
+    "src_hash": "5161e3c160b510f6be4cbee835b70524",
+    "text": "Insezi toate cele 4 roți dințate, ele ajustând teleportatorul pentru a te transporta la podeaua mai adâncă",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.102841Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.lyre.L5.1666": {
+    "src_hash": "5f4ad7bede9a628e2470894a6895cab4",
+    "text": "Ai găsit Lyre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.112071Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.lyre.L9.1667": {
+    "src_hash": "7c5623cfc2f732af0abd9b62f218f05a",
+    "text": "Geanta nu poate fi deschisă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.112475Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.peeler.L7.1658": {
+    "src_hash": "82e12715e1434699f28fe1b534e1bbab",
+    "text": "Ați găsit un curățător de coajă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.112881Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.peelerfun.L6.1656": {
+    "src_hash": "cb298a4ae6c77ed8f197b11c52b658db",
+    "text": "Decojiți o bucată de tark de pe copacul din nou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.114044Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.pickenchanted.L6.1664": {
+    "src_hash": "fb9d34da72cc5f6f1c95cf1b19ea2f48",
+    "text": "Scoateți niște tagralt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.114758Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.sangra.L5.1654": {
+    "src_hash": "3a1f900dc11ca38ff346592c0b186298",
+    "text": "Săgeata încă se lipește în copac. Sângele proaspăt continuă să curgă din locul în care săgeata a lovit trunchiul.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.115640Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.scissors.L7.1670": {
+    "src_hash": "9133be335f8fc7ca66d3654e78d8c9ec",
+    "text": "Ai găsit o foarfecă rituală.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.116405Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tortoise.L9.1675": {
+    "src_hash": "70c07abb473fda5ebb8cef18df22fc77",
+    "text": "Cuibul de broasca testoasa gol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.117547Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tumulo.L6.1662": {
+    "src_hash": "28f1a6c6eb00bf9831ac00fa04d9ca56",
+    "text": "Mormântul este gol. Nimic decât un gol căscat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.117987Z"
+  },
+  "data.otservbr.global.scripts.quests.kilmaresh.quest.actions.tumuloerro.L6.1652": {
+    "src_hash": "28f1a6c6eb00bf9831ac00fa04d9ca56",
+    "text": "Mormântul este gol. Nimic decât un gol căscat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.118595Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.notescoordinates.L5.1796": {
+    "src_hash": "0214c298a23af94b667a3fe7d5d06529",
+    "text": "Ați găsit note și coordonate.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.120980Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.seashell.key.L12.1798": {
+    "src_hash": "7bee11f34f02fa2103f0a2f1a81ea785",
+    "text": "Întorci cheia în broasca mică de pe partea laterală a raftului și... cheia se rupe. În afară de asta, nu se întâmplă absolut nimic.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.122035Z"
+  },
+  "data.otservbr.global.scripts.quests.liquid.black.actions.seashell.key.L25.1799": {
+    "src_hash": "d9bffb35571ed8e7f052998fd9ae03c6",
+    "text": "O păstrare ascunsă apare chiar în momentul în care rotiți cheia. Din păcate, cheia se rupe când încercați să o scoateți din încuietoare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:25:15.122788Z"
   }
 }

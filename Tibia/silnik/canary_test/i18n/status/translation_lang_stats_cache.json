@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T17:33:53.191520Z",
+  "timestamp": "2026-02-20T17:34:56.143129Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 48,
-  "cache_misses": 4,
-  "file_cache_hits": 1972,
-  "file_cache_misses": 4,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 1975,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -16083,8 +16083,8 @@
         [
           "raids.json",
           1,
-          1771534451167763138,
-          18540
+          1771608890292964573,
+          18490
         ],
         [
           "scripts.json",
@@ -16134,14 +16134,14 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 27747,
-        "english_copy_keys": 2132,
+        "translated_keys": 27757,
+        "english_copy_keys": 2142,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 51.78,
+        "completion_pct": 51.8,
         "server_keys": 49731,
-        "server_translated": 26416,
-        "server_pct": 53.12,
+        "server_translated": 26426,
+        "server_pct": 53.14,
         "client_keys": 3855,
         "client_translated": 1331,
         "client_pct": 34.53
@@ -16570,13 +16570,13 @@
         "raids.json": {
           "sig": [
             1,
-            1771534451167763138,
-            18540
+            1771608890292964573,
+            18490
           ],
           "row": {
             "total_reference_keys": 273,
-            "translated_keys": 132,
-            "english_copy_keys": 129,
+            "translated_keys": 142,
+            "english_copy_keys": 139,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27045,8 +27045,8 @@
         [
           "raids.json",
           1,
-          1771534440409627495,
-          18543
+          1771608879041659505,
+          18493
         ],
         [
           "scripts.json",
@@ -27096,14 +27096,14 @@
         "language_name": "Rumuński",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 22743,
-        "english_copy_keys": 2341,
+        "translated_keys": 22753,
+        "english_copy_keys": 2351,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 42.44,
+        "completion_pct": 42.46,
         "server_keys": 49731,
-        "server_translated": 21487,
-        "server_pct": 43.21,
+        "server_translated": 21497,
+        "server_pct": 43.23,
         "client_keys": 3855,
         "client_translated": 1256,
         "client_pct": 32.58
@@ -27532,13 +27532,13 @@
         "raids.json": {
           "sig": [
             1,
-            1771534440409627495,
-            18543
+            1771608879041659505,
+            18493
           ],
           "row": {
             "total_reference_keys": 273,
-            "translated_keys": 132,
-            "english_copy_keys": 129,
+            "translated_keys": 142,
+            "english_copy_keys": 139,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27828,7 +27828,7 @@
         [
           "raids.json",
           1,
-          1771534430707325628,
+          1771608866612842909,
           18785
         ],
         [
@@ -28315,7 +28315,7 @@
         "raids.json": {
           "sig": [
             1,
-            1771534430707325628,
+            1771608866612842909,
             18785
           ],
           "row": {

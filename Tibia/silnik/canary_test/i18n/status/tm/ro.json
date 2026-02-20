@@ -68246,5 +68246,93 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T17:33:15.487214Z"
+  },
+  "raid.crustacea_gigantica_1.name": {
+    "src_hash": "fe15786d2dc84508d331b28dda2fd617",
+    "text": "Crustacea Gigantica 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:34:34.301258Z"
+  },
+  "raid.undead_cavebear.name": {
+    "src_hash": "64e09822bd15852b6ce465912554b067",
+    "text": "Undead Cavebear",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:34:34.301622Z"
+  },
+  "raid.crustacea_gigantica_2.name": {
+    "src_hash": "dbc8fdb622fbf9185d733a3ba7ddbd8d",
+    "text": "Crustacea Gigantica 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:34:34.301977Z"
+  },
+  "raid.crustacea_gigantica_3.name": {
+    "src_hash": "0baf22f5185dcf61fc250759b7ff6349",
+    "text": "Crustacea Gigantica 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:34:34.302378Z"
+  },
+  "raid.diblis_the_fair.name": {
+    "src_hash": "5cd6555c19e0b434371a7a34d538792b",
+    "text": "Diblis The Fair",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:34:37.008966Z"
+  },
+  "raid.the_old_widow.name": {
+    "src_hash": "0a46dc1f306c4565526cd2e7b1631bd1",
+    "text": "The Old Widow",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:34:37.009387Z"
+  },
+  "raid.orc_backpack.name": {
+    "src_hash": "1e7aba3f830ff555f743da7c0fc80c83",
+    "text": "Orc Backpack",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:34:37.009716Z"
+  },
+  "raid.feverish_citizen.name": {
+    "src_hash": "7f9a98bbccbfd04494fb0436a1bb2de3",
+    "text": "Feverish Citizen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:34:37.010075Z"
+  },
+  "raid.water_buffalo.name": {
+    "src_hash": "76970c076e84449bff9de4d9398d697e",
+    "text": "Water Buffalo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:34:37.010417Z"
+  },
+  "raid.sir_valorcrest.name": {
+    "src_hash": "f8298500215b17e312aa870c0031d7e4",
+    "text": "Sir Valorcrest",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:34:39.043295Z"
+  },
+  "raid.mad_mage.name": {
+    "src_hash": "7cb4e60cd0927f995c74a12fe8154ebc",
+    "text": "Mad Mage",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:34:39.043669Z"
   }
 }

@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-02-20T17:32:52.147728Z",
-  "cycle_counter": 5844,
-  "last_target_key": "ro:scripts.json",
-  "last_pending_total": 1297,
+  "timestamp": "2026-02-20T17:34:41.822507Z",
+  "cycle_counter": 5847,
+  "last_target_key": "it:raids.json",
+  "last_pending_total": 141,
   "last_tier": 2,
-  "last_cat_priority": 6,
+  "last_cat_priority": 8,
   "candidates_count": 183,
   "active_candidates_count": 175,
   "skipped_backoff": 4,
   "skipped_guard_fail": 4,
   "guard_fail_blacklist": {
     "pl:items.json": 5850,
-    "es:server.json": 5845,
+    "es:server.json": 5860,
     "pl:spells.json": 5852,
     "es:items.json": 5853
   },
@@ -39,7 +39,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 9,
+  "cache_cycle": 10,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -87,7 +87,7 @@
     "ru:scripts.json": 0,
     "ro:scripts.json": 0,
     "it:actions.json": 3,
-    "ru:raids.json": 0,
+    "ru:raids.json": 1,
     "ro:raids.json": 0,
     "it:raids.json": 0,
     "ru:questlog.json": 0,
@@ -203,8 +203,8 @@
       "pl": 87.82,
       "es": 84.68,
       "ru": 50.35,
-      "ro": 42.42,
-      "it": 51.76,
+      "ro": 42.44,
+      "it": 51.78,
       "sr": 45.38,
       "sv": 28.32
     }

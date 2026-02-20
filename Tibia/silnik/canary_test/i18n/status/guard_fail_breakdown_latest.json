@@ -1,33 +1,33 @@
 {
-  "timestamp": "2026-02-20T17:48:42.544140Z",
-  "window_start_utc": "2026-02-20T16:48:41.913755Z",
-  "window_end_utc": "2026-02-20T17:48:41.913755Z",
+  "timestamp": "2026-02-20T17:49:09.851257Z",
+  "window_start_utc": "2026-02-20T16:49:09.215367Z",
+  "window_end_utc": "2026-02-20T17:49:09.215367Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 299,
-  "rejected_entries_raw": 535,
-  "suspicious_entries": 4174,
-  "suspicious_entries_raw": 20537,
-  "guard_fail_entries": 103,
-  "guard_fail_sum": 3777,
+  "rejected_entries": 301,
+  "rejected_entries_raw": 537,
+  "suspicious_entries": 4178,
+  "suspicious_entries_raw": 20544,
+  "guard_fail_entries": 104,
+  "guard_fail_sum": 3783,
   "by_type": {
     "word_salad": 8,
     "identical_to_en": 241,
-    "mixed_language": 34,
+    "mixed_language": 36,
     "contains_tibia_proper_noun": 15,
     "mixed_scripts": 13,
     "cyrillic_latin_mix": 13,
     "fx_token": 3
   },
   "by_source": {
-    "google_translate": 299
+    "google_translate": 301
   },
   "by_language": {
-    "es": 49,
+    "es": 51,
     "ro": 115,
     "it": 49,
     "ru": 13,
@@ -49,13 +49,13 @@
     "cpp.json": 6,
     "otclient_data.json": 1,
     "html.json": 18,
-    "php.json": 1,
+    "php.json": 3,
     "modules.json": 2,
     "talkactions.json": 6
   },
   "by_severity": {
     "CRITICAL": 249,
-    "HIGH": 50
+    "HIGH": 52
   },
   "top_types": [
     {
@@ -64,7 +64,7 @@
     },
     {
       "type": "mixed_language",
-      "count": 34
+      "count": 36
     },
     {
       "type": "contains_tibia_proper_noun",

@@ -66662,5 +66662,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T16:35:57.230872Z"
+  },
+  "monster.makara.desc": {
+    "src_hash": "d4d4f19812af5857bcdef0c1765f539a",
+    "text": "o makara",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:33.967993Z"
+  },
+  "monster.makara.voice_1": {
+    "src_hash": "49d148d0146c3c6d66e80425fa47efef",
+    "text": "waddle waddle",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:35.674279Z"
   }
 }

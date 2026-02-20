@@ -1529,35 +1529,35 @@
   },
   "npc.lugri.say_13": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
+    "text": "Du har det inte...",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:10:52.936744Z"
+    "updated_at": "2026-02-20T16:38:42.814125Z"
   },
   "npc.lugri.say_15": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
+    "text": "Du har det inte...",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:10:52.937158Z"
+    "updated_at": "2026-02-20T16:38:42.814548Z"
   },
   "npc.lugri.say_17": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
+    "text": "Du har det inte...",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:10:52.937725Z"
+    "updated_at": "2026-02-20T16:38:42.815172Z"
   },
   "npc.lugri.say_19": {
     "src_hash": "afb7e73e97e4c20587c08065a816ccc5",
-    "text": "You don't have it...",
+    "text": "Du har det inte...",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:10:52.938178Z"
+    "updated_at": "2026-02-20T16:38:42.815608Z"
   },
   "npc.lukosch.say_5": {
     "src_hash": "12d673409d71f1fc127ebad108378378",
@@ -32814,5 +32814,269 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T16:21:08.729350Z"
+  },
+  "npc.lubo.say_9": {
+    "src_hash": "9ff43a2d5c70bf1b382016e7f7050bf9",
+    "text": "Tyvärr, men det räcker inte med läder ännu för att göra en av dessa ryggsäckar. Vill du hellre köpa en vanlig ryggsäck för 10 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.812116Z"
+  },
+  "npc.lugri.say_21": {
+    "src_hash": "235c3e61bedc3e4295235cc4c6e633dc",
+    "text": "Då nej.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.816102Z"
+  },
+  "npc.lukosch.farewell_msg_1": {
+    "src_hash": "4c63e8ef9d6c6b447464c244c3d4b195",
+    "text": "Hoppas vi ses igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.817145Z"
+  },
+  "npc.lukosch.greet_msg_1": {
+    "src_hash": "74af8429056cd1b6c12ccb10e67902c1",
+    "text": "Välkommen, |PLAYERNAME|! Känner du dig äventyrlig? Vill du ha en veckovis {ticket} för malmvagnssystemet här? Du kan använda den här för att komma till centrum av Kazordoon!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.817892Z"
+  },
+  "npc.lukosch.say_1": {
+    "src_hash": "78c8e8f1e0c24e044738d408a4bdd010",
+    "text": "Vill du köpa en veckobiljett till malmvagnarna? Med den kan du resa fritt och snabbt genom Kazordoon i en vecka. Endast 250 guld. Handla?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.818598Z"
+  },
+  "npc.lukosch.say_2": {
+    "src_hash": "f861e7ec394314cc88a104df2e9bb60c",
+    "text": "Din veckobiljett är fortfarande giltig. Skulle vara slöseri med pengar att köpa en andra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.819232Z"
+  },
+  "npc.lukosch.say_3": {
+    "src_hash": "622d7ed7c7070fcb0a5487989b8ba4da",
+    "text": "Här är din stämpel. Det kan inte överföras till en annan person och kommer att pågå en vecka från och med nu. Du får ett meddelande när du använder en malmvagn när den inte är giltig längre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.820080Z"
+  },
+  "npc.lynda.farewell_msg_1": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Var försiktig på dina resor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.823205Z"
+  },
+  "npc.lynda.walkaway_msg_1": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Var försiktig på dina resor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.825328Z"
+  },
+  "npc.maealil.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.827500Z"
+  },
+  "npc.maealil.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.827922Z"
+  },
+  "npc.maealil.stdmod_12": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Ja, jag fick besked om vad jag skulle göra. Är du beredd att ta emot min bönelinje?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.828738Z"
+  },
+  "npc.maealil.stdmod_16": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Du har redan fått min bönrad.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.829348Z"
+  },
+  "npc.maealil.stdmod_18": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Du är sårad, mitt barn. Jag ska läka dina sår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.829917Z"
+  },
+  "npc.maealil.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Du ser inte så illa ut. Tyvärr, jag kan inte hjälpa dig. Men om du letar efter ytterligare skydd bör du gå på {pilgrimage} av aska eller få skyddet av {twist of fate} här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.830759Z"
+  },
+  "npc.maealil.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bra. Du är fri att tacka nej till mitt erbjudande.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.831250Z"
+  },
+  "npc.maealil.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Närhelst du får ett dödligt sår skadas din livskraft och det finns en chans att du tappar bort en del av din utrustning. Med varenda av de fem {blessings} du har kommer denna skada och risken för förlust att minska.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.832166Z"
+  },
+  "npc.maealil.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Jag ser att du fick den andliga avskärmningen i det vita blomtemplet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.832868Z"
+  },
+  "npc.maealil.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Jag kan ana att druiderna norr om Carlin har försett dig med omfamningen Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.833466Z"
+  },
+  "npc.maealil.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Jag kan se att du fick välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.834074Z"
+  },
+  "npc.maealil.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Jag kan ana att gnistan från Fenix ​​redan gavs till dig av dvärgprästerna av jord och eld i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.834701Z"
+  },
+  "npc.maealil.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Jag kan känna att du redan pratade med eremiten Eremo på ön Cormaya och fick denna välsignelse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.835416Z"
+  },
+  "npc.maealil.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Du kan be om välsignelsen av andlig avskärmning i whiteflower-templet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.836025Z"
+  },
+  "npc.maealil.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druiderna norr om Carlin kommer att förse dig med Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.836516Z"
+  },
+  "npc.maealil.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Du kan be om välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.837077Z"
+  },
+  "npc.maealil.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Håll din äventyrarsten väl.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.837471Z"
+  },
+  "npc.maealil.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Fenixens gnista ges av jord- och eldens dvärgpräster i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.838311Z"
+  },
+  "npc.maealil.stdmod_34": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Detta är en speciell välsignelse som jag kan skänka dig när du har fått åtminstone en av de andra välsignelserna och som fungerar lite annorlunda. ... \\z\n\tDet fungerar bara när du dödas av andra äventyrare, vilket betyder att minst hälften av skadan som ledde till din död orsakades av andra, inte av monster eller miljön. ... \\z\n\t{twist of fate} kommer inte att minska dödsstraffet som de andra välsignelserna, utan istället hindra dig från att förlora dina andra välsignelser såväl som förlustamuletten, om du bär en. Det kostar lika mycket som de andra välsignelserna. ... \\z\n\tSkulle du vilja få det skyddet för ett offer på |PVPBLESSCOST| guld, barn?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.840555Z"
+  },
+  "npc.maealil.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vill du byta ut din äventyrarsten gratis?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.840989Z"
+  },
+  "npc.maealil.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.841348Z"
+  },
+  "npc.maealil.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vill du byta ut din äventyrarsten mot 30 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.841965Z"
+  },
+  "npc.maealil.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.842427Z"
+  },
+  "npc.maealil.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Tyvärr, du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:38:42.842836Z"
   }
 }

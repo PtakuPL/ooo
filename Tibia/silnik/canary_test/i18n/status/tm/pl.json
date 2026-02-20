@@ -118166,5 +118166,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T19:30:31.107820Z"
+  },
+  "questlog.quest_11.mission_15.state_2": {
+    "src_hash": "cdc46b96e331101625bf375c004ce6b4",
+    "text": "Udało Ci się upolować 300 małp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T20:10:53.194869Z"
   }
 }

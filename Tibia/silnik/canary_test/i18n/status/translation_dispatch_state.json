@@ -1,16 +1,18 @@
 {
-  "timestamp": "2026-02-20T17:58:00.215537Z",
-  "cycle_counter": 5905,
-  "last_target_key": "ro:spells.json",
-  "last_pending_total": 227,
-  "last_tier": 2,
-  "last_cat_priority": 4,
+  "timestamp": "2026-02-20T17:59:34.116449Z",
+  "cycle_counter": 5908,
+  "last_target_key": "pl:npc.json",
+  "last_pending_total": 1432,
+  "last_tier": 1,
+  "last_cat_priority": 1,
   "candidates_count": 183,
-  "active_candidates_count": 177,
-  "skipped_backoff": 5,
-  "skipped_guard_fail": 1,
+  "active_candidates_count": 174,
+  "skipped_backoff": 6,
+  "skipped_guard_fail": 3,
   "guard_fail_blacklist": {
-    "ro:monsters.json": 5910
+    "ro:monsters.json": 5910,
+    "pl:items.json": 5917,
+    "es:items.json": 5918
   },
   "tier_config": {
     "tier1": [
@@ -36,7 +38,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 30,
+  "cache_cycle": 31,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -68,7 +70,7 @@
     "ro:server.json": 0,
     "it:spells.json": 2,
     "ru:spells.json": 0,
-    "ro:spells.json": 2,
+    "ro:spells.json": 3,
     "it:quests.json": 0,
     "ru:quests.json": 0,
     "ro:quests.json": 0,

@@ -153198,5 +153198,109 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T17:21:11.711180Z"
+  },
+  "item.12234.desc": {
+    "src_hash": "2648df1ce9707fbe4f141e9fb46310be",
+    "text": "Este cono fue obtenido de un Sprocketwhip.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:59:25.235461Z"
+  },
+  "item.12235.desc": {
+    "src_hash": "00aa4f6e6b3b1620132a6c7de4f0e839",
+    "text": "Esta flor fue recolectada de un Witherstem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:59:25.235807Z"
+  },
+  "item.12314.name": {
+    "src_hash": "e359a0a91e0f99ae30630bb1dc0b24e2",
+    "text": "pezuña hueca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:59:25.236049Z"
+  },
+  "item.12319.name": {
+    "src_hash": "01599aa9d33342e67b54cf3dd5fad3dc",
+    "text": "lagarto de hojalata inoperante",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:59:25.236345Z"
+  },
+  "item.12320.name": {
+    "src_hash": "1c4b47057fb55a2cc78dd5ef278fb664",
+    "text": "cebo de olor dulce",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:59:25.236598Z"
+  },
+  "item.12337.name": {
+    "src_hash": "cd83419e1c0523f7af26e5075b6e4f14",
+    "text": "pantera de medianoche muerta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:59:29.517314Z"
+  },
+  "item.12338.name": {
+    "src_hash": "cd83419e1c0523f7af26e5075b6e4f14",
+    "text": "pantera de medianoche muerta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:59:29.517632Z"
+  },
+  "item.12339.name": {
+    "src_hash": "cd83419e1c0523f7af26e5075b6e4f14",
+    "text": "pantera de medianoche muerta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:59:29.517911Z"
+  },
+  "item.12340.name": {
+    "src_hash": "cd83419e1c0523f7af26e5075b6e4f14",
+    "text": "pantera de medianoche muerta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:59:29.518176Z"
+  },
+  "item.12341.name": {
+    "src_hash": "f6a780c1cf93fc97207e34d85635991f",
+    "text": "crustáceos gigantes muertos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:59:29.518450Z"
+  },
+  "item.12342.name": {
+    "src_hash": "f6a780c1cf93fc97207e34d85635991f",
+    "text": "crustáceos gigantes muertos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:59:31.769902Z"
+  },
+  "item.12343.name": {
+    "src_hash": "f6a780c1cf93fc97207e34d85635991f",
+    "text": "crustáceos gigantes muertos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:59:31.770257Z"
+  },
+  "item.12344.name": {
+    "src_hash": "f6a780c1cf93fc97207e34d85635991f",
+    "text": "crustáceos gigantes muertos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T17:59:31.770575Z"
   }
 }

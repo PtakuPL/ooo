@@ -1,186 +1,18 @@
 {
-  "timestamp": "2026-02-20T17:31:16.812237Z",
+  "timestamp": "2026-02-20T17:32:02.906847Z",
   "checked_entries": 100,
-  "issues_found": 49,
+  "issues_found": 28,
   "issues_by_type": {
-    "artifact_token": 22,
-    "identical_to_en_exempt": 5,
-    "identical_to_en": 27,
-    "suspicious_log_high": 44,
-    "suspicious_log_low": 38,
-    "suspicious_log_critical": 43,
-    "suspicious_rejected_critical": 153,
+    "identical_to_en": 12,
+    "identical_to_en_exempt": 37,
+    "artifact_token": 16,
+    "suspicious_log_low": 11,
+    "suspicious_log_high": 45,
+    "suspicious_log_critical": 69,
+    "suspicious_rejected_critical": 160,
     "suspicious_rejected_high": 26
   },
   "issues": [
-    {
-      "key": "npc.omrabas.multi_35",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
-      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!"
-    },
-    {
-      "key": "npc.omrabas.multi_82",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
-      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!"
-    },
-    {
-      "key": "npc.omrabas.voice_2",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "He will PAY for this... They will ALL pay!",
-      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!"
-    },
-    {
-      "key": "npc.pythius_the_rotten.stdmod_12",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
-      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!"
-    },
-    {
-      "key": "npc.raymond_striker.multi_21",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí..."
-    },
-    {
-      "key": "npc.sane_mage.multi_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "questlog.quest_1.mission_1.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "The Hidden Seal",
-      "translated": "The Hidden Seal"
-    },
-    {
-      "key": "questlog.quest_1.mission_2.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "The Plague Seal",
-      "translated": "The Plague Seal"
-    },
-    {
-      "key": "questlog.quest_1.mission_8.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "The Final Battle",
-      "translated": "The Final Battle"
-    },
-    {
-      "key": "questlog.quest_11.mission_10.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Carniphilas",
-      "translated": "Paw and Fur: Carniphilas"
-    },
-    {
-      "key": "questlog.quest_11.mission_12.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Mammoths",
-      "translated": "Paw and Fur: Mammoths"
-    },
-    {
-      "key": "questlog.quest_11.mission_13.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Gnarlhounds",
-      "translated": "Paw and Fur: Gnarlhounds"
-    },
-    {
-      "key": "questlog.quest_11.mission_14.name",
-      "lang": "pl",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Terramites",
-      "translated": "Paw and Fur: Terramites"
-    },
-    {
-      "key": "questlog.quest_11.mission_18.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Ice Golems",
-      "translated": "Paw and Fur: Ice Golems"
-    },
-    {
-      "key": "questlog.quest_11.mission_22.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Wyverns",
-      "translated": "Paw and Fur: Wyverns"
-    },
-    {
-      "key": "questlog.quest_11.mission_26.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Bonebeasts",
-      "translated": "Paw and Fur: Bonebeasts"
-    },
-    {
-      "key": "questlog.quest_11.mission_31.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Werewolves",
-      "translated": "Paw and Fur: Werewolves"
-    },
-    {
-      "key": "questlog.quest_11.mission_32.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Nightmares",
-      "translated": "Paw and Fur: Nightmares"
-    },
-    {
-      "key": "questlog.quest_11.mission_33.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Hellspawns",
-      "translated": "Paw and Fur: Hellspawns"
-    },
-    {
-      "key": "questlog.quest_11.mission_34.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Lizards",
-      "translated": "Paw and Fur: Lizards"
-    },
-    {
-      "key": "questlog.quest_11.mission_35.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Stampors",
-      "translated": "Paw and Fur: Stampors"
-    },
-    {
-      "key": "questlog.quest_11.mission_38.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Hydras",
-      "translated": "Paw and Fur: Hydras"
-    },
-    {
-      "key": "questlog.quest_11.mission_40.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Medusae",
-      "translated": "Paw and Fur: Medusae"
-    },
-    {
-      "key": "questlog.quest_11.mission_41.name",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Paw and Fur: Behemoths",
-      "translated": "Paw and Fur: Behemoths"
-    },
     {
       "key": "questlog.quest_11.mission_42.name",
       "lang": "es",
@@ -355,6 +187,27 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
+    },
+    {
+      "key": "otclient_modules.character_otui.tr_27",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Depot",
+      "translated": "Depot"
+    },
+    {
+      "key": "otclient_modules.game_cyclopedia.tr_6",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
+    },
+    {
+      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
+      "lang": "es",
+      "type": "identical_to_en",
+      "en": "Cyclopedia",
+      "translated": "Cyclopedia"
     }
   ],
   "threshold": 10,

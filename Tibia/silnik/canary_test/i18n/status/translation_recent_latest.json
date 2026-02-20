@@ -1,51 +1,45 @@
 {
-  "timestamp": "2026-02-20T22:46:21.280248Z",
+  "timestamp": "2026-02-20T22:46:49.803326Z",
   "language": "pl",
-  "json_file": "otclient_modules.json",
-  "translated": 7,
+  "json_file": "cpp.json",
+  "translated": 6,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "otclient_modules.character_otui.tr_42",
-      "en": "Page 1 / 1",
-      "translated": "Strona 1 / 1",
+      "key": "cpp.augment.format_base",
+      "en": "{0} -> {1:+}% {2} {3}",
+      "translated": "{0} -> {1:+}% {2} {3}",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.character_otui.tr_48",
-      "en": "Page 1 / 1",
-      "translated": "Strona 1 / 1",
+      "key": "cpp.augment.format_with_value",
+      "en": "{0} -> {1:+}% {2}",
+      "translated": "{0} -> {1:+}% {2}",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.game_cyclopedia.tr_6",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia",
+      "key": "cpp.inspect.physical_plus",
+      "en": "{0} physical + {1}",
+      "translated": "{0} fizyczny + {1}",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.game_cyclopedia_otui.tr_8",
-      "en": "Cyclopedia",
-      "translated": "Cyclopedia",
+      "key": "cpp.player.look.guild_nick",
+      "en": "({0})",
+      "translated": "({0})",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.game_store_otui.tr_3",
-      "en": "Page 1 / 4",
-      "translated": "Strona 1 / 4",
+      "key": "cpp.protocol.active_prey_desc",
+      "en": "{0} ({1} +{2}%, remaining {3})",
+      "translated": "{0} ({1} +{2}%, pozostałe {3})",
       "source": "tm"
     },
     {
-      "key": "otclient_modules.player.tr_6",
-      "en": "Druid",
-      "translated": "Druid",
-      "source": "tm"
-    },
-    {
-      "key": "otclient_modules.spelllist_otui.tr_12",
+      "key": "cpp.vocation.id_2",
       "en": "Druid",
       "translated": "Druid",
       "source": "tm"

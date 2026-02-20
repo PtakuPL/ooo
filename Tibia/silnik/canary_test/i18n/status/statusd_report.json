@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-20T21:54:59.586914Z",
+  "timestamp": "2026-02-20T21:56:01.773034Z",
   "version": "statusd-mvp-1.0",
   "worker": {
     "pid": 463721,
-    "heartbeat_at": "2026-02-20T21:52:42Z",
-    "heartbeat_age_s": 137.6,
+    "heartbeat_at": "2026-02-20T21:55:42Z",
+    "heartbeat_age_s": 19.8,
     "cycle": 1,
     "mode": "continuous",
     "category": "?",
@@ -12,10 +12,11 @@
   },
   "guardian": {
     "state": "degraded",
-    "throughput_per_h": 2520.0,
-    "guard_fail_rate_pct": 86.6,
+    "throughput_per_h": 2436.0,
+    "guard_fail_rate_pct": 81.8,
     "issues": [
-      "high_guard_fail_rate (86.6% > 15%)"
+      "heartbeat_aging (174s)",
+      "high_guard_fail_rate (81.8% > 15%)"
     ]
   },
   "translation_kpi": {
@@ -308,9 +309,9 @@
       "en_copy": 1068
     },
     "sv": {
-      "coverage_pct": 28.89,
+      "coverage_pct": 28.98,
       "missing": 0,
-      "en_copy": 2299
+      "en_copy": 2235
     },
     "sw": {
       "coverage_pct": 6.85,
@@ -392,7 +393,7 @@
     "npc_total": 1027,
     "npc_migrated": 699,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-02-20T21:54:59.693782Z",
+    "statusd_live_snapshot_at_utc": "2026-02-20T21:56:01.966862Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -751,11 +752,11 @@
       },
       "sv": {
         "server_keys": 49731,
-        "server_translated": 15341,
-        "server_pct": 30.85,
+        "server_translated": 15385,
+        "server_pct": 30.94,
         "client_keys": 3855,
-        "client_translated": 142,
-        "client_pct": 3.68
+        "client_translated": 143,
+        "client_pct": 3.71
       },
       "sw": {
         "server_keys": 49731,
@@ -1160,7 +1161,7 @@
     "start_cycle": 818,
     "cycle_delta": 5652,
     "started_at": "2026-02-16T22:15:50.792950Z",
-    "active_minutes": 5739.147,
+    "active_minutes": 5740.183,
     "baseline_quality_rate_pct": 228.112,
     "current_quality_rate_pct": 501.547,
     "best_quality_rate_pct": 228.112,

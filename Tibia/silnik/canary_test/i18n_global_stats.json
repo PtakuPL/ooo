@@ -1,8 +1,8 @@
 {
-  "total_cycles": 5,
+  "total_cycles": 6,
   "mode": "AUTO_TRANSLATE",
-  "category": "es",
-  "last_update": "2026-02-20T18:05:45.959466",
+  "category": "pl",
+  "last_update": "2026-02-20T18:07:27.724013",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,27 +26,14 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "es",
-    "json_file": "server.json",
-    "keys_to_translate": 151,
-    "guard_fail": 61,
+    "language": "pl",
+    "json_file": "npc.json",
+    "keys_to_translate": 1432,
+    "guard_fail": 27,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 2,
-    "recent_examples": [
-      {
-        "key": "data.otservbr.global.npc.a.fading.memory.L53.1295",
-        "en": "Oh...",
-        "translated": "Oh...",
-        "source": "tm"
-      },
-      {
-        "key": "data.otservbr.global.npc.a.restless.soul.L53.44",
-        "en": "Uhhhh...",
-        "translated": "Uhhhh...",
-        "source": "tm"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

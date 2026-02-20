@@ -154622,5 +154622,61 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-20T23:09:15.287070Z"
+  },
+  "gamestore.transfer.success": {
+    "src_hash": "bff758e27d120e6ff834483b60cad7ff",
+    "text": "Has transferido %s monedas a %s con éxito",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:17:40.558605Z"
+  },
+  "scripts.creaturescripts_bosses_kill.msg_1": {
+    "src_hash": "560c7f8b77eb2ce7d06b77389dbee354",
+    "text": "Has derrotado a {}. Puedes desafiar a este jefe nuevamente en {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:17:40.904584Z"
+  },
+  "scripts.creaturescripts_ferumbras_mortal_shell_death.say_1": {
+    "src_hash": "2b1d632d75efb9d1cd381206fc57e274",
+    "text": "FINALMENTE FORZASTE A FERUMBRAS A VOLVER A SU FORMA MORTAL - ¡NO LE DIVERTE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:17:40.910573Z"
+  },
+  "scripts.creaturescripts_upper_spike_kill.msg_1": {
+    "src_hash": "f2c73ac297cda707cbce8126aa56279a",
+    "text": "Has matado a {} de 7 esqueletos demoníacos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:17:40.926202Z"
+  },
+  "scripts.golden.msg_3": {
+    "src_hash": "7476e62a940eeda414691b70c027ec94",
+    "text": "Te has enfrentado a este jefe en el último ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:17:41.016677Z"
+  },
+  "gamestore.transfer.player_not_found": {
+    "src_hash": "467e32b5382d7802fbb5cb6af1f42b6a",
+    "text": "No pudimos encontrar a ese jugador.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:17:42.809655Z"
+  },
+  "gamestore.transfer.self_transfer": {
+    "src_hash": "d222476c126e3e9f8b6a21219c9278a3",
+    "text": "No puedes transferirte monedas a ti mismo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T23:17:42.810026Z"
   }
 }

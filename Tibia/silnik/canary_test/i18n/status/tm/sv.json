@@ -36950,5 +36950,117 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:59:59.397629Z"
+  },
+  "npc.shirtalis_of_the_summer_court.say_2": {
+    "src_hash": "b44e223dae3e67dc1e85cf990136f5b5",
+    "text": "Du kan nu gå in i teleporten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:15:19.464350Z"
+  },
+  "npc.shirtalis_of_the_summer_court.say_4": {
+    "src_hash": "4dd892d9ddd77849696806ed20b195f9",
+    "text": "Denna plats har alltid varit en plats där sommarens och vinterns mästare har stött samman i strid. Genom århundradena har detta spektakel dragit många varelser hit för att titta på, delta och ägna sig åt mindre välsmakande aktiviteter.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:15:19.465867Z"
+  },
+  "npc.sigurd.farewell_msg_1": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Hej då. Kom tillbaka snart.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:15:19.471826Z"
+  },
+  "npc.sigurd.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:15:19.472343Z"
+  },
+  "npc.sigurd.walkaway_msg_1": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Hej då. Kom tillbaka snart.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:15:19.472739Z"
+  },
+  "npc.simon_the_beggar.no_i_see": {
+    "src_hash": "ba24e4e0889797a89ec76dbd5df56e9d",
+    "text": "Jag förstår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:15:19.474210Z"
+  },
+  "npc.simon_the_beggar.say_11": {
+    "src_hash": "7b82e1e922974120118a565d5e316935",
+    "text": "Du har inte alla nödvändiga föremål.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:15:19.474885Z"
+  },
+  "npc.simon_the_beggar.say_12": {
+    "src_hash": "7b82e1e922974120118a565d5e316935",
+    "text": "Du har inte alla nödvändiga föremål.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:15:19.475310Z"
+  },
+  "npc.simon_the_beggar.say_13": {
+    "src_hash": "67ee55e526e40a4f4eb7b2add1c18927",
+    "text": "Det verkar som att du redan har det här tillägget, försök inte håna mig son!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:15:19.475932Z"
+  },
+  "npc.simon_the_beggar.say_24": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Du har ingen kaka som jag vill ha.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:15:19.476811Z"
+  },
+  "npc.sissek.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Glöm inte att sätta in dina pengar här i Global Bank innan du ger dig ut på äventyr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:15:19.480676Z"
+  },
+  "npc.skjaar.farewell_msg_1": {
+    "src_hash": "f2fb8fae97707ee162c0df0618bb26f0",
+    "text": "Farväl, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:15:19.482029Z"
+  },
+  "npc.skjaar.say_4": {
+    "src_hash": "fbce1a9805b1a6b71d800ff6907da5fa",
+    "text": "Du har inte tillräckligt med pengar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:15:19.482696Z"
+  },
+  "npc.stricken_soul.say_3": {
+    "src_hash": "c066542c456632337339c67bf887b0a8",
+    "text": "Förlåt, jag förstod inte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:15:19.494382Z"
   }
 }

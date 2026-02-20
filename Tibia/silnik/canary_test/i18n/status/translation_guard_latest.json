@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-02-20T21:02:49.036807Z",
-  "cycle": 183,
-  "language": "es",
-  "json_file": "items.json",
-  "translated": 19,
+  "timestamp": "2026-02-20T21:03:43.369334Z",
+  "cycle": 184,
+  "language": "it",
+  "json_file": "npc.json",
+  "translated": 11,
   "placeholders": 0,
-  "guard_fail": 523,
+  "guard_fail": 19,
   "guard": {
-    "placeholder": 0,
+    "placeholder": 2,
     "command": 0,
     "pipe": 0
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 13928
+  "strict_skipped_done": 9981
 }

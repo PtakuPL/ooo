@@ -1,19 +1,21 @@
 {
-  "timestamp": "2026-02-20T21:02:14.587476Z",
+  "timestamp": "2026-02-20T21:04:18.590052Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 2,
-  "warnings_count": 16,
+  "warnings_count": 18,
   "ok_count": 10,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=76233 rate=495.052% window=6.0h top_lang=ro:32180 per_lang=[ro:32180(1747.963%/critical),es:18744(414.049%/critical),ru:11359(375.877%/critical),pl:9680(517.37%/critical),it:2621(107.242%/critical)] per_domain=[items.json:48017(1818.137%/critical),npc.json:13715(201.395%/critical),monsters.json:11937(376.443%/critical),server.json:782(93.541%/critical),spells.json:571(475.833%/critical)]",
-    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5686.4 cycle_delta=5527 best_quality_drop=0.000% reason=active_time_without_quality_drop"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=77234 rate=497.898% window=6.0h top_lang=ro:32180 per_lang=[ro:32180(1747.963%/critical),es:19464(423.222%/critical),ru:11359(375.877%/critical),pl:9939(522.83%/critical),it:2643(107.658%/critical)] per_domain=[items.json:48596(1826.917%/critical),npc.json:13808(201.753%/critical),monsters.json:12266(379.635%/critical),server.json:782(93.541%/critical),spells.json:571(475.833%/critical)]",
+    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5688.5 cycle_delta=5532 best_quality_drop=0.000% reason=active_time_without_quality_drop"
   ],
   "warnings": [
     "BLACKLISTED_TARGET: pl:items.json ma 6351 guard_fail w blackliście",
     "BLACKLISTED_TARGET: pl:npc.json ma 6353 guard_fail w blackliście",
-    "BLACKLISTED_TARGET: es:server.json ma 6346 guard_fail w blackliście",
+    "BLACKLISTED_TARGET: es:server.json ma 6361 guard_fail w blackliście",
     "BLACKLISTED_TARGET: es:spells.json ma 6353 guard_fail w blackliście",
+    "BLACKLISTED_TARGET: ro:monsters.json ma 6356 guard_fail w blackliście",
+    "BLACKLISTED_TARGET: es:items.json ma 6357 guard_fail w blackliście",
     "WORKER_TRANSLATION_CONTRACT_WARNING: pid=114825 translations_only=1 use_gt=1 no_git=0 priority_gate=1 priority_langs=[pl,es,ru,ro,it,sr,sv] pending=[pl,es,ru,ro,it,sr,sv] reason=priority_langs_not_es_pl",
     "GUARDIAN_DEGRADED: guardian raportuje degraded",
     "LANG_PARITY_WARN: cs has 49655 [EN]-backlog after 156h (should be ≤5000)",
@@ -29,12 +31,12 @@
   ],
   "ok": [
     "heartbeat_fresh (3s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (32s)",
-    "guard_report_fresh (3s)",
-    "dispatch_fresh (21s)",
+    "status_md_fresh (28s)",
+    "guard_report_fresh (35s)",
+    "dispatch_fresh (54s)",
     "worker_pid_alive (114825)",
     "worker_process_topology_ok (main=114825 matching=1 extras=0 desc=0 foreign=0 oldest_desc=0s oldest_foreign=0s status=clean)",
-    "queue_freshness_ok (186s, WARN>900s CRIT>1800s)",
+    "queue_freshness_ok (28s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
     "forced_cmd_sla_ok (samples=0 sla_target=45s p95_roundtrip=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0)",
     "repair_tuning_active (samples_2h=48)"
@@ -72,8 +74,8 @@
       "sr",
       "sv"
     ],
-    "active_minutes": 5686.392,
-    "cycle_delta": 5527,
+    "active_minutes": 5688.458,
+    "cycle_delta": 5532,
     "best_quality_drop_pct": 0.0,
     "thresholds": {
       "max_active_minutes": 1440.0,

@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-20T20:02:55.300418Z",
-  "window_end_utc": "2026-02-20T21:02:55.300418Z",
+  "window_start_utc": "2026-02-20T20:04:20.767898Z",
+  "window_end_utc": "2026-02-20T21:04:20.767898Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,23 +8,23 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/suspicious_rejected.jsonl"
   ],
-  "total_cycles": 195,
+  "total_cycles": 193,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 195
+    "AUTO_TRANSLATE": 193
   },
-  "auto_translate_cycles": 195,
+  "auto_translate_cycles": 193,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 2340,
-  "guard_fail": 5324,
-  "guard_fail_rate_pct": 69.5,
+  "translated": 2377,
+  "guard_fail": 5284,
+  "guard_fail_rate_pct": 69.0,
   "no_progress_entries": 2,
   "no_progress_rate_pct": 1.7,
-  "throughput_keys_per_h": 1312.0,
+  "throughput_keys_per_h": 1348.6,
   "suspicious_total": 3550,
-  "suspicious_total_raw": 25433,
+  "suspicious_total_raw": 25573,
   "gt_translated": 76,
   "gt_active": true,
   "top_guard_fail_targets": [
@@ -53,18 +53,6 @@
       "guard_command": 0
     },
     {
-      "target": "pl/spells.json",
-      "translated": 4,
-      "guard_fail": 116,
-      "guard_command": 0
-    },
-    {
-      "target": "es/spells.json",
-      "translated": 8,
-      "guard_fail": 112,
-      "guard_command": 0
-    },
-    {
       "target": "ro/monsters.json",
       "translated": 16,
       "guard_fail": 104,
@@ -72,8 +60,20 @@
     },
     {
       "target": "it/npc.json",
-      "translated": 44,
-      "guard_fail": 76,
+      "translated": 55,
+      "guard_fail": 95,
+      "guard_command": 0
+    },
+    {
+      "target": "pl/spells.json",
+      "translated": 3,
+      "guard_fail": 87,
+      "guard_command": 0
+    },
+    {
+      "target": "es/spells.json",
+      "translated": 6,
+      "guard_fail": 84,
       "guard_command": 0
     }
   ]

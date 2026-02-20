@@ -1,131 +1,131 @@
 {
-  "timestamp": "2026-02-20T23:35:47.692110Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 23,
+  "timestamp": "2026-02-20T23:37:07.877889Z",
+  "language": "ru",
+  "json_file": "cpp.json",
+  "translated": 30,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "cpp.bestiary.creature_set_premium",
+      "en": "Creature has been set! You are a Premium player, so you benefit from up to 6 runes! Charm Expansion allow you to set creatures to all runes at once!",
+      "translated": "Существо установлено! Вы являетесь Премиум-игроком и получаете до 6 рун! Расширение Чарм позволяет вам назначать существам все руны одновременно!",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "cpp.cancel.cannot_stow_containers",
+      "en": "You cannot stow containers.",
+      "translated": "Нельзя складывать контейнеры в stash.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "key": "cpp.cancel.cannot_stow_here",
+      "en": "This item cannot be stowed here.",
+      "translated": "Этот предмет нельзя здесь поместить в stash.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
-      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
-      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "key": "cpp.cancel.no_stowable_items",
+      "en": "There are no stowable items in this container.",
+      "translated": "В этом контейнере нет предметов, которые можно поместить в stash.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "key": "cpp.inspect.imbuement_info",
+      "en": "{0} {1} ({2}), lasts {3}:{4}h while fighting.",
+      "translated": "{0} {1} ({2}), длится {3}:{4}h во время боя.",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "key": "cpp.inspect.physical_plus",
+      "en": "{0} physical + {1}",
+      "translated": "{0} физический + {1}",
       "source": "tm"
     },
     {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "key": "cpp.npc.bought_bag_currency",
+      "en": "Bought {0}x {1} for {2} {3} and 1 shopping bag for {4} gold coins.",
+      "translated": "Купили {0}x {1} за {2} {3} и 1 сумку для покупок за {4} золотых монет.",
       "source": "tm"
     },
     {
-      "key": "npc.elyen_ravenlock.voice_2",
-      "en": "<chants> Re Ha, Omrah, Tan Ra...",
-      "translated": "<cánticos> Re Ha, Omrah, Tan Ra...",
+      "key": "cpp.npc.bought_bag_gold",
+      "en": "Bought {0}x {1} and 1 shopping bag for {2} gold coins.",
+      "translated": "Купили {0}x {1} и 1 сумку для покупок за {2} золотых монет.",
       "source": "tm"
     },
     {
-      "key": "npc.jeronimo.say_3",
-      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
-      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "key": "cpp.npc.bought_bags_currency",
+      "en": "Bought {0}x {1} for {2} {3} and {4}x shopping bags for {5} gold coins.",
+      "translated": "Купили {0}x {1} за сумки {2} {3} и {4}x за {5} золотых монет.",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_3",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "key": "cpp.npc.bought_bags_gold",
+      "en": "Bought {0}x {1} and {2} shopping bags for {3} gold coins.",
+      "translated": "Купили сумки для покупок {0}x {1} и {2} за {3} золотых монет.",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.multi_9",
-      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
-      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "key": "cpp.npc.bought_currency",
+      "en": "Bought {0}x {1} for {2} {3}.",
+      "translated": "Купил {0}x {1} за {2} {3}.",
       "source": "tm"
     },
     {
-      "key": "npc.mother_of_jack.voice_1",
-      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
-      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?",
+      "key": "cpp.npc.bought_gold",
+      "en": "Bought {0}x {1} for {2} gold coins.",
+      "translated": "Купили {0}x {1} за {2} золотых монет.",
       "source": "tm"
     },
     {
-      "key": "npc.navigator.multi_1",
-      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
-      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ...",
+      "key": "cpp.player.corpse_killed_by",
+      "en": "{0} {1} killed by {2}",
+      "translated": "{0} {1} убит {2}",
       "source": "tm"
     },
     {
-      "key": "npc.navigator.multi_2",
-      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
-      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ...",
+      "key": "cpp.player.death_pve",
+      "en": "You died during PvE.",
+      "translated": "Вы умерли во время PvE.",
       "source": "tm"
     },
     {
-      "key": "npc.omrabas.multi_35",
-      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
-      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!",
+      "key": "cpp.player.death_pvp",
+      "en": "You died during PvP.",
+      "translated": "Вы умерли во время PvP.",
       "source": "tm"
     },
     {
-      "key": "npc.omrabas.multi_82",
-      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
-      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!",
+      "key": "cpp.player.using_from_stash",
+      "en": "Using {0}x {1} from your stash. ",
+      "translated": "Используется {0}x {1} из вашего тайника. ",
       "source": "tm"
     },
     {
-      "key": "npc.omrabas.voice_2",
-      "en": "He will PAY for this... They will ALL pay!",
-      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!",
+      "key": "cpp.title.name_4",
+      "en": "Beaststrider (Grade 1)",
+      "translated": "Покоритель зверей (Граде 1)",
       "source": "tm"
     },
     {
-      "key": "npc.pythius_the_rotten.stdmod_12",
-      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
-      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!",
+      "key": "cpp.title.name_5",
+      "en": "Beaststrider (Grade 2)",
+      "translated": "Покоритель зверей (Граде 2)",
       "source": "tm"
     },
     {
-      "key": "npc.raymond_striker.multi_21",
-      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
-      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí...",
+      "key": "cpp.title.name_6",
+      "en": "Beaststrider (Grade 3)",
+      "translated": "Покоритель зверей (Граде 3)",
       "source": "tm"
     },
     {
-      "key": "npc.sane_mage.multi_5",
-      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
-      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?",
+      "key": "cpp.title.name_7",
+      "en": "Beaststrider (Grade 4)",
+      "translated": "Покоритель зверей (Граде 4)",
       "source": "tm"
     }
   ]

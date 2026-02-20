@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-20T23:34:59.108143Z",
-  "cycle_counter": 6654,
-  "last_target_key": "ru:books.json",
-  "last_pending_total": 1121,
+  "timestamp": "2026-02-20T23:37:03.763592Z",
+  "cycle_counter": 6657,
+  "last_target_key": "ru:cpp.json",
+  "last_pending_total": 299,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 179,
@@ -10,29 +10,18 @@
   "skipped_backoff": 10,
   "skipped_guard_fail": 2,
   "guard_fail_blacklist": {
-    "pl:items.json": 6680,
+    "pl:items.json": 6683,
     "pl:npc.json": 6672
   },
   "guard_fail_blocked_count": 2,
   "guard_fail_blocked_preview": [
     {
       "target": "pl:items.json",
-      "until_cycle": 6680,
+      "until_cycle": 6683,
       "remaining_cycles": 26,
       "guard_fail_rate": 0.9968,
       "guard_fail": 4077,
       "translated": 13,
-      "entries": 5,
-      "dominant_reason": "default",
-      "hard_block": false
-    },
-    {
-      "target": "pl:npc.json",
-      "until_cycle": 6672,
-      "remaining_cycles": 18,
-      "guard_fail_rate": 0.9337,
-      "guard_fail": 2114,
-      "translated": 150,
       "entries": 5,
       "dominant_reason": "default",
       "hard_block": false
@@ -62,7 +51,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 6,
+  "cache_cycle": 7,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -246,7 +235,7 @@
       "es": 85.13,
       "ru": 50.45,
       "ro": 43.91,
-      "it": 52.72,
+      "it": 52.77,
       "sr": 45.46,
       "sv": 29.27
     }

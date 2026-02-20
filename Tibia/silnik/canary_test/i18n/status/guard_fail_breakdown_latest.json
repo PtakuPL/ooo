@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T22:36:31.900442Z",
-  "window_start_utc": "2026-02-20T21:36:30.644686Z",
-  "window_end_utc": "2026-02-20T22:36:30.644686Z",
+  "timestamp": "2026-02-20T22:38:23.476222Z",
+  "window_start_utc": "2026-02-20T21:38:22.273009Z",
+  "window_end_utc": "2026-02-20T22:38:22.273009Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,11 +9,11 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 103,
-  "rejected_entries_raw": 285,
-  "suspicious_entries": 3461,
-  "suspicious_entries_raw": 25040,
-  "guard_fail_entries": 109,
-  "guard_fail_sum": 6523,
+  "rejected_entries_raw": 281,
+  "suspicious_entries": 3480,
+  "suspicious_entries_raw": 25135,
+  "guard_fail_entries": 106,
+  "guard_fail_sum": 6547,
   "by_type": {
     "identical_to_en": 90,
     "contains_tibia_proper_noun": 6,
@@ -34,9 +34,9 @@
     "sv": 8
   },
   "by_category": {
-    "items.json": 28,
     "monsters.json": 23,
     "npc.json": 4,
+    "items.json": 28,
     "spells.json": 31,
     "server.json": 17
   },

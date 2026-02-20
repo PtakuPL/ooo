@@ -11,15 +11,15 @@
     "quality_score": 77.5
   },
   "pl": {
-    "last_cycle": "2026-02-20T18:33:34.103173Z",
-    "last_translated": 30,
-    "total_suspicious": 26384,
-    "total_rejected": 1882,
-    "total_gt_guard_fail": 5051,
-    "cycles": 1073,
+    "last_cycle": "2026-02-20T18:39:40.736907Z",
+    "last_translated": 1,
+    "total_suspicious": 26402,
+    "total_rejected": 1895,
+    "total_gt_guard_fail": 5080,
+    "cycles": 1074,
     "quality_score": 60.1,
-    "last_audit": "2026-02-20T18:39:00.673546Z",
-    "issues_count": 183763
+    "last_audit": "2026-02-20T18:39:59.600465Z",
+    "issues_count": 183798
   },
   "az": {
     "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -33,15 +33,15 @@
     "issues_count": 1417
   },
   "es": {
-    "last_cycle": "2026-02-20T18:38:59.776700Z",
+    "last_cycle": "2026-02-20T18:39:56.846602Z",
     "last_translated": 23,
-    "total_suspicious": 52276,
+    "total_suspicious": 52345,
     "total_rejected": 1785,
-    "total_gt_guard_fail": 18821,
-    "cycles": 1490,
+    "total_gt_guard_fail": 18828,
+    "cycles": 1491,
     "quality_score": 60.1,
-    "last_audit": "2026-02-20T18:39:00.673546Z",
-    "issues_count": 327951
+    "last_audit": "2026-02-20T18:39:59.600465Z",
+    "issues_count": 328058
   },
   "pt": {
     "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -72,9 +72,9 @@
     "total_rejected": 770,
     "total_gt_guard_fail": 2251,
     "cycles": 377,
-    "quality_score": 65.7,
-    "last_audit": "2026-02-20T18:39:00.673546Z",
-    "issues_count": 73148
+    "quality_score": 77.8,
+    "last_audit": "2026-02-20T18:39:59.600465Z",
+    "issues_count": 73150
   },
   "ru": {
     "last_cycle": "2026-02-20T18:38:03.148490Z",
@@ -557,8 +557,8 @@
     "total_gt_guard_fail": 4437,
     "cycles": 339,
     "quality_score": 60.1,
-    "last_audit": "2026-02-20T18:39:00.673546Z",
-    "issues_count": 179367
+    "last_audit": "2026-02-20T18:39:59.600465Z",
+    "issues_count": 179395
   },
   "sl": {
     "last_cycle": "2026-02-14T05:30:27.321573Z",

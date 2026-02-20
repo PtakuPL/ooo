@@ -80550,5 +80550,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T21:37:31.201473Z"
+  },
+  "item.606.name": {
+    "src_hash": "e6fb119dfe58251e3548a454f21084bc",
+    "text": "mucchio di pietre sciolte",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:44:06.576778Z"
+  },
+  "item.614.name": {
+    "src_hash": "88336b5bb2a1cc21bac7cf33fd451270",
+    "text": "sabbia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:44:06.583576Z"
+  },
+  "item.6176.name": {
+    "src_hash": "9603a224b40d7b67210b78f2e390d00f",
+    "text": "ramo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:44:06.584187Z"
+  },
+  "item.618.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "erba",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:44:06.584427Z"
+  },
+  "item.6205.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:44:06.588020Z"
+  },
+  "item.6206.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T21:44:06.588492Z"
   }
 }

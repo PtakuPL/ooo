@@ -74390,5 +74390,141 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T22:57:01.966406Z"
+  },
+  "npc.zerbrus.stdmod_1": {
+    "src_hash": "2851bb88a335de322419abe3d47d0789",
+    "text": "Ești rănit sau otrăvit? Te pot ajuta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.296241Z"
+  },
+  "npc.zerbrus.stdmod_12": {
+    "src_hash": "9e1bf346664881cc300d5f3adf470ef4",
+    "text": "Datoria mea este veșnică. Timpul nu are nicio importanță.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.297163Z"
+  },
+  "npc.zerbrus.stdmod_13": {
+    "src_hash": "b0e595d76cca4ce0409f1d10fac76b44",
+    "text": "Înainte de a te lupta cu monștrii, depozitează-ți banii acolo. Dacă mori, nu îl vei pierde dacă este salvat în bancă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.298390Z"
+  },
+  "npc.zerbrus.stdmod_14": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Amenda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.299401Z"
+  },
+  "npc.zerbrus.stdmod_16": {
+    "src_hash": "ec84fce534f58ecf8e407c25b46e7aac",
+    "text": "Sunt un expert în ceea ce privește fauna sălbatică și {monsters} pe această insulă.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.300437Z"
+  },
+  "npc.zerbrus.stdmod_19": {
+    "src_hash": "3b992c3f952c1e2a50f66f2fc9c4a954",
+    "text": "Există două tipuri de păianjeni pe această insulă: păianjeni normali și păianjeni otrăviți. După cum spune numele lor, acestea din urmă vă pot otravi, ceea ce vă va provoca o pierdere constantă a sănătății. Atenție la ei!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.302542Z"
+  },
+  "npc.zerbrus.stdmod_20": {
+    "src_hash": "b533412a8956a32eea03e9b20fecd32f",
+    "text": "Odată ce v-ați îmbunătățit puțin starter-ul {equipment} - poate lucruri din piele - și ați primit o armă mai bună, precum și un scut, ar trebui să puteți ucide trolii.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.304179Z"
+  },
+  "npc.zerbrus.stdmod_21": {
+    "src_hash": "b6f9486b1bbfc2e513ab7cf2d3502aa3",
+    "text": "Ai nevoie de o armă mai puternică decât clubul de start pentru a ucide lupi. Poate un {sabre} sau un scurt {sword} va fi potrivit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.305277Z"
+  },
+  "npc.zerbrus.stdmod_23": {
+    "src_hash": "f8915564d083b560af44e78b385be2bd",
+    "text": "Minotaurs sunt foarte puternici. Veți avea nevoie de un grup de oameni sau de cel puțin nivelul 6 și de echipamente bune pentru a-i putea ucide.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.306783Z"
+  },
+  "npc.zerbrus.stdmod_24": {
+    "src_hash": "8966299f56f4b40490ea90a85a471f3b",
+    "text": "Sunt puțin mai duri decât par, dar sunt totuși niște monștri buni începători.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.307671Z"
+  },
+  "npc.zerbrus.stdmod_25": {
+    "src_hash": "afe9a4daadc8b45b35829bba3bbf0bd4",
+    "text": "Scheletele de pe această insulă sunt de obicei destul de ascunse. Se găsesc adesea lângă morminte și întotdeauna sub pământ. Feriți-vă de scurgerea lor rău de viață.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.308949Z"
+  },
+  "npc.zerbrus.stdmod_28": {
+    "src_hash": "42d8b0c85d42f39d9517b1633dded817",
+    "text": "Și șerpii te pot otrăvi, dar otrava lor nu este de obicei la fel de periculoasă ca cea a păianjenilor otrăviți. Doar fii atent și omoară-i repede.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.310361Z"
+  },
+  "npc.zerbrus.stdmod_29": {
+    "src_hash": "932d11b688698920f384562ffefc9924",
+    "text": "Războinicii premium plătesc. Ei obțin multe avantaje astfel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.311174Z"
+  },
+  "npc.zerbrus.stdmod_30": {
+    "src_hash": "d0e12fd7c549bed11b5ac6d677e977a8",
+    "text": "SALUTĂ REGE!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.311689Z"
+  },
+  "npc.zerbrus.stdmod_32": {
+    "src_hash": "9b33b95a8fba2db96c8499bc9795c9df",
+    "text": "Un loc de protecție. Nimic nu vă poate face rău acolo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.312670Z"
+  },
+  "npc.zerbrus.stdmod_33": {
+    "src_hash": "86798f3b06bcf1ffc45d1ea18b202e72",
+    "text": "Vă pot marca câteva temnițe pe harta dvs. dacă mă întrebați despre {monsters} potrivit pentru nivelul dvs.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:37.314016Z"
+  },
+  "item.18928.desc": {
+    "src_hash": "068e69c8b737db51f882d536161eb8aa",
+    "text": "Folosit pentru a scrie și a împroșca obiecte nesfânte",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:11:06.204779Z"
   }
 }

@@ -1,132 +1,132 @@
 {
-  "timestamp": "2026-02-20T23:09:51.846043Z",
-  "language": "ru",
-  "json_file": "npc.json",
-  "translated": 30,
+  "timestamp": "2026-02-20T23:11:11.344465Z",
+  "language": "ro",
+  "json_file": "items.json",
+  "translated": 26,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.ahmet.greet_msg_1",
-      "en": "Be mourned pilgrim in flesh. I'm selling general goods. Just ask me for a {trade}.",
-      "translated": "Оплакивайся, паломник во плоти. Продаю товары общего назначения. Просто попросите у меня {trade}.",
+      "key": "item.3149.name",
+      "en": "energy bomb rune",
+      "translated": "Energy Bomb Rune",
       "source": "tm"
     },
     {
-      "key": "npc.albinius.greet_msg_1",
-      "en": "Greetings, pilgrim. Welcome to the halls of hope. We are the keepers of this {temple} and welcome everyone willing to contribute.",
-      "translated": "Приветствую тебя, паломник. Добро пожаловать в залы надежды. Мы являемся хранителями этого {temple} и приветствуем всех, кто готов внести свой вклад.",
+      "key": "item.3152.name",
+      "en": "intense healing rune",
+      "translated": "Intense Healing Rune",
       "source": "tm"
     },
     {
-      "key": "npc.andrew_lyze.greet_msg_1",
-      "en": "Hello, I am the warden of this {monument}. The {sarcophagus} in front of you was established to prevent people from going {down} there. But I doubt that this step is sufficient.",
-      "translated": "Здравствуйте, я начальник этого {monument}. {sarcophagus} перед вами был установлен для того, чтобы люди не могли попасть туда {down}. Но я сомневаюсь, что этот шаг достаточен.",
+      "key": "item.3153.name",
+      "en": "cure poison rune",
+      "translated": "Cure Poison Rune",
       "source": "tm"
     },
     {
-      "key": "npc.andrew_lyze.greet_msg_2",
-      "en": "Well, let's see if your mission was successful. Just bring me all needed {materials}.",
-      "translated": "Что ж, посмотрим, увенчалась ли ваша миссия успехом. Просто принеси мне все необходимое {materials}.",
+      "key": "item.3155.name",
+      "en": "sudden death rune",
+      "translated": "Sudden Death Rune",
       "source": "tm"
     },
     {
-      "key": "npc.andrew_lyze.greet_msg_3",
-      "en": "If you dug up all three crystals of sufficient quantity and obtained the poison gland, the charging of your compass can start! For the very first time it will be charged by the violet crystal. Ready to {unleash} the power of the crystals?",
-      "translated": "Если вы выкопали все три кристалла в достаточном количестве и получили ядовитую железу, зарядка вашего компаса может начаться! Впервые он будет заряжен фиолетовым кристаллом. Готовы ощутить силу кристаллов {unleash}?",
+      "key": "item.3156.name",
+      "en": "wild growth rune",
+      "translated": "Wild Growth Rune",
       "source": "tm"
     },
     {
-      "key": "npc.angelo.greet_msg_1",
-      "en": "The Druid of Crunor? He told you that a new cave appeared here? That's right. I'm the head of a {project} that tries to find out more about this new {area}.",
-      "translated": "Druid Крунора? Он вам рассказал, что здесь появилась новая пещера? Это верно. Я руководитель {project}, который пытается узнать больше об этом новом {area}.",
+      "key": "item.3160.name",
+      "en": "ultimate healing rune",
+      "translated": "Ultimate Healing Rune",
       "source": "tm"
     },
     {
-      "key": "npc.angelo.greet_msg_4",
-      "en": "The Druid of Crunor? He told you that a new cave appeared here? That's right. I'm the head of a project that tries to find out more about this new area.",
-      "translated": "Druid Крунора? Он вам рассказал, что здесь появилась новая пещера? Это верно. Я руководитель проекта, который пытается узнать больше об этой новой области.",
+      "key": "item.3164.name",
+      "en": "energy field rune",
+      "translated": "Energy Field Rune",
       "source": "tm"
     },
     {
-      "key": "npc.archery.greet_msg_1",
-      "en": "Welcome to Archery's shop!",
-      "translated": "Добро пожаловать в магазин Archery!",
+      "key": "item.3166.name",
+      "en": "energy wall rune",
+      "translated": "Energy Wall Rune",
       "source": "tm"
     },
     {
-      "key": "npc.armenius.greet_msg_1",
-      "en": "Ah, an adventurer. Be greeted and have a seat. How may I {serve} you?",
-      "translated": "Ах, авантюрист. Поприветствуйте и присядьте. Как я могу {serve} тебя?",
+      "key": "item.3172.name",
+      "en": "poison field rune",
+      "translated": "Poison Field Rune",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.greet_msg_1",
-      "en": "Welcome to my humble abode. If you come for new sorcerer {spells}, you have come to the right place.",
-      "translated": "Добро пожаловать в мою скромную обитель. Если вы пришли за новым колдуном {spells}, вы попали по адресу.",
+      "key": "item.3173.name",
+      "en": "poison bomb rune",
+      "translated": "Poison Bomb Rune",
       "source": "tm"
     },
     {
-      "key": "npc.battlemart.greet_msg_1",
-      "en": "It is good to see you. I'm always at your {shop options}",
-      "translated": "Рад тебя видеть. Я всегда рядом с твоим {shop options}",
+      "key": "item.3175.name",
+      "en": "stone shower rune",
+      "translated": "Stone Shower Rune",
       "source": "tm"
     },
     {
-      "key": "npc.bloodshade_rotten.greet_msg_1",
-      "en": "Mortal! If you are on a {quest} to serve the blood god, my master - be greeted!",
-      "translated": "Смертный! Если вы находитесь на {quest}, чтобы служить богу крови, моему хозяину, добро пожаловать!",
+      "key": "item.3176.name",
+      "en": "poison wall rune",
+      "translated": "Poison Wall Rune",
       "source": "tm"
     },
     {
-      "key": "npc.bloodshade_sacrifice.greet_msg_1",
-      "en": "Mortal! If you are on a {quest} to serve the blood god, my master - be greeted!",
-      "translated": "Смертный! Если вы находитесь на {quest}, чтобы служить богу крови, моему хозяину, добро пожаловать!",
+      "key": "item.3177.name",
+      "en": "convince creature rune",
+      "translated": "Convince Creature Rune",
       "source": "tm"
     },
     {
-      "key": "npc.captain_chelop.farewell_msg_1",
-      "en": "On behalf of the inquisition, I bid you farewell.",
-      "translated": "От имени инквизиции я прощаюсь с вами.",
-      "source": "simple"
+      "key": "item.3180.name",
+      "en": "magic wall rune",
+      "translated": "Magic Wall Rune",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_chelop.walkaway_msg_1",
-      "en": "Good bye then.",
-      "translated": "Тогда до свидания.",
-      "source": "simple"
+      "key": "item.3182.name",
+      "en": "holy missile rune",
+      "translated": "Holy Missile Rune",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_cookie.greet_msg_1",
-      "en": "Greetings, daring adventurer. If you need a {passage}, let me know.",
-      "translated": "Приветствую тебя, отважный искатель приключений. Если вам нужен {passage}, дайте мне знать.",
-      "source": "simple"
+      "key": "item.3188.name",
+      "en": "fire field rune",
+      "translated": "Fire Field Rune",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_dreadnought.farewell_msg_1",
-      "en": "You sure you want to spend time on this piece of rock? I can show you the world! Huh.",
-      "translated": "Ты уверен, что хочешь провести время на этом куске камня? Я могу показать тебе мир! Хм.",
-      "source": "simple"
+      "key": "item.3190.name",
+      "en": "fire wall rune",
+      "translated": "Fire Wall Rune",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_fearless.farewell_msg_1",
-      "en": "Good bye. Recommend us if you were satisfied with our service.",
-      "translated": "До свидания. Порекомендуйте нас, если вы остались довольны нашим сервисом.",
-      "source": "simple"
+      "key": "item.3191.name",
+      "en": "great fireball rune",
+      "translated": "Great Fireball Rune",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_fearless.walkaway_msg_1",
-      "en": "Good bye then.",
-      "translated": "Тогда до свидания.",
-      "source": "simple"
+      "key": "item.3192.name",
+      "en": "fire bomb rune",
+      "translated": "Fire Bomb Rune",
+      "source": "tm"
     },
     {
-      "key": "npc.captain_greyhound.farewell_msg_1",
-      "en": "Good bye. Recommend us if you were satisfied with our service.",
-      "translated": "До свидания. Порекомендуйте нас, если вы остались довольны нашим сервисом.",
-      "source": "simple"
+      "key": "item.3203.name",
+      "en": "animate dead rune",
+      "translated": "Animate Dead Rune",
+      "source": "tm"
     }
   ]
 }

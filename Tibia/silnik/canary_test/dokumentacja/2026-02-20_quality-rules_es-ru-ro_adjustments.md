@@ -98,3 +98,17 @@ Artefakt audytowy:
 - Dodano cleanup końca cyklu: jeśli klucz został skutecznie naprawiony (accepted translation), worker usuwa odpowiadające wpisy z `i18n/status/suspicious_rejected.jsonl` dla bieżącego `(lang, json_file, key)`.
 - Cleanup działa po wszystkich ścieżkach sukcesu (`override`, `tm`, `simple`, `google_translate`, forced repairs).
 - Operacja jest atomowa (tmp + `os.replace`) i loguje podsumowanie: liczba usuniętych wpisów oraz liczba naprawionych kluczy.
+
+### Update: cleanup co X cykli + blokada dopisywania nowych rejectów
+- Cleanup jest teraz harmonogramowany co `X` cykli (domyślnie co 3), z buforem pending kluczy:
+  - plik stanu: `i18n/status/suspicious_rejected_cleanup_state.json`
+  - cleanup uruchamia się gdy `cycle % X == 0` lub bufor pending przekroczy próg.
+- Dodano tryb zapisu nowych rejectów (`SUSPICIOUS_REJECTED_WRITE_MODE`):
+  - `append` — klasyczne dopisywanie do `suspicious_rejected.jsonl`
+  - `suppress_known` — blokuje dopisywanie znanych kluczy
+  - `suppress_all` (domyślnie) — nie dopisuje nowych wpisów, zamiast tego zapisuje zdarzenie do `suspicious_log.jsonl` z akcją `suppressed_rejected_write`.
+
+Nowe ENV:
+- `SUSPICIOUS_REJECTED_CLEANUP_EVERY` (domyślnie `3`)
+- `SUSPICIOUS_REJECTED_CLEANUP_PENDING_THRESHOLD` (domyślnie `200`)
+- `SUSPICIOUS_REJECTED_WRITE_MODE` (`append|suppress_known|suppress_all`, domyślnie `suppress_all`)

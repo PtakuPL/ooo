@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-02-20T23:10:07.341075Z",
-  "window_start_utc": "2026-02-20T22:10:04.984980Z",
-  "window_end_utc": "2026-02-20T23:10:04.984980Z",
+  "timestamp": "2026-02-20T23:13:47.225499Z",
+  "window_start_utc": "2026-02-20T22:13:46.488683Z",
+  "window_end_utc": "2026-02-20T23:13:46.488683Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 161,
-  "rejected_entries_raw": 193,
-  "suspicious_entries": 3906,
-  "suspicious_entries_raw": 16486,
-  "guard_fail_entries": 94,
-  "guard_fail_sum": 2235,
+  "rejected_entries": 148,
+  "rejected_entries_raw": 172,
+  "suspicious_entries": 3957,
+  "suspicious_entries_raw": 15871,
+  "guard_fail_entries": 85,
+  "guard_fail_sum": 2182,
   "by_type": {
-    "identical_to_en": 139,
+    "identical_to_en": 126,
     "mixed_language": 13,
     "contains_tibia_proper_noun": 3,
     "mixed_scripts": 8,
@@ -23,20 +23,20 @@
     "word_salad": 1
   },
   "by_source": {
-    "google_translate": 161
+    "google_translate": 148
   },
   "by_language": {
+    "es": 33,
     "it": 10,
     "ro": 54,
-    "es": 33,
-    "pl": 42,
     "ru": 9,
-    "sv": 13
+    "sv": 13,
+    "pl": 29
   },
   "by_category": {
     "npc.json": 3,
     "items.json": 27,
-    "spells.json": 31,
+    "spells.json": 18,
     "server.json": 16,
     "otclient_modules.json": 30,
     "scripts.json": 10,
@@ -50,13 +50,13 @@
     "php.json": 7
   },
   "by_severity": {
-    "CRITICAL": 140,
+    "CRITICAL": 127,
     "HIGH": 21
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 139
+      "count": 126
     },
     {
       "type": "mixed_language",
@@ -116,20 +116,6 @@
     },
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.iksyapunac_wave.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "spell.mitmahseer_wave.name",
       "count": 2,
       "types": {
         "identical_to_en": 2
@@ -223,6 +209,21 @@
     },
     {
       "key": "otclient_modules.addserver_otui.tr_4",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "cpp.title.name_38",
+      "count": 2,
+      "types": {
+        "identical_to_en": 1,
+        "contains_tibia_proper_noun": 1
+      }
+    },
+    {
+      "key": "cpp.look.def",
       "count": 2,
       "types": {
         "identical_to_en": 2

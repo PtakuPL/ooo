@@ -15465,6 +15465,45 @@ if suspicious_repair_enabled and os.path.exists(suspicious_rejected_path):
         forced_suspicious_repair_keys = set()
         forced_suspicious_repair_counts = {}
 
+known_rejected_keys = set(forced_suspicious_repair_keys)
+try:
+    suspicious_rejected_write_mode = str(os.getenv("SUSPICIOUS_REJECTED_WRITE_MODE", "suppress_all") or "suppress_all").strip().lower()
+except Exception:
+    suspicious_rejected_write_mode = "suppress_all"
+if suspicious_rejected_write_mode not in {"append", "suppress_known", "suppress_all"}:
+    suspicious_rejected_write_mode = "suppress_all"
+
+def _append_suspicious_rejected_entry(log_entry: dict) -> bool:
+    _key = str((log_entry or {}).get("key", "") or "")
+    _suppress = False
+    if suspicious_rejected_write_mode == "suppress_all":
+        _suppress = True
+    elif suspicious_rejected_write_mode == "suppress_known":
+        _suppress = (_key in known_rejected_keys) or (_key in forced_suspicious_repair_keys)
+
+    if _suppress:
+        try:
+            _append_jsonl(suspicious_log_path, {
+                "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                "lang": target_lang,
+                "category": json_file,
+                "key": _key,
+                "source": str((log_entry or {}).get("source", "unknown") or "unknown"),
+                "severity": str((log_entry or {}).get("severity", "HIGH") or "HIGH"),
+                "issues": (log_entry or {}).get("issues", []),
+                "action": "suppressed_rejected_write",
+                "en": str((log_entry or {}).get("en", "") or ""),
+                "translated": str((log_entry or {}).get("translated", "") or ""),
+            })
+        except Exception:
+            pass
+        return False
+
+    _append_jsonl(suspicious_rejected_path, log_entry)
+    if _key:
+        known_rejected_keys.add(_key)
+    return True
+
 # WQ-NPC-SHORT-1: dedykowany repair pass dla krótkich dialogów NPC (LT/CS/EL/IT)
 # niezależnie od limitu, aby szybko usunąć EN-copy na kluczowych frazach.
 forced_npc_short_repairs = 0
@@ -15748,7 +15787,7 @@ for key, en_text in iter_items:
                         })
                         continue
                     suspicious_rejected += 1
-                    _append_jsonl(suspicious_rejected_path, log_entry)
+                    _append_suspicious_rejected_entry(log_entry)
                     _enqueue_manual_review(status_dir, {
                         "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
                         "status": "pending",
@@ -15790,7 +15829,7 @@ for key, en_text in iter_items:
                         })
                         continue
                     suspicious_rejected += 1
-                    _append_jsonl(suspicious_rejected_path, log_entry)
+                    _append_suspicious_rejected_entry(log_entry)
                     guard_fail += 1
                     guard_quality += 1
                     if strict_mode:
@@ -15825,7 +15864,7 @@ for key, en_text in iter_items:
                             })
                             continue
                         suspicious_rejected += 1
-                        _append_jsonl(suspicious_rejected_path, log_entry)
+                        _append_suspicious_rejected_entry(log_entry)
                         guard_fail += 1
                         guard_quality += 1
                         if strict_mode:
@@ -15941,7 +15980,7 @@ for key, en_text in iter_items:
                         })
                         continue
                     suspicious_rejected += 1
-                    _append_jsonl(suspicious_rejected_path, log_entry)
+                    _append_suspicious_rejected_entry(log_entry)
                     _enqueue_manual_review(status_dir, {
                         "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
                         "status": "pending",
@@ -15980,7 +16019,7 @@ for key, en_text in iter_items:
                         })
                         continue
                     suspicious_rejected += 1
-                    _append_jsonl(suspicious_rejected_path, log_entry)
+                    _append_suspicious_rejected_entry(log_entry)
                     guard_fail += 1
                     guard_quality += 1
                     if strict_mode:
@@ -16012,7 +16051,7 @@ for key, en_text in iter_items:
                             })
                             continue
                         suspicious_rejected += 1
-                        _append_jsonl(suspicious_rejected_path, log_entry)
+                        _append_suspicious_rejected_entry(log_entry)
                         guard_fail += 1
                         guard_quality += 1
                         if strict_mode:
@@ -16176,7 +16215,7 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                         }
                         if len(issues) > 3:
                             suspicious_rejected += 1
-                            _append_jsonl(suspicious_rejected_path, log_entry)
+                            _append_suspicious_rejected_entry(log_entry)
                             _enqueue_manual_review(status_dir, {
                                 "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
                                 "status": "pending",
@@ -16200,7 +16239,7 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                             continue
                         if max_sev == "CRITICAL":
                             suspicious_rejected += 1
-                            _append_jsonl(suspicious_rejected_path, log_entry)
+                            _append_suspicious_rejected_entry(log_entry)
                             gt_guard_fail += 1
                             guard_fail += 1
                             guard_quality += 1
@@ -16218,7 +16257,7 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
                             }
                             if any(_has_issue_type(issues, t) for t in _gt_reject_types):
                                 suspicious_rejected += 1
-                                _append_jsonl(suspicious_rejected_path, log_entry)
+                                _append_suspicious_rejected_entry(log_entry)
                                 gt_guard_fail += 1
                                 guard_fail += 1
                                 guard_quality += 1
@@ -16281,8 +16320,42 @@ if use_google_translate and gt_pending and not mid_batch_preempt:
             else:
                 skipped_not_placeholder += 1
 
-# ── Cleanup: usuń z suspicious_rejected wpisy już naprawionych kluczy ──────
-if resolved_rejected_keys and os.path.exists(suspicious_rejected_path):
+# ── Cleanup: usuń z suspicious_rejected wpisy naprawionych kluczy co X cykli ──
+cleanup_state_path = os.path.join(status_dir, "suspicious_rejected_cleanup_state.json")
+cleanup_scope = f"{str(target_lang or '').lower()}|{str(json_file or '').lower()}"
+cleanup_pending = set()
+cleanup_state = {}
+
+try:
+    suspicious_rejected_cleanup_every = max(1, int(os.getenv("SUSPICIOUS_REJECTED_CLEANUP_EVERY", "3") or "3"))
+except Exception:
+    suspicious_rejected_cleanup_every = 3
+try:
+    suspicious_rejected_cleanup_pending_threshold = max(20, int(os.getenv("SUSPICIOUS_REJECTED_CLEANUP_PENDING_THRESHOLD", "200") or "200"))
+except Exception:
+    suspicious_rejected_cleanup_pending_threshold = 200
+try:
+    current_cycle_num_for_cleanup = int(os.getenv("CURRENT_CYCLE", "0") or "0")
+except Exception:
+    current_cycle_num_for_cleanup = 0
+
+try:
+    if os.path.exists(cleanup_state_path):
+        with open(cleanup_state_path, "r", encoding="utf-8") as _csf:
+            cleanup_state = json.load(_csf)
+except Exception:
+    cleanup_state = {}
+
+_pending_map = cleanup_state.get("pending", {}) if isinstance(cleanup_state.get("pending", {}), dict) else {}
+_pending_scope_existing = _pending_map.get(cleanup_scope, []) if isinstance(_pending_map.get(cleanup_scope, []), list) else []
+cleanup_pending = {str(x) for x in _pending_scope_existing if str(x)}
+cleanup_pending.update(resolved_rejected_keys)
+
+_cleanup_due_by_cycle = (current_cycle_num_for_cleanup > 0 and (current_cycle_num_for_cleanup % suspicious_rejected_cleanup_every) == 0)
+_cleanup_due_by_size = len(cleanup_pending) >= suspicious_rejected_cleanup_pending_threshold
+_cleanup_due = bool(cleanup_pending) and (_cleanup_due_by_cycle or _cleanup_due_by_size)
+
+if _cleanup_due and os.path.exists(suspicious_rejected_path):
     try:
         with open(suspicious_rejected_path, "r", encoding="utf-8") as _rf:
             _lines = _rf.readlines()
@@ -16306,36 +16379,61 @@ if resolved_rejected_keys and os.path.exists(suspicious_rejected_path):
             _row_cat = str(_row.get("category", "") or "").lower()
             _row_key = str(_row.get("key", "") or "")
 
-            if _row_lang == _target_lang_lc and _row_cat == _target_file_lc and _row_key in resolved_rejected_keys:
+            if _row_lang == _target_lang_lc and _row_cat == _target_file_lc and _row_key in cleanup_pending:
                 _removed += 1
                 continue
             _kept_lines.append(_line)
 
-        if _removed > 0:
-            import tempfile
-            _dir = os.path.dirname(suspicious_rejected_path) or "."
-            _fd, _tmp = tempfile.mkstemp(dir=_dir, suffix=".tmp")
+        import tempfile
+        _dir = os.path.dirname(suspicious_rejected_path) or "."
+        _fd, _tmp = tempfile.mkstemp(dir=_dir, suffix=".tmp")
+        try:
+            with os.fdopen(_fd, "w", encoding="utf-8") as _wf:
+                for _line in _kept_lines:
+                    if _line.endswith("\n"):
+                        _wf.write(_line)
+                    else:
+                        _wf.write(_line + "\n")
+            os.replace(_tmp, suspicious_rejected_path)
+            resolved_rejected_rows = int(_removed)
+            print(
+                f"🧹 suspicious_rejected cleanup: removed={_removed}, pending_keys={len(cleanup_pending)}, "
+                f"lang={target_lang}, file={json_file}, cycle={current_cycle_num_for_cleanup}, every={suspicious_rejected_cleanup_every}"
+            )
+        except Exception:
             try:
-                with os.fdopen(_fd, "w", encoding="utf-8") as _wf:
-                    for _line in _kept_lines:
-                        if _line.endswith("\n"):
-                            _wf.write(_line)
-                        else:
-                            _wf.write(_line + "\n")
-                os.replace(_tmp, suspicious_rejected_path)
-                resolved_rejected_rows = int(_removed)
-                print(
-                    f"🧹 suspicious_rejected cleanup: removed={_removed}, "
-                    f"resolved_keys={len(resolved_rejected_keys)}, lang={target_lang}, file={json_file}"
-                )
+                os.unlink(_tmp)
             except Exception:
-                try:
-                    os.unlink(_tmp)
-                except Exception:
-                    pass
-                raise
+                pass
+            raise
+
+        cleanup_pending = set()
     except Exception as _cleanup_err:
         print(f"⚠️ suspicious_rejected cleanup failed: {_cleanup_err}")
+
+try:
+    _pending_map[cleanup_scope] = sorted(list(cleanup_pending))
+    cleanup_state = {
+        "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "last_cycle": int(current_cycle_num_for_cleanup),
+        "cleanup_every": int(suspicious_rejected_cleanup_every),
+        "pending": _pending_map,
+    }
+    import tempfile
+    _state_dir = os.path.dirname(cleanup_state_path) or "."
+    _sfd, _stmp = tempfile.mkstemp(dir=_state_dir, suffix=".tmp")
+    try:
+        with os.fdopen(_sfd, "w", encoding="utf-8") as _sw:
+            json.dump(cleanup_state, _sw, indent=2, ensure_ascii=False)
+        os.replace(_stmp, cleanup_state_path)
+    except Exception:
+        try:
+            os.unlink(_stmp)
+        except Exception:
+            pass
+        raise
+except Exception:
+    pass
 
 # ── Guard: zapobiegaj pustym wartościom (defense-in-depth) ─────────────────
 _empty_guard_fixed = 0

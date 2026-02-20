@@ -81526,5 +81526,45 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:09:31.901061Z"
+  },
+  "item.2854.name": {
+    "src_hash": "96982677cff68197958ef9471c8c990e",
+    "text": "Zaino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:48.285133Z"
+  },
+  "item.3447.name": {
+    "src_hash": "9022a153e6190f10d9b57aa4232b8aea",
+    "text": "Freccia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:48.707039Z"
+  },
+  "item.6900.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:49.363173Z"
+  },
+  "item.6901.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:49.363707Z"
+  },
+  "item.6902.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:49.364052Z"
   }
 }

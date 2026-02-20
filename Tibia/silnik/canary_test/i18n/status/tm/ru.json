@@ -38942,5 +38942,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:09:51.155361Z"
+  },
+  "item.12331.name": {
+    "src_hash": "ceb185d06c0e157abe4c7255bc1aad2d",
+    "text": "мёртвый драптор",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:56.669048Z"
+  },
+  "item.12332.name": {
+    "src_hash": "ceb185d06c0e157abe4c7255bc1aad2d",
+    "text": "мёртвый драптор",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T23:10:56.670046Z"
   }
 }

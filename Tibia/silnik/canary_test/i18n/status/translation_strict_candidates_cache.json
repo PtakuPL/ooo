@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-20T23:09:46.160196Z",
-  "built_cycle": 3,
+  "timestamp": "2026-02-20T23:11:00.836407Z",
+  "built_cycle": 1,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -474,9 +474,9 @@
     {
       "lang": "it",
       "json_file": "items.json",
-      "pending_total": 12518,
-      "todo": 12518,
-      "simple_todo": 10423,
+      "pending_total": 12513,
+      "todo": 12513,
+      "simple_todo": 10418,
       "missing_in_lang": 0
     },
     {
@@ -722,9 +722,9 @@
     {
       "lang": "ru",
       "json_file": "npc.json",
-      "pending_total": 12911,
-      "todo": 12911,
-      "simple_todo": 1534,
+      "pending_total": 12926,
+      "todo": 12926,
+      "simple_todo": 1532,
       "missing_in_lang": 0
     },
     {
@@ -906,9 +906,9 @@
     {
       "lang": "ro",
       "json_file": "npc.json",
-      "pending_total": 7471,
-      "todo": 7471,
-      "simple_todo": 705,
+      "pending_total": 7456,
+      "todo": 7456,
+      "simple_todo": 704,
       "missing_in_lang": 0
     },
     {

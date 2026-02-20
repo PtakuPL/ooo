@@ -1,8 +1,8 @@
 {
-  "total_cycles": 12,
+  "total_cycles": 13,
   "mode": "AUTO_TRANSLATE",
-  "category": "ro",
-  "last_update": "2026-02-21T00:58:56.152439",
+  "category": "pl",
+  "last_update": "2026-02-21T00:59:43.587306",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,10 +26,10 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "ro",
-    "json_file": "quests.json",
-    "keys_to_translate": 10,
-    "guard_fail": 54,
+    "language": "pl",
+    "json_file": "questlog.json",
+    "keys_to_translate": 1805,
+    "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

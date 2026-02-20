@@ -73278,5 +73278,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T22:04:47.598412Z"
+  },
+  "npc.yberius.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Așa că primește protecția întorsăturii destinului, pelerine.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.142889Z"
+  },
+  "npc.yberius.stdmod_12": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Da, am fost informat ce să fac. Ești pregătit să primești rândul meu de rugăciune?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.144056Z"
+  },
+  "npc.yberius.stdmod_16": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Ai primit deja rândul meu de rugăciune.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.144915Z"
+  },
+  "npc.yberius.stdmod_18": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Ești rănit, copilul meu. Îți voi vindeca rănile.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.145586Z"
+  },
+  "npc.yberius.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Nu arăți așa de rău. Scuze, nu te pot ajuta. Dar dacă cauți protecție suplimentară, ar trebui să mergi pe {pilgrimage} de cenușă sau să obții protecția {twist of fate} aici.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.146588Z"
+  },
+  "npc.yberius.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Amenda. Sunteți liber să refuzați oferta mea.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.147109Z"
+  },
+  "npc.yberius.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Ori de câte ori primești o rană letală, forța ta vitală este deteriorată și există șansa să pierzi o parte din echipamentul tău. Cu fiecare dintre cele cinci {blessings} pe care le aveți, această daune și șansa de pierdere vor fi reduse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.148264Z"
+  },
+  "npc.yberius.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Văd că ai primit scutul spiritual în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.149176Z"
+  },
+  "npc.yberius.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Simt că druidii de la nord de Carlin ți-au oferit Îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.149841Z"
+  },
+  "npc.yberius.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Văd că ai primit binecuvântarea celor doi sori în solar lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.150630Z"
+  },
+  "npc.yberius.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Îmi dau seama că scânteia phoenixului ți-a fost deja dată de preoții pitici ai pământului și focului în Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.151451Z"
+  },
+  "npc.yberius.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Simt că ai vorbit deja cu pustnicul Eremo de pe insula Cormaya și ai primit această binecuvântare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.152373Z"
+  },
+  "npc.yberius.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Puteți cere binecuvântarea scuturilor spirituale în templul cu flori albe de la sud de Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.153139Z"
+  },
+  "npc.yberius.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druizii la nord de Carlin vă vor oferi îmbrățișarea lui Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.153714Z"
+  },
+  "npc.yberius.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Puteți cere binecuvântarea celor doi sori în bronzul de lângă Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.154412Z"
+  },
+  "npc.yberius.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Păstrează-ți bine piatra de aventurier.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T22:10:50.154838Z"
   }
 }

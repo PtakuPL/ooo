@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:10:10.837474Z",
-  "window_start_utc": "2026-02-20T18:10:10.165042Z",
-  "window_end_utc": "2026-02-20T19:10:10.165042Z",
+  "timestamp": "2026-02-20T19:12:33.025949Z",
+  "window_start_utc": "2026-02-20T18:12:32.336255Z",
+  "window_end_utc": "2026-02-20T19:12:32.336255Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,25 +9,25 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 68,
-  "rejected_entries_raw": 369,
-  "suspicious_entries": 3111,
-  "suspicious_entries_raw": 25573,
-  "guard_fail_entries": 131,
-  "guard_fail_sum": 7033,
+  "rejected_entries_raw": 352,
+  "suspicious_entries": 3112,
+  "suspicious_entries_raw": 25172,
+  "guard_fail_entries": 127,
+  "guard_fail_sum": 6194,
   "by_type": {
     "identical_to_en": 63,
-    "mixed_language": 4,
     "word_salad": 1,
-    "contains_tibia_proper_noun": 4
+    "contains_tibia_proper_noun": 4,
+    "mixed_language": 4
   },
   "by_source": {
     "google_translate": 68
   },
   "by_language": {
-    "pl": 30,
-    "it": 2,
+    "ro": 28,
     "es": 8,
-    "ro": 28
+    "it": 2,
+    "pl": 30
   },
   "by_category": {
     "items.json": 26,
@@ -46,11 +46,11 @@
       "count": 63
     },
     {
-      "type": "mixed_language",
+      "type": "contains_tibia_proper_noun",
       "count": 4
     },
     {
-      "type": "contains_tibia_proper_noun",
+      "type": "mixed_language",
       "count": 4
     },
     {
@@ -59,13 +59,6 @@
     }
   ],
   "top_keys": [
-    {
-      "key": "item.12742.name",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
     {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
@@ -120,84 +113,91 @@
       }
     },
     {
-      "key": "item.11808.name",
+      "key": "item.12742.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "item.10096.name",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "item.12576.name",
+      "key": "item.10180.name",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "item.12577.name",
+      "key": "item.10190.name",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "item.12580.name",
+      "key": "item.10191.name",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "item.12581.name",
+      "key": "item.10192.name",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "item.12659.name",
+      "key": "npc.al_dee.stdmod_41",
       "count": 1,
       "types": {
-        "mixed_language": 1
+        "word_salad": 1
       }
     },
     {
-      "key": "item.12828.name",
-      "count": 1,
-      "types": {
-        "mixed_language": 1
-      }
-    },
-    {
-      "key": "item.12829.name",
-      "count": 1,
-      "types": {
-        "mixed_language": 1
-      }
-    },
-    {
-      "key": "item.12830.name",
-      "count": 1,
-      "types": {
-        "mixed_language": 1
-      }
-    },
-    {
-      "key": "item.13670.name",
+      "key": "monster.deathspawn.name",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "item.17809.name",
+      "key": "monster.slime.name",
       "count": 1,
       "types": {
         "identical_to_en": 1
       }
     },
     {
-      "key": "item.17812.name",
+      "key": "monster.frost_troll.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "monster.demon.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "monster.sandcrawler.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "monster.bazir.name",
       "count": 1,
       "types": {
         "identical_to_en": 1

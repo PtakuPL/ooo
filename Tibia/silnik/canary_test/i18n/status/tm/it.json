@@ -78734,5 +78734,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T19:06:12.136328Z"
+  },
+  "item.421.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "C'è un buco nel soffitto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:10:41.451773Z"
+  },
+  "item.421.name": {
+    "src_hash": "9ee0ca64809ac6f3c4eef93d48904c22",
+    "text": "piastrella in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:10:41.452269Z"
+  },
+  "item.429.name": {
+    "src_hash": "9ee0ca64809ac6f3c4eef93d48904c22",
+    "text": "piastrella in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:10:41.474492Z"
+  },
+  "item.436.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:10:41.485495Z"
+  },
+  "item.43845.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:10:41.491018Z"
+  },
+  "item.43851.name": {
+    "src_hash": "bec600b361e6aac27997d53441ed85aa",
+    "text": "Materia della luce oscura",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:10:41.491775Z"
   }
 }

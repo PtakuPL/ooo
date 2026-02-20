@@ -1,33 +1,32 @@
 {
-  "timestamp": "2026-02-20T18:28:43.340708Z",
-  "window_start_utc": "2026-02-20T17:28:42.652218Z",
-  "window_end_utc": "2026-02-20T18:28:42.652218Z",
+  "timestamp": "2026-02-20T18:29:56.439702Z",
+  "window_start_utc": "2026-02-20T17:29:55.572649Z",
+  "window_end_utc": "2026-02-20T18:29:55.572649Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 222,
-  "rejected_entries_raw": 365,
-  "suspicious_entries": 3352,
-  "suspicious_entries_raw": 25140,
+  "rejected_entries": 214,
+  "rejected_entries_raw": 364,
+  "suspicious_entries": 3302,
+  "suspicious_entries_raw": 28289,
   "guard_fail_entries": 122,
-  "guard_fail_sum": 7608,
+  "guard_fail_sum": 7568,
   "by_type": {
-    "identical_to_en": 187,
-    "mixed_language": 20,
+    "identical_to_en": 180,
     "word_salad": 5,
     "fx_token": 3,
     "contains_tibia_proper_noun": 9,
+    "mixed_language": 19,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7
   },
   "by_source": {
-    "google_translate": 222
+    "google_translate": 214
   },
   "by_language": {
-    "sv": 8,
     "pl": 49,
     "es": 48,
     "it": 33,
@@ -35,7 +34,6 @@
     "ru": 7
   },
   "by_category": {
-    "server.json": 10,
     "achievements.json": 7,
     "npc.json": 4,
     "otclient_modules.json": 28,
@@ -51,20 +49,21 @@
     "items.json": 24,
     "spells.json": 72,
     "quests.json": 1,
+    "server.json": 2,
     "monsters.json": 22
   },
   "by_severity": {
-    "CRITICAL": 192,
-    "HIGH": 30
+    "CRITICAL": 185,
+    "HIGH": 29
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 187
+      "count": 180
     },
     {
       "type": "mixed_language",
-      "count": 20
+      "count": 19
     },
     {
       "type": "contains_tibia_proper_noun",
@@ -148,20 +147,6 @@
       }
     },
     {
-      "key": "data.otservbr.global.npc.anerui.L71.1487",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.brasith.L59.1211",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
       "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
@@ -237,6 +222,20 @@
       "count": 2,
       "types": {
         "mixed_language": 2
+      }
+    },
+    {
+      "key": "talkaction.gm.spy.msg_stack_count",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "talkaction.god.kv.msg_allkv_value",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
       }
     }
   ]

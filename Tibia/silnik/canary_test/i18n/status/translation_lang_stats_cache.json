@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T18:28:42.402171Z",
+  "timestamp": "2026-02-20T18:29:55.329159Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 49,
-  "cache_misses": 3,
-  "file_cache_hits": 1973,
-  "file_cache_misses": 3,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 1975,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -7410,7 +7410,7 @@
         [
           "npc.json",
           1,
-          1771612067491006750,
+          1771612190221440955,
           1847374
         ],
         [
@@ -7817,7 +7817,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771612067491006750,
+            1771612190221440955,
             1847374
           ],
           "row": {
@@ -15981,8 +15981,8 @@
         [
           "items.json",
           1,
-          1771611621651350108,
-          902881
+          1771612141858682852,
+          902878
         ],
         [
           "libs.json",
@@ -16134,14 +16134,14 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 27835,
+        "translated_keys": 27841,
         "english_copy_keys": 2142,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 51.94,
+        "completion_pct": 51.96,
         "server_keys": 49731,
-        "server_translated": 26476,
-        "server_pct": 53.24,
+        "server_translated": 26482,
+        "server_pct": 53.25,
         "client_keys": 3855,
         "client_translated": 1359,
         "client_pct": 35.25
@@ -16332,12 +16332,12 @@
         "items.json": {
           "sig": [
             1,
-            1771611621651350108,
-            902881
+            1771612141858682852,
+            902878
           ],
           "row": {
             "total_reference_keys": 17057,
-            "translated_keys": 4389,
+            "translated_keys": 4395,
             "english_copy_keys": 7,
             "missing_keys": 0,
             "missing_files": 0
@@ -26943,7 +26943,7 @@
         [
           "items.json",
           1,
-          1771611689036457779,
+          1771612157341720786,
           887987
         ],
         [
@@ -27294,7 +27294,7 @@
         "items.json": {
           "sig": [
             1,
-            1771611689036457779,
+            1771612157341720786,
             887987
           ],
           "row": {
@@ -27726,7 +27726,7 @@
         [
           "items.json",
           1,
-          1771611677784533022,
+          1771612146823317892,
           983333
         ],
         [
@@ -28077,7 +28077,7 @@
         "items.json": {
           "sig": [
             1,
-            1771611677784533022,
+            1771612146823317892,
             983333
           ],
           "row": {

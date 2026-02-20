@@ -78398,5 +78398,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:20:21.409892Z"
+  },
+  "item.37059.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Ricordo del Museo Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:29:01.577779Z"
+  },
+  "item.37059.name": {
+    "src_hash": "40b25f4a6a4f4fa20e43c63414523461",
+    "text": "amuleto del trifoglio fortunato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:29:01.578181Z"
+  },
+  "item.37060.desc": {
+    "src_hash": "d224338bf4ba4205ab91df6d229567a7",
+    "text": "Ricordo del Museo Thais",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:29:01.578670Z"
+  },
+  "item.371.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:29:01.580024Z"
+  },
+  "item.37534.desc": {
+    "src_hash": "f8260ddde642e2d75b0a592e57332de8",
+    "text": "È stato assegnato durante i festeggiamenti dell'anniversario di Tibia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:29:01.601215Z"
+  },
+  "item.37537.desc": {
+    "src_hash": "f8260ddde642e2d75b0a592e57332de8",
+    "text": "È stato assegnato durante i festeggiamenti dell'anniversario di Tibia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T18:29:01.601866Z"
   }
 }

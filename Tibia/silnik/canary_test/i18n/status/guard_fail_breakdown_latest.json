@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:02:34.016765Z",
-  "window_start_utc": "2026-02-20T18:02:33.310795Z",
-  "window_end_utc": "2026-02-20T19:02:33.310795Z",
+  "timestamp": "2026-02-20T19:03:52.219471Z",
+  "window_start_utc": "2026-02-20T18:03:51.542236Z",
+  "window_end_utc": "2026-02-20T19:03:51.542236Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,11 +9,11 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 68,
-  "rejected_entries_raw": 352,
+  "rejected_entries_raw": 375,
   "suspicious_entries": 3110,
-  "suspicious_entries_raw": 28157,
+  "suspicious_entries_raw": 25372,
   "guard_fail_entries": 128,
-  "guard_fail_sum": 8020,
+  "guard_fail_sum": 7517,
   "by_type": {
     "identical_to_en": 63,
     "word_salad": 1,
@@ -30,11 +30,11 @@
     "pl": 30
   },
   "by_category": {
-    "server.json": 2,
     "npc.json": 4,
     "items.json": 26,
     "spells.json": 13,
-    "monsters.json": 23
+    "monsters.json": 23,
+    "server.json": 2
   },
   "by_severity": {
     "CRITICAL": 64,
@@ -120,20 +120,6 @@
       }
     },
     {
-      "key": "data.otservbr.global.npc.anerui.L71.1487",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.brasith.L59.1211",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
       "key": "npc.al_dee.stdmod_41",
       "count": 1,
       "types": {
@@ -198,6 +184,20 @@
     },
     {
       "key": "spell.podzillaphys_chain.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "spell.rotthing_shaper.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "spell.tarbaz_tp.name",
       "count": 1,
       "types": {
         "identical_to_en": 1

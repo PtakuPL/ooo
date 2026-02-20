@@ -175030,5 +175030,69 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T16:46:50.564515Z"
+  },
+  "monster.betrayed_wraith.voice_3": {
+    "src_hash": "f4eac71ef6f50c82aaaf527c0bb7a09e",
+    "text": "Тцхаррр!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:36:36.494718Z"
+  },
+  "monster.water_buffalo.voice_1": {
+    "src_hash": "69ed25be895c3bbd444a1ab42ad03bc0",
+    "text": "Гнаррр!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:36:36.601582Z"
+  },
+  "monster.quara_constrictor.voice_2": {
+    "src_hash": "e762b0133b132a4bfc8e79d8d8e177b6",
+    "text": "Тсссс!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:36:36.656723Z"
+  },
+  "monster.quara_predator.voice_1": {
+    "src_hash": "69ed25be895c3bbd444a1ab42ad03bc0",
+    "text": "Гнаррр!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:36:36.665044Z"
+  },
+  "monster.quara_predator.voice_2": {
+    "src_hash": "f4eac71ef6f50c82aaaf527c0bb7a09e",
+    "text": "Тцхаррр!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:36:36.665433Z"
+  },
+  "monster.quara_predator_scout.voice_1": {
+    "src_hash": "69ed25be895c3bbd444a1ab42ad03bc0",
+    "text": "Гнаррр!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:36:36.670926Z"
+  },
+  "monster.quara_predator_scout.voice_2": {
+    "src_hash": "f4eac71ef6f50c82aaaf527c0bb7a09e",
+    "text": "Тцхаррр!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:36:36.671220Z"
+  },
+  "monster.quara_constrictor_scout.voice_1": {
+    "src_hash": "e762b0133b132a4bfc8e79d8d8e177b6",
+    "text": "Тсссс!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T17:36:36.680061Z"
   }
 }

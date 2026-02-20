@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-20T17:36:18.702643Z",
+  "timestamp": "2026-02-20T17:37:19.511236Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 48,
-  "cache_misses": 4,
-  "file_cache_hits": 1972,
-  "file_cache_misses": 4,
+  "cache_hits": 50,
+  "cache_misses": 2,
+  "file_cache_hits": 1974,
+  "file_cache_misses": 2,
   "langs": {
     "ar": {
       "sig": [
@@ -7314,8 +7314,8 @@
         [
           "client.json",
           1,
-          1771310526602014457,
-          15774
+          1771609034405072219,
+          15773
         ],
         [
           "cpp.json",
@@ -7593,8 +7593,8 @@
         "client.json": {
           "sig": [
             1,
-            1771310526602014457,
-            15774
+            1771609034405072219,
+            15773
           ],
           "row": {
             "total_reference_keys": 242,
@@ -25443,7 +25443,7 @@
         [
           "otclient_modules.json",
           1,
-          1771534715328616559,
+          1771609016567746668,
           138243
         ],
         [
@@ -25882,7 +25882,7 @@
         "otclient_modules.json": {
           "sig": [
             1,
-            1771534715328616559,
+            1771609016567746668,
             138243
           ],
           "row": {
@@ -30882,8 +30882,8 @@
         [
           "monsters.json",
           1,
-          1771534669991927414,
-          399532
+          1771608996962655414,
+          399581
         ],
         [
           "mounts.json",
@@ -31012,7 +31012,7 @@
         "scope": "global",
         "total_reference_keys": 53586,
         "translated_keys": 24320,
-        "english_copy_keys": 1081,
+        "english_copy_keys": 1073,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 45.38,
@@ -31265,13 +31265,13 @@
         "monsters.json": {
           "sig": [
             1,
-            1771534669991927414,
-            399532
+            1771608996962655414,
+            399581
           ],
           "row": {
             "total_reference_keys": 5915,
             "translated_keys": 5792,
-            "english_copy_keys": 224,
+            "english_copy_keys": 216,
             "missing_keys": 0,
             "missing_files": 0
           }

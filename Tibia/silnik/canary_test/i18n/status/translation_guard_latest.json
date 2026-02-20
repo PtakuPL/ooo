@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-20T17:35:42.112186Z",
-  "cycle": 11,
-  "language": "sv",
-  "json_file": "monsters.json",
-  "translated": 30,
+  "timestamp": "2026-02-20T17:37:14.899767Z",
+  "cycle": 12,
+  "language": "es",
+  "json_file": "client.json",
+  "translated": 0,
   "placeholders": 0,
-  "guard_fail": 5,
+  "guard_fail": 8,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 3892
+  "strict_skipped_done": 242
 }

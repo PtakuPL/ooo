@@ -1,52 +1,52 @@
 {
-  "timestamp": "2026-02-20T18:56:41.167349Z",
-  "window_start_utc": "2026-02-20T17:56:40.433017Z",
-  "window_end_utc": "2026-02-20T18:56:40.433017Z",
+  "timestamp": "2026-02-20T18:57:29.157437Z",
+  "window_start_utc": "2026-02-20T17:57:28.488337Z",
+  "window_end_utc": "2026-02-20T18:57:28.488337Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 114,
-  "rejected_entries_raw": 381,
-  "suspicious_entries": 3112,
-  "suspicious_entries_raw": 28285,
-  "guard_fail_entries": 119,
-  "guard_fail_sum": 8811,
+  "rejected_entries": 113,
+  "rejected_entries_raw": 401,
+  "suspicious_entries": 3103,
+  "suspicious_entries_raw": 25244,
+  "guard_fail_entries": 122,
+  "guard_fail_sum": 8837,
   "by_type": {
-    "identical_to_en": 96,
-    "word_salad": 1,
+    "identical_to_en": 95,
     "mixed_language": 10,
     "mixed_scripts": 7,
     "cyrillic_latin_mix": 7,
-    "contains_tibia_proper_noun": 6
+    "contains_tibia_proper_noun": 6,
+    "word_salad": 1
   },
   "by_source": {
-    "google_translate": 114
+    "google_translate": 113
   },
   "by_language": {
-    "es": 8,
-    "it": 22,
+    "it": 21,
     "ru": 7,
     "ro": 47,
-    "pl": 30
+    "pl": 30,
+    "es": 8
   },
   "by_category": {
-    "npc.json": 4,
-    "spells.json": 59,
+    "spells.json": 58,
     "items.json": 26,
+    "npc.json": 4,
     "server.json": 2,
     "monsters.json": 23
   },
   "by_severity": {
-    "CRITICAL": 97,
+    "CRITICAL": 96,
     "HIGH": 17
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 96
+      "count": 95
     },
     {
       "type": "mixed_language",
@@ -81,13 +81,6 @@
       }
     },
     {
-      "key": "spell.rotthingholy_ulus.name",
-      "count": 3,
-      "types": {
-        "identical_to_en": 3
-      }
-    },
-    {
       "key": "spell.quara_constrictor_freeze.name",
       "count": 3,
       "types": {
@@ -112,13 +105,6 @@
         "contains_tibia_proper_noun": 1,
         "mixed_scripts": 1,
         "cyrillic_latin_mix": 1
-      }
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
       }
     },
     {
@@ -188,6 +174,13 @@
       }
     },
     {
+      "key": "spell.rotthingholy_ulus.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
       "key": "item.10388.name",
       "count": 2,
       "types": {
@@ -203,6 +196,13 @@
     },
     {
       "key": "item.12742.name",
+      "count": 2,
+      "types": {
+        "identical_to_en": 2
+      }
+    },
+    {
+      "key": "npc.a_fluffy_squirrel.voice_1",
       "count": 2,
       "types": {
         "identical_to_en": 2

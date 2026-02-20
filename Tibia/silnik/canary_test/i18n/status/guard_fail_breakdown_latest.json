@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-20T19:06:35.358779Z",
-  "window_start_utc": "2026-02-20T18:06:34.639725Z",
-  "window_end_utc": "2026-02-20T19:06:34.639725Z",
+  "timestamp": "2026-02-20T19:07:42.414518Z",
+  "window_start_utc": "2026-02-20T18:07:41.728735Z",
+  "window_end_utc": "2026-02-20T19:07:41.728735Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -9,11 +9,11 @@
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
   "rejected_entries": 68,
-  "rejected_entries_raw": 378,
+  "rejected_entries_raw": 375,
   "suspicious_entries": 3111,
-  "suspicious_entries_raw": 28157,
-  "guard_fail_entries": 129,
-  "guard_fail_sum": 7530,
+  "suspicious_entries_raw": 25420,
+  "guard_fail_entries": 127,
+  "guard_fail_sum": 7520,
   "by_type": {
     "identical_to_en": 63,
     "word_salad": 1,
@@ -24,15 +24,15 @@
     "google_translate": 68
   },
   "by_language": {
-    "ro": 28,
     "es": 8,
     "pl": 30,
-    "it": 2
+    "it": 2,
+    "ro": 28
   },
   "by_category": {
-    "items.json": 26,
     "npc.json": 4,
     "spells.json": 13,
+    "items.json": 26,
     "monsters.json": 23,
     "server.json": 2
   },
@@ -120,41 +120,6 @@
       }
     },
     {
-      "key": "item.10096.name",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "item.10180.name",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "item.10190.name",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "item.10191.name",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "item.10192.name",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
       "key": "npc.al_dee.stdmod_41",
       "count": 1,
       "types": {
@@ -198,6 +163,41 @@
     },
     {
       "key": "spell.quara_looter_small_icering.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "spell.rootkraken_rootearth.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "spell.megasylvan_yselda_mleech.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "spell.furyosa_manadrain.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "spell.iksyapunac_wave.name",
+      "count": 1,
+      "types": {
+        "identical_to_en": 1
+      }
+    },
+    {
+      "key": "spell.mitmahseer_wave.name",
       "count": 1,
       "types": {
         "identical_to_en": 1

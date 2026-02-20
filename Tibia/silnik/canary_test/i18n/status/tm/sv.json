@@ -1617,11 +1617,11 @@
   },
   "npc.palomino.say_5": {
     "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
-    "text": "Have a nice trip!",
+    "text": "Ha en trevlig resa!",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:10:52.989311Z"
+    "updated_at": "2026-02-20T19:07:04.133044Z"
   },
   "npc.palomino.say_9": {
     "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
@@ -34974,5 +34974,133 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T18:48:48.247605Z"
+  },
+  "npc.oldrak.say_18": {
+    "src_hash": "ee6f327ef4505b5c658ab73887ad7185",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.103180Z"
+  },
+  "npc.olrik.sendtrade_msg_1": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Här. Glöm inte att du måste köpa en etikett också om du vill skicka ett paket. Skriv alltid namnet på {receiver} på första raden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.106295Z"
+  },
+  "npc.oressa.voice_3": {
+    "src_hash": "a8e6cffd811556ef76d37795d6ad5445",
+    "text": "Kom till mig om du behöver läkning!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.120991Z"
+  },
+  "npc.ortheus.say_2": {
+    "src_hash": "92874d037552d6ed7c7552ac9eeebf3b",
+    "text": "Det är bättre för dig att gå nu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.122010Z"
+  },
+  "npc.padreia.say_7": {
+    "src_hash": "235c3e61bedc3e4295235cc4c6e633dc",
+    "text": "Då nej.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.126679Z"
+  },
+  "npc.palomino.say_2": {
+    "src_hash": "074e62f45ae1a69ab94b899355f02edd",
+    "text": "Vill du hyra en häst för en dag till ett pris av 500 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.131995Z"
+  },
+  "npc.palomino.say_3": {
+    "src_hash": "f0784f215225463661ae1ba31070c042",
+    "text": "Få först bort de där blodfläckarna!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.132389Z"
+  },
+  "npc.palomino.say_6": {
+    "src_hash": "d43f165f7c95c0ba67cbd5a3adee00d4",
+    "text": "Du har redan en häst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.133400Z"
+  },
+  "npc.palomino.say_7": {
+    "src_hash": "2084cc8bc49ade730b05b460faf76e7c",
+    "text": "Du har inte tillräckligt med pengar för att hyra en häst!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.133945Z"
+  },
+  "npc.palomino.say_8": {
+    "src_hash": "72d1121f9156271e019454ccefd39ccb",
+    "text": "Jag ska ge dig en av våra erfarna. Ta hand om dig! Håll utkik efter lågt hängande grenar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.134482Z"
+  },
+  "npc.paulie.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Glöm inte att sätta in dina pengar här i Global Bank innan du ger dig ut på äventyr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.139405Z"
+  },
+  "npc.pemaret.say_4": {
+    "src_hash": "235c3e61bedc3e4295235cc4c6e633dc",
+    "text": "Då nej.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.140409Z"
+  },
+  "npc.pemaret.stdmod_1": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Söker du en passage till {0} för {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.140918Z"
+  },
+  "npc.pemaret.stdmod_2": {
+    "src_hash": "d9af9f4b1c692be2246179837c0669d5",
+    "text": "Kanske senare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.141175Z"
+  },
+  "npc.percybald.say_23": {
+    "src_hash": "64e60fb1b5a64f94a1e4ae355404764b",
+    "text": "Ta denna rustning som ett tecken på stor tacksamhet. Låt oss för alltid minnas denna dag, min vän!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.143602Z"
+  },
+  "npc.percybald.say_25": {
+    "src_hash": "a6830d67383b8b64617c754ce128e690",
+    "text": "Du har redan det tillägget.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T19:07:04.144009Z"
   }
 }

@@ -1,16 +1,101 @@
 {
-  "timestamp": "2026-02-20T16:20:07.677427Z",
+  "timestamp": "2026-02-20T16:22:09.538855Z",
   "checked_entries": 100,
-  "issues_found": 30,
+  "issues_found": 28,
   "issues_by_type": {
-    "identical_to_en_exempt": 1,
+    "identical_to_en": 12,
+    "identical_to_en_exempt": 5,
     "artifact_token": 16,
-    "identical_to_en": 14,
-    "suspicious_log_high": 200,
-    "suspicious_rejected_critical": 155,
-    "suspicious_rejected_high": 45
+    "suspicious_log_high": 128,
+    "suspicious_log_critical": 72,
+    "suspicious_rejected_critical": 165,
+    "suspicious_rejected_high": 35
   },
   "issues": [
+    {
+      "key": "monster.serpent_spawn.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn"
+    },
+    {
+      "key": "monster.mad_mage.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Mad Mage",
+      "translated": "Mad Mage"
+    },
+    {
+      "key": "monster.zevelon_duskbringer.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
+    },
+    {
+      "key": "monster.zevelon_duskbringer.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer"
+    },
+    {
+      "key": "monster.weakened_shlorg.name",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
+    },
+    {
+      "key": "monster.weakened_shlorg.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg"
+    },
+    {
+      "key": "monster.diblis_the_fair.desc",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Diblis The Fair",
+      "translated": "Diblis The Fair"
+    },
+    {
+      "key": "monster.wolf.voice_3",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Yoooohhuuuu!",
+      "translated": "Yoooohhuuuu!"
+    },
+    {
+      "key": "monster.winter_wolf.voice_2",
+      "lang": "it",
+      "type": "identical_to_en",
+      "en": "Yoooohhuuuu!",
+      "translated": "Yoooohhuuuu!"
+    },
+    {
+      "key": "monster.teleskor.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Teleskor",
+      "translated": "Teleskor"
+    },
+    {
+      "key": "monster.teleskor.desc",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Teleskor",
+      "translated": "Teleskor"
+    },
+    {
+      "key": "monster.cyclops_smith.name",
+      "lang": "ro",
+      "type": "identical_to_en",
+      "en": "Cyclops Smith",
+      "translated": "Cyclops Smith"
+    },
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "lang": "es",
@@ -122,104 +207,6 @@
       "type": "artifact_token",
       "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
       "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
-    },
-    {
-      "key": "monster.starving_wolf.voice_3",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Yoooohhuuuu!",
-      "translated": "Yoooohhuuuu!"
-    },
-    {
-      "key": "monster.winter_wolf.voice_1",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Yoooohhuuuu!",
-      "translated": "Yoooohhuuuu!"
-    },
-    {
-      "key": "monster.war_wolf.voice_1",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Yoooohhuuuu!",
-      "translated": "Yoooohhuuuu!"
-    },
-    {
-      "key": "monster.water_buffalo.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo"
-    },
-    {
-      "key": "monster.feverish_citizen.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Feverish Citizen",
-      "translated": "Feverish Citizen"
-    },
-    {
-      "key": "monster.serpent_spawn.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Serpent Spawn",
-      "translated": "Serpent Spawn"
-    },
-    {
-      "key": "monster.mad_mage.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Mad Mage",
-      "translated": "Mad Mage"
-    },
-    {
-      "key": "monster.zevelon_duskbringer.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
-    {
-      "key": "monster.zevelon_duskbringer.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Zevelon Duskbringer",
-      "translated": "Zevelon Duskbringer"
-    },
-    {
-      "key": "monster.weakened_shlorg.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Weakened Shlorg",
-      "translated": "Weakened Shlorg"
-    },
-    {
-      "key": "monster.weakened_shlorg.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Weakened Shlorg",
-      "translated": "Weakened Shlorg"
-    },
-    {
-      "key": "monster.diblis_the_fair.desc",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Diblis The Fair",
-      "translated": "Diblis The Fair"
-    },
-    {
-      "key": "monster.wolf.voice_3",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Yoooohhuuuu!",
-      "translated": "Yoooohhuuuu!"
-    },
-    {
-      "key": "monster.winter_wolf.voice_2",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "Yoooohhuuuu!",
-      "translated": "Yoooohhuuuu!"
     }
   ],
   "threshold": 10,

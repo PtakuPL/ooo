@@ -66326,5 +66326,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T16:15:48.627846Z"
+  },
+  "monster.teleskor.name": {
+    "src_hash": "39b531430b46066d965dffc91ef989fc",
+    "text": "Teleskor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:20:32.624451Z"
+  },
+  "monster.teleskor.desc": {
+    "src_hash": "39b531430b46066d965dffc91ef989fc",
+    "text": "Teleskor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:20:32.625009Z"
+  },
+  "monster.infernal_frog.voice_6": {
+    "src_hash": "d1b2c4f05882e3e46872752f28a46703",
+    "text": "Fara pupici pentru tine!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-20T16:20:32.645354Z"
+  },
+  "monster.cyclops_smith.name": {
+    "src_hash": "e461fc845371237a03c88aa64d6c2769",
+    "text": "Cyclops Smith",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-20T16:20:41.858022Z"
   }
 }

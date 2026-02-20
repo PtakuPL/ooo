@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-20T21:42:00.997912Z",
+  "timestamp": "2026-02-20T21:43:00.263181Z",
   "global": {
     "total_reference_keys": 2786472,
     "translated_keys": 387040,
@@ -49,15 +49,15 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 7177,
-    "guard_reports_blocked": 4283,
+    "guard_reports_total": 7178,
+    "guard_reports_blocked": 4284,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 4283
+    "cannot_translate_reports_visible": 4284
   },
   "cache": {
-    "lang_stats_hits": 50,
-    "lang_stats_misses": 2,
-    "lang_stats_hit_pct": 96.2,
+    "lang_stats_hits": 51,
+    "lang_stats_misses": 1,
+    "lang_stats_hit_pct": 98.1,
     "lang_stats_mode": "mixed",
     "lang_file_hits": 1974,
     "lang_file_misses": 2,
@@ -65,18 +65,18 @@
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-20T21:41:53.878430Z",
-    "cycle": 215,
+    "timestamp": "2026-02-20T21:42:54.728874Z",
+    "cycle": 216,
     "mode": "AUTO_TRANSLATE",
-    "category": "pl",
+    "category": "es",
     "events": {
-      "dispatch": 459,
-      "mode_run": 67097
+      "dispatch": 1665,
+      "mode_run": 39923
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-20T20:41:59.958368Z",
-    "window_end_utc": "2026-02-20T21:41:59.958368Z",
+    "window_start_utc": "2026-02-20T20:42:59.549196Z",
+    "window_end_utc": "2026-02-20T21:42:59.549196Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -84,11 +84,11 @@
       "i18n/status/suspicious_log.jsonl",
       "i18n/status/suspicious_rejected.jsonl"
     ],
-    "total_cycles": 197,
+    "total_cycles": 201,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 197
+      "AUTO_TRANSLATE": 201
     },
-    "auto_translate_cycles": 197,
+    "auto_translate_cycles": 201,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
@@ -98,9 +98,9 @@
     "guard_fail_rate_pct": 60.4,
     "no_progress_entries": 1,
     "no_progress_rate_pct": 0.8,
-    "throughput_keys_per_h": 1576.7,
+    "throughput_keys_per_h": 1544.6,
     "suspicious_total": 3580,
-    "suspicious_total_raw": 25349,
+    "suspicious_total_raw": 25243,
     "gt_translated": 38,
     "gt_active": true,
     "top_guard_fail_targets": [
@@ -155,9 +155,9 @@
     ]
   },
   "guard_fail_breakdown": {
-    "timestamp": "2026-02-20T21:42:00.995003Z",
-    "window_start_utc": "2026-02-20T20:41:59.958368Z",
-    "window_end_utc": "2026-02-20T21:41:59.958368Z",
+    "timestamp": "2026-02-20T21:43:00.260762Z",
+    "window_start_utc": "2026-02-20T20:42:59.549196Z",
+    "window_end_utc": "2026-02-20T21:42:59.549196Z",
     "window_hours": 1.0,
     "sources": {
       "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -167,13 +167,13 @@
     "rejected_entries": 170,
     "rejected_entries_raw": 393,
     "suspicious_entries": 3580,
-    "suspicious_entries_raw": 25349,
+    "suspicious_entries_raw": 25243,
     "guard_fail_entries": 125,
     "guard_fail_sum": 4242,
     "by_type": {
       "identical_to_en": 149,
-      "word_salad": 7,
       "contains_tibia_proper_noun": 7,
+      "word_salad": 7,
       "mixed_language": 7,
       "mixed_scripts": 7,
       "cyrillic_latin_mix": 7
@@ -182,17 +182,17 @@
       "google_translate": 170
     },
     "by_language": {
-      "es": 41,
       "ro": 56,
+      "es": 41,
       "pl": 43,
       "it": 8,
       "ru": 7,
       "sv": 15
     },
     "by_category": {
-      "npc.json": 4,
       "items.json": 28,
       "monsters.json": 30,
+      "npc.json": 4,
       "spells.json": 33,
       "server.json": 17,
       "quests.json": 3,
@@ -212,11 +212,11 @@
         "count": 149
       },
       {
-        "type": "word_salad",
+        "type": "contains_tibia_proper_noun",
         "count": 7
       },
       {
-        "type": "contains_tibia_proper_noun",
+        "type": "word_salad",
         "count": 7
       },
       {
@@ -282,13 +282,6 @@
         }
       },
       {
-        "key": "npc.a_fluffy_squirrel.voice_1",
-        "count": 2,
-        "types": {
-          "identical_to_en": 2
-        }
-      },
-      {
         "key": "monster.deathspawn.name",
         "count": 2,
         "types": {
@@ -332,6 +325,13 @@
         "types": {
           "identical_to_en": 1,
           "contains_tibia_proper_noun": 1
+        }
+      },
+      {
+        "key": "npc.a_fluffy_squirrel.voice_1",
+        "count": 2,
+        "types": {
+          "identical_to_en": 2
         }
       },
       {
@@ -387,14 +387,14 @@
   },
   "quality": {
     "audit_latest": {
-      "timestamp": "2026-02-20T21:41:53.795809Z",
+      "timestamp": "2026-02-20T21:42:55.169846Z",
       "checked_entries": 100,
-      "issues_found": 48,
+      "issues_found": 51,
       "issues_by_type": {
         "identical_to_en_exempt": 3,
-        "artifact_token": 48,
-        "suspicious_log_critical": 41,
-        "suspicious_log_high": 28,
+        "artifact_token": 51,
+        "suspicious_log_high": 54,
+        "suspicious_log_critical": 61,
         "suspicious_rejected_critical": 143,
         "suspicious_rejected_high": 14
       },
@@ -624,6 +624,27 @@
           "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?"
         },
         {
+          "key": "monster.the_pit_lord.voice_2",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "I'LL GET YOU ALL!",
+          "translated": "¡LOS CONSEGUIRÉ A TODOS!"
+        },
+        {
+          "key": "monster.deathbringer.voice_2",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "YOU ALL WILL DIE!",
+          "translated": "¡TODOS MORIRÉIS!"
+        },
+        {
+          "key": "monster.dracola.voice_2",
+          "lang": "es",
+          "type": "artifact_token",
+          "en": "YOU ARE ALL DOOMED!",
+          "translated": "¡ESTÁIS TODOS CONDENADOS!"
+        },
+        {
           "key": "npc.captain_haba_open_sea.larboard_1",
           "lang": "es",
           "type": "artifact_token",
@@ -759,8 +780,8 @@
         "total_gt_guard_fail": 5675,
         "cycles": 1141,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T21:41:53.795809Z",
-        "issues_count": 192762
+        "last_audit": "2026-02-20T21:42:55.169846Z",
+        "issues_count": 192822
       },
       "az": {
         "last_cycle": "2026-02-14T07:54:23.029928Z",
@@ -774,15 +795,15 @@
         "issues_count": 1417
       },
       "es": {
-        "last_cycle": "2026-02-20T21:41:52.218253Z",
+        "last_cycle": "2026-02-20T21:42:53.666335Z",
         "last_translated": 23,
-        "total_suspicious": 65370,
-        "total_rejected": 2156,
-        "total_gt_guard_fail": 21817,
-        "cycles": 1641,
+        "total_suspicious": 65511,
+        "total_rejected": 2158,
+        "total_gt_guard_fail": 21845,
+        "cycles": 1643,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T21:41:53.795809Z",
-        "issues_count": 347822
+        "last_audit": "2026-02-20T21:42:55.169846Z",
+        "issues_count": 348236
       },
       "pt": {
         "last_cycle": "2026-02-14T07:37:33.911849Z",
@@ -813,9 +834,9 @@
         "total_rejected": 861,
         "total_gt_guard_fail": 2723,
         "cycles": 450,
-        "quality_score": 74.6,
-        "last_audit": "2026-02-20T21:41:53.795809Z",
-        "issues_count": 76657
+        "quality_score": 80.6,
+        "last_audit": "2026-02-20T21:42:55.169846Z",
+        "issues_count": 76673
       },
       "ru": {
         "last_cycle": "2026-02-20T21:38:20.967837Z",
@@ -824,9 +845,9 @@
         "total_rejected": 921,
         "total_gt_guard_fail": 2500,
         "cycles": 427,
-        "quality_score": 80.7,
-        "last_audit": "2026-02-20T21:41:53.795809Z",
-        "issues_count": 214579
+        "quality_score": 84.1,
+        "last_audit": "2026-02-20T21:42:55.169846Z",
+        "issues_count": 214593
       },
       "nl": {
         "last_cycle": "2026-02-14T07:47:18.379290Z",
@@ -847,8 +868,8 @@
         "total_gt_guard_fail": 757,
         "cycles": 165,
         "quality_score": 69.9,
-        "last_audit": "2026-02-20T21:41:53.795809Z",
-        "issues_count": 32073
+        "last_audit": "2026-02-20T21:42:55.169846Z",
+        "issues_count": 32103
       },
       "da": {
         "last_cycle": "2026-02-14T07:49:07.893551Z",
@@ -1298,8 +1319,8 @@
         "total_gt_guard_fail": 5021,
         "cycles": 402,
         "quality_score": 60.1,
-        "last_audit": "2026-02-20T21:41:53.795809Z",
-        "issues_count": 188548
+        "last_audit": "2026-02-20T21:42:55.169846Z",
+        "issues_count": 188660
       },
       "sl": {
         "last_cycle": "2026-02-14T05:30:27.321573Z",
@@ -1313,8 +1334,8 @@
         "issues_count": 80
       }
     },
-    "summary": "SLOW_MODE | 48 issue(s) / 100 entries | 2026-02-20T21:41:53.795809Z | recent_hidden=0",
-    "guard_fail_breakdown_summary": "identical_to_en=149, word_salad=7, contains_tibia_proper_noun=7, mixed_language=7, mixed_scripts=7",
+    "summary": "SLOW_MODE | 51 issue(s) / 100 entries | 2026-02-20T21:42:55.169846Z | recent_hidden=0",
+    "guard_fail_breakdown_summary": "identical_to_en=149, contains_tibia_proper_noun=7, word_salad=7, mixed_language=7, mixed_scripts=7",
     "recent_hidden_high_critical": {
       "latest": 0,
       "threshold": 5,
@@ -1322,9 +1343,9 @@
       "trend": "→ last10=0.00, prev10=0.00, latest=0"
     },
     "critical_bad_keys_pack_regression": {
-      "timestamp": "2026-02-20T21:42:00.996306Z",
-      "window_start_utc": "2026-02-20T20:41:59.958368Z",
-      "window_end_utc": "2026-02-20T21:41:59.958368Z",
+      "timestamp": "2026-02-20T21:43:00.261780Z",
+      "window_start_utc": "2026-02-20T20:42:59.549196Z",
+      "window_end_utc": "2026-02-20T21:42:59.549196Z",
       "by_lang": {
         "pl": {
           "critical_in_window": 39,

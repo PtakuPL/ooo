@@ -1,18 +1,19 @@
 {
-  "timestamp": "2026-02-20T20:55:07.391988Z",
-  "cycle_counter": 6331,
-  "last_target_key": "pl:spells.json",
-  "last_pending_total": 37,
+  "timestamp": "2026-02-20T20:56:14.086198Z",
+  "cycle_counter": 6333,
+  "last_target_key": "es:items.json",
+  "last_pending_total": 3035,
   "last_tier": 1,
-  "last_cat_priority": 4,
+  "last_cat_priority": 0,
   "candidates_count": 181,
-  "active_candidates_count": 169,
+  "active_candidates_count": 168,
   "skipped_backoff": 9,
-  "skipped_guard_fail": 3,
+  "skipped_guard_fail": 4,
   "guard_fail_blacklist": {
     "pl:items.json": 6341,
-    "pl:npc.json": 6333,
-    "es:server.json": 6346
+    "pl:npc.json": 6343,
+    "es:server.json": 6346,
+    "es:spells.json": 6343
   },
   "tier_config": {
     "tier1": [
@@ -38,7 +39,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 177,
+  "cache_cycle": 178,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -219,7 +220,7 @@
       "ro": 43.32,
       "it": 52.33,
       "sr": 45.5,
-      "sv": 28.76
+      "sv": 28.79
     }
   }
 }

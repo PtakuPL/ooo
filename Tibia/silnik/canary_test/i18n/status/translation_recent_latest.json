@@ -1,17 +1,23 @@
 {
-  "timestamp": "2026-02-20T20:55:25.970422Z",
-  "language": "pl",
+  "timestamp": "2026-02-20T20:56:11.716850Z",
+  "language": "es",
   "json_file": "spells.json",
-  "translated": 1,
+  "translated": 2,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "spell.azerus_soulfire_2.name",
-      "en": "azerus soulfire 2",
-      "translated": "Azerus Soulfire 2",
+      "key": "spell.defiler_paralyze_3.name",
+      "en": "Defiler Paralyze 3",
+      "translated": "Defiler Paralyze 3",
+      "source": "tm"
+    },
+    {
+      "key": "spell.lizard_wave_2.name",
+      "en": "Lizard Wave 2",
+      "translated": "Lizard Wave 2",
       "source": "tm"
     }
   ]

@@ -1,8 +1,8 @@
 {
-  "total_cycles": 177,
+  "total_cycles": 178,
   "mode": "AUTO_TRANSLATE",
-  "category": "sv",
-  "last_update": "2026-02-20T21:55:28.568113",
+  "category": "es",
+  "last_update": "2026-02-20T21:56:14.781817",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,14 +26,27 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "sv",
-    "json_file": "npc.json",
-    "keys_to_translate": 7493,
-    "guard_fail": 29,
+    "language": "es",
+    "json_file": "spells.json",
+    "keys_to_translate": 60,
+    "guard_fail": 28,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 0,
-    "recent_examples": []
+    "recent_translated": 2,
+    "recent_examples": [
+      {
+        "key": "spell.defiler_paralyze_3.name",
+        "en": "Defiler Paralyze 3",
+        "translated": "Defiler Paralyze 3",
+        "source": "tm"
+      },
+      {
+        "key": "spell.lizard_wave_2.name",
+        "en": "Lizard Wave 2",
+        "translated": "Lizard Wave 2",
+        "source": "tm"
+      }
+    ]
   },
   "idle": {
     "new_files_detected": 152,

@@ -1,131 +1,23 @@
 {
-  "timestamp": "2026-02-20T17:04:51.315431Z",
-  "language": "pl",
-  "json_file": "monsters.json",
-  "translated": 50,
+  "timestamp": "2026-02-20T17:05:42.647048Z",
+  "language": "es",
+  "json_file": "server.json",
+  "translated": 2,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "monster.white_pale.name",
-      "en": "White Pale",
-      "translated": "White Pale",
+      "key": "data.otservbr.global.npc.a.fading.memory.L53.1295",
+      "en": "Oh...",
+      "translated": "Oh...",
       "source": "tm"
     },
     {
-      "key": "monster.white_pale.desc",
-      "en": "White Pale",
-      "translated": "White Pale",
-      "source": "tm"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "en": "The Welter",
-      "translated": "The Welter",
-      "source": "tm"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "en": "The Welter",
-      "translated": "The Welter",
-      "source": "tm"
-    },
-    {
-      "key": "monster.water_buffalo.name",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo",
-      "source": "tm"
-    },
-    {
-      "key": "monster.sibang.voice_2",
-      "en": "Huh! Huh! Huh!",
-      "translated": "Huh! huh! huh!",
-      "source": "tm"
-    },
-    {
-      "key": "monster.hideous_fungus.voice_1",
-      "en": "Munch munch munch!",
-      "translated": "Przeżuwać przeżuwać przeżuwać!",
-      "source": "tm"
-    },
-    {
-      "key": "monster.humongous_fungus.voice_1",
-      "en": "Munch munch munch!",
-      "translated": "Przeżuwać przeżuwać przeżuwać!",
-      "source": "tm"
-    },
-    {
-      "key": "monster.deepling_worker.voice_1",
-      "en": "Qjell afar gou jey!",
-      "translated": "Qjell daleko gou jey!",
-      "source": "tm"
-    },
-    {
-      "key": "monster.quara_mantassin.desc",
-      "en": "a quara mantassin",
-      "translated": "quara mantassin",
-      "source": "tm"
-    },
-    {
-      "key": "monster.quara_hydromancer.desc",
-      "en": "a quara hydromancer",
-      "translated": "hydromancer quara",
-      "source": "tm"
-    },
-    {
-      "key": "monster.manta_ray.voice_1",
-      "en": "Flap flap flap!",
-      "translated": "Klapa klapa klapa!",
-      "source": "tm"
-    },
-    {
-      "key": "monster.deepling_spellsinger.voice_1",
-      "en": "Jey Obu giotja!!",
-      "translated": "Jey Obu Giotja!!",
-      "source": "tm"
-    },
-    {
-      "key": "monster.feverish_citizen.name",
-      "en": "Feverish Citizen",
-      "translated": "Feverish Citizen",
-      "source": "tm"
-    },
-    {
-      "key": "monster.diabolic_imp.voice_2",
-      "en": "He he he.",
-      "translated": "On on on.",
-      "source": "tm"
-    },
-    {
-      "key": "monster.shaburak_demon.desc",
-      "en": "a shaburak demon",
-      "translated": "demon Shaburak",
-      "source": "tm"
-    },
-    {
-      "key": "monster.askarak_demon.desc",
-      "en": "an askarak demon",
-      "translated": "demon askarak",
-      "source": "tm"
-    },
-    {
-      "key": "monster.serpent_spawn.name",
-      "en": "Serpent Spawn",
-      "translated": "Serpent Spawn",
-      "source": "tm"
-    },
-    {
-      "key": "monster.mad_mage.name",
-      "en": "Mad Mage",
-      "translated": "Mad Mage",
-      "source": "tm"
-    },
-    {
-      "key": "monster.morik_the_gladiator.name",
-      "en": "Morik the Gladiator",
-      "translated": "Morik Gladiator",
+      "key": "data.otservbr.global.npc.a.restless.soul.L53.44",
+      "en": "Uhhhh...",
+      "translated": "Uhhhh...",
       "source": "tm"
     }
   ]

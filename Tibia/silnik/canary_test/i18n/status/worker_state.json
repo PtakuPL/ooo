@@ -378,22 +378,35 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-20T17:04:55Z",
+  "generated_at_utc": "2026-02-20T17:05:46Z",
   "global": {
     "en_keys_total": 53586,
-    "errors_total": 2666,
+    "errors_total": 2668,
     "files_processed_total": 6443,
     "languages_total": 55
   },
   "legacy": {
     "i18n_global_stats": {
       "auto_translate": {
-        "guard_fail": 5,
-        "json_file": "npc.json",
-        "keys_to_translate": 2355,
+        "guard_fail": 61,
+        "json_file": "server.json",
+        "keys_to_translate": 151,
         "language": "es",
-        "recent_examples": [],
-        "recent_translated": 0,
+        "recent_examples": [
+          {
+            "en": "Oh...",
+            "key": "data.otservbr.global.npc.a.fading.memory.L53.1295",
+            "source": "tm",
+            "translated": "Oh..."
+          },
+          {
+            "en": "Uhhhh...",
+            "key": "data.otservbr.global.npc.a.restless.soul.L53.44",
+            "source": "tm",
+            "translated": "Uhhhh..."
+          }
+        ],
+        "recent_translated": 2,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
@@ -403,7 +416,7 @@
         "new_files_detected": 152,
         "quality_issues": 2875
       },
-      "last_update": "2026-02-20T18:04:54.825233",
+      "last_update": "2026-02-20T18:05:45.959466",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -422,7 +435,7 @@
         "registry_reconcile_adjustment": 53586
       },
       "mode": "AUTO_TRANSLATE",
-      "total_cycles": 4,
+      "total_cycles": 5,
       "translation_sync": {
         "json_file": "scripts.json",
         "keys_to_sync": 0,
@@ -452,8 +465,8 @@
       },
       "stage": "cycle_end"
     },
-    "cycle": 4,
-    "heartbeat_at_utc": "2026-02-20T17:04:54Z",
+    "cycle": 5,
+    "heartbeat_at_utc": "2026-02-20T17:05:46Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

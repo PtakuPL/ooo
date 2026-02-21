@@ -82542,5 +82542,125 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:15:55.963589Z"
+  },
+  "cpp.returnvalue.creature_is_not_reachable": {
+    "src_hash": "7da1662ff13be19252ad9ec6a28c3ce1",
+    "text": "La creatura non è raggiungibile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:21.590251Z"
+  },
+  "cpp.returnvalue.depot_is_full": {
+    "src_hash": "347c9055a2cfcf399563a25843fefc2c",
+    "text": "Non puoi mettere più oggetti in questo deposito.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:26.805271Z"
+  },
+  "cpp.returnvalue.destination_out_of_reach": {
+    "src_hash": "2bcd0a7345e9dfe05446be11474c449e",
+    "text": "La destinazione è fuori portata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:26.805598Z"
+  },
+  "cpp.returnvalue.direct_player_shoot": {
+    "src_hash": "f759286d5c701ed1172aa91292e7ca4a",
+    "text": "Non è consentito sparare direttamente sui giocatori.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:26.805961Z"
+  },
+  "cpp.returnvalue.drop_two_handed_item": {
+    "src_hash": "38bfa48088290a448b810585bc40748e",
+    "text": "Rilascia prima l'oggetto a due mani.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:26.806275Z"
+  },
+  "cpp.returnvalue.first_go_downstairs": {
+    "src_hash": "a5c55bc7d4edb8b8295d4468f5453275",
+    "text": "Prima scendi le scale.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:26.806531Z"
+  },
+  "cpp.returnvalue.first_go_upstairs": {
+    "src_hash": "efb430e66770677c14bee3ca0a51533c",
+    "text": "Prima vai di sopra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:33.756787Z"
+  },
+  "cpp.returnvalue.item_cannot_be_moved_pouch": {
+    "src_hash": "c2c06ce028e51dfcbbfe65f2005ccf08",
+    "text": "Questo oggetto non può essere spostato lì. Puoi riporre solo monete d'oro, platino e cristallo nella tua borsa d'oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:33.757342Z"
+  },
+  "cpp.returnvalue.item_cannot_be_moved_there": {
+    "src_hash": "f6f0276650457e2abc30425965344eee",
+    "text": "Questo oggetto non può essere spostato lì.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:33.757678Z"
+  },
+  "cpp.returnvalue.item_is_not_yours": {
+    "src_hash": "e65559dd99064d96e0f465c95783e5a7",
+    "text": "Questo articolo non è tuo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:33.757969Z"
+  },
+  "cpp.returnvalue.item_untradeable": {
+    "src_hash": "2ab2b142ae5096a020233300a242da21",
+    "text": "Questo oggetto non è commerciabile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:33.758269Z"
+  },
+  "cpp.returnvalue.name_is_too_ambiguous": {
+    "src_hash": "b65c28a6e86aa776eb63b7e1cf5ea823",
+    "text": "Il nome del giocatore è ambiguo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:38.779656Z"
+  },
+  "cpp.returnvalue.no_such_raid_exists": {
+    "src_hash": "415bdb66fc5012838fe98ecdec16a61b",
+    "text": "Non esiste un raid del genere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:38.780281Z"
+  },
+  "cpp.returnvalue.not_bought_in_store": {
+    "src_hash": "de28d1f97804c5f676efda3546c957bc",
+    "text": "Non puoi spostare questo articolo nella casella di posta del negozio poiché non è stato acquistato nel negozio.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:38.780964Z"
+  },
+  "cpp.returnvalue.not_enough_axe_level": {
+    "src_hash": "d6bdf8a2b9f951ed7a0f2023d62fc25c",
+    "text": "Non hai abbastanza livello dell'ascia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:38.781394Z"
   }
 }

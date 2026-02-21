@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T00:16:25.324503Z",
-  "last_cycle": 26,
+  "timestamp": "2026-02-21T00:17:38.868833Z",
+  "last_cycle": 27,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -853,6 +853,9 @@
       "book.otbm.how_to_create_spellbooks_by_003d48b3",
       "book.otbm.how_to_learn_magic_easy",
       "book.otbm.how_to_manipulate_runes_by"
-    ]
+    ],
+    "ru|otclient_modules.json": [],
+    "ro|cpp.json": [],
+    "it|cpp.json": []
   }
 }

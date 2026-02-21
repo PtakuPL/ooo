@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-20T23:16:32.299835Z",
-  "window_end_utc": "2026-02-21T00:16:32.299835Z",
+  "window_start_utc": "2026-02-20T23:17:45.554312Z",
+  "window_end_utc": "2026-02-21T00:17:45.554312Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -17,15 +17,15 @@
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 1818,
-  "guard_fail": 1747,
-  "guard_fail_rate_pct": 49.0,
+  "translated": 1852,
+  "guard_fail": 1767,
+  "guard_fail_rate_pct": 48.8,
   "no_progress_entries": 4,
-  "no_progress_rate_pct": 3.8,
-  "throughput_keys_per_h": 1098.3,
-  "suspicious_total": 3859,
-  "suspicious_total_raw": 9887,
-  "gt_translated": 115,
+  "no_progress_rate_pct": 3.7,
+  "throughput_keys_per_h": 1118.5,
+  "suspicious_total": 3915,
+  "suspicious_total_raw": 9782,
+  "gt_translated": 131,
   "gt_active": true,
   "top_guard_fail_targets": [
     {

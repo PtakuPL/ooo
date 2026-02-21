@@ -39630,5 +39630,157 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T00:12:41.239204Z"
+  },
+  "otclient_modules.character.tr_23": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "Из Екуипмент",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.268621Z"
+  },
+  "otclient_modules.character.tr_24": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Из Басе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.269940Z"
+  },
+  "otclient_modules.character.tr_25": {
+    "src_hash": "7c2d5c73ed9d8b142c16ea01c83d8661",
+    "text": "Из Комбат Тактикс",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.271082Z"
+  },
+  "otclient_modules.character.tr_26": {
+    "src_hash": "13bc1cebc074005a56d4340643202b24",
+    "text": "Из Шиелдинг",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.272219Z"
+  },
+  "otclient_modules.character.tr_29": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "Из Вхеел",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.273523Z"
+  },
+  "otclient_modules.character.tr_3": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Из Басе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.274446Z"
+  },
+  "otclient_modules.character.tr_30": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "Из Екуипмент",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.275584Z"
+  },
+  "otclient_modules.character.tr_34": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "Из Вхеел",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.278030Z"
+  },
+  "otclient_modules.character.tr_35": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "Из Екуипмент",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.279263Z"
+  },
+  "otclient_modules.character.tr_36": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Из Басе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.280192Z"
+  },
+  "otclient_modules.character.tr_40": {
+    "src_hash": "7bd2fce7008b193b40988850bddd4d9e",
+    "text": "Из Амплификатион",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.281982Z"
+  },
+  "otclient_modules.character.tr_41": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Из Басе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.282899Z"
+  },
+  "otclient_modules.character.tr_43": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "Из Вхеел",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.284031Z"
+  },
+  "otclient_modules.character.tr_44": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "Из Екуипмент",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.285134Z"
+  },
+  "otclient_modules.character.tr_45": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Из Басе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.286089Z"
+  },
+  "otclient_modules.character.tr_47": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "Из Вхеел",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.287235Z"
+  },
+  "otclient_modules.character.tr_48": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "Из Екуипмент",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.288217Z"
+  },
+  "otclient_modules.character.tr_49": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Из Басе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.289446Z"
+  },
+  "otclient_modules.character.tr_5": {
+    "src_hash": "d4aafb8980abab7d38e257eb32909378",
+    "text": "Из Евент Бонус",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:16:51.290474Z"
   }
 }

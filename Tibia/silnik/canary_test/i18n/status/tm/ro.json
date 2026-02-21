@@ -75054,5 +75054,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:06:17.388934Z"
+  },
+  "cpp.protocol.invalid_password": {
+    "src_hash": "855eb8db89b4921c42072832d33d2dc2",
+    "text": "Parolă nevalidă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:06.637681Z"
+  },
+  "cpp.protocol.ip_banned_until": {
+    "src_hash": "98cfd90e59bf9891ac20e2330d6c70a1",
+    "text": "IP-ul dvs. a fost interzis până la {0} de către {1}.\n\nMotivul specificat:\n{2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:10.827912Z"
+  },
+  "cpp.protocol.loyalty_title_label": {
+    "src_hash": "112b314742b7a70942d64141ba000b08",
+    "text": "Titlul de loialitate",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:17:10.828146Z"
   }
 }

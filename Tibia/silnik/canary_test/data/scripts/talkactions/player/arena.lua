@@ -138,7 +138,7 @@ function arena.onSay(player, words, param)
 
 		local success = player:arenaJoinQueue(modeId)
 		if success then
-			player:sendTextMessage(MESSAGE_INFO_DESCR, "[Arena] You joined the " .. (modeNames[modeId] or modeName) .. " queue! Searching for opponents...")
+			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "[Arena] You joined the " .. (modeNames[modeId] or modeName) .. " queue! Searching for opponents...")
 		else
 			player:sendTextMessage(MESSAGE_FAILURE, "[Arena] Failed to join queue. Try again later.")
 		end
@@ -151,7 +151,7 @@ function arena.onSay(player, words, param)
 
 		local success = player:arenaLeaveQueue()
 		if success then
-			player:sendTextMessage(MESSAGE_INFO_DESCR, "[Arena] You left the queue.")
+			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "[Arena] You left the queue.")
 		else
 			player:sendTextMessage(MESSAGE_FAILURE, "[Arena] Failed to leave queue.")
 		end

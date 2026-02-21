@@ -1,132 +1,54 @@
 {
-  "timestamp": "2026-02-21T09:36:05.875633Z",
-  "language": "fa",
+  "timestamp": "2026-02-21T09:39:48.061140Z",
+  "language": "es",
   "json_file": "npc.json",
-  "translated": 29,
+  "translated": 7,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.a_behemoth.greet_msg_1",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "Pssst! آن را پایین نگه دارید! <گزارش مفصلی از فعالیت هیولا به شما می دهد>",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_behemoth.greet_msg_2",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "Pssst! آن را پایین نگه دارید! <گزارش مفصلی از فعالیت هیولا به شما می دهد>",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_behemoth.greet_msg_3",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "Pssst! آن را پایین نگه دارید! <گزارش مفصلی از فعالیت هیولا به شما می دهد>",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.voice_2",
-      "en": "Hail Pumin. Yes, hail.",
-      "translated": "سلام پومین. بله تگرگ.",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat2.voice_2",
-      "en": "Hail Pumin. Yes, hail.",
-      "translated": "سلام پومین. بله تگرگ.",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat3.voice_2",
-      "en": "Hail Pumin. Yes, hail.",
-      "translated": "سلام پومین. بله تگرگ.",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.voice_2",
-      "en": "Hail Pumin. Yes, hail.",
-      "translated": "سلام پومین. بله تگرگ.",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_dragon_lord.greet_msg_1",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "Pssst! آن را پایین نگه دارید! <گزارش مفصلی از فعالیت هیولا به شما می دهد>",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_dragon_lord.greet_msg_2",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "Pssst! آن را پایین نگه دارید! <گزارش مفصلی از فعالیت هیولا به شما می دهد>",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_dragon_lord.greet_msg_3",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "Pssst! آن را پایین نگه دارید! <گزارش مفصلی از فعالیت هیولا به شما می دهد>",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_drillworm.greet_msg_1",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "Pssst! آن را پایین نگه دارید! <گزارش مفصلی از فعالیت هیولا به شما می دهد>",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_drillworm.greet_msg_2",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "Pssst! آن را پایین نگه دارید! <گزارش مفصلی از فعالیت هیولا به شما می دهد>",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_drillworm.greet_msg_3",
-      "en": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
-      "translated": "Pssst! آن را پایین نگه دارید! <گزارش مفصلی از فعالیت هیولا به شما می دهد>",
-      "source": "google_translate"
-    },
-    {
       "key": "npc.a_fading_memory.greet_msg_1",
       "en": "Oh...",
-      "translated": "اوه...",
-      "source": "google_translate"
+      "translated": "Oh...",
+      "source": "tm"
     },
     {
-      "key": "npc.a_fluffy_squirrel.farewell_msg_1",
-      "en": "Chh...",
-      "translated": "چخ...",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "npc.a_fluffy_squirrel.greet_msg_1",
-      "en": "Chhchh?",
-      "translated": "چخچه؟?",
-      "source": "google_translate"
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
     },
     {
-      "key": "npc.a_fluffy_squirrel.sendtrade_msg_1",
-      "en": "Chchch. Chh! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
-      "translated": "چچچ. چخ <مطمئن نیستید، اما به نظر می‌رسد که سنجاب می‌خواهد بلوط‌های ارزشمند شما را با سنگ‌های بی‌فایده‌ای که پیدا کرده و غیرقابل خوردن می‌داند معاوضه کند.",
-      "source": "google_translate"
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
     },
     {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "en": "Chchch",
-      "translated": "چچچ",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "npc.a_fluffy_squirrel.walkaway_msg_1",
-      "en": "Chh...",
-      "translated": "چخ...",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "npc.a_ghostly_sage.farewell_msg_1",
-      "en": "Good bye.",
-      "translated": "خداحافظ.",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-21T01:09:08.199531Z",
-  "window_end_utc": "2026-02-21T02:09:08.199531Z",
+  "window_start_utc": "2026-02-21T01:13:48.817158Z",
+  "window_end_utc": "2026-02-21T02:13:48.817158Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,24 +8,24 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/suspicious_rejected.jsonl"
   ],
-  "total_cycles": 134,
+  "total_cycles": 125,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 134
+    "AUTO_TRANSLATE": 125
   },
-  "auto_translate_cycles": 134,
+  "auto_translate_cycles": 125,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 1328,
-  "guard_fail": 3133,
-  "guard_fail_rate_pct": 70.2,
+  "translated": 1225,
+  "guard_fail": 2999,
+  "guard_fail_rate_pct": 71.0,
   "no_progress_entries": 4,
-  "no_progress_rate_pct": 4.5,
-  "throughput_keys_per_h": 735.4,
-  "suspicious_total": 2404,
-  "suspicious_total_raw": 6308,
-  "gt_translated": 137,
+  "no_progress_rate_pct": 4.9,
+  "throughput_keys_per_h": 689.7,
+  "suspicious_total": 2403,
+  "suspicious_total_raw": 6053,
+  "gt_translated": 135,
   "gt_active": true,
   "top_guard_fail_targets": [
     {
@@ -53,27 +53,27 @@
       "guard_command": 0
     },
     {
-      "target": "ru/server.json",
-      "translated": 60,
-      "guard_fail": 102,
-      "guard_command": 0
-    },
-    {
-      "target": "es/spells.json",
-      "translated": 4,
-      "guard_fail": 56,
-      "guard_command": 0
-    },
-    {
       "target": "sv/server.json",
       "translated": 6,
       "guard_fail": 54,
       "guard_command": 0
     },
     {
-      "target": "ro/server.json",
-      "translated": 10,
-      "guard_fail": 50,
+      "target": "ru/server.json",
+      "translated": 30,
+      "guard_fail": 51,
+      "guard_command": 0
+    },
+    {
+      "target": "ru/npc.json",
+      "translated": 30,
+      "guard_fail": 44,
+      "guard_command": 0
+    },
+    {
+      "target": "pl/questlog.json",
+      "translated": 20,
+      "guard_fail": 40,
       "guard_command": 0
     }
   ]

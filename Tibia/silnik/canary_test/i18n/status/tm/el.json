@@ -1969,131 +1969,131 @@
   },
   "npc.a_lost_basher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.158486Z"
+    "updated_at": "2026-02-21T09:35:15.339457Z"
   },
   "npc.a_lost_husher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.159215Z"
+    "updated_at": "2026-02-21T09:35:15.340277Z"
   },
   "npc.a_lost_husher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.159951Z"
+    "updated_at": "2026-02-21T09:35:15.341090Z"
   },
   "npc.a_lost_husher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.160653Z"
+    "updated_at": "2026-02-21T09:35:15.342716Z"
   },
   "npc.a_lost_thrower.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.161385Z"
+    "updated_at": "2026-02-21T09:35:15.344571Z"
   },
   "npc.a_lost_thrower.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.162134Z"
+    "updated_at": "2026-02-21T09:35:15.345610Z"
   },
   "npc.a_lost_thrower.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.162876Z"
+    "updated_at": "2026-02-21T09:35:15.346401Z"
   },
   "npc.a_nightmare_scion.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.163811Z"
+    "updated_at": "2026-02-21T09:35:15.348131Z"
   },
   "npc.a_nightmare_scion.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.164510Z"
+    "updated_at": "2026-02-21T09:35:15.348884Z"
   },
   "npc.a_nightmare_scion.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.165235Z"
+    "updated_at": "2026-02-21T09:35:15.349716Z"
   },
   "npc.a_vulcongra.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.168588Z"
+    "updated_at": "2026-02-21T09:35:15.363546Z"
   },
   "npc.a_vulcongra.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.169318Z"
+    "updated_at": "2026-02-21T09:35:15.366105Z"
   },
   "npc.a_vulcongra.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.170040Z"
+    "updated_at": "2026-02-21T09:35:15.368665Z"
   },
   "npc.a_wyrm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.172142Z"
+    "updated_at": "2026-02-21T09:35:15.375569Z"
   },
   "npc.a_wyrm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.172921Z"
+    "updated_at": "2026-02-21T09:35:15.377002Z"
   },
   "npc.a_wyrm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.173764Z"
+    "updated_at": "2026-02-21T09:35:15.378697Z"
   },
   "npc.graubart.farewell_msg_1": {
     "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
@@ -4198,5 +4198,117 @@
     "confidence": 0.996,
     "verified": false,
     "updated_at": "2026-02-14T13:24:43.363915Z"
+  },
+  "npc.altar.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Γεια.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:15.405276Z"
+  },
+  "npc.alyxo.say_12": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Συγγνώμη.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:15.406752Z"
+  },
+  "npc.alyxo.say_15": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Συγγνώμη.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:15.407501Z"
+  },
+  "npc.alyxo.say_18": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Συγγνώμη.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:15.408373Z"
+  },
+  "npc.alyxo.say_21": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Συγγνώμη.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:15.409290Z"
+  },
+  "npc.alyxo.say_24": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Συγγνώμη.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:15.409996Z"
+  },
+  "npc.alyxo.say_6": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Συγγνώμη.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:15.410928Z"
+  },
+  "npc.alyxo.say_9": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Συγγνώμη.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:15.411968Z"
+  },
+  "npc.billy.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Γεια.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:15.455464Z"
+  },
+  "npc.bloodshade_rotten.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Γεια.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:15.460340Z"
+  },
+  "npc.bloodshade_sacrifice.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Γεια.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:15.461429Z"
+  },
+  "npc.canary.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Ναι, αντίο και μην ξανάρθεις!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:15.490188Z"
+  },
+  "npc.captain_haba.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Γεια.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:15.498615Z"
+  },
+  "npc.captain_haba.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Γεια.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:15.500999Z"
   }
 }

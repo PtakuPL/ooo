@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-20T23:57:47.521659Z",
-  "window_end_utc": "2026-02-21T00:57:47.521659Z",
+  "window_start_utc": "2026-02-20T23:58:51.461836Z",
+  "window_end_utc": "2026-02-21T00:58:51.461836Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,24 +8,24 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/suspicious_rejected.jsonl"
   ],
-  "total_cycles": 134,
+  "total_cycles": 136,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 134
+    "AUTO_TRANSLATE": 136
   },
-  "auto_translate_cycles": 134,
+  "auto_translate_cycles": 136,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 1513,
-  "guard_fail": 2763,
-  "guard_fail_rate_pct": 64.6,
+  "translated": 1533,
+  "guard_fail": 2701,
+  "guard_fail_rate_pct": 63.8,
   "no_progress_entries": 3,
   "no_progress_rate_pct": 3.2,
-  "throughput_keys_per_h": 951.0,
-  "suspicious_total": 4214,
-  "suspicious_total_raw": 9291,
-  "gt_translated": 157,
+  "throughput_keys_per_h": 944.4,
+  "suspicious_total": 4228,
+  "suspicious_total_raw": 9261,
+  "gt_translated": 158,
   "gt_active": true,
   "top_guard_fail_targets": [
     {
@@ -47,21 +47,15 @@
       "guard_command": 0
     },
     {
-      "target": "sr/server.json",
-      "translated": 60,
-      "guard_fail": 109,
-      "guard_command": 0
-    },
-    {
       "target": "es/books.json",
       "translated": 4,
       "guard_fail": 56,
       "guard_command": 0
     },
     {
-      "target": "sv/server.json",
-      "translated": 6,
-      "guard_fail": 54,
+      "target": "sr/server.json",
+      "translated": 30,
+      "guard_fail": 55,
       "guard_command": 0
     },
     {
@@ -74,6 +68,12 @@
       "target": "ro/otclient_modules.json",
       "translated": 12,
       "guard_fail": 48,
+      "guard_command": 0
+    },
+    {
+      "target": "ru/npc.json",
+      "translated": 30,
+      "guard_fail": 41,
       "guard_command": 0
     }
   ]

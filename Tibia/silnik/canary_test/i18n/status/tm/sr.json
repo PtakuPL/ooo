@@ -176414,5 +176414,45 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T00:45:34.833848Z"
+  },
+  "monster.elder_wyrm.voice_1": {
+    "src_hash": "d757f6d62440f09b102236e4bb7ba3fe",
+    "text": "ГРРОАРР",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:58:25.879065Z"
+  },
+  "monster.hydra.voice_2": {
+    "src_hash": "4db71e50de8fcfc3ec625f0377b111e7",
+    "text": "ХИСССС",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:58:25.881806Z"
+  },
+  "monster.wyrm.voice_1": {
+    "src_hash": "d757f6d62440f09b102236e4bb7ba3fe",
+    "text": "ГРРОАРР",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:58:25.888290Z"
+  },
+  "monster.hydra.voice_4": {
+    "src_hash": "4db71e50de8fcfc3ec625f0377b111e7",
+    "text": "ХИСССС",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:58:25.929347Z"
+  },
+  "monster.wyrm.voice_3": {
+    "src_hash": "d757f6d62440f09b102236e4bb7ba3fe",
+    "text": "ГРРОАРР",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:58:25.929928Z"
   }
 }

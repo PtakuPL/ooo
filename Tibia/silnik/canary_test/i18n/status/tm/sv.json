@@ -37910,5 +37910,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T00:34:38.076711Z"
+  },
+  "monster.grynch_clan_goblin.voice_20": {
+    "src_hash": "76f85af878ed86cd4af6d052a432c507",
+    "text": "Utani hur hur hur hur!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:58:11.845176Z"
+  },
+  "monster.demon.name": {
+    "src_hash": "300d4af0950c89b847cf6f7500e6060c",
+    "text": "Demon",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:58:17.267303Z"
   }
 }

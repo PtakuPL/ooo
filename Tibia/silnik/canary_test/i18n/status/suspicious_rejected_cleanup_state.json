@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T01:11:58.762462Z",
-  "last_cycle": 13,
+  "timestamp": "2026-02-21T01:13:01.136764Z",
+  "last_cycle": 14,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [],
@@ -277,7 +277,24 @@
       "data.otservbr.global.npc.liane.L97.486",
       "data.otservbr.global.npc.liane.L98.487",
       "data.otservbr.global.npc.lily.L283.121",
-      "data.otservbr.global.npc.lily.L284.122"
+      "data.otservbr.global.npc.lily.L284.122",
+      "data.otservbr.global.npc.lily.L285.123",
+      "data.otservbr.global.npc.lily.L69.118",
+      "data.otservbr.global.npc.lily.L72.119",
+      "data.otservbr.global.npc.lily.L74.120",
+      "data.otservbr.global.npc.lisander.L77.251",
+      "data.otservbr.global.npc.lokur.L110.616",
+      "data.otservbr.global.npc.lorbas.L93.1556",
+      "data.otservbr.global.npc.lothar.L129.304",
+      "data.otservbr.global.npc.lothar.L130.305",
+      "data.otservbr.global.npc.loui.L105.1165",
+      "data.otservbr.global.npc.loui.L106.1166",
+      "data.otservbr.global.npc.loui.L107.1167",
+      "data.otservbr.global.npc.lubo.L156.1432",
+      "data.otservbr.global.npc.lukosch.L87.215",
+      "data.otservbr.global.npc.lukosch.L88.216",
+      "data.otservbr.global.npc.luna.L61.1332",
+      "data.otservbr.global.npc.luna.L62.1333"
     ],
     "ru|server.json": [
       "data.otservbr.global.npc.a.beggar.L82.1060",

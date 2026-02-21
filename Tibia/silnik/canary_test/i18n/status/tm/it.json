@@ -83358,5 +83358,141 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-21T01:05:04.096779Z"
+  },
+  "data.otservbr.global.npc.lily.L285.123": {
+    "src_hash": "797120acf39e816b4666bc8649e89356",
+    "text": "Naturalmente basta sfogliare le mie offerte. Se acquisti una pozione, non dimenticare che sull'ampolla vuota c'è uno {deposit} di 5 monete d'oro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.968502Z"
+  },
+  "data.otservbr.global.npc.lily.L69.118": {
+    "src_hash": "c85bd82113d310a30767258fcba1ef2a",
+    "text": "Oh ehi, |PLAYERNAME|! Vascalir deve averti mandato per aiutarmi con un po' di {mission}, vero?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.969441Z"
+  },
+  "data.otservbr.global.npc.lily.L72.119": {
+    "src_hash": "9f97d334b171026b4ef7757112fb8bdb",
+    "text": "Ciao, |PLAYERNAME|! Tornato così presto? Hai consegnato le erbe a Hyacinth?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.970344Z"
+  },
+  "data.otservbr.global.npc.lily.L74.120": {
+    "src_hash": "c81ecf943aa00abd9e5f2a3b2639f5cc",
+    "text": "Benvenuto, |PLAYERNAME|! Sembri un po' stressato oggi. Se ti piace vedere le mie offerte di pozioni, chiedimi semplicemente un {trade}. Se stai cercando il mercato e i sotterranei, segui semplicemente il percorso verso est!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.971873Z"
+  },
+  "data.otservbr.global.npc.lisander.L77.251": {
+    "src_hash": "7c9a44fbee81a7f2ea36e355b65372b7",
+    "text": "Preferirei essere lasciato in {peace}. Sii breve.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.972546Z"
+  },
+  "data.otservbr.global.npc.lokur.L110.616": {
+    "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
+    "text": "SÌ? Cosa posso fare per te, |PLAYERNAME|? Affari bancari, forse?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.973647Z"
+  },
+  "data.otservbr.global.npc.lorbas.L93.1556": {
+    "src_hash": "ad7a902e164149be3a4a215f7f0cfea2",
+    "text": "Sii salutato, caro viaggiatore.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.975176Z"
+  },
+  "data.otservbr.global.npc.lothar.L129.304": {
+    "src_hash": "959262dbf2c11b1b0a94e84d13606e40",
+    "text": "Benvenuto nella mia umile capanna, |PLAYERNAME|. Cosa ti porta {here}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.977912Z"
+  },
+  "data.otservbr.global.npc.lothar.L130.305": {
+    "src_hash": "fee7f6e7b4e03aa3b7a1f9a3ed09e69e",
+    "text": "Prendersi cura di se stessi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.978500Z"
+  },
+  "data.otservbr.global.npc.loui.L105.1165": {
+    "src_hash": "2cdc3811af0d4d8665946cb6669780f3",
+    "text": "STAI LONTANO DA QUEL BUCO!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.979375Z"
+  },
+  "data.otservbr.global.npc.loui.L106.1166": {
+    "src_hash": "ae6d100c5b4674e4f49badaaa2c62903",
+    "text": "Che gli dei ti proteggano! E stai lontano da quel buco!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.980120Z"
+  },
+  "data.otservbr.global.npc.loui.L107.1167": {
+    "src_hash": "0306d89d415cce7922a1d05d0f21cb26",
+    "text": "ATTENZIONE! Attenzione {hole}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.980694Z"
+  },
+  "data.otservbr.global.npc.lubo.L156.1432": {
+    "src_hash": "a50751bb10a3b51d4395f76efe466880",
+    "text": "Benvenuto nel mio negozio di avventurieri, |PLAYERNAME|! Di che cosa hai bisogno? Chiedimi un {trade} per guardare la mia merce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.981819Z"
+  },
+  "data.otservbr.global.npc.lukosch.L87.215": {
+    "src_hash": "74af8429056cd1b6c12ccb10e67902c1",
+    "text": "Benvenuto, |PLAYERNAME|! Ti senti avventuroso? Vuoi un {ticket} settimanale per il sistema dei carri minerari qui? Puoi usarlo proprio qui per raggiungere il centro di Kazordoon!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.984491Z"
+  },
+  "data.otservbr.global.npc.lukosch.L88.216": {
+    "src_hash": "4c63e8ef9d6c6b447464c244c3d4b195",
+    "text": "Spero di rivederti.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.985146Z"
+  },
+  "data.otservbr.global.npc.luna.L61.1332": {
+    "src_hash": "17fe9a8867d6771bd75b2ddc7d49f7d7",
+    "text": "Saluti, viaggiatore. Forse ti piacerebbe dare un'occhiata al mio {offers}...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.985939Z"
+  },
+  "data.otservbr.global.npc.luna.L62.1333": {
+    "src_hash": "486c0a6c55707c57e4de1b70eef2c576",
+    "text": "Addio, viaggiatore.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:12:32.986423Z"
   }
 }

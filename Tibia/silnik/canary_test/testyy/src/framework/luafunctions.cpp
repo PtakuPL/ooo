@@ -44,6 +44,7 @@
 #ifdef FRAMEWORK_NET
 #include <framework/net/httplogin.h>
 #include <framework/net/protocol.h>
+#include <framework/net/protocolhttp.h>
 #include <framework/net/server.h>
 #endif
 
@@ -317,4 +318,3 @@ void Application::registerLuaFunctions()
     extern void registerLuaFunctions_UI();
     registerLuaFunctions_UI();
 }
-

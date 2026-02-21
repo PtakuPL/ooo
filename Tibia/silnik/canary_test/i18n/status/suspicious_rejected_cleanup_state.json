@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T01:47:50.472698Z",
-  "last_cycle": 33,
+  "timestamp": "2026-02-21T01:50:17.747958Z",
+  "last_cycle": 34,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [],
@@ -1240,6 +1240,30 @@
     ],
     "ru|talkactions.json": [],
     "ro|client.json": [],
-    "sv|spells.json": []
+    "sv|spells.json": [],
+    "sr|spells.json": [
+      "spell.annihilation.words",
+      "spell.brutal_strike.words",
+      "spell.buzz.words",
+      "spell.cults_of_tibia_armor_buff.name",
+      "spell.curse.words",
+      "spell.divine_missile.words",
+      "spell.energy_strike.words",
+      "spell.envenom.words",
+      "spell.flame_strike.words",
+      "spell.front_sweep.words",
+      "spell.holy_flash.words",
+      "spell.ignite.words",
+      "spell.lightning.words",
+      "spell.prince_drazzak_druid.name",
+      "spell.strong_ice_strike.words",
+      "spell.strong_terra_strike.words",
+      "spell.terra_burst.words",
+      "spell.terra_strike.words",
+      "spell.ultimate_energy_strike.words",
+      "spell.ultimate_ice_strike.words",
+      "spell.whirlwind_throw.words"
+    ],
+    "pl|example_merchant.json": []
   }
 }

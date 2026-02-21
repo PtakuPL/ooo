@@ -56,6 +56,15 @@ Build jest `workflow_dispatch` (ręczne uruchomienie). Po pushu trzeba ręcznie 
 1. Stan workflow potwierdzony:  
    - aktywny plik: `/home/ptaku/serweryt/.github/workflows/build-windows.yml`
    - wybór toolsetu: najnowszy dostępny (`Select-Object -First 1`)
-2. W pliku workflow jest niespójny komentarz historyczny w kroku `Configure CMake` ("already skips 14.44"), który nie odpowiada aktualnemu kodowi.
-3. Pełny audyt techniczny (UI i CI):  
+2. Weryfikacja realnych runów GitHub Actions (master, 2026-02-21):
+   - `22246245451` fail: `Http/g_http` w `framework/luafunctions.cpp` + `C1001` (`luabinder.h`, `luainterface.h`),
+   - `22244152617`, `22243721692`, `22234136342`: utrzymujący się `C1001` (bez błędu `Http` w każdym runie).
+3. Wdrożone poprawki workflow Windows:
+   - preferencja toolsetu `14.43.*` (jeśli dostępny), fallback do najnowszego `14.x` z wykluczeniem `14.29`,
+   - `-DCMake_MSVC_PARALLEL=OFF` w konfiguracji CMake,
+   - `cmake --build ... --parallel 2`.
+4. Wdrożone poprawki kodu powiązane z Windows fail:
+   - dodany include `protocolhttp.h` w `framework/luafunctions.cpp` (zamyka `Http/g_http`),
+   - uproszczone helpery w `luaengine/luabinder.h` (mniej złożone instancjacje na MSVC).
+5. Pełny audyt techniczny (UI i CI):  
    - `Dokumentacja/01_Instalka_Klient/2026-02/2026-02-21_audyt_i18n_layout_ci_linux_windows.md`

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-21T01:45:56.526289Z",
+  "timestamp": "2026-02-21T01:49:37.969632Z",
   "priority_langs": [
     "es",
     "pl",
@@ -77,7 +77,7 @@
     "nl": 691,
     "pt": 620,
     "ro": 421,
-    "ru": 72,
+    "ru": 74,
     "sk": 663,
     "tr": 542,
     "ar": 904,
@@ -952,7 +952,7 @@
     {
       "lang": "ru",
       "json_file": "talkactions.json",
-      "identical_to_en": 1,
+      "identical_to_en": 3,
       "domain_priority": 2
     },
     {

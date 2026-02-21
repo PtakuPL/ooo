@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-02-21T01:47:33.319369Z",
-  "cycle_counter": 6889,
-  "last_target_key": "sv:spells.json",
-  "last_pending_total": 251,
-  "last_tier": 3,
-  "last_cat_priority": 4,
+  "timestamp": "2026-02-21T01:48:52.710126Z",
+  "cycle_counter": 6892,
+  "last_target_key": "pl:items.json",
+  "last_pending_total": 1069,
+  "last_tier": 1,
+  "last_cat_priority": 0,
   "candidates_count": 178,
-  "active_candidates_count": 166,
-  "skipped_backoff": 12,
+  "active_candidates_count": 165,
+  "skipped_backoff": 13,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
   "guard_fail_blocked_count": 0,
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 33,
+  "cache_cycle": 34,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -125,7 +125,7 @@
     "ro:otclient_data.json": 0,
     "sv:spells.json": 0,
     "sr:spells.json": 0,
-    "pl:example_merchant.json": 2,
+    "pl:example_merchant.json": 3,
     "es:chatchannels.json": 0,
     "pl:libs.json": 2,
     "es:libs.json": 2,
@@ -221,11 +221,11 @@
     "lang_completion": {
       "pl": 87.87,
       "es": 85.23,
-      "ru": 50.59,
+      "ru": 50.6,
       "ro": 44.05,
       "it": 53.22,
       "sr": 45.64,
-      "sv": 29.54
+      "sv": 29.55
     }
   },
   "toxic_cycle_cooldown": {

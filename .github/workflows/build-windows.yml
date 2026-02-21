@@ -42,14 +42,19 @@ jobs:
       - name: Select MSVC toolset
         shell: pwsh
         run: |
-          # Use the latest available MSVC 2022 toolset.
-          # ICE C1001 workaround: IPO/LTCG is already disabled in CMakeLists.txt,
-          # so 14.44+ is safe. Filtering out 14.44 caused fallback to ancient
-          # 14.29 (VS2019 compat, _MSC_VER=1929) which fails compiler.h check.
+          # Prefer a stable VS2022 toolset when available, but never fall back to
+          # legacy 14.29 (VS2019 compat, _MSC_VER=1929) because compiler.h rejects it.
+          # If only 14.44+ is available on runner, use it with in-repo ICE mitigations.
           $root = "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC"
           if (Test-Path $root) {
             $toolsets = Get-ChildItem $root -Directory | Select-Object -ExpandProperty Name | Sort-Object -Descending
-            $selected = $toolsets | Select-Object -First 1
+            $selected = $toolsets | Where-Object { $_ -match '^14\.43\.' } | Select-Object -First 1
+            if (-not $selected) {
+              $selected = $toolsets | Where-Object { $_ -match '^14\.' -and $_ -notmatch '^14\.29\.' } | Select-Object -First 1
+            }
+            if (-not $selected) {
+              $selected = $toolsets | Select-Object -First 1
+            }
             "VCTOOLS_VERSION=$selected" | Out-File -FilePath $env:GITHUB_ENV -Append
             Write-Host "Selected MSVC toolset: $selected (available: $($toolsets -join ', '))"
           } else {
@@ -110,10 +115,11 @@ jobs:
           New-Item -ItemType Directory -Force -Path build | Out-Null
           # Use MSVC cl.exe (not clang-cl) — vcpkg builds all libs with MSVC,
           # mixing compilers causes protobuf DLL symbol mismatch (__declspec(dllimport)).
-          # The "Select MSVC toolset" step above picks the newest available MSVC 2022 toolset.
+          # Disable /MP injection from CMake to reduce MSVC C1001 pressure in template-heavy TUs.
           cmake -G "Ninja" `
                 -DCMAKE_BUILD_TYPE=Release `
                 -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" `
+                -DCMake_MSVC_PARALLEL=OFF `
                 -DSPEED_UP_BUILD_UNITY=OFF `
                 -DTOGGLE_BIN_FOLDER=ON `
                 -S . -B build
@@ -121,7 +127,7 @@ jobs:
       - name: Build
         shell: pwsh
         run: |
-          cmake --build build --config Release --parallel 4
+          cmake --build build --config Release --parallel 2
 
       - name: Create and Upload Artifact
         uses: actions/upload-artifact@v4

@@ -143,38 +143,34 @@ namespace luabinder
 
     /// Create member function lambdas
     template<typename Ret, typename C, typename... Args>
-    std::function<Ret(const std::shared_ptr<C>&, const Args&...)> make_mem_func(Ret(C::* f)(Args...))
+    auto make_mem_func(Ret(C::* f)(Args...))
     {
-        auto mf = std::mem_fn(f);
-        return [=](const std::shared_ptr<C>& obj, const Args&... args) mutable -> Ret {
+        return [f](const std::shared_ptr<C>& obj, const Args&... args) mutable -> Ret {
             if (!obj)
                 throw LuaException("failed to call a member function because the passed object is nil");
-            return mf(obj.get(), args...);
+            return (obj.get()->*f)(args...);
         };
     }
     template<typename C, typename... Args>
-    std::function<void(const std::shared_ptr<C>&, const Args&...)> make_mem_func(void (C::* f)(Args...))
+    auto make_mem_func(void (C::* f)(Args...))
     {
-        auto mf = std::mem_fn(f);
-        return [=](const std::shared_ptr<C>& obj, const Args&... args) mutable {
+        return [f](const std::shared_ptr<C>& obj, const Args&... args) mutable {
             if (!obj)
                 throw LuaException("failed to call a member function because the passed object is nil");
-            mf(obj.get(), args...);
+            (obj.get()->*f)(args...);
         };
     }
 
     /// Create member function lambdas for singleton classes
     template<typename Ret, typename C, typename... Args>
-    std::function<Ret(const Args&...)> make_mem_func_singleton(Ret(C::* f)(Args...), C* instance)
+    auto make_mem_func_singleton(Ret(C::* f)(Args...), C* instance)
     {
-        auto mf = std::mem_fn(f);
-        return [=](Args... args) mutable -> Ret { return mf(instance, args...); };
+        return [f, instance](Args... args) mutable -> Ret { return (instance->*f)(args...); };
     }
     template<typename C, typename... Args>
-    std::function<void(const Args&...)> make_mem_func_singleton(void (C::* f)(Args...), C* instance)
+    auto make_mem_func_singleton(void (C::* f)(Args...), C* instance)
     {
-        auto mf = std::mem_fn(f);
-        return [=](Args... args) mutable { mf(instance, args...); };
+        return [f, instance](Args... args) mutable { (instance->*f)(args...); };
     }
 
     /// Bind member functions

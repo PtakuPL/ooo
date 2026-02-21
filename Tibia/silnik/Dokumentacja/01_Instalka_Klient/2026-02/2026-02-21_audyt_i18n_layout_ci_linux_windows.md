@@ -191,3 +191,95 @@ Ale trzeba:
    - `/home/ptaku/serweryt/.github/workflows/build-linux.yml`
    - `/home/ptaku/serweryt/.github/workflows/build-windows.yml`
 3. Dopasowanie dokumentacji do stanu kodu na dzień 2026-02-21.
+
+---
+
+## 11. Aktualizacja po weryfikacji realnych faili GitHub Actions (2026-02-21)
+
+### 11.1 Linux (workflow: Build - Linux (OTC Client))
+
+Zweryfikowane runy:
+- `22246581096` (push, master)
+- `22246594550` (workflow_dispatch, master)
+
+Powtarzalny błąd kompilacji:
+- `Tibia/silnik/canary_test/testyy/src/framework/luafunctions.cpp:184-193`
+- `error: 'Http' has not been declared`
+- `error: 'g_http' was not declared in this scope`
+
+Wniosek:
+- W `luafunctions.cpp` rejestracja `g_http` była obecna, ale brakowało bezpośredniego include `protocolhttp.h`.
+
+Dodatkowe adnotacje (nie będące root-cause faila buildu):
+- warning `glew requires ...` w kroku CMake (informacyjny, nie zatrzymuje buildu),
+- warning `git exit code 128` w `Post Checkout repository` (cleanup nested `.git`).
+
+### 11.2 Windows (workflow: Build - Windows)
+
+Zweryfikowane runy:
+- `22246245451` (master, workflow_dispatch)
+- historycznie też: `22244152617`, `22243721692`, `22234136342`
+
+Problemy:
+1. Ten sam blocker co Linux w `luafunctions.cpp` (`Http`/`g_http`).
+2. Dodatkowo utrzymujący się `fatal error C1001` w obszarze:
+   - `luaengine/luabinder.h` (m.in. linie ~149, ~171),
+   - `luaengine/luainterface.h:484` (miejsce instancjacji template, niekoniecznie pierwotna przyczyna).
+
+Wniosek:
+- Windows miał dwa problemy jednocześnie: brak include dla `Http` oraz niestabilność `cl.exe` 14.44 dla ciężkich template TU.
+
+### 11.3 Błędne założenia potwierdzone logami
+
+1. "To tylko problem workflow Linux / apt" - nie, root-cause faila to C++ `Http/g_http`.
+2. "git exit code 128 zatrzymuje build" - nie, to warning post-step, build wcześniej pada na kompilacji.
+3. "Windows fail to tylko C1001" - nie, w runie `22246245451` pierwszy twardy błąd to także `Http/g_http`.
+
+---
+
+## 12. Naprawy wdrożone po analizie logów (2026-02-21)
+
+### 12.1 Kod C++
+
+1. Dodano brakujący include:
+- `Tibia/silnik/canary_test/testyy/src/framework/luafunctions.cpp`
+  - dodane: `#include <framework/net/protocolhttp.h>`
+
+2. Zmniejszono presję template na MSVC w binderze:
+- `Tibia/silnik/canary_test/testyy/src/framework/luaengine/luabinder.h`
+  - usunięto `std::mem_fn` z `make_mem_func*`,
+  - zamieniono na bezpośrednie wywołania wskaźników do metod (`(obj.get()->*f)(...)`, `(instance->*f)(...)`),
+  - zwroty helperów jako `auto` (bez wymuszania `std::function` w helperze).
+
+### 12.2 CI workflow
+
+1. Linux:
+- `.github/workflows/build-linux.yml`
+  - poprawiono ścieżki cleanup nested `.git` (`../oryginall/...` zamiast `oryginall/...`),
+  - dodano `libxmu-dev` w instalacji zależności.
+
+2. Windows:
+- `.github/workflows/build-windows.yml`
+  - wybór toolsetu: preferencja `14.43.*` gdy dostępny, fallback do najnowszego `14.x` z wykluczeniem `14.29` (na końcu awaryjnie pierwszy dostępny),
+  - `Configure CMake`: dodano `-DCMake_MSVC_PARALLEL=OFF` (wyłączenie `/MP` z CMake),
+  - `Build`: obniżono równoległość do `--parallel 2`.
+
+---
+
+## 13. Zadania naprawcze po wdrożeniu (checklista operacyjna)
+
+### P0
+1. Uruchomić ręcznie:
+   - `Build - Linux (OTC Client)` na master,
+   - `Build - Windows` na master.
+2. Potwierdzić, że `Http/g_http` nie występuje już w logach kompilacji.
+
+### P1
+1. Jeśli `C1001` nadal wystąpi:
+   - wskazać dokładny TU i linię z logu,
+   - dodać per-file `COMPILE_FLAGS` tylko dla tego TU (zamiast globalnego osłabiania optymalizacji).
+2. Dodać krótki raport "przed/po" (run id, status, czas, pierwszy błąd) do tej dokumentacji.
+
+### P2
+1. Rozważyć dedykowany self-hosted runner Windows z toolsetem 14.43, jeżeli `windows-2022` będzie stabilnie utrzymywał tylko 14.44 + 14.29.
+2. Utrzymać zasadę: komentarze workflow muszą odpowiadać realnej logice skryptu (bez historycznych opisów).

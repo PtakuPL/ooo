@@ -176734,5 +176734,157 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T01:35:32.437879Z"
+  },
+  "spell.front_sweep.words": {
+    "src_hash": "f829eee2e7dbdb30363552d3a14b89af",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:25.172641Z"
+  },
+  "spell.brutal_strike.words": {
+    "src_hash": "fee3a42f563627193436161c1380c103",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:25.173106Z"
+  },
+  "spell.curse.words": {
+    "src_hash": "6c1a247df20e9f79fa134b9239a3f0c3",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:25.173578Z"
+  },
+  "spell.whirlwind_throw.words": {
+    "src_hash": "06518892e26ec496c86c51a5d11a11d8",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:25.174117Z"
+  },
+  "spell.envenom.words": {
+    "src_hash": "7501e5466946f575bad671242ad6e883",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:27.948639Z"
+  },
+  "spell.ignite.words": {
+    "src_hash": "401a092fa187efdc6c364548398dd082",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:27.949079Z"
+  },
+  "spell.energy_strike.words": {
+    "src_hash": "0427e3de8afc9330e7cd301c35aa975a",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:27.949520Z"
+  },
+  "spell.ultimate_ice_strike.words": {
+    "src_hash": "f8d1aa9ce25522aebd5adbb04d2b4b5f",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:30.693877Z"
+  },
+  "spell.buzz.words": {
+    "src_hash": "9649bc31b35fcdfa4dc4381fe9415be9",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:30.694431Z"
+  },
+  "spell.holy_flash.words": {
+    "src_hash": "850392482619a5ea7d416c580b85abc2",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:30.694912Z"
+  },
+  "spell.flame_strike.words": {
+    "src_hash": "aa3d83ed78fff97b3ea6cc40514f0eb0",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:33.629316Z"
+  },
+  "spell.divine_missile.words": {
+    "src_hash": "1cecefcc68a590b9b1bdffee3f5e7037",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:33.629969Z"
+  },
+  "spell.strong_ice_strike.words": {
+    "src_hash": "8d426dfe2e19a7b0b4bafe5754f13994",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:33.630463Z"
+  },
+  "spell.strong_terra_strike.words": {
+    "src_hash": "3d0c9984bfb89686f78843061255ba18",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:33.631038Z"
+  },
+  "spell.terra_strike.words": {
+    "src_hash": "aede9e4121cabe9c7cd1aa70f0483dbe",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:36.401901Z"
+  },
+  "spell.lightning.words": {
+    "src_hash": "438f50dd16d80457c23cb4688227ccbe",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:36.402425Z"
+  },
+  "spell.ultimate_energy_strike.words": {
+    "src_hash": "6a98e3c2667e5e67987b8becab6f7c9f",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:36.402925Z"
+  },
+  "spell.annihilation.words": {
+    "src_hash": "c7b4b515ce2f8412092931dad7ea2955",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:36.403579Z"
+  },
+  "spell.terra_burst.words": {
+    "src_hash": "9277c181b43a7d0b5a4f2a0f1d7128ff",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:48:38.665670Z"
   }
 }

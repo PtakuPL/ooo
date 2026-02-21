@@ -1,42 +1,54 @@
 {
-  "timestamp": "2026-02-21T01:47:50.569062Z",
-  "language": "sv",
-  "json_file": "spells.json",
-  "translated": 5,
+  "timestamp": "2026-02-21T01:50:17.824685Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 7,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "spell.defiler_paralyze_3.name",
-      "en": "Defiler Paralyze 3",
-      "translated": "Defiler Paralyze 3",
+      "key": "npc.a_fading_memory.greet_msg_1",
+      "en": "Oh...",
+      "translated": "Oh...",
       "source": "tm"
     },
     {
-      "key": "spell.lizard_wave_2.name",
-      "en": "Lizard Wave 2",
-      "translated": "Lizard Wave 2",
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "spell.the_welter_heal2.name",
-      "en": "the welter heal2",
-      "translated": "the welter heal2",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "spell.the_welter_summon2.name",
-      "en": "the welter summon2",
-      "translated": "the welter summon2",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "spell.avalanche_rune.name",
-      "en": "Avalanche Rune",
-      "translated": "Avalanche Rune",
-      "source": "simple"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
+    },
+    {
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
+    },
+    {
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     }
   ]
 }

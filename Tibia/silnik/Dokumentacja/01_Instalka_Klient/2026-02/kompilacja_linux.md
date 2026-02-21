@@ -285,3 +285,25 @@ Warning: /home/runner/work/ooo/ooo/Tibia/silnik/canary_test/testyy/src/framework
       |                ^
 Warning: /home/runner/work/ooo/ooo/Tibia/silnik/canary_test/testyy/src/framework/graphics/drawpoolmanager.cpp:49:16: warning: enumeration value ‘FOREGROUND’ not handled in switch [-Wswitch]
 Warning: /home/runner/work/ooo/ooo/Tibia/silnik/canary_test/testyy/src/framework/graphics/drawpoolmanager.cpp:49:16: warning: enumeration value ‘LAST’ not handled in switch [-Wswitch]
+
+---
+
+## Aktualizacja 2026-02-21 (GitHub Actions)
+
+Zweryfikowane runy:
+- `22246581096` (push, master)
+- `22246594550` (workflow_dispatch, master)
+
+Root-cause faila kompilacji:
+- `Tibia/silnik/canary_test/testyy/src/framework/luafunctions.cpp:184-193`
+- brak deklaracji `Http` i `g_http` podczas rejestracji Lua (`g_http`).
+
+Wdrożona poprawka:
+- dodany include `#include <framework/net/protocolhttp.h>` w `framework/luafunctions.cpp`.
+
+Dodatkowe poprawki workflow Linux:
+- poprawione ścieżki cleanup nested `.git` (`../oryginall/...`),
+- dodane `libxmu-dev` do pakietów systemowych (zgodnie z ostrzeżeniami GLEW).
+
+Uwaga:
+- warning `git exit code 128` w `Post Checkout repository` był skutkiem nested `.git` i nie był główną przyczyną nieudanego buildu.

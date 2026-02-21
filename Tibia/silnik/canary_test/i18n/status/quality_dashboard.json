@@ -33,12 +33,12 @@
     "issues_count": 1417
   },
   "es": {
-    "last_cycle": "2026-02-21T09:53:40.777635Z",
+    "last_cycle": "2026-02-21T09:55:48.264282Z",
     "last_translated": 7,
-    "total_suspicious": 75929,
-    "total_rejected": 2589,
-    "total_gt_guard_fail": 25485,
-    "cycles": 1818,
+    "total_suspicious": 75999,
+    "total_rejected": 2592,
+    "total_gt_guard_fail": 25521,
+    "cycles": 1819,
     "quality_score": 60.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 350877
@@ -66,12 +66,12 @@
     "issues_count": 2470
   },
   "it": {
-    "last_cycle": "2026-02-21T09:54:06.410480Z",
-    "last_translated": 30,
-    "total_suspicious": 9419,
-    "total_rejected": 990,
-    "total_gt_guard_fail": 3443,
-    "cycles": 539,
+    "last_cycle": "2026-02-21T09:54:54.520168Z",
+    "last_translated": 22,
+    "total_suspicious": 9477,
+    "total_rejected": 998,
+    "total_gt_guard_fail": 3451,
+    "cycles": 540,
     "quality_score": 74.7,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 77055
@@ -99,13 +99,13 @@
     "issues_count": 649
   },
   "sv": {
-    "last_cycle": "2026-02-21T09:30:00.695516Z",
+    "last_cycle": "2026-02-21T09:55:09.509027Z",
     "last_translated": 30,
-    "total_suspicious": 5287,
+    "total_suspicious": 5345,
     "total_rejected": 416,
     "total_gt_guard_fail": 992,
-    "cycles": 195,
-    "quality_score": 72.6,
+    "cycles": 196,
+    "quality_score": 72.7,
     "last_audit": "2026-02-20T22:12:42.470260Z",
     "issues_count": 32351
   },
@@ -418,13 +418,13 @@
     "issues_count": 111
   },
   "sr": {
-    "last_cycle": "2026-02-21T02:31:18.516969Z",
+    "last_cycle": "2026-02-21T09:55:01.062194Z",
     "last_translated": 30,
-    "total_suspicious": 3688,
+    "total_suspicious": 3718,
     "total_rejected": 1,
     "total_gt_guard_fail": 516,
-    "cycles": 190,
-    "quality_score": 69.1,
+    "cycles": 191,
+    "quality_score": 69.3,
     "last_audit": "2026-02-20T21:57:44.900702Z",
     "issues_count": 87233
   },

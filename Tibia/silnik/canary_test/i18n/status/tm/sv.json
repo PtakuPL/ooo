@@ -38678,5 +38678,125 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T09:30:00.289199Z"
+  },
+  "npc.uzon.keyword_1": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Hålla fast!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.099951Z"
+  },
+  "npc.uzon.stdmod_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Känn vinden i håret under en av mina mattturer!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.100461Z"
+  },
+  "npc.uzon.stdmod_2": {
+    "src_hash": "065a3336d2940946dccb9d6a186f5671",
+    "text": "Aldrig hört talas om en plats som denna.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.101465Z"
+  },
+  "npc.uzon.stdmod_3": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Hålla fast!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.102098Z"
+  },
+  "npc.uzon.stdmod_4": {
+    "src_hash": "8f3b71da455041c184184618a35b40fb",
+    "text": "Du bör inte missa upplevelsen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.102642Z"
+  },
+  "npc.uzon.voice_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Känn vinden i håret under en av mina mattturer!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.103378Z"
+  },
+  "npc.uzon_back.keyword_1": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Hålla fast!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.104293Z"
+  },
+  "npc.uzon_back.stdmod_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Känn vinden i håret under en av mina mattturer!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.104812Z"
+  },
+  "npc.uzon_back.stdmod_2": {
+    "src_hash": "065a3336d2940946dccb9d6a186f5671",
+    "text": "Aldrig hört talas om en plats som denna.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.105239Z"
+  },
+  "npc.uzon_back.stdmod_3": {
+    "src_hash": "b1a4afd0687e5006a413906a77b6f2c2",
+    "text": "Hålla fast!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.105632Z"
+  },
+  "npc.uzon_back.stdmod_4": {
+    "src_hash": "8f3b71da455041c184184618a35b40fb",
+    "text": "Du bör inte missa upplevelsen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.106059Z"
+  },
+  "npc.uzon_back.voice_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Känn vinden i håret under en av mina mattturer!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.106769Z"
+  },
+  "npc.vanys.say_14": {
+    "src_hash": "c066542c456632337339c67bf887b0a8",
+    "text": "Förlåt, jag förstod inte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.109594Z"
+  },
+  "npc.vera.voice_1": {
+    "src_hash": "1fa395c2991033dc8cbf3014b1df5c4a",
+    "text": "Har du flyttat till ett nytt hem? Jag är specialisten på att utrusta den.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.115771Z"
+  },
+  "npc.walter_jaeger.store_inbox_full": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Se till att du har lediga platser i din butiks inkorg.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:55:09.122015Z"
   }
 }

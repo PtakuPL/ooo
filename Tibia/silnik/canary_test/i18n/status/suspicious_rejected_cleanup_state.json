@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T09:51:25.147700Z",
-  "last_cycle": 3,
+  "timestamp": "2026-02-21T09:53:40.701098Z",
+  "last_cycle": 4,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -100,7 +100,13 @@
       "item.14024.name",
       "item.14039.name",
       "item.14142.desc",
-      "item.14143.desc"
+      "item.14143.desc",
+      "item.14237.name",
+      "item.14238.desc",
+      "item.14254.name",
+      "item.14258.desc",
+      "item.14670.name",
+      "item.14752.name"
     ],
     "ro|items.json": [
       "item.18218.name",
@@ -928,7 +934,17 @@
     ],
     "es|monsters.json": [],
     "es|server.json": [],
-    "it|npc.json": [],
+    "it|npc.json": [
+      "npc.a_fluffy_squirrel.farewell_msg_1",
+      "npc.a_fluffy_squirrel.walkaway_msg_1",
+      "npc.a_restless_soul.greet_msg_1",
+      "npc.a_starving_dog.greet_1",
+      "npc.barnabas_dee.say_5",
+      "npc.captain_haba_open_sea.starboard_4",
+      "npc.captain_haba_open_sea.straight_4",
+      "npc.robson.say_4",
+      "npc.robson.say_6"
+    ],
     "ru|npc.json": [],
     "ro|npc.json": [],
     "pl|cpp.json": [

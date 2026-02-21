@@ -40766,5 +40766,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T09:51:00.276181Z"
+  },
+  "item.14238.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "В потолке дыра.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:52:26.502730Z"
+  },
+  "item.14258.desc": {
+    "src_hash": "a532c896c1e7082fcec87ff1946ae285",
+    "text": "Позволяет подводные исследования",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:52:26.511924Z"
   }
 }

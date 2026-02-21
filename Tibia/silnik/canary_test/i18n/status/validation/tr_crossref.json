@@ -1,10 +1,10 @@
 {
   "lang": "tr",
-  "coverage_pct": 9.1,
+  "coverage_pct": 9.2,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T09:28:47.092132Z",
+  "checked_at": "2026-02-21T09:34:30.830454Z",
   "issues_total": 415,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -2318,6 +2318,15 @@
       "lang": "Destroyer"
     },
     {
+      "key": "monster.cyclops_drone.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cyclops Drone",
+      "pl": "Cyclops Dron",
+      "lang": "Cyclops Drone"
+    },
+    {
       "key": "monster.old_wasp.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3119,6 +3128,15 @@
       "lang": "Chatter"
     },
     {
+      "key": "monster.knowledge_raider.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knowledge Raider",
+      "pl": "KNiewledge Raider",
+      "lang": "Knowledge Raider"
+    },
+    {
       "key": "monster.hellgorak.voice_6",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3135,6 +3153,33 @@
       "en": "Clank.",
       "pl": "Brzęk.",
       "lang": "Clank."
+    },
+    {
+      "key": "monster.goshnar's_megalomania_green.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Goshnar's Megalomania",
+      "pl": "Megalomania Goshnara",
+      "lang": "Goshnar's Megalomania"
+    },
+    {
+      "key": "monster.goshnar's_megalomania_purple.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Goshnar's Megalomania",
+      "pl": "Megalomania Goshnara",
+      "lang": "Goshnar's Megalomania"
+    },
+    {
+      "key": "monster.goshnar's_megalomania_blue.desc",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Goshnar's Megalomania",
+      "pl": "Megalomania Goshnara",
+      "lang": "Goshnar's Megalomania"
     },
     {
       "key": "monster.branchy_crawler.voice_2",
@@ -3261,15 +3306,6 @@
       "en": "Huh!",
       "pl": "He, co!",
       "lang": "Huh!"
-    },
-    {
-      "key": "monster.vampire.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "BLOOD!",
-      "pl": "Krew!",
-      "lang": "BLOOD!"
     },
     {
       "key": "monster.betrayed_wraith.voice_1",
@@ -3576,42 +3612,6 @@
       "en": "Grrrrrrr",
       "pl": "Wrrrrrr",
       "lang": "Grrrrrrr"
-    },
-    {
-      "key": "monster.wild_horse.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*snort*",
-      "pl": "*sNiert*",
-      "lang": "*snort*"
-    },
-    {
-      "key": "monster.grey_horse.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "*snort*",
-      "pl": "*sNiert*",
-      "lang": "*snort*"
-    },
-    {
-      "key": "monster.mushroom_sniffer.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sniff",
-      "pl": "Węszy",
-      "lang": "Sniff"
-    },
-    {
-      "key": "monster.mushroom_sniffer.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oink",
-      "pl": "Chrum",
-      "lang": "Oink"
     }
   ],
   "length_ratio_issues": [

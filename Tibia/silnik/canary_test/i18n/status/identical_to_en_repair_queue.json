@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-21T09:31:31.772540Z",
+  "timestamp": "2026-02-21T09:33:45.839967Z",
   "priority_langs": [
     "es",
     "pl",
@@ -82,7 +82,7 @@
     "tr": 542,
     "ar": 904,
     "az": 662,
-    "bg": 691,
+    "bg": 692,
     "bn": 904,
     "bs": 663,
     "da": 663,
@@ -1288,7 +1288,7 @@
     {
       "lang": "bg",
       "json_file": "npc.json",
-      "identical_to_en": 14,
+      "identical_to_en": 15,
       "domain_priority": 0
     },
     {

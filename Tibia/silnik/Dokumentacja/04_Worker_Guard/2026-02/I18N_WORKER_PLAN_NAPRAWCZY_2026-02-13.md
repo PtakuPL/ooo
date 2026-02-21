@@ -58,6 +58,22 @@ Nowe zadania z incydentu:
 - [ ] `WQ-HARD-48 (P0)`: Diagnostyka `Killed` procesu workera (pid timeline + korelacja z obciążeniem I/O/CPU + źródło sygnału).
 - [ ] `WQ-HARD-49 (P1)`: Ograniczyć churn commitów statusowych (cooldown push/commit lub agregacja zmian), aby zmniejszyć obciążenie środowiska i ryzyko zwieszek IDE.
 
+### Uzupełnienie 2026-02-21 10:33 UTC — wdrożenie `WQ-HARD-49`
+
+Wykonane:
+- ✅ `canary_test/i18n_guardian.sh`:
+  - zwiększono domyślny interwał push statusu: `PUSH_INTERVAL_SECONDS=120 -> 480` (z możliwością override przez env),
+  - dodano osobny cooldown commitu statusowego: `STATUS_COMMIT_MIN_INTERVAL_SECONDS=900` (15 min),
+  - dodano stan cooldownu: `.guardian_last_status_commit_ts`,
+  - gdy cooldown commitu nie minął, guardian pomija commit/push i resetuje staging tylko dla plików statusu (bez side effects na inne zmiany repo).
+- ✅ Walidacja: `bash -n i18n_guardian.sh` przechodzi po zmianach.
+- ✅ Runtime: po `bash i18n_start_all.sh --restart` stack wrócił (`Guardian/Statusd/Worker = RUNNING`, health-gate 30s OK).
+
+Efekt operacyjny (oczekiwany):
+- Mniej commitów/pushy statusowych na godzinę,
+- niższe obciążenie I/O i mniejszy churn Git,
+- mniejsze ryzyko „zamrożenia” VS Code podczas pracy workera.
+
 Wybrane do realizacji pełne zadania:
 - **Przywrócić stabilną pracę workera po `NameError: TRANSLATION_OVERRIDES`**
 - **Domknąć kontrakt manual override dla tłumaczeń (priorytet nad TM/GT)**

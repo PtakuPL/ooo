@@ -1,10 +1,10 @@
 {
   "lang": "sv",
-  "coverage_pct": 30.4,
+  "coverage_pct": 30.5,
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T09:28:46.252868Z",
+  "checked_at": "2026-02-21T09:34:29.954863Z",
   "issues_total": 428,
   "issues_by_type": {
     "consistency_in_language": 13,
@@ -3683,15 +3683,6 @@
       "lang": "D'oh?"
     },
     {
-      "key": "npc.ukea.farewell_msg_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Good bye!",
-      "pl": "Robić widzenia!",
-      "lang": "Good bye!"
-    },
-    {
       "key": "npc.uzon.keyword_1",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3807,6 +3798,15 @@
       "en": "I see.",
       "pl": "Rozumiem.",
       "lang": "I see."
+    },
+    {
+      "key": "npc.yasir.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Me Yasir.",
+      "pl": "Mnie, mi Yasir.",
+      "lang": "Me Yasir."
     }
   ],
   "length_ratio_issues": [

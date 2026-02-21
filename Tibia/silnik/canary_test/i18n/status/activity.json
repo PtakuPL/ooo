@@ -1,9 +1,9 @@
 {
-  "category": "pl",
-  "cycle": 52,
+  "category": "es",
+  "cycle": 53,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-21T02:23:11Z",
+  "generated_at_utc": "2026-02-21T02:24:23Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -12,6 +12,46 @@
     "unit": "units"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 53,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-21T02:23:50Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 53,
+      "file": "modules.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-21T02:23:38Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 53,
+      "file": "modules.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-21T02:23:32Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 53,
+      "file": "modules.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-21T02:23:32Z"
+    },
     {
       "action": "update",
       "category": "es",
@@ -71,46 +111,6 @@
       "result": "ok",
       "stage": "heartbeat_tick",
       "t": "2026-02-21T02:20:49Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 51,
-      "file": "otclient_modules.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-21T02:20:49Z"
-    },
-    {
-      "action": "update",
-      "category": "sr",
-      "cycle": 51,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-21T02:20:40Z"
-    },
-    {
-      "action": "update",
-      "category": "sr",
-      "cycle": 51,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-21T02:20:39Z"
-    },
-    {
-      "action": "update",
-      "category": "sv",
-      "cycle": 51,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-02-21T02:20:38Z"
     }
   ],
   "stage": "cycle_end",

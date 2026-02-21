@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T02:23:09.273663Z",
-  "last_cycle": 52,
+  "timestamp": "2026-02-21T02:24:21.084683Z",
+  "last_cycle": 53,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -591,7 +591,9 @@
     "pl|client.json": [
       "client.elementnode.text3"
     ],
-    "es|modules.json": [],
+    "es|modules.json": [
+      "module.gamestore.text1"
+    ],
     "es|otclient_data.json": [],
     "it|otclient_modules.json": [
       "otclient_modules.character_otui.tr_13",

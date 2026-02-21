@@ -85,12 +85,15 @@
 #include <fmt/args.h>
 #include <fmt/ranges.h>
 
-// FMT Custom Formatter for Enums
+// FMT helper for legacy fmt versions that don't expose enum format_as.
+// Newer fmt versions already provide this and redefining it breaks the build.
+#if !defined(FMT_VERSION) || FMT_VERSION < 80000
 template <typename E>
 std::enable_if_t<std::is_enum_v<E>, std::underlying_type_t<E>>
 format_as(E e) {
 	return static_cast<std::underlying_type_t<E>>(e);
 }
+#endif
 
 // GMP
 #include <gmp.h>

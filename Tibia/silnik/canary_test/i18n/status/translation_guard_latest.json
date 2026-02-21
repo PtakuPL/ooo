@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-21T02:30:16.176260Z",
-  "cycle": 56,
-  "language": "ro",
-  "json_file": "books.json",
+  "timestamp": "2026-02-21T02:31:32.713976Z",
+  "cycle": 57,
+  "language": "pl",
+  "json_file": "php.json",
   "translated": 1,
   "placeholders": 0,
-  "guard_fail": 29,
+  "guard_fail": 5,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 379
+  "strict_skipped_done": 55
 }

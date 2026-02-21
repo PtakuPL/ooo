@@ -12,6 +12,7 @@
 #include "server/network/protocol/protocol.hpp"
 #include "game/movement/position.hpp"
 #include "utils/utils_definitions.hpp"
+#include "game/arena/arena_definitions.hpp"
 
 #include <vector>
 

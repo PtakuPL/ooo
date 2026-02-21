@@ -378,65 +378,22 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-21T02:45:18Z",
+  "generated_at_utc": "2026-02-21T02:47:08Z",
   "global": {
     "en_keys_total": 53586,
-    "errors_total": 3348,
+    "errors_total": 3350,
     "files_processed_total": 6443,
     "languages_total": 55
   },
   "legacy": {
     "i18n_global_stats": {
       "auto_translate": {
-        "guard_fail": 5,
-        "json_file": "npc.json",
-        "keys_to_translate": 2271,
+        "guard_fail": 44,
+        "json_file": "server.json",
+        "keys_to_translate": 127,
         "language": "es",
-        "recent_examples": [
-          {
-            "en": "Oh...",
-            "key": "npc.a_fading_memory.greet_msg_1",
-            "source": "tm",
-            "translated": "Oh..."
-          },
-          {
-            "en": "Hum hum, huhum",
-            "key": "npc.a_sweaty_cyclops.stdmod_1",
-            "source": "tm",
-            "translated": "Hum hum, hum hum"
-          },
-          {
-            "en": "Hum hum, huhum",
-            "key": "npc.a_sweaty_cyclops.voice_1",
-            "source": "tm",
-            "translated": "Hum hum, hum hum"
-          },
-          {
-            "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-            "key": "npc.barnabas_dee.say_5",
-            "source": "tm",
-            "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá."
-          },
-          {
-            "en": "npc.bozo.mission_36_t1",
-            "key": "npc.bozo.stdmod_116",
-            "source": "tm",
-            "translated": "npc.bozo.mission_36_t1"
-          },
-          {
-            "en": "npc.bozo.mission_12_t1",
-            "key": "npc.bozo.stdmod_92",
-            "source": "tm",
-            "translated": "npc.bozo.mission_12_t1"
-          },
-          {
-            "en": "Zzz...",
-            "key": "npc.budrik.say_9",
-            "source": "tm",
-            "translated": "Zzz..."
-          }
-        ],
-        "recent_translated": 7,
+        "recent_examples": [],
+        "recent_translated": 0,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
@@ -446,7 +403,7 @@
         "new_files_detected": 152,
         "quality_issues": 2875
       },
-      "last_update": "2026-02-21T03:45:17.868035",
+      "last_update": "2026-02-21T03:47:07.208520",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -465,7 +422,7 @@
         "registry_reconcile_adjustment": 53586
       },
       "mode": "AUTO_TRANSLATE",
-      "total_cycles": 62,
+      "total_cycles": 63,
       "translation_sync": {
         "json_file": "scripts.json",
         "keys_to_sync": 0,
@@ -495,8 +452,8 @@
       },
       "stage": "cycle_end"
     },
-    "cycle": 62,
-    "heartbeat_at_utc": "2026-02-21T02:45:17Z",
+    "cycle": 63,
+    "heartbeat_at_utc": "2026-02-21T02:47:07Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

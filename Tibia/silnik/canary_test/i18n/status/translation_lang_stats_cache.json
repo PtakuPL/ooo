@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-21T02:45:24.889898Z",
+  "timestamp": "2026-02-21T02:47:15.467665Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -7482,7 +7482,7 @@
         [
           "server.json",
           1,
-          1771638792377776439,
+          1771641973010086478,
           299577
         ],
         [
@@ -7985,7 +7985,7 @@
         "server.json": {
           "sig": [
             1,
-            1771638792377776439,
+            1771641973010086478,
             299577
           ],
           "row": {
@@ -16023,7 +16023,7 @@
         [
           "npc.json",
           1,
-          1771638902572685283,
+          1771642013071879113,
           1836471
         ],
         [
@@ -16430,7 +16430,7 @@
         "npc.json": {
           "sig": [
             1,
-            1771638902572685283,
+            1771642013071879113,
             1836471
           ],
           "row": {
@@ -27768,8 +27768,8 @@
         [
           "npc.json",
           1,
-          1771639966489261105,
-          1836447
+          1771642023864100987,
+          1834988
         ],
         [
           "npclib.json",
@@ -27879,14 +27879,14 @@
         "language_name": "Rosyjski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 27140,
-        "english_copy_keys": 1471,
+        "translated_keys": 27121,
+        "english_copy_keys": 1497,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 50.65,
+        "completion_pct": 50.61,
         "server_keys": 49731,
-        "server_translated": 24340,
-        "server_pct": 48.94,
+        "server_translated": 24321,
+        "server_pct": 48.91,
         "client_keys": 3855,
         "client_translated": 2800,
         "client_pct": 72.63
@@ -28175,13 +28175,13 @@
         "npc.json": {
           "sig": [
             1,
-            1771639966489261105,
-            1836447
+            1771642023864100987,
+            1834988
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 880,
-            "english_copy_keys": 45,
+            "translated_keys": 861,
+            "english_copy_keys": 71,
             "missing_keys": 0,
             "missing_files": 0
           }

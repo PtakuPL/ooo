@@ -1,8 +1,8 @@
 {
-  "total_cycles": 57,
+  "total_cycles": 58,
   "mode": "AUTO_TRANSLATE",
-  "category": "sv",
-  "last_update": "2026-02-21T03:32:31.871382",
+  "category": "es",
+  "last_update": "2026-02-21T03:33:42.373540",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,10 +26,10 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "sv",
-    "json_file": "items.json",
-    "keys_to_translate": 16092,
-    "guard_fail": 5,
+    "language": "es",
+    "json_file": "cpp.json",
+    "keys_to_translate": 9,
+    "guard_fail": 0,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

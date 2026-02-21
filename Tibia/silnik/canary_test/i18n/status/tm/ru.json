@@ -39526,5 +39526,109 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:11:20.732919Z"
+  },
+  "web.tpl.forum.new_post.b_1": {
+    "src_hash": "36e1a8d34180d54508cdf954e42e15c8",
+    "text": "Пост Новый Реплй",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:12:41.193098Z"
+  },
+  "web.tpl.bans.b_6": {
+    "src_hash": "a797f83639a61869111aa5283ab880a2",
+    "text": "Аддед по:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:12:41.199329Z"
+  },
+  "web.tpl.guilds.kick_player.set_1": {
+    "src_hash": "73834873aab320a00574f5329520f3df",
+    "text": "Кикк Игрок",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:12:41.200435Z"
+  },
+  "web.tpl.account.welcome_mail.h3_1": {
+    "src_hash": "2e459a51ca4e81bcb29400a766ddd2f5",
+    "text": "Деар Игрок,",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:12:41.201894Z"
+  },
+  "web.tpl.characters.td_7": {
+    "src_hash": "f4b7053ac7d6eb1f75ad692ac27ddc59",
+    "text": "Магик Уровень:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:12:41.209669Z"
+  },
+  "web.tpl.characters.b_18": {
+    "src_hash": "ce7e24f9084598f5aa4e5552c59d55bc",
+    "text": "Персонаж Деатхс",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:12:41.213556Z"
+  },
+  "web.tpl.characters.b_24": {
+    "src_hash": "6647aaa5aa21f02ecdb174cdea5ae9f7",
+    "text": "Аккоунт Информация",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:12:41.215996Z"
+  },
+  "web.tpl.account.change_email.span_1": {
+    "src_hash": "3889200de308c67b140fc6473548591c",
+    "text": "Новый Емаил Аддресс:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:12:41.219132Z"
+  },
+  "web.tpl.houses.set_1": {
+    "src_hash": "ae0f5558767dfe831a7023e61a04aa02",
+    "text": "Хоусе Поиск",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:12:41.220182Z"
+  },
+  "web.tpl.houses.b_6": {
+    "src_hash": "ae0f5558767dfe831a7023e61a04aa02",
+    "text": "Хоусе Поиск",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:12:41.222045Z"
+  },
+  "web.tpl.guilds.create.b_2": {
+    "src_hash": "004596631751ea3c93dd22d6551dd829",
+    "text": "Гуилд имя:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:12:41.231629Z"
+  },
+  "web.tpl.account.change_password.set_1": {
+    "src_hash": "8f1e77e0d2be21da93cd4d9a939148f7",
+    "text": "Чанге Пароль",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:12:41.238115Z"
+  },
+  "web.tpl.account.change_password.span_1": {
+    "src_hash": "d4fca67d647e2af9283051ac57a12ebe",
+    "text": "Куррент Пароль:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:12:41.239204Z"
   }
 }

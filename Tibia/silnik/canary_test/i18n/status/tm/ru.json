@@ -40270,5 +40270,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:32:52.380089Z"
+  },
+  "web.tpl.account.change_password.span_3": {
+    "src_hash": "3496b5961b5a2f802015dd4ab86a130a",
+    "text": "Новый Пароль Агаин:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:34:25.511653Z"
+  },
+  "web.tpl.guilds.change_description.set_1": {
+    "src_hash": "e87b9d8f84ca42573ad92217483b231e",
+    "text": "Чанге гуилд описание",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:34:25.512799Z"
+  },
+  "web.tpl.guilds.delete_guild.set_1": {
+    "src_hash": "7900cd5bd698cc556c1382c18fd7b1fb",
+    "text": "Удалить Гуилд",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:34:25.514035Z"
+  },
+  "web.tpl.lastlogin.th_3": {
+    "src_hash": "37399e0c0a8ad6cb2acdf7ade1e01ad2",
+    "text": "Вход Дате",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:34:25.517882Z"
+  },
+  "web.tpl.coins.th_3": {
+    "src_hash": "672387e093236121299d68bd037001a8",
+    "text": "Тибиа монета",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:34:25.519084Z"
+  },
+  "html.admin.open_source.html.text1": {
+    "src_hash": "47dd937398c2e1a3a7ea39f61aafeb57",
+    "text": "Открыть Соурке Софтваре",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:34:25.534938Z"
   }
 }

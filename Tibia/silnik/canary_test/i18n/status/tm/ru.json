@@ -40750,5 +40750,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T02:48:35.918776Z"
+  },
+  "npc.captain_waverider_island.greet_msg_1": {
+    "src_hash": "b881a2f946b2000c7b5d245b2e9f3ec7",
+    "text": "Приветствую тебя, отважный искатель приключений. Если вам нужен возврат {passage}, дайте мне знать.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:51:00.263412Z"
+  },
+  "npc.carlos.greet_msg_2": {
+    "src_hash": "8f3bfe7d9daacf690cfdb7686af3d947",
+    "text": "Эй, я думал, ты собираешься сбежать, но, к счастью, ты вернулся. Я покажу тебе, как изменить свой {outfit}, ладно?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:51:00.276181Z"
   }
 }

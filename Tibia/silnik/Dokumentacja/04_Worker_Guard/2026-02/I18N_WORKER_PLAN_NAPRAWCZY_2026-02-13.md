@@ -105,7 +105,85 @@ Incydent „wywala cały WSL/VS Code” — wnioski operacyjne:
 Nowe zadania po incydencie:
 - [ ] `WQ-HARD-50 (P0)`: Dodać lekki watchdog zasobów (`cpu/mem/io`) do `guardian_health.json` i logować piki przed `Killed`.
 - [ ] `WQ-HARD-51 (P1)`: Dodać tryb „safe-load” dla guardiana (tymczasowe podniesienie delay + obniżenie parallel-langs przy wykryciu niestabilności hosta/IDE).
-- [ ] `WQ-HARD-52 (P0)`: Dodać szybki runbook „co zrobić gdy WSL/VS Code freeze” (kolejność stop/start, minimalny zestaw komend diagnostycznych, rollback profilu).
+- [x] `WQ-HARD-52 (P0)`: Dodać szybki runbook „co zrobić gdy WSL/VS Code freeze” (kolejność stop/start, minimalny zestaw komend diagnostycznych, rollback profilu).
+
+### Runbook awaryjny — gdy „zamraża” WSL / VS Code podczas pracy workera (WQ-HARD-52)
+
+#### 0) Objawy wejściowe (kiedy uruchamiać runbook)
+- VS Code przestaje odpowiadać lub działa skrajnie wolno,
+- `I18N_STATUS.md` przestaje się odświeżać,
+- `activity.json` ma stary timestamp (heartbeat age rośnie),
+- `bash i18n_start_all.sh --status` pokazuje `STOPPED` albo processy żyją, ale brak postępu.
+
+#### 1) Szybkie odciążenie hosta (bezpieczny stop)
+```bash
+cd /home/ptaku/serweryt/Tibia/silnik/canary_test
+bash i18n_start_all.sh --stop
+```
+
+Cel: natychmiast zatrzymać churn CPU/I/O (worker + guardian + statusd), żeby odzyskać responsywność IDE.
+
+#### 2) Minimalna diagnostyka po stopie (snapshot incydentu)
+```bash
+cd /home/ptaku/serweryt/Tibia/silnik/canary_test
+bash i18n_start_all.sh --status
+tail -n 120 i18n/logs/guardian.log
+tail -n 120 i18n/logs/start_all.log
+python3 - << 'PY'
+import json,datetime
+from pathlib import Path
+p=Path('i18n/status/activity.json')
+if not p.exists():
+  print('activity.json missing')
+else:
+  o=json.loads(p.read_text(encoding='utf-8'))
+  ts=o.get('generated_at_utc')
+  print('generated_at_utc=',ts)
+  if ts:
+    dt=datetime.datetime.fromisoformat(ts.replace('Z','+00:00'))
+    now=datetime.datetime.now(datetime.timezone.utc)
+    print('activity_age_sec=',int((now-dt).total_seconds()))
+  print('phase=',o.get('phase'),'cat=',o.get('category'),'file=',o.get('file'))
+PY
+```
+
+Checklist, co zapisać do planu:
+- ostatni żywy heartbeat (`generated_at_utc` + `activity_age_sec`),
+- czy w logach wystąpił wpis `Killed` dla workera,
+- czy `start_all` wykonywał wymuszone `SIGKILL` dla statusd/guardiana,
+- czas i kontekst (co było robione w IDE tuż przed freeze).
+
+#### 3) Bezpieczny restart
+```bash
+cd /home/ptaku/serweryt/Tibia/silnik/canary_test
+bash i18n_start_all.sh
+bash i18n_start_all.sh --status
+```
+
+Kryterium OK po restarcie:
+- `Guardian/Statusd/Worker = RUNNING`,
+- health-gate 30s przechodzi,
+- heartbeat `activity.json` świeży (sekundy–dziesiątki sekund).
+
+#### 4) Rollback profilu (gdy freeze wraca)
+
+Jeśli po restarcie dalej występują zacięcia hosta:
+1. Utrzymać tryb 7 języków (`mode=translations_pl_es`) — **nie wracać** do `translations_general`.
+2. Tymczasowo zmniejszyć obciążenie:
+   - `parallel_langs`: `3 -> 2`,
+   - `translate_limit`: `0/80 -> 30`.
+3. Restart stacka i 2-min monitoring heartbeat.
+
+#### 5) Guardrails operacyjne (obowiązujące)
+- Nie uruchamiać workera ręcznie poza `i18n_start_all.sh`.
+- Nie przełączać `mode` na `translations_general`, jeśli celem jest tylko 7 języków.
+- Po każdej zmianie profilu: obowiązkowo `--restart` + weryfikacja komendy procesu workera (`--langs ...`).
+
+#### 6) Definition of Done dla incydentu freeze
+- host/IDE wraca do responsywności po `--stop`,
+- stack uruchamia się poprawnie po `start`,
+- heartbeat pozostaje świeży min. 2 min,
+- wpis incydentu trafia do tej dokumentacji (czas, objawy, log clues, zastosowany rollback).
 
 Wybrane do realizacji pełne zadania:
 - **Przywrócić stabilną pracę workera po `NameError: TRANSLATION_OVERRIDES`**

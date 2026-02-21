@@ -1,132 +1,54 @@
 {
-  "timestamp": "2026-02-21T02:55:56.205583Z",
-  "language": "nl",
-  "json_file": "monsters.json",
-  "translated": 30,
+  "timestamp": "2026-02-21T09:28:35.944826Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 7,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "monster.the_pale_count.name",
-      "en": "The Pale Count",
-      "translated": "The Pale Count",
+      "key": "npc.a_fading_memory.greet_msg_1",
+      "en": "Oh...",
+      "translated": "Oh...",
       "source": "tm"
     },
     {
-      "key": "monster.the_pale_count.desc",
-      "en": "The Pale Count",
-      "translated": "The Pale Count",
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "monster.sir_valorcrest.name",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "monster.sir_valorcrest.desc",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "monster.zulazza_the_corruptor.name",
-      "en": "Zulazza the Corruptor",
-      "translated": "Zulazza The Corruptor",
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
       "source": "tm"
     },
     {
-      "key": "monster.zulazza_the_corruptor.desc",
-      "en": "Zulazza the Corruptor",
-      "translated": "Zulazza The Corruptor",
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
       "source": "tm"
     },
     {
-      "key": "monster.orc_sambackpack.name",
-      "en": "Orc",
-      "translated": "Orc",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "en": "White Pale",
-      "translated": "White Pale",
-      "source": "tm"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "en": "White Pale",
-      "translated": "White Pale",
-      "source": "tm"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "en": "The Welter",
-      "translated": "The Welter",
-      "source": "tm"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "en": "The Welter",
-      "translated": "The Welter",
-      "source": "tm"
-    },
-    {
-      "key": "monster.water_buffalo.name",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo",
-      "source": "tm"
-    },
-    {
-      "key": "monster.feverish_citizen.name",
-      "en": "Feverish Citizen",
-      "translated": "Feverish Citizen",
-      "source": "tm"
-    },
-    {
-      "key": "monster.serpent_spawn.name",
-      "en": "Serpent Spawn",
-      "translated": "Serpent Spawn",
-      "source": "tm"
-    },
-    {
-      "key": "monster.liodile.voice_2",
-      "en": "Meat!",
-      "translated": "Vlees!",
-      "source": "simple"
-    },
-    {
-      "key": "monster.black_knight.voice_5",
-      "en": "MINE!",
-      "translated": "VAN MIJ!",
-      "source": "simple"
-    },
-    {
-      "key": "monster.zushuka.name",
-      "en": "Zushuka",
-      "translated": "Zushuka",
-      "source": "simple"
-    },
-    {
-      "key": "monster.munster.name",
-      "en": "Munster",
-      "translated": "Munster",
-      "source": "simple"
-    },
-    {
-      "key": "monster.munster.desc",
-      "en": "Munster",
-      "translated": "Munster",
-      "source": "simple"
-    },
-    {
-      "key": "monster.teleskor.name",
-      "en": "Teleskor",
-      "translated": "Teleskor",
-      "source": "simple"
     }
   ]
 }

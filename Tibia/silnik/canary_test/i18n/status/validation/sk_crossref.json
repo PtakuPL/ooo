@@ -1,10 +1,10 @@
 {
   "lang": "sk",
-  "coverage_pct": 6.6,
+  "coverage_pct": 6.7,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T02:58:04.630725Z",
+  "checked_at": "2026-02-21T09:28:44.912669Z",
   "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -2120,6 +2120,15 @@
       "lang": "\tDate ="
     },
     {
+      "key": "monster.hunter.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hunter",
+      "pl": "Myśliwy",
+      "lang": "Hunter"
+    },
+    {
       "key": "monster.old_wasp.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2586,15 +2595,6 @@
       "en": "Groar",
       "pl": "ryk",
       "lang": "Groar"
-    },
-    {
-      "key": "monster.firestarter.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "FIRE!",
-      "pl": "OGIEŃ!",
-      "lang": "FIRE!"
     },
     {
       "key": "monster.firestarter.voice_2",

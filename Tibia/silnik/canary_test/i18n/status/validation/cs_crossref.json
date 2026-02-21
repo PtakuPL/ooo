@@ -1,10 +1,10 @@
 {
   "lang": "cs",
-  "coverage_pct": 7.3,
+  "coverage_pct": 7.4,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T02:56:45.607761Z",
+  "checked_at": "2026-02-21T09:28:38.830122Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -3317,6 +3317,15 @@
       "lang": "Chatter"
     },
     {
+      "key": "monster.knowledge_raider.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knowledge Raider",
+      "pl": "KNiewledge Raider",
+      "lang": "Knowledge Raider"
+    },
+    {
       "key": "monster.hellgorak.voice_6",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3603,15 +3612,6 @@
       "en": "Krss!",
       "pl": "Krysiu!",
       "lang": "Krss!"
-    },
-    {
-      "key": "monster.hirintror.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "snirr!",
-      "pl": "prychnięcie!",
-      "lang": "snirr!"
     }
   ],
   "length_ratio_issues": [

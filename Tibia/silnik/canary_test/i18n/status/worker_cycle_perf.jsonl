@@ -11366,3 +11366,6 @@
 {"timestamp": "2026-02-21T02:53:01.251322Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ru", "phase": "dispatch", "duration_ms": 31113, "detail": "count=monsters.json"}
 {"timestamp": "2026-02-21T02:58:20.489932Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ru", "phase": "mode_run", "duration_ms": 314668, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-21T02:58:47.963588Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "ru", "phase": "status_update", "duration_ms": 21017, "detail": "throttle_every=5"}
+{"timestamp": "2026-02-21T09:26:45.432722Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "cs", "phase": "dispatch", "duration_ms": 19954, "detail": "count=monsters.json"}
+{"timestamp": "2026-02-21T09:28:47.812223Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "cs", "phase": "mode_run", "duration_ms": 122214, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-21T09:28:54.533186Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "cs", "phase": "status_update", "duration_ms": 5956, "detail": "throttle_every=5"}

@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-21T02:55:12.372025Z",
-  "cycle_counter": 6981,
-  "last_target_key": "nl:monsters.json",
-  "last_pending_total": 5220,
+  "timestamp": "2026-02-21T09:27:53.825810Z",
+  "cycle_counter": 6984,
+  "last_target_key": "sk:monsters.json",
+  "last_pending_total": 5278,
   "last_tier": 2,
   "last_cat_priority": 2,
   "candidates_count": 1559,
@@ -171,7 +171,10 @@
     "ru:chatchannels.json": 0,
     "sv:quests.json": 0,
     "sr:quests.json": 0,
-    "it:messages.json": 0
+    "it:messages.json": 0,
+    "nl:monsters.json": 0,
+    "cs:monsters.json": 0,
+    "hu:monsters.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,

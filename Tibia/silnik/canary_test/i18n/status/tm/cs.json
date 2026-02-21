@@ -3993,19 +3993,19 @@
   },
   "monster.lord_of_the_elements.name": {
     "src_hash": "26f35529002a0a103c2080451deda86a",
-    "text": "Lord of the Elements",
+    "text": "Pán živlů",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:51:50.288203Z"
+    "updated_at": "2026-02-21T09:27:08.493722Z"
   },
   "monster.lord_of_the_elements.desc": {
     "src_hash": "26f35529002a0a103c2080451deda86a",
-    "text": "Lord of the Elements",
+    "text": "Pán živlů",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:51:50.288697Z"
+    "updated_at": "2026-02-21T09:27:08.494161Z"
   },
   "monster.generator.name": {
     "src_hash": "92a8f0b9d28a89b480bd1d29f46f0484",
@@ -6694,5 +6694,61 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T13:49:17.888048Z"
+  },
+  "monster.gladiator.voice_3": {
+    "src_hash": "477fb3950c49773dfcb06d6a48db93db",
+    "text": "Bojuj!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:08.643034Z"
+  },
+  "monster.gladiator.voice_4": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Vezmi si to!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:08.643332Z"
+  },
+  "monster.renegade_knight.voice_3": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Vezmi si to!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:08.653796Z"
+  },
+  "monster.terramite.name": {
+    "src_hash": "6f60f48e7910fcc0ac596725ef4034f8",
+    "text": "Terramite",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:08.695072Z"
+  },
+  "monster.gargoyle.name": {
+    "src_hash": "fa149962cca7ce4eae40089644c4616b",
+    "text": "Gargoyle",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:08.711257Z"
+  },
+  "monster.zushuka.name": {
+    "src_hash": "f7d3f936c82d25f009159f66874105e9",
+    "text": "Zushuka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:08.717109Z"
+  },
+  "monster.munster.name": {
+    "src_hash": "ad3f071289dbbac276fadf870913fbf9",
+    "text": "Munster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:08.725774Z"
   }
 }

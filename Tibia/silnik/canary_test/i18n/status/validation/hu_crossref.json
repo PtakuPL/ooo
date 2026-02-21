@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T02:57:48.673220Z",
+  "checked_at": "2026-02-21T09:28:41.016753Z",
   "issues_total": 409,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -2507,15 +2507,6 @@
       "lang": "Groar"
     },
     {
-      "key": "monster.firestarter.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "FIRE!",
-      "pl": "OGIEŃ!",
-      "lang": "FIRE!"
-    },
-    {
       "key": "monster.firestarter.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -3612,6 +3603,15 @@
       "en": "Grunt!",
       "pl": "Chrząknięcie!",
       "lang": "Grunt!"
+    },
+    {
+      "key": "monster.clomp.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Snarl!",
+      "pl": "Warczenie!",
+      "lang": "Snarl!"
     }
   ],
   "length_ratio_issues": [

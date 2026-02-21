@@ -1,6 +1,6 @@
 {
-  "last_cycle": 62,
-  "last_ts": 1771641916,
-  "every_cycles": 5,
+  "last_cycle": 1,
+  "last_ts": 1771666127,
+  "every_cycles": 10,
   "min_interval_sec": 3600
 }

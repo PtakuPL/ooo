@@ -40086,5 +40086,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:26:21.587217Z"
+  },
+  "book.otbm.do_not_enter_without_permission": {
+    "src_hash": "c9a82e883290bbe0ee4cd298af5ca563",
+    "text": "не входить без разрешения",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:42.004621Z"
+  },
+  "book.otbm.do_nott_wentt_down_or": {
+    "src_hash": "2a76e8ca6868ab73c889a0e295a18a40",
+    "text": "Не спускайся и не отдыхай с миром",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:42.005021Z"
+  },
+  "book.otbm.dont_feed_the_male_scum": {
+    "src_hash": "a9e0470991d9e1bfd40fc797b8db9564",
+    "text": "Не кормите мужиков-отбросов!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:42.005337Z"
+  },
+  "book.otbm.dont_forget_to_learn_our": {
+    "src_hash": "eb78100158cb24b5ce30329c08b2c145",
+    "text": "Не забудьте выучить наши заклинания.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:47.953663Z"
+  },
+  "book.otbm.dont_leave_the_protection_of": {
+    "src_hash": "a68e477663e14ed0cf18fe03dc0b5a3e",
+    "text": "Не покидайте защиту деревни слишком рано. Сначала постарайтесь получить лучшее оборудование. Купить оборудование",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:47.954287Z"
+  },
+  "book.otbm.dont_shoot_or_throw_at": {
+    "src_hash": "a987dc1d78c05c29c53b659ee162a813",
+    "text": "Не стреляйте и не бросайте в артистов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:47.954670Z"
+  },
+  "book.otbm.dont_steal_from_the_game": {
+    "src_hash": "40dbdc0e97566e571cff5bec01a2f739",
+    "text": "Не воруйте из игровых комнат!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:47.955050Z"
+  },
+  "book.otbm.dont_steal_from_the_game_40dbdc0e": {
+    "src_hash": "40dbdc0e97566e571cff5bec01a2f739",
+    "text": "Не воруйте из игровых комнат!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:47.955430Z"
+  },
+  "book.otbm.dont_touch_the_machines_and": {
+    "src_hash": "3d39d8fbf0e0b307bf1cc776cad8a0d1",
+    "text": "Не прикасайтесь к машинам и остерегайтесь неуправляемых рабочих големов!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:52.003642Z"
+  },
+  "book.otbm.dragon_the_immortal_species": {
+    "src_hash": "6210cff85588aa0d96f3ef2ed4f64868",
+    "text": "Дракон – бессмертный вид",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:52.003988Z"
+  },
+  "book.otbm.dragons_and_other_monsters_yet": {
+    "src_hash": "eb9c2c7593d007d08d0e395526eada46",
+    "text": "драконов и других монстров еще.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:52.004359Z"
+  },
+  "book.otbm.dragons_orcs_and_their_unholy": {
+    "src_hash": "ad8e69f3973f15ee7cb92ae82c2e38ee",
+    "text": "драконы, орки и их нечестивые слуги, а Банор был славным лидером человечества.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:52.004873Z"
   }
 }

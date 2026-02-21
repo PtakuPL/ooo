@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-21T01:30:44.341110Z",
+  "timestamp": "2026-02-21T01:32:12.092700Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1974,
-  "file_cache_misses": 2,
+  "cache_hits": 49,
+  "cache_misses": 3,
+  "file_cache_hits": 1973,
+  "file_cache_misses": 3,
   "langs": {
     "ar": {
       "sig": [
@@ -16047,8 +16047,8 @@
         [
           "otclient_modules.json",
           1,
-          1771632613132828877,
-          137239
+          1771637494074410605,
+          137208
         ],
         [
           "otclient_src.json",
@@ -16134,17 +16134,17 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 28470,
-        "english_copy_keys": 2124,
+        "translated_keys": 28497,
+        "english_copy_keys": 2125,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 53.13,
+        "completion_pct": 53.18,
         "server_keys": 49731,
         "server_translated": 27051,
         "server_pct": 54.39,
         "client_keys": 3855,
-        "client_translated": 1419,
-        "client_pct": 36.81
+        "client_translated": 1446,
+        "client_pct": 37.51
       },
       "files": {
         "achievements.json": {
@@ -16486,13 +16486,13 @@
         "otclient_modules.json": {
           "sig": [
             1,
-            1771632613132828877,
-            137239
+            1771637494074410605,
+            137208
           ],
           "row": {
             "total_reference_keys": 1987,
-            "translated_keys": 776,
-            "english_copy_keys": 78,
+            "translated_keys": 803,
+            "english_copy_keys": 79,
             "missing_keys": 0,
             "missing_files": 0
           }
@@ -27033,7 +27033,7 @@
         [
           "questlog.json",
           1,
-          1771632637846365032,
+          1771637524735735961,
           244459
         ],
         [
@@ -27504,7 +27504,7 @@
         "questlog.json": {
           "sig": [
             1,
-            1771632637846365032,
+            1771637524735735961,
             244459
           ],
           "row": {
@@ -27660,8 +27660,8 @@
         [
           "books.json",
           1,
-          1771632627017328249,
-          334359
+          1771637512010175682,
+          334744
         ],
         [
           "chatchannels.json",
@@ -27879,14 +27879,14 @@
         "language_name": "Rosyjski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 27088,
+        "translated_keys": 27100,
         "english_copy_keys": 1468,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 50.55,
+        "completion_pct": 50.57,
         "server_keys": 49731,
-        "server_translated": 24288,
-        "server_pct": 48.84,
+        "server_translated": 24300,
+        "server_pct": 48.86,
         "client_keys": 3855,
         "client_translated": 2800,
         "client_pct": 72.63
@@ -27923,12 +27923,12 @@
         "books.json": {
           "sig": [
             1,
-            1771632627017328249,
-            334359
+            1771637512010175682,
+            334744
           ],
           "row": {
             "total_reference_keys": 1403,
-            "translated_keys": 295,
+            "translated_keys": 307,
             "english_copy_keys": 0,
             "missing_keys": 0,
             "missing_files": 0

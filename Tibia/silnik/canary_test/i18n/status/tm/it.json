@@ -83558,5 +83558,229 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:22:54.133022Z"
+  },
+  "otclient_modules.character_otui.tr_13": {
+    "src_hash": "fc5d79f2ae2dccbf765fa1796d08a736",
+    "text": "Benedizioni disponibili:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:05.442661Z"
+  },
+  "otclient_modules.character_otui.tr_15": {
+    "src_hash": "1a939ec9a2b017617e29bfdde65d20b6",
+    "text": "Tempo di potenziamento XP rimanente della ricompensa giornaliera:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:05.443242Z"
+  },
+  "otclient_modules.character_otui.tr_16": {
+    "src_hash": "238e6d9857126f3d9a3b12c90a52d012",
+    "text": "Tempo di potenziamento XP negozio rimanente:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:05.443587Z"
+  },
+  "otclient_modules.character_otui.tr_17": {
+    "src_hash": "1d795859db3b19d35218da20e59768de",
+    "text": "Potenziamenti XP",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:10.877971Z"
+  },
+  "otclient_modules.character_otui.tr_18": {
+    "src_hash": "84cb384b7e598f9d3ad258197b20e9ad",
+    "text": "Familiari",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:10.878210Z"
+  },
+  "otclient_modules.character_otui.tr_19": {
+    "src_hash": "19068a7dcdd98d1c5c07b3dbdd6f82ee",
+    "text": "Monti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:10.878398Z"
+  },
+  "otclient_modules.character_otui.tr_2": {
+    "src_hash": "b12566f2accca6bffd0414d4836e63eb",
+    "text": "Abiti da mercenario:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:10.878642Z"
+  },
+  "otclient_modules.character_otui.tr_20": {
+    "src_hash": "7b5b60516ac0f4bb07dadb3fe25ac24c",
+    "text": "Abiti",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:10.878813Z"
+  },
+  "otclient_modules.character_otui.tr_21": {
+    "src_hash": "ea5233faf55b53a87747eab131c80d3d",
+    "text": "mostra come griglia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:17.777704Z"
+  },
+  "otclient_modules.character_otui.tr_22": {
+    "src_hash": "a3d303c4568830066e943204dbaed76e",
+    "text": "mostra come elenco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:17.777991Z"
+  },
+  "otclient_modules.character_otui.tr_24": {
+    "src_hash": "072f47e07cfd88191099900e59e1cb2d",
+    "text": "Memorizza la posta in arrivo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:17.778269Z"
+  },
+  "otclient_modules.character_otui.tr_25": {
+    "src_hash": "3882d32c66e7e768145ecd8f104b0c08",
+    "text": "Posta in arrivo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:17.778474Z"
+  },
+  "otclient_modules.character_otui.tr_26": {
+    "src_hash": "ea7cda1d559f7a95a9ea0cb5f1255897",
+    "text": "Scorta di provviste",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:17.778691Z"
+  },
+  "otclient_modules.character_otui.tr_27": {
+    "src_hash": "b06cb914f0c5010cad4dd85d84a47495",
+    "text": "Depot",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:21.390286Z"
+  },
+  "otclient_modules.character_otui.tr_28": {
+    "src_hash": "4d604dd8f008145471dc845683399189",
+    "text": "Inventario",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:21.390496Z"
+  },
+  "otclient_modules.character_otui.tr_3": {
+    "src_hash": "a4222611565566b1896cbf9d327747bf",
+    "text": "Lavori di noleggio:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:21.390726Z"
+  },
+  "otclient_modules.character_otui.tr_31": {
+    "src_hash": "1e6947ac7fb3a9529a9726eb692c8cc5",
+    "text": "Segreto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:21.390892Z"
+  },
+  "otclient_modules.character_otui.tr_32": {
+    "src_hash": "d2203cb1237cb6460cbad94564e39345",
+    "text": "Regolare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:21.391130Z"
+  },
+  "otclient_modules.character_otui.tr_33": {
+    "src_hash": "6b46ae48421828d9973deec5fa9aa0c3",
+    "text": "Ordinare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:26.236529Z"
+  },
+  "otclient_modules.character_otui.tr_34": {
+    "src_hash": "9363c86ac32448d48e5e2fe5a05427ca",
+    "text": "Compiuto",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:26.236742Z"
+  },
+  "otclient_modules.character_otui.tr_35": {
+    "src_hash": "d0f2e5376298c880665077b565ffd7dd",
+    "text": "Bloccato",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:26.236909Z"
+  },
+  "otclient_modules.character_otui.tr_37": {
+    "src_hash": "dacad8af532c23d1dae8df05880d43b3",
+    "text": "Grado 4: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:26.237094Z"
+  },
+  "otclient_modules.character_otui.tr_38": {
+    "src_hash": "591e428ab7ae1bfb6b05f759532cafeb",
+    "text": "Grado 3: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:26.237275Z"
+  },
+  "otclient_modules.character_otui.tr_39": {
+    "src_hash": "5cc77be3819f331003d1995823f63b27",
+    "text": "Grado 2: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:34.070796Z"
+  },
+  "otclient_modules.character_otui.tr_4": {
+    "src_hash": "d0c35dceccfc2b8aeadb9ead07e1c9c4",
+    "text": "Mercenari acquistati:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:34.071157Z"
+  },
+  "otclient_modules.character_otui.tr_40": {
+    "src_hash": "522d9da85e11937f88e38de98634e27f",
+    "text": "Grado 1: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:34.071388Z"
+  },
+  "otclient_modules.character_otui.tr_41": {
+    "src_hash": "4a77238b5c1da6c73723e228d573038f",
+    "text": "Punti obiettivi: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:34.071636Z"
+  },
+  "otclient_modules.character_otui.tr_42": {
+    "src_hash": "511924d4430637cef309c7e64fe5c38f",
+    "text": "Pagina 1 / 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:31:34.071846Z"
   }
 }

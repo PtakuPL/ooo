@@ -9,7 +9,12 @@
 -- ============================================================================
 
 return {
-    -- ["client_entergame/entergame"] = {
-    --     ["serverListButton"] = { ["min-width"] = 140 },
-    -- },
+    ["client_options/options"] = {
+        ["optionsWindow"] = { ["min-width"] = 715, ["max-width"] = 1080 },
+        ["optionsTabBar"] = { ["min-width"] = 162 },
+    },
+
+    ["styles/controls/general"] = {
+        ["hotkeysButton"] = { ["min-width"] = 172 },
+    },
 }

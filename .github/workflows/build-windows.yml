@@ -110,7 +110,7 @@ jobs:
           New-Item -ItemType Directory -Force -Path build | Out-Null
           # Use MSVC cl.exe (not clang-cl) — vcpkg builds all libs with MSVC,
           # mixing compilers causes protobuf DLL symbol mismatch (__declspec(dllimport)).
-          # The "Select MSVC toolset" step above already skips 14.44 to avoid ICE C1001.
+          # The "Select MSVC toolset" step above picks the newest available MSVC 2022 toolset.
           cmake -G "Ninja" `
                 -DCMAKE_BUILD_TYPE=Release `
                 -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake" `

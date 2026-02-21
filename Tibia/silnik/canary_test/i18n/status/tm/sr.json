@@ -176494,5 +176494,245 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:27:21.320058Z"
+  },
+  "item.6081.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "мртви човек",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.427203Z"
+  },
+  "item.6082.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "мртви човек",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.427491Z"
+  },
+  "item.6083.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "мртви човек",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.427885Z"
+  },
+  "item.6084.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "мртви човек",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.428128Z"
+  },
+  "item.6191.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.430453Z"
+  },
+  "item.6191.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.430735Z"
+  },
+  "item.6192.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.431168Z"
+  },
+  "item.6193.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.431430Z"
+  },
+  "item.6194.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.431716Z"
+  },
+  "item.6194.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.431971Z"
+  },
+  "item.6195.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.432212Z"
+  },
+  "item.6196.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.432576Z"
+  },
+  "item.6197.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.432859Z"
+  },
+  "item.6198.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.433094Z"
+  },
+  "item.6199.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.433330Z"
+  },
+  "item.6200.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.433577Z"
+  },
+  "item.6201.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.433956Z"
+  },
+  "item.6202.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.434193Z"
+  },
+  "item.6203.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.434433Z"
+  },
+  "item.6204.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.434711Z"
+  },
+  "item.6248.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.435340Z"
+  },
+  "item.6248.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.435734Z"
+  },
+  "item.6249.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.436001Z"
+  },
+  "item.6250.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.436236Z"
+  },
+  "item.6251.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.436503Z"
+  },
+  "item.6251.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.436773Z"
+  },
+  "item.6252.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.437143Z"
+  },
+  "item.6253.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.437381Z"
+  },
+  "item.6254.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.437616Z"
+  },
+  "item.6255.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:35:32.437879Z"
   }
 }

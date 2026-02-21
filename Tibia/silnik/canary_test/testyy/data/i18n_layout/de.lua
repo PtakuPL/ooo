@@ -20,14 +20,14 @@
 -- ============================================================================
 
 return {
-    -- Example overrides (uncomment and adjust as needed):
-    --
-    -- ["client_entergame/entergame"] = {
-    --     ["serverListButton"] = { ["min-width"] = 150 },
-    --     ["btnCreateNewAccount"] = { ["min-width"] = 160 },
-    -- },
-    --
-    -- ["game_blessing/style"] = {
-    --     ["blessingBuyButton"] = { ["min-width"] = 100 },
-    -- },
+    -- Options root loaded by Controller: g_ui.loadUI('/client_options/options', ...)
+    ["client_options/options"] = {
+        ["optionsWindow"] = { ["min-width"] = 740, ["max-width"] = 1120 },
+        ["optionsTabBar"] = { ["min-width"] = 178 },
+    },
+
+    -- Options subpanel loaded by g_ui.loadUI('styles/controls/general', ...)
+    ["styles/controls/general"] = {
+        ["hotkeysButton"] = { ["min-width"] = 188 },
+    },
 }

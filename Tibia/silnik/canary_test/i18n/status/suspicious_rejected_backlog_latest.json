@@ -1,20 +1,20 @@
 {
-  "timestamp": "2026-02-21T01:34:30.730484Z",
-  "language": "ro",
-  "json_file": "books.json",
+  "timestamp": "2026-02-21T01:35:57.847931Z",
+  "language": "es",
+  "json_file": "npc.json",
   "lookback_lines": 8000,
   "min_hits": 2,
   "max_keys": 400,
   "issue_types_filter": [],
   "selected_keys": 1,
   "issue_type_totals": {
-    "word_salad": 11
+    "identical_to_en": 265
   },
   "keys": [
     {
-      "key": "book.otbm.and_to_remedy_that_he",
-      "hits": 11,
-      "top_issue": "word_salad"
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "hits": 265,
+      "top_issue": "identical_to_en"
     }
   ]
 }

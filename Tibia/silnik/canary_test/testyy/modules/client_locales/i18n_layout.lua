@@ -52,6 +52,33 @@ local layoutOverrides = {}
 -- Track which widgets have been patched so we can revert
 local patchedWidgets = {}
 
+-- Track loaded UI roots so overrides can be reapplied after locale change.
+-- Weak keys avoid leaking destroyed widgets.
+local registeredRoots = setmetatable({}, { __mode = 'k' })
+
+local previousLoadUI = nil
+local previousDisplayUI = nil
+
+local function normalizeModulePath(modulePath)
+    if type(modulePath) ~= 'string' then
+        return modulePath
+    end
+    local normalized = modulePath:gsub('\\', '/')
+    normalized = normalized:gsub('^/+', '')
+    normalized = normalized:gsub('%.otui$', '')
+    return normalized
+end
+
+local function isWidgetAlive(widget)
+    if not widget then
+        return false
+    end
+    if widget.isDestroyed then
+        return not widget:isDestroyed()
+    end
+    return true
+end
+
 -- ============================================================================
 -- Core: Load layout override file for a language
 -- ============================================================================
@@ -116,10 +143,24 @@ function i18nLayout.applyOverrides(rootWidget, modulePath, langCode)
     langCode = langCode or i18nLayout.getCurrentLang()
     if not langCode then return end
 
+    local normalizedModulePath = normalizeModulePath(modulePath)
+    if not normalizedModulePath then return end
+
     local overrides = loadLayoutFile(langCode)
     if not overrides then return end
 
-    local moduleOverrides = overrides[modulePath]
+    local moduleOverrides = overrides[normalizedModulePath]
+    if not moduleOverrides and modulePath ~= normalizedModulePath then
+        moduleOverrides = overrides[modulePath]
+    end
+    if not moduleOverrides then
+        for key, value in pairs(overrides) do
+            if normalizeModulePath(key) == normalizedModulePath then
+                moduleOverrides = value
+                break
+            end
+        end
+    end
     if not moduleOverrides then return end
 
     for widgetId, widgetOverrides in pairs(moduleOverrides) do
@@ -127,11 +168,74 @@ function i18nLayout.applyOverrides(rootWidget, modulePath, langCode)
         if widget then
             applyWidgetOverride(widget, widgetOverrides)
             -- Track for potential revert
-            patchedWidgets[widget] = { module = modulePath, lang = langCode }
+            patchedWidgets[widget] = { module = normalizedModulePath, lang = langCode }
         else
             pdebug('[I18N Layout] Widget "' .. widgetId ..
-                   '" not found in ' .. modulePath)
+                   '" not found in ' .. normalizedModulePath)
         end
+    end
+end
+
+function i18nLayout.registerRoot(rootWidget, modulePath)
+    if not rootWidget or not modulePath then return end
+    local normalizedModulePath = normalizeModulePath(modulePath)
+    if not normalizedModulePath then return end
+
+    registeredRoots[rootWidget] = normalizedModulePath
+    i18nLayout.applyOverrides(rootWidget, normalizedModulePath)
+end
+
+local function reapplyRegisteredRoots(langCode)
+    for rootWidget, modulePath in pairs(registeredRoots) do
+        if isWidgetAlive(rootWidget) then
+            i18nLayout.applyOverrides(rootWidget, modulePath, langCode)
+        else
+            registeredRoots[rootWidget] = nil
+        end
+    end
+end
+
+local function wrapUiLoaders()
+    if not g_ui then
+        return
+    end
+
+    if not previousLoadUI and type(g_ui.loadUI) == 'function' then
+        previousLoadUI = g_ui.loadUI
+        g_ui.loadUI = function(modulePath, ...)
+            local rootWidget = previousLoadUI(modulePath, ...)
+            if rootWidget and modulePath then
+                i18nLayout.registerRoot(rootWidget, modulePath)
+            end
+            return rootWidget
+        end
+    end
+
+    if not previousDisplayUI and type(g_ui.displayUI) == 'function' then
+        previousDisplayUI = g_ui.displayUI
+        g_ui.displayUI = function(modulePath, ...)
+            local rootWidget = previousDisplayUI(modulePath, ...)
+            if rootWidget and modulePath then
+                i18nLayout.registerRoot(rootWidget, modulePath)
+            end
+            return rootWidget
+        end
+    end
+end
+
+local function unwrapUiLoaders()
+    if not g_ui then
+        return
+    end
+
+    if previousLoadUI then
+        g_ui.loadUI = previousLoadUI
+        previousLoadUI = nil
+    end
+
+    if previousDisplayUI then
+        g_ui.displayUI = previousDisplayUI
+        previousDisplayUI = nil
     end
 end
 
@@ -280,6 +384,8 @@ local function handleLocaleChanged(langCode)
     patchedWidgets = {}
     -- Pre-load the override file for the new language
     loadLayoutFile(langCode)
+    -- Re-apply overrides to already loaded UI roots
+    reapplyRegisteredRoots(langCode)
 end
 
 -- ============================================================================
@@ -303,6 +409,14 @@ function i18nLayout.init()
         handleLocaleChanged(langCode)
     end
 
+    -- Auto-apply per-language layout overrides on every UI load/display.
+    wrapUiLoaders()
+
+    -- Apply once to currently loaded roots (if any were created before init).
+    if rootWidget then
+        i18nLayout.registerRoot(rootWidget, 'root')
+    end
+
     pdebug('[I18N Layout] Module initialized')
 end
 
@@ -310,9 +424,11 @@ function i18nLayout.terminate()
     -- Restore previous handler
     _G.onLocaleChanged = previousOnLocaleChanged
     previousOnLocaleChanged = nil
+    unwrapUiLoaders()
     _G.i18nLayout = nil
     layoutOverrides = {}
     patchedWidgets = {}
+    registeredRoots = setmetatable({}, { __mode = 'k' })
 end
 
 -- Make available globally

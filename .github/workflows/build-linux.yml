@@ -7,6 +7,9 @@ on:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
       - "Tibia/silnik/canary_test/testyy/src/**"
+      - "Tibia/silnik/canary_test/testyy/modules/**"
+      - "Tibia/silnik/canary_test/testyy/data/styles/**"
+      - "Tibia/silnik/canary_test/testyy/data/i18n_layout/**"
       - "Tibia/silnik/canary_test/testyy/CMakeLists.txt"
       - "Tibia/silnik/canary_test/testyy/CMakePresets.json"
       - "Tibia/silnik/canary_test/testyy/vcpkg.json"
@@ -15,6 +18,9 @@ on:
     branches: [master, main]
     paths:
       - "Tibia/silnik/canary_test/testyy/src/**"
+      - "Tibia/silnik/canary_test/testyy/modules/**"
+      - "Tibia/silnik/canary_test/testyy/data/styles/**"
+      - "Tibia/silnik/canary_test/testyy/data/i18n_layout/**"
       - "Tibia/silnik/canary_test/testyy/CMakeLists.txt"
       - "Tibia/silnik/canary_test/testyy/CMakePresets.json"
       - "Tibia/silnik/canary_test/testyy/vcpkg.json"

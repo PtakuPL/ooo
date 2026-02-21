@@ -38798,5 +38798,125 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T09:55:09.122015Z"
+  },
+  "npc.willard.farewell_msg_1": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "Farväl, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.198303Z"
+  },
+  "npc.willard.walkaway_msg_1": {
+    "src_hash": "d3941eb0dc35e6c52b2bed90af90b6d8",
+    "text": "Farväl, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.199329Z"
+  },
+  "npc.wyda.say_3": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Du har ingen kaka som jag vill ha.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.203355Z"
+  },
+  "npc.wyrdin.say_10": {
+    "src_hash": "e04607d84a383e8cbb7db9ec770f05da",
+    "text": "Fel ord.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.204810Z"
+  },
+  "npc.xodet.farewell_msg_1": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Hej då och kom igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.206588Z"
+  },
+  "npc.xodet.say_1": {
+    "src_hash": "b62a0dd738c7bd24999a8405be0ab6de",
+    "text": "Så du ber mig om en {{}} för att börja ditt äventyr?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.207131Z"
+  },
+  "npc.xodet.say_2": {
+    "src_hash": "42f4f7cc57059d2b7623f11666f8882b",
+    "text": "Vad? Jag har redan gett dig en {{}}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.207684Z"
+  },
+  "npc.xodet.say_3": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.208601Z"
+  },
+  "npc.xodet.walkaway_msg_1": {
+    "src_hash": "3ba74396d1216f13feae7e612c8bdfa5",
+    "text": "Hej då och kom igen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.209026Z"
+  },
+  "npc.yaman.multi_2": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, det lät nästan som ett hälsningsord. Människor - söta de är!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.213415Z"
+  },
+  "npc.yaman.say_1": {
+    "src_hash": "17bb78642c4a960215206201b82d1feb",
+    "text": "Skjut iväg, lilla! Människor är inte välkomna här, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.213948Z"
+  },
+  "npc.yaman.say_11": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Du har ingen kaka som jag vill ha.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.214434Z"
+  },
+  "npc.yaman.say_13": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Okej då.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.214906Z"
+  },
+  "npc.yaman.say_15": {
+    "src_hash": "63349cb1b00c4debabd768c4b022333a",
+    "text": "Jag är ledsen, men du har inte Malors tillåtelse att handla med mig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.215960Z"
+  },
+  "npc.yberius.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:13:29.219782Z"
   }
 }

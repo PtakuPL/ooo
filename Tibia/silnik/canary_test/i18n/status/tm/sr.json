@@ -176886,5 +176886,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:48:38.665670Z"
+  },
+  "data.otservbr.global.npc.coltrayne.L118.1241": {
+    "src_hash": "2cbdbf0d71d0d87da3948f8c56d80db1",
+    "text": "Хеј тамо. Треба вам оклоп или оружје? Онда ме замоли за {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:08:45.654087Z"
   }
 }

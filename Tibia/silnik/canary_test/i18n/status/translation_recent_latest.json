@@ -1,54 +1,132 @@
 {
-  "timestamp": "2026-02-21T02:07:38.889415Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 7,
+  "timestamp": "2026-02-21T02:08:46.613619Z",
+  "language": "sr",
+  "json_file": "server.json",
+  "translated": 30,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
+      "key": "data.otservbr.global.npc.armenius.L86.644",
+      "en": "Ah, an adventurer. Be greeted and have a seat. How may I {serve} you?",
+      "translated": "Ах, авантуриста. Будите поздрављени и седите. Како вам могу {serve}?",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "data.otservbr.global.npc.barnabas.dee.L130.1046",
+      "en": "Welcome to my humble abode. If you come for new sorcerer {spells}, you have come to the right place.",
+      "translated": "Добродошли у моје скромно пребивалиште. Ако дођете по новог чаробњака {spells}, дошли сте на право место.",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "data.otservbr.global.npc.battlemart.L64.1360",
+      "en": "It is good to see you. I'm always at your {shop options}",
+      "translated": "Драго ми је да те видим. Увек сам код тебе {shop options}",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "data.otservbr.global.npc.bloodshade.rotten.L72.427",
+      "en": "Mortal! If you are on a {quest} to serve the blood god, my master - be greeted!",
+      "translated": "Мортал! Ако сте на {quest} да служите богу крви, мој господару - буди поздрављен!",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
+      "key": "data.otservbr.global.npc.bloodshade.sacrifice.L93.1259",
+      "en": "Mortal! If you are on a {quest} to serve the blood god, my master - be greeted!",
+      "translated": "Мортал! Ако сте на {quest} да служите богу крви, мој господару - буди поздрављен!",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
+      "key": "data.otservbr.global.npc.captain.cookie.L64.993",
+      "en": "Greetings, daring adventurer. If you need a {passage}, let me know.",
+      "translated": "Поздрав, смели авантуристе. Ако вам треба {passage}, јавите ми.",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "data.otservbr.global.npc.captain.haba.L68.190",
+      "en": "Harrr, landlubber wha'd ya want? Askin' for a {passage}?",
+      "translated": "Харрр, ландлуббер шта желиш? Тражите {passage}?",
       "source": "tm"
+    },
+    {
+      "key": "data.otservbr.global.npc.captain.harava.L87.949",
+      "en": "Welcome on board, traveller. Where can I {sail} you today?",
+      "translated": "Добродошли на брод, путниче. Где могу да вас {sail} данас?",
+      "source": "tm"
+    },
+    {
+      "key": "data.otservbr.global.npc.captain.jack.rat.L57.982",
+      "en": "Hail, pirat! Come on board to go home! Welcome on board of the ship Flying Bat. Should I set {sail}s?",
+      "translated": "Живео, гусаре! Укрцајте се да идете кући! Добродошли на брод Флиинг Бат. Да ли треба да поставим {sail}с?",
+      "source": "tm"
+    },
+    {
+      "key": "data.otservbr.global.npc.captain.waverider.L97.707",
+      "en": "Greetings, daring adventurer. If you need a {passage}, let me know.",
+      "translated": "Поздрав, смели авантуристе. Ако вам треба {passage}, јавите ми.",
+      "source": "tm"
+    },
+    {
+      "key": "data.otservbr.global.npc.captain.waverider.island.L61.1025",
+      "en": "Greetings, daring adventurer. If you need a return {passage}, let me know.",
+      "translated": "Поздрав, смели авантуристе. Ако вам треба повраћај {passage}, обавестите ме.",
+      "source": "tm"
+    },
+    {
+      "key": "data.otservbr.global.npc.carlos.L107.1095",
+      "en": "Welcome back, Isleth Eagonst! Do you still have that piece of meat or ham? If so, please ask me for a {trade} and I'll give you some gold for it.",
+      "translated": "Добродошли назад, Ислетх Еагонст! Да ли још увек имате тај комад меса или шунке? Ако јесте, тражите од мене {trade} и даћу вам нешто злата за то.",
+      "source": "tm"
+    },
+    {
+      "key": "data.otservbr.global.npc.carlos.L241.1099",
+      "en": "Very nice! Food for me! Sell it to me, fast! Once you sold your food to me, just say {ready} to let me know you are done.",
+      "translated": "Веома лепо! Храна за мене! Продај ми га, брзо! Када ми продате храну, само реците {ready} да бисте ми рекли да сте готови.",
+      "source": "tm"
+    },
+    {
+      "key": "data.otservbr.global.npc.carlos.L91.1090",
+      "en": "Hey, I thought you were going to run away, but luckily you came back. I'll show you how to change your {outfit}, okay?",
+      "translated": "Хеј, мислио сам да ћеш побећи, али срећом си се вратио. Показаћу ти како да промениш {outfit}, у реду?",
+      "source": "tm"
+    },
+    {
+      "key": "data.otservbr.global.npc.carlos.L94.1091",
+      "en": "Welcome back! You know, after providing my little outfit service, I like to ask a little favour of you. Can you {help} me?",
+      "translated": "Добродошли назад! Знаш, након што сам пружио своју малу услугу одеће, волео бих да те замолим за малу услугу. Можете ли ми {help}?",
+      "source": "tm"
+    },
+    {
+      "key": "data.otservbr.global.npc.chavis.L118.1346",
+      "en": "Hey there! You don't happen to have some {food} on you, you're willing to share? Well, where are my manners, a warm welcome for now.",
+      "translated": "Хеј тамо! Случајно немате {food} на себи, вољни сте да поделите? Па где су моји манири, срдачна добродошлица за сада.",
+      "source": "tm"
+    },
+    {
+      "key": "data.otservbr.global.npc.chief.grarkharok.L158.1407",
+      "en": "Me Chief Grarkharok! No do {nothing}!",
+      "translated": "Ја шеф Гракхарок! Не ради {nothing}!",
+      "source": "tm"
+    },
+    {
+      "key": "data.otservbr.global.npc.chrystal.L80.790",
+      "en": "Here. Don't forget that you need to buy a label too if you want to send a parcel. Always write the name of the {receiver} in the first line.",
+      "translated": "Ево. Не заборавите да морате купити и етикету ако желите да пошаљете пакет. Увек напишите име {receiver} у првом реду.",
+      "source": "tm"
+    },
+    {
+      "key": "data.otservbr.global.npc.cledwyn.L212.1118",
+      "en": "Blessings, Player! How may I be of service? Do you wish to trade some {token}s, or would you like some {information} or {talk}? Should I {enchant} certain items for you?",
+      "translated": "Благослови, играчу! Како могу бити од користи? Да ли желите да тргујете са {token}, или желите са {information} или {talk}? Да ли треба да {enchant} одређене ставке за вас?",
+      "source": "tm"
+    },
+    {
+      "key": "data.otservbr.global.npc.coltrayne.L118.1241",
+      "en": "Hey there. Need some armor or weapon? Then ask me for a {trade}.",
+      "translated": "Хеј тамо. Треба вам оклоп или оружје? Онда ме замоли за {trade}.",
+      "source": "simple"
     }
   ]
 }

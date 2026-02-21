@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-21T02:07:48.999547Z",
+  "timestamp": "2026-02-21T02:09:07.582144Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 51,
-  "cache_misses": 1,
-  "file_cache_hits": 1975,
-  "file_cache_misses": 1,
+  "cache_hits": 52,
+  "cache_misses": 0,
+  "file_cache_hits": 1976,
+  "file_cache_misses": 0,
   "langs": {
     "ar": {
       "sig": [
@@ -27039,7 +27039,7 @@
         [
           "quests.json",
           1,
-          1771636534714956036,
+          1771639696138894937,
           66680
         ],
         [
@@ -27518,7 +27518,7 @@
         "quests.json": {
           "sig": [
             1,
-            1771636534714956036,
+            1771639696138894937,
             66680
           ],
           "row": {
@@ -30972,8 +30972,8 @@
         [
           "server.json",
           1,
-          1771636566962862866,
-          315027
+          1771639726102044260,
+          315065
         ],
         [
           "spells.json",
@@ -31011,13 +31011,13 @@
         "language_name": "SR",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 24467,
+        "translated_keys": 24468,
         "english_copy_keys": 1085,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 45.66,
         "server_keys": 49731,
-        "server_translated": 24366,
+        "server_translated": 24367,
         "server_pct": 49.0,
         "client_keys": 3855,
         "client_translated": 101,
@@ -31475,12 +31475,12 @@
         "server.json": {
           "sig": [
             1,
-            1771636566962862866,
-            315027
+            1771639726102044260,
+            315065
           ],
           "row": {
             "total_reference_keys": 2574,
-            "translated_keys": 761,
+            "translated_keys": 762,
             "english_copy_keys": 36,
             "missing_keys": 0,
             "missing_files": 0
@@ -31755,7 +31755,7 @@
         [
           "server.json",
           1,
-          1771636557282889477,
+          1771639717901187129,
           298123
         ],
         [
@@ -32258,7 +32258,7 @@
         "server.json": {
           "sig": [
             1,
-            1771636557282889477,
+            1771639717901187129,
             298123
           ],
           "row": {

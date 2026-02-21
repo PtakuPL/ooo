@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-21T00:17:40.146549Z",
-  "cycle": 27,
+  "timestamp": "2026-02-21T00:19:06.980342Z",
+  "cycle": 28,
   "language": "it",
-  "json_file": "cpp.json",
-  "translated": 21,
+  "json_file": "talkactions.json",
+  "translated": 16,
   "placeholders": 0,
-  "guard_fail": 9,
+  "guard_fail": 14,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 613
+  "strict_skipped_done": 87
 }

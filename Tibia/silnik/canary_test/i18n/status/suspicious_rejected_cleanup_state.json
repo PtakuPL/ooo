@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T00:17:38.868833Z",
-  "last_cycle": 27,
+  "timestamp": "2026-02-21T00:19:37.035458Z",
+  "last_cycle": 28,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -856,6 +856,56 @@
     ],
     "ru|otclient_modules.json": [],
     "ro|cpp.json": [],
-    "it|cpp.json": []
+    "it|cpp.json": [],
+    "ru|client.json": [
+      "client.blessing.text3",
+      "client.blessing.text4",
+      "client.console.text2",
+      "client.console.text4",
+      "client.debug_info.text2",
+      "client.elementnode.text3",
+      "client.elementnode.text4",
+      "client.game_highscore.text1",
+      "client.game_highscore.text2",
+      "client.game_highscore.text3",
+      "client.game_highscore.text4",
+      "client.game_questlog.text2",
+      "client.htmlparser.text3",
+      "client.keybinds.text1",
+      "client.keybinds.text2",
+      "client.keybins.text2",
+      "client.keybins.text3",
+      "client.neededtranslations.text2",
+      "client.options.text1",
+      "client.spelllist.text1",
+      "client.spelllist.text2",
+      "client.spelllist.text3",
+      "client.spells.text3",
+      "client.viplist.text1",
+      "client.viplist.text2",
+      "client.viplist.text3"
+    ],
+    "ro|achievements.json": [
+      "achievement.170.name",
+      "achievement.67.name"
+    ],
+    "it|talkactions.json": [
+      "talkaction.god.charms.msg_added_minor",
+      "talkaction.god.charms.msg_expansion_other",
+      "talkaction.god.charms.msg_expansion_self",
+      "talkaction.god.charms.msg_no_bestiary",
+      "talkaction.god.charms.msg_received_minor",
+      "talkaction.god.charms.msg_received_points",
+      "talkaction.god.charms.msg_reset_other",
+      "talkaction.god.charms.msg_reset_self",
+      "talkaction.god.charms.msg_runes_other",
+      "talkaction.god.charms.msg_runes_self",
+      "talkaction.god.charms.msg_set_all_other",
+      "talkaction.god.charms.msg_set_all_self",
+      "talkaction.god.charms.msg_set_single_self",
+      "talkaction.god.charms.msg_wrong_kill",
+      "talkaction.god.create_item.msg_invalid_tier",
+      "talkaction.god.create_item.msg_no_item"
+    ]
   }
 }

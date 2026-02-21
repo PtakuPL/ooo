@@ -82662,5 +82662,133 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:17:38.781394Z"
+  },
+  "talkaction.god.charms.msg_added_minor": {
+    "src_hash": "d3f2366869db63417b44c2a806d1c4c6",
+    "text": "Aggiunti {amount} punti fascino minori al personaggio '{name}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:18:38.457487Z"
+  },
+  "talkaction.god.charms.msg_expansion_other": {
+    "src_hash": "7765a137e4ba26757f65014f0b256b36",
+    "text": "Aggiunta espansione del fascino per il giocatore '{name}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:18:45.797194Z"
+  },
+  "talkaction.god.charms.msg_expansion_self": {
+    "src_hash": "ece707ec553512091a6782f3a6e34c05",
+    "text": "Ricevuta l'espansione del fascino!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:18:45.797498Z"
+  },
+  "talkaction.god.charms.msg_no_bestiary": {
+    "src_hash": "1709c4a22dc89c96bc22262547c9e012",
+    "text": "Questo mostro non ha bestiario. Digita il nome esattamente come nel gioco.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:18:45.797884Z"
+  },
+  "talkaction.god.charms.msg_received_minor": {
+    "src_hash": "d6d25bce1fb28a7b9b223b24aa82e5cb",
+    "text": "Hai ricevuto {amount} punti fascino minori!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:18:45.798203Z"
+  },
+  "talkaction.god.charms.msg_received_points": {
+    "src_hash": "c57a6a74668376f4021494fc6b2c5918",
+    "text": "Hai ricevuto {amount} punti fascino!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:18:52.805729Z"
+  },
+  "talkaction.god.charms.msg_reset_other": {
+    "src_hash": "b84b9a2b6291aadee31038757586048a",
+    "text": "Punti fascino ripristinati dal personaggio '{name}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:18:52.806140Z"
+  },
+  "talkaction.god.charms.msg_reset_self": {
+    "src_hash": "14a44852eb10d2c5b2031a1a21f23830",
+    "text": "Hai ripristinato i tuoi punti fascino!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:18:52.806428Z"
+  },
+  "talkaction.god.charms.msg_runes_other": {
+    "src_hash": "edc41e153cdaf84100f311a948076259",
+    "text": "Aggiunte tutte le rune di fascino a '{name}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:18:52.806751Z"
+  },
+  "talkaction.god.charms.msg_runes_self": {
+    "src_hash": "54d235d799e1eecbe841b8e55260593a",
+    "text": "Hai ricevuto tutte le rune di fascino!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:18:52.807062Z"
+  },
+  "talkaction.god.charms.msg_set_all_other": {
+    "src_hash": "f5324c13554359f3a54cd724bbf3a0b8",
+    "text": "Imposta il conteggio delle uccisioni nel bestiario su '{amount}' per tutti i mostri per il giocatore '{name}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:19:00.104754Z"
+  },
+  "talkaction.god.charms.msg_set_all_self": {
+    "src_hash": "78a2804d962be30269f27cad2b74251e",
+    "text": "Uccisioni aggiornate per tutti i mostri nel bestiario!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:19:00.105146Z"
+  },
+  "talkaction.god.charms.msg_set_single_self": {
+    "src_hash": "aed9f52547f1aebd04cc1b2c88ab7400",
+    "text": "Uccisioni aggiornate del mostro '{monster}'!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:19:00.105613Z"
+  },
+  "talkaction.god.charms.msg_wrong_kill": {
+    "src_hash": "836749bbecb315983a41592093ad1331",
+    "text": "Quantità di uccisioni sbagliata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:19:00.105896Z"
+  },
+  "talkaction.god.create_item.msg_invalid_tier": {
+    "src_hash": "eaa92e21e83151cc88545bdb09170f52",
+    "text": "Conteggio livelli non valido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:19:06.191276Z"
+  },
+  "talkaction.god.create_item.msg_no_item": {
+    "src_hash": "d8b10078093317959154f9ab6ed2eccc",
+    "text": "Non esiste alcun elemento con quell'ID o nome.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:19:06.191726Z"
   }
 }

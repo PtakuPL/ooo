@@ -65,7 +65,7 @@ local function loadLayoutFile(langCode)
     if ok and type(result) == 'table' then
         layoutOverrides[langCode] = result
         pdebug('[I18N Layout] Loaded overrides for ' .. langCode ..
-               ' (' .. tableSize(result) .. ' modules)')
+               ' (' .. table.size(result) .. ' modules)')
         return result
     else
         layoutOverrides[langCode] = false  -- mark as attempted
@@ -100,14 +100,9 @@ local function applyWidgetOverride(widget, overrides)
         elseif prop == 'font-scale' then
             widget:setFontScale(value)
         elseif prop == 'padding-left' then
-            -- For padding adjustments
-            local padding = widget:getPaddingRect()
-            padding.left = value
-            widget:setPaddingRect(padding)
+            widget:setPaddingLeft(value)
         elseif prop == 'padding-right' then
-            local padding = widget:getPaddingRect()
-            padding.right = value
-            widget:setPaddingRect(padding)
+            widget:setPaddingRight(value)
         end
     end
 end
@@ -144,8 +139,10 @@ end
 -- Get current language code
 -- ============================================================================
 function i18nLayout.getCurrentLang()
-    if modules and modules.client_locales and modules.client_locales.getCurrentLocale then
-        local locale = modules.client_locales.getCurrentLocale()
+    -- getCurrentLocale() and getInstalledLocales() are global functions
+    -- defined in modules/client_locales/locales.lua
+    if getCurrentLocale then
+        local locale = getCurrentLocale()
         if locale then
             return locale.name
         end
@@ -166,15 +163,8 @@ end
 function i18nLayout.measureLanguage(langCode)
     langCode = langCode or i18nLayout.getCurrentLang()
 
-    -- We need a font to measure with
-    local font = g_fonts.getFont('noto-12')
-    if not font then
-        perror('[I18N Layout] Cannot measure: font noto-12 not found')
-        return
-    end
-
-    -- Get the locale translation table
-    local locales = modules.client_locales.getInstalledLocales()
+    -- Get the locale translation table using the global function
+    local locales = getInstalledLocales()
     local locale = locales and locales[langCode]
     local enLocale = locales and locales['en']
 
@@ -183,6 +173,19 @@ function i18nLayout.measureLanguage(langCode)
         return
     end
 
+    -- Create a temporary invisible widget to measure text sizes.
+    -- We use UIWidget:getTextSize() which uses the font internally.
+    -- g_fonts.getFont() and BitmapFont:calculateTextRectSize() are not
+    -- bound to Lua, so this widget-based approach is the correct way.
+    local measureWidget = g_ui.createWidget('Label')
+    if not measureWidget then
+        perror('[I18N Layout] Cannot create measurement widget')
+        return
+    end
+    measureWidget:setVisible(false)
+    measureWidget:setFont('noto-12')
+    measureWidget:setTextAutoResize(true)
+
     local report = {}
     local problems = 0
 
@@ -190,16 +193,23 @@ function i18nLayout.measureLanguage(langCode)
     for key, enValue in pairs(enLocale and enLocale.translation or {}) do
         local trValue = locale.translation[key]
         if trValue and type(enValue) == 'string' and type(trValue) == 'string' then
-            local enSize = font:calculateTextRectSize(enValue)
-            local trSize = font:calculateTextRectSize(trValue)
+            -- Measure English text
+            measureWidget:setText(enValue)
+            local enSize = measureWidget:getTextSize()
+            -- Measure translated text
+            measureWidget:setText(trValue)
+            local trSize = measureWidget:getTextSize()
 
-            if trSize.width > enSize.width * 1.2 then
+            local enW = enSize.width or enSize[1] or 0
+            local trW = trSize.width or trSize[1] or 0
+
+            if trW > enW * 1.2 then
                 -- This translation is >20% wider than English
-                local ratio = trSize.width / math.max(enSize.width, 1)
+                local ratio = trW / math.max(enW, 1)
                 table.insert(report, {
                     key = key,
-                    enWidth = enSize.width,
-                    trWidth = trSize.width,
+                    enWidth = enW,
+                    trWidth = trW,
                     ratio = ratio,
                     enText = enValue:sub(1, 40),
                     trText = trValue:sub(1, 40),
@@ -208,6 +218,9 @@ function i18nLayout.measureLanguage(langCode)
             end
         end
     end
+
+    -- Clean up
+    measureWidget:destroy()
 
     -- Sort by ratio (worst offenders first)
     table.sort(report, function(a, b) return a.ratio > b.ratio end)

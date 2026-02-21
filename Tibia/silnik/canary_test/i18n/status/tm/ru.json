@@ -39782,5 +39782,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T00:16:51.290474Z"
+  },
+  "client.options.text1": {
+    "src_hash": "a5fdbb938582038c5374071453c29882",
+    "text": "Генерал Горячие клавиши",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:18:02.177528Z"
+  },
+  "client.console.text2": {
+    "src_hash": "9b05a4052f2dde9a744953ef20b469db",
+    "text": "Некст Канал",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:18:02.182861Z"
+  },
+  "client.console.text4": {
+    "src_hash": "9b05a4052f2dde9a744953ef20b469db",
+    "text": "Некст Канал",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:18:02.185325Z"
+  },
+  "client.debug_info.text2": {
+    "src_hash": "65b74928a95e1d4ed2de01cf44bf5dd2",
+    "text": "Ктрл+Альт+Д",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:18:03.655432Z"
   }
 }

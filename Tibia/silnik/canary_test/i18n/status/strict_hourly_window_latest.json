@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-20T23:14:45.020502Z",
-  "window_end_utc": "2026-02-21T00:14:45.020502Z",
+  "window_start_utc": "2026-02-20T23:16:32.299835Z",
+  "window_end_utc": "2026-02-21T00:16:32.299835Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,24 +8,24 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/suspicious_rejected.jsonl"
   ],
-  "total_cycles": 164,
+  "total_cycles": 160,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 164
+    "AUTO_TRANSLATE": 160
   },
-  "auto_translate_cycles": 164,
+  "auto_translate_cycles": 160,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 1876,
-  "guard_fail": 1761,
-  "guard_fail_rate_pct": 48.4,
-  "no_progress_entries": 3,
-  "no_progress_rate_pct": 2.8,
-  "throughput_keys_per_h": 1116.4,
-  "suspicious_total": 3855,
-  "suspicious_total_raw": 9921,
-  "gt_translated": 111,
+  "translated": 1818,
+  "guard_fail": 1747,
+  "guard_fail_rate_pct": 49.0,
+  "no_progress_entries": 4,
+  "no_progress_rate_pct": 3.8,
+  "throughput_keys_per_h": 1098.3,
+  "suspicious_total": 3859,
+  "suspicious_total_raw": 9887,
+  "gt_translated": 115,
   "gt_active": true,
   "top_guard_fail_targets": [
     {
@@ -47,22 +47,16 @@
       "guard_command": 0
     },
     {
-      "target": "pl/spells.json",
-      "translated": 2,
-      "guard_fail": 58,
-      "guard_command": 0
-    },
-    {
       "target": "ro/books.json",
       "translated": 3,
       "guard_fail": 57,
       "guard_command": 0
     },
     {
-      "target": "es/spells.json",
-      "translated": 4,
-      "guard_fail": 56,
-      "guard_command": 0
+      "target": "es/talkactions.json",
+      "translated": 3,
+      "guard_fail": 57,
+      "guard_command": 2
     },
     {
       "target": "es/books.json",
@@ -74,6 +68,12 @@
       "target": "sv/server.json",
       "translated": 6,
       "guard_fail": 54,
+      "guard_command": 0
+    },
+    {
+      "target": "ro/server.json",
+      "translated": 10,
+      "guard_fail": 50,
       "guard_command": 0
     }
   ]

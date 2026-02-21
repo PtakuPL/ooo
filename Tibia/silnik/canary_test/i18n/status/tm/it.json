@@ -82510,5 +82510,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:10:13.050457Z"
+  },
+  "book.otbm.how_to_create_spellbooks_by": {
+    "src_hash": "003d48b32ce7871aca854768377b4dd0",
+    "text": "Come creare libri degli incantesimi di Muriel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:15:55.962264Z"
+  },
+  "book.otbm.how_to_create_spellbooks_by_003d48b3": {
+    "src_hash": "003d48b32ce7871aca854768377b4dd0",
+    "text": "Come creare libri degli incantesimi di Muriel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:15:55.962603Z"
+  },
+  "book.otbm.how_to_learn_magic_easy": {
+    "src_hash": "8067094b7f66068f95f52931ab410fa8",
+    "text": "Come imparare la magia facile. Livello 1: Per Cavalieri e persone senza Vocazione (Prima Parte)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:15:55.963250Z"
+  },
+  "book.otbm.how_to_manipulate_runes_by": {
+    "src_hash": "6bcf61bdef240097e16c3d325a9e9cbb",
+    "text": "Come manipolare le rune di Muriel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:15:55.963589Z"
   }
 }

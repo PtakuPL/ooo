@@ -1,54 +1,132 @@
 {
-  "timestamp": "2026-02-21T01:40:17.250351Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 7,
+  "timestamp": "2026-02-21T01:42:02.299868Z",
+  "language": "it",
+  "json_file": "cpp.json",
+  "translated": 21,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
+      "key": "cpp.augment.format_with_value",
+      "en": "{0} -> {1:+}% {2}",
+      "translated": "{0} -> {1:+}% {2}",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "cpp.player.look.guild_nick",
+      "en": "({0})",
+      "translated": "({0})",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
-      "source": "tm"
+      "key": "cpp.returnvalue.not_enough_capacity",
+      "en": "This object is too heavy for you to carry.",
+      "translated": "Questo oggetto è troppo pesante per essere trasportato.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
-      "source": "tm"
+      "key": "cpp.returnvalue.not_enough_club_level",
+      "en": "You do not have enough club level",
+      "translated": "Non hai abbastanza livello di club",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "cpp.returnvalue.not_enough_distance_level",
+      "en": "You do not have enough distance level",
+      "translated": "Non hai un livello di distanza sufficiente",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "cpp.returnvalue.not_enough_fish_level",
+      "en": "You do not have enough fishing level",
+      "translated": "Non hai abbastanza livello di pesca",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "cpp.returnvalue.not_enough_fist_level",
+      "en": "You do not have enough fist level",
+      "translated": "Non hai abbastanza livello di pugno",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.returnvalue.not_enough_magic_level",
+      "en": "You do not have enough magic level.",
+      "translated": "Non hai abbastanza livello magico.",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.returnvalue.not_enough_mana",
+      "en": "You do not have enough mana.",
+      "translated": "Non hai abbastanza mana.",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.returnvalue.not_enough_shield_level",
+      "en": "You do not have enough shielding level",
+      "translated": "Non hai un livello di schermatura sufficiente",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.returnvalue.not_enough_soul",
+      "en": "You do not have enough soul.",
+      "translated": "Non hai abbastanza anima.",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.returnvalue.not_enough_sword_level",
+      "en": "You do not have enough sword level",
+      "translated": "Non hai abbastanza livello di spada",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.returnvalue.not_movable",
+      "en": "You cannot move this object.",
+      "translated": "Non puoi spostare questo oggetto.",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.returnvalue.not_required_level_to_use_rune",
+      "en": "You do not have the required magic level to use this rune.",
+      "translated": "Non hai il livello magico richiesto per usare questa runa.",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.returnvalue.only_ammo_in_quiver",
+      "en": "This quiver only holds arrows and bolts.\nYou cannot put any other items in it.",
+      "translated": "Questa faretra contiene solo frecce e dardi.\nNon puoi inserire altri oggetti al suo interno.",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.returnvalue.player_is_not_invited",
+      "en": "You are not invited.",
+      "translated": "Non sei invitato.",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.returnvalue.player_is_not_reachable",
+      "en": "Player is not reachable.",
+      "translated": "Il giocatore non è raggiungibile.",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.returnvalue.player_is_pz_locked_enter_pvp_zone",
+      "en": "You can not enter a pvp zone after attacking another player.",
+      "translated": "Non puoi entrare in una zona PvP dopo aver attaccato un altro giocatore.",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.returnvalue.player_is_pz_locked_leave_pvp_zone",
+      "en": "You can not leave a pvp zone after attacking another player.",
+      "translated": "Non puoi lasciare una zona PvP dopo aver attaccato un altro giocatore.",
+      "source": "google_translate"
+    },
+    {
+      "key": "cpp.returnvalue.player_with_this_name_is_not_online",
+      "en": "A player with this name is not online.",
+      "translated": "Un giocatore con questo nome non è online.",
+      "source": "google_translate"
     }
   ]
 }

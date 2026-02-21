@@ -83806,5 +83806,149 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:39:00.967282Z"
+  },
+  "cpp.returnvalue.not_enough_capacity": {
+    "src_hash": "e7f701b25aca142551cbe4481f004aa4",
+    "text": "Questo oggetto è troppo pesante per essere trasportato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:38.119377Z"
+  },
+  "cpp.returnvalue.not_enough_club_level": {
+    "src_hash": "8a28d05e7ef173938933e33ca3640458",
+    "text": "Non hai abbastanza livello di club",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:45.944200Z"
+  },
+  "cpp.returnvalue.not_enough_distance_level": {
+    "src_hash": "8fb13d89e62b5e6330ed448216dfcd94",
+    "text": "Non hai un livello di distanza sufficiente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:45.944743Z"
+  },
+  "cpp.returnvalue.not_enough_fish_level": {
+    "src_hash": "dd456b95d925ae316710fc5938bc3383",
+    "text": "Non hai abbastanza livello di pesca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:45.945286Z"
+  },
+  "cpp.returnvalue.not_enough_fist_level": {
+    "src_hash": "f1a244feab81946f2cfbea3c8a2da6b3",
+    "text": "Non hai abbastanza livello di pugno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:45.945765Z"
+  },
+  "cpp.returnvalue.not_enough_magic_level": {
+    "src_hash": "8481850b693d78d80a4801151144ecf9",
+    "text": "Non hai abbastanza livello magico.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:45.946274Z"
+  },
+  "cpp.returnvalue.not_enough_mana": {
+    "src_hash": "3775d734432dcb1f6daa0aaf19bc681f",
+    "text": "Non hai abbastanza mana.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:53.224850Z"
+  },
+  "cpp.returnvalue.not_enough_shield_level": {
+    "src_hash": "ee99810800d1357b5810ea12ef150e89",
+    "text": "Non hai un livello di schermatura sufficiente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:53.225395Z"
+  },
+  "cpp.returnvalue.not_enough_soul": {
+    "src_hash": "c2d6542917c0472995ed5d2d9af2b0d8",
+    "text": "Non hai abbastanza anima.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:53.226331Z"
+  },
+  "cpp.returnvalue.not_enough_sword_level": {
+    "src_hash": "5710a487d58b695e91c0328a30c83336",
+    "text": "Non hai abbastanza livello di spada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:53.226810Z"
+  },
+  "cpp.returnvalue.not_movable": {
+    "src_hash": "09afebac33251135eec4028f1a859c9f",
+    "text": "Non puoi spostare questo oggetto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:53.227378Z"
+  },
+  "cpp.returnvalue.not_required_level_to_use_rune": {
+    "src_hash": "ac09c84228ade24b49ad0e03addf4b5f",
+    "text": "Non hai il livello magico richiesto per usare questa runa.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:58.986855Z"
+  },
+  "cpp.returnvalue.only_ammo_in_quiver": {
+    "src_hash": "6d0a7931f1e8e7027daaf97d19761550",
+    "text": "Questa faretra contiene solo frecce e dardi.\nNon puoi inserire altri oggetti al suo interno.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:58.987765Z"
+  },
+  "cpp.returnvalue.player_is_not_invited": {
+    "src_hash": "dfe6f198e8d59d47fbbf744c096beb28",
+    "text": "Non sei invitato.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:58.988169Z"
+  },
+  "cpp.returnvalue.player_is_not_reachable": {
+    "src_hash": "6b6aff2631fb23c2bfca8f32b408ae72",
+    "text": "Il giocatore non è raggiungibile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:58.988647Z"
+  },
+  "cpp.returnvalue.player_is_pz_locked_enter_pvp_zone": {
+    "src_hash": "d2aecf8ad0d3683be703f96024d3d815",
+    "text": "Non puoi entrare in una zona PvP dopo aver attaccato un altro giocatore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:58.989253Z"
+  },
+  "cpp.returnvalue.player_is_pz_locked_leave_pvp_zone": {
+    "src_hash": "ee88f2afb9f430721fcada014aa90adb",
+    "text": "Non puoi lasciare una zona PvP dopo aver attaccato un altro giocatore.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:42:01.985421Z"
+  },
+  "cpp.returnvalue.player_with_this_name_is_not_online": {
+    "src_hash": "3566f9386618d40bd33f776cbfdcda14",
+    "text": "Un giocatore con questo nome non è online.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:42:01.986475Z"
   }
 }

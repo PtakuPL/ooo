@@ -1,10 +1,10 @@
 {
   "lang": "it",
-  "coverage_pct": 54.1,
+  "coverage_pct": 54.2,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-21T01:17:18.699984Z",
+  "checked_at": "2026-02-21T01:43:14.355864Z",
   "issues_total": 428,
   "issues_by_type": {
     "consistency_in_language": 7,
@@ -2579,6 +2579,15 @@
       "lang": "No"
     },
     {
+      "key": "otclient_modules.character_otui.tr_27",
+      "category": "otclient_modules",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Depot",
+      "pl": "Skład",
+      "lang": "Depot"
+    },
+    {
       "key": "otclient_modules.character_otui.tr_71",
       "category": "otclient_modules",
       "type": "pl_reference_missing_translation",
@@ -3705,15 +3714,6 @@
     },
     {
       "key": "scripts.oramond_entrance.say_2",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Slrrp!",
-      "pl": "Srrrr!",
-      "lang": "Slrrp!"
-    },
-    {
-      "key": "scripts.oramond_movements.say_1",
       "category": "scripts",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",

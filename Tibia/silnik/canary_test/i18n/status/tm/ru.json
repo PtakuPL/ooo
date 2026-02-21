@@ -40318,5 +40318,85 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T01:34:25.534938Z"
+  },
+  "otclient_modules.character.tr_51": {
+    "src_hash": "7c2d5c73ed9d8b142c16ea01c83d8661",
+    "text": "Из Комбат Тактикс",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:40:55.460849Z"
+  },
+  "otclient_modules.character.tr_52": {
+    "src_hash": "880c49262e6d19a341fa59d204586963",
+    "text": "Из Екуипмент",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:40:55.461881Z"
+  },
+  "otclient_modules.character.tr_53": {
+    "src_hash": "21202ba35e3fd2f5f5f249e5a154c69e",
+    "text": "Из Басе Аттакк",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:40:55.463625Z"
+  },
+  "otclient_modules.character.tr_6": {
+    "src_hash": "7bd2fce7008b193b40988850bddd4d9e",
+    "text": "Из Амплификатион",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:40:55.466323Z"
+  },
+  "otclient_modules.character.tr_63": {
+    "src_hash": "f0019d7368c6b92536f523dbec203ecf",
+    "text": "Персонаж Титлес",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:40:55.468818Z"
+  },
+  "otclient_modules.character.tr_64": {
+    "src_hash": "578b503d5e360a0c2b95f8bc41be077b",
+    "text": "Сторе Сводка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:40:55.470275Z"
+  },
+  "otclient_modules.character.tr_68": {
+    "src_hash": "187d3772e0efd4d5d39f2ea749c6a5a7",
+    "text": "Рекент PvP убийства",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:40:55.473183Z"
+  },
+  "otclient_modules.character.tr_7": {
+    "src_hash": "7501603139f56012a70a76247f260e89",
+    "text": "Из Басе",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:40:55.474557Z"
+  },
+  "otclient_modules.character.tr_75": {
+    "src_hash": "baee7907ee5949952b3e0f34ad532b7d",
+    "text": "Персонаж Стац",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:40:55.478082Z"
+  },
+  "otclient_modules.character.tr_9": {
+    "src_hash": "b868a9dc4a4eab1b0ff7440b51426417",
+    "text": "Из Вхеел",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:40:55.495257Z"
   }
 }

@@ -75398,5 +75398,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:26:48.161547Z"
+  },
+  "cpp.protocol.max_chars_online": {
+    "src_hash": "8c72b40b88913bc4ce5c9e0d3cfa2017",
+    "text": "Vă puteți autentifica numai cu {0} caractere\na contului dvs. în același timp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:14.710948Z"
+  },
+  "cpp.protocol.max_chars_outside_pz": {
+    "src_hash": "c17b15e63bd374988c6a1bd29fa4afd0",
+    "text": "Puteți avea numai {0} caractere din contul dvs. în afara unei zone de protecție.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:21.324075Z"
+  },
+  "cpp.protocol.only_clients": {
+    "src_hash": "3339dcbaabcaa8fd96a09bc6b43059ea",
+    "text": "Permis numai clienții cu protocol {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:21.325270Z"
+  },
+  "cpp.protocol.only_clients_or_old": {
+    "src_hash": "8e8842d7a1b207078b807ecebc479d79",
+    "text": "Permis doar clienții cu protocol {0} sau 11.00!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:21.326410Z"
+  },
+  "cpp.protocol.premium_expired": {
+    "src_hash": "1268cee2a00d8a6c82c2c2526c3d2b30",
+    "text": "Timpul dvs. premium pentru acest cont a expirat.\n\nPentru a juca, vă rugăm să cumpărați timp premium suplimentar de pe site-ul nostru",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:21.328177Z"
+  },
+  "cpp.protocol.prey_bonus_improved_damage": {
+    "src_hash": "99129da58e9e25108670093a261e8611",
+    "text": "Daune îmbunătățite",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:21.328836Z"
+  },
+  "cpp.protocol.prey_bonus_improved_defense": {
+    "src_hash": "a2b82a196de8d5e9088418de5dfd5490",
+    "text": "Apărare îmbunătățită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:41:23.855299Z"
   }
 }

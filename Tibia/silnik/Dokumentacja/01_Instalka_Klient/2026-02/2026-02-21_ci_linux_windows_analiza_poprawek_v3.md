@@ -8,6 +8,8 @@ Zakres:
 - OTC Client build Linux (`Build - Linux (OTC Client)`)
 - OTC Client build Windows (`Build - Windows`)
 - commity naprawcze na `master`
+- pelna lista bledow od 2026-02-20 (run-by-run) jest w:
+  - `Dokumentacja/01_Instalka_Klient/2026-02/2026-02-21_lista_bledow_od_2026-02-20_linux_windows.md`
 
 Stan na moment zapisu:
 - Linux run `22256469195` (SHA `391a028489`) - in progress
@@ -113,3 +115,22 @@ Na prosbe uruchomiono nowy build Windows:
 - SHA: `4ca838ab60`
 - Status przy zapisie: `in_progress`
 
+## 8. Aktualizacja: nowy regres Linux po globalnym fallbacku enum/fmt
+
+Po publikacji raportu wystapil nowy fail Linux:
+- Run: `22256469195` (SHA `391a028489`)
+- Objaw: `redefinition of ... format_as(E)` w `framework/pch.h`
+- Efekt: build zatrzymuje sie bardzo wczesnie (okolo `[10/182]`), zamiast pozniejszego etapu.
+
+Wdrozone dzialanie naprawcze:
+- Commit: `0364a1c14` (`fix(fmt): guard enum format_as helper for legacy fmt only`)
+- Pliki:
+  - `canary_test/testyy/src/framework/pch.h`
+  - `canary_test/src/pch.hpp`
+- Zmiana:
+  - helper `format_as(E)` ograniczony do legacy fmt:
+    - `#if !defined(FMT_VERSION) || FMT_VERSION < 80000`
+  - cel: brak kolizji z nowszymi wersjami `fmt`, ktore dostarczaja wlasne wsparcie enum `format_as`.
+
+Run walidacyjny po fixie:
+- `22257107432` (`Build - Linux (OTC Client)`, SHA `0364a1c14`)

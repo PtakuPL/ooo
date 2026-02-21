@@ -3,11 +3,13 @@
 Aktualna, scalona analiza runow i poprawek (Linux + Windows) jest tutaj:
 
 - `Dokumentacja/01_Instalka_Klient/2026-02/2026-02-21_ci_linux_windows_analiza_poprawek_v3.md`
+- `Dokumentacja/01_Instalka_Klient/2026-02/2026-02-21_lista_bledow_od_2026-02-20_linux_windows.md` (pelna lista bledow od 2026-02-20 + mapowanie: blad -> sposob naprawy)
 
 Szybki status:
 - potwierdzone klasy bledow Linux: split Lua bindings -> `lzma_ret`/fmt -> `ThingCategory`/fmt,
-- wdrozone fixy punktowe + globalny fallback enum formattera (`framework/pch.h`),
-- aktualne runy Linux z fixami byly jeszcze w toku na moment zapisu raportu.
+- wdrozone fixy punktowe; proba globalnego fallbacku enum formattera (`framework/pch.h`) dala regresje `format_as` redefinition,
+- naprawa regresji wdrozona w commicie `0364a1c14` (guard helpera `format_as` tylko dla legacy `fmt`),
+- run walidacyjny po fixie: `22257107432`.
 
 ---
 

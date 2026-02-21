@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T02:25:56.831567Z",
-  "last_cycle": 54,
+  "timestamp": "2026-02-21T02:28:47.302489Z",
+  "last_cycle": 55,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -661,6 +661,15 @@
       "cpp.player.look.guild_members_many",
       "cpp.player.look.guild_members_one",
       "cpp.player.look.guild_nick",
+      "cpp.player.look.guild_rank_of",
+      "cpp.player.look.has_no_vocation",
+      "cpp.player.look.party_invite_many",
+      "cpp.player.look.party_invite_one",
+      "cpp.player.look.party_member_many",
+      "cpp.player.look.party_member_one",
+      "cpp.player.look.party_prefix_other",
+      "cpp.player.look.party_prefix_self",
+      "cpp.player.look.verb_loyalty",
       "cpp.player.using_from_stash",
       "cpp.title.name_4",
       "cpp.title.name_5",

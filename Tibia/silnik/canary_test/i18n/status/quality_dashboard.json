@@ -33,12 +33,12 @@
     "issues_count": 1417
   },
   "es": {
-    "last_cycle": "2026-02-21T02:24:21.135999Z",
+    "last_cycle": "2026-02-21T02:28:47.409164Z",
     "last_translated": 7,
-    "total_suspicious": 74967,
-    "total_rejected": 2542,
-    "total_gt_guard_fail": 24974,
-    "cycles": 1801,
+    "total_suspicious": 75037,
+    "total_rejected": 2545,
+    "total_gt_guard_fail": 25010,
+    "cycles": 1802,
     "quality_score": 60.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 350877
@@ -66,23 +66,23 @@
     "issues_count": 2470
   },
   "it": {
-    "last_cycle": "2026-02-21T02:25:21.448212Z",
-    "last_translated": 27,
+    "last_cycle": "2026-02-21T02:26:38.124667Z",
+    "last_translated": 16,
     "total_suspicious": 9290,
     "total_rejected": 970,
-    "total_gt_guard_fail": 3361,
-    "cycles": 532,
+    "total_gt_guard_fail": 3375,
+    "cycles": 533,
     "quality_score": 74.7,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 77055
   },
   "ru": {
-    "last_cycle": "2026-02-21T02:25:42.758905Z",
-    "last_translated": 28,
-    "total_suspicious": 51700,
-    "total_rejected": 1022,
-    "total_gt_guard_fail": 2706,
-    "cycles": 508,
+    "last_cycle": "2026-02-21T02:27:01.598147Z",
+    "last_translated": 25,
+    "total_suspicious": 51717,
+    "total_rejected": 1025,
+    "total_gt_guard_fail": 2711,
+    "cycles": 509,
     "quality_score": 70.4,
     "last_audit": "2026-02-20T22:12:42.470260Z",
     "issues_count": 214898
@@ -550,12 +550,12 @@
     "issues_count": 958
   },
   "ro": {
-    "last_cycle": "2026-02-21T02:25:56.854176Z",
-    "last_translated": 15,
-    "total_suspicious": 92032,
-    "total_rejected": 3659,
-    "total_gt_guard_fail": 6080,
-    "cycles": 478,
+    "last_cycle": "2026-02-21T02:27:24.224626Z",
+    "last_translated": 13,
+    "total_suspicious": 92044,
+    "total_rejected": 3670,
+    "total_gt_guard_fail": 6097,
+    "cycles": 479,
     "quality_score": 62.0,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 190054

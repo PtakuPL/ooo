@@ -40630,5 +40630,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T02:25:42.473945Z"
+  },
+  "cpp.player.look.guild_rank_of": {
+    "src_hash": "4cd519ffdfb64bce745febea34e4a47d",
+    "text": "{0} из {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:26:56.061176Z"
+  },
+  "cpp.player.look.has_no_vocation": {
+    "src_hash": "56c057cd9344f199bf6f7ed3ca2225c6",
+    "text": "не имеет призвания.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:26:56.061647Z"
+  },
+  "cpp.player.look.party_invite_many": {
+    "src_hash": "de5f90c600433e2cc6d4d6a245bbe462",
+    "text": "{0} ожидает приглашений.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:26:56.062144Z"
+  },
+  "cpp.player.look.party_invite_one": {
+    "src_hash": "f758119e310a8c8c2ef10c3873e4a26b",
+    "text": "1 ожидающее приглашение.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:26:56.062562Z"
+  },
+  "cpp.player.look.party_member_many": {
+    "src_hash": "b19e8cb508652c7d3f3fecacd0e0f034",
+    "text": "{0} участники и",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:26:56.063116Z"
+  },
+  "cpp.player.look.party_member_one": {
+    "src_hash": "d4d11f5c880138c02e18676c44d80d75",
+    "text": "1 участник и",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:27:01.427317Z"
+  },
+  "cpp.player.look.party_prefix_other": {
+    "src_hash": "9cc57e7ebe7f2e0beee05190259fb408",
+    "text": "{0} в группе с",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:27:01.427793Z"
+  },
+  "cpp.player.look.party_prefix_self": {
+    "src_hash": "fd1f3a1d0e2029a353023623aaa5a668",
+    "text": "У вашей вечеринки есть",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:27:01.428276Z"
+  },
+  "cpp.player.look.verb_loyalty": {
+    "src_hash": "e689e4cfe64549cd3a855a49336b5134",
+    "text": "{0} {1} {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:27:01.428628Z"
   }
 }

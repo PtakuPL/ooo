@@ -75310,5 +75310,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:05:30.512252Z"
+  },
+  "scripts.creaturescripts_distorted_source.say_1": {
+    "src_hash": "34b8fc0dfa46bb9216f7409ba793cc24",
+    "text": "Fără puterea sursei, Gliful își pierde protecția!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:24:25.901313Z"
+  },
+  "scripts.creaturescripts_astral_source.say_2": {
+    "src_hash": "1e95efd313c12d39af90325f8d166673",
+    "text": "Daunele tale au distorsionat sursa și împiedică Gliful să-și folosească puterea.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:24:39.429772Z"
+  },
+  "scripts.creaturescripts_bosses_kill.msg_1": {
+    "src_hash": "560c7f8b77eb2ce7d06b77389dbee354",
+    "text": "L-ai învins pe {}. Puteți provoca din nou acest șef în {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:24:39.430457Z"
+  },
+  "scripts.creaturescripts_count_vlarkorth.say_1": {
+    "src_hash": "2b749a06d93fda229182ac0f69afa81e",
+    "text": "Înfruntă-ți propriul întuneric!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:24:39.431209Z"
+  },
+  "scripts.creaturescripts_death_dragon.say_1": {
+    "src_hash": "286db7d06f20adf2789cfa4652e1472b",
+    "text": "Puterea Ragiaz îi reînvie slujitorul!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:24:43.374386Z"
+  },
+  "scripts.creaturescripts_death_dragon_essence.say_1": {
+    "src_hash": "b2a4250fad16e44b158e2875c7069ba9",
+    "text": "ATENȚIE! PRIMUL DRAGON SE Apropie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:24:43.375073Z"
   }
 }

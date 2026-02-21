@@ -317,3 +317,29 @@ void ArenaMatch::markPlayerAlive(uint32_t playerId) {
 bool ArenaMatch::isPlayerDead(uint32_t playerId) const {
 	return std::find(deadPlayers.begin(), deadPlayers.end(), playerId) != deadPlayers.end();
 }
+
+// ============================================
+// Convenience accessors for protocol layer
+// ============================================
+
+int64_t ArenaMatch::getElapsedSeconds() const {
+	if (startTime == 0) {
+		return 0;
+	}
+	return static_cast<int64_t>(std::time(nullptr)) - startTime;
+}
+
+std::map<uint8_t, uint16_t> ArenaMatch::getTeamScores() const {
+	std::map<uint8_t, uint16_t> scores;
+	for (const auto &[pid, pstats] : players) {
+		scores[pstats.team] += pstats.kills;
+	}
+	return scores;
+}
+
+std::string ArenaMatch::getPlayerName(uint32_t playerId) const {
+	// Lookup from game's player list (online players)
+	// If offline, return empty string - the caller should handle it
+	(void)playerId;
+	return ""; // Will be resolved by protocol layer using g_game().getPlayerByGUID()
+}

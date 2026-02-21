@@ -75,6 +75,17 @@ public:
 	uint16_t getTeamKills(uint8_t team) const;
 	ArenaPlayerMatchStats* getPlayerStats(uint32_t playerId);
 
+	// Convenience accessors for protocol layer
+	uint8_t getPlayerCount() const {
+		return static_cast<uint8_t>(players.size());
+	}
+	const std::map<uint32_t, ArenaPlayerMatchStats> &getPlayerStats() const {
+		return players;
+	}
+	int64_t getElapsedSeconds() const;
+	std::map<uint8_t, uint16_t> getTeamScores() const;
+	std::string getPlayerName(uint32_t playerId) const;
+
 	// Spawn positions (temporary hardcoded, later from map config)
 	void setSpawnPositions(uint8_t team, const std::vector<Position> &positions);
 	Position getSpawnPosition(uint32_t playerId) const;

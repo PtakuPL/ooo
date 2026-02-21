@@ -10709,3 +10709,272 @@ void ProtocolGame::sendHousesInfo() {
 
 	writeToOutputBuffer(msg);
 }
+
+// ============================================
+// Arena PvP Protocol (opcode 0xD0 client->server, 0xDB server->client)
+// Sub-action multiplexing: first byte after opcode is subAction
+// ============================================
+
+void ProtocolGame::parseArenaAction(NetworkMessage &msg) {
+	if (!player) {
+		return;
+	}
+
+	uint8_t subAction = msg.getByte();
+
+	switch (subAction) {
+		// 0x01 = Open arena UI - send current status + stats
+		case 0x01: {
+			sendArenaStatus();
+			sendArenaStats();
+			break;
+		}
+
+		// 0x02 = Join queue
+		case 0x02: {
+			uint8_t modeId = msg.getByte();
+			auto mode = static_cast<ArenaMode>(modeId);
+			if (mode == ArenaMode::NONE || modeId > static_cast<uint8_t>(ArenaMode::TOURNAMENT)) {
+				player->sendTextMessage(MESSAGE_FAILURE, "Invalid arena mode.");
+				return;
+			}
+			bool success = g_arenaSystem().joinQueue(player->getPlayer(), mode);
+			if (success) {
+				sendArenaStatus();
+			}
+			break;
+		}
+
+		// 0x03 = Leave queue
+		case 0x03: {
+			bool success = g_arenaSystem().leaveQueue(player->getPlayer());
+			if (success) {
+				sendArenaStatus();
+			}
+			break;
+		}
+
+		// 0x04 = Request ranking
+		case 0x04: {
+			uint32_t page = msg.get<uint32_t>();
+			uint8_t filterMode = msg.getByte(); // 0 = all, 1..8 = specific mode (future)
+			(void)filterMode; // reserved for future per-mode rankings
+
+			uint32_t entriesPerPage = 20;
+			uint32_t offset = page * entriesPerPage;
+			auto entries = g_arenaSystem().getTopRanking(entriesPerPage, offset);
+			sendArenaRankingData(entries, page);
+			break;
+		}
+
+		// 0x05 = Request match history
+		case 0x05: {
+			uint32_t page = msg.get<uint32_t>();
+			uint32_t entriesPerPage = 10;
+			auto history = g_arenaSystem().getPlayerHistory(player->getGUID(), entriesPerPage);
+			(void)page; // Currently returns latest N entries; paging can be added later
+
+			// Send history via 0xDB sub 0x06
+			NetworkMessage historyMsg;
+			historyMsg.addByte(0xDB); // Arena server→client opcode
+			historyMsg.addByte(0x06); // Sub: match history
+
+			historyMsg.add<uint16_t>(static_cast<uint16_t>(history.size()));
+			for (const auto &entry : history) {
+				historyMsg.add<uint32_t>(entry.matchId);
+				historyMsg.addByte(static_cast<uint8_t>(entry.mode));
+				historyMsg.add<uint32_t>(static_cast<uint32_t>(entry.startedAt));
+				historyMsg.add<uint16_t>(static_cast<uint16_t>(entry.duration));
+				historyMsg.addByte(entry.winnerTeam);
+				historyMsg.addByte(entry.playerTeam);
+				historyMsg.add<uint16_t>(entry.kills);
+				historyMsg.add<uint16_t>(entry.deaths);
+				historyMsg.add<int32_t>(static_cast<int32_t>(entry.damageDealt));
+				historyMsg.add<int32_t>(static_cast<int32_t>(entry.healingDone));
+				historyMsg.add<int32_t>(entry.mmrChange);
+			}
+			writeToOutputBuffer(historyMsg);
+			break;
+		}
+
+		default:
+			break;
+	}
+}
+
+void ProtocolGame::sendArenaStatus() {
+	if (!player) {
+		return;
+	}
+
+	NetworkMessage msg;
+	msg.addByte(0xDB); // Arena server→client opcode
+	msg.addByte(0x01); // Sub: status update
+
+	auto state = g_arenaSystem().getPlayerState(player->getGUID());
+	msg.addByte(static_cast<uint8_t>(state));
+
+	// Queue sizes per mode
+	msg.addByte(static_cast<uint8_t>(ArenaMode::TOURNAMENT)); // Number of modes
+	for (uint8_t m = 1; m <= static_cast<uint8_t>(ArenaMode::TOURNAMENT); ++m) {
+		msg.addByte(m);
+		msg.add<uint16_t>(static_cast<uint16_t>(g_arenaSystem().getQueueSize(static_cast<ArenaMode>(m))));
+	}
+
+	// Active match count
+	msg.add<uint16_t>(static_cast<uint16_t>(g_arenaSystem().getActiveMatchCount()));
+
+	writeToOutputBuffer(msg);
+}
+
+void ProtocolGame::sendArenaStats() {
+	if (!player) {
+		return;
+	}
+
+	NetworkMessage msg;
+	msg.addByte(0xDB); // Arena server→client opcode
+	msg.addByte(0x02); // Sub: player stats
+
+	auto stats = g_arenaSystem().getPlayerStats(player->getGUID());
+	msg.add<int32_t>(stats.mmr);
+	msg.add<uint32_t>(stats.wins);
+	msg.add<uint32_t>(stats.losses);
+	msg.add<uint32_t>(stats.draws);
+	msg.add<int32_t>(stats.winStreak);
+	msg.add<int32_t>(stats.bestStreak);
+	msg.add<uint32_t>(stats.totalKills);
+	msg.add<uint32_t>(stats.totalDeaths);
+	msg.add<int32_t>(static_cast<int32_t>(stats.totalDamage));
+	msg.add<int32_t>(static_cast<int32_t>(stats.totalHealing));
+	msg.add<int32_t>(stats.arenaPoints);
+
+	writeToOutputBuffer(msg);
+}
+
+void ProtocolGame::sendArenaMatchFound(uint32_t matchId) {
+	if (!player) {
+		return;
+	}
+
+	NetworkMessage msg;
+	msg.addByte(0xDB); // Arena server→client opcode
+	msg.addByte(0x03); // Sub: match found
+
+	const auto* match = g_arenaSystem().getPlayerMatch(player->getGUID());
+	if (!match) {
+		return;
+	}
+
+	msg.add<uint32_t>(matchId);
+	msg.addByte(static_cast<uint8_t>(match->getMode()));
+	msg.addByte(match->getPlayerCount());
+
+	// Send player list
+	for (const auto &[pid, pstats] : match->getPlayerStats()) {
+		msg.add<uint32_t>(pid);
+		msg.addByte(pstats.team);
+		auto matchPlayer = g_game().getPlayerByGUID(pid);
+		msg.addString(matchPlayer ? matchPlayer->getName() : "Unknown");
+	}
+
+	writeToOutputBuffer(msg);
+}
+
+void ProtocolGame::sendArenaRankingData(const std::vector<ArenaRankEntry> &entries, uint32_t page) {
+	if (!player) {
+		return;
+	}
+
+	NetworkMessage msg;
+	msg.addByte(0xDB); // Arena server→client opcode
+	msg.addByte(0x05); // Sub: ranking data
+
+	msg.add<uint32_t>(page);
+	msg.add<uint16_t>(static_cast<uint16_t>(entries.size()));
+	for (const auto &entry : entries) {
+		msg.add<uint32_t>(entry.playerId);
+		msg.addString(entry.playerName);
+		msg.add<int32_t>(entry.mmr);
+		msg.add<uint32_t>(entry.wins);
+		msg.add<uint32_t>(entry.losses);
+		msg.add<int32_t>(entry.winStreak);
+		msg.add<int32_t>(entry.bestStreak);
+	}
+
+	writeToOutputBuffer(msg);
+}
+
+void ProtocolGame::sendArenaMatchUpdate(uint32_t matchId) {
+	if (!player) {
+		return;
+	}
+
+	const auto* match = g_arenaSystem().getPlayerMatch(player->getGUID());
+	if (!match) {
+		return;
+	}
+
+	NetworkMessage msg;
+	msg.addByte(0xDB); // Arena server→client opcode
+	msg.addByte(0x04); // Sub: match live update
+
+	msg.add<uint32_t>(matchId);
+	msg.addByte(static_cast<uint8_t>(match->getState()));
+	msg.add<uint16_t>(static_cast<uint16_t>(match->getElapsedSeconds()));
+
+	// Team scores
+	auto scores = match->getTeamScores();
+	msg.addByte(static_cast<uint8_t>(scores.size()));
+	for (const auto &[team, score] : scores) {
+		msg.addByte(team);
+		msg.add<uint16_t>(score);
+	}
+
+	// Player stats snapshot
+	msg.addByte(match->getPlayerCount());
+	for (const auto &[pid, pstats] : match->getPlayerStats()) {
+		msg.add<uint32_t>(pid);
+		msg.addByte(pstats.team);
+		msg.add<uint16_t>(pstats.kills);
+		msg.add<uint16_t>(pstats.deaths);
+		msg.add<int32_t>(static_cast<int32_t>(pstats.damageDealt));
+		msg.add<int32_t>(static_cast<int32_t>(pstats.healingDone));
+	}
+
+	writeToOutputBuffer(msg);
+}
+
+void ProtocolGame::sendArenaMatchResult(uint32_t matchId) {
+	if (!player) {
+		return;
+	}
+
+	const auto* match = g_arenaSystem().getPlayerMatch(player->getGUID());
+	if (!match) {
+		return;
+	}
+
+	NetworkMessage msg;
+	msg.addByte(0xDB); // Arena server→client opcode
+	msg.addByte(0x07); // Sub: match result
+
+	msg.add<uint32_t>(matchId);
+	msg.addByte(static_cast<uint8_t>(match->getMode()));
+	msg.addByte(match->getWinnerTeam());
+	msg.add<uint16_t>(static_cast<uint16_t>(match->getElapsedSeconds()));
+
+	// Final player stats with MMR changes
+	msg.addByte(match->getPlayerCount());
+	for (const auto &[pid, pstats] : match->getPlayerStats()) {
+		msg.add<uint32_t>(pid);
+		msg.addByte(pstats.team);
+		msg.add<uint16_t>(pstats.kills);
+		msg.add<uint16_t>(pstats.deaths);
+		msg.add<int32_t>(static_cast<int32_t>(pstats.damageDealt));
+		msg.add<int32_t>(static_cast<int32_t>(pstats.healingDone));
+		msg.add<int32_t>(pstats.mmrChange);
+	}
+
+	writeToOutputBuffer(msg);
+}

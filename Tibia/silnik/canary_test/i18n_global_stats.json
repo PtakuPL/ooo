@@ -1,8 +1,8 @@
 {
-  "total_cycles": 53,
+  "total_cycles": 54,
   "mode": "AUTO_TRANSLATE",
-  "category": "es",
-  "last_update": "2026-02-21T03:24:23.017048",
+  "category": "it",
+  "last_update": "2026-02-21T03:25:59.352015",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,10 +26,10 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "es",
-    "json_file": "modules.json",
-    "keys_to_translate": 3,
-    "guard_fail": 2,
+    "language": "it",
+    "json_file": "otclient_modules.json",
+    "keys_to_translate": 1183,
+    "guard_fail": 15,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

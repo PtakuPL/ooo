@@ -145,7 +145,7 @@ namespace luabinder
     template<typename Ret, typename C, typename... Args>
     auto make_mem_func(Ret(C::* f)(Args...))
     {
-        return [f](const std::shared_ptr<C>& obj, const Args&... args) mutable -> Ret {
+        return [f](const std::shared_ptr<C>& obj, const Args&... args) -> Ret {
             if (!obj)
                 throw LuaException("failed to call a member function because the passed object is nil");
             return (obj.get()->*f)(args...);
@@ -154,7 +154,7 @@ namespace luabinder
     template<typename C, typename... Args>
     auto make_mem_func(void (C::* f)(Args...))
     {
-        return [f](const std::shared_ptr<C>& obj, const Args&... args) mutable {
+        return [f](const std::shared_ptr<C>& obj, const Args&... args) {
             if (!obj)
                 throw LuaException("failed to call a member function because the passed object is nil");
             (obj.get()->*f)(args...);
@@ -165,12 +165,12 @@ namespace luabinder
     template<typename Ret, typename C, typename... Args>
     auto make_mem_func_singleton(Ret(C::* f)(Args...), C* instance)
     {
-        return [f, instance](Args... args) mutable -> Ret { return (instance->*f)(args...); };
+        return [f, instance](Args... args) -> Ret { return (instance->*f)(args...); };
     }
     template<typename C, typename... Args>
     auto make_mem_func_singleton(void (C::* f)(Args...), C* instance)
     {
-        return [f, instance](Args... args) mutable { (instance->*f)(args...); };
+        return [f, instance](Args... args) { (instance->*f)(args...); };
     }
 
     /// Bind member functions

@@ -84374,5 +84374,213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T02:16:31.764671Z"
+  },
+  "otclient_modules.character_otui.tr_48": {
+    "src_hash": "511924d4430637cef309c7e64fe5c38f",
+    "text": "Pagina 1 / 1",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:24:51.603437Z"
+  },
+  "otclient_modules.game_stash_otui.tr_6": {
+    "src_hash": "ea7cda1d559f7a95a9ea0cb5f1255897",
+    "text": "Scorta di provviste",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:24:51.699491Z"
+  },
+  "otclient_modules.prey.tr_13": {
+    "src_hash": "d0f2e5376298c880665077b565ffd7dd",
+    "text": "Bloccato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:24:51.803680Z"
+  },
+  "otclient_modules.character_otui.tr_43": {
+    "src_hash": "10ac3d04253ef7e1ddc73e6091c0cd55",
+    "text": "Prossimo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:24:53.834793Z"
+  },
+  "otclient_modules.character_otui.tr_44": {
+    "src_hash": "dd1f775e443ff3b9a89270713580a51b",
+    "text": "Precedente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:24:53.835196Z"
+  },
+  "otclient_modules.character_otui.tr_47": {
+    "src_hash": "828b62c77b6e94a93e516205bb69d398",
+    "text": "Dati e ora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:24:53.835506Z"
+  },
+  "otclient_modules.character_otui.tr_49": {
+    "src_hash": "10ac3d04253ef7e1ddc73e6091c0cd55",
+    "text": "Prossimo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:24:57.983446Z"
+  },
+  "otclient_modules.character_otui.tr_5": {
+    "src_hash": "aa178f0075b445caa5b5bfaaed092cc8",
+    "text": "Mercenari",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:24:57.984097Z"
+  },
+  "otclient_modules.character_otui.tr_50": {
+    "src_hash": "dd1f775e443ff3b9a89270713580a51b",
+    "text": "Precedente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:24:57.984745Z"
+  },
+  "otclient_modules.character_otui.tr_51": {
+    "src_hash": "6606abcb72d0340e9ad67002086c1617",
+    "text": "Causa della morte",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:24:57.985422Z"
+  },
+  "otclient_modules.character_otui.tr_52": {
+    "src_hash": "828b62c77b6e94a93e516205bb69d398",
+    "text": "Dati e ora",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:24:57.986078Z"
+  },
+  "otclient_modules.character_otui.tr_53": {
+    "src_hash": "08a7a74289fcb1048f657b79eb629293",
+    "text": "Sanguisuga di mana:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:06.275174Z"
+  },
+  "otclient_modules.character_otui.tr_54": {
+    "src_hash": "83253d6ab187cb3aa6ebb732852b4abf",
+    "text": "Sanguisuga della vita:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:06.276487Z"
+  },
+  "otclient_modules.character_otui.tr_57": {
+    "src_hash": "3b611ac0f7b46306cfea871d1ae89e30",
+    "text": "Colpo critico:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:06.277316Z"
+  },
+  "otclient_modules.character_otui.tr_58": {
+    "src_hash": "74c05658c75877e407db49a632d007c0",
+    "text": "Miscele:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:06.277991Z"
+  },
+  "otclient_modules.character_otui.tr_59": {
+    "src_hash": "98ef9ca7a32a6e72d8f35a474b2c183c",
+    "text": "Riduzione del danno:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:06.278861Z"
+  },
+  "otclient_modules.character_otui.tr_6": {
+    "src_hash": "256f9f5a1e315939ca79797b7339e6fd",
+    "text": "Espansione del fascino:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:13.413938Z"
+  },
+  "otclient_modules.character_otui.tr_60": {
+    "src_hash": "4b990369257afa83eba3739eea689427",
+    "text": "Benedizioni:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:13.414349Z"
+  },
+  "otclient_modules.character_otui.tr_61": {
+    "src_hash": "8a968d96b5b034e62fdd83e72955fb55",
+    "text": "Mitigazione:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:13.414699Z"
+  },
+  "otclient_modules.character_otui.tr_62": {
+    "src_hash": "a6d5a3079428fa50dab9fe7910efbff2",
+    "text": "Valore dell'armatura:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:13.415068Z"
+  },
+  "otclient_modules.character_otui.tr_63": {
+    "src_hash": "3dd18a5386bc5653f707037c0c3e8a77",
+    "text": "Valore di difesa:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:13.415394Z"
+  },
+  "otclient_modules.character_otui.tr_65": {
+    "src_hash": "e4c24f1e5882cd4795b9978cd9ab338a",
+    "text": "Danno convertito:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:19.271319Z"
+  },
+  "otclient_modules.character_otui.tr_66": {
+    "src_hash": "1a238ba527534093b147541362e2434c",
+    "text": "Valore di attacco:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:19.272101Z"
+  },
+  "otclient_modules.character_otui.tr_67": {
+    "src_hash": "d2159e19de13dcbaa524062d116d826e",
+    "text": "Badge dell'account",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:19.276005Z"
+  },
+  "otclient_modules.character_otui.tr_7": {
+    "src_hash": "32ce041007058889bd9ccb8b22ade877",
+    "text": "Fascino",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:19.276656Z"
+  },
+  "otclient_modules.character_otui.tr_74": {
+    "src_hash": "ae8faf2882fb1dfc7183a0a7a6784f9a",
+    "text": "Pugno",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:21.032146Z"
   }
 }

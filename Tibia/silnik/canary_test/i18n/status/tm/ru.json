@@ -40534,5 +40534,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T02:19:44.122437Z"
+  },
+  "book.otbm.dren_lo_explorer_hero_and": {
+    "src_hash": "6211f7e8cbeaa7270f35e7b00f0579d7",
+    "text": "Дрен Ло, исследователь, герой и генерал",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:32.546295Z"
+  },
+  "book.otbm.dress_for_success_tailor_shop": {
+    "src_hash": "7cbb538ebe307434928e7fedcbd571b7",
+    "text": "Платье для успеха - Ателье по пошиву одежды",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:32.546927Z"
+  },
+  "book.otbm.dress_for_success_tailor_shop_7cbb538e": {
+    "src_hash": "7cbb538ebe307434928e7fedcbd571b7",
+    "text": "Платье для успеха - Ателье по пошиву одежды",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:32.547622Z"
+  },
+  "book.otbm.dwelling_of_the_forgotten": {
+    "src_hash": "40042aa215a5289976cafe8271764a43",
+    "text": "Жилище забытых",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:37.807322Z"
+  },
+  "book.otbm.eastern_city_entrance_use_door": {
+    "src_hash": "6e73e8dfbb452509738638f140710419",
+    "text": "Восточный вход в город — используйте дверь. Центральная производственная площадка — используйте лестницу.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:37.808257Z"
+  },
+  "book.otbm.eggs_cheese_cookies_rolls_meat": {
+    "src_hash": "c4432b15c13c825c60a3f621fb653445",
+    "text": "яйца, сыр, печенье, рулеты, мясо, лосось, апельсины, виноград, дыни, бананы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:37.809038Z"
+  },
+  "book.otbm.elemental_shrines_and_training_grounds": {
+    "src_hash": "4ce61515b1a6e52ca35ea4cd57e79e20",
+    "text": "Святилища стихий и тренировочные площадки",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:37.809603Z"
+  },
+  "book.otbm.elements_of_tibia_and_their": {
+    "src_hash": "01e3d3f3997d6df74b4b87eea648f0d5",
+    "text": "Элементы Тибиа и их алхимический порядок",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:37.811016Z"
+  },
+  "book.otbm.elite_came_back_alive_if": {
+    "src_hash": "7d1b34b22fa4fd7be4f2c4916f88e81b",
+    "text": "элита вернулась живой, если ты не высококвалифицированный специалист и попробуешь туда пойти самостоятельно, то тебя скорее всего просто перестанет быть.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:42.470289Z"
+  },
+  "book.otbm.embalming_fluid_chants_and_holy": {
+    "src_hash": "624b2b35fff1a2bed2091c32dfffa347",
+    "text": "Жидкость для бальзамирования, песнопения и святые препараты, необходимые для направления духа в загробный мир и сохранения его тела в промежуточном мире, выполнил Рамес-Сени Оси-Атун-Ра-Хетон, просвещенный бальзамировщик и смиренный слуга Повелителя Семи Песчаных Морей, пусть его дух правит в загробной жизни вечно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:42.472202Z"
+  },
+  "book.otbm.employed_already_the_armies_of": {
+    "src_hash": "9ca139c429009e3d72e2d25f674a7129",
+    "text": "трудоустроен. Армии древних рас уже готовились отбить у людей то, что древние расы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:42.473103Z"
+  },
+  "book.otbm.enter_at_your_own_risk": {
+    "src_hash": "8546b8167bbc43b7119bc4987cd96e04",
+    "text": "Вступайте на свой страх и риск и будьте готовы!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:25:42.473945Z"
   }
 }

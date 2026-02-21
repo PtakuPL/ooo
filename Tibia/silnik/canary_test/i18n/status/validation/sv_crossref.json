@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-21T00:55:50.312921Z",
+  "checked_at": "2026-02-21T01:18:45.794572Z",
   "issues_total": 428,
   "issues_by_type": {
     "consistency_in_language": 13,
@@ -909,6 +909,15 @@
       "en": "Hurr",
       "pl": "Hurra",
       "lang": "Hurr"
+    },
+    {
+      "key": "monster.running_elite_orc_guard.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Running Elite Orc Guard",
+      "pl": "Biegnący Elitarny Ork Strażnik",
+      "lang": "Running Elite Orc Guard"
     },
     {
       "key": "monster.troll_champion.voice_2",
@@ -3798,15 +3807,6 @@
       "en": "I see.",
       "pl": "Rozumiem.",
       "lang": "I see."
-    },
-    {
-      "key": "npc.yasir.say_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Me Yasir.",
-      "pl": "Mnie, mi Yasir.",
-      "lang": "Me Yasir."
     }
   ],
   "length_ratio_issues": [
@@ -3948,8 +3948,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 0,
-    "skipped": 80,
+    "applied": 1,
+    "skipped": 79,
     "errors": 0
   }
 }

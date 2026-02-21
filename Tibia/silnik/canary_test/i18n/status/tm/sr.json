@@ -176454,5 +176454,29 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T00:58:25.929928Z"
+  },
+  "data.otservbr.global.npc.chrystal.L79.789": {
+    "src_hash": "fa6fc88cd18508a957ddb1e284794140",
+    "text": "Ко је следећи?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:16:06.640912Z"
+  },
+  "data.otservbr.global.npc.chrystal.L80.790": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Ево. Не заборавите да морате купити и етикету ако желите да пошаљете пакет. Увек напишите име {receiver} у првом реду.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:16:06.642834Z"
+  },
+  "data.otservbr.global.npc.cledwyn.L212.1118": {
+    "src_hash": "90eb7ed81786f0f6628dc1a2bc906919",
+    "text": "Благослови, играчу! Како могу бити од користи? Да ли желите да тргујете са {token}, или желите са {information} или {talk}? Да ли треба да {enchant} одређене ставке за вас?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:16:06.646699Z"
   }
 }

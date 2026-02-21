@@ -1,13 +1,13 @@
 {
   "lang": "es",
-  "coverage_pct": 85.8,
+  "coverage_pct": 85.9,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-21T00:54:01.414176Z",
-  "issues_total": 517,
+  "checked_at": "2026-02-21T01:16:33.537154Z",
+  "issues_total": 518,
   "issues_by_type": {
-    "consistency_in_language": 72,
+    "consistency_in_language": 73,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 45
   },
@@ -374,6 +374,23 @@
         "items:item.12699.name",
         "items:item.28525.name",
         "items:item.28526.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "gnomish spore gatherer",
+      "variants": [
+        "gNomish spore gatherer",
+        "recolector de esporas gnomo"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.15817.name",
+        "items:item.15818.name",
+        "items:item.15819.name",
+        "items:item.15820.name",
+        "items:item.15821.name"
       ]
     },
     {
@@ -3687,6 +3704,15 @@
       "lang": "You should visit Kasmir in Darashia now, my child."
     },
     {
+      "key": "npc.an_orc_guard.voice_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fetchi maruk buta.",
+      "pl": "Fetchi Maruk Buta.",
+      "lang": "Fetchi maruk buta."
+    },
+    {
       "key": "npc.angus.say_16",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -4684,15 +4710,6 @@
       "en": "Failed to generate a Soul Core.",
       "pl": "nieudane do wytwarzać, generować jeden Dusza Core.",
       "lang": "Failed to generate a Soul Core."
-    },
-    {
-      "key": "scripts.find_fiend.level_trivial",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Trivial",
-      "pl": "Nie znaczący, banalny",
-      "lang": "Trivial"
     }
   ],
   "length_ratio_issues": [

@@ -1,18 +1,15 @@
 {
-  "timestamp": "2026-02-21T01:14:51.295129Z",
+  "timestamp": "2026-02-21T01:18:02.322095Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 2,
-  "warnings_count": 15,
+  "warnings_count": 12,
   "ok_count": 10,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=67575 rate=429.648% window=6.0h top_lang=ro:27152 per_lang=[ro:27152(1588.765%/critical),es:17939(387.451%/critical),ru:9713(307.861%/critical),pl:8382(431.617%/critical),it:2417(101.427%/critical)] per_domain=[items.json:40509(1892.06%/critical),npc.json:13553(220.697%/critical),monsters.json:9728(345.7%/critical),server.json:1065(106.713%/critical),scripts.json:688(80.846%/warning)]",
-    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5939.0 cycle_delta=6020 best_quality_drop=0.000% reason=active_time_without_quality_drop"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=67369 rate=433.018% window=6.0h top_lang=ro:27153 per_lang=[ro:27153(1613.369%/critical),es:17775(389.205%/critical),ru:9683(309.856%/critical),pl:8360(442.797%/critical),it:2386(101.402%/critical)] per_domain=[items.json:40509(1892.06%/critical),npc.json:13411(220.033%/critical),monsters.json:9728(345.7%/critical),server.json:1044(110.946%/critical),scripts.json:646(79.852%/warning)]",
+    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5942.2 cycle_delta=6023 best_quality_drop=0.000% reason=active_time_without_quality_drop"
   ],
   "warnings": [
-    "BLACKLISTED_TARGET: pl:items.json ma 6839 guard_fail w blackliście",
-    "BLACKLISTED_TARGET: es:items.json ma 6840 guard_fail w blackliście",
-    "BLACKLISTED_TARGET: pl:npc.json ma 6841 guard_fail w blackliście",
     "WORKER_TRANSLATION_CONTRACT_WARNING: pid=661274 translations_only=1 use_gt=1 no_git=0 priority_gate=1 priority_langs=[pl,es,ru,ro,it,sr,sv] pending=[pl,es,ru,ro,it,sr,sv] reason=priority_langs_not_es_pl",
     "GUARDIAN_DEGRADED: guardian raportuje degraded",
     "LANG_PARITY_WARN: cs has 49655 [EN]-backlog after 161h (should be ≤5000)",
@@ -27,16 +24,16 @@
     "LANG_PARITY_WARN: tr has 48694 [EN]-backlog after 161h (should be ≤5000)"
   ],
   "ok": [
-    "heartbeat_fresh (85s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (64s)",
-    "guard_report_fresh (57s)",
-    "dispatch_fresh (55s)",
+    "heartbeat_fresh (144s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (122s)",
+    "guard_report_fresh (114s)",
+    "dispatch_fresh (121s)",
     "worker_pid_alive (661274)",
-    "worker_process_topology_ok (main=661274 matching=2 extras=1 desc=1 foreign=0 oldest_desc=3s oldest_foreign=0s status=single_descendant_observed)",
-    "queue_freshness_ok (43s, WARN>900s CRIT>1800s)",
+    "worker_process_topology_ok (main=661274 matching=2 extras=1 desc=1 foreign=0 oldest_desc=111s oldest_foreign=0s status=single_descendant_observed)",
+    "queue_freshness_ok (234s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
     "forced_cmd_sla_ok (samples=0 sla_target=45s p95_roundtrip=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0)",
-    "repair_tuning_active (samples_2h=36)"
+    "repair_tuning_active (samples_2h=34)"
   ],
   "metrics_drift": {
     "available": true,
@@ -71,8 +68,8 @@
       "sr",
       "sv"
     ],
-    "active_minutes": 5938.999,
-    "cycle_delta": 6020,
+    "active_minutes": 5942.184,
+    "cycle_delta": 6023,
     "best_quality_drop_pct": 0.0,
     "thresholds": {
       "max_active_minutes": 1440.0,
@@ -112,20 +109,20 @@
     "main_pid": 661274,
     "matched_pids": [
       661274,
-      686416
+      688470
     ],
     "extra_pids": [
-      686416
+      688470
     ],
     "descendant_extra_pids": [
-      686416
+      688470
     ],
     "foreign_extra_pids": [],
     "total_matching": 2,
     "extra_count": 1,
     "descendant_extra_count": 1,
     "foreign_extra_count": 0,
-    "oldest_descendant_age_s": 3,
+    "oldest_descendant_age_s": 111,
     "oldest_foreign_age_s": 0,
     "warn_persist_seconds": 900,
     "critical_persist_seconds": 1800

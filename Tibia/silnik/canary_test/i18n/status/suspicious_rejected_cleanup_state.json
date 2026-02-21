@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T01:14:45.765270Z",
-  "last_cycle": 15,
+  "timestamp": "2026-02-21T01:16:06.949878Z",
+  "last_cycle": 16,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [],
@@ -370,7 +370,10 @@
       "data.otservbr.global.npc.chief.grarkharok.L158.1407",
       "data.otservbr.global.npc.chondur.L319.194",
       "data.otservbr.global.npc.chrak.L93.1133",
-      "data.otservbr.global.npc.chrystal.L78.788"
+      "data.otservbr.global.npc.chrystal.L78.788",
+      "data.otservbr.global.npc.chrystal.L79.789",
+      "data.otservbr.global.npc.chrystal.L80.790",
+      "data.otservbr.global.npc.cledwyn.L212.1118"
     ],
     "pl|questlog.json": [
       "questlog.quest_1.mission_1.name",

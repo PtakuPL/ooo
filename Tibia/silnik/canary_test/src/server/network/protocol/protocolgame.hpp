@@ -249,6 +249,9 @@ private:
 	void parseRequestTrade(NetworkMessage &msg);
 	void parseLookInTrade(NetworkMessage &msg);
 
+	// arena methods
+	void parseArenaAction(NetworkMessage &msg);
+
 	// market methods
 	void parseMarketLeave();
 	void parseMarketBrowse(NetworkMessage &msg);
@@ -402,6 +405,15 @@ private:
 	void sendMarketCancelOffer(const MarketOfferEx &offer);
 	void sendMarketBrowseOwnHistory(const HistoryMarketOfferList &buyOffers, const HistoryMarketOfferList &sellOffers);
 	void sendMarketDetail(uint16_t itemId, uint8_t tier);
+
+	// Arena PvP send methods
+	void sendArenaStatus();
+	void sendArenaStats();
+	void sendArenaMatchFound(uint32_t matchId);
+	void sendArenaRankingData(const std::vector<ArenaRankEntry> &entries, uint32_t page);
+	void sendArenaMatchUpdate(uint32_t matchId);
+	void sendArenaMatchResult(uint32_t matchId);
+
 	void sendTradeItemRequest(const std::string &traderName, const std::shared_ptr<Item> &item, bool ack);
 	void sendCloseTrade();
 	void updatePartyTrackerAnalyzer(const std::shared_ptr<Party> &party);

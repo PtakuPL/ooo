@@ -85046,5 +85046,237 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T09:54:05.868827Z"
+  },
+  "item.7749.name": {
+    "src_hash": "e6fb119dfe58251e3548a454f21084bc",
+    "text": "mucchio di pietre sciolte",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.565769Z"
+  },
+  "item.7752.name": {
+    "src_hash": "9603a224b40d7b67210b78f2e390d00f",
+    "text": "ramo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.566405Z"
+  },
+  "item.7755.name": {
+    "src_hash": "de97e75e5b4604526a2afaed5f5439d7",
+    "text": "buco",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.566884Z"
+  },
+  "item.7756.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "pavimento sporco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.567257Z"
+  },
+  "item.7761.name": {
+    "src_hash": "09d440e487d45777c05c3a6552ad9154",
+    "text": "erba",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.567744Z"
+  },
+  "item.7762.name": {
+    "src_hash": "8b16de93821412141506eb60e09180d0",
+    "text": "pavimento sporco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.568064Z"
+  },
+  "item.7764.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "sporco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.568525Z"
+  },
+  "item.7769.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "pavimento in legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.568812Z"
+  },
+  "item.7770.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.569109Z"
+  },
+  "item.7771.name": {
+    "src_hash": "4fbf0df9152d076908cc0754dbb50a06",
+    "text": "scala",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.569369Z"
+  },
+  "item.7772.name": {
+    "src_hash": "9603a224b40d7b67210b78f2e390d00f",
+    "text": "ramo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.569784Z"
+  },
+  "item.7803.name": {
+    "src_hash": "431369719ea01e4118be66bfd4c3b4d7",
+    "text": "muro in fiamme",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.570670Z"
+  },
+  "item.7867.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "pavimento in legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.572018Z"
+  },
+  "item.7868.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.572394Z"
+  },
+  "item.7869.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.572687Z"
+  },
+  "item.7880.name": {
+    "src_hash": "6266cb99f1f98c30d000e4e736c8d5fd",
+    "text": "terreno roccioso",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.573853Z"
+  },
+  "item.7883.name": {
+    "src_hash": "2c997ee34e3a72c17421d81c1c3716ae",
+    "text": "pala",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.574354Z"
+  },
+  "item.7885.name": {
+    "src_hash": "83e4a96aed96436c621b9809e258b309",
+    "text": "Pescare",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.574642Z"
+  },
+  "item.7886.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "pavimento in legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.575026Z"
+  },
+  "item.7887.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.575386Z"
+  },
+  "item.7891.name": {
+    "src_hash": "05b8c74cbd96fbf2de4c1a352702fbf4",
+    "text": "finestra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.576082Z"
+  },
+  "item.7894.name": {
+    "src_hash": "2c997ee34e3a72c17421d81c1c3716ae",
+    "text": "pala",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.576590Z"
+  },
+  "item.7941.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.578672Z"
+  },
+  "item.7959.name": {
+    "src_hash": "9603a224b40d7b67210b78f2e390d00f",
+    "text": "ramo",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.579083Z"
+  },
+  "item.8072.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Mostra i tuoi incantesimi e può anche proteggere dagli attacchi quando indossato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.584387Z"
+  },
+  "item.8073.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Mostra i tuoi incantesimi e può anche proteggere dagli attacchi quando indossato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.585107Z"
+  },
+  "item.8074.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Mostra i tuoi incantesimi e può anche proteggere dagli attacchi quando indossato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.585740Z"
+  },
+  "item.8075.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Mostra i tuoi incantesimi e può anche proteggere dagli attacchi quando indossato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.586356Z"
+  },
+  "item.8076.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Mostra i tuoi incantesimi e può anche proteggere dagli attacchi quando indossato",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:06:48.587077Z"
   }
 }

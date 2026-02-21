@@ -37,6 +37,8 @@
 #include "io/iobestiary.hpp"
 #include "io/iologindata.hpp"
 #include "io/iomarket.hpp"
+#include "io/ioarena.hpp"
+#include "game/arena/arena_system.hpp"
 #include "io/ioprey.hpp"
 #include "items/items_classification.hpp"
 #include "items/weapons/weapons.hpp"
@@ -1442,6 +1444,9 @@ void ProtocolGame::parsePacketFromDispatcher(NetworkMessage &msg, uint8_t recvby
 			break;
 		case 0xCF:
 			sendBlessingWindow();
+			break;
+		case 0xD0:
+			parseArenaAction(msg);
 			break;
 		case 0xD2:
 			g_game().playerRequestOutfit(player->getID());

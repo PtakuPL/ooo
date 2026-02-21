@@ -40070,5 +40070,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T01:23:01.209905Z"
+  },
+  "questlog.quest_11.mission_16.state_1": {
+    "src_hash": "c48571c2e09d16843f462ca628b8e61c",
+    "text": "Вы успешно охотились на 300 шипастых черепах. Если вы хотите, вы можете выполнить это задание еще раз.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:26:21.586541Z"
+  },
+  "questlog.quest_11.mission_16.state_2": {
+    "src_hash": "88061e86fe608b23cf9d35c263592858",
+    "text": "Вы успешно охотились на 300 шипастых черепах.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:26:21.587217Z"
   }
 }

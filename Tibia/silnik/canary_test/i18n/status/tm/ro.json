@@ -75358,5 +75358,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:24:43.375073Z"
+  },
+  "otclient_modules.character_otui.tr_61": {
+    "src_hash": "8a968d96b5b034e62fdd83e72955fb55",
+    "text": "Atenuare:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:26:41.588355Z"
+  },
+  "otclient_modules.character_otui.tr_62": {
+    "src_hash": "a6d5a3079428fa50dab9fe7910efbff2",
+    "text": "Valoarea armurii:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:26:48.160849Z"
+  },
+  "otclient_modules.character_otui.tr_63": {
+    "src_hash": "3dd18a5386bc5653f707037c0c3e8a77",
+    "text": "Valoarea apărării:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:26:48.161106Z"
+  },
+  "otclient_modules.character_otui.tr_65": {
+    "src_hash": "e4c24f1e5882cd4795b9978cd9ab338a",
+    "text": "Daune convertite:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:26:48.161337Z"
+  },
+  "otclient_modules.character_otui.tr_66": {
+    "src_hash": "1a238ba527534093b147541362e2434c",
+    "text": "Valoarea atacului:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:26:48.161547Z"
   }
 }

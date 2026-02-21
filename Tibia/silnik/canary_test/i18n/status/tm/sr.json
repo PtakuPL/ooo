@@ -176478,5 +176478,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T01:16:06.646699Z"
+  },
+  "monster.the_bloodweb.voice_1": {
+    "src_hash": "06186a045e589d182181f4a9ba76e2c0",
+    "text": "Сцреецх!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:27:21.319769Z"
+  },
+  "monster.drasilla.voice_1": {
+    "src_hash": "91fc417a7a30cf52d479d5880079e4c3",
+    "text": "ФЦХХХХХХХХ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:27:21.320058Z"
   }
 }

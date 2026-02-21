@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-21T10:03:30.084976Z",
+  "timestamp": "2026-02-21T10:03:50.748337Z",
   "global": {
     "total_reference_keys": 2786472,
     "translated_keys": 389309,
@@ -55,28 +55,27 @@
     "cannot_translate_reports_visible": 4804
   },
   "cache": {
-    "lang_stats_hits": 49,
-    "lang_stats_misses": 3,
-    "lang_stats_hit_pct": 94.2,
-    "lang_stats_mode": "mixed",
-    "lang_file_hits": 1973,
-    "lang_file_misses": 3,
-    "lang_file_hit_pct": 99.8,
+    "lang_stats_hits": 52,
+    "lang_stats_misses": 0,
+    "lang_stats_hit_pct": 100.0,
+    "lang_stats_mode": "warm-cache",
+    "lang_file_hits": 1976,
+    "lang_file_misses": 0,
+    "lang_file_hit_pct": 100.0,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-02-21T10:03:24.843062Z",
-    "cycle": 12,
+    "timestamp": "2026-02-21T10:03:46.511965Z",
+    "cycle": 13,
     "mode": "AUTO_TRANSLATE",
-    "category": "ro",
+    "category": "es",
     "events": {
-      "dispatch": 2051,
-      "mode_run": 81890
+      "dispatch": 529
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-02-21T09:03:29.426270Z",
-    "window_end_utc": "2026-02-21T10:03:29.426270Z",
+    "window_start_utc": "2026-02-21T09:03:49.945436Z",
+    "window_end_utc": "2026-02-21T10:03:49.945436Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -84,11 +83,11 @@
       "i18n/status/suspicious_log.jsonl",
       "i18n/status/suspicious_rejected.jsonl"
     ],
-    "total_cycles": 77,
+    "total_cycles": 80,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 77
+      "AUTO_TRANSLATE": 80
     },
-    "auto_translate_cycles": 77,
+    "auto_translate_cycles": 80,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
@@ -98,7 +97,7 @@
     "guard_fail_rate_pct": 75.5,
     "no_progress_entries": 1,
     "no_progress_rate_pct": 1.9,
-    "throughput_keys_per_h": 1153.0,
+    "throughput_keys_per_h": 1121.1,
     "suspicious_total": 2169,
     "suspicious_total_raw": 6784,
     "gt_translated": 235,
@@ -155,9 +154,9 @@
     ]
   },
   "guard_fail_breakdown": {
-    "timestamp": "2026-02-21T10:03:30.083172Z",
-    "window_start_utc": "2026-02-21T09:03:29.426270Z",
-    "window_end_utc": "2026-02-21T10:03:29.426270Z",
+    "timestamp": "2026-02-21T10:03:50.746560Z",
+    "window_start_utc": "2026-02-21T09:03:49.945436Z",
+    "window_end_utc": "2026-02-21T10:03:49.945436Z",
     "window_hours": 1.0,
     "sources": {
       "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -1061,9 +1060,9 @@
       "trend": "→ last10=0.00, prev10=0.00, latest=0"
     },
     "critical_bad_keys_pack_regression": {
-      "timestamp": "2026-02-21T10:03:30.083776Z",
-      "window_start_utc": "2026-02-21T09:03:29.426270Z",
-      "window_end_utc": "2026-02-21T10:03:29.426270Z",
+      "timestamp": "2026-02-21T10:03:50.747126Z",
+      "window_start_utc": "2026-02-21T09:03:49.945436Z",
+      "window_end_utc": "2026-02-21T10:03:49.945436Z",
       "by_lang": {
         "pl": {
           "critical_in_window": 0,

@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-21T10:03:30.083172Z",
-  "window_start_utc": "2026-02-21T09:03:29.426270Z",
-  "window_end_utc": "2026-02-21T10:03:29.426270Z",
+  "timestamp": "2026-02-21T10:03:50.746560Z",
+  "window_start_utc": "2026-02-21T09:03:49.945436Z",
+  "window_end_utc": "2026-02-21T10:03:49.945436Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",

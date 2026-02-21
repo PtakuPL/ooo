@@ -1,63 +1,24 @@
 {
-  "timestamp": "2026-02-21T00:08:17.129204Z",
-  "window_start_utc": "2026-02-20T23:08:16.497485Z",
-  "window_end_utc": "2026-02-21T00:08:16.497485Z",
+  "timestamp": "2026-02-21T00:09:46.456008Z",
+  "window_start_utc": "2026-02-20T23:09:45.760598Z",
+  "window_end_utc": "2026-02-21T00:09:45.760598Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 4,
-  "rejected_entries_raw": 4,
-  "suspicious_entries": 3819,
-  "suspicious_entries_raw": 13126,
+  "rejected_entries": 0,
+  "rejected_entries_raw": 0,
+  "suspicious_entries": 3820,
+  "suspicious_entries_raw": 13182,
   "guard_fail_entries": 100,
-  "guard_fail_sum": 1723,
-  "by_type": {
-    "identical_to_en": 4
-  },
-  "by_source": {
-    "google_translate": 4
-  },
-  "by_language": {
-    "es": 2,
-    "it": 2
-  },
-  "by_category": {
-    "npc.json": 3,
-    "server.json": 1
-  },
-  "by_severity": {
-    "CRITICAL": 4
-  },
-  "top_types": [
-    {
-      "type": "identical_to_en",
-      "count": 4
-    }
-  ],
-  "top_keys": [
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "count": 2,
-      "types": {
-        "identical_to_en": 2
-      }
-    },
-    {
-      "key": "data.otservbr.global.npc.anerui.L71.1487",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.greet_msg_1",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    }
-  ]
+  "guard_fail_sum": 1708,
+  "by_type": {},
+  "by_source": {},
+  "by_language": {},
+  "by_category": {},
+  "by_severity": {},
+  "top_types": [],
+  "top_keys": []
 }

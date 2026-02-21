@@ -118478,5 +118478,221 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-21T01:51:50.903147Z"
+  },
+  "achievement.75.description": {
+    "src_hash": "1b50a7b728556ab9a9dd2950b57a9db1",
+    "text": "Uwielbiasz spędzać czas w zimnym otoczeniu i uważasz, że lód jest najlepszym materiałem do kształtowania. Co za strata używać kostek lodu do napojów, skoro można z nich stworzyć piękny posąg mamuta!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:54:54.282979Z"
+  },
+  "achievement.76.name": {
+    "src_hash": "7774e9e1cb7065225f5847e07540d0e7",
+    "text": "Dekorator wnętrz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:54:54.283435Z"
+  },
+  "achievement.76.description": {
+    "src_hash": "84afdcb4c77be29bb921f4a4b86cf941",
+    "text": "Twój dom to Twoja twierdza – a znajdujące się w nim meble są równie ważne. Twoi przyjaciele proszą Cię o radę przy dekorowaniu swoich domów i prawdopodobnie posiadasz każdą statuę, stojak i łóżko, jakie się tam znajdują.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:54:54.284756Z"
+  },
+  "achievement.77.name": {
+    "src_hash": "0e8af28d386ddc884ca3678db1695a6a",
+    "text": "Pech",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:00.040357Z"
+  },
+  "achievement.77.description": {
+    "src_hash": "329f1e62de14951dfecd3148cf0805ed",
+    "text": "Czasami masz wrażenie, że jest tam gremlin. Tyle losów na loterię, tyle pustych miejsc? To po prostu niesprawiedliwe! Podziel się swoim nieszczęściem ze światem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:00.041681Z"
+  },
+  "achievement.78.description": {
+    "src_hash": "ba507c983910f54424d9bd22f90cb276",
+    "text": "To prawie za dużo szczęścia jak na jedną osobę. Jeśli coś jest naprawdę, naprawdę rzadkie – prawdopodobnie prędzej czy później wpadnie Ci w ręce. Gratulacje!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:00.042752Z"
+  },
+  "achievement.79.name": {
+    "src_hash": "f9e0ff35d3b6f44f1883db497bb8ffa4",
+    "text": "Marmurowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:00.043040Z"
+  },
+  "achievement.79.description": {
+    "src_hash": "6c161f64beb08de8d23d70a7da689c2b",
+    "text": "Jesteś początkującym rzeźbiarzem w marmurze z obiecującymi umiejętnościami, czego dowodem jest stworzony przez Ciebie idealny mały posąg Tibiasuli. Pewnego dnia będziesz naprawdę sławny!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:00.044279Z"
+  },
+  "achievement.80.name": {
+    "src_hash": "e6b889ac652701b925b0682c22062cb3",
+    "text": "Party Zwierzę",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:05.400594Z"
+  },
+  "achievement.80.description": {
+    "src_hash": "4e10bfec752f724a7e4f4dee2e43c532",
+    "text": "O mój Boże, to jest paaaaaaaaaarty! Zawsze masz ochotę na zabawę, przyjaciół i alkohol i uwielbiasz być w centrum uwagi. Powodów do świętowania jest nieskończenie wiele! Woohoo!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:05.401821Z"
+  },
+  "achievement.81.description": {
+    "src_hash": "f183b5b235d80d9fac47fcfa4ea15dc0",
+    "text": "Uwielbiasz tę chwilę, zanim Twoja rakieta wystartuje i eksploduje pięknymi kolorami - nie tylko w sylwestra!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:05.402875Z"
+  },
+  "achievement.82.description": {
+    "src_hash": "5a1bd6ecb0cd9a0221c8fbb7844a7bf1",
+    "text": "Jest... po prostu... nie... lepszy... sposób - niż podróżowanie na grzbiecie żółwia. Przynajmniej możesz cieszyć się pięknym otoczeniem Laguny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:05.403883Z"
+  },
+  "achievement.83.name": {
+    "src_hash": "8031ec2f4650ee69d91d5838e73c8380",
+    "text": "Polerka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:05.404160Z"
+  },
+  "achievement.83.description": {
+    "src_hash": "04e6fb11566e9d796484f34c436901ec",
+    "text": "Jeśli zobaczysz zardzewiały przedmiot, nie możesz się powstrzymać od wypolerowania go. W twoim ekwipunku zawsze znajduje się mała buteleczka środka do usuwania rdzy – kto wie, może pod całym tym brudem kryje się złota zbroja!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:09.105705Z"
+  },
+  "achievement.84.name": {
+    "src_hash": "bd0ba8d82e08aaf1b542085e1099679d",
+    "text": "Kobold okrętowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:09.106114Z"
+  },
+  "achievement.84.description": {
+    "src_hash": "1f5c4d4431f0b888f5e6382071c7f8e6",
+    "text": "Prawdopodobnie nigdy w życiu nie miałeś choroby morskiej – uwielbiasz spędzać wolny czas na oceanie i przepłynąłeś sporo mil statkami. Nie cieszysz się, że nie musiałeś tego wszystkiego pływać?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:09.107713Z"
+  },
+  "achievement.85.name": {
+    "src_hash": "07eda7b7fdc1b08c5b810584725d6803",
+    "text": "Steampunkowy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:09.108039Z"
+  },
+  "achievement.85.description": {
+    "src_hash": "2ba5650c5b55ff9de3698f08c9a7f154",
+    "text": "Podróżowanie krasnoludzkimi parowcami po podziemnych rzekach to twój ulubiony sposób przemierzania krain. Żadnych natrętnych mew i dobre piwo na pokładzie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:09.109124Z"
+  },
+  "achievement.86.name": {
+    "src_hash": "513257773a92dc37c274268951232c57",
+    "text": "Próżność",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:14.005119Z"
+  },
+  "achievement.86.description": {
+    "src_hash": "58ea46d16e4ab831cbdc0bf595537ef6",
+    "text": "Czyż nie jesteś po prostu idealnie, cudownie, pięknie piękna? Nie możesz przejść obok lustra, nie podziwiając swojego wyglądu. A może szybko sprawdzisz, czy coś nie utknęło Ci w zębach?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:14.006682Z"
+  },
+  "achievement.87.description": {
+    "src_hash": "fd27f3238edfaab2c359eb0999c93b81",
+    "text": "Wróżki i horoskopy poprowadzą Cię przez życie. I prawdopodobnie nie odważyłbyś się wybrać na polowanie na grubego zwierza, gdyby twoja wierna czaszka voodoo nie wyraziła zgody na dany dzień.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:14.008033Z"
+  },
+  "achievement.88.name": {
+    "src_hash": "2259f5b5f355a0b335edec255d1305f6",
+    "text": "Zdrajca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:14.008320Z"
+  },
+  "achievement.88.description": {
+    "src_hash": "3ad11bbe7290fd4fa223afbf27acc215",
+    "text": "Służyłeś Yalahar, ale po drodze nie wydawałeś się pewien, komu wierzyć. Zarówno Azerus, jak i Palimuth mieli dobre powody do swoich działań, dlatego w końcu posłuchałeś swojego instynktu, nawet jeśli pomogłeś któremukolwiek z nich. Niech Yalahar prosperuje!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:14.009876Z"
+  },
+  "achievement.89.description": {
+    "src_hash": "aac296722fcc8501aba222b089e8afd0",
+    "text": "Twoje małe posągi Tibiasuli stały się dość sławne około Tibia i niewiele jest osób z podobnymi umiejętnościami, jeśli chodzi o kształtowanie marmuru.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:19.706392Z"
+  },
+  "achievement.90.description": {
+    "src_hash": "61e112688ffc7dfc3393d891161ab144",
+    "text": "Rzeźbienie Broga, szalejącego Tytana, to Twoja sekretna pasja. Liczne doskonałe małe gliniane figurki z Twoim imieniem można znaleźć wszędzie w okolicy Tibia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:19.707513Z"
+  },
+  "achievement.91.name": {
+    "src_hash": "373f0c2026529c881211db0424a56051",
+    "text": "Zimny ​​jak lód",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:19.707890Z"
+  },
+  "achievement.91.description": {
+    "src_hash": "c59aab4f474e8fa5f35a63a3f47806e8",
+    "text": "Weź kostkę lodu i obsydianowy nóż, a najprawdopodobniej uformujesz z niej coś naprawdę ładnego. Przeważnie urocze małe mamuty, które są hitem wśród wszystkich dziewcząt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:55:19.709057Z"
   }
 }

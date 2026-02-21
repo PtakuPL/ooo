@@ -11480,3 +11480,10 @@
 {"timestamp": "2026-02-21T10:29:08.780226Z", "cycle": 21, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "dispatch", "duration_ms": 2380, "detail": "count=quests.json"}
 {"timestamp": "2026-02-21T10:35:24.710973Z", "cycle": 21, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "mode_run", "duration_ms": 375774, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-21T10:35:37.812178Z", "cycle": 21, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "status_update", "duration_ms": 11442, "detail": "throttle_every=5"}
+{"timestamp": "2026-02-21T10:35:57.006960Z", "cycle": 21, "mode": "AUTO_TRANSLATE", "category": "ro", "phase": "cycle_total", "duration_ms": 410810, "detail": "delay=4"}
+{"timestamp": "2026-02-21T10:36:06.326747Z", "cycle": 22, "mode": "AUTO_TRANSLATE", "category": "sv", "phase": "dispatch", "duration_ms": 4103, "detail": "count=server.json"}
+{"timestamp": "2026-02-21T10:39:10.683966Z", "cycle": 22, "mode": "AUTO_TRANSLATE", "category": "sv", "phase": "mode_run", "duration_ms": 184095, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-21T10:39:11.749320Z", "cycle": 22, "mode": "AUTO_TRANSLATE", "category": "sv", "phase": "status_update", "duration_ms": 118, "detail": "throttle_every=5"}
+{"timestamp": "2026-02-21T10:54:30.587562Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "dispatch", "duration_ms": 772, "detail": "count=achievements.json"}
+{"timestamp": "2026-02-21T10:57:01.384441Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "mode_run", "duration_ms": 150582, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-21T10:57:10.609326Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "status_update", "duration_ms": 8796, "detail": "throttle_every=5"}

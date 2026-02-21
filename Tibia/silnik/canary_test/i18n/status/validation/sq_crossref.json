@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T09:47:40.495192Z",
+  "checked_at": "2026-02-21T10:56:57.357666Z",
   "issues_total": 407,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -210,6 +210,33 @@
       "en": "Firewalker",
       "pl": "Chodzący po ogniu",
       "lang": "Firewalker"
+    },
+    {
+      "key": "achievement.79.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Marblelous",
+      "pl": "Marmurowy",
+      "lang": "Marblelous"
+    },
+    {
+      "key": "achievement.85.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Steampunked",
+      "pl": "Steampunkowy",
+      "lang": "Steampunked"
+    },
+    {
+      "key": "achievement.88.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Turncoat",
+      "pl": "Zdrajca",
+      "lang": "Turncoat"
     },
     {
       "key": "achievement.109.name",
@@ -3585,33 +3612,6 @@
       "en": "Attahch!",
       "pl": "Dołącz!",
       "lang": "Attahch!"
-    },
-    {
-      "key": "monster.undead_gladiator.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bring it!",
-      "pl": "Bring to!",
-      "lang": "Bring it!"
-    },
-    {
-      "key": "monster.falcon_paladin.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Uuunngh!",
-      "pl": "Uuuuuu!",
-      "lang": "Uuunngh!"
-    },
-    {
-      "key": "monster.ghost.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Huh!",
-      "pl": "He, co!",
-      "lang": "Huh!"
     }
   ],
   "length_ratio_issues": [

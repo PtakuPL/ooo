@@ -1,19 +1,16 @@
 {
-  "timestamp": "2026-02-21T10:33:18.218236Z",
-  "cycle_counter": 7068,
-  "last_target_key": "sr:server.json",
-  "last_pending_total": 1812,
-  "last_tier": 3,
-  "last_cat_priority": 1,
+  "timestamp": "2026-02-21T10:55:54.059805Z",
+  "cycle_counter": 7074,
+  "last_target_key": "pl:items.json",
+  "last_pending_total": 1069,
+  "last_tier": 1,
+  "last_cat_priority": 0,
   "candidates_count": 178,
-  "active_candidates_count": 161,
-  "skipped_backoff": 15,
-  "skipped_guard_fail": 2,
-  "guard_fail_blacklist": {
-    "pl:items.json": 7071,
-    "es:items.json": 7072
-  },
-  "guard_fail_blocked_count": 2,
+  "active_candidates_count": 162,
+  "skipped_backoff": 16,
+  "skipped_guard_fail": 0,
+  "guard_fail_blacklist": {},
+  "guard_fail_blocked_count": 0,
   "guard_fail_blocked_preview": [],
   "tier_config": {
     "tier1": [
@@ -39,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 21,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -80,7 +77,7 @@
     "pl:questlog.json": 0,
     "es:questlog.json": 0,
     "pl:achievements.json": 0,
-    "es:books.json": 2,
+    "es:books.json": 3,
     "es:html.json": 0,
     "pl:books.json": 3,
     "it:scripts.json": 0,

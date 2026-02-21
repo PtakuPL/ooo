@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T09:47:35.728031Z",
+  "checked_at": "2026-02-21T10:56:52.773937Z",
   "issues_total": 409,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -129,6 +129,33 @@
       "en": "Firewalker",
       "pl": "Chodzący po ogniu",
       "lang": "Firewalker"
+    },
+    {
+      "key": "achievement.77.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jinx",
+      "pl": "Pech",
+      "lang": "Jinx"
+    },
+    {
+      "key": "achievement.79.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Marblelous",
+      "pl": "Marmurowy",
+      "lang": "Marblelous"
+    },
+    {
+      "key": "achievement.88.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Turncoat",
+      "pl": "Zdrajca",
+      "lang": "Turncoat"
     },
     {
       "key": "achievement.119.name",
@@ -3585,33 +3612,6 @@
       "en": "Snort!",
       "pl": "SNiert!",
       "lang": "Snort!"
-    },
-    {
-      "key": "monster.clomp.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grunt!",
-      "pl": "Chrząknięcie!",
-      "lang": "Grunt!"
-    },
-    {
-      "key": "monster.clomp.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Snarl!",
-      "pl": "Warczenie!",
-      "lang": "Snarl!"
-    },
-    {
-      "key": "monster.kongra.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hugah!",
-      "pl": "Uff!",
-      "lang": "Hugah!"
     }
   ],
   "length_ratio_issues": [

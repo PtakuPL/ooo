@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T09:47:29.822852Z",
+  "checked_at": "2026-02-21T10:56:47.711801Z",
   "issues_total": 411,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -102,6 +102,24 @@
       "en": "Firewalker",
       "pl": "Chodzący po ogniu",
       "lang": "Firewalker"
+    },
+    {
+      "key": "achievement.79.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Marblelous",
+      "pl": "Marmurowy",
+      "lang": "Marblelous"
+    },
+    {
+      "key": "achievement.88.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Turncoat",
+      "pl": "Zdrajca",
+      "lang": "Turncoat"
     },
     {
       "key": "achievement.96.name",
@@ -3594,24 +3612,6 @@
       "en": "Oink",
       "pl": "Chrum",
       "lang": "Oink"
-    },
-    {
-      "key": "monster.vampire_pig.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Oink oink",
-      "pl": "Chrum chrum",
-      "lang": "Oink oink"
-    },
-    {
-      "key": "monster.boar.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grunt",
-      "pl": "Chrząknięcie",
-      "lang": "Grunt"
     }
   ],
   "length_ratio_issues": [

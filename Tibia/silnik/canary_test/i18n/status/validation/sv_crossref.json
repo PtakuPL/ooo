@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T09:47:42.132381Z",
+  "checked_at": "2026-02-21T10:56:58.995024Z",
   "issues_total": 428,
   "issues_by_type": {
     "consistency_in_language": 13,
@@ -252,6 +252,33 @@
       "en": "Firewalker",
       "pl": "Chodzący po ogniu",
       "lang": "Firewalker"
+    },
+    {
+      "key": "achievement.77.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jinx",
+      "pl": "Pech",
+      "lang": "Jinx"
+    },
+    {
+      "key": "achievement.79.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Marblelous",
+      "pl": "Marmurowy",
+      "lang": "Marblelous"
+    },
+    {
+      "key": "achievement.88.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Turncoat",
+      "pl": "Zdrajca",
+      "lang": "Turncoat"
     },
     {
       "key": "achievement.199.name",
@@ -3683,42 +3710,6 @@
       "lang": "D'oh?"
     },
     {
-      "key": "npc.uzon.keyword_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hold on!",
-      "pl": "Hold na!",
-      "lang": "Hold on!"
-    },
-    {
-      "key": "npc.uzon.stdmod_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hold on!",
-      "pl": "Hold na!",
-      "lang": "Hold on!"
-    },
-    {
-      "key": "npc.uzon_back.keyword_1",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hold on!",
-      "pl": "Hold na!",
-      "lang": "Hold on!"
-    },
-    {
-      "key": "npc.uzon_back.stdmod_3",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hold on!",
-      "pl": "Hold na!",
-      "lang": "Hold on!"
-    },
-    {
       "key": "npc.vascalir.stdmod_4",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3782,15 +3773,6 @@
       "lang": "I see."
     },
     {
-      "key": "npc.yaman.say_13",
-      "category": "npc",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ok then.",
-      "pl": "Ok wtedy.",
-      "lang": "Ok then."
-    },
-    {
       "key": "npc.yaman.say_14",
       "category": "npc",
       "type": "pl_reference_missing_translation",
@@ -3807,6 +3789,24 @@
       "en": "Me Yasir.",
       "pl": "Mnie, mi Yasir.",
       "lang": "Me Yasir."
+    },
+    {
+      "key": "npc.zerbrus.stdmod_14",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fine.",
+      "pl": "Dobrze.",
+      "lang": "Fine."
+    },
+    {
+      "key": "npc.zumtah.farewell_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Muhahaha.",
+      "pl": "Muhahaha!",
+      "lang": "Muhahaha."
     }
   ],
   "length_ratio_issues": [

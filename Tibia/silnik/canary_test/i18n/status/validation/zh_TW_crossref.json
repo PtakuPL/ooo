@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T09:47:44.988070Z",
+  "checked_at": "2026-02-21T10:57:01.171012Z",
   "issues_total": 422,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -174,6 +174,33 @@
       "en": "Firewalker",
       "pl": "Chodzący po ogniu",
       "lang": "Firewalker"
+    },
+    {
+      "key": "achievement.79.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Marblelous",
+      "pl": "Marmurowy",
+      "lang": "Marblelous"
+    },
+    {
+      "key": "achievement.85.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Steampunked",
+      "pl": "Steampunkowy",
+      "lang": "Steampunked"
+    },
+    {
+      "key": "achievement.88.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Turncoat",
+      "pl": "Zdrajca",
+      "lang": "Turncoat"
     },
     {
       "key": "achievement.119.name",
@@ -3585,33 +3612,6 @@
       "en": "Required",
       "pl": "wymagany",
       "lang": "Required"
-    },
-    {
-      "key": "cpp.inspect.required_level",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Required Level",
-      "pl": "wymagany poziom",
-      "lang": "Required Level"
-    },
-    {
-      "key": "cpp.inspect.required_magic_level",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Required Magic Level",
-      "pl": "Wymagany Magia Poziom",
-      "lang": "Required Magic Level"
-    },
-    {
-      "key": "cpp.inspect.rune_spell_name",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rune Spell Name",
-      "pl": "Rune zaklęcie Nazwa",
-      "lang": "Rune Spell Name"
     }
   ],
   "length_ratio_issues": [

@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T09:47:43.792021Z",
+  "checked_at": "2026-02-21T10:57:00.231270Z",
   "issues_total": 415,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -174,6 +174,33 @@
       "en": "Firewalker",
       "pl": "Chodzący po ogniu",
       "lang": "Firewalker"
+    },
+    {
+      "key": "achievement.79.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Marblelous",
+      "pl": "Marmurowy",
+      "lang": "Marblelous"
+    },
+    {
+      "key": "achievement.85.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Steampunked",
+      "pl": "Steampunkowy",
+      "lang": "Steampunked"
+    },
+    {
+      "key": "achievement.88.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Turncoat",
+      "pl": "Zdrajca",
+      "lang": "Turncoat"
     },
     {
       "key": "achievement.119.name",
@@ -3585,33 +3612,6 @@
       "en": "Chchch",
       "pl": "Chch",
       "lang": "Chchch"
-    },
-    {
-      "key": "monster.enraged_squirrel.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chchch",
-      "pl": "Chch",
-      "lang": "Chchch"
-    },
-    {
-      "key": "monster.thieving_squirrel.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chchch",
-      "pl": "Chch",
-      "lang": "Chchch"
-    },
-    {
-      "key": "monster.war_wolf.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
     }
   ],
   "length_ratio_issues": [

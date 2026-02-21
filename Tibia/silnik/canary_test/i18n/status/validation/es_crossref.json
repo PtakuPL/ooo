@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T09:47:31.072274Z",
+  "checked_at": "2026-02-21T10:56:48.732719Z",
   "issues_total": 518,
   "issues_by_type": {
     "consistency_in_language": 73,
@@ -104,6 +104,22 @@
         "monsters:monster.nomad_blue.name",
         "monsters:monster.nomad_female.name",
         "raids:raid.nomad.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Orc",
+      "variants": [
+        "Sambackpack de orco",
+        "orco",
+        "sambackpack de orco"
+      ],
+      "variants_count": 3,
+      "examples": [
+        "monsters:monster.orc.name",
+        "monsters:monster.orc_sambackpack.name",
+        "raids:raid.orc.name"
       ]
     },
     {
@@ -504,20 +520,6 @@
         "monsters:monster.old_giant_spider.name",
         "monsters:monster.giant_spider_wyda.name",
         "monsters:monster.giant_spider.name"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Orc",
-      "variants": [
-        "orco",
-        "sambackpack de orco"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "monsters:monster.orc.name",
-        "monsters:monster.orc_sambackpack.name"
       ]
     },
     {
@@ -4514,15 +4516,6 @@
       "lang": "Orcs"
     },
     {
-      "key": "raid.orc.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Orc",
-      "pl": "Ork",
-      "lang": "Orc"
-    },
-    {
       "key": "raid.bone_beast.name",
       "category": "raids",
       "type": "pl_reference_missing_translation",
@@ -4710,6 +4703,15 @@
       "en": "Failed to generate a Soul Core.",
       "pl": "nieudane do wytwarzać, generować jeden Dusza Core.",
       "lang": "Failed to generate a Soul Core."
+    },
+    {
+      "key": "scripts.find_fiend.level_trivial",
+      "category": "scripts",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Trivial",
+      "pl": "Nie znaczący, banalny",
+      "lang": "Trivial"
     }
   ],
   "length_ratio_issues": [

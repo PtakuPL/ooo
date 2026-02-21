@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T09:47:36.543460Z",
+  "checked_at": "2026-02-21T10:56:53.438849Z",
   "issues_total": 404,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -120,6 +120,33 @@
       "en": "Firewalker",
       "pl": "Chodzący po ogniu",
       "lang": "Firewalker"
+    },
+    {
+      "key": "achievement.77.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jinx",
+      "pl": "Pech",
+      "lang": "Jinx"
+    },
+    {
+      "key": "achievement.79.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Marblelous",
+      "pl": "Marmurowy",
+      "lang": "Marblelous"
+    },
+    {
+      "key": "achievement.88.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Turncoat",
+      "pl": "Zdrajca",
+      "lang": "Turncoat"
     },
     {
       "key": "achievement.119.name",
@@ -3585,33 +3612,6 @@
       "en": "House:",
       "pl": "Dom:",
       "lang": "House:"
-    },
-    {
-      "key": "web.tpl.characters.td_14",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Created:",
-      "pl": "Stworzony:",
-      "lang": "Created:"
-    },
-    {
-      "key": "web.tpl.characters.b_16",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Quests",
-      "pl": "Zadanies",
-      "lang": "Quests"
-    },
-    {
-      "key": "web.tpl.characters.b_17",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Equipment",
-      "pl": "Sprzęt",
-      "lang": "Equipment"
     }
   ],
   "length_ratio_issues": [

@@ -2187,6 +2187,35 @@ except Exception:
 # Preferuj agregację z raportu wielocyklicznego (multi-lang), aby sekcja
 # "Ostatnie 10-20 kluczy" nie wyglądała na zablokowaną na jednym języku.
 try:
+    _recent_lang_filter = set()
+    _recent_cutoff_dt = None
+    try:
+        _lookback_h = float(os.getenv("STATUS_RECENT_KEYS_LOOKBACK_HOURS", "6") or "6")
+    except Exception:
+        _lookback_h = 6.0
+    if _lookback_h <= 0:
+        _lookback_h = 6.0
+    try:
+        _recent_cutoff_dt = datetime.now(timezone.utc) - timedelta(hours=float(_lookback_h))
+    except Exception:
+        _recent_cutoff_dt = None
+
+    try:
+        _profile_path = os.path.join(os.getcwd(), "guardian_profile.json")
+        if os.path.exists(_profile_path):
+            with open(_profile_path, "r", encoding="utf-8") as _pf:
+                _profile = json.load(_pf)
+            if isinstance(_profile, dict):
+                _langs_raw = str(_profile.get("langs", "") or "").strip()
+                if _langs_raw:
+                    _recent_lang_filter = {
+                        _x.strip().lower()
+                        for _x in re.split(r"[\s,;]+", _langs_raw)
+                        if _x and _x.strip()
+                    }
+    except Exception:
+        _recent_lang_filter = set()
+
     recent_report_path = os.path.join(status_translation_dir, "translation_recent_report.jsonl")
     if os.path.exists(recent_report_path):
         with open(recent_report_path, "r", encoding="utf-8") as _rrf:
@@ -2198,8 +2227,19 @@ try:
             except Exception:
                 continue
             _lang = str(_obj.get("language", "") or "")
+            if _recent_lang_filter and str(_lang).lower() not in _recent_lang_filter:
+                continue
             _jfile = str(_obj.get("json_file", "") or "")
             _ts = str(_obj.get("timestamp", "") or "")
+            if _recent_cutoff_dt is not None and _ts:
+                try:
+                    _ts_dt = datetime.fromisoformat(str(_ts).replace("Z", "+00:00"))
+                    if _ts_dt.tzinfo is None:
+                        _ts_dt = _ts_dt.replace(tzinfo=timezone.utc)
+                    if _ts_dt < _recent_cutoff_dt:
+                        continue
+                except Exception:
+                    pass
             _entries = _obj.get("entries", []) if isinstance(_obj.get("entries", []), list) else []
             for _e in _entries:
                 if not isinstance(_e, dict):

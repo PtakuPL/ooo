@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-02-21T10:33:29.569334Z",
-  "cycle": 21,
-  "language": "sr",
-  "json_file": "server.json",
-  "translated": 30,
+  "timestamp": "2026-02-21T10:55:51.851484Z",
+  "cycle": 1,
+  "language": "es",
+  "json_file": "books.json",
+  "translated": 0,
   "placeholders": 0,
-  "guard_fail": 56,
+  "guard_fail": 30,
   "guard": {
-    "placeholder": 2,
+    "placeholder": 0,
     "command": 0,
-    "pipe": 54
+    "pipe": 0
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 310
+  "strict_skipped_done": 1331
 }

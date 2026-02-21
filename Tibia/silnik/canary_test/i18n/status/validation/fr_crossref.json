@@ -4,12 +4,12 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T09:47:32.090808Z",
-  "issues_total": 477,
+  "checked_at": "2026-02-21T10:56:49.671652Z",
+  "issues_total": 478,
   "issues_by_type": {
     "consistency_in_language": 54,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 23
+    "length_ratio_crosscheck": 24
   },
   "consistency_issues": [
     {
@@ -869,6 +869,24 @@
       "en": "Herbicide",
       "pl": "Herbicyd",
       "lang": "Herbicide"
+    },
+    {
+      "key": "achievement.79.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Marblelous",
+      "pl": "Marmurowy",
+      "lang": "Marblelous"
+    },
+    {
+      "key": "achievement.88.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Turncoat",
+      "pl": "Zdrajca",
+      "lang": "Turncoat"
     },
     {
       "key": "achievement.123.name",
@@ -4433,24 +4451,6 @@
       "en": "rock",
       "pl": "głaz",
       "lang": "rock"
-    },
-    {
-      "key": "item.7745.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "lavahole",
-      "pl": "Dziura lawowa",
-      "lang": "lavahole"
-    },
-    {
-      "key": "item.7890.name",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "vines",
-      "pl": "winorośle",
-      "lang": "vines"
     }
   ],
   "length_ratio_issues": [
@@ -4462,6 +4462,15 @@
       "en_len": 12,
       "lang_ratio": 1.583,
       "pl_ratio": 3.417
+    },
+    {
+      "key": "achievement.77.name",
+      "category": "achievements",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 4,
+      "lang_ratio": 3.0,
+      "pl_ratio": 1.0
     },
     {
       "key": "achievement.128.name",

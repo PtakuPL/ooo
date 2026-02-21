@@ -143,11 +143,11 @@
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 477,
+    "issues_total": 478,
     "consistency": 54,
     "pl_reference": 400,
-    "length_ratio": 23,
+    "length_ratio": 24,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T09:47:32.101346Z"
+  "validated_at": "2026-02-21T10:56:49.682639Z"
 }

@@ -1,7 +1,7 @@
 {
-  "timestamp": 1771669710,
+  "timestamp": 1771671189,
   "ttl_sec": 600,
-  "all_project_files": 20635,
+  "all_project_files": 20636,
   "files_by_type": {
     ".yml": 19,
     ".txt": 83,
@@ -24,7 +24,7 @@
     ".sql": 4,
     ".old": 1,
     ".local": 1,
-    ".lua": 5528,
+    ".lua": 5530,
     ".properties": 4,
     ".csv": 7,
     ".20251210_040708": 1,
@@ -42,7 +42,6 @@
     ".20260214_132041": 1,
     ".prev": 1,
     ".20260214_132040": 1,
-    ".w": 1,
     ".corrupted": 1,
     ".corrupted_backup": 2,
     ".cpp": 382,

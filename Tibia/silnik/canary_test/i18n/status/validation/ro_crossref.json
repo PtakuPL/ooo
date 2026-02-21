@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T09:47:38.432641Z",
+  "checked_at": "2026-02-21T10:56:55.045474Z",
   "issues_total": 421,
   "issues_by_type": {
     "consistency_in_language": 6,
@@ -167,6 +167,15 @@
       "en": "Firewalker",
       "pl": "Chodzący po ogniu",
       "lang": "Firewalker"
+    },
+    {
+      "key": "achievement.77.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jinx",
+      "pl": "Pech",
+      "lang": "Jinx"
     },
     {
       "key": "achievement.123.name",
@@ -3695,15 +3704,6 @@
       "en": "Aaag!",
       "pl": "Aaa!",
       "lang": "Aaag!"
-    },
-    {
-      "key": "monster.dragon.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "FCHHHHH",
-      "pl": "Fchhhh",
-      "lang": "FCHHHHH"
     }
   ],
   "length_ratio_issues": [

@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T09:47:43.591461Z",
+  "checked_at": "2026-02-21T10:57:00.025744Z",
   "issues_total": 401,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -147,6 +147,51 @@
       "en": "Firewalker",
       "pl": "Chodzący po ogniu",
       "lang": "Firewalker"
+    },
+    {
+      "key": "achievement.77.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jinx",
+      "pl": "Pech",
+      "lang": "Jinx"
+    },
+    {
+      "key": "achievement.79.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Marblelous",
+      "pl": "Marmurowy",
+      "lang": "Marblelous"
+    },
+    {
+      "key": "achievement.83.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Polisher",
+      "pl": "Polerka",
+      "lang": "Polisher"
+    },
+    {
+      "key": "achievement.86.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Vanity",
+      "pl": "Próżność",
+      "lang": "Vanity"
+    },
+    {
+      "key": "achievement.88.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Turncoat",
+      "pl": "Zdrajca",
+      "lang": "Turncoat"
     },
     {
       "key": "achievement.96.name",
@@ -3567,51 +3612,6 @@
       "en": "Position X",
       "pl": "Pozycja X",
       "lang": "Position X"
-    },
-    {
-      "key": "web.tpl.admin.tools.teleport.label_3",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Position Y",
-      "pl": "Pozycja Y",
-      "lang": "Position Y"
-    },
-    {
-      "key": "web.tpl.admin.tools.teleport.label_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Position Z",
-      "pl": "Stanowisko Z",
-      "lang": "Position Z"
-    },
-    {
-      "key": "web.tpl.faq.form.td_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Question:",
-      "pl": "Zadanieion:",
-      "lang": "Question:"
-    },
-    {
-      "key": "web.tpl.faq.form.td_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Answer:",
-      "pl": "Odpowiedz:",
-      "lang": "Answer:"
-    },
-    {
-      "key": "web.tpl.characters.td_2",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sex:",
-      "pl": "Seks:",
-      "lang": "Sex:"
     }
   ],
   "length_ratio_issues": [

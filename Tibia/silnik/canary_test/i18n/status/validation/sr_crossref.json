@@ -4,11 +4,11 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T09:47:41.753809Z",
-  "issues_total": 107,
+  "checked_at": "2026-02-21T10:56:58.640503Z",
+  "issues_total": 109,
   "issues_by_type": {
     "consistency_in_language": 11,
-    "pl_reference_missing_translation": 68,
+    "pl_reference_missing_translation": 70,
     "length_ratio_crosscheck": 28
   },
   "consistency_issues": [
@@ -177,6 +177,24 @@
     }
   ],
   "pl_reference_issues": [
+    {
+      "key": "achievement.79.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Marblelous",
+      "pl": "Marmurowy",
+      "lang": "Marblelous"
+    },
+    {
+      "key": "achievement.88.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Turncoat",
+      "pl": "Zdrajca",
+      "lang": "Turncoat"
+    },
     {
       "key": "cpp.forge.cores_one",
       "category": "cpp",

@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-21T02:27:07.393721Z",
-  "cycle_counter": 6952,
-  "last_target_key": "ro:html.json",
-  "last_pending_total": 1189,
+  "timestamp": "2026-02-21T02:29:53.977288Z",
+  "cycle_counter": 6955,
+  "last_target_key": "ro:books.json",
+  "last_pending_total": 1052,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 178,
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 55,
+  "cache_cycle": 56,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -221,7 +221,7 @@
     "lang_completion": {
       "pl": 87.87,
       "es": 85.25,
-      "ru": 50.63,
+      "ru": 50.65,
       "ro": 44.07,
       "it": 53.37,
       "sr": 45.66,

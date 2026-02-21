@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T02:28:47.302489Z",
-  "last_cycle": 55,
+  "timestamp": "2026-02-21T02:30:15.512118Z",
+  "last_cycle": 56,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -694,9 +694,55 @@
       "web.tpl.guilds.view.set_8",
       "web.tpl.serverinfo.b_9"
     ],
-    "it|html.json": [],
-    "ru|html.json": [],
-    "ro|books.json": [],
+    "it|html.json": [
+      "html.balance.html.text1",
+      "html.points.html.text2",
+      "html.statistics.html.text1",
+      "html.statistics.html.text2",
+      "html.statistics.html.text3",
+      "html.web_status.text2",
+      "web.tpl.admin.open_source.b_2",
+      "web.tpl.guilds.list.set_2",
+      "web.tpl.guilds.list.set_4",
+      "web.tpl.guilds.view.set_10",
+      "web.tpl.guilds.view.set_6",
+      "web.tpl.guilds.view.set_8"
+    ],
+    "ru|html.json": [
+      "html.account.characters.create.html.text4",
+      "html.account.logout.html.text1",
+      "html.achievements.html.text1",
+      "html.achievements.html.text2",
+      "html.base.html.text4",
+      "html.boostablebosses.html.text3",
+      "html.easyimage.text5",
+      "html.enterkey.text4",
+      "html.inlineall.text2",
+      "html.inlineall.text4",
+      "html.inlinebycode.text5",
+      "html.jquery.text5",
+      "html.paymentconfirm.html.text2",
+      "html.toolbar.text4",
+      "web.tpl.account.change_email.set_1",
+      "web.tpl.account.characters.create.b_3",
+      "web.tpl.admin.tools.teleport.label_2",
+      "web.tpl.admin.tools.teleport.label_3",
+      "web.tpl.admin.tools.teleport.label_4",
+      "web.tpl.characters.b_16",
+      "web.tpl.faq.form.td_1",
+      "web.tpl.gallery.form.td_2",
+      "web.tpl.guilds.manager.b_9",
+      "web.tpl.guilds.manager.set_1",
+      "web.tpl.highscores.b_6",
+      "web.tpl.monsters.th_8",
+      "web.tpl.online.b_3",
+      "web.tpl.online.b_6",
+      "web.tpl.online.set_3",
+      "web.tpl.team.set_1"
+    ],
+    "ro|books.json": [
+      "book.otbm.diary_of_hengis_wulfsonnni_can"
+    ],
     "sv|items.json": [
       "item.10856.name",
       "item.10857.name",

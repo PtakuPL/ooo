@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-21T02:28:59.226659Z",
+  "timestamp": "2026-02-21T02:30:24.118449Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -233,10 +233,10 @@
       0
     ]
   ],
-  "cache_hits": 52,
-  "cache_misses": 0,
-  "file_cache_hits": 1976,
-  "file_cache_misses": 0,
+  "cache_hits": 49,
+  "cache_misses": 3,
+  "file_cache_hits": 1973,
+  "file_cache_misses": 3,
   "langs": {
     "ar": {
       "sig": [
@@ -15975,7 +15975,7 @@
         [
           "html.json",
           1,
-          1771637659907678587,
+          1771640980914928954,
           105915
         ],
         [
@@ -16318,7 +16318,7 @@
         "html.json": {
           "sig": [
             1,
-            1771637659907678587,
+            1771640980914928954,
             105915
           ],
           "row": {
@@ -26877,7 +26877,7 @@
         [
           "books.json",
           1,
-          1771637685455175833,
+          1771641015530930412,
           307415
         ],
         [
@@ -27140,7 +27140,7 @@
         "books.json": {
           "sig": [
             1,
-            1771637685455175833,
+            1771641015530930412,
             307415
           ],
           "row": {
@@ -27720,8 +27720,8 @@
         [
           "html.json",
           1,
-          1771637665914984059,
-          115617
+          1771640990038954965,
+          115665
         ],
         [
           "items.json",
@@ -27879,8 +27879,8 @@
         "language_name": "Rosyjski",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 27141,
-        "english_copy_keys": 1470,
+        "translated_keys": 27140,
+        "english_copy_keys": 1471,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 50.65,
@@ -27888,8 +27888,8 @@
         "server_translated": 24340,
         "server_pct": 48.94,
         "client_keys": 3855,
-        "client_translated": 2801,
-        "client_pct": 72.66
+        "client_translated": 2800,
+        "client_pct": 72.63
       },
       "files": {
         "achievements.json": {
@@ -28063,13 +28063,13 @@
         "html.json": {
           "sig": [
             1,
-            1771637665914984059,
-            115617
+            1771640990038954965,
+            115665
           ],
           "row": {
             "total_reference_keys": 1495,
-            "translated_keys": 733,
-            "english_copy_keys": 6,
+            "translated_keys": 732,
+            "english_copy_keys": 7,
             "missing_keys": 0,
             "missing_files": 0
           }

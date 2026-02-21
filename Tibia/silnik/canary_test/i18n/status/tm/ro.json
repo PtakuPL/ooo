@@ -75494,5 +75494,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T02:18:22.225734Z"
+  },
+  "otclient_modules.character_otui.tr_67": {
+    "src_hash": "d2159e19de13dcbaa524062d116d826e",
+    "text": "Insigne de cont",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:20:01.245793Z"
+  },
+  "otclient_modules.character_otui.tr_7": {
+    "src_hash": "32ce041007058889bd9ccb8b22ade877",
+    "text": "Farmec",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:20:03.645727Z"
+  },
+  "otclient_modules.character_otui.tr_74": {
+    "src_hash": "ae8faf2882fb1dfc7183a0a7a6784f9a",
+    "text": "Pumn",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:20:03.646391Z"
+  },
+  "otclient_modules.character_otui.tr_75": {
+    "src_hash": "02700e454d679f31f27c6f0768986dd1",
+    "text": "Magie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:20:03.646635Z"
   }
 }

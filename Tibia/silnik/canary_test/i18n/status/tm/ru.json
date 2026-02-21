@@ -40526,5 +40526,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T02:16:39.000600Z"
+  },
+  "questlog.quest_11.mission_17.state_1": {
+    "src_hash": "5dd6aee1a88cd79fe758283051bebb9c",
+    "text": "Вы успешно охотились на 300 горгулий. Если вы хотите, вы можете выполнить это задание еще раз.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:19:44.122437Z"
   }
 }

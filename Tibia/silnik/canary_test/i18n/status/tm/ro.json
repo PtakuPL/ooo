@@ -75030,5 +75030,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:02:51.663235Z"
+  },
+  "otclient_modules.character_otui.tr_51": {
+    "src_hash": "6606abcb72d0340e9ad67002086c1617",
+    "text": "Cauza morții",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:06:13.300136Z"
+  },
+  "otclient_modules.character_otui.tr_57": {
+    "src_hash": "3b611ac0f7b46306cfea871d1ae89e30",
+    "text": "Lovitură critică:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:06:17.388715Z"
+  },
+  "otclient_modules.character_otui.tr_58": {
+    "src_hash": "74c05658c75877e407db49a632d007c0",
+    "text": "Preparate:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:06:17.388934Z"
   }
 }

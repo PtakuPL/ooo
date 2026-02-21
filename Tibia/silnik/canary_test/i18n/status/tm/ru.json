@@ -39334,5 +39334,29 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:51:25.517624Z"
+  },
+  "questlog.quest_11.mission_13.state_2": {
+    "src_hash": "d8cb6c62aca647f0ebd040786a6d177e",
+    "text": "Вы успешно охотились на 300 корявых гончих.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:05:52.167992Z"
+  },
+  "questlog.quest_11.mission_14.state_1": {
+    "src_hash": "4b3fa88ea1201116e3e0480e1e953a52",
+    "text": "Вы успешно охотились на 300 террамитов. Если вы хотите, вы можете выполнить это задание еще раз.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:05:54.651774Z"
+  },
+  "questlog.quest_11.mission_14.state_2": {
+    "src_hash": "2390881906b8dd350356af833bfb3532",
+    "text": "Вы успешно охотились на 300 термитников.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:05:54.652257Z"
   }
 }

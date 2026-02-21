@@ -1,8 +1,8 @@
 {
-  "total_cycles": 16,
+  "total_cycles": 17,
   "mode": "AUTO_TRANSLATE",
-  "category": "ro",
-  "last_update": "2026-02-21T01:05:16.002745",
+  "category": "it",
+  "last_update": "2026-02-21T01:06:45.974299",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,105 +26,14 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "ro",
-    "json_file": "scripts.json",
-    "keys_to_translate": 1228,
-    "guard_fail": 15,
+    "language": "it",
+    "json_file": "raids.json",
+    "keys_to_translate": 128,
+    "guard_fail": 24,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 15,
-    "recent_examples": [
-      {
-        "key": "scripts.action_horn.say_4",
-        "en": "Grr.",
-        "translated": "Grr.",
-        "source": "tm"
-      },
-      {
-        "key": "scripts.actions_bosses_levers.say_1",
-        "en": "SPLASH!",
-        "translated": "SPLASH!",
-        "source": "tm"
-      },
-      {
-        "key": "scripts.actions_demon_oak.say_1",
-        "en": "-krrrrak-",
-        "translated": "-krrrrak-",
-        "source": "tm"
-      },
-      {
-        "key": "scripts.banana_chocolate_shake.say_1",
-        "en": "Slurp.",
-        "translated": "Slurp.",
-        "source": "tm"
-      },
-      {
-        "key": "scripts.blessed_steak.say_1",
-        "en": "Chomp.",
-        "translated": "Chomp.",
-        "source": "tm"
-      },
-      {
-        "key": "scripts.blueberry_cupcake.say_1",
-        "en": "Mmmm.",
-        "translated": "Mmmm.",
-        "source": "tm"
-      },
-      {
-        "key": "scripts.carrot_cake.say_1",
-        "en": "Mmmm.",
-        "translated": "Mmmm.",
-        "source": "tm"
-      },
-      {
-        "key": "scripts.foods.sound_yum",
-        "en": "Yum.",
-        "translated": "Hum.",
-        "source": "simple"
-      },
-      {
-        "key": "scripts.veggie_casserole.say_1",
-        "en": "Yum.",
-        "translated": "Hum.",
-        "source": "simple"
-      },
-      {
-        "key": "scripts.construction_kits.horse",
-        "en": "What a cute horse - and just the right thing to place into this cute room.",
-        "translated": "Ce cal dr\u0103gu\u021b - \u0219i exact ceea ce trebuie plasat \u00een aceast\u0103 camer\u0103 dr\u0103gu\u021b\u0103.",
-        "source": "google_translate"
-      },
-      {
-        "key": "scripts.construction_kits.jack_amphora",
-        "en": "Jack: Trying to get rid of your junk in my house? Do I look like I need such a... 'vase'?",
-        "translated": "Jack: \u00cencerci s\u0103 scapi de gunoaiele tale din casa mea? Parc\u0103 am nevoie de un astfel de... 'vase'?",
-        "source": "google_translate"
-      },
-      {
-        "key": "scripts.construction_kits.jack_chair",
-        "en": "Jack: Yeah uhm... impressive chair. Now would you please remove it? Thanks.",
-        "translated": "Jack: Da, uhm... scaun impresionant. Acum ai vrea s\u0103-l elimina\u021bi? Mul\u0163umesc.",
-        "source": "google_translate"
-      },
-      {
-        "key": "scripts.construction_kits.jack_globe",
-        "en": "Jack: Nice, a... what is this actually?",
-        "translated": "Jack: Frumos, a... ce este asta de fapt?",
-        "source": "google_translate"
-      },
-      {
-        "key": "scripts.construction_kits.jack_horse",
-        "en": "Jack: A rocking horse? What's wrong with you.",
-        "translated": "Jack: Un cal balansoar? Ce e \u00een neregul\u0103 cu tine.",
-        "source": "google_translate"
-      },
-      {
-        "key": "scripts.construction_kits.red_chair",
-        "en": "The red cushioned chair looks quite comfy in that corner.",
-        "translated": "Scaunul ro\u0219u cu perne arat\u0103 destul de confortabil \u00een acel col\u021b.",
-        "source": "google_translate"
-      }
-    ]
+    "recent_translated": 0,
+    "recent_examples": []
   },
   "idle": {
     "new_files_detected": 152,

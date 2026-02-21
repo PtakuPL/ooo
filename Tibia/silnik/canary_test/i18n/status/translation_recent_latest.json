@@ -1,102 +1,132 @@
 {
-  "timestamp": "2026-02-21T00:02:51.795152Z",
-  "language": "ro",
-  "json_file": "scripts.json",
-  "translated": 15,
+  "timestamp": "2026-02-21T00:06:44.421872Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 23,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "scripts.action_horn.say_4",
-      "en": "Grr.",
-      "translated": "Grr.",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "scripts.actions_bosses_levers.say_1",
-      "en": "SPLASH!",
-      "translated": "SPLASH!",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     },
     {
-      "key": "scripts.actions_demon_oak.say_1",
-      "en": "-krrrrak-",
-      "translated": "-krrrrak-",
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
       "source": "tm"
     },
     {
-      "key": "scripts.banana_chocolate_shake.say_1",
-      "en": "Slurp.",
-      "translated": "Slurp.",
+      "key": "npc.captain_haba_open_sea.say_3",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
       "source": "tm"
     },
     {
-      "key": "scripts.blessed_steak.say_1",
-      "en": "Chomp.",
-      "translated": "Chomp.",
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
       "source": "tm"
     },
     {
-      "key": "scripts.blueberry_cupcake.say_1",
-      "en": "Mmmm.",
-      "translated": "Mmmm.",
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
       "source": "tm"
     },
     {
-      "key": "scripts.carrot_cake.say_1",
-      "en": "Mmmm.",
-      "translated": "Mmmm.",
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
       "source": "tm"
     },
     {
-      "key": "scripts.foods.sound_yum",
-      "en": "Yum.",
-      "translated": "Hum.",
-      "source": "simple"
+      "key": "npc.elyen_ravenlock.voice_2",
+      "en": "<chants> Re Ha, Omrah, Tan Ra...",
+      "translated": "<cánticos> Re Ha, Omrah, Tan Ra...",
+      "source": "tm"
     },
     {
-      "key": "scripts.veggie_casserole.say_1",
-      "en": "Yum.",
-      "translated": "Hum.",
-      "source": "simple"
+      "key": "npc.jeronimo.say_3",
+      "en": "You bought {{}} {}x for {} {Bar of Gold(s)}!",
+      "translated": "¡Compraste {{}} {}x por {} {Bar of Gold(s)}!",
+      "source": "tm"
     },
     {
-      "key": "scripts.construction_kits.horse",
-      "en": "What a cute horse - and just the right thing to place into this cute room.",
-      "translated": "Ce cal drăguț - și exact ceea ce trebuie plasat în această cameră drăguță.",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_3",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "scripts.construction_kits.jack_amphora",
-      "en": "Jack: Trying to get rid of your junk in my house? Do I look like I need such a... 'vase'?",
-      "translated": "Jack: Încerci să scapi de gunoaiele tale din casa mea? Parcă am nevoie de un astfel de... 'vase'?",
-      "source": "google_translate"
+      "key": "npc.lardoc_bashsmite.multi_9",
+      "en": "We hauled our explosives down there - and I mean ALL our explosives. Dangerous? Indeed, so we positioned someone down there to actually watch this depot. ...",
+      "translated": "Llevamos nuestros explosivos hasta allí... y me refiero a TODOS nuestros explosivos. ¿Peligroso? De hecho, colocamos a alguien allí para vigilar este depósito. ...",
+      "source": "tm"
     },
     {
-      "key": "scripts.construction_kits.jack_chair",
-      "en": "Jack: Yeah uhm... impressive chair. Now would you please remove it? Thanks.",
-      "translated": "Jack: Da, uhm... scaun impresionant. Acum ai vrea să-l eliminați? Mulţumesc.",
-      "source": "google_translate"
+      "key": "npc.mother_of_jack.voice_1",
+      "en": "JAAAAACK? EVERYTHING ALRIGHT DOWN THERE?",
+      "translated": "¿JAAAAACK? ¿TODO BIEN AHÍ ABAJO?",
+      "source": "tm"
     },
     {
-      "key": "scripts.construction_kits.jack_globe",
-      "en": "Jack: Nice, a... what is this actually?",
-      "translated": "Jack: Frumos, a... ce este asta de fapt?",
-      "source": "google_translate"
+      "key": "npc.navigator.multi_1",
+      "en": "I control EVERYTHING from this room, navigating the fate of this land for more than a century now. Can you see all these funnels? My voice travels through them and throughout everything down here! ...",
+      "translated": "Controlo TODO desde esta sala, navegando por el destino de esta tierra desde hace más de un siglo. ¿Puedes ver todos estos embudos? ¡Mi voz viaja a través de ellos y por todo lo que hay aquí abajo! ...",
+      "source": "tm"
     },
     {
-      "key": "scripts.construction_kits.jack_horse",
-      "en": "Jack: A rocking horse? What's wrong with you.",
-      "translated": "Jack: Un cal balansoar? Ce e în neregulă cu tine.",
-      "source": "google_translate"
+      "key": "npc.navigator.multi_2",
+      "en": "The stones on the beach? The trader up there? That was ME ALL THE TIME! I lured YOU into creating all this chaos up there and down here! ...",
+      "translated": "¿Las piedras en la playa? ¿El comerciante de ahí arriba? ¡Ese era YO TODO EL TIEMPO! ¡Te atraje a TI para que crearas todo este caos allá arriba y aquí abajo! ...",
+      "source": "tm"
     },
     {
-      "key": "scripts.construction_kits.red_chair",
-      "en": "The red cushioned chair looks quite comfy in that corner.",
-      "translated": "Scaunul roșu cu perne arată destul de confortabil în acel colț.",
-      "source": "google_translate"
+      "key": "npc.omrabas.multi_35",
+      "en": "In the Dragonbone Cemetery, OBVIOUSLY! Must I explain EVERYTHING to you? Now go!",
+      "translated": "En el Cementerio Dragonbone, ¡OBVIAMENTE! ¿Tengo que explicarte TODO? ¡Ahora vete!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.omrabas.multi_82",
+      "en": "Now... get out! And never, ever, dare come back! You ruined EVERYTHING!",
+      "translated": "Ahora... ¡fuera! ¡Y nunca jamás te atrevas a volver! ¡Arruinaste TODO!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.omrabas.voice_2",
+      "en": "He will PAY for this... They will ALL pay!",
+      "translated": "Él PAGARÁ por esto... ¡TODOS pagarán!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.pythius_the_rotten.stdmod_12",
+      "en": "EVERYTHING YOU CARRY WITH YOU CAN ALSO BE FOUND IN MY {TREASURE}. BRING ME SOMETHING I DON'T OWN!!!",
+      "translated": "TODO LO QUE LLEVAS CONTIGO TAMBIÉN LO PUEDES ENCONTRAR EN MI {TREASURE}. ¡¡¡TRAEME ALGO QUE NO TENGO!!!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.raymond_striker.multi_21",
+      "en": "In the tavern, the pirates feel safe and plan their next strikes. Study ALL of their maps and plans lying around ...",
+      "translated": "En la taberna, los piratas se sienten seguros y planean sus próximos ataques. Estudia TODOS sus mapas y planos que hay por ahí...",
+      "source": "tm"
+    },
+    {
+      "key": "npc.sane_mage.multi_5",
+      "en": "At least I have my trusty {servants} helping me to clean up. They do ALL the work. Removing ALL the slime. At least they're working as intended. I designed them, you know.",
+      "translated": "Al menos tengo a mi confiable {servants} ayudándome a limpiar. Ellos hacen TODO el trabajo. Quitando TODA la baba. Al menos están funcionando según lo previsto. Yo los diseñé, ¿sabes?",
+      "source": "tm"
     }
   ]
 }

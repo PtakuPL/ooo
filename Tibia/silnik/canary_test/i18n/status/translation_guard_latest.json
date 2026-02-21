@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-21T00:02:53.064461Z",
-  "cycle": 16,
+  "timestamp": "2026-02-21T00:06:18.234444Z",
+  "cycle": 17,
   "language": "ro",
-  "json_file": "scripts.json",
-  "translated": 15,
+  "json_file": "otclient_modules.json",
+  "translated": 6,
   "placeholders": 0,
-  "guard_fail": 15,
+  "guard_fail": 24,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 959
+  "strict_skipped_done": 798
 }

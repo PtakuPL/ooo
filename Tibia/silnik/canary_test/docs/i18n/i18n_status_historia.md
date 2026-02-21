@@ -1,23 +1,23 @@
 # i18n — Historia postępu
 
-> Ostatnia aktualizacja: 2026-02-21T18:29:02Z  
+> Ostatnia aktualizacja: 2026-02-21T20:40:28Z  
 > Globalny coverage: **14.01%**  
-> Repair backlog: **45245** kluczy
+> Repair backlog: **45240** kluczy
 
 ---
 
-## 📅 Dzisiaj: 2026-02-21 — progresywne (13h / 10h)
+## 📅 Dzisiaj: 2026-02-21 — progresywne (14h / 10h)
 
 | Metryka | Wartość |
 |---------|---------|
 | Kluczy przetłumaczonych | **18,993** |
-| Throughput | 1,461.0 kluczy/h |
+| Throughput | 1,356.6 kluczy/h |
 | Guard fail rate | 70.09% (44,511 / 63,504) |
-| Cykli workera | 410 |
+| Cykli workera | 411 |
 | Coverage | 13.93% → 14.01% |
-| Repair queue | 37,786 → 45,245 (+7459) |
+| Repair queue | 37,786 → 45,240 (+7454) |
 
-**Tryby workera:** AUTO_TRANSLATE: 1726
+**Tryby workera:** AUTO_TRANSLATE: 1727
 
 **Migracja:** 15/15 plików (100.0%)
 
@@ -26,13 +26,13 @@
 
 | Język | Przetłum. | Guard fail | Coverage |
 |-------|-----------|------------|----------|
-| ru | 5,032 | 2201 | 50.82% |
-| it | 3,202 | 2095 | 54.91% |
+| ru | 5,032 | 2201 | 50.83% |
+| it | 3,202 | 2095 | 54.99% |
 | pl | 2,794 | 22671 | 88.15% |
-| es | 2,270 | 11944 | 85.25% |
-| sr | 1,899 | 1285 | 46.15% |
-| ro | 1,866 | 3567 | 44.16% |
-| sv | 1,279 | 705 | 30.32% |
+| es | 2,270 | 11944 | 85.22% |
+| sr | 1,899 | 1285 | 46.13% |
+| ro | 1,866 | 3567 | 44.15% |
+| sv | 1,279 | 705 | 30.31% |
 | cs | 30 | 0 | 6.09% |
 
 </details>
@@ -70,21 +70,7 @@
 | 15:28-16:28 | 2,326 | 5452 | 70.1% | 7440 | -86 | 53 |
 | 16:28-17:28 | 2,254 | 5514 | 70.98% | 6128 | -29 | 53 |
 | 17:29-18:29 | 1,785 | 2573 | 59.04% | 3934 | -7 | 42 |
-
-
-<details><summary>Szczegóły per język (ostatnia godzina)</summary>
-
-| Język | Przetłum. | Guard fail | Coverage |
-|-------|-----------|------------|----------|
-| ru | 502 | 149 | 50.82% |
-| it | 292 | 256 | 54.91% |
-| sr | 233 | 134 | 46.15% |
-| es | 208 | 638 | 85.25% |
-| ro | 205 | 345 | 44.16% |
-| pl | 193 | 963 | 88.15% |
-| sv | 152 | 88 | 30.32% |
-
-</details>
+| 19:40-20:40 | 0 | 0 | 0.0% | 0 | -5 | 1 |
 
 
 ---

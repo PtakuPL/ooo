@@ -26601,11 +26601,11 @@
   },
   "npc.andrew_lyze.say_14": {
     "src_hash": "69ce05199222d304e8f82cb747eed8ab",
-    "text": "Don't waste my time.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "No me hagas perder el tiempo.",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T06:49:02.531356Z"
+    "updated_at": "2026-02-21T00:57:38.662540Z"
   },
   "npc.appaloosa.say_5": {
     "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
@@ -154806,5 +154806,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:26:41.760451Z"
+  },
+  "npc.an_orc_guard.voice_2": {
+    "src_hash": "f694fc8565fd140d05b42787edf0207b",
+    "text": "Fetchi maruk buta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:57:34.536973Z"
   }
 }

@@ -75198,5 +75198,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:53:33.050479Z"
+  },
+  "otclient_modules.character_otui.tr_78": {
+    "src_hash": "112b314742b7a70942d64141ba000b08",
+    "text": "Titlul de loialitate",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:56:33.735677Z"
+  },
+  "otclient_modules.skills_otui.tr_23": {
+    "src_hash": "3b611ac0f7b46306cfea871d1ae89e30",
+    "text": "Lovitură critică:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:56:33.874038Z"
+  },
+  "otclient_modules.character_otui.tr_59": {
+    "src_hash": "98ef9ca7a32a6e72d8f35a474b2c183c",
+    "text": "Reducerea daunelor:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:56:45.980053Z"
+  },
+  "otclient_modules.character_otui.tr_6": {
+    "src_hash": "256f9f5a1e315939ca79797b7339e6fd",
+    "text": "Expansiunea farmecului:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:56:49.911343Z"
+  },
+  "otclient_modules.character_otui.tr_60": {
+    "src_hash": "4b990369257afa83eba3739eea689427",
+    "text": "Binecuvântări:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:56:49.911887Z"
   }
 }

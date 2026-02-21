@@ -33,12 +33,12 @@
     "issues_count": 1417
   },
   "es": {
-    "last_cycle": "2026-02-21T00:49:58.741661Z",
-    "last_translated": 3,
-    "total_suspicious": 72586,
-    "total_rejected": 2385,
-    "total_gt_guard_fail": 23644,
-    "cycles": 1751,
+    "last_cycle": "2026-02-21T00:57:41.217758Z",
+    "last_translated": 9,
+    "total_suspicious": 72656,
+    "total_rejected": 2388,
+    "total_gt_guard_fail": 23678,
+    "cycles": 1752,
     "quality_score": 60.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 350877
@@ -66,23 +66,23 @@
     "issues_count": 2470
   },
   "it": {
-    "last_cycle": "2026-02-21T00:50:31.317772Z",
-    "last_translated": 13,
+    "last_cycle": "2026-02-21T00:56:16.881035Z",
+    "last_translated": 30,
     "total_suspicious": 8993,
     "total_rejected": 917,
     "total_gt_guard_fail": 3160,
-    "cycles": 510,
+    "cycles": 511,
     "quality_score": 75.0,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 77055
   },
   "ru": {
-    "last_cycle": "2026-02-21T00:50:38.914043Z",
-    "last_translated": 30,
-    "total_suspicious": 50215,
-    "total_rejected": 968,
-    "total_gt_guard_fail": 2609,
-    "cycles": 486,
+    "last_cycle": "2026-02-21T00:56:29.414829Z",
+    "last_translated": 19,
+    "total_suspicious": 50243,
+    "total_rejected": 979,
+    "total_gt_guard_fail": 2620,
+    "cycles": 487,
     "quality_score": 69.1,
     "last_audit": "2026-02-20T22:12:42.470260Z",
     "issues_count": 214898
@@ -550,12 +550,12 @@
     "issues_count": 958
   },
   "ro": {
-    "last_cycle": "2026-02-21T00:53:33.314582Z",
-    "last_translated": 14,
-    "total_suspicious": 91643,
-    "total_rejected": 3429,
-    "total_gt_guard_fail": 5646,
-    "cycles": 456,
+    "last_cycle": "2026-02-21T00:56:50.058575Z",
+    "last_translated": 6,
+    "total_suspicious": 91659,
+    "total_rejected": 3445,
+    "total_gt_guard_fail": 5670,
+    "cycles": 457,
     "quality_score": 61.5,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 190054

@@ -176894,5 +176894,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T02:08:45.654087Z"
+  },
+  "monster.parrot.voice_3": {
+    "src_hash": "06186a045e589d182181f4a9ba76e2c0",
+    "text": "Сцреецх!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:20:45.056270Z"
+  },
+  "monster.crystal_spider.voice_1": {
+    "src_hash": "06186a045e589d182181f4a9ba76e2c0",
+    "text": "Сцреецх!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:20:45.176094Z"
   }
 }

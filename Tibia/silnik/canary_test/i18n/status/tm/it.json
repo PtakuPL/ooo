@@ -82918,5 +82918,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T00:31:24.129338Z"
+  },
+  "data.otservbr.global.npc.cobra.L53.1172": {
+    "src_hash": "064cd71852afeb595ee8028d8028b756",
+    "text": "Avventurati sul sentiero della decadenza!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.277064Z"
+  },
+  "data.otservbr.global.npc.lailene.L57.311": {
+    "src_hash": "5cc6d07cc263deba83a86192ba6e33b2",
+    "text": "Ci vediamo, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.641629Z"
+  },
+  "data.otservbr.global.npc.lailene.L58.312": {
+    "src_hash": "6dbff9fca0a1c5584ed77bc13d971861",
+    "text": "Qui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.642154Z"
+  },
+  "data.otservbr.global.npc.lardoc.bashsmite.L259.1202": {
+    "src_hash": "b211bcadeb014b868626eda4e6f51196",
+    "text": "Dato che ovviamente non sei uno dei miei parenti che mi fa visita, attesa da tempo, dovremmo ricevere subito {work}. Vedremo se riuscirai a dimostrare il tuo {worth} alla nostra alleanza.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.645854Z"
+  },
+  "data.otservbr.global.npc.lazaran.L176.388": {
+    "src_hash": "96372361df95655d9e060b93114a4d35",
+    "text": "Mi saluti. Non sei nemico della tribù.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.650102Z"
+  },
+  "data.otservbr.global.npc.lea.L62.1369": {
+    "src_hash": "18a02a3cb18889047bcaf57aa5d58265",
+    "text": "Abbi cura di te durante i tuoi viaggi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.652935Z"
+  },
+  "data.otservbr.global.npc.lector.L56.1219": {
+    "src_hash": "e7e8376c8ebc0e34eb5dce943e3eb35e",
+    "text": "Per favore, vieni a comprare di nuovo, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.655617Z"
+  },
+  "data.otservbr.global.npc.lector.L57.1220": {
+    "src_hash": "9d91a8c725ee133251c60e4a29425753",
+    "text": "Certo, dai un'occhiata alla mia carne.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.657269Z"
+  },
+  "data.otservbr.global.npc.lee.delle.L151.409": {
+    "src_hash": "6e70375bf1f78fb9f8073b89a5590f0b",
+    "text": "Ciao, ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.659278Z"
+  },
+  "data.otservbr.global.npc.lee.delle.L152.410": {
+    "src_hash": "2b98a21dd3ecc8b73f39abd3b404c6ba",
+    "text": "Certo, dai un'occhiata, tesoro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.660790Z"
+  },
+  "data.otservbr.global.npc.lee.delle.L153.411": {
+    "src_hash": "3fce01a91a23475db857bb6058700e97",
+    "text": "Piacere di vederti, |PLAYERNAME|! Chiedimi un {trade} se vuoi vedere le mie offerte esclusive.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.664348Z"
+  },
+  "data.otservbr.global.npc.liane.L95.484": {
+    "src_hash": "32df9254b9776388eb1c634b940522f1",
+    "text": "Ciao. Come posso aiutarti |PLAYERNAME|? Chiedimi uno scambio se vuoi comprare qualcosa. Posso anche spiegare il sistema {mail}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.674467Z"
+  },
+  "data.otservbr.global.npc.liane.L96.485": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "È stato un piacere aiutarti, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.676095Z"
+  },
+  "data.otservbr.global.npc.liane.L97.486": {
+    "src_hash": "ff286ad0325b0dfb6ab6df93be4c1201",
+    "text": "È stato un piacere aiutarti, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.677566Z"
+  },
+  "data.otservbr.global.npc.liane.L98.487": {
+    "src_hash": "231110808aaf83a7bbb0a5a0b60b0b78",
+    "text": "Qui. Non dimenticare che se vuoi spedire un pacco devi acquistare anche un'etichetta. Scrivi sempre il nome dello {receiver} nella prima riga.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.683338Z"
+  },
+  "data.otservbr.global.npc.lily.L283.121": {
+    "src_hash": "31c71f68de879b24caa0e11329bba5c5",
+    "text": "Che Crunor ti benedica!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.685614Z"
+  },
+  "data.otservbr.global.npc.lily.L284.122": {
+    "src_hash": "061e070f6ec7fc313e0c011b3c89591f",
+    "text": "Abbi cura di te, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:41:18.688825Z"
   }
 }

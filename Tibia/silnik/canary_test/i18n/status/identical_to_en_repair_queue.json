@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-21T00:37:17.306555Z",
+  "timestamp": "2026-02-21T00:42:15.526739Z",
   "priority_langs": [
     "es",
     "pl",
@@ -73,11 +73,11 @@
     "de": 659,
     "fr": 578,
     "hu": 663,
-    "it": 421,
+    "it": 420,
     "nl": 691,
     "pt": 620,
     "ro": 421,
-    "ru": 94,
+    "ru": 116,
     "sk": 663,
     "tr": 542,
     "ar": 904,
@@ -616,7 +616,7 @@
     {
       "lang": "it",
       "json_file": "server.json",
-      "identical_to_en": 58,
+      "identical_to_en": 57,
       "domain_priority": 1
     },
     {
@@ -934,13 +934,13 @@
     {
       "lang": "ru",
       "json_file": "npc.json",
-      "identical_to_en": 26,
+      "identical_to_en": 4,
       "domain_priority": 0
     },
     {
       "lang": "ru",
       "json_file": "server.json",
-      "identical_to_en": 11,
+      "identical_to_en": 55,
       "domain_priority": 1
     },
     {

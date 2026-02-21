@@ -33,12 +33,12 @@
     "issues_count": 1417
   },
   "es": {
-    "last_cycle": "2026-02-21T02:46:13.017030Z",
-    "last_translated": 2,
-    "total_suspicious": 75267,
-    "total_rejected": 2555,
-    "total_gt_guard_fail": 25134,
-    "cycles": 1807,
+    "last_cycle": "2026-02-21T02:50:50.236337Z",
+    "last_translated": 7,
+    "total_suspicious": 75337,
+    "total_rejected": 2558,
+    "total_gt_guard_fail": 25170,
+    "cycles": 1808,
     "quality_score": 60.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 350877
@@ -66,24 +66,24 @@
     "issues_count": 2470
   },
   "it": {
-    "last_cycle": "2026-02-21T02:46:53.081575Z",
-    "last_translated": 9,
-    "total_suspicious": 9325,
+    "last_cycle": "2026-02-21T02:48:21.559577Z",
+    "last_translated": 30,
+    "total_suspicious": 9330,
     "total_rejected": 980,
     "total_gt_guard_fail": 3414,
-    "cycles": 535,
+    "cycles": 536,
     "quality_score": 74.7,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 77055
   },
   "ru": {
-    "last_cycle": "2026-02-21T02:47:03.989441Z",
+    "last_cycle": "2026-02-21T02:48:36.910452Z",
     "last_translated": 30,
-    "total_suspicious": 51792,
+    "total_suspicious": 52302,
     "total_rejected": 1025,
     "total_gt_guard_fail": 2711,
-    "cycles": 511,
-    "quality_score": 70.6,
+    "cycles": 512,
+    "quality_score": 70.7,
     "last_audit": "2026-02-20T22:12:42.470260Z",
     "issues_count": 214898
   },
@@ -550,12 +550,12 @@
     "issues_count": 958
   },
   "ro": {
-    "last_cycle": "2026-02-21T02:30:15.534628Z",
-    "last_translated": 1,
-    "total_suspicious": 92045,
-    "total_rejected": 3670,
-    "total_gt_guard_fail": 6126,
-    "cycles": 480,
+    "last_cycle": "2026-02-21T02:47:58.526491Z",
+    "last_translated": 11,
+    "total_suspicious": 92112,
+    "total_rejected": 3678,
+    "total_gt_guard_fail": 6145,
+    "cycles": 481,
     "quality_score": 62.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 190054

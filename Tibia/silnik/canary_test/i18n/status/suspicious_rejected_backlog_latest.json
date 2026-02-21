@@ -1,35 +1,20 @@
 {
-  "timestamp": "2026-02-21T02:47:02.468537Z",
-  "language": "ru",
+  "timestamp": "2026-02-21T02:49:18.322741Z",
+  "language": "es",
   "json_file": "npc.json",
   "lookback_lines": 8000,
   "min_hits": 2,
   "max_keys": 400,
   "issue_types_filter": [],
-  "selected_keys": 4,
+  "selected_keys": 1,
   "issue_type_totals": {
-    "mixed_scripts": 21
+    "identical_to_en": 265
   },
   "keys": [
     {
-      "key": "npc.a_dead_bureaucrat1.say_3",
-      "hits": 9,
-      "top_issue": "mixed_scripts"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat3.say_2",
-      "hits": 7,
-      "top_issue": "mixed_scripts"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.say_2",
-      "hits": 3,
-      "top_issue": "mixed_scripts"
-    },
-    {
-      "key": "npc.a_ghostly_sage.stdmod_3",
-      "hits": 2,
-      "top_issue": "mixed_scripts"
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "hits": 265,
+      "top_issue": "identical_to_en"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-21T02:47:17.746262Z",
+  "generated_at_utc": "2026-02-21T02:51:20.903406Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,31 +9,31 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-02-21 02:47:15"
+      "last_update": "2026-02-21 02:51:17"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "10s temu",
+      "freshness": "25s temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-02-21T02:47:07Z"
+      "last_update": "2026-02-21T02:50:55Z"
     },
     "MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "14s temu",
+      "freshness": "45s temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-02-21 02:47:15"
+      "last_update": "2026-02-21 02:51:17"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "12s temu",
+      "freshness": "2min temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-02-21T02:47:05.264523Z"
+      "last_update": "2026-02-21T02:48:37.808225Z"
     },
     "QUALITY": {
       "state": "active",
@@ -41,7 +41,7 @@
       "reason": "",
       "freshness": "0s temu",
       "source": "quality_audit_latest.json + guard_fail_breakdown_latest.json",
-      "last_update": "2026-02-21T02:47:17.544551Z"
+      "last_update": "2026-02-21T02:51:20.664206Z"
     },
     "HISTORY": {
       "state": "active",
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-02-21 02:47:15"
+      "last_update": "2026-02-21 02:51:17"
     }
   }
 }

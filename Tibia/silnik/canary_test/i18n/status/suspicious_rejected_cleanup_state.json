@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T02:47:03.750001Z",
-  "last_cycle": 63,
+  "timestamp": "2026-02-21T02:50:50.043324Z",
+  "last_cycle": 64,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -33,7 +33,36 @@
       "item.722.name",
       "item.723.name",
       "item.724.name",
-      "item.725.name"
+      "item.725.name",
+      "item.726.name",
+      "item.7281.desc",
+      "item.7286.desc",
+      "item.731.name",
+      "item.732.name",
+      "item.733.name",
+      "item.734.name",
+      "item.735.name",
+      "item.7351.name",
+      "item.7352.name",
+      "item.7353.name",
+      "item.7355.name",
+      "item.7356.name",
+      "item.7357.name",
+      "item.736.name",
+      "item.737.name",
+      "item.738.name",
+      "item.739.name",
+      "item.740.name",
+      "item.741.name",
+      "item.742.name",
+      "item.743.name",
+      "item.744.name",
+      "item.745.name",
+      "item.7519.name",
+      "item.7536.name",
+      "item.7542.name",
+      "item.7543.name",
+      "item.7544.name"
     ],
     "ru|items.json": [
       "item.10360.name",
@@ -65,7 +94,13 @@
       "item.13803.name",
       "item.13804.name",
       "item.13968.name",
-      "item.13975.name"
+      "item.13975.name",
+      "item.13977.name",
+      "item.13995.desc",
+      "item.14024.name",
+      "item.14039.name",
+      "item.14142.desc",
+      "item.14143.desc"
     ],
     "ro|items.json": [
       "item.18218.name",

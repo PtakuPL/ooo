@@ -40726,5 +40726,29 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T02:47:03.146515Z"
+  },
+  "item.13995.desc": {
+    "src_hash": "a532c896c1e7082fcec87ff1946ae285",
+    "text": "Позволяет подводные исследования",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:35.631819Z"
+  },
+  "item.14142.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Отшельник рядом с Карлин может рассказать вам об этом больше.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:35.916120Z"
+  },
+  "item.14143.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Отшельник рядом с Карлин может рассказать вам об этом больше.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:35.918776Z"
   }
 }

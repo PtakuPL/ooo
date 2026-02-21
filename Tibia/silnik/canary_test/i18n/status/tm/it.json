@@ -84582,5 +84582,237 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T02:25:21.032146Z"
+  },
+  "item.726.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.240631Z"
+  },
+  "item.7281.desc": {
+    "src_hash": "3ce49eff7f272f394b24a787054137cf",
+    "text": "È in grado di immagazzinare ricordi e pensieri",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.242868Z"
+  },
+  "item.7286.desc": {
+    "src_hash": "18bf53a1e2d29f0fcf6dbaa1b4bf72db",
+    "text": "È vuoto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.244884Z"
+  },
+  "item.731.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.247646Z"
+  },
+  "item.732.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.250768Z"
+  },
+  "item.733.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.253449Z"
+  },
+  "item.734.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.256271Z"
+  },
+  "item.735.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.259231Z"
+  },
+  "item.7351.name": {
+    "src_hash": "1280e09900d17cacb0c943ac9f2752ec",
+    "text": "pavimento in marmo nero",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.262052Z"
+  },
+  "item.7352.name": {
+    "src_hash": "c90b1198f689dd950d51142e65a44c81",
+    "text": "sporco",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.263146Z"
+  },
+  "item.7353.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.264082Z"
+  },
+  "item.7355.name": {
+    "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
+    "text": "pavimento in pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.265685Z"
+  },
+  "item.7356.name": {
+    "src_hash": "6266cb99f1f98c30d000e4e736c8d5fd",
+    "text": "terreno roccioso",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.266634Z"
+  },
+  "item.7357.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "pavimento in legno",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.267761Z"
+  },
+  "item.736.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.269276Z"
+  },
+  "item.737.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.271980Z"
+  },
+  "item.738.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.276061Z"
+  },
+  "item.739.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.277969Z"
+  },
+  "item.740.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.279621Z"
+  },
+  "item.741.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.285400Z"
+  },
+  "item.742.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.289070Z"
+  },
+  "item.743.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.292788Z"
+  },
+  "item.744.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.296851Z"
+  },
+  "item.745.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.300499Z"
+  },
+  "item.7519.name": {
+    "src_hash": "e3c7552b6b3fd33df13fc349512f2b45",
+    "text": "qualcosa che striscia",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.308607Z"
+  },
+  "item.7536.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.313139Z"
+  },
+  "item.7542.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.315822Z"
+  },
+  "item.7543.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.316771Z"
+  },
+  "item.7544.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:48:19.317660Z"
   }
 }

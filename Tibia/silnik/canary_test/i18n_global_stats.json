@@ -1,8 +1,8 @@
 {
-  "total_cycles": 58,
+  "total_cycles": 62,
   "mode": "AUTO_TRANSLATE",
   "category": "es",
-  "last_update": "2026-02-21T03:33:42.373540",
+  "last_update": "2026-02-21T03:45:17.868035",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,13 +27,56 @@
   },
   "auto_translate": {
     "language": "es",
-    "json_file": "cpp.json",
-    "keys_to_translate": 9,
-    "guard_fail": 0,
+    "json_file": "npc.json",
+    "keys_to_translate": 2271,
+    "guard_fail": 5,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 0,
-    "recent_examples": []
+    "recent_translated": 7,
+    "recent_examples": [
+      {
+        "key": "npc.a_fading_memory.greet_msg_1",
+        "en": "Oh...",
+        "translated": "Oh...",
+        "source": "tm"
+      },
+      {
+        "key": "npc.a_sweaty_cyclops.stdmod_1",
+        "en": "Hum hum, huhum",
+        "translated": "Hum hum, hum hum",
+        "source": "tm"
+      },
+      {
+        "key": "npc.a_sweaty_cyclops.voice_1",
+        "en": "Hum hum, huhum",
+        "translated": "Hum hum, hum hum",
+        "source": "tm"
+      },
+      {
+        "key": "npc.barnabas_dee.say_5",
+        "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+        "translated": "No no no, necesito 15 dosis de polen reci\u00e9n cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servir\u00e1.",
+        "source": "tm"
+      },
+      {
+        "key": "npc.bozo.stdmod_116",
+        "en": "npc.bozo.mission_36_t1",
+        "translated": "npc.bozo.mission_36_t1",
+        "source": "tm"
+      },
+      {
+        "key": "npc.bozo.stdmod_92",
+        "en": "npc.bozo.mission_12_t1",
+        "translated": "npc.bozo.mission_12_t1",
+        "source": "tm"
+      },
+      {
+        "key": "npc.budrik.say_9",
+        "en": "Zzz...",
+        "translated": "Zzz...",
+        "source": "tm"
+      }
+    ]
   },
   "idle": {
     "new_files_detected": 152,

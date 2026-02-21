@@ -11351,3 +11351,5 @@
 {"timestamp": "2026-02-21T02:42:55.995016Z", "cycle": 61, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "status_update", "duration_ms": 8755, "detail": "throttle_every=1"}
 {"timestamp": "2026-02-21T02:43:03.550699Z", "cycle": 61, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "cycle_total", "duration_ms": 263034, "detail": "delay=4"}
 {"timestamp": "2026-02-21T02:43:09.704399Z", "cycle": 62, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 1305, "detail": "count=npc.json"}
+{"timestamp": "2026-02-21T02:45:16.869671Z", "cycle": 62, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "mode_run", "duration_ms": 126799, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-21T02:45:27.513635Z", "cycle": 62, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "status_update", "duration_ms": 9442, "detail": "throttle_every=1"}

@@ -39,6 +39,64 @@
 /// pushes the result to lua.
 namespace luabinder
 {
+    // MSVC 14.44 (cl.exe) can ICE (C1001) when throwing directly inside
+    // heavily-instantiated template lambdas. Keep throw path out-of-template.
+#ifdef _MSC_VER
+    [[noreturn]] __declspec(noinline) void throwLuaNilMemberCall();
+#else
+    [[noreturn]] void throwLuaNilMemberCall();
+#endif
+
+    template<typename Ret, typename C, typename... Args>
+    struct MemberFunctionInvoker
+    {
+        Ret(C::* function)(Args...);
+
+        Ret operator()(const std::shared_ptr<C>& obj, const Args&... args) const
+        {
+            if (!obj)
+                throwLuaNilMemberCall();
+            return (obj.get()->*function)(args...);
+        }
+    };
+
+    template<typename C, typename... Args>
+    struct MemberFunctionInvoker<void, C, Args...>
+    {
+        void (C::* function)(Args...);
+
+        void operator()(const std::shared_ptr<C>& obj, const Args&... args) const
+        {
+            if (!obj)
+                throwLuaNilMemberCall();
+            (obj.get()->*function)(args...);
+        }
+    };
+
+    template<typename Ret, typename C, typename... Args>
+    struct SingletonMemberFunctionInvoker
+    {
+        Ret(C::* function)(Args...);
+        C* instance;
+
+        Ret operator()(Args... args) const
+        {
+            return (instance->*function)(args...);
+        }
+    };
+
+    template<typename C, typename... Args>
+    struct SingletonMemberFunctionInvoker<void, C, Args...>
+    {
+        void (C::* function)(Args...);
+        C* instance;
+
+        void operator()(Args... args) const
+        {
+            (instance->*function)(args...);
+        }
+    };
+
     /// Pack arguments from lua stack into a tuple using fold expression (non-recursive).
     /// Pops values in reverse order (N-1 down to 0) to match original Lua stack semantics.
     template<typename Tuple, std::size_t... I>
@@ -149,32 +207,24 @@ namespace luabinder
     template<typename Ret, typename C, typename... Args>
     auto make_mem_func(Ret(C::* f)(Args...))
     {
-        return [f](const std::shared_ptr<C>& obj, const Args&... args) -> Ret {
-            if (!obj)
-                throw LuaException("failed to call a member function because the passed object is nil");
-            return (obj.get()->*f)(args...);
-        };
+        return MemberFunctionInvoker<Ret, C, Args...> { f };
     }
     template<typename C, typename... Args>
     auto make_mem_func(void (C::* f)(Args...))
     {
-        return [f](const std::shared_ptr<C>& obj, const Args&... args) {
-            if (!obj)
-                throw LuaException("failed to call a member function because the passed object is nil");
-            (obj.get()->*f)(args...);
-        };
+        return MemberFunctionInvoker<void, C, Args...> { f };
     }
 
     /// Create member function lambdas for singleton classes
     template<typename Ret, typename C, typename... Args>
     auto make_mem_func_singleton(Ret(C::* f)(Args...), C* instance)
     {
-        return [f, instance](Args... args) -> Ret { return (instance->*f)(args...); };
+        return SingletonMemberFunctionInvoker<Ret, C, Args...> { f, instance };
     }
     template<typename C, typename... Args>
     auto make_mem_func_singleton(void (C::* f)(Args...), C* instance)
     {
-        return [f, instance](Args... args) { (instance->*f)(args...); };
+        return SingletonMemberFunctionInvoker<void, C, Args...> { f, instance };
     }
 
     /// Bind member functions

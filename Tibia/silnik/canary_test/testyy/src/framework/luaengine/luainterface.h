@@ -58,6 +58,13 @@ extern "C" {
 struct lua_State;
 using LuaCFunction = int(*) (lua_State* L);
 
+// MSVC 14.44 ICE workaround helpers implemented in luainterface.cpp.
+#ifdef _MSC_VER
+[[noreturn]] __declspec(noinline) void throwLuaBadValueCast(const char* valueType, const char* targetType);
+#else
+[[noreturn]] void throwLuaBadValueCast(const char* valueType, const char* targetType);
+#endif
+
 /// Class that manages LUA stuff
 class LuaInterface
 {
@@ -482,18 +489,19 @@ void LuaInterface::bindGlobalFunction(const std::string_view functionName, const
 template<class T>
 T LuaInterface::castValue(int index)
 {
-    T o;
     if constexpr (std::is_same_v<T, std::string_view>) {
-        o = g_lua.toVString(index);
-    } else {
-        if (!luavalue_cast(index, o))
+        return g_lua.toVString(index);
+    }
+
+    T value {};
+    if (!luavalue_cast(index, value)) {
 #ifdef _MSC_VER
-            throw LuaBadValueCastException(typeName(index), "(type info unavailable on MSVC)");
+        throwLuaBadValueCast(typeName(index), "(type info unavailable on MSVC)");
 #else
-            throw LuaBadValueCastException(typeName(index), stdext::demangle_type<T>());
+        throwLuaBadValueCast(typeName(index), stdext::demangle_type<T>().c_str());
 #endif
     }
-    return o;
+    return value;
 }
 
 template<typename... T>

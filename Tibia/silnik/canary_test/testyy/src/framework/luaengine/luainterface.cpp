@@ -33,6 +33,27 @@
 
 LuaInterface g_lua;
 
+[[noreturn]]
+#ifdef _MSC_VER
+__declspec(noinline)
+#endif
+void throwLuaBadValueCast(const char* valueType, const char* targetType)
+{
+    throw LuaBadValueCastException(valueType ? valueType : "unknown", targetType ? targetType : "unknown");
+}
+
+namespace luabinder
+{
+[[noreturn]]
+#ifdef _MSC_VER
+__declspec(noinline)
+#endif
+void throwLuaNilMemberCall()
+{
+    throw LuaException("failed to call a member function because the passed object is nil");
+}
+}
+
 void LuaInterface::init()
 {
     createLuaState();

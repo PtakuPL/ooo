@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T00:58:46.061804Z",
-  "last_cycle": 3,
+  "timestamp": "2026-02-21T00:59:16.163215Z",
+  "last_cycle": 4,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -971,6 +971,7 @@
       "cpp.inspect.physical_plus",
       "cpp.player.look.guild_nick",
       "cpp.protocol.active_prey_desc",
+      "cpp.protocol.resting_soul_regen",
       "cpp.vocation.id_2"
     ],
     "pl|otclient_data.json": [],

@@ -531,7 +531,7 @@
   "cpp.protocol.resting_mana_regen": "Regeneracja punktów many",
   "cpp.protocol.resting_mana_regen_double": "Podwójna regeneracja punktów many",
   "cpp.protocol.resting_no_bonus": "Resting Obszar, region (Nie Aktywni premia)",
-  "cpp.protocol.resting_soul_regen": "Dusza Points Regeneration",
+  "cpp.protocol.resting_soul_regen": "Regeneracja punktów duszy",
   "cpp.protocol.resting_stamina_regen": "Regeneracja punktów wytrzymałości",
   "cpp.protocol.server_closed": "Serwer jest obecnie zamknięty.\nSpróbuj ponownie później.",
   "cpp.protocol.session_expired": "Twój sesja ma expired. Proszę log w ponownie.",

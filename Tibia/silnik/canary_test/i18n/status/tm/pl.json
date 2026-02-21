@@ -118430,5 +118430,13 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-21T00:26:52.855281Z"
+  },
+  "cpp.protocol.resting_soul_regen": {
+    "src_hash": "85f5b5de237017ae21137db198e2d050",
+    "text": "Regeneracja punktów duszy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:59:11.164320Z"
   }
 }

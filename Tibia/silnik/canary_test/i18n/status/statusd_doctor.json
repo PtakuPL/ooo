@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-02-21T01:12:44.869304Z",
+  "timestamp": "2026-02-21T01:14:51.295129Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 2,
   "warnings_count": 15,
   "ok_count": 10,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=69321 rate=435.899% window=6.0h top_lang=ro:28415 per_lang=[ro:28415(1644.387%/critical),es:17958(386.36%/critical),ru:10065(314.041%/critical),pl:8382(431.617%/critical),it:2458(101.949%/critical)] per_domain=[items.json:42070(1916.629%/critical),npc.json:13625(219.157%/critical),monsters.json:9849(342.693%/critical),server.json:1054(106.143%/critical),scripts.json:688(80.846%/warning)]",
-    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5936.9 cycle_delta=6017 best_quality_drop=0.000% reason=active_time_without_quality_drop"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=67575 rate=429.648% window=6.0h top_lang=ro:27152 per_lang=[ro:27152(1588.765%/critical),es:17939(387.451%/critical),ru:9713(307.861%/critical),pl:8382(431.617%/critical),it:2417(101.427%/critical)] per_domain=[items.json:40509(1892.06%/critical),npc.json:13553(220.697%/critical),monsters.json:9728(345.7%/critical),server.json:1065(106.713%/critical),scripts.json:688(80.846%/warning)]",
+    "PRIORITY_GATE_STUCK_CRITICAL: pending=[es,it,pl,ro,ru,sr,sv] active_minutes=5939.0 cycle_delta=6020 best_quality_drop=0.000% reason=active_time_without_quality_drop"
   ],
   "warnings": [
     "BLACKLISTED_TARGET: pl:items.json ma 6839 guard_fail w blackliście",
@@ -27,16 +27,16 @@
     "LANG_PARITY_WARN: tr has 48694 [EN]-backlog after 161h (should be ≤5000)"
   ],
   "ok": [
-    "heartbeat_fresh (44s, aging/stale/stuck=150/240/420s)",
-    "status_md_fresh (35s)",
-    "guard_report_fresh (3s)",
-    "dispatch_fresh (1s)",
+    "heartbeat_fresh (85s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (64s)",
+    "guard_report_fresh (57s)",
+    "dispatch_fresh (55s)",
     "worker_pid_alive (661274)",
-    "worker_subprocess_observed (main=661274 matching=4 extras=3 desc=3 foreign=0 oldest_desc=0s oldest_foreign=0s status=extra_descendants_detected)",
-    "queue_freshness_ok (87s, WARN>900s CRIT>1800s)",
+    "worker_process_topology_ok (main=661274 matching=2 extras=1 desc=1 foreign=0 oldest_desc=3s oldest_foreign=0s status=single_descendant_observed)",
+    "queue_freshness_ok (43s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
     "forced_cmd_sla_ok (samples=0 sla_target=45s p95_roundtrip=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0)",
-    "repair_tuning_active (samples_2h=35)"
+    "repair_tuning_active (samples_2h=36)"
   ],
   "metrics_drift": {
     "available": true,
@@ -71,8 +71,8 @@
       "sr",
       "sv"
     ],
-    "active_minutes": 5936.894,
-    "cycle_delta": 6017,
+    "active_minutes": 5938.999,
+    "cycle_delta": 6020,
     "best_quality_drop_pct": 0.0,
     "thresholds": {
       "max_active_minutes": 1440.0,
@@ -106,32 +106,26 @@
   },
   "worker_process_watch": {
     "available": true,
-    "severity": "info",
-    "status": "extra_descendants_detected",
-    "reason": "multiple_descendant_worker_processes",
+    "severity": "ok",
+    "status": "single_descendant_observed",
+    "reason": "single_descendant_worker_subprocess",
     "main_pid": 661274,
     "matched_pids": [
       661274,
-      684172,
-      684185,
-      684187
+      686416
     ],
     "extra_pids": [
-      684172,
-      684185,
-      684187
+      686416
     ],
     "descendant_extra_pids": [
-      684172,
-      684185,
-      684187
+      686416
     ],
     "foreign_extra_pids": [],
-    "total_matching": 4,
-    "extra_count": 3,
-    "descendant_extra_count": 3,
+    "total_matching": 2,
+    "extra_count": 1,
+    "descendant_extra_count": 1,
     "foreign_extra_count": 0,
-    "oldest_descendant_age_s": 0,
+    "oldest_descendant_age_s": 3,
     "oldest_foreign_age_s": 0,
     "warn_persist_seconds": 900,
     "critical_persist_seconds": 1800

@@ -176382,5 +176382,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T00:13:28.650662Z"
+  },
+  "data.otservbr.global.npc.chief.grarkharok.L158.1407": {
+    "src_hash": "6e99cfbff56cfe44fc4b90c2c9c50ac9",
+    "text": "Ја шеф Гракхарок! Не ради {nothing}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:45:34.831407Z"
+  },
+  "data.otservbr.global.npc.chondur.L319.194": {
+    "src_hash": "13f7dcbb07deb6cf9372fc7090611d20",
+    "text": "Буди поздрављен, дете.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:45:34.831920Z"
+  },
+  "data.otservbr.global.npc.chrak.L93.1133": {
+    "src_hash": "32a347eb9be8bae0f4fb14b360240687",
+    "text": "Поздрав, такмичар.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:45:34.832828Z"
+  },
+  "data.otservbr.global.npc.chrystal.L78.788": {
+    "src_hash": "fa6fc88cd18508a957ddb1e284794140",
+    "text": "Ко је следећи?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:45:34.833848Z"
   }
 }

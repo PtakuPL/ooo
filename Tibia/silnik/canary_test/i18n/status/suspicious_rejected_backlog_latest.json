@@ -1,30 +1,20 @@
 {
-  "timestamp": "2026-02-21T00:44:12.313833Z",
-  "language": "it",
-  "json_file": "quests.json",
+  "timestamp": "2026-02-21T00:45:55.483124Z",
+  "language": "es",
+  "json_file": "npc.json",
   "lookback_lines": 8000,
   "min_hits": 2,
   "max_keys": 400,
   "issue_types_filter": [],
-  "selected_keys": 3,
+  "selected_keys": 1,
   "issue_type_totals": {
-    "word_salad": 54
+    "identical_to_en": 265
   },
   "keys": [
     {
-      "key": "quests.rookie_guard.m06.exit_time",
-      "hits": 22,
-      "top_issue": "word_salad"
-    },
-    {
-      "key": "quests.soul_war.dread_tear_apart",
-      "hits": 20,
-      "top_issue": "word_salad"
-    },
-    {
-      "key": "quests.soul_war.msg_3",
-      "hits": 12,
-      "top_issue": "word_salad"
+      "key": "npc.a_fluffy_squirrel.voice_1",
+      "hits": 265,
+      "top_issue": "identical_to_en"
     }
   ]
 }

@@ -1,53 +1,131 @@
 {
-  "timestamp": "2026-02-21T02:11:01.081026Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 7,
+  "timestamp": "2026-02-21T02:14:42.557712Z",
+  "language": "pl",
+  "json_file": "html.json",
+  "translated": 30,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
+      "key": "web.tpl.guilds.view.set_8",
+      "en": "_sbutton_editranks",
+      "translated": "_sbutton_editranks",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "web.tpl.characters.b_28",
+      "en": "&#160;",
+      "translated": "&#160;",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "web.tpl.admin.menus.header.b_1",
+      "en": "http://",
+      "translated": "http://",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "web.tpl.admin.menus.header.b_2",
+      "en": "https://",
+      "translated": "https://",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
+      "key": "web.tpl.buttons.register_account.set_3",
+      "en": "_sbutton_registeraccount",
+      "translated": "_sbutton_registeraccount",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
+      "key": "web.tpl.buttons.view.set_3",
+      "en": "_sbutton_view",
+      "translated": "_sbutton_view",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "web.tpl.buttons.base.set_2",
+      "en": "sbutton_green",
+      "translated": "sbutton_green",
+      "source": "tm"
+    },
+    {
+      "key": "web.tpl.buttons.base.set_3",
+      "en": "sbutton_red",
+      "translated": "sbutton_red",
+      "source": "tm"
+    },
+    {
+      "key": "web.tpl.buttons.back.set_2",
+      "en": "_sbutton_back",
+      "translated": "_sbutton_back",
+      "source": "tm"
+    },
+    {
+      "key": "web.tpl.buttons.login.set_2",
+      "en": "_sbutton_login",
+      "translated": "_sbutton_login",
+      "source": "tm"
+    },
+    {
+      "key": "html.guilds.list.html.text2",
+      "en": "{{ guild.description }}",
+      "translated": "{{ guild.description }}",
+      "source": "tm"
+    },
+    {
+      "key": "html.admin.news.form.html.text3",
+      "en": "{{ player.getName() }}",
+      "translated": "{{ player.getName() }}",
+      "source": "tm"
+    },
+    {
+      "key": "html.admin.news.form.html.text5",
+      "en": "{{ player.getName() }}",
+      "translated": "{{ player.getName() }}",
+      "source": "tm"
+    },
+    {
+      "key": "html.highscores.html.text2",
+      "en": "{{ config.vocations[i]}}",
+      "translated": "{{ config.vocations[i]}}",
+      "source": "tm"
+    },
+    {
+      "key": "html.install.config.html.text3",
+      "en": "{{ locale.step_config_timezone }}",
+      "translated": "{{ locale.step_config_timezone }}",
+      "source": "tm"
+    },
+    {
+      "key": "html.install.config.html.text4",
+      "en": "{{ locale.step_config_timezone_desc }}",
+      "translated": "{{ locale.step_config_timezone_desc }}",
+      "source": "tm"
+    },
+    {
+      "key": "html.account.characters.change_sex.html.text2",
+      "en": "{{ player.getName() }}",
+      "translated": "{{ player.getName() }}",
+      "source": "tm"
+    },
+    {
+      "key": "html.admin_bar.html.text1",
+      "en": "{{ config.lua.serverName }}",
+      "translated": "{{ config.lua.serverName }}",
+      "source": "tm"
+    },
+    {
+      "key": "html.experience_stages.html.text1",
+      "en": "x{{ stage.multiplier}}",
+      "translated": "x{{ stage.multiplier}}",
+      "source": "tm"
+    },
+    {
+      "key": "html.admin.open_source.html.text3",
+      "en": "https://getbootstrap.com",
+      "translated": "https://getbootstrap.com",
       "source": "tm"
     }
   ]

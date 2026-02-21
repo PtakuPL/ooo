@@ -1,10 +1,10 @@
 {
   "lang": "ro",
-  "coverage_pct": 44.9,
+  "coverage_pct": 45.0,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-21T00:25:12.829347Z",
+  "checked_at": "2026-02-21T00:39:43.968388Z",
   "issues_total": 421,
   "issues_by_type": {
     "consistency_in_language": 6,
@@ -644,6 +644,42 @@
       "en": "Evilina",
       "pl": "Ewilina",
       "lang": "Evilina"
+    },
+    {
+      "key": "item.16255.desc",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is a voucher for a basic crystal warlord outfit",
+      "pl": "To jest jeden bon, bloczek dla jeden podstawowy crystal warlord strój",
+      "lang": "It is a voucher for a basic crystal warlord outfit"
+    },
+    {
+      "key": "item.17112.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "sorc and druid attack rune",
+      "pl": "Runa ataku sorka i druida",
+      "lang": "sorc and druid attack rune"
+    },
+    {
+      "key": "item.20108.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "blister egg plant",
+      "pl": "pęcherzykowa roślina jajeczna",
+      "lang": "blister egg plant"
+    },
+    {
+      "key": "item.20115.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "blister egg plant",
+      "pl": "pęcherzykowa roślina jajeczna",
+      "lang": "blister egg plant"
     },
     {
       "key": "monster.old_bonelord.voice_1",
@@ -3668,42 +3704,6 @@
       "en": "FCHHHHH",
       "pl": "Fchhhh",
       "lang": "FCHHHHH"
-    },
-    {
-      "key": "monster.dragon_lord_hatchling.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rooawwrr",
-      "pl": "Rooawrr",
-      "lang": "Rooawwrr"
-    },
-    {
-      "key": "monster.green_frog.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
-    },
-    {
-      "key": "monster.salamander.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chrrch!",
-      "pl": "Chrr!",
-      "lang": "Chrrch!"
-    },
-    {
-      "key": "monster.infernal_frog.voice_4",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
     }
   ],
   "length_ratio_issues": [
@@ -3845,8 +3845,8 @@
   ],
   "auto_fix": {
     "attempted": 80,
-    "applied": 0,
-    "skipped": 80,
+    "applied": 4,
+    "skipped": 76,
     "errors": 0
   }
 }

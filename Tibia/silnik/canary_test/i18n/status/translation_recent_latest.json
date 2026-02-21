@@ -1,17 +1,131 @@
 {
-  "timestamp": "2026-02-21T00:35:18.262067Z",
+  "timestamp": "2026-02-21T00:37:46.590382Z",
   "language": "pl",
-  "json_file": "spells.json",
-  "translated": 1,
+  "json_file": "raids.json",
+  "translated": 28,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "spell.azerus_soulfire_2.name",
-      "en": "azerus soulfire 2",
-      "translated": "Azerus Soulfire 2",
+      "key": "raid.midnight_panther_2.name",
+      "en": "Midnight Panther 2",
+      "translated": "Midnight Panther 2",
+      "source": "tm"
+    },
+    {
+      "key": "raid.serpent_spawn.name",
+      "en": "Serpent Spawn",
+      "translated": "Serpent Spawn",
+      "source": "tm"
+    },
+    {
+      "key": "raid.wild_horses.name",
+      "en": "Wild Horses",
+      "translated": "Wild Horses",
+      "source": "tm"
+    },
+    {
+      "key": "raid.rottie1.name",
+      "en": "Rottie1",
+      "translated": "Rottie1",
+      "source": "tm"
+    },
+    {
+      "key": "raid.rottie2.name",
+      "en": "Rottie2",
+      "translated": "Rottie2",
+      "source": "tm"
+    },
+    {
+      "key": "raid.crustacea_gigantica_4.name",
+      "en": "Crustacea Gigantica 4",
+      "translated": "Crustacea Gigantica 4",
+      "source": "tm"
+    },
+    {
+      "key": "raid.crustacea_gigantica_5.name",
+      "en": "Crustacea Gigantica 5",
+      "translated": "Crustacea Gigantica 5",
+      "source": "tm"
+    },
+    {
+      "key": "raid.gaz_haragoth.name",
+      "en": "Gaz Haragoth",
+      "translated": "Gaz Haragoth",
+      "source": "tm"
+    },
+    {
+      "key": "raid.crustacea_gigantica_1.name",
+      "en": "Crustacea Gigantica 1",
+      "translated": "Crustacea Gigantica 1",
+      "source": "tm"
+    },
+    {
+      "key": "raid.crustacea_gigantica_2.name",
+      "en": "Crustacea Gigantica 2",
+      "translated": "Crustacea Gigantica 2",
+      "source": "tm"
+    },
+    {
+      "key": "raid.crustacea_gigantica_3.name",
+      "en": "Crustacea Gigantica 3",
+      "translated": "Crustacea Gigantica 3",
+      "source": "tm"
+    },
+    {
+      "key": "raid.diblis_the_fair.name",
+      "en": "Diblis The Fair",
+      "translated": "Diblis The Fair",
+      "source": "tm"
+    },
+    {
+      "key": "raid.the_old_widow.name",
+      "en": "The Old Widow",
+      "translated": "The Old Widow",
+      "source": "tm"
+    },
+    {
+      "key": "raid.feverish_citizen.name",
+      "en": "Feverish Citizen",
+      "translated": "Feverish Citizen",
+      "source": "tm"
+    },
+    {
+      "key": "raid.water_buffalo.name",
+      "en": "Water Buffalo",
+      "translated": "Water Buffalo",
+      "source": "tm"
+    },
+    {
+      "key": "raid.sir_valorcrest.name",
+      "en": "Sir Valorcrest",
+      "translated": "Sir Valorcrest",
+      "source": "tm"
+    },
+    {
+      "key": "raid.mad_mage.name",
+      "en": "Mad Mage",
+      "translated": "Mad Mage",
+      "source": "tm"
+    },
+    {
+      "key": "raid.weakened_shlorg.name",
+      "en": "Weakened Shlorg",
+      "translated": "Weakened Shlorg",
+      "source": "tm"
+    },
+    {
+      "key": "raid.zevelon_duskbringer.name",
+      "en": "Zevelon Duskbringer",
+      "translated": "Zevelon Duskbringer",
+      "source": "tm"
+    },
+    {
+      "key": "raid.zulazza_the_corruptor.name",
+      "en": "Zulazza The Corruptor",
+      "translated": "Zulazza The Corruptor",
       "source": "tm"
     }
   ]

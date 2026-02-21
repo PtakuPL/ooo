@@ -141,6 +141,14 @@ ADAPTIVE_BATCH_WINDOW=10        # ile ostatnich cykli brać pod uwagę
 ADAPTIVE_BATCH_HIGH_THRESHOLD=20  # guard_fail_rate% powyżej → zmniejsz batch
 ADAPTIVE_BATCH_LOW_THRESHOLD=5    # guard_fail_rate% poniżej → zwiększ batch
 
+# === Anti-toxic target cooldown (hotspot throughput guard) ===
+TOXIC_CYCLE_COOLDOWN_ENABLED="${TOXIC_CYCLE_COOLDOWN_ENABLED:-true}"
+TOXIC_CYCLE_MIN_GUARD_FAIL="${TOXIC_CYCLE_MIN_GUARD_FAIL:-180}"
+TOXIC_CYCLE_MAX_TRANSLATED="${TOXIC_CYCLE_MAX_TRANSLATED:-25}"
+TOXIC_CYCLE_MIN_ATTEMPTS="${TOXIC_CYCLE_MIN_ATTEMPTS:-220}"
+TOXIC_CYCLE_MIN_GF_RATE="${TOXIC_CYCLE_MIN_GF_RATE:-0.88}"
+TOXIC_CYCLE_COOLDOWN="${TOXIC_CYCLE_COOLDOWN:-30}"
+
 # === Sekcja 8.3b: Turbo batch mode ===
 # Jeśli język ma duży backlog [EN]-prefixów, zwiększ batch ponad adaptive limit.
 # Działa TYLKO dla T2/T3 (T1 używa standardowego adaptive batch).
@@ -21171,6 +21179,26 @@ if candidates:
     # Pomijaj kandydatów z >= MAX_NO_PROGRESS_VISITS wizytami bez postępu.
     MAX_NO_PROGRESS_VISITS = 3
     no_progress_map = state.get("no_progress_counts", {})
+    immediate_toxic_block = None
+
+    def _env_int(name, default):
+        try:
+            return int(float(os.environ.get(name, str(default)) or default))
+        except Exception:
+            return int(default)
+
+    def _env_float(name, default):
+        try:
+            return float(os.environ.get(name, str(default)) or default)
+        except Exception:
+            return float(default)
+
+    toxic_enabled = str(os.environ.get("TOXIC_CYCLE_COOLDOWN_ENABLED", "true") or "true").strip().lower() in ("1", "true", "yes", "on")
+    toxic_min_guard_fail = max(1, _env_int("TOXIC_CYCLE_MIN_GUARD_FAIL", 180))
+    toxic_max_translated = max(0, _env_int("TOXIC_CYCLE_MAX_TRANSLATED", 25))
+    toxic_min_attempts = max(1, _env_int("TOXIC_CYCLE_MIN_ATTEMPTS", 220))
+    toxic_min_gf_rate = min(0.999, max(0.50, _env_float("TOXIC_CYCLE_MIN_GF_RATE", 0.88)))
+    toxic_cooldown_cycles = max(5, _env_int("TOXIC_CYCLE_COOLDOWN", 30))
 
     # Odczytaj ostatni guard report aby zaktualizować no_progress_counts
     try:
@@ -21179,11 +21207,29 @@ if candidates:
                 g = json.load(f)
             guard_key = f"{g.get('language', '')}:{g.get('json_file', '')}"
             guard_translated = int(g.get("translated", 0) or 0)
+            guard_fail_latest = int(g.get("guard_fail", 0) or 0)
             if guard_key == last_key:
                 if guard_translated == 0:
                     no_progress_map[guard_key] = no_progress_map.get(guard_key, 0) + 1
                 else:
                     no_progress_map[guard_key] = 0  # reset po postępie
+
+                if toxic_enabled:
+                    attempts = max(1, guard_translated + guard_fail_latest)
+                    gf_rate_latest = guard_fail_latest / attempts
+                    is_toxic_cycle = (
+                        (guard_fail_latest >= toxic_min_guard_fail and guard_translated <= toxic_max_translated)
+                        or (attempts >= toxic_min_attempts and gf_rate_latest >= toxic_min_gf_rate and guard_translated <= (toxic_max_translated * 2))
+                    )
+                    if is_toxic_cycle:
+                        immediate_toxic_block = {
+                            "target": guard_key,
+                            "translated": int(guard_translated),
+                            "guard_fail": int(guard_fail_latest),
+                            "attempts": int(attempts),
+                            "guard_fail_rate": float(round(gf_rate_latest, 4)),
+                            "cooldown": int(toxic_cooldown_cycles),
+                        }
     except Exception:
         pass
 
@@ -21216,6 +21262,24 @@ if candidates:
         guard_fail_block_meta = {}
     current_cycle_num = state.get("cycle_counter", 0) + 1
     state["cycle_counter"] = current_cycle_num
+
+    if toxic_enabled and isinstance(immediate_toxic_block, dict):
+        tkey = str(immediate_toxic_block.get("target", "") or "")
+        if tkey:
+            next_cycle = current_cycle_num + int(toxic_cooldown_cycles)
+            existing_until = int(guard_fail_blacklist.get(tkey, 0) or 0)
+            if next_cycle > existing_until:
+                guard_fail_blacklist[tkey] = next_cycle
+            guard_fail_block_meta[tkey] = {
+                "until_cycle": int(guard_fail_blacklist.get(tkey, next_cycle) or next_cycle),
+                "entries": 1,
+                "translated": int(immediate_toxic_block.get("translated", 0) or 0),
+                "guard_fail": int(immediate_toxic_block.get("guard_fail", 0) or 0),
+                "guard_fail_rate": float(immediate_toxic_block.get("guard_fail_rate", 0.0) or 0.0),
+                "dominant_reason": "toxic_cycle",
+                "hard_block": True,
+                "updated_cycle": int(current_cycle_num),
+            }
 
     try:
         guard_report_path = os.path.join(status_dir, "translation_guard_report.jsonl")
@@ -21474,6 +21538,18 @@ if candidates:
             "priority_langs": priority_langs,
             "pending_langs": priority_gate_pending_langs,
             "lang_completion": priority_gate_lang_completion,
+        },
+        "toxic_cycle_cooldown": {
+            "enabled": bool(toxic_enabled),
+            "applied": bool(isinstance(immediate_toxic_block, dict)),
+            "config": {
+                "min_guard_fail": int(toxic_min_guard_fail),
+                "max_translated": int(toxic_max_translated),
+                "min_attempts": int(toxic_min_attempts),
+                "min_gf_rate": float(toxic_min_gf_rate),
+                "cooldown_cycles": int(toxic_cooldown_cycles),
+            },
+            "last_block": immediate_toxic_block if isinstance(immediate_toxic_block, dict) else {},
         },
     }
     try:

@@ -1,41 +1,40 @@
 {
-  "timestamp": "2026-02-21T00:02:19.146121Z",
-  "window_start_utc": "2026-02-20T23:02:18.459007Z",
-  "window_end_utc": "2026-02-21T00:02:18.459007Z",
+  "timestamp": "2026-02-21T00:05:20.685156Z",
+  "window_start_utc": "2026-02-20T23:05:20.050047Z",
+  "window_end_utc": "2026-02-21T00:05:20.050047Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
     "suspicious_log": "i18n/status/suspicious_log.jsonl",
     "translation_guard_report": "i18n/status/translation_guard_report.jsonl"
   },
-  "rejected_entries": 10,
-  "rejected_entries_raw": 11,
-  "suspicious_entries": 3834,
-  "suspicious_entries_raw": 14378,
-  "guard_fail_entries": 96,
-  "guard_fail_sum": 2345,
+  "rejected_entries": 4,
+  "rejected_entries_raw": 5,
+  "suspicious_entries": 3802,
+  "suspicious_entries_raw": 13231,
+  "guard_fail_entries": 95,
+  "guard_fail_sum": 1662,
   "by_type": {
-    "identical_to_en": 10
+    "identical_to_en": 4
   },
   "by_source": {
-    "google_translate": 10
+    "google_translate": 4
   },
   "by_language": {
-    "es": 8,
+    "es": 2,
     "it": 2
   },
   "by_category": {
-    "items.json": 6,
     "npc.json": 3,
     "server.json": 1
   },
   "by_severity": {
-    "CRITICAL": 10
+    "CRITICAL": 4
   },
   "top_types": [
     {
       "type": "identical_to_en",
-      "count": 10
+      "count": 4
     }
   ],
   "top_keys": [
@@ -44,48 +43,6 @@
       "count": 2,
       "types": {
         "identical_to_en": 2
-      }
-    },
-    {
-      "key": "item.10388.name",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "item.10391.name",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "item.12742.name",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "item.12805.name",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "item.13670.name",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
-      }
-    },
-    {
-      "key": "item.14141.name",
-      "count": 1,
-      "types": {
-        "identical_to_en": 1
       }
     },
     {

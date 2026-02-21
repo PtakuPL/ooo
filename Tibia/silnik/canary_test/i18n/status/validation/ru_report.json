@@ -2,20 +2,20 @@
   "lang": "ru",
   "script_group": "cyrillic",
   "total_keys": 53586,
-  "translated": 27136,
-  "identical_to_en": 1469,
-  "placeholder_keys": 26450,
-  "coverage_pct": 50.6,
-  "issues_total": 6503,
+  "translated": 27142,
+  "identical_to_en": 1539,
+  "placeholder_keys": 26444,
+  "coverage_pct": 50.7,
+  "issues_total": 6499,
   "issues_by_type": {
-    "script_cyrillic_latin_mix": 6341,
+    "script_cyrillic_latin_mix": 6337,
     "V1_placeholder_mismatch": 148,
     "V6_newline_mismatch": 8,
     "V4_artifact": 6
   },
   "issues_by_severity": {
     "CRITICAL": 148,
-    "HIGH": 6347,
+    "HIGH": 6343,
     "MEDIUM": 8,
     "LOW": 0
   },
@@ -144,11 +144,11 @@
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 145,
-    "consistency": 73,
-    "pl_reference": 29,
+    "issues_total": 216,
+    "consistency": 74,
+    "pl_reference": 99,
     "length_ratio": 43,
-    "auto_fix_applied": 0
+    "auto_fix_applied": 70
   },
-  "validated_at": "2026-02-20T23:43:33.429145Z"
+  "validated_at": "2026-02-21T00:04:37.562481Z"
 }

@@ -74966,5 +74966,69 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:49:15.111545Z"
+  },
+  "scripts.foods.sound_yum": {
+    "src_hash": "fea6ea75f234ce4b728a71482f64a84f",
+    "text": "Hum.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:02:34.921428Z"
+  },
+  "scripts.veggie_casserole.say_1": {
+    "src_hash": "fea6ea75f234ce4b728a71482f64a84f",
+    "text": "Hum.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:02:35.014262Z"
+  },
+  "scripts.construction_kits.horse": {
+    "src_hash": "2c0d3b5d04765b4a5712d3777e15a56e",
+    "text": "Ce cal drăguț - și exact ceea ce trebuie plasat în această cameră drăguță.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:02:48.988275Z"
+  },
+  "scripts.construction_kits.jack_amphora": {
+    "src_hash": "0393288deefc255d61fe9ba7fed3d82e",
+    "text": "Jack: Încerci să scapi de gunoaiele tale din casa mea? Parcă am nevoie de un astfel de... 'vase'?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:02:48.988837Z"
+  },
+  "scripts.construction_kits.jack_chair": {
+    "src_hash": "ce9d2ea28d71cea85625d885b8c66ce0",
+    "text": "Jack: Da, uhm... scaun impresionant. Acum ai vrea să-l eliminați? Mulţumesc.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:02:48.989300Z"
+  },
+  "scripts.construction_kits.jack_globe": {
+    "src_hash": "2390140de51c54f8da7495668db3a7e3",
+    "text": "Jack: Frumos, a... ce este asta de fapt?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:02:48.989638Z"
+  },
+  "scripts.construction_kits.jack_horse": {
+    "src_hash": "f546b29aecc22e88cd8265419e934b8d",
+    "text": "Jack: Un cal balansoar? Ce e în neregulă cu tine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:02:48.990023Z"
+  },
+  "scripts.construction_kits.red_chair": {
+    "src_hash": "ddd8dbd7d9effff2db033123142d2060",
+    "text": "Scaunul roșu cu perne arată destul de confortabil în acel colț.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:02:51.663235Z"
   }
 }

@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-21T01:01:39.457740Z",
-  "cycle_counter": 6811,
-  "last_target_key": "es:npc.json",
-  "last_pending_total": 2271,
+  "timestamp": "2026-02-21T01:02:15.607017Z",
+  "cycle_counter": 6814,
+  "last_target_key": "es:server.json",
+  "last_pending_total": 128,
   "last_tier": 1,
-  "last_cat_priority": 1,
+  "last_cat_priority": 3,
   "candidates_count": 178,
   "active_candidates_count": 163,
   "skipped_backoff": 12,
@@ -15,19 +15,7 @@
     "pl:npc.json": 6841
   },
   "guard_fail_blocked_count": 3,
-  "guard_fail_blocked_preview": [
-    {
-      "target": "pl:npc.json",
-      "until_cycle": 6841,
-      "remaining_cycles": 30,
-      "guard_fail_rate": 0.936,
-      "guard_fail": 439,
-      "translated": 30,
-      "entries": 1,
-      "dominant_reason": "toxic_cycle",
-      "hard_block": true
-    }
-  ],
+  "guard_fail_blocked_preview": [],
   "tier_config": {
     "tier1": [
       "es",
@@ -52,7 +40,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 6,
+  "cache_cycle": 7,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -236,7 +224,7 @@
     ],
     "lang_completion": {
       "pl": 87.87,
-      "es": 85.17,
+      "es": 85.22,
       "ru": 50.54,
       "ro": 44.01,
       "it": 53.03,
@@ -246,7 +234,7 @@
   },
   "toxic_cycle_cooldown": {
     "enabled": true,
-    "applied": true,
+    "applied": false,
     "config": {
       "min_guard_fail": 180,
       "max_translated": 25,
@@ -254,13 +242,6 @@
       "min_gf_rate": 0.88,
       "cooldown_cycles": 30
     },
-    "last_block": {
-      "target": "pl:npc.json",
-      "translated": 30,
-      "guard_fail": 439,
-      "attempts": 469,
-      "guard_fail_rate": 0.936,
-      "cooldown": 30
-    }
+    "last_block": {}
   }
 }

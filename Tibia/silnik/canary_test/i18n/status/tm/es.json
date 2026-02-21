@@ -155030,5 +155030,29 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-21T01:01:22.253641Z"
+  },
+  "monster.old_bonelord.voice_1": {
+    "src_hash": "611d88fb0bac95d0375b5e376d5f7545",
+    "text": "¡Olho por Olho!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:02:12.401313Z"
+  },
+  "monster.elf_overseer.voice_4": {
+    "src_hash": "6ed28c4a01b2c0a91a9d0f731b898699",
+    "text": "¡Tha'shi Cenath!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:02:12.537642Z"
+  },
+  "monster.elf_arcanist.voice_4": {
+    "src_hash": "6ed28c4a01b2c0a91a9d0f731b898699",
+    "text": "¡Tha'shi Cenath!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:02:12.582027Z"
   }
 }

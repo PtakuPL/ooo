@@ -300,7 +300,7 @@ const ThingTypeList& ThingTypeManager::getThingTypes(const ThingCategory categor
     if (category < ThingLastCategory)
         return m_thingTypes[category];
 
-    throw Exception("invalid thing type category {}", category);
+    throw Exception("invalid thing type category {}", static_cast<uint8_t>(category));
 }
 
 const ThingTypePtr& ThingTypeManager::getThingType(const uint16_t id, const ThingCategory category)

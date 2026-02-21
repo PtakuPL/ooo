@@ -178,3 +178,117 @@ Podsumowanie faili w badanym oknie:
 
 4. „Brak logu = brak bledu”:
    - falsz; brak logu utrudnia diagnoze, ale metadata runu dalej pokazuje twardy fail kroku.
+
+## Aktualizacja 2026-02-21 18:30 UTC (globalny obraz Windows)
+
+Przeanalizowane najnowsze failed runy `Build - Windows`:
+- `22255503360` (job `64385785574`)
+- `22255969728` (job `64386870164`)
+- `22256688321` (job `64388586003`)
+- `22256763145` (job `64388767155`)
+- `22257127872` (job `64389634544`)
+- `22257729301` (job `64391080858`)
+- dodatkowo najnowszy fail: `22261152958` (job `64399602609`)
+
+### Windows: klasy bledow, czestotliwosc i status
+
+1. `WIN-01` (krytyczny, globalny): MSVC ICE C1001 w OTClient Lua binding
+- Powtarza sie w 5/6 analizowanych runow (oraz ponownie w `22261152958`).
+- Staly wzorzec:
+  - `FAILED ... framework/luafunctions_graphics.cpp.obj`
+  - `luainterface.h(484) : fatal error C1001`
+  - `FAILED ... framework/luafunctions.cpp.obj`
+  - `luabinder.h(148/152) : fatal error C1001`
+  - potem `Access violation`, `ninja: build stopped`.
+- To jest glowny blocker Windows build.
+
+2. `WIN-02` (incydentalny, infra): `vcpkg` download fail podczas configure
+- Wykryty w runie `22255969728`.
+- Objawy:
+  - `Download failed, halting portfile`
+  - `vcpkg install failed`
+  - wtornie: `CMAKE_MAKE_PROGRAM is not set`, `CMAKE_C/CXX_COMPILER not set`.
+- Klasa bledu niezalezna od C++ (transient/upstream).
+
+3. `WIN-03` (niskie ryzyko, ale stale): `pathspec ... vcpkg ... did not match`
+- Widoczne w wielu runach na kroku `Install vcpkg`.
+- Nie jest bezposrednim root-cause ICE, ale wymaga cleanupu workflow.
+
+### Korekta stanu prac
+
+- Linux: zielony po fixach enum/fmt (`0364a1c14`) i pozniejszych poprawkach.
+- Windows: nadal nieprzepuszczony przez globalny `C1001`.
+- Nowszy run `22261152958` potwierdza, ze problem jest ten sam (nie nowy blad).
+
+## Aktualizacja 2026-02-21 20:45 UTC (nowe runy po commicie `b3225cdd`)
+
+Nowe runy:
+- Linux: `22263021182` - <https://github.com/PtakuPL/ooo/actions/runs/22263021182>
+- Windows: `22263022244` - <https://github.com/PtakuPL/ooo/actions/runs/22263022244>
+
+### Linux: nowa regresja merytoryczna
+
+Pierwszy realny blad:
+- `luainterface.h:497:23: error: no matching function for call to 'luavalue_cast(int&, std::basic_string_view<char>&)'`
+- w praktyce powtarza sie na wielu TU (`luafunctions_graphics.cpp`, `luafunctions_gfx_singletons.cpp`, `luafunctions.cpp`).
+
+Wniosek:
+- to nie jest infra i nie transient.
+- regresja zostala wprowadzona refaktorem `castValue<T>()` (commit `b3225cdd`), gdzie dla `T=std::string_view`
+  doszlo do zlej instancjacji sciezki `luavalue_cast`.
+
+### Windows: C1001 nadal globalny, ale nowy trigger
+
+Pierwszy realny blad:
+- `FAILED ... framework/luaengine/luainterface.cpp.obj`
+- `luainterface.cpp(41) : fatal error C1001`
+- potem: `Access violation`, `ninja: build stopped`
+
+Wniosek:
+- nadal `WIN-01` (MSVC ICE C1001), ale po zmianach trigger przeniosl sie z `luainterface.h/luabinder.h` do `luainterface.cpp`.
+
+### Dodatkowe obserwacje z logow
+
+1. Toolset:
+   - wybrane `14.44.35207` (dostepne: `14.44.35207`, `14.29.30133`).
+   - to zgodne z workflow i ograniczeniami `compiler.h`.
+
+2. `vcpkg`:
+   - nadal pojawia sie ostrzezenie `pathspec ... vcpkg ... did not match`, ale krok `Install vcpkg` konczy sie sukcesem.
+   - nie jest to root-cause tych dwoch runow.
+
+### Dopisanie do listy klas bledow
+
+#### LNX-05: Regresja po refaktorze `castValue<T>()` (string_view)
+- Objaw:
+  - `error: no matching function for call to luavalue_cast(... std::string_view&)`
+- Run:
+  - `22263021182`
+- Przyczyna:
+  - zmiana semantyki `castValue<T>()` po commicie `b3225cdd`.
+- Status:
+  - open (P0).
+
+#### WIN-04: C1001 w `luainterface.cpp` po wyniesieniu throw helpera
+- Objaw:
+  - `luainterface.cpp(41) : fatal error C1001`
+- Run:
+  - `22263022244`
+- Przyczyna:
+  - ta sama klasa bugu MSVC, nowa lokalizacja triggera.
+- Status:
+  - open (P0), wymagane dalsze odchudzenie/scoping per-file flags.
+
+## Aktualizacja 2026-02-21 21:05 UTC (status napraw lokalnych)
+
+Wdrozone lokalnie (oczekuje na nowe runy CI):
+
+1. Fix LNX-05:
+- `luainterface.h`: przywrocony `else` w `castValue<T>()` dla poprawnej obslugi `std::string_view`.
+
+2. Mitigacja WIN-04:
+- `src/CMakeLists.txt`: `framework/luaengine/luainterface.cpp` dodany do grupy per-file anti-ICE flags
+  (`/Od /Ob0 /d2SSAOptimizer- /d2FH4- /d2notypeopt /permissive-`, `SKIP_PRECOMPILE_HEADERS ON`).
+
+3. Korekta `/MP`:
+- `src/CMakeLists.txt`: usuniete bezwarunkowe `/MP`; `/MP` zalezy teraz od `CMake_MSVC_PARALLEL`.

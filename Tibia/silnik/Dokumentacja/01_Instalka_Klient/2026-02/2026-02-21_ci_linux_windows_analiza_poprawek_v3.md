@@ -145,3 +145,119 @@ Linux:
 Windows:
 - ostatni odpalony run: `22257127872` (`Build - Windows`, SHA `b5f0cffbf0b1e6411c7404ed49c7a381ebd1daa5`)
 - status na `2026-02-21 13:21:29 UTC`: `in_progress`.
+
+## 10. Aktualizacja 2026-02-21 18:30 UTC: Windows nadal fail (ten sam root-cause)
+
+Potwierdzenie z najnowszego runa:
+- run `22261152958`, job `64399602609`
+- status: `failure`
+- SHA: `25eec76812d206ce664d11ea9b3d085395b7977b`
+
+Pierwsze bledy z logu build:
+- `FAILED ... framework/luafunctions_graphics.cpp.obj`
+- `luainterface.h(484) : fatal error C1001`
+- `FAILED ... framework/luafunctions.cpp.obj`
+- `luabinder.h(152) : fatal error C1001`
+- `Access violation`, `ninja: build stopped`
+
+Wniosek:
+- To nie jest nowa klasa bledu, tylko kontynuacja globalnego `MSVC ICE C1001` w sciezce Lua binder/interface.
+- Numer pliku kompilacji (`[10/183]`, `[30/183]`, itp.) nie jest stabilnym wskaznikiem postepu (kompilacja rownolegla ninja).
+
+## 11. Stan roboczy zmian kodu (lokalnie, przed kolejnym push)
+
+Przygotowane poprawki pod C1001 (do walidacji nowym runem po pushu):
+- `canary_test/testyy/src/framework/luaengine/luabinder.h`
+  - wyniesienie throw path poza lambdy/template-heavy sciezke
+  - zamiana czesci lambd na prostsze funktory
+- `canary_test/testyy/src/framework/luaengine/luainterface.h`
+  - uproszczenie `castValue<T>()`
+  - helper `throwLuaBadValueCast(...)`
+- `canary_test/testyy/src/framework/luaengine/luainterface.cpp`
+  - definicje helperow throw (`noinline` na MSVC)
+
+Uwaga operacyjna:
+- run `22261152958` byl na SHA `25eec768...` (commit statusowy workera), wiec nie mial gwarancji zawierac tych lokalnych zmian.
+
+## 12. Aktualizacja 2026-02-21 20:45 UTC: nowy stan po commicie `b3225cdd`
+
+Potwierdzone najnowsze runy na SHA `b3225cddb1fbe3aaaae058d56ef3476d42895bd1`:
+
+- Linux: `22263021182` - `failure`
+- Windows: `22263022244` - `failure`
+
+### Linux: nowy root-cause (regresja kodu, nie infra)
+
+Pierwszy realny blad (Debug i Release):
+- `luainterface.h:497:23: error: no matching function for call to 'luavalue_cast(... std::string_view&)'`
+- oraz wtornie:
+  - `cannot bind non-const lvalue reference of type 'Color&' to an rvalue of type 'Color'`
+
+Lokalizacja i przyczyna:
+- `canary_test/testyy/src/framework/luaengine/luainterface.h` (`castValue<T>()`)
+- po refaktorze pod MSVC zniknal dawny uklad `if constexpr (...) { ... } else { ... }`;
+  dla `T=std::string_view` kompilator i tak instancjuje sciezke `luavalue_cast(index, value)`, co powoduje fail.
+
+Wniosek:
+- Linux nie jest juz zielony po tym commicie.
+- To jest deterministyczna regresja kodu (nie transient CI/network).
+
+### Windows: C1001 nadal aktywny, ale punkt awarii przesuniety
+
+Pierwszy realny blad:
+- `FAILED ... framework/luaengine/luainterface.cpp.obj`
+- `luainterface.cpp(41) : fatal error C1001`
+- potem: `Access violation`, `ninja: build stopped`
+
+Porownanie do poprzedniego runa (`22261152958`):
+- wczesniej: `luainterface.h(484)` + `luabinder.h(152)`
+- teraz: `luainterface.cpp(41)` (helper throw path)
+
+Wniosek:
+- klasa bledu jest ta sama (`MSVC ICE C1001`), ale trigger przesunal sie do nowego helpera.
+- workaround nie zamknal problemu, tylko zmienil miejsce crashu.
+
+### Dodatkowe fakty techniczne (wplyw na skutecznosc napraw)
+
+1. Runner `windows-2022` nadal ma tylko:
+   - `14.44.35207`
+   - `14.29.30133`
+   Workflow poprawnie wybiera `14.44` (14.29 odpada przez `compiler.h`).
+
+2. `luainterface.cpp` nie jest obecnie objety najmocniejsza grupa flag anty-ICE
+   (`/Od /Ob0 /d2SSAOptimizer- /d2FH4- /d2notypeopt /permissive-`, `SKIP_PRECOMPILE_HEADERS ON`)
+   w `src/CMakeLists.txt`.
+
+3. Mimo `-DCMake_MSVC_PARALLEL=OFF` w workflow, globalne `/MP` nadal jest ustawiane
+   w `src/CMakeLists.txt` przez `target_compile_options(... /MP ...)`, wiec redukcja presji na MSVC
+   jest tylko czesciowa.
+
+### Priorytet po tej aktualizacji
+
+P0:
+1. Naprawic regresje Linux w `castValue<T>()` (przywrocic semantyke jak przed `b3225cdd` dla `std::string_view`).
+2. Objac `luainterface.cpp` pelnym zestawem flag anty-ICE i wylaczeniem PCH per-file.
+3. Uspojnic `/MP` tak, aby `CMake_MSVC_PARALLEL=OFF` faktycznie usuwal wieloprocesorowa kompilacje dla MSVC.
+
+## 13. Aktualizacja 2026-02-21 21:05 UTC: naprawy wdrozone lokalnie (oczekuja na CI)
+
+Wdrozone lokalnie poprawki kodu:
+
+1. Linux regresja `castValue<T>()`:
+- plik: `canary_test/testyy/src/framework/luaengine/luainterface.h`
+- zmiana: przywrocony uklad `if constexpr (...) { ... } else { ... }`,
+  tak aby dla `T=std::string_view` nie byla instancjowana sciezka `luavalue_cast(index, value)`.
+
+2. Windows C1001 (nowy trigger w `luainterface.cpp`):
+- plik: `canary_test/testyy/src/CMakeLists.txt`
+- zmiana: `framework/luaengine/luainterface.cpp` dodany do grupy per-file flags:
+  `/Od /Ob0 /d2SSAOptimizer- /d2FH4- /d2notypeopt /permissive-` + `SKIP_PRECOMPILE_HEADERS ON`.
+
+3. Realne sterowanie `/MP` z workflow:
+- plik: `canary_test/testyy/src/CMakeLists.txt`
+- zmiana: usuniete globalne, bezwarunkowe `/MP`; teraz `/MP` jest ustawiane tylko gdy `CMake_MSVC_PARALLEL` jest wlaczone.
+
+Status:
+- zmiany sa przygotowane do walidacji przez nowe runy:
+  - `Build - Linux (OTC Client)`
+  - `Build - Windows`

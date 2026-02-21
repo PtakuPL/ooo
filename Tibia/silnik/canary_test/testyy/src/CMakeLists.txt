@@ -167,6 +167,7 @@ if (MSVC)
     #          /d2notypeopt : disable P2 type optimization (ACCESS VIOLATION in codegen)
     #          /permissive- : strict standard conformance (different template lookup path)
     set_source_files_properties(
+      framework/luaengine/luainterface.cpp
       framework/luafunctions.cpp
       framework/luafunctions_graphics.cpp
       framework/luafunctions_gfx_singletons.cpp
@@ -276,16 +277,6 @@ endif(CMAKE_BUILD_TYPE MATCHES Debug)
 if (CMAKE_COMPILER_IS_GNUCXX)
   if (CMAKE_CXX_COMPILER_VERSION VERSION_LESS GNUCXX_MINIMUM_VERSION)
     message(FATAL_ERROR "GCC version must be at least ${GNUCXX_MINIMUM_VERSION}!")
-  endif()
-endif()
-
-
-# Multiprocessor compiller
-if(CMake_MSVC_PARALLEL)
-  if(CMake_MSVC_PARALLEL GREATER 0)
-    add_definitions(/MP${CMake_MSVC_PARALLEL})
-  else()
-    add_definitions(/MP)
   endif()
 endif()
 
@@ -901,7 +892,14 @@ if(MSVC)
           WINVER=0x0A00
   )
 
-  target_compile_options(${PROJECT_NAME} PUBLIC /MP /EHsc /bigobj)
+  target_compile_options(${PROJECT_NAME} PUBLIC /EHsc /bigobj)
+  if(CMake_MSVC_PARALLEL)
+    if(CMake_MSVC_PARALLEL GREATER 0)
+      target_compile_options(${PROJECT_NAME} PUBLIC /MP${CMake_MSVC_PARALLEL})
+    else()
+      target_compile_options(${PROJECT_NAME} PUBLIC /MP)
+    endif()
+  endif()
   # /FS and /Zf improve PDB generation speed but are MSVC-only (clang-cl rejects /Zf)
   if(NOT CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
     target_compile_options(${PROJECT_NAME} PUBLIC /FS /Zf)

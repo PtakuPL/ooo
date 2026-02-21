@@ -491,17 +491,17 @@ T LuaInterface::castValue(int index)
 {
     if constexpr (std::is_same_v<T, std::string_view>) {
         return g_lua.toVString(index);
-    }
-
-    T value {};
-    if (!luavalue_cast(index, value)) {
+    } else {
+        T value {};
+        if (!luavalue_cast(index, value)) {
 #ifdef _MSC_VER
-        throwLuaBadValueCast(typeName(index), "(type info unavailable on MSVC)");
+            throwLuaBadValueCast(typeName(index), "(type info unavailable on MSVC)");
 #else
-        throwLuaBadValueCast(typeName(index), stdext::demangle_type<T>().c_str());
+            throwLuaBadValueCast(typeName(index), stdext::demangle_type<T>().c_str());
 #endif
+        }
+        return value;
     }
-    return value;
 }
 
 template<typename... T>

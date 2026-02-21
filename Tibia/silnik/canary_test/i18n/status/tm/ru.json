@@ -39886,5 +39886,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:20:09.156432Z"
+  },
+  "npc.captain_harava.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "До свидания. Порекомендуйте нас, если вы остались довольны нашим сервисом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:29:32.977607Z"
+  },
+  "npc.captain_harava.greet_msg_1": {
+    "src_hash": "d73132f2878353df2f07230be0e0e6f2",
+    "text": "Добро пожаловать на борт, путешественник. Где я могу {sail} тебя сегодня?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:29:32.979393Z"
+  },
+  "npc.captain_harava.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Тогда до свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:29:32.980677Z"
+  },
+  "npc.captain_jack_rat.greet_msg_1": {
+    "src_hash": "8127fe4721dc499181b3719b97e2e801",
+    "text": "Привет, пират! Садитесь на борт и отправляйтесь домой! Добро пожаловать на борт корабля Флйинг Bat. Должен ли я установить {sail}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:29:32.982935Z"
+  },
+  "npc.captain_pelagia.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "До свидания. Порекомендуйте нас, если вы остались довольны нашим сервисом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:29:32.989356Z"
   }
 }

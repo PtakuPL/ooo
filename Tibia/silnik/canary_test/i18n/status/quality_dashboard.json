@@ -33,12 +33,12 @@
     "issues_count": 1417
   },
   "es": {
-    "last_cycle": "2026-02-21T00:28:34.969770Z",
-    "last_translated": 2,
-    "total_suspicious": 72220,
-    "total_rejected": 2354,
-    "total_gt_guard_fail": 23456,
-    "cycles": 1741,
+    "last_cycle": "2026-02-21T00:30:42.592428Z",
+    "last_translated": 23,
+    "total_suspicious": 72281,
+    "total_rejected": 2355,
+    "total_gt_guard_fail": 23476,
+    "cycles": 1742,
     "quality_score": 60.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 350877
@@ -66,24 +66,24 @@
     "issues_count": 2470
   },
   "it": {
-    "last_cycle": "2026-02-21T00:23:21.775226Z",
+    "last_cycle": "2026-02-21T00:29:23.974822Z",
     "last_translated": 11,
-    "total_suspicious": 8862,
-    "total_rejected": 911,
-    "total_gt_guard_fail": 3115,
-    "cycles": 504,
+    "total_suspicious": 8881,
+    "total_rejected": 913,
+    "total_gt_guard_fail": 3134,
+    "cycles": 505,
     "quality_score": 75.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 77055
   },
   "ru": {
-    "last_cycle": "2026-02-21T00:21:06.771192Z",
-    "last_translated": 15,
-    "total_suspicious": 49622,
+    "last_cycle": "2026-02-21T00:29:33.688359Z",
+    "last_translated": 30,
+    "total_suspicious": 49649,
     "total_rejected": 963,
     "total_gt_guard_fail": 2589,
-    "cycles": 480,
-    "quality_score": 68.6,
+    "cycles": 481,
+    "quality_score": 68.7,
     "last_audit": "2026-02-20T22:12:42.470260Z",
     "issues_count": 214898
   },
@@ -550,12 +550,12 @@
     "issues_count": 958
   },
   "ro": {
-    "last_cycle": "2026-02-21T00:21:18.073717Z",
-    "last_translated": 3,
-    "total_suspicious": 90280,
-    "total_rejected": 3389,
-    "total_gt_guard_fail": 5563,
-    "cycles": 450,
+    "last_cycle": "2026-02-21T00:29:59.935023Z",
+    "last_translated": 22,
+    "total_suspicious": 90338,
+    "total_rejected": 3392,
+    "total_gt_guard_fail": 5571,
+    "cycles": 451,
     "quality_score": 61.4,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 190054

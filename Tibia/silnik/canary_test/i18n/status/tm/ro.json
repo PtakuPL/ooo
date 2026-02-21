@@ -75078,5 +75078,69 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:17:10.828146Z"
+  },
+  "npc.ziyad.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "La revedere. Recomandați-ne dacă ați fost mulțumit de serviciile noastre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:29:47.881486Z"
+  },
+  "npc.ziyad.stdmod_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Simte vântul în părul tău în timpul uneia dintre plimbările mele pe covor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:29:47.882482Z"
+  },
+  "npc.ziyad.stdmod_3": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Cauți o trecere la {0} pentru {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:29:47.883252Z"
+  },
+  "npc.ziyad.stdmod_4": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Am dori să vă servim ceva timp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:29:47.884026Z"
+  },
+  "npc.ziyad.voice_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Simte vântul în părul tău în timpul uneia dintre plimbările mele pe covor!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:29:47.885222Z"
+  },
+  "npc.znozel.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Nu uitați să vă depuneți banii aici în Banca Globală înainte de a pleca în aventură.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:29:47.890176Z"
+  },
+  "npc.zora.say_1": {
+    "src_hash": "ca5af46d9c20d6cbd9f33d8c59caee9d",
+    "text": "Vrei să cumperi o minge de fotbal pentru 111 aur?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:29:47.893444Z"
+  },
+  "npc.zora.say_2": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Iată-l.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:29:47.893859Z"
   }
 }

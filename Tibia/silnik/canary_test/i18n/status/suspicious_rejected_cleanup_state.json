@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T00:28:34.953813Z",
-  "last_cycle": 33,
+  "timestamp": "2026-02-21T00:30:42.508175Z",
+  "last_cycle": 34,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -791,7 +791,12 @@
       "npc.captain_haba.greet_msg_1",
       "npc.captain_haba.greet_msg_2",
       "npc.captain_haba_open_sea.sendtrade_msg_1",
-      "npc.captain_haba_open_sea.walkaway_msg_1"
+      "npc.captain_haba_open_sea.walkaway_msg_1",
+      "npc.captain_harava.farewell_msg_1",
+      "npc.captain_harava.greet_msg_1",
+      "npc.captain_harava.walkaway_msg_1",
+      "npc.captain_jack_rat.greet_msg_1",
+      "npc.captain_pelagia.farewell_msg_1"
     ],
     "ro|npc.json": [
       "npc.a_fading_memory.greet_msg_1",
@@ -823,7 +828,15 @@
       "npc.zerbrus.stdmod_6",
       "npc.zerbrus.stdmod_9",
       "npc.zerbrus.voice_1",
-      "npc.zerbrus.voice_5"
+      "npc.zerbrus.voice_5",
+      "npc.ziyad.farewell_msg_1",
+      "npc.ziyad.stdmod_1",
+      "npc.ziyad.stdmod_3",
+      "npc.ziyad.stdmod_4",
+      "npc.ziyad.voice_1",
+      "npc.znozel.voice_1",
+      "npc.zora.say_1",
+      "npc.zora.say_2"
     ],
     "pl|cpp.json": [
       "cpp.augment.format_base",

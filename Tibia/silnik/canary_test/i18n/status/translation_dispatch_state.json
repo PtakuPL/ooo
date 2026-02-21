@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-21T01:31:54.668212Z",
-  "cycle_counter": 6865,
-  "last_target_key": "ro:questlog.json",
-  "last_pending_total": 1785,
+  "timestamp": "2026-02-21T01:32:54.840645Z",
+  "cycle_counter": 6868,
+  "last_target_key": "ro:html.json",
+  "last_pending_total": 1189,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 178,
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 25,
+  "cache_cycle": 26,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -221,9 +221,9 @@
     "lang_completion": {
       "pl": 87.87,
       "es": 85.23,
-      "ru": 50.55,
+      "ru": 50.57,
       "ro": 44.04,
-      "it": 53.13,
+      "it": 53.18,
       "sr": 45.59,
       "sv": 29.5
     }

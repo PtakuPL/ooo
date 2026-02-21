@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-21T01:30:08.960081Z",
+  "timestamp": "2026-02-21T01:33:14.651292Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 700,
+  "entries_total": 701,
   "entries_by_lang": {
     "es": 269,
     "pl": 149,
@@ -73,7 +73,7 @@
     "de": 659,
     "fr": 578,
     "hu": 663,
-    "it": 420,
+    "it": 421,
     "nl": 691,
     "pt": 620,
     "ro": 421,
@@ -676,6 +676,12 @@
     {
       "lang": "it",
       "json_file": "client.json",
+      "identical_to_en": 1,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "otclient_modules.json",
       "identical_to_en": 1,
       "domain_priority": 9
     },
@@ -1314,12 +1320,6 @@
       "json_file": "monsters.json",
       "identical_to_en": 67,
       "domain_priority": 8
-    },
-    {
-      "lang": "bg",
-      "json_file": "cpp.json",
-      "identical_to_en": 158,
-      "domain_priority": 9
     }
   ],
   "selected": {

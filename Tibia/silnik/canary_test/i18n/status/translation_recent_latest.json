@@ -1,101 +1,53 @@
 {
-  "timestamp": "2026-02-21T01:32:04.753536Z",
-  "language": "ro",
-  "json_file": "questlog.json",
-  "translated": 15,
+  "timestamp": "2026-02-21T01:33:46.850038Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 7,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "questlog.quest_1.mission_1.name",
-      "en": "The Hidden Seal",
-      "translated": "The Hidden Seal",
+      "key": "npc.a_fading_memory.greet_msg_1",
+      "en": "Oh...",
+      "translated": "Oh...",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_1.mission_2.name",
-      "en": "The Plague Seal",
-      "translated": "The Plague Seal",
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_1.mission_8.name",
-      "en": "The Final Battle",
-      "translated": "The Final Battle",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_10.mission_9.name",
-      "en": "Mission 09: Decision",
-      "translated": "Mission 09: Decision",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_10.name",
-      "en": "Paw and Fur: Carniphilas",
-      "translated": "Paw and Fur: Carniphilas",
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_12.name",
-      "en": "Paw and Fur: Mammoths",
-      "translated": "Paw and Fur: Mammoths",
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_13.name",
-      "en": "Paw and Fur: Gnarlhounds",
-      "translated": "Paw and Fur: Gnarlhounds",
-      "source": "tm"
-    },
-    {
-      "key": "questlog.quest_11.mission_14.name",
-      "en": "Paw and Fur: Terramites",
-      "translated": "Paw and Fur: Terramites",
-      "source": "tm"
-    },
-    {
-      "key": "questlog.quest_11.mission_15.name",
-      "en": "Paw and Fur: Apes",
-      "translated": "Paw and Fur: Apes",
-      "source": "tm"
-    },
-    {
-      "key": "questlog.quest_11.mission_17.name",
-      "en": "Paw and Fur: Gargoyles",
-      "translated": "Paw and Fur: Gargoyles",
-      "source": "tm"
-    },
-    {
-      "key": "questlog.quest_11.mission_18.name",
-      "en": "Paw and Fur: Ice Golems",
-      "translated": "Paw and Fur: Ice Golems",
-      "source": "tm"
-    },
-    {
-      "key": "questlog.quest_11.mission_22.name",
-      "en": "Paw and Fur: Wyverns",
-      "translated": "Paw and Fur: Wyverns",
-      "source": "tm"
-    },
-    {
-      "key": "questlog.quest_11.mission_26.name",
-      "en": "Paw and Fur: Bonebeasts",
-      "translated": "Paw and Fur: Bonebeasts",
-      "source": "tm"
-    },
-    {
-      "key": "questlog.quest_11.mission_31.name",
-      "en": "Paw and Fur: Werewolves",
-      "translated": "Paw and Fur: Werewolves",
-      "source": "tm"
-    },
-    {
-      "key": "questlog.quest_11.mission_32.name",
-      "en": "Paw and Fur: Nightmares",
-      "translated": "Paw and Fur: Nightmares",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     }
   ]

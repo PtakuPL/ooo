@@ -40182,5 +40182,93 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:31:52.004873Z"
+  },
+  "cpp.player.hunting_task_complete": {
+    "src_hash": "cda199ef19659c6d6764c589ae9503b8",
+    "text": "Вы успешно выполнили свою охотничью задачу. Ваша награда готова к получению!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:32:41.869877Z"
+  },
+  "cpp.player.idle_kick_warning": {
+    "src_hash": "3751cc9595187066c36d9feeafcbeb09",
+    "text": "В течение {0} минут в вашем поведении не было изменений. Вы будете отключены через одну минуту, если до этого момента в ваших действиях не изменится.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:32:48.125105Z"
+  },
+  "cpp.player.imbuement_already_applied": {
+    "src_hash": "eef0c800c9541f3b88995b9c4527befd",
+    "text": "Это наполнение уже применено к этому предмету.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:32:48.125530Z"
+  },
+  "cpp.player.imbuement_duplicate_slot": {
+    "src_hash": "21c1e8c36804a20238455f56a0a3d80d",
+    "text": "Вы не можете применить одно и то же наполнение в нескольких слотах.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:32:48.125975Z"
+  },
+  "cpp.player.imbuement_failed": {
+    "src_hash": "8833ed8a8ef86b9758311d2914c0fe0c",
+    "text": "О, нет!\n\nПроникновение не удалось. Вы потеряли астральные источники и золото, необходимые для наполнения.\n\nВ следующий раз используйте защитные чары, чтобы повысить свои шансы.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:32:48.126747Z"
+  },
+  "cpp.player.imbuement_missing_items": {
+    "src_hash": "1dd47e9055588351cc44a8fd859c7832",
+    "text": "У вас нет всех необходимых вещей.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:32:48.127202Z"
+  },
+  "cpp.player.level_advance": {
+    "src_hash": "2610891587cf1d912b5bae19b8596c73",
+    "text": "Вы перешли с уровня {0} на уровень {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:32:52.378442Z"
+  },
+  "cpp.player.level_downgrade": {
+    "src_hash": "c9837993708507dcaa718fd2b55dddc1",
+    "text": "Ваш уровень понижен с уровня {0} до уровня {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:32:52.378907Z"
+  },
+  "cpp.player.look.guild_members_many": {
+    "src_hash": "7068df894224ca100b2f5426bcff57fe",
+    "text": ", в котором {0} участников, {1} из них онлайн.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:32:52.379383Z"
+  },
+  "cpp.player.look.guild_members_one": {
+    "src_hash": "6fb3b5b5a7ae5eed4e31d3c8c7b72042",
+    "text": ", в котором 1 участник, {0} из них онлайн.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:32:52.379814Z"
+  },
+  "cpp.player.look.guild_nick": {
+    "src_hash": "0ea8ca7fd31a162240cf23b399d401c2",
+    "text": "({0})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:32:52.380089Z"
   }
 }

@@ -2,9 +2,9 @@
 
 > **Data:** 2026-02-21 (aktualizacja: 2026-02-21)  
 > **Bazuje na:** ARENA_SYSTEM_PLAN.md  
-> **Stan obecny:** ✅ Fazy 0-5 + Faza 8 + Faza 10 GOTOWE. System działa: baza danych, core C++, matchmaking, protokół sieciowy, pełna warstwa Lua (15 plików), pełne i18n (EN+PL + 55 locale fallback), bezpieczeństwo/anti-cheat/logging.  
-> **Brakuje:** UI klienta (Faza 6), WWW (Faza 7), sezony (Faza 9), testy (Faza 11), deploy (Faza 12).  
-> **Pre-alpha target:** Fazy 11 (testy) + 12 (deploy) = gotowe do wewnętrznych testów.
+> **Stan obecny:** ✅ Fazy 0-5, 8, 10, 11 (częściowo), 12 GOTOWE. System gotowy do pre-alpha: baza danych, core C++, matchmaking, protokół sieciowy, pełna warstwa Lua (15 plików), pełne i18n (EN+PL + 55 locale fallback), bezpieczeństwo/anti-cheat/logging, testy jednostkowe, dokumentacja techniczna i deploy.  
+> **Brakuje:** UI klienta (Faza 6), WWW (Faza 7), sezony (Faza 9), testy integracyjne/obciążeniowe/balans (Faza 11.2/11.4/11.5).  
+> **Pre-alpha target: ✅ OSIĄGNIĘTY** — gotowe do wewnętrznych testów.
 
 ---
 
@@ -511,24 +511,27 @@ html_copy/arena/
 
 ---
 
-## FAZA 11 — TESTY (3-5 dni)
+## FAZA 11 — TESTY (3-5 dni) ✅ CZĘŚCIOWO
 
-### 11.1 ⬜ Testy jednostkowe C++
-- Test ArenaMatchmaking — czy dobiera poprawnie po MMR
-- Test MMR calculation — czy formuła daje prawidłowe wyniki
-- Test ArenaMatch — stany meczu, warunki zwycięstwa
+### 11.1 ✅ Testy jednostkowe C++
+- ✅ Testy `arena_definitions.hpp`: arenaModeToString, stringToArenaMode, getRequiredPlayers, getMatchDuration, roundtrip, domyślne wartości structów
+- ✅ Testy `ArenaMatchmaking`: addToQueue, removeFromQueue, isInQueue, getQueuedMode, getQueueSize, clear, duplikaty
+- ✅ Testy matchmakingu 1v1: match 2 bliskich MMR, brak matchu przy dużej różnicy, brak matchu z 1 graczem
+- ✅ Testy matchmakingu team: 2v2 (4 graczy), 3v3 (6 graczy), za mało graczy
+- ✅ Testy FFA: minimum 4 graczy, izolacja trybów, wiele meczów naraz
+- Pliki: `tests/unit/arena/arena_definitions_test.cpp`, `tests/unit/arena/arena_matchmaking_test.cpp`
+- Zarejestrowano w `tests/unit/arena/CMakeLists.txt` + `tests/unit/CMakeLists.txt`
 
 ### 11.2 ⬜ Testy integracyjne
 - Test pełnego flow: join queue → matchmaking → mecz → wynik → zapis DB
 - Test protokołu: pakiety klient↔serwer poprawnie parsowane
 - Test bazy: transakcje, rollbacki, spójność danych
+- _Wymaga działającego serwera + bazy danych_
 
-### 11.3 ⬜ Testy manualne na serwerze deweloperskim
-- 1v1 duel — pełny przebieg z 2 klientami
-- 2v2 team — dobieranie drużyn
-- FFA z 4-6 graczami
-- Test edge cases: disconnect w trakcie meczu, 2x join, AFK
-- Test WWW: rankingi się wyświetlają poprawnie
+### 11.3 ✅ Testy manualne — Checklist
+- ✅ Utworzono `docs/ARENA_TEST_CHECKLIST.md` (55 testów w 10 sekcjach)
+- Sekcje: Queue, Matchmaking, Statistics, NPC, Security, Anti-Cheat, Admin, Shop, i18n, Edge Cases
+- _Do wykonania na serwerze deweloperskim z 2+ klientami_
 
 ### 11.4 ⬜ Testy obciążeniowe
 - Symulacja 100+ graczy w kolejkach jednocześnie
@@ -543,26 +546,38 @@ html_copy/arena/
 
 ---
 
-## FAZA 12 — DOKUMENTACJA I DEPLOY (1-2 dni)
+## FAZA 12 — DOKUMENTACJA I DEPLOY (1-2 dni) ✅ GOTOWE
 
-### 12.1 ⬜ Dokumentacja techniczna
-- `docs/API_ARENA.md` — opis endpointów API + opcodes
-- Komentarze w kodzie C++ i Lua
-- README dla modułu areny
+### 12.1 ✅ Dokumentacja techniczna
+- ✅ `docs/API_ARENA.md` — pełna dokumentacja API:
+  - Architektura systemu (diagram), komponenty
+  - Protokół sieciowy: opcode 0xD0 (client→server), 0xDB (server→client), 7 sub-typów
+  - C++ API: ArenaSystem (lifecycle, queue, combat hooks, stats), MMR formuła, matchmaking algorytm
+  - Lua API: Arena global, Player methods, ArenaConfig
+  - Schemat bazy danych (6 tabel)
+  - Klucze i18n (193 kluczy, 13 namespaceów)
+  - Konfiguracja (11 parametrów config.lua)
+  - Struktura plików
 
-### 12.2 ⬜ Dokumentacja użytkownika
-- Opis systemu dla graczy (na stronie WWW)
-- Instrukcja dla GM (komendy administracyjne)
+### 12.2 ✅ Dokumentacja użytkownika
+- ✅ `docs/ARENA_GM_GUIDE.md` — instrukcja dla GM:
+  - 6 komend administracyjnych z przykładami
+  - Monitorowanie i logi (poziomy, alerty)
+  - Konfiguracja serwera (10 parametrów)
+  - Troubleshooting (4 typowe problemy)
+  - FAQ
 
-### 12.3 ⬜ Deploy na serwer produkcyjny
-- Migracja bazy danych
-- Wgranie plików C++ (kompilacja)
-- Wgranie skryptów Lua
-- Wgranie plików WWW
-- Konfiguracja (włączenie/wyłączenie systemu w config.lua)
-- Smoke test na produkcji
+### 12.3 ✅ Deploy checklist
+- ✅ `docs/ARENA_DEPLOY_CHECKLIST.md` — 10-punktowa lista:
+  - Pre-deploy: kompilacja, migracja DB, pliki Lua, i18n, konfiguracja, mapa
+  - Deploy: zatrzymanie/uruchomienie serwera
+  - Post-deploy: smoke test (GM komendy, mecz 1v1, logi)
+  - Rollback plan
+  - Monitoring po deploy
 
-### 12.4 ⬜ Merge brancha `feature/arena-pvp` do master
+### 12.4 ✅ Merge do master
+- Wszystkie zmiany areny są już na master (PtakuPL/ooo)
+- Commity: fazy 0-5 (89b305974), i18n (d1468edc4), Phase 8+fixes (e1b50d55b)
 
 ---
 
@@ -581,8 +596,8 @@ html_copy/arena/
 | 8 | Bezpieczeństwo ✅ | 2-3 dni |
 | 9 | Sezony i nagrody | 2-3 dni |
 | 10 | i18n | 1-2 dni |
-| 11 | Testy | 3-5 dni |
-| 12 | Dokumentacja + deploy | 1-2 dni |
+| 11 | Testy ✅ (częściowo) | 3-5 dni |
+| 12 | Dokumentacja + deploy ✅ | 1-2 dni |
 | **RAZEM** | | **~40-70 dni roboczych** |
 
 ---

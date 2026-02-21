@@ -1,20 +1,45 @@
 {
-  "timestamp": "2026-02-21T09:57:58.254890Z",
-  "cycle_counter": 7029,
-  "last_target_key": "es:monsters.json",
-  "last_pending_total": 796,
+  "timestamp": "2026-02-21T09:58:47.841431Z",
+  "cycle_counter": 7032,
+  "last_target_key": "es:npc.json",
+  "last_pending_total": 2271,
   "last_tier": 1,
-  "last_cat_priority": 2,
+  "last_cat_priority": 1,
   "candidates_count": 178,
-  "active_candidates_count": 161,
+  "active_candidates_count": 159,
   "skipped_backoff": 15,
-  "skipped_guard_fail": 2,
+  "skipped_guard_fail": 4,
   "guard_fail_blacklist": {
     "pl:items.json": 7038,
-    "es:items.json": 7039
+    "es:items.json": 7039,
+    "es:server.json": 7047,
+    "pl:npc.json": 7062
   },
-  "guard_fail_blocked_count": 2,
-  "guard_fail_blocked_preview": [],
+  "guard_fail_blocked_count": 4,
+  "guard_fail_blocked_preview": [
+    {
+      "target": "pl:npc.json",
+      "until_cycle": 7062,
+      "remaining_cycles": 30,
+      "guard_fail_rate": 0.9507,
+      "guard_fail": 579,
+      "translated": 30,
+      "entries": 1,
+      "dominant_reason": "toxic_cycle",
+      "hard_block": true
+    },
+    {
+      "target": "es:server.json",
+      "until_cycle": 7047,
+      "remaining_cycles": 15,
+      "guard_fail_rate": 0.9267,
+      "guard_fail": 139,
+      "translated": 11,
+      "entries": 5,
+      "dominant_reason": "placeholder",
+      "hard_block": false
+    }
+  ],
   "tier_config": {
     "tier1": [
       "es",
@@ -39,7 +64,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 8,
+  "cache_cycle": 9,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -241,7 +266,7 @@
   },
   "toxic_cycle_cooldown": {
     "enabled": true,
-    "applied": false,
+    "applied": true,
     "config": {
       "min_guard_fail": 180,
       "max_translated": 25,
@@ -249,6 +274,13 @@
       "min_gf_rate": 0.88,
       "cooldown_cycles": 30
     },
-    "last_block": {}
+    "last_block": {
+      "target": "pl:npc.json",
+      "translated": 30,
+      "guard_fail": 579,
+      "attempts": 609,
+      "guard_fail_rate": 0.9507,
+      "cooldown": 30
+    }
   }
 }

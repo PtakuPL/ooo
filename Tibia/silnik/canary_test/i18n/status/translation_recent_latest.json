@@ -1,131 +1,53 @@
 {
-  "timestamp": "2026-02-21T09:57:54.789337Z",
-  "language": "pl",
-  "json_file": "monsters.json",
-  "translated": 30,
+  "timestamp": "2026-02-21T09:59:27.990368Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 7,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "monster.demon_goblin.name",
-      "en": "Demon Goblin",
-      "translated": "Demon Goblin",
+      "key": "npc.a_fading_memory.greet_msg_1",
+      "en": "Oh...",
+      "translated": "Oh...",
       "source": "tm"
     },
     {
-      "key": "monster.schiach.voice_2",
-      "en": "Psh psh psh!!",
-      "translated": "Psz psz psz!!",
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "monster.lucifuga_aranea.desc",
-      "en": "a lucifuga aranea",
-      "translated": "lucifuga aranea",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "monster.humorless_fungus.voice_1",
-      "en": "Munch munch munch!",
-      "translated": "Przeżuwać przeżuwać przeżuwać!",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "monster.minishabaal.voice_5",
-      "en": "He He He",
-      "translated": "On On On",
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
       "source": "tm"
     },
     {
-      "key": "monster.iks_yapunac.desc",
-      "en": "an iks yapunac",
-      "translated": "iks yapunac",
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
       "source": "tm"
     },
     {
-      "key": "monster.iks_pututu.desc",
-      "en": "an iks pututu",
-      "translated": "iks pututu",
-      "source": "tm"
-    },
-    {
-      "key": "monster.iks_ahpututu.desc",
-      "en": "an iks ahpututu",
-      "translated": "iks ahpututu",
-      "source": "tm"
-    },
-    {
-      "key": "monster.iks_chuka.desc",
-      "en": "an iks chuka",
-      "translated": "iks chuka",
-      "source": "tm"
-    },
-    {
-      "key": "monster.iks_churrascan.desc",
-      "en": "an iks churrascan",
-      "translated": "iks churrascan",
-      "source": "tm"
-    },
-    {
-      "key": "monster.iks_aucar.desc",
-      "en": "an iks aucar",
-      "translated": "iks aucar",
-      "source": "tm"
-    },
-    {
-      "key": "monster.the_pale_count.name",
-      "en": "The Pale Count",
-      "translated": "The Pale Count",
-      "source": "tm"
-    },
-    {
-      "key": "monster.the_pale_count.desc",
-      "en": "The Pale Count",
-      "translated": "The Pale Count",
-      "source": "tm"
-    },
-    {
-      "key": "monster.sir_valorcrest.name",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest",
-      "source": "tm"
-    },
-    {
-      "key": "monster.sir_valorcrest.desc",
-      "en": "Sir Valorcrest",
-      "translated": "Sir Valorcrest",
-      "source": "tm"
-    },
-    {
-      "key": "monster.white_pale.name",
-      "en": "White Pale",
-      "translated": "White Pale",
-      "source": "tm"
-    },
-    {
-      "key": "monster.white_pale.desc",
-      "en": "White Pale",
-      "translated": "White Pale",
-      "source": "tm"
-    },
-    {
-      "key": "monster.the_welter.name",
-      "en": "The Welter",
-      "translated": "The Welter",
-      "source": "tm"
-    },
-    {
-      "key": "monster.the_welter.desc",
-      "en": "The Welter",
-      "translated": "The Welter",
-      "source": "tm"
-    },
-    {
-      "key": "monster.water_buffalo.name",
-      "en": "Water Buffalo",
-      "translated": "Water Buffalo",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     }
   ]

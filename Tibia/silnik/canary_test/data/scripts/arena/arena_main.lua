@@ -79,7 +79,7 @@ function ArenaPvP.processMatchRewards(matchData)
 			-- Apply bonus points
 			if bonusPoints > 0 then
 				db.query(string.format(
-					"UPDATE \`arena_players\` SET \`arena_points\` = \`arena_points\` + %d WHERE \`player_id\` = %d",
+					"UPDATE `arena_players` SET `arena_points` = `arena_points` + %d WHERE `player_id` = %d",
 					bonusPoints, pData.id
 				))
 				local bonusMsg = table.concat(bonusParts, " ")

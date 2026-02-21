@@ -3,9 +3,11 @@
 -- All user-facing strings use i18n keys from i18n/<lang>/arena.json
 
 ArenaConfig = {
+	-- Enable/disable the arena system (set to true when C++ ArenaSystem is ready)
+	enabled = false,
+
 	-- Minimum level to join arena
 	minLevel = 50,
-
 	-- Cooldown between arena joins (seconds)
 	joinCooldownSeconds = 30,
 

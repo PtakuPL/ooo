@@ -1,53 +1,39 @@
 -- Arena PvP - Security & Anti-Cheat Rules
 -- Phase 8.1: In-match restrictions
--- Blocks: teleport spells, logout, party invites outside match,
---         banned items, skulls, exp/item loss
+-- Blocks: party changes, item movement of banned items during match,
+--         AFK detection, exp/item loss
 -- All user-facing strings use i18n keys from i18n/<lang>/arena.json
+--
+-- NOTE: Some restrictions (spell blocking, item use blocking, skull blocking,
+-- logout blocking) require EventCallback types that do not exist in Canary yet
+-- (playerOnSpellCheck, playerOnItemUse, playerOnGainSkullTicks, playerOnLogout).
+-- These will be implemented when C++ support for those callbacks is added.
+-- For now we use the available callbacks: partyOnJoin, playerOnMoveItem,
+-- playerOnMoveCreature, creatureOnTargetCombat.
 
 -- ============================================
--- 1. Block teleport/movement spells in arena
+-- 1. Block party join during arena match
 -- ============================================
-local blockSpells = EventCallback("ArenaBlockTeleportSpells")
+local blockParty = EventCallback("ArenaBlockPartyJoin")
 
--- List of spell words that are blocked in arena
-local blockedSpellWords = {
-	"exani hur", -- Levitate
-	"exani tera", -- Magic Rope
-	"utani hur", -- Haste (allow) -- actually let's allow haste
-	"exiva", -- Find Person (allow info spells)
-}
-
--- Blocked spell IDs (teleport-type)
-local blockedSpellNames = {
-	["Levitate"] = true,
-	["Magic Rope"] = true,
-	["Find Person"] = true, -- prevent scouting
-}
-
-function blockSpells.playerOnSpellCheck(player, spell)
+function blockParty.partyOnJoin(party, player)
 	if not player or not player:arenaIsInArena() then
-		return true -- Not in arena, allow all
+		return true
 	end
 
-	local spellName = spell:getName()
-
-	-- Block teleport spells
-	if blockedSpellNames[spellName] then
-		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.security.spell_blocked")
-		return false
-	end
-
-	return true
+	-- In arena: block party changes
+	player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.security.party_blocked")
+	return false
 end
 
-blockSpells:register()
+blockParty:register()
 
 -- ============================================
--- 2. Block item use in arena (banned items)
+-- 2. Block moving banned items during arena match
 -- ============================================
-local blockItems = EventCallback("ArenaBlockItems")
+local blockItems = EventCallback("ArenaBlockItemMove")
 
--- Items that cannot be used during arena matches
+-- Items that cannot be moved/equipped during arena matches
 local bannedItemIds = {
 	-- Teleport items
 	[2195] = true, -- Magic Carpet
@@ -61,7 +47,7 @@ local bannedItemIds = {
 	[28557] = true, -- Exercise Wand
 }
 
-function blockItems.playerOnItemUse(player, item, fromPosition, target, toPosition, isHotkey)
+function blockItems.playerOnMoveItem(player, item, count, fromPosition, toPosition, fromCylinder, toCylinder)
 	if not player or not player:arenaIsInArena() then
 		return true
 	end
@@ -77,24 +63,7 @@ end
 blockItems:register()
 
 -- ============================================
--- 3. Block party invitations to non-arena players
--- ============================================
-local blockParty = EventCallback("ArenaBlockPartyInvite")
-
-function blockParty.playerOnPartyInvite(player, invitedPlayer)
-	if not player or not player:arenaIsInArena() then
-		return true
-	end
-
-	-- In arena: block party changes
-	player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.security.party_blocked")
-	return false
-end
-
-blockParty:register()
-
--- ============================================
--- 4. AFK Detection & Force-Loss Timer
+-- 3. AFK Detection & Force-Loss Timer
 -- ============================================
 local ArenaAFK = {}
 ArenaAFK.playerLastAction = {} -- playerId -> timestamp
@@ -103,7 +72,8 @@ ArenaAFK.warnings = {} -- playerId -> warning count
 local afkChecker = GlobalEvent("ArenaAFKChecker")
 
 function afkChecker.onThink(interval)
-	if not configManager.getBoolean(configKeys.ARENA_SYSTEM_ENABLED) then
+	-- ArenaConfig is defined in data/libs/systems/arena.lua
+	if not ArenaConfig or not ArenaConfig.enabled then
 		return true
 	end
 
@@ -181,46 +151,30 @@ end
 afkCombatTracker:register()
 
 -- ============================================
--- 5. Prevent skull assignment in arena
+-- 5. Prevent experience loss in arena (replaces skull blocking)
 -- ============================================
-local blockSkulls = EventCallback("ArenaBlockSkulls")
+local blockExpLoss = EventCallback("ArenaBlockExpLoss")
 
-function blockSkulls.playerOnGainSkullTicks(player, ticks, targetPlayer)
+function blockExpLoss.playerOnLoseExperience(player, experience)
 	if not player then
-		return ticks
+		return experience
 	end
 
-	-- No skulls gained in arena
+	-- No experience lost in arena
 	if player:arenaIsInArena() then
 		return 0
 	end
 
-	return ticks
+	return experience
 end
 
-blockSkulls:register()
+blockExpLoss:register()
 
 -- ============================================
--- 6. Block logout during arena match
+-- 6. Warn player on logout during arena match
+-- (playerOnLogout callback does not exist in Canary;
+--  Arena.onPlayerLogout in C++ handles the actual loss logic)
 -- ============================================
-local blockLogout = EventCallback("ArenaBlockLogout")
-
-function blockLogout.playerOnLogout(player)
-	if not player then
-		return true
-	end
-
-	if player:arenaIsInArena() then
-		-- Don't block the logout itself (C++ handles the loss),
-		-- but warn the player
-		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "arena.security.logout_warning")
-		-- The C++ onArenaLogout will handle counting this as a loss
-	end
-
-	return true
-end
-
-blockLogout:register()
 
 -- Export for use by other scripts
 _G.ArenaAFK = ArenaAFK

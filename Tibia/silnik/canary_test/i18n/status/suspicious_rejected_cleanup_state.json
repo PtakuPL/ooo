@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T00:30:42.508175Z",
-  "last_cycle": 34,
+  "timestamp": "2026-02-21T00:31:50.607857Z",
+  "last_cycle": 35,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -38,7 +38,12 @@
       "item.6904.name",
       "item.6905.name",
       "item.6906.name",
-      "item.6907.name"
+      "item.6907.name",
+      "item.6908.name",
+      "item.6909.name",
+      "item.6910.name",
+      "item.6911.name",
+      "item.6912.name"
     ],
     "ru|items.json": [
       "item.10360.name",
@@ -81,7 +86,17 @@
       "item.12797.name",
       "item.12798.name",
       "item.12801.desc",
-      "item.12802.desc"
+      "item.12802.desc",
+      "item.12809.desc",
+      "item.12811.desc",
+      "item.12817.name",
+      "item.12904.desc",
+      "item.12905.desc",
+      "item.13268.name",
+      "item.13272.name",
+      "item.13397.name",
+      "item.13787.name",
+      "item.13794.name"
     ],
     "ro|items.json": [
       "item.173.desc",

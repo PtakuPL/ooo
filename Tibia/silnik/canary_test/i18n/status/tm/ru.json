@@ -39926,5 +39926,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T00:29:32.989356Z"
+  },
+  "item.12809.desc": {
+    "src_hash": "1c5365d2350b3c54f3b453d06a55391c",
+    "text": "Эта шляпа была изготовлена ​​вручную Уманом Мудрым и проклята Затротом Разрушителем. Он присуждается Тибиавики.com.br.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:31:34.401556Z"
+  },
+  "item.12811.desc": {
+    "src_hash": "6ca8ec4ba5935e75f6de2557c574ebdc",
+    "text": "Он знает все секреты всех чисел. Он был награжден Ексхити.com.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:31:34.403986Z"
+  },
+  "item.12904.desc": {
+    "src_hash": "2f72b9851935416f450b642959f13155",
+    "text": "Он сияет позитивной энергией и был отмечен наградой Фунтибиа.com.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:31:34.461541Z"
+  },
+  "item.12905.desc": {
+    "src_hash": "2f72b9851935416f450b642959f13155",
+    "text": "Он сияет позитивной энергией и был отмечен наградой Фунтибиа.com.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:31:34.465941Z"
+  },
+  "item.13787.name": {
+    "src_hash": "1be7b81d1977f32742a429471f66d531",
+    "text": "мёртвый Йаул",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:31:34.545656Z"
+  },
+  "item.13794.name": {
+    "src_hash": "1be7b81d1977f32742a429471f66d531",
+    "text": "мёртвый Йаул",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:31:34.547290Z"
   }
 }

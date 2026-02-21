@@ -111,7 +111,7 @@ bool SpriteAppearances::loadSpriteSheet(const SpriteSheetPtr& sheet) const
 
         lzma_ret ret = lzma_raw_decoder(&stream, filters);
         if (ret != LZMA_OK) {
-            throw stdext::exception(fmt::format("failed to initialize lzma raw decoder result: {}", ret));
+            throw stdext::exception(fmt::format("failed to initialize lzma raw decoder result: {}", static_cast<int>(ret)));
         }
 
         stream.next_in = &fin->m_data[fin->tell()];

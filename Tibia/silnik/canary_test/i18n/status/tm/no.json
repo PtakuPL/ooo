@@ -4550,5 +4550,229 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T07:50:21.623654Z"
+  },
+  "npc.a_ghostly_sage.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Ha det.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:34.932729Z"
+  },
+  "npc.ahmet.say_5": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har ikke nok penger.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:34.964055Z"
+  },
+  "npc.aldo.say_4": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Vær så god.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:34.981045Z"
+  },
+  "npc.alia.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Ikke noe problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:34.995065Z"
+  },
+  "npc.alia.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Ikke noe problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:34.997608Z"
+  },
+  "npc.altar.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Ha det.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.002531Z"
+  },
+  "npc.alyxo.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Hvordan kan jeg hjelpe deg?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.004343Z"
+  },
+  "npc.alyxo.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Hvordan kan jeg hjelpe deg?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.005357Z"
+  },
+  "npc.alyxo.greet_msg_3": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Hvordan kan jeg hjelpe deg?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.005980Z"
+  },
+  "npc.alyxo.say_12": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Beklager.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.007586Z"
+  },
+  "npc.alyxo.say_15": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Beklager.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.008306Z"
+  },
+  "npc.alyxo.say_18": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Beklager.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.009662Z"
+  },
+  "npc.alyxo.say_21": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Beklager.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.010946Z"
+  },
+  "npc.alyxo.say_24": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Beklager.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.011467Z"
+  },
+  "npc.alyxo.say_6": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Beklager.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.012141Z"
+  },
+  "npc.alyxo.say_9": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Beklager.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.012752Z"
+  },
+  "npc.amanda.stdmod_13": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Ikke noe problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.013563Z"
+  },
+  "npc.andrew_lyze.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Ha det.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.019393Z"
+  },
+  "npc.andrew_lyze.say_7": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har ikke nok penger.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.022488Z"
+  },
+  "npc.appaloosa.say_4": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har ikke nok penger.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.035210Z"
+  },
+  "npc.atur.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en fin dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.045432Z"
+  },
+  "npc.atur.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ha en fin dag.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.045785Z"
+  },
+  "npc.azalea.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Ikke noe problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.049638Z"
+  },
+  "npc.azalea.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Ikke noe problem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.050739Z"
+  },
+  "npc.baxter.farewell_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LENGE LEVE KONGEN!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.056301Z"
+  },
+  "npc.baxter.walkaway_msg_1": {
+    "src_hash": "e6e977cc624d86e8503b145161230dc9",
+    "text": "LENGE LEVE KONGEN!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.056940Z"
+  },
+  "npc.beatrice.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har ikke nok penger.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.058110Z"
+  },
+  "npc.bertha.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du har ikke nok penger.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:35.061018Z"
   }
 }

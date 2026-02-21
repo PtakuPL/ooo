@@ -21,8 +21,10 @@ if [ -z "$GIT_TRACK_BRANCH" ] || [ "$GIT_TRACK_BRANCH" = "HEAD" ]; then
 fi
 
 # Co ile sekund wykonywać push dashboardu
-PUSH_INTERVAL_SECONDS=120
+PUSH_INTERVAL_SECONDS="${PUSH_INTERVAL_SECONDS:-480}"
 LAST_PUSH_TS_FILE="$WORK_DIR/.guardian_last_push_ts"
+STATUS_COMMIT_MIN_INTERVAL_SECONDS="${STATUS_COMMIT_MIN_INTERVAL_SECONDS:-900}"
+LAST_STATUS_COMMIT_TS_FILE="$WORK_DIR/.guardian_last_status_commit_ts"
 
 # Restart policy (P0.5): debounce/backoff/cooldown
 MTIME_RESTART_MIN_INTERVAL_SEC="${MTIME_RESTART_MIN_INTERVAL_SEC:-90}"
@@ -1390,6 +1392,23 @@ if [ "$last_ts" -eq 0 ] || [ $((now_ts - last_ts)) -ge "$PUSH_INTERVAL_SECONDS" 
             2>/dev/null || true
 
     if ! git diff --cached --quiet 2>/dev/null; then
+        last_commit_ts=$(cat "$LAST_STATUS_COMMIT_TS_FILE" 2>/dev/null || echo 0)
+        if ! [[ "$last_commit_ts" =~ ^[0-9]+$ ]]; then
+            last_commit_ts=0
+        fi
+        since_last_commit=$((now_ts - last_commit_ts))
+        if [ "$last_commit_ts" -gt 0 ] && [ "$since_last_commit" -lt "$STATUS_COMMIT_MIN_INTERVAL_SECONDS" ]; then
+            log_guardian "⏭️ Pomijam commit statusu: commit cooldown (${since_last_commit}s < ${STATUS_COMMIT_MIN_INTERVAL_SECONDS}s)"
+            echo "$now_ts" > "$LAST_PUSH_TS_FILE"
+            git reset -q HEAD -- \
+                I18N_STATUS.md \
+                Tibia/silnik/canary_test/I18N_STATUS.md \
+                Tibia/silnik/canary_test/.github/worker_commands.txt \
+                Tibia/silnik/canary_test/worker_commands.txt \
+                2>/dev/null || true
+            return 0
+        fi
+
         MIGRATED=$(python3 - <<'PY'
 import json
 try:
@@ -1403,6 +1422,7 @@ PY
         if git push origin "$GIT_TRACK_BRANCH" 2>/dev/null; then
             log_guardian "📤 Push do GitHub OK (branch: $GIT_TRACK_BRANCH)"
             echo "$now_ts" > "$LAST_PUSH_TS_FILE"
+            echo "$now_ts" > "$LAST_STATUS_COMMIT_TS_FILE"
         else
             log_guardian "❌ Push nieudany (branch: $GIT_TRACK_BRANCH)"
         fi

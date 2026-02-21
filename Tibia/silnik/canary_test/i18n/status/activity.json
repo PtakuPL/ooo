@@ -1,9 +1,9 @@
 {
-  "category": "tr",
-  "cycle": 2,
+  "category": "no",
+  "cycle": 3,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-21T09:30:17Z",
+  "generated_at_utc": "2026-02-21T09:32:05Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -14,103 +14,103 @@
   "recent": [
     {
       "action": "update",
-      "category": "da",
-      "cycle": 2,
+      "category": "es",
+      "cycle": 3,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-21T09:30:15Z"
+      "t": "2026-02-21T09:31:32Z"
     },
     {
       "action": "update",
-      "category": "da",
-      "cycle": 2,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-21T09:30:15Z"
-    },
-    {
-      "action": "update",
-      "category": "sv",
-      "cycle": 2,
+      "category": "ar",
+      "cycle": 3,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-21T09:29:54Z"
+      "t": "2026-02-21T09:31:06Z"
     },
     {
       "action": "update",
-      "category": "sv",
-      "cycle": 2,
+      "category": "ar",
+      "cycle": 3,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-21T09:29:54Z"
+      "t": "2026-02-21T09:31:06Z"
     },
     {
       "action": "update",
-      "category": "tr",
-      "cycle": 2,
-      "file": "monsters.json",
+      "category": "fi",
+      "cycle": 3,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-21T09:30:50Z"
+    },
+    {
+      "action": "update",
+      "category": "fi",
+      "cycle": 3,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-21T09:30:50Z"
+    },
+    {
+      "action": "update",
+      "category": "no",
+      "cycle": 3,
+      "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "auto_done",
-      "t": "2026-02-21T09:29:39Z"
+      "t": "2026-02-21T09:30:36Z"
     },
     {
       "action": "update",
-      "category": "tr",
-      "cycle": 2,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-21T09:29:36Z"
-    },
-    {
-      "action": "update",
-      "category": "tr",
-      "cycle": 2,
-      "file": "monsters.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-21T09:29:36Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 1,
+      "category": "no",
+      "cycle": 3,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-21T09:28:05Z"
+      "t": "2026-02-21T09:30:34Z"
     },
     {
       "action": "update",
-      "category": "sk",
-      "cycle": 1,
-      "file": "monsters.json",
+      "category": "no",
+      "cycle": 3,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-21T09:30:34Z"
+    },
+    {
+      "action": "update",
+      "category": "da",
+      "cycle": 2,
+      "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-21T09:27:54Z"
+      "t": "2026-02-21T09:30:15Z"
     },
     {
       "action": "update",
-      "category": "sk",
-      "cycle": 1,
-      "file": "monsters.json",
+      "category": "da",
+      "cycle": 2,
+      "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-21T09:27:53Z"
+      "t": "2026-02-21T09:30:15Z"
     }
   ],
   "stage": "cycle_end",

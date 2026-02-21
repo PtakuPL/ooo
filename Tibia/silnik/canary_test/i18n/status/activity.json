@@ -1,9 +1,9 @@
 {
-  "category": "sr",
-  "cycle": 31,
+  "category": "es",
+  "cycle": 32,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-21T00:26:00Z",
+  "generated_at_utc": "2026-02-21T00:27:26Z",
   "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -14,103 +14,103 @@
   "recent": [
     {
       "action": "update",
-      "category": "pl",
-      "cycle": 31,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-21T00:23:24Z"
-    },
-    {
-      "action": "update",
-      "category": "pl",
-      "cycle": 31,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-21T00:23:24Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 31,
-      "file": "messages.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-21T00:23:06Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 31,
-      "file": "messages.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "parallel_start",
-      "t": "2026-02-21T00:23:06Z"
-    },
-    {
-      "action": "update",
-      "category": "sr",
-      "cycle": 31,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-02-21T00:23:05Z"
-    },
-    {
-      "action": "update",
-      "category": "sr",
-      "cycle": 31,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-21T00:23:01Z"
-    },
-    {
-      "action": "update",
-      "category": "sr",
-      "cycle": 31,
-      "file": "quests.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-21T00:23:01Z"
-    },
-    {
-      "action": "update",
       "category": "es",
-      "cycle": 30,
+      "cycle": 32,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-21T00:22:12Z"
+      "t": "2026-02-21T00:27:03Z"
     },
     {
       "action": "update",
-      "category": "sv",
-      "cycle": 30,
-      "file": "quests.json",
+      "category": "pl",
+      "cycle": 32,
+      "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "heartbeat_tick",
-      "t": "2026-02-21T00:21:21Z"
+      "t": "2026-02-21T00:26:45Z"
     },
     {
       "action": "update",
-      "category": "sv",
-      "cycle": 30,
-      "file": "quests.json",
+      "category": "pl",
+      "cycle": 32,
+      "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "result": "ok",
       "stage": "parallel_start",
-      "t": "2026-02-21T00:21:21Z"
+      "t": "2026-02-21T00:26:44Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 32,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-21T00:26:43Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 32,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-21T00:26:22Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 32,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-21T00:26:22Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 31,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-21T00:23:24Z"
+    },
+    {
+      "action": "update",
+      "category": "pl",
+      "cycle": 31,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-21T00:23:24Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 31,
+      "file": "messages.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-21T00:23:06Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 31,
+      "file": "messages.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "parallel_start",
+      "t": "2026-02-21T00:23:06Z"
     }
   ],
   "stage": "cycle_end",

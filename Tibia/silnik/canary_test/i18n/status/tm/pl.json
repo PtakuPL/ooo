@@ -118374,5 +118374,61 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:16:42.353460Z"
+  },
+  "npc.grof_the_guard.stdmod_1": {
+    "src_hash": "9f8faef9b0ab426a0e0ee29611a81085",
+    "text": "To mój obowiązek do chronić the miasto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T00:26:51.811746Z"
+  },
+  "npc.junkar_mines.stdmod_1": {
+    "src_hash": "4a8905eb013606d14c849689c029e6d9",
+    "text": "Tyle do zrobienia. Tyle rzeczy do naprawy.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T00:26:52.845584Z"
+  },
+  "npc.junkar_mines.voice_1": {
+    "src_hash": "4a8905eb013606d14c849689c029e6d9",
+    "text": "Tyle do zrobienia. Tyle rzeczy do naprawy.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T00:26:52.846661Z"
+  },
+  "npc.junkar_robsons.stdmod_1": {
+    "src_hash": "4a8905eb013606d14c849689c029e6d9",
+    "text": "Tyle do zrobienia. Tyle rzeczy do naprawy.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T00:26:52.849700Z"
+  },
+  "npc.junkar_robsons.voice_1": {
+    "src_hash": "4a8905eb013606d14c849689c029e6d9",
+    "text": "Tyle do zrobienia. Tyle rzeczy do naprawy.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T00:26:52.851130Z"
+  },
+  "npc.junkar_thais.stdmod_1": {
+    "src_hash": "4a8905eb013606d14c849689c029e6d9",
+    "text": "Tyle do zrobienia. Tyle rzeczy do naprawy.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T00:26:52.854083Z"
+  },
+  "npc.junkar_thais.voice_1": {
+    "src_hash": "4a8905eb013606d14c849689c029e6d9",
+    "text": "Tyle do zrobienia. Tyle rzeczy do naprawy.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T00:26:52.855281Z"
   }
 }

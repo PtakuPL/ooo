@@ -154758,5 +154758,53 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-20T23:55:13.066215Z"
+  },
+  "item.15818.name": {
+    "src_hash": "ef15f8554948e731a1044dbcf7347090",
+    "text": "recolector de esporas gnomo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:26:39.349888Z"
+  },
+  "item.15819.desc": {
+    "src_hash": "356977365fb1ef63f4a7fed4ca1c3073",
+    "text": "Contiene esporas rojas y verdes. Reúne algunas esporas AZULES",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:26:39.350334Z"
+  },
+  "item.15819.name": {
+    "src_hash": "ef15f8554948e731a1044dbcf7347090",
+    "text": "recolector de esporas gnomo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:26:39.350616Z"
+  },
+  "item.15820.desc": {
+    "src_hash": "0157edfa55d4c042852b51df197da7cf",
+    "text": "Contiene esporas rojas, verdes y azules. Reúne algunas esporas AMARILLAS",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:26:39.351105Z"
+  },
+  "item.15820.name": {
+    "src_hash": "ef15f8554948e731a1044dbcf7347090",
+    "text": "recolector de esporas gnomo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:26:41.759875Z"
+  },
+  "item.15821.desc": {
+    "src_hash": "3b93915ccaa1d2a3d8dc56b9d380d092",
+    "text": "Contiene esporas rojas, verdes, azules y amarillas. Entregarlo a los gnomos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:26:41.760451Z"
   }
 }

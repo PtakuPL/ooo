@@ -1,8 +1,8 @@
 {
-  "last_cycle": 31,
-  "last_ts": 1771633560,
+  "last_cycle": 32,
+  "last_ts": 1771633647,
   "every_cycles": 1,
   "min_interval_sec": 60,
   "cycle_delta": 1,
-  "time_delta": 200
+  "time_delta": 87
 }

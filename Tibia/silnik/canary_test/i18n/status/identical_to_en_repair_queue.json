@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-21T00:22:11.776103Z",
+  "timestamp": "2026-02-21T00:27:03.367027Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,7 +65,7 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 701,
+  "entries_total": 700,
   "entries_by_lang": {
     "es": 269,
     "pl": 149,
@@ -77,7 +77,7 @@
     "nl": 691,
     "pt": 620,
     "ro": 421,
-    "ru": 74,
+    "ru": 72,
     "sk": 663,
     "tr": 542,
     "ar": 904,
@@ -981,12 +981,6 @@
     },
     {
       "lang": "ru",
-      "json_file": "libs.json",
-      "identical_to_en": 2,
-      "domain_priority": 9
-    },
-    {
-      "lang": "ru",
       "json_file": "client.json",
       "identical_to_en": 1,
       "domain_priority": 9
@@ -1320,6 +1314,12 @@
       "json_file": "monsters.json",
       "identical_to_en": 67,
       "domain_priority": 8
+    },
+    {
+      "lang": "bg",
+      "json_file": "cpp.json",
+      "identical_to_en": 158,
+      "domain_priority": 9
     }
   ],
   "selected": {

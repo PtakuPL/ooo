@@ -37798,5 +37798,117 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:22:03.601398Z"
+  },
+  "npc.tanyt.stdmod_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Känn vinden i håret under en av mina mattturer!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:34:38.016451Z"
+  },
+  "npc.tanyt.stdmod_3": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Söker du en passage till {0} för {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:34:38.018020Z"
+  },
+  "npc.tanyt.stdmod_4": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vi skulle vilja tjäna dig lite tid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:34:38.019270Z"
+  },
+  "npc.tanyt.voice_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Känn vinden i håret under en av mina mattturer!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:34:38.021227Z"
+  },
+  "npc.tarak_inner.say_2": {
+    "src_hash": "88ef5e9e3e756c3fab6b1c47f569d2fe",
+    "text": "Du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:34:38.023394Z"
+  },
+  "npc.telas.say_7": {
+    "src_hash": "e04607d84a383e8cbb7db9ec770f05da",
+    "text": "Fel ord.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:34:38.033323Z"
+  },
+  "npc.tereban_functions.say_1": {
+    "src_hash": "c0037ed4554aec4f4385655bd8470bf6",
+    "text": "Du är inte på det uppdraget.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:34:38.041959Z"
+  },
+  "npc.tesha.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Glöm inte att sätta in dina pengar här i Global Bank innan du ger dig ut på äventyr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:34:38.048390Z"
+  },
+  "npc.the_beggar_king.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:34:38.052461Z"
+  },
+  "npc.the_lootmonger.say_1": {
+    "src_hash": "46767821d220df513037f0a25e3170c7",
+    "text": "Jag säljer ett urval av {}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:34:38.067079Z"
+  },
+  "npc.the_lootmonger.say_2": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:34:38.067918Z"
+  },
+  "npc.the_orc_king.say_6": {
+    "src_hash": "0cbeb9c06f7eab690d42b8da56bca5dc",
+    "text": "Du har ingen kaka som jag vill ha.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:34:38.070356Z"
+  },
+  "npc.thorgrin.keyword_1": {
+    "src_hash": "85467327989ec3f06366c501660d8e59",
+    "text": "Full fart!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:34:38.076199Z"
+  },
+  "npc.thorgrin.stdmod_2": {
+    "src_hash": "85467327989ec3f06366c501660d8e59",
+    "text": "Full fart!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:34:38.076711Z"
   }
 }

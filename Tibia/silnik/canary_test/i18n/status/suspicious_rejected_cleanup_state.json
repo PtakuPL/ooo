@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T00:33:56.541201Z",
-  "last_cycle": 36,
+  "timestamp": "2026-02-21T00:35:18.239865Z",
+  "last_cycle": 37,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -160,7 +160,21 @@
       "npc.svenson.stdmod_5",
       "npc.taegen.multi_14",
       "npc.taegen.multi_7",
-      "npc.tandros.say_1"
+      "npc.tandros.say_1",
+      "npc.tanyt.stdmod_1",
+      "npc.tanyt.stdmod_3",
+      "npc.tanyt.stdmod_4",
+      "npc.tanyt.voice_1",
+      "npc.tarak_inner.say_2",
+      "npc.telas.say_7",
+      "npc.tereban_functions.say_1",
+      "npc.tesha.voice_1",
+      "npc.the_beggar_king.farewell_msg_1",
+      "npc.the_lootmonger.say_1",
+      "npc.the_lootmonger.say_2",
+      "npc.the_orc_king.say_6",
+      "npc.thorgrin.keyword_1",
+      "npc.thorgrin.stdmod_2"
     ],
     "sr|npc.json": [
       "npc.a_beggar.greet_msg_1",

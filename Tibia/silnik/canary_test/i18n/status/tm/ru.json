@@ -40782,5 +40782,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T09:52:26.511924Z"
+  },
+  "item.14769.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Он показывает ваши заклинания, а также может защищать от атак при ношении.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:01:01.714199Z"
   }
 }

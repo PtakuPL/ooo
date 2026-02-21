@@ -17,6 +17,7 @@ Firma_budowlana/
 
 # OS/tooling noise
 **/*.Zone.Identifier
+**/*:Zone.Identifier
 
 # ===== I18N Worker temporary files =====
 # Backup files

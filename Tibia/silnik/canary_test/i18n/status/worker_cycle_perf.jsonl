@@ -11499,3 +11499,12 @@
 {"timestamp": "2026-02-21T11:02:21.511790Z", "cycle": 4, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 6721, "detail": "count=server.json"}
 {"timestamp": "2026-02-21T11:04:33.423724Z", "cycle": 4, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "mode_run", "duration_ms": 131459, "detail": "mode=AUTO_TRANSLATE"}
 {"timestamp": "2026-02-21T11:04:52.951056Z", "cycle": 4, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "status_update", "duration_ms": 19012, "detail": "throttle_every=5"}
+{"timestamp": "2026-02-21T11:08:11.249467Z", "cycle": 4, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "cycle_total", "duration_ms": 356899, "detail": "delay=4"}
+{"timestamp": "2026-02-21T11:10:13.762241Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "dispatch", "duration_ms": 2918, "detail": "count=monsters.json"}
+{"timestamp": "2026-02-21T11:10:23.425704Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 1182, "detail": "count=monsters.json"}
+{"timestamp": "2026-02-21T11:16:43.136042Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "mode_run", "duration_ms": 379430, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-21T11:16:52.898488Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "status_update", "duration_ms": 8787, "detail": "throttle_every=5"}
+{"timestamp": "2026-02-21T11:17:17.815250Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "cycle_total", "duration_ms": 416071, "detail": "delay=4"}
+{"timestamp": "2026-02-21T11:17:25.117008Z", "cycle": 2, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "dispatch", "duration_ms": 2839, "detail": "count=npc.json"}
+{"timestamp": "2026-02-21T11:20:29.587757Z", "cycle": 2, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "mode_run", "duration_ms": 184221, "detail": "mode=AUTO_TRANSLATE"}
+{"timestamp": "2026-02-21T11:20:30.027730Z", "cycle": 2, "mode": "AUTO_TRANSLATE", "category": "it", "phase": "status_update", "duration_ms": 87, "detail": "throttle_every=5"}

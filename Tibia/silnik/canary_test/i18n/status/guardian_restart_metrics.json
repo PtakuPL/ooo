@@ -1,37 +1,37 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-02-21T10:54:33Z",
+  "generated_at_utc": "2026-02-21T11:10:26Z",
   "config": {
     "mtime_restart_min_interval_sec": 90,
     "restart_failure_backoff_base_sec": 20,
     "restart_failure_backoff_max_sec": 300
   },
   "last_restart": {
-    "timestamp": "2026-02-21T10:54:33Z",
-    "cause": "mtime",
+    "timestamp": "2026-02-21T11:10:26Z",
+    "cause": "worker_missing",
     "success": true,
-    "pid": "6308"
+    "pid": "16926"
   },
   "failure_streak": 0,
   "cooldown_active": false,
   "cooldown_remaining_sec": 0,
   "next_allowed_utc": "",
   "totals": {
-    "attempts": 1495,
-    "successes": 1487,
+    "attempts": 1497,
+    "successes": 1489,
     "failures": 8,
     "blocked": 136
   },
   "causes": {
     "worker_missing": {
-      "attempts": 102,
-      "successes": 98,
+      "attempts": 103,
+      "successes": 99,
       "failures": 4,
       "blocked": 20
     },
     "mtime": {
-      "attempts": 187,
-      "successes": 184,
+      "attempts": 188,
+      "successes": 185,
       "failures": 3,
       "blocked": 116
     },
@@ -43,24 +43,6 @@
     }
   },
   "recent_events": [
-    {
-      "timestamp": "2026-02-20T17:21:42Z",
-      "type": "result",
-      "cause": "mtime",
-      "success": true,
-      "pid": "114825",
-      "reason": "pid_file",
-      "backoff_sec": 0
-    },
-    {
-      "timestamp": "2026-02-20T21:52:19Z",
-      "type": "result",
-      "cause": "mtime",
-      "success": true,
-      "pid": "463721",
-      "reason": "pid_file",
-      "backoff_sec": 0
-    },
     {
       "timestamp": "2026-02-20T22:16:57Z",
       "type": "result",
@@ -218,6 +200,24 @@
       "cause": "mtime",
       "success": true,
       "pid": "6308",
+      "reason": "pid_file",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-21T11:10:08Z",
+      "type": "result",
+      "cause": "mtime",
+      "success": true,
+      "pid": "15365",
+      "reason": "fallback_pgrep",
+      "backoff_sec": 0
+    },
+    {
+      "timestamp": "2026-02-21T11:10:26Z",
+      "type": "result",
+      "cause": "worker_missing",
+      "success": true,
+      "pid": "16926",
       "reason": "pid_file",
       "backoff_sec": 0
     }

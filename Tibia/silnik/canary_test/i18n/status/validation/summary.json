@@ -1,7 +1,7 @@
 {
   "total_languages": 53,
   "total_en_keys": 53586,
-  "validated_at": "2026-02-21T10:57:01.181516Z",
+  "validated_at": "2026-02-21T11:16:42.912431Z",
   "by_score": {
     "ru": {
       "score": 63.8,
@@ -258,13 +258,13 @@
     },
     "es": {
       "score": 99.9,
-      "coverage_pct": 85.9,
+      "coverage_pct": 86.0,
       "issues": 44,
       "critical": 0,
       "high": 42,
       "crossref_issues": 518,
       "crossref_autofix_applied": 0,
-      "translated": 46049,
+      "translated": 46059,
       "script_group": "latin"
     },
     "et": {

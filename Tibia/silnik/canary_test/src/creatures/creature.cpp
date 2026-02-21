@@ -10,6 +10,7 @@
 #include "creatures/creature.hpp"
 
 #include "config/configmanager.hpp"
+#include "game/arena/arena_system.hpp"
 #include "creatures/combat/condition.hpp"
 #include "creatures/combat/combat.hpp"
 #include "creatures/monsters/monster.hpp"
@@ -508,6 +509,19 @@ void Creature::onDeath() {
 	const auto &thisMonster = getMonster();
 	std::shared_ptr<Creature> lastHitCreatureMaster;
 	if (lastHitCreature && thisPlayer) {
+		// Arena PvP: intercept kills in arena
+		if (g_arenaSystem().isPlayerInArena(thisPlayer->getGUID())) {
+			auto lastHitPlayer = lastHitCreature->getPlayer();
+			if (lastHitPlayer) {
+				g_arenaSystem().onArenaKill(lastHitPlayer->getGUID(), thisPlayer->getGUID());
+			} else {
+				g_arenaSystem().onArenaDeath(thisPlayer->getGUID());
+			}
+			setDropLoot(false);
+			setSkillLoss(false);
+			return;
+		}
+
 		/**
 		 * @deprecated -- This is here to trigger the deprecated onKill events in lua
 		 */

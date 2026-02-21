@@ -2,9 +2,9 @@
   "lang": "fr",
   "coverage_pct": 34.2,
   "crossref_enabled": true,
-  "auto_fix_enabled": true,
-  "auto_fix_limit": 80,
-  "checked_at": "2026-02-21T02:11:51.912009Z",
+  "auto_fix_enabled": false,
+  "auto_fix_limit": 30,
+  "checked_at": "2026-02-21T02:57:30.709682Z",
   "issues_total": 477,
   "issues_by_type": {
     "consistency_in_language": 54,
@@ -4663,9 +4663,9 @@
     }
   ],
   "auto_fix": {
-    "attempted": 80,
+    "attempted": 0,
     "applied": 0,
-    "skipped": 80,
+    "skipped": 0,
     "errors": 0
   }
 }

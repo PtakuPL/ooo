@@ -3,8 +3,8 @@
   "coverage_pct": 9.4,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
-  "auto_fix_limit": 80,
-  "checked_at": "2026-02-21T02:12:15.516377Z",
+  "auto_fix_limit": 30,
+  "checked_at": "2026-02-21T02:57:54.268096Z",
   "issues_total": 421,
   "issues_by_type": {
     "consistency_in_language": 0,

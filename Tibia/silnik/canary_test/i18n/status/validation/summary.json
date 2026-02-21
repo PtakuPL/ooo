@@ -1,17 +1,17 @@
 {
   "total_languages": 53,
   "total_en_keys": 53586,
-  "validated_at": "2026-02-21T02:13:41.945975Z",
+  "validated_at": "2026-02-21T02:58:11.906724Z",
   "by_score": {
     "ru": {
       "score": 63.8,
-      "coverage_pct": 50.8,
+      "coverage_pct": 50.9,
       "issues": 6436,
       "critical": 148,
       "high": 6280,
-      "crossref_issues": 214,
-      "crossref_autofix_applied": 70,
-      "translated": 27219,
+      "crossref_issues": 173,
+      "crossref_autofix_applied": 0,
+      "translated": 27249,
       "script_group": "cyrillic"
     },
     "bn": {
@@ -220,7 +220,7 @@
       "high": 3,
       "crossref_issues": 410,
       "crossref_autofix_applied": 0,
-      "translated": 3753,
+      "translated": 3774,
       "script_group": "latin"
     },
     "az": {
@@ -451,7 +451,7 @@
       "high": 11,
       "crossref_issues": 107,
       "crossref_autofix_applied": 0,
-      "translated": 24582,
+      "translated": 24612,
       "script_group": "cyrillic"
     },
     "sw": {
@@ -511,13 +511,13 @@
     },
     "it": {
       "score": 100.0,
-      "coverage_pct": 54.2,
+      "coverage_pct": 54.4,
       "issues": 9,
       "critical": 0,
       "high": 9,
       "crossref_issues": 428,
       "crossref_autofix_applied": 0,
-      "translated": 29069,
+      "translated": 29131,
       "script_group": "latin"
     },
     "ja": {
@@ -549,8 +549,8 @@
       "critical": 0,
       "high": 2,
       "crossref_issues": 421,
-      "crossref_autofix_applied": 4,
-      "translated": 24123,
+      "crossref_autofix_applied": 0,
+      "translated": 24132,
       "script_group": "latin"
     },
     "sv": {
@@ -561,7 +561,7 @@
       "high": 3,
       "crossref_issues": 428,
       "crossref_autofix_applied": 0,
-      "translated": 16287,
+      "translated": 16311,
       "script_group": "latin"
     },
     "tr": {
@@ -653,6 +653,6 @@
       "zh_TW"
     ]
   },
-  "crossref_total_issues": 20577,
-  "crossref_autofix_total_applied": 74
+  "crossref_total_issues": 20536,
+  "crossref_autofix_total_applied": 0
 }

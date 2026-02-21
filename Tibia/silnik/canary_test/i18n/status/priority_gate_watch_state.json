@@ -1,34 +1,18 @@
 {
-  "timestamp": "2026-02-21T02:50:35.950724Z",
-  "enabled": true,
-  "active": true,
-  "pending_key": "es,it,pl,ro,ru,sr,sv",
-  "pending_langs": [
-    "es",
-    "it",
-    "pl",
-    "ro",
-    "ru",
-    "sr",
-    "sv"
-  ],
-  "started_at": "2026-02-21T02:44:53.926707Z",
-  "start_cycle": 6970,
-  "cycle_counter": 6976,
-  "baseline_quality_rate_pct": 410.06,
-  "best_quality_rate_pct": 402.352,
-  "current_quality_rate_pct": 404.647,
-  "active_minutes": 5.7,
+  "timestamp": "2026-02-21T02:58:26.818636Z",
+  "enabled": false,
+  "active": false,
+  "pending_key": "",
+  "pending_langs": [],
+  "started_at": "",
+  "start_cycle": 6981,
+  "cycle_counter": 6981,
+  "baseline_quality_rate_pct": 397.255,
+  "best_quality_rate_pct": 397.255,
+  "current_quality_rate_pct": 397.255,
+  "active_minutes": 0.0,
   "detected": false,
   "severity": "ok",
-  "reason": "tracking",
-  "lang_completion": {
-    "pl": 87.87,
-    "es": 85.25,
-    "ru": 50.61,
-    "ro": 44.07,
-    "it": 53.37,
-    "sr": 45.72,
-    "sv": 29.62
-  }
+  "reason": "priority_gate_disabled",
+  "lang_completion": {}
 }

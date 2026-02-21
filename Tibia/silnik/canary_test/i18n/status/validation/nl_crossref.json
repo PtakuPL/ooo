@@ -3,8 +3,8 @@
   "coverage_pct": 7.0,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
-  "auto_fix_limit": 80,
-  "checked_at": "2026-02-21T02:12:16.752553Z",
+  "auto_fix_limit": 30,
+  "checked_at": "2026-02-21T02:57:56.900239Z",
   "issues_total": 410,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -2444,15 +2444,6 @@
       "lang": "Groar"
     },
     {
-      "key": "monster.firestarter.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "FIRE!",
-      "pl": "OGIEŃ!",
-      "lang": "FIRE!"
-    },
-    {
       "key": "monster.firestarter.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2937,6 +2928,15 @@
       "en": "Chatter",
       "pl": "Gadać",
       "lang": "Chatter"
+    },
+    {
+      "key": "monster.knowledge_raider.name",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knowledge Raider",
+      "pl": "KNiewledge Raider",
+      "lang": "Knowledge Raider"
     },
     {
       "key": "monster.hellgorak.voice_6",

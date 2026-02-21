@@ -2,9 +2,9 @@
   "lang": "sr",
   "coverage_pct": 45.9,
   "crossref_enabled": true,
-  "auto_fix_enabled": true,
-  "auto_fix_limit": 80,
-  "checked_at": "2026-02-21T02:13:18.992160Z",
+  "auto_fix_enabled": false,
+  "auto_fix_limit": 30,
+  "checked_at": "2026-02-21T02:58:06.735306Z",
   "issues_total": 107,
   "issues_by_type": {
     "consistency_in_language": 11,
@@ -1045,9 +1045,9 @@
     }
   ],
   "auto_fix": {
-    "attempted": 68,
+    "attempted": 0,
     "applied": 0,
-    "skipped": 68,
+    "skipped": 0,
     "errors": 0
   }
 }

@@ -3385,19 +3385,19 @@
   },
   "monster.lord_of_the_elements.name": {
     "src_hash": "26f35529002a0a103c2080451deda86a",
-    "text": "Lord of the Elements",
+    "text": "Heer van de Elementen",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:47:17.847901Z"
+    "updated_at": "2026-02-21T02:55:45.670096Z"
   },
   "monster.lord_of_the_elements.desc": {
     "src_hash": "26f35529002a0a103c2080451deda86a",
-    "text": "Lord of the Elements",
+    "text": "Heer van de Elementen",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T07:47:17.848452Z"
+    "updated_at": "2026-02-21T02:55:45.670768Z"
   },
   "monster.generator.name": {
     "src_hash": "92a8f0b9d28a89b480bd1d29f46f0484",
@@ -3958,5 +3958,61 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T07:47:17.976246Z"
+  },
+  "monster.firestarter.voice_1": {
+    "src_hash": "768bf59c2fc9b6d051299536a1d19e54",
+    "text": "VUUR!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:55:45.582356Z"
+  },
+  "monster.liodile.voice_2": {
+    "src_hash": "5fe3fd880ff378740454fddf70ca8e3d",
+    "text": "Vlees!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:55:46.621072Z"
+  },
+  "monster.black_knight.voice_5": {
+    "src_hash": "39bee4a74a17fd43f140fd20ff73d637",
+    "text": "VAN MIJ!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T02:55:46.778591Z"
+  },
+  "monster.zushuka.name": {
+    "src_hash": "f7d3f936c82d25f009159f66874105e9",
+    "text": "Zushuka",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:55:46.781063Z"
+  },
+  "monster.munster.name": {
+    "src_hash": "ad3f071289dbbac276fadf870913fbf9",
+    "text": "Munster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:55:46.802211Z"
+  },
+  "monster.munster.desc": {
+    "src_hash": "ad3f071289dbbac276fadf870913fbf9",
+    "text": "Munster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:55:46.802894Z"
+  },
+  "monster.teleskor.name": {
+    "src_hash": "39b531430b46066d965dffc91ef989fc",
+    "text": "Teleskor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:55:46.842427Z"
   }
 }

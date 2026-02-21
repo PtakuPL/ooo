@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-21T02:48:27.355847Z",
-  "cycle_counter": 6976,
-  "last_target_key": "ru:items.json",
-  "last_pending_total": 6310,
+  "timestamp": "2026-02-21T02:55:12.372025Z",
+  "cycle_counter": 6981,
+  "last_target_key": "nl:monsters.json",
+  "last_pending_total": 5220,
   "last_tier": 2,
-  "last_cat_priority": 1,
-  "candidates_count": 178,
-  "active_candidates_count": 161,
+  "last_cat_priority": 2,
+  "candidates_count": 1559,
+  "active_candidates_count": 1542,
   "skipped_backoff": 14,
   "skipped_guard_fail": 3,
   "guard_fail_blacklist": {
@@ -40,7 +40,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 64,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -199,10 +199,10 @@
   "bootstrap_forced": false,
   "bootstrap_forced_lang": "",
   "balance_forced": false,
-  "global_quality_mode": true,
+  "global_quality_mode": false,
   "priority_gate": {
-    "enabled": true,
-    "active": true,
+    "enabled": false,
+    "active": false,
     "coverage_target": 100.0,
     "priority_langs": [
       "pl",
@@ -213,24 +213,8 @@
       "sr",
       "sv"
     ],
-    "pending_langs": [
-      "pl",
-      "es",
-      "ru",
-      "ro",
-      "it",
-      "sr",
-      "sv"
-    ],
-    "lang_completion": {
-      "pl": 87.87,
-      "es": 85.25,
-      "ru": 50.61,
-      "ro": 44.07,
-      "it": 53.37,
-      "sr": 45.72,
-      "sv": 29.62
-    }
+    "pending_langs": [],
+    "lang_completion": {}
   },
   "toxic_cycle_cooldown": {
     "enabled": true,

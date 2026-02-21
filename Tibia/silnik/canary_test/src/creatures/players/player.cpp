@@ -9,6 +9,7 @@
 
 #include "creatures/players/player.hpp"
 
+#include "game/arena/arena_system.hpp"
 #include <algorithm>
 #include <cctype>
 #include <string_view>
@@ -4350,6 +4351,9 @@ void Player::addList() {
 }
 
 void Player::removePlayer(bool displayEffect, bool forced /*= true*/) {
+	// Arena PvP: handle logout during arena
+	g_arenaSystem().onArenaLogout(getGUID());
+
 	setAttackedCreature(nullptr);
 	g_creatureEvents().playerLogout(static_self_cast<Player>());
 	if (client) {

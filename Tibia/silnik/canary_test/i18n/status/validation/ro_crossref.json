@@ -2,9 +2,9 @@
   "lang": "ro",
   "coverage_pct": 45.0,
   "crossref_enabled": true,
-  "auto_fix_enabled": true,
-  "auto_fix_limit": 80,
-  "checked_at": "2026-02-21T02:12:37.878170Z",
+  "auto_fix_enabled": false,
+  "auto_fix_limit": 30,
+  "checked_at": "2026-02-21T02:58:02.524317Z",
   "issues_total": 421,
   "issues_by_type": {
     "consistency_in_language": 6,
@@ -3844,9 +3844,9 @@
     }
   ],
   "auto_fix": {
-    "attempted": 80,
-    "applied": 4,
-    "skipped": 76,
+    "attempted": 0,
+    "applied": 0,
+    "skipped": 0,
     "errors": 0
   }
 }

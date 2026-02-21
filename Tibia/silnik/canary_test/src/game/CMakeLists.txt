@@ -10,4 +10,7 @@ target_sources(${PROJECT_NAME}_lib PRIVATE
     scheduling/task.cpp
     scheduling/save_manager.cpp
     zones/zone.cpp
+    arena/arena_system.cpp
+    arena/arena_match.cpp
+    arena/arena_matchmaking.cpp
 )

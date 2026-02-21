@@ -10,6 +10,7 @@
 #include "game/game.hpp"
 
 #include "config/configmanager.hpp"
+#include "game/arena/arena_system.hpp"
 #include "creatures/appearance/mounts/mounts.hpp"
 #include "creatures/appearance/attached_effects/attached_effects.hpp"
 #include "creatures/combat/condition.hpp"
@@ -569,6 +570,12 @@ void Game::start(ServiceManager* manager) {
 
 	g_dispatcher().cycleEvent(
 		UPDATE_PLAYERS_ONLINE_DB, [this] { updatePlayersOnline(); }, "Game::updatePlayersOnline"
+	);
+
+	// Arena PvP system
+	g_arenaSystem().init();
+	g_dispatcher().cycleEvent(
+		2000, [] { g_arenaSystem().tick(); }, "ArenaSystem::tick"
 	);
 }
 
@@ -8403,6 +8410,9 @@ void Game::shutdown() {
 	g_webhook().sendMessage(":red_circle: Server is shutting down...");
 
 	g_logger().info("Shutting down...");
+
+	// Shutdown arena system before everything else
+	g_arenaSystem().shutdown();
 	map.spawnsMonster.clear();
 	map.spawnsNpc.clear();
 	raids.clear();

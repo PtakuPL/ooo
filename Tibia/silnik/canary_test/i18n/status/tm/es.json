@@ -32465,11 +32465,11 @@
   },
   "npc.gnomus.say_10": {
     "src_hash": "69ce05199222d304e8f82cb747eed8ab",
-    "text": "Don't waste my time.",
+    "text": "No me hagas perder el tiempo.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T19:56:44.800971Z"
+    "updated_at": "2026-02-21T01:00:28.513368Z"
   },
   "npc.gnomus.say_11": {
     "src_hash": "f5940523060652e3a7d9c269ce48de50",
@@ -34153,11 +34153,11 @@
   },
   "npc.karith.say_26": {
     "src_hash": "69ce05199222d304e8f82cb747eed8ab",
-    "text": "Don't waste my time.",
+    "text": "No me hagas perder el tiempo.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:01:45.637621Z"
+    "updated_at": "2026-02-21T01:00:29.698021Z"
   },
   "npc.karl.say_6": {
     "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
@@ -34265,11 +34265,11 @@
   },
   "npc.lardoc_bashsmite.say_9": {
     "src_hash": "69ce05199222d304e8f82cb747eed8ab",
-    "text": "Don't waste my time.",
+    "text": "No me hagas perder el tiempo.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-13T20:01:45.781700Z"
+    "updated_at": "2026-02-21T01:00:29.897809Z"
   },
   "npc.lokur.greet_msg_1": {
     "src_hash": "2f52a2a925612dccf0dc94b8adffbac9",
@@ -154814,5 +154814,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:57:34.536973Z"
+  },
+  "npc.klom_stonecutter.say_11": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "No me hagas perder el tiempo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:00:29.854173Z"
   }
 }

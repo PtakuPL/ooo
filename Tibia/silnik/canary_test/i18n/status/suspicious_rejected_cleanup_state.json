@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T00:59:16.163215Z",
-  "last_cycle": 4,
+  "timestamp": "2026-02-21T01:00:49.456737Z",
+  "last_cycle": 5,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -138,7 +138,11 @@
       "npc.barnabas_dee.say_5",
       "npc.bozo.stdmod_116",
       "npc.bozo.stdmod_92",
-      "npc.budrik.say_9"
+      "npc.budrik.say_9",
+      "npc.gnomus.say_10",
+      "npc.karith.say_26",
+      "npc.klom_stonecutter.say_11",
+      "npc.lardoc_bashsmite.say_9"
     ],
     "sv|npc.json": [
       "npc.a_fluffy_squirrel.farewell_msg_1",

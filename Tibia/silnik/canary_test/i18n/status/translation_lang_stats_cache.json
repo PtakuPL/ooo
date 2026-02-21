@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "timestamp": "2026-02-21T00:59:23.805820Z",
+  "timestamp": "2026-02-21T01:00:55.227681Z",
   "scope": "full",
   "en_total_keys": 53586,
   "en_signature": [
@@ -7386,7 +7386,7 @@
         [
           "modules.json",
           1,
-          1771632544282510609,
+          1771635582489718512,
           1127
         ],
         [
@@ -7410,8 +7410,8 @@
         [
           "npc.json",
           1,
-          1771635460941180453,
-          1847177
+          1771635649498221842,
+          1847193
         ],
         [
           "npclib.json",
@@ -7521,14 +7521,14 @@
         "language_name": "Hiszpański",
         "scope": "global",
         "total_reference_keys": 53586,
-        "translated_keys": 45637,
+        "translated_keys": 45641,
         "english_copy_keys": 2152,
         "missing_keys": 0,
         "missing_files": 0,
         "completion_pct": 85.17,
         "server_keys": 49731,
-        "server_translated": 42571,
-        "server_pct": 85.6,
+        "server_translated": 42575,
+        "server_pct": 85.61,
         "client_keys": 3855,
         "client_translated": 3066,
         "client_pct": 79.53
@@ -7761,7 +7761,7 @@
         "modules.json": {
           "sig": [
             1,
-            1771632544282510609,
+            1771635582489718512,
             1127
           ],
           "row": {
@@ -7817,12 +7817,12 @@
         "npc.json": {
           "sig": [
             1,
-            1771635460941180453,
-            1847177
+            1771635649498221842,
+            1847193
           ],
           "row": {
             "total_reference_keys": 13769,
-            "translated_keys": 11491,
+            "translated_keys": 11495,
             "english_copy_keys": 114,
             "missing_keys": 0,
             "missing_files": 0
@@ -25377,7 +25377,7 @@
         [
           "items.json",
           1,
-          1771633427677333814,
+          1771635614274118438,
           891476
         ],
         [
@@ -25431,7 +25431,7 @@
         [
           "otclient_data.json",
           1,
-          1771632550351846157,
+          1771635589550132442,
           4532
         ],
         [
@@ -25728,7 +25728,7 @@
         "items.json": {
           "sig": [
             1,
-            1771633427677333814,
+            1771635614274118438,
             891476
           ],
           "row": {
@@ -25854,7 +25854,7 @@
         "otclient_data.json": {
           "sig": [
             1,
-            1771632550351846157,
+            1771635589550132442,
             4532
           ],
           "row": {

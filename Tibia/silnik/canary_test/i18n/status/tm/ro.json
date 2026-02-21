@@ -75454,5 +75454,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:41:23.855299Z"
+  },
+  "scripts.creaturescripts_depolarized_death.say_1": {
+    "src_hash": "69e223315b6235cac3b4dee668b2f3aa",
+    "text": "Ați atins suficiente taxe pentru a trece mai departe în distrugere!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:18:17.448224Z"
+  },
+  "scripts.creaturescripts_disgusting_ooze_death.say_1": {
+    "src_hash": "f63d96d321c14371b5d7f1f2b2952d4d",
+    "text": "Suflul se desparte și se regenerează.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:18:17.448794Z"
+  },
+  "scripts.creaturescripts_distorted_source.say_2": {
+    "src_hash": "a6038a08d6cd96b128d6af5a9724a280",
+    "text": "Bazându-se pe puterea sursei, Gliful devine din nou protejat!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:18:17.449457Z"
+  },
+  "scripts.creaturescripts_dragon_egg.say_1": {
+    "src_hash": "1d29ddab4684e4a90a80344879d1effd",
+    "text": "Oul emite o erupție de foc!\n Slăbirea groazei înghețate în mod semnificativ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:18:22.224497Z"
+  },
+  "scripts.creaturescripts_evaporate.say_1": {
+    "src_hash": "ac3d1b36b79e5414b5ee84c12b93ddab",
+    "text": "Spiritul de lichior se evaporă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:18:22.225734Z"
   }
 }

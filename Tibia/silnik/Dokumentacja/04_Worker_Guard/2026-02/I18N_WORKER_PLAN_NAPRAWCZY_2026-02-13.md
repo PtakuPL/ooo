@@ -56,7 +56,7 @@ Status na teraz:
 
 Nowe zadania z incydentu:
 - [ ] `WQ-HARD-48 (P0)`: Diagnostyka `Killed` procesu workera (pid timeline + korelacja z obciążeniem I/O/CPU + źródło sygnału).
-- [ ] `WQ-HARD-49 (P1)`: Ograniczyć churn commitów statusowych (cooldown push/commit lub agregacja zmian), aby zmniejszyć obciążenie środowiska i ryzyko zwieszek IDE.
+- [x] `WQ-HARD-49 (P1)`: Ograniczyć churn commitów statusowych (cooldown push/commit lub agregacja zmian), aby zmniejszyć obciążenie środowiska i ryzyko zwieszek IDE.
 
 ### Uzupełnienie 2026-02-21 10:33 UTC — wdrożenie `WQ-HARD-49`
 
@@ -73,6 +73,39 @@ Efekt operacyjny (oczekiwany):
 - Mniej commitów/pushy statusowych na godzinę,
 - niższe obciążenie I/O i mniejszy churn Git,
 - mniejsze ryzyko „zamrożenia” VS Code podczas pracy workera.
+
+## 🛠️ Aktualizacja wykonania (2026-02-21 10:47 UTC — incydent `all-langs` + freeze WSL/VS Code, korekta trybu na 7 języków)
+
+Wybrane do realizacji pełne zadania:
+- **Wyjaśnić, dlaczego worker tłumaczył wszystkie języki zamiast 7 docelowych**
+- **Skorygować runtime do twardego limitu 7 języków**
+- **Udokumentować ryzyko zawieszania WSL/VS Code i związek z obciążeniem workera/guardiana**
+
+Root-cause (potwierdzone):
+- W `i18n_guardian.sh` tryb `translations_general` **celowo ignoruje `langs`** i uruchamia worker bez `--langs` (pełna pula języków).
+- Po wcześniejszych zmianach profil był ustawiony na `mode=translations_general`, więc worker przechodził na all-langs mimo wpisanej listy języków.
+
+Wykonane:
+- ✅ `guardian_profile.json`: `mode` przełączono z `translations_general` na `translations_pl_es`.
+- ✅ Restart stacka (`bash i18n_start_all.sh --restart`) i walidacja runtime.
+- ✅ Potwierdzenie na procesie workera: uruchomienie z flagą
+  - `--langs ru,ro,it,sr,sv,pl,es`
+  - czyli dokładnie 7 języków operatorskich.
+
+Stan działania po korekcie:
+- ✅ `Guardian/Statusd/Worker = RUNNING`
+- ✅ Heartbeat `activity.json` świeży (sekundy–dziesiątki sekund)
+- ✅ Worker realizuje `AUTO_TRANSLATE` tylko dla listy 7 języków.
+
+Incydent „wywala cały WSL/VS Code” — wnioski operacyjne:
+- ⚠️ Brak twardego dowodu OOM w dostępnych logach systemowych podczas tej sesji,
+- ⚠️ ale występuje historycznie wysoki churn statusowy + częste cykle procesów, co jest realnym kandydatem na przeciążenie I/O/CPU i zawieszki IDE.
+- ✅ Zastosowano już mitigację `WQ-HARD-49` (push 480s + cooldown commitu 900s), która zmniejsza to ryzyko.
+
+Nowe zadania po incydencie:
+- [ ] `WQ-HARD-50 (P0)`: Dodać lekki watchdog zasobów (`cpu/mem/io`) do `guardian_health.json` i logować piki przed `Killed`.
+- [ ] `WQ-HARD-51 (P1)`: Dodać tryb „safe-load” dla guardiana (tymczasowe podniesienie delay + obniżenie parallel-langs przy wykryciu niestabilności hosta/IDE).
+- [ ] `WQ-HARD-52 (P0)`: Dodać szybki runbook „co zrobić gdy WSL/VS Code freeze” (kolejność stop/start, minimalny zestaw komend diagnostycznych, rollback profilu).
 
 Wybrane do realizacji pełne zadania:
 - **Przywrócić stabilną pracę workera po `NameError: TRANSLATION_OVERRIDES`**

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T09:47:20.040845Z",
-  "last_cycle": 1,
+  "timestamp": "2026-02-21T09:49:59.151540Z",
+  "last_cycle": 2,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [

@@ -1,120 +1,54 @@
 {
-  "timestamp": "2026-02-21T09:47:20.687008Z",
+  "timestamp": "2026-02-21T09:49:59.237807Z",
   "language": "es",
-  "json_file": "items.json",
-  "translated": 18,
+  "json_file": "npc.json",
+  "translated": 7,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "item.21393.desc",
-      "en": "krailos",
-      "translated": "krailos",
+      "key": "npc.a_fading_memory.greet_msg_1",
+      "en": "Oh...",
+      "translated": "Oh...",
       "source": "tm"
     },
     {
-      "key": "item.21875.name",
-      "en": "a pressure gauge",
-      "translated": "pressure gauge",
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "item.31709.name",
-      "en": "the kilmar tablets",
-      "translated": "kilmar tablets",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "item.32726.name",
-      "en": "a weak spot",
-      "translated": "weak spot",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "item.16242.desc",
-      "en": "Such crystals are used to charge the teleporters to the warzones",
-      "translated": "Estos cristales se utilizan para cargar los teletransportadores a las zonas de guerra.",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
     },
     {
-      "key": "item.16252.desc",
-      "en": "It is a voucher for a basic soil guardian outfit",
-      "translated": "Es un vale para un traje básico de guardián del suelo.",
-      "source": "google_translate"
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
     },
     {
-      "key": "item.16252.name",
-      "en": "gnomish voucher type MB",
-      "translated": "vale gnomo tipo MB",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.16253.desc",
-      "en": "It is a voucher for the first addon of the soil guardian outfit",
-      "translated": "Es un vale para el primer complemento del traje de guardián del suelo.",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.16253.name",
-      "en": "gnomish voucher type MA1",
-      "translated": "vale gnomo tipo MA1",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.16254.desc",
-      "en": "It is a voucher for the second addon of the soil guardian outfit",
-      "translated": "Es un vale para el segundo complemento del traje de guardián del suelo.",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.16254.name",
-      "en": "gnomish voucher type MA2",
-      "translated": "vale gnomo tipo MA2",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.16255.desc",
-      "en": "It is a voucher for a basic crystal warlord outfit",
-      "translated": "Es un vale para un traje básico de señor de la guerra de cristal.",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.16255.name",
-      "en": "gnomish voucher type CB",
-      "translated": "vale gnomo tipo CB",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.16256.desc",
-      "en": "It is a voucher for the first addon of the crystal warlord outfit",
-      "translated": "Es un vale para el primer complemento del traje de señor de la guerra de cristal.",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.16256.name",
-      "en": "gnomish voucher type CA1",
-      "translated": "vale gnomo tipo CA1",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.16257.desc",
-      "en": "It is a voucher for the second addon of the crystal warlord outfit",
-      "translated": "Es un vale para el segundo complemento del traje de señor de la guerra de cristal.",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.16257.name",
-      "en": "gnomish voucher type CA2",
-      "translated": "vale gnomo tipo CA2",
-      "source": "google_translate"
-    },
-    {
-      "key": "item.16262.desc",
-      "en": "It belonged to the first dragon to roam the world and was adorned with Tibia-Market's purest gold",
-      "translated": "Perteneció al primer dragón que vagó por el mundo y estaba adornado con el oro más puro de Tibia-Market.",
-      "source": "google_translate"
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
+      "source": "tm"
     }
   ]
 }

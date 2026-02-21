@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-21T01:05:24.507902Z",
+  "timestamp": "2026-02-21T01:06:26.905743Z",
   "enabled": true,
   "active": true,
   "pending_key": "es,it,pl,ro,ru,sr,sv",
@@ -17,8 +17,8 @@
   "cycle_counter": 6820,
   "baseline_quality_rate_pct": 228.112,
   "best_quality_rate_pct": 228.112,
-  "current_quality_rate_pct": 443.084,
-  "active_minutes": 5929.562,
+  "current_quality_rate_pct": 443.242,
+  "active_minutes": 5930.602,
   "detected": true,
   "severity": "critical",
   "reason": "active_time_without_quality_drop",

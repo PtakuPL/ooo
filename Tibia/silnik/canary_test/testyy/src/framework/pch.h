@@ -68,11 +68,15 @@
 #include <fmt/ranges.h>
 
 // FMT Custom Formatter for Enums
+// fmt >= 10.0.0 (FMT_VERSION >= 100000) has built-in format_as for enums.
+// Only define this fallback for older fmt versions.
+#if FMT_VERSION < 100000
 template <typename E>
 std::enable_if_t<std::is_enum_v<E>, std::underlying_type_t<E>>
 format_as(E e) {
     return static_cast<std::underlying_type_t<E>>(e);
 }
+#endif
 #endif // OTML_NO_FMT
 
 using namespace std::literals;

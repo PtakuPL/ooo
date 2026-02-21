@@ -134,3 +134,14 @@ Wdrozone dzialanie naprawcze:
 
 Run walidacyjny po fixie:
 - `22257107432` (`Build - Linux (OTC Client)`, SHA `0364a1c14`)
+
+## 9. Aktualizacja: Linux passed, Windows nadal w toku
+
+Linux:
+- run `22257107432` zakonczony `success` po fixie `0364a1c14`.
+- build jest zielony, ale log nadal ma wysoki wolumen warningow.
+- dominujacy warning: `-Wsign-compare` z `framework/luaengine/luabinder.h:83` (setki powtorzen przez instancjacje szablonow).
+
+Windows:
+- ostatni odpalony run: `22257127872` (`Build - Windows`, SHA `b5f0cffbf0b1e6411c7404ed49c7a381ebd1daa5`)
+- status na `2026-02-21 13:21:29 UTC`: `in_progress`.

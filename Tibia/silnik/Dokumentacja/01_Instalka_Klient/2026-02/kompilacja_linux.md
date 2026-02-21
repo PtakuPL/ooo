@@ -9,7 +9,8 @@ Szybki status:
 - potwierdzone klasy bledow Linux: split Lua bindings -> `lzma_ret`/fmt -> `ThingCategory`/fmt,
 - wdrozone fixy punktowe; proba globalnego fallbacku enum formattera (`framework/pch.h`) dala regresje `format_as` redefinition,
 - naprawa regresji wdrozona w commicie `0364a1c14` (guard helpera `format_as` tylko dla legacy `fmt`),
-- run walidacyjny po fixie: `22257107432`.
+- run walidacyjny po fixie: `22257107432` -> `success`,
+- po zielonym buildzie zostal backlog warningow (glownie `-Wsign-compare` w `framework/luaengine/luabinder.h:83`; szczegoly w raporcie listy bledow).
 
 ---
 

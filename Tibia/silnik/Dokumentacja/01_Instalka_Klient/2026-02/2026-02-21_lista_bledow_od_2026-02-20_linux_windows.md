@@ -35,6 +35,33 @@ Podsumowanie faili w badanym oknie:
   - run z poprawka:
     - `22257107432` - <https://github.com/PtakuPL/ooo/actions/runs/22257107432>
 
+## Aktualizacja: Linux po fixie jest zielony + warning backlog
+
+- Potwierdzony sukces Linux po fixie:
+  - run `22257107432`
+  - status: `success`
+  - SHA: `0364a1c14798316f6c66b6fcb30cceb7d803fdb6`
+
+- Warningi z runa `22257107432` (zliczenie z logu):
+  - lacznie linii z `warning:`: **778**
+  - warningi kodu C++ (zrodla projektu): **775**
+  - warning narzedziowy vcpkg (deprecation `x-gha`): **1**
+  - warning linkera/libstdc++ (`-Wfree-nonheap-object`): **1**
+
+- Rozklad warningow C++ (source):
+  - `framework/luaengine/luabinder.h:83` - `-Wsign-compare` - **772** powtorzenia
+  - `framework/otml/otmlnode.cpp:80` oraz `:96` - `-Wsign-compare` - **2**
+  - `framework/otml/otmlemitter.cpp:85` - `-Wsign-compare` - **1**
+
+- Dodatkowy warning linkera:
+  - `/usr/include/c++/13/bits/shared_ptr_base.h:921` - `-Wfree-nonheap-object`
+  - kontekst: `main.cpp:82` + globalny `Client g_client` (`client.cpp:37`)
+  - to wyglada na ostrzezenie wynikajace z aliasowania/deletera `shared_ptr`, nie na pewny crash-time bug, ale wymaga przegladu semantyki ownership.
+
+- Czy mozemy to poprawic:
+  - tak; zdecydowana wiekszosc to jeden punkt `luabinder.h:83` i da sie to usunac lokalna zmiana typu/licznika.
+  - po nim zostana 3 warningi `-Wsign-compare` w OTML i 1 warning ownership przy linku.
+
 ## Linux - lista bledow i sposob naprawy
 
 ### LNX-01: Regresja po split bindings Lua/C++

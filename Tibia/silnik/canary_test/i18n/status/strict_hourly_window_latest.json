@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-02-21T00:04:44.508019Z",
-  "window_end_utc": "2026-02-21T01:04:44.508019Z",
+  "window_start_utc": "2026-02-21T00:06:18.433966Z",
+  "window_end_utc": "2026-02-21T01:06:18.433966Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -17,15 +17,15 @@
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 1575,
-  "guard_fail": 4422,
-  "guard_fail_rate_pct": 73.7,
+  "translated": 1585,
+  "guard_fail": 4416,
+  "guard_fail_rate_pct": 73.6,
   "no_progress_entries": 4,
   "no_progress_rate_pct": 4.1,
-  "throughput_keys_per_h": 953.4,
-  "suspicious_total": 4321,
-  "suspicious_total_raw": 10097,
-  "gt_translated": 148,
+  "throughput_keys_per_h": 992.0,
+  "suspicious_total": 4339,
+  "suspicious_total_raw": 11039,
+  "gt_translated": 143,
   "gt_active": true,
   "top_guard_fail_targets": [
     {
@@ -71,9 +71,9 @@
       "guard_command": 0
     },
     {
-      "target": "ro/otclient_modules.json",
-      "translated": 12,
-      "guard_fail": 48,
+      "target": "it/npc.json",
+      "translated": 20,
+      "guard_fail": 40,
       "guard_command": 0
     }
   ]

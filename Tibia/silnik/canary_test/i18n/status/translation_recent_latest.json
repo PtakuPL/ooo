@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-21T01:04:38.450745Z",
-  "language": "ro",
+  "timestamp": "2026-02-21T01:06:12.733224Z",
+  "language": "es",
   "json_file": "npc.json",
-  "translated": 15,
+  "translated": 7,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
@@ -15,88 +15,40 @@
       "source": "tm"
     },
     {
-      "key": "npc.a_fluffy_squirrel.farewell_msg_1",
-      "en": "Chh...",
-      "translated": "Chh...",
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "npc.a_fluffy_squirrel.walkaway_msg_1",
-      "en": "Chh...",
-      "translated": "Chh...",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "npc.a_restless_soul.greet_msg_1",
-      "en": "Uhhhh...",
-      "translated": "Uhhhh...",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "npc.a_starving_dog.greet_1",
-      "en": "<sniff>",
-      "translated": "<sniff>",
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
       "source": "tm"
     },
     {
-      "key": "npc.a_starving_dog.say_1",
-      "en": "<munch>",
-      "translated": "<munch>",
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.say_14",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.robson.say_4",
-      "en": "Fine.",
-      "translated": "Fine.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.robson.say_6",
-      "en": "Fine.",
-      "translated": "Fine.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.a_wrinkled_bonelord.stdmod_1",
-      "en": "485611800364197.",
-      "translated": "485611800364197.",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_wrinkled_bonelord.stdmod_2",
-      "en": "78572611857643646724.",
-      "translated": "78572611857643646724.",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_wrinkled_bonelord.voice_1",
-      "en": "485611800364197.",
-      "translated": "485611800364197.",
-      "source": "google_translate"
-    },
-    {
-      "key": "npc.a_wrinkled_bonelord.voice_2",
-      "en": "78572611857643646724.",
-      "translated": "78572611857643646724.",
-      "source": "google_translate"
     }
   ]
 }

@@ -83126,5 +83126,237 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:50:31.100917Z"
+  },
+  "item.6913.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.085199Z"
+  },
+  "item.6914.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.085499Z"
+  },
+  "item.6915.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.085928Z"
+  },
+  "item.6916.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "rampa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.086197Z"
+  },
+  "item.694.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.086561Z"
+  },
+  "item.695.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.086928Z"
+  },
+  "item.696.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.087204Z"
+  },
+  "item.697.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.087535Z"
+  },
+  "item.6986.name": {
+    "src_hash": "590d8d939a653f0fb1b7ff4d180ff569",
+    "text": "pilastro",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.088065Z"
+  },
+  "item.7033.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "È chiuso a chiave.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.088988Z"
+  },
+  "item.7033.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.089271Z"
+  },
+  "item.7034.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.089526Z"
+  },
+  "item.7035.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.090140Z"
+  },
+  "item.7036.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.090471Z"
+  },
+  "item.7037.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.090750Z"
+  },
+  "item.7038.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.091166Z"
+  },
+  "item.7039.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.091500Z"
+  },
+  "item.7040.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.092102Z"
+  },
+  "item.7041.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.092407Z"
+  },
+  "item.7042.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "È chiuso a chiave.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.092779Z"
+  },
+  "item.7042.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.093083Z"
+  },
+  "item.7043.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.093778Z"
+  },
+  "item.7044.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.094355Z"
+  },
+  "item.7045.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.094827Z"
+  },
+  "item.7046.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.095183Z"
+  },
+  "item.7047.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.095568Z"
+  },
+  "item.7048.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "porta delle competenze",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.096143Z"
+  },
+  "item.7049.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.096445Z"
+  },
+  "item.7050.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:04.096779Z"
   }
 }

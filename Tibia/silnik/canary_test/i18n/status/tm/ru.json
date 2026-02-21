@@ -40014,5 +40014,53 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T01:04:15.110718Z"
+  },
+  "item.13795.name": {
+    "src_hash": "1be7b81d1977f32742a429471f66d531",
+    "text": "мёртвый Йаул",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:10.690717Z"
+  },
+  "item.13796.name": {
+    "src_hash": "1be7b81d1977f32742a429471f66d531",
+    "text": "мёртвый Йаул",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:10.691642Z"
+  },
+  "item.13797.name": {
+    "src_hash": "e868a7f02f5bf0b795178f73b3f4b9cf",
+    "text": "мёртвый Обуйос",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:10.692682Z"
+  },
+  "item.13798.name": {
+    "src_hash": "e868a7f02f5bf0b795178f73b3f4b9cf",
+    "text": "мёртвый Обуйос",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:10.693662Z"
+  },
+  "item.13799.name": {
+    "src_hash": "e868a7f02f5bf0b795178f73b3f4b9cf",
+    "text": "мёртвый Обуйос",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:10.694632Z"
+  },
+  "item.13800.name": {
+    "src_hash": "e868a7f02f5bf0b795178f73b3f4b9cf",
+    "text": "мёртвый Обуйос",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:10.696086Z"
   }
 }

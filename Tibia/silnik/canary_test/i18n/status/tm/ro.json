@@ -75270,5 +75270,45 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:04:38.268881Z"
+  },
+  "item.18218.name": {
+    "src_hash": "b26b73f3e92e6710ee69366ba1be6c00",
+    "text": "dead ron ripper",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:16.606193Z"
+  },
+  "item.18219.name": {
+    "src_hash": "b26b73f3e92e6710ee69366ba1be6c00",
+    "text": "dead ron ripper",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:16.607060Z"
+  },
+  "item.18220.name": {
+    "src_hash": "b26b73f3e92e6710ee69366ba1be6c00",
+    "text": "dead ron ripper",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:16.608255Z"
+  },
+  "item.18221.name": {
+    "src_hash": "b26b73f3e92e6710ee69366ba1be6c00",
+    "text": "dead ron ripper",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:16.609074Z"
+  },
+  "item.12369.desc": {
+    "src_hash": "63235bbda9574445e9496dab2a6ca937",
+    "text": "Capcana a imobilizat și a micșorat lupul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:05:30.512252Z"
   }
 }

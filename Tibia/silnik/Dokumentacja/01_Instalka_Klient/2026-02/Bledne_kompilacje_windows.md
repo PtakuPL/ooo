@@ -1,9 +1,19 @@
 # Błędne kompilacje Windows — MSVC ICE C1001
 
 **Data:** 2026-02-17  
-**Status:** NAPRAWIONE (commit `70c2ec058`)  
+**Status:** DOKUMENT HISTORYCZNY (C1001)  
 **Dotyczy:** OTClient — Build Windows (Release) workflow na GitHub Actions  
 **Repo:** PtakuPL/ooo, branch master  
+
+## Aktualizacja 2026-02-21 (stan biezacy)
+
+Ten dokument opisuje glownie fale bledow C1001 z 2026-02-17.
+Aktualny stan CI Windows/Linux i nowe root-cause (m.in. `vcpkg` download 502 przy `gtest`) jest opisany tutaj:
+
+- `Dokumentacja/01_Instalka_Klient/2026-02/2026-02-21_ci_linux_windows_analiza_poprawek_v3.md`
+
+Nowy run Windows odpalony recznie po aktualizacji:
+- `22256688321` (`in_progress` na moment zapisu raportu)
 
 ---
 

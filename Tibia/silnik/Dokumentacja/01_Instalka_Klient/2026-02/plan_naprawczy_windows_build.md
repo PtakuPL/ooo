@@ -1,5 +1,18 @@
 # Plan Naprawczy: Windows Build - Instalka OTC Client
 
+## Aktualizacja 2026-02-21 (uzupelnienie operacyjne)
+
+Ten plan opisuje glownie fale problemow z C1001.
+Aktualny raport Linux+Windows (wraz z runami 2026-02-21 i klasami bledow `fmt`/enum oraz `vcpkg` HTTP 502) jest tutaj:
+
+- `Dokumentacja/01_Instalka_Klient/2026-02/2026-02-21_ci_linux_windows_analiza_poprawek_v3.md`
+
+Status operacyjny:
+- Windows run odpalony recznie: `22256688321` (stan: `in_progress` podczas zapisu),
+- rekomendacja: dodac retry na `Configure CMake` w Windows workflow dla transient `vcpkg` download fail.
+
+---
+
 **Data:** 2026-02-20 (aktualizacja: 2026-02-21)  
 **Źródło:** Analiza logów CI + badanie ChatGPT (`badanie_chatgpt_kompilacja.md` + `analiza_chatgpt_commity_i_diagnostyka.md`)  
 **Run ID (początkowy):** 22203119029 | **Run ID (po Kroku 1):** 22234136342  

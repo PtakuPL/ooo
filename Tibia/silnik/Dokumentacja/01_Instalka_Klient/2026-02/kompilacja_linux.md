@@ -1,3 +1,16 @@
+## Aktualizacja 2026-02-21 (CI Linux/Windows, faza enum/fmt)
+
+Aktualna, scalona analiza runow i poprawek (Linux + Windows) jest tutaj:
+
+- `Dokumentacja/01_Instalka_Klient/2026-02/2026-02-21_ci_linux_windows_analiza_poprawek_v3.md`
+
+Szybki status:
+- potwierdzone klasy bledow Linux: split Lua bindings -> `lzma_ret`/fmt -> `ThingCategory`/fmt,
+- wdrozone fixy punktowe + globalny fallback enum formattera (`framework/pch.h`),
+- aktualne runy Linux z fixami byly jeszcze w toku na moment zapisu raportu.
+
+---
+
 ## Aktualizacja 2026-02-21 (status dokumentu)
 
 Ten plik to głównie surowy log/historyczna rozmowa o warningach.  

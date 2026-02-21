@@ -80,6 +80,17 @@ local extraWidgets = {
     optionsButtons = nil
 }
 
+local function applyI18nLayoutOverride(rootWidget, modulePath)
+    if not rootWidget or not modulePath or not i18nLayout then
+        return
+    end
+    if i18nLayout.registerRoot then
+        i18nLayout.registerRoot(rootWidget, modulePath)
+    elseif i18nLayout.applyOverrides then
+        i18nLayout.applyOverrides(rootWidget, modulePath)
+    end
+end
+
 local function toggleDisplays()
     if options['displayNames'].value and options['displayHealth'].value and options['displayMana'].value then
         setOption('displayNames', false)
@@ -216,6 +227,18 @@ function controller:onInit()
 
     panels.misc = g_ui.loadUI('styles/misc/misc', controller.ui.optionsTabContent)
     panels.miscHelp = g_ui.loadUI('styles/misc/help', controller.ui.optionsTabContent)
+
+    applyI18nLayoutOverride(self.ui, 'client_options/options')
+    applyI18nLayoutOverride(panels.generalPanel, 'styles/controls/general')
+    applyI18nLayoutOverride(panels.keybindsPanel, 'styles/controls/keybinds')
+    applyI18nLayoutOverride(panels.graphicsPanel, 'styles/graphics/graphics')
+    applyI18nLayoutOverride(panels.graphicsEffectsPanel, 'styles/graphics/effects')
+    applyI18nLayoutOverride(panels.interface, 'styles/interface/interface')
+    applyI18nLayoutOverride(panels.interfaceConsole, 'styles/interface/console')
+    applyI18nLayoutOverride(panels.interfaceHUD, 'styles/interface/HUD')
+    applyI18nLayoutOverride(panels.soundPanel, 'styles/sound/audio')
+    applyI18nLayoutOverride(panels.misc, 'styles/misc/misc')
+    applyI18nLayoutOverride(panels.miscHelp, 'styles/misc/help')
 
     self.ui:hide()
 

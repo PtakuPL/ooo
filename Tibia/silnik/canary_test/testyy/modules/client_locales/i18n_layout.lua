@@ -412,11 +412,6 @@ function i18nLayout.init()
     -- Auto-apply per-language layout overrides on every UI load/display.
     wrapUiLoaders()
 
-    -- Apply once to currently loaded roots (if any were created before init).
-    if rootWidget then
-        i18nLayout.registerRoot(rootWidget, 'root')
-    end
-
     pdebug('[I18N Layout] Module initialized')
 end
 

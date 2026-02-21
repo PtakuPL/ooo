@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T01:54:07.776209Z",
-  "last_cycle": 36,
+  "timestamp": "2026-02-21T01:55:40.302252Z",
+  "last_cycle": 37,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [],
@@ -925,7 +925,10 @@
       "npc.captain_pelagia.farewell_msg_1",
       "npc.captain_pelagia.walkaway_msg_1",
       "npc.captain_seagull.farewell_msg_1",
-      "npc.captain_seahorse.farewell_msg_1"
+      "npc.captain_seahorse.farewell_msg_1",
+      "npc.captain_seahorse.walkaway_msg_1",
+      "npc.captain_sinbeard.farewell_msg_1",
+      "npc.captain_sinbeard.walkaway_msg_1"
     ],
     "ro|npc.json": [
       "npc.a_fading_memory.greet_msg_1",

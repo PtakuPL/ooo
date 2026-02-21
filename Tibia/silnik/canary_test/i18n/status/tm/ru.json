@@ -40454,5 +40454,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:47:14.166657Z"
+  },
+  "npc.captain_seahorse.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Тогда до свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:55:11.965310Z"
+  },
+  "npc.captain_sinbeard.farewell_msg_1": {
+    "src_hash": "4cc1d72c4860fcc754b254a554162ce3",
+    "text": "До свидания. Порекомендуйте нас, если вы остались довольны нашим сервисом.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:55:11.966131Z"
+  },
+  "npc.captain_sinbeard.walkaway_msg_1": {
+    "src_hash": "5c29fcf0005b56ffead61fcf00537096",
+    "text": "Тогда до свидания.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:55:11.968998Z"
   }
 }

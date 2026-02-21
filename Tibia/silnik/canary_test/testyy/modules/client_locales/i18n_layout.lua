@@ -200,8 +200,8 @@ function i18nLayout.measureLanguage(langCode)
             measureWidget:setText(trValue)
             local trSize = measureWidget:getTextSize()
 
-            local enW = enSize.width or enSize[1] or 0
-            local trW = trSize.width or trSize[1] or 0
+            local enW = enSize.width
+            local trW = trSize.width
 
             if trW > enW * 1.2 then
                 -- This translation is >20% wider than English
@@ -275,7 +275,7 @@ end
 -- ============================================================================
 -- Hook into locale change to auto-apply overrides
 -- ============================================================================
-function i18nLayout.onLocaleChanged(langCode)
+local function handleLocaleChanged(langCode)
     -- Clear tracking
     patchedWidgets = {}
     -- Pre-load the override file for the new language
@@ -285,16 +285,31 @@ end
 -- ============================================================================
 -- Module lifecycle
 -- ============================================================================
+local previousOnLocaleChanged = nil
+
 function i18nLayout.init()
-    -- Connect to locale change event
-    if modules and modules.client_locales then
-        -- Hook the locale change
-        _G.i18nLayout = i18nLayout
-        pdebug('[I18N Layout] Module initialized')
+    _G.i18nLayout = i18nLayout
+
+    -- Chain into the global onLocaleChanged callback.
+    -- locales.lua calls _G.onLocaleChanged(name) when locale switches.
+    -- We save any previous handler and chain ours.
+    previousOnLocaleChanged = _G.onLocaleChanged
+    _G.onLocaleChanged = function(langCode)
+        -- Call previous handler first
+        if previousOnLocaleChanged then
+            previousOnLocaleChanged(langCode)
+        end
+        -- Then our handler
+        handleLocaleChanged(langCode)
     end
+
+    pdebug('[I18N Layout] Module initialized')
 end
 
 function i18nLayout.terminate()
+    -- Restore previous handler
+    _G.onLocaleChanged = previousOnLocaleChanged
+    previousOnLocaleChanged = nil
     _G.i18nLayout = nil
     layoutOverrides = {}
     patchedWidgets = {}

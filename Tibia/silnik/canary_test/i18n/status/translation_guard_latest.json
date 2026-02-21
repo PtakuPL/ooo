@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-21T00:20:42.641841Z",
-  "cycle": 29,
-  "language": "it",
-  "json_file": "php.json",
-  "translated": 2,
+  "timestamp": "2026-02-21T00:22:04.747700Z",
+  "cycle": 30,
+  "language": "sv",
+  "json_file": "quests.json",
+  "translated": 29,
   "placeholders": 0,
-  "guard_fail": 7,
+  "guard_fail": 1,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 55
+  "strict_skipped_done": 102
 }

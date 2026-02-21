@@ -37574,5 +37574,229 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T00:13:22.150797Z"
+  },
+  "quests.bigfoot_burden.crystal_not_damaged": {
+    "src_hash": "fe3ff614cedaa49219f13e67f00cab9d",
+    "text": "Detta är ingen skadad kristall!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:29.520937Z"
+  },
+  "quests.bigfoot_burden.crystal_repaired": {
+    "src_hash": "60d5612333b384516cb59343aa68a514",
+    "text": "Du har reparerat en skadad kristall!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:29.521270Z"
+  },
+  "quests.bigfoot_burden.crystals_charging": {
+    "src_hash": "e8e09ff0c5db42c8b3a95b1100d0c2b4",
+    "text": "Kristallerna laddas!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:29.521625Z"
+  },
+  "quests.bigfoot_burden.device_unknown": {
+    "src_hash": "4e98f8923a32f5e88ac8299aa52fe8af",
+    "text": "Du har ingen aning om hur du använder den här enheten. Xelvar i Kazordoon kanske berättar mer om det.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:29.522280Z"
+  },
+  "quests.bigfoot_burden.enough_renown": {
+    "src_hash": "8e829f523946407b7b24b62b49bbd917",
+    "text": "Du har äntligen tillräckligt med rykte bland tomtarna, be Gnomission om ett uppdrag för att ta emot din kristall.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:29.522870Z"
+  },
+  "quests.bigfoot_burden.gasp": {
+    "src_hash": "4758f628434ece29bf84223f42a476a1",
+    "text": "<gasp>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:36.760910Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg1": {
+    "src_hash": "480e35ad14db7f1efdf3f9e00ed78a58",
+    "text": "Gnomedix: Så låt undersökningen börja! Rör dig inte nu. Var inte rädd. Den goda doktorntomten kommer inte att skada dig - förhoppningsvis!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:36.761598Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg2": {
+    "src_hash": "e2ab9a67cf5112ed29716b20320600c2",
+    "text": "Gnomedix: Nu! Nu! Få inte panik! Det är snart över!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:36.761982Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg3": {
+    "src_hash": "503b77337aa47368fbf6324836cb7837",
+    "text": "Gnomedix: Låt mig prova en större mejsel!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:36.762322Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg4": {
+    "src_hash": "d6a9f750fe55398ca30eefbf148c3c9f",
+    "text": "Gnomedix: Vi är nästan don... heliga gnome! Vad är DETTA???",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:36.762716Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg6": {
+    "src_hash": "abfd48c5fc8121209d0666adcf6c99fa",
+    "text": "Gnomedix: Håll still nu! Det här kanske kittlar lite..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:44.529288Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg7": {
+    "src_hash": "2fccc4bbff73ea03fdd55ecf188ceb8c",
+    "text": "Gnomedix: Ta det här, din onde ... vad du än är!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:44.529711Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg8": {
+    "src_hash": "cd6d2693244661936990d9aa89bd4492",
+    "text": "Gnomedix: Jag förstår! Hoppsan! Vad var det? Uhm, tja ... du klarade öronundersökningen. Prata med Gnomaticus för ditt nästa test.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:44.530308Z"
+  },
+  "quests.bigfoot_burden.golden_fruits_found": {
+    "src_hash": "d74cfab59a5109eb785c4a0529c86d06",
+    "text": "Du har hittat några gyllene frukter.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:44.530635Z"
+  },
+  "quests.bigfoot_burden.golem_returned": {
+    "src_hash": "9b62f0a69b86d144ca3e1576a14a58c0",
+    "text": "Golemen har återlämnats till den gnälliga verkstaden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:50.401818Z"
+  },
+  "quests.bigfoot_burden.golems_enough": {
+    "src_hash": "09f9e9d1e34832d2001a9dad6ec10799",
+    "text": "Du har lämnat tillbaka tillräckligt med golem för nu. Ge tomtarna lite tid för deras reparationer. Rapportera tillbaka nu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:50.402511Z"
+  },
+  "quests.bigfoot_burden.grayed_success": {
+    "src_hash": "008ee9986ebce5c395cc4c1b16eb61ed",
+    "text": "Du har framgångsrikt blivit g-rayed. Låt nu doktor Gnomedix inspektera dina öron!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:50.403146Z"
+  },
+  "quests.bigfoot_burden.loot_warning": {
+    "src_hash": "0ae78e5ea93c887a30cc25c8b7f38626",
+    "text": "Du har en minut på dig att plundra chefen och lämna rummet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:50.403616Z"
+  },
+  "quests.bigfoot_burden.matchmaker_complete": {
+    "src_hash": "b984ec9660da868ecc69c9a2c01639ec",
+    "text": "Grattis! Kristallerna verkar ha blivit kära och ditt uppdrag är klart!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:50.404110Z"
+  },
+  "quests.bigfoot_burden.melody_complete": {
+    "src_hash": "2a218e761bb906e1d5e72c8e4ffaad90",
+    "text": "Det var rätt notering! Nu vet du din själsmelodi!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:57.351655Z"
+  },
+  "quests.bigfoot_burden.mind_refreshed": {
+    "src_hash": "d8af034712525ba4e9c7c6f91fc42164",
+    "text": "Ditt sinne känns fräscht!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:57.351983Z"
+  },
+  "quests.bigfoot_burden.mushroom_wait": {
+    "src_hash": "bc4e0249920d6057542c82785457005a",
+    "text": "Du måste vänta med att extrahera sporer från denna svamp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:57.352406Z"
+  },
+  "quests.bigfoot_burden.need_mission_crystal": {
+    "src_hash": "d2b109377df37ef2965d1bba9a69cfaf",
+    "text": "Du behöver en uppdragskristall eller ett jobb gjort med Gnomission för att komma in.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:57.352864Z"
+  },
+  "quests.bigfoot_burden.need_teleport_crystal": {
+    "src_hash": "26c4744888f98b7829aa86e24ea0aab3",
+    "text": "Du behöver en teleporterande kristall för att kunna använda den här enheten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:21:57.353330Z"
+  },
+  "quests.bigfoot_burden.no_endurance_test": {
+    "src_hash": "d24aac0def4b8f7ae074a9da3619a273",
+    "text": "Som tur är behöver du inte ta uthålligheten just nu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:22:03.600357Z"
+  },
+  "quests.bigfoot_burden.not_permitted": {
+    "src_hash": "722a8c1a978dbdef3eee391d6d8304a9",
+    "text": "Du får inte komma in.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:22:03.600674Z"
+  },
+  "quests.bigfoot_burden.pig_eating": {
+    "src_hash": "82aeede3e6b7b325ed4ea821f13b0756",
+    "text": "Den lilla grisen äter glatt tryffeln.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:22:03.601005Z"
+  },
+  "quests.bigfoot_burden.pig_stuffed": {
+    "src_hash": "90b1df4f5cbf78315c5e1c7d65fdcd02",
+    "text": "Den lilla grisen är uppstoppad och du bör lämna tillbaka den hem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:22:03.601398Z"
   }
 }

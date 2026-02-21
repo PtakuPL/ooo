@@ -1,4 +1,5 @@
 dofile 'neededtranslations'
+dofile 'i18n_layout'
 
 -- private variables
 local defaultLocaleName = 'en'
@@ -117,9 +118,19 @@ function init()
   modules.client_locales = modules.client_locales or {}
   modules.client_locales.openLanguagePicker = openLanguagePicker
   modules.client_locales.createWindow = createWindow
+
+  -- Initialize I18N layout override system
+  if i18nLayout and i18nLayout.init then
+    i18nLayout.init()
+  end
 end
 
 function terminate()
+  -- Terminate I18N layout override system
+  if i18nLayout and i18nLayout.terminate then
+    i18nLayout.terminate()
+  end
+
   installedLocales = nil
   currentLocale = nil
 

@@ -155182,5 +155182,13 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:51:24.887597Z"
+  },
+  "data.otservbr.global.scripts.movements.others.dawnport.tiles.L48.2334": {
+    "src_hash": "3c4ead55dc3ddb0a3069ed6fe9cf85d8",
+    "text": "Has elegido tu vocación. No puedes regresar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:52:56.630503Z"
   }
 }

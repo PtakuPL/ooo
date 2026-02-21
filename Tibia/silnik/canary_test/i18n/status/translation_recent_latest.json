@@ -1,29 +1,53 @@
 {
-  "timestamp": "2026-02-21T10:28:47.685493Z",
-  "language": "ru",
-  "json_file": "quests.json",
-  "translated": 3,
+  "timestamp": "2026-02-21T10:35:22.715099Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 7,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "quests.2_ambassadors_treason.msg_3",
-      "en": "You examine the scrolls carefully. Those are orders from Rathleton for the Ambassador. No sign of treason here.",
-      "translated": "Вы внимательно изучаете свитки. Это приказ от Ратхлетон послу. Никаких признаков измены здесь нет.",
+      "key": "npc.a_fading_memory.greet_msg_1",
+      "en": "Oh...",
+      "translated": "Oh...",
       "source": "tm"
     },
     {
-      "key": "quests.actions_bonefiddle.msg_2",
-      "en": "You are playing the Peacock Ballad and the portal opens.",
-      "translated": "Вы играете в Пеакокк Баллад, и портал открывается.",
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "quests.bigfoot_burden.device_unknown",
-      "en": "You have no idea on how to use this device. Xelvar in Kazordoon might tell you more about it.",
-      "translated": "Вы понятия не имеете, как пользоваться этим устройством. Кселвар в Казордоон может рассказать вам об этом больше.",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
+      "source": "tm"
+    },
+    {
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.bozo.stdmod_116",
+      "en": "npc.bozo.mission_36_t1",
+      "translated": "npc.bozo.mission_36_t1",
+      "source": "tm"
+    },
+    {
+      "key": "npc.bozo.stdmod_92",
+      "en": "npc.bozo.mission_12_t1",
+      "translated": "npc.bozo.mission_12_t1",
+      "source": "tm"
+    },
+    {
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     }
   ]

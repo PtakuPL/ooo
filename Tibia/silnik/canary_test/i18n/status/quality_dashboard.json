@@ -33,12 +33,12 @@
     "issues_count": 1417
   },
   "es": {
-    "last_cycle": "2026-02-21T10:24:10.399870Z",
+    "last_cycle": "2026-02-21T10:35:22.711643Z",
     "last_translated": 7,
-    "total_suspicious": 76767,
-    "total_rejected": 2638,
-    "total_gt_guard_fail": 25914,
-    "cycles": 1834,
+    "total_suspicious": 76837,
+    "total_rejected": 2641,
+    "total_gt_guard_fail": 25950,
+    "cycles": 1835,
     "quality_score": 60.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 350877
@@ -66,12 +66,12 @@
     "issues_count": 2470
   },
   "it": {
-    "last_cycle": "2026-02-21T10:28:23.059470Z",
-    "last_translated": 30,
+    "last_cycle": "2026-02-21T10:32:59.403254Z",
+    "last_translated": 2,
     "total_suspicious": 9627,
     "total_rejected": 1010,
-    "total_gt_guard_fail": 3501,
-    "cycles": 545,
+    "total_gt_guard_fail": 3510,
+    "cycles": 546,
     "quality_score": 74.7,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 77055
@@ -418,13 +418,13 @@
     "issues_count": 111
   },
   "sr": {
-    "last_cycle": "2026-02-21T10:11:52.036888Z",
+    "last_cycle": "2026-02-21T10:33:28.443865Z",
     "last_translated": 30,
-    "total_suspicious": 3748,
+    "total_suspicious": 3778,
     "total_rejected": 1,
     "total_gt_guard_fail": 516,
-    "cycles": 192,
-    "quality_score": 69.5,
+    "cycles": 193,
+    "quality_score": 69.7,
     "last_audit": "2026-02-20T21:57:44.900702Z",
     "issues_count": 87233
   },
@@ -550,13 +550,13 @@
     "issues_count": 958
   },
   "ro": {
-    "last_cycle": "2026-02-21T10:21:36.590672Z",
-    "last_translated": 5,
-    "total_suspicious": 92483,
+    "last_cycle": "2026-02-21T10:29:19.439619Z",
+    "last_translated": 4,
+    "total_suspicious": 92484,
     "total_rejected": 3830,
-    "total_gt_guard_fail": 6371,
-    "cycles": 491,
-    "quality_score": 62.1,
+    "total_gt_guard_fail": 6377,
+    "cycles": 492,
+    "quality_score": 62.2,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 190054
   },

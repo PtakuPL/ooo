@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T10:28:47.671482Z",
-  "last_cycle": 20,
+  "timestamp": "2026-02-21T10:35:21.989787Z",
+  "last_cycle": 21,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [],
@@ -71,15 +71,7 @@
       "monster.orc_sambackpack.name",
       "monster.orewalker.voice_1"
     ],
-    "es|npc.json": [
-      "npc.a_fading_memory.greet_msg_1",
-      "npc.a_sweaty_cyclops.stdmod_1",
-      "npc.a_sweaty_cyclops.voice_1",
-      "npc.barnabas_dee.say_5",
-      "npc.bozo.stdmod_116",
-      "npc.bozo.stdmod_92",
-      "npc.budrik.say_9"
-    ],
+    "es|npc.json": [],
     "sv|npc.json": [
       "npc.a_fluffy_squirrel.farewell_msg_1",
       "npc.a_fluffy_squirrel.walkaway_msg_1",
@@ -308,10 +300,7 @@
       "spell.tentuglys_head_energyt.name",
       "spell.the_pale_count_manadrain.name"
     ],
-    "it|quests.json": [
-      "quests.actions_boxramp.msg_1",
-      "quests.actions_using_crystals.say_2"
-    ],
+    "it|quests.json": [],
     "ro|quests.json": [],
     "sv|server.json": [],
     "sr|server.json": [],

@@ -50,3 +50,12 @@ Build Windows powinien teraz używać toolsetu 14.44.35207 (`_MSC_VER = 1944`), 
 ## Dodatkowa informacja
 
 Build jest `workflow_dispatch` (ręczne uruchomienie). Po pushu trzeba ręcznie uruchomić workflow "Build - Windows" na GitHubie.
+
+## Aktualizacja 2026-02-21
+
+1. Stan workflow potwierdzony:  
+   - aktywny plik: `/home/ptaku/serweryt/.github/workflows/build-windows.yml`
+   - wybór toolsetu: najnowszy dostępny (`Select-Object -First 1`)
+2. W pliku workflow jest niespójny komentarz historyczny w kroku `Configure CMake` ("already skips 14.44"), który nie odpowiada aktualnemu kodowi.
+3. Pełny audyt techniczny (UI i CI):  
+   - `Dokumentacja/01_Instalka_Klient/2026-02/2026-02-21_audyt_i18n_layout_ci_linux_windows.md`

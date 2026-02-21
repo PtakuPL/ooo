@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T01:21:36.540104Z",
-  "last_cycle": 18,
+  "timestamp": "2026-02-21T01:23:53.454062Z",
+  "last_cycle": 19,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [],
@@ -447,6 +447,14 @@
       "scripts.creaturescripts_death_dragon.say_1",
       "scripts.creaturescripts_death_dragon_essence.say_1",
       "scripts.creaturescripts_depolarized_death.say_1",
+      "scripts.creaturescripts_disgusting_ooze_death.say_1",
+      "scripts.creaturescripts_distorted_source.say_1",
+      "scripts.creaturescripts_distorted_source.say_2",
+      "scripts.creaturescripts_dragon_egg.say_1",
+      "scripts.creaturescripts_evaporate.say_1",
+      "scripts.creaturescripts_ferumbras_mortal_shell_death.say_1",
+      "scripts.creaturescripts_ghulosh.say_1",
+      "scripts.creaturescripts_overcharge_death.say_1",
       "scripts.malofur_explosion.say_4"
     ],
     "ru|scripts.json": [
@@ -479,7 +487,9 @@
       "scripts.actions_gems.shrine_time",
       "scripts.dolls.12043_3",
       "scripts.movements_energy_fence.msg_5",
-      "scripts.movements_enter_realm.msg_2"
+      "scripts.movements_enter_realm.msg_2",
+      "scripts.movements_ice_death.msg_2",
+      "scripts.movements_quara_vortex.msg_1"
     ],
     "ro|scripts.json": [
       "scripts.action_horn.say_4",

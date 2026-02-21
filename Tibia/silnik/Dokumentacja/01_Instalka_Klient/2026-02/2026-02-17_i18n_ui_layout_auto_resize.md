@@ -5,6 +5,21 @@
 
 ---
 
+## AKTUALIZACJA 2026-02-21 (ważne)
+
+Ten plik zawiera dużo materiału historycznego (plan + eksperymenty + statusy "w toku").  
+Aktualny stan faktyczny i lista błędnych założeń są opisane tutaj:
+
+- `Dokumentacja/01_Instalka_Klient/2026-02/2026-02-21_audyt_i18n_layout_ci_linux_windows.md`
+
+Najważniejsze korekty względem części starszych sekcji:
+
+1. Globalne auto-resize `Button`/`QtButton` zostało wycofane (commit `2f1188fb9`), a nie utrzymane.
+2. `i18n_layout.lua` istnieje, ale `i18nLayout.applyOverrides(...)` nie jest nigdzie wywoływane, więc per-language override nie działa end-to-end.
+3. Linux workflow jest aktywny w root repo; brak buildów po części zmian wynika głównie z `paths:` filtrujących tylko wybrane pliki.
+
+---
+
 ## 1. Stan obecny — Mechanizmy auto-resize w silniku
 
 OTClient posiada **już wbudowane** mechanizmy auto-dopasowania tekstu w C++, ale prawie żaden element w panelu ustawień z nich **nie korzysta**.
@@ -1577,4 +1592,3 @@ jako limity bezpieczeństwa PLUS naprawić łańcuch `text-wrap` → `auto-fit-p
 4. **D** — namespace ID (cleanup, nie blokujące)
 5. **C** — izolacja Button stylu (jeśli regresje z B pokażą problemy)
 6. **F** — debug logging (nice-to-have)
-

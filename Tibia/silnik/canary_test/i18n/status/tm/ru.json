@@ -40062,5 +40062,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T01:05:10.696086Z"
+  },
+  "scripts.movements_quara_vortex.msg_1": {
+    "src_hash": "92f79f3b5a073c61aa47a25cf2b49246",
+    "text": "Чтобы нырять, вам необходимо надеть шлем для подводных исследований.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:23:01.209905Z"
   }
 }

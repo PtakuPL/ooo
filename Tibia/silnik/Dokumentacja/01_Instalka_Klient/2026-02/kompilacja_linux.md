@@ -1,3 +1,14 @@
+## Aktualizacja 2026-02-21 (status dokumentu)
+
+Ten plik to głównie surowy log/historyczna rozmowa o warningach.  
+Aktualna analiza przyczyn "znikających" buildów Linux i plan naprawczy CI:
+
+- `Dokumentacja/01_Instalka_Klient/2026-02/2026-02-21_audyt_i18n_layout_ci_linux_windows.md`
+
+Skrót: workflow Linux jest aktywny, ale ma zawężone `paths:` i dlatego część zmian OTUI/Lua/i18n nie uruchamia builda automatycznie.
+
+---
+
 Dobrze to teraz wracamy do problemów generacji poprawnych zdań w instalce . na gh actions build linux przeszedł ale ma pełno warnings. co to za waringi. Te mnie najbardziej insteresują 
 
 OTC Linux Build (Release): Tibia/silnik/canary_test/testyy/src/framework/text/TextShaper.cpp#L139

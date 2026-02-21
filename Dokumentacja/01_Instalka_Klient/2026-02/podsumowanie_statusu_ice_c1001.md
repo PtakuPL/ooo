@@ -1,7 +1,7 @@
-# Podsumowanie statusu ICE C1001 — po Rundzie 3
+# Podsumowanie statusu ICE C1001 — po Rundzie 4
 
-**Data:** 2026-02-21 (aktualizacja)  
-**Kontekst:** Analiza wyników CI + głębokie badanie .cpp/.h + implementacja poprawek Rundy 3
+**Data:** 2026-02-22 (aktualizacja)  
+**Kontekst:** Analiza wyników CI + poprawki build Linux + split client TU + I18N button sizing
 
 ---
 
@@ -15,7 +15,43 @@
 
 **Kroki 3A-3E ✅ — głębokie badanie (Runda 3):** Usunięcie ciężkiego include'a Asio, split TU, refaktor tuple templates, fix PainterShaderProgram, explicit `std::size_t`.
 
-**Aktualny status:** 2 buildy CI w trakcie (run 22244152617, 22243721692). Oczekujemy na wyniki.
+**Runda 4A ✅ — Fix pch.h (Linux):** Include guard `#ifndef FRAMEWORK_PCH_H` naprawił `redefinition of 'format_as'` na GCC 13.
+
+**Runda 4B ✅ — Split client/luafunctions.cpp:** 1104→405 linii + 2 nowe TU (entities: 567, ui_client: 210).
+
+**Aktualny status:** Buildy CI Linux w trakcie. HEAD = origin/master = `e096f7242`. Wszystkie zmiany scommitowane i pushowane.
+
+---
+
+## Co zostało zrobione w Rundzie 4 (2026-02-22)
+
+### 4A: Fix pch.h double-inclusion (Linux) ✅
+
+**Problem:** Build Linux failował: `pch.h:70:1: error: redefinition of 'template<class E> format_as(E)'`
+
+**Przyczyna:** CMake PCH injection (`-include cmake_pch.hxx` → `pch.h`) + zwykły łańcuch include'ów (`global.h` → `pch.h`) powodował podwójne zdefiniowanie szablonu `format_as`. `#pragma once` nie chroni gdy ten sam plik jest włączany raz bezpośrednio, raz przez CMake injection.
+
+**Naprawa:** Dodano tradycyjny include guard:
+```cpp
+#ifndef FRAMEWORK_PCH_H
+#define FRAMEWORK_PCH_H
+// ... pch.h content ...
+#endif // FRAMEWORK_PCH_H
+```
+
+### 4B: Split client/luafunctions.cpp ✅
+
+**Problem:** Najcięższy TU w projekcie: 1104 linii, 939 template binds.
+
+**Naprawa:** Split na 3 pliki:
+
+| Plik | Linii | Bindy | Zawartość |
+|------|-------|-------|-----------|
+| `client/luafunctions.cpp` | 405 | ~200 | Singletons: g_things, g_map, g_game, g_minimap, g_sprites, g_client, g_attachedEffects, g_gameConfig |
+| `client/luafunctions_entities.cpp` **NOWY** | 567 | ~540 | 20+ entity classes: ProtocolGame, Container, AttachableObject, Thing, Creature, Player/Npc/Monster, LocalPlayer, Item, Effect, Missile, AttachedEffect, StaticText, AnimatedText, Tile, ThingType, ItemType, House, Spawn, Town, CreatureType |
+| `client/luafunctions_ui_client.cpp` **NOWY** | 210 | ~200 | 10 UI widget classes: UIItem, UIEffect, UIMissile, UISprite, UICreature, UIMap, UIMinimap, UIProgressRect, UIGraph, UIMapAnchorLayout |
+
+CMakeLists.txt zaktualizowany: oba pliki w Group 2 (flagi MSVC ICE workaround + SKIP_PRECOMPILE_HEADERS ON) + lista źródeł.
 
 ---
 

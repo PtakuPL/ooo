@@ -82214,5 +82214,77 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:55:51.863553Z"
+  },
+  "scripts.construction_kits.jack_chair": {
+    "src_hash": "ce9d2ea28d71cea85625d885b8c66ce0",
+    "text": "Jack: Sì, uhm... una sedia impressionante. Ora, per favore, potresti rimuoverlo? Grazie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:01:50.816458Z"
+  },
+  "scripts.construction_kits.jack_globe": {
+    "src_hash": "2390140de51c54f8da7495668db3a7e3",
+    "text": "Jack: Bello, un... cos'è veramente questo?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:01:50.816821Z"
+  },
+  "scripts.construction_kits.jack_horse": {
+    "src_hash": "f546b29aecc22e88cd8265419e934b8d",
+    "text": "Jack: Un cavallo a dondolo? Cos'hai che non va.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:01:50.817165Z"
+  },
+  "scripts.construction_kits.red_chair": {
+    "src_hash": "ddd8dbd7d9effff2db033123142d2060",
+    "text": "La sedia imbottita rossa sembra piuttosto comoda in quell'angolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:01:50.817623Z"
+  },
+  "scripts.construction_kits.telescope": {
+    "src_hash": "a34789abbe32970dadf481a236514520",
+    "text": "Sembra proprio che il telescopio fosse l'unica cosa che mancava in questa stanza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:01:57.217183Z"
+  },
+  "scripts.create_npc.msg_1": {
+    "src_hash": "1036c9df15267ba8f1169676ff135099",
+    "text": "Impossibile aprire il file della mappa NPC.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:01:57.217499Z"
+  },
+  "scripts.create_npc.msg_2": {
+    "src_hash": "2d5d25e4fd5fdc939c248642ebe3c0c7",
+    "text": "Il file della mappa NPC non è valido: mancante {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:01:57.217856Z"
+  },
+  "scripts.create_npc.msg_3": {
+    "src_hash": "93a9ab9d0001e8164d9984caa70e670d",
+    "text": "Impossibile salvare il file della mappa NPC.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:01:57.218156Z"
+  },
+  "scripts.create_spawn.msg_1": {
+    "src_hash": "1c37ae71883f3c3aaf4b2a7c9d64cb2d",
+    "text": "Spawn creato per il mostro {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:01:59.550763Z"
   }
 }

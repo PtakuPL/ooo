@@ -155302,5 +155302,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T09:47:20.040178Z"
+  },
+  "item.16275.desc": {
+    "src_hash": "f9cc23a897128024e77d77c88ffa5c60",
+    "text": "Esta espada fue forjada con el entusiasmo y los sueños de los rookgaardianos. Otorgado por Rookie.pl",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:03:10.074914Z"
+  },
+  "item.16277.desc": {
+    "src_hash": "0175522c050fe76aede42896b76eb83a",
+    "text": "Úselo en un templo de la ciudad para viajar al Adventurers Guild. Un reemplazo está disponible en los templos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:03:10.075592Z"
+  },
+  "item.16587.name": {
+    "src_hash": "b139a8ce38f8a43c19ad9d19307887e0",
+    "text": "musgo de atolladero",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:03:10.075869Z"
+  },
+  "item.166.desc": {
+    "src_hash": "6167f2b0080df3843d4ee1a54bc377c7",
+    "text": "Puedes ver las escaleras que conducen hacia abajo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:03:15.558630Z"
+  },
+  "item.167.desc": {
+    "src_hash": "6167f2b0080df3843d4ee1a54bc377c7",
+    "text": "Puedes ver las escaleras que conducen hacia abajo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:03:15.558989Z"
+  },
+  "item.169.desc": {
+    "src_hash": "35f2276723e4ba2ea088676342043bfe",
+    "text": "Huele fatal y no conviene estar mucho tiempo al sol.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:03:15.559389Z"
+  },
+  "item.17112.name": {
+    "src_hash": "37cd08001d4f0999a656b46c836617e6",
+    "text": "runa de ataque de hechiceros y druidas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:03:15.559689Z"
+  },
+  "item.17113.name": {
+    "src_hash": "c4851fcb9d86deaa24e5d0f2f1815b06",
+    "text": "runa curativa para druidas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:03:15.559964Z"
+  },
+  "item.17151.desc": {
+    "src_hash": "562cca48bb4c461eb1fe8b789be7d4c5",
+    "text": "Acaba de ser cortado.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:03:20.676898Z"
+  },
+  "item.17151.name": {
+    "src_hash": "ed236f29bdd92b875a195d5ad2b62c8c",
+    "text": "especia venoreana recién cortada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:03:20.677229Z"
+  },
+  "item.17152.name": {
+    "src_hash": "6a8e6a39831a82deaef67bcc13cce682",
+    "text": "cultivo de especias venóreas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:03:20.677670Z"
+  },
+  "item.172.name": {
+    "src_hash": "44e2614617a0bd83baa0c38d06229fe2",
+    "text": "pergamino de poesía en blanco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:03:20.677969Z"
   }
 }

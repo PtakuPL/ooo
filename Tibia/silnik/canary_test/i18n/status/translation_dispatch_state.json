@@ -1,30 +1,53 @@
 {
-  "timestamp": "2026-02-21T10:00:58.406249Z",
-  "cycle_counter": 7038,
-  "last_target_key": "ru:items.json",
-  "last_pending_total": 6305,
-  "last_tier": 2,
-  "last_cat_priority": 1,
+  "timestamp": "2026-02-21T10:02:52.386030Z",
+  "cycle_counter": 7041,
+  "last_target_key": "es:items.json",
+  "last_pending_total": 2940,
+  "last_tier": 1,
+  "last_cat_priority": 0,
   "candidates_count": 178,
-  "active_candidates_count": 160,
+  "active_candidates_count": 159,
   "skipped_backoff": 15,
-  "skipped_guard_fail": 3,
+  "skipped_guard_fail": 4,
   "guard_fail_blacklist": {
-    "es:items.json": 7039,
-    "es:server.json": 7053,
-    "pl:npc.json": 7062
+    "es:server.json": 7056,
+    "pl:npc.json": 7062,
+    "ro:items.json": 7051,
+    "pl:items.json": 7071
   },
-  "guard_fail_blocked_count": 3,
+  "guard_fail_blocked_count": 4,
   "guard_fail_blocked_preview": [
     {
+      "target": "pl:items.json",
+      "until_cycle": 7071,
+      "remaining_cycles": 30,
+      "guard_fail_rate": 0.9988,
+      "guard_fail": 817,
+      "translated": 1,
+      "entries": 1,
+      "dominant_reason": "toxic_cycle",
+      "hard_block": true
+    },
+    {
       "target": "es:server.json",
-      "until_cycle": 7053,
+      "until_cycle": 7056,
       "remaining_cycles": 15,
       "guard_fail_rate": 0.9267,
       "guard_fail": 139,
       "translated": 11,
       "entries": 5,
       "dominant_reason": "placeholder",
+      "hard_block": false
+    },
+    {
+      "target": "ro:items.json",
+      "until_cycle": 7051,
+      "remaining_cycles": 10,
+      "guard_fail_rate": 0.8395,
+      "guard_fail": 136,
+      "translated": 26,
+      "entries": 5,
+      "dominant_reason": "default",
       "hard_block": false
     }
   ],
@@ -52,7 +75,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 11,
+  "cache_cycle": 12,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -254,7 +277,7 @@
   },
   "toxic_cycle_cooldown": {
     "enabled": true,
-    "applied": false,
+    "applied": true,
     "config": {
       "min_guard_fail": 180,
       "max_translated": 25,
@@ -262,6 +285,13 @@
       "min_gf_rate": 0.88,
       "cooldown_cycles": 30
     },
-    "last_block": {}
+    "last_block": {
+      "target": "pl:items.json",
+      "translated": 1,
+      "guard_fail": 817,
+      "attempts": 818,
+      "guard_fail_rate": 0.9988,
+      "cooldown": 30
+    }
   }
 }

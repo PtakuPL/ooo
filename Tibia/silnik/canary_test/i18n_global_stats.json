@@ -1,8 +1,8 @@
 {
-  "total_cycles": 11,
+  "total_cycles": 12,
   "mode": "AUTO_TRANSLATE",
   "category": "ro",
-  "last_update": "2026-02-21T11:01:43.267961",
+  "last_update": "2026-02-21T11:03:24.924721",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,9 +27,9 @@
   },
   "auto_translate": {
     "language": "ro",
-    "json_file": "npc.json",
-    "keys_to_translate": 7428,
-    "guard_fail": 0,
+    "json_file": "items.json",
+    "keys_to_translate": 8758,
+    "guard_fail": 523,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

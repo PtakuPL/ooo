@@ -1,54 +1,108 @@
 {
-  "timestamp": "2026-02-21T10:01:41.084640Z",
+  "timestamp": "2026-02-21T10:03:23.600437Z",
   "language": "es",
-  "json_file": "npc.json",
-  "translated": 7,
+  "json_file": "items.json",
+  "translated": 16,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
+      "key": "item.21393.desc",
+      "en": "krailos",
+      "translated": "krailos",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "item.21875.name",
+      "en": "a pressure gauge",
+      "translated": "pressure gauge",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "item.31709.name",
+      "en": "the kilmar tablets",
+      "translated": "kilmar tablets",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "item.32726.name",
+      "en": "a weak spot",
+      "translated": "weak spot",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
-      "source": "tm"
+      "key": "item.16275.desc",
+      "en": "This sword was forged with the enthusiasm and dreams of the Rookgaardians. Awarded by Rookie.pl",
+      "translated": "Esta espada fue forjada con el entusiasmo y los sueños de los rookgaardianos. Otorgado por Rookie.pl",
+      "source": "google_translate"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
-      "source": "tm"
+      "key": "item.16277.desc",
+      "en": "Use it in a city temple to travel to the Adventurers Guild. A replacement is available at temples",
+      "translated": "Úselo en un templo de la ciudad para viajar al Adventurers Guild. Un reemplazo está disponible en los templos.",
+      "source": "google_translate"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
-      "source": "tm"
+      "key": "item.16587.name",
+      "en": "quagmire moss",
+      "translated": "musgo de atolladero",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.166.desc",
+      "en": "You can see stairs leading down.",
+      "translated": "Puedes ver las escaleras que conducen hacia abajo.",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.167.desc",
+      "en": "You can see stairs leading down.",
+      "translated": "Puedes ver las escaleras que conducen hacia abajo.",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.169.desc",
+      "en": "It smells horrible and should not be in the sun for too long.",
+      "translated": "Huele fatal y no conviene estar mucho tiempo al sol.",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.17112.name",
+      "en": "sorc and druid attack rune",
+      "translated": "runa de ataque de hechiceros y druidas",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.17113.name",
+      "en": "healing rune for druids",
+      "translated": "runa curativa para druidas",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.17151.desc",
+      "en": "It has just been cut.",
+      "translated": "Acaba de ser cortado.",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.17151.name",
+      "en": "freshly cut venorean spice",
+      "translated": "especia venoreana recién cortada",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.17152.name",
+      "en": "growing venorean spice",
+      "translated": "cultivo de especias venóreas",
+      "source": "google_translate"
+    },
+    {
+      "key": "item.172.name",
+      "en": "blank poetry parchment",
+      "translated": "pergamino de poesía en blanco",
+      "source": "google_translate"
     }
   ]
 }

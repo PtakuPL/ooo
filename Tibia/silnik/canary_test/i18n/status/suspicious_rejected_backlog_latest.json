@@ -1,79 +1,39 @@
 {
-  "timestamp": "2026-02-21T00:07:23.792124Z",
+  "timestamp": "2026-02-21T00:08:01.282517Z",
   "language": "pl",
-  "json_file": "otclient_modules.json",
+  "json_file": "cpp.json",
   "lookback_lines": 8000,
   "min_hits": 2,
   "max_keys": 400,
   "issue_types_filter": [],
-  "selected_keys": 13,
+  "selected_keys": 5,
   "issue_type_totals": {
-    "identical_to_en": 146
+    "identical_to_en": 51
   },
   "keys": [
     {
-      "key": "otclient_modules.addserver_otui.tr_4",
-      "hits": 15,
+      "key": "cpp.title.name_42",
+      "hits": 10,
       "top_issue": "identical_to_en"
     },
     {
-      "key": "otclient_modules.character_otui.tr_89",
-      "hits": 14,
+      "key": "cpp.title.name_14",
+      "hits": 10,
       "top_issue": "identical_to_en"
     },
     {
-      "key": "otclient_modules.entergame_otui.tr_10",
-      "hits": 14,
+      "key": "cpp.title.name_87",
+      "hits": 10,
       "top_issue": "identical_to_en"
     },
     {
-      "key": "otclient_modules.character_otui.tr_45",
-      "hits": 14,
+      "key": "cpp.title.name_38",
+      "hits": 10,
       "top_issue": "identical_to_en"
     },
     {
-      "key": "otclient_modules.characterlist_otui.tr_8",
-      "hits": 14,
-      "top_issue": "identical_to_en"
-    },
-    {
-      "key": "otclient_modules.entergame_otui.tr_2",
-      "hits": 14,
-      "top_issue": "identical_to_en"
-    },
-    {
-      "key": "otclient_modules.spelllist_otui.tr_19",
-      "hits": 9,
-      "top_issue": "identical_to_en"
-    },
-    {
-      "key": "otclient_modules.help_otui.tr_4",
-      "hits": 9,
-      "top_issue": "identical_to_en"
-    },
-    {
-      "key": "otclient_modules.skills_otui.tr_54",
-      "hits": 9,
-      "top_issue": "identical_to_en"
-    },
-    {
-      "key": "otclient_modules.options.tr_4",
-      "hits": 9,
-      "top_issue": "identical_to_en"
-    },
-    {
-      "key": "otclient_modules.tasks_otui.tr_2",
-      "hits": 9,
-      "top_issue": "identical_to_en"
-    },
-    {
-      "key": "otclient_modules.terminal.tr_1",
-      "hits": 8,
-      "top_issue": "identical_to_en"
-    },
-    {
-      "key": "otclient_modules.terminal_otui.tr_1",
-      "hits": 8,
+      "key": "cpp.title.name_83",
+      "hits": 10,
       "top_issue": "identical_to_en"
     }
   ]

@@ -11,12 +11,12 @@
     "quality_score": 77.5
   },
   "pl": {
-    "last_cycle": "2026-02-21T00:07:35.299785Z",
-    "last_translated": 7,
-    "total_suspicious": 35726,
-    "total_rejected": 2291,
-    "total_gt_guard_fail": 6074,
-    "cycles": 1182,
+    "last_cycle": "2026-02-21T00:08:07.723981Z",
+    "last_translated": 6,
+    "total_suspicious": 35738,
+    "total_rejected": 2296,
+    "total_gt_guard_fail": 6087,
+    "cycles": 1183,
     "quality_score": 60.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 194333

@@ -1,8 +1,8 @@
 {
-  "total_cycles": 18,
+  "total_cycles": 19,
   "mode": "AUTO_TRANSLATE",
-  "category": "sv",
-  "last_update": "2026-02-21T01:07:36.628727",
+  "category": "pl",
+  "last_update": "2026-02-21T01:08:11.226857",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,14 +26,51 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "sv",
-    "json_file": "monsters.json",
-    "keys_to_translate": 1246,
-    "guard_fail": 16,
+    "language": "pl",
+    "json_file": "cpp.json",
+    "keys_to_translate": 24,
+    "guard_fail": 15,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 0,
-    "recent_examples": []
+    "recent_translated": 6,
+    "recent_examples": [
+      {
+        "key": "cpp.augment.format_base",
+        "en": "{0} -> {1:+}% {2} {3}",
+        "translated": "{0} -> {1:+}% {2} {3}",
+        "source": "tm"
+      },
+      {
+        "key": "cpp.augment.format_with_value",
+        "en": "{0} -> {1:+}% {2}",
+        "translated": "{0} -> {1:+}% {2}",
+        "source": "tm"
+      },
+      {
+        "key": "cpp.inspect.physical_plus",
+        "en": "{0} physical + {1}",
+        "translated": "{0} fizyczny + {1}",
+        "source": "tm"
+      },
+      {
+        "key": "cpp.player.look.guild_nick",
+        "en": "({0})",
+        "translated": "({0})",
+        "source": "tm"
+      },
+      {
+        "key": "cpp.protocol.active_prey_desc",
+        "en": "{0} ({1} +{2}%, remaining {3})",
+        "translated": "{0} ({1} +{2}%, pozosta\u0142e {3})",
+        "source": "tm"
+      },
+      {
+        "key": "cpp.vocation.id_2",
+        "en": "Druid",
+        "translated": "Druid",
+        "source": "tm"
+      }
+    ]
   },
   "idle": {
     "new_files_detected": 152,

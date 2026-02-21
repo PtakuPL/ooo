@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-21T00:07:19.937960Z",
-  "cycle_counter": 6715,
-  "last_target_key": "pl:otclient_modules.json",
-  "last_pending_total": 49,
+  "timestamp": "2026-02-21T00:08:09.994862Z",
+  "cycle_counter": 6717,
+  "last_target_key": "pl:client.json",
+  "last_pending_total": 13,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 179,
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 18,
+  "cache_cycle": 19,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,

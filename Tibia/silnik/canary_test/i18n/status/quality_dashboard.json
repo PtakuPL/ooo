@@ -11,12 +11,12 @@
     "quality_score": 77.5
   },
   "pl": {
-    "last_cycle": "2026-02-21T00:09:10.356609Z",
-    "last_translated": 0,
-    "total_suspicious": 35740,
-    "total_rejected": 2297,
-    "total_gt_guard_fail": 6088,
-    "cycles": 1184,
+    "last_cycle": "2026-02-21T00:13:37.713116Z",
+    "last_translated": 2,
+    "total_suspicious": 35745,
+    "total_rejected": 2298,
+    "total_gt_guard_fail": 6092,
+    "cycles": 1185,
     "quality_score": 60.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 194333
@@ -33,12 +33,12 @@
     "issues_count": 1417
   },
   "es": {
-    "last_cycle": "2026-02-21T00:12:02.366858Z",
+    "last_cycle": "2026-02-21T00:14:05.483791Z",
     "last_translated": 23,
-    "total_suspicious": 71257,
-    "total_rejected": 2337,
-    "total_gt_guard_fail": 23286,
-    "cycles": 1731,
+    "total_suspicious": 71318,
+    "total_rejected": 2338,
+    "total_gt_guard_fail": 23306,
+    "cycles": 1732,
     "quality_score": 60.1,
     "last_audit": "2026-02-20T22:15:19.522753Z",
     "issues_count": 350877
@@ -99,13 +99,13 @@
     "issues_count": 649
   },
   "sv": {
-    "last_cycle": "2026-02-21T00:07:08.436481Z",
-    "last_translated": 25,
-    "total_suspicious": 4846,
+    "last_cycle": "2026-02-21T00:13:22.520662Z",
+    "last_translated": 30,
+    "total_suspicious": 4859,
     "total_rejected": 346,
     "total_gt_guard_fail": 854,
-    "cycles": 180,
-    "quality_score": 72.9,
+    "cycles": 181,
+    "quality_score": 73.0,
     "last_audit": "2026-02-20T22:12:42.470260Z",
     "issues_count": 32351
   },
@@ -418,13 +418,13 @@
     "issues_count": 111
   },
   "sr": {
-    "last_cycle": "2026-02-21T00:07:17.287341Z",
+    "last_cycle": "2026-02-21T00:13:29.266100Z",
     "last_translated": 30,
     "total_suspicious": 3442,
     "total_rejected": 1,
     "total_gt_guard_fail": 501,
-    "cycles": 176,
-    "quality_score": 66.7,
+    "cycles": 177,
+    "quality_score": 66.8,
     "last_audit": "2026-02-20T21:57:44.900702Z",
     "issues_count": 87233
   },

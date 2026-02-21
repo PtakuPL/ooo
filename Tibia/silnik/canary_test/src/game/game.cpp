@@ -7464,7 +7464,7 @@ bool Game::combatChangeHealth(const std::shared_ptr<Creature> &attacker, const s
 		} else if (attackerPlayer && targetMonster) {
 			handleHazardSystemAttack(damage, attackerPlayer, targetMonster, true);
 
-			if (damage.primary.value == 0 && damage.secondary.value == 0 || damage.hazardDodge) {
+			if ((damage.primary.value == 0 && damage.secondary.value == 0) || damage.hazardDodge) {
 				notifySpectators(spectators.data(), targetPos, attackerPlayer, targetMonster);
 				return true;
 			}

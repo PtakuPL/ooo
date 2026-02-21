@@ -86,7 +86,7 @@ bool ArenaSystem::joinQueue(const std::shared_ptr<Player> &player, ArenaMode mod
 
 	// Already in queue or match?
 	if (isPlayerInQueue(playerId) || isPlayerInArena(playerId)) {
-		player->sendTextMessage(MESSAGE_STATUS_SMALL, "You are already in the arena queue or in a match.");
+		player->sendTextMessage(MESSAGE_STATUS, "You are already in the arena queue or in a match.");
 		return false;
 	}
 
@@ -107,7 +107,7 @@ bool ArenaSystem::joinQueue(const std::shared_ptr<Player> &player, ArenaMode mod
 
 	playerStates[playerId] = ArenaPlayerState::IN_QUEUE;
 
-	player->sendTextMessage(MESSAGE_STATUS_SMALL,
+	player->sendTextMessage(MESSAGE_STATUS,
 		fmt::format("You joined the {} arena queue. Searching for opponents...", arenaModeToString(mode)));
 
 	g_logger().info("[Arena] Player {} ({}) joined {} queue (MMR: {})",
@@ -124,7 +124,7 @@ bool ArenaSystem::leaveQueue(const std::shared_ptr<Player> &player) {
 	uint32_t playerId = player->getGUID();
 
 	if (!isPlayerInQueue(playerId)) {
-		player->sendTextMessage(MESSAGE_STATUS_SMALL, "You are not in the arena queue.");
+		player->sendTextMessage(MESSAGE_STATUS, "You are not in the arena queue.");
 		return false;
 	}
 
@@ -132,7 +132,7 @@ bool ArenaSystem::leaveQueue(const std::shared_ptr<Player> &player) {
 	IOArena::removeFromQueue(playerId);
 	playerStates.erase(playerId);
 
-	player->sendTextMessage(MESSAGE_STATUS_SMALL, "You left the arena queue.");
+	player->sendTextMessage(MESSAGE_STATUS, "You left the arena queue.");
 	return true;
 }
 
@@ -543,7 +543,7 @@ void ArenaSystem::teleportPlayersIn(ArenaMatch &match) {
 
 		// Teleport
 		g_game().internalTeleport(player, spawnPos);
-		player->getPosition().sendMagicEffect(CONST_ME_TELEPORT);
+		player->sendMagicEffect(spawnPos, CONST_ME_TELEPORT);
 
 		// Prepare player
 		preparePlayer(player);
@@ -561,7 +561,7 @@ void ArenaSystem::teleportPlayersOut(ArenaMatch &match) {
 		// Use player's own temple as exit
 		Position playerExit = player->getTemplePosition();
 		g_game().internalTeleport(player, playerExit);
-		player->getPosition().sendMagicEffect(CONST_ME_TELEPORT);
+		player->sendMagicEffect(playerExit, CONST_ME_TELEPORT);
 
 		// Restore full HP/Mana
 		preparePlayer(player);
@@ -574,7 +574,6 @@ void ArenaSystem::preparePlayer(const std::shared_ptr<Player> &player) {
 	}
 
 	// Full HP
-	Condition* condition = player->getCondition(CONDITION_REGENERATION);
 	player->changeHealth(player->getMaxHealth() - player->getHealth());
 	player->changeMana(player->getMaxMana() - player->getMana());
 

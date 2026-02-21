@@ -155054,5 +155054,21 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T01:02:12.582027Z"
+  },
+  "scripts.dawnport_tiles.msg_4": {
+    "src_hash": "3c4ead55dc3ddb0a3069ed6fe9cf85d8",
+    "text": "Has elegido tu vocación. No puedes regresar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:10:48.158464Z"
+  },
+  "scripts.dolls.5668_6": {
+    "src_hash": "636ab224b045c1f8bd3345e2879e13c0",
+    "text": "Hazlo o no. No hay intento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:10:50.409846Z"
   }
 }

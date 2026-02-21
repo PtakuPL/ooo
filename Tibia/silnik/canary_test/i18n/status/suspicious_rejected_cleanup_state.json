@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T01:08:46.197133Z",
-  "last_cycle": 11,
+  "timestamp": "2026-02-21T01:10:06.702307Z",
+  "last_cycle": 12,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [],
@@ -176,42 +176,9 @@
     "pl|spells.json": [
       "spell.azerus_soulfire_2.name"
     ],
-    "es|spells.json": [
-      "spell.defiler_paralyze_3.name",
-      "spell.lizard_wave_2.name"
-    ],
-    "pl|quests.json": [
-      "quests.actions_using_crystals.say_2",
-      "quests.demon_oak.sound_9"
-    ],
-    "pl|scripts.json": [
-      "scripts.actions_demon_oak.say_1",
-      "scripts.creaturescripts_rift_invader_death.say_1",
-      "scripts.fluids.say_1",
-      "scripts.giant_spider_wyda_death.say_1",
-      "scripts.hireling_foods.sound_mmmmm",
-      "scripts.hot_cuisine.recipe_1",
-      "scripts.hot_cuisine.recipe_11",
-      "scripts.hot_cuisine.recipe_12",
-      "scripts.hot_cuisine.recipe_13",
-      "scripts.hot_cuisine.recipe_14",
-      "scripts.hot_cuisine.recipe_2",
-      "scripts.hot_cuisine.recipe_3",
-      "scripts.hot_cuisine.recipe_4",
-      "scripts.hot_cuisine.recipe_5",
-      "scripts.hot_cuisine.recipe_6",
-      "scripts.hot_cuisine.recipe_7",
-      "scripts.hot_cuisine.recipe_8",
-      "scripts.hot_cuisine.recipe_9",
-      "scripts.lever.say_1",
-      "scripts.lever.say_2",
-      "scripts.malofur_explosion.say_1",
-      "scripts.malofur_explosion.say_2",
-      "scripts.malofur_explosion.say_3",
-      "scripts.on_look.admin_player_health",
-      "scripts.on_look.position_coords",
-      "scripts.oriental_trader.arrived_today"
-    ],
+    "es|spells.json": [],
+    "pl|quests.json": [],
+    "pl|scripts.json": [],
     "es|scripts.json": [
       "scripts.actions_demon_oak.say_1",
       "scripts.auto_loot.msg_2",

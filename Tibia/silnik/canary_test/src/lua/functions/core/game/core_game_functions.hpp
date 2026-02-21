@@ -16,7 +16,6 @@
 #include "lua/functions/core/game/global_functions.hpp"
 #include "lua/functions/core/game/lua_enums.hpp"
 #include "lua/functions/core/game/modal_window_functions.hpp"
-#include "lua/functions/core/game/arena_functions.hpp"
 
 class CoreGameFunctions final : LuaScriptInterface {
 public:
@@ -33,7 +32,6 @@ public:
 		GlobalFunctions::init(L);
 		LuaEnums::init(L);
 		ModalWindowFunctions::init(L);
-		ArenaFunctions::init(L);
 	}
 
 private:

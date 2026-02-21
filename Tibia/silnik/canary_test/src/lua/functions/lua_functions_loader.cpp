@@ -24,6 +24,7 @@
 #include "lua/functions/items/item_functions.hpp"
 #include "lua/functions/map/map_functions.hpp"
 #include "lua/functions/core/game/zone_functions.hpp"
+#include "lua/functions/core/game/arena_functions.hpp"
 #include "lua/global/lua_variant.hpp"
 
 #include "enums/lua_variant_type.hpp"
@@ -39,6 +40,7 @@ void Lua::load(lua_State* L) {
 
 	CoreFunctions::init(L);
 	CreatureFunctions::init(L);
+	ArenaFunctions::init(L);  // Must be after CreatureFunctions (needs Player class)
 	EventFunctions::init(L);
 	ItemFunctions::init(L);
 	MapFunctions::init(L);

@@ -1,8 +1,8 @@
 {
-  "total_cycles": 5,
+  "total_cycles": 1,
   "mode": "AUTO_TRANSLATE",
-  "category": "ka",
-  "last_update": "2026-02-21T10:45:52.451282",
+  "category": "pl",
+  "last_update": "2026-02-21T10:47:45.578993",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,10 +26,10 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "ka",
-    "json_file": "npc.json",
-    "keys_to_translate": 13302,
-    "guard_fail": 1,
+    "language": "pl",
+    "json_file": "items.json",
+    "keys_to_translate": 1069,
+    "guard_fail": 521,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

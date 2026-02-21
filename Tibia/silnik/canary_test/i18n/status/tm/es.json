@@ -155190,5 +155190,117 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T01:52:56.630503Z"
+  },
+  "item.16242.desc": {
+    "src_hash": "7cfcbac0b13d47511891df7c54c4ea9f",
+    "text": "Estos cristales se utilizan para cargar los teletransportadores a las zonas de guerra.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:47:16.644411Z"
+  },
+  "item.16252.desc": {
+    "src_hash": "e484b05b3faaf883c43c04cf56695e91",
+    "text": "Es un vale para un traje básico de guardián del suelo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:47:16.645050Z"
+  },
+  "item.16252.name": {
+    "src_hash": "9645759f1a6b0217683d85b60b20fc0f",
+    "text": "vale gnomo tipo MB",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:47:16.645540Z"
+  },
+  "item.16253.desc": {
+    "src_hash": "35684ad1776ceed3462f2ad4a6354dea",
+    "text": "Es un vale para el primer complemento del traje de guardián del suelo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:47:16.646203Z"
+  },
+  "item.16253.name": {
+    "src_hash": "7e495b249664e3cf282afc59d8fc7b50",
+    "text": "vale gnomo tipo MA1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:47:16.646618Z"
+  },
+  "item.16254.desc": {
+    "src_hash": "b6f3ee82724dc1d68e456afeb6e822d2",
+    "text": "Es un vale para el segundo complemento del traje de guardián del suelo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:47:16.647270Z"
+  },
+  "item.16254.name": {
+    "src_hash": "457b019bb51c5873e0a9753c0179f99c",
+    "text": "vale gnomo tipo MA2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:47:16.647679Z"
+  },
+  "item.16255.desc": {
+    "src_hash": "17457785d1e07d92987085a7e17f5bf2",
+    "text": "Es un vale para un traje básico de señor de la guerra de cristal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:47:16.648277Z"
+  },
+  "item.16255.name": {
+    "src_hash": "2bb3b12dc5b4c1d17efa452ef93a8a7f",
+    "text": "vale gnomo tipo CB",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:47:20.036832Z"
+  },
+  "item.16256.desc": {
+    "src_hash": "f88cb396d075ad3006dfa4cda551ab3a",
+    "text": "Es un vale para el primer complemento del traje de señor de la guerra de cristal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:47:20.037670Z"
+  },
+  "item.16256.name": {
+    "src_hash": "f21b8be5d570bb05419bad885696a29c",
+    "text": "vale gnomo tipo CA1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:47:20.038193Z"
+  },
+  "item.16257.desc": {
+    "src_hash": "bc17aaed3b8f7979918d540d3fd896a7",
+    "text": "Es un vale para el segundo complemento del traje de señor de la guerra de cristal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:47:20.038895Z"
+  },
+  "item.16257.name": {
+    "src_hash": "843692b733024d636c246748a750bcce",
+    "text": "vale gnomo tipo CA2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:47:20.039318Z"
+  },
+  "item.16262.desc": {
+    "src_hash": "fbc3ca1acea5d51ccd1339a3dd665aaa",
+    "text": "Perteneció al primer dragón que vagó por el mundo y estaba adornado con el oro más puro de Tibia-Market.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:47:20.040178Z"
   }
 }

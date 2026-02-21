@@ -2,9 +2,9 @@
   "lang": "el",
   "script_group": "exotic",
   "total_keys": 53586,
-  "translated": 3805,
-  "identical_to_en": 2574,
-  "placeholder_keys": 49781,
+  "translated": 3822,
+  "identical_to_en": 2561,
+  "placeholder_keys": 49764,
   "coverage_pct": 7.1,
   "issues_total": 54,
   "issues_by_type": {
@@ -147,5 +147,5 @@
     "length_ratio": 5,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T09:34:21.204436Z"
+  "validated_at": "2026-02-21T09:47:30.125218Z"
 }

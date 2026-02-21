@@ -34,6 +34,10 @@
 #include "framework/platform/platformwindow.h"
 #endif
 
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", off)
+#endif
+
 void registerLuaFunctions_Graphics()
 {
 #ifdef FRAMEWORK_GRAPHICS
@@ -111,3 +115,7 @@ void registerLuaFunctions_Graphics()
     registerLuaFunctions_GfxSingletons();
 #endif
 }
+
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", on)
+#endif

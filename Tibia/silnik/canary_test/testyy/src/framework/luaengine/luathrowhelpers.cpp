@@ -20,36 +20,27 @@
  * THE SOFTWARE.
  */
 
-// Split from luafunctions.cpp to avoid MSVC ICE C1001 caused by too many
-// template instantiations (luabinder.h) in a single translation unit.
-// This dispatcher keeps UI registration order while heavy bindings are split
-// into smaller translation units.
+#include "luaexception.h"
 
-#if defined(_MSC_VER) && !defined(__clang__)
-#pragma optimize("", off)
+[[noreturn]]
+#ifdef _MSC_VER
+__declspec(noinline)
 #endif
-
-void registerLuaFunctions_UI()
+void throwLuaBadValueCast(const char* valueType, const char* targetType)
 {
-#ifdef FRAMEWORK_GRAPHICS
-    extern void registerLuaFunctions_UIWidgetCore();
-    extern void registerLuaFunctions_UIWidgetStyle();
-    extern void registerLuaFunctions_UILayoutTextEffects();
-
-    registerLuaFunctions_UIWidgetCore();
-    registerLuaFunctions_UIWidgetStyle();
-    registerLuaFunctions_UILayoutTextEffects();
-#endif
-
-    // Network bindings are in luafunctions_net.cpp
-    extern void registerLuaFunctions_Net();
-    registerLuaFunctions_Net();
-
-    // Sound bindings are in luafunctions_sound.cpp
-    extern void registerLuaFunctions_Sound();
-    registerLuaFunctions_Sound();
+    const char* safeValueType = valueType ? valueType : "unknown";
+    const char* safeTargetType = targetType ? targetType : "unknown";
+    throw LuaBadValueCastException(safeValueType, safeTargetType);
 }
 
-#if defined(_MSC_VER) && !defined(__clang__)
-#pragma optimize("", on)
+namespace luabinder
+{
+[[noreturn]]
+#ifdef _MSC_VER
+__declspec(noinline)
 #endif
+void throwLuaNilMemberCall()
+{
+    throw LuaException("failed to call a member function because the passed object is nil");
+}
+}

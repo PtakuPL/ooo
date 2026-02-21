@@ -489,7 +489,7 @@ void LuaInterface::bindGlobalFunction(const std::string_view functionName, const
 template<class T>
 T LuaInterface::castValue(int index)
 {
-    if constexpr (std::is_same_v<T, std::string_view>) {
+    if constexpr (std::is_same_v<std::remove_cvref_t<T>, std::string_view>) {
         return g_lua.toVString(index);
     } else {
         T value {};

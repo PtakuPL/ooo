@@ -33,26 +33,9 @@
 
 LuaInterface g_lua;
 
-[[noreturn]]
-#ifdef _MSC_VER
-__declspec(noinline)
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", off)
 #endif
-void throwLuaBadValueCast(const char* valueType, const char* targetType)
-{
-    throw LuaBadValueCastException(valueType ? valueType : "unknown", targetType ? targetType : "unknown");
-}
-
-namespace luabinder
-{
-[[noreturn]]
-#ifdef _MSC_VER
-__declspec(noinline)
-#endif
-void throwLuaNilMemberCall()
-{
-    throw LuaException("failed to call a member function because the passed object is nil");
-}
-}
 
 void LuaInterface::init()
 {
@@ -1426,3 +1409,7 @@ void LuaInterface::loadFiles(const std::string& directory, const bool recursive,
         }
     }
 }
+
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", on)
+#endif

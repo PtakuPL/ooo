@@ -40,6 +40,10 @@
 
 #include <framework/luaengine/luainterface.h>
 
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", off)
+#endif
+
 void registerLuaFunctions_ClientUI()
 {
     g_lua.registerClass<UIItem, UIWidget>();
@@ -209,3 +213,7 @@ void registerLuaFunctions_ClientUI()
 
     g_lua.registerClass<UIMapAnchorLayout, UIAnchorLayout>();
 }
+
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", on)
+#endif

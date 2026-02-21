@@ -35,6 +35,10 @@
 #include "net/inputmessage.h"
 #include "net/outputmessage.h"
 
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", off)
+#endif
+
 void registerLuaFunctions_Net()
 {
 #ifdef FRAMEWORK_NET
@@ -114,3 +118,7 @@ void registerLuaFunctions_Net()
     g_lua.bindClassMemberFunction<OutputMessage>("setWritePos", &OutputMessage::setWritePos);
 #endif
 }
+
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", on)
+#endif

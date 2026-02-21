@@ -52,6 +52,10 @@
 
 // InputMessage/OutputMessage includes moved to luafunctions_ui.cpp
 
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", off)
+#endif
+
 void Application::registerLuaFunctions()
 {
     // conversion globals
@@ -318,3 +322,7 @@ void Application::registerLuaFunctions()
     extern void registerLuaFunctions_UI();
     registerLuaFunctions_UI();
 }
+
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", on)
+#endif

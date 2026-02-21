@@ -23,6 +23,10 @@
 #include "luavaluecasts_client.h"
 #include <framework/luaengine/luainterface.h>
 
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", off)
+#endif
+
 int push_luavalue(const Outfit& outfit)
 {
     g_lua.createTable(0, 8);
@@ -1599,3 +1603,7 @@ int push_luavalue(const ForgeOpenData& data) {
     g_lua.setField("dustLevel");
     return 1;
 }
+
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", on)
+#endif

@@ -36,6 +36,10 @@
 #include <framework/sound/streamsoundsource.h>
 #endif
 
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", off)
+#endif
+
 void registerLuaFunctions_Sound()
 {
 #ifdef FRAMEWORK_SOUND
@@ -89,3 +93,7 @@ void registerLuaFunctions_Sound()
     g_lua.bindClassMemberFunction<SoundChannel>("getId", &SoundChannel::getId);
 #endif
 }
+
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", on)
+#endif

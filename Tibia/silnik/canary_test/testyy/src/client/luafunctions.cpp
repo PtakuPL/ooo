@@ -41,6 +41,10 @@
 extern void registerLuaFunctions_ClientEntities();
 extern void registerLuaFunctions_ClientUI();
 
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", off)
+#endif
+
 void Client::registerLuaFunctions()
 {
     g_lua.registerSingletonClass("g_things");
@@ -404,3 +408,7 @@ void Client::registerLuaFunctions()
     registerLuaFunctions_ClientEntities();
     registerLuaFunctions_ClientUI();
 }
+
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", on)
+#endif

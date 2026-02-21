@@ -167,11 +167,15 @@ if (MSVC)
     #          /d2notypeopt : disable P2 type optimization (ACCESS VIOLATION in codegen)
     #          /permissive- : strict standard conformance (different template lookup path)
     set_source_files_properties(
+      framework/luaengine/luathrowhelpers.cpp
       framework/luaengine/luainterface.cpp
       framework/luafunctions.cpp
       framework/luafunctions_graphics.cpp
       framework/luafunctions_gfx_singletons.cpp
       framework/luafunctions_ui.cpp
+      framework/luafunctions_ui_widget_core.cpp
+      framework/luafunctions_ui_widget_style.cpp
+      framework/luafunctions_ui_layout_text_effects.cpp
       framework/luafunctions_net.cpp
       framework/luafunctions_sound.cpp
       client/luafunctions.cpp
@@ -690,6 +694,7 @@ set(SOURCE_FILES
         framework/core/timer.cpp
         framework/discord/discord.cpp
         framework/luaengine/luaexception.cpp
+        framework/luaengine/luathrowhelpers.cpp
         framework/luaengine/luainterface.cpp
         framework/luaengine/luaobject.cpp
         framework/luaengine/luavaluecasts.cpp
@@ -697,6 +702,9 @@ set(SOURCE_FILES
         framework/luafunctions_graphics.cpp
         framework/luafunctions_gfx_singletons.cpp
         framework/luafunctions_ui.cpp
+        framework/luafunctions_ui_widget_core.cpp
+        framework/luafunctions_ui_widget_style.cpp
+        framework/luafunctions_ui_layout_text_effects.cpp
         framework/luafunctions_net.cpp
         framework/luafunctions_sound.cpp
         framework/net/connection.cpp

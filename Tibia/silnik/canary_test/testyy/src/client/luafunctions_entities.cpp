@@ -51,6 +51,10 @@
 #include <framework/luaengine/luainterface.h>
 #include <framework/ui/uiwidget.h>
 
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", off)
+#endif
+
 void registerLuaFunctions_ClientEntities()
 {
     g_lua.registerClass<ProtocolGame, Protocol>();
@@ -567,3 +571,7 @@ void registerLuaFunctions_ClientEntities()
     g_lua.bindClassMemberFunction<Tile>("hasFlag", &Tile::hasFlag);
 #endif
 }
+
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", on)
+#endif

@@ -39,6 +39,10 @@
 #include "framework/ui/uiwidget.h"
 #endif
 
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", off)
+#endif
+
 void registerLuaFunctions_GfxSingletons()
 {
 #ifdef FRAMEWORK_GRAPHICS
@@ -115,3 +119,7 @@ void registerLuaFunctions_GfxSingletons()
     });
 #endif
 }
+
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", on)
+#endif

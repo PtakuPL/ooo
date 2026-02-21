@@ -23,6 +23,10 @@
 #include "luainterface.h"
 #include <framework/otml/otmlnode.h>
 
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", off)
+#endif
+
  // bool
 int push_luavalue(const bool b)
 {
@@ -76,6 +80,12 @@ int push_luavalue(const std::string_view str)
 bool luavalue_cast(const int index, std::string& str)
 {
     str = g_lua.toString(index);
+    return true;
+}
+
+bool luavalue_cast(const int index, std::string_view& str)
+{
+    str = g_lua.toVString(index);
     return true;
 }
 
@@ -364,3 +374,7 @@ bool luavalue_cast(const int index, LuaObjectPtr& obj)
     }
     return false;
 }
+
+#if defined(_MSC_VER) && !defined(__clang__)
+#pragma optimize("", on)
+#endif

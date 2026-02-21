@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-21T00:21:21.010236Z",
-  "cycle_counter": 6750,
-  "last_target_key": "sv:quests.json",
-  "last_pending_total": 509,
-  "last_tier": 3,
-  "last_cat_priority": 5,
-  "candidates_count": 179,
-  "active_candidates_count": 168,
+  "timestamp": "2026-02-21T00:23:24.496391Z",
+  "cycle_counter": 6753,
+  "last_target_key": "pl:items.json",
+  "last_pending_total": 1069,
+  "last_tier": 1,
+  "last_cat_priority": 0,
+  "candidates_count": 178,
+  "active_candidates_count": 167,
   "skipped_backoff": 11,
   "skipped_guard_fail": 0,
   "guard_fail_blacklist": {},
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 30,
+  "cache_cycle": 31,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -164,7 +164,10 @@
     "ru:php.json": 0,
     "ro:chatchannels.json": 0,
     "it:example_merchant.json": 1,
-    "ru:chatchannels.json": 0
+    "ru:chatchannels.json": 0,
+    "sv:quests.json": 0,
+    "sr:quests.json": 0,
+    "it:messages.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,
@@ -222,7 +225,7 @@
       "ro": 43.97,
       "it": 52.95,
       "sr": 45.58,
-      "sv": 29.39
+      "sv": 29.44
     }
   }
 }

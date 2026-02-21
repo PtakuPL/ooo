@@ -82790,5 +82790,93 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:19:06.191726Z"
+  },
+  "system.blessing.already": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Sei già benedetto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:23:08.847527Z"
+  },
+  "system.store.check_inbox": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Assicurati di avere spazi liberi nella casella di posta del tuo negozio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:23:08.848380Z"
+  },
+  "system.trade.sold": {
+    "src_hash": "a2ec0e69a43437b9b2ff11e230e55e41",
+    "text": "Venduto {1}x {2} per {3} oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:23:15.595568Z"
+  },
+  "system.trade.bought": {
+    "src_hash": "354756b02d75b63038a4fe1cdf5d1bbd",
+    "text": "Comprato {1}x {2} per {3} oro.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:23:15.596014Z"
+  },
+  "system.blessing.received": {
+    "src_hash": "b072630fb80afe0c27894f87f325d9dc",
+    "text": "Hai ricevuto le rimanenti benedizioni {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:23:15.596361Z"
+  },
+  "system.experience.gained": {
+    "src_hash": "8670aa2f26b8327fb6286160f7cb2f44",
+    "text": "Hai guadagnato {1} punti esperienza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:23:15.596674Z"
+  },
+  "system.mission.points": {
+    "src_hash": "8e80694334610665724d4593ddddc675",
+    "text": "Hai guadagnato {1} punto/i nella missione {2}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:23:15.597047Z"
+  },
+  "system.mount.received": {
+    "src_hash": "23964ff2a518809ff155f108db6fdb2b",
+    "text": "Congratulazioni, hai ricevuto la montatura {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:23:21.643787Z"
+  },
+  "system.item.received": {
+    "src_hash": "3b32c150490e96a01dbf112a275827e5",
+    "text": "Hai guadagnato un {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:23:21.644056Z"
+  },
+  "system.stash.count": {
+    "src_hash": "956e4382d83b9d1c7b37c56c7117a623",
+    "text": "La tua scorta di scorte contiene {1} articoli.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:23:21.644377Z"
+  },
+  "system.venture.decay": {
+    "src_hash": "064cd71852afeb595ee8028d8028b756",
+    "text": "Avventurati sul sentiero della decadenza!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:23:21.644661Z"
   }
 }

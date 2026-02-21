@@ -1,13 +1,13 @@
 {
   "lang": "sr",
-  "coverage_pct": 45.7,
+  "coverage_pct": 45.8,
   "crossref_enabled": true,
   "auto_fix_enabled": true,
   "auto_fix_limit": 80,
-  "checked_at": "2026-02-21T00:04:55.202882Z",
-  "issues_total": 106,
+  "checked_at": "2026-02-21T00:25:38.754308Z",
+  "issues_total": 107,
   "issues_by_type": {
-    "consistency_in_language": 10,
+    "consistency_in_language": 11,
     "pl_reference_missing_translation": 68,
     "length_ratio_crosscheck": 28
   },
@@ -144,6 +144,21 @@
       "examples": [
         "npc:npc.tonar_oskayaat.stdmod_1",
         "npc:npc.tonar_oskayaat.voice_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You examine the scrolls carefully. Those are orders from Rathleton for the Ambassador. No sign of treason here.",
+      "variants": [
+        "Пажљиво прегледаш свитке. То су наређења од Rathleton за амбасадора. Овде нема знакова издаје.",
+        "Пажљиво прегледаш свитке. То су наређења од Ратхлетон за амбасадора. Овде нема знакова издаје."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "quests:quests.2_ambassadors_treason.msg_3",
+        "scripts:scripts.2_ambassadors_treason.msg_5",
+        "server:data.otservbr.global.scripts.quests.kilmaresh.quest.1.fafnars.wrath.2.ambassadors.treason.L41.2274"
       ]
     },
     {

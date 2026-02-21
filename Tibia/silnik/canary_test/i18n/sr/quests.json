@@ -1,7 +1,7 @@
 {
   "quests.2_ambassadors_treason.msg_1": "Ништа не налазите у амбасадоровој кући. Ако је он у ствари издајник, ослободио се сваког доказа који би га могао инкриминисати.",
   "quests.2_ambassadors_treason.msg_2": "Већ сте истражили ово.",
-  "quests.2_ambassadors_treason.msg_3": "Пажљиво прегледаш свитке. То су наређења од Rathleton за амбасадора. Овде нема знакова издаје.",
+  "quests.2_ambassadors_treason.msg_3": "Пажљиво прегледаш свитке. То су наређења од Ратхлетон за амбасадора. Овде нема знакова издаје.",
   "quests.2_ambassadors_treason.msg_4": "Већ сте истражили ово.",
   "quests.2_ambassadors_treason.msg_5": "Остаци папира леже разбацани по поду. Потребно је неко време да их поново спојите. Али то је само лоше написана песма.",
   "quests.2_ambassadors_treason.msg_6": "Већ сте истражили ово.",
@@ -95,7 +95,7 @@
   "quests.bigfoot_burden.crystal_not_damaged": "Ово није оштећени кристал!",
   "quests.bigfoot_burden.crystal_repaired": "Поправили сте оштећени кристал!",
   "quests.bigfoot_burden.crystals_charging": "Кристали се пуне!",
-  "quests.bigfoot_burden.device_unknown": "Немате појма како да користите овај уређај. Кселвар у Kazordoon би вам могао рећи више о томе.",
+  "quests.bigfoot_burden.device_unknown": "Немате појма како да користите овај уређај. Кселвар у Казордоон би вам могао рећи више о томе.",
   "quests.bigfoot_burden.enough_renown": "Коначно имате довољно реноме међу гномовима, тражите од Гномиссиона мисију да добијете свој кристал.",
   "quests.bigfoot_burden.gasp": "<гасп>",
   "quests.bigfoot_burden.gnomedix_msg1": "Гномедик: Дакле, нека испитивање почне! Не мрдај. Не бој се. Добар доктор патуљак вас неће повредити - надамо се!",

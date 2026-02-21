@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T00:22:34.141066Z",
-  "last_cycle": 30,
+  "timestamp": "2026-02-21T00:23:47.645091Z",
+  "last_cycle": 31,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -918,6 +918,30 @@
     ],
     "ru|php.json": [],
     "ro|php.json": [],
-    "sv|quests.json": []
+    "sv|quests.json": [],
+    "sr|quests.json": [
+      "quests.2_ambassadors_treason.msg_3",
+      "quests.bigfoot_burden.device_unknown",
+      "quests.common.arena_complete",
+      "quests.common.arena_wait",
+      "quests.common.found_items"
+    ],
+    "it|messages.json": [
+      "system.blessing.already",
+      "system.blessing.received",
+      "system.experience.gained",
+      "system.item.received",
+      "system.mission.points",
+      "system.mount.received",
+      "system.stash.count",
+      "system.store.check_inbox",
+      "system.trade.bought",
+      "system.trade.sold",
+      "system.venture.decay"
+    ],
+    "pl|items.json": [
+      "item.31576.name",
+      "item.3203.name"
+    ]
   }
 }

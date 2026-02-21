@@ -79,7 +79,9 @@ extern "C" {
             g_logger.fatal("Unable to find work directory, the application cannot be initialized.");
 
         // initialize application framework and otclient
-        g_app.init(args, new GraphicalApplicationContext(g_gameConfig.getSpriteSize(), ApplicationDrawEventsPtr(&g_client)));
+        // g_client is a global object, so draw events must use a non-owning shared_ptr.
+        const auto drawEvents = ApplicationDrawEventsPtr(static_cast<ApplicationDrawEvents*>(&g_client), [](ApplicationDrawEvents*) {});
+        g_app.init(args, new GraphicalApplicationContext(g_gameConfig.getSpriteSize(), drawEvents));
 
 #ifndef ANDROID
 #if ENABLE_DISCORD_RPC == 1

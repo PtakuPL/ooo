@@ -26,6 +26,7 @@
 #include "luaexception.h"
 
 #include <framework/stdext/traits.h>
+#include <limits>
 #include <tuple>
 #include <utility>
 
@@ -78,9 +79,12 @@ namespace luabinder
     LuaCppFunction bind_fun_specializer(const F& f)
     {
         constexpr std::size_t N = std::tuple_size_v<Tuple>;
+        static_assert(N <= static_cast<std::size_t>(std::numeric_limits<int>::max()),
+            "Lua binder tuple arity exceeds Lua stack integer range");
+        constexpr int expectedStackSize = static_cast<int>(N);
         return [=](LuaInterface* lua) -> int {
-            while (lua->stackSize() != N) {
-                if (lua->stackSize() < N)
+            while (lua->stackSize() != expectedStackSize) {
+                if (lua->stackSize() < expectedStackSize)
                     g_lua.pushNil();
                 else
                     g_lua.pop();

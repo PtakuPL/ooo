@@ -84318,5 +84318,61 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T02:05:18.240923Z"
+  },
+  "scripts.creaturescripts_inquisition_boss.say_1": {
+    "src_hash": "b9525645c8811af5031fa8ab7946e34c",
+    "text": "Ora hai 10 minuti per uscire da questa stanza attraverso il teletrasporto. Ti porterà nella stanza successiva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:16:21.723275Z"
+  },
+  "scripts.creaturescripts_lloyd_preparedeath.say_1": {
+    "src_hash": "b7a82320407ef1c129a284bbf2d893e2",
+    "text": "Le energie cosmiche nella camera si concentrano nuovamente su Lloyd.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:16:21.723943Z"
+  },
+  "scripts.creaturescripts_lower_spike_kill.msg_1": {
+    "src_hash": "870a45d5452e81af45ca7f854917df81",
+    "text": "Hai ucciso {} su 7 Drillworms.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:16:28.685382Z"
+  },
+  "scripts.creaturescripts_lower_spike_kill.msg_2": {
+    "src_hash": "4b99059eb20d24e09acfec1ecbce9c57",
+    "text": "Attività Spike inferiore completata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:16:28.685957Z"
+  },
+  "scripts.creaturescripts_magma_bubble_death.msg_1": {
+    "src_hash": "cd0075c418243aa1e4b35fc2b9d9ae29",
+    "text": "Congratulazioni, hai ricevuto l'abito da pompiere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:16:28.686516Z"
+  },
+  "scripts.creaturescripts_middle_spike_kill.msg_1": {
+    "src_hash": "9c11541ca7ac9c834a81d45893c01960",
+    "text": "Hai ucciso {} su 7 Crystalcrushers.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:16:28.687350Z"
+  },
+  "scripts.creaturescripts_parasite.say_1": {
+    "src_hash": "36fb836e7857c2d1440eceeec12d49b0",
+    "text": "Sembra che qualcuno abbia già distrutto i muri negli ultimi 30 minuti.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T02:16:31.764671Z"
   }
 }

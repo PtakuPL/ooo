@@ -155070,5 +155070,117 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:10:50.409846Z"
+  },
+  "item.39321.name": {
+    "src_hash": "cf4345aeb3e46adfd2e6dd81543809d2",
+    "text": "dead Noxious ripptor",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:03.003764Z"
+  },
+  "item.39322.name": {
+    "src_hash": "cf4345aeb3e46adfd2e6dd81543809d2",
+    "text": "dead Noxious ripptor",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:03.004994Z"
+  },
+  "item.39323.name": {
+    "src_hash": "cf4345aeb3e46adfd2e6dd81543809d2",
+    "text": "dead Noxious ripptor",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:03.006192Z"
+  },
+  "item.15825.desc": {
+    "src_hash": "4379caabf817063dc311602417cbedd0",
+    "text": "Con un poco de suerte, es posible que puedas coger una piedra de afilar de la formación.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:16.005848Z"
+  },
+  "item.15826.desc": {
+    "src_hash": "51467f4961cd9a8f78fdeff6dfa5aee6",
+    "text": "Tienes que entregar la piedra de afilar mientras aún esté caliente. Se desmoronará en una hora.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:16.006674Z"
+  },
+  "item.16115.desc": {
+    "src_hash": "d5d85a34bcf827f3dc1428b34d645f60",
+    "text": "Contiene el fuego siempre ardiente",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:16.007907Z"
+  },
+  "item.16128.name": {
+    "src_hash": "8d07ec1265deca8f6a1aa9f30e433705",
+    "text": "ficha cristalina menor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:21.862756Z"
+  },
+  "item.16138.name": {
+    "src_hash": "69a4d218c97c5210ada2c224db49b82d",
+    "text": "picos cristalinos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:21.863208Z"
+  },
+  "item.16161.desc": {
+    "src_hash": "0f8b98d30e2ded148860fce1e059e14a",
+    "text": "Incluso a la luz del día, las estrellas parecen reflejarse en cada faceta de este hacha cristalina.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:21.864136Z"
+  },
+  "item.16167.desc": {
+    "src_hash": "65208b230be21802465cb5da345633e7",
+    "text": "Estos cristales se utilizan para cargar los teletransportadores de largo alcance a las ciudades.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:21.865085Z"
+  },
+  "item.16237.name": {
+    "src_hash": "01ac2644581d3658acae382c24f2ac56",
+    "text": "piernas de gnomevil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:21.865462Z"
+  },
+  "item.16238.name": {
+    "src_hash": "4db8d2913525e6e47d37026c65c951ea",
+    "text": "torso de gnomevil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:24.886779Z"
+  },
+  "item.16239.name": {
+    "src_hash": "af4136883c7ea2d5d2f43cf922ed3021",
+    "text": "jefe de gnomevil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:24.887248Z"
+  },
+  "item.16240.name": {
+    "src_hash": "23e0fe153eb49ad2c56bea12d2f996d1",
+    "text": "estatua de gnomevil",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:24.887597Z"
   }
 }

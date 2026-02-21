@@ -118470,5 +118470,13 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-21T01:01:35.339323Z"
+  },
+  "npc.tim_the_guard.stdmod_1": {
+    "src_hash": "9f8faef9b0ab426a0e0ee29611a81085",
+    "text": "To mój obowiązek do chronić the miasto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:51:50.903147Z"
   }
 }

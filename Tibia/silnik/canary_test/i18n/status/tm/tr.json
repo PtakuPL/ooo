@@ -385,19 +385,19 @@
   },
   "monster.lord_of_the_elements.name": {
     "src_hash": "26f35529002a0a103c2080451deda86a",
-    "text": "Lord of the Elements",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Elementlerin Efendisi",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-12T23:31:37.156556Z"
+    "updated_at": "2026-02-21T09:29:37.652406Z"
   },
   "monster.lord_of_the_elements.desc": {
     "src_hash": "26f35529002a0a103c2080451deda86a",
-    "text": "Lord of the Elements",
-    "source": "legacy",
-    "confidence": 0.8,
+    "text": "Elementlerin Efendisi",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-12T23:31:37.156565Z"
+    "updated_at": "2026-02-21T09:29:37.652932Z"
   },
   "monster.generator.name": {
     "src_hash": "92a8f0b9d28a89b480bd1d29f46f0484",
@@ -13902,5 +13902,13 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T07:45:30.083837Z"
+  },
+  "monster.vampire.voice_1": {
+    "src_hash": "37565f1867857e07abb2b0118bc26f8a",
+    "text": "Kan!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:29:37.847771Z"
   }
 }

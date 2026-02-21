@@ -13,6 +13,51 @@
 
 ## 🛠️ Aktualizacja wykonania (2026-02-19 20:50 UTC — awaria `TRANSLATION_OVERRIDES` + przywrócenie pracy workera)
 
+## 🛠️ Aktualizacja wykonania (2026-02-21 10:30 UTC — wyłączenie `global_quality_mode`, weryfikacja stabilności workera, incydent STOP)
+
+Wybrane do realizacji pełne zadania:
+- **Wyłączyć tryb quality (`global_quality_mode`) i priority gate, żeby odblokować throughput**
+- **Zweryfikować, czy worker działa po zmianie i czy status jest świeży**
+- **Udokumentować incydent `worker STOPPED` zgłoszony po zmianach**
+
+Wykonane:
+- ✅ Wyłączono quality mode w profilach runtime:
+  - `canary_test/guardian_profile.json`:
+    - `global_quality_mode: true -> false`
+    - `global_quality_priority_gate_enabled: true -> false`
+  - `canary_test/guardian_profiles/translations_general.json`:
+    - `global_quality_mode: true -> false`
+    - `global_quality_priority_gate_enabled: true -> false`
+- ✅ Wykonano restart stacka (`bash i18n_start_all.sh --restart`) i potwierdzono start 3 procesów (`Guardian`, `Statusd`, `Worker`) z pozytywnym health-gate 30s.
+- ✅ Potwierdzono runtime, że gate quality jest faktycznie wyłączony:
+  - `i18n/status/translation_dispatch_state.json`:
+    - `global_quality_mode=false`
+    - `priority_gate.enabled=false`
+- ✅ Zweryfikowano incydent zgłoszony przez operatora:
+  - w momencie zgłoszenia stack był `STOPPED` (`Guardian/Statusd/Worker`),
+  - heartbeat w `activity.json` był stary (zamrożony),
+  - po ponownym starcie status wrócił do trybu live.
+
+Dodatkowe obserwacje diagnostyczne (ważne):
+- ⚠️ W `guardian.log` występują powtarzające się wpisy `Killed` dla procesu workera (`i18n_guardian.sh` linia ~1018, kill procesu `nohup ... i18n_worker_simple.sh`).
+- ⚠️ W logach widoczna jest bardzo wysoka częstotliwość commitów statusowych guardiana (co ~2-3 min), co może powodować duże obciążenie I/O i odczuwalne „zamulenie” środowiska.
+- ℹ️ Brak potwierdzenia OOM w dostępnych logach systemowych (`dmesg`/`journalctl --user` nie pokazały jednoznacznego wpisu OOM dla tego incydentu).
+
+Weryfikacja działania workera po poprawce (monitoring kontrolny):
+- ✅ Monitoring 2 min po starcie (4 próbki co 30s):
+  - `Guardian/Statusd/Worker` cały czas `RUNNING`,
+  - heartbeat `activity_age_sec` utrzymywał się w zakresie kilku-kilkudziesięciu sekund (live),
+  - worker realizował `AUTO_TRANSLATE` na kolejnych targetach (`cs/monsters.json`, `sk/monsters.json`, `es/npc.json`).
+
+Status na teraz:
+- `global_quality_mode` jest WYŁĄCZONY (runtime + profile),
+- worker działa po restarcie,
+- nadal istnieje ryzyko sporadycznych zgonów procesu (`Killed`) niezależnie od samego quality mode — wymaga osobnej ścieżki stabilizacyjnej.
+
+Nowe zadania z incydentu:
+- [ ] `WQ-HARD-48 (P0)`: Diagnostyka `Killed` procesu workera (pid timeline + korelacja z obciążeniem I/O/CPU + źródło sygnału).
+- [ ] `WQ-HARD-49 (P1)`: Ograniczyć churn commitów statusowych (cooldown push/commit lub agregacja zmian), aby zmniejszyć obciążenie środowiska i ryzyko zwieszek IDE.
+
 Wybrane do realizacji pełne zadania:
 - **Przywrócić stabilną pracę workera po `NameError: TRANSLATION_OVERRIDES`**
 - **Domknąć kontrakt manual override dla tłumaczeń (priorytet nad TM/GT)**

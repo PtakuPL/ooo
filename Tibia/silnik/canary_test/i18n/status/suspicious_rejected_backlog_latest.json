@@ -1,20 +1,12 @@
 {
-  "timestamp": "2026-02-21T09:28:08.815564Z",
-  "language": "es",
+  "timestamp": "2026-02-21T09:30:16.005381Z",
+  "language": "da",
   "json_file": "npc.json",
   "lookback_lines": 8000,
   "min_hits": 2,
   "max_keys": 400,
   "issue_types_filter": [],
-  "selected_keys": 1,
-  "issue_type_totals": {
-    "identical_to_en": 265
-  },
-  "keys": [
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "hits": 265,
-      "top_issue": "identical_to_en"
-    }
-  ]
+  "selected_keys": 0,
+  "issue_type_totals": {},
+  "keys": []
 }

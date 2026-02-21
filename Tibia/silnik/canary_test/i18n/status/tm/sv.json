@@ -38558,5 +38558,125 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T02:31:02.408784Z"
+  },
+  "npc.tyrias.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.274820Z"
+  },
+  "npc.tyrias.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vill du byta ut din äventyrarsten mot 30 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.275519Z"
+  },
+  "npc.tyrias.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.276019Z"
+  },
+  "npc.tyrias.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Tyvärr, du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.276463Z"
+  },
+  "npc.ubaid.multi_15": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, det lät nästan som ett hälsningsord. Människor - söta de är!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.277929Z"
+  },
+  "npc.ubaid.multi_17": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, det lät nästan som ett hälsningsord. Människor - söta de är!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.278506Z"
+  },
+  "npc.ubaid.say_1": {
+    "src_hash": "17bb78642c4a960215206201b82d1feb",
+    "text": "Skjut iväg, lilla! Människor är inte välkomna här, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.279473Z"
+  },
+  "npc.ukea.farewell_1": {
+    "src_hash": "0cb417f931a52f3fdfb52ba62e89a939",
+    "text": "Adjö, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.280349Z"
+  },
+  "npc.ukea.farewell_msg_1": {
+    "src_hash": "45dbe67ab9d69929dc41b8bfe83ce764",
+    "text": "Hejdå!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.280673Z"
+  },
+  "npc.ukea.greet_1": {
+    "src_hash": "def396ba41b632b5013a533f685b7648",
+    "text": "Hälsningar, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.281011Z"
+  },
+  "npc.umar.multi_13": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, det lät nästan som ett hälsningsord. Människor - söta de är!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.282721Z"
+  },
+  "npc.umar.multi_15": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, det lät nästan som ett hälsningsord. Människor - söta de är!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.283418Z"
+  },
+  "npc.umar.say_1": {
+    "src_hash": "53f59a9ef75a585e8d262642a3166d45",
+    "text": "Oj! En människa! Det här är ingen plats för dig, |PLAYERNAME|. Gå och spela någon annanstans.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.284352Z"
+  },
+  "npc.uncle.say_10": {
+    "src_hash": "467bd5450601d1e96f97267a198f8e44",
+    "text": "Snälla ge mig bevis på det galna teknomanernas nederlag!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.286408Z"
+  },
+  "npc.undal.say_14": {
+    "src_hash": "c066542c456632337339c67bf887b0a8",
+    "text": "Förlåt, jag förstod inte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:30:00.289199Z"
   }
 }

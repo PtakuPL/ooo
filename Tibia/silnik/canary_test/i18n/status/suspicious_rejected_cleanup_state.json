@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T10:24:10.113719Z",
-  "last_cycle": 19,
+  "timestamp": "2026-02-21T10:28:47.671482Z",
+  "last_cycle": 20,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [],
@@ -238,7 +238,24 @@
       "data.otservbr.global.npc.maris.fenrock.L72.111",
       "data.otservbr.global.npc.maris.fenrock.L73.112",
       "data.otservbr.global.npc.maris.mistrock.L89.667",
-      "data.otservbr.global.npc.maris.mistrock.L90.668"
+      "data.otservbr.global.npc.maris.mistrock.L90.668",
+      "data.otservbr.global.npc.markwin.L59.904",
+      "data.otservbr.global.npc.markwin.L72.905",
+      "data.otservbr.global.npc.marlene.L101.423",
+      "data.otservbr.global.npc.marvin.L92.130",
+      "data.otservbr.global.npc.mazarius.L189.562",
+      "data.otservbr.global.npc.mazarius.L191.564",
+      "data.otservbr.global.npc.mehkesh.L59.619",
+      "data.otservbr.global.npc.mehkesh.L60.620",
+      "data.otservbr.global.npc.mehkesh.L61.621",
+      "data.otservbr.global.npc.melchior.L86.1116",
+      "data.otservbr.global.npc.melchior.L87.1117",
+      "data.otservbr.global.npc.melfar.L135.692",
+      "data.otservbr.global.npc.melian.L94.776",
+      "data.otservbr.global.npc.memech.L59.1193",
+      "data.otservbr.global.npc.memech.L60.1194",
+      "data.otservbr.global.npc.memech.L61.1195",
+      "data.otservbr.global.npc.milos.L59.298"
     ],
     "ru|server.json": [
       "data.otservbr.global.npc.a.beggar.L82.1060",
@@ -1594,6 +1611,11 @@
       "raid.wild_horses.name",
       "raid.zevelon_duskbringer.name",
       "raid.zulazza_the_corruptor.name"
+    ],
+    "ru|quests.json": [
+      "quests.2_ambassadors_treason.msg_3",
+      "quests.actions_bonefiddle.msg_2",
+      "quests.bigfoot_burden.device_unknown"
     ]
   }
 }

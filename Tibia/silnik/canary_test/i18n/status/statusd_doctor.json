@@ -1,16 +1,14 @@
 {
-  "timestamp": "2026-02-21T10:27:28.345265Z",
+  "timestamp": "2026-02-21T10:28:44.310947Z",
   "first_run_ts": "2026-02-14T08:41:12.251776Z",
   "overall": "CRITICAL",
   "issues_count": 1,
-  "warnings_count": 15,
-  "ok_count": 11,
+  "warnings_count": 13,
+  "ok_count": 12,
   "issues": [
-    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=5755 rate=352.203% window=6.0h top_lang=ru:1842 per_lang=[ru:1842(767.5%/critical),es:1430(638.393%/critical),pl:1168(663.636%/critical),ro:318(512.903%/critical),it:204(155.725%/critical)] per_domain=[npc.json:2436(246.809%/critical),items.json:1825(931.122%/critical),monsters.json:1364(381.006%/critical),server.json:81(207.692%/critical),scripts.json:35(100.0%/critical)]"
+    "SUSPICIOUS_HIGH_SPIKE: suspicious_high=5805 rate=346.774% window=6.0h top_lang=ru:1857 per_lang=[ru:1857(742.8%/critical),es:1430(638.393%/critical),pl:1168(663.636%/critical),ro:318(512.903%/critical),it:239(148.447%/critical)] per_domain=[npc.json:2436(246.809%/critical),items.json:1825(931.122%/critical),monsters.json:1364(381.006%/critical),server.json:116(168.116%/critical),scripts.json:35(100.0%/critical)]"
   ],
   "warnings": [
-    "AGING_HEARTBEAT: heartbeat sprzed 162s (aging>150s)",
-    "BLACKLISTED_TARGET: ro:items.json ma 7063 guard_fail w blackliście",
     "BLACKLISTED_TARGET: pl:items.json ma 7071 guard_fail w blackliście",
     "BLACKLISTED_TARGET: es:items.json ma 7072 guard_fail w blackliście",
     "GUARDIAN_DEGRADED: guardian raportuje degraded",
@@ -18,7 +16,7 @@
     "LANG_PARITY_WARN: de has 48692 [EN]-backlog after 170h (should be ≤5000)",
     "LANG_PARITY_WARN: fr has 35234 [EN]-backlog after 170h (should be ≤5000)",
     "LANG_PARITY_WARN: hu has 49927 [EN]-backlog after 170h (should be ≤5000)",
-    "LANG_PARITY_WARN: it has 24398 [EN]-backlog after 170h (should be ≤5000)",
+    "LANG_PARITY_WARN: it has 24382 [EN]-backlog after 170h (should be ≤5000)",
     "LANG_PARITY_WARN: nl has 49812 [EN]-backlog after 170h (should be ≤5000)",
     "LANG_PARITY_WARN: pt has 48866 [EN]-backlog after 170h (should be ≤5000)",
     "LANG_PARITY_WARN: ru has 26333 [EN]-backlog after 170h (should be ≤5000)",
@@ -26,13 +24,14 @@
     "LANG_PARITY_WARN: tr has 48673 [EN]-backlog after 170h (should be ≤5000)"
   ],
   "ok": [
-    "status_md_fresh (126s)",
-    "guard_report_fresh (348s)",
-    "dispatch_fresh (397s)",
+    "heartbeat_fresh (18s, aging/stale/stuck=150/240/420s)",
+    "status_md_fresh (7s)",
+    "guard_report_fresh (3s)",
+    "dispatch_fresh (1s)",
     "worker_pid_alive (26899)",
-    "worker_process_topology_ok (main=26899 matching=2 extras=1 desc=1 foreign=0 oldest_desc=124s oldest_foreign=0s status=single_descendant_observed)",
+    "worker_subprocess_observed (main=26899 matching=4 extras=3 desc=3 foreign=0 oldest_desc=0s oldest_foreign=0s status=extra_descendants_detected)",
     "worker_translation_contract_ok (pid=26899 translations_only=1 use_gt=1 no_git=0 priority_gate=0 priority_langs=[pl,es,ru,ro,it,sr,sv] pending=[-])",
-    "queue_freshness_ok (337s, WARN>900s CRIT>1800s)",
+    "queue_freshness_ok (413s, WARN>900s CRIT>1800s)",
     "metrics_drift_ok (outside=0 (0.00%) live=53586 registry=53586)",
     "priority_gate_watch_disabled",
     "forced_cmd_sla_ok (samples=0 sla_target=45s p95_roundtrip=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0)",
@@ -98,26 +97,32 @@
   },
   "worker_process_watch": {
     "available": true,
-    "severity": "ok",
-    "status": "single_descendant_observed",
-    "reason": "single_descendant_worker_subprocess",
+    "severity": "info",
+    "status": "extra_descendants_detected",
+    "reason": "multiple_descendant_worker_processes",
     "main_pid": 26899,
     "matched_pids": [
       26899,
-      60975
+      62174,
+      62195,
+      62197
     ],
     "extra_pids": [
-      60975
+      62174,
+      62195,
+      62197
     ],
     "descendant_extra_pids": [
-      60975
+      62174,
+      62195,
+      62197
     ],
     "foreign_extra_pids": [],
-    "total_matching": 2,
-    "extra_count": 1,
-    "descendant_extra_count": 1,
+    "total_matching": 4,
+    "extra_count": 3,
+    "descendant_extra_count": 3,
     "foreign_extra_count": 0,
-    "oldest_descendant_age_s": 124,
+    "oldest_descendant_age_s": 0,
     "oldest_foreign_age_s": 0,
     "warn_persist_seconds": 900,
     "critical_persist_seconds": 1800

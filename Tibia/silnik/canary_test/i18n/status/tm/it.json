@@ -85278,5 +85278,141 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T10:06:48.587077Z"
+  },
+  "data.otservbr.global.npc.markwin.L59.904": {
+    "src_hash": "bf2421b7f13057a4d06b921861e9b066",
+    "text": "Intruso! Guardie, portatelo giù!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.524299Z"
+  },
+  "data.otservbr.global.npc.markwin.L72.905": {
+    "src_hash": "5c97494d5f921771f27b9e512cd75d54",
+    "text": "Beh... hai sconfitto le mie guardie! Adesso è tutto finito! Immagino che dovrò rispondere alle tue domande ora.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.525939Z"
+  },
+  "data.otservbr.global.npc.marlene.L101.423": {
+    "src_hash": "a2b4481e8d9b0cdfe72918bb2a79f120",
+    "text": "Arrivederci e tornate per un'altra chiacchierata! *onde*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.527506Z"
+  },
+  "data.otservbr.global.npc.marvin.L92.130": {
+    "src_hash": "d34ba366d4cab92352173ff6cb7f085a",
+    "text": "Ah, sei arrivato giusto in tempo per la votazione speciale sul progetto {funding} più recente. Immagino che tu voglia parteciparvi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.529167Z"
+  },
+  "data.otservbr.global.npc.mazarius.L189.562": {
+    "src_hash": "8fa02972b5987e56c5691893a73d91e2",
+    "text": "Saluti, caro visitatore. Per favore dimmi cosa {brings} sei qui, nel mio umile Adobe.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.530899Z"
+  },
+  "data.otservbr.global.npc.mazarius.L191.564": {
+    "src_hash": "cbca1e780ae7e44aa43debe068beb490",
+    "text": "Vabbè.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.532413Z"
+  },
+  "data.otservbr.global.npc.mehkesh.L59.619": {
+    "src_hash": "653a40db026dd0eea8fd4db0d5fba508",
+    "text": "Sii pianto, |PLAYERNAME|, pellegrino in carne e ossa. Se stai cercando pozioni, non cercare oltre.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.533735Z"
+  },
+  "data.otservbr.global.npc.mehkesh.L60.620": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Possa l'illuminazione essere il tuo percorso, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.534808Z"
+  },
+  "data.otservbr.global.npc.mehkesh.L61.621": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Possa l'illuminazione essere il tuo percorso, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.535824Z"
+  },
+  "data.otservbr.global.npc.melchior.L86.1116": {
+    "src_hash": "c5d02636f95130d977bd5d183a75f872",
+    "text": "Addio, straniero. Possa Uman il Saggio guidare i tuoi passi in questa terra insidiosa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.537711Z"
+  },
+  "data.otservbr.global.npc.melchior.L87.1117": {
+    "src_hash": "c5d02636f95130d977bd5d183a75f872",
+    "text": "Addio, straniero. Possa Uman il Saggio guidare i tuoi passi in questa terra insidiosa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.539043Z"
+  },
+  "data.otservbr.global.npc.melfar.L135.692": {
+    "src_hash": "49f8d351b6b7daffa365eac4d0e9f2f1",
+    "text": "Semplicemente fantastico, un altro disturbo. Proprio quello di cui ho bisogno.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.540124Z"
+  },
+  "data.otservbr.global.npc.melian.L94.776": {
+    "src_hash": "ae65c5fcbefcac067caa83048920ebf2",
+    "text": "Saluti, viaggiatore |PLAYERNAME|. Dove vuoi che vada {fly} tu?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.541293Z"
+  },
+  "data.otservbr.global.npc.memech.L59.1193": {
+    "src_hash": "65d996f074a8494c83d5bfd9a8f8a9bf",
+    "text": "Sii pianto, |PLAYERNAME|, pellegrino in carne e ossa. Dai un'occhiata alla mia multa {weapons} e {armors}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.543394Z"
+  },
+  "data.otservbr.global.npc.memech.L60.1194": {
+    "src_hash": "11191b6ef2e64cc058057d3c70275bb1",
+    "text": "Possa l'illuminazione essere il tuo percorso, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.543967Z"
+  },
+  "data.otservbr.global.npc.memech.L61.1195": {
+    "src_hash": "58aaadd7d4edadde7c609e944ce2f906",
+    "text": "Possa l'illuminazione essere la tua strada.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.544467Z"
+  },
+  "data.otservbr.global.npc.milos.L59.298": {
+    "src_hash": "313a0c76d8cc04115f7e8b6b17a08f55",
+    "text": "Oh ciao. Ti ho notato a malapena. Temo di essere un po' distratto in questo momento.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T10:28:22.546702Z"
   }
 }

@@ -298,5 +298,148 @@
     },
     "migration_completed": 15,
     "migration_total": 15
+  },
+  {
+    "date": "2026-02-21",
+    "hours_covered": 5,
+    "threshold": 5,
+    "is_final": false,
+    "ts_first": "2026-02-21T00:19:46Z",
+    "ts_last": "2026-02-21T10:27:33Z",
+    "translated": 6068,
+    "guard_fail": 13242,
+    "suspicious_high": 20430,
+    "identical_to_en": 871,
+    "repair_start": 37786,
+    "repair_end": 37856,
+    "cycles": 109,
+    "coverage_start": 13.93,
+    "coverage_end": 13.97,
+    "guard_fail_pct": 68.58,
+    "throughput_per_h": 1213.6,
+    "per_lang": {
+      "ru": {
+        "t": 1425,
+        "gf": 753,
+        "cov": 50.54
+      },
+      "it": {
+        "t": 978,
+        "gf": 494,
+        "cov": 53.53
+      },
+      "pl": {
+        "t": 865,
+        "gf": 6528,
+        "cov": 87.87
+      },
+      "es": {
+        "t": 619,
+        "gf": 3820,
+        "cov": 85.3
+      },
+      "sr": {
+        "t": 562,
+        "gf": 375,
+        "cov": 45.72
+      },
+      "ro": {
+        "t": 528,
+        "gf": 1035,
+        "cov": 44.07
+      },
+      "sv": {
+        "t": 440,
+        "gf": 194,
+        "cov": 29.69
+      },
+      "cs": {
+        "t": 30,
+        "gf": 0,
+        "cov": 6.11
+      },
+      "ar": {
+        "t": 30,
+        "gf": 0,
+        "cov": 8.58
+      },
+      "bg": {
+        "t": 30,
+        "gf": 4,
+        "cov": 6.3
+      },
+      "da": {
+        "t": 30,
+        "gf": 0,
+        "cov": 5.65
+      },
+      "el": {
+        "t": 30,
+        "gf": 0,
+        "cov": 5.86
+      },
+      "et": {
+        "t": 30,
+        "gf": 0,
+        "cov": 5.98
+      },
+      "fi": {
+        "t": 30,
+        "gf": 0,
+        "cov": 5.59
+      },
+      "he": {
+        "t": 30,
+        "gf": 0,
+        "cov": 7.6
+      }
+    },
+    "per_cat": {
+      "npc.json": {
+        "t": 1473,
+        "gf": 2651
+      },
+      "monsters.json": {
+        "t": 1063,
+        "gf": 239
+      },
+      "items.json": {
+        "t": 762,
+        "gf": 7254
+      },
+      "scripts.json": {
+        "t": 475,
+        "gf": 275
+      },
+      "server.json": {
+        "t": 473,
+        "gf": 954
+      },
+      "questlog.json": {
+        "t": 391,
+        "gf": 239
+      },
+      "raids.json": {
+        "t": 307,
+        "gf": 16
+      },
+      "html.json": {
+        "t": 306,
+        "gf": 119
+      },
+      "otclient_modules.json": {
+        "t": 213,
+        "gf": 194
+      },
+      "cpp.json": {
+        "t": 164,
+        "gf": 96
+      }
+    },
+    "mode_distribution": {
+      "AUTO_TRANSLATE": 522
+    },
+    "migration_completed": 15,
+    "migration_total": 15
   }
 ]

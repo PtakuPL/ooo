@@ -177,5 +177,18 @@
   "arena.queue.summary": "[Arena] Kolejka: {0} | Aktywne Mecze: {1}",
   "arena.queue.empty": "  Brak graczy w kolejce.",
 
-  "arena.record.format": "{0}W / {1}P / {2}R ({3}% WR)"
+  "arena.record.format": "{0}W / {1}P / {2}R ({3}% WR)",
+
+  "arena.security.spell_blocked": "Nie możesz użyć tego zaklęcia podczas meczu na arenie!",
+  "arena.security.item_blocked": "Nie możesz użyć tego przedmiotu podczas meczu na arenie!",
+  "arena.security.party_blocked": "Nie możesz zmieniać drużyny podczas meczu na arenie!",
+  "arena.security.afk_warning": "Ostrzeżenie AFK! Zostaniesz usunięty z areny za {0} sekund jeśli pozostaniesz nieaktywny.",
+  "arena.security.afk_loss": "Zostałeś usunięty z areny z powodu nieaktywności. Liczy się to jako przegrana.",
+  "arena.security.logout_warning": "Wylogowanie podczas meczu na arenie liczy się jako przegrana!",
+  "arena.security.teleport_blocked": "Teleportacja jest niemożliwa podczas meczu na arenie!",
+
+  "arena.anticheat.match_too_short": "Ten mecz był zbyt krótki, aby liczyć się do zmian MMR.",
+  "arena.anticheat.repeat_opponent": "Zbyt wiele meczy przeciwko temu samemu przeciwnikowi dzisiaj. MMR nie zmieni się.",
+  "arena.anticheat.daily_cap_reached": "Osiągnąłeś dzienny limit wzrostu MMR wynoszący {0}. Dodatkowe wygrane nie zwiększą twojego MMR dzisiaj.",
+  "arena.anticheat.daily_cap_partial": "Dzienny limit MMR: zyskałeś +{0} zamiast +{1} (osiągnięto dzienny limit)."
 }

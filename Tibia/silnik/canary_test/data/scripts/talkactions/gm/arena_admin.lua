@@ -1,160 +1,164 @@
 -- Arena PvP - GM Commands
--- Admin/GM commands for arena management
 -- Usage: !arena-admin <subcommand> [args]
 -- All user-facing strings use i18n keys from i18n/<lang>/arena.json
 
 local arenaAdmin = TalkAction("!arena-admin")
 
 function arenaAdmin.onSay(player, words, param)
-if not player then
- false
-end
+	if not player then
+		return false
+	end
 
--- GM only
-if player:getAccountType() < ACCOUNT_TYPE_GAMEMASTER then
- false
-end
+	if player:getAccountType() < ACCOUNT_TYPE_GAMEMASTER then
+		return false
+	end
 
-local args = param:lower():split(" ")
-local action = args[1] or "help"
+	local args = param:lower():split(" ")
+	local action = args[1] or "help"
 
-if action == "info" then
-a system status
-a.getActiveMatchCount()
-slation("arena.admin.info.header") .. "\n"
-slation("arena.admin.info.active_matches", {tostring(activeMatches)}) .. "\n"
+	if action == "info" then
+		local activeMatches = Arena.getActiveMatchCount()
+		local msg = player:getTranslation("arena.admin.info.header") .. "\n"
+		msg = msg .. player:getTranslation("arena.admin.info.active_matches", {tostring(activeMatches)}) .. "\n"
 
-a.MODE_1V1, Arena.MODE_2V2, Arena.MODE_3V3,
-a.MODE_FFA, Arena.MODE_LMS
-slation("arena.admin.info.queue") .. "\n"
-Keys = {
-a.MODE_1V1] = "arena.mode.1v1",
-a.MODE_2V2] = "arena.mode.2v2",
-a.MODE_3V3] = "arena.mode.3v3",
-a.MODE_FFA] = "arena.mode.ffa",
-a.MODE_LMS] = "arena.mode.lms",
- ipairs(modes) do
-t = Arena.getQueueSize(mode)
-ame = player:getTranslation(modeI18nKeys[mode])
-.. modeName .. ": " .. count .. "\n"
-d
+		local modes = {
+			Arena.MODE_1V1, Arena.MODE_2V2, Arena.MODE_3V3,
+			Arena.MODE_FFA, Arena.MODE_LMS
+		}
+		msg = msg .. player:getTranslation("arena.admin.info.queue") .. "\n"
+		local modeI18nKeys = {
+			[Arena.MODE_1V1] = "arena.mode.1v1",
+			[Arena.MODE_2V2] = "arena.mode.2v2",
+			[Arena.MODE_3V3] = "arena.mode.3v3",
+			[Arena.MODE_FFA] = "arena.mode.ffa",
+			[Arena.MODE_LMS] = "arena.mode.lms",
+		}
+		for _, mode in ipairs(modes) do
+			local count = Arena.getQueueSize(mode)
+			local modeName = player:getTranslation(modeI18nKeys[mode])
+			msg = msg .. "  " .. modeName .. ": " .. count .. "\n"
+		end
 
-dTextMessage(MESSAGE_HOTKEY_PRESSED, msg)
+		player:sendTextMessage(MESSAGE_HOTKEY_PRESSED, msg)
 
-elseif action == "stats" then
-ame = args[2]
-ot targetName then
-dLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.stats.usage")
- true
-d
+	elseif action == "stats" then
+		local targetName = args[2]
+		if not targetName then
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.stats.usage")
+			return true
+		end
 
-ame)
-ot target then
-dLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.stats.not_found", {targetName})
- true
-d
+		local target = Player(targetName)
+		if not target then
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.stats.not_found", {targetName})
+			return true
+		end
 
-aGetStats()
-ot stats then
-dLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.stats.no_profile", {targetName})
- true
-d
+		local stats = target:arenaGetStats()
+		if not stats then
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.stats.no_profile", {targetName})
+			return true
+		end
 
-ame = ArenaConfig.getTitleForMMR(stats.mmr)
-aConfig.getTitleI18nKey(titleName)
-slatedTitle = player:getTranslation(titleKey)
+		local titleName = ArenaConfig.getTitleForMMR(stats.mmr)
+		local titleKey = ArenaConfig.getTitleI18nKey(titleName)
+		local translatedTitle = player:getTranslation(titleKey)
 
-slation("arena.admin.stats.header", {target:getName()}) .. "\n"
-slation("arena.admin.stats.mmr_line", {tostring(stats.mmr), translatedTitle}) .. "\n"
-slation("arena.record.format", {tostring(stats.wins), tostring(stats.losses), tostring(stats.draws), tostring(ArenaConfig.getWinRate(stats))}) .. "\n"
-slation("arena.admin.stats.kd_line", {tostring(stats.totalKills), tostring(stats.totalDeaths), ArenaConfig.formatKDR(stats.totalKills, stats.totalDeaths)}) .. "\n"
-slation("arena.admin.stats.points", {tostring(stats.arenaPoints)}) .. "\n"
-slation("arena.admin.stats.streak", {tostring(stats.winStreak), tostring(stats.bestStreak)})
-dTextMessage(MESSAGE_HOTKEY_PRESSED, msg)
+		local msg = player:getTranslation("arena.admin.stats.header", {target:getName()}) .. "\n"
+		msg = msg .. player:getTranslation("arena.admin.stats.mmr_line", {tostring(stats.mmr), translatedTitle}) .. "\n"
+		msg = msg .. player:getTranslation("arena.record.format", {tostring(stats.wins), tostring(stats.losses), tostring(stats.draws), tostring(ArenaConfig.getWinRate(stats))}) .. "\n"
+		msg = msg .. player:getTranslation("arena.admin.stats.kd_line", {tostring(stats.totalKills), tostring(stats.totalDeaths), ArenaConfig.formatKDR(stats.totalKills, stats.totalDeaths)}) .. "\n"
+		msg = msg .. player:getTranslation("arena.admin.stats.points", {tostring(stats.arenaPoints)}) .. "\n"
+		msg = msg .. player:getTranslation("arena.admin.stats.streak", {tostring(stats.winStreak), tostring(stats.bestStreak)})
+		player:sendTextMessage(MESSAGE_HOTKEY_PRESSED, msg)
 
-elseif action == "setmmr" then
-testing)
-ame = args[2]
-ewMMR = tonumber(args[3])
-ot targetName or not newMMR then
-dLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.setmmr.usage")
- true
-d
+	elseif action == "setmmr" then
+		local targetName = args[2]
+		local newMMR = tonumber(args[3])
+		if not targetName or not newMMR then
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.setmmr.usage")
+			return true
+		end
 
-ame)
-ot target then
-dLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.player_not_online")
- true
-d
+		local target = Player(targetName)
+		if not target then
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.player_not_online")
+			return true
+		end
 
-g.format(
-a_players` SET `mmr` = %d WHERE `player_id` = %d",
-ewMMR, target:getGuid()
-dLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
-a.admin.setmmr.success", {target:getName(), tostring(newMMR)})
+		db.query(string.format(
+			"UPDATE `arena_players` SET `mmr` = %d WHERE `player_id` = %d",
+			newMMR, target:getGuid()
+		))
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
+			"arena.admin.setmmr.success", {target:getName(), tostring(newMMR)})
+		ArenaLog.logAdminAction(player, "setmmr", target:getName(), "Set MMR to " .. newMMR)
 
-elseif action == "addpoints" then
-a points
-ame = args[2]
-ts = tonumber(args[3])
-ot targetName or not points then
-dLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.addpoints.usage")
- true
-d
+	elseif action == "addpoints" then
+		local targetName = args[2]
+		local points = tonumber(args[3])
+		if not targetName or not points then
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.addpoints.usage")
+			return true
+		end
 
-ame)
-ot target then
-dLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.player_not_online")
- true
-d
+		local target = Player(targetName)
+		if not target then
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.player_not_online")
+			return true
+		end
 
-g.format(
-a_players` SET `arena_points` = `arena_points` + %d WHERE `player_id` = %d",
-ts, target:getGuid()
-dLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
-a.admin.addpoints.success", {tostring(points), target:getName()})
+		db.query(string.format(
+			"UPDATE `arena_players` SET `arena_points` = `arena_points` + %d WHERE `player_id` = %d",
+			points, target:getGuid()
+		))
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
+			"arena.admin.addpoints.success", {tostring(points), target:getName()})
+		ArenaLog.logAdminAction(player, "addpoints", target:getName(), "Added " .. points .. " points")
 
-elseif action == "reset" then
-a stats
-ame = args[2]
-ot targetName then
-dLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.reset.usage")
- true
-d
+	elseif action == "reset" then
+		local targetName = args[2]
+		if not targetName then
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.reset.usage")
+			return true
+		end
 
-ame)
-ot target then
-dLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.player_not_online")
- true
-d
+		local target = Player(targetName)
+		if not target then
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.admin.player_not_online")
+			return true
+		end
 
-g.format(
-a_players` SET `mmr` = 1000, `wins` = 0, `losses` = 0, `draws` = 0, " ..
-_streak` = 0, `best_streak` = 0, `total_damage` = 0, `total_healing` = 0, " ..
-a_points` = 0 WHERE `player_id` = %d",
-dLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
-a.admin.reset.success", {target:getName()})
+		db.query(string.format(
+			"UPDATE `arena_players` SET `mmr` = 1000, `wins` = 0, `losses` = 0, `draws` = 0, " ..
+			"`win_streak` = 0, `best_streak` = 0, `total_damage` = 0, `total_healing` = 0, " ..
+			"`total_kills` = 0, `total_deaths` = 0, `arena_points` = 0 WHERE `player_id` = %d",
+			target:getGuid()
+		))
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
+			"arena.admin.reset.success", {target:getName()})
+		ArenaLog.logAdminAction(player, "reset", target:getName(), "Full stats reset")
 
-elseif action == "broadcast" then
-d arena announcement
-"broadcast "
-d message ~= "" then
-aPvP.broadcast("[Arena] " .. message)
-dLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "arena.admin.broadcast.sent")
-d
+	elseif action == "broadcast" then
+		local message = param:sub(#"broadcast " + 1)
+		if message and message ~= "" then
+			ArenaPvP.broadcast("[Arena] " .. message)
+			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "arena.admin.broadcast.sent")
+			ArenaLog.logAdminAction(player, "broadcast", "-", message)
+		end
 
-else
-slation("arena.admin.help.header") .. "\n"
-slation("arena.admin.help.info") .. "\n"
-slation("arena.admin.help.stats") .. "\n"
-slation("arena.admin.help.setmmr") .. "\n"
-slation("arena.admin.help.addpoints") .. "\n"
-slation("arena.admin.help.reset") .. "\n"
-slation("arena.admin.help.broadcast")
-dTextMessage(MESSAGE_HOTKEY_PRESSED, msg)
-end
+	else
+		local msg = player:getTranslation("arena.admin.help.header") .. "\n"
+		msg = msg .. player:getTranslation("arena.admin.help.info") .. "\n"
+		msg = msg .. player:getTranslation("arena.admin.help.stats") .. "\n"
+		msg = msg .. player:getTranslation("arena.admin.help.setmmr") .. "\n"
+		msg = msg .. player:getTranslation("arena.admin.help.addpoints") .. "\n"
+		msg = msg .. player:getTranslation("arena.admin.help.reset") .. "\n"
+		msg = msg .. player:getTranslation("arena.admin.help.broadcast")
+		player:sendTextMessage(MESSAGE_HOTKEY_PRESSED, msg)
+	end
 
-return true
+	return true
 end
 
 arenaAdmin:groupType("gamemaster")

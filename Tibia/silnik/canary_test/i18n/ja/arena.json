@@ -177,5 +177,18 @@
   "arena.queue.summary": "[Arena] Queue: {0} | Active Matches: {1}",
   "arena.queue.empty": "  No players in queue.",
 
-  "arena.record.format": "{0}W / {1}L / {2}D ({3}% WR)"
+  "arena.record.format": "{0}W / {1}L / {2}D ({3}% WR)",
+
+  "arena.security.spell_blocked": "You cannot use that spell during an arena match!",
+  "arena.security.item_blocked": "You cannot use that item during an arena match!",
+  "arena.security.party_blocked": "You cannot change party during an arena match!",
+  "arena.security.afk_warning": "AFK Warning! You will be removed from the arena in {0} seconds if you stay inactive.",
+  "arena.security.afk_loss": "You have been removed from the arena for being AFK. This counts as a loss.",
+  "arena.security.logout_warning": "Logging out during an arena match counts as a loss!",
+  "arena.security.teleport_blocked": "Teleportation is not allowed during an arena match!",
+
+  "arena.anticheat.match_too_short": "This match was too short to count for MMR changes.",
+  "arena.anticheat.repeat_opponent": "Too many matches against the same opponent today. MMR will not change.",
+  "arena.anticheat.daily_cap_reached": "You have reached the daily MMR gain cap of {0}. Additional wins will not increase your MMR today.",
+  "arena.anticheat.daily_cap_partial": "Daily MMR cap: you gained +{0} instead of +{1} (daily limit reached)."
 }

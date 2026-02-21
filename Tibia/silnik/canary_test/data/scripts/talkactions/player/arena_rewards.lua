@@ -1,143 +1,102 @@
--- Arena PvP Rewards System
--- Handles: Arena Point shop, title awarding, achievement tracking
+-- Arena PvP - Reward Shop & Title Commands
+-- Commands: !arena-shop [buy <id>] | !arena-title
 -- All user-facing strings use i18n keys from i18n/<lang>/arena.json
 
-local arenaRewards = TalkAction("!arena-shop", "!arenashop")
+local arenaShop = TalkAction("!arena-shop")
 
-local function showShop(player)
-local stats = player:arenaGetStats()
-local points = stats and stats.arenaPoints or 0
+function arenaShop.onSay(player, words, param)
+	if not player then
+		return false
+	end
 
-local msg = player:getTranslation("arena.shop.header", {tostring(points)}) .. "\n\n"
-msg = msg .. player:getTranslation("arena.shop.columns") .. "\n"
-msg = msg .. string.rep("-", 56) .. "\n"
+	local args = param:lower():split(" ")
+	local action = args[1] or "list"
 
-for _, item in ipairs(ArenaConfig.shop) do
-ame = item.i18nKey and player:getTranslation(item.i18nKey) or item.name
-g.format("%-4d %-30s %-10d %-10s\n",
-ame, item.cost, item.category)
-end
-msg = msg .. "\n" .. player:getTranslation("arena.shop.buy_hint")
+	if action == "list" or action == "" then
+		local stats = player:arenaGetStats()
+		local points = stats and stats.arenaPoints or 0
+		local msg = player:getTranslation("arena.shop.header", {tostring(points)}) .. "\n"
 
-player:sendTextMessage(MESSAGE_HOTKEY_PRESSED, msg)
-end
+		for i, item in ipairs(ArenaConfig.shop) do
+			local itemName = player:getTranslation(item.i18nKey)
+			msg = msg .. player:getTranslation("arena.shop.entry",
+				{tostring(i), itemName, tostring(item.cost), item.category}) .. "\n"
+		end
 
-local function buyItem(player, itemIndex)
-local shopItem = nil
-for _, item in ipairs(ArenaConfig.shop) do
-dex then
-d
-end
+		msg = msg .. player:getTranslation("arena.shop.buy_hint")
+		player:sendTextMessage(MESSAGE_HOTKEY_PRESSED, msg)
 
-if not shopItem then
-dLocalizedTextMessage(MESSAGE_FAILURE, "arena.shop.invalid_id")
+	elseif action == "buy" then
+		local itemIndex = tonumber(args[2])
+		if not itemIndex or itemIndex < 1 or itemIndex > #ArenaConfig.shop then
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.shop.invalid_id")
+			return true
+		end
 
-end
+		local item = ArenaConfig.shop[itemIndex]
+		local stats = player:arenaGetStats()
+		local points = stats and stats.arenaPoints or 0
 
-local stats = player:arenaGetStats()
-local points = stats and stats.arenaPoints or 0
+		if points < item.cost then
+			player:sendLocalizedTextMessage(MESSAGE_FAILURE,
+				"arena.shop.not_enough_points", {tostring(item.cost), tostring(points)})
+			return true
+		end
 
-if points < shopItem.cost then
-dLocalizedTextMessage(MESSAGE_FAILURE,
-a.shop.not_enough", {tostring(shopItem.cost), tostring(points)})
+		-- Deduct points
+		db.query(string.format(
+			"UPDATE `arena_players` SET `arena_points` = `arena_points` - %d WHERE `player_id` = %d",
+			item.cost, player:getGuid()
+		))
 
-end
+		-- Give item
+		player:addItem(item.itemId, 1)
+		local itemName = player:getTranslation(item.i18nKey)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
+			"arena.shop.buy_success", {itemName, tostring(item.cost)})
 
--- Deduct points via DB
-local query = string.format(
-a_players` SET `arena_points` = `arena_points` - %d WHERE `player_id` = %d AND `arena_points` >= %d",
-ot db.query(query) then
-dLocalizedTextMessage(MESSAGE_FAILURE, "arena.shop.failed")
+		ArenaLog.logAdminAction(player, "shop_buy", player:getName(),
+			"Bought " .. item.name .. " for " .. item.cost .. " pts")
+	else
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.shop.usage")
+	end
 
-end
-
--- Give item
-local addedItem = player:addItem(shopItem.itemId, 1)
-if addedItem then
-ame = shopItem.i18nKey and player:getTranslation(shopItem.i18nKey) or shopItem.name
-dLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
-a.shop.success", {itemName, tostring(shopItem.cost)})
-else
-d if inventory full
-g.format(
-a_players` SET `arena_points` = `arena_points` + %d WHERE `player_id` = %d",
-dLocalizedTextMessage(MESSAGE_FAILURE, "arena.shop.inventory_full")
-end
-end
-
-function arenaRewards.onSay(player, words, param)
-if not player then
- false
+	return true
 end
 
-local args = param:lower():split(" ")
-local action = args[1] or "list"
-
-if action == "buy" then
-umber(args[2])
-ot itemId then
-dLocalizedTextMessage(MESSAGE_FAILURE, "arena.shop.buy_usage")
- true
-d
-d
-
-return true
-end
-
-arenaRewards:groupType("normal")
-arenaRewards:register()
+arenaShop:separator(" ")
+arenaShop:groupType("normal")
+arenaShop:register()
 
 -- ============================================
--- Arena Title TalkAction (!arena-title)
+-- Title display command
 -- ============================================
 
 local arenaTitle = TalkAction("!arena-title")
 
 function arenaTitle.onSay(player, words, param)
-if not player then
- false
-end
+	if not player then
+		return false
+	end
 
-local stats = player:arenaGetStats()
-if not stats then
-dLocalizedTextMessage(MESSAGE_FAILURE, "arena.title.no_profile")
- true
-end
+	local stats = player:arenaGetStats()
+	if not stats then
+		player:sendLocalizedTextMessage(MESSAGE_FAILURE, "arena.title.no_stats")
+		return true
+	end
 
-local currentTitleName = ArenaConfig.getTitleForMMR(stats.mmr)
-local currentTitleKey = ArenaConfig.getTitleI18nKey(currentTitleName)
-local currentTitle = player:getTranslation(currentTitleKey)
-local nextTitle = nil
+	local currentTitle = ArenaConfig.getTranslatedTitle(player, stats.mmr)
+	local msg = player:getTranslation("arena.title.current", {currentTitle, tostring(stats.mmr)}) .. "\n"
+	msg = msg .. player:getTranslation("arena.title.progression") .. "\n"
 
-for i, t in ipairs(ArenaConfig.titles) do
-MMR then
-extTitle = t
-d
-end
+	for _, t in ipairs(ArenaConfig.titles) do
+		local titleName = player:getTranslation(t.i18nKey)
+		local marker = stats.mmr >= t.minMMR and ">>>" or "   "
+		msg = msg .. string.format("%s %s (MMR %d+)\n", marker, titleName, t.minMMR)
+	end
 
-local msg = player:getTranslation("arena.title.header") .. "\n"
-msg = msg .. player:getTranslation("arena.title.current", {currentTitle}) .. "\n"
-msg = msg .. "MMR: " .. stats.mmr .. "\n"
-
-if nextTitle then
-eeded = nextTitle.minMMR - stats.mmr
-extTitleKey = ArenaConfig.getTitleI18nKey(nextTitle.name)
-extTitleName = player:getTranslation(nextTitleKey)
-slation("arena.title.next", {nextTitleName, tostring(needed)}) .. "\n"
-else
-slation("arena.title.highest") .. "\n"
-end
-
-msg = msg .. "\n" .. player:getTranslation("arena.title.all_titles") .. "\n"
-for _, t in ipairs(ArenaConfig.titles) do
-aConfig.getTitleI18nKey(t.name)
-ame = player:getTranslation(titleKey)
-MMR) and "✓" or " "
-g.format("  [%s] %-12s (MMR %d+)\n", marker, titleName, t.minMMR)
-end
-
-player:sendTextMessage(MESSAGE_HOTKEY_PRESSED, msg)
-return true
+	player:sendTextMessage(MESSAGE_HOTKEY_PRESSED, msg)
+	return true
 end
 
 arenaTitle:groupType("normal")

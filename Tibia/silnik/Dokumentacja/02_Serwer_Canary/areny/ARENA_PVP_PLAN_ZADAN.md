@@ -1,9 +1,10 @@
 # ⚔️ Arena PvP — Dokładny Plan Zadań (krok po kroku)
 
-> **Data:** 2026-02-21  
+> **Data:** 2026-02-21 (aktualizacja: 2026-02-21)  
 > **Bazuje na:** ARENA_SYSTEM_PLAN.md  
-> **Stan obecny:** Istnieją tylko 2 proste skrypty Lua (arena_2x2.lua, arena_10x10.lua) — same teleporty, zero logiki.  
-> **Brakuje:** C++ system, baza danych, protokół sieciowy, matchmaking, NPC, WWW, UI klienta — wszystko od zera.
+> **Stan obecny:** ✅ Fazy 0-5 + Faza 8 + Faza 10 GOTOWE. System działa: baza danych, core C++, matchmaking, protokół sieciowy, pełna warstwa Lua (15 plików), pełne i18n (EN+PL + 55 locale fallback), bezpieczeństwo/anti-cheat/logging.  
+> **Brakuje:** UI klienta (Faza 6), WWW (Faza 7), sezony (Faza 9), testy (Faza 11), deploy (Faza 12).  
+> **Pre-alpha target:** Fazy 11 (testy) + 12 (deploy) = gotowe do wewnętrznych testów.
 
 ---
 
@@ -17,20 +18,20 @@
 
 ## FAZA 0 — PRZYGOTOWANIE PROJEKTU (2-3 dni)
 
-### 0.1 ⬜ Analiza istniejącego kodu serwera
+### 0.1 ✅ Analiza istniejącego kodu serwera
 - Przejrzeć jak działa Market (okno klienta) — będzie wzorcem do UI areny
 - Przeanalizować istniejące systemy: Party, Guild, Combat — na nich oprzemy hooki
 - Zrozumieć flow pakietów klient↔serwer (protocolgame.cpp/hpp)
 - Zidentyfikować wolne opcody do wykorzystania dla areny
 
-### 0.2 ⬜ Zaprojektowanie map areny w edytorze mapy
+### 0.2 ✅ Zaprojektowanie map areny w edytorze mapy
 - Stworzyć min. 3 mapy aren (mała 1v1, średnia 3v3, duża FFA/LMS)
 - Oznaczyć pozycje spawnów (team A, team B, FFA spawny)
 - Dodać strefy: poczekalnia (lobby), arena walki, strefa wyjścia
 - Ustawić barierki/ściany uniemożliwiające ucieczkę
 - Zapisać koordynaty spawn pointów do późniejszej konfiguracji
 
-### 0.3 ⬜ Backup i branch
+### 0.3 ✅ Backup i branch
 - Stworzyć nowy branch git np. `feature/arena-pvp`
 - Backup bazy danych przed zmianami schemy
 
@@ -38,7 +39,7 @@
 
 ## FAZA 1 — BAZA DANYCH (1-2 dni)
 
-### 1.1 ⬜ Utworzenie tabeli `arena_players`
+### 1.1 ✅ Utworzenie tabeli `arena_players`
 **Plik:** `schema.sql` (dodać na końcu) + plik migracji `data/migrations/arena_tables.sql`
 ```sql
 CREATE TABLE IF NOT EXISTS `arena_players` (
@@ -61,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `arena_players` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
 
-### 1.2 ⬜ Utworzenie tabeli `arena_matches`
+### 1.2 ✅ Utworzenie tabeli `arena_matches`
 ```sql
 CREATE TABLE IF NOT EXISTS `arena_matches` (
     `id` INT PRIMARY KEY AUTO_INCREMENT,
@@ -75,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `arena_matches` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
 
-### 1.3 ⬜ Utworzenie tabeli `arena_match_players`
+### 1.3 ✅ Utworzenie tabeli `arena_match_players`
 ```sql
 CREATE TABLE IF NOT EXISTS `arena_match_players` (
     `match_id` INT NOT NULL,
@@ -92,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `arena_match_players` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
 
-### 1.4 ⬜ Utworzenie tabeli `arena_queue`
+### 1.4 ✅ Utworzenie tabeli `arena_queue`
 ```sql
 CREATE TABLE IF NOT EXISTS `arena_queue` (
     `player_id` INT PRIMARY KEY,
@@ -104,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `arena_queue` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
 
-### 1.5 ⬜ Utworzenie tabel sezonów
+### 1.5 ✅ Utworzenie tabel sezonów
 ```sql
 CREATE TABLE IF NOT EXISTS `arena_seasons` (
     `id` INT PRIMARY KEY AUTO_INCREMENT,
@@ -126,7 +127,7 @@ CREATE TABLE IF NOT EXISTS `arena_season_rankings` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
 
-### 1.6 ⬜ Wykonanie migracji na serwerze deweloperskim
+### 1.6 ✅ Wykonanie migracji na serwerze deweloperskim
 - Uruchomić SQL na bazie testowej
 - Sprawdzić czy FK działają poprawnie
 - Przetestować INSERT/SELECT/UPDATE na każdej tabeli
@@ -135,7 +136,7 @@ CREATE TABLE IF NOT EXISTS `arena_season_rankings` (
 
 ## FAZA 2 — CORE C++ SERWERA (1-2 tygodnie)
 
-### 2.1 ⬜ Utworzenie struktury plików C++
+### 2.1 ✅ Utworzenie struktury plików C++
 Stworzyć pliki:
 ```
 src/game/arena/arena_system.hpp
@@ -146,7 +147,7 @@ src/game/arena/arena_match.hpp
 src/game/arena/arena_match.cpp
 ```
 
-### 2.2 ⬜ Klasa `ArenaMatch` — stan pojedynczego meczu
+### 2.2 ✅ Klasa `ArenaMatch` — stan pojedynczego meczu
 ```cpp
 // arena_match.hpp
 enum class ArenaMode : uint8_t {
@@ -181,7 +182,7 @@ public:
 };
 ```
 
-### 2.3 ⬜ Klasa `ArenaSystem` — singleton zarządzający areną
+### 2.3 ✅ Klasa `ArenaSystem` — singleton zarządzający areną
 Odpowiedzialności:
 - Zarządzanie kolejkami (`joinQueue`, `leaveQueue`)
 - Utrzymywanie listy aktywnych meczów
@@ -191,32 +192,32 @@ Odpowiedzialności:
 - Zapis/odczyt z bazy danych
 - Sprawdzanie czy gracz jest w arenie (`isPlayerInArena`)
 
-### 2.4 ⬜ Integracja ArenaSystem z klasą `Game`
+### 2.4 ✅ Integracja ArenaSystem z klasą `Game`
 - Dodać `ArenaSystem` jako member `Game` (lub singleton)
 - Załadować ArenaSystem w `Game::start()`
 - Wywoływać `ArenaSystem::tick()` co 5 sekund z głównej pętli
 - Dodać cleanup w `Game::shutdown()`
 
-### 2.5 ⬜ Hooki do istniejącego systemu walki
+### 2.5 ✅ Hooki do istniejącego systemu walki
 - W `Player::onKilledCreature()` → sprawdzić `ArenaSystem::isPlayerInArena()` → jeśli tak, wywołać `ArenaSystem::onArenaKill()`
 - W `Player::onDeath()` → analogicznie `ArenaSystem::onArenaDeath()`
 - W `Player::logout()` → `ArenaSystem::onArenaLogout()` (gracz przegrywa mecz)
 - Zmodyfikować logikę PvP: w arenie nie tracisz exp, nie dostajesz skulli, nie dropujesz itemów
 
-### 2.6 ⬜ Logika teleportów i przygotowania meczu
+### 2.6 ✅ Logika teleportów i przygotowania meczu
 - Teleportacja graczy na pozycje spawnów areny
 - Odliczanie 5s przed startem (efekty wizualne)
 - Po zakończeniu — teleportacja z powrotem do temple/punktu wejścia
 - Przywrócenie HP/Mana do pełna na starcie meczu
 - Zdjęcie negatywnych stanów (poison, fire, etc.)
 
-### 2.7 ⬜ Zapis wyników do bazy danych
+### 2.7 ✅ Zapis wyników do bazy danych
 - Po zakończeniu meczu → INSERT do `arena_matches`
 - INSERT do `arena_match_players` dla każdego uczestnika
 - UPDATE `arena_players` (mmr, wins/losses, streak, total_damage itd.)
 - Obsługa transakcji SQL (rollback w razie błędu)
 
-### 2.8 ⬜ Aktualizacja CMakeLists.txt
+### 2.8 ✅ Aktualizacja CMakeLists.txt
 - Dodać nowe pliki .cpp/.hpp do buildu
 - Upewnić się że kompilacja przechodzi czysto
 
@@ -224,13 +225,13 @@ Odpowiedzialności:
 
 ## FAZA 3 — MATCHMAKING (3-5 dni)
 
-### 3.1 ⬜ Klasa `ArenaMatchmaking`
+### 3.1 ✅ Klasa `ArenaMatchmaking`
 Odpowiedzialności:
 - Kolejka graczy per tryb (osobna kolejka dla 1v1, 2v2, 3v3 itd.)
 - Algorytm dobierania po MMR
 - Rozszerzanie zakresu szukania z upływem czasu
 
-### 3.2 ⬜ Algorytm MMR
+### 3.2 ✅ Algorytm MMR
 ```
 Formuła: MMR = Base(1000) + Wins×25 - Losses×20 + Streak×5
 Zmiana po meczu:
@@ -240,7 +241,7 @@ Zmiana po meczu:
 K-factor: jeśli różnica MMR duża → mniejsza strata dla słabszego
 ```
 
-### 3.3 ⬜ Rozszerzanie zakresu szukania
+### 3.3 ✅ Rozszerzanie zakresu szukania
 ```
 0-30s:   MMR ±100
 30-60s:  MMR ±200
@@ -250,12 +251,12 @@ K-factor: jeśli różnica MMR duża → mniejsza strata dla słabszego
 - Stan zakresu zapisywany w `arena_queue.expanded_range`
 - Tick co 5s sprawdza i rozszerza zakres
 
-### 3.4 ⬜ Auto-balance drużyn (2v2, 3v3)
+### 3.4 ✅ Auto-balance drużyn (2v2, 3v3)
 - Sortowanie graczy w kolejce po MMR
 - Podział „zygzakiem": 1. gracz → team A, 2. → team B, 3. → team B, 4. → team A
 - Sprawdzenie że jedna drużyna nie ma 2+ graczy tej samej vocation (opcjonalnie)
 
-### 3.5 ⬜ Powiadomienia dla graczy w kolejce
+### 3.5 ✅ Powiadomienia dla graczy w kolejce
 - Wysyłanie komunikatów: „Szukanie przeciwnika... (30s)"
 - „Rozszerzono zakres szukania"
 - „Znaleziono mecz! Przygotuj się..."
@@ -264,7 +265,7 @@ K-factor: jeśli różnica MMR duża → mniejsza strata dla słabszego
 
 ## FAZA 4 — PROTOKÓŁ SIECIOWY (3-5 dni)
 
-### 4.1 ⬜ Zdefiniowanie nowych opcodes
+### 4.1 ✅ Zdefiniowanie nowych opcodes
 W `src/server/network/`:
 ```
 Client → Server:
@@ -284,13 +285,13 @@ Server → Client:
 ```
 **UWAGA:** Sprawdzić które opcody są wolne! Nie kolidować z istniejącymi.
 
-### 4.2 ⬜ Implementacja parsowania pakietów klienta (protocolgame.cpp)
+### 4.2 ✅ Implementacja parsowania pakietów klienta (protocolgame.cpp)
 - `parseArenaOpen()` → odczyt z DB + wysłanie `ARENA_STATS`
 - `parseArenaJoinQueue()` → odczyt mode + wywołanie `ArenaSystem::joinQueue()`
 - `parseArenaLeaveQueue()` → `ArenaSystem::leaveQueue()`
 - `parseArenaRequestRanking()` → query DB + wysłanie `ARENA_RANKING_DATA`
 
-### 4.3 ⬜ Implementacja wysyłania pakietów do klienta
+### 4.3 ✅ Implementacja wysyłania pakietów do klienta
 - `sendArenaStatus()` → informacja o stanie gracza w systemie areny
 - `sendArenaStats()` → statystyki gracza (MMR itd.)
 - `sendArenaMatchFound()` → dane meczu
@@ -298,7 +299,7 @@ Server → Client:
 - `sendArenaMatchUpdate()` → score/czas w trakcie meczu
 - `sendArenaMatchResult()` → podsumowanie meczu
 
-### 4.4 ⬜ Rejestracja handlerów
+### 4.4 ✅ Rejestracja handlerów
 - Dodać nowe case'y w switch opcode w `ProtocolGame::parsePacket()`
 - Powiązać opcodes klienta z funkcjami parsującymi
 
@@ -306,16 +307,16 @@ Server → Client:
 
 ## FAZA 5 — SKRYPTY LUA (1 tydzień)
 
-### 5.1 ⬜ Przebudowa istniejących skryptów arena_pvp
+### 5.1 ✅ Przebudowa istniejących skryptów arena_pvp
 - Przepisać `arena_2x2.lua` i `arena_10x10.lua` aby korzystały z `ArenaSystem`
 - Zamiast prostych teleportów → `ArenaSystem.joinQueue(player, "2v2")`
 
-### 5.2 ⬜ Utworzenie `data/scripts/arena/arena_main.lua`
+### 5.2 ✅ Utworzenie `data/scripts/arena/arena_main.lua`
 - Rejestracja eventów (GlobalEvent dla ticka matchmakingu)
 - Konfiguracja map, pozycji spawnów, trybów
 - Komenda `/arena` — otwieranie menu areny (tymczasowo zanim będzie UI klienta)
 
-### 5.3 ⬜ Skrypty trybów w `data/scripts/arena/modes/`
+### 5.3 ✅ Skrypty trybów w `data/scripts/arena/modes/`
 Każdy plik definiuje reguły trybu:
 - `duel_1v1.lua` — warunek wygranej: zabij przeciwnika (lub timer → HP%)
 - `team_2v2.lua` / `team_3v3.lua` — warunek: eliminacja całego teamu
@@ -324,14 +325,14 @@ Każdy plik definiuje reguły trybu:
 - `ctf.lua` — zdobądź i przynieś flagę (wymaga specjalnej mapy z flagami)
 - `koth.lua` — utrzymaj punkt centralny najdłużej
 
-### 5.4 ⬜ NPC `arena_master.lua`
+### 5.4 ✅ NPC `arena_master.lua`
 - Rozmowa o systemie areny
 - Sprawdzenie statystyk gracza
 - Pokazanie Top 10 rankingu
 - Wejście do kolejki przez dialog NPC (alternatywa dla UI klienta)
 - Sklep areny (wydawanie Arena Points na nagrody)
 
-### 5.5 ⬜ Lua bindings — eksport funkcji C++ do Lua
+### 5.5 ✅ Lua bindings — eksport funkcji C++ do Lua
 Dodać w `src/lua/functions/`:
 ```lua
 -- Funkcje dostępne z Lua:
@@ -343,7 +344,7 @@ Arena.isPlayerInArena(player) -- bool
 Arena.isPlayerInQueue(player) -- bool
 ```
 
-### 5.6 ⬜ System nagród w Lua
+### 5.6 ✅ System nagród w Lua
 - `arena_rewards.lua` — tabela nagród per wynik
 - Arena Points jako storage value gracza
 - Sklep: wymiana Arena Points na outfity, mounty, tytuły, dekoracje
@@ -435,25 +436,34 @@ html_copy/arena/
 
 ---
 
-## FAZA 8 — BEZPIECZEŃSTWO I ANTI-CHEAT (2-3 dni)
+## FAZA 8 — BEZPIECZEŃSTWO I ANTI-CHEAT (2-3 dni) ✅ GOTOWE
 
-### 8.1 ⬜ Reguły w trakcie meczu areny
-- Blokada teleportów (spelle, itemy) w trakcie meczu
-- Blokada logoutu (force-lose po 30s AFK)
-- Blokada używania itemów spoza areny (np. training weapons)
-- Blokada zapraszania do party graczy spoza meczu
-- Gracz nie traci exp, przedmiotów, nie dostaje skull
+### 8.1 ✅ Reguły w trakcie meczu areny
+- ✅ Blokada teleportów (spelle: Levitate, Magic Rope, Find Person + itemy teleportacyjne)
+- ✅ Blokada logoutu (ostrzeżenie + force-lose po 60s AFK, reset przy akcji)
+- ✅ Blokada używania itemów spoza areny (exercise weapons, teleport items)
+- ✅ Blokada zapraszania do party graczy spoza meczu
+- ✅ Gracz nie traci exp, przedmiotów, blokada skulli (return 0 ticks)
+- Plik: `data/scripts/arena/arena_security.lua` (226 linii)
+- 7 kluczy i18n: arena.security.*
 
-### 8.2 ⬜ Anti-boost / Anti-wintrading
-- Śledzenie powtarzających się par graczy (max 3 mecze/dzień z tym samym przeciwnikiem dają MMR)
-- Dzienne limity zysku MMR (np. max +200/dzień)
-- Walidacja: minimalny czas meczu (>30s) żeby mecz się liczył
-- Flagowanie podejrzanych wzorców (np. instant surrender)
+### 8.2 ✅ Anti-boost / Anti-wintrading
+- ✅ Śledzenie powtarzających się par graczy (max 3 mecze/dzień z tym samym przeciwnikiem dają MMR)
+- ✅ Dzienne limity zysku MMR (max +200/dzień, konfigurowalne w config.lua)
+- ✅ Walidacja: minimalny czas meczu (>30s) żeby mecz się liczył
+- ✅ Flagowanie podejrzanych wzorców + alert GM po przekroczeniu progu
+- ✅ Automatyczny cleanup danych co godzinę (GlobalEvent)
+- Plik: `data/scripts/arena/arena_anticheat.lua` (239 linii)
+- 4 klucze i18n: arena.anticheat.*
 
-### 8.3 ⬜ Logowanie
-- Plik `logs/arena.log` — każdy mecz, wynik, zmiana MMR
-- Metryki: średni czas matchmakingu, średni czas meczu
-- Alerty GM na podejrzane działania
+### 8.3 ✅ Logowanie
+- ✅ Plik `logs/arena.log` — strukturowane logi z timestampem i poziomami (INFO/WARN/ERROR/SECURITY/METRIC)
+- ✅ Logi: matchCreated, matchResult, queueJoin/Leave, disconnect, security, blockedAction, AFK
+- ✅ Metryki: co 5 min zapis aktywnych meczy, graczy w kolejce, łącznych meczy
+- ✅ Alerty GM na podejrzane działania (via ArenaAntiCheat.flagSuspicious)
+- ✅ Logowanie akcji adminów (ArenaLog.logAdminAction)
+- Plik: `data/scripts/arena/arena_logging.lua` (212 linii)
+- 11 wpisów konfiguracyjnych w config.lua (arenaSystemEnabled, arenaMinLevel, etc.)
 
 ---
 
@@ -480,20 +490,24 @@ html_copy/arena/
 
 ---
 
-## FAZA 10 — i18n / TŁUMACZENIA (1-2 dni)
+## FAZA 10 — i18n / TŁUMACZENIA (1-2 dni) ✅ GOTOWE
 
-### 10.1 ⬜ Utworzenie pliku `i18n/en/arena.json`
-Klucze do przetłumaczenia:
-- Nazwy trybów, opisy, komunikaty matchmakingu
-- Komunikaty w trakcie meczu (First Blood, Victory, Defeat itd.)
-- UI klienta (Join Queue, Leave Queue, Rankings, itd.)
-- NPC dialogi
-- Komunikaty błędów
+### 10.1 ✅ Utworzenie pliku `i18n/en/arena.json`
+- 181 kluczy tłumaczeń (commit: d1468edc4)
+- Klucze: tryby, opisy, matchmaking, mecz (First Blood, Victory, Defeat), UI, NPC dialogi, błędy
+- Konwencja kluczy: `arena.<kontekst>.<akcja>`, parametry: `{0}`, `{1}`
 
-### 10.2 ⬜ Tłumaczenie na polski (`i18n/pl/arena.json`)
+### 10.2 ✅ Tłumaczenie na polski (`i18n/pl/arena.json`)
+- 181 kluczy z pełnymi polskimi tłumaczeniami
+- Skopiowano EN fallback do 55 pozostałych lokalizacji
 
-### 10.3 ⬜ Podpięcie kluczy i18n w kodzie Lua i C++
-- Zamiana hardcoded stringów na `player:sayLocalized("arena.xxx")`
+### 10.3 ✅ Podpięcie kluczy i18n w kodzie Lua
+- Wszystkie 7 skryptów arena Lua przepisane na i18n:
+  - `player:sendLocalizedTextMessage()` — wiadomości do gracza
+  - `player:getTranslation()` — dynamiczne stringi (ranking, formatowanie)
+  - `NPC_LIB.i18n.npcSay()` — dialogi NPC Arena Master
+  - `NPC_LIB.i18n.setLocalizedMessage()` — greet/farewell/walkaway NPC
+- Nowe helpery w ArenaConfig: `getTitleI18nKey()`, `getTranslatedTitle()`, `formatRecord(player, stats)`
 
 ---
 
@@ -564,7 +578,7 @@ Klucze do przetłumaczenia:
 | 5 | Skrypty Lua | 5-7 dni |
 | 6 | UI klienta | 7-14 dni |
 | 7 | WWW | 3-5 dni |
-| 8 | Bezpieczeństwo | 2-3 dni |
+| 8 | Bezpieczeństwo ✅ | 2-3 dni |
 | 9 | Sezony i nagrody | 2-3 dni |
 | 10 | i18n | 1-2 dni |
 | 11 | Testy | 3-5 dni |

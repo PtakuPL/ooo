@@ -9,199 +9,198 @@ ArenaPvP = {}
 -- Pre-match validation (called before C++ creates match)
 -- ============================================
 
---- Validate all players in a match group before starting
----@param players table Array of player objects
----@param mode number ArenaMode enum
----@return boolean, string?
 function ArenaPvP.validateMatchGroup(players, mode)
-for _, player in ipairs(players) do
-Join, reason = ArenaConfig.canPlayerJoin(player)
-ot canJoin then
- false, player:getName() .. ": " .. reason
-d
-end
-return true
+	for _, player in ipairs(players) do
+		local canJoin, reason = ArenaConfig.canPlayerJoin(player)
+		if not canJoin then
+			return false, player:getName() .. ": " .. reason
+		end
+	end
+	return true
 end
 
 -- ============================================
 -- Post-match processing
 -- ============================================
 
---- Process rewards after a match ends
---- Called from C++ via Lua callback or directly
----@param matchData table {matchId, mode, winnerTeam, players: [{id, team, kills, deaths, damage, healing}]}
 function ArenaPvP.processMatchRewards(matchData)
-if not matchData or not matchData.players then
+	if not matchData or not matchData.players then
+		return
+	end
 
-end
+	-- Anti-cheat validation
+	if ArenaAntiCheat then
+		local valid, reason = ArenaAntiCheat.validateMatchResult(matchData)
+		if not valid then
+			for _, pData in ipairs(matchData.players) do
+				local player = Player(pData.id)
+				if player then
+					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, reason)
+				end
+			end
+			ArenaLog.logMatchResult(matchData.matchId, matchData.mode, 0, matchData.duration or 0, matchData.players)
+			return
+		end
+	end
 
-local maxKills = 0
-local maxDamage = 0
-local mvpId = nil
+	local maxKills = 0
+	local maxDamage = 0
+	local mvpId = nil
 
--- Find MVP (most kills, tiebreak by damage)
-for _, pData in ipairs(matchData.players) do
-maxKills and pData.damage > maxDamage) then
-d
-end
+	-- Find MVP (most kills, tiebreak by damage)
+	for _, pData in ipairs(matchData.players) do
+		if pData.kills > maxKills or (pData.kills == maxKills and pData.damage > maxDamage) then
+			maxKills = pData.kills
+			maxDamage = pData.damage
+			mvpId = pData.id
+		end
+	end
 
--- Award bonus points
-for _, pData in ipairs(matchData.players) do
-er then
-usPoints = 0
-usParts = {}
+	-- Award bonus points
+	for _, pData in ipairs(matchData.players) do
+		local player = Player(pData.id)
+		if player then
+			local bonusPoints = 0
+			local bonusParts = {}
 
-us
-d #matchData.players > 2 then
-usPoints = bonusPoints + ArenaConfig.rewards.mvp
-sert(bonusParts, player:getTranslation("arena.reward.mvp", {tostring(ArenaConfig.rewards.mvp)}))
-d
+			-- MVP bonus
+			if pData.id == mvpId and #matchData.players > 2 then
+				bonusPoints = bonusPoints + ArenaConfig.rewards.mvp
+				table.insert(bonusParts, player:getTranslation("arena.reward.mvp", {tostring(ArenaConfig.rewards.mvp)}))
+			end
 
-g spree bonus (3+ kills)
+			-- Killing spree bonus (3+ kills)
+			if pData.kills >= 3 then
+				local spreeBonus = (pData.kills - 2) * ArenaConfig.rewards.killingSpree
+				bonusPoints = bonusPoints + spreeBonus
+				table.insert(bonusParts, player:getTranslation("arena.reward.spree", {tostring(spreeBonus)}))
+			end
 
-us = (pData.kills - 2) * ArenaConfig.rewards.killingSpree
-usPoints = bonusPoints + spreeBonus
-sert(bonusParts, player:getTranslation("arena.reward.spree", {tostring(spreeBonus)}))
-d
+			-- Apply bonus points
+			if bonusPoints > 0 then
+				db.query(string.format(
+					"UPDATE \`arena_players\` SET \`arena_points\` = \`arena_points\` + %d WHERE \`player_id\` = %d",
+					bonusPoints, pData.id
+				))
+				local bonusMsg = table.concat(bonusParts, " ")
+				player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
+					"arena.reward.bonus", {bonusMsg, tostring(bonusPoints)})
+			end
 
-us points
-usPoints > 0 then
-g.format(
-a_players` SET `arena_points` = `arena_points` + %d WHERE `player_id` = %d",
-usPoints, pData.id
-usMsg = table.concat(bonusParts, " ")
-dLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
-a.reward.bonus", {bonusMsg, tostring(bonusPoints)})
-d
+			player:setStorageValue(ArenaConfig.storage.lastArenaMatch, os.time())
+		end
+	end
 
-aConfig.storage.lastArenaMatch, os.time())
-d
-end
+	-- Log match result
+	ArenaLog.logMatchResult(matchData.matchId, matchData.mode, matchData.winnerTeam,
+		matchData.duration or 0, matchData.players)
 end
 
 -- ============================================
 -- Announcements
 -- ============================================
 
---- Broadcast an arena event to all online players (already translated message)
----@param message string
 function ArenaPvP.broadcast(message)
-for _, player in ipairs(Game.getPlayers()) do
-dTextMessage(MESSAGE_EVENT_ADVANCE, message)
-end
+	for _, player in ipairs(Game.getPlayers()) do
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
+	end
 end
 
---- Broadcast a localized arena event to all online players
----@param key string i18n key
----@param args table? arguments
 function ArenaPvP.broadcastLocalized(key, args)
-for _, player in ipairs(Game.getPlayers()) do
-dLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, key, args)
-end
+	for _, player in ipairs(Game.getPlayers()) do
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, key, args)
+	end
 end
 
---- Announce match result
----@param mode number
----@param winnerNames table
----@param loserNames table
 function ArenaPvP.announceResult(mode, winnerNames, loserNames)
--- Use first player to resolve mode name (broadcast translated per-player)
-local modeI18nKeys = {
-a.MODE_1V1] = "arena.mode.1v1",
-a.MODE_2V2] = "arena.mode.2v2",
-a.MODE_3V3] = "arena.mode.3v3",
-a.MODE_FFA] = "arena.mode.ffa",
-a.MODE_CTF] = "arena.mode.ctf",
-a.MODE_KOTH] = "arena.mode.koth",
-a.MODE_LMS] = "arena.mode.lms",
-a.MODE_TOURNAMENT] = "arena.mode.tournament",
-}
+	local modeI18nKeys = {
+		[Arena.MODE_1V1] = "arena.mode.1v1",
+		[Arena.MODE_2V2] = "arena.mode.2v2",
+		[Arena.MODE_3V3] = "arena.mode.3v3",
+		[Arena.MODE_FFA] = "arena.mode.ffa",
+		[Arena.MODE_CTF] = "arena.mode.ctf",
+		[Arena.MODE_KOTH] = "arena.mode.koth",
+		[Arena.MODE_LMS] = "arena.mode.lms",
+		[Arena.MODE_TOURNAMENT] = "arena.mode.tournament",
+	}
 
-local modeKey = modeI18nKeys[mode] or "arena.mode.1v1"
-local winners = table.concat(winnerNames, ", ")
-local losers = table.concat(loserNames, ", ")
+	local modeKey = modeI18nKeys[mode] or "arena.mode.1v1"
+	local winners = table.concat(winnerNames, ", ")
+	local losers = table.concat(loserNames, ", ")
 
-for _, player in ipairs(Game.getPlayers()) do
-ame = player:getTranslation(modeKey)
-dLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
-a.result.announcement", {modeName, winners, losers})
+	for _, player in ipairs(Game.getPlayers()) do
+		local modeName = player:getTranslation(modeKey)
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
+			"arena.result.announcement", {modeName, winners, losers})
+	end
 end
-end
 
---- Announce when a player achieves a new title
----@param player Player
----@param oldMMR number
----@param newMMR number
 function ArenaPvP.checkTitlePromotion(player, oldMMR, newMMR)
-local oldTitle = ArenaConfig.getTitleForMMR(oldMMR)
-local newTitle = ArenaConfig.getTitleForMMR(newMMR)
+	local oldTitle = ArenaConfig.getTitleForMMR(oldMMR)
+	local newTitle = ArenaConfig.getTitleForMMR(newMMR)
 
-if oldTitle ~= newTitle then
- key for the new title
-aConfig.getTitleI18nKey(newTitle)
-slatedTitle = player:getTranslation(titleKey)
+	if oldTitle ~= newTitle then
+		local titleKey = ArenaConfig.getTitleI18nKey(newTitle)
+		local translatedTitle = player:getTranslation(titleKey)
 
-dLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
-a.title.promotion", {translatedTitle})
+		player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
+			"arena.title.promotion", {translatedTitle})
 
-dex = 0
- ipairs(ArenaConfig.titles) do
-ame == newTitle then
-dex = i
-d
-d
-aConfig.storage.arenaTitle, titleIndex)
+		local titleIndex = 0
+		for i, t in ipairs(ArenaConfig.titles) do
+			if t.name == newTitle then
+				titleIndex = i
+			end
+		end
+		player:setStorageValue(ArenaConfig.storage.arenaTitle, titleIndex)
 
- for high titles (per-player translated)
-ewMMR >= 1800 then
- ipairs(Game.getPlayers()) do
-slation(titleKey)
-dLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
-a.title.broadcast", {player:getName(), tTitle, tostring(newMMR)})
-d
-d
-end
+		-- Broadcast for high titles
+		if newMMR >= 1800 then
+			for _, p in ipairs(Game.getPlayers()) do
+				local tTitle = p:getTranslation(titleKey)
+				p:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE,
+					"arena.title.broadcast", {player:getName(), tTitle, tostring(newMMR)})
+			end
+		end
+	end
 end
 
 -- ============================================
 -- Utility
 -- ============================================
 
---- Get arena queue summary for display (for a specific player's language)
----@param player Player
----@return string
 function ArenaPvP.getQueueSummary(player)
-local modes = {
-a.MODE_1V1, Arena.MODE_2V2, Arena.MODE_3V3,
-a.MODE_FFA, Arena.MODE_LMS,
-}
+	local modes = {
+		Arena.MODE_1V1, Arena.MODE_2V2, Arena.MODE_3V3,
+		Arena.MODE_FFA, Arena.MODE_LMS,
+	}
 
-local modeI18nKeys = {
-a.MODE_1V1] = "arena.mode.1v1",
-a.MODE_2V2] = "arena.mode.2v2",
-a.MODE_3V3] = "arena.mode.3v3",
-a.MODE_FFA] = "arena.mode.ffa",
-a.MODE_LMS] = "arena.mode.lms",
-}
+	local modeI18nKeys = {
+		[Arena.MODE_1V1] = "arena.mode.1v1",
+		[Arena.MODE_2V2] = "arena.mode.2v2",
+		[Arena.MODE_3V3] = "arena.mode.3v3",
+		[Arena.MODE_FFA] = "arena.mode.ffa",
+		[Arena.MODE_LMS] = "arena.mode.lms",
+	}
 
-local lines = {}
-local totalQueue = 0
-for _, mode in ipairs(modes) do
-t = Arena.getQueueSize(mode)
-ueue + count
-t > 0 then
-ame = player:getTranslation(modeI18nKeys[mode])
-sert(lines, string.format("  %s: %d", modeName, count))
-d
-end
+	local lines = {}
+	local totalQueue = 0
+	for _, mode in ipairs(modes) do
+		local count = Arena.getQueueSize(mode)
+		totalQueue = totalQueue + count
+		if count > 0 then
+			local modeName = player:getTranslation(modeI18nKeys[mode])
+			table.insert(lines, string.format("  %s: %d", modeName, count))
+		end
+	end
 
-local activeMatches = Arena.getActiveMatchCount()
-local msg = player:getTranslation("arena.queue.summary", {tostring(totalQueue), tostring(activeMatches)}) .. "\n"
-if #lines > 0 then
-cat(lines, "\n")
-else
-slation("arena.queue.empty")
-end
+	local activeMatches = Arena.getActiveMatchCount()
+	local msg = player:getTranslation("arena.queue.summary", {tostring(totalQueue), tostring(activeMatches)}) .. "\n"
+	if #lines > 0 then
+		msg = msg .. table.concat(lines, "\n")
+	else
+		msg = msg .. player:getTranslation("arena.queue.empty")
+	end
 
-return msg
+	return msg
 end

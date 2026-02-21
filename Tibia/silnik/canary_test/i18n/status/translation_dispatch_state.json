@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-21T00:13:32.769901Z",
-  "cycle_counter": 6732,
-  "last_target_key": "pl:php.json",
-  "last_pending_total": 6,
+  "timestamp": "2026-02-21T00:14:40.053995Z",
+  "cycle_counter": 6735,
+  "last_target_key": "es:chatchannels.json",
+  "last_pending_total": 1,
   "last_tier": 1,
   "last_cat_priority": 9,
   "candidates_count": 179,
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 24,
+  "cache_cycle": 25,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -221,8 +221,8 @@
       "ru": 50.51,
       "ro": 43.96,
       "it": 52.89,
-      "sr": 45.52,
-      "sv": 29.35
+      "sr": 45.58,
+      "sv": 29.39
     }
   }
 }

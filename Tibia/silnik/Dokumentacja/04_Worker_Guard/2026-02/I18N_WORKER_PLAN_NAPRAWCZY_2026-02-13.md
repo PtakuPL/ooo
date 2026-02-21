@@ -185,6 +185,29 @@ Jeśli po restarcie dalej występują zacięcia hosta:
 - heartbeat pozostaje świeży min. 2 min,
 - wpis incydentu trafia do tej dokumentacji (czas, objawy, log clues, zastosowany rollback).
 
+### Uzupełnienie 2026-02-21 11:55 UTC — domknięcie dokumentacji operacyjnej + naprawa sekcji „Ostatnie 10-20 kluczy”
+
+Wykonane:
+- ✅ Dodano osobny dokument operacyjny systemu pracy tłumaczeń:
+  - `Dokumentacja/04_Worker_Guard/2026-02/I18N_WORKER_SYSTEM_PRACY_TRANSLACJE_2026-02-21.md`
+  - zakres: kontrakt runtime, SOP dzienny, KPI, zasady zmian, runbook freeze, bieżący stan.
+- ✅ Naprawiono problem sekcji `### 📝 Ostatnie 10-20 przetłumaczonych kluczy` w `I18N_STATUS.md`:
+  - generator statusu filtruje wpisy do aktywnej listy `langs` z `guardian_profile.json`,
+  - generator filtruje wpisy do świeżego okna czasowego (`STATUS_RECENT_KEYS_LOOKBACK_HOURS`, domyślnie 6h),
+  - efekt: sekcja nie „wisi” na historycznych all-langs i pokazuje bieżące klucze dla trybu 7 języków.
+- ✅ Walidacja po fixie:
+  - sekcja recent pokazuje wyłącznie języki: `ES, IT, PL, RO, RU, SR, SV`,
+  - brak domieszki języków spoza aktywnego profilu,
+  - dane `translation_recent_report.jsonl` są świeże i niepuste.
+
+Stan runtime po wdrożeniu:
+- ✅ `Guardian/Statusd/Worker = RUNNING` (sprawdzenie operatorskie po aktualizacji dokumentacji),
+- ✅ heartbeat i status wróciły do trybu live.
+
+Uwagi:
+- Ten fix nie zwiększa obciążenia hosta — porządkuje tylko render sekcji recent.
+- Ryzyko freeze WSL/VS Code pozostaje monitorowane zadaniami `WQ-HARD-50/51`.
+
 Wybrane do realizacji pełne zadania:
 - **Przywrócić stabilną pracę workera po `NameError: TRANSLATION_OVERRIDES`**
 - **Domknąć kontrakt manual override dla tłumaczeń (priorytet nad TM/GT)**

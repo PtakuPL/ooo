@@ -1,53 +1,131 @@
 {
-  "timestamp": "2026-02-21T10:56:43.613743Z",
-  "language": "es",
+  "timestamp": "2026-02-21T10:59:08.486417Z",
+  "language": "pl",
   "json_file": "npc.json",
-  "translated": 7,
+  "translated": 30,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
+      "key": "npc.bozo.stdmod_93",
+      "en": "npc.bozo.mission_13_t1",
+      "translated": "npc.bozo.mission_13_t1",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "npc.brewster.stdmod_32",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "npc.brodrosch.stdmod_3",
+      "en": "Well, you might be just the hero they need there. To tell you the truth, some our most reliable ore mines have started to run low. ... \\z\n\tThis is why we developed new steamship technologies to be able to further explore and cartograph the great subterraneous rivers. Our brothers have established a base on a continent far, far away. ... \\z\n\tWe call that the far, far away base. But since it will hopefully become a flourishing mine one day, most of us started to call it {Farmine}. The dwarfs there could really use some help right now.",
+      "translated": "Cóż, możesz być właśnie bohaterem, którego tam potrzebują. Prawdę mówiąc, część naszych najbardziej niezawodnych kopalń rudy zaczęła się wyczerpywać... \\z Dlatego rozwinęliśmy nowe technologie parowców, by móc dalej badać i kartografować wielkie podziemne rzeki. Nasi bracia założyli bazę na kontynencie bardzo, bardzo daleko stąd... \\z Nazywamy ją bazą bardzo, bardzo daleko. Ale ponieważ mamy nadzieję, że pewnego dnia stanie się kwitnącą kopalnią, większość z nas zaczęła nazywać ją {Farmine}. Krasnoludy na miejscu naprawdę potrzebują teraz pomocy.",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "npc.captain_dreadnought.stdmod_21",
+      "en": " .. towns[defaultTown].name ..  \\z\n\t .. towns[defaultTown].name .. ",
+      "translated": ".. miasto[defaultTown].nazwa.. \\z.. miasto[defaultTown].nazwa.. ",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
+      "key": "npc.cedrik.stdmod_25",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
+      "key": "npc.ferus.stdmod_25",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "npc.gnomegica.voice_2",
+      "en": "Laaa Laaa LaLa Laa Laaa!",
+      "translated": "Laa la la la la la la la!",
+      "source": "tm"
+    },
+    {
+      "key": "npc.gurbasch.stdmod_3",
+      "en": "Well, you might be just the hero they need there. To tell you the truth, some our most reliable ore mines have started to run low. ... \\z\n\tThis is why we developed new steamship technologies to be able to further explore and cartograph the great subterraneous rivers. Our brothers have established a base on a continent far, far away. ... \\z\n\tWe call that the far, far away base. But since it will hopefully become a flourishing mine one day, most of us started to call it {Farmine}. The dwarfs there could really use some help right now.",
+      "translated": "Cóż, możesz być właśnie bohaterem, którego tam potrzebują. Prawdę mówiąc, część naszych najbardziej niezawodnych kopalń rudy zaczęła się wyczerpywać... \\z Dlatego rozwinęliśmy nowe technologie parowców, by móc dalej badać i kartografować wielkie podziemne rzeki. Nasi bracia założyli bazę na kontynencie bardzo, bardzo daleko stąd... \\z Nazywamy ją bazą bardzo, bardzo daleko. Ale ponieważ mamy nadzieję, że pewnego dnia stanie się kwitnącą kopalnią, większość z nas zaczęła nazywać ją {Farmine}. Krasnoludy na miejscu naprawdę potrzebują teraz pomocy.",
+      "source": "tm"
+    },
+    {
+      "key": "npc.iptar-sin.stdmod_2",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+      "source": "tm"
+    },
+    {
+      "key": "npc.isimov.stdmod_32",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+      "source": "tm"
+    },
+    {
+      "key": "npc.kasmir.stdmod_32",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+      "source": "tm"
+    },
+    {
+      "key": "npc.kjesse.stdmod_25",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+      "source": "tm"
+    },
+    {
+      "key": "npc.lorietta.stdmod_25",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+      "source": "tm"
+    },
+    {
+      "key": "npc.maealil.stdmod_34",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+      "source": "tm"
+    },
+    {
+      "key": "npc.ninev.stdmod_33",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+      "source": "tm"
+    },
+    {
+      "key": "npc.prezil.stdmod_25",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+      "source": "tm"
+    },
+    {
+      "key": "npc.quentin.stdmod_33",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+      "source": "tm"
+    },
+    {
+      "key": "npc.rahkem.stdmod_33",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+      "source": "tm"
+    },
+    {
+      "key": "npc.rock_with_a_soft_spot.stdmod_25",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
+      "source": "tm"
+    },
+    {
+      "key": "npc.tyrias.stdmod_32",
+      "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
+      "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?",
       "source": "tm"
     }
   ]

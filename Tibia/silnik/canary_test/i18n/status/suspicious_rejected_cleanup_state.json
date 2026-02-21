@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T10:56:43.514401Z",
-  "last_cycle": 1,
+  "timestamp": "2026-02-21T10:59:08.376651Z",
+  "last_cycle": 2,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [],
@@ -692,7 +692,22 @@
     "pl|php.json": [],
     "es|talkactions.json": [],
     "pl|talkactions.json": [],
-    "es|items.json": [],
+    "es|items.json": [
+      "item.176.desc",
+      "item.17669.name",
+      "item.17670.desc",
+      "item.17670.name",
+      "item.17676.name",
+      "item.177.desc",
+      "item.178.desc",
+      "item.17813.name",
+      "item.17822.name",
+      "item.17826.name",
+      "item.21393.desc",
+      "item.21875.name",
+      "item.31709.name",
+      "item.32726.name"
+    ],
     "pl|monsters.json": [
       "monster.chakoya_tribewarden.voice_2",
       "monster.colerian_the_barbarian.desc",
@@ -1018,8 +1033,41 @@
       "system.trade.sold",
       "system.venture.decay"
     ],
-    "pl|items.json": [],
-    "pl|npc.json": [],
+    "pl|items.json": [
+      "item.31576.name"
+    ],
+    "pl|npc.json": [
+      "npc.a_bearded_woman.stdmod_1",
+      "npc.a_bearded_woman.stdmod_2",
+      "npc.a_bearded_woman.stdmod_3",
+      "npc.a_bearded_woman.stdmod_6",
+      "npc.alia.stdmod_25",
+      "npc.alkestios.stdmod_7",
+      "npc.amanda.stdmod_35",
+      "npc.azalea.stdmod_25",
+      "npc.bozo.stdmod_116",
+      "npc.bozo.stdmod_92",
+      "npc.bozo.stdmod_93",
+      "npc.brewster.stdmod_32",
+      "npc.brodrosch.stdmod_3",
+      "npc.captain_dreadnought.stdmod_21",
+      "npc.cedrik.stdmod_25",
+      "npc.ferus.stdmod_25",
+      "npc.gnomegica.voice_2",
+      "npc.gurbasch.stdmod_3",
+      "npc.iptar-sin.stdmod_2",
+      "npc.isimov.stdmod_32",
+      "npc.kasmir.stdmod_32",
+      "npc.kjesse.stdmod_25",
+      "npc.lorietta.stdmod_25",
+      "npc.maealil.stdmod_34",
+      "npc.ninev.stdmod_33",
+      "npc.prezil.stdmod_25",
+      "npc.quentin.stdmod_33",
+      "npc.rahkem.stdmod_33",
+      "npc.rock_with_a_soft_spot.stdmod_25",
+      "npc.tyrias.stdmod_32"
+    ],
     "it|achievements.json": [
       "achievement.170.name",
       "achievement.246.name"

@@ -27329,19 +27329,19 @@
   },
   "item.176.desc": {
     "src_hash": "41c0e4e4b2edb81e44b508f2feb77f25",
-    "text": "Dice 'Roses are red, violets are blue, I love blood and carnage...' No, no, este es un poema de guerra.",
+    "text": "Dice 'Las rosas son rojas, las violetas son azules, amo la sangre y la matanza...' No, no, este es un poema de guerra.",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T19:37:47.465447Z"
+    "updated_at": "2026-02-21T10:57:54.846031Z"
   },
   "item.178.desc": {
     "src_hash": "90eaf721671373e57925bcc9c1a51369",
-    "text": "Dice 'Roses are red, violets are blue, sugar is sweet, there's barro en mi zapato.' Lo arruinaste",
+    "text": "Dice: \"Las rosas son rojas, las violetas son azules, el azúcar es dulce, hay barro en mi zapato\". Lo arruinaste",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T19:37:47.466124Z"
+    "updated_at": "2026-02-21T10:58:05.031097Z"
   },
   "item.179.desc": {
     "src_hash": "64b6420c1293bd6f68fb88c6489bb11b",
@@ -155406,5 +155406,69 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T10:20:20.413035Z"
+  },
+  "item.17669.name": {
+    "src_hash": "bc487559717bc4fbc0793662812554b5",
+    "text": "guardia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:58:00.978458Z"
+  },
+  "item.17670.desc": {
+    "src_hash": "8ddedd7b9bb34982ddcf8b8f8029bfab",
+    "text": "Está vacío. El primer olor que buscas es la baba de caracol especial.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:58:00.979233Z"
+  },
+  "item.17670.name": {
+    "src_hash": "c343f0c457c8ab3977ed85fbe7334d6f",
+    "text": "recolector de perfumes",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:58:00.979631Z"
+  },
+  "item.17676.name": {
+    "src_hash": "b66f106c7094f950ebf337a4d53a3a08",
+    "text": "martillo de tronco",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:58:00.979936Z"
+  },
+  "item.177.desc": {
+    "src_hash": "69717f31895377cbedaa1fdec2529df5",
+    "text": "Dice 'Las rosas son rojas, las violetas son azules, el azúcar es dulce...' Muy poético, ahora la rima final.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:58:00.980816Z"
+  },
+  "item.17813.name": {
+    "src_hash": "7419a5113d35606abfd3747c22005fab",
+    "text": "salvavidas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:58:05.032576Z"
+  },
+  "item.17822.name": {
+    "src_hash": "b97303bead96cd16f3c989b5a5f9148c",
+    "text": "musgo de pantano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:58:05.032936Z"
+  },
+  "item.17826.name": {
+    "src_hash": "e059fbe4f8ca982d704ce5aaab48aea8",
+    "text": "pico de basher perdido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T10:58:07.260417Z"
   }
 }

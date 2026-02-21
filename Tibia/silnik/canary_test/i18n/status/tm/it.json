@@ -84182,5 +84182,141 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-02-21T01:56:13.174324Z"
+  },
+  "data.otservbr.global.npc.luna.L63.1334": {
+    "src_hash": "486c0a6c55707c57e4de1b70eef2c576",
+    "text": "Addio, viaggiatore.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.221351Z"
+  },
+  "data.otservbr.global.npc.luna.L64.1335": {
+    "src_hash": "cf47d37dde08885f2da0e9dccdae7075",
+    "text": "Naturalmente, basta sfogliare la mia merce.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.222184Z"
+  },
+  "data.otservbr.global.npc.lynda.L307.1507": {
+    "src_hash": "41a97395a5729feeab77ee7495736313",
+    "text": "Benvenuto nel nome degli dei, pellegrino |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.223139Z"
+  },
+  "data.otservbr.global.npc.lynda.L308.1508": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Fai attenzione durante i tuoi viaggi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.223830Z"
+  },
+  "data.otservbr.global.npc.lynda.L309.1509": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Fai attenzione durante i tuoi viaggi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.224974Z"
+  },
+  "data.otservbr.global.npc.maelyrra.L176.895": {
+    "src_hash": "c70e4d8c31291a7d72dde8f84d33f733",
+    "text": "Le benedizioni della natura! Benvenuti nella terra dei sogni.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.227667Z"
+  },
+  "data.otservbr.global.npc.maeryn.L178.1255": {
+    "src_hash": "dca678c81c221d0b4c21e91f9b478943",
+    "text": "Saluti, visitatore. Mi chiedo cosa potrebbe portarti in questo posto {dangerous}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.229585Z"
+  },
+  "data.otservbr.global.npc.malor.L193.131": {
+    "src_hash": "1b0806bb328b6b43658826b221d451fa",
+    "text": "Addio, umano. Quando avrò preso il posto che mi spetta, ricorderò coloro che mi hanno servito bene. Anche se sono solo umani.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.232100Z"
+  },
+  "data.otservbr.global.npc.malor.L194.132": {
+    "src_hash": "7fd76f3ebaa96874a4886fcf0191f156",
+    "text": "Addio, umano.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.233076Z"
+  },
+  "data.otservbr.global.npc.malunga.L58.1370": {
+    "src_hash": "dbfea65667c74ee69fd021dfe4454c77",
+    "text": "Saluti. Ho poco tempo per {spare}, quindi la conversazione sarà breve. Insegno stregone {spells} e compro alcuni magici {ingredients}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.235294Z"
+  },
+  "data.otservbr.global.npc.marina.L128.1472": {
+    "src_hash": "2ae27253663b438cae541caa6ff17b8d",
+    "text": "Oh, ciao |PLAYERNAME|. Un visitatore, che bello!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.236148Z"
+  },
+  "data.otservbr.global.npc.maris.L91.978": {
+    "src_hash": "7f884ad7135562fc9dfd9b3551c3855f",
+    "text": "Spero che tu abbia una buona ragione per avvicinarti ai miei {ship}, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.237027Z"
+  },
+  "data.otservbr.global.npc.maris.L92.979": {
+    "src_hash": "071f3b4cf75d7f01f8797cb2c0d0de7c",
+    "text": "Sì, ciao o altro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.237621Z"
+  },
+  "data.otservbr.global.npc.maris.fenrock.L72.111": {
+    "src_hash": "fa216d3f5c3c988c883ce3bd11d6d314",
+    "text": "Oh, sei ancora vivo. Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.238791Z"
+  },
+  "data.otservbr.global.npc.maris.fenrock.L73.112": {
+    "src_hash": "071f3b4cf75d7f01f8797cb2c0d0de7c",
+    "text": "Sì, ciao o altro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.239411Z"
+  },
+  "data.otservbr.global.npc.maris.mistrock.L89.667": {
+    "src_hash": "fa216d3f5c3c988c883ce3bd11d6d314",
+    "text": "Oh, sei ancora vivo. Ciao, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.240333Z"
+  },
+  "data.otservbr.global.npc.maris.mistrock.L90.668": {
+    "src_hash": "071f3b4cf75d7f01f8797cb2c0d0de7c",
+    "text": "Sì, ciao o altro.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T02:05:18.240923Z"
   }
 }

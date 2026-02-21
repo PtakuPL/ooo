@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T02:04:43.278047Z",
-  "last_cycle": 42,
+  "timestamp": "2026-02-21T02:05:47.500334Z",
+  "last_cycle": 43,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -287,7 +287,24 @@
       "data.otservbr.global.npc.lukosch.L87.215",
       "data.otservbr.global.npc.lukosch.L88.216",
       "data.otservbr.global.npc.luna.L61.1332",
-      "data.otservbr.global.npc.luna.L62.1333"
+      "data.otservbr.global.npc.luna.L62.1333",
+      "data.otservbr.global.npc.luna.L63.1334",
+      "data.otservbr.global.npc.luna.L64.1335",
+      "data.otservbr.global.npc.lynda.L307.1507",
+      "data.otservbr.global.npc.lynda.L308.1508",
+      "data.otservbr.global.npc.lynda.L309.1509",
+      "data.otservbr.global.npc.maelyrra.L176.895",
+      "data.otservbr.global.npc.maeryn.L178.1255",
+      "data.otservbr.global.npc.malor.L193.131",
+      "data.otservbr.global.npc.malor.L194.132",
+      "data.otservbr.global.npc.malunga.L58.1370",
+      "data.otservbr.global.npc.marina.L128.1472",
+      "data.otservbr.global.npc.maris.L91.978",
+      "data.otservbr.global.npc.maris.L92.979",
+      "data.otservbr.global.npc.maris.fenrock.L72.111",
+      "data.otservbr.global.npc.maris.fenrock.L73.112",
+      "data.otservbr.global.npc.maris.mistrock.L89.667",
+      "data.otservbr.global.npc.maris.mistrock.L90.668"
     ],
     "ru|server.json": [
       "data.otservbr.global.npc.a.beggar.L82.1060",

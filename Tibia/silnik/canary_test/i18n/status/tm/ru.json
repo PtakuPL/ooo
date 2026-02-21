@@ -39462,5 +39462,69 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:10:26.933052Z"
+  },
+  "cpp.game.market_coin_transaction_purchased": {
+    "src_hash": "d6885ce0455eb52ae562b20e7d442184",
+    "text": "Куплено Маркет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:11:13.228202Z"
+  },
+  "cpp.game.market_coin_transaction_sold": {
+    "src_hash": "a414fbe6aa780a4bd79860fd9a13e9a0",
+    "text": "Продано Маркет",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:11:13.228920Z"
+  },
+  "cpp.player.blessing_name_6": {
+    "src_hash": "22013741b2d5206839f1a6d45345f138",
+    "text": "Объятия Тибиа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:11:18.005583Z"
+  },
+  "cpp.player.exp_lost": {
+    "src_hash": "0ed4ff2d54c26acc0a0ad36a989fbf86",
+    "text": "Вы потеряли {0} очков опыта{1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:11:18.007449Z"
+  },
+  "cpp.player.exp_lost_points_one": {
+    "src_hash": "ee39a7872dfb5c6040d8c5d3cb431fce",
+    "text": "Вы потеряли {0} очков опыта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:11:18.007827Z"
+  },
+  "cpp.player.exp_lost_points_other": {
+    "src_hash": "0a06b67a9f360b7bfc1e050578e0c9d5",
+    "text": "Вы потеряли {0} очков опыта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:11:18.008222Z"
+  },
+  "cpp.player.exp_points_one": {
+    "src_hash": "c6baa07615cd066bebcf9cfbbabde5e9",
+    "text": "{0} очко опыта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:11:18.008544Z"
+  },
+  "cpp.player.exp_points_other": {
+    "src_hash": "7b08c741db507bf3e9eca22a1d778625",
+    "text": "{0} очков опыта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:11:20.732919Z"
   }
 }

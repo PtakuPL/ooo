@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T00:10:37.840867Z",
-  "last_cycle": 21,
+  "timestamp": "2026-02-21T00:12:02.318338Z",
+  "last_cycle": 22,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -593,6 +593,8 @@
       "cpp.cancel.cannot_stow_containers",
       "cpp.cancel.cannot_stow_here",
       "cpp.cancel.no_stowable_items",
+      "cpp.game.market_coin_transaction_purchased",
+      "cpp.game.market_coin_transaction_sold",
       "cpp.inspect.imbuement_info",
       "cpp.inspect.physical_plus",
       "cpp.npc.bought_bag_currency",
@@ -601,14 +603,21 @@
       "cpp.npc.bought_bags_gold",
       "cpp.npc.bought_currency",
       "cpp.npc.bought_gold",
+      "cpp.player.blessing_name_6",
       "cpp.player.corpse_killed_by",
       "cpp.player.death_pve",
       "cpp.player.death_pvp",
+      "cpp.player.exp_lost",
+      "cpp.player.exp_lost_points_one",
+      "cpp.player.exp_lost_points_other",
+      "cpp.player.exp_points_one",
+      "cpp.player.exp_points_other",
       "cpp.player.using_from_stash",
       "cpp.title.name_4",
       "cpp.title.name_5",
       "cpp.title.name_6",
-      "cpp.title.name_7"
+      "cpp.title.name_7",
+      "cpp.title.name_8"
     ],
     "ro|html.json": [
       "html.balance.html.text1",

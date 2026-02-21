@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T01:41:27.915775Z",
-  "built_cycle": 31,
+  "timestamp": "2026-02-21T01:47:33.298871Z",
+  "built_cycle": 33,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -450,9 +450,9 @@
     {
       "lang": "it",
       "json_file": "cpp.json",
-      "pending_total": 263,
-      "todo": 263,
-      "simple_todo": 191,
+      "pending_total": 245,
+      "todo": 245,
+      "simple_todo": 186,
       "missing_in_lang": 0
     },
     {
@@ -626,9 +626,9 @@
     {
       "lang": "ru",
       "json_file": "client.json",
-      "pending_total": 41,
-      "todo": 41,
-      "simple_todo": 31,
+      "pending_total": 40,
+      "todo": 40,
+      "simple_todo": 30,
       "missing_in_lang": 0
     },
     {
@@ -802,9 +802,9 @@
     {
       "lang": "ru",
       "json_file": "talkactions.json",
-      "pending_total": 129,
-      "todo": 129,
-      "simple_todo": 21,
+      "pending_total": 125,
+      "todo": 125,
+      "simple_todo": 20,
       "missing_in_lang": 0
     },
     {

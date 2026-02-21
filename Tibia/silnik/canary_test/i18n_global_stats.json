@@ -1,8 +1,8 @@
 {
-  "total_cycles": 31,
+  "total_cycles": 33,
   "mode": "AUTO_TRANSLATE",
   "category": "ru",
-  "last_update": "2026-02-21T02:44:30.211497",
+  "last_update": "2026-02-21T02:47:52.664110",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -27,9 +27,9 @@
   },
   "auto_translate": {
     "language": "ru",
-    "json_file": "otclient_modules.json",
-    "keys_to_translate": 231,
-    "guard_fail": 9,
+    "json_file": "talkactions.json",
+    "keys_to_translate": 129,
+    "guard_fail": 25,
     "strict_missing_key": 0,
     "strict_blocker": "",
     "recent_translated": 0,

@@ -40398,5 +40398,61 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T01:40:55.495257Z"
+  },
+  "client.game_cyclopedia.text2": {
+    "src_hash": "5b949a092bf0fd9fa569a1a0edb6ae67",
+    "text": "властный",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:45:03.258401Z"
+  },
+  "talkaction.god.achievement.msg_add_usage": {
+    "src_hash": "96b36ea5b2bbbd3798e8c5d11f9f8537",
+    "text": "Использование: /addachievement имя игрока, идентификатор достижения|Имя",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:47:08.584470Z"
+  },
+  "talkaction.god.achievement.msg_check_list": {
+    "src_hash": "f816f029b5d2d50423fccce8255d39e1",
+    "text": "Достижения: {list}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:47:08.585972Z"
+  },
+  "talkaction.god.achievement.msg_remove_invalid": {
+    "src_hash": "7879bd592d152bea01623b163613ff3c",
+    "text": "Неверный идентификатор достижения. Используйте идентификатор или имя.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:47:14.164094Z"
+  },
+  "talkaction.god.achievement.msg_remove_usage": {
+    "src_hash": "b552492a6ac9c7225935ffe21ffc20aa",
+    "text": "Использование: /removeachievement имя игрока, идентификатор достижения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:47:14.165513Z"
+  },
+  "talkaction.god.addon.msg_invalid_looktype": {
+    "src_hash": "9882ea3c619b81d9f358342c74343d7a",
+    "text": "Недопустимый тип внешнего вида.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:47:14.165995Z"
+  },
+  "talkaction.god.addon.msg_invalid_value": {
+    "src_hash": "e52511bb3913b543444dace6e36a2191",
+    "text": "Недопустимое значение дополнения. Оно должно быть между 0 и 3.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:47:14.166657Z"
   }
 }

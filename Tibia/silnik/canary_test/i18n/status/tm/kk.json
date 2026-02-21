@@ -1713,11 +1713,11 @@
   },
   "npc.a_bearded_woman.stdmod_8": {
     "src_hash": "611cca91ceb08fc3c7143e9b26284ef9",
-    "text": "As long as we stick to undefended coastal towns we can make an easy fortune. Хар Хар! ... \\z\n\tAs soon as I get out of here I'll finally become a pirate captain on my own. Маған капитан бала керек емес!",
+    "text": "Жағалаудағы қорғалмаған қалаларды ұстанатын болсақ, біз оңай табыс таба аламыз. Хар Хар! ... \\z\n\tМен бұл жерден шыққан бойда, мен өз бетімше қарақшылардың капитаны боламын. Маған капитан бала керек емес!",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:38:50.628209Z"
+    "updated_at": "2026-02-21T09:43:58.831752Z"
   },
   "npc.a_bearded_woman.voice_1": {
     "src_hash": "58767cda40525ee7cbdee616d85cb646",
@@ -1833,27 +1833,27 @@
   },
   "npc.a_behemoth.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "text": "Пссст! Төмен ұстаңыз! <сізге құбыжық әрекеті туралы егжей-тегжейлі есеп береді>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:38:50.634743Z"
+    "updated_at": "2026-02-21T09:43:58.832415Z"
   },
   "npc.a_behemoth.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "text": "Пссст! Төмен ұстаңыз! <сізге құбыжық әрекеті туралы егжей-тегжейлі есеп береді>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:38:50.635179Z"
+    "updated_at": "2026-02-21T09:43:58.833039Z"
   },
   "npc.a_behemoth.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
+    "text": "Пссст! Төмен ұстаңыз! <сізге құбыжық әрекеті туралы егжей-тегжейлі есеп береді>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:38:50.635614Z"
+    "updated_at": "2026-02-21T09:43:58.833787Z"
   },
   "npc.a_dead_bureaucrat.greet_msg_1": {
     "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
@@ -3273,51 +3273,51 @@
   },
   "npc.a_dragon_lord.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Пссст! Төмен ұстаңыз! <сізге құбыжық әрекеті туралы егжей-тегжейлі есеп береді>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:43:02.711392Z"
+    "updated_at": "2026-02-21T09:43:58.836051Z"
   },
   "npc.a_dragon_lord.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Пссст! Төмен ұстаңыз! <сізге құбыжық әрекеті туралы егжей-тегжейлі есеп береді>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:43:02.711945Z"
+    "updated_at": "2026-02-21T09:43:58.836676Z"
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Пссст! Төмен ұстаңыз! <сізге құбыжық әрекеті туралы егжей-тегжейлі есеп береді>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:43:02.712498Z"
+    "updated_at": "2026-02-21T09:44:08.119845Z"
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Пссст! Төмен ұстаңыз! <сізге құбыжық әрекеті туралы егжей-тегжейлі есеп береді>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:43:02.713214Z"
+    "updated_at": "2026-02-21T09:44:08.120492Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Пссст! Төмен ұстаңыз! <сізге құбыжық әрекеті туралы егжей-тегжейлі есеп береді>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:43:02.713727Z"
+    "updated_at": "2026-02-21T09:44:08.121163Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Пссст! Төмен ұстаңыз! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Пссст! Төмен ұстаңыз! <сізге құбыжық әрекеті туралы егжей-тегжейлі есеп береді>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:43:02.714260Z"
+    "updated_at": "2026-02-21T09:44:08.121923Z"
   },
   "npc.a_lost_basher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
@@ -3649,11 +3649,11 @@
   },
   "npc.a_fluffy_squirrel.sendtrade_msg_1": {
     "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
-    "text": "Chchch. Чх! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "text": "Chchch. Чх! <сен білмейсің, бірақ тиін сенің бағалы желелеріңді өзі тауып алып, жеуге жарамсыз деп есептеген пайдасыз тастармен айырбастағысы келетін сияқты>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:43:52.875942Z"
+    "updated_at": "2026-02-21T09:44:08.123686Z"
   },
   "npc.a_fluffy_squirrel.stdmod_1": {
     "src_hash": "ac2f68634467394485198b5db1d3f7a3",
@@ -4478,5 +4478,77 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T08:17:29.095841Z"
+  },
+  "npc.canary.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Иә, сау бол, енді келме!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:51.678004Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Сәлем Пумин. Иә, сәлем.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:58.834205Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Сәлем Пумин. Иә, сәлем.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:58.834602Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Сәлем Пумин. Иә, сәлем.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:58.834994Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Сәлем Пумин. Иә, сәлем.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:58.835384Z"
+  },
+  "npc.a_fading_memory.greet_msg_1": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "О...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:08.122181Z"
+  },
+  "npc.a_fluffy_squirrel.farewell_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Чх...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:08.122421Z"
+  },
+  "npc.a_fluffy_squirrel.greet_msg_1": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "Чхчх?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:08.122717Z"
+  },
+  "npc.a_fluffy_squirrel.walkaway_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Чх...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:09.870641Z"
   }
 }

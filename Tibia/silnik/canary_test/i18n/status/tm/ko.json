@@ -225,27 +225,27 @@
   },
   "npc.a_behemoth.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:39:33.541069Z"
+    "updated_at": "2026-02-21T09:44:39.265162Z"
   },
   "npc.a_behemoth.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:39:33.541535Z"
+    "updated_at": "2026-02-21T09:44:39.265898Z"
   },
   "npc.a_behemoth.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:39:33.541979Z"
+    "updated_at": "2026-02-21T09:44:39.266484Z"
   },
   "npc.a_dead_bureaucrat.greet_msg_1": {
     "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
@@ -1457,107 +1457,107 @@
   },
   "npc.a_dragon_lord.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:11.530211Z"
+    "updated_at": "2026-02-21T09:44:39.268657Z"
   },
   "npc.a_dragon_lord.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:11.530764Z"
+    "updated_at": "2026-02-21T09:44:39.269280Z"
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:11.531269Z"
+    "updated_at": "2026-02-21T09:44:39.269867Z"
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:11.531976Z"
+    "updated_at": "2026-02-21T09:44:48.685327Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:11.532532Z"
+    "updated_at": "2026-02-21T09:44:48.686154Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:11.533039Z"
+    "updated_at": "2026-02-21T09:44:48.687355Z"
   },
   "npc.a_lost_basher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:11.534157Z"
+    "updated_at": "2026-02-21T09:44:53.881965Z"
   },
   "npc.a_lost_basher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:11.534715Z"
+    "updated_at": "2026-02-21T09:44:53.882551Z"
   },
   "npc.a_lost_basher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:11.535219Z"
+    "updated_at": "2026-02-21T09:44:53.883555Z"
   },
   "npc.a_lost_husher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:11.535749Z"
+    "updated_at": "2026-02-21T09:44:53.884273Z"
   },
   "npc.a_lost_husher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:11.536248Z"
+    "updated_at": "2026-02-21T09:44:53.885329Z"
   },
   "npc.a_lost_husher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:11.536773Z"
+    "updated_at": "2026-02-21T09:44:53.885995Z"
   },
   "npc.a_lost_thrower.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "쉿! 계속하세요! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "쉿! 계속하세요! <몬스터 활동에 대한 정교한 보고서를 제공합니다>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:11.537270Z"
+    "updated_at": "2026-02-21T09:44:53.886798Z"
   },
   "npc.a_lost_thrower.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
@@ -1833,11 +1833,11 @@
   },
   "npc.a_fluffy_squirrel.sendtrade_msg_1": {
     "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
-    "text": "Chchch. 쯧! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "text": "Chchch. 쯧! <모르겠지만 다람쥐는 소중한 도토리를 발견해서 먹을 수 없다고 생각하는 쓸모없는 돌로 바꾸려고 하는 것 같습니다>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:47:56.015288Z"
+    "updated_at": "2026-02-21T09:44:48.690456Z"
   },
   "npc.a_fluffy_squirrel.stdmod_1": {
     "src_hash": "ac2f68634467394485198b5db1d3f7a3",
@@ -2438,5 +2438,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T08:19:18.624637Z"
+  },
+  "npc.canary.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "응, 안녕히 가세요. 다시는 오지 마세요!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:34.257148Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "만세 푸민. 네, 만세.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:39.266883Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "만세 푸민. 네, 만세.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:39.267271Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "만세 푸민. 네, 만세.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:39.267656Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "만세 푸민. 네, 만세.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:39.268031Z"
+  },
+  "npc.a_fading_memory.greet_msg_1": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "오...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:48.688229Z"
+  },
+  "npc.a_fluffy_squirrel.farewell_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "쯧...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:48.688597Z"
+  },
+  "npc.a_fluffy_squirrel.greet_msg_1": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "쯧쯧?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:48.688907Z"
+  },
+  "npc.a_fluffy_squirrel.voice_1": {
+    "src_hash": "9280e35fe8a04c63939438a4aded92fa",
+    "text": "치치",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:48.691965Z"
+  },
+  "npc.a_fluffy_squirrel.walkaway_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "쯧...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:48.693304Z"
+  },
+  "npc.a_ghostly_sage.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "안녕히 가세요.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:53.880789Z"
+  },
+  "npc.a_ghostly_sage.walkaway_msg_1": {
+    "src_hash": "dd4dd73f3c2fe38f2d02c9b2a246f3ce",
+    "text": "그럼 작별입니다.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:44:53.881185Z"
   }
 }

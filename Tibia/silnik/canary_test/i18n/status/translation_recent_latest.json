@@ -1,77 +1,53 @@
 {
-  "timestamp": "2026-02-21T01:55:40.381875Z",
+  "timestamp": "2026-02-21T01:58:43.499468Z",
   "language": "ro",
-  "json_file": "npc.json",
-  "translated": 11,
+  "json_file": "monsters.json",
+  "translated": 7,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
+      "key": "monster.demon.name",
+      "en": "Demon",
+      "translated": "Demon",
       "source": "tm"
     },
     {
-      "key": "npc.a_fluffy_squirrel.farewell_msg_1",
-      "en": "Chh...",
-      "translated": "Chh...",
+      "key": "monster.orewalker.voice_1",
+      "en": "CLONK!",
+      "translated": "CLONK!",
       "source": "tm"
     },
     {
-      "key": "npc.a_fluffy_squirrel.walkaway_msg_1",
-      "en": "Chh...",
-      "translated": "Chh...",
+      "key": "monster.ice_golem.voice_1",
+      "en": "Chrrr.",
+      "translated": "Chrrr.",
       "source": "tm"
     },
     {
-      "key": "npc.a_restless_soul.greet_msg_1",
-      "en": "Uhhhh...",
-      "translated": "Uhhhh...",
+      "key": "monster.ice_golem.voice_2",
+      "en": "Crrrrk.",
+      "translated": "Crrrrk.",
       "source": "tm"
     },
     {
-      "key": "npc.a_starving_dog.greet_1",
-      "en": "<sniff>",
-      "translated": "<sniff>",
+      "key": "monster.ice_golem.voice_3",
+      "en": "Gnarr.",
+      "translated": "Gnarr.",
       "source": "tm"
     },
     {
-      "key": "npc.a_starving_dog.say_1",
-      "en": "<munch>",
-      "translated": "<munch>",
+      "key": "monster.orc.name",
+      "en": "Orc",
+      "translated": "Orc",
       "source": "tm"
     },
     {
-      "key": "npc.lardoc_bashsmite.say_10",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.say_12",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.lardoc_bashsmite.say_14",
-      "en": "Done.",
-      "translated": "Done.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.robson.say_4",
-      "en": "Fine.",
-      "translated": "Fine.",
-      "source": "tm"
-    },
-    {
-      "key": "npc.robson.say_6",
-      "en": "Fine.",
-      "translated": "Fine.",
+      "key": "monster.orc_sambackpack.name",
+      "en": "Orc",
+      "translated": "Orc",
       "source": "tm"
     }
   ]

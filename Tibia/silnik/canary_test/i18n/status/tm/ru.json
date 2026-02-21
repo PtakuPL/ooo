@@ -40478,5 +40478,37 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T01:55:11.968998Z"
+  },
+  "item.13801.name": {
+    "src_hash": "27b2bf05f8e7d65fb9d6ac2ebcf29d45",
+    "text": "мёртвый Танйис",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:22.574261Z"
+  },
+  "item.13802.name": {
+    "src_hash": "27b2bf05f8e7d65fb9d6ac2ebcf29d45",
+    "text": "мёртвый Танйис",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:22.575796Z"
+  },
+  "item.13803.name": {
+    "src_hash": "27b2bf05f8e7d65fb9d6ac2ebcf29d45",
+    "text": "мёртвый Танйис",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:22.577211Z"
+  },
+  "item.13804.name": {
+    "src_hash": "27b2bf05f8e7d65fb9d6ac2ebcf29d45",
+    "text": "мёртвый Танйис",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:22.578814Z"
   }
 }

@@ -83950,5 +83950,237 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:42:01.986475Z"
+  },
+  "item.7053.name": {
+    "src_hash": "40a2c5fd3b18c5aa1b45d5c619277ac0",
+    "text": "botola",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.144929Z"
+  },
+  "item.7054.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.145899Z"
+  },
+  "item.7055.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.146604Z"
+  },
+  "item.7056.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "porta chiusa",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.147444Z"
+  },
+  "item.7057.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "porta aperta",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.148189Z"
+  },
+  "item.7058.name": {
+    "src_hash": "264dd3cf39f82396d0c013c52d1df86d",
+    "text": "pilastro del cranio",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.149037Z"
+  },
+  "item.706.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.150083Z"
+  },
+  "item.707.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.150728Z"
+  },
+  "item.708.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.151454Z"
+  },
+  "item.709.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.152172Z"
+  },
+  "item.710.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.153572Z"
+  },
+  "item.711.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.155106Z"
+  },
+  "item.712.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.155554Z"
+  },
+  "item.713.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.156174Z"
+  },
+  "item.714.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.157525Z"
+  },
+  "item.7140.desc": {
+    "src_hash": "18bf53a1e2d29f0fcf6dbaa1b4bf72db",
+    "text": "È vuoto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.158444Z"
+  },
+  "item.715.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.160236Z"
+  },
+  "item.716.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.161471Z"
+  },
+  "item.717.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.162346Z"
+  },
+  "item.7176.name": {
+    "src_hash": "f46c1c5a903c4090247e8b290f7a0df3",
+    "text": "Mammut",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.164964Z"
+  },
+  "item.7177.name": {
+    "src_hash": "f46c1c5a903c4090247e8b290f7a0df3",
+    "text": "Mammut",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.166197Z"
+  },
+  "item.718.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.167057Z"
+  },
+  "item.719.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.168680Z"
+  },
+  "item.720.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.169330Z"
+  },
+  "item.721.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.170395Z"
+  },
+  "item.722.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.171307Z"
+  },
+  "item.723.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.171748Z"
+  },
+  "item.724.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.172557Z"
+  },
+  "item.725.name": {
+    "src_hash": "001cbc059a402b3be7c99be558eaaf73",
+    "text": "letto",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:56:13.174324Z"
   }
 }

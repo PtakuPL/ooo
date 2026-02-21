@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-21T00:09:10.833827Z",
-  "cycle": 20,
-  "language": "pl",
-  "json_file": "otclient_data.json",
-  "translated": 0,
+  "timestamp": "2026-02-21T00:10:38.736264Z",
+  "cycle": 21,
+  "language": "ro",
+  "json_file": "questlog.json",
+  "translated": 15,
   "placeholders": 0,
-  "guard_fail": 3,
+  "guard_fail": 15,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 72
+  "strict_skipped_done": 148
 }

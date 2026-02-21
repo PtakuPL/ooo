@@ -39358,5 +39358,109 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:05:54.652257Z"
+  },
+  "book.otbm.1000_gold_10_fire_bugs": {
+    "src_hash": "ea67da6d7646ef0efd5615dd8e19730a",
+    "text": "1000 золотых и 10 огненных жуков для Дреам Чалленге",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:10:20.026170Z"
+  },
+  "book.otbm.800_razoredge_matt_vs_bambam": {
+    "src_hash": "58492dfbcaefa6f71ae115846db25ab4",
+    "text": "8.00 Разоредге Мэтт vs. Бэмбэм Брутус",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:10:20.027159Z"
+  },
+  "book.otbm.abdendriel_furniture_store": {
+    "src_hash": "490e3004b667e42e0b8f0c9dddb65971",
+    "text": "Абьдендриел Мебельный магазин",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:10:20.027871Z"
+  },
+  "book.otbm.apothecary_and_holy_grounds_of": {
+    "src_hash": "11fdf5d85917c6f64e682e1d1f7588a8",
+    "text": "Аптекарь и Святые Земли Тьмы Приестессес.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:10:20.028638Z"
+  },
+  "book.otbm.battle_tactics_for_demona": {
+    "src_hash": "e0253e70d5ecbd397f99be190c853da3",
+    "text": "Тактика боя для Демона",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:10:20.029341Z"
+  },
+  "book.otbm.battle_tactics_for_demona_mazeforces": {
+    "src_hash": "15b26d48766bcf26a1eddb454ef2290f",
+    "text": "Тактика боя для Демона - Мазефоркес",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:10:22.622279Z"
+  },
+  "book.otbm.be_careful_you_are_about": {
+    "src_hash": "0c4556afcfeec093b4312edacff356d5",
+    "text": "Будь осторожен! Вы собираетесь войти в 'Халл of the lost doors'. Входите только один!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:10:22.623348Z"
+  },
+  "book.otbm.crunors_finest_fruit_and_vegetable": {
+    "src_hash": "1ed839d6d71727c039758be41eae82f6",
+    "text": "Крунорьс Финест - Магазин фруктов и овощей",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:10:22.624795Z"
+  },
+  "book.otbm.crunors_finest_fruit_and_vegetable_1ed839d6": {
+    "src_hash": "1ed839d6d71727c039758be41eae82f6",
+    "text": "Крунорьс Финест - Магазин фруктов и овощей",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:10:26.931633Z"
+  },
+  "book.otbm.dixis_armors_and_shields_cf49f561": {
+    "src_hash": "cf49f561e8909a5efab8a99b1e35a514",
+    "text": "Доспехи и щиты Дикси",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:10:26.931962Z"
+  },
+  "book.otbm.do_not_consume_unknown_liquids": {
+    "src_hash": "9ef2f06201bc21c9f5dc85116972dd19",
+    "text": "Не употребляйте неизвестные жидкости.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:10:26.932340Z"
+  },
+  "book.otbm.do_not_disturb_bearded_people": {
+    "src_hash": "776d03f3b4f1a547aec2e85c9247859c",
+    "text": "(НЕ беспокойте бородатых людей)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:10:26.932679Z"
+  },
+  "book.otbm.do_not_drink_green_or": {
+    "src_hash": "5a227673307ee555195f2f7a967b11f0",
+    "text": "Не пейте жидкости зеленого или желтого цвета!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:10:26.933052Z"
   }
 }

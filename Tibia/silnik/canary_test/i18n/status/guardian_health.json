@@ -1,22 +1,22 @@
 {
-  "timestamp": "2026-02-21T00:09:28.900287Z",
+  "timestamp": "2026-02-21T00:10:36.194136Z",
   "state": "degraded",
-  "heartbeat_age_s": 77.9,
+  "heartbeat_age_s": 55.2,
   "heartbeat_aging_seconds": 150,
   "heartbeat_stale_seconds": 240,
   "heartbeat_stuck_seconds": 420,
   "active_log_grace_seconds": 150,
   "worker_pid": "581421",
   "pid_alive": true,
-  "worker_log_age_s": 9.5,
-  "guard_last_entry_age_s": 18.1,
-  "translated_window": 427,
-  "guard_fail_window": 383,
-  "guard_fail_rate_pct": 47.3,
-  "throughput_per_h": 1708.0,
+  "worker_log_age_s": 6.9,
+  "guard_last_entry_age_s": 8.4,
+  "translated_window": 436,
+  "guard_fail_window": 374,
+  "guard_fail_rate_pct": 46.2,
+  "throughput_per_h": 1744.0,
   "entries_in_window": 27,
-  "worker_cycle": 19,
+  "worker_cycle": 20,
   "issues": [
-    "high_guard_fail_rate (47.3% > 15%)"
+    "high_guard_fail_rate (46.2% > 15%)"
   ]
 }

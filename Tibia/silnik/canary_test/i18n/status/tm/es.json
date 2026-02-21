@@ -154822,5 +154822,213 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T01:00:29.854173Z"
+  },
+  "item.15821.name": {
+    "src_hash": "ef15f8554948e731a1044dbcf7347090",
+    "text": "gNomish spore gatherer",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:19.218702Z"
+  },
+  "item.21000.name": {
+    "src_hash": "f3546e844aaa6319579b9a9a60bdf1a8",
+    "text": "dead miNotaur amazon",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:19.798285Z"
+  },
+  "item.21001.name": {
+    "src_hash": "f3546e844aaa6319579b9a9a60bdf1a8",
+    "text": "dead miNotaur amazon",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:19.798837Z"
+  },
+  "item.21002.name": {
+    "src_hash": "f3546e844aaa6319579b9a9a60bdf1a8",
+    "text": "dead miNotaur amazon",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:19.799337Z"
+  },
+  "item.21003.name": {
+    "src_hash": "f3546e844aaa6319579b9a9a60bdf1a8",
+    "text": "dead miNotaur amazon",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:19.799812Z"
+  },
+  "item.21095.name": {
+    "src_hash": "c8761ca75ce19722357c70e800fb81c2",
+    "text": "dead miNotaur hunter",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:19.803787Z"
+  },
+  "item.21096.name": {
+    "src_hash": "c8761ca75ce19722357c70e800fb81c2",
+    "text": "dead miNotaur hunter",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:19.804238Z"
+  },
+  "item.21097.name": {
+    "src_hash": "c8761ca75ce19722357c70e800fb81c2",
+    "text": "dead miNotaur hunter",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:19.804865Z"
+  },
+  "item.21098.name": {
+    "src_hash": "c8761ca75ce19722357c70e800fb81c2",
+    "text": "dead miNotaur hunter",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:19.805319Z"
+  },
+  "item.25843.name": {
+    "src_hash": "6e094e2a219be0d2477a9ff28e812a71",
+    "text": "dead miNotaur idol",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:20.395864Z"
+  },
+  "item.25844.name": {
+    "src_hash": "6e094e2a219be0d2477a9ff28e812a71",
+    "text": "dead miNotaur idol",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:20.396406Z"
+  },
+  "item.25845.name": {
+    "src_hash": "6e094e2a219be0d2477a9ff28e812a71",
+    "text": "dead miNotaur idol",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:20.396964Z"
+  },
+  "item.25846.name": {
+    "src_hash": "6e094e2a219be0d2477a9ff28e812a71",
+    "text": "dead miNotaur idol",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:20.397502Z"
+  },
+  "item.28603.name": {
+    "src_hash": "7c0a89b9ec82a12ca24a3bc0d2bd789e",
+    "text": "slain kNowledge elemental",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:20.783129Z"
+  },
+  "item.28604.name": {
+    "src_hash": "7c0a89b9ec82a12ca24a3bc0d2bd789e",
+    "text": "slain kNowledge elemental",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:20.783725Z"
+  },
+  "item.28605.name": {
+    "src_hash": "7c0a89b9ec82a12ca24a3bc0d2bd789e",
+    "text": "slain kNowledge elemental",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:20.784355Z"
+  },
+  "item.28606.name": {
+    "src_hash": "7c0a89b9ec82a12ca24a3bc0d2bd789e",
+    "text": "slain kNowledge elemental",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:20.784944Z"
+  },
+  "item.30332.name": {
+    "src_hash": "a449ab08aae1264a4ec4eebb4003c5bc",
+    "text": "dead animated sNowman",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:21.044106Z"
+  },
+  "item.30333.name": {
+    "src_hash": "a449ab08aae1264a4ec4eebb4003c5bc",
+    "text": "dead animated sNowman",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:21.044724Z"
+  },
+  "item.30334.name": {
+    "src_hash": "a449ab08aae1264a4ec4eebb4003c5bc",
+    "text": "dead animated sNowman",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:21.045353Z"
+  },
+  "item.30335.name": {
+    "src_hash": "a449ab08aae1264a4ec4eebb4003c5bc",
+    "text": "dead animated sNowman",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:21.045988Z"
+  },
+  "item.36887.name": {
+    "src_hash": "6f269602cfec17a2b0a84ae714033e42",
+    "text": "dead poisoNous carnisylvan",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:21.988968Z"
+  },
+  "item.36888.name": {
+    "src_hash": "6f269602cfec17a2b0a84ae714033e42",
+    "text": "dead poisoNous carnisylvan",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:21.989824Z"
+  },
+  "item.36889.name": {
+    "src_hash": "6f269602cfec17a2b0a84ae714033e42",
+    "text": "dead poisoNous carnisylvan",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:21.990623Z"
+  },
+  "item.36890.name": {
+    "src_hash": "6f269602cfec17a2b0a84ae714033e42",
+    "text": "dead poisoNous carnisylvan",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:21.991605Z"
+  },
+  "item.39320.name": {
+    "src_hash": "cf4345aeb3e46adfd2e6dd81543809d2",
+    "text": "dead Noxious ripptor",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:22.253641Z"
   }
 }

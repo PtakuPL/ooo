@@ -118438,5 +118438,37 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:59:11.164320Z"
+  },
+  "npc.a_dead_bureaucrat1.say_3": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "Dobrze |PLAYERNAME|. Profesja?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:29.940073Z"
+  },
+  "npc.izsh.greet_msg_1": {
+    "src_hash": "c542b54bc235472581e51599db1d2bb5",
+    "text": "Pozdrowionka, łuskowata istoto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:33.559524Z"
+  },
+  "npc.kulag_the_guard.stdmod_1": {
+    "src_hash": "9f8faef9b0ab426a0e0ee29611a81085",
+    "text": "To mój obowiązek do chronić the miasto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:34.237757Z"
+  },
+  "npc.miles_the_guard.stdmod_1": {
+    "src_hash": "9f8faef9b0ab426a0e0ee29611a81085",
+    "text": "To mój obowiązek do chronić the miasto.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T01:01:35.339323Z"
   }
 }

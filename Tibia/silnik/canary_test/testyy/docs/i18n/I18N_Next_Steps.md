@@ -1,7 +1,72 @@
 # Internacjonalizacja Testyy — Kolejne Kroki i Priorytety
 
 Dokument utworzony: 2025-01-XX  
-Ostatnia aktualizacja: **2025-12-16**
+Ostatnia aktualizacja: **2026-02-22**
+
+---
+
+## 🟢 NOWA FAZA: SYSTEM I18N BUTTON SIZING (2026-02-22)
+
+### Cel
+System dopasowywania rozmiarów UI (przycisków, paneli) do długości przetłumaczonego tekstu, aby uniknąć obcinania tekstu lub pękania layoutu.
+
+### Problem
+- 98 z 120 plików OTUI używa `tr()` do tłumaczenia
+- 399 deklaracji `width:` (stały rozmiar) — nie reagują na długość tekstu
+- Tłumaczenia mogą być 30-127% dłuższe niż EN (np. ES "Error de inicio de sesión" = 127% dłuższy niż "Login Error")
+
+### Istniejące mechanizmy
+
+#### Style I18NButton / I18NQtButton (data/styles/10-buttons.otui)
+- `min-width: 106`, `height: 23`, `text-horizontal-auto-resize: true`
+- Automatycznie rośnie gdy tekst dłuższy niż min-width
+- **Problem:** Używane w tylko 5 miejscach (help.otui × 4, general.otui × 1) z 98 plików
+
+#### Właściwości UIWidget C++
+- `text-horizontal-auto-resize: true` — rośnie TYLKO szerokość
+- `text-auto-resize: true` — rośnie szerokość I wysokość
+- `min-width: N` / `max-width: N` — limity rozmiaru
+
+### Rozwiązanie — 3 warstwy
+
+#### Warstwa 1: Zamiana Button → I18NButton
+Zastąpić `Button` na `I18NButton` w plikach OTUI z `!text: tr(...)`.
+
+#### Warstwa 2: Per-language config overrides
+Moduł `modules/client_locales/i18n_layout.lua` + pliki `data/i18n_layout/<lang>.lua`.
+Pozwala na precyzyjne nadpisanie rozmiaru widgetów per język.
+
+#### Warstwa 3: Auto-measurement tool
+`i18nLayout.measureLanguage("de")` — mierzy renderowaną szerokość i raportuje które tłumaczenia są za szerokie.
+
+### Pliki utworzone
+- `modules/client_locales/i18n_layout.lua` — moduł Lua
+- `data/i18n_layout/de.lua`, `fr.lua`, `es.lua`, `ru.lua` — stub configs
+
+### Następne kroki
+- [ ] Migracja Button → I18NButton w plikach OTUI (zaczynając od entergame.otui)
+- [ ] Uruchomienie measureLanguage() i wypełnienie config overrides
+- [ ] Integracja i18n_layout.lua z systemem locales (hook na setLocale)
+
+---
+
+## 🟢 NOWA FAZA: FIX BUILDÓW CI (2026-02-22)
+
+### Problem Linux
+`pch.h:70:1: error: redefinition of 'template<class E> format_as(E)'` — podwójna inkluzja pch.h.
+
+**Fix:** Include guard `#ifndef FRAMEWORK_PCH_H` w `framework/pch.h`. ✅
+
+### Problem Windows
+ICE C1001 (Internal Compiler Error) w MSVC 14.44 na ciężkich template TU.
+
+**Fix (4 rundy):**
+1. Dodanie include'ów (C2139/C2665)
+2. Flagi MSVC, if constexpr, fold expressions
+3. Split framework TU, usunięcie Asio
+4. Split client/luafunctions.cpp (1104→405 linii)
+
+Pełny opis: `Dokumentacja/01_Instalka_Klient/2026-02/podsumowanie_statusu_ice_c1001.md`
 
 ---
 

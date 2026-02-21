@@ -140,20 +140,40 @@ Dodano `#include <utility>` dla `std::index_sequence`.
 
 ### Jeśli CI nadal failuje (priorytet: WYSOKI jeśli wystąpi)
 
-1. **`luafunctions_ui.cpp` (434 bindów)** — nadal najcięższy TU. Dalszy split:
+1. **`luafunctions_ui.cpp` (434 bindów)** — nadal najcięższy TU po stronie framework. Dalszy split:
    - `luafunctions_uiwidget.cpp` (~290 bindów UIWidget)
    - `luafunctions_ui_misc.cpp` (reszta: layouts, textedit, qrcode, shaders, particles)
 
-2. **`client/luafunctions.cpp`** — nie badany. Może mieć podobne problemy.
-
-3. **Krok 2D (backup):** ClangCL zamiast MSVC cl.exe, lub pin na MSVC 14.29.
+2. **Krok 2D (backup):** ClangCL zamiast MSVC cl.exe, lub pin na MSVC 14.29.
 
 ### Problemy niskiego priorytetu (nie blokują build)
 
-4. **Mieszanie `requires` z `enable_if_t`** w `luavaluecasts.h` linia ~157 — enum push_luavalue używa C++20 `requires` a reszta overloadu `enable_if_t`. Może zmylić MSVC.
+3. **Mieszanie `requires` z `enable_if_t`** w `luavaluecasts.h` linia ~157 — enum push_luavalue używa C++20 `requires` a reszta overloadu `enable_if_t`. Może zmylić MSVC.
 
-5. **Logic bug w pair cast** (`luavaluecasts.h` ~555-560) — odwrócony warunek `!` przy `luavalue_cast`. Runtime bug, nie kompilacyjny.
+4. **Logic bug w pair cast** (`luavaluecasts.h` ~555-560) — odwrócony warunek `!` przy `luavalue_cast`. Runtime bug, nie kompilacyjny.
 
-6. **Trailing backslash** w `luainterface.cpp` (~linia 736) — kosmetyczne, z konwersji makro.
+5. **Trailing backslash** w `luainterface.cpp` (~linia 736) — kosmetyczne, z konwersji makro.
 
-7. **Weryfikacja `/std:c++20`** na MSVC — kod używa `requires`, fold expressions, `if constexpr`. Warto potwierdzić że CMake ustawia C++20 na runnerze.
+6. **Weryfikacja `/std:c++20`** na MSVC — kod używa `requires`, fold expressions, `if constexpr`. Warto potwierdzić że CMake ustawia C++20 na runnerze.
+
+---
+
+## Bilans zmniejszenia template pressure (po Rundzie 4)
+
+### Łączny obraz:
+
+| TU | Przed | Po | Zmiana |
+|----|-------|----|--------|
+| `framework/luafunctions_ui.cpp` | 537 bindów + Asio | 434 bindów, bez Asio | -19% |
+| `framework/luafunctions_net.cpp` | — | 60 bindów | nowy |
+| `framework/luafunctions_sound.cpp` | — | 43 bindów | nowy |
+| `client/luafunctions.cpp` | 1104 linii / 939 bindów | 405 linii / ~200 bindów | -57% linii |
+| `client/luafunctions_entities.cpp` | — | 567 linii / ~540 bindów | nowy |
+| `client/luafunctions_ui_client.cpp` | — | 210 linii / ~200 bindów | nowy |
+
+**Eliminacja rekurencyjnych szablonów:**
+- `luabinder.h` — fold expressions zamiast `call_fun_args<N>`
+- `luavaluecasts.h` — fold expressions zamiast `push_tuple_internal_luavalue<N>`
+
+**Eliminacja ciężkich include'ów:**
+- `<asio.hpp>` + `<asio/ssl.hpp>` usunięte z luafunctions_ui.cpp i luafunctions.cpp

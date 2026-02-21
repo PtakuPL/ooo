@@ -19,10 +19,10 @@
       "real_translations": 1522
     },
     "quality_entry_present": {
-      "ok": true,
-      "has_quality_data": true
+      "ok": false,
+      "has_quality_data": false
     }
   },
-  "is_done": true,
-  "timestamp": "2026-02-21T00:35:18.265835Z"
+  "is_done": false,
+  "timestamp": "2026-02-21T01:08:03.835172Z"
 }

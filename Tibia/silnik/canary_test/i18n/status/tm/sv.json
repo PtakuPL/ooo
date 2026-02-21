@@ -37926,5 +37926,125 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:58:17.267303Z"
+  },
+  "npc.tibra.stdmod_1": {
+    "src_hash": "53fd81ac2bcfd6002315412b51616c27",
+    "text": "Jag tror att du har glömt att ta med din insats, mitt barn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.858044Z"
+  },
+  "npc.tibra.stdmod_2": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Ja, jag fick besked om vad jag skulle göra. Är du beredd att ta emot min bönelinje?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.859377Z"
+  },
+  "npc.tibra.stdmod_8": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Du är sårad, mitt barn. Jag ska läka dina sår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.861575Z"
+  },
+  "npc.tibra.stdmod_9": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Du ser inte så illa ut. Tyvärr, jag kan inte hjälpa dig. Men om du letar efter ytterligare skydd bör du gå på {pilgrimage} av aska eller få skyddet av {twist of fate} här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.862466Z"
+  },
+  "npc.tim_the_guard.stdmod_1": {
+    "src_hash": "9f8faef9b0ab426a0e0ee29611a81085",
+    "text": "Det är min plikt att skydda staden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.864857Z"
+  },
+  "npc.topsy.say_1": {
+    "src_hash": "b62a0dd738c7bd24999a8405be0ab6de",
+    "text": "Så du ber mig om en {{}} för att börja ditt äventyr?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.873047Z"
+  },
+  "npc.topsy.say_2": {
+    "src_hash": "42f4f7cc57059d2b7623f11666f8882b",
+    "text": "Vad? Jag har redan gett dig en {{}}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.873588Z"
+  },
+  "npc.topsy.say_3": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Naturligtvis, bara bläddra igenom mina varor. Du kan också titta på {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.874112Z"
+  },
+  "npc.torkada.say_5": {
+    "src_hash": "66edd2e4f8cd1499c8e0412f667914e9",
+    "text": "Okej då inte.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.875152Z"
+  },
+  "npc.trisha.say_7": {
+    "src_hash": "84bef6784099863dfeb03302de8845ca",
+    "text": "Förstod du allt jag sa till dig och är villig att hantera denna uppgift?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.876908Z"
+  },
+  "npc.trisha.stdmod_3": {
+    "src_hash": "2a717547889752d87b24c8a11762f691",
+    "text": "Jag kan lära dig {healing spells} och {support spells}. Vilken typ av besvärjelse vill du lära dig? Du kan också berätta för mig för vilken nivå du skulle vilja lära dig en besvärjelse, om du föredrar det.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.878125Z"
+  },
+  "npc.trisha.walkaway_msg_1": {
+    "src_hash": "b0f298573834cdb44ab5b19d8acdcb41",
+    "text": "Var försiktig på dina resor.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.878710Z"
+  },
+  "npc.tyrias.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.881355Z"
+  },
+  "npc.tyrias.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.881845Z"
+  },
+  "npc.tyrias.stdmod_18": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Du är sårad, mitt barn. Jag ska läka dina sår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:07:34.882976Z"
   }
 }

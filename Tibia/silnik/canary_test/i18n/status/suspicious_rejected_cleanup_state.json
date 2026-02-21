@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T10:19:15.386689Z",
-  "last_cycle": 18,
+  "timestamp": "2026-02-21T10:24:10.113719Z",
+  "last_cycle": 19,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [],
@@ -1576,6 +1576,24 @@
       "npc.a_lost_husher.greet_msg_3",
       "npc.a_lost_thrower.greet_msg_1",
       "npc.canary.farewell_msg_1"
+    ],
+    "es|raids.json": [
+      "raid.barba_bittermor.name",
+      "raid.barba_svar.name",
+      "raid.bone_beast.name",
+      "raid.diblis_the_fair.name",
+      "raid.midnight_panther_1.name",
+      "raid.midnight_panther_2.name",
+      "raid.midnight_panther_3.name",
+      "raid.orc.name",
+      "raid.orc_backpack.name",
+      "raid.rottie1.name",
+      "raid.rottie2.name",
+      "raid.sir_valorcrest.name",
+      "raid.wasp_bear.name",
+      "raid.wild_horses.name",
+      "raid.zevelon_duskbringer.name",
+      "raid.zulazza_the_corruptor.name"
     ]
   }
 }

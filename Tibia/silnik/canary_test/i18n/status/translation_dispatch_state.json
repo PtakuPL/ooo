@@ -1,22 +1,20 @@
 {
-  "timestamp": "2026-02-21T10:19:19.309558Z",
-  "cycle_counter": 7059,
-  "last_target_key": "pl:raids.json",
-  "last_pending_total": 42,
-  "last_tier": 1,
-  "last_cat_priority": 8,
+  "timestamp": "2026-02-21T10:20:51.741143Z",
+  "cycle_counter": 7062,
+  "last_target_key": "ro:server.json",
+  "last_pending_total": 1143,
+  "last_tier": 2,
+  "last_cat_priority": 3,
   "candidates_count": 178,
-  "active_candidates_count": 158,
+  "active_candidates_count": 160,
   "skipped_backoff": 15,
-  "skipped_guard_fail": 5,
+  "skipped_guard_fail": 3,
   "guard_fail_blacklist": {
-    "es:server.json": 7061,
-    "pl:npc.json": 7062,
     "ro:items.json": 7063,
     "pl:items.json": 7071,
     "es:items.json": 7072
   },
-  "guard_fail_blocked_count": 5,
+  "guard_fail_blocked_count": 3,
   "guard_fail_blocked_preview": [],
   "tier_config": {
     "tier1": [
@@ -42,7 +40,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 18,
+  "cache_cycle": 19,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,

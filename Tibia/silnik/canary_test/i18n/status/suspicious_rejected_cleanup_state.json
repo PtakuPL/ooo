@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T01:29:34.149155Z",
-  "last_cycle": 23,
+  "timestamp": "2026-02-21T01:30:38.965425Z",
+  "last_cycle": 24,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [],
@@ -71,15 +71,7 @@
       "monster.orc_sambackpack.name",
       "monster.orewalker.voice_1"
     ],
-    "es|npc.json": [
-      "npc.a_fading_memory.greet_msg_1",
-      "npc.a_sweaty_cyclops.stdmod_1",
-      "npc.a_sweaty_cyclops.voice_1",
-      "npc.barnabas_dee.say_5",
-      "npc.bozo.stdmod_116",
-      "npc.bozo.stdmod_92",
-      "npc.budrik.say_9"
-    ],
+    "es|npc.json": [],
     "sv|npc.json": [
       "npc.a_fluffy_squirrel.farewell_msg_1",
       "npc.a_fluffy_squirrel.walkaway_msg_1",
@@ -626,9 +618,7 @@
     "pl|client.json": [
       "client.elementnode.text3"
     ],
-    "es|modules.json": [
-      "module.gamestore.text1"
-    ],
+    "es|modules.json": [],
     "es|otclient_data.json": [],
     "it|otclient_modules.json": [],
     "ru|books.json": [],

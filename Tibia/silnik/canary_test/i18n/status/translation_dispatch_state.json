@@ -1,16 +1,20 @@
 {
-  "timestamp": "2026-02-21T02:33:39.762059Z",
-  "cycle_counter": 6961,
-  "last_target_key": "es:chatchannels.json",
-  "last_pending_total": 1,
+  "timestamp": "2026-02-21T02:44:07.600637Z",
+  "cycle_counter": 6969,
+  "last_target_key": "pl:monsters.json",
+  "last_pending_total": 304,
   "last_tier": 1,
-  "last_cat_priority": 9,
+  "last_cat_priority": 2,
   "candidates_count": 178,
-  "active_candidates_count": 165,
-  "skipped_backoff": 13,
-  "skipped_guard_fail": 0,
-  "guard_fail_blacklist": {},
-  "guard_fail_blocked_count": 0,
+  "active_candidates_count": 161,
+  "skipped_backoff": 14,
+  "skipped_guard_fail": 3,
+  "guard_fail_blacklist": {
+    "es:items.json": 6996,
+    "pl:items.json": 6997,
+    "pl:npc.json": 6998
+  },
+  "guard_fail_blocked_count": 3,
   "guard_fail_blocked_preview": [],
   "tier_config": {
     "tier1": [
@@ -36,7 +40,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 58,
+  "cache_cycle": 62,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -139,7 +143,7 @@
     "pl:html.json": 0,
     "es:otclient_modules.json": 0,
     "pl:talkactions.json": 3,
-    "es:talkactions.json": 2,
+    "es:talkactions.json": 3,
     "ro:talkactions.json": 2,
     "it:npclib.json": 2,
     "ru:movements.json": 1,

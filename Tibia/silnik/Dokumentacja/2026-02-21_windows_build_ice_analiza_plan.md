@@ -353,3 +353,40 @@ Kontrola zgodności API po split:
 Status:
 - Plan B po stronie kodu i CMake jest domknięty.
 - Walidacja tylko przez GitHub Actions (`Build - Windows`, a potem `Build - Linux`) na commicie z tymi zmianami.
+
+---
+
+## 14. Aktualizacja po runie 22265656348 (2026-02-21 23:24 UTC)
+
+Nowy run `Build - Windows` na commicie `9f775330c` zakonczyl sie porazka, ale
+nie na `luafunctions_ui*.cpp`.
+
+Pierwszy realny blad:
+
+```text
+FAILED: ... luathrowhelpers.cpp.obj
+fatal error C1001 (p2/main.cpp:258) at luathrowhelpers.cpp(30)
+```
+
+Diagnoza:
+- To byl regres integracyjny pod MSVC: nowy plik `luathrowhelpers.cpp` trafil do
+  Group 2 z agresywnymi flagami (`/d2FH4- /d2notypeopt /permissive-`), ktore sa
+  przeznaczone dla template-heavy TU.
+- `luathrowhelpers.cpp` zawieral tylko sciezki `throw`, wiec ten zestaw flag
+  okazal sie nietrafiony dla tego typu kodu i wywolywal ICE C1001.
+- To jest blad dostosowania konfiguracji kompilacji pod MSVC (Windows), a nie
+  problem bibliotek typu harfbuzz/freetype.
+
+Naprawa (wdrozona):
+1. Usunieto osobny TU `luathrowhelpers.cpp`.
+2. Implementacje:
+   - `throwLuaBadValueCast(...)`
+   - `luabinder::throwLuaNilMemberCall()`
+   przeniesiono do `luaexception.cpp` (stabilny TU).
+3. Usunieto `luathrowhelpers.cpp` z `SOURCE_FILES` i z Group 2 w `CMakeLists.txt`.
+
+Efekt oczekiwany:
+- Eliminacja nowego punktu awarii (C1001 w `luathrowhelpers.cpp`),
+- zachowanie architektury Plan A/Plan B,
+- powrot do walidacji faktycznego bottlenecka (template-heavy UI bindings) bez
+  dodatkowej regresji konfiguracyjnej.

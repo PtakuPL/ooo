@@ -58,7 +58,7 @@ extern "C" {
 struct lua_State;
 using LuaCFunction = int(*) (lua_State* L);
 
-// MSVC 14.44 ICE workaround helpers implemented in luainterface.cpp.
+// MSVC 14.44 ICE workaround helpers implemented in luaexception.cpp.
 #ifdef _MSC_VER
 [[noreturn]] __declspec(noinline) void throwLuaBadValueCast(const char* valueType, const char* targetType);
 #else

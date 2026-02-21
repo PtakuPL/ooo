@@ -23,6 +23,29 @@
 #include "luaexception.h"
 #include "luainterface.h"
 
+[[noreturn]]
+#ifdef _MSC_VER
+__declspec(noinline)
+#endif
+void throwLuaBadValueCast(const char* valueType, const char* targetType)
+{
+    const char* safeValueType = valueType ? valueType : "unknown";
+    const char* safeTargetType = targetType ? targetType : "unknown";
+    throw LuaBadValueCastException(safeValueType, safeTargetType);
+}
+
+namespace luabinder
+{
+[[noreturn]]
+#ifdef _MSC_VER
+__declspec(noinline)
+#endif
+void throwLuaNilMemberCall()
+{
+    throw LuaException("failed to call a member function because the passed object is nil");
+}
+}
+
 LuaException::LuaException(const std::string_view error, const int traceLevel)
 {
     g_lua.clearStack(); // on every exception, clear lua stack

@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-21T00:32:02.585775Z",
-  "window_start_utc": "2026-02-20T23:32:01.035970Z",
-  "window_end_utc": "2026-02-21T00:32:01.035970Z",
+  "timestamp": "2026-02-21T00:34:09.287558Z",
+  "window_start_utc": "2026-02-20T23:34:07.867517Z",
+  "window_end_utc": "2026-02-21T00:34:07.867517Z",
   "window_hours": 1.0,
   "sources": {
     "suspicious_rejected": "i18n/status/suspicious_rejected.jsonl",
@@ -11,9 +11,9 @@
   "rejected_entries": 0,
   "rejected_entries_raw": 0,
   "suspicious_entries": 4247,
-  "suspicious_entries_raw": 14663,
+  "suspicious_entries_raw": 14883,
   "guard_fail_entries": 107,
-  "guard_fail_sum": 3314,
+  "guard_fail_sum": 3316,
   "by_type": {},
   "by_source": {},
   "by_language": {},

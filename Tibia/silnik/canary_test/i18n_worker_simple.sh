@@ -14801,6 +14801,20 @@ def _has_auto_fix_now_issue(issues) -> bool:
             return True
     return False
 
+def _build_world_term_tokens():
+    out = set()
+    for _src in (TIBIA_PROPER_NOUNS, _NONTRANSLATABLE_WORLD_TERMS, _DOMAIN_IDENTICAL_EXEMPT_TERMS):
+        for _term in (_src or []):
+            for _tok in re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ]{3,}", str(_term or "")):
+                out.add(_tok.lower())
+    return out
+
+_WORLD_TERM_TOKENS = _build_world_term_tokens()
+
+def _is_world_term_token(token: str) -> bool:
+    t = str(token or "").strip().lower()
+    return bool(t) and t in _WORLD_TERM_TOKENS
+
 def _is_probably_nontranslatable_text(text: str) -> bool:
     t = str(text or "").strip()
     if not t:
@@ -14931,11 +14945,12 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
                 "message": "Wykryto marker językowy [PL]/[ES]/[LANG]",
             })
         if "npc.bozo.mission_" in tr:
-            issues.append({
-                "type": "mission_token",
-                "severity": "CRITICAL",
-                "message": "Wykryto artefakt klucza npc.bozo.mission_ w tłumaczeniu",
-            })
+            if "npc.bozo.mission_" not in en:
+                issues.append({
+                    "type": "mission_token",
+                    "severity": "CRITICAL",
+                    "message": "Wykryto artefakt klucza npc.bozo.mission_ w tłumaczeniu",
+                })
         if re.search(r"(?i)(?:^|\b)(?:mango\s+fx|fxhttpresponse|fx\s+handlehttpresponse|fx\b)", tr):
             issues.append({
                 "type": "fx_token",
@@ -14944,7 +14959,7 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
             })
 
     # S6: Artifacts (exclude roman numerals [II],[III],[IV] and ≤3 question marks)
-    if re.search(r"\?{4,}|\[(?![IVXLCDM]{1,8}\])[A-Z]{2,}(?:[-_][A-Z]{2,})?\]|TODO|FIXME", tr):
+    if re.search(r"\?{4,}|\[(?![IVXLCDM]{1,8}\])[A-Z]{2,}(?:[-_][A-Z]{2,})?\]|FIXME|TODO[:_][A-Z0-9_]+", tr):
         issues.append({
             "type": "artifact_tokens",
             "severity": "HIGH",
@@ -15011,13 +15026,22 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
     # S11: Mixed-language detection for Latin-script (np. "Handel mógł Niet być completed.")
     # Sprawdź czy tłumaczenie zawiera zbyt wiele nienaruszonych angielskich słów
     if str(lang or "").lower() in latin_langs and en_len > 15 and tr != en:
-        en_words_set = set(w.lower() for w in re.findall(r"[a-zA-Z]{3,}", en))
-        tr_words_list = re.findall(r"[a-zA-Z]{3,}", tr)
+        domain = _key_domain(key)
+        is_name_like_domain = str(key or "").endswith((".name", ".title")) and domain in _DOMAIN_IDENTICAL_EXEMPT_DOMAINS
+        en_words_set = {
+            w.lower() for w in re.findall(r"[a-zA-Z]{3,}", en)
+            if not _is_world_term_token(w)
+        }
+        tr_words_list = [
+            w for w in re.findall(r"[a-zA-Z]{3,}", tr)
+            if not _is_world_term_token(w)
+        ]
         if len(tr_words_list) >= 3 and en_words_set:
-            # Ile słów z tłumaczenia jest identycznych z EN (poza nazwami własnymi)
-            en_kept = sum(1 for w in tr_words_list if w.lower() in en_words_set and not w[0:1].isupper())
+            en_kept = sum(1 for w in tr_words_list if w.lower() in en_words_set)
             en_kept_ratio = en_kept / len(tr_words_list) if tr_words_list else 0
-            if en_kept_ratio > 0.6:
+            en_func_count = _count_en_function_words(tr_words_list, lang_lower)
+            mixed_threshold = 0.82 if is_name_like_domain else 0.60
+            if en_kept_ratio > mixed_threshold and (en_func_count >= 1 or not is_name_like_domain):
                 issues.append({
                     "type": "mixed_language",
                     "severity": "HIGH",
@@ -15196,15 +15220,16 @@ def detect_suspicious(en_text: str, translated_text: str, lang: str, key: str = 
     # S20: partial_translation_mix — FR/RO "pile de bones", "livre de necromantic rituals"
     # Wykrywa genuine, gdzie >70% słów pochodzi z EN (częściowe tłumaczenie word-by-word)
     if tr != en and not tr.startswith("[") and tr_len > 10:
-        en_words_s20 = en.lower().split()
-        tr_words_s20 = tr.lower().split()
-        if len(en_words_s20) >= 3 and len(tr_words_s20) >= 3:
-            common_s20 = sum(1 for w in tr_words_s20 if w in en_words_s20)
-            ratio_s20 = common_s20 / len(tr_words_s20) if tr_words_s20 else 0
-            if ratio_s20 > 0.7 and common_s20 >= 3:
-                # Wyjątek: nazwy własne (Proper Nouns) — jeśli wszystkie wspólne słowa zaczynają się wielką
-                proper_nouns = sum(1 for w in tr_words_s20 if w in en_words_s20 and w[0].isupper())
-                if proper_nouns < common_s20 * 0.8:
+        domain = _key_domain(key)
+        is_name_like_domain = str(key or "").endswith((".name", ".title")) and domain in _DOMAIN_IDENTICAL_EXEMPT_DOMAINS
+        if not is_name_like_domain:
+            en_words_s20 = [w for w in re.findall(r"[a-zA-Z]{3,}", en.lower()) if not _is_world_term_token(w)]
+            tr_words_s20 = [w for w in re.findall(r"[a-zA-Z]{3,}", tr.lower()) if not _is_world_term_token(w)]
+            if len(en_words_s20) >= 3 and len(tr_words_s20) >= 3:
+                en_set_s20 = set(en_words_s20)
+                common_s20 = sum(1 for w in tr_words_s20 if w in en_set_s20)
+                ratio_s20 = common_s20 / len(tr_words_s20) if tr_words_s20 else 0
+                if ratio_s20 > 0.7 and common_s20 >= 3:
                     issues.append({
                         "type": "partial_translation_mix",
                         "severity": "HIGH",
@@ -22031,7 +22056,7 @@ for e in entries:
             issue_counter["identical_to_en"] += 1
             lang_issue_counter[lang] += 1
 
-    if re.search(r"\?\?\?|\[[A-Z]{2,}(?:[-_][A-Z]{2,})?\]|TODO|FIXME", tr):
+    if re.search(r"\?\?\?|\[[A-Z]{2,}(?:[-_][A-Z]{2,})?\]|FIXME|TODO[:_][A-Z0-9_]+", tr):
         issues.append({"key": key, "lang": lang, "type": "artifact_token", "en": en, "translated": tr})
         issue_counter["artifact_token"] += 1
         lang_issue_counter[lang] += 1

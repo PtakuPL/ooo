@@ -75142,5 +75142,61 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T00:29:47.893859Z"
+  },
+  "scripts.construction_kits.telescope": {
+    "src_hash": "a34789abbe32970dadf481a236514520",
+    "text": "Telescopul pare să fie singurul lucru care lipsește din această cameră.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:53:27.594226Z"
+  },
+  "scripts.create_npc.msg_1": {
+    "src_hash": "1036c9df15267ba8f1169676ff135099",
+    "text": "Nu s-a putut deschide fișierul hartă NPC.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:53:27.594783Z"
+  },
+  "scripts.create_npc.msg_2": {
+    "src_hash": "2d5d25e4fd5fdc939c248642ebe3c0c7",
+    "text": "Fișierul hartă NPC este nevalid: lipsește {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:53:27.595653Z"
+  },
+  "scripts.create_npc.msg_3": {
+    "src_hash": "93a9ab9d0001e8164d9984caa70e670d",
+    "text": "Nu s-a putut salva fișierul hartă NPC.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:53:27.596224Z"
+  },
+  "scripts.create_spawn.msg_1": {
+    "src_hash": "1c37ae71883f3c3aaf4b2a7c9d64cb2d",
+    "text": "Spawn creat pentru monstrul {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:53:33.048254Z"
+  },
+  "scripts.creaturescripts_arena_kill.say_1": {
+    "src_hash": "eb470d42efa4e19ee603b53a491219d3",
+    "text": "Victorie! Treceți prin noul teleporter în camera alăturată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:53:33.049436Z"
+  },
+  "scripts.creaturescripts_astral_source.say_1": {
+    "src_hash": "34b8fc0dfa46bb9216f7409ba793cc24",
+    "text": "Fără puterea sursei, Gliful își pierde protecția!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:53:33.050479Z"
   }
 }

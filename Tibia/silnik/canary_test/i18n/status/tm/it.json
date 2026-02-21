@@ -83054,5 +83054,77 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T00:41:18.688825Z"
+  },
+  "scripts.creaturescripts_arena_kill.say_1": {
+    "src_hash": "eb470d42efa4e19ee603b53a491219d3",
+    "text": "Vittoria! Attraversa il nuovo teletrasporto nella stanza successiva.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:50:21.710719Z"
+  },
+  "scripts.creaturescripts_astral_source.say_1": {
+    "src_hash": "34b8fc0dfa46bb9216f7409ba793cc24",
+    "text": "Senza il potere della fonte il Glifo perde la sua protezione!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:50:21.711533Z"
+  },
+  "scripts.creaturescripts_astral_source.say_2": {
+    "src_hash": "1e95efd313c12d39af90325f8d166673",
+    "text": "Il tuo danno ha distorto la fonte e impedisce al Glifo di attingere al suo potere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:50:21.712237Z"
+  },
+  "scripts.creaturescripts_bosses_kill.msg_1": {
+    "src_hash": "560c7f8b77eb2ce7d06b77389dbee354",
+    "text": "Hai sconfitto {}. Puoi sfidare di nuovo questo boss in {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:50:28.596071Z"
+  },
+  "scripts.creaturescripts_bosses_killed.msg_1": {
+    "src_hash": "51ab2fd42338a5eaf932b1e8a79cbd69",
+    "text": "Congratulazioni! Hai vinto un costume da difensore in decomposizione.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:50:28.596653Z"
+  },
+  "scripts.creaturescripts_count_vlarkorth.say_1": {
+    "src_hash": "2b749a06d93fda229182ac0f69afa81e",
+    "text": "Affronta la tua stessa oscurità!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:50:28.597163Z"
+  },
+  "scripts.creaturescripts_death_dragon.say_1": {
+    "src_hash": "286db7d06f20adf2789cfa4652e1472b",
+    "text": "Il potere di Ragiaz fa rivivere il suo servitore!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:50:28.597653Z"
+  },
+  "scripts.creaturescripts_death_dragon_essence.say_1": {
+    "src_hash": "b2a4250fad16e44b158e2875c7069ba9",
+    "text": "ATTENZIONE! IL PRIMO DRAGO SI AVVICINA!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:50:28.598162Z"
+  },
+  "scripts.creaturescripts_depolarized_death.say_1": {
+    "src_hash": "69e223315b6235cac3b4dee668b2f3aa",
+    "text": "Hai raggiunto abbastanza cariche per procedere ulteriormente nella distruzione!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:50:31.100917Z"
   }
 }

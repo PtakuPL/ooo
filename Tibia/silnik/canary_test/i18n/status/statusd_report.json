@@ -1,75 +1,75 @@
 {
-  "timestamp": "2026-02-21T00:47:28.882292Z",
+  "timestamp": "2026-02-21T00:54:58.418817Z",
   "version": "statusd-mvp-1.0",
   "worker": {
-    "pid": 643607,
-    "heartbeat_at": "2026-02-21T00:47:13Z",
-    "heartbeat_age_s": 15.9,
-    "cycle": 5,
+    "pid": 661274,
+    "heartbeat_at": "2026-02-21T00:53:34Z",
+    "heartbeat_age_s": 84.4,
+    "cycle": 1,
     "mode": "continuous",
     "category": "?",
     "pid_alive": true
   },
   "guardian": {
     "state": "degraded",
-    "throughput_per_h": 1300.0,
-    "guard_fail_rate_pct": 50.6,
+    "throughput_per_h": 984.0,
+    "guard_fail_rate_pct": 54.9,
     "issues": [
-      "high_guard_fail_rate (50.6% > 15%)"
+      "high_guard_fail_rate (54.9% > 15%)"
     ]
   },
   "translation_kpi": {
     "window_entries": 200,
-    "total_translated": 3450,
-    "total_guard_fail": 5769,
-    "guard_fail_rate_pct": 62.58,
+    "total_translated": 3436,
+    "total_guard_fail": 5798,
+    "guard_fail_rate_pct": 62.79,
     "per_lang": {
+      "es": {
+        "translated": 390,
+        "guard_fail": 1930,
+        "cycles": 32
+      },
+      "pl": {
+        "translated": 487,
+        "guard_fail": 2421,
+        "cycles": 37
+      },
+      "it": {
+        "translated": 621,
+        "guard_fail": 281,
+        "cycles": 36
+      },
       "ru": {
         "translated": 927,
         "guard_fail": 375,
         "cycles": 37
       },
       "ro": {
-        "translated": 434,
-        "guard_fail": 496,
+        "translated": 440,
+        "guard_fail": 490,
         "cycles": 35
       },
       "sv": {
-        "translated": 292,
-        "guard_fail": 100,
-        "cycles": 13
-      },
-      "sr": {
-        "translated": 334,
-        "guard_fail": 206,
+        "translated": 267,
+        "guard_fail": 95,
         "cycles": 12
       },
-      "pl": {
-        "translated": 470,
-        "guard_fail": 2445,
-        "cycles": 38
-      },
-      "es": {
-        "translated": 385,
-        "guard_fail": 1883,
-        "cycles": 30
-      },
-      "it": {
-        "translated": 608,
-        "guard_fail": 264,
-        "cycles": 35
+      "sr": {
+        "translated": 304,
+        "guard_fail": 206,
+        "cycles": 11
       }
     }
   },
   "adaptive_batch": {
     "batch_size": 5,
-    "guard_fail_rate": 56.68,
-    "reason": "decrease_high_fail_rate=56.7%"
+    "guard_fail_rate": 53.59,
+    "reason": "decrease_high_fail_rate=53.6%"
   },
   "dispatch": {
-    "last_target": "pl:achievements.json",
-    "cycle_counter": 6789,
-    "pending_total": 664,
+    "last_target": "ro:raids.json",
+    "cycle_counter": 6797,
+    "pending_total": 131,
     "candidates": 167,
     "skipped_backoff": 11,
     "skipped_guard_fail": 0,
@@ -100,7 +100,7 @@
         "es": 85.16,
         "ru": 50.45,
         "ro": 43.98,
-        "it": 53.01,
+        "it": 53.03,
         "sr": 45.58,
         "sv": 29.47
       }
@@ -208,7 +208,7 @@
       "en_copy": 3721
     },
     "it": {
-      "coverage_pct": 53.01,
+      "coverage_pct": 53.03,
       "missing": 0,
       "en_copy": 2124
     },
@@ -278,14 +278,14 @@
       "en_copy": 2652
     },
     "ro": {
-      "coverage_pct": 43.98,
+      "coverage_pct": 44.0,
       "missing": 0,
       "en_copy": 2338
     },
     "ru": {
-      "coverage_pct": 50.45,
+      "coverage_pct": 50.54,
       "missing": 0,
-      "en_copy": 1512
+      "en_copy": 1468
     },
     "sk": {
       "coverage_pct": 5.31,
@@ -392,7 +392,7 @@
     "npc_total": 1027,
     "npc_migrated": 699,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-02-21T00:47:29.078748Z",
+    "statusd_live_snapshot_at_utc": "2026-02-21T00:54:58.557123Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -591,8 +591,8 @@
       },
       "it": {
         "server_keys": 49731,
-        "server_translated": 26988,
-        "server_pct": 54.27,
+        "server_translated": 26997,
+        "server_pct": 54.29,
         "client_keys": 3855,
         "client_translated": 1419,
         "client_pct": 36.81
@@ -703,16 +703,16 @@
       },
       "ro": {
         "server_keys": 49731,
-        "server_translated": 22197,
-        "server_pct": 44.63,
+        "server_translated": 22204,
+        "server_pct": 44.65,
         "client_keys": 3855,
         "client_translated": 1372,
         "client_pct": 35.59
       },
       "ru": {
         "server_keys": 49731,
-        "server_translated": 24236,
-        "server_pct": 48.73,
+        "server_translated": 24280,
+        "server_pct": 48.82,
         "client_keys": 3855,
         "client_translated": 2800,
         "client_pct": 72.63
@@ -849,7 +849,7 @@
   },
   "repair_queue": {
     "available": true,
-    "latest_timestamp": "2026-02-21T00:45:49.958961Z",
+    "latest_timestamp": "2026-02-21T00:48:55.734673Z",
     "entries_total": 700,
     "entries_by_lang": {
       "es": 269,
@@ -911,8 +911,8 @@
       "key": "es:npc.json",
       "identical_to_en": 43
     },
-    "history_samples_total": 1177,
-    "history_latest_timestamp": "2026-02-21T00:45:49.958961Z",
+    "history_samples_total": 1178,
+    "history_latest_timestamp": "2026-02-21T00:48:55.734673Z",
     "stagnation": {
       "window_hours": 6.0,
       "min_samples": 6,
@@ -920,16 +920,16 @@
       "detected": false,
       "reason": "window_too_short",
       "top_key": "es:npc.json",
-      "sample_count": 130,
-      "span_hours": 5.979,
+      "sample_count": 129,
+      "span_hours": 5.959,
       "top_locked_in_window": true,
       "baseline_count": 51,
       "latest_count": 43,
       "min_count_seen": 43,
       "best_drop": 8,
       "latest_drop": 8,
-      "window_start": "2026-02-20T18:47:05.312670Z",
-      "window_end": "2026-02-21T00:45:49.958961Z"
+      "window_start": "2026-02-20T18:51:23.815879Z",
+      "window_end": "2026-02-21T00:48:55.734673Z"
     }
   },
   "quality_watch": {
@@ -938,55 +938,55 @@
     "critical_count": 15000,
     "rate_warn_pct": 40.0,
     "rate_crit_pct": 85.0,
-    "entries": 813,
-    "translated_total": 16763,
-    "suspicious_high_total": 77805,
-    "suspicious_high_rate_pct": 464.147,
+    "entries": 801,
+    "translated_total": 16425,
+    "suspicious_high_total": 75456,
+    "suspicious_high_rate_pct": 459.397,
     "status": "spike",
     "severity": "critical",
     "worst_severity": "critical",
     "top_langs": [
       {
         "lang": "ro",
-        "suspicious_high": 33583
+        "suspicious_high": 32273
       },
       {
         "lang": "es",
-        "suspicious_high": 19176
+        "suspicious_high": 18841
       },
       {
         "lang": "ru",
-        "suspicious_high": 11059
+        "suspicious_high": 10688
       },
       {
         "lang": "pl",
-        "suspicious_high": 9223
+        "suspicious_high": 9042
       },
       {
         "lang": "it",
-        "suspicious_high": 2725
+        "suspicious_high": 2643
       },
       {
         "lang": "sv",
-        "suspicious_high": 1104
+        "suspicious_high": 1064
       },
       {
         "lang": "sr",
-        "suspicious_high": 935
+        "suspicious_high": 905
       }
     ],
     "top_categories": [
       {
         "category": "items.json",
-        "suspicious_high": 48698
+        "suspicious_high": 46957
       },
       {
         "category": "npc.json",
-        "suspicious_high": 14495
+        "suspicious_high": 14007
       },
       {
         "category": "monsters.json",
-        "suspicious_high": 11093
+        "suspicious_high": 10902
       },
       {
         "category": "server.json",
@@ -994,19 +994,19 @@
       },
       {
         "category": "scripts.json",
-        "suspicious_high": 608
+        "suspicious_high": 654
       },
       {
         "category": "spells.json",
-        "suspicious_high": 572
+        "suspicious_high": 554
       },
       {
         "category": "otclient_modules.json",
-        "suspicious_high": 453
+        "suspicious_high": 477
       },
       {
         "category": "html.json",
-        "suspicious_high": 193
+        "suspicious_high": 209
       },
       {
         "category": "questlog.json",
@@ -1020,74 +1020,74 @@
     "per_lang": [
       {
         "lang": "ro",
-        "suspicious_high": 33583,
-        "translated": 1904,
-        "rate_pct": 1763.813,
+        "suspicious_high": 32273,
+        "translated": 1864,
+        "rate_pct": 1731.384,
         "severity": "critical"
       },
       {
         "lang": "es",
-        "suspicious_high": 19176,
-        "translated": 4952,
-        "rate_pct": 387.237,
+        "suspicious_high": 18841,
+        "translated": 4835,
+        "rate_pct": 389.679,
         "severity": "critical"
       },
       {
         "lang": "ru",
-        "suspicious_high": 11059,
-        "translated": 3396,
-        "rate_pct": 325.648,
+        "suspicious_high": 10688,
+        "translated": 3336,
+        "rate_pct": 320.384,
         "severity": "critical"
       },
       {
         "lang": "pl",
-        "suspicious_high": 9223,
-        "translated": 1944,
-        "rate_pct": 474.434,
+        "suspicious_high": 9042,
+        "translated": 1941,
+        "rate_pct": 465.842,
         "severity": "critical"
       },
       {
         "lang": "it",
-        "suspicious_high": 2725,
-        "translated": 2591,
-        "rate_pct": 105.172,
+        "suspicious_high": 2643,
+        "translated": 2533,
+        "rate_pct": 104.343,
         "severity": "critical"
       },
       {
         "lang": "sv",
-        "suspicious_high": 1104,
-        "translated": 889,
-        "rate_pct": 124.184,
+        "suspicious_high": 1064,
+        "translated": 859,
+        "rate_pct": 123.865,
         "severity": "critical"
       },
       {
         "lang": "sr",
-        "suspicious_high": 935,
-        "translated": 1087,
-        "rate_pct": 86.017,
+        "suspicious_high": 905,
+        "translated": 1057,
+        "rate_pct": 85.62,
         "severity": "critical"
       }
     ],
     "per_domain": [
       {
         "domain": "items.json",
-        "suspicious_high": 48698,
-        "translated": 2488,
-        "rate_pct": 1957.315,
+        "suspicious_high": 46957,
+        "translated": 2402,
+        "rate_pct": 1954.913,
         "severity": "critical"
       },
       {
         "domain": "npc.json",
-        "suspicious_high": 14495,
-        "translated": 6781,
-        "rate_pct": 213.759,
+        "suspicious_high": 14007,
+        "translated": 6528,
+        "rate_pct": 214.568,
         "severity": "critical"
       },
       {
         "domain": "monsters.json",
-        "suspicious_high": 11093,
-        "translated": 3160,
-        "rate_pct": 351.044,
+        "suspicious_high": 10902,
+        "translated": 3070,
+        "rate_pct": 355.114,
         "severity": "critical"
       },
       {
@@ -1099,30 +1099,30 @@
       },
       {
         "domain": "scripts.json",
-        "suspicious_high": 608,
-        "translated": 757,
-        "rate_pct": 80.317,
+        "suspicious_high": 654,
+        "translated": 814,
+        "rate_pct": 80.344,
         "severity": "warning"
       },
       {
         "domain": "spells.json",
-        "suspicious_high": 572,
-        "translated": 135,
-        "rate_pct": 423.704,
+        "suspicious_high": 554,
+        "translated": 134,
+        "rate_pct": 413.433,
         "severity": "critical"
       },
       {
         "domain": "otclient_modules.json",
-        "suspicious_high": 453,
-        "translated": 291,
-        "rate_pct": 155.67,
+        "suspicious_high": 477,
+        "translated": 294,
+        "rate_pct": 162.245,
         "severity": "critical"
       },
       {
         "domain": "html.json",
-        "suspicious_high": 193,
-        "translated": 324,
-        "rate_pct": 59.568,
+        "suspicious_high": 209,
+        "translated": 354,
+        "rate_pct": 59.04,
         "severity": "warning"
       },
       {
@@ -1140,7 +1140,7 @@
         "severity": "warning"
       }
     ],
-    "latest_timestamp": "2026-02-21T00:47:21.446245Z"
+    "latest_timestamp": "2026-02-21T00:53:33.313907Z"
   },
   "priority_gate_watch": {
     "available": true,
@@ -1156,22 +1156,22 @@
       "sv"
     ],
     "pending_key": "es,it,pl,ro,ru,sr,sv",
-    "cycle_counter": 6789,
+    "cycle_counter": 6797,
     "start_cycle": 818,
-    "cycle_delta": 5971,
+    "cycle_delta": 5979,
     "started_at": "2026-02-16T22:15:50.792950Z",
-    "active_minutes": 5911.635,
+    "active_minutes": 5919.127,
     "baseline_quality_rate_pct": 228.112,
-    "current_quality_rate_pct": 464.147,
+    "current_quality_rate_pct": 459.397,
     "best_quality_rate_pct": 228.112,
-    "quality_drop_pct": -236.035,
+    "quality_drop_pct": -231.285,
     "best_quality_drop_pct": 0.0,
     "lang_completion": {
       "pl": 87.87,
       "es": 85.16,
       "ru": 50.45,
       "ro": 43.98,
-      "it": 53.01,
+      "it": 53.03,
       "sr": 45.58,
       "sv": 29.47
     },
@@ -1188,36 +1188,36 @@
   "recent_errors": [
     {
       "action": "placeholder=0 command=0 pipe=0",
-      "category": "ro",
-      "cycle": 4,
+      "category": "es",
+      "cycle": 1,
       "domain": "AUTO",
-      "error": "guard_fail=6",
-      "file": "quests.json",
+      "error": "guard_fail=19",
+      "file": "otclient_modules.json",
       "phase": "AUTO_TRANSLATE",
       "stage": "AUTO_TRANSLATE_GUARD",
-      "t": "2026-02-21T00:45:01Z"
+      "t": "2026-02-21T00:50:00Z"
     },
     {
       "action": "review placeholder/en-copy backlog",
-      "category": "pl",
-      "cycle": 5,
+      "category": "ro",
+      "cycle": 1,
       "domain": "AUTO",
-      "error": "strict_skipped_done=133 translated=10",
-      "file": "questlog.json",
+      "error": "strict_skipped_done=968 translated=14",
+      "file": "scripts.json",
       "phase": "AUTO_TRANSLATE",
       "stage": "AUTO_TRANSLATE_NO_PROGRESS",
-      "t": "2026-02-21T00:47:09Z"
+      "t": "2026-02-21T00:53:34Z"
     },
     {
       "action": "placeholder=0 command=0 pipe=0",
-      "category": "pl",
-      "cycle": 5,
+      "category": "ro",
+      "cycle": 1,
       "domain": "AUTO",
-      "error": "guard_fail=20",
-      "file": "questlog.json",
+      "error": "guard_fail=16",
+      "file": "scripts.json",
       "phase": "AUTO_TRANSLATE",
       "stage": "AUTO_TRANSLATE_GUARD",
-      "t": "2026-02-21T00:47:10Z"
+      "t": "2026-02-21T00:53:34Z"
     }
   ],
   "thresholds_snapshot": {

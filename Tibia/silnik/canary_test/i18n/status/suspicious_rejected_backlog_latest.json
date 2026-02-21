@@ -1,62 +1,51 @@
 {
-  "timestamp": "2026-02-21T00:47:20.846450Z",
-  "language": "es",
-  "json_file": "questlog.json",
+  "timestamp": "2026-02-21T00:53:12.108042Z",
+  "language": "ro",
+  "json_file": "scripts.json",
   "lookback_lines": 8000,
   "min_hits": 2,
   "max_keys": 400,
   "issue_types_filter": [],
-  "selected_keys": 9,
+  "selected_keys": 7,
   "issue_type_totals": {
-    "word_salad": 35,
-    "diacritics_missing": 5,
-    "contains_tibia_proper_noun": 5
+    "identical_to_en": 83,
+    "word_salad": 23
   },
   "keys": [
     {
-      "key": "questlog.quest_31.mission_7.state_3",
-      "hits": 5,
+      "key": "gamestore.error.purchase_cancelled",
+      "hits": 23,
       "top_issue": "word_salad"
     },
     {
-      "key": "questlog.quest_34.mission_4.state_3",
-      "hits": 5,
-      "top_issue": "word_salad"
+      "key": "scripts.action_cushion.say_1",
+      "hits": 21,
+      "top_issue": "identical_to_en"
     },
     {
-      "key": "questlog.quest_46.mission_2.state_2",
-      "hits": 5,
-      "top_issue": "word_salad"
+      "key": "scripts.action_cat_basket.say_1",
+      "hits": 21,
+      "top_issue": "identical_to_en"
     },
     {
-      "key": "questlog.quest_11.mission_71.state_3",
-      "hits": 5,
-      "top_issue": "word_salad"
+      "key": "scripts.actions_lever_barrel.say_1",
+      "hits": 13,
+      "top_issue": "identical_to_en"
     },
     {
-      "key": "questlog.quest_31.mission_9.state_3",
-      "hits": 5,
-      "top_issue": "contains_tibia_proper_noun"
+      "key": "scripts.actions_palanca.msg_1",
+      "hits": 10,
+      "top_issue": "identical_to_en"
     },
     {
-      "key": "questlog.quest_24.mission_9.state_3",
-      "hits": 5,
-      "top_issue": "word_salad"
+      "key": "scripts.actions_pyramids1.msg_1",
+      "hits": 9,
+      "top_issue": "identical_to_en"
     },
     {
-      "key": "questlog.quest_11.mission_67.state_3",
-      "hits": 5,
-      "top_issue": "word_salad"
-    },
-    {
-      "key": "questlog.quest_34.mission_7.description_dynamic",
-      "hits": 5,
-      "top_issue": "diacritics_missing"
-    },
-    {
-      "key": "questlog.quest_5.mission_8.state_18",
-      "hits": 5,
-      "top_issue": "word_salad"
+      "key": "scripts.actions_resonance_chamber.say_1",
+      "hits": 9,
+      "top_issue": "identical_to_en"
     }
   ]
 }

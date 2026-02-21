@@ -1,8 +1,8 @@
 {
-  "total_cycles": 5,
+  "total_cycles": 1,
   "mode": "AUTO_TRANSLATE",
-  "category": "pl",
-  "last_update": "2026-02-21T01:47:28.454559",
+  "category": "ro",
+  "last_update": "2026-02-21T01:55:51.893748",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,14 +26,99 @@
     "keys_to_sync": 0
   },
   "auto_translate": {
-    "language": "pl",
-    "json_file": "questlog.json",
-    "keys_to_translate": 1805,
-    "guard_fail": 0,
+    "language": "ro",
+    "json_file": "scripts.json",
+    "keys_to_translate": 1220,
+    "guard_fail": 16,
     "strict_missing_key": 0,
     "strict_blocker": "",
-    "recent_translated": 0,
-    "recent_examples": []
+    "recent_translated": 14,
+    "recent_examples": [
+      {
+        "key": "scripts.action_horn.say_4",
+        "en": "Grr.",
+        "translated": "Grr.",
+        "source": "tm"
+      },
+      {
+        "key": "scripts.actions_bosses_levers.say_1",
+        "en": "SPLASH!",
+        "translated": "SPLASH!",
+        "source": "tm"
+      },
+      {
+        "key": "scripts.actions_demon_oak.say_1",
+        "en": "-krrrrak-",
+        "translated": "-krrrrak-",
+        "source": "tm"
+      },
+      {
+        "key": "scripts.banana_chocolate_shake.say_1",
+        "en": "Slurp.",
+        "translated": "Slurp.",
+        "source": "tm"
+      },
+      {
+        "key": "scripts.blessed_steak.say_1",
+        "en": "Chomp.",
+        "translated": "Chomp.",
+        "source": "tm"
+      },
+      {
+        "key": "scripts.blueberry_cupcake.say_1",
+        "en": "Mmmm.",
+        "translated": "Mmmm.",
+        "source": "tm"
+      },
+      {
+        "key": "scripts.carrot_cake.say_1",
+        "en": "Mmmm.",
+        "translated": "Mmmm.",
+        "source": "tm"
+      },
+      {
+        "key": "scripts.construction_kits.telescope",
+        "en": "The telescope just looks like it was the one thing missing from this room.",
+        "translated": "Telescopul pare s\u0103 fie singurul lucru care lipse\u0219te din aceast\u0103 camer\u0103.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.create_npc.msg_1",
+        "en": "Could not open NPC map file.",
+        "translated": "Nu s-a putut deschide fi\u0219ierul hart\u0103 NPC.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.create_npc.msg_2",
+        "en": "NPC map file is invalid: missing {}.",
+        "translated": "Fi\u0219ierul hart\u0103 NPC este nevalid: lipse\u0219te {}.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.create_npc.msg_3",
+        "en": "Could not save NPC map file.",
+        "translated": "Nu s-a putut salva fi\u0219ierul hart\u0103 NPC.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.create_spawn.msg_1",
+        "en": "Spawn created for monster {}.",
+        "translated": "Spawn creat pentru monstrul {}.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.creaturescripts_arena_kill.say_1",
+        "en": "Victory! Head through the new teleporter into the next room.",
+        "translated": "Victorie! Trece\u021bi prin noul teleporter \u00een camera al\u0103turat\u0103.",
+        "source": "google_translate"
+      },
+      {
+        "key": "scripts.creaturescripts_astral_source.say_1",
+        "en": "Without the power of the source the Glyph loses its protection!",
+        "translated": "F\u0103r\u0103 puterea sursei, Gliful \u00ee\u0219i pierde protec\u021bia!",
+        "source": "google_translate"
+      }
+    ]
   },
   "idle": {
     "new_files_detected": 152,

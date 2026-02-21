@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T00:47:26.652376Z",
-  "built_cycle": 5,
+  "timestamp": "2026-02-21T00:53:36.976470Z",
+  "built_cycle": 1,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -570,9 +570,9 @@
     {
       "lang": "it",
       "json_file": "scripts.json",
-      "pending_total": 1185,
-      "todo": 1185,
-      "simple_todo": 528,
+      "pending_total": 1176,
+      "todo": 1176,
+      "simple_todo": 525,
       "missing_in_lang": 0
     },
     {
@@ -778,8 +778,8 @@
     {
       "lang": "ru",
       "json_file": "server.json",
-      "pending_total": 891,
-      "todo": 891,
+      "pending_total": 847,
+      "todo": 847,
       "simple_todo": 204,
       "missing_in_lang": 0
     },
@@ -962,9 +962,9 @@
     {
       "lang": "ro",
       "json_file": "scripts.json",
-      "pending_total": 1220,
-      "todo": 1220,
-      "simple_todo": 556,
+      "pending_total": 1213,
+      "todo": 1213,
+      "simple_todo": 554,
       "missing_in_lang": 0
     },
     {

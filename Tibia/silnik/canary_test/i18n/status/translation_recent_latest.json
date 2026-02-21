@@ -1,132 +1,96 @@
 {
-  "timestamp": "2026-02-21T00:47:21.450159Z",
-  "language": "es",
-  "json_file": "questlog.json",
-  "translated": 30,
+  "timestamp": "2026-02-21T00:53:33.316527Z",
+  "language": "ro",
+  "json_file": "scripts.json",
+  "translated": 14,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "questlog.quest_11.mission_18.name",
-      "en": "Paw and Fur: Ice Golems",
-      "translated": "Paw and Fur: Ice Golems",
+      "key": "scripts.action_horn.say_4",
+      "en": "Grr.",
+      "translated": "Grr.",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_22.name",
-      "en": "Paw and Fur: Wyverns",
-      "translated": "Paw and Fur: Wyverns",
+      "key": "scripts.actions_bosses_levers.say_1",
+      "en": "SPLASH!",
+      "translated": "SPLASH!",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_26.name",
-      "en": "Paw and Fur: Bonebeasts",
-      "translated": "Paw and Fur: Bonebeasts",
+      "key": "scripts.actions_demon_oak.say_1",
+      "en": "-krrrrak-",
+      "translated": "-krrrrak-",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_31.name",
-      "en": "Paw and Fur: Werewolves",
-      "translated": "Paw and Fur: Werewolves",
+      "key": "scripts.banana_chocolate_shake.say_1",
+      "en": "Slurp.",
+      "translated": "Slurp.",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_32.name",
-      "en": "Paw and Fur: Nightmares",
-      "translated": "Paw and Fur: Nightmares",
+      "key": "scripts.blessed_steak.say_1",
+      "en": "Chomp.",
+      "translated": "Chomp.",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_33.name",
-      "en": "Paw and Fur: Hellspawns",
-      "translated": "Paw and Fur: Hellspawns",
+      "key": "scripts.blueberry_cupcake.say_1",
+      "en": "Mmmm.",
+      "translated": "Mmmm.",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_34.name",
-      "en": "Paw and Fur: Lizards",
-      "translated": "Paw and Fur: Lizards",
+      "key": "scripts.carrot_cake.say_1",
+      "en": "Mmmm.",
+      "translated": "Mmmm.",
       "source": "tm"
     },
     {
-      "key": "questlog.quest_11.mission_35.name",
-      "en": "Paw and Fur: Stampors",
-      "translated": "Paw and Fur: Stampors",
-      "source": "tm"
+      "key": "scripts.construction_kits.telescope",
+      "en": "The telescope just looks like it was the one thing missing from this room.",
+      "translated": "Telescopul pare să fie singurul lucru care lipsește din această cameră.",
+      "source": "google_translate"
     },
     {
-      "key": "questlog.quest_11.mission_38.name",
-      "en": "Paw and Fur: Hydras",
-      "translated": "Paw and Fur: Hydras",
-      "source": "tm"
+      "key": "scripts.create_npc.msg_1",
+      "en": "Could not open NPC map file.",
+      "translated": "Nu s-a putut deschide fișierul hartă NPC.",
+      "source": "google_translate"
     },
     {
-      "key": "questlog.quest_11.mission_40.name",
-      "en": "Paw and Fur: Medusae",
-      "translated": "Paw and Fur: Medusae",
-      "source": "tm"
+      "key": "scripts.create_npc.msg_2",
+      "en": "NPC map file is invalid: missing {}.",
+      "translated": "Fișierul hartă NPC este nevalid: lipsește {}.",
+      "source": "google_translate"
     },
     {
-      "key": "questlog.quest_11.mission_41.name",
-      "en": "Paw and Fur: Behemoths",
-      "translated": "Paw and Fur: Behemoths",
-      "source": "tm"
+      "key": "scripts.create_npc.msg_3",
+      "en": "Could not save NPC map file.",
+      "translated": "Nu s-a putut salva fișierul hartă NPC.",
+      "source": "google_translate"
     },
     {
-      "key": "questlog.quest_11.mission_42.name",
-      "en": "Paw and Fur: Sea Serpents",
-      "translated": "Paw and Fur: Sea Serpents",
-      "source": "tm"
+      "key": "scripts.create_spawn.msg_1",
+      "en": "Spawn created for monster {}.",
+      "translated": "Spawn creat pentru monstrul {}.",
+      "source": "google_translate"
     },
     {
-      "key": "questlog.quest_11.mission_43.name",
-      "en": "Paw and Fur: Hellhounds",
-      "translated": "Paw and Fur: Hellhounds",
-      "source": "tm"
+      "key": "scripts.creaturescripts_arena_kill.say_1",
+      "en": "Victory! Head through the new teleporter into the next room.",
+      "translated": "Victorie! Treceți prin noul teleporter în camera alăturată.",
+      "source": "google_translate"
     },
     {
-      "key": "questlog.quest_11.mission_45.name",
-      "en": "Paw and Fur: Drakens",
-      "translated": "Paw and Fur: Drakens",
-      "source": "tm"
-    },
-    {
-      "key": "questlog.quest_11.mission_46.name",
-      "en": "Paw and Fur: Destroyers",
-      "translated": "Paw and Fur: Destroyers",
-      "source": "tm"
-    },
-    {
-      "key": "questlog.quest_11.mission_48.name",
-      "en": "Paw and Fur: Demons",
-      "translated": "Paw and Fur: Demons",
-      "source": "tm"
-    },
-    {
-      "key": "questlog.quest_11.mission_50.name",
-      "en": "Paw and Fur: Hide",
-      "translated": "Paw and Fur: Hide",
-      "source": "tm"
-    },
-    {
-      "key": "questlog.quest_11.mission_51.name",
-      "en": "Paw and Fur: Deathbine",
-      "translated": "Paw and Fur: Deathbine",
-      "source": "tm"
-    },
-    {
-      "key": "questlog.quest_11.mission_52.name",
-      "en": "Paw and Fur: The Bloodtusk",
-      "translated": "Paw and Fur: The Bloodtusk",
-      "source": "tm"
-    },
-    {
-      "key": "questlog.quest_11.mission_53.name",
-      "en": "Paw and Fur: Shardhead",
-      "translated": "Paw and Fur: Shardhead",
-      "source": "tm"
+      "key": "scripts.creaturescripts_astral_source.say_1",
+      "en": "Without the power of the source the Glyph loses its protection!",
+      "translated": "Fără puterea sursei, Gliful își pierde protecția!",
+      "source": "google_translate"
     }
   ]
 }

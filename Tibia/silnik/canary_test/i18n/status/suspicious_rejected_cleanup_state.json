@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T11:01:52.922308Z",
-  "last_cycle": 3,
+  "timestamp": "2026-02-21T11:04:29.596207Z",
+  "last_cycle": 4,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [],
@@ -71,7 +71,15 @@
       "monster.orc_sambackpack.name",
       "monster.orewalker.voice_1"
     ],
-    "es|npc.json": [],
+    "es|npc.json": [
+      "npc.a_fading_memory.greet_msg_1",
+      "npc.a_sweaty_cyclops.stdmod_1",
+      "npc.a_sweaty_cyclops.voice_1",
+      "npc.barnabas_dee.say_5",
+      "npc.bozo.stdmod_116",
+      "npc.bozo.stdmod_92",
+      "npc.budrik.say_9"
+    ],
     "sv|npc.json": [
       "npc.a_fluffy_squirrel.farewell_msg_1",
       "npc.a_fluffy_squirrel.walkaway_msg_1",
@@ -733,7 +741,10 @@
       "monster.the_unarmored_voidborn.desc",
       "monster.the_unarmored_voidborn.name"
     ],
-    "es|server.json": [],
+    "es|server.json": [
+      "data.otservbr.global.npc.a.fading.memory.L53.1295",
+      "data.otservbr.global.npc.a.restless.soul.L53.44"
+    ],
     "it|npc.json": [
       "npc.a_fluffy_squirrel.farewell_msg_1",
       "npc.a_fluffy_squirrel.walkaway_msg_1",

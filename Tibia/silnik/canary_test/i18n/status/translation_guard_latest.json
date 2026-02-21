@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-21T10:14:13.574833Z",
-  "cycle": 17,
-  "language": "pl",
-  "json_file": "quests.json",
-  "translated": 1,
+  "timestamp": "2026-02-21T10:19:17.009958Z",
+  "cycle": 18,
+  "language": "es",
+  "json_file": "scripts.json",
+  "translated": 12,
   "placeholders": 0,
-  "guard_fail": 5,
+  "guard_fail": 18,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -13,5 +13,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 609
+  "strict_skipped_done": 2120
 }

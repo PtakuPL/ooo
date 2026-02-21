@@ -1,53 +1,83 @@
 {
-  "timestamp": "2026-02-21T10:17:00.878955Z",
+  "timestamp": "2026-02-21T10:19:15.814513Z",
   "language": "es",
-  "json_file": "npc.json",
-  "translated": 7,
+  "json_file": "scripts.json",
+  "translated": 12,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "npc.a_fading_memory.greet_msg_1",
-      "en": "Oh...",
-      "translated": "Oh...",
+      "key": "scripts.actions_demon_oak.say_1",
+      "en": "-krrrrak-",
+      "translated": "-krrrrak-",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.stdmod_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "scripts.blueberry_cupcake.say_1",
+      "en": "Mmmm.",
+      "translated": "Mmmm.",
       "source": "tm"
     },
     {
-      "key": "npc.a_sweaty_cyclops.voice_1",
-      "en": "Hum hum, huhum",
-      "translated": "Hum hum, hum hum",
+      "key": "scripts.carrot_cake.say_1",
+      "en": "Mmmm.",
+      "translated": "Mmmm.",
       "source": "tm"
     },
     {
-      "key": "npc.barnabas_dee.say_5",
-      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
-      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
+      "key": "scripts.dolls.6511_1",
+      "en": "Ho ho ho",
+      "translated": "Jo jo jo",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_116",
-      "en": "npc.bozo.mission_36_t1",
-      "translated": "npc.bozo.mission_36_t1",
+      "key": "scripts.foods.sound_mmmm",
+      "en": "Mmmm.",
+      "translated": "Mmmm.",
       "source": "tm"
     },
     {
-      "key": "npc.bozo.stdmod_92",
-      "en": "npc.bozo.mission_12_t1",
-      "translated": "npc.bozo.mission_12_t1",
+      "key": "scripts.hireling_foods.sound_blurg",
+      "en": "Blurg.",
+      "translated": "Blurg.",
       "source": "tm"
     },
     {
-      "key": "npc.budrik.say_9",
-      "en": "Zzz...",
-      "translated": "Zzz...",
+      "key": "scripts.hireling_foods.sound_mmmmm",
+      "en": "Mmmmm.",
+      "translated": "Mmmmm.",
+      "source": "tm"
+    },
+    {
+      "key": "scripts.lemon_cupcake.say_1",
+      "en": "Mmmm.",
+      "translated": "Mmmm.",
+      "source": "tm"
+    },
+    {
+      "key": "scripts.lever.say_1",
+      "en": "<crrk>",
+      "translated": "<crrk>",
+      "source": "tm"
+    },
+    {
+      "key": "scripts.lever.say_2",
+      "en": "<squeaak>",
+      "translated": "<squeaak>",
+      "source": "tm"
+    },
+    {
+      "key": "scripts.oriental_trader.arrived_today",
+      "en": "[World Change] Yasir has arrived in %s today!",
+      "translated": "[Cambio mundial] ¡Yasir ha llegado a %s hoy!",
+      "source": "tm"
+    },
+    {
+      "key": "scripts.strawberry_cupcake.say_1",
+      "en": "Mmmm.",
+      "translated": "Mmmm.",
       "source": "tm"
     }
   ]

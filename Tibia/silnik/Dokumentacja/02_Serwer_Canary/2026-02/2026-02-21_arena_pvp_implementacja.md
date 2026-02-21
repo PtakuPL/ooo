@@ -1,7 +1,7 @@
 # ⚔️ Arena PvP — Stan Implementacji
 
-> **Data aktualizacji:** 2026-02-21  
-> **Branch git:** `feature/arena-pvp`  
+> **Data aktualizacji:** 2026-02-21 (Phase 4 done)  
+> **Branch git:** `master`  
 > **Bazuje na:** ARENA_SYSTEM_PLAN.md
 
 ---
@@ -14,7 +14,7 @@
 | 1 | Baza danych (6 tabel SQL) | ✅ DONE |
 | 2 | Core C++ serwera | ✅ DONE (pliki + hooki) |
 | 3 | Matchmaking | ✅ DONE (w ramach Fazy 2) |
-| 4 | Protokół sieciowy (opcodes) | ⬜ TODO |
+| 4 | Protokół sieciowy (opcodes) | ✅ DONE |
 | 5 | Skrypty Lua (tryby, NPC, bindings) | ⬜ TODO |
 | 6 | UI klienta OTClient | ⬜ TODO |
 | 7 | Strona WWW (rankingi) | ⬜ TODO |
@@ -109,13 +109,7 @@
 
 ## ⬜ CO ZOSTAŁO DO ZROBIENIA
 
-### Faza 4 — Protokół sieciowy (NEXT)
-- Implementacja opcode `0xD0` (Client → Server): parseArenaAction()
-- Implementacja opcode `0xDB` (Server → Client): sendArenaData()
-- Sub-actions: OPEN, JOIN_QUEUE, LEAVE_QUEUE, REQUEST_RANKING, REQUEST_HISTORY
-- Deklaracje w protocolgame.hpp
-
-### Faza 5 — Skrypty Lua
+### Faza 5 — Skrypty Lua (NEXT)
 - Lua bindings (Arena.joinQueue, Arena.leaveQueue, player:openArena itd.)
 - Przebudowa arena_2x2.lua i arena_10x10.lua
 - NPC arena_master.lua
@@ -131,6 +125,54 @@
 
 ### Fazy 8-12
 - Anti-cheat, sezony, i18n, testy, mapy, deploy
+
+---
+
+## ✅ FAZA 4 — PROTOKÓŁ SIECIOWY (DONE)
+
+### Co zrobiono:
+- Implementacja `parseArenaAction()` — multiplexowany handler w switch case 0xD0
+- Sub-actions client→server (0x01-0x05): OPEN, JOIN_QUEUE, LEAVE_QUEUE, REQUEST_RANKING, REQUEST_HISTORY
+- Implementacja 7 metod send do klienta (opcode 0xDB, sub-byte multiplexing):
+
+| Metoda | Sub | Opis |
+|--------|-----|------|
+| `sendArenaStatus()` | 0x01 | Stan gracza + rozmiary kolejek + aktywne mecze |
+| `sendArenaStats()` | 0x02 | Pełne statystyki gracza (MMR, W/L/D, streaki, K/D, dmg, heal, punkty) |
+| `sendArenaMatchFound()` | 0x03 | Znaleziono mecz — lista graczy z drużynami |
+| `sendArenaMatchUpdate()` | 0x04 | Scoreboard na żywo (wyniki drużyn + statsy graczy) |
+| `sendArenaRankingData()` | 0x05 | Ranking paginowany (MMR, wins, losses, streaki) |
+| (inline in parse) | 0x06 | Historia meczy gracza (matchId, mode, time, K/D, mmrChange) |
+| `sendArenaMatchResult()` | 0x07 | Wynik końcowy meczu z MMR changes |
+
+### Zmodyfikowane pliki:
+| Plik | Zmiany |
+|------|--------|
+| `protocolgame.hpp` | Include `arena_definitions.hpp`, deklaracja parse + 6 metod send |
+| `protocolgame.cpp` | case 0xD0 w switch, ~270 linii implementacji metod |
+| `arena_match.hpp` | Dodano convenience: `getPlayerCount()`, `getPlayerStats()` (map), `getElapsedSeconds()`, `getTeamScores()`, `getPlayerName()` |
+| `arena_match.cpp` | Implementacja nowych convenience methods |
+
+### Protokół wire-format:
+```
+Client→Server (0xD0):
+  [0xD0][subAction:u8][...data]
+  sub 0x01: open (no data)
+  sub 0x02: join [mode:u8]
+  sub 0x03: leave (no data)
+  sub 0x04: ranking [page:u32][filterMode:u8]
+  sub 0x05: history [page:u32]
+
+Server→Client (0xDB):
+  [0xDB][subType:u8][...data]
+  sub 0x01: status [state:u8][numModes:u8][{mode:u8,queueSize:u16}...][activeMatches:u16]
+  sub 0x02: stats [mmr:i32][wins:u32][losses:u32][draws:u32][winStreak:i32][bestStreak:i32][kills:u32][deaths:u32][damage:i32][healing:i32][points:i32]
+  sub 0x03: matchFound [matchId:u32][mode:u8][playerCount:u8][{pid:u32,team:u8,name:str}...]
+  sub 0x04: matchUpdate [matchId:u32][state:u8][elapsed:u16][numTeams:u8][{team:u8,score:u16}...][numPlayers:u8][{pid:u32,team:u8,kills:u16,deaths:u16,dmg:i32,heal:i32}...]
+  sub 0x05: ranking [page:u32][count:u16][{pid:u32,name:str,mmr:i32,wins:u32,losses:u32,winStreak:i32,bestStreak:i32}...]
+  sub 0x06: history [count:u16][{matchId:u32,mode:u8,startAt:u32,duration:u16,winnerTeam:u8,playerTeam:u8,kills:u16,deaths:u16,dmg:i32,heal:i32,mmrChange:i32}...]
+  sub 0x07: matchResult [matchId:u32][mode:u8][winnerTeam:u8][elapsed:u16][numPlayers:u8][{pid:u32,team:u8,kills:u16,deaths:u16,dmg:i32,heal:i32,mmrChange:i32}...]
+```
 
 ---
 

@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T10:16:59.937149Z",
-  "last_cycle": 17,
+  "timestamp": "2026-02-21T10:19:15.386689Z",
+  "last_cycle": 18,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [],
@@ -154,31 +154,7 @@
     "pl|quests.json": [
       "quests.actions_using_crystals.say_2"
     ],
-    "pl|scripts.json": [
-      "scripts.actions_demon_oak.say_1",
-      "scripts.creaturescripts_rift_invader_death.say_1",
-      "scripts.fluids.say_1",
-      "scripts.hireling_foods.sound_mmmmm",
-      "scripts.hot_cuisine.recipe_1",
-      "scripts.hot_cuisine.recipe_11",
-      "scripts.hot_cuisine.recipe_12",
-      "scripts.hot_cuisine.recipe_13",
-      "scripts.hot_cuisine.recipe_14",
-      "scripts.hot_cuisine.recipe_2",
-      "scripts.hot_cuisine.recipe_3",
-      "scripts.hot_cuisine.recipe_4",
-      "scripts.hot_cuisine.recipe_5",
-      "scripts.hot_cuisine.recipe_6",
-      "scripts.hot_cuisine.recipe_7",
-      "scripts.hot_cuisine.recipe_8",
-      "scripts.hot_cuisine.recipe_9",
-      "scripts.lever.say_1",
-      "scripts.lever.say_2",
-      "scripts.malofur_explosion.say_1",
-      "scripts.malofur_explosion.say_2",
-      "scripts.malofur_explosion.say_3",
-      "scripts.oriental_trader.arrived_today"
-    ],
+    "pl|scripts.json": [],
     "es|scripts.json": [],
     "pl|raids.json": [],
     "it|server.json": [

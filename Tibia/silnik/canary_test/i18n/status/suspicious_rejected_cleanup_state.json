@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T00:42:44.162667Z",
-  "last_cycle": 2,
+  "timestamp": "2026-02-21T00:44:17.327253Z",
+  "last_cycle": 3,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -408,28 +408,8 @@
       "data.otservbr.global.npc.a.restless.soul.L53.44",
       "data.otservbr.global.npc.blind.orc.L102.1517"
     ],
-    "ru|spells.json": [
-      "spell.deepling_spellsinger_skill_reducer.name",
-      "spell.furyosa_deathball.name",
-      "spell.heal_monsters_9x9.name",
-      "spell.megasylvan_yselda_ebeam.name",
-      "spell.megasylvan_yselda_mleech.name",
-      "spell.mooh'tah_master_skill_reducer.name",
-      "spell.prince_drazzak_druid.name",
-      "spell.quara_constrictor_freeze.name",
-      "spell.restoration.words",
-      "spell.srezz_lleecht.name",
-      "spell.tenebris_ultimate.name",
-      "spell.tentuglys_head_energyt.name",
-      "spell.the_pale_count_manadrain.name"
-    ],
-    "it|quests.json": [
-      "quests.actions_boxramp.msg_1",
-      "quests.actions_using_crystals.say_2",
-      "quests.rookie_guard.m06.exit_time",
-      "quests.soul_war.dread_tear_apart",
-      "quests.soul_war.msg_3"
-    ],
+    "ru|spells.json": [],
+    "it|quests.json": [],
     "ro|quests.json": [],
     "sv|server.json": [],
     "sr|server.json": [],

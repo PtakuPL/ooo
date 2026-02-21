@@ -1,7 +1,7 @@
 {
-  "timestamp": 1771636286,
+  "timestamp": 1771636902,
   "ttl_sec": 600,
-  "all_project_files": 20620,
+  "all_project_files": 20617,
   "files_by_type": {
     ".yml": 19,
     ".txt": 83,
@@ -42,7 +42,6 @@
     ".20260214_132041": 1,
     ".prev": 1,
     ".20260214_132040": 1,
-    ".w": 1,
     ".corrupted": 1,
     ".corrupted_backup": 2,
     ".cpp": 377,

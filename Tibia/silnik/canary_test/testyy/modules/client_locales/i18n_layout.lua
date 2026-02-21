@@ -74,7 +74,12 @@ local function isWidgetAlive(widget)
         return false
     end
     if widget.isDestroyed then
-        return not widget:isDestroyed()
+        local ok, destroyed = pcall(function()
+            return widget:isDestroyed()
+        end)
+        if ok then
+            return not destroyed
+        end
     end
     return true
 end

@@ -83782,5 +83782,29 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T01:31:34.071846Z"
+  },
+  "book.otbm.however_immediately_the_first_dragon": {
+    "src_hash": "6e14927b10653fbf6abde369971b7553",
+    "text": "tuttavia immediatamente il primo drago, chiamato Garsharak, si alzò e nel corso del tempo diede alla luce molti altri draghi inferiori",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:39:00.963925Z"
+  },
+  "book.otbm.however_we_are_very_happy": {
+    "src_hash": "ff27dc0212720602c0a0c5bcb3b30567",
+    "text": "Tuttavia, siamo molto felici di possederlo perché ci ha aiutato e ci aiuterà a comprendere la magica rete attorno a Tibia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:39:00.965522Z"
+  },
+  "book.otbm.i_advice_not_to_try": {
+    "src_hash": "44981a362cc714853f0c0da71bae7f0f",
+    "text": "Consiglio di non provarlo finché non si hanno almeno 20 anni di esperienza nella costruzione ferroviaria......<Beh, sembra che tu non corrisponda alle premesse.>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T01:39:00.967282Z"
   }
 }

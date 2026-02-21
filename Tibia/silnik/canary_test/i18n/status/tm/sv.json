@@ -38246,5 +38246,125 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T01:47:36.368493Z"
+  },
+  "npc.tyrias.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Du ser inte så illa ut. Tyvärr, jag kan inte hjälpa dig. Men om du letar efter ytterligare skydd bör du gå på {pilgrimage} av aska eller få skyddet av {twist of fate} här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.539833Z"
+  },
+  "npc.tyrias.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bra. Du är fri att tacka nej till mitt erbjudande.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.540539Z"
+  },
+  "npc.tyrias.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Närhelst du får ett dödligt sår skadas din livskraft och det finns en chans att du tappar bort en del av din utrustning. Med varenda av de fem {blessings} du har kommer denna skada och risken för förlust att minska.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.541960Z"
+  },
+  "npc.tyrias.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Jag ser att du fick den andliga avskärmningen i det vita blomtemplet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.543361Z"
+  },
+  "npc.tyrias.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Jag kan ana att druiderna norr om Carlin har försett dig med omfamningen Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.544352Z"
+  },
+  "npc.tyrias.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Jag kan se att du fick välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.545282Z"
+  },
+  "npc.tyrias.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Jag kan ana att gnistan från Fenix ​​redan gavs till dig av dvärgprästerna av jord och eld i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.546407Z"
+  },
+  "npc.tyrias.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Jag kan känna att du redan pratade med eremiten Eremo på ön Cormaya och fick denna välsignelse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.547553Z"
+  },
+  "npc.tyrias.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Du kan be om välsignelsen av andlig avskärmning i whiteflower-templet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.548685Z"
+  },
+  "npc.tyrias.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druiderna norr om Carlin kommer att förse dig med Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.549816Z"
+  },
+  "npc.tyrias.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Du kan be om välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.550815Z"
+  },
+  "npc.tyrias.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Håll din äventyrarsten väl.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.551522Z"
+  },
+  "npc.tyrias.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Fenixens gnista ges av jord- och eldens dvärgpräster i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.552490Z"
+  },
+  "npc.tyrias.stdmod_32": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Detta är en speciell välsignelse som jag kan skänka dig när du har fått åtminstone en av de andra välsignelserna och som fungerar lite annorlunda. ... \\z\n\tDet fungerar bara när du dödas av andra äventyrare, vilket betyder att minst hälften av skadan som ledde till din död orsakades av andra, inte av monster eller miljön. ... \\z\n\t{twist of fate} kommer inte att minska dödsstraffet som de andra välsignelserna, utan istället hindra dig från att förlora dina andra välsignelser såväl som förlustamuletten, om du bär en. Det kostar lika mycket som de andra välsignelserna. ... \\z\n\tSkulle du vilja få det skyddet för ett offer på |PVPBLESSCOST| guld, barn?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.556053Z"
+  },
+  "npc.tyrias.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vill du byta ut din äventyrarsten gratis?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T01:59:20.556776Z"
   }
 }

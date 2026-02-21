@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T01:58:43.471375Z",
-  "last_cycle": 39,
+  "timestamp": "2026-02-21T02:01:11.575588Z",
+  "last_cycle": 40,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -145,7 +145,22 @@
       "npc.trisha.walkaway_msg_1",
       "npc.tyrias.keyword_1",
       "npc.tyrias.stdmod_1",
-      "npc.tyrias.stdmod_18"
+      "npc.tyrias.stdmod_18",
+      "npc.tyrias.stdmod_19",
+      "npc.tyrias.stdmod_2",
+      "npc.tyrias.stdmod_20",
+      "npc.tyrias.stdmod_22",
+      "npc.tyrias.stdmod_23",
+      "npc.tyrias.stdmod_24",
+      "npc.tyrias.stdmod_25",
+      "npc.tyrias.stdmod_26",
+      "npc.tyrias.stdmod_27",
+      "npc.tyrias.stdmod_28",
+      "npc.tyrias.stdmod_29",
+      "npc.tyrias.stdmod_3",
+      "npc.tyrias.stdmod_30",
+      "npc.tyrias.stdmod_32",
+      "npc.tyrias.stdmod_4"
     ],
     "sr|npc.json": [
       "npc.a_beggar.greet_msg_1",

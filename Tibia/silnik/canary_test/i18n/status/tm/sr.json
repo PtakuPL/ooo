@@ -176078,5 +176078,69 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-20T23:58:25.032819Z"
+  },
+  "monster.tyrn.voice_2": {
+    "src_hash": "d757f6d62440f09b102236e4bb7ba3fe",
+    "text": "ГРРОАРР",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:07:15.290851Z"
+  },
+  "monster.werewolf.voice_2": {
+    "src_hash": "d757f6d62440f09b102236e4bb7ba3fe",
+    "text": "ГРРОАРР",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:07:15.410310Z"
+  },
+  "monster.young_sea_serpent.voice_1": {
+    "src_hash": "4db71e50de8fcfc3ec625f0377b111e7",
+    "text": "ХИСССС",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:07:15.618140Z"
+  },
+  "monster.young_sea_serpent.voice_2": {
+    "src_hash": "d9b27c82026a7ec941c35d53fd34a8e2",
+    "text": "ЦХХХРРРРР",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:07:15.618524Z"
+  },
+  "monster.sea_serpent.voice_1": {
+    "src_hash": "d9b27c82026a7ec941c35d53fd34a8e2",
+    "text": "ЦХХХРРРРР",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:07:15.623691Z"
+  },
+  "monster.sea_serpent.voice_2": {
+    "src_hash": "4db71e50de8fcfc3ec625f0377b111e7",
+    "text": "ХИСССС",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:07:15.623919Z"
+  },
+  "monster.serpent_spawn.voice_1": {
+    "src_hash": "4db71e50de8fcfc3ec625f0377b111e7",
+    "text": "ХИСССС",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:07:15.629505Z"
+  },
+  "monster.carnivostrich.voice_2": {
+    "src_hash": "d757f6d62440f09b102236e4bb7ba3fe",
+    "text": "ГРРОАРР",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T00:07:15.639207Z"
   }
 }

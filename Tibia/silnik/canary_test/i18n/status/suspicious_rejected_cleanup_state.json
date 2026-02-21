@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T00:06:44.372556Z",
-  "last_cycle": 17,
+  "timestamp": "2026-02-21T00:07:35.292628Z",
+  "last_cycle": 18,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -549,15 +549,7 @@
     ],
     "sv|monsters.json": [],
     "sr|monsters.json": [],
-    "pl|otclient_modules.json": [
-      "otclient_modules.character_otui.tr_42",
-      "otclient_modules.character_otui.tr_48",
-      "otclient_modules.game_cyclopedia.tr_6",
-      "otclient_modules.game_cyclopedia_otui.tr_8",
-      "otclient_modules.game_store_otui.tr_3",
-      "otclient_modules.player.tr_6",
-      "otclient_modules.spelllist_otui.tr_12"
-    ],
+    "pl|otclient_modules.json": [],
     "pl|client.json": [
       "client.elementnode.text3"
     ],

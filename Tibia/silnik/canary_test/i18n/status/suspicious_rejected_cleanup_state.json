@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-21T00:19:37.035458Z",
-  "last_cycle": 28,
+  "timestamp": "2026-02-21T00:20:42.016513Z",
+  "last_cycle": 29,
   "cleanup_every": 3,
   "pending": {
     "it|items.json": [
@@ -906,6 +906,39 @@
       "talkaction.god.charms.msg_wrong_kill",
       "talkaction.god.create_item.msg_invalid_tier",
       "talkaction.god.create_item.msg_no_item"
+    ],
+    "ru|libs.json": [
+      "lib.blessing.msg_not_enough",
+      "lib.blessing.msg_protects",
+      "lib.blessing.msg_received",
+      "lib.concoctions.msg_active",
+      "lib.exaltation_forge.msg_limit",
+      "lib.exaltation_forge.msg_received",
+      "lib.familiar.msg_disappear",
+      "lib.functions.msg_bank_paid",
+      "lib.functions.msg_boss_wait",
+      "lib.functions.msg_no_room",
+      "lib.functions.msg_only_influenced",
+      "lib.functions.msg_too_heavy",
+      "lib.player.loyalty_title_1",
+      "lib.player.loyalty_title_10",
+      "lib.player.loyalty_title_11",
+      "lib.player.loyalty_title_2",
+      "lib.player.loyalty_title_3",
+      "lib.player.loyalty_title_4",
+      "lib.player.loyalty_title_5",
+      "lib.player.loyalty_title_6",
+      "lib.player.loyalty_title_7",
+      "lib.player.loyalty_title_8",
+      "lib.player.msg_found_no_room",
+      "lib.player.msg_found_too_heavy",
+      "lib.player.msg_paid_inventory",
+      "lib.player.msg_paid_mixed"
+    ],
+    "ro|talkactions.json": [],
+    "it|php.json": [
+      "php.index.text1",
+      "php.menus.text4"
     ]
   }
 }

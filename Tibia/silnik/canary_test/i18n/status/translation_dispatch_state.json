@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-21T00:18:28.225352Z",
-  "cycle_counter": 6744,
-  "last_target_key": "it:talkactions.json",
-  "last_pending_total": 127,
+  "timestamp": "2026-02-21T00:20:33.992624Z",
+  "cycle_counter": 6747,
+  "last_target_key": "it:php.json",
+  "last_pending_total": 9,
   "last_tier": 2,
   "last_cat_priority": 9,
   "candidates_count": 179,
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 28,
+  "cache_cycle": 29,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -140,7 +140,7 @@
     "es:otclient_modules.json": 0,
     "pl:talkactions.json": 3,
     "es:talkactions.json": 1,
-    "ro:talkactions.json": 1,
+    "ro:talkactions.json": 2,
     "it:npclib.json": 2,
     "ru:movements.json": 1,
     "pl:monsters.json": 0,
@@ -218,9 +218,9 @@
     "lang_completion": {
       "pl": 87.85,
       "es": 85.15,
-      "ru": 50.51,
+      "ru": 50.52,
       "ro": 43.97,
-      "it": 52.92,
+      "it": 52.95,
       "sr": 45.58,
       "sv": 29.39
     }

@@ -39814,5 +39814,77 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T00:18:03.655432Z"
+  },
+  "lib.player.loyalty_title_1": {
+    "src_hash": "2fbdb38b61c40fd314f824990c8de010",
+    "text": "Разведчик Тибиа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:20:05.773530Z"
+  },
+  "lib.player.loyalty_title_10": {
+    "src_hash": "a39d78615407f3d2bb8133b7fe1f49c6",
+    "text": "Ученый из Тибиа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:20:05.774290Z"
+  },
+  "lib.player.loyalty_title_2": {
+    "src_hash": "62247bc1856daff126efc00d682dc57f",
+    "text": "Страж Тибиа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:20:05.774981Z"
+  },
+  "lib.player.loyalty_title_3": {
+    "src_hash": "87cf738682425ab397006531fc20d4be",
+    "text": "Стюард Тибиа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:20:05.775624Z"
+  },
+  "lib.player.loyalty_title_4": {
+    "src_hash": "c0bd3e6be7e9b7dd5e78778ec7754e69",
+    "text": "Смотритель Тибиа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:20:05.776237Z"
+  },
+  "lib.player.loyalty_title_5": {
+    "src_hash": "549ee1c6a01b0dc74497de310823f1ba",
+    "text": "Оруженосец Тибиа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:20:09.154526Z"
+  },
+  "lib.player.loyalty_title_6": {
+    "src_hash": "3565d675e7e3e8a0c335110aab098b94",
+    "text": "Воин Тибиа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:20:09.155200Z"
+  },
+  "lib.player.loyalty_title_7": {
+    "src_hash": "d0d1197accc46c113ddf321715d3dc73",
+    "text": "Хранитель Тибиа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:20:09.155815Z"
+  },
+  "lib.player.loyalty_title_8": {
+    "src_hash": "51243a5dd0c8f1f3781c5a10b0ca6274",
+    "text": "Хранитель Тибиа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T00:20:09.156432Z"
   }
 }

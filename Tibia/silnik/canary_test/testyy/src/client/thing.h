@@ -268,5 +268,6 @@ private:
 
     friend class Client;
     friend class Tile;
+    friend void registerLuaFunctions_ClientEntities();
 };
 #pragma pack(pop)

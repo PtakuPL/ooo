@@ -36,6 +36,7 @@
 #include "uiminimap.h"
 #include "uiprogressrect.h"
 #include "uisprite.h"
+#include "luavaluecasts_client.h"
 
 #include <framework/luaengine/luainterface.h>
 

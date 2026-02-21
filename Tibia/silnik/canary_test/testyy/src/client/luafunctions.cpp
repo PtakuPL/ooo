@@ -29,6 +29,7 @@
 #include "map.h"
 #include "minimap.h"
 #include "outfit.h"
+#include "localplayer.h"
 #include "protocolgame.h"
 #include "spriteappearances.h"
 #include "spritemanager.h"

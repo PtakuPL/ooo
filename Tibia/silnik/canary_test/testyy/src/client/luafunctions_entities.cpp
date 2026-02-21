@@ -41,6 +41,7 @@
 #include "statictext.h"
 #include "thingtypemanager.h"
 #include "tile.h"
+#include "luavaluecasts_client.h"
 
 #ifdef FRAMEWORK_EDITOR
 #include "houses.h"
@@ -48,6 +49,7 @@
 #endif
 
 #include <framework/luaengine/luainterface.h>
+#include <framework/ui/uiwidget.h>
 
 void registerLuaFunctions_ClientEntities()
 {

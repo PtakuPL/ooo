@@ -47,7 +47,7 @@ bool TTFFont::load(const std::string& mainTtf,
   
   const FT_Error initError = FT_Init_FreeType(&m_ftLib);
   if (initError) {
-    g_logger.error("TTFFont: FT_Init_FreeType failed (error={})", initError);
+    g_logger.error("TTFFont: FT_Init_FreeType failed (error={})", static_cast<long>(initError));
     return false;
   }
   g_logger.info("TTFFont: FreeType initialized OK");
@@ -65,7 +65,7 @@ bool TTFFont::load(const std::string& mainTtf,
       mainLoaded = true;
       g_logger.info(fmt::format("TTFFont: FT_New_Face succeeded with path '{}'", realPath));
     } else {
-      g_logger.warning(fmt::format("TTFFont: FT_New_Face failed (error={}) for path '{}'", faceError, realPath));
+      g_logger.warning(fmt::format("TTFFont: FT_New_Face failed (error={}) for path '{}'", static_cast<long>(faceError), realPath));
     }
   }
   
@@ -98,7 +98,7 @@ bool TTFFont::load(const std::string& mainTtf,
       mainLoaded = true;
       g_logger.info("TTFFont: FT_New_Memory_Face succeeded");
     } else {
-      g_logger.error(fmt::format("TTFFont: FT_New_Memory_Face failed (error={})", memFaceError));
+      g_logger.error(fmt::format("TTFFont: FT_New_Memory_Face failed (error={})", static_cast<long>(memFaceError)));
     }
   }
 
@@ -109,7 +109,7 @@ bool TTFFont::load(const std::string& mainTtf,
 
   const FT_Error pixelSizeError = FT_Set_Pixel_Sizes(m_face, 0, pixelSize);
   if (pixelSizeError) {
-    g_logger.error("TTFFont: FT_Set_Pixel_Sizes failed (error={})", pixelSizeError);
+    g_logger.error("TTFFont: FT_Set_Pixel_Sizes failed (error={})", static_cast<long>(pixelSizeError));
     return false;
   }
   m_pixelSize = pixelSize;

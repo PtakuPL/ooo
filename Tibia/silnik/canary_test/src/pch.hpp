@@ -85,15 +85,16 @@
 #include <fmt/args.h>
 #include <fmt/ranges.h>
 
-// FMT helper for legacy fmt versions that don't expose enum format_as.
-// Newer fmt versions already provide this and redefining it breaks the build.
-#if !defined(FMT_VERSION) || FMT_VERSION < 80000
+// fmt 12 no longer formats enums by default.
+// Provide a generic format_as so every enum is printed as its underlying
+// integral value — works for all fmt versions (format_as is a no-op on
+// versions that still format enums automatically).
 template <typename E>
 std::enable_if_t<std::is_enum_v<E>, std::underlying_type_t<E>>
 format_as(E e) {
 	return static_cast<std::underlying_type_t<E>>(e);
 }
-#endif
+
 
 // GMP
 #include <gmp.h>

@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-21T09:38:52.515329Z",
-  "cycle_counter": 7000,
-  "last_target_key": "hr:npc.json",
-  "last_pending_total": 13301,
+  "timestamp": "2026-02-21T09:42:10.290132Z",
+  "cycle_counter": 7003,
+  "last_target_key": "ja:npc.json",
+  "last_pending_total": 13379,
   "last_tier": 3,
   "last_cat_priority": 0,
   "candidates_count": 1559,
@@ -36,7 +36,7 @@
   },
   "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 3,
+  "cache_cycle": 4,
   "no_progress_counts": {
     "sv:dataroot.json": 1,
     "sr:dataroot.json": 1,
@@ -184,7 +184,10 @@
     "et:npc.json": 0,
     "fa:npc.json": 0,
     "he:npc.json": 0,
-    "hi:npc.json": 0
+    "hi:npc.json": 0,
+    "hr:npc.json": 0,
+    "hy:npc.json": 0,
+    "id:npc.json": 0
   },
   "bootstrap_priority": {
     "enabled": true,

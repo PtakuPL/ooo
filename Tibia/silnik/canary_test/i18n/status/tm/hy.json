@@ -185,27 +185,27 @@
   },
   "npc.a_behemoth.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:32:13.085733Z"
+    "updated_at": "2026-02-21T09:40:48.894304Z"
   },
   "npc.a_behemoth.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:32:13.086466Z"
+    "updated_at": "2026-02-21T09:40:48.895266Z"
   },
   "npc.a_behemoth.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:32:13.087158Z"
+    "updated_at": "2026-02-21T09:40:48.896077Z"
   },
   "npc.a_dead_bureaucrat.greet_msg_1": {
     "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
@@ -1465,99 +1465,99 @@
   },
   "npc.a_dragon_lord.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:35:45.538709Z"
+    "updated_at": "2026-02-21T09:40:48.899154Z"
   },
   "npc.a_dragon_lord.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:35:45.539498Z"
+    "updated_at": "2026-02-21T09:40:48.899925Z"
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:35:45.540226Z"
+    "updated_at": "2026-02-21T09:40:54.788746Z"
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:35:45.541154Z"
+    "updated_at": "2026-02-21T09:40:54.789712Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:35:45.541916Z"
+    "updated_at": "2026-02-21T09:40:54.790478Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:35:45.542710Z"
+    "updated_at": "2026-02-21T09:40:54.791223Z"
   },
   "npc.a_lost_basher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:35:45.544060Z"
+    "updated_at": "2026-02-21T09:40:59.444116Z"
   },
   "npc.a_lost_basher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:35:45.544801Z"
+    "updated_at": "2026-02-21T09:40:59.446216Z"
   },
   "npc.a_lost_basher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:35:45.545535Z"
+    "updated_at": "2026-02-21T09:40:59.447903Z"
   },
   "npc.a_lost_husher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:35:45.546257Z"
+    "updated_at": "2026-02-21T09:40:59.449611Z"
   },
   "npc.a_lost_husher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:35:45.547047Z"
+    "updated_at": "2026-02-21T09:40:59.451498Z"
   },
   "npc.a_lost_husher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Պահպանե՛ք այն: <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Պահպանե՛ք այն: <տրամադրում է ձեզ մանրամասն հաշվետվություն հրեշների գործունեության մասին>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:35:45.547819Z"
+    "updated_at": "2026-02-21T09:40:59.453884Z"
   },
   "npc.a_lost_thrower.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
@@ -1833,11 +1833,11 @@
   },
   "npc.a_fluffy_squirrel.sendtrade_msg_1": {
     "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
-    "text": "Չճչ. Չհ! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "text": "Չճչ. Չհ! <Դուք վստահ չեք, բայց թվում է, որ սկյուռը ցանկանում է ձեր արժեքավոր կաղինները փոխանակել անպետք քարերի հետ, որոնք գտել է և համարել անպիտան>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:36:13.907084Z"
+    "updated_at": "2026-02-21T09:40:54.793100Z"
   },
   "npc.a_fluffy_squirrel.stdmod_1": {
     "src_hash": "ac2f68634467394485198b5db1d3f7a3",
@@ -2518,5 +2518,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T08:11:36.929824Z"
+  },
+  "npc.canary.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Այո, ցտեսություն և այլևս չգաս:!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:40:43.819275Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Կարկուտ Պումին. Այո, կարկուտ:.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:40:48.896811Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Կարկուտ Պումին. Այո, կարկուտ:.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:40:48.897380Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Կարկուտ Պումին. Այո, կարկուտ:.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:40:48.897848Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Կարկուտ Պումին. Այո, կարկուտ:.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:40:48.898358Z"
+  },
+  "npc.a_fading_memory.greet_msg_1": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "Օ՜...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:40:54.791493Z"
+  },
+  "npc.a_fluffy_squirrel.farewell_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Չհ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:40:54.791747Z"
+  },
+  "npc.a_fluffy_squirrel.greet_msg_1": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "Չհճհ՞?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:40:54.792000Z"
+  },
+  "npc.a_fluffy_squirrel.voice_1": {
+    "src_hash": "9280e35fe8a04c63939438a4aded92fa",
+    "text": "Չճչ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:40:54.793711Z"
+  },
+  "npc.a_fluffy_squirrel.walkaway_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Չհ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:40:59.441761Z"
+  },
+  "npc.a_ghostly_sage.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Ցտեսություն:.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:40:59.442127Z"
+  },
+  "npc.a_ghostly_sage.walkaway_msg_1": {
+    "src_hash": "dd4dd73f3c2fe38f2d02c9b2a246f3ce",
+    "text": "Ուրեմն հրաժեշտ:.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:40:59.442542Z"
   }
 }

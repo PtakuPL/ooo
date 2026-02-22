@@ -79,7 +79,9 @@ extern "C" {
             g_logger.fatal("Unable to find work directory, the application cannot be initialized.");
 
         // initialize application framework and otclient
-        g_app.init(args, new GraphicalApplicationContext(g_gameConfig.getSpriteSize(), ApplicationDrawEventsPtr(&g_client)));
+        // Use no-op deleter: g_client is a global object, not heap-allocated.
+        // Without this, shared_ptr would call delete on a non-heap object (UB).
+        g_app.init(args, new GraphicalApplicationContext(g_gameConfig.getSpriteSize(), ApplicationDrawEventsPtr(&g_client, [](ApplicationDrawEvents*){})));
 
 #ifndef ANDROID
 #if ENABLE_DISCORD_RPC == 1

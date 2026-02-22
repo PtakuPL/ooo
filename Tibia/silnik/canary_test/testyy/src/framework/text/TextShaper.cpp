@@ -128,9 +128,14 @@ static std::vector<uint32_t> applyBidiReordering(const std::vector<uint32_t>& lo
   // Copy for reordering
   std::copy(input.begin(), input.end(), visual.begin());
   
-  // Reorder line
-  fribidi_reorder_line(0, bidiTypes.data(), len, 0, parType, 
-                        levels.data(), visual.data(), nullptr);
+  // Reorder line — check return value to satisfy -Wunused-result
+  const FriBidiLevel reorderMaxLevel = fribidi_reorder_line(
+      0, bidiTypes.data(), len, 0, parType,
+      levels.data(), visual.data(), nullptr);
+  if (reorderMaxLevel == 0) {
+    // Reordering produced no changes; return original order
+    return logical;
+  }
   
   // Store levels for potential use (e.g., cursor positioning)
   outLevels.resize(len);

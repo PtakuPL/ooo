@@ -2282,3 +2282,267 @@ Fanout include (local headers) - najwieksze wezly:
 3. Usunac `using namespace otclient::protobuf;` z `thingtype.h` (zamienic na jawne kwalifikacje).
 4. Ograniczyc coupling: przesunac czesc inline proxy z `thing.h` / `uimap.h` do `.cpp`, gdzie to mozliwe.
 5. Zweryfikowac zasadnosc `#pragma pack(push,1)` dla klas runtime (zostawic tylko gdzie wymagane przez format binarny).
+
+## 24. Agent A — Kontynuacja audytu linia po linii — 2026-02-23
+
+### 24.1 Status git push
+
+Commit `3c003a96c` — 365 plików, 158732 insertions, 122768 deletions.
+Push na `master` zakończony sukcesem po usunięciu 4 dużych binariów (>100 MB limit GitHub):
+- `canary-backup-old-1915` (146.6 MB)
+- `canary-debug-backup-1915` (257.6 MB)
+- `canary-ubuntu-24.04-linux-debug-5688...` (106.6 MB)
+- `canary-ubuntu-24.04-linux-release-5688...` (55.1 MB — warning)
+
+Dodano wpisy do `.gitignore` aby zapobiec ponownemu commitowi tych binariów.
+
+### 24.2 module.cpp (275 linii) — 100% przeczytane
+
+**Ścieżka:** `framework/core/module.cpp`
+**CMake Group:** ❌ BRAK
+**#pragma:** ❌ BRAK
+
+**Includy:**
+- `luainterface.h` (L27) — wciąga 549+ linii szablonów
+- `otml.h` (L28)
+- `module.h`, `modulemanager.h`, `resourcemanager.h`
+
+**Metryki ICE:**
+| Metryka         | Ilość | Linie                    |
+|-----------------|------:|--------------------------|
+| fmt/g_logger    |     6 | L92, L98, L101, L112, L148 |
+| throw Exception |     7 | L52, L55, L58, L61 (load) |
+| std::ranges     |     2 | L197, L264 (`std::ranges::find`) |
+| template        |     0 |                          |
+
+**Ocena:** ⚠️ ŚREDNIE RYZYKO — 2× `std::ranges::find` + includes `luainterface.h` 549+ ln BEZ CMake protection. Throw/fmt w non-template — nie triggeruje ICE bezpośrednio, ale ranges + lua templates w jednym TU to dodatkowa presja.
+
+**Rekomendacja:** Rozważyć dodanie do CMake Group 4 (lekka ochrona `/d2SSAOptimizer-`).
+
+### 24.3 application.cpp (232 linie) — 100% przeczytane
+
+**Ścieżka:** `framework/core/application.cpp`
+**CMake Group:** ❌ BRAK
+**#pragma:** ❌ BRAK
+
+**Includy:**
+- `luainterface.h` (L31) — wciąga szablony
+- `drawpoolmanager.h`, `platform.h`, `proxy.h`, `crashhandler.h`
+
+**Metryki ICE:**
+| Metryka | Ilość |
+|---------|------:|
+| fmt/g_logger | 2 |
+| throw | 0 |
+| std::ranges | 0 |
+| template | 0 |
+
+**Ocena:** 🟢 NISKIE RYZYKO — mały plik, brak szablonów/throw/ranges. Include luainterface.h to jedyne obciążenie.
+
+### 24.4 consoleapplication.cpp (74 linie) — 100% przeczytane
+
+**Ścieżka:** `framework/core/consoleapplication.cpp`
+**CMake Group:** ❌ BRAK
+**Includy:** `luainterface.h` (L27), `clock.h`, `eventdispatcher.h`, `asyncdispatcher.h`
+**Metryki:** 0× fmt, 0× throw, 0× ranges, 0× template
+**Ocena:** 🟢 ZERO ryzyka ICE — 74 linie czystego kodu.
+
+### 24.5 garbagecollection.cpp (92 linie) — 100% przeczytane
+
+**Ścieżka:** `framework/core/garbagecollection.cpp`
+**CMake Group:** ❌ BRAK
+**Includy:** `luainterface.h` (L30), `drawpoolmanager.h`, `texturemanager.h`, `thingtypemanager.h`
+**Metryki:** 0× fmt, 0× throw, 0× ranges, 0× template
+**Lambdy:** 2× non-template (`std::erase_if` callbacks L59, L63)
+**Ocena:** 🟢 ZERO ryzyka ICE — 92 linie, proste cleanup.
+
+### 24.6 logger.cpp (151 linii) — 100% przeczytane
+
+**Ścieżka:** `framework/core/logger.cpp`
+**CMake Group:** ❌ BRAK
+**Includy:** `luainterface.h` (L29), `resourcemanager.h`, `platform.h`
+**Metryki:** 2× g_logger (auto-referencja), 0× throw, 0× ranges, 0× template
+**Lambdy:** 2× non-template (L67, L93 — dispatch callbacks)
+**Ocena:** 🟢 NISKIE RYZYKO — 151 linii, brak hotspotów. `g_lua.isInCppCallback()` + `g_lua.traceback()` to jedyne wywołania Lua — nie szablonowe.
+
+### 24.7 uiwidgettext.cpp (265 linii) — 100% przeczytane
+
+**Ścieżka:** `framework/ui/uiwidgettext.cpp`
+**CMake Group:** ❌ BRAK
+**#pragma:** ❌ BRAK
+
+**Includy:**
+- `uiwidget.h` → luainterface.h (pośrednio)
+- `fontmanager.h` → resourcemanager.h → luainterface.h
+- `drawpoolmanager.h`, `textureatlas.h`
+- `<regex>` — C++ std::regex
+
+**Metryki ICE:**
+| Metryka | Ilość |
+|---------|------:|
+| fmt/g_logger | 0 |
+| throw | 0 |
+| std::ranges | 0 |
+| template | 0 |
+| callLuaField | 2 |
+
+**Kluczowe:**
+- L208: `callLuaField("onTextChange", text, oldText)` — non-template call
+- L210: `callLuaField("onFontChange", font)` — non-template call
+- L227: `std::regex exp(R"(\{([^\}]+),[ ]*([^\}]+)\})")` — regex w `setColoredText()` — potencjalnie ciężki template dla MSVC, ale jednorazowy
+- TTF/Bitmap font dual rendering paths — dobrze rozdzielone
+
+**Ocena:** 🟢 NISKIE RYZYKO — 265 linii czystego kodu renderingu tekstu. `std::regex` to jedyne cięższe template — kompilowane raz.
+
+### 24.8 uiwidget.cpp (2189 linii) — 100% przeczytane ⚠️ WAŻNE
+
+**Ścieżka:** `framework/ui/uiwidget.cpp`
+**CMake Group:** ✅ Group 4 — `/d2SSAOptimizer-` TYLKO
+**#pragma:** ❌ BRAK
+
+**Includy:**
+- `luainterface.h` (L30) — 549+ linii szablonów
+- `<ranges>` (L36) — jawny import C++20 ranges
+- `otmlnode.h`, `platformwindow.h`, `drawpoolmanager.h`, `shadermanager.h`
+
+**Metryki ICE:**
+| Metryka | Ilość | Kontekst |
+|---------|------:|----------|
+| `std::ranges::find` | 11 | removeChild, focusNext/Prev, lower/raise, moveChildToIndex, unlock, isChildLocked, hasChild |
+| `std::ranges::reverse_view` | 9 | getChildByPos/State, recursiveGetChild*, propagateOnMouse*, getChildByStyleName |
+| `std::ranges::rotate` | 2 | focusNextChild, focusPreviousChild |
+| `std::ranges::reverse` | 1 | focusPreviousChild |
+| **Razem std::ranges** | **23** | |
+| callLuaField | 29 | onStyleApply, setEnabled, setChecked, setId, setRect(×3), onGeometryChange, onLayoutUpdate, onFocusChange, onChildFocusChange, onHoverChange, onVisibilityChange, onDragEnter/Leave/Move, onDrop, onKeyText/Down/Press/Up, onMousePress/Release/Move/Wheel, onClick, onDoubleClick, setProp |
+| fmt/g_logger | 5 | applyStyle fmt::format, moveChildToIndex, autoFitParent |
+| throw | 1 | L1003 setLayout — non-template |
+| template | 0 | |
+
+**🔴 KRYTYCZNE ODKRYCIE:**
+Ten plik ma **23× std::ranges** + **29× callLuaField** w 2189 liniach i jest chroniony TYLKO przez `/d2SSAOptimizer-` (Group 4 — najlżejsza ochrona). Dla porównania: pliki w Group 2 mają `/Od /Ob0 /d2SSAOptimizer- /d2FH4- /d2notypeopt`.
+
+Każdy `callLuaField<T>(...)` to template call — MSVC musi instancjonować szablony `callLuaField<bool>`, `callLuaField<void>` (przez luainterface.h). Razem z 23× ranges to ogromna presja na P2 optimizer.
+
+**Rekomendacja:** ⚡ PILNE — Upgrade Group 4 → Group 2 (dodać `/Od /Ob0 /d2FH4- /d2notypeopt`) LUB przenieść ranges calls do osobnej TU (uiwidget_children.cpp).
+
+### 24.9 protocolgameparse.cpp (6223 linie) — kluczowe sekcje przeczytane
+
+**Ścieżka:** `client/protocolgameparse.cpp`
+**CMake Group:** ✅ Group 4 — `/d2SSAOptimizer-` TYLKO
+**#pragma:** ❌ BRAK
+
+**Includy (13 total):**
+- `protocolgame.h` → `creature.h`, `declarations.h`, `protocolcodes.h`, protocol.h
+- `luavaluecasts_client.h` — wciąga pośrednio szablony luavalue_cast
+- `item.h`, `localplayer.h`, `map.h`, `missile.h`, `thingtypemanager.h`, `tile.h`
+- `eventdispatcher.h`, `inputmessage.h`
+
+**Metryki ICE:**
+| Metryka | Ilość | Kontekst |
+|---------|------:|----------|
+| g_logger | 47 | parsowanie protokołu — wszędzie logowanie błędów |
+| throw Exception | 11 | L624, L2603, L2756, L2836, L2938, L3826, L4099, L4114, L4118, L5663, L5667 — wszystkie non-template |
+| callLuaField | 2 | |
+| fmt::format | 1 | |
+| std::ranges | 0 | |
+| template | 0 | |
+
+**Ocena:** ⚠️ ŚREDNIE RYZYKO — NAJWIĘKSZY plik (6223 ln) w codebase. Brak ranges/templates, ale sam rozmiar TU + `luavaluecasts_client.h` (pośrednie template headers) + 47× fmt (g_logger) to znaczna presja. Group 4 daje tylko `/d2SSAOptimizer-` — może nie wystarczyć dla takiej wielkości TU.
+
+**Rekomendacja:** Rozważyć split na 2-3 mniejsze TU (np. protocolgameparse_core.cpp, protocolgameparse_effects.cpp, protocolgameparse_items.cpp) LUB upgrade do Group 2.
+
+### 24.10 Partia 9: net + sound + misc — audyt quick-scan
+
+**protocol.cpp (468 ln):** 1× `std::ranges::generate` (L293), 1× local template `apply_rounds<Round>` (L300) w anonymous namespace — instancjonowany z lambda (XTEA encrypt/decrypt). 9× g_logger. NIE ma luainterface.h. ❌ No CMake Group. Ryzyko: NISKIE.
+
+**protocolhttp.cpp (1095 ln):** 0× ranges, 0× template, 7× g_logger. NIE ma luainterface.h. ❌ No CMake Group. Ryzyko: NISKIE — duży ale czysty networking.
+
+**soundmanager.cpp (538 ln):** 0× ranges, 0× template, 11× g_logger, 1× throw. NIE ma luainterface.h. ❌ No CMake Group. Ryzyko: NISKIE.
+
+**main.cpp (131 ln):** includes luainterface.h ale tylko `g_lua.init()`, `g_lua.safeRunScript()`. 0× template/throw/ranges. Ryzyko: ZERO.
+
+**Partia 9 podsumowanie:** Brak nowych hotspotów ICE. Wszytkie pliki net/sound są czyste od template pressure.
+
+### 24.11 Partia 10: framework/ui + platform + util — audyt quick-scan
+
+**uimanager.cpp (617 ln):** 1× `std::ranges::find` (L118), 18× g_logger. NIE ma luainterface.h bezpośrednio. Ryzyko: NISKIE.
+
+**uianchorlayout.cpp (285 ln):** 1× risk hit. Ryzyko: ZERO.
+
+**uiwidgetbasestyle.cpp (435 ln):** ✅ CMake Group 4. 8× risk hits (głównie g_logger). Ryzyko: NISKIE.
+
+**uitranslator.cpp (131 ln):** 0× risk. Ryzyko: ZERO.
+
+**win32window.cpp (1155 ln):** 0× luainterface. Ryzyko: NISKIE — platform-specific, nie kompilowany na Linux CI.
+
+**win32platform.cpp (454 ln):** 0× luainterface. Ryzyko: NISKIE.
+
+**win32crashhandler.cpp (201 ln):** 0× luainterface, 1× _MSC_VER guard. Ryzyko: ZERO.
+
+**crypt.cpp (375 ln):** 2× `std::ranges::transform` (L319, L321). 0× luainterface. Ryzyko: NISKIE.
+
+**matrix.h (258 ln):** 22 template math functions. 0× throw/ranges/_MSC_VER. Ryzyko: NISKIE — proste arytmetyczne szablony, MSVC radzi sobie z nimi.
+
+**Client UI widgets:**
+- `uicreature.cpp (69 ln)`: 0× risk — ZERO
+- `uieffect.cpp (84 ln)`: 0× risk — ZERO
+- `uigraph.cpp (430 ln)`: 2× `std::ranges::minmax_element`, 1× fmt::format — NISKIE
+- `uiitem.cpp (119 ln)`: 5× risk hits (g_logger) — NISKIE
+- `uimap.cpp (236 ln)`: 2× risk — NISKIE
+- `uiminimap.cpp (159 ln)`: 2× risk — NISKIE
+
+### 24.12 ZBIORCZA TABELA — WSZYSTKIE PLIKI AUDYTOWANE W TEJ SESJI
+
+| Plik | Linie | CMake Group | luainterface | ranges | throw | template | fmt/logger | Ryzyko ICE |
+|------|------:|:-----------:|:------------:|-------:|------:|---------:|-----------:|:----------:|
+| module.cpp | 275 | ❌ | ✅ | 2 | 7 | 0 | 6 | ⚠️ ŚREDNIE |
+| application.cpp | 232 | ❌ | ✅ | 0 | 0 | 0 | 2 | 🟢 NISKIE |
+| consoleapplication.cpp | 74 | ❌ | ✅ | 0 | 0 | 0 | 0 | 🟢 ZERO |
+| garbagecollection.cpp | 92 | ❌ | ✅ | 0 | 0 | 0 | 0 | 🟢 ZERO |
+| logger.cpp | 151 | ❌ | ✅ | 0 | 0 | 0 | 2 | 🟢 NISKIE |
+| uiwidgettext.cpp | 265 | ❌ | pośrednio | 0 | 0 | 0 | 0 | 🟢 NISKIE |
+| **uiwidget.cpp** | **2189** | **Group 4** | **✅** | **23** | **1** | **0** | **5** | **🔴 WYSOKIE** |
+| **protocolgameparse.cpp** | **6223** | **Group 4** | pośrednio | **0** | **11** | **0** | **48** | **⚠️ ŚREDNIE-WYSOKIE** |
+| protocol.cpp | 468 | ❌ | ❌ | 1 | 0 | 1 | 9 | 🟢 NISKIE |
+| protocolhttp.cpp | 1095 | ❌ | ❌ | 0 | 0 | 0 | 7 | 🟢 NISKIE |
+| soundmanager.cpp | 538 | ❌ | ❌ | 0 | 1 | 0 | 11 | 🟢 NISKIE |
+| main.cpp | 131 | ❌ | ✅ | 0 | 0 | 0 | 2 | 🟢 ZERO |
+| uimanager.cpp | 617 | ❌ | ❌ | 1 | 0 | 0 | 18 | 🟢 NISKIE |
+| uigraph.cpp | 430 | ❌ | ❌ | 2 | 0 | 0 | 1 | 🟢 NISKIE |
+
+### 24.13 KLUCZOWE NOWE ODKRYCIA Z TEJ SESJI
+
+1. **🔴 uiwidget.cpp (2189 ln) to DRUGIE najgorsze źródło ICE po luavaluecasts.h:**
+   - 23× `std::ranges` (find, reverse_view, rotate, reverse) + 29× `callLuaField<T>` template calls
+   - Group 4 daje TYLKO `/d2SSAOptimizer-` — brak `/Od /Ob0 /d2FH4- /d2notypeopt`
+   - To jest **rozmiarowo WIĘKSZY** plik niż luainterface.cpp (2189 vs 1416), ale z MNIEJSZĄ ochroną (Group 4 vs pragma optimize off)
+   - Każdy `callLuaField` to template instancjacja → potencjalnie SETKI template instances w jednym TU
+
+2. **⚠️ protocolgameparse.cpp (6223 ln) — NAJWIĘKSZY plik, NAJLŻEJSZA ochrona:**
+   - Również Group 4 (tylko `/d2SSAOptimizer-`)
+   - Choć nie ma ranges/templates, sam rozmiar + 48× fmt + luavaluecasts_client.h to bardzo dużo dla jednego TU
+
+3. **Potwierdzenie wzorca:** Pliki BEZ luainterface.h (net, sound, platform) mają ZERO ryzyka ICE.
+
+### 24.14 ZAKTUALIZOWANY PLAN NAPRAW (po pełnym audycie)
+
+Na podstawie audytu Sekcji 21 (11 plików) + Sekcji 24 (14 plików) + Agenta B (Sekcje 22-23):
+
+**Pakiet A (KRYTYCZNY):** Bez zmian — wynieść throw z template lambda w luavaluecasts.h (L300, L340, L343)
+
+**Pakiet B (ŚREDNI):** Bez zmian — `#ifdef OTC_ENABLE_HARFBUZZ` w TextShaper.h
+
+**Pakiet C (ŚREDNI):** Rozszerzyć — nowa CMake Group 5 nie tylko dla text stack, ale UPGRADE Group 4:
+- `uiwidget.cpp`: zmienić z Group 4 (`/d2SSAOptimizer-`) na Group 2 (`/Od /Ob0 /d2SSAOptimizer- /d2FH4- /d2notypeopt`)
+- `protocolgameparse.cpp`: j.w. — upgrade do Group 2
+- LUB: split `uiwidget.cpp` na `uiwidget_core.cpp` + `uiwidget_children.cpp` (ranges-heavy)
+
+**Pakiet D (NISKI):** Bez zmian — `std::ranges::find` → `std::find` w resourcemanager.cpp
+- Rozszerzyć: to samo w `module.cpp` (L197, L264)
+
+**Pakiet E (BUG FIX):** Bez zmian — fix `!luavalue_cast` w pair cast
+
+**Pakiet F (NOWY — NISKI):** Rozważyć `std::ranges` → `std::algo` w uiwidget.cpp (23 miejsc)
+- Alternatywnie: upgrade Group 4 rozwiązuje problem bez zmian kodu
+
+**Priorytet:** A → C (z upgrade Group 4) → B → D → E → F

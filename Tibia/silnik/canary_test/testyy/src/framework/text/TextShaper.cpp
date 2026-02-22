@@ -5,6 +5,8 @@
 #include <unordered_map>
 #include <type_traits>
 
+#ifdef OTC_ENABLE_HARFBUZZ
+
 namespace {
 constexpr size_t kShapeCacheMaxEntries = 256;
 constexpr size_t kShapeCacheMaxLength = 256;
@@ -49,9 +51,6 @@ void TextShaper::clearCache() {
   g_shapeCacheTick = 0;
 }
 
-#include <mutex>
-#include <unordered_map>
-
 /**
  * @brief Maps a four-character script tag to the corresponding HarfBuzz script enum.
  *
@@ -88,6 +87,8 @@ static hb_direction_t toHbDir(TextDirection d) {
     default: return HB_DIRECTION_LTR; // AUTO -> detect from script
   }
 }
+
+#ifdef OTC_ENABLE_FRIBIDI
 
 /**
  * @brief Reorders a sequence of Unicode codepoints from logical to visual order using FriBidi.
@@ -149,6 +150,8 @@ static std::vector<uint32_t> applyBidiReordering(const std::vector<uint32_t>& lo
   return std::vector<uint32_t>(visual.begin(), visual.end());
 }
 
+#endif // OTC_ENABLE_FRIBIDI
+
 /**
  * @brief Shapes a UTF-32 string into positioned glyphs using HarfBuzz and applies FriBidi reordering for bidirectional text.
  *
@@ -189,8 +192,12 @@ std::vector<ShapedGlyph> TextShaper::shape(const std::u32string& text32,
   std::vector<uint32_t> codepoints(text32.begin(), text32.end());
   
   // Apply FriBidi reordering for proper visual display of bidirectional text
+#ifdef OTC_ENABLE_FRIBIDI
   std::vector<int8_t> bidiLevels;
   std::vector<uint32_t> visualOrder = applyBidiReordering(codepoints, params.direction, bidiLevels);
+#else
+  const auto& visualOrder = codepoints;
+#endif
 
   hb_buffer_t* buf = hb_buffer_create();
 
@@ -242,3 +249,11 @@ std::vector<ShapedGlyph> TextShaper::shape(const std::u32string& text32,
   }
   return out;
 }
+
+#else // !OTC_ENABLE_HARFBUZZ
+
+void TextShaper::clearCache() {
+  // no-op when HarfBuzz is disabled
+}
+
+#endif // OTC_ENABLE_HARFBUZZ

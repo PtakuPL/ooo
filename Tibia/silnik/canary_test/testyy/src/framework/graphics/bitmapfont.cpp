@@ -48,6 +48,7 @@ static thread_local std::vector<int> s_lineWidths(1);
 void BitmapFont::load(const OTMLNodePtr& fontNode)
 {
     // === TTF path (handled before bitmap parsing) ===
+#ifdef OTC_ENABLE_TTF
 const std::string type = fontNode->valueAt<std::string>("type", "");
 if(type == "ttf") {
     try {
@@ -118,6 +119,7 @@ if(type == "ttf") {
         return;
     }
 }
+#endif // OTC_ENABLE_TTF
 // === end TTF path ===
 const auto& textureNode = fontNode->at("texture");
     const auto& textureFile = stdext::resolve_path(textureNode->value(), textureNode->source());
@@ -194,6 +196,7 @@ void BitmapFont::drawText(const std::string_view text, const Point& startPos, co
  */
 void BitmapFont::drawText(const std::string_view text, const Rect& screenCoords, const Color& color, const Fw::AlignmentFlag align)
 {
+#ifdef OTC_ENABLE_TTF
 if (m_isTTF && m_ttf) {
     static bool s_loggedTtfPathOnce = false;
     if (!s_loggedTtfPathOnce) {
@@ -255,6 +258,7 @@ if (m_isTTF && m_ttf) {
     }
     return;
 }
+#endif // OTC_ENABLE_TTF
 
     Size textBoxSize;
     calculateGlyphsPositions(text, align, s_glyphsPositions, &textBoxSize);
@@ -272,6 +276,7 @@ void BitmapFont::drawColoredText(const std::string_view text, const Rect& screen
     if (text.empty())
         return;
 
+#ifdef OTC_ENABLE_TTF
     if (m_isTTF && m_ttf) {
         // Convert byte positions to codepoint positions for TTF
         const auto text32 = otc::text::utf8ToU32(text);
@@ -354,6 +359,7 @@ void BitmapFont::drawColoredText(const std::string_view text, const Rect& screen
         }
         return;
     }
+#endif // OTC_ENABLE_TTF
     
     // Bitmap font path - just use the existing fillTextColorCoords
     Size textBoxSize;
@@ -705,6 +711,7 @@ void BitmapFont::calculateGlyphsPositions(const std::string_view text, const Fw:
 
 Size BitmapFont::calculateTextRectSize(const std::string_view text)
 {
+#ifdef OTC_ENABLE_TTF
     if (m_isTTF && m_ttf) {
         const auto text32 = otc::text::utf8ToU32(text);
         const auto sp = otc::text::LocaleShaping::paramsFromUtf8(text, otc::text::LocaleShaping::getDefaultLocaleTag());
@@ -745,6 +752,7 @@ Size BitmapFont::calculateTextRectSize(const std::string_view text)
         const int lh = std::max(m_ttf->lineHeight(), m_glyphHeight);
         return Size(maxWidth, lh * lineCount);
     }
+#endif // OTC_ENABLE_TTF
 
     Size size;
     calculateGlyphsPositions(text, Fw::AlignTopLeft, s_glyphsPositions, &size);

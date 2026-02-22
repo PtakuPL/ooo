@@ -1,5 +1,7 @@
 #include "TTFFont.h"
 
+#ifdef OTC_ENABLE_TTF
+
 #include <cmath>
 #include <algorithm>
 #include <exception>
@@ -599,3 +601,5 @@ Rect TTFFont::buildQuads(const std::u32string& text32,
   const int height = std::max(0, static_cast<int>(std::ceil(maxY) - top));
   return Rect(left, top, width == 0 ? 1 : width, height == 0 ? m_pixelSize : height);
 }
+
+#endif // OTC_ENABLE_TTF

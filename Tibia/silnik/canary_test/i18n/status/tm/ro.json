@@ -75526,5 +75526,1197 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T02:20:03.646635Z"
+  },
+  "scripts.creaturescripts_overcharge_death.say_1": {
+    "src_hash": "69e223315b6235cac3b4dee668b2f3aa",
+    "text": "Ați atins suficiente taxe pentru a trece mai departe în distrugere!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:41:18.249060Z"
+  },
+  "scripts.creaturescripts_ferumbras_mortal_shell_death.say_2": {
+    "src_hash": "b3412b8d3797c33100e7f25e5906d33f",
+    "text": "AAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHH!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:41:33.131385Z"
+  },
+  "scripts.creaturescripts_ghulosh.say_1": {
+    "src_hash": "3a3d44e250ca1b00f1f0a4b8611cad3a",
+    "text": "Simțiți-mi mânia!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:41:36.946028Z"
+  },
+  "scripts.creaturescripts_inquisition_boss.say_1": {
+    "src_hash": "b9525645c8811af5031fa8ab7946e34c",
+    "text": "Acum aveți 10 minute pentru a ieși din această cameră prin teleporter. Te va duce în camera următoare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:41:36.948209Z"
+  },
+  "scripts.creaturescripts_lloyd_preparedeath.say_1": {
+    "src_hash": "b7a82320407ef1c129a284bbf2d893e2",
+    "text": "Energiile cosmice din cameră se reorientează asupra lui Lloyd.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:29:52.875901Z"
+  },
+  "scripts.creaturescripts_lower_spike_kill.msg_1": {
+    "src_hash": "870a45d5452e81af45ca7f854917df81",
+    "text": "Ai ucis {} din 7 Viermi de foraj.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:29:57.918037Z"
+  },
+  "scripts.creaturescripts_lower_spike_kill.msg_2": {
+    "src_hash": "4b99059eb20d24e09acfec1ecbce9c57",
+    "text": "Sarcina Spike de jos finalizată.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:29:57.918622Z"
+  },
+  "scripts.creaturescripts_magma_bubble_death.msg_1": {
+    "src_hash": "cd0075c418243aa1e4b35fc2b9d9ae29",
+    "text": "Felicitări ați primit ținuta de pompier.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:29:57.919263Z"
+  },
+  "cpp.protocol.prey_bonus_improved_experience": {
+    "src_hash": "b8c7677ea9475abf4c42c9d720ebca13",
+    "text": "Experiență îmbunătățită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:43:55.995515Z"
+  },
+  "cpp.protocol.prey_bonus_improved_loot": {
+    "src_hash": "519909d173e6998ea82d9f67382fc8e7",
+    "text": "Pradă îmbunătățită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:02.961766Z"
+  },
+  "cpp.protocol.prey_bonus_unknown": {
+    "src_hash": "cef9dd58434c651d2731498024377b16",
+    "text": "Bonus necunoscut",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:02.962161Z"
+  },
+  "cpp.protocol.resting_active_bonuses": {
+    "src_hash": "97ae17978ead02542736505c2e581610",
+    "text": "Bonusuri pentru zona de odihnă activă:\n{0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:02.962774Z"
+  },
+  "cpp.protocol.resting_hp_regen": {
+    "src_hash": "2576744e8dd2fd30d1883cb5b679cb64",
+    "text": "Regenerarea punctelor de lovitura",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:02.963221Z"
+  },
+  "cpp.protocol.resting_hp_regen_double": {
+    "src_hash": "4a7e354670e24c02df35e9936e500c67",
+    "text": "Regenerarea punctelor de lovitura duble",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:02.963765Z"
+  },
+  "cpp.protocol.resting_mana_regen": {
+    "src_hash": "4c0f163ea1f867b77dc335148fae81d8",
+    "text": "Regenerare puncte de mana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:05.379362Z"
+  },
+  "arena.title.contender": {
+    "src_hash": "6bc60f225af3e040f25409d430314097",
+    "text": "Concurent",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:47:52.058880Z"
+  },
+  "arena.mode.1v1": {
+    "src_hash": "c9df9d307e1889240c617bdd4b545fd5",
+    "text": "Duel 1v1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:47:57.831369Z"
+  },
+  "arena.mode.2v2": {
+    "src_hash": "3d7fed18a70a9bcb3f06f228f67cb74b",
+    "text": "Echipa 2v2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:47:57.831916Z"
+  },
+  "arena.mode.3v3": {
+    "src_hash": "cd7102dee6115de15e908c826014625c",
+    "text": "Echipa 3v3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:47:57.832361Z"
+  },
+  "arena.mode.ffa": {
+    "src_hash": "a5de226ecf3e6fc85028144b4204662f",
+    "text": "Gratuit pentru toți",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:47:57.832933Z"
+  },
+  "arena.mode.ctf": {
+    "src_hash": "03d45f77704591555f382c153bfa2414",
+    "text": "Captură Steagul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:47:57.833532Z"
+  },
+  "arena.mode.koth": {
+    "src_hash": "a82dbd592fe6997b04795e7a802b2165",
+    "text": "Regele dealului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:03.578601Z"
+  },
+  "arena.mode.lms": {
+    "src_hash": "5a1918be2f7cc66e422fb29bf7902d7f",
+    "text": "Ultimul om în picioare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:03.579681Z"
+  },
+  "arena.mode.tournament": {
+    "src_hash": "4f4dc29df9d29cbec61a725ff3ce6e72",
+    "text": "Turneu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:03.580094Z"
+  },
+  "arena.mode.2v2.desc": {
+    "src_hash": "085328fa1a567656d2dbaed7de7e8d55",
+    "text": "Două echipe de câte doi se luptă. Limită de timp de 7 minute.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:03.582099Z"
+  },
+  "arena.mode.3v3.desc": {
+    "src_hash": "2f9d08c363cbf3b34c9eacf3b8df7316",
+    "text": "Două echipe din trei se ciocnesc. Limită de timp de 10 minute.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:09.185727Z"
+  },
+  "arena.mode.ffa.desc": {
+    "src_hash": "c895d5e714cc516711a29a7f4382643e",
+    "text": "Fiecare jucător pentru el însuși! Cele mai multe ucideri câștigă. 5 minute.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:09.186597Z"
+  },
+  "arena.mode.ctf.desc": {
+    "src_hash": "e04ab548b7294f6447bb645d8de58b1b",
+    "text": "Capturează steagul inamicului și aduce-l la baza ta. 10 minute.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:09.187349Z"
+  },
+  "arena.mode.koth.desc": {
+    "src_hash": "d1fc685f38f272761cbb4fd6578ca0a4",
+    "text": "Țineți punctul central pentru a acumula scor. 8 minute.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:09.187950Z"
+  },
+  "arena.mode.lms.desc": {
+    "src_hash": "230fc21d8d5fe4f3fe90242c6a00ae2a",
+    "text": "Fără reapariții. Ultimul în picioare câștigă. 15 minute.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:09.188576Z"
+  },
+  "arena.title.apprentice": {
+    "src_hash": "0a664616e1506d0c24a61bd1cca7d70e",
+    "text": "Ucenic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:13.277118Z"
+  },
+  "arena.title.fighter": {
+    "src_hash": "5db14795d4c6928f94927d0c0a060bee",
+    "text": "Luptător",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:13.277431Z"
+  },
+  "arena.title.warrior": {
+    "src_hash": "7ee7fa010d64b90a36803a8445f2e943",
+    "text": "Războinic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:13.277691Z"
+  },
+  "arena.title.elite": {
+    "src_hash": "b13082ea3fe2642f1fd1fb76de03058b",
+    "text": "Elită",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:16.172635Z"
+  },
+  "arena.title.champion": {
+    "src_hash": "3c18971605b1367c3d2ed6fda74be164",
+    "text": "Campion",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:16.173152Z"
+  },
+  "arena.title.legend": {
+    "src_hash": "9b27e12d584b3438e811533b32e026e8",
+    "text": "Legendă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:16.186481Z"
+  },
+  "arena.title.mythic": {
+    "src_hash": "69e275fa2f3c2d7ccf0cc139572aecc0",
+    "text": "Mitic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:20.114272Z"
+  },
+  "arena.title.immortal": {
+    "src_hash": "16b98d0e33bf9444817b6cf56a39cf58",
+    "text": "Nemuritor",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:20.114557Z"
+  },
+  "arena.cmd.help.header": {
+    "src_hash": "f3353f677db0b5e52c4b5a7f26b937fa",
+    "text": "[Arena PvP] Comenzi disponibile:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:48:20.115016Z"
+  },
+  "data.otservbr.global.scripts.quests.the.primal.ordeal.creaturescripts.magma.bubble.death.L17.2173": {
+    "src_hash": "cd0075c418243aa1e4b35fc2b9d9ae29",
+    "text": "Felicitări ați primit ținuta de pompier.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:05:13.799072Z"
+  },
+  "scripts.creaturescripts_middle_spike_kill.msg_1": {
+    "src_hash": "9c11541ca7ac9c834a81d45893c01960",
+    "text": "Ai ucis {} din 7 Crystalcrushers.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:14:17.367819Z"
+  },
+  "scripts.creaturescripts_parasite.say_1": {
+    "src_hash": "36fb836e7857c2d1440eceeec12d49b0",
+    "text": "Se pare că cineva a distrus deja pereții în ultimele 30 de minute.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:14:22.558896Z"
+  },
+  "scripts.creaturescripts_pythius_the_rotten_kill.say_1": {
+    "src_hash": "70cea6c8d3581d17395f6a6019f8b2f4",
+    "text": "Frumoasă luptă cu vierme mic, VICTORIA TA VA FI RĂSPPLĂȚITĂ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:14:22.559598Z"
+  },
+  "cpp.protocol.resting_mana_regen_double": {
+    "src_hash": "f4e23225a1be33a6438c511b4e2872ce",
+    "text": "Regenerare puncte de mana duble",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:36:08.788522Z"
+  },
+  "cpp.protocol.resting_no_bonus": {
+    "src_hash": "1e666bfc5696146ad2529808f6094413",
+    "text": "Zona de odihnă (fără bonus activ)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:36:16.130063Z"
+  },
+  "cpp.protocol.resting_soul_regen": {
+    "src_hash": "85f5b5de237017ae21137db198e2d050",
+    "text": "Regenerarea punctelor sufletului",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:36:16.130651Z"
+  },
+  "cpp.protocol.resting_stamina_regen": {
+    "src_hash": "16698fbf38ddda80e963ad266f089378",
+    "text": "Regenerarea punctelor de rezistență",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:36:16.131162Z"
+  },
+  "cpp.protocol.server_closed": {
+    "src_hash": "8a740b89ac7c768e69b4ef52e36bea28",
+    "text": "Serverul este momentan închis.\nVă rugăm să încercați din nou mai târziu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:36:16.131849Z"
+  },
+  "cpp.protocol.session_expired": {
+    "src_hash": "c52a96d67f00273196a818c747912148",
+    "text": "Sesiunea dvs. a expirat. Vă rugăm să vă conectați din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:36:16.132483Z"
+  },
+  "scripts.creaturescripts_raging_mage_1.say_1": {
+    "src_hash": "d98e20ba1b0acd5994250fc5e4a79f2a",
+    "text": "Nu v-ați dovedit vrednic în lupta dimensională împotriva yielothax.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:59:10.829572Z"
+  },
+  "scripts.creaturescripts_raging_mage_1.say_2": {
+    "src_hash": "d6e25d51fb2c0a417ee054fa70c26304",
+    "text": "GNAAAAAHRRRG!! CE? CE MI-AI FACUT!! Eu... simt energiile care se târăsc departe... de mine... MOR!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:59:10.831350Z"
+  },
+  "scripts.creaturescripts_raging_mage_2.say_1": {
+    "src_hash": "d4c96e6e563497737747478d23aa03e9",
+    "text": "O SA REVENI!! Moartea mea va fi doar o uşă pentru a-mi aştepta întoarcerea acasă, \\z\n\tcarcasa mea fizică va fi... mea... argh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:37:46.101539Z"
+  },
+  "otclient_modules.prey.tr_19": {
+    "src_hash": "ed7d5c5bc76ffe38c21ba316a34db1d9",
+    "text": "Bonus necunoscut",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:41:27.597339Z"
+  },
+  "otclient_modules.prey.tr_20": {
+    "src_hash": "ed7d5c5bc76ffe38c21ba316a34db1d9",
+    "text": "Bonus necunoscut",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:41:27.598606Z"
+  },
+  "otclient_modules.character_otui.tr_76": {
+    "src_hash": "aa79c5d1cbe3d96218a92481bcfaa39c",
+    "text": "Abilități",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:41:44.820867Z"
+  },
+  "otclient_modules.character_otui.tr_77": {
+    "src_hash": "182be0c5cdcd5072bb1864cdee4d3d6e",
+    "text": "33",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:41:44.821125Z"
+  },
+  "scripts.creaturescripts_ratmiral_death.msg_1": {
+    "src_hash": "1ed8049e3dc0aeeda50e88c029721d99",
+    "text": "Felicitări ai primit ținuta Rascoohan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:32:31.284062Z"
+  },
+  "cpp.protocol.support_outfit_customer_support": {
+    "src_hash": "45db51f999b9e9fc7263a7e0ebc2d7f0",
+    "text": "Asistență pentru clienți",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:42:11.702293Z"
+  },
+  "cpp.protocol.temple_position_wrong": {
+    "src_hash": "737f34e09dd097314633dbd006385552",
+    "text": "Poziția templului este greșită. Vă rugăm să contactați administratorul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:42:11.703301Z"
+  },
+  "cpp.protocol.unknown_creature": {
+    "src_hash": "bdd6e978162accd8dc94e48d751655b5",
+    "text": "Creatură necunoscută",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:42:11.703952Z"
+  },
+  "cpp.protocol.waiting_list": {
+    "src_hash": "561d3d4a258f3c5faa85d1a11b8cb556",
+    "text": "Prea mulți jucători online.\nVă aflați în locul {0} pe lista de așteptare.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:42:14.792493Z"
+  },
+  "arena.cmd.help.leave": {
+    "src_hash": "4f98464c58520576693c6d4dfa1cd134",
+    "text": "!arena plec - Lasă coada",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:45:37.079381Z"
+  },
+  "arena.cmd.help.ranking": {
+    "src_hash": "1badab65a927d2a731ff7c0d84f040cc",
+    "text": "!arena clasament - Vezi primii 20 de jucători",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:45:37.079907Z"
+  },
+  "arena.cmd.help.history": {
+    "src_hash": "124aab4e522e861086bfb04bde819daf",
+    "text": "!arena istoric - Vezi istoricul meciurilor tale",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:45:37.080287Z"
+  },
+  "arena.cmd.modes.header": {
+    "src_hash": "64cafba9d270224276f7c49f961e94c3",
+    "text": "[Arena PvP] Moduri disponibile:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:45:45.334014Z"
+  },
+  "arena.cmd.modes.entry": {
+    "src_hash": "b734d371d672089237d8c17d2ec5b263",
+    "text": "{0} ({1}) - {2} în coadă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:45:45.334351Z"
+  },
+  "arena.cmd.stats.no_profile": {
+    "src_hash": "4d5f5f3b4418cc27f2c83b33343fb33b",
+    "text": "[Arena] Niciun profil de arenă nu a fost găsit încă. Alăturați-vă unui meci pentru a crea unul!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:45:45.335183Z"
+  },
+  "arena.cmd.stats.header": {
+    "src_hash": "6e4a70a9417e2559e2c6b087b0f0c519",
+    "text": "[Arena PvP] Statisticile tale:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:45:53.193986Z"
+  },
+  "arena.cmd.stats.mmr_line": {
+    "src_hash": "54b0caf0e7212ae5c2ceb57eee4a6bb9",
+    "text": "MMR: {0} | Puncte: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:45:53.194288Z"
+  },
+  "arena.cmd.stats.streak_line": {
+    "src_hash": "8e7305efc73b90557aff75ba9e7ce079",
+    "text": "Serie: {0} (Cel mai bun: {1})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:45:53.194619Z"
+  },
+  "arena.cmd.stats.damage_line": {
+    "src_hash": "47e8dbed0978085e6e7d32916e5f4026",
+    "text": "Daune totale: {0} | Vindecare totală: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:45:53.195009Z"
+  },
+  "arena.cmd.ranking.empty": {
+    "src_hash": "d8c2e036f9deba0cf3d5cdfa19b747ee",
+    "text": "[Arena] Nu sunt disponibile date de clasare încă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:45:53.195389Z"
+  },
+  "arena.cmd.history.empty": {
+    "src_hash": "65ee78bc0c7de6099eee12e953ee4017",
+    "text": "[Arena] Niciun istoric al meciurilor încă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:45:59.319849Z"
+  },
+  "arena.cmd.history.header": {
+    "src_hash": "583ed7bc987fcc60ef941f96508c2911",
+    "text": "[Arena PvP] Ultimele 10 meciuri:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:45:59.320140Z"
+  },
+  "arena.cmd.join.unknown_mode": {
+    "src_hash": "eb9c81bafe56653d2927821921fc45c2",
+    "text": "[Arena] Mod necunoscut '{0}'. Tastați '!arena modes' pentru modurile disponibile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:46:06.051631Z"
+  },
+  "arena.cmd.join.already_in_match": {
+    "src_hash": "87867de4b5e0285cf39940b520fce9a5",
+    "text": "[Arena] Ești deja într-un meci!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:46:06.051975Z"
+  },
+  "arena.cmd.join.already_in_queue": {
+    "src_hash": "b12e5e3b825811e688fcee2ba7cbc7a4",
+    "text": "[Arena] Ești deja în coadă! Utilizați mai întâi '!arena leave'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:46:06.052459Z"
+  },
+  "arena.cmd.join.level_required": {
+    "src_hash": "be134ab927fa2fe40ea0f865482a6642",
+    "text": "[Arena] Ai nevoie de cel puțin nivelul {0} pentru a te înscrie în arenă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:46:06.052876Z"
+  },
+  "data.otservbr.global.scripts.quests.a.pirates.tail.creaturescripts.ratmiral.death.L13.1979": {
+    "src_hash": "1ed8049e3dc0aeeda50e88c029721d99",
+    "text": "Felicitări ai primit ținuta Rascoohan.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:01:59.720568Z"
+  },
+  "scripts.creaturescripts_rift_invader_death.say_1": {
+    "src_hash": "5669a3df754da154c7d6c30b1ae02c01",
+    "text": "ARGH!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:06:41.837301Z"
+  },
+  "cpp.protocol.wrong_email_password": {
+    "src_hash": "32db5614cff075a776beb950f696d97f",
+    "text": "E-mailul sau parola dvs. nu sunt corecte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:17:33.934267Z"
+  },
+  "cpp.protocol.wrong_username_password": {
+    "src_hash": "397e8e13f17fa4fac7a20acfe3b595a6",
+    "text": "Numele dvs. de utilizator sau parola nu sunt corecte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:17:33.934629Z"
+  },
+  "cpp.returnvalue.action_not_permitted_in_a_no_pvp_zone": {
+    "src_hash": "5a71883100183c6d485d26beb222ecba",
+    "text": "Această acțiune nu este permisă într-o zonă non-pvp.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:17:33.935105Z"
+  },
+  "cpp.returnvalue.action_not_permitted_in_protection_zone": {
+    "src_hash": "aa06e3388d8cbfb7218c0a56dfc38b3d",
+    "text": "Această acțiune nu este permisă într-o zonă de protecție.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:17:36.600695Z"
+  },
+  "arena.admin.stats.streak": {
+    "src_hash": "8e7305efc73b90557aff75ba9e7ce079",
+    "text": "Serie: {0} (Cel mai bun: {1})",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:20:14.297198Z"
+  },
+  "arena.cmd.join.success": {
+    "src_hash": "79470704af55441db0f6568f50545909",
+    "text": "[Arena] Te-ai alăturat la coada {0}! În căutarea adversarilor...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:20:25.850210Z"
+  },
+  "arena.cmd.join.failed": {
+    "src_hash": "0d71659d84c50b7528f52b6b5f063893",
+    "text": "[Arena] Nu s-a putut alătura la coadă. Încercați din nou mai târziu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:20:25.850635Z"
+  },
+  "arena.cmd.leave.not_in_queue": {
+    "src_hash": "5cdae5913ba9d4554f3ab5849246ea30",
+    "text": "[Arena] Nu ești în nicio coadă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:20:25.850968Z"
+  },
+  "arena.cmd.leave.success": {
+    "src_hash": "ed333b3b38a2476e30b692a3354f9b39",
+    "text": "[Arena] Ai părăsit coada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:20:31.396913Z"
+  },
+  "arena.cmd.leave.failed": {
+    "src_hash": "d308580ea69815cf42b1cede3adb6462",
+    "text": "[Arena] Nu s-a putut părăsi coada.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:20:31.397358Z"
+  },
+  "arena.npc.greet_msg": {
+    "src_hash": "6a1356c449fc828d77f8811e2e73f3d9",
+    "text": "Salutări, războinic! Ești aici pentru {arena}? Vă pot ajuta să găsiți adversari demni!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:20:31.397908Z"
+  },
+  "cpp.returnvalue.another_raid_is_already_executing": {
+    "src_hash": "439069b07c778746dcf76c7e070ee7ee",
+    "text": "Un alt raid se execută deja.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:42:18.594454Z"
+  },
+  "cpp.returnvalue.both_hands_need_to_be_free": {
+    "src_hash": "bdb2e2734554fdd85370982c0794e423",
+    "text": "Ambele mâini trebuie să fie libere.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:42:18.594803Z"
+  },
+  "cpp.returnvalue.can_only_use_one_shield": {
+    "src_hash": "87c98f3462012a20dab4519dd8854dae",
+    "text": "Puteți folosi doar un singur scut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:42:18.595140Z"
+  },
+  "cpp.returnvalue.can_only_use_one_weapon": {
+    "src_hash": "40e0f34e4e1336a83ecc24542278894a",
+    "text": "Puteți folosi doar o singură armă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:42:20.547664Z"
+  },
+  "arena.npc.farewell_msg": {
+    "src_hash": "1265a0a4507b4160a3233b958abc89ac",
+    "text": "Fie ca lama ta să rămână ascuțită! Revino oricând pentru mai multe bătălii!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:45:18.159070Z"
+  },
+  "arena.npc.walkaway_msg": {
+    "src_hash": "fc985372272ea79ce29c2290c506a5bc",
+    "text": "Pleacă atât de curând? Arena vă așteaptă!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:45:18.159449Z"
+  },
+  "cpp.returnvalue.can_only_use_this_rune_on_creatures": {
+    "src_hash": "8d50aac7531c4cb3295533915ad012d8",
+    "text": "Puteți folosi această rună numai pe creaturi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:10:49.280534Z"
+  },
+  "cpp.returnvalue.cannot_be_dressed": {
+    "src_hash": "6d3eb61e6970d726fc121e18d5eec0e8",
+    "text": "Nu poți îmbrăca acest obiect acolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:10:49.280915Z"
+  },
+  "cpp.returnvalue.cannot_conjure_item_here": {
+    "src_hash": "93a66f9ae4b32e5a670df705d12e0096",
+    "text": "Nu puteți evoca elemente aici.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:10:49.281320Z"
+  },
+  "cpp.returnvalue.cannot_pickup": {
+    "src_hash": "a71a3a9366ef0ff0a220265670dc7c98",
+    "text": "Nu poți lua acest obiect.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:10:51.447794Z"
+  },
+  "arena.npc.welcome": {
+    "src_hash": "e614d005312453bfe0faf65fd5fe8438",
+    "text": "Bun venit la {Arena}! Vă pot ajuta să {join} o potrivire, să vă verific {stats}, să vedeți {ranking} sau să văd {modes} disponibil. Ce ai dori?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:13:33.295518Z"
+  },
+  "arena.npc.modes.header": {
+    "src_hash": "718c3b18efc7c3088a3fcdc447642d95",
+    "text": "Moduri de arenă disponibile:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:13:33.295853Z"
+  },
+  "npclib.modules.promote_no_money": {
+    "src_hash": "3c4ac29a8444d4809c80c54448057274",
+    "text": "Nu ai destui bani!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:07.554145Z"
+  },
+  "npclib.modules.confirm_success": {
+    "src_hash": "1a8e839c01cb9fbdb8a4df46ddd31cbf",
+    "text": "A fost o plăcere să fac afaceri cu tine.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:11.965085Z"
+  },
+  "npclib.modules.promote_need_premium": {
+    "src_hash": "64367629f46038ced3fcb66bc86c307f",
+    "text": "Ai nevoie de un cont premium pentru a fi promovat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:11.965634Z"
+  },
+  "npclib.modules.say_1": {
+    "src_hash": "a0128d8433eac608a3cf63d83caf1d2e",
+    "text": "Doriți să călătoriți în '{}' pentru '{}' monede de aur?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:11.966106Z"
+  },
+  "npclib.modules.say_2": {
+    "src_hash": "35d00319ec2163ce87c66f9ec45741f9",
+    "text": "Nu ai niciuna dintre celelalte binecuvântări și nici o amuletă a pierderii, \\z\n                           deci nu ar avea sens să-ți acordăm această protecție acum. \\z\n                           Amintiți-vă că vă poate proteja doar de pierderea acestora!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:11.967128Z"
+  },
+  "npclib.modules.say_3": {
+    "src_hash": "589fcb0419808e208129bf390496faa7",
+    "text": "Aveți nevoie de un cont premium pentru a cumpăra '{}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:11.967602Z"
+  },
+  "npclib.modules.say_4": {
+    "src_hash": "5e77293aa3d93f8035d5bf4ce1919284",
+    "text": "Ați învățat '{}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:18.409814Z"
+  },
+  "npclib.modules.say_5": {
+    "src_hash": "8b9a1ee72c7994ccfca297659d05b4c4",
+    "text": "Nu ai suficienți bani, această vrajă costă {} aur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:18.410356Z"
+  },
+  "npclib.modules.say_6": {
+    "src_hash": "0ea6405ab8134a43236323b8bff735ce",
+    "text": "Îmi pare rău, dar vă pot promova numai după ce ați atins nivelul {}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:18.410977Z"
+  },
+  "npclib.modules.spell_already_known": {
+    "src_hash": "ece2642e6cbfd586858d7e741a950a86",
+    "text": "Știi deja această vrajă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:18.411442Z"
+  },
+  "npclib.modules.spell_cannot_learn": {
+    "src_hash": "c4644938660de39c56f93ef7fde5af89",
+    "text": "Nu poți învăța această vrajă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:18.411858Z"
+  },
+  "npclib.modules.travel_depart": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Pune pânzele!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:25.210061Z"
+  },
+  "npclib.modules.travel_destinations": {
+    "src_hash": "42373289e7def0c59441aebd43c94d22",
+    "text": "Vă pot aduce la {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:25.210432Z"
+  },
+  "npclib.modules.travel_exhaustion": {
+    "src_hash": "bece00e7ad4b25794382943ad5f454a3",
+    "text": "Ne pare rău, dar trebuie să așteptați trei secunde înainte de a călători din nou.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:25.210929Z"
+  },
+  "npclib.modules.travel_level_req": {
+    "src_hash": "8530a962e2cdc42d02111cc358830ca8",
+    "text": "Trebuie să ajungi la nivelul {0} înainte să te pot lăsa să mergi acolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:25.211405Z"
+  },
+  "npclib.modules.travel_need_premium": {
+    "src_hash": "06053b39eaee5cd4fc1eab9f5ab5e758",
+    "text": "Îmi pare rău, dar aveți nevoie de un cont premium pentru a călători la bordul navelor noastre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:25.211933Z"
+  },
+  "npclib.modules.travel_pz_locked": {
+    "src_hash": "af9ac68c752383a2a4e7eca1ed20dafc",
+    "text": "Mai întâi scapă de acele pete de sânge! Nu o să-mi strici vehiculul!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:27.318964Z"
+  },
+  "npc.gurbasch.stdmod_8": {
+    "src_hash": "824649905ba8fc711a1ba827d0ec24e6",
+    "text": "Pune pânzele!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:21:01.930932Z"
+  },
+  "cpp.returnvalue.cannot_throw": {
+    "src_hash": "5acb3fd705c4091c865feab024b26e7e",
+    "text": "Nu poți arunca acolo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:45:38.646189Z"
+  },
+  "cpp.returnvalue.cannot_use_this_object": {
+    "src_hash": "2e8f7dd61de19d4af6d516ccbd7bda39",
+    "text": "Nu puteți folosi acest obiect.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:45:38.647262Z"
+  },
+  "cpp.returnvalue.contact_administrator": {
+    "src_hash": "11c5b6a2dc274ae6748fe45cd1ff85bf",
+    "text": "A apărut o eroare, vă rugăm să contactați administratorul.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:45:38.648702Z"
+  },
+  "cpp.returnvalue.container_is_full": {
+    "src_hash": "2f1de3e5c21535a6de9ac2243b1813ed",
+    "text": "Nu puteți pune mai multe articole în acest container.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:45:40.716961Z"
+  },
+  "arena.npc.join.which_mode": {
+    "src_hash": "4d24d3c16dd61c4c30f230bacd3d603f",
+    "text": "În ce mod ați dori să vă alăturați? Spuneți 'join' urmat de: 1v1, 2v2, 3v3, ffa sau lms.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:49:03.841693Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_39": {
+    "src_hash": "a809ca5abdc6e2a638d8fff2a1aae61f",
+    "text": "Arata tinuta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:52:34.204466Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_4": {
+    "src_hash": "89eeff1be3beb0edc9f5c11efcecdeb4",
+    "text": "Doar a mea",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:52:34.204750Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_40": {
+    "src_hash": "2fefd38cae42b54fcbc23fec38c9c9fd",
+    "text": "Arata etaj",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:52:39.293527Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_41": {
+    "src_hash": "31fde7b05ac8952dacf4af8a704074ec",
+    "text": "Previzualizare",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:52:39.293824Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_42": {
+    "src_hash": "867ec18b4d8c1e358a025c48e87d1ea3",
+    "text": "Personalizați caracterul",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:52:39.294244Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_43": {
+    "src_hash": "c9cc8cce247e49bae79f15173ce97354",
+    "text": "Salva",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:52:39.294496Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_44": {
+    "src_hash": "1971563478a10aa6f03dfcc475015371",
+    "text": "Nume presetat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:52:39.294779Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_6": {
+    "src_hash": "f2a6c498fb90ee345d997f888fce3b18",
+    "text": "Şterge",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:52:42.134491Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_7": {
+    "src_hash": "c9cc8cce247e49bae79f15173ce97354",
+    "text": "Salva",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:52:42.134752Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_8": {
+    "src_hash": "904a8304056d77e4547744781b7ceb50",
+    "text": "Redenumiți",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:52:42.135074Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_9": {
+    "src_hash": "03c2e7e41ffc181a4e84080b4710e81e",
+    "text": "Nou",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:52:42.135298Z"
+  },
+  "otclient_data.init.tr_1": {
+    "src_hash": "4994a8ffeba4ac3140beb89e8d41f174",
+    "text": "Limbă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:52:42.135539Z"
+  },
+  "otclient_data.init.tr_2": {
+    "src_hash": "4994a8ffeba4ac3140beb89e8d41f174",
+    "text": "Limbă",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:52:44.103249Z"
+  },
+  "cpp.returnvalue.container_not_enough_room": {
+    "src_hash": "73085eb1f727b6fd9a164b9789308fd5",
+    "text": "Nu puteți pune mai multe obiecte în acest container.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:32:14.336636Z"
+  },
+  "cpp.returnvalue.creature_does_not_exist": {
+    "src_hash": "892b20e36ad4ad0e804d65746d9d2665",
+    "text": "Creatura nu există.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:32:14.337008Z"
+  },
+  "cpp.returnvalue.creature_is_not_reachable": {
+    "src_hash": "7da1662ff13be19252ad9ec6a28c3ce1",
+    "text": "Creatura nu este accesibilă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:32:14.337448Z"
+  },
+  "cpp.returnvalue.depot_is_full": {
+    "src_hash": "347c9055a2cfcf399563a25843fefc2c",
+    "text": "Nu puteți pune mai multe articole în acest depozit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:32:17.398018Z"
+  },
+  "arena.npc.join.already_in_match": {
+    "src_hash": "92370c21399ade4ff9a459d0e4020e54",
+    "text": "Te lupți deja în arenă! Termină mai întâi meciul curent.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:35:01.596326Z"
+  },
+  "cpp.returnvalue.destination_out_of_reach": {
+    "src_hash": "2bcd0a7345e9dfe05446be11474c449e",
+    "text": "Destinația nu este la îndemână.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:45:46.682318Z"
+  },
+  "cpp.returnvalue.direct_player_shoot": {
+    "src_hash": "f759286d5c701ed1172aa91292e7ca4a",
+    "text": "Nu ai voie să tragi direct asupra jucătorilor.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:45:46.683004Z"
+  },
+  "cpp.returnvalue.drop_two_handed_item": {
+    "src_hash": "38bfa48088290a448b810585bc40748e",
+    "text": "Arunca mai întâi obiectul cu două mâini.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:45:46.683556Z"
+  },
+  "cpp.returnvalue.first_go_downstairs": {
+    "src_hash": "a5c55bc7d4edb8b8295d4468f5453275",
+    "text": "Mai întâi coboară.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:45:49.538036Z"
+  },
+  "arena.npc.join.already_in_queue": {
+    "src_hash": "8a33eaf4db62a22a690996bb283c8a8e",
+    "text": "Ești deja la coadă! Spuneți 'leave' pentru a ieși mai întâi din coadă.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:49:25.597788Z"
   }
 }

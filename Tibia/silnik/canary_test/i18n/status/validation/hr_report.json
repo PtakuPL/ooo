@@ -1,11 +1,11 @@
 {
   "lang": "hr",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 3853,
-  "identical_to_en": 2701,
-  "placeholder_keys": 49733,
-  "coverage_pct": 7.2,
+  "total_keys": 53770,
+  "translated": 3998,
+  "identical_to_en": 2846,
+  "placeholder_keys": 49752,
+  "coverage_pct": 7.4,
   "issues_total": 2,
   "issues_by_type": {
     "V4_artifact": 1,
@@ -34,11 +34,11 @@
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 407,
+    "issues_total": 406,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 7,
+    "length_ratio": 6,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T11:16:31.260912Z"
+  "validated_at": "2026-02-21T20:41:05.400106Z"
 }

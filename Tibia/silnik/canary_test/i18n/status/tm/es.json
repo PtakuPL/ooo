@@ -27345,11 +27345,11 @@
   },
   "item.179.desc": {
     "src_hash": "64b6420c1293bd6f68fb88c6489bb11b",
-    "text": "Dice 'Roses are red, violets are blue, sugar is sweet and so are you.' Excelente",
+    "text": "Dice: \"Las rosas son rojas, las violetas son azules, el azúcar es dulce y tú también\". Excelente",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T19:37:47.466774Z"
+    "updated_at": "2026-02-21T11:59:10.236480Z"
   },
   "item.21375.desc": {
     "src_hash": "bef4c90e66fd25c06b8777c21b0c08a5",
@@ -155470,5 +155470,1029 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T10:58:07.260417Z"
+  },
+  "item.17827.name": {
+    "src_hash": "668308b03810cb38aa97a4ff1c5c27c9",
+    "text": "barba enana sangrienta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:59:05.711195Z"
+  },
+  "item.17847.desc": {
+    "src_hash": "237dfbf6bfcd3d7121cd9228cb8bec91",
+    "text": "Contiene los dientes de muchas víctimas fáciles.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:59:05.711791Z"
+  },
+  "item.17848.desc": {
+    "src_hash": "c31c360fbc7d7ed3ca4db83dc1ace69a",
+    "text": "Contiene la energía oscura de las esferas de basalto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:59:05.712382Z"
+  },
+  "item.17848.name": {
+    "src_hash": "942c4bada7c69a30cd42811189dfba2c",
+    "text": "bastón de silencio perdido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:59:05.712850Z"
+  },
+  "item.17895.name": {
+    "src_hash": "14bd18d04a2d1e42da21ec7230b2d8a6",
+    "text": "crestería",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:59:10.235622Z"
+  },
+  "item.17972.desc": {
+    "src_hash": "7531bcb64dc77ef331ac6834e1c30d6e",
+    "text": "Úselo en su cama para cambiar la cama a una cama con dosel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:59:10.237102Z"
+  },
+  "item.17972.name": {
+    "src_hash": "e89ae5a0e7f78b739cfa1a53c8aaba71",
+    "text": "kit de cama con dosel",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:59:10.237587Z"
+  },
+  "item.17974.desc": {
+    "src_hash": "867c2b469b991113145e1d26495d2822",
+    "text": "Úselo en su casa para construir un gabinete venóreo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:59:10.238179Z"
+  },
+  "item.17974.name": {
+    "src_hash": "f3e67f1df4a614c7b2346eb2316a6447",
+    "text": "kit de gabinete venoreano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:59:12.473467Z"
+  },
+  "item.17975.name": {
+    "src_hash": "50628f3d64b35e7826b570d61a2d0781",
+    "text": "kit de guardarropa venoreano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:53:04.888282Z"
+  },
+  "item.17977.name": {
+    "src_hash": "c2020667fac05baa41352f6414e7a1f4",
+    "text": "kit de cajón venoreano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:53:04.888780Z"
+  },
+  "item.18327.desc": {
+    "src_hash": "7e242cb95dbfb93fbc2b2a2ee2d9eb52",
+    "text": "Una figura de ajedrez Zaoan hecha de jade. Representa a la reina.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:53:04.889861Z"
+  },
+  "item.18328.desc": {
+    "src_hash": "b1d21649a7a95d054ee44a59484bed41",
+    "text": "Una figura de ajedrez Zaoan hecha de jade. Representa al rey",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:53:11.255207Z"
+  },
+  "item.18329.desc": {
+    "src_hash": "7941f45905fc070b042f77196815c683",
+    "text": "Una figura de ajedrez Zaoan hecha de jade. Representa al obispo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:53:11.256195Z"
+  },
+  "item.18330.desc": {
+    "src_hash": "8d775e915fe1defd04b632e7bdae5f27",
+    "text": "Una figura de ajedrez Zaoan hecha de jade. Representa al caballero",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:53:11.257135Z"
+  },
+  "arena.title.contender": {
+    "src_hash": "6bc60f225af3e040f25409d430314097",
+    "text": "Contendiente",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:26.934755Z"
+  },
+  "arena.title.fighter": {
+    "src_hash": "5db14795d4c6928f94927d0c0a060bee",
+    "text": "Luchador",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:26.936489Z"
+  },
+  "arena.title.champion": {
+    "src_hash": "3c18971605b1367c3d2ed6fda74be164",
+    "text": "Campeón",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:26.939691Z"
+  },
+  "arena.title.gladiator": {
+    "src_hash": "f92b36491af502e1a73ef7aa499211b0",
+    "text": "Gladiador",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:26.941322Z"
+  },
+  "arena.title.legend": {
+    "src_hash": "9b27e12d584b3438e811533b32e026e8",
+    "text": "Leyenda",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:26.942786Z"
+  },
+  "arena.mode.1v1": {
+    "src_hash": "c9df9d307e1889240c617bdd4b545fd5",
+    "text": "Duelo 1v1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:31.105629Z"
+  },
+  "arena.mode.2v2": {
+    "src_hash": "3d7fed18a70a9bcb3f06f228f67cb74b",
+    "text": "Equipo 2v2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:31.105931Z"
+  },
+  "arena.mode.3v3": {
+    "src_hash": "cd7102dee6115de15e908c826014625c",
+    "text": "Equipo 3v3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:31.106193Z"
+  },
+  "arena.mode.ffa": {
+    "src_hash": "a5de226ecf3e6fc85028144b4204662f",
+    "text": "Gratis para todos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:31.106550Z"
+  },
+  "arena.mode.ctf": {
+    "src_hash": "03d45f77704591555f382c153bfa2414",
+    "text": "Capturar la bandera",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:31.106912Z"
+  },
+  "arena.mode.koth": {
+    "src_hash": "a82dbd592fe6997b04795e7a802b2165",
+    "text": "Rey de la colina",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:35.947606Z"
+  },
+  "arena.mode.lms": {
+    "src_hash": "5a1918be2f7cc66e422fb29bf7902d7f",
+    "text": "El último hombre en pie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:35.948116Z"
+  },
+  "arena.mode.tournament": {
+    "src_hash": "4f4dc29df9d29cbec61a725ff3ce6e72",
+    "text": "Torneo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:35.948402Z"
+  },
+  "arena.mode.1v1.desc": {
+    "src_hash": "51ce641163404b50e31732b76ea0ede1",
+    "text": "Un duelo clásico entre dos guerreros. Límite de tiempo de 5 minutos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:35.949146Z"
+  },
+  "arena.mode.2v2.desc": {
+    "src_hash": "085328fa1a567656d2dbaed7de7e8d55",
+    "text": "Dos equipos de dos luchan. Límite de tiempo de 7 minutos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:35.949822Z"
+  },
+  "arena.mode.3v3.desc": {
+    "src_hash": "2f9d08c363cbf3b34c9eacf3b8df7316",
+    "text": "Se enfrentan dos equipos de tres. Límite de tiempo de 10 minutos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:41.999645Z"
+  },
+  "arena.mode.ffa.desc": {
+    "src_hash": "c895d5e714cc516711a29a7f4382643e",
+    "text": "¡Cada jugador por sí mismo! La mayoría de los que matan ganan. 5 minutos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:42.000337Z"
+  },
+  "arena.mode.ctf.desc": {
+    "src_hash": "e04ab548b7294f6447bb645d8de58b1b",
+    "text": "Captura la bandera enemiga y llévala a tu base. 10 minutos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:42.001089Z"
+  },
+  "arena.mode.koth.desc": {
+    "src_hash": "d1fc685f38f272761cbb4fd6578ca0a4",
+    "text": "Mantenga el punto central para acumular puntuación. 8 minutos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:42.001859Z"
+  },
+  "arena.mode.lms.desc": {
+    "src_hash": "230fc21d8d5fe4f3fe90242c6a00ae2a",
+    "text": "Sin reapariciones. El último en pie gana. 15 minutos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:42.002443Z"
+  },
+  "arena.mode.tournament.desc": {
+    "src_hash": "3bfb841b0092e177ffd6616239bb250a",
+    "text": "Torneo eliminatorio estilo brackets. Evento especial.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:45.252472Z"
+  },
+  "arena.title.novice": {
+    "src_hash": "85b285d50f417b7fb9650a107c49cdc4",
+    "text": "Principiante",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:45.252772Z"
+  },
+  "arena.title.apprentice": {
+    "src_hash": "0a664616e1506d0c24a61bd1cca7d70e",
+    "text": "Aprendiz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:45.253035Z"
+  },
+  "arena.title.warrior": {
+    "src_hash": "7ee7fa010d64b90a36803a8445f2e943",
+    "text": "Guerrero",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:45.253391Z"
+  },
+  "arena.title.veteran": {
+    "src_hash": "55a8998f66694a4e848bede0fad3684a",
+    "text": "Veterano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:45.253652Z"
+  },
+  "arena.title.elite": {
+    "src_hash": "b13082ea3fe2642f1fd1fb76de03058b",
+    "text": "Élite",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:49.215900Z"
+  },
+  "arena.title.mythic": {
+    "src_hash": "69e275fa2f3c2d7ccf0cc139572aecc0",
+    "text": "Mítico",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:49.216292Z"
+  },
+  "arena.title.immortal": {
+    "src_hash": "16b98d0e33bf9444817b6cf56a39cf58",
+    "text": "Inmortal",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:49.216684Z"
+  },
+  "arena.cmd.help.header": {
+    "src_hash": "f3353f677db0b5e52c4b5a7f26b937fa",
+    "text": "[Arena PvP] Comandos disponibles:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:49.217126Z"
+  },
+  "arena.cmd.help.join": {
+    "src_hash": "d9f79e39301e30c2e0e95d999023ed45",
+    "text": "!arena join <modo> - Únete a la cola de emparejamiento",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:49.217904Z"
+  },
+  "item.18331.desc": {
+    "src_hash": "036c1ec1bf99f64573e3803bfe124b0b",
+    "text": "Una figura de ajedrez Zaoan hecha de jade. Representa la torre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:42:36.606293Z"
+  },
+  "item.18332.desc": {
+    "src_hash": "25a02a5361f5f5dae5974cd35b39c870",
+    "text": "Una figura de ajedrez Zaoan hecha de jade. Representa el peón",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:42:36.607499Z"
+  },
+  "item.18333.desc": {
+    "src_hash": "65c0d9b585d28a97ba5918c3a7f84efc",
+    "text": "Una figura de ajedrez Zaoan hecha de obsidiana. Representa a la reina.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:42:36.608455Z"
+  },
+  "item.18334.desc": {
+    "src_hash": "bebc6cd4cddd154eaefada6fc88a8e75",
+    "text": "Una figura de ajedrez Zaoan hecha de obsidiana. Representa al rey",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:42:38.355953Z"
+  },
+  "arena.cmd.help.leave": {
+    "src_hash": "4f98464c58520576693c6d4dfa1cd134",
+    "text": "!arena dejar - Salir de la cola",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:59.775883Z"
+  },
+  "arena.cmd.help.ranking": {
+    "src_hash": "1badab65a927d2a731ff7c0d84f040cc",
+    "text": "Clasificación de !arena: ver los 20 mejores jugadores",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:59.776729Z"
+  },
+  "arena.cmd.help.history": {
+    "src_hash": "124aab4e522e861086bfb04bde819daf",
+    "text": "!arena historial - Ver tu historial de partidos",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:59.777378Z"
+  },
+  "arena.cmd.help.modes": {
+    "src_hash": "deef3cb557a9f5d8d9398fe7fe691a3e",
+    "text": "Modos !arena: lista de modos disponibles",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:59.777883Z"
+  },
+  "arena.cmd.modes.header": {
+    "src_hash": "64cafba9d270224276f7c49f961e94c3",
+    "text": "[Arena PvP] Modos disponibles:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:05.074523Z"
+  },
+  "arena.cmd.modes.entry": {
+    "src_hash": "b734d371d672089237d8c17d2ec5b263",
+    "text": "{0} ({1}) - {2} en cola",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:05.075031Z"
+  },
+  "arena.cmd.stats.no_profile": {
+    "src_hash": "4d5f5f3b4418cc27f2c83b33343fb33b",
+    "text": "[Arena] Aún no se ha encontrado ningún perfil de arena. ¡Únete a una partida para crear una!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:05.075843Z"
+  },
+  "arena.cmd.stats.header": {
+    "src_hash": "6e4a70a9417e2559e2c6b087b0f0c519",
+    "text": "[Arena PvP] Tus estadísticas:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:05.076317Z"
+  },
+  "arena.cmd.stats.mmr_line": {
+    "src_hash": "54b0caf0e7212ae5c2ceb57eee4a6bb9",
+    "text": "MMR: {0} | Puntos: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:10.719717Z"
+  },
+  "arena.cmd.stats.streak_line": {
+    "src_hash": "8e7305efc73b90557aff75ba9e7ce079",
+    "text": "Racha: {0} (Mejor: {1})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:10.720173Z"
+  },
+  "arena.cmd.ranking.empty": {
+    "src_hash": "d8c2e036f9deba0cf3d5cdfa19b747ee",
+    "text": "[Arena] Aún no hay datos de clasificación disponibles.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:10.721873Z"
+  },
+  "arena.cmd.ranking.header": {
+    "src_hash": "614c98bdefaae175647a70ba8ca7d30c",
+    "text": "[Arena PvP] Clasificación de los 20 mejores:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:10.722372Z"
+  },
+  "arena.cmd.ranking.columns": {
+    "src_hash": "9007c85afa3a87a48eaac6afa993b244",
+    "text": "# Nombre MMR W L Racha",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:16.350494Z"
+  },
+  "arena.cmd.history.empty": {
+    "src_hash": "65ee78bc0c7de6099eee12e953ee4017",
+    "text": "[Arena] Aún no hay historial de partidos.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:16.351059Z"
+  },
+  "arena.cmd.history.header": {
+    "src_hash": "583ed7bc987fcc60ef941f96508c2911",
+    "text": "[Arena PvP] Últimos 10 partidos:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:16.351580Z"
+  },
+  "arena.cmd.join.usage": {
+    "src_hash": "100738c2fd66c950518168398fae12dd",
+    "text": "[Arena] Uso: !arena unirse a <modo>. Escriba '!arena modes' para los modos disponibles.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:16.352568Z"
+  },
+  "arena.cmd.join.unknown_mode": {
+    "src_hash": "eb9c81bafe56653d2927821921fc45c2",
+    "text": "[Arena] Modo desconocido '{0}'. Escriba '!arena modes' para los modos disponibles.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:16.353540Z"
+  },
+  "arena.cmd.join.already_in_match": {
+    "src_hash": "87867de4b5e0285cf39940b520fce9a5",
+    "text": "[Arena] ¡Ya estás en una partida!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:21.349399Z"
+  },
+  "arena.cmd.join.already_in_queue": {
+    "src_hash": "b12e5e3b825811e688fcee2ba7cbc7a4",
+    "text": "[Arena] ¡Ya estás en la cola! Utilice '!arena leave' primero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:21.350084Z"
+  },
+  "arena.cmd.join.level_required": {
+    "src_hash": "be134ab927fa2fe40ea0f865482a6642",
+    "text": "[Arena] Necesitas al menos el nivel {0} para unirte a la arena.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:21.350630Z"
+  },
+  "arena.cmd.join.success": {
+    "src_hash": "79470704af55441db0f6568f50545909",
+    "text": "[Arena] ¡Te uniste a la cola {0}! Buscando oponentes...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:21.351246Z"
+  },
+  "arena.cmd.join.failed": {
+    "src_hash": "0d71659d84c50b7528f52b6b5f063893",
+    "text": "[Arena] No se pudo unir a la cola. Vuelve a intentarlo más tarde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:21.351827Z"
+  },
+  "arena.cmd.leave.not_in_queue": {
+    "src_hash": "5cdae5913ba9d4554f3ab5849246ea30",
+    "text": "[Arena] No estás en ninguna cola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:25.782787Z"
+  },
+  "arena.cmd.leave.success": {
+    "src_hash": "ed333b3b38a2476e30b692a3354f9b39",
+    "text": "[Arena] Dejaste la cola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:25.783447Z"
+  },
+  "arena.cmd.leave.failed": {
+    "src_hash": "d308580ea69815cf42b1cede3adb6462",
+    "text": "[Arena] No se pudo salir de la cola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:25.783925Z"
+  },
+  "arena.npc.greet_msg": {
+    "src_hash": "6a1356c449fc828d77f8811e2e73f3d9",
+    "text": "¡Saludos guerrero! ¿Estás aquí por el {arena}? ¡Puedo ayudarte a encontrar oponentes dignos!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:25.784736Z"
+  },
+  "item.18335.desc": {
+    "src_hash": "55e099af48d029f32dda611bd9f4d6b6",
+    "text": "Una figura de ajedrez Zaoan hecha de obsidiana. Representa al obispo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:14:24.895538Z"
+  },
+  "item.18336.desc": {
+    "src_hash": "d46fa3c42c5c83262cdd12c88715ac0c",
+    "text": "Una figura de ajedrez Zaoan hecha de obsidiana. Representa al caballero",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:14:24.896391Z"
+  },
+  "item.18337.desc": {
+    "src_hash": "1c43509292bbcfb8da9af6c6c35c17fc",
+    "text": "Una figura de ajedrez Zaoan hecha de obsidiana. Representa la torre",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:14:24.897205Z"
+  },
+  "item.18338.desc": {
+    "src_hash": "3535affca37bf31aeb3f081c1f0fbd00",
+    "text": "Una figura de ajedrez Zaoan hecha de obsidiana. Representa el peón",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:14:26.671442Z"
+  },
+  "arena.admin.stats.streak": {
+    "src_hash": "8e7305efc73b90557aff75ba9e7ce079",
+    "text": "Racha: {0} (Mejor: {1})",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:58.346595Z"
+  },
+  "arena.npc.farewell_msg": {
+    "src_hash": "1265a0a4507b4160a3233b958abc89ac",
+    "text": "¡Que tu espada se mantenga afilada! ¡Vuelve en cualquier momento para ver más batallas!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:37:01.415412Z"
+  },
+  "arena.npc.walkaway_msg": {
+    "src_hash": "fc985372272ea79ce29c2290c506a5bc",
+    "text": "¿Se va tan pronto? ¡La arena te espera!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:37:01.416481Z"
+  },
+  "arena.npc.modes.header": {
+    "src_hash": "718c3b18efc7c3088a3fcdc447642d95",
+    "text": "Modos de arena disponibles:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:37:07.420591Z"
+  },
+  "arena.npc.join.which_mode": {
+    "src_hash": "4d24d3c16dd61c4c30f230bacd3d603f",
+    "text": "¿A qué modo te gustaría unirte? Diga 'join' seguido de: 1v1, 2v2, 3v3, ffa o lms.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:37:07.431968Z"
+  },
+  "arena.npc.join.already_in_match": {
+    "src_hash": "92370c21399ade4ff9a459d0e4020e54",
+    "text": "¡Ya estás peleando en la arena! Termina tu partida actual primero.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:37:07.447120Z"
+  },
+  "arena.npc.join.already_in_queue": {
+    "src_hash": "8a33eaf4db62a22a690996bb283c8a8e",
+    "text": "¡Ya estás en cola! Diga 'leave' para salir primero de la cola.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:37:09.289671Z"
+  },
+  "item.18339.desc": {
+    "src_hash": "89b07480866722a360b35ac178a205ec",
+    "text": "Esta caja de ajedrez está hecha de jade y obsidiana. Contendrá un juego completo de 32 figuras de ajedrez Zaoan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:46:13.566468Z"
+  },
+  "item.18339.name": {
+    "src_hash": "1c19b2860ae0b51693bbece320f15f74",
+    "text": "Caja de ajedrez zaoan",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:46:13.567068Z"
+  },
+  "item.18343.desc": {
+    "src_hash": "b896356f98a71aa07e9bf1dd93e1d507",
+    "text": "No desea que lo molesten. Otorgado por TibiaLibrary.org",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:46:13.567706Z"
+  },
+  "item.18446.name": {
+    "src_hash": "723021a37057b7d826d547cccfb3bb66",
+    "text": "campanas de luz de luna",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:46:16.071828Z"
+  },
+  "item.31282.name": {
+    "src_hash": "1c19b2860ae0b51693bbece320f15f74",
+    "text": "Caja de ajedrez zaoan",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:03:38.417573Z"
+  },
+  "item.18447.name": {
+    "src_hash": "f0022019a741f6a95e57bc3615764821",
+    "text": "ranúnculo luz de las estrellas",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:03:58.251548Z"
+  },
+  "item.18629.name": {
+    "src_hash": "b68ce591af411efc4bb3041e363110db",
+    "text": "montón de roca arenosa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:19:13.018965Z"
+  },
+  "misc.bank_system.say_22": {
+    "src_hash": "7d973fa7338b18011256fc6b78c69a22",
+    "text": "No puede transferir dinero a esta cuenta.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:48:12.765076Z"
+  },
+  "item.18925.desc": {
+    "src_hash": "7d2e350cfb632e9e33a831431b557516",
+    "text": "Una herramienta afilada, comúnmente utilizada por los nigromantes para diseccionar cosas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:49:33.680270Z"
+  },
+  "arena.npc.join.level_required": {
+    "src_hash": "e188f0793fb28363c6ca06cd74de9f5f",
+    "text": "Necesitas al menos el nivel {0} para ingresar a la arena. ¡Vuelve cuando seas más fuerte!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:06:00.635148Z"
+  },
+  "arena.npc.join.success": {
+    "src_hash": "a67c28b40c679a5327a7f2b9e3b68231",
+    "text": "¡Te has unido a la cola {0}! Te avisaré cuando encuentre una coincidencia. ¡Buena suerte, guerrero!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:06:00.635716Z"
+  },
+  "arena.npc.join.failed": {
+    "src_hash": "05e070788d5522addd174a9baa153f9f",
+    "text": "Algo salió mal. Inténtelo de nuevo más tarde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:06:00.636143Z"
+  },
+  "arena.npc.leave.not_in_queue": {
+    "src_hash": "1b75e08ea3cb3b164c85c7da9a33d247",
+    "text": "No estás en ninguna cola en este momento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:06:00.636509Z"
+  },
+  "arena.npc.leave.success": {
+    "src_hash": "0a63e232d9cae6dd170c2ce6d3f40090",
+    "text": "Has abandonado la cola de la arena.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:06:00.636904Z"
+  },
+  "arena.npc.leave.failed": {
+    "src_hash": "08c8cef402cc20aed7ef2c867d098e04",
+    "text": "No se pudo salir de la cola. Por favor inténtalo de nuevo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:06:03.304934Z"
+  },
+  "arena.npc.stats.empty": {
+    "src_hash": "8157058f4b86eb07f66c4d55170b7601",
+    "text": "Aún no has participado en ningún combate de arena. ¡Únete a una partida para comenzar a construir tu récord!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:06:03.305599Z"
+  },
+  "item.18925.name": {
+    "src_hash": "57bbcbfe6a6df694287521c7f4397573",
+    "text": "lanceta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:22:53.466190Z"
+  },
+  "arena.npc.stats.header": {
+    "src_hash": "b61d1a3d57f5a011a242f1345506de7a",
+    "text": "Tus estadísticas de arena:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:34:25.409163Z"
+  },
+  "arena.npc.stats.streak_line": {
+    "src_hash": "55591699062e04f7eba6c43b5f2ddcf6",
+    "text": "Racha de victorias: {0} (Mejor: {1})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:34:25.409582Z"
+  },
+  "arena.npc.ranking.empty": {
+    "src_hash": "b31bfe94b7bdc7c81ad20956a8607cf7",
+    "text": "La clasificación de la arena está vacía. ¡Sé el primero en reclamar la gloria!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:34:25.410044Z"
+  },
+  "arena.npc.ranking.header": {
+    "src_hash": "d5289a000454728ff8bedcc4a53c8d00",
+    "text": "Los 10 mejores guerreros de la arena:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:34:25.410376Z"
+  },
+  "arena.npc.status.idle": {
+    "src_hash": "e599161956d626eda4cb0a5ffb85271c",
+    "text": "Inactivo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:34:25.410555Z"
+  },
+  "arena.npc.status.in_queue": {
+    "src_hash": "be6838286e448ad65c5b55d690e2c38b",
+    "text": "En cola",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:34:28.603765Z"
+  },
+  "arena.npc.status.in_match": {
+    "src_hash": "1db98cb2d5df97b58350c535e2ac8b6a",
+    "text": "En partido",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:34:28.603966Z"
+  },
+  "item.18926.desc": {
+    "src_hash": "c90508bb8f48ea49b951d17731b6d802",
+    "text": "Un horóscopo personal, repleto de comentarios y fórmulas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:47:20.838722Z"
+  },
+  "arena.npc.status.your_status": {
+    "src_hash": "3d24a8842495fddd4a7c646d210d2d14",
+    "text": "Tu estado: {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:03:55.260434Z"
+  },
+  "arena.npc.status.active_matches": {
+    "src_hash": "a3606aa0597dabf3f2f01cda78ae607f",
+    "text": "Coincidencias activas en el servidor: {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:03:55.260791Z"
+  },
+  "arena.npc.job": {
+    "src_hash": "7037aafd299d73d98849ec4bd90e69ba",
+    "text": "¡Soy el Maestro de la Arena! Administro la arena PvP donde los guerreros pueden probar sus habilidades unos contra otros. ¡Di {arena} para comenzar!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:03:55.261780Z"
+  },
+  "arena.reward.bonus": {
+    "src_hash": "00e2e0e6ce55ea7ae52f48437c004352",
+    "text": "[Arena] Recompensas adicionales: {0} ({1} Puntos de Arena)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:03:55.262147Z"
+  },
+  "arena.reward.mvp": {
+    "src_hash": "e0a9bab0bd58c3d6b99a63d83eb8285e",
+    "text": "MVP +{0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:03:55.263055Z"
+  },
+  "arena.reward.spree": {
+    "src_hash": "5d2212db5974f4e121ae9fa964423280",
+    "text": "Juerga +{0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:03:58.993807Z"
+  },
+  "arena.result.announcement": {
+    "src_hash": "dd89e784f6580bc6b549ac235607cea3",
+    "text": "[Arena {0}] ¡{1} derrotó a {2}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:03:58.994143Z"
+  },
+  "item.18930.desc": {
+    "src_hash": "64b1c29eb938f15c386c07bc06a08ade",
+    "text": "Imbuida de magia, esta tiza se utiliza para dibujar círculos de encantamiento.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:18:27.801354Z"
+  },
+  "arena.title.promotion": {
+    "src_hash": "4851d401818d1f2f861333c4cc59bdeb",
+    "text": "[Arena] ¡Felicitaciones! ¡Te ganaste el título: {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:36:18.719019Z"
+  },
+  "arena.title.broadcast": {
+    "src_hash": "66095242484471b5864cba16ebc347af",
+    "text": "[Arena] ¡{0} ha alcanzado el rango de {1}! (MMR: {2})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:36:18.719620Z"
+  },
+  "arena.title.no_profile": {
+    "src_hash": "d1e33df7f143e5f134ed0d008144525c",
+    "text": "[Arena] Aún no hay perfil de arena. ¡Juega un partido primero!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:36:18.720166Z"
+  },
+  "arena.title.current": {
+    "src_hash": "d82585a8bcf2b68da1935a357c7909eb",
+    "text": "Título actual: {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:36:18.720548Z"
+  },
+  "item.18931.desc": {
+    "src_hash": "b10dea307e5709863cc1be44cc8d2093",
+    "text": "Arde con una llama apestosa de color verde pálido.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:57:17.274697Z"
+  },
+  "arena.title.next": {
+    "src_hash": "04cb54a80f46ef08794fa7f0c82ddd43",
+    "text": "Título siguiente: {0} (necesita {1} más MMR)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:20:29.515589Z"
+  },
+  "item.18931.name": {
+    "src_hash": "ffd6cec63e43cbbb36a7b2a7f7c36aab",
+    "text": "vela hecha de sebo humano",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:40:13.309109Z"
+  },
+  "arena.title.highest": {
+    "src_hash": "4b4c30a31e221964c1c57322ef775f2f",
+    "text": "¡Has alcanzado el título más alto!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:07:46.171682Z"
+  },
+  "item.18932.desc": {
+    "src_hash": "233d33982c6fe56125eb008e4b306a28",
+    "text": "Está pulido suavemente y brilla espantosamente.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:58:20.235380Z"
   }
 }

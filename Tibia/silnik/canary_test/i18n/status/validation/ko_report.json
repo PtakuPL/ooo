@@ -1,11 +1,11 @@
 {
   "lang": "ko",
   "script_group": "cjk",
-  "total_keys": 53586,
-  "translated": 5049,
-  "identical_to_en": 3707,
-  "placeholder_keys": 48537,
-  "coverage_pct": 9.4,
+  "total_keys": 53770,
+  "translated": 5194,
+  "identical_to_en": 3852,
+  "placeholder_keys": 48556,
+  "coverage_pct": 9.7,
   "issues_total": 5,
   "issues_by_type": {
     "V2_length_ratio": 3,
@@ -53,11 +53,11 @@
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 421,
+    "issues_total": 420,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 21,
+    "length_ratio": 20,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T11:16:33.237977Z"
+  "validated_at": "2026-02-21T20:41:07.326163Z"
 }

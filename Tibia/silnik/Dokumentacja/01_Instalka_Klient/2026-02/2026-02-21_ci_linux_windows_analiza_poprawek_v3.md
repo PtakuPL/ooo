@@ -261,3 +261,60 @@ Status:
 - zmiany sa przygotowane do walidacji przez nowe runy:
   - `Build - Linux (OTC Client)`
   - `Build - Windows`
+
+## 14. Aktualizacja 2026-02-21 21:43 UTC: Windows run `22264154855` nadal fail
+
+Nowy potwierdzony run:
+- workflow: `Build - Windows`
+- run: `22264154855`
+- job: `64407063012`
+- SHA: `f704b476d16a769c282170e13eac2d03ae021855`
+- start: `2026-02-21T20:52:36Z`
+- koniec: `2026-02-21T21:43:10Z`
+- status: `failure`
+
+Fakty z metadanych/adnotacji joba:
+1. `Configure CMake` zakonczyl sie `success` (czyli to nie jest fail na etapie vcpkg/CMake).
+2. Pierwszy twardy blad w kroku `Build`:
+   - `Tibia/silnik/canary_test/testyy/src/framework/luaengine/luainterface.cpp:41`
+   - komunikat: `Internal compiler error.`
+3. W tym runie adnotacje NIE pokazuja juz `luabinder.h` ani `luainterface.h` jako miejsca awarii.
+
+Wniosek:
+- to nadal `WIN-01` (MSVC ICE C1001), ale trigger pozostaje skupiony na TU `luainterface.cpp`.
+- w porownaniu z runem `22261152958`:
+  - bylo: `luainterface.h(484)` + `luabinder.h(152)`
+  - jest: `luainterface.cpp(41)`
+
+## 15. Dalsza stabilizacja pod kolejny run CI (kod lokalny)
+
+Po analizie runa `22264154855` przygotowano dodatkowe odchudzenie sciezki Lua:
+
+1. `canary_test/testyy/src/framework/luaengine/luathrowhelpers.cpp` (nowy plik):
+- wydzielenie definicji:
+  - `throwLuaBadValueCast(...)`
+  - `luabinder::throwLuaNilMemberCall()`
+- cel: usuniecie throw-helperow z TU `luainterface.cpp`.
+
+2. `canary_test/testyy/src/framework/luaengine/luainterface.cpp`:
+- usuniete definicje helperow throw.
+- dodane:
+  - `#pragma optimize("", off)` / `on` (MSVC, bez clang-cl) dla calego TU.
+
+3. `canary_test/testyy/src/framework/luaengine/luainterface.h`:
+- `castValue<T>()`:
+  - `std::is_same_v<std::remove_cvref_t<T>, std::string_view>`
+  - cel: domkniecie wariantow cv/ref dla `std::string_view`.
+
+4. `canary_test/testyy/src/framework/luaengine/luavaluecasts.h/.cpp`:
+- dodany overload:
+  - `bool luavalue_cast(int index, std::string_view& str);`
+- cel: fallback dla sciezek, gdzie kompilator i tak probuje instancjowac `luavalue_cast` dla `std::string_view`.
+
+5. `canary_test/testyy/src/CMakeLists.txt`:
+- dodany `framework/luaengine/luathrowhelpers.cpp` do:
+  - listy `SOURCE_FILES`
+  - grupy plikow objetych per-file anti-ICE flags.
+
+Uwaga operacyjna:
+- zgodnie z decyzja projektowa walidacja tylko przez GitHub Actions (bez lokalnej kompilacji).

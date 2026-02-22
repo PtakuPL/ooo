@@ -177150,5 +177150,2925 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T02:31:17.084349Z"
+  },
+  "monster.massacre.voice_3": {
+    "src_hash": "56eafd6a6895cffa0592d9eefd6f2b2a",
+    "text": "ГРРРР!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:44:34.528849Z"
+  },
+  "monster.sharptooth.voice_4": {
+    "src_hash": "40192fbd7177b8f4bc4853f9d5668914",
+    "text": "Ррааар!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:44:34.529391Z"
+  },
+  "monster.quara_predator.voice_4": {
+    "src_hash": "40192fbd7177b8f4bc4853f9d5668914",
+    "text": "Ррааар!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:32:38.410791Z"
+  },
+  "monster.quara_predator_scout.voice_4": {
+    "src_hash": "40192fbd7177b8f4bc4853f9d5668914",
+    "text": "Ррааар!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:32:38.421699Z"
+  },
+  "monster.shadow_hound.voice_1": {
+    "src_hash": "735badf377502ff470bf4e3eb0faa799",
+    "text": "ГРРРР!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:32:38.719647Z"
+  },
+  "item.7040.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.525541Z"
+  },
+  "item.7041.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.525932Z"
+  },
+  "item.7042.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.526367Z"
+  },
+  "item.7042.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.526742Z"
+  },
+  "item.7043.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.527335Z"
+  },
+  "item.7044.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.527697Z"
+  },
+  "item.7045.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.528051Z"
+  },
+  "item.7046.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.528446Z"
+  },
+  "item.7049.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.529055Z"
+  },
+  "item.7050.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.529583Z"
+  },
+  "item.7054.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.530176Z"
+  },
+  "item.7055.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.530541Z"
+  },
+  "item.7056.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.530924Z"
+  },
+  "item.7057.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.531312Z"
+  },
+  "item.7058.name": {
+    "src_hash": "264dd3cf39f82396d0c013c52d1df86d",
+    "text": "стуб лобање",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.531671Z"
+  },
+  "item.7176.name": {
+    "src_hash": "f46c1c5a903c4090247e8b290f7a0df3",
+    "text": "Мамут",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.534413Z"
+  },
+  "item.7177.name": {
+    "src_hash": "f46c1c5a903c4090247e8b290f7a0df3",
+    "text": "Мамут",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.534899Z"
+  },
+  "item.7536.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.548244Z"
+  },
+  "item.7558.name": {
+    "src_hash": "f13460bd46c28e73e8d2b6122bea2241",
+    "text": "лобања",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.549528Z"
+  },
+  "item.7563.name": {
+    "src_hash": "f13460bd46c28e73e8d2b6122bea2241",
+    "text": "лобања",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.549994Z"
+  },
+  "item.7711.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.551802Z"
+  },
+  "item.7711.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.552198Z"
+  },
+  "item.7712.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.552559Z"
+  },
+  "item.7713.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.552900Z"
+  },
+  "item.7714.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.553415Z"
+  },
+  "item.7714.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.554038Z"
+  },
+  "item.7715.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.554412Z"
+  },
+  "item.7716.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.554761Z"
+  },
+  "item.7717.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.555164Z"
+  },
+  "item.7718.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:40:45.555536Z"
+  },
+  "spell.energy_beam.words": {
+    "src_hash": "26e99e7bbd3694f6e1ae8fb87e438084",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:23.599908Z"
+  },
+  "spell.ethereal_spear.words": {
+    "src_hash": "3735427c45fb5b7d25d03de44c08048b",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:23.600688Z"
+  },
+  "spell.inflict_wound.words": {
+    "src_hash": "1ab9c328a1fac795f31a2c166195e60f",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:23.601599Z"
+  },
+  "spell.groundshaker.words": {
+    "src_hash": "6b7fd0db1b95406ce02038e97eb4105d",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:23.602402Z"
+  },
+  "spell.death_strike.words": {
+    "src_hash": "27d82dc879e9c405f373756a1608a3de",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:26.717323Z"
+  },
+  "spell.electrify.words": {
+    "src_hash": "a1e554509ead9f677f75b2be0e99ab20",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:26.719280Z"
+  },
+  "spell.berserk.words": {
+    "src_hash": "657e04b240657877e84d98f2b21a3567",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:26.721485Z"
+  },
+  "spell.cure_bleeding.words": {
+    "src_hash": "c3c7bdf586afafb1a43d4fb050a6d550",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:26.723072Z"
+  },
+  "spell.salvation.words": {
+    "src_hash": "d64307fe9380ba9860255e26d5e20125",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:26.723559Z"
+  },
+  "spell.magic_patch.words": {
+    "src_hash": "cc7e25ec73e78b4e52f486480b5296f3",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:30.724071Z"
+  },
+  "spell.wound_cleansing.words": {
+    "src_hash": "0919d87c02c4399a95fabfabcfe85491",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:30.724581Z"
+  },
+  "spell.practice_healing.words": {
+    "src_hash": "863363513c97d1a1abb46733422cc1f1",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:30.725016Z"
+  },
+  "spell.cure_poison.words": {
+    "src_hash": "010efc906681e4a3148f1ade6487efc6",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:30.725568Z"
+  },
+  "spell.cure_electrification.words": {
+    "src_hash": "e3289353419d8ef0fbe2df5d823395c4",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:30.725967Z"
+  },
+  "spell.heal_friend.words": {
+    "src_hash": "f338b5deb0375a85325d6b0e700f418b",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:33.383498Z"
+  },
+  "spell.recovery.words": {
+    "src_hash": "8e73fab260005bb72a6cf230e5fa157e",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:33.384046Z"
+  },
+  "spell.light_healing.words": {
+    "src_hash": "7f7f30922ebec3794826f79ad25cfc14",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:33.384506Z"
+  },
+  "spell.fair_wound_cleansing.words": {
+    "src_hash": "5dc9cabb6ab33a2c94a0bbe8911717aa",
+    "text": "__ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:49:33.384968Z"
+  },
+  "monster.ancient_lion_knight.name": {
+    "src_hash": "934412ec17cfee6e961b10e3075ddebc",
+    "text": "Древни лав __ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:16:58.632650Z"
+  },
+  "monster.ancient_lion_warlock.name": {
+    "src_hash": "9292c6bc7c3b92ab48603af18c08c85a",
+    "text": "Древни лав __ПХ0__",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:16:58.633820Z"
+  },
+  "item.7719.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:21.992134Z"
+  },
+  "item.7720.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:21.993327Z"
+  },
+  "item.7721.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:21.994200Z"
+  },
+  "item.7722.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:21.995015Z"
+  },
+  "item.7723.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:21.996130Z"
+  },
+  "item.7724.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:21.996927Z"
+  },
+  "item.7745.name": {
+    "src_hash": "a23e369a288f6a8e7491187b64235ee6",
+    "text": "Лавахоле",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.001390Z"
+  },
+  "item.7868.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.006919Z"
+  },
+  "item.7869.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.007403Z"
+  },
+  "item.7885.name": {
+    "src_hash": "83e4a96aed96436c621b9809e258b309",
+    "text": "Риба",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.008746Z"
+  },
+  "item.7891.name": {
+    "src_hash": "05b8c74cbd96fbf2de4c1a352702fbf4",
+    "text": "прозор",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.010169Z"
+  },
+  "item.7941.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.012426Z"
+  },
+  "item.8217.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.027272Z"
+  },
+  "item.8251.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.028064Z"
+  },
+  "item.8254.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.028639Z"
+  },
+  "item.8255.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.029065Z"
+  },
+  "item.8255.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.029521Z"
+  },
+  "item.8256.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.029884Z"
+  },
+  "item.8257.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.030254Z"
+  },
+  "item.8257.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.030840Z"
+  },
+  "item.8258.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.031193Z"
+  },
+  "item.8259.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.031595Z"
+  },
+  "item.8260.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.031992Z"
+  },
+  "item.8261.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.032600Z"
+  },
+  "item.8262.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.032951Z"
+  },
+  "item.835.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "мртви човек",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.034307Z"
+  },
+  "item.8356.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.035000Z"
+  },
+  "item.8357.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.035816Z"
+  },
+  "item.8357.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.036829Z"
+  },
+  "item.8358.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:31:22.037666Z"
+  },
+  "monster.schiach.voice_1": {
+    "src_hash": "06baf11101bda016fcb64d3e6c70c569",
+    "text": "Крик Крик!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:01:42.825169Z"
+  },
+  "monster.roaring_water_elemental.voice_1": {
+    "src_hash": "71f896f06b94319eb6500f78abcb84a9",
+    "text": "БЛУБ БЛУБ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:01:42.825756Z"
+  },
+  "item.8359.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.561695Z"
+  },
+  "item.8359.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.562119Z"
+  },
+  "item.8360.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.562824Z"
+  },
+  "item.8361.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.563295Z"
+  },
+  "item.8362.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.563760Z"
+  },
+  "item.8363.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.564140Z"
+  },
+  "item.8364.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.564513Z"
+  },
+  "item.8821.name": {
+    "src_hash": "3ee45b1ff632881c66b6b92f45a47fd7",
+    "text": "Оклоп",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.572682Z"
+  },
+  "item.9044.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.582205Z"
+  },
+  "item.9118.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.591518Z"
+  },
+  "item.9175.name": {
+    "src_hash": "f13460bd46c28e73e8d2b6122bea2241",
+    "text": "лобања",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.596784Z"
+  },
+  "item.9197.name": {
+    "src_hash": "82216cc2c5a03f3e65143a8ff763ba19",
+    "text": "Царрион Ворм",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.600997Z"
+  },
+  "item.922.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.602713Z"
+  },
+  "item.9245.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.605196Z"
+  },
+  "item.9351.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.608669Z"
+  },
+  "item.9351.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.609542Z"
+  },
+  "item.9352.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.609950Z"
+  },
+  "item.9353.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.610303Z"
+  },
+  "item.9354.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.610718Z"
+  },
+  "item.9354.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.611099Z"
+  },
+  "item.9355.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.611658Z"
+  },
+  "item.9356.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.612039Z"
+  },
+  "item.9357.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.612396Z"
+  },
+  "item.9358.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.612738Z"
+  },
+  "item.9359.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.613114Z"
+  },
+  "item.9360.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.613663Z"
+  },
+  "item.9361.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.614127Z"
+  },
+  "item.9362.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.614479Z"
+  },
+  "item.9363.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.614858Z"
+  },
+  "item.9364.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:22.615200Z"
+  },
+  "monster.roaring_water_elemental.voice_2": {
+    "src_hash": "5d99cd2fee6a068f0d0330fd71644a1f",
+    "text": "СВАСХХХ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:42:09.922101Z"
+  },
+  "monster.blistering_fire_elemental.voice_1": {
+    "src_hash": "3ec760cbfc80ae58f01a8ad4c4552964",
+    "text": "ФЦХХХРРР",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:42:09.922408Z"
+  },
+  "monster.slick_water_elemental.voice_1": {
+    "src_hash": "5d1f48db2bdc01d43dad527b960dd109",
+    "text": "БЛУУУУБ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:34:47.848177Z"
+  },
+  "monster.malofur_mangrinder.voice_3": {
+    "src_hash": "f683e7e6d3b8d2f931f96974c16e96de",
+    "text": "БООООМ!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:34:47.848405Z"
+  },
+  "item.9551.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.558721Z"
+  },
+  "item.9551.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.559022Z"
+  },
+  "item.9552.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.559288Z"
+  },
+  "item.9553.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.559740Z"
+  },
+  "item.9554.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.560029Z"
+  },
+  "item.9555.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.560289Z"
+  },
+  "item.9558.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.560899Z"
+  },
+  "item.9559.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.561197Z"
+  },
+  "item.9560.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.561679Z"
+  },
+  "item.9560.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.562031Z"
+  },
+  "item.9561.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.562621Z"
+  },
+  "item.9562.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.562925Z"
+  },
+  "item.9563.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.563214Z"
+  },
+  "item.9564.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.563638Z"
+  },
+  "item.9567.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.564188Z"
+  },
+  "item.9568.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.564510Z"
+  },
+  "item.9590.name": {
+    "src_hash": "f13460bd46c28e73e8d2b6122bea2241",
+    "text": "лобања",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.565376Z"
+  },
+  "item.9636.name": {
+    "src_hash": "efacf2f7609bd7cd6bac70c8feed3f22",
+    "text": "Ватрено срце",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.567309Z"
+  },
+  "item.9858.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.570446Z"
+  },
+  "item.9858.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.570741Z"
+  },
+  "item.9859.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.571133Z"
+  },
+  "item.9860.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.571389Z"
+  },
+  "item.9865.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.571686Z"
+  },
+  "item.9866.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.572075Z"
+  },
+  "item.9867.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Закључано је.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.572349Z"
+  },
+  "item.9867.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.572623Z"
+  },
+  "item.9868.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.572868Z"
+  },
+  "item.9869.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.573105Z"
+  },
+  "item.9874.name": {
+    "src_hash": "7768e6b0263abebc30c1c3b343556262",
+    "text": "затворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.573582Z"
+  },
+  "item.9875.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "отворена врата",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:40:20.573967Z"
+  },
+  "monster.malofur_mangrinder.voice_4": {
+    "src_hash": "349d4089d0bfe5c7ed87c620df78e145",
+    "text": "БОООООМ!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:08:36.013021Z"
+  },
+  "item.11139.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:11.132016Z"
+  },
+  "item.11140.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:11.132302Z"
+  },
+  "item.11146.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:11.132556Z"
+  },
+  "item.11147.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:11.132834Z"
+  },
+  "item.11152.name": {
+    "src_hash": "c57a5825cc7a2d86164564f86cff127c",
+    "text": "змајеви шиљци",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:11.133073Z"
+  },
+  "item.112.name": {
+    "src_hash": "ab0e3d0d74b71a1c3099a3ddc1f1c27d",
+    "text": "магични сат",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:15.462676Z"
+  },
+  "item.11209.name": {
+    "src_hash": "f22152afec12017f351f1cb7a6285863",
+    "text": "дрвена грађа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:15.462916Z"
+  },
+  "item.11237.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:15.463177Z"
+  },
+  "item.11238.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:15.463429Z"
+  },
+  "item.11246.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:15.463677Z"
+  },
+  "item.11247.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:19.300174Z"
+  },
+  "item.11250.name": {
+    "src_hash": "2e23ed53595cad5ea50d5bfe5d993493",
+    "text": "зидно огледало",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:19.300429Z"
+  },
+  "item.11251.name": {
+    "src_hash": "fbe322a89bc0ba531c3f0050e3935f28",
+    "text": "огледало",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:19.300620Z"
+  },
+  "item.113.name": {
+    "src_hash": "4a8e07e84b69b121f57efe37217e303a",
+    "text": "патуљаста царева брада",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:19.300892Z"
+  },
+  "item.11316.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "дрвени под",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:19.301114Z"
+  },
+  "item.11317.name": {
+    "src_hash": "ee26908bf9629eeb4b37dac350f4754a",
+    "text": "блоб",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:26.472801Z"
+  },
+  "item.11318.name": {
+    "src_hash": "310d192aaf08d17b7c4f582dddcc5cea",
+    "text": "стражар",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:26.473038Z"
+  },
+  "item.11328.desc": {
+    "src_hash": "a15684d18ef485ef77dd0b8b218583a5",
+    "text": "Овај сандук је означен симболима гуштера. Довољно је велик да се у њега уклопи и одрасла особа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:26.473687Z"
+  },
+  "item.11328.name": {
+    "src_hash": "c54f3966ab2612a5f86b8fe2b6394bf2",
+    "text": "обележена гајба",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:26.473938Z"
+  },
+  "item.11329.desc": {
+    "src_hash": "aa867384ed1d44f7e7533cd9ebaf92c5",
+    "text": "Ова глина је ископана из храма",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:26.474345Z"
+  },
+  "item.11329.name": {
+    "src_hash": "6efad98ef17148869dc5f947017b6630",
+    "text": "грумен глине",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:32.852544Z"
+  },
+  "item.11330.name": {
+    "src_hash": "3a945a747a1807a3514c00b5dd91e2b9",
+    "text": "дрвени лук",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:32.852788Z"
+  },
+  "item.11331.desc": {
+    "src_hash": "89f4f1c1c993c508cbe01c1163c5d0c4",
+    "text": "Ова посуда је направљена од светог дрвета и тренутно није третирана",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:32.853308Z"
+  },
+  "item.11331.name": {
+    "src_hash": "8064b96fafc8985141c827605477f539",
+    "text": "света здела",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:32.853553Z"
+  },
+  "item.11332.name": {
+    "src_hash": "3a945a747a1807a3514c00b5dd91e2b9",
+    "text": "дрвени лук",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:32.853780Z"
+  },
+  "item.11333.desc": {
+    "src_hash": "780367cb103682624b01e2dd370f1f9d",
+    "text": "Вода у овој посуди је пречишћена",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:40.259310Z"
+  },
+  "item.11333.name": {
+    "src_hash": "0911f1b7fe4749dd212012385b72979b",
+    "text": "посуда са светом водом",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:40.259637Z"
+  },
+  "item.11334.desc": {
+    "src_hash": "16ba2621362b2d453e79afbf3b3bf674",
+    "text": "Пречишћен светим огњем, овај угаљ има моћ да очисти значајну количину нечисте воде",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:40.260186Z"
+  },
+  "item.11334.name": {
+    "src_hash": "d173a9b3755ef4b92121330e3ae45286",
+    "text": "свети угаљ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:40.260419Z"
+  },
+  "item.11335.name": {
+    "src_hash": "1409eaa86688e6b8f31f95d235008f3c",
+    "text": "дрвени зид",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:40.260647Z"
+  },
+  "item.11346.name": {
+    "src_hash": "1409eaa86688e6b8f31f95d235008f3c",
+    "text": "дрвени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.686537Z"
+  },
+  "item.11363.name": {
+    "src_hash": "1409eaa86688e6b8f31f95d235008f3c",
+    "text": "дрвени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.687320Z"
+  },
+  "item.11540.name": {
+    "src_hash": "c54f3966ab2612a5f86b8fe2b6394bf2",
+    "text": "обележена гајба",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.689991Z"
+  },
+  "item.11704.name": {
+    "src_hash": "1409eaa86688e6b8f31f95d235008f3c",
+    "text": "дрвени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.694348Z"
+  },
+  "item.11706.name": {
+    "src_hash": "1409eaa86688e6b8f31f95d235008f3c",
+    "text": "дрвени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.694889Z"
+  },
+  "item.11710.name": {
+    "src_hash": "1409eaa86688e6b8f31f95d235008f3c",
+    "text": "дрвени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.695521Z"
+  },
+  "item.12846.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "дрвени под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.717019Z"
+  },
+  "item.1646.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.752567Z"
+  },
+  "item.1647.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.752847Z"
+  },
+  "item.1648.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.753169Z"
+  },
+  "item.1649.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.753485Z"
+  },
+  "item.1664.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.758095Z"
+  },
+  "item.1665.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.758368Z"
+  },
+  "item.1666.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.758633Z"
+  },
+  "item.1667.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.758927Z"
+  },
+  "item.1678.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.763060Z"
+  },
+  "item.1679.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.763347Z"
+  },
+  "item.1680.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.763820Z"
+  },
+  "item.1681.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.764220Z"
+  },
+  "item.1687.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.767082Z"
+  },
+  "item.1688.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.767383Z"
+  },
+  "item.1696.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.769861Z"
+  },
+  "item.1697.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.770137Z"
+  },
+  "item.17565.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.777518Z"
+  },
+  "item.17566.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.777811Z"
+  },
+  "item.17574.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.779907Z"
+  },
+  "item.17575.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.780175Z"
+  },
+  "item.17705.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.783024Z"
+  },
+  "item.17706.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.783290Z"
+  },
+  "item.17714.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:19.785564Z"
+  },
+  "monster.angry_demon.voice_5": {
+    "src_hash": "b8557ee48a76da9df61bb5ced339dbc2",
+    "text": "МУХАХАХА",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:03:00.191983Z"
+  },
+  "item.17715.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:53.950816Z"
+  },
+  "item.17937.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "дрвени под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:53.954658Z"
+  },
+  "item.17982.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "дрвени под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:53.956320Z"
+  },
+  "item.17985.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "дрвени под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:53.956613Z"
+  },
+  "item.17998.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:53.958716Z"
+  },
+  "item.17999.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:53.958986Z"
+  },
+  "item.18007.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:53.961210Z"
+  },
+  "item.18008.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:53.961540Z"
+  },
+  "item.20448.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.000283Z"
+  },
+  "item.20449.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.000598Z"
+  },
+  "item.20457.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.002824Z"
+  },
+  "item.20458.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.003108Z"
+  },
+  "item.22502.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.046250Z"
+  },
+  "item.22503.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.046525Z"
+  },
+  "item.22504.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.046805Z"
+  },
+  "item.22505.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.047067Z"
+  },
+  "item.2635.name": {
+    "src_hash": "2e23ed53595cad5ea50d5bfe5d993493",
+    "text": "зидно огледало",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.105145Z"
+  },
+  "item.2638.name": {
+    "src_hash": "2e23ed53595cad5ea50d5bfe5d993493",
+    "text": "зидно огледало",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.105610Z"
+  },
+  "item.28906.name": {
+    "src_hash": "2e23ed53595cad5ea50d5bfe5d993493",
+    "text": "зидно огледало",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.142252Z"
+  },
+  "item.33782.name": {
+    "src_hash": "fbe322a89bc0ba531c3f0050e3935f28",
+    "text": "огледало",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.234243Z"
+  },
+  "item.33784.name": {
+    "src_hash": "fbe322a89bc0ba531c3f0050e3935f28",
+    "text": "огледало",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.234589Z"
+  },
+  "item.3463.name": {
+    "src_hash": "fbe322a89bc0ba531c3f0050e3935f28",
+    "text": "огледало",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.250593Z"
+  },
+  "item.408.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "дрвени под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.303863Z"
+  },
+  "item.4140.name": {
+    "src_hash": "1409eaa86688e6b8f31f95d235008f3c",
+    "text": "дрвени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.305567Z"
+  },
+  "item.4144.name": {
+    "src_hash": "1409eaa86688e6b8f31f95d235008f3c",
+    "text": "дрвени зид",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.305987Z"
+  },
+  "item.464.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "дрвени под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.333800Z"
+  },
+  "item.5102.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.377087Z"
+  },
+  "item.5103.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.377489Z"
+  },
+  "item.5111.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.379769Z"
+  },
+  "item.5112.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:08:54.380100Z"
+  },
+  "monster.the_hungry_baron_from_below.voice_1": {
+    "src_hash": "d3e3611fbef37baf376c503865709aea",
+    "text": "Крррк!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:34:20.068163Z"
+  },
+  "item.5120.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.433426Z"
+  },
+  "item.5121.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.433862Z"
+  },
+  "item.5129.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.437158Z"
+  },
+  "item.5130.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.437606Z"
+  },
+  "item.5291.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.452945Z"
+  },
+  "item.5292.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.453553Z"
+  },
+  "item.5293.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.453972Z"
+  },
+  "item.5294.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.454441Z"
+  },
+  "item.6205.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.492204Z"
+  },
+  "item.6206.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.492820Z"
+  },
+  "item.6207.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.493225Z"
+  },
+  "item.6208.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.493712Z"
+  },
+  "item.6262.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.500156Z"
+  },
+  "item.6263.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.500599Z"
+  },
+  "item.6264.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.501019Z"
+  },
+  "item.6265.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.501515Z"
+  },
+  "item.628.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "дрвени под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.502370Z"
+  },
+  "item.6896.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.517138Z"
+  },
+  "item.6897.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.517596Z"
+  },
+  "item.6905.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.520753Z"
+  },
+  "item.6906.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.521434Z"
+  },
+  "item.7038.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.526537Z"
+  },
+  "item.7039.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.526959Z"
+  },
+  "item.7047.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.530373Z"
+  },
+  "item.7048.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.530988Z"
+  },
+  "item.7357.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "дрвени под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.540778Z"
+  },
+  "item.7725.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.556859Z"
+  },
+  "item.7726.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.557295Z"
+  },
+  "item.7727.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.557686Z"
+  },
+  "item.7728.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:41.558255Z"
+  },
+  "gamestore.disabled.already_addon": {
+    "src_hash": "565b8aec84cebc78cf01c7b7d522c97d",
+    "text": "Већ имате овај додатак.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.904612Z"
+  },
+  "gamestore.disabled.already_mount": {
+    "src_hash": "1c9c848172b99225be7e5aeac913503b",
+    "text": "Већ имате овај носач.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.905349Z"
+  },
+  "gamestore.disabled.already_outfit": {
+    "src_hash": "2ffaa9184d0277c29695f227008e2ed9",
+    "text": "Већ имате ову одећу.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.906213Z"
+  },
+  "lib.hireling.as_you_wish": {
+    "src_hash": "dd4bc9876390c6c2e60f02e875dd2d33",
+    "text": "Како желите!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.909144Z"
+  },
+  "quest.spike_task.fame_point_received": {
+    "src_hash": "4162d4a2360e089ddf3f0796b68e5701",
+    "text": "Добили сте поен славе.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.914457Z"
+  },
+  "scripts.actions_outlaw_camp_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.964704Z"
+  },
+  "scripts.actions_peelerfun.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извини, није могуће.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.965620Z"
+  },
+  "scripts.actions_pickenchanted.msg_2": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извини, није могуће.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.966189Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Сви играчи морају бити изједначени ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.967317Z"
+  },
+  "scripts.actions_portal_minis_ancient_feud.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Морате чекати ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.967913Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Сви играчи морају бити изједначени ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.968552Z"
+  },
+  "scripts.actions_portal_minis_feaster.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Морате чекати ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.969003Z"
+  },
+  "scripts.actions_portal_minis_grimvale.msg_1": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Морате чекати ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.969465Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_1": {
+    "src_hash": "d7675b7b6e4edadcaa460bfa24c70b35",
+    "text": "Сви играчи морају бити изједначени ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.970013Z"
+  },
+  "scripts.actions_portal_minis_kilmaresh.msg_2": {
+    "src_hash": "b97f99b956df2fe9bb7b47e1908f0684",
+    "text": "Морате чекати ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.970613Z"
+  },
+  "scripts.actions_questDoors.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.971612Z"
+  },
+  "scripts.actions_questDoors.msg_4": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Чини се да су врата запечаћена од нежељених уљеза.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.972566Z"
+  },
+  "scripts.actions_resonance_chamber.say_1": {
+    "src_hash": "adc5fb51a0700429d5586beda62c4f6e",
+    "text": "ПРРРРОООООАААААХХХХ!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.973427Z"
+  },
+  "scripts.actions_reward.msg_4": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Шкриња је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.974217Z"
+  },
+  "scripts.actions_reward.msg_6": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Шкриња је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.974721Z"
+  },
+  "scripts.actions_rewards.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Шкриња је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.975181Z"
+  },
+  "scripts.actions_rewards.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Шкриња је празна.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.976025Z"
+  },
+  "scripts.actions_scarlett.msg_1": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Још увек вам није дозвољено да ово користите.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.977739Z"
+  },
+  "scripts.actions_scarlett.msg_2": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Пред собом држите стари Галтхеинов сандук. Не пристаје и превише је стар да би издржао било какав напад.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.978663Z"
+  },
+  "scripts.actions_scissorsfun.msg_1": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Извини, није могуће.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.979397Z"
+  },
+  "scripts.actions_telescope.msg_1": {
+    "src_hash": "cd38aa8899c916fb75dd44e9e5292eda",
+    "text": "Телескоп пружа савршен поглед на бескрајни океан - нема копна на видику",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.980905Z"
+  },
+  "scripts.actions_to_take_roots.msg_1": {
+    "src_hash": "0bbc4c04869af7016a8c329b16c09414",
+    "text": "Успешно берете сочно корење.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.982502Z"
+  },
+  "scripts.actions_to_take_roots.msg_2": {
+    "src_hash": "9155c1b0f463d08b46559717336b3f6b",
+    "text": "Ваш покушај бербе уништио је више сочних корена него што сте могли да спасете.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:11.983274Z"
+  },
+  "monster.the_baron_from_below.voice_1": {
+    "src_hash": "d3e3611fbef37baf376c503865709aea",
+    "text": "Крррк!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:18:13.975453Z"
+  },
+  "monster.drillworm.voice_1": {
+    "src_hash": "d3e3611fbef37baf376c503865709aea",
+    "text": "Крррк!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:18:15.940806Z"
+  },
+  "item.7769.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "дрвени под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.179159Z"
+  },
+  "item.7867.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "дрвени под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.181033Z"
+  },
+  "item.7886.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "дрвени под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.184040Z"
+  },
+  "item.8263.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.203446Z"
+  },
+  "item.8264.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.204006Z"
+  },
+  "item.8265.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.204408Z"
+  },
+  "item.8266.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.205019Z"
+  },
+  "item.8365.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.211167Z"
+  },
+  "item.8366.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.211584Z"
+  },
+  "item.8367.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.212045Z"
+  },
+  "item.8368.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.212452Z"
+  },
+  "item.8667.name": {
+    "src_hash": "2e23ed53595cad5ea50d5bfe5d993493",
+    "text": "зидно огледало",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.216204Z"
+  },
+  "item.8689.name": {
+    "src_hash": "2e23ed53595cad5ea50d5bfe5d993493",
+    "text": "зидно огледало",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.217200Z"
+  },
+  "item.878.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "дрвени под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.220950Z"
+  },
+  "item.905.name": {
+    "src_hash": "c1034078ce530eefbf98c20c90aec615",
+    "text": "дрвени под",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.229844Z"
+  },
+  "item.9365.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.251193Z"
+  },
+  "item.9366.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.251718Z"
+  },
+  "item.9367.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.252302Z"
+  },
+  "item.9368.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.252713Z"
+  },
+  "item.9556.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.261297Z"
+  },
+  "item.9557.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.261725Z"
+  },
+  "item.9565.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.265278Z"
+  },
+  "item.9566.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.266050Z"
+  },
+  "item.9863.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.276425Z"
+  },
+  "item.9864.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.276868Z"
+  },
+  "item.9872.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.279895Z"
+  },
+  "item.9873.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "капија стручности",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:39.280360Z"
+  },
+  "item.11339.desc": {
+    "src_hash": "eec6d5a5291c1aa2fc5939505c9260c4",
+    "text": "Овај комад је исечен од светог дрвета у комплексу храма и изгледа идеално за резбарење",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:43.809017Z"
+  },
+  "item.11339.name": {
+    "src_hash": "d0b0a5bdf44401dc1a304cd444e19243",
+    "text": "необрађено свето дрво",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:43.809556Z"
+  },
+  "item.11341.desc": {
+    "src_hash": "719cdb3fd7a35cc7e24b9aa373f20a96",
+    "text": "Ова глина је ископана из свете земље",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:27:43.810193Z"
+  },
+  "monster.the_duke_of_the_depths.voice_1": {
+    "src_hash": "74122a6cb71a8864c54a4eab9db77eb5",
+    "text": "СзззСззз!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:06:13.145492Z"
+  },
+  "item.11341.name": {
+    "src_hash": "854695e78f7a05a36ca1eb233f7468f5",
+    "text": "света земља",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:28.359781Z"
+  },
+  "item.11344.desc": {
+    "src_hash": "959a4146c46d54cf5cf44ba91e6a653d",
+    "text": "Ова глина је помешана са светом земљом",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:28.360397Z"
+  },
+  "item.11344.name": {
+    "src_hash": "7ba9ce1e0f0e3ba1cedcfe4d4258aab6",
+    "text": "грумен свете глине",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:28.360795Z"
+  },
+  "item.11347.desc": {
+    "src_hash": "557ca322c4358b15b6f9f6082860c6db",
+    "text": "Ова посуда је обложена светом глином и може се користити за пречишћавање малих количина покварене воде",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:28.361774Z"
+  },
+  "item.11347.name": {
+    "src_hash": "a465d63906132f9c209c160c7b840b47",
+    "text": "света здела очишћења",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:28.362278Z"
+  },
+  "item.11360.name": {
+    "src_hash": "5b956a0416d6792c3abdb5c41461515e",
+    "text": "остаци чувара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:36.822083Z"
+  },
+  "item.11361.name": {
+    "src_hash": "4957b2ee3bb0d0bc631dae71cb69d2a3",
+    "text": "присуство цара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:36.822889Z"
+  },
+  "item.11362.name": {
+    "src_hash": "291905cd99cea9cb04232d5480da18cc",
+    "text": "реплика скиптра",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:36.823603Z"
+  },
+  "item.11364.desc": {
+    "src_hash": "5ae9f693ac227ebabbd1f69e11d11fb0",
+    "text": "Овај биљни отров треба да уништи израслине у близини Чуварове јазбине дубоко испод башта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:36.824645Z"
+  },
+  "item.11364.name": {
+    "src_hash": "54421de2a3747a6ca58e6851b841e0a7",
+    "text": "боца биљног отрова",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:36.825092Z"
+  },
+  "item.11365.name": {
+    "src_hash": "93939238f5427e2d2d2b1365d18483f9",
+    "text": "рампа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:41.718433Z"
+  },
+  "item.11367.name": {
+    "src_hash": "70af6944ceccb653bf3a1aafa74b5734",
+    "text": "реп Чувара",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:41.719210Z"
+  },
+  "item.11368.name": {
+    "src_hash": "131a2c7f012884023b3fabc269d564f3",
+    "text": "део жезла",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:41.719709Z"
+  },
+  "item.11369.name": {
+    "src_hash": "131a2c7f012884023b3fabc269d564f3",
+    "text": "део жезла",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:41.720034Z"
+  },
+  "item.11370.name": {
+    "src_hash": "131a2c7f012884023b3fabc269d564f3",
+    "text": "део жезла",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:41.720393Z"
+  },
+  "item.11371.name": {
+    "src_hash": "61cdea79e5ebba8a0dbc029e47656e1b",
+    "text": "змијско жезло",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:49.779637Z"
+  },
+  "item.11372.desc": {
+    "src_hash": "833bae5f6b897a1eedcaff068dd005f2",
+    "text": "Овај напитак ће вам помоћи да уђете у снове било ког облика живота",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:49.780361Z"
+  },
+  "item.11372.name": {
+    "src_hash": "f505ae328f7b6605f766e1726975ab86",
+    "text": "међудимензионални напитак",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:49.780772Z"
+  },
+  "item.114.desc": {
+    "src_hash": "cf2e0e10053dbc820992c3d97a9fbbb1",
+    "text": "Ту спава цар патуљак.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:49.781340Z"
+  },
+  "item.11426.desc": {
+    "src_hash": "a4801644b954c4cf4fefc6b6c5a9d824",
+    "text": "На листу је исписана само једна реч: СОЛОСАРАСАТИКУАРИУМ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:49.781963Z"
+  },
+  "item.11426.name": {
+    "src_hash": "d17288949dcee1f46b06c9ba595a3bf3",
+    "text": "нашкрабани лист папира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:57.745006Z"
+  },
+  "item.11429.name": {
+    "src_hash": "0d9e699ec76ce095f17b8bb184cf8c25",
+    "text": "убијена гадост",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:57.745571Z"
+  },
+  "item.11443.name": {
+    "src_hash": "ed3094cef1a7b094d8d5aba6b09bff33",
+    "text": "девојачки украс за косу",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:57.746050Z"
+  },
+  "item.11444.name": {
+    "src_hash": "414850545947dbde473400d232f011f2",
+    "text": "заштитни шарм",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:57.746464Z"
+  },
+  "item.11445.name": {
+    "src_hash": "b38d8e95a82d7e967e232ab008000413",
+    "text": "бамбусов штап",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:42:57.746815Z"
+  },
+  "item.11446.name": {
+    "src_hash": "2f18c3c12be8b77c18256ff350f2f6c6",
+    "text": "коса бансхее",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:43:06.040830Z"
+  },
+  "item.11447.desc": {
+    "src_hash": "8bb86703e2cddbfd4e63b28a2cf0a5cb",
+    "text": "Чини се да је савршено обликовати оружје од њега. Некога би то свакако могло занимати",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:43:06.041757Z"
+  },
+  "item.11447.name": {
+    "src_hash": "af6bce4b2902a743c747d48b1871c90e",
+    "text": "бојни камен",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:43:06.042145Z"
+  },
+  "item.11448.name": {
+    "src_hash": "39e3ae34fe3948b8894648e9a7bccc28",
+    "text": "црна вуна",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:43:06.042460Z"
+  },
+  "item.11449.desc": {
+    "src_hash": "8fdc146aa065bb63cd8fe5ea4e87704a",
+    "text": "Неко је ставио сламчицу за коктел",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:43:06.043047Z"
   }
 }

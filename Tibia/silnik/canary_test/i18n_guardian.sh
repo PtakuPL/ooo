@@ -21,9 +21,9 @@ if [ -z "$GIT_TRACK_BRANCH" ] || [ "$GIT_TRACK_BRANCH" = "HEAD" ]; then
 fi
 
 # Co ile sekund wykonywać push dashboardu
-PUSH_INTERVAL_SECONDS="${PUSH_INTERVAL_SECONDS:-480}"
+PUSH_INTERVAL_SECONDS="${PUSH_INTERVAL_SECONDS:-240}"
 LAST_PUSH_TS_FILE="$WORK_DIR/.guardian_last_push_ts"
-STATUS_COMMIT_MIN_INTERVAL_SECONDS="${STATUS_COMMIT_MIN_INTERVAL_SECONDS:-900}"
+STATUS_COMMIT_MIN_INTERVAL_SECONDS="${STATUS_COMMIT_MIN_INTERVAL_SECONDS:-300}"
 LAST_STATUS_COMMIT_TS_FILE="$WORK_DIR/.guardian_last_status_commit_ts"
 
 # Restart policy (P0.5): debounce/backoff/cooldown
@@ -328,12 +328,12 @@ load_guardian_profile() {
     RUN_TRANSLATE_LIMIT="80"
     RUN_PARALLEL_LANGS="2"
     RUN_AUTO_MODE_ON_MIGRATION_PENDING="true"
-    RUN_GLOBAL_QUALITY_MODE="true"
+    RUN_GLOBAL_QUALITY_MODE="false"
     RUN_GLOBAL_QUALITY_COVERAGE_TARGET="100"
     RUN_GLOBAL_QUALITY_SCORE_TARGET="100"
     RUN_GLOBAL_QUALITY_MAX_CRITICAL="0"
     RUN_GLOBAL_QUALITY_PRIORITY_LANGS="es pl"
-    RUN_GLOBAL_QUALITY_PRIORITY_GATE_ENABLED="true"
+    RUN_GLOBAL_QUALITY_PRIORITY_GATE_ENABLED="false"
     RUN_GLOBAL_QUALITY_LANG_VALIDATION_INTERVAL="15"
     RUN_GLOBAL_QUALITY_CROSSREF_AUTO_FIX_LIMIT="80"
 
@@ -1387,6 +1387,7 @@ if [ "$last_ts" -eq 0 ] || [ $((now_ts - last_ts)) -ge "$PUSH_INTERVAL_SECONDS" 
         git add \
             I18N_STATUS.md \
             Tibia/silnik/canary_test/I18N_STATUS.md \
+            Tibia/silnik/canary_test/docs/i18n/i18n_status_historia.md \
             Tibia/silnik/canary_test/.github/worker_commands.txt \
             Tibia/silnik/canary_test/worker_commands.txt \
             2>/dev/null || true
@@ -1403,6 +1404,7 @@ if [ "$last_ts" -eq 0 ] || [ $((now_ts - last_ts)) -ge "$PUSH_INTERVAL_SECONDS" 
             git reset -q HEAD -- \
                 I18N_STATUS.md \
                 Tibia/silnik/canary_test/I18N_STATUS.md \
+                Tibia/silnik/canary_test/docs/i18n/i18n_status_historia.md \
                 Tibia/silnik/canary_test/.github/worker_commands.txt \
                 Tibia/silnik/canary_test/worker_commands.txt \
                 2>/dev/null || true

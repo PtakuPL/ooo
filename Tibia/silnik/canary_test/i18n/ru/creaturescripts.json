@@ -1,6 +1,6 @@
 {
-  "creaturescripts.boss_defeated": "[EN] The {name} has been defeated. You have {seconds} seconds to leave the room.",
-  "creaturescripts.empty_parcels_removed": "[EN] {count} empty parcels were removed from your store inbox!",
-  "creaturescripts.free_quest.msg_1": "[EN] Player FreeQuest in progress..",
-  "creaturescripts.free_quest.msg_2": "[EN] Player FreeQuest is complete."
+  "creaturescripts.boss_defeated": "{name} побеждён. У вас есть {seconds} секунд, чтобы выйти из комнаты.",
+  "creaturescripts.empty_parcels_removed": "{count} пустые посылки удалены из почтового ящика вашего магазина!",
+  "creaturescripts.free_quest.msg_1": "Игрок Фреекуест в процессе..",
+  "creaturescripts.free_quest.msg_2": "Игрок Фреекуест завершен."
 }

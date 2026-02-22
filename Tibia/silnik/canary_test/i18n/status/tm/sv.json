@@ -38918,5 +38918,3525 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T10:13:29.219782Z"
+  },
+  "npc.yberius.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.827128Z"
+  },
+  "npc.yberius.stdmod_12": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Ja, jag fick besked om vad jag skulle göra. Är du beredd att ta emot min bönelinje?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.828481Z"
+  },
+  "npc.yberius.stdmod_16": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Du har redan fått min bönrad.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.829223Z"
+  },
+  "npc.yberius.stdmod_18": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Du är sårad, mitt barn. Jag ska läka dina sår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.830162Z"
+  },
+  "npc.yberius.stdmod_19": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Du ser inte så illa ut. Tyvärr, jag kan inte hjälpa dig. Men om du letar efter ytterligare skydd bör du gå på {pilgrimage} av aska eller få skyddet av {twist of fate} här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.831737Z"
+  },
+  "npc.yberius.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bra. Du är fri att tacka nej till mitt erbjudande.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.832620Z"
+  },
+  "npc.yberius.stdmod_20": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Närhelst du får ett dödligt sår skadas din livskraft och det finns en chans att du tappar bort en del av din utrustning. Med varenda av de fem {blessings} du har kommer denna skada och risken för förlust att minska.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.834519Z"
+  },
+  "npc.yberius.stdmod_22": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Jag ser att du fick den andliga avskärmningen i det vita blomtemplet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.835987Z"
+  },
+  "npc.yberius.stdmod_23": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Jag kan ana att druiderna norr om Carlin har försett dig med omfamningen Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.836829Z"
+  },
+  "npc.yberius.stdmod_24": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Jag kan se att du fick välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.837840Z"
+  },
+  "npc.yberius.stdmod_25": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Jag kan ana att gnistan från Fenix ​​redan gavs till dig av dvärgprästerna av jord och eld i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.839072Z"
+  },
+  "npc.yberius.stdmod_26": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Jag kan känna att du redan pratade med eremiten Eremo på ön Cormaya och fick denna välsignelse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.840596Z"
+  },
+  "npc.yberius.stdmod_27": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Du kan be om välsignelsen av andlig avskärmning i whiteflower-templet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.842029Z"
+  },
+  "npc.yberius.stdmod_28": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druiderna norr om Carlin kommer att förse dig med Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.843006Z"
+  },
+  "npc.yberius.stdmod_29": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Du kan be om välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:31:34.843820Z"
+  },
+  "npc.yberius.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Håll din äventyrarsten väl.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.949877Z"
+  },
+  "npc.yberius.stdmod_30": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Fenixens gnista ges av jord- och eldens dvärgpräster i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.951051Z"
+  },
+  "npc.yberius.stdmod_32": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Detta är en speciell välsignelse som jag kan skänka dig när du har fått åtminstone en av de andra välsignelserna och som fungerar lite annorlunda. ... \\z\n\tDet fungerar bara när du dödas av andra äventyrare, vilket betyder att minst hälften av skadan som ledde till din död orsakades av andra, inte av monster eller miljön. ... \\z\n\t{twist of fate} kommer inte att minska dödsstraffet som de andra välsignelserna, utan istället hindra dig från att förlora dina andra välsignelser såväl som förlustamuletten, om du bär en. Det kostar lika mycket som de andra välsignelserna. ... \\z\n\tSkulle du vilja få det skyddet för ett offer på |PVPBLESSCOST| guld, barn?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.955891Z"
+  },
+  "npc.yberius.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vill du byta ut din äventyrarsten gratis?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.956910Z"
+  },
+  "npc.yberius.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.957747Z"
+  },
+  "npc.yberius.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vill du byta ut din äventyrarsten mot 30 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.960630Z"
+  },
+  "npc.yberius.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.961898Z"
+  },
+  "npc.yberius.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Tyvärr, du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.963148Z"
+  },
+  "npc.yoem.greet_msg_1": {
+    "src_hash": "62708e79dd3db472e596d09d559f1e3a",
+    "text": "Hej |PLAYERNAME|! Behöver du lite utrustning till ditt hus?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.965930Z"
+  },
+  "npc.yoem.sendtrade_msg_1": {
+    "src_hash": "0766cd691c0208c136e812d2734e77a5",
+    "text": "Ta en titt. De flesta möbler kommer i praktiska kit. Använd dem bara i ditt hus för att montera möblerna. Vill du bara se en viss {type} möbler?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.968790Z"
+  },
+  "npc.zedrulon_the_fallen.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.991686Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Så ta emot skyddet av ödets vändning, pilgrim.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.992422Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_11": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Du är sårad, mitt barn. Jag ska läka dina sår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.993498Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_12": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Du ser inte så illa ut. Tyvärr, jag kan inte hjälpa dig. Men om du letar efter ytterligare skydd bör du gå på {pilgrimage} av aska eller få skyddet av {twist of fate} här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.995057Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_13": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Närhelst du får ett dödligt sår skadas din livskraft och det finns en chans att du tappar bort en del av din utrustning. Med varenda av de fem {blessings} du har kommer denna skada och risken för förlust att minska.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:07:42.996470Z"
+  },
+  "item.12032.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.655610Z"
+  },
+  "item.12064.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.662203Z"
+  },
+  "item.12074.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.674091Z"
+  },
+  "item.12574.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.801892Z"
+  },
+  "item.12657.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.819801Z"
+  },
+  "item.12723.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.838392Z"
+  },
+  "item.12726.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.851298Z"
+  },
+  "item.12729.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.852723Z"
+  },
+  "item.12738.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.867058Z"
+  },
+  "item.12793.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.883859Z"
+  },
+  "item.12795.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.884991Z"
+  },
+  "item.12797.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.885936Z"
+  },
+  "item.12798.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.897589Z"
+  },
+  "item.12817.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.901466Z"
+  },
+  "item.13268.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.924198Z"
+  },
+  "item.13272.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.925016Z"
+  },
+  "item.13397.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:00.938526Z"
+  },
+  "item.13968.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:01.003094Z"
+  },
+  "item.13975.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:01.016489Z"
+  },
+  "item.13977.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:01.018548Z"
+  },
+  "item.14024.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:01.036105Z"
+  },
+  "item.14039.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:01.047941Z"
+  },
+  "item.14254.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:01.069969Z"
+  },
+  "item.14752.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:01.075938Z"
+  },
+  "item.15142.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:01.089532Z"
+  },
+  "item.15275.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:01.092923Z"
+  },
+  "item.15297.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:01.094546Z"
+  },
+  "item.15346.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:01.095791Z"
+  },
+  "item.15702.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:01.114437Z"
+  },
+  "item.15863.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:41:01.141748Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_15": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Jag ser att du fick den andliga avskärmningen i det vita blomtemplet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.151580Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_16": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Jag kan ana att druiderna norr om Carlin har försett dig med omfamningen Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.152546Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_17": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Jag kan se att du fick välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.153856Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_18": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Jag kan ana att gnistan från Fenix ​​redan gavs till dig av dvärgprästerna av jord och eld i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.155039Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_19": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Jag kan känna att du redan pratade med eremiten Eremo på ön Cormaya och fick denna välsignelse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.156105Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bra. Du är fri att tacka nej till mitt erbjudande.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.156837Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_20": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Du kan be om välsignelsen av andlig avskärmning i whiteflower-templet söder om Thais.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.157900Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_21": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Druiderna norr om Carlin kommer att förse dig med Tibia.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.158980Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_22": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Du kan be om välsignelsen av de två solarna i soltornet nära Ab'Dendriel.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.160006Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_23": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Fenixens gnista ges av jord- och eldens dvärgpräster i Kazordoon.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.161010Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_25": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Detta är en speciell välsignelse som jag kan skänka dig när du har fått åtminstone en av de andra välsignelserna och som fungerar lite annorlunda. ... \\z\n\tDet fungerar bara när du dödas av andra äventyrare, vilket betyder att minst hälften av skadan som ledde till din död orsakades av andra, inte av monster eller miljön. ... \\z\n\t{twist of fate} kommer inte att minska dödsstraffet som de andra välsignelserna, utan istället hindra dig från att förlora dina andra välsignelser såväl som förlustamuletten, om du bär en. Det kostar lika mycket som de andra välsignelserna. ... \\z\n\tSkulle du vilja få det skyddet för ett offer på |PVPBLESSCOST| guld, barn?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.164370Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Håll din äventyrarsten väl.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.164981Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, vill du byta ut din äventyrarsten gratis?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.165881Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.166416Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, vill du byta ut din äventyrarsten mot 30 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:02:03.167414Z"
+  },
+  "item.16204.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.897033Z"
+  },
+  "item.16241.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.898740Z"
+  },
+  "item.16243.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.899285Z"
+  },
+  "item.16245.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.900001Z"
+  },
+  "item.16247.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.900700Z"
+  },
+  "item.16249.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.901109Z"
+  },
+  "item.16278.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.903273Z"
+  },
+  "item.16679.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.911984Z"
+  },
+  "item.168.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.918556Z"
+  },
+  "item.16862.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.921536Z"
+  },
+  "item.16864.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.922070Z"
+  },
+  "item.16867.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.923338Z"
+  },
+  "item.17114.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.928939Z"
+  },
+  "item.17150.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.929482Z"
+  },
+  "item.17317.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.931275Z"
+  },
+  "item.17322.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.931862Z"
+  },
+  "item.17519.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.940053Z"
+  },
+  "item.17527.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.940991Z"
+  },
+  "item.17811.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.961094Z"
+  },
+  "item.17900.name": {
+    "src_hash": "05b8c74cbd96fbf2de4c1a352702fbf4",
+    "text": "fönster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.965273Z"
+  },
+  "item.17902.name": {
+    "src_hash": "05b8c74cbd96fbf2de4c1a352702fbf4",
+    "text": "fönster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.965870Z"
+  },
+  "item.17903.name": {
+    "src_hash": "05b8c74cbd96fbf2de4c1a352702fbf4",
+    "text": "fönster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.966398Z"
+  },
+  "item.17905.name": {
+    "src_hash": "05b8c74cbd96fbf2de4c1a352702fbf4",
+    "text": "fönster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.967780Z"
+  },
+  "item.17936.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.969286Z"
+  },
+  "item.17967.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.970012Z"
+  },
+  "item.17973.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.971013Z"
+  },
+  "item.17976.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.971763Z"
+  },
+  "item.17986.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.972597Z"
+  },
+  "item.18014.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:08.977131Z"
+  },
+  "item.18385.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:33:09.003769Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Här är du. Ta hand om dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.452580Z"
+  },
+  "npc.zedrulon_the_fallen.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Tyvärr, du har inte tillräckligt med pengar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.453531Z"
+  },
+  "npc.zerbrus.greet_1": {
+    "src_hash": "0a56174c71661a97f1782a25b1d2bf68",
+    "text": "Hälsningar, |PLAYERNAME|! Du ser riktigt dålig ut. Låt mig läka dina sår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.455429Z"
+  },
+  "npc.zerbrus.stdmod_1": {
+    "src_hash": "2851bb88a335de322419abe3d47d0789",
+    "text": "Är du skadad eller förgiftad? Jag kan hjälpa dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.456345Z"
+  },
+  "npc.zerbrus.stdmod_11": {
+    "src_hash": "e28613fb12f121d689f5ec98b893113c",
+    "text": "Jag är vakten på den här bron. Jag försvarar Rookgaard mot bestarna i {wilderness} och {dungeons}, och till och med mot de stinkande {sewers}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.457706Z"
+  },
+  "npc.zerbrus.stdmod_12": {
+    "src_hash": "9e1bf346664881cc300d5f3adf470ef4",
+    "text": "Min plikt är evig. Tid har ingen betydelse.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.458422Z"
+  },
+  "npc.zerbrus.stdmod_13": {
+    "src_hash": "b0e595d76cca4ce0409f1d10fac76b44",
+    "text": "Innan du slåss mot monster, sätt in dina pengar där. Om du dör kommer du inte att förlora det om det sparas på banken.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.459422Z"
+  },
+  "npc.zerbrus.stdmod_14": {
+    "src_hash": "b5010567e209726a125c9ed59162eca5",
+    "text": "Bra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.460082Z"
+  },
+  "npc.zerbrus.stdmod_16": {
+    "src_hash": "ec84fce534f58ecf8e407c25b46e7aac",
+    "text": "Jag är expert på djurlivet och {monsters} på den här ön.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.460889Z"
+  },
+  "npc.zerbrus.stdmod_19": {
+    "src_hash": "3b992c3f952c1e2a50f66f2fc9c4a954",
+    "text": "Det finns två typer av spindlar på denna ö: normala spindlar och giftspindlar. Som deras namn säger, kan de senare förgifta dig vilket kommer att orsaka en konstant förlust av din hälsa. Akta dig för dem!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.462621Z"
+  },
+  "npc.zerbrus.stdmod_20": {
+    "src_hash": "b533412a8956a32eea03e9b20fecd32f",
+    "text": "När du har uppgraderat din startmotor {equipment} lite – kanske lädergrejer – och fått ett bättre vapen såväl som en sköld borde du kunna döda troll.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.464194Z"
+  },
+  "npc.zerbrus.stdmod_21": {
+    "src_hash": "b6f9486b1bbfc2e513ab7cf2d3502aa3",
+    "text": "Du behöver ett starkare vapen än startklubban för att döda vargar. Kanske räcker en {sabre} eller en kort {sword}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.465284Z"
+  },
+  "npc.zerbrus.stdmod_23": {
+    "src_hash": "f8915564d083b560af44e78b385be2bd",
+    "text": "Minotaurs är väldigt starka. Du behöver en grupp människor eller åtminstone nivå 6 och bra utrustning för att kunna döda dem.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.466926Z"
+  },
+  "npc.zerbrus.stdmod_24": {
+    "src_hash": "8966299f56f4b40490ea90a85a471f3b",
+    "text": "De är lite tuffare än de ser ut, men de är fortfarande bra nybörjarmonster.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.467816Z"
+  },
+  "npc.zerbrus.stdmod_25": {
+    "src_hash": "afe9a4daadc8b45b35829bba3bbf0bd4",
+    "text": "Skeletten på denna ö är vanligtvis ganska dolda. De finns ofta nära gravar och alltid under jord. Akta dig för deras onda livsavlopp.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:49:35.468911Z"
+  },
+  "item.18481.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:30.979910Z"
+  },
+  "item.18881.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:30.982576Z"
+  },
+  "item.18916.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:30.983576Z"
+  },
+  "item.19032.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:30.989497Z"
+  },
+  "item.19115.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:30.997090Z"
+  },
+  "item.19164.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.004450Z"
+  },
+  "item.19248.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.007396Z"
+  },
+  "item.19314.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.008440Z"
+  },
+  "item.19360.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.009142Z"
+  },
+  "item.19364.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.009837Z"
+  },
+  "item.19370.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.010493Z"
+  },
+  "item.19386.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.011218Z"
+  },
+  "item.19399.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.012213Z"
+  },
+  "item.19493.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.013838Z"
+  },
+  "item.1990.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.023068Z"
+  },
+  "item.1991.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.023471Z"
+  },
+  "item.19918.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.023920Z"
+  },
+  "item.20028.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.024909Z"
+  },
+  "item.20120.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.030911Z"
+  },
+  "item.20127.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.032075Z"
+  },
+  "item.20176.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.038435Z"
+  },
+  "item.20181.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.039385Z"
+  },
+  "item.20211.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.041825Z"
+  },
+  "item.20252.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.043537Z"
+  },
+  "item.20343.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.047568Z"
+  },
+  "item.20354.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.048118Z"
+  },
+  "item.20373.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.049093Z"
+  },
+  "item.20888.name": {
+    "src_hash": "3d7af4f42ed0f5d3a4847e2f3e624bff",
+    "text": "marmorgolv",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.058057Z"
+  },
+  "item.21133.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.067509Z"
+  },
+  "item.21157.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:10:31.070291Z"
+  },
+  "npc.zerbrus.stdmod_28": {
+    "src_hash": "42d8b0c85d42f39d9517b1633dded817",
+    "text": "Ormar kan förgifta dig också, men deras gift är vanligtvis inte lika farligt som giftspindlar. Var bara försiktig och döda dem snabbt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.804683Z"
+  },
+  "npc.zerbrus.stdmod_29": {
+    "src_hash": "932d11b688698920f384562ffefc9924",
+    "text": "Premium krigare betalar. De får många fördelar på detta sätt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.806201Z"
+  },
+  "npc.zerbrus.stdmod_30": {
+    "src_hash": "d0e12fd7c549bed11b5ac6d677e977a8",
+    "text": "HEJA KUNGEN!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.806842Z"
+  },
+  "npc.zerbrus.stdmod_32": {
+    "src_hash": "9b33b95a8fba2db96c8499bc9795c9df",
+    "text": "En plats för skydd. Ingenting kan skada dig där.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.807928Z"
+  },
+  "npc.zerbrus.stdmod_33": {
+    "src_hash": "86798f3b06bcf1ffc45d1ea18b202e72",
+    "text": "Jag kan markera några fängelsehålor på din karta om du frågar mig om {monsters} som passar din nivå.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.809036Z"
+  },
+  "npc.zerbrus.stdmod_34": {
+    "src_hash": "7050ee5718295ef82411aed7bdbd0a6c",
+    "text": "Avloppen är överfulla med {rats}. De gör fina måltavlor för unga hjältar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.810138Z"
+  },
+  "npc.zerbrus.stdmod_36": {
+    "src_hash": "6fa7a1976551bd1c7d047909f5b305be",
+    "text": "Jag är en följare av {Banor}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.810794Z"
+  },
+  "npc.zerbrus.stdmod_41": {
+    "src_hash": "edc421754bd60b42cdd01ca81cdf97cb",
+    "text": "Det är min plikt att skydda den här byn och dess {citizens}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.812153Z"
+  },
+  "npc.zerbrus.stdmod_42": {
+    "src_hash": "8cb3d903de1550854f3a2ef487b5d5bb",
+    "text": "Det ser ut som att du har behärskat borren.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.812803Z"
+  },
+  "npc.zerbrus.stdmod_43": {
+    "src_hash": "60d5a5e49dab6e1a986409226315b06b",
+    "text": "Förlåt, jag byter inte. Be butiksägarna om en byte istället.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.813669Z"
+  },
+  "npc.zerbrus.stdmod_44": {
+    "src_hash": "37b07ad263ee860fe5c2828c00275662",
+    "text": "Jag godkänner inte att hon öppnar en bar. Dessa berusade äventyrare som snubblar över bron på natten är inte särskilt användbara för att förbättra situationen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.815524Z"
+  },
+  "npc.zerbrus.stdmod_46": {
+    "src_hash": "d1e4abebc834ac154b0a5f3089c64ba1",
+    "text": "Han säljer {weapons}. Hans butik ligger sydväst om staden, nära {temple}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.816656Z"
+  },
+  "npc.zerbrus.stdmod_47": {
+    "src_hash": "ca5bf4a826b28113e574b452a1072d5f",
+    "text": "Han ägnade sitt liv åt att välkomna nykomlingar till denna ö.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.817498Z"
+  },
+  "npc.zerbrus.stdmod_5": {
+    "src_hash": "6ce92a461b926e7793a804f11841aa6a",
+    "text": "Vill du veta vilka monster som är bra för dig på din nivå? Fråga mig bara!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.818457Z"
+  },
+  "npc.zerbrus.stdmod_51": {
+    "src_hash": "94581c4456361bd80620efd6a7b37dfd",
+    "text": "Han vaktar templet och kan bota dig om du är svårt skadad eller förgiftad, precis som jag.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:27:24.819610Z"
+  },
+  "npc.zerbrus.stdmod_52": {
+    "src_hash": "cb20aeb671ead0cad4965e8c5310bba1",
+    "text": "Hon är {Obi's} barnbarn och hanterar {armors} och {shields}. Hennes butik ligger sydväst om staden, nära templet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:57:12.936617Z"
+  },
+  "npc.zerbrus.stdmod_56": {
+    "src_hash": "c06ddadc05733914c9e2f9d0d2aa28e3",
+    "text": "Du kan hitta oraklet på översta våningen i {academy}, strax ovanför {Seymour}. Gå dit när du är nivå 8.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:57:12.938012Z"
+  },
+  "npc.zerbrus.stdmod_6": {
+    "src_hash": "0a56174c71661a97f1782a25b1d2bf68",
+    "text": "Hälsningar, |PLAYERNAME|! Du ser riktigt dålig ut. Låt mig läka dina sår.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:57:12.938941Z"
+  },
+  "npc.zerbrus.stdmod_9": {
+    "src_hash": "c87b59f6329b4db4f439b333c79bc60f",
+    "text": "Hmm, |PLAYERNAME|. Jag vet verkligen inte om du ska gå ut i vildmarken utan sköld. Du bör tjäna lite pengar genom att jaga råttor under byn först tills du har råd med åtminstone en träsköld.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:57:12.940967Z"
+  },
+  "npc.zerbrus.voice_1": {
+    "src_hash": "2851bb88a335de322419abe3d47d0789",
+    "text": "Är du skadad eller förgiftad? Jag kan hjälpa dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:57:12.941669Z"
+  },
+  "npc.zerbrus.voice_5": {
+    "src_hash": "6ce92a461b926e7793a804f11841aa6a",
+    "text": "Vill du veta vilka monster som är bra för dig på din nivå? Fråga mig bara!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:57:12.942820Z"
+  },
+  "npc.ziyad.stdmod_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Känn vinden i håret under en av mina mattturer!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:57:12.946578Z"
+  },
+  "npc.ziyad.stdmod_3": {
+    "src_hash": "8c79e71b366acc5edbb3ea5ea600b386",
+    "text": "Söker du en passage till {0} för {1}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:57:12.947324Z"
+  },
+  "npc.ziyad.stdmod_4": {
+    "src_hash": "1482caebb816b20e62928d77c283e660",
+    "text": "Vi skulle vilja tjäna dig lite tid.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:57:12.948136Z"
+  },
+  "npc.ziyad.voice_1": {
+    "src_hash": "240c0799e27fe9ec642afee89ce66b44",
+    "text": "Känn vinden i håret under en av mina mattturer!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:57:12.949269Z"
+  },
+  "npc.znozel.voice_1": {
+    "src_hash": "b9141107718bbdb4de3cca43bca1784b",
+    "text": "Glöm inte att sätta in dina pengar här i Global Bank innan du ger dig ut på äventyr.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:57:12.954241Z"
+  },
+  "npc.zora.say_1": {
+    "src_hash": "ca5af46d9c20d6cbd9f33d8c59caee9d",
+    "text": "Vill du köpa en fotboll för 111 guld?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:57:12.957468Z"
+  },
+  "npc.zora.say_2": {
+    "src_hash": "f8fa663bee16e9e130104ed46006ecbf",
+    "text": "Här är den.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T14:57:12.957919Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_1": {
+    "src_hash": "975fcf0d930538235217abecc4470957",
+    "text": "Hum hum, huhum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:15:39.389149Z"
+  },
+  "npc.a_sweaty_cyclops.voice_1": {
+    "src_hash": "975fcf0d930538235217abecc4470957",
+    "text": "Hum hum, huhum",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:15:39.389655Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_1": {
+    "src_hash": "dff36104bc875d708f69d7668d7b162e",
+    "text": "485611800364197.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:15:39.389905Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_2": {
+    "src_hash": "a9c3a1056e6dde2147a9e1475a18b0a7",
+    "text": "78572611857643646724.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:15:44.279875Z"
+  },
+  "npc.a_wrinkled_bonelord.voice_1": {
+    "src_hash": "dff36104bc875d708f69d7668d7b162e",
+    "text": "485611800364197.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:15:44.280115Z"
+  },
+  "npc.a_wrinkled_bonelord.voice_2": {
+    "src_hash": "a9c3a1056e6dde2147a9e1475a18b0a7",
+    "text": "78572611857643646724.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:15:44.280334Z"
+  },
+  "item.21160.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.171299Z"
+  },
+  "item.21162.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.171636Z"
+  },
+  "item.21181.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.173019Z"
+  },
+  "item.21220.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.176152Z"
+  },
+  "item.21299.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.178248Z"
+  },
+  "item.21343.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.180076Z"
+  },
+  "item.21347.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.180555Z"
+  },
+  "item.21349.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.180978Z"
+  },
+  "item.21376.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.182631Z"
+  },
+  "item.2139.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.183697Z"
+  },
+  "item.2141.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.185146Z"
+  },
+  "item.2142.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.186467Z"
+  },
+  "item.2143.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.187049Z"
+  },
+  "item.21444.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.189214Z"
+  },
+  "item.2149.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.191527Z"
+  },
+  "item.2150.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.191787Z"
+  },
+  "item.2151.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.193177Z"
+  },
+  "item.21574.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.194202Z"
+  },
+  "item.21695.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.194460Z"
+  },
+  "item.21738.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.194883Z"
+  },
+  "item.21742.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.195421Z"
+  },
+  "item.21756.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.196688Z"
+  },
+  "item.21760.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.197143Z"
+  },
+  "item.21771.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.197851Z"
+  },
+  "item.21786.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.198136Z"
+  },
+  "item.21793.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.198673Z"
+  },
+  "item.21807.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.200343Z"
+  },
+  "item.2186.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.202911Z"
+  },
+  "item.21879.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:15.204467Z"
+  },
+  "item.21944.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.598075Z"
+  },
+  "item.21949.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.598683Z"
+  },
+  "item.21951.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.599042Z"
+  },
+  "item.21969.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.600726Z"
+  },
+  "item.21976.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.601873Z"
+  },
+  "item.22065.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.605540Z"
+  },
+  "item.22105.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.607295Z"
+  },
+  "item.22112.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.607874Z"
+  },
+  "item.22117.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.608554Z"
+  },
+  "item.22155.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.610296Z"
+  },
+  "item.2217.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.610944Z"
+  },
+  "item.22173.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.611641Z"
+  },
+  "item.22181.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.612033Z"
+  },
+  "item.22494.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.613736Z"
+  },
+  "item.22641.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.616271Z"
+  },
+  "item.22657.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.617343Z"
+  },
+  "item.22891.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.628261Z"
+  },
+  "item.23190.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.631280Z"
+  },
+  "item.23361.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.631901Z"
+  },
+  "item.23397.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.633472Z"
+  },
+  "item.23692.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.644832Z"
+  },
+  "item.23720.name": {
+    "src_hash": "3d7af4f42ed0f5d3a4847e2f3e624bff",
+    "text": "marmorgolv",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.646663Z"
+  },
+  "item.24187.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.652098Z"
+  },
+  "item.24244.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.654654Z"
+  },
+  "item.24249.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.655179Z"
+  },
+  "item.2479.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.663602Z"
+  },
+  "item.24865.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.665026Z"
+  },
+  "item.24876.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.665561Z"
+  },
+  "item.24878.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:15:51.665978Z"
+  },
+  "item.24887.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.048793Z"
+  },
+  "item.24912.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.049787Z"
+  },
+  "item.24931.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.050575Z"
+  },
+  "item.24953.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.051973Z"
+  },
+  "item.25130.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.056863Z"
+  },
+  "item.25197.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.058562Z"
+  },
+  "item.25626.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.064111Z"
+  },
+  "item.25628.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.064729Z"
+  },
+  "item.25688.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.065484Z"
+  },
+  "item.25755.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.069566Z"
+  },
+  "item.25781.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.071110Z"
+  },
+  "item.27232.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.093899Z"
+  },
+  "item.27259.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.095146Z"
+  },
+  "item.27546.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.101850Z"
+  },
+  "item.27564.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.102865Z"
+  },
+  "item.27587.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.103368Z"
+  },
+  "item.27609.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.104746Z"
+  },
+  "item.27642.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.107654Z"
+  },
+  "item.27672.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.109658Z"
+  },
+  "item.27690.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.110597Z"
+  },
+  "item.27726.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.112789Z"
+  },
+  "item.27875.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.115214Z"
+  },
+  "item.28145.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.118414Z"
+  },
+  "item.28259.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.119739Z"
+  },
+  "item.28480.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.123998Z"
+  },
+  "item.28487.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.124593Z"
+  },
+  "item.28499.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.125698Z"
+  },
+  "item.28524.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.127037Z"
+  },
+  "item.28660.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:40:25.134220Z"
+  },
+  "item.28671.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.150059Z"
+  },
+  "item.28819.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.157533Z"
+  },
+  "item.28919.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.161234Z"
+  },
+  "item.2920.name": {
+    "src_hash": "69756f3cd326cb18036b1cb8f8e9f77f",
+    "text": "fackla",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.164784Z"
+  },
+  "item.2922.name": {
+    "src_hash": "69756f3cd326cb18036b1cb8f8e9f77f",
+    "text": "fackla",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.165041Z"
+  },
+  "item.2924.name": {
+    "src_hash": "69756f3cd326cb18036b1cb8f8e9f77f",
+    "text": "fackla",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.165430Z"
+  },
+  "item.29434.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.172558Z"
+  },
+  "item.30008.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.177800Z"
+  },
+  "item.30032.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.179246Z"
+  },
+  "item.30130.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.184860Z"
+  },
+  "item.30199.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.188925Z"
+  },
+  "item.30217.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.190808Z"
+  },
+  "item.31159.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.211835Z"
+  },
+  "item.31239.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.214755Z"
+  },
+  "item.31322.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.219944Z"
+  },
+  "item.31373.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.222547Z"
+  },
+  "item.31415.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.224959Z"
+  },
+  "item.31491.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.230945Z"
+  },
+  "item.31517.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.232084Z"
+  },
+  "item.31667.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.241821Z"
+  },
+  "item.31677.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.242589Z"
+  },
+  "item.31912.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.249797Z"
+  },
+  "item.31926.name": {
+    "src_hash": "b7191a556bb13541494d8e7a52e6ff07",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.251011Z"
+  },
+  "item.31928.name": {
+    "src_hash": "b7191a556bb13541494d8e7a52e6ff07",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.251374Z"
+  },
+  "item.31930.name": {
+    "src_hash": "b7191a556bb13541494d8e7a52e6ff07",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.251987Z"
+  },
+  "item.31960.name": {
+    "src_hash": "b7191a556bb13541494d8e7a52e6ff07",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.254176Z"
+  },
+  "item.31962.name": {
+    "src_hash": "b7191a556bb13541494d8e7a52e6ff07",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.254528Z"
+  },
+  "item.32065.name": {
+    "src_hash": "b7191a556bb13541494d8e7a52e6ff07",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.256974Z"
+  },
+  "item.32092.name": {
+    "src_hash": "b7191a556bb13541494d8e7a52e6ff07",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:09:48.258198Z"
+  },
+  "item.36545.name": {
+    "src_hash": "3d7af4f42ed0f5d3a4847e2f3e624bff",
+    "text": "marmorgolv",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:57.927945Z"
+  },
+  "item.371.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:57.979875Z"
+  },
+  "item.395.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:58.041524Z"
+  },
+  "item.43845.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:58.143363Z"
+  },
+  "item.451.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:58.157531Z"
+  },
+  "item.4653.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:58.160400Z"
+  },
+  "item.7536.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:58.424933Z"
+  },
+  "item.7891.name": {
+    "src_hash": "05b8c74cbd96fbf2de4c1a352702fbf4",
+    "text": "fönster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:58.454777Z"
+  },
+  "item.8217.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:58.476070Z"
+  },
+  "item.9044.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:58.526630Z"
+  },
+  "item.9118.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:58.539870Z"
+  },
+  "item.922.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:58.550087Z"
+  },
+  "item.9245.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "RESERVERAD SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:42:58.552547Z"
+  },
+  "item.11056.name": {
+    "src_hash": "aab9e1de16f38176f86d7a92ba337a8d",
+    "text": "tabell",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:43:06.223280Z"
+  },
+  "item.11068.name": {
+    "src_hash": "e91aba42192b11d6305d402d12a91393",
+    "text": "timmer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:43:06.223550Z"
+  },
+  "item.11090.name": {
+    "src_hash": "ff803cbd151bf2b3d9679b01a12afdb8",
+    "text": "dekorativ yxa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:43:06.223894Z"
+  },
+  "item.11095.name": {
+    "src_hash": "ff803cbd151bf2b3d9679b01a12afdb8",
+    "text": "dekorativ yxa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:43:06.224196Z"
+  },
+  "item.111.name": {
+    "src_hash": "809a37206b4fd9a19718363a93161155",
+    "text": "död människa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:43:06.224486Z"
+  },
+  "item.11100.name": {
+    "src_hash": "b42459fad72c2fdc74786d3cd79dc876",
+    "text": "järnhölje",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:43:12.362991Z"
+  },
+  "item.11136.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Den är låst.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:43:12.363686Z"
+  },
+  "item.11138.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:43:12.373949Z"
+  },
+  "item.11139.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:43:12.374887Z"
+  },
+  "item.11140.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:43:12.375556Z"
+  },
+  "item.11142.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:43:14.160241Z"
+  },
+  "quest.spike_task.fame_point_received": {
+    "src_hash": "4162d4a2360e089ddf3f0796b68e5701",
+    "text": "Du har fått en berömmelsespoäng.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.979519Z"
+  },
+  "scripts.2_ambassadors_treason.msg_1": {
+    "src_hash": "14dfffed3e8aaff6aa4f4509ee470001",
+    "text": "Dokument brändes här nyligen. Bara delen av en bokrulle ligger fortfarande framför skorstenen men den är för sotad för att kunna läsas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.981077Z"
+  },
+  "scripts.2_ambassadors_treason.msg_2": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Du har redan undersökt detta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.981759Z"
+  },
+  "scripts.2_ambassadors_treason.msg_3": {
+    "src_hash": "f0502f434837f12f681eb194dd73e2d4",
+    "text": "Pappersrester ligger utspridda på golvet. Det tar lite tid att sätta ihop dem igen. Men det är bara en dåligt skriven dikt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.982761Z"
+  },
+  "scripts.2_ambassadors_treason.msg_4": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Du har redan undersökt detta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.983503Z"
+  },
+  "scripts.2_ambassadors_treason.msg_5": {
+    "src_hash": "92080f0ef8fde073cd9d9b26347d601b",
+    "text": "Du granskar rullarna noggrant. Det är beställningar från Rathleton till ambassadören. Inga tecken på förräderi här.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.984480Z"
+  },
+  "scripts.2_ambassadors_treason.msg_6": {
+    "src_hash": "dd483e9a16530ce89de99a1dc0f9f197",
+    "text": "Du har redan undersökt detta.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.985104Z"
+  },
+  "scripts.2_ambassadors_treason.msg_7": {
+    "src_hash": "8464bf58b6d5fa7bbe7ed698b810582e",
+    "text": "Du hittar ingenting i ambassadörens hus. Om han i själva verket är en förrädare har han blivit av med alla bevis som kan anklaga honom.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.986351Z"
+  },
+  "scripts.6_mind_travel.msg_1": {
+    "src_hash": "39c4cd386bc515db3ca13ad71ea9a439",
+    "text": "Du känner dig skakig och yr, världen blir mörk omkring dig. Då klarnar sikten igen – och du är någon annanstans.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.987598Z"
+  },
+  "scripts.6_mind_travel.msg_2": {
+    "src_hash": "1e57dd425d49fa37eefdeb9faa01a4f2",
+    "text": "Du flyttades till höger hjärnsida",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.988509Z"
+  },
+  "scripts.6_mind_travel.msg_3": {
+    "src_hash": "98da952f701d6358d74f1d9a180990fa",
+    "text": "Du flyttades till vänster hjärna",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.989125Z"
+  },
+  "scripts.8_blessing_the_statues.msg_1": {
+    "src_hash": "414cb5c464ec2b74b4431b6931757db9",
+    "text": "Du välsignar statyn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.989749Z"
+  },
+  "scripts.8_blessing_the_statues.msg_2": {
+    "src_hash": "4a64e6aeefc9b8c9f1fd15709a257e2d",
+    "text": "Du välsignade redan den här statyn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.990382Z"
+  },
+  "scripts.action_drume.msg_1": {
+    "src_hash": "5a37b3d700f88246b6e36e3077df916b",
+    "text": "Din tid är förbi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.993018Z"
+  },
+  "scripts.actions_bonefiddle.msg_1": {
+    "src_hash": "1d91d803c170748ff4f101712cf1c262",
+    "text": "Du fäster ebenholtset på skallen. Detta bör uppfylla kraven för en greppbräda.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:18.999666Z"
+  },
+  "scripts.actions_bonefiddle.msg_2": {
+    "src_hash": "e8a3f87ef1f8ea48f276ed48a8524749",
+    "text": "Du fäster håret på greppbrädan i ebenholts. Strängarna ska vara lämpliga för att fungera som strängar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.000864Z"
+  },
+  "scripts.actions_bonefiddle.msg_3": {
+    "src_hash": "60b384a0aa95079616923d65a09d92fc",
+    "text": "*Det var en gång en jungfrumässa, med mörka ögon och sidenhår. Långt borta från hemmet dog hon. Ingen grav, ingen vaken, ingen sorg.*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.002165Z"
+  },
+  "scripts.actions_bonefiddle.msg_4": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Du spelar påfågelballaden och portalen öppnas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.002916Z"
+  },
+  "scripts.actions_bonefiddle.msg_5": {
+    "src_hash": "fa77689cf9736ba9d5773f0e3b7b2683",
+    "text": "Du spelar benfiol.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.003505Z"
+  },
+  "scripts.actions_calassa_comb_door.msg_1": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.009053Z"
+  },
+  "scripts.actions_doors.msg_1": {
+    "src_hash": "97292b2d9c656199befd6d213f4e5194",
+    "text": "Du har inte tillräckligt med nivå.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.018852Z"
+  },
+  "scripts.actions_doors.msg_2": {
+    "src_hash": "373a68cb4c35a94b33502f1c96bede67",
+    "text": "Dörren verkar vara tät mot oönskade inkräktare.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.020760Z"
+  },
+  "scripts.actions_dreamcatcher_curse.msg_1": {
+    "src_hash": "eb5a28c1cc7d964dd2cbb2fc6553795f",
+    "text": "Du har en känsla av rädsla.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.022060Z"
+  },
+  "scripts.actions_entrance.msg_1": {
+    "src_hash": "3bf818c8ff9e1fb2d25ccd26775d7cd5",
+    "text": "Än en gång blandar du krita med en droppe av ditt blod och lite vatten och förnyar symbolen på golvet...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.023455Z"
+  },
+  "scripts.actions_entrance.msg_2": {
+    "src_hash": "b33b6be9b885ba871d5ec857ce3fd539",
+    "text": "Du kan endast använda denna entré under natten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.024229Z"
+  },
+  "scripts.actions_fragrance.msg_1": {
+    "src_hash": "88589a6c42c6ad348e20ed9f1aaef6af",
+    "text": "Hmmm, vilken förtjusande doft!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.027236Z"
+  },
+  "scripts.actions_lever_first.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Något klickade samtidigt som ett bultande ljud nästan dövar dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.038692Z"
+  },
+  "scripts.actions_lever_second.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Något klickade samtidigt som ett bultande ljud nästan dövar dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.039916Z"
+  },
+  "scripts.actions_lever_third.msg_1": {
+    "src_hash": "f46311a07e3e49e233fb5062c6cd146a",
+    "text": "Något klickade samtidigt som ett bultande ljud nästan dövar dig.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.041521Z"
+  },
+  "scripts.actions_mono_detector_strange_probing_device.msg_1": {
+    "src_hash": "7302b053c0f22e53182c9674c7530e39",
+    "text": "Sonden har justerats.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:19.048428Z"
+  },
+  "item.11143.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Den är låst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.649980Z"
+  },
+  "item.11145.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.651176Z"
+  },
+  "item.11146.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.651586Z"
+  },
+  "item.11147.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.652066Z"
+  },
+  "item.11149.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.652944Z"
+  },
+  "item.11157.name": {
+    "src_hash": "e91aba42192b11d6305d402d12a91393",
+    "text": "timmer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.653462Z"
+  },
+  "item.11233.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Den är låst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.655115Z"
+  },
+  "item.11234.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.655768Z"
+  },
+  "item.11237.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.656354Z"
+  },
+  "item.11238.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.656795Z"
+  },
+  "item.11240.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.657457Z"
+  },
+  "item.11241.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Den är låst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.657924Z"
+  },
+  "item.11243.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.659041Z"
+  },
+  "item.11246.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.659471Z"
+  },
+  "item.11247.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.659907Z"
+  },
+  "item.11249.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.660701Z"
+  },
+  "item.11708.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.686628Z"
+  },
+  "item.11716.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.687639Z"
+  },
+  "item.12034.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.692332Z"
+  },
+  "item.12036.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.693058Z"
+  },
+  "item.12250.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.702425Z"
+  },
+  "item.13135.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Den är låst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.734926Z"
+  },
+  "item.13137.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.735801Z"
+  },
+  "item.13142.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Den är låst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.736380Z"
+  },
+  "item.13144.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.737365Z"
+  },
+  "item.15688.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.777165Z"
+  },
+  "item.15891.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.783888Z"
+  },
+  "item.15893.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.784665Z"
+  },
+  "item.1628.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Den är låst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.802970Z"
+  },
+  "item.1630.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:28:00.803947Z"
+  },
+  "item.1631.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Den är låst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.137714Z"
+  },
+  "item.1633.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.139113Z"
+  },
+  "item.1639.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.140057Z"
+  },
+  "item.1641.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.140935Z"
+  },
+  "item.1643.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.141628Z"
+  },
+  "item.1645.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.142428Z"
+  },
+  "item.1646.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.142829Z"
+  },
+  "item.1647.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.143217Z"
+  },
+  "item.1648.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.143668Z"
+  },
+  "item.1649.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.144134Z"
+  },
+  "item.1650.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Den är låst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.144735Z"
+  },
+  "item.1652.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.145692Z"
+  },
+  "item.1653.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Den är låst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.146079Z"
+  },
+  "item.1655.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.147244Z"
+  },
+  "item.1657.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.147968Z"
+  },
+  "item.1659.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.150605Z"
+  },
+  "item.1661.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.151825Z"
+  },
+  "item.1663.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.152640Z"
+  },
+  "item.1664.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.153074Z"
+  },
+  "item.1665.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.153515Z"
+  },
+  "item.1666.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.154025Z"
+  },
+  "item.1667.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.154438Z"
+  },
+  "item.1668.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Den är låst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.155568Z"
+  },
+  "item.1670.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.158255Z"
+  },
+  "item.1671.desc": {
+    "src_hash": "077c2129b8dc9dd18b87fb48f90f2beb",
+    "text": "Den är låst.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.158698Z"
+  },
+  "item.1673.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.159920Z"
+  },
+  "item.1675.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.160639Z"
+  },
+  "item.1677.name": {
+    "src_hash": "218af8b5f3242823809719913b93bd12",
+    "text": "öppen dörr",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.161512Z"
+  },
+  "item.1678.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.161916Z"
+  },
+  "item.1679.name": {
+    "src_hash": "2569b5dbea513485c8dd7478e50e57fd",
+    "text": "expertis port",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:44:23.162333Z"
+  },
+  "quests.bigfoot_burden.warzone_crystal_required": {
+    "src_hash": "d2b109377df37ef2965d1bba9a69cfaf",
+    "text": "Du behöver en uppdragskristall eller ett jobb gjort med Gnomission för att komma in.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:54:50.766954Z"
+  },
+  "quests.bigfoot_burden.warzone_entry_denied": {
+    "src_hash": "722a8c1a978dbdef3eee391d6d8304a9",
+    "text": "Du får inte komma in.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:54:50.768253Z"
+  },
+  "quests.bigfoot_burden.warzone_mission_required": {
+    "src_hash": "8e829f523946407b7b24b62b49bbd917",
+    "text": "Du har äntligen tillräckligt med rykte bland tomtarna, be Gnomission om ett uppdrag för att ta emot din kristall.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:54:50.770534Z"
+  },
+  "quests.bigfoot_burden.rank_too_low": {
+    "src_hash": "582ca49ea8f77df099515acb0c43ff6b",
+    "text": "Din rankning bland Gnomes är för låg.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:54:54.881229Z"
+  },
+  "quests.bigfoot_burden.room_wait": {
+    "src_hash": "1ccc70eac63b4b35bbbe04c64197ce03",
+    "text": "Snälla, vänta tills rummet är röjt. Detta händer 30 minuter efter att det sista laget kom in.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:54:54.882076Z"
+  },
+  "quests.bigfoot_burden.shooting_complete": {
+    "src_hash": "199f93db257e69b9ac55cee85d09d2f4",
+    "text": "Du har träffat tillräckligt många mål. Rapportera tillbaka!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:54:54.882870Z"
+  },
+  "quests.bigfoot_burden.shooting_wrong_target": {
+    "src_hash": "f1e02a4ba46f414753f21ad13d243d0c",
+    "text": "Du har träffat fel mål och måste börja om från början!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:01.867404Z"
+  },
+  "quests.bigfoot_burden.spark_gathered": {
+    "src_hash": "e2a9304e949d85c0ccd4fae3821c82fb",
+    "text": "Du samlade en gnista.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:01.867902Z"
+  },
+  "quests.bigfoot_burden.spores_correct": {
+    "src_hash": "ba701d044d1c89b3a2220e990dfada15",
+    "text": "Du har samlat rätt sporer.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:01.868458Z"
+  },
+  "quests.bigfoot_burden.spores_wrong": {
+    "src_hash": "3fe3a2d03e98d90dc8e4a0efacad3bb6",
+    "text": "Du har samlat fel sporer. Du förstörde din samling.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:01.869070Z"
+  },
+  "quests.bigfoot_burden.stone_no_luck": {
+    "src_hash": "5755825d293ed93332adc4d7ffe268b4",
+    "text": "Du hade ingen tur den här gången.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:01.869686Z"
+  },
+  "quests.bigfoot_burden.stone_success": {
+    "src_hash": "e21551f482607850807335b406abc608",
+    "text": "Din skicklighet gjorde att du kunde ta ett bryne innan stenen sjunker ner i lava.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:08.321892Z"
+  },
+  "quests.bigfoot_burden.teleported_out": {
+    "src_hash": "46c15d2ef0b6c08e61ff947b33b4fa6d",
+    "text": "Du har blivit teleporterad ut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:08.322532Z"
+  },
+  "quests.bigfoot_burden.wait_cooldown": {
+    "src_hash": "81cd907c01596f21e11a5fda9b70707f",
+    "text": "Vänta 30 minuter för att börja igen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:08.323117Z"
+  },
+  "quests.bigfoot_burden.warzone_cleared": {
+    "src_hash": "c7ad2edb9f91714ac566e858cc656831",
+    "text": "Du har redan rensat den här krigszonen under de senaste 20 timmarna. Du måste vänta {0} timmar till.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:08.324104Z"
+  },
+  "quests.bigfoot_burden.wrong_crystal": {
+    "src_hash": "d9d9c8a0a86d368cf9c2a03ddac0526a",
+    "text": "Det här är inte kristallen du letar efter!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:08.324785Z"
+  },
+  "quests.children_revolution.spy_say_1": {
+    "src_hash": "80d42548a963923a14b1070fe6f4358b",
+    "text": "Här lagras en imponerande mängd fisk.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:14.386335Z"
+  },
+  "quests.children_revolution.spy_say_2": {
+    "src_hash": "9800f80914a0d764ef4c84491bd82ce6",
+    "text": "En till synes oändlig rad vapen sträcker sig framför dig in i mörkret.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:14.387032Z"
+  },
+  "quests.children_revolution.spy_say_3": {
+    "src_hash": "9b282e921bff701f86b3dff1f078ab25",
+    "text": "Dessa baracker verkar vara hem för ganska många soldater.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:14.387630Z"
+  },
+  "quests.common.all_players_level": {
+    "src_hash": "a77e38d9c627d9ef2ab6207042d02378",
+    "text": "Alla spelare måste vara nivå {0} eller högre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:14.388188Z"
+  },
+  "quests.common.arena_complete": {
+    "src_hash": "e98243884db06a20900513b9389da879",
+    "text": "Grattis! Du slutförde %s arena, du bör ta din belöning nu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:14.388841Z"
+  },
+  "quests.common.arena_wait": {
+    "src_hash": "0863986a4431a5f1f317cc9f85225b75",
+    "text": "%s är för närvarande i nästa arena. Vänta tills %s är klar med att slåss.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:20.531286Z"
+  },
+  "quests.common.found_container": {
+    "src_hash": "1fca7612c0f0cdb0eb808ebe7083ea56",
+    "text": "Du har hittat {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:20.531708Z"
+  },
+  "quests.common.found_item": {
+    "src_hash": "1fca7612c0f0cdb0eb808ebe7083ea56",
+    "text": "Du har hittat {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:20.532087Z"
+  },
+  "quests.common.found_item_no_room": {
+    "src_hash": "c0841c81e48cef8d7ab3473164677ccc",
+    "text": "Du har hittat {0}, men du har inget utrymme att ta den.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:20.532628Z"
+  },
+  "quests.common.found_item_too_heavy": {
+    "src_hash": "cc5dc61a0b3315ccff7b98e9c63499a5",
+    "text": "Du har hittat {0} som väger {1} oz. Du har ingen kapacitet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:20.533223Z"
   }
 }

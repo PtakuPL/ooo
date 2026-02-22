@@ -66,6 +66,12 @@ canary_test/SUMMARY_*.md
 canary_test/i18n_changes_documentation.md
 canary_test/i18n_full_documentation.md
 
+# Large binary executables (exceed GitHub 100MB limit)
+canary_test/canary-backup-old*
+canary_test/canary-debug-backup*
+canary_test/canary-ubuntu-24.04-linux-debug-*
+canary_test/canary-ubuntu-24.04-linux-release-5688*
+
 # Build artifacts
 budowa_silnik/
 iwyu/

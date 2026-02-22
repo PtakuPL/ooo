@@ -1,11 +1,11 @@
 {
   "lang": "ms",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 4759,
-  "identical_to_en": 3738,
-  "placeholder_keys": 48827,
-  "coverage_pct": 8.9,
+  "total_keys": 53770,
+  "translated": 4904,
+  "identical_to_en": 3883,
+  "placeholder_keys": 48846,
+  "coverage_pct": 9.1,
   "issues_total": 4,
   "issues_by_type": {
     "V4_artifact": 2,
@@ -47,11 +47,11 @@
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 404,
+    "issues_total": 403,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 4,
+    "length_ratio": 3,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T11:16:34.250108Z"
+  "validated_at": "2026-02-21T20:41:08.382544Z"
 }

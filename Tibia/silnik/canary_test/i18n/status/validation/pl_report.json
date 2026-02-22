@@ -1,25 +1,31 @@
 {
   "lang": "pl",
   "script_group": "latin",
-  "total_keys": 53586,
-  "translated": 47334,
-  "identical_to_en": 1829,
-  "placeholder_keys": 6252,
-  "coverage_pct": 88.3,
-  "issues_total": 56,
+  "total_keys": 53770,
+  "translated": 47665,
+  "identical_to_en": 1841,
+  "placeholder_keys": 6105,
+  "coverage_pct": 88.6,
+  "issues_total": 57,
   "issues_by_type": {
     "V6_newline_mismatch": 42,
     "V4_artifact": 13,
-    "V1_placeholder_mismatch": 1
+    "V1_placeholder_mismatch": 2
   },
   "issues_by_severity": {
-    "CRITICAL": 1,
+    "CRITICAL": 2,
     "HIGH": 13,
     "MEDIUM": 42,
     "LOW": 0
   },
   "score": 99.9,
   "worst_keys": [
+    {
+      "key": "arena.npc.welcome",
+      "category": "arena",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "html.online.html.text1",
       "category": "html",
@@ -133,12 +139,6 @@
       "category": "npc",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"
-    },
-    {
-      "key": "npc.alkestios.stdmod_7",
-      "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
     }
   ],
   "crossref": {
@@ -149,5 +149,5 @@
     "length_ratio": 0,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T11:16:35.329458Z"
+  "validated_at": "2026-02-21T20:41:09.473720Z"
 }

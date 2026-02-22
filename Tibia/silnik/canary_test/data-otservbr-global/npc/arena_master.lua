@@ -60,144 +60,104 @@ NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "arena.npc.walkaw
 
 -- Mode info table
 local modeInfo = {
-	{ keyword = "1v1",        modeId = Arena.MODE_1V1,        i18nKey = "arena.mode.1v1",        descKey = "arena.mode.1v1.desc" },
-	{ keyword = "2v2",        modeId = Arena.MODE_2V2,        i18nKey = "arena.mode.2v2",        descKey = "arena.mode.2v2.desc" },
-	{ keyword = "3v3",        modeId = Arena.MODE_3V3,        i18nKey = "arena.mode.3v3",        descKey = "arena.mode.3v3.desc" },
-	{ keyword = "ffa",        modeId = Arena.MODE_FFA,        i18nKey = "arena.mode.ffa",        descKey = "arena.mode.ffa.desc" },
-	{ keyword = "ctf",        modeId = Arena.MODE_CTF,        i18nKey = "arena.mode.ctf",        descKey = "arena.mode.ctf.desc" },
-	{ keyword = "koth",       modeId = Arena.MODE_KOTH,       i18nKey = "arena.mode.koth",       descKey = "arena.mode.koth.desc" },
-	{ keyword = "lms",        modeId = Arena.MODE_LMS,        i18nKey = "arena.mode.lms",        descKey = "arena.mode.lms.desc" },
-	{ keyword = "tournament", modeId = Arena.MODE_TOURNAMENT, i18nKey = "arena.mode.tournament", descKey = "arena.mode.tournament.desc" },
+	{ keyword = "1v1",        modeId = Arena.MODE_1V1,        descKey = "arena.mode.1v1.desc" },
+	{ keyword = "2v2",        modeId = Arena.MODE_2V2,        descKey = "arena.mode.2v2.desc" },
+	{ keyword = "3v3",        modeId = Arena.MODE_3V3,        descKey = "arena.mode.3v3.desc" },
+	{ keyword = "ffa",        modeId = Arena.MODE_FFA,        descKey = "arena.mode.ffa.desc" },
+	{ keyword = "ctf",        modeId = Arena.MODE_CTF,        descKey = "arena.mode.ctf.desc" },
+	{ keyword = "koth",       modeId = Arena.MODE_KOTH,       descKey = "arena.mode.koth.desc" },
+	{ keyword = "lms",        modeId = Arena.MODE_LMS,        descKey = "arena.mode.lms.desc" },
+	{ keyword = "tournament", modeId = Arena.MODE_TOURNAMENT, descKey = "arena.mode.tournament.desc" },
 }
 
 -- "arena" keyword - main info
-keywordHandler:addKeyword({"arena"}, StdModule.say, {
-	npcHandler = npcHandler,
-	text = nil,
-	onSay = function(npc, creature, type, message)
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.info")
-	end
-})
+keywordHandler:addKeyword({ "arena" }, function(npc, player)
+	if not npcHandler:checkInteraction(npc, player) then return false end
+	NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.info")
+	return true
+end, {})
 
 -- "modes" keyword - list all modes
-keywordHandler:addKeyword({"modes"}, StdModule.say, {
-	npcHandler = npcHandler,
-	text = nil,
-	onSay = function(npc, creature, type, message)
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.modes_header")
-		for _, info in ipairs(modeInfo) do
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, info.descKey)
-		end
-	end
-})
+keywordHandler:addKeyword({ "modes" }, function(npc, player)
+	if not npcHandler:checkInteraction(npc, player) then return false end
+	NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.modes_header")
+	return true
+end, {})
 
 -- Per-mode keywords
 for _, info in ipairs(modeInfo) do
-	keywordHandler:addKeyword({info.keyword}, StdModule.say, {
-		npcHandler = npcHandler,
-		text = nil,
-		onSay = function(npc, creature, type, message)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, info.descKey)
-		end
-	})
+	local descKey = info.descKey
+	keywordHandler:addKeyword({ info.keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = descKey })
 end
 
 -- "join" keyword
-keywordHandler:addKeyword({"join"}, StdModule.say, {
-	npcHandler = npcHandler,
-	text = nil,
-	onSay = function(npc, creature, type, message)
-		local player = Player(creature)
-		if not player then return end
-
-		-- Default to 1v1
-		local mode = Arena.MODE_1V1
-
-		local canJoin, reason = ArenaConfig.canPlayerJoin(player)
-		if not canJoin then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.cannot_join")
-			return
-		end
-
-		local success = player:arenaJoinQueue(mode)
-		if success then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.joined_queue")
-			ArenaLog.logQueueJoin(player, mode, player:arenaGetMMR())
-		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.join_failed")
-		end
+keywordHandler:addKeyword({ "join" }, function(npc, player)
+	if not npcHandler:checkInteraction(npc, player) then return false end
+	local mode = Arena.MODE_1V1
+	local canJoin, reason = ArenaConfig.canPlayerJoin(player)
+	if not canJoin then
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.cannot_join")
+		return true
 	end
-})
+	local success = player:arenaJoinQueue(mode)
+	if success then
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.joined_queue")
+		ArenaLog.logQueueJoin(player, mode, player:arenaGetMMR())
+	else
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.join_failed")
+	end
+	return true
+end, {})
 
 -- "stats" keyword
-keywordHandler:addKeyword({"stats"}, StdModule.say, {
-	npcHandler = npcHandler,
-	text = nil,
-	onSay = function(npc, creature, type, message)
-		local player = Player(creature)
-		if not player then return end
-
-		local stats = player:arenaGetStats()
-		if not stats then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.no_stats")
-			return
-		end
-
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.stats_header")
-		local titleKey = ArenaConfig.getTitleI18nKey(ArenaConfig.getTitleForMMR(stats.mmr))
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.stats_mmr",
-			{tostring(stats.mmr), player:getTranslation(titleKey)})
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.stats_record",
-			{tostring(stats.wins), tostring(stats.losses), tostring(stats.draws)})
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.stats_points",
-			{tostring(stats.arenaPoints)})
+keywordHandler:addKeyword({ "stats" }, function(npc, player)
+	if not npcHandler:checkInteraction(npc, player) then return false end
+	local stats = player:arenaGetStats()
+	if not stats then
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.no_stats")
+		return true
 	end
-})
+	NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.stats_header")
+	local titleKey = ArenaConfig.getTitleI18nKey(ArenaConfig.getTitleForMMR(stats.mmr))
+	NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.stats_mmr",
+		{ tostring(stats.mmr), player:getTranslation(titleKey) })
+	NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.stats_record",
+		{ tostring(stats.wins), tostring(stats.losses), tostring(stats.draws) })
+	NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.stats_points",
+		{ tostring(stats.arenaPoints) })
+	return true
+end, {})
 
 -- "ranking" keyword
-keywordHandler:addKeyword({"ranking"}, StdModule.say, {
-	npcHandler = npcHandler,
-	text = nil,
-	onSay = function(npc, creature, type, message)
-		local player = Player(creature)
-		if not player then return end
-
-		local ranking = Arena.getTopRanking(10)
-		if not ranking or #ranking == 0 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.ranking_empty")
-			return
-		end
-
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.ranking_header")
-		for i, entry in ipairs(ranking) do
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.ranking_entry",
-				{tostring(i), entry.playerName, tostring(entry.mmr)})
-		end
+keywordHandler:addKeyword({ "ranking" }, function(npc, player)
+	if not npcHandler:checkInteraction(npc, player) then return false end
+	local ranking = Arena.getTopRanking(10)
+	if not ranking or #ranking == 0 then
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.ranking_empty")
+		return true
 	end
-})
+	NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.ranking_header")
+	for i, entry in ipairs(ranking) do
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.ranking_entry",
+			{ tostring(i), entry.playerName, tostring(entry.mmr) })
+	end
+	return true
+end, {})
 
 -- "shop" keyword
-keywordHandler:addKeyword({"shop"}, StdModule.say, {
-	npcHandler = npcHandler,
-	text = nil,
-	onSay = function(npc, creature, type, message)
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.shop_header")
-		for i, item in ipairs(ArenaConfig.shop) do
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.shop_entry",
-				{tostring(i), item.name, tostring(item.cost)})
-		end
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.shop_hint")
+keywordHandler:addKeyword({ "shop" }, function(npc, player)
+	if not npcHandler:checkInteraction(npc, player) then return false end
+	NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.shop_header")
+	for i, item in ipairs(ArenaConfig.shop) do
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.shop_entry",
+			{ tostring(i), item.name, tostring(item.cost) })
 	end
-})
+	NPC_LIB.i18n.npcSay(npcHandler, npc, player, "arena.npc.shop_hint")
+	return true
+end, {})
 
 -- "help" keyword
-keywordHandler:addKeyword({"help"}, StdModule.say, {
-	npcHandler = npcHandler,
-	text = nil,
-	onSay = function(npc, creature, type, message)
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "arena.npc.help")
-	end
-})
+keywordHandler:addKeyword({ "help" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "arena.npc.help" })
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 npcType:register(npcConfig)

@@ -1,11 +1,11 @@
 {
   "lang": "ja",
   "script_group": "cjk",
-  "total_keys": 53586,
-  "translated": 5014,
-  "identical_to_en": 3712,
-  "placeholder_keys": 48572,
-  "coverage_pct": 9.4,
+  "total_keys": 53770,
+  "translated": 5159,
+  "identical_to_en": 3857,
+  "placeholder_keys": 48591,
+  "coverage_pct": 9.6,
   "issues_total": 8,
   "issues_by_type": {
     "V2_length_ratio": 7,
@@ -70,11 +70,11 @@
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 419,
+    "issues_total": 418,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 19,
+    "length_ratio": 18,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T11:16:32.563556Z"
+  "validated_at": "2026-02-21T20:41:06.737014Z"
 }

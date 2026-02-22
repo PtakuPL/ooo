@@ -13,7 +13,7 @@
   "misc.bank_system.say_2": "Por favor dígame cuánto oro le gustaría depositar.",
   "misc.bank_system.say_20": "Este jugador no existe.",
   "misc.bank_system.say_21": "Este jugador no existe.",
-  "misc.bank_system.say_22": "[EN] You cannot transfer money to this account.",
+  "misc.bank_system.say_22": "No puede transferir dinero a esta cuenta.",
   "misc.bank_system.say_23": "Muy bien, ¿hay algo más que pueda hacer por ti?",
   "misc.bank_system.say_24": "¿Cuántas monedas de platino te gustaría conseguir?",
   "misc.bank_system.say_25": "Lo sentimos, no tienes suficientes monedas de oro.",

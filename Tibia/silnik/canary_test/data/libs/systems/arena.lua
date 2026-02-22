@@ -7,7 +7,7 @@ ArenaConfig = {
 	enabled = false,
 
 	-- Minimum level to join arena
-	minLevel = 50,
+	minLevel = 1,
 	-- Cooldown between arena joins (seconds)
 	joinCooldownSeconds = 30,
 

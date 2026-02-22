@@ -242,164 +242,168 @@
   "global_stats": {
     "files_completed": 15,
     "total_keys": 0,
-    "reconciled_external_keys": 53579,
-    "reconciled_external_keys_updated_at": "2026-02-16T22:15:36.830717Z",
+    "reconciled_external_keys": 53763,
+    "reconciled_external_keys_updated_at": "2026-02-21T20:40:03.020275Z",
     "reconciled_external_keys_source": "statusd_registry_reconcile",
     "reconciled_external_keys_reason": "live_vs_registry_drift",
-    "total_keys_effective_registry": 53586
+    "total_keys_effective_registry": 53770
   },
   "per_file_keys": {
     "achievements.json": {
       "keys": 1048,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "actions.json": {
       "keys": 35,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
+    },
+    "arena.json": {
+      "keys": 184,
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "books.json": {
       "keys": 1403,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "chatchannels.json": {
       "keys": 16,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "client.json": {
       "keys": 242,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "cpp.json": {
       "keys": 879,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "creaturescripts.json": {
       "keys": 4,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "dataroot.json": {
       "keys": 3,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "errors.json": {
       "keys": 0,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "events.json": {
       "keys": 14,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "example_merchant.json": {
       "keys": 14,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "globalevents.json": {
       "keys": 5,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "html.json": {
       "keys": 1495,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "items.json": {
       "keys": 17057,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "libs.json": {
       "keys": 89,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "messages.json": {
       "keys": 11,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "modules.json": {
       "keys": 19,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "monsters.json": {
       "keys": 5915,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "mounts.json": {
       "keys": 0,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "movements.json": {
       "keys": 2,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "npc.json": {
       "keys": 13769,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "npclib.json": {
       "keys": 147,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "otclient_data.json": {
       "keys": 72,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "otclient_mods.json": {
       "keys": 0,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "otclient_modules.json": {
       "keys": 1987,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "otclient_src.json": {
       "keys": 0,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "otclient_tools.json": {
       "keys": 0,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "php.json": {
       "keys": 59,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "questlog.json": {
       "keys": 1918,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "quests.json": {
       "keys": 610,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "raids.json": {
       "keys": 273,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "scripts.json": {
       "keys": 2170,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "server.json": {
       "keys": 2574,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "spells.json": {
       "keys": 1534,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "startup.json": {
       "keys": 23,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "talkactions.json": {
       "keys": 199,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "ui.json": {
       "keys": 0,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     },
     "world.json": {
       "keys": 0,
-      "updated_at": "2026-02-21T11:20:58.014780Z"
+      "updated_at": "2026-02-21T21:18:38.972988Z"
     }
   }
 }

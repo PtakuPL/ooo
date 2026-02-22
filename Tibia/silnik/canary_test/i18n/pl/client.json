@@ -155,7 +155,7 @@
   "client.map.text1": "Nie można załadować minimapy, brakuje pliku?",
   "client.map.text2": "MarkListPrzedmiot",
   "client.market.text1": "opcję i dodaje",
-  "client.market.text2": "Balance: <value> Złoto",
+  "client.market.text2": "Saldo: <wartość> złota",
   "client.market.text3": "Zarezerwowane dla większej funkcjonalności później",
   "client.mounts.text1": "dane/XML/mounts.xml",
   "client.mounts.text2": "Błąd podczas otwierania pliku:",

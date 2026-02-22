@@ -1,11 +1,11 @@
 {
   "lang": "zh",
   "script_group": "cjk",
-  "total_keys": 53586,
-  "translated": 3895,
-  "identical_to_en": 3759,
-  "placeholder_keys": 49691,
-  "coverage_pct": 7.3,
+  "total_keys": 53770,
+  "translated": 4040,
+  "identical_to_en": 3904,
+  "placeholder_keys": 49710,
+  "coverage_pct": 7.5,
   "issues_total": 0,
   "issues_by_type": {},
   "issues_by_severity": {
@@ -24,5 +24,5 @@
     "length_ratio": 1,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T11:16:42.681846Z"
+  "validated_at": "2026-02-21T20:41:16.280882Z"
 }

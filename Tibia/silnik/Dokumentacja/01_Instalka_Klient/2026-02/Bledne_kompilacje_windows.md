@@ -11,6 +11,7 @@ Ten dokument opisuje glownie fale bledow C1001 z 2026-02-17.
 Aktualny stan CI Windows/Linux i nowe root-cause (m.in. `vcpkg` download 502 przy `gtest`) jest opisany tutaj:
 
 - `Dokumentacja/01_Instalka_Klient/2026-02/2026-02-21_ci_linux_windows_analiza_poprawek_v3.md`
+- `Dokumentacja/01_Instalka_Klient/2026-02/2026-02-21_lista_bledow_od_2026-02-20_linux_windows.md` (zbiorcza lista bledow od 2026-02-20 i opis jak byly naprawiane)
 
 Nowy run Windows odpalony recznie po aktualizacji:
 - `22256688321` (`in_progress` na moment zapisu raportu)

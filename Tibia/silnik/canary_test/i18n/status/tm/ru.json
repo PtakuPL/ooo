@@ -40790,5 +40790,2557 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T10:01:01.714199Z"
+  },
+  "scripts.movements_tar.msg_2": {
+    "src_hash": "1ce84a661acf6f037903800a49bf5eba",
+    "text": "Вы путешествуете по смоле невредимым.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:41:07.811789Z"
+  },
+  "scripts.movements_tar.msg_3": {
+    "src_hash": "0bd09638d94c44f8fbce3600bfe7cf6a",
+    "text": "Вы еще не готовы.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T11:41:07.812422Z"
+  },
+  "questlog.quest_11.mission_17.state_2": {
+    "src_hash": "8b000cb250f57cdac0b7218a86a6d277",
+    "text": "Вы успешно охотились на 300 горгулий.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:43:56.686976Z"
+  },
+  "scripts.movements_tar.msg_4": {
+    "src_hash": "af1f6d61beacdf5f6aea0ff9e41c5500",
+    "text": "Вы пересекаете серу невредимым.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:29:26.688374Z"
+  },
+  "scripts.movements_task_teleport.msg_1": {
+    "src_hash": "bee43ac06e5f8b30a598eee8f7258f85",
+    "text": "Сила этих душ теперь внутри вас. Вы не можете больше поглощать души.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:29:26.689420Z"
+  },
+  "book.otbm.enter_contaminated_areas_at_own": {
+    "src_hash": "a3a29303475cd29455952a9594ebd4cf",
+    "text": "Входите в загрязненные зоны на свой страх и риск и в соответствующей защитной одежде.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:34:54.400055Z"
+  },
+  "book.otbm.enter_the_ancient_blue_flame": {
+    "src_hash": "7ef32bcd7e8ef6c75de1748d68bac4b8",
+    "text": "Войдите в древнее голубое пламя гражданства",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:34:54.400793Z"
+  },
+  "book.otbm.enter_the_ancient_blue_flame_7ef32bcd": {
+    "src_hash": "7ef32bcd7e8ef6c75de1748d68bac4b8",
+    "text": "Войдите в древнее голубое пламя гражданства",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:34:54.401485Z"
+  },
+  "book.otbm.enter_the_teleporter_flame_to": {
+    "src_hash": "a196942253408fca1b7e59255eef2d10",
+    "text": "Войдите в пламя телепорта, чтобы стать гражданином Рошамуул.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:34:59.238745Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become": {
+    "src_hash": "672e470968e9cd56724b8b6e4a26a64c",
+    "text": "Войдите в телепорт, чтобы стать жителем Сваргронд.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:34:59.240143Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_4d25945b": {
+    "src_hash": "4d25945b330c1b1d8dd02f87d0bac445",
+    "text": "Войдите в телепорт, чтобы стать гражданином Тхаис!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:34:59.242052Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_9a40a4e1": {
+    "src_hash": "9a40a4e17df4e7f6702b63ba96d18faf",
+    "text": "Войдите в телепорт, чтобы стать гражданином",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:34:59.242999Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_cd55bbb9": {
+    "src_hash": "cd55bbb91a56a69600f613549e98dbf8",
+    "text": "Войдите в телепорт, чтобы стать гражданином Либертй Bay!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:34:59.244695Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_d9c3cee5": {
+    "src_hash": "d9c3cee544fbb8c23ad17deb5d97d607",
+    "text": "Войдите в телепорт, чтобы стать гражданином Карлин!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:35:01.963263Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_da2a4eed": {
+    "src_hash": "da2a4eedf3301f6141b39c576143329a",
+    "text": "Войдите в телепорт, чтобы стать гражданином Порт Хопе!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:35:01.965556Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_f3bad5cd": {
+    "src_hash": "f3bad5cdcfe1261ec83b7c39b205b22d",
+    "text": "Войдите в телепорт, чтобы стать гражданином Дарашиа!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:35:01.967382Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_f98dbe2c": {
+    "src_hash": "f98dbe2cc10d696f29945725e6c75d36",
+    "text": "Войдите в телепорт, чтобы стать гражданином Едрон!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:35:01.968721Z"
+  },
+  "cpp.player.look.you_are": {
+    "src_hash": "cec67a6a2ce71f80666717b0b77ebf89",
+    "text": "Вы {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:37:38.731011Z"
+  },
+  "cpp.player.look.you_are_loyalty": {
+    "src_hash": "5819b9583e5906dc7a3683901d873817",
+    "text": "Вы {0} {1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:37:38.731899Z"
+  },
+  "cpp.player.look.you_have_no_vocation": {
+    "src_hash": "1530eb6565c3951ab12bdf9ecd61013e",
+    "text": "У вас нет призвания.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:37:38.734977Z"
+  },
+  "cpp.player.lost_all_blessings": {
+    "src_hash": "ebcead0c2897065643978f88e6074999",
+    "text": "Вы потеряли все свои благословения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:37:42.634222Z"
+  },
+  "cpp.player.magic_level_advance": {
+    "src_hash": "c706671215d82f99b1f79126a4747c19",
+    "text": "Вы достигли магического уровня {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:37:42.634850Z"
+  },
+  "cpp.player.muted_for": {
+    "src_hash": "e4b7534905c88edffa5768a08fa96a4b",
+    "text": "Ваш звук отключен на {0} секунд.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:37:42.635385Z"
+  },
+  "cpp.player.no_blessings": {
+    "src_hash": "1df5fdbf5d50e614517e0999175b4e60",
+    "text": "Вы не были защищены никакими благословениями.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:37:42.636009Z"
+  },
+  "html.createaccount.html.text3": {
+    "src_hash": "090d4681703895d63b62a9e8fbfc3344",
+    "text": "Капс Локк включён!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:38:44.255030Z"
+  },
+  "html.changemain.html.text1": {
+    "src_hash": "9f53be7d10a1b545cc15cd34b0b49dfd",
+    "text": "Маин Персонаж Чанге",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:38:44.258050Z"
+  },
+  "html.changemain_changed.html.text1": {
+    "src_hash": "f9c7689a4056751907b7caaa54aea779",
+    "text": "Маин Персонаж Чангед",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:38:44.261900Z"
+  },
+  "html.changemain_confirm.html.text1": {
+    "src_hash": "8de3db3ec4615136f8bc57d954242e34",
+    "text": "Чанге Маин Персонаж",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:38:44.263594Z"
+  },
+  "html.authentication_connect.html.text1": {
+    "src_hash": "fcc8bd73ca52d4e4b9d7492bb850ea4e",
+    "text": "Коннект до Аутхентикатор",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:38:44.269545Z"
+  },
+  "html.registration.html.text1": {
+    "src_hash": "f1521bb1b70fcd6fa87f45e8ffd42804",
+    "text": "Аддитионал Информация:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:38:44.272007Z"
+  },
+  "otclient_modules.character.tr_90": {
+    "src_hash": "5af722fe59d9cc70989eef347b08b45b",
+    "text": "По Унлокк Дате",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:43:21.294805Z"
+  },
+  "otclient_modules.character.tr_91": {
+    "src_hash": "448841b1b0181a650f0a83273baa7e6c",
+    "text": "По Граде",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:43:21.296898Z"
+  },
+  "otclient_modules.character_otui.tr_1": {
+    "src_hash": "71bf0edb2e38954ab9b7db4bd7c98e8b",
+    "text": "Пурчасед Дом Итемс",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:43:21.300387Z"
+  },
+  "otclient_modules.character_otui.tr_10": {
+    "src_hash": "ee342e958534d058445a3144a4857a76",
+    "text": "Джокеры Прей:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:43:21.302173Z"
+  },
+  "otclient_modules.character_otui.tr_41": {
+    "src_hash": "4a77238b5c1da6c73723e228d573038f",
+    "text": "Ачиевеменц Очки: ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:43:21.319376Z"
+  },
+  "otclient_modules.character_otui.tr_53": {
+    "src_hash": "08a7a74289fcb1048f657b79eb629293",
+    "text": "Мана Лееч:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:43:21.324153Z"
+  },
+  "arena.title.contender": {
+    "src_hash": "6bc60f225af3e040f25409d430314097",
+    "text": "Претендент",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:45.227286Z"
+  },
+  "arena.mode.1v1": {
+    "src_hash": "c9df9d307e1889240c617bdd4b545fd5",
+    "text": "Дуэль 1 на 1",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:49.435459Z"
+  },
+  "arena.mode.2v2": {
+    "src_hash": "3d7fed18a70a9bcb3f06f228f67cb74b",
+    "text": "Команда 2 на 2",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:49.435902Z"
+  },
+  "arena.mode.3v3": {
+    "src_hash": "cd7102dee6115de15e908c826014625c",
+    "text": "Команда 3 на 3",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:49.436244Z"
+  },
+  "arena.mode.ffa": {
+    "src_hash": "a5de226ecf3e6fc85028144b4204662f",
+    "text": "Бесплатно для всех",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:49.436659Z"
+  },
+  "arena.mode.ctf": {
+    "src_hash": "03d45f77704591555f382c153bfa2414",
+    "text": "Захватить флаг",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:49.437039Z"
+  },
+  "arena.mode.koth": {
+    "src_hash": "a82dbd592fe6997b04795e7a802b2165",
+    "text": "Царь горы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:53.162766Z"
+  },
+  "arena.mode.lms": {
+    "src_hash": "5a1918be2f7cc66e422fb29bf7902d7f",
+    "text": "Последний выживший",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:53.163261Z"
+  },
+  "arena.mode.tournament": {
+    "src_hash": "4f4dc29df9d29cbec61a725ff3ce6e72",
+    "text": "Турнир",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:53.163703Z"
+  },
+  "arena.mode.1v1.desc": {
+    "src_hash": "51ce641163404b50e31732b76ea0ede1",
+    "text": "Классический поединок двух воинов. Ограничение по времени 5 минут.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:53.164539Z"
+  },
+  "arena.mode.2v2.desc": {
+    "src_hash": "085328fa1a567656d2dbaed7de7e8d55",
+    "text": "Сражаются две команды по два человека. Ограничение по времени 7 минут.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:53.165500Z"
+  },
+  "arena.mode.3v3.desc": {
+    "src_hash": "2f9d08c363cbf3b34c9eacf3b8df7316",
+    "text": "Встречаются две команды по три человека. Ограничение по времени 10 минут.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:58.701222Z"
+  },
+  "arena.mode.ffa.desc": {
+    "src_hash": "c895d5e714cc516711a29a7f4382643e",
+    "text": "Каждый игрок сам за себя! Большинство убийств выигрывает. 5 минут.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:58.702763Z"
+  },
+  "arena.mode.ctf.desc": {
+    "src_hash": "e04ab548b7294f6447bb645d8de58b1b",
+    "text": "Захватите вражеский флаг и доставьте его на свою базу. 10 минут.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:58.704535Z"
+  },
+  "arena.mode.koth.desc": {
+    "src_hash": "d1fc685f38f272761cbb4fd6578ca0a4",
+    "text": "Удерживайте центральную точку, чтобы набрать очки. 8 минут.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:58.706390Z"
+  },
+  "arena.mode.lms.desc": {
+    "src_hash": "230fc21d8d5fe4f3fe90242c6a00ae2a",
+    "text": "Никаких возрождений. Побеждает последний выживший. 15 минут.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:44:58.707586Z"
+  },
+  "arena.mode.tournament.desc": {
+    "src_hash": "3bfb841b0092e177ffd6616239bb250a",
+    "text": "Турнир на выбывание в формате брекет-системы. Специальное мероприятие.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:45:02.149661Z"
+  },
+  "arena.title.novice": {
+    "src_hash": "85b285d50f417b7fb9650a107c49cdc4",
+    "text": "Новичок",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:45:02.150012Z"
+  },
+  "arena.title.apprentice": {
+    "src_hash": "0a664616e1506d0c24a61bd1cca7d70e",
+    "text": "Ученик",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:45:02.150311Z"
+  },
+  "arena.title.fighter": {
+    "src_hash": "5db14795d4c6928f94927d0c0a060bee",
+    "text": "Боец",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:45:02.150628Z"
+  },
+  "arena.title.warrior": {
+    "src_hash": "7ee7fa010d64b90a36803a8445f2e943",
+    "text": "Воин",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:45:02.150900Z"
+  },
+  "arena.title.veteran": {
+    "src_hash": "55a8998f66694a4e848bede0fad3684a",
+    "text": "Ветеран",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:45:05.165869Z"
+  },
+  "arena.title.elite": {
+    "src_hash": "b13082ea3fe2642f1fd1fb76de03058b",
+    "text": "Элита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:45:05.166162Z"
+  },
+  "arena.title.champion": {
+    "src_hash": "3c18971605b1367c3d2ed6fda74be164",
+    "text": "Чемпион",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:45:05.166437Z"
+  },
+  "arena.title.gladiator": {
+    "src_hash": "f92b36491af502e1a73ef7aa499211b0",
+    "text": "Гладиатор",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:45:05.166765Z"
+  },
+  "arena.title.legend": {
+    "src_hash": "9b27e12d584b3438e811533b32e026e8",
+    "text": "Легенда",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:45:05.167046Z"
+  },
+  "arena.title.mythic": {
+    "src_hash": "69e275fa2f3c2d7ccf0cc139572aecc0",
+    "text": "Мифический",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:45:08.115530Z"
+  },
+  "arena.title.immortal": {
+    "src_hash": "16b98d0e33bf9444817b6cf56a39cf58",
+    "text": "Бессмертный",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:45:08.115851Z"
+  },
+  "arena.cmd.help.header": {
+    "src_hash": "f3353f677db0b5e52c4b5a7f26b937fa",
+    "text": "[Арена PvP] Доступные команды:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:45:08.117493Z"
+  },
+  "arena.cmd.help.join": {
+    "src_hash": "d9f79e39301e30c2e0e95d999023ed45",
+    "text": "!arena йоин <режим> - присоединиться к очереди на подбор игроков",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:45:08.118906Z"
+  },
+  "client.bosstiary.text1": {
+    "src_hash": "5b949a092bf0fd9fa569a1a0edb6ae67",
+    "text": "властный",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T12:47:24.661104Z"
+  },
+  "scripts.movements_zamulosh_teleport.msg_2": {
+    "src_hash": "0312af301fcba4f7d8f2f72f22c83b4e",
+    "text": "У вас пока нет доступа к этому телепорту.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:13:51.651877Z"
+  },
+  "scripts.movements_zamulosh_teleport.msg_4": {
+    "src_hash": "0312af301fcba4f7d8f2f72f22c83b4e",
+    "text": "У вас пока нет доступа к этому телепорту.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:13:51.654153Z"
+  },
+  "book.otbm.enter_this_teleporter_to_leave": {
+    "src_hash": "c0090b307e31895bdf5ea5849f9a9150",
+    "text": "Войдите в этот телепорт, чтобы покинуть это проклятое место и вернуться в Горому.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:22:33.548935Z"
+  },
+  "book.otbm.entry_only_with_permission_from": {
+    "src_hash": "83cd0fcb22c70b7a8b45ff2f253d4ca6",
+    "text": "Вход только с разрешения старшего некроманта и с собственными тестовыми материалами.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:22:33.550657Z"
+  },
+  "book.otbm.equipment_pick_tree_or_bricklayers": {
+    "src_hash": "ed37e228f369597b290490ca74920a20",
+    "text": "Оборудование: Набор кирки, дерева или каменщика.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:22:33.551984Z"
+  },
+  "book.otbm.equipment_wood_wooden_ties_hammer": {
+    "src_hash": "3a9e26509736d35a13c17004ca0816ba",
+    "text": "Оборудование: Древесина, деревянные шпалы, молоток, гвозди, металлическая фурнитура.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:22:39.403299Z"
+  },
+  "book.otbm.eternal_love_will_conquer_death": {
+    "src_hash": "b7c28eb237e7064db12b2e3557212a96",
+    "text": "Вечная любовь победит смерть",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:22:39.403891Z"
+  },
+  "book.otbm.even_before_the_creation_of": {
+    "src_hash": "7137963d14bbf9131392b1aa2399db1d",
+    "text": "Еще до создания людей произошло несколько событий, которые можно интерпретировать только как нападения демонических армий, пытающихся остановить процесс творения. Нечеловеческие источники рассказывают о нескольких армиях, вторгавшихся в наш мир на протяжении многих столетий.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:22:39.405527Z"
+  },
+  "book.otbm.even_if_the_seven_are": {
+    "src_hash": "35dd1318be38872f4e9a53861b6badf7",
+    "text": "Даже если семеро будут на его стороне, мы наконец победим, и пусть это будет стоить жизни всем нам!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:22:39.406448Z"
+  },
+  "book.otbm.even_though_many_djinns_had": {
+    "src_hash": "14aa31e0409c251e7c91c8bcef6625f4",
+    "text": "Несмотря на то, что многие джинны погибли во время роковой битвы при Анкрахмун, исход войны все еще не был решен. Мэлор потерял многих из своих самых храбрых воинов, но и Габель тоже, и они оба знали, что еще одна эпическая битва, подобная этой, поставит всю расу джиннов на грань уничтожения. В отчаянии Гэйбл обратился за советом к своему верному другу Фа'Храдину. Старый джинн предложил использовать хитрость, чтобы устранить Мэлора. Без своего лидера, рассуждал он, ифриты положат конец восстанию. Габель, который хотел избежать дальнейшего кровопролития, согласился. И вот так случилось, что волшебная лампа была создана и с помощью средств, неизвестных до сих пор, тайно помещена в личные покои Мэлора. У могучего ифрита не было шанса. Когда он заснул в том, что, по его мнению, было его личной лампой, он оказался в ловушке внутри лампы, которую вскоре тайно вывезли из Мал'Укуа, крепости ифритов, и вернули на Марид. Уловка Фа'градина сработала: Мэлор оказался пленником Гэйбла.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:22:39.413822Z"
+  },
+  "book.otbm.eventually_gabel_stepped_forward_to": {
+    "src_hash": "f2e705645bfc29a31a670fc0779f18ad",
+    "text": "В конце концов Габель вышел вперед, чтобы встретиться со своим противником. Это был момент, которого ждал Мэлор, который никогда не собирался сражаться честно. Внезапно земля разверзлась в тысячах мест, и орды злобной нежити атаковали Габеля и его армию. Ибо Мэлор тайно заключил союз с ужасными некромантами Дрефиа, и именно они контролировали орды нежити, сражавшиеся за него. Столкнувшись с превосходящим противником, Габель и его армия обратились в бегство.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:22:43.435908Z"
+  },
+  "book.otbm.eventually_they_started_exposing_undead": {
+    "src_hash": "1891f59f4f6ab6ea4f2b7f929d73359a",
+    "text": "В конце концов они начали подвергать тела нежити воздействию злых энергий и объединять их с живыми существами в огромных чудовищ-нежити, которые, однако, увядали и умирали почти сразу же после своего создания. После нескольких экспериментов, которые оказались особенно впечатляющими, костяные лорды были вынуждены отказаться от своих экспериментов. Вскоре их ужасные эксперименты исчезли из памяти. О них почти забыли, когда в отдаленном городе бехолдеров появилось несколько смертоносцев, заявивших, что они достигли решающего прорыва в области некромантии. Высший совет старейшин бехолдеров неохотно отправил несколько ученых в лаборатории для изучения результатов. Найденные ими нежить были настолько отвратительными и выродившимися, что ученые категорически заявили, что эти эксперименты, которые привели к их созданию, противоречат самим принципам бехолдеркина. Вся нежить должна была быть уничтожена, а эксперименты должны были быть отменены раз и навсегда.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:22:43.448266Z"
+  },
+  "book.otbm.ever_may_those_who_will": {
+    "src_hash": "2adf83e133fe9e7494dbfd7b8d67a1b3",
+    "text": "всегда. Пусть те, кто придут, не станут жертвами того же зла, что и мы.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:22:43.449910Z"
+  },
+  "cpp.player.not_enough_gold": {
+    "src_hash": "e972fc0652cc4daaa91d5931f9c44b8e",
+    "text": "У вас нет {0} золотых монет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:25:13.807197Z"
+  },
+  "cpp.player.skill_changed_offline": {
+    "src_hash": "48d9df5fa9b3f25161b222758eb4064a",
+    "text": "Ваш навык {0} изменился с уровня {1} (с прогрессом {2}% до уровня {3}) на уровень {4} (с прогрессом {5}% до уровня {6}).",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:25:13.810316Z"
+  },
+  "cpp.player.still_blessed_with": {
+    "src_hash": "483246b1a51387b19fe399daa761f5fc",
+    "text": "Вам все еще повезло с {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:25:13.811578Z"
+  },
+  "cpp.player.stowed_objects": {
+    "src_hash": "ef31349292992fd70fcb7d2e0d278003",
+    "text": "Уложен {0} объект{1}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:25:18.588415Z"
+  },
+  "cpp.player.stowed_objects_one": {
+    "src_hash": "83845eb1fb5504d839f0d461214810f8",
+    "text": "Уложенный объект {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:25:18.593887Z"
+  },
+  "cpp.protocol.account_banned_permanent": {
+    "src_hash": "c50beb39bda2de713cf48b37a3b845a3",
+    "text": "Ваша учетная запись была навсегда заблокирована пользователем {0}.\n\nПричина указана:\n{1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:25:18.596033Z"
+  },
+  "cpp.protocol.account_banned_until": {
+    "src_hash": "40239c5f032255e85f737b9645ae5d66",
+    "text": "Ваша учетная запись была заблокирована до {0} пользователем {1}.\n\nПричина указана:\n{2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:25:18.602184Z"
+  },
+  "html.downloads.html.text5": {
+    "src_hash": "f697fd08480894dec8c7696478426bc0",
+    "text": "Система: Виндовс 7 или новее",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:29:33.230228Z"
+  },
+  "otclient_modules.character_otui.tr_59": {
+    "src_hash": "98ef9ca7a32a6e72d8f35a474b2c183c",
+    "text": "Урон Редуктион:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:34:39.532433Z"
+  },
+  "otclient_modules.character_otui.tr_65": {
+    "src_hash": "e4c24f1e5882cd4795b9978cd9ab338a",
+    "text": "Конвертед Урон:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:34:39.539609Z"
+  },
+  "otclient_modules.character_otui.tr_8": {
+    "src_hash": "6d7553b1322c85818a4119bfd8c1457e",
+    "text": "Инстант Награда Аккесс:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:34:39.551901Z"
+  },
+  "otclient_modules.character_otui.tr_80": {
+    "src_hash": "efd42a0dd569753e3905d0c850cc9510",
+    "text": "Премиум аккаунта",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:34:39.554847Z"
+  },
+  "otclient_modules.character_otui.tr_9": {
+    "src_hash": "80579d74e8d7e446a8c884e7bf7bc528",
+    "text": "Даилй Награда",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:34:39.563519Z"
+  },
+  "otclient_modules.characterlist.tr_14": {
+    "src_hash": "f0967f215d969cc29613b435600b02c4",
+    "text": "Коннектион Ошибка",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:34:39.576373Z"
+  },
+  "scripts.music.msg_1": {
+    "src_hash": "0d71a979be8186c9b39faa7ce9898f11",
+    "text": "Таинственным образом из свирели падают разноцветные музыкальные ноты. - Поторопитесь, они быстро исчезнут.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T13:58:42.516392Z"
+  },
+  "book.otbm.every_child_knows_the_sad": {
+    "src_hash": "b1f2f519f903a67fdff5a9919bcc0488",
+    "text": "Каждый ребенок знает печальную судьбу Ха'лабала. Когда-то он был полон жизни, зеленый рай, наполненный густыми лесами и бесчисленными источниками пресной воды. Боги создали этот рай и подарили его новоиспеченной расе, людям. Защищенный со всех сторон морем и непреодолимыми горами, Ха'Лабал был идеальной средой для процветания молодой, уязвимой расы. И оно процветало и процветало. Под руководством своего лидера Банора и наделенные удивительными техническими навыками и знаниями от своих создателей, людям удалось заселить весь Ха'лабал за несколько поколений, и в небо поднялись красивые здания, самые могущественные из которых можно было найти в величественном городе Анкрахмун. Эти древние люди, которых сегодня называют Основателями, были дружелюбной расой, жившей в мире и гармонии друг с другом, не подозревая об ужасах, скрывающихся во внешнем мире. И боги, наблюдавшие за ними со своих тронов в Хаьзеел, улыбались им.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:04:56.392972Z"
+  },
+  "book.otbm.everyone_of_the_old_races": {
+    "src_hash": "9912b67e9e8cc5fa97705ead498a817b",
+    "text": "все представители древних рас, которые мы знаем только как Древние, были побеждены и погребены песками того времени, потому что",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:04:56.394276Z"
+  },
+  "book.otbm.everything_revolves_meradetos_of_drefia": {
+    "src_hash": "0751fabe4bf0067ea3292ed4c49bb509",
+    "text": "Все вращается. - Мерадетос из Дрефиа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:04:56.395568Z"
+  },
+  "book.otbm.everything_was_drained_away_as": {
+    "src_hash": "71fcdcc48e60428a61aceb72eb3d1660",
+    "text": "все было опустошено, как только они это создали, и Затрот рассмеялся, полный презрения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:05:00.719992Z"
+  },
+  "book.otbm.example_how_to_talk_with": {
+    "src_hash": "91eeff94bc841f2eaa9cfbf625997ebd",
+    "text": "Ексампле как разговаривать с нпс:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:05:00.725794Z"
+  },
+  "book.otbm.exchange_for_certain_services_that": {
+    "src_hash": "1bc7c82d2072bd060f059145e62f8a80",
+    "text": "обмен на отдельные услуги, которые не получили дальнейшего уточнения в документах суда. Иностранца без суда признали виновным и приговорили к трем годам работы на соляных шахтах. Пехотинец Камал заявил, что его отец Индрил виновен в колдовстве. Под кроватью обвиняемого было обнаружено несколько непонятных текстов. Индрила изгнали из города, а его имущество поделили поровну между фараоном и его наследниками. Иностранец Тодд Баллори был признан виновным в убийстве надсмотрщика Барнака, отца шестнадцати детей и уважаемого члена местной ассоциации кнутворкеров. Вышеупомянутый каторжник был приговорен к довольно эффектному финальному выступлению на местной арене.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:05:00.733963Z"
+  },
+  "book.otbm.exchange_rate_100_gold_coins": {
+    "src_hash": "391a1868ffece2f1125c5fd3231562cf",
+    "text": "обменный курс: 100 золотых монет равны 1 платиновой монете - 100 платиновых монет равны 1 хрустальной монете",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:05:00.735834Z"
+  },
+  "book.otbm.exercise_dummies_now_available_for": {
+    "src_hash": "c7eeeb6b7fef6b0073af82c7e8845a93",
+    "text": "Теперь доступны манекены для тренировок с определенным оружием! (Использование любого настоящего оружия для занятий на манекене запрещено.)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:05:00.738620Z"
+  },
+  "book.otbm.exercise_dummies_now_available_for_c7eeeb6b": {
+    "src_hash": "c7eeeb6b7fef6b0073af82c7e8845a93",
+    "text": "Теперь доступны манекены для тренировок с определенным оружием! (Использование любого настоящего оружия для занятий на манекене запрещено.)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:05:03.973645Z"
+  },
+  "book.otbm.fact_is_that_each_talon": {
+    "src_hash": "9c45a21ee2f469bfe20c4f05e8727a51",
+    "text": "Дело в том, что каждый Коготь содержит внутри могущественную магическую силу. Нам нужно только найти способ освободить эту силу и, что еще важнее, контролировать ее, чтобы мы могли использовать ее в наших целях.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:05:03.975020Z"
+  },
+  "book.otbm.famous_necromants_by_muriel": {
+    "src_hash": "4929034829f10429ff6e40bcbb46547e",
+    "text": "Знаменитые некроманты Мюриэл.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:05:03.975582Z"
+  },
+  "cpp.protocol.active_prey_desc": {
+    "src_hash": "8d45051899aa9b191a41ac17d746c91e",
+    "text": "{0} ({1} +{2}%, осталось {3})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:07:30.296904Z"
+  },
+  "cpp.protocol.already_connected_other_client": {
+    "src_hash": "9a4d250c6bf1404f1721849d29672a0f",
+    "text": "Вы уже подключены через другой клиент. Пожалуйста, используйте только один клиент одновременно!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:07:30.297884Z"
+  },
+  "cpp.protocol.already_logged_in": {
+    "src_hash": "442c6f0b512ae9e89a35ff8ca836d470",
+    "text": "Вы уже вошли в систему.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:07:30.298386Z"
+  },
+  "cpp.protocol.already_logged_protocol": {
+    "src_hash": "a170233fccfe7945e00322ef67b58ad8",
+    "text": "Вы уже вошли в систему, используя протокол '{0}'. Пожалуйста, выйдите из другого сеанса, чтобы подключиться здесь.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:07:34.505822Z"
+  },
+  "cpp.protocol.char_could_not_be_loaded": {
+    "src_hash": "bc27af7208b2117b513b44b360af97d2",
+    "text": "Не удалось загрузить вашего персонажа.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:07:34.506368Z"
+  },
+  "cpp.protocol.char_load_failed_contact_admin": {
+    "src_hash": "df6391a3559d9fdcd1e0424e1d9145e7",
+    "text": "Не удалось загрузить вашего персонажа, обратитесь к администратору.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:07:34.507020Z"
+  },
+  "cpp.protocol.char_namelocked": {
+    "src_hash": "1637b142f21e9fd35ae5a24ce0229a7d",
+    "text": "Имя вашего персонажа заблокировано.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:07:34.507531Z"
+  },
+  "book.otbm.fardos_fulfilled_by_the_need": {
+    "src_hash": "f146807b0bd8fd753cc64024ed919563",
+    "text": "Фардос исполнен потребности творить и рождать. Он вступил в существование и немедленно начал с акта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:37:06.200425Z"
+  },
+  "book.otbm.fast_food_for_faster_heroes": {
+    "src_hash": "e65ebc74811a90fe0fc8ecc73cb3b64b",
+    "text": "Фаст-фуд для более быстрых героев!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:37:06.200828Z"
+  },
+  "book.otbm.fasul_abrek_founder_of_the": {
+    "src_hash": "bf41f65c522e7769ed09971cc89cae15",
+    "text": "Фасул Абрек, основатель гильдии искателей приключений, павший герой, убийца королей, встретил свой конец от рук Элейн.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:37:06.201477Z"
+  },
+  "book.otbm.feel_free_to_explore_our": {
+    "src_hash": "2fa655912341557464a215106db8b6f6",
+    "text": "Не стесняйтесь изучать наши исследования! Пожалуйста, не трогайте экспонаты.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:37:11.556226Z"
+  },
+  "book.otbm.feeling_alone_in_the_dark": {
+    "src_hash": "185ae90de118c5204992c70dbc633ed1",
+    "text": "Чувствуете себя одиноким в темноте?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:37:11.556621Z"
+  },
+  "book.otbm.festering_face_wounds_as_dangerous": {
+    "src_hash": "7412415e8023468e34418cdbbc5a95d1",
+    "text": "нагноившиеся раны на лице как опасный яд. Но очень плохо! И все же плохие орки, оснащенные оружием циклопов, были слишком сильны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:37:11.557385Z"
+  },
+  "book.otbm.fibula_is_a_small_village": {
+    "src_hash": "167315197240cbfeba9996aded63831a",
+    "text": "Фибула — небольшая деревня на острове к юго-западу от материка. Он находится под властью монархии Тхаис. Ходят слухи, что под этим островом находятся пещеры и подземелья неизвестного, но наверняка древнего происхождения.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:37:11.558718Z"
+  },
+  "book.otbm.figure_out_who_built_the": {
+    "src_hash": "96ab9cf443bc2f63e3b2c543d805a880",
+    "text": "...выясните, кто построил Храм Чудес. Кажется, он старше всего здесь и имеет мощную защиту от зла.... держащих в руках Табличку...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:37:11.559578Z"
+  },
+  "book.otbm.finally_something_i_found_a": {
+    "src_hash": "2eed91c7e1ad763dd75017aa1568591a",
+    "text": "Окончательно! Что-нибудь! Я нашел странную стену где-то под Абьдендриел. Пришлось «одолжить» кое-какое снаряжение, кирку, кое-какие инструменты, веревку — уверен, эльфы не будут против. И теперь я здесь! Я здесь, чтобы откопать свое первое настоящее сокровище, а может быть, даже больше! Моё собственное открытие гробницы или даже затерянного дворца! Нет - археологический прорыв (скажем так, не все золото и богатства удалось вернуть), все, что найду, я задокументирую в этом дневнике!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:37:14.800679Z"
+  },
+  "book.otbm.finally_the_end_came_swifter": {
+    "src_hash": "e498e3ef48c20247b15ac2cec53435c1",
+    "text": "Наконец, конец наступил быстрее, чем они ожидали. Не желая рисковать в непредсказуемых залах и переходах подземелий Дрефиа, Марид провел устрашающий ритуал. Измученная земля под Дрефиа начала двигаться, как гигантский водоворот, и медленно нечестивый город затянулся внутрь водоворота. В течение получаса он исчез полностью, и все здания, кроме самых высоких, были полностью засыпаны песком и щебнем. Никого из его жителей больше никогда не видели, но ходят слухи, что глубоко под поверхностью нечестивый город все еще цел и бродит, как мстительное животное в своей тюрьме.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:37:14.803293Z"
+  },
+  "book.otbm.find_the_secret_entrance_to": {
+    "src_hash": "e7836ccfc1cdc1314d7924bfed15d89c",
+    "text": "найти секретный вход в Ямы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:37:14.803918Z"
+  },
+  "cpp.protocol.character_title_label": {
+    "src_hash": "580dfdf7a982fd2c57e001a2b5ed6d5b",
+    "text": "Название персонажа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:38:03.226396Z"
+  },
+  "cpp.protocol.enter_email": {
+    "src_hash": "2a9bd612fa1ef9cffa1033f9640fb3f8",
+    "text": "Вы должны ввести свой адрес электронной почты.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:38:03.226836Z"
+  },
+  "cpp.protocol.enter_username": {
+    "src_hash": "0f717a14bd5e8363222d7d62777d101f",
+    "text": "Вы должны ввести свое имя пользователя.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:38:03.227226Z"
+  },
+  "cpp.protocol.game_going_down": {
+    "src_hash": "ecb808f0c921e7edae64c994e73fff28",
+    "text": "Игра просто затухает.\nПожалуйста, повторите попытку позже.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:38:06.823776Z"
+  },
+  "cpp.protocol.gameworld_maintenance": {
+    "src_hash": "1a9fd9e35bd952f6709e3e0c4b5f94b6",
+    "text": "Гамеворлд находится на техническом обслуживании. Пожалуйста, переподключитесь через некоторое время.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:38:06.824688Z"
+  },
+  "cpp.protocol.invalid_password": {
+    "src_hash": "855eb8db89b4921c42072832d33d2dc2",
+    "text": "Неверный пароль.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:38:06.824967Z"
+  },
+  "cpp.protocol.ip_banned_until": {
+    "src_hash": "98cfd90e59bf9891ac20e2330d6c70a1",
+    "text": "Ваш IP-адрес был заблокирован {1} до {0}.\n\nПричина указана:\n{2}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:38:06.825777Z"
+  },
+  "otclient_modules.characterlist.tr_17": {
+    "src_hash": "3f5fda75f31327f0e22ec6b7c43adb3b",
+    "text": "Коннектинг до игру сервер...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:51.074148Z"
+  },
+  "otclient_modules.charms.tr_12": {
+    "src_hash": "c5786196b394a91002bfdb54dfcf3a55",
+    "text": "Подтвердить Чарм Ремовал",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:51.080930Z"
+  },
+  "otclient_modules.charms.tr_16": {
+    "src_hash": "fd97b10abee0ac1703dd8dea2c652ab9",
+    "text": "Подтвердить Селектед Чарм",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:51.082577Z"
+  },
+  "otclient_modules.charms.tr_34": {
+    "src_hash": "9b2d8ac64fb5f2a813bf3600eb68bf98",
+    "text": "Фатал Удерживайте",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:51.086981Z"
+  },
+  "otclient_modules.charms.tr_4": {
+    "src_hash": "fd97b10abee0ac1703dd8dea2c652ab9",
+    "text": "Подтвердить Селектед Чарм",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T15:41:51.088811Z"
+  },
+  "arena.cmd.help.leave": {
+    "src_hash": "4f98464c58520576693c6d4dfa1cd134",
+    "text": "!arena Леаве - Выйти из очереди",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:43:46.360185Z"
+  },
+  "arena.cmd.help.ranking": {
+    "src_hash": "1badab65a927d2a731ff7c0d84f040cc",
+    "text": "Рейтинг !arena — просмотр 20 лучших игроков",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:43:46.361488Z"
+  },
+  "arena.cmd.help.modes": {
+    "src_hash": "deef3cb557a9f5d8d9398fe7fe691a3e",
+    "text": "!arena mode — список доступных режимов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:43:46.362701Z"
+  },
+  "arena.cmd.modes.header": {
+    "src_hash": "64cafba9d270224276f7c49f961e94c3",
+    "text": "[Арена PvP] Доступные режимы:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:43:50.571002Z"
+  },
+  "arena.cmd.modes.entry": {
+    "src_hash": "b734d371d672089237d8c17d2ec5b263",
+    "text": "{0} ({1}) – {2} в очереди",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:43:50.571377Z"
+  },
+  "arena.cmd.stats.no_profile": {
+    "src_hash": "4d5f5f3b4418cc27f2c83b33343fb33b",
+    "text": "[Арена] Профиль арены пока не найден. Присоединяйтесь к матчу, чтобы создать его!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:43:50.571905Z"
+  },
+  "arena.cmd.stats.header": {
+    "src_hash": "6e4a70a9417e2559e2c6b087b0f0c519",
+    "text": "[Арена PvP] Ваша статистика:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:43:50.572642Z"
+  },
+  "arena.cmd.stats.mmr_line": {
+    "src_hash": "54b0caf0e7212ae5c2ceb57eee4a6bb9",
+    "text": "ММР: {0} | Очки: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:43:55.478362Z"
+  },
+  "arena.cmd.stats.streak_line": {
+    "src_hash": "8e7305efc73b90557aff75ba9e7ce079",
+    "text": "Серия: {0} (лучший результат: {1})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:43:55.479668Z"
+  },
+  "arena.cmd.stats.damage_line": {
+    "src_hash": "47e8dbed0978085e6e7d32916e5f4026",
+    "text": "Общий ущерб: {0} | Полное исцеление: {1}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:43:55.480090Z"
+  },
+  "arena.cmd.ranking.empty": {
+    "src_hash": "d8c2e036f9deba0cf3d5cdfa19b747ee",
+    "text": "[Арена] Данных о рейтинге пока нет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:43:55.480445Z"
+  },
+  "arena.cmd.ranking.header": {
+    "src_hash": "614c98bdefaae175647a70ba8ca7d30c",
+    "text": "[Арена PvP] Рейтинг 20 лучших:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:44:00.028139Z"
+  },
+  "arena.cmd.history.empty": {
+    "src_hash": "65ee78bc0c7de6099eee12e953ee4017",
+    "text": "[Арена] Пока нет истории матчей.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:44:00.028817Z"
+  },
+  "arena.cmd.history.header": {
+    "src_hash": "583ed7bc987fcc60ef941f96508c2911",
+    "text": "[Арена PvP] Последние 10 матчей:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:44:00.029691Z"
+  },
+  "arena.cmd.history.loss": {
+    "src_hash": "e3d507ddaf2e3d4d357b049cdeb0fb2e",
+    "text": "ПОТЕРЯ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:44:00.029915Z"
+  },
+  "arena.cmd.join.usage": {
+    "src_hash": "100738c2fd66c950518168398fae12dd",
+    "text": "[Арена] Использование: !арена join <режим>. Введите '!арена modes' для доступных режимов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:44:05.194680Z"
+  },
+  "arena.cmd.join.unknown_mode": {
+    "src_hash": "eb9c81bafe56653d2927821921fc45c2",
+    "text": "[Арена] Неизвестный режим '{0}'. Введите '!арена modes' для доступных режимов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:44:05.195651Z"
+  },
+  "arena.cmd.join.already_in_match": {
+    "src_hash": "87867de4b5e0285cf39940b520fce9a5",
+    "text": "[Арена] Вы уже участвуете в матче!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:44:05.196002Z"
+  },
+  "arena.cmd.join.already_in_queue": {
+    "src_hash": "b12e5e3b825811e688fcee2ba7cbc7a4",
+    "text": "[Арена] Вы уже в очереди! Сначала используйте '!арена leave'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:44:05.196943Z"
+  },
+  "arena.cmd.join.level_required": {
+    "src_hash": "be134ab927fa2fe40ea0f865482a6642",
+    "text": "[Арена] Чтобы присоединиться к арене, вам нужен как минимум уровень {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:44:05.197512Z"
+  },
+  "arena.cmd.join.success": {
+    "src_hash": "79470704af55441db0f6568f50545909",
+    "text": "[Арена] Вы присоединились к очереди {0}! Ищем противников...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:44:09.240688Z"
+  },
+  "arena.cmd.join.failed": {
+    "src_hash": "0d71659d84c50b7528f52b6b5f063893",
+    "text": "[Арена] Не удалось встать в очередь. Повторите попытку позже.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:44:09.241087Z"
+  },
+  "arena.cmd.leave.not_in_queue": {
+    "src_hash": "5cdae5913ba9d4554f3ab5849246ea30",
+    "text": "[Арена] Вы не в очереди.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:44:09.241512Z"
+  },
+  "book.otbm.fire_and_acid_proved_to": {
+    "src_hash": "6f0fc8f21a99117f3a87212d06616472",
+    "text": "Огонь и кислота оказались весьма эффективными, напротив, все введенные яды не оказали заметного эффекта.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:10:54.695331Z"
+  },
+  "book.otbm.first_of_all_i_want": {
+    "src_hash": "99491cdb599162be719cb15dbafc4745",
+    "text": "Прежде всего хочу сказать, что никто точно не знает, кто это сделал и как это было сделано. Но он содержит мощную магическую энергию неизвестного вида.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:10:54.696097Z"
+  },
+  "book.otbm.first_shalt_thou_take_out": {
+    "src_hash": "d79a20b130a677afa75ce4fb3a0fedd5",
+    "text": "«Сначала ты должен вынуть Святую Булавку. Затем ты должен сосчитать до трех, ни больше, ни меньше. Три будут числом, которое ты должен сосчитать, и числом счета будет три. Не считай ни четыре, ни считай два, за исключением того, что ты затем переходишь к трем. непослушный в моих глазах, задушит его».",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:10:54.697507Z"
+  },
+  "book.otbm.first_to_dump_his_opponent": {
+    "src_hash": "62be48428f9552b4e88f4dd7d4efbd55",
+    "text": "Победит тот, кто первым бросит своего противника 4 раза.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:10:58.486653Z"
+  },
+  "book.otbm.fiscal_revision_only_for_banking": {
+    "src_hash": "b250b36fc3a5a01cb994d143f881ea07",
+    "text": "Только финансовый пересмотр. Для банковских операций, пожалуйста, подайте заявку у стойки наверху. Депот внизу, в сокровищнице.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:10:58.487786Z"
+  },
+  "book.otbm.flattered_her_with_compliments_and": {
+    "src_hash": "c2e6148a45a7e5cd6d787c0e721c1e0f",
+    "text": "льстил ей комплиментами, и ему удалось ее соблазнить.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:10:58.488264Z"
+  },
+  "book.otbm.flying_carpet_passage_service": {
+    "src_hash": "54553a2010be5a9c386000a789a80e7b",
+    "text": "Служба прохода по ковру-самолету",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:10:58.488624Z"
+  },
+  "book.otbm.flying_carpet_passage_service_54553a20": {
+    "src_hash": "54553a2010be5a9c386000a789a80e7b",
+    "text": "Служба прохода по ковру-самолету",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:10:58.488975Z"
+  },
+  "book.otbm.flying_carpet_passage_service_upstairs": {
+    "src_hash": "53c0d62185be1819af7bfb8678c01dc3",
+    "text": "Служба прохода ковер-самолет наверху",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:11:01.392608Z"
+  },
+  "book.otbm.for_5_minutes_the_wand": {
+    "src_hash": "37229a49f61dc94b9eb38e1458afa1d5",
+    "text": "В течение 5 минут палочка распространяла мощную ауру, а затем внезапно прекратилась.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:11:01.393214Z"
+  },
+  "book.otbm.for_a_long_time_fardos": {
+    "src_hash": "b7ca1d2b961c28de23bb08a381183971",
+    "text": "Долгое время Фардос истощал свои огромные силы в бесплодной деятельности. Наконец он попросил своего спутника поддержать его в его",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:11:01.393988Z"
+  },
+  "cpp.protocol.max_chars_online": {
+    "src_hash": "8c72b40b88913bc4ce5c9e0d3cfa2017",
+    "text": "Вы можете войти в систему, используя только {0} символов.\nвашего аккаунта одновременно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:12:47.727049Z"
+  },
+  "cpp.protocol.max_chars_outside_pz": {
+    "src_hash": "c17b15e63bd374988c6a1bd29fa4afd0",
+    "text": "За пределами защитной зоны вы можете иметь только персонажей {0} из своей учетной записи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:12:47.727588Z"
+  },
+  "cpp.protocol.only_clients": {
+    "src_hash": "3339dcbaabcaa8fd96a09bc6b43059ea",
+    "text": "Разрешены только клиенты с протоколом {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:12:47.727984Z"
+  },
+  "cpp.protocol.only_clients_or_old": {
+    "src_hash": "8e8842d7a1b207078b807ecebc479d79",
+    "text": "Разрешены только клиенты с протоколом {0} или 11.00!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:12:51.084014Z"
+  },
+  "cpp.protocol.premium_expired": {
+    "src_hash": "1268cee2a00d8a6c82c2c2526c3d2b30",
+    "text": "Премиум-время для этого аккаунта истекло.\n\nЧтобы играть, купите дополнительное премиум-время на нашем сайте.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:12:51.084617Z"
+  },
+  "cpp.protocol.prey_bonus_improved_damage": {
+    "src_hash": "99129da58e9e25108670093a261e8611",
+    "text": "Улучшенный урон",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:12:51.084880Z"
+  },
+  "otclient_modules.charms1410_otui.tr_6": {
+    "src_hash": "1cfa7158895f843f21038e1a53528253",
+    "text": "Выбрать Креатуре",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:17:11.001377Z"
+  },
+  "otclient_modules.charms1410_otui.tr_8": {
+    "src_hash": "b75bf3a5a7c53987e50c8c69145d30f7",
+    "text": "Очистить Чарм",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:17:11.002514Z"
+  },
+  "otclient_modules.charms_otui.tr_1": {
+    "src_hash": "1cfa7158895f843f21038e1a53528253",
+    "text": "Выбрать Креатуре",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:17:11.003793Z"
+  },
+  "otclient_modules.communicationwindow_otui.tr_10": {
+    "src_hash": "f990ca8a526241f475c35282408f75f6",
+    "text": "Игнорировать Привате Мессагес",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:17:11.010552Z"
+  },
+  "arena.admin.stats.streak": {
+    "src_hash": "8e7305efc73b90557aff75ba9e7ce079",
+    "text": "Серия: {0} (лучший результат: {1})",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:18:10.029574Z"
+  },
+  "arena.cmd.leave.success": {
+    "src_hash": "ed333b3b38a2476e30b692a3354f9b39",
+    "text": "[Арена] Вы вышли из очереди.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:18:15.003203Z"
+  },
+  "arena.cmd.leave.failed": {
+    "src_hash": "d308580ea69815cf42b1cede3adb6462",
+    "text": "[Арена] Не удалось покинуть очередь.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:18:15.003657Z"
+  },
+  "arena.npc.greet_msg": {
+    "src_hash": "6a1356c449fc828d77f8811e2e73f3d9",
+    "text": "Приветствую, воин! Вы здесь ради {arena}? Я могу помочь вам найти достойных противников!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:18:15.004917Z"
+  },
+  "arena.npc.farewell_msg": {
+    "src_hash": "1265a0a4507b4160a3233b958abc89ac",
+    "text": "Пусть твой клинок останется острым! Возвращайтесь в любое время, чтобы увидеть больше сражений!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:18:15.005630Z"
+  },
+  "book.otbm.for_a_long_time_malor": {
+    "src_hash": "97bfde40522141fab4ea3af452cdcbac",
+    "text": "В течение долгого времени Мэлор тайно строил заговоры и интриги, используя обещания и угрозы для вербовки последователей и создания союзов. Многие джинны отказались предать Габеля, но большинство сильнейших воинов-джиннов сплотились на его стороне, и поскольку Мэлор уже давно готовил восстание, повстанцы были хорошо подготовлены. Когда Мэлор наконец подал сигнал, его приспешники атаковали дворец в полном составе, планируя быстро убить Гэйбла. Их атака была смертельно эффективной, и дворцовая стража была быстро разбита. Однако Габель, получивший предупреждение о заговоре, был вовремя спасен своим доверенным помощником и другом Фахрадином. Ему удалось бежать в темноте, и в ту же ночь он начал собирать свои войска, чтобы отомстить узурпатору. Мэлору, с другой стороны, пришлось признать, что его план по быстрому избавлению от Гэйбла провалился. И он приказал своим последователям готовиться к долгосрочному военному сражению. Ни он, ни Габель тогда не осознавали, что это отправная точка войны, которая продлится тысячелетия.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:36:37.367689Z"
+  },
+  "book.otbm.for_all_the_adventurers_old": {
+    "src_hash": "3bf491face943c88dc8b1ba54c70db59",
+    "text": "Для всех искателей приключений от мала до велика. Желаю вам жить в чести и мужестве и никогда не отказываться от борьбы за лучший мир!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:36:37.368379Z"
+  },
+  "book.otbm.for_all_who_found_this": {
+    "src_hash": "59a5c7727a9374785e919524859171ae",
+    "text": "для всех, кто нашел это место... Увидите его сломленным и безумным. Остерегайтесь гнева орков, иначе вы займёте его место!!!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:36:37.369065Z"
+  },
+  "book.otbm.for_armors_and_shields_please": {
+    "src_hash": "dd3d8ae3412597512a1ab5f7d8eb3603",
+    "text": "За доспехами и щитами поднимитесь наверх!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:36:42.541916Z"
+  },
+  "book.otbm.for_centuries_we_have_been": {
+    "src_hash": "334f6bbfaaa7ae1507771c4869dc4592",
+    "text": "На протяжении веков мы проводили исследования этой волшебной паутины в нашем мире Тибиа. И чем больше мы пытаемся понять, как это работает, тем больше я думаю, что нам никогда не разгадать его тайны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:36:42.544784Z"
+  },
+  "book.otbm.for_each_missing_part_on": {
+    "src_hash": "5dc6a8e32487c62a54e50be80e972444",
+    "text": "На каждую недостающую деталь (на основе стандартной рейки) рекомендую использовать три деревяшки. Зафиксируйте их минимум шестью гвоздями. Для самого рельса используйте пилу на куске дерева, чтобы сделать деревянные шпалы. Затем поместите на них два металлических крепления, и вы сможете впервые покататься на новом рельсе. Поздравляем!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:36:42.556077Z"
+  },
+  "book.otbm.for_example_only_with_its": {
+    "src_hash": "ef8d55e5a1b20f5ec1cd0a1b2c2a9069",
+    "text": "Например, только с его помощью мы смогли найти врата телепортации волшебной паутины.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:36:42.557472Z"
+  },
+  "book.otbm.for_now_the_merchants_seem": {
+    "src_hash": "bcaeb2d7558f30cf654f4448344c2685",
+    "text": "На данный момент торговцы, похоже, довольны своим положением и местом, которое Веноре занимает на континенте и в королевстве. Есть голоса, которые Веноре могут однажды отделиться или использовать свое влияние, чтобы вырвать еще больше прав и привилегий у королевства, которое становится все более и более зависимым от его экономической мощи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:36:42.561813Z"
+  },
+  "book.otbm.for_our_deeds_for_king": {
+    "src_hash": "9ba2931a0fb9f8dbed4c1eed89dee861",
+    "text": "За наши дела для короля и страны король пожаловал нашему ордену восточные земли. Город под нашим протекторатом растет и скоро станет таким же большим и красивым, как наша столица. Но предстоит еще много работы и убить бесчисленное количество монстров, чтобы принести мир на зеленые планы. Несколько дней назад Фалнус исчез, и мы должны признать, что он мертв, вероятно, убит братством. Конечно, даже маг его силы мог бы быть убит большим количеством существ, столь же опасных, как гигантские пауки, которые до сих пор бродят по этим равнинам. Это тяжелый удар по нашим исследованиям в области лечения и отдыха, а также потеря великого человека.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:36:46.160075Z"
+  },
+  "book.otbm.for_sorcerers_and_other_magicians": {
+    "src_hash": "d79e8afd206e2bbb423c1e6535285fae",
+    "text": "для колдунов и других магов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:36:46.160451Z"
+  },
+  "book.otbm.forbidden_secrets_of_magic": {
+    "src_hash": "cecd94c5295955c9533c42678a548e8e",
+    "text": "Запретные тайны магии!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:36:46.160784Z"
+  },
+  "cpp.protocol.prey_bonus_improved_defense": {
+    "src_hash": "a2b82a196de8d5e9088418de5dfd5490",
+    "text": "Улучшенная защита",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:37:59.962314Z"
+  },
+  "cpp.protocol.prey_bonus_improved_experience": {
+    "src_hash": "b8c7677ea9475abf4c42c9d720ebca13",
+    "text": "Улучшенный опыт",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:37:59.962616Z"
+  },
+  "cpp.protocol.prey_bonus_improved_loot": {
+    "src_hash": "519909d173e6998ea82d9f67382fc8e7",
+    "text": "Улучшенная добыча",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:37:59.962870Z"
+  },
+  "cpp.protocol.resting_active_bonuses": {
+    "src_hash": "97ae17978ead02542736505c2e581610",
+    "text": "Бонусы зоны активного отдыха:\n{0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:38:03.596695Z"
+  },
+  "cpp.protocol.resting_hp_regen": {
+    "src_hash": "2576744e8dd2fd30d1883cb5b679cb64",
+    "text": "Регенерация очков жизни",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:38:03.597009Z"
+  },
+  "cpp.protocol.resting_hp_regen_double": {
+    "src_hash": "4a7e354670e24c02df35e9936e500c67",
+    "text": "Двойная регенерация очков жизни",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:38:03.597384Z"
+  },
+  "otclient_modules.communicationwindow_otui.tr_14": {
+    "src_hash": "fba8c6157726c61ff0f0ab7528f6833f",
+    "text": "Игноред Игроки",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:41:55.707791Z"
+  },
+  "otclient_modules.communicationwindow_otui.tr_7": {
+    "src_hash": "2545552975acef62bc9180d68b805a19",
+    "text": "Алловед Игроки",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T16:41:55.716424Z"
+  },
+  "arena.npc.walkaway_msg": {
+    "src_hash": "fc985372272ea79ce29c2290c506a5bc",
+    "text": "Уходишь так скоро? Арена ждет!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T16:43:51.438825Z"
+  },
+  "book.otbm.forests_and_in_wild_herds": {
+    "src_hash": "11f1c9e4d58ec82751edc6cb5731dbfa",
+    "text": "лесах и в диких стадах волки научились побеждать своих двуногих противников.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:05:27.255222Z"
+  },
+  "book.otbm.former_master_before_he_hid": {
+    "src_hash": "8d1703fa3a0c7c8c3b60288f94d94e69",
+    "text": "бывший хозяин, прежде чем он спрятал их от меня.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:05:27.255648Z"
+  },
+  "book.otbm.fort_o_th_nare_igh": {
+    "src_hash": "b04d3d97c5b8c0b8735aa62071983f65",
+    "text": "Форт... о. й. Н..... ..высокие..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:05:27.256032Z"
+  },
+  "book.otbm.from_or_whether_they_always": {
+    "src_hash": "645964669e4a6474a86185f933e60ee6",
+    "text": "от или они всегда существовали и только что проснулись от глубокого сна бесконечности.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:05:33.096120Z"
+  },
+  "book.otbm.from_the_nebulas_further_natures": {
+    "src_hash": "3c541ce6080c3fb3aeaace3a2aab7661",
+    "text": "от туманностей дальше природы и чудес. Но мир еще далек от своего былого великолепия и размеров, и мы живем во времена",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:05:33.097617Z"
+  },
+  "book.otbm.from_this_day_on_the": {
+    "src_hash": "e790613f7b25eca9a9b74f778b19f568",
+    "text": "С этого дня новорожденные герои просыпались на священном и защищенном острове Рукгаард, и только более сильные и лучше подготовленные души могли отправиться на континент.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:05:33.099297Z"
+  },
+  "book.otbm.furiously_to_the_battle_and": {
+    "src_hash": "a0da626f4bebf6095618a5ce97b70fe7",
+    "text": "яростно вступил в бой, а вспомогательные войска из порабощенных троллей не могли противостоять пламенному гневу драконов. Громадный",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:05:33.109463Z"
+  },
+  "book.otbm.further_to_the_north_at": {
+    "src_hash": "04ca03712d2c2107c660c4052014fd10",
+    "text": "Дальше на север, на северном берегу, вы найдете эльфийский город Абьдендриел. Там живут эльфы, хозяева природы и мастера-охотники.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:05:33.112285Z"
+  },
+  "book.otbm.furthermore_we_found_out_that": {
+    "src_hash": "69c2abe38b64ea9ae022d100e0cb7307",
+    "text": "Кроме того, мы узнали, что многие Повелители Драконов носят с собой эту странную книгу (с большой буквой Т). Мы пока не знаем почему, но работаем над этим.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:05:37.335288Z"
+  },
+  "book.otbm.gabel_had_decided_to_hide": {
+    "src_hash": "908efe20b79eff18a34e89d175742315",
+    "text": "Габель решил спрятать лампу Фахрадина и ее могущественного пленника в заброшенном месте далеко на севере, потому что думал, что там будет безопаснее, чем в Ашта'дарамаи, его собственной крепости. Мало ли он знал, что это были те самые земли, где много веков спустя раса гоблиноидов-варваров, называемых орками, решила построить могучую крепость. В один роковой день лампу нашли и принесли королю орков. Королевским шаманам не потребовалось много времени, чтобы понять, что в лампе пойман могучий дух, и вскоре безрассудный король выпустил на волю могучего джинна, дремавшего столько столетий. О том, что произошло дальше, мало что известно, но хотя орки и по сей день заявляют, что их король все еще жив, нет заслуживающих доверия свидетелей, подтверждающих, что они с тех пор видели короля орков. Однако Мэлор снова свободно бродит по миру, и многие учёные сходятся во мнении, что он испробует все возможные уловки, чтобы разжечь огонь войны джиннов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:05:37.338381Z"
+  },
+  "book.otbm.gabel_told_daraman_of_the": {
+    "src_hash": "a8fc2710b966265d422a8f63ae8eeda6",
+    "text": "Габель рассказал Дараману о видениях и снах, которые преследовали его, и попросил у Дарамана совета. Поэтому Дараман попросил его открыть ему свою душу. И Габель открыл ему свое сердце и душу. Когда Дараман заглянул глубоко в душу Габеля, он понял боль и замешательство, скрывавшиеся глубоко внутри нее, и заплакал горькими слезами жалости к Габелю и ко всей его расе, ибо он увидел, что джинны были несчастной расой, изгнанной своим создателем. Его слезы были настолько полны божественного сострадания, что превратились в безупречные драгоценные камни из чистого голубого кристалла, как только они покинули его глаза. Говорят, что источники чистой пресной воды били из-под земли везде, где бы один из них ни падал на землю.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:05:37.340708Z"
+  },
+  "cpp.protocol.resting_mana_regen": {
+    "src_hash": "4c0f163ea1f867b77dc335148fae81d8",
+    "text": "Регенерация очков маны",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:06:39.314343Z"
+  },
+  "cpp.protocol.resting_mana_regen_double": {
+    "src_hash": "f4e23225a1be33a6438c511b4e2872ce",
+    "text": "Двойная регенерация очков маны",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:06:39.314702Z"
+  },
+  "cpp.protocol.resting_no_bonus": {
+    "src_hash": "1e666bfc5696146ad2529808f6094413",
+    "text": "Зона отдыха (без активного бонуса)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:06:39.315088Z"
+  },
+  "cpp.protocol.resting_soul_regen": {
+    "src_hash": "85f5b5de237017ae21137db198e2d050",
+    "text": "Регенерация очков души",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:06:42.741753Z"
+  },
+  "cpp.protocol.resting_stamina_regen": {
+    "src_hash": "16698fbf38ddda80e963ad266f089378",
+    "text": "Регенерация очков выносливости",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:06:42.742079Z"
+  },
+  "cpp.protocol.server_closed": {
+    "src_hash": "8a740b89ac7c768e69b4ef52e36bea28",
+    "text": "Сервер на данный момент закрыт.\nПожалуйста, повторите попытку позже.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:06:42.742526Z"
+  },
+  "otclient_modules.communicationwindow_otui.tr_9": {
+    "src_hash": "b21023049ad01e69113f57b705a7874e",
+    "text": "Игнорировать Еллинг",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:10:26.992505Z"
+  },
+  "otclient_modules.console.tr_10": {
+    "src_hash": "72bef0fb7ec79c29a2320d1f5606c4df",
+    "text": "Локал Чат",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:10:26.994766Z"
+  },
+  "arena.npc.modes.header": {
+    "src_hash": "718c3b18efc7c3088a3fcdc447642d95",
+    "text": "Доступные режимы арены:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:12:14.337489Z"
+  },
+  "talkaction.god.attributes.msg_cannot_add_creature": {
+    "src_hash": "07f6503a1be02f9ea242e74d2feb088e",
+    "text": "Вы не можете добавить этот атрибут этому существу.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:15:15.245888Z"
+  },
+  "talkaction.god.attributes.msg_cannot_add_item": {
+    "src_hash": "075825cff31921f7b8ece3859fe2ef2a",
+    "text": "Вы не можете добавить этот атрибут к этому элементу.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:15:17.378696Z"
+  },
+  "achievement.525.name": {
+    "src_hash": "fce05a0ae8fda44cd4bc5f5f71d72ad2",
+    "text": "Гражданин Иссави",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:16:49.864574Z"
+  },
+  "achievement.538.name": {
+    "src_hash": "23e0fa3ca097fba5a239b8f2e30a7912",
+    "text": "Королевская власть опасности",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:16:49.864892Z"
+  },
+  "achievement.538.description": {
+    "src_hash": "f47f71991b74d545d5c2981b4052afdc",
+    "text": "Для некоторых это может быть недостаточно опасно.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:16:49.865356Z"
+  },
+  "achievement.539.name": {
+    "src_hash": "3486243a55228359339d90afda5c3698",
+    "text": "Измерение мира",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:16:54.620643Z"
+  },
+  "achievement.539.description": {
+    "src_hash": "556313d43f0c28e30ae25da72c9b5708",
+    "text": "Шаг за шагом вы раскрывали множество тайн, сокрытых в мире, тем самым получая право носить костюм и шляпу Первооткрывателя. Сделано по индивидуальному заказу для отважного путешественника по диким местам Тибии.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:16:54.621821Z"
+  },
+  "achievement.540.name": {
+    "src_hash": "8e30e07971224a01e2b47375d598ad95",
+    "text": "Рип-Рип Ура!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:16:54.622133Z"
+  },
+  "achievement.540.description": {
+    "src_hash": "9f59129d85e6f41342c057a7a8f4ab7e",
+    "text": "Не увлекайтесь своим успехом. Увлекитесь своим Рипптор.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:16:54.622907Z"
+  },
+  "achievement.541.name": {
+    "src_hash": "428b6a67ef51f8a5214dd12622d87191",
+    "text": "Воин Иков",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:16:54.623165Z"
+  },
+  "achievement.541.description": {
+    "src_hash": "e42991c4102ff959830fec0826bc69f5",
+    "text": "Сочетая неослабевающую храбрость в бою и уважение к традициям и культуре древних Иков, вы заслужили почести настоящего Аукара.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:16:59.836562Z"
+  },
+  "achievement.542.name": {
+    "src_hash": "d3de7fdc507ee3ab4a0a0c07ad4c77ef",
+    "text": "Мутагений",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:16:59.836794Z"
+  },
+  "achievement.542.description": {
+    "src_hash": "61df72a8fae5be8fd16801803b62b8d5",
+    "text": "Вы совершили невозможное и создали 16 мутагенов соответствующих цветов.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:16:59.837320Z"
+  },
+  "achievement.543.name": {
+    "src_hash": "e3add2693f74e29e3e7fe5e05ae29c37",
+    "text": "Самая странная вещь",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:16:59.837597Z"
+  },
+  "achievement.543.description": {
+    "src_hash": "9229790ffdd4530ad3246f70ccc3eb1b",
+    "text": "Только наездник может полюбить эту мерзость скакуна.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:16:59.838012Z"
+  },
+  "achievement.544.name": {
+    "src_hash": "dc082071f3f9c31c4fdf23c181350c51",
+    "text": "Полностью разложившийся",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:17:01.958324Z"
+  },
+  "book.otbm.gabel_was_curious_about_the": {
+    "src_hash": "964af4816bab841948533a616012df74",
+    "text": "Гейблу было любопытно узнать об этом странном человеке, который, похоже, не знал ни боли, ни страха. Он подошел к нему и спросил, не чувствует ли он никакой боли. Дараман ответил, что боль тела ничто по сравнению с болью души.  Поэтому Габель спросил Дарамана, не боится ли он. И пророк произнес знаменитые слова: «Страх смерти — всего лишь пустяк по сравнению со страхом жизни». Итак, Гэйбл, которого все больше и больше интересовал человек, спросил его, не заботится ли он вообще о своей жизни? Дараман просто посмотрел в глаза могучему королю джиннов, и на его губах засияла короткая улыбка. И после долгой паузы он сказал так: «Я старик, и мне мало что терять, милорд. Но ваша раса может многое приобрести, потому что она живет во тьме». Когда он произнес эти слова, многие джинны были возмущены очевидным отсутствием уважения со стороны человека. И если бы Габель не остановил их, пророк был бы убит на месте.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:37:06.897234Z"
+  },
+  "book.otbm.galunas_fletcher_workshop": {
+    "src_hash": "864cf768351b40affcb3887081101a29",
+    "text": "Мастерская Флетчера Галуны",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:37:06.897866Z"
+  },
+  "book.otbm.generation_will_lead_our_order": {
+    "src_hash": "009d1ea9ad2e0d9e9a39fa21b0fe5447",
+    "text": "поколение приведет наш орден к большей славе, чем",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:37:06.898517Z"
+  },
+  "book.otbm.getting_up_was_never_his": {
+    "src_hash": "bc626bfe2776cdcfe49f9095c5d310d6",
+    "text": "Вставать никогда не было его сильной стороной.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:37:13.024051Z"
+  },
+  "book.otbm.ghazuul_grew_up_a_simple": {
+    "src_hash": "5a3999c9dc45996e64bd6036689ee9bc",
+    "text": "Га'Зуул рос простым мальчиком среди одного из северных кочевнических племен. Хрупкий и тощий ребенок, он часто становился объектом насмешек других детей, а также презрения своего деспотичного отца. Обиженный и разгневанный постоянными унижениями, Га'Зуул стал жестоким и неумолимым человеком. Он записывал все унижения, которые ему пришлось пережить, и был полон решимости отомстить за каждое из них. Однажды, когда на его лагерь напала группа нежити, он решил, что пришло время отомстить. Воспользовавшись общим ажиотажем, Га'Зуул подкрался к своему злейшему мучителю и быстро перерезал ему горло. Однако он допустил ошибку, когда думал, что его преступление останется незамеченным. Один из некромантов, входивший в состав рейдовой группы, почувствовал зло этого поступка, и, поскольку он был впечатлен очевидной безжалостностью мальчика, он приказал своим войскам нежити похитить его. Итак, Га'Зуул был доставлен в Дрефиа.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:37:13.029131Z"
+  },
+  "book.otbm.given_the_need_for_information": {
+    "src_hash": "928fedbf51b680036e10bca26f25ec77",
+    "text": "Учитывая потребность в информации о том, как эффективно пытать существ, если в наши руки попадет более ценный экземпляр, было опробовано несколько новых методов. Большинство из них оказались безуспешными. В конце концов оба пробанда умерли в намеченные моменты эксперимента.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:37:13.030774Z"
+  },
+  "book.otbm.glorious_knights_guild_of_carlin": {
+    "src_hash": "57cb889151fd26b86af068f417345825",
+    "text": "Славные рыцари Гуилд из Карлин",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:37:13.031922Z"
+  },
+  "book.otbm.glows_shades_and_hues_light": {
+    "src_hash": "942448701dd92bba63727e61a5ad32cc",
+    "text": "Свечение, оттенки и оттенки - свет и его происхождение: естественное и искусственное.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:37:13.032682Z"
+  },
+  "book.otbm.gnomish_authorized_persons_only": {
+    "src_hash": "1b87394d916e2c3c0e4392f01d36cbbc",
+    "text": "Только уполномоченным лицам гномов!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:37:16.926410Z"
+  },
+  "book.otbm.go_ahead_and_follow_the": {
+    "src_hash": "0e54db73a0a1e09c9d7ba04d11f0003d",
+    "text": "Идите вперед и следуйте по пути света",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:37:16.927460Z"
+  },
+  "book.otbm.go_to_the_left_brother": {
+    "src_hash": "fe16d95a68e94ee09d22d07824abce84",
+    "text": "Идите К ЛЕВОМУ БРАТУ И ПРИСОЕДИНЯЙТЕСЬ К НАМ В ТЕМНОТЕ.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:37:16.928550Z"
+  },
+  "cpp.protocol.session_expired": {
+    "src_hash": "c52a96d67f00273196a818c747912148",
+    "text": "Срок вашей сессии истек. Пожалуйста, войдите снова.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:39:17.460925Z"
+  },
+  "cpp.protocol.support_outfit_community_manager": {
+    "src_hash": "34903a37debb5bba48d5769720230949",
+    "text": "Менеджер сообщества",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:39:17.461526Z"
+  },
+  "cpp.protocol.support_outfit_customer_support": {
+    "src_hash": "45db51f999b9e9fc7263a7e0ebc2d7f0",
+    "text": "Служба поддержки клиентов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:39:17.462843Z"
+  },
+  "cpp.protocol.temple_position_wrong": {
+    "src_hash": "737f34e09dd097314633dbd006385552",
+    "text": "Положение храма неправильное. Пожалуйста, свяжитесь с администратором.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:39:21.309133Z"
+  },
+  "cpp.protocol.waiting_list": {
+    "src_hash": "561d3d4a258f3c5faa85d1a11b8cb556",
+    "text": "Слишком много игроков онлайн.\nВы находитесь на позиции {0} в списке ожидания.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:39:21.310109Z"
+  },
+  "cpp.protocol.wrong_email_password": {
+    "src_hash": "32db5614cff075a776beb950f696d97f",
+    "text": "Ваш адрес электронной почты или пароль не верны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:39:21.310740Z"
+  },
+  "otclient_modules.console.tr_14": {
+    "src_hash": "72bef0fb7ec79c29a2320d1f5606c4df",
+    "text": "Локал Чат",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:45:13.185511Z"
+  },
+  "otclient_modules.console.tr_19": {
+    "src_hash": "f1019fecd69b0e6b6bd12db7f58bbb90",
+    "text": "Копй сообщение",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T17:45:13.188532Z"
+  },
+  "talkaction.god.attributes.msg_cannot_add_player": {
+    "src_hash": "5b727dde7a3d2537f6e70458eea350ea",
+    "text": "Вы не можете добавить этот атрибут этому игроку.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:51:22.073686Z"
+  },
+  "talkaction.god.attributes.msg_item_not_found": {
+    "src_hash": "eb54be9c4f538c494adafef0dc984ad4",
+    "text": "Товар не найден.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:51:24.244573Z"
+  },
+  "lib.player.loyalty_title_9": {
+    "src_hash": "5cfd7d039312bf87947fc6d23328ba6e",
+    "text": "Мудрец Тибиа",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:52:23.611424Z"
+  },
+  "npclib.modules.spell_already_known": {
+    "src_hash": "ece2642e6cbfd586858d7e741a950a86",
+    "text": "Вы уже знаете это заклинание.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:54:27.025368Z"
+  },
+  "creaturescripts.free_quest.msg_1": {
+    "src_hash": "c89e8e5830ed7bbdd0fff0e334e22dc9",
+    "text": "Игрок Фреекуест в процессе..",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:55:00.964136Z"
+  },
+  "creaturescripts.free_quest.msg_2": {
+    "src_hash": "9f78cd07a4952ce2aec875b30e947e8d",
+    "text": "Игрок Фреекуест завершен.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:55:00.965293Z"
+  },
+  "creaturescripts.boss_defeated": {
+    "src_hash": "5800ef916c711735130b2de1f701dc04",
+    "text": "{name} побеждён. У вас есть {seconds} секунд, чтобы выйти из комнаты.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:55:00.967021Z"
+  },
+  "creaturescripts.empty_parcels_removed": {
+    "src_hash": "a063b69958e3dab361b556d34f36f2d7",
+    "text": "{count} пустые посылки удалены из почтового ящика вашего магазина!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T17:55:00.968489Z"
+  },
+  "scripts.free_quest.msg_1": {
+    "src_hash": "9f78cd07a4952ce2aec875b30e947e8d",
+    "text": "Игрок Фреекуест завершен.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:14:38.306119Z"
+  },
+  "scripts.free_quest.msg_2": {
+    "src_hash": "c89e8e5830ed7bbdd0fff0e334e22dc9",
+    "text": "Игрок Фреекуест в процессе..",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:14:38.306769Z"
+  },
+  "book.otbm.golden_lines_are_embedded_in": {
+    "src_hash": "a5f5086cafbc3cd77ac52f97ac4ad977",
+    "text": "Золотые линии вплетены в амулет и изображают загадочные символы. Он был награжден Тибиахоф.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:21:26.482373Z"
+  },
+  "book.otbm.got_it_the_sorcerer_screamed": {
+    "src_hash": "f85578eb552ea133d42d71cdcc5c5fa6",
+    "text": "\"Понятно!\" - закричал колдун. \"Позволять",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:21:26.482994Z"
+  },
+  "book.otbm.got_your_rope_and_shovel": {
+    "src_hash": "de2c997b215152b9d8008c577224adc6",
+    "text": "У тебя есть верёвка и лопата? Что ж, удачной охоты!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:21:26.483653Z"
+  },
+  "book.otbm.granted_by_radiotibiacombr_to_hear": {
+    "src_hash": "3869500f2a96ceaea615628628965f03",
+    "text": "Предоставлено Радиотибиа.com.br для прослушивания звуков Тибиа.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:21:31.239108Z"
+  },
+  "book.otbm.graveyard_of_the_red_legion": {
+    "src_hash": "19d1eba383409f5e754b27dc80862a6b",
+    "text": "Кладбище Красного Легиона и всех рабочих, павших в борьбе с ордами орков",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:21:31.239881Z"
+  },
+  "book.otbm.great_mountains_of_folda_island": {
+    "src_hash": "b9bd60f04f3c810e66db1f9f46b0e551",
+    "text": "Великие горы острова Фолда",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:21:31.240367Z"
+  },
+  "book.otbm.greenhorn_rank_rewards_choose_wisely": {
+    "src_hash": "d3baae6a0a664b7db4c1200f3229ea46",
+    "text": "Награды за ранг Греенхорн — выбирайте с умом!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:21:31.241367Z"
+  },
+  "book.otbm.greetings_brothers_and_sisters": {
+    "src_hash": "d6d77a799147bd1426fee6623acc2a9b",
+    "text": "Приветствую братья и сестры!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:21:31.241862Z"
+  },
+  "book.otbm.greetings_by_darruk_the_redscarred": {
+    "src_hash": "6df461855ac8a5cda2e0f9d08efbebe5",
+    "text": "- Приветствую Даррука Красношрамированного.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:21:34.786172Z"
+  },
+  "book.otbm.greetings_fellow_brother": {
+    "src_hash": "6e8da879d4d80cba959f067deb025a7e",
+    "text": "Приветствую коллега брат!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:21:34.786741Z"
+  },
+  "book.otbm.ground_floor_flints_finest_melee": {
+    "src_hash": "b26943bb765bc9467b292f7917097e75",
+    "text": "Первый этаж: Флинтьс Финест — холодное оружие и доспехи.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:21:34.787906Z"
+  },
+  "cpp.protocol.wrong_username_password": {
+    "src_hash": "397e8e13f17fa4fac7a20acfe3b595a6",
+    "text": "Ваше имя пользователя или пароль неверны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:24:04.730374Z"
+  },
+  "cpp.returnvalue.action_not_permitted_in_a_no_pvp_zone": {
+    "src_hash": "5a71883100183c6d485d26beb222ecba",
+    "text": "Это действие не разрешено в зоне, отличной от PvP.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:24:04.731956Z"
+  },
+  "cpp.returnvalue.action_not_permitted_in_protection_zone": {
+    "src_hash": "aa06e3388d8cbfb7218c0a56dfc38b3d",
+    "text": "Это действие не разрешено в защитной зоне.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:24:04.732610Z"
+  },
+  "cpp.returnvalue.another_raid_is_already_executing": {
+    "src_hash": "439069b07c778746dcf76c7e070ee7ee",
+    "text": "Уже проводится очередной рейд.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:24:08.068411Z"
+  },
+  "cpp.returnvalue.both_hands_need_to_be_free": {
+    "src_hash": "bdb2e2734554fdd85370982c0794e423",
+    "text": "Обе руки должны быть свободны.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:24:08.068938Z"
+  },
+  "cpp.returnvalue.can_only_use_this_rune_on_creatures": {
+    "src_hash": "8d50aac7531c4cb3295533915ad012d8",
+    "text": "Вы можете использовать эту руну только на существах.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:24:08.069682Z"
+  },
+  "otclient_modules.console.tr_2": {
+    "src_hash": "bca435b74fbe4d4f1a27e6c9501345e7",
+    "text": "Сохранить Мессагес",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:31:51.184992Z"
+  },
+  "otclient_modules.console.tr_21": {
+    "src_hash": "0d7af2d0a68bdc755efbe4fff0f8b639",
+    "text": "Копй имя",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T18:31:51.186344Z"
+  },
+  "talkaction.god.attributes.msg_unknown": {
+    "src_hash": "1808250bba66c982e229c5157e063b77",
+    "text": "Неизвестный атрибут.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:36:51.540255Z"
+  },
+  "talkaction.god.bosstiary.msg_target_not_found": {
+    "src_hash": "9cf369831e139447ebde4c7fa6d9bb06",
+    "text": "Целевой игрок не найден.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:36:53.777963Z"
+  },
+  "book.otbm.ground_floor_rathleton_post_office": {
+    "src_hash": "3c2b8fa606007fe699ace92384ec9c44",
+    "text": "Первый этаж: почтовое отделение Ратхлетон.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:10:28.927928Z"
+  },
+  "book.otbm.guided_by_omens_an_expedition": {
+    "src_hash": "23fdebe39ed73262e094b580b1501cb2",
+    "text": "Руководствуясь предзнаменованиями, экспедиция храбрых воинов из тэйского ордена рыцарей лапши путешествовала по опасным морям, к отдаленному острову Рукгаард, и обнаружила новый вихрь душ.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:10:28.935485Z"
+  },
+  "book.otbm.guild_of_the_dexterous_paladins": {
+    "src_hash": "4a67ff694a9c4df82f2f5e93002ec48c",
+    "text": "Гуилд ловких паладинов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:10:28.942571Z"
+  },
+  "book.otbm.guild_of_the_dexterous_paladins_4a67ff69": {
+    "src_hash": "4a67ff694a9c4df82f2f5e93002ec48c",
+    "text": "Гуилд ловких паладинов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:10:35.165939Z"
+  },
+  "book.otbm.guildhall_of_the_red_rose": {
+    "src_hash": "e7dcbf349f8ad8514ce84703962c0f4f",
+    "text": "Ратуша Красной Розы",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:10:35.167647Z"
+  },
+  "book.otbm.haha_we_caught_one_of": {
+    "src_hash": "6c4ac0fb6b3aae4b86c36af7e1c9c008",
+    "text": "Хаха, мы поймали одного из наших врагов",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:10:35.168883Z"
+  },
+  "book.otbm.hail_to_marianos_pall_the": {
+    "src_hash": "ecd9050cb2da6d99a8e7008d808363ea",
+    "text": "Слава Марианосу Паллу, нынешнему герою сложности Скраппер!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:10:35.171490Z"
+  },
+  "book.otbm.has_stoped_i_know_they": {
+    "src_hash": "35595cec5063ee6256e7f4903c51edac",
+    "text": "остановился. Я ЗНАЮ, что они сейчас преследуют меня. Я вижу мерцание теней, когда они приближаются. ОНИ ПРИХОДЯТ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:10:35.179475Z"
+  },
+  "book.otbm.have_faith_wanderer_for_you": {
+    "src_hash": "9124976a59d0de8096c4a6e5f2730cc4",
+    "text": "Имей веру, странник, ибо ты не сражаешься в одиночку.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:10:37.769628Z"
+  },
+  "book.otbm.have_to_spend_to_much": {
+    "src_hash": "bff4a2aaa82a96ee6ba67917b9820f17",
+    "text": "придется потратить слишком много времени на борьбу с",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:10:37.772256Z"
+  },
+  "cpp.returnvalue.cannot_be_dressed": {
+    "src_hash": "6d3eb61e6970d726fc121e18d5eec0e8",
+    "text": "Вы не можете одеть туда этот предмет.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:16:03.972407Z"
+  },
+  "cpp.returnvalue.cannot_conjure_item_here": {
+    "src_hash": "93a66f9ae4b32e5a670df705d12e0096",
+    "text": "Здесь нельзя создавать предметы.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:16:03.974063Z"
+  },
+  "cpp.returnvalue.cannot_pickup": {
+    "src_hash": "a71a3a9366ef0ff0a220265670dc7c98",
+    "text": "Вы не можете взять этот объект.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:16:03.975735Z"
+  },
+  "cpp.returnvalue.cannot_throw": {
+    "src_hash": "5acb3fd705c4091c865feab024b26e7e",
+    "text": "Туда нельзя бросать.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:16:07.693801Z"
+  },
+  "cpp.returnvalue.contact_administrator": {
+    "src_hash": "11c5b6a2dc274ae6748fe45cd1ff85bf",
+    "text": "Произошла ошибка, обратитесь к администратору.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T19:16:07.695232Z"
+  },
+  "otclient_modules.console.tr_28": {
+    "src_hash": "bca435b74fbe4d4f1a27e6c9501345e7",
+    "text": "Сохранить Мессагес",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T20:45:21.098243Z"
+  },
+  "event.player.msg2": {
+    "src_hash": "e512cc263ff39759bb338f7045960d4c",
+    "text": "ежедневная награда-повышение опыта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:30.669046Z"
+  },
+  "event.player.msg3": {
+    "src_hash": "e512cc263ff39759bb338f7045960d4c",
+    "text": "ежедневная награда-повышение опыта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:30.669616Z"
+  },
+  "event.player.msg4": {
+    "src_hash": "e512cc263ff39759bb338f7045960d4c",
+    "text": "ежедневная награда-повышение опыта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:30.670108Z"
+  },
+  "event.player.msg5": {
+    "src_hash": "e512cc263ff39759bb338f7045960d4c",
+    "text": "ежедневная награда-повышение опыта",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:30.670632Z"
+  },
+  "event.player.msg_1": {
+    "src_hash": "68362d48bbe58ffe6e80d83dddad1f45",
+    "text": "Вы больше не восполняете выносливость, так как вышли из зоны регенерации.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:30.671350Z"
+  },
+  "event.player.msg_2": {
+    "src_hash": "b4834225a1f266021eb8c3078a3a353f",
+    "text": "При обработке вашего отчета произошла ошибка, обратитесь к мастеру игры.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:35.095588Z"
+  },
+  "event.player.msg_3": {
+    "src_hash": "24dc08a041db9d4297f1d6df6a7573cf",
+    "text": "Благодарим вас за сообщение о {}. Ваш отчет \\z\n\tбудет обработано командой {} как можно скорее.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:35.096823Z"
+  },
+  "event.player.msg_4": {
+    "src_hash": "b4834225a1f266021eb8c3078a3a353f",
+    "text": "При обработке вашего отчета произошла ошибка, обратитесь к мастеру игры.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:35.097724Z"
+  },
+  "event.player.msg_5": {
+    "src_hash": "ad93762e1a1a1337775cbbf49b508440",
+    "text": "Ваш отчет находится в обработке.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:35.098254Z"
+  },
+  "event.player.say_1": {
+    "src_hash": "a65ae4b9d622f5aa0ad9a90c999f9440",
+    "text": "Вы покормили черепаху, теперь можете проходить.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:35.098870Z"
+  },
+  "event.player.msg_report_sent": {
+    "src_hash": "c1d13c15a6ed00ee9e451cc57d9a46a2",
+    "text": "Ваш отчет отправлен на {server}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:38.062803Z"
+  },
+  "event.player.stamina_pz_recharge": {
+    "src_hash": "72e7da63f6db4ec35e7ed0a5d612157c",
+    "text": "В охранной зоне. Перезарядка выносливости {0} каждые {1} минут.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T20:55:38.063696Z"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-21T11:15:30.164642Z",
+  "timestamp": "2026-02-21T21:17:23.455225Z",
   "priority_langs": [
     "es",
     "pl",
@@ -65,60 +65,60 @@
     "items.json",
     "monsters.json"
   ],
-  "entries_total": 701,
+  "entries_total": 755,
   "entries_by_lang": {
-    "es": 269,
-    "pl": 149,
-    "cs": 641,
-    "de": 659,
-    "fr": 578,
-    "hu": 663,
-    "it": 420,
-    "nl": 691,
-    "pt": 620,
-    "ro": 421,
-    "ru": 141,
-    "sk": 663,
-    "tr": 542,
-    "ar": 904,
-    "az": 662,
-    "bg": 692,
-    "bn": 904,
-    "bs": 663,
-    "da": 663,
-    "el": 647,
-    "et": 663,
-    "fa": 904,
-    "fi": 663,
-    "he": 904,
-    "hi": 904,
-    "hr": 663,
-    "hy": 905,
-    "id": 904,
-    "ja": 904,
-    "ka": 905,
-    "kk": 663,
-    "ko": 905,
-    "lt": 641,
-    "lv": 663,
-    "mk": 662,
-    "ml": 905,
-    "ms": 904,
-    "no": 663,
-    "sl": 663,
-    "sq": 663,
-    "sr": 96,
-    "sv": 399,
-    "sw": 905,
-    "ta": 905,
-    "te": 905,
-    "th": 905,
-    "tl": 905,
-    "uk": 663,
-    "uz": 663,
-    "vi": 905,
-    "zh": 905,
-    "zh_TW": 2456
+    "es": 330,
+    "pl": 164,
+    "cs": 791,
+    "de": 809,
+    "fr": 728,
+    "hu": 813,
+    "it": 484,
+    "nl": 841,
+    "pt": 770,
+    "ro": 516,
+    "ru": 237,
+    "sk": 813,
+    "tr": 692,
+    "ar": 1054,
+    "az": 812,
+    "bg": 842,
+    "bn": 1054,
+    "bs": 813,
+    "da": 813,
+    "el": 797,
+    "et": 813,
+    "fa": 1054,
+    "fi": 813,
+    "he": 1054,
+    "hi": 1054,
+    "hr": 813,
+    "hy": 1055,
+    "id": 1054,
+    "ja": 1054,
+    "ka": 1055,
+    "kk": 813,
+    "ko": 1055,
+    "lt": 791,
+    "lv": 813,
+    "mk": 812,
+    "ml": 1055,
+    "ms": 1054,
+    "no": 813,
+    "sl": 813,
+    "sq": 813,
+    "sr": 246,
+    "sv": 549,
+    "sw": 1055,
+    "ta": 1055,
+    "te": 1055,
+    "th": 1055,
+    "tl": 1055,
+    "uk": 813,
+    "uz": 813,
+    "vi": 1055,
+    "zh": 1055,
+    "zh_TW": 2606
   },
   "top_entries": [
     {
@@ -150,6 +150,12 @@
       "json_file": "monsters.json",
       "identical_to_en": 15,
       "domain_priority": 8
+    },
+    {
+      "lang": "es",
+      "json_file": "arena.json",
+      "identical_to_en": 61,
+      "domain_priority": 9
     },
     {
       "lang": "es",
@@ -239,6 +245,12 @@
       "lang": "pl",
       "json_file": "otclient_modules.json",
       "identical_to_en": 19,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pl",
+      "json_file": "arena.json",
+      "identical_to_en": 15,
       "domain_priority": 9
     },
     {
@@ -333,6 +345,12 @@
     },
     {
       "lang": "cs",
+      "json_file": "arena.json",
+      "identical_to_en": 150,
+      "domain_priority": 9
+    },
+    {
+      "lang": "cs",
       "json_file": "books.json",
       "identical_to_en": 7,
       "domain_priority": 9
@@ -395,6 +413,12 @@
       "lang": "de",
       "json_file": "cpp.json",
       "identical_to_en": 158,
+      "domain_priority": 9
+    },
+    {
+      "lang": "de",
+      "json_file": "arena.json",
+      "identical_to_en": 150,
       "domain_priority": 9
     },
     {
@@ -480,6 +504,12 @@
       "json_file": "monsters.json",
       "identical_to_en": 59,
       "domain_priority": 8
+    },
+    {
+      "lang": "fr",
+      "json_file": "arena.json",
+      "identical_to_en": 150,
+      "domain_priority": 9
     },
     {
       "lang": "fr",
@@ -585,6 +615,12 @@
     },
     {
       "lang": "hu",
+      "json_file": "arena.json",
+      "identical_to_en": 150,
+      "domain_priority": 9
+    },
+    {
+      "lang": "hu",
       "json_file": "books.json",
       "identical_to_en": 7,
       "domain_priority": 9
@@ -616,7 +652,7 @@
     {
       "lang": "it",
       "json_file": "server.json",
-      "identical_to_en": 56,
+      "identical_to_en": 47,
       "domain_priority": 1
     },
     {
@@ -646,7 +682,13 @@
     {
       "lang": "it",
       "json_file": "scripts.json",
-      "identical_to_en": 109,
+      "identical_to_en": 111,
+      "domain_priority": 9
+    },
+    {
+      "lang": "it",
+      "json_file": "arena.json",
+      "identical_to_en": 71,
       "domain_priority": 9
     },
     {
@@ -741,6 +783,12 @@
     },
     {
       "lang": "nl",
+      "json_file": "arena.json",
+      "identical_to_en": 150,
+      "domain_priority": 9
+    },
+    {
+      "lang": "nl",
       "json_file": "questlog.json",
       "identical_to_en": 29,
       "domain_priority": 9
@@ -819,6 +867,12 @@
     },
     {
       "lang": "pt",
+      "json_file": "arena.json",
+      "identical_to_en": 150,
+      "domain_priority": 9
+    },
+    {
+      "lang": "pt",
       "json_file": "scripts.json",
       "identical_to_en": 146,
       "domain_priority": 9
@@ -887,6 +941,12 @@
       "lang": "ro",
       "json_file": "scripts.json",
       "identical_to_en": 131,
+      "domain_priority": 9
+    },
+    {
+      "lang": "ro",
+      "json_file": "arena.json",
+      "identical_to_en": 95,
       "domain_priority": 9
     },
     {
@@ -963,6 +1023,12 @@
     },
     {
       "lang": "ru",
+      "json_file": "arena.json",
+      "identical_to_en": 91,
+      "domain_priority": 9
+    },
+    {
+      "lang": "ru",
       "json_file": "questlog.json",
       "identical_to_en": 28,
       "domain_priority": 9
@@ -975,14 +1041,26 @@
     },
     {
       "lang": "ru",
+      "json_file": "html.json",
+      "identical_to_en": 6,
+      "domain_priority": 9
+    },
+    {
+      "lang": "ru",
       "json_file": "cpp.json",
       "identical_to_en": 5,
       "domain_priority": 9
     },
     {
       "lang": "ru",
-      "json_file": "html.json",
-      "identical_to_en": 5,
+      "json_file": "libs.json",
+      "identical_to_en": 2,
+      "domain_priority": 9
+    },
+    {
+      "lang": "ru",
+      "json_file": "npclib.json",
+      "identical_to_en": 2,
       "domain_priority": 9
     },
     {
@@ -1047,6 +1125,12 @@
     },
     {
       "lang": "sk",
+      "json_file": "arena.json",
+      "identical_to_en": 150,
+      "domain_priority": 9
+    },
+    {
+      "lang": "sk",
       "json_file": "books.json",
       "identical_to_en": 7,
       "domain_priority": 9
@@ -1104,6 +1188,12 @@
       "json_file": "monsters.json",
       "identical_to_en": 59,
       "domain_priority": 8
+    },
+    {
+      "lang": "tr",
+      "json_file": "arena.json",
+      "identical_to_en": 150,
+      "domain_priority": 9
     },
     {
       "lang": "tr",
@@ -1185,6 +1275,12 @@
     },
     {
       "lang": "ar",
+      "json_file": "arena.json",
+      "identical_to_en": 150,
+      "domain_priority": 9
+    },
+    {
+      "lang": "ar",
       "json_file": "client.json",
       "identical_to_en": 27,
       "domain_priority": 9
@@ -1224,102 +1320,6 @@
       "json_file": "server.json",
       "identical_to_en": 204,
       "domain_priority": 1
-    },
-    {
-      "lang": "az",
-      "json_file": "talkactions.json",
-      "identical_to_en": 14,
-      "domain_priority": 2
-    },
-    {
-      "lang": "az",
-      "json_file": "quests.json",
-      "identical_to_en": 34,
-      "domain_priority": 3
-    },
-    {
-      "lang": "az",
-      "json_file": "modules.json",
-      "identical_to_en": 4,
-      "domain_priority": 5
-    },
-    {
-      "lang": "az",
-      "json_file": "monsters.json",
-      "identical_to_en": 67,
-      "domain_priority": 8
-    },
-    {
-      "lang": "az",
-      "json_file": "cpp.json",
-      "identical_to_en": 158,
-      "domain_priority": 9
-    },
-    {
-      "lang": "az",
-      "json_file": "scripts.json",
-      "identical_to_en": 153,
-      "domain_priority": 9
-    },
-    {
-      "lang": "az",
-      "json_file": "books.json",
-      "identical_to_en": 7,
-      "domain_priority": 9
-    },
-    {
-      "lang": "az",
-      "json_file": "chatchannels.json",
-      "identical_to_en": 4,
-      "domain_priority": 9
-    },
-    {
-      "lang": "az",
-      "json_file": "npclib.json",
-      "identical_to_en": 2,
-      "domain_priority": 9
-    },
-    {
-      "lang": "az",
-      "json_file": "libs.json",
-      "identical_to_en": 1,
-      "domain_priority": 9
-    },
-    {
-      "lang": "bg",
-      "json_file": "npc.json",
-      "identical_to_en": 15,
-      "domain_priority": 0
-    },
-    {
-      "lang": "bg",
-      "json_file": "server.json",
-      "identical_to_en": 204,
-      "domain_priority": 1
-    },
-    {
-      "lang": "bg",
-      "json_file": "talkactions.json",
-      "identical_to_en": 14,
-      "domain_priority": 2
-    },
-    {
-      "lang": "bg",
-      "json_file": "quests.json",
-      "identical_to_en": 34,
-      "domain_priority": 3
-    },
-    {
-      "lang": "bg",
-      "json_file": "modules.json",
-      "identical_to_en": 4,
-      "domain_priority": 5
-    },
-    {
-      "lang": "bg",
-      "json_file": "monsters.json",
-      "identical_to_en": 67,
-      "domain_priority": 8
     }
   ],
   "selected": {

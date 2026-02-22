@@ -1,10 +1,12 @@
 # ⚔️ Arena PvP — Dokładny Plan Zadań (krok po kroku)
 
-> **Data:** 2026-02-21 (aktualizacja: 2026-02-21)  
+> **Data:** 2026-02-21 (aktualizacja: 2026-02-21 20:00)  
 > **Bazuje na:** ARENA_SYSTEM_PLAN.md  
-> **Stan obecny:** ✅ Fazy 0-5, 8, 10, 11 (częściowo), 12 GOTOWE. System gotowy do pre-alpha: baza danych, core C++, matchmaking, protokół sieciowy, pełna warstwa Lua (15 plików), pełne i18n (EN+PL + 55 locale fallback), bezpieczeństwo/anti-cheat/logging, testy jednostkowe, dokumentacja techniczna i deploy.  
-> **Brakuje:** UI klienta (Faza 6), WWW (Faza 7), sezony (Faza 9), testy integracyjne/obciążeniowe/balans (Faza 11.2/11.4/11.5).  
-> **Pre-alpha target: ✅ OSIĄGNIĘTY** — gotowe do wewnętrznych testów.
+> **Stan obecny:** ✅ Fazy 0-5, 8, 10, 11 (częściowo), 12 GOTOWE. Kompilacja C++ ✅, Build CI ✅, Startup serwera ✅ (zero błędów arena). System gotowy do pre-alpha.  
+> **Brakuje:** UI klienta (Faza 6), WWW (Faza 7), sezony (Faza 9), testy integracyjne/obciążeniowe/balans (Faza 11.2/11.4/11.5), nowe C++ EventCallback types (playerOnSpellCheck, playerOnUseItem) dla pełnej blokady spelli/itemów.  
+> **Pre-alpha target: ✅ OSIĄGNIĘTY** — serwer kompiluje się, startuje, zero błędów arena.  
+> **Ostatni commit:** `217d34066` — fix arena Lua scripts  
+> **Poprzedni fix:** `5688443c9` — fix fmt v12 format_as (kompilacja C++)
 
 ---
 

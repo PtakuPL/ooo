@@ -4,12 +4,12 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T11:16:28.159666Z",
+  "checked_at": "2026-02-21T20:41:03.464918Z",
   "issues_total": 518,
   "issues_by_type": {
-    "consistency_in_language": 73,
+    "consistency_in_language": 74,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 45
+    "length_ratio_crosscheck": 44
   },
   "consistency_issues": [
     {
@@ -253,6 +253,20 @@
         "quests:quests.actions_rewards.msg_2",
         "scripts:scripts.action_tortoise_egg_nargor.msg_1",
         "scripts:scripts.actions_treasure_chest.msg_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Gladiator",
+      "variants": [
+        "Gladiador",
+        "gladiador"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "arena:arena.title.gladiator",
+        "monsters:monster.gladiator.name"
       ]
     },
     {
@@ -1113,6 +1127,573 @@
     }
   ],
   "pl_reference_issues": [
+    {
+      "key": "arena.cmd.stats.record_line",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Record: {0}W / {1}L / {2}D ({3}% WR)",
+      "pl": "Wynik: {0}W / {1}P / {2}R ({3}% WR)",
+      "lang": "Record: {0}W / {1}L / {2}D ({3}% WR)"
+    },
+    {
+      "key": "arena.cmd.stats.kd_line",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "K/D: {0}/{1} ({2} KDR)",
+      "pl": "Z/Ś: {0}/{1} ({2} KDR)",
+      "lang": "K/D: {0}/{1} ({2} KDR)"
+    },
+    {
+      "key": "arena.cmd.stats.damage_line",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Total Damage: {0} | Total Healing: {1}",
+      "pl": "Łączne Obrażenia: {0} | Łączne Leczenie: {1}",
+      "lang": "Total Damage: {0} | Total Healing: {1}"
+    },
+    {
+      "key": "arena.cmd.history.win",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "WIN",
+      "pl": "WYGRANA",
+      "lang": "WIN"
+    },
+    {
+      "key": "arena.cmd.history.loss",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "LOSS",
+      "pl": "PRZEGRANA",
+      "lang": "LOSS"
+    },
+    {
+      "key": "arena.npc.welcome",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome to the {Arena}! I can help you {join} a match, check your {stats}, view the {ranking}, or see available {modes}. What would you like?",
+      "pl": "Witaj na {Arenie}! Mogę pomóc Ci {dołączyć} do meczu, sprawdzić {statystyki}, zobaczyć {ranking} lub dostępne {tryby}. Czego sobie życzysz?",
+      "lang": "Welcome to the {Arena}! I can help you {join} a match, check your {stats}, view the {ranking}, or see available {modes}. What would you like?"
+    },
+    {
+      "key": "arena.npc.modes.join_hint",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Say 'join <mode>' to queue up!",
+      "pl": "Powiedz 'join <tryb>' aby dołączyć do kolejki!",
+      "lang": "Say 'join <mode>' to queue up!"
+    },
+    {
+      "key": "arena.npc.stats.mmr_line",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "MMR: {0} | Arena Points: {1}",
+      "pl": "MMR: {0} | Punkty Areny: {1}",
+      "lang": "MMR: {0} | Arena Points: {1}"
+    },
+    {
+      "key": "arena.npc.stats.record_line",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Record: {0}W / {1}L / {2}D ({3}%)",
+      "pl": "Wynik: {0}W / {1}P / {2}R ({3}%)",
+      "lang": "Record: {0}W / {1}L / {2}D ({3}%)"
+    },
+    {
+      "key": "arena.npc.stats.kd_line",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Total K/D: {0}/{1}",
+      "pl": "Łączne Z/Ś: {0}/{1}",
+      "lang": "Total K/D: {0}/{1}"
+    },
+    {
+      "key": "arena.title.header",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Title]",
+      "pl": "[Tytuł areny]",
+      "lang": "[Arena Title]"
+    },
+    {
+      "key": "arena.title.all_titles",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "All Titles:",
+      "pl": "Wszystkie Tytuły:",
+      "lang": "All Titles:"
+    },
+    {
+      "key": "arena.shop.header",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Shop] Your Arena Points: {0}",
+      "pl": "[Sklep na arenie] Twoje punkty na arenie: {0}",
+      "lang": "[Arena Shop] Your Arena Points: {0}"
+    },
+    {
+      "key": "arena.shop.columns",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "#    Item                           Cost       Category",
+      "pl": "#    Przedmiot                      Koszt      Kategoria",
+      "lang": "#    Item                           Cost       Category"
+    },
+    {
+      "key": "arena.shop.buy_usage",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Shop] Usage: !arena-shop buy <id>",
+      "pl": "[Sklep Areny] Użycie: !arena-shop buy <id>",
+      "lang": "[Arena Shop] Usage: !arena-shop buy <id>"
+    },
+    {
+      "key": "arena.shop.invalid_id",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Shop] Invalid item ID.",
+      "pl": "[Sklep Areny] Nieprawidłowy ID przedmiotu.",
+      "lang": "[Arena Shop] Invalid item ID."
+    },
+    {
+      "key": "arena.shop.not_enough",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Shop] Not enough points. Need {0}, have {1}.",
+      "pl": "[Sklep Areny] Za mało punktów. Potrzebujesz {0}, masz {1}.",
+      "lang": "[Arena Shop] Not enough points. Need {0}, have {1}."
+    },
+    {
+      "key": "arena.shop.failed",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Shop] Purchase failed. Try again.",
+      "pl": "[Sklep Areny] Zakup nie powiódł się. Spróbuj ponownie.",
+      "lang": "[Arena Shop] Purchase failed. Try again."
+    },
+    {
+      "key": "arena.shop.success",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Shop] You purchased {0} for {1} Arena Points!",
+      "pl": "[Sklep Areny] Kupiłeś {0} za {1} Punktów Areny!",
+      "lang": "[Arena Shop] You purchased {0} for {1} Arena Points!"
+    },
+    {
+      "key": "arena.shop.inventory_full",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Shop] Your inventory is full!",
+      "pl": "[Sklep Areny] Twój ekwipunek jest pełny!",
+      "lang": "[Arena Shop] Your inventory is full!"
+    },
+    {
+      "key": "arena.shop.item.trophy_small",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Arena Trophy (Small)",
+      "pl": "Trofeum Areny (Małe)",
+      "lang": "Arena Trophy (Small)"
+    },
+    {
+      "key": "arena.shop.item.trophy_large",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Arena Trophy (Large)",
+      "pl": "Trofeum Areny (Duże)",
+      "lang": "Arena Trophy (Large)"
+    },
+    {
+      "key": "arena.shop.item.gladiator_shield",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Gladiator Shield",
+      "pl": "Tarcza Gladiatora",
+      "lang": "Gladiator Shield"
+    },
+    {
+      "key": "arena.shop.item.arena_amulet",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Arena Amulet",
+      "pl": "Amulet Areny",
+      "lang": "Arena Amulet"
+    },
+    {
+      "key": "arena.admin.info.header",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Admin] System Status:",
+      "pl": "[Arena Admin] Status Systemu:",
+      "lang": "[Arena Admin] System Status:"
+    },
+    {
+      "key": "arena.admin.info.active_matches",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Active Matches: {0}",
+      "pl": "Aktywne Mecze: {0}",
+      "lang": "Active Matches: {0}"
+    },
+    {
+      "key": "arena.admin.info.queue",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Queue:",
+      "pl": "Kolejka:",
+      "lang": "Queue:"
+    },
+    {
+      "key": "arena.admin.stats.usage",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Admin] Usage: !arena-admin stats <playername>",
+      "pl": "[Arena Admin] Użycie: !arena-admin stats <gracz>",
+      "lang": "[Arena Admin] Usage: !arena-admin stats <playername>"
+    },
+    {
+      "key": "arena.admin.stats.not_found",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Admin] Player '{0}' not found (must be online).",
+      "pl": "[Arena Admin] Gracz '{0}' nie znaleziony (musi być online).",
+      "lang": "[Arena Admin] Player '{0}' not found (must be online)."
+    },
+    {
+      "key": "arena.admin.stats.no_profile",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Admin] No arena profile for {0}",
+      "pl": "[Arena Admin] Brak profilu areny dla {0}",
+      "lang": "[Arena Admin] No arena profile for {0}"
+    },
+    {
+      "key": "arena.admin.stats.header",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Admin] Stats for {0}:",
+      "pl": "[Arena Admin] Statystyki gracza {0}:",
+      "lang": "[Arena Admin] Stats for {0}:"
+    },
+    {
+      "key": "arena.admin.stats.mmr_line",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "MMR: {0} | Title: {1}",
+      "pl": "MMR: {0} | Tytuł: {1}",
+      "lang": "MMR: {0} | Title: {1}"
+    },
+    {
+      "key": "arena.admin.stats.kd_line",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "K/D: {0}/{1} ({2})",
+      "pl": "Z/Ś: {0}/{1} ({2})",
+      "lang": "K/D: {0}/{1} ({2})"
+    },
+    {
+      "key": "arena.admin.stats.points",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Arena Points: {0}",
+      "pl": "Punkty Areny: {0}",
+      "lang": "Arena Points: {0}"
+    },
+    {
+      "key": "arena.admin.setmmr.usage",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Admin] Usage: !arena-admin setmmr <player> <mmr>",
+      "pl": "[Arena Admin] Użycie: !arena-admin setmmr <gracz> <mmr>",
+      "lang": "[Arena Admin] Usage: !arena-admin setmmr <player> <mmr>"
+    },
+    {
+      "key": "arena.admin.setmmr.success",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Admin] Set {0}'s MMR to {1}",
+      "pl": "[Arena Admin] Ustawiono MMR gracza {0} na {1}",
+      "lang": "[Arena Admin] Set {0}'s MMR to {1}"
+    },
+    {
+      "key": "arena.admin.addpoints.usage",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Admin] Usage: !arena-admin addpoints <player> <points>",
+      "pl": "[Arena Admin] Użycie: !arena-admin addpoints <gracz> <punkty>",
+      "lang": "[Arena Admin] Usage: !arena-admin addpoints <player> <points>"
+    },
+    {
+      "key": "arena.admin.addpoints.success",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Admin] Added {0} Arena Points to {1}",
+      "pl": "[Arena Admin] Dodano {0} Punktów Areny graczowi {1}",
+      "lang": "[Arena Admin] Added {0} Arena Points to {1}"
+    },
+    {
+      "key": "arena.admin.reset.usage",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Admin] Usage: !arena-admin reset <player>",
+      "pl": "[Arena Admin] Użycie: !arena-admin reset <gracz>",
+      "lang": "[Arena Admin] Usage: !arena-admin reset <player>"
+    },
+    {
+      "key": "arena.admin.reset.success",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Admin] Reset all arena stats for {0}",
+      "pl": "[Arena Admin] Zresetowano wszystkie statystyki areny dla {0}",
+      "lang": "[Arena Admin] Reset all arena stats for {0}"
+    },
+    {
+      "key": "arena.admin.broadcast.sent",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Admin] Broadcast sent.",
+      "pl": "[Arena Admin] Ogłoszenie wysłane.",
+      "lang": "[Arena Admin] Broadcast sent."
+    },
+    {
+      "key": "arena.admin.player_not_online",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Admin] Player not online.",
+      "pl": "[Arena Admin] Gracz nie jest online.",
+      "lang": "[Arena Admin] Player not online."
+    },
+    {
+      "key": "arena.admin.help.header",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[Arena Admin] Commands:",
+      "pl": "[Arena Admin] Komendy:",
+      "lang": "[Arena Admin] Commands:"
+    },
+    {
+      "key": "arena.check.level_required",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You need at least level {0} to join the arena.",
+      "pl": "Potrzebujesz przynajmniej poziomu {0}, aby dołączyć do areny.",
+      "lang": "You need at least level {0} to join the arena."
+    },
+    {
+      "key": "arena.check.already_in_match",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You are already in an arena match!",
+      "pl": "Jesteś już w meczu na arenie!",
+      "lang": "You are already in an arena match!"
+    },
+    {
+      "key": "arena.check.already_in_queue",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You are already in the queue!",
+      "pl": "Jesteś już w kolejce!",
+      "lang": "You are already in the queue!"
+    },
+    {
+      "key": "arena.check.cooldown",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You must wait {0} seconds before joining again.",
+      "pl": "Musisz poczekać {0} sekund przed ponownym dołączeniem.",
+      "lang": "You must wait {0} seconds before joining again."
+    },
+    {
+      "key": "arena.check.in_combat",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You cannot join the arena while in combat.",
+      "pl": "Nie możesz dołączyć do areny podczas walki.",
+      "lang": "You cannot join the arena while in combat."
+    },
+    {
+      "key": "arena.check.player_not_found",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Player not found",
+      "pl": "Gracz nie znaleziony",
+      "lang": "Player not found"
+    },
+    {
+      "key": "arena.check.no_stats",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "No stats",
+      "pl": "Brak statystyk",
+      "lang": "No stats"
+    },
+    {
+      "key": "arena.queue.empty",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "  No players in queue.",
+      "pl": "  Brak graczy w kolejce.",
+      "lang": "  No players in queue."
+    },
+    {
+      "key": "arena.record.format",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{0}W / {1}L / {2}D ({3}% WR)",
+      "pl": "{0}W / {1}P / {2}R ({3}% WR)",
+      "lang": "{0}W / {1}L / {2}D ({3}% WR)"
+    },
+    {
+      "key": "arena.security.spell_blocked",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You cannot use that spell during an arena match!",
+      "pl": "Nie możesz użyć tego zaklęcia podczas meczu na arenie!",
+      "lang": "You cannot use that spell during an arena match!"
+    },
+    {
+      "key": "arena.security.item_blocked",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You cannot use that item during an arena match!",
+      "pl": "Nie możesz użyć tego przedmiotu podczas meczu na arenie!",
+      "lang": "You cannot use that item during an arena match!"
+    },
+    {
+      "key": "arena.security.party_blocked",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You cannot change party during an arena match!",
+      "pl": "Nie możesz zmieniać drużyny podczas meczu na arenie!",
+      "lang": "You cannot change party during an arena match!"
+    },
+    {
+      "key": "arena.security.afk_warning",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "AFK Warning! You will be removed from the arena in {0} seconds if you stay inactive.",
+      "pl": "Ostrzeżenie AFK! Zostaniesz usunięty z areny za {0} sekund jeśli pozostaniesz nieaktywny.",
+      "lang": "AFK Warning! You will be removed from the arena in {0} seconds if you stay inactive."
+    },
+    {
+      "key": "arena.security.afk_loss",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You have been removed from the arena for being AFK. This counts as a loss.",
+      "pl": "Zostałeś usunięty z areny z powodu nieaktywności. Liczy się to jako przegrana.",
+      "lang": "You have been removed from the arena for being AFK. This counts as a loss."
+    },
+    {
+      "key": "arena.security.logout_warning",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Logging out during an arena match counts as a loss!",
+      "pl": "Wylogowanie podczas meczu na arenie liczy się jako przegrana!",
+      "lang": "Logging out during an arena match counts as a loss!"
+    },
+    {
+      "key": "arena.security.teleport_blocked",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Teleportation is not allowed during an arena match!",
+      "pl": "Teleportacja jest niemożliwa podczas meczu na arenie!",
+      "lang": "Teleportation is not allowed during an arena match!"
+    },
+    {
+      "key": "arena.anticheat.match_too_short",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "This match was too short to count for MMR changes.",
+      "pl": "Ten mecz był zbyt krótki, aby liczyć się do zmian MMR.",
+      "lang": "This match was too short to count for MMR changes."
+    },
+    {
+      "key": "arena.anticheat.repeat_opponent",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Too many matches against the same opponent today. MMR will not change.",
+      "pl": "Zbyt wiele meczy przeciwko temu samemu przeciwnikowi dzisiaj. MMR nie zmieni się.",
+      "lang": "Too many matches against the same opponent today. MMR will not change."
+    },
+    {
+      "key": "arena.anticheat.daily_cap_reached",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You have reached the daily MMR gain cap of {0}. Additional wins will not increase your MMR today.",
+      "pl": "Osiągnąłeś dzienny limit wzrostu MMR wynoszący {0}. Dodatkowe wygrane nie zwiększą twojego MMR dzisiaj.",
+      "lang": "You have reached the daily MMR gain cap of {0}. Additional wins will not increase your MMR today."
+    },
+    {
+      "key": "arena.anticheat.daily_cap_partial",
+      "category": "arena",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Daily MMR cap: you gained +{0} instead of +{1} (daily limit reached).",
+      "pl": "Dzienny limit MMR: zyskałeś +{0} zamiast +{1} (osiągnięto dzienny limit).",
+      "lang": "Daily MMR cap: you gained +{0} instead of +{1} (daily limit reached)."
+    },
     {
       "key": "channel.tutor.name",
       "category": "chatchannels",
@@ -4145,573 +4726,6 @@
       "en": "Depot",
       "pl": "Skład",
       "lang": "Depot"
-    },
-    {
-      "key": "otclient_modules.character_otui.tr_32",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Regular",
-      "pl": "Regularny",
-      "lang": "Regular"
-    },
-    {
-      "key": "otclient_modules.characterlist.tr_2",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Error",
-      "pl": "Błąd",
-      "lang": "Error"
-    },
-    {
-      "key": "otclient_modules.charms.tr_1",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.charms.tr_13",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.charms.tr_17",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.charms.tr_5",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.charms.tr_9",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.cyclopedia_widgets_otui.tr_13",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Total: ",
-      "pl": "Całkowity: ",
-      "lang": "Total: "
-    },
-    {
-      "key": "otclient_modules.game_shop.tr_15",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Error",
-      "pl": "Błąd",
-      "lang": "Error"
-    },
-    {
-      "key": "otclient_modules.game_shop.tr_3",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.game_shop.tr_5",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.game_shop_otui.tr_5",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Balance",
-      "pl": "Balansować",
-      "lang": "Balance"
-    },
-    {
-      "key": "otclient_modules.game_store.tr_11",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Error",
-      "pl": "Błąd",
-      "lang": "Error"
-    },
-    {
-      "key": "otclient_modules.game_store.tr_14",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Balance",
-      "pl": "Balansować",
-      "lang": "Balance"
-    },
-    {
-      "key": "otclient_modules.gameinterface.tr_44",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.house.tr_31",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.house.tr_39",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.house.tr_43",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.house.tr_49",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.house.tr_55",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.house.tr_61",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.imbuing.tr_2",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.imbuing.tr_5",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.serverlist.tr_1",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.spelllist_otui.tr_2",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "otclient_modules.tasks.tr_9",
-      "category": "otclient_modules",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
-    },
-    {
-      "key": "php.players.text2",
-      "category": "php",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "col-12 col-sm-12 col-lg-10",
-      "pl": "kol-12 kol-sm-12 kol-lg-10",
-      "lang": "col-12 col-sm-12 col-lg-10"
-    },
-    {
-      "key": "php.accounts.text1",
-      "category": "php",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "col-12 col-sm-12 col-lg-10",
-      "pl": "kol-12 kol-sm-12 kol-lg-10",
-      "lang": "col-12 col-sm-12 col-lg-10"
-    },
-    {
-      "key": "questlog.quest_37.mission_3.name",
-      "category": "questlog",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Knowledge",
-      "pl": "Wiedzy",
-      "lang": "Knowledge"
-    },
-    {
-      "key": "quests.dreamers_challenge.clock_word_3",
-      "category": "quests",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "TIC TAC",
-      "pl": "TIK TAC",
-      "lang": "TIC TAC"
-    },
-    {
-      "key": "quests.dreamers_challenge.clock_word_5",
-      "category": "quests",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "TIC",
-      "pl": "TIK",
-      "lang": "TIC"
-    },
-    {
-      "key": "raid.lions.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lions",
-      "pl": "Lew",
-      "lang": "Lions"
-    },
-    {
-      "key": "raid.minotaurs.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Minotaurs",
-      "pl": "MiNietaurs",
-      "lang": "Minotaurs"
-    },
-    {
-      "key": "raid.example.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Example",
-      "pl": "Przykład",
-      "lang": "Example"
-    },
-    {
-      "key": "raid.priestesses.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Priestesses",
-      "pl": "Kapłanka",
-      "lang": "Priestesses"
-    },
-    {
-      "key": "raid.barbarian.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Barbarian",
-      "pl": "Barbarzyńca",
-      "lang": "Barbarian"
-    },
-    {
-      "key": "raid.dragons.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Dragons",
-      "pl": "Smok",
-      "lang": "Dragons"
-    },
-    {
-      "key": "raid.wasp_bear.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Wasp Bear",
-      "pl": "Osa Bear",
-      "lang": "Wasp Bear"
-    },
-    {
-      "key": "raid.lizards.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lizards",
-      "pl": "Jaszczurka",
-      "lang": "Lizards"
-    },
-    {
-      "key": "raid.rats.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Rats",
-      "pl": "Szczur",
-      "lang": "Rats"
-    },
-    {
-      "key": "raid.orcs.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Orcs",
-      "pl": "Orki",
-      "lang": "Orcs"
-    },
-    {
-      "key": "raid.bone_beast.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Bone Beast",
-      "pl": "Kość Bestia",
-      "lang": "Bone Beast"
-    },
-    {
-      "key": "raid.tigers.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tigers",
-      "pl": "Tygrys",
-      "lang": "Tigers"
-    },
-    {
-      "key": "raid.tortoises.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Tortoises",
-      "pl": "Żółw",
-      "lang": "Tortoises"
-    },
-    {
-      "key": "raid.undead.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Undead",
-      "pl": "Nieumarły",
-      "lang": "Undead"
-    },
-    {
-      "key": "raid.orc_backpack.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Orc Backpack",
-      "pl": "Orc plecak",
-      "lang": "Orc Backpack"
-    },
-    {
-      "key": "raid.goblins.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Goblins",
-      "pl": "Chochlik",
-      "lang": "Goblins"
-    },
-    {
-      "key": "raid.horned.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Horned",
-      "pl": "Róg",
-      "lang": "Horned"
-    },
-    {
-      "key": "raid.beetles.name",
-      "category": "raids",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Beetles",
-      "pl": "Żuk, chrząszcz",
-      "lang": "Beetles"
-    },
-    {
-      "key": "gamestore.modal.error",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Error",
-      "pl": "Błąd",
-      "lang": "Error"
-    },
-    {
-      "key": "scripts.action_switch.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "CLICK",
-      "pl": "TRZASK",
-      "lang": "CLICK"
-    },
-    {
-      "key": "scripts.actions_lord_of_elements_lever.say_2",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ZOOOOOOOOM",
-      "pl": "ZOOOOOOOM",
-      "lang": "ZOOOOOOOOM"
-    },
-    {
-      "key": "scripts.actions_machine2.say_2",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ON",
-      "pl": "NA",
-      "lang": "ON"
-    },
-    {
-      "key": "scripts.actions_pyramids2.msg_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<screeeech> <squeak> <squeaaaaal>",
-      "pl": "<skrzyp> <pisk> <przeciągły pisk>",
-      "lang": "<screeeech> <squeak> <squeaaaaal>"
-    },
-    {
-      "key": "scripts.blueberry_cupcake.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mmmm.",
-      "pl": "Mmm.",
-      "lang": "Mmmm."
-    },
-    {
-      "key": "scripts.carrot_cake.say_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mmmm.",
-      "pl": "Mmm.",
-      "lang": "Mmmm."
-    },
-    {
-      "key": "scripts.claw_of_the_noxious_spawn.msg_1",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are cursed by The Noxious Spawn!",
-      "pl": "Jesteś przeklęty przez Trującego Pomiotu!",
-      "lang": "You are cursed by The Noxious Spawn!"
-    },
-    {
-      "key": "scripts.creaturescripts_lower_spike_kill.msg_2",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Lower Spike task complete.",
-      "pl": "Zadanie Dolnego Spike'a zakończone.",
-      "lang": "Lower Spike task complete."
-    },
-    {
-      "key": "scripts.creaturescripts_upper_spike_kill.msg_2",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Upper Spike task complete.",
-      "pl": "Zadanie Górnego Kolca ukończone.",
-      "lang": "Upper Spike task complete."
-    },
-    {
-      "key": "scripts.dawnport.third_step.paladin",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have received the weapons of a paladin. As a paladin, you can use the following spells: Magic Patch, Arrow Call.",
-      "pl": "Otrzymałeś broń paladyna. Jako paladyn możesz używać następujących zaklęć: Magiczna Łatka, Przywołanie Strzały.",
-      "lang": "You have received the weapons of a paladin. As a paladin, you can use the following spells: Magic Patch, Arrow Call."
-    },
-    {
-      "key": "scripts.dawnport.third_step.sorcerer",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You have received the weapons of a sorcerer. As a sorcerer, you can use the following spells: Magic Patch, Buzz, Scorch.",
-      "pl": "Otrzymałeś broń czarownika. Jako czarodziej możesz używać następujących zaklęć: Magiczna Plama, Buzz, Scorch.",
-      "lang": "You have received the weapons of a sorcerer. As a sorcerer, you can use the following spells: Magic Patch, Buzz, Scorch."
-    },
-    {
-      "key": "scripts.exalted_core.msg_4",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Failed to generate a Soul Core.",
-      "pl": "nieudane do wytwarzać, generować jeden Dusza Core.",
-      "lang": "Failed to generate a Soul Core."
-    },
-    {
-      "key": "scripts.find_fiend.level_trivial",
-      "category": "scripts",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Trivial",
-      "pl": "Nie znaczący, banalny",
-      "lang": "Trivial"
     }
   ],
   "length_ratio_issues": [
@@ -4723,15 +4737,6 @@
       "en_len": 12,
       "lang_ratio": 1.583,
       "pl_ratio": 3.417
-    },
-    {
-      "key": "achievement.128.name",
-      "category": "achievements",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 10,
-      "lang_ratio": 1.1,
-      "pl_ratio": 4.5
     },
     {
       "key": "achievement.274.name",

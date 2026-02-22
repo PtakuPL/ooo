@@ -208,6 +208,124 @@ Uwagi:
 - Ten fix nie zwiększa obciążenia hosta — porządkuje tylko render sekcji recent.
 - Ryzyko freeze WSL/VS Code pozostaje monitorowane zadaniami `WQ-HARD-50/51`.
 
+### Uzupełnienie 2026-02-21 12:20 UTC — incydent „worker nie działa / status nie aktualizuje się” (live recovery)
+
+Wykonane:
+- ✅ Zdiagnozowano stan mieszany po zgłoszeniu operatorskim:
+  - procesy `Guardian` + `Statusd` żyły,
+  - worker nie był obecny w procesach,
+  - heartbeat był przeterminowany (rosnący `age_sec`).
+- ✅ Przeprowadzono pełny restart stacka:
+  - `bash i18n_start_all.sh --restart`,
+  - health-gate 30s przeszedł poprawnie,
+  - po starcie potwierdzono `Guardian/Statusd/Worker = RUNNING`.
+- ✅ Zweryfikowano odświeżanie statusu po restarcie:
+  - `activity.json` wrócił do świeżych timestampów,
+  - `translation_recent_latest.json` ponownie aktualizuje się,
+  - pipeline przestał być „zamrożony” z punktu widzenia operatora.
+- ✅ Potwierdzono kontrakt 7 języków na żywym procesie workera:
+  - cmdline zawiera `--langs ru,ro,it,sr,sv,pl,es`.
+
+Wnioski diagnostyczne:
+- ⚠️ W `i18n/logs/guardian.log` nadal pojawiają się historyczne wpisy `Killed` dla procesu workera (`nohup ... i18n_worker_simple.sh`), więc root-cause niestabilności nie jest jeszcze zamknięty.
+- ⚠️ Incydent z 12:xx UTC potwierdza potrzebę domknięcia zadań `WQ-HARD-50/51` (watchdog zasobów + safe-load).
+
+Stan po interwencji:
+- ✅ Usługa działa i status znów jest live.
+- ⏳ Obszar do dalszej pracy: prewencja kolejnych „cichych zgonów” workera bez pełnego zatrzymania guardiana/statusd.
+
+### Uzupełnienie 2026-02-21 12:30 UTC — quality OFF (twarde) + odciążenie hosta (no-git)
+
+Objawy zgłoszone przez operatora:
+- quality miał być wyłączony, a wyglądał na aktywny,
+- komputer był mocno obciążony,
+- przepustowość spadała do ~`320 kluczy/h`.
+
+Root-cause (potwierdzone):
+- `i18n_guardian.sh` miał domyślne wartości:
+  - `RUN_GLOBAL_QUALITY_MODE=true`,
+  - `RUN_GLOBAL_QUALITY_PRIORITY_GATE_ENABLED=true`.
+- Profil `guardian_profiles/translations_pl_es.json` nie zawierał pól `global_quality_*`, więc przy przeładowaniu profilu guardian mógł wracać do powyższych domyślnych wartości.
+- Aktywny `guardian_profile.json` miał `no_git=false`, co zwiększało churn I/O/Git i dokładało obciążenie hosta.
+
+Wykonane:
+- ✅ `i18n_guardian.sh`:
+  - domyślnie ustawiono:
+    - `RUN_GLOBAL_QUALITY_MODE=false`,
+    - `RUN_GLOBAL_QUALITY_PRIORITY_GATE_ENABLED=false`.
+- ✅ `guardian_profiles/translations_pl_es.json`:
+  - dodano jawne `global_quality_*` z `global_quality_mode=false` i `global_quality_priority_gate_enabled=false`,
+  - zaktualizowano profil do listy 7 języków operatorskich.
+- ✅ `guardian_profile.json`:
+  - `no_git: false -> true` (odciążenie hosta).
+- ✅ Restart i walidacja runtime:
+  - `GLOBAL_QUALITY_MODE=false` i `GLOBAL_QUALITY_PRIORITY_GATE_ENABLED=false` w env live procesu,
+  - `translation_dispatch_state.json`: `global_quality_mode=false`, `priority_gate.enabled=false`, `priority_gate.active=false`,
+  - worker działa z `--no-git` i `--langs ru,ro,it,sr,sv,pl,es`.
+
+Snapshot po wdrożeniu:
+- heartbeat i sekcje statusowe odświeżają się,
+- `guardian_health.json` pokazał w bieżącej próbce `throughput_per_h=532.0` (wartość chwilowa okna, trend wymaga dalszej obserwacji).
+
+### Uzupełnienie 2026-02-21 12:34 UTC — brak odświeżania statusu na GitHub (fix)
+
+Objaw:
+- operator zgłosił, że status na GitHub nie odświeża się mimo pracy pipeline.
+
+Root-cause:
+- `i18n_guardian.sh` stage’ował tylko:
+  - `I18N_STATUS.md`,
+  - `canary_test/I18N_STATUS.md`,
+  - pliki komend workera,
+  ale nie stage’ował `docs/i18n/i18n_status_historia.md`.
+- commit/push cadence był ustawiony dość agresywnie na oszczędzanie I/O (`push=480s`, `commit cooldown=900s`), co opóźniało widoczność zmian na GitHub.
+
+Wykonane:
+- ✅ `i18n_guardian.sh`:
+  - `PUSH_INTERVAL_SECONDS: 480 -> 240`,
+  - `STATUS_COMMIT_MIN_INTERVAL_SECONDS: 900 -> 300`,
+  - do listy stage/reset dodano `Tibia/silnik/canary_test/docs/i18n/i18n_status_historia.md`.
+- ✅ Restart stacka i walidacja health-gate.
+- ✅ Wymuszono natychmiastowy cykl publikacji (`.guardian_last_* = 0` + `bash i18n_guardian.sh`) i potwierdzono nowy commit statusowy na `origin/master`.
+
+Wynik:
+- status na GitHub znów odświeża się poprawnie,
+- commit statusowy zawiera już 3 pliki (w tym historię statusu),
+- opóźnienie publikacji jest krótsze i przewidywalne.
+
+### Uzupełnienie 2026-02-21 14:19 UTC — korekta błędnych tłumaczeń IT/SV/SR + hardening `spell.words`
+
+Zgłoszone błędy:
+- `it/npc.json`: `npc.robson.say_6` było kopią EN (`Fine.`),
+- `sv/spells.json`: `spell.the_welter_summon2.name` i `spell.lizard_wave_2.name` były kopiami EN,
+- `sr/spells.json`: `spell.fair_wound_cleansing.words` i `spell.light_healing.words` miały artefakt `__ПХ0__`.
+
+Wykonane:
+- ✅ Poprawiono bezpośrednio wartości:
+  - `it/npc.json` -> `npc.robson.say_6 = "Bene."`,
+  - `sv/spells.json` ->
+    - `spell.the_welter_summon2.name = "Welter åkallan 2"`,
+    - `spell.lizard_wave_2.name = "Ödlevåg 2"`,
+  - `sr/spells.json` ->
+    - `spell.fair_wound_cleansing.words = "exura med ico"`,
+    - `spell.light_healing.words = "exura"`.
+- ✅ Dodano ręczne blokady regresji przez override:
+  - `i18n/overrides/it.json`,
+  - `i18n/overrides/sv.json`,
+  - `i18n/overrides/sr.json`.
+- ✅ Hardening workera (`i18n_worker_simple.sh`):
+  - `spell.*.words` otrzymało twardy kontrakt integralności (mismatch = issue `spell_words_mismatch`),
+  - podczas cyklu worker automatycznie przywraca `spell.*.words` do wartości EN, jeśli wykryje odchylenie (źródło `spell_words_contract`).
+
+Walidacja:
+- `bash -n i18n_worker_simple.sh` OK,
+- klucze zgłoszone przez operatora po poprawce mają właściwe wartości,
+- po restarcie stacka: `Guardian/Statusd/Worker = RUNNING`.
+
+Uwaga operacyjna:
+- w `sr/spells.json` historycznie wykryto szerszy ślad artefaktu `__ПХ0__` także poza 2 zgłoszonymi kluczami;
+- nowy kontrakt `spell.words` ma zapobiegać dalszej degradacji w kolejnych cyklach.
+
 Wybrane do realizacji pełne zadania:
 - **Przywrócić stabilną pracę workera po `NameError: TRANSLATION_OVERRIDES`**
 - **Domknąć kontrakt manual override dla tłumaczeń (priorytet nad TM/GT)**

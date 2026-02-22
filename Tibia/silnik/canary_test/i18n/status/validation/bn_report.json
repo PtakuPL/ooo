@@ -1,11 +1,11 @@
 {
   "lang": "bn",
   "script_group": "exotic",
-  "total_keys": 53586,
-  "translated": 5615,
-  "identical_to_en": 3707,
-  "placeholder_keys": 47971,
-  "coverage_pct": 10.5,
+  "total_keys": 53770,
+  "translated": 5760,
+  "identical_to_en": 3852,
+  "placeholder_keys": 47990,
+  "coverage_pct": 10.7,
   "issues_total": 100,
   "issues_by_type": {
     "script_wrong_script": 95,
@@ -18,7 +18,7 @@
     "MEDIUM": 1,
     "LOW": 0
   },
-  "score": 97.3,
+  "score": 97.4,
   "worst_keys": [
     {
       "key": "achievement.235.name",
@@ -143,11 +143,11 @@
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 411,
+    "issues_total": 410,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 11,
+    "length_ratio": 10,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T11:16:25.821491Z"
+  "validated_at": "2026-02-21T20:41:01.459697Z"
 }

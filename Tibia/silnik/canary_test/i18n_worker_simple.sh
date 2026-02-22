@@ -15375,6 +15375,15 @@ def validate_per_lang(en_text: str, translated_text: str, lang: str, key: str = 
     lang_lc = str(lang or "").lower().replace("_", "-")
     issues = []
 
+    if key.startswith("spell.") and key.endswith(".words"):
+        if tr != en:
+            issues.append({
+                "type": "spell_words_mismatch",
+                "severity": "HIGH",
+                "message": "Inkantacja spell.words musi pozostać identyczna jak EN",
+            })
+        return issues
+
     # V6: Newline count check — EN i LANG powinny mieć tyle samo \n
     en_nl = en.count("\\n") + en.count("\n")
     tr_nl = tr.count("\\n") + tr.count("\n")
@@ -15779,6 +15788,27 @@ for key, en_text in iter_items:
 
     if key in lang_data:
         current_value = str(lang_data.get(key, ""))
+
+        if key.startswith("spell.") and key.endswith(".words") and current_value != str(en_text):
+            fixed_words = str(en_text)
+            lang_data[key] = fixed_words
+            translated += 1
+            _mark_rejected_resolved(key)
+            h = src_hash(en_text)
+            tm_upsert(key, h, fixed_words, "spell_words_contract", 1.0, verified=True)
+            _append_jsonl(guard_report_path, {
+                "timestamp": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                "language": target_lang,
+                "json_file": json_file,
+                "key": key,
+                "source": "spell_words_contract",
+                "en": str(en_text),
+                "translated": fixed_words,
+            })
+            if translate_limit > 0 and translated >= translate_limit:
+                break
+            continue
+
         _current_unresolved = (not current_value.strip()) or current_value.startswith("[") or current_value.startswith("[TODO]") or current_value == str(en_text)
         # Napraw kontrakt trailing-space dla fragmentów runtime nawet poza strict-mode.
         if _requires_trailing_space_contract(key, en_text):

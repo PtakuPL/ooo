@@ -301,143 +301,143 @@
   },
   {
     "date": "2026-02-21",
-    "hours_covered": 5,
-    "threshold": 5,
+    "hours_covered": 14,
+    "threshold": 10,
     "is_final": false,
     "ts_first": "2026-02-21T00:19:46Z",
-    "ts_last": "2026-02-21T10:27:33Z",
-    "translated": 6068,
-    "guard_fail": 13242,
-    "suspicious_high": 20430,
-    "identical_to_en": 871,
+    "ts_last": "2026-02-21T20:40:28Z",
+    "translated": 18993,
+    "guard_fail": 44511,
+    "suspicious_high": 61491,
+    "identical_to_en": 2890,
     "repair_start": 37786,
-    "repair_end": 37856,
-    "cycles": 109,
+    "repair_end": 45240,
+    "cycles": 411,
     "coverage_start": 13.93,
-    "coverage_end": 13.97,
-    "guard_fail_pct": 68.58,
-    "throughput_per_h": 1213.6,
+    "coverage_end": 14.01,
+    "guard_fail_pct": 70.09,
+    "throughput_per_h": 1356.6,
     "per_lang": {
       "ru": {
-        "t": 1425,
-        "gf": 753,
-        "cov": 50.54
+        "t": 5032,
+        "gf": 2201,
+        "cov": 50.83
       },
       "it": {
-        "t": 978,
-        "gf": 494,
-        "cov": 53.53
+        "t": 3202,
+        "gf": 2095,
+        "cov": 54.99
       },
       "pl": {
-        "t": 865,
-        "gf": 6528,
-        "cov": 87.87
+        "t": 2794,
+        "gf": 22671,
+        "cov": 88.15
       },
       "es": {
-        "t": 619,
-        "gf": 3820,
-        "cov": 85.3
+        "t": 2270,
+        "gf": 11944,
+        "cov": 85.22
       },
       "sr": {
-        "t": 562,
-        "gf": 375,
-        "cov": 45.72
+        "t": 1899,
+        "gf": 1285,
+        "cov": 46.13
       },
       "ro": {
-        "t": 528,
-        "gf": 1035,
-        "cov": 44.07
+        "t": 1866,
+        "gf": 3567,
+        "cov": 44.15
       },
       "sv": {
-        "t": 440,
-        "gf": 194,
-        "cov": 29.69
+        "t": 1279,
+        "gf": 705,
+        "cov": 30.31
       },
       "cs": {
         "t": 30,
         "gf": 0,
-        "cov": 6.11
+        "cov": 6.09
       },
       "ar": {
         "t": 30,
         "gf": 0,
-        "cov": 8.58
+        "cov": 8.55
       },
       "bg": {
         "t": 30,
         "gf": 4,
-        "cov": 6.3
+        "cov": 6.28
       },
       "da": {
         "t": 30,
         "gf": 0,
-        "cov": 5.65
+        "cov": 5.63
       },
       "el": {
         "t": 30,
         "gf": 0,
-        "cov": 5.86
+        "cov": 5.84
       },
       "et": {
         "t": 30,
         "gf": 0,
-        "cov": 5.98
+        "cov": 5.96
       },
       "fi": {
         "t": 30,
         "gf": 0,
-        "cov": 5.59
+        "cov": 5.57
       },
       "he": {
         "t": 30,
         "gf": 0,
-        "cov": 7.6
+        "cov": 7.58
       }
     },
     "per_cat": {
       "npc.json": {
-        "t": 1473,
-        "gf": 2651
+        "t": 3320,
+        "gf": 9196
       },
       "monsters.json": {
-        "t": 1063,
-        "gf": 239
+        "t": 3108,
+        "gf": 834
       },
       "items.json": {
-        "t": 762,
-        "gf": 7254
-      },
-      "scripts.json": {
-        "t": 475,
-        "gf": 275
+        "t": 2168,
+        "gf": 25229
       },
       "server.json": {
-        "t": 473,
-        "gf": 954
+        "t": 1703,
+        "gf": 2976
+      },
+      "scripts.json": {
+        "t": 1346,
+        "gf": 934
       },
       "questlog.json": {
-        "t": 391,
-        "gf": 239
-      },
-      "raids.json": {
-        "t": 307,
-        "gf": 16
+        "t": 1321,
+        "gf": 869
       },
       "html.json": {
-        "t": 306,
-        "gf": 119
+        "t": 1196,
+        "gf": 456
+      },
+      "raids.json": {
+        "t": 1183,
+        "gf": 88
+      },
+      "arena.json": {
+        "t": 765,
+        "gf": 209
       },
       "otclient_modules.json": {
-        "t": 213,
-        "gf": 194
-      },
-      "cpp.json": {
-        "t": 164,
-        "gf": 96
+        "t": 639,
+        "gf": 424
       }
     },
     "mode_distribution": {
-      "AUTO_TRANSLATE": 522
+      "AUTO_TRANSLATE": 1727
     },
     "migration_completed": 15,
     "migration_total": 15

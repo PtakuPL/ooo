@@ -390,3 +390,71 @@ Efekt oczekiwany:
 - zachowanie architektury Plan A/Plan B,
 - powrot do walidacji faktycznego bottlenecka (template-heavy UI bindings) bez
   dodatkowej regresji konfiguracyjnej.
+
+---
+
+## 15. Podsumowanie stanu po wdrożeniu Planów A+B (2026-02-22)
+
+### Chronologia buildów Windows
+
+| Build | Commit | Błąd ICE | Gdzie |
+|---|---|---|---|
+| #4393 | baseline | C1001 | `luainterface.cpp#L41` |
+| #4394 | `b3225cdd` | C1001 | `luainterface.cpp#L41` |
+| #4396 | `f704b47` | C1001 | `luainterface.cpp#L41` |
+| #4397 | `9f77533` (Plan A + Plan B) | C1001 | **`luathrowhelpers.cpp#L30`** ← przeniesiony! |
+| #4398 | `b081f14` (naprawa: usunięto luathrowhelpers.cpp) | **w toku** | ? |
+
+### Kluczowy wniosek: efekt whack-a-mole
+
+Plany A i B **nie naprawiły** ICE — jedynie **przeniosły punkt awarii** z jednego pliku na drugi.
+
+To potwierdza hipotezę z sekcji 6.2: problem leży **nie w optymalizacji poszczególnych TU**, ale w samym **parsowaniu/przetwarzaniu template definitions z headerów** (`luabinder.h` + `luavaluecasts.h`). Flagi typu `/Od`, `/d2SSAOptimizer-`, `#pragma optimize("", off)` wpływają na fazę optymalizacji, lecz ICE C1001 w MSVC 14.44 występuje już w fazie **P2 codegen** — przed optymalizacją lub niezależnie od niej.
+
+### Co wdrożono (stan aktualny kodu, commit b081f14)
+
+**Plan A** — `#pragma optimize("", off)` dodane do 11 plików ✅ (ale nie pomaga)
+**Plan B** — `luafunctions_ui.cpp` splittowany na 3 TU ✅ (ale nie pomaga)
+**Hotfix** — `luathrowhelpers.cpp` usunięty, throw helpery przeniesione do `luaexception.cpp` ✅
+**Dodatkowe** — `luavalue_cast(string_view&)` dodane do `luavaluecasts.h/.cpp` ✅
+
+### Dlaczego jest "gorzej niż było"
+
+1. **Więcej plików zmodyfikowanych** — 20+ plików zmienionych (z czego 3 nowe pliki splitu)
+2. **Więcej `#pragma` dyrektywy** — dodane do 11 plików, co zaśmieca kod
+3. **ICE i tak występuje** — kompilator crashuje niezależnie od tych zmian
+4. **Złożoność wzrosła** — trudniej utrzymać, a efekt zerowy
+
+### Co dalej — realnie skuteczne opcje
+
+Jedyne podejścia, które mają szansę naprawić ICE (nie "whack-a-mole"):
+
+| Opcja | Opis | Szansa | Koszt |
+|---|---|---|---|
+| **C** | `extern template` — przenieść body z `.h` do `.cpp` z explicit instantiation | **wysoka** | 2-3h |
+| **D** | Pinning toolset na starszą wersję MSVC (np. 14.42, jeśli dostępna) | średnia | 10 min |
+| **E** | `clang-cl` zamiast `cl.exe` na Windows | średnia | 30 min |
+| **F** | Zgłosić bug do Microsoftu (Developer Community) z repro | pewna ale wolna | ~info |
+| **G** | Czekać na MSVC 14.45+ z fixem | brak gwarancji | 0 |
+
+### Opcja C — szczegółowo (jedyna strukturalna naprawa)
+
+Problem: `luainterface.h` includzuje `luabinder.h` (265 ln templates) i `luavaluecasts.h` (627 ln, 157 templates). **Każdy .cpp** który includzuje `luainterface.h` dostaje te definicje do parsowania. MSVC 14.44 crashuje przy instantiation depth × count.
+
+Rozwiązanie:
+1. W `luabinder.h` — zamienić definicje template na **deklaracje** (`extern template`)
+2. Explicit instantiation przenieść do `luabinder_inst.cpp`
+3. Analogicznie z `luavaluecasts.h` → `luavaluecasts_inst.cpp`
+
+Efekt: Każdy TU widzi tylko **deklaracje**, nie **definicje**. MSVC parsuje ~50 linii zamiast ~900. Brak ICE.
+
+Ryzyko: Wymaga enumeracji WSZYSTKICH typów używanych w instantiacjach. Jeśli przeoczysz typ → linker error (łatwy do naprawienia).
+
+### Opcja D — pinning toolset
+
+Sprawdzić jakie toolsety są dostępne na `windows-latest`:
+```powershell
+$toolsets = Get-ChildItem "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC" | Select-Object -ExpandProperty Name
+Write-Host "Available: $($toolsets -join ', ')"
+```
+Jeśli jest 14.42 lub 14.43 — wymusić go w workflow. ICE C1001 w P2 jest regression w konkretnej wersji — starsza może nie mieć tego buga.

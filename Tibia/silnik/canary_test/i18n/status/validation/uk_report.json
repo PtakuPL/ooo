@@ -1,11 +1,11 @@
 {
   "lang": "uk",
   "script_group": "cyrillic",
-  "total_keys": 53586,
-  "translated": 3409,
-  "identical_to_en": 2667,
-  "placeholder_keys": 50177,
-  "coverage_pct": 6.4,
+  "total_keys": 53770,
+  "translated": 3554,
+  "identical_to_en": 2812,
+  "placeholder_keys": 50196,
+  "coverage_pct": 6.6,
   "issues_total": 16,
   "issues_by_type": {
     "script_cyrillic_latin_mix": 16
@@ -117,11 +117,11 @@
   ],
   "crossref": {
     "enabled": false,
-    "issues_total": 405,
+    "issues_total": 404,
     "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 5,
+    "length_ratio": 4,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T11:16:41.631849Z"
+  "validated_at": "2026-02-21T20:41:15.532594Z"
 }

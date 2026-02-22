@@ -292,3 +292,31 @@ Wdrozone lokalnie (oczekuje na nowe runy CI):
 
 3. Korekta `/MP`:
 - `src/CMakeLists.txt`: usuniete bezwarunkowe `/MP`; `/MP` zalezy teraz od `CMake_MSVC_PARALLEL`.
+
+## Aktualizacja 2026-02-21 21:43 UTC (run `22264154855`)
+
+Nowy fail Windows:
+- run: `22264154855`
+- job: `64407063012`
+- SHA: `f704b476d16a769c282170e13eac2d03ae021855`
+- status: `failure`
+
+Adnotacje joba (GitHub API):
+1. `Configure CMake` = `success`.
+2. `Build` = `failure` z:
+   - `Tibia/silnik/canary_test/testyy/src/framework/luaengine/luainterface.cpp:41`
+   - `Internal compiler error.`
+
+Wniosek:
+- nadal klasa `WIN-01` (MSVC ICE C1001), ale w nowym runie trigger jest juz jednoznacznie na TU `luainterface.cpp`.
+- to nie jest fail infrastrukturalny typu `vcpkg 502` ani fail checkout.
+
+### Dopisanie do listy klas bledow
+
+#### WIN-05: C1001 utrzymany na `luainterface.cpp` po rozszerzeniu anti-ICE
+- Objaw:
+  - `luainterface.cpp(41) : Internal compiler error`
+- Run:
+  - `22264154855`
+- Status:
+  - open (P0), wymagane dalsze odchudzenie TU i izolacja throw-helperow.

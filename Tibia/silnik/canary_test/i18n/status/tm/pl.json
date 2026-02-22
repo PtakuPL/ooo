@@ -118694,5 +118694,1621 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T10:55:19.709057Z"
+  },
+  "achievement.92.name": {
+    "src_hash": "87c505677e19f3185a4c1bf720c3cea3",
+    "text": "Wyśmienity smak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:39:52.720982Z"
+  },
+  "achievement.92.description": {
+    "src_hash": "67694674448cdce7bd3bd4c9011d5984",
+    "text": "Uwielbiasz ryby – ale najlepiej te złowione na zimnej północy. Chociaż trudno je zdobyć, nigdy nie znudzi Ci się szukanie dziur w pokrywach lodowych i wieszanie w nich wędki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:39:52.722427Z"
+  },
+  "achievement.93.description": {
+    "src_hash": "76e08ee021516f666388d261f53b387b",
+    "text": "Jeśli chodzi o zrozumienie międzyrasowe, jesteś ekspertem. Opanowałeś język Chakoya i sprawiłeś, że ktoś był naprawdę szczęśliwy swoją hojnością. Achuq!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:39:58.105875Z"
+  },
+  "achievement.94.description": {
+    "src_hash": "c3cf8295a1044ee6eec53783589e85fa",
+    "text": "Twój świat jest szczęśliwy, że Cię ma! Nie wahaj się wkroczyć i pomóc, gdy odważni bohaterowie zostaną wezwani do uratowania świata.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:39:58.107214Z"
+  },
+  "achievement.95.description": {
+    "src_hash": "3d0348d42ee473cc29c0367bbc8f07b8",
+    "text": "Jesteś na pierwszej linii frontu, jeśli chodzi o ratowanie swojego świata lub branie udziału w wydarzeniach towarzyskich. Niezależnie od tego, czy zrobisz to zauważony, czy niezauważony przez ludzi, Twój świat może polegać na Tobie, że sumiennie wykonasz swoją część, aby uczynić go lepszym miejscem dla wszystkich.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:39:58.109163Z"
+  },
+  "achievement.96.description": {
+    "src_hash": "67f78dfea687809de24c4ec0003b4389",
+    "text": "Nie uważasz się za zbyt dobrego, żeby odwalać brudną robotę, podczas gdy ktoś inny może zdobyć laury za zabicie Devovorgi. Nie poradziliby sobie bez Ciebie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:39:58.110469Z"
+  },
+  "achievement.97.name": {
+    "src_hash": "540fceae8c326577cba1bbe778011f9f",
+    "text": "Odważny intruz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:39:58.110876Z"
+  },
+  "achievement.97.description": {
+    "src_hash": "cadc529b95d6fa6baf90dc52360f370d",
+    "text": "Wszedłeś do legowiska Devovorgi i dołączyłeś do załogi próbującej ją pokonać – czy uwieńczone sukcesem, czy nie, nie ma znaczenia, ale nie mogą cię winić za to, że nie próbowałeś!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:04.043391Z"
+  },
+  "achievement.98.description": {
+    "src_hash": "331106ddce0fc8bc5e6045ba72e4d995",
+    "text": "Dusze są jak motyle. Czarna dusza żywej broni pragnącej uderzyć leży roztrzaskana pod twoimi stopami.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:04.044509Z"
+  },
+  "achievement.99.description": {
+    "src_hash": "ff54949d3d65bfb7306ee4f4857bbeef",
+    "text": "Power leży w woli tej, która to rozkazuje. Walczyłeś z tym z pełną mocą – i byłeś silniejszy.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:04.046937Z"
+  },
+  "achievement.100.description": {
+    "src_hash": "5ffda734263d18f9c1b306c8e7934006",
+    "text": "Niewiele rzeczy równa się dzikiej furii uwięzionego i rozdartego stworzenia. Byłeś godnym przeciwnikiem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:04.048228Z"
+  },
+  "achievement.101.description": {
+    "src_hash": "5ac3f5784815ec6ffb4461d39a19a0da",
+    "text": "Ślepa nienawiść przybrała formę fizyczną, gwałtownie buntując się przeciwko niesprawiedliwości, z której się zrodziła. Nie udało wam się zaprowadzić sprawiedliwości – ale przynajmniej tymczasowego pokoju.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:04.049556Z"
+  },
+  "achievement.102.description": {
+    "src_hash": "dc4a0b12dfc02ea960d9cbdd74db1770",
+    "text": "Zakazana wiedza o eonach nigdy nie miała na celu inwazji na ten świat. Uciszyłeś jego głos, zanim mógł zostać usłyszany.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:09.780041Z"
+  },
+  "achievement.103.description": {
+    "src_hash": "70d0258ee7c18d945b4146ceea63421e",
+    "text": "Pomogłeś zniszczyć niebezpieczne macki Devovorgi i jej ogromny kokon – nie powstrzymując jej transformacji, ale ostatecznie wykonując kluczowy krok w stronę jej śmierci.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:09.781188Z"
+  },
+  "achievement.104.name": {
+    "src_hash": "656813c2d018d584fe3c0ec2deef6964",
+    "text": "Nemezis Devovorgi",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:09.781593Z"
+  },
+  "achievement.104.description": {
+    "src_hash": "4c0e8c76519a7b7e7f70ea5ecd4a4ae2",
+    "text": "Jeden wyjątkowy bohater spośród wielu. W tym roku to byłeś ty. Devovorga wycofała się do mrocznej krainy, ponieważ nie mogła przeciwstawić się twojej mocy – i twoim towarzyszom. Czas pokaże, czy dokonany przez Ciebie wybór był dobry – ale na razie uratował Twój świat.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:09.783243Z"
+  },
+  "achievement.105.name": {
+    "src_hash": "8a4c9e9b2e60151d1f975618aea6db17",
+    "text": "Panie Sandman",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:09.783576Z"
+  },
+  "achievement.105.description": {
+    "src_hash": "2af7db5bbe74a88ea3b4e7ad7d10cfbd",
+    "text": "Zmęczony... taki zmęczony... zwinięcie się w ciepłym i przytulnym łóżku wydaje się teraz idealną rzeczą. Słodkich snów!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:15.116473Z"
+  },
+  "achievement.106.name": {
+    "src_hash": "18f2a176335d4c83661f9f211a383951",
+    "text": "Ukołysz mnie do snu",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:15.117513Z"
+  },
+  "achievement.106.description": {
+    "src_hash": "2e6d1c6710fc23cd0196843bb3816bdf",
+    "text": "Spanie – robisz to ze stylem. Relaksujesz się w hamaku, słuchając odgłosów ptaków i świerszczy, powoli odpływając do krainy snów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:15.118848Z"
+  },
+  "achievement.107.name": {
+    "src_hash": "aeb8c33c4fb69e010a9c9b9b153dd42c",
+    "text": "Skromny Gość",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:15.119208Z"
+  },
+  "achievement.107.description": {
+    "src_hash": "0bb59e16d387b4c391647ece742ad1fe",
+    "text": "Niewiele potrzeba, żeby wygodnie spać. Do relaksu wystarczy sterta słomy i dach nad głową – przy czym ten ostatni jest całkowicie opcjonalny. Nawet nie przeszkadzają ci szczury skubające twoje palce.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:15.120561Z"
+  },
+  "achievement.108.name": {
+    "src_hash": "cb90d18d21876f47d3d518a0f2d567b8",
+    "text": "Żart z ciebie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:19.167212Z"
+  },
+  "achievement.108.description": {
+    "src_hash": "40a2e95d39ae575e25ab68728e93c00a",
+    "text": "Cóż – zawartość tego prezentu nie była taka, jakiej się spodziewałeś. Kto potrzebuje wrogów, mając takich przyjaciół?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:19.168891Z"
+  },
+  "achievement.109.description": {
+    "src_hash": "d733fc74a8b927196f364efcf3eee570",
+    "text": "To tyle, jeśli chodzi o twojego pierzastego małego przyjaciela! Może stanie przed klatką dla ptaków, ściskanie jej za szyję i krzyczenie 'Sing! Sing! Sing!' to było dla niej trochę za dużo?!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:19.171208Z"
+  },
+  "achievement.110.name": {
+    "src_hash": "cbfa8981b409c5046e3ab4b571d01318",
+    "text": "Bluebarista",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:40:19.171775Z"
+  },
+  "client.market.text2": {
+    "src_hash": "5954d0da4aad8145900a38481505f95c",
+    "text": "Saldo: <wartość> złota",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T11:54:15.156998Z"
+  },
+  "achievement.110.description": {
+    "src_hash": "3a06079f52afde29d2e766fab34db28c",
+    "text": "Żyjesz życiem myśliwych i zbieraczy. Cóż, zwłaszcza zbieracza, a zwłaszcza tego, który zbiera mnóstwo jagód. Czy sprawdzałeś ostatnio kolor swojego języka?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:22:59.030256Z"
+  },
+  "achievement.111.description": {
+    "src_hash": "9d01e0399d38e3ca9c7685f108e12734",
+    "text": "Gęsty, czerwony – wstrząśnięty, nie zmieszany – i ze słomką: tak wolisz swoją demoniczną krew. Podane z krążkiem cebuli, subtelny metaliczny posmak jest prawie niezauważalny. Korzystny wpływ na zdrowie lub manę jest mile widziany.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:22:59.031720Z"
+  },
+  "achievement.112.description": {
+    "src_hash": "9cbd2ccc60d512a7bdf2ec1a3d385e06",
+    "text": "Kochasz zimę. W pełni wyposażony w szalik i rękawiczki, lubisz bawić się na świeżym powietrzu, lepiąc mnóstwo bałwanów ze swoimi przyjaciółmi. Bitwa na śnieżki, ktoś?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:03.335386Z"
+  },
+  "achievement.114.name": {
+    "src_hash": "e3d984e994b73a4c56b407255758ebaf",
+    "text": "Potrzebuję przytulenia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:03.335816Z"
+  },
+  "achievement.114.description": {
+    "src_hash": "0489737e52ca50473c32db22fadb7bb7",
+    "text": "Ty i twoi pluszowi futrzani przyjaciele jesteście nierozłączni i nie wstydzisz się zabierać ich ze sobą do łóżka – kto wie, kiedy obudzisz się w środku nocy i bardzo będziesz potrzebował przytulania?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:03.337105Z"
+  },
+  "achievement.115.name": {
+    "src_hash": "642f863881059696a7f98d1832b07ce0",
+    "text": "Szczupła szansa",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:03.337519Z"
+  },
+  "achievement.115.description": {
+    "src_hash": "b6e72ba5c6adbf9d470698faec30db42",
+    "text": "OK, spójrzmy prawdzie w oczy – tak długo, jak wierzysz, że może to potencjalnie doprowadzić cię do największego skarbu wszechczasów, nie puścisz tej mapy, niezależnie od tego, jak podejrzana może to wyglądać. Za tym wszystkim musi kryć się tajemnica!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:03.339015Z"
+  },
+  "achievement.116.name": {
+    "src_hash": "878f3f2ec62d6545a32fdd992d8c97d7",
+    "text": "Rakieta w kieszeni",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:10.460982Z"
+  },
+  "achievement.116.description": {
+    "src_hash": "4497794385b9b4fe3e404f250a3f937a",
+    "text": "Albo nie uczysz się szybko, albo sprawia ci przyjemność podpalanie się. Lub po prostu szukasz fantazyjnego tytułu. W każdym razie powinieneś wiedzieć, że nie zaleca się przepuszczania gazów podczas eksperymentów z małym osłem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:10.462452Z"
+  },
+  "achievement.117.name": {
+    "src_hash": "9aa58a6a15302edc4561913f6430e9eb",
+    "text": "Złóż życzenie",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:10.462812Z"
+  },
+  "achievement.117.description": {
+    "src_hash": "61213e31c884ca7e18766cd088c107eb",
+    "text": "Ale zamknij oczy i nie mów nikomu, czego sobie życzyłeś, bo inaczej się to nie spełni!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:10.463631Z"
+  },
+  "achievement.118.description": {
+    "src_hash": "fa4e14fa0702e57fd692c82f9ac0d152",
+    "text": "Święta Bożego Narodzenia to Twój ulubiony czas w roku, a chłopcze, kochasz prezenty. Kup swoim przyjaciołom kilka fajnych rzeczy, chowaj je do czasu, aż zdecydujesz się je rozpakować raczej samodzielnie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:10.465042Z"
+  },
+  "achievement.119.description": {
+    "src_hash": "23283ebe01476cf36a838a12a1c69227",
+    "text": "Gniew Trującego Pomiotu - udało Ci się go przypadkowo wywołać. Twoje dni są policzone, a śmierć nieunikniona. Kiedyś. Gdzieś.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:16.921543Z"
+  },
+  "achievement.120.name": {
+    "src_hash": "5df12d0cda1fc7ed81607c9fd67db1e7",
+    "text": "Darmowe przedmioty!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:16.922236Z"
+  },
+  "achievement.120.description": {
+    "src_hash": "99c5ffdb3e4d216705d327691b96ec8e",
+    "text": "Tak! Poszukiwacze-strażnicy, przegrani-płakacze! Kogo obchodzi, skąd się to wszystko wzięło i czy trzeba było przeczołgać się przez sterty śmieci, żeby je zdobyć? To nic nie kosztuje!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:16.924812Z"
+  },
+  "achievement.121.name": {
+    "src_hash": "2177d1cc91140b5e6536eb79c15cb11c",
+    "text": "Kolejka górska",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:16.925883Z"
+  },
+  "achievement.121.description": {
+    "src_hash": "78ba96ca9ed0519e62a3b5a4e095bd93",
+    "text": "W górę i w dół, w górę i w dół... a potem wielka pętla! Czekaj - nie budują pętli w Kazordoon. Ale przejażdżki wagonami z rudą nadal są świetną zabawą!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:16.929069Z"
+  },
+  "achievement.122.description": {
+    "src_hash": "2feeee67f482e782b89fa3cab39e1a01",
+    "text": "Ty, Panie lub Pani, jesteś prawdziwym alchemikiem. Przeprowadzanie eksperymentów transmutacyjnych w celu znalezienia wszelkich możliwych kombinacji jest Twoją sekretną pasją od lat, a wyniki Twoich badań są niesamowite. Dzięki Tobie nauka właśnie nabrała rozpędu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:22.005624Z"
+  },
+  "achievement.123.description": {
+    "src_hash": "2fb28a79f4839daa23d471bf5099509e",
+    "text": "SUROWE! Siła przepływa przez Twoje ciało, serce bije szybciej, a adrenalina napędza każdy zamach bronią. Wszystko w małej buteleczce. Brak zwrotu pieniędzy za zniszczone meble. W przypadku dalszych pytań skonsultuj się ze swoim uzdrowicielem lub sprzedawcą mikstur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:22.007072Z"
+  },
+  "achievement.124.name": {
+    "src_hash": "cbee48b0972add12686a2ebae1910d94",
+    "text": "Kierować z ukrycia",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:22.007421Z"
+  },
+  "achievement.124.description": {
+    "src_hash": "13cda90b476f53aa61d8e477fc3ca1dd",
+    "text": "Czujesz, że potrafisz rozwiązać najtrudniejsze zagadki w mniej więcej minutę. Dodatkowo, istnieje niezłe zwiększenie obrażeń od zaklęć. Wszystko w małej buteleczce. Skutki - czuję się trochę głupio. W przypadku dalszych pytań skonsultuj się ze swoim uzdrowicielem lub sprzedawcą mikstur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:22.008925Z"
+  },
+  "achievement.125.description": {
+    "src_hash": "7d898b0acad8c6da7611dfab733d2b3b",
+    "text": "Poprawiony wzrok, strzały i bełty latające z prędkością światła i przygniatające wrogów dodatkowymi obrażeniami. Wszystko w małej buteleczce. Nie ma potrzeby spożywania marchwi. W przypadku dalszych pytań skonsultuj się ze swoim uzdrowicielem lub sprzedawcą mikstur.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:26.785829Z"
+  },
+  "achievement.126.description": {
+    "src_hash": "1cdc53b4557ab25b6a9c6248bf756087",
+    "text": "Ugh! Zamknij okna! Wyłącz słońce wychylające swoją brzydką, żółtą głowę, odetnij rozdzierający uszy śmiech korpulentnych dzieci twojego sąsiada. Ahhh. Obejmij słodką ciemność i ciszę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:26.787058Z"
+  },
+  "achievement.127.name": {
+    "src_hash": "cecf42cbbf4722065e1d2e320227c985",
+    "text": "Wpuść promień słońca",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:26.787500Z"
+  },
+  "achievement.127.description": {
+    "src_hash": "2c8c6156a137a6894a287c10c19611cc",
+    "text": "Powstań i zabłyśnij! Nadchodzi piękny nowy dzień - otwórz okno, poczuj ciepłe promienie słońca, popatrz na ptaki śpiewające na parapecie i zadbaj o swoje rośliny. Jaki jest powód, żeby nie być szczęśliwym?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T12:23:26.788789Z"
+  },
+  "achievement.128.name": {
+    "src_hash": "c0cc04ec2cd6f84371798c9655ddbc8b",
+    "text": "Zły moment",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:11:50.632677Z"
+  },
+  "achievement.128.description": {
+    "src_hash": "2dcacdc5c71f00d03a0dfcfa7ad11106",
+    "text": "Argh! Nie teraz! Jak to się dzieje, że te wielofunkcyjne narzędzia nigdy nie zawodzą, gdy używasz ich do czegoś zupełnie trywialnego, na przykład wyciskania soku, ale psują się, gdy desperacko musisz wspiąć się po linie, gdy goni cię ziejący ogniem smok?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:11:56.097219Z"
+  },
+  "achievement.129.description": {
+    "src_hash": "f162624f0d5c024bfe7c18f1f848ecd4",
+    "text": "Śmiejesz się z nieprzygotowanych poszukiwaczy przygód, którzy utknęli w wysokiej trawie lub szuwarowym lesie. A może rzeczywiście im pomagasz. Nazywają cię... 'Machete'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:11:56.098599Z"
+  },
+  "achievement.130.description": {
+    "src_hash": "fad383d43155a69943777c2a106e7e82",
+    "text": "Kosa przerzuciła Ci się przez ramię, słońce paliło Cię na plecach – sercem jesteś rolnikiem i uwielbiasz pracować na polach. A może po prostu tworzysz fantazyjne kręgi w zbożu, aby przestraszyć innych mężczyzn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:11:56.099986Z"
+  },
+  "achievement.131.name": {
+    "src_hash": "a2ced9f901b8a0fb65234bdd91822a4b",
+    "text": "Naturalny słodzik",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:11:56.100440Z"
+  },
+  "achievement.131.description": {
+    "src_hash": "e0b30c758c0e36d8d620381a3b40c47e",
+    "text": "Liberty Bay to idealne miejsce spotkań dla Ciebie, a zbieranie trzciny cukrowej to całkiem relaksujące zajęcie. Napijesz się herbaty z cukrem, kochanie?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:11:56.101959Z"
+  },
+  "achievement.132.name": {
+    "src_hash": "ce485436f64ea41db9bb33119dbc761b",
+    "text": "Domowe",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:01.802718Z"
+  },
+  "achievement.132.description": {
+    "src_hash": "8c10bfc6b64e75471341ad18b56701cc",
+    "text": "Yo-ho-ho i butelka rumu – oczywiście warzonego w domu, z ręcznie zbieranych i osobiście zbieranych roślin trzciny cukrowej. Teraz pozwól mu dojrzeć w dębowej beczce i ciesz się nim za około 10 lat. Lub dla niecierpliwych: zróbmy teraz paaaarty!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:01.804313Z"
+  },
+  "achievement.133.description": {
+    "src_hash": "c12e2de2ab78edb703fa4320cffb3e7a",
+    "text": "Skarby ukryte pod wydmami pustyni – masz nosa do ich znajdowania i wiesz, gdzie kopać. Może nie uczynią cię obrzydliwie bogatym, ale i tak są lśniące i ładne.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:01.805782Z"
+  },
+  "achievement.134.description": {
+    "src_hash": "8156408b7b6139769884443ab0221417",
+    "text": "Ty i twoja łopata - mecz stworzony w niebie. Albo piekło, jeśli już o tym mowa. W każdym razie gdzieś na dole. W magiczny sposób przyciągają Cię stosy kamieni i uwielbiasz je otwierać i widzieć, dokąd prowadzą Cię te dziury. Dobry biceps też.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:01.807231Z"
+  },
+  "achievement.135.description": {
+    "src_hash": "051563ae3ee183a29b083cfec0e317ff",
+    "text": "Każdy może Cię łatwo znaleźć, jeśli tylko podąża tropem okruszków ciasteczek. A dla Ciebie prawdziwa miłość oznacza oddanie ostatniego ciasteczka.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:01.808255Z"
+  },
+  "achievement.136.name": {
+    "src_hash": "187852b04f06f1a5818611503db3f9b6",
+    "text": "Ciasto to prawda",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:06.852310Z"
+  },
+  "achievement.136.description": {
+    "src_hash": "36779aec3ed88504f79536b2458bcce2",
+    "text": "A każdy, kto twierdzi inaczej, jest kłamcą.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:06.853866Z"
+  },
+  "achievement.137.name": {
+    "src_hash": "66a8d2c2c56aeba520ccd0f22df814df",
+    "text": "Słodki ząb",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:06.854562Z"
+  },
+  "achievement.137.description": {
+    "src_hash": "c915472f8bd6f1c9aed3009e8f6b27f2",
+    "text": "Słynny 'Ode to a Molten Chocolate Cake' został prawdopodobnie napisany przez Ciebie. Spędzanie deszczowego popołudnia przed kominkiem, owiniętego w koc i delektowanie się kakaowymi przysmakami, brzmi jak coś, co byś zrobił. Cieszyć się!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:06.856931Z"
+  },
+  "achievement.138.name": {
+    "src_hash": "c0e18f6ea34566bfd7f33c71ffcce943",
+    "text": "Z Wiśnią na Górze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:06.857736Z"
+  },
+  "achievement.138.description": {
+    "src_hash": "3c7a4db054d9d7fd011c1d7036dbd3b4",
+    "text": "Lubisz, gdy Twoje ciasto jest miękkie, z kawałkami owoców i przyjemnym lukrem cukrowym. I wolisz zrobić je sam. Czy zastanawiałeś się kiedyś nad otwarciem piekarni? Musisz być już naprawdę dobry!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:12.298347Z"
+  },
+  "achievement.139.name": {
+    "src_hash": "71b7f7e890d186e88892825e84adbee0",
+    "text": "Zmutowane prezenty",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:12.299089Z"
+  },
+  "achievement.139.description": {
+    "src_hash": "4008fc7321d6a13bb6c51070443a3f77",
+    "text": "Muahahaha to... zmutowana dynia! Po tym jak pomogłeś go zdjąć - POmogłeś, prawda? - odebrałeś nagrodę i dostałeś mniej lub bardziej dziwny prezent. Wesołego Halloween!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:12.311088Z"
+  },
+  "achievement.140.description": {
+    "src_hash": "b5a0164c9f0bbc745ec90e40d0dbabfd",
+    "text": "Jeden z Niosących Światło. Jeden z tych, którzy pomagali podtrzymać ogień w basenach i wspólnie walczyli z ciemnością. Demoniczne szepty za cienką zasłoną pomiędzy światami - dzięki Twojej pomocy ponownie zostały uciszony.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:12.313994Z"
+  },
+  "achievement.141.description": {
+    "src_hash": "163a1d2230e4d978ec350cffc85f7c7a",
+    "text": "Jesteś jednym z najbardziej oddanych Nosicieli Światła – bez ciebie demony z pewnością rozerwałyby zasłonę między światami. Rozpaliłeś każdy basen, podróżując wysoko i nisko, odpychając nieziemskie siły. Niech stanie się światło!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:12.317020Z"
+  },
+  "achievement.142.name": {
+    "src_hash": "34994f41097fed93e309c74cb42cc2f3",
+    "text": "Zabójca Bogów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:16.727605Z"
+  },
+  "achievement.142.description": {
+    "src_hash": "4333b4938f25aaad336d76ef7f953f26",
+    "text": "Pokonałeś inkarnacje Boga Węża i ostatnim potężnym zamachem wężowego berła odciąłeś jego dopływ siły życiowej. Historia władzy, oszustwa i korupcji dobiegła końca – czy… nie?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:16.728918Z"
+  },
+  "achievement.143.description": {
+    "src_hash": "9bb5130794b3b757e639743b23981cd9",
+    "text": "Uhm... kim jest ta osoba, obok której się właśnie obudziłeś? Rozbite kieliszki koktajlowe na podłodze, kwiaty w całym pokoju i dlaczego do cholery nosisz pierścionek? Wczorajszy dzień musiał być długi i dziwny...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:16.730364Z"
+  },
+  "achievement.144.description": {
+    "src_hash": "8a6cdf1dcd61804259edeb7a8f63fe51",
+    "text": "Długotrwałe związki po prostu nie są dla Ciebie. I za każdym razem, gdy myślisz, że jesteś zakochany, wkrótce potem okazuje się, że się mylisz. A może po prostu za każdym razem trafiasz na niewłaściwego kochanka – wykorzystywanego i zdradzonego. Bycie singlem może być po prostu lepsze.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:12:16.731970Z"
+  },
+  "arena.cmd.help.header": {
+    "src_hash": "f3353f677db0b5e52c4b5a7f26b937fa",
+    "text": "[Arena PvP] Dostępne komendy:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:10.330203Z"
+  },
+  "arena.cmd.modes.header": {
+    "src_hash": "64cafba9d270224276f7c49f961e94c3",
+    "text": "[Arena PvP] Dostępne tryby:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:10.331156Z"
+  },
+  "arena.cmd.stats.no_profile": {
+    "src_hash": "4d5f5f3b4418cc27f2c83b33343fb33b",
+    "text": "[Arena] Nie znaleziono jeszcze profilu areny. Dołącz do meczu, aby go stworzyć!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:10.332515Z"
+  },
+  "arena.cmd.stats.header": {
+    "src_hash": "6e4a70a9417e2559e2c6b087b0f0c519",
+    "text": "[Arena PvP] Twoje statystyki:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:10.333681Z"
+  },
+  "arena.cmd.ranking.empty": {
+    "src_hash": "d8c2e036f9deba0cf3d5cdfa19b747ee",
+    "text": "[Arena] Brak dostępnych danych rankingowych.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:17.039225Z"
+  },
+  "arena.cmd.history.empty": {
+    "src_hash": "65ee78bc0c7de6099eee12e953ee4017",
+    "text": "[Arena] Nie ma jeszcze historii meczów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:17.041461Z"
+  },
+  "arena.cmd.history.header": {
+    "src_hash": "583ed7bc987fcc60ef941f96508c2911",
+    "text": "[Arena PvP] Ostatnie 10 meczów:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:17.042450Z"
+  },
+  "arena.cmd.join.usage": {
+    "src_hash": "100738c2fd66c950518168398fae12dd",
+    "text": "[Arena] Użycie: !arena dołącz <tryb>. Wpisz '!arena modes', aby wyświetlić dostępne tryby.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:17.044348Z"
+  },
+  "arena.cmd.join.unknown_mode": {
+    "src_hash": "eb9c81bafe56653d2927821921fc45c2",
+    "text": "[Arena] Nieznany tryb '{0}'. Wpisz '!arena modes', aby wyświetlić dostępne tryby.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:23.848735Z"
+  },
+  "arena.cmd.join.already_in_match": {
+    "src_hash": "87867de4b5e0285cf39940b520fce9a5",
+    "text": "[Arena] Jesteś już w meczu!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:23.851504Z"
+  },
+  "arena.cmd.join.level_required": {
+    "src_hash": "be134ab927fa2fe40ea0f865482a6642",
+    "text": "[Arena] Aby dołączyć do areny, musisz mieć co najmniej poziom {0}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:23.854107Z"
+  },
+  "arena.cmd.join.success": {
+    "src_hash": "79470704af55441db0f6568f50545909",
+    "text": "[Arena] Dołączyłeś do kolejki {0}! Szukanie przeciwników...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:23.854878Z"
+  },
+  "arena.cmd.join.failed": {
+    "src_hash": "0d71659d84c50b7528f52b6b5f063893",
+    "text": "[Arena] Nie udało się dołączyć do kolejki. Spróbuj ponownie później.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:29.960359Z"
+  },
+  "arena.cmd.leave.not_in_queue": {
+    "src_hash": "5cdae5913ba9d4554f3ab5849246ea30",
+    "text": "[Arena] Nie znajdujesz się w żadnej kolejce.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:29.961486Z"
+  },
+  "arena.cmd.leave.success": {
+    "src_hash": "ed333b3b38a2476e30b692a3354f9b39",
+    "text": "[Arena] Opuściłeś kolejkę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:29.973775Z"
+  },
+  "arena.cmd.leave.failed": {
+    "src_hash": "d308580ea69815cf42b1cede3adb6462",
+    "text": "[Arena] Nie udało się opuścić kolejki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:29.974789Z"
+  },
+  "arena.npc.greet_msg": {
+    "src_hash": "6a1356c449fc828d77f8811e2e73f3d9",
+    "text": "Pozdrawiam, wojowniku! Czy jesteś tu na {arena}? Pomogę Ci znaleźć godnych siebie przeciwników!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:29.976409Z"
+  },
+  "arena.reward.bonus": {
+    "src_hash": "00e2e0e6ce55ea7ae52f48437c004352",
+    "text": "[Arena] Nagrody dodatkowe: {0} ({1} Punkty Areny)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:37.435314Z"
+  },
+  "arena.reward.mvp": {
+    "src_hash": "e0a9bab0bd58c3d6b99a63d83eb8285e",
+    "text": "MVP +{0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:37.435739Z"
+  },
+  "arena.result.announcement": {
+    "src_hash": "dd89e784f6580bc6b549ac235607cea3",
+    "text": "[Arena {0}] {1} pokonał {2}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:37.436874Z"
+  },
+  "arena.title.promotion": {
+    "src_hash": "4851d401818d1f2f861333c4cc59bdeb",
+    "text": "[Arena] Gratulacje! Zdobyłeś tytuł: {0}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:37.437665Z"
+  },
+  "arena.title.broadcast": {
+    "src_hash": "66095242484471b5864cba16ebc347af",
+    "text": "[Arena] {0} osiągnął rangę {1}! (MMR: {2})",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:43.731347Z"
+  },
+  "arena.title.no_profile": {
+    "src_hash": "d1e33df7f143e5f134ed0d008144525c",
+    "text": "[Arena] Nie ma jeszcze profilu areny. Najpierw rozegraj mecz!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:43.732076Z"
+  },
+  "arena.title.header": {
+    "src_hash": "4da68b98701f685f13e1931a8c97f501",
+    "text": "[Tytuł areny]",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:43.732573Z"
+  },
+  "arena.death.message": {
+    "src_hash": "40b6c9cd92253eec43685d7782086750",
+    "text": "[Arena] Zostałeś zabity!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:43.733104Z"
+  },
+  "arena.shop.header": {
+    "src_hash": "e3da1c952343081bfdc46d83ec6652ae",
+    "text": "[Sklep na arenie] Twoje punkty na arenie: {0}",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:19:43.733834Z"
+  },
+  "achievement.145.description": {
+    "src_hash": "fe558d408f96c4b5f33f73cbd752f695",
+    "text": "Zaufanie? Miłość? Wierność? Pa! Przestarzałe uczucia. Tak długo, jak dobrze się bawisz, nie masz nic przeciwko nadeptaniu wielu serc. Najlepiej w butach bojowych.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:10.509797Z"
+  },
+  "achievement.146.name": {
+    "src_hash": "556290b5ddc34eb5bc72736485a13c9b",
+    "text": "Szybka śmierć",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:16.374732Z"
+  },
+  "achievement.147.description": {
+    "src_hash": "531e90c2dbabb65431b6153fbd4643aa",
+    "text": "Co jest najlepsze w życiu? Aby zmiażdżyć swoich wrogów. Widzieć ich pędzonych przed tobą. A potem może napić się dobrej herbaty.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:16.375760Z"
+  },
+  "achievement.148.name": {
+    "src_hash": "2adaecb970dc093583c9352389bb8b5e",
+    "text": "Życie na ulicach",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:16.376407Z"
+  },
+  "achievement.148.description": {
+    "src_hash": "8afe478174d3b178687bbf1748358bec",
+    "text": "Jesteś żebrakiem, bezdomnym, nosisz brudne i podarte ubrania. Ale to nie znaczy, że musisz kogoś o coś błagać – i nadal zachowasz swoją dumę. Cienkie pióra niekoniecznie czynią piękne ptaki – ważniejsze jest to, co jest pod nimi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:16.377941Z"
+  },
+  "achievement.149.name": {
+    "src_hash": "7bbd4c24261cb037da68cd70f7a27371",
+    "text": "Czaszka i kości",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:16.378363Z"
+  },
+  "achievement.149.description": {
+    "src_hash": "ccc9aeb4ddfb595de65bc0dad23c5706",
+    "text": "Nosząc insygnia i ciemne szaty Bractwa Kości, wędrujesz po krainach, szerząc strach i ból, tworząc nowych żołnierzy dla nekromanckiej armii, która wkrótce powstanie. Witamy Bractwo.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:21.245826Z"
+  },
+  "achievement.150.description": {
+    "src_hash": "5b1bd2859319bb02c10e2a5e166d75b5",
+    "text": "Nie boisz się koszmarów, podróżujesz w nich - stawiając czoła niezliczonym koszmarom i walcząc z losem, który ze sobą niosą. Niewielu wierzy w mroczne przepowiednie, które przywołujesz z tych snów, ale ci, którzy walczą u twojego boku jako Rycerze Koszmarów.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:21.247663Z"
+  },
+  "achievement.151.description": {
+    "src_hash": "10078b17dd386778e72016cd34ce5a1a",
+    "text": "Każde miasto powinno być dumne, że może nazwać kogoś takiego jak Ty swoim mieszkańcem. Utrzymujesz ulice w czystości i pomagasz w rozstrzyganiu zwykłych sporów przed zajezdnią. Prawdopodobnie masz też kota i lubisz wędrówki.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:21.249049Z"
+  },
+  "achievement.152.name": {
+    "src_hash": "026e04b1091097b779fb875bdd8b0799",
+    "text": "Zguba Demonów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:21.249470Z"
+  },
+  "achievement.152.description": {
+    "src_hash": "80d3272ffcad94003462a5b47620ba5b",
+    "text": "Nie nosisz tego kołka tylko dla dekoracji – jesteś gotowy go użyć. Zazwyczaj można cię zobaczyć, jak przemierzasz najgłębsze lochy, zostawiając ślad zabitych demonów. Ktokolwiek ośmieli się stanąć ci na drodze, powinien przygotować się na śmierć.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:21.250845Z"
+  },
+  "achievement.153.name": {
+    "src_hash": "9a0f7d15e65e4d16da15fa0b6f29cf30",
+    "text": "O Wilkach i Niedźwiedziach",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:26.336258Z"
+  },
+  "achievement.153.description": {
+    "src_hash": "e033ef3c4bb0b2e5b70754df9a9cc3d5",
+    "text": "Jeden z naturą, drugi z dziką przyrodą. Surowa i zwierzęca moc, wyostrzone zmysły, wycie na najwyższych klifach i ryczenie w najgęstszych lasach – to Ty.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:26.337475Z"
+  },
+  "achievement.154.name": {
+    "src_hash": "47b1db7da97d57dc9f84e24852768071",
+    "text": "Polowanie ze stylem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:26.337855Z"
+  },
+  "achievement.154.description": {
+    "src_hash": "8051bcab4eb152bb71f3cf266a676d9d",
+    "text": "Za dnia można cię spotkać w lesie zakamuflowanego, zastawiającego pułapki lub goniącego grubą zwierzynę, nocą zaś siedzisz przy ognisku i dzielisz się swoimi historiami o polowaniach. Jesz to, na co upolowałeś, i nosisz to, co zdarłeś ze skóry. Życie mogłoby tak trwać wiecznie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:26.339578Z"
+  },
+  "achievement.155.description": {
+    "src_hash": "7c642090296309c8b8cebb60c30e4dd0",
+    "text": "I pamiętaj: nigdy nie próbuj uczyć świni śpiewać. To marnuje Twój czas i denerwuje świnię.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:26.340430Z"
+  },
+  "achievement.156.description": {
+    "src_hash": "262ce6c481cd5223d3250fd35fc4d732",
+    "text": "Z ostrym ostrzem i w pełni wyposażonym w solidną, pełną zbroję płytową, szarżujesz na swoich wrogów zarówno z siłą, jak i męstwem. Zawsze jest dziewczyna do uratowania i smok do zabicia dla ciebie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:31.682962Z"
+  },
+  "achievement.157.description": {
+    "src_hash": "f211619ecbc214aa72ce5b88289aa5ba",
+    "text": "Zaczynasz dzień od kąpieli w garnku ze złotem i nie masz nic przeciwko pochwaleniu się swoim bogactwem, przechadzając się po ulicach w najlepszym ubraniu – w końcu to Twoje ciężko zarobione pieniądze! Wolisz, żeby zwracano się do Ciebie za pomocą 'Your Highness'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:31.684511Z"
+  },
+  "achievement.158.name": {
+    "src_hash": "5882fa99fda6a532d7bc66a12a962443",
+    "text": "W śnieżycy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:31.684892Z"
+  },
+  "achievement.158.description": {
+    "src_hash": "883754cd8f726ea55fcac149ff8dc89a",
+    "text": "Zalegający śnieg i burze z gradem nie powstrzymają Cię przed dotarciem do miejsca, do którego chcesz się udać. Jesteś doskonale przygotowany na każdą wyprawę w wieczny lód i wiesz, jak ogrzać stopy. Jeśli jesteś kobietą, to także spore osiągnięcie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:31.686447Z"
+  },
+  "achievement.159.name": {
+    "src_hash": "f1a3629a6ad78f7775aa9a29b44a47be",
+    "text": "Tysiąc jeden",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:31.686842Z"
+  },
+  "achievement.159.description": {
+    "src_hash": "d76ed673f38bd13dec84f55d72ba2d4f",
+    "text": "W gorącym pustynnym słońcu czujesz się jak w domu z piaskiem między palcami, a Twoim ulubionym środkiem podróżowania jest latający dywan. Prawdopodobnie możesz też wykonać ten taniec izolujący głowę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:35.997639Z"
+  },
+  "achievement.160.name": {
+    "src_hash": "e4e28e54eecbb0efe7d77914e2949b5e",
+    "text": "Awanturnik",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:35.998007Z"
+  },
+  "achievement.160.description": {
+    "src_hash": "7b5979b172d6b607010789c18d020abe",
+    "text": "Bądź dżentelmenem fortuny, walczącym i hulającym na pełnym morzu, szukającym łupów i dziewcząt! Nie odpowiadajcie przed nikim ani przed przeklętą monarchią, a wasze życie nie jest dla liliowej wątroby. Tak, kolego!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:35.999342Z"
+  },
+  "achievement.161.name": {
+    "src_hash": "3d0d268e56de49aa2a787b642dfa9af1",
+    "text": "Droga Szamana",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T13:57:35.999701Z"
+  },
+  "achievement.161.description": {
+    "src_hash": "743c1522e80da4ab3e26d94314cb8c81",
+    "text": "Potrząsanie grzechotką i taniec wokół ogniska w rytm bębnów z dżungli brzmi jak coś, co lubisz robić. Poza tym dredy to wygodny sposób noszenia włosów - nie wymagają czesania!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:02.667230Z"
+  },
+  "achievement.162.name": {
+    "src_hash": "961ee3e3448e7b9cd0e24c4213c24092",
+    "text": "Rytualista",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:08.165726Z"
+  },
+  "achievement.162.description": {
+    "src_hash": "a21b164ed6d8cf00ef41119f0a9e2e5b",
+    "text": "Mógłbyś być autorem opus magnum „Jak przywołać ostateczną bestię z piekielnych głębin, tom I”. Lub, jeśli twój umysł i serce są czyste, wolisz przywoływać istoty, aby pomagały innym. A może po prostu małego kotka, żeby mieć kogoś do przytulania.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:08.168781Z"
+  },
+  "achievement.163.name": {
+    "src_hash": "014927d53f9c8a9171401a4e68dcadae",
+    "text": "Mistrz wojny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:08.169596Z"
+  },
+  "achievement.163.description": {
+    "src_hash": "a0c43bb5e2bc3b52c7e28146a5226f40",
+    "text": "Nie boisz się pokazać swoich barw w ogniu bitwy. Wrogowie boją się twojej śmiercionośnej lancy i nieprzeniknionej zbroi. Lista wygranych wojen jest imponująca. Witaj i zabijaj!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:08.171061Z"
+  },
+  "achievement.164.description": {
+    "src_hash": "986ac36f291bd4ce53e50b234c40e095",
+    "text": "Odwaga jest dla słabych – nie ma znaczenia, jak wygrasz bitwę, ważne, że odniesiesz zwycięstwo. Gruby pancerz po prostu utrudniałby Twoje ruchy, dlatego powinieneś zachować lekkość i polegać na szybkości i umiejętnościach, zamiast chować się w niewygodnej skorupie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:08.174427Z"
+  },
+  "achievement.165.name": {
+    "src_hash": "379e2d469d453c31d92ec4a4c7a19290",
+    "text": "Peazekeeper",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:14.496320Z"
+  },
+  "achievement.165.description": {
+    "src_hash": "48689152536399b3baea7b5a84c4543f",
+    "text": "Jesteś skromnym wojownikiem, który nie potrzebuje bogactwa ani specjalistycznego sprzętu do podróżowania i walki. Czujesz się jak w domu na północnych ziemiach Zao i odegrałeś swoją rolę w walce z korupcją.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:14.497788Z"
+  },
+  "achievement.166.name": {
+    "src_hash": "ef3b82f673130020d575784d5ceb4b55",
+    "text": "Yalahari Mądrości",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:14.498328Z"
+  },
+  "achievement.166.description": {
+    "src_hash": "c3ca44c44f19f8d12290f2a7e60a1f35",
+    "text": "Twoje czyny na rzecz Yalahar charakteryzują się zazwyczaj głębokim wglądem i przemyślanymi działaniami. Dzięki Tobie Yalahar może mieć szansę na spokojny rozwój i życie w nim szczęśliwych ludzi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:14.499691Z"
+  },
+  "achievement.167.name": {
+    "src_hash": "c5aeadfedc0c3a287a80d5beb8f04033",
+    "text": "Yalahari z Power",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:14.500181Z"
+  },
+  "achievement.167.description": {
+    "src_hash": "43477f5ccc0025b6a994a5f9c1a21025",
+    "text": "Bronisz Yalahar z brutalną siłą i jesteś gotowy poprowadzić go do chwalebnej bitwy, jeśli to konieczne. Dzięki Tobie Yalahar będzie wystarczająco potężny, aby przeciwstawić się każdemu wrogowi.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:20.436846Z"
+  },
+  "achievement.168.name": {
+    "src_hash": "3e5da0eb3b000d276759bee56068dfd1",
+    "text": "Kawałek Ciasta",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:20.437658Z"
+  },
+  "achievement.168.description": {
+    "src_hash": "05a2cd809d2ef3a16cd3db9db892d516",
+    "text": "Życie może być takie proste, jeśli masz odpowiednie ciasto we właściwym czasie - a pieczenie wielu różnych jest mistrzowskie, więc powinieneś być przygotowany na prawie wszystko, co życie ci przyniesie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:20.440444Z"
+  },
+  "achievement.169.name": {
+    "src_hash": "4d9a8d9067a945eda6cf153c069dce8f",
+    "text": "Absolwenci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:20.441098Z"
+  },
+  "achievement.169.description": {
+    "src_hash": "a7caeb030bc7bb84188412a49b1cadf6",
+    "text": "Jesteś uważany za pierwszorzędnego absolwenta Akademii Magii w Edron dzięki swoim pionierskim odkryciom i udanym studiom w dziedzinie magii eksperymentalnej i rozwoju zaklęć. Czy zastanawiałeś się kiedyś nad nauczaniem zaklęcia Armageddon?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:20.444490Z"
+  },
+  "achievement.170.name": {
+    "src_hash": "21305b754e03843876abc27387a0e57e",
+    "text": "Warlock",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:25.170440Z"
+  },
+  "achievement.170.description": {
+    "src_hash": "c2d1470c311741055685ca69684f00e2",
+    "text": "Jesteś biegły w mroczniejszych drogach magii i zwykle można cię spotkać siedzącego w kręgu świec i czaszek, mamroczącego niewypowiedziane słowa. Nie noś rzeczy zbyt daleko, bo demony mogą cię dopaść.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:25.172037Z"
+  },
+  "achievement.171.description": {
+    "src_hash": "e705a1a84550885f2b5e92de63635e17",
+    "text": "Rzeczywiście masz słabość do królików. Może króliki, które uratowałeś dzisiaj, będą królikami, które uratują cię jutro. Kiedy jesteś naprawdę głodny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:25.175026Z"
+  },
+  "achievement.172.name": {
+    "src_hash": "a3ea320db9c35beb0f48d145e3e367ab",
+    "text": "Świnka morska",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:25.175915Z"
+  },
+  "achievement.172.description": {
+    "src_hash": "ab354fe78c80315cacd81eeeb3e7e82e",
+    "text": "Prawdziwi naukowcy znają swój sprzęt. Testowanie nowych wynalazków to codzienna praca każdego ciężko pracującego badacza. Nie okazałeś strachu i zabrałeś na przejażdżkę cały nowy sprzęt Spectulusa i Sinclaira.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:25.177441Z"
+  },
+  "achievement.173.description": {
+    "src_hash": "f4f337400dc74d7bed45e12a3ccf7e32",
+    "text": "Poszedłeś do lasu, spotkałeś Rottina Wooda i żonatych mężczyzn i pomogłeś im w ich obozie. Aha, i nie martw się o tych kupców. Nie odważą się wspomnieć o dziwnie dużych sumach złota, które faktycznie posiadali, a których teraz brakuje.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:29.961045Z"
+  },
+  "achievement.174.description": {
+    "src_hash": "6966405330906d8370ce04102842182c",
+    "text": "Zdałeś egzamin i pomogłeś Łowcy Duchów w testowaniu sprzętu, badaniu zjawisk nadprzyrodzonych i łapaniu duchów – to do ciebie zadzwonią.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:29.963134Z"
+  },
+  "achievement.175.name": {
+    "src_hash": "49283af40fc2b878184481dc93f9cff4",
+    "text": "Ekstremalna degustacja",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:29.963968Z"
+  },
+  "achievement.175.description": {
+    "src_hash": "c79e01e2e77ec720196f1f45d78acaa0",
+    "text": "Prawie wszystkie rośliny, które testowałeś dla Chartana w Zao, były niejadalne – spróbowałeś ich wszystkich, a mimo to nadal stoisz! Powinnaś jednak teraz zaczerpnąć świeżego powietrza.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:36:29.966759Z"
+  },
+  "arena.cmd.help.join": {
+    "src_hash": "d9f79e39301e30c2e0e95d999023ed45",
+    "text": "!arena dołącz <tryb> - Dołącz do kolejki dobierania graczy",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T14:45:07.272432Z"
+  },
+  "achievement.176.description": {
+    "src_hash": "5d3cfe4743bff09c510657bb7e61d24e",
+    "text": "Odważnie wkroczyłeś na wyspę ciast. Czy jest na świecie piękniejsze i smaczne miejsce?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:41.421140Z"
+  },
+  "achievement.177.description": {
+    "src_hash": "51058a2daa7ded3c289959f5f6bf83c8",
+    "text": "Pocieszyłeś dziecko demona i zwróciłeś je matce. Szybkie liczenie palców pokaże, czy udało Ci się przetrwać bez szwanku.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:46.990588Z"
+  },
+  "achievement.178.name": {
+    "src_hash": "f8e79e94e2824e14b4204b40f5ff04b4",
+    "text": "Niania z piekła rodem",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:46.990885Z"
+  },
+  "achievement.178.description": {
+    "src_hash": "ef4fdfbe697af567538b4c3c56732826",
+    "text": "Pocieszyłeś grupę demonicznych dzieci i zwróciłeś je matce. Nie przejmuj się śladami poparzeń, nie przejmuj się kosmykami siwych włosów, nie przejmuj się nocami, kiedy budzisz się z krzykiem. Było warto... chyba... jakoś.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:46.991836Z"
+  },
+  "achievement.179.description": {
+    "src_hash": "c650929a0b1de461f38d5def00242fa5",
+    "text": "Przepłynąłeś morza podziemne z Kapitanem Duchem. Pomimo niebezpieczeństw ty i twoi koledzy z załogi stawiliście czoła wyzwaniu.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:46.992504Z"
+  },
+  "achievement.180.description": {
+    "src_hash": "4541a32298fca1a7c616603f4dc21f75",
+    "text": "Kilka razy żeglowałeś po morzach dolnych z Kapitanem Duchem. Niebezpieczeństwa czyhające w Netherze stały się dla ciebie znajome i niedoświadczeni podróżnicy zwracają się do ciebie po radę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:46.993346Z"
+  },
+  "achievement.181.name": {
+    "src_hash": "9341d32eff94e1b942de50358e5f0ac0",
+    "text": "Netherowy pirat",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:52.648432Z"
+  },
+  "achievement.181.description": {
+    "src_hash": "e91bea84dc299700e60b680951fdff29",
+    "text": "Nie bojąc się śmierci ani duchów, podróżowałeś z kapitanem duchów kilka razy i jesteś doświadczonym podróżnikiem po zaświatach. Umarli i żywi szepczą z uznaniem o twoich wyczynach.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:52.649364Z"
+  },
+  "achievement.182.name": {
+    "src_hash": "27dfd73773c0c3faa6e380dc2780ac09",
+    "text": "Plaga Śmierci",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:52.649629Z"
+  },
+  "achievement.182.description": {
+    "src_hash": "a8e797e3ae120fc2661e561368dae98c",
+    "text": "Jesteś władcą Morza Netheru i podróżowałeś z kapitanem-duchem tyle razy, że znasz jego statek i niebezpieczeństwa czyhające na Morzu Netheru od podszewki. Śmiejesz się śmierci w twarz i możesz powrócić jako widmowy pirat w zaświatach!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:52.650625Z"
+  },
+  "achievement.183.name": {
+    "src_hash": "a9e98790b62c39a28b1514478bc5de71",
+    "text": "Zapalniczka",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:52.650841Z"
+  },
+  "achievement.183.description": {
+    "src_hash": "7ab745448850c4e23a426826b87edbb5",
+    "text": "Pomogliście podtrzymać ogień czarownic. Uważaj tylko na palce, jest gorąco!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:59.764389Z"
+  },
+  "achievement.184.name": {
+    "src_hash": "142d0c7c5d96449f318fdba126883128",
+    "text": "Pomocnik Czarownic",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:59.764719Z"
+  },
+  "achievement.184.description": {
+    "src_hash": "ffb4b9ee3d8b50cc3e42da3b005020bd",
+    "text": "Poświęciłeś składniki, aby stworzyć ochronny napar czarownic.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:59.765192Z"
+  },
+  "achievement.185.name": {
+    "src_hash": "6caec29927843945c535d26410a2501e",
+    "text": "Zguba Banebringerów",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:59.765603Z"
+  },
+  "achievement.185.description": {
+    "src_hash": "a84518320ac9f90e2c4904923d7d4522",
+    "text": "Poświęciłeś wiele składników, aby stworzyć ochronny napar czarownic i odegrałeś znaczącą rolę w wysiłkach mających na celu odparcie przerażających złoczyńców. Wadą jest to, że nawet złoczyńcy mogą cię zauważyć...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:29:59.766598Z"
+  },
+  "achievement.186.description": {
+    "src_hash": "ec148d44092496e77704d125f2fd71f1",
+    "text": "Aby podtrzymać ogień czarownic, zniszczyłeś dużą część drewna ożywianego przez niosących zgubę. Niektórym może się wydawać, że Twoja fascynacja ogniem jest… niepokojąca.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:30:05.138619Z"
+  },
+  "achievement.187.name": {
+    "src_hash": "3b4fd11da1673a39803db90cbaf52dea",
+    "text": "Piroman",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:30:05.138830Z"
+  },
+  "achievement.187.description": {
+    "src_hash": "41f6cc5e7ab1388edccc692ddf8812fe",
+    "text": "Miłość... ogień! Tak... błyszcząco! Muszę... buuuurrrrn!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:30:05.139278Z"
+  },
+  "achievement.188.name": {
+    "src_hash": "3117cdc933c39a8a1105d7a57edf255e",
+    "text": "Honorowa Czarownica",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:30:05.139511Z"
+  },
+  "achievement.188.description": {
+    "src_hash": "1de3d7bfeae6cc124d543e21df4279c0",
+    "text": "Twoje wysiłki w walce z zgubami nie pozostały niezauważone. Jesteś legendą wśród czarownic, a twoje imię jest szeptane z podziwem i podziwem.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:30:05.140244Z"
+  },
+  "achievement.189.name": {
+    "src_hash": "7182db5b103f52be42fbef662fdaf45e",
+    "text": "Urodzony kowboj",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:30:09.208462Z"
+  },
+  "achievement.189.description": {
+    "src_hash": "3a1fbc7de9927ab355cc6c02ab1b6fb8",
+    "text": "Och, radość z jazdy! Właśnie zdobyłeś swojego pierwszego własnego wierzchowca. Dogodnie, nie potrzebujesz nawet stajni, ale możesz ją przywołać, kiedy tylko chcesz.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:30:09.209338Z"
+  },
+  "achievement.190.name": {
+    "src_hash": "496f1b6bd83e9d82980deb2068058f5b",
+    "text": "Petrolog",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T15:30:09.209557Z"
+  },
+  "achievement.190.description": {
+    "src_hash": "76b48e99cada5e4de24cbf1bb9a07479",
+    "text": "Kamienie zawsze Cię fascynowały. Podobnie jak szansa na znalezienie w jednym z nich czegoś naprawdę cennego. Statystycznie powinieneś już odkryć kilka fajnych skarbów. Ale z drugiej strony większość statystyk jest pomijana przez Mother Disfortune.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:40.483187Z"
+  },
+  "achievement.191.name": {
+    "src_hash": "5fb9162d879b82640385fd295d42994d",
+    "text": "Ukryte moce",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:44.360056Z"
+  },
+  "achievement.191.description": {
+    "src_hash": "f12eb29bd1b2fbf5038807258bea4bdb",
+    "text": "Odkryłeś ukryte moce Starożytnych – odtąd będą ci pomagać w twoich przygodach.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:44.361934Z"
+  },
+  "achievement.192.name": {
+    "src_hash": "64baab5f0f4f3182db3ccad92210e038",
+    "text": "Podoba mi się. Fantazyjne",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:44.362815Z"
+  },
+  "achievement.192.description": {
+    "src_hash": "32933c7e97474f16d29891c0c3c8324a",
+    "text": "Na pewno wiesz, jak wydobyć to, co najlepsze ze swoich mebli i elementów dekoracyjnych. Piękny.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:44.364456Z"
+  },
+  "achievement.193.name": {
+    "src_hash": "c40650647932fb0ffd179f7c5ecc035d",
+    "text": "Głęboko po skórze",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:44.365158Z"
+  },
+  "achievement.193.description": {
+    "src_hash": "d1516b13892f75f04e808605850ecfb7",
+    "text": "Zawsze nosisz przy sobie swój obsydianowy nóż i nie zawahasz się go użyć. Obdarłeś ze skóry niezliczoną ilość małych i większych stworzeń i tak: zazwyczaj nie są one piękniejsze w środku. To raczej krew, gore i tak dalej...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:49.824420Z"
+  },
+  "achievement.194.name": {
+    "src_hash": "bd36c84aa694bf242692a99e10c02358",
+    "text": "Popiół w pył",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:49.824830Z"
+  },
+  "achievement.194.description": {
+    "src_hash": "af0d14fd16529162ddba7ee2378bccc3",
+    "text": "Stawianie wampirów i demonów stało się niemal Twoim zawodem. Dbasz o to, aby zebrać nawet najmniejszą ilość cząstek złego pyłu. Uważaj na krzemicę.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:49.825954Z"
+  },
+  "achievement.196.name": {
+    "src_hash": "da58e5c87c9515997052b0a43ba4e272",
+    "text": "Bezpiecznie przechowywane",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:49.826336Z"
+  },
+  "achievement.196.description": {
+    "src_hash": "9b7579dc084b04ff446c4e07f2cecd33",
+    "text": "Nie martw się, nikt nie będzie mógł Ci tego odebrać. Prawdopodobnie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:49.827081Z"
+  },
+  "achievement.197.description": {
+    "src_hash": "ca343bd243a96c5cf219162c7d9cc3e2",
+    "text": "Na bogów! Co to było?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:54.981397Z"
+  },
+  "achievement.198.name": {
+    "src_hash": "b13f1c61350dc8a2f54ef3198bfe5152",
+    "text": "Cichy zwierzak",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:54.981777Z"
+  },
+  "achievement.198.description": {
+    "src_hash": "13b5f12d71bc53017e58689f66e15c02",
+    "text": "Awww. Twój własny przyjaciel – złota rybka – jest uroczy, lśniący i nie może narzekać, jeśli zapomnisz go nakarmić. Z pewnością rozjaśni Twój dzień!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:54.982852Z"
+  },
+  "achievement.199.description": {
+    "src_hash": "e1dcc35179bed99da42bcb8bdc91c072",
+    "text": "Skakanie, skakanie po śniegu – to najzabawniejszy sposób! Robienie śladów w pośpiechu - im bardziej się śpieszysz, tym więcej zabawy! Lizanie sopli przez cały dzień - Zimo, nigdy nie odchodź!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:54.984055Z"
+  },
+  "achievement.200.name": {
+    "src_hash": "9986dc799065d480947ec21081d26f6f",
+    "text": "Mroczny kapłan voodoo",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:12:54.984587Z"
+  },
+  "achievement.200.description": {
+    "src_hash": "e1d9bd7d254419f1c5ae009f32c180e1",
+    "text": "Złowrogie klątwy, zła magia – nie wahasz się przed karaniem innych wątpliwymi środkami. Ktoś właśnie rzucił ci dziwne spojrzenie – gdzie znowu jest ta igła?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:13:02.647426Z"
+  },
+  "achievement.201.description": {
+    "src_hash": "03c3fb4e39e552637ab13177db9d9b27",
+    "text": "Dom jest tam, gdzie aktualnie znajduje się Twoje ulubione miejsce polowań i choć niektóre miejsca możesz cenić bardziej niż inne, nigdy nie czujesz się na tyle przywiązany, by naprawdę zostać w jednym mieście na dłużej. Spakuj wszystkie swoje rzeczy - czas ruszyć dalej.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:13:02.650814Z"
+  },
+  "achievement.202.description": {
+    "src_hash": "588479cfdbebac2967a3c7140b809838",
+    "text": "Powiedziałeś Jackowi prawdę, tłumacząc, że ty i Spectulus popełniliście błąd, próbując go przekonać, że jest zupełnie inną osobą.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:13:02.652911Z"
+  },
+  "achievement.203.description": {
+    "src_hash": "92394e61f6acaed8d882f9c7ee58b599",
+    "text": "Nie powiedziałeś Jackowi prawdy o błędzie, jaki popełniliście ze Spectulusem, próbując go przekonać, że jest zupełnie inną osobą. Do końca swoich dni będzie żył w niepewności.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:13:02.655543Z"
+  },
+  "achievement.204.description": {
+    "src_hash": "d68c25e5e5af40cd260367b4e42546bf",
+    "text": "Stowarzyszenie Combined Magical Winterberry niniejszym honoruje ciągłe bezinteresowne poświęcenie i niezwykłe wysiłki w ramach Dorocznego Jesiennego Winobrania.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:13:02.657799Z"
+  },
+  "achievement.205.description": {
+    "src_hash": "6e17c88dc8284624cb9449f6e9461ed7",
+    "text": "Ty i twoi przyjaciele trzykrotnie pokazaliście trzem czarodziejom swoją lojalność – jestem pewien, że przynajmniej jeden z nich jest prawdopodobnie wiecznie wdzięczny i niezmiernie dumny z ciebie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:13:07.068877Z"
+  },
+  "achievement.206.name": {
+    "src_hash": "eb15238a0e748e87a4378d4ea5ece422",
+    "text": "Mistrz zmiennokształtny",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:13:07.069325Z"
+  },
+  "achievement.206.description": {
+    "src_hash": "81e0ff6bef569e916b9024ccd96c4b7d",
+    "text": "Opanowałeś wyzwanie Kuriks we wszystkich możliwych kształtach.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T18:13:07.070016Z"
   }
 }

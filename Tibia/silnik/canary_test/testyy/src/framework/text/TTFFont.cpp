@@ -430,6 +430,49 @@ const AtlasGlyph* TTFFont::rasterizeGlyph(FT_Face face, uint32_t glyphIndex, uin
 }
 
 /**
+ * @brief Uploads any pending glyph rasterizations to the GPU via the DrawPool.
+ *
+ * Iterates over all atlas slots and, for each one with pending uploads,
+ * schedules a GL-thread action that either creates the texture from the full
+ * atlas image (first use) or does incremental sub-pixel uploads.
+ *
+ * Called from drawText() (immediate path) and CachedText::drawTTF() (cached path)
+ * so that atlas textures are always ready before quads reference them.
+ */
+void TTFFont::flushPendingUploads() {
+  for (auto& atlas : m_atlases) {
+    if (!atlas.texture || atlas.pendingUploads.empty())
+      continue;
+
+    auto texture = atlas.texture;
+    auto atlasImage = atlas.image;
+    auto uploads = std::move(atlas.pendingUploads);
+    atlas.pendingUploads.clear();
+
+    g_drawPool.addAction([texture, atlasImage, uploads = std::move(uploads)]() mutable {
+      if (!texture)
+        return;
+
+      const bool wasEmpty = texture->isEmpty();
+      if (wasEmpty && atlasImage) {
+        texture->updateImage(atlasImage);
+        texture->create();
+        return;
+      }
+
+      if (texture->isEmpty() && atlasImage) {
+        texture->updateImage(atlasImage);
+        texture->create();
+      }
+
+      for (const auto& u : uploads) {
+        texture->uploadSubPixels(u.dest, u.image);
+      }
+    });
+  }
+}
+
+/**
  * @brief Renders shaped Unicode text to the screen using cached glyph atlases.
  *
  * Shapes the provided UTF-32 text into glyph quads, groups quads into batches by atlas
@@ -472,41 +515,8 @@ void TTFFont::drawText(const std::u32string& text32,
     return;
   }
 
-  // Flush pending atlas uploads on the GL thread via DrawPool actions.
-  // This avoids glGenTextures returning 0 when called without a current context (Windows regression).
-  for (auto& atlas : m_atlases) {
-    if (!atlas.texture || atlas.pendingUploads.empty())
-      continue;
-
-    auto texture = atlas.texture;
-    auto atlasImage = atlas.image;
-    auto uploads = std::move(atlas.pendingUploads);
-    atlas.pendingUploads.clear();
-
-    g_drawPool.addAction([texture, atlasImage, uploads = std::move(uploads)]() mutable {
-      if (!texture)
-        return;
-
-      const bool wasEmpty = texture->isEmpty();
-      if (wasEmpty && atlasImage) {
-        // Ensure Texture::create() has a backing image to upload.
-        texture->updateImage(atlasImage);
-        texture->create();
-        // Full atlas upload already contains all CPU blits up to this moment.
-        return;
-      }
-
-      // Ensure GL id exists before sub uploads.
-      if (texture->isEmpty() && atlasImage) {
-        texture->updateImage(atlasImage);
-        texture->create();
-      }
-
-      for (const auto& u : uploads) {
-        texture->uploadSubPixels(u.dest, u.image);
-      }
-    });
-  }
+  // Flush pending atlas uploads before drawing quads.
+  flushPendingUploads();
 
   if (!s_loggedFirstCall) {
     g_logger.info("TTFFont::drawText: first call OK (quads={}, x={}, y={})", quads.size(), x, y);

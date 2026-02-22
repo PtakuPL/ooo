@@ -129,6 +129,10 @@ public:
   int ascent() const { return m_ascent; }
   int descent() const { return m_descent; }
 
+  // Flush deferred atlas uploads on the GL thread via DrawPool actions.
+  // MUST be called during the render pass before drawing cached text.
+  void flushPendingUploads();
+
   // Clear all cached glyphs and atlases (use after font config changes)
   void clearCache() {
     m_glyphs.clear();

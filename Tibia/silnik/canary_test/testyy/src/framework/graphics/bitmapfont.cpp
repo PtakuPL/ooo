@@ -100,10 +100,12 @@ if(type == "ttf") {
             return;  // Don't throw - just fail gracefully
         }
 
-        // for layout purposes
-        m_glyphHeight = size;
+        // for layout purposes — use lineHeight() (ascent+descent) instead of raw pixel size
+        // so that UI widgets (updateText, calculateTextRectSize) get correct metrics
+        m_glyphHeight = m_ttf->lineHeight();
         m_yOffset = fontNode->valueAt("y-offset", 0);
-        g_logger.info(fmt::format("TTF: font '{}' loaded successfully", src));
+        g_logger.info(fmt::format("TTF: font '{}' loaded successfully (glyphHeight={}, ascent={}, descent={}, lineHeight={})",
+                      src, m_glyphHeight, m_ttf->ascent(), m_ttf->descent(), m_ttf->lineHeight()));
         return; // skip bitmap path
         
     } catch (const std::exception& e) {

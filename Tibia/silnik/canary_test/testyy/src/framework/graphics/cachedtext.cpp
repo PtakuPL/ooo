@@ -62,6 +62,12 @@ void CachedText::drawTTF(const Rect& rect, const Color& color)
     if (m_ttfGlyphs.empty())
         return;
 
+    // Flush deferred atlas GPU uploads so textures are valid for rendering.
+    // Without this, glyphs cached via CachedText::update()/buildQuads() would
+    // reference atlas textures that haven't been uploaded to the GPU yet.
+    if (m_font && m_font->getTTFFont())
+        m_font->getTTFFont()->flushPendingUploads();
+
     if (m_textScreenCoords != rect) {
         m_textScreenCoords = rect;
         rebuildTTFCoords(rect);

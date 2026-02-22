@@ -5,18 +5,21 @@ UIWidget
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: parent.top
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
 
     OptionCheckBoxMarked
       id: showPing
       !text: tr("otclient_modules.general_otui.tr_18")
       !tooltip: tr("otclient_modules.general_otui.tr_17")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
     margin-top: 7
 
     $mobile:
@@ -27,6 +30,7 @@ UIWidget
     OptionCheckBox
       id: classicControl
       !text: tr("otclient_modules.general_otui.tr_16")
+      text-wrap: true
 
       $mobile:
         visible: false
@@ -36,56 +40,66 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: autoChaseOverride
       !text: tr("otclient_modules.general_otui.tr_15")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: moveStack
       !text: tr("otclient_modules.general_otui.tr_14")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBoxMarked
       id: smartWalk
       !text: tr("otclient_modules.general_otui.tr_13")
       !tooltip: tr("otclient_modules.general_otui.tr_12")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: openMaximized
       !text: tr("otclient_modules.general_otui.tr_11")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: displayText
       !text: tr("otclient_modules.general_otui.tr_10")
+      text-wrap: true
       
   SmallReversedQtPanel
     id: hotkeyDelay_label
@@ -160,12 +174,12 @@ UIWidget
         local value = modules.client_options.getOption('walkStairsDelay')
         self:setText(tr("otclient_modules.general_otui.tr_2", value))
 
-  QtButton
+  I18NQtButton
     id: hotkeysButton
     !text: tr("otclient_modules.general_otui.tr_1")
     @onClick: modules.game_hotkeys.show()
     anchors.top: prev.bottom
     anchors.left: parent.left
     margin-top: 12
-
-    size: 120 20
+    min-width: 120
+    height: 20

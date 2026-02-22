@@ -5,97 +5,114 @@ UIWidget
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: parent.top
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
 
     OptionCheckBox
       id: showInfoMessagesInConsole
       !text: tr("otclient_modules.console_otui.tr_9")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: showEventMessagesInConsole
       !text: tr("otclient_modules.console_otui.tr_8")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: showStatusMessagesInConsole
       !text: tr("otclient_modules.console_otui.tr_7")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: showOthersStatusMessagesInConsole
       !text: tr("otclient_modules.console_otui.tr_6")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: showTimestampsInConsole
       !text: tr("otclient_modules.console_otui.tr_5")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: showLevelsInConsole
       !text: tr("otclient_modules.console_otui.tr_4")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: showPrivateMessagesInConsole
       !text: tr("otclient_modules.console_otui.tr_3")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: showPrivateMessagesOnScreen
       !text: tr("otclient_modules.console_otui.tr_2")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: showLootMessagesOnScreen
       !text: tr("otclient_modules.console_otui.tr_1")
-
+      text-wrap: true

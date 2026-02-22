@@ -206,3 +206,16 @@ MiniPremiumButton < UIButton
   $pressed:
     image-clip: 0 22 26 22
 
+// ============================================================
+// I18N Auto-resize button styles
+// Buttons that automatically grow horizontally to fit translated text.
+// Use these instead of Button/QtButton for any UI element with i18n text.
+// ============================================================
+
+I18NButton < Button
+  text-horizontal-auto-resize: true
+  min-width: 106
+
+I18NQtButton < QtButton
+  text-horizontal-auto-resize: true
+  min-width: 106

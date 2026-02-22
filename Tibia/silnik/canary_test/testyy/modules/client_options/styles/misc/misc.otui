@@ -5,11 +5,13 @@ UIWidget
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: parent.top
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
 
     OptionCheckBox
       id: autoChaseOverride
       !text: tr("otclient_modules.misc_otui.tr_2")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left

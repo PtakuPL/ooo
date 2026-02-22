@@ -1,12 +1,14 @@
 OptionsCategory < UIWidget
-  size: 115 22
+  min-width: 115
+  height: 22
   image-source: /images/game/actionbar/1pixel-down-frame
   image-border: 5
   UIWidget
     id: Button
-    size: 115 20
     anchors.top: parent.top
     anchors.left: parent.left
+    anchors.right: parent.right
+    height: 20
     margin-left: 1
     margin-top: 1
     image-source: /images/ui/button-grey-up
@@ -164,7 +166,8 @@ MainWindow
     margin-top: -10
     image-border: 3
     image-source: /images/ui/2pixel_up_frame_borderimage_dark
-    size: 128 453
+    min-width: 128
+    width: 128
 
   QtPanel
     id: optionsTabContent
@@ -176,9 +179,10 @@ MainWindow
 
 
 
-  QtButton
+  I18NQtButton
     !text: tr("otclient_modules.options_otui.tr_1")
-    size: 64 20
+    min-width: 64
+    height: 20
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 5

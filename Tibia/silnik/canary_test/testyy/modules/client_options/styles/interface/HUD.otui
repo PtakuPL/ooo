@@ -6,40 +6,47 @@ UIWidget
     anchors.right: parent.right
     anchors.top: parent.top
 
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: displayNames
       !text: tr("otclient_modules.hud_otui.tr_4")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: displayHealth
       !text: tr("otclient_modules.hud_otui.tr_3")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: displayMana
       !text: tr("otclient_modules.hud_otui.tr_2")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
 
     $!mobile:
       height: 0
@@ -49,6 +56,7 @@ UIWidget
     OptionCheckBox
       id: rightJoystick
       !text: tr("otclient_modules.hud_otui.tr_1")
+      text-wrap: true
 
       $!mobile:
         visible: false

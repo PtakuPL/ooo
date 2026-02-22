@@ -14,34 +14,34 @@ panels = {
 -- LuaFormatter off
 local buttons = { {
 
-    text = "Controls",
+    text = tr("Controls"),
     icon = "/images/icons/icon_controls",
     open = "generalPanel",
     subCategories = { {
-        text = "General Hotkeys",
+        text = tr("General Hotkeys"),
         open = "keybindsPanel"
     } }
 }, {
-    text = "Interface",
+    text = tr("Interface"),
     icon = "/images/icons/icon_interface",
     open = "interface",
     subCategories = { {
-        text = "HUD",
+        text = tr("HUD"),
         open = "interfaceHUD"
     }, {
-        text = "Console",
+        text = tr("Console"),
         open = "interfaceConsole"
     } }
 }, {
-    text = "Graphics",
+    text = tr("Graphics"),
     icon = "/images/icons/icon_graphics",
     open = "graphicsPanel",
     subCategories = { {
-        text = "Effects",
+        text = tr("Effects"),
         open = "graphicsEffectsPanel"
     } }
 }, {
-    text = "Sound",
+    text = tr("Sound"),
     icon = "/images/icons/icon_sound",
     open = "soundPanel"
     --[[     subCategories = {{
@@ -52,17 +52,17 @@ local buttons = { {
         open = "UI_Sounds"
     }} ]]
 }, {
-    text = "Misc.",
+    text = tr("Misc."),
     icon = "/images/icons/icon_misc",
     open = "misc",
     subCategories = { --[[ {
-        text = "GamePlay",
+        text = tr("GamePlay"),
         open = "GamePlay"
     },  {
-        text = "Screenshots",
+        text = tr("Screenshots"),
         open = "Screenshots"
     }, ]] {
-        text = "Help",
+        text = tr("Help"),
         open = "miscHelp"
     } }
 } }
@@ -215,6 +215,7 @@ function controller:onInit()
     self.ui:hide()
 
     configureCharacterCategories()
+    adjustSidebarWidth()
     addEvent(setup)
     init_binds()
 
@@ -518,6 +519,49 @@ function configureCharacterCategories()
             end
 
             controller.ui.openedCategory = parent
+        end
+    end
+end
+
+-- ============================================================
+-- I18N: Dynamically adjust sidebar width to fit translated text
+-- ============================================================
+function adjustSidebarWidth()
+    local sidebar = controller.ui.optionsTabBar
+    if not sidebar then return end
+
+    local maxWidth = 128  -- minimum / default width
+    for i = 1, sidebar:getChildCount() do
+        local widget = sidebar:getChildByIndex(i)
+        if widget then
+            -- Check main category title width
+            local titleLabel = widget.Button and widget.Button.Title
+            if titleLabel then
+                local tw = titleLabel:getTextSize().width + 50  -- icon + margins + padding
+                maxWidth = math.max(maxWidth, tw)
+            end
+            -- Check subcategory titles
+            if widget.subCategories then
+                for subId, _ in ipairs(widget.subCategories) do
+                    local subWidget = widget:getChildById(subId)
+                    if subWidget and subWidget.Button and subWidget.Button.Title then
+                        local stw = subWidget.Button.Title:getTextSize().width + 50
+                        maxWidth = math.max(maxWidth, stw)
+                    end
+                end
+            end
+        end
+    end
+
+    -- Apply new width to sidebar
+    sidebar:setWidth(maxWidth)
+
+    -- Propagate to main window if sidebar grew
+    local delta = maxWidth - 128
+    if delta > 0 then
+        local window = controller.ui.optionsWindow
+        if window then
+            window:setWidth(686 + delta)
         end
     end
 end

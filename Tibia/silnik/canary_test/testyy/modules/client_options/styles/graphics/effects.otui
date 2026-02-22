@@ -12,6 +12,7 @@ UIWidget
     OptionCheckBox
       id: enableLights
       !text: tr("otclient_modules.effects_otui.tr_8")
+      text-wrap: true
 
     OptionScaleScroll
       id: ambientLight
@@ -70,35 +71,41 @@ UIWidget
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
 
     OptionCheckBoxMarked
       id: drawEffectOnTop
       !text: tr("otclient_modules.effects_otui.tr_5")
       !tooltip: tr("otclient_modules.effects_otui.tr_4")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBoxMarked
       id: limitVisibleDimension
       !text: tr("otclient_modules.effects_otui.tr_3")
       !tooltip: tr("otclient_modules.effects_otui.tr_2")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 7
-    height: 22
+    min-height: 22
+    text-vertical-auto-resize: true
   
     OptionCheckBox
       id: floatingEffect
       !text: tr("otclient_modules.effects_otui.tr_1")
+      text-wrap: true
       
   SmallReversedQtPanel
     anchors.left: parent.left

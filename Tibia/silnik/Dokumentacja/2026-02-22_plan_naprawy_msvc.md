@@ -617,6 +617,18 @@ Agent B przeprowadził pełny review wszystkich zmian. Znalezione problemy:
 
 Wszystkie 17 pozostałych zmian ocenione jako poprawne.
 
+#### Faza 3b — Domknięcie guardów w .cpp (commit `5d9cef3f3`)
+
+Wykryta niespójność: headery (TextShaper.h, TTFFont.h, bitmapfont.h) miały guardy `#ifdef OTC_ENABLE_*`, ale odpowiadające pliki .cpp definiowały kod bez warunków. Przy wyłączonych feature flagach build by się łamał.
+
+| Plik | Zmiana |
+|------|--------|
+| `TextShaper.cpp` | Cały kod HarfBuzz owinięty w `#ifdef OTC_ENABLE_HARFBUZZ`, `applyBidiReordering()` w `#ifdef OTC_ENABLE_FRIBIDI`, `clearCache()` no-op w `#else`. Usunięto zduplikowane `#include` |
+| `TTFFont.cpp` | Cała implementacja (600 linii) owinięta w `#ifdef OTC_ENABLE_TTF` |
+| `bitmapfont.cpp` | 4 bloki `m_ttf->` owinięte `#ifdef OTC_ENABLE_TTF`: `load()` (TTF path), `drawText()`, `drawColoredText()`, `calculateTextRectSize()` |
+
+**Uwaga**: `OTC_ENABLE_TTF/HARFBUZZ/FRIBIDI` są zawsze ON w CMake — zmiana nie wpływa na runtime, ale zamyka lukę w spójności API/implementacja.
+
 #### Co zostaje do zrobienia (Faza 6 — po zielonym CI)
 
 - [ ] Rozważyć PIMPL pattern dla TTFFont.h
@@ -634,11 +646,12 @@ Wszystkie 17 pozostałych zmian ocenione jako poprawne.
 - runtime hooks `clearLuaExceptionStack()` i `luaExceptionTraceback(...)`,
 - throw extraction w `luavaluecasts.h` (`throwExpiredLuaFunction`, `throwLuaBadReturnCount`),
 - naprawa `std::pair` cast bug,
-- rozszerzenie ochron CMake: Group 2/4/5/6/7.
+- rozszerzenie ochron CMake: Group 2/4/5/6/7,
+- **guardy `#ifdef OTC_ENABLE_*` kompletne w .h i .cpp** (TextShaper, TTFFont, bitmapfont).
 
 2. Niewdrozone:
-- guardy `#ifdef OTC_ENABLE_*` dla headerow text stack (Faza 3),
-- pakiety UB/runtime z Fazy 5.
+- pakiety Fazy 6 (PIMPL, extern template, etc.)
 
 3. Gate wymagany:
-- nowy run Windows na GitHub Actions po pushu tej iteracji, aby potwierdzic czy fail-point opuscil `luaexception.cpp`.
+- nowy run Windows na GitHub Actions po pushu, aby potwierdzic czy ICE C1001 jest wyeliminowany.
+- Build Windows #4396 w trakcie (odpalone ręcznie dla poprzedniego commitu).

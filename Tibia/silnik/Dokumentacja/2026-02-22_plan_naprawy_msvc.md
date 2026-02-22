@@ -516,38 +516,114 @@ CI gate: Full smoke test
 
 | Kryterium | Status |
 |-----------|--------|
-| ❌ Windows CI build przechodzi bez C1001 | Oczekuje na nowy gate po pushu zmian C2/I2 |
-| 🟡 Linux CI build przechodzi bez regression | Ostatnie runy sa zielone, ale po nowych zmianach brak nowego runu |
-| ❌ Wszystkie krytyczne UB naprawione | Do zrobienia |
-| 🟡 CMake ma jawne grupy ochronne dla WSZYSTKICH ciężkich TU | Group 4/5/6/7 dodane, zostaje decyzja ws. shadermanager.cpp |
-| ❌ Text stack headers mają #ifdef guards | Do zrobienia |
+| 🟡 Windows CI build przechodzi bez C1001 | Commit `c69666902` — oczekuje na wynik CI |
+| 🟡 Linux CI build przechodzi bez regression | Commit `c69666902` — oczekuje na wynik CI |
+| ✅ Wszystkie krytyczne UB naprawione | UB-1 GlobalFree, UB-2 xorCrypt, UB-3 malloc/delete[] |
+| ✅ CMake ma jawne grupy ochronne dla WSZYSTKICH ciężkich TU | Groups 1-7 kompletne |
+| ✅ Text stack headers mają #ifdef guards | TextShaper.h, TTFFont.h, bitmapfont.h |
 | ✅ Pair luavalue_cast bug naprawiony | Zrobione w `luavaluecasts.h` |
-| ❌ Position::operator< naprawiony | Do zrobienia |
-| 🟡 Dokumentacja audytu i napraw kompletna | Zaktualizowane sekcje audytu, kolejne po nowym runie Windows |
+| ✅ Position::operator< naprawiony | std::tie lexicographic |
+| ✅ Dokumentacja audytu i napraw kompletna | Sekcje 17-26, plan naprawy, changelog |
 
 ---
 
 ## PODSUMOWANIE PRIORYTETÓW
 
 ```
-   NAJWYŻSZY ├─ Faza 1: Extract throw z template lambda (luavaluecasts.h)
-             │           → bezpośrednio naprawia mechanizm ICE
+   NAJWYŻSZY ├─ ✅ Faza 1: Extract throw z template lambda (luavaluecasts.h)
+             │              Commit c69666902
              │
-    WYSOKI   ├─ Faza 2: CMake Groups 5-6 + upgrade Group 4
-             │           → chroni 8+ plików, wzmacnia uiwidget.cpp
+    WYSOKI   ├─ ✅ Faza 2: CMake Groups 5-6 + upgrade Group 4
+             │              Commit c69666902
              │
-    WYSOKI   ├─ Faza 3: #ifdef OTC_ENABLE_* guards
-             │           → zmniejsza include chain pressure o ~20K linii
+    WYSOKI   ├─ ✅ Faza 3: #ifdef OTC_ENABLE_* guards
+             │              Commit c69666902
              │
-    ŚREDNI   ├─ Faza 4: std::ranges → std algorithms (OPCJONALNA)
-             │           → zmniejsza presję ranges na MSVC 14.44
+    ŚREDNI   ├─ ✅ Faza 4: std::ranges → std algorithms
+             │              Commit c69666902
              │
-    ŚREDNI   ├─ Faza 5: Bug fixes (UB, logic, Windows)
-             │           → poprawność runtime, niezależne od ICE
+    ŚREDNI   ├─ ✅ Faza 5: Bug fixes (UB, logic, Windows)
+             │              Commit c69666902
              │
-    NISKI    └─ Faza 6: Stabilizacja (PIMPL, forward decl, extern template)
-                         → optymalizacja po zielonym CI
+    NISKI    └─ ❌ Faza 6: Stabilizacja (PIMPL, forward decl, extern template)
+                            → po zielonym CI
 ```
+
+---
+
+## 7. CHANGELOG — WYKONANE ZMIANY
+
+### Commit `c69666902` (2026-02-22) — "fix(msvc): comprehensive ICE C1001 fix + bug corrections (Faza 1-5)"
+
+**25 zmienionych plików**, push na `origin/master`, oczekuje na CI.
+
+#### Faza 1 — ICE Core Fix (3 pliki)
+
+| Plik | Zmiana |
+|------|--------|
+| `framework/luaengine/luaexception.h` | Dodano deklaracje `throwExpiredLuaFunction()`, `throwLuaBadReturnCount()`, `logLuaCallbackError()` z `[[noreturn]]` + `__declspec(noinline)` w `#ifdef _MSC_VER` |
+| `framework/luaengine/luaexception.cpp` | Dodano definicje w/w helperów. Usunięto `#include "luainterface.h"` — zastąpiono bridge functions `clearLuaExceptionStack()`, `luaExceptionTraceback()` |
+| `framework/luaengine/luavaluecasts.h` | 3× `throw LuaException(...)` → helpery, 2× `g_logger.error(...)` → `logLuaCallbackError()`, 2× fix pair cast (`!` usunięte) |
+
+**Mechanizm**: Wyciągnięcie `throw` z template lambda body eliminuje główną przyczynę MSVC P2 ICE C1001. Wzorzec identyczny jak sprawdzony `throwLuaNilMemberCall()`.
+
+#### Faza 2 — CMake Protection (1 plik)
+
+| Plik | Zmiana |
+|------|--------|
+| `CMakeLists.txt` | Group 2: dodano `luaexception.cpp`. Group 4: upgrade do `/Od /Ob0 /d2SSAOptimizer- /d2FH4- /d2notypeopt` + `SKIP_PRECOMPILE_HEADERS ON`. Nowe: Group 5 (text stack, 6 plików), Group 6 (UI text, 2 pliki), Group 7 (core ranges, 2 pliki) |
+
+#### Faza 3 — #ifdef Guards (3 pliki)
+
+| Plik | Zmiana |
+|------|--------|
+| `framework/text/TextShaper.h` | `#include <hb.h>/<hb-ft.h>` → `#ifdef OTC_ENABLE_HARFBUZZ`, `<fribidi.h>` → `#ifdef OTC_ENABLE_FRIBIDI`, metoda `shape()` owinięta w `#ifdef OTC_ENABLE_HARFBUZZ` |
+| `framework/text/TTFFont.h` | FreeType → `#ifdef OTC_ENABLE_TTF`, HarfBuzz → `#ifdef OTC_ENABLE_HARFBUZZ`, cała klasa `TTFFont` + typy w `#ifdef OTC_ENABLE_TTF` |
+| `framework/graphics/bitmapfont.h` | `#include <TTFFont.h>` → warunkowy `#ifdef OTC_ENABLE_TTF`, fallback: forward decl `class TTFFont` + `using TTFFontPtr` |
+
+**Uwaga**: `OTC_ENABLE_TTF/HARFBUZZ/FRIBIDI` są ZAWSZE włączone przez CMake — zmiana nie wpływa na zachowanie, ale daje strukturalną ochronę.
+
+#### Faza 4 — std::ranges Removal (3 pliki)
+
+| Plik | Zamian | Szczegóły |
+|------|-------:|-----------|
+| `framework/ui/uiwidget.cpp` | 24 | 13× `std::ranges::find` → `std::find`, 2× `std::ranges::rotate` → `std::rotate`, 1× `std::ranges::reverse` → `std::reverse`, 9× `std::ranges::reverse_view` → `reverseOf()` helper. Usunięto `#include <ranges>` |
+| `framework/core/resourcemanager.cpp` | 4 | 2× `std::ranges::find` → `std::find`, 2× `std::ranges::reverse_view` → `rbegin/rend` loop. Usunięto `#include <ranges>` |
+| `framework/core/module.cpp` | 2 | 2× `std::ranges::find` → `std::find`. Dodano `#include <algorithm>` |
+
+#### Faza 5 — Bug Fixes (11 plików)
+
+| ID | Plik | Naprawa |
+|----|------|---------|
+| BUG-1 | `luavaluecasts.h:569,576` | Usunięto `!` z `if (!luavalue_cast(...))` — wartość przypisywana przy sukcesie, nie porażce |
+| BUG-2 | `position.h:253` | `x < other.x \|\| y < other.y \|\| z < other.z` → `std::tie(x,y,z) < std::tie(...)` — prawidłowy lexicographic strict-weak-order |
+| BUG-3 | `uigraph.h:77`, `uigraph.cpp:399` | `const std::string&` → `std::string_view` + dodano `override` — match z bazową `UIWidget::onStyleApply` |
+| UB-1 | `win32crashhandler.cpp:130` | Usunięto `GlobalFree(pSym)` — `pSym` wskazywał na bufor na stosie (`symBuffer`) |
+| UB-2 | `crypt.cpp:123-124` | `std::transform` lambda z `&c - &out[0]` (UB na kopii parametru) → explicit index `for` loop |
+| UB-3 | `androidmanager.cpp:80` | `delete[]` → `free()` — pamięć alokowana `malloc()` |
+| UTIL-1 | `size.h:59` | `static_cast<T>(wd) /= other.wd` (rvalue, no-op) → `wd = static_cast<T>(wd) / other.wd` |
+| UTIL-2 | `rect.h:84` | `size.width` / `size.height` (nieistniejące pola) → `size.width()` / `size.height()` (metody `TSize`) |
+| UTIL-3 | `matrix.h:141` | `values[i * N + j]` (zły stride) → `values[i * M + j]` (M = kolumny) |
+| WIN-1 | `win32platform.cpp:44-53` | Dodano `LocalFree(wchar_argv)` po `CommandLineToArgvW` (memory leak) |
+| WIN-2 | `win32window.cpp:946,949` | Usunięto `WS_EX_TOPMOST` z `GWL_STYLE` — to extended style (kolizja bitów z `WS_TABSTOP`), topmost i tak obsługiwany przez `SetWindowPos(HWND_TOPMOST)` |
+
+#### Cross-review (Agent B)
+
+Agent B przeprowadził pełny review wszystkich zmian. Znalezione problemy:
+1. ✅ **TextShaper.h** — `hb_font_t*` w `shape()` poza `#ifdef` → naprawione (owinięto `shape()` w guard)
+2. ✅ **TTFFont.h** — `FT_Library`, `FT_Face`, `hb_font_t*` w class body poza `#ifdef` → naprawione (cała klasa w `#ifdef OTC_ENABLE_TTF`)
+3. ✅ **bitmapfont.h** — `struct AtlasRegion` vs `class AtlasRegion` mismatch → naprawione (usunięto zbędny forward decl)
+4. ✅ **CMakeLists.txt** — stały komentarz "23× std::ranges" → naprawione
+
+Wszystkie 17 pozostałych zmian ocenione jako poprawne.
+
+#### Co zostaje do zrobienia (Faza 6 — po zielonym CI)
+
+- [ ] Rozważyć PIMPL pattern dla TTFFont.h
+- [ ] Forward declaration `class TTFFont` w bitmapfont.h zamiast pełnego include (już częściowo zrobione)
+- [ ] Sprawdzić czy `client/shadermanager.cpp` powinien być w SOURCE_FILES
+- [ ] Opcjonalnie: `extern template` w luavaluecasts.h
+- [ ] Usunąć `using namespace otclient::protobuf;` z `thingtype.h:36`
 
 ---
 

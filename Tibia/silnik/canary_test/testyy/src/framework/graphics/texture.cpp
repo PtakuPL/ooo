@@ -148,6 +148,13 @@ void Texture::uploadSubPixels(const Rect& dest, const ImagePtr& image, const int
 
 void Texture::bind()
 {
+    // Lazy texture creation: if we have a pending m_image but no GL texture yet,
+    // create it now (we're on the GL thread during rendering).
+    // This is a safety net for atlas textures whose upload event hasn't run yet.
+    if (m_id == 0 && m_image && g_graphics.ok()) {
+        create();
+    }
+
     if (g_graphics.ok() && m_id)
         glBindTexture(GL_TEXTURE_2D, m_id);
 }

@@ -5,6 +5,7 @@
 #include <exception>
 // OTClient rendering helpers
 #include <framework/core/logger.h>
+#include <framework/core/eventdispatcher.h>    // g_mainDispatcher — GL-thread event queue
 #include <framework/graphics/drawpoolmanager.h> // g_drawPool
 #include <framework/graphics/coordsbuffer.h>
 #include <framework/graphics/graphics.h>
@@ -430,11 +431,20 @@ const AtlasGlyph* TTFFont::rasterizeGlyph(FT_Face face, uint32_t glyphIndex, uin
 }
 
 /**
- * @brief Uploads any pending glyph rasterizations to the GPU via the DrawPool.
+ * @brief Uploads any pending glyph rasterizations to the GPU.
  *
  * Iterates over all atlas slots and, for each one with pending uploads,
- * schedules a GL-thread action that either creates the texture from the full
- * atlas image (first use) or does incremental sub-pixel uploads.
+ * schedules a GL-thread event via g_mainDispatcher that either creates
+ * the texture from the full atlas image (first use) or does incremental
+ * sub-pixel uploads.
+ *
+ * IMPORTANT: We use g_mainDispatcher.addEvent() instead of g_drawPool.addAction()
+ * because the FOREGROUND DrawPool runs at a throttled FPS (e.g. 10 FPS).
+ * When the pool's canRepaint() returns false, release() DISCARDS all pending
+ * objects — including addAction lambdas. This causes glyph texture uploads
+ * to be silently lost, leaving atlas regions blank (invisible glyphs).
+ * g_mainDispatcher events are processed every frame in mainPoll(), before
+ * g_drawPool.draw(), guaranteeing the GL texture is ready before rendering.
  *
  * Called from drawText() (immediate path) and CachedText::drawTTF() (cached path)
  * so that atlas textures are always ready before quads reference them.
@@ -449,22 +459,22 @@ void TTFFont::flushPendingUploads() {
     auto uploads = std::move(atlas.pendingUploads);
     atlas.pendingUploads.clear();
 
-    g_drawPool.addAction([texture, atlasImage, uploads = std::move(uploads)]() mutable {
+    // Use g_mainDispatcher to guarantee execution on the GL thread every frame.
+    // g_drawPool.addAction() can be silently discarded by FPS-throttled pools.
+    g_mainDispatcher.addEvent([texture, atlasImage, uploads = std::move(uploads)]() mutable {
       if (!texture)
         return;
 
-      const bool wasEmpty = texture->isEmpty();
-      if (wasEmpty && atlasImage) {
+      if (texture->isEmpty() && atlasImage) {
+        // First-time creation: upload the full CPU atlas image (contains all
+        // glyphs rasterized so far, including those from concurrent blits).
         texture->updateImage(atlasImage);
         texture->create();
+        // Full image upload includes everything — skip individual sub-uploads.
         return;
       }
 
-      if (texture->isEmpty() && atlasImage) {
-        texture->updateImage(atlasImage);
-        texture->create();
-      }
-
+      // Texture already created — do incremental sub-pixel uploads.
       for (const auto& u : uploads) {
         texture->uploadSubPixels(u.dest, u.image);
       }

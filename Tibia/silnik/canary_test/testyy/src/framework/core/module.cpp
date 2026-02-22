@@ -24,6 +24,7 @@
 #include "modulemanager.h"
 #include "resourcemanager.h"
 
+#include <algorithm>
 #include <framework/luaengine/luainterface.h>
 #include <framework/otml/otml.h>
 
@@ -175,7 +176,7 @@ bool Module::isDependent() const
 
 bool Module::hasDependency(const std::string_view name, const bool recursive)
 {
-    if (std::ranges::find(m_dependencies, name) != m_dependencies.end())
+    if (std::find(m_dependencies.begin(), m_dependencies.end(), name) != m_dependencies.end())
         return true;
 
     if (recursive) {
@@ -251,7 +252,7 @@ void Module::discover(const OTMLNodePtr& moduleNode)
                     if (g_resources.isFileType(filePath, "lua")) {
                         filePath = std::filesystem::path(filePath).replace_extension().string();
 
-                        auto foundElement = std::ranges::find(m_scripts, filePath);
+                        auto foundElement = std::find(m_scripts.begin(), m_scripts.end(), filePath);
                         if (m_scripts.end() == foundElement)
                             m_scripts.emplace_back(filePath);
                     }

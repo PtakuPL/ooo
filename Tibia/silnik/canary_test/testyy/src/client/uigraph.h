@@ -74,7 +74,7 @@ public:
     void setGraphVisible(size_t index, bool visible);
 
 protected:
-    void onStyleApply(const std::string& styleName, const OTMLNodePtr& styleNode);
+    void onStyleApply(std::string_view styleName, const OTMLNodePtr& styleNode) override;
     void onGeometryChange(const Rect& oldRect, const Rect& newRect) override;
     void onLayoutUpdate() override;
     void onVisibilityChange(bool visible) override;

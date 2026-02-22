@@ -516,14 +516,14 @@ CI gate: Full smoke test
 
 | Kryterium | Status |
 |-----------|--------|
-| ❌ Windows CI build przechodzi bez C1001 | Do zrobienia |
-| ❌ Linux CI build przechodzi bez regression | Do zrobienia |
+| ❌ Windows CI build przechodzi bez C1001 | Oczekuje na nowy gate po pushu zmian C2/I2 |
+| 🟡 Linux CI build przechodzi bez regression | Ostatnie runy sa zielone, ale po nowych zmianach brak nowego runu |
 | ❌ Wszystkie krytyczne UB naprawione | Do zrobienia |
-| ❌ CMake ma jawne grupy ochronne dla WSZYSTKICH ciężkich TU | Do zrobienia |
+| 🟡 CMake ma jawne grupy ochronne dla WSZYSTKICH ciężkich TU | Group 4/5/6/7 dodane, zostaje decyzja ws. shadermanager.cpp |
 | ❌ Text stack headers mają #ifdef guards | Do zrobienia |
-| ❌ Pair luavalue_cast bug naprawiony | Do zrobienia |
+| ✅ Pair luavalue_cast bug naprawiony | Zrobione w `luavaluecasts.h` |
 | ❌ Position::operator< naprawiony | Do zrobienia |
-| ❌ Dokumentacja audytu i napraw kompletna | Do zrobienia |
+| 🟡 Dokumentacja audytu i napraw kompletna | Zaktualizowane sekcje audytu, kolejne po nowym runie Windows |
 
 ---
 
@@ -548,3 +548,21 @@ CI gate: Full smoke test
     NISKI    └─ Faza 6: Stabilizacja (PIMPL, forward decl, extern template)
                          → optymalizacja po zielonym CI
 ```
+
+---
+
+## 7. Status wdrozenia 2026-02-22 (iteracja C2/I2)
+
+1. Wdrozone:
+- odchudzenie `luaexception.cpp` (bez include `luainterface.h`),
+- runtime hooks `clearLuaExceptionStack()` i `luaExceptionTraceback(...)`,
+- throw extraction w `luavaluecasts.h` (`throwExpiredLuaFunction`, `throwLuaBadReturnCount`),
+- naprawa `std::pair` cast bug,
+- rozszerzenie ochron CMake: Group 2/4/5/6/7.
+
+2. Niewdrozone:
+- guardy `#ifdef OTC_ENABLE_*` dla headerow text stack (Faza 3),
+- pakiety UB/runtime z Fazy 5.
+
+3. Gate wymagany:
+- nowy run Windows na GitHub Actions po pushu tej iteracji, aby potwierdzic czy fail-point opuscil `luaexception.cpp`.

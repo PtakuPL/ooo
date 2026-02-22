@@ -56,7 +56,7 @@ public:
     constexpr TSize operator*(const TSize& other) const { return TSize(static_cast<T>(other.wd) * wd, static_cast<T>(ht) * other.ht); }
     constexpr TSize& operator*=(const TSize& other) { wd = static_cast<T>(other.wd) * wd; ht = static_cast<T>(ht) * other.ht; return *this; }
     constexpr TSize operator/(const TSize& other) const { return TSize(static_cast<T>(wd) / other.wd, static_cast<T>(ht) / other.ht); }
-    constexpr TSize& operator/=(const TSize& other) { static_cast<T>(wd) /= other.wd; static_cast<T>(ht) /= other.ht; return *this; }
+    constexpr TSize& operator/=(const TSize& other) { wd = static_cast<T>(wd) / other.wd; ht = static_cast<T>(ht) / other.ht; return *this; }
     constexpr TSize operator*(const float v) const { return TSize(static_cast<T>(wd) * v, static_cast<T>(ht) * v); }
     constexpr TSize& operator*=(const float v) { wd = static_cast<T>(wd) * v; ht = static_cast<T>(ht) * v; return *this; }
     constexpr TSize operator/(const float v) const { return TSize(static_cast<T>(wd) / v, static_cast<T>(ht) / v); }

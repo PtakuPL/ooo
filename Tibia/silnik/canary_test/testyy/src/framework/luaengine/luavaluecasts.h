@@ -305,11 +305,10 @@ bool luavalue_cast(const int index, std::function<void(Args...)>& func)
                     const int rets = g_lua.safeCall(numArgs);
                     g_lua.pop(rets);
                 } else {
-                    throw LuaException("attempt to call an expired lua function from C++,"
-                                       "did you forget to hold a reference for that function?", 0);
+                    throwExpiredLuaFunction();
                 }
             } catch (const LuaException& e) {
-                g_logger.error("lua function callback failed: {}", e.what());
+                logLuaCallbackError(e.what());
             }
         };
         return true;
@@ -337,13 +336,12 @@ luavalue_cast(const int index, std::function<Ret(Args...)>& func)
                 g_lua.getWeakRef(funcWeakRef);
                 if (g_lua.isFunction()) {
                     if (const int numArgs = g_lua.polymorphicPush(args...); g_lua.safeCall(numArgs) != 1)
-                        throw LuaException("a function from lua didn't retrieve the expected number of results", 0);
+                        throwLuaBadReturnCount();
                     return g_lua.polymorphicPop<Ret>();
                 }
-                throw LuaException("attempt to call an expired lua function from C++,"
-                                   "did you forget to hold a reference for that function?", 0);
+                throwExpiredLuaFunction();
             } catch (const LuaException& e) {
-                g_logger.error("lua function callback failed: {}", e.what());
+                logLuaCallbackError(e.what());
             }
             return Ret();
         };
@@ -566,7 +564,7 @@ bool luavalue_cast(const int index, std::pair<K, V>& pair)
         g_lua.pushNil();
         if (g_lua.next(index < 0 ? index - 1 : index)) {
             K value;
-            if (!luavalue_cast(-1, value))
+            if (luavalue_cast(-1, value))
                 pair.first = value;
             g_lua.pop();
         } else {
@@ -574,7 +572,7 @@ bool luavalue_cast(const int index, std::pair<K, V>& pair)
         }
         if (g_lua.next(index < 0 ? index - 1 : index)) {
             V value;
-            if (!luavalue_cast(-1, value))
+            if (luavalue_cast(-1, value))
                 pair.second = value;
             g_lua.pop();
         } else {

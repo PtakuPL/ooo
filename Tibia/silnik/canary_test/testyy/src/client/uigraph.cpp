@@ -396,7 +396,7 @@ void UIGraph::updateInfoBoxes()
     }
 }
 
-void UIGraph::onStyleApply(const std::string& styleName, const OTMLNodePtr& styleNode)
+void UIGraph::onStyleApply(const std::string_view styleName, const OTMLNodePtr& styleNode)
 {
     UIWidget::onStyleApply(styleName, styleNode);
 

@@ -4,10 +4,14 @@
 #include <vector>
 #include <cstdint>
 
+#ifdef OTC_ENABLE_TTF
 #include <ft2build.h>
 #include FT_FREETYPE_H
+#endif
+#ifdef OTC_ENABLE_HARFBUZZ
 #include <hb.h>
 #include <hb-ft.h>
+#endif
 
 #include "TextShaper.h"
 
@@ -17,6 +21,8 @@
 #include <framework/graphics/texture.h>
 #include <framework/util/color.h>
 #include <framework/util/rect.h>
+
+#ifdef OTC_ENABLE_TTF
 
 // Minimal glyph metadata stored in an atlas
 struct AtlasGlyph {
@@ -189,3 +195,5 @@ private:
   std::vector<Atlas> m_atlases;
   std::unordered_map<uint32_t, AtlasGlyph> m_glyphs;
 };
+
+#endif // OTC_ENABLE_TTF

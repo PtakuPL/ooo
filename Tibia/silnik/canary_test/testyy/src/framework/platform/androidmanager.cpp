@@ -77,7 +77,7 @@ void AndroidManager::unZipAssetData() {
     unzipper::extract(dataContent, dataFileLength, destFolder);
 
     AAsset_close(dataAsset);
-    delete [] dataContent;
+    free(dataContent); // allocated with malloc — must use free, not delete[]
 }
 
 std::string AndroidManager::getAppBaseDir() {

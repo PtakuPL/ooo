@@ -33,6 +33,16 @@
 
 LuaInterface g_lua;
 
+void clearLuaExceptionStack()
+{
+    g_lua.clearStack();
+}
+
+std::string luaExceptionTraceback(const std::string_view error, const int traceLevel)
+{
+    return g_lua.traceback(error, traceLevel);
+}
+
 #if defined(_MSC_VER) && !defined(__clang__)
 #pragma optimize("", off)
 #endif

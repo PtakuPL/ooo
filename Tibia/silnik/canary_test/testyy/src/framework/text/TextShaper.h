@@ -3,10 +3,15 @@
 #include <vector>
 #include <memory>
 
-// HarfBuzz / FriBidi
+// HarfBuzz / FriBidi — conditional on CMake feature flags
+#ifdef OTC_ENABLE_HARFBUZZ
 #include <hb.h>
 #include <hb-ft.h>
+#endif
+
+#ifdef OTC_ENABLE_FRIBIDI
 #include <fribidi.h>
+#endif
 
 // Minimalny zestaw danych wyjściowych po shapingu
 struct ShapedGlyph {
@@ -28,10 +33,12 @@ struct ShapeParams {
 
 class TextShaper {
 public:
+#ifdef OTC_ENABLE_HARFBUZZ
   // hbFont to hb_font_t* powiązany z FT_Face (tworzony w TTFFont)
   static std::vector<ShapedGlyph> shape(const std::u32string& text32,
                                         hb_font_t* hbFont,
                                         const ShapeParams& params);
+#endif
 
   // Clear the internal shape cache (call when locale changes)
   static void clearCache();

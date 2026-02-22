@@ -51,3 +51,20 @@ class LuaBadValueCastException final : public LuaException
 public:
     LuaBadValueCastException(std::string_view luaTypeName, std::string_view cppTypeName);
 };
+
+#ifdef _MSC_VER
+// Non-template helpers called from template-heavy code paths.
+[[noreturn]] __declspec(noinline) void throwLuaBadValueCast(const char* valueType, const char* targetType);
+[[noreturn]] __declspec(noinline) void throwExpiredLuaFunction();
+[[noreturn]] __declspec(noinline) void throwLuaBadReturnCount();
+__declspec(noinline) void logLuaCallbackError(const char* what);
+#else
+[[noreturn]] void throwLuaBadValueCast(const char* valueType, const char* targetType);
+[[noreturn]] void throwExpiredLuaFunction();
+[[noreturn]] void throwLuaBadReturnCount();
+void logLuaCallbackError(const char* what);
+#endif
+
+// Runtime hooks implemented in luainterface.cpp.
+void clearLuaExceptionStack();
+std::string luaExceptionTraceback(std::string_view error, int traceLevel);

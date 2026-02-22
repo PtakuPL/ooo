@@ -26,7 +26,12 @@
 
 #include <framework/otml/declarations.h>
 
+#ifdef OTC_ENABLE_TTF
 #include <framework/text/TTFFont.h>
+#else
+class TTFFont;
+using TTFFontPtr = std::shared_ptr<TTFFont>;
+#endif
 
 #include <string>
 #include <string_view>

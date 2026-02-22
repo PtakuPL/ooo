@@ -160,13 +160,14 @@ if (MSVC)
         COMPILE_DEFINITIONS "OTML_NO_FMT"
     )
 
-    # Group 2: Lua binding files — 800-950 template instantiations of
-    #          bind_singleton_mem_fun / bind_mem_fun via luabinder.h.
-    #          These are the heaviest template TUs in the project.
+    # Group 2: Lua binding files + luaexception.cpp.
+    #          800-950 template instantiations of bind_singleton_mem_fun /
+    #          bind_mem_fun via luabinder.h + known ICE migration points.
     #          /d2FH4-      : disable FH4 exception handling (ICE in throw-in-lambda)
     #          /d2notypeopt : disable P2 type optimization (ACCESS VIOLATION in codegen)
     #          /permissive- : strict standard conformance (different template lookup path)
     set_source_files_properties(
+      framework/luaengine/luaexception.cpp
       framework/luaengine/luainterface.cpp
       framework/luafunctions.cpp
       framework/luafunctions_graphics.cpp
@@ -195,15 +196,47 @@ if (MSVC)
         SKIP_PRECOMPILE_HEADERS ON
     )
 
-    # Group 4: Large complex TUs — lighter protection (/d2SSAOptimizer- only,
-    #          keep /O1 optimization). These have some risk factors:
-    #          uiwidget.cpp: 2168 lines, 23× std::ranges, luainterface include
+    # Group 4: Large complex TUs — full protection.
+    #          These have known ICE migration risk under MSVC 14.44+.
+    #          uiwidget.cpp: 2168 lines, 29× callLuaField<T> templates, luainterface include
     #          uiwidgetbasestyle.cpp: 22× safe_cast<> template instantiations
     #          protocolgameparse.cpp: 6222 lines, 48× fmt calls
     set_source_files_properties(
       framework/ui/uiwidget.cpp
       framework/ui/uiwidgetbasestyle.cpp
       client/protocolgameparse.cpp
+      PROPERTIES
+        COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer- /d2FH4- /d2notypeopt"
+        SKIP_PRECOMPILE_HEADERS ON
+    )
+
+    # Group 5: Text/glyph stack.
+    #          HarfBuzz/FriBidi/FreeType include chain can inflate parse/codegen
+    #          pressure in otherwise medium-sized translation units.
+    set_source_files_properties(
+      framework/text/TTFFont.cpp
+      framework/text/TextShaper.cpp
+      framework/text/LocaleShaping.cpp
+      framework/graphics/bitmapfont.cpp
+      framework/graphics/cachedtext.cpp
+      framework/graphics/fontmanager.cpp
+      PROPERTIES
+        COMPILE_FLAGS "/Od /Ob0 /d2SSAOptimizer-"
+        SKIP_PRECOMPILE_HEADERS ON
+    )
+
+    # Group 6: UI text files tied to text stack and i18n rendering.
+    set_source_files_properties(
+      framework/ui/uiwidgettext.cpp
+      framework/ui/uitextedit.cpp
+      PROPERTIES
+        COMPILE_FLAGS "/d2SSAOptimizer-"
+    )
+
+    # Group 7: Core files with luainterface + std::ranges usage.
+    set_source_files_properties(
+      framework/core/resourcemanager.cpp
+      framework/core/module.cpp
       PROPERTIES
         COMPILE_FLAGS "/d2SSAOptimizer-"
     )

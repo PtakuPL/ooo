@@ -49,6 +49,7 @@ void Platform::processArgs(std::vector<std::string>& args)
     if (wchar_argv) {
         for (int i = 0; i < nargs; ++i)
             args.push_back(stdext::utf16_to_utf8(wchar_argv[i]));
+        LocalFree(wchar_argv);
     }
 }
 

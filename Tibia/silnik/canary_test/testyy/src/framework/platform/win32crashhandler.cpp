@@ -127,7 +127,7 @@ void Stacktrace(LPEXCEPTION_POINTERS e, std::stringstream& ss)
             ss << fmt::format("    {}: {} [0x%016lX]\n", count, modname, sf.AddrPC.Offset);
         ++count;
     }
-    GlobalFree(pSym);
+    // pSym points into stack-local symBuffer — do NOT free.
 }
 
 LONG CALLBACK ExceptionHandler(const LPEXCEPTION_POINTERS e)

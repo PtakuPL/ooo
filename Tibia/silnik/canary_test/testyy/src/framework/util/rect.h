@@ -81,7 +81,7 @@ public:
     constexpr void setBottomLeft(const TPoint<T>& p) noexcept { x1 = p.x; y2 = p.y; }
     constexpr void setWidth(T width) noexcept { x2 = x1 + width - 1; }
     constexpr void setHeight(T height) noexcept { y2 = y1 + height - 1; }
-    constexpr void setSize(const TSize<T>& size) noexcept { x2 = x1 + size.width - 1; y2 = y1 + size.height - 1; }
+    constexpr void setSize(const TSize<T>& size) noexcept { x2 = x1 + size.width() - 1; y2 = y1 + size.height() - 1; }
     constexpr void setRect(T x, T y, T width, T height) noexcept { x1 = x; y1 = y; x2 = x + width - 1; y2 = y + height - 1; }
     constexpr void setCoords(T left, T top, T right, T bottom) noexcept { x1 = left; y1 = top; x2 = right; y2 = bottom; }
 

@@ -138,7 +138,7 @@ Matrix<N, M, T>& Matrix<N, M, T>::operator=(const U* values)
 {
     for (int i = 0; i < N; ++i)
         for (int j = 0; j < M; ++j)
-            m[i][j] = values[i * N + j];
+            m[i][j] = values[i * M + j];
     return generateHash();
 }
 

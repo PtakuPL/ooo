@@ -21,7 +21,6 @@
  */
 
 #include "luaexception.h"
-#include "luainterface.h"
 
 [[noreturn]]
 #ifdef _MSC_VER
@@ -32,6 +31,33 @@ void throwLuaBadValueCast(const char* valueType, const char* targetType)
     const char* safeValueType = valueType ? valueType : "unknown";
     const char* safeTargetType = targetType ? targetType : "unknown";
     throw LuaBadValueCastException(safeValueType, safeTargetType);
+}
+
+[[noreturn]]
+#ifdef _MSC_VER
+__declspec(noinline)
+#endif
+void throwExpiredLuaFunction()
+{
+    throw LuaException("attempt to call an expired lua function from C++,"
+                       "did you forget to hold a reference for that function?", 0);
+}
+
+[[noreturn]]
+#ifdef _MSC_VER
+__declspec(noinline)
+#endif
+void throwLuaBadReturnCount()
+{
+    throw LuaException("a function from lua didn't retrieve the expected number of results", 0);
+}
+
+#ifdef _MSC_VER
+__declspec(noinline)
+#endif
+void logLuaCallbackError(const char* what)
+{
+    g_logger.error("lua function callback failed: {}", what ? what : "unknown");
 }
 
 namespace luabinder
@@ -48,7 +74,7 @@ void throwLuaNilMemberCall()
 
 LuaException::LuaException(const std::string_view error, const int traceLevel)
 {
-    g_lua.clearStack(); // on every exception, clear lua stack
+    clearLuaExceptionStack();
     generateLuaErrorMessage(error, traceLevel);
 }
 
@@ -56,7 +82,7 @@ void LuaException::generateLuaErrorMessage(const std::string_view error, const i
 {
     // append trace level to error message
     if (traceLevel >= 0)
-        m_what = fmt::format("LUA ERROR: {}", g_lua.traceback(error, traceLevel));
+        m_what = fmt::format("LUA ERROR: {}", luaExceptionTraceback(error, traceLevel));
     else
         m_what = fmt::format("LUA ERROR:\n{}", error);
 }

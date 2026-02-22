@@ -120,8 +120,8 @@ std::string Crypt::xorCrypt(const std::string& buffer, const std::string& key) {
     std::string out(buffer);
     size_t keySize = key.size();
 
-    std::transform(out.begin(), out.end(), out.begin(),
-                   [&](char c) { return c ^ key[(&c - &out[0]) % keySize]; });
+    for (size_t i = 0; i < out.size(); ++i)
+        out[i] ^= key[i % keySize];
 
     return out;
 }

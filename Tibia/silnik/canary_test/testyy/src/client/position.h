@@ -31,6 +31,7 @@
 #include <math.h>
 #include <ostream>
 #include <string>
+#include <tuple>
 #include <vector>
 
 #include <fmt/format.h>
@@ -249,8 +250,8 @@ public:
         return _pos.x >= x - minXRange && _pos.x <= x + maxXRange && _pos.y >= y - minYRange && _pos.y <= y + maxYRange;
     }
 
-    // operator less than for stdext::map
-    bool operator<(const Position& other) const { return x < other.x || y < other.y || z < other.z; }
+    // operator less than for stdext::map (lexicographic strict weak ordering)
+    bool operator<(const Position& other) const { return std::tie(x, y, z) < std::tie(other.x, other.y, other.z); }
 
     bool up(int8_t n = 1);
     bool down(int8_t n = 1);

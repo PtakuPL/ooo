@@ -4,28 +4,28 @@
 
 ## 📝 PODSUMOWANIE
 
-> Worker tłumaczy **53** języków. Klucze EN: **74,308**. Pokrycie globalne: **8.27%**. Tempo: **1280.9 kluczy/h**. Tłumaczeń netto: **92,181**.
+> Worker tłumaczy **53** języków. Klucze EN: **74,308**. Pokrycie globalne: **8.28%**. Tempo: **1430.1 kluczy/h**. Tłumaczeń netto: **92,574**.
 
 ## 🧭 META
 
 > **[META]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-25 10:21:37
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-25 10:23:46
 
-> **Aktualizacja:** 2026-02-25 10:21:37 UTC  
+> **Aktualizacja:** 2026-02-25 10:23:46 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 74308  
-> **LIVE:** Cykl #8,898 | Status: 🟢 DZIAŁA | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: it | Plik: quests.json | Heartbeat: 2026-02-25T10:21:03Z  
-> **Okno godzinowe:** okno=1.0h | cykli=8 | pominięte=0.0% | odrzucone=1.8% | przepustowość=1280.9/h  
-> **Tłumaczeń netto:** 92,181
+> **LIVE:** Cykl #8,898 | Status: 🟢 DZIAŁA | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: es | Plik: npc.json | Heartbeat: 2026-02-25T10:23:32Z  
+> **Okno godzinowe:** okno=1.0h | cykli=8 | pominięte=0.0% | odrzucone=1.8% | przepustowość=1430.1/h  
+> **Tłumaczeń netto:** 92,574
 
 ### 🧩 Status sekcji
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-02-25 10:21:37 |
-| LIVE | 🟢 AKTYWNY | 35s temu | - | `activity.json / worker_state.json` | 2026-02-25T10:21:03Z |
-| PRE_MIGRATION | 🔒 NIEAKTYWNY | 11h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-25 10:21:37 |
-| TRANSLATION | 🟢 AKTYWNY | 5min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-25T10:16:23.383591Z |
-| QUALITY | 🔒 NIEAKTYWNY | 17min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-25T10:04:21.651877Z |
-| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-25 10:21:37 |
+| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-02-25 10:23:46 |
+| LIVE | 🟢 AKTYWNY | 15s temu | - | `activity.json / worker_state.json` | 2026-02-25T10:23:32Z |
+| PRE_MIGRATION | 🔒 NIEAKTYWNY | 12h temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-25 10:23:46 |
+| TRANSLATION | 🟢 AKTYWNY | 21s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-25T10:23:26.186203Z |
+| QUALITY | 🔒 NIEAKTYWNY | 19min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-02-25T10:04:21.651877Z |
+| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-25 10:23:46 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -34,28 +34,28 @@
 ## 🔴 LIVE — Bieżąca praca
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 35s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-25T10:21:03Z
+> Świeżość: 15s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-25T10:23:32Z
 
 | Metryka | Wartość |
 |---------|---------|
 | 🛠️ **Co robi** | Tłumaczenie automatyczne (Google Translate + TM) |
-| 🌍 **Aktywne języki (10 min)** | IT, RO |
+| 🌍 **Aktywne języki (10 min)** | ES, IT, RO |
 | 📝 **Faza** | AUTO_TRANSLATE |
 | 📋 **Etap** | sygnał życia |
-| 📂 **Kategoria / Język** | it |
-| 📄 **Plik** | quests.json |
+| 📂 **Kategoria / Język** | es |
+| 📄 **Plik** | npc.json |
 | 📊 **Status** | 🟢 DZIAŁA |
-| 📈 **Postęp** | Batch: 30 keys/cykl |
+| 📈 **Postęp** | Batch: 11 keys/cykl |
 | 🔧 **Metoda** | Translation Memory (GT wyłączony) |
 | 🔄 **Ostatni cykl** | 0 kluczy, 0 odrzuconych, 0s, tryb: AUTO_TRANSLATE |
-| ❤️ **Heartbeat** | 2026-02-25T10:21:03Z |
+| ❤️ **Heartbeat** | 2026-02-25T10:23:32Z |
 
 **Ostatnie operacje:**
+- → PARALLEL_TRANSLATE_DONE (IT) [ok]
 - → PARALLEL_TRANSLATE_DONE (RO) [ok]
 - → AUTO_TRANSLATE_DONE (RU) [warn]
 - → PARALLEL_TRANSLATE_DONE (CS) [ok]
 - → PARALLEL_TRANSLATE_DONE (NL) [ok]
-- → AUTO_TRANSLATE_DONE (PT) [warn]
 
 ---
 
@@ -65,15 +65,15 @@
 |---------|---------|
 | � PRE_MIGRATION cykli | **0** (kategorii przeskanowanych: 0) |
 | 🔍 Hits (stringów do migracji) | **112,434** w 18,063 plikach |
-| �📊 Przetłumaczono | **3,450** kluczy |
-| ❌ Odrzucone (guard) | 63 |
+| �📊 Przetłumaczono | **3,852** kluczy |
+| ❌ Odrzucone (guard) | 72 |
 | 🔁 Cykli | 8 |
-| 🌍 Języków | 6 |
+| 🌍 Języków | 7 |
 | 🏆 Najaktywniejszy | NL (716 kluczy) |
 | 📄 Najczęstszy plik | spells.json |
-| ⚡ Przepustowość | ~1281 kluczy/h |
+| ⚡ Przepustowość | ~1430 kluczy/h |
 | 🛡️ Odrzucone (strażnik) | 1.8% |
-| ⚠️ Podejrzane | 132 |
+| ⚠️ Podejrzane | 139 |
 
 ---
 
@@ -86,6 +86,7 @@
 | CS | 697 | 24 | 3.3% | 1 |
 | PT | 696 | 18 | 2.5% | 1 |
 | RO | 600 | 6 | 1.0% | 1 |
+| IT | 402 | 9 | 2.2% | 1 |
 | RU | 37 | 1 | 2.6% | 1 |
 
 > Źródło: `translation_guard_report.jsonl` (okno 1.0h)
@@ -104,8 +105,8 @@
 | ZH_TW | 7,565 | 74,308 | 10.18% | 9,189 |
 | PT | 6,680 | 74,308 | 8.99% ↑+1.18% | 2,641 |
 | DE | 6,643 | 74,308 | 8.94% ↑+0.87% | 2,732 |
+| IT | 5,103 | 74,308 | 6.87% | 2,684 |
 | BN | 4,765 | 74,308 | 6.41% | 3,833 |
-| IT | 4,708 | 74,308 | 6.34% | 2,695 |
 | AR | 4,703 | 74,308 | 6.33% | 3,877 |
 | FA | 4,644 | 74,308 | 6.25% | 4,041 |
 | TR | 4,438 | 74,308 | 5.97% | 2,884 |
@@ -123,32 +124,32 @@
 
 ## 📈 Postęp i ETA (cel: 95%)
 
-> **ETA globalne:** ~109 dni (3,351,235 kluczy do celu 95%)
+> **ETA globalne:** ~98 dni (3,350,840 kluczy do celu 95%)
 
 | Język | Pasek | Pokrycie | Przetłumaczono | ETA do 95% |
 |-------|-------|----------|---------------|------------|
-| PL | ████████████░░░░░░░░ | 61.5% | 45,706/74,308 | ~19h |
-| ES | ████████████░░░░░░░░ | 60.6% | 45,057/74,308 | ~20h |
-| RU | █████░░░░░░░░░░░░░░░ | 26.4% | 19,585/74,308 | ~40h |
-| FR | ████░░░░░░░░░░░░░░░░ | 24.9% | 18,538/74,308 | ~41h |
-| RO | ██░░░░░░░░░░░░░░░░░░ | 13.5% | 10,011/74,308 | ~47h |
-| ZH_TW | ██░░░░░░░░░░░░░░░░░░ | 10.2% | 7,565/74,308 | ~2d |
-| PT | █░░░░░░░░░░░░░░░░░░░ | 9.0% | 6,680/74,308 | ~2d |
-| DE | █░░░░░░░░░░░░░░░░░░░ | 8.9% | 6,643/74,308 | ~2d |
-| BN | █░░░░░░░░░░░░░░░░░░░ | 6.4% | 4,765/74,308 | ~2d |
-| IT | █░░░░░░░░░░░░░░░░░░░ | 6.3% | 4,708/74,308 | ~2d |
-| AR | █░░░░░░░░░░░░░░░░░░░ | 6.3% | 4,703/74,308 | ~2d |
-| FA | █░░░░░░░░░░░░░░░░░░░ | 6.2% | 4,644/74,308 | ~2d |
-| TR | █░░░░░░░░░░░░░░░░░░░ | 6.0% | 4,438/74,308 | ~2d |
-| HI | █░░░░░░░░░░░░░░░░░░░ | 5.8% | 4,300/74,308 | ~2d |
-| ID | █░░░░░░░░░░░░░░░░░░░ | 5.7% | 4,267/74,308 | ~2d |
-| KO | █░░░░░░░░░░░░░░░░░░░ | 5.7% | 4,195/74,308 | ~2d |
-| JA | █░░░░░░░░░░░░░░░░░░░ | 5.6% | 4,184/74,308 | ~2d |
-| HE | █░░░░░░░░░░░░░░░░░░░ | 5.6% | 4,168/74,308 | ~2d |
-| NL | █░░░░░░░░░░░░░░░░░░░ | 5.6% | 4,143/74,308 | ~2d |
-| ML | █░░░░░░░░░░░░░░░░░░░ | 5.6% | 4,136/74,308 | ~2d |
+| PL | ████████████░░░░░░░░ | 61.5% | 45,706/74,308 | ~17h |
+| ES | ████████████░░░░░░░░ | 60.6% | 45,057/74,308 | ~18h |
+| RU | █████░░░░░░░░░░░░░░░ | 26.4% | 19,585/74,308 | ~36h |
+| FR | ████░░░░░░░░░░░░░░░░ | 24.9% | 18,538/74,308 | ~36h |
+| RO | ██░░░░░░░░░░░░░░░░░░ | 13.5% | 10,011/74,308 | ~42h |
+| ZH_TW | ██░░░░░░░░░░░░░░░░░░ | 10.2% | 7,565/74,308 | ~44h |
+| PT | █░░░░░░░░░░░░░░░░░░░ | 9.0% | 6,680/74,308 | ~45h |
+| DE | █░░░░░░░░░░░░░░░░░░░ | 8.9% | 6,643/74,308 | ~45h |
+| IT | █░░░░░░░░░░░░░░░░░░░ | 6.9% | 5,103/74,308 | ~46h |
+| BN | █░░░░░░░░░░░░░░░░░░░ | 6.4% | 4,765/74,308 | ~46h |
+| AR | █░░░░░░░░░░░░░░░░░░░ | 6.3% | 4,703/74,308 | ~46h |
+| FA | █░░░░░░░░░░░░░░░░░░░ | 6.2% | 4,644/74,308 | ~46h |
+| TR | █░░░░░░░░░░░░░░░░░░░ | 6.0% | 4,438/74,308 | ~46h |
+| HI | █░░░░░░░░░░░░░░░░░░░ | 5.8% | 4,300/74,308 | ~46h |
+| ID | █░░░░░░░░░░░░░░░░░░░ | 5.7% | 4,267/74,308 | ~46h |
+| KO | █░░░░░░░░░░░░░░░░░░░ | 5.7% | 4,195/74,308 | ~46h |
+| JA | █░░░░░░░░░░░░░░░░░░░ | 5.6% | 4,184/74,308 | ~46h |
+| HE | █░░░░░░░░░░░░░░░░░░░ | 5.6% | 4,168/74,308 | ~46h |
+| NL | █░░░░░░░░░░░░░░░░░░░ | 5.6% | 4,143/74,308 | ~46h |
+| ML | █░░░░░░░░░░░░░░░░░░░ | 5.6% | 4,136/74,308 | ~46h |
 
-> Tempo obliczone na bazie ostatniej godziny: ~1281 kluczy/h.
+> Tempo obliczone na bazie ostatniej godziny: ~1430 kluczy/h.
 
 ---
 
@@ -204,7 +205,7 @@
 ## 🔍 PRE_MIGRATION — Skan plików źródłowych
 
 > **[PRE_MIGRATION]** 🔒 NIEAKTYWNY (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 11h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-25 10:21:37
+> Świeżość: 12h temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-25 10:23:46
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -308,7 +309,7 @@
 ## 🌍 TŁUMACZENIA
 
 > **[TRANSLATION]** 🟢 AKTYWNY  
-> Świeżość: 5min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-25T10:16:23.383591Z
+> Świeżość: 21s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-25T10:23:26.186203Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -328,8 +329,8 @@
 | ZH_TW (ZH_TW) | 7,565/74,308 | 10.18% | 9,189 | 22,647 |
 | PT (Portugalski) | 6,680/74,308 | 8.99% | 2,641 | 20,495 |
 | DE (Niemiecki) | 6,643/74,308 | 8.94% | 2,732 | 20,495 |
+| IT (Włoski) | 5,103/74,308 | 6.87% | 2,684 | 20,495 |
 | BN (BN) | 4,765/74,308 | 6.41% | 3,833 | 20,729 |
-| IT (Włoski) | 4,708/74,308 | 6.34% | 2,695 | 20,495 |
 | AR (Arabski) | 4,703/74,308 | 6.33% | 3,877 | 20,729 |
 | FA (FA) | 4,644/74,308 | 6.25% | 4,041 | 20,729 |
 | TR (Turecki) | 4,438/74,308 | 5.97% | 2,884 | 20,729 |
@@ -347,39 +348,39 @@
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- As soon as you're pouring out the vial over the dreambird tree the plant is infu → De îndată ce turnați flaconul peste copacul de pasăre de vis, planta este infuza (quests.threatened_dreams.starlight_vial.success_2b)
-- You are rubbing the gem in the sun catcher's centre but nothing happens. → Freci bijuteria în centrul captatorului de soare, dar nu se întâmplă nimic. (quests.threatened_dreams.sun_catcher.fail_1)
-- The sun has to be shining in order to strengthen the barrier. Wait for the day. → Soarele trebuie să strălucească pentru a întări bariera. Așteaptă ziua. (quests.threatened_dreams.sun_catcher.fail_2)
-- The sun catcher is shining with sunlight now. → Captorul de soare strălucește acum de lumina soarelui. (quests.threatened_dreams.sun_catcher.success_1)
-- As soon as you're placing the sun catcher on the stone the pattern the mosaic is → De îndată ce așezați captorul de soare pe piatră, modelul mozaicul este infuzat  (quests.threatened_dreams.sun_catcher.success_2a)
-- As soon as you're placing the sun catcher on the stone the pattern the mosaic is → De îndată ce așezați captorul de soare pe piatră, modelul mozaicul este infuzat  (quests.threatened_dreams.sun_catcher.success_2b)
-- You are not on that mission. → Nu ești în acea misiune. (quests.threatened_dreams.you_are_not_on_that_mission)
-- The pile of bones is empty. → Teancul de oase este gol. (quests.tinder_box_quest_chyllfroest.the_pile_of_bones_is_empty)
-- This can only be used between 1st of April and 1st of May. → Acesta poate fi folosit doar între 1 aprilie și 1 mai. (quests.tinder_box_quest_chyllfroest.this_can_only_be_used_between)
-- You hold the skull up high. You can resist the urge to have it look through a te → Țineți craniul sus. Totuși, poți rezista nevoii de a o privi printr-un telescop. (quests.unnatural_selection.mission2_say_1)
-- That's definitely one of the highest spots in whole Tibia. If that's not simply  → Acesta este cu siguranță unul dintre cele mai înalte locuri din întregul Tibia.  (quests.unnatural_selection.mission2_say_10)
-- What a beautiful view. Worthy of a Queen indeed! Time to head back to Lazaran an → Ce priveliste frumoasa. Demn de o regină într-adevăr! E timpul să te întorci la  (quests.unnatural_selection.mission2_say_11)
-- You hold up the skull and let it take a peek over the beautiful elven town throu → Îți ridici craniul și îl lași să arunce o privire peste frumosul oraș elf prin f (quests.unnatural_selection.mission2_say_2)
-- Thanita gives you a really strange look as you hold up the skull, but oh well. → Thanita îți arată cu adevărat ciudat în timp ce ții craniul în sus, dar ei bine. (quests.unnatural_selection.mission2_say_3)
-- That was a real easy one. And you are used to getting strange looks now, so what → A fost unul cu adevărat ușor. Și acum ești obișnuit să ai un aspect ciudat, așa  (quests.unnatural_selection.mission2_say_4)
-- Wow, it's hot up here. Luckily the skull can't get a sunburn any more, but you c → Uau, e cald aici sus. Din fericire, craniul nu mai poate face arsuri de soare, d (quests.unnatural_selection.mission2_say_5)
-- Considering that higher places around here aren't that easy to reach, you think  → Având în vedere că locurile mai înalte de aici nu sunt atât de ușor de ajuns, cr (quests.unnatural_selection.mission2_say_6)
-- Yep, that's a pretty high spot. If Lazaran ever sees what the skull sees, he'd b → Da, este un punct destul de înalt. Dacă Lazaran vede vreodată ceea ce vede crani (quests.unnatural_selection.mission2_say_7)
-- Well, there are higher spots around here, but none of them is as easily reachabl → Ei bine, există locuri mai înalte pe aici, dar niciunul dintre ele nu este la fe (quests.unnatural_selection.mission2_say_8)
-- Nice! White in white as far as the eye can see. Time to leave before your finger → Frumos! Alb în alb cât poate vedea cu ochiul. E timpul să pleci înainte ca deget (quests.unnatural_selection.mission2_say_9)
+- As soon as you're pouring out the vial over the dreambird tree the plant is infu → Non appena verserai la fiala sull'albero dell'uccello dei sogni, la pianta sarà  (quests.threatened_dreams.starlight_vial.success_2b)
+- You are rubbing the gem in the sun catcher's centre but nothing happens. → Stai strofinando la gemma al centro dell'acchiappasole ma non succede nulla. (quests.threatened_dreams.sun_catcher.fail_1)
+- The sun has to be shining in order to strengthen the barrier. Wait for the day. → Il sole deve splendere per rafforzare la barriera. Aspetta il giorno. (quests.threatened_dreams.sun_catcher.fail_2)
+- The sun catcher is shining with sunlight now. → L'acchiappasole ora risplende di luce solare. (quests.threatened_dreams.sun_catcher.success_1)
+- As soon as you're placing the sun catcher on the stone the pattern the mosaic is → Non appena si posiziona l'acchiappasole sulla pietra, il motivo del mosaico vien (quests.threatened_dreams.sun_catcher.success_2a)
+- As soon as you're placing the sun catcher on the stone the pattern the mosaic is → Non appena si posiziona l'acchiappasole sulla pietra, il motivo del mosaico vien (quests.threatened_dreams.sun_catcher.success_2b)
+- You are not on that mission. → Non sei in quella missione. (quests.threatened_dreams.you_are_not_on_that_mission)
+- The pile of bones is empty. → Il mucchio di ossa è vuoto. (quests.tinder_box_quest_chyllfroest.the_pile_of_bones_is_empty)
+- This can only be used between 1st of April and 1st of May. → Può essere utilizzato solo dal 1° aprile al 1° maggio. (quests.tinder_box_quest_chyllfroest.this_can_only_be_used_between)
+- You hold the skull up high. You can resist the urge to have it look through a te → Tieni il teschio in alto. Puoi però resistere alla tentazione di guardarlo attra (quests.unnatural_selection.mission2_say_1)
+- That's definitely one of the highest spots in whole Tibia. If that's not simply  → Questo è sicuramente uno dei posti più alti dell'intero Tibia. Se non è semplice (quests.unnatural_selection.mission2_say_10)
+- What a beautiful view. Worthy of a Queen indeed! Time to head back to Lazaran an → Che bella vista. Degno di una regina davvero! È ora di tornare da Lazaran e most (quests.unnatural_selection.mission2_say_11)
+- You hold up the skull and let it take a peek over the beautiful elven town throu → Sollevi il teschio e gli lasci dare una sbirciatina sulla bellissima città degli (quests.unnatural_selection.mission2_say_2)
+- Thanita gives you a really strange look as you hold up the skull, but oh well. → Thanita ti lancia uno sguardo davvero strano mentre sollevi il teschio, ma vabbè (quests.unnatural_selection.mission2_say_3)
+- That was a real easy one. And you are used to getting strange looks now, so what → È stato davvero facile. E adesso sei abituato a ricevere sguardi strani, quindi  (quests.unnatural_selection.mission2_say_4)
+- Wow, it's hot up here. Luckily the skull can't get a sunburn any more, but you c → Wow, fa caldo qui. Per fortuna il teschio non può più scottarsi, ma tu sì, quind (quests.unnatural_selection.mission2_say_5)
+- Considering that higher places around here aren't that easy to reach, you think  → Considerando che i posti più alti da queste parti non sono così facili da raggiu (quests.unnatural_selection.mission2_say_6)
+- Yep, that's a pretty high spot. If Lazaran ever sees what the skull sees, he'd b → Sì, è un punto piuttosto alto. Se Lazaran vedesse mai ciò che vede il teschio, s (quests.unnatural_selection.mission2_say_7)
+- Well, there are higher spots around here, but none of them is as easily reachabl → Beh, ci sono punti più alti da queste parti, ma nessuno di questi è facilmente r (quests.unnatural_selection.mission2_say_8)
+- Nice! White in white as far as the eye can see. Time to leave before your finger → Carino! Bianco nel bianco a perdita d'occhio. È ora di andarsene prima che le tu (quests.unnatural_selection.mission2_say_9)
 
 ### 🚫 Raporty strażnika jakości
-- Raporty strażnika jakości: **4223**  
+- Raporty strażnika jakości: **4224**  
 - Raporty blokad: **0**  
-- Widoczne raporty 'nie mogę przetłumaczyć': **3437**
+- Widoczne raporty 'nie mogę przetłumaczyć': **3438**
 
 ### 🌐 Globalne info wszystkich języków
-- **Pokrycie globalne:** **8.27%** (319,549/3,864,016)
-- **Kopie EN (łącznie):** **170,639**
+- **Pokrycie globalne:** **8.28%** (319,944/3,864,016)
+- **Kopie EN (łącznie):** **170,628**
 - **Braki kluczy (łącznie):** **1,037,198**
 - **Brakujące pliki językowe:** **0**
-- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
-- **Cache STATUSPY (per-file):** hit **1976**, miss **0**, hit-rate **100.0%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
+- **Cache STATUSPY (per-file):** hit **1975**, miss **1**, hit-rate **99.9%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -399,29 +400,29 @@
 | ZH_TW | 7,552/70,453 | 10.7% | 13/3,855 | 0.3% |
 | PT | 6,570/70,453 | 9.3% | 110/3,855 | 2.9% |
 | DE | 6,529/70,453 | 9.3% | 114/3,855 | 3.0% |
+| IT | 5,103/70,453 | 7.2% | 0/3,855 | 0.0% |
 | BN | 4,761/70,453 | 6.8% | 4/3,855 | 0.1% |
-| IT | 4,708/70,453 | 6.7% | 0/3,855 | 0.0% |
 | AR | 4,699/70,453 | 6.7% | 4/3,855 | 0.1% |
 | FA | 4,640/70,453 | 6.6% | 4/3,855 | 0.1% |
 
 ### ⏱️ Ścisłe okno godzinowe (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-25T09:21:38.026388Z → 2026-02-25T10:21:38.026388Z) |
+| Okno | **1.0h** (2026-02-25T09:23:46.927223Z → 2026-02-25T10:23:46.927223Z) |
 | Cykle | **8** (TŁUMACZENIE=8, PRE_MIGRATION=0) |
 | Pominięte (kat. nieaktywna) | **0** (ogółem=0.0%, migracja=0.0%) |
 | Odrzucone (strażnik jakości) % | **1.8%** |
 | Cykle bez postępu % | **0.0%** |
-| Przepustowość (kluczy/h) | **1280.9 kluczy/h** |
-| Podejrzane tłumaczenia | **132** |
-| Najgorsze cele (strażnik) | cs/spells.json (gf=24), pt/spells.json (gf=18), de/spells.json (gf=9), ro/quests.json (gf=6), nl/spells.json (gf=5) |
+| Przepustowość (kluczy/h) | **1430.1 kluczy/h** |
+| Podejrzane tłumaczenia | **139** |
+| Najgorsze cele (strażnik) | cs/spells.json (gf=24), pt/spells.json (gf=18), de/spells.json (gf=9), it/quests.json (gf=9), ro/quests.json (gf=6) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
 
 ## 🔬 JAKOŚĆ TŁUMACZEŃ
 
 > **[QUALITY]** 🔒 NIEAKTYWNY (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 17min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-25T10:04:21.651877Z
+> Świeżość: 19min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-02-25T10:04:21.651877Z
 
 - **Ostatni audyt:** OK | 6 issue(s) / 100 entries | 2026-02-25T10:04:21.651877Z
 - **Top 5 typów problemów:** suspicious_rejected_high=137, suspicious_log_high=93, suspicious_log_low=77, suspicious_rejected_critical=62, suspicious_log_medium=30
@@ -465,7 +466,7 @@
 | Komponent | Status | Szczegóły |
 |-----------|--------|-----------|
 | Worker | 🟢 DZIAŁA | Cykl #8,898 |
-| Heartbeat | 35s temu | 2026-02-25T10:21:03Z |
+| Heartbeat | 15s temu | 2026-02-25T10:23:32Z |
 | Uptime | - | od startu workera |
 
 ---
@@ -475,14 +476,14 @@
 - **Łącznie kopii EN do naprawy:** 701
 - **TOP 5 języków:** ZH_TW (2,040), HY (905), KA (905), KO (905), ML (905)
 - **Aktualnie naprawia:** ES / -
-- **Ostatnia aktualizacja:** 2026-02-25T10:19:33.083733Z
+- **Ostatnia aktualizacja:** 2026-02-25T10:23:32.318817Z
 
 ---
 
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** it
+> **Aktualna kategoria:** es
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -550,7 +551,7 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 35s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-25T10:21:03Z
+> Świeżość: 15s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-25T10:23:32Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -558,25 +559,25 @@
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 DZIAŁA                                 │
 │ Tryb:      🤖 AUTO_TRANSLATE (heartbeat_tick)        │
-│ Kategoria: 📁 IT                                     │
+│ Kategoria: 📁 ES                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
-│ Plik: quests.json                                             │
-│ Postęp: batch: 30 keys/cykl                                   │
+│ Plik: npc.json                                                │
+│ Postęp: batch: 11 keys/cykl                                   │
 │ Info: auto translate in progress                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-25T10:21:03Z           │
+│ ❤️ Heartbeat: 2026-02-25T10:23:32Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-02-25 10:23:32 | AUTO_TRANSLATE:heartbeat_tick | es | ok | npc.json
+- 2026-02-25 10:22:33 | AUTO_TRANSLATE:heartbeat_tick | it | ok | quests.json
 - 2026-02-25 10:21:03 | AUTO_TRANSLATE:heartbeat_tick | it | ok | quests.json
 - 2026-02-25 10:19:26 | AUTO_TRANSLATE:heartbeat_tick | it | ok | quests.json
 - 2026-02-25 10:17:56 | AUTO_TRANSLATE:heartbeat_tick | it | ok | quests.json
 - 2026-02-25 10:16:25 | AUTO_TRANSLATE:heartbeat_tick | it | ok | quests.json
-- 2026-02-25 10:16:25 | AUTO_TRANSLATE:parallel_start | it | ok | quests.json
-- 2026-02-25 10:15:17 | AUTO_TRANSLATE:heartbeat_tick | ro | ok | quests.json
 
 ---
 
@@ -589,7 +590,7 @@
 
 | Wskaźnik | Wartość | Cel | Status |
 |-----|---------|--------|--------|
-| Tłumaczeń netto | **92,181** | — | 📊 |
+| Tłumaczeń netto | **92,574** | — | 📊 |
 | Adaptacyjna paczka | batch=8, gf_rate=2.67%, reason=increase_low_fail_rate=2.7% | odrzucenia <5% → zwiększ | 📊 |
 | Przepustowość (okno) | 280 kluczy / 95 wpisów | >50/h | 📊 |
 
@@ -598,8 +599,9 @@
 ## 📜 HISTORIA
 
 > **[HISTORY]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-25 10:21:37
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-25 10:23:46
 
+- 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [it] → ok (translated+402, skipped+0) — parallel lang=it file=quests.json
 - 🤖 AUTO_TRANSLATE: PARALLEL_TRANSLATE_DONE [ro] → ok (translated+600, skipped+0) — parallel lang=ro file=quests.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [ru] → warn (files+1, translated+37, skipped+0) — lang=ru file=quests.json strict_skipped_done=67 guard_fail=1 placeholder=0 command=0 pipe=0
 - 🔍 PRE_MIGRATION: scan_done [otclient_data] → ok — scan backlog files_scanned=183 files_with_hits=1 hits=1
@@ -609,24 +611,23 @@
 - 🤖 AUTO_TRANSLATE: REPAIR_IDENTICAL_DONE [es] → ok (translated+11) — repair_identical lang=es file=npc.json target_identical=11 limit=108 tier=low_backlog+suspicious_guard domain_cap=260 gt=true suspicious_pct=32.79
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [es] → warn (files+1, translated+3, skipped+0) — lang=es file=books.json strict_skipped_done=1400 guard_fail=96 placeholder=0 command=0 pipe=0
 - 🔍 PRE_MIGRATION: scan_done [otclient_modules] → ok — scan backlog files_scanned=294 files_with_hits=168 hits=6586
-- 🔍 PRE_MIGRATION: scan_done [creaturescripts] → ok — scan backlog files_scanned=48 files_with_hits=0 hits=0
 
 
 ## 📅 Dziś (2026-02-25)
 
 | Metryka | Wartość |
 |---------|---------|
-| ✅ Przetłumaczono | **10,072** kluczy |
+| ✅ Przetłumaczono | **10,474** kluczy |
 | ⏭️ Pominięte | 0 |
 | 🔁 Cykli | 5 |
 | ❌ Błędów | 11 |
 | 🌍 Aktywnych języków | 9 |
-| 🏆 TOP 5 | **PT** (2,508), **DE** (2,341), **RO** (1,294), **NL** (1,002), **IT** (752) |
-| 📊 Porównanie | ↑ 501.7% vs wczoraj (1,674) |
+| 🏆 TOP 5 | **PT** (2,508), **DE** (2,341), **RO** (1,294), **IT** (1,154), **NL** (1,002) |
+| 📊 Porównanie | ↑ 525.7% vs wczoraj (1,674) |
 
 ## 📆 Ten tydzień (7 dni)
 
-> Suma tygodnia: **11,834** kluczy
+> Suma tygodnia: **12,236** kluczy
 
 | Dzień | Wykres | Przetłumaczono | Cykli |
 |-------|--------|---------------|-------|
@@ -635,8 +636,8 @@
 | 2026-02-21 | ░ | 0 | 0 |
 | 2026-02-22 | ░ | 0 | 0 |
 | 2026-02-23 | █ | 88 | 1 |
-| 2026-02-24 | ████████ | 1,674 | 1 |
-| 2026-02-25 | ██████████████████████████████████████████████████ | 10,072 | 5 |
+| 2026-02-24 | ███████ | 1,674 | 1 |
+| 2026-02-25 | ██████████████████████████████████████████████████ | 10,474 | 5 |
 
 ---
 
@@ -952,7 +953,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-25 10:21:37  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-25 10:23:46  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

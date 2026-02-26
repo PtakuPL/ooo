@@ -4,8 +4,11 @@
   "conditions": {
     "no_critical_token_errors": {
       "ok": false,
-      "guard_placeholder": 4,
-      "guard_pipe": 0
+      "guard_placeholder": 286,
+      "guard_pipe": 6,
+      "batch_guard_placeholder": 0,
+      "batch_guard_pipe": 0,
+      "source": "file_state_audit"
     },
     "guard_command_below_threshold": {
       "ok": true,
@@ -16,9 +19,9 @@
     },
     "coverage_above_95pct": {
       "ok": false,
-      "coverage_pct": 92.8,
+      "coverage_pct": 70.7,
       "total_keys": 14815,
-      "real_translations": 13745
+      "real_translations": 10473
     },
     "quality_entry_present": {
       "ok": true,
@@ -26,5 +29,5 @@
     }
   },
   "is_done": false,
-  "timestamp": "2026-02-21T21:04:06.362839Z"
+  "timestamp": "2026-02-26T19:11:21.063742Z"
 }

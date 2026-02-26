@@ -1,12 +1,12 @@
 {
   "lang": "mk",
   "script_group": "cyrillic",
-  "total_keys": 53770,
-  "translated": 4034,
-  "identical_to_en": 2807,
-  "placeholder_keys": 49716,
-  "coverage_pct": 7.5,
-  "issues_total": 19,
+  "total_keys": 74492,
+  "translated": 4158,
+  "identical_to_en": 2927,
+  "placeholder_keys": 49585,
+  "coverage_pct": 5.6,
+  "issues_total": 30,
   "issues_by_type": {
     "script_cyrillic_latin_mix": 19,
     "V2_length_ratio": 4,
@@ -20,7 +20,7 @@
     "MEDIUM": 5,
     "LOW": 0
   },
-  "score": 98.9,
+  "score": 99.0,
   "worst_keys": [
     {
       "key": "npc.a_dead_bureaucrat1.say_1",
@@ -151,5 +151,5 @@
     "length_ratio": 5,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T20:41:07.946893Z"
+  "validated_at": "2026-02-26T19:50:53.912127Z"
 }

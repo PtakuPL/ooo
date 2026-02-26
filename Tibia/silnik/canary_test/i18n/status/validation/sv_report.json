@@ -1,23 +1,25 @@
 {
   "lang": "sv",
   "script_group": "latin",
-  "total_keys": 53770,
-  "translated": 16878,
-  "identical_to_en": 2249,
-  "placeholder_keys": 36872,
-  "coverage_pct": 31.4,
-  "issues_total": 4,
+  "total_keys": 74492,
+  "translated": 16939,
+  "identical_to_en": 2239,
+  "placeholder_keys": 36804,
+  "coverage_pct": 22.7,
+  "issues_total": 212,
   "issues_by_type": {
-    "V4_artifact": 3,
-    "V1_placeholder_mismatch": 1
+    "V1_placeholder_mismatch": 175,
+    "V2_length_ratio": 29,
+    "V5_pipe_mismatch": 5,
+    "V4_artifact": 3
   },
   "issues_by_severity": {
-    "CRITICAL": 1,
+    "CRITICAL": 180,
     "HIGH": 3,
-    "MEDIUM": 0,
+    "MEDIUM": 29,
     "LOW": 0
   },
-  "score": 100.0,
+  "score": 96.7,
   "worst_keys": [
     {
       "key": "npc.a_dead_bureaucrat1.say_1",
@@ -26,37 +28,127 @@
       "severity": "CRITICAL"
     },
     {
-      "key": "scripts.actions_rewards.msg_1",
-      "category": "scripts",
+      "key": "npc.a_dead_bureaucrat3.say_1",
+      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
     {
-      "key": "monster.grynch_clan_goblin.voice_15",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "npc.carina.say_2",
+      "key": "npc.a_dead_bureaucrat4.say_1",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "quests.bigfoot_burden.gnomedix_msg4",
-      "category": "quests",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "key": "npc.a_weakened_forest_fury.multi_8",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_weakened_forest_fury.multi_9",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.albinius.multi_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.alesar.multi_6",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.alesar_functions.multi_6",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.alexander.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.andrew_lyze.multi_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.arkulius.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.asima.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.caramellia.multi_6",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.caramellia.multi_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cassino.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.charos.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.chavis.say_5",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_2",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     }
   ],
   "crossref": {
-    "enabled": true,
-    "issues_total": 427,
-    "consistency": 13,
+    "enabled": false,
+    "issues_total": 417,
+    "consistency": 0,
     "pl_reference": 400,
-    "length_ratio": 14,
+    "length_ratio": 17,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T20:41:13.524272Z"
+  "validated_at": "2026-02-26T19:50:58.810070Z"
 }

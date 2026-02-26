@@ -8057,19 +8057,19 @@
   },
   "quests.dark_trails.you_need_5_players_to_fight": {
     "src_hash": "dd66394f98cf7a92f092a64cf4b6f701",
-    "text": "Você precisa de 5 jogadores para lutar com Death Priest Shargon.",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Você precisa de 5 jogadores para lutar com Sacerdote da Morte Shargon.",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-14T07:25:28.120472Z"
+    "updated_at": "2026-02-26T02:27:25.928324Z"
   },
   "quests.dark_trails.you_need_exactly_5_players_to": {
     "src_hash": "3b4c4eca07178defda28435c1bf2bbdd",
-    "text": "Você precisa de exatamente 5 jogadores para lutar com Death Priest Shargon.",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Você precisa de exatamente 5 jogadores para lutar com Sacerdote da Morte Shargon.",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-14T07:25:28.121101Z"
+    "updated_at": "2026-02-26T02:27:25.929778Z"
   },
   "quests.dawnport.first_time_vocation": {
     "src_hash": "632c8e6c1a41db98f6da0017c97dfb26",
@@ -78463,14 +78463,6 @@
     "verified": false,
     "updated_at": "2026-02-25T23:17:14.683890Z"
   },
-  "monster.knight_familiar.name": {
-    "src_hash": "59bb8dfecc548a5d097b6f0b0d0149e4",
-    "text": "Knight familiar",
-    "source": "google_translate",
-    "confidence": 0.9,
-    "verified": false,
-    "updated_at": "2026-02-25T23:17:14.684374Z"
-  },
   "monster.paladin_familiar.name": {
     "src_hash": "394dc0c96d4265282f9b9e07a32e4dae",
     "text": "Paladin familiar",
@@ -80454,5 +80446,1213 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-26T00:24:10.784460Z"
+  },
+  "arena.title.apprentice": {
+    "src_hash": "0a664616e1506d0c24a61bd1cca7d70e",
+    "text": "Aprendiz",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:38:28.672822Z"
+  },
+  "arena.title.contender": {
+    "src_hash": "6bc60f225af3e040f25409d430314097",
+    "text": "Contendor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:38:28.678245Z"
+  },
+  "arena.title.champion": {
+    "src_hash": "3c18971605b1367c3d2ed6fda74be164",
+    "text": "Campeão",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:38:28.680385Z"
+  },
+  "misc.bank_system.say_26": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Olha Você aqui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:54:13.841571Z"
+  },
+  "misc.bank_system.say_34": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Olha Você aqui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:54:13.852730Z"
+  },
+  "module.init.text5": {
+    "src_hash": "517a573bb2eebb6a9c51b2d586663a28",
+    "text": "Uma roupa que foi criada para combinar com você. Temos certeza que você vai gostar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:59:27.588663Z"
+  },
+  "npc.alexander.greet_msg_1": {
+    "src_hash": "6fe4b246c8652dfd3d389d9b352404d9",
+    "text": "Olá |PLAYERNAME| e bem-vindo à loja {magic}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:11:05.356861Z"
+  },
+  "npc.alexander.say_3": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Ok, então.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:11:05.358327Z"
+  },
+  "npc.alexander.walkaway_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Até mais, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:11:05.359998Z"
+  },
+  "npc.alia.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Que os deuses te abençoem, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:11:05.361179Z"
+  },
+  "npc.alia.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Bem-vindo, jovem |PLAYERNAME|! Se você estiver gravemente ferido ou envenenado, posso {heal} você de graça.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:11:05.363068Z"
+  },
+  "item.18049.name": {
+    "src_hash": "e02f0416e10da5ec3168f0ad0e240dcc",
+    "text": "jacaré assassino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:15:01.695343Z"
+  },
+  "item.18050.name": {
+    "src_hash": "3d64be737584c068ef255f32eb9d1790",
+    "text": "jacaré bandido",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:15:01.695882Z"
+  },
+  "item.18051.name": {
+    "src_hash": "3d64be737584c068ef255f32eb9d1790",
+    "text": "jacaré bandido",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:15:01.696393Z"
+  },
+  "item.18052.name": {
+    "src_hash": "3d64be737584c068ef255f32eb9d1790",
+    "text": "jacaré bandido",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:15:01.697002Z"
+  },
+  "item.18053.name": {
+    "src_hash": "3d64be737584c068ef255f32eb9d1790",
+    "text": "jacaré bandido",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:15:01.697566Z"
+  },
+  "data.otservbr.global.npc.ceiron.L202.301": {
+    "src_hash": "77c54fdf4c4fa0f83a2d75af37051ae8",
+    "text": "Que Crunor abençoe e guie você, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:23:46.494586Z"
+  },
+  "data.otservbr.global.npc.cerdras.L86.658": {
+    "src_hash": "77c54fdf4c4fa0f83a2d75af37051ae8",
+    "text": "Que Crunor abençoe e guie você, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:23:46.495796Z"
+  },
+  "scripts.actions_gnome_chart.msg_2": {
+    "src_hash": "768bc326b118e9437537bef4279e71f8",
+    "text": "Você mapeou a localização e as dimensões de uma estrutura estranha, uma pequena ruína.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.932037Z"
+  },
+  "scripts.actions_gnome_chart.msg_3": {
+    "src_hash": "0710be37e70c376c6738022133b8b6f1",
+    "text": "Você mapeou a localização e as dimensões de uma estrutura estranha, semelhante a uma face de pedra.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.933884Z"
+  },
+  "scripts.actions_gnome_chart.msg_4": {
+    "src_hash": "884c0dcf03a8f5d8d2c34c6186c063f9",
+    "text": "Você mapeou a localização e as dimensões de uma estrutura estranha, um posto avançado.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.935725Z"
+  },
+  "scripts.actions_gnome_chart.msg_5": {
+    "src_hash": "9074c5b87cded213a6b2c0658b28d913",
+    "text": "Você mapeou a localização e as dimensões de uma estrutura estranha, um bastião.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.937719Z"
+  },
+  "scripts.actions_gnome_chart.msg_6": {
+    "src_hash": "2239381d7c7daedafec02ecae7283a90",
+    "text": "Você mapeou a localização e as dimensões de uma estrutura estranha, uma torre quebrada.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.938893Z"
+  },
+  "scripts.actions_gnome_items.msg_1": {
+    "src_hash": "8f8ae0bbc960b0e7c432304a999b957d",
+    "text": "Você encontrou um gráfico de gnomo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.939610Z"
+  },
+  "scripts.actions_gnome_items.msg_2": {
+    "src_hash": "861ab2588f39c57f58d9f463bdc28f4e",
+    "text": "Você não pode usar este item novamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.940355Z"
+  },
+  "scripts.actions_gnome_items.msg_3": {
+    "src_hash": "c640067d5fadf2d094bbc35f3dd5350f",
+    "text": "Você encontrou um trignometro gnomo.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.941082Z"
+  },
+  "scripts.actions_gnome_items.msg_4": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Está vazio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.941755Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_1": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Você investigou o local com sucesso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.942510Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_2": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Você investigou o local com sucesso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.943235Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_3": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Você investigou o local com sucesso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.943955Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_4": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Você investigou o local com sucesso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.944727Z"
+  },
+  "scripts.actions_gnome_trignometre.msg_5": {
+    "src_hash": "7088509147c37c8328c614fc97867c10",
+    "text": "Você investigou o local com sucesso.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.945580Z"
+  },
+  "scripts.actions_gnomish_chest.msg_1": {
+    "src_hash": "0f05e4f332a3edab0ec548f5a26655fb",
+    "text": "Você encontrou pesticidas gnômicos.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.946325Z"
+  },
+  "scripts.actions_gnomish_chest.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Está vazio.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.946828Z"
+  },
+  "scripts.actions_gnomish_pesticide.msg_1": {
+    "src_hash": "12df7c33b31ae10bbbcffc40c3459b3c",
+    "text": "Apenas cadáveres meio apodrecidos podem ser neutralizados com esses pesticidas.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.947940Z"
+  },
+  "scripts.actions_gooey_mass.msg_1": {
+    "src_hash": "1391a870b2a88959f6ecb9753f0197a6",
+    "text": "Você encontrou um {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.949432Z"
+  },
+  "scripts.actions_habitat_corrupted.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "A sala se transforma em uma paisagem completamente diferente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.951067Z"
+  },
+  "scripts.actions_habitat_desert.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "A sala se transforma em uma paisagem completamente diferente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.952183Z"
+  },
+  "scripts.actions_habitat_dimension.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "A sala se transforma em uma paisagem completamente diferente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:30:43.953419Z"
+  },
+  "web.tpl.guilds.create.success.b_1": {
+    "src_hash": "1a81759353d36dbd31059fc261af0aa2",
+    "text": "Parabéns!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:47:24.826878Z"
+  },
+  "web.tpl.highscores.b_3": {
+    "src_hash": "53b63018bfb47c8eaa82a16c8a07351e",
+    "text": "Poltergeist",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:47:24.831627Z"
+  },
+  "web.tpl.highscores.b_4": {
+    "src_hash": "49ee3087348e8d44e1feda1917443987",
+    "text": "Nome",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:47:24.832140Z"
+  },
+  "questlog.quest_10.mission_5.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Peça missão a Palimuth.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:50:55.616669Z"
+  },
+  "questlog.quest_10.mission_6.state_1": {
+    "src_hash": "ab54c4923b7a7a93c04b630b3ad0e279",
+    "text": "Peça missão a Palimuth.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:50:55.619497Z"
+  },
+  "client.spells.text1": {
+    "src_hash": "f9140cb5bf654332975e8f47bfcac5b0",
+    "text": "Greve do Aprendiz",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:02:25.271410Z"
+  },
+  "otclient_data.30_minimap_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Cancelar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:05:33.742655Z"
+  },
+  "otclient_data.40_minimap_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Cancelar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:05:33.751431Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Cancelar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:05:33.753721Z"
+  },
+  "misc.bank_system.say_38": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Olha Você aqui.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:16:24.156015Z"
+  },
+  "scripts.actions_habitat_grass.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "A sala se transforma em uma paisagem completamente diferente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:43:21.976319Z"
+  },
+  "scripts.actions_habitat_ice.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "A sala se transforma em uma paisagem completamente diferente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:43:21.977558Z"
+  },
+  "scripts.actions_habitat_mushroom.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "A sala se transforma em uma paisagem completamente diferente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:43:21.978898Z"
+  },
+  "scripts.actions_habitat_roshamuul.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "A sala se transforma em uma paisagem completamente diferente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:43:21.980038Z"
+  },
+  "scripts.actions_habitat_venom.msg_1": {
+    "src_hash": "155018594df547ef601c431ad4d0aa25",
+    "text": "A sala se transforma em uma paisagem completamente diferente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:43:21.981289Z"
+  },
+  "scripts.actions_idol_of_tukh.msg_1": {
+    "src_hash": "df3c4b2b4bd3cf1975d03f384d86e691",
+    "text": "Você recebeu a roupa {}!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:43:21.982652Z"
+  },
+  "scripts.actions_iksupan_entrance.msg_1": {
+    "src_hash": "64a9a8df4557dbfa6486d100a99e3ceb",
+    "text": "Você precisa de pelo menos nível 150 para entrar.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:43:21.983748Z"
+  },
+  "item.15988.name": {
+    "src_hash": "487d6209317b55d3794a0521da6ec6db",
+    "text": "golem de lava morto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T07:12:15.377526Z"
+  },
+  "item.15989.name": {
+    "src_hash": "487d6209317b55d3794a0521da6ec6db",
+    "text": "golem de lava morto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T07:12:15.378327Z"
+  },
+  "item.15990.name": {
+    "src_hash": "487d6209317b55d3794a0521da6ec6db",
+    "text": "golem de lava morto",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T07:12:15.379033Z"
+  },
+  "scripts.actions_last_object.msg_1": {
+    "src_hash": "ddd6237398c160652e46293ac818e5b9",
+    "text": "O estranho símbolo na parede ao fundo brilha violentamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T07:26:37.970374Z"
+  },
+  "scripts.actions_last_object.msg_2": {
+    "src_hash": "e383abcb644bc07342757f906ebda41b",
+    "text": "O objeto de culto fica ali silenciosamente. A área perigosa ao redor foi praticamente dissolvida.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T07:26:37.972178Z"
+  },
+  "scripts.actions_last_object.msg_3": {
+    "src_hash": "67e4e841e7632d46dcfdc852092449f5",
+    "text": "Ao estender a mão para tocar o objeto de culto, uma onda de energia irrompe do crânio. Você baniu seu poder.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T07:26:37.974753Z"
+  },
+  "scripts.actions_lever.msg_1": {
+    "src_hash": "c3d92b3a3fe4618c8b233510b5744256",
+    "text": "Você precisa esperar alguns minutos para usar novamente.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T07:45:16.479750Z"
+  },
+  "scripts.actions_lever.msg_2": {
+    "src_hash": "6ebb051ad07ac7d5c55da021c0818fdb",
+    "text": "Você não tem a chave mágica do Chayenne.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T08:03:13.491114Z"
+  },
+  "raid.wasp_bear.name": {
+    "src_hash": "f5318a3971a453461b30996bcfcff0aa",
+    "text": "Vespa Urso",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T09:50:04.270892Z"
+  },
+  "lib.blessing.msg_already": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Você já é abençoado.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:25:53.901891Z"
+  },
+  "lib.functions.msg1": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Você deve esperar. Alguém está desafiando ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:25:53.912538Z"
+  },
+  "lib.functions.msg2": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Você deve esperar. Alguém está desafiando ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:25:53.913737Z"
+  },
+  "system.blessing.already": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Você já é abençoado.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:49:25.210623Z"
+  },
+  "system.store.check_inbox": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Certifique-se de ter espaços livres na caixa de entrada da sua loja.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:49:25.216447Z"
+  },
+  "system.venture.decay": {
+    "src_hash": "064cd71852afeb595ee8028d8028b756",
+    "text": "Aventure-se no caminho da decadência!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:49:25.220923Z"
+  },
+  "event.player.msg_1": {
+    "src_hash": "68362d48bbe58ffe6e80d83dddad1f45",
+    "text": "Você não está mais recarregando resistência, pois saiu de uma zona de regeneração.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:57:09.903017Z"
+  },
+  "event.player.msg_2": {
+    "src_hash": "b4834225a1f266021eb8c3078a3a353f",
+    "text": "Ocorreu um erro ao processar seu relatório. Entre em contato com um gamemaster.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:57:09.905238Z"
+  },
+  "event.player.msg_3": {
+    "src_hash": "24dc08a041db9d4297f1d6df6a7573cf",
+    "text": "Obrigado por relatar {}. Seu relatório \\z\n\tserá processado pela equipe {} o mais rápido possível.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:57:09.906839Z"
+  },
+  "event.player.msg_4": {
+    "src_hash": "b4834225a1f266021eb8c3078a3a353f",
+    "text": "Ocorreu um erro ao processar seu relatório. Entre em contato com um gamemaster.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:57:09.908145Z"
+  },
+  "event.player.msg_5": {
+    "src_hash": "ad93762e1a1a1337775cbbf49b508440",
+    "text": "Seu relatório está sendo processado.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:57:09.909016Z"
+  },
+  "event.player.say_1": {
+    "src_hash": "a65ae4b9d622f5aa0ad9a90c999f9440",
+    "text": "Você alimenta a tartaruga, agora pode passar.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:57:09.910108Z"
+  },
+  "event.player.msg_move_fast": {
+    "src_hash": "c6688013ffa822ec6f74cbb8fceb229e",
+    "text": "Você não pode mover esse item tão rápido.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:57:09.911104Z"
+  },
+  "event.player.msg_report_sent": {
+    "src_hash": "c1d13c15a6ed00ee9e451cc57d9a46a2",
+    "text": "Seu relatório foi enviado para {server}.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:57:09.912140Z"
+  },
+  "event.player.stamina_pz_recharge": {
+    "src_hash": "72e7da63f6db4ec35e7ed0a5d612157c",
+    "text": "Em zona de proteção. Recarregando {0} resistência a cada {1} minutos.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:57:09.913323Z"
+  },
+  "npc.alexander.say_1": {
+    "src_hash": "b62a0dd738c7bd24999a8405be0ab6de",
+    "text": "Então você me pede um {{}} para começar sua aventura?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:32.246556Z"
+  },
+  "npc.alexander.say_2": {
+    "src_hash": "42f4f7cc57059d2b7623f11666f8882b",
+    "text": "O que? Eu já te dei um {{}}!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:41.651449Z"
+  },
+  "npc.alexander.stdmod_1": {
+    "src_hash": "bbdce9ca85221459cb94bf2733257a94",
+    "text": "Vendendo todos os tipos de equipamentos mágicos. Venha e dê uma olhada",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:41.652225Z"
+  },
+  "npc.alexander.voice_1": {
+    "src_hash": "bbdce9ca85221459cb94bf2733257a94",
+    "text": "Vendendo todos os tipos de equipamentos mágicos. Venha e dê uma olhada",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:41.652931Z"
+  },
+  "npc.alia.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Então receba a proteção da reviravolta do destino, peregrino.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:41.653643Z"
+  },
+  "npc.alia.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Então receba a proteção da reviravolta do destino, peregrino.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:41.654430Z"
+  },
+  "npc.alia.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Sem problemas.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:41.654861Z"
+  },
+  "npc.alia.stdmod_11": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Você está ferido, meu filho. Eu curarei suas feridas.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:41.655474Z"
+  },
+  "npc.alia.stdmod_12": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Você não está com uma aparência tão ruim. Desculpe, não posso ajudá-lo. Mas se você está procurando proteção adicional, você deve ir para o {pilgrimage} das cinzas ou obter a proteção do {twist of fate} aqui.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:41.656895Z"
+  },
+  "npc.alia.stdmod_13": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Sempre que você recebe um ferimento letal, sua força vital é danificada e há uma chance de você perder parte do seu equipamento. Com cada um dos cinco {blessings} que você possui, esse dano e chance de perda serão reduzidos.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:50.420855Z"
+  },
+  "npc.alia.stdmod_15": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Vejo que você recebeu a proteção espiritual no templo das flores brancas ao sul de Thais.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:50.422622Z"
+  },
+  "npc.alia.stdmod_16": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Posso sentir que os druidas ao norte de Carlin forneceram a você o Abraço de Tibia.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:50.423981Z"
+  },
+  "npc.alia.stdmod_17": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Posso ver que você recebeu a bênção dos dois sóis na torre solar perto de Ab'Dendriel.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:50.424932Z"
+  },
+  "npc.alia.stdmod_18": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Posso sentir que a centelha da fênix já foi dada a você pelos sacerdotes anões da terra e do fogo em Kazordoon.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:50.426511Z"
+  },
+  "npc.alia.stdmod_19": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Posso sentir que você já conversou com o eremita Eremo na ilha de Cormaya e recebeu esta bênção.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:50.428356Z"
+  },
+  "npc.alia.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Multar. Você é livre para recusar minha oferta.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:50.429536Z"
+  },
+  "npc.alia.stdmod_20": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Você pode pedir a bênção da proteção espiritual no templo das flores brancas ao sul de Thais.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:54.148678Z"
+  },
+  "npc.alia.stdmod_21": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Os druidas ao norte de Carlin fornecerão a você o abraço de Tibia.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:13:54.149497Z"
+  },
+  "item.17372.name": {
+    "src_hash": "26aad6717aed8e088a2207d03e82b3c4",
+    "text": "ficus benjamina",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:12.395789Z"
+  },
+  "item.18054.name": {
+    "src_hash": "642d657024dfa48d4c08c2a11a7a6e7f",
+    "text": "caminhante de sangue bárbaro morto",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:12.396728Z"
+  },
+  "item.18055.name": {
+    "src_hash": "642d657024dfa48d4c08c2a11a7a6e7f",
+    "text": "caminhante de sangue bárbaro morto",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:12.397251Z"
+  },
+  "item.18056.name": {
+    "src_hash": "642d657024dfa48d4c08c2a11a7a6e7f",
+    "text": "caminhante de sangue bárbaro morto",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:12.397790Z"
+  },
+  "item.18057.name": {
+    "src_hash": "642d657024dfa48d4c08c2a11a7a6e7f",
+    "text": "caminhante de sangue bárbaro morto",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:12.398321Z"
+  },
+  "item.18058.name": {
+    "src_hash": "69a25395456be29228222998f9700eff",
+    "text": "brutal bárbaro morto",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:12.398785Z"
+  },
+  "item.18059.name": {
+    "src_hash": "69a25395456be29228222998f9700eff",
+    "text": "brutal bárbaro morto",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:16.100292Z"
+  },
+  "item.18060.name": {
+    "src_hash": "69a25395456be29228222998f9700eff",
+    "text": "brutal bárbaro morto",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:16.101210Z"
+  },
+  "item.18061.name": {
+    "src_hash": "69a25395456be29228222998f9700eff",
+    "text": "brutal bárbaro morto",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:16.101989Z"
+  },
+  "item.18062.name": {
+    "src_hash": "8cfa54169d49f960ae9ea6d5427648ec",
+    "text": "cabeças bárbaras mortas",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:16.102719Z"
+  },
+  "item.18063.name": {
+    "src_hash": "8cfa54169d49f960ae9ea6d5427648ec",
+    "text": "cabeças bárbaras mortas",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:16.103536Z"
+  },
+  "data.otservbr.global.npc.chemar.L87.743": {
+    "src_hash": "c5fa648ec9c917db8d6158cba9a21ddf",
+    "text": "Bênçãos de Daraman, viajante |PLAYERNAME|.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:36:34.018320Z"
+  },
+  "data.otservbr.global.npc.chief.grarkharok.L158.1407": {
+    "src_hash": "6e99cfbff56cfe44fc4b90c2c9c50ac9",
+    "text": "Eu, Chefe Grarkharok! Não, {nothing}!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:36:34.018922Z"
+  },
+  "data.otservbr.global.npc.cornelia.L93.932": {
+    "src_hash": "c4ec5f0f359d484be0af973237c62f24",
+    "text": "Bem-vindo à melhor loja {armor} do país, |PLAYERNAME|!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:36:34.020509Z"
+  },
+  "data.otservbr.global.npc.daniel.steelsoul.L250.865": {
+    "src_hash": "3452d00ba60a2347d6c368f9d741e89a",
+    "text": "Saudações e {Banor} esteja com você, |PLAYERNAME|!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:36:34.021418Z"
+  },
+  "data.otservbr.global.npc.edvard.L61.1319": {
+    "src_hash": "d1edd481785444cc93991e6301343f21",
+    "text": "Bem-vindo à loja de móveis Edron, |PLAYERNAME|.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:36:34.022304Z"
+  },
+  "data.otservbr.global.npc.eshaya.L133.672": {
+    "src_hash": "524b0a0aae1a06ffd7a8e6f5394b6a0d",
+    "text": "A bênção de Suon e Bastesh, querido convidado!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:36:37.605762Z"
+  },
+  "data.otservbr.global.npc.gnomadness.L88.256": {
+    "src_hash": "68c642b393c99bc29573fa466a3c50de",
+    "text": "Parabéns, você recebeu a montaria Nãoxious Ripptor.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:36:37.606916Z"
+  },
+  "data.otservbr.global.npc.guide.alexena.L106.1377": {
+    "src_hash": "2be7cfbe66aae62868dc5cef37599b00",
+    "text": "Adeus e aproveite sua estadia em Carlin, |PLAYERNAME|",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:36:37.608826Z"
+  },
+  "scripts.actions_goldenIdol.msg_1": {
+    "src_hash": "d8f1a1cdd7c4b9b8fec918889daa347c",
+    "text": "Você colocou todos os ídolos nos altares e destrancou o templo!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.805105Z"
+  },
+  "scripts.actions_goldenIdol.msg_2": {
+    "src_hash": "55c38f7eb32df2ebb650f72cea066491",
+    "text": "Já existe um ídolo aqui. Experimente outro altar.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.805978Z"
+  },
+  "scripts.actions_goldenidol.say_1": {
+    "src_hash": "24263c389a810706241cfee3fa3589cd",
+    "text": "**colocando ídolo**",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.806548Z"
+  },
+  "scripts.actions_gooey_mass.msg_2": {
+    "src_hash": "dc8f264ddf3d7612d894cfb02d522500",
+    "text": "Você encontrou um {}. Pesando {} onças, é muito pesado.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.807435Z"
+  },
+  "scripts.actions_gooey_mass.msg_3": {
+    "src_hash": "de1c9c7d7e9ac42617aa8857a4e2225f",
+    "text": "Você encontrou um {}, mas não tem espaço para pegá-lo",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.808336Z"
+  },
+  "scripts.actions_gravel.msg_1": {
+    "src_hash": "4773513d10da04eea4d6263d73273d1d",
+    "text": "Você coleta um pouco de cascalho fino.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.809096Z"
+  },
+  "scripts.actions_habitat_corrupted.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "A alavanca está presa, precisa de algum tempo para poder ser movida novamente.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.810059Z"
+  },
+  "scripts.actions_habitat_desert.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "A alavanca está presa, precisa de algum tempo para poder ser movida novamente.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.810952Z"
+  },
+  "scripts.actions_habitat_dimension.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "A alavanca está presa, precisa de algum tempo para poder ser movida novamente.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.811842Z"
+  },
+  "scripts.actions_habitat_grass.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "A alavanca está presa, precisa de algum tempo para poder ser movida novamente.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.812789Z"
+  },
+  "scripts.actions_habitat_ice.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "A alavanca está presa, precisa de algum tempo para poder ser movida novamente.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.813644Z"
+  },
+  "scripts.actions_habitat_mushroom.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "A alavanca está presa, precisa de algum tempo para poder ser movida novamente.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.814569Z"
+  },
+  "scripts.actions_habitat_roshamuul.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "A alavanca está presa, precisa de algum tempo para poder ser movida novamente.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.815766Z"
+  },
+  "scripts.actions_habitat_venom.say_1": {
+    "src_hash": "f086084fbe044c74ae20da04bca275f5",
+    "text": "A alavanca está presa, precisa de algum tempo para poder ser movida novamente.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.816895Z"
+  },
+  "scripts.actions_holy_water.msg_1": {
+    "src_hash": "a8071fd5fd191d609f186ded5ec1fea2",
+    "text": "Você borrifa o talismã do chifre com água benta. Ele brilha levemente.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.817724Z"
+  },
+  "scripts.actions_inscriptions.msg_1": {
+    "src_hash": "5650a1ba0060a83b12bc68f84825a89f",
+    "text": "As palavras parecem respirar estranhamente. Uma palavra fica na sua mente: bronze",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.818888Z"
+  },
+  "scripts.actions_inscriptions.msg_2": {
+    "src_hash": "d0d188433a2cb4792bb0534e52f90092",
+    "text": "As palavras parecem brilhar ligeiramente. Um nome fica gravado em sua mente: Takesha Antishu",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.820939Z"
+  },
+  "scripts.actions_inscriptions.msg_3": {
+    "src_hash": "65b1bcbdbbca5ed48d6d3c7ac0a06c9c",
+    "text": "As palavras parecem flutuar. Uma palavra permanece em sua mente: flutuando",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.822094Z"
+  },
+  "scripts.actions_key2.msg_1": {
+    "src_hash": "c01ef6b8ed5e20d7721df122e9083659",
+    "text": "Uma mão invisível puxa você para dentro.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:47.822873Z"
+  },
+  "scripts.actions_key2.msg_2": {
+    "src_hash": "5fb38602d50efd74221fdf1e74fbee29",
+    "text": "Saia do meu quarto!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:57.574277Z"
+  },
+  "scripts.actions_keyCheck.msg_1": {
+    "src_hash": "b824070060a96b3767a04442a2bbbd24",
+    "text": "Assim que você gira a segunda chave um mecanismo retrai as fechaduras e engole as chaves, abrindo uma pequena passagem além.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:57.575230Z"
+  },
+  "scripts.actions_keyCheck.msg_2": {
+    "src_hash": "599d1059eed101de91e1275fef7304f1",
+    "text": "Você precisa usar o mecanismo do próprio pilar para girar as duas chaves ao mesmo tempo.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:57.575972Z"
+  },
+  "scripts.actions_keyCheck.msg_3": {
+    "src_hash": "ef8ec3bba66aa3bfc1deb0e6dbd2d49b",
+    "text": "Você alcança o ônix e o gatilho e uma enorme descarga de energia bruta. Agora é possível atravessar o portal desta tumba.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:57.576880Z"
+  },
+  "scripts.actions_lair_entrance.msg_1": {
+    "src_hash": "74de3ece38288807bd3e747ebe19fc4b",
+    "text": "Você ainda não é digno de entrar no covil de The First Dragon.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:57.577607Z"
+  },
+  "scripts.actions_last_fight.msg_1": {
+    "src_hash": "6ed9feb088ea842e969a2111ff57c309",
+    "text": "Você precisa pelo menos ",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:57.578202Z"
+  },
+  "scripts.actions_legion_helmet.say_1": {
+    "src_hash": "b66eb5cbe62a5582e5e1a8f08fe1070e",
+    "text": "Você já descobriu este teletransporte.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:57.579434Z"
+  },
+  "scripts.actions_legion_helmet.say_2": {
+    "src_hash": "dea1f1531a62234d04f6d34d95fe3999",
+    "text": "O deus lagarto aceita sua oferta! Você pode entrar no santuário!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:57.580842Z"
+  },
+  "scripts.actions_lever.say_1": {
+    "src_hash": "aa9ccbfdb4b79e0d41f656fcba8ab407",
+    "text": "Você precisa que um jogador de cada vocação tenha completado a missão das Esferas Elementais e também carregue o item raro elementar.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:57.581984Z"
+  },
+  "scripts.actions_lever.say_2": {
+    "src_hash": "aa9ccbfdb4b79e0d41f656fcba8ab407",
+    "text": "Você precisa que um jogador de cada vocação tenha completado a missão das Esferas Elementais e também carregue o item raro elementar.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:48:57.582908Z"
+  },
+  "actions.outfit_items.msg_need_outfit": {
+    "src_hash": "6f55a0eedffa63b4bc43323bbb07b0e8",
+    "text": "Você precisa da roupa para esta parte.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:09.906157Z"
+  },
+  "actions.outfit_items.msg_already_own": {
+    "src_hash": "ff03bf90647055eb6169fe3518a86e11",
+    "text": "Você já possui esta parte da roupa.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:09.906964Z"
+  },
+  "actions.key_door.msg_wrong_key": {
+    "src_hash": "0f9c62489a770c7c23c3b706d5fccb35",
+    "text": "A chave não corresponde.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:09.907580Z"
+  },
+  "actions.gamestore.msg_no_rookgaard": {
+    "src_hash": "b4299c21f178fe5003979baf89fc88c5",
+    "text": "A loja não tem ofertas para cidadão de rookgaard.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:09.908292Z"
+  },
+  "actions.gamestore.msg_exhausted": {
+    "src_hash": "a7ea8fed6bcc46c21a5a700eaa4620c0",
+    "text": "Você está exausto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:09.908770Z"
   }
 }

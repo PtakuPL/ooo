@@ -1,132 +1,132 @@
 {
-  "timestamp": "2026-02-21T21:18:33.484224Z",
+  "timestamp": "2026-02-26T20:06:44.385524Z",
   "language": "ru",
-  "json_file": "scripts.json",
-  "translated": 30,
+  "json_file": "npc.json",
+  "translated": 28,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "gamestore.purchase.success",
-      "en": "You have purchased %s for %d coins.",
-      "translated": "Вы приобрели %s за %d монет.",
+      "key": "npc.a_prisoner.say_2",
+      "en": "Mnjam - excellent apples. Now - about that key. You are sure want it?",
+      "translated": "Мои сюрреалистические цифры основаны на удивительных фактах. \\z Хотите узнать тайну математической магии?",
       "source": "tm"
     },
     {
-      "key": "gamestore.transfer.history_received",
-      "en": "%s transferred you this amount.",
-      "translated": "%s перевел вам эту сумму.",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.multi_32",
+      "en": "Dragon dreams are golden. ...",
+      "translated": "Мечты дракона золотые. ...",
+      "source": "simple"
     },
     {
-      "key": "gamestore.transfer.history_sent",
-      "en": "You transferred this amount to %s",
-      "translated": "Вы перевели эту сумму на %s",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.multi_26",
+      "en": "The loudness of the gargantuan spectacle around you bursts your hearing, yet you absorb all the sounds around you. ...",
+      "translated": "Громкость гигантского зрелища вокруг вас разрывает ваш слух, но вы поглощаете все звуки вокруг себя. ...",
+      "source": "free_gt"
     },
     {
-      "key": "gamestore.transfer.success",
-      "en": "You have transfered %s coins to %s successfully",
-      "translated": "Вы успешно перевели монеты %s на %s.",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.multi_27",
+      "en": "As several large obstacles move aside directly in front of you, an intense bright centre leaps into your view. Though you cannot perceive how fast you are, your pace seems too slow. ...",
+      "translated": "Когда несколько крупных препятствий отодвигаются прямо перед вами, в поле вашего зрения появляется яркий яркий центр. Хотя вы не можете осознать, насколько вы быстры, ваш темп кажется слишком медленным. ...",
+      "source": "free_gt"
     },
     {
-      "key": "gamestore.validation.hireling_forbidden_word",
-      "en": "You can't use word \"%s\" in your hireling name.",
-      "translated": "Вы не можете использовать слово «%s» в имени наемника.",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.multi_28",
+      "en": "Ever decelerating, you ultimately approach a middle in this chaos of tones of green. ...",
+      "translated": "Постоянно замедляясь, вы в конечном итоге приближаетесь к середине в этом хаосе зеленых тонов. ...",
+      "source": "free_gt"
     },
     {
-      "key": "gamestore.validation.hireling_forbidden_word_space",
-      "en": "You can't use word \"%s\" with whitespace in your hireling name.",
-      "translated": "Вы не можете использовать слово «%s» с пробелами в имени вашего наемника.",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.multi_29",
+      "en": "As you come closer to it, yellowish shades of orange embrace you, softer shapes emerge and you almost forget the mayhem before. In warm comfort you see what lies in the heart of it all. ...",
+      "translated": "Когда вы приближаетесь к нему, желтоватые оттенки оранжевого охватывают вас, появляются более мягкие формы, и вы почти забываете о прежнем хаосе. В теплом уюте вы видите, что лежит в основе всего этого. ...",
+      "source": "free_gt"
     },
     {
-      "key": "gamestore.validation.invalid_character",
-      "en": "You can't use this character '%s' in your new name.",
-      "translated": "Вы не можете использовать этот символ '%s' в своем новом имени.",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.multi_30",
+      "en": "A majestic dragon in his sleep is surrounded by what seems the warmth and energy of a thousand suns. The tranquillity of its sight makes you smile gently. ...",
+      "translated": "Величественный дракон во сне окружен теплом и энергией тысячи солнц. Спокойствие его вида заставляет вас нежно улыбнуться. ...",
+      "source": "free_gt"
     },
     {
-      "key": "gamestore.validation.monster_name",
-      "en": "Your new name '%s' can't be a monster's name.",
-      "translated": "Ваше новое имя '%s' не может быть именем монстра.",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.multi_31",
+      "en": "You feel a perfect mixture of joy, compassion and sudden peacefulness. Bright xanthous impressions of topaz, orange and white welcome you at the final halt of your journey. ...",
+      "translated": "Вы чувствуете идеальную смесь радости, сострадания и внезапного умиротворения. Яркие ксантовые оттенки топаза, оранжевого и белого приветствуют вас на последней остановке вашего пути. ...",
+      "source": "free_gt"
     },
     {
-      "key": "gamestore.validation.new_name_forbidden_word",
-      "en": "You can't use the word '%s' in your new name.",
-      "translated": "Вы не можете использовать слово '%s' в своем новом имени.",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.multi_33",
+      "en": "You find yourself inside the dragon's dream. You can {look} around or {go} into a specific direction. You can also {take} or {use} an object. Enter {help} to display this information at any time.",
+      "translated": "Вы попадаете в сон дракона. Вы можете {look} вокруг или {go} в определенном направлении. Вы также можете {take} или {use} объект. Введите {help}, чтобы отобразить эту информацию в любое время.",
+      "source": "free_gt"
     },
     {
-      "key": "gamestore.validation.new_name_forbidden_word_space",
-      "en": "You can't use the word '%s' even with spaces in your new name.",
-      "translated": "Вы не можете использовать слово '%s' даже с пробелами в вашем новом имени.",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.multi_5",
+      "en": "The transfer was successful. ...",
+      "translated": "Трансфер прошел успешно. ...",
+      "source": "free_gt"
     },
     {
-      "key": "gamestore.validation.npc_name",
-      "en": "Your new name '%s' can't be an NPC's name.",
-      "translated": "Ваше новое имя '%s' не может быть именем NPC.",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.multi_6",
+      "en": "You are now prepared to enter the realm of the evildoer. I am grateful for your help, wayfarer. Should you seek my council, use this charm I cede to you. For my spirit will guide you wherever you are. May you enjoy a sheltered future, you shall prevail.",
+      "translated": "Теперь вы готовы войти в царство злодея. Я благодарен за твою помощь, путник. Если ты попросишь моего совета, используй это обаяние, которое я тебе передаю. Потому что мой дух будет вести тебя, где бы ты ни был. Пусть у вас будет защищенное будущее, вы победите.",
+      "source": "free_gt"
     },
     {
-      "key": "lib.hireling.lamp_description",
-      "en": "This mysterious lamp summons your very own personal hireling.\nThis item cannot be traded.\nThis magic lamp is the home of %s.",
-      "translated": "Эта таинственная лампа призывает вашего личного наемника.\nЭтот предмет нельзя продать.\nЭта волшебная лампа — дом %s.",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.multi_7",
+      "en": "Aaaah... free at last. Hmmm. ...",
+      "translated": "Аааа... наконец-то свободен. Хм. ...",
+      "source": "free_gt"
     },
     {
-      "key": "player.stash.retrieved",
-      "en": "Retrieved {0}x {1}.",
-      "translated": "Получено {0}x {1}.",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.multi_8",
+      "en": "I assume you need to get through the gate to reach the evildoer. I can help you if you trust me, wayfarer. I will share a part of my mind with you which should enable you to step through the gate. ...",
+      "translated": "Я предполагаю, что вам нужно пройти через ворота, чтобы добраться до злодея. Я могу помочь тебе, если ты поверишь мне, путник. Я поделюсь с вами частью своего разума, которая поможет вам пройти через врата. ...",
+      "source": "free_gt"
     },
     {
-      "key": "quest.soul_war.boss_progress_access",
-      "en": "%s: Access achieved!",
-      "translated": "%s: Доступ получен!",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.multi_9",
+      "en": "This procedure may be exhausting. Are you prepared to receive my key?",
+      "translated": "Эта процедура может быть утомительной. Вы готовы получить мой ключ?",
+      "source": "free_gt"
     },
     {
-      "key": "quest.soul_war.boss_progress_kills",
-      "en": "%s: %d/%d kills",
-      "translated": "%s: %d/%d убийств",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.say_1",
+      "en": "You find yourself inside the dragon's dream. You can {look} around or {go} into a specific direction. You can also {take} or {use} an object. Enter {help} to display this information at any time.",
+      "translated": "Вы попадаете в сон дракона. Вы можете {look} вокруг или {go} в определенном направлении. Вы также можете {take} или {use} объект. Введите {help}, чтобы отобразить эту информацию в любое время.",
+      "source": "free_gt"
     },
     {
-      "key": "quests.world_board.oriental_ships",
-      "en": "Oriental ships sighted! A trader for exotic creature products may currently be visiting Carlin, Ankrahmun or Liberty Bay.",
-      "translated": "Обнаружены восточные корабли! Торговец продуктами экзотических существ в настоящее время может посещать Карлин, Анкрахмун или Либертй Bay.",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.say_10",
+      "en": "You return through the semi-translucent gate to the west. ",
+      "translated": "Вы возвращаетесь через полупрозрачные ворота на запад. ",
+      "source": "free_gt"
     },
     {
-      "key": "scripts.actions_gems.shrine_time",
-      "en": "When the time comes, '%s' will be accepted at this shrine.",
-      "translated": "Когда придет время, '%s' будет принят в этом храме.",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.say_11",
+      "en": "You head back north to the plateau. ",
+      "translated": "Вы возвращаетесь на север, к плато. ",
+      "source": "free_gt"
     },
     {
-      "key": "scripts.dolls.12043_3",
-      "en": "Hail %s!",
-      "translated": "Привет, %s!",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.say_12",
+      "en": "You travel east across several large emerald bluffs and edges. All sorts of gems are scattered alongside your path. ",
+      "translated": "Вы путешествуете на восток через несколько больших изумрудных утесов и краев. На вашем пути разбросаны всевозможные драгоценные камни. ",
+      "source": "free_gt"
     },
     {
-      "key": "scripts.offline_training.hours_plural",
-      "en": "%s hours",
-      "translated": "%s часов",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.say_13",
+      "en": "You take a rather large ruby out of a pile before you. ",
+      "translated": "Вы достаете из кучки перед собой довольно большой рубин. ",
+      "source": "free_gt"
     },
     {
-      "key": "scripts.offline_training.minutes_plural",
-      "en": "%s minutes",
-      "translated": "%s минут",
-      "source": "tm"
+      "key": "npc.a_sleeping_dragon.say_14",
+      "en": "You head north passing countless stones in the crimson sea of stones beneath your feet.",
+      "translated": "Вы направляетесь на север, минуя бесчисленные камни в малиновом море камней под ногами.",
+      "source": "free_gt"
     }
   ]
 }

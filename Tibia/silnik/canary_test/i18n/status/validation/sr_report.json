@@ -1,97 +1,155 @@
 {
   "lang": "sr",
   "script_group": "cyrillic",
-  "total_keys": 53770,
-  "translated": 25061,
+  "total_keys": 74492,
+  "translated": 25084,
   "identical_to_en": 1199,
-  "placeholder_keys": 28689,
-  "coverage_pct": 46.6,
-  "issues_total": 11,
+  "placeholder_keys": 28659,
+  "coverage_pct": 33.7,
+  "issues_total": 312,
   "issues_by_type": {
-    "V4_artifact": 11
+    "V1_placeholder_mismatch": 264,
+    "V2_length_ratio": 31,
+    "V4_artifact": 11,
+    "V5_pipe_mismatch": 5,
+    "V7_command_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
+    "CRITICAL": 269,
     "HIGH": 11,
-    "MEDIUM": 0,
+    "MEDIUM": 32,
     "LOW": 0
   },
-  "score": 99.9,
+  "score": 96.7,
   "worst_keys": [
     {
-      "key": "achievement.317.description",
-      "category": "achievements",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.grynch_clan_goblin.voice_15",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "npc.carina.say_2",
+      "key": "npc.a_dead_bureaucrat1.say_1",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.markwin.say_3",
+      "key": "npc.a_dead_bureaucrat3.say_1",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.oswald.stdmod_32",
+      "key": "npc.a_dead_bureaucrat4.say_1",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.riddler.say_12",
+      "key": "npc.a_weakened_forest_fury.multi_8",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.riddler.say_4",
+      "key": "npc.a_weakened_forest_fury.multi_9",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.the_orc_king.say_3",
+      "key": "npc.albinius.multi_1",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.theodore_loveless.multi_2",
+      "key": "npc.alesar.multi_6",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.wyda.say_4",
+      "key": "npc.alesar_functions.multi_6",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "quests.bigfoot_burden.gnomedix_msg4",
-      "category": "quests",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "key": "npc.alexander.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.andrew_lyze.multi_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.arkulius.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.asima.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.caramellia.multi_6",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.caramellia.multi_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cassino.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.chavis.say_5",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_2",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_5",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 244,
-    "consistency": 11,
-    "pl_reference": 206,
-    "length_ratio": 27,
+    "issues_total": 287,
+    "consistency": 54,
+    "pl_reference": 204,
+    "length_ratio": 29,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T20:41:12.933233Z"
+  "validated_at": "2026-02-26T19:50:58.545764Z"
 }

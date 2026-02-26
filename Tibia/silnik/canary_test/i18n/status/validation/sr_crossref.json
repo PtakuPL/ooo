@@ -1,17 +1,180 @@
 {
   "lang": "sr",
-  "coverage_pct": 46.6,
+  "coverage_pct": 33.7,
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T20:41:12.925697Z",
-  "issues_total": 244,
+  "checked_at": "2026-02-26T19:50:58.537484Z",
+  "issues_total": 287,
   "issues_by_type": {
-    "consistency_in_language": 11,
-    "pl_reference_missing_translation": 206,
-    "length_ratio_crosscheck": 27
+    "consistency_in_language": 54,
+    "pl_reference_missing_translation": 204,
+    "length_ratio_crosscheck": 29
   },
   "consistency_issues": [
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "There is not enough gold on your account.",
+      "variants": [
+        "Да ли сте сигурни да желите да подигнете {} злата са свог банковног рачуна?",
+        "Дакле, желите да променим {} ваших златника \\з у {} платинасте новчиће?",
+        "Дакле, желите да променим {} ваших кристалних новчића \\з у {} платинасте новчиће за вас?",
+        "Дакле, желите да променим {} ваших платинастих \\з новчића у {} златнике за вас?",
+        "Дакле, желите да променим {} ваших платинастих новчића \\з у {} кристалне новчиће за вас?",
+        "Нема довољно злата на вашем рачуну."
+      ],
+      "variants_count": 6,
+      "examples": [
+        "npc:npc.paulie.say_12",
+        "npc:npc.paulie.say_15",
+        "npc:npc.paulie.say_16",
+        "npc:npc.plunderpurse.say_13",
+        "npc:npc.plunderpurse.say_16"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You have done well. Here, take your reward.",
+      "variants": [
+        "Добићете веома важан задатак да пронађете изузетно злонамерно духовно присуство у систему пећина. Користите свој уређај за праћење да бисте сазнали колико сте близу присутности.",
+        "Добро сте урадили. Ево, узми своју награду.",
+        "Жао нам је, морате да сачекате {} пре него што овај задатак поново постане доступан.",
+        "Жао нам је, нисте на потребном минималном нивоу [{}].",
+        "Жао нам је, нисте на траженом опсегу нивоа [{}-{}]."
+      ],
+      "variants_count": 5,
+      "examples": [
+        "npc:npc.gnomargery.say_11",
+        "npc:npc.gnomargery.say_14",
+        "npc:npc.gnomargery.say_17",
+        "npc:npc.gnomargery.say_8",
+        "npc:npc.gnombold.say_10"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You have already started that mission.",
+      "variants": [
+        "Већ сте започели ту мисију.",
+        "Гнометастиц! Добијте три извештаја од наших агената. Можете их наћи било где у пећинама око нас. Само наставите да тражите чудовишта која се чудно понашају и да вам намигну.",
+        "Гнометастиц! Не би требало да имате проблема да пронађете довољно бушаћих црва.",
+        "Гнометастиц! Пронађите најтоплије место међу базенима лаве у пећинама. Ако изгубите ГТМД пре него што пронађете врућу тачку, мораћете себи да набавите нови. Гномук продаје сву опрему која је потребна за наше мисије."
+      ],
+      "variants_count": 4,
+      "examples": [
+        "npc:npc.gnomargery.say_22",
+        "npc:npc.gnomargery.say_28",
+        "npc:npc.gnomargery.say_33",
+        "npc:npc.gnomargery.say_38",
+        "npc:npc.gnombold.say_20"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "I don't need your help for now. Come back later.",
+      "variants": [
+        "Желите да понудите {} сумњиви уређај{}. Који вођа ће га имати, (Гномус) од {gnomes}, (Клом Каменорезац) од {dwarves} или {scouts} (Лардоц Басхсмите)?",
+        "За сада ми не треба твоја помоћ. Врати се касније.",
+        "Патуљцима је и даље потребна твоја помоћ, члан Бигфутове бригаде. Докажите своју вредност тако што ћете одговарати на њихове позиве! ({}/10)",
+        "Поздрав. Упозорење право напред: Не волим лутање. Ако нисте овде да бисте нас {help}, овде сте да губите моје време. Што сматрам лутањем. Сада покушајте да докажете свој {worth} нашем савезу. ... "
+      ],
+      "variants_count": 4,
+      "examples": [
+        "npc:npc.gnomus.say_1",
+        "npc:npc.gnomus.say_3",
+        "npc:npc.gnomus.say_6",
+        "npc:npc.klom_stonecutter.greet_msg_1",
+        "npc:npc.klom_stonecutter.say_5"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You have not started that mission.",
+      "variants": [
+        "Ви нисте започели ту мисију.",
+        "Жао нам је, морате да сачекате {} пре него што овај задатак поново постане доступан.",
+        "Жао нам је, нисте на траженом опсегу нивоа [{}-{}]."
+      ],
+      "variants_count": 3,
+      "examples": [
+        "npc:npc.gnomargery.say_10",
+        "npc:npc.gnomargery.say_13",
+        "npc:npc.gnomargery.say_16",
+        "npc:npc.gnomargery.say_7",
+        "npc:npc.gnombold.say_12"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry, you are not on the required minimum level.",
+      "variants": [
+        "Ваш задатак би био да користите гномски уређај за мерење температуре - кратки ГТМД - да бисте лоцирали најтоплије место у базенима лаве у пећинама. Ако сте заинтересовани, могу вам дати још неке информације о томе. Да ли сте вољни да прихватите ову мисију?",
+        "Неко је потребан да добије три извештаја од наших тајних агената који се представљају као чудовишта у пећинама око нас. Ако сте заинтересовани, могу вам дати још {information} о томе. Да ли сте вољни да прихватите ову мисију?",
+        "Ова мисија ће захтевати од вас да убијете неке бушаће црве за нас. Ако сте заинтересовани, могу вам дати још {information} о томе. Да ли сте вољни да прихватите ову мисију?"
+      ],
+      "variants_count": 3,
+      "examples": [
+        "npc:npc.gnomargery.say_26",
+        "npc:npc.gnomargery.say_31",
+        "npc:npc.gnomargery.say_36"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Come back when you have finished your job.",
+      "variants": [
+        "Вратите се када завршите свој посао.",
+        "Извиђачима је још увек потребна ваша помоћ, члан Бигфутове бригаде. Докажите своју вредност тако што ћете одговарати на њихове позиве! ({}/10)",
+        "Патуљцима је и даље потребна твоја помоћ, члан Бигфутове бригаде. Докажите своју вредност тако што ћете одговарати на њихове позиве! ({}/10)"
+      ],
+      "variants_count": 3,
+      "examples": [
+        "npc:npc.gnomus.say_2",
+        "npc:npc.gnomus.say_4",
+        "npc:npc.gnomus.say_7",
+        "npc:npc.klom_stonecutter.say_6",
+        "npc:npc.lardoc_bashsmite.say_2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You haven't started any task yet.",
+      "variants": [
+        "Мораћете {join}, да бисте добили било које {tasks}.",
+        "Не можете више напредовати у свом рангу док не достигнете ниво. Али можете прихватити задатке без добијања поена Пав & Фур, само за награду за искуство и могућност да се борите са шефом из распона нижег од 130. ...",
+        "Немате шта да пријавите."
+      ],
+      "variants_count": 3,
+      "examples": [
+        "npc:npc.grizzly_adams.multi_15",
+        "npc:npc.grizzly_adams.say_17",
+        "npc:npc.grizzly_adams.say_18"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Please tell me how much gold you would like to withdraw.",
+      "variants": [
+        "Дакле, желите да променим {} ваших платинастих \\з новчића у {} златнике за вас?",
+        "Дакле, желите да променим {} ваших платинастих новчића \\з у {} кристалне новчиће за вас?",
+        "Ево ти, {} злато. \\з Обавестите ме ако могу још нешто да урадим за вас."
+      ],
+      "variants_count": 3,
+      "examples": [
+        "npc:npc.paulie.say_13",
+        "npc:npc.plunderpurse.say_14",
+        "npc:npc.wentworth.say_15"
+      ]
+    },
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
@@ -74,6 +237,40 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "Take this!",
+      "variants": [
+        "Ваш тренутни задатак је да убијете 100 тролова. Већ сте убили {} њих. Наставите даље!",
+        "Узми ово!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.gladiator.voice_4",
+        "monsters:monster.renegade_knight.voice_3",
+        "npc:npc.alwin.say_1",
+        "npc:npc.arnold.say_1",
+        "npc:npc.bambi_bonecrusher.say_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Ok then.",
+      "variants": [
+        "Наравно, само прегледајте моју робу. Такође можете погледати {}.",
+        "Ок онда."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.aldo.say_5",
+        "npc:npc.alexander.say_3",
+        "npc:npc.asima.say_3",
+        "npc:npc.fenech.say_3",
+        "npc:npc.gnombold.say_21"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "The Druid of Crunor? He told you that a new cave appeared here? That's right. I'm the head of a project that tries to find out more about this new area.",
       "variants": [
         "Druid Крунора? Рекао ти је да се овде појавила нова пећина? Тако је. Ја сам шеф пројекта који покушава да сазна више о овој новој области.",
@@ -105,6 +302,23 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "Here it is.",
+      "variants": [
+        "Ако сте толико радознали, да ли желите да купите кључ за 5000 злата? \\з Немојте ме кривити ако будете увучени.",
+        "Ево га."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.beatrice.say_2",
+        "npc:npc.bertha.say_2",
+        "npc:npc.briasol.say_1",
+        "npc:npc.dermot.say_4",
+        "npc:npc.elathriel.say_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "Good bye traveller and enjoy your stay on Rookgaard.",
       "variants": [
         "Збогом путниче и уживајте у боравку на Rookgaard.",
@@ -114,6 +328,406 @@
       "examples": [
         "npc:npc.carlos.walkaway_msg_1",
         "server:data.otservbr.global.npc.carlos.L243.1101"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Wrong. SHUT DOWN.",
+      "variants": [
+        "Ваш одговор је {}, да ли желите да наставите?",
+        "Погрешно. СХУТ ДОВН."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.denominator.say_10",
+        "npc:npc.denominator.say_2",
+        "npc:npc.denominator.say_6",
+        "npc:npc.denominator.say_8"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You will be entitled to wear the {armor} for 500.000.000 gold pieces, {helmet} for an additional 250.000.000 and the {boots} for another 250.000.000 gold pieces. ...",
+      "variants": [
+        "Имаћете право да носите {armor} за 500.000.000 златника, {helmet} за додатних 250.000.000 и {boots} за још 250.000.000 златника. ...",
+        "Шта ће то бити?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.emperor_kruzak.multi_2",
+        "npc:npc.king_tibianus.multi_2",
+        "npc:npc.queen_eloise.multi_2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry, but no! Your expertise could be put to better use elsewhere. Here awaits you no challenge. You are desperately needed in the deeper levels of the Spike. Report there immediately.",
+      "variants": [
+        "Гнометастиц! Напуните овај магнет на три монолита у систему пећина. Са три пуњења, магнет ће се распасти и напунити вас својом прикупљеном енергијом. Закорачите на магнетни екстрактор овде да нам испоручите пуњење, а затим ми јавите.",
+        "Жао нам је, морате да сачекате {} пре него што овај задатак поново постане доступан."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.gnombold.say_3",
+        "npc:npc.gnomilly.say_3"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Are you willing to help?",
+      "variants": [
+        "Да ли сте вољни да помогнете?",
+        "Да ли сте вољни да помогнете? "
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.gnomus.multi_20",
+        "npc:npc.gnomus.multi_25",
+        "npc:npc.lardoc_bashsmite.multi_17",
+        "npc:npc.lardoc_bashsmite.multi_22"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "If you bring me any suspicious devices on creatures you slay down here, I'll make it worth your while by telling the others of your generosity. How many do you want to offer?",
+      "variants": [
+        "Ако ми донесете било какве сумњиве справе о створењима која убијате овде, исплатићу вам се тако што ћу другима рећи о вашој великодушности. Колико желите да понудите?",
+        "Ако ми донесете било какве сумњиве справе о створењима која убијате овде, исплатићу вам се тако што ћу другима рећи о вашој великодушности. Колико желите да понудите? "
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.gnomus.say_9",
+        "npc:npc.klom_stonecutter.say_10",
+        "npc:npc.lardoc_bashsmite.say_8"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The churches of the gods entrusted me with the enormous and responsible task to lead the inquisition. I leave the field work to inquisitors who I recruit from fitting people that cross my way.",
+      "variants": [
+        "Да ли желите да добијете благослов инквизиције - што значи {} благослова - за {} злата?",
+        "Цркве богова су ми повериле огроман и одговоран задатак да водим инквизицију. Рад на терену препуштам инквизиторима које регрутујем од људи који ми пређу пут."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.henricus.say_1",
+        "npc:npc.henricus.stdmod_18"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Do you want to join the inquisition?",
+      "variants": [
+        "Да ли желите да купите специјалну чутурицу свете воде за {} злата?",
+        "Да ли желите да се придружите инквизицији?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.henricus.say_2",
+        "npc:npc.henricus.say_6"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Do you bring frostheart shards for our spell?",
+      "variants": [
+        "Да ли носите крхотине мразова за нашу чаролију?",
+        "Да ли носите крхотине мразова за нашу чаролију? "
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.hjaern.say_3",
+        "npc:npc.hjaern.say_4"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Before I can nominate you for an award, please complete your task.",
+      "variants": [
+        "Пре него што могу да вас номинујем за награду, молим вас да завршите свој задатак.",
+        "Следеће, ако сте заиста успели да сакупите толико, извршите мали задатак за наш цех и донесите нам 100 шкољки корњача. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.myra.say_4",
+        "npc:npc.trisha.say_3"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Then you should learn the ways of the druids, healers and powerful masters of natural magic. ...",
+      "variants": [
+        "Друиди су исцелитељи и моћни мајстори магије леда и земље. Они такође могу направити малу штету од енергије, пожара или смрти. ...",
+        "Тада би требало да научите начине друида, исцелитеља и моћних мајстора природне магије. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.druid_info_1",
+        "npc:npc.oressa.say_10"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Druids can heal their friends and allies, but they can also cast powerful ice and earth magic to kill their enemies. They can do a little energy, fire or death damage as well. ...",
+      "variants": [
+        "Друиди могу да лече своје пријатеље и савезнике, али такође могу да бацају моћну магију леда и земље да убију своје непријатеље. Они такође могу направити малу штету од енергије, пожара или смрти. ...",
+        "Друиди не могу нанети велику штету или носити много предмета, али наносе више штете од паладина или витезова и могу да циљају неколико непријатеља. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.druid_info_2",
+        "npc:npc.oressa.say_11"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Druids cannot take much damage or carry many items, but they deal much more damage than paladins or knights. ...",
+      "variants": [
+        "Ако желите да будете исцелитељ и носилац моћне природне магије, требало би да размислите о избору звања друида.",
+        "Друиди не могу да поднесу много штете или носе много предмета, али наносе много више штете од паладина или витезова. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.druid_info_3",
+        "npc:npc.oressa.say_12"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "So tell me: DO YOU WISH TO BECOME A VALIANT KNIGHT? Answer with a proud {YES} if that is your choice!",
+      "variants": [
+        "ДА ЛИ ЖЕЛИШ ДА ПОСТАНЕШ ВИТЕЗ? Одговорите са поносним {YES} ако је то ваш избор!",
+        "Па реци ми: ЖЕЛИШ ДА ПОСТАНЕШ ВИТЕЗ? Одговорите са поносним {YES} ако је то ваш избор!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.knight_confirm_1",
+        "npc:npc.oressa.say_4"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Then you should choose the {vocation} of a knight and become a valiant fighter with sword and shield. ...",
+      "variants": [
+        "Витезови су храбри борци, најтежи од свих звања. Они могу да поднесу више штете и носе више предмета од других звања, али ће нанети мање штете од паладина, друида или чаробњака. ...",
+        "Тада би требало да изаберете {vocation} витеза и постанете храбри борац са мачем и штитом. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.knight_info_1",
+        "npc:npc.oressa.say_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Knights are the toughest of all vocations. They can take more damage and carry more items than the other vocations, but they will deal less damage than paladins, druids or sorcerers. ...",
+      "variants": [
+        "Витезови могу да рукују једноручним или дворучним мачевима, секирама и тољагама, и могу бацити неколико чини да привуку пажњу чудовишта на њих. ...",
+        "Витезови су најтежи од свих звања. Они могу да поднесу више штете и носе више предмета од других звања, али ће нанети мање штете од паладина, друида или чаробњака. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.knight_info_2",
+        "npc:npc.oressa.say_2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Knights can wield one- or two-handed swords, axes and clubs, and they can cast a few spells to draw a monster's attention to them. ...",
+      "variants": [
+        "Ако желите да будете чврст борац који може да се одупре много дуже од било кога другог, требало би да размислите о избору витешког позива.",
+        "Витезови могу да рукују једноручним или дворучним мачевима, секирама и тољагама, и могу бацити неколико чини да привуку пажњу чудовишта на њих. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.knight_info_3",
+        "npc:npc.oressa.say_3"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "DO YOU WISH TO BECOME A DARING PALADIN? Answer with a proud {YES} if that is your choice!",
+      "variants": [
+        "ДА ЛИ ЖЕЛИТЕ ДА ПОСТАНЕТЕ ДРЗИ ПАЛАДИН? Одговорите са поносним {YES} ако је то ваш избор!",
+        "Па реци ми: ЖЕЛИШ ДА ПОСТАНЕШ ДРЗАК ПАЛАДИН? Одговорите са поносним {YES} ако је то ваш избор!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.paladin_confirm_1",
+        "npc:npc.oressa.say_9"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Then you should join the ranks of the paladins, noble hunters and rangers of the wild, who rely on the swiftness of movement and ranged attacks. ...",
+      "variants": [
+        "Паладини су чврсти борци на даљину. Чвршћи су од друида или чаробњака и могу носити више предмета, али су мање чврсти од витеза. ...",
+        "Тада би требало да се придружите редовима паладина, племенитих ловаца и ренџера дивљине, који се ослањају на брзину кретања и нападе из даљине. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.paladin_info_1",
+        "npc:npc.oressa.say_5"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Paladins are jacks of all trades. They are tougher than the magically gifted and can carry more items than druids or sorcerers, but they can take not as much damage as a knight can. ...",
+      "variants": [
+        "Паладини имају највећи домет напада и могу нанети највише штете на једној мети. ...",
+        "Паладини су мајстори свих заната. Они су чвршћи од магично обдарених и могу да носе више предмета од друида или чаробњака, али не могу да поднесу штету колико витез може. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.paladin_info_2",
+        "npc:npc.oressa.say_6"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Paladins deal more damage than knights but less than druids or sorcerers, and have the longest range in their distance attacks. ...",
+      "variants": [
+        "Они такође могу користити свету магију да убију несвете и немртве посебно. ...",
+        "Паладини наносе више штете од витезова, али мање од друида или чаробњака, и имају највећи домет у својим даљинским нападима. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.paladin_info_3",
+        "npc:npc.oressa.say_7"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "They can also use holy magic to slay the unholy and undead in particular. ...",
+      "variants": [
+        "Ако волите да држите дистанцу од свог непријатеља, пуцајући док га надмашујете, требало би да размислите о избору звања паладина.",
+        "Они такође могу користити свету магију да убију несвете и немртве посебно. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.paladin_info_4",
+        "npc:npc.oressa.say_8"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Then you should become a sorcerer, a mighty wielder of deathly energies and arcane fire. ...",
+      "variants": [
+        "Тада би требало да постанете чаробњак, моћни поседник смртоносне енергије и тајанствене ватре. ...",
+        "Чаробњаци су моћни бацачи магије смрти, енергије и ватре. Они такође могу да направе малу штету од леда или земље. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.say_14",
+        "npc:npc.oressa.sorcerer_info_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Sorcerers are powerful casters of magic. They use fire, energy and death magic to lay low their enemies. They can do a little ice or earth damage as well. ...",
+      "variants": [
+        "Чаробњаци не могу нанети много штете или носити много предмета, али наносе више штете од паладина или витезова и могу да гађају неколико непријатеља. ...",
+        "Чаробњаци су моћни бацачи магије. Они користе ватру, енергију и магију смрти како би понизили своје непријатеље. Они такође могу да направе малу штету од леда или земље. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.say_15",
+        "npc:npc.oressa.sorcerer_info_2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Sorcerers cannot take much damage or carry many items, but they deal much more damage than paladins or knights. ...",
+      "variants": [
+        "Ако желите да будете бацач ватре и енергије, бацајући магију смрти на своје непријатеље, требало би да размислите о избору звања чаробњака.",
+        "Чаробњаци не могу нанети много штете или носити много предмета, али наносе много више штете од паладина или витезова. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.say_16",
+        "npc:npc.oressa.sorcerer_info_3"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The customer is king! Come back anytime you want to if you wish to {withdraw} your money.",
+      "variants": [
+        "Дакле, желите да променим {} ваших кристалних новчића \\з у {} платинасте новчиће за вас?",
+        "Муштерија је краљ! Вратите се кад год желите ако желите {withdraw} свој новац."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.paulie.say_17",
+        "npc:npc.plunderpurse.say_18",
+        "npc:npc.wentworth.say_19"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "As you wish. Is there something else I can do for you?",
+      "variants": [
+        "Да ли сте сигурни да желите да подигнете {} злата са свог банковног рачуна?",
+        "Ево ти, {} злато. \\з Обавестите ме ако могу још нешто да урадим за вас."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.plunderpurse.say_11",
+        "npc:npc.wentworth.say_12"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry, but you can't deposit that much.",
+      "variants": [
+        "Да ли сте сигурни да желите да подигнете {} злата са свог банковног рачуна?",
+        "У реду, додали смо количину {} злата на ваш {balance}. \\з Можете {withdraw} свој новац кад год желите."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.plunderpurse.say_9",
+        "npc:npc.wentworth.say_10",
+        "npc:npc.wentworth.say_9"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "And the quality must not suffer, of course! Everything clear and understood?",
+      "variants": [
+        "А квалитет не сме да трпи, наравно! Све јасно и разумљиво?",
+        "За патуљке се каже да су најтврдоглавији од свих трговаца. Путујте до Kazordoon и покушајте да натерате ковача Узгода да вам прода гримизни мач. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.rashid.multi_9",
+        "npc:npc.rashid_custom.multi_9"
       ]
     },
     {
@@ -144,6 +758,48 @@
       "examples": [
         "npc:npc.tonar_oskayaat.stdmod_1",
         "npc:npc.tonar_oskayaat.voice_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You did it! I have seldom seen a man as courageous as you. I really have to say that you deserve to wear a spike. Go ask Cornelia to adorn your armour.",
+      "variants": [
+        "Речено је да се од њих могу направити одлични штитови. ...",
+        "Успео си! Ретко сам видео човека тако храброг као ти. Заиста морам да кажем да заслужујеш да носиш шиљак. Иди замоли Корнелију да ти украси оклоп."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.trisha.claw_success",
+        "npc:npc.trisha.say_4"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "I am sorry, but you don't have so much money.",
+      "variants": [
+        "Жао ми је, али немате толико новца.",
+        "Ок, идемо ... {}! Изгубили сте. Лоша срећа. Још једна утакмица?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.zebron.say_2",
+        "npc:npc.zebron.say_9"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "What? Whatever that is, it's not a port I sail to. {}?",
+      "variants": [
+        "{} Шта кажете, {yes} или {no}?",
+        "Од олује! Шта нас све ово злато оптерећује? Зар не мислите да је то мало ризично са свим овим пиратима около? Можете понети {} са собом, али то је то. Остатак одбаците или {donate} у \\з Фонд за сирочад авантуриста, заиста."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.captain_dreadnought.say_5",
+        "npc:npc.captain_dreadnought.say_6"
       ]
     },
     {
@@ -194,6 +850,15 @@
       "en": "Turncoat",
       "pl": "Zdrajca",
       "lang": "Turncoat"
+    },
+    {
+      "key": "achievement.93.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jamjam",
+      "pl": "Jinuma",
+      "lang": "Jamjam"
     },
     {
       "key": "achievement.110.name",
@@ -1060,15 +1725,6 @@
       "lang": "Arena Amulet"
     },
     {
-      "key": "arena.admin.info.header",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] System Status:",
-      "pl": "[Arena Admin] Status Systemu:",
-      "lang": "[Arena Admin] System Status:"
-    },
-    {
       "key": "arena.admin.info.active_matches",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1085,24 +1741,6 @@
       "en": "Queue:",
       "pl": "Kolejka:",
       "lang": "Queue:"
-    },
-    {
-      "key": "arena.admin.stats.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin stats <playername>",
-      "pl": "[Arena Admin] Użycie: !arena-admin stats <gracz>",
-      "lang": "[Arena Admin] Usage: !arena-admin stats <playername>"
-    },
-    {
-      "key": "arena.admin.stats.not_found",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Player '{0}' not found (must be online).",
-      "pl": "[Arena Admin] Gracz '{0}' nie znaleziony (musi być online).",
-      "lang": "[Arena Admin] Player '{0}' not found (must be online)."
     },
     {
       "key": "arena.admin.stats.no_profile",
@@ -1159,15 +1797,6 @@
       "lang": "Streak: {0} (Best: {1})"
     },
     {
-      "key": "arena.admin.setmmr.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin setmmr <player> <mmr>",
-      "pl": "[Arena Admin] Użycie: !arena-admin setmmr <gracz> <mmr>",
-      "lang": "[Arena Admin] Usage: !arena-admin setmmr <player> <mmr>"
-    },
-    {
       "key": "arena.admin.setmmr.success",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1177,15 +1806,6 @@
       "lang": "[Arena Admin] Set {0}'s MMR to {1}"
     },
     {
-      "key": "arena.admin.addpoints.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin addpoints <player> <points>",
-      "pl": "[Arena Admin] Użycie: !arena-admin addpoints <gracz> <punkty>",
-      "lang": "[Arena Admin] Usage: !arena-admin addpoints <player> <points>"
-    },
-    {
       "key": "arena.admin.addpoints.success",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1193,15 +1813,6 @@
       "en": "[Arena Admin] Added {0} Arena Points to {1}",
       "pl": "[Arena Admin] Dodano {0} Punktów Areny graczowi {1}",
       "lang": "[Arena Admin] Added {0} Arena Points to {1}"
-    },
-    {
-      "key": "arena.admin.reset.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin reset <player>",
-      "pl": "[Arena Admin] Użycie: !arena-admin reset <gracz>",
-      "lang": "[Arena Admin] Usage: !arena-admin reset <player>"
     },
     {
       "key": "arena.admin.reset.success",
@@ -1220,15 +1831,6 @@
       "en": "[Arena Admin] Broadcast sent.",
       "pl": "[Arena Admin] Ogłoszenie wysłane.",
       "lang": "[Arena Admin] Broadcast sent."
-    },
-    {
-      "key": "arena.admin.player_not_online",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Player not online.",
-      "pl": "[Arena Admin] Gracz nie jest online.",
-      "lang": "[Arena Admin] Player not online."
     },
     {
       "key": "arena.admin.help.header",
@@ -1978,6 +2580,24 @@
       "lang": "Greetings, |PLAYERNAME|! You must have come around quite a bit. I'm always interested in learning new things about Zao."
     },
     {
+      "key": "data.otservbr.global.npc.captain.bluebear.L118.99",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?",
+      "pl": "Witaj na pokładzie, |PLAYERNAME|. Dokąd mogę cię dziś {sail}?",
+      "lang": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?"
+    },
+    {
+      "key": "data.otservbr.global.npc.captain.breezelda.L73.336",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?",
+      "pl": "Witaj na pokładzie, |PLAYERNAME|. Dokąd mogę cię dziś {sail}?",
+      "lang": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?"
+    },
+    {
       "key": "data.otservbr.global.npc.captain.chelop.L75.1609",
       "category": "server",
       "type": "pl_reference_missing_translation",
@@ -1985,6 +2605,24 @@
       "en": "Welcome on board, recruit |PLAYERNAME|. Where can I {sail} you today?",
       "pl": "Witamy na pokładzie, rekrucie |PLAYERNAME|. Dokąd mam cię dziś {sail}?",
       "lang": "Welcome on board, recruit |PLAYERNAME|. Where can I {sail} you today?"
+    },
+    {
+      "key": "data.otservbr.global.npc.captain.fearless.L111.1155",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?",
+      "pl": "Witaj na pokładzie, |PLAYERNAME|. Dokąd mogę cię dziś {sail}?",
+      "lang": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?"
+    },
+    {
+      "key": "data.otservbr.global.npc.captain.greyhound.L102.1514",
+      "category": "server",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?",
+      "pl": "Witaj na pokładzie, |PLAYERNAME|. Dokąd mogę cię dziś {sail}?",
+      "lang": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?"
     },
     {
       "key": "data.otservbr.global.npc.captain.gulliver.L92.845",
@@ -2178,13 +2816,22 @@
       "pl_ratio": 3.1
     },
     {
-      "key": "monster.frost_giant.voice_5",
-      "category": "monsters",
+      "key": "npc.alexander.say_3",
+      "category": "npc",
       "type": "crossref_length_ratio_diff",
       "severity": "MEDIUM",
-      "en_len": 12,
-      "lang_ratio": 1.0,
-      "pl_ratio": 3.667
+      "en_len": 8,
+      "lang_ratio": 8.0,
+      "pl_ratio": 1.125
+    },
+    {
+      "key": "npc.asima.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 8,
+      "lang_ratio": 8.0,
+      "pl_ratio": 1.125
     },
     {
       "key": "npc.elf_guard.stdmod_5",
@@ -2257,6 +2904,15 @@
       "en_len": 6,
       "lang_ratio": 1.167,
       "pl_ratio": 3.167
+    },
+    {
+      "key": "npc.xodet.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 8,
+      "lang_ratio": 8.0,
+      "pl_ratio": 1.125
     },
     {
       "key": "spell.ignite.name",

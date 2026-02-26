@@ -4271,14 +4271,6 @@
     "verified": false,
     "updated_at": "2026-02-13T21:56:22.876338Z"
   },
-  "monster.glooth_golem.name": {
-    "src_hash": "688c15f6d7aafcc919429eb8d3f9672c",
-    "text": "Glooth Golem",
-    "source": "google_translate",
-    "confidence": 0.9,
-    "verified": false,
-    "updated_at": "2026-02-13T21:56:22.876692Z"
-  },
   "monster.glooth_golem.desc": {
     "src_hash": "ee17396f047a9db787266ed06ca557df",
     "text": "ein düsterer Golem",
@@ -39742,5 +39734,189 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-26T00:33:49.625837Z"
+  },
+  "arena.title.apprentice": {
+    "src_hash": "0a664616e1506d0c24a61bd1cca7d70e",
+    "text": "Lehrling",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:37:59.194502Z"
+  },
+  "arena.title.contender": {
+    "src_hash": "6bc60f225af3e040f25409d430314097",
+    "text": "Anwärter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:37:59.199617Z"
+  },
+  "lib.blessing.msg_already": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Du bist bereits gesegnet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:48:27.431542Z"
+  },
+  "module.init.text5": {
+    "src_hash": "517a573bb2eebb6a9c51b2d586663a28",
+    "text": "Ein Outfit, das genau zu Ihnen passt. Wir sind sicher, dass es Ihnen gefallen wird.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:59:07.638526Z"
+  },
+  "otclient_modules.blessing.tr_15": {
+    "src_hash": "0557fa923dcee4d0f86b1409f5c2167f",
+    "text": "Zurück",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:42:15.738106Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_2": {
+    "src_hash": "ba79bc10653863243469213e946899e9",
+    "text": "Gesamtzahl der Kills",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:42:15.742159Z"
+  },
+  "web.tpl.guilds.manager.b_3": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Beschreibung",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:50:38.579935Z"
+  },
+  "cpp.cancel.construct_inside_house": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Sie dürfen dies nur innerhalb eines Hauses errichten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:53:59.253804Z"
+  },
+  "cpp.cancel.not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Leider nicht möglich.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T02:53:59.256200Z"
+  },
+  "client.outfit.text2": {
+    "src_hash": "fff3be9b119c459101538ed6eb467818",
+    "text": "SelectionButton",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:58:32.076422Z"
+  },
+  "otclient_data.30_minimap_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Stornieren",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T03:05:12.226512Z"
+  },
+  "otclient_data.30_minimap_otui.tr_3": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Beschreibung",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:05:12.230297Z"
+  },
+  "otclient_data.40_inventory_otui.tr_1": {
+    "src_hash": "0323de4f66a1700e2173e9bcdce02715",
+    "text": "Abmelden",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:05:12.232977Z"
+  },
+  "otclient_data.40_minimap_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Stornieren",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T03:05:12.234361Z"
+  },
+  "otclient_data.40_minimap_otui.tr_4": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Beschreibung",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:05:12.234789Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Stornieren",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T03:05:12.236905Z"
+  },
+  "raid.wasp_bear.name": {
+    "src_hash": "f5318a3971a453461b30996bcfcff0aa",
+    "text": "Wespe Tragen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T09:49:49.057796Z"
+  },
+  "cpp.combat.death": {
+    "src_hash": "2e8d6dbf9112a879d4ceb15403d10a78",
+    "text": "tod",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T17:57:51.369256Z"
+  },
+  "system.blessing.already": {
+    "src_hash": "a9eb7f02ee441e9776a88e56807afc24",
+    "text": "Du bist bereits gesegnet.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:48:20.245269Z"
+  },
+  "system.store.check_inbox": {
+    "src_hash": "2297799e25b7719935ff1b0fce663afd",
+    "text": "Bitte stellen Sie sicher, dass in Ihrem Shop-Posteingang freie Plätze vorhanden sind.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:48:20.250602Z"
+  },
+  "system.venture.decay": {
+    "src_hash": "064cd71852afeb595ee8028d8028b756",
+    "text": "Wagen Sie den Weg des Verfalls!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:48:20.253595Z"
+  },
+  "movement.claw_noxious.msg_tighten": {
+    "src_hash": "b70659de5293e940c257853066188e6c",
+    "text": "Es schmiegt sich enger um Ihr Handgelenk, wenn Sie es anziehen.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:56:36.493809Z"
+  },
+  "movement.claw_noxious.msg_stab": {
+    "src_hash": "14fab215c855b69507b9a0142a705f00",
+    "text": "Autsch! Die Schlangenklaue hat dich erstochen.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:56:36.494839Z"
   }
 }

@@ -1,7 +1,7 @@
 {
   "startup.chest.msg1": "pentru utilizarea hărții",
   "startup.chest.msg2": "pentru utilizarea scriptului",
-  "startup.chest.msg3": "[EN] container = bagId",
+  "startup.chest.msg3": "container = bagId",
   "startup.chest.msg4": "legiondawnport",
   "startup.chest.msg5": "deeperfibula1",
   "startup.functions.msg1": "CreateItemOnMap",

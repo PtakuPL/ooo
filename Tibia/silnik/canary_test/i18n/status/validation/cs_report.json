@@ -1,31 +1,24 @@
 {
   "lang": "cs",
   "script_group": "latin",
-  "total_keys": 53770,
-  "translated": 4097,
-  "identical_to_en": 2761,
-  "placeholder_keys": 49653,
-  "coverage_pct": 7.6,
-  "issues_total": 3,
+  "total_keys": 74492,
+  "translated": 73487,
+  "identical_to_en": 63425,
+  "placeholder_keys": 836,
+  "coverage_pct": 98.7,
+  "issues_total": 7,
   "issues_by_type": {
     "V2_length_ratio": 4,
-    "V4_artifact": 3,
-    "V1_placeholder_mismatch": 1
+    "V4_artifact": 3
   },
   "issues_by_severity": {
-    "CRITICAL": 1,
+    "CRITICAL": 0,
     "HIGH": 3,
     "MEDIUM": 4,
     "LOW": 0
   },
-  "score": 99.9,
+  "score": 100.0,
   "worst_keys": [
-    {
-      "key": "scripts.actions_rewards.msg_1",
-      "category": "scripts",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
     {
       "key": "achievement.317.description",
       "category": "achievements",
@@ -70,12 +63,12 @@
     }
   ],
   "crossref": {
-    "enabled": false,
-    "issues_total": 409,
-    "consistency": 0,
+    "enabled": true,
+    "issues_total": 421,
+    "consistency": 6,
     "pl_reference": 400,
-    "length_ratio": 9,
+    "length_ratio": 15,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T20:41:01.981017Z"
+  "validated_at": "2026-02-26T19:50:49.071153Z"
 }

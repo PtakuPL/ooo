@@ -1,103 +1,154 @@
 {
   "lang": "it",
   "script_group": "latin",
-  "total_keys": 53770,
-  "translated": 30149,
-  "identical_to_en": 2203,
-  "placeholder_keys": 23601,
-  "coverage_pct": 56.1,
-  "issues_total": 9,
+  "total_keys": 74492,
+  "translated": 62596,
+  "identical_to_en": 34521,
+  "placeholder_keys": 417,
+  "coverage_pct": 84.0,
+  "issues_total": 259,
   "issues_by_type": {
-    "V4_artifact": 9
+    "V1_placeholder_mismatch": 212,
+    "V2_length_ratio": 32,
+    "V4_artifact": 9,
+    "V5_pipe_mismatch": 6
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
+    "CRITICAL": 218,
     "HIGH": 9,
-    "MEDIUM": 0,
+    "MEDIUM": 32,
     "LOW": 0
   },
-  "score": 100.0,
+  "score": 98.9,
   "worst_keys": [
     {
-      "key": "achievement.317.description",
-      "category": "achievements",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_ii",
-      "category": "books",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iii",
-      "category": "books",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.battletactics_for_mages_iv",
-      "category": "books",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "monster.grynch_clan_goblin.voice_15",
-      "category": "monsters",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "npc.carina.say_2",
+      "key": "npc.a_weakened_forest_fury.multi_8",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.markwin.say_3",
+      "key": "npc.a_weakened_forest_fury.multi_9",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.oswald.stdmod_32",
+      "key": "npc.albinius.multi_1",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "quests.bigfoot_burden.gnomedix_msg4",
-      "category": "quests",
-      "type": "V4_artifact",
-      "severity": "HIGH"
-    },
-    {
-      "key": "npc.gnomargery.say_24",
+      "key": "npc.alesar.multi_6",
       "category": "npc",
-      "type": "V2_length_ratio",
-      "severity": "MEDIUM"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.gnomargery.say_29",
+      "key": "npc.alesar_functions.multi_6",
       "category": "npc",
-      "type": "V2_length_ratio",
-      "severity": "MEDIUM"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.gnomargery.say_34",
+      "key": "npc.alexander.say_3",
       "category": "npc",
-      "type": "V2_length_ratio",
-      "severity": "MEDIUM"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.arkulius.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.asima.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.caramellia.multi_6",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.caramellia.multi_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cassino.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.charos.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.chavis.say_5",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_2",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_5",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_6",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.cledwyn.say_7",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.dalbrect.say_2",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     }
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 427,
-    "consistency": 7,
+    "issues_total": 467,
+    "consistency": 44,
     "pl_reference": 400,
-    "length_ratio": 20,
+    "length_ratio": 23,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T20:41:06.537456Z"
+  "validated_at": "2026-02-26T19:50:52.718821Z"
 }

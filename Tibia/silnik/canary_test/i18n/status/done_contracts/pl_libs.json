@@ -6,12 +6,15 @@
       "ok": true,
       "guard_placeholder": 0,
       "guard_pipe": 0,
+      "batch_guard_placeholder": 0,
+      "batch_guard_pipe": 0,
       "source": "file_state_audit"
     },
     "guard_command_below_threshold": {
       "ok": true,
       "guard_command": 0,
       "threshold": 5,
+      "batch_guard_command": 0,
       "source": "file_state_audit"
     },
     "coverage_above_95pct": {
@@ -26,5 +29,5 @@
     }
   },
   "is_done": false,
-  "timestamp": "2026-02-21T13:40:26.954289Z"
+  "timestamp": "2026-02-26T18:16:00.553196Z"
 }

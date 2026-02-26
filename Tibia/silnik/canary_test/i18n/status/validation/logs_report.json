@@ -18,11 +18,11 @@
   "worst_keys": [],
   "crossref": {
     "enabled": true,
-    "issues_total": 129,
+    "issues_total": 122,
     "consistency": 0,
-    "pl_reference": 129,
+    "pl_reference": 122,
     "length_ratio": 0,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T20:41:07.332641Z"
+  "validated_at": "2026-02-26T19:50:53.409537Z"
 }

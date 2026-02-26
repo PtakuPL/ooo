@@ -1,13 +1,16 @@
 {
   "lang": "zh",
   "script_group": "cjk",
-  "total_keys": 53770,
-  "translated": 4040,
-  "identical_to_en": 3904,
-  "placeholder_keys": 49710,
-  "coverage_pct": 7.5,
-  "issues_total": 0,
-  "issues_by_type": {},
+  "total_keys": 74492,
+  "translated": 4164,
+  "identical_to_en": 4024,
+  "placeholder_keys": 49579,
+  "coverage_pct": 5.6,
+  "issues_total": 8,
+  "issues_by_type": {
+    "V2_length_ratio": 4,
+    "script_cjk_ratio": 4
+  },
   "issues_by_severity": {
     "CRITICAL": 0,
     "HIGH": 0,
@@ -73,5 +76,5 @@
     "length_ratio": 1,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T20:41:16.280882Z"
+  "validated_at": "2026-02-26T19:51:00.544551Z"
 }

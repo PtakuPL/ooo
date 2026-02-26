@@ -1,12 +1,12 @@
 {
   "lang": "ko",
   "script_group": "cjk",
-  "total_keys": 53770,
-  "translated": 5194,
-  "identical_to_en": 3852,
-  "placeholder_keys": 48556,
-  "coverage_pct": 9.7,
-  "issues_total": 5,
+  "total_keys": 74492,
+  "translated": 5318,
+  "identical_to_en": 3972,
+  "placeholder_keys": 48425,
+  "coverage_pct": 7.1,
+  "issues_total": 16,
   "issues_by_type": {
     "V2_length_ratio": 7,
     "script_cjk_ratio": 5,
@@ -126,5 +126,5 @@
     "length_ratio": 20,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T20:41:07.326163Z"
+  "validated_at": "2026-02-26T19:50:53.405060Z"
 }

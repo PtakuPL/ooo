@@ -1,10 +1,10 @@
 {
   "lang": "zh_TW",
-  "coverage_pct": 19.7,
+  "coverage_pct": 13.3,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T20:41:16.535901Z",
+  "checked_at": "2026-02-26T19:51:00.682549Z",
   "issues_total": 421,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -201,6 +201,15 @@
       "en": "Turncoat",
       "pl": "Zdrajca",
       "lang": "Turncoat"
+    },
+    {
+      "key": "achievement.93.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jamjam",
+      "pl": "Jinuma",
+      "lang": "Jamjam"
     },
     {
       "key": "achievement.104.name",
@@ -1760,15 +1769,6 @@
       "lang": "Arena Amulet"
     },
     {
-      "key": "arena.admin.info.header",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] System Status:",
-      "pl": "[Arena Admin] Status Systemu:",
-      "lang": "[Arena Admin] System Status:"
-    },
-    {
       "key": "arena.admin.info.active_matches",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1785,24 +1785,6 @@
       "en": "Queue:",
       "pl": "Kolejka:",
       "lang": "Queue:"
-    },
-    {
-      "key": "arena.admin.stats.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin stats <playername>",
-      "pl": "[Arena Admin] Użycie: !arena-admin stats <gracz>",
-      "lang": "[Arena Admin] Usage: !arena-admin stats <playername>"
-    },
-    {
-      "key": "arena.admin.stats.not_found",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Player '{0}' not found (must be online).",
-      "pl": "[Arena Admin] Gracz '{0}' nie znaleziony (musi być online).",
-      "lang": "[Arena Admin] Player '{0}' not found (must be online)."
     },
     {
       "key": "arena.admin.stats.no_profile",
@@ -1859,15 +1841,6 @@
       "lang": "Streak: {0} (Best: {1})"
     },
     {
-      "key": "arena.admin.setmmr.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin setmmr <player> <mmr>",
-      "pl": "[Arena Admin] Użycie: !arena-admin setmmr <gracz> <mmr>",
-      "lang": "[Arena Admin] Usage: !arena-admin setmmr <player> <mmr>"
-    },
-    {
       "key": "arena.admin.setmmr.success",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1877,15 +1850,6 @@
       "lang": "[Arena Admin] Set {0}'s MMR to {1}"
     },
     {
-      "key": "arena.admin.addpoints.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin addpoints <player> <points>",
-      "pl": "[Arena Admin] Użycie: !arena-admin addpoints <gracz> <punkty>",
-      "lang": "[Arena Admin] Usage: !arena-admin addpoints <player> <points>"
-    },
-    {
       "key": "arena.admin.addpoints.success",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1893,15 +1857,6 @@
       "en": "[Arena Admin] Added {0} Arena Points to {1}",
       "pl": "[Arena Admin] Dodano {0} Punktów Areny graczowi {1}",
       "lang": "[Arena Admin] Added {0} Arena Points to {1}"
-    },
-    {
-      "key": "arena.admin.reset.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin reset <player>",
-      "pl": "[Arena Admin] Użycie: !arena-admin reset <gracz>",
-      "lang": "[Arena Admin] Usage: !arena-admin reset <player>"
     },
     {
       "key": "arena.admin.reset.success",
@@ -1920,15 +1875,6 @@
       "en": "[Arena Admin] Broadcast sent.",
       "pl": "[Arena Admin] Ogłoszenie wysłane.",
       "lang": "[Arena Admin] Broadcast sent."
-    },
-    {
-      "key": "arena.admin.player_not_online",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Player not online.",
-      "pl": "[Arena Admin] Gracz nie jest online.",
-      "lang": "[Arena Admin] Player not online."
     },
     {
       "key": "arena.admin.help.header",
@@ -3612,6 +3558,60 @@
       "en": "Open Bugreport",
       "pl": "Otwórz raport o błędach",
       "lang": "Open Bugreport"
+    },
+    {
+      "key": "client.bugreport.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Open Bugreport",
+      "pl": "Otwórz raport o błędach",
+      "lang": "Open Bugreport"
+    },
+    {
+      "key": "client.spelllist.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Show/hide spell list",
+      "pl": "Show/hide Zaklęcie list",
+      "lang": "Show/hide spell list"
+    },
+    {
+      "key": "client.spelllist.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Show/hide spell list",
+      "pl": "Show/hide Zaklęcie list",
+      "lang": "Show/hide spell list"
+    },
+    {
+      "key": "client.spelllist.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Show/hide spell list",
+      "pl": "Show/hide Zaklęcie list",
+      "lang": "Show/hide spell list"
+    },
+    {
+      "key": "client.keybins.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "styles/controls/preset",
+      "pl": "style/sterowanie/ustawienia wstępne",
+      "lang": "styles/controls/preset"
+    },
+    {
+      "key": "client.keybins.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chat mode ON",
+      "pl": "Tryb czatu WŁĄCZONY",
+      "lang": "Chat mode ON"
     }
   ],
   "length_ratio_issues": [

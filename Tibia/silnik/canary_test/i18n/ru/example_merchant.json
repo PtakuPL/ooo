@@ -1,6 +1,6 @@
 {
   "_comment": "Ексампле NPC-торговец - перевод на английский",
-  "_file": "[EN] data-otservbr-global/npc/example_merchant_i18n.lua",
+  "_file": "data-otservbr-global/npc/example_merchant_i18n.lua",
   "npc.example_merchant.farewell": "Прощай, %s. Посетите меня снова!",
   "npc.example_merchant.greeting": "Привет, %s! Добро пожаловать в мой магазин. Скажи {trade}, чтобы увидеть мои предложения.",
   "npc.example_merchant.help": "Я могу продать тебе зелья, оружие и броню. Скажите {trade}, чтобы просмотреть мои товары.",
@@ -12,5 +12,5 @@
   "npc.example_merchant.trade": "Конечно! Вот мои предложения.",
   "nv.example_merchant.1": "Лучшие зелья в городе!",
   "nv.example_merchant.2": "Качественное оружие и броня!",
-  "nv.example_merchant.3": "[EN] SPECIAL OFFERS TODAY!"
+  "nv.example_merchant.3": "SPECIAL OFFERS TODAY!"
 }

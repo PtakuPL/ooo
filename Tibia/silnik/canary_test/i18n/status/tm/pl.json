@@ -8385,11 +8385,11 @@
   },
   "scripts.actions_portal_brain_head.msg_5": {
     "src_hash": "5674377423e26b1b5ef73eff634fe257",
-    "text": "Wszedłeś do legowiska Brain Head.",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Wszedłeś do legowiska Głowa mózgu.",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-13T02:11:14.138773Z"
+    "updated_at": "2026-02-26T02:19:43.268775Z"
   },
   "scripts.actions_sacrifice_items.msg_2": {
     "src_hash": "08e0d278c9842eb17b1f2654c3340d98",
@@ -16535,14 +16535,6 @@
     "verified": false,
     "updated_at": "2026-02-13T03:00:02.010869Z"
   },
-  "monster.glooth_golem.name": {
-    "src_hash": "688c15f6d7aafcc919429eb8d3f9672c",
-    "text": "Glooth Golem",
-    "source": "google_translate",
-    "confidence": 0.9,
-    "verified": false,
-    "updated_at": "2026-02-13T03:00:02.011097Z"
-  },
   "monster.glooth_golem.desc": {
     "src_hash": "ee17396f047a9db787266ed06ca557df",
     "text": "glooth golem",
@@ -17382,14 +17374,6 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-13T03:06:06.514249Z"
-  },
-  "monster.rustheap_golem.name": {
-    "src_hash": "0c4ce216077ff5bf777de9cedd7d6492",
-    "text": "Rustheap Golem",
-    "source": "google_translate",
-    "confidence": 0.9,
-    "verified": false,
-    "updated_at": "2026-02-13T03:06:06.514592Z"
   },
   "monster.rustheap_golem.desc": {
     "src_hash": "cf57c90287faa2b6fc60f1c2ac9c32e7",
@@ -50105,11 +50089,11 @@
   },
   "monster.weakened_glooth_horror.desc": {
     "src_hash": "b818bbc416408b10ab44ccc0fb2b9aca",
-    "text": "osłabiony glooth horror",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "osłabiony Gloothowy horror",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-15T13:19:58.653893Z"
+    "updated_at": "2026-02-26T02:05:20.385275Z"
   },
   "monster.deep_terror.name": {
     "src_hash": "714a8b0aa9ff486ce295c2c6e0de5dab",
@@ -50217,11 +50201,11 @@
   },
   "monster.empowered_glooth_horror.desc": {
     "src_hash": "ded62554469cc67fd09227344ff01434",
-    "text": "wzmocniony glooth horror",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "wzmocniony Gloothowy horror",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-15T13:19:58.654567Z"
+    "updated_at": "2026-02-26T02:05:20.392412Z"
   },
   "monster.feeble_glooth_horror.name": {
     "src_hash": "097a672c58cee3eb83dbfb8f13e4b6f9",
@@ -56545,11 +56529,11 @@
   },
   "monster.lucifuga_aranea.desc": {
     "src_hash": "64821ed7c0f3f08f2547ee5af1485bfe",
-    "text": "lucifuga aranea",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Lucyfuga Aranea",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-13T20:35:09.571030Z"
+    "updated_at": "2026-02-26T02:05:20.586695Z"
   },
   "monster.plant_attendant.name": {
     "src_hash": "335200750115b990112c6ba53eb55115",
@@ -117566,5 +117550,1165 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T18:13:07.070016Z"
+  },
+  "npc.alexander.say_3": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Ok wtedy.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T02:04:08.674302Z"
+  },
+  "scripts.actions_bonefiddle.msg_4": {
+    "src_hash": "5199ba776a4a3a24d69420d0eb2e685b",
+    "text": "Grasz Balladę Pawia i portal się otwiera.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:19:43.119717Z"
+  },
+  "otclient_modules.player.tr_6": {
+    "src_hash": "e7b1c3af3203c42e8a5450beb229c09e",
+    "text": "Druid",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:33:08.604898Z"
+  },
+  "otclient_modules.spelllist_otui.tr_12": {
+    "src_hash": "e7b1c3af3203c42e8a5450beb229c09e",
+    "text": "Druid",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:33:08.673023Z"
+  },
+  "achievement.31.name": {
+    "src_hash": "fc7169fcfe554297348131c5d885735c",
+    "text": "Marid Ally",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:56:01.206630Z"
+  },
+  "achievement.93.name": {
+    "src_hash": "1b39f2208c291c598f84649b2827a5c7",
+    "text": "Jinuma",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:00:02.086239Z"
+  },
+  "talkaction.gm.spy.msg_stack_count": {
+    "src_hash": "c88a69258fad4f2e61cc6491c164486c",
+    "text": "({0}x)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:00:40.006800Z"
+  },
+  "talkaction.god.kv.msg_allkv_value": {
+    "src_hash": "9b8b418455abaea5cc33735652cb8833",
+    "text": "kv[{key}] = {value}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:00:40.056224Z"
+  },
+  "item.10388.name": {
+    "src_hash": "373afc213a9bc8b34a14a6cb3d1cadba",
+    "text": "drakinata",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:38.195566Z"
+  },
+  "item.10391.name": {
+    "src_hash": "14d0ab7dd6dbb7192ef42e58e739a6e5",
+    "text": "drachaku",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:38.198319Z"
+  },
+  "item.10727.name": {
+    "src_hash": "8789a6a22faa24660fcdc4f2baf665db",
+    "text": "dreadcoil",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:38.199642Z"
+  },
+  "item.11515.name": {
+    "src_hash": "96e6cce00bdc97375798343dc62e4f08",
+    "text": "trollroot",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:38.201582Z"
+  },
+  "item.11808.name": {
+    "src_hash": "aa544da6334f633ae7a9ea3bea2d023f",
+    "text": "taboret",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:38.203110Z"
+  },
+  "item.12576.name": {
+    "src_hash": "9c0a44006bbd6053818d4d98198629a8",
+    "text": "Meandi",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:38.206697Z"
+  },
+  "item.12577.name": {
+    "src_hash": "b3952bf8fa5443b9aa971154a2fb1bf1",
+    "text": "Impward",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:38.207691Z"
+  },
+  "item.12580.name": {
+    "src_hash": "9c0a44006bbd6053818d4d98198629a8",
+    "text": "Meandi",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:38.208499Z"
+  },
+  "item.12581.name": {
+    "src_hash": "b3952bf8fa5443b9aa971154a2fb1bf1",
+    "text": "Impward",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:38.209302Z"
+  },
+  "item.12742.name": {
+    "src_hash": "9c850379472287556ecf0bab5f35da15",
+    "text": "yielowax",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:38.210164Z"
+  },
+  "item.12813.desc": {
+    "src_hash": "fb5051e5e2987f7655e52d397a230ad6",
+    "text": "Przyznane przez RadioTibia.com.br do słuchania dźwięków Tibia",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:38.212475Z"
+  },
+  "item.13670.name": {
+    "src_hash": "e6f47b8acce0ca7627e3018b3efad838",
+    "text": "alga",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:38.214470Z"
+  },
+  "item.140.desc": {
+    "src_hash": "c0b89e9ef530b1575bb04fc07a8feda8",
+    "text": "To jest paczka dla strażnicy na Femor Hills",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:38.218277Z"
+  },
+  "item.14764.desc": {
+    "src_hash": "e6f3678bbce3298334d4182492017162",
+    "text": "Najpotężniejszy. Jedyny. Bóg wszystkich krasnoludków. Przyznane przez Tibia Bariloche",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:38.223253Z"
+  },
+  "item.17809.name": {
+    "src_hash": "aec07f935649a5b028c070251f617de7",
+    "text": "bola",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:45.666648Z"
+  },
+  "item.17812.name": {
+    "src_hash": "709d2a0da5cb49a7cb856a9b0d63c1fb",
+    "text": "ratana",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:45.668403Z"
+  },
+  "item.18222.name": {
+    "src_hash": "4ba4abea8f15118849caaead5c0805f4",
+    "text": "martwy przemytnik, baron Silvertoe",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:45.670375Z"
+  },
+  "item.18223.name": {
+    "src_hash": "4ba4abea8f15118849caaead5c0805f4",
+    "text": "martwy przemytnik, baron Silvertoe",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:45.674753Z"
+  },
+  "item.18224.name": {
+    "src_hash": "4ba4abea8f15118849caaead5c0805f4",
+    "text": "martwy przemytnik, baron Silvertoe",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:45.676923Z"
+  },
+  "item.18225.name": {
+    "src_hash": "4ba4abea8f15118849caaead5c0805f4",
+    "text": "martwy przemytnik, baron Silvertoe",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:45.679775Z"
+  },
+  "item.18450.name": {
+    "src_hash": "b701025e279101464b42e6eb21288019",
+    "text": "menhir",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:45.681343Z"
+  },
+  "item.18451.name": {
+    "src_hash": "b701025e279101464b42e6eb21288019",
+    "text": "menhir",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:00:45.682853Z"
+  },
+  "monster.gingerbread_men.voice_3": {
+    "src_hash": "3662042d4c8d3eb511c061a383617c2c",
+    "text": "Powinienem odwiedzić Candy Carnival.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:04:21.185983Z"
+  },
+  "data.otservbr.global.npc.captain.bluebear.L118.99": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Witaj na pokładzie, |PLAYERNAME|. Dokąd mogę cię dziś {sail}?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T19:06:04.216084Z"
+  },
+  "data.otservbr.global.npc.captain.breezelda.L73.336": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Witaj na pokładzie, |PLAYERNAME|. Dokąd mogę cię dziś {sail}?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T19:06:04.220571Z"
+  },
+  "data.otservbr.global.npc.captain.fearless.L111.1155": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Witaj na pokładzie, |PLAYERNAME|. Dokąd mogę cię dziś {sail}?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T19:06:04.226565Z"
+  },
+  "data.otservbr.global.npc.captain.greyhound.L102.1514": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Witaj na pokładzie, |PLAYERNAME|. Dokąd mogę cię dziś {sail}?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T19:06:04.228764Z"
+  },
+  "data.otservbr.global.npc.captain.pelagia.L102.862": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Witaj na pokładzie, |PLAYERNAME|. Dokąd mogę cię dziś {sail}?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T19:06:04.241498Z"
+  },
+  "data.otservbr.global.npc.captain.seagull.L105.1469": {
+    "src_hash": "51017418cad28d96e5cc67f855df6cd3",
+    "text": "Witaj na pokładzie, |PLAYERNAME|. Dokąd mogę cię dziś {sail}?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T19:06:04.244470Z"
+  },
+  "data.otservbr.global.npc.dario.L66.1245": {
+    "src_hash": "666a855b7af5a124eae2a7b856495eee",
+    "text": "Asha Thrazi, |PLAYERNAME|.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:06:25.738217Z"
+  },
+  "data.otservbr.global.npc.edala.L141.182": {
+    "src_hash": "98cf725de8cedb40f37e6694b92808ac",
+    "text": "Asha Thrazi, |PLAYERNAME|!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:06:25.738996Z"
+  },
+  "data.otservbr.global.npc.edala.L142.183": {
+    "src_hash": "98cf725de8cedb40f37e6694b92808ac",
+    "text": "Asha Thrazi, |PLAYERNAME|!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:06:25.739885Z"
+  },
+  "data.otservbr.global.npc.edvard.L61.1319": {
+    "src_hash": "d1edd481785444cc93991e6301343f21",
+    "text": "Witamy w sklepie meblowym Edron, |PLAYERNAME|.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:06:25.741845Z"
+  },
+  "quests.soul_war.phantom_killed": {
+    "src_hash": "cd8b4e1653d419970f40f66f8f69b938",
+    "text": "Zabiłeś {0} z {1} Niebezpieczny fantom.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:37.395450Z"
+  },
+  "quest.soul_war.boss_progress_header": {
+    "src_hash": "44523c531274569607880af96df538ce",
+    "text": "Postęp w dostępie do bossa Mirrored Nightmare:",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.942360Z"
+  },
+  "scripts.actions_devourer_access.msg_1": {
+    "src_hash": "9e1b9342419d4d7c23b729d25cca4d30",
+    "text": "Dostęp do Pożeracz Świata został udostępniony!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.943382Z"
+  },
+  "scripts.actions_devourer_access.msg_2": {
+    "src_hash": "5359d58b2e964269b9f14b0901f96f34",
+    "text": "Twój dostęp do Pożeracz Świata jest już udostępniony!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.944210Z"
+  },
+  "scripts.actions_frozen_horror.msg_2": {
+    "src_hash": "8dae5a0782a66d791fb9ea74ff2d431f",
+    "text": "Ktoś walczy z Frozen Horror.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.944868Z"
+  },
+  "scripts.actions_magnifier.msg_2": {
+    "src_hash": "b5d561af2c0da7158e0a87633ace58c1",
+    "text": "To jest to. Wygląda jakby malowało to dziecko!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.945625Z"
+  },
+  "scripts.construction_kits.jack_globe": {
+    "src_hash": "2390140de51c54f8da7495668db3a7e3",
+    "text": "Jack: Niezłe, a... co to właściwie jest?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.946378Z"
+  },
+  "scripts.creaturescripts_rift_invader_death.say_1": {
+    "src_hash": "5669a3df754da154c7d6c30b1ae02c01",
+    "text": "ARGH!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.950139Z"
+  },
+  "scripts.dawnport.first_step.druid": {
+    "src_hash": "2a2c9508e7d0e959ae405168ad8b3517",
+    "text": "Ponieważ jest to Twoja pierwsza próba powołania, Guild Cię przygotował. Jako druid możesz używać zaklęć: Błotny Atak, Wyluzuj, Magiczna poprawka.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.951496Z"
+  },
+  "scripts.dawnport.third_step.druid": {
+    "src_hash": "af87703200f863924322ca8280bb1dd5",
+    "text": "Otrzymałeś broń druida. Jako druid możesz używać zaklęć: Błotny Atak, Wyluzuj, Magiczna poprawka.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.952593Z"
+  },
+  "scripts.dawnport_tiles.msg_8": {
+    "src_hash": "f8a71eb64084ebdf98c830a9f2bac5e5",
+    "text": "<krrk> <krrrrrk> Odchodzisz pośpiesznie.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.953317Z"
+  },
+  "scripts.dolls.21962_5": {
+    "src_hash": "36345cf0215ba6fd52709e03affe0d3c",
+    "text": "<FART...> Ahhh... cichy i zabójczy...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.954668Z"
+  },
+  "scripts.dolls.6566_4": {
+    "src_hash": "23a04f4e31ffbadef5e2229c206f2e47",
+    "text": "Aaa... CHOO!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.955401Z"
+  },
+  "scripts.fluids.say_1": {
+    "src_hash": "977a1d0b517f57e08b58d12583e3e32d",
+    "text": "Muahahahaha..",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.955992Z"
+  },
+  "scripts.generator.say_1": {
+    "src_hash": "3d89a51fed26f6236916cfda98e7aff7",
+    "text": "GENERATOR GLOOTH ŁADUJE SIĘ DO ŚMIERTELNEJ WYBUCHU!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.956727Z"
+  },
+  "scripts.hammer.say_1": {
+    "src_hash": "2b7104e02af9629fcb4418c785a2ecf0",
+    "text": "KLING KLONG!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.957219Z"
+  },
+  "scripts.hammer.say_2": {
+    "src_hash": "2b7104e02af9629fcb4418c785a2ecf0",
+    "text": "KLING KLONG!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:29:38.957675Z"
+  },
+  "raid.white_pale.name": {
+    "src_hash": "c26999e79917dc6219158f8955472741",
+    "text": "White Pale",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.389636Z"
+  },
+  "raid.the_pale_count.name": {
+    "src_hash": "3b72b8f24e68dd7e889fa0bcc093f7d4",
+    "text": "The Pale Count",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.390384Z"
+  },
+  "raid.barba_bittermor.name": {
+    "src_hash": "65d5a9017ada07c5fd8a1f1f6f6fa605",
+    "text": "Barba Bittermor",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.391016Z"
+  },
+  "raid.the_welter.name": {
+    "src_hash": "06c5706a0ac0ee90aae4d076fff06ecb",
+    "text": "The Welter",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.391535Z"
+  },
+  "raid.serpent_spawn.name": {
+    "src_hash": "4122411a36fbcd6b3d08ec393758d536",
+    "text": "Serpent Spawn",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.392091Z"
+  },
+  "raid.wild_horses.name": {
+    "src_hash": "b7e3bb5561419e11e0638d054c1f6e13",
+    "text": "Wild Horses",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.392657Z"
+  },
+  "raid.rottie1.name": {
+    "src_hash": "2434c72f6d31d3e067482645bae5c9df",
+    "text": "Rottie1",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.393106Z"
+  },
+  "raid.rottie2.name": {
+    "src_hash": "33583cf2a19f1577097d56ad05d0a5d2",
+    "text": "Rottie2",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.393731Z"
+  },
+  "raid.gaz_haragoth.name": {
+    "src_hash": "b3dd522c06865f52bf4321b5d07cbd06",
+    "text": "Gaz Haragoth",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.394855Z"
+  },
+  "raid.diblis_the_fair.name": {
+    "src_hash": "5cd6555c19e0b434371a7a34d538792b",
+    "text": "Diblis The Fair",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.395950Z"
+  },
+  "raid.the_old_widow.name": {
+    "src_hash": "0a46dc1f306c4565526cd2e7b1631bd1",
+    "text": "The Old Widow",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.396566Z"
+  },
+  "raid.feverish_citizen.name": {
+    "src_hash": "7f9a98bbccbfd04494fb0436a1bb2de3",
+    "text": "Feverish Citizen",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.397141Z"
+  },
+  "raid.water_buffalo.name": {
+    "src_hash": "76970c076e84449bff9de4d9398d697e",
+    "text": "Water Buffalo",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.397660Z"
+  },
+  "raid.sir_valorcrest.name": {
+    "src_hash": "f8298500215b17e312aa870c0031d7e4",
+    "text": "Sir Valorcrest",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.398252Z"
+  },
+  "raid.mad_mage.name": {
+    "src_hash": "7cb4e60cd0927f995c74a12fe8154ebc",
+    "text": "Mad Mage",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.398727Z"
+  },
+  "raid.weakened_shlorg.name": {
+    "src_hash": "7d6db214fa9761098b8e5462761b864c",
+    "text": "Weakened Shlorg",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.399608Z"
+  },
+  "raid.zevelon_duskbringer.name": {
+    "src_hash": "5ce47d3193e6d4fdcb52a667ed3dd600",
+    "text": "Zevelon Duskbringer",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.400612Z"
+  },
+  "raid.zulazza_the_corruptor.name": {
+    "src_hash": "50f128ec9e12698f936e0ea56a2b2b61",
+    "text": "Zulazza The Corruptor",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.401433Z"
+  },
+  "raids.ankrahmun.bone_beast.msg_2": {
+    "src_hash": "b6b958bc1b722c72b29f78fa25aa8481",
+    "text": "Kościane bestie wędrujące po grobowcach Ankrahmun Dipthrah.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:45.402414Z"
+  },
+  "raids.darashia.lions.msg_3": {
+    "src_hash": "19a912162b861900b77fca589679378c",
+    "text": "Zomba, król lwów, przemierza pustynię Darashia!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:55.092855Z"
+  },
+  "raids.darashia.minotaurs.msg_1": {
+    "src_hash": "9a78c6e7f652bfb4917d6f0270906209",
+    "text": "Minotaurs przygotowują atak na piramidę Darashia Minotaura!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:55.093737Z"
+  },
+  "raids.darashia.minotaurs.msg_2": {
+    "src_hash": "cf92e00d9cc70541b45753e3a77b79f3",
+    "text": "Minotaurs atakują Darashia od północy!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:55.094531Z"
+  },
+  "raids.edron.feroxa.msg_3": {
+    "src_hash": "89722dc3a3e64a89450869ef28eb2301",
+    "text": "Mistrz Feroxa objawił się w kopalniach Grimvale.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:55.095772Z"
+  },
+  "raids.edron.goblins.msg_1": {
+    "src_hash": "3a522a10848c0e32dd7b188c065ce02f",
+    "text": "Goblins zbiegają się na zachód od Edron.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:55.096598Z"
+  },
+  "raids.farmine.zevelon_duskbringer.msg_1": {
+    "src_hash": "3fe28ab0128211012cea242ec846afa1",
+    "text": "Uważaj na Zevelon Duskbringer!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:55.097765Z"
+  },
+  "questlog.quest_10.mission_3.state_6": {
+    "src_hash": "1efaf103fe76fd9c3f3c6ce2eacf18a0",
+    "text": "Poproś Azerus Yalahari o misję.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:33:44.068882Z"
+  },
+  "questlog.quest_10.mission_7.name": {
+    "src_hash": "b02573914b8758e3927f680dd8ee2850",
+    "text": "Mission 07: A Fishy Mission",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:33:44.071954Z"
+  },
+  "questlog.quest_11.mission_1.name": {
+    "src_hash": "72b1299e1a85ff5118e259e2e39adb90",
+    "text": "Paw and Fur - Hunting Elite",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:33:44.074187Z"
+  },
+  "questlog.quest_11.mission_11.name": {
+    "src_hash": "2f8c0a47ac5bea471f979c199a8aaaab",
+    "text": "Paw and Fur: Stone Golems",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:33:44.075832Z"
+  },
+  "questlog.quest_11.mission_16.name": {
+    "src_hash": "aeec0953b3fc9e3f395941d145e1385d",
+    "text": "Paw and Fur: Thornback Tortoises",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:33:44.077771Z"
+  },
+  "web.tpl.guilds.list.set_2": {
+    "src_hash": "0741993b9cc3e306fa9b5f538ae8be87",
+    "text": "_sbutton_foundguild",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.138446Z"
+  },
+  "web.tpl.guilds.list.set_4": {
+    "src_hash": "0741993b9cc3e306fa9b5f538ae8be87",
+    "text": "_sbutton_foundguild",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.139027Z"
+  },
+  "web.tpl.guilds.create.success.b_2": {
+    "src_hash": "0ecfbf8c6871cafa8685d0750a07b789",
+    "text": "' ~ guild_name ~ '",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.139548Z"
+  },
+  "web.tpl.guilds.create.success.b_3": {
+    "src_hash": "c7215ce2e506e964793dfeeac4b3ea47",
+    "text": "' ~ leader_name ~ '",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.140138Z"
+  },
+  "html.web_status.text2": {
+    "src_hash": "f117f221f18ee1d5aa2bcd5cdbe7db51",
+    "text": "{{ closed_message }}",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.141404Z"
+  },
+  "html.balance.html.text1": {
+    "src_hash": "d7173cb56af09288ff638384c158dff3",
+    "text": "{{ result.balance }}",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.141907Z"
+  },
+  "html.coins.html.text1": {
+    "src_hash": "9cc8da973dab4ad9435cf59efb30ea59",
+    "text": "{{ result.name ?? result.id }}",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.142925Z"
+  },
+  "web.tpl.admin.open_source.b_1": {
+    "src_hash": "373a40e59d7a234e2f931f02471161d2",
+    "text": "HTML/Javascript/CSS:",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.143492Z"
+  },
+  "web.tpl.serverinfo.b_9": {
+    "src_hash": "3740cf5e0eee0244f1f61396843bde23",
+    "text": "CTRL + R",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.144996Z"
+  },
+  "web.tpl.guilds.view.set_8": {
+    "src_hash": "f7b06e4a04387a8a6ba9841f03c86a6a",
+    "text": "_sbutton_editranks",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.145881Z"
+  },
+  "web.tpl.guilds.delete_invite.b_1": {
+    "src_hash": "386d07a150c3bb2ac005141f09f815a2",
+    "text": "' ~ player_name ~ '",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.146590Z"
+  },
+  "web.tpl.guilds.kick_player.b_1": {
+    "src_hash": "386d07a150c3bb2ac005141f09f815a2",
+    "text": "' ~ player_name ~ '",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.147107Z"
+  },
+  "web.tpl.characters.b_28": {
+    "src_hash": "5a49bfabce70a610554f0dc5b222629a",
+    "text": "`160;",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.147416Z"
+  },
+  "web.tpl.admin.menus.header.b_1": {
+    "src_hash": "dbd7790bcd23fde7607101ef6a633779",
+    "text": "http://",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.147802Z"
+  },
+  "web.tpl.admin.menus.header.b_2": {
+    "src_hash": "f8eae6750519389e078e1eb1bcb3d708",
+    "text": "https://",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:53:51.148165Z"
+  },
+  "book.otbm.i_dont_think_the_dream": {
+    "src_hash": "3a85379055ee586c57d9bed467680ab4",
+    "text": "Nie sądzę, że Dream Challenge jest zbyt trudne.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:19.538870Z"
+  },
+  "book.otbm.knight_and_paladin_trainer": {
+    "src_hash": "4f80eefa47fab999bf03e1ef6bfb2b3a",
+    "text": "Knight i Paladin Trener",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:19.540208Z"
+  },
+  "book.otbm.knight_and_paladin_trainer_4f80eefa": {
+    "src_hash": "4f80eefa47fab999bf03e1ef6bfb2b3a",
+    "text": "Knight i Paladin Trener",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:19.541116Z"
+  },
+  "book.otbm.legends_of_the_khalabal_iii": {
+    "src_hash": "750d17d27508a10762f2248a7741c65e",
+    "text": "Legendy Kha'labal III - Gha'Zuul Nekromanta",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:19.542200Z"
+  },
+  "book.otbm.legends_of_the_khalabal_iv": {
+    "src_hash": "7bc8a5cd3cb1be762d697df04f9c4596",
+    "text": "Legendy Kha'labal IV - Upadek Drefia",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:19.543830Z"
+  },
+  "book.otbm.mail_room_depot_stores_bank": {
+    "src_hash": "31a4ff5d295ad69b38600688a534008e",
+    "text": "Poczta, Depot, sklepy, bank",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:19.544937Z"
+  },
+  "book.otbm.manifest_of_the_yalahari_part": {
+    "src_hash": "98a7fee0d636021954d47f4cdc363250",
+    "text": "Manifest Yalahari, część I",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:19.545983Z"
+  },
+  "book.otbm.manifest_of_the_yalahari_part_41b75d31": {
+    "src_hash": "41b75d3141a8f6ae336dec93f40c324f",
+    "text": "Manifest Yalahari, część II",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:19.546966Z"
+  },
+  "book.otbm.necromants_nectar_is_crucial_to": {
+    "src_hash": "2352fff4265a7d2e63e8626b0d6ff16e",
+    "text": "'necromants nectar' ma kluczowe znaczenie",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:19.548063Z"
+  },
+  "otclient_modules.tasks_otui.tr_2": {
+    "src_hash": "a6122a65eaa676f700ae68d393054a37",
+    "text": "Start",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:56:14.621444Z"
+  },
+  "otclient_modules.terminal.tr_1": {
+    "src_hash": "514d8a494f087c0d549b9536c2ef3bd9",
+    "text": "Terminal",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:56:14.621858Z"
+  },
+  "otclient_modules.terminal_otui.tr_1": {
+    "src_hash": "514d8a494f087c0d549b9536c2ef3bd9",
+    "text": "Terminal",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:56:14.622386Z"
+  },
+  "book.otbm.2nd_floor_barnabas_dee_astronomer": {
+    "src_hash": "d71fa402f290bf9994eda7fc73808be3",
+    "text": "Drugie piętro: Barnabas Dee, astronom i Sorcerer nauczyciel zaklęć.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:48.271184Z"
+  },
+  "book.otbm.allen_richardsons_warehouse": {
+    "src_hash": "3de769a909d568951ec64c8bdf7e4505",
+    "text": "Magazyn Allena Richardsona",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:48.272485Z"
+  },
+  "book.otbm.battle_tactics_for_demona_mazeforces": {
+    "src_hash": "15b26d48766bcf26a1eddb454ef2290f",
+    "text": "Taktyka walki dla Demona - Mazeforces",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:48.274039Z"
+  },
+  "book.otbm.bezils_and_nezils_stuff_an": {
+    "src_hash": "b6c6783f98879133ff0efb08d36f6768",
+    "text": "Bezils i Nezils Rzeczy w lombardzie",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:48.276974Z"
+  },
+  "book.otbm.crunors_finest_fruit_and_vegetable": {
+    "src_hash": "1ed839d6d71727c039758be41eae82f6",
+    "text": "Crunor's Finest - Sklep z owocami i warzywami",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:48.278640Z"
+  },
+  "book.otbm.crunors_finest_fruit_and_vegetable_1ed839d6": {
+    "src_hash": "1ed839d6d71727c039758be41eae82f6",
+    "text": "Crunor's Finest - Sklep z owocami i warzywami",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:48.279361Z"
+  },
+  "book.otbm.enter_the_teleporter_to_become_da2a4eed": {
+    "src_hash": "da2a4eedf3301f6141b39c576143329a",
+    "text": "Wejdź do teleportu i zostań obywatelem Port Hope!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:48.281249Z"
+  },
+  "book.otbm.everything_revolves_meradetos_of_drefia": {
+    "src_hash": "0751fabe4bf0067ea3292ed4c49bb509",
+    "text": "Wszystko się kręci. - Meradetos z Drefia",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:48.282582Z"
+  },
+  "book.otbm.fast_food_for_faster_heroes": {
+    "src_hash": "e65ebc74811a90fe0fc8ecc73cb3b64b",
+    "text": "Fast food dla szybszych bohaterów!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:48.283430Z"
+  },
+  "book.otbm.galunas_fletcher_workshop": {
+    "src_hash": "864cf768351b40affcb3887081101a29",
+    "text": "Warsztat Fletchera Galuny",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:48.284104Z"
+  },
+  "book.otbm.glorious_knights_guild_of_carlin": {
+    "src_hash": "57cb889151fd26b86af068f417345825",
+    "text": "Wspaniali Rycerze Guild z Carlin",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:48.284866Z"
+  },
+  "book.otbm.granted_by_radiotibiacombr_to_hear": {
+    "src_hash": "3869500f2a96ceaea615628628965f03",
+    "text": "Przyznane przez RadioTibia.com.br do słuchania dźwięków Tibia.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:48.285839Z"
+  },
+  "book.otbm.honour_and_glory_to_death": {
+    "src_hash": "307a93302377afadd6f4ef89ac859696",
+    "text": "Cześć i chwała Death Rose, potężnemu Władcy Wojennemu!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:48.286749Z"
+  },
+  "book.otbm.house_of_dermot_the_local": {
+    "src_hash": "3c2daa98077664cef290a4ade0b687d4",
+    "text": "House of Dermot, lokalny wódz",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:48.287488Z"
+  },
+  "book.otbm.recipe_of_the_day_virgin": {
+    "src_hash": "c672b1cc685e043161026d0b62a0ff95",
+    "text": "Przepis dnia: Virgin Colada",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:57:57.463957Z"
+  },
+  "item.18453.name": {
+    "src_hash": "b701025e279101464b42e6eb21288019",
+    "text": "menhir",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:04:54.599966Z"
+  },
+  "item.18925.name": {
+    "src_hash": "57bbcbfe6a6df694287521c7f4397573",
+    "text": "lancet",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:04:54.600350Z"
+  },
+  "item.21393.desc": {
+    "src_hash": "4c50203dd80176e84e2da2675073da00",
+    "text": "krailos",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:04:54.601216Z"
+  },
+  "item.21393.name": {
+    "src_hash": "4c50203dd80176e84e2da2675073da00",
+    "text": "krailos",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:04:54.601582Z"
+  },
+  "item.21841.name": {
+    "src_hash": "49c88ebbdd8fb5e36ca17f1b9c279a6b",
+    "text": "glooth farina",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:04:54.602116Z"
+  },
+  "item.21907.name": {
+    "src_hash": "2307c7bbaf1b911998b707ffb3e401f5",
+    "text": "martwy, wzmocniony Gloothowy horror",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:04:54.602680Z"
+  },
+  "npc.a_dead_bureaucrat1.say_1": {
+    "src_hash": "81833ebc28f25447db28304aba4cd57c",
+    "text": "Jasne, gdzie indziej. Każdy lubi spotykać mojego mistrza, jest wielkim demonem, prawda? Masz na imię...?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:02.325790Z"
+  },
+  "npc.a_dead_bureaucrat3.say_1": {
+    "src_hash": "1941a18726383c53082d1a2e099dd157",
+    "text": "Po powrocie powiedz, czy Ci się podobało. Jak masz na imię?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:02.326758Z"
+  },
+  "npc.a_dead_bureaucrat4.say_1": {
+    "src_hash": "9bbd1dde5a92acc76b100e855f30de96",
+    "text": "Nie jestem pewien, czy wiesz, co robisz, ale tak czy inaczej. Masz na imię?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:02.327699Z"
+  },
+  "npc.a_weakened_forest_fury.multi_8": {
+    "src_hash": "2604532e005fa4358433885748c9f485",
+    "text": "Skradzione {seeds} należy wyrwać {intruders} i zasadzić tam, gdzie wciąż brakuje gleby. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:02.330554Z"
+  },
+  "npc.a_weakened_forest_fury.multi_9": {
+    "src_hash": "ec255bee3e133245c94c19e83f1fba9d",
+    "text": "Należy tam przywieźć i przelać najczystsze {water} z najczystszej studni, a {birds} dające życie należy sprowadzić z powrotem do wewnętrznego sanktuarium polany. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:02.331926Z"
+  },
+  "npc.albinius.multi_1": {
+    "src_hash": "6db1f2b62d92a40fd65f24d1b6158eeb",
+    "text": "{Shapers} byli zaawansowaną cywilizacją, dobrze zorientowaną w sztuce, budownictwie, języku i eksploracji naszego świata w swoich czasach. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:02.335376Z"
+  },
+  "npc.alesar.multi_6": {
+    "src_hash": "e09c1e901d9793510c6fce1671d2ff6a",
+    "text": "W porządku, człowieku. Czy kiedykolwiek słyszałeś o {'Tears of Daraman'}? ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:02.336613Z"
+  },
+  "npc.alesar_functions.multi_6": {
+    "src_hash": "e09c1e901d9793510c6fce1671d2ff6a",
+    "text": "W porządku, człowieku. Czy kiedykolwiek słyszałeś o {'Tears of Daraman'}? ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:02.337535Z"
+  },
+  "npc.alexander.greet_msg_1": {
+    "src_hash": "6fe4b246c8652dfd3d389d9b352404d9",
+    "text": "Cześć |PLAYERNAME| i witaj w sklepie {magic}.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:02.338378Z"
   }
 }

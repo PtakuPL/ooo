@@ -8049,11 +8049,11 @@
   },
   "quests.creaturescripts_raging_mage_2.broadcast_2": {
     "src_hash": "c148cc49192a344bf6c7c9fa6d2e6108",
-    "text": "Los restos del Raging Mage están esparcidos por el suelo de su Torre. \\z\n\tEl portal dimensional tiembla.",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Los restos del mago furioso están esparcidos por el suelo de su Torre. \\z\n\tEl portal dimensional tiembla.",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-13T02:30:19.746872Z"
+    "updated_at": "2026-02-26T19:29:13.117292Z"
   },
   "quests.creaturescripts_raging_mage_kill.broadcast_1": {
     "src_hash": "3b89542279a4e97944f1e27205cc280d",
@@ -8065,11 +8065,11 @@
   },
   "quests.creaturescripts_raging_mage_kill.broadcast_2": {
     "src_hash": "a633c94a1a9bf1be37c45d8e3ee73dd6",
-    "text": "Los restos del Raging Mage están esparcidos por el suelo de su Torre. El portal dimensional tiembla.",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Los restos del mago furioso están esparcidos por el suelo de su Torre. El portal dimensional tiembla.",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-13T02:30:19.748075Z"
+    "updated_at": "2026-02-26T19:29:13.123004Z"
   },
   "quests.cults_of_tibia.boss_room_timeout_kick": {
     "src_hash": "cfcbc7849dbf6f79684e0a6f2e4b5c50",
@@ -8521,19 +8521,19 @@
   },
   "quests.dark_trails.you_need_5_players_to_fight": {
     "src_hash": "dd66394f98cf7a92f092a64cf4b6f701",
-    "text": "Necesitas 5 jugadores para luchar con Death Priest Shargon.",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Necesitas 5 jugadores para luchar con muerte sacerdote shargon.",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-13T02:36:58.059920Z"
+    "updated_at": "2026-02-26T19:29:13.143831Z"
   },
   "quests.dark_trails.you_need_exactly_5_players_to": {
     "src_hash": "3b4c4eca07178defda28435c1bf2bbdd",
-    "text": "Necesitas exactamente 5 jugadores para luchar con Death Priest Shargon.",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Necesitas exactamente 5 jugadores para luchar con muerte sacerdote shargon.",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-13T02:36:58.060327Z"
+    "updated_at": "2026-02-26T19:29:13.145123Z"
   },
   "quests.dawnport.first_time_vocation": {
     "src_hash": "632c8e6c1a41db98f6da0017c97dfb26",
@@ -46729,11 +46729,11 @@
   },
   "otclient_modules.cyclopedia_widgets_otui.tr_13": {
     "src_hash": "1fd3281c981e4608f951f980b7b8bf27",
-    "text": "Total:",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Total: ",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-13T21:07:33.716672Z"
+    "updated_at": "2026-02-26T02:32:53.746278Z"
   },
   "otclient_modules.cyclopedia_widgets_otui.tr_14": {
     "src_hash": "9be2a31121f26fddceb3258be51e7189",
@@ -91776,12 +91776,12 @@
     "updated_at": "2026-02-25T11:56:55.626136Z"
   },
   "npc.gnomargery.say_7": {
-    "src_hash": "e336c9fec30fa1931dfc6c06cae9d12d",
-    "text": "Lo sentimos, tienes que esperar {} antes de que esta tarea vuelva a estar disponible.",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "src_hash": "f022f9681bf58ae43dec9e644c2253ff",
+    "text": "No has comenzado esa misión.",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:54:08.573198Z"
+    "updated_at": "2026-02-26T04:35:33.780987Z"
   },
   "npc.gnomargery.say_8": {
     "src_hash": "18223d570ae5a2c3da36202a77099cf6",
@@ -92104,12 +92104,12 @@
     "updated_at": "2026-02-25T11:56:55.629181Z"
   },
   "npc.gnombold.say_6": {
-    "src_hash": "bd3b9a63a987ab40bb6809c8a73e85a9",
-    "text": "Lo sentimos, no estás en el rango requerido de niveles [{}-{}].",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "src_hash": "f022f9681bf58ae43dec9e644c2253ff",
+    "text": "No has comenzado esa misión.",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T01:54:33.284511Z"
+    "updated_at": "2026-02-26T04:35:33.812419Z"
   },
   "npc.gnombold.say_7": {
     "src_hash": "18223d570ae5a2c3da36202a77099cf6",
@@ -92128,12 +92128,12 @@
     "updated_at": "2026-02-25T11:56:55.630134Z"
   },
   "npc.gnombold.say_9": {
-    "src_hash": "e336c9fec30fa1931dfc6c06cae9d12d",
-    "text": "Lo sentimos, tienes que esperar {} antes de que esta tarea vuelva a estar disponible.",
+    "src_hash": "f022f9681bf58ae43dec9e644c2253ff",
+    "text": "No has comenzado esa misión.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T02:01:17.094875Z"
+    "updated_at": "2026-02-26T04:35:33.816383Z"
   },
   "npc.gnomilly.say_1": {
     "src_hash": "62fc2be33b523359c9f784f955777414",
@@ -92256,20 +92256,20 @@
     "updated_at": "2026-02-25T11:57:18.570212Z"
   },
   "npc.gnomilly.say_6": {
-    "src_hash": "bd3b9a63a987ab40bb6809c8a73e85a9",
-    "text": "Lo sentimos, no estás en el rango requerido de niveles [{}-{}].",
+    "src_hash": "f022f9681bf58ae43dec9e644c2253ff",
+    "text": "No has comenzado esa misión.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T02:01:17.151467Z"
+    "updated_at": "2026-02-26T04:35:33.932421Z"
   },
   "npc.gnomilly.say_9": {
-    "src_hash": "e336c9fec30fa1931dfc6c06cae9d12d",
-    "text": "Lo sentimos, tienes que esperar {} antes de que esta tarea vuelva a estar disponible.",
+    "src_hash": "f022f9681bf58ae43dec9e644c2253ff",
+    "text": "No has comenzado esa misión.",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T02:01:17.153537Z"
+    "updated_at": "2026-02-26T04:35:33.935628Z"
   },
   "npc.gnominer.greet_1": {
     "src_hash": "9815a80f80a64735c8915b30bbfb7c38",
@@ -95296,12 +95296,12 @@
     "updated_at": "2026-02-14T02:23:40.125252Z"
   },
   "npc.grizzly_adams.multi_15": {
-    "src_hash": "f3ba9a11a3e536230a067c5e25ff67f5",
-    "text": "No podrás avanzar más en tu rango hasta que hayas subido de nivel. Pero puedes aceptar tareas sin obtener puntos Paw & Fur, solo para obtener una recompensa de experiencia y la posibilidad de luchar contra un jefe de rango inferior al nivel 130.",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "src_hash": "cd6990acec07b0ff9dd0726b713f923d",
+    "text": "No tienes nada que reportar.",
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T02:23:40.126150Z"
+    "updated_at": "2026-02-26T04:35:34.129506Z"
   },
   "npc.grizzly_adams.multi_16": {
     "src_hash": "867cdc8b08c9df60b9dc404f79f4759e",
@@ -136425,11 +136425,11 @@
   },
   "monster.eliz_the_unyielding_stop.desc": {
     "src_hash": "8574cb962fbf6e38b727df06e2976751",
-    "text": "Eliz unyielding stop",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Eliz La Inquebrantable",
+    "source": "free_gt",
+    "confidence": 0.85,
     "verified": false,
-    "updated_at": "2026-02-16T20:34:18.956035Z"
+    "updated_at": "2026-02-26T19:05:07.585740Z"
   },
   "monster.the_remorseless_corruptor.name": {
     "src_hash": "3016a3b81bf64b22e5230e29ac00f8d0",
@@ -152598,5 +152598,1341 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T20:58:20.235380Z"
+  },
+  "npc.a_fluffy_squirrel.voice_1": {
+    "src_hash": "9280e35fe8a04c63939438a4aded92fa",
+    "text": "Chchch",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:36:00.885541Z"
+  },
+  "npc.captain_seahorse.greet_msg_1": {
+    "src_hash": "09e6e8af5ec0e866ef5f4291313f9765",
+    "text": "Bienvenido a bordo, |PLAYERNAME|. ¿Dónde puedo {sail} hoy?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:36:02.830114Z"
+  },
+  "data.otservbr.global.npc.anerui.L71.1487": {
+    "src_hash": "aa4114434bc744c1e617f6dab17ec06c",
+    "text": "Ashari |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:07:09.296176Z"
+  },
+  "data.otservbr.global.npc.brasith.L59.1211": {
+    "src_hash": "afb8a66bbd457858c305533b93f273bb",
+    "text": "Ashari, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:07:09.373442Z"
+  },
+  "scripts.movements_teleportto.msg_1": {
+    "src_hash": "e03f382c0e87c53675958417d2594faa",
+    "text": "Debes esperar. Alguien está desafiando a escorpión de furious ahora.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:20:16.730427Z"
+  },
+  "otclient_modules.calendar.otui_text_1": {
+    "src_hash": "8a3845661fdf782e067eb3b38199bb36",
+    "text": "2023-11-23, 11:23 CET",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:32:53.612998Z"
+  },
+  "otclient_modules.market.tr_17": {
+    "src_hash": "b5397350cbd6dcc4fe899771c728f5d1",
+    "text": "Balance:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:32:53.985428Z"
+  },
+  "otclient_modules.net.tr_1": {
+    "src_hash": "7735f84fc4e3830d8392fbc7bff07601",
+    "text": "(ERROR %d)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:32:53.996029Z"
+  },
+  "module.hireling_module.text1": {
+    "src_hash": "e99642285b1df7df398ed44d38eafa66",
+    "text": "Pereira (jlcvp)',",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:44:26.517872Z"
+  },
+  "cpp.combat.mana_attacker": {
+    "src_hash": "a8e810912070d5ddd8bcccd621134658",
+    "text": "{0} pierde {1} maná debido a tu ataque.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:45:36.154478Z"
+  },
+  "cpp.combat.mana_attacker_crit": {
+    "src_hash": "7adc2cc4191a8d8a771cdd458f04d9d2",
+    "text": "{0} pierde {1} maná debido a tu ataque crítico.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:45:36.156935Z"
+  },
+  "cpp.combat.mana_spectator_by": {
+    "src_hash": "a0573fb276af6ce2d1a728e625cc8b1f",
+    "text": "{0} pierde {1} maná debido a un ataque de {2}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:45:36.159532Z"
+  },
+  "cpp.combat.mana_spectator_by_crit": {
+    "src_hash": "d8896bf956ead12f307e55abc89afa6b",
+    "text": "{0} pierde {1} maná debido a un ataque crítico de {2}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:45:36.161985Z"
+  },
+  "cpp.combat.mana_target_by": {
+    "src_hash": "fc7fcfc62b9171037311480be0e23d6a",
+    "text": "Pierdes {0} maná debido a un ataque de {1}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:45:36.166283Z"
+  },
+  "cpp.combat.mana_target_by_crit": {
+    "src_hash": "a03f0ea928d07120fde4c9879d6ea26b",
+    "text": "Pierdes {0} maná debido a un ataque crítico de {1}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:45:36.168962Z"
+  },
+  "cpp.combat.mana_target_self": {
+    "src_hash": "58b26d0a93ef4cb5267cf5bbc7213d82",
+    "text": "Pierdes {0} maná debido a tu propio ataque.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:45:36.171819Z"
+  },
+  "cpp.combat.mana_target_self_crit": {
+    "src_hash": "74dfafacc1bd8149fce3cc7fb59ead69",
+    "text": "Pierdes {0} maná debido a tu propio ataque crítico.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:45:36.174899Z"
+  },
+  "data.otservbr.global.npc.edala.L72.181": {
+    "src_hash": "afb8a66bbd457858c305533b93f273bb",
+    "text": "Ashari, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:21:25.845448Z"
+  },
+  "talkaction.gm.spy.msg_stack_count": {
+    "src_hash": "c88a69258fad4f2e61cc6491c164486c",
+    "text": "({0}x)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:01:49.412555Z"
+  },
+  "talkaction.god.kv.msg_allkv_value": {
+    "src_hash": "9b8b418455abaea5cc33735652cb8833",
+    "text": "kv[{key}] = {value}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:01:49.459648Z"
+  },
+  "npc.albinius.stdmod_1": {
+    "src_hash": "a25481c27be96973de945d5290bd82fd",
+    "text": "Soy Albinio, un adorador del {Astral Shapers}.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:58:14.637621Z"
+  },
+  "npc.avar_tar.say_6": {
+    "src_hash": "9224f2572b359f71d06eac1cff78e48c",
+    "text": "Recibe el atuendo base, |PLAYERNAME|.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:58:26.297058Z"
+  },
+  "npc.bozo.stdmod_26": {
+    "src_hash": "e32ccaa1cb2f4b91da2d842daf455b5f",
+    "text": "No alimentes a los nigromantes.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:58:45.619419Z"
+  },
+  "npc.budrik.say_9": {
+    "src_hash": "174310f0757a36cf0bfc64cf663446c7",
+    "text": "Zzz...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:58:57.312416Z"
+  },
+  "npc.cael.say_19": {
+    "src_hash": "dc2d730c308ecb560748f9c87eeef96a",
+    "text": "Aprendí algo interesante sobre el Draken {origin}.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:58:57.314482Z"
+  },
+  "npc.chemar.greet_msg_1": {
+    "src_hash": "c5fa648ec9c917db8d6158cba9a21ddf",
+    "text": "Bendiciones de Daraman, viajero |PLAYERNAME|.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:59:16.778475Z"
+  },
+  "npc.dallheim.stdmod_5": {
+    "src_hash": "ce355e2f348a801cf93b80d2843572df",
+    "text": "¡Por Rookgaard! ¡Por Tibia!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:59:35.524518Z"
+  },
+  "npc.dallheim.voice_5": {
+    "src_hash": "ce355e2f348a801cf93b80d2843572df",
+    "text": "¡Por Rookgaard! ¡Por Tibia!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:59:35.526391Z"
+  },
+  "item.10189.desc": {
+    "src_hash": "c46a6c5117ed081cf2455efc7bee019a",
+    "text": "Aceite extra graso del almacén de Zalamon",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.399606Z"
+  },
+  "item.10388.name": {
+    "src_hash": "373afc213a9bc8b34a14a6cb3d1cadba",
+    "text": "drakinata",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.400892Z"
+  },
+  "item.10391.name": {
+    "src_hash": "14d0ab7dd6dbb7192ef42e58e739a6e5",
+    "text": "drachaku",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.401690Z"
+  },
+  "item.10817.name": {
+    "src_hash": "3fd9f5840a282e6b75f3db51534b68c5",
+    "text": "bolsa de especias orientales",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.402721Z"
+  },
+  "item.10818.name": {
+    "src_hash": "3fd9f5840a282e6b75f3db51534b68c5",
+    "text": "bolsa de especias orientales",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.403569Z"
+  },
+  "item.11553.desc": {
+    "src_hash": "b5333f35a7a4b978613a0d02a9c7153b",
+    "text": "Puedes ver el otro lado a través de él.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.404723Z"
+  },
+  "item.11691.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Muestra tus hechizos y también puede protegerte contra ataques cuando se usa.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.406388Z"
+  },
+  "item.12260.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.408424Z"
+  },
+  "item.12304.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.410063Z"
+  },
+  "item.12305.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.411268Z"
+  },
+  "item.12306.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.412430Z"
+  },
+  "item.12307.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.413582Z"
+  },
+  "item.12308.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.415249Z"
+  },
+  "item.12311.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.417200Z"
+  },
+  "item.12318.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.419892Z"
+  },
+  "item.12320.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.422124Z"
+  },
+  "item.12500.name": {
+    "src_hash": "3e1b617612bc1f2e5fa47efe5f41b529",
+    "text": "restos de un sirviente dorado",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.423281Z"
+  },
+  "item.12501.name": {
+    "src_hash": "3e1b617612bc1f2e5fa47efe5f41b529",
+    "text": "restos de un sirviente dorado",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.424658Z"
+  },
+  "item.12502.name": {
+    "src_hash": "3e1b617612bc1f2e5fa47efe5f41b529",
+    "text": "restos de un sirviente dorado",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.426143Z"
+  },
+  "item.12509.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:23.427847Z"
+  },
+  "item.12519.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:28.365034Z"
+  },
+  "item.12546.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:28.366568Z"
+  },
+  "item.12547.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:28.367957Z"
+  },
+  "item.12548.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:28.369244Z"
+  },
+  "item.12549.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:28.370539Z"
+  },
+  "item.12550.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:28.371958Z"
+  },
+  "item.12551.desc": {
+    "src_hash": "88cab01dea6fd171e43538f58e90778c",
+    "text": "Parece ser parte de un traje. Encuentra las seis piezas para completar el conjunto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:28.374423Z"
+  },
+  "item.12552.desc": {
+    "src_hash": "88cab01dea6fd171e43538f58e90778c",
+    "text": "Parece ser parte de un traje. Encuentra las seis piezas para completar el conjunto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:28.376337Z"
+  },
+  "item.12553.desc": {
+    "src_hash": "88cab01dea6fd171e43538f58e90778c",
+    "text": "Parece ser parte de un traje. Encuentra las seis piezas para completar el conjunto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:28.378257Z"
+  },
+  "item.12554.desc": {
+    "src_hash": "88cab01dea6fd171e43538f58e90778c",
+    "text": "Parece ser parte de un traje. Encuentra las seis piezas para completar el conjunto.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:01:28.380216Z"
+  },
+  "monster.goblin.name": {
+    "src_hash": "8e81e2940511f7152ba4462fe53e35b8",
+    "text": "Duende",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:07.576022Z"
+  },
+  "monster.guzzlemaw.name": {
+    "src_hash": "af39e6956034169ca52f6fff8f9fbc5b",
+    "text": "Guzzlemaw",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:07.576692Z"
+  },
+  "monster.bazir.name": {
+    "src_hash": "ee6529472291958a195a6bed85a9515f",
+    "text": "Bazir",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:07.577210Z"
+  },
+  "monster.moohtant.name": {
+    "src_hash": "591457cf42bc459ba0ab0eab106a4329",
+    "text": "Moohtante",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:07.584106Z"
+  },
+  "data.otservbr.global.npc.chemar.L87.743": {
+    "src_hash": "c5fa648ec9c917db8d6158cba9a21ddf",
+    "text": "Bendiciones de Daraman, viajero |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T19:06:46.292704Z"
+  },
+  "data.otservbr.global.npc.gnomadness.L88.256": {
+    "src_hash": "68c642b393c99bc29573fa466a3c50de",
+    "text": "Felicitaciones, recibió la montura Noxious Ripptor.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:06:59.293224Z"
+  },
+  "quest.soul_war.boss_progress_header": {
+    "src_hash": "44523c531274569607880af96df538ce",
+    "text": "Progreso hacia el acceso al jefe de Mirrored Nightmare:",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.577160Z"
+  },
+  "scripts.actions_devourer_access.msg_1": {
+    "src_hash": "9e1b9342419d4d7c23b729d25cca4d30",
+    "text": "¡Tu acceso a world devorador fue liberado!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.578108Z"
+  },
+  "scripts.actions_devourer_access.msg_2": {
+    "src_hash": "5359d58b2e964269b9f14b0901f96f34",
+    "text": "¡Tu acceso a world devorador ya está liberado!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.578998Z"
+  },
+  "scripts.claw_of_the_noxious_spawn.msg_1": {
+    "src_hash": "659df918540db33b0957df7ac8ea6dd3",
+    "text": "¡Estás maldecido por noxious engendro!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.579819Z"
+  },
+  "scripts.dawnport.third_step.paladin": {
+    "src_hash": "75d6b57cf391e023c7ab86f18c4c5247",
+    "text": "Has recibido las armas de un paladín. Como paladín, puedes usar los siguientes hechizos: Parche mágico, Llamada de flecha.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.581976Z"
+  },
+  "scripts.dawnport.third_step.sorcerer": {
+    "src_hash": "13b41bae4c41c9e53579023443783311",
+    "text": "Has recibido las armas de un hechicero. Como hechicero, puedes utilizar los siguientes hechizos: Parche mágico, Buzz, Scorch.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.583990Z"
+  },
+  "scripts.exalted_core.msg_4": {
+    "src_hash": "2f37a184031c31a8fcebdad03bf4119c",
+    "text": "No se pudo generar un Soul Core.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.585614Z"
+  },
+  "scripts.hireling_foods.sound_blurg": {
+    "src_hash": "235ad4c075dbe40cec18ece29091c97c",
+    "text": "Blurg.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.586749Z"
+  },
+  "scripts.init.msg_2": {
+    "src_hash": "43b9570fe1b2b82817e2b54d68f5874e",
+    "text": "Has sido teletransportado a tu ciudad natal.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.588341Z"
+  },
+  "scripts.manage_tutor.msg_1": {
+    "src_hash": "c7c80ea65fa8aa222486cedf82dc4af8",
+    "text": "Ascendiste a {} a tutor.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.589439Z"
+  },
+  "scripts.manage_tutor.msg_2": {
+    "src_hash": "20aa6a7590172c4d5ab081382ffae5d9",
+    "text": "Has degradado a {} a jugador normal.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.591541Z"
+  },
+  "scripts.mounts.success_2": {
+    "src_hash": "1d86b6a64efb05f7a669bb3ff037f833",
+    "text": "Has domesticado a las ovejas.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.594556Z"
+  },
+  "scripts.mounts.success_21": {
+    "src_hash": "4fc361be6fcae93bd60070f5f91cea9a",
+    "text": "Has domesticado a la mantarraya.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.599437Z"
+  },
+  "scripts.mounts.success_22": {
+    "src_hash": "131b11b444792724c431096ec41a1f39",
+    "text": "Has domesticado a la pantera.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.600768Z"
+  },
+  "scripts.mounts.success_30": {
+    "src_hash": "4bfdb4198c3034c220079b1a915c1bc1",
+    "text": "Has domesticado a la babosa.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.601557Z"
+  },
+  "scripts.mounts.success_33": {
+    "src_hash": "a53d8b6895812cd1410f7b7bc8a6192b",
+    "text": "Has domesticado a la viuda.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.602303Z"
+  },
+  "scripts.movements_check_throne.say_1": {
+    "src_hash": "bc6f7558dd61741c1752bcd85ad90a50",
+    "text": "No has absorbido energía de este trono.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.603112Z"
+  },
+  "scripts.movements_seal.msg_4": {
+    "src_hash": "eb9aca3f0c6a372bcdaf9a5dc2603dea",
+    "text": "El portal te lleva al desafío final.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.603974Z"
+  },
+  "scripts.movements_teleport.say_1": {
+    "src_hash": "63569e26e9c78a66b5284ded5aab7527",
+    "text": "No te atreves a saltar el hueco.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:14.604837Z"
+  },
+  "scripts.movements_teleport.say_2": {
+    "src_hash": "63569e26e9c78a66b5284ded5aab7527",
+    "text": "No te atreves a saltar el hueco.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:20.367138Z"
+  },
+  "scripts.music_box.tame_wailing_widow": {
+    "src_hash": "5ab35cb68a353d3c1aef0fe2812310b6",
+    "text": "Has domesticado a la viuda que llora.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:20.367736Z"
+  },
+  "scripts.push_town.msg_1": {
+    "src_hash": "f0df941e63f730ee989a8ea66528699f",
+    "text": "Has sido teletransportado a tu templo.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:20.368336Z"
+  },
+  "scripts.push_town.msg_2": {
+    "src_hash": "da0a1c4265d8127f7e28d29ea3f124c2",
+    "text": "Has teletransportado a {} al templo.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:20.368874Z"
+  },
+  "scripts.raids.msg_2": {
+    "src_hash": "a1fd8a62c1982f41fb6303c58464e459",
+    "text": "Simulando una incursión con inicialChance={}, targetChancePerDay={}, maxChancePerCheck={}...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:20.369694Z"
+  },
+  "scripts.soul_prism.msg_4": {
+    "src_hash": "2f37a184031c31a8fcebdad03bf4119c",
+    "text": "No se pudo generar un Soul Core.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:20.370465Z"
+  },
+  "scripts.talkactions.gm.push_town_1": {
+    "src_hash": "f0df941e63f730ee989a8ea66528699f",
+    "text": "Has sido teletransportado a tu templo.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:30:20.371167Z"
+  },
+  "raid.barba_bittermor.name": {
+    "src_hash": "65d5a9017ada07c5fd8a1f1f6f6fa605",
+    "text": "Barba Bittermor",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:33:21.159429Z"
+  },
+  "raid.midnight_panther_3.name": {
+    "src_hash": "da72c589dd7fc87a49ed0ad968ab908c",
+    "text": "Midnight Panther 3",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:33:21.160290Z"
+  },
+  "raid.midnight_panther_1.name": {
+    "src_hash": "4dec404364fe3c69ff2b5b22e166ad04",
+    "text": "Midnight Panther 1",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:33:21.161096Z"
+  },
+  "raid.midnight_panther_2.name": {
+    "src_hash": "6e3040074dacf7fed85d0910a2cb9154",
+    "text": "Midnight Panther 2",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:33:21.161792Z"
+  },
+  "raid.wild_horses.name": {
+    "src_hash": "b7e3bb5561419e11e0638d054c1f6e13",
+    "text": "Wild Horses",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:33:21.162453Z"
+  },
+  "web.tpl.guilds.list.set_2": {
+    "src_hash": "0741993b9cc3e306fa9b5f538ae8be87",
+    "text": "_sbutton_foundguild",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.770660Z"
+  },
+  "web.tpl.guilds.list.set_4": {
+    "src_hash": "0741993b9cc3e306fa9b5f538ae8be87",
+    "text": "_sbutton_foundguild",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.771686Z"
+  },
+  "web.tpl.guilds.create.success.b_2": {
+    "src_hash": "0ecfbf8c6871cafa8685d0750a07b789",
+    "text": "' ~ guild_name ~ '",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.772376Z"
+  },
+  "web.tpl.guilds.create.success.b_3": {
+    "src_hash": "c7215ce2e506e964793dfeeac4b3ea47",
+    "text": "' ~ leader_name ~ '",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.772867Z"
+  },
+  "html.web_status.text2": {
+    "src_hash": "f117f221f18ee1d5aa2bcd5cdbe7db51",
+    "text": "{{ closed_message }}",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.773995Z"
+  },
+  "html.balance.html.text1": {
+    "src_hash": "d7173cb56af09288ff638384c158dff3",
+    "text": "{{ result.balance }}",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.774487Z"
+  },
+  "html.coins.html.text1": {
+    "src_hash": "9cc8da973dab4ad9435cf59efb30ea59",
+    "text": "{{ result.name ?? result.id }}",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.775459Z"
+  },
+  "web.tpl.admin.open_source.b_1": {
+    "src_hash": "373a40e59d7a234e2f931f02471161d2",
+    "text": "HTML/Javascript/CSS:",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.776083Z"
+  },
+  "web.tpl.serverinfo.b_9": {
+    "src_hash": "3740cf5e0eee0244f1f61396843bde23",
+    "text": "CTRL + R",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.777721Z"
+  },
+  "web.tpl.guilds.view.set_6": {
+    "src_hash": "3c362f739cbb5d8f4ea2ba9328f81d39",
+    "text": "_sbutton_invitecharacter",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.778419Z"
+  },
+  "web.tpl.guilds.view.set_8": {
+    "src_hash": "f7b06e4a04387a8a6ba9841f03c86a6a",
+    "text": "_sbutton_editranks",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.778962Z"
+  },
+  "web.tpl.guilds.view.set_10": {
+    "src_hash": "5f366df0a0a987c0553aaf095fc32bd8",
+    "text": "_sbutton_leaveguild",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.779499Z"
+  },
+  "web.tpl.guilds.delete_invite.b_1": {
+    "src_hash": "386d07a150c3bb2ac005141f09f815a2",
+    "text": "' ~ player_name ~ '",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.780017Z"
+  },
+  "web.tpl.guilds.kick_player.b_1": {
+    "src_hash": "386d07a150c3bb2ac005141f09f815a2",
+    "text": "' ~ player_name ~ '",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.780497Z"
+  },
+  "web.tpl.characters.b_28": {
+    "src_hash": "5a49bfabce70a610554f0dc5b222629a",
+    "text": "&#160;",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.780832Z"
+  },
+  "web.tpl.admin.menus.header.b_1": {
+    "src_hash": "dbd7790bcd23fde7607101ef6a633779",
+    "text": "http://",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:19.781163Z"
+  },
+  "web.tpl.admin.menus.header.b_2": {
+    "src_hash": "f8eae6750519389e078e1eb1bcb3d708",
+    "text": "https://",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:26.734207Z"
+  },
+  "web.tpl.buttons.change_sex.set_2": {
+    "src_hash": "c9b8db2cdc1d94573a5a9e78d118f92f",
+    "text": "_sbutton_changesex",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:26.735061Z"
+  },
+  "web.tpl.buttons.register_account.set_3": {
+    "src_hash": "dc6ada6a65c9515e6c296713ceefdded",
+    "text": "_sbutton_registeraccount",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:26.736798Z"
+  },
+  "web.tpl.buttons.back.set_2": {
+    "src_hash": "c40990e66fb881dd5b79654230027c8d",
+    "text": "_sbutton_back",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:26.737292Z"
+  },
+  "web.tpl.buttons.login.set_2": {
+    "src_hash": "2f3fe07c667ea156fcbb9ef7b59bb2de",
+    "text": "_sbutton_login",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:26.737784Z"
+  },
+  "web.tpl.buttons.delete_character.set_2": {
+    "src_hash": "8f022179d58fac9d6e53059335d84796",
+    "text": "_sbutton_deletecharacter",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:54:26.739097Z"
+  },
+  "otclient_modules.imbuing.tr_1": {
+    "src_hash": "99a808d8d16122d70e44bd7f709d30fb",
+    "text": "Balance",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:46.020763Z"
+  },
+  "otclient_modules.imbuing.tr_13": {
+    "src_hash": "99a808d8d16122d70e44bd7f709d30fb",
+    "text": "Balance",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:46.021205Z"
+  },
+  "otclient_modules.market_otui.tr_5": {
+    "src_hash": "99a808d8d16122d70e44bd7f709d30fb",
+    "text": "Balance",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:46.021626Z"
+  },
+  "otclient_modules.options.tr_4": {
+    "src_hash": "b22f0418e8ac915eb66f829d262d14a2",
+    "text": "Audio",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:46.022252Z"
+  },
+  "otclient_modules.prey.tr_2": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Error",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:46.022904Z"
+  },
+  "otclient_modules.prey.tr_7": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Error",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:46.023295Z"
+  },
+  "otclient_modules.ruleviolation.tr_2": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Error",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:46.023722Z"
+  },
+  "otclient_modules.ruleviolation.tr_4": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Error",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:46.024059Z"
+  },
+  "otclient_modules.ruleviolation.tr_6": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Error",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:46.024387Z"
+  },
+  "otclient_modules.ruleviolation.tr_8": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Error",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:46.024708Z"
+  },
+  "otclient_modules.skills_otui.tr_33": {
+    "src_hash": "882384ec38ce8d9582b57e70861730e4",
+    "text": "Fatal",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:46.025031Z"
+  },
+  "otclient_modules.terminal.tr_1": {
+    "src_hash": "514d8a494f087c0d549b9536c2ef3bd9",
+    "text": "Terminal",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:46.025435Z"
+  },
+  "otclient_modules.terminal_otui.tr_1": {
+    "src_hash": "514d8a494f087c0d549b9536c2ef3bd9",
+    "text": "Terminal",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:46.025778Z"
+  },
+  "otclient_modules.things.tr_1": {
+    "src_hash": "902b0d55fddef6f8d651fe1035b7d4bd",
+    "text": "Error",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:55:46.026176Z"
+  },
+  "arena.admin.stats.not_found": {
+    "src_hash": "b92a9a290edd7eb4b272e30cc76da835",
+    "text": "[Administrador de Arena] Jugador '{0}' no encontrado (debe estar en línea).",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:56:59.078714Z"
+  },
+  "arena.admin.stats.no_profile": {
+    "src_hash": "a9d9c713dfd6bce5e280dbfa9917a042",
+    "text": "[Administrador de arena] No hay perfil de arena para {0}",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:56:59.079583Z"
+  },
+  "arena.admin.stats.header": {
+    "src_hash": "ee05a47f800e7cb149fdfd6d85164056",
+    "text": "[Administrador de la arena] Estadísticas de {0}:",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:56:59.080345Z"
+  },
+  "arena.admin.stats.mmr_line": {
+    "src_hash": "d3ae7ff9a8f31ca022aef2d01823df2f",
+    "text": "MMR: {0} | Título: {1}",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:56:59.080981Z"
+  },
+  "arena.admin.stats.points": {
+    "src_hash": "9058b223b12719dae9dfcc0d5bc508bd",
+    "text": "Puntos de arena: {0}",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:56:59.081612Z"
+  },
+  "arena.admin.setmmr.success": {
+    "src_hash": "39e236d71dd5fdc9460096571cfabe66",
+    "text": "[Administrador de Arena] Establece el MMR de {0} en {1}",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:56:59.082328Z"
+  },
+  "arena.admin.addpoints.success": {
+    "src_hash": "5064a4b1593262747e5fbf962c335940",
+    "text": "[Administrador de arena] Se agregaron {0} puntos de arena a {1}",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:56:59.083432Z"
+  },
+  "arena.admin.reset.success": {
+    "src_hash": "fcb0b849e68a37a11a49d0fdf58833de",
+    "text": "[Administrador de arena] Restablecer todas las estadísticas de la arena para {0}",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:56:59.084387Z"
+  },
+  "item.12555.desc": {
+    "src_hash": "88cab01dea6fd171e43538f58e90778c",
+    "text": "Parece ser parte de un traje. Encuentra las seis piezas para completar el conjunto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:15.152029Z"
+  },
+  "item.12556.desc": {
+    "src_hash": "88cab01dea6fd171e43538f58e90778c",
+    "text": "Parece ser parte de un traje. Encuentra las seis piezas para completar el conjunto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:15.155953Z"
+  },
+  "item.12801.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:15.226611Z"
+  },
+  "item.12802.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:15.230767Z"
+  },
+  "item.14142.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:15.370559Z"
+  },
+  "item.14143.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:15.373291Z"
+  },
+  "item.14769.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Muestra tus hechizos y también puede protegerte contra ataques cuando se usa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:15.426677Z"
+  },
+  "item.16107.desc": {
+    "src_hash": "deaed1bc929712d0e0b192fc259c7b5b",
+    "text": "Muestra tus hechizos y también puede protegerte contra ataques cuando se usa.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:15.497178Z"
+  },
+  "item.16153.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:15.512377Z"
+  },
+  "item.16154.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:15.514940Z"
+  },
+  "item.16155.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:15.517499Z"
+  },
+  "item.16251.desc": {
+    "src_hash": "e5d9b449f43015943df847d41d4c37b9",
+    "text": "Un ermitaño cerca de Carlin podría contarte más al respecto.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:15.541873Z"
+  },
+  "item.12742.name": {
+    "src_hash": "9c850379472287556ecf0bab5f35da15",
+    "text": "yielowax",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.271069Z"
+  },
+  "item.12805.name": {
+    "src_hash": "4cbbfdb7975446e785c9ecd2ac2a635e",
+    "text": "yielocks",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.271642Z"
+  },
+  "item.12813.desc": {
+    "src_hash": "fb5051e5e2987f7655e52d397a230ad6",
+    "text": "Otorgado por RadioTibia.com.br para escuchar los sonidos de Tibia",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.272618Z"
+  },
+  "item.12935.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "Hay un agujero en el techo.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.273361Z"
+  },
+  "item.13670.name": {
+    "src_hash": "e6f47b8acce0ca7627e3018b3efad838",
+    "text": "alga",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.273812Z"
+  },
+  "item.14018.desc": {
+    "src_hash": "37206ee03b4771b718b45d77d73b4167",
+    "text": "Esta formidable joya fue cortada a mano por |PLAYERNAME|.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.274555Z"
+  },
+  "item.14032.desc": {
+    "src_hash": "ec385e5717e19a2037e8986fc553a3e8",
+    "text": "Esta planta necesita agua urgentemente, de lo contrario se marchitará y desaparecerá por completo.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.275495Z"
+  },
+  "item.14141.name": {
+    "src_hash": "cf5bf2ab230c9740415984b28b23661e",
+    "text": "lava",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.275889Z"
+  },
+  "item.14238.desc": {
+    "src_hash": "25447addfecb86102efa8cef28f12ea3",
+    "text": "Hay un agujero en el techo.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.276593Z"
+  },
+  "item.14670.desc": {
+    "src_hash": "3715465c84597a2794431025999cbf3d",
+    "text": "Fue otorgado durante las festividades del 15 aniversario de Tibia.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.277610Z"
+  },
+  "item.14671.desc": {
+    "src_hash": "3715465c84597a2794431025999cbf3d",
+    "text": "Fue otorgado durante las festividades del 15 aniversario de Tibia.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.279339Z"
+  },
+  "item.14672.desc": {
+    "src_hash": "3715465c84597a2794431025999cbf3d",
+    "text": "Fue otorgado durante las festividades del 15 aniversario de Tibia.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.280419Z"
+  },
+  "item.14673.desc": {
+    "src_hash": "3715465c84597a2794431025999cbf3d",
+    "text": "Fue otorgado durante las festividades del 15 aniversario de Tibia.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.281340Z"
+  },
+  "item.14674.desc": {
+    "src_hash": "3715465c84597a2794431025999cbf3d",
+    "text": "Fue otorgado durante las festividades del 15 aniversario de Tibia.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.282303Z"
+  },
+  "item.14675.desc": {
+    "src_hash": "f8260ddde642e2d75b0a592e57332de8",
+    "text": "Fue otorgado durante las festividades del aniversario de Tibia.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.283547Z"
+  },
+  "item.16104.name": {
+    "src_hash": "305c835234499b840b34fef3742213e1",
+    "text": "gill gugel",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:05:24.284558Z"
   }
 }

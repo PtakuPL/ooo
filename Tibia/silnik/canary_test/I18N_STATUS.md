@@ -9,23 +9,23 @@
 ## 🧭 META
 
 > **[META]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-26 01:32:10
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-02-26 01:32:58
 
-> **Aktualizacja:** 2026-02-26 01:32:10 UTC  
+> **Aktualizacja:** 2026-02-26 01:32:58 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 74492  
-> **LIVE:** Cykl #13,129 | Status: 🟢 DZIAŁA | Faza: AUTO_TRANSLATE | Etap: auto_done | Kategoria: pt | Plik: client.json | Heartbeat: 2026-02-26T01:32:04Z  
-> **Okno godzinowe:** okno=1.0h | cykli=264 | pominięte=0.0% | odrzucone=0.0% | przepustowość=0.0/h  
+> **LIVE:** Cykl #13,138 | Status: 🟢 DZIAŁA | Faza: AUTO_TRANSLATE | Etap: auto_done | Kategoria: tr | Plik: client.json | Heartbeat: 2026-02-26T01:32:52Z  
+> **Okno godzinowe:** okno=1.0h | cykli=273 | pominięte=0.0% | odrzucone=0.0% | przepustowość=0.0/h  
 > **Tłumaczeń netto:** 140,290
 
 ### 🧩 Status sekcji
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-02-26 01:32:10 |
-| LIVE | 🟢 AKTYWNY | 9s temu | - | `activity.json / worker_state.json` | 2026-02-26T01:32:04Z |
-| PRE_MIGRATION | 🔒 NIEAKTYWNY | 38min temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-26 01:32:10 |
-| TRANSLATION | 🟢 AKTYWNY | 9s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-26T01:32:04.083099Z |
-| QUALITY | 🟢 AKTYWNY | 0s temu | - | `quality_audit_latest.json + guard_fail_breakdown_latest.json` | 2026-02-26T01:32:12.571612Z |
-| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-26 01:32:10 |
+| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-02-26 01:32:58 |
+| LIVE | 🟢 AKTYWNY | 9s temu | - | `activity.json / worker_state.json` | 2026-02-26T01:32:52Z |
+| PRE_MIGRATION | 🔒 NIEAKTYWNY | 39min temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-02-26 01:32:58 |
+| TRANSLATION | 🟢 AKTYWNY | 9s temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-02-26T01:32:52.163957Z |
+| QUALITY | 🟢 AKTYWNY | 0s temu | - | `quality_audit_latest.json + guard_fail_breakdown_latest.json` | 2026-02-26T01:33:00.598681Z |
+| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-02-26 01:32:58 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -34,28 +34,28 @@
 ## 🔴 LIVE — Bieżąca praca
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 9s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-26T01:32:04Z
+> Świeżość: 9s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-26T01:32:52Z
 
 | Metryka | Wartość |
 |---------|---------|
 | 🛠️ **Co robi** | Tłumaczenie automatyczne (Google Translate + TM) → zakończone |
-| 🌍 **Aktywne języki (10 min)** | DE, FR, IT, PT |
+| 🌍 **Aktywne języki (10 min)** | CS, NL, PT, TR |
 | 📝 **Faza** | AUTO_TRANSLATE |
 | 📋 **Etap** | tłumaczenie zakończone |
-| 📂 **Kategoria / Język** | pt |
+| 📂 **Kategoria / Język** | tr |
 | 📄 **Plik** | client.json |
 | 📊 **Status** | 🟢 DZIAŁA |
 | 📈 **Postęp** | Batch: 30 keys/cykl |
 | 🔧 **Metoda** | Translation Memory (GT wyłączony) |
 | 🔄 **Ostatni cykl** | 0 kluczy, 0 odrzuconych, 0s, tryb: AUTO_TRANSLATE |
-| ❤️ **Heartbeat** | 2026-02-26T01:32:04Z |
+| ❤️ **Heartbeat** | 2026-02-26T01:32:52Z |
 
 **Ostatnie operacje:**
+- → AUTO_TRANSLATE_DONE (TR) [ok]
+- → AUTO_TRANSLATE_DONE (CS) [ok]
+- → AUTO_TRANSLATE_DONE (NL) [ok]
 - → AUTO_TRANSLATE_DONE (PT) [ok]
 - → AUTO_TRANSLATE_DONE (DE) [ok]
-- → AUTO_TRANSLATE_DONE (FR) [ok]
-- → AUTO_TRANSLATE_DONE (IT) [ok]
-- → AUTO_TRANSLATE_DONE (RO) [ok]
 
 ---
 
@@ -67,7 +67,7 @@
 | 🔍 Hits (stringów do migracji) | **112,434** w 18,063 plikach |
 | �📊 Przetłumaczono | **0** kluczy |
 | ❌ Odrzucone (guard) | 0 |
-| 🔁 Cykli | 264 |
+| 🔁 Cykli | 273 |
 | 🌍 Języków | 11 |
 | 🏆 Najaktywniejszy | IT (0 kluczy) |
 | 📄 Najczęstszy plik | books.json |
@@ -91,9 +91,9 @@
 | FR | 0 | 0 | 0% | 7 |
 | DE | 0 | 0 | 0% | 9 |
 | PT | 0 | 0 | 0% | 9 |
-| NL | 0 | 0 | 0% | 6 |
-| CS | 0 | 0 | 0% | 8 |
-| TR | 0 | 0 | 0% | 8 |
+| NL | 0 | 0 | 0% | 7 |
+| CS | 0 | 0 | 0% | 9 |
+| TR | 0 | 0 | 0% | 9 |
 | RO | 0 | 0 | 0% | 7 |
 | RU | 0 | 0 | 0% | 6 |
 | ES | 0 | 0 | 0% | 2 |
@@ -215,7 +215,7 @@
 ## 🔍 PRE_MIGRATION — Skan plików źródłowych
 
 > **[PRE_MIGRATION]** 🔒 NIEAKTYWNY (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 38min temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-26 01:32:10
+> Świeżość: 39min temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-02-26 01:32:58
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -319,7 +319,7 @@
 ## 🌍 TŁUMACZENIA
 
 > **[TRANSLATION]** 🟢 AKTYWNY  
-> Świeżość: 9s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-26T01:32:04.083099Z
+> Świeżość: 9s temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-02-26T01:32:52.163957Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -353,8 +353,8 @@
 | KO (Koreański) | 4,220/74,492 | 5.67% | 3,991 | 20,749 |
 
 ### 🧭 Aktywny folder tłumaczeń
-- **Folder:** DE - Niemiecki - Serwer
-- **Plik JSON:** books.json
+- **Folder:** NL - Niderlandzki - Klient
+- **Plik JSON:** otclient_data.json
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
@@ -382,7 +382,7 @@ This item cannot b → Эта таинственная лампа призыва
 - [-/-] %s minutes → %s минут (scripts.offline_training.minutes_plural)
 
 ### 🚫 Raporty strażnika jakości
-- Raporty strażnika jakości: **8719**  
+- Raporty strażnika jakości: **8722**  
 - Raporty blokad: **0**  
 - Widoczne raporty 'nie mogę przetłumaczyć': **5735**
 
@@ -420,8 +420,8 @@ This item cannot b → Эта таинственная лампа призыва
 ### ⏱️ Ścisłe okno godzinowe (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-02-26T00:32:11.626408Z → 2026-02-26T01:32:11.626408Z) |
-| Cykle | **264** (TŁUMACZENIE=264, PRE_MIGRATION=0) |
+| Okno | **1.0h** (2026-02-26T00:32:59.724549Z → 2026-02-26T01:32:59.724549Z) |
+| Cykle | **273** (TŁUMACZENIE=273, PRE_MIGRATION=0) |
 | Pominięte (kat. nieaktywna) | **0** (ogółem=0.0%, migracja=0.0%) |
 | Odrzucone (strażnik jakości) % | **0.0%** |
 | Cykle bez postępu % | **100.0%** |
@@ -434,13 +434,13 @@ This item cannot b → Эта таинственная лампа призыва
 ## 🔬 JAKOŚĆ TŁUMACZEŃ
 
 > **[QUALITY]** 🟢 AKTYWNY  
-> Świeżość: 0s temu | Źródło: `quality_audit_latest.json + guard_fail_breakdown_latest.json` | Ostatnia aktualizacja: 2026-02-26T01:32:12.571612Z
+> Świeżość: 0s temu | Źródło: `quality_audit_latest.json + guard_fail_breakdown_latest.json` | Ostatnia aktualizacja: 2026-02-26T01:33:00.598681Z
 
-- **Ostatni audyt:** SLOW_MODE | 29 issue(s) / 100 entries | 2026-02-26T01:32:05.055958Z | recent_hidden=0
+- **Ostatni audyt:** SLOW_MODE | 29 issue(s) / 100 entries | 2026-02-26T01:32:53.653289Z | recent_hidden=0
 - **Alarm recent hidden HIGH/CRITICAL:** ✅ OK | hidden=0, threshold=5, trend=→ last10=0.00, prev10=0.00, latest=0
 - **Regresja critical bad keys pack:** ✅ PASS
 - **Top 5 typów problemów:** suspicious_rejected_critical=145, suspicious_log_high=91, identical_to_en_exempt=48, identical_to_en=29, suspicious_rejected_high=21
-- **Języki o najsłabszej jakości:** es(60.1, issues=356553), ru(60.1, issues=216658), pl(60.1, issues=196577), ro(60.1, issues=192782), de(64.1, issues=5082)
+- **Języki o najsłabszej jakości:** es(60.1, issues=356811), ru(60.1, issues=216738), pl(60.1, issues=196679), ro(60.1, issues=192906), de(64.1, issues=5082)
 - **Pliki:** `i18n/status/quality_audit_latest.json`, `i18n/status/quality_dashboard.json`, `i18n/status/quality_report.jsonl`, `i18n/status/critical_bad_keys_pack_regression_latest.json`
 
 ### 📈 Statystyki Pracy
@@ -457,15 +457,15 @@ This item cannot b → Эта таинственная лампа призыва
 ## ⚠️ Problemy i uwagi
 
 ⚠️ **TR**: jakość 78%, 1834 problemów
-⚠️ **PL**: jakość 60%, 196577 problemów
+⚠️ **PL**: jakość 60%, 196679 problemów
 ⚠️ **AZ**: jakość 70%, 1417 problemów
-⚠️ **ES**: jakość 60%, 356553 problemów
+⚠️ **ES**: jakość 60%, 356811 problemów
 ⚠️ **PT**: jakość 74%, 1991 problemów
 ⚠️ **FR**: jakość 65%, 2470 problemów
-⚠️ **IT**: jakość 80%, 77495 problemów
-⚠️ **RU**: jakość 60%, 216658 problemów
+⚠️ **IT**: jakość 80%, 77515 problemów
+⚠️ **RU**: jakość 60%, 216738 problemów
 ⚠️ **NL**: jakość 77%, 649 problemów
-⚠️ **SV**: jakość 74%, 32923 problemów
+⚠️ **SV**: jakość 74%, 32949 problemów
 
 ---
 
@@ -479,8 +479,8 @@ This item cannot b → Эта таинственная лампа призыва
 
 | Komponent | Status | Szczegóły |
 |-----------|--------|-----------|
-| Worker | 🟢 DZIAŁA | Cykl #13,129 |
-| Heartbeat | 9s temu | 2026-02-26T01:32:04Z |
+| Worker | 🟢 DZIAŁA | Cykl #13,138 |
+| Heartbeat | 9s temu | 2026-02-26T01:32:52Z |
 | Uptime | - | od startu workera |
 
 ---
@@ -497,7 +497,7 @@ This item cannot b → Эта таинственная лампа призыва
 ## ✅ CHECKLIST - Plan Pracy
 
 > **Aktualna faza:** AUTO_TRANSLATE  
-> **Aktualna kategoria:** pt
+> **Aktualna kategoria:** tr
 
 
 ### 🔄 Faza 1: 🎮 Canary Server
@@ -565,33 +565,33 @@ This item cannot b → Эта таинственная лампа призыва
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 9s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-26T01:32:04Z
+> Świeżość: 9s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-02-26T01:32:52Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│ 🔴 LIVE: Worker v2.0                          Cykl #13,129 │
+│ 🔴 LIVE: Worker v2.0                          Cykl #13,138 │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status:    🟢 DZIAŁA                                 │
 │ Tryb:      🤖 AUTO_TRANSLATE (auto_done)             │
-│ Kategoria: 📁 PT                                     │
+│ Kategoria: 📁 TR                                     │
 ├─────────────────────────────────────────────────────────────────┤
 │ Status: running                                               │
 │ Plik: client.json                                             │
 │ Postęp: batch: 30 keys/cykl                                   │
 │ …ed=0 guard_fail=0 strict_missing_key=0 strict_skipped_done=0 │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-02-26T01:32:04Z           │
+│ ❤️ Heartbeat: 2026-02-26T01:32:52Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
-- 2026-02-26 01:32:04 | AUTO_TRANSLATE:auto_done | pt | ok | client.json
-- 2026-02-26 01:32:02 | AUTO_TRANSLATE:heartbeat_tick | pt | ok | client.json
-- 2026-02-26 01:32:02 | AUTO_TRANSLATE:auto_start | pt | ok | client.json
-- 2026-02-26 01:31:55 | AUTO_TRANSLATE:auto_done | de | ok | books.json
-- 2026-02-26 01:31:53 | AUTO_TRANSLATE:heartbeat_tick | de | ok | books.json
-- 2026-02-26 01:31:53 | AUTO_TRANSLATE:auto_start | de | ok | books.json
+- 2026-02-26 01:32:52 | AUTO_TRANSLATE:auto_done | tr | ok | client.json
+- 2026-02-26 01:32:50 | AUTO_TRANSLATE:heartbeat_tick | tr | ok | client.json
+- 2026-02-26 01:32:50 | AUTO_TRANSLATE:auto_start | tr | ok | client.json
+- 2026-02-26 01:32:38 | AUTO_TRANSLATE:auto_done | cs | ok | client.json
+- 2026-02-26 01:32:37 | AUTO_TRANSLATE:heartbeat_tick | cs | ok | client.json
+- 2026-02-26 01:32:36 | AUTO_TRANSLATE:auto_start | cs | ok | client.json
 
 ---
 
@@ -613,8 +613,9 @@ This item cannot b → Эта таинственная лампа призыва
 ## 📜 HISTORIA
 
 > **[HISTORY]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-26 01:32:10
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-02-26 01:32:58
 
+- 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [tr] → ok (files+0, translated+0, skipped+0) — lang=tr file=client.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [pt] → ok (files+0, translated+0, skipped+0) — lang=pt file=client.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [it] → ok (files+0, translated+0, skipped+0) — lang=it file=arena.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [cs] → ok (files+0, translated+0, skipped+0) — lang=cs file=books.json
@@ -624,7 +625,6 @@ This item cannot b → Эта таинственная лампа призыва
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [nl] → ok (files+0, translated+0, skipped+0) — lang=nl file=books.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [it] → ok (files+0, translated+0, skipped+0) — lang=it file=books.json
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [tr] → ok (files+0, translated+0, skipped+0) — lang=tr file=html.json
-- 🤖 AUTO_TRANSLATE: REPAIR_IDENTICAL_DONE [es] → ok (translated+0) — repair_identical lang=es file=npc.json target_identical=2858 limit=156 tier=high_backlog+domain_cap+suspicious_guard domain_cap=260 gt=true suspicious_pct=1000.00
 
 
 ## 📅 Dziś (2026-02-26)
@@ -670,7 +670,7 @@ This item cannot b → Эта таинственная лампа призыва
 | 🧩 Reconcile korekta rejestru | **53,763** | zmiany EN poza workerem |
 | ➕ Kluczy poza rejestrem workera | **0** | ręczne/Codex/Claude/starsze |
 | 🌍 Języków | **53** | EN + tłumaczenia |
-| 🔄 Cykli wykonanych | **#13,129** | continuous mode |
+| 🔄 Cykli wykonanych | **#13,138** | continuous mode |
 
 ---
 
@@ -881,7 +881,7 @@ This item cannot b → Эта таинственная лампа призыва
 
 | System | Status | Info |
 |--------|--------|------|
-| Worker v1.1 | 🟢 DZIAŁA | Cykl #13,129 |
+| Worker v1.1 | 🟢 DZIAŁA | Cykl #13,138 |
 | Guardian v2.0 | 🟢 AKTYWNY | Push co 2 min |
 
 ---
@@ -969,7 +969,7 @@ This item cannot b → Эта таинственная лампа призыва
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-02-26 01:32:10  
+📅 Auto-updated by Worker v1.1 | Last: 2026-02-26 01:32:58  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

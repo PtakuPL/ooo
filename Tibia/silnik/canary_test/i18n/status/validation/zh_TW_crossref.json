@@ -4,7 +4,7 @@
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-26T19:51:00.682549Z",
+  "checked_at": "2026-02-26T20:08:34.885219Z",
   "issues_total": 421,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -2080,7 +2080,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Allen Richardson's Warehouse",
-      "pl": "Allen Richardson's Waredom",
+      "pl": "Magazyn Allena Richardsona",
       "lang": "Allen Richardson's Warehouse"
     },
     {
@@ -2116,7 +2116,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Galuna's Fletcher Workshop",
-      "pl": "Galuna's Fletcher Warsztat",
+      "pl": "Warsztat Fletchera Galuny",
       "lang": "Galuna's Fletcher Workshop"
     },
     {

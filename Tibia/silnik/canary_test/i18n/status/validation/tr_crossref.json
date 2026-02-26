@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-26T19:50:59.907533Z",
+  "checked_at": "2026-02-26T20:08:34.153031Z",
   "issues_total": 422,
   "issues_by_type": {
     "consistency_in_language": 6,
@@ -2799,7 +2799,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Allen Richardson's Warehouse",
-      "pl": "Allen Richardson's Waredom",
+      "pl": "Magazyn Allena Richardsona",
       "lang": "Allen Richardson's Warehouse"
     },
     {
@@ -3352,6 +3352,15 @@
       "lang": "Battle tactics for Demona"
     },
     {
+      "key": "book.otbm.battle_tactics_for_demona_mazeforces",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battle tactics for Demona - Mazeforces",
+      "pl": "Taktyka walki dla Demona - Mazeforces",
+      "lang": "Battle tactics for Demona - Mazeforces"
+    },
+    {
       "key": "book.otbm.battletactics_for_mages_i",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -3568,6 +3577,15 @@
       "lang": "Beware! The tiles inside these rooms will bring you to the lion's foes!"
     },
     {
+      "key": "book.otbm.bezils_and_nezils_stuff_an",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bezils And Nezils Stuff An' Pawn Shop",
+      "pl": "Bezils i Nezils Rzeczy w lombardzie",
+      "lang": "Bezils And Nezils Stuff An' Pawn Shop"
+    },
+    {
       "key": "book.otbm.bite_squeeze_shake_enjoy",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -3692,24 +3710,6 @@
       "en": "brothers and sisters, but the dreams were",
       "pl": "bracia i siostry, ale marzenia były",
       "lang": "brothers and sisters, but the dreams were"
-    },
-    {
-      "key": "book.otbm.brothers_why_does_the_ignorant",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Brothers, why does the ignorant world still consider death their enemy and end of life? It is not folly? Death is but the portal, not the end; it is but an artificial hindrance to ward off the lesser spirits from the realm of the mighty; and the gods put it up to prevent us Chosen from ascension to their own powers, and threaten their dominion. These shackles to our existence are unnatural; but it is natural to rebel and to seek power, yes, to gain power, to exert power! Brothers, we must overcome this hindrance set up by the jealous gods and claim our rightful place! We are the masters of the living and undead, the true lords of the created, and nothing shall stop us from achieving what we seek.",
-      "pl": "Bracia, dlaczego nieświadomy świat nadal uważa śmierć za swojego wroga i koniec życia? Czy to nie głupota? Śmierć jest jedynie portalem, a nie końcem; jest to jedynie sztuczna przeszkoda mająca na celu odparcie mniejszych duchów z królestwa możnych; a bogowie postawili to, aby uniemożliwić nam, Wybranym, wstąpienie do ich własnych mocy i zagrozić ich panowaniu. Te kajdany naszej egzystencji są nienaturalne; ale rzeczą naturalną jest buntować się i szukać władzy, tak, zdobywać władzę, sprawować władzę! Bracia, musimy pokonać przeszkodę postawioną przez zazdrosnych bogów i zająć należne nam miejsce! Jesteśmy panami żywych i nieumarłych, prawdziwymi panami stworzenia i nic nie powstrzyma nas przed osiągnięciem tego, czego szukamy.",
-      "lang": "Brothers, why does the ignorant world still consider death their enemy and end of life? It is not folly? Death is but the portal, not the end; it is but an artificial hindrance to ward off the lesser spirits from the realm of the mighty; and the gods put it up to prevent us Chosen from ascension to their own powers, and threaten their dominion. These shackles to our existence are unnatural; but it is natural to rebel and to seek power, yes, to gain power, to exert power! Brothers, we must overcome this hindrance set up by the jealous gods and claim our rightful place! We are the masters of the living and undead, the true lords of the created, and nothing shall stop us from achieving what we seek."
-    },
-    {
-      "key": "book.otbm.brought_to_the_island_of",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "brought to the Island of Destiny where you can choose your vocation.",
-      "pl": "brought do the Wyspa z Przeznaczenie where Lekarz rejonowyżesz wybierać twój profesja.",
-      "lang": "brought to the Island of Destiny where you can choose your vocation."
     }
   ],
   "length_ratio_issues": [

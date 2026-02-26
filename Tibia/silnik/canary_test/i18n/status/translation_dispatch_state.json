@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-02-26T20:13:38.304300Z",
-  "cycle_counter": 10760,
-  "last_target_key": "pt:items.json",
+  "timestamp": "2026-02-26T20:13:49.897023Z",
+  "cycle_counter": 10761,
+  "last_target_key": "nl:items.json",
   "last_pending_total": 163,
   "last_tier": 2,
   "last_cat_priority": 1,
@@ -36,7 +36,7 @@
   },
   "cache_hit": true,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 18,
+  "cache_cycle": 1,
   "no_progress_counts": {
     "sv:dataroot.json": 0,
     "sr:dataroot.json": 0,
@@ -299,7 +299,7 @@
     "tr:npc.json": 1,
     "fr:items.json": 1,
     "de:items.json": 1,
-    "pt:items.json": 0,
+    "pt:items.json": 1,
     "nl:items.json": 0,
     "tr:items.json": 0,
     "fr:monsters.json": 0,
@@ -471,7 +471,5 @@
       "cooldown_cycles": 30
     },
     "last_block": {}
-  },
-  "last_phase": "PRE_MIGRATION",
-  "last_phase_ts": "2026-02-26T21:13:49"
+  }
 }

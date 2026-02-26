@@ -1,17 +1,47 @@
 {
-  "category": "-",
+  "category": "nl",
   "cycle": 1,
   "eta_seconds": 0,
   "file": "-",
-  "generated_at_utc": "2026-02-26T20:13:48Z",
-  "message": "cycle start",
-  "phase": "IDLE",
+  "generated_at_utc": "2026-02-26T20:14:08Z",
+  "message": "cycle end",
+  "phase": "AUTO_TRANSLATE",
   "progress": {
     "done": 0,
     "total": 0,
     "unit": "units"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "nl",
+      "cycle": 1,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-02-26T20:13:52Z"
+    },
+    {
+      "action": "update",
+      "category": "nl",
+      "cycle": 1,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-02-26T20:13:50Z"
+    },
+    {
+      "action": "update",
+      "category": "nl",
+      "cycle": 1,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-02-26T20:13:50Z"
+    },
     {
       "action": "update",
       "category": "pt",
@@ -81,38 +111,8 @@
       "result": "ok",
       "stage": "auto_done",
       "t": "2026-02-26T20:13:13Z"
-    },
-    {
-      "action": "update",
-      "category": "fr",
-      "cycle": 16,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-02-26T20:13:12Z"
-    },
-    {
-      "action": "update",
-      "category": "fr",
-      "cycle": 16,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-02-26T20:13:11Z"
-    },
-    {
-      "action": "update",
-      "category": "ru",
-      "cycle": 15,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-02-26T20:12:44Z"
     }
   ],
-  "stage": "cycle_start",
+  "stage": "cycle_end",
   "status": "running"
 }

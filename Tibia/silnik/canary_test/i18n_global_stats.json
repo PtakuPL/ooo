@@ -1,8 +1,8 @@
 {
-  "total_cycles": 17,
+  "total_cycles": 1,
   "mode": "AUTO_TRANSLATE",
-  "category": "de",
-  "last_update": "2026-02-26T21:13:25.076258",
+  "category": "nl",
+  "last_update": "2026-02-26T21:14:08.113861",
   "migration": {
     "files_scanned": 15,
     "files_scanned_live": 15,
@@ -26,7 +26,7 @@
     "keys_to_sync": 67
   },
   "auto_translate": {
-    "language": "de",
+    "language": "nl",
     "json_file": "items.json",
     "keys_to_translate": 163,
     "guard_fail": 0,

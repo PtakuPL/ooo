@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-26T20:08:49.249093Z",
-  "cycle": 2,
+  "timestamp": "2026-02-26T20:14:51.186733Z",
+  "cycle": 1,
   "force": true,
-  "reason": "delta:translated_keys:518126->516717",
+  "reason": "recent_translated_gt_0",
   "metrics": {
     "translated_keys": 516717,
     "total_reference_keys": 3873584,

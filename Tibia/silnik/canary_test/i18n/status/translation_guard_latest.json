@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-02-26T20:13:51.987161Z",
+  "timestamp": "2026-02-26T20:14:48.728076Z",
   "cycle": 1,
-  "language": "nl",
-  "json_file": "items.json",
+  "language": "it",
+  "json_file": "monsters.json",
   "translated": 0,
   "placeholders": 0,
   "guard_fail": 0,

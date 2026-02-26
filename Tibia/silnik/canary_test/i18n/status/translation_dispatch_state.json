@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-26T20:13:49.897023Z",
-  "cycle_counter": 10761,
-  "last_target_key": "nl:items.json",
-  "last_pending_total": 163,
+  "timestamp": "2026-02-26T20:14:45.109595Z",
+  "cycle_counter": 10765,
+  "last_target_key": "it:monsters.json",
+  "last_pending_total": 53,
   "last_tier": 2,
-  "last_cat_priority": 1,
+  "last_cat_priority": 2,
   "candidates_count": 285,
   "active_candidates_count": 285,
   "skipped_backoff": 0,
@@ -53,7 +53,7 @@
     "ru:items.json": 1,
     "ro:items.json": 1,
     "it:monsters.json": 0,
-    "ru:monsters.json": 0,
+    "ru:monsters.json": 1,
     "ro:monsters.json": 0,
     "sv:npc.json": 0,
     "sr:npc.json": 0,
@@ -300,8 +300,8 @@
     "fr:items.json": 1,
     "de:items.json": 1,
     "pt:items.json": 1,
-    "nl:items.json": 0,
-    "tr:items.json": 0,
+    "nl:items.json": 1,
+    "tr:items.json": 1,
     "fr:monsters.json": 0,
     "de:monsters.json": 0,
     "pt:monsters.json": 0,
@@ -421,20 +421,20 @@
           "quests.json": 98.52
         }
       },
-      "ru": {
-        "allowed_domain": "npc.json",
-        "domain_coverages": {
-          "items.json": 29.14,
-          "npc.json": 5.8,
-          "quests.json": 99.51
-        }
-      },
       "cs": {
         "allowed_domain": "items.json",
         "domain_coverages": {
           "items.json": 9.12,
           "npc.json": 8.9,
           "quests.json": 98.69
+        }
+      },
+      "ru": {
+        "allowed_domain": "npc.json",
+        "domain_coverages": {
+          "items.json": 29.14,
+          "npc.json": 5.8,
+          "quests.json": 99.51
         }
       }
     },

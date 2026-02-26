@@ -404,7 +404,7 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-26T20:13:53Z",
+  "generated_at_utc": "2026-02-26T20:14:51Z",
   "global": {
     "en_keys_total": 74492,
     "errors_total": 6881,
@@ -415,15 +415,15 @@
     "i18n_global_stats": {
       "auto_translate": {
         "guard_fail": 0,
-        "json_file": "items.json",
-        "keys_to_translate": 163,
-        "language": "de",
+        "json_file": "monsters.json",
+        "keys_to_translate": 17,
+        "language": "ru",
         "recent_examples": [],
         "recent_translated": 0,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
-      "category": "de",
+      "category": "ru",
       "documentation": {
         "cursor": 18,
         "documented": 18,
@@ -466,7 +466,7 @@
         "new_files_detected": 0,
         "quality_issues": 6017
       },
-      "last_update": "2026-02-26T21:13:25.076258",
+      "last_update": "2026-02-26T21:14:29.157195",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -690,7 +690,7 @@
         "files_with_hits": 5423,
         "hits": 112434
       },
-      "total_cycles": 17,
+      "total_cycles": 3,
       "translation_sync": {
         "json_file": "npclib.json",
         "keys_to_sync": 67,
@@ -708,25 +708,25 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "nl",
-      "detail": "translated=0 guard_fail=0 strict_missing_key=0 strict_skipped_done=0",
+      "category": "it",
+      "detail": "stopping",
       "eta_seconds": 0,
-      "file": "items.json",
+      "file": "-",
       "phase": "AUTO_TRANSLATE",
       "progress": {
         "done": 0,
-        "total": 30,
-        "unit": "keys"
+        "total": 0,
+        "unit": "units"
       },
-      "stage": "auto_done"
+      "stage": "signal"
     },
     "cycle": 1,
-    "heartbeat_at_utc": "2026-02-26T20:13:52Z",
+    "heartbeat_at_utc": "2026-02-26T20:14:51Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",
-    "pid": 2495175,
-    "status": "running",
+    "pid": 2497494,
+    "status": "interrupted",
     "version": "unknown"
   }
 }

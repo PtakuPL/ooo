@@ -404,7 +404,7 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-02-26T20:06:51Z",
+  "generated_at_utc": "2026-02-26T20:08:15Z",
   "global": {
     "en_keys_total": 74492,
     "errors_total": 6881,
@@ -414,109 +414,12 @@
   "legacy": {
     "i18n_global_stats": {
       "auto_translate": {
-        "guard_fail": 1,
-        "json_file": "npc.json",
-        "keys_to_translate": 2320,
+        "guard_fail": 19,
+        "json_file": "html.json",
+        "keys_to_translate": 722,
         "language": "pl",
-        "recent_examples": [
-          {
-            "en": "In a just world, I would be captain of a grand ship, ... \\z\n\tThose pirates out there would now be my minions, and we would brave the seas and become the terror of the coastal towns! ... \\z\n\tIf only our plan had worked!",
-            "key": "npc.a_bearded_woman.stdmod_1",
-            "source": "tm",
-            "translated": "W sprawiedliwym świecie byłabym kapitanem wielkiego statku... \\z Ci piraci tam na zewnątrz byliby teraz moimi podwładnymi, a my przemierzalibyśmy morza i stalibyśmy się postrachem nadmorskich miast! ... \\z Gdyby tylko nasz plan się powiódł!"
-          },
-          {
-            "en": "Captain Kid sold his ship to buy pointless things like those insanely expensive locks for the cell doors. ... \\z\n\tHe said the canoes would do for a while. ... \\z\n\tI got the impression he was not overly sad to part with the ship because he was known to suffer a lot from seasickness.",
-            "key": "npc.a_bearded_woman.stdmod_2",
-            "source": "tm",
-            "translated": "Kapitan Kid sprzedał swój statek, żeby kupić bezsensowne rzeczy, na przykład te absurdalnie drogie zamki do drzwi celi... \\z Mówił, że czółna przez jakiś czas wystarczą... \\z Odniosłam wrażenie, że wcale nie było mu tak przykro rozstać się ze statkiem, bo podobno strasznie cierpiał na chorobę morską."
-          },
-          {
-            "en": "I'd have been a much better captain then Kid was. I played several captains on stage and I was good! ... \\z\n\tWhere Kid longed for the appreciation of his men, I would rule by fear and with an iron fist!",
-            "key": "npc.a_bearded_woman.stdmod_3",
-            "source": "tm",
-            "translated": "Byłabym o wiele lepszą kapitan niż Kid. Grałam na scenie kilka ról kapitanów i byłam świetna! ... \\z Gdy Kid łaknął uznania swoich ludzi, ja rządziłabym strachem i żelazną pięścią!"
-          },
-          {
-            "en": "The more stupid the people are, the easier it is to con them. ... \\z\n\tAnd the poorer they are the less means they have to get revenge. Har Har! ... \\z\n\tSo I make sure I ruin those I scam. Then they have other things to worry about than getting revenge on me.",
-            "key": "npc.a_bearded_woman.stdmod_6",
-            "source": "tm",
-            "translated": "Im głupsi są ludzie, tym łatwiej ich oszukać... \\z A im biedniejsi, tym mniej mają środków, by się zemścić. Har har! ... \\z Dlatego pilnuję, żeby zrujnować tych, których oszukuję. Wtedy mają inne zmartwienia niż zemsta na mnie."
-          },
-          {
-            "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
-            "key": "npc.alia.stdmod_25",
-            "source": "tm",
-            "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?"
-          },
-          {
-            "en": "Some call us nature spirits or peri but we prefer the term fae. Most of us are rather reclusive and live peaceful lives in our secret realm. We only leave it in order to protect our home. ... \\z\n\tWe tend to be secretive about our true nature, but I guess there was once an elven sage who visited our realm and put his experiences down on paper. There might be a book about the fae in the library of Ab'Dendriel.",
-            "key": "npc.alkestios.stdmod_7",
-            "source": "tm",
-            "translated": "Niektórzy nazywają nas duchami natury albo peri, ale my wolimy określenie fae. Większość z nas prowadzi raczej odosobnione i spokojne życie w naszej tajemnej krainie. Opuszczamy ją tylko po to, by chronić nasz dom... \\z Zwykle skrywamy naszą prawdziwą naturę, ale zdaje się, że dawno temu pewien elficki mędrzec odwiedził naszą krainę i opisał swoje doświadczenia na papierze. W bibliotece Ab'Dendriel może znajdować się książka o fae."
-          },
-          {
-            "en": "This is a special blessing I can bestow upon you once you have obtained at least one of the other blessings and which functions a bit differently. ... \\z\n\tIt only works when you're killed by other adventurers, which means that at least half of the damage leading to your death was caused by others, not by monsters or the environment. ... \\z\n\tThe {twist of fate} will not reduce the death penalty like the other blessings, but instead prevent you from losing your other blessings as well as the amulet of loss, should you wear one. It costs the same as the other blessings. ... \\z\n\tWould you like to receive that protection for a sacrifice of |PVPBLESSCOST| gold, child?",
-            "key": "npc.amanda.stdmod_35",
-            "source": "tm",
-            "translated": "To specjalne błogosławieństwo, którego mogę ci udzielić, gdy zdobędziesz przynajmniej jedno z pozostałych błogosławieństw, i działa ono nieco inaczej... \\\\z Działa tylko wtedy, gdy zabiją cię inni poszukiwacze przygód, co oznacza, że co najmniej połowa obrażeń prowadzących do twojej śmierci została zadana przez innych, a nie przez potwory czy otoczenie... \\\\z {twist of fate} nie zmniejsza kary za śmierć jak pozostałe błogosławieństwa, ale zamiast tego zapobiega utracie twoich innych błogosławieństw oraz amuletu straty, jeśli go nosisz. Kosztuje tyle samo, co pozostałe błogosławieństwa... \\\\z Czy chcesz otrzymać tę ochronę za ofiarę w wysokości |PVPBLESSCOST| sztuk złota, dziecko?"
-          },
-          {
-            "en": "Sure, where else. Everyone likes to meet my master, he is a great demon, isn't he? Your name is ...?",
-            "key": "npc.a_dead_bureaucrat1.say_1",
-            "source": "free_gt",
-            "translated": "Jasne, gdzie indziej. Każdy lubi spotykać mojego mistrza, jest wielkim demonem, prawda? Masz na imię...?"
-          },
-          {
-            "en": "Tell me if you liked it when you come back. What is your name?",
-            "key": "npc.a_dead_bureaucrat3.say_1",
-            "source": "free_gt",
-            "translated": "Po powrocie powiedz, czy Ci się podobało. Jak masz na imię?"
-          },
-          {
-            "en": "I'm not sure if you know what you are doing but anyway. Your name is?",
-            "key": "npc.a_dead_bureaucrat4.say_1",
-            "source": "free_gt",
-            "translated": "Nie jestem pewien, czy wiesz, co robisz, ale tak czy inaczej. Masz na imię?"
-          },
-          {
-            "en": "Stolen {seeds} need to be wrested from the {intruders} and planted where the soil still hungers. ...",
-            "key": "npc.a_weakened_forest_fury.multi_8",
-            "source": "free_gt",
-            "translated": "Skradzione {seeds} należy wyrwać {intruders} i zasadzić tam, gdzie wciąż brakuje gleby. ..."
-          },
-          {
-            "en": "The purest {water} from the purest well needs to be brought there and poured and {birds} that give life need to be brought back to the inner sanctum of the glade. ...",
-            "key": "npc.a_weakened_forest_fury.multi_9",
-            "source": "free_gt",
-            "translated": "Należy tam przywieźć i przelać najczystsze {water} z najczystszej studni, a {birds} dające życie należy sprowadzić z powrotem do wewnętrznego sanktuarium polany. ..."
-          },
-          {
-            "en": "The {Shapers} were an advanced civilisation, well versed in art, construction, language and exploration of our world in their time. ...",
-            "key": "npc.albinius.multi_1",
-            "source": "free_gt",
-            "translated": "{Shapers} byli zaawansowaną cywilizacją, dobrze zorientowaną w sztuce, budownictwie, języku i eksploracji naszego świata w swoich czasach. ..."
-          },
-          {
-            "en": "All right then, human. Have you ever heard of the {'Tears of Daraman'}? ...",
-            "key": "npc.alesar.multi_6",
-            "source": "free_gt",
-            "translated": "W porządku, człowieku. Czy kiedykolwiek słyszałeś o {'Tears of Daraman'}? ..."
-          },
-          {
-            "en": "All right then, human. Have you ever heard of the {'Tears of Daraman'}? ...",
-            "key": "npc.alesar_functions.multi_6",
-            "source": "free_gt",
-            "translated": "W porządku, człowieku. Czy kiedykolwiek słyszałeś o {'Tears of Daraman'}? ..."
-          },
-          {
-            "en": "Hi there |PLAYERNAME|, and welcome to the {magic} store.",
-            "key": "npc.alexander.greet_msg_1",
-            "source": "free_gt",
-            "translated": "Cześć |PLAYERNAME| i witaj w sklepie {magic}."
-          }
-        ],
-        "recent_translated": 16,
+        "recent_examples": [],
+        "recent_translated": 0,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
@@ -563,7 +466,7 @@
         "new_files_detected": 0,
         "quality_issues": 6017
       },
-      "last_update": "2026-02-26T21:06:11.928006",
+      "last_update": "2026-02-21T22:18:05.628990",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -787,7 +690,7 @@
         "files_with_hits": 5423,
         "hits": 112434
       },
-      "total_cycles": 21,
+      "total_cycles": 22,
       "translation_sync": {
         "json_file": "npclib.json",
         "keys_to_sync": 67,
@@ -805,24 +708,24 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "ru",
-      "detail": "translated=28 guard_fail=8 strict_missing_key=0 strict_skipped_done=158",
+      "category": "es",
+      "detail": "translated=0 guard_fail=0 strict_missing_key=0 strict_skipped_done=0",
       "eta_seconds": 0,
       "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "progress": {
-        "done": 28,
+        "done": 0,
         "total": 30,
         "unit": "keys"
       },
       "stage": "auto_done"
     },
-    "cycle": 22,
-    "heartbeat_at_utc": "2026-02-26T20:06:48Z",
+    "cycle": 1,
+    "heartbeat_at_utc": "2026-02-26T20:08:15Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",
-    "pid": 2464000,
+    "pid": 2484502,
     "status": "running",
     "version": "unknown"
   }

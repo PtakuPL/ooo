@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-26T19:50:56.989284Z",
+  "checked_at": "2026-02-26T20:08:31.149840Z",
   "issues_total": 518,
   "issues_by_type": {
     "consistency_in_language": 76,
@@ -2053,6 +2053,15 @@
       "lang": "Home of the ruthless seven!!!!!!!"
     },
     {
+      "key": "book.otbm.honour_and_glory_to_death",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Honour and glory to Death Rose, the mighty Warlord!",
+      "pl": "Cześć i chwała Death Rose, potężnemu Władcy Wojennemu!",
+      "lang": "Honour and glory to Death Rose, the mighty Warlord!"
+    },
+    {
       "key": "book.otbm.honour_to_whom_honour_is",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -2060,6 +2069,15 @@
       "en": "Honour to whom honour is due",
       "pl": "HoNieur do whom hoNieur jest due",
       "lang": "Honour to whom honour is due"
+    },
+    {
+      "key": "book.otbm.house_of_dermot_the_local",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "House of Dermot, the Local Chief",
+      "pl": "House of Dermot, lokalny wódz",
+      "lang": "House of Dermot, the Local Chief"
     },
     {
       "key": "book.otbm.house_of_wealth_bank_jewels",
@@ -2213,6 +2231,15 @@
       "en": "I discovered in the ancient scrolls of my",
       "pl": "I odkrywać w the starożytny zwój z mój",
       "lang": "I discovered in the ancient scrolls of my"
+    },
+    {
+      "key": "book.otbm.i_dont_think_the_dream",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I don't think the Dream Challenge is too difficult.",
+      "pl": "Nie sądzę, że Dream Challenge jest zbyt trudne.",
+      "lang": "I don't think the Dream Challenge is too difficult."
     },
     {
       "key": "book.otbm.i_have_collected_the_few",
@@ -3142,6 +3169,24 @@
       "lang": "Kingdom's Main Depot House"
     },
     {
+      "key": "book.otbm.knight_and_paladin_trainer",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knight and Paladin Trainer",
+      "pl": "Knight i Paladin Trener",
+      "lang": "Knight and Paladin Trainer"
+    },
+    {
+      "key": "book.otbm.knight_and_paladin_trainer_4f80eefa",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knight and Paladin Trainer",
+      "pl": "Knight i Paladin Trener",
+      "lang": "Knight and Paladin Trainer"
+    },
+    {
       "key": "book.otbm.known_parts_of_the_magic",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -3221,6 +3266,24 @@
       "en": "Legends of the Kha'labal II - The Wailing Bride, Pt. 2",
       "pl": "Legendy Kha'labala II – Płacząca panna młoda, cz. 2",
       "lang": "Legends of the Kha'labal II - The Wailing Bride, Pt. 2"
+    },
+    {
+      "key": "book.otbm.legends_of_the_khalabal_iii",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Legends of the Kha'labal III - Gha'Zuul the Necromancer",
+      "pl": "Legendy Kha'labal III - Gha'Zuul Nekromanta",
+      "lang": "Legends of the Kha'labal III - Gha'Zuul the Necromancer"
+    },
+    {
+      "key": "book.otbm.legends_of_the_khalabal_iv",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Legends of the Kha'labal IV - Drefia's Downfall",
+      "pl": "Legendy Kha'labal IV - Upadek Drefia",
+      "lang": "Legends of the Kha'labal IV - Drefia's Downfall"
     },
     {
       "key": "book.otbm.letter_to_darruk_the_practical",
@@ -3349,6 +3412,15 @@
       "lang": "Mahardis the mage, a pyromaniacal madman who fooled the princes of elemental fire to steal the secrets of the flame."
     },
     {
+      "key": "book.otbm.mail_room_depot_stores_bank",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mail Room, Depot, Stores, Bank",
+      "pl": "Poczta, Depot, sklepy, bank",
+      "lang": "Mail Room, Depot, Stores, Bank"
+    },
+    {
       "key": "book.otbm.man_is_a_rope_funambulating",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -3356,6 +3428,24 @@
       "en": "\"Man is a rope, funambulating between the animals and the gods.\" -  Tarrakosther Nimbos.",
       "pl": "„Człowiek jest liną poruszającą się pomiędzy zwierzętami a bogami”. - Tarrakosther Nimbo.",
       "lang": "\"Man is a rope, funambulating between the animals and the gods.\" -  Tarrakosther Nimbos."
+    },
+    {
+      "key": "book.otbm.manifest_of_the_yalahari_part",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Manifest of the Yalahari, Part I",
+      "pl": "Manifest Yalahari, część I",
+      "lang": "Manifest of the Yalahari, Part I"
+    },
+    {
+      "key": "book.otbm.manifest_of_the_yalahari_part_41b75d31",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Manifest of the Yalahari, Part II",
+      "pl": "Manifest Yalahari, część II",
+      "lang": "Manifest of the Yalahari, Part II"
     },
     {
       "key": "book.otbm.many_are_the_legends_concerning",
@@ -3716,6 +3806,15 @@
       "en": "Necromancy, a Philosophical Essay, by the Dark Brother Alonso de Iverra",
       "pl": "Nekromancja, esej filozoficzny autorstwa Mrocznego Brata Alonso de Iverra",
       "lang": "Necromancy, a Philosophical Essay, by the Dark Brother Alonso de Iverra"
+    },
+    {
+      "key": "book.otbm.necromants_nectar_is_crucial_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "'necromants nectar' is crucial to",
+      "pl": "'necromants nectar' ma kluczowe znaczenie",
+      "lang": "'necromants nectar' is crucial to"
     },
     {
       "key": "book.otbm.never_again_i_will_wear",
@@ -4679,105 +4778,6 @@
       "en": "Presumably the last of its kind in Tibia.",
       "pl": "Prawdopodobnie ostatni tego typu w Tibia.",
       "lang": "Presumably the last of its kind in Tibia."
-    },
-    {
-      "key": "book.otbm.princess_maharuh_was_said_to",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Princess Maharuh was said to be the kindest creature that ever walked the earth. She was dearly loved both by her people and by the djinns. One day as the princess wept because of all the pain and the evil ways of the world the djinns came to comfort her. And since they loved her so much they called upon their powers to grow a garden of magnificent beauty. From now on, Maharuh visited her enchanted garden whenever she was sad, and she never went there but a smile came to her face, and she found new strength to continue her work with renewed vigour and inspiration. But humans grow old and weary, and time did not fail to do its cruel work on fair Princess Maharuh. As she grew old her visits to the garden became less and less frequent and one day when she laid down to rest underneath her favourite tree she never woke up again. The garden was perhaps the most valuable thing she left behind, and it was certainly the one she had held dearest while still alive. But her people did not share her love for nature's beauty, and all they saw was a splendid example of horticulture that could be turned into money. Soon after her death a merchant caravan came, and the strangers offered great sums for the garden and for all that belonged to it. They dug out the trees and took the fruit because they believed they could rebuild the garden in their native land. However, soon after the caravan had left the city a terrible sandstorm arose. After the storm had cleared the caravan was gone and with it all that was left of the garden.",
-      "pl": "Mówiono, że księżniczka Maharuh jest najmilszą istotą, jaka kiedykolwiek chodziła po ziemi. Była bardzo kochana zarówno przez swój lud, jak i przez dżiny. Pewnego dnia, gdy księżniczka płakała z powodu całego bólu i zła tego świata, dżiny przyszły ją pocieszyć. A ponieważ tak bardzo ją kochali, wezwali swoje moce, aby wyhodować ogród o wspaniałej urodzie. Odtąd Maharuh odwiedzała swój zaczarowany ogród, ilekroć była smutna, i nigdy tam nie chodziła, ale uśmiech pojawiał się na jej twarzy i znajdowała nową siłę, aby kontynuować swoją pracę z nową energią i inspiracją. Ale ludzie starzeją się i są zmęczeni, a czas nie omieszkał dokonać swego okrutnego dzieła na pięknej księżniczce Maharuh. W miarę jak dorastała, jej wizyty w ogrodzie stawały się coraz rzadsze i pewnego dnia, kiedy położyła się, aby odpocząć pod ulubionym drzewem, już nigdy się nie obudziła. Ogród był być może najcenniejszą rzeczą, jaką po sobie pozostawiła, i z pewnością najdroższą jej rzeczą za życia. Jednak jej ludzie nie podzielali jej miłości do piękna natury i widzieli jedynie wspaniały przykład ogrodnictwa, które można było zamienić na pieniądze. Wkrótce po jej śmierci przybyła karawana kupiecka i nieznajomi ofiarowali ogromne sumy za ogród i wszystko, co do niego należało. Wykopali drzewa i zerwali owoce, bo wierzyli, że mogą odbudować ogród w swojej ojczyźnie. Jednak wkrótce po opuszczeniu miasta przez karawanę rozpętała się straszliwa burza piaskowa. Gdy burza ustąpiła, karawana zniknęła, a wraz z nią wszystko, co pozostało z ogrodu.",
-      "lang": "Princess Maharuh was said to be the kindest creature that ever walked the earth. She was dearly loved both by her people and by the djinns. One day as the princess wept because of all the pain and the evil ways of the world the djinns came to comfort her. And since they loved her so much they called upon their powers to grow a garden of magnificent beauty. From now on, Maharuh visited her enchanted garden whenever she was sad, and she never went there but a smile came to her face, and she found new strength to continue her work with renewed vigour and inspiration. But humans grow old and weary, and time did not fail to do its cruel work on fair Princess Maharuh. As she grew old her visits to the garden became less and less frequent and one day when she laid down to rest underneath her favourite tree she never woke up again. The garden was perhaps the most valuable thing she left behind, and it was certainly the one she had held dearest while still alive. But her people did not share her love for nature's beauty, and all they saw was a splendid example of horticulture that could be turned into money. Soon after her death a merchant caravan came, and the strangers offered great sums for the garden and for all that belonged to it. They dug out the trees and took the fruit because they believed they could rebuild the garden in their native land. However, soon after the caravan had left the city a terrible sandstorm arose. After the storm had cleared the caravan was gone and with it all that was left of the garden."
-    },
-    {
-      "key": "book.otbm.princess_theripat_was_the_beautiful",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Princess Theripat was the beautiful daughter of pharaoh Karkhaneses II. She grew up in the pharaoh's palace, living a seemingly careless life amidst the proverbial luxury and splendour of the Ankrahmunian court, and when her father arranged for her to marry a well-proven northern nobleman her happiness seemed complete. But things were not quite the way they seemed. Theripat, who was a headstrong and idealistic girl, had always despised life at the court, and with the help of her nurse she had made many forays into the city, concealing her true identity. On one of these excursions she had fallen in love with a handsome officer from the pharaoh's guard. The young man requited the love of what he thought was a simple woman, and eventually the two lovers had even married. When the pharaoh finally decided it was time for his daughter to marry she was already 6 months pregnant, and she knew that soon the truth could no longer be hidden. Frightened and confused, Theripat went through the wedding preparations without saying a word, but when the day had finally come she fled the court. The whole extent of the scandal soon became obvious.",
-      "pl": "Księżniczka Theripat była piękną córką faraona Karkhanesesa II. Dorastała w pałacu faraona, prowadząc pozornie beztroskie życie pośród przysłowiowego luksusu i przepychu ankrahmuńskiego dworu, a kiedy jej ojciec zaaranżował jej poślubienie sprawdzonego szlachcica z północy, jej szczęście wydawało się zupełne. Ale sprawy nie były do ​​końca takie, jakimi się wydawały. Theripat, uparta i idealistyczna dziewczyna, zawsze gardziła życiem na dworze i przy pomocy swojej pielęgniarki dokonywała wielu wypadów do miasta, ukrywając swoją prawdziwą tożsamość. Podczas jednej z takich wycieczek zakochała się w przystojnym oficerze ze straży faraona. Młody mężczyzna odwzajemnił miłość pozornie prostej kobiety i ostatecznie kochankowie pobrali się. Kiedy faraon w końcu zdecydował, że nadszedł czas, aby jego córka wyszła za mąż, była już w szóstym miesiącu ciąży i wiedziała, że ​​wkrótce prawdy nie da się już dłużej ukrywać. Przestraszona i zdezorientowana Theripat bez słowa przeprowadziła przygotowania do ślubu, ale kiedy wreszcie nadszedł ten dzień, uciekła z dworu. Wkrótce wyszła na jaw cała skala skandalu.",
-      "lang": "Princess Theripat was the beautiful daughter of pharaoh Karkhaneses II. She grew up in the pharaoh's palace, living a seemingly careless life amidst the proverbial luxury and splendour of the Ankrahmunian court, and when her father arranged for her to marry a well-proven northern nobleman her happiness seemed complete. But things were not quite the way they seemed. Theripat, who was a headstrong and idealistic girl, had always despised life at the court, and with the help of her nurse she had made many forays into the city, concealing her true identity. On one of these excursions she had fallen in love with a handsome officer from the pharaoh's guard. The young man requited the love of what he thought was a simple woman, and eventually the two lovers had even married. When the pharaoh finally decided it was time for his daughter to marry she was already 6 months pregnant, and she knew that soon the truth could no longer be hidden. Frightened and confused, Theripat went through the wedding preparations without saying a word, but when the day had finally come she fled the court. The whole extent of the scandal soon became obvious."
-    },
-    {
-      "key": "book.otbm.prison_isle_dont_enter_without",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Prison isle - don't enter without key!",
-      "pl": "Wyspa więzienna - nie wchodź bez klucza!",
-      "lang": "Prison isle - don't enter without key!"
-    },
-    {
-      "key": "book.otbm.private_forest_strictly_no_unauthorized",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Private forest - strictly no unauthorized hunting",
-      "pl": "Prywatny las – bezwzględny zakaz polowań bez zezwolenia",
-      "lang": "Private forest - strictly no unauthorized hunting"
-    },
-    {
-      "key": "book.otbm.protected_area_dont_enter",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Protected Area! Don't Enter!",
-      "pl": "Obszar chroniony! Nie wchodź!",
-      "lang": "Protected Area! Don't Enter!"
-    },
-    {
-      "key": "book.otbm.puldraks_wisdom_about_elves_pt",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Puldraks wisdom about elves Pt. 5",
-      "pl": "Mądrość Puldraka o elfach cz. 5",
-      "lang": "Puldraks wisdom about elves Pt. 5"
-    },
-    {
-      "key": "book.otbm.puldraks_wisdom_about_elves_pt_61744ff4",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Puldraks wisdom about elves Pt. 2",
-      "pl": "Mądrość Puldraka o elfach cz. 2",
-      "lang": "Puldraks wisdom about elves Pt. 2"
-    },
-    {
-      "key": "book.otbm.puldraks_wisdom_about_elves_pt_627ae3c5",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Puldraks wisdom about elves Pt. 1",
-      "pl": "Mądrość Puldraka o elfach cz. 1",
-      "lang": "Puldraks wisdom about elves Pt. 1"
-    },
-    {
-      "key": "book.otbm.puldraks_wisdom_about_elves_pt_d898bfe3",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Puldraks wisdom about elves Pt. 4",
-      "pl": "Mądrość Puldraka o elfach cz. 4",
-      "lang": "Puldraks wisdom about elves Pt. 4"
-    },
-    {
-      "key": "book.otbm.puldraks_wisdom_about_elves_pt_ed852998",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Puldraks wisdom about elves Pt. 3",
-      "pl": "Mądrość Puldraka o elfach cz. 3",
-      "lang": "Puldraks wisdom about elves Pt. 3"
-    },
-    {
-      "key": "book.otbm.puldraks_wisdom_about_minotaurs_pt",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Puldraks wisdom about minotaurs Pt. 3",
-      "pl": "Mądrość Puldraka o minotaurach cz. 3",
-      "lang": "Puldraks wisdom about minotaurs Pt. 3"
     }
   ],
   "length_ratio_issues": [

@@ -23326,3 +23326,4 @@
 {"timestamp": "2026-02-26T20:06:12.477507Z", "cycle": 21, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "status_update", "duration_ms": 53, "detail": "throttle_every=2"}
 {"timestamp": "2026-02-26T20:06:13.317424Z", "cycle": 21, "mode": "AUTO_TRANSLATE", "category": "pl", "phase": "cycle_total", "duration_ms": 28700, "detail": "delay=4"}
 {"timestamp": "2026-02-26T20:06:18.513244Z", "cycle": 22, "mode": "AUTO_TRANSLATE", "category": "ru", "phase": "dispatch", "duration_ms": 940, "detail": "count=npc.json"}
+{"timestamp": "2026-02-26T20:08:13.135246Z", "cycle": 1, "mode": "AUTO_TRANSLATE", "category": "es", "phase": "dispatch", "duration_ms": 1673, "detail": "count=npc.json"}

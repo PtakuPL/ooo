@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-26T20:06:44.255650Z",
+  "timestamp": "2026-02-26T20:08:17.502493Z",
   "last_cycle": 22,
   "cleanup_every": 3,
   "pending": {
@@ -125,7 +125,12 @@
       "monster.worker_golem.voice_2"
     ],
     "ro|monsters.json": [],
-    "es|npc.json": [],
+    "es|npc.json": [
+      "npc.a_sweaty_cyclops.stdmod_1",
+      "npc.a_sweaty_cyclops.voice_1",
+      "npc.barnabas_dee.say_5",
+      "npc.budrik.say_9"
+    ],
     "sv|npc.json": [
       "npc.a_fluffy_squirrel.farewell_msg_1",
       "npc.a_fluffy_squirrel.walkaway_msg_1",

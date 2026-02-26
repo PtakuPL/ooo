@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-26T19:50:50.410117Z",
+  "checked_at": "2026-02-26T20:08:19.596882Z",
   "issues_total": 570,
   "issues_by_type": {
     "consistency_in_language": 114,
@@ -1998,33 +1998,6 @@
       "lang": "Queue:"
     },
     {
-      "key": "arena.admin.stats.no_profile",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] No arena profile for {0}",
-      "pl": "[Arena Admin] Brak profilu areny dla {0}",
-      "lang": "[Arena Admin] No arena profile for {0}"
-    },
-    {
-      "key": "arena.admin.stats.header",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Stats for {0}:",
-      "pl": "[Arena Admin] Statystyki gracza {0}:",
-      "lang": "[Arena Admin] Stats for {0}:"
-    },
-    {
-      "key": "arena.admin.stats.mmr_line",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "MMR: {0} | Title: {1}",
-      "pl": "MMR: {0} | Tytuł: {1}",
-      "lang": "MMR: {0} | Title: {1}"
-    },
-    {
       "key": "arena.admin.stats.kd_line",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -2032,42 +2005,6 @@
       "en": "K/D: {0}/{1} ({2})",
       "pl": "Z/Ś: {0}/{1} ({2})",
       "lang": "K/D: {0}/{1} ({2})"
-    },
-    {
-      "key": "arena.admin.stats.points",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Arena Points: {0}",
-      "pl": "Punkty Areny: {0}",
-      "lang": "Arena Points: {0}"
-    },
-    {
-      "key": "arena.admin.setmmr.success",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Set {0}'s MMR to {1}",
-      "pl": "[Arena Admin] Ustawiono MMR gracza {0} na {1}",
-      "lang": "[Arena Admin] Set {0}'s MMR to {1}"
-    },
-    {
-      "key": "arena.admin.addpoints.success",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Added {0} Arena Points to {1}",
-      "pl": "[Arena Admin] Dodano {0} Punktów Areny graczowi {1}",
-      "lang": "[Arena Admin] Added {0} Arena Points to {1}"
-    },
-    {
-      "key": "arena.admin.reset.success",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Reset all arena stats for {0}",
-      "pl": "[Arena Admin] Zresetowano wszystkie statystyki areny dla {0}",
-      "lang": "[Arena Admin] Reset all arena stats for {0}"
     },
     {
       "key": "arena.admin.broadcast.sent",
@@ -2304,6 +2241,15 @@
       "lang": "Home of Eclesius, the Very Wise and also Noble Sorcerer."
     },
     {
+      "key": "book.otbm.necromants_nectar_is_crucial_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "'necromants nectar' is crucial to",
+      "pl": "'necromants nectar' ma kluczowe znaczenie",
+      "lang": "'necromants nectar' is crucial to"
+    },
+    {
       "key": "book.otbm.teleport_to_gnomebase_alpha",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -2320,42 +2266,6 @@
       "en": "The Djinn Wars V - Fa'hradin's Trick",
       "pl": "Wojny Dżinów V – Sztuczka Fa'hradina",
       "lang": "The Djinn Wars V - Fa'hradin's Trick"
-    },
-    {
-      "key": "book.otbm.the_djinn_wars_vi_a",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Djinn Wars VI - A War in Suspension",
-      "pl": "Wojny Dżinów VI – Wojna w zawieszeniu",
-      "lang": "The Djinn Wars VI - A War in Suspension"
-    },
-    {
-      "key": "book.otbm.the_djinn_wars_vii_malors",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Djinn Wars VII - Malor's Liberation",
-      "pl": "Wojny Dżinów VII – Wyzwolenie Malora",
-      "lang": "The Djinn Wars VII - Malor's Liberation"
-    },
-    {
-      "key": "book.otbm.the_fighting_pits_viewing_balcony",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The Fighting Pits - Viewing Balcony",
-      "pl": "Walczące Doły - Balkon Widokowy",
-      "lang": "The Fighting Pits - Viewing Balcony"
-    },
-    {
-      "key": "book.otbm.the_great_lava_falls_in",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The great lava falls in Hellgate",
-      "pl": "Wielka lawa spada do Hellgate",
-      "lang": "The great lava falls in Hellgate"
     },
     {
       "key": "book.otbm.the_jolly_seahorse_tavern",
@@ -2590,6 +2500,15 @@
       "en": "Balance:",
       "pl": "Balansować:",
       "lang": "Balance:"
+    },
+    {
+      "key": "web.tpl.characters.b_28",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "&#160;",
+      "pl": "`160;",
+      "lang": "&#160;"
     },
     {
       "key": "web.tpl.balance.th_3",
@@ -2916,78 +2835,6 @@
       "lang": "black jade cobra"
     },
     {
-      "key": "item.12555.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It seems to be a part of an outfit. Find all six parts to complete the outfit",
-      "pl": "Wygląda na część stroju. Znajdź wszystkie sześć części, aby skompletować strój",
-      "lang": "It seems to be a part of an outfit. Find all six parts to complete the outfit"
-    },
-    {
-      "key": "item.12556.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It seems to be a part of an outfit. Find all six parts to complete the outfit",
-      "pl": "Wygląda na część stroju. Znajdź wszystkie sześć części, aby skompletować strój",
-      "lang": "It seems to be a part of an outfit. Find all six parts to complete the outfit"
-    },
-    {
-      "key": "item.12801.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A hermit near Carlin might be able to tell you more about it",
-      "pl": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
-      "lang": "A hermit near Carlin might be able to tell you more about it"
-    },
-    {
-      "key": "item.12802.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A hermit near Carlin might be able to tell you more about it",
-      "pl": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
-      "lang": "A hermit near Carlin might be able to tell you more about it"
-    },
-    {
-      "key": "item.12813.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Granted by RadioTibia.com.br to hear the sounds of Tibia",
-      "pl": "Przyznane przez RadioTibia.com.br do słuchania dźwięków Tibia",
-      "lang": "Granted by RadioTibia.com.br to hear the sounds of Tibia"
-    },
-    {
-      "key": "item.12935.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "There is a hole in the ceiling.",
-      "pl": "W suficie jest dziura.",
-      "lang": "There is a hole in the ceiling."
-    },
-    {
-      "key": "item.14018.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "This formidable gem was hand-cut by |PLAYERNAME|.",
-      "pl": "Ten wspaniały klejnot został ręcznie wycięty przez |PLAYERNAME|.",
-      "lang": "This formidable gem was hand-cut by |PLAYERNAME|."
-    },
-    {
-      "key": "item.14032.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "This plant urgently needs some water, else it will wither away and disappear completely",
-      "pl": "Roślina ta pilnie potrzebuje wody, w przeciwnym razie uschnie i zniknie całkowicie",
-      "lang": "This plant urgently needs some water, else it will wither away and disappear completely"
-    },
-    {
       "key": "item.14141.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -2995,96 +2842,6 @@
       "en": "lava",
       "pl": "lawa",
       "lang": "lava"
-    },
-    {
-      "key": "item.14142.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A hermit near Carlin might be able to tell you more about it",
-      "pl": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
-      "lang": "A hermit near Carlin might be able to tell you more about it"
-    },
-    {
-      "key": "item.14143.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A hermit near Carlin might be able to tell you more about it",
-      "pl": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
-      "lang": "A hermit near Carlin might be able to tell you more about it"
-    },
-    {
-      "key": "item.14238.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "There is a hole in the ceiling.",
-      "pl": "W suficie jest dziura.",
-      "lang": "There is a hole in the ceiling."
-    },
-    {
-      "key": "item.14670.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It was awarded during the festivities of Tibia's 15th anniversary",
-      "pl": "Został on wręczony podczas uroczystości z okazji 15-lecia Tibia",
-      "lang": "It was awarded during the festivities of Tibia's 15th anniversary"
-    },
-    {
-      "key": "item.14671.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It was awarded during the festivities of Tibia's 15th anniversary",
-      "pl": "Został on wręczony podczas uroczystości z okazji 15-lecia Tibia",
-      "lang": "It was awarded during the festivities of Tibia's 15th anniversary"
-    },
-    {
-      "key": "item.14672.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It was awarded during the festivities of Tibia's 15th anniversary",
-      "pl": "Został on wręczony podczas uroczystości z okazji 15-lecia Tibia",
-      "lang": "It was awarded during the festivities of Tibia's 15th anniversary"
-    },
-    {
-      "key": "item.14673.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It was awarded during the festivities of Tibia's 15th anniversary",
-      "pl": "Został on wręczony podczas uroczystości z okazji 15-lecia Tibia",
-      "lang": "It was awarded during the festivities of Tibia's 15th anniversary"
-    },
-    {
-      "key": "item.14674.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It was awarded during the festivities of Tibia's 15th anniversary",
-      "pl": "Został on wręczony podczas uroczystości z okazji 15-lecia Tibia",
-      "lang": "It was awarded during the festivities of Tibia's 15th anniversary"
-    },
-    {
-      "key": "item.14675.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It was awarded during the festivities of Tibia's anniversary",
-      "pl": "Został on wręczony podczas uroczystości z okazji rocznicy Tibia",
-      "lang": "It was awarded during the festivities of Tibia's anniversary"
-    },
-    {
-      "key": "item.14769.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It shows your spells and can also shield against attacks when worn",
-      "pl": "Pokazuje twoje zaklęcia, a po założeniu może również chronić przed atakami",
-      "lang": "It shows your spells and can also shield against attacks when worn"
     },
     {
       "key": "item.15991.name",
@@ -3130,51 +2887,6 @@
       "en": "gill gugel",
       "pl": "skrzelowy gugel",
       "lang": "gill gugel"
-    },
-    {
-      "key": "item.16107.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It shows your spells and can also shield against attacks when worn",
-      "pl": "Pokazuje twoje zaklęcia, a po założeniu może również chronić przed atakami",
-      "lang": "It shows your spells and can also shield against attacks when worn"
-    },
-    {
-      "key": "item.16153.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A hermit near Carlin might be able to tell you more about it",
-      "pl": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
-      "lang": "A hermit near Carlin might be able to tell you more about it"
-    },
-    {
-      "key": "item.16154.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A hermit near Carlin might be able to tell you more about it",
-      "pl": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
-      "lang": "A hermit near Carlin might be able to tell you more about it"
-    },
-    {
-      "key": "item.16155.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A hermit near Carlin might be able to tell you more about it",
-      "pl": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
-      "lang": "A hermit near Carlin might be able to tell you more about it"
-    },
-    {
-      "key": "item.16251.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "A hermit near Carlin might be able to tell you more about it",
-      "pl": "Pustelnik koło Carlin może ci o tym więcej opowiedzieć",
-      "lang": "A hermit near Carlin might be able to tell you more about it"
     },
     {
       "key": "item.17109.desc",
@@ -5326,6 +5038,294 @@
       "en": "It can only hold one or two persons.",
       "pl": "Może pomieścić tylko jedną lub dwie osoby.",
       "lang": "It can only hold one or two persons."
+    },
+    {
+      "key": "item.21803.desc",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It smells a bit like rotten fish",
+      "pl": "Pachnie trochę jak zgniła ryba",
+      "lang": "It smells a bit like rotten fish"
+    },
+    {
+      "key": "item.21808.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "rest of life energy",
+      "pl": "resztę energii życiowej",
+      "lang": "rest of life energy"
+    },
+    {
+      "key": "item.21812.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "orb of Life Everchanging",
+      "pl": "kula Życia Wiecznie Zmiennego",
+      "lang": "orb of Life Everchanging"
+    },
+    {
+      "key": "item.21814.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "glooth capsule",
+      "pl": "kapsułka Glootha",
+      "lang": "glooth capsule"
+    },
+    {
+      "key": "item.21815.desc",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "A large chunk of magma. It is fiery hot but you could still throw it if you are quick.",
+      "pl": "Duży kawałek magmy. Jest strasznie gorąco, ale nadal możesz nim rzucić, jeśli się pospieszysz.",
+      "lang": "A large chunk of magma. It is fiery hot but you could still throw it if you are quick."
+    },
+    {
+      "key": "item.21816.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "tainted glooth capsule",
+      "pl": "skażona kapsułka glootha",
+      "lang": "tainted glooth capsule"
+    },
+    {
+      "key": "item.21817.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "glooth extractor",
+      "pl": "ekstraktor gloothu",
+      "lang": "glooth extractor"
+    },
+    {
+      "key": "item.21820.desc",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is made from steel spider silk",
+      "pl": "Wykonany jest ze stalowego jedwabiu pajęczego",
+      "lang": "It is made from steel spider silk"
+    },
+    {
+      "key": "item.21823.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "weaving loom",
+      "pl": "krosno tkackie",
+      "lang": "weaving loom"
+    },
+    {
+      "key": "item.21824.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "weaving loom",
+      "pl": "krosno tkackie",
+      "lang": "weaving loom"
+    },
+    {
+      "key": "item.21825.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "yarn-winding winch",
+      "pl": "wciągarka do nawijania przędzy",
+      "lang": "yarn-winding winch"
+    },
+    {
+      "key": "item.21833.desc",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It can be calibrated to give a measured amount of water to the ground.",
+      "pl": "Można go skalibrować tak, aby dostarczał odmierzoną ilość wody do gruntu.",
+      "lang": "It can be calibrated to give a measured amount of water to the ground."
+    },
+    {
+      "key": "item.21833.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "irrigation funnel",
+      "pl": "lejek nawadniający",
+      "lang": "irrigation funnel"
+    },
+    {
+      "key": "item.21834.desc",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It can test the water quality and distil it to pure water.",
+      "pl": "Może sprawdzić jakość wody i destylować ją do czystej wody.",
+      "lang": "It can test the water quality and distil it to pure water."
+    },
+    {
+      "key": "item.21836.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "edible rock fungus",
+      "pl": "jadalny grzyb skalny",
+      "lang": "edible rock fungus"
+    },
+    {
+      "key": "item.21839.desc",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Zeronex' secret formula is probably toxic",
+      "pl": "Sekretna formuła Zeronexu jest prawdopodobnie toksyczna",
+      "lang": "Zeronex' secret formula is probably toxic"
+    },
+    {
+      "key": "item.21839.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "pink gloud essence",
+      "pl": "esencja różowej mgiełki",
+      "lang": "pink gloud essence"
+    },
+    {
+      "key": "item.21840.desc",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It looks half gas, half liquid",
+      "pl": "Wygląda w połowie gazowo, w połowie płynnie",
+      "lang": "It looks half gas, half liquid"
+    },
+    {
+      "key": "item.21840.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "glooth plasma",
+      "pl": "gloothowa plazma",
+      "lang": "glooth plasma"
+    },
+    {
+      "key": "item.21841.desc",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You can guess what it's made of",
+      "pl": "Można się domyślić, z czego jest wykonany",
+      "lang": "You can guess what it's made of"
+    },
+    {
+      "key": "item.21842.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "edible rock fungi",
+      "pl": "jadalne grzyby skalne",
+      "lang": "edible rock fungi"
+    },
+    {
+      "key": "item.21853.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dinky moss floret",
+      "pl": "mały kwiat mchu",
+      "lang": "dinky moss floret"
+    },
+    {
+      "key": "item.21854.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dinky moss floret stalks",
+      "pl": "małe łodygi różyczek mchu",
+      "lang": "dinky moss floret stalks"
+    },
+    {
+      "key": "item.21855.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dinky moss floret stalks",
+      "pl": "małe łodygi różyczek mchu",
+      "lang": "dinky moss floret stalks"
+    },
+    {
+      "key": "item.21856.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dinky moss floret garland",
+      "pl": "girlanda z kwiatów mchu",
+      "lang": "dinky moss floret garland"
+    },
+    {
+      "key": "item.21857.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "interwoven moss florets",
+      "pl": "przeplatające się kwiaty mchu",
+      "lang": "interwoven moss florets"
+    },
+    {
+      "key": "item.21867.desc",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It looks as if it was torn by some sort of explosion.",
+      "pl": "Wygląda, jakby został rozerwany przez jakąś eksplozję.",
+      "lang": "It looks as if it was torn by some sort of explosion."
+    },
+    {
+      "key": "item.21868.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "badly made piece of cloth",
+      "pl": "źle wykonany kawałek materiału",
+      "lang": "badly made piece of cloth"
+    },
+    {
+      "key": "item.21872.desc",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It smells very astringent, so don't inhale too deeply",
+      "pl": "Ma bardzo cierpki zapach, dlatego nie należy wdychać zbyt głęboko",
+      "lang": "It smells very astringent, so don't inhale too deeply"
+    },
+    {
+      "key": "item.21873.desc",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is smooth and strong",
+      "pl": "Jest gładki i mocny",
+      "lang": "It is smooth and strong"
+    },
+    {
+      "key": "item.21877.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "milking fork",
+      "pl": "widelec do dojenia",
+      "lang": "milking fork"
+    },
+    {
+      "key": "item.21899.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "glooth glider tubes and wires",
+      "pl": "rurki i przewody szybowca glooth",
+      "lang": "glooth glider tubes and wires"
     }
   ],
   "length_ratio_issues": [

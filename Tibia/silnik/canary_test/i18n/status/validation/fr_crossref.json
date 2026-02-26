@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-26T19:50:51.292499Z",
+  "checked_at": "2026-02-26T20:08:20.671215Z",
   "issues_total": 483,
   "issues_by_type": {
     "consistency_in_language": 56,
@@ -4441,6 +4441,15 @@
       "lang": "Basteth wanted to come to aid her cousin, but her creatures, large and dreadful as they were simply could not walk ashore."
     },
     {
+      "key": "book.otbm.battle_tactics_for_demona_mazeforces",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battle tactics for Demona - Mazeforces",
+      "pl": "Taktyka walki dla Demona - Mazeforces",
+      "lang": "Battle tactics for Demona - Mazeforces"
+    },
+    {
       "key": "book.otbm.be_aware_that_our_kind",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -4460,15 +4469,6 @@
     },
     {
       "key": "book.otbm.because_the_gods_wanted_to",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "because the gods wanted to heal the wounds of the world, but because this powerleak frightened them that much. They further speculate that the withdrawel of the world was more an act of panic, an attempt not to lose complete control over",
-      "pl": "ponieważ bogowie chcieli uleczyć rany świata, ale dlatego, że ten wyciek mocy tak ich przeraził. Dalej spekulują, że wycofanie się świata było raczej aktem paniki, próbą nie utraty całkowitej kontroli",
-      "lang": "because the gods wanted to heal the wounds of the world, but because this powerleak frightened them that much. They further speculate that the withdrawel of the world was more an act of panic, an attempt not to lose complete control over"
-    },
-    {
-      "key": "book.otbm.because_the_gods_wanted_to_f5c45b0e",
       "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",

@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-26T19:50:56.003934Z",
+  "checked_at": "2026-02-26T20:08:30.265121Z",
   "issues_total": 440,
   "issues_by_type": {
     "consistency_in_language": 24,
@@ -1617,8 +1617,17 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Allen Richardson's Warehouse",
-      "pl": "Allen Richardson's Waredom",
+      "pl": "Magazyn Allena Richardsona",
       "lang": "Allen Richardson's Warehouse"
+    },
+    {
+      "key": "book.otbm.battle_tactics_for_demona_mazeforces",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battle tactics for Demona - Mazeforces",
+      "pl": "Taktyka walki dla Demona - Mazeforces",
+      "lang": "Battle tactics for Demona - Mazeforces"
     },
     {
       "key": "book.otbm.battletactics_for_mages_i",
@@ -1657,6 +1666,15 @@
       "lang": "Battletactics for Mages [IV]"
     },
     {
+      "key": "book.otbm.bezils_and_nezils_stuff_an",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bezils And Nezils Stuff An' Pawn Shop",
+      "pl": "Bezils i Nezils Rzeczy w lombardzie",
+      "lang": "Bezils And Nezils Stuff An' Pawn Shop"
+    },
+    {
       "key": "book.otbm.circular_canon_of_eternal_darkness",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -1682,6 +1700,24 @@
       "en": "City Cellar - Beware of the spiders",
       "pl": "Miasto Piwnica - Strzec się z the pająk",
       "lang": "City Cellar - Beware of the spiders"
+    },
+    {
+      "key": "book.otbm.crunors_finest_fruit_and_vegetable",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crunor's Finest - Fruit and Vegetable Shop",
+      "pl": "Crunor's Finest - Sklep z owocami i warzywami",
+      "lang": "Crunor's Finest - Fruit and Vegetable Shop"
+    },
+    {
+      "key": "book.otbm.crunors_finest_fruit_and_vegetable_1ed839d6",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crunor's Finest - Fruit and Vegetable Shop",
+      "pl": "Crunor's Finest - Sklep z owocami i warzywami",
+      "lang": "Crunor's Finest - Fruit and Vegetable Shop"
     },
     {
       "key": "book.otbm.dren_lo_explorer_hero_and",
@@ -1729,6 +1765,15 @@
       "lang": "Enter the teleporter to become a citizen of Carlin!"
     },
     {
+      "key": "book.otbm.enter_the_teleporter_to_become_da2a4eed",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Enter the teleporter to become a citizen of Port Hope!",
+      "pl": "Wejdź do teleportu i zostań obywatelem Port Hope!",
+      "lang": "Enter the teleporter to become a citizen of Port Hope!"
+    },
+    {
       "key": "book.otbm.enter_the_teleporter_to_become_f3bad5cd",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -1745,6 +1790,24 @@
       "en": "Enter the teleporter to become a citizen of Edron!",
       "pl": "Wejdź do teleportu i zostań obywatelem Edron!",
       "lang": "Enter the teleporter to become a citizen of Edron!"
+    },
+    {
+      "key": "book.otbm.everything_revolves_meradetos_of_drefia",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Everything revolves. - Meradetos of Drefia",
+      "pl": "Wszystko się kręci. - Meradetos z Drefia",
+      "lang": "Everything revolves. - Meradetos of Drefia"
+    },
+    {
+      "key": "book.otbm.fast_food_for_faster_heroes",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fast food for faster heroes!",
+      "pl": "Fast food dla szybszych bohaterów!",
+      "lang": "Fast food for faster heroes!"
     },
     {
       "key": "book.otbm.for_sorcerers_and_other_magicians",
@@ -1878,7 +1941,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Galuna's Fletcher Workshop",
-      "pl": "Galuna's Fletcher Warsztat",
+      "pl": "Warsztat Fletchera Galuny",
       "lang": "Galuna's Fletcher Workshop"
     },
     {
@@ -1916,6 +1979,15 @@
       "en": "Given the need for information on how to torture the creatures effectively, should a more valuable specimen fall into our hands, several new techniques were tried out. Most proved to be unsuccessful. Eventually both probands died at intended points of the experiment.",
       "pl": "Biorąc pod uwagę potrzebę uzyskania informacji na temat skutecznego torturowania stworzeń, gdyby w nasze ręce wpadł cenniejszy okaz, wypróbowano kilka nowych technik. Większość okazała się nieudana. Ostatecznie obaj probanci zmarli w zamierzonych momentach eksperymentu.",
       "lang": "Given the need for information on how to torture the creatures effectively, should a more valuable specimen fall into our hands, several new techniques were tried out. Most proved to be unsuccessful. Eventually both probands died at intended points of the experiment."
+    },
+    {
+      "key": "book.otbm.glorious_knights_guild_of_carlin",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Glorious Knights Guild of Carlin",
+      "pl": "Wspaniali Rycerze Guild z Carlin",
+      "lang": "Glorious Knights Guild of Carlin"
     },
     {
       "key": "book.otbm.glows_shades_and_hues_light",
@@ -1979,6 +2051,15 @@
       "en": "Got your rope and shovel? Well, have fun hunting!",
       "pl": "Masz linę i łopatę? Cóż, miłego polowania!",
       "lang": "Got your rope and shovel? Well, have fun hunting!"
+    },
+    {
+      "key": "book.otbm.granted_by_radiotibiacombr_to_hear",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Granted by RadioTibia.com.br to hear the sounds of Tibia.",
+      "pl": "Przyznane przez RadioTibia.com.br do słuchania dźwięków Tibia.",
+      "lang": "Granted by RadioTibia.com.br to hear the sounds of Tibia."
     },
     {
       "key": "book.otbm.graveyard_of_the_red_legion",
@@ -2278,6 +2359,15 @@
       "lang": "Home of the ruthless seven!!!!!!!"
     },
     {
+      "key": "book.otbm.honour_and_glory_to_death",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Honour and glory to Death Rose, the mighty Warlord!",
+      "pl": "Cześć i chwała Death Rose, potężnemu Władcy Wojennemu!",
+      "lang": "Honour and glory to Death Rose, the mighty Warlord!"
+    },
+    {
       "key": "book.otbm.honour_to_whom_honour_is",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -2285,6 +2375,15 @@
       "en": "Honour to whom honour is due",
       "pl": "HoNieur do whom hoNieur jest due",
       "lang": "Honour to whom honour is due"
+    },
+    {
+      "key": "book.otbm.house_of_dermot_the_local",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "House of Dermot, the Local Chief",
+      "pl": "House of Dermot, lokalny wódz",
+      "lang": "House of Dermot, the Local Chief"
     },
     {
       "key": "book.otbm.house_of_wealth_bank_jewels",
@@ -2438,6 +2537,15 @@
       "en": "I discovered in the ancient scrolls of my",
       "pl": "I odkrywać w the starożytny zwój z mój",
       "lang": "I discovered in the ancient scrolls of my"
+    },
+    {
+      "key": "book.otbm.i_dont_think_the_dream",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I don't think the Dream Challenge is too difficult.",
+      "pl": "Nie sądzę, że Dream Challenge jest zbyt trudne.",
+      "lang": "I don't think the Dream Challenge is too difficult."
     },
     {
       "key": "book.otbm.i_have_collected_the_few",
@@ -3367,6 +3475,24 @@
       "lang": "Kingdom's Main Depot House"
     },
     {
+      "key": "book.otbm.knight_and_paladin_trainer",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knight and Paladin Trainer",
+      "pl": "Knight i Paladin Trener",
+      "lang": "Knight and Paladin Trainer"
+    },
+    {
+      "key": "book.otbm.knight_and_paladin_trainer_4f80eefa",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knight and Paladin Trainer",
+      "pl": "Knight i Paladin Trener",
+      "lang": "Knight and Paladin Trainer"
+    },
+    {
       "key": "book.otbm.known_parts_of_the_magic",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -3446,6 +3572,24 @@
       "en": "Legends of the Kha'labal II - The Wailing Bride, Pt. 2",
       "pl": "Legendy Kha'labala II – Płacząca panna młoda, cz. 2",
       "lang": "Legends of the Kha'labal II - The Wailing Bride, Pt. 2"
+    },
+    {
+      "key": "book.otbm.legends_of_the_khalabal_iii",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Legends of the Kha'labal III - Gha'Zuul the Necromancer",
+      "pl": "Legendy Kha'labal III - Gha'Zuul Nekromanta",
+      "lang": "Legends of the Kha'labal III - Gha'Zuul the Necromancer"
+    },
+    {
+      "key": "book.otbm.legends_of_the_khalabal_iv",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Legends of the Kha'labal IV - Drefia's Downfall",
+      "pl": "Legendy Kha'labal IV - Upadek Drefia",
+      "lang": "Legends of the Kha'labal IV - Drefia's Downfall"
     },
     {
       "key": "book.otbm.letter_to_darruk_the_practical",
@@ -3574,6 +3718,15 @@
       "lang": "Mahardis the mage, a pyromaniacal madman who fooled the princes of elemental fire to steal the secrets of the flame."
     },
     {
+      "key": "book.otbm.mail_room_depot_stores_bank",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mail Room, Depot, Stores, Bank",
+      "pl": "Poczta, Depot, sklepy, bank",
+      "lang": "Mail Room, Depot, Stores, Bank"
+    },
+    {
       "key": "book.otbm.man_is_a_rope_funambulating",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -3581,6 +3734,24 @@
       "en": "\"Man is a rope, funambulating between the animals and the gods.\" -  Tarrakosther Nimbos.",
       "pl": "„Człowiek jest liną poruszającą się pomiędzy zwierzętami a bogami”. - Tarrakosther Nimbo.",
       "lang": "\"Man is a rope, funambulating between the animals and the gods.\" -  Tarrakosther Nimbos."
+    },
+    {
+      "key": "book.otbm.manifest_of_the_yalahari_part",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Manifest of the Yalahari, Part I",
+      "pl": "Manifest Yalahari, część I",
+      "lang": "Manifest of the Yalahari, Part I"
+    },
+    {
+      "key": "book.otbm.manifest_of_the_yalahari_part_41b75d31",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Manifest of the Yalahari, Part II",
+      "pl": "Manifest Yalahari, część II",
+      "lang": "Manifest of the Yalahari, Part II"
     },
     {
       "key": "book.otbm.many_are_the_legends_concerning",
@@ -3833,177 +4004,6 @@
       "en": "much you've already deposited.",
       "pl": "dużo, bardzo you've już przetwarzanie tekstułjedenćed.",
       "lang": "much you've already deposited."
-    },
-    {
-      "key": "book.otbm.mumification_a_case_study",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mumification, a case study",
-      "pl": "Mumifikacja, studium przypadku",
-      "lang": "Mumification, a case study"
-    },
-    {
-      "key": "book.otbm.mushroom_fields_downstairs",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mushroom Fields Downstairs",
-      "pl": "Pola grzybowe na dole",
-      "lang": "Mushroom Fields Downstairs"
-    },
-    {
-      "key": "book.otbm.mushrooms_come_in_many_different",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Mushrooms come in many different colors and shapes, at least ten different kinds are known.",
-      "pl": "Grzyby występują w wielu różnych kolorach i kształtach, znanych jest co najmniej dziesięć różnych rodzajów.",
-      "lang": "Mushrooms come in many different colors and shapes, at least ten different kinds are known."
-    },
-    {
-      "key": "book.otbm.my_offers_are_lyre_lute",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "My offers are lyre, lute, drum, and simple fanfare.",
-      "pl": "Moje oferty to lira, lutnia, bęben i proste fanfary.",
-      "lang": "My offers are lyre, lute, drum, and simple fanfare."
-    },
-    {
-      "key": "book.otbm.mysterious_way_it_created_this",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "mysterious way it created this entity. In any event, suddenly the enormous entity Tibiasula rose from the void and examined the two other godly beings. Fardos and Uman welcomed Tibiasula as their sister and admired her, because she was the perfect unity of the elements. Zathroth however fumed with silent hate, as he didn't want to share the void with one more entity.",
-      "pl": "tajemniczy sposób, w jaki stworzył tę istotę. W każdym razie nagle ogromna istota Tibiasula wyłoniła się z pustki i zbadała dwie inne boskie istoty. Fardos i Uman powitali Tibiasulę jako swoją siostrę i podziwiali ją, ponieważ stanowiła doskonałą jedność żywiołów. Zathroth jednak wściekł się cichą nienawiścią, ponieważ nie chciał dzielić pustki z jeszcze jedną istotą.",
-      "lang": "mysterious way it created this entity. In any event, suddenly the enormous entity Tibiasula rose from the void and examined the two other godly beings. Fardos and Uman welcomed Tibiasula as their sister and admired her, because she was the perfect unity of the elements. Zathroth however fumed with silent hate, as he didn't want to share the void with one more entity."
-    },
-    {
-      "key": "book.otbm.mystic_of_gate_souls_from",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "mystic of gate souls from planes of existence far, far away of Tibia could be called in order to assume the shape of heroes.",
-      "pl": "można by przywołać mistyka dusz bram z planów istnienia odległych od Tibia, aby przybrać postać bohaterów.",
-      "lang": "mystic of gate souls from planes of existence far, far away of Tibia could be called in order to assume the shape of heroes."
-    },
-    {
-      "key": "book.otbm.name_or_ask_about_their",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "name or ask about their job. Just try it out!",
-      "pl": "wymień lub zapytaj o swoją pracę. Po prostu wypróbuj!",
-      "lang": "name or ask about their job. Just try it out!"
-    },
-    {
-      "key": "book.otbm.nargor_is_a_hostile_rock",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Nargor is a hostile rock surrounded by treacherous reefs. Since it is uninhabitable and almost unreachable it is of no interest.",
-      "pl": "Nargor to nieprzyjazna skała otoczona zdradliwymi rafami. Ponieważ nie nadaje się do zamieszkania i jest prawie nieosiągalny, nie jest interesujący.",
-      "lang": "Nargor is a hostile rock surrounded by treacherous reefs. Since it is uninhabitable and almost unreachable it is of no interest."
-    },
-    {
-      "key": "book.otbm.nargor_is_a_hostile_rock_6eaadd68",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Nargor is a hostile rock surrounded by treacherous reefs. Since it is uninhabitable and almost unreachable it is of no interest.",
-      "pl": "Nargor to nieprzyjazna skała otoczona zdradliwymi rafami. Ponieważ nie nadaje się do zamieszkania i jest prawie nieosiągalny, nie jest interesujący.",
-      "lang": "Nargor is a hostile rock surrounded by treacherous reefs. Since it is uninhabitable and almost unreachable it is of no interest."
-    },
-    {
-      "key": "book.otbm.natural_toxins_and_venoms_in",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Natural toxins and venoms in the Darashian desert. Revised version, by Dark Priestess Hyllissa Wolfsbane.",
-      "pl": "Naturalne toksyny i jady na pustyni Darashian. Wersja poprawiona, autorstwa Mrocznej Kapłanki Hyllissy Wolfsbane.",
-      "lang": "Natural toxins and venoms in the Darashian desert. Revised version, by Dark Priestess Hyllissa Wolfsbane."
-    },
-    {
-      "key": "book.otbm.necromancer_halls_directions",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Necromancer Halls - Directions:",
-      "pl": "Necromancer Korytarz, przedpokój, hall - Kierunek:",
-      "lang": "Necromancer Halls - Directions:"
-    },
-    {
-      "key": "book.otbm.necromancy_a_philosophical_essay_by",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Necromancy, a Philosophical Essay, by the Dark Brother Alonso de Iverra",
-      "pl": "Nekromancja, esej filozoficzny autorstwa Mrocznego Brata Alonso de Iverra",
-      "lang": "Necromancy, a Philosophical Essay, by the Dark Brother Alonso de Iverra"
-    },
-    {
-      "key": "book.otbm.never_again_i_will_wear",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Never again I will wear that fancy armor and black shall be the color of my revenge.",
-      "pl": "Nigdy więcej nie założę tej wymyślnej zbroi, a czerń będzie kolorem mojej zemsty.",
-      "lang": "Never again I will wear that fancy armor and black shall be the color of my revenge."
-    },
-    {
-      "key": "book.otbm.never_enter_dungeons_without_a",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Never enter dungeons without a rope or you may be lost forever.",
-      "pl": "Nigdy nie wchodź do lochów bez liny, bo możesz zgubić się na zawsze.",
-      "lang": "Never enter dungeons without a rope or you may be lost forever."
-    },
-    {
-      "key": "book.otbm.never_enter_dungeons_without_a_4f479d0e",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Never enter dungeons without a rope or you may be lost forever.",
-      "pl": "Nigdy nie wchodź do lochów bez liny, bo możesz zgubić się na zawsze.",
-      "lang": "Never enter dungeons without a rope or you may be lost forever."
-    },
-    {
-      "key": "book.otbm.new_we_are_now_exchanging",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "NEW - we are now exchanging coins!",
-      "pl": "NEW - my są Niew exchanging monety!",
-      "lang": "NEW - we are now exchanging coins!"
-    },
-    {
-      "key": "book.otbm.next_ask_him_if_he",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Next, ask him if he thinks that the AUTHORITIES will handle the subject that troubles him. If he states that the authorities will solve the trouble, ask him if he thinks that they could have AVOIDED the trouble in the first place. If he confirms that the trouble could have been avoided, he is to be observed for heretical tendencies. If the suspect has yet not shown any heretic opinion, ask him why he thinks that the GODS would ALLOW that such things are happening. If he claims that he doesn't know, it is implied that he doubts this godly decision and is to be observed for heretical tendencies. If he comes up with an explanation that suggests that the gods lack the power to prevent that such a thing happens, than he is to be observed for heretical tendencies as well. If he answers that only the gods know the answer or that the gods had some plausible reason, like testing humanity, he may have no heretical tendencies at all.",
-      "pl": "Następnie zapytaj go, czy uważa, że ​​WŁADZE zajmą się niepokojącym go tematem. Jeśli stwierdzi, że władze rozwiążą problem, zapytaj go, czy jego zdaniem można było UNIKNĄĆ kłopotów. Jeżeli potwierdzi, że kłopotów można było uniknąć, należy go obserwować pod kątem skłonności heretyckich. Jeżeli podejrzany nie okazał jeszcze żadnych heretyckich poglądów, zapytaj go, dlaczego uważa, że ​​BÓG POZWOLI, aby takie rzeczy miały miejsce. Jeśli twierdzi, że nie wie, sugeruje się, że wątpi w tę boską decyzję i należy go obserwować pod kątem skłonności heretyckich. Jeśli przedstawi wyjaśnienie sugerujące, że bogom brakuje mocy, aby zapobiec takim wydarzeniom, to należy go również uważać za skłonności heretyckie. Jeśli odpowie, że tylko bogowie znają odpowiedź lub że bogowie mieli jakiś przekonujący powód, na przykład wystawienie ludzkości na próbę, może nie mieć żadnych heretyckich skłonności.",
-      "lang": "Next, ask him if he thinks that the AUTHORITIES will handle the subject that troubles him. If he states that the authorities will solve the trouble, ask him if he thinks that they could have AVOIDED the trouble in the first place. If he confirms that the trouble could have been avoided, he is to be observed for heretical tendencies. If the suspect has yet not shown any heretic opinion, ask him why he thinks that the GODS would ALLOW that such things are happening. If he claims that he doesn't know, it is implied that he doubts this godly decision and is to be observed for heretical tendencies. If he comes up with an explanation that suggests that the gods lack the power to prevent that such a thing happens, than he is to be observed for heretical tendencies as well. If he answers that only the gods know the answer or that the gods had some plausible reason, like testing humanity, he may have no heretical tendencies at all."
-    },
-    {
-      "key": "book.otbm.no_blood_priest_and_especially",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No blood priest, and especially Tomruk The Ruddy is not to be let in, under any pretenses, again!",
-      "pl": "Żadnego kapłana krwi, a zwłaszcza Tomruka Ruddy'ego, nie wolno ponownie wpuszczać pod żadnym pozorem!",
-      "lang": "No blood priest, and especially Tomruk The Ruddy is not to be let in, under any pretenses, again!"
-    },
-    {
-      "key": "book.otbm.no_entrance_room_under_investigation",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "No entrance! Room under investigation.",
-      "pl": "Żadnego wejścia! Pokój objęty dochodzeniem.",
-      "lang": "No entrance! Room under investigation."
     }
   ],
   "length_ratio_issues": [

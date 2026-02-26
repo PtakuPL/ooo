@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-26T19:50:52.709171Z",
+  "checked_at": "2026-02-26T20:08:22.602569Z",
   "issues_total": 467,
   "issues_by_type": {
     "consistency_in_language": 44,
@@ -762,15 +762,6 @@
       "lang": "Whistle-Blower"
     },
     {
-      "key": "actions.gamestore.msg_no_rookgaard",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Store don't have offers for rookgaard citizen.",
-      "pl": "Sklep nie ma ofert dla mieszkańców Rookgaardu.",
-      "lang": "Store don't have offers for rookgaard citizen."
-    },
-    {
       "key": "arena.title.elite",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1352,8 +1343,26 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Allen Richardson's Warehouse",
-      "pl": "Allen Richardson's Waredom",
+      "pl": "Magazyn Allena Richardsona",
       "lang": "Allen Richardson's Warehouse"
+    },
+    {
+      "key": "book.otbm.battle_tactics_for_demona_mazeforces",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battle tactics for Demona - Mazeforces",
+      "pl": "Taktyka walki dla Demona - Mazeforces",
+      "lang": "Battle tactics for Demona - Mazeforces"
+    },
+    {
+      "key": "book.otbm.bezils_and_nezils_stuff_an",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bezils And Nezils Stuff An' Pawn Shop",
+      "pl": "Bezils i Nezils Rzeczy w lombardzie",
+      "lang": "Bezils And Nezils Stuff An' Pawn Shop"
     },
     {
       "key": "book.otbm.contact_berenice_in_the_local",
@@ -1365,13 +1374,76 @@
       "lang": "Contact Berenice in the local Explorer Society outpost!"
     },
     {
+      "key": "book.otbm.crunors_finest_fruit_and_vegetable",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crunor's Finest - Fruit and Vegetable Shop",
+      "pl": "Crunor's Finest - Sklep z owocami i warzywami",
+      "lang": "Crunor's Finest - Fruit and Vegetable Shop"
+    },
+    {
+      "key": "book.otbm.crunors_finest_fruit_and_vegetable_1ed839d6",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Crunor's Finest - Fruit and Vegetable Shop",
+      "pl": "Crunor's Finest - Sklep z owocami i warzywami",
+      "lang": "Crunor's Finest - Fruit and Vegetable Shop"
+    },
+    {
+      "key": "book.otbm.enter_the_teleporter_to_become_da2a4eed",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Enter the teleporter to become a citizen of Port Hope!",
+      "pl": "Wejdź do teleportu i zostań obywatelem Port Hope!",
+      "lang": "Enter the teleporter to become a citizen of Port Hope!"
+    },
+    {
+      "key": "book.otbm.everything_revolves_meradetos_of_drefia",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Everything revolves. - Meradetos of Drefia",
+      "pl": "Wszystko się kręci. - Meradetos z Drefia",
+      "lang": "Everything revolves. - Meradetos of Drefia"
+    },
+    {
+      "key": "book.otbm.fast_food_for_faster_heroes",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fast food for faster heroes!",
+      "pl": "Fast food dla szybszych bohaterów!",
+      "lang": "Fast food for faster heroes!"
+    },
+    {
       "key": "book.otbm.galunas_fletcher_workshop",
       "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Galuna's Fletcher Workshop",
-      "pl": "Galuna's Fletcher Warsztat",
+      "pl": "Warsztat Fletchera Galuny",
       "lang": "Galuna's Fletcher Workshop"
+    },
+    {
+      "key": "book.otbm.glorious_knights_guild_of_carlin",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Glorious Knights Guild of Carlin",
+      "pl": "Wspaniali Rycerze Guild z Carlin",
+      "lang": "Glorious Knights Guild of Carlin"
+    },
+    {
+      "key": "book.otbm.granted_by_radiotibiacombr_to_hear",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Granted by RadioTibia.com.br to hear the sounds of Tibia.",
+      "pl": "Przyznane przez RadioTibia.com.br do słuchania dźwięków Tibia.",
+      "lang": "Granted by RadioTibia.com.br to hear the sounds of Tibia."
     },
     {
       "key": "book.otbm.hail_to_marianos_pall_the",
@@ -1381,6 +1453,15 @@
       "en": "Hail to Marianos Pall, the current hero of the Scrapper difficulty!",
       "pl": "Cześć Marianosowi Pallowi, obecnemu bohaterowi poziomu trudności Scrapper!",
       "lang": "Hail to Marianos Pall, the current hero of the Scrapper difficulty!"
+    },
+    {
+      "key": "book.otbm.i_dont_think_the_dream",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "I don't think the Dream Challenge is too difficult.",
+      "pl": "Nie sądzę, że Dream Challenge jest zbyt trudne.",
+      "lang": "I don't think the Dream Challenge is too difficult."
     },
     {
       "key": "book.otbm.i_trade_with_gems_pearls",
@@ -2193,6 +2274,24 @@
       "lang": "Kingdom's Main Depot House"
     },
     {
+      "key": "book.otbm.knight_and_paladin_trainer",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knight and Paladin Trainer",
+      "pl": "Knight i Paladin Trener",
+      "lang": "Knight and Paladin Trainer"
+    },
+    {
+      "key": "book.otbm.knight_and_paladin_trainer_4f80eefa",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knight and Paladin Trainer",
+      "pl": "Knight i Paladin Trener",
+      "lang": "Knight and Paladin Trainer"
+    },
+    {
       "key": "book.otbm.known_parts_of_the_magic",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -2272,6 +2371,24 @@
       "en": "Legends of the Kha'labal II - The Wailing Bride, Pt. 2",
       "pl": "Legendy Kha'labala II – Płacząca panna młoda, cz. 2",
       "lang": "Legends of the Kha'labal II - The Wailing Bride, Pt. 2"
+    },
+    {
+      "key": "book.otbm.legends_of_the_khalabal_iii",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Legends of the Kha'labal III - Gha'Zuul the Necromancer",
+      "pl": "Legendy Kha'labal III - Gha'Zuul Nekromanta",
+      "lang": "Legends of the Kha'labal III - Gha'Zuul the Necromancer"
+    },
+    {
+      "key": "book.otbm.legends_of_the_khalabal_iv",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Legends of the Kha'labal IV - Drefia's Downfall",
+      "pl": "Legendy Kha'labal IV - Upadek Drefia",
+      "lang": "Legends of the Kha'labal IV - Drefia's Downfall"
     },
     {
       "key": "book.otbm.letter_to_darruk_the_practical",
@@ -2400,6 +2517,15 @@
       "lang": "Mahardis the mage, a pyromaniacal madman who fooled the princes of elemental fire to steal the secrets of the flame."
     },
     {
+      "key": "book.otbm.mail_room_depot_stores_bank",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Mail Room, Depot, Stores, Bank",
+      "pl": "Poczta, Depot, sklepy, bank",
+      "lang": "Mail Room, Depot, Stores, Bank"
+    },
+    {
       "key": "book.otbm.man_is_a_rope_funambulating",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -2407,6 +2533,24 @@
       "en": "\"Man is a rope, funambulating between the animals and the gods.\" -  Tarrakosther Nimbos.",
       "pl": "„Człowiek jest liną poruszającą się pomiędzy zwierzętami a bogami”. - Tarrakosther Nimbo.",
       "lang": "\"Man is a rope, funambulating between the animals and the gods.\" -  Tarrakosther Nimbos."
+    },
+    {
+      "key": "book.otbm.manifest_of_the_yalahari_part",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Manifest of the Yalahari, Part I",
+      "pl": "Manifest Yalahari, część I",
+      "lang": "Manifest of the Yalahari, Part I"
+    },
+    {
+      "key": "book.otbm.manifest_of_the_yalahari_part_41b75d31",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Manifest of the Yalahari, Part II",
+      "pl": "Manifest Yalahari, część II",
+      "lang": "Manifest of the Yalahari, Part II"
     },
     {
       "key": "book.otbm.many_are_the_legends_concerning",
@@ -2767,6 +2911,15 @@
       "en": "Necromancy, a Philosophical Essay, by the Dark Brother Alonso de Iverra",
       "pl": "Nekromancja, esej filozoficzny autorstwa Mrocznego Brata Alonso de Iverra",
       "lang": "Necromancy, a Philosophical Essay, by the Dark Brother Alonso de Iverra"
+    },
+    {
+      "key": "book.otbm.necromants_nectar_is_crucial_to",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "'necromants nectar' is crucial to",
+      "pl": "'necromants nectar' ma kluczowe znaczenie",
+      "lang": "'necromants nectar' is crucial to"
     },
     {
       "key": "book.otbm.never_again_i_will_wear",
@@ -3948,6 +4101,15 @@
       "lang": "Recently, a fellow warlock found out, that you can release the power through lava."
     },
     {
+      "key": "book.otbm.recipe_of_the_day_virgin",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Recipe of the Day: Virgin Colada",
+      "pl": "Przepis dnia: Virgin Colada",
+      "lang": "Recipe of the Day: Virgin Colada"
+    },
+    {
       "key": "book.otbm.regarded_as_theirs_already_the",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -4126,168 +4288,6 @@
       "en": "s cometlike career in the necromancer city. Working with superhuman resolve and ruthlessly exterminating all real or imaginary competition, Gha'Zuul managed to rise to the top of the Drefian hierarchy within a few decades, and when a bizarre accident happened to the president of the High Council, Gha'Zuul took his place. He was the first necromancer to take this position while still being alive. However, being the foremost necromancer was still not enough to satisfy Gha'Zuul",
       "pl": "kometowa kariera w mieście nekromantów. Pracując z nadludzką determinacją i bezlitośnie eliminując wszelką prawdziwą i wyimaginowaną konkurencję, Gha'Zuul w ciągu kilku dekad zdołał wspiąć się na szczyt drefianskiej hierarchii, a kiedy dziwny wypadek przydarzył się przewodniczącemu Wysokiej Rady, Gha'Zuul zajął jego miejsce. Był pierwszym nekromantą, który objął to stanowisko jeszcze za życia. Jednak bycie czołowym nekromantą wciąż nie wystarczało, aby zadowolić Gha'Zuula",
       "lang": "s cometlike career in the necromancer city. Working with superhuman resolve and ruthlessly exterminating all real or imaginary competition, Gha'Zuul managed to rise to the top of the Drefian hierarchy within a few decades, and when a bizarre accident happened to the president of the High Council, Gha'Zuul took his place. He was the first necromancer to take this position while still being alive. However, being the foremost necromancer was still not enough to satisfy Gha'Zuul"
-    },
-    {
-      "key": "book.otbm.s_thirst_for_power_he",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "s thirst for power. He had great plans for Drefia. Under his rule the necromancer city would expand and conquer, taking over control of the north and perhaps of the whole of Darama! It was his idea to propose an alliance to the Efreet, and when the decisive battle drew near he personally raised the necromancers' troops to march against the Marid.",
-      "pl": "jest żądza władzy. Miał świetne plany na Drefia. Pod jego rządami miasto nekromantów będzie się rozwijać i podbijać, przejmując kontrolę nad północą, a być może nad całą Daramą! To był jego pomysł zaproponowanie Efreetowi sojuszu, a kiedy zbliżała się decydująca bitwa, osobiście powołał oddziały nekromantów do marszu przeciwko Maridom.",
-      "lang": "s thirst for power. He had great plans for Drefia. Under his rule the necromancer city would expand and conquer, taking over control of the north and perhaps of the whole of Darama! It was his idea to propose an alliance to the Efreet, and when the decisive battle drew near he personally raised the necromancers' troops to march against the Marid."
-    },
-    {
-      "key": "book.otbm.sadly_the_bliss_that_marked",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sadly, the bliss that marked the humans' early hours was not bound to last. The shadows which in those days held the rest of the world in their cold grip became aware of the humans and of their riches, and soon enough they began to plot the young race's destruction. Ferocious orcs built fleets and started raiding the south-western coastline, while the north was threatened by eerie undead who began to spread their insidious poison among the terrified humans. Worse, the corruption slowly found its way into many of the humans's hearts, and strife and armed conflict erupted within the community. Some humans even fell for the morbid attraction of undeath. They formed an evil cult of necromancers and went to the north to found a city of their own. This city was called Drefia, and it soon became a source of the foulest corruption.",
-      "pl": "Niestety, błogość, która towarzyszyła ludziom wczesnym rankiem, nie trwała długo. Cienie, które w tamtych czasach trzymały resztę świata w zimnym uścisku, uświadomiły sobie ludzi i ich bogactwa i wkrótce zaczęły planować zniszczenie młodej rasy. Dzikie orki zbudowały floty i rozpoczęły najazdy na południowo-zachodnie wybrzeże, podczas gdy północ była zagrożona przez niesamowitych nieumarłych, którzy zaczęli rozprzestrzeniać swoją podstępną truciznę wśród przerażonych ludzi. Co gorsza, zepsucie powoli przedostało się do serc wielu ludzi, a wewnątrz społeczności wybuchły konflikty zbrojne. Niektórzy ludzie dali się nawet nabrać chorobliwemu przyciąganiu nieumarłych. Utworzyli zły kult nekromantów i udali się na północ, aby założyć własne miasto. To miasto nazywało się Drefia i wkrótce stało się źródłem najohydniejszej korupcji.",
-      "lang": "Sadly, the bliss that marked the humans' early hours was not bound to last. The shadows which in those days held the rest of the world in their cold grip became aware of the humans and of their riches, and soon enough they began to plot the young race's destruction. Ferocious orcs built fleets and started raiding the south-western coastline, while the north was threatened by eerie undead who began to spread their insidious poison among the terrified humans. Worse, the corruption slowly found its way into many of the humans's hearts, and strife and armed conflict erupted within the community. Some humans even fell for the morbid attraction of undeath. They formed an evil cult of necromancers and went to the north to found a city of their own. This city was called Drefia, and it soon became a source of the foulest corruption."
-    },
-    {
-      "key": "book.otbm.safe_trade_rooms_safely_trade",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Safe Trade Rooms - safely trade and sort through your inventory here.",
-      "pl": "Bezpieczne pokoje handlowe – tutaj bezpiecznie handluj i sortuj swój ekwipunek.",
-      "lang": "Safe Trade Rooms - safely trade and sort through your inventory here."
-    },
-    {
-      "key": "book.otbm.sages_claim_that_we_owe",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sages claim that we owe vampires to the dark deeds of some gods or demons. Some say, Urgith created them as a new tool for his wars. Others believe that vampires are an undead variation created by some powerful but not godlike being, very likely by one of the Ruthless Seven. Some think vampires are made by the Lord of the undead, other see Verminor as their creator. Again others see vampirism as some kind of curse.",
-      "pl": "Mędrcy twierdzą, że wampiry zawdzięczamy mrocznym czynom niektórych bogów lub demonów. Niektórzy mówią, że Urgith stworzył je jako nowe narzędzie swoich wojen. Inni wierzą, że wampiry są nieumarłą odmianą stworzoną przez jakąś potężną, ale nie boską istotę, najprawdopodobniej przez jedną z Bezlitosnej Siedmiu. Niektórzy uważają, że wampiry zostały stworzone przez Pana Nieumarłych, inni uważają, że ich stwórcą jest Verminor. Jeszcze inni postrzegają wampiryzm jako swego rodzaju przekleństwo.",
-      "lang": "Sages claim that we owe vampires to the dark deeds of some gods or demons. Some say, Urgith created them as a new tool for his wars. Others believe that vampires are an undead variation created by some powerful but not godlike being, very likely by one of the Ruthless Seven. Some think vampires are made by the Lord of the undead, other see Verminor as their creator. Again others see vampirism as some kind of curse."
-    },
-    {
-      "key": "book.otbm.sailors_claim_to_have_travelled",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sailors claim to have travelled as far as the end of the world where the water pours down into nothingness. Although it is easily recognizable during  daylight it poses a special threat at night. To make matters worse, a spooky lighthouse sometimes appears out of nowhere to lure ships over the edge of the world. Whether it is really a lighthouse or some other source of light differs from story to story and remains to be determined.",
-      "pl": "Żeglarze twierdzą, że dotarli aż na koniec świata, gdzie woda rozlewa się w nicość. Chociaż jest łatwo rozpoznawalny w świetle dziennym, w nocy stwarza szczególne zagrożenie. Co gorsza, czasami nie wiadomo skąd pojawia się straszna latarnia morska, która zwabia statki za krańce świata. To, czy naprawdę jest to latarnia morska, czy inne źródło światła, różni się w zależności od historii i pozostaje do ustalenia.",
-      "lang": "Sailors claim to have travelled as far as the end of the world where the water pours down into nothingness. Although it is easily recognizable during  daylight it poses a special threat at night. To make matters worse, a spooky lighthouse sometimes appears out of nowhere to lure ships over the edge of the world. Whether it is really a lighthouse or some other source of light differs from story to story and remains to be determined."
-    },
-    {
-      "key": "book.otbm.sams_smithy_armors_and_weapons",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sam's Smithy - Armors and Weapons",
-      "pl": "Sam's Kuźnia - Armors i Broń",
-      "lang": "Sam's Smithy - Armors and Weapons"
-    },
-    {
-      "key": "book.otbm.sams_smithy_armors_and_weapons_930b4755",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sam's Smithy - Armors and Weapons",
-      "pl": "Sam's Kuźnia - Armors i Broń",
-      "lang": "Sam's Smithy - Armors and Weapons"
-    },
-    {
-      "key": "book.otbm.sams_smithy_weapons_and_armor",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sam's Smithy - weapons and armor",
-      "pl": "Sam's Kuźnia - broń i armor",
-      "lang": "Sam's Smithy - weapons and armor"
-    },
-    {
-      "key": "book.otbm.sams_smithy_weapons_and_armor_adbecfc5",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sam's Smithy - Weapons and Armor",
-      "pl": "Sam's Kuźnia - Broń i Armor",
-      "lang": "Sam's Smithy - Weapons and Armor"
-    },
-    {
-      "key": "book.otbm.say_hi_to_paulie_if",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Say \"hi\" to Paulie if you want to \"deposit all\" money you're carrying with you - that way it's safely stored and",
-      "pl": "Przywitaj się z Pauliem, jeśli chcesz „zdeponować wszystkie” pieniądze, które ze sobą nosisz — w ten sposób będą one bezpiecznie przechowywane i",
-      "lang": "Say \"hi\" to Paulie if you want to \"deposit all\" money you're carrying with you - that way it's safely stored and"
-    },
-    {
-      "key": "book.otbm.scientists_on_the_one_hand",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "scientists on the one hand, and the jesters and jokers on the other hand.",
-      "pl": "naukowcy z jednej strony, a błazny i żartownisie z drugiej.",
-      "lang": "scientists on the one hand, and the jesters and jokers on the other hand."
-    },
-    {
-      "key": "book.otbm.scrapper_rank_rewards_choose_wisely",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Scrapper Rank Rewards - Choose wisely!",
-      "pl": "Nagrody za rangę złomiarza – wybieraj mądrze!",
-      "lang": "Scrapper Rank Rewards - Choose wisely!"
-    },
-    {
-      "key": "book.otbm.scribble_sorry_there_can_be",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<scribble> ... sorry.. there can be only one tool shop in town.",
-      "pl": "<scribble> ...przepraszam.. w mieście może być tylko jeden warsztat narzędziowy.",
-      "lang": "<scribble> ... sorry.. there can be only one tool shop in town."
-    },
-    {
-      "key": "book.otbm.scribbled_below_followers_of_crunor",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "<scribbled below>: Followers of Crunor or other Tibian wannabe deities are NOT welcome.",
-      "pl": "<scribbled below>: Wyznawcy Crunora i innych niedoszłych bóstw Tibii NIE są mile widziani.",
-      "lang": "<scribbled below>: Followers of Crunor or other Tibian wannabe deities are NOT welcome."
-    },
-    {
-      "key": "book.otbm.seasickness_or_why_the_gods",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Seasickness or Why the Gods Don't Want Us to Travel the Oceans",
-      "pl": "Choroba morska lub dlaczego bogowie nie chcą, żebyśmy podróżowali po oceanach",
-      "lang": "Seasickness or Why the Gods Don't Want Us to Travel the Oceans"
-    },
-    {
-      "key": "book.otbm.secondly_the_demons_cannot_foresee",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Secondly, the demons cannot foresee the dates of these eruptions. For this reason, coordinated efforts to make use of the eruptions are delayed.",
-      "pl": "Po drugie, demony nie są w stanie przewidzieć dat tych erupcji. Z tego powodu skoordynowane wysiłki mające na celu wykorzystanie erupcji są opóźnione.",
-      "lang": "Secondly, the demons cannot foresee the dates of these eruptions. For this reason, coordinated efforts to make use of the eruptions are delayed."
-    },
-    {
-      "key": "book.otbm.secure_this_area_and_make",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Secure this area and make sure that no enemy can enter our land. In case of an heavy attack call reinforcement by using the drum.",
-      "pl": "Zabezpiecz ten teren i zadbaj o to, aby żaden wróg nie wkroczył na nasze ziemie. W przypadku ciężkiego ataku wezwij wzmocnienie za pomocą bębna.",
-      "lang": "Secure this area and make sure that no enemy can enter our land. In case of an heavy attack call reinforcement by using the drum."
-    },
-    {
-      "key": "book.otbm.see_also_my_offers_at",
-      "category": "books",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "See also my offers at the other board.",
-      "pl": "Zobacz także moje oferty na drugim forum.",
-      "lang": "See also my offers at the other board."
     }
   ],
   "length_ratio_issues": [

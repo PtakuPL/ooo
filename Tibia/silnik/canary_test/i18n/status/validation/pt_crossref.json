@@ -4,7 +4,7 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-26T19:50:55.558958Z",
+  "checked_at": "2026-02-26T20:08:29.786291Z",
   "issues_total": 419,
   "issues_by_type": {
     "consistency_in_language": 8,
@@ -760,51 +760,6 @@
       "en": "Museum Goer",
       "pl": "Muzeum Goer",
       "lang": "Museum Goer"
-    },
-    {
-      "key": "actions.outfit_items.msg_need_outfit",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You need the outfit for this part.",
-      "pl": "Potrzebujesz stroju, aby odblokować tę część.",
-      "lang": "You need the outfit for this part."
-    },
-    {
-      "key": "actions.outfit_items.msg_already_own",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You already own this outfit part.",
-      "pl": "Masz już tę część stroju.",
-      "lang": "You already own this outfit part."
-    },
-    {
-      "key": "actions.key_door.msg_wrong_key",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "The key does not match.",
-      "pl": "Klucz nie pasuje.",
-      "lang": "The key does not match."
-    },
-    {
-      "key": "actions.gamestore.msg_no_rookgaard",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Store don't have offers for rookgaard citizen.",
-      "pl": "Sklep nie ma ofert dla mieszkańców Rookgaardu.",
-      "lang": "Store don't have offers for rookgaard citizen."
-    },
-    {
-      "key": "actions.gamestore.msg_exhausted",
-      "category": "actions",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "You are exhausted.",
-      "pl": "Jesteś wyczerpany.",
-      "lang": "You are exhausted."
     },
     {
       "key": "arena.mode.1v1",
@@ -2076,6 +2031,15 @@
       "lang": "2. Molasses will be automatically extracted and distilled into rum"
     },
     {
+      "key": "book.otbm.2nd_floor_barnabas_dee_astronomer",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "2nd floor: Barnabas Dee, Astronomer and Sorcerer Spells Teacher.",
+      "pl": "Drugie piętro: Barnabas Dee, astronom i Sorcerer nauczyciel zaklęć.",
+      "lang": "2nd floor: Barnabas Dee, Astronomer and Sorcerer Spells Teacher."
+    },
+    {
       "key": "book.otbm.2nd_floor_exquisite_jewellery",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -2612,7 +2576,7 @@
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Allen Richardson's Warehouse",
-      "pl": "Allen Richardson's Waredom",
+      "pl": "Magazyn Allena Richardsona",
       "lang": "Allen Richardson's Warehouse"
     },
     {
@@ -3165,6 +3129,15 @@
       "lang": "Battle tactics for Demona"
     },
     {
+      "key": "book.otbm.battle_tactics_for_demona_mazeforces",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Battle tactics for Demona - Mazeforces",
+      "pl": "Taktyka walki dla Demona - Mazeforces",
+      "lang": "Battle tactics for Demona - Mazeforces"
+    },
+    {
       "key": "book.otbm.battletactics_for_mages_i",
       "category": "books",
       "type": "pl_reference_missing_translation",
@@ -3379,6 +3352,15 @@
       "en": "Beware! The tiles inside these rooms will bring you to the lion's foes!",
       "pl": "Strzec się! Płytki znajdujące się w tych pokojach zaprowadzą Cię do wrogów lwa!",
       "lang": "Beware! The tiles inside these rooms will bring you to the lion's foes!"
+    },
+    {
+      "key": "book.otbm.bezils_and_nezils_stuff_an",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bezils And Nezils Stuff An' Pawn Shop",
+      "pl": "Bezils i Nezils Rzeczy w lombardzie",
+      "lang": "Bezils And Nezils Stuff An' Pawn Shop"
     },
     {
       "key": "book.otbm.bite_squeeze_shake_enjoy",
@@ -3739,6 +3721,24 @@
       "en": "By Jonea, ancient council of the warlocks",
       "pl": "Jonea, starożytna rada czarnoksiężników",
       "lang": "By Jonea, ancient council of the warlocks"
+    },
+    {
+      "key": "book.otbm.by_the_way_the_summoning",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "By the way: The summoning of lesser creatures, the so-called 'reds', progressed comparatively well. Of course, these creatures are mere borderdwellers and may consequently not be considered true demons. However, it may prove that the development of summoning spells for 'reds' will prove a rewarding spin-off of demon summoning research.",
+      "pl": "Swoją drogą: przywoływanie pomniejszych stworzeń, tak zwanych 'reds', przebiegało stosunkowo dobrze. Oczywiście istoty te są zwykłymi mieszkańcami pogranicza i w związku z tym nie można ich uważać za prawdziwe demony. Może się jednak okazać, że rozwój zaklęć przywołujących dla 'reds' okaże się satysfakcjonującym uzupełnieniem badań nad przywoływaniem demonów.",
+      "lang": "By the way: The summoning of lesser creatures, the so-called 'reds', progressed comparatively well. Of course, these creatures are mere borderdwellers and may consequently not be considered true demons. However, it may prove that the development of summoning spells for 'reds' will prove a rewarding spin-off of demon summoning research."
+    },
+    {
+      "key": "book.otbm.caliph_family_burial_vault",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Caliph family burial vault",
+      "pl": "Krypta grobowa rodziny kalifów",
+      "lang": "Caliph family burial vault"
     }
   ],
   "length_ratio_issues": [

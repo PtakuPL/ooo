@@ -3,25 +3,25 @@
   "script_group": "latin",
   "total_keys": 74492,
   "translated": 60389,
-  "identical_to_en": 14436,
+  "identical_to_en": 14411,
   "placeholder_keys": 334,
   "coverage_pct": 81.1,
-  "issues_total": 304,
+  "issues_total": 295,
   "issues_by_type": {
-    "V1_placeholder_mismatch": 219,
+    "V1_placeholder_mismatch": 211,
     "V6_newline_mismatch": 41,
-    "V2_length_ratio": 25,
+    "V2_length_ratio": 24,
     "V4_artifact": 13,
     "V5_pipe_mismatch": 5,
     "V7_command_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 224,
+    "CRITICAL": 216,
     "HIGH": 13,
-    "MEDIUM": 67,
+    "MEDIUM": 66,
     "LOW": 0
   },
-  "score": 98.8,
+  "score": 98.9,
   "worst_keys": [
     {
       "key": "arena.npc.welcome",
@@ -32,54 +32,6 @@
     {
       "key": "html.online.html.text1",
       "category": "html",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat1.say_1",
-      "category": "npc",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat3.say_1",
-      "category": "npc",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "npc.a_dead_bureaucrat4.say_1",
-      "category": "npc",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "npc.a_weakened_forest_fury.multi_8",
-      "category": "npc",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "npc.a_weakened_forest_fury.multi_9",
-      "category": "npc",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "npc.albinius.multi_1",
-      "category": "npc",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "npc.alesar.multi_6",
-      "category": "npc",
-      "type": "V1_placeholder_mismatch",
-      "severity": "CRITICAL"
-    },
-    {
-      "key": "npc.alesar_functions.multi_6",
-      "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
     },
@@ -142,6 +94,54 @@
       "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.daniel_steelsoul.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.daniel_steelsoul.say_2",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.daniel_steelsoul.say_3",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.daniel_steelsoul.say_4",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.daniel_steelsoul.say_4",
+      "category": "npc",
+      "type": "V5_pipe_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.dedoras.multi_8",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.denominator.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.denominator.say_2",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     }
   ],
   "crossref": {
@@ -152,5 +152,5 @@
     "length_ratio": 0,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-26T19:50:55.200422Z"
+  "validated_at": "2026-02-26T20:08:29.397406Z"
 }

@@ -55,10 +55,12 @@ local function greetCallback(npc, creature, message)
 	local player = Player(creature)
 
 	if player:getStorageValue(HiddenThreats.QuestLine) < 1 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.corym_ratter.greet_msg_2", "npc.corym_ratter.greet_msg_3" }, 1000)
-		return false
+		npcHandler:setMessage(MESSAGE_GREET, {
+			"Welcome stranger! You might be surprised that I don't attack you immediately. The point is, that I think you could be useful to me. What you see in front of you is a great mine of the corym! ...",
+			"We dig up all what mother earth delivers to us, valuable natural resources. But the yield is getting worse and here I need your {help}.",
+		})
 	else
-		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.corym_ratter.greet_msg_1")
+		npcHandler:setMessage(MESSAGE_GREET, "We dig up all what mother earth delivers to us, valuable natural resources.")
 	end
 	return true
 end
@@ -72,14 +74,14 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "help") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_ratter.say_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_ratter.say_3")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			player:setStorageValue(Storage.Quest.U8_1.TibiaTales.DefaultStart, 1)
 			player:setStorageValue(HiddenThreats.QuestLine, 1)
 			player:setStorageValue(HiddenThreats.RatterDoor, 1)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_ratter.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_ratter.say_4")
 			npcHandler:setTopic(playerId, 2)
 		end
 	end
@@ -87,7 +89,7 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 -- Greeting message
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.corym_ratter.farewell_msg_1")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, |PLAYERNAME|.")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

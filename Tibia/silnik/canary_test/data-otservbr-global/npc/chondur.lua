@@ -56,34 +56,32 @@ local function handleAddonMessages(npcHandler, npc, creature, message, playerId)
 	if MsgContains(message, "addon") then
 		if player:hasOutfit(player:getSex() == PLAYERSEX_FEMALE and 158 or 154) then
 			if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell) >= 4 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ADjinnInLove) >= 5 and player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) >= 10 and player:getStorageValue(Storage.Quest.U7_8.ShamanOutfits.AddonStaffMask) < 1 then
-				npcHandler:sayLocalized("npc.chondur.say_1", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_39")
 				npcHandler:setTopic(playerId, 1)
 			elseif player:hasOutfit(158, 2) or player:hasOutfit(154, 2) and not (player:hasOutfit(158, 1) or player:hasOutfit(154, 1)) then
-				npcHandler:sayLocalized("npc.chondur.say_2", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_40")
 				npcHandler:setTopic(playerId, 3)
 			end
 		else
-			npcHandler:sayLocalized("npc.chondur.say_3", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_41")
 		end
 		return true
 	elseif MsgContains(message, "task") and npcHandler:getTopic(playerId) == 1 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_12")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_13")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_14")
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.chondur.say_42", "npc.chondur.say_43", "npc.chondur.say_44" })
 		npcHandler:setTopic(playerId, 2)
 		return true
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:sayLocalized("npc.chondur.say_4", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_45")
 		player:setStorageValue(Storage.Quest.U7_8.ShamanOutfits.AddonStaffMask, 1)
 		player:setStorageValue(Storage.Quest.U7_8.ShamanOutfits.MissionStaff, 1)
 		npcHandler:setTopic(playerId, 0)
 		return true
 	elseif MsgContains(message, "dworc voodoo doll") or MsgContains(message, "mandrake") then
-		npcHandler:sayLocalized("npc.chondur.say_5", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_46")
 		npcHandler:setTopic(playerId, 5)
 		return true
 	elseif MsgContains(message, "tribal masks") or MsgContains(message, "banana staff") then
-		npcHandler:sayLocalized("npc.chondur.say_6", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_47")
 		npcHandler:setTopic(playerId, 6)
 		return true
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 5 then
@@ -96,9 +94,9 @@ local function handleAddonMessages(npcHandler, npc, creature, message, playerId)
 			player:setStorageValue(Storage.Quest.U7_8.ShamanOutfits.MissionStaff, 2)
 			player:addAchievement("Way of the Shaman")
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
-			npcHandler:sayLocalized("npc.chondur.say_7", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_48")
 		else
-			npcHandler:sayLocalized("npc.chondur.say_8", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_49")
 		end
 		npcHandler:setTopic(playerId, 0)
 		return true
@@ -112,27 +110,24 @@ local function handleAddonMessages(npcHandler, npc, creature, message, playerId)
 			player:setStorageValue(Storage.Quest.U7_8.ShamanOutfits.MissionMask, 2)
 			player:addAchievement("Way of the Shaman")
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
-			npcHandler:sayLocalized("npc.chondur.say_9", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_50")
 		else
-			npcHandler:sayLocalized("npc.chondur.say_10", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_51")
 		end
 		npcHandler:setTopic(playerId, 0)
 		return true
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_9")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_10")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_11")
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.chondur.say_52", "npc.chondur.say_53", "npc.chondur.say_54" })
 		npcHandler:setTopic(playerId, 4)
 		return true
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 4 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_7")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_8")
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.chondur.say_55", "npc.chondur.say_56" })
 		player:setStorageValue(Storage.Quest.U7_8.ShamanOutfits.AddonStaffMask, 3)
 		player:setStorageValue(Storage.Quest.U7_8.ShamanOutfits.MissionMask, 1)
 		npcHandler:setTopic(playerId, 0)
 		return true
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) > 2 then
-		npcHandler:sayLocalized("npc.chondur.say_11", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_57")
 		npcHandler:setTopic(playerId, 0)
 	end
 
@@ -144,61 +139,57 @@ local function handleOtherMessages(npcHandler, npc, creature, message, playerId)
 
 	if MsgContains(message, "stampor") or MsgContains(message, "mount") then
 		if not player:hasMount(11) then
-			npcHandler:sayLocalized("npc.chondur.say_12", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_58")
 			npcHandler:setTopic(playerId, 7)
 		else
-			npcHandler:sayLocalized("npc.chondur.say_13", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_59")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 11 then
-			npcHandler:sayLocalized("npc.chondur.say_14", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_60")
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 12)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 12 then
-			npcHandler:sayLocalized("npc.chondur.say_15", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_61")
 			npcHandler:setTopic(playerId, 8)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 7 then
 			if player:removeItem(12312, 50) and player:removeItem(12314, 30) and player:removeItem(12313, 100) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_3")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_4")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_5")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_6")
+				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.chondur.say_62", "npc.chondur.say_63", "npc.chondur.say_64", "npc.chondur.say_65" })
 				player:addMount(11)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 			else
-				npcHandler:sayLocalized("npc.chondur.say_16", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_66")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 8 then
 			if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven) == 12 then
 				if player:removeItem(5810, 5) then
-					npcHandler:sayLocalized("npc.chondur.say_17", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_67")
 					player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.ReputationInSabrehaven, 13)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:sayLocalized("npc.chondur.say_18", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_68")
 					npcHandler:setTopic(playerId, 0)
 				end
 			end
 		elseif npcHandler:getTopic(playerId) == 9 then
-			npcHandler:sayLocalized("npc.chondur.say_19", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_69")
 			npcHandler:setTopic(playerId, 10)
 		elseif npcHandler:getTopic(playerId) == 10 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_1")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.multi_2")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.chondur.say_70", "npc.chondur.say_71" })
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 11 then
 			if player:getItemCount(4330) > 0 then
 				player:removeItem(4330, 1)
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell, 2)
-				npcHandler:sayLocalized("npc.chondur.say_20", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_72")
 				return true
 			else
-				npcHandler:sayLocalized("npc.chondur.say_21", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_73")
 				return true
 			end
 			npcHandler:setTopic(playerId, 0)
@@ -206,10 +197,10 @@ local function handleOtherMessages(npcHandler, npc, creature, message, playerId)
 			if player:getItemCount(3994) > 0 then
 				player:removeItem(3994, 1)
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell, 3)
-				npcHandler:sayLocalized("npc.chondur.say_22", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_74")
 				return true
 			else
-				npcHandler:sayLocalized("npc.chondur.say_23", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_75")
 				return true
 			end
 			npcHandler:setTopic(playerId, 0)
@@ -217,70 +208,70 @@ local function handleOtherMessages(npcHandler, npc, creature, message, playerId)
 			if player:getItemCount(4095) > 0 then
 				player:removeItem(4095, 1)
 				player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell, 4)
-				npcHandler:sayLocalized("npc.chondur.say_24", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_76")
 				return true
 			else
-				npcHandler:sayLocalized("npc.chondur.say_25", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_77")
 				return true
 			end
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "stake") then
 		if player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStake) == 11 then
-			npcHandler:sayLocalized("npc.chondur.say_26", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_78")
 			player:setStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStake, 12)
 			player:addAchievement("Blessed!")
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			return true
 		elseif player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStake) == 12 then
 			if player:getItemCount(5941) == 0 then
-				npcHandler:sayLocalized("npc.chondur.say_27", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_79")
 				return true
 			elseif player:getStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStakeWaitTime) >= os.time() then
-				npcHandler:sayLocalized("npc.chondur.say_28", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_80")
 				return true
 			else
 				player:setStorageValue(Storage.Quest.U7_8.FriendsAndTraders.TheBlessedStakeWaitTime, os.time() + 7 * 86400)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				player:removeItem(5941, 1)
 				player:addItem(5942, 1)
-				npcHandler:sayLocalized("npc.chondur.say_29", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_81")
 				return true
 			end
 		end
 	elseif MsgContains(message, "counterspell") then
 		if player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.DragahsSpellbook) == -1 then
-			npcHandler:sayLocalized("npc.chondur.say_30", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_82")
 			return true
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell) == -1 then
-			npcHandler:sayLocalized("npc.chondur.say_31", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_83")
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell, 0)
 			npcHandler:setTopic(playerId, 9)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell) == 1 then
-			npcHandler:sayLocalized("npc.chondur.say_32", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_84")
 			npcHandler:setTopic(playerId, 11)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell) == 2 then
-			npcHandler:sayLocalized("npc.chondur.say_33", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_85")
 			npcHandler:setTopic(playerId, 12)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell) == 3 then
-			npcHandler:sayLocalized("npc.chondur.say_34", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_86")
 			npcHandler:setTopic(playerId, 13)
 		elseif player:getStorageValue(Storage.Quest.U7_8.TheShatteredIsles.TheCounterspell) == 4 then
-			npcHandler:sayLocalized("npc.chondur.say_35", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_87")
 			return true
 		end
 	elseif MsgContains(message, "spellbook") then
 		if player:getItemCount(6120) > 0 then
-			npcHandler:sayLocalized("npc.chondur.say_36", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_88")
 			player:removeItem(6120, 1)
 			player:setStorageValue(Storage.Quest.U7_8.TheShatteredIsles.DragahsSpellbook, 1)
 			return true
 		else
-			npcHandler:sayLocalized("npc.chondur.say_37", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_89")
 			return true
 		end
 	elseif MsgContains(message, "energy field") then
-		npcHandler:sayLocalized("npc.chondur.say_38", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chondur.say_90")
 		return true
 	end
 
@@ -306,8 +297,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	return false
 end
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.chondur.greet_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.chondur.farewell_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "Be greeted, child.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye.")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
@@ -325,7 +316,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
+	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

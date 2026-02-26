@@ -90,7 +90,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 0)
 			else
 				npcHandler:setTopic(playerId, 0)
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.say_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ocelus.say_7")
 			end
 		end
 	elseif MsgContains(message, "love poem") then

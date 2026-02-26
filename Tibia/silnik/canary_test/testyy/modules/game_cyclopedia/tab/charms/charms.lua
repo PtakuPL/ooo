@@ -555,6 +555,7 @@ end
 local function setupCreatureList(widget, UI_BASE)
     if (widget.data.unlocked and not widget.data.asignedStatus) or isModernUI then
         UI_BASE.UnlockButton:setText(tr("otclient_modules.charms.tr_24"))
+        UI_BASE.UnlockButton.action = "select"
 
         local color = "#484848"
         for index, raceId in ipairs(Cyclopedia.Charms.Monsters) do
@@ -597,12 +598,20 @@ local function setupModernVersionUpgrade(widget, UI_BASE)
             [0] = "Unlock"
         }
         UI_BASE.UnlockButton:setText(tierButtons[tier])
+        if tier >= 3 then
+            UI_BASE.UnlockButton.action = "fully_unlocked"
+        elseif tier > 0 then
+            UI_BASE.UnlockButton.action = "upgrade"
+        else
+            UI_BASE.UnlockButton.action = "unlock"
+        end
         if tier >= 0 and tier < 3 then
             UI_BASE.UnlockButton:setEnabled(true)
         end
         UI_BASE.UnlockButton:getParent().data = widget.data
     else
         UI_BASE.UnlockButton:setText(tr("otclient_modules.charms.tr_23"))
+        UI_BASE.UnlockButton.action = "fully_unlocked"
         UI.InformationBase.verticalPanelUnLockClearChram.PriceBaseCharm.Value:setText(comma_value(0))
     end
 end
@@ -666,6 +675,7 @@ function Cyclopedia.selectCharm(widget, isChecked)
 
     if widget.data.asignedStatus then
         UI_BASE.UnlockButton:setText(tr("otclient_modules.charms.tr_22"))
+        UI_BASE.UnlockButton.action = "remove"
         local creatureWidget = g_ui.createWidget("CharmCreatureName", UI_BASE.CreatureList)
         creatureWidget:setText(formatCreatureName(g_things.getRaceData(widget.data.raceId).name))
         creatureWidget:setEnabled(false)
@@ -680,6 +690,7 @@ function Cyclopedia.selectCharm(widget, isChecked)
 
     if not widget.data.unlocked then
         UI_BASE.UnlockButton:setText(tr("otclient_modules.charms.tr_21"))
+        UI_BASE.UnlockButton.action = "unlock"
         UI_BASE.SearchEdit:setEnabled(false)
         if UI_BASE.SearchLabel then
             UI_BASE.SearchLabel:setEnabled(false)
@@ -781,10 +792,10 @@ end
 
 function Cyclopedia.actionCharmButton(widget)
     local confirmWindow
-    local type = widget:getText()
+    local action = widget.action or ""
     local data = widget:getParent().data
 
-    if type == "Unlock" then
+    if action == "unlock" then
         local function yesCallback()
             if isModernUI then
                 g_game.BuyCharmRune(0, data.id, 0)
@@ -822,7 +833,7 @@ function Cyclopedia.actionCharmButton(widget)
                 }, yesCallback, noCallback)
         end
     end
-    if type == "Select" or type == "Select Creature" then
+    if action == "select" then
         local function yesCallback()
             if isModernUI then
                 g_game.BuyCharmRune(1, data.id, Cyclopedia.Charms.SelectedCreature)
@@ -859,7 +870,7 @@ function Cyclopedia.actionCharmButton(widget)
         end
     end
 
-    if type == "Remove" then
+    if action == "remove" then
         local function yesCallback()
             g_game.BuyCharmRune(data.id, 2)
             if confirmWindow then
@@ -892,7 +903,7 @@ function Cyclopedia.actionCharmButton(widget)
                 }, yesCallback, noCallback)
         end
     end
-    if isModernUI and type:match("^Upgrade") then
+    if isModernUI and action == "upgrade" then
         local function yesCallback()
             g_game.BuyCharmRune(0, data.id, 0)
             if confirmWindow then
@@ -950,9 +961,9 @@ end
 
 function Cyclopedia.actionSelectCharmButton(widget)
     local confirmWindow
-    local type = widget:getText()
+    local action = widget.action or "select"
     local data = UI.InformationBase.data
-    if type == "Select" or type == "Select Creature" then
+    if action == "select" then
         local function yesCallback()
             if isModernUI then
                 g_game.BuyCharmRune(1, data.id, Cyclopedia.Charms.SelectedCreature)

@@ -97,7 +97,21 @@ void UITextEdit::drawSelf(const DrawPoolType drawPane)
         g_drawPool.setDrawOrder(m_textDrawOrder);
         if (m_font->isTTF()) {
             // For TTF fonts we draw via the font drawText path (it handles shaping + atlas batching)
-            m_font->drawText(m_drawText, m_drawArea, m_color, m_textAlign);
+            // Apply scroll offset: shift drawArea up by virtualOffset.y so text scrolls
+            Rect ttfDrawArea = m_drawArea;
+            if (m_textVirtualOffset.y > 0 || m_textVirtualOffset.x > 0) {
+                ttfDrawArea.translate(-m_textVirtualOffset.x, -m_textVirtualOffset.y);
+            }
+            // Set clip rect to prevent text from rendering outside the widget
+            // Note: onlyOnce=false because TTF drawText may issue multiple draw calls (one per atlas batch)
+            Rect clipArea = m_rect;
+            clipArea.expandLeft(-m_padding.left);
+            clipArea.expandRight(-m_padding.right);
+            clipArea.expandBottom(-m_padding.bottom);
+            clipArea.expandTop(-m_padding.top);
+            g_drawPool.setClipRect(clipArea);
+            m_font->drawText(m_drawText, ttfDrawArea, m_color, m_textAlign);
+            g_drawPool.resetClipRect();
         } else {
             if (m_drawTextColors.empty() || m_colorCoordsBuffer.empty()) {
                 g_drawPool.addTexturedCoordsBuffer(texture, m_coordsBuffer, m_color);
@@ -247,9 +261,14 @@ void UITextEdit::update(const bool focusCursor, bool disableAreaUpdate)
     setProp(PropCursorInRange, false);
     if (focusCursor && getProp(PropAutoScroll)) {
         if (m_font->isTTF()) {
-            // For TTF fonts, we skip detailed glyph-based scrolling
-            // The cursor is always considered in range since TTF rendering handles clipping
-            m_textVirtualOffset = {};
+            // For TTF multiline: allow scrolling via virtualOffset (managed by scrollbar)
+            // Only reset offset if text fits within the visible area
+            if (textBoxSize.height() <= getPaddingRect().height()) {
+                m_textVirtualOffset.y = 0;
+            }
+            if (textBoxSize.width() <= getPaddingRect().width()) {
+                m_textVirtualOffset.x = 0;
+            }
             setProp(PropCursorInRange, true);
         } else if (m_cursorPos > 0 && textLength > 0) {
             // Bitmap font path: m_cursorPos is byte-based for compatibility
@@ -288,7 +307,13 @@ void UITextEdit::update(const bool focusCursor, bool disableAreaUpdate)
         }
     } else {
         if (m_font->isTTF()) {
-            // TTF fonts: cursor is always in range
+            // TTF fonts: allow scrolling, cursor is always in range
+            if (textBoxSize.height() <= getPaddingRect().height()) {
+                m_textVirtualOffset.y = 0;
+            }
+            if (textBoxSize.width() <= getPaddingRect().width()) {
+                m_textVirtualOffset.x = 0;
+            }
             setProp(PropCursorInRange, true);
         } else if (m_cursorPos > 0 && textLength > 0) {
             const Rect virtualRect(m_textVirtualOffset, m_rect.size() - Size(2 * m_padding.left + m_padding.right, 0)); // previous rendered virtual rect
@@ -320,7 +345,7 @@ void UITextEdit::update(const bool focusCursor, bool disableAreaUpdate)
 
     Size totalSize = textBoxSize;
     if (totalSize.width() < m_textVirtualSize.width())
-        totalSize.setWidth(m_textVirtualSize.height());
+        totalSize.setWidth(m_textVirtualSize.width());
     if (totalSize.height() < m_textVirtualSize.height())
         totalSize.setHeight(m_textVirtualSize.height());
     if (m_textTotalSize != totalSize) {

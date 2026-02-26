@@ -34,7 +34,7 @@
     "w2": 3,
     "w3": 1
   },
-  "cache_hit": false,
+  "cache_hit": true,
   "cache_ttl_cycles": 5,
   "cache_cycle": 23,
   "no_progress_counts": {

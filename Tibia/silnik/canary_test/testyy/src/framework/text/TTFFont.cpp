@@ -7,6 +7,7 @@
 #include <exception>
 // OTClient rendering helpers
 #include <framework/core/logger.h>
+#include <framework/core/eventdispatcher.h>    // g_mainDispatcher — GL-thread event queue
 #include <framework/graphics/drawpoolmanager.h> // g_drawPool
 #include <framework/graphics/coordsbuffer.h>
 #include <framework/graphics/graphics.h>

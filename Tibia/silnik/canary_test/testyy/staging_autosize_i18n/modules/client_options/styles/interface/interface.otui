@@ -1,0 +1,155 @@
+UIWidget
+  anchors.fill: parent
+  visible: false
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: parent.top
+    min-height: 22
+    text-vertical-auto-resize: true
+
+    OptionCheckBox
+      id: enableHighlightMouseTarget
+      !text: tr("otclient_modules.interface_otui.tr_15")
+      text-wrap: true
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    min-height: 22
+    text-vertical-auto-resize: true
+
+    $mobile:
+      height: 0
+      margin-top: 0
+      visible: false
+  
+    OptionCheckBox
+      id: showLeftPanel
+      !text: tr("otclient_modules.interface_otui.tr_14")
+      text-wrap: true
+
+      $mobile:
+        visible: false
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    min-height: 22
+    text-vertical-auto-resize: true
+  
+    OptionCheckBox
+      id: showRightExtraPanel
+      !text: tr("otclient_modules.interface_otui.tr_13")
+      text-wrap: true
+      
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    min-height: 22
+    text-vertical-auto-resize: true
+
+    OptionCheckBox
+      id: showActionbar
+      !text: tr("otclient_modules.interface_otui.tr_12")
+      text-wrap: true
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    min-height: 22
+    text-vertical-auto-resize: true
+    margin-top: 5
+
+    OptionCheckBoxMarked
+      id: showSpellGroupCooldowns
+      !text: tr("otclient_modules.interface_otui.tr_11")
+      !tooltip: tr("otclient_modules.interface_otui.tr_10")
+      text-wrap: true
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    height: 32
+  
+    Label
+      !text: tr("otclient_modules.interface_otui.tr_9")
+      anchors.left: parent.left
+      margin-left: 18
+      color: #c0c0c0ff
+      anchors.verticalCenter: parent.verticalCenter
+
+    QtComboBox
+      id: crosshair
+      width: 120
+      margin-left: 10
+      anchors.verticalCenter: prev.verticalCenter
+      anchors.left: prev.right
+      mouse-scroll: false
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    height: 86
+
+    Label
+      !text: tr("otclient_modules.interface_otui.tr_8")
+      anchors.left: parent.left
+      anchors.top: parent.top
+      margin-left: 10
+      margin-top: -25
+      color: #c0c0c0ff
+      anchors.verticalCenter: parent.verticalCenter
+
+    QtComboBox
+      id: frames
+      width: 120
+      margin-left: 10
+      anchors.verticalCenter: prev.verticalCenter
+      anchors.left: prev.right
+      mouse-scroll: false
+
+      
+    UIWidget
+      id: toolTipWidget
+      image-source: /images/icons/show_gui_help_grey
+      size: 12 12  
+      anchors.right: parent.right
+      margin-right: 3
+      !tooltip: tr("otclient_modules.interface_otui.tr_7")
+      
+    OptionCheckBoxMarked
+      id: showExpiryInInvetory
+      anchors.top: frames.bottom
+      margin-top: 5
+      !text: tr("otclient_modules.interface_otui.tr_6")
+      !tooltip: tr("otclient_modules.interface_otui.tr_5")
+      text-wrap: true
+
+    OptionCheckBoxMarked
+      id: showExpiryInContainers
+      anchors.top: prev.bottom
+      margin-top: 5
+      !text: tr("otclient_modules.interface_otui.tr_4")
+      !tooltip: tr("otclient_modules.interface_otui.tr_3")
+      text-wrap: true
+
+    OptionCheckBoxMarked
+      id: showExpiryOnUnusedItems
+      anchors.top: prev.bottom
+      margin-top: 5
+      !text: tr("otclient_modules.interface_otui.tr_2")
+      !tooltip: tr("otclient_modules.interface_otui.tr_1")
+      text-wrap: true
+      enabled: false

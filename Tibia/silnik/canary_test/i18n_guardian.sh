@@ -15,10 +15,13 @@ PROFILES_DIR="$WORK_DIR/guardian_profiles"
 POLICY_STATE_FILE="$WORK_DIR/.guardian_policy_state.json"
 RESTART_STATE_FILE="$WORK_DIR/.guardian_restart_state.json"
 RESTART_METRICS_FILE="$WORK_DIR/i18n/status/guardian_restart_metrics.json"
-GIT_TRACK_BRANCH="${GIT_TRACK_BRANCH:-$(git -C "$REPO_ROOT" rev-parse --abbrev-ref HEAD 2>/dev/null || echo master)}"
+GIT_TRACK_BRANCH="${GIT_TRACK_BRANCH:-master}"
 if [ -z "$GIT_TRACK_BRANCH" ] || [ "$GIT_TRACK_BRANCH" = "HEAD" ]; then
     GIT_TRACK_BRANCH="master"
 fi
+STATUS_PUSH_BRANCH="${STATUS_PUSH_BRANCH:-master}"
+STATUS_PUSH_REMOTE="${STATUS_PUSH_REMOTE:-origin}"
+STATUS_PUSH_REPO="${STATUS_PUSH_REPO:-$WORK_DIR/.guardian_status_push_repo}"
 
 # Co ile sekund wykonywać push dashboardu
 PUSH_INTERVAL_SECONDS="${PUSH_INTERVAL_SECONDS:-240}"
@@ -43,6 +46,9 @@ MANUAL_START_CONTEXT_TS_FILE="$WORK_DIR/.guardian_manual_context_last_ts"
 MANUAL_START_CONTEXT_LOG_INTERVAL_SEC="${GUARDIAN_MANUAL_CONTEXT_LOG_INTERVAL_SEC:-300}"
 MANUAL_START_LIMIT_LOG_TS_FILE="$WORK_DIR/.guardian_manual_limit_last_log_ts"
 MANUAL_START_LIMIT_LOG_INTERVAL_SEC="${GUARDIAN_MANUAL_LIMIT_LOG_INTERVAL_SEC:-60}"
+GUARDIAN_ENFORCE_TRANSLATION_CONTRACT="${GUARDIAN_ENFORCE_TRANSLATION_CONTRACT:-true}"
+GUARDIAN_REQUIRE_USE_GT="${GUARDIAN_REQUIRE_USE_GT:-true}"
+GUARDIAN_REQUIRE_NO_GIT="${GUARDIAN_REQUIRE_NO_GIT:-true}"
 
 export HOME="/home/ptaku"
 export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
@@ -52,6 +58,105 @@ cd "$WORK_DIR" || exit 1
 
 log_guardian() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> "$GUARDIAN_LOG"
+}
+
+sync_status_files_into_push_repo() {
+    local src dst rel
+    local -a files
+    files=(
+        "I18N_STATUS.md"
+        "Tibia/silnik/canary_test/I18N_STATUS.md"
+        "Tibia/silnik/canary_test/.github/worker_commands.txt"
+        "Tibia/silnik/canary_test/worker_commands.txt"
+    )
+
+    for rel in "${files[@]}"; do
+        src="$REPO_ROOT/$rel"
+        dst="$STATUS_PUSH_REPO/$rel"
+        if [ -f "$src" ]; then
+            mkdir -p "$(dirname "$dst")"
+            cp "$src" "$dst"
+        fi
+    done
+}
+
+clone_status_push_repo() {
+    local remote_url="${1:-}"
+    [ -n "$remote_url" ] || return 1
+
+    rm -rf "$STATUS_PUSH_REPO" 2>/dev/null || true
+    git clone --depth 1 --branch "$STATUS_PUSH_BRANCH" --single-branch "$remote_url" "$STATUS_PUSH_REPO" >/dev/null 2>&1 || return 1
+    return 0
+}
+
+push_status_snapshot() {
+    local now_ts="${1:-$(date +%s)}"
+    local remote_url migrated
+
+    remote_url=$(git -C "$REPO_ROOT" remote get-url "$STATUS_PUSH_REMOTE" 2>/dev/null || true)
+    if [ -z "$remote_url" ]; then
+        log_guardian "❌ Push nieudany (branch: $STATUS_PUSH_BRANCH) — brak remote '$STATUS_PUSH_REMOTE'"
+        return 1
+    fi
+
+    if [ ! -d "$STATUS_PUSH_REPO/.git" ]; then
+        if ! clone_status_push_repo "$remote_url"; then
+            log_guardian "❌ Push nieudany (branch: $STATUS_PUSH_BRANCH) — clone status-repo failed"
+            return 1
+        fi
+    fi
+
+    rm -f "$STATUS_PUSH_REPO/.git/index.lock" 2>/dev/null || true
+    git -C "$STATUS_PUSH_REPO" fetch "$STATUS_PUSH_REMOTE" "$STATUS_PUSH_BRANCH" -q 2>/dev/null || true
+    if ! git -C "$STATUS_PUSH_REPO" checkout "$STATUS_PUSH_BRANCH" -q >/dev/null 2>&1; then
+        log_guardian "⚠️ Status repo checkout failed — odtwarzam czysty clone ($STATUS_PUSH_BRANCH)"
+        if ! clone_status_push_repo "$remote_url"; then
+            log_guardian "❌ Push nieudany (branch: $STATUS_PUSH_BRANCH) — clone retry failed"
+            return 1
+        fi
+        git -C "$STATUS_PUSH_REPO" fetch "$STATUS_PUSH_REMOTE" "$STATUS_PUSH_BRANCH" -q 2>/dev/null || true
+        if ! git -C "$STATUS_PUSH_REPO" checkout "$STATUS_PUSH_BRANCH" -q >/dev/null 2>&1; then
+            log_guardian "❌ Push nieudany (branch: $STATUS_PUSH_BRANCH) — checkout failed"
+            return 1
+        fi
+    fi
+    git -C "$STATUS_PUSH_REPO" pull --ff-only "$STATUS_PUSH_REMOTE" "$STATUS_PUSH_BRANCH" -q 2>/dev/null || true
+
+    sync_status_files_into_push_repo
+
+    git -C "$STATUS_PUSH_REPO" add \
+        I18N_STATUS.md \
+        Tibia/silnik/canary_test/I18N_STATUS.md \
+        Tibia/silnik/canary_test/.github/worker_commands.txt \
+        Tibia/silnik/canary_test/worker_commands.txt \
+        2>/dev/null || true
+
+    if git -C "$STATUS_PUSH_REPO" diff --cached --quiet 2>/dev/null; then
+        echo "$now_ts" > "$LAST_PUSH_TS_FILE"
+        return 0
+    fi
+
+    migrated=$(python3 - "$REPO_ROOT/Tibia/silnik/canary_test/i18n_file_status.json" <<'PY'
+import json
+import sys
+path = sys.argv[1]
+try:
+    d = json.load(open(path, encoding="utf-8"))
+    print(len([f for f, i in d.get("files", {}).items() if i.get("overall_status") == "completed"]))
+except Exception:
+    print("?")
+PY
+)
+
+    git -C "$STATUS_PUSH_REPO" commit -m "📊 I18N status (guardian) | migrated=${migrated} | $(date -u +%H:%M:%S) UTC" >/dev/null 2>&1 || true
+    if git -C "$STATUS_PUSH_REPO" push "$STATUS_PUSH_REMOTE" "$STATUS_PUSH_BRANCH" >/dev/null 2>&1; then
+        log_guardian "📤 Push do GitHub OK (branch: $STATUS_PUSH_BRANCH)"
+        echo "$now_ts" > "$LAST_PUSH_TS_FILE"
+        return 0
+    fi
+
+    log_guardian "❌ Push nieudany (branch: $STATUS_PUSH_BRANCH)"
+    return 1
 }
 
 GUARDIAN_PID_FILE="$WORK_DIR/.guardian.pid"
@@ -317,6 +422,32 @@ release_daemon_lock() {
     fi
 }
 
+ensure_daemon_lock_ownership() {
+    local source="${1:-manual}"
+    local owner_pid owner_source
+
+    if [ -d "$DAEMON_LOCK_DIR" ]; then
+        owner_pid=$(cat "$DAEMON_LOCK_DIR/pid" 2>/dev/null || echo "")
+        owner_source=$(cat "$DAEMON_LOCK_DIR/source" 2>/dev/null || echo "")
+        if [ "$owner_pid" = "$$" ]; then
+            date +%s > "$DAEMON_LOCK_DIR/ts" 2>/dev/null || true
+            echo "$source" > "$DAEMON_LOCK_DIR/source" 2>/dev/null || true
+            return 0
+        fi
+        if [ -n "$owner_pid" ] && guardian_daemon_owner_alive "$owner_pid"; then
+            log_guardian "🛑 Guardian daemon utracił lock (owner_pid=$owner_pid, owner_source=${owner_source:-unknown}). Zatrzymuję pid=$$."
+            write_daemon_state "blocked" "$source" "$$" "lost_daemon_lock" "$owner_pid" "$owner_source" "0"
+            return 1
+        fi
+    fi
+
+    if acquire_daemon_lock "$source"; then
+        return 0
+    fi
+    log_guardian "🛑 Guardian daemon nie odzyskał locka (source=$source). Zatrzymuję pid=$$."
+    return 1
+}
+
 load_guardian_profile() {
     RUN_MODE="translations_general"
     RUN_BATCH="20"
@@ -325,7 +456,7 @@ load_guardian_profile() {
     RUN_NO_GIT="true"
     RUN_TRANSLATIONS_ONLY="true"
     RUN_LANGS=""
-    RUN_TRANSLATE_LIMIT="80"
+    RUN_TRANSLATE_LIMIT="0"
     RUN_PARALLEL_LANGS="2"
     RUN_AUTO_MODE_ON_MIGRATION_PENDING="true"
     RUN_GLOBAL_QUALITY_MODE="false"
@@ -1093,16 +1224,54 @@ worker_running() {
     return 1
 }
 
+worker_translation_contract_ok() {
+    local pid cmdline
+    local -a missing
+    missing=()
+
+    pid=$(cat "$PID_FILE" 2>/dev/null || echo "")
+    [[ "$pid" =~ ^[0-9]+$ ]] || {
+        echo "pid_missing_or_invalid"
+        return 1
+    }
+    [ -r "/proc/$pid/cmdline" ] || {
+        echo "worker_cmdline_unreadable(pid=$pid)"
+        return 1
+    }
+
+    cmdline=$(tr '\0' ' ' < "/proc/$pid/cmdline" 2>/dev/null || true)
+    [ -n "$cmdline" ] || {
+        echo "worker_cmdline_empty(pid=$pid)"
+        return 1
+    }
+
+    if truthy "$GUARDIAN_ENFORCE_TRANSLATION_CONTRACT"; then
+        [[ "$cmdline" == *"--translations-only"* ]] || missing+=("translations_only")
+    fi
+    if truthy "$GUARDIAN_REQUIRE_USE_GT"; then
+        [[ "$cmdline" == *"--use-gt"* ]] || missing+=("use_gt")
+    fi
+    if truthy "$GUARDIAN_REQUIRE_NO_GIT"; then
+        [[ "$cmdline" == *"--no-git"* ]] || missing+=("no_git")
+    fi
+
+    if [ "${#missing[@]}" -gt 0 ]; then
+        echo "missing_flag_${missing[0]} pid=$pid cmdline='$cmdline'"
+        return 1
+    fi
+    return 0
+}
+
 # ── Health check: heartbeat, postęp, guard_fail trend ──────────────────────
 # Zwraca: healthy | degraded | stuck
 # Zapisuje metryki do guardian_health.json
 HEALTH_STATE_FILE="$WORK_DIR/.guardian_health_state"
-HEARTBEAT_AGING_SECONDS="${GUARDIAN_HEARTBEAT_AGING_SECONDS:-150}"
-HEARTBEAT_STALE_SECONDS="${GUARDIAN_HEARTBEAT_STALE_SECONDS:-240}"
-HEARTBEAT_STUCK_SECONDS="${GUARDIAN_HEARTBEAT_STUCK_SECONDS:-420}"
-HEARTBEAT_ACTIVE_LOG_GRACE_SECONDS="${GUARDIAN_HEARTBEAT_ACTIVE_LOG_GRACE_SECONDS:-150}"
-STUCK_WINDOW_MINUTES="${GUARDIAN_STUCK_WINDOW_MINUTES:-15}"
-GUARD_FAIL_RATE_ALERT="${GUARDIAN_GUARD_FAIL_RATE_ALERT:-15}"
+HEARTBEAT_AGING_SECONDS="${GUARDIAN_HEARTBEAT_AGING_SECONDS:-600}"
+HEARTBEAT_STALE_SECONDS="${GUARDIAN_HEARTBEAT_STALE_SECONDS:-900}"
+HEARTBEAT_STUCK_SECONDS="${GUARDIAN_HEARTBEAT_STUCK_SECONDS:-1500}"
+HEARTBEAT_ACTIVE_LOG_GRACE_SECONDS="${GUARDIAN_HEARTBEAT_ACTIVE_LOG_GRACE_SECONDS:-600}"
+STUCK_WINDOW_MINUTES="${GUARDIAN_STUCK_WINDOW_MINUTES:-30}"
+GUARD_FAIL_RATE_ALERT="${GUARDIAN_GUARD_FAIL_RATE_ALERT:-70}"
 
 check_worker_health() {
     local health
@@ -1242,9 +1411,13 @@ try:
         issues.append(f"no_progress ({entries_in_window} entries, 0 translated in {stuck_window_min}min)")
         state = "stuck"
     elif entries_in_window == 0 and heartbeat_age_s > 60:
-        issues.append(f"no_recent_entries (window={stuck_window_min}min)")
-        if state == "healthy":
-            state = "degraded"
+        # Before flagging degraded, check if worker log is recently modified (still active)
+        if worker_log_age_s >= 0 and worker_log_age_s <= active_log_grace_s and pid_alive:
+            pass  # Worker is active (log being written), just slow cycle — skip alert
+        else:
+            issues.append(f"no_recent_entries (window={stuck_window_min}min)")
+            if state == "healthy":
+                state = "degraded"
 except Exception as e:
     issues.append(f"progress_read_error: {e}")
 
@@ -1336,9 +1509,18 @@ if ! worker_running; then
     log_guardian "⚠️ Worker nie działa - restartuję..."
     restart_worker "worker_missing"
     else
+        PID=$(cat "$PID_FILE" 2>/dev/null)
+        CONTRACT_REASON=""
+        if ! CONTRACT_REASON=$(worker_translation_contract_ok); then
+            log_guardian "🚨 Worker contract broken (PID: $PID) — $CONTRACT_REASON"
+            restart_worker "translation_contract" || true
+            trap - RETURN
+            release_run_lock
+            return 0
+        fi
+
         # Worker działa — sprawdź zdrowie
         HEALTH=$(check_worker_health)
-        PID=$(cat "$PID_FILE" 2>/dev/null)
 
         case "$HEALTH" in
             healthy)
@@ -1376,12 +1558,10 @@ if [ "$last_ts" -eq 0 ] || [ $((now_ts - last_ts)) -ge "$PUSH_INTERVAL_SECONDS" 
     cd "$WORK_DIR" || exit 1
     bash "$WORK_DIR/$WORKER_SCRIPT" --update-status >/dev/null 2>&1 || true
 
-    # Git operations MUSZĄ być w repo root (PtakuPL/ooo)
+    # Fetch komend runtime (origin/$GIT_TRACK_BRANCH) bez merge/pull.
     cd "$REPO_ROOT" || exit 1
 
-        # Pobierz najnowsze komendy z GitHub bez robienia merge/pull (bezpieczne przy lokalnych zmianach)
-        # Worker odczyta komendy z origin/master (git show) i zapisze ACK lokalnie.
-        git fetch origin "$GIT_TRACK_BRANCH" -q 2>/dev/null || true
+    git fetch origin "$GIT_TRACK_BRANCH" -q 2>/dev/null || true
 
     # Staging TYLKO plików statusu (bez przypadkowego commitowania migracji/kodu)
         git add \
@@ -1454,8 +1634,18 @@ case "${1:-}" in
         log_guardian "▶️ Guardian daemon start (pid=$$, source=$daemon_source)"
         trap 'rm -f "$GUARDIAN_PID_FILE"; release_daemon_lock "$daemon_source"; exit 0' SIGINT SIGTERM EXIT
         while true; do
+            if ! ensure_daemon_lock_ownership "$daemon_source"; then
+                break
+            fi
             run_once
-            sleep 30
+            _daemon_sleep=30
+            while [ "$_daemon_sleep" -gt 0 ]; do
+                sleep 1
+                _daemon_sleep=$((_daemon_sleep - 1))
+                if ! ensure_daemon_lock_ownership "$daemon_source"; then
+                    break 2
+                fi
+            done
         done
         ;;
     *)

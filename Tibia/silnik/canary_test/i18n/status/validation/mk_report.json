@@ -8,18 +8,38 @@
   "coverage_pct": 7.5,
   "issues_total": 19,
   "issues_by_type": {
-    "script_cyrillic_latin_mix": 15,
+    "script_cyrillic_latin_mix": 19,
+    "V2_length_ratio": 4,
     "V4_artifact": 3,
+    "V1_placeholder_mismatch": 3,
     "V6_newline_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
-    "HIGH": 18,
-    "MEDIUM": 1,
+    "CRITICAL": 3,
+    "HIGH": 22,
+    "MEDIUM": 5,
     "LOW": 0
   },
-  "score": 99.3,
+  "score": 98.9,
   "worst_keys": [
+    {
+      "key": "npc.a_dead_bureaucrat1.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat3.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "achievement.26.name",
       "category": "achievements",
@@ -121,18 +141,6 @@
       "category": "npc",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
-    },
-    {
-      "key": "npc.a_ghostly_sage.stdmod_3",
-      "category": "npc",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.diary_of_hengis_wulfsonnni_can",
-      "category": "books",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
     }
   ],
   "crossref": {

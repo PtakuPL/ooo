@@ -26,11 +26,11 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Free escort to the depot for newcomers!" },
-	{ text = "Hello, is this your first visit to Port Hope? I can show you around a little." },
-	{ text = "Talk to me if you need directions." },
-	{ text = "Ask me if you want to know something about the world status!" },
-	{ text = "Need some help finding your way through Port Hope? Let me assist you." },
+	{ i18nKey = "npc.guide_tiko.voice_1" },
+	{ i18nKey = "npc.guide_tiko.voice_2" },
+	{ i18nKey = "npc.guide_tiko.voice_3" },
+	{ i18nKey = "npc.guide_tiko.voice_4" },
+	{ i18nKey = "npc.guide_tiko.voice_5" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -100,9 +100,9 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "town" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_tiko.stdmod_7" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_tiko.stdmod_8" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello there, and welcome to Port Hope! Would you like some information and a map guide?")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and enjoy your stay in Port Hope, |PLAYERNAME|")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.guide_tiko.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.guide_tiko.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.guide_tiko.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

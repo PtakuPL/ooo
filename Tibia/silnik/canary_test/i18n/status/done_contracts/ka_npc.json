@@ -3,14 +3,16 @@
   "lang": "ka",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": true,
-      "guard_placeholder": 0,
-      "guard_pipe": 0
+      "ok": false,
+      "guard_placeholder": 290,
+      "guard_pipe": 6,
+      "source": "file_state_audit"
     },
     "guard_command_below_threshold": {
       "ok": true,
-      "guard_command": 0,
-      "threshold": 5
+      "guard_command": 1,
+      "threshold": 5,
+      "source": "file_state_audit"
     },
     "coverage_above_95pct": {
       "ok": true,

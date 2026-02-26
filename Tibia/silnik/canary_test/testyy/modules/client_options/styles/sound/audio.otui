@@ -10,6 +10,7 @@ UIWidget
     OptionCheckBox
       id: enableAudio
       !text: tr("otclient_modules.audio_otui.tr_3")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -21,6 +22,7 @@ UIWidget
     OptionCheckBox
       id: enableMusicSound
       !text: tr("otclient_modules.audio_otui.tr_2")
+      text-wrap: true
 
     OptionScaleScroll
       id: musicSoundVolume

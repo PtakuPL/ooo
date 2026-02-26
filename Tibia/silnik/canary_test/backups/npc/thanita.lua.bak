@@ -81,9 +81,9 @@ end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
-npcHandler:setMessage(MESSAGE_GREET, "How could you sneak up on me like this? I thought you were one of THEM! Well, since you are not, what brings you to this wilderness?")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Take good care of yourself traveller. Would be a shame to lose such a courageous wanderer to those green monsters.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Take good care of yourself traveller. Would be a shame to lose such a courageous wanderer to those green monsters.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.thanita.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.thanita.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.thanita.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

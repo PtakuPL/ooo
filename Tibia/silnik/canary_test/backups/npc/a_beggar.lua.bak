@@ -64,7 +64,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_beggar.say_1")
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.a_beggar.say_1", "npc.a_beggar.say_2", "npc.a_beggar.say_3", "npc.a_beggar.say_4", "npc.a_beggar.say_5"}, 100)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.a_beggar.say_6", "npc.a_beggar.say_2", "npc.a_beggar.say_3", "npc.a_beggar.say_4", "npc.a_beggar.say_5" }, 100)
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission01, 2) -- Mission 1 end
 			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission02, 1) -- Mission 2 start

@@ -3,20 +3,25 @@
   "lang": "cs",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": true,
+      "ok": false,
       "guard_placeholder": 0,
-      "guard_pipe": 0
+      "guard_pipe": 1,
+      "batch_guard_placeholder": 0,
+      "batch_guard_pipe": 0,
+      "source": "file_state_audit"
     },
     "guard_command_below_threshold": {
       "ok": true,
       "guard_command": 0,
-      "threshold": 5
+      "threshold": 5,
+      "batch_guard_command": 0,
+      "source": "file_state_audit"
     },
     "coverage_above_95pct": {
       "ok": false,
-      "coverage_pct": 19.8,
-      "total_keys": 17057,
-      "real_translations": 3385
+      "coverage_pct": 46.4,
+      "total_keys": 36733,
+      "real_translations": 17057
     },
     "quality_entry_present": {
       "ok": true,
@@ -24,5 +29,5 @@
     }
   },
   "is_done": false,
-  "timestamp": "2026-02-14T04:53:31.645501Z"
+  "timestamp": "2026-02-25T22:28:06.554148Z"
 }

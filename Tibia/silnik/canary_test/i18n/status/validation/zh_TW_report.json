@@ -8,18 +8,24 @@
   "coverage_pct": 19.7,
   "issues_total": 14,
   "issues_by_type": {
-    "V2_length_ratio": 11,
-    "script_cjk_ratio": 2,
-    "V1_placeholder_mismatch": 1
+    "V2_length_ratio": 15,
+    "script_cjk_ratio": 6,
+    "V1_placeholder_mismatch": 2
   },
   "issues_by_severity": {
-    "CRITICAL": 1,
+    "CRITICAL": 2,
     "HIGH": 0,
-    "MEDIUM": 13,
+    "MEDIUM": 21,
     "LOW": 0
   },
   "score": 99.9,
   "worst_keys": [
+    {
+      "key": "npc.maeryn.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "scripts.actions_rewards.msg_1",
       "category": "scripts",
@@ -102,6 +108,36 @@
       "key": "achievement.384.name",
       "category": "achievements",
       "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
+      "category": "npc",
+      "type": "V2_length_ratio",
       "severity": "MEDIUM"
     }
   ],

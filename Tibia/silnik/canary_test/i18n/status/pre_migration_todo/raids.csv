@@ -1,0 +1,2 @@
+category,file,line,pattern,text
+raids,data-canary/raids/example.xml,3,raid.message.attr,Beware! The Toad is coming!!!

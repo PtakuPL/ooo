@@ -55,17 +55,25 @@ local function greetCallback(npc, creature, message)
 	local player = Player(creature)
 
 	if player:getStorageValue(HiddenThreats.QuestLine) == 1 then
-		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.corym_servant.greet_msg_2")
+		npcHandler:setMessage(MESSAGE_GREET, {
+			"We work as hard we can, my master! Wait, I haven't seen you here before. You were sent by the Corym Ratter, I see. He misses the courage to visit us and find the reason for {decreasing resources}? He's the coward I have expected.",
+		})
 	elseif player:getStorageValue(HiddenThreats.CorymRescueMission) == 8 and player:getStorageValue(HiddenThreats.QuestLine) == 3 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.corym_servant.greet_msg_5", "npc.corym_servant.greet_msg_6" }, 1000)
+		npcHandler:setMessage(MESSAGE_GREET, {
+			"Well done! The riot progesses! No fight without weapons. In the mine the temperature is quite high, higher as expected in this depth. Therefore we need heat-resistent weapons and armors. ...",
+			"This effect can be reached by adding rare earth to the common materials. But this can only be found in the stomaches of stonerefiners. 20 of these should be enough. Well, I see you have already collected enough of them! Would you give it to me?",
+		})
 		player:setStorageValue(HiddenThreats.QuestLine, 4)
-		return false
 	elseif player:getStorageValue(HiddenThreats.QuestLine) == 4 then
-		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.corym_servant.greet_msg_3")
+		npcHandler:setMessage(MESSAGE_GREET, {
+			"Well, I see you have already collected enough rare earth! Would you give it to me?",
+		})
 	elseif player:getStorageValue(HiddenThreats.QuestLine) == 3 then
-		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.corym_servant.greet_msg_4")
+		npcHandler:setMessage(MESSAGE_GREET, {
+			"You have to liberate all the Corym I told you. Unlock the three affected areas.",
+		})
 	else
-		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.corym_servant.greet_msg_1")
+		npcHandler:setMessage(MESSAGE_GREET, "Every man is the architect of his own fortune. The times of repression are finally over.")
 	end
 	return true
 end
@@ -79,8 +87,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "decreasing resources") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_servant.multi_5")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_servant.multi_6")
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.corym_servant.say_2", "npc.corym_servant.say_3" })
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "defy") then
 		if npcHandler:getTopic(playerId) == 1 then
@@ -89,19 +96,17 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(HiddenThreats.ServantDoor, 1)
 				player:setStorageValue(HiddenThreats.CorymRescueMission, 0)
 			end
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_servant.multi_3")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_servant.multi_4")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.corym_servant.say_4", "npc.corym_servant.say_5" })
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif (MsgContains(message, "yes")) and player:getStorageValue(HiddenThreats.QuestLine) == 4 then
 		if player:removeItem(27301, 20) then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_servant.multi_1")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_servant.multi_2")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.corym_servant.say_6", "npc.corym_servant.say_7" })
 			player:addItem(3040, 2)
 			player:setStorageValue(HiddenThreats.QuestLine, 5)
 			player:setStorageValue(HiddenThreats.CorymRescueMission, 9)
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_servant.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.corym_servant.say_8")
 			npcHandler:removeInteraction(npc, creature)
 			npcHandler:resetNpc(creature)
 		end
@@ -110,7 +115,7 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 -- Greeting message
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.corym_servant.farewell_msg_1")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, |PLAYERNAME|.")
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

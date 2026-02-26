@@ -75,10 +75,10 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "amulet") then
 		if player:getStorageValue(Storage.Quest.U10_55.Dawnport.TheLostAmulet) < 1 then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.mr_morris.say_1"}, 10)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.mr_morris.say_1" }, 10)
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.TheLostAmulet) == 2 and player:getItemCount(21379) == 1 then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.mr_morris.say_2"}, 0)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.mr_morris.say_2" }, 0)
 			player:removeItem(21379, 1)
 			player:addItem(3031, 50)
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.TheLostAmulet, 3)
@@ -110,7 +110,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_15")
 			npcHandler:setTopic(playerId, 4)
 		elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.TheDormKey) == 4 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_19")
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "yes") then
@@ -123,16 +123,16 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.TheStolenLogBook, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.mr_morris.say_3", "npc.mr_morris.say_4"}, 10)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.mr_morris.say_3", "npc.mr_morris.say_4" }, 10)
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.TheRareHerb, 1)
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.HerbFlower, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_20")
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.TheDormKey, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_21")
 			player:removeItem(21392, 1)
 			player:addItem(3031, 50)
 			player:setStorageValue(Storage.Quest.U10_55.Dawnport.TheDormKey, 5)
@@ -157,47 +157,47 @@ local function creatureSayCallback(npc, creature, type, message)
 		--Start Task
 	elseif MsgContains(message, "trolls") then
 		if player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorriskTroll) < 1 then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.mr_morris.say_5", "npc.mr_morris.say_6"}, 10)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.mr_morris.say_5", "npc.mr_morris.say_6" }, 10)
 			npcHandler:setTopic(playerId, 6)
 		elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorriskTroll) == 1 then
 			if player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorrisTrollCount) >= 20 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_22")
 				player:setStorageValue(14898, 1)
 				player:setStorageValue(Storage.Quest.U10_55.Dawnport.MorriskTroll, 2)
 				player:addItem(3031, 50)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_5")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_23")
 			end
 		end
 	elseif MsgContains(message, "goblins") then
 		if player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorrisGoblin) < 1 then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.mr_morris.say_7", "npc.mr_morris.say_8"}, 10)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.mr_morris.say_7", "npc.mr_morris.say_8" }, 10)
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorrisGoblin) == 1 then
 			if player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorrisGoblinCount) >= 20 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_6")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_24")
 				player:setStorageValue(14899, 1)
 				player:setStorageValue(Storage.Quest.U10_55.Dawnport.MorrisGoblin, 2)
 				player:addItem(3031, 50)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_7")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_25")
 			end
 		end
 	elseif MsgContains(message, "minotaur") then
 		if player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorrisMinos) < 1 then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.mr_morris.say_9", "npc.mr_morris.say_10"}, 10)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.mr_morris.say_9", "npc.mr_morris.say_10" }, 10)
 			npcHandler:setTopic(playerId, 8)
 		elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorrisMinos) == 1 then
 			if player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorrisMinosCount) >= 20 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_8")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_26")
 				player:setStorageValue(14900, 1)
 				player:setStorageValue(Storage.Quest.U10_55.Dawnport.MorrisMinos, 2)
 				player:addItem(3031, 50)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_9")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_27")
 			end
 		elseif player:getStorageValue(Storage.Quest.U10_55.Dawnport.MorrisMinos) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr_morris.say_28")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

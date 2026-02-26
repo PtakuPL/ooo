@@ -457,27 +457,27 @@
   },
   "npc.a_behemoth.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:22:39.253474Z"
+    "updated_at": "2026-02-15T13:22:55.233647Z"
   },
   "npc.a_behemoth.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:22:39.254308Z"
+    "updated_at": "2026-02-15T13:22:55.234224Z"
   },
   "npc.a_behemoth.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:22:39.255086Z"
+    "updated_at": "2026-02-15T13:22:55.234819Z"
   },
   "npc.a_dead_bureaucrat.greet_msg_1": {
     "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
@@ -1905,67 +1905,67 @@
   },
   "npc.a_dragon_lord.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.151677Z"
+    "updated_at": "2026-02-15T13:22:58.393358Z"
   },
   "npc.a_dragon_lord.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.152470Z"
+    "updated_at": "2026-02-15T13:22:58.393878Z"
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.153237Z"
+    "updated_at": "2026-02-15T13:23:01.833687Z"
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.154151Z"
+    "updated_at": "2026-02-15T13:23:01.834226Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.154953Z"
+    "updated_at": "2026-02-15T13:23:01.834824Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.155665Z"
+    "updated_at": "2026-02-15T13:23:01.835347Z"
   },
   "npc.a_lost_basher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.157001Z"
+    "updated_at": "2026-02-15T13:30:10.663575Z"
   },
   "npc.a_lost_basher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Κράτα το κάτω! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Κράτα το κάτω! <σας δίνει μια περίπλοκη αναφορά για τη δραστηριότητα των τεράτων>",
     "source": "word_dict",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:08.157704Z"
+    "updated_at": "2026-02-15T13:39:14.535671Z"
   },
   "npc.a_lost_basher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
@@ -2273,11 +2273,11 @@
   },
   "npc.a_fluffy_squirrel.sendtrade_msg_1": {
     "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
-    "text": "Chchch. Τσχ! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "text": "Chchch. Τσχ! <δεν είστε σίγουροι, αλλά φαίνεται ότι ο σκίουρος θέλει να ανταλλάξει τα πολύτιμα βελανίδια σας με άχρηστες πέτρες που βρήκε και θεωρούσε άφαγες>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:26:35.565719Z"
+    "updated_at": "2026-02-15T13:23:06.917460Z"
   },
   "npc.a_fluffy_squirrel.stdmod_1": {
     "src_hash": "ac2f68634467394485198b5db1d3f7a3",

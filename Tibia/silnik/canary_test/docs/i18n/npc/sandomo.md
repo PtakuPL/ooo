@@ -1,7 +1,7 @@
 # NPC: sandomo
 
-**Plik:** 
-**Data migracji:** 2025-12-20 20:25
+**Plik:** `data-otservbr-global/npc/sandomo.lua`
+**Data migracji:** 2026-02-23 12:27
 **Liczba tekstów:** 0
 
 ## Klucze i18n

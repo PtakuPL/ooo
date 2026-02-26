@@ -348,7 +348,9 @@ Panel
     anchors.right: parent.right
     anchors.bottom: parent.bottom
     margin-bottom: 3
-    size: 64 18
+    height: 18
+    text-auto-resize: true
+    padding: 0 5 0 5
     color: #c0c0c0ff
     font: noto-12
     !text: tr("otclient_modules.console_otui.tr_12")

@@ -10,7 +10,8 @@
     "guard_command_below_threshold": {
       "ok": true,
       "guard_command": 0,
-      "threshold": 5
+      "threshold": 5,
+      "source": "file_state_audit"
     },
     "coverage_above_95pct": {
       "ok": false,

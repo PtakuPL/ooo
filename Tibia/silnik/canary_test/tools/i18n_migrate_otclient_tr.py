@@ -3,6 +3,7 @@ import argparse
 import json
 import os
 import re
+from datetime import datetime, timezone
 from dataclasses import dataclass
 from typing import List, Optional, Tuple
 
@@ -13,6 +14,7 @@ class MigrationResult:
     calls_migrated: int
     file_changed: bool
     skipped_calls: int
+    dynamic_skipped: int
 
 
 _STRING_LITERAL_RE = re.compile(
@@ -182,7 +184,22 @@ def _next_key_index(existing: dict, key_prefix: str) -> int:
     return max_idx + 1
 
 
-def migrate_file(file_path: str, json_path: str, key_prefix: str, backup_dir: Optional[str]) -> MigrationResult:
+def _append_jsonl(path: str, rows: List[dict]) -> None:
+    if not path or not rows:
+        return
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "a", encoding="utf-8") as f:
+        for row in rows:
+            f.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+
+def migrate_file(
+    file_path: str,
+    json_path: str,
+    key_prefix: str,
+    backup_dir: Optional[str],
+    dynamic_report: Optional[str],
+) -> MigrationResult:
     original = _read_text(file_path)
     content = original
 
@@ -192,6 +209,9 @@ def migrate_file(file_path: str, json_path: str, key_prefix: str, backup_dir: Op
     keys_added = 0
     calls_migrated = 0
     skipped_calls = 0
+    dynamic_skipped = 0
+    dynamic_rows: List[dict] = []
+    generated_at = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
     # Find tr( occurrences
     positions: List[int] = []
@@ -238,6 +258,19 @@ def migrate_file(file_path: str, json_path: str, key_prefix: str, backup_dir: Op
         raw = _extract_string_literal(first)
         if raw is None:
             skipped_calls += 1
+            dynamic_skipped += 1
+            line = content.count("\n", 0, tr_idx) + 1
+            snippet = content[tr_idx : close_idx + 1].strip().replace("\n", " ")
+            dynamic_rows.append(
+                {
+                    "generated_at_utc": generated_at,
+                    "file": file_path.replace("\\", "/"),
+                    "line": line,
+                    "reason": "dynamic_tr_argument",
+                    "arg_expr": first,
+                    "snippet": snippet[:240],
+                }
+            )
             continue
 
         # If it already looks like a semantic key, keep it
@@ -271,11 +304,15 @@ def migrate_file(file_path: str, json_path: str, key_prefix: str, backup_dir: Op
     if keys_added > 0:
         _save_json(json_path, data)
 
+    if dynamic_rows:
+        _append_jsonl(dynamic_report or "", dynamic_rows)
+
     return MigrationResult(
         keys_added=keys_added,
         calls_migrated=calls_migrated,
         file_changed=file_changed,
         skipped_calls=skipped_calls,
+        dynamic_skipped=dynamic_skipped,
     )
 
 
@@ -285,13 +322,21 @@ def main() -> int:
     ap.add_argument("--json", required=True, dest="json_path")
     ap.add_argument("--key-prefix", required=True)
     ap.add_argument("--backup-dir", default="")
+    ap.add_argument("--dynamic-report", default="")
     args = ap.parse_args()
 
-    res = migrate_file(args.file, args.json_path, args.key_prefix, args.backup_dir or None)
+    res = migrate_file(
+        args.file,
+        args.json_path,
+        args.key_prefix,
+        args.backup_dir or None,
+        args.dynamic_report or None,
+    )
 
     print(
         f"__MIGRATE_RESULT__ keys_added={res.keys_added} calls_migrated={res.calls_migrated} "
-        f"file_changed={1 if res.file_changed else 0} skipped_calls={res.skipped_calls}"
+        f"file_changed={1 if res.file_changed else 0} skipped_calls={res.skipped_calls} "
+        f"dynamic_skipped={res.dynamic_skipped}"
     )
     return 0
 

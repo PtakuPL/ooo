@@ -10,6 +10,7 @@ UIWidget
     OptionCheckBox
       id: autoChaseOverride
       !text: tr("otclient_modules.misc_otui.tr_2")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left

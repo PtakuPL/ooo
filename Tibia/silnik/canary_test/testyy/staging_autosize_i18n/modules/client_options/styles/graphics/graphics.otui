@@ -1,0 +1,125 @@
+UIWidget
+  anchors.fill: parent
+  visible: false
+
+  Label
+    !text: tr("otclient_modules.graphics_otui.tr_15")
+    anchors.left: parent.left
+    margin-left: 18
+    color: #c0c0c0ff
+    anchors.top: parent.top
+
+  QtComboBox
+    id: antialiasingMode
+    width: 180
+    margin-left: 10
+    anchors.verticalCenter: prev.verticalCenter
+    anchors.left: prev.right
+    mouse-scroll: false
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    min-height: 22
+    text-vertical-auto-resize: true
+  
+    OptionCheckBoxMarked
+      id: fullscreen
+      !text: tr("otclient_modules.graphics_otui.tr_14")
+      !tooltip: 'Ctrl+Shift+F'
+      text-wrap: true
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 5
+    height:55
+    
+    OptionCheckBoxMarked
+      id: vsync
+      !text: tr("otclient_modules.graphics_otui.tr_13")
+      !tooltip: tr("otclient_modules.graphics_otui.tr_12")
+      text-wrap: true
+
+  
+    OptionCheckBoxMarked
+      id: showFps
+      !tooltip: tr("otclient_modules.graphics_otui.tr_11")
+      !text: tr("otclient_modules.graphics_otui.tr_10")
+      anchors.top: prev.bottom
+      text-wrap: true
+
+    OptionScaleScroll
+      id: backgroundFrameRate
+      !text: tr("otclient_modules.graphics_otui.tr_9", 'max')
+      anchors.top: prev.bottom
+      margin-top: 5
+      &minimumScrollValue: 10
+      &maximumScrollValue: 201
+      &scrollSize: 21
+      @onSetup: |
+        local value = modules.client_options.getOption('backgroundFrameRate')
+        local text = value
+        if value <= 0 or value >= 201 then
+          text = 'max'
+        end
+
+        self:setText(tr("otclient_modules.graphics_otui.tr_8", text))
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    min-height: 22
+    text-vertical-auto-resize: true
+  
+    OptionCheckBoxMarked
+      id: optimizeFps
+      !text: tr("otclient_modules.graphics_otui.tr_7")
+      !tooltip: tr("otclient_modules.graphics_otui.tr_6")
+      text-wrap: true
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    min-height: 22
+    text-vertical-auto-resize: true
+  
+    OptionCheckBoxMarked
+      id: forceEffectOptimization
+      !text: tr("otclient_modules.graphics_otui.tr_5")
+      !tooltip: tr("otclient_modules.graphics_otui.tr_4")
+      text-wrap: true
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    min-height: 22
+    text-vertical-auto-resize: true
+  
+    OptionCheckBoxMarked
+      id: asyncTxtLoading
+      !text: tr("otclient_modules.graphics_otui.tr_3")
+      !tooltip: tr("otclient_modules.graphics_otui.tr_2")
+      text-wrap: true
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    min-height: 22
+    text-vertical-auto-resize: true
+  
+    OptionCheckBox
+      id: dontStretchShrink
+      !text: tr("otclient_modules.graphics_otui.tr_1")
+      text-wrap: true

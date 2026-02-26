@@ -67,102 +67,64 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "project") and player:getStorageValue(TheNewFrontier.Questline) < 1 then
 		if npcHandler:getTopic(playerId) == 0 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_60")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_61")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.ongulf.say_6", "npc.ongulf.say_7" })
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "long") then
 		if npcHandler:getTopic(playerId) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_46")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_47")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_48")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_49")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_50")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_51")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_52")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_53")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_54")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_55")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_56")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_57")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_58")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_59")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.ongulf.say_8", "npc.ongulf.say_9", "npc.ongulf.say_10", "npc.ongulf.say_11", "npc.ongulf.say_12", "npc.ongulf.say_13", "npc.ongulf.say_14", "npc.ongulf.say_15", "npc.ongulf.say_16", "npc.ongulf.say_17", "npc.ongulf.say_18", "npc.ongulf.say_19", "npc.ongulf.say_20", "npc.ongulf.say_21" })
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "short") then
 		if npcHandler:getTopic(playerId) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_44")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_45")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.ongulf.say_22", "npc.ongulf.say_23" })
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "mission") then
 		if npcHandler:getTopic(playerId) == 2 then
 			if player:getStorageValue(TheNewFrontier.Questline) < 1 and npcHandler:getTopic(playerId) == 2 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_41")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_42")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_43")
+				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.ongulf.say_24", "npc.ongulf.say_25", "npc.ongulf.say_26" })
 				player:setStorageValue(TheNewFrontier.Questline, 1)
 				player:setStorageValue(TheNewFrontier.Mission01, 1) -- Questlog, The New Frontier Quest "Mission 01: New Land"
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.say_27")
 			player:setStorageValue(TheNewFrontier.Questline, 3)
 			player:setStorageValue(TheNewFrontier.Mission01, 3) -- Questlog, The New Frontier Quest "Mission 01: New Land"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 3 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_39")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_40")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.ongulf.say_28", "npc.ongulf.say_29" })
 			player:setStorageValue(TheNewFrontier.Questline, 4)
 			player:setStorageValue(TheNewFrontier.Mission02[1], 1) -- Questlog, The New Frontier Quest "Mission 02: From Kazordoon With Love"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 6 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.say_30")
 			player:setStorageValue(TheNewFrontier.Questline, 7)
 			player:setStorageValue(TheNewFrontier.Mission02[1], 4) -- Questlog, The New Frontier Quest "Mission 02: From Kazordoon With Love"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 7 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_35")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_36")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_37")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_38")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.ongulf.say_31", "npc.ongulf.say_32", "npc.ongulf.say_33", "npc.ongulf.say_34" })
 			player:setStorageValue(TheNewFrontier.Questline, 8)
 			player:setStorageValue(TheNewFrontier.Mission03, 1) -- Questlog, The New Frontier Quest "Mission 03: Strangers in the Night"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 9 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_33")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_34")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.ongulf.say_35", "npc.ongulf.say_36" })
 			player:setStorageValue(TheNewFrontier.Questline, 10)
 			player:setStorageValue(TheNewFrontier.Mission03, 3) -- Questlog, The New Frontier Quest "Mission 03: Strangers in the Night"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 10 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_30")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_31")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_32")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.ongulf.say_37", "npc.ongulf.say_38", "npc.ongulf.say_39" })
 			player:setStorageValue(TheNewFrontier.Questline, 11)
 			player:setStorageValue(TheNewFrontier.Mission04, 1) -- Questlog, The New Frontier Quest "Mission 04: The Mine Is Mine"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 12 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.say_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.say_40")
 			player:setStorageValue(TheNewFrontier.Questline, 13)
 			player:setStorageValue(TheNewFrontier.Mission04, 2) -- Questlog, The New Frontier Quest 'Mission 04: The Mine Is Mine'
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 13 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_15")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_16")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_17")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_18")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_19")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_20")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_21")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_22")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_23")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_24")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_25")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_26")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_27")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_28")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_29")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.ongulf.say_41", "npc.ongulf.say_42", "npc.ongulf.say_43", "npc.ongulf.say_44", "npc.ongulf.say_45", "npc.ongulf.say_46", "npc.ongulf.say_47", "npc.ongulf.say_48", "npc.ongulf.say_49", "npc.ongulf.say_50", "npc.ongulf.say_51", "npc.ongulf.say_52", "npc.ongulf.say_53", "npc.ongulf.say_54", "npc.ongulf.say_55" })
 			player:setStorageValue(TheNewFrontier.Questline, 14)
 			player:setStorageValue(TheNewFrontier.Mission05[1], 1) -- Questlog, The New Frontier Quest "Mission 05: Getting Things Busy"
 			player:setStorageValue(TheNewFrontier.Mission05.KingTibianus, 1) -- Questlog, The New Frontier Quest "Mission 5-1"
@@ -187,39 +149,28 @@ local function creatureSayCallback(npc, creature, type, message)
 				and player:getStorageValue(TheNewFrontier.Mission05.Telas) == 3
 				and player:getStorageValue(TheNewFrontier.Mission05.Humgolf) == 3
 			then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.say_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.say_56")
 				player:setStorageValue(TheNewFrontier.Questline, 15)
 				player:setStorageValue(TheNewFrontier.Mission05[1], 2) -- Questlog, The New Frontier Quest "Mission 05: Getting Things Busy"
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 15 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_11")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_12")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_13")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_14")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.ongulf.say_57", "npc.ongulf.say_58", "npc.ongulf.say_59", "npc.ongulf.say_60" })
 			player:setStorageValue(TheNewFrontier.Questline, 16)
 			player:setStorageValue(TheNewFrontier.Mission06, 1) -- Questlog, The New Frontier Quest "Mission 06: Days Of Doom"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 19 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.say_5")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.ongulf.say_61", "npc.ongulf.say_62" })
 			player:setStorageValue(TheNewFrontier.Questline, 20)
 			player:setStorageValue(TheNewFrontier.Mission06, 5)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 20 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_8")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_9")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_10")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.ongulf.say_63", "npc.ongulf.say_64", "npc.ongulf.say_65" })
 			player:setStorageValue(TheNewFrontier.Questline, 21)
 			player:setStorageValue(TheNewFrontier.Mission07[1], 1) -- Questlog, The New Frontier Quest "Mission 07: Messengers Of Peace"
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(TheNewFrontier.Questline) == 28 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_1")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_2")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_3")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_4")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_5")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_6")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ongulf.multi_7")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.ongulf.say_66", "npc.ongulf.say_67", "npc.ongulf.say_68", "npc.ongulf.say_69", "npc.ongulf.say_70", "npc.ongulf.say_71", "npc.ongulf.say_72" })
 			player:addExperience(8000, true)
 			player:setStorageValue(TheNewFrontier.Questline, 29)
 			player:setStorageValue(TheNewFrontier.Mission10[1], 2) -- Questlog, "Mission 10: New Horizons"
@@ -230,7 +181,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.ongulf.greet_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "Hello, |PLAYERNAME|. You've come at a good time for our {project}.")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

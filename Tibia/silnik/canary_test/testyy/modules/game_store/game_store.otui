@@ -178,7 +178,9 @@ StoreWindow
 
   StoreButton
     id: btnCoins
-    size: 64 20
+    height: 20
+    text-auto-resize: true
+    padding: 0 5 0 5
     anchors.bottom: parent.bottom
     anchors.left: prev.right
     margin-left: 5

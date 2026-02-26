@@ -1,11 +1,10 @@
 # NPC: gnomerik
 
-**Plik:** 
-**Data migracji:** 2025-12-20 20:24
-**Liczba tekstów:** 1
+**Plik:** `data-otservbr-global/npc/gnomerik.lua`
+**Data migracji:** 2026-02-23 12:24
+**Liczba tekstów:** 0
 
 ## Klucze i18n
 
 | Klucz | Tekst EN |
 |-------|----------|
-|  | Hello and welcome in the gnomish {recruitment} office. |

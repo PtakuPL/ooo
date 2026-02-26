@@ -1,5 +1,10 @@
 -- Advanced NPC System by Jiddo
 
+-- Ensure MESSAGE_NPC_FROM is always defined (fallback to MESSAGE_TRADE = green msg in game window)
+if MESSAGE_NPC_FROM == nil then
+	MESSAGE_NPC_FROM = MESSAGE_TRADE or 32
+end
+
 if NpcHandler == nil then
 	-- Constant talkdelay behaviors.
 	TALKDELAY_NONE = 0 -- No talkdelay. Npc will reply immedeatly.

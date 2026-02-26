@@ -70,75 +70,64 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "mission") then
 		local qStorage = player:getStorageValue(Storage.Quest.U8_7.SpiritHunters.Mission01)
 		if qStorage == 3 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_11")
 			npcHandler:setTopic(playerId, 3)
 		elseif qStorage == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_2")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.sinclair.say_12", "npc.sinclair.say_13" })
 			npcHandler:setTopic(playerId, 1)
 		elseif qStorage > 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_14")
 			npcHandler:setTopic(playerId, 0)
 		elseif qStorage < 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_15")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_13")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_14")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_15")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.sinclair.say_16", "npc.sinclair.say_17", "npc.sinclair.say_18" })
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_19")
 			player:setStorageValue(Storage.Quest.U8_7.SpiritHunters.Mission01, 3)
 			player:addItem(4050, 1)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:getStorageValue(Storage.Quest.U8_7.SpiritHunters.CharmUse) == 1 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_8")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_9")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_10")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_11")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_12")
+				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.sinclair.say_20", "npc.sinclair.say_21", "npc.sinclair.say_22", "npc.sinclair.say_23", "npc.sinclair.say_24" })
 				player:setStorageValue(Storage.Quest.U8_7.SpiritHunters.Mission01, 4)
 				player:addExperience(500, true)
 				npcHandler:setTopic(playerId, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_6")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_25")
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_3")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_4")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_5")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_6")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_7")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.sinclair.say_26", "npc.sinclair.say_27", "npc.sinclair.say_28", "npc.sinclair.say_29", "npc.sinclair.say_30" })
 			player:setStorageValue(Storage.Quest.U8_7.SpiritHunters.Mission01, 5)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_31")
 			npcHandler:setTopic(playerId, 6)
 		elseif npcHandler:getTopic(playerId) == 6 then
 			local nightstalkers, souleaters, ghost = player:getStorageValue(Storage.Quest.U8_7.SpiritHunters.NightstalkerUse), player:getStorageValue(Storage.Quest.U8_7.SpiritHunters.SouleaterUse), player:getStorageValue(Storage.Quest.U8_7.SpiritHunters.GhostUse)
 			if nightstalkers >= 4 and souleaters >= 4 and ghost >= 4 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_8")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_32")
 				player:setStorageValue(Storage.Quest.U8_7.SpiritHunters.Mission01, 6)
 				player:addExperience(10000, true)
 				player:addItem(3035, 60)
 				npcHandler:setTopic(playerId, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_9")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_33")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif MsgContains(message, "research") then
 		local qStorage = player:getStorageValue(Storage.Quest.U8_7.SpiritHunters.Mission01)
 		if qStorage == 4 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_1")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.multi_2")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.sinclair.say_34", "npc.sinclair.say_35" })
 			npcHandler:setTopic(playerId, 4)
 		elseif qStorage == 5 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sinclair.say_36")
 			npcHandler:setTopic(playerId, 5)
 		end
 	end
@@ -146,9 +135,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.sinclair.greet_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.sinclair.farewell_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.sinclair.walkaway_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "Greetings |PLAYERNAME|. I have - very - little time, please make it as short as possible. I may be able to help you if you are here to help us with any of our tasks or missions.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Goodbye and good luck |PLAYERNAME|.")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Goodbye and good luck |PLAYERNAME|.")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

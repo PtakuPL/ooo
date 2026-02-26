@@ -70,9 +70,9 @@ keywordHandler:addKeyword({ "exchange" }, StdModule.say, { npcHandler = npcHandl
 keywordHandler:addKeyword({ "mission" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.pythius_the_rotten.stdmod_13" })
 keywordHandler:addKeyword({ "undead" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.pythius_the_rotten.stdmod_14" })
 
-npcHandler:setMessage(MESSAGE_GREET, "I {AWAITED} YOU!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "COME BACK ANYTIME AND BRING ME TREASURES.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "COME BACK ANYTIME AND BRING ME TREASURES.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.pythius_the_rotten.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.pythius_the_rotten.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.pythius_the_rotten.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

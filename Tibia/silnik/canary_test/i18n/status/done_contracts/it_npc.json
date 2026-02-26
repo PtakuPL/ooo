@@ -9,14 +9,16 @@
     },
     "guard_command_below_threshold": {
       "ok": true,
-      "guard_command": 0,
-      "threshold": 5
+      "guard_command": 1,
+      "threshold": 5,
+      "batch_guard_command": 0,
+      "source": "file_state_audit"
     },
     "coverage_above_95pct": {
-      "ok": true,
-      "coverage_pct": 100.0,
-      "total_keys": 13769,
-      "real_translations": 13769
+      "ok": false,
+      "coverage_pct": 92.8,
+      "total_keys": 14815,
+      "real_translations": 13745
     },
     "quality_entry_present": {
       "ok": true,

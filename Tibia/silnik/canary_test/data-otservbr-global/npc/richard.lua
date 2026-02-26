@@ -119,14 +119,14 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	local categoryTable = itemsTable[message:lower()]
 	if MsgContains(message, "job") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.richard.say_1", "npc.richard.say_2"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.richard.say_1", "npc.richard.say_2" }, 10)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "rope") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.richard.say_3", "npc.richard.say_4"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.richard.say_3", "npc.richard.say_4" }, 10)
 		npcHandler:setTopic(playerId, 0)
 	elseif categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
-		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.richard.say_1", { remainingCategories })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.richard.say_5", { remainingCategories })
 		npc:openShopWindowTable(player, categoryTable)
 	end
 	return true

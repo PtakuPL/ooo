@@ -60,29 +60,27 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "angelina") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_8")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_9")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_10")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.lynda.say_24", "npc.lynda.say_25", "npc.lynda.say_26" })
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "wand") or MsgContains(message, "rod") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_27")
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "sulphur") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) == 3 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_28")
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "soul stone") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) == 4 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_29")
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "ankh") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand) == 5 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_30")
 			npcHandler:setTopic(playerId, 6)
 		end
 	elseif MsgContains(message, "ritual") then
@@ -92,29 +90,23 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addOutfitAddon(138, 1) --female mage addon
 				player:addOutfitAddon(141, 1) --female summoner addon
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_5")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_31")
 				npcHandler:setTopic(playerId, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_6")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_32")
 			end
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_1")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_2")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_3")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_4")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_5")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_6")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.multi_7")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.lynda.say_33", "npc.lynda.say_34", "npc.lynda.say_35", "npc.lynda.say_36", "npc.lynda.say_37", "npc.lynda.say_38", "npc.lynda.say_39" })
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_40")
 			player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand, 2)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:getItemCount(3065) > 0 and player:getItemCount(3066) > 0 and player:getItemCount(3067) > 0 and player:getItemCount(3069) > 0 and player:getItemCount(3070) > 0 and player:getItemCount(3071) > 0 and player:getItemCount(3072) > 0 and player:getItemCount(3073) > 0 and player:getItemCount(3074) > 0 and player:getItemCount(3075) > 0 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_8")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_41")
 				player:removeItem(3065, 1)
 				player:removeItem(3066, 1)
 				player:removeItem(3067, 1)
@@ -130,19 +122,19 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(5904, 10) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_9")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_42")
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand, 4)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
 			if player:removeItem(5809, 1) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_10")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_43")
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand, 5)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if player:removeItem(3077, 20) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_11")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_44")
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWand, 6)
 				player:setStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonWandTimer, os.time() + 10800)
 				npcHandler:setTopic(playerId, 0)
@@ -156,29 +148,29 @@ local function tryEngage(npc, creature, message, keywords, parameters, node)
 	local playerStatus = getPlayerMarriageStatus(player:getGuid())
 	local playerSpouse = getPlayerSpouse(player:getGuid())
 	if playerStatus == MARRIED_STATUS then -- check if the player is already married
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_1", { player:getName() })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_45", { player:getName() })
 	elseif playerStatus == PROPOSED_STATUS then --check if the player already made a proposal to some1 else
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_2", { player:getName() })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_46", { player:getName() })
 	else
 		local candidate = getPlayerGUIDByName(message)
 		if candidate == 0 then -- check if there is actually a player called like this
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_47")
 		elseif candidate == player:getGuid() then -- if it's himself, cannot marry
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_13")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_48")
 		else
 			if player:getItemCount(ITEM_WEDDING_RING) == 0 or player:getItemCount(9586) == 0 then -- check for items (wedding ring and outfit box)
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_14")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_49")
 			else
 				local candidateStatus = getPlayerMarriageStatus(candidate)
 				local candidateSpouse = getPlayerSpouse(candidate)
 				if candidateStatus == MARRIED_STATUS then -- if the player you want to marry is already married and to whom
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_3", { getPlayerNameById(candidate), getPlayerNameById(candidateSpouse) })
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_50", { getPlayerNameById(candidate), getPlayerNameById(candidateSpouse) })
 				elseif candidateStatus == PROPACCEPT_STATUS then -- if the player you want to marry is already going to marry some1 else
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_4", { getPlayerNameById(candidate), getPlayerNameById(candidateSpouse) })
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_51", { getPlayerNameById(candidate), getPlayerNameById(candidateSpouse) })
 				elseif candidateStatus == PROPOSED_STATUS then -- if he/she already made a proposal to some1
 					if candidateSpouse == player:getGuid() then -- if this someone is you.
 						-- if this some1 is not you
-						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_15")
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_52")
 						player:removeItem(ITEM_WEDDING_RING, 1)
 						player:removeItem(9586, 1) -- wedding outfit box
 						player:addOutfit(329) --Wife
@@ -190,10 +182,10 @@ local function tryEngage(npc, creature, message, keywords, parameters, node)
 						player:addOutfit(329)
 						player:addOutfit(328)
 					else
-						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_5", { getPlayerNameById(candidate), getPlayerNameById(candidateSpouse) })
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_53", { getPlayerNameById(candidate), getPlayerNameById(candidateSpouse) })
 					end
 				else -- if the player i want to propose doesn't have other proposal
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_6", { getPlayerNameById(candidate), getPlayerNameById(candidate) })
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_54", { getPlayerNameById(candidate), getPlayerNameById(candidate) })
 					player:removeItem(ITEM_WEDDING_RING, 1)
 					player:removeItem(9586, 1)
 					setPlayerMarriageStatus(player:getGuid(), PROPOSED_STATUS)
@@ -217,11 +209,11 @@ local function confirmWedding(npc, creature, message, keywords, parameters, node
 		setPlayerSpouse(player:getGuid(), candidate)
 		setPlayerSpouse(candidate, player:getGuid())
 		local itemAttribute = Item(doPlayerAddItem(creature, ITEM_ENGRAVED_WEDDING_RING, 1))
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { { "npc.lynda.say_7", { getPlayerNameById(candidate), player:getName() } }, "npc.lynda.say_8", "npc.lynda.say_9", { "npc.lynda.say_10", { player:getName() } }, "npc.lynda.say_11" }, 10000)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { { "npc.lynda.say_55", { getPlayerNameById(candidate), player:getName() } }, "npc.lynda.say_56", "npc.lynda.say_57", { "npc.lynda.say_58", { player:getName() } }, "npc.lynda.say_59" }, 10000)
 		itemAttribute:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, player:getName() .. " & " .. getPlayerNameById(candidate) .. " forever - married on " .. os.date("%B %d, %Y."))
 		itemAttribute:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, player:getName() .. " & " .. getPlayerNameById(candidate) .. " forever - married on " .. os.date("%B %d, %Y."))
 	else
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_16")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_60")
 	end
 	return true
 end
@@ -232,20 +224,20 @@ local function confirmRemoveEngage(npc, creature, message, keywords, parameters,
 	local playerStatus = getPlayerMarriageStatus(player:getGuid())
 	local playerSpouse = getPlayerSpouse(player:getGuid())
 	if playerStatus == PROPOSED_STATUS then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_12", { getPlayerNameById(playerSpouse) })
-		node:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 3, i18nKey = "npc.lynda.stdmod_1" })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_61", { getPlayerNameById(playerSpouse) })
+		node:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 3, text = "Ok, let's keep it then." , i18nKey = "npc.lynda.stdmod_9"})
 
 		local function removeEngage(creature, message, keywords, parameters, node)
 			doPlayerAddItem(creature, ITEM_WEDDING_RING, 1)
 			doPlayerAddItem(creature, 9586, 1)
 			setPlayerMarriageStatus(player:getGuid(), 0)
 			setPlayerSpouse(player:getGuid(), -1)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_remove_engage", { getPlayerNameById(playerSpouse) })
+			npcHandler:say(parameters.text, npc, creature)
 			keywordHandler:moveUp(player, parameters.moveup)
 		end
-		node:addChildKeyword({ "yes" }, removeEngage, { moveup = 3 })
+		node:addChildKeyword({ "yes" }, removeEngage, { moveup = 3, text = "Ok, your marriage proposal to {" .. getPlayerNameById(playerSpouse) .. "} has been removed. Take your wedding ring back." })
 	else
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_18")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_62")
 		keywordHandler:moveUp(player, 2)
 	end
 	return true
@@ -256,8 +248,8 @@ local function confirmDivorce(npc, creature, message, keywords, parameters, node
 	local playerStatus = getPlayerMarriageStatus(player:getGuid())
 	local playerSpouse = getPlayerSpouse(player:getGuid())
 	if playerStatus == MARRIED_STATUS then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_13", { getPlayerNameById(playerSpouse) })
-		node:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 3, i18nKey = "npc.lynda.stdmod_2" })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_63", { getPlayerNameById(playerSpouse) })
+		node:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 3, text = "Great! Marriages should be an eternal commitment." , i18nKey = "npc.lynda.stdmod_10"})
 
 		local function divorce(creature, message, keywords, parameters, node)
 			local player = Player(creature)
@@ -266,34 +258,34 @@ local function confirmDivorce(npc, creature, message, keywords, parameters, node
 			setPlayerSpouse(player:getGuid(), -1)
 			setPlayerMarriageStatus(spouse, 0)
 			setPlayerSpouse(spouse, -1)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_divorce", { getPlayerNameById(playerSpouse) })
+			npcHandler:say(parameters.text, npc, creature)
 			keywordHandler:moveUp(player, parameters.moveup)
 		end
-		node:addChildKeyword({ "yes" }, divorce, { moveup = 3 })
+		node:addChildKeyword({ "yes" }, divorce, { moveup = 3, text = "Ok, you are now divorced of {" .. getPlayerNameById(playerSpouse) .. "}. Think better next time after marrying someone." })
 	else
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_20")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lynda.say_64")
 		keywordHandler:moveUp(player, 2)
 	end
 	return true
 end
 
-local node1 = keywordHandler:addKeyword({ "marry" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, i18nKey = "npc.lynda.stdmod_3" })
-node1:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 1, i18nKey = "npc.lynda.stdmod_4" })
-local node2 = node1:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, i18nKey = "npc.lynda.stdmod_5" })
+local node1 = keywordHandler:addKeyword({ "marry" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, text = "Would you like to get married? Make sure you have a wedding ring and the wedding outfit box with you." , i18nKey = "npc.lynda.stdmod_11"})
+node1:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 1, text = "That's fine." , i18nKey = "npc.lynda.stdmod_12"})
+local node2 = node1:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, text = "And who would you like to marry?" , i18nKey = "npc.lynda.stdmod_13"})
 node2:addChildKeyword({ "[%w]" }, tryEngage, {})
 
-local node3 = keywordHandler:addKeyword({ "celebration" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, i18nKey = "npc.lynda.stdmod_6" })
-node3:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 1, i18nKey = "npc.lynda.stdmod_7" })
-local node4 = node3:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, i18nKey = "npc.lynda.stdmod_8" }) --, confirmWedding, {})
+local node3 = keywordHandler:addKeyword({ "celebration" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, text = "Is your soulmate and friends here with you for the celebration?" , i18nKey = "npc.lynda.stdmod_14"})
+node3:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, moveup = 1, text = "Then go bring them here!" , i18nKey = "npc.lynda.stdmod_15"})
+local node4 = node3:addChildKeyword({ "yes" }, StdModule.say, { npcHandler = npcHandler, onlyFocus = true, text = "Good, let's {begin} then!" , i18nKey = "npc.lynda.stdmod_16"}) --, confirmWedding, {})
 node4:addChildKeyword({ "begin" }, confirmWedding, {})
 
 keywordHandler:addKeyword({ "remove" }, confirmRemoveEngage, {})
 
 keywordHandler:addKeyword({ "divorce" }, confirmDivorce, {})
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lynda.greet_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.lynda.farewell_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.lynda.walkaway_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "Welcome in the name of the gods, pilgrim |PLAYERNAME|!")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Be careful on your journeys.")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Be careful on your journeys.")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

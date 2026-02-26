@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Feel the wind in your hair during one of my carpet rides!" },
+	{ i18nKey = "npc.uzon.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -64,7 +64,7 @@ local function addTravelKeyword(keyword, text, cost, destination, condition, act
 	end
 
 	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = text, cost = cost, discount = "postman" })
-	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, text = "Hold on!", cost = cost, discount = "postman", destination = destination }, nil, action)
+	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, i18nKey = "npc.uzon.keyword_1", cost = cost, discount = "postman", destination = destination }, nil, action)
 	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.uzon.stdmod_2", reset = true })
 end
 
@@ -112,9 +112,9 @@ keywordHandler:addKeyword({ "ride" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "trip" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.uzon.stdmod_22" })
 keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.uzon.stdmod_23" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Daraman's blessings, traveller |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Daraman's blessings")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Daraman's blessings")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.uzon.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.uzon.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.uzon.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

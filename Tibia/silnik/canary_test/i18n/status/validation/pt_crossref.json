@@ -230,6 +230,15 @@
       "lang": "Pied Piper"
     },
     {
+      "key": "achievement.526.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "King's Council",
+      "pl": "Król Council",
+      "lang": "King's Council"
+    },
+    {
       "key": "achievement.537.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -239,13 +248,580 @@
       "lang": "Snake Pit"
     },
     {
-      "key": "actions.random_items.say_1",
-      "category": "actions",
+      "key": "achievement.540.name",
+      "category": "achievements",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You found ",
-      "pl": "Znalazłeś ",
-      "lang": "You found "
+      "en": "Ripp-Ripp Hooray!",
+      "pl": "Ripp-Ripp Hura!",
+      "lang": "Ripp-Ripp Hooray!"
+    },
+    {
+      "key": "book.otbm.1001_recipes_against_sweaty_hands",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1001 Recipes Against Sweaty Hands",
+      "pl": "1001 Przepis kulinarny, przepis O Wywołujący poty Hands",
+      "lang": "1001 Recipes Against Sweaty Hands"
+    },
+    {
+      "key": "book.otbm.100_gold_coins_equal_1",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "100 gold coins equal 1 platinum coin",
+      "pl": "100 złotych monet to 1 platynowa moneta",
+      "lang": "100 gold coins equal 1 platinum coin"
+    },
+    {
+      "key": "book.otbm.100_gold_coins_equal_1_39c18279",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "100 gold coins equal 1 platinum coin",
+      "pl": "100 złotych monet to 1 platynowa moneta",
+      "lang": "100 gold coins equal 1 platinum coin"
+    },
+    {
+      "key": "book.otbm.100_platinum_coins_equal_1",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "100 platinum coins equal 1 crystal coin",
+      "pl": "100 platynowych monet to 1 kryształowa moneta",
+      "lang": "100 platinum coins equal 1 crystal coin"
+    },
+    {
+      "key": "book.otbm.100_platinum_coins_equal_1_648a8349",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "100 platinum coins equal 1 crystal coin",
+      "pl": "100 platynowych monet to 1 kryształowa moneta",
+      "lang": "100 platinum coins equal 1 crystal coin"
+    },
+    {
+      "key": "book.otbm.1st_floor_magic_emporium",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "1st floor: Magic Emporium",
+      "pl": "I piętro: Magiczne Emporium",
+      "lang": "1st floor: Magic Emporium"
+    },
+    {
+      "key": "book.otbm.900_mad_doc_vs_harpoon",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "9.00   Mad Doc. vs. Harpoon Angus",
+      "pl": "9.00 Zwariowany, niespełna rozumu Doc. vs. Harpun Angus",
+      "lang": "9.00   Mad Doc. vs. Harpoon Angus"
+    },
+    {
+      "key": "book.otbm.banana_cherry_grapes_melon_carrot",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "banana, cherry, grapes, melon, carrot, cookie, roll, brown bread, egg, cheese",
+      "pl": "banan, wiśnia, winogrona, melon, marchewka, ciastko, bułka, ciemny chleb, jajko, ser",
+      "lang": "banana, cherry, grapes, melon, carrot, cookie, roll, brown bread, egg, cheese"
+    },
+    {
+      "key": "book.otbm.bite_squeeze_shake_enjoy",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bite. Squeeze. Shake. Enjoy.",
+      "pl": "Ugryzienie. Ściśnięcie. Potrząsnąć. Cieszyć się.",
+      "lang": "Bite. Squeeze. Shake. Enjoy."
+    },
+    {
+      "key": "book.otbm.bloodthirsty_creatures_screeching_an_unholy",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bloodthirsty creatures screeching an unholy tune",
+      "pl": "Krwiożercze stworzenia wykrzykują bezbożną melodię",
+      "lang": "Bloodthirsty creatures screeching an unholy tune"
+    },
+    {
+      "key": "book.otbm.brain_heater_machine_facility_students",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Brain Heater Machine Facility. Students, please note:",
+      "pl": "Maszyna do podgrzewania mózgów. Studencie, pamiętaj:",
+      "lang": "Brain Heater Machine Facility. Students, please note:"
+    },
+    {
+      "key": "book.otbm.caliph_family_burial_vault",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Caliph family burial vault",
+      "pl": "Krypta grobowa rodziny kalifów",
+      "lang": "Caliph family burial vault"
+    },
+    {
+      "key": "book.otbm.caliph_family_memorial_crypt",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Caliph family memorial crypt",
+      "pl": "Krypta pamięci rodziny kalifów",
+      "lang": "Caliph family memorial crypt"
+    },
+    {
+      "key": "book.otbm.chain_armor_brass_armor_leather",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "chain armor, brass armor, leather armor, chain helmet, leather helmet, steel shield, viking shield, wooden shield, chain legs",
+      "pl": "zbroja łańcuchowa, zbroja mosiężna, zbroja skórzana, hełm łańcuchowy, hełm skórzany, tarcza stalowa, tarcza Wikingów, tarcza drewniana, nogi łańcuchowe",
+      "lang": "chain armor, brass armor, leather armor, chain helmet, leather helmet, steel shield, viking shield, wooden shield, chain legs"
+    },
+    {
+      "key": "book.otbm.crudely_written_in_blood",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "<crudely written in blood>",
+      "pl": "<prosto napisany krwią>",
+      "lang": "<crudely written in blood>"
+    },
+    {
+      "key": "book.otbm.cyclopic_cities_were_laid_into",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "cyclopic cities were laid into ruins, unbelievable forging factories were lost for all eternity, and until today the cyclops are upset",
+      "pl": "cyklopowe miasta popadły w ruinę, niewiarygodne fabryki kuźni zostały utracone na zawsze i do dziś cyklopi są zdenerwowani",
+      "lang": "cyclopic cities were laid into ruins, unbelievable forging factories were lost for all eternity, and until today the cyclops are upset"
+    },
+    {
+      "key": "book.otbm.diary_of_hengis_wulfsonnni_can",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Diary of Hengis Wulfson\\n...\\nI can only hope I can escape the\\ncyclops someday. For now I have\\noccupied their chief with an attempt\\nto learn to read and write, but for\\nhow long?\\nI'm so desperate.\\nWhat a foolish idea to travel here to\\nsearch the famous treasures of this\\nancient, knightly order.\\nI wish I had never heard about it.\\nI wish I had never sung that song.\\nNo clue how many unfortunate souls I\\nhave lured to death with it.",
+      "pl": "Dziennik Hengisa Wulfsona\\n...\\nMogę mieć tylko nadzieję, że pewnego dnia ucieknę przed\\ncyklopem. Na razie \\nzajęłem ich szefa próbą\\nnauczenia się czytać i pisać, ale na\\njak długo?\\njestem taki zdesperowany.\\nCo za głupi pomysł, aby podróżować tutaj, aby\\nprzeszukać słynne skarby tego\\nstarożytnego zakonu rycerskiego.\\nSzkoda, że nigdy o tym nie słyszałem.\\nSzkoda, że nigdy tego nie śpiewałem piosenka.\\nNie mam pojęcia, ile nieszczęsnych dusz I\\nzwabiłem nią na śmierć.",
+      "lang": "Diary of Hengis Wulfson\\n...\\nI can only hope I can escape the\\ncyclops someday. For now I have\\noccupied their chief with an attempt\\nto learn to read and write, but for\\nhow long?\\nI'm so desperate.\\nWhat a foolish idea to travel here to\\nsearch the famous treasures of this\\nancient, knightly order.\\nI wish I had never heard about it.\\nI wish I had never sung that song.\\nNo clue how many unfortunate souls I\\nhave lured to death with it."
+    },
+    {
+      "key": "book.otbm.died_but_i_could_make",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "... died but I could make it to the throne. My wards are holding the howling ghosts and spectres at bay for now and I prepare to unleash the powers of the throne ...",
+      "pl": "... umarłem, ale udało mi się dostać na tron. Moje osłony na razie powstrzymują wyjące duchy i widma, a ja przygotowuję się do uwolnienia mocy tronu...",
+      "lang": "... died but I could make it to the throne. My wards are holding the howling ghosts and spectres at bay for now and I prepare to unleash the powers of the throne ..."
+    },
+    {
+      "key": "book.otbm.eggs_cheese_cookies_rolls_meat",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "eggs, cheese, cookies, rolls, meat, salmon, oranges, grapes, melons, bananas",
+      "pl": "jajka, sery, ciasteczka, bułki, mięso, łosoś, pomarańcze, winogrona, melony, banany",
+      "lang": "eggs, cheese, cookies, rolls, meat, salmon, oranges, grapes, melons, bananas"
+    },
+    {
+      "key": "book.otbm.exchange_for_certain_services_that",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "exchange for certain services that have not been further elaborated on in the court's documents. The foreigner was found guilty without trial and sentenced to three years of work in the salt mines. The footsoldier Kamahl claimed his father Indril was guilty of witchcraft. Several obscure texts were found beneath the accused person's bed. Indril was banished from the city and his property was equally divided between the pharaoh and his heirs. The foreigner Todd Ballory was pronounced guilty of killing the overseer Barnak, a father of sixteen children and a respectable member of the local whipcrackers' association. The aforementioned convict was sentenced to a rather spectacular final appearance in the local arena.",
+      "pl": "zamian za określone usługi, które nie zostały szerzej omówione w dokumentach sądu. Cudzoziemiec został uznany za winnego bez procesu i skazany na trzy lata pracy w kopalni soli. Piechur Kamahl twierdził, że jego ojciec Indril był winny czarów. Pod łóżkiem oskarżonego znaleziono kilka niejasnych tekstów. Indril został wygnany z miasta, a jego majątek został równo podzielony pomiędzy faraona i jego spadkobierców. Cudzoziemiec Todd Ballory został uznany za winnego zamordowania nadzorcy Barnaka, ojca szesnaściorga dzieci i szanowanego członka lokalnego stowarzyszenia biczowników. Wspomniany skazaniec został skazany na dość spektakularny finałowy występ na lokalnej arenie.",
+      "lang": "exchange for certain services that have not been further elaborated on in the court's documents. The foreigner was found guilty without trial and sentenced to three years of work in the salt mines. The footsoldier Kamahl claimed his father Indril was guilty of witchcraft. Several obscure texts were found beneath the accused person's bed. Indril was banished from the city and his property was equally divided between the pharaoh and his heirs. The foreigner Todd Ballory was pronounced guilty of killing the overseer Barnak, a father of sixteen children and a respectable member of the local whipcrackers' association. The aforementioned convict was sentenced to a rather spectacular final appearance in the local arena."
+    },
+    {
+      "key": "book.otbm.exchange_rate_100_gold_coins",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "exchange rate: 100 gold coins equal 1 platinum coin - 100 platinum coins equal 1 crystal coin",
+      "pl": "kurs wymiany: 100 złotych monet to 1 platynowa moneta - 100 platynowych monet to 1 kryształowa moneta",
+      "lang": "exchange rate: 100 gold coins equal 1 platinum coin - 100 platinum coins equal 1 crystal coin"
+    },
+    {
+      "key": "book.otbm.festering_face_wounds_as_dangerous",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "festering face wounds as dangerous poison. But too bad! Still the bad orcs, equipped with cyclop weapons, were too powerful",
+      "pl": "ropiejące rany twarzy jako niebezpieczną truciznę. Ale szkoda! Mimo to złe orki, wyposażone w broń cyklopową, były zbyt potężne",
+      "lang": "festering face wounds as dangerous poison. But too bad! Still the bad orcs, equipped with cyclop weapons, were too powerful"
+    },
+    {
+      "key": "book.otbm.flying_carpet_passage_service",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Flying Carpet Passage Service",
+      "pl": "Usługa przejścia latającego dywanu",
+      "lang": "Flying Carpet Passage Service"
+    },
+    {
+      "key": "book.otbm.flying_carpet_passage_service_54553a20",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Flying Carpet Passage Service",
+      "pl": "Usługa przejścia latającego dywanu",
+      "lang": "Flying Carpet Passage Service"
+    },
+    {
+      "key": "book.otbm.flying_carpet_passage_service_upstairs",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Flying Carpet Passage Service upstairs",
+      "pl": "Usługa przejścia latającego dywanu na górze",
+      "lang": "Flying Carpet Passage Service upstairs"
+    },
+    {
+      "key": "book.otbm.galunas_fletcher_workshop",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Galuna's Fletcher Workshop",
+      "pl": "Galuna's Fletcher Warsztat",
+      "lang": "Galuna's Fletcher Workshop"
+    },
+    {
+      "key": "book.otbm.it_describes_the_advantages_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*It describes the advantages and disadvantages of the usage of the different fieldrunes against various enemies. You notice the detailed appendix where nearly all the field runes are listed*",
+      "pl": "*Opisuje zalety i wady użycia różnych run polowych przeciwko różnym wrogom. Zauważasz szczegółowy dodatek, w którym wymienione są prawie wszystkie runy polowe*",
+      "lang": "*It describes the advantages and disadvantages of the usage of the different fieldrunes against various enemies. You notice the detailed appendix where nearly all the field runes are listed*"
+    },
+    {
+      "key": "book.otbm.lower_areas_access_denied",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Lower Areas - Access Denied!",
+      "pl": "Dolne obszary — odmowa dostępu!",
+      "lang": "Lower Areas - Access Denied!"
+    },
+    {
+      "key": "book.otbm.obujos_sunday_3_pm_10",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Obujos: Sunday (3 PM - 10 PM)",
+      "pl": "Obujos: niedziela (15:00–22:00)",
+      "lang": "Obujos: Sunday (3 PM - 10 PM)"
+    },
+    {
+      "key": "book.otbm.obujos_sunday_3_pm_10_8b659036",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Obujos: Sunday (3 PM - 10 PM)",
+      "pl": "Obujos: niedziela (15:00–22:00)",
+      "lang": "Obujos: Sunday (3 PM - 10 PM)"
+    },
+    {
+      "key": "book.otbm.poison_fields_runes_100gp",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Poison Fields Runes (100gp)",
+      "pl": "Runy Pola Trucizny (100szt)",
+      "lang": "Poison Fields Runes (100gp)"
+    },
+    {
+      "key": "book.otbm.pure_blood_chamber_research_area",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Pure blood chamber. Research area.",
+      "pl": "Komnata czystej krwi. Obszar badawczy.",
+      "lang": "Pure blood chamber. Research area."
+    },
+    {
+      "key": "book.otbm.respect_thus_brog_created_further",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "respect. Thus Brog created further life, imitiating his shape, in order to please him, and so the cyclops entered the world.",
+      "pl": "szacunek. W ten sposób Brog stworzył dalsze życie, naśladując jego kształt, aby go zadowolić, i tak na świat wkroczył cyklop.",
+      "lang": "respect. Thus Brog created further life, imitiating his shape, in order to please him, and so the cyclops entered the world."
+    },
+    {
+      "key": "book.otbm.scrapper_rank_rewards_choose_wisely",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Scrapper Rank Rewards - Choose wisely!",
+      "pl": "Nagrody za rangę złomiarza – wybieraj mądrze!",
+      "lang": "Scrapper Rank Rewards - Choose wisely!"
+    },
+    {
+      "key": "book.otbm.serafins_heavenly_fruits",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Serafin's heavenly fruits",
+      "pl": "Niebiańskie owoce Serafina",
+      "lang": "Serafin's heavenly fruits"
+    },
+    {
+      "key": "book.otbm.sewer_access_lower_drainage_area",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SEWER ACCESS (Lower Drainage Area, Level B)",
+      "pl": "DOSTĘP DO KANALIZACJI (Dolny obszar drenażu, poziom B)",
+      "lang": "SEWER ACCESS (Lower Drainage Area, Level B)"
+    },
+    {
+      "key": "book.otbm.shadow_ashes_voices_bones_hunger",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Shadow Ashes Voices Bones Hunger Door Smoke...",
+      "pl": "Cień Popiół Głosy Kości Głód Drzwi Dym...",
+      "lang": "Shadow Ashes Voices Bones Hunger Door Smoke..."
+    },
+    {
+      "key": "book.otbm.still_impossible_my_wards_are",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "... still impossible! My wards are fading and the ancient spirits feel that they will soon claim another victory. I failed the brotherhood and will soon join the howling hords in their eternal torment and madness. ...",
+      "pl": "... nadal niemożliwe! Moje osłony zanikają, a starożytne duchy czują, że wkrótce odniosą kolejne zwycięstwo. Zawiodłem bractwo i wkrótce dołączę do wyjących hord w ich wiecznych mękach i szaleństwie. ...",
+      "lang": "... still impossible! My wards are fading and the ancient spirits feel that they will soon claim another victory. I failed the brotherhood and will soon join the howling hords in their eternal torment and madness. ..."
+    },
+    {
+      "key": "book.otbm.sword_sabre_rapier_dagger",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "sword, sabre, rapier, dagger,",
+      "pl": "miecz, szabla, rapier, sztylet,",
+      "lang": "sword, sabre, rapier, dagger,"
+    },
+    {
+      "key": "book.otbm.tanjis_sabado_15h_21h",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tanjis: Sabado (15h - 21h)",
+      "pl": "Tanji: Sabado (15:00 - 21:00)",
+      "lang": "Tanjis: Sabado (15h - 21h)"
+    },
+    {
+      "key": "book.otbm.tanjis_sabado_15h_21h_58898ea5",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tanjis: Sabado (15h - 21h)",
+      "pl": "Tanji: Sabado (15:00 - 21:00)",
+      "lang": "Tanjis: Sabado (15h - 21h)"
+    },
+    {
+      "key": "book.otbm.the_howling_grotto_of_nargor",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The Howling Grotto of Nargor used to be a hideout for criminals in the early days when colonisation just started on the isles. Those criminals were probably the first pirates although is unlikely that they had more than a few fishing boats at their disposal. They built some rooms in the caverns but supposedly they found evidence of prior attempts to use the grotto in some way and some of the caverns seemed to be not natural. For some reasons they were attracted to the lower caves where the howling of the wind was that fierce that people said it could drive a man crazy. Be that as it may, those first pirates were known for their bloodthirst, their frequent infightings and for torturing their prisoners. It is assumed that they all killed themselves in their madness. The grotto is rumoured to be haunted by the ghosts of these pirates and those of their victims - but those are only unconfirmed speculations. Nowadays, nobody knows the treacherous passages through the dangerous reefs to reach the isle of Nargor.",
+      "pl": "Wyjąca Grota w Nargorze była kryjówką przestępców na początku, kiedy na wyspach dopiero rozpoczęła się kolonizacja. Przestępcy ci byli prawdopodobnie pierwszymi piratami, chociaż jest mało prawdopodobne, aby mieli do dyspozycji więcej niż kilka łodzi rybackich. Zbudowali w jaskiniach kilka pomieszczeń, ale podobno znaleźli dowody wcześniejszych prób wykorzystania groty w jakiś sposób, a niektóre jaskinie wydawały się nienaturalne. Z jakiegoś powodu przyciągały ich niższe jaskinie, gdzie wycie wiatru było tak gwałtowne, że ludzie mówili, że może doprowadzić człowieka do szaleństwa. Tak czy inaczej, ci pierwsi piraci byli znani ze swojej żądzy krwi, częstych walk wewnętrznych i torturowania więźniów. Zakłada się, że wszyscy w swoim szaleństwie popełnili samobójstwo. Krążą pogłoski, że grotę nawiedzają duchy tych piratów i ich ofiar – są to jednak tylko niepotwierdzone spekulacje. W dzisiejszych czasach nikt nie zna zdradliwych przejść przez niebezpieczne rafy, które prowadzą na wyspę Nargor.",
+      "lang": "The Howling Grotto of Nargor used to be a hideout for criminals in the early days when colonisation just started on the isles. Those criminals were probably the first pirates although is unlikely that they had more than a few fishing boats at their disposal. They built some rooms in the caverns but supposedly they found evidence of prior attempts to use the grotto in some way and some of the caverns seemed to be not natural. For some reasons they were attracted to the lower caves where the howling of the wind was that fierce that people said it could drive a man crazy. Be that as it may, those first pirates were known for their bloodthirst, their frequent infightings and for torturing their prisoners. It is assumed that they all killed themselves in their madness. The grotto is rumoured to be haunted by the ghosts of these pirates and those of their victims - but those are only unconfirmed speculations. Nowadays, nobody knows the treacherous passages through the dangerous reefs to reach the isle of Nargor."
+    },
+    {
+      "key": "book.otbm.the_larokhon_are_entities_made",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The Larokhon are entities made up entirely of wind and of heat. They appear to be nothing but mere blurs in the sand, and those who are unfortunate enough to see them believe their eyes just played tricks on them. But then, the Larokhon are rarely ever seen by mortals since they shun daylight. They prefer those twilight moments when there is still some warmth left from a scorching day although night has clearly fallen. This is the time when the Larokhons' move from their secret hideouts to prey on unwary dreamers that are haunted by nightmares. Their sense of smelling fear is infallible, and once they have found their prey a mere crack in a wall is large enough for them to enter. Once they are close to their victims they feast on their innermost fears, evoking images of horror and despair that are so horrible that they often cause the dreamer's death. So take this word of warning, traveller: Beware the nights that are hot and windless, for a mere breeze of hot air may cause your demise.",
+      "pl": "Larokhon to istoty składające się wyłącznie z wiatru i ciepła. Wydają się być jedynie plamami na piasku, a ci, którzy mieli pecha je zobaczyć, sądzą, że ich oczy po prostu płatały im figle. Ale z drugiej strony Larokhony rzadko są widywane przez śmiertelników, ponieważ unikają światła dziennego. Wolą te chwile zmierzchu, kiedy po upalnym dniu zostało jeszcze trochę ciepła, choć noc już wyraźnie zapadła. To czas, kiedy Larokhoni opuszczają swoje tajne kryjówki, aby polować na nieostrożnych marzycieli, których nawiedzają koszmary. Ich zmysł wyczuwania strachu jest nieomylny, a gdy już znajdą ofiarę, zwykła szczelina w ścianie jest na tyle duża, że ​​mogą wejść. Kiedy już znajdą się blisko swoich ofiar, ucztują na najskrytszych lękach, przywołując obrazy grozy i rozpaczy, które są tak straszne, że często powodują śmierć śniącego. Więc weź to ostrzeżenie, podróżniku: uważaj na noce, które są gorące i bezwietrzne, bo zwykły powiew gorącego powietrza może spowodować twoją śmierć.",
+      "lang": "The Larokhon are entities made up entirely of wind and of heat. They appear to be nothing but mere blurs in the sand, and those who are unfortunate enough to see them believe their eyes just played tricks on them. But then, the Larokhon are rarely ever seen by mortals since they shun daylight. They prefer those twilight moments when there is still some warmth left from a scorching day although night has clearly fallen. This is the time when the Larokhons' move from their secret hideouts to prey on unwary dreamers that are haunted by nightmares. Their sense of smelling fear is infallible, and once they have found their prey a mere crack in a wall is large enough for them to enter. Once they are close to their victims they feast on their innermost fears, evoking images of horror and despair that are so horrible that they often cause the dreamer's death. So take this word of warning, traveller: Beware the nights that are hot and windless, for a mere breeze of hot air may cause your demise."
+    },
+    {
+      "key": "book.otbm.the_rest_sheets_of_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*The rest sheets of the book were pulled out.*",
+      "pl": "*Pozostałe kartki książki zostały wyciągnięte.*",
+      "lang": "*The rest sheets of the book were pulled out.*"
+    },
+    {
+      "key": "book.otbm.the_sea_serpent_is_as",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The Sea Serpent is as huge as a house and can swallow a small ship in one bite. Its scales are almost impenetrable and its teeth, which are as big as a cyclops, are coated with a corrosive poison that will dissolve human flesh on touch. In their undersea lairs they hoard treasures that would make a dragons hoard look miserable.",
+      "pl": "Wąż Morski jest ogromny jak dom i jednym kęsem może połknąć mały statek. Jego łuski są prawie nieprzeniknione, a zęby wielkie jak cyklop pokryte żrącą trucizną, która pod dotykiem rozpuszcza ludzkie mięso. W swoich podwodnych legowiskach gromadzą skarby, przy których skarb smoków wyglądałby żałośnie.",
+      "lang": "The Sea Serpent is as huge as a house and can swallow a small ship in one bite. Its scales are almost impenetrable and its teeth, which are as big as a cyclops, are coated with a corrosive poison that will dissolve human flesh on touch. In their undersea lairs they hoard treasures that would make a dragons hoard look miserable."
+    },
+    {
+      "key": "book.otbm.the_sea_serpent_is_as_5b93513e",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "The Sea Serpent is as huge as a house and can swallow a small ship in one bite. Its scales are almost impenetrable and its teeth, which are as big as a cyclops, are coated with a corrosive poison that will dissolve human flesh on touch. In their undersea lairs they hoard treasures that would make a dragons hoard look miserable.",
+      "pl": "Wąż Morski jest ogromny jak dom i jednym kęsem może połknąć mały statek. Jego łuski są prawie nieprzeniknione, a zęby wielkie jak cyklop pokryte żrącą trucizną, która pod dotykiem rozpuszcza ludzkie mięso. W swoich podwodnych legowiskach gromadzą skarby, przy których skarb smoków wyglądałby żałośnie.",
+      "lang": "The Sea Serpent is as huge as a house and can swallow a small ship in one bite. Its scales are almost impenetrable and its teeth, which are as big as a cyclops, are coated with a corrosive poison that will dissolve human flesh on touch. In their undersea lairs they hoard treasures that would make a dragons hoard look miserable."
+    },
+    {
+      "key": "book.otbm.they_annihilated_the_orcs_devastated",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "they annihilated the orcs, devastated their cities and drove them into the underworld. Even the cyclops, which hurried",
+      "pl": "unicestwili orki, zdewastowali ich miasta i zepędzili ich do podziemi. Nawet cyklop, który się spieszył",
+      "lang": "they annihilated the orcs, devastated their cities and drove them into the underworld. Even the cyclops, which hurried"
+    },
+    {
+      "key": "book.otbm.this_is_to_certify_that",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "This is to certify that Triamon, pupil in the arts of vivisection, has passed the final comparative anatomy trials and is hereby awarded the full rank of a necromancer. Signed, Antrurios of the Deep Seam, head vivisection and anatomy teacher, in the House of Howls.",
+      "pl": "Niniejszym zaświadczam, że Triamon, uczeń sztuki wiwisekcji, przeszedł końcowe testy z anatomii porównawczej i niniejszym otrzymuje pełną rangę nekromanty. Podpisano: Antrurios z Głębokiego Zwora, główny nauczyciel wiwisekcji i anatomii w Domu Wycia.",
+      "lang": "This is to certify that Triamon, pupil in the arts of vivisection, has passed the final comparative anatomy trials and is hereby awarded the full rank of a necromancer. Signed, Antrurios of the Deep Seam, head vivisection and anatomy teacher, in the House of Howls."
+    },
+    {
+      "key": "book.otbm.thou_shalt_obey_thy_king",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Thou shalt obey thy king!",
+      "pl": "Będziesz posłuszny swemu królowi!",
+      "lang": "Thou shalt obey thy king!"
+    },
+    {
+      "key": "book.otbm.thou_shalt_praise_thy_king",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Thou shalt praise thy king!",
+      "pl": "Będziesz chwalił swego króla!",
+      "lang": "Thou shalt praise thy king!"
+    },
+    {
+      "key": "book.otbm.too_a_long_time_the",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "too a long time. The world was fragile, the boundaries between the worlds cracked by the enormous powers, which had been",
+      "pl": "zbyt długo. Świat był kruchy, granice między światami pęknięte przez ogromne siły, które kiedyś były",
+      "lang": "too a long time. The world was fragile, the boundaries between the worlds cracked by the enormous powers, which had been"
+    },
+    {
+      "key": "book.otbm.uhgly_beholda_stollen_ki_we",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Uhgly beholda stollen ki we gut from slain humi nigt. Tohk it 2 stinky place, noone will go thare fur guud king of cyclops. Beholda bat und ughly, to manni eyes!",
+      "pl": "Brzydko, oto stollen ki, które wypatroszyliśmy zabitego humi nigt. To śmierdzące miejsce, nikt nie pójdzie do tego futrzanego guuda, króla cyklopa. Oto nietoperz i brzydki, dla ludzkich oczu!",
+      "lang": "Uhgly beholda stollen ki we gut from slain humi nigt. Tohk it 2 stinky place, noone will go thare fur guud king of cyclops. Beholda bat und ughly, to manni eyes!"
+    },
+    {
+      "key": "book.otbm.ultimate_healing_rune_800gp",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ultimate healing rune (800gp)",
+      "pl": "Runa ostatecznego leczenia (800sz)",
+      "lang": "ultimate healing rune (800gp)"
+    },
+    {
+      "key": "book.otbm.warlord_rank_rewards_choose_wisely",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Warlord Rank Rewards - Choose wisely!",
+      "pl": "Nagrody za rangę Wodza – wybieraj mądrze!",
+      "lang": "Warlord Rank Rewards - Choose wisely!"
+    },
+    {
+      "key": "book.otbm.we_stood_on_a_plank",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "...we stood on a plank and beneath us was a pit full of hissing snakes. Worse, the plank was pulled back into the wall, and there was no way out. If it hadn't been for our good Alil who had stayed out of that cursed chamber in a rare moment of clear-sightedness, we would all have ended up as snake food. Just how he managed to find that hidden lever on the statue is still beyond me.",
+      "pl": "...staliśmy na desce, a pod nami była jama pełna syczących węży. Co gorsza, deska została wciągnięta z powrotem w ścianę i nie było wyjścia. Gdyby nie nasz dobry Alil, który w rzadkim momencie przejrzystości trzymał się z dala od tej przeklętej komnaty, wszyscy skończylibyśmy jako pokarm dla węży. Wciąż nie rozumiem, jak udało mu się znaleźć ukrytą dźwignię na posągu.",
+      "lang": "...we stood on a plank and beneath us was a pit full of hissing snakes. Worse, the plank was pulled back into the wall, and there was no way out. If it hadn't been for our good Alil who had stayed out of that cursed chamber in a rare moment of clear-sightedness, we would all have ended up as snake food. Just how he managed to find that hidden lever on the statue is still beyond me."
+    },
+    {
+      "key": "book.otbm.you_can_see_several_maps",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*You can see several maps of Tibia with red lines and golden points on it*",
+      "pl": "*Możesz zobaczyć kilka map Tibia z czerwonymi liniami i złotymi punktami*",
+      "lang": "*You can see several maps of Tibia with red lines and golden points on it*"
+    },
+    {
+      "key": "book.otbm.you_can_see_several_maps_bbdc1c25",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*You can see several maps of Tibia with red lines and golden points on it.*",
+      "pl": "*Możesz zobaczyć kilka map Tibia z czerwonymi liniami i złotymi punktami.*",
+      "lang": "*You can see several maps of Tibia with red lines and golden points on it.*"
+    },
+    {
+      "key": "book.otbm.you_see_several_maps_with",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*You see several maps with red lines and golden points on them*",
+      "pl": "*Widzisz kilka map z czerwonymi liniami i złotymi punktami*",
+      "lang": "*You see several maps with red lines and golden points on them*"
+    },
+    {
+      "key": "book.otbm.you_see_several_strange_formulas",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*You see several strange formulas that you dont understand*",
+      "pl": "*Widzisz kilka dziwnych formuł, których nie rozumiesz*",
+      "lang": "*You see several strange formulas that you dont understand*"
+    },
+    {
+      "key": "book.otbm.you_see_several_strange_formulas_16001ceb",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*You see several strange formulas that you dont understand*",
+      "pl": "*Widzisz kilka dziwnych formuł, których nie rozumiesz*",
+      "lang": "*You see several strange formulas that you dont understand*"
+    },
+    {
+      "key": "book.otbm.you_try_to_read_and",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*You try to read and understand the words but it is written in an unknown strange language. Seems that this language is very very old.*",
+      "pl": "*Próbujesz przeczytać i zrozumieć słowa, ale są one napisane w nieznanym, dziwnym języku. Wygląda na to, że ten język jest bardzo, bardzo stary.*",
+      "lang": "*You try to read and understand the words but it is written in an unknown strange language. Seems that this language is very very old.*"
+    },
+    {
+      "key": "book.otbm.you_try_to_read_and_d92fca5c",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "*You try to read and understand the words but it is written in an unknown strange language. Seems that this language is very very old.*",
+      "pl": "*Próbujesz przeczytać i zrozumieć słowa, ale są one napisane w nieznanym, dziwnym języku. Wygląda na to, że ten język jest bardzo, bardzo stary.*",
+      "lang": "*You try to read and understand the words but it is written in an unknown strange language. Seems that this language is very very old.*"
+    },
+    {
+      "key": "ui.house.rent_period_daily",
+      "category": "books",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily",
+      "pl": "codziennie",
+      "lang": "daily"
     },
     {
       "key": "arena.mode.1v1",
@@ -1508,6 +2084,177 @@
       "lang": "World Chat"
     },
     {
+      "key": "client.game_screenshot.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bestiary Entry Unlocked",
+      "pl": "Wpis do bestiariusza odblokowany",
+      "lang": "Bestiary Entry Unlocked"
+    },
+    {
+      "key": "client.game_healthcircle.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "HP/MP Circle",
+      "pl": "Koło HP/MP",
+      "lang": "HP/MP Circle"
+    },
+    {
+      "key": "client.game_healthcircle.text4",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "HP/MP Circle",
+      "pl": "Koło HP/MP",
+      "lang": "HP/MP Circle"
+    },
+    {
+      "key": "client.things.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Couldn't load assets",
+      "pl": "Nie udało się wczytać zasobów",
+      "lang": "Couldn't load assets"
+    },
+    {
+      "key": "client.statsbar.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Axe Fighting Skill",
+      "pl": "Umiejętność walki toporem",
+      "lang": "Axe Fighting Skill"
+    },
+    {
+      "key": "client.statsbar.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Club Fighting Skill",
+      "pl": "Umiejętność walki klubowej",
+      "lang": "Club Fighting Skill"
+    },
+    {
+      "key": "client.statsbar.text4",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Distance Fighting Skill",
+      "pl": "Umiejętność walki na odległość",
+      "lang": "Distance Fighting Skill"
+    },
+    {
+      "key": "client.statsbar.text5",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fist Fighting Skill",
+      "pl": "Umiejętność walki na pięści",
+      "lang": "Fist Fighting Skill"
+    },
+    {
+      "key": "client.spells.text4",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Nature's Embrace",
+      "pl": "Uściski natury",
+      "lang": "Nature's Embrace"
+    },
+    {
+      "key": "client.quickloot.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Quick Loot Nearby Corpses",
+      "pl": "Szybki łup pobliskich zwłok",
+      "lang": "Quick Loot Nearby Corpses"
+    },
+    {
+      "key": "client.character.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "InventoryItemCyclopedia",
+      "pl": "InventoryPrzedmiotCyclopedia",
+      "lang": "InventoryItemCyclopedia"
+    },
+    {
+      "key": "client.mounts.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "data/XML/mounts.xml",
+      "pl": "dane/XML/mounts.xml",
+      "lang": "data/XML/mounts.xml"
+    },
+    {
+      "key": "client.json.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "invalid table: sparse array",
+      "pl": "nieprawidłowa tabela: rzadka tablica",
+      "lang": "invalid table: sparse array"
+    },
+    {
+      "key": "client.bottommenu.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Enabling Boosted Creature Panel",
+      "pl": "Włączanie panelu wzmocnionych stworzeń",
+      "lang": "Enabling Boosted Creature Panel"
+    },
+    {
+      "key": "client.keybind.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "controls-preset-current",
+      "pl": "sterowanie-prądem ustawionym",
+      "lang": "controls-preset-current"
+    },
+    {
+      "key": "client.imbuing.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Imbue Empty Slot",
+      "pl": "Napełnij puste miejsce",
+      "lang": "Imbue Empty Slot"
+    },
+    {
+      "key": "client.game_highscore.text4",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Retro Hardcore Pvp",
+      "pl": "Retro-hardcore'owy tryb Pvp",
+      "lang": "Retro Hardcore Pvp"
+    },
+    {
+      "key": "client.keybins.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "styles/controls/preset",
+      "pl": "style/sterowanie/ustawienia wstępne",
+      "lang": "styles/controls/preset"
+    },
+    {
+      "key": "client.keybins.text4",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Unknown chat mode",
+      "pl": "Nieznany tryb czatu",
+      "lang": "Unknown chat mode"
+    },
+    {
       "key": "client.game_store.text1",
       "category": "client",
       "type": "pl_reference_missing_translation",
@@ -1560,6 +2307,15 @@
       "en": "agony",
       "pl": "cierpienie",
       "lang": "agony"
+    },
+    {
+      "key": "cpp.combat.charm_savage_blow",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (savage blow charm)",
+      "pl": "(amulet dzikiego ciosu)",
+      "lang": " (savage blow charm)"
     },
     {
       "key": "cpp.combat.death",
@@ -2102,6 +2858,15 @@
       "lang": "Required"
     },
     {
+      "key": "cpp.inspect.required_magic_level",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Required Magic Level",
+      "pl": "Wymagany Magia Poziom",
+      "lang": "Required Magic Level"
+    },
+    {
       "key": "cpp.inspect.speed",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2336,6 +3101,15 @@
       "lang": " level {0}"
     },
     {
+      "key": "cpp.look.magic_shield_capacity",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "magic shield capacity",
+      "pl": "magia tarcza udźperuka",
+      "lang": "magic shield capacity"
+    },
+    {
       "key": "cpp.look.minute_one",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2525,6 +3299,15 @@
       "lang": " and others"
     },
     {
+      "key": "cpp.player.exp_animus_bonus",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (animus mastery bonus {0}%)",
+      "pl": "(animus biegłość premia {0}%)",
+      "lang": " (animus mastery bonus {0}%)"
+    },
+    {
       "key": "cpp.player.list_and",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2622,6 +3405,15 @@
       "en": "Outfit",
       "pl": "Strój",
       "lang": "Outfit"
+    },
+    {
+      "key": "cpp.protocol.resting_active_bonuses",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Active Resting Area Bonuses:\n{0}.",
+      "pl": "Aktywni Resting Obszar, region Premia:\n{0}.",
+      "lang": "Active Resting Area Bonuses:\n{0}."
     },
     {
       "key": "cpp.protocol.support_outfit_gamemaster",
@@ -2732,6 +3524,96 @@
       "lang": "unknown"
     },
     {
+      "key": "cpp.title.desc_70",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Invested 160,000 tasks points.",
+      "pl": "Inwestować 160,000 zadanie, zajęcie points.",
+      "lang": "Invested 160,000 tasks points."
+    },
+    {
+      "key": "cpp.title.desc_71",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Invested 320,000 tasks points.",
+      "pl": "Inwestować 320,000 zadanie, zajęcie points.",
+      "lang": "Invested 320,000 tasks points."
+    },
+    {
+      "key": "cpp.title.desc_72",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Invested 430,000 tasks points.",
+      "pl": "Inwestować 430,000 zadanie, zajęcie points.",
+      "lang": "Invested 430,000 tasks points."
+    },
+    {
+      "key": "cpp.title.desc_85",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Reached 2000 charm points. Quite beastly!",
+      "pl": "Osiągnięto 2000 punktów uroku. Całkiem bestialski!",
+      "lang": "Reached 2000 charm points. Quite beastly!"
+    },
+    {
+      "key": "cpp.title.desc_93",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Reach 15,000 boss points.",
+      "pl": "Zdobądź 15 000 punktów bossa.",
+      "lang": "Reach 15,000 boss points."
+    },
+    {
+      "key": "cpp.title.name_10",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 2)",
+      "pl": "Topmodelka Tibia (klasa 2)",
+      "lang": "Tibia's Topmodel (Grade 2)"
+    },
+    {
+      "key": "cpp.title.name_11",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 3)",
+      "pl": "Topmodelka Tibia (klasa 3)",
+      "lang": "Tibia's Topmodel (Grade 3)"
+    },
+    {
+      "key": "cpp.title.name_12",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 4)",
+      "pl": "Topmodelka Tibia (klasa 4)",
+      "lang": "Tibia's Topmodel (Grade 4)"
+    },
+    {
+      "key": "cpp.title.name_13",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 5)",
+      "pl": "Topmodelka Tibia (klasa 5)",
+      "lang": "Tibia's Topmodel (Grade 5)"
+    },
+    {
+      "key": "cpp.title.name_15",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cyclopscamper",
+      "pl": "Cyklopkamper",
+      "lang": "Cyclopscamper"
+    },
+    {
       "key": "cpp.title.name_17",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2777,6 +3659,15 @@
       "lang": "Big Boss"
     },
     {
+      "key": "cpp.title.name_33",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Reigning Drome Champion",
+      "pl": "Aktualny mistrz Drome",
+      "lang": "Reigning Drome Champion"
+    },
+    {
       "key": "cpp.title.name_34",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2784,6 +3675,24 @@
       "en": "Bipedantic",
       "pl": "Dwunożny",
       "lang": "Bipedantic"
+    },
+    {
+      "key": "cpp.title.name_35",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood Moon Hunter",
+      "pl": "Krew Księżyc Myśliwy",
+      "lang": "Blood Moon Hunter"
+    },
+    {
+      "key": "cpp.title.name_35_female",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood Moon Huntress",
+      "pl": "Łowczyni Krwawego Księżyca",
+      "lang": "Blood Moon Huntress"
     },
     {
       "key": "cpp.title.name_44",
@@ -2883,6 +3792,15 @@
       "en": "Beastly",
       "pl": "Paskudny",
       "lang": "Beastly"
+    },
+    {
+      "key": "cpp.title.name_9",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 1)",
+      "pl": "Topmodelka Tibia (klasa 1)",
+      "lang": "Tibia's Topmodel (Grade 1)"
     },
     {
       "key": "cpp.title.name_91",
@@ -3060,63 +3978,63 @@
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
+      "en": "sai",
+      "pl": "Sai",
+      "lang": "sai"
     },
     {
-      "key": "item.30218.name",
+      "key": "item.1069.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
+      "en": "bug tral",
+      "pl": "błąd tral",
+      "lang": "bug tral"
     },
     {
-      "key": "item.30273.name",
+      "key": "item.12575.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
+      "en": "Whinona",
+      "pl": "WhiNiena",
+      "lang": "Whinona"
     },
     {
-      "key": "item.3274.name",
+      "key": "item.12578.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "axe",
-      "pl": "Topór",
-      "lang": "axe"
+      "en": "Evilina",
+      "pl": "Ewilina",
+      "lang": "Evilina"
     },
     {
-      "key": "item.7107.name",
+      "key": "item.12579.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
+      "en": "Whinona",
+      "pl": "WhiNiena",
+      "lang": "Whinona"
     },
     {
-      "key": "item.7740.name",
+      "key": "item.12582.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
+      "en": "Evilina",
+      "pl": "Ewilina",
+      "lang": "Evilina"
     },
     {
-      "key": "item.800.name",
+      "key": "item.14141.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
+      "en": "lava",
+      "pl": "lawa",
+      "lang": "lava"
     },
     {
       "key": "item.9083.desc",
@@ -3132,31 +4050,31 @@
       "category": "libs",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Close",
-      "pl": "Zamknij",
-      "lang": "Close"
+      "en": "dead lava golem",
+      "pl": "martwy golem lawowy",
+      "lang": "dead lava golem"
     },
     {
-      "key": "lib.player.modal_button_no",
-      "category": "libs",
+      "key": "item.15989.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
+      "en": "dead lava golem",
+      "pl": "martwy golem lawowy",
+      "lang": "dead lava golem"
     },
     {
-      "key": "lib.player.modal_button_yes",
-      "category": "libs",
+      "key": "item.15990.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Yes",
-      "pl": "Tak",
-      "lang": "Yes"
+      "en": "dead lava golem",
+      "pl": "martwy golem lawowy",
+      "lang": "dead lava golem"
     },
     {
-      "key": "module.init.text4",
-      "category": "modules",
+      "key": "item.16134.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tVersion = ",
@@ -3164,8 +4082,8 @@
       "lang": "\tVersion = "
     },
     {
-      "key": "module.daily_reward.text5",
-      "category": "modules",
+      "key": "item.18070.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tToDo = ",
@@ -3173,8 +4091,8 @@
       "lang": "\tToDo = "
     },
     {
-      "key": "module.hireling_module.text2",
-      "category": "modules",
+      "key": "item.18071.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tVersion = ",
@@ -3182,103 +4100,103 @@
       "lang": "\tVersion = "
     },
     {
-      "key": "module.hireling_module.text4",
-      "category": "modules",
+      "key": "item.18072.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "\tDate =",
-      "pl": "Data =",
-      "lang": "\tDate ="
+      "en": "dead crazed beggar",
+      "pl": "martwy, szalony żebrak",
+      "lang": "dead crazed beggar"
     },
     {
-      "key": "monster.troll.name",
-      "category": "monsters",
+      "key": "item.18073.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Troll",
-      "pl": "Trol",
-      "lang": "Troll"
+      "en": "dead crazed beggar",
+      "pl": "martwy, szalony żebrak",
+      "lang": "dead crazed beggar"
     },
     {
-      "key": "monster.hunter.name",
-      "category": "monsters",
+      "key": "item.18074.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Hunter",
-      "pl": "Myśliwy",
-      "lang": "Hunter"
+      "en": "dead black knight",
+      "pl": "martwy czarny rycerz",
+      "lang": "dead black knight"
     },
     {
-      "key": "monster.old_wasp.voice_1",
-      "category": "monsters",
+      "key": "item.18075.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Bssssss",
-      "pl": "Bsssss",
-      "lang": "Bssssss"
+      "en": "dead black knight",
+      "pl": "martwy czarny rycerz",
+      "lang": "dead black knight"
     },
     {
-      "key": "monster.old_pig.voice_1",
-      "category": "monsters",
+      "key": "item.18076.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Oink oink",
-      "pl": "Chrum chrum",
-      "lang": "Oink oink"
+      "en": "dead black knight",
+      "pl": "martwy czarny rycerz",
+      "lang": "dead black knight"
     },
     {
-      "key": "monster.old_pig.voice_2",
-      "category": "monsters",
+      "key": "item.18077.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Oink",
-      "pl": "Chrum",
-      "lang": "Oink"
+      "en": "dead black knight",
+      "pl": "martwy czarny rycerz",
+      "lang": "dead black knight"
     },
     {
-      "key": "monster.old_wolf.voice_2",
-      "category": "monsters",
+      "key": "item.18078.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
+      "en": "dead crypt defiler",
+      "pl": "martwy defilator krypty",
+      "lang": "dead crypt defiler"
     },
     {
-      "key": "monster.old_bear.voice_1",
-      "category": "monsters",
+      "key": "item.18079.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Grrrr",
-      "pl": "Wrrrr",
-      "lang": "Grrrr"
+      "en": "dead crypt defiler",
+      "pl": "martwy defilator krypty",
+      "lang": "dead crypt defiler"
     },
     {
-      "key": "monster.old_bear.voice_2",
-      "category": "monsters",
+      "key": "item.18080.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
+      "en": "dead crypt defiler",
+      "pl": "martwy defilator krypty",
+      "lang": "dead crypt defiler"
     },
     {
-      "key": "monster.weeper.voice_1",
-      "category": "monsters",
+      "key": "item.18081.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Moooaaan",
-      "pl": "Muuuuuu",
-      "lang": "Moooaaan"
+      "en": "dead crypt defiler",
+      "pl": "martwy defilator krypty",
+      "lang": "dead crypt defiler"
     },
     {
-      "key": "monster.eternal_guardian.voice_1",
-      "category": "monsters",
+      "key": "item.18086.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Zzrrkrrch!",
-      "pl": "Zrrrkrrch!",
-      "lang": "Zzrrkrrch!"
+      "en": "dead dark magician",
+      "pl": "martwy mroczny mag",
+      "lang": "dead dark magician"
     },
     {
       "key": "monster.eternal_guardian.voice_2",
@@ -3303,81 +4221,81 @@
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Eliminated",
-      "pl": "Wyłączony",
-      "lang": "Eliminated"
+      "en": "dead dark magician",
+      "pl": "martwy mroczny mag",
+      "lang": "dead dark magician"
     },
     {
-      "key": "monster.glooth_golem.voice_2",
-      "category": "monsters",
+      "key": "item.18088.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "*clank*",
-      "pl": "*I.*",
-      "lang": "*clank*"
+      "en": "dead dark magician",
+      "pl": "martwy mroczny mag",
+      "lang": "dead dark magician"
     },
     {
-      "key": "monster.orewalker.name",
-      "category": "monsters",
+      "key": "item.18089.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Orewalker",
-      "pl": "Rudoład",
-      "lang": "Orewalker"
+      "en": "dead dark magician",
+      "pl": "martwy mroczny mag",
+      "lang": "dead dark magician"
     },
     {
-      "key": "monster.orewalker.voice_1",
-      "category": "monsters",
+      "key": "item.18094.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "CLONK!",
-      "pl": "KLONK!",
-      "lang": "CLONK!"
+      "en": "dead deadeye devious",
+      "pl": "martwe, przebiegłe oko",
+      "lang": "dead deadeye devious"
     },
     {
-      "key": "monster.rustheap_golem.voice_3",
-      "category": "monsters",
+      "key": "item.18095.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "*frzzp*",
-      "pl": "*frzz*",
-      "lang": "*frzzp*"
+      "en": "dead deadeye devious",
+      "pl": "martwe, przebiegłe oko",
+      "lang": "dead deadeye devious"
     },
     {
-      "key": "monster.magma_crawler.voice_1",
-      "category": "monsters",
+      "key": "item.18096.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Crrroak!",
-      "pl": "Crrrroak!",
-      "lang": "Crrroak!"
+      "en": "dead deadeye devious",
+      "pl": "martwe, przebiegłe oko",
+      "lang": "dead deadeye devious"
     },
     {
-      "key": "monster.ice_golem.voice_1",
-      "category": "monsters",
+      "key": "item.18097.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Chrrr.",
-      "pl": "Chrr.",
-      "lang": "Chrrr."
+      "en": "dead deadeye devious",
+      "pl": "martwe, przebiegłe oko",
+      "lang": "dead deadeye devious"
     },
     {
-      "key": "monster.ice_golem.voice_2",
-      "category": "monsters",
+      "key": "item.18102.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Crrrrk.",
-      "pl": "Crrr.",
-      "lang": "Crrrrk."
+      "en": "dead doomsday cultist",
+      "pl": "zmarły kultysta dnia zagłady",
+      "lang": "dead doomsday cultist"
     },
     {
-      "key": "monster.infected_weeper.voice_1",
-      "category": "monsters",
+      "key": "item.18103.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Moooaaan",
-      "pl": "Muuuuuu",
-      "lang": "Moooaaan"
+      "en": "dead doomsday cultist",
+      "pl": "zmarły kultysta dnia zagłady",
+      "lang": "dead doomsday cultist"
     },
     {
       "key": "monster.goggle_cake.voice_3",
@@ -3393,144 +4311,144 @@
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Grrrrunt",
-      "pl": "Wrrrr",
-      "lang": "Grrrrunt"
+      "en": "dead doomsday cultist",
+      "pl": "zmarły kultysta dnia zagłady",
+      "lang": "dead doomsday cultist"
     },
     {
-      "key": "monster.green_frog.voice_1",
-      "category": "monsters",
+      "key": "item.18105.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead doomsday cultist",
+      "pl": "zmarły kultysta dnia zagłady",
+      "lang": "dead doomsday cultist"
     },
     {
-      "key": "monster.salamander.voice_1",
-      "category": "monsters",
+      "key": "item.18114.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Chrrch!",
-      "pl": "Chrr!",
-      "lang": "Chrrch!"
+      "en": "dead feverish citizen",
+      "pl": "martwy, gorączkujący obywatel",
+      "lang": "dead feverish citizen"
     },
     {
-      "key": "monster.infernal_frog.voice_1",
-      "category": "monsters",
+      "key": "item.18115.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead feverish citizen",
+      "pl": "martwy, gorączkujący obywatel",
+      "lang": "dead feverish citizen"
     },
     {
-      "key": "monster.orchid_frog.voice_1",
-      "category": "monsters",
+      "key": "item.18116.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead feverish citizen",
+      "pl": "martwy, gorączkujący obywatel",
+      "lang": "dead feverish citizen"
     },
     {
-      "key": "monster.azure_frog.voice_1",
-      "category": "monsters",
+      "key": "item.18117.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead feverish citizen",
+      "pl": "martwy, gorączkujący obywatel",
+      "lang": "dead feverish citizen"
     },
     {
-      "key": "monster.bog_frog.voice_1",
-      "category": "monsters",
+      "key": "item.18122.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead gang member",
+      "pl": "martwy członek gangu",
+      "lang": "dead gang member"
     },
     {
-      "key": "monster.crimson_frog.voice_1",
-      "category": "monsters",
+      "key": "item.18123.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead gang member",
+      "pl": "martwy członek gangu",
+      "lang": "dead gang member"
     },
     {
-      "key": "monster.toad.voice_2",
-      "category": "monsters",
+      "key": "item.18124.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead gang member",
+      "pl": "martwy członek gangu",
+      "lang": "dead gang member"
     },
     {
-      "key": "monster.coral_frog.voice_1",
-      "category": "monsters",
+      "key": "item.18125.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead gang member",
+      "pl": "martwy członek gangu",
+      "lang": "dead gang member"
     },
     {
-      "key": "monster.devourer.voice_1",
-      "category": "monsters",
+      "key": "item.18130.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "*gulp*",
-      "pl": "*I.*",
-      "lang": "*gulp*"
+      "en": "dead grave robber",
+      "pl": "martwy złodziej grobów",
+      "lang": "dead grave robber"
     },
     {
-      "key": "monster.mercury_blob.voice_1",
-      "category": "monsters",
+      "key": "item.18131.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Crackle",
-      "pl": "Trzask",
-      "lang": "Crackle"
+      "en": "dead grave robber",
+      "pl": "martwy złodziej grobów",
+      "lang": "dead grave robber"
     },
     {
-      "key": "monster.death_blob.voice_1",
-      "category": "monsters",
+      "key": "item.18132.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Shlorz",
-      "pl": "Szlorz",
-      "lang": "Shlorz"
+      "en": "dead grave robber",
+      "pl": "martwy złodziej grobów",
+      "lang": "dead grave robber"
     },
     {
-      "key": "monster.chocolate_blob.voice_1",
-      "category": "monsters",
+      "key": "item.18133.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "*Splotch*",
-      "pl": "*Plama*",
-      "lang": "*Splotch*"
+      "en": "dead grave robber",
+      "pl": "martwy złodziej grobów",
+      "lang": "dead grave robber"
     },
     {
-      "key": "monster.chocolate_blob.voice_2",
-      "category": "monsters",
+      "key": "item.18142.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Smudge",
-      "pl": "Plama",
-      "lang": "Smudge"
+      "en": "slain ice witch",
+      "pl": "zabita lodowa wiedźma",
+      "lang": "slain ice witch"
     },
     {
-      "key": "monster.frost_troll.voice_2",
-      "category": "monsters",
+      "key": "item.18143.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Broar!",
-      "pl": "Bracie!",
-      "lang": "Broar!"
+      "en": "slain ice witch",
+      "pl": "zabita lodowa wiedźma",
+      "lang": "slain ice witch"
     },
     {
       "key": "monster.broken_shaper.voice_1",
@@ -3546,18 +4464,18 @@
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Yhouuuu!",
-      "pl": "Uuuuu!",
-      "lang": "Yhouuuu!"
+      "en": "slain ice witch",
+      "pl": "zabita lodowa wiedźma",
+      "lang": "slain ice witch"
     },
     {
-      "key": "monster.mooh'tah_warrior.voice_2",
-      "category": "monsters",
+      "key": "item.18145.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ommm!",
-      "pl": "Omm!",
-      "lang": "Ommm!"
+      "en": "slain ice witch",
+      "pl": "zabita lodowa wiedźma",
+      "lang": "slain ice witch"
     },
     {
       "key": "monster.enslaved_dwarf.voice_1",
@@ -3582,9 +4500,9 @@
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Hmmm, bugs",
-      "pl": "Hmmm, błędy",
-      "lang": "Hmmm, bugs"
+      "en": "dead lethal lissy",
+      "pl": "martwa, zabójcza Lissy",
+      "lang": "dead lethal lissy"
     },
     {
       "key": "monster.troll.voice_2",
@@ -3600,13 +4518,13 @@
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Grrr",
-      "pl": "Wrr",
-      "lang": "Grrr"
+      "en": "dead lethal lissy",
+      "pl": "martwa, zabójcza Lissy",
+      "lang": "dead lethal lissy"
     },
     {
-      "key": "monster.troll.voice_4",
-      "category": "monsters",
+      "key": "item.18156.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Groar",
@@ -3686,6 +4604,33 @@
       "en_len": 9,
       "lang_ratio": 1.0,
       "pl_ratio": 3.556
+    },
+    {
+      "key": "item.17819.name",
+      "category": "items",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 7,
+      "lang_ratio": 2.571,
+      "pl_ratio": 0.714
+    },
+    {
+      "key": "monster.abyssador.voice_1",
+      "category": "monsters",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 15,
+      "lang_ratio": 0.8,
+      "pl_ratio": 2.867
+    },
+    {
+      "key": "spell.sapling_explode.name",
+      "category": "spells",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 15,
+      "lang_ratio": 0.867,
+      "pl_ratio": 3.067
     }
   ],
   "auto_fix": {

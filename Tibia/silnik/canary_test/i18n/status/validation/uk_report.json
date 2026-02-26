@@ -8,16 +8,24 @@
   "coverage_pct": 6.6,
   "issues_total": 16,
   "issues_by_type": {
-    "script_cyrillic_latin_mix": 16
+    "script_cyrillic_latin_mix": 20,
+    "V2_length_ratio": 4,
+    "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
-    "HIGH": 16,
-    "MEDIUM": 0,
+    "CRITICAL": 1,
+    "HIGH": 20,
+    "MEDIUM": 4,
     "LOW": 0
   },
-  "score": 99.3,
+  "score": 99.0,
   "worst_keys": [
+    {
+      "key": "npc.a_dead_bureaucrat1.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "achievement.22.name",
       "category": "achievements",
@@ -110,6 +118,24 @@
     },
     {
       "key": "npc.a_dead_bureaucrat1.say_3",
+      "category": "npc",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "script_cyrillic_latin_mix",
+      "severity": "HIGH"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
       "category": "npc",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"

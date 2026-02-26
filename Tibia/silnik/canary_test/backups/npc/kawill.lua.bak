@@ -85,9 +85,9 @@ keywordHandler:addKeyword({ "fire" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "earth" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kawill.stdmod_28" })
 keywordHandler:addKeyword({ "the big old one" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.kawill.stdmod_29" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome |PLAYERNAME|! May earth protect you!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Earth under your feet, |PLAYERNAME|!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Earth under your feet, pilgrim. What brings you here?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.kawill.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.kawill.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.kawill.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

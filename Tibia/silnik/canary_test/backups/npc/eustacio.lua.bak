@@ -54,9 +54,7 @@ local function greetCallback(npc, creature)
 	local player = Player(creature)
 
 	if player:getStorageValue(Storage.Quest.U12_60.APiratesTail.RascacoonShortcut) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, {
-			"Hello my friend. What a delight to see you, even on a {busy} day. I see you already talked to my agent. I'm willing to lend you my boat if you want to take a {shortcut}. ...",
-		})
+		npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.eustacio.greet_msg_2")
 	else
 		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.eustacio.greet_msg_1")
 	end

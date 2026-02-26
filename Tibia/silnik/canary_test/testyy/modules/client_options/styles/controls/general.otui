@@ -11,6 +11,7 @@ UIWidget
       id: showPing
       !text: tr("otclient_modules.general_otui.tr_18")
       !tooltip: tr("otclient_modules.general_otui.tr_17")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -27,6 +28,7 @@ UIWidget
     OptionCheckBox
       id: classicControl
       !text: tr("otclient_modules.general_otui.tr_16")
+      text-wrap: true
 
       $mobile:
         visible: false
@@ -41,6 +43,7 @@ UIWidget
     OptionCheckBox
       id: autoChaseOverride
       !text: tr("otclient_modules.general_otui.tr_15")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -52,6 +55,7 @@ UIWidget
     OptionCheckBox
       id: moveStack
       !text: tr("otclient_modules.general_otui.tr_14")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -64,6 +68,7 @@ UIWidget
       id: smartWalk
       !text: tr("otclient_modules.general_otui.tr_13")
       !tooltip: tr("otclient_modules.general_otui.tr_12")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -75,6 +80,7 @@ UIWidget
     OptionCheckBox
       id: openMaximized
       !text: tr("otclient_modules.general_otui.tr_11")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -86,6 +92,7 @@ UIWidget
     OptionCheckBox
       id: displayText
       !text: tr("otclient_modules.general_otui.tr_10")
+      text-wrap: true
       
   SmallReversedQtPanel
     id: hotkeyDelay_label

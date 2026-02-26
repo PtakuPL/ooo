@@ -8,13 +8,14 @@
   "coverage_pct": 7.6,
   "issues_total": 3,
   "issues_by_type": {
-    "V4_artifact": 2,
+    "V2_length_ratio": 4,
+    "V4_artifact": 3,
     "V1_placeholder_mismatch": 1
   },
   "issues_by_severity": {
     "CRITICAL": 1,
-    "HIGH": 2,
-    "MEDIUM": 0,
+    "HIGH": 3,
+    "MEDIUM": 4,
     "LOW": 0
   },
   "score": 99.9,
@@ -32,10 +33,40 @@
       "severity": "HIGH"
     },
     {
+      "key": "monster.grynch_clan_goblin.voice_15",
+      "category": "monsters",
+      "type": "V4_artifact",
+      "severity": "HIGH"
+    },
+    {
       "key": "quests.bigfoot_burden.gnomedix_msg4",
       "category": "quests",
       "type": "V4_artifact",
       "severity": "HIGH"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_39",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
     }
   ],
   "crossref": {

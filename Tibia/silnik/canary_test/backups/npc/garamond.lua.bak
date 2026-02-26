@@ -350,11 +350,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 end
 
-npcHandler:setMessage(
-	MESSAGE_GREET,
-	"Welcome, child. Have you come to learn about {magic}? \z
-	Then you are in the right place. I can teach you many useful {spells}."
-)
+npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.garamond.greet_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

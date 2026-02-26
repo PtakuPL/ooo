@@ -9,15 +9,16 @@
   "issues_total": 41,
   "issues_by_type": {
     "V1_placeholder_mismatch": 39,
-    "V4_artifact": 2
+    "V4_artifact": 12,
+    "V2_length_ratio": 4
   },
   "issues_by_severity": {
     "CRITICAL": 39,
-    "HIGH": 2,
-    "MEDIUM": 0,
+    "HIGH": 12,
+    "MEDIUM": 4,
     "LOW": 0
   },
-  "score": 97.5,
+  "score": 99.3,
   "worst_keys": [
     {
       "key": "html.statistics.html.text2",

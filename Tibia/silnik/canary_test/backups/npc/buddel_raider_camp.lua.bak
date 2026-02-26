@@ -61,7 +61,7 @@ local function addTravelKeyword(keyword, text, destination, randomDestination, r
 	if ringCheck then
 		local ring = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.buddel_raider_camp.stdmod_2" }, ringCheck)
 		ring:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, cost = 0, destination = destination }, ringRemove)
-		local normalTravel = ring:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.buddel_raider_camp.stdmod_3" .. keyword .. ". 'kay?" })
+		local normalTravel = ring:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.buddel_raider_camp.stdmod_3", i18nArgs = { keyword }})
 		normalTravel:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.buddel_raider_camp.stdmod_4", reset = true })
 		if randomNumber then
 			normalTravel:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, cost = 50, discount = "postman", destination = destination }, randomNumber)

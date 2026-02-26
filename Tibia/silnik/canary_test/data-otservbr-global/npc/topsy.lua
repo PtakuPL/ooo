@@ -152,12 +152,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.topsy.say_2", { ItemType(itemId):getName() })
 			end
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.topsy.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.topsy.say_4")
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			player:addItem(itemId, 1)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.topsy.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.topsy.say_5")
 			player:setStorageValue(Storage.FirstMageWeapon, 1)
 		end
 		npcHandler:setTopic(playerId, 0)
@@ -166,7 +166,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 0)
 	elseif categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
-		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.topsy.say_3", { remainingCategories })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.topsy.say_6", { remainingCategories })
 		npc:openShopWindowTable(player, categoryTable)
 	end
 	return true

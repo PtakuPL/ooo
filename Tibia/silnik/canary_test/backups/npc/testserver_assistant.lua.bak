@@ -95,7 +95,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addBlessing(v.id, 1)
 		end
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.testserver_assistant.say_4")
-		player:sendTextMessage(MESSAGE_STATUS, "You received the remaining " .. missingBlessAmt .. " blesses.")
+		player:sendLocalizedTextMessage(MESSAGE_STATUS, "npc.testserver_assistant.blesses_received", {missingBlessAmt})
 		player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 	end
 
@@ -113,7 +113,11 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_GREET, "Hey |PLAYERNAME|. I'm Testserver Assistant and I can give {money}, {experience} and {blessing} which will be useful for testing on " .. configManager.getString(configKeys.SERVER_NAME) .. " server." .. " You can too to back to level 8 with {reset}.")
+npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.testserver_assistant.greet_msg_1", {
+	args = function(player)
+		return { player:getName(), configManager.getString(configKeys.SERVER_NAME) }
+	end,
+})
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

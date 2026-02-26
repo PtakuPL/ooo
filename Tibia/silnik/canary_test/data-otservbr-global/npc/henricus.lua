@@ -71,7 +71,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "blessing") or MsgContains(message, "bless") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) == 25 then --if quest is done
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_1", { (missing == 5 and "all five available" or missing), totalBlessPrice })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_33", { (missing == 5 and "all five available" or missing), totalBlessPrice })
 			npcHandler:setTopic(playerId, 7)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_3")
@@ -79,7 +79,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "flask") or MsgContains(message, "special flask") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.Questline) >= 12 then -- give player the ability to purchase the flask.
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_2", { flaskCost })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_34", { flaskCost })
 			npcHandler:setTopic(playerId, 8)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.henricus.say_5")

@@ -144,11 +144,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	/////////////////////]]
 	if MsgContains(message, "pacifiers") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Pacifier_Daily) >= os.time() then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_1", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Pacifier_Daily) - os.time()) })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_39", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Pacifier_Daily) - os.time()) })
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_2", { levels[1], levels[2] })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_40", { levels[1], levels[2] })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Pacifier_Main) == -1 then
@@ -177,11 +177,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	/////////////////////]]
 	if MsgContains(message, "release") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Mound_Daily) >= os.time() then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_3", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Mound_Daily) - os.time()) })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_41", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Mound_Daily) - os.time()) })
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_4", { levels[1], levels[2] })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_42", { levels[1], levels[2] })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Mound_Main) == -1 then
@@ -209,15 +209,15 @@ local function creatureSayCallback(npc, creature, type, message)
 	///////////////////]]
 	if MsgContains(message, "track") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Track_Daily) >= os.time() then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_5", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Track_Daily) - os.time()) })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_43", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Track_Daily) - os.time()) })
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_6", { levels[1], levels[2] })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_44", { levels[1], levels[2] })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Track_Main) == -1 then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.gnomilly.say_7", "npc.gnomilly.say_8" })
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.gnomilly.say_37", "npc.gnomilly.say_38" })
 			talkState[playerId] = "track"
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_29")
@@ -242,11 +242,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	///////////]]
 	if MsgContains(message, "kill") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Kill_Daily) >= os.time() then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_9", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Kill_Daily) - os.time()) })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_45", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Kill_Daily) - os.time()) })
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_10", { levels[1], levels[2] })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomilly.say_46", { levels[1], levels[2] })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Upper_Kill_Main) == -1 then

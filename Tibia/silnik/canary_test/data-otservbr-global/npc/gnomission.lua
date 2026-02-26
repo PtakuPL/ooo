@@ -131,7 +131,7 @@ local function creatureSayCallback(npc, creature, type, message)
 						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomission.say_11")
 					end
 				else
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomission.say_12")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomission.say_17")
 				end
 			end
 		end

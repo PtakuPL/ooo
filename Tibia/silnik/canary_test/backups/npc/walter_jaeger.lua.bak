@@ -257,23 +257,22 @@ local function getOfferByIndex(offerIndex, offer, topic)
 end
 
 local function getOfferString(name, offer, topic)
-	local string = ""
 	if offer == nil or #offer == 0 then
-		return string
+		return nil
 	end
 
 	local offerTable = getOfferByName(name, offer, topic)
 	if offerTable == nil then
-		return string
+		return nil
 	end
 
 	if topic == config.topics.outfit then
-		string = "The {base} " .. offerTable.name .. " outfit costs " .. tostring(offerTable.base) .. " HTP, the {first} addon " .. tostring(offerTable.firstAddon) .. " HTP and the {second} addon " .. tostring(offerTable.secondAddon) .. " HTP."
+		return "npc.walter_jaeger.say_offer_outfit", { offerTable.name, tostring(offerTable.base), tostring(offerTable.firstAddon), tostring(offerTable.secondAddon) }
 	elseif topic == config.topics.mount then
-		string = "The {" .. offerTable.name .. "} mount costs " .. tostring(offerTable.value) .. " HTP."
+		return "npc.walter_jaeger.say_offer_mount", { offerTable.name, tostring(offerTable.value) }
 	end
 
-	return string
+	return nil
 end
 
 local function processItemInboxPurchase(player, name, id)
@@ -291,7 +290,7 @@ local function processItemInboxPurchase(player, name, id)
 			return true
 		end
 	else
-		player:sendTextMessage(MESSAGE_LOOK, "Please make sure you have free slots in your store inbox.")
+		player:sendLocalizedTextMessage(MESSAGE_LOOK, "npc.walter_jaeger.store_inbox_full")
 	end
 
 	return false
@@ -305,13 +304,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		return false
 	end
 	if MsgContains(message, "rewards") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.walter_jaeger.say_1", "npc.walter_jaeger.say_2"}, 100)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.walter_jaeger.say_1", "npc.walter_jaeger.say_2" }, 100)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "tasks") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_26")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "have") then
-		npcHandler:say("Right now you have " .. player:getTaskHuntingPoints() .. " HTP.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_27", { player:getTaskHuntingPoints() })
 		npcHandler:setTopic(playerId, 0)
 
 		-- Add task hunting points history here.
@@ -329,7 +328,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_4")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("I offer you the " .. getOffersString(config.outifts, false) .. " outfit" .. (#config.outifts >= 1 and "s." or "."), npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_28", { getOffersString(config.outifts, false), (#config.outifts >= 1 and "s." or ".") })
 				npcHandler:setTopic(playerId, config.topics.outfit)
 			end
 		elseif MsgContains(message, "mount") then
@@ -337,7 +336,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_5")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("I offer you the " .. getOffersString(config.mounts, false) .. " mount" .. (#config.mounts >= 1 and "s." or "."), npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_29", { getOffersString(config.mounts, false), (#config.mounts >= 1 and "s." or ".") })
 				npcHandler:setTopic(playerId, config.topics.mount)
 			end
 		elseif MsgContains(message, "trophies") then
@@ -345,7 +344,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_6")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("I offer you the " .. getOffersString(config.trophies, true) .. ".", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_30", { getOffersString(config.trophies, true) })
 				npcHandler:setTopic(playerId, config.topics.trophy)
 			end
 		elseif MsgContains(message, "furniture") then
@@ -353,7 +352,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_7")
 				npcHandler:setTopic(playerId, 0)
 			else
-				npcHandler:say("I offer you the " .. getOffersString(config.furniture, true) .. ".", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_31", { getOffersString(config.furniture, true) })
 				npcHandler:setTopic(playerId, config.topics.furniture)
 			end
 		end
@@ -362,12 +361,18 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif npcHandler:getTopic(playerId) > 1 then
 		if npcHandler:getTopic(playerId) == config.topics.outfit then
 			if config ~= nil and config.outifts ~= nil and #config.outifts > 0 then
-				npcHandler:say(getOfferString(message, config.outifts, npcHandler:getTopic(playerId)), npc, creature)
+				local offerKey, offerArgs = getOfferString(message, config.outifts, npcHandler:getTopic(playerId))
+				if offerKey then
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, offerKey, offerArgs)
+				end
 				npcHandler:setTopic(playerId, getOfferIndex(message, config.outifts, npcHandler:getTopic(playerId)))
 			end
 		elseif npcHandler:getTopic(playerId) == config.topics.mount then
 			if config ~= nil and config.mounts ~= nil and #config.mounts > 0 then
-				npcHandler:say(getOfferString(message, config.mounts, npcHandler:getTopic(playerId)), npc, creature)
+				local offerKey, offerArgs = getOfferString(message, config.mounts, npcHandler:getTopic(playerId))
+				if offerKey then
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, offerKey, offerArgs)
+				end
 				npcHandler:setTopic(playerId, getOfferIndex(message, config.mounts, npcHandler:getTopic(playerId)))
 			end
 		elseif npcHandler:getTopic(playerId) == config.topics.trophy then

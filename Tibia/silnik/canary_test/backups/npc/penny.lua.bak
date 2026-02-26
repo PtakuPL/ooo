@@ -51,8 +51,14 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 local function greetCallback(npc, creature)
-	local playerId = creature:getId()
-	npcHandler:setMessage(MESSAGE_GREET, "Welcome home, " .. Player(creature):getSex() == PLAYERSEX_FEMALE and "Lady" or "Sir" .. " |PLAYERNAME|.")
+	npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.penny.greet_msg_1", {
+		args = function(player)
+			return {
+				player:getSex() == PLAYERSEX_FEMALE and "Lady" or "Sir",
+				player:getName(),
+			}
+		end,
+	})
 	return true
 end
 
@@ -67,7 +73,7 @@ keywordHandler:addKeyword({ "?" }, StdModule.say, { npcHandler = npcHandler, i18
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.penny.farewell_msg_1")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Wait... will you take me a diamond when you're back?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.penny.walkaway_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 npcConfig.shop = {

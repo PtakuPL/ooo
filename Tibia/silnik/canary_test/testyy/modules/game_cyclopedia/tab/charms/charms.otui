@@ -38,7 +38,9 @@ UIWidget
         size: 64 64
     Button
       id: UnlockButton
-      size: 75 20
+      height: 20
+      text-auto-resize: true
+      padding: 0 5 0 5
       anchors.bottom: InfoBase.bottom
       anchors.left: parent.left
       margin-left: 10

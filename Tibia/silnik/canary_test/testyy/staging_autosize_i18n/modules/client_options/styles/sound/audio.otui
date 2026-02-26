@@ -1,0 +1,39 @@
+UIWidget
+  anchors.fill: parent
+  visible: false
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: parent.top
+    min-height: 22
+    text-vertical-auto-resize: true
+
+    OptionCheckBox
+      id: enableAudio
+      !text: tr("otclient_modules.audio_otui.tr_3")
+      text-wrap: true
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    height: 44
+  
+    OptionCheckBox
+      id: enableMusicSound
+      !text: tr("otclient_modules.audio_otui.tr_2")
+      text-wrap: true
+
+    OptionScaleScroll
+      id: musicSoundVolume
+      margin-top: 5
+      anchors.top: prev.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      &minimumScrollValue: 1
+      &maximumScrollValue: 100
+      &scrollSize: 21
+      @onSetup: |
+        local value = modules.client_options.getOption('musicSoundVolume')
+        self:setText(tr("otclient_modules.audio_otui.tr_1", value))

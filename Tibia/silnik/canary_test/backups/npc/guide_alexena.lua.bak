@@ -26,11 +26,11 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Free escort to the depot for newcomers!" },
-	{ text = "Hello, is this your first visit to Carlin? I can show you around a little." },
-	{ text = "I can tell you all about the status this world is in." },
-	{ text = "Talk to me if you need directions." },
-	{ text = "Need some help finding your way through Carlin?" },
+	{ i18nKey = "npc.guide_alexena.voice_1" },
+	{ i18nKey = "npc.guide_alexena.voice_2" },
+	{ i18nKey = "npc.guide_alexena.voice_3" },
+	{ i18nKey = "npc.guide_alexena.voice_4" },
+	{ i18nKey = "npc.guide_alexena.voice_5" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -101,9 +101,9 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "town" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_alexena.stdmod_7" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_alexena.stdmod_8" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to Carlin, |PLAYERNAME| Would you like some information and a map guide?")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and enjoy your stay in Carlin, |PLAYERNAME|")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.guide_alexena.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.guide_alexena.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.guide_alexena.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

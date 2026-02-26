@@ -8,17 +8,18 @@
   "coverage_pct": 34.4,
   "issues_total": 111,
   "issues_by_type": {
-    "V1_placeholder_mismatch": 99,
+    "V1_placeholder_mismatch": 98,
     "V6_newline_mismatch": 8,
-    "V4_artifact": 4
+    "V4_artifact": 5,
+    "V2_length_ratio": 4
   },
   "issues_by_severity": {
-    "CRITICAL": 99,
-    "HIGH": 4,
-    "MEDIUM": 8,
+    "CRITICAL": 98,
+    "HIGH": 5,
+    "MEDIUM": 12,
     "LOW": 0
   },
-  "score": 98.3,
+  "score": 98.9,
   "worst_keys": [
     {
       "key": "html.admin.changelog.form.html.text5",

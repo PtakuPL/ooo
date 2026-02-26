@@ -150,7 +150,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	if table.contains({ "low", "high", "h", "l", "1", "2", "3", "4", "5", "6", "odd", "impar", "par", "even" }, message) then
 		local bet = getBetValue()
 		if not bet then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cassino.say_1", { config.bet.min, config.bet.max })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cassino.say_2", { config.bet.min, config.bet.max })
 			npcHandler:setTopic(playerId, 0)
 			return true
 		end

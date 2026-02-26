@@ -78,9 +78,9 @@ keywordHandler:addKeyword({ "prison" }, StdModule.say, { npcHandler = npcHandler
 keywordHandler:addKeyword({ "jail" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.partos.stdmod_2" })
 keywordHandler:addKeyword({ "cell" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.partos.stdmod_3" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome to my little kingdom, |PLAYERNAME|.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, visit me again. I will be here, promised.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye, visit me again. I will be here, promised.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.partos.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.partos.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.partos.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

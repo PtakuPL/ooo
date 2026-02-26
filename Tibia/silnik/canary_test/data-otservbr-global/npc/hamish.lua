@@ -154,14 +154,14 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	local categoryTable = itemsTable[message:lower()]
 	if MsgContains(message, "dawnport") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.hamish.say_1", "npc.hamish.say_2"}, 200)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.hamish.say_1", "npc.hamish.say_2" }, 200)
 	elseif MsgContains(message, "mainland") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.hamish.say_3", "npc.hamish.say_4"}, 200)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.hamish.say_3", "npc.hamish.say_4" }, 200)
 	elseif MsgContains(message, "ser tybald") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.hamish.say_5", "npc.hamish.say_6"}, 200)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.hamish.say_5", "npc.hamish.say_6" }, 200)
 	elseif categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
-		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.hamish.say_1", { remainingCategories })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.hamish.say_7", { remainingCategories })
 		npc:openShopWindowTable(player, categoryTable)
 	end
 	return true

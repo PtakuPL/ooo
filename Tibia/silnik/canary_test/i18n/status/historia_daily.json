@@ -1,93 +1,103 @@
 [
   {
     "date": "2026-02-14",
-    "hours_covered": 8,
-    "threshold": 5,
+    "hours_covered": 17,
+    "threshold": 15,
     "is_final": false,
     "ts_first": "2026-02-14T08:00:00Z",
-    "ts_last": "2026-02-14T13:16:09Z",
-    "translated": 1817,
-    "guard_fail": 973,
-    "suspicious_high": 1276,
-    "identical_to_en": 487,
+    "ts_last": "2026-02-14T23:09:48Z",
+    "translated": 17024,
+    "guard_fail": 18817,
+    "suspicious_high": 23052,
+    "identical_to_en": 2044,
     "repair_start": 4800,
-    "repair_end": 61175,
-    "cycles": 14,
+    "repair_end": 39694,
+    "cycles": 219,
     "coverage_start": 22.5,
-    "coverage_end": 9.8,
-    "guard_fail_pct": 34.87,
-    "throughput_per_h": 227.1,
+    "coverage_end": 10.49,
+    "guard_fail_pct": 52.5,
+    "throughput_per_h": 1001.4,
     "per_lang": {
       "pl": {
-        "t": 1181,
-        "gf": 507,
-        "cov": 42.01
+        "t": 8612,
+        "gf": 15842,
+        "cov": 56.74
       },
       "es": {
-        "t": 417,
-        "gf": 414,
-        "cov": 72.98
+        "t": 8172,
+        "gf": 2923,
+        "cov": 81.47
       },
       "cs": {
-        "t": 79,
+        "t": 80,
         "gf": 5,
-        "cov": 5.94
+        "cov": 6.27
       },
       "lt": {
         "t": 40,
         "gf": 47,
-        "cov": 6.36
+        "cov": 6.68
       },
       "el": {
         "t": 20,
         "gf": 0,
-        "cov": 5.63
+        "cov": 5.93
+      },
+      "ro": {
+        "t": 10,
+        "gf": 0,
+        "cov": 16.28
+      },
+      "ru": {
+        "t": 10,
+        "gf": 0,
+        "cov": 33.76
       }
     },
     "per_cat": {
-      "items.json": {
-        "t": 500,
-        "gf": 28
+      "monsters.json": {
+        "t": 4307,
+        "gf": 664
       },
       "npc.json": {
-        "t": 367,
-        "gf": 581
-      },
-      "quests.json": {
-        "t": 188,
-        "gf": 39
-      },
-      "monsters.json": {
-        "t": 147,
-        "gf": 14
-      },
-      "server.json": {
-        "t": 98,
-        "gf": 15
-      },
-      "cpp.json": {
-        "t": 95,
-        "gf": 33
-      },
-      "raids.json": {
-        "t": 80,
-        "gf": 0
+        "t": 2661,
+        "gf": 4237
       },
       "html.json": {
-        "t": 75,
-        "gf": 5
+        "t": 2230,
+        "gf": 421
       },
-      "startup.json": {
-        "t": 40,
-        "gf": 5
+      "server.json": {
+        "t": 1292,
+        "gf": 844
       },
       "spells.json": {
-        "t": 36,
-        "gf": 0
+        "t": 1218,
+        "gf": 117
+      },
+      "items.json": {
+        "t": 984,
+        "gf": 7958
+      },
+      "scripts.json": {
+        "t": 824,
+        "gf": 1777
+      },
+      "raids.json": {
+        "t": 717,
+        "gf": 69
+      },
+      "quests.json": {
+        "t": 652,
+        "gf": 621
+      },
+      "cpp.json": {
+        "t": 361,
+        "gf": 123
       }
     },
     "mode_distribution": {
-      "AUTO_TRANSLATE": 117,
+      "AUTO_TRANSLATE": 1187,
       "MIGRATION": 2
     },
     "migration_completed": 2297,

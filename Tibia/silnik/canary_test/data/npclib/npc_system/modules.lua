@@ -1,5 +1,10 @@
 -- Advanced NPC System by Jiddo
 
+-- Ensure MESSAGE_NPC_FROM is always defined (fallback to MESSAGE_TRADE = green msg in game window)
+if MESSAGE_NPC_FROM == nil then
+	MESSAGE_NPC_FROM = MESSAGE_TRADE or 32
+end
+
 if Modules == nil then
 	-- default words for greeting and ungreeting the npc. Should be a table containing all such words.
 	FOCUS_GREETWORDS = { "hi", "hello" }

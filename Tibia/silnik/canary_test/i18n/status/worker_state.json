@@ -9,7 +9,7 @@
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2026-02-14T13:33:29Z"
+        "updated_at_utc": "2026-02-15T13:36:31Z"
       },
       "status": "idle"
     },
@@ -22,7 +22,7 @@
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2026-02-14T13:40:30Z"
+        "updated_at_utc": "2026-02-15T13:38:00Z"
       },
       "status": "idle"
     },
@@ -33,9 +33,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 109
         },
-        "updated_at_utc": "2026-02-14T13:43:14Z"
+        "updated_at_utc": "2026-02-15T13:43:13Z"
       },
       "status": "idle"
     },
@@ -48,7 +48,7 @@
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2026-02-14T13:39:21Z"
+        "updated_at_utc": "2026-02-15T13:37:30Z"
       },
       "status": "idle"
     },
@@ -59,9 +59,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 1
         },
-        "updated_at_utc": "2026-02-14T13:42:58Z"
+        "updated_at_utc": "2026-02-15T13:38:18Z"
       },
       "status": "idle"
     },
@@ -72,9 +72,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 849
         },
-        "updated_at_utc": "2026-02-14T13:45:57Z"
+        "updated_at_utc": "2026-02-15T13:45:45Z"
       },
       "status": "idle"
     },
@@ -87,7 +87,7 @@
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2026-02-14T13:40:20Z"
+        "updated_at_utc": "2026-02-15T13:37:52Z"
       },
       "status": "idle"
     },
@@ -100,7 +100,20 @@
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-21T14:36:22Z"
+        "updated_at_utc": "2026-02-15T10:32:35Z"
+      },
+      "status": "idle"
+    },
+    "html": {
+      "backoff": {
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
+      },
+      "last": {
+        "delta": {
+          "files_migrated": 11437
+        },
+        "updated_at_utc": "2026-02-15T13:42:51Z"
       },
       "status": "idle"
     },
@@ -111,9 +124,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 3
+          "files_migrated": 17390
         },
-        "updated_at_utc": "2026-02-13T07:37:40Z"
+        "updated_at_utc": "2026-02-15T10:32:51Z"
       },
       "status": "idle"
     },
@@ -124,9 +137,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 1691
         },
-        "updated_at_utc": "2026-02-14T13:40:03Z"
+        "updated_at_utc": "2026-02-15T13:37:45Z"
       },
       "status": "idle"
     },
@@ -137,9 +150,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 965
         },
-        "updated_at_utc": "2025-12-21T14:49:16Z"
+        "updated_at_utc": "2026-02-15T10:33:11Z"
       },
       "status": "idle"
     },
@@ -150,9 +163,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 87
+          "files_migrated": 18665
         },
-        "updated_at_utc": "2025-12-21T06:09:23Z"
+        "updated_at_utc": "2026-02-15T10:30:32Z"
       },
       "status": "idle"
     },
@@ -163,9 +176,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 697
         },
-        "updated_at_utc": "2026-02-14T13:39:28Z"
+        "updated_at_utc": "2026-02-15T13:37:37Z"
       },
       "status": "idle"
     },
@@ -178,7 +191,7 @@
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-21T14:36:05Z"
+        "updated_at_utc": "2026-02-15T10:32:20Z"
       },
       "status": "idle"
     },
@@ -189,9 +202,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 1
         },
-        "updated_at_utc": "2025-12-21T14:14:41Z"
+        "updated_at_utc": "2026-02-15T10:30:14Z"
       },
       "status": "idle"
     },
@@ -204,7 +217,7 @@
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2026-02-14T13:40:46Z"
+        "updated_at_utc": "2026-02-15T13:38:07Z"
       },
       "status": "idle"
     },
@@ -215,9 +228,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 1
         },
-        "updated_at_utc": "2026-02-14T13:45:21Z"
+        "updated_at_utc": "2026-02-15T13:44:37Z"
       },
       "status": "idle"
     },
@@ -230,7 +243,7 @@
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T06:56:58Z"
+        "updated_at_utc": "2026-02-15T10:33:44Z"
       },
       "status": "idle"
     },
@@ -241,9 +254,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 6587
         },
-        "updated_at_utc": "2026-02-14T13:43:27Z"
+        "updated_at_utc": "2026-02-15T13:43:35Z"
       },
       "status": "idle"
     },
@@ -254,9 +267,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 60
         },
-        "updated_at_utc": "2026-02-14T13:45:30Z"
+        "updated_at_utc": "2026-02-15T13:44:54Z"
       },
       "status": "idle"
     },
@@ -267,9 +280,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 154
         },
-        "updated_at_utc": "2026-02-14T13:45:39Z"
+        "updated_at_utc": "2026-02-15T13:45:11Z"
       },
       "status": "idle"
     },
@@ -282,7 +295,7 @@
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2026-02-14T13:34:00Z"
+        "updated_at_utc": "2026-02-15T13:36:42Z"
       },
       "status": "idle"
     },
@@ -293,9 +306,9 @@
       },
       "last": {
         "delta": {
-          "files_migrated": 0
+          "files_migrated": 1
         },
-        "updated_at_utc": "2025-12-17T08:10:47Z"
+        "updated_at_utc": "2026-02-15T10:30:56Z"
       },
       "status": "idle"
     },
@@ -347,7 +360,46 @@
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T06:56:23Z"
+        "updated_at_utc": "2026-02-15T13:36:24Z"
+      },
+      "status": "idle"
+    },
+    "server": {
+      "backoff": {
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
+      },
+      "last": {
+        "delta": {
+          "files_migrated": 109
+        },
+        "updated_at_utc": "2026-02-15T13:45:27Z"
+      },
+      "status": "idle"
+    },
+    "spells": {
+      "backoff": {
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
+      },
+      "last": {
+        "delta": {
+          "files_migrated": 191
+        },
+        "updated_at_utc": "2026-02-15T13:36:59Z"
+      },
+      "status": "idle"
+    },
+    "startup": {
+      "backoff": {
+        "consecutive_zeros": 0,
+        "skip_until_utc": null
+      },
+      "last": {
+        "delta": {
+          "files_migrated": 36
+        },
+        "updated_at_utc": "2026-02-15T10:33:27Z"
       },
       "status": "idle"
     },
@@ -360,7 +412,7 @@
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2026-02-14T13:39:08Z"
+        "updated_at_utc": "2026-02-15T13:37:11Z"
       },
       "status": "idle"
     },
@@ -373,7 +425,7 @@
         "delta": {
           "files_migrated": 0
         },
-        "updated_at_utc": "2025-12-17T08:31:14Z"
+        "updated_at_utc": "2026-02-15T10:32:04Z"
       },
       "status": "idle"
     }
@@ -417,16 +469,16 @@
         "keys_extracted_live": 53586,
         "keys_extracted_outside_worker_registry": 0,
         "keys_extracted_outside_worker_registry_raw": 53579,
-        "keys_extracted_worker_registry": 53593,
+        "keys_extracted_worker_registry": 53586,
         "keys_extracted_worker_registry_raw": 7,
-        "registry_reconcile_adjustment": 53586
+        "registry_reconcile_adjustment": 53579
       },
       "mode": "AUTO_TRANSLATE",
       "total_cycles": 22,
       "translation_sync": {
-        "json_file": "scripts.json",
-        "keys_to_sync": 0,
-        "language": "pl"
+        "json_file": "npclib.json",
+        "keys_to_sync": 67,
+        "language": "zh_TW"
       }
     },
     "i18n_worker_state": {

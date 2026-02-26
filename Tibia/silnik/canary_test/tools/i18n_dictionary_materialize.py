@@ -225,13 +225,115 @@ def build_word(i18n_dir, langs, min_count):
     return result
 
 
+def expand_polish_minimum(i18n_dir, simple_data, word_data, min_combined):
+    if min_combined <= 0:
+        return 0
+
+    simple_data.setdefault("pl", {})
+    word_data.setdefault("pl", {})
+
+    current_total = len(simple_data["pl"]) + len(word_data["pl"])
+    if current_total >= min_combined:
+        return 0
+
+    word_re = re.compile(r"^[^\W\d_]{3,}(?:-[^\W\d_]{3,})?$", re.UNICODE)
+    token_re = re.compile(r"[^\W\d_]+(?:-[^\W\d_]+)?", re.UNICODE)
+
+    phrase_map = defaultdict(Counter)
+    word_map = defaultdict(Counter)
+
+    pl_dir = os.path.join(i18n_dir, "pl")
+    if not os.path.isdir(pl_dir):
+        return 0
+
+    for fname, en_data in iter_en_data(i18n_dir):
+        pl_file = os.path.join(pl_dir, fname)
+        if not os.path.exists(pl_file):
+            continue
+        pl_data = load_json(pl_file, default={})
+        if not isinstance(pl_data, dict):
+            continue
+
+        for key, en_val in en_data.items():
+            en_text = str(en_val or "").strip()
+            if not en_text:
+                continue
+
+            pl_val = pl_data.get(key)
+            if is_untranslated(pl_val, en_text):
+                continue
+
+            pl_text = str(pl_val or "").strip()
+            if not pl_text:
+                continue
+
+            if candidate_shape_ok(en_text, pl_text) and len(en_text) <= 180 and len(pl_text) <= 260:
+                phrase_map[en_text][pl_text] += 1
+
+            en_words = [w.lower() for w in token_re.findall(en_text)]
+            pl_words = [w.lower() for w in token_re.findall(pl_text)]
+            if not en_words or not pl_words:
+                continue
+
+            if len(en_words) == len(pl_words) and 1 <= len(en_words) <= 8:
+                for en_w, pl_w in zip(en_words, pl_words):
+                    if en_w == pl_w:
+                        continue
+                    if not word_re.match(en_w) or not word_re.match(pl_w):
+                        continue
+                    word_map[en_w][pl_w] += 1
+            elif len(en_words) == 1 and len(pl_words) == 1:
+                en_w = en_words[0]
+                pl_w = pl_words[0]
+                if en_w != pl_w and word_re.match(en_w) and word_re.match(pl_w):
+                    word_map[en_w][pl_w] += 1
+
+    target = int(min_combined)
+    added = 0
+
+    phrase_candidates = []
+    for en_text, variants in phrase_map.items():
+        best_tr, best_cnt = variants.most_common(1)[0]
+        total_votes = sum(variants.values())
+        confidence = best_cnt / max(total_votes, 1)
+        phrase_candidates.append((best_cnt, confidence, en_text, best_tr))
+    phrase_candidates.sort(key=lambda x: (-x[0], -x[1], len(x[2])))
+
+    for _, _, en_text, pl_text in phrase_candidates:
+        if len(simple_data["pl"]) + len(word_data["pl"]) >= target:
+            break
+        if en_text in simple_data["pl"]:
+            continue
+        simple_data["pl"][en_text] = pl_text
+        added += 1
+
+    word_candidates = []
+    for en_word, variants in word_map.items():
+        best_tr, best_cnt = variants.most_common(1)[0]
+        total_votes = sum(variants.values())
+        confidence = best_cnt / max(total_votes, 1)
+        word_candidates.append((best_cnt, confidence, en_word, best_tr))
+    word_candidates.sort(key=lambda x: (-x[0], -x[1], len(x[2])))
+
+    for _, _, en_word, pl_word in word_candidates:
+        if len(simple_data["pl"]) + len(word_data["pl"]) >= target:
+            break
+        if en_word in word_data["pl"]:
+            continue
+        word_data["pl"][en_word] = pl_word
+        added += 1
+
+    return added
+
+
 def main():
     parser = argparse.ArgumentParser(description="Materialize external dictionaries for point 4")
     parser.add_argument("--i18n-dir", default="i18n")
     parser.add_argument("--status-dir", default="i18n/status")
-    parser.add_argument("--langs", default="pl,tr,de,es,pt,ru,fr,it,nl,cs")
+    parser.add_argument("--langs", default="ar,az,bg,bn,bs,cs,da,de,el,es,et,fa,fi,fr,he,hi,hr,hu,hy,id,it,ja,ka,kk,ko,lt,lv,mk,ml,ms,nl,no,pl,pt,ro,ru,sk,sl,sq,sr,sv,sw,ta,te,th,tl,tr,uk,uz,vi,zh,zh_TW")
     parser.add_argument("--min-simple-count", type=int, default=3)
     parser.add_argument("--min-word-count", type=int, default=2)
+    parser.add_argument("--min-pl-combined", type=int, default=3000)
     args = parser.parse_args()
 
     langs = [x.strip() for x in args.langs.split(",") if x.strip()]
@@ -239,6 +341,7 @@ def main():
 
     simple_data = build_simple(args.i18n_dir, langs, args.min_simple_count)
     word_data = build_word(args.i18n_dir, langs, args.min_word_count)
+    pl_added = expand_polish_minimum(args.i18n_dir, simple_data, word_data, args.min_pl_combined)
 
     simple_path = os.path.join(args.status_dir, "simple_translations.json")
     word_path = os.path.join(args.status_dir, "word_translations.json")
@@ -253,6 +356,9 @@ def main():
         "langs": langs,
         "simple_counts": {k: len(v) for k, v in simple_data.items()},
         "word_counts": {k: len(v) for k, v in word_data.items()},
+        "pl_min_combined_target": int(args.min_pl_combined),
+        "pl_combined_count": int(len(simple_data.get("pl", {})) + len(word_data.get("pl", {}))),
+        "pl_added_for_target": int(pl_added),
         "outputs": [
             "i18n/status/simple_translations.json",
             "i18n/status/word_translations.json",

@@ -84,7 +84,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "abandoned sewers") then
 		if npcHandler:getTopic(playerId) == 4 then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.the_beggar_king.say_1", "npc.the_beggar_king.say_2", "npc.the_beggar_king.say_3", "npc.the_beggar_king.say_4", "npc.the_beggar_king.say_5"}, 10)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.the_beggar_king.say_6", "npc.the_beggar_king.say_7", "npc.the_beggar_king.say_8", "npc.the_beggar_king.say_9", "npc.the_beggar_king.say_5" }, 10)
 			player:setStorageValue(Storage.Quest.U10_50.DarkTrails.Mission02, 2)
 			npcHandler:setTopic(playerId, 0)
 		end

@@ -1766,6 +1766,15 @@
       "lang": "Ooze Blues"
     },
     {
+      "key": "cpp.title.name_49",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Ooze Blues",
+      "pl": "Orzeźwiający blues",
+      "lang": "Ooze Blues"
+    },
+    {
       "key": "cpp.title.name_50",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2099,6 +2108,15 @@
       "lang": "Bark!"
     },
     {
+      "key": "monster.troll.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hmmm, dogs",
+      "pl": "Hmmm, psy",
+      "lang": "Hmmm, dogs"
+    },
+    {
       "key": "monster.troll.voice_3",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2115,6 +2133,15 @@
       "en": "Groar",
       "pl": "ryk",
       "lang": "Groar"
+    },
+    {
+      "key": "monster.island_troll.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hmmm, dogs",
+      "pl": "Hmmm, psy",
+      "lang": "Hmmm, dogs"
     },
     {
       "key": "monster.island_troll.voice_4",
@@ -2277,6 +2304,15 @@
       "en": "Boohaa!",
       "pl": "Buhaha!",
       "lang": "Boohaa!"
+    },
+    {
+      "key": "monster.webster.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "So tasty!",
+      "pl": "Tak smaczne!",
+      "lang": "So tasty!"
     },
     {
       "key": "monster.frostfur.voice_1",
@@ -2630,6 +2666,33 @@
       "lang": "High Five!"
     },
     {
+      "key": "monster.tomb_servant.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Chaarr!!",
+      "pl": "Charr!!",
+      "lang": "Chaarr!!"
+    },
+    {
+      "key": "monster.honour_guard.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Vengeance!",
+      "pl": "Zemsta!",
+      "lang": "Vengeance!"
+    },
+    {
+      "key": "monster.gravedigger.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "High Five!",
+      "pl": "Piątka!",
+      "lang": "High Five!"
+    },
+    {
       "key": "monster.gravedigger.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2891,6 +2954,15 @@
       "lang": "Mew!"
     },
     {
+      "key": "monster.cat.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Meow!",
+      "pl": "Miauczeć!",
+      "lang": "Meow!"
+    },
+    {
       "key": "monster.hyaena.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2898,6 +2970,24 @@
       "en": "Grrrrrr",
       "pl": "Wrrrr",
       "lang": "Grrrrrr"
+    },
+    {
+      "key": "monster.stone_rhino.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SNIFF!",
+      "pl": "WĘSZY!",
+      "lang": "SNIFF!"
+    },
+    {
+      "key": "monster.fox.voice_1",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Yip! Yip!",
+      "pl": "Tak! Tak!",
+      "lang": "Yip! Yip!"
     },
     {
       "key": "monster.fox.voice_2",
@@ -2916,6 +3006,33 @@
       "en": "Snarl!",
       "pl": "Warczenie!",
       "lang": "Snarl!"
+    },
+    {
+      "key": "monster.clomp.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Grunt!",
+      "pl": "Chrząknięcie!",
+      "lang": "Grunt!"
+    },
+    {
+      "key": "monster.clomp.voice_3",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Snarl!",
+      "pl": "Warczenie!",
+      "lang": "Snarl!"
+    },
+    {
+      "key": "monster.kongra.voice_2",
+      "category": "monsters",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hugah!",
+      "pl": "Uff!",
+      "lang": "Hugah!"
     },
     {
       "key": "monster.rat.voice_1",

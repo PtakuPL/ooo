@@ -17,7 +17,7 @@
     "MEDIUM": 2,
     "LOW": 0
   },
-  "score": 99.9,
+  "score": 99.0,
   "worst_keys": [
     {
       "key": "achievement.317.description",
@@ -124,17 +124,17 @@
     {
       "key": "npc.captain_haba_open_sea.larboard_1",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_3",
+      "key": "npc.dedoras.multi_8",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.captain_haba_open_sea.starboard_1",
+      "key": "npc.eruaran.say_1",
       "category": "npc",
       "type": "V4_artifact",
       "severity": "HIGH"

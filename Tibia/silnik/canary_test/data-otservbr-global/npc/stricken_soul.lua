@@ -50,9 +50,9 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.HauntedHouse.Questline) < 1 then
-		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.stricken_soul.greet_msg_1")
+		npcHandler:setMessage(MESSAGE_GREET, "This place is... haunted... heed my warning... there are... ghooooooosts here...! Why are you giving me that... look? I am certain, there aaaaaaare ghosts here - I've seen them! Do you believe me?")
 	else
-		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.stricken_soul.greet_msg_2")
+		npcHandler:setMessage(MESSAGE_GREET, "Gree... tings.")
 	end
 
 	return true
@@ -70,28 +70,20 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.say_4")
 			npcHandler:setTopic(playerId, 3)
 		elseif player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.HauntedHouse.Questline) < 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.say_5")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, playerName) then
 		if npcHandler:getTopic(playerId) == 3 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.multi_1")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.multi_2")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.multi_3")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.multi_4")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.multi_5")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.multi_6")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.multi_7")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.multi_8")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.multi_9")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { { "npc.stricken_soul.say_6", { playerName } }, "npc.stricken_soul.say_7", "npc.stricken_soul.say_8", "npc.stricken_soul.say_9", "npc.stricken_soul.say_10", "npc.stricken_soul.say_11", "npc.stricken_soul.say_12", { "npc.stricken_soul.say_13", { playerName } } })
 			player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.HauntedHouse.Questline, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
 	else
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.say_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.stricken_soul.say_14")
 		npcHandler:setTopic(playerId, 0)
 	end
 

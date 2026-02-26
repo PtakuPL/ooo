@@ -1499,6 +1499,186 @@
       "lang": "World Chat"
     },
     {
+      "key": "client.game_screenshot.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bestiary Entry Unlocked",
+      "pl": "Wpis do bestiariusza odblokowany",
+      "lang": "Bestiary Entry Unlocked"
+    },
+    {
+      "key": "client.game_healthcircle.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "HP/MP Circle",
+      "pl": "Koło HP/MP",
+      "lang": "HP/MP Circle"
+    },
+    {
+      "key": "client.game_healthcircle.text4",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "HP/MP Circle",
+      "pl": "Koło HP/MP",
+      "lang": "HP/MP Circle"
+    },
+    {
+      "key": "client.things.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Couldn't load assets",
+      "pl": "Nie udało się wczytać zasobów",
+      "lang": "Couldn't load assets"
+    },
+    {
+      "key": "client.statsbar.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Axe Fighting Skill",
+      "pl": "Umiejętność walki toporem",
+      "lang": "Axe Fighting Skill"
+    },
+    {
+      "key": "client.statsbar.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Club Fighting Skill",
+      "pl": "Umiejętność walki klubowej",
+      "lang": "Club Fighting Skill"
+    },
+    {
+      "key": "client.statsbar.text4",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Distance Fighting Skill",
+      "pl": "Umiejętność walki na odległość",
+      "lang": "Distance Fighting Skill"
+    },
+    {
+      "key": "client.statsbar.text5",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Fist Fighting Skill",
+      "pl": "Umiejętność walki na pięści",
+      "lang": "Fist Fighting Skill"
+    },
+    {
+      "key": "client.spells.text4",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Nature's Embrace",
+      "pl": "Uściski natury",
+      "lang": "Nature's Embrace"
+    },
+    {
+      "key": "client.quickloot.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Quick Loot Nearby Corpses",
+      "pl": "Szybki łup pobliskich zwłok",
+      "lang": "Quick Loot Nearby Corpses"
+    },
+    {
+      "key": "client.character.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "InventoryItemCyclopedia",
+      "pl": "InventoryPrzedmiotCyclopedia",
+      "lang": "InventoryItemCyclopedia"
+    },
+    {
+      "key": "client.mounts.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "data/XML/mounts.xml",
+      "pl": "dane/XML/mounts.xml",
+      "lang": "data/XML/mounts.xml"
+    },
+    {
+      "key": "client.json.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "invalid table: sparse array",
+      "pl": "nieprawidłowa tabela: rzadka tablica",
+      "lang": "invalid table: sparse array"
+    },
+    {
+      "key": "client.market.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Balance: <value> gold",
+      "pl": "Balance: <value> Złoto",
+      "lang": "Balance: <value> gold"
+    },
+    {
+      "key": "client.bottommenu.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Enabling Boosted Creature Panel",
+      "pl": "Włączanie panelu wzmocnionych stworzeń",
+      "lang": "Enabling Boosted Creature Panel"
+    },
+    {
+      "key": "client.keybind.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "controls-preset-current",
+      "pl": "sterowanie-prądem ustawionym",
+      "lang": "controls-preset-current"
+    },
+    {
+      "key": "client.imbuing.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Imbue Empty Slot",
+      "pl": "Napełnij puste miejsce",
+      "lang": "Imbue Empty Slot"
+    },
+    {
+      "key": "client.game_highscore.text4",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Retro Hardcore Pvp",
+      "pl": "Retro-hardcore'owy tryb Pvp",
+      "lang": "Retro Hardcore Pvp"
+    },
+    {
+      "key": "client.keybins.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "styles/controls/preset",
+      "pl": "style/sterowanie/ustawienia wstępne",
+      "lang": "styles/controls/preset"
+    },
+    {
+      "key": "client.keybins.text4",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Unknown chat mode",
+      "pl": "Nieznany tryb czatu",
+      "lang": "Unknown chat mode"
+    },
+    {
       "key": "client.game_store.text1",
       "category": "client",
       "type": "pl_reference_missing_translation",
@@ -1551,6 +1731,15 @@
       "en": "agony",
       "pl": "cierpienie",
       "lang": "agony"
+    },
+    {
+      "key": "cpp.combat.charm_savage_blow",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (savage blow charm)",
+      "pl": "(amulet dzikiego ciosu)",
+      "lang": " (savage blow charm)"
     },
     {
       "key": "cpp.combat.death",
@@ -2093,6 +2282,15 @@
       "lang": "Required"
     },
     {
+      "key": "cpp.inspect.required_magic_level",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Required Magic Level",
+      "pl": "Wymagany Magia Poziom",
+      "lang": "Required Magic Level"
+    },
+    {
       "key": "cpp.inspect.speed",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2327,6 +2525,15 @@
       "lang": " level {0}"
     },
     {
+      "key": "cpp.look.magic_shield_capacity",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "magic shield capacity",
+      "pl": "magia tarcza udźperuka",
+      "lang": "magic shield capacity"
+    },
+    {
       "key": "cpp.look.minute_one",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2516,6 +2723,15 @@
       "lang": " and others"
     },
     {
+      "key": "cpp.player.exp_animus_bonus",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (animus mastery bonus {0}%)",
+      "pl": "(animus biegłość premia {0}%)",
+      "lang": " (animus mastery bonus {0}%)"
+    },
+    {
       "key": "cpp.player.list_and",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2613,6 +2829,15 @@
       "en": "Outfit",
       "pl": "Strój",
       "lang": "Outfit"
+    },
+    {
+      "key": "cpp.protocol.resting_active_bonuses",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Active Resting Area Bonuses:\n{0}.",
+      "pl": "Aktywni Resting Obszar, region Premia:\n{0}.",
+      "lang": "Active Resting Area Bonuses:\n{0}."
     },
     {
       "key": "cpp.protocol.support_outfit_gamemaster",
@@ -2723,6 +2948,96 @@
       "lang": "unknown"
     },
     {
+      "key": "cpp.title.desc_70",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Invested 160,000 tasks points.",
+      "pl": "Inwestować 160,000 zadanie, zajęcie points.",
+      "lang": "Invested 160,000 tasks points."
+    },
+    {
+      "key": "cpp.title.desc_71",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Invested 320,000 tasks points.",
+      "pl": "Inwestować 320,000 zadanie, zajęcie points.",
+      "lang": "Invested 320,000 tasks points."
+    },
+    {
+      "key": "cpp.title.desc_72",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Invested 430,000 tasks points.",
+      "pl": "Inwestować 430,000 zadanie, zajęcie points.",
+      "lang": "Invested 430,000 tasks points."
+    },
+    {
+      "key": "cpp.title.desc_85",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Reached 2000 charm points. Quite beastly!",
+      "pl": "Osiągnięto 2000 punktów uroku. Całkiem bestialski!",
+      "lang": "Reached 2000 charm points. Quite beastly!"
+    },
+    {
+      "key": "cpp.title.desc_93",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Reach 15,000 boss points.",
+      "pl": "Zdobądź 15 000 punktów bossa.",
+      "lang": "Reach 15,000 boss points."
+    },
+    {
+      "key": "cpp.title.name_10",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 2)",
+      "pl": "Topmodelka Tibia (klasa 2)",
+      "lang": "Tibia's Topmodel (Grade 2)"
+    },
+    {
+      "key": "cpp.title.name_11",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 3)",
+      "pl": "Topmodelka Tibia (klasa 3)",
+      "lang": "Tibia's Topmodel (Grade 3)"
+    },
+    {
+      "key": "cpp.title.name_12",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 4)",
+      "pl": "Topmodelka Tibia (klasa 4)",
+      "lang": "Tibia's Topmodel (Grade 4)"
+    },
+    {
+      "key": "cpp.title.name_13",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 5)",
+      "pl": "Topmodelka Tibia (klasa 5)",
+      "lang": "Tibia's Topmodel (Grade 5)"
+    },
+    {
+      "key": "cpp.title.name_15",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cyclopscamper",
+      "pl": "Cyklopkamper",
+      "lang": "Cyclopscamper"
+    },
+    {
       "key": "cpp.title.name_17",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2768,6 +3083,15 @@
       "lang": "Big Boss"
     },
     {
+      "key": "cpp.title.name_33",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Reigning Drome Champion",
+      "pl": "Aktualny mistrz Drome",
+      "lang": "Reigning Drome Champion"
+    },
+    {
       "key": "cpp.title.name_34",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2775,6 +3099,24 @@
       "en": "Bipedantic",
       "pl": "Dwunożny",
       "lang": "Bipedantic"
+    },
+    {
+      "key": "cpp.title.name_35",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood Moon Hunter",
+      "pl": "Krew Księżyc Myśliwy",
+      "lang": "Blood Moon Hunter"
+    },
+    {
+      "key": "cpp.title.name_35_female",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood Moon Huntress",
+      "pl": "Łowczyni Krwawego Księżyca",
+      "lang": "Blood Moon Huntress"
     },
     {
       "key": "cpp.title.name_44",
@@ -2874,6 +3216,15 @@
       "en": "Beastly",
       "pl": "Paskudny",
       "lang": "Beastly"
+    },
+    {
+      "key": "cpp.title.name_9",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 1)",
+      "pl": "Topmodelka Tibia (klasa 1)",
+      "lang": "Tibia's Topmodel (Grade 1)"
     },
     {
       "key": "cpp.title.name_91",
@@ -3038,6 +3389,51 @@
       "lang": "wand"
     },
     {
+      "key": "event.player.msg1",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "event.player.msg_move_fast",
+      "pl": "Nie możesz tak szybko przenosić tego przedmiotu.",
+      "lang": "event.player.msg_move_fast"
+    },
+    {
+      "key": "event.player.msg2",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily-reward-xp-boost",
+      "pl": "codzienne-nagroda-doładowanie-xp",
+      "lang": "daily-reward-xp-boost"
+    },
+    {
+      "key": "event.player.msg3",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily-reward-xp-boost",
+      "pl": "codzienne-nagroda-doładowanie-xp",
+      "lang": "daily-reward-xp-boost"
+    },
+    {
+      "key": "event.player.msg4",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily-reward-xp-boost",
+      "pl": "codzienne-nagroda-doładowanie-xp",
+      "lang": "daily-reward-xp-boost"
+    },
+    {
+      "key": "event.player.msg5",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily-reward-xp-boost",
+      "pl": "codzienne-nagroda-doładowanie-xp",
+      "lang": "daily-reward-xp-boost"
+    },
+    {
       "key": "web.tpl.forum.add_board.td_1",
       "category": "html",
       "type": "pl_reference_missing_translation",
@@ -3087,63 +3483,63 @@
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
+      "en": "rabbit's foot",
+      "pl": "łapka królika",
+      "lang": "rabbit's foot"
     },
     {
-      "key": "item.30218.name",
+      "key": "item.12173.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
+      "en": "rabbit's foot lucky charm",
+      "pl": "Talizman w postaci króliczej łapki",
+      "lang": "rabbit's foot lucky charm"
     },
     {
-      "key": "item.30273.name",
+      "key": "item.12174.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
+      "en": "fake rabbit's foot",
+      "pl": "fałszywa łapka królika",
+      "lang": "fake rabbit's foot"
     },
     {
-      "key": "item.3274.name",
+      "key": "item.12202.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "axe",
-      "pl": "Topór",
-      "lang": "axe"
+      "en": "dark sandy floor",
+      "pl": "ciemna piaszczysta podłoga",
+      "lang": "dark sandy floor"
     },
     {
-      "key": "item.7107.name",
+      "key": "item.12207.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
+      "en": "strange yellow powder",
+      "pl": "dziwny żółty proszek",
+      "lang": "strange yellow powder"
     },
     {
-      "key": "item.7740.name",
+      "key": "item.12208.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
+      "en": "strange blue powder",
+      "pl": "dziwny niebieski proszek",
+      "lang": "strange blue powder"
     },
     {
-      "key": "item.800.name",
+      "key": "item.12209.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
+      "en": "strange green powder",
+      "pl": "dziwny zielony proszek",
+      "lang": "strange green powder"
     },
     {
       "key": "item.9083.desc",
@@ -3159,31 +3555,31 @@
       "category": "libs",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Close",
-      "pl": "Zamknij",
-      "lang": "Close"
+      "en": "strange violet powder",
+      "pl": "dziwny fioletowy proszek",
+      "lang": "strange violet powder"
     },
     {
-      "key": "lib.player.modal_button_no",
-      "category": "libs",
+      "key": "item.12211.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
+      "en": "strange orange powder",
+      "pl": "dziwny pomarańczowy proszek",
+      "lang": "strange orange powder"
     },
     {
-      "key": "lib.player.modal_button_yes",
-      "category": "libs",
+      "key": "item.12227.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Yes",
-      "pl": "Tak",
-      "lang": "Yes"
+      "en": "strange yellow powder",
+      "pl": "dziwny żółty proszek",
+      "lang": "strange yellow powder"
     },
     {
-      "key": "module.init.text4",
-      "category": "modules",
+      "key": "item.12228.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tVersion = ",
@@ -3191,8 +3587,8 @@
       "lang": "\tVersion = "
     },
     {
-      "key": "module.daily_reward.text5",
-      "category": "modules",
+      "key": "item.12232.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tToDo = ",
@@ -3200,8 +3596,8 @@
       "lang": "\tToDo = "
     },
     {
-      "key": "module.hireling_module.text2",
-      "category": "modules",
+      "key": "item.12233.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tVersion = ",
@@ -3209,157 +3605,157 @@
       "lang": "\tVersion = "
     },
     {
-      "key": "module.hireling_module.text4",
-      "category": "modules",
+      "key": "item.12314.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "\tDate =",
-      "pl": "Data =",
-      "lang": "\tDate ="
+      "en": "hollow stampor hoof",
+      "pl": "puste kopyto stemplowe",
+      "lang": "hollow stampor hoof"
     },
     {
-      "key": "monster.salamander.name",
-      "category": "monsters",
+      "key": "item.12317.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Salamander",
-      "pl": "Salamandra",
-      "lang": "Salamander"
+      "en": "giant crab pincer",
+      "pl": "gigantyczne szczypce do krabów",
+      "lang": "giant crab pincer"
     },
     {
-      "key": "monster.troll.name",
-      "category": "monsters",
+      "key": "item.12320.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Troll",
-      "pl": "Trol",
-      "lang": "Troll"
+      "en": "sweet smelling bait",
+      "pl": "słodko pachnąca przynęta",
+      "lang": "sweet smelling bait"
     },
     {
-      "key": "monster.skeleton.name",
-      "category": "monsters",
+      "key": "item.12333.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Skeleton",
-      "pl": "Szkielet",
-      "lang": "Skeleton"
+      "en": "slain undead cavebear",
+      "pl": "zabity nieumarły niedźwiedź jaskiniowy",
+      "lang": "slain undead cavebear"
     },
     {
-      "key": "monster.wolf.name",
-      "category": "monsters",
+      "key": "item.12334.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Wolf",
-      "pl": "Wilk",
-      "lang": "Wolf"
+      "en": "slain undead cavebear",
+      "pl": "zabity nieumarły niedźwiedź jaskiniowy",
+      "lang": "slain undead cavebear"
     },
     {
-      "key": "monster.hunter.name",
-      "category": "monsters",
+      "key": "item.12335.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Hunter",
-      "pl": "Myśliwy",
-      "lang": "Hunter"
+      "en": "slain undead cavebear",
+      "pl": "zabity nieumarły niedźwiedź jaskiniowy",
+      "lang": "slain undead cavebear"
     },
     {
-      "key": "monster.bandit.name",
-      "category": "monsters",
+      "key": "item.12336.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Bandit",
-      "pl": "Bandyta",
-      "lang": "Bandit"
+      "en": "slain undead cavebear",
+      "pl": "zabity nieumarły niedźwiedź jaskiniowy",
+      "lang": "slain undead cavebear"
     },
     {
-      "key": "monster.behemoth.name",
-      "category": "monsters",
+      "key": "item.12337.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Behemoth",
-      "pl": "Potwór",
-      "lang": "Behemoth"
+      "en": "dead midnight panther",
+      "pl": "martwa pantera północy",
+      "lang": "dead midnight panther"
     },
     {
-      "key": "monster.old_wasp.voice_1",
-      "category": "monsters",
+      "key": "item.12338.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Bssssss",
-      "pl": "Bsssss",
-      "lang": "Bssssss"
+      "en": "dead midnight panther",
+      "pl": "martwa pantera północy",
+      "lang": "dead midnight panther"
     },
     {
-      "key": "monster.old_pig.voice_1",
-      "category": "monsters",
+      "key": "item.12339.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Oink oink",
-      "pl": "Chrum chrum",
-      "lang": "Oink oink"
+      "en": "dead midnight panther",
+      "pl": "martwa pantera północy",
+      "lang": "dead midnight panther"
     },
     {
-      "key": "monster.old_pig.voice_2",
-      "category": "monsters",
+      "key": "item.12340.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Oink",
-      "pl": "Chrum",
-      "lang": "Oink"
+      "en": "dead midnight panther",
+      "pl": "martwa pantera północy",
+      "lang": "dead midnight panther"
     },
     {
-      "key": "monster.old_wolf.name",
-      "category": "monsters",
+      "key": "item.12368.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Wolf",
-      "pl": "Wilk",
-      "lang": "Wolf"
+      "en": "magic wolf trap",
+      "pl": "poziom wilk pułapka",
+      "lang": "magic wolf trap"
     },
     {
-      "key": "monster.old_wolf.voice_2",
-      "category": "monsters",
+      "key": "item.12479.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Grrrrrrr",
-      "pl": "Wrrrrrr",
-      "lang": "Grrrrrrr"
+      "en": "ornate canopic jar",
+      "pl": "ozdobny słój kanopski",
+      "lang": "ornate canopic jar"
     },
     {
-      "key": "monster.old_bear.voice_1",
-      "category": "monsters",
+      "key": "item.12494.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Grrrr",
-      "pl": "Wrrrr",
-      "lang": "Grrrr"
+      "en": "dead iron servant",
+      "pl": "martwy żelazny sługa",
+      "lang": "dead iron servant"
     },
     {
-      "key": "monster.old_bear.voice_2",
-      "category": "monsters",
+      "key": "item.12495.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Groar",
-      "pl": "ryk",
-      "lang": "Groar"
+      "en": "dead golden servant",
+      "pl": "martwy złoty sługa",
+      "lang": "dead golden servant"
     },
     {
-      "key": "monster.weeper.voice_1",
-      "category": "monsters",
+      "key": "item.12496.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Moooaaan",
-      "pl": "Muuuuuu",
-      "lang": "Moooaaan"
+      "en": "dead diamond servant",
+      "pl": "martwy diamentowy sługa",
+      "lang": "dead diamond servant"
     },
     {
-      "key": "monster.eternal_guardian.voice_1",
-      "category": "monsters",
+      "key": "item.12511.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Zzrrkrrch!",
-      "pl": "Zrrrkrrch!",
-      "lang": "Zzrrkrrch!"
+      "en": "ornate canopic jar",
+      "pl": "ozdobny słój kanopski",
+      "lang": "ornate canopic jar"
     },
     {
       "key": "monster.eternal_guardian.voice_2",
@@ -3384,63 +3780,63 @@
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Eliminated",
-      "pl": "Wyłączony",
-      "lang": "Eliminated"
+      "en": "dead white deer",
+      "pl": "martwy biały jeleń",
+      "lang": "dead white deer"
     },
     {
-      "key": "monster.orewalker.voice_1",
-      "category": "monsters",
+      "key": "item.12527.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "CLONK!",
-      "pl": "KLONK!",
-      "lang": "CLONK!"
+      "en": "dead white deer",
+      "pl": "martwy biały jeleń",
+      "lang": "dead white deer"
     },
     {
-      "key": "monster.rustheap_golem.voice_3",
-      "category": "monsters",
+      "key": "item.12528.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "*frzzp*",
-      "pl": "*frzz*",
-      "lang": "*frzzp*"
+      "en": "dead white deer",
+      "pl": "martwy biały jeleń",
+      "lang": "dead white deer"
     },
     {
-      "key": "monster.magma_crawler.voice_1",
-      "category": "monsters",
+      "key": "item.12529.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Crrroak!",
-      "pl": "Crrrroak!",
-      "lang": "Crrroak!"
+      "en": "dead white deer",
+      "pl": "martwy biały jeleń",
+      "lang": "dead white deer"
     },
     {
-      "key": "monster.ice_golem.voice_1",
-      "category": "monsters",
+      "key": "item.12542.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Chrrr.",
-      "pl": "Chrr.",
-      "lang": "Chrrr."
+      "en": "golden scorpion pendant",
+      "pl": "złoty wisiorek ze skorpionem",
+      "lang": "golden scorpion pendant"
     },
     {
-      "key": "monster.ice_golem.voice_2",
-      "category": "monsters",
+      "key": "item.12543.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Crrrrk.",
-      "pl": "Crrr.",
-      "lang": "Crrrrk."
+      "en": "golden hyaena pendant",
+      "pl": "złoty wisiorek z hieną",
+      "lang": "golden hyaena pendant"
     },
     {
-      "key": "monster.infected_weeper.voice_1",
-      "category": "monsters",
+      "key": "item.12544.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Moooaaan",
-      "pl": "Muuuuuu",
-      "lang": "Moooaaan"
+      "en": "white deer antlers",
+      "pl": "poroże białego jelenia",
+      "lang": "white deer antlers"
     },
     {
       "key": "monster.goggle_cake.voice_3",
@@ -3456,126 +3852,126 @@
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Grrrrunt",
-      "pl": "Wrrrr",
-      "lang": "Grrrrunt"
+      "en": "white deer skin",
+      "pl": "skóra białego jelenia",
+      "lang": "white deer skin"
     },
     {
-      "key": "monster.green_frog.voice_1",
-      "category": "monsters",
+      "key": "item.12550.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "golden fir cone",
+      "pl": "Złotoen fir cone",
+      "lang": "golden fir cone"
     },
     {
-      "key": "monster.salamander.voice_1",
-      "category": "monsters",
+      "key": "item.12599.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Chrrch!",
-      "pl": "Chrr!",
-      "lang": "Chrrch!"
+      "en": "mage's cap",
+      "pl": "czapka maga",
+      "lang": "mage's cap"
     },
     {
-      "key": "monster.infernal_frog.voice_1",
-      "category": "monsters",
+      "key": "item.12658.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead shaburak demon",
+      "pl": "martwy demon Shaburak",
+      "lang": "dead shaburak demon"
     },
     {
-      "key": "monster.orchid_frog.voice_1",
-      "category": "monsters",
+      "key": "item.12659.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead askarak demon",
+      "pl": "martwy demon askarak",
+      "lang": "dead askarak demon"
     },
     {
-      "key": "monster.azure_frog.voice_1",
-      "category": "monsters",
+      "key": "item.12660.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead shaburak lord",
+      "pl": "martwy pan Shaburak",
+      "lang": "dead shaburak lord"
     },
     {
-      "key": "monster.bog_frog.voice_1",
-      "category": "monsters",
+      "key": "item.12661.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead shaburak lord",
+      "pl": "martwy pan Shaburak",
+      "lang": "dead shaburak lord"
     },
     {
-      "key": "monster.crimson_frog.voice_1",
-      "category": "monsters",
+      "key": "item.12662.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead shaburak lord",
+      "pl": "martwy pan Shaburak",
+      "lang": "dead shaburak lord"
     },
     {
-      "key": "monster.toad.voice_2",
-      "category": "monsters",
+      "key": "item.12663.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead askarak lord",
+      "pl": "martwy pan askarak",
+      "lang": "dead askarak lord"
     },
     {
-      "key": "monster.coral_frog.voice_1",
-      "category": "monsters",
+      "key": "item.12664.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ribbit!",
-      "pl": "Kum!",
-      "lang": "Ribbit!"
+      "en": "dead askarak lord",
+      "pl": "martwy pan askarak",
+      "lang": "dead askarak lord"
     },
     {
-      "key": "monster.mercury_blob.voice_1",
-      "category": "monsters",
+      "key": "item.12665.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Crackle",
-      "pl": "Trzask",
-      "lang": "Crackle"
+      "en": "dead askarak lord",
+      "pl": "martwy pan askarak",
+      "lang": "dead askarak lord"
     },
     {
-      "key": "monster.death_blob.voice_1",
-      "category": "monsters",
+      "key": "item.12678.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Shlorz",
-      "pl": "Szlorz",
-      "lang": "Shlorz"
+      "en": "dead raging mage",
+      "pl": "martwy, wściekły mag",
+      "lang": "dead raging mage"
     },
     {
-      "key": "monster.chocolate_blob.voice_2",
-      "category": "monsters",
+      "key": "item.12679.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Smudge",
-      "pl": "Plama",
-      "lang": "Smudge"
+      "en": "dead raging mage",
+      "pl": "martwy, wściekły mag",
+      "lang": "dead raging mage"
     },
     {
-      "key": "monster.frost_troll.voice_2",
-      "category": "monsters",
+      "key": "item.12680.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Broar!",
-      "pl": "Bracie!",
-      "lang": "Broar!"
+      "en": "dead raging mage",
+      "pl": "martwy, wściekły mag",
+      "lang": "dead raging mage"
     },
     {
       "key": "monster.broken_shaper.voice_1",
@@ -3591,18 +3987,18 @@
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Yhouuuu!",
-      "pl": "Uuuuu!",
-      "lang": "Yhouuuu!"
+      "en": "dead raging mage",
+      "pl": "martwy, wściekły mag",
+      "lang": "dead raging mage"
     },
     {
-      "key": "monster.mooh'tah_warrior.voice_2",
-      "category": "monsters",
+      "key": "item.12791.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ommm!",
-      "pl": "Omm!",
-      "lang": "Ommm!"
+      "en": "dead peeing orc",
+      "pl": "martwy sikający ork",
+      "lang": "dead peeing orc"
     },
     {
       "key": "monster.enslaved_dwarf.voice_1",

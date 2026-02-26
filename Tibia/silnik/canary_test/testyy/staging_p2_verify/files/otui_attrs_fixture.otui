@@ -1,0 +1,11 @@
+Panel
+  text: tr('otclient_mods.otui_attrs_fixture.otui_text_1')
+  !text: tr('otclient_mods.otui_attrs_fixture.otui_text_2')
+  tooltip: tr('otclient_mods.otui_attrs_fixture.otui_text_3')
+  title: tr('otclient_mods.otui_attrs_fixture.otui_text_4')
+  description: tr('otclient_mods.otui_attrs_fixture.otui_text_5')
+  placeholder: tr('otclient_mods.otui_attrs_fixture.otui_text_6')
+  label: tr('otclient_mods.otui_attrs_fixture.otui_text_7')
+  !tooltip: tr('otclient_mods.otui_attrs_fixture.otui_text_8')
+  text: tr('already.key')
+  placeholder: "12345"

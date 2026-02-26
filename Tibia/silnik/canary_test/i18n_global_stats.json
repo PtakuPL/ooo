@@ -12,18 +12,18 @@
     "files_without_keys": 8,
     "keys_extracted": 53586,
     "keys_extracted_live": 53586,
-    "keys_extracted_worker_registry": 53593,
+    "keys_extracted_worker_registry": 53586,
     "keys_extracted_worker_registry_raw": 7,
-    "registry_reconcile_adjustment": 53586,
+    "registry_reconcile_adjustment": 53579,
     "keys_extracted_outside_worker_registry": 0,
     "keys_extracted_outside_worker_registry_raw": 53579,
     "current_category": "errors",
     "batch_size": 110
   },
   "translation_sync": {
-    "language": "pl",
-    "json_file": "scripts.json",
-    "keys_to_sync": 0
+    "language": "zh_TW",
+    "json_file": "npclib.json",
+    "keys_to_sync": 67
   },
   "auto_translate": {
     "language": "pl",
@@ -36,8 +36,250 @@
     "recent_examples": []
   },
   "idle": {
-    "new_files_detected": 152,
-    "quality_issues": 2875,
-    "last_scan": "2025-12-16T05:59:39.875505"
+    "new_files_detected": 0,
+    "quality_issues": 6017,
+    "last_scan": "2026-02-15T11:56:07.554456"
+  },
+  "pre_migration": {
+    "hits": 849,
+    "files_with_hits": 141,
+    "total_files_scanned": 2696,
+    "requested_category": "errors",
+    "categories_scanned": [
+      "errors"
+    ],
+    "categories_scanned_count": 1,
+    "generated_at_utc": "2026-02-15T13:45:42.747752Z",
+    "latest_file": "i18n/status/pre_migration_todo/pre_migration_todo_latest.json"
+  },
+  "documentation": {
+    "total_files": 7967,
+    "documented": 18,
+    "remaining": 7949,
+    "errors": 0,
+    "pct": 0.2,
+    "quality_pct": 66.7,
+    "quality_ok": 0,
+    "quality_issues": 0,
+    "cursor": 18,
+    "last_run": "",
+    "latest_file": "i18n/status/documentation_latest.json"
+  },
+  "extraction": {
+    "total_candidates": 136636,
+    "high_confidence": 7409,
+    "review_queue": 129227,
+    "crossref": 108284,
+    "files_processed": 10414,
+    "confidence_threshold": 0.6,
+    "plugins": [
+      "lua_runtime_calls",
+      "cpp_runtime_strings",
+      "otui_otml_ui_texts",
+      "html_twig_php_visible_text",
+      "xml_content_text"
+    ],
+    "candidates_by_plugin": {
+      "lua_runtime_calls": 200,
+      "cpp_runtime_strings": 167,
+      "otui_otml_ui_texts": 119,
+      "html_twig_php_visible_text": 16388,
+      "xml_content_text": 119863
+    },
+    "parser_failures": 0,
+    "last_run": "2026-02-14T22:44:47.031642Z"
+  },
+  "pre_migration_per_cat": {
+    "actions": {
+      "hits": 0,
+      "files_with_hits": 0,
+      "files_scanned": 200,
+      "generated": "2026-02-15T13:36:30.928474Z"
+    },
+    "chatchannels": {
+      "hits": 0,
+      "files_with_hits": 0,
+      "files_scanned": 8,
+      "generated": "2026-02-15T13:37:59.866064Z"
+    },
+    "cpp": {
+      "hits": 109,
+      "files_with_hits": 32,
+      "files_scanned": 437,
+      "generated": "2026-02-15T13:43:11.969849Z"
+    },
+    "creaturescripts": {
+      "hits": 0,
+      "files_with_hits": 0,
+      "files_scanned": 48,
+      "generated": "2026-02-15T13:37:29.684379Z"
+    },
+    "dataroot": {
+      "hits": 1,
+      "files_with_hits": 1,
+      "files_scanned": 4,
+      "generated": "2026-02-15T13:38:18.822747Z"
+    },
+    "errors": {
+      "hits": 849,
+      "files_with_hits": 141,
+      "files_scanned": 2696,
+      "generated": "2026-02-15T13:45:42.747752Z"
+    },
+    "events": {
+      "hits": 0,
+      "files_with_hits": 0,
+      "files_scanned": 4,
+      "generated": "2026-02-15T13:37:52.509388Z"
+    },
+    "globalevents": {
+      "hits": 0,
+      "files_with_hits": 0,
+      "files_scanned": 16,
+      "generated": "2026-02-15T10:32:35.220037Z"
+    },
+    "html": {
+      "hits": 11437,
+      "files_with_hits": 288,
+      "files_scanned": 677,
+      "generated": "2026-02-15T13:42:49.777819Z"
+    },
+    "items": {
+      "hits": 17390,
+      "files_with_hits": 9,
+      "files_scanned": 10,
+      "generated": "2026-02-15T10:32:49.453870Z"
+    },
+    "libs": {
+      "hits": 1691,
+      "files_with_hits": 35,
+      "files_scanned": 86,
+      "generated": "2026-02-15T13:37:45.350837Z"
+    },
+    "modules": {
+      "hits": 965,
+      "files_with_hits": 3,
+      "files_scanned": 7,
+      "generated": "2026-02-15T10:33:11.095701Z"
+    },
+    "monsters": {
+      "hits": 18665,
+      "files_with_hits": 1703,
+      "files_scanned": 1704,
+      "generated": "2026-02-15T10:30:30.071500Z"
+    },
+    "mounts": {
+      "hits": 697,
+      "files_with_hits": 8,
+      "files_scanned": 9,
+      "generated": "2026-02-15T13:37:37.255054Z"
+    },
+    "movements": {
+      "hits": 0,
+      "files_with_hits": 0,
+      "files_scanned": 53,
+      "generated": "2026-02-15T10:32:20.141058Z"
+    },
+    "npc": {
+      "hits": 1,
+      "files_with_hits": 1,
+      "files_scanned": 1028,
+      "generated": "2026-02-15T10:30:12.832868Z"
+    },
+    "npclib": {
+      "hits": 0,
+      "files_with_hits": 0,
+      "files_scanned": 7,
+      "generated": "2026-02-15T13:38:07.134384Z"
+    },
+    "otclient_data": {
+      "hits": 1,
+      "files_with_hits": 1,
+      "files_scanned": 183,
+      "generated": "2026-02-15T13:43:52.671061Z"
+    },
+    "otclient_mods": {
+      "hits": 0,
+      "files_with_hits": 0,
+      "files_scanned": 0,
+      "generated": "2026-02-15T10:33:44.506585Z"
+    },
+    "otclient_modules": {
+      "hits": 6587,
+      "files_with_hits": 168,
+      "files_scanned": 294,
+      "generated": "2026-02-15T13:43:34.402826Z"
+    },
+    "otclient_src": {
+      "hits": 60,
+      "files_with_hits": 19,
+      "files_scanned": 366,
+      "generated": "2026-02-15T13:44:54.335564Z"
+    },
+    "otclient_tools": {
+      "hits": 154,
+      "files_with_hits": 8,
+      "files_scanned": 8,
+      "generated": "2026-02-15T13:45:10.988782Z"
+    },
+    "php": {
+      "hits": 53490,
+      "files_with_hits": 2779,
+      "files_scanned": 5587,
+      "generated": "2026-02-15T13:42:23.560811Z"
+    },
+    "quests": {
+      "hits": 0,
+      "files_with_hits": 0,
+      "files_scanned": 971,
+      "generated": "2026-02-15T13:36:42.150525Z"
+    },
+    "raids": {
+      "hits": 1,
+      "files_with_hits": 1,
+      "files_scanned": 90,
+      "generated": "2026-02-15T10:30:54.352016Z"
+    },
+    "scripts": {
+      "hits": 0,
+      "files_with_hits": 0,
+      "files_scanned": 2259,
+      "generated": "2026-02-15T13:36:23.739755Z"
+    },
+    "server": {
+      "hits": 109,
+      "files_with_hits": 32,
+      "files_scanned": 437,
+      "generated": "2026-02-15T13:45:26.089576Z"
+    },
+    "spells": {
+      "hits": 191,
+      "files_with_hits": 191,
+      "files_scanned": 766,
+      "generated": "2026-02-15T13:36:58.719584Z"
+    },
+    "startup": {
+      "hits": 36,
+      "files_with_hits": 3,
+      "files_scanned": 20,
+      "generated": "2026-02-15T10:33:27.173640Z"
+    },
+    "talkactions": {
+      "hits": 0,
+      "files_with_hits": 0,
+      "files_scanned": 88,
+      "generated": "2026-02-15T13:37:11.668254Z"
+    },
+    "world": {
+      "hits": 0,
+      "files_with_hits": 0,
+      "files_scanned": 0,
+      "generated": "2026-02-15T10:32:04.013641Z"
+    }
+  },
+  "pre_migration_totals": {
+    "hits": 112434,
+    "files_with_hits": 5423,
+    "files_scanned": 18063
   }
 }

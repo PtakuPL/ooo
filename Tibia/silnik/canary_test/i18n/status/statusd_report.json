@@ -1152,7 +1152,43 @@
       "min_quality_drop_pct": 1.0
     }
   },
-  "recent_transitions": [],
+  "recent_transitions": [
+    {
+      "ts": "2026-02-15T14:46:00",
+      "from": "MIGRATION",
+      "to": "post-migration",
+      "gate": "pass",
+      "reason": "all categories done or skipped"
+    },
+    {
+      "ts": "2026-02-15T14:46:11",
+      "from": "TRANSLATION_SYNC",
+      "to": "IDLE",
+      "gate": "pass",
+      "reason": "all_synced"
+    },
+    {
+      "ts": "2026-02-15T14:51:10",
+      "from": "PRE_MIGRATION",
+      "to": "AUTO_TRANSLATE",
+      "gate": "pass",
+      "reason": "all categories on skip (914s to next), fallback to translations"
+    },
+    {
+      "ts": "2026-02-15T14:51:10",
+      "from": "MIGRATION",
+      "to": "post-migration",
+      "gate": "pass",
+      "reason": "all categories done or skipped"
+    },
+    {
+      "ts": "2026-02-15T14:51:19",
+      "from": "TRANSLATION_SYNC",
+      "to": "IDLE",
+      "gate": "pass",
+      "reason": "all_synced"
+    }
+  ],
   "recent_errors": [
     {
       "action": "review placeholder/en-copy backlog",
@@ -1229,5 +1265,16 @@
       "min_interval_seconds": 1800,
       "always_sync_any_drift": true
     }
+  },
+  "forced_command_fast_runtime": {
+    "runtime_epoch_id": "c5b0f1d94cba22b6",
+    "runtime_epoch_raw": "script_mtime=1771162609|script_size=917567|script_checkpoint=1771162609|restart_ts=1771162944|restart_cause=worker_missing|worker_pid=4094313",
+    "baseline_ts_utc": "2026-02-15T13:37:20.417388Z",
+    "baseline_source": "manual_config",
+    "auto_baseline_on_epoch_change": true,
+    "auto_baseline_applied": false,
+    "auto_baseline_reason": "manual_baseline_active",
+    "epoch_changed": false,
+    "epoch_cooldown_seconds": 600
   }
 }

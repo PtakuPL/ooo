@@ -197,10 +197,25 @@
     "forced_command_fast": {
       "window_hours": 24.0,
       "sla_target_s": 45.0,
+      "pickup_warn_s": 15.0,
       "pending_warn_s": 15.0,
       "exec_warn_s": 30.0,
       "consecutive_crit": 3,
-      "min_samples": 3
+      "min_samples": 3,
+      "operational_window_hours": 2.0,
+      "operational_min_samples": 3,
+      "baseline_ts_utc": "2026-02-14T22:22:58.957703Z",
+      "auto_baseline_on_epoch_change": true,
+      "epoch_cooldown_seconds": 600,
+      "runtime_epoch_id": "aeb1d612148631ad",
+      "runtime_epoch_raw": "script_mtime=1771158127|script_size=917571|script_checkpoint=1771158127|restart_ts=1771158145|restart_cause=mtime|worker_pid=3984797",
+      "baseline_source": "manual_config",
+      "auto_baseline_applied": false,
+      "auto_baseline_reason": "manual_baseline_active",
+      "epoch_changed": false
+    },
+    "guardian_daemon_lock": {
+      "stale_owner_threshold_seconds": 60
     },
     "registry_reconcile": {
       "min_outside_keys": 1000,
@@ -801,6 +816,42 @@
         "guard_fail_rate_pct": 0.0,
         "no_progress_entries": 0,
         "no_progress_rate_pct": 0.0
+      },
+      {
+        "lang": "ro",
+        "entries": 1,
+        "translated": 10,
+        "guard_fail": 0,
+        "guard_fail_rate_pct": 0.0,
+        "no_progress_entries": 0,
+        "no_progress_rate_pct": 0.0
+      },
+      {
+        "lang": "fr",
+        "entries": 1,
+        "translated": 10,
+        "guard_fail": 0,
+        "guard_fail_rate_pct": 0.0,
+        "no_progress_entries": 0,
+        "no_progress_rate_pct": 0.0
+      },
+      {
+        "lang": "de",
+        "entries": 1,
+        "translated": 10,
+        "guard_fail": 0,
+        "guard_fail_rate_pct": 0.0,
+        "no_progress_entries": 0,
+        "no_progress_rate_pct": 0.0
+      },
+      {
+        "lang": "pt",
+        "entries": 1,
+        "translated": 0,
+        "guard_fail": 0,
+        "guard_fail_rate_pct": 0.0,
+        "no_progress_entries": 1,
+        "no_progress_rate_pct": 100.0
       }
     ],
     "categories_by_translated": [
@@ -971,6 +1022,17 @@
     "gt_translated": 0,
     "gt_active": false,
     "top_guard_fail_targets": []
+  },
+  "forced_command_fast_runtime": {
+    "runtime_epoch_id": "aeb1d612148631ad",
+    "runtime_epoch_raw": "script_mtime=1771158127|script_size=917571|script_checkpoint=1771158127|restart_ts=1771158145|restart_cause=mtime|worker_pid=3984797",
+    "baseline_ts_utc": "2026-02-14T22:22:58.957703Z",
+    "baseline_source": "manual_config",
+    "auto_baseline_on_epoch_change": true,
+    "auto_baseline_applied": false,
+    "auto_baseline_reason": "manual_baseline_active",
+    "epoch_changed": false,
+    "epoch_cooldown_seconds": 600
   },
   "repair_queue_24h": {
     "latest_timestamp": "2026-02-21T20:40:19.039679Z",

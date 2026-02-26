@@ -16,7 +16,7 @@ class MigrationResult:
 
 
 _TEXT_LINE_RE = re.compile(
-    r"^(?P<indent>\s*)(?P<prop>!?text)\s*:\s*(?P<q>['\"])(?P<val>[^'\"\n]*)(?P=q)\s*$"
+    r"^(?P<indent>\s*)(?P<prop>!?(?:text|tooltip|title|description|placeholder|label))\s*:\s*(?P<q>['\"])(?P<val>[^'\"\n]*)(?P=q)\s*$"
 )
 
 

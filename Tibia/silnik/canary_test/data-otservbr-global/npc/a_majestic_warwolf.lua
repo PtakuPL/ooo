@@ -48,7 +48,7 @@ end
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
 	if Player(creature):getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) < 9 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_majestic_warwolf.say_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_majestic_warwolf.say_3")
 		return false
 	end
 	return true
@@ -64,7 +64,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if table.contains({ "addon", "outfit" }, message) then
 		if player:getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) == 9 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_majestic_warwolf.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_majestic_warwolf.say_4")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
@@ -72,11 +72,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		player:addOutfitAddon(148, 2)
 		player:addOutfitAddon(144, 2)
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-		if player:getSex() == PLAYERSEX_FEMALE then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_majestic_warwolf.say_female")
-		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_majestic_warwolf.say_male")
-		end
+		npcHandler:say(player:getSex() == PLAYERSEX_FEMALE and "From now on, you shall be known as |PLAYERNAME|, the wolf girl. You shall be fast and smart as Morgrar, the great white wolf. He shall guide your path." or "From now on, you shall be known as |PLAYERNAME|, the bear warrior. You shall be strong and proud as Angros, the great dark bear. He shall guide your path.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	end
 	return true
@@ -84,9 +80,9 @@ end
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_majestic_warwolf.greet_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.a_majestic_warwolf.farewell_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.a_majestic_warwolf.walkaway_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "Interesting. A human who can speak the language of wolves.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "YOOOOUHHOOOUU!")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "YOOOOUHHOOOUU!")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

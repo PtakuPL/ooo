@@ -97,27 +97,27 @@
   },
   "monster.spyrat_facing_west.name": {
     "src_hash": "d2daea170b386f256578376627093768",
-    "text": "Spyrat Нетrth",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Спират",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T21:58:25.655252Z"
+    "updated_at": "2026-02-25T17:14:55.240636Z"
   },
   "monster.spyrat_facing_east.name": {
     "src_hash": "d2daea170b386f256578376627093768",
-    "text": "Spyrat Нетrth",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Спират",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T21:58:25.661112Z"
+    "updated_at": "2026-02-25T17:15:17.636570Z"
   },
   "monster.spyrat_facing_south.name": {
     "src_hash": "d2daea170b386f256578376627093768",
-    "text": "Spyrat Нетrth",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Спират",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-13T21:58:25.673923Z"
+    "updated_at": "2026-02-25T17:16:28.969074Z"
   },
   "monster.salamander.name": {
     "src_hash": "5617d73c694ad8f8004009e0f6b2e3d6",
@@ -718,14 +718,6 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-13T22:51:37.644798Z"
-  },
-  "data.otservbr.global.npc.a.fading.memory.L53.1295": {
-    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
-    "text": "Oh...",
-    "source": "word_dict",
-    "confidence": 0.92,
-    "verified": false,
-    "updated_at": "2026-02-13T22:51:37.646665Z"
   },
   "item.18386.name": {
     "src_hash": "adafff23fe27d62fa9d5220cc0b3a8ea",
@@ -2104,12 +2096,12 @@
     "updated_at": "2026-02-14T02:43:33.702349Z"
   },
   "npc.a_dead_bureaucrat1.say_1": {
-    "src_hash": "f4195eed0570aee7a7882eadb5b85979",
-    "text": "Хуху, пожалуйста, не причиняй мне боль своим {}! Причина вашего визита?",
+    "src_hash": "81833ebc28f25447db28304aba4cd57c",
+    "text": "Конечно, а где еще. Всем нравится встречаться с моим хозяином, он великий демон, не так ли? Ваше имя...?",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T02:43:33.702848Z"
+    "updated_at": "2026-02-25T22:07:14.064481Z"
   },
   "npc.a_dead_bureaucrat1.say_2": {
     "src_hash": "6c80ac504f39e09fc288756acfd7a105",
@@ -2577,11 +2569,11 @@
   },
   "quests.actions_levers.say_1": {
     "src_hash": "74d6f44cc339cc1af575eabf9d29f26d",
-    "text": "Ты перевернул",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Ты перевернул ",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-14T04:07:29.656357Z"
+    "updated_at": "2026-02-25T10:04:32.585007Z"
   },
   "quests.actions_mono_detector_strange_probing_device.msg_1": {
     "src_hash": "cbbd701a227c41b3a89cdf0f3dde1174",
@@ -3792,12 +3784,12 @@
     "updated_at": "2026-02-14T04:40:53.680643Z"
   },
   "npc.a_dead_bureaucrat3.say_1": {
-    "src_hash": "015bef68461eea886ca860eae9b35852",
-    "text": "Я тоже был {} до своей смерти!! Чего ты хочешь от меня?",
+    "src_hash": "1941a18726383c53082d1a2e099dd157",
+    "text": "Скажи мне, понравилось ли тебе, когда вернешься. Как вас зовут?",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:41:03.970100Z"
+    "updated_at": "2026-02-25T22:07:14.066554Z"
   },
   "npc.a_dead_bureaucrat3.say_3": {
     "src_hash": "42b8982fe2885887a8bed5a3e2fc0184",
@@ -3816,12 +3808,12 @@
     "updated_at": "2026-02-14T04:41:03.971528Z"
   },
   "npc.a_dead_bureaucrat4.say_1": {
-    "src_hash": "607d8b9a0101890da602c6e0916a8755",
-    "text": "{}, это правда?! Чего ты хочешь от меня?",
+    "src_hash": "9bbd1dde5a92acc76b100e855f30de96",
+    "text": "Я не уверен, что вы знаете, что делаете, но все равно. Ваше имя?",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T04:41:03.971998Z"
+    "updated_at": "2026-02-25T22:07:17.174494Z"
   },
   "npc.a_dead_bureaucrat4.say_3": {
     "src_hash": "3633424b018ff3b8100d839f33e33641",

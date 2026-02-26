@@ -20,6 +20,12 @@
   "score": 99.0,
   "worst_keys": [
     {
+      "key": "npc.a_dead_bureaucrat1.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
       "key": "achievement.22.name",
       "category": "achievements",
       "type": "script_cyrillic_latin_mix",
@@ -130,12 +136,6 @@
     {
       "key": "achievement.549.name",
       "category": "achievements",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "book.otbm.abdendriel_furniture_store",
-      "category": "books",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
     }

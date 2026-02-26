@@ -175,63 +175,63 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "portal") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_1", "npc.inigo.say_2", "npc.inigo.say_3"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_1", "npc.inigo.say_2", "npc.inigo.say_3" }, 10)
 	elseif MsgContains(message, "menesto") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_4", "npc.inigo.say_5", "npc.inigo.say_6"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_4", "npc.inigo.say_5", "npc.inigo.say_6" }, 10)
 	elseif MsgContains(message, "play") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_7", "npc.inigo.say_8", "npc.inigo.say_9", "npc.inigo.say_10", "npc.inigo.say_11"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_7", "npc.inigo.say_8", "npc.inigo.say_9", "npc.inigo.say_10", "npc.inigo.say_11" }, 10)
 	elseif MsgContains(message, "combat") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_12", "npc.inigo.say_13", "npc.inigo.say_14", "npc.inigo.say_15"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_12", "npc.inigo.say_13", "npc.inigo.say_14", "npc.inigo.say_15" }, 10)
 	elseif MsgContains(message, "pvp") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_16", "npc.inigo.say_17", "npc.inigo.say_18", "npc.inigo.say_19"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_16", "npc.inigo.say_17", "npc.inigo.say_18", "npc.inigo.say_19" }, 10)
 	elseif MsgContains(message, "players") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_20", "npc.inigo.say_21"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_20", "npc.inigo.say_21" }, 10)
 	elseif MsgContains(message, "npc") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_22", "npc.inigo.say_23", "npc.inigo.say_24", "npc.inigo.say_25", "npc.inigo.say_26"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_22", "npc.inigo.say_23", "npc.inigo.say_24", "npc.inigo.say_25", "npc.inigo.say_26" }, 10)
 	elseif MsgContains(message, "spells") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_27", "npc.inigo.say_28", "npc.inigo.say_29"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_27", "npc.inigo.say_28", "npc.inigo.say_29" }, 10)
 	elseif MsgContains(message, "shovel") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_30", "npc.inigo.say_31"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_30", "npc.inigo.say_31" }, 10)
 	elseif MsgContains(message, "dawnport") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_32", "npc.inigo.say_33", "npc.inigo.say_34", "npc.inigo.say_35", "npc.inigo.say_36"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_32", "npc.inigo.say_33", "npc.inigo.say_34", "npc.inigo.say_35", "npc.inigo.say_36" }, 10)
 	elseif MsgContains(message, "mainland") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_37", "npc.inigo.say_38", "npc.inigo.say_39"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_37", "npc.inigo.say_38", "npc.inigo.say_39" }, 10)
 	elseif MsgContains(message, "figthing") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_40", "npc.inigo.say_41", "npc.inigo.say_42", "npc.inigo.say_43", "npc.inigo.say_44", "npc.inigo.say_45"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_40", "npc.inigo.say_41", "npc.inigo.say_42", "npc.inigo.say_43", "npc.inigo.say_44", "npc.inigo.say_45" }, 10)
 	elseif MsgContains(message, "vocations") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_46", "npc.inigo.say_47", "npc.inigo.say_48", "npc.inigo.say_49"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_46", "npc.inigo.say_47", "npc.inigo.say_48", "npc.inigo.say_49" }, 10)
 	elseif MsgContains(message, "help") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_50", "npc.inigo.say_51", "npc.inigo.say_52", "npc.inigo.say_53"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_50", "npc.inigo.say_51", "npc.inigo.say_52", "npc.inigo.say_53" }, 10)
 	elseif MsgContains(message, "offensive") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_54", "npc.inigo.say_55"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_54", "npc.inigo.say_55" }, 10)
 	elseif MsgContains(message, "balanced") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_56", "npc.inigo.say_57"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_56", "npc.inigo.say_57" }, 10)
 	elseif MsgContains(message, "defensive") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_58", "npc.inigo.say_59"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_58", "npc.inigo.say_59" }, 10)
 	elseif MsgContains(message, "skull") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_60", "npc.inigo.say_61"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_60", "npc.inigo.say_61" }, 10)
 	elseif MsgContains(message, "hamish") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_62", "npc.inigo.say_63"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_62", "npc.inigo.say_63" }, 10)
 	elseif MsgContains(message, "coltrayne") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_64", "npc.inigo.say_65"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_64", "npc.inigo.say_65" }, 10)
 	elseif MsgContains(message, "morris") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_66", "npc.inigo.say_67", "npc.inigo.say_68"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_66", "npc.inigo.say_67", "npc.inigo.say_68" }, 10)
 	elseif MsgContains(message, "skills") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_69", "npc.inigo.say_70"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_69", "npc.inigo.say_70" }, 10)
 	elseif MsgContains(message, "rope") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_71", "npc.inigo.say_72"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_71", "npc.inigo.say_72" }, 10)
 	elseif MsgContains(message, "oressa") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_73", "npc.inigo.say_74"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_73", "npc.inigo.say_74" }, 10)
 	elseif MsgContains(message, "temple") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_75", "npc.inigo.say_76"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_75", "npc.inigo.say_76" }, 10)
 	elseif MsgContains(message, "dying") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_77", "npc.inigo.say_78", "npc.inigo.say_79"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_77", "npc.inigo.say_78", "npc.inigo.say_79" }, 10)
 	elseif MsgContains(message, "druid spells") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_80", "npc.inigo.say_81", "npc.inigo.say_82"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_80", "npc.inigo.say_81", "npc.inigo.say_82" }, 10)
 	elseif MsgContains(message, "train") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_83", "npc.inigo.say_84", "npc.inigo.say_85", "npc.inigo.say_86", "npc.inigo.say_87", "npc.inigo.say_88"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_83", "npc.inigo.say_84", "npc.inigo.say_85", "npc.inigo.say_86", "npc.inigo.say_87", "npc.inigo.say_88" }, 10)
 	elseif MsgContains(message, "bless") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_89", "npc.inigo.say_90", "npc.inigo.say_91", "npc.inigo.say_92"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_89", "npc.inigo.say_90", "npc.inigo.say_91", "npc.inigo.say_92" }, 10)
 	elseif MsgContains(message, "hints") then
 		for i = 1, #hintKeys do
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, hintKeys[i])
@@ -241,11 +241,11 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.inigo.say_95")
 			npcHandler:setTopic(playerId, 1)
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.inigo.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.inigo.say_97")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.inigo.say_93", "npc.inigo.say_94"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.inigo.say_93", "npc.inigo.say_94" }, 10)
 		npcHandler:setTopic(playerId, 2)
 	elseif npcHandler:getTopic(playerId) == 2 and MsgContains(message, "yes") or MsgContains(message, "sure") or MsgContains(message, "leave") then
 		local town = Town(TOWNS_LIST.ROOKGAARD)

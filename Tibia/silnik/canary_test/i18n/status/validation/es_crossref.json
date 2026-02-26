@@ -36,6 +36,27 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "There is not enough gold on your account.",
+      "variants": [
+        "Entonces, ¿le gustaría que cambiara {} de sus \\z monedas de platino por {} monedas de oro?",
+        "Entonces, ¿te gustaría que cambiara {} de tus \\z monedas de oro por {} monedas de platino?",
+        "Entonces, ¿te gustaría que cambiara {} de tus monedas de cristal \\z por {} monedas de platino?",
+        "Entonces, ¿te gustaría que cambiara {} de tus monedas de platino \\z por {} monedas de cristal?",
+        "No hay suficiente oro en tu cuenta.",
+        "¿Está seguro de que desea retirar {} oro de su cuenta bancaria?"
+      ],
+      "variants_count": 6,
+      "examples": [
+        "npc:npc.paulie.say_12",
+        "npc:npc.paulie.say_15",
+        "npc:npc.paulie.say_16",
+        "npc:npc.plunderpurse.say_13",
+        "npc:npc.plunderpurse.say_16"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "Orc Warlord",
       "variants": [
         "armadura de orco",
@@ -993,6 +1014,387 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "You haven't started any task yet.",
+      "variants": [
+        "No podrás avanzar más en tu rango hasta que hayas subido de nivel. Pero puedes aceptar tareas sin obtener puntos Paw & Fur, solo para obtener una recompensa de experiencia y la posibilidad de luchar contra un jefe de rango inferior al nivel 130.",
+        "No tienes nada que reportar."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.grizzly_adams.multi_15",
+        "npc:npc.grizzly_adams.say_17"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The churches of the gods entrusted me with the enormous and responsible task to lead the inquisition. I leave the field work to inquisitors who I recruit from fitting people that cross my way.",
+      "variants": [
+        "Las iglesias de los dioses me confiaron la enorme y responsable tarea de dirigir la Inquisición. Dejo el trabajo de campo a los inquisidores que recluto entre las personas adecuadas que se cruzan en mi camino.",
+        "¿Quieres recibir la bendición de la inquisición - que significa {} bendiciones - por {} oro?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.henricus.say_1",
+        "npc:npc.henricus.stdmod_18"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Do you want to join the inquisition?",
+      "variants": [
+        "¿Quieres comprar el frasco especial de agua bendita por {} oro?",
+        "¿Quieres unirte a la inquisición?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.henricus.say_2",
+        "npc:npc.henricus.say_6"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Do you bring frostheart shards for our spell?",
+      "variants": [
+        "¿Traes fragmentos de corazón helado para nuestro hechizo?",
+        "¿Traes fragmentos de corazón helado para nuestro hechizo? "
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.hjaern.say_3",
+        "npc:npc.hjaern.say_4"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Then you should learn the ways of the druids, healers and powerful masters of natural magic. ...",
+      "variants": [
+        "Entonces deberías aprender los métodos de los druidas, curanderos y poderosos maestros de la magia natural. ...",
+        "Los druidas son sanadores y poderosos maestros de la magia del hielo y la tierra. También pueden causar un poco de daño de energía, fuego o muerte. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.druid_info_1",
+        "npc:npc.oressa.say_10"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Druids can heal their friends and allies, but they can also cast powerful ice and earth magic to kill their enemies. They can do a little energy, fire or death damage as well. ...",
+      "variants": [
+        "Los druidas no pueden recibir mucho daño ni llevar muchos objetos, pero causan más daño que los paladines o los caballeros y pueden apuntar a varios enemigos. ...",
+        "Los druidas pueden curar a sus amigos y aliados, pero también pueden lanzar poderosa magia de hielo y tierra para matar a sus enemigos. También pueden causar un poco de daño de energía, fuego o muerte. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.druid_info_2",
+        "npc:npc.oressa.say_11"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Druids cannot take much damage or carry many items, but they deal much more damage than paladins or knights. ...",
+      "variants": [
+        "Los druidas no pueden sufrir mucho daño ni llevar muchos objetos, pero causan mucho más daño que los paladines o los caballeros. ...",
+        "Si deseas ser un sanador y portador de poderosa magia natural, deberías considerar elegir la vocación de druida."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.druid_info_3",
+        "npc:npc.oressa.say_12"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "So tell me: DO YOU WISH TO BECOME A VALIANT KNIGHT? Answer with a proud {YES} if that is your choice!",
+      "variants": [
+        "Entonces dime: ¿DESEAS CONVERTIRTE EN UN CABALLERO VALIENTE? ¡Responde con un orgulloso {YES} si esa es tu elección!",
+        "¿DESEAS CONVERTIRTE EN UN CABALLERO VALIENTE? ¡Responde con un orgulloso {YES} si esa es tu elección!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.knight_confirm_1",
+        "npc:npc.oressa.say_4"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Then you should choose the {vocation} of a knight and become a valiant fighter with sword and shield. ...",
+      "variants": [
+        "Entonces deberías elegir el {vocation} de un caballero y convertirte en un valiente luchador con espada y escudo. ...",
+        "Los caballeros son incondicionales luchadores cuerpo a cuerpo, la más dura de todas las vocaciones. Pueden recibir más daño y llevar más objetos que las otras vocaciones, pero causarán menos daño que los paladines, druidas o hechiceros. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.knight_info_1",
+        "npc:npc.oressa.say_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Knights are the toughest of all vocations. They can take more damage and carry more items than the other vocations, but they will deal less damage than paladins, druids or sorcerers. ...",
+      "variants": [
+        "Los Caballeros son la más dura de todas las vocaciones. Pueden recibir más daño y llevar más objetos que las otras vocaciones, pero causarán menos daño que los paladines, druidas o hechiceros. ...",
+        "Los caballeros pueden empuñar espadas, hachas y garrotes de una o dos manos, y pueden lanzar algunos hechizos para llamar la atención de un monstruo hacia ellos. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.knight_info_2",
+        "npc:npc.oressa.say_2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Knights can wield one- or two-handed swords, axes and clubs, and they can cast a few spells to draw a monster's attention to them. ...",
+      "variants": [
+        "Los caballeros pueden empuñar espadas, hachas y garrotes de una o dos manos, y pueden lanzar algunos hechizos para llamar la atención de un monstruo hacia ellos. ...",
+        "Si quieres ser un duro luchador cuerpo a cuerpo que pueda resistir mucho más tiempo que nadie, deberías considerar elegir la vocación de caballero."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.knight_info_3",
+        "npc:npc.oressa.say_3"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "DO YOU WISH TO BECOME A DARING PALADIN? Answer with a proud {YES} if that is your choice!",
+      "variants": [
+        "Entonces dime: ¿DESEAS CONVERTIRTE EN UN PALADÍN ATREVIDO? ¡Responde con un orgulloso {YES} si esa es tu elección!",
+        "¿QUIERES CONVERTIRTE EN UN PALADÍN ATREVIDO? ¡Responde con un orgulloso {YES} si esa es tu elección!"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.paladin_confirm_1",
+        "npc:npc.oressa.say_9"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Then you should join the ranks of the paladins, noble hunters and rangers of the wild, who rely on the swiftness of movement and ranged attacks. ...",
+      "variants": [
+        "Entonces deberías unirte a las filas de los paladines, nobles cazadores y exploradores de la naturaleza, que confían en la rapidez de movimiento y los ataques a distancia. ...",
+        "Los paladines son robustos luchadores a distancia. Son más duros que los druidas o los hechiceros y pueden llevar más objetos, pero son menos duros que un caballero. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.paladin_info_1",
+        "npc:npc.oressa.say_5"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Paladins are jacks of all trades. They are tougher than the magically gifted and can carry more items than druids or sorcerers, but they can take not as much damage as a knight can. ...",
+      "variants": [
+        "Los paladines son expertos en todos los oficios. Son más resistentes que los dotados de magia y pueden transportar más objetos que los druidas o los hechiceros, pero no pueden sufrir tanto daño como un caballero. ...",
+        "Los paladines tienen el rango de ataque más largo y pueden causar el mayor daño a un solo objetivo. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.paladin_info_2",
+        "npc:npc.oressa.say_6"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Paladins deal more damage than knights but less than druids or sorcerers, and have the longest range in their distance attacks. ...",
+      "variants": [
+        "Los paladines causan más daño que los caballeros pero menos que los druidas o los hechiceros, y tienen el mayor alcance en sus ataques a distancia. ...",
+        "También pueden usar magia sagrada para matar a los impíos y a los no-muertos en particular. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.paladin_info_3",
+        "npc:npc.oressa.say_7"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "They can also use holy magic to slay the unholy and undead in particular. ...",
+      "variants": [
+        "Si te gusta mantener la distancia con tu enemigo, disparando mientras lo alejas, deberías considerar elegir la vocación de paladín.",
+        "También pueden usar magia sagrada para matar a los impíos y a los no-muertos en particular. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.paladin_info_4",
+        "npc:npc.oressa.say_8"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Then you should become a sorcerer, a mighty wielder of deathly energies and arcane fire. ...",
+      "variants": [
+        "Entonces deberías convertirte en un hechicero, un poderoso portador de energías mortales y fuego arcano. ...",
+        "Los hechiceros son poderosos lanzadores de magia de muerte, energía y fuego. También pueden causar un poco de daño al hielo o a la tierra. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.say_14",
+        "npc:npc.oressa.sorcerer_info_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Sorcerers are powerful casters of magic. They use fire, energy and death magic to lay low their enemies. They can do a little ice or earth damage as well. ...",
+      "variants": [
+        "Los hechiceros no pueden recibir mucho daño ni llevar muchos objetos, pero causan más daño que los paladines o los caballeros y pueden apuntar a varios enemigos. ...",
+        "Los hechiceros son poderosos lanzadores de magia. Usan fuego, energía y magia mortal para derribar a sus enemigos. También pueden causar un poco de daño al hielo o a la tierra. ..."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.say_15",
+        "npc:npc.oressa.sorcerer_info_2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Sorcerers cannot take much damage or carry many items, but they deal much more damage than paladins or knights. ...",
+      "variants": [
+        "Los hechiceros no pueden sufrir mucho daño ni llevar muchos objetos, pero causan mucho más daño que los paladines o los caballeros. ...",
+        "Si deseas ser un lanzador de fuego y energía, lanzando magia mortal a tus enemigos, deberías considerar elegir la vocación de hechicero."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.oressa.say_16",
+        "npc:npc.oressa.sorcerer_info_3"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "So you would like me to change {} of your gold coins into {} platinum coins?",
+      "variants": [
+        "Entonces, ¿te gustaría que cambiara {} de tus \\z monedas de oro por {} monedas de platino?",
+        "¿Entonces le gustaría que cambiara {} de sus monedas de oro por {} monedas de platino?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.paulie.say_14",
+        "npc:npc.wentworth.say_13",
+        "npclib:npclib.bank_system.say_15"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The customer is king! Come back anytime you want to if you wish to {withdraw} your money.",
+      "variants": [
+        "Entonces, ¿te gustaría que cambiara {} de tus monedas de cristal \\z por {} monedas de platino?",
+        "¡El cliente es el rey! Vuelve cuando quieras si deseas {withdraw} tu dinero."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.paulie.say_17",
+        "npc:npc.plunderpurse.say_18",
+        "npc:npc.wentworth.say_19"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "As you wish. Is there something else I can do for you?",
+      "variants": [
+        "Aquí tienes, {} oro. \\z Por favor, avíseme si hay algo más que pueda hacer por usted.",
+        "¿Está seguro de que desea retirar {} oro de su cuenta bancaria?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.plunderpurse.say_11",
+        "npc:npc.wentworth.say_12"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Here you are, {} gold. Please let me know if there is something else I can do for you.",
+      "variants": [
+        "Aquí tienes, {} oro. Por favor, avíseme si hay algo más que pueda hacer por usted.",
+        "Aquí tienes, {} oro. \\z Por favor, avíseme si hay algo más que pueda hacer por usted."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.plunderpurse.say_12",
+        "npclib:npclib.bank_system.say_22"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "So you would like me to change {} of your platinum coins into {} crystal coins for you?",
+      "variants": [
+        "Entonces, ¿le gustaría que cambiara {} de sus monedas de platino por {} monedas de cristal?",
+        "Entonces, ¿te gustaría que cambiara {} de tus monedas de platino \\z por {} monedas de cristal?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.plunderpurse.say_15",
+        "npclib:npclib.bank_system.say_13"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Sorry, but you can't deposit that much.",
+      "variants": [
+        "Muy bien, hemos agregado la cantidad de {} oro a tu {balance}. \\z Puedes {withdraw} tu dinero cuando quieras.",
+        "¿Está seguro de que desea retirar {} oro de su cuenta bancaria?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.plunderpurse.say_9",
+        "npc:npc.wentworth.say_10",
+        "npc:npc.wentworth.say_9"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "And the quality must not suffer, of course! Everything clear and understood?",
+      "variants": [
+        "Se dice que los enanos son los más tercos de todos los comerciantes. Viaja a Kazordoon e intenta que el herrero Uzgod te venda una espada carmesí. ...",
+        "¡Y la calidad no debe verse afectada, por supuesto! ¿Todo claro y entendido?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.rashid.multi_9",
+        "npc:npc.rashid_custom.multi_9"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "So you would like me to change {} of your crystal coins into {} platinum coins for you?",
+      "variants": [
+        "Entonces, ¿te gustaría que cambiara {} de tus monedas de cristal \\z por {} monedas de platino?",
+        "Entonces, ¿te gustaría que cambiara {} de tus monedas de cristal por {} monedas de platino?"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.wentworth.say_16",
+        "npclib:npclib.bank_system.say_12"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "Unknown",
       "variants": [
         "Desconocido",
@@ -1812,6 +2214,141 @@
       "lang": "lava"
     },
     {
+      "key": "item.14671.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Delany's golden bug trophy",
+      "pl": "Trofeum złotego robaka Delany'ego",
+      "lang": "Delany's golden bug trophy"
+    },
+    {
+      "key": "item.14672.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Bolfrim's golden bug trophy",
+      "pl": "Złote trofeum Bolfrima",
+      "lang": "Bolfrim's golden bug trophy"
+    },
+    {
+      "key": "item.14673.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Siramal's golden bug trophy",
+      "pl": "Trofeum złotego robaka Siramala",
+      "lang": "Siramal's golden bug trophy"
+    },
+    {
+      "key": "item.15698.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "gnomish supply package",
+      "pl": "pakiet zaopatrzenia gnomów",
+      "lang": "gnomish supply package"
+    },
+    {
+      "key": "item.15703.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "gnomish repair crystal",
+      "pl": "gnomski kryształ naprawczy",
+      "lang": "gnomish repair crystal"
+    },
+    {
+      "key": "item.15802.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "gnomish crystal package",
+      "pl": "pakiet kryształów gnomów",
+      "lang": "gnomish crystal package"
+    },
+    {
+      "key": "item.15817.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "gnomish spore gatherer",
+      "pl": "gnomi zbieracz zarodników",
+      "lang": "gnomish spore gatherer"
+    },
+    {
+      "key": "item.15818.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "gnomish spore gatherer",
+      "pl": "gnomi zbieracz zarodników",
+      "lang": "gnomish spore gatherer"
+    },
+    {
+      "key": "item.15819.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "gnomish spore gatherer",
+      "pl": "gnomi zbieracz zarodników",
+      "lang": "gnomish spore gatherer"
+    },
+    {
+      "key": "item.15820.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "gnomish spore gatherer",
+      "pl": "gnomi zbieracz zarodników",
+      "lang": "gnomish spore gatherer"
+    },
+    {
+      "key": "item.15821.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "gnomish spore gatherer",
+      "pl": "gnomi zbieracz zarodników",
+      "lang": "gnomish spore gatherer"
+    },
+    {
+      "key": "item.15991.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dead magma crawler",
+      "pl": "martwy pełzacz magmy",
+      "lang": "dead magma crawler"
+    },
+    {
+      "key": "item.15992.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dead magma crawler",
+      "pl": "martwy pełzacz magmy",
+      "lang": "dead magma crawler"
+    },
+    {
+      "key": "item.15993.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dead magma crawler",
+      "pl": "martwy pełzacz magmy",
+      "lang": "dead magma crawler"
+    },
+    {
+      "key": "item.15994.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dead magma crawler",
+      "pl": "martwy pełzacz magmy",
+      "lang": "dead magma crawler"
+    },
+    {
       "key": "item.16104.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -1902,6 +2439,195 @@
       "lang": "lava"
     },
     {
+      "key": "item.21755.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "bronze gear wheel",
+      "pl": "koło zębate z brązu",
+      "lang": "bronze gear wheel"
+    },
+    {
+      "key": "item.21770.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "drowned seaman's skull",
+      "pl": "czaszka utopionego marynarza",
+      "lang": "drowned seaman's skull"
+    },
+    {
+      "key": "item.21787.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "broken nacre altar",
+      "pl": "rozbity ołtarz z masy perłowej",
+      "lang": "broken nacre altar"
+    },
+    {
+      "key": "item.21816.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "tainted glooth capsule",
+      "pl": "skażona kapsułka glootha",
+      "lang": "tainted glooth capsule"
+    },
+    {
+      "key": "item.21825.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "yarn-winding winch",
+      "pl": "wciągarka do nawijania przędzy",
+      "lang": "yarn-winding winch"
+    },
+    {
+      "key": "item.21836.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "edible rock fungus",
+      "pl": "jadalny grzyb skalny",
+      "lang": "edible rock fungus"
+    },
+    {
+      "key": "item.21839.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "pink gloud essence",
+      "pl": "esencja różowej mgiełki",
+      "lang": "pink gloud essence"
+    },
+    {
+      "key": "item.21842.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "edible rock fungi",
+      "pl": "jadalne grzyby skalne",
+      "lang": "edible rock fungi"
+    },
+    {
+      "key": "item.21853.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dinky moss floret",
+      "pl": "mały kwiat mchu",
+      "lang": "dinky moss floret"
+    },
+    {
+      "key": "item.21854.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dinky moss floret stalks",
+      "pl": "małe łodygi różyczek mchu",
+      "lang": "dinky moss floret stalks"
+    },
+    {
+      "key": "item.21855.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dinky moss floret stalks",
+      "pl": "małe łodygi różyczek mchu",
+      "lang": "dinky moss floret stalks"
+    },
+    {
+      "key": "item.21856.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dinky moss floret garland",
+      "pl": "girlanda z kwiatów mchu",
+      "lang": "dinky moss floret garland"
+    },
+    {
+      "key": "item.21901.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "glooth glider casing",
+      "pl": "obudowa szybowca Glooth",
+      "lang": "glooth glider casing"
+    },
+    {
+      "key": "item.21902.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "glooth glider crank",
+      "pl": "korba szybowca glooth",
+      "lang": "glooth glider crank"
+    },
+    {
+      "key": "item.21905.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "glooth glider hinge",
+      "pl": "Zawias ślizgowy Glooth",
+      "lang": "glooth glider hinge"
+    },
+    {
+      "key": "item.21906.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "glooth glider gear wheel",
+      "pl": "koło zębate szybowca glooth",
+      "lang": "glooth glider gear wheel"
+    },
+    {
+      "key": "item.21973.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "some cracks",
+      "pl": "trochę pęknięć",
+      "lang": "some cracks"
+    },
+    {
+      "key": "item.22189.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ogre nose ring",
+      "pl": "ogre Niese ring",
+      "lang": "ogre nose ring"
+    },
+    {
+      "key": "item.22644.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "parrot's beak plant",
+      "pl": "roślina dziobowa papugi",
+      "lang": "parrot's beak plant"
+    },
+    {
+      "key": "item.22656.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "voodoo lily pollen",
+      "pl": "pyłek lilii voodoo",
+      "lang": "voodoo lily pollen"
+    },
+    {
+      "key": "item.22660.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "grey-blue powder",
+      "pl": "szaroniebieski proszek",
+      "lang": "grey-blue powder"
+    },
+    {
       "key": "item.22675.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -1909,6 +2635,618 @@
       "en": "lava",
       "pl": "lawa",
       "lang": "lava"
+    },
+    {
+      "key": "item.22863.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "test voodoo doll",
+      "pl": "przetestuj lalkę voodoo",
+      "lang": "test voodoo doll"
+    },
+    {
+      "key": "item.22871.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "behemoth taming stone",
+      "pl": "kamień oswajania behemota",
+      "lang": "behemoth taming stone"
+    },
+    {
+      "key": "item.230.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ship cabin wall",
+      "pl": "ściana kabiny statku",
+      "lang": "ship cabin wall"
+    },
+    {
+      "key": "item.23457.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "used globe kit",
+      "pl": "używany zestaw globusów",
+      "lang": "used globe kit"
+    },
+    {
+      "key": "item.23459.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "used rocking horse kit",
+      "pl": "używany zestaw z koniem na biegunach",
+      "lang": "used rocking horse kit"
+    },
+    {
+      "key": "item.23514.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "volatile proto matter",
+      "pl": "lotna protomateria",
+      "lang": "volatile proto matter"
+    },
+    {
+      "key": "item.23516.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "instable proto matter",
+      "pl": "niestabilna protomateria",
+      "lang": "instable proto matter"
+    },
+    {
+      "key": "item.23678.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "encyclopedia",
+      "pl": "encyklopedia",
+      "lang": "encyclopedia"
+    },
+    {
+      "key": "item.24040.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "unknown item (tree)",
+      "pl": "unkNiewn Przedmiot (tree)",
+      "lang": "unknown item (tree)"
+    },
+    {
+      "key": "item.24041.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "autumn sparkle blossom",
+      "pl": "jesienny błyszczący kwiat",
+      "lang": "autumn sparkle blossom"
+    },
+    {
+      "key": "item.24226.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "shielded astral glyph",
+      "pl": "osłonięty glif astralny",
+      "lang": "shielded astral glyph"
+    },
+    {
+      "key": "item.24386.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "rhino horn carving",
+      "pl": "rzeźba z rogu nosorożca",
+      "lang": "rhino horn carving"
+    },
+    {
+      "key": "item.24394.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "orclops santa",
+      "pl": "Orclops Mikołaj",
+      "lang": "orclops santa"
+    },
+    {
+      "key": "item.24950.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "framed birthday card",
+      "pl": "oprawiona kartka urodzinowa",
+      "lang": "framed birthday card"
+    },
+    {
+      "key": "item.24960.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "astral shaper rune",
+      "pl": "runa kształtująca astralną",
+      "lang": "astral shaper rune"
+    },
+    {
+      "key": "item.25059.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "inert astral shaper rune",
+      "pl": "bezwładna astralna runa kształtująca",
+      "lang": "inert astral shaper rune"
+    },
+    {
+      "key": "item.25078.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "remains of an orclops doomhauler",
+      "pl": "pozostałości orclopsa zagłady",
+      "lang": "remains of an orclops doomhauler"
+    },
+    {
+      "key": "item.25080.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "remains of an orclops doomhauler",
+      "pl": "pozostałości orclopsa zagłady",
+      "lang": "remains of an orclops doomhauler"
+    },
+    {
+      "key": "item.25081.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "remains of an orclops doomhauler",
+      "pl": "pozostałości orclopsa zagłady",
+      "lang": "remains of an orclops doomhauler"
+    },
+    {
+      "key": "item.25090.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "unknown item (tile)",
+      "pl": "unkNiewn Przedmiot (tile)",
+      "lang": "unknown item (tile)"
+    },
+    {
+      "key": "item.25217.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "bitter-smack leaf",
+      "pl": "liść o gorzkim posmaku",
+      "lang": "bitter-smack leaf"
+    },
+    {
+      "key": "item.25782.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "magical music notes",
+      "pl": "magiczne nuty muzyczne",
+      "lang": "magical music notes"
+    },
+    {
+      "key": "item.25843.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dead minotaur idol",
+      "pl": "martwy idol minotaura",
+      "lang": "dead minotaur idol"
+    },
+    {
+      "key": "item.25844.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dead minotaur idol",
+      "pl": "martwy idol minotaura",
+      "lang": "dead minotaur idol"
+    },
+    {
+      "key": "item.25845.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dead minotaur idol",
+      "pl": "martwy idol minotaura",
+      "lang": "dead minotaur idol"
+    },
+    {
+      "key": "item.25846.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "dead minotaur idol",
+      "pl": "martwy idol minotaura",
+      "lang": "dead minotaur idol"
+    },
+    {
+      "key": "item.25942.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "icy cranial basher replica",
+      "pl": "replika lodowego młotka czaszkowego",
+      "lang": "icy cranial basher replica"
+    },
+    {
+      "key": "item.25984.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable mayhem blade",
+      "pl": "cenne ostrze zamętu",
+      "lang": "valuable mayhem blade"
+    },
+    {
+      "key": "item.25987.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable mayhem slayer",
+      "pl": "cenny pogromca chaosu",
+      "lang": "valuable mayhem slayer"
+    },
+    {
+      "key": "item.25990.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable mayhem axe",
+      "pl": "cenny topór chaosu",
+      "lang": "valuable mayhem axe"
+    },
+    {
+      "key": "item.25993.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable mayhem chopper",
+      "pl": "cenny siekacz chaosu",
+      "lang": "valuable mayhem chopper"
+    },
+    {
+      "key": "item.25996.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable mayhem mace",
+      "pl": "cenna maczuga chaosu",
+      "lang": "valuable mayhem mace"
+    },
+    {
+      "key": "item.25999.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable mayhem hammer",
+      "pl": "cenny młot chaosu",
+      "lang": "valuable mayhem hammer"
+    },
+    {
+      "key": "item.26002.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable mayhem bow",
+      "pl": "cenny łuk zagłady",
+      "lang": "valuable mayhem bow"
+    },
+    {
+      "key": "item.26005.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable mayhem crossbow",
+      "pl": "cenna kusza zamętu",
+      "lang": "valuable mayhem crossbow"
+    },
+    {
+      "key": "item.26008.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable mayhem wand",
+      "pl": "cenna różdżka zamętu",
+      "lang": "valuable mayhem wand"
+    },
+    {
+      "key": "item.26011.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable mayhem rod",
+      "pl": "cenny pręt zamętu",
+      "lang": "valuable mayhem rod"
+    },
+    {
+      "key": "item.26015.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable remedy blade",
+      "pl": "cenne ostrze lecznicze",
+      "lang": "valuable remedy blade"
+    },
+    {
+      "key": "item.26018.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable remedy slayer",
+      "pl": "cenny pogromca lekarstw",
+      "lang": "valuable remedy slayer"
+    },
+    {
+      "key": "item.26021.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable remedy axe",
+      "pl": "cenny topór remedium",
+      "lang": "valuable remedy axe"
+    },
+    {
+      "key": "item.26024.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable remedy chopper",
+      "pl": "cenny siekacz remedium",
+      "lang": "valuable remedy chopper"
+    },
+    {
+      "key": "item.26027.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable remedy mace",
+      "pl": "cenna maczuga lekarska",
+      "lang": "valuable remedy mace"
+    },
+    {
+      "key": "item.26030.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable remedy hammer",
+      "pl": "cenny młotek leczniczy",
+      "lang": "valuable remedy hammer"
+    },
+    {
+      "key": "item.26033.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable remedy bow",
+      "pl": "cenny łuk leczniczy",
+      "lang": "valuable remedy bow"
+    },
+    {
+      "key": "item.26036.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable remedy crossbow",
+      "pl": "cenna kusza lecznicza",
+      "lang": "valuable remedy crossbow"
+    },
+    {
+      "key": "item.26039.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable remedy wand",
+      "pl": "cenna różdżka lecznicza",
+      "lang": "valuable remedy wand"
+    },
+    {
+      "key": "item.26042.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable remedy rod",
+      "pl": "cenny pręt leczniczy",
+      "lang": "valuable remedy rod"
+    },
+    {
+      "key": "item.26045.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable carving blade",
+      "pl": "cenne ostrze rzeźbiarskie",
+      "lang": "valuable carving blade"
+    },
+    {
+      "key": "item.26048.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable carving slayer",
+      "pl": "cenny pogromca rzeźbień",
+      "lang": "valuable carving slayer"
+    },
+    {
+      "key": "item.26051.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable carving axe",
+      "pl": "cenny topór rzeźbiony",
+      "lang": "valuable carving axe"
+    },
+    {
+      "key": "item.26054.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable carving chopper",
+      "pl": "cenny siekacz do rzeźbienia",
+      "lang": "valuable carving chopper"
+    },
+    {
+      "key": "item.26057.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable carving mace",
+      "pl": "cenna buława rzeźbiarska",
+      "lang": "valuable carving mace"
+    },
+    {
+      "key": "item.26060.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable carving hammer",
+      "pl": "cenny młotek rzeźbiarski",
+      "lang": "valuable carving hammer"
+    },
+    {
+      "key": "item.26063.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable carving bow",
+      "pl": "cenny łuk rzeźbiony",
+      "lang": "valuable carving bow"
+    },
+    {
+      "key": "item.26066.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable carving crossbow",
+      "pl": "cenna rzeźbiona kusza",
+      "lang": "valuable carving crossbow"
+    },
+    {
+      "key": "item.26069.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable carving wand",
+      "pl": "cenna różdżka do rzeźbienia",
+      "lang": "valuable carving wand"
+    },
+    {
+      "key": "item.26072.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "valuable carving rod",
+      "pl": "cenny pręt rzeźbiarski",
+      "lang": "valuable carving rod"
+    },
+    {
+      "key": "item.26112.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "venorean table clock",
+      "pl": "Venoreański zegar stołowy",
+      "lang": "venorean table clock"
+    },
+    {
+      "key": "item.26113.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "venorean table clock",
+      "pl": "Venoreański zegar stołowy",
+      "lang": "venorean table clock"
+    },
+    {
+      "key": "item.26124.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "unknown corpse (skeleton)",
+      "pl": "nieznane zwłoki (szkielet)",
+      "lang": "unknown corpse (skeleton)"
+    },
+    {
+      "key": "item.27369.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "half-digested stones",
+      "pl": "w połowie strawione kamienie",
+      "lang": "half-digested stones"
+    },
+    {
+      "key": "item.27490.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "unknown corpse (skeleton)",
+      "pl": "nieznane zwłoki (szkielet)",
+      "lang": "unknown corpse (skeleton)"
+    },
+    {
+      "key": "item.27593.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "deepworm spike roots",
+      "pl": "korzenie kolców robaków głębinowych",
+      "lang": "deepworm spike roots"
+    },
+    {
+      "key": "item.27627.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "huge spiky snail shell",
+      "pl": "ogromna kolczasta muszla ślimaka",
+      "lang": "huge spiky snail shell"
+    },
+    {
+      "key": "item.27695.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Queen Eloise bust",
+      "pl": "Popiersie królowej Eloise",
+      "lang": "Queen Eloise bust"
+    },
+    {
+      "key": "item.27696.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Queen Eloise bust",
+      "pl": "Popiersie królowej Eloise",
+      "lang": "Queen Eloise bust"
+    },
+    {
+      "key": "item.27702.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "King Tibianus bust",
+      "pl": "Popiersie króla Tibianusa",
+      "lang": "King Tibianus bust"
+    },
+    {
+      "key": "item.27703.name",
+      "category": "items",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "King Tibianus bust",
+      "pl": "Popiersie króla Tibianusa",
+      "lang": "King Tibianus bust"
     },
     {
       "key": "item.27727.name",
@@ -2032,27 +3370,27 @@
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "lava",
-      "pl": "lawa",
-      "lang": "lava"
+      "en": "brightly burning flames",
+      "pl": "jasno płonące płomienie",
+      "lang": "brightly burning flames"
     },
     {
-      "key": "lib.player.modal_button_no",
-      "category": "libs",
+      "key": "item.39320.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
+      "en": "dead noxious ripptor",
+      "pl": "martwy, szkodliwy ripptor",
+      "lang": "dead noxious ripptor"
     },
     {
-      "key": "monster.old_wasp.voice_1",
-      "category": "monsters",
+      "key": "item.39321.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Bssssss",
-      "pl": "Bsssss",
-      "lang": "Bssssss"
+      "en": "dead noxious ripptor",
+      "pl": "martwy, szkodliwy ripptor",
+      "lang": "dead noxious ripptor"
     },
     {
       "key": "monster.war_golem.voice_2",
@@ -2068,9 +3406,9 @@
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "*frzzp*",
-      "pl": "*frzz*",
-      "lang": "*frzzp*"
+      "en": "dead noxious ripptor",
+      "pl": "martwy, szkodliwy ripptor",
+      "lang": "dead noxious ripptor"
     },
     {
       "key": "monster.damaged_worker_golem.voice_1",
@@ -2086,58 +3424,58 @@
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Chrrr.",
-      "pl": "Chrr.",
-      "lang": "Chrrr."
+      "en": "dead noxious ripptor",
+      "pl": "martwy, szkodliwy ripptor",
+      "lang": "dead noxious ripptor"
     },
     {
-      "key": "monster.death_blob.voice_1",
-      "category": "monsters",
+      "key": "item.39427.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Shlorz",
-      "pl": "Szlorz",
-      "lang": "Shlorz"
+      "en": "knightly chess table",
+      "pl": "rycerski stół szachowy",
+      "lang": "knightly chess table"
     },
     {
-      "key": "monster.minotaur.voice_2",
-      "category": "monsters",
+      "key": "item.39428.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Hurr",
-      "pl": "Hurra",
-      "lang": "Hurr"
+      "en": "knightly chess table",
+      "pl": "rycerski stół szachowy",
+      "lang": "knightly chess table"
     },
     {
-      "key": "monster.leiden.name",
-      "category": "monsters",
+      "key": "item.39556.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Leiden",
-      "pl": "Lejda",
-      "lang": "Leiden"
+      "en": "palm lettuce coral",
+      "pl": "koral sałaty palmowej",
+      "lang": "palm lettuce coral"
     },
     {
-      "key": "monster.leiden.desc",
-      "category": "monsters",
+      "key": "item.39573.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Leiden",
-      "pl": "Lejda",
-      "lang": "Leiden"
+      "en": "gemmed lotus brooch",
+      "pl": "broszka z klejnotami lotosu",
+      "lang": "gemmed lotus brooch"
     },
     {
-      "key": "monster.hemming.voice_1",
-      "category": "monsters",
+      "key": "item.397.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "GRRR",
-      "pl": "Wrr",
-      "lang": "GRRR"
+      "en": "amazon disguise kit",
+      "pl": "zestaw przebrań Amazona",
+      "lang": "amazon disguise kit"
     },
     {
-      "key": "monster.ribstride.name",
-      "category": "monsters",
+      "key": "item.403.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Ribstride",
@@ -4874,15 +6212,6 @@
       "pl_ratio": 1.2
     },
     {
-      "key": "monster.weeper.voice_1",
-      "category": "monsters",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 8,
-      "lang_ratio": 6.75,
-      "pl_ratio": 0.875
-    },
-    {
       "key": "monster.glooth_golem.voice_2",
       "category": "monsters",
       "type": "crossref_length_ratio_diff",
@@ -4890,15 +6219,6 @@
       "en_len": 7,
       "lang_ratio": 3.143,
       "pl_ratio": 0.571
-    },
-    {
-      "key": "monster.infected_weeper.voice_1",
-      "category": "monsters",
-      "type": "crossref_length_ratio_diff",
-      "severity": "MEDIUM",
-      "en_len": 8,
-      "lang_ratio": 6.75,
-      "pl_ratio": 0.875
     },
     {
       "key": "monster.abyssador.voice_1",
@@ -5052,6 +6372,15 @@
       "en_len": 6,
       "lang_ratio": 0.833,
       "pl_ratio": 3.167
+    },
+    {
+      "key": "npc.xodet.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 8,
+      "lang_ratio": 9.5,
+      "pl_ratio": 1.125
     },
     {
       "key": "otclient_modules.createaccount_otui.tr_37",

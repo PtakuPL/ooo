@@ -2,6 +2,12 @@
 -- Wrappers for i18n functionality to be used by worker-migrated files
 -- This file provides NPC_LIB.i18n functions that the worker generates code for
 
+-- Define MESSAGE_NPC_FROM if not already registered from C++ enum
+-- Uses MESSAGE_TRADE (32) = Green message in game window and console (standard for NPC text)
+if MESSAGE_NPC_FROM == nil then
+	MESSAGE_NPC_FROM = MESSAGE_TRADE
+end
+
 -- Initialize NPC_LIB global if not exists
 NPC_LIB = NPC_LIB or {}
 NPC_LIB.i18n = NPC_LIB.i18n or {}
@@ -23,10 +29,15 @@ function NPC_LIB.i18n.npcSay(npcHandler, npc, player, key, args)
 		return true
 	end
 	
-	-- Fallback: use player:sendLocalizedTextMessage directly
+	-- Fallback: translate server-side and use npc:say so NPC chat window opens
 	local targetPlayer = Player(player)
-	if targetPlayer then
-		targetPlayer:sendLocalizedTextMessage(MESSAGE_NPC_FROM, key, args or {})
+	if targetPlayer and npc then
+		local translated = targetPlayer:getTranslation(key, args or {})
+		if translated and translated ~= "" then
+			npc:say(translated, TALKTYPE_PRIVATE_NP, false, targetPlayer, npc:getPosition())
+		else
+			npc:say(key, TALKTYPE_PRIVATE_NP, false, targetPlayer, npc:getPosition())
+		end
 		return true
 	end
 	
@@ -48,6 +59,38 @@ function NPC_LIB.i18n.npcSayTable(npcHandler, npc, player, keys, args)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, player, key, args)
 	end
 	
+	return true
+end
+
+--- Send multiple localized NPC messages with proper delay (for multi-message dialogs)
+-- Translates each key server-side, then passes the table to npcHandler:say()
+-- which handles proper delays between messages via doNPCTalkALot.
+-- @param npcHandler The NPC handler object
+-- @param npc The NPC entity
+-- @param player The player (creature) to send message to
+-- @param keys Table of i18n keys to send sequentially with delay
+-- @param delay Delay in ms between messages (default: 1000)
+-- @param args Optional table of arguments for string formatting (applied to ALL keys)
+function NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, keys, delay, args)
+	if not npcHandler or not npc or not player or not keys then
+		return false
+	end
+	
+	local targetPlayer = Player(player)
+	if not targetPlayer then return false end
+	
+	local translated = {}
+	for _, key in ipairs(keys) do
+		local text = targetPlayer:getTranslation(key, args)
+		if text and text ~= "" then
+			table.insert(translated, text)
+		else
+			table.insert(translated, key)
+		end
+	end
+	
+	-- Use npcHandler:say with table to get proper delays via doNPCTalkALot
+	npcHandler:say(translated, npc, player, delay or 1000)
 	return true
 end
 

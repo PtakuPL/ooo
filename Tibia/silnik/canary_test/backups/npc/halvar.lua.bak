@@ -84,7 +84,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 
 		if ARENA[arenaId] then
-			npcHandler:say("So you agree with the {rules} and want to participate in the {challenge}? The {fee} for one try in {" .. ARENA[arenaId].name .. "} is " .. ARENA[arenaId].price .. " gold pieces. Do you really want to participate and pay the {fee}?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.halvar.say_1", { ARENA[arenaId].name, ARENA[arenaId].price })
 			npcHandler:setTopic(playerId, 1)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.halvar.say_15")

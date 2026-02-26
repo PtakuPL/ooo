@@ -68,114 +68,110 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "spare") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_25")
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "device") then
 		if player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_26")
 		end
 	elseif MsgContains(message, "scientist") then
 		if player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_27")
 			npcHandler:setTopic(playerId, 2)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if not player:removeMoneyBank(1) then
-				if player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) ~= 1 then
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.no_money_pre")
-				else
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.no_money_quest")
-				end
+				npcHandler:say(player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) ~= 1 and "Is that all you have? That would be less than I have... *mumbles*" or "Mh, it seems you don't have any coins.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
 
-			if player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) ~= 1 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.thanks_pre")
-			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.thanks_quest")
-			end
+			npcHandler:say(
+				player:getStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline) ~= 1 and "Very kind indeed. Maybe you are not such a bad guy after all. Maybe I can even give it back to you one day... you know I was not always like that *mumbles*." or "Thank you very much... plans you say? I don't know what you are talking about. Plans for a magic... device? And the people call ME crazy.",
+				npc,
+				creature
+			)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
 			if not player:removeMoneyBank(1) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_28")
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
 
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_29")
 			npcHandler:setTopic(playerId, 3)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_30")
 			npcHandler:setTopic(playerId, 4)
 		elseif npcHandler:getTopic(playerId) == 4 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_31")
 			npcHandler:setTopic(playerId, 5)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_32")
 			npcHandler:setTopic(playerId, 6)
 		elseif npcHandler:getTopic(playerId) == 6 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_33")
 			npcHandler:setTopic(playerId, 7)
 		elseif npcHandler:getTopic(playerId) == 7 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_34")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 8 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_35")
 			npcHandler:setTopic(playerId, 9)
 		elseif npcHandler:getTopic(playerId) == 9 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_12")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_36")
 			npcHandler:setTopic(playerId, 10)
 		elseif npcHandler:getTopic(playerId) == 10 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_13")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_37")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 11 then
 			player:addItem(9696, 1)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Questline, 2)
 			player:setStorageValue(Storage.Quest.U8_54.SeaOfLight.Mission1, 2)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_38")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_15")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_39")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_40")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_17")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_41")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 4 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_18")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_42")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 5 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_19")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_43")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 6 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_20")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_44")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 7 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_21")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_45")
 			npcHandler:setTopic(playerId, 8)
 		elseif npcHandler:getTopic(playerId) == 8 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_22")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_46")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 9 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_23")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_47")
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 10 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_24")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.shoddy_beggar.say_48")
 			npcHandler:setTopic(playerId, 11)
 		end
 	end
 	return true
 end
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.shoddy_beggar.greet_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.shoddy_beggar.farewell_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.shoddy_beggar.walkaway_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "What do you want? Listen to the old madman? If you have nothing to spare, leave me alone.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Yes, whatever.")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Yes, whatever.")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

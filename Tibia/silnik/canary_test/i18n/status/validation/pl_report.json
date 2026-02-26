@@ -18,7 +18,7 @@
     "MEDIUM": 42,
     "LOW": 0
   },
-  "score": 99.9,
+  "score": 99.0,
   "worst_keys": [
     {
       "key": "arena.npc.welcome",
@@ -65,8 +65,8 @@
     {
       "key": "npc.markwin.say_3",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
       "key": "npc.oswald.stdmod_32",
@@ -89,8 +89,8 @@
     {
       "key": "npc.the_orc_king.say_3",
       "category": "npc",
-      "type": "V4_artifact",
-      "severity": "HIGH"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
       "key": "npc.theodore_loveless.multi_2",
@@ -113,29 +113,29 @@
     {
       "key": "npc.a_bearded_woman.stdmod_1",
       "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.a_bearded_woman.stdmod_2",
+      "key": "npc.a_weakened_forest_fury.multi_9",
       "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.a_bearded_woman.stdmod_3",
+      "key": "npc.albinius.multi_1",
       "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.a_bearded_woman.stdmod_6",
+      "key": "npc.alesar.multi_6",
       "category": "npc",
-      "type": "V6_newline_mismatch",
-      "severity": "MEDIUM"
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
     },
     {
-      "key": "npc.alia.stdmod_25",
+      "key": "npc.alesar_functions.multi_6",
       "category": "npc",
       "type": "V6_newline_mismatch",
       "severity": "MEDIUM"

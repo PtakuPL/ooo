@@ -77,6 +77,7 @@
       ],
       "variants_count": 3,
       "examples": [
+        "monsters:monster.orc_warlord.name",
         "monsters:monster.orc_shield.name",
         "monsters:monster.orc_armor.name",
         "monsters:monster.orc_helmet.name"
@@ -135,24 +136,8 @@
       "variants_count": 2,
       "examples": [
         "actions:actions.construction_kits.msg_1",
-        "cpp:cpp.cancel.construct_inside_house"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "You found ",
-      "variants": [
-        "Vous avez trouvé ",
-        "You found"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "actions:actions.random_items.say_1",
-        "quests:quests.actions_rewards.msg_1",
-        "quests:quests.actions_rewards.msg_2",
-        "scripts:scripts.action_tortoise_egg_nargor.msg_1",
-        "scripts:scripts.actions_treasure_chest.msg_1"
+        "cpp:cpp.cancel.construct_inside_house",
+        "scripts:scripts.construction_kits.msg_2"
       ]
     },
     {
@@ -410,6 +395,34 @@
         "items:item.12064.name",
         "items:item.12074.name",
         "items:item.12574.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "helmet of the deep",
+      "variants": [
+        "casque de the deep",
+        "casque des profondeurs"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.11585.name",
+        "items:item.5460.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "remains of a canopic jar",
+      "variants": [
+        "restes d'un pot canope",
+        "restes de a canopic jar"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.12506.name",
+        "items:item.4996.name"
       ]
     },
     {
@@ -780,6 +793,20 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "Eshtaba The Conjurer",
+      "variants": [
+        "Eshtaba l'invocateur",
+        "Eshtaba le conjurateur"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "monsters:monster.eshtaba_the_conjurer_stop.name",
+        "monsters:monster.eshtaba_the_conjurer_stop.desc"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "Zamulosh",
       "variants": [
         "Zamulosh2",
@@ -817,23 +844,6 @@
       "examples": [
         "scripts:gamestore.error.too_many_purchases",
         "scripts:scripts.init.msg_1"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "The chest is empty.",
-      "variants": [
-        "Le coffre est vide.",
-        "You found "
-      ],
-      "variants_count": 2,
-      "examples": [
-        "scripts:scripts.actions_boss_timira_fight.msg_3",
-        "scripts:scripts.actions_mission3_chest.msg_2",
-        "scripts:scripts.actions_reward.msg_4",
-        "scripts:scripts.actions_reward.msg_6",
-        "scripts:scripts.actions_rewards.msg_2"
       ]
     },
     {
@@ -2158,6 +2168,33 @@
       "lang": "Interface"
     },
     {
+      "key": "client.character.text3",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "InventoryItemCyclopedia",
+      "pl": "InventoryPrzedmiotCyclopedia",
+      "lang": "InventoryItemCyclopedia"
+    },
+    {
+      "key": "client.mounts.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "data/XML/mounts.xml",
+      "pl": "dane/XML/mounts.xml",
+      "lang": "data/XML/mounts.xml"
+    },
+    {
+      "key": "client.keybind.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "controls-preset-current",
+      "pl": "sterowanie-prądem ustawionym",
+      "lang": "controls-preset-current"
+    },
+    {
       "key": "client.mainpanel.text1",
       "category": "client",
       "type": "pl_reference_missing_translation",
@@ -2176,6 +2213,24 @@
       "lang": "Interface"
     },
     {
+      "key": "client.keybins.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "styles/controls/preset",
+      "pl": "style/sterowanie/ustawienia wstępne",
+      "lang": "styles/controls/preset"
+    },
+    {
+      "key": "client.keybins.text4",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Unknown chat mode",
+      "pl": "Nieznany tryb czatu",
+      "lang": "Unknown chat mode"
+    },
+    {
       "key": "client.options.text2",
       "category": "client",
       "type": "pl_reference_missing_translation",
@@ -2185,6 +2240,15 @@
       "lang": "Interface"
     },
     {
+      "key": "cpp.combat.charm_savage_blow",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (savage blow charm)",
+      "pl": "(amulet dzikiego ciosu)",
+      "lang": " (savage blow charm)"
+    },
+    {
       "key": "cpp.inspect.protection",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2192,6 +2256,15 @@
       "en": "Protection",
       "pl": "Ochrona, osłona",
       "lang": "Protection"
+    },
+    {
+      "key": "cpp.inspect.required_magic_level",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Required Magic Level",
+      "pl": "Wymagany Magia Poziom",
+      "lang": "Required Magic Level"
     },
     {
       "key": "cpp.look.minute_one",
@@ -2221,6 +2294,15 @@
       "lang": "{0}% Ruse"
     },
     {
+      "key": "cpp.player.exp_animus_bonus",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (animus mastery bonus {0}%)",
+      "pl": "(animus biegłość premia {0}%)",
+      "lang": " (animus mastery bonus {0}%)"
+    },
+    {
       "key": "cpp.player.list_delimiter",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2239,6 +2321,15 @@
       "lang": "{0} VIP."
     },
     {
+      "key": "cpp.protocol.resting_active_bonuses",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Active Resting Area Bonuses:\n{0}.",
+      "pl": "Aktywni Resting Obszar, region Premia:\n{0}.",
+      "lang": "Active Resting Area Bonuses:\n{0}."
+    },
+    {
       "key": "cpp.protocol.vocation_label",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2246,6 +2337,78 @@
       "en": "Vocation",
       "pl": "Profesja",
       "lang": "Vocation"
+    },
+    {
+      "key": "cpp.skill.mana_leech_chance",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "mana leech chance",
+      "pl": "mana pijawka szansa",
+      "lang": "mana leech chance"
+    },
+    {
+      "key": "cpp.title.desc_93",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Reach 15,000 boss points.",
+      "pl": "Zdobądź 15 000 punktów bossa.",
+      "lang": "Reach 15,000 boss points."
+    },
+    {
+      "key": "cpp.title.name_10",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 2)",
+      "pl": "Topmodelka Tibia (klasa 2)",
+      "lang": "Tibia's Topmodel (Grade 2)"
+    },
+    {
+      "key": "cpp.title.name_11",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 3)",
+      "pl": "Topmodelka Tibia (klasa 3)",
+      "lang": "Tibia's Topmodel (Grade 3)"
+    },
+    {
+      "key": "cpp.title.name_12",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 4)",
+      "pl": "Topmodelka Tibia (klasa 4)",
+      "lang": "Tibia's Topmodel (Grade 4)"
+    },
+    {
+      "key": "cpp.title.name_13",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 5)",
+      "pl": "Topmodelka Tibia (klasa 5)",
+      "lang": "Tibia's Topmodel (Grade 5)"
+    },
+    {
+      "key": "cpp.title.name_33",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Reigning Drome Champion",
+      "pl": "Aktualny mistrz Drome",
+      "lang": "Reigning Drome Champion"
+    },
+    {
+      "key": "cpp.title.name_9",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 1)",
+      "pl": "Topmodelka Tibia (klasa 1)",
+      "lang": "Tibia's Topmodel (Grade 1)"
     },
     {
       "key": "cpp.vocation.id_3",
@@ -2282,6 +2445,42 @@
       "en": "missile",
       "pl": "pocisk",
       "lang": "missile"
+    },
+    {
+      "key": "event.player.msg2",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily-reward-xp-boost",
+      "pl": "codzienne-nagroda-doładowanie-xp",
+      "lang": "daily-reward-xp-boost"
+    },
+    {
+      "key": "event.player.msg3",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily-reward-xp-boost",
+      "pl": "codzienne-nagroda-doładowanie-xp",
+      "lang": "daily-reward-xp-boost"
+    },
+    {
+      "key": "event.player.msg4",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily-reward-xp-boost",
+      "pl": "codzienne-nagroda-doładowanie-xp",
+      "lang": "daily-reward-xp-boost"
+    },
+    {
+      "key": "event.player.msg5",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily-reward-xp-boost",
+      "pl": "codzienne-nagroda-doładowanie-xp",
+      "lang": "daily-reward-xp-boost"
     },
     {
       "key": "web.tpl.highscores.b_5",
@@ -2428,13 +2627,193 @@
       "lang": "Version"
     },
     {
-      "key": "item.10322.name",
+      "key": "web.tpl.buttons.change_email.set_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "button.change_email",
+      "pl": "przycisk.zmiana_e-maila",
+      "lang": "button.change_email"
+    },
+    {
+      "key": "web.tpl.buttons.change_sex.set_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "button.change_sex",
+      "pl": "przycisk.zmiana_płci",
+      "lang": "button.change_sex"
+    },
+    {
+      "key": "web.tpl.account.management.set_11",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "account.section.characters",
+      "pl": "postacie.sekcji.konta",
+      "lang": "account.section.characters"
+    },
+    {
+      "key": "web.tpl.buttons.change_password.set_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "button.change_password",
+      "pl": "przycisk.zmiana_hasła",
+      "lang": "button.change_password"
+    },
+    {
+      "key": "html.news.html.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{{ date|date(setting('core.news_date_format')) }} - ",
+      "pl": "{{ date|date(setting('core.news_date_format')) }} - ",
+      "lang": "{{ date|date(setting('core.news_date_format')) }} - "
+    },
+    {
+      "key": "html.forum.remove_post.html.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " {{ post.post_topic}} ",
+      "pl": "{{ post.post_topic}} ",
+      "lang": " {{ post.post_topic}} "
+    },
+    {
+      "key": "html.account.characters.change_comment.html.text4",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[max. length: 2000 chars, 50 lines (ENTERs)]",
+      "pl": "[maks. długość: 2000 znaków, 50 linii (ENTER)]",
+      "lang": "[max. length: 2000 chars, 50 lines (ENTERs)]"
+    },
+    {
+      "key": "html.forum.show_thread.html.text5",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{{ post.content|raw }} ",
+      "pl": "{{ post.content|raw }} ",
+      "lang": "{{ post.content|raw }} "
+    },
+    {
+      "key": "html.27_downloads.text3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Download Tibia Client ",
+      "pl": "Pobierz klienta Tibia ",
+      "lang": "Download Tibia Client "
+    },
+    {
+      "key": "html.fullpage.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Full Page Editing &mdash; CKEditor Sample",
+      "pl": "Edycja całej strony &mdash; Przykład CKEditora",
+      "lang": "Full Page Editing &mdash; CKEditor Sample"
+    },
+    {
+      "key": "html.easyimage.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "CKEditor Easy Image Sample",
+      "pl": "Próbka prostego obrazu CKEditor",
+      "lang": "CKEditor Easy Image Sample"
+    },
+    {
+      "key": "html.uicolor.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "UI Color Picker &mdash; CKEditor Sample",
+      "pl": "Próbnik kolorów interfejsu użytkownika &mdash; Przykład CKEditora",
+      "lang": "UI Color Picker &mdash; CKEditor Sample"
+    },
+    {
+      "key": "html.inlineall.text2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " &raquo; Massive inline editing",
+      "pl": " &raquo; Massive inline editing",
+      "lang": " &raquo; Massive inline editing"
+    },
+    {
+      "key": "html.api.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "API Usage &mdash; CKEditor Sample",
+      "pl": "Użycie API &mdash; Przykład CKEditora",
+      "lang": "API Usage &mdash; CKEditor Sample"
+    },
+    {
+      "key": "html.divreplace.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Replace DIV &mdash; CKEditor Sample",
+      "pl": "Zamień DIV &mdash; Przykład CKEditora",
+      "lang": "Replace DIV &mdash; CKEditor Sample"
+    },
+    {
+      "key": "html.edit.html.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Soul / Cap / Balance",
+      "pl": "Dusza / Czapka / Równowaga",
+      "lang": "Soul / Cap / Balance"
+    },
+    {
+      "key": "html.boards.html.text5",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " {{ topic.post_date }}",
+      "pl": "{{ topic.post_date }}",
+      "lang": " {{ topic.post_date }}"
+    },
+    {
+      "key": "html.viewguild.html.text3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guild Bank Account Balance",
+      "pl": "Guild Saldo konta bankowego",
+      "lang": "Guild Bank Account Balance"
+    },
+    {
+      "key": "html.change_primary.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "server-id={{ server_id }}",
+      "pl": "identyfikator serwera={{ server_id }}",
+      "lang": "server-id={{ server_id }}"
+    },
+    {
+      "key": "html.glossary.text3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "From Wikipedia, the free encyclopedia",
+      "pl": "Z Wikipedii, wolnej encyklopedii",
+      "lang": "From Wikipedia, the free encyclopedia"
+    },
+    {
+      "key": "item.10218.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "statue",
-      "pl": "posąg",
-      "lang": "statue"
+      "en": "corned fish",
+      "pl": "peklowana ryba",
+      "lang": "corned fish"
     },
     {
       "key": "item.10389.name",
@@ -2779,40 +3158,40 @@
       "lang": "fanfare"
     },
     {
-      "key": "item.2959.name",
+      "key": "item.25306.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "piano",
-      "pl": "piaNie",
-      "lang": "piano"
+      "en": "loupe",
+      "pl": "lupa",
+      "lang": "loupe"
     },
     {
-      "key": "item.2960.name",
+      "key": "item.25381.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "piano",
-      "pl": "piaNie",
-      "lang": "piano"
+      "en": "dancing dawn maiden",
+      "pl": "tańcząca dziewica świtu",
+      "lang": "dancing dawn maiden"
     },
     {
-      "key": "item.2961.name",
+      "key": "item.25687.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "piano",
-      "pl": "piaNie",
-      "lang": "piano"
+      "en": "document",
+      "pl": "dokument",
+      "lang": "document"
     },
     {
-      "key": "item.2962.name",
+      "key": "item.25706.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "piano",
-      "pl": "piaNie",
-      "lang": "piano"
+      "en": "stuffed ogre brute",
+      "pl": "wypchany ogr brutal",
+      "lang": "stuffed ogre brute"
     },
     {
       "key": "item.2979.name",

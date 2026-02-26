@@ -3,14 +3,19 @@
   "lang": "it",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": true,
+      "ok": false,
       "guard_placeholder": 0,
-      "guard_pipe": 0
+      "guard_pipe": 1,
+      "batch_guard_placeholder": 0,
+      "batch_guard_pipe": 0,
+      "source": "file_state_audit"
     },
     "guard_command_below_threshold": {
       "ok": true,
       "guard_command": 0,
-      "threshold": 5
+      "threshold": 5,
+      "batch_guard_command": 0,
+      "source": "file_state_audit"
     },
     "coverage_above_95pct": {
       "ok": true,

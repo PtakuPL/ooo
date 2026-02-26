@@ -48,7 +48,7 @@ end
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
 	if Player(creature):getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) < 9 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_majestic_warwolf.say_1")
+		npcHandler:say("GRRRRRRRRRRRRR", npc, creature)
 		return false
 	end
 	return true
@@ -64,7 +64,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if table.contains({ "addon", "outfit" }, message) then
 		if player:getStorageValue(Storage.Quest.U7_8.DruidOutfits.DruidHatAddon) == 9 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_majestic_warwolf.say_2")
+			npcHandler:say("I can see in your eyes that you are a honest and friendly person, |PLAYERNAME|. You were patient enough to learn our language and I will grant you a special gift. Will you accept it?", npc, creature)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
@@ -80,9 +80,9 @@ end
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.a_majestic_warwolf.greet_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.a_majestic_warwolf.farewell_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.a_majestic_warwolf.walkaway_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "Interesting. A human who can speak the language of wolves.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "YOOOOUHHOOOUU!")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "YOOOOUHHOOOUU!")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

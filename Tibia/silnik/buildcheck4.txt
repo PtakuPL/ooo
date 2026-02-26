@@ -1,0 +1,5 @@
+total 16
+drwxr-xr-x 4 ptaku ptaku 4096 lut 16 07:17 .
+drwxr-xr-x 5 ptaku ptaku 4096 lut 16 07:17 ..
+drwxr-xr-x 3 ptaku ptaku 4096 lut 21 22:54 CMakeFiles
+drwxr-xr-x 4 ptaku ptaku 4096 lut 16 07:17 vcpkg_installed

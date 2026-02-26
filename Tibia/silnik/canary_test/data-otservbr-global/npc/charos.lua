@@ -89,7 +89,7 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if npcHandler:getTopic(playerId) == 0 then
 		if MsgContains(message, "yes") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.charos.say_1", { -player:getStorageValue(Storage.Quest.U9_80.AdventurersGuild.CharosTrav) + 7 })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.charos.say_4", { -player:getStorageValue(Storage.Quest.U9_80.AdventurersGuild.CharosTrav) + 7 })
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then

@@ -8,17 +8,37 @@
   "coverage_pct": 8.9,
   "issues_total": 79,
   "issues_by_type": {
-    "script_wrong_script": 78,
+    "script_wrong_script": 82,
+    "V2_length_ratio": 4,
+    "V1_placeholder_mismatch": 3,
     "V4_artifact": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
-    "HIGH": 79,
-    "MEDIUM": 0,
+    "CRITICAL": 3,
+    "HIGH": 83,
+    "MEDIUM": 4,
     "LOW": 0
   },
   "score": 97.5,
   "worst_keys": [
+    {
+      "key": "npc.a_dead_bureaucrat1.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat3.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
     {
       "key": "achievement.42.name",
       "category": "achievements",
@@ -117,24 +137,6 @@
     },
     {
       "key": "item.21878.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.23442.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.23443.name",
-      "category": "items",
-      "type": "script_wrong_script",
-      "severity": "HIGH"
-    },
-    {
-      "key": "item.24227.name",
       "category": "items",
       "type": "script_wrong_script",
       "severity": "HIGH"

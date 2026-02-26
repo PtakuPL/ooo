@@ -347,6 +347,20 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "Silencer",
+      "variants": [
+        "Глушитель",
+        "Заглушитель"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "cpp:cpp.title.name_19",
+        "monsters:monster.silencer.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "None",
       "variants": [
         "Нет",
@@ -378,6 +392,37 @@
     {
       "type": "crossref_inconsistent_translation",
       "severity": "MEDIUM",
+      "en": "Change Email",
+      "variants": [
+        "Изменить e-mail",
+        "Изменить адрес электронной почты"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "html:web.tpl.buttons.change_email.set_1",
+        "html:web.tpl.account.management.set_3"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Hide",
+      "variants": [
+        "Скрывать",
+        "Скрыть"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "html:web.tpl.account.management.th_18",
+        "monsters:monster.hide.name",
+        "monsters:monster.hide.desc",
+        "otclient_modules:otclient_modules.game_healthcircle.tr_7",
+        "otclient_modules:otclient_modules.statsbar.tr_2"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
       "en": "Options",
       "variants": [
         "Настройки",
@@ -404,6 +449,34 @@
       "examples": [
         "html:web.tpl.coins.th_3",
         "items:item.22118.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "snowman",
+      "variants": [
+        "sНетwman",
+        "снеговик"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.10208.name",
+        "items:item.30336.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "lucky clover amulet",
+      "variants": [
+        "lucky clover амулет",
+        "амулет из клевера на удачу"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.10476.name",
+        "items:item.37059.name"
       ]
     },
     {
@@ -1891,6 +1964,69 @@
       "en": "clientid=",
       "pl": "identyfikator klienta=",
       "lang": "clientid="
+    },
+    {
+      "key": "client.keybind.text2",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "controls-preset-current",
+      "pl": "sterowanie-prądem ustawionym",
+      "lang": "controls-preset-current"
+    },
+    {
+      "key": "client.keybins.text1",
+      "category": "client",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "styles/controls/preset",
+      "pl": "style/sterowanie/ustawienia wstępne",
+      "lang": "styles/controls/preset"
+    },
+    {
+      "key": "cpp.combat.charm_savage_blow",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (savage blow charm)",
+      "pl": "(amulet dzikiego ciosu)",
+      "lang": " (savage blow charm)"
+    },
+    {
+      "key": "cpp.inspect.magic_shield_capacity",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Magic Shield Capacity",
+      "pl": "Magia tarcza udźperuka",
+      "lang": "Magic Shield Capacity"
+    },
+    {
+      "key": "cpp.inspect.required_magic_level",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Required Magic Level",
+      "pl": "Wymagany Magia Poziom",
+      "lang": "Required Magic Level"
+    },
+    {
+      "key": "cpp.look.magic_shield_capacity",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "magic shield capacity",
+      "pl": "magia tarcza udźperuka",
+      "lang": "magic shield capacity"
+    },
+    {
+      "key": "cpp.player.exp_animus_bonus",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (animus mastery bonus {0}%)",
+      "pl": "(animus biegłość premia {0}%)",
+      "lang": " (animus mastery bonus {0}%)"
     },
     {
       "key": "cpp.player.list_delimiter",

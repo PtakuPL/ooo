@@ -62,18 +62,12 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "place" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"This {plane} is now inhabited by {intruders} and creatures that accidentally became {dragged} in. ...",
-		"It is neither completely of our world nor is it still that disconnected and unreachable as it used to be. I fear it's only a harbinger of something more dangerous and more {sinister}.",
-	},
+	i18nKey = "npc.falonzo.stdmod_7",
 })
 
 keywordHandler:addKeyword({ "anomaly" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Well, the whole place here is an anomaly so to say. You can hardly have missed the fact that you arrived here through a mystical gate. ...",
-		"Well actually it's no gate at all but a rift in the fabric of nature. It is this minor {plane} trying to reconnect to our world.",
-	},
+	i18nKey = "npc.falonzo.stdmod_8",
 })
 
 keywordHandler:addKeyword({ "plane" }, StdModule.say, {
@@ -88,19 +82,12 @@ keywordHandler:addKeyword({ "intruders" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "dragged" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"This place became a fiery trap to certain beings with an affinity to fire. Somehow it reconnects randomly with the known world, to which it once belonged ...",
-		"but also to other places that it shares some affinity with like hellish places of unspeakable evil that spawn infernal creatures.",
-	},
+	i18nKey = "npc.falonzo.stdmod_9",
 })
 
 keywordHandler:addKeyword({ "sinister" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Something is tearing at the fabric of reality. I can't tell what is it but the {boundaries} between worlds are fading. ...",
-		"A process that what watched for over a century but which has extremely grown in momentum over the last few years. Something is happening and it's for sure nothing good. ...",
-		"Be it as it may, the plane trying to reconnect was only a side effect. It still might teach us about what is happening and it has for sure attracted some {attention} already.",
-	},
+	i18nKey = "npc.falonzo.stdmod_10",
 })
 keywordHandler:addAliasKeyword({ "changed" })
 
@@ -111,10 +98,7 @@ keywordHandler:addKeyword({ "lost" }, StdModule.say, {
 
 keywordHandler:addKeyword({ "boundaries" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"We know about other planes of existence but in all history it has never been as easy to reach them as it is now. ...",
-		"Sometimes world seem to overlap and we can identify more and more such planes and worlds. More then we ever had imagined. All we can tell is, that something is changing. And not for the good.",
-	},
+	i18nKey = "npc.falonzo.stdmod_11",
 })
 
 keywordHandler:addKeyword({ "attention" }, StdModule.say, {

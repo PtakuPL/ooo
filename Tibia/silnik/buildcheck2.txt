@@ -1,0 +1,5 @@
+ls: cannot access '/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/linux-release/build.ninja': No such file or directory
+---
+ls: cannot access '/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/linux-release/Makefile': No such file or directory
+---
+ls: cannot access '/home/ptaku/serweryt/Tibia/silnik/canary_test/testyy/build/linux-release/compile_commands.json': No such file or directory

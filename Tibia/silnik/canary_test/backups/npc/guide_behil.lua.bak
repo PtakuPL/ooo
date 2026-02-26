@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Hello, is this your first visit to Darashia? I can show you around a little." },
-	{ text = "I'm well informed about the status of the world despite all the recent changes." },
-	{ text = "Need some help finding your way through Darashia? Let me assist you." },
-	{ text = "Free escort to the depot for newcomers!" },
+	{ i18nKey = "npc.guide_behil.voice_1" },
+	{ i18nKey = "npc.guide_behil.voice_2" },
+	{ i18nKey = "npc.guide_behil.voice_3" },
+	{ i18nKey = "npc.guide_behil.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -99,9 +99,9 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "town" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_behil.stdmod_7" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_behil.stdmod_8" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Daraman's blessings, Black Sabbatth, welcome to Darashia! Would you like some information and a map guide?")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Daraman's blessings, enjoy your stay in Darashia, |PLAYERNAME|")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.guide_behil.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.guide_behil.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.guide_behil.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

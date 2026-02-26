@@ -26,9 +26,9 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ i18nKey = "npc.benjamin.voice_1" },
-	{ i18nKey = "npc.benjamin.voice_2" },
-	{ i18nKey = "npc.benjamin.voice_3" },
+	{ text = "Welcome to the post office!" },
+	{ text = "If you need help with letters or parcels, just ask me. I can explain everything." },
+	{ text = "Hey, send a letter to your friend now and then. Keep in touch, you know." },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -69,7 +69,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "measurements") then
 		local player = Player(creature)
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07) >= 1 and player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.MeasurementsBenjamin) ~= 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.benjamin.say_1")
+			npcHandler:say("Oh they don't change that much since in the old days as... <tells a boring and confusing story about a cake, a parcel, himself and two squirrels, at least he tells you his measurements in the end> ", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07, player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07) + 1)
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.MeasurementsBenjamin, 1)
 			npcHandler:setTopic(playerId, 0)
@@ -81,8 +81,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.benjamin.greet_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.benjamin.farewell_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "Hello. How may I help you |PLAYERNAME|? Ask me for a {trade} if you want to buy something. I can also explain the {mail} system.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "It was a pleasure to help you.")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
@@ -99,7 +99,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
+	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

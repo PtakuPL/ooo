@@ -174,6 +174,240 @@ def _printf_to_braces(s: str) -> str:
     return _FMT_SPEC_RE.sub("{}", s)
 
 
+def _strip_wrapping_parens(expr: str) -> str:
+    expr = expr.strip()
+    while expr.startswith("(") and expr.endswith(")"):
+        end = _scan_matching_paren(expr, 0)
+        if end != len(expr) - 1:
+            break
+        expr = expr[1:-1].strip()
+    return expr
+
+
+def _split_concat(expr: str) -> List[str]:
+    expr = expr.strip()
+    if not expr:
+        return []
+
+    parts: List[str] = []
+    buf: List[str] = []
+    depth_paren = 0
+    depth_brace = 0
+    depth_bracket = 0
+    in_str: Optional[str] = None
+    esc = False
+    i = 0
+
+    while i < len(expr):
+        ch = expr[i]
+        if in_str:
+            buf.append(ch)
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == in_str:
+                in_str = None
+            i += 1
+            continue
+
+        if ch == '"' or ch == "'":
+            in_str = ch
+            buf.append(ch)
+            i += 1
+            continue
+
+        if ch == "(":
+            depth_paren += 1
+            buf.append(ch)
+            i += 1
+            continue
+        if ch == ")":
+            depth_paren = max(0, depth_paren - 1)
+            buf.append(ch)
+            i += 1
+            continue
+        if ch == "{":
+            depth_brace += 1
+            buf.append(ch)
+            i += 1
+            continue
+        if ch == "}":
+            depth_brace = max(0, depth_brace - 1)
+            buf.append(ch)
+            i += 1
+            continue
+        if ch == "[":
+            depth_bracket += 1
+            buf.append(ch)
+            i += 1
+            continue
+        if ch == "]":
+            depth_bracket = max(0, depth_bracket - 1)
+            buf.append(ch)
+            i += 1
+            continue
+
+        if (
+            ch == "."
+            and i + 1 < len(expr)
+            and expr[i + 1] == "."
+            and depth_paren == 0
+            and depth_brace == 0
+            and depth_bracket == 0
+        ):
+            part = "".join(buf).strip()
+            if part:
+                parts.append(part)
+            buf = []
+            i += 2
+            continue
+
+        buf.append(ch)
+        i += 1
+
+    tail = "".join(buf).strip()
+    if tail:
+        parts.append(tail)
+    return parts
+
+
+def _has_top_level_bool_or_compare(expr: str) -> bool:
+    expr = expr.strip()
+    if not expr:
+        return False
+
+    depth_paren = 0
+    depth_brace = 0
+    depth_bracket = 0
+    in_str: Optional[str] = None
+    esc = False
+    i = 0
+
+    while i < len(expr):
+        ch = expr[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == in_str:
+                in_str = None
+            i += 1
+            continue
+
+        if ch == '"' or ch == "'":
+            in_str = ch
+            i += 1
+            continue
+        if ch == "(":
+            depth_paren += 1
+            i += 1
+            continue
+        if ch == ")":
+            depth_paren = max(0, depth_paren - 1)
+            i += 1
+            continue
+        if ch == "{":
+            depth_brace += 1
+            i += 1
+            continue
+        if ch == "}":
+            depth_brace = max(0, depth_brace - 1)
+            i += 1
+            continue
+        if ch == "[":
+            depth_bracket += 1
+            i += 1
+            continue
+        if ch == "]":
+            depth_bracket = max(0, depth_bracket - 1)
+            i += 1
+            continue
+
+        if depth_paren == 0 and depth_brace == 0 and depth_bracket == 0:
+            if expr.startswith("==", i) or expr.startswith("~=", i) or expr.startswith("<=", i) or expr.startswith(">=", i):
+                return True
+            if ch == "<" or ch == ">":
+                return True
+            if expr.startswith("and", i):
+                prev = expr[i - 1] if i > 0 else " "
+                nxt = expr[i + 3] if i + 3 < len(expr) else " "
+                if not (prev.isalnum() or prev == "_") and not (nxt.isalnum() or nxt == "_"):
+                    return True
+            if expr.startswith("or", i):
+                prev = expr[i - 1] if i > 0 else " "
+                nxt = expr[i + 2] if i + 2 < len(expr) else " "
+                if not (prev.isalnum() or prev == "_") and not (nxt.isalnum() or nxt == "_"):
+                    return True
+        i += 1
+    return False
+
+
+def _parse_string_format(expr: str) -> Optional[dict]:
+    expr = _strip_wrapping_parens(expr)
+    m = re.match(r"^string\.format\s*\((.*)\)\s*$", expr, re.DOTALL)
+    if not m:
+        return None
+    inner = m.group(1)
+    fmt_parts = _split_top_level_args(inner)
+    if not fmt_parts:
+        return None
+    fmt_literal = _extract_string_literal(fmt_parts[0])
+    if fmt_literal is None:
+        return None
+    return {
+        "text": _printf_to_braces(fmt_literal),
+        "args": [p.strip() for p in fmt_parts[1:] if p.strip()],
+        "kind": "format",
+    }
+
+
+def _parse_concat(expr: str) -> Optional[dict]:
+    expr = _strip_wrapping_parens(expr)
+    if _has_top_level_bool_or_compare(expr):
+        return None
+    parts = _split_concat(expr)
+    if len(parts) <= 1:
+        return None
+    text_parts: List[str] = []
+    args: List[str] = []
+    literal_seen = False
+    for part in parts:
+        lit = _extract_string_literal(part)
+        if lit is not None:
+            text_parts.append(lit)
+            literal_seen = True
+        else:
+            text_parts.append("{}")
+            args.append(part.strip())
+    if not literal_seen:
+        return None
+    return {"text": "".join(text_parts), "args": args, "kind": "concat"}
+
+
+def _parse_message_expr(expr: str) -> Optional[dict]:
+    expr = expr.strip()
+    if not expr:
+        return None
+    literal = _extract_string_literal(expr)
+    if literal is not None:
+        return {"text": literal, "args": [], "kind": "literal"}
+    fmt = _parse_string_format(expr)
+    if fmt:
+        return fmt
+    concat = _parse_concat(expr)
+    if concat:
+        return concat
+    return None
+
+
+def _normalize_text(text: str) -> str:
+    text = re.sub(r"\\z\s*", "", text)
+    text = text.replace("\n", " ").replace("\r", " ").replace("\t", " ")
+    return " ".join(text.split())
+
+
 def _next_key_index(existing: dict, key_prefix: str, suffix: str) -> int:
     pat = re.compile(rf"^{re.escape(key_prefix)}\.{re.escape(suffix)}_(\d+)$")
     max_idx = 0
@@ -212,6 +446,10 @@ def migrate_file(
             idx = content.find(n, start)
             if idx == -1:
                 break
+            # Avoid double-capturing "broadcastMessage" inside "Game.broadcastMessage"
+            if n == "broadcastMessage" and idx > 0 and content[idx - 1] == ".":
+                start = idx + len(n)
+                continue
             if content.startswith("Game.broadcastLocalizedMessage", idx) or content.startswith(
                 "broadcastLocalizedMessage", idx
             ):
@@ -249,27 +487,16 @@ def migrate_file(
             continue
 
         msg_expr = args[0].strip()
-        raw_text = _extract_string_literal(msg_expr)
-        fmt_args: List[str] = []
+        msg_info = _parse_message_expr(msg_expr)
+        if not msg_info:
+            skipped_calls += 1
+            continue
 
-        if raw_text is not None:
-            translation = raw_text
-        else:
-            m = re.match(r"^string\.format\s*\((.*)\)\s*$", msg_expr, re.DOTALL)
-            if not m:
-                skipped_calls += 1
-                continue
-            inner = m.group(1)
-            fmt_parts = _split_top_level_args(inner)
-            if not fmt_parts:
-                skipped_calls += 1
-                continue
-            fmt_literal = _extract_string_literal(fmt_parts[0])
-            if fmt_literal is None:
-                skipped_calls += 1
-                continue
-            translation = _printf_to_braces(fmt_literal)
-            fmt_args = [p.strip() for p in fmt_parts[1:] if p.strip()]
+        translation = _normalize_text(msg_info["text"])
+        fmt_args: List[str] = list(msg_info.get("args") or [])
+        if not translation:
+            skipped_calls += 1
+            continue
 
         key = f"{key_prefix}.{suffix}_{next_idx}"
         next_idx += 1

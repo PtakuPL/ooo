@@ -1,0 +1,4 @@
+CMakeFiles
+linux-release
+vcpkg_installed
+EXIT=0

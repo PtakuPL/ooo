@@ -10,6 +10,7 @@ UIWidget
     OptionCheckBox
       id: enableHighlightMouseTarget
       !text: tr("otclient_modules.interface_otui.tr_15")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -26,6 +27,7 @@ UIWidget
     OptionCheckBox
       id: showLeftPanel
       !text: tr("otclient_modules.interface_otui.tr_14")
+      text-wrap: true
 
       $mobile:
         visible: false
@@ -40,6 +42,7 @@ UIWidget
     OptionCheckBox
       id: showRightExtraPanel
       !text: tr("otclient_modules.interface_otui.tr_13")
+      text-wrap: true
       
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -51,6 +54,7 @@ UIWidget
     OptionCheckBox
       id: showActionbar
       !text: tr("otclient_modules.interface_otui.tr_12")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -63,6 +67,7 @@ UIWidget
       id: showSpellGroupCooldowns
       !text: tr("otclient_modules.interface_otui.tr_11")
       !tooltip: tr("otclient_modules.interface_otui.tr_10")
+      text-wrap: true
 
   SmallReversedQtPanel
     anchors.left: parent.left
@@ -125,6 +130,7 @@ UIWidget
       margin-top: 5
       !text: tr("otclient_modules.interface_otui.tr_6")
       !tooltip: tr("otclient_modules.interface_otui.tr_5")
+      text-wrap: true
 
     OptionCheckBoxMarked
       id: showExpiryInContainers
@@ -132,6 +138,7 @@ UIWidget
       margin-top: 5
       !text: tr("otclient_modules.interface_otui.tr_4")
       !tooltip: tr("otclient_modules.interface_otui.tr_3")
+      text-wrap: true
 
     OptionCheckBoxMarked
       id: showExpiryOnUnusedItems
@@ -139,4 +146,5 @@ UIWidget
       margin-top: 5
       !text: tr("otclient_modules.interface_otui.tr_2")
       !tooltip: tr("otclient_modules.interface_otui.tr_1")
+      text-wrap: true
       enabled: false

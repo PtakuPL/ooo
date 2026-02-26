@@ -26,7 +26,7 @@
   "lib.functions.msg_no_room": "{message}, mais vous n’avez pas assez de place pour le prendre.",
   "lib.functions.msg_only_fiendish": "Seuls les monstres autorisés peuvent être fiendish.",
   "lib.functions.msg_only_influenced": "Seuls les monstres autorisés peuvent être influencés.",
-  "lib.functions.msg_param_required": "[FR] Command param required. Usage: {usage}",
+  "lib.functions.msg_param_required": "Command param required. Usage: {usage}",
   "lib.functions.msg_too_heavy": "[FR] {message}. Weighing {weight} oz, it is too heavy for you to carry.",
   "lib.functions.say_1": "Temps écoulé ! D’étranges forces vous ont téléporté dehors.",
   "lib.hireling.msg1": "Vous n'avez pas assez de capacité.",

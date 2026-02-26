@@ -50,9 +50,9 @@ local promoteKeyword = keywordHandler:addKeyword({ "promot" }, StdModule.say, { 
 promoteKeyword:addChildKeyword({ "yes" }, StdModule.promotePlayer, { npcHandler = npcHandler, level = 20, cost = 20000 })
 promoteKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ishebad.stdmod_2", reset = true })
 
-npcHandler:setMessage(MESSAGE_GREET, "Be mourned, pilgrim in flesh. Are you looking for a promotion?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, |PLAYERNAME|!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye, |PLAYERNAME|!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.ishebad.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.ishebad.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.ishebad.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

@@ -7,11 +7,81 @@
   "checked_at": "2026-02-21T20:41:15.296368Z",
   "issues_total": 414,
   "issues_by_type": {
-    "consistency_in_language": 0,
+    "consistency_in_language": 4,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 14
   },
-  "consistency_issues": [],
+  "consistency_issues": [
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "The chest is empty.",
+      "variants": [
+        "Göğüs boş.",
+        "Sandık boş.",
+        "You found ",
+        "You found."
+      ],
+      "variants_count": 4,
+      "examples": [
+        "quests:quests.bigfoot_burden.chest_empty",
+        "scripts:scripts.actions_boss_timira_fight.msg_3",
+        "scripts:scripts.actions_mission3_chest.msg_2",
+        "scripts:scripts.actions_reward.msg_4",
+        "scripts:scripts.actions_reward.msg_6"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You found ",
+      "variants": [
+        "Buldun ",
+        "You found",
+        "buldun "
+      ],
+      "variants_count": 3,
+      "examples": [
+        "actions:actions.random_items.say_1",
+        "quests:quests.actions_rewards.msg_1",
+        "quests:quests.actions_rewards.msg_2",
+        "scripts:scripts.action_tortoise_egg_nargor.msg_1",
+        "scripts:scripts.actions_treasure_chest.msg_1"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Magic Level",
+      "variants": [
+        "Büyü Seviye",
+        "Büyü Seviyesi"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "client:client.statsbar.text1",
+        "cpp:cpp.game.highscore_category_magic_level",
+        "cpp:cpp.inspect.magic_level",
+        "html:web.tpl.spells.th_17",
+        "otclient_modules:otclient_modules.game_healthcircle.tr_17"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "Ok then.",
+      "variants": [
+        "Peki o zaman.",
+        "Tabii, mallarıma göz at. Ayrıca {} de bakabilirsin."
+      ],
+      "variants_count": 2,
+      "examples": [
+        "npc:npc.aldo.say_5",
+        "npc:npc.alexander.say_3",
+        "npc:npc.asima.say_3"
+      ]
+    }
+  ],
   "pl_reference_issues": [
     {
       "key": "achievement.9.name",
@@ -669,6 +739,24 @@
       "en": "Skilled Hunter",
       "pl": "Wykwalifikowany, wyszkolony Myśliwy",
       "lang": "Skilled Hunter"
+    },
+    {
+      "key": "achievement.434.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You have fully unlocked 10 hard monsters in the cyclopedia.",
+      "pl": "Masz w pełni otwierać 10 hard potwory w the cyclopedia.",
+      "lang": "You have fully unlocked 10 hard monsters in the cyclopedia."
+    },
+    {
+      "key": "achievement.435.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "You have fully unlocked 100 hard monsters in the cyclopedia.",
+      "pl": "Masz w pełni otwierać 100 hard potwory w the cyclopedia.",
+      "lang": "You have fully unlocked 100 hard monsters in the cyclopedia."
     },
     {
       "key": "achievement.439.name",
@@ -2210,6 +2298,15 @@
       "lang": "agony"
     },
     {
+      "key": "cpp.combat.charm_savage_blow",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (savage blow charm)",
+      "pl": "(amulet dzikiego ciosu)",
+      "lang": " (savage blow charm)"
+    },
+    {
       "key": "cpp.combat.drown",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2831,6 +2928,15 @@
       "lang": " level {0}"
     },
     {
+      "key": "cpp.look.magic_shield_capacity",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "magic shield capacity",
+      "pl": "magia tarcza udźperuka",
+      "lang": "magic shield capacity"
+    },
+    {
       "key": "cpp.look.minute_one",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3011,6 +3117,15 @@
       "lang": " and others"
     },
     {
+      "key": "cpp.player.exp_animus_bonus",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " (animus mastery bonus {0}%)",
+      "pl": "(animus biegłość premia {0}%)",
+      "lang": " (animus mastery bonus {0}%)"
+    },
+    {
       "key": "cpp.player.list_and",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3108,6 +3223,15 @@
       "en": "Outfit",
       "pl": "Strój",
       "lang": "Outfit"
+    },
+    {
+      "key": "cpp.protocol.resting_active_bonuses",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Active Resting Area Bonuses:\n{0}.",
+      "pl": "Aktywni Resting Obszar, region Premia:\n{0}.",
+      "lang": "Active Resting Area Bonuses:\n{0}."
     },
     {
       "key": "cpp.protocol.support_outfit_gamemaster",
@@ -3218,6 +3342,96 @@
       "lang": "unknown"
     },
     {
+      "key": "cpp.title.desc_70",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Invested 160,000 tasks points.",
+      "pl": "Inwestować 160,000 zadanie, zajęcie points.",
+      "lang": "Invested 160,000 tasks points."
+    },
+    {
+      "key": "cpp.title.desc_71",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Invested 320,000 tasks points.",
+      "pl": "Inwestować 320,000 zadanie, zajęcie points.",
+      "lang": "Invested 320,000 tasks points."
+    },
+    {
+      "key": "cpp.title.desc_72",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Invested 430,000 tasks points.",
+      "pl": "Inwestować 430,000 zadanie, zajęcie points.",
+      "lang": "Invested 430,000 tasks points."
+    },
+    {
+      "key": "cpp.title.desc_85",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Reached 2000 charm points. Quite beastly!",
+      "pl": "Osiągnięto 2000 punktów uroku. Całkiem bestialski!",
+      "lang": "Reached 2000 charm points. Quite beastly!"
+    },
+    {
+      "key": "cpp.title.desc_93",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Reach 15,000 boss points.",
+      "pl": "Zdobądź 15 000 punktów bossa.",
+      "lang": "Reach 15,000 boss points."
+    },
+    {
+      "key": "cpp.title.name_10",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 2)",
+      "pl": "Topmodelka Tibia (klasa 2)",
+      "lang": "Tibia's Topmodel (Grade 2)"
+    },
+    {
+      "key": "cpp.title.name_11",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 3)",
+      "pl": "Topmodelka Tibia (klasa 3)",
+      "lang": "Tibia's Topmodel (Grade 3)"
+    },
+    {
+      "key": "cpp.title.name_12",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 4)",
+      "pl": "Topmodelka Tibia (klasa 4)",
+      "lang": "Tibia's Topmodel (Grade 4)"
+    },
+    {
+      "key": "cpp.title.name_13",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 5)",
+      "pl": "Topmodelka Tibia (klasa 5)",
+      "lang": "Tibia's Topmodel (Grade 5)"
+    },
+    {
+      "key": "cpp.title.name_15",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Cyclopscamper",
+      "pl": "Cyklopkamper",
+      "lang": "Cyclopscamper"
+    },
+    {
       "key": "cpp.title.name_17",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3263,6 +3477,15 @@
       "lang": "Big Boss"
     },
     {
+      "key": "cpp.title.name_33",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Reigning Drome Champion",
+      "pl": "Aktualny mistrz Drome",
+      "lang": "Reigning Drome Champion"
+    },
+    {
       "key": "cpp.title.name_34",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -3270,6 +3493,24 @@
       "en": "Bipedantic",
       "pl": "Dwunożny",
       "lang": "Bipedantic"
+    },
+    {
+      "key": "cpp.title.name_35",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood Moon Hunter",
+      "pl": "Krew Księżyc Myśliwy",
+      "lang": "Blood Moon Hunter"
+    },
+    {
+      "key": "cpp.title.name_35_female",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Blood Moon Huntress",
+      "pl": "Łowczyni Krwawego Księżyca",
+      "lang": "Blood Moon Huntress"
     },
     {
       "key": "cpp.title.name_44",
@@ -3369,6 +3610,15 @@
       "en": "Beastly",
       "pl": "Paskudny",
       "lang": "Beastly"
+    },
+    {
+      "key": "cpp.title.name_9",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Tibia's Topmodel (Grade 1)",
+      "pl": "Topmodelka Tibia (klasa 1)",
+      "lang": "Tibia's Topmodel (Grade 1)"
     },
     {
       "key": "cpp.title.name_91",
@@ -3555,22 +3805,22 @@
       "category": "libs",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "No",
-      "pl": "Nie",
-      "lang": "No"
+      "en": "event.player.msg_move_fast",
+      "pl": "Nie możesz tak szybko przenosić tego przedmiotu.",
+      "lang": "event.player.msg_move_fast"
     },
     {
-      "key": "lib.player.modal_button_yes",
-      "category": "libs",
+      "key": "web.tpl.forum.add_board.td_4",
+      "category": "html",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Yes",
-      "pl": "Tak",
-      "lang": "Yes"
+      "en": "Guild:",
+      "pl": "Gildia:",
+      "lang": "Guild:"
     },
     {
-      "key": "module.daily_reward.text5",
-      "category": "modules",
+      "key": "web.tpl.guilds.manager.b_9",
+      "category": "html",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tToDo = ",
@@ -3578,8 +3828,8 @@
       "lang": "\tToDo = "
     },
     {
-      "key": "module.hireling_module.text2",
-      "category": "modules",
+      "key": "web.tpl.serverinfo.h2_4",
+      "category": "html",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "\tVersion = ",
@@ -3587,26 +3837,26 @@
       "lang": "\tVersion = "
     },
     {
-      "key": "module.hireling_module.text4",
-      "category": "modules",
+      "key": "web.tpl.guilds.change_logo.set_1",
+      "category": "html",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "\tDate =",
-      "pl": "Data =",
-      "lang": "\tDate ="
+      "en": "Change guild logo",
+      "pl": "Zmień logo gildii",
+      "lang": "Change guild logo"
     },
     {
-      "key": "monster.defiler.name",
-      "category": "monsters",
+      "key": "web.tpl.guilds.change_motd.set_1",
+      "category": "html",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Defiler",
-      "pl": "Defilator",
-      "lang": "Defiler"
+      "en": "Change guild MOTD",
+      "pl": "Zmień MOTD gildii",
+      "lang": "Change guild MOTD"
     },
     {
-      "key": "monster.amazon.name",
-      "category": "monsters",
+      "key": "web.tpl.account.change_email.set_1",
+      "category": "html",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
       "en": "Amazon",
@@ -3740,6 +3990,15 @@
       "en_len": 6,
       "lang_ratio": 2.5,
       "pl_ratio": 0.5
+    },
+    {
+      "key": "npc.asima.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 8,
+      "lang_ratio": 6.375,
+      "pl_ratio": 1.125
     }
   ],
   "auto_fix": {

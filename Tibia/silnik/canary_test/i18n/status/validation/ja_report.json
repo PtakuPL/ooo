@@ -8,16 +8,16 @@
   "coverage_pct": 9.6,
   "issues_total": 8,
   "issues_by_type": {
-    "V2_length_ratio": 7,
-    "script_cjk_ratio": 1
+    "V2_length_ratio": 11,
+    "script_cjk_ratio": 5
   },
   "issues_by_severity": {
     "CRITICAL": 0,
     "HIGH": 0,
-    "MEDIUM": 8,
+    "MEDIUM": 16,
     "LOW": 0
   },
-  "score": 100.0,
+  "score": 99.9,
   "worst_keys": [
     {
       "key": "achievement.30.name",
@@ -65,6 +65,54 @@
       "key": "achievement.387.name",
       "category": "achievements",
       "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_24",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_29",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_34",
+      "category": "npc",
+      "type": "script_cjk_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_39",
+      "category": "npc",
+      "type": "V2_length_ratio",
+      "severity": "MEDIUM"
+    },
+    {
+      "key": "npc.gnomargery.say_39",
+      "category": "npc",
+      "type": "script_cjk_ratio",
       "severity": "MEDIUM"
     }
   ],

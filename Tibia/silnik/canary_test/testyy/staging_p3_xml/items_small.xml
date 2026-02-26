@@ -1,0 +1,9 @@
+<items>
+  <item id="100" name="foo">
+    <attribute key="description" value="Desc Foo"/>
+  </item>
+  <item fromid="200" toid="202" name="range item" />
+  <item fromid="300" toid="301" name="ref item">
+    <attribute key="description" value="#i18n:item.100.desc"/>
+  </item>
+</items>

@@ -78,32 +78,26 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.TheWayToYalahar) < 1 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.QuestLine) >= 5 and player:getStorageValue(Storage.Quest.U7_6.ExplorerSociety.JoiningTheExplorers) >= 5 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_4")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_5")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_6")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_7")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_8")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.wyrdin.say_11", "npc.wyrdin.say_12", "npc.wyrdin.say_13", "npc.wyrdin.say_14", "npc.wyrdin.say_15" })
 			player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.TheWayToYalahar, 1)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "research") or MsgContains(message, "notes") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.TheWayToYalahar) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_16")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			if player:removeItem(9171, 1) then
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.TheWayToYalahar, 3)
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_17")
 				player:addMoney(500)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:getStorageValue(TheNewFrontier.Mission05.Wyrdin) == 2 and player:removeItem(10025, 1) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_1")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_2")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.multi_3")
+				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.wyrdin.say_18", "npc.wyrdin.say_19", "npc.wyrdin.say_20" })
 				player:setStorageValue(TheNewFrontier.Mission05.Wyrdin, 1)
 				npcHandler:setTopic(playerId, 2)
 			end
@@ -112,10 +106,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "farmine") then
 		if player:getStorageValue(TheNewFrontier.Questline) == 14 then
 			if player:getStorageValue(TheNewFrontier.Mission05.Wyrdin) == 1 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_21")
 				npcHandler:setTopic(playerId, 2)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_22")
 				npcHandler:setTopic(playerId, 3)
 			end
 		end
@@ -123,23 +117,23 @@ local function creatureSayCallback(npc, creature, type, message)
 		if npcHandler:getTopic(playerId) == 2 then
 			local chance = math.random(1, 3)
 			if chance == 1 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_5")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_23")
 			elseif chance == 2 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_6")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_24")
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_7")
+				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.wyrdin.say_25", "npc.wyrdin.say_26" })
 			end
 			player:setStorageValue(TheNewFrontier.Mission05.Wyrdin, 3)
 		end
 	elseif MsgContains(message, "bluff") and player:getStorageValue(TheNewFrontier.Mission05.WyrdinKeyword) == 2 and player:getStorageValue(TheNewFrontier.Mission05.Wyrdin) == 1 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_8")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_27")
 		player:setStorageValue(TheNewFrontier.Mission05.Wyrdin, 3)
 	elseif MsgContains(message, "flatter") and player:getStorageValue(TheNewFrontier.Mission05.WyrdinKeyword) == 3 and player:getStorageValue(TheNewFrontier.Mission05.Wyrdin) == 1 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_9")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_28")
 		player:setStorageValue(TheNewFrontier.Mission05.Wyrdin, 3)
 	else
 		if player:getStorageValue(TheNewFrontier.Questline) == 14 and player:getStorageValue(TheNewFrontier.Mission05.Wyrdin) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wyrdin.say_29")
 			player:setStorageValue(TheNewFrontier.Mission05.Wyrdin, 2)
 		end
 	end
@@ -147,8 +141,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.wyrdin.greet_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.wyrdin.farewell_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "Hello, what brings you here?")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Good luck for your travels, |PLAYERNAME|.")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

@@ -109,11 +109,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			if tonumber(storeTable[playerId]) == 6526 then
 				if player:removeItem(6496, 1) then
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_2")
+					npcHandler:say("Thank you, here is your 1 christmas token.", npc, creature)
 					player:addItem(6526, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_3")
+					npcHandler:say("You don't have a present bag.", npc, creature)
 					npcHandler:setTopic(playerId, 0)
 				end
 				return false
@@ -123,28 +123,30 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addItem(itemsTable[storeTable[playerId]].itemId, 1)
 				npcHandler:setTopic(playerId, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_5")
+				npcHandler:say("You don't have enough of tokens.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif npcHandler:getTopic(playerId) > 0 then
 		if MsgContains(message, "no") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_6")
+			npcHandler:say("Come back when you are ready to trade some tokens!", npc, creature)
 		end
 	end
 	if MsgContains(message, "santa claus") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_1")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_2")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_3")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_4")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_5")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_6")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_7")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_8")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_9")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_10")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_11")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_12")
+		npcHandler:say({
+			"Well, he does not really like it if someone tells his story ... but I do! A long, long time ago Santa was nothing but a greedy little dwarf. A real miser, I tell ya ...",
+			"He was greedy even by dwarven standards. He would never share anything or give away the cheapest thing in his possession ...",
+			"One day a woman came to his house and asked him for a cup of water ...",
+			"Of course he refused. He even mocked her for being so naive. But what he did not know was that this woman was some kind of mighty faery or perhaps a goddess in disguise ...",
+			"Be it as it may, the woman cursed old Santa, forcing him to share his fortune with everyone he met ...",
+			"Santa was horrified. Of course, he could not bear the thought of sharing anything at all. So he went into hiding ...",
+			"He hid in the most remote places in the world, but time and again someone found him out, and the curse made him share his wealth ...",
+			"And know something? Old Santa actually came to like it! He saw the joy his presents brought, and this opened his old stony heart ...",
+			"And he learned that this way his fortune gave him more joy and pleasure than it ever did when he locked it away. ...",
+			"Over the years he turned it into a game. He hid somewhere to reward those who found him ...",
+			"But once every year, on a very special day which happens to be his curse's anniversary, he goes out and brings presents to the people, and especially to the children ...",
+			"Well, that is his story ... Nah, that's not a tear in my eye. It's just the wind, you know.",
+		}, npc, creature)
 	end
 	return true
 end

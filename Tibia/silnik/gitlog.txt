@@ -1,0 +1,4 @@
+564ce5c5f feat(i18n): auto-size buttons, sidebar, text-wrap panels + tr() categories
+30a897eea fix(warnings): handle fribidi_reorder_line return value, fix g_client shared_ptr UB
+e74e30ad5 fix(ttf): extract flushPendingUploads, fix glyph metrics & CachedText rendering
+77d9cb2a4 fix(msvc): ICE C1001 v5 - extract throw from value<T>() template

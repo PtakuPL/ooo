@@ -1,0 +1,167 @@
+UIWidget
+  anchors.fill: parent
+  visible: false
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: parent.top
+    height: 22
+
+    OptionCheckBoxMarked
+      id: healthCheckBox
+      !text: tr("otclient_modules.option_healthcircle_otui.tr_13")
+      !tooltip: tr("otclient_modules.option_healthcircle_otui.tr_12")
+      @onCheckChange: |
+        if self:isChecked() then
+          modules.game_healthcircle.setHealthCircle(true)
+        else
+          modules.game_healthcircle.setHealthCircle(false)
+        end
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    height: 22
+  
+    OptionCheckBoxMarked
+      id: manaCheckBox
+      !text: tr("otclient_modules.option_healthcircle_otui.tr_11")
+      !tooltip: tr("otclient_modules.option_healthcircle_otui.tr_10")
+      @onCheckChange: |
+        if self:isChecked() then
+          modules.game_healthcircle.setManaCircle(true)
+        else
+          modules.game_healthcircle.setManaCircle(false)
+        end
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    height: 22
+  
+    OptionCheckBoxMarked
+      id: experienceCheckBox
+      !text: tr("otclient_modules.option_healthcircle_otui.tr_9")
+      !tooltip: tr("otclient_modules.option_healthcircle_otui.tr_8")
+      @onCheckChange: |
+        if self:isChecked() then
+          modules.game_healthcircle.setExpCircle(true)
+        else
+          modules.game_healthcircle.setExpCircle(false)
+        end
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    height: 22
+  
+    OptionCheckBoxMarked
+      id: skillCheckBox
+      !text: tr("otclient_modules.option_healthcircle_otui.tr_7")
+      !tooltip: tr("otclient_modules.option_healthcircle_otui.tr_6")
+      @onCheckChange: |
+        if self:isChecked() then
+          modules.game_healthcircle.setSkillCircle(true)
+        else
+          modules.game_healthcircle.setSkillCircle(false)
+        end
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    height: 32
+  
+    Label
+      !text: tr("otclient_modules.option_healthcircle_otui.tr_5")
+      anchors.left: parent.left
+      margin-left: 18
+      color: #c0c0c0ff
+      anchors.verticalCenter: parent.verticalCenter
+
+    QtComboBox
+      id: chooseSkillComboBox
+      width: 120
+      margin-left: 10
+      anchors.verticalCenter: prev.verticalCenter
+      anchors.left: prev.right
+      mouse-scroll: false
+      @onTextChange: modules.game_healthcircle.setSkillType(self:getCurrentOption().data)
+
+    UIWidget
+      !tooltip: tr("otclient_modules.option_healthcircle_otui.tr_4")
+      image-source: /images/icons/show_gui_help_grey
+      size: 12 12
+      anchors.right: parent.right
+      anchors.verticalCenter: parent.verticalCenter
+      margin-right: 3
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    height: 22
+
+    OptionScaleScrollMarked
+      id: distFromCenScrollbar
+      !text: tr('Distance from center' .. ':')
+      !tooltip: tr("otclient_modules.option_healthcircle_otui.tr_3")
+      anchors.fill: parent
+      &minimumScrollValue: 0
+      &maximumScrollValue: 100
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    height: 22
+
+    OptionScaleScrollMarked
+      id: opacityScrollbar
+      !text: tr('Opacity' .. ':')
+      !tooltip: tr("otclient_modules.option_healthcircle_otui.tr_2")
+      anchors.fill: parent
+      &minimumScrollValue: 0
+      &maximumScrollValue: 100
+
+  SmallReversedQtPanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 7
+    height: 32
+  
+    Label
+      !text: tr("otclient_modules.option_healthcircle_otui.tr_1")
+      anchors.left: parent.left
+      margin-left: 18
+      color: #c0c0c0ff
+      anchors.verticalCenter: parent.verticalCenter
+
+    QtComboBox
+      id: chooseStatsBarPlacement
+      width: 120
+      margin-left: 10
+      anchors.verticalCenter: prev.verticalCenter
+      anchors.left: prev.right
+      mouse-scroll: false
+      @onTextChange: modules.game_healthcircle.updateStatsBar()
+
+    QtComboBox
+      id: chooseStatsBarDimension
+      width: 120
+      margin-left: 10
+      anchors.verticalCenter: prev.verticalCenter
+      anchors.right: parent.right
+      anchors.left: prev.right
+      mouse-scroll: false
+      @onTextChange: modules.game_healthcircle.updateStatsBar()

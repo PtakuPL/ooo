@@ -25,10 +25,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Hello, is this your first visit to Ab'Dendriel? I can show you around a little." },
-	{ text = "Talk to me if you need directions." },
-	{ text = "Free escort to the depot for newcomers!" },
-	{ text = "If you want to know something about the status of this world, talk to me." },
+	{ i18nKey = "npc.guide_thelandil.voice_1" },
+	{ i18nKey = "npc.guide_thelandil.voice_2" },
+	{ i18nKey = "npc.guide_thelandil.voice_3" },
+	{ i18nKey = "npc.guide_thelandil.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -96,9 +96,9 @@ keywordHandler:addKeyword({ "shops" }, StdModule.say, { npcHandler = npcHandler,
 keywordHandler:addKeyword({ "depot" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_thelandil.stdmod_5" })
 keywordHandler:addKeyword({ "town" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_thelandil.stdmod_6" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello there, |PLAYERNAME| and welcome to Ab'Dendriel! Would you like some information and a map guide?")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and enjoy your stay in Ab'Dendriel, |PLAYERNAME|")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.guide_thelandil.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.guide_thelandil.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.guide_thelandil.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

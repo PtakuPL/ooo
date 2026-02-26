@@ -50,7 +50,7 @@
   "php.settings.text5": "bien configuración predeterminada",
   "php.settingssetcommand.text1": "Configuración $key actualizada exitosamente",
   "php.template.text1": "barra de navegación del encabezado principal barra de navegación-expandir barra de navegación-luz-barra de navegación blanca",
-  "php.template.text2": "[EN] nav-item d-none d-sm-inline-block",
+  "php.template.text2": "nav-item d-none d-sm-inline-block",
   "php.template.text3": "barra de navegación-nav ml-auto",
   "php.upload_image.text1": "No existe una política P3P.",
   "php.validator.text1": "El nombre del personaje es demasiado corto. Longitud mínima <b>$minLength</b> caracteres.",

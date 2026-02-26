@@ -66,28 +66,27 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if player:getStorageValue(Storage.Quest.U12_00.TheDreamCourts.Main.Questline) < 1 then
 		if MsgContains(message, "good") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.say_7")
 			npcHandler:setTopic(playerId, 2)
 		elseif MsgContains(message, "help") and npcHandler:getTopic(playerId) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.say_8")
 			npcHandler:setTopic(playerId, 3)
 		elseif MsgContains(message, "threat") and npcHandler:getTopic(playerId) == 3 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.multi_1")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.multi_2")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.myzzi.say_9", "npc.myzzi.say_10" })
 			npcHandler:setTopic(playerId, 4)
 		elseif MsgContains(message, "courts") and npcHandler:getTopic(playerId) == 4 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.say_3")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.myzzi.say_11", "npc.myzzi.say_12" })
 			npcHandler:setTopic(playerId, 5)
 		elseif MsgContains(message, "entrances") and npcHandler:getTopic(playerId) == 5 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.say_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.say_13")
 			npcHandler:setTopic(playerId, 6)
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if MsgContains(message, "yes") then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.say_5")
+				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.myzzi.say_14" })
 				player:setStorageValue(Storage.Quest.U12_00.TheDreamCourts.Main.Questline, 1)
 				npcHandler:setTopic(playerId, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.say_6")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.myzzi.say_15")
 			end
 		end
 	end
@@ -95,9 +94,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.myzzi.greet_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.myzzi.farewell_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.myzzi.walkaway_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "Hello adventurer. It is {good} to see you.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Well, bye then.")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

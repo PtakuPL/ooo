@@ -968,6 +968,375 @@
       "lang": "_sbutton_leaveguild"
     },
     {
+      "key": "event.player.msg1",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "event.player.msg_move_fast",
+      "pl": "Nie możesz tak szybko przenosić tego przedmiotu.",
+      "lang": "event.player.msg_move_fast"
+    },
+    {
+      "key": "event.player.msg2",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily-reward-xp-boost",
+      "pl": "codzienne-nagroda-doładowanie-xp",
+      "lang": "daily-reward-xp-boost"
+    },
+    {
+      "key": "event.player.msg3",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily-reward-xp-boost",
+      "pl": "codzienne-nagroda-doładowanie-xp",
+      "lang": "daily-reward-xp-boost"
+    },
+    {
+      "key": "event.player.msg4",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily-reward-xp-boost",
+      "pl": "codzienne-nagroda-doładowanie-xp",
+      "lang": "daily-reward-xp-boost"
+    },
+    {
+      "key": "event.player.msg5",
+      "category": "events",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "daily-reward-xp-boost",
+      "pl": "codzienne-nagroda-doładowanie-xp",
+      "lang": "daily-reward-xp-boost"
+    },
+    {
+      "key": "web.tpl.forum.add_board.td_4",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guild:",
+      "pl": "Gildia:",
+      "lang": "Guild:"
+    },
+    {
+      "key": "web.tpl.guilds.manager.b_9",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ID/Delete Rank",
+      "pl": "ID/Usuń rangę",
+      "lang": "ID/Delete Rank"
+    },
+    {
+      "key": "web.tpl.serverinfo.h2_4",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Frags & Skull system",
+      "pl": "System Fragów i Czaszek",
+      "lang": "Frags & Skull system"
+    },
+    {
+      "key": "web.tpl.guilds.change_logo.set_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Change guild logo",
+      "pl": "Zmień logo gildii",
+      "lang": "Change guild logo"
+    },
+    {
+      "key": "web.tpl.guilds.change_motd.set_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Change guild MOTD",
+      "pl": "Zmień MOTD gildii",
+      "lang": "Change guild MOTD"
+    },
+    {
+      "key": "web.tpl.account.change_email.set_1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Change Email Address",
+      "pl": "Zmień adres e-mail",
+      "lang": "Change Email Address"
+    },
+    {
+      "key": "web.tpl.buttons.change_email.set_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "button.change_email",
+      "pl": "przycisk.zmiana_e-maila",
+      "lang": "button.change_email"
+    },
+    {
+      "key": "web.tpl.buttons.change_sex.set_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "button.change_sex",
+      "pl": "przycisk.zmiana_płci",
+      "lang": "button.change_sex"
+    },
+    {
+      "key": "web.tpl.buttons.register_account.set_2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "button.register_account",
+      "pl": "przycisk.zarejestruj_konto",
+      "lang": "button.register_account"
+    },
+    {
+      "key": "web.tpl.account.management.set_11",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "account.section.characters",
+      "pl": "postacie.sekcji.konta",
+      "lang": "account.section.characters"
+    },
+    {
+      "key": "web.tpl.buttons.change_password.set_3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "button.change_password",
+      "pl": "przycisk.zmiana_hasła",
+      "lang": "button.change_password"
+    },
+    {
+      "key": "html.news.html.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{{ date|date(setting('core.news_date_format')) }} - ",
+      "pl": "{{ date|date(setting('core.news_date_format')) }} - ",
+      "lang": "{{ date|date(setting('core.news_date_format')) }} - "
+    },
+    {
+      "key": "html.guilds.change_logo.html.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " pictures. Max. size: ",
+      "pl": "kino. Maks. rozmiar: ",
+      "lang": " pictures. Max. size: "
+    },
+    {
+      "key": "html.forum.remove_post.html.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " {{ post.post_topic}} ",
+      "pl": "{{ post.post_topic}} ",
+      "lang": " {{ post.post_topic}} "
+    },
+    {
+      "key": "html.account.characters.change_comment.html.text4",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "[max. length: 2000 chars, 50 lines (ENTERs)]",
+      "pl": "[maks. długość: 2000 znaków, 50 linii (ENTER)]",
+      "lang": "[max. length: 2000 chars, 50 lines (ENTERs)]"
+    },
+    {
+      "key": "html.admin.changelog.form.html.text5",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " {{ (action == 'edit') ? 'Update' : 'Add' }}",
+      "pl": " {{ (action == 'edit') ? 'Update' : 'Add' }}",
+      "lang": " {{ (action == 'edit') ? 'Update' : 'Add' }}"
+    },
+    {
+      "key": "html.forum.show_thread.html.text5",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "{{ post.content|raw }} ",
+      "pl": "{{ post.content|raw }} ",
+      "lang": "{{ post.content|raw }} "
+    },
+    {
+      "key": "html.27_downloads.text3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Download Tibia Client ",
+      "pl": "Pobierz klienta Tibia ",
+      "lang": "Download Tibia Client "
+    },
+    {
+      "key": "html.fullpage.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Full Page Editing &mdash; CKEditor Sample",
+      "pl": "Edycja całej strony &mdash; Przykład CKEditora",
+      "lang": "Full Page Editing &mdash; CKEditor Sample"
+    },
+    {
+      "key": "html.easyimage.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "CKEditor Easy Image Sample",
+      "pl": "Próbka prostego obrazu CKEditor",
+      "lang": "CKEditor Easy Image Sample"
+    },
+    {
+      "key": "html.uicolor.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "UI Color Picker &mdash; CKEditor Sample",
+      "pl": "Próbnik kolorów interfejsu użytkownika &mdash; Przykład CKEditora",
+      "lang": "UI Color Picker &mdash; CKEditor Sample"
+    },
+    {
+      "key": "html.inlineall.text2",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " &raquo; Massive inline editing",
+      "pl": " &raquo; Massive inline editing",
+      "lang": " &raquo; Massive inline editing"
+    },
+    {
+      "key": "html.api.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "API Usage &mdash; CKEditor Sample",
+      "pl": "Użycie API &mdash; Przykład CKEditora",
+      "lang": "API Usage &mdash; CKEditor Sample"
+    },
+    {
+      "key": "html.divreplace.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Replace DIV &mdash; CKEditor Sample",
+      "pl": "Zamień DIV &mdash; Przykład CKEditora",
+      "lang": "Replace DIV &mdash; CKEditor Sample"
+    },
+    {
+      "key": "html.edit.html.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Soul / Cap / Balance",
+      "pl": "Dusza / Czapka / Równowaga",
+      "lang": "Soul / Cap / Balance"
+    },
+    {
+      "key": "html.payment.html.text5",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Central African Republic",
+      "pl": "Republika Środkowoafrykańska",
+      "lang": "Central African Republic"
+    },
+    {
+      "key": "html.lostaccount_first.html.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Email Address: {{ email }}",
+      "pl": "Adres e-mail: {{ email }}",
+      "lang": "Email Address: {{ email }}"
+    },
+    {
+      "key": "html.downloads.html.text4",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Hard Drive: min. 150 MB",
+      "pl": "Dysk twardy: min. 150 MB",
+      "lang": "Hard Drive: min. 150 MB"
+    },
+    {
+      "key": "html.boards.html.text5",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " {{ topic.post_date }}",
+      "pl": "{{ topic.post_date }}",
+      "lang": " {{ topic.post_date }}"
+    },
+    {
+      "key": "html.viewguild.html.text3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Guild Bank Account Balance",
+      "pl": "Guild Saldo konta bankowego",
+      "lang": "Guild Bank Account Balance"
+    },
+    {
+      "key": "html.premiumfeatures.html.text4",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Refined quick looting",
+      "pl": "Udoskonalone szybkie plądrowanie",
+      "lang": "Refined quick looting"
+    },
+    {
+      "key": "html.change_primary.text1",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "server-id={{ server_id }}",
+      "pl": "identyfikator serwera={{ server_id }}",
+      "lang": "server-id={{ server_id }}"
+    },
+    {
+      "key": "html.glossary.text3",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "From Wikipedia, the free encyclopedia",
+      "pl": "Z Wikipedii, wolnej encyklopedii",
+      "lang": "From Wikipedia, the free encyclopedia"
+    },
+    {
+      "key": "html.setup.text5",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": " using dbconfig-common.",
+      "pl": "używając dbconfig-common.",
+      "lang": " using dbconfig-common."
+    },
+    {
+      "key": "html.copyright.text4",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Third party licenses",
+      "pl": "Licencje stron trzecich",
+      "lang": "Third party licenses"
+    },
+    {
+      "key": "html.copyright.text5",
+      "category": "html",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Third party licenses",
+      "pl": "Licencje stron trzecich",
+      "lang": "Third party licenses"
+    },
+    {
       "key": "item.10.name",
       "category": "items",
       "type": "pl_reference_missing_translation",
@@ -995,67 +1364,67 @@
       "lang": "sai"
     },
     {
-      "key": "monster.troll.name",
-      "category": "monsters",
+      "key": "item.18122.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Troll",
-      "pl": "Trol",
-      "lang": "Troll"
+      "en": "dead gang member",
+      "pl": "martwy członek gangu",
+      "lang": "dead gang member"
     },
     {
-      "key": "monster.ghoul.name",
-      "category": "monsters",
+      "key": "item.18123.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ghoul",
-      "pl": "Wampir",
-      "lang": "Ghoul"
+      "en": "dead gang member",
+      "pl": "martwy członek gangu",
+      "lang": "dead gang member"
     },
     {
       "key": "monster.behemoth.name",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Behemoth",
-      "pl": "Potwór",
-      "lang": "Behemoth"
+      "en": "dead gang member",
+      "pl": "martwy członek gangu",
+      "lang": "dead gang member"
     },
     {
-      "key": "monster.old_wasp.voice_1",
-      "category": "monsters",
+      "key": "item.18130.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Bssssss",
-      "pl": "Bsssss",
-      "lang": "Bssssss"
+      "en": "dead grave robber",
+      "pl": "martwy złodziej grobów",
+      "lang": "dead grave robber"
     },
     {
       "key": "monster.old_pig.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Oink",
-      "pl": "Chrum",
-      "lang": "Oink"
+      "en": "dead grave robber",
+      "pl": "martwy złodziej grobów",
+      "lang": "dead grave robber"
     },
     {
       "key": "monster.old_bear.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Grrrr",
-      "pl": "Wrrrr",
-      "lang": "Grrrr"
+      "en": "slain ice witch",
+      "pl": "zabita lodowa wiedźma",
+      "lang": "slain ice witch"
     },
     {
       "key": "monster.eternal_guardian.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Zzrrkrrch!",
-      "pl": "Zrrrkrrch!",
-      "lang": "Zzrrkrrch!"
+      "en": "slain ice witch",
+      "pl": "zabita lodowa wiedźma",
+      "lang": "slain ice witch"
     },
     {
       "key": "monster.worker_golem.voice_2",
@@ -1076,49 +1445,49 @@
       "lang": "Klonk klonk klonk"
     },
     {
-      "key": "monster.glooth_golem.voice_2",
-      "category": "monsters",
+      "key": "item.18155.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "*clank*",
-      "pl": "*I.*",
-      "lang": "*clank*"
+      "en": "dead lethal lissy",
+      "pl": "martwa, zabójcza Lissy",
+      "lang": "dead lethal lissy"
     },
     {
-      "key": "monster.metal_gargoyle.voice_1",
-      "category": "monsters",
+      "key": "item.18156.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "clonk",
-      "pl": "klonk",
-      "lang": "clonk"
+      "en": "dead lethal lissy",
+      "pl": "martwa, zabójcza Lissy",
+      "lang": "dead lethal lissy"
     },
     {
-      "key": "monster.orewalker.name",
-      "category": "monsters",
+      "key": "item.18157.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Orewalker",
-      "pl": "Rudoład",
-      "lang": "Orewalker"
+      "en": "dead lethal lissy",
+      "pl": "martwa, zabójcza Lissy",
+      "lang": "dead lethal lissy"
     },
     {
-      "key": "monster.orewalker.voice_1",
-      "category": "monsters",
+      "key": "item.18166.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "CLONK!",
-      "pl": "KLONK!",
-      "lang": "CLONK!"
+      "en": "dead midnight warrior",
+      "pl": "martwy wojownik północy",
+      "lang": "dead midnight warrior"
     },
     {
-      "key": "monster.rustheap_golem.voice_3",
-      "category": "monsters",
+      "key": "item.18167.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "*frzzp*",
-      "pl": "*frzz*",
-      "lang": "*frzzp*"
+      "en": "dead midnight warrior",
+      "pl": "martwy wojownik północy",
+      "lang": "dead midnight warrior"
     },
     {
       "key": "monster.damaged_worker_golem.voice_1",
@@ -1130,85 +1499,85 @@
       "lang": "Klonk klonk klonk"
     },
     {
-      "key": "monster.ice_golem.voice_1",
-      "category": "monsters",
+      "key": "item.18169.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Chrrr.",
-      "pl": "Chrr.",
-      "lang": "Chrrr."
+      "en": "dead midnight warrior",
+      "pl": "martwy wojownik północy",
+      "lang": "dead midnight warrior"
     },
     {
       "key": "monster.lava_golem.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Grrrrunt",
-      "pl": "Wrrrr",
-      "lang": "Grrrrunt"
+      "en": "dead pirate corsair",
+      "pl": "martwy piracki korsarz",
+      "lang": "dead pirate corsair"
     },
     {
       "key": "monster.death_blob.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Shlorz",
-      "pl": "Szlorz",
-      "lang": "Shlorz"
+      "en": "dead crazed beggar",
+      "pl": "martwy, szalony żebrak",
+      "lang": "dead crazed beggar"
     },
     {
       "key": "monster.frost_troll.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Broar!",
-      "pl": "Bracie!",
-      "lang": "Broar!"
+      "en": "dead dark monk",
+      "pl": "martwy mroczny mnich",
+      "lang": "dead dark monk"
     },
     {
       "key": "monster.swamp_troll.voice_3",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Grrrr",
-      "pl": "Wrrrr",
-      "lang": "Grrrr"
+      "en": "dead purple elf",
+      "pl": "martwy fioletowy elf",
+      "lang": "dead purple elf"
     },
     {
-      "key": "monster.orc_marauder.voice_1",
-      "category": "monsters",
+      "key": "item.18313.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Grrrrrr",
-      "pl": "Wrrrr",
-      "lang": "Grrrrrr"
+      "en": "dead elf overseer",
+      "pl": "martwy nadzorca elfów",
+      "lang": "dead elf overseer"
     },
     {
-      "key": "monster.orc_spearman.voice_1",
-      "category": "monsters",
+      "key": "item.18314.name",
+      "category": "items",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ugaar!",
-      "pl": "Ugar!",
-      "lang": "Ugaar!"
+      "en": "dead elf overseer",
+      "pl": "martwy nadzorca elfów",
+      "lang": "dead elf overseer"
     },
     {
       "key": "monster.troll_champion.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Grrrr",
-      "pl": "Wrrrr",
-      "lang": "Grrrr"
+      "en": "dead doomhowl",
+      "pl": "martwy wycie",
+      "lang": "dead doomhowl"
     },
     {
       "key": "monster.hemming.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "GRRR",
-      "pl": "Wrr",
-      "lang": "GRRR"
+      "en": "jade Zaoan queen",
+      "pl": "Jadeitowa królowa Zaoan",
+      "lang": "jade Zaoan queen"
     },
     {
       "key": "monster.thul.voice_2",

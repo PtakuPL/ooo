@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Teaching paladin spells! Just come to me!" },
+	{ i18nKey = "npc.legola.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

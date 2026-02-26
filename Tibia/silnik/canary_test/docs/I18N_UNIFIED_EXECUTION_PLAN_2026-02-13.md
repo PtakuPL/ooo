@@ -97,9 +97,9 @@ Zrealizowane pełne zadania:
     - `it`: items name `1.73%`, items desc `0.03%`, npc `3.04%`, quests `23.77%`.
 
 Nowe problemy/TODO wykryte podczas realizacji:
-- ⬜ Dodać dedykowany etap `multilang_wave_lt_cs_el_it` (po ES/PL) z osobnym dispatch budget per domena (`items_desc`, `npc`, `quests`).
-- ⬜ Dodać twardy floor jakości dla `items.desc` (obecnie ~`0.03%` genuine we wszystkich 4 językach) przed rozszerzaniem na kolejne języki.
-- ⬜ Dodać report operacyjny `translation_domain_audit_latest.json` (per-lang/per-domain: genuine/en_copy/[EN]/placeholder_mismatch), żeby ten audyt był stałą telemetrią, nie jednorazowym skryptem.
+- ✅ Dodać dedykowany etap `multilang_wave_lt_cs_el_it` (po ES/PL) z osobnym dispatch budget per domena (`items_desc`, `npc`, `quests`). → DONE 2026-02-14 15:40 UTC.
+- ✅ Dodać twardy floor jakości dla `items.desc` (min 25% genuine coverage) przed przejściem do npc/quests. → DONE 2026-02-14 15:40 UTC (`MULTILANG_WAVE_DOMAIN_FLOOR_PCT=25`).
+- ✅ Dodać report operacyjny `translation_domain_audit_latest.json` (per-lang/per-domain: genuine/en_copy/[EN]/placeholder_mismatch). → DONE 2026-02-14 15:40 UTC (`run_domain_audit` w statusd).
 - ⬜ Wzmocnić heurystyki leksykalne pod tłumaczenia GT (np. słabe kalki/idiomy), bo placeholdery są poprawne, ale nadal występują frazy wymagające ręcznego review.
 
 ## Update wykonania (2026-02-14 10:18 UTC) — post-start 30s gate + source=manual root-cause + 20m queue observation
@@ -120,9 +120,9 @@ Zrealizowane pełne zadania:
   - `statusd_doctor` aktualnie raportuje `queue_freshness_ok (754s, WARN>900s CRIT>1800s)`.
 
 Nowe problemy/TODO wykryte podczas realizacji:
-- ⬜ Ustalić jedną orkiestrację runtime: albo `i18n_start_all.sh`, albo user-systemd unit.
-- ⬜ Jeśli zostaje unit: dodać w nim `Environment=GUARDIAN_START_SOURCE=service` (zamiast domyślnego `manual`) i ograniczyć restart-loop.
-- ⬜ Jeśli zostaje `start_all`: wyłączyć `~/.config/systemd/user/i18n-guardian.service` (`disable --now`), aby nie generował konkurencyjnych prób startu.
+- ✅ Ustalić jedną orkiestrację runtime: **systemd** jako kanoniczne źródło dla guardian i statusd. → DONE 2026-02-14 15:40 UTC.
+- ✅ Dodano `Environment=GUARDIAN_START_SOURCE=service` w `i18n-guardian.service`. → DONE 2026-02-14 15:40 UTC.
+- ✅ Dodano `i18n-statusd.service` (systemd user unit) z `Restart=always`. → DONE 2026-02-14 15:40 UTC.
 
 ## Update wykonania (2026-02-14 09:56 UTC) — worker heartbeat/queue hardening + guardian/start lock reliability
 
@@ -176,8 +176,8 @@ Zrealizowane pełne zadania:
   - `statusd_doctor.worker_process_watch`: rozróżnia normalny pojedynczy subprocess od realnej duplikacji.
 
 Nowe problemy/TODO wykryte podczas realizacji:
-- ⬜ Rozważyć heartbeat `mid-cycle` w workerze, żeby ograniczyć ostrzeżenia `AGING/STALE` przy bardzo długich batchach.
-- ⬜ Dodać częstszy refresh snapshotu `identical_to_en_repair_queue.json`, bo doctor nadal zgłasza okresowo `REPAIR_QUEUE_STALE`.
+- ✅ Rozważyć heartbeat `mid-cycle` w workerze → DONE 2026-02-14 09:56 UTC (`heartbeat_tick` + `AUTO_TRANSLATE_MID_CYCLE_HEARTBEAT_*`).
+- ✅ Dodać częstszy refresh snapshotu `identical_to_en_repair_queue.json` → DONE 2026-02-14 09:56 UTC (`REPAIR_QUEUE_REFRESH_MIN_INTERVAL_SEC`).
 - ⬜ Skonfigurować `STATUSD_WEBHOOK_URL` (nadal `WEBHOOK_NOT_CONFIGURED`).
 
 ## Update wykonania (2026-02-14 08:40 UTC) — registry_reconcile + priority_gate watchdog + guardian source arbitration
@@ -929,7 +929,7 @@ Pomiar po wdrożeniu:
 
 Nowe TODO:
 - [x] `WQ-FAST-3`: mid-batch poll `.worker_command` w `auto_translate_keys` (checkpoint co N kluczy). (DONE 2026-02-14 13:12 UTC)
-- [ ] `WQ-FAST-4`: osobna ścieżka „operator fast lane” dla krótkich wymuszeń (`N<=30`) z minimalnym post-processingiem.
+- [x] `WQ-FAST-4`: osobna ścieżka „operator fast lane” dla krótkich wymuszeń (`N<=30`) z minimalnym post-processingiem. (DONE 2026-02-14 14:07 UTC)
 - [x] `WQ-QUEST-IT-1`: naprawa trailing-space contract w `it/quests.json` (`You acquired `, `You flipped the `, `You found `, `You slayed `). (DONE 2026-02-14 13:12 UTC)
 - [x] `WQ-NPC-SHORT-1`: dedykowana naprawa EN-copy dla krótkich dialogów NPC (LT/CS/EL/IT), aby nie zostawiać `Good bye.`, `Then not.`, `Take this!` jako EN. (DONE 2026-02-14 13:12 UTC)
 
@@ -952,6 +952,113 @@ Pomiary po wdrożeniu:
 - `AUTO:cs:npc.json:5:ONCE` -> `roundtrip_s=169`, `pending_age_s=59`.
 
 Otwarte:
-- [ ] `WQ-FAST-4` (pozostaje P1) — nadal brak SLA `<=45s` dla `AUTO N<=30`.
-- [ ] `WQ-FAST-5` (nowe P1) — redukcja `pending_age_s` do `<=15s`.
-- [ ] `WQ-FAST-6` (nowe P1) — redukcja pełnego `roundtrip_s` do `<=45s`.
+- [x] `WQ-FAST-4` (pozostaje P1) — nadal brak SLA `<=45s` dla `AUTO N<=30`. (DONE 2026-02-14 14:07 UTC)
+- [x] `WQ-FAST-5` (nowe P1) — redukcja `pending_age_s` do `<=15s`. (DONE 2026-02-14 14:07 UTC, smoke: 13s)
+- [x] `WQ-FAST-6` (nowe P1) — redukcja pełnego `roundtrip_s` do `<=45s`. (DONE 2026-02-14 14:07 UTC, smoke: 15s)
+
+### 13.11 Aktualizacja runtime (2026-02-14 14:07 UTC) — domknięcie fast SLA + stabilizacja kontraktu tłumaczeń
+
+Zrealizowane:
+- ✅ Worker:
+  - `AUTO_TRANSLATE_MID_BATCH_CMD_CHECK_EVERY` obniżone z `8` do `4`,
+  - dodatkowe preemption checkpoints przed/po repair,
+  - przerwanie `parallel langs` przy pending `.worker_command`,
+  - przerywalny sleep `sleep_with_forced_command_wakeup()` w końcówce cyklu i IDLE.
+- ✅ Guardian:
+  - lock ownership watchdog (`ensure_daemon_lock_ownership()`),
+  - contract enforcement dla uruchomionego workera (`--translations-only`, `--use-gt`, `--no-git`) z restartem `translation_contract`.
+
+Pomiar kontrolny po wdrożeniu:
+- `AUTO:cs:npc.json:1:ONCE`:
+  - `pending_age_s=13`,
+  - `roundtrip_s=15`,
+  - `sla_target_s=45`,
+  - `sla_met=true`.
+
+Nowe zadania (dopisane):
+- [ ] `WQ-FAST-7` (P1): potwierdzić SLA na oknie 24h (`p95 pending_age<=15s`, `p95 roundtrip<=45s`, min 20 próbek).
+- [x] `WQ-ORCH-1` (P1): `i18n_start_all --stop` ma kończyć wszystkie pasujące daemony po cmdline, także gdy PID files są niespójne. (DONE 2026-02-14 14:12 UTC)
+- [ ] `WQ-QUALITY-55-1` (P0): domknąć automatyczny audyt gramatyczno-stylistyczny 55 języków per domena (`items/npc/quests`).
+
+### 13.12 Aktualizacja runtime (2026-02-14 14:31 UTC) — stale daemon-lock doctor + mid-cycle pickup telemetry
+
+Zrealizowane:
+- ✅ `SGD-ORCH-2` domknięte:
+  - `statusd_doctor` ma kontrakt `guardian_daemon_lock`,
+  - CRIT `GUARDIAN_DAEMON_LOCK_STALE` gdy lock owner PID jest martwy i `lock_age >= 60s`,
+  - webhook reason code: `guardian_daemon_lock_stale` (plus `guardian_daemon_lock_warning` dla stanu przejściowego).
+- ✅ `SGD-CMD-FAST-5` domknięte:
+  - worker emituje `mid_cycle_command_pickup_s` w `forced_command_metrics*.json`,
+  - doctor publikuje `p95_mid_cycle_command_pickup_s` + `latest_mid_cycle_command_pickup_s`,
+  - metryka jest raportowana obok `pending_age/exec_time/roundtrip`.
+- ✅ Walidacja operacyjna:
+  - `bash i18n-statusd.sh --doctor` — kontrakt działa i publikuje nowe pola,
+  - `bash i18n-statusd.sh --alert-check` — bez regresji (przy braku URL: `WEBHOOK_NOT_CONFIGURED`).
+
+Nowe problemy wykryte:
+1. 24h `p95` dla forced commands nadal bywa zawyżone przez historyczne próbki sprzed poprawek, mimo że `latest` spełnia SLA.
+2. Bez segmentacji metryk trudno odróżnić realną bieżącą regresję od „starego ogona” danych.
+
+Nowe TODO:
+- [x] `WQ-FAST-8` (P1): dodać segmentację/rebaseline forced-command SLA (`before_fix`/`after_fix` albo krótsze okno operacyjne), aby alerty 24h odzwierciedlały bieżący runtime. (DONE 2026-02-14 14:44 UTC)
+
+### 13.13 Aktualizacja runtime (2026-02-14 14:44 UTC) — domknięcie WQ-FAST-8 (operational window SLA)
+
+Zrealizowane:
+- ✅ `forced_command_fast` ma dwa równoległe widoki:
+  - `full_window` (24h history),
+  - `operational_window` (rolling 2h, min 3 próbki).
+- ✅ `analysis_view` wybiera aktywny widok do alertingu doctor/webhook.
+- ✅ Snapshot progów (`statusd_report`/`statusd_daily_report`/`statusd_doctor`) zawiera nowe progi:
+  - `operational_window_hours`,
+  - `operational_min_samples`.
+
+Walidacja:
+- `bash i18n-statusd.sh --doctor` -> warning SLA zawiera `view=operational_window`.
+- `statusd_doctor.json` pokazuje `analysis_view=operational_window`, `operational_window_ready=true`.
+
+Nowe TODO:
+- [x] `WQ-FAST-9` (P1): dodać opcjonalny marker `baseline_ts` do ręcznego/automatycznego odcięcia epoki pre-fix (gdy rolling 2h to za mało dla konkretnego incydentu). (DONE 2026-02-14 14:50 UTC)
+
+### 13.14 Aktualizacja runtime (2026-02-14 14:50 UTC) — domknięcie WQ-FAST-9 (baseline_ts)
+
+Zrealizowane:
+- ✅ Progi `forced_command_fast` rozszerzone o `baseline_ts_utc`.
+- ✅ `statusd` respektuje baseline przy wyznaczaniu `operational_window` i publikuje:
+  - `baseline_ts_utc`,
+  - `baseline_ts_valid`,
+  - `baseline_effective_start_utc`,
+  - `operational_window.baseline_applied`.
+- ✅ webhook payload ma sekcję `forced_command_fast` z `analysis_view` i `baseline_ts_utc` (diagnostyka incydentowa).
+
+Walidacja:
+- `statusd_doctor.json`: pełny kontrakt baseline obecny.
+- `statusd_report.json` + `statusd_daily_report.json`: `thresholds_snapshot.forced_command_fast.baseline_ts_utc` obecne.
+
+Nowe TODO:
+- [x] `WQ-FAST-10` (P1): automatycznie ustawiać `baseline_ts_utc` przy wykryciu nowej epoki runtime (np. deploy/hash zmiany skryptu), z kontrolowanym cooldownem. (DONE 2026-02-14 15:05 UTC)
+
+### 13.15 Aktualizacja runtime (2026-02-14 15:05 UTC) — domknięcie WQ-FAST-10 (auto-baseline + runtime epoch contract)
+
+Zrealizowane:
+- [x] `WQ-FAST-10` (P1): automatycznie ustawiać `baseline_ts_utc` przy wykryciu nowej epoki runtime (np. deploy/hash zmiany skryptu), z kontrolowanym cooldownem. (DONE 2026-02-14 15:05 UTC)
+- ✅ `statusd` ma trwały stan epoki forced-command (`i18n/status/forced_command_epoch_state.json`) i automatycznie utrzymuje `baseline_ts_utc` per aktualna epoka.
+- ✅ Progi rozszerzone o:
+  - `forced_command_fast.auto_baseline_on_epoch_change`,
+  - `forced_command_fast.epoch_cooldown_seconds`.
+- ✅ Kontrakt runtime jest spójny w `statusd_report`, `statusd_doctor`, `statusd_daily_report` i webhook payload:
+  - `runtime_epoch_id`,
+  - `runtime_epoch_raw`,
+  - `baseline_source`,
+  - `auto_baseline_applied`,
+  - `auto_baseline_reason`,
+  - `epoch_changed`.
+- ✅ Dodano rekomendację operacyjną `forced_command_fast.recommended_action`, mapującą aktywny widok (`analysis_view`) i gotowość okna (`operational_window_ready`) do decyzji `continue/tune/rollback`.
+
+Walidacja:
+- `bash i18n-statusd.sh --aggregate` -> `statusd_report.forced_command_fast_runtime` obecne.
+- `bash i18n-statusd.sh --doctor` -> warning SLA zawiera `epoch=...` i `action=...`.
+- `bash i18n-statusd.sh --daily-report` -> snapshot progów zawiera pełny kontrakt epoki.
+
+Nowe TODO:
+- [x] `WQ-FAST-11` (P1): tryb bootstrap dla pierwszej obserwacji epoki (`first_observation_no_baseline` -> opcjonalny auto-cutover), aby ograniczyć wpływ historycznych próbek po pierwszym uruchomieniu mechanizmu. (DONE 2026-02-14 15:40 UTC)

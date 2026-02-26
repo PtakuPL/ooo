@@ -114,8 +114,8 @@ keywordHandler:addKeyword({ "trade quarter" }, StdModule.say, { npcHandler = npc
 keywordHandler:addKeyword({ "quarter" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.peter.stdmod_13" })
 keywordHandler:addKeyword({ "yalahar" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.peter.stdmod_14" })
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Goodbye citizen!")
-npcHandler:setMessage(MESSAGE_GREET, "Hello. Unless you have official business here or want to pass the gate, please move on.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.peter.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.peter.greet_msg_1")
 npcHandler:setCallback(CALLBACK_ON_TRADE_REQUEST, onTradeRequest)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, false)

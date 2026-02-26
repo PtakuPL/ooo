@@ -1,0 +1,74 @@
+{
+  "cycles": 26,
+  "date": "2026-02-26",
+  "errors": {
+    "count": 56
+  },
+  "generated_at_utc": "2026-02-26T00:33:05Z",
+  "work": {
+    "auto_translate": {
+      "langs": {
+        "?": {
+          "skipped": 0,
+          "translated": 0
+        },
+        "CS": {
+          "skipped": 0,
+          "translated": 90
+        },
+        "DE": {
+          "skipped": 0,
+          "translated": 82
+        },
+        "ES": {
+          "skipped": 0,
+          "translated": 35
+        },
+        "FR": {
+          "skipped": 0,
+          "translated": 146
+        },
+        "IT": {
+          "skipped": 0,
+          "translated": 142
+        },
+        "NL": {
+          "skipped": 0,
+          "translated": 112
+        },
+        "PL": {
+          "skipped": 0,
+          "translated": 42
+        },
+        "PT": {
+          "skipped": 0,
+          "translated": 101
+        },
+        "RO": {
+          "skipped": 0,
+          "translated": 140
+        },
+        "RU": {
+          "skipped": 0,
+          "translated": 102
+        },
+        "TR": {
+          "skipped": 0,
+          "translated": 112
+        }
+      }
+    },
+    "compact_keys": {
+      "exported_langs": [],
+      "mapped_new": 0
+    },
+    "migration": {
+      "categories_touched": [],
+      "files_changed": 0,
+      "keys_added": 0
+    },
+    "translation_sync": {
+      "langs": {}
+    }
+  }
+}

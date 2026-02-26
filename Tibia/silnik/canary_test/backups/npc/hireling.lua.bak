@@ -378,7 +378,7 @@ function createHirelingType(HirelingName)
 	end
 	-- On sell npc shop message
 	npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-		player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
+		player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
 	end
 	-- On check npc shop message (look item)
 	npcType.onCheckItem = function(npc, player, clientId, subType) end
@@ -534,12 +534,12 @@ function createHirelingType(HirelingName)
 		local inbox = player:getStoreInbox()
 		local inboxItems = inbox:getItems()
 		if player:getFreeCapacity() < itType:getWeight(1) then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_1")
+			npcHandler:say("Sorry, but you don't have enough capacity.", npc, creature)
 		elseif not inbox or #inboxItems >= inbox:getMaxCapacity() then
 			player:getPosition():sendMagicEffect(CONST_ME_POFF)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_2")
+			npcHandler:say("Sorry, you don't have enough room on your inbox.", npc, creature)
 		elseif not player:removeMoneyBank(cost) then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_3")
+			npcHandler:say("Sorry, you don't have enough money.", npc, creature)
 		else
 			local message = getDeliveredMessageByFoodId(food_id)
 			npcHandler:say(message, npc, creature)
@@ -551,10 +551,10 @@ function createHirelingType(HirelingName)
 	local function cookFood(npc, creature, specificRequest)
 		local playerId = creature:getId()
 		if specificRequest then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_4")
+			npcHandler:say("Very well. You may choose one of the following: {chilli con carniphila}, {svargrond salmon filet}, {carrion casserole}, {consecrated beef}, {roasted wyvern wings}, {carrot pie}, {tropical marinated tiger}, or {delicatessen salad}.", npc, creature)
 			npcHandler:setTopic(playerId, TOPIC_FOOD.SKILL_CHOOSE)
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_5")
+			npcHandler:say("Alright, let me astonish you. Shall I?", npc, creature)
 			deliverFood(npc, creature, HIRELING_FOODS_IDS[math.random(#HIRELING_FOODS_IDS)], 15000)
 		end
 	end
@@ -565,12 +565,12 @@ function createHirelingType(HirelingName)
 		if npcHandler:getTopic(playerId) == TOPIC.FOOD then
 			if MsgContains(message, "specific") then
 				npcHandler:setTopic(playerId, TOPIC_FOOD.SPECIFIC)
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_6")
+				npcHandler:say("Which specific meal would you like? Choices are: {chilli con carniphila}, {svargrond salmon filet}, {carrion casserole}, {consecrated beef}, {roasted wyvern wings}, {carrot pie}, {tropical marinated tiger}, or {delicatessen salad}.", npc, creature)
 			elseif MsgContains(message, "surprise") then
 				local random = math.random(6)
 				if random == 6 then
 					npcHandler:setTopic(playerId, TOPIC_FOOD.SKILL_CHOOSE)
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_7")
+					npcHandler:say("Yay! I have the ingredients to make a skill boost dish. Would you rather like to boost your {magic}, {melee}, {shielding}, or {distance} skill?", npc, creature)
 				else
 					deliverFood(npc, creature, HIRELING_FOODS_IDS[random], 15000)
 				end
@@ -578,7 +578,7 @@ function createHirelingType(HirelingName)
 				deliverFood(npc, creature, HIRELING_FOODS_IDS[math.random(#HIRELING_FOODS_IDS)], 15000)
 			elseif MsgContains(message, "no") then
 				npcHandler:setTopic(playerId, TOPIC.SERVICES)
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_8")
+				npcHandler:say("Alright then, ask me for other {services}, if you want.", npc, creature)
 			end
 		elseif npcHandler:getTopic(playerId) == TOPIC_FOOD.SKILL_CHOOSE then
 			if MsgContains(message, "magic") then
@@ -590,7 +590,7 @@ function createHirelingType(HirelingName)
 			elseif MsgContains(message, "distance") then
 				deliverFood(npc, creature, HIRELING_FOODS_BOOST.DISTANCE, 15000)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_9")
+				npcHandler:say("Sorry, but you must choose a valid skill class. Would you like to boost your {magic}, {melee}, {shielding}, or {distance} skill?", npc, creature)
 			end
 		elseif npcHandler:getTopic(playerId) == TOPIC_FOOD.SPECIFIC then
 			local specificFoodOptions = {
@@ -607,7 +607,7 @@ function createHirelingType(HirelingName)
 			if specificFoodOptions[message:lower()] then
 				deliverFood(npc, creature, specificFoodOptions[message:lower()], 90000)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_10")
+				npcHandler:say("I'm sorry, but that's not a valid food option. Please choose from: {chilli con carniphila}, {svargrond salmon filet}, {carrion casserole}, {consecrated beef}, {roasted wyvern wings}, {carrot pie}, {tropical marinated tiger}, or {delicatessen salad}.", npc, creature)
 			end
 		end
 	end
@@ -695,15 +695,15 @@ function createHirelingType(HirelingName)
 				return false
 			end
 			hireling:requestOutfitChange()
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_12")
+			npcHandler:say("As you wish!", npc, creature)
 		end
 
 		if MsgContains(message, "sword of fury") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_13")
+			npcHandler:say("In my youth I dreamt to wield it! Now I wield the broom of... brooming. I guess that's the next best thing!", npc, creature)
 		elseif MsgContains(message, "rookgaard") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_14")
+			npcHandler:say("What an uncivilised place without any culture.", npc, creature)
 		elseif MsgContains(message, "excalibug") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_15")
+			npcHandler:say("I'll keep an eye open for it when cleaning up the things you brought home!", npc, creature)
 		elseif MsgContains(message, "service") then
 			npcHandler:setTopic(playerId, TOPIC.SERVICES)
 			local servicesMsg = getHirelingServiceString(creature)
@@ -751,22 +751,22 @@ function createHirelingType(HirelingName)
 					return false
 				end
 
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_16")
+				npcHandler:say("Are you sure you want me to go back to my lamp?", npc, creature)
 			elseif MsgContains(message, "outfit") then
 				if player:getGuid() ~= hireling:getOwnerId() then
 					return false
 				end
 
 				hireling:requestOutfitChange()
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_17")
+				npcHandler:say("As you wish!", npc, creature)
 			end
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_18")
+			npcHandler:say("Are you sure you want me to go back to my lamp?", npc, creature)
 		elseif npcHandler:getTopic(playerId) == TOPIC.LAMP then
 			if MsgContains(message, "yes") then
 				hireling:returnToLamp(player:getGuid())
 			else
 				npcHandler:setTopic(playerId, TOPIC.SERVICES)
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.hireling.say_19")
+				npcHandler:say("Alright then, I will be here.", npc, creature)
 			end
 		elseif npcHandler:getTopic(playerId) == TOPIC.BANK then
 			enableBankSystem[playerId] = true
@@ -789,9 +789,9 @@ function createHirelingType(HirelingName)
 		return true
 	end
 
-	NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.hireling.greet_msg_1")
-	NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.hireling.farewell_msg_1")
-	NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.hireling.walkaway_msg_1")
+	npcHandler:setMessage(MESSAGE_GREET, "It is good to see you. I'm always at your {service}.")
+	npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell, |PLAYERNAME|, I'll be here if you need me again.")
+	npcHandler:setMessage(MESSAGE_WALKAWAY, "Come back soon!")
 
 	npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 	npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

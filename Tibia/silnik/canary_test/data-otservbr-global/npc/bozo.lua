@@ -71,7 +71,6 @@ local config = {
 	},
 	[2] = {
 		i18nKey = "npc.bozo.stdmod_82",
-		},
 		addItem = { itemId = 135 },
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission2, value = 1 },

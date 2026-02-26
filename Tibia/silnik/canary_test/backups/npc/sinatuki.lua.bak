@@ -49,7 +49,7 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-keywordHandler:addKeyword({ "Chuqua" }, StdModule.say, { npcHandler = npcHandler, text = "Chuqua jamjam!! Tiyopa Sinatuki?" })
+keywordHandler:addKeyword({ "Chuqua" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.sinatuki.stdmod_1" })
 
 local fishsID = { 7158, 7159 }
 

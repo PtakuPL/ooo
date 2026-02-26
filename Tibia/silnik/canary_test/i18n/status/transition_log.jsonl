@@ -1,0 +1,223 @@
+{"ts": "2026-02-15T10:58:14", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (6708s to next), fallback to translations"}
+{"ts": "2026-02-15T10:58:14", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T10:58:18", "from": "PRE_MIGRATION", "to": "TRANSLATION_SYNC", "gate": "pass", "reason": ""}
+{"ts": "2026-02-15T10:58:30", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (6692s to next), fallback to translations"}
+{"ts": "2026-02-15T10:58:30", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T10:58:33", "from": "TRANSLATION_SYNC", "to": "TRANSLATION_SYNC", "gate": "pass", "reason": ""}
+{"ts": "2026-02-15T10:58:45", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (6677s to next), fallback to translations"}
+{"ts": "2026-02-15T10:58:45", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T10:58:48", "from": "TRANSLATION_SYNC", "to": "TRANSLATION_SYNC", "gate": "pass", "reason": ""}
+{"ts": "2026-02-15T10:59:00", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (6662s to next), fallback to translations"}
+{"ts": "2026-02-15T10:59:00", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T10:59:04", "from": "TRANSLATION_SYNC", "to": "TRANSLATION_SYNC", "gate": "pass", "reason": ""}
+{"ts": "2026-02-15T10:59:17", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (6645s to next), fallback to translations"}
+{"ts": "2026-02-15T10:59:17", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T10:59:22", "from": "TRANSLATION_SYNC", "to": "TRANSLATION_SYNC", "gate": "pass", "reason": ""}
+{"ts": "2026-02-15T10:59:33", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (6629s to next), fallback to translations"}
+{"ts": "2026-02-15T10:59:33", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T10:59:38", "from": "TRANSLATION_SYNC", "to": "TRANSLATION_SYNC", "gate": "pass", "reason": ""}
+{"ts": "2026-02-15T10:59:47", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (6616s to next), fallback to translations"}
+{"ts": "2026-02-15T10:59:47", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T10:59:51", "from": "TRANSLATION_SYNC", "to": "TRANSLATION_SYNC", "gate": "pass", "reason": ""}
+{"ts": "2026-02-15T10:59:58", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (6604s to next), fallback to translations"}
+{"ts": "2026-02-15T10:59:58", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T11:00:03", "from": "TRANSLATION_SYNC", "to": "TRANSLATION_SYNC", "gate": "pass", "reason": ""}
+{"ts": "2026-02-15T11:00:10", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (6593s to next), fallback to translations"}
+{"ts": "2026-02-15T11:00:10", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T11:00:13", "from": "TRANSLATION_SYNC", "to": "TRANSLATION_SYNC", "gate": "pass", "reason": ""}
+{"ts": "2026-02-15T11:00:21", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (6582s to next), fallback to translations"}
+{"ts": "2026-02-15T11:00:21", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T11:00:24", "from": "TRANSLATION_SYNC", "to": "TRANSLATION_SYNC", "gate": "pass", "reason": ""}
+{"ts": "2026-02-15T11:00:30", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (6572s to next), fallback to translations"}
+{"ts": "2026-02-15T11:00:30", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T11:00:37", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T11:19:02", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (25s to next), fallback to translations"}
+{"ts": "2026-02-15T11:19:02", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T11:19:10", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T11:22:07", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (1347s to next), fallback to translations"}
+{"ts": "2026-02-15T11:22:07", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T11:22:16", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T11:27:54", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (1000s to next), fallback to translations"}
+{"ts": "2026-02-15T11:27:54", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T11:28:01", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T11:29:52", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (882s to next), fallback to translations"}
+{"ts": "2026-02-15T11:29:52", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T11:30:02", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T11:30:12", "from": "DISPATCH", "to": "PRE_MIGRATION", "gate": "never_scanned", "reason": "category 'npc' has no skip_until entry — forcing scan"}
+{"ts": "2026-02-15T11:30:29", "from": "DISPATCH", "to": "PRE_MIGRATION", "gate": "never_scanned", "reason": "category 'monsters' has no skip_until entry — forcing scan"}
+{"ts": "2026-02-15T11:30:50", "from": "DISPATCH", "to": "PRE_MIGRATION", "gate": "never_scanned", "reason": "category 'raids' has no skip_until entry — forcing scan"}
+{"ts": "2026-02-15T11:31:57", "from": "DISPATCH", "to": "PRE_MIGRATION", "gate": "never_scanned", "reason": "category 'world' has no skip_until entry — forcing scan"}
+{"ts": "2026-02-15T11:32:19", "from": "DISPATCH", "to": "PRE_MIGRATION", "gate": "never_scanned", "reason": "category 'movements' has no skip_until entry — forcing scan"}
+{"ts": "2026-02-15T11:32:34", "from": "DISPATCH", "to": "PRE_MIGRATION", "gate": "never_scanned", "reason": "category 'globalevents' has no skip_until entry — forcing scan"}
+{"ts": "2026-02-15T11:32:48", "from": "DISPATCH", "to": "PRE_MIGRATION", "gate": "never_scanned", "reason": "category 'items' has no skip_until entry — forcing scan"}
+{"ts": "2026-02-15T11:33:10", "from": "DISPATCH", "to": "PRE_MIGRATION", "gate": "never_scanned", "reason": "category 'modules' has no skip_until entry — forcing scan"}
+{"ts": "2026-02-15T11:33:26", "from": "DISPATCH", "to": "PRE_MIGRATION", "gate": "never_scanned", "reason": "category 'startup' has no skip_until entry — forcing scan"}
+{"ts": "2026-02-15T11:33:44", "from": "DISPATCH", "to": "PRE_MIGRATION", "gate": "never_scanned", "reason": "category 'otclient_mods' has no skip_until entry — forcing scan"}
+{"ts": "2026-02-15T11:33:57", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (637s to next), fallback to translations"}
+{"ts": "2026-02-15T11:33:57", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T11:34:07", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T11:39:49", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (285s to next), fallback to translations"}
+{"ts": "2026-02-15T11:39:49", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T11:40:02", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T11:50:43", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (69s to next), fallback to translations"}
+{"ts": "2026-02-15T11:50:43", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T11:50:50", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T11:56:21", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (232s to next), fallback to translations"}
+{"ts": "2026-02-15T11:56:21", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T11:56:28", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T11:57:58", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (135s to next), fallback to translations"}
+{"ts": "2026-02-15T11:57:58", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T11:58:07", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:07:48", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (478s to next), fallback to translations"}
+{"ts": "2026-02-15T12:07:48", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:07:58", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:08:29", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (438s to next), fallback to translations"}
+{"ts": "2026-02-15T12:08:30", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:08:39", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:10:11", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (336s to next), fallback to translations"}
+{"ts": "2026-02-15T12:10:11", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:10:20", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:12:18", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (209s to next), fallback to translations"}
+{"ts": "2026-02-15T12:12:18", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:12:28", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:12:40", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (186s to next), fallback to translations"}
+{"ts": "2026-02-15T12:12:40", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:12:50", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:19:08", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (29s to next), fallback to translations"}
+{"ts": "2026-02-15T12:19:08", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:19:22", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:23:24", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (168s to next), fallback to translations"}
+{"ts": "2026-02-15T12:23:24", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:23:32", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:23:47", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (144s to next), fallback to translations"}
+{"ts": "2026-02-15T12:23:48", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:23:59", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:24:31", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (101s to next), fallback to translations"}
+{"ts": "2026-02-15T12:24:31", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:24:38", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:27:44", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (1131s to next), fallback to translations"}
+{"ts": "2026-02-15T12:27:44", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:27:52", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:29:19", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (1035s to next), fallback to translations"}
+{"ts": "2026-02-15T12:29:19", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:29:30", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:31:58", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (876s to next), fallback to translations"}
+{"ts": "2026-02-15T12:31:58", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:32:09", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:33:34", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (780s to next), fallback to translations"}
+{"ts": "2026-02-15T12:33:34", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:33:41", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:36:32", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (603s to next), fallback to translations"}
+{"ts": "2026-02-15T12:36:32", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:36:40", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:37:29", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (546s to next), fallback to translations"}
+{"ts": "2026-02-15T12:37:29", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:37:36", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:40:03", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (391s to next), fallback to translations"}
+{"ts": "2026-02-15T12:40:03", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:40:10", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:41:18", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (316s to next), fallback to translations"}
+{"ts": "2026-02-15T12:41:18", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:41:28", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:43:30", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (184s to next), fallback to translations"}
+{"ts": "2026-02-15T12:43:30", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:43:38", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:44:11", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (144s to next), fallback to translations"}
+{"ts": "2026-02-15T12:44:11", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:44:18", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T12:46:21", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (13s to next), fallback to translations"}
+{"ts": "2026-02-15T12:46:21", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T12:46:31", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:00:59", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (957s to next), fallback to translations"}
+{"ts": "2026-02-15T13:00:59", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:01:16", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:05:48", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (669s to next), fallback to translations"}
+{"ts": "2026-02-15T13:05:48", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:06:03", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:06:34", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (622s to next), fallback to translations"}
+{"ts": "2026-02-15T13:06:34", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:06:47", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:09:37", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (439s to next), fallback to translations"}
+{"ts": "2026-02-15T13:09:37", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:09:56", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:11:23", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (333s to next), fallback to translations"}
+{"ts": "2026-02-15T13:11:23", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:11:35", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:14:36", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (140s to next), fallback to translations"}
+{"ts": "2026-02-15T13:14:36", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:14:55", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:16:22", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (34s to next), fallback to translations"}
+{"ts": "2026-02-15T13:16:22", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:16:44", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:22:57", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (20s to next), fallback to translations"}
+{"ts": "2026-02-15T13:22:57", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:23:10", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:26:51", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (84s to next), fallback to translations"}
+{"ts": "2026-02-15T13:26:51", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:27:02", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:33:56", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (975s to next), fallback to translations"}
+{"ts": "2026-02-15T13:33:56", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:34:08", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:34:40", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (931s to next), fallback to translations"}
+{"ts": "2026-02-15T13:34:40", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:34:53", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:37:14", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (777s to next), fallback to translations"}
+{"ts": "2026-02-15T13:37:14", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:37:26", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:38:17", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (714s to next), fallback to translations"}
+{"ts": "2026-02-15T13:38:17", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:38:32", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:42:19", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (472s to next), fallback to translations"}
+{"ts": "2026-02-15T13:42:19", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:42:32", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:44:20", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (351s to next), fallback to translations"}
+{"ts": "2026-02-15T13:44:21", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:44:35", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:48:25", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (106s to next), fallback to translations"}
+{"ts": "2026-02-15T13:48:25", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:48:38", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:49:42", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (29s to next), fallback to translations"}
+{"ts": "2026-02-15T13:49:42", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:49:53", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:57:14", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (231s to next), fallback to translations"}
+{"ts": "2026-02-15T13:57:14", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:57:24", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T13:59:29", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (95s to next), fallback to translations"}
+{"ts": "2026-02-15T13:59:29", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T13:59:37", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T14:04:00", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (1129s to next), fallback to translations"}
+{"ts": "2026-02-15T14:04:00", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T14:04:09", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T14:05:12", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (1057s to next), fallback to translations"}
+{"ts": "2026-02-15T14:05:12", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T14:05:19", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T14:07:52", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (897s to next), fallback to translations"}
+{"ts": "2026-02-15T14:07:52", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T14:07:59", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T14:09:40", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (790s to next), fallback to translations"}
+{"ts": "2026-02-15T14:09:40", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T14:09:47", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T14:11:42", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (667s to next), fallback to translations"}
+{"ts": "2026-02-15T14:11:42", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T14:11:50", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T14:12:21", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (629s to next), fallback to translations"}
+{"ts": "2026-02-15T14:12:21", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T14:12:30", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T14:14:53", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (477s to next), fallback to translations"}
+{"ts": "2026-02-15T14:14:53", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T14:15:01", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T14:15:33", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (436s to next), fallback to translations"}
+{"ts": "2026-02-15T14:15:33", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T14:15:41", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T14:19:28", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (201s to next), fallback to translations"}
+{"ts": "2026-02-15T14:19:28", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T14:19:36", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T14:20:45", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (125s to next), fallback to translations"}
+{"ts": "2026-02-15T14:20:45", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T14:20:54", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T14:46:00", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (1223s to next), fallback to translations"}
+{"ts": "2026-02-15T14:46:00", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T14:46:11", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}
+{"ts": "2026-02-15T14:51:10", "from": "PRE_MIGRATION", "to": "AUTO_TRANSLATE", "gate": "pass", "reason": "all categories on skip (914s to next), fallback to translations"}
+{"ts": "2026-02-15T14:51:10", "from": "MIGRATION", "to": "post-migration", "gate": "pass", "reason": "all categories done or skipped"}
+{"ts": "2026-02-15T14:51:19", "from": "TRANSLATION_SYNC", "to": "IDLE", "gate": "pass", "reason": "all_synced"}

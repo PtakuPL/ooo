@@ -304,13 +304,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		return false
 	end
 	if MsgContains(message, "rewards") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.walter_jaeger.say_1", "npc.walter_jaeger.say_2"}, 100)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.walter_jaeger.say_1", "npc.walter_jaeger.say_2" }, 100)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "tasks") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_26")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "have") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_1", { player:getTaskHuntingPoints() })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_27", { player:getTaskHuntingPoints() })
 		npcHandler:setTopic(playerId, 0)
 
 		-- Add task hunting points history here.
@@ -328,7 +328,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_4")
 				npcHandler:setTopic(playerId, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_2", { getOffersString(config.outifts, false), (#config.outifts >= 1 and "s." or ".") })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_28", { getOffersString(config.outifts, false), (#config.outifts >= 1 and "s." or ".") })
 				npcHandler:setTopic(playerId, config.topics.outfit)
 			end
 		elseif MsgContains(message, "mount") then
@@ -336,7 +336,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_5")
 				npcHandler:setTopic(playerId, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_3", { getOffersString(config.mounts, false), (#config.mounts >= 1 and "s." or ".") })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_29", { getOffersString(config.mounts, false), (#config.mounts >= 1 and "s." or ".") })
 				npcHandler:setTopic(playerId, config.topics.mount)
 			end
 		elseif MsgContains(message, "trophies") then
@@ -344,7 +344,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_6")
 				npcHandler:setTopic(playerId, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_4", { getOffersString(config.trophies, true) })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_30", { getOffersString(config.trophies, true) })
 				npcHandler:setTopic(playerId, config.topics.trophy)
 			end
 		elseif MsgContains(message, "furniture") then
@@ -352,7 +352,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_7")
 				npcHandler:setTopic(playerId, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_5", { getOffersString(config.furniture, true) })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.walter_jaeger.say_31", { getOffersString(config.furniture, true) })
 				npcHandler:setTopic(playerId, config.topics.furniture)
 			end
 		end

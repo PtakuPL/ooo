@@ -58,7 +58,7 @@ local function onReleaseFocus(npc, creature)
 	ClearTerebanMessages(npc, creature)
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, friend. Good you are showing up.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tereban.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

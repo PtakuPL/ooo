@@ -1,0 +1,11 @@
+M  src/framework/graphics/texture.cpp
+M  src/framework/text/TTFFont.cpp
+?? ../../Dokumentacja/
+?? ../canary-backup-old
+?? ../canary-backup-old-1915
+?? ../canary-debug-backup-1915
+?? ../canary-ubuntu-24.04-linux-debug-5688443c9513384bec068ccde7625eb502900f85
+?? ../canary-ubuntu-24.04-linux-release-5688443c9513384bec068ccde7625eb502900f85
+?? staging_autosize_i18n/
+?? ../../gitlog.txt
+?? ../../gitstatus.txt

@@ -217,7 +217,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 7 then
 			if not player:removeItem(9699, 1) then
-				npcHandler:say("", npc, creature)
+				-- Original was empty say("") - NPC says nothing
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end

@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-26T20:09:04.069293Z",
-  "cycle_counter": 10743,
-  "last_target_key": "es:monsters.json",
-  "last_pending_total": 54,
-  "last_tier": 1,
-  "last_cat_priority": 2,
+  "timestamp": "2026-02-26T20:13:38.304300Z",
+  "cycle_counter": 10760,
+  "last_target_key": "pt:items.json",
+  "last_pending_total": 163,
+  "last_tier": 2,
+  "last_cat_priority": 1,
   "candidates_count": 285,
   "active_candidates_count": 285,
   "skipped_backoff": 0,
@@ -36,7 +36,7 @@
   },
   "cache_hit": true,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 1,
+  "cache_cycle": 18,
   "no_progress_counts": {
     "sv:dataroot.json": 0,
     "sr:dataroot.json": 0,
@@ -44,14 +44,14 @@
     "es:items.json": 0,
     "pl:npc.json": 0,
     "es:npc.json": 1,
-    "es:monsters.json": 0,
-    "pl:server.json": 0,
-    "it:npc.json": 0,
+    "es:monsters.json": 1,
+    "pl:server.json": 1,
+    "it:npc.json": 1,
     "ru:npc.json": 0,
-    "ro:npc.json": 0,
-    "it:items.json": 0,
-    "ru:items.json": 0,
-    "ro:items.json": 0,
+    "ro:npc.json": 1,
+    "it:items.json": 1,
+    "ru:items.json": 1,
+    "ro:items.json": 1,
     "it:monsters.json": 0,
     "ru:monsters.json": 0,
     "ro:monsters.json": 0,
@@ -144,7 +144,7 @@
     "it:npclib.json": 1,
     "ru:movements.json": 0,
     "pl:monsters.json": 1,
-    "es:server.json": 0,
+    "es:server.json": 1,
     "es:scripts.json": 0,
     "es:client.json": 0,
     "pl:otclient_data.json": 0,
@@ -290,15 +290,15 @@
     "nl:chatchannels.json": 1,
     "cs:modules.json": 0,
     "tr:startup.json": 1,
-    "fr:npc.json": 0,
-    "cs:items.json": 0,
-    "de:npc.json": 0,
-    "pt:npc.json": 0,
-    "nl:npc.json": 0,
-    "cs:npc.json": 0,
-    "tr:npc.json": 0,
-    "fr:items.json": 0,
-    "de:items.json": 0,
+    "fr:npc.json": 1,
+    "cs:items.json": 1,
+    "de:npc.json": 1,
+    "pt:npc.json": 1,
+    "nl:npc.json": 1,
+    "cs:npc.json": 1,
+    "tr:npc.json": 1,
+    "fr:items.json": 1,
+    "de:items.json": 1,
     "pt:items.json": 0,
     "nl:items.json": 0,
     "tr:items.json": 0,
@@ -405,12 +405,12 @@
     "floor_pct": 25.0,
     "weight": 2,
     "gated_langs": {
-      "cs": {
+      "ro": {
         "allowed_domain": "items.json",
         "domain_coverages": {
-          "items.json": 9.12,
-          "npc.json": 8.9,
-          "quests.json": 98.69
+          "items.json": 22.51,
+          "npc.json": 41.84,
+          "quests.json": 98.52
         }
       },
       "it": {
@@ -421,20 +421,20 @@
           "quests.json": 98.52
         }
       },
-      "ro": {
-        "allowed_domain": "items.json",
-        "domain_coverages": {
-          "items.json": 22.51,
-          "npc.json": 41.84,
-          "quests.json": 98.52
-        }
-      },
       "ru": {
         "allowed_domain": "npc.json",
         "domain_coverages": {
           "items.json": 29.14,
           "npc.json": 5.8,
           "quests.json": 99.51
+        }
+      },
+      "cs": {
+        "allowed_domain": "items.json",
+        "domain_coverages": {
+          "items.json": 9.12,
+          "npc.json": 8.9,
+          "quests.json": 98.69
         }
       }
     },
@@ -471,5 +471,7 @@
       "cooldown_cycles": 30
     },
     "last_block": {}
-  }
+  },
+  "last_phase": "PRE_MIGRATION",
+  "last_phase_ts": "2026-02-26T21:13:49"
 }

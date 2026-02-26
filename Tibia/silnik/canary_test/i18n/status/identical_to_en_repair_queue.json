@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-26T20:07:14.637150Z",
+  "timestamp": "2026-02-26T20:11:05.543120Z",
   "priority_langs": [
     "es",
     "pl",
@@ -67,19 +67,19 @@
   ],
   "entries_total": 862,
   "entries_by_lang": {
-    "es": 3527,
-    "pl": 3484,
-    "cs": 22723,
-    "de": 23035,
-    "fr": 18001,
+    "es": 3526,
+    "pl": 3482,
+    "cs": 22700,
+    "de": 22995,
+    "fr": 17962,
     "hu": 670,
-    "it": 9267,
-    "nl": 23594,
-    "pt": 21757,
-    "ro": 14808,
-    "ru": 17242,
+    "it": 9265,
+    "nl": 23575,
+    "pt": 21736,
+    "ro": 14769,
+    "ru": 17237,
     "sk": 670,
-    "tr": 24766,
+    "tr": 24728,
     "ar": 911,
     "az": 669,
     "bg": 670,
@@ -118,13 +118,13 @@
     "uz": 670,
     "vi": 912,
     "zh": 912,
-    "zh_TW": 1692
+    "zh_TW": 1689
   },
   "top_entries": [
     {
       "lang": "es",
       "json_file": "npc.json",
-      "identical_to_en": 2817,
+      "identical_to_en": 2816,
       "domain_priority": 0
     },
     {
@@ -274,7 +274,7 @@
     {
       "lang": "pl",
       "json_file": "monsters.json",
-      "identical_to_en": 29,
+      "identical_to_en": 27,
       "domain_priority": 8
     },
     {
@@ -358,7 +358,7 @@
     {
       "lang": "cs",
       "json_file": "npc.json",
-      "identical_to_en": 11512,
+      "identical_to_en": 11507,
       "domain_priority": 0
     },
     {
@@ -394,7 +394,7 @@
     {
       "lang": "cs",
       "json_file": "monsters.json",
-      "identical_to_en": 502,
+      "identical_to_en": 484,
       "domain_priority": 8
     },
     {
@@ -532,7 +532,7 @@
     {
       "lang": "de",
       "json_file": "npc.json",
-      "identical_to_en": 12470,
+      "identical_to_en": 12465,
       "domain_priority": 0
     },
     {
@@ -574,7 +574,7 @@
     {
       "lang": "de",
       "json_file": "monsters.json",
-      "identical_to_en": 919,
+      "identical_to_en": 884,
       "domain_priority": 8
     },
     {
@@ -706,7 +706,7 @@
     {
       "lang": "fr",
       "json_file": "npc.json",
-      "identical_to_en": 10143,
+      "identical_to_en": 10138,
       "domain_priority": 0
     },
     {
@@ -742,7 +742,7 @@
     {
       "lang": "fr",
       "json_file": "monsters.json",
-      "identical_to_en": 886,
+      "identical_to_en": 852,
       "domain_priority": 8
     },
     {
@@ -940,7 +940,7 @@
     {
       "lang": "it",
       "json_file": "npc.json",
-      "identical_to_en": 3358,
+      "identical_to_en": 3357,
       "domain_priority": 0
     },
     {
@@ -970,7 +970,7 @@
     {
       "lang": "it",
       "json_file": "monsters.json",
-      "identical_to_en": 27,
+      "identical_to_en": 26,
       "domain_priority": 8
     },
     {
@@ -1066,7 +1066,7 @@
     {
       "lang": "nl",
       "json_file": "npc.json",
-      "identical_to_en": 12247,
+      "identical_to_en": 12242,
       "domain_priority": 0
     },
     {
@@ -1102,7 +1102,7 @@
     {
       "lang": "nl",
       "json_file": "monsters.json",
-      "identical_to_en": 399,
+      "identical_to_en": 385,
       "domain_priority": 8
     },
     {
@@ -1234,7 +1234,7 @@
     {
       "lang": "pt",
       "json_file": "npc.json",
-      "identical_to_en": 12059,
+      "identical_to_en": 12054,
       "domain_priority": 0
     },
     {
@@ -1270,7 +1270,7 @@
     {
       "lang": "pt",
       "json_file": "monsters.json",
-      "identical_to_en": 484,
+      "identical_to_en": 468,
       "domain_priority": 8
     },
     {
@@ -1325,7 +1325,7 @@
   "selected": {
     "lang": "es",
     "json_file": "npc.json",
-    "identical_to_en": 2817,
+    "identical_to_en": 2816,
     "domain_priority": 0
   }
 }

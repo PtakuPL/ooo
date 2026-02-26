@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-02-26T20:04:39.266375Z",
-  "built_cycle": 19,
+  "timestamp": "2026-02-26T20:12:42.287849Z",
+  "built_cycle": 15,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -151,8 +151,8 @@
     {
       "lang": "pl",
       "json_file": "npc.json",
-      "pending_total": 2320,
-      "todo": 1494,
+      "pending_total": 2319,
+      "todo": 1493,
       "simple_todo": 66,
       "missing_in_lang": 826
     },
@@ -511,9 +511,9 @@
     {
       "lang": "ru",
       "json_file": "npc.json",
-      "pending_total": 12906,
-      "todo": 12402,
-      "simple_todo": 801,
+      "pending_total": 12887,
+      "todo": 12383,
+      "simple_todo": 798,
       "missing_in_lang": 504
     },
     {

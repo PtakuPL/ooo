@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-26T20:02:50.959080Z",
+  "timestamp": "2026-02-26T20:13:04.434255Z",
   "en_total_keys": 74492,
   "global_quality_mode": false,
   "quality_score_target": 100.0,
@@ -10,7 +10,7 @@
         "es",
         "pl"
       ],
-      "avg_coverage": 71.0,
+      "avg_coverage": 71.5,
       "target": 90,
       "gate_pass": false,
       "langs_passing": 0,
@@ -22,13 +22,13 @@
       "critical_target_max": 0,
       "lang_details": {
         "es": {
-          "coverage": 63.7,
+          "coverage": 64.1,
           "coverage_genuine": 61.3,
-          "identical_to_en_exempt": 1739,
+          "identical_to_en_exempt": 1974,
           "target": 90,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 19.6,
+          "guard_fail_rate": 17.0,
           "quality_available": true,
           "quality_score": 99.4,
           "quality_score_target": 100.0,
@@ -37,17 +37,17 @@
           "quality_gate_pass": true
         },
         "pl": {
-          "coverage": 78.3,
+          "coverage": 78.9,
           "coverage_genuine": 75.7,
-          "identical_to_en_exempt": 1613,
+          "identical_to_en_exempt": 1970,
           "target": 90,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 10.1,
+          "guard_fail_rate": 9.4,
           "quality_available": true,
-          "quality_score": 98.8,
+          "quality_score": 98.9,
           "quality_score_target": 100.0,
-          "critical_issues": 224,
+          "critical_issues": 216,
           "critical_target_max": 0,
           "quality_gate_pass": true
         }
@@ -67,7 +67,7 @@
         "sk",
         "tr"
       ],
-      "avg_coverage": 20.8,
+      "avg_coverage": 21.6,
       "target": 50,
       "gate_pass": false,
       "langs_passing": 0,
@@ -79,13 +79,13 @@
       "critical_target_max": 0,
       "lang_details": {
         "cs": {
-          "coverage": 16.7,
+          "coverage": 17.7,
           "coverage_genuine": 13.5,
-          "identical_to_en_exempt": 2327,
+          "identical_to_en_exempt": 3108,
           "target": 50,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 10.7,
+          "guard_fail_rate": 11.4,
           "quality_available": true,
           "quality_score": 100.0,
           "quality_score_target": 100.0,
@@ -94,13 +94,13 @@
           "quality_gate_pass": true
         },
         "de": {
-          "coverage": 10.7,
+          "coverage": 11.7,
           "coverage_genuine": 7.6,
-          "identical_to_en_exempt": 2323,
+          "identical_to_en_exempt": 3083,
           "target": 50,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 1.4,
+          "guard_fail_rate": 1.5,
           "quality_available": true,
           "quality_score": 100.0,
           "quality_score_target": 100.0,
@@ -109,9 +109,9 @@
           "quality_gate_pass": true
         },
         "fr": {
-          "coverage": 32.2,
+          "coverage": 33.1,
           "coverage_genuine": 29.4,
-          "identical_to_en_exempt": 2055,
+          "identical_to_en_exempt": 2714,
           "target": 50,
           "gate_pass": false,
           "coverage_pass": false,
@@ -126,7 +126,7 @@
         "hu": {
           "coverage": 3.9,
           "coverage_genuine": 1.8,
-          "identical_to_en_exempt": 1119,
+          "identical_to_en_exempt": 1125,
           "target": 50,
           "gate_pass": false,
           "coverage_pass": false,
@@ -139,13 +139,13 @@
           "quality_gate_pass": true
         },
         "it": {
-          "coverage": 47.7,
+          "coverage": 48.6,
           "coverage_genuine": 44.5,
-          "identical_to_en_exempt": 1987,
+          "identical_to_en_exempt": 2537,
           "target": 50,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 8.9,
+          "guard_fail_rate": 9.4,
           "quality_available": true,
           "quality_score": 98.9,
           "quality_score_target": 100.0,
@@ -154,13 +154,13 @@
           "quality_gate_pass": true
         },
         "nl": {
-          "coverage": 14.8,
+          "coverage": 15.8,
           "coverage_genuine": 11.7,
-          "identical_to_en_exempt": 2307,
+          "identical_to_en_exempt": 3077,
           "target": 50,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 2.6,
+          "guard_fail_rate": 2.4,
           "quality_available": true,
           "quality_score": 100.0,
           "quality_score_target": 100.0,
@@ -169,13 +169,13 @@
           "quality_gate_pass": true
         },
         "pt": {
-          "coverage": 17.5,
+          "coverage": 18.5,
           "coverage_genuine": 14.5,
-          "identical_to_en_exempt": 2197,
+          "identical_to_en_exempt": 2961,
           "target": 50,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 10.2,
+          "guard_fail_rate": 9.9,
           "quality_available": true,
           "quality_score": 99.8,
           "quality_score_target": 100.0,
@@ -184,13 +184,13 @@
           "quality_gate_pass": true
         },
         "ro": {
-          "coverage": 35.5,
+          "coverage": 36.4,
           "coverage_genuine": 32.4,
-          "identical_to_en_exempt": 2119,
+          "identical_to_en_exempt": 2733,
           "target": 50,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 3.0,
+          "guard_fail_rate": 3.1,
           "quality_available": true,
           "quality_score": 99.4,
           "quality_score_target": 100.0,
@@ -199,13 +199,13 @@
           "quality_gate_pass": true
         },
         "ru": {
-          "coverage": 39.2,
+          "coverage": 40.1,
           "coverage_genuine": 36.9,
-          "identical_to_en_exempt": 1586,
+          "identical_to_en_exempt": 2240,
           "target": 50,
           "gate_pass": false,
           "coverage_pass": false,
-          "guard_fail_rate": 14.6,
+          "guard_fail_rate": 16.7,
           "quality_available": true,
           "quality_score": 86.1,
           "quality_score_target": 100.0,
@@ -216,7 +216,7 @@
         "sk": {
           "coverage": 3.7,
           "coverage_genuine": 1.6,
-          "identical_to_en_exempt": 1121,
+          "identical_to_en_exempt": 1127,
           "target": 50,
           "gate_pass": false,
           "coverage_pass": false,
@@ -229,9 +229,9 @@
           "quality_gate_pass": true
         },
         "tr": {
-          "coverage": 6.6,
+          "coverage": 7.8,
           "coverage_genuine": 3.5,
-          "identical_to_en_exempt": 2361,
+          "identical_to_en_exempt": 3214,
           "target": 50,
           "gate_pass": false,
           "coverage_pass": false,
@@ -301,7 +301,7 @@
         "ar": {
           "coverage": 5.5,
           "coverage_genuine": 3.4,
-          "identical_to_en_exempt": 1133,
+          "identical_to_en_exempt": 1139,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -316,7 +316,7 @@
         "az": {
           "coverage": 4.6,
           "coverage_genuine": 2.6,
-          "identical_to_en_exempt": 1117,
+          "identical_to_en_exempt": 1123,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -329,9 +329,9 @@
           "quality_gate_pass": true
         },
         "bg": {
-          "coverage": 4.6,
+          "coverage": 4.7,
           "coverage_genuine": 2.6,
-          "identical_to_en_exempt": 1124,
+          "identical_to_en_exempt": 1130,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -346,7 +346,7 @@
         "bn": {
           "coverage": 5.7,
           "coverage_genuine": 3.6,
-          "identical_to_en_exempt": 1132,
+          "identical_to_en_exempt": 1138,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -361,7 +361,7 @@
         "bs": {
           "coverage": 3.2,
           "coverage_genuine": 1.1,
-          "identical_to_en_exempt": 1123,
+          "identical_to_en_exempt": 1129,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -376,7 +376,7 @@
         "da": {
           "coverage": 4.0,
           "coverage_genuine": 1.9,
-          "identical_to_en_exempt": 1112,
+          "identical_to_en_exempt": 1118,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -391,7 +391,7 @@
         "el": {
           "coverage": 4.4,
           "coverage_genuine": 2.3,
-          "identical_to_en_exempt": 1093,
+          "identical_to_en_exempt": 1099,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -406,7 +406,7 @@
         "et": {
           "coverage": 4.3,
           "coverage_genuine": 2.2,
-          "identical_to_en_exempt": 1111,
+          "identical_to_en_exempt": 1117,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -419,9 +419,9 @@
           "quality_gate_pass": true
         },
         "fa": {
-          "coverage": 5.0,
+          "coverage": 5.1,
           "coverage_genuine": 2.9,
-          "identical_to_en_exempt": 1136,
+          "identical_to_en_exempt": 1142,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -436,7 +436,7 @@
         "fi": {
           "coverage": 3.9,
           "coverage_genuine": 1.8,
-          "identical_to_en_exempt": 1113,
+          "identical_to_en_exempt": 1119,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -451,7 +451,7 @@
         "he": {
           "coverage": 4.6,
           "coverage_genuine": 2.5,
-          "identical_to_en_exempt": 1135,
+          "identical_to_en_exempt": 1141,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -466,7 +466,7 @@
         "hi": {
           "coverage": 4.8,
           "coverage_genuine": 2.7,
-          "identical_to_en_exempt": 1132,
+          "identical_to_en_exempt": 1138,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -481,7 +481,7 @@
         "hr": {
           "coverage": 4.2,
           "coverage_genuine": 2.2,
-          "identical_to_en_exempt": 1109,
+          "identical_to_en_exempt": 1115,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -496,7 +496,7 @@
         "hy": {
           "coverage": 4.1,
           "coverage_genuine": 2.0,
-          "identical_to_en_exempt": 1133,
+          "identical_to_en_exempt": 1139,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -511,7 +511,7 @@
         "id": {
           "coverage": 4.7,
           "coverage_genuine": 2.6,
-          "identical_to_en_exempt": 1136,
+          "identical_to_en_exempt": 1142,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -524,9 +524,9 @@
           "quality_gate_pass": true
         },
         "ja": {
-          "coverage": 4.5,
+          "coverage": 4.6,
           "coverage_genuine": 2.4,
-          "identical_to_en_exempt": 1135,
+          "identical_to_en_exempt": 1141,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -541,7 +541,7 @@
         "ka": {
           "coverage": 4.2,
           "coverage_genuine": 2.1,
-          "identical_to_en_exempt": 1133,
+          "identical_to_en_exempt": 1139,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -556,7 +556,7 @@
         "kk": {
           "coverage": 4.2,
           "coverage_genuine": 2.1,
-          "identical_to_en_exempt": 1115,
+          "identical_to_en_exempt": 1121,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -571,7 +571,7 @@
         "ko": {
           "coverage": 4.6,
           "coverage_genuine": 2.5,
-          "identical_to_en_exempt": 1132,
+          "identical_to_en_exempt": 1138,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -586,7 +586,7 @@
         "lt": {
           "coverage": 5.1,
           "coverage_genuine": 3.1,
-          "identical_to_en_exempt": 1087,
+          "identical_to_en_exempt": 1093,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -601,7 +601,7 @@
         "lv": {
           "coverage": 4.1,
           "coverage_genuine": 2.0,
-          "identical_to_en_exempt": 1120,
+          "identical_to_en_exempt": 1126,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -616,7 +616,7 @@
         "mk": {
           "coverage": 4.4,
           "coverage_genuine": 2.3,
-          "identical_to_en_exempt": 1120,
+          "identical_to_en_exempt": 1126,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -631,7 +631,7 @@
         "ml": {
           "coverage": 4.5,
           "coverage_genuine": 2.4,
-          "identical_to_en_exempt": 1135,
+          "identical_to_en_exempt": 1141,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -646,7 +646,7 @@
         "ms": {
           "coverage": 4.0,
           "coverage_genuine": 1.9,
-          "identical_to_en_exempt": 1137,
+          "identical_to_en_exempt": 1143,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -661,7 +661,7 @@
         "no": {
           "coverage": 3.7,
           "coverage_genuine": 1.6,
-          "identical_to_en_exempt": 1115,
+          "identical_to_en_exempt": 1121,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -676,7 +676,7 @@
         "sl": {
           "coverage": 3.7,
           "coverage_genuine": 1.6,
-          "identical_to_en_exempt": 1121,
+          "identical_to_en_exempt": 1127,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -691,7 +691,7 @@
         "sq": {
           "coverage": 4.0,
           "coverage_genuine": 1.9,
-          "identical_to_en_exempt": 1120,
+          "identical_to_en_exempt": 1126,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -706,7 +706,7 @@
         "sr": {
           "coverage": 45.9,
           "coverage_genuine": 44.4,
-          "identical_to_en_exempt": 764,
+          "identical_to_en_exempt": 770,
           "target": 30,
           "gate_pass": true,
           "coverage_pass": true,
@@ -721,7 +721,7 @@
         "sv": {
           "coverage": 29.2,
           "coverage_genuine": 27.4,
-          "identical_to_en_exempt": 979,
+          "identical_to_en_exempt": 985,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -736,7 +736,7 @@
         "sw": {
           "coverage": 3.8,
           "coverage_genuine": 1.7,
-          "identical_to_en_exempt": 1137,
+          "identical_to_en_exempt": 1143,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -751,7 +751,7 @@
         "ta": {
           "coverage": 3.8,
           "coverage_genuine": 1.7,
-          "identical_to_en_exempt": 1135,
+          "identical_to_en_exempt": 1141,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -766,7 +766,7 @@
         "te": {
           "coverage": 3.9,
           "coverage_genuine": 1.8,
-          "identical_to_en_exempt": 1137,
+          "identical_to_en_exempt": 1143,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -779,9 +779,9 @@
           "quality_gate_pass": true
         },
         "th": {
-          "coverage": 3.8,
+          "coverage": 3.9,
           "coverage_genuine": 1.7,
-          "identical_to_en_exempt": 1137,
+          "identical_to_en_exempt": 1143,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -794,9 +794,9 @@
           "quality_gate_pass": true
         },
         "tl": {
-          "coverage": 3.1,
+          "coverage": 3.2,
           "coverage_genuine": 1.0,
-          "identical_to_en_exempt": 1138,
+          "identical_to_en_exempt": 1144,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -811,7 +811,7 @@
         "uk": {
           "coverage": 3.5,
           "coverage_genuine": 1.4,
-          "identical_to_en_exempt": 1121,
+          "identical_to_en_exempt": 1127,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -826,7 +826,7 @@
         "uz": {
           "coverage": 3.5,
           "coverage_genuine": 1.4,
-          "identical_to_en_exempt": 1120,
+          "identical_to_en_exempt": 1126,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -839,9 +839,9 @@
           "quality_gate_pass": true
         },
         "vi": {
-          "coverage": 3.4,
+          "coverage": 3.5,
           "coverage_genuine": 1.3,
-          "identical_to_en_exempt": 1137,
+          "identical_to_en_exempt": 1143,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -856,7 +856,7 @@
         "zh": {
           "coverage": 2.4,
           "coverage_genuine": 0.3,
-          "identical_to_en_exempt": 1139,
+          "identical_to_en_exempt": 1145,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,
@@ -871,7 +871,7 @@
         "zh_TW": {
           "coverage": 4.3,
           "coverage_genuine": 1.2,
-          "identical_to_en_exempt": 1613,
+          "identical_to_en_exempt": 1621,
           "target": 30,
           "gate_pass": false,
           "coverage_pass": false,

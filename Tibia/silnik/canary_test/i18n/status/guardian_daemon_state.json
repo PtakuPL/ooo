@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-26T20:09:01.767059Z",
+  "timestamp": "2026-02-26T20:13:47.280319Z",
   "state": "running",
   "source": "service",
-  "pid": 2486025,
-  "reason": "lock_acquired",
-  "owner_pid": 0,
-  "owner_source": "",
-  "lock_age_sec": 0
+  "pid": 2495124,
+  "reason": "stale_lock_recovered",
+  "owner_pid": 2486025,
+  "owner_source": "service",
+  "lock_age_sec": 6
 }

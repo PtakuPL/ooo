@@ -2,14 +2,14 @@
   "category": "es",
   "cycle": 1,
   "eta_seconds": 0,
-  "file": "monsters.json",
-  "generated_at_utc": "2026-02-26T20:09:06Z",
-  "message": "translated=0 guard_fail=0 strict_missing_key=0 strict_skipped_done=0",
+  "file": "-",
+  "generated_at_utc": "2026-02-26T20:09:22Z",
+  "message": "cycle end",
   "phase": "AUTO_TRANSLATE",
   "progress": {
     "done": 0,
-    "total": 30,
-    "unit": "keys"
+    "total": 0,
+    "unit": "units"
   },
   "recent": [
     {
@@ -113,6 +113,6 @@
       "t": "2026-02-26T20:07:15Z"
     }
   ],
-  "stage": "auto_done",
+  "stage": "cycle_end",
   "status": "running"
 }

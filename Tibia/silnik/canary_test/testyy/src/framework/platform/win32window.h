@@ -97,6 +97,7 @@ private:
     HDC m_deviceContext;
     HCURSOR m_cursor;
     HCURSOR m_defaultCursor;
+    wchar_t m_pendingHighSurrogate{ 0 };
     bool m_hidden;
 
 #ifdef OPENGL_ES

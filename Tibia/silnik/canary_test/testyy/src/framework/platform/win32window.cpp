@@ -40,7 +40,7 @@
 
 #define HSB_BIT_SET(p, n) (p[(n)/8] |= (128 >>((n)%8)))
 
-constexpr auto WINDOW_NAME = "BASED_ON_TIBIA_GAME_ENGINE";
+constexpr auto WINDOW_NAME = L"BASED_ON_TIBIA_GAME_ENGINE";
 
 // DWM constants (these may not be defined in older Windows SDKs)
 #ifndef DWMWA_CAPTION_COLOR
@@ -262,8 +262,8 @@ void WIN32Window::terminate()
     }
 
     if (m_instance) {
-        if (!UnregisterClassA(WINDOW_NAME, m_instance))
-            g_logger.error("UnregisterClassA failed: " + std::to_string(GetLastError()));
+        if (!UnregisterClassW(WINDOW_NAME, m_instance))
+            g_logger.error("UnregisterClassW failed: " + std::to_string(GetLastError()));
         m_instance = nullptr;
     }
 
@@ -282,7 +282,7 @@ struct WindowProcProxy
 void WIN32Window::internalCreateWindow()
 {
     m_defaultCursor = LoadCursor(nullptr, IDC_ARROW);
-    WNDCLASSA wc;
+    WNDCLASSW wc;
     wc.style = CS_HREDRAW | CS_VREDRAW | CS_OWNDC;
     wc.lpfnWndProc = static_cast<WNDPROC>(WindowProcProxy::call);
     wc.cbClsExtra = 0;
@@ -294,7 +294,7 @@ void WIN32Window::internalCreateWindow()
     wc.lpszMenuName = nullptr;
     wc.lpszClassName = WINDOW_NAME;
 
-    if (!RegisterClassA(&wc))
+    if (!RegisterClassW(&wc))
         g_logger.fatal("Failed to register the window class.");
     constexpr DWORD dwExStyle = WS_EX_APPWINDOW | WS_EX_WINDOWEDGE,
         dwStyle = WS_OVERLAPPEDWINDOW;
@@ -305,7 +305,7 @@ void WIN32Window::internalCreateWindow()
     const auto& screenRect = adjustWindowRect(Rect(m_position, m_size));
 
     updateUnmaximizedCoords();
-    m_window = CreateWindowExA(dwExStyle,
+    m_window = CreateWindowExW(dwExStyle,
                                WINDOW_NAME,
                                nullptr,
                                dwStyle,
@@ -612,23 +612,76 @@ LRESULT WIN32Window::windowProc(const HWND hWnd, const uint32_t uMsg, const WPAR
         case WM_ACTIVATE:
         {
             m_focused = !(wParam == WA_INACTIVE);
+            m_pendingHighSurrogate = 0;
             releaseAllKeys();
             break;
         }
         case WM_SETFOCUS:
         case WM_KILLFOCUS:
         {
+            m_pendingHighSurrogate = 0;
             releaseAllKeys();
+            break;
+        }
+        case WM_UNICHAR:
+        {
+            if (wParam == UNICODE_NOCHAR)
+                return TRUE;
+
+            const uint32_t codepoint = static_cast<uint32_t>(wParam);
+            if (codepoint < 32 || codepoint > 0x10FFFF || (codepoint >= 0xD800 && codepoint <= 0xDFFF))
+                break;
+
+            std::wstring utf16;
+            if (codepoint <= 0xFFFF) {
+                utf16.push_back(static_cast<wchar_t>(codepoint));
+            } else {
+                const uint32_t shifted = codepoint - 0x10000;
+                utf16.push_back(static_cast<wchar_t>(0xD800 + (shifted >> 10)));
+                utf16.push_back(static_cast<wchar_t>(0xDC00 + (shifted & 0x3FF)));
+            }
+
+            const std::string text = stdext::utf16_to_utf8(utf16);
+            if (text.empty())
+                break;
+
+            m_inputEvent.reset(Fw::KeyTextInputEvent);
+            m_inputEvent.keyText = text;
+            if (m_onInputEvent)
+                m_onInputEvent(m_inputEvent);
             break;
         }
         case WM_CHAR:
         {
-            if (wParam >= 32 && wParam <= 255) {
-                m_inputEvent.reset(Fw::KeyTextInputEvent);
-                m_inputEvent.keyText = wParam;
-                if (m_onInputEvent)
-                    m_onInputEvent(m_inputEvent);
+            const wchar_t codeUnit = static_cast<wchar_t>(wParam);
+            if (codeUnit < 32)
+                break;
+
+            std::wstring utf16;
+            if (codeUnit >= 0xD800 && codeUnit <= 0xDBFF) {
+                m_pendingHighSurrogate = codeUnit;
+                break;
             }
+
+            if (codeUnit >= 0xDC00 && codeUnit <= 0xDFFF) {
+                if (m_pendingHighSurrogate == 0)
+                    break;
+                utf16.push_back(m_pendingHighSurrogate);
+                utf16.push_back(codeUnit);
+                m_pendingHighSurrogate = 0;
+            } else {
+                m_pendingHighSurrogate = 0;
+                utf16.push_back(codeUnit);
+            }
+
+            const std::string text = stdext::utf16_to_utf8(utf16);
+            if (text.empty())
+                break;
+
+            m_inputEvent.reset(Fw::KeyTextInputEvent);
+            m_inputEvent.keyText = text;
+            if (m_onInputEvent)
+                m_onInputEvent(m_inputEvent);
             break;
         }
         case WM_CLOSE:
@@ -943,10 +996,10 @@ void WIN32Window::setFullscreen(bool fullscreen)
         if (fullscreen) {
             const auto& size = getDisplaySize();
             GetWindowPlacement(m_window, &wpPrev);
-            SetWindowLong(m_window, GWL_STYLE, (dwStyle & ~WS_OVERLAPPEDWINDOW) | WS_POPUP | WS_EX_TOPMOST);
+            SetWindowLong(m_window, GWL_STYLE, (dwStyle & ~WS_OVERLAPPEDWINDOW) | WS_POPUP);
             SetWindowPos(m_window, HWND_TOPMOST, 0, 0, size.width(), size.height(), SWP_FRAMECHANGED);
         } else {
-            SetWindowLong(m_window, GWL_STYLE, (dwStyle & ~(WS_POPUP | WS_EX_TOPMOST)) | WS_OVERLAPPEDWINDOW);
+            SetWindowLong(m_window, GWL_STYLE, (dwStyle & ~WS_POPUP) | WS_OVERLAPPEDWINDOW);
             SetWindowPlacement(m_window, &wpPrev);
             SetWindowPos(m_window, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE | SWP_FRAMECHANGED);
         }

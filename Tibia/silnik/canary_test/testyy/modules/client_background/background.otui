@@ -12,6 +12,7 @@ Panel
 
   UILabel
     id: clientVersionLabel
+    visible: false
     background-color: #00000099
     anchors.right: parent.right
     anchors.bottom: parent.bottom

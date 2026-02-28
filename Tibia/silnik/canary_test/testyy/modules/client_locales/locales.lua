@@ -1,10 +1,67 @@
 dofile 'neededtranslations'
+dofile 'i18n_layout'
 
 -- private variables
 local defaultLocaleName = 'en'
 local installedLocales
 local currentLocale
 local localesWindow
+
+local localeDisplayNameOverrides = {
+  es = "Español",
+  pt = "Português",
+  zh = "Chinese",
+  zh_tw = "Chinese (Traditional)",
+  ja = "Japanese",
+  ko = "Korean",
+}
+
+local function normalizeLocaleCode(code)
+  if not code then
+    return ''
+  end
+  return tostring(code):lower():gsub('-', '_')
+end
+
+local function getLocaleDisplayName(localeCode, localeData)
+  local normalizedCode = normalizeLocaleCode(localeCode)
+  local overrideName = localeDisplayNameOverrides[normalizedCode]
+  if overrideName then
+    return overrideName
+  end
+
+  local languageName = localeData and localeData.languageName or normalizedCode
+  if type(languageName) ~= 'string' then
+    return normalizedCode
+  end
+
+  if languageName:find('�', 1, true) then
+    local cleaned = languageName:gsub('�', '')
+    if cleaned ~= '' then
+      return cleaned
+    end
+  end
+
+  return languageName
+end
+
+local function resolveFlagSource(localeCode)
+  local normalizedCode = normalizeLocaleCode(localeCode)
+  local shortCode = normalizedCode:match('^([a-z][a-z])[_]?[a-z]*$')
+  local candidates = { normalizedCode, shortCode }
+
+  for _, candidate in ipairs(candidates) do
+    if candidate and candidate ~= '' then
+      local src = '/images/flags/' .. candidate
+      if g_resources.fileExists(src .. '.png') or g_resources.fileExists(src) then
+        return src
+      end
+    end
+  end
+
+  -- Fallback avoids broken/blank icons when a locale flag asset is missing.
+  return '/images/flags/en'
+end
 
 -- send current locale to server (extended opcode)
 local function sendLocale(localeName)
@@ -20,23 +77,27 @@ end
 local function createWindow()
   localesWindow = g_ui.displayUI('locales')
   local localesPanel = localesWindow:getChildById('localesPanel')
-  local layout = localesPanel:getLayout()
-  local spacing = layout:getCellSpacing()
-  local size = layout:getCellSize()
 
-  local count = 0
+  -- Sort locales alphabetically by language name for clean display
+  local sortedLocales = {}
   for name, locale in pairs(installedLocales) do
-    local widget = g_ui.createWidget('LocalesButton', localesPanel)
-    widget:setImageSource('/images/flags/' .. name)
-    widget:setText(locale.languageName)
-    widget.onClick = function()
-      selectFirstLocale(name)
-    end
-    count = count + 1
+    sortedLocales[#sortedLocales + 1] = {
+      code = name,
+      locale = locale,
+      displayName = getLocaleDisplayName(name, locale),
+    }
   end
+  table.sort(sortedLocales, function(a, b) return a.displayName < b.displayName end)
 
-  count = math.max(1, math.min(count, 3))
-  localesPanel:setWidth(size.width * count + spacing * (count - 1))
+  for _, entry in ipairs(sortedLocales) do
+    local widget = g_ui.createWidget('LocalesButton', localesPanel)
+    widget:setImageSource(resolveFlagSource(entry.code))
+    widget:setText(entry.displayName)
+    widget:setTooltip((entry.displayName or entry.code) .. ' [' .. entry.code .. ']')
+    widget.onClick = function()
+      selectFirstLocale(entry.code)
+    end
+  end
 
   addEvent(function()
     addEvent(function()
@@ -95,15 +156,20 @@ function init()
     setLocale(defaultLocaleName)
   end
 
-  -- show picker on first run (or always, if you prefer: change to always connect onRun)
+  -- Always connect the language picker so it can be opened from topmenu.
+  -- Also show it automatically on first run when no locale has been saved yet.
   if g_app.hasUpdater() then
-    connect(g_app, { onUpdateFinished = createWindow })
+    if savedLocale == 'false' then
+      connect(g_app, { onUpdateFinished = createWindow })
+    end
   else
-    -- show once on first run when no saved locale
     if savedLocale == 'false' then
       connect(g_app, { onRun = createWindow })
     end
   end
+
+  -- Register Ctrl+L keyboard shortcut to open language picker anytime
+  g_keyboard.bindKeyDown('Ctrl+L', openLanguagePicker)
 
   ProtocolGame.registerExtendedOpcode(ExtendedIds.Locale, onExtendedLocales)
   connect(g_game, { onGameStart = onGameStart })
@@ -113,17 +179,29 @@ function init()
   modules.client_locales = modules.client_locales or {}
   modules.client_locales.openLanguagePicker = openLanguagePicker
   modules.client_locales.createWindow = createWindow
+
+  -- Initialize I18N layout override system
+  if i18nLayout and i18nLayout.init then
+    i18nLayout.init()
+  end
 end
 
 function terminate()
+  -- Terminate I18N layout override system
+  if i18nLayout and i18nLayout.terminate then
+    i18nLayout.terminate()
+  end
+
   installedLocales = nil
   currentLocale = nil
 
   ProtocolGame.unregisterExtendedOpcode(ExtendedIds.Locale)
+  -- Unbind keyboard shortcut
+  g_keyboard.unbindKeyDown('Ctrl+L')
   if g_app.hasUpdater() then
-    disconnect(g_app, { onUpdateFinished = createWindow })
+    pcall(disconnect, g_app, { onUpdateFinished = createWindow })
   else
-    disconnect(g_app, { onRun = createWindow })
+    pcall(disconnect, g_app, { onRun = createWindow })
   end
   disconnect(g_game, { onGameStart = onGameStart })
 end
@@ -197,9 +275,39 @@ function loadGameI18nForLocale(locale)
 
   local prevGlobalLocale = rawget(_G, 'locale')
   _G.locale = locale
+
+  -- Count translations before loading to verify merge worked
+  local countBefore = 0
+  if locale.translation then
+    for _ in pairs(locale.translation) do countBefore = countBefore + 1 end
+  end
+
   -- Use absolute paths so dofile resolves correctly regardless of calling context.
-  pcall(dofile, '/locales/game_i18n_' .. locale.name)
-  pcall(dofile, '/locales/game_i18n_' .. locale.name .. '_compact')
+  -- Log errors instead of silently swallowing them via pcall.
+  local path1 = '/locales/game_i18n_' .. locale.name
+  local ok1, err1 = pcall(dofile, path1)
+  if not ok1 and err1 then
+    pwarning('[i18n] Failed to load ' .. path1 .. ': ' .. tostring(err1))
+  end
+
+  local path2 = '/locales/game_i18n_' .. locale.name .. '_compact'
+  local ok2, err2 = pcall(dofile, path2)
+  if not ok2 and err2 then
+    -- compact files are optional, only debug-log
+    pdebug('[i18n] No compact file for ' .. locale.name .. ' (ok)')
+  end
+
+  local countAfter = 0
+  if locale.translation then
+    for _ in pairs(locale.translation) do countAfter = countAfter + 1 end
+  end
+  local loaded = countAfter - countBefore
+  if loaded > 0 then
+    pdebug('[i18n] Loaded ' .. loaded .. ' game translations for ' .. locale.name)
+  elseif ok1 then
+    pwarning('[i18n] game_i18n_' .. locale.name .. ' loaded but 0 translations merged!')
+  end
+
   _G.locale = prevGlobalLocale
 end
 
@@ -213,7 +321,10 @@ function installLocales(directory)
   local files = g_resources.listDirectoryFiles(directory)
   for _, file in ipairs(files) do
     if g_resources.isFileType(file, "lua") and not file:find("^game_i18n_") then
-      dofile(directory .. '/' .. file)
+      local ok, err = pcall(dofile, directory .. '/' .. file)
+      if not ok then
+        pwarning('[i18n] Failed to load locale file: ' .. file .. ': ' .. tostring(err))
+      end
     end
   end
 end
@@ -234,8 +345,15 @@ function setLocale(name)
   currentLocale = locale
   g_settings.set('locale', name)
   
-  -- Clear TTF font caches when locale changes (different glyphs needed)
-  g_fonts.clearAllFontCaches()
+  -- Update HarfBuzz shaping locale tag (e.g. "en", "de", "pl")
+  if g_fonts.setLocaleTag then
+    g_fonts.setLocaleTag(locale.languageTag or name)
+  end
+
+  -- Clear TTF font/shape caches when locale changes (different glyphs may be needed)
+  if g_fonts.clearGlyphCaches then
+    g_fonts.clearGlyphCaches()
+  end
   
   if onLocaleChanged then
     onLocaleChanged(name)
@@ -254,17 +372,22 @@ end
 -- Helper to apply format patterns to a translated string.
 local function applyFormat(translation, ...)
   if translation:find("{}", 1, true) then
+    local args = {...}
     local idx = 0
     return (translation:gsub("%{%}", function()
       idx = idx + 1
-      local v = select(idx, ...)
+      local v = args[idx]
       if v == nil then
         return "{}"
       end
       return tostring(v)
     end))
   end
-  return string.format(translation, ...)
+  local ok, result = pcall(string.format, translation, ...)
+  if ok then
+    return result
+  end
+  return translation
 end
 
 -- global function used to translate texts

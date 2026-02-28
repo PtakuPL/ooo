@@ -33,13 +33,14 @@ Panel
   
   UIWidget
     phantom: true
+    visible: false
     anchors.bottom: parent.bottom
     anchors.horizontalCenter: parent.horizontalCenter
     text-align: center
     text-auto-resize: true
     color: #e98d02
     margin-bottom: 110
-    text: OTClient Redemption
+    text: ""
     font: noto-12
     font-scale: 4
     shader: Map - Party

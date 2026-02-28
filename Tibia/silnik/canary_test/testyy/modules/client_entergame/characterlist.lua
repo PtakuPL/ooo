@@ -21,6 +21,20 @@ local function removeAutoReconnectEvent() --prevent
     end
 end
 
+local function updateAutoReconnectLabel()
+    if not autoReconnectButton or autoReconnectButton:isDestroyed() then
+        return
+    end
+
+    local autoReconnect = g_settings.getBoolean('autoReconnect', false)
+    local reconnectStatus = autoReconnect and tr("otclient_modules.characterlist.tr_6") or tr("otclient_modules.characterlist.tr_5")
+    if not g_game.getFeature(GameEnterGameShowAppearance) then
+        autoReconnectButton:setText(tr("otclient_modules.characterlist.tr_4") .. '\n' .. reconnectStatus)
+    else
+        autoReconnectButton:setText(tr("otclient_modules.characterlist.tr_3") .. ' ' .. reconnectStatus)
+    end
+end
+
 -- private functions
 local function tryLogin(charInfo, tries)
     tries = tries or 1
@@ -408,12 +422,7 @@ function CharacterList.create(characters, account, otui)
         local autoReconnect = not g_settings.getBoolean('autoReconnect', false)
         autoReconnectButton:setOn(autoReconnect)
         g_settings.set('autoReconnect', autoReconnect)
-        local statusText = autoReconnect and 'Auto reconnect: On' or 'Auto reconnect: off'
-        if not g_game.getFeature(GameEnterGameShowAppearance) then
-            statusText = autoReconnect and 'Auto reconnect:\n On' or 'Auto reconnect:\n off'
-        end
-        
-        autoReconnectButton:setText(statusText)
+        updateAutoReconnectLabel()
     end
 end
 
@@ -440,12 +449,7 @@ function CharacterList.show()
 
     local autoReconnect = g_settings.getBoolean('autoReconnect', false)
     autoReconnectButton:setOn(autoReconnect)
-    local reconnectStatus = autoReconnect and tr("otclient_modules.characterlist.tr_6") or tr("otclient_modules.characterlist.tr_5")
-    if not g_game.getFeature(GameEnterGameShowAppearance) then
-        autoReconnectButton:setText(tr("otclient_modules.characterlist.tr_4") .. '\n ' .. reconnectStatus)
-    else
-        autoReconnectButton:setText(tr("otclient_modules.characterlist.tr_3") .. ' ' .. reconnectStatus)
-    end
+    updateAutoReconnectLabel()
 end
 
 function CharacterList.hide(showLogin)

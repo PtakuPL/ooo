@@ -27,6 +27,7 @@
 #include <framework/input/mouse.h>
 #include <framework/text/Utf8.h>  // for otc::text::utf8ToU32, u32ToUtf8
 #include <cmath>
+#include <vector>
 #include <framework/otml/otmlnode.h>
 #include <framework/platform/platformwindow.h>
 
@@ -124,6 +125,49 @@ void UITextEdit::drawSelf(const DrawPoolType drawPane)
         g_drawPool.resetDrawOrder();
     }
 
+    const std::u32string displayed32 = m_font->isTTF() ? otc::text::utf8ToU32(m_drawText) : std::u32string{};
+    const auto sourceToDisplayedPos = [&](int sourcePos) -> int {
+        if (!m_font->isTTF())
+            return sourcePos;
+
+        sourcePos = std::clamp(sourcePos, 0, static_cast<int>(m_text32.size()));
+        const int displayedSize = static_cast<int>(displayed32.size());
+        const int sourceSize = static_cast<int>(m_text32.size());
+
+        int displayedPos = 0;
+        int mappedSourcePos = 0;
+
+        while (displayedPos < displayedSize && mappedSourcePos < sourcePos && mappedSourcePos < sourceSize) {
+            if (displayed32[displayedPos] == m_text32[mappedSourcePos]) {
+                ++displayedPos;
+                ++mappedSourcePos;
+                continue;
+            }
+
+            if (displayed32[displayedPos] == U'\n' && m_text32[mappedSourcePos] != U'\n') {
+                ++displayedPos;
+                continue;
+            }
+
+            ++displayedPos;
+            ++mappedSourcePos;
+        }
+
+        return std::clamp(displayedPos, 0, displayedSize);
+    };
+    const auto displayedSliceWidth = [&](int from, int to) -> int {
+        if (!m_font->isTTF())
+            return 0;
+
+        const int start = std::clamp(from, 0, static_cast<int>(displayed32.size()));
+        const int end = std::clamp(to, start, static_cast<int>(displayed32.size()));
+        if (end <= start)
+            return 0;
+
+        const std::u32string slice(displayed32.begin() + start, displayed32.begin() + end);
+        return m_font->calculateTextRectSize(otc::text::u32ToUtf8(slice)).width();
+    };
+
     if (hasSelection()) {
         if (glyphsMustRecache) {
             m_glyphsSelectRectCache.clear();
@@ -131,14 +175,15 @@ void UITextEdit::drawSelf(const DrawPoolType drawPane)
                 for (int i = m_selectionStart; i < m_selectionEnd; ++i)
                     m_glyphsSelectRectCache.emplace_back(m_glyphsCoords[i].first, m_glyphsCoords[i].second);
             } else {
-                // For TTF fonts, calculate selection rectangle using substring widths (approximation)
-                const std::string fullText = m_drawText;
-                const int totalW = m_font->calculateTextRectSize(fullText).width();
-                const int preW = m_font->calculateTextRectSize(fullText.substr(0, std::max(0, m_selectionStart))).width();
-                const int selW = m_font->calculateTextRectSize(fullText.substr(m_selectionStart, m_selectionEnd - m_selectionStart)).width();
+                // For TTF fonts, selection/cursor are source codepoint positions.
+                // Convert to displayed-text positions to preserve correctness with UTF-8 and wrapped lines.
+                const int displayedSelStart = sourceToDisplayedPos(m_selectionStart);
+                const int displayedSelEnd = sourceToDisplayedPos(m_selectionEnd);
+                const int totalW = displayedSliceWidth(0, static_cast<int>(displayed32.size()));
+                const int preW = displayedSliceWidth(0, displayedSelStart);
+                const int selW = displayedSliceWidth(displayedSelStart, displayedSelEnd);
 
                 // Compute horizontal alignment the same way BitmapFont does
-                // Correct: call left() accessor, not refer to overloaded function pointer
                 float bx = static_cast<float>(m_drawArea.left());
                 if (m_textAlign & Fw::AlignRight) {
                     bx = static_cast<float>(m_drawArea.right()) - totalW;
@@ -171,10 +216,9 @@ void UITextEdit::drawSelf(const DrawPoolType drawPane)
         if (elapsed <= delay) {
             auto cursorRect = [&]() -> Rect {
                 if (m_font->isTTF()) {
-                    // Compute cursor x using substring width and alignment
-                    const std::string fullText = m_drawText;
-                    const int totalW = m_font->calculateTextRectSize(fullText).width();
-                    const int preW = m_font->calculateTextRectSize(fullText.substr(0, m_cursorPos)).width();
+                    const int displayedCursorPos = sourceToDisplayedPos(m_cursorPos);
+                    const int totalW = displayedSliceWidth(0, static_cast<int>(displayed32.size()));
+                    const int preW = displayedSliceWidth(0, displayedCursorPos);
                     float bx = static_cast<float>(m_drawArea.left());
                     if (m_textAlign & Fw::AlignRight) {
                         bx = static_cast<float>(m_drawArea.right()) - totalW;
@@ -722,56 +766,108 @@ void UITextEdit::moveCursorVertically(bool)
 
 int UITextEdit::getTextPos(const Point& pos)
 {
-    // For TTF fonts: use width-based approximation since we don't have per-glyph coords
+    // For TTF fonts: support multiline + scroll offset and map wrapped text back to source text.
     if (m_font->isTTF()) {
-        const int codepointCount = static_cast<int>(m_text32.size());
-        if (codepointCount == 0)
+        const std::u32string displayed32 = otc::text::utf8ToU32(m_drawText);
+        if (displayed32.empty())
             return 0;
-        
-        // Calculate total text width and alignment offset
-        const std::string fullText = m_drawText;
-        const int totalW = m_font->calculateTextRectSize(fullText).width();
-        
-        float bx = static_cast<float>(m_drawArea.left());
-        if (m_textAlign & Fw::AlignRight) {
-            bx = static_cast<float>(m_drawArea.right()) - totalW;
-        } else if (m_textAlign & Fw::AlignHorizontalCenter) {
-            bx = static_cast<float>(m_drawArea.left()) + (m_drawArea.width() - totalW) * 0.5f;
-        }
-        
-        // If click is before text start
-        if (pos.x < static_cast<int>(bx))
-            return 0;
-        
-        // If click is after text end
-        if (pos.x >= static_cast<int>(bx) + totalW)
-            return codepointCount;
-        
-        // Binary search for position (find codepoint where click falls)
-        // Convert position to UTF-8 bytes for substring measurement
-        const int clickX = pos.x - static_cast<int>(bx);
-        int bestPos = 0;
-        int prevWidth = 0;
-        
-        for (int i = 1; i <= codepointCount; ++i) {
-            // Get UTF-8 byte offset for i codepoints
-            const size_t byteOffset = otc::text::utf8ByteOffset(m_text, i);
-            const int width = m_font->calculateTextRectSize(m_text.substr(0, byteOffset)).width();
-            
-            // Check if click is between prevWidth and width
-            if (clickX < width) {
-                // Decide if closer to previous or current position
-                if (clickX - prevWidth < width - clickX)
-                    return bestPos;
-                else
-                    return i;
+
+        struct LineInfo {
+            int start;
+            int length;
+        };
+        std::vector<LineInfo> lines;
+        lines.reserve(16);
+
+        int lineStart = 0;
+        for (int i = 0; i < static_cast<int>(displayed32.size()); ++i) {
+            if (displayed32[i] == U'\n') {
+                lines.push_back({ lineStart, i - lineStart });
+                lineStart = i + 1;
             }
-            
-            prevWidth = width;
-            bestPos = i;
         }
-        
-        return codepointCount;
+        lines.push_back({ lineStart, static_cast<int>(displayed32.size()) - lineStart });
+
+        Rect drawArea = m_drawArea;
+        if (m_textVirtualOffset.y > 0 || m_textVirtualOffset.x > 0) {
+            drawArea.translate(-m_textVirtualOffset.x, -m_textVirtualOffset.y);
+        }
+
+        const int lineHeight = std::max<int>(1, m_font->getGlyphHeight());
+        int lineIndex = 0;
+        if (pos.y > drawArea.top()) {
+            lineIndex = (pos.y - drawArea.top()) / lineHeight;
+        }
+        lineIndex = std::clamp(lineIndex, 0, static_cast<int>(lines.size()) - 1);
+
+        const LineInfo& line = lines[lineIndex];
+        const std::u32string line32(displayed32.begin() + line.start, displayed32.begin() + line.start + line.length);
+        const std::string lineUtf8 = otc::text::u32ToUtf8(line32);
+        const int lineWidth = m_font->calculateTextRectSize(lineUtf8).width();
+
+        int lineStartX = drawArea.left();
+        if (m_textAlign & Fw::AlignRight) {
+            lineStartX = drawArea.right() - lineWidth;
+        } else if (m_textAlign & Fw::AlignHorizontalCenter) {
+            lineStartX = drawArea.left() + (drawArea.width() - lineWidth) / 2;
+        }
+
+        int linePos = 0;
+        if (pos.x <= lineStartX) {
+            linePos = 0;
+        } else if (pos.x >= lineStartX + lineWidth) {
+            linePos = line.length;
+        } else {
+            const int clickX = pos.x - lineStartX;
+            int bestPos = 0;
+            int prevWidth = 0;
+
+            for (int i = 1; i <= line.length; ++i) {
+                const std::u32string prefix32(line32.begin(), line32.begin() + i);
+                const int width = m_font->calculateTextRectSize(otc::text::u32ToUtf8(prefix32)).width();
+
+                if (clickX < width) {
+                    linePos = (clickX - prevWidth < width - clickX) ? bestPos : i;
+                    break;
+                }
+
+                prevWidth = width;
+                bestPos = i;
+                linePos = i;
+            }
+        }
+
+        const int displayedPos = line.start + linePos;
+
+        // Map displayed-text cursor (with wrap-inserted '\n') back to source text position.
+        int sourcePos = 0;
+        int displayedCursor = 0;
+        const int sourceSize = static_cast<int>(m_text32.size());
+
+        while (displayedCursor < displayedPos && sourcePos < sourceSize) {
+            if (displayed32[displayedCursor] == m_text32[sourcePos]) {
+                ++displayedCursor;
+                ++sourcePos;
+                continue;
+            }
+
+            if (displayed32[displayedCursor] == U'\n' && m_text32[sourcePos] != U'\n') {
+                ++displayedCursor;
+                continue;
+            }
+
+            ++displayedCursor;
+            ++sourcePos;
+        }
+
+        while (displayedCursor < displayedPos) {
+            if (displayed32[displayedCursor] != U'\n' && sourcePos < sourceSize) {
+                ++sourcePos;
+            }
+            ++displayedCursor;
+        }
+
+        return std::clamp(sourcePos, 0, sourceSize);
     }
     
     // Bitmap font path (unchanged)

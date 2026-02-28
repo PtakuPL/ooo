@@ -338,19 +338,22 @@ PhantomMiniWindow
       Label
         !text: tr("otclient_modules.inventory_otui.tr_5")
         text.align: center
-        font: noto-12
-        anchors.horizontalCenter: parent.horizontalCenter
+        font: verdana-bold-8px-antialiased
+        anchors.left: parent.left
+        anchors.right: parent.right
         anchors.top: parent.top
         color: #c0c0c0ff
         margin-top: 1
+        text-auto-resize: true
 
       Label
         id: soul
         !text: '100000'
-        font: noto-12
+        font: verdana-10px-antialiased
         text-align: center
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
+        margin-bottom: 1
         color: #c0c0c0ff
 
     MainInventoryItem
@@ -364,19 +367,22 @@ PhantomMiniWindow
       Label
         !text: tr("otclient_modules.inventory_otui.tr_4")
         text.align: center
-        font: noto-12
-        anchors.horizontalCenter: parent.horizontalCenter
+        font: verdana-bold-8px-antialiased
+        anchors.left: parent.left
+        anchors.right: parent.right
         anchors.top: parent.top
         color: #c0c0c0ff
         margin-top: 1
+        text-auto-resize: true
 
       Label
         id: capacity
         !text: '10000'
-        font: noto-12
+        font: verdana-10px-antialiased
         text-align: center
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
+        margin-bottom: 1
         color: #c0c0c0ff
 
   UIWidget
@@ -403,46 +409,50 @@ PhantomMiniWindow
       anchors.left: changeSize.right
       anchors.top: changeSize.top
       margin-left: 4
-      size: 30 44
+      size: 34 44
 
       Label
         !text: tr("otclient_modules.inventory_otui.tr_3")
         text.align: center
-        font: noto-12
-        anchors.horizontalCenter: parent.horizontalCenter
+        font: verdana-bold-8px-antialiased
+        anchors.left: parent.left
+        anchors.right: parent.right
         anchors.top: parent.top
         color: #c0c0c0ff
         margin-top: 1
         height: 10
+        text-auto-resize: true
 
       Label
         id: capacity
         !text: '10000'
-        font: noto-12
+        font: verdana-10px-antialiased
         text-align: center
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
-        margin-top: 8
+        margin-top: 9
         color: #c0c0c0ff
 
       Label
         !text: tr("otclient_modules.inventory_otui.tr_2")
         text.align: center
-        font: noto-12
-        anchors.horizontalCenter: parent.horizontalCenter
+        font: verdana-bold-8px-antialiased
+        anchors.left: parent.left
+        anchors.right: parent.right
         anchors.bottom: parent.bottom
         color: #c0c0c0ff
         margin-bottom: 8
         height: 10
+        text-auto-resize: true
 
       Label
         id: soul
         !text: '100000'
-        font: noto-12
+        font: verdana-10px-antialiased
         text-align: center
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
-        margin-bottom: -2
+        margin-bottom: -1
         color: #c0c0c0ff
 
     TopToggleButton

@@ -52,4 +52,4 @@
 #define OFFLINE_RPC_TEXT "Selecting Character..." // Message at client startup | offline character
 #define STATE_RPC_TEXT "github.com/mehah/otclient" // State Text
 #define RPC_LARGE_IMAGE "rpc-logo" // Large Image Name (Imported to API)
-#define RPC_LARGE_TEXT "OTClient - Redemption" // Large Text (Text showed at tooltip large image)
+#define RPC_LARGE_TEXT "OTClient" // Large Text (Text showed at tooltip large image)

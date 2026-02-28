@@ -2,10 +2,14 @@ LocalesMainLabel < Label
   font: noto-12
 
 LocalesButton < UIWidget
-  size: 96 96
-  image-size: 96 96
+  size: 96 118
+  image-size: 96 64
+  image-auto-resize: true
+  image-fixed-ratio: false
   image-smooth: true
-  text-offset: 0 96
+  text-offset: 0 72
+  text-wrap: true
+  text-align: center
   font: noto-12
 
 UIWindow
@@ -30,6 +34,6 @@ UIWindow
     anchors.bottom: parent.bottom
     layout:
       type: grid
-      cell-size: 96 128
+      cell-size: 96 132
       cell-spacing: 32
       flow: true

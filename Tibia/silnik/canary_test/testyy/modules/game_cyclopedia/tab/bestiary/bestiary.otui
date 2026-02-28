@@ -5,12 +5,15 @@ UIWidget
 
   Button
     id: SearchButton
-    size: 40 20
+    width: 72
+    height: 20
     anchors.bottom: parent.bottom
     anchors.right: parent.right
     margin-bottom: 35
     !text: tr("otclient_modules.bestiary_otui.tr_16")
     font: noto-12
+    text-auto-resize: true
+    padding: 0 8 0 8
     text-offset: 0 -1
     color: #C0C0C0
     @onClick:  modules.game_cyclopedia.Cyclopedia.BestiarySearch(self:getText())
@@ -275,12 +278,15 @@ UIWidget
         size: 45 45
       Button
         id: SelectButton
-        size: 70 20
+        width: 98
+        height: 20
         anchors.left: CharmBase.right
         anchors.bottom: CharmBase.bottom
         margin-left: 5
         !text: tr("otclient_modules.bestiary_otui.tr_8")
         //font: noto-12
+        text-auto-resize: true
+        padding: 0 8 0 8
         text-offset: 0 -1
         color: #C0C0C0
       ComboBox
@@ -581,7 +587,6 @@ UIWidget
           margin-bottom: 2
           step: 37
           pixels-scroll: true
-
 
 
 

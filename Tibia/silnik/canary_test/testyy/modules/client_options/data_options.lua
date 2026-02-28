@@ -48,7 +48,7 @@ return {
         action = function(value, options, controller, panels, extraWidgets)
             local text, v = value, value
             if value <= 0 or value >= 201 then
-                text = 'max'
+                text = tr("otclient_modules.data_options.tr_13")
                 v = 0
             end
 
@@ -109,8 +109,8 @@ return {
     ambientLight                      = {
         value = 0,
         action = function(value, options, controller, panels, extraWidgets)
-            panels.graphicsEffectsPanel:recursiveGetChildById('ambientLight'):setText(string.format(
-                'Ambient light: %s%%', value))
+            panels.graphicsEffectsPanel:recursiveGetChildById('ambientLight'):setText(
+                tr("otclient_modules.data_options.tr_8", value))
             panels.gameMapPanel:setMinimumAmbientLight(value / 100)
             panels.gameMapPanel:setDrawLights(options.enableLights.value)
         end
@@ -154,31 +154,29 @@ return {
     walkTurnDelay                     = {
         value = 100,
         action = function(value, options, controller, panels, extraWidgets)
-            panels.generalPanel:recursiveGetChildById('walkTurnDelay'):setText(string.format(
-                'Walk delay after turn: %sms',
+            panels.generalPanel:recursiveGetChildById('walkTurnDelay'):setText(tr("otclient_modules.general_otui.tr_6",
                 value))
         end
     },
     walkTeleportDelay                 = {
         value = 50,
         action = function(value, options, controller, panels, extraWidgets)
-            panels.generalPanel:recursiveGetChildById('walkTeleportDelay'):setText(string.format(
-                'Walk delay after teleport: %sms',
-                value))
+            panels.generalPanel:recursiveGetChildById('walkTeleportDelay'):setText(
+                tr("otclient_modules.general_otui.tr_4", value))
         end
     },
     walkStairsDelay                   = {
         value = 50,
         action = function(value, options, controller, panels, extraWidgets)
-            panels.generalPanel:recursiveGetChildById('walkStairsDelay'):setText(string.format(
-                'Walk delay after floor change: %sms',
+            panels.generalPanel:recursiveGetChildById('walkStairsDelay'):setText(tr("otclient_modules.general_otui.tr_2",
                 value))
         end
     },
     hotkeyDelay                       = {
         value = 70,
         action = function(value, options, controller, panels, extraWidgets)
-            panels.generalPanel:recursiveGetChildById('hotkeyDelay'):setText(string.format('Hotkey delay: %sms', value))
+            panels.generalPanel:recursiveGetChildById('hotkeyDelay'):setText(tr("otclient_modules.general_otui.tr_8",
+                value))
         end
     },
     crosshair                         = {
@@ -210,8 +208,8 @@ return {
     shadowFloorIntensity              = {
         value = 30,
         action = function(value, options, controller, panels, extraWidgets)
-            panels.graphicsEffectsPanel:recursiveGetChildById('shadowFloorIntensity'):setText(string.format(
-                'Shadow floor Intensity: %s%%', value))
+            panels.graphicsEffectsPanel:recursiveGetChildById('shadowFloorIntensity'):setText(
+                tr("otclient_modules.data_options.tr_9", value))
             panels.gameMapPanel:setShadowFloorIntensity(1 - (value / 100))
         end
     },
@@ -246,8 +244,8 @@ return {
     floorFading                       = {
         value = 500,
         action = function(value, options, controller, panels, extraWidgets)
-            panels.graphicsEffectsPanel:recursiveGetChildById('floorFading'):setText(string.format('Floor Fading: %s ms',
-                value))
+            panels.graphicsEffectsPanel:recursiveGetChildById('floorFading'):setText(
+                tr("otclient_modules.data_options.tr_10", value))
             panels.gameMapPanel:setFloorFading(tonumber(value))
         end
     },
@@ -282,7 +280,7 @@ return {
             end, 250)
 
             local hudWidget = panels.interfaceHUD:recursiveGetChildById('hudScale')
-            hudWidget:setText(string.format('HUD Scale: %sx', math.max(value + 0.5, 1)))
+            hudWidget:setText(tr("otclient_modules.data_options.tr_11", math.max(value + 0.5, 1)))
         end
     },
     creatureInformationScale          = {
@@ -294,8 +292,8 @@ return {
                 value = value / 2
             end
             g_app.setCreatureInformationScale(math.max(value + 0.5, 1))
-            panels.interfaceHUD:recursiveGetChildById('creatureInformationScale'):setText(string.format(
-                'Creature Information Scale: %sx', math.max(value + 0.5, 1)))
+            panels.interfaceHUD:recursiveGetChildById('creatureInformationScale'):setText(
+                tr("otclient_modules.data_options.tr_12", math.max(value + 0.5, 1)))
         end
     },
     staticTextScale                   = {
@@ -307,8 +305,8 @@ return {
                 value = value / 2
             end
             g_app.setStaticTextScale(math.max(value + 0.5, 1))
-            panels.interfaceHUD:recursiveGetChildById('staticTextScale'):setText(string.format('Message Scale: %sx',
-                math.max(value + 0.5, 1)))
+            panels.interfaceHUD:recursiveGetChildById('staticTextScale'):setText(
+                tr("otclient_modules.data_options.tr_5", math.max(value + 0.5, 1)))
         end
     },
     animatedTextScale                 = {
@@ -450,7 +448,7 @@ return {
         event = nil,
         action = function(value, options, controller, panels, extraWidgets)
             local newValue = value
-            if newValue == 'None' then
+            if newValue == 'none' then
                 newValue = nil
             end
             panels.interface:recursiveGetChildById('frames'):setCurrentOptionByData(newValue, true)

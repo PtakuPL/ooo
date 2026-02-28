@@ -55,6 +55,16 @@ local CONFIG = {
     }
 }
 
+local function getBossCategoryTooltip(category)
+    if category == CATEGORY.ARCHFOE then
+        return tr("otclient_modules.boss_slots.tr_4")
+    end
+    if category == CATEGORY.NEMESIS then
+        return tr("otclient_modules.boss_slots.tr_3")
+    end
+    return tr("otclient_modules.boss_slots.tr_2")
+end
+
 Cyclopedia.BossSlots = {}
 
 function Cyclopedia.loadBossSlots(data)
@@ -66,12 +76,12 @@ function Cyclopedia.loadBossSlots(data)
     UI.Sprite:setOutfit(raceData.outfit)
 
     UI.Sprite:getCreature():setStaticWalking(1000)
-    UI.TopBase.InfoLabel:setText(string.format("Equipment Loot Bonus: %d%% Next: %d%%", data.currentBonus,
+    UI.TopBase.InfoLabel:setText(string.format(tr("otclient_modules.boss_slots.tr_7"), data.currentBonus,
         data.nextBonus))
 
     local fullText = ""
     if data.playerPoints >= CONFIG[data.todaySlotData.bossRace].MASTERY then
-        fullText = "(fully unlocked)"
+        fullText = tr("otclient_modules.boss_slots.tr_1")
     end
 
     local progress = UI.BoostedProgress
@@ -100,7 +110,7 @@ function Cyclopedia.loadBossSlots(data)
         progress.goldStar:setImageSource("/game_cyclopedia/images/boss/icon_star_dark")
     end
 
-    UI.MainLabel:setText(string.format("Equipment loot bonus: %d%%\nKill bonus: %dx", data.todaySlotData.lootBonus,
+    UI.MainLabel:setText(string.format(tr("otclient_modules.boss_slots.tr_8"), data.todaySlotData.lootBonus,
         data.todaySlotData.killBonus))
 
     Cyclopedia.setBosstiarySlotsProgress(data.playerPoints, data.totalPointsNextBonus)
@@ -115,19 +125,12 @@ function Cyclopedia.loadBossSlots(data)
 
     local unlockedBosses = data.bossIdSlotTwo
 
-    UI.MidTitle:setText(string.format("Boosted Boss: %s", format(raceData.name)))
+    UI.MidTitle:setText(string.format(tr("otclient_modules.boss_slots.tr_9"), format(raceData.name)))
     Cyclopedia.setBosstiarySlotsBossProgress(UI.BoostedProgress, data.todaySlotData.killCount,
         CONFIG[data.todaySlotData.bossRace].MASTERY)
     UI.TypeIcon:setImageSource(ICONS[data.todaySlotData.bossRace])
 
-    local tooltip =
-        "Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30"
-
-    tooltip = data.todaySlotData.bossRace == CATEGORY.ARCHFOE and
-                  "Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60" or
-                  "Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60"
-
-    UI.TypeIcon:setTooltip(tooltip)
+    UI.TypeIcon:setTooltip(getBossCategoryTooltip(data.todaySlotData.bossRace))
     -- UI.TypeIcon:setTooltipAlign(AlignTopLeft)
 
     for i, unlockData in ipairs(data.bossesUnlockedData) do
@@ -189,15 +192,15 @@ function Cyclopedia.setEmptySlot(widget, slot, bossIdSlotTwo)
     widget.LockLabel:setVisible(true)
     widget.SelectBoss:setVisible(false)
     widget.ActivedBoss:setVisible(false)
-    widget:setText(string.format("Slot %d: Locked", slot))
-    widget.LockLabel:setText(string.format("Unlocks at %d Boss Points", bossIdSlotTwo))
+    widget:setText(string.format(tr("otclient_modules.boss_slots.tr_10"), slot))
+    widget.LockLabel:setText(string.format(tr("otclient_modules.boss_slots.tr_11"), bossIdSlotTwo))
 end
 
 function Cyclopedia.setLockedSlot(widget, slot, unlockedBosses)
     widget.LockLabel:setVisible(false)
     widget.SelectBoss:setVisible(true)
     widget.ActivedBoss:setVisible(false)
-    widget:setText(string.format("Slot %d: Select Boss", slot))
+    widget:setText(string.format(tr("otclient_modules.boss_slots.tr_12"), slot))
     widget.SelectBoss.ListBase.List:destroyChildren()
 
     local function format(string)
@@ -217,16 +220,7 @@ function Cyclopedia.setLockedSlot(widget, slot, unlockedBosses)
         internalWidget.Sprite:getCreature():setStaticWalking(1000)
         internalWidget.TypeIcon:setImageSource(ICONS[internalData.category])
 
-        local tooltip = internalData.category == CATEGORY.ARCHFOE and
-                            "Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60" or
-                            "Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60"
-
-        if internalData.category ~= CATEGORY.ARCHFOE then
-            tooltip =
-                "Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30"
-        end
-
-        internalWidget.TypeIcon:setTooltip(tooltip)
+        internalWidget.TypeIcon:setTooltip(getBossCategoryTooltip(internalData.category))
     end
 
     widget.SelectBoss.SelectButton:setEnabled(false)
@@ -247,16 +241,7 @@ function Cyclopedia.setActiveSlot(widget, slot, slotData, data, bossId)
     Cyclopedia.setBosstiarySlotsBossProgress(widget.ActivedBoss.Progress, slotData.killBonus,
         CONFIG[slotData.bossRace].MASTERY)
 
-    local tooltip = slotData.bossRace == CATEGORY.ARCHFOE and
-                        tr("otclient_modules.boss_slots.tr_4") or
-                        tr("otclient_modules.boss_slots.tr_3")
-
-    if slotData.bossRace ~= CATEGORY.ARCHFOE then
-        tooltip =
-            tr("otclient_modules.boss_slots.tr_2")
-    end
-
-    widget.ActivedBoss.TypeIcon:setTooltip(tooltip)
+    widget.ActivedBoss.TypeIcon:setTooltip(getBossCategoryTooltip(slotData.bossRace))
     widget.ActivedBoss.Progress.ProgressBorder1:setTooltip()
 
     local fullText = slotData.killBonus >= CONFIG[slotData.bossRace].MASTERY and tr("otclient_modules.boss_slots.tr_1") or ""
@@ -281,7 +266,7 @@ function Cyclopedia.setActiveSlot(widget, slot, slotData, data, bossId)
 
     widget.ActivedBoss.Sprite:setOutfit(raceData.outfit)
     widget.ActivedBoss.Sprite:getCreature():setStaticWalking(1000)
-    widget.ActivedBoss.EquipmentLabel:setText(string.format("Equipment loot bonus: %d%%", slotData.lootBonus))
+    widget.ActivedBoss.EquipmentLabel:setText(string.format(tr("otclient_modules.boss_slots.tr_13"), slotData.lootBonus))
     widget.ActivedBoss.Value:setText(comma_value(slotData.removePrice))
 
     if g_game.getLocalPlayer():getResourceBalance(1) ~= nil then
@@ -299,8 +284,7 @@ function Cyclopedia.setActiveSlot(widget, slot, slotData, data, bossId)
     end
 
     widget.ActivedBoss.RemoveButton:setTooltip(string.format(
-        "It will cost you %s gold to remove the currently selected boss from this slot.",
-        comma_value(slotData.removePrice)))
+        tr("otclient_modules.boss_slots.tr_14"), comma_value(slotData.removePrice)))
 end
 
 function Cyclopedia.setBosstiarySlotsProgress(value, maxValue)
@@ -386,14 +370,7 @@ function Cyclopedia.readjustSelectBoss()
             internalWidget.Sprite:getCreature():setStaticWalking(1000)
             internalWidget.TypeIcon:setImageSource(icons[internalData.category])
 
-            local tooltip =
-                "Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30"
-
-            tooltip = internalData.category == CATEGORY.ARCHFOE and
-                          "Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60" or
-                          "Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60"
-
-            internalWidget.TypeIcon:setTooltip(tooltip)
+            internalWidget.TypeIcon:setTooltip(getBossCategoryTooltip(internalData.category))
         end
     end
 

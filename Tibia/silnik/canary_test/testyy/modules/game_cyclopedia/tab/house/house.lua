@@ -344,7 +344,7 @@ function Cyclopedia.rejectTransfer()
         end
     end
 
-    UI.rejectTransferHouse.name:setText(house.name .. "asdasd")
+    UI.rejectTransferHouse.name:setText(house.name)
     UI.rejectTransferHouse.size:setText(house.sqm .. " sqm")
     UI.rejectTransferHouse.beds:setText(house.beds)
     UI.rejectTransferHouse.rent:setText((house.rent))
@@ -410,7 +410,7 @@ function Cyclopedia.acceptTransfer()
         end
     end
 
-    UI.acceptTransferHouse.name:setText(house.name .. "22222")
+    UI.acceptTransferHouse.name:setText(house.name)
     UI.acceptTransferHouse.size:setText(house.sqm .. " sqm")
     UI.acceptTransferHouse.beds:setText(house.beds)
     UI.acceptTransferHouse.rent:setText((house.rent))
@@ -484,7 +484,7 @@ function Cyclopedia.cancelTransfer()
         end
     end
 
-    UI.cancelHouseTransferArea.name:setText(house.name .. "888")
+    UI.cancelHouseTransferArea.name:setText(house.name)
     UI.cancelHouseTransferArea.size:setText(house.sqm .. " sqm")
     UI.cancelHouseTransferArea.beds:setText(house.beds)
     UI.cancelHouseTransferArea.rent:setText((house.rent))
@@ -593,7 +593,7 @@ function Cyclopedia.transferHouse()
         end
     end
 
-    UI.transferArea.name:setText(house.name .. "44444")
+    UI.transferArea.name:setText(house.name)
     UI.transferArea.size:setText(house.sqm .. " sqm")
     UI.transferArea.beds:setText(house.beds)
     UI.transferArea.rent:setText((house.rent))
@@ -722,7 +722,7 @@ function Cyclopedia.moveOutHouse()
         end
     end
 
-    UI.moveOutArea.name:setText(house.name .. "9999")
+    UI.moveOutArea.name:setText(house.name)
     UI.moveOutArea.size:setText(house.sqm .. " sqm")
     UI.moveOutArea.beds:setText(house.beds)
     UI.moveOutArea.rent:setText((house.rent))
@@ -771,22 +771,22 @@ function Cyclopedia.bidHouse(widget)
 
     UI.ListBase:setVisible(false)
     UI.bidArea:setVisible(true)
-    UI.bidArea.name:setText(house.name .. "99889")
+    UI.bidArea.name:setText(house.name)
     UI.bidArea.size:setText(house.sqm .. " sqm")
     UI.bidArea.beds:setText(house.beds)
     UI.bidArea.rent:setText((house.rent))
 
     local labels = {{
         id = "hightestBidder",
-        name = "Highest Bidder: ",
+        name = tr("otclient_modules.house.tr_16") .. " ",
         value = house.bidName
     }, {
         id = "endTime",
-        name = "End Time: ",
+        name = tr("otclient_modules.house.tr_15") .. " ",
         value = time
     }, {
         id = "highestBid",
-        name = "Highest Bid: ",
+        name = tr("otclient_modules.house.tr_14") .. " ",
         value = house.hightestBid
     }}
 
@@ -812,7 +812,7 @@ function Cyclopedia.bidHouse(widget)
         for index, data in ipairs(labels) do
             local label = g_ui.createWidget("Label", UI.bidArea)
             label:setId(data.id)
-            label:setText(data.name .. "44242")
+            label:setText(data.name)
             label:setColor("#909090")
             label:setWidth(90)
             label:setHeight(15)

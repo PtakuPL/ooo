@@ -7,6 +7,78 @@ local installedLocales
 local currentLocale
 local localesWindow
 
+local localeDisplayNameOverrides = {
+  es = "Español",
+  pt = "Português",
+  zh = "Chinese",
+  zh_tw = "Chinese (Traditional)",
+  ja = "Japanese",
+  ko = "Korean",
+}
+
+-- Placeholder-generated PNGs are often tiny and render as monocolor squares.
+-- Keep only assets with a minimal payload size to avoid broken-looking flags.
+local MIN_FLAG_PNG_BYTES = 2500
+
+local function normalizeLocaleCode(code)
+  if not code then
+    return ''
+  end
+  return tostring(code):lower():gsub('-', '_')
+end
+
+local function getLocaleDisplayName(localeCode, localeData)
+  local normalizedCode = normalizeLocaleCode(localeCode)
+  local overrideName = localeDisplayNameOverrides[normalizedCode]
+  if overrideName then
+    return overrideName
+  end
+
+  local languageName = localeData and localeData.languageName or normalizedCode
+  if type(languageName) ~= 'string' then
+    return normalizedCode
+  end
+
+  if languageName:find('�', 1, true) then
+    local cleaned = languageName:gsub('�', '')
+    if cleaned ~= '' then
+      return cleaned
+    end
+  end
+
+  return languageName
+end
+
+local function resolveFlagSource(localeCode)
+  local function isUsableFlag(src)
+    local path = src
+    if g_resources.fileExists(src .. '.png') then
+      path = src .. '.png'
+    elseif not g_resources.fileExists(src) then
+      return false
+    end
+
+    local data = g_resources.readFileContents(path)
+    return type(data) == 'string' and #data >= MIN_FLAG_PNG_BYTES
+  end
+
+  local normalizedCode = normalizeLocaleCode(localeCode)
+  local shortCode = normalizedCode:match('^([a-z][a-z])[_]?[a-z]*$')
+  local candidates = { normalizedCode, shortCode }
+
+  for _, candidate in ipairs(candidates) do
+    if candidate and candidate ~= '' then
+      local src = '/images/flags/' .. candidate
+      if isUsableFlag(src) then
+        return src
+      end
+    end
+  end
+
+  -- Fallback avoids broken/blank icons when a locale flag asset is missing.
+  return '/images/flags/en'
+end
+
 -- send current locale to server (extended opcode)
 local function sendLocale(localeName)
   local protocolGame = g_game.getProtocolGame()
@@ -25,14 +97,19 @@ local function createWindow()
   -- Sort locales alphabetically by language name for clean display
   local sortedLocales = {}
   for name, locale in pairs(installedLocales) do
-    sortedLocales[#sortedLocales + 1] = { code = name, locale = locale }
+    sortedLocales[#sortedLocales + 1] = {
+      code = name,
+      locale = locale,
+      displayName = getLocaleDisplayName(name, locale),
+    }
   end
-  table.sort(sortedLocales, function(a, b) return a.locale.languageName < b.locale.languageName end)
+  table.sort(sortedLocales, function(a, b) return a.displayName < b.displayName end)
 
   for _, entry in ipairs(sortedLocales) do
     local widget = g_ui.createWidget('LocalesButton', localesPanel)
-    widget:setImageSource('/images/flags/' .. entry.code)
-    widget:setText(entry.locale.languageName)
+    widget:setImageSource(resolveFlagSource(entry.code))
+    widget:setText(entry.displayName)
+    widget:setTooltip((entry.displayName or entry.code) .. ' [' .. entry.code .. ']')
     widget.onClick = function()
       selectFirstLocale(entry.code)
     end

@@ -119,7 +119,11 @@ local function setupComboBox()
     local vocationPresetsCombobox = panels.keybindsPanel:recursiveGetChildById('list')
     local listKeybindsPanel = panels.keybindsPanel:recursiveGetChildById('list')
 
-    for k, v in pairs({ { 'Disabled', 'disabled' }, { 'Default', 'default' }, { 'Full', 'full' } }) do
+    for k, v in pairs({
+        { tr("otclient_modules.options.crosshair_disabled"), 'disabled' },
+        { tr("otclient_modules.options.crosshair_default"), 'default' },
+        { tr("otclient_modules.options.crosshair_full"), 'full' }
+    }) do
         crosshairCombo:addOption(v[1], v[2])
     end
 
@@ -128,7 +132,11 @@ local function setupComboBox()
     end
 
 
-    for k, t in pairs({ 'None', 'Antialiasing', 'Smooth Retro' }) do
+    for k, t in pairs({
+        tr("otclient_modules.options.antialias_none"),
+        tr("otclient_modules.options.antialias_antialiasing"),
+        tr("otclient_modules.options.antialias_smooth_retro")
+    }) do
         antialiasingModeCombobox:addOption(t, k - 1)
     end
 
@@ -137,7 +145,13 @@ local function setupComboBox()
     end
 
 
-    for k, t in pairs({ 'Normal', 'Fade', 'Locked', 'Always', 'Always with transparency' }) do
+    for k, t in pairs({
+        tr("otclient_modules.options.floor_mode_normal"),
+        tr("otclient_modules.options.floor_mode_fade"),
+        tr("otclient_modules.options.floor_mode_locked"),
+        tr("otclient_modules.options.floor_mode_always"),
+        tr("otclient_modules.options.floor_mode_always_transparency")
+    }) do
         floorViewModeCombobox:addOption(t, k - 1)
     end
 
@@ -145,7 +159,11 @@ local function setupComboBox()
         setOption('floorViewMode', comboBox:getCurrentOption().data)
     end
 
-    for k, v in pairs({ { 'None', 'none' }, { 'Frames', 'frames' }, { 'Corners', 'corners' } }) do
+    for k, v in pairs({
+        { tr("otclient_modules.options.frames_none"), 'none' },
+        { tr("otclient_modules.options.frames_frames"), 'frames' },
+        { tr("otclient_modules.options.frames_corners"), 'corners' }
+    }) do
         framesRarityCombobox:addOption(v[1], v[2])
     end
 

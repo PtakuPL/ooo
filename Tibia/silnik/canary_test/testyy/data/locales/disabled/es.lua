@@ -5,7 +5,7 @@
 locale = {
   name = "es",
   charset = "cp1252",
-  languageName = "Espa�ol",
+  languageName = "Español",
 
   formatNumbers = true,
   decimalSeperator = ',',

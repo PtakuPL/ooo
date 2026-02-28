@@ -347,11 +347,17 @@ MainWindow
     id: autoReconnect
     anchors.left: parent.left
     anchors.bottom: parent.bottom
+    height: 24
+    text-align: center
+    text-auto-resize: true
+    padding: 0 6 0 6
     @onSetup: |
       if g_game.getFeature(GameEnterGameShowAppearance) then
-        self:setWidth(140)
+        self:setWidth(290)
+        self:setHeight(24)
       else
-        self:setWidth(75)
+        self:setWidth(195)
+        self:setHeight(30)
         self:setFont('small-9px')
       end
     $!on:

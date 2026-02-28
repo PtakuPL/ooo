@@ -1,7 +1,7 @@
 locale = {
   name = "pt",
   charset = "cp1252",
-  languageName = "Portugu�s",
+  languageName = "Português",
 
   formatNumbers = true,
   decimalSeperator = ',',

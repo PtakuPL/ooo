@@ -1,8 +1,10 @@
 ConsoleLabel < UITextEdit
   font: noto-12
-  height: 14
+  height: 18
   color: yellow
   margin-left: 2
+  padding-top: 0
+  padding-bottom: 0
   text-wrap: true
   text-auto-resize: true
   selection-color: #f4f4f4ff
@@ -16,8 +18,10 @@ ConsoleLabel < UITextEdit
 
 ConsolePhantomLabel < UILabel
   font: noto-12
-  height: 14
+  height: 18
   color: yellow
+  padding-top: 0
+  padding-bottom: 0
   text-wrap: true
   text-auto-resize: true
   selection-color: #111416
@@ -338,9 +342,11 @@ Panel
     margin-right: 5
     margin-left: 5
     margin-bottom: 3
+    padding: 1 4
+    text-offset: 0 0
     shift-navigation: true
     max-length: 255
-    height: 18
+    height: 24
     @onTextChange: onTextChange(self:getText())
 
   TopToggleButton
@@ -348,9 +354,10 @@ Panel
     anchors.right: parent.right
     anchors.bottom: parent.bottom
     margin-bottom: 3
-    height: 18
+    width: 176
+    height: 20
     text-auto-resize: true
-    padding: 0 5 0 5
+    padding: 0 10 0 10
     color: #c0c0c0ff
     font: noto-12
     !text: tr("otclient_modules.console_otui.tr_12")

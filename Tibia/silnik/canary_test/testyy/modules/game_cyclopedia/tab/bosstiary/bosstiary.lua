@@ -5,14 +5,11 @@ function showBosstiary()
     UI = g_ui.loadUI("bosstiary", contentContainer)
     UI:show()
     g_game.requestBosstiaryInfo()
-    UI.FilterBase.BaneIcon:setTooltip(
-        "Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30")
+    UI.FilterBase.BaneIcon:setTooltip(tr("otclient_modules.boss_slots.tr_2"))
     -- UI.FilterBase.BaneIcon:setTooltipAlign(AlignTopLeft)
-    UI.FilterBase.ArchfoeIcon:setTooltip(
-        tr("otclient_modules.bosstiary.tr_13") .. "\n\n" .. tr("otclient_modules.bosstiary.tr_12") .. "\n" .. tr("otclient_modules.bosstiary.tr_11") .. ": 10\n" .. tr("otclient_modules.bosstiary.tr_10") .. ": 30\n" .. tr("otclient_modules.bosstiary.tr_9") .. ": 60")
+    UI.FilterBase.ArchfoeIcon:setTooltip(tr("otclient_modules.boss_slots.tr_4"))
     -- UI.FilterBase.ArchfoeIcon:setTooltipAlign(AlignTopLeft)
-    UI.FilterBase.NemesisIcon:setTooltip(
-        tr("otclient_modules.bosstiary.tr_8") .. "\n\n" .. tr("otclient_modules.bosstiary.tr_7") .. "\n" .. tr("otclient_modules.bosstiary.tr_6") .. ": 10\n" .. tr("otclient_modules.bosstiary.tr_5") .. ": 30\n" .. tr("otclient_modules.bosstiary.tr_4") .. ": 60")
+    UI.FilterBase.NemesisIcon:setTooltip(tr("otclient_modules.boss_slots.tr_3"))
     -- UI.FilterBase.NemesisIcon:setTooltipAlign(AlignTopLeft)
     UI.StarBase.Info1:setTooltip(tr("otclient_modules.bosstiary.tr_3"))
     -- UI.StarBase.Info1:setTooltipAlign(AlignTopLeft)
@@ -54,6 +51,16 @@ local CONFIG = {
         MASTERY = 5
     }
 }
+
+local function getBossCategoryTooltip(category)
+    if category == CATEGORY.ARCHFOE then
+        return tr("otclient_modules.boss_slots.tr_4")
+    end
+    if category == CATEGORY.NEMESIS then
+        return tr("otclient_modules.boss_slots.tr_3")
+    end
+    return tr("otclient_modules.boss_slots.tr_2")
+end
 
 --[[ function Cyclopedia.SetBosstiaryProgress(object, value, maxValue)
     local rect = {
@@ -100,7 +107,7 @@ function Cyclopedia.CreateBosstiaryCreature(data)
     local fullText = ""
 
     if data.kills >= CONFIG[data.category].MASTERY then
-        fullText = "(fully unlocked)"
+        fullText = tr("otclient_modules.boss_slots.tr_1")
     end
 
     widget.ProgressBorder1:setTooltip(string.format(" %d / %d %s", data.kills, CONFIG[data.category].PROWESS, fullText))
@@ -128,19 +135,7 @@ function Cyclopedia.CreateBosstiaryCreature(data)
 
     widget.TypeIcon:setImageSource(icons[data.category])
 
-    if data.category == CATEGORY.BANE then
-        widget.TypeIcon:setTooltip(
-            "Bane\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 5\nExpertise: 15\nMastery: 30")
-        -- widget.TypeIcon:setTooltipAlign(AlignTopLeft)
-    elseif data.category == CATEGORY.ARCHFOE then
-        widget.TypeIcon:setTooltip(
-            "Archfoe\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60")
-        -- widget.TypeIcon:setTooltipAlign(AlignTopLeft)
-    elseif data.category == CATEGORY.NEMESIS then
-        widget.TypeIcon:setTooltip(
-            "Nemesis\n\nFor unlocking a level, you will receive the following boss points:\nProwess: 10\nExpertise: 30\nMastery: 60")
-        -- widget.TypeIcon:setTooltipAlign(AlignTopLeft)
-    end
+    widget.TypeIcon:setTooltip(getBossCategoryTooltip(data.category))
     widget.ProgressValue:setText(data.kills)
 
     Cyclopedia.SetBestiaryProgress(46,widget.ProgressBack, widget.ProgressBack33, widget.ProgressBack55,  data.kills, CONFIG[data.category].PROWESS, CONFIG[data.category].EXPERTISE, CONFIG[data.category].MASTERY)

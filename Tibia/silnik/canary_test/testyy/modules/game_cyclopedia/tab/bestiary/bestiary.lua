@@ -163,7 +163,7 @@ function Cyclopedia.loadBestiarySelectedCreature(data)
 
     local fullText = ""
     if data.killCounter >= data.lastProgressKillCount then
-        fullText = "(fully unlocked)"
+        fullText = tr("otclient_modules.bestiary.tr_14")
     end
 
     UI.ListBase.CreatureInfo.ProgressBorder1:setTooltip(string.format(" %d / %d %s", data.killCounter,
@@ -234,8 +234,8 @@ function Cyclopedia.loadBestiarySelectedCreature(data)
             local combat = Cyclopedia.calculateCombatValues(data.combat[i])
             UI.ListBase.CreatureInfo[resists[i]].Fill:setMarginRight(combat.margin)
             UI.ListBase.CreatureInfo[resists[i]].Fill:setBackgroundColor(combat.color)
-            UI.ListBase.CreatureInfo[resists[i]]:setTooltip(string.format("Sensitive to %s : %s", string.gsub(
-                resists[i], "Progress", ""):lower(), combat.tooltip))
+            UI.ListBase.CreatureInfo[resists[i]]:setTooltip(string.format(tr("otclient_modules.bestiary.tr_15"),
+                string.gsub(resists[i], "Progress", ""):lower(), combat.tooltip))
         end
     else
         for i = 1, 8 do

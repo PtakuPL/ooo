@@ -22,7 +22,7 @@ UIWidget
       &scrollSize: 21
       @onSetup: |
         local value = modules.client_options.getOption('ambientLight')
-        self:setText(string.format('Ambient light: %s%%', value))
+        self:setText(tr("otclient_modules.data_options.tr_8", value))
 
     OptionScaleScroll
       id: shadowFloorIntensity
@@ -32,7 +32,7 @@ UIWidget
       &scrollSize: 21
       @onSetup: |
         local value = modules.client_options.getOption('shadowFloorIntensity')
-        self:setText(string.format('Floor Shadowing Intensity: %s%%', value))
+        self:setText(tr("otclient_modules.data_options.tr_9", value))
 
     OptionScaleScroll
       id: floorFading
@@ -42,7 +42,7 @@ UIWidget
       &scrollSize: 21
       @onSetup: |
         local value = modules.client_options.getOption('floorFading')
-        self:setText(tr("otclient_modules.effects_otui.tr_7", value))
+        self:setText(tr("otclient_modules.data_options.tr_10", value))
 
   SmallReversedQtPanel
     anchors.left: parent.left

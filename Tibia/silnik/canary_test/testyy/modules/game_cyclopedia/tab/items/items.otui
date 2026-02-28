@@ -57,7 +57,7 @@ UIWidget
     anchors.left: LevelButton.right
     anchors.top: LevelButton.top
     margin-left: 5
-    !text: tr("Voc.")
+    !text: tr("otclient_modules.items_otui.vocation_short")
     //font: noto-12
     text-offset: 13 6
     color: #C0C0C0
@@ -432,9 +432,9 @@ UIWidget
       text-auto-resize: true
       @onSetup: |
         if modules.game_quickloot.QuickLoot.data.filter == 2 then
-          self:setText("Loot when Quick Looting")
+          self:setText(tr("otclient_modules.items_otui.quickloot_loot_when"))
         else
-          self:setText('Skip when Quick Looting')
+          self:setText(tr("otclient_modules.items_otui.quickloot_skip_when"))
         end
 
   Button

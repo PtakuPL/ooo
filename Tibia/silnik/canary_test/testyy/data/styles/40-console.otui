@@ -1,8 +1,10 @@
 ConsoleLabel < UITextEdit
   font: mono-12
-  height: 14
+  height: 18
   color: yellow
   margin-left: 2
+  padding-top: 0
+  padding-bottom: 0
   text-wrap: true
   text-auto-resize: true
   selection-color: #111416
@@ -16,8 +18,10 @@ ConsoleLabel < UITextEdit
 
 ConsolePhantomLabel < UILabel
   font: mono-12
-  height: 14
+  height: 18
   color: yellow
+  padding-top: 0
+  padding-bottom: 0
   text-wrap: true
   text-auto-resize: true
   selection-color: #111416
@@ -181,6 +185,9 @@ ConsolePanel < Panel
     margin-right: 6
     margin-left: 6
     margin-bottom: 6
+    padding: 1 4
+    text-offset: 0 0
     shift-navigation: true
     max-length: 255
+    height: 24
     text-auto-submit: true

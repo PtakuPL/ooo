@@ -4047,10 +4047,10 @@ local gameTranslations = {
   ["otclient_modules.characterlist.tr_17"] = "[EN] Connecting to game server...",
   ["otclient_modules.characterlist.tr_18"] = "[EN] Please wait",
   ["otclient_modules.characterlist.tr_2"] = "[EN] Error",
-  ["otclient_modules.characterlist.tr_3"] = "[EN] Auto reconnect:",
-  ["otclient_modules.characterlist.tr_4"] = "[EN] Auto reconnect:",
-  ["otclient_modules.characterlist.tr_5"] = "[EN] Off",
-  ["otclient_modules.characterlist.tr_6"] = "[EN] On",
+  ["otclient_modules.characterlist.tr_3"] = "Auto reconnect:",
+  ["otclient_modules.characterlist.tr_4"] = "Auto reconnect:",
+  ["otclient_modules.characterlist.tr_5"] = "Off",
+  ["otclient_modules.characterlist.tr_6"] = "On",
   ["otclient_modules.characterlist.tr_7"] = "[EN] Premium Account (%s) days left",
   ["otclient_modules.characterlist.tr_8"] = "[EN] Gratis Premium Account",
   ["otclient_modules.characterlist.tr_9"] = "[EN] Free Account",
@@ -5840,4 +5840,3 @@ if locale and locale.translation then
 else
   _G.gameTranslations_zh_TW = gameTranslations
 end
-

@@ -88,7 +88,6 @@ local config = {
 	},
 	[4] = {
 		i18nKey = "npc.bozo.stdmod_84",
-		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission3, value = 1 },
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Questline, value = 5 },
@@ -96,7 +95,6 @@ local config = {
 	},
 	[5] = {
 		i18nKey = "npc.bozo.stdmod_85",
-		},
 		yes = true,
 		removeItem = { itemId = 119 },
 		pie = true,
@@ -107,7 +105,6 @@ local config = {
 	},
 	[6] = {
 		i18nKey = "npc.bozo.stdmod_86",
-		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission4, value = 1 },
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Questline, value = 7 },
@@ -115,7 +112,6 @@ local config = {
 	},
 	[7] = {
 		i18nKey = "npc.bozo.stdmod_87",
-		},
 		yes = true,
 		removeItem = { itemId = 2874, count = 18, subType = 2 },
 		updateStorages = {
@@ -135,7 +131,6 @@ local config = {
 	},
 	[9] = {
 		i18nKey = "npc.bozo.stdmod_89",
-		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission5, value = 1 },
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.TriangleTowerDoor, value = 1 },
@@ -144,7 +139,6 @@ local config = {
 	},
 	[10] = {
 		i18nKey = "npc.bozo.stdmod_90",
-		},
 		yes = true,
 		checkItemCount = 112,
 		updateStorages = {
@@ -154,7 +148,6 @@ local config = {
 	},
 	[11] = {
 		i18nKey = "npc.bozo.stdmod_91",
-		},
 		yes = true,
 		checkStorage = Storage.Quest.U8_1.WhatAFoolishQuest.EmperorBeardShave,
 		removeItem = { itemId = 113 },
@@ -194,7 +187,6 @@ local config = {
 	},
 	[16] = {
 		i18nKey = "npc.bozo.stdmod_96",
-		},
 		addItem = { itemId = 121 },
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission6, value = 4 },
@@ -212,7 +204,6 @@ local config = {
 	},
 	[18] = {
 		i18nKey = "npc.bozo.stdmod_98",
-		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission7, value = 1 },
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.QueenEloiseCatDoor, value = 1 },
@@ -230,7 +221,6 @@ local config = {
 	},
 	[20] = {
 		i18nKey = "npc.bozo.stdmod_100",
-		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission8, value = 1 },
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Questline, value = 21 },
@@ -256,7 +246,6 @@ local config = {
 	},
 	[23] = {
 		i18nKey = "npc.bozo.stdmod_103",
-		},
 		addItem = { itemId = 141 },
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission8, value = 4 },
@@ -276,7 +265,6 @@ local config = {
 	},
 	[25] = {
 		i18nKey = "npc.bozo.stdmod_105",
-		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission9, value = 1 },
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Questline, value = 26 },
@@ -285,7 +273,6 @@ local config = {
 	},
 	[26] = {
 		i18nKey = "npc.bozo.stdmod_106",
-		},
 		yes = true,
 		removeItem = { itemId = 125 },
 		updateStorages = {
@@ -305,7 +292,6 @@ local config = {
 	},
 	[28] = {
 		i18nKey = "npc.bozo.stdmod_108",
-		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission9, value = 4 },
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Questline, value = 29 },
@@ -323,6 +309,7 @@ local config = {
 	},
 	[30] = {
 		i18nKey = "npc.bozo.stdmod_110",
+		text = {
 			[3] = {
 				"npc.bozo.mission_30_t3_1",
 				"npc.bozo.mission_30_t3_2",
@@ -349,7 +336,6 @@ local config = {
 	},
 	[32] = {
 		i18nKey = "npc.bozo.stdmod_112",
-		},
 		updateStorages = {
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Mission11, value = 1 },
 			{ key = Storage.Quest.U8_1.WhatAFoolishQuest.Questline, value = 33 },
@@ -357,7 +343,6 @@ local config = {
 	},
 	[33] = {
 		i18nKey = "npc.bozo.stdmod_113",
-		},
 		yes = true,
 		removeItem = { itemId = 5909, count = 5 },
 		updateStorages = {
@@ -368,7 +353,6 @@ local config = {
 	},
 	[34] = {
 		i18nKey = "npc.bozo.stdmod_114",
-		},
 		yes = true,
 		removeItem = { itemId = 143 },
 		updateStorages = {
@@ -393,6 +377,14 @@ local config = {
 		i18nKey = "npc.bozo.stdmod_116",
 	},
 }
+
+for _, entry in pairs(config) do
+	if entry.i18nKey then
+		entry.text = entry.text or {}
+		entry.text[1] = entry.text[1] or entry.i18nKey
+		entry.text[2] = entry.text[2] or entry.text[1]
+	end
+end
 
 local jesterOutfit = {
 	[-1] = {
@@ -421,6 +413,14 @@ local jesterOutfit = {
 		last = true,
 	},
 }
+
+for _, entry in pairs(jesterOutfit) do
+	if entry.i18nKey then
+		entry.text = entry.text or {}
+		entry.text[1] = entry.text[1] or entry.i18nKey
+		entry.text[2] = entry.text[2] or entry.text[1]
+	end
+end
 
 local value = {}
 

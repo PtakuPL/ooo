@@ -4,6 +4,47 @@ local function sortSpellsByLevel(spellList, levelKey)
 	end)
 end
 
+local function normalizeSpellNameForKey(spellName)
+	if type(spellName) ~= "string" then
+		return ""
+	end
+
+	local normalized = spellName:lower()
+	normalized = normalized:gsub("%s+", "_")
+	normalized = normalized:gsub("-", "_")
+	normalized = normalized:gsub("[^%w_#']", "_")
+	normalized = normalized:gsub("_+", "_")
+	normalized = normalized:gsub("^_+", "")
+	normalized = normalized:gsub("_+$", "")
+	return normalized
+end
+
+local function getTranslatedSpellName(player, spellName)
+	local base = normalizeSpellNameForKey(spellName)
+	if base == "" then
+		return spellName
+	end
+
+	local candidates = {
+		base,
+		base:gsub("'", ""),
+		base:gsub("_rune$", "") .. "_rune",
+	}
+
+	for _, candidate in ipairs(candidates) do
+		local key = "spell." .. candidate .. ".name"
+		local translated = Translator.getTranslation(player, key)
+		if type(translated) == "string" and translated ~= "" and translated ~= key then
+			translated = translated:gsub("^%[[^%]]+%]%s*", "")
+			if translated ~= "" then
+				return translated
+			end
+		end
+	end
+
+	return spellName
+end
+
 local function appendSpellsInfo(spellList, headerKey, levelKey, manaKey, player)
 	local header = Translator.getTranslation(player, headerKey)
 	local text = ""
@@ -16,7 +57,9 @@ local function appendSpellsInfo(spellList, headerKey, levelKey, manaKey, player)
 			prevLevel = spell[levelKey]
 		end
 
-		text = text .. line .. "  " .. spell.words .. " - " .. spell.name .. " : " .. spell[manaKey] .. "\n"
+		-- Keep the spell command unchanged; only localize display name.
+		local localizedSpellName = getTranslatedSpellName(player, spell.name)
+		text = text .. line .. "  " .. spell.words .. " - " .. localizedSpellName .. " : " .. spell[manaKey] .. "\n"
 	end
 	return text
 end

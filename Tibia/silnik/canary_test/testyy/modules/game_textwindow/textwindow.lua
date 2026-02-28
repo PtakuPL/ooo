@@ -49,6 +49,7 @@ function onGameEditText(id, itemId, maxLength, text, writer, time)
     textEdit:setText(text)
     textEdit:setEditable(writeable)
     textEdit:setCursorVisible(writeable)
+    textEdit:focus()
 
     local desc = tr("otclient_modules.textwindow.tr_10")
     if #writer > 0 then
@@ -80,9 +81,9 @@ function onGameEditText(id, itemId, maxLength, text, writer, time)
         cancelButton:hide()
         cancelButton:setWidth(0)
         okButton:setMarginRight(0)
+        textEdit:setCursorPos(0)
     else
         textWindow:setText(tr("otclient_modules.textwindow.tr_3"))
-        textEdit:focus()
         textEdit:setCursorPos(#text)
     end
 

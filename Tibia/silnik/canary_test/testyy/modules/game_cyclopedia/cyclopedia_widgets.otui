@@ -437,11 +437,14 @@ SlotBossSlots < UIWidget
         image-source: /images/ui/button-clear-18x18-down
     Button
       id: SelectButton
-      size: 43 20
+      width: 92
+      height: 20
       anchors.bottom: parent.bottom
       anchors.right: parent.right
       !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_25")
       //font: noto-12
+      text-auto-resize: true
+      padding: 0 8 0 8
       text-offset: 0 -1
       color: #C0C0C0
       enabled: false
@@ -484,7 +487,7 @@ SlotBossSlots < UIWidget
       anchors.horizontalCenter: Progress.horizontalCenter
       anchors.top: Progress.bottom
       text-auto-resize: true
-      !text: ('Equipment loot bonus: 118%')
+      !text: tr("otclient_modules.boss_slots.tr_13", 0)
       text-align: center
       margin-top: 18
     ProgressBackground
@@ -514,6 +517,8 @@ SlotBossSlots < UIWidget
       margin-bottom: 25
       !text: tr("otclient_modules.cyclopedia_widgets_otui.tr_23")
       //font: noto-12
+      text-auto-resize: true
+      padding: 0 8 0 8
       text-offset: 0 -1
       color: #C0C0C0
 BossSlotProgress < UIWidget

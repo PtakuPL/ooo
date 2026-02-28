@@ -30,6 +30,8 @@ TextWindow < MainWindow
     margin-bottom: 10
     vertical-scrollbar: textScroll
     text-wrap: true
+    selectable: true
+    focusable: true
 
   VerticalScrollBar
     id: textScroll

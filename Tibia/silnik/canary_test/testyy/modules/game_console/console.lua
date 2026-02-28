@@ -145,6 +145,8 @@ local gameBottomPanel = nil
 consoleTabBar = nil
 consoleTextEdit = nil
 consoleToggleChat = nil
+local fitLabelWidthToBuffer
+local fitAllBufferLabels
 channels = nil
 channelsWindow = nil
 communicationWindow = nil
@@ -298,6 +300,12 @@ function init()
     consoleToggleChat = consolePanel:getChildById('toggleChat')
     readOnlyButton = consolePanel:getChildById("readOnlyButton")
     readOnlyPanel = consolePanel:getChildById("readOnlyPanel")
+    local readOnlyBuffer = readOnlyPanel:getChildById('panel')
+    if readOnlyBuffer then
+        readOnlyBuffer.onGeometryChange = function(self)
+            fitAllBufferLabels(self)
+        end
+    end
     function readOnlyButton.onMousePress(tab, mousePos, mouseButton)
 		if mouseButton == MouseRightButton then
 			onReadOnlyMouseClick()
@@ -690,6 +698,17 @@ function addTab(name, focus)
         end
     end
 
+    local tabPanel = consoleTabBar:getTabPanel(tab)
+    if tabPanel then
+        local consoleBuffer = tabPanel:getChildById('consoleBuffer')
+        if consoleBuffer and not consoleBuffer._fitLabelsHooked then
+            consoleBuffer.onGeometryChange = function(self)
+                fitAllBufferLabels(self)
+            end
+            consoleBuffer._fitLabelsHooked = true
+        end
+    end
+
     return tab
 end
 
@@ -1051,6 +1070,71 @@ local function changeNewNessageColor(tab)
     end, 1000)
 end
 
+local function forceWrapLongUnbrokenTokens(text, maxTokenLength)
+    local limit = maxTokenLength or 30
+    if type(text) ~= 'string' or limit < 2 then
+        return text
+    end
+
+    local function wrapUtf8Token(token)
+        local utf8Pattern = (utf8 and utf8.charpattern) or "[%z\1-\127\194-\244][\128-\191]*"
+        local chars = {}
+        for char in token:gmatch(utf8Pattern) do
+            chars[#chars + 1] = char
+        end
+
+        if #chars <= limit then
+            return token
+        end
+
+        local chunks = {}
+        for i = 1, #chars, limit do
+            chunks[#chunks + 1] = table.concat(chars, '', i, math.min(i + limit - 1, #chars))
+        end
+
+        return table.concat(chunks, "\n")
+    end
+
+    return text:gsub("(%S+)", function(token)
+        if token:find("[%z\128-\255]") then
+            return wrapUtf8Token(token)
+        end
+
+        if #token <= limit then
+            return token
+        end
+
+        local chunks = {}
+        for i = 1, #token, limit do
+            chunks[#chunks + 1] = token:sub(i, i + limit - 1)
+        end
+        return table.concat(chunks, "\n")
+    end)
+end
+
+fitLabelWidthToBuffer = function(label, consoleBuffer)
+    if not label or not consoleBuffer then
+        return
+    end
+
+    local availableWidth = consoleBuffer:getWidth() - 20
+    if availableWidth < 40 then
+        availableWidth = 40
+    end
+
+    label:setWidth(availableWidth)
+end
+
+fitAllBufferLabels = function(consoleBuffer)
+    if not consoleBuffer then
+        return
+    end
+
+    for _, child in pairs(consoleBuffer:getChildren()) do
+        fitLabelWidthToBuffer(child, consoleBuffer)
+    end
+end
+
 function addTabText(text, speaktype, tab, creatureName)
     if not tab or tab.locked or not text or #text == 0 then
         return
@@ -1059,6 +1143,8 @@ function addTabText(text, speaktype, tab, creatureName)
     if modules.client_options.getOption('showTimestampsInConsole') then
         text = os.date('%H:%M') .. ' ' .. text
     end
+    local rawTextForMenu = text
+    local displayText = forceWrapLongUnbrokenTokens(text, 20)
 
     local panel = consoleTabBar:getTabPanel(tab)
     local consoleBuffer = panel:getChildById('consoleBuffer')
@@ -1066,10 +1152,11 @@ function addTabText(text, speaktype, tab, creatureName)
     label:setId('consoleLabel' .. consoleBuffer:getChildCount())
 
     if speaktype.colored then
-        label:setColoredText(text)
+        label:setColoredText(displayText)
     else
-        label:setText(text)
+        label:setText(displayText)
     end
+    fitLabelWidthToBuffer(label, consoleBuffer)
     
     label:setColor(speaktype.color)
     if readOnlyModeEnabled and activeactiveReadOnlyTabName == tab:getText() then
@@ -1077,10 +1164,11 @@ function addTabText(text, speaktype, tab, creatureName)
         local readOnlyLabel = g_ui.createWidget('ConsoleLabel', readOnlyBuffer)
         readOnlyLabel:setId('consoleLabel' .. readOnlyBuffer:getChildCount())
         if speaktype.colored then
-            readOnlyLabel:setColoredText(text)
+            readOnlyLabel:setColoredText(displayText)
         else
-            readOnlyLabel:setText(text)
+            readOnlyLabel:setText(displayText)
         end
+        fitLabelWidthToBuffer(readOnlyLabel, readOnlyBuffer)
         readOnlyLabel:setColor(speaktype.color)
     end
     if consoleTabBar:getCurrentTab() ~= tab then
@@ -1097,7 +1185,7 @@ function addTabText(text, speaktype, tab, creatureName)
 
     if speaktype.npcChat and
         (g_game.getCharacterName() ~= creatureName or g_game.getCharacterName() == 'Account Manager') then
-        local highlightData = getHighlightedText(text)
+        local highlightData = getHighlightedText(displayText)
         if #highlightData > 0 then
             local keywordColor = '#1f9ffe'
             local invisibleColor = '#00000000'  -- fully transparent
@@ -1113,7 +1201,7 @@ function addTabText(text, speaktype, tab, creatureName)
                 local keyword = highlightData[(i - 1) * 3 + 3]
 
                 -- Text before this keyword (before the opening brace)
-                local beforeText = text:sub(lastPos, origStart - 1)
+                local beforeText = displayText:sub(lastPos, origStart - 1)
                 plainText = plainText .. beforeText
 
                 -- Track keyword positions in plain text for click detection
@@ -1134,7 +1222,7 @@ function addTabText(text, speaktype, tab, creatureName)
             end
 
             -- Remaining text after last keyword
-            local afterText = text:sub(lastPos)
+            local afterText = displayText:sub(lastPos)
             if #afterText > 0 then
                 plainText = plainText .. afterText
                 coloredResult = coloredResult .. '{' .. afterText .. ', ' .. invisibleColor .. '}'
@@ -1142,15 +1230,13 @@ function addTabText(text, speaktype, tab, creatureName)
 
             -- Set main label to plain text (braces stripped)
             label:setText(plainText)
+            rawTextForMenu = plainText
 
             -- Create phantom overlay (UILabel) for colored keywords
             local labelHighlight = g_ui.createWidget('ConsolePhantomLabel', label)
             labelHighlight:fill('parent')
             labelHighlight:setId('consoleLabelHighlight' .. consoleBuffer:getChildCount())
             labelHighlight:setColoredText(coloredResult)
-
-            -- Update text variable (stripped) for right-click menu / copy
-            text = plainText
         end
     end
 
@@ -1165,7 +1251,7 @@ function addTabText(text, speaktype, tab, creatureName)
                 sendMessage(label.highlightInfo[position], tab)
             end
         elseif mouseButton == MouseRightButton then
-            processMessageMenu(mousePos, mouseButton, creatureName, text, self, tab)
+            processMessageMenu(mousePos, mouseButton, creatureName, rawTextForMenu, self, tab)
         end
     end
     label.onMousePress = function(self, mousePos, button)
@@ -2381,6 +2467,7 @@ function copyMessagesToReadOnlyPanel(channelName)
         local clonedLabel = g_ui.createWidget('ConsoleLabel', readOnlyBuffer)
         clonedLabel:setId('consoleLabel' .. readOnlyBuffer:getChildCount())
         clonedLabel:setText(sourceLabel:getText())
+        fitLabelWidthToBuffer(clonedLabel, readOnlyBuffer)
         clonedLabel:setColor(sourceLabel:getColor())
         if sourceLabel.coloredText then
             clonedLabel:setColoredText(sourceLabel:getColoredText())

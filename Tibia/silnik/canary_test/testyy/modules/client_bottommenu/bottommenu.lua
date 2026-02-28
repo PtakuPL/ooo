@@ -24,8 +24,8 @@ local default_info = {
     -- hint 1
     {
         image = "images/randomhint",
-        Title = "Enabling Boosted Creature Panel",
-        description = "Boosted creatures panel requires configuring a webservice (init.lua) and preloading a client version by either setting one server in Servers_init (init.lua) or by altering entergame.lua.\n\nFor more hints, visit:\t\t https://github.com/mehah/otclient/wiki"
+        titleKey = "client.bottommenu.text2",
+        descriptionKey = "client.bottommenu.text3"
     },
 
     -- hint 2
@@ -65,9 +65,11 @@ function init()
         math.randomseed(os.time())
         local randomIndex = math.random(1, #default_info)
         local randomItem = default_info[randomIndex]
-        showOffWindow.title:setText(tr(randomItem.Title))
+        local titleKey = randomItem.titleKey or randomItem.Title
+        local descriptionKey = randomItem.descriptionKey or randomItem.description
+        showOffWindow.title:setText(tr(titleKey))
         image:setImageSource(randomItem.image)
-        description:setText(tr(randomItem.description))
+        description:setText(tr(descriptionKey))
         monsterOutfit:setVisible(false)
         bossOutfit:setVisible(false)
         widget:resize(widget:getWidth(), description:getHeight())

@@ -1,26 +1,40 @@
 {
   "lang": "bg",
   "script_group": "cyrillic",
-  "total_keys": 53770,
-  "translated": 4250,
-  "identical_to_en": 2880,
-  "placeholder_keys": 49500,
-  "coverage_pct": 7.9,
-  "issues_total": 28,
+  "total_keys": 74492,
+  "translated": 4374,
+  "identical_to_en": 3000,
+  "placeholder_keys": 49369,
+  "coverage_pct": 5.9,
+  "issues_total": 39,
   "issues_by_type": {
-    "script_cyrillic_latin_mix": 27,
+    "script_cyrillic_latin_mix": 31,
+    "V2_length_ratio": 4,
+    "V1_placeholder_mismatch": 3,
     "V4_artifact": 1
   },
   "issues_by_severity": {
-    "CRITICAL": 0,
-    "HIGH": 28,
-    "MEDIUM": 0,
+    "CRITICAL": 3,
+    "HIGH": 32,
+    "MEDIUM": 4,
     "LOW": 0
   },
-  "score": 99.0,
+  "score": 98.7,
   "worst_keys": [
     {
       "key": "npc.a_dead_bureaucrat1.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat3.say_1",
+      "category": "npc",
+      "type": "V1_placeholder_mismatch",
+      "severity": "CRITICAL"
+    },
+    {
+      "key": "npc.a_dead_bureaucrat4.say_1",
       "category": "npc",
       "type": "V1_placeholder_mismatch",
       "severity": "CRITICAL"
@@ -126,18 +140,6 @@
       "category": "achievements",
       "type": "script_cyrillic_latin_mix",
       "severity": "HIGH"
-    },
-    {
-      "key": "achievement.499.name",
-      "category": "achievements",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
-    },
-    {
-      "key": "achievement.549.name",
-      "category": "achievements",
-      "type": "script_cyrillic_latin_mix",
-      "severity": "HIGH"
     }
   ],
   "crossref": {
@@ -148,5 +150,5 @@
     "length_ratio": 9,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T20:41:01.146258Z"
+  "validated_at": "2026-02-26T20:13:53.934108Z"
 }

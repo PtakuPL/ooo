@@ -1,10 +1,10 @@
 {
   "lang": "sq",
-  "coverage_pct": 7.4,
+  "coverage_pct": 5.5,
   "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T20:41:11.737690Z",
+  "checked_at": "2026-02-26T20:14:04.795334Z",
   "issues_total": 406,
   "issues_by_type": {
     "consistency_in_language": 0,
@@ -237,6 +237,15 @@
       "en": "Turncoat",
       "pl": "Zdrajca",
       "lang": "Turncoat"
+    },
+    {
+      "key": "achievement.93.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jamjam",
+      "pl": "Jinuma",
+      "lang": "Jamjam"
     },
     {
       "key": "achievement.104.name",
@@ -1688,15 +1697,6 @@
       "lang": "Arena Amulet"
     },
     {
-      "key": "arena.admin.info.header",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] System Status:",
-      "pl": "[Arena Admin] Status Systemu:",
-      "lang": "[Arena Admin] System Status:"
-    },
-    {
       "key": "arena.admin.info.active_matches",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1713,24 +1713,6 @@
       "en": "Queue:",
       "pl": "Kolejka:",
       "lang": "Queue:"
-    },
-    {
-      "key": "arena.admin.stats.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin stats <playername>",
-      "pl": "[Arena Admin] Użycie: !arena-admin stats <gracz>",
-      "lang": "[Arena Admin] Usage: !arena-admin stats <playername>"
-    },
-    {
-      "key": "arena.admin.stats.not_found",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Player '{0}' not found (must be online).",
-      "pl": "[Arena Admin] Gracz '{0}' nie znaleziony (musi być online).",
-      "lang": "[Arena Admin] Player '{0}' not found (must be online)."
     },
     {
       "key": "arena.admin.stats.no_profile",
@@ -1787,15 +1769,6 @@
       "lang": "Streak: {0} (Best: {1})"
     },
     {
-      "key": "arena.admin.setmmr.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin setmmr <player> <mmr>",
-      "pl": "[Arena Admin] Użycie: !arena-admin setmmr <gracz> <mmr>",
-      "lang": "[Arena Admin] Usage: !arena-admin setmmr <player> <mmr>"
-    },
-    {
       "key": "arena.admin.setmmr.success",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1805,15 +1778,6 @@
       "lang": "[Arena Admin] Set {0}'s MMR to {1}"
     },
     {
-      "key": "arena.admin.addpoints.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin addpoints <player> <points>",
-      "pl": "[Arena Admin] Użycie: !arena-admin addpoints <gracz> <punkty>",
-      "lang": "[Arena Admin] Usage: !arena-admin addpoints <player> <points>"
-    },
-    {
       "key": "arena.admin.addpoints.success",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1821,15 +1785,6 @@
       "en": "[Arena Admin] Added {0} Arena Points to {1}",
       "pl": "[Arena Admin] Dodano {0} Punktów Areny graczowi {1}",
       "lang": "[Arena Admin] Added {0} Arena Points to {1}"
-    },
-    {
-      "key": "arena.admin.reset.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin reset <player>",
-      "pl": "[Arena Admin] Użycie: !arena-admin reset <gracz>",
-      "lang": "[Arena Admin] Usage: !arena-admin reset <player>"
     },
     {
       "key": "arena.admin.reset.success",
@@ -1848,15 +1803,6 @@
       "en": "[Arena Admin] Broadcast sent.",
       "pl": "[Arena Admin] Ogłoszenie wysłane.",
       "lang": "[Arena Admin] Broadcast sent."
-    },
-    {
-      "key": "arena.admin.player_not_online",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Player not online.",
-      "pl": "[Arena Admin] Gracz nie jest online.",
-      "lang": "[Arena Admin] Player not online."
     },
     {
       "key": "arena.admin.help.header",
@@ -3612,6 +3558,60 @@
       "en": "Paladin",
       "pl": "Paladyn",
       "lang": "Paladin"
+    },
+    {
+      "key": "cpp.vocation.id_4",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Knight",
+      "pl": "Rycerz",
+      "lang": "Knight"
+    },
+    {
+      "key": "cpp.weapon.ammunition",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ammunition",
+      "pl": "amunicja",
+      "lang": "ammunition"
+    },
+    {
+      "key": "cpp.weapon.axe",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "axe",
+      "pl": "Topór",
+      "lang": "axe"
+    },
+    {
+      "key": "cpp.weapon.club",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "club",
+      "pl": "Obuch",
+      "lang": "club"
+    },
+    {
+      "key": "cpp.weapon.distance",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "distance",
+      "pl": "Dystans",
+      "lang": "distance"
+    },
+    {
+      "key": "cpp.weapon.missile",
+      "category": "cpp",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "missile",
+      "pl": "pocisk",
+      "lang": "missile"
     }
   ],
   "length_ratio_issues": [

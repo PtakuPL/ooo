@@ -2,6 +2,6 @@
   "globalevents.online_record": "Новый рекорд: %s игроков вошли в систему.",
   "globalevents.save_interval.complete_plural": "Сохранение сервера завершено. Следующее сохранение через %s %ss!",
   "globalevents.save_interval.complete_singular": "Сохранение сервера завершено. Следующее сохранение через %s %s!",
-  "globalevents.save_interval.warning": "[EN] The server will save all accounts within %s seconds. You might lag or freeze for 5 seconds, please find a safe place.",
-  "globalevents.server_save.warning": "[EN] Server is saving the game in %s minute(s). Please logout."
+  "globalevents.save_interval.warning": "The server will save all accounts within %s seconds. You might lag or freeze for 5 seconds, please find a safe place.",
+  "globalevents.server_save.warning": "Server is saving the game in %s minute(s). Please logout."
 }

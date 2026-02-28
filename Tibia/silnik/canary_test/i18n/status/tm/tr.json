@@ -13390,5 +13390,1453 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T09:29:37.847771Z"
+  },
+  "arena.title.apprentice": {
+    "src_hash": "0a664616e1506d0c24a61bd1cca7d70e",
+    "text": "Çırak",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:35:00.291594Z"
+  },
+  "arena.title.fighter": {
+    "src_hash": "5db14795d4c6928f94927d0c0a060bee",
+    "text": "Savaşçısı",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:35:00.292851Z"
+  },
+  "arena.title.elite": {
+    "src_hash": "b13082ea3fe2642f1fd1fb76de03058b",
+    "text": "Elit",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:35:00.293694Z"
+  },
+  "otclient_data.40_minimap_otui.tr_5": {
+    "src_hash": "52f5e0bc3859bc5f5e25130b6c7e8881",
+    "text": "Konum",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:39:48.257395Z"
+  },
+  "talkaction.common.msg_player_name_param_required": {
+    "src_hash": "65dac6a24134fd48ddd07a8144ea59dd",
+    "text": "Oyuncu isim parametresi gerekli.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:45:02.095006Z"
+  },
+  "talkaction.common.msg_player_name_param_required_dot": {
+    "src_hash": "d78ab04ffa54dfdfc994b16c16331b37",
+    "text": "Oyuncu isim parametresi gerekli",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:45:02.097258Z"
+  },
+  "misc.bank_system.say_26": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Buyur.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T01:55:30.545037Z"
+  },
+  "misc.bank_system.say_28": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Peki, başka bir konuda yardımcı olabilir miyim?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T01:55:30.547272Z"
+  },
+  "misc.bank_system.say_32": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Peki, başka bir konuda yardımcı olabilir miyim?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T01:55:30.550380Z"
+  },
+  "misc.bank_system.say_34": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Buyur.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T01:55:30.551374Z"
+  },
+  "misc.bank_system.say_36": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Peki, başka bir konuda yardımcı olabilir miyim?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T01:55:30.552979Z"
+  },
+  "npc.a_bearded_woman.greet_msg_1": {
+    "src_hash": "dec88b2ad57c0b13cc1cf44b9711944a",
+    "text": "BENİ BURADAN ÇIKARIN! ŞİMDİ!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:12:25.401128Z"
+  },
+  "npc.a_beautiful_girl.greet_msg_1": {
+    "src_hash": "12c56c6555b96d78e471b6866d61e5dc",
+    "text": "Demek geldin, |PLAYERNAME|. yapmayacağını umuyordum...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:12:25.414933Z"
+  },
+  "otclient_modules.boss_slots_otui.tr_2": {
+    "src_hash": "ba79bc10653863243469213e946899e9",
+    "text": "Toplam Öldürme Sayısı",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:43:50.327632Z"
+  },
+  "client.player.text4": {
+    "src_hash": "224b3128d6218c580ca77bbf8dbe3d4d",
+    "text": "Ustası Büyücü",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:03:25.296210Z"
+  },
+  "misc.bank_system.say_38": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Buyur.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T03:17:33.594098Z"
+  },
+  "misc.bank_system.say_40": {
+    "src_hash": "af86b612d2fb97309c85df0ed6e99471",
+    "text": "Peki, başka bir konuda yardımcı olabilir miyim?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T03:17:33.595669Z"
+  },
+  "raid.bone_beast.name": {
+    "src_hash": "15b8ea869922dcd524b178ec843fc6ba",
+    "text": "Kemik Canavar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T10:32:07.482924Z"
+  },
+  "lib.exaltation_forge.msg3": {
+    "src_hash": "873b8a7bd86f7de3c3afc60d7f842226",
+    "text": "Aldınız ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:27:04.123373Z"
+  },
+  "lib.exaltation_forge.msg4": {
+    "src_hash": "3086afd3cca5bf3f92bb9fa5824a70bc",
+    "text": "Sen almadın ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:27:04.124318Z"
+  },
+  "module.hireling_module.text2": {
+    "src_hash": "3529de591833040eced95ee7377b1f42",
+    "text": "\tSürüm = ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:47:01.584356Z"
+  },
+  "achievement.119.name": {
+    "src_hash": "494eb599eba47573e7da6f67cdc62e3e",
+    "text": "Lanetli!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:51:33.364195Z"
+  },
+  "movement.claw_noxious.msg_stab": {
+    "src_hash": "14fab215c855b69507b9a0142a705f00",
+    "text": "Ah! Yılanın pençesi seni bıçakladı.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:55:35.422227Z"
+  },
+  "npc.a_bearded_woman.stdmod_1": {
+    "src_hash": "85b863553a645f3e69472bcbeea15190",
+    "text": "Adil bir dünyada büyük bir geminin kaptanı olurdum, ... \\z\n\tOradaki korsanlar artık benim yardakçılarım olacak, biz de denizlere meydan okuyup kıyı kasabalarının terörü olacaktık! ... \\z\n\tKeşke planımız işe yarasaydı!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:15:57.145392Z"
+  },
+  "npc.a_bearded_woman.stdmod_2": {
+    "src_hash": "e665aff3c7b262f14bc1bdc6ecab7294",
+    "text": "Kaptan Kid, hücre kapılarının inanılmaz derecede pahalı kilitleri gibi anlamsız şeyler almak için gemisini sattı. ... \\z\n\tKanoların bir süre idare edeceğini söyledi. ... \\z\n\tGemiden ayrıldığı için pek de üzgün olmadığı izlenimini edindim çünkü deniz tutmasından çok acı çektiği biliniyordu.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:15:57.146873Z"
+  },
+  "npc.a_bearded_woman.stdmod_3": {
+    "src_hash": "d0300a2639da1cea9ef53f1c6c9289c0",
+    "text": "Kid'den çok daha iyi bir kaptan olurdum. Sahnede birkaç kaptanla oynadım ve iyiydim! ... \\z\n\tKid'in adamlarının takdirini arzuladığı yerde ben korkuyla ve demir yumrukla yönetirdim!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:15:57.147828Z"
+  },
+  "npc.a_bearded_woman.stdmod_4": {
+    "src_hash": "2d38ace4459f0ec00320789d297c3501",
+    "text": "Hepsi Kaptan Kid'in fikriydi. Görüyorsunuz, isminden nefret ediyordu ve Kaptan Kidnap ismiyle anılmayı planlıyordu. ... \\z\n\tTek ihtiyacı olan, kaçıracak ünlü birisiydi. ... \\z\n\tAdamlarının iç karartıcı yetenek ve zeka eksikliği göz önüne alındığında bu oldukça büyük bir başarı olurdu. ... \\z\n\tGeçmişte birlikte yaptığımız birkaç dolandırıcılıktan birbirimizi tanıyorduk, bu yüzden benimle iletişime geçti. ... \\z\n\tÜnlü Prenses Lumelia'nın kimliğine bürünecektim. Bilirsin, herkesin aradığı kişi. ... \\z\n\tBu, adamlarına ve diğer korsanlara onun ne kadar iyi bir adam kaçıran olduğunu gösterecekti. ... \\z\n\tBana onun ikinci komutanı olacağıma ve yağma, soygun ve talanla dolu harika bir yaşam süreceğime söz verdi. ... \\z\n\tBu yüzden bir süreliğine Prenses'in kimliğine bürünmeyi kabul ettim ve ilk başta işe yaradı. ... \\z\n\tTek başına bir baskından Prenses gibi giyinerek benimle birlikte döndü ve adamları için anında günün kahramanı oldu. ... \\z\n\tZafer partisi düzenlemeye karar verdiklerinde işler kötüye gitti. ... \\z\n\tKorsanların mırıldanmalarından anladığım kadarıyla Kid yeraltı nehrinde tuvaletini yaparken hücremin anahtarını kaybetmiş. ... \\z\n\tAptal onun peşinden dalmaya karar verdi... bir daha asla görülmemek üzere. ... \\z\n\tKid'in ölümünü öğrendiğimde korsanları bunun bir aldatmaca olduğuna ikna etmeye çalıştım ama bana inanmıyorlar!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:15:57.152179Z"
+  },
+  "npc.a_bearded_woman.stdmod_5": {
+    "src_hash": "d02c0ffb00f9c85e39e5609e3ffcfc53",
+    "text": "Ah, adam kaçırmak çok eğlenceli. Yani, eğer alıcı tarafta değilseniz. ... \\z\n\tKolay paradır ve karşı koyamayan birini korkutma ve ona işkence etme şansınız var!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:15:57.153031Z"
+  },
+  "npc.a_bearded_woman.stdmod_6": {
+    "src_hash": "8addcda1b472b30e046fd34589b4879f",
+    "text": "İnsanlar ne kadar aptalsa onları kandırmak o kadar kolay olur. ... \\z\n\tVe ne kadar fakirlerse intikam almak zorunda oldukları araçlar da o kadar az olur. Har Har! ... \\z\n\tBu yüzden dolandırdığım kişileri mahvettiğimden emin oluyorum. O halde benden intikam almaktan başka endişelenecek şeyleri var.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:15:57.154326Z"
+  },
+  "npc.a_bearded_woman.stdmod_7": {
+    "src_hash": "a07eb0740959112055b5524599e7a7e2",
+    "text": "Anahtar yeraltı nehrinde kayboldu ve muhtemelen şimdiye kadar yedi denize sürüklendi! ... \\z\n\tEğer o aptal Çocuk adam kaçırma konusunda bu kadar takıntılı olmasaydı, hücrelerine en pahalı ve karmaşık kilitleri almak için gemisini satmazdı!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:15:57.155380Z"
+  },
+  "npc.a_bearded_woman.stdmod_8": {
+    "src_hash": "611cca91ceb08fc3c7143e9b26284ef9",
+    "text": "Savunmasız kıyı kentlerinde kaldığımız sürece kolay bir servet kazanabiliriz. Har Har! ... \\z\n\tBuradan çıkar çıkmaz nihayet kendi başıma korsan kaptanı olacağım. Kaptan Kid'e ihtiyacım yok!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:15:57.156263Z"
+  },
+  "npc.a_bearded_woman.voice_1": {
+    "src_hash": "58767cda40525ee7cbdee616d85cb646",
+    "text": "Ben bir ADAMIM! Çıkarın beni sarhoş aptallar!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:01.492877Z"
+  },
+  "npc.a_bearded_woman.voice_2": {
+    "src_hash": "72b86601b93166f02b9c4cd08dfeee5d",
+    "text": "BENİ BURADAN ÇIKARIN!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:01.493216Z"
+  },
+  "npc.a_bearded_woman.voice_3": {
+    "src_hash": "c28763b34d8b1e303d10487a3c6bdda4",
+    "text": "Çıkarın beni! Bunların hepsi planın bir parçasıydı, sizi aptallar!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:01.493701Z"
+  },
+  "npc.a_bearded_woman.voice_5": {
+    "src_hash": "610ef2c5395758ac8169140d09ad737a",
+    "text": "Ben Prenses Lumelia DEĞİLİM, sizi aptallar!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:01.494340Z"
+  },
+  "npc.a_bearded_woman.voice_6": {
+    "src_hash": "53c4ab6007ae6d3e10ea4ddf7dce9bf1",
+    "text": "Bir çilingir bulun ve beni serbest bırakın, yoksa pişman olursunuz, sizi aptal korsanlar!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:01.494900Z"
+  },
+  "npc.a_bearded_woman.voice_7": {
+    "src_hash": "6ad2054bb73e4f51e22543c42ffc5d5b",
+    "text": "Ben prenses değilim, ben bir aktörüm!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:01.495303Z"
+  },
+  "npc.a_beggar.say_2": {
+    "src_hash": "7f8292b9eb7566b64edd089a2459de83",
+    "text": "Ancak kralın huzuruna çıkabilmek için tebaasına biraz yardım etmeniz gerekecek. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:01.495877Z"
+  },
+  "npc.a_beggar.say_3": {
+    "src_hash": "c00ef85e3c706aa4e1feb0023c862a5e",
+    "text": "Onun tebaası biz fakirler olacağız, biliyor musun? ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:06.001150Z"
+  },
+  "npc.a_beggar.say_4": {
+    "src_hash": "4083b6eb97ef1d492dafe67ced5e1d1b",
+    "text": "Öyleyse neden yoksullara olan bağlılığınızı göstermiyorsunuz? Git ve fakirlerin evindeki Chavis'e yardım et. Bizim gibi insanlar için yiyecek topluyor. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:06.002041Z"
+  },
+  "npc.a_beggar.say_5": {
+    "src_hash": "8bb1bd6a0ab3fe83a4488aa718b941f9",
+    "text": "Yeterince eşya getirdiyseniz, kralın {palace} ile size giriş izni vereceğini göreceksiniz.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:06.002663Z"
+  },
+  "npc.a_dead_bureaucrat.greet_msg_1": {
+    "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
+    "text": "Merhaba {}, Pumin'in Alanının avlusuna hoş geldiniz. Geçmenize izin vermeden önce sizden bazı bilgiler istiyoruz. Nereye gitmek istiyorsun?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:06.003415Z"
+  },
+  "npc.a_dead_bureaucrat1.say_1": {
+    "src_hash": "81833ebc28f25447db28304aba4cd57c",
+    "text": "Tabii, başka nerede. Herkes ustamla tanışmayı sever, o büyük bir iblis, değil mi? Adın...?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:06.004015Z"
+  },
+  "npc.a_dead_bureaucrat1.say_2": {
+    "src_hash": "6c80ac504f39e09fc288756acfd7a105",
+    "text": "Ne kadar ilginç. Bunu hemen ustama söylemeliyim. Lütfen meslektaşlarıma gidin ve Form 356'yı isteyin. Devam etmek için ona ihtiyacınız olacak.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:06.004786Z"
+  },
+  "npc.a_dead_bureaucrat1.say_3": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "Peki |PLAYERNAME|. Meslek?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:06.005108Z"
+  },
+  "npc.a_dead_bureaucrat1.say_5": {
+    "src_hash": "7025be9c3a92e5d4e7965480ef624e3a",
+    "text": "Form 411 mi? Bunu almak için Form 287'ye ihtiyacınız var! Elinde var mı?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:06.005608Z"
+  },
+  "npc.a_dead_bureaucrat1.say_6": {
+    "src_hash": "7025be9c3a92e5d4e7965480ef624e3a",
+    "text": "Form 411 mi? Bunu almak için Form 287'ye ihtiyacınız var! Elinde var mı?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:10.318698Z"
+  },
+  "npc.a_dead_bureaucrat1.say_7": {
+    "src_hash": "22849ba6a7644915a8cb4de5b2a8e521",
+    "text": "Ne yazık. Git meslektaşlarımdan birini gör. Size Form 287'yi alma iznini veriyorum. Hoşçakalın!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:10.319351Z"
+  },
+  "npc.a_dead_bureaucrat1.say_8": {
+    "src_hash": "68c9f9ee9212c1c305a253d3d1aebeb0",
+    "text": "Harika. İşte buradasın. Form 411. Ne zaman konuşmak istersen gel. Hoşçakal.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:10.319898Z"
+  },
+  "npc.a_dead_bureaucrat1.say_9": {
+    "src_hash": "6c558828065bb071d2bead0fc23aef37",
+    "text": "İNANILMAZ, başardın!! Pumin's Domain'de iyi eğlenceler!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:10.320400Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_1": {
+    "src_hash": "cdcea1350c387fbbeec64fa8f0b8ddea",
+    "text": "Şimdi bu formu nereye koydum?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:16:10.320787Z"
+  },
+  "item.10.name": {
+    "src_hash": "90fbbee0c198b3f16d17271f8ca29d70",
+    "text": "mana sıvısı",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.187851Z"
+  },
+  "item.100.name": {
+    "src_hash": "cab8111fd0b710a336c898e539090e34",
+    "text": "geçersiz",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.188086Z"
+  },
+  "item.10000.name": {
+    "src_hash": "aa63b14cb9675819aa6ecea9feeb5d27",
+    "text": "gündönümü ağacı",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.188350Z"
+  },
+  "item.10009.name": {
+    "src_hash": "2b120bc99743cc25cc800661bd42f168",
+    "text": "taç parlatıcı şişesi",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.188693Z"
+  },
+  "item.10010.name": {
+    "src_hash": "2476a5a90c029582282973dffc394319",
+    "text": "Zaoan dekorasyonu",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.188953Z"
+  },
+  "item.10011.name": {
+    "src_hash": "36227190a857cf681921d9bf34a765ad",
+    "text": "bilinmeyenin haritası",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.189239Z"
+  },
+  "item.10025.name": {
+    "src_hash": "3f76a90627bb7b7ad4e71375df6aa29f",
+    "text": "büyü almanağı",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.189519Z"
+  },
+  "item.10026.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "bebek çürük kurdu",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.189772Z"
+  },
+  "item.10027.name": {
+    "src_hash": "c1bcf9b8357f67370e4599d8b21749be",
+    "text": "evrensel araç",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.190040Z"
+  },
+  "item.10028.name": {
+    "src_hash": "466a6bdf5ea677b6e1344f8bd3619a4a",
+    "text": "ruh sözleşmesi",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.190288Z"
+  },
+  "item.1006.name": {
+    "src_hash": "eee3db73cf76cd1ca29c6c5d40f44fb4",
+    "text": "pürüzlü taşlar",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.190559Z"
+  },
+  "item.10096.name": {
+    "src_hash": "cd2878e9d8d9bd39b4e50c83b5990cc8",
+    "text": "yığın",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.190755Z"
+  },
+  "item.10097.name": {
+    "src_hash": "ffb79de3dd0555fb7a5ca7071a0c1b4a",
+    "text": "biber otu",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.190966Z"
+  },
+  "item.10098.name": {
+    "src_hash": "8365620ffd40a47e8c1d7d5b5c7633cb",
+    "text": "yüksek çim",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.191177Z"
+  },
+  "item.10111.name": {
+    "src_hash": "ffb79de3dd0555fb7a5ca7071a0c1b4a",
+    "text": "biber otu",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.191382Z"
+  },
+  "item.1012.name": {
+    "src_hash": "74d7b04810e76e98881a64131caa3e87",
+    "text": "köpüklü mücevher",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.191643Z"
+  },
+  "item.10140.name": {
+    "src_hash": "3b2fa34af93b15d8e28dacad96e85076",
+    "text": "şeytani kalıntı",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.191899Z"
+  },
+  "item.10159.name": {
+    "src_hash": "9fbf6b7186d409b5605c7eb845ed7443",
+    "text": "bir mağara adamının kafatası",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:44.192234Z"
+  },
+  "item.10180.name": {
+    "src_hash": "418acd2dc26b4e76fa2db55ab2f3e659",
+    "text": "toprak",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:53.346063Z"
+  },
+  "item.10182.name": {
+    "src_hash": "33f19afbf6744c10a2e913608b22cb83",
+    "text": "acele ahşap",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:53.346394Z"
+  },
+  "item.10183.name": {
+    "src_hash": "166e86f69d6225986d74594875d5b86d",
+    "text": "zehir şişesi",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:53.346729Z"
+  },
+  "item.10184.name": {
+    "src_hash": "6a5213ef75be2d75ba25027c7e78be72",
+    "text": "taktik harita",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:53.346984Z"
+  },
+  "item.10185.name": {
+    "src_hash": "fb22606aca32dcbce80ae759f3e23f66",
+    "text": "geçiş",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:53.347195Z"
+  },
+  "item.10186.name": {
+    "src_hash": "2d9e53feb0673a054464fd17e13ab87e",
+    "text": "gözetleme topu",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:53.347476Z"
+  },
+  "item.10189.name": {
+    "src_hash": "bf28efa02d6ee5e3c9d823175b421301",
+    "text": "ekstra yağlı yağ şişesi",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:53.347846Z"
+  },
+  "item.1019.name": {
+    "src_hash": "ce1ca28266c962ae55f0a786013793d5",
+    "text": "orman otu",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:53.348084Z"
+  },
+  "item.10190.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "ölü draken savaş ustası",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:53.348454Z"
+  },
+  "item.10191.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "ölü draken savaş ustası",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:53.348802Z"
+  },
+  "item.10192.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "ölü draken savaş ustası",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:53.349203Z"
+  },
+  "item.10193.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "ölü draken savaş ustası",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:21:53.349572Z"
+  },
+  "monster.damaged_worker_golem.voice_6": {
+    "src_hash": "f91d867058d679822ad45966b3c625bd",
+    "text": "Tehlike...chrrr! Tehlike!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:16.141855Z"
+  },
+  "monster.infernal_frog.voice_3": {
+    "src_hash": "d1b2c4f05882e3e46872752f28a46703",
+    "text": "Sana öpücük yok!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:16.142195Z"
+  },
+  "monster.chocolate_blob.name": {
+    "src_hash": "eb45f86157a6e826fef66fd6c5a37f65",
+    "text": "Çikolata damlası",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:16.142467Z"
+  },
+  "monster.chocolate_blob.desc": {
+    "src_hash": "0760720210ac7e074b6e5cfc86b2bed3",
+    "text": "bir çikolata bloğu",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:16.142756Z"
+  },
+  "monster.ink_blob.name": {
+    "src_hash": "07995cc0c04276856493242314207121",
+    "text": "Mürekkep Bloğu",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:16.142985Z"
+  },
+  "monster.ink_blob.desc": {
+    "src_hash": "200172fd1887f8edfeb7ae98457e1f28",
+    "text": "bir mürekkep damlası",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:16.143242Z"
+  },
+  "monster.shaper_matriarch.name": {
+    "src_hash": "34f0932cbc7ee2b9fd9fa74af7bed34a",
+    "text": "Şekillendirici Anne",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:16.143513Z"
+  },
+  "monster.shaper_matriarch.desc": {
+    "src_hash": "d7917e07846a8935390b71978375ebff",
+    "text": "şekillendirici bir anne",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:16.143811Z"
+  },
+  "monster.lost_thrower.name": {
+    "src_hash": "fb304335c2624d8801333b68d9096b86",
+    "text": "Kayıp Atıcı",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:16.144047Z"
+  },
+  "monster.lost_thrower.desc": {
+    "src_hash": "af89bc1426b3a635fdced1d0cc2c0bb3",
+    "text": "kayıp bir atıcı",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:16.144300Z"
+  },
+  "monster.minotaur_bruiser.name": {
+    "src_hash": "b61c791d7ed0e327d33ba5ce20bb7f4a",
+    "text": "Minotor Avcısı",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:16.144558Z"
+  },
+  "monster.minotaur_bruiser.desc": {
+    "src_hash": "0d1f326db3467763972fa1fe6cb2fad0",
+    "text": "bir minotor yaralayıcısı",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:16.144856Z"
+  },
+  "monster.minotaur_guard.name": {
+    "src_hash": "2af164b2a2fe0bda0daba8562a64f863",
+    "text": "Minotor Muhafızı",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:16.145107Z"
+  },
+  "monster.minotaur_guard.desc": {
+    "src_hash": "20aec1cd1af8cd17c4cb7d5490d47e42",
+    "text": "bir minotor muhafızı",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:28:16.145392Z"
+  },
+  "data.otservbr.global.npc.a.sweaty.cyclops.L228.69": {
+    "src_hash": "4c6ea4c201dd58b33aacb9d148dce52d",
+    "text": "Hoşça kal minik.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.300983Z"
+  },
+  "data.otservbr.global.npc.a.weakened.forest.fury.L122.711": {
+    "src_hash": "72de401885f0bfc9802b1df2e36c8844",
+    "text": "Seni selamlıyorum insan. Bu bir sıkıntı zamanıdır, bizi ve dünyamızı koruyacak koruyuculara her zamankinden daha fazla ihtiyacımız var.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.301861Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L80.1421": {
+    "src_hash": "695b5e1e25e59b54c194959defc700d8",
+    "text": "Bu nedir? |PLAYERNAME| adında optik açıdan sorunlu bir varlık. Ne kadar büyüleyici!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.302841Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L81.1422": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Orada bekle. Öğrendiklerimi yazdıktan sonra seni yiyeceğim.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.303426Z"
+  },
+  "data.otservbr.global.npc.a.wrinkled.bonelord.L82.1423": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Orada bekle. Öğrendiklerimi yazdıktan sonra seni yiyeceğim.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.304013Z"
+  },
+  "data.otservbr.global.npc.ahmet.L182.407": {
+    "src_hash": "c597f49f64372b4fcd004f1248d40e64",
+    "text": "Yaslı hacı olun. Genel mal satıyorum. Benden sadece bir {trade} isteyin.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.304684Z"
+  },
+  "data.otservbr.global.npc.ajax.L58.355": {
+    "src_hash": "f75a0f42b675c7b8f6018f7bba370ace",
+    "text": "Sen geri dön. Biliyor musun, haklısın. Kardeşim haklı. Yumruk her zaman iyi değildir. Ona bunu söyle!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.305484Z"
+  },
+  "data.otservbr.global.npc.ajax.L61.356": {
+    "src_hash": "5914e3f1c4504eaa5630a9f613626f2f",
+    "text": "Benim yerimde ne yapacaksın?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.305876Z"
+  },
+  "data.otservbr.global.npc.al.dee.L167.597": {
+    "src_hash": "9e61047ab3d551d7478466ce6a0284d0",
+    "text": "Güle güle |PLAYERNAME|.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.306274Z"
+  },
+  "data.otservbr.global.npc.al.dee.L168.598": {
+    "src_hash": "5b85415fe43fd72f95fe1e37cb9d77f6",
+    "text": "Solunuzdaki ticaret penceresine bir göz atın.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.306759Z"
+  },
+  "data.otservbr.global.npc.albinius.L267.1035": {
+    "src_hash": "8993bb530fd5ed280dd79f7609011019",
+    "text": "Selamlar yolcu. Umudun koridorlarına hoş geldiniz. Biz bu {temple}'un koruyucularıyız ve katkıda bulunmak isteyen herkesi memnuniyetle karşılıyoruz.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.307542Z"
+  },
+  "data.otservbr.global.npc.alesar.L206.1591": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "Nihayet.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.307763Z"
+  },
+  "data.otservbr.global.npc.alesar.L207.1592": {
+    "src_hash": "227134d69dc2cf3f9ee7012bf8b196d8",
+    "text": "Nihayet.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.307964Z"
+  },
+  "data.otservbr.global.npc.alesar.L208.1593": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Hizmetinizde, sadece ürünlerime göz atın.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.308396Z"
+  },
+  "data.otservbr.global.npc.alexander.L171.1567": {
+    "src_hash": "6fe4b246c8652dfd3d389d9b352404d9",
+    "text": "Merhaba |PLAYERNAME| ve {magic} mağazasına hoş geldiniz.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.308908Z"
+  },
+  "data.otservbr.global.npc.alexander.L172.1568": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Görüşürüz |PLAYERNAME|.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.309226Z"
+  },
+  "data.otservbr.global.npc.alexander.L173.1569": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Görüşürüz |PLAYERNAME|.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.309565Z"
+  },
+  "data.otservbr.global.npc.alexander.L174.1570": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Tabii ki, sadece ürünlerime göz atın. Yoksa sadece bakmak mı istiyorsunuz?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.310118Z"
+  },
+  "data.otservbr.global.npc.alkestios.L130.1473": {
+    "src_hash": "5b81f419e801f758404e0b93333cd44c",
+    "text": "Doğanın lütfu, gezgin! Hiçbir kötü güçten etkilenmemeniz dileğiyle.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.310671Z"
+  },
+  "data.otservbr.global.npc.altar.L83.730": {
+    "src_hash": "5a56bfe47b6a5f5fc45e2ab694a47926",
+    "text": "Kanlı çürümenin her şeyi yiyip bitiren gücünün önünde diz çökün.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:27.311165Z"
+  },
+  "data.otservbr.global.npc.ambassador.of.rathleton.L86.343": {
+    "src_hash": "0922290764356f2882310a5fd9aff64d",
+    "text": "Selamlar dostum.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:32.807152Z"
+  },
+  "data.otservbr.global.npc.amber.L426.528": {
+    "src_hash": "d732678ccaedfd5a4549c0b91b7b7eda",
+    "text": "Evet, sonra görüşürüz.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:32.807528Z"
+  },
+  "data.otservbr.global.npc.amber.L427.529": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Sonra görüşürüz, |PLAYERNAME|.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:32.807875Z"
+  },
+  "data.otservbr.global.npc.amber.L428.530": {
+    "src_hash": "0f14fbac638796dd8c466ad8b633ef97",
+    "text": "Ah merhaba, seni gördüğüme sevindim |PLAYERNAME|. {adventures} ile ilgili bazı hikayeleri dinlemek için mi buradasınız yoksa {help}'ye mi ihtiyacınız var?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:32.808680Z"
+  },
+  "data.otservbr.global.npc.anderson.L101.134": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Güle güle. Rica ederim.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:32.809299Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L101.514": {
+    "src_hash": "f19606ce8291abc3d128e0e13e6f48f8",
+    "text": "Merhaba, ben bu {monument}'nin müdürüyüm. Önünüzdeki {sarcophagus} insanların oraya {down} gitmesini engellemek için kuruldu. Ancak bu adımın yeterli olduğundan şüpheliyim.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:32.810228Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L103.515": {
+    "src_hash": "3c5ad370bd95ece0ddfe7c933191c2d7",
+    "text": "Bakalım görevin başarılı mı? Bana ihtiyacım olan her şeyi getir {materials}.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:32.810843Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L105.516": {
+    "src_hash": "be244788d22d3907aa89323df2de6a6b",
+    "text": "Yeterli miktarda üç kristalin tamamını çıkardıysanız ve zehir bezini elde ettiyseniz pusulanız dolmaya başlayabilir! İlk kez mor kristal tarafından yüklenecek. Kristallerin gücüne {unleash} hazır mısınız?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:32.811902Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L107.517": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Selamlar.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:39:32.812132Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg1": {
+    "src_hash": "480e35ad14db7f1efdf3f9e00ed78a58",
+    "text": "Gnomedix: Öyleyse inceleme başlasın! Şimdi hareket etme. Korkma. İyi doktor cüce sana zarar vermeyecek - umarım!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.156425Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg2": {
+    "src_hash": "e2ab9a67cf5112ed29716b20320600c2",
+    "text": "Gnomedix: Şimdi! Şimdi! Panik yapma! Yakında her şey bitecek!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.156952Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg3": {
+    "src_hash": "503b77337aa47368fbf6324836cb7837",
+    "text": "Gnomedix: Daha büyük bir keski deneyeyim!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.157366Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg4": {
+    "src_hash": "d6a9f750fe55398ca30eefbf148c3c9f",
+    "text": "Gnomedix: Neredeyse donuyoruz... kutsal cüce! Bu ne???",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.157814Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg5": {
+    "src_hash": "f0beac42b125618212c32af54f84907e",
+    "text": "Gnomedix: Tatbikata ihtiyacım var! Gnomenursey, çabuk!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.158304Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg6": {
+    "src_hash": "abfd48c5fc8121209d0666adcf6c99fa",
+    "text": "Gnomedix: Şimdi kıpırdamayın! Bu biraz gıdıklayabilir..",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.158884Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg7": {
+    "src_hash": "2fccc4bbff73ea03fdd55ecf188ceb8c",
+    "text": "Gnomedix: Al şunu, seni şeytan... her ne olursan ol!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.159604Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg8": {
+    "src_hash": "cd6d2693244661936990d9aa89bd4492",
+    "text": "Gnomedix: Anladım! Ahh! Neydi o? Uhm, peki... kulak muayenesini geçtin. Bir sonraki testiniz için Gnomaticus ile konuşun.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.160382Z"
+  },
+  "quests.bigfoot_burden.golden_fruits_found": {
+    "src_hash": "d74cfab59a5109eb785c4a0529c86d06",
+    "text": "Bazı altın meyveler buldun.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.160789Z"
+  },
+  "quests.bigfoot_burden.golem_returned": {
+    "src_hash": "9b62f0a69b86d144ca3e1576a14a58c0",
+    "text": "Golem cüce atölyesine geri gönderildi.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.161241Z"
+  },
+  "quests.bigfoot_burden.golems_enough": {
+    "src_hash": "09f9e9d1e34832d2001a9dad6ec10799",
+    "text": "Şimdilik yeterince golem geri getirdin. Cücelere onarımları için biraz zaman tanıyın. Şimdi rapor verin.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.161981Z"
+  },
+  "quests.bigfoot_burden.grayed_success": {
+    "src_hash": "008ee9986ebce5c395cc4c1b16eb61ed",
+    "text": "Başarıyla gri ışınlandınız. Şimdi Doktor Gnomedix'in kulaklarınızı incelemesine izin verin!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.162601Z"
+  },
+  "quests.bigfoot_burden.loot_warning": {
+    "src_hash": "0ae78e5ea93c887a30cc25c8b7f38626",
+    "text": "Patronu yağmalamak ve odadan çıkmak için bir dakikanız var.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.163119Z"
+  },
+  "quests.bigfoot_burden.matchmaker_complete": {
+    "src_hash": "b984ec9660da868ecc69c9a2c01639ec",
+    "text": "Tebrikler! Kristaller aşık olmuş gibi görünüyor ve göreviniz tamamlandı!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.163669Z"
+  },
+  "quests.bigfoot_burden.melody_complete": {
+    "src_hash": "2a218e761bb906e1d5e72c8e4ffaad90",
+    "text": "Bu doğru nottu! Artık ruh melodinizi biliyorsunuz!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.164161Z"
+  },
+  "quests.bigfoot_burden.mind_refreshed": {
+    "src_hash": "d8af034712525ba4e9c7c6f91fc42164",
+    "text": "Zihniniz tazelenmiş hissediyor!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.164515Z"
+  },
+  "quests.bigfoot_burden.mushroom_wait": {
+    "src_hash": "bc4e0249920d6057542c82785457005a",
+    "text": "Bu mantardan spor çıkarmak için beklemeniz gerekiyor.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.164979Z"
+  },
+  "quests.bigfoot_burden.need_mission_crystal": {
+    "src_hash": "d2b109377df37ef2965d1bba9a69cfaf",
+    "text": "Girmek için bir görev kristaline veya Gnomission ile yapılmış bir işe ihtiyacınız var.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:03.165560Z"
+  },
+  "quests.bigfoot_burden.need_teleport_crystal": {
+    "src_hash": "26c4744888f98b7829aa86e24ea0aab3",
+    "text": "Bu cihazı kullanabilmek için ışınlanma kristaline ihtiyacınız var.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:10.860637Z"
+  },
+  "quests.bigfoot_burden.no_endurance_test": {
+    "src_hash": "d24aac0def4b8f7ae074a9da3619a273",
+    "text": "Neyse ki şu anda dayanıklılık almak zorunda değilsiniz.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:10.861151Z"
+  },
+  "quests.bigfoot_burden.not_permitted": {
+    "src_hash": "722a8c1a978dbdef3eee391d6d8304a9",
+    "text": "Girmenize izin verilmiyor.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:10.861484Z"
+  },
+  "quests.bigfoot_burden.pig_eating": {
+    "src_hash": "82aeede3e6b7b325ed4ea821f13b0756",
+    "text": "Küçük domuz yer mantarlarını mutlu bir şekilde yiyor.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:10.862005Z"
+  },
+  "quests.bigfoot_burden.pig_stuffed": {
+    "src_hash": "90b1df4f5cbf78315c5e1c7d65fdcd02",
+    "text": "Küçük domuzun içi doldurulmuş ve onu eve geri götürsen iyi olur.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:10.862515Z"
+  },
+  "quests.bigfoot_burden.rank_too_low": {
+    "src_hash": "582ca49ea8f77df099515acb0c43ff6b",
+    "text": "Gnomlar arasındaki sıralamanız çok düşük.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:10.862938Z"
+  },
+  "quests.bigfoot_burden.room_wait": {
+    "src_hash": "1ccc70eac63b4b35bbbe04c64197ce03",
+    "text": "Lütfen oda boşalana kadar bekleyin. Bu, son takımın girmesinden 30 dakika sonra gerçekleşir.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:10.863549Z"
+  },
+  "quests.bigfoot_burden.shooting_complete": {
+    "src_hash": "199f93db257e69b9ac55cee85d09d2f4",
+    "text": "Yeterince hedefi vurdunuz. Geri rapor verin!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:10.863946Z"
+  },
+  "quests.bigfoot_burden.shooting_hit": {
+    "src_hash": "1ec47fa3f005f5e253a4276eb0a85264",
+    "text": "Vurmak!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:10.864190Z"
+  },
+  "quests.bigfoot_burden.shooting_wrong_target": {
+    "src_hash": "f1e02a4ba46f414753f21ad13d243d0c",
+    "text": "Yanlış hedefi vurdunuz ve her şeye baştan başlamak zorundasınız!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:10.864729Z"
+  },
+  "gamestore.error.all_task_slots": {
+    "src_hash": "fb1c5f4f65f3e2e83df0222a76f58629",
+    "text": "Zaten tüm görev avlama yuvalarının kilidini açtınız.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.730520Z"
+  },
+  "gamestore.error.already_own_mount": {
+    "src_hash": "8dc46a1484f54e2257f464fe4f39730f",
+    "text": "Bu bineğe zaten sahipsiniz.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.730924Z"
+  },
+  "gamestore.error.already_own_outfit": {
+    "src_hash": "9401d88df0143dc879a724750ed58ff6",
+    "text": "Bu kıyafete zaten sahipsiniz.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.731305Z"
+  },
+  "gamestore.error.client10_hireling": {
+    "src_hash": "594704e70bf187eb9dc45cba1dd58c2b",
+    "text": "Müşteri 10'da kiralık eleman satın alamazsınız, lütfen müşteri 12'ye yeniden giriş yapın ve tekrar deneyin.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.732037Z"
+  },
+  "gamestore.error.client10_hireling_name": {
+    "src_hash": "3e6a730fb48e4be399f9c645c8bfdcca",
+    "text": "Müşteri 10'da işe alım satın alamazsınız, adınızı değiştiremezsiniz, lütfen müşteri 12'ye yeniden giriş yapın ve tekrar deneyin.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.732738Z"
+  },
+  "gamestore.error.client10_hireling_outfit": {
+    "src_hash": "e0e94adbbd7adad8a458bcfd66fe631d",
+    "text": "Müşteri 10'da kiralık kıyafet satın alamazsınız, lütfen müşteri 12'de yeniden oturum açın ve tekrar deneyin.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.733406Z"
+  },
+  "gamestore.error.client10_hireling_sex": {
+    "src_hash": "c12b831cd5d37da1d6c9fa1059691b85",
+    "text": "Müşteri 10'da işe alım cinsiyetini değiştiremezsiniz, lütfen müşteri 12'ye yeniden giriş yapın ve tekrar deneyin.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.734100Z"
+  },
+  "gamestore.error.client10_hireling_skill": {
+    "src_hash": "f3813c3f0e4d537dd76fb64514d68035",
+    "text": "Müşteri 10'da işe alma becerisini satın alamazsınız, lütfen müşteri 12'ye yeniden giriş yapın ve tekrar deneyin.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.734754Z"
+  },
+  "gamestore.error.hireling_lamp_error": {
+    "src_hash": "48cb7da3cb55f6eaece0eb5eb3b3faef",
+    "text": "Kiralık lambanız teslim edilirken hata oluştu. Daha sonra tekrar deneyin.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.735385Z"
+  },
+  "gamestore.error.item_add_error": {
+    "src_hash": "25d596f61fc1772ffcc44f7f722d220d",
+    "text": "Mağaza gelen kutusuna öğe eklenirken hata oluştu.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.735932Z"
+  },
+  "gamestore.error.name_already_used": {
+    "src_hash": "8e64ff89eeff993ff2f6e5e707b9de07",
+    "text": "Bu ad zaten kullanılıyor, lütfen tekrar deneyin!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.736412Z"
+  },
+  "gamestore.error.namechange_pz_only": {
+    "src_hash": "e4d354a2c809681b2ef79a82eb3f40e5",
+    "text": "Adı yalnızca Koruma Bölgesi'nde değiştirebilirsiniz.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.736871Z"
+  },
+  "gamestore.error.need_outfit_first": {
+    "src_hash": "4d303637cb76de0e641caa90cf46f3ca",
+    "text": "Eklentisini satın alabilmeniz için önce kıyafete sahip olmanız gerekir.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.737360Z"
+  },
+  "gamestore.error.no_history": {
+    "src_hash": "1c70c78723f09e479c29dd24411bca0c",
+    "text": "Henüz herhangi bir girişiniz yok.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.737752Z"
+  },
+  "gamestore.error.not_enough_coins": {
+    "src_hash": "00f152726c3059d5ededb3a6d9181f98",
+    "text": "Yeterli paranız yok. Satın alma işleminiz iptal edildi.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.738309Z"
+  },
+  "gamestore.error.outfit_purchase_error": {
+    "src_hash": "e2484dcf2efeaae1f0c24898c712a2b2",
+    "text": "Kıyafet satın alma işleminizle ilgili bir sorun oluştu. Satın alma işleminiz iptal edildi.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.738894Z"
+  },
+  "gamestore.error.outfit_wrong_sex": {
+    "src_hash": "88c6b3a049f6cfdee4cbea7e422092c1",
+    "text": "Bu kıyafet cinsiyetinize uygun görünmüyor, bunun için üzgünüz!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.739390Z"
+  },
+  "gamestore.error.purchase_cancelled": {
+    "src_hash": "47e0f6edcb93ba7d0b54b2b95de4e92c",
+    "text": "Bir şeyler ters gitti. Satın alma işleminiz iptal edildi.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.739864Z"
+  },
+  "gamestore.error.temple_in_fight": {
+    "src_hash": "09f2fcd51068683a5c8e41b9d849de09",
+    "text": "Savaşta tapınak ışınlanmasını kullanamazsınız!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:28.740288Z"
+  },
+  "gamestore.error.too_many_purchases": {
+    "src_hash": "c7b7da2be18036fcc80553b0936cadc2",
+    "text": "Birkaç dakika içinde aynı anda birçok satın alma işlemi gerçekleştiriyorsunuz.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:37.160459Z"
+  },
+  "gamestore.error.unavailable_1": {
+    "src_hash": "e559faa50bf4ca3667b7c90b8bcfce9a",
+    "text": "Bu teklif mevcut değil [1]",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:37.160857Z"
+  },
+  "gamestore.error.unavailable_2": {
+    "src_hash": "47e58b411a771c18dadf0e46ba8330a2",
+    "text": "Bu teklif mevcut değil [2]",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:37.161257Z"
+  },
+  "gamestore.hireling.sex_change_select": {
+    "src_hash": "a659354121de1de5cc32c75e516c78d5",
+    "text": "Hangi işe alınan kişinin cinsiyetini değiştirmesi gerektiğini seçmek için mağaza penceresini kapatın.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:37.161852Z"
+  },
+  "gamestore.modal.choose_hireling": {
+    "src_hash": "298f0046b72aec842afd513f50faf24d",
+    "text": "Bir Kiralama Seçin",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:37.162209Z"
+  },
+  "gamestore.modal.hireling_in_lamp": {
+    "src_hash": "9bf751565757beff33b74539473d4353",
+    "text": "Kiraladığınız kişi lambasının içinde olmalı.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:37.162653Z"
+  },
+  "gamestore.modal.purchase_error": {
+    "src_hash": "e8a15c7f0527799c520627c3d8fe2eb3",
+    "text": "Satın alma işlemi hatası",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:37.163051Z"
+  },
+  "gamestore.modal.select_hireling": {
+    "src_hash": "bd8cd4c38455ded382af6b16e2b31bcd",
+    "text": "Bir işe alınacak kişi seçmelisiniz.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:37.163610Z"
+  },
+  "gamestore.modal.select_hireling_below": {
+    "src_hash": "5f2c58c97175cae2342283b6b08b8595",
+    "text": "Aşağıdan bir işe alınacak kişiyi seçin",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:37.164085Z"
+  },
+  "gamestore.modal.transaction_error": {
+    "src_hash": "844fce8bba96036e1fbe7369b659febf",
+    "text": "İşlem hatası",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:51:37.164379Z"
   }
 }

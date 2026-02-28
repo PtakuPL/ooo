@@ -1,12 +1,12 @@
 {
   "lang": "nl",
   "script_group": "latin",
-  "total_keys": 53770,
-  "translated": 3919,
-  "identical_to_en": 2900,
-  "placeholder_keys": 49831,
-  "coverage_pct": 7.3,
-  "issues_total": 4,
+  "total_keys": 74492,
+  "translated": 73613,
+  "identical_to_en": 64901,
+  "placeholder_keys": 859,
+  "coverage_pct": 98.8,
+  "issues_total": 10,
   "issues_by_type": {
     "V4_artifact": 5,
     "V2_length_ratio": 4,
@@ -18,7 +18,7 @@
     "MEDIUM": 4,
     "LOW": 0
   },
-  "score": 99.9,
+  "score": 100.0,
   "worst_keys": [
     {
       "key": "scripts.actions_rewards.msg_1",
@@ -82,12 +82,12 @@
     }
   ],
   "crossref": {
-    "enabled": false,
-    "issues_total": 409,
-    "consistency": 0,
+    "enabled": true,
+    "issues_total": 414,
+    "consistency": 5,
     "pl_reference": 400,
     "length_ratio": 9,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T20:41:08.551444Z"
+  "validated_at": "2026-02-26T20:14:01.193995Z"
 }

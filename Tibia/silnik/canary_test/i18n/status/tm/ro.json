@@ -30208,12 +30208,12 @@
     "updated_at": "2026-02-17T01:56:40.212809Z"
   },
   "npc.a_dead_bureaucrat3.say_1": {
-    "src_hash": "015bef68461eea886ca860eae9b35852",
-    "text": "Am fost și eu un {}, înainte de a muri!! Ce vrei de la mine?",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "src_hash": "1941a18726383c53082d1a2e099dd157",
+    "text": "Spune-mi dacă ți-a plăcut când te întorci. Cum te numești?",
+    "source": "free_gt",
+    "confidence": 0.85,
     "verified": false,
-    "updated_at": "2026-02-17T01:56:40.213228Z"
+    "updated_at": "2026-02-26T19:10:15.936865Z"
   },
   "npc.a_dead_bureaucrat3.say_3": {
     "src_hash": "42b8982fe2885887a8bed5a3e2fc0184",
@@ -35416,12 +35416,12 @@
     "updated_at": "2026-02-17T03:08:33.692871Z"
   },
   "npc.a_dead_bureaucrat4.say_1": {
-    "src_hash": "607d8b9a0101890da602c6e0916a8755",
-    "text": "{}, așa-i?! Ce vrei de la mine?",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "src_hash": "9bbd1dde5a92acc76b100e855f30de96",
+    "text": "Nu sunt sigur dacă știi ce faci, dar oricum. Numele tău este?",
+    "source": "free_gt",
+    "confidence": 0.85,
     "verified": false,
-    "updated_at": "2026-02-17T03:08:36.362044Z"
+    "updated_at": "2026-02-26T19:10:15.937508Z"
   },
   "npc.a_dead_bureaucrat4.say_3": {
     "src_hash": "3633424b018ff3b8100d839f33e33641",
@@ -76230,5 +76230,1437 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T20:49:25.597788Z"
+  },
+  "php.exception.text2": {
+    "src_hash": "f9e6bdf920528f103378f0df2dae264e",
+    "text": "$message<br/><br/>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:36:57.980306Z"
+  },
+  "module.hireling_module.text1": {
+    "src_hash": "e99642285b1df7df398ed44d38eafa66",
+    "text": "Pereira (jlcvp)',",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:45:48.531830Z"
+  },
+  "module.gamestore.text2": {
+    "src_hash": "6e202427005530bcf8e8a31254e8920e",
+    "text": "home/banner_armouredarcher.png",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:45:48.536904Z"
+  },
+  "module.gamestore.text3": {
+    "src_hash": "bd4b6c6470d8ed138dc0f541b377d424",
+    "text": "home/banner_podiumoftenacity.png",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:45:48.538452Z"
+  },
+  "achievement.9.name": {
+    "src_hash": "189d4baff9dd822bda8f3c39e883c348",
+    "text": "Lord Protector",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.503017Z"
+  },
+  "achievement.31.name": {
+    "src_hash": "fc7169fcfe554297348131c5d885735c",
+    "text": "Marid Ally",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.543213Z"
+  },
+  "achievement.32.name": {
+    "src_hash": "61ac595863ca09842f09930e5c3828ad",
+    "text": "Efreet Ally",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.545650Z"
+  },
+  "achievement.37.name": {
+    "src_hash": "7c4fd821b693753b5075f58d226ec894",
+    "text": "Bearhugger",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.554892Z"
+  },
+  "achievement.48.name": {
+    "src_hash": "47f25e9e58f8a293d28b68f7c5913561",
+    "text": "Matchmaker",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.576841Z"
+  },
+  "achievement.53.name": {
+    "src_hash": "42a07db3b617cae8c9df0f38d2553f43",
+    "text": "Scrapper",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.586704Z"
+  },
+  "achievement.64.name": {
+    "src_hash": "1defd3125fe26671fbd0939ff7c86fb8",
+    "text": "Waverider",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.603016Z"
+  },
+  "achievement.65.name": {
+    "src_hash": "9b997d21495dbcdcb3a00095e4b6e1f5",
+    "text": "Rockstar",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.605175Z"
+  },
+  "achievement.71.name": {
+    "src_hash": "2dd719d0587fcbf36410e4d984dc107f",
+    "text": "Firewalker",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.615159Z"
+  },
+  "achievement.77.name": {
+    "src_hash": "0e8af28d386ddc884ca3678db1695a6a",
+    "text": "Jinx",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.626681Z"
+  },
+  "achievement.93.name": {
+    "src_hash": "1b39f2208c291c598f84649b2827a5c7",
+    "text": "Jamjam",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.655030Z"
+  },
+  "achievement.110.name": {
+    "src_hash": "cbfa8981b409c5046e3ab4b571d01318",
+    "text": "Bluebarian",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.684146Z"
+  },
+  "achievement.121.name": {
+    "src_hash": "2177d1cc91140b5e6536eb79c15cb11c",
+    "text": "Rollercoaster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.702823Z"
+  },
+  "achievement.122.name": {
+    "src_hash": "bbd51443a3bd4a035c717892892bd439",
+    "text": "Transmutator",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.704719Z"
+  },
+  "achievement.123.name": {
+    "src_hash": "5ee5ec9d8e6b181960c2be1df5f1ad81",
+    "text": "Berserker",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.707515Z"
+  },
+  "achievement.142.name": {
+    "src_hash": "34994f41097fed93e309c74cb42cc2f3",
+    "text": "Godslayer",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.743232Z"
+  },
+  "achievement.152.name": {
+    "src_hash": "026e04b1091097b779fb875bdd8b0799",
+    "text": "Demonbane",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.762798Z"
+  },
+  "achievement.157.name": {
+    "src_hash": "17c7053cf341d1fdf57a36a57dc8c7fe",
+    "text": "Aristocrat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.772419Z"
+  },
+  "achievement.160.name": {
+    "src_hash": "e4e28e54eecbb0efe7d77914e2949b5e",
+    "text": "Swashbuckler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.778481Z"
+  },
+  "achievement.162.name": {
+    "src_hash": "961ee3e3448e7b9cd0e24c4213c24092",
+    "text": "Ritualist",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.783371Z"
+  },
+  "achievement.165.name": {
+    "src_hash": "379e2d469d453c31d92ec4a4c7a19290",
+    "text": "Peazzekeeper",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.789829Z"
+  },
+  "achievement.177.name": {
+    "src_hash": "b4592ad51442b9d95a072a652ebeb0df",
+    "text": "Baby Sitter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.810014Z"
+  },
+  "achievement.185.name": {
+    "src_hash": "6caec29927843945c535d26410a2501e",
+    "text": "Banebringers' Bane",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.824974Z"
+  },
+  "achievement.194.name": {
+    "src_hash": "bd36c84aa694bf242692a99e10c02358",
+    "text": "Ashes to Dust",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:01:36.841831Z"
+  },
+  "item.10334.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "marauder orc mort",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T02:06:28.546685Z"
+  },
+  "item.10335.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "marauder orc mort",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T02:06:28.547452Z"
+  },
+  "item.10337.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "marauder orc mort",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T02:06:28.548589Z"
+  },
+  "item.11667.name": {
+    "src_hash": "770e51ca85f88a2ba066ab1f2ea5c70c",
+    "text": "draken abomination mort",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T02:06:28.788599Z"
+  },
+  "item.11668.name": {
+    "src_hash": "770e51ca85f88a2ba066ab1f2ea5c70c",
+    "text": "draken abomination mort",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T02:06:28.789463Z"
+  },
+  "item.11669.name": {
+    "src_hash": "770e51ca85f88a2ba066ab1f2ea5c70c",
+    "text": "draken abomination mort",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T02:06:28.790313Z"
+  },
+  "item.11670.name": {
+    "src_hash": "770e51ca85f88a2ba066ab1f2ea5c70c",
+    "text": "draken abomination mort",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T02:06:28.791084Z"
+  },
+  "npc.a_fluffy_squirrel.voice_1": {
+    "src_hash": "9280e35fe8a04c63939438a4aded92fa",
+    "text": "Chchch",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:07:59.911008Z"
+  },
+  "npc.alexander.say_3": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Bine atunci.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:08:00.343728Z"
+  },
+  "monster.deathspawn.name": {
+    "src_hash": "a5093d8d030e55f6d31522da7b0f1e1b",
+    "text": "Deathspawn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.032628Z"
+  },
+  "monster.slime.name": {
+    "src_hash": "a537a3d7d5ede5718f2b597568233925",
+    "text": "Slime",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.036613Z"
+  },
+  "monster.sandcrawler.name": {
+    "src_hash": "89f2b95e559a3e5addf3bd18f7791f67",
+    "text": "Sandcrawler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.053696Z"
+  },
+  "monster.bazir.name": {
+    "src_hash": "ee6529472291958a195a6bed85a9515f",
+    "text": "Bazir",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.057703Z"
+  },
+  "monster.bazir.desc": {
+    "src_hash": "ee6529472291958a195a6bed85a9515f",
+    "text": "Bazir",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.058383Z"
+  },
+  "monster.dragon.name": {
+    "src_hash": "583f4be146b6127f9e4f3f036ce7df43",
+    "text": "Dragon",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.062623Z"
+  },
+  "monster.old_pig.voice_2": {
+    "src_hash": "6beac3bab1b036233843a0aa676cec59",
+    "text": "Oink",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.070364Z"
+  },
+  "monster.weeper.voice_1": {
+    "src_hash": "f50128529bbb1e1c7b54cd3e7cfff158",
+    "text": "Moooaaan",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.074560Z"
+  },
+  "monster.eternal_guardian.voice_1": {
+    "src_hash": "b2298625f79199beaa1860c3ba3746e5",
+    "text": "Zzrrkrrch!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.076028Z"
+  },
+  "monster.worker_golem.voice_3": {
+    "src_hash": "805805b049784780386cc2b1d9ed5ad7",
+    "text": "Rrrtttarrrttarrrtta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.078657Z"
+  },
+  "monster.war_golem.voice_9": {
+    "src_hash": "805805b049784780386cc2b1d9ed5ad7",
+    "text": "Rrrtttarrrttarrrtta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.082841Z"
+  },
+  "monster.glooth_golem.voice_1": {
+    "src_hash": "9f3f9ac546f3c7b11c19a4917d2250b1",
+    "text": "*slosh*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.084672Z"
+  },
+  "monster.shrieking_cry_stal.voice_1": {
+    "src_hash": "b3f5828c9a0e081d07951686a622e9b4",
+    "text": "La-la-la..AAAHHHH!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.089258Z"
+  },
+  "monster.enraged_crystal_golem.voice_1": {
+    "src_hash": "2e0b6a2f7fd47d8b5be9d720fc533346",
+    "text": "Crrrrk! Chhhhr!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.091154Z"
+  },
+  "monster.rustheap_golem.voice_2": {
+    "src_hash": "56bc09c1fedd0303a72b7d43979414db",
+    "text": "*krrk*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.093190Z"
+  },
+  "monster.rustheap_golem.voice_3": {
+    "src_hash": "250888bea4241d8acd389f2dd26597ab",
+    "text": "*frzzp*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.094028Z"
+  },
+  "monster.damaged_worker_golem.voice_5": {
+    "src_hash": "805805b049784780386cc2b1d9ed5ad7",
+    "text": "Rrrtttarrrttarrrtta",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.096758Z"
+  },
+  "monster.walker.voice_1": {
+    "src_hash": "db703710bc7e58956cf5831a545e1aa9",
+    "text": "*clop clop*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.101419Z"
+  },
+  "monster.walker.voice_2": {
+    "src_hash": "9f3f9ac546f3c7b11c19a4917d2250b1",
+    "text": "*slosh*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.102238Z"
+  },
+  "monster.sandstone_scorpion.voice_2": {
+    "src_hash": "db670b6ec1d1c7d9f09c26b738055841",
+    "text": "*tak tak*",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.104030Z"
+  },
+  "monster.magma_crawler.name": {
+    "src_hash": "2fcf8fab6d3a29374688ea5301eda00f",
+    "text": "Magma Crawler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.105017Z"
+  },
+  "monster.magma_crawler.voice_1": {
+    "src_hash": "0c21db4d9c35a2ad18fd9d9cebc6a90d",
+    "text": "Crrroak!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.106185Z"
+  },
+  "monster.infected_weeper.voice_1": {
+    "src_hash": "f50128529bbb1e1c7b54cd3e7cfff158",
+    "text": "Moooaaan",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.112369Z"
+  },
+  "monster.green_frog.voice_1": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Ribbit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:16:09.117673Z"
+  },
+  "data.otservbr.global.npc.anerui.L71.1487": {
+    "src_hash": "aa4114434bc744c1e617f6dab17ec06c",
+    "text": "Ashari |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:22:40.333617Z"
+  },
+  "data.otservbr.global.npc.anerui.L72.1488": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Asha Thrazi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:22:40.334492Z"
+  },
+  "data.otservbr.global.npc.anerui.L73.1489": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Asha Thrazi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:22:40.335438Z"
+  },
+  "data.otservbr.global.npc.brasith.L59.1211": {
+    "src_hash": "afb8a66bbd457858c305533b93f273bb",
+    "text": "Ashari, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:22:40.382790Z"
+  },
+  "data.otservbr.global.npc.brasith.L60.1212": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Asha Thrazi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:22:40.383668Z"
+  },
+  "data.otservbr.global.npc.brasith.L61.1213": {
+    "src_hash": "8d8cc3a78ab40b5ed8ed329ee206b50d",
+    "text": "Asha Thrazi.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:22:40.384582Z"
+  },
+  "scripts.action_cat_basket.say_1": {
+    "src_hash": "2640241ef563e67c405bc0dbe5b18ed4",
+    "text": "Fchhhhh",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:28:58.894603Z"
+  },
+  "scripts.action_cushion.say_1": {
+    "src_hash": "0446678e7803beb759d1d55e785199e4",
+    "text": "Woooosh!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:28:58.897275Z"
+  },
+  "scripts.actions_lever_barrel.say_1": {
+    "src_hash": "da27e0b3236d8dfa97cd872abf8e43e4",
+    "text": "Tsssss...!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:28:59.025141Z"
+  },
+  "scripts.actions_resonance_chamber.say_1": {
+    "src_hash": "adc5fb51a0700429d5586beda62c4f6e",
+    "text": "PRRRROOOOOAAAAAHHHH!!!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:28:59.088971Z"
+  },
+  "otclient_modules.assign_text_otui.tr_4": {
+    "src_hash": "ed2fc2838f7edb7607dd1cd19f3a82e0",
+    "text": "Text:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:38:12.626146Z"
+  },
+  "otclient_modules.bestiary.tr_7": {
+    "src_hash": "66c4c5112f455a19afde47829df363fa",
+    "text": "Total:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:38:12.634053Z"
+  },
+  "web.tpl.forum.add_board.td_4": {
+    "src_hash": "2db2e9fa57ca7c20f30927b16ef3327e",
+    "text": "Guild:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:46:04.938749Z"
+  },
+  "cpp.look.atk": {
+    "src_hash": "9ff5b76a274bfefbe0bf7f9c84619407",
+    "text": "Atk:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:53:09.386128Z"
+  },
+  "cpp.look.def": {
+    "src_hash": "8f1ed4a84db49e6dab0957eeec575701",
+    "text": "Def:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:53:09.390748Z"
+  },
+  "cpp.look.vol": {
+    "src_hash": "7452679e466bae7faecbc4b8dda51786",
+    "text": "Vol:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:53:09.408743Z"
+  },
+  "arena.title.gladiator": {
+    "src_hash": "f92b36491af502e1a73ef7aa499211b0",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:57:40.029785Z"
+  },
+  "client.createaccount.text4": {
+    "src_hash": "28da1f8c092c0ad093b4cd1df2ae3257",
+    "text": "getaccountcreationstatus",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:01:17.045026Z"
+  },
+  "client.game_highscore.text4": {
+    "src_hash": "2a44f87fa0c74e0b58a5748460f0249d",
+    "text": "Retro Hardcore Pvp",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:01:17.106916Z"
+  },
+  "monster.green_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Ribbit! Ribbit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:28:28.722905Z"
+  },
+  "monster.salamander.voice_1": {
+    "src_hash": "5265cbb11545933ece781c0f0285cc28",
+    "text": "Chrrch!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:28:28.723805Z"
+  },
+  "monster.infernal_frog.voice_1": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Ribbit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:28:28.724631Z"
+  },
+  "monster.infernal_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Ribbit! Ribbit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:28:28.725544Z"
+  },
+  "monster.orchid_frog.voice_1": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Ribbit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:28:28.727257Z"
+  },
+  "monster.orchid_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Ribbit! Ribbit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:28:28.728206Z"
+  },
+  "monster.azure_frog.voice_1": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Ribbit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:28:28.729031Z"
+  },
+  "monster.azure_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Ribbit! Ribbit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:28:28.729961Z"
+  },
+  "monster.bog_frog.voice_1": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Ribbit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:28:28.731011Z"
+  },
+  "monster.bog_frog.voice_2": {
+    "src_hash": "35bf0989b6e1cf8042449ba434cc03b3",
+    "text": "Ribbit! Ribbit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:28:28.732005Z"
+  },
+  "monster.makara.name": {
+    "src_hash": "3c71ac3f76f14f19af29c607e4884b32",
+    "text": "Makara",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:28:28.732774Z"
+  },
+  "monster.makara.voice_2": {
+    "src_hash": "a44c1185e369be424f9e21f987c95bc0",
+    "text": "Nihahaha!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:28:28.734145Z"
+  },
+  "monster.crimson_frog.voice_1": {
+    "src_hash": "5f6ceeccb725ed9156272e443ac95761",
+    "text": "Ribbit!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:28:28.734973Z"
+  },
+  "raid.weakened_shlorg.name": {
+    "src_hash": "7d6db214fa9761098b8e5462761b864c",
+    "text": "Shlorg Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T17:32:10.030416Z"
+  },
+  "talkaction.gm.spy.msg_stack_count": {
+    "src_hash": "c88a69258fad4f2e61cc6491c164486c",
+    "text": "({0}x)",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:11:46.233755Z"
+  },
+  "talkaction.god.kv.msg_allkv_value": {
+    "src_hash": "9b8b418455abaea5cc33735652cb8833",
+    "text": "kv[{key}] = {value}",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:11:46.276404Z"
+  },
+  "item.10096.name": {
+    "src_hash": "cd2878e9d8d9bd39b4e50c83b5990cc8",
+    "text": "stacke",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.388360Z"
+  },
+  "item.10180.name": {
+    "src_hash": "418acd2dc26b4e76fa2db55ab2f3e659",
+    "text": "groud",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.388844Z"
+  },
+  "item.10190.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "dead draken warmaster",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.389713Z"
+  },
+  "item.10191.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "dead draken warmaster",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.390450Z"
+  },
+  "item.10192.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "dead draken warmaster",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.391178Z"
+  },
+  "item.10193.name": {
+    "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
+    "text": "dead draken warmaster",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.391868Z"
+  },
+  "item.10388.name": {
+    "src_hash": "373afc213a9bc8b34a14a6cb3d1cadba",
+    "text": "drakinata",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.392537Z"
+  },
+  "item.10391.name": {
+    "src_hash": "14d0ab7dd6dbb7192ef42e58e739a6e5",
+    "text": "drachaku",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.393038Z"
+  },
+  "item.10727.name": {
+    "src_hash": "8789a6a22faa24660fcdc4f2baf665db",
+    "text": "dreadcoil",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.393491Z"
+  },
+  "item.11317.name": {
+    "src_hash": "ee26908bf9629eeb4b37dac350f4754a",
+    "text": "blob",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.393912Z"
+  },
+  "item.11461.name": {
+    "src_hash": "fb8da64f829e8fc7b40a665758c069e6",
+    "text": "broccoli",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.394701Z"
+  },
+  "item.12575.name": {
+    "src_hash": "9a38c6b8cd9de92eb021328f0d5a2383",
+    "text": "Whinona",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.395971Z"
+  },
+  "item.12576.name": {
+    "src_hash": "9c0a44006bbd6053818d4d98198629a8",
+    "text": "Meandi",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.396261Z"
+  },
+  "item.12577.name": {
+    "src_hash": "b3952bf8fa5443b9aa971154a2fb1bf1",
+    "text": "Impward",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.396540Z"
+  },
+  "item.12578.name": {
+    "src_hash": "4ad2676a1c2f6c7e7d37c5f73688d990",
+    "text": "Evilina",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.397033Z"
+  },
+  "item.12579.name": {
+    "src_hash": "9a38c6b8cd9de92eb021328f0d5a2383",
+    "text": "Whinona",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.397653Z"
+  },
+  "item.12580.name": {
+    "src_hash": "9c0a44006bbd6053818d4d98198629a8",
+    "text": "Meandi",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.398461Z"
+  },
+  "item.12581.name": {
+    "src_hash": "b3952bf8fa5443b9aa971154a2fb1bf1",
+    "text": "Impward",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:34.399259Z"
+  },
+  "item.12582.name": {
+    "src_hash": "4ad2676a1c2f6c7e7d37c5f73688d990",
+    "text": "Evilina",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:38.747886Z"
+  },
+  "item.12805.name": {
+    "src_hash": "4cbbfdb7975446e785c9ecd2ac2a635e",
+    "text": "yielocks",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:38.748201Z"
+  },
+  "item.12813.desc": {
+    "src_hash": "fb5051e5e2987f7655e52d397a230ad6",
+    "text": "Acordat de RadioTibia.com.br pentru a auzi sunetele lui Tibia",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:38.749219Z"
+  },
+  "item.14167.name": {
+    "src_hash": "369f8bc0f87f40179cf4dfd57f14ac62",
+    "text": "deepling spawn",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:38.749692Z"
+  },
+  "item.14250.name": {
+    "src_hash": "868e5295e468c07f6ad4cff90c6202ea",
+    "text": "deepling squelcher",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:38.750178Z"
+  },
+  "item.16104.name": {
+    "src_hash": "305c835234499b840b34fef3742213e1",
+    "text": "gill gugel",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:05:38.750514Z"
+  },
+  "npc.a_dead_bureaucrat1.say_9": {
+    "src_hash": "6c558828065bb071d2bead0fc23aef37",
+    "text": "INCREDIBIL, ai reusit!! Distreaza-te la Pumin's Domain!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:15.936114Z"
+  },
+  "npc.a_fluffy_squirrel.greet_msg_1": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "Chhchh?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:15.937840Z"
+  },
+  "npc.a_sweaty_cyclops.greet_msg_1": {
+    "src_hash": "025ccad83c8ee53583a293f12ca55b56",
+    "text": "Hum Humm! Bun venit lui |PLAYERNAME|.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:15.939798Z"
+  },
+  "npc.a_sweaty_cyclops.say_14": {
+    "src_hash": "2d40cbe96c0e6accd6111df15b45c3c6",
+    "text": "Cling clang!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:15.940292Z"
+  },
+  "npc.a_sweaty_cyclops.say_16": {
+    "src_hash": "2d40cbe96c0e6accd6111df15b45c3c6",
+    "text": "Cling clang!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:15.940727Z"
+  },
+  "npc.a_sweaty_cyclops.say_18": {
+    "src_hash": "2d40cbe96c0e6accd6111df15b45c3c6",
+    "text": "Cling clang!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:15.941134Z"
+  },
+  "npc.a_sweaty_cyclops.say_20": {
+    "src_hash": "2d40cbe96c0e6accd6111df15b45c3c6",
+    "text": "Cling clang!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:15.941538Z"
+  },
+  "npc.a_sweaty_cyclops.say_23": {
+    "src_hash": "2d40cbe96c0e6accd6111df15b45c3c6",
+    "text": "Cling clang!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:15.942026Z"
+  },
+  "npc.a_weakened_forest_fury.multi_8": {
+    "src_hash": "2604532e005fa4358433885748c9f485",
+    "text": "{seeds} furate trebuie smulse din {intruders} și plantate acolo unde pământul încă flămânzește. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:15.942887Z"
+  },
+  "npc.a_weakened_forest_fury.multi_9": {
+    "src_hash": "ec255bee3e133245c94c19e83f1fba9d",
+    "text": "Cel mai pur {water} din cea mai pură fântână trebuie adus acolo și turnat și {birds} care dau viață trebuie să fie readus în sanctul interior al poienii. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:15.944552Z"
+  },
+  "npc.albinius.multi_1": {
+    "src_hash": "6db1f2b62d92a40fd65f24d1b6158eeb",
+    "text": "{Shapers} erau o civilizație avansată, bine versată în artă, construcție, limbaj și explorarea lumii noastre la vremea lor. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:15.947688Z"
+  },
+  "npc.alesar.multi_18": {
+    "src_hash": "d9a9d403c1ba480d6703285ada8cf247",
+    "text": "Hahahaha! ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:22.618210Z"
+  },
+  "npc.alesar.multi_6": {
+    "src_hash": "e09c1e901d9793510c6fce1671d2ff6a",
+    "text": "Bine atunci, om. Ați auzit vreodată de {'Tears of Daraman'}? ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:22.618886Z"
+  },
+  "npc.alesar_functions.multi_6": {
+    "src_hash": "e09c1e901d9793510c6fce1671d2ff6a",
+    "text": "Bine atunci, om. Ați auzit vreodată de {'Tears of Daraman'}? ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:22.619616Z"
+  },
+  "npc.alexander.greet_msg_1": {
+    "src_hash": "6fe4b246c8652dfd3d389d9b352404d9",
+    "text": "Bună ziua |PLAYERNAME| și bun venit la magazinul {magic}.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:10:22.620204Z"
+  },
+  "monster.devourer.name": {
+    "src_hash": "20e78583681b88358cc69d12d8c88e9c",
+    "text": "Mort",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T19:22:55.101307Z"
+  },
+  "data.otservbr.global.npc.a.sweaty.cyclops.L227.68": {
+    "src_hash": "025ccad83c8ee53583a293f12ca55b56",
+    "text": "Hum Humm! Bun venit lui |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T19:34:49.540762Z"
+  },
+  "data.otservbr.global.npc.alexander.L171.1567": {
+    "src_hash": "6fe4b246c8652dfd3d389d9b352404d9",
+    "text": "Bună ziua |PLAYERNAME| și bun venit la magazinul {magic}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T19:34:49.552529Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "Chhchh?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:34:59.116440Z"
+  },
+  "data.otservbr.global.npc.a.restless.soul.L56.45": {
+    "src_hash": "1b94f0ee22bb6bee9ffaf3dbadde4810",
+    "text": "Ahhhh! În sfârșit, cineva care poate să-mi asculte {story}!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:34:59.119601Z"
+  },
+  "data.otservbr.global.npc.appaloosa.L109.1145": {
+    "src_hash": "747f1f8d859ffaa58983e63346f46d10",
+    "text": "Salutări, |PLAYERNAME| Cred că ești aici pentru {horses}.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:34:59.121272Z"
+  },
+  "data.otservbr.global.npc.broken.servant.sentry.L125.702": {
+    "src_hash": "7f282da5e4d3782819b34cc989e6b9ac",
+    "text": "Maestrul este-este-este-este mort. Plea*chrrrrchk*se. Fi. În. Doliu.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:34:59.122364Z"
+  },
+  "data.otservbr.global.npc.bruno.L61.437": {
+    "src_hash": "059e1779562262cde06156c3a7f61f6d",
+    "text": "Ahoi, |PLAYERNAME|. Vrei să cumperi niște pește proaspăt?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:34:59.122963Z"
+  },
+  "data.otservbr.global.npc.captain.max.L85.659": {
+    "src_hash": "055d9531bb5e57ab27557cac78d1fe67",
+    "text": "Ahoi, |PLAYERNAME|. Într-o misiune pentru societatea de exploratori, nu?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:34:59.125170Z"
+  },
+  "data.otservbr.global.npc.captain.max.calassa.L68.1312": {
+    "src_hash": "055d9531bb5e57ab27557cac78d1fe67",
+    "text": "Ahoi, |PLAYERNAME|. Într-o misiune pentru societatea de exploratori, nu?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:34:59.125734Z"
+  },
+  "data.otservbr.global.npc.caramellia.L100.981": {
+    "src_hash": "f961c17f457adadb0a12008386d08b17",
+    "text": "Bună ziua, |PLAYERNAME|. Vă rog să mă lăsați în pace în {mourning}.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:34:59.126560Z"
+  },
+  "data.otservbr.global.npc.chemar.L87.743": {
+    "src_hash": "c5fa648ec9c917db8d6158cba9a21ddf",
+    "text": "Binecuvântările lui Daraman, călător |PLAYERNAME|.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:35:05.393141Z"
+  },
+  "quests.bigfoot_burden.gnomedix_msg5": {
+    "src_hash": "f0beac42b125618212c32af54f84907e",
+    "text": "Gnomedix: Am nevoie de un burghiu! Gnomenursey, repede!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:40:24.432289Z"
+  },
+  "quests.inquisition.teleport_say_29": {
+    "src_hash": "4ae399bcc62da3ce8337ed5ae17105c5",
+    "text": "Intrarea în Shadow Nexus. Abandoneaza orice speranta.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:40:24.433581Z"
+  },
+  "quests.soul_war.megalomania_defeat": {
+    "src_hash": "0de22219409ddfb2002e0f47ada916fd",
+    "text": "Ai învins Megalomania lui Goshnar!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:40:24.434138Z"
+  },
+  "quests.unnatural_selection.mission2_say_9": {
+    "src_hash": "67cf8ccb8c769f6eb9c63051209457a0",
+    "text": "Frumos! Alb în alb cât poate vedea cu ochiul. E timpul să pleci înainte ca degetele tale să se transforme în țurțuri.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:40:24.435358Z"
+  },
+  "gamestore.disabled.max_prey_wildcards": {
+    "src_hash": "19b4910bc35b9b4357a1dbcd309465c2",
+    "text": "Aveți deja maximum de wildcards pradă.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.857607Z"
+  },
+  "quest.soul_war.boss_progress_header": {
+    "src_hash": "44523c531274569607880af96df538ce",
+    "text": "Progresul către accesul la șef Mirrored Nightmare:",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.858268Z"
+  },
+  "scripts.actions_devourer_access.msg_1": {
+    "src_hash": "9e1b9342419d4d7c23b729d25cca4d30",
+    "text": "Accesul la World Devourer a fost lansat!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.858763Z"
+  },
+  "scripts.actions_devourer_access.msg_2": {
+    "src_hash": "5359d58b2e964269b9f14b0901f96f34",
+    "text": "Accesul la World Devourer este deja lansat!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.859227Z"
+  },
+  "scripts.actions_frozen_horror.msg_2": {
+    "src_hash": "8dae5a0782a66d791fb9ea74ff2d431f",
+    "text": "Cineva se luptă cu Frozen Horror.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.859743Z"
+  },
+  "scripts.actions_goldenIdol.msg_2": {
+    "src_hash": "55c38f7eb32df2ebb650f72cea066491",
+    "text": "Există deja un idol aici. Încearcă un alt altar.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.860323Z"
+  },
+  "scripts.actions_palanca.msg_1": {
+    "src_hash": "9aafdd37fb3d7390d6e6e87e76438c93",
+    "text": "<sizzle> <fizz>",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.860768Z"
+  },
+  "scripts.actions_pyramids1.msg_1": {
+    "src_hash": "9aafdd37fb3d7390d6e6e87e76438c93",
+    "text": "<sizzle> <fizz>",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.861161Z"
+  },
+  "scripts.actions_teleportation_rod.msg_1": {
+    "src_hash": "cf5f5daa675c722dc62e11468b44a4fa",
+    "text": "Ai teleportat deja această parte a Godbreaker la Mazarius.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.861783Z"
+  },
+  "scripts.claw_of_the_noxious_spawn.msg_1": {
+    "src_hash": "659df918540db33b0957df7ac8ea6dd3",
+    "text": "Ești blestemat de The Noxious Spawn!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.862328Z"
+  },
+  "scripts.create_npc.msg_4": {
+    "src_hash": "6e6a801dd5eb002d031dc66ab63c6a26",
+    "text": "Spawn permanent NPC adăugat la fișierul hartă.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.862862Z"
+  },
+  "scripts.creaturescripts_bosses_killed.msg_1": {
+    "src_hash": "51ab2fd42338a5eaf932b1e8a79cbd69",
+    "text": "Felicitări! Ați câștigat o ținută Decaying Defender.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.863453Z"
+  },
+  "scripts.creaturescripts_raging_mage_1.say_3": {
+    "src_hash": "4afd7936f837f55edfbf94325b3c06c6",
+    "text": "MWAAAHAHAAA!! NICI UNUL!! NIMENI NU POATE ÎNVINGE PE MEEE!!!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.864218Z"
+  },
+  "scripts.creaturescripts_raging_mage_1.say_4": {
+    "src_hash": "4afd7936f837f55edfbf94325b3c06c6",
+    "text": "MWAAAHAHAAA!! NICI UNUL!! NIMENI NU POATE ÎNVINGE PE MEEE!!!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.864771Z"
+  },
+  "scripts.creaturescripts_rift_invader_death.say_2": {
+    "src_hash": "7352ea10e6f75cf86b0aab255c51f18a",
+    "text": "Energia negativă a creaturii rupturii este absorbită de cristal!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.865409Z"
+  },
+  "scripts.creaturescripts_rift_invader_death.say_3": {
+    "src_hash": "bf9909f5c39a6d008927e446e981853b",
+    "text": "FERUMBRAS ZUCCHEȘTE ÎN AȘTII DE SUFLET!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.865903Z"
+  },
+  "scripts.creaturescripts_sandking.say_1": {
+    "src_hash": "44e03d3a746f5c201cae4258172e78e6",
+    "text": "SANDKING DISPERE ÎN NIPȘ ȘI PUTEA SA APARE!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.866528Z"
+  },
+  "scripts.creaturescripts_sandking.say_2": {
+    "src_hash": "44e03d3a746f5c201cae4258172e78e6",
+    "text": "SANDKING DISPERE ÎN NIPȘ ȘI PUTEA SA APARE!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.867066Z"
+  },
+  "scripts.creaturescripts_sandking.say_3": {
+    "src_hash": "af07f4d2432105b39041e2cc296b1f1d",
+    "text": "PRODUSUL SE RETRAGE ȘI SANDKING ÎN APARE PENTRU A-ȘI PROTEJA PRODOMULUI!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:12.867701Z"
+  },
+  "scripts.creaturescripts_scarlett.say_1": {
+    "src_hash": "4b92ef4f6344022ff1e9ebbe992ffb8d",
+    "text": "Galthen... tu ești?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:21.073526Z"
+  },
+  "scripts.creaturescripts_sir_baeloc_health.say_1": {
+    "src_hash": "52445d3bb7306ea9de149584812e8541",
+    "text": "Alătură-te mie în luptă, fratele meu. Să împărtășim distracția!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:21.074266Z"
+  },
+  "scripts.creaturescripts_spark_death.say_1": {
+    "src_hash": "2d47ad020a0b969343320caf428e9bbd",
+    "text": "Camera este complet încărcată! Ești pătruns de puterea ei și te poți aventura mai adânc în inima distrugerii acum!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:21.075114Z"
+  },
+  "scripts.creaturescripts_spark_death.say_2": {
+    "src_hash": "fff4f707765feaf7d116c9fa9a4df758",
+    "text": "Moartea scânteii încarcă camera!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:21.075613Z"
+  },
+  "scripts.creaturescripts_think_the_ravager_heal.say_1": {
+    "src_hash": "acf731c1182c64a14dcccedd948e7ea5",
+    "text": "Ravagerul este vindecat de ciudata rună de podea!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:21.076189Z"
+  },
+  "scripts.creaturescripts_thorn_knight_death.say_1": {
+    "src_hash": "af73d089139d540367b25c956c28c5a4",
+    "text": "Cavalerul ghimpilor se demontează!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:46:21.076711Z"
+  },
+  "raid.arachir_the_ancient_one.name": {
+    "src_hash": "0a30cc23ffefbf66b30e5409951d05dc",
+    "text": "Arachir The Ancient One",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:59:28.035908Z"
+  },
+  "raid.zevelon_duskbringer.name": {
+    "src_hash": "5ce47d3193e6d4fdcb52a667ed3dd600",
+    "text": "Zevelon Duskbringer",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:59:28.036587Z"
+  },
+  "raid.zulazza_the_corruptor.name": {
+    "src_hash": "50f128ec9e12698f936e0ea56a2b2b61",
+    "text": "Zulazza The Corruptor",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:59:28.037259Z"
   }
 }

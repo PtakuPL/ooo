@@ -1,212 +1,17 @@
 {
   "lang": "sv",
-  "coverage_pct": 31.4,
-  "crossref_enabled": true,
+  "coverage_pct": 22.7,
+  "crossref_enabled": false,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T20:41:13.512750Z",
-  "issues_total": 427,
+  "checked_at": "2026-02-26T20:14:05.960953Z",
+  "issues_total": 417,
   "issues_by_type": {
-    "consistency_in_language": 13,
+    "consistency_in_language": 0,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 14
+    "length_ratio_crosscheck": 17
   },
-  "consistency_issues": [
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "head",
-      "variants": [
-        "Huvud",
-        "huvud"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "cpp:cpp.inspect.body_head",
-        "items:item.33932.name",
-        "items:item.33937.name"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Close",
-      "variants": [
-        "Nära",
-        "Stäng"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "libs:lib.player.modal_button_close",
-        "otclient_modules:otclient_modules.calendar_otui.tr_1",
-        "otclient_modules:otclient_modules.console.tr_32"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "No",
-      "variants": [
-        "Inga",
-        "Nej"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "libs:lib.player.modal_button_no",
-        "otclient_modules:otclient_modules.character.tr_56",
-        "otclient_modules:otclient_modules.charms.tr_1",
-        "otclient_modules:otclient_modules.charms.tr_13",
-        "otclient_modules:otclient_modules.charms.tr_17"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Cosmic Energy Prism B",
-      "variants": [
-        "Kosmisk energi Prisma B",
-        "Kosmisk energi prisma B"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "monsters:monster.cosmic_energy_prism_b.name",
-        "monsters:monster.cosmic_energy_prism_b_invu.name"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "The Diamond Blossom",
-      "variants": [
-        "Diamantblomman",
-        "Diamantblomningen"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "monsters:monster.the_diamond_blossom.name",
-        "monsters:monster.the_diamond_blossom.desc"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "My lich-knights will conquer this world for me!",
-      "variants": [
-        "Mina lich-riddare kommer att erövra den här världen för mig!",
-        "Mina lich-riddare kommer att erövra denna värld för mig!"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "monsters:monster.king_zelos.voice_3",
-        "monsters:monster.the_brainstealer.voice_3",
-        "monsters:monster.brain_head.voice_3",
-        "monsters:monster.cerebellum.voice_3"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "I will punish the sinners!",
-      "variants": [
-        "Jag kommer att straffa syndarna!",
-        "Jag ska straffa syndarna!"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "monsters:monster.monk.voice_3",
-        "monsters:monster.monk.voice_6"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "We are swift as the wind of the desert!",
-      "variants": [
-        "Vi är snabba som ökenvinden!",
-        "Vi är snabba som öknenvinden!"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "monsters:monster.nomad.voice_4",
-        "monsters:monster.nomad_blue.voice_3",
-        "monsters:monster.nomad_female.voice_3"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "The Monster",
-      "variants": [
-        "Monsteret",
-        "Monstret"
-      ],
-      "variants_count": 2,
-      "examples": [
-        "monsters:monster.the_monster.name",
-        "monsters:monster.the_monster.desc"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "The spark of the phoenix is given by the dwarven priests of earth and fire in Kazordoon.",
-      "variants": [
-        "Fenixens gnista ges av jord- och eldens dvärgpräster i Kazordoon.",
-        "Gnistan från Fenix ​​ges av jord- och eldens dvärgpräster i Kazordoon."
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.alia.stdmod_23",
-        "npc:npc.amanda.stdmod_33",
-        "npc:npc.azalea.stdmod_23",
-        "npc:npc.brewster.stdmod_30",
-        "npc:npc.cedrik.stdmod_23"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Life takes many forms. Plants are a very basic form of life. Its simplicity makes them close to the core of nature.",
-      "variants": [
-        "Livet tar många former. Växter är en mycket grundläggande livsform. Dess enkelhet gör dem nära naturens kärna.",
-        "Livet tar sig många former. Växter är en mycket grundläggande livsform. Dess enkelhet gör dem nära naturens kärna."
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.brasith.stdmod_10",
-        "npc:npc.brasith.stdmod_9"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "At your service |PLAYERNAME| and welcome to the post office.",
-      "variants": [
-        "Till din tjänst |PLAYERNAME| och välkommen till posten.",
-        "Till din tjänst |PLAYERNAME| och välkommen till postkontoret."
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.chrystal.greet_msg_1",
-        "server:data.otservbr.global.npc.chrystal.L77.787"
-      ]
-    },
-    {
-      "type": "crossref_inconsistent_translation",
-      "severity": "MEDIUM",
-      "en": "Alcohol makes people too aggressive. We don't need such stuff in Carlin.",
-      "variants": [
-        "Alkohol gör människor för aggressiva. Vi behöver inte sådana grejer i Carlin.",
-        "Alkohol gör människor för aggressiva. Vi behöver inte sådana saker i Carlin."
-      ],
-      "variants_count": 2,
-      "examples": [
-        "npc:npc.dane.stdmod_6",
-        "npc:npc.dane.stdmod_7",
-        "npc:npc.dane.stdmod_8"
-      ]
-    }
-  ],
+  "consistency_issues": [],
   "pl_reference_issues": [
     {
       "key": "achievement.48.name",
@@ -279,6 +84,15 @@
       "en": "Turncoat",
       "pl": "Zdrajca",
       "lang": "Turncoat"
+    },
+    {
+      "key": "achievement.93.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jamjam",
+      "pl": "Jinuma",
+      "lang": "Jamjam"
     },
     {
       "key": "achievement.110.name",
@@ -1217,15 +1031,6 @@
       "lang": "Arena Amulet"
     },
     {
-      "key": "arena.admin.info.header",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] System Status:",
-      "pl": "[Arena Admin] Status Systemu:",
-      "lang": "[Arena Admin] System Status:"
-    },
-    {
       "key": "arena.admin.info.active_matches",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1242,24 +1047,6 @@
       "en": "Queue:",
       "pl": "Kolejka:",
       "lang": "Queue:"
-    },
-    {
-      "key": "arena.admin.stats.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin stats <playername>",
-      "pl": "[Arena Admin] Użycie: !arena-admin stats <gracz>",
-      "lang": "[Arena Admin] Usage: !arena-admin stats <playername>"
-    },
-    {
-      "key": "arena.admin.stats.not_found",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Player '{0}' not found (must be online).",
-      "pl": "[Arena Admin] Gracz '{0}' nie znaleziony (musi być online).",
-      "lang": "[Arena Admin] Player '{0}' not found (must be online)."
     },
     {
       "key": "arena.admin.stats.no_profile",
@@ -1316,15 +1103,6 @@
       "lang": "Streak: {0} (Best: {1})"
     },
     {
-      "key": "arena.admin.setmmr.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin setmmr <player> <mmr>",
-      "pl": "[Arena Admin] Użycie: !arena-admin setmmr <gracz> <mmr>",
-      "lang": "[Arena Admin] Usage: !arena-admin setmmr <player> <mmr>"
-    },
-    {
       "key": "arena.admin.setmmr.success",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1334,15 +1112,6 @@
       "lang": "[Arena Admin] Set {0}'s MMR to {1}"
     },
     {
-      "key": "arena.admin.addpoints.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin addpoints <player> <points>",
-      "pl": "[Arena Admin] Użycie: !arena-admin addpoints <gracz> <punkty>",
-      "lang": "[Arena Admin] Usage: !arena-admin addpoints <player> <points>"
-    },
-    {
       "key": "arena.admin.addpoints.success",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1350,15 +1119,6 @@
       "en": "[Arena Admin] Added {0} Arena Points to {1}",
       "pl": "[Arena Admin] Dodano {0} Punktów Areny graczowi {1}",
       "lang": "[Arena Admin] Added {0} Arena Points to {1}"
-    },
-    {
-      "key": "arena.admin.reset.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin reset <player>",
-      "pl": "[Arena Admin] Użycie: !arena-admin reset <gracz>",
-      "lang": "[Arena Admin] Usage: !arena-admin reset <player>"
     },
     {
       "key": "arena.admin.reset.success",
@@ -1377,15 +1137,6 @@
       "en": "[Arena Admin] Broadcast sent.",
       "pl": "[Arena Admin] Ogłoszenie wysłane.",
       "lang": "[Arena Admin] Broadcast sent."
-    },
-    {
-      "key": "arena.admin.player_not_online",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Player not online.",
-      "pl": "[Arena Admin] Gracz nie jest online.",
-      "lang": "[Arena Admin] Player not online."
     },
     {
       "key": "arena.admin.help.header",
@@ -1766,15 +1517,6 @@
       "lang": "Ooze Blues"
     },
     {
-      "key": "cpp.title.name_49",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Ooze Blues",
-      "pl": "Orzeźwiający blues",
-      "lang": "Ooze Blues"
-    },
-    {
       "key": "cpp.title.name_50",
       "category": "cpp",
       "type": "pl_reference_missing_translation",
@@ -2108,15 +1850,6 @@
       "lang": "Bark!"
     },
     {
-      "key": "monster.troll.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hmmm, dogs",
-      "pl": "Hmmm, psy",
-      "lang": "Hmmm, dogs"
-    },
-    {
       "key": "monster.troll.voice_3",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2133,15 +1866,6 @@
       "en": "Groar",
       "pl": "ryk",
       "lang": "Groar"
-    },
-    {
-      "key": "monster.island_troll.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hmmm, dogs",
-      "pl": "Hmmm, psy",
-      "lang": "Hmmm, dogs"
     },
     {
       "key": "monster.island_troll.voice_4",
@@ -2304,15 +2028,6 @@
       "en": "Boohaa!",
       "pl": "Buhaha!",
       "lang": "Boohaa!"
-    },
-    {
-      "key": "monster.webster.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "So tasty!",
-      "pl": "Tak smaczne!",
-      "lang": "So tasty!"
     },
     {
       "key": "monster.frostfur.voice_1",
@@ -2666,33 +2381,6 @@
       "lang": "High Five!"
     },
     {
-      "key": "monster.tomb_servant.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Chaarr!!",
-      "pl": "Charr!!",
-      "lang": "Chaarr!!"
-    },
-    {
-      "key": "monster.honour_guard.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Vengeance!",
-      "pl": "Zemsta!",
-      "lang": "Vengeance!"
-    },
-    {
-      "key": "monster.gravedigger.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "High Five!",
-      "pl": "Piątka!",
-      "lang": "High Five!"
-    },
-    {
       "key": "monster.gravedigger.voice_2",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2954,15 +2642,6 @@
       "lang": "Mew!"
     },
     {
-      "key": "monster.cat.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Meow!",
-      "pl": "Miauczeć!",
-      "lang": "Meow!"
-    },
-    {
       "key": "monster.hyaena.voice_1",
       "category": "monsters",
       "type": "pl_reference_missing_translation",
@@ -2970,24 +2649,6 @@
       "en": "Grrrrrr",
       "pl": "Wrrrr",
       "lang": "Grrrrrr"
-    },
-    {
-      "key": "monster.stone_rhino.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "SNIFF!",
-      "pl": "WĘSZY!",
-      "lang": "SNIFF!"
-    },
-    {
-      "key": "monster.fox.voice_1",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Yip! Yip!",
-      "pl": "Tak! Tak!",
-      "lang": "Yip! Yip!"
     },
     {
       "key": "monster.fox.voice_2",
@@ -3006,33 +2667,6 @@
       "en": "Snarl!",
       "pl": "Warczenie!",
       "lang": "Snarl!"
-    },
-    {
-      "key": "monster.clomp.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Grunt!",
-      "pl": "Chrząknięcie!",
-      "lang": "Grunt!"
-    },
-    {
-      "key": "monster.clomp.voice_3",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Snarl!",
-      "pl": "Warczenie!",
-      "lang": "Snarl!"
-    },
-    {
-      "key": "monster.kongra.voice_2",
-      "category": "monsters",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Hugah!",
-      "pl": "Uff!",
-      "lang": "Hugah!"
     },
     {
       "key": "monster.rat.voice_1",
@@ -3924,6 +3558,60 @@
       "en": "YOOOOUHHOOOUU!",
       "pl": "JUUUUHUUUU!",
       "lang": "YOOOOUHHOOOUU!"
+    },
+    {
+      "key": "npc.a_majestic_warwolf.say_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GRRRRRRRRRRRRR",
+      "pl": "GRRRRRRRRRRRRRRR",
+      "lang": "GRRRRRRRRRRRRR"
+    },
+    {
+      "key": "npc.a_majestic_warwolf.walkaway_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "YOOOOUHHOOOUU!",
+      "pl": "JUUUUHUUUU!",
+      "lang": "YOOOOUHHOOOUU!"
+    },
+    {
+      "key": "npc.a_sleeping_dragon.greet_msg_1",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "ZzzzZzzZz...chrrr...",
+      "pl": "Zzzz... chrrr...",
+      "lang": "ZzzzZzzZz...chrrr..."
+    },
+    {
+      "key": "npc.a_sleeping_dragon.multi_2",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "SLEEP. ...",
+      "pl": "SEN....",
+      "lang": "SLEEP. ..."
+    },
+    {
+      "key": "npc.a_sleeping_dragon.multi_3",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "GAIN. ...",
+      "pl": "NABIERZ SIŁ....",
+      "lang": "GAIN. ..."
+    },
+    {
+      "key": "npc.a_sleeping_dragon.multi_4",
+      "category": "npc",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "RISE. ...",
+      "pl": "POWSTAŃ....",
+      "lang": "RISE. ..."
     }
   ],
   "length_ratio_issues": [
@@ -4036,6 +3724,24 @@
       "pl_ratio": 2.857
     },
     {
+      "key": "npc.alexander.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 8,
+      "lang_ratio": 8.875,
+      "pl_ratio": 1.125
+    },
+    {
+      "key": "npc.asima.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 8,
+      "lang_ratio": 8.875,
+      "pl_ratio": 1.125
+    },
+    {
       "key": "npc.telas.greet_msg_1",
       "category": "npc",
       "type": "crossref_length_ratio_diff",
@@ -4043,6 +3749,15 @@
       "en_len": 6,
       "lang_ratio": 0.667,
       "pl_ratio": 3.167
+    },
+    {
+      "key": "npc.xodet.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 8,
+      "lang_ratio": 8.875,
+      "pl_ratio": 1.125
     },
     {
       "key": "spell.sapling_explode.name",

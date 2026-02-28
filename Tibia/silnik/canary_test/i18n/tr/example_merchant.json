@@ -1,6 +1,6 @@
 {
   "_comment": "Örnek Tüccar NPC'si - İngilizce çeviriler",
-  "_file": "[EN] data-otservbr-global/npc/example_merchant_i18n.lua",
+  "_file": "data-otservbr-global/npc/example_merchant_i18n.lua",
   "npc.example_merchant.farewell": "Elveda, %s. Beni tekrar ziyaret et!",
   "npc.example_merchant.greeting": "Merhaba %s! Dükkanıma hoş geldiniz. Tekliflerimi görmek için {trade} deyin.",
   "npc.example_merchant.help": "Sana iksir, silah ve zırh satabilirim. Ürünlerime göz atmak için {trade} deyin.",

@@ -1,9 +1,9 @@
 {
-  "channel.advertising.name": "[EN] Advertising",
+  "channel.advertising.name": "Advertising",
   "channel.advertising_rook.name": "Publicité — Rookgaard",
-  "channel.english_chat.name": "[EN] English Chat",
+  "channel.english_chat.name": "English Chat",
   "channel.gamemaster.name": "Maître du jeu",
-  "channel.guild_leaders.name": "[EN] Guild Leaders",
+  "channel.guild_leaders.name": "Guild Leaders",
   "channel.help.msg_already_muted": "Ce joueur est déjà réduit au silence.",
   "channel.help.msg_muted": "Vous avez été réduit au silence dans le canal Aide pour l'avoir utilisé de manière inappropriée.",
   "channel.help.msg_not_authorized_mute": "Vous n'êtes pas autorisé à réduire ce joueur au silence.",

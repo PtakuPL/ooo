@@ -1,10 +1,10 @@
 {
-  "cycles": 26,
+  "cycles": 777,
   "date": "2026-02-26",
   "errors": {
-    "count": 56
+    "count": 2875
   },
-  "generated_at_utc": "2026-02-26T00:33:05Z",
+  "generated_at_utc": "2026-02-26T20:14:51Z",
   "work": {
     "auto_translate": {
       "langs": {
@@ -14,47 +14,47 @@
         },
         "CS": {
           "skipped": 0,
-          "translated": 90
+          "translated": 473
         },
         "DE": {
           "skipped": 0,
-          "translated": 82
+          "translated": 7114
         },
         "ES": {
           "skipped": 0,
-          "translated": 35
+          "translated": 2738
         },
         "FR": {
           "skipped": 0,
-          "translated": 146
+          "translated": 3017
         },
         "IT": {
           "skipped": 0,
-          "translated": 142
+          "translated": 1588
         },
         "NL": {
           "skipped": 0,
-          "translated": 112
+          "translated": 423
         },
         "PL": {
           "skipped": 0,
-          "translated": 42
+          "translated": 2965
         },
         "PT": {
           "skipped": 0,
-          "translated": 101
+          "translated": 2014
         },
         "RO": {
           "skipped": 0,
-          "translated": 140
+          "translated": 979
         },
         "RU": {
           "skipped": 0,
-          "translated": 102
+          "translated": 3150
         },
         "TR": {
           "skipped": 0,
-          "translated": 112
+          "translated": 575
         }
       }
     },

@@ -5350,5 +5350,1493 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T09:27:08.725774Z"
+  },
+  "otclient_data.30_minimap_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Zrušit",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T01:34:32.996679Z"
+  },
+  "otclient_data.30_minimap_otui.tr_3": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Popis",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:34:33.000388Z"
+  },
+  "otclient_data.40_inventory_otui.tr_1": {
+    "src_hash": "0323de4f66a1700e2173e9bcdce02715",
+    "text": "Odhlášení",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:34:33.003283Z"
+  },
+  "otclient_data.40_minimap_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Zrušit",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T01:34:33.004925Z"
+  },
+  "otclient_data.40_minimap_otui.tr_4": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Popis",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:34:33.005396Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Zrušit",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T01:34:33.007753Z"
+  },
+  "lib.functions.msg1": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Musíte počkat. Někdo je náročný ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:50:43.040644Z"
+  },
+  "lib.functions.msg2": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Musíte počkat. Někdo je náročný ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:50:43.046634Z"
+  },
+  "misc.bank_system.say_26": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Tady to máš.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:55:09.510183Z"
+  },
+  "misc.bank_system.say_34": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Tady to máš.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:55:09.519500Z"
+  },
+  "module.init.text5": {
+    "src_hash": "517a573bb2eebb6a9c51b2d586663a28",
+    "text": "Outfit, který byl stvořen na míru vám. Jsme si jisti, že se vám to bude líbit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:00:17.469118Z"
+  },
+  "item.10111.name": {
+    "src_hash": "ffb79de3dd0555fb7a5ca7071a0c1b4a",
+    "text": "pepřová tráva",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:10:11.339923Z"
+  },
+  "monster.glooth_golem.desc": {
+    "src_hash": "ee17396f047a9db787266ed06ca557df",
+    "text": "glooth golem",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:18:53.381774Z"
+  },
+  "monster.rustheap_golem.desc": {
+    "src_hash": "cf57c90287faa2b6fc60f1c2ac9c32e7",
+    "text": "rustheap golem",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:18:53.393630Z"
+  },
+  "monster.magma_crawler.desc": {
+    "src_hash": "9e6489033bca4aaacc41a0ea6a5e798c",
+    "text": "magma crawler",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:18:53.404016Z"
+  },
+  "monster.glooth_blob.desc": {
+    "src_hash": "0b32fd5879020acc6ec297db1f3db1de",
+    "text": "glooth blob",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:18:53.420742Z"
+  },
+  "monster.minotaur_amazon.desc": {
+    "src_hash": "55da6d9f62f81077729eee088cbdb13b",
+    "text": "minotaur amazon",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:18:53.430213Z"
+  },
+  "monster.corym_skirmisher.desc": {
+    "src_hash": "7000c4d399221ddc90a3653ace1d196f",
+    "text": "corym skirmisher",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:18:53.446864Z"
+  },
+  "monster.chakoya_windcaller.desc": {
+    "src_hash": "e07e534d89de78b75b203b1421d25a37",
+    "text": "chakoya windcaller",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:18:53.469745Z"
+  },
+  "monster.bulltaur_brute.desc": {
+    "src_hash": "b676c86ee915b22e47c3a174fb7d24e2",
+    "text": "Bulltaur Brute",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:18:53.475839Z"
+  },
+  "monster.dworc_voodoomaster.desc": {
+    "src_hash": "24626191463f05abf1a076bb287820c4",
+    "text": "dworc voodoomaster",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:18:53.491210Z"
+  },
+  "monster.goblin.voice_1": {
+    "src_hash": "4d0973b303c4f6fc92dd72ff92f3ca96",
+    "text": "Zig Zag! Gobo attack!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:18:53.502944Z"
+  },
+  "monster.bulltaur_forgepriest.desc": {
+    "src_hash": "dfa32e19e58a07acf7d0736b968aae65",
+    "text": "Bulltaur Forgepriest",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:18:53.519074Z"
+  },
+  "monster.chakoya_tribewarden.desc": {
+    "src_hash": "5393e2623c346584000223e0bafdc810",
+    "text": "chakoya tribewarden",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:18:53.527488Z"
+  },
+  "monster.the_unarmored_voidborn.name": {
+    "src_hash": "07cb930827503b3e5b74dd25f068f7c5",
+    "text": "Unarmored Voidborn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:18:53.561045Z"
+  },
+  "monster.the_unarmored_voidborn.desc": {
+    "src_hash": "07cb930827503b3e5b74dd25f068f7c5",
+    "text": "Unarmored Voidborn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:18:53.562213Z"
+  },
+  "data.otservbr.global.npc.alyxo.L210.798": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Tak ahoj.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.664163Z"
+  },
+  "data.otservbr.global.npc.alyxo.L53.795": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Jak bych vám mohl pomoci?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.664933Z"
+  },
+  "data.otservbr.global.npc.alyxo.L56.796": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Jak bych vám mohl pomoci?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.665786Z"
+  },
+  "data.otservbr.global.npc.alyxo.L59.797": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Jak bych vám mohl pomoci?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.666530Z"
+  },
+  "data.otservbr.global.npc.amanda.L200.1226": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Vítejte, mladý |PLAYERNAME|! Pokud jste těžce zraněni nebo otráveni, mohu vás {heal} zdarma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.667938Z"
+  },
+  "data.otservbr.global.npc.amanda.L201.1227": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Pamatujte: Pokud jste těžce zraněni nebo otráveni, mohu vás zdarma vyléčit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.669010Z"
+  },
+  "data.otservbr.global.npc.amanda.L202.1228": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Ať ti bohové žehná, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.669850Z"
+  },
+  "data.otservbr.global.npc.ambassador.of.rathleton.L86.343": {
+    "src_hash": "0922290764356f2882310a5fd9aff64d",
+    "text": "Zdravím, příteli.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.670661Z"
+  },
+  "data.otservbr.global.npc.ambassador.of.rathleton.L87.344": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Tak ahoj.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.671173Z"
+  },
+  "data.otservbr.global.npc.amber.L426.528": {
+    "src_hash": "d732678ccaedfd5a4549c0b91b7b7eda",
+    "text": "Jo, uvidíme se později.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.671920Z"
+  },
+  "data.otservbr.global.npc.amber.L427.529": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Uvidíme se později, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.672759Z"
+  },
+  "data.otservbr.global.npc.amber.L428.530": {
+    "src_hash": "0f14fbac638796dd8c466ad8b633ef97",
+    "text": "Ahoj, rád tě vidím |PLAYERNAME|. Jste tu, abyste si vyslechli nějaké příběhy mého {adventures}, nebo potřebujete {help}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.674175Z"
+  },
+  "data.otservbr.global.npc.anderson.L101.134": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Sbohem. není zač.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.675593Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L101.514": {
+    "src_hash": "f19606ce8291abc3d128e0e13e6f48f8",
+    "text": "Dobrý den, jsem správcem tohoto {monument}. {sarcophagus} před vámi bylo zřízeno, aby lidem zabránilo jít {down} tam. Ale pochybuji, že tento krok je dostatečný.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.677229Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L103.515": {
+    "src_hash": "3c5ad370bd95ece0ddfe7c933191c2d7",
+    "text": "No, uvidíme, jestli byla vaše mise úspěšná. Jen mi přineste vše potřebné {materials}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.678681Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L105.516": {
+    "src_hash": "be244788d22d3907aa89323df2de6a6b",
+    "text": "Pokud jste vykopali všechny tři krystaly v dostatečném množství a získali jedovou žlázu, nabíjení vašeho kompasu může začít! Úplně poprvé bude nabitý fialovým krystalem. Jste připraveni {unleash} využít sílu krystalů?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.680887Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L107.517": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Zdravím vás.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.681830Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L263.518": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Tak ahoj.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.682390Z"
+  },
+  "data.otservbr.global.npc.andrew.lyze.L264.519": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Sbohem.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.682800Z"
+  },
+  "data.otservbr.global.npc.aneus.L130.1323": {
+    "src_hash": "788db5ea65463dd8976f8a335495d0c2",
+    "text": "Zdravím dobrodruha |PLAYERNAME|. Co tě ke mně vede?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.684066Z"
+  },
+  "data.otservbr.global.npc.aneus.L131.1324": {
+    "src_hash": "39be4b6662d2023c78cbda7ac1f841b8",
+    "text": "Sbohem a opatruj se!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.684758Z"
+  },
+  "data.otservbr.global.npc.angelina.L58.143": {
+    "src_hash": "4935e02a64d2acebe4c088ad30eb6019",
+    "text": "Bohové musí být pochváleni, že jsem konečně zachráněn. Nemám mnoho světského majetku, ale přijměte prosím malou odměnu, ano?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.686103Z"
+  },
+  "data.otservbr.global.npc.angelina.L60.144": {
+    "src_hash": "508cf6e835eac9a1d7da459aec5c594b",
+    "text": "Díky za záchranu mého života! Mám tě teleportovat z Temné katedrály?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.687115Z"
+  },
+  "data.otservbr.global.npc.angelina.L84.145": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Ať vám bohové žehnou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:28.687948Z"
+  },
+  "scripts.actions_reward.msg_4": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Hrudník je prázdný.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:31:38.154532Z"
+  },
+  "scripts.actions_reward.msg_6": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Hrudník je prázdný.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:31:38.155970Z"
+  },
+  "scripts.actions_rewards.msg_1": {
+    "src_hash": "06f02d4c547b12ce2b8804695b9f0aea",
+    "text": "Našli jste {}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:31:38.156835Z"
+  },
+  "scripts.actions_rewards.msg_2": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Hrudník je prázdný.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:31:38.158098Z"
+  },
+  "scripts.actions_rewards.msg_3": {
+    "src_hash": "a96509dffb06f1f5933de18be57bb03e",
+    "text": "Hrudník je prázdný.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:31:38.158876Z"
+  },
+  "web.tpl.buttons.change_sex.set_1": {
+    "src_hash": "6b040454e34ebee8689571610e64a17d",
+    "text": "Změnit sex",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:51:35.848620Z"
+  },
+  "web.tpl.guilds.manager.b_3": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Popis",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:51:35.850799Z"
+  },
+  "client.outfit.text2": {
+    "src_hash": "fff3be9b119c459101538ed6eb467818",
+    "text": "SelectionButton",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:03:03.942059Z"
+  },
+  "arena.title.contender": {
+    "src_hash": "6bc60f225af3e040f25409d430314097",
+    "text": "Uchazeč",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:06:23.707783Z"
+  },
+  "misc.bank_system.say_38": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Tady to máš.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:16:59.942266Z"
+  },
+  "monster.the_corruptor_of_souls.desc": {
+    "src_hash": "500058f40247e57f23c498353b9e0c2c",
+    "text": "Corruptor of Souls",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:30:36.287921Z"
+  },
+  "data.otservbr.global.npc.angelina.L85.146": {
+    "src_hash": "0d14d09cf5a8b87b36a6ce3a5a44ae2c",
+    "text": "Ať vám bohové žehnou.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.742524Z"
+  },
+  "data.otservbr.global.npc.angelo.L153.1447": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Tak ahoj.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.743096Z"
+  },
+  "data.otservbr.global.npc.angelo.L58.1443": {
+    "src_hash": "3c1ab8a891cc762e5e463a23be752ef5",
+    "text": "Druid Crunor? Řekl vám, že se tu objevila nová jeskyně? je to tak. Jsem vedoucím {project}, který se snaží zjistit více o tomto novém {area}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.744314Z"
+  },
+  "data.otservbr.global.npc.angelo.L60.1444": {
+    "src_hash": "659bfc0a338a19e14c04ad411f0665e7",
+    "text": "Jen mi uhni z cesty! Zabil jsi toto krásné stvoření. Víc k tomu nemám co říct. Zatracený druide z Crunoru!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.745335Z"
+  },
+  "data.otservbr.global.npc.angelo.L64.1446": {
+    "src_hash": "0887403150162318f92445d305c031d3",
+    "text": "Druid Crunor? Řekl vám, že se tu objevila nová jeskyně? je to tak. Jsem vedoucím projektu, který se snaží o této nové oblasti zjistit více.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.746710Z"
+  },
+  "data.otservbr.global.npc.angus.L633.1450": {
+    "src_hash": "409cfd0dabb9dd7b909b7d6abdb78314",
+    "text": "Zdravím vás, co pro vás mohu udělat?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.747572Z"
+  },
+  "data.otservbr.global.npc.appaloosa.L109.1145": {
+    "src_hash": "747f1f8d859ffaa58983e63346f46d10",
+    "text": "Zdravím vás, |PLAYERNAME| Myslím, že jste tu pro {horses}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.748545Z"
+  },
+  "data.otservbr.global.npc.archery.L64.538": {
+    "src_hash": "c90ac5a24448fefe2cc247cd6fc33965",
+    "text": "Vítejte v lukostřeleckém obchodě!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.749315Z"
+  },
+  "data.otservbr.global.npc.archery.L65.539": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vraťte se prosím čas od času.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.750251Z"
+  },
+  "data.otservbr.global.npc.archery.L66.540": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vraťte se prosím čas od času.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.751116Z"
+  },
+  "data.otservbr.global.npc.archery.rook.L63.70": {
+    "src_hash": "30bc6203a67610eed6580d3e9fb8c0e0",
+    "text": "Vítejte v obchodě Archery's Rook.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.751886Z"
+  },
+  "data.otservbr.global.npc.archery.rook.L64.71": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vraťte se prosím čas od času.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.752699Z"
+  },
+  "data.otservbr.global.npc.archery.rook.L65.72": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Vraťte se prosím čas od času.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.753494Z"
+  },
+  "data.otservbr.global.npc.ariella.L161.242": {
+    "src_hash": "164dfcf01584bd0e3595b62fb53cf12c",
+    "text": "Dobrý den.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.754128Z"
+  },
+  "data.otservbr.global.npc.arito.L117.1343": {
+    "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
+    "text": "Navštivte nás znovu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.754759Z"
+  },
+  "data.otservbr.global.npc.arito.L118.1344": {
+    "src_hash": "f0b34b79690c6d46e121ad2c89fce38b",
+    "text": "Navštivte nás znovu.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.755424Z"
+  },
+  "data.otservbr.global.npc.arito.L119.1345": {
+    "src_hash": "3c75dd9ee4fcab44a534d60516cb0f82",
+    "text": "Jistě, projděte si mé nabídky.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.756247Z"
+  },
+  "data.otservbr.global.npc.arito.L55.1341": {
+    "src_hash": "1805b184a298f90e204d6f8dc8682795",
+    "text": "Díky bohu, že jsi zpět!! Našli jste....ehm...o čem jsme mluvili??",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.757299Z"
+  },
+  "data.otservbr.global.npc.arkulius.L183.893": {
+    "src_hash": "6ea6014947c483c1731424f40d13069a",
+    "text": "Sbohem a prosím, drž se dál, ano?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.759190Z"
+  },
+  "data.otservbr.global.npc.arkulius.L184.894": {
+    "src_hash": "404f1fe1d825b9bf7a18fb5e4f2d119a",
+    "text": "Konečně! Dobré věci přicházejí k těm, kdo čekají.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.760490Z"
+  },
+  "data.otservbr.global.npc.armenius.L74.643": {
+    "src_hash": "27ea99152a6a515b8419ea36106638eb",
+    "text": "Oh, nervy. Jdi ke krysám, které tě vychovaly.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.761629Z"
+  },
+  "data.otservbr.global.npc.armenius.L86.644": {
+    "src_hash": "fcb9f6ad1690cb4901c3fb2a6e6f04ff",
+    "text": "Ach, dobrodruh. Buďte pozdraveni a posaďte se. Jak vás mohu {serve}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.764095Z"
+  },
+  "data.otservbr.global.npc.aruda.L256.1338": {
+    "src_hash": "76989cdacc70a11ce050e51834a41faf",
+    "text": "Doufám, že se brzy uvidíme.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:56.766477Z"
+  },
+  "scripts.actions_scarlett.msg_1": {
+    "src_hash": "5316cfe06e390d51d9a5ed89b00755ca",
+    "text": "Toto zatím nemáte povoleno používat.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:43:58.214803Z"
+  },
+  "data.otservbr.global.npc.aruda.L257.1339": {
+    "src_hash": "72ac2a1a6b6e53cfa095d10e97f9d7dd",
+    "text": "Sbohem, |PLAYERNAME|. Opravdu doufám, že si zase brzy promluvíme.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:37.971986Z"
+  },
+  "data.otservbr.global.npc.aruda.L64.1336": {
+    "src_hash": "b237c816ef0f957c911aff6207bf786e",
+    "text": "Ahoj |PLAYERNAME|, tvoje vlasy vypadají skvěle! kdo ti to udělal?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:37.973634Z"
+  },
+  "data.otservbr.global.npc.aruda.L67.1337": {
+    "src_hash": "28f7fb0da3fd1df4f49e04dd1fe3f607",
+    "text": "Oh, ahoj, krásko! Těší mě, že vás poznávám, |PLAYERNAME|. Jsem rád, že mám čas trochu {chat}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:37.974849Z"
+  },
+  "data.otservbr.global.npc.ashari.L52.1581": {
+    "src_hash": "ece8bf5d0d736f2764582730d36e0f3b",
+    "text": "Ahoj, cizinče! Tyto jeskyně vám musí připadat zvláštní. Zajímalo by mě, co tě sem přivádí... možná máš zájem o nějakou práci? Existuje několik úkolů, se kterými bych potřeboval pomoct.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:37.976609Z"
+  },
+  "data.otservbr.global.npc.ashari.L53.1582": {
+    "src_hash": "4c843bd5e890558b89583052fe61a44c",
+    "text": "Tedy!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:37.977172Z"
+  },
+  "data.otservbr.global.npc.ashari.L54.1583": {
+    "src_hash": "4c843bd5e890558b89583052fe61a44c",
+    "text": "Tedy!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:37.977658Z"
+  },
+  "data.otservbr.global.npc.asima.L179.1417": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Samozřejmě, jen si projděte mé zboží. Nebo se chcete jen dívat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:37.979323Z"
+  },
+  "data.otservbr.global.npc.aurita.L115.172": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Ať je vaše cesta vždy rovná.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:37.981548Z"
+  },
+  "data.otservbr.global.npc.aurita.L116.173": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Ať je vaše cesta vždy rovná.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:37.982421Z"
+  },
+  "data.otservbr.global.npc.avar.tar.L138.860": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Uvidíme se později, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:37.983368Z"
+  },
+  "data.otservbr.global.npc.avar.tar.L139.861": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Uvidíme se později, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:37.984104Z"
+  },
+  "data.otservbr.global.npc.azalea.L148.851": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Vítejte, mladý |PLAYERNAME|! Pokud jste těžce zraněni nebo otráveni, mohu vás {heal} zdarma.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:37.986483Z"
+  },
+  "data.otservbr.global.npc.azalea.L149.852": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Pamatujte: Pokud jste těžce zraněni nebo otráveni, mohu vás zdarma vyléčit.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:37.987746Z"
+  },
+  "data.otservbr.global.npc.azalea.L150.853": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Ať ti bohové žehná, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:37.988547Z"
+  },
+  "data.otservbr.global.npc.bashira.L64.1585": {
+    "src_hash": "aa9516b030cac7a45cce88509881a4ea",
+    "text": "Sbohem, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:27:50.667745Z"
+  },
+  "data.otservbr.global.npc.battlemart.L67.1363": {
+    "src_hash": "5ebebc46ca18e7619869532058bacd7a",
+    "text": "Samozřejmě, jen si projděte mé zboží. Nebo se chcete jen dívat",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:42:38.336464Z"
+  },
+  "scripts.actions_scarlett.msg_2": {
+    "src_hash": "7c285fed0553b05349a0985cdd855e24",
+    "text": "Držíš před sebou starý Galtheinův hrudní plát. Nehodí se a je příliš starý, aby vydržel jakýkoli útok.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T07:27:20.076028Z"
+  },
+  "channel.help.name": {
+    "src_hash": "6a26f548831e6a8c26bfbbd9f6ec61e0",
+    "text": "Pomoc",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T18:42:56.644946Z"
+  },
+  "creaturescripts.boss_defeated": {
+    "src_hash": "5800ef916c711735130b2de1f701dc04",
+    "text": "Zařízení {name} bylo poraženo. Na opuštění místnosti máte {seconds} sekund.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:54:37.939162Z"
+  },
+  "creaturescripts.empty_parcels_removed": {
+    "src_hash": "a063b69958e3dab361b556d34f36f2d7",
+    "text": "Z vaší doručené pošty bylo odstraněno {count} prázdných zásilek!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:54:37.940232Z"
+  },
+  "item.10.name": {
+    "src_hash": "90fbbee0c198b3f16d17271f8ca29d70",
+    "text": "manafluid",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:18.136949Z"
+  },
+  "item.10026.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "baby rotworm",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:18.137597Z"
+  },
+  "item.10096.name": {
+    "src_hash": "cd2878e9d8d9bd39b4e50c83b5990cc8",
+    "text": "stacke",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:18.138121Z"
+  },
+  "item.1012.name": {
+    "src_hash": "74d7b04810e76e98881a64131caa3e87",
+    "text": "jiskřivý drahokam",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:18.138612Z"
+  },
+  "item.10140.name": {
+    "src_hash": "3b2fa34af93b15d8e28dacad96e85076",
+    "text": "démonický zbytek",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:18.138996Z"
+  },
+  "item.10159.desc": {
+    "src_hash": "b7366edafc0bd113da5467c420cc0e40",
+    "text": "Kdysi patřil předkovi Lazarana. Očividně měl opravdu špatné zuby",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:18.139811Z"
+  },
+  "item.10159.name": {
+    "src_hash": "9fbf6b7186d409b5605c7eb845ed7443",
+    "text": "lebka jeskynního muže",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:18.140340Z"
+  },
+  "item.10180.name": {
+    "src_hash": "418acd2dc26b4e76fa2db55ab2f3e659",
+    "text": "groud",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:18.140687Z"
+  },
+  "item.10185.name": {
+    "src_hash": "fb22606aca32dcbce80ae759f3e23f66",
+    "text": "swich",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:18.141006Z"
+  },
+  "item.10338.name": {
+    "src_hash": "5eb2ca52dc59da581fca5b25e579ac8b",
+    "text": "santa teddy",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:18.141468Z"
+  },
+  "item.10388.name": {
+    "src_hash": "373afc213a9bc8b34a14a6cb3d1cadba",
+    "text": "drakinata",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:18.141809Z"
+  },
+  "item.10391.name": {
+    "src_hash": "14d0ab7dd6dbb7192ef42e58e739a6e5",
+    "text": "drachaku",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:25.053182Z"
+  },
+  "item.10456.name": {
+    "src_hash": "dbfb2b19f62a7a58162f63d78fb9b1fd",
+    "text": "sandcrawler shell",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:25.053693Z"
+  },
+  "item.1069.name": {
+    "src_hash": "5410d1752d6d66d5aef6dcd437b8056a",
+    "text": "bug tral",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:25.054132Z"
+  },
+  "item.10727.name": {
+    "src_hash": "8789a6a22faa24660fcdc4f2baf665db",
+    "text": "dreadcoil",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:25.054457Z"
+  },
+  "item.11515.name": {
+    "src_hash": "96e6cce00bdc97375798343dc62e4f08",
+    "text": "trollroot",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:25.056341Z"
+  },
+  "item.12304.name": {
+    "src_hash": "9528fcf60999a5fd25591fc9f89434b5",
+    "text": "maxilla maximus",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:30.002063Z"
+  },
+  "item.12547.name": {
+    "src_hash": "a524624c6f4d37dc027d0591e15e6dba",
+    "text": "diapason",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:30.002397Z"
+  },
+  "item.12575.name": {
+    "src_hash": "9a38c6b8cd9de92eb021328f0d5a2383",
+    "text": "Whinona",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:30.002703Z"
+  },
+  "item.12576.name": {
+    "src_hash": "9c0a44006bbd6053818d4d98198629a8",
+    "text": "Meandi",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:30.003035Z"
+  },
+  "item.12579.name": {
+    "src_hash": "9a38c6b8cd9de92eb021328f0d5a2383",
+    "text": "Whinona",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:30.003341Z"
+  },
+  "item.12580.name": {
+    "src_hash": "9c0a44006bbd6053818d4d98198629a8",
+    "text": "Meandi",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:12:30.003634Z"
+  },
+  "npc.a_fluffy_squirrel.farewell_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:15:20.279919Z"
+  },
+  "npc.a_fluffy_squirrel.greet_msg_1": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "Chhchh?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:15:20.280543Z"
+  },
+  "npc.a_fluffy_squirrel.walkaway_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:15:20.281742Z"
+  },
+  "npc.albinius.say_33": {
+    "src_hash": "3d4ad8c25735f929accf915f609f656d",
+    "text": "Děkujeme za vaši nabídku. Nyní můžete předat Portál Mocnostem Smrti.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:15:24.822474Z"
+  },
+  "npc.alesar.multi_18": {
+    "src_hash": "d9a9d403c1ba480d6703285ada8cf247",
+    "text": "Hahahaha! ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:15:24.823885Z"
+  },
+  "monster.deathspawn.name": {
+    "src_hash": "a5093d8d030e55f6d31522da7b0f1e1b",
+    "text": "Deathspawn",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.766315Z"
+  },
+  "monster.bog_frog.name": {
+    "src_hash": "1f841ce43d9c5934a55a06814d04ec0e",
+    "text": "Bog Frog",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.766737Z"
+  },
+  "monster.defiler.name": {
+    "src_hash": "06432eefe619b19aa24a54c7b96244d8",
+    "text": "Defiler",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.767053Z"
+  },
+  "monster.troll.name": {
+    "src_hash": "922a511f02d148e4c9390526d85ca519",
+    "text": "Troll",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.768021Z"
+  },
+  "monster.skeleton.name": {
+    "src_hash": "6ab48f7ed56efc362f41853c5616bf75",
+    "text": "Kostra",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.768280Z"
+  },
+  "monster.skeleton.desc": {
+    "src_hash": "3671d9838dcee79307f4c8b4ddb33743",
+    "text": "kostra",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.768575Z"
+  },
+  "monster.juggernaut.name": {
+    "src_hash": "024fc70d51074c9f42ee7f917c37b4ed",
+    "text": "Juggernaut",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.769003Z"
+  },
+  "monster.hellspawn.name": {
+    "src_hash": "6f4596e4b6567420115ceb0704e9d14d",
+    "text": "Hellspawn",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.769397Z"
+  },
+  "monster.sandcrawler.name": {
+    "src_hash": "89f2b95e559a3e5addf3bd18f7791f67",
+    "text": "Sandcrawler",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.769774Z"
+  },
+  "monster.frazzlemaw.name": {
+    "src_hash": "1a87e30943cbe3f2e8d894a44f5ce353",
+    "text": "Frazzlemaw",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.770111Z"
+  },
+  "monster.guzzlemaw.name": {
+    "src_hash": "af39e6956034169ca52f6fff8f9fbc5b",
+    "text": "Guzzlemaw",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.770450Z"
+  },
+  "monster.shadowpelt.name": {
+    "src_hash": "3b450842412b3871b7e8e02b8849335c",
+    "text": "Shadowpelt",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.770773Z"
+  },
+  "monster.bazir.name": {
+    "src_hash": "ee6529472291958a195a6bed85a9515f",
+    "text": "Bazir",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.771067Z"
+  },
+  "monster.bazir.desc": {
+    "src_hash": "ee6529472291958a195a6bed85a9515f",
+    "text": "Bazir",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.771384Z"
+  },
+  "monster.hydra.name": {
+    "src_hash": "0a79d2e788f647cf8c8bee8cad4bf94e",
+    "text": "Hydra",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.771679Z"
+  },
+  "monster.wyrm.name": {
+    "src_hash": "6ca9ed7b25e26786c48ed48b538b14c3",
+    "text": "Wyrm",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:37.771964Z"
+  },
+  "monster.orewalker.name": {
+    "src_hash": "12c4cb93db82d7abaeda85186b68f546",
+    "text": "Orewalker",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:41.340016Z"
+  },
+  "monster.magma_crawler.name": {
+    "src_hash": "2fcf8fab6d3a29374688ea5301eda00f",
+    "text": "Magma Crawler",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:41.341154Z"
+  },
+  "monster.goggle_cake.name": {
+    "src_hash": "16d3d3c84b237ee0c2690096af7c309d",
+    "text": "Goggle Cake",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:41.341616Z"
+  },
+  "monster.makara.name": {
+    "src_hash": "3c71ac3f76f14f19af29c607e4884b32",
+    "text": "Makara",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:41.341985Z"
+  },
+  "monster.acid_blob.name": {
+    "src_hash": "0159454e46ab85072fbd364f22a33db2",
+    "text": "Acid Blob",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:41.342386Z"
+  },
+  "quests.bigfoot_burden.shooting_hit": {
+    "src_hash": "1ec47fa3f005f5e253a4276eb0a85264",
+    "text": "Hit!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:42:41.570584Z"
+  },
+  "scripts.action_horn.say_4": {
+    "src_hash": "75938bd55048b04afc042cba4954d4ba",
+    "text": "Grr.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.347215Z"
+  },
+  "scripts.actions_fire_bug.say_1": {
+    "src_hash": "e45ec5ddcf330bfeff658e1fcf19b871",
+    "text": "OUCH!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.347993Z"
+  },
+  "scripts.actions_palanca.msg_1": {
+    "src_hash": "9aafdd37fb3d7390d6e6e87e76438c93",
+    "text": "<sizzle> <fizz>",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.349325Z"
+  },
+  "scripts.actions_pyramids1.msg_1": {
+    "src_hash": "9aafdd37fb3d7390d6e6e87e76438c93",
+    "text": "<sizzle> <fizz>",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.349760Z"
+  },
+  "scripts.actions_reward.msg_5": {
+    "src_hash": "192cb6d64e0684a75306f923e5fa0600",
+    "text": "Našli jste kus nohy yalahari.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.350582Z"
+  },
+  "scripts.actions_ring.say_1": {
+    "src_hash": "443959e233fe4d1ca521d908143e2f99",
+    "text": "Předložili jste falešné důkazy!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.351583Z"
+  },
+  "scripts.actions_rosebushUse.msg_1": {
+    "src_hash": "5a0430ef61db2d1898cff09183d2f681",
+    "text": "Růžový keř zasadíte do čerstvé zeminy. Zelený portál září jasněji. Možná to teď přejdete.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.353189Z"
+  },
+  "scripts.actions_ruins_instruments.msg_1": {
+    "src_hash": "483049a99075a7682976f6b44fef6bca",
+    "text": "Zahráli jste to špatně, teď musíte začít znovu od prvního!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.354395Z"
+  },
+  "scripts.actions_ruins_instruments.msg_2": {
+    "src_hash": "bfc5a2b8e73ee0b52d9a03d612b45930",
+    "text": "Hráli jste je ve správném pořadí a získali jste přístup dveřmi!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.355480Z"
+  },
+  "scripts.actions_ruins_instruments.msg_3": {
+    "src_hash": "483049a99075a7682976f6b44fef6bca",
+    "text": "Zahráli jste to špatně, teď musíte začít znovu od prvního!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.356329Z"
+  },
+  "scripts.actions_rust_bugs.say_1": {
+    "src_hash": "acf89a3576edce872affe29754e6f481",
+    "text": "Brouci jsou v práci!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.356819Z"
+  },
+  "scripts.actions_sacrifice.msg_1": {
+    "src_hash": "7c5be31cfb38ccfc36fd11080734961b",
+    "text": "Vložíte {} do vysušené studny.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.357468Z"
+  },
+  "scripts.actions_sacrifice.msg_2": {
+    "src_hash": "8bf5443d627c50bb0f553b965975e833",
+    "text": "Najděte strážce sangvinických slz a nabídněte jeho životní tekutiny sangvinickému mistrovi této říše.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.358424Z"
+  },
+  "scripts.actions_sacrifice.msg_3": {
+    "src_hash": "99e8b14525a94f991e0fc49346b3efae",
+    "text": "Posilte svou oběť za krvavou slzu sangvinickému mistrovi této říše, abyste zpečetili tento obchod.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.359336Z"
+  },
+  "scripts.actions_sacrifice.msg_4": {
+    "src_hash": "1411681fb4a9149426cbda58a4895f5b",
+    "text": "Vaše oběť byla přijata sangvinickým mistrem této říše.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.360109Z"
+  },
+  "scripts.actions_sacrifice.msg_5": {
+    "src_hash": "9437e8d85edc3490d14156aad4fc9cfe",
+    "text": "Vaše oběti byly přijaty sangvinickým mistrem této říše. Jdi a dej svůj kořen vodami života.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.361013Z"
+  },
+  "scripts.actions_sacrifice.say_1": {
+    "src_hash": "d735f93633f1764487543baf75e40c90",
+    "text": "Už jsi dal hrobní květinu na krev dobře.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:32.361652Z"
+  },
+  "scripts.actions_sacrifice.say_2": {
+    "src_hash": "8a0565c7ad2915dd18848dda83907f8e",
+    "text": "Už jsi dal upíří zuby na krev dobře.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:40.870502Z"
+  },
+  "scripts.actions_sacrifice.say_3": {
+    "src_hash": "e6ea115550a4ccd4c29a81b24e7e626b",
+    "text": "Pečetní prsten jste již nasadili na krevní jamku.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:40.871268Z"
+  },
+  "scripts.actions_sacrifice.say_4": {
+    "src_hash": "5244624d1074e26e9b189e94354c732e",
+    "text": "Kosti na krev už jsi dal dobře.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:40.871939Z"
+  },
+  "scripts.actions_sacrifice_items.msg_1": {
+    "src_hash": "05d84d3f850e31ca6cbaf40fa904cfd2",
+    "text": "Tuto položku jste již obětovali, abyste ji mohli projít.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:40.872917Z"
+  },
+  "scripts.actions_sacrifice_items.msg_2": {
+    "src_hash": "08e0d278c9842eb17b1f2654c3340d98",
+    "text": "Ponoříte {} do lávy. Nyní jste hoden vstoupit do doupěte The First Dragon. Znovu se dotkněte lávového bazénu.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:40.874385Z"
+  },
+  "scripts.actions_sacrifice_items.msg_3": {
+    "src_hash": "2ac19e9e4e332f39b20c61b4fe75274f",
+    "text": "Ponoříte se {} do lávy.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:40.875001Z"
+  },
+  "scripts.actions_sacrophagusUse.msg_1": {
+    "src_hash": "03817ddcb904e57b7866a9caae3b7c76",
+    "text": "Prokletí rušení tohoto křehkého starověkého míru je vaší cenou!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:40.875703Z"
+  },
+  "scripts.actions_sacrophagusUse.msg_2": {
+    "src_hash": "bd664ffc6b07649d20c47551253bd5dd",
+    "text": "Otevření posledního sarkofágu vás stále pronásleduje. Počkejte nějakou dobu, než se vaše duše vrátí.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:40.876541Z"
+  },
+  "scripts.actions_sangra.msg_1": {
+    "src_hash": "3a1f900dc11ca38ff346592c0b186298",
+    "text": "Šíp stále trčí na stromě. Z místa, kde šíp zasáhl kmen, neustále stéká čerstvá krev.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:40.877409Z"
+  },
+  "scripts.actions_scissors.msg_1": {
+    "src_hash": "9133be335f8fc7ca66d3654e78d8c9ec",
+    "text": "Našli jste rituální nůžky.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:50:40.878031Z"
+  },
+  "actions.outfit_items.msg_need_outfit": {
+    "src_hash": "6f55a0eedffa63b4bc43323bbb07b0e8",
+    "text": "Pro tuto část potřebujete oblečení.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:04:10.615918Z"
+  },
+  "actions.outfit_items.msg_already_own": {
+    "src_hash": "ff03bf90647055eb6169fe3518a86e11",
+    "text": "Tuto část oblečení již vlastníte.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:04:10.616716Z"
+  },
+  "actions.key_door.msg_wrong_key": {
+    "src_hash": "0f9c62489a770c7c23c3b706d5fccb35",
+    "text": "Klíč se neshoduje.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:04:10.617219Z"
+  },
+  "actions.gamestore.msg_no_rookgaard": {
+    "src_hash": "b4299c21f178fe5003979baf89fc88c5",
+    "text": "Obchod nemá nabídky pro občana Rookgaarda.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:04:10.617896Z"
+  },
+  "actions.gamestore.msg_exhausted": {
+    "src_hash": "a7ea8fed6bcc46c21a5a700eaa4620c0",
+    "text": "Jste vyčerpaní.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:04:10.618411Z"
   }
 }

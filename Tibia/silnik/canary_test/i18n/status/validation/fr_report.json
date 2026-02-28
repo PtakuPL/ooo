@@ -1,12 +1,12 @@
 {
   "lang": "fr",
   "script_group": "latin",
-  "total_keys": 53770,
-  "translated": 18498,
-  "identical_to_en": 3933,
-  "placeholder_keys": 35252,
-  "coverage_pct": 34.4,
-  "issues_total": 111,
+  "total_keys": 74492,
+  "translated": 72180,
+  "identical_to_en": 50760,
+  "placeholder_keys": 688,
+  "coverage_pct": 96.9,
+  "issues_total": 115,
   "issues_by_type": {
     "V1_placeholder_mismatch": 98,
     "V6_newline_mismatch": 8,
@@ -19,7 +19,7 @@
     "MEDIUM": 12,
     "LOW": 0
   },
-  "score": 98.9,
+  "score": 99.6,
   "worst_keys": [
     {
       "key": "html.admin.changelog.form.html.text5",
@@ -144,11 +144,11 @@
   ],
   "crossref": {
     "enabled": true,
-    "issues_total": 477,
-    "consistency": 54,
+    "issues_total": 483,
+    "consistency": 56,
     "pl_reference": 400,
-    "length_ratio": 23,
+    "length_ratio": 27,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T20:41:04.402052Z"
+  "validated_at": "2026-02-26T20:13:57.497317Z"
 }

@@ -6,25 +6,28 @@
       "ok": true,
       "guard_placeholder": 0,
       "guard_pipe": 0,
+      "batch_guard_placeholder": 0,
+      "batch_guard_pipe": 0,
       "source": "file_state_audit"
     },
     "guard_command_below_threshold": {
       "ok": true,
       "guard_command": 0,
       "threshold": 5,
+      "batch_guard_command": 0,
       "source": "file_state_audit"
     },
     "coverage_above_95pct": {
-      "ok": true,
-      "coverage_pct": 95.2,
+      "ok": false,
+      "coverage_pct": 81.3,
       "total_keys": 273,
-      "real_translations": 260
+      "real_translations": 222
     },
     "quality_entry_present": {
       "ok": true,
       "has_quality_data": true
     }
   },
-  "is_done": true,
-  "timestamp": "2026-02-21T18:07:31.757493Z"
+  "is_done": false,
+  "timestamp": "2026-02-26T19:30:58.362432Z"
 }

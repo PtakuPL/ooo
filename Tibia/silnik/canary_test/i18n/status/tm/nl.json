@@ -2910,5 +2910,1589 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-21T02:55:46.842427Z"
+  },
+  "lib.functions.msg1": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Je moet wachten. Iemand daagt uit ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:44:17.657648Z"
+  },
+  "lib.functions.msg2": {
+    "src_hash": "f5187cf0efffe78314c7a7093a4e53dc",
+    "text": "Je moet wachten. Iemand daagt uit ",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T01:44:17.664230Z"
+  },
+  "channel.help.name": {
+    "src_hash": "6a26f548831e6a8c26bfbbd9f6ec61e0",
+    "text": "Hulp",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T01:59:48.001894Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_1": {
+    "src_hash": "975fcf0d930538235217abecc4470957",
+    "text": "Hum hum, hum hum",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:11:25.725642Z"
+  },
+  "npc.a_sweaty_cyclops.voice_1": {
+    "src_hash": "975fcf0d930538235217abecc4470957",
+    "text": "Hum hum, hum hum",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:11:25.744391Z"
+  },
+  "npc.a_vulcongra.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Psst! Houd het laag! <geeft je een uitgebreid rapport over monsteractiviteit>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:11:25.752726Z"
+  },
+  "npc.a_weakened_forest_fury.greet_msg_1": {
+    "src_hash": "72de401885f0bfc9802b1df2e36c8844",
+    "text": "Ik groet je, mens. Dit is een tijd van nood, meer dan ooit hebben we bewakers nodig om ons en onze wereld te beschermen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:11:25.754790Z"
+  },
+  "npc.a_wrinkled_bonelord.farewell_msg_1": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Wacht daar. Ik eet je op nadat ik heb opgeschreven wat ik heb ontdekt.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:11:25.764726Z"
+  },
+  "npc.a_wrinkled_bonelord.greet_msg_1": {
+    "src_hash": "695b5e1e25e59b54c194959defc700d8",
+    "text": "Wat is dit? Een optisch uitgedaagde entiteit genaamd |PLAYERNAME|. Hoe fascinerend!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:11:25.766521Z"
+  },
+  "monster.war_golem.voice_2": {
+    "src_hash": "7b06d4c681157c793486deb734643a2f",
+    "text": "Klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:17:55.230860Z"
+  },
+  "monster.damaged_worker_golem.voice_1": {
+    "src_hash": "7b06d4c681157c793486deb734643a2f",
+    "text": "Klonk klonk",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:17:55.244171Z"
+  },
+  "monster.bulltaur_forgepriest.desc": {
+    "src_hash": "dfa32e19e58a07acf7d0736b968aae65",
+    "text": "een Bulltaur Forgepriester",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:17:55.343072Z"
+  },
+  "data.otservbr.global.npc.corym.footman.L87.229": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Tot ziens, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:02.780759Z"
+  },
+  "data.otservbr.global.npc.corym.ratter.L92.1030": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Tot ziens, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:02.782569Z"
+  },
+  "data.otservbr.global.npc.corym.servant.L127.549": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Tot ziens, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:02.783756Z"
+  },
+  "data.otservbr.global.npc.corym.slave.L87.666": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Tot ziens, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:02.785773Z"
+  },
+  "data.otservbr.global.npc.corym.worker.01.L80.1137": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Tot ziens, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:02.787007Z"
+  },
+  "data.otservbr.global.npc.corym.worker.02.L87.1559": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Tot ziens, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:02.787818Z"
+  },
+  "data.otservbr.global.npc.corym.worker.03.L79.2": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Tot ziens, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:02.788825Z"
+  },
+  "data.otservbr.global.npc.corym.worker.04.L79.508": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Tot ziens, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:02.789708Z"
+  },
+  "data.otservbr.global.npc.corym.worker.05.L80.1452": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Tot ziens, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:02.790706Z"
+  },
+  "data.otservbr.global.npc.costello.L114.1316": {
+    "src_hash": "bf6a673ffca08400fa3398d19e7284a2",
+    "text": "Tot ziens. Kom snel terug.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:02.791585Z"
+  },
+  "data.otservbr.global.npc.dalbrect.L185.166": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Tot ziens. Graag gedaan.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:24:02.792760Z"
+  },
+  "quests.oramond.sewer_fix_2": {
+    "src_hash": "359a30a2dee1bd5097c038110c36944e",
+    "text": "<clong!> <clong!> <scrit scrit scrit>Dit zou het moeten doen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:27:40.957875Z"
+  },
+  "scripts.actions_containerRewards.msg_1": {
+    "src_hash": "713eae745d2b01fece6afdb41b5dd17a",
+    "text": "U heeft een {0} gevonden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:31:05.041702Z"
+  },
+  "scripts.actions_containerRewards.msg_2": {
+    "src_hash": "947b915abfadca7bdc405c1541974c61",
+    "text": "Het is leeg.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T02:31:05.044961Z"
+  },
+  "otclient_modules.assign_spell_otui.tr_6": {
+    "src_hash": "b068931cc450442b63f5b3d276ea4297",
+    "text": "Naam",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:39:33.852092Z"
+  },
+  "otclient_modules.assign_text_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annuleren",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T02:39:33.856124Z"
+  },
+  "otclient_modules.assign_text_otui.tr_2": {
+    "src_hash": "9639e32cab248434a17ab32237cb3b71",
+    "text": "Toepassen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:39:33.856606Z"
+  },
+  "otclient_modules.bestiary.tr_10": {
+    "src_hash": "a2cc588f2ab07ad61b05400f593eeb0a",
+    "text": "Zeldzaam",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:39:33.859151Z"
+  },
+  "otclient_modules.bestiary.tr_4": {
+    "src_hash": "88183b946cc5f0e8c96b2e66e1c74a7e",
+    "text": "Onbekende",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:39:33.860528Z"
+  },
+  "web.tpl.buttons.change_sex.set_1": {
+    "src_hash": "6b040454e34ebee8689571610e64a17d",
+    "text": "Verander van geslacht",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:47:39.979711Z"
+  },
+  "web.tpl.guilds.manager.b_3": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Beschrijving",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:47:39.982272Z"
+  },
+  "cpp.cancel.construct_inside_house": {
+    "src_hash": "388bc879bb1a6a973ed7816de1cd6c8c",
+    "text": "Je mag dit alleen in een huis bouwen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:51:20.789472Z"
+  },
+  "cpp.cancel.not_possible": {
+    "src_hash": "5cc9f07205cb1e6f58ba1b4ed837cfb0",
+    "text": "Sorry, niet mogelijk.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:51:20.795583Z"
+  },
+  "client.outfit.text2": {
+    "src_hash": "fff3be9b119c459101538ed6eb467818",
+    "text": "SelectionButton",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T02:59:11.247331Z"
+  },
+  "otclient_data.30_minimap_otui.tr_1": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annuleren",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T03:02:49.500279Z"
+  },
+  "otclient_data.30_minimap_otui.tr_3": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Beschrijving",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:02:49.503634Z"
+  },
+  "otclient_data.40_inventory_otui.tr_1": {
+    "src_hash": "0323de4f66a1700e2173e9bcdce02715",
+    "text": "Uitloggen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:02:49.506360Z"
+  },
+  "otclient_data.40_minimap_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annuleren",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T03:02:49.507669Z"
+  },
+  "otclient_data.40_minimap_otui.tr_4": {
+    "src_hash": "b5a7adde1af5c87d7fd797b6245c2a39",
+    "text": "Beschrijving",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:02:49.508130Z"
+  },
+  "otclient_data.40_outfitwindow_otui.tr_2": {
+    "src_hash": "ea4788705e6873b424c65e91c2846b19",
+    "text": "Annuleren",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T03:02:49.510628Z"
+  },
+  "data.otservbr.global.npc.dalbrect.L186.167": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Tot ziens.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:40.793755Z"
+  },
+  "data.otservbr.global.npc.dancing.fairy.L89.116": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Moge jouw pad altijd gelijk zijn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:40.797865Z"
+  },
+  "data.otservbr.global.npc.dancing.fairy.L90.117": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Moge jouw pad altijd gelijk zijn.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:40.799138Z"
+  },
+  "data.otservbr.global.npc.dane.L63.1215": {
+    "src_hash": "5c378dcf6c8917a12bc2146798cccbf5",
+    "text": "Kom alsjeblieft af en toe terug.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T03:36:40.800419Z"
+  },
+  "data.otservbr.global.npc.dedoras.L310.221": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nou, tot ziens dan.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:22.789284Z"
+  },
+  "data.otservbr.global.npc.denominator.L265.154": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Nou, tot ziens dan.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:13:22.793187Z"
+  },
+  "data.otservbr.global.npc.denominator.L59.153": {
+    "src_hash": "6e24bf1ae149637c184ae6b5d5454a1c",
+    "text": "Groeten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T05:27:34.624088Z"
+  },
+  "raid.arachir_the_ancient_one.name": {
+    "src_hash": "0a30cc23ffefbf66b30e5409951d05dc",
+    "text": "Arachir de Oude",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T08:35:10.179373Z"
+  },
+  "raid.bone_beast.name": {
+    "src_hash": "15b8ea869922dcd524b178ec843fc6ba",
+    "text": "Bot Beest",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T08:35:10.192835Z"
+  },
+  "arena.title.contender": {
+    "src_hash": "6bc60f225af3e040f25409d430314097",
+    "text": "Mededinger",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:09:26.473406Z"
+  },
+  "module.init.text5": {
+    "src_hash": "517a573bb2eebb6a9c51b2d586663a28",
+    "text": "Een outfit die bij jou past. We zijn er zeker van dat je het leuk zult vinden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T18:33:51.321546Z"
+  },
+  "event.player.msg_1": {
+    "src_hash": "68362d48bbe58ffe6e80d83dddad1f45",
+    "text": "Je vult je uithoudingsvermogen niet langer aan, omdat je een regeneratiezone hebt verlaten.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:53:28.018874Z"
+  },
+  "event.player.msg_2": {
+    "src_hash": "b4834225a1f266021eb8c3078a3a353f",
+    "text": "Er is een fout opgetreden bij het verwerken van uw rapport. Neem contact op met een gamemaster.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:53:28.020588Z"
+  },
+  "event.player.msg_3": {
+    "src_hash": "24dc08a041db9d4297f1d6df6a7573cf",
+    "text": "Bedankt voor het melden van {}. Uw rapport \\z\n\twordt zo snel mogelijk verwerkt door het {}-team.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:53:28.022038Z"
+  },
+  "event.player.msg_4": {
+    "src_hash": "b4834225a1f266021eb8c3078a3a353f",
+    "text": "Er is een fout opgetreden bij het verwerken van uw rapport. Neem contact op met een gamemaster.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:53:28.023391Z"
+  },
+  "event.player.msg_5": {
+    "src_hash": "ad93762e1a1a1337775cbbf49b508440",
+    "text": "Uw melding wordt verwerkt.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:53:28.024312Z"
+  },
+  "event.player.say_1": {
+    "src_hash": "a65ae4b9d622f5aa0ad9a90c999f9440",
+    "text": "Je voert de schildpad, nu mag je passeren.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:53:28.025313Z"
+  },
+  "event.player.msg_move_fast": {
+    "src_hash": "c6688013ffa822ec6f74cbb8fceb229e",
+    "text": "Je kunt dat item niet zo snel verplaatsen.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:53:28.026280Z"
+  },
+  "event.player.msg_report_sent": {
+    "src_hash": "c1d13c15a6ed00ee9e451cc57d9a46a2",
+    "text": "Uw rapport is verzonden naar {server}.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:53:28.027434Z"
+  },
+  "event.player.stamina_pz_recharge": {
+    "src_hash": "72e7da63f6db4ec35e7ed0a5d612157c",
+    "text": "In beschermingszone. Laad {0} uithoudingsvermogen elke {1} minuten op.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T18:53:28.030150Z"
+  },
+  "npc.a_fluffy_squirrel.greet_msg_1": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "Chhchh?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:23.035268Z"
+  },
+  "npc.a_weakened_forest_fury.multi_1": {
+    "src_hash": "b5c61236d3315c42a44aeae3710513a2",
+    "text": "Generaties geleden bedacht om een ​​wezen van zijn vrijheid te beroven, zodat het die naar waarheid weer kan verdienen. Je hebt ze nodig als je van plan bent de vogels terug te brengen naar hun rechtmatige thuis op de open plek. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:23.037314Z"
+  },
+  "npc.a_weakened_forest_fury.multi_10": {
+    "src_hash": "00d7a64ed041c6ca62c3fbf2ef74b9ab",
+    "text": "Word jij onze voogd?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:23.037806Z"
+  },
+  "npc.a_weakened_forest_fury.multi_2": {
+    "src_hash": "cb6b895924847c7df5baf481ad617fb9",
+    "text": "Heeft u er nog eentje nodig?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:23.038386Z"
+  },
+  "npc.a_weakened_forest_fury.multi_3": {
+    "src_hash": "63eec6b94d6354613e87439834cde2fa",
+    "text": "Dat zul je inderdaad doen. Neem een ​​van deze kooien, die generaties geleden zijn gemaakt om een ​​wezen van zijn vrijheid te beroven, zodat het die naar waarheid weer kan verdienen. Breng de vogels terug naar hun huis op de open plek. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:23.039945Z"
+  },
+  "npc.a_weakened_forest_fury.multi_4": {
+    "src_hash": "30e9fbab3401acfe9c02cd768676823a",
+    "text": "Je vindt {phials} voor water in de buurt van deze heilige bron die je veilig naar de open plek brengt. Er zijn geen zaden meer, ze zijn nu in handen van de indringers. Heb vertrouwen in jezelf, voogd.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:23.041058Z"
+  },
+  "npc.a_weakened_forest_fury.multi_5": {
+    "src_hash": "067516ba214c8403c0445d5e8f4adeea",
+    "text": "Mijn trots is groot, maar niet groter dan de rede. Ik ben niet zo trots om om hulp te vragen, aangezien dit een donker uur is. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:23.041909Z"
+  },
+  "npc.a_weakened_forest_fury.multi_6": {
+    "src_hash": "1e30ec7d70fd1b16ada49f6ab3be510a",
+    "text": "Deze open plek is ontheiligd. We hebben het eeuwenlang geheim gehouden, maar het kwaad heeft een manier gevonden om te bezoedelen en te vernietigen wat ons heiligste was. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:32.808645Z"
+  },
+  "npc.a_weakened_forest_fury.multi_7": {
+    "src_hash": "4e6bd8868a7bd92269c9c1892743d62e",
+    "text": "Er is maar één manier om zijn geest nieuw leven in te blazen: een bewaker moet zich daarheen wagen en het leven weer in het bos brengen. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:32.809867Z"
+  },
+  "npc.a_weakened_forest_fury.multi_8": {
+    "src_hash": "2604532e005fa4358433885748c9f485",
+    "text": "Gestolen {seeds} moet uit de {intruders} worden gehaald en geplant waar de grond nog steeds hongert. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:32.810888Z"
+  },
+  "npc.a_weakened_forest_fury.multi_9": {
+    "src_hash": "ec255bee3e133245c94c19e83f1fba9d",
+    "text": "De zuiverste {water} uit de zuiverste bron moet daarheen worden gebracht en gegoten en {birds} die leven geeft, moet worden teruggebracht naar het innerlijke heiligdom van de open plek. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:32.812017Z"
+  },
+  "npc.a_weakened_forest_fury.say_1": {
+    "src_hash": "7448e9db1cb3dab1e3f767edc5096dd7",
+    "text": "Zaden om leven te geven aan sterke bomen, bloeiend en trots. De {intruders} heeft ons van hen beroofd.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:32.812825Z"
+  },
+  "npc.a_weakened_forest_fury.say_2": {
+    "src_hash": "a8565c2ba7e9d4d3534c7a703b6a6276",
+    "text": "De indringers verschenen in een oogwenk. Uit het niets, alsof ze uit het niets kwamen. Ze overrompelden de open plek in de onze en verdreven wat er binnen een dag van ons overbleef.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:32.813970Z"
+  },
+  "npc.a_weakened_forest_fury.say_3": {
+    "src_hash": "a411d42a289aafbf203c5caeb379e3f6",
+    "text": "Door deze put stroomt het zuiverste water. Eeuwenlang hebben we het verborgen gehouden, zodat andere wezens er hun ogen niet op konden richten.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:32.814853Z"
+  },
+  "npc.a_weakened_forest_fury.say_4": {
+    "src_hash": "055d4f5ac2a5439f55bddb2343c0a757",
+    "text": "Wees voorzichtig, bewaker.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:32.815272Z"
+  },
+  "npc.a_weakened_forest_fury.say_5": {
+    "src_hash": "b083ea578f8aa1fadf1c933494096fb8",
+    "text": "Flesjes voor het zuiverste water uit onze heilige bron. Ze zijn zorgvuldig vervaardigd en zeer kwetsbaar. We hebben een kleine voorraad hier rond de put. Waarschijnlijk het enige waar de indringers niets om gaven.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:40.239663Z"
+  },
+  "npc.a_weakened_forest_fury.say_6": {
+    "src_hash": "6059c79ce3a8c0b9791f41c39cbe060f",
+    "text": "Ik heb je al een kooi gegeven. Als u er nog een nodig heeft, moet u later bij mij terugkomen.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:40.240751Z"
+  },
+  "npc.a_weakened_forest_fury.stdmod_1": {
+    "src_hash": "19483b510c4083e683cf85777f6a0bd8",
+    "text": "Mijn naam is nu alleen bekend bij de wind en dat zal zo blijven totdat ik terugkeer naar mijn verwanten.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:40.241638Z"
+  },
+  "npc.a_weakened_forest_fury.stdmod_2": {
+    "src_hash": "24e71111f5cd6c344a51fc84bc7d7ac8",
+    "text": "Ik was een bewaker van deze open plek. Ik ben de laatste... iedereen moest weg.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:40.242401Z"
+  },
+  "npc.a_weakened_forest_fury.stdmod_3": {
+    "src_hash": "4b4c28cf9514e263cd64e2cf8515fef0",
+    "text": "De tijd van deze open plek wordt steeds korter als er niet snel iets wordt gedaan.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:40.243082Z"
+  },
+  "npc.a_weakened_forest_fury.stdmod_4": {
+    "src_hash": "055d4f5ac2a5439f55bddb2343c0a757",
+    "text": "Wees voorzichtig, bewaker.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:40.243537Z"
+  },
+  "npc.a_weakened_forest_fury.stdmod_5": {
+    "src_hash": "6eae3ba94f153241f7139753a33e34e7",
+    "text": "Wrede wezens. Groot en monsterlijk, met één oog, starend naar hun prooi. ",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:40.244250Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_10": {
+    "src_hash": "0d87c1622e87ee2e5337a11eeb52ac9e",
+    "text": "Deze dwazen en hun bijgelovige levenscultus begrijpen niets van belang.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:40.244933Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_11": {
+    "src_hash": "54c30b0c73d996b60052eb31ab154850",
+    "text": "Alleen inferieure soorten hebben wapens nodig.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:46.735556Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_12": {
+    "src_hash": "1dab24bde8e2aeae70dca275e7c751a7",
+    "text": "Ik hoorde dat elfen boven kwamen wonen.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:46.736180Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_13": {
+    "src_hash": "4e155dba3d938b25d6866fe778d12ccd",
+    "text": "Cijfers zijn essentieel. Zij zijn het geheim achter de schermen. Als je een meester in de wiskunde bent, ben je een meester over leven en dood.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:46.737079Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_14": {
+    "src_hash": "c004dfa5adae261ac341f4b270b8ce76",
+    "text": "Onze boeken zijn geschreven in 469, je kunt ze natuurlijk niet begrijpen.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:14:46.737701Z"
+  },
+  "item.1.name": {
+    "src_hash": "9460370bb0ca1c98a779b1bcc6861c2c",
+    "text": "water",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:50.790745Z"
+  },
+  "item.10026.name": {
+    "src_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
+    "text": "baby rotworm",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:50.791688Z"
+  },
+  "item.10388.name": {
+    "src_hash": "373afc213a9bc8b34a14a6cb3d1cadba",
+    "text": "drakinata",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:50.792158Z"
+  },
+  "item.10391.name": {
+    "src_hash": "14d0ab7dd6dbb7192ef42e58e739a6e5",
+    "text": "drachaku",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:50.792486Z"
+  },
+  "item.10507.name": {
+    "src_hash": "263addb7611158a2c3db7c164a20cc2f",
+    "text": "lamp",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:50.792810Z"
+  },
+  "item.1069.name": {
+    "src_hash": "5410d1752d6d66d5aef6dcd437b8056a",
+    "text": "bug tral",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:50.793173Z"
+  },
+  "item.10727.name": {
+    "src_hash": "8789a6a22faa24660fcdc4f2baf665db",
+    "text": "dreadcoil",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:50.793494Z"
+  },
+  "item.11038.name": {
+    "src_hash": "88c45dafcfdeed8189b1e4802902e3f6",
+    "text": "jade ornament",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:50.793974Z"
+  },
+  "item.11333.desc": {
+    "src_hash": "780367cb103682624b01e2dd370f1f9d",
+    "text": "Het water in deze kom is gezuiverd",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:50.794897Z"
+  },
+  "item.11460.name": {
+    "src_hash": "b1a9a725e844c494dce6d07966a7f23d",
+    "text": "aubergine",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:50.795241Z"
+  },
+  "item.11461.name": {
+    "src_hash": "fb8da64f829e8fc7b40a665758c069e6",
+    "text": "broccoli",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:50.795555Z"
+  },
+  "item.11808.name": {
+    "src_hash": "aa544da6334f633ae7a9ea3bea2d023f",
+    "text": "taboret",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:50.796218Z"
+  },
+  "item.11814.name": {
+    "src_hash": "9d40936a0c551a7cfbf98bcffad1eebb",
+    "text": "barbecue",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:50.796532Z"
+  },
+  "item.12304.name": {
+    "src_hash": "9528fcf60999a5fd25591fc9f89434b5",
+    "text": "maxilla maximus",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:58.384268Z"
+  },
+  "item.12547.name": {
+    "src_hash": "a524624c6f4d37dc027d0591e15e6dba",
+    "text": "diapason",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:58.384615Z"
+  },
+  "item.12575.name": {
+    "src_hash": "9a38c6b8cd9de92eb021328f0d5a2383",
+    "text": "Whinona",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:58.384935Z"
+  },
+  "item.12576.name": {
+    "src_hash": "9c0a44006bbd6053818d4d98198629a8",
+    "text": "Meandi",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:58.385247Z"
+  },
+  "item.12577.name": {
+    "src_hash": "b3952bf8fa5443b9aa971154a2fb1bf1",
+    "text": "Impward",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:58.385563Z"
+  },
+  "item.12578.name": {
+    "src_hash": "4ad2676a1c2f6c7e7d37c5f73688d990",
+    "text": "Evilina",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:58.386015Z"
+  },
+  "item.12579.name": {
+    "src_hash": "9a38c6b8cd9de92eb021328f0d5a2383",
+    "text": "Whinona",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:58.386387Z"
+  },
+  "item.12580.name": {
+    "src_hash": "9c0a44006bbd6053818d4d98198629a8",
+    "text": "Meandi",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:58.386744Z"
+  },
+  "item.12581.name": {
+    "src_hash": "b3952bf8fa5443b9aa971154a2fb1bf1",
+    "text": "Impward",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:58.387101Z"
+  },
+  "item.12582.name": {
+    "src_hash": "4ad2676a1c2f6c7e7d37c5f73688d990",
+    "text": "Evilina",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:58.387455Z"
+  },
+  "item.12789.desc": {
+    "src_hash": "86d0d5f28d4b9bb0d4acae8a5ca3ff3f",
+    "text": "Een goed item om nietsvermoedende orcs uit te schakelen",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:20:58.388120Z"
+  },
+  "monster.salamander.name": {
+    "src_hash": "5617d73c694ad8f8004009e0f6b2e3d6",
+    "text": "Salamander",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.031646Z"
+  },
+  "monster.goblin.name": {
+    "src_hash": "8e81e2940511f7152ba4462fe53e35b8",
+    "text": "Goblin",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.032037Z"
+  },
+  "monster.ghoul.name": {
+    "src_hash": "a8515fffc5e27c8c977bec3adc1d06e6",
+    "text": "Ghoul",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.032360Z"
+  },
+  "monster.skeleton.name": {
+    "src_hash": "6ab48f7ed56efc362f41853c5616bf75",
+    "text": "Skelet",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.032636Z"
+  },
+  "monster.skeleton.desc": {
+    "src_hash": "3671d9838dcee79307f4c8b4ddb33743",
+    "text": "een skelet",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.032921Z"
+  },
+  "monster.wolf.name": {
+    "src_hash": "279ede0c6bdbd7d26309becd159053d8",
+    "text": "Wolf",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.033230Z"
+  },
+  "monster.valkyrie.name": {
+    "src_hash": "0af3f80a54716414f24a166e5c1b6c26",
+    "text": "Valkyrie",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.033556Z"
+  },
+  "monster.demon.name": {
+    "src_hash": "300d4af0950c89b847cf6f7500e6060c",
+    "text": "Demon",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.033871Z"
+  },
+  "monster.frazzlemaw.name": {
+    "src_hash": "1a87e30943cbe3f2e8d894a44f5ce353",
+    "text": "Frazzlemaw",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.034239Z"
+  },
+  "monster.guzzlemaw.name": {
+    "src_hash": "af39e6956034169ca52f6fff8f9fbc5b",
+    "text": "Guzzlemaw",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.034570Z"
+  },
+  "monster.bazir.name": {
+    "src_hash": "ee6529472291958a195a6bed85a9515f",
+    "text": "Bazir",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.034879Z"
+  },
+  "monster.bazir.desc": {
+    "src_hash": "ee6529472291958a195a6bed85a9515f",
+    "text": "Bazir",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.035186Z"
+  },
+  "monster.behemoth.name": {
+    "src_hash": "be20385e18333edb329d4574f364a1f0",
+    "text": "Behemoth",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.035504Z"
+  },
+  "monster.hydra.name": {
+    "src_hash": "0a79d2e788f647cf8c8bee8cad4bf94e",
+    "text": "Hydra",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.035809Z"
+  },
+  "monster.wyrm.name": {
+    "src_hash": "6ca9ed7b25e26786c48ed48b538b14c3",
+    "text": "Wyrm",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.036107Z"
+  },
+  "monster.old_wolf.name": {
+    "src_hash": "279ede0c6bdbd7d26309becd159053d8",
+    "text": "Wolf",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.036401Z"
+  },
+  "monster.weeper.name": {
+    "src_hash": "89d5f03070cb61e208573636188f254e",
+    "text": "Weeper",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.036805Z"
+  },
+  "monster.orewalker.name": {
+    "src_hash": "12c4cb93db82d7abaeda85186b68f546",
+    "text": "Orewalker",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:08.037821Z"
+  },
+  "monster.clay_guardian.name": {
+    "src_hash": "2c7a28956d81f86276564af9edc04b0b",
+    "text": "Clay Guardian",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:12.783451Z"
+  },
+  "monster.makara.name": {
+    "src_hash": "3c71ac3f76f14f19af29c607e4884b32",
+    "text": "Makara",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:12.784411Z"
+  },
+  "monster.goblin_leader.voice_1": {
+    "src_hash": "a94c45564c67fc4c99ccfd072bde6ced",
+    "text": "Go go, Gobo aanval!!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:12.785234Z"
+  },
+  "monster.lost_basher.name": {
+    "src_hash": "dbe4cc2cbc428da55264a6af52a1b637",
+    "text": "Basher verloren",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:12.785561Z"
+  },
+  "monster.lost_basher.desc": {
+    "src_hash": "fa9c74c46dc6926503c65cf0c9e3d92d",
+    "text": "een verloren basher",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:12.785915Z"
+  },
+  "monster.dworc_fleshhunter.name": {
+    "src_hash": "ec9279214c56177a0e79825c4d5c9cdc",
+    "text": "Dworc Fleshhunter",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:27:12.786431Z"
+  },
+  "data.otservbr.global.npc.a.fluffy.squirrel.L71.1052": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "Chhchh?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:09.261303Z"
+  },
+  "data.otservbr.global.npc.blind.orc.L102.1517": {
+    "src_hash": "28271e708d06453b7febf147a1c473ef",
+    "text": "Futchi.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:09.262591Z"
+  },
+  "data.otservbr.global.npc.corym.ratter.L63.1029": {
+    "src_hash": "e0afcf5b05f2bd681be3b452372d8aca",
+    "text": "We graven alles op wat moeder aarde ons levert: waardevolle natuurlijke hulpbronnen.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:09.266311Z"
+  },
+  "data.otservbr.global.npc.corym.servant.L76.548": {
+    "src_hash": "3c85ff7e716c533650a5c59a22ea7985",
+    "text": "Ieder mens is de architect van zijn eigen fortuin. De tijden van repressie zijn eindelijk voorbij.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:09.267102Z"
+  },
+  "data.otservbr.global.npc.corym.slave.L62.665": {
+    "src_hash": "19ef9d5e9520e892b00ccf7857e9de4e",
+    "text": "De repressie heeft te lang geduurd. Met onze nieuwe wapens zullen de respectieve mensen hun rechtvaardige straf krijgen.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:09.267952Z"
+  },
+  "data.otservbr.global.npc.corym.worker.01.L65.1136": {
+    "src_hash": "a45d93408bdfa87a57fed8c213ad67f5",
+    "text": "Mijn held! Heeft een vriend van mij je gestuurd om mij te bevrijden? Een echte vriend!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:09.268633Z"
+  },
+  "data.otservbr.global.npc.corym.worker.02.L62.1558": {
+    "src_hash": "4786eaea8d52650dd4ca1e34433b9831",
+    "text": "We hebben wapens nodig om onze situatie te overwinnen.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:09.269233Z"
+  },
+  "data.otservbr.global.npc.corym.worker.03.L65.1": {
+    "src_hash": "a45d93408bdfa87a57fed8c213ad67f5",
+    "text": "Mijn held! Heeft een vriend van mij je gestuurd om mij te bevrijden? Een echte vriend!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:09.269973Z"
+  },
+  "data.otservbr.global.npc.corym.worker.04.L64.507": {
+    "src_hash": "f5e3120d0b7f2781e61a2e28e0e5cd9a",
+    "text": "Ieder mens is de architect van zijn eigen fortuin. Ik wil het daglicht weer zien! Ruik gewoon frisse lucht.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:09.270787Z"
+  },
+  "data.otservbr.global.npc.corym.worker.05.L65.1451": {
+    "src_hash": "a45d93408bdfa87a57fed8c213ad67f5",
+    "text": "Mijn held! Heeft een vriend van mij je gestuurd om mij te bevrijden? Een echte vriend!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:09.271460Z"
+  },
+  "data.otservbr.global.npc.costello.L113.1315": {
+    "src_hash": "315117a09e2e5f339c9bb41cbdb72c84",
+    "text": "Welkom, |PLAYERNAME|! Vertel me gerust wat je hier heeft gebracht.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:09.272132Z"
+  },
+  "data.otservbr.global.npc.curos.L118.838": {
+    "src_hash": "54771d09c948feb1769bd51c9a05d4ac",
+    "text": "Wees begroet met een blanco huid.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:17.574112Z"
+  },
+  "data.otservbr.global.npc.dalbrect.L184.165": {
+    "src_hash": "b2393ea7df0080fc59d56c719e0bbb62",
+    "text": "Wees welkom, reiziger |PLAYERNAME|. Welkom op mijn {hut}.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:17.574994Z"
+  },
+  "data.otservbr.global.npc.dane.L62.1214": {
+    "src_hash": "042f38056b2f1831092b50637a9db186",
+    "text": "Welkom in de golfkelder, |PLAYERNAME|.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:17.575934Z"
+  },
+  "data.otservbr.global.npc.daniel.steelsoul.L250.865": {
+    "src_hash": "3452d00ba60a2347d6c368f9d741e89a",
+    "text": "Gegroet en {Banor} wees bij je, |PLAYERNAME|!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:17.577095Z"
+  },
+  "data.otservbr.global.npc.daniel.steelsoul.L251.866": {
+    "src_hash": "76610d1d1bdcbbf98436019731c5ebde",
+    "text": "Lof aan BANOR!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:17.577980Z"
+  },
+  "data.otservbr.global.npc.daniel.steelsoul.L252.867": {
+    "src_hash": "76610d1d1bdcbbf98436019731c5ebde",
+    "text": "Lof aan BANOR!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:17.578792Z"
+  },
+  "data.otservbr.global.npc.dedoras.L309.220": {
+    "src_hash": "fd3ed5a081549232786a3ce7741beddd",
+    "text": "Gegroet kenniszoekers. Het lijkt erop dat jij precies de persoon bent voor wie ik {looking} ben.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:17.580031Z"
+  },
+  "data.otservbr.global.npc.denominator.L57.152": {
+    "src_hash": "328200f8a9c7c2a9c9d051689bd862d8",
+    "text": "Voer antwoorden in voor de volgende {questions}:",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:17.580839Z"
+  },
+  "data.otservbr.global.npc.dermot.L100.1152": {
+    "src_hash": "5f84d27aa53c0c7bbd3c36c0a9842ddc",
+    "text": "Hallo, reiziger |PLAYERNAME|. Hoe kan ik je helpen?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:17.581467Z"
+  },
+  "data.otservbr.global.npc.dermot.L101.1153": {
+    "src_hash": "7f376862254f94333fa097c1c3ff3d83",
+    "text": "Tot ziens.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:37:17.581818Z"
+  },
+  "quests.actions.there_is_someone_in_the_room": {
+    "src_hash": "52dddc0701dbfce052c07b68d596db35",
+    "text": "Er is iemand in de kamer.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:42:21.840375Z"
+  },
+  "quests.actions_basin.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Sorry",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:42:21.840862Z"
+  },
+  "quests.actions_coral.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Sorry.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:42:21.841197Z"
+  },
+  "quests.actions_coruja.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Sorry",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:42:21.841512Z"
+  },
+  "quests.actions_crystal.msg_1": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Sorry.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:42:21.841836Z"
+  },
+  "quests.actions_sangra.msg_1": {
+    "src_hash": "140208bb60fc3f70eabd068701030425",
+    "text": "Sorry",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:42:21.842234Z"
+  },
+  "quests.bigfoot_burden.shooting_hit": {
+    "src_hash": "1ec47fa3f005f5e253a4276eb0a85264",
+    "text": "Hit!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:42:21.842556Z"
+  },
+  "quests.dark_trails.you_need_5_players_to_fight": {
+    "src_hash": "dd66394f98cf7a92f092a64cf4b6f701",
+    "text": "Je hebt 5 spelers nodig om tegen Doodpriester Shargon te vechten.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:42:21.843194Z"
+  },
+  "quests.dark_trails.you_need_exactly_5_players_to": {
+    "src_hash": "3b4c4eca07178defda28435c1bf2bbdd",
+    "text": "Je hebt precies 5 spelers nodig om tegen Doodpriester Shargon te vechten.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:42:21.843846Z"
+  },
+  "quests.the_order_of_lion.theres_someone_already_in_the_skirmish": {
+    "src_hash": "859265a56444cce63c4967f001a87f46",
+    "text": "Er is al iemand in de schermutseling.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:42:21.845216Z"
+  },
+  "raid.white_pale.name": {
+    "src_hash": "c26999e79917dc6219158f8955472741",
+    "text": "White Pale",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.912986Z"
+  },
+  "raid.the_pale_count.name": {
+    "src_hash": "3b72b8f24e68dd7e889fa0bcc093f7d4",
+    "text": "The Pale Count",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.913736Z"
+  },
+  "raid.barba_svar.name": {
+    "src_hash": "c7b6a31e7221a8f7beaa745a0d779579",
+    "text": "Barba Svar",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.914294Z"
+  },
+  "raid.barba_bittermor.name": {
+    "src_hash": "65d5a9017ada07c5fd8a1f1f6f6fa605",
+    "text": "Barba Bittermor",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.914831Z"
+  },
+  "raid.ice_golems.name": {
+    "src_hash": "724107539796c10b6ed076eeb39ffb6f",
+    "text": "Ice Golems",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.915323Z"
+  },
+  "raid.wasp_bear.name": {
+    "src_hash": "f5318a3971a453461b30996bcfcff0aa",
+    "text": "Wasp Bear",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.915797Z"
+  },
+  "raid.the_welter.name": {
+    "src_hash": "06c5706a0ac0ee90aae4d076fff06ecb",
+    "text": "The Welter",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.916335Z"
+  },
+  "raid.midnight_panther_3.name": {
+    "src_hash": "da72c589dd7fc87a49ed0ad968ab908c",
+    "text": "Midnight Panther 3",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.917031Z"
+  },
+  "raid.midnight_panther_1.name": {
+    "src_hash": "4dec404364fe3c69ff2b5b22e166ad04",
+    "text": "Midnight Panther 1",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.917617Z"
+  },
+  "raid.midnight_panther_2.name": {
+    "src_hash": "6e3040074dacf7fed85d0910a2cb9154",
+    "text": "Midnight Panther 2",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.918278Z"
+  },
+  "raid.serpent_spawn.name": {
+    "src_hash": "4122411a36fbcd6b3d08ec393758d536",
+    "text": "Serpent Spawn",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.918798Z"
+  },
+  "raid.wild_horses.name": {
+    "src_hash": "b7e3bb5561419e11e0638d054c1f6e13",
+    "text": "Wild Horses",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.919350Z"
+  },
+  "raid.rottie1.name": {
+    "src_hash": "2434c72f6d31d3e067482645bae5c9df",
+    "text": "Rottie1",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.919777Z"
+  },
+  "raid.rottie2.name": {
+    "src_hash": "33583cf2a19f1577097d56ad05d0a5d2",
+    "text": "Rottie2",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.920248Z"
+  },
+  "raid.crustacea_gigantica_4.name": {
+    "src_hash": "e705031143466f92173a6cdc650abe2b",
+    "text": "Schaaldieren Gigantica 4",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.921124Z"
+  },
+  "raid.crustacea_gigantica_5.name": {
+    "src_hash": "20ac80461ca5823703b1a1c4c5dc1853",
+    "text": "Schaaldieren Gigantica 5",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.921863Z"
+  },
+  "raid.gaz_haragoth.name": {
+    "src_hash": "b3dd522c06865f52bf4321b5d07cbd06",
+    "text": "Gaz Haragoth",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.922518Z"
+  },
+  "raid.crustacea_gigantica_1.name": {
+    "src_hash": "fe15786d2dc84508d331b28dda2fd617",
+    "text": "Schaaldieren Gigantica 1",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.923085Z"
+  },
+  "raid.crustacea_gigantica_2.name": {
+    "src_hash": "dbc8fdb622fbf9185d733a3ba7ddbd8d",
+    "text": "Schaaldieren Gigantica 2",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.923599Z"
+  },
+  "raid.crustacea_gigantica_3.name": {
+    "src_hash": "0baf22f5185dcf61fc250759b7ff6349",
+    "text": "Schaaldieren Gigantica 3",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:41.924115Z"
+  },
+  "raid.diblis_the_fair.name": {
+    "src_hash": "5cd6555c19e0b434371a7a34d538792b",
+    "text": "Diblis The Fair",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:46.477438Z"
+  },
+  "raid.the_old_widow.name": {
+    "src_hash": "0a46dc1f306c4565526cd2e7b1631bd1",
+    "text": "The Old Widow",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:46.478076Z"
+  },
+  "raid.feverish_citizen.name": {
+    "src_hash": "7f9a98bbccbfd04494fb0436a1bb2de3",
+    "text": "Feverish Citizen",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:46.478606Z"
+  },
+  "raid.water_buffalo.name": {
+    "src_hash": "76970c076e84449bff9de4d9398d697e",
+    "text": "Water Buffalo",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:46.479183Z"
+  },
+  "raid.sir_valorcrest.name": {
+    "src_hash": "f8298500215b17e312aa870c0031d7e4",
+    "text": "Sir Valorcrest",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:46.479855Z"
+  },
+  "raid.mad_mage.name": {
+    "src_hash": "7cb4e60cd0927f995c74a12fe8154ebc",
+    "text": "Mad Mage",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:46.480356Z"
+  },
+  "raid.weakened_shlorg.name": {
+    "src_hash": "7d6db214fa9761098b8e5462761b864c",
+    "text": "Weakened Shlorg",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:46.480863Z"
+  },
+  "raid.zevelon_duskbringer.name": {
+    "src_hash": "5ce47d3193e6d4fdcb52a667ed3dd600",
+    "text": "Zevelon Duskbringer",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:46.481415Z"
+  },
+  "raid.zulazza_the_corruptor.name": {
+    "src_hash": "50f128ec9e12698f936e0ea56a2b2b61",
+    "text": "Zulazza The Corruptor",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:46.481987Z"
+  },
+  "raids.abdendriel.dragons.msg_1": {
+    "src_hash": "357114c014778192c54f86c048b33ab8",
+    "text": "Er komen draken op in Draconia!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:03:46.482643Z"
   }
 }

@@ -65,7 +65,7 @@
   "lib.player.msg_no_other_summons": "Nie możesz mieć innych summonów.",
   "lib.player.msg_paid_inventory": "Pobrano {amount} złota z ekwipunku.",
   "lib.player.msg_paid_mixed": "Pobrano {inventoryAmount} z ekwipunku i {bankAmount} złota z konta bankowego. Saldo konta wynosi teraz {balance} złota.",
-  "lib.player.msg_transfer": "[PL] {name} has transferred {amount} gold coins to you.",
+  "lib.player.msg_transfer": "{name} has transferred {amount} gold coins to you.",
   "lib.players.msg1": "Otrzymałeś punkt sławy.",
   "lib.quests.msg1": "Twój questlog został zaktualizowany.",
   "lib.quests.msg_updated": "Twój questlog został zaktualizowany.",

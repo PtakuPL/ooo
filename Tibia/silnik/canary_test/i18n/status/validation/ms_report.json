@@ -1,12 +1,12 @@
 {
   "lang": "ms",
   "script_group": "latin",
-  "total_keys": 53770,
-  "translated": 4904,
-  "identical_to_en": 3883,
-  "placeholder_keys": 48846,
-  "coverage_pct": 9.1,
-  "issues_total": 4,
+  "total_keys": 74492,
+  "translated": 5028,
+  "identical_to_en": 4003,
+  "placeholder_keys": 48715,
+  "coverage_pct": 6.7,
+  "issues_total": 9,
   "issues_by_type": {
     "V2_length_ratio": 4,
     "V4_artifact": 2,
@@ -84,5 +84,5 @@
     "length_ratio": 3,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T20:41:08.382544Z"
+  "validated_at": "2026-02-26T20:14:00.789533Z"
 }

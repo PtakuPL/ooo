@@ -1,5 +1,5 @@
 {
-  "_comment": "[EN] Example Merchant NPC - English translations",
+  "_comment": "Example Merchant NPC - English translations",
   "_file": "data-otservbr-global/npc/example_merchant_i18n.lua",
   "npc.example_merchant.farewell": "La revedere, %s. Vizitează-mă din nou!",
   "npc.example_merchant.greeting": "Salut %s! Bine ai venit în magazinul meu. Spune {trade} pentru a vedea ofertele mele.",

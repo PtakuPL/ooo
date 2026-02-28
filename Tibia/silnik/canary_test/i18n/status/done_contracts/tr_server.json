@@ -18,16 +18,16 @@
       "source": "file_state_audit"
     },
     "coverage_above_95pct": {
-      "ok": true,
-      "coverage_pct": 99.8,
+      "ok": false,
+      "coverage_pct": 13.1,
       "total_keys": 2574,
-      "real_translations": 2568
+      "real_translations": 336
     },
     "quality_entry_present": {
       "ok": true,
       "has_quality_data": true
     }
   },
-  "is_done": true,
-  "timestamp": "2026-02-25T23:27:14.417725Z"
+  "is_done": false,
+  "timestamp": "2026-02-26T19:39:36.142496Z"
 }

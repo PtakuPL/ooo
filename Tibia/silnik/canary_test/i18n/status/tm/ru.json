@@ -6457,11 +6457,11 @@
   },
   "gamestore.desc.preybonus_1": {
     "src_hash": "ba965e035752e2099adfe30997c25d57",
-    "text": "Вы активировали добычу, но вам не нравится случайно выбранный бонус? Катайтесь за новым! Здесь вы можете приобрести пять бонусных рероллов Prey! \\nA Bonus Reroll позволяет получить бонус более высокого значения (максимум 50%). Бонус для вашей добычи будет выбран случайным образом из одного из следующих: увеличение урона, уменьшение урона, бонусный опыт, улучшенная добыча. 2-часовое время охоты начнется заново, как только вы получите новый бонус. Ваш монстр-жертва останется прежним.",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Вы активировали добычу, но вам не нравится случайно выбранный бонус? Катайтесь за новым! Здесь вы можете приобрести пять бонусных рероллов Прей! \\nA Бонус Реролл позволяет получить бонус более высокого значения (максимум 50%). Бонус для вашей добычи будет выбран случайным образом из одного из следующих: увеличение урона, уменьшение урона, бонусный опыт, улучшенная добыча. 2-часовое время охоты начнется заново, как только вы получите новый бонус. Ваш монстр-жертва останется прежним.",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-16T20:24:44.017817Z"
+    "updated_at": "2026-02-26T02:28:37.663513Z"
   },
   "gamestore.desc.preyslot_1": {
     "src_hash": "e28416aff7d557334bec15fb821ac8a9",
@@ -11912,12 +11912,12 @@
     "updated_at": "2026-02-16T21:24:38.471509Z"
   },
   "npc.a_prisoner.say_1": {
-    "src_hash": "23469a671f164a026ef690d3d04bfa01",
+    "src_hash": "29d0860547c71ca10af66af2624b6a71",
     "text": "Отличная загадка, не так ли? Если вы скажете мне правильный ответ, \\z я вам кое-что дам. Хе-хе-хе!",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-16T21:24:43.539169Z"
+    "updated_at": "2026-02-26T02:04:30.050014Z"
   },
   "npc.a_prisoner.say_10": {
     "src_hash": "47bc194e64dd30781fd50c51644e8b18",
@@ -11944,12 +11944,12 @@
     "updated_at": "2026-02-16T21:24:43.542935Z"
   },
   "npc.a_prisoner.say_2": {
-    "src_hash": "c6ac9cb997c9abda82981ec24a71ed9b",
+    "src_hash": "2746e0ec3b386589dd2916b4f142829c",
     "text": "Мои сюрреалистические цифры основаны на удивительных фактах. \\z Хотите узнать тайну математической магии?",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "source": "word_dict",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-02-16T21:24:46.484388Z"
+    "updated_at": "2026-02-26T02:04:30.056967Z"
   },
   "npc.a_prisoner.say_3": {
     "src_hash": "2e3980dced5c07d3219b1b4334ce365a",
@@ -17281,19 +17281,19 @@
   },
   "otclient_modules.bestiary.tr_5": {
     "src_hash": "141bc6a62356a99b7b2fb5547e339a4f",
-    "text": "Мастерство Animus для этого существа разблокировано.\nОно даёт %s%% бонусного опыта, плюс дополнительно 0.1%% за каждые 10 разблокированных мастерств Animus, максимум до 4%%.\nСейчас вы получаете %s%% бонусного опыта благодаря тому, что разблокировали %s мастерств Animus.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Мастерство Анимус для этого существа разблокировано.\nОно даёт %s%% бонусного опыта, плюс дополнительно 0.1%% за каждые 10 разблокированных мастерств Анимус, максимум до 4%%.\nСейчас вы получаете %s%% бонусного опыта благодаря тому, что разблокировали %s мастерств Анимус.",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-16T23:21:58.675117Z"
+    "updated_at": "2026-02-26T02:52:12.360352Z"
   },
   "otclient_modules.bestiary.tr_8": {
     "src_hash": "141bc6a62356a99b7b2fb5547e339a4f",
-    "text": "Мастерство Animus для этого существа разблокировано.\nОно даёт %s%% бонусного опыта, плюс дополнительно 0.1%% за каждые 10 разблокированных мастерств Animus, максимум до 4%%.\nСейчас вы получаете %s%% бонусного опыта благодаря тому, что разблокировали %s мастерств Animus.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Мастерство Анимус для этого существа разблокировано.\nОно даёт %s%% бонусного опыта, плюс дополнительно 0.1%% за каждые 10 разблокированных мастерств Анимус, максимум до 4%%.\nСейчас вы получаете %s%% бонусного опыта благодаря тому, что разблокировали %s мастерств Анимус.",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-16T23:21:58.677997Z"
+    "updated_at": "2026-02-26T02:52:12.364471Z"
   },
   "otclient_modules.blessing.tr_12": {
     "src_hash": "4db719e78de6bd9cfa7e431b738c1c16",
@@ -20841,11 +20841,11 @@
   },
   "_comment": {
     "src_hash": "92c37f5d3c00bcd4993ae8b20d4912c6",
-    "text": "Example NPC-торговец - перевод на английский",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Ексампле NPC-торговец - перевод на английский",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-17T00:12:58.595998Z"
+    "updated_at": "2026-02-26T18:35:16.509880Z"
   },
   "npc.example_merchant.low_level": {
     "src_hash": "8ed106b17eb3e541a267eb1ce04cf880",
@@ -26689,11 +26689,11 @@
   },
   "quests.world_board.oriental_ships": {
     "src_hash": "d9e00e8a0dc5d33ed99809e152c7e5b1",
-    "text": "Обнаружены восточные корабли! Торговец продуктами экзотических существ в настоящее время может посещать Carlin, Ankrahmun или Liberty Bay.",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Обнаружены восточные корабли! Торговец продуктами экзотических существ в настоящее время может посещать Карлин, Анкрахмун или Либертй Bay.",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-17T02:40:20.058795Z"
+    "updated_at": "2026-02-26T02:28:37.770081Z"
   },
   "quests.world_board.sandstorm_coast": {
     "src_hash": "25fd8563f2e744fd44ea4733d3575518",
@@ -27097,27 +27097,27 @@
   },
   "cpp.badge.name_6": {
     "src_hash": "36dd65f81f731b09330b25557dead495",
-    "text": "Tibia Лоялист (1-й уровень)",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Тибиа Лоялист (1-й уровень)",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-17T02:49:24.882473Z"
+    "updated_at": "2026-02-26T02:45:50.453169Z"
   },
   "cpp.badge.name_7": {
     "src_hash": "bb5f7090a7a1fa38a66dd425d225b79e",
-    "text": "Tibia Лоялист (2-й уровень)",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Тибиа Лоялист (2-й уровень)",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-17T02:49:24.882933Z"
+    "updated_at": "2026-02-26T02:45:50.455240Z"
   },
   "cpp.badge.name_8": {
     "src_hash": "a128a1dbc2cafd8e1c443c674aaacb8d",
-    "text": "Tibia Лоялист (3-й уровень)",
-    "source": "google_translate",
-    "confidence": 0.9,
+    "text": "Тибиа Лоялист (3-й уровень)",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-17T02:49:24.883366Z"
+    "updated_at": "2026-02-26T02:45:50.456766Z"
   },
   "cpp.bed.nobody_sleeping": {
     "src_hash": "c5bc51c4e1c3a4526609fc4bdd5589d6",
@@ -34321,11 +34321,11 @@
   },
   "item.10342.desc": {
     "src_hash": "ee84f406d5c15014e49371ad87c9d2de",
-    "text": "В нем содержатся Объятия Tibia.",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "В нем содержатся Объятия Тибиа.",
+    "source": "tm_autofix",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-02-17T07:34:32.886839Z"
+    "updated_at": "2026-02-26T02:12:45.780140Z"
   },
   "item.10476.desc": {
     "src_hash": "93cbc952cf02920106dd8b2154f775e2",
@@ -43334,5 +43334,837 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-21T20:55:38.063696Z"
+  },
+  "npc.a_restless_soul.multi_2": {
+    "src_hash": "7dc0f9270cd35b18938f8271d065463e",
+    "text": "Во имя его они захватили шахты и начали растапливать лед, чтобы освободить армию мерзких демонов, замороженных здесь на века...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.682590Z"
+  },
+  "npc.a_restless_soul.multi_3": {
+    "src_hash": "315b9533341ab66433fdb84a63ece0c6",
+    "text": "Их план состоит в том, чтобы создать новую армию демонов для своего хозяина, чтобы завоевать мир. Хьерн и другие шаманы должны узнать об этом! Спешите, пока не стало слишком поздно.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.685757Z"
+  },
+  "npc.a_sleeping_dragon.multi_1": {
+    "src_hash": "d1144744bf5b053dfa241e2e60ca97a4",
+    "text": "СЭТЕЛОН ТОРИЛУН ГАРНУМ. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.688196Z"
+  },
+  "npc.a_sleeping_dragon.multi_10": {
+    "src_hash": "453ecafa7dcd6d7d87059b98f4e05841",
+    "text": "Закрыв глаза и избегая прямых лучей, вы ставите зеркало на подставку. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.691239Z"
+  },
+  "npc.a_sleeping_dragon.multi_11": {
+    "src_hash": "5a956e6ac76f84dcdc80c4d58d117682",
+    "text": "Вы инстинктивно бежите к более крупному изумрудному утесу рядом с подъемом, чтобы найти укрытие. Спустя всего несколько секунд после того, как вы заняли прочное убежище, в воздухе начинает кружиться глубокий темный гул. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.695887Z"
+  },
+  "npc.a_sleeping_dragon.multi_12": {
+    "src_hash": "f3784cdd21646d6b4c0ddd0b9a891a06",
+    "text": "Проходят секунды, а гул становится громче. Шум сводит с ума, заглушая все остальные звуки вокруг вас. Когда вы от боли затыкаете уши, жужжание превращается в оглушительное рычание. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.700128Z"
+  },
+  "npc.a_sleeping_dragon.multi_13": {
+    "src_hash": "a253f114923de282cccfb718ce2651da",
+    "text": "Вы поднимаете голову над краем изумруда, чтобы увидеть, что происходит. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.702942Z"
+  },
+  "npc.a_sleeping_dragon.multi_14": {
+    "src_hash": "70f67a45c979e8dc3e56fc964a026220",
+    "text": "Рука словно срослась в кулак. Вдалеке вы теперь можете увидеть размытую схему существа, слишком большого для ваших глаз, чтобы более четко рассмотреть его голову. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.706594Z"
+  },
+  "npc.a_sleeping_dragon.multi_15": {
+    "src_hash": "6a5a491a85f56f55adbd26786c63a7ce",
+    "text": "Смешивая лучи, зеркало направляет чистый белый свет прямо в ту часть, где вы принимаете на себя лицо существа. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.709744Z"
+  },
+  "npc.a_sleeping_dragon.multi_16": {
+    "src_hash": "cc21d713d013605296b8dcd0b284011a",
+    "text": "Рычание переходит в крик, все вокруг словно сжимается. Когда вы плотно прижимаетесь к утесу, все замолкает, и за долю секунды темное существо растворяется в вспышках черноты. Вы просыпаетесь.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.714310Z"
+  },
+  "npc.a_sleeping_dragon.multi_17": {
+    "src_hash": "7573058a6400d2fbf46d662914656cf4",
+    "text": "Вы делаете выпад и бросаете модель далеко в воду. Поскольку ничего не происходит, вы поворачиваетесь спиной к океану. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.718161Z"
+  },
+  "npc.a_sleeping_dragon.multi_18": {
+    "src_hash": "0d804d95a3a157aec49c516db3b9aff8",
+    "text": "В тот самый момент, когда вы спускаетесь по дюне и направляетесь обратно на юг, лучи света прорываются над вашей головой ударной волной, которая заставляет вас падать с остальной части холма. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.721902Z"
+  },
+  "npc.a_sleeping_dragon.multi_19": {
+    "src_hash": "791b4b36f3b71d7c38493b3e30b76237",
+    "text": "Когда ваши глаза привыкают к внезапному уменьшению яркости, вы видите гигантские крылья ворот, прежде чем отойти в сторону. Вы также можете разглядеть что-то блестящее на земле.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.725124Z"
+  },
+  "npc.a_sleeping_dragon.multi_20": {
+    "src_hash": "2f2109a72068de305a9443412ff32999",
+    "text": "Вы подбираете зеркало с земли.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.726164Z"
+  },
+  "npc.a_sleeping_dragon.multi_21": {
+    "src_hash": "4c26b218f329957ec066a35cf4c9405d",
+    "text": "Мечты дракона золотые. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.727047Z"
+  },
+  "npc.a_sleeping_dragon.multi_22": {
+    "src_hash": "34250643c73b08b49a6fab210c7bc0c4",
+    "text": "Вас окружает широкая тьма, как будто тяжелая занавеска закрывается перед вашими глазами. После нескольких минут плавания в пустоте у вас возникает ощущение, будто перед вами в темноте открывается дыра. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.730761Z"
+  },
+  "npc.a_sleeping_dragon.multi_23": {
+    "src_hash": "92a1fcad690cb48948dcf8d8defc5129",
+    "text": "Дыра становится больше, глаза закрыть невозможно. Невообразимый черный цвет. Глубже и темнее, чем любое небытие, которое вы можете себе представить, затягивает вас в это. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.732751Z"
+  },
+  "npc.a_sleeping_dragon.multi_24": {
+    "src_hash": "f2cf7d86540c1405ea910ab146d852e6",
+    "text": "Вы чувствуете, что больше не можете дышать. В ту самую секунду, когда вы отпускаете свое сознание, вы чувствуете, как вся тяжесть вокруг вас поднимается. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:04.734479Z"
+  },
+  "npc.a_sleeping_dragon.multi_25": {
+    "src_hash": "fb3eb01906a6037673dafee918fc8213",
+    "text": "Вы ныряете в океан изумрудного света. Ощущение рождения заново, цвет вокруг тебя почти подавляющий. Мимо вас проносятся бесчисленные объекты всех форм и размеров. Соревнуясь друг с другом, миллионы людей сталкиваются на расстоянии. ..",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:03:07.073706Z"
+  },
+  "item.10207.name": {
+    "src_hash": "3dad4960c0bca534f7b644707d6f35bf",
+    "text": "пакет снеговика",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:38.716381Z"
+  },
+  "item.10208.name": {
+    "src_hash": "b932a6ec0f3bef993326983f5c8808eb",
+    "text": "снеговик",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:38.716754Z"
+  },
+  "item.10217.name": {
+    "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
+    "text": "Фолиант Кновледге",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:38.717841Z"
+  },
+  "item.10327.name": {
+    "src_hash": "48eaac8ad0968067e11a82a3b5be2c77",
+    "text": "минотавр рюкзак",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:38.718325Z"
+  },
+  "item.10330.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "мертвая собака",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:38.718802Z"
+  },
+  "item.10331.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "мертвая собака",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:38.719215Z"
+  },
+  "item.10332.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "мертвая собака",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:38.719618Z"
+  },
+  "item.10333.name": {
+    "src_hash": "e21da8d48c54f87221c2a8a7bce7fb07",
+    "text": "мертвая собака",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:38.720017Z"
+  },
+  "item.10334.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "мертвый орк-грабитель",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:42.777318Z"
+  },
+  "item.10335.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "мертвый орк-грабитель",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:42.777839Z"
+  },
+  "item.10337.name": {
+    "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
+    "text": "мертвый орк-грабитель",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:42.778444Z"
+  },
+  "item.10339.name": {
+    "src_hash": "566623d8747d4935f19d3c8362cd3a58",
+    "text": "кукла снеговика",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:42.778871Z"
+  },
+  "item.10346.name": {
+    "src_hash": "eaea1d7900d2ab6609b09851d135b4fc",
+    "text": "Санта-рюкзак",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:42.779284Z"
+  },
+  "item.10356.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "мертвая ящерица-легионер",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:42.779911Z"
+  },
+  "item.10357.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "мертвая ящерица-легионер",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:42.780503Z"
+  },
+  "item.10358.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "мертвая ящерица-легионер",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:42.781075Z"
+  },
+  "item.10359.name": {
+    "src_hash": "8db55d6dd4b4d7a863f35a7bd5d2cbcf",
+    "text": "мертвая ящерица-легионер",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:47.260617Z"
+  },
+  "item.10364.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "мертвая ящерица заогун",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:47.261249Z"
+  },
+  "item.10365.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "мертвая ящерица заогун",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:47.261798Z"
+  },
+  "item.10366.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "мертвая ящерица заогун",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:47.262348Z"
+  },
+  "item.10367.name": {
+    "src_hash": "187e6653e599128a8d956cc6115c5f7b",
+    "text": "мертвая ящерица заогун",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:47.262921Z"
+  },
+  "item.10368.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "выбрана мертвая ящерица",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:47.263443Z"
+  },
+  "item.10369.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "выбрана мертвая ящерица",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:47.264026Z"
+  },
+  "item.10370.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "выбрана мертвая ящерица",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:47.264710Z"
+  },
+  "item.10371.name": {
+    "src_hash": "e74161b5e01782304088bd60420f9d2f",
+    "text": "выбрана мертвая ящерица",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:18:48.979520Z"
+  },
+  "monster.dharalion.name": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Дхаралион",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:22:37.157040Z"
+  },
+  "monster.dharalion.desc": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Дхаралион",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:22:37.158296Z"
+  },
+  "monster.apocalypse.name": {
+    "src_hash": "abf95deab7df5636aebeaea9177e1fa6",
+    "text": "Апокалйпсе",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:22:37.159364Z"
+  },
+  "monster.apocalypse.desc": {
+    "src_hash": "abf95deab7df5636aebeaea9177e1fa6",
+    "text": "Апокалйпсе",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:22:37.160476Z"
+  },
+  "monster.apprentice_sheng.name": {
+    "src_hash": "e0671c8c3f1578c772729366e3432f51",
+    "text": "Ученик Шенг",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:22:37.161436Z"
+  },
+  "monster.apprentice_sheng.desc": {
+    "src_hash": "e0671c8c3f1578c772729366e3432f51",
+    "text": "Ученик Шенг",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:22:37.162340Z"
+  },
+  "monster.cyclops.name": {
+    "src_hash": "1a1ea04451ed996376aac96e92f38324",
+    "text": "Кйклопс",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:22:37.163331Z"
+  },
+  "monster.cyclops_drone.name": {
+    "src_hash": "41883a13e98966ed4ea31f835189a419",
+    "text": "Кйклопс Дрон",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:22:37.164666Z"
+  },
+  "monster.cyclops_smith.name": {
+    "src_hash": "e461fc845371237a03c88aa64d6c2769",
+    "text": "Кйклопс Смит",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:22:37.166481Z"
+  },
+  "monster.war_golem.voice_1": {
+    "src_hash": "7331ae8f00a9bc86cc0df66880c4ab8c",
+    "text": "Азерус барада никто!",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:22:37.168833Z"
+  },
+  "data.otservbr.global.npc.archery.rook.L63.70": {
+    "src_hash": "30bc6203a67610eed6580d3e9fb8c0e0",
+    "text": "Добро пожаловать в магазин Арчерйьс Роок.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:34:19.167406Z"
+  },
+  "scripts.action_horn.say_6": {
+    "src_hash": "408ed320f4d8d0caf3d0d42c0eaaebc3",
+    "text": "Ты обнимаешь бессознательного медведя.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:31.797401Z"
+  },
+  "scripts.action_horn.say_7": {
+    "src_hash": "6d7c280431ffc554b5e85569033e9d3b",
+    "text": "Сейчас медведь без сознания.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:31.798113Z"
+  },
+  "scripts.action_horn.say_8": {
+    "src_hash": "52973fa52e7f48800ed19f4764f3e847",
+    "text": "Ты наполняешь свой рог элем.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:31.798751Z"
+  },
+  "scripts.action_mead.say_1": {
+    "src_hash": "c269aed62a3c203806eb6d12da251395",
+    "text": "Вы уже прошли испытание, не нужно больше себя мучить.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:45:31.799492Z"
+  },
+  "raid.cyclops.name": {
+    "src_hash": "1a1ea04451ed996376aac96e92f38324",
+    "text": "Кйклопс",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:52.425516Z"
+  },
+  "raid.pirates.name": {
+    "src_hash": "281a66b1f4a1ded6214bdbd1a35f8e1f",
+    "text": "Пиратес",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:57.993593Z"
+  },
+  "raid.necropharus.name": {
+    "src_hash": "1dfc4ba3c2e8604e04b859187b61ce43",
+    "text": "Некропхарус",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:57.994534Z"
+  },
+  "raid.raids.name": {
+    "src_hash": "650d0052540bb7fa10d8ec5e7c7d8542",
+    "text": "Раидс",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:57.995289Z"
+  },
+  "raid.undead_darashia.name": {
+    "src_hash": "514c7d86ea50becf3dec530e0e131ce0",
+    "text": "Ундеад Дарашиа",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:57.996540Z"
+  },
+  "raid.white_pale.name": {
+    "src_hash": "c26999e79917dc6219158f8955472741",
+    "text": "Вхите Пале",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:57.997414Z"
+  },
+  "raid.the_pale_count.name": {
+    "src_hash": "3b72b8f24e68dd7e889fa0bcc093f7d4",
+    "text": "The Пале Коунт",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:57.998301Z"
+  },
+  "raid.priestesses.name": {
+    "src_hash": "99f5ad99e1be0fc1363f2a850146527c",
+    "text": "Приестессес",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:57.999291Z"
+  },
+  "raid.barba_svar.name": {
+    "src_hash": "c7b6a31e7221a8f7beaa745a0d779579",
+    "text": "Барба Свар",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:58.000111Z"
+  },
+  "raid.barba_bittermor.name": {
+    "src_hash": "65d5a9017ada07c5fd8a1f1f6f6fa605",
+    "text": "Барба Биттермор",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:58.001028Z"
+  },
+  "raid.ghazbaran.name": {
+    "src_hash": "7011c4937708c913e39ffc5369fbf7c9",
+    "text": "Гхазбаран",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:58.002369Z"
+  },
+  "raid.hirintror.name": {
+    "src_hash": "fecc29ff7925e8e289a31d474cef424d",
+    "text": "Хиринтрор",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:58.005324Z"
+  },
+  "raid.ocyakao.name": {
+    "src_hash": "49a73d64c23681571806a21b38c2614e",
+    "text": "Окякао",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:58.006128Z"
+  },
+  "raid.warwolf.name": {
+    "src_hash": "a852632fa1f53203a9feee08f0d95119",
+    "text": "Варволф",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:58.006901Z"
+  },
+  "raid.badger.name": {
+    "src_hash": "5841d0014fc42f0fcf9a019d349d50fd",
+    "text": "Бадгер",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:58.007740Z"
+  },
+  "raid.midnight_panther_3.name": {
+    "src_hash": "da72c589dd7fc87a49ed0ad968ab908c",
+    "text": "Миднигхт Пантхер 3",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:58.009974Z"
+  },
+  "raid.midnight_panther_1.name": {
+    "src_hash": "4dec404364fe3c69ff2b5b22e166ad04",
+    "text": "Миднигхт Пантхер 1",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:58.011275Z"
+  },
+  "raid.kongras.name": {
+    "src_hash": "976ec410cd5bb5d6d2596ee246716b91",
+    "text": "Конграс",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:58.012137Z"
+  },
+  "raid.terrorbirds.name": {
+    "src_hash": "ad62c49e881d6596744c943bc6c38cac",
+    "text": "Террорбирдс",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:58:58.012939Z"
+  },
+  "raid.midnight_panther_2.name": {
+    "src_hash": "6e3040074dacf7fed85d0910a2cb9154",
+    "text": "Миднигхт Пантхер 2",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:59:01.916006Z"
+  },
+  "raid.serpent_spawn.name": {
+    "src_hash": "4122411a36fbcd6b3d08ec393758d536",
+    "text": "Серпент Спавн",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:59:01.917223Z"
+  },
+  "raid.wild_horses.name": {
+    "src_hash": "b7e3bb5561419e11e0638d054c1f6e13",
+    "text": "Вилд Хорсес",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:59:01.918396Z"
+  },
+  "raid.sheng.name": {
+    "src_hash": "cdadd32b1ffa1e7b55859da2f4b3e628",
+    "text": "Шенг",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:59:01.919539Z"
+  },
+  "raid.munster.name": {
+    "src_hash": "ad3f071289dbbac276fadf870913fbf9",
+    "text": "Мунстер",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:59:01.920783Z"
+  },
+  "raid.teleskor.name": {
+    "src_hash": "39b531430b46066d965dffc91ef989fc",
+    "text": "Телескор",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:59:01.922615Z"
+  },
+  "raid.crustacea_gigantica_4.name": {
+    "src_hash": "e705031143466f92173a6cdc650abe2b",
+    "text": "Крустакеа Гигантика 4",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T19:59:01.924504Z"
+  },
+  "npc.a_sleeping_dragon.multi_32": {
+    "src_hash": "4c26b218f329957ec066a35cf4c9405d",
+    "text": "Мечты дракона золотые. ...",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:24.819701Z"
+  },
+  "npc.a_sleeping_dragon.multi_26": {
+    "src_hash": "78364ddf49f6d5722ee53c7a25348d26",
+    "text": "Громкость гигантского зрелища вокруг вас разрывает ваш слух, но вы поглощаете все звуки вокруг себя. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.193630Z"
+  },
+  "npc.a_sleeping_dragon.multi_27": {
+    "src_hash": "c42d69935dea4179e66969ccdb3aed5e",
+    "text": "Когда несколько крупных препятствий отодвигаются прямо перед вами, в поле вашего зрения появляется яркий яркий центр. Хотя вы не можете осознать, насколько вы быстры, ваш темп кажется слишком медленным. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.195077Z"
+  },
+  "npc.a_sleeping_dragon.multi_28": {
+    "src_hash": "a70857cffa61d3635e2308ed40fdc91d",
+    "text": "Постоянно замедляясь, вы в конечном итоге приближаетесь к середине в этом хаосе зеленых тонов. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.196492Z"
+  },
+  "npc.a_sleeping_dragon.multi_29": {
+    "src_hash": "405803fd9a90b647e0df17a586553f6b",
+    "text": "Когда вы приближаетесь к нему, желтоватые оттенки оранжевого охватывают вас, появляются более мягкие формы, и вы почти забываете о прежнем хаосе. В теплом уюте вы видите, что лежит в основе всего этого. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.198170Z"
+  },
+  "npc.a_sleeping_dragon.multi_30": {
+    "src_hash": "561aa27c3ac58b8b86feed5ae68f3dfb",
+    "text": "Величественный дракон во сне окружен теплом и энергией тысячи солнц. Спокойствие его вида заставляет вас нежно улыбнуться. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.199208Z"
+  },
+  "npc.a_sleeping_dragon.multi_31": {
+    "src_hash": "71d47ef87b2021f0289ea4b660a86a9b",
+    "text": "Вы чувствуете идеальную смесь радости, сострадания и внезапного умиротворения. Яркие ксантовые оттенки топаза, оранжевого и белого приветствуют вас на последней остановке вашего пути. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.200455Z"
+  },
+  "npc.a_sleeping_dragon.multi_33": {
+    "src_hash": "2857a39f8d648b3b1dd35100ce9f03de",
+    "text": "Вы попадаете в сон дракона. Вы можете {look} вокруг или {go} в определенном направлении. Вы также можете {take} или {use} объект. Введите {help}, чтобы отобразить эту информацию в любое время.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.202879Z"
+  },
+  "npc.a_sleeping_dragon.multi_5": {
+    "src_hash": "5413fbb342cce5e40e131c197c65f83a",
+    "text": "Трансфер прошел успешно. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.203662Z"
+  },
+  "npc.a_sleeping_dragon.multi_6": {
+    "src_hash": "9dca37c81c8fb23fca9d424d916549b3",
+    "text": "Теперь вы готовы войти в царство злодея. Я благодарен за твою помощь, путник. Если ты попросишь моего совета, используй это обаяние, которое я тебе передаю. Потому что мой дух будет вести тебя, где бы ты ни был. Пусть у вас будет защищенное будущее, вы победите.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.205252Z"
+  },
+  "npc.a_sleeping_dragon.multi_7": {
+    "src_hash": "671a859983328cf16cab59fc47d7480b",
+    "text": "Аааа... наконец-то свободен. Хм. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.205991Z"
+  },
+  "npc.a_sleeping_dragon.multi_8": {
+    "src_hash": "ae1846f5fcb59591a3521d7f4d7960ef",
+    "text": "Я предполагаю, что вам нужно пройти через ворота, чтобы добраться до злодея. Я могу помочь тебе, если ты поверишь мне, путник. Я поделюсь с вами частью своего разума, которая поможет вам пройти через врата. ...",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.207307Z"
+  },
+  "npc.a_sleeping_dragon.multi_9": {
+    "src_hash": "80f688fec5f39b9ff2f0df02e7b214e9",
+    "text": "Эта процедура может быть утомительной. Вы готовы получить мой ключ?",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.208078Z"
+  },
+  "npc.a_sleeping_dragon.say_1": {
+    "src_hash": "2857a39f8d648b3b1dd35100ce9f03de",
+    "text": "Вы попадаете в сон дракона. Вы можете {look} вокруг или {go} в определенном направлении. Вы также можете {take} или {use} объект. Введите {help}, чтобы отобразить эту информацию в любое время.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.209856Z"
+  },
+  "npc.a_sleeping_dragon.say_10": {
+    "src_hash": "3dfc299ef9bb06feb416cd56e55b57f8",
+    "text": "Вы возвращаетесь через полупрозрачные ворота на запад. ",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.210641Z"
+  },
+  "npc.a_sleeping_dragon.say_11": {
+    "src_hash": "3cf73e85054a92f8968d144c3db334e5",
+    "text": "Вы возвращаетесь на север, к плато. ",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.211325Z"
+  },
+  "npc.a_sleeping_dragon.say_12": {
+    "src_hash": "ba787ce232620c16a0c665d7de2c954f",
+    "text": "Вы путешествуете на восток через несколько больших изумрудных утесов и краев. На вашем пути разбросаны всевозможные драгоценные камни. ",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.212344Z"
+  },
+  "npc.a_sleeping_dragon.say_13": {
+    "src_hash": "3988a48325cf8b6da4fc1f68b204db4f",
+    "text": "Вы достаете из кучки перед собой довольно большой рубин. ",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.213076Z"
+  },
+  "npc.a_sleeping_dragon.say_14": {
+    "src_hash": "01035bcddef5e83e2f82ef180af0066a",
+    "text": "Вы направляетесь на север, минуя бесчисленные камни в малиновом море камней под ногами.",
+    "source": "free_gt",
+    "confidence": 0.85,
+    "verified": false,
+    "updated_at": "2026-02-26T20:06:41.213959Z"
   }
 }

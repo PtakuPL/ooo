@@ -1,131 +1,35 @@
 {
-  "timestamp": "2026-02-21T21:18:33.484224Z",
-  "language": "ru",
-  "json_file": "scripts.json",
-  "translated": 30,
+  "timestamp": "2026-02-26T20:08:17.612243Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 4,
   "recent_include_high_critical": false,
   "recent_hidden_high_critical": 0,
   "recent_hidden_alert_threshold": 5,
   "recent_hidden_alert": false,
   "entries": [
     {
-      "key": "gamestore.purchase.success",
-      "en": "You have purchased %s for %d coins.",
-      "translated": "Вы приобрели %s за %d монет.",
+      "key": "npc.a_sweaty_cyclops.stdmod_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "gamestore.transfer.history_received",
-      "en": "%s transferred you this amount.",
-      "translated": "%s перевел вам эту сумму.",
+      "key": "npc.a_sweaty_cyclops.voice_1",
+      "en": "Hum hum, huhum",
+      "translated": "Hum hum, hum hum",
       "source": "tm"
     },
     {
-      "key": "gamestore.transfer.history_sent",
-      "en": "You transferred this amount to %s",
-      "translated": "Вы перевели эту сумму на %s",
+      "key": "npc.barnabas_dee.say_5",
+      "en": "No no no, I need 15 doses of freshly harvested pollen! Please, harvest those 15 doses yourself, to make absolutely sure you have first-rate quality. I am afraid nothing less will do.",
+      "translated": "No no no, necesito 15 dosis de polen recién cosechado! Por favor, coseche esas 15 dosis usted mismo para asegurarse de tener una calidad de primer nivel. Me temo que nada menos servirá.",
       "source": "tm"
     },
     {
-      "key": "gamestore.transfer.success",
-      "en": "You have transfered %s coins to %s successfully",
-      "translated": "Вы успешно перевели монеты %s на %s.",
-      "source": "tm"
-    },
-    {
-      "key": "gamestore.validation.hireling_forbidden_word",
-      "en": "You can't use word \"%s\" in your hireling name.",
-      "translated": "Вы не можете использовать слово «%s» в имени наемника.",
-      "source": "tm"
-    },
-    {
-      "key": "gamestore.validation.hireling_forbidden_word_space",
-      "en": "You can't use word \"%s\" with whitespace in your hireling name.",
-      "translated": "Вы не можете использовать слово «%s» с пробелами в имени вашего наемника.",
-      "source": "tm"
-    },
-    {
-      "key": "gamestore.validation.invalid_character",
-      "en": "You can't use this character '%s' in your new name.",
-      "translated": "Вы не можете использовать этот символ '%s' в своем новом имени.",
-      "source": "tm"
-    },
-    {
-      "key": "gamestore.validation.monster_name",
-      "en": "Your new name '%s' can't be a monster's name.",
-      "translated": "Ваше новое имя '%s' не может быть именем монстра.",
-      "source": "tm"
-    },
-    {
-      "key": "gamestore.validation.new_name_forbidden_word",
-      "en": "You can't use the word '%s' in your new name.",
-      "translated": "Вы не можете использовать слово '%s' в своем новом имени.",
-      "source": "tm"
-    },
-    {
-      "key": "gamestore.validation.new_name_forbidden_word_space",
-      "en": "You can't use the word '%s' even with spaces in your new name.",
-      "translated": "Вы не можете использовать слово '%s' даже с пробелами в вашем новом имени.",
-      "source": "tm"
-    },
-    {
-      "key": "gamestore.validation.npc_name",
-      "en": "Your new name '%s' can't be an NPC's name.",
-      "translated": "Ваше новое имя '%s' не может быть именем NPC.",
-      "source": "tm"
-    },
-    {
-      "key": "lib.hireling.lamp_description",
-      "en": "This mysterious lamp summons your very own personal hireling.\nThis item cannot be traded.\nThis magic lamp is the home of %s.",
-      "translated": "Эта таинственная лампа призывает вашего личного наемника.\nЭтот предмет нельзя продать.\nЭта волшебная лампа — дом %s.",
-      "source": "tm"
-    },
-    {
-      "key": "player.stash.retrieved",
-      "en": "Retrieved {0}x {1}.",
-      "translated": "Получено {0}x {1}.",
-      "source": "tm"
-    },
-    {
-      "key": "quest.soul_war.boss_progress_access",
-      "en": "%s: Access achieved!",
-      "translated": "%s: Доступ получен!",
-      "source": "tm"
-    },
-    {
-      "key": "quest.soul_war.boss_progress_kills",
-      "en": "%s: %d/%d kills",
-      "translated": "%s: %d/%d убийств",
-      "source": "tm"
-    },
-    {
-      "key": "quests.world_board.oriental_ships",
-      "en": "Oriental ships sighted! A trader for exotic creature products may currently be visiting Carlin, Ankrahmun or Liberty Bay.",
-      "translated": "Обнаружены восточные корабли! Торговец продуктами экзотических существ в настоящее время может посещать Карлин, Анкрахмун или Либертй Bay.",
-      "source": "tm"
-    },
-    {
-      "key": "scripts.actions_gems.shrine_time",
-      "en": "When the time comes, '%s' will be accepted at this shrine.",
-      "translated": "Когда придет время, '%s' будет принят в этом храме.",
-      "source": "tm"
-    },
-    {
-      "key": "scripts.dolls.12043_3",
-      "en": "Hail %s!",
-      "translated": "Привет, %s!",
-      "source": "tm"
-    },
-    {
-      "key": "scripts.offline_training.hours_plural",
-      "en": "%s hours",
-      "translated": "%s часов",
-      "source": "tm"
-    },
-    {
-      "key": "scripts.offline_training.minutes_plural",
-      "en": "%s minutes",
-      "translated": "%s минут",
+      "key": "npc.budrik.say_9",
+      "en": "Zzz...",
+      "translated": "Zzz...",
       "source": "tm"
     }
   ]

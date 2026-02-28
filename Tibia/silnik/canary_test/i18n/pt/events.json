@@ -4,13 +4,13 @@
   "event.player.msg3": "daily-reward-xp-boost",
   "event.player.msg4": "daily-reward-xp-boost",
   "event.player.msg5": "daily-reward-xp-boost",
-  "event.player.msg_1": "[EN] You are no longer refilling stamina, since you left a regeneration zone.",
-  "event.player.msg_2": "[EN] There was an error when processing your report, please contact a gamemaster.",
-  "event.player.msg_3": "[EN] Thank you for reporting {}. Your report \\z\n\twill be processed by {} team as soon as possible.",
-  "event.player.msg_4": "[EN] There was an error when processing your report, please contact a gamemaster.",
-  "event.player.msg_5": "[EN] Your report is being processed.",
-  "event.player.msg_move_fast": "[EN] You can't move that item so fast.",
-  "event.player.msg_report_sent": "[EN] Your report has been sent to {server}.",
-  "event.player.say_1": "[EN] You feed the turtle, now you may pass.",
-  "event.player.stamina_pz_recharge": "[EN] In protection zone. Recharging {0} stamina every {1} minutes."
+  "event.player.msg_1": "Você não está mais recarregando resistência, pois saiu de uma zona de regeneração.",
+  "event.player.msg_2": "Ocorreu um erro ao processar seu relatório. Entre em contato com um gamemaster.",
+  "event.player.msg_3": "Obrigado por relatar {}. Seu relatório \\z\n\tserá processado pela equipe {} o mais rápido possível.",
+  "event.player.msg_4": "Ocorreu um erro ao processar seu relatório. Entre em contato com um gamemaster.",
+  "event.player.msg_5": "Seu relatório está sendo processado.",
+  "event.player.msg_move_fast": "Você não pode mover esse item tão rápido.",
+  "event.player.msg_report_sent": "Seu relatório foi enviado para {server}.",
+  "event.player.say_1": "Você alimenta a tartaruga, agora pode passar.",
+  "event.player.stamina_pz_recharge": "Em zona de proteção. Recarregando {0} resistência a cada {1} minutos."
 }

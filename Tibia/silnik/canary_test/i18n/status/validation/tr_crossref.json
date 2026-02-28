@@ -1,15 +1,15 @@
 {
   "lang": "tr",
-  "coverage_pct": 9.4,
-  "crossref_enabled": false,
+  "coverage_pct": 99.0,
+  "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-02-21T20:41:15.296368Z",
-  "issues_total": 414,
+  "checked_at": "2026-02-26T20:14:07.118544Z",
+  "issues_total": 422,
   "issues_by_type": {
-    "consistency_in_language": 4,
+    "consistency_in_language": 6,
     "pl_reference_missing_translation": 400,
-    "length_ratio_crosscheck": 14
+    "length_ratio_crosscheck": 16
   },
   "consistency_issues": [
     {
@@ -64,6 +64,34 @@
         "cpp:cpp.inspect.magic_level",
         "html:web.tpl.spells.th_17",
         "otclient_modules:otclient_modules.game_healthcircle.tr_17"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "You did not receive ",
+      "variants": [
+        "Sen almadın ",
+        "sen almadın "
+      ],
+      "variants_count": 2,
+      "examples": [
+        "libs:lib.exaltation_forge.msg2",
+        "libs:lib.exaltation_forge.msg4"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "\tVersion = ",
+      "variants": [
+        "\tSürüm = ",
+        "Sürüm = "
+      ],
+      "variants_count": 2,
+      "examples": [
+        "modules:module.init.text4",
+        "modules:module.hireling_module.text2"
       ]
     },
     {
@@ -273,6 +301,15 @@
       "lang": "Turncoat"
     },
     {
+      "key": "achievement.93.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Jamjam",
+      "pl": "Jinuma",
+      "lang": "Jamjam"
+    },
+    {
       "key": "achievement.104.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -289,15 +326,6 @@
       "en": "Bluebarian",
       "pl": "Bluebarista",
       "lang": "Bluebarian"
-    },
-    {
-      "key": "achievement.119.name",
-      "category": "achievements",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Cursed!",
-      "pl": "Przeklęty!",
-      "lang": "Cursed!"
     },
     {
       "key": "achievement.121.name",
@@ -759,6 +787,15 @@
       "lang": "You have fully unlocked 100 hard monsters in the cyclopedia."
     },
     {
+      "key": "achievement.438.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "His Days are Counted",
+      "pl": "Jego Dni są Liczba",
+      "lang": "His Days are Counted"
+    },
+    {
       "key": "achievement.439.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -831,6 +868,15 @@
       "lang": "Daraman's Footsteps"
     },
     {
+      "key": "achievement.457.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "King of the Jungle",
+      "pl": "Król z the Dżungla",
+      "lang": "King of the Jungle"
+    },
+    {
       "key": "achievement.458.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -865,6 +911,15 @@
       "en": "Millennial Falcon",
       "pl": "Millennial Sokół",
       "lang": "Millennial Falcon"
+    },
+    {
+      "key": "achievement.469.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Wielding dangerous knowledge as well as the sword is your expertise. You have proven yourself versatile in all manner of situations.",
+      "pl": "Dzierżyć groźny, niebezpieczny kNiewledge as well as the miecz jest twój wiedza specjalistyczne, umiejętności specjalistyczne. Masz proven siebie wszechstronny w wszystkie sposób z sytuacja.",
+      "lang": "Wielding dangerous knowledge as well as the sword is your expertise. You have proven yourself versatile in all manner of situations."
     },
     {
       "key": "achievement.475.name",
@@ -975,6 +1030,15 @@
       "lang": "Drama in Darama"
     },
     {
+      "key": "achievement.511.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Made acquaintance with three brothers Fitz.",
+      "pl": "Zrobiony znajomy z trzy brat Fitz.",
+      "lang": "Made acquaintance with three brothers Fitz."
+    },
+    {
       "key": "achievement.513.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -1029,6 +1093,15 @@
       "lang": "Knowledge Raider"
     },
     {
+      "key": "achievement.524.description",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Your thirst for knowledge is insatiable. In the task of helping your gnomish friends, flawless execution is just the icing on the cake.",
+      "pl": "Twój pragnienie dla kNiewledge jest nieposkromiony, nienasycony. W the zadanie, zajęcie z porcja twój gNiemish przyjaciel, dobry kolega, kolega, nieskazitelny egzekucja jest just the polewa, lukier na the ciasto, ciastko.",
+      "lang": "Your thirst for knowledge is insatiable. In the task of helping your gnomish friends, flawless execution is just the icing on the cake."
+    },
+    {
       "key": "achievement.525.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -1074,6 +1147,15 @@
       "lang": "Ripp-Ripp Hooray!"
     },
     {
+      "key": "achievement.541.name",
+      "category": "achievements",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "Warrior of the Iks",
+      "pl": "Wojownik z the Iks",
+      "lang": "Warrior of the Iks"
+    },
+    {
       "key": "achievement.543.name",
       "category": "achievements",
       "type": "pl_reference_missing_translation",
@@ -1090,6 +1172,42 @@
       "en": "Museum Goer",
       "pl": "Muzeum Goer",
       "lang": "Museum Goer"
+    },
+    {
+      "key": "actions.fluids.msg_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is empty.",
+      "pl": "To jest puste.",
+      "lang": "It is empty."
+    },
+    {
+      "key": "actions.fluids.msg_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is empty.",
+      "pl": "To jest puste.",
+      "lang": "It is empty."
+    },
+    {
+      "key": "actions.quests.msg_1",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is empty.",
+      "pl": "To jest puste.",
+      "lang": "It is empty."
+    },
+    {
+      "key": "actions.quests.msg_2",
+      "category": "actions",
+      "type": "pl_reference_missing_translation",
+      "severity": "MEDIUM",
+      "en": "It is empty.",
+      "pl": "To jest puste.",
+      "lang": "It is empty."
     },
     {
       "key": "arena.mode.1v1",
@@ -1245,15 +1363,6 @@
       "lang": "Novice"
     },
     {
-      "key": "arena.title.apprentice",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Apprentice",
-      "pl": "Uczeń",
-      "lang": "Apprentice"
-    },
-    {
       "key": "arena.title.contender",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1261,15 +1370,6 @@
       "en": "Contender",
       "pl": "Pretendent",
       "lang": "Contender"
-    },
-    {
-      "key": "arena.title.fighter",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Fighter",
-      "pl": "Wojownik",
-      "lang": "Fighter"
     },
     {
       "key": "arena.title.warrior",
@@ -1288,15 +1388,6 @@
       "en": "Veteran",
       "pl": "Weteran",
       "lang": "Veteran"
-    },
-    {
-      "key": "arena.title.elite",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Elite",
-      "pl": "Elita",
-      "lang": "Elite"
     },
     {
       "key": "arena.title.champion",
@@ -1893,15 +1984,6 @@
       "lang": "Arena Amulet"
     },
     {
-      "key": "arena.admin.info.header",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] System Status:",
-      "pl": "[Arena Admin] Status Systemu:",
-      "lang": "[Arena Admin] System Status:"
-    },
-    {
       "key": "arena.admin.info.active_matches",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -1918,24 +2000,6 @@
       "en": "Queue:",
       "pl": "Kolejka:",
       "lang": "Queue:"
-    },
-    {
-      "key": "arena.admin.stats.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin stats <playername>",
-      "pl": "[Arena Admin] Użycie: !arena-admin stats <gracz>",
-      "lang": "[Arena Admin] Usage: !arena-admin stats <playername>"
-    },
-    {
-      "key": "arena.admin.stats.not_found",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Player '{0}' not found (must be online).",
-      "pl": "[Arena Admin] Gracz '{0}' nie znaleziony (musi być online).",
-      "lang": "[Arena Admin] Player '{0}' not found (must be online)."
     },
     {
       "key": "arena.admin.stats.no_profile",
@@ -1992,15 +2056,6 @@
       "lang": "Streak: {0} (Best: {1})"
     },
     {
-      "key": "arena.admin.setmmr.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin setmmr <player> <mmr>",
-      "pl": "[Arena Admin] Użycie: !arena-admin setmmr <gracz> <mmr>",
-      "lang": "[Arena Admin] Usage: !arena-admin setmmr <player> <mmr>"
-    },
-    {
       "key": "arena.admin.setmmr.success",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -2010,15 +2065,6 @@
       "lang": "[Arena Admin] Set {0}'s MMR to {1}"
     },
     {
-      "key": "arena.admin.addpoints.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin addpoints <player> <points>",
-      "pl": "[Arena Admin] Użycie: !arena-admin addpoints <gracz> <punkty>",
-      "lang": "[Arena Admin] Usage: !arena-admin addpoints <player> <points>"
-    },
-    {
       "key": "arena.admin.addpoints.success",
       "category": "arena",
       "type": "pl_reference_missing_translation",
@@ -2026,15 +2072,6 @@
       "en": "[Arena Admin] Added {0} Arena Points to {1}",
       "pl": "[Arena Admin] Dodano {0} Punktów Areny graczowi {1}",
       "lang": "[Arena Admin] Added {0} Arena Points to {1}"
-    },
-    {
-      "key": "arena.admin.reset.usage",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Usage: !arena-admin reset <player>",
-      "pl": "[Arena Admin] Użycie: !arena-admin reset <gracz>",
-      "lang": "[Arena Admin] Usage: !arena-admin reset <player>"
     },
     {
       "key": "arena.admin.reset.success",
@@ -2053,15 +2090,6 @@
       "en": "[Arena Admin] Broadcast sent.",
       "pl": "[Arena Admin] Ogłoszenie wysłane.",
       "lang": "[Arena Admin] Broadcast sent."
-    },
-    {
-      "key": "arena.admin.player_not_online",
-      "category": "arena",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "[Arena Admin] Player not online.",
-      "pl": "[Arena Admin] Gracz nie jest online.",
-      "lang": "[Arena Admin] Player not online."
     },
     {
       "key": "arena.admin.help.header",
@@ -2253,1615 +2281,1435 @@
       "lang": "Daily MMR cap: you gained +{0} instead of +{1} (daily limit reached)."
     },
     {
-      "key": "cpp.augment.damage",
-      "category": "cpp",
+      "key": "book.dawnport.adventurers_guild_letter",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "damage",
-      "pl": "szkoda",
-      "lang": "damage"
+      "en": "Brave adventurer,\n\nthe Adventurers' Guild bids you welcome as a new hero of the land.\n\nTake this adventurer's stone and use it in any city temple to instantly travel to our guild hall. If you should ever lose your adventurer's stone, you can replace it by talking to a priest in the temple.\nI hope you will be visiting us soon.\n\nKind regards,\nRotem, Head of the Adventurers' Guild",
+      "pl": "Odważny poszukiwaczu przygód,\n\nGuild Poszukiwaczy Przygód wita Cię jako nowego bohatera tej krainy.\n\nWeź ten kamień poszukiwacza przygód i użyj go w dowolnej świątyni w mieście, aby natychmiast udać się do naszej sali gildii. Jeśli kiedykolwiek zgubisz kamień poszukiwacza przygód, możesz go zastąpić, rozmawiając z kapłanem w świątyni.\nMam nadzieję, że wkrótce nas odwiedzisz.\n\nPozdrawiam,\nRotem, Przywódca Poszukiwaczy Przygód Guild",
+      "lang": "Brave adventurer,\n\nthe Adventurers' Guild bids you welcome as a new hero of the land.\n\nTake this adventurer's stone and use it in any city temple to instantly travel to our guild hall. If you should ever lose your adventurer's stone, you can replace it by talking to a priest in the temple.\nI hope you will be visiting us soon.\n\nKind regards,\nRotem, Head of the Adventurers' Guild"
     },
     {
-      "key": "cpp.augment.healing",
-      "category": "cpp",
+      "key": "book.otbm.1001_ways_to_use_energy",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "healing",
-      "pl": "Gojenie : zdrowienie",
-      "lang": "healing"
+      "en": "1001 ways to use energy beams.",
+      "pl": "1001 sposobów wykorzystania wiązek energii.",
+      "lang": "1001 ways to use energy beams."
     },
     {
-      "key": "cpp.bestiary.charm_category_major",
-      "category": "cpp",
+      "key": "book.otbm.1st_floor_magic_emporium",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Major",
-      "pl": "Główny",
-      "lang": "Major"
+      "en": "1st floor: Magic Emporium",
+      "pl": "I piętro: Magiczne Emporium",
+      "lang": "1st floor: Magic Emporium"
     },
     {
-      "key": "cpp.bestiary.charm_category_minor",
-      "category": "cpp",
+      "key": "book.otbm.4000_gold_books_and_paper",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Minor",
-      "pl": "Mini",
-      "lang": "Minor"
+      "en": "4000 gold books and paper",
+      "pl": "Książki i papier za 4000 złotych",
+      "lang": "4000 gold books and paper"
     },
     {
-      "key": "cpp.combat.agony",
-      "category": "cpp",
+      "key": "book.otbm.4_exterminiate_the_ghouls_in",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "agony",
-      "pl": "cierpienie",
-      "lang": "agony"
+      "en": "4. Exterminiate the ghouls in the garden",
+      "pl": "4. Wytęp ghule w ogrodzie",
+      "lang": "4. Exterminiate the ghouls in the garden"
     },
     {
-      "key": "cpp.combat.charm_savage_blow",
-      "category": "cpp",
+      "key": "book.otbm.4_no_running_in_the",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " (savage blow charm)",
-      "pl": "(amulet dzikiego ciosu)",
-      "lang": " (savage blow charm)"
+      "en": "4. No running in the corridor",
+      "pl": "4. Zakaz biegania po korytarzu",
+      "lang": "4. No running in the corridor"
     },
     {
-      "key": "cpp.combat.drown",
-      "category": "cpp",
+      "key": "book.otbm.4_quickly_use_any_bottle",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "drown",
-      "pl": "topić się, tonąć",
-      "lang": "drown"
+      "en": "4. Quickly use any bottle or cup to collect the rum",
+      "pl": "4. Szybko użyj dowolnej butelki lub kubka, aby zebrać rum",
+      "lang": "4. Quickly use any bottle or cup to collect the rum"
     },
     {
-      "key": "cpp.combat.healing",
-      "category": "cpp",
+      "key": "book.otbm.5000_gold_runes_and_fluids",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "healing",
-      "pl": "Gojenie : zdrowienie",
-      "lang": "healing"
+      "en": "5000 gold runes and fluids",
+      "pl": "5000 złotych run i płynów",
+      "lang": "5000 gold runes and fluids"
     },
     {
-      "key": "cpp.combat.ice",
-      "category": "cpp",
+      "key": "book.otbm.5_no_eating_and_drinking",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "ice",
-      "pl": "lód",
-      "lang": "ice"
+      "en": "5. No eating and drinking.",
+      "pl": "5. Zakaz jedzenia i picia.",
+      "lang": "5. No eating and drinking."
     },
     {
-      "key": "cpp.combat.lifedrain",
-      "category": "cpp",
+      "key": "book.otbm.5_no_sigildrawing_on_the",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "lifedrain",
-      "pl": "drenaż życia",
-      "lang": "lifedrain"
+      "en": "5. No sigil-drawing on the floor",
+      "pl": "5. Żadnego rysowania pieczęci na podłodze",
+      "lang": "5. No sigil-drawing on the floor"
     },
     {
-      "key": "cpp.combat.neutral",
-      "category": "cpp",
+      "key": "book.otbm.6_no_food_in_the",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "neutral",
-      "pl": "neutralny",
-      "lang": "neutral"
+      "en": "6. No food in the library",
+      "pl": "6. Nie jedzenie, pożywienie w the biblioteka",
+      "lang": "6. No food in the library"
     },
     {
-      "key": "cpp.combat.undefined",
-      "category": "cpp",
+      "key": "book.otbm.6_return_borrowed_equipment_to",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "undefined",
-      "pl": "nieokreślony",
-      "lang": "undefined"
+      "en": "6. Return borrowed equipment to the storage room.",
+      "pl": "6. Zwrócić wypożyczony sprzęt do magazynu.",
+      "lang": "6. Return borrowed equipment to the storage room."
     },
     {
-      "key": "cpp.forge.consumed",
-      "category": "cpp",
+      "key": "book.otbm.7_no_scribbling_in_libraryowned",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "consumed",
-      "pl": "strawiony",
-      "lang": "consumed"
+      "en": "7. No scribbling in library-owned documents",
+      "pl": "7. Zakaz pisania w dokumentach będących własnością biblioteki",
+      "lang": "7. No scribbling in library-owned documents"
     },
     {
-      "key": "cpp.forge.cores_one",
-      "category": "cpp",
+      "key": "book.otbm.8_books_and_scrolls_must",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "{0} core",
-      "pl": "{0} rdzeń",
-      "lang": "{0} core"
+      "en": "8. Books and scrolls must be returned to the exact place they were taken from",
+      "pl": "8. Księgi i zwoje należy zwrócić dokładnie tam, skąd zostały zabrane",
+      "lang": "8. Books and scrolls must be returned to the exact place they were taken from"
     },
     {
-      "key": "cpp.forge.cores_other",
-      "category": "cpp",
+      "key": "book.otbm.900_mad_doc_vs_harpoon",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "{0} cores",
-      "pl": "{0} rdzeni",
-      "lang": "{0} cores"
+      "en": "9.00   Mad Doc. vs. Harpoon Angus",
+      "pl": "9.00 Zwariowany, niespełna rozumu Doc. vs. Harpun Angus",
+      "lang": "9.00   Mad Doc. vs. Harpoon Angus"
     },
     {
-      "key": "cpp.forge.dust_one",
-      "category": "cpp",
+      "key": "book.otbm.9_no_library_document_to",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "{0} dust",
-      "pl": "{0} kurz",
-      "lang": "{0} dust"
+      "en": "9. No library document to be taken outside of the library grounds",
+      "pl": "9. Zabrania się wynoszenia dokumentów bibliotecznych poza teren biblioteki",
+      "lang": "9. No library document to be taken outside of the library grounds"
     },
     {
-      "key": "cpp.forge.dust_other",
-      "category": "cpp",
+      "key": "book.otbm.a_city_only_for_serving",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "{0} dust",
-      "pl": "{0} kurz",
-      "lang": "{0} dust"
+      "en": "A city only for serving one goal: The investigation of the magic in our world Tibia!",
+      "pl": "Miasto służące tylko jednemu celowi: badaniu magii w naszym świecie Tibia!",
+      "lang": "A city only for serving one goal: The investigation of the magic in our world Tibia!"
     },
     {
-      "key": "cpp.forge.successful",
-      "category": "cpp",
+      "key": "book.otbm.a_crudely_scribbled_note",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Successful",
-      "pl": "sukcesful",
-      "lang": "Successful"
+      "en": "(A crudely scribbled note)",
+      "pl": "(prostacko nabazgrana notatka)",
+      "lang": "(A crudely scribbled note)"
     },
     {
-      "key": "cpp.forge.unchanged",
-      "category": "cpp",
+      "key": "book.otbm.a_goblet_forged_by_the",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "unchanged",
-      "pl": "niezmienione",
-      "lang": "unchanged"
+      "en": "A goblet forged by the dragon Khax that represents all the knowledge and wisdom of TibiaVenezuela.",
+      "pl": "Czara wykuta przez smoka Khaxa, która reprezentuje całą wiedzę i mądrość Tibii-Wenezueli.",
+      "lang": "A goblet forged by the dragon Khax that represents all the knowledge and wisdom of TibiaVenezuela."
     },
     {
-      "key": "cpp.game.hazard_tag",
-      "category": "cpp",
+      "key": "book.otbm.a_low_nearly_always_fourleaved",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " (Hazard)",
-      "pl": "(I.)",
-      "lang": " (Hazard)"
+      "en": "A low, nearly always four-leaved plant with yellow blossoms that grows in warm climate. It used to be the main source of food for the goats of the continent. However, later it was discovered to have a previously totally unknown poisenous long-term effect on the animals, and all goats died within two months.",
+      "pl": "Niska, prawie zawsze czterolistna roślina o żółtych kwiatach, rosnąca w ciepłym klimacie. Niegdyś było to główne źródło pożywienia dla kóz na kontynencie. Jednak później odkryto, że ma on całkowicie nieznany, długoterminowy, trujący wpływ na zwierzęta i wszystkie kozy zdechły w ciągu dwóch miesięcy.",
+      "lang": "A low, nearly always four-leaved plant with yellow blossoms that grows in warm climate. It used to be the main source of food for the goats of the continent. However, later it was discovered to have a previously totally unknown poisenous long-term effect on the animals, and all goats died within two months."
     },
     {
-      "key": "cpp.game.highscore_category_fishing",
-      "category": "cpp",
+      "key": "book.otbm.a_map_of_several_known",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Fishing",
-      "pl": "Rybacki",
-      "lang": "Fishing"
+      "en": "A map of several known as well as completely exotic locations.",
+      "pl": "Mapa kilku znanych, jak i zupełnie egzotycznych lokacji.",
+      "lang": "A map of several known as well as completely exotic locations."
     },
     {
-      "key": "cpp.game.highscore_category_shielding",
-      "category": "cpp",
+      "key": "book.otbm.a_number_of_marid_was",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Shielding",
-      "pl": "Zastawianie",
-      "lang": "Shielding"
+      "en": "A number of Marid was caught and slaughtered on the spot, but much to Malor's disappointment the majority of Gabel's troops managed to escape southwards in what appeared to be a well-planned strategic withdrawal. And how much greater was his surprise to find that the Marid fled to the city of Ankrahmun where they appeared were expected! It was then that he realised that Gabel had suspected a ruse all along, and that he had prepared a counterstrategy. Malor immediately ordered his troops to abandon pursuit, but it was too late. The undead marched against Ankrahmun with all the determination of a mindless killing machine, and the Efreet, blinded by rage, did not lag behind, only to be met by ceaseless barrages of arrows and catapult stones. A cataclysmic battle ensued.",
+      "pl": "Kilku Maridów zostało schwytanych i zamordowanych na miejscu, ale ku wielkiemu rozczarowaniu Malora, większości żołnierzy Gabela udało się uciec na południe w ramach czegoś, co wydawało się być dobrze zaplanowanym strategicznym wycofaniem. O ileż większe było jego zdziwienie, gdy odkrył, że Maridowie uciekli do miasta Ankrahmun, gdzie się ich spodziewano! Wtedy zdał sobie sprawę, że Gabel przez cały czas podejrzewał podstęp i przygotował kontrstrategię. Malor natychmiast nakazał swoim żołnierzom zaprzestanie pościgu, ale było już za późno. Nieumarli maszerowali przeciwko Ankrahmun z całą determinacją bezmyślnej maszyny do zabijania, a Efreet, zaślepiony wściekłością, nie pozostawał w tyle, tylko po to, by spotkać się z nieustannym gradem strzał i kamieni katapultowych. Rozpoczęła się kataklizmiczna bitwa.",
+      "lang": "A number of Marid was caught and slaughtered on the spot, but much to Malor's disappointment the majority of Gabel's troops managed to escape southwards in what appeared to be a well-planned strategic withdrawal. And how much greater was his surprise to find that the Marid fled to the city of Ankrahmun where they appeared were expected! It was then that he realised that Gabel had suspected a ruse all along, and that he had prepared a counterstrategy. Malor immediately ordered his troops to abandon pursuit, but it was too late. The undead marched against Ankrahmun with all the determination of a mindless killing machine, and the Efreet, blinded by rage, did not lag behind, only to be met by ceaseless barrages of arrows and catapult stones. A cataclysmic battle ensued."
     },
     {
-      "key": "cpp.game.no_loot",
-      "category": "cpp",
+      "key": "book.otbm.a_plant_with_large_dark",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "No loot",
-      "pl": "Żadnych łupów",
-      "lang": "No loot"
+      "en": "A plant with large, dark red-colored blossoms.",
+      "pl": "Roślina o dużych, ciemnoczerwonych kwiatach.",
+      "lang": "A plant with large, dark red-colored blossoms."
     },
     {
-      "key": "cpp.game.offline_training_button_ok",
-      "category": "cpp",
+      "key": "book.otbm.a_rarely_found_starshaped_orangecolored",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Okay",
-      "pl": "Dobrze",
-      "lang": "Okay"
+      "en": "A rarely found star-shaped orange-colored flower of amazing beauty. Commonly seen as a symbol of love.",
+      "pl": "Rzadko spotykany kwiat w kształcie gwiazdy w kolorze pomarańczowym o niesamowitej urodzie. Powszechnie postrzegany jako symbol miłości.",
+      "lang": "A rarely found star-shaped orange-colored flower of amazing beauty. Commonly seen as a symbol of love."
     },
     {
-      "key": "cpp.game.tentugly_name",
-      "category": "cpp",
+      "key": "book.otbm.a_spreadsheet_densely_covered_with",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Tentugly",
-      "pl": "Delikatnie",
-      "lang": "Tentugly"
+      "en": "(A  spreadsheet densely covered with strange symbols, numbers and signs that do not make any sense to you)",
+      "pl": "(Arkusz kalkulacyjny gęsto pokryty dziwnymi symbolami, liczbami i znakami, które nie mają dla Ciebie żadnego sensu)",
+      "lang": "(A  spreadsheet densely covered with strange symbols, numbers and signs that do not make any sense to you)"
     },
     {
-      "key": "cpp.game.you_looted",
-      "category": "cpp",
+      "key": "book.otbm.a_teleportation_through_the_magic",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You looted ",
-      "pl": "Zrabowałeś ",
-      "lang": "You looted "
+      "en": "A teleportation through the magic web",
+      "pl": "Teleportacja przez magiczną sieć",
+      "lang": "A teleportation through the magic web"
     },
     {
-      "key": "cpp.inspect.and_connector",
-      "category": "cpp",
+      "key": "book.otbm.a_true_knight_always_trusts",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " and ",
-      "pl": "i ",
-      "lang": " and "
+      "en": "A true Knight always trusts his sword, even if it's simple.",
+      "pl": "Prawdziwy Knight zawsze ufa swojemu mieczowi, nawet jeśli jest on prosty.",
+      "lang": "A true Knight always trusts his sword, even if it's simple."
     },
     {
-      "key": "cpp.inspect.at_range",
-      "category": "cpp",
+      "key": "book.otbm.abandoned_production_sites_caution_swamp",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " at range ",
-      "pl": "w zasięgu ",
-      "lang": " at range "
+      "en": "Abandoned production sites. Caution: Swamp troll infestation. Enter at your own risk.",
+      "pl": "Opuszczone miejsca produkcyjne. Uwaga: inwazja trolli bagiennych. Wchodzisz na własne ryzyko.",
+      "lang": "Abandoned production sites. Caution: Swamp troll infestation. Enter at your own risk."
     },
     {
-      "key": "cpp.inspect.augments",
-      "category": "cpp",
+      "key": "book.otbm.abbot_still_clueless_abour_my",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Augments",
-      "pl": "Zwiększać",
-      "lang": "Augments"
+      "en": "... abbot still clueless abour my ...",
+      "pl": "... opat wciąż nie ma pojęcia o moim...",
+      "lang": "... abbot still clueless abour my ..."
     },
     {
-      "key": "cpp.inspect.body_body",
-      "category": "cpp",
+      "key": "book.otbm.abdendriel_furniture_store",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "body",
-      "pl": "ciało",
-      "lang": "body"
+      "en": "Ab'Dendriel Furniture Store",
+      "pl": "Ab'Dendriel Sklep meblowy",
+      "lang": "Ab'Dendriel Furniture Store"
     },
     {
-      "key": "cpp.inspect.body_both_hands",
-      "category": "cpp",
+      "key": "book.otbm.about_the_orcs_because_of",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "both hands",
-      "pl": "obaj hands",
-      "lang": "both hands"
+      "en": "about the orcs because of these losses.",
+      "pl": "o orkach z powodu tych strat.",
+      "lang": "about the orcs because of these losses."
     },
     {
-      "key": "cpp.inspect.body_container",
-      "category": "cpp",
+      "key": "book.otbm.about_your_destiny_you_can",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "container",
-      "pl": "pojemnik",
-      "lang": "container"
+      "en": "about your destiny. You can then travel to the Isle of Destiny and choose a vocation.",
+      "pl": "o twój przeznaczenie. Lekarz rejonowyżesz wtedy podróż do the Wyspa, ostrów z Przeznaczenie i wybierać jeden profesja.",
+      "lang": "about your destiny. You can then travel to the Isle of Destiny and choose a vocation."
     },
     {
-      "key": "cpp.inspect.body_extra_slot",
-      "category": "cpp",
+      "key": "book.otbm.academy_and_training_centre",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "extra slot",
-      "pl": "dodatkowe gniazdo",
-      "lang": "extra slot"
+      "en": "Academy and Training Centre",
+      "pl": "Akademia i Trening Centre",
+      "lang": "Academy and Training Centre"
     },
     {
-      "key": "cpp.inspect.body_feet",
-      "category": "cpp",
+      "key": "book.otbm.accidentally_stabbed_by_al_dee",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "feet",
-      "pl": "stopy",
-      "lang": "feet"
+      "en": "Accidentally stabbed by Al Dee.",
+      "pl": "Przypadkowo dźgnięty nożem przez Ala Dee.",
+      "lang": "Accidentally stabbed by Al Dee."
     },
     {
-      "key": "cpp.inspect.body_finger",
-      "category": "cpp",
+      "key": "book.otbm.according_to_our_knowledge_only",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "finger",
-      "pl": "palec",
-      "lang": "finger"
+      "en": "According to our knowledge, only the delicate elves in their cities deep in the forests and the dwarves in their fortresses deep",
+      "pl": "Według naszej wiedzy jedynie delikatne elfy w swoich miastach głęboko w lasach i krasnoludy w swoich fortecach głęboko w",
+      "lang": "According to our knowledge, only the delicate elves in their cities deep in the forests and the dwarves in their fortresses deep"
     },
     {
-      "key": "cpp.inspect.body_head",
-      "category": "cpp",
+      "key": "book.otbm.advanced_spells_for_less_gold",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "head",
-      "pl": "Głowa",
-      "lang": "head"
+      "en": "Advanced spells for less gold.",
+      "pl": "Zaawansowane zaklęcia za mniej złota.",
+      "lang": "Advanced spells for less gold."
     },
     {
-      "key": "cpp.inspect.body_neck",
-      "category": "cpp",
+      "key": "book.otbm.adventurers_administration_quests_and_tasks",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "neck",
-      "pl": "szyja",
-      "lang": "neck"
+      "en": "Adventurer's Administration - Quests and Tasks open; contact Mr Morris.",
+      "pl": "Administracja Poszukiwacza Przygód - Misje i Zadania otwarte; skontaktuj się z panem Morrisem.",
+      "lang": "Adventurer's Administration - Quests and Tasks open; contact Mr Morris."
     },
     {
-      "key": "cpp.inspect.brand_new",
-      "category": "cpp",
+      "key": "book.otbm.adventurers_dormitory_door_key_lost",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "brand-new",
-      "pl": "I.-new",
-      "lang": "brand-new"
+      "en": "Adventurer's Dormitory (door key lost, please report to Mr Morris if you found it.)",
+      "pl": "Dormitorium Poszukiwaczy Przygód (zgubiony klucz do drzwi, jeśli go znalazłeś, zgłoś się do pana Morrisa.)",
+      "lang": "Adventurer's Dormitory (door key lost, please report to Mr Morris if you found it.)"
     },
     {
-      "key": "cpp.inspect.capacity",
-      "category": "cpp",
+      "key": "book.otbm.adventurers_outpost_bank_safely_hoarding",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Capacity",
-      "pl": "Udźperuka",
-      "lang": "Capacity"
+      "en": "Adventurer's Outpost Bank - Safely hoarding your looted gold so you can go back out into the wild for more.",
+      "pl": "Bank Poszukiwaczy Przygód – bezpiecznie przechowuj zrabowane złoto, abyś mógł wrócić w dzicz po więcej.",
+      "lang": "Adventurer's Outpost Bank - Safely hoarding your looted gold so you can go back out into the wild for more."
     },
     {
-      "key": "cpp.inspect.cleave",
-      "category": "cpp",
+      "key": "book.otbm.after_a_painful_and_long",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Cleave",
-      "pl": "Rozszczepiać",
-      "lang": "Cleave"
+      "en": "After a painful and long hunt, our mages kept Hugo occupied with some summoned dragons that distracted him long enough to prepare the trap. When Hugo followed the 'track' we laid for him, our druids trapped him with plant barriers and then moved earth around him. Now the beast is trapped. May Fardos, Uman and Banor give that we can keep him satiated and calm by using the trick the druids figured out. Our aspirants will have a hard time to pass the test that was created around this beast.",
+      "pl": "Po bolesnym i długim polowaniu nasi magowie zajmowali Hugo kilkoma przywołanymi smokami, które rozpraszały go na tyle długo, aby przygotować pułapkę. Kiedy Hugo podążył za 'track', który dla niego przygotowaliśmy, nasi druidzi uwięzili go barierami roślinnymi, a następnie poruszyli wokół niego ziemię. Teraz bestia jest uwięziona. Niech Fardos, Uman i Banor zapewnią mu uczucie sytości i spokoju, stosując sztuczkę wymyśloną przez druidów. Naszym aspirantom będzie trudno zdać test, który został stworzony wokół tej bestii.",
+      "lang": "After a painful and long hunt, our mages kept Hugo occupied with some summoned dragons that distracted him long enough to prepare the trap. When Hugo followed the 'track' we laid for him, our druids trapped him with plant barriers and then moved earth around him. Now the beast is trapped. May Fardos, Uman and Banor give that we can keep him satiated and calm by using the trick the druids figured out. Our aspirants will have a hard time to pass the test that was created around this beast."
     },
     {
-      "key": "cpp.inspect.contain",
-      "category": "cpp",
+      "key": "book.otbm.after_a_week_had_passed",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Contain",
-      "pl": "Zawierać",
-      "lang": "Contain"
+      "en": "After a week had passed the mathematician returned. His advice was this: The pharaoh should order a huge celebration to be held, and all pyramids should be adorned with flowers and flags. The pharaoh who trusted in the wisdom of his advisor ordered his people to prepare for the celebration. While the people did as their pharaoh had ordered them to do Athem began to build a huge wooden machine on top of the royal pyramid. No one took much notice of it because of the preparations that were going on. On the fourth day when the celebration was scheduled to start the pharaoh sent an invitation to his vizier and asked him to join in their festivity. As Athem had foreseen the vizier declined because he suspected that there was a trap. Instead he sat in the observatory at the top of his tower and watched the city because he wanted to find out what the pharaoh was up to. Too late did he understand that the construct on top of the pyramid was in fact an enormous catapult. Suddenly a huge boulder was hurled in his direction. The shot had been perfectly calculated, and it hit its mark with amazing precision. The top of the dark tower shattered and the evil vizier was crushed underneath tons of basalt. His death caused the dark magic to disappear, and the tower sank into the ocean forever.",
+      "pl": "Po tygodniu matematyk wrócił. Jego rada była następująca: faraon powinien zarządzić wielką uroczystość, a wszystkie piramidy ozdobić kwiatami i flagami. Faraon, ufając mądrości swojego doradcy, nakazał swojemu ludowi przygotować się do uroczystości. Podczas gdy ludzie wykonywali polecenie faraona, Athem zaczął budować ogromną drewnianą maszynę na szczycie królewskiej piramidy. Nikt nie zwrócił na to większej uwagi ze względu na trwające przygotowania. Czwartego dnia, kiedy zaplanowano rozpoczęcie uroczystości, faraon wysłał zaproszenie do swego wezyra i poprosił go, aby przyłączył się do uroczystości. Tak jak Athem przewidział, wezyr odmówił, ponieważ podejrzewał, że kryje się w nim pułapka. Zamiast tego siedział w obserwatorium na szczycie swojej wieży i obserwował miasto, ponieważ chciał dowiedzieć się, co porabia faraon. Za późno zrozumiał, że konstrukt na szczycie piramidy był w rzeczywistości ogromną katapultą. Nagle w jego stronę rzucono ogromny głaz. Strzał był doskonale wyliczony i trafił w cel z zadziwiającą precyzją. Szczyt ciemnej wieży został rozbity, a zły wezyr został zmiażdżony pod tonami bazaltu. Jego śmierć spowodowała zniknięcie mrocznej magii, a wieża zatonęła w oceanie na zawsze.",
+      "lang": "After a week had passed the mathematician returned. His advice was this: The pharaoh should order a huge celebration to be held, and all pyramids should be adorned with flowers and flags. The pharaoh who trusted in the wisdom of his advisor ordered his people to prepare for the celebration. While the people did as their pharaoh had ordered them to do Athem began to build a huge wooden machine on top of the royal pyramid. No one took much notice of it because of the preparations that were going on. On the fourth day when the celebration was scheduled to start the pharaoh sent an invitation to his vizier and asked him to join in their festivity. As Athem had foreseen the vizier declined because he suspected that there was a trap. Instead he sat in the observatory at the top of his tower and watched the city because he wanted to find out what the pharaoh was up to. Too late did he understand that the construct on top of the pyramid was in fact an enormous catapult. Suddenly a huge boulder was hurled in his direction. The shot had been perfectly calculated, and it hit its mark with amazing precision. The top of the dark tower shattered and the evil vizier was crushed underneath tons of basalt. His death caused the dark magic to disappear, and the tower sank into the ocean forever."
     },
     {
-      "key": "cpp.inspect.defence",
-      "category": "cpp",
+      "key": "book.otbm.after_all_those_perils_and",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Defence",
-      "pl": "Obrona",
-      "lang": "Defence"
+      "en": "After all those perils and puzzels I have located the throne of darkness at last. I will lead ...",
+      "pl": "Po tych wszystkich niebezpieczeństwach i zagadkach w końcu zlokalizowałem tron ​​​​ciemności. poprowadzę...",
+      "lang": "After all those perils and puzzels I have located the throne of darkness at last. I will lead ..."
     },
     {
-      "key": "cpp.inspect.effect",
-      "category": "cpp",
+      "key": "book.otbm.after_reading_the_whole_book",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Effect",
-      "pl": "Efekt",
-      "lang": "Effect"
+      "en": "*After reading the whole book (which takes you almost an hour) you suffer from headaches. You remember only one thing and have to laugh as the memory returns. It's the 647th. way to use an energy beam: a venerable wizard who grills meat with his deadly spell.*",
+      "pl": "*Po przeczytaniu całej książki (co zajmuje prawie godzinę) pojawia się ból głowy. Pamiętasz tylko jedną rzecz i musisz się śmiać, gdy wspomnienie powraca. To 647. sposób wykorzystania promienia energii: czcigodny czarodziej, który grilluje mięso swoim śmiercionośnym zaklęciem.*",
+      "lang": "*After reading the whole book (which takes you almost an hour) you suffer from headaches. You remember only one thing and have to laugh as the memory returns. It's the 647th. way to use an energy beam: a venerable wizard who grills meat with his deadly spell.*"
     },
     {
-      "key": "cpp.inspect.expires",
-      "category": "cpp",
+      "key": "book.otbm.after_the_disastrous_battle_of",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Expires",
-      "pl": "Wygasa",
-      "lang": "Expires"
+      "en": "After the disastrous battle of Ankrahmun Drefia's necromancers knew the end was near. The Marid would never forgive them their treachery, and this would be a battle the necromancers could not win - after all, many of them had already perished in the battle of Ankrahmun, and their Efreet allies could provide no assistance. So the necromancers prepared for the inevitable with the defiant cynicism of those who have been familiar with death all their lives, performing evil rituals and indulging in morbid orgies.",
+      "pl": "Po katastrofalnej bitwie Ankrahmun Drefia nekromanci wiedzieli, że koniec jest bliski. Maridowie nigdy nie wybaczyliby im zdrady i byłaby to bitwa, której nekromanci nie mogliby wygrać - w końcu wielu z nich zginęło już w bitwie pod Ankrahmun, a ich sojusznicy z Efreetów nie mogli udzielić pomocy. Zatem nekromanci przygotowywali się na nieuniknione z wyzywającym cynizmem tych, którzy przez całe życie zaznajomili się ze śmiercią, odprawiając złe rytuały i oddając się chorobliwym orgiom.",
+      "lang": "After the disastrous battle of Ankrahmun Drefia's necromancers knew the end was near. The Marid would never forgive them their treachery, and this would be a battle the necromancers could not win - after all, many of them had already perished in the battle of Ankrahmun, and their Efreet allies could provide no assistance. So the necromancers prepared for the inevitable with the defiant cynicism of those who have been familiar with death all their lives, performing evil rituals and indulging in morbid orgies."
     },
     {
-      "key": "cpp.inspect.hitchance",
-      "category": "cpp",
+      "key": "book.otbm.after_the_female_reign_of",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "HitChance",
-      "pl": "Szansa na trafienie",
-      "lang": "HitChance"
+      "en": "After the female reign of Carlin was established and the independent city tried to expand its influence settlers were sent there to claim the nearby area.",
+      "pl": "Po ustanowieniu żeńskich rządów Carlin i próbie rozszerzenia swoich wpływów przez niezależne miasto wysłano tam osadników, aby zajęli pobliskie tereny.",
+      "lang": "After the female reign of Carlin was established and the independent city tried to expand its influence settlers were sent there to claim the nearby area."
     },
     {
-      "key": "cpp.inspect.key",
-      "category": "cpp",
+      "key": "book.otbm.after_thorough_examination_the_rathal",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Key",
-      "pl": "Klucz",
-      "lang": "Key"
+      "en": "After thorough examination the Rathal I Pyramid was officially declared to be free of occult phenomena. The success of the ritual of purification performed by the responsible priests surpassed everybody's expectations, and the rather obstinate evil presence that was clearly the work of a person officially identified as one Ushu the witch by the authorities was dispelled. The suspect was traced to the mountains where she sucessfully hid from the agents of the witchhunting department. She is presently said to produce low-quality love potions in an unknown hideout somewhere in the western jungles.",
+      "pl": "Po dokładnym zbadaniu Piramida Rathal I została oficjalnie uznana za wolną od zjawisk okultystycznych. Powodzenie rytuału oczyszczenia przeprowadzonego przez odpowiedzialnych kapłanów przekroczyło wszelkie oczekiwania, a raczej uparta obecność zła, która była najwyraźniej dziełem osoby oficjalnie zidentyfikowanej przez władze jako wiedźma Ushu, została rozpędzona. Podejrzana została odnaleziona w górach, gdzie skutecznie ukryła się przed agentami wydziału polowań na czarownice. Obecnie mówi się, że produkuje niskiej jakości eliksiry miłosne w nieznanej kryjówce gdzieś w zachodnich dżunglach.",
+      "lang": "After thorough examination the Rathal I Pyramid was officially declared to be free of occult phenomena. The success of the ritual of purification performed by the responsible priests surpassed everybody's expectations, and the rather obstinate evil presence that was clearly the work of a person officially identified as one Ushu the witch by the authorities was dispelled. The suspect was traced to the mountains where she sucessfully hid from the agents of the witchhunting department. She is presently said to produce low-quality love potions in an unknown hideout somewhere in the western jungles."
     },
     {
-      "key": "cpp.inspect.n_fields",
-      "category": "cpp",
+      "key": "book.otbm.after_we_reached_the_site",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "{0} fields",
-      "pl": "Pola {0}",
-      "lang": "{0} fields"
+      "en": "... After we reached the site we pitched camp. The next day we started the excavations. It was hard work. The sand was treacherous and obstinate, and for every bucket we took away two more seemed to take its place. Sometimes we hit upon something valuable by pure chance, but usually it took hours to find some lucrative spot because you could never tell if a site was promising without having performing extensive excavations first. And still the real thing eluded us. The remnants of the legendary cities of old seemed lost to the desert. But we carried on, working day and night, digging at the same spot over and over again. Progress was painfully slow, but in the end hit on something. What we found proved to be an adequate reward for our hardships.",
+      "pl": "... Po dotarciu na miejsce rozbiliśmy obóz. Następnego dnia rozpoczęliśmy wykopaliska. To była ciężka praca. Piasek był zdradliwy i uparty, a za każde wiadro, które zabraliśmy, zdawało się, że jego miejsce zajmują dwa kolejne. Czasami trafiamy na coś cennego przez czysty przypadek, ale zwykle znalezienie jakiegoś lukratywnego miejsca zajmowało wiele godzin, ponieważ bez uprzedniego przeprowadzenia szeroko zakrojonych wykopalisk nigdy nie można było stwierdzić, czy dane miejsce jest obiecujące. A jednak to, co prawdziwe, wciąż nam umykało. Pozostałości legendarnych miast zdawały się zagubione na pustyni. Ale my pracowaliśmy dalej dzień i noc, wciąż kopiąc w tym samym miejscu. Postęp był boleśnie powolny, ale w końcu coś trafiło. To, co znaleźliśmy, okazało się odpowiednią nagrodą za nasze trudy.",
+      "lang": "... After we reached the site we pitched camp. The next day we started the excavations. It was hard work. The sand was treacherous and obstinate, and for every bucket we took away two more seemed to take its place. Sometimes we hit upon something valuable by pure chance, but usually it took hours to find some lucrative spot because you could never tell if a site was promising without having performing extensive excavations first. And still the real thing eluded us. The remnants of the legendary cities of old seemed lost to the desert. But we carried on, working day and night, digging at the same spot over and over again. Progress was painfully slow, but in the end hit on something. What we found proved to be an adequate reward for our hardships."
     },
     {
-      "key": "cpp.inspect.nothing",
-      "category": "cpp",
+      "key": "book.otbm.afterwards_life_returned_to_the",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Nothing",
-      "pl": "Niething",
-      "lang": "Nothing"
+      "en": "afterwards life returned to the world.",
+      "pl": "potem życie wróciło do świata.",
+      "lang": "afterwards life returned to the world."
     },
     {
-      "key": "cpp.inspect.oz",
-      "category": "cpp",
+      "key": "book.otbm.aim_of_existence_and_in",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " oz",
-      "pl": "oz",
-      "lang": " oz"
+      "en": "aim of existence! And in such a way the crystal column of time grew upwards and was from then on the unmovable center of",
+      "pl": "cel istnienia! I w ten sposób kryształowa kolumna czasu urosła w górę i odtąd znajdowała się w nieruchomym centrum",
+      "lang": "aim of existence! And in such a way the crystal column of time grew upwards and was from then on the unmovable center of"
     },
     {
-      "key": "cpp.inspect.premium",
-      "category": "cpp",
+      "key": "book.otbm.al_dees_shop_come_to",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Premium",
-      "pl": "Premia",
-      "lang": "Premium"
+      "en": "Al Dee's shop - come to where the ropes are!",
+      "pl": "Sklep Al Dee - przyjdź tam, gdzie są liny!",
+      "lang": "Al Dee's shop - come to where the ropes are!"
     },
     {
-      "key": "cpp.inspect.protection",
-      "category": "cpp",
+      "key": "book.otbm.al_dees_shop_come_to_af3d4866",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Protection",
-      "pl": "Ochrona, osłona",
-      "lang": "Protection"
+      "en": "Al Dee's shop - come to where the torches are!",
+      "pl": "Sklep Al Dee - przyjdź tam, gdzie są pochodnie!",
+      "lang": "Al Dee's shop - come to where the torches are!"
     },
     {
-      "key": "cpp.inspect.speed_value",
-      "category": "cpp",
+      "key": "book.otbm.al_dees_shop_come_to_ef77e299",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "speed {0}",
-      "pl": "prędkość {0}",
-      "lang": "speed {0}"
+      "en": "Al Dee's shop - come to where the ropes are!",
+      "pl": "Sklep Al Dee - przyjdź tam, gdzie są liny!",
+      "lang": "Al Dee's shop - come to where the ropes are!"
     },
     {
-      "key": "cpp.inspect.tier",
-      "category": "cpp",
+      "key": "book.otbm.all_others_made_the_same",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Tier",
-      "pl": "Rząd",
-      "lang": "Tier"
+      "en": "All others made the same experience.",
+      "pl": "Wszyscy inni mieli takie same doświadczenia.",
+      "lang": "All others made the same experience."
     },
     {
-      "key": "cpp.inspect.tradeable",
-      "category": "cpp",
+      "key": "book.otbm.all_seem_to_work_well",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Tradeable",
-      "pl": "Możliwość handlu",
-      "lang": "Tradeable"
+      "en": "All seem to work well. But after some years new problems appeared.",
+      "pl": "Wszystko wydaje się działać dobrze. Jednak po kilku latach pojawiły się nowe problemy.",
+      "lang": "All seem to work well. But after some years new problems appeared."
     },
     {
-      "key": "cpp.inspect.two_handed",
-      "category": "cpp",
+      "key": "book.otbm.all_the_strength_that_he",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "two-handed",
-      "pl": "dwa-handed",
-      "lang": "two-handed"
+      "en": "all the strength that he could muster into the heart of Tibiasula, whose existence he did not want to endure any more. And as the",
+      "pl": "całą siłę, jaką mógł zgromadzić w sercu Tibiasuli, której istnienia nie chciał już dłużej znosić. I jako",
+      "lang": "all the strength that he could muster into the heart of Tibiasula, whose existence he did not want to endure any more. And as the"
     },
     {
-      "key": "cpp.inspect.yes",
-      "category": "cpp",
+      "key": "book.otbm.all_their_magic_which_was",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "yes",
-      "pl": "Tak",
-      "lang": "yes"
+      "en": "All their magic, which was probably given to the old peoples in excess, could not make them victorious, and they and their",
+      "pl": "Cała ich magia, która prawdopodobnie została dana starym ludom w nadmiarze, nie mogła zapewnić im zwycięstwa, a oni i ich",
+      "lang": "All their magic, which was probably given to the old peoples in excess, could not make them victorious, and they and their"
     },
     {
-      "key": "cpp.look.and_connector",
-      "category": "cpp",
+      "key": "book.otbm.all_this_however_could_not",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " and ",
-      "pl": "i ",
-      "lang": " and "
+      "en": "All this however could not turn the war luck against the dark hordes. Whereever Banor appeared personally to lead the",
+      "pl": "Wszystko to jednak nie mogło odwrócić losu wojny przeciwko ciemnym hordom. Gdziekolwiek Banor pojawiał się osobiście, aby przewodzić",
+      "lang": "All this however could not turn the war luck against the dark hordes. Whereever Banor appeared personally to lead the"
     },
     {
-      "key": "cpp.look.and_short",
-      "category": "cpp",
+      "key": "book.otbm.allen_richardsons_warehouse",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " and",
-      "pl": "i",
-      "lang": " and"
+      "en": "Allen Richardson's Warehouse",
+      "pl": "Magazyn Allena Richardsona",
+      "lang": "Allen Richardson's Warehouse"
     },
     {
-      "key": "cpp.look.arm",
-      "category": "cpp",
+      "key": "book.otbm.already_the_daemons_hammered_on",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Arm:",
-      "pl": "Ramię, ręka:",
-      "lang": "Arm:"
+      "en": "Already the daemons hammered on the walls of their breakable prison.",
+      "pl": "Już demony walały w ściany ich łamliwego więzienia.",
+      "lang": "Already the daemons hammered on the walls of their breakable prison."
     },
     {
-      "key": "cpp.look.at_range",
-      "category": "cpp",
+      "key": "book.otbm.also_react_to_but_those",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "at range",
-      "pl": "w zasięgu",
-      "lang": "at range"
+      "en": "also react to, but those are not highlighted. In this case, you need to TYPE in a word to see if an NPC will react to it, like their",
+      "pl": "również reagują, ale nie są one podkreślane. W takim przypadku musisz WPISAĆ słowo, aby sprawdzić, czy NPC zareaguje na nie, tak jak on",
+      "lang": "also react to, but those are not highlighted. In this case, you need to TYPE in a word to see if an NPC will react to it, like their"
     },
     {
-      "key": "cpp.look.atk",
-      "category": "cpp",
+      "key": "book.otbm.also_via_the_portal_of",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Atk:",
-      "pl": "Atak:",
-      "lang": "Atk:"
+      "en": "Also via the portal of souls old and new heroes found their way to Tibia. Gradually larger sections of the old world emerged",
+      "pl": "Również poprzez portal dusz starzy i nowi bohaterowie trafili do Tibia. Stopniowo wyłoniły się większe sekcje starego świata",
+      "lang": "Also via the portal of souls old and new heroes found their way to Tibia. Gradually larger sections of the old world emerged"
     },
     {
-      "key": "cpp.look.cleave_lower",
-      "category": "cpp",
+      "key": "book.otbm.although_most_problems_have_to",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "cleave",
-      "pl": "rozszczepiać",
-      "lang": "cleave"
+      "en": "Although most problems have to be solved by intellect, the demons they  summoned frighten me to death. Maybe we had to add something like this to ensure that no one passes the tests just by being told how it works. Still, adding a bunch of powerful monsters seems like madness to me. As if Hugo wasn't dangerous enough already!!",
+      "pl": "Chociaż większość problemów trzeba rozwiązać intelektem, demony, które przywoływały, śmiertelnie mnie przerażają. Być może musieliśmy dodać coś takiego, aby mieć pewność, że nikt nie przejdzie testów na podstawie informacji, jak to działa. Mimo to dodanie grupy potężnych potworów wydaje mi się szaleństwem. Jakby Hugo nie był już wystarczająco niebezpieczny!!",
+      "lang": "Although most problems have to be solved by intellect, the demons they  summoned frighten me to death. Maybe we had to add something like this to ensure that no one passes the tests just by being told how it works. Still, adding a bunch of powerful monsters seems like madness to me. As if Hugo wasn't dangerous enough already!!"
     },
     {
-      "key": "cpp.look.cleave_upper",
-      "category": "cpp",
+      "key": "book.otbm.ancient_mummies_are_fiends_of",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Cleave",
-      "pl": "Rozszczepiać",
-      "lang": "Cleave"
+      "en": "Ancient mummies are fiends of horrendous powers. Only the bravest warriors dare to challenge them, and most of these fools join the ranks of the mummie's undead legions all too soon. In life, each of these ancient horrors was a champion in his own right, but now that they have entered the dreadful state of undeath they have become truly formidable, for there is no way to kill them for good. No matter how hard they are hit the ancient powers bound to their mummified bodies will always make them rise again in all their horrifying glory to take revenge on the living.",
+      "pl": "Starożytne mumie to potwory o straszliwych mocach. Tylko najodważniejsi wojownicy mają odwagę rzucić im wyzwanie, a większość z tych głupców zbyt szybko dołącza do szeregów nieumarłych legionów mumii. Za życia każdy z tych starożytnych potworów był sam w sobie mistrzem, ale teraz, gdy weszły w straszny stan nieumarłych, stały się naprawdę groźne, ponieważ nie ma sposobu, aby zabić je na dobre. Bez względu na to, jak mocno zostaną uderzeni, starożytne moce związane z ich zmumifikowanymi ciałami zawsze sprawią, że powstaną ponownie w całej swojej przerażającej chwale, aby zemścić się na żywych.",
+      "lang": "Ancient mummies are fiends of horrendous powers. Only the bravest warriors dare to challenge them, and most of these fools join the ranks of the mummie's undead legions all too soon. In life, each of these ancient horrors was a champion in his own right, but now that they have entered the dreadful state of undeath they have become truly formidable, for there is no way to kill them for good. No matter how hard they are hit the ancient powers bound to their mummified bodies will always make them rise again in all their horrifying glory to take revenge on the living."
     },
     {
-      "key": "cpp.look.damage",
-      "category": "cpp",
+      "key": "book.otbm.and_all_life_threatened_to",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "damage",
-      "pl": "szkoda",
-      "lang": "damage"
+      "en": "and all life threatened to be suffocated thereby.",
+      "pl": "i całe życie groziło uduszeniem.",
+      "lang": "and all life threatened to be suffocated thereby."
     },
     {
-      "key": "cpp.look.day_many",
-      "category": "cpp",
+      "key": "book.otbm.and_as_all_gnomes_he",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "{0} days",
-      "pl": "{0} dni",
-      "lang": "{0} days"
+      "en": "And as all gnomes he was a treacherous, greedy coward (and that's pretty treacherous, greedy and cowardish). One day in the middle of a deep forest the little gnome met a little girl wearing a pretty red cap. As the greedy gnome saw that she was carrying a bag full of finest bread and a flask of wine, he pretended to be starving and begged the little girl for food and water in a way anoying as only gnomes can be (and that's pretty anoying). But the girl was warned of treacherous gnomes by a valiant huntsman she met before and she quickly ran away from the greedy little gnome. The gnome became angry but was afraid to steal from her, because she might have been stronger than him. So he wandered into the woods cursing as only gnomes can curse (and that's pretty ugly). By chance he almost stumbled over a sleeping bard. Quickly figuring out the magical nature of the flute lying near the sleeping bard, he stole it as quickly as only a gnome can do (and that's pretty quick). Using the magic flute he lured a pack of wolves to the little girls grandmas house and let the beasts chase both into the wilderness and laughed wickedly as only gnomes can laugh (and that's pretty wicked). Laughing the gnome gulped the wine and swallowed the bread as fast as only gnomes can (and that's pretty fast). So he lived in the woods and molested squirrels happily ever after.",
+      "pl": "I jak wszystkie gnomy był zdradzieckim, chciwym tchórzem (a to jest dość zdradzieckie, chciwe i tchórzliwe). Pewnego dnia w środku głębokiego lasu mały krasnal spotkał małą dziewczynkę w ślicznej czerwonej czapce. Gdy chciwy gnom zobaczył, że niesie torbę pełną najlepszego chleba i butelkę wina, udał, że umiera z głodu i błagał dziewczynkę o jedzenie i wodę w sposób irytujący, jak potrafią tylko gnomy (a to jest całkiem irytujące). Jednak dziewczyna została ostrzeżena przed zdradzieckimi gnomami przez dzielnego myśliwego, którego spotkała wcześniej, i szybko uciekła przed zachłannym małym gnomem. Gnom rozgniewał się, ale bał się jej okraść, bo mogła być od niego silniejsza. Powędrował więc do lasu i przeklinał tak, jak potrafią przeklinać tylko gnomy (a to jest dość brzydkie). Przez przypadek prawie potknął się o śpiącego barda. Szybko odgadując magiczną naturę fletu leżącego obok śpiącego barda, ukradł go tak szybko, jak tylko gnom może to zrobić (i to całkiem szybko). Używając magicznego fletu zwabił stado wilków do domu babci małych dziewczynek i pozwolił bestiom wygonić obie na pustynię i zaśmiał się złośliwie, jak tylko gnomy potrafią się śmiać (a to jest dość niegodziwe). Roześmiany krasnal przełknął wino i połknął chleb tak szybko, jak potrafią to tylko gnomy (i to całkiem szybko). Żył więc długo i szczęśliwie w lesie i molestował wiewiórki.",
+      "lang": "And as all gnomes he was a treacherous, greedy coward (and that's pretty treacherous, greedy and cowardish). One day in the middle of a deep forest the little gnome met a little girl wearing a pretty red cap. As the greedy gnome saw that she was carrying a bag full of finest bread and a flask of wine, he pretended to be starving and begged the little girl for food and water in a way anoying as only gnomes can be (and that's pretty anoying). But the girl was warned of treacherous gnomes by a valiant huntsman she met before and she quickly ran away from the greedy little gnome. The gnome became angry but was afraid to steal from her, because she might have been stronger than him. So he wandered into the woods cursing as only gnomes can curse (and that's pretty ugly). By chance he almost stumbled over a sleeping bard. Quickly figuring out the magical nature of the flute lying near the sleeping bard, he stole it as quickly as only a gnome can do (and that's pretty quick). Using the magic flute he lured a pack of wolves to the little girls grandmas house and let the beasts chase both into the wilderness and laughed wickedly as only gnomes can laugh (and that's pretty wicked). Laughing the gnome gulped the wine and swallowed the bread as fast as only gnomes can (and that's pretty fast). So he lived in the woods and molested squirrels happily ever after."
     },
     {
-      "key": "cpp.look.day_one",
-      "category": "cpp",
+      "key": "book.otbm.and_finally_he_spoke_to",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "{0} day",
-      "pl": "{0} dzień",
-      "lang": "{0} day"
+      "en": "And finally he spoke to Gabel: \"Alas! Truly thy race hath suffered! But there is hope, mylord, hope even for your race that has been deserted by its reckless creator!\" And he went on to teach him the ways of abjuration and of enlightenment. And Gabel listened and learned, and when he saw the wisdom in Daraman's words he decided to renounce the old ways. And soon many others of his race embraced the holy words and became proselytes of Daraman's creed.",
+      "pl": "I w końcu przemówił do Gabela: „Niestety! Zaprawdę, twoja rasa ucierpiała! Ale jest nadzieja, mój panie, nadzieja nawet dla twojej rasy, która została opuszczona przez swojego lekkomyślnego stwórcę!” I zaczął uczyć go sposobów wyrzeczenia się i oświecenia. A Gabel słuchał i uczył się, a kiedy dostrzegł mądrość w słowach Daramana, zdecydował się wyrzec starych sposobów. Wkrótce wielu innych przedstawicieli jego rasy przyjęło święte słowa i zostało prozelitami wyznania Daramana.",
+      "lang": "And finally he spoke to Gabel: \"Alas! Truly thy race hath suffered! But there is hope, mylord, hope even for your race that has been deserted by its reckless creator!\" And he went on to teach him the ways of abjuration and of enlightenment. And Gabel listened and learned, and when he saw the wisdom in Daraman's words he decided to renounce the old ways. And soon many others of his race embraced the holy words and became proselytes of Daraman's creed."
     },
     {
-      "key": "cpp.look.def",
-      "category": "cpp",
+      "key": "book.otbm.and_immediately_the_dead_ones",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Def:",
-      "pl": "def:",
-      "lang": "Def:"
+      "en": "And immediately the dead ones began to raise themselves on his calling, and they all were his creatures. Like the orcs before",
+      "pl": "I natychmiast zmarli zaczęli się podnosić na jego wołanie i wszyscy byli jego stworzeniami. Jak orki wcześniej",
+      "lang": "And immediately the dead ones began to raise themselves on his calling, and they all were his creatures. Like the orcs before"
     },
     {
-      "key": "cpp.look.empty_slot",
-      "category": "cpp",
+      "key": "book.otbm.and_maically_erected_a_hedge",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Empty Slot",
-      "pl": "Puste miejsce",
-      "lang": "Empty Slot"
+      "en": "and maically erected a hedge which they empowered with magic. The queen was not happy but did not intervene to stop them. Since then the area is known as the ghostlands (and several other nicknames suggesting the same).",
+      "pl": "i maniakalnie wznieśli żywopłot, który wzmocnili magią. Królowa nie była zadowolona, ​​ale nie interweniowała, aby ich powstrzymać. Od tego czasu obszar ten znany jest jako Kraina Duchów (i kilka innych pseudonimów sugeruje to samo).",
+      "lang": "and maically erected a hedge which they empowered with magic. The queen was not happy but did not intervene to stop them. Since then the area is known as the ghostlands (and several other nicknames suggesting the same)."
     },
     {
-      "key": "cpp.look.field",
-      "category": "cpp",
+      "key": "book.otbm.and_omruc_the_dreaded_hunter",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " field",
-      "pl": " ognia",
-      "lang": " field"
+      "en": "And Omruc, the dreaded hunter and assassin. None of his victims ever saw it coming, and none of them ever escaped.",
+      "pl": "I Omruc, przerażający łowca i zabójca. Żadna z jego ofiar nigdy się nie spodziewała, że ​​to nadejdzie i żadna z nich nigdy nie uciekła.",
+      "lang": "And Omruc, the dreaded hunter and assassin. None of his victims ever saw it coming, and none of them ever escaped."
     },
     {
-      "key": "cpp.look.healing",
-      "category": "cpp",
+      "key": "book.otbm.and_once_again_all_were",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "healing",
-      "pl": "Gojenie : zdrowienie",
-      "lang": "healing"
+      "en": "And once again, all were there. Once again, the seven were united.",
+      "pl": "I raz ponownie, wszystkie były there. Raz ponownie, the siedem były jednostka.",
+      "lang": "And once again, all were there. Once again, the seven were united."
     },
     {
-      "key": "cpp.look.hit_pct",
-      "category": "cpp",
+      "key": "book.otbm.and_scribbled_below_fluids_wands",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Hit%",
-      "pl": "Uderzyć%",
-      "lang": "Hit%"
+      "en": "(and scribbled below: fluids, wands, rods and runes!)",
+      "pl": "(i nabazgrane poniżej: płyny, różdżki, pręty i runy!)",
+      "lang": "(and scribbled below: fluids, wands, rods and runes!)"
     },
     {
-      "key": "cpp.look.hour_many",
-      "category": "cpp",
+      "key": "book.otbm.and_so_it_came_to",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "{0} hours",
-      "pl": "{0} godziny",
-      "lang": "{0} hours"
+      "en": "And so it came to pass that Gabel, the mighty king of the djinns, took interest in Daraman. Here was something that he, who had seen so many things, could simply not understand, and he was determined to find out more about it. In the beginning he was still convinced that the prophet, like all other humans, was driven by a secret weakness, and he tried to use many other temptations to test the prophet. He clad the old man in silk and offered him a thousand gifts. But Daraman was as unimpressed by the djinns' fabulous wealth as he had been unimpressed by their tortures, and he politely rejected all gifts. And when Gabel finally asked him if he did not appreciate his gifts Daraman answered \"Mylord, I am an old man who has little use for pretty baubles. And truly I have never valued a thing that could be bought for gold.\" It was then that Gabel realised that Daraman was indeed a holy man.",
+      "pl": "I tak się stało, że Gabel, potężny król dżinów, zainteresował się Daramanem. Było tu coś, czego on, który widział tak wiele rzeczy, po prostu nie mógł zrozumieć i był zdeterminowany, aby dowiedzieć się więcej na ten temat. Na początku był nadal przekonany, że prorokiem, jak wszystkimi innymi ludźmi, kieruje tajemna słabość, i próbował wykorzystać wiele innych pokus, aby wystawić proroka na próbę. Ubrał starego człowieka w jedwab i ofiarował mu tysiąc prezentów. Ale Daraman nie był pod wrażeniem bajecznego bogactwa dżinów, podobnie jak ich tortury, i grzecznie odrzucał wszelkie prezenty. A kiedy Gabel w końcu zapytał go, czy nie docenia jego prezentów, Daraman odpowiedział: „Mój Panie, jestem starym człowiekiem, który nie potrzebuje ładnych bombek. I naprawdę nigdy nie ceniłem rzeczy, którą można było kupić za złoto”. Wtedy Gabel zdał sobie sprawę, że Daraman rzeczywiście był świętym człowiekiem.",
+      "lang": "And so it came to pass that Gabel, the mighty king of the djinns, took interest in Daraman. Here was something that he, who had seen so many things, could simply not understand, and he was determined to find out more about it. In the beginning he was still convinced that the prophet, like all other humans, was driven by a secret weakness, and he tried to use many other temptations to test the prophet. He clad the old man in silk and offered him a thousand gifts. But Daraman was as unimpressed by the djinns' fabulous wealth as he had been unimpressed by their tortures, and he politely rejected all gifts. And when Gabel finally asked him if he did not appreciate his gifts Daraman answered \"Mylord, I am an old man who has little use for pretty baubles. And truly I have never valued a thing that could be bought for gold.\" It was then that Gabel realised that Daraman was indeed a holy man."
     },
     {
-      "key": "cpp.look.hour_one",
-      "category": "cpp",
+      "key": "book.otbm.and_so_the_conspirators_met",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "{0} hour",
-      "pl": "{0} godzina",
-      "lang": "{0} hour"
+      "en": "And so the conspirators met again in secrecy to plot the pharaoh's fall.",
+      "pl": "I tak spiskowcy spotkali się ponownie w tajemnicy, aby zaplanować upadek faraona.",
+      "lang": "And so the conspirators met again in secrecy to plot the pharaoh's fall."
     },
     {
-      "key": "cpp.look.key_fmt",
-      "category": "cpp",
+      "key": "book.otbm.and_the_lord_spake_saying",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Key:{0}",
-      "pl": "Klucz:{0}",
-      "lang": "Key:{0}"
+      "en": "And the Lord spake, saying:",
+      "pl": "I przemówił Pan, mówiąc:",
+      "lang": "And the Lord spake, saying:"
     },
     {
-      "key": "cpp.look.level_n",
-      "category": "cpp",
+      "key": "book.otbm.and_then_suddenly_the_wand",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " level {0}",
-      "pl": "poziom {0}",
-      "lang": " level {0}"
+      "en": "And then suddenly the wand of might began to glow....",
+      "pl": "I wtedy nagle różdżka mocy zaczęła świecić....",
+      "lang": "And then suddenly the wand of might began to glow...."
     },
     {
-      "key": "cpp.look.magic_shield_capacity",
-      "category": "cpp",
+      "key": "book.otbm.and_to_remedy_that_he",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "magic shield capacity",
-      "pl": "magia tarcza udźperuka",
-      "lang": "magic shield capacity"
+      "en": "And to remedy that he invented TIME!",
+      "pl": "Aby temu zaradzić, wynalazł CZAS!",
+      "lang": "And to remedy that he invented TIME!"
     },
     {
-      "key": "cpp.look.minute_one",
-      "category": "cpp",
+      "key": "book.otbm.another_factor_is_the_shipping",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "{0} minute",
-      "pl": "{0} minuta",
-      "lang": "{0} minute"
+      "en": "Another factor is the shipping dock and the woodcutting in the Venore area. Before the Edron colony was established, the Venore area was the major source for wood needed for constrution and tools. What seems odd at the first glance, given the swamp area Venore was built in becomes more understandable when considering the next factor: Until the Druids and mages drove away all those poisonous insects and creatures the area was known for its diseases and a criminal colony in the beginning. So the merchants had a steady supply of cheap workers that had to do every job appointed to.",
+      "pl": "Kolejnym czynnikiem jest dok wysyłkowy i wycinanie drzew w obszarze Venore. Przed założeniem kolonii Edron obszar Venore był głównym źródłem drewna potrzebnego do budowy i narzędzi. To, co na pierwszy rzut oka wydaje się dziwne, biorąc pod uwagę, że zabudowano obszar bagienny Venore, staje się bardziej zrozumiałe, gdy weźmie się pod uwagę kolejny czynnik: dopóki Druidzi i magowie nie wypędzili wszystkich tych jadowitych owadów i stworzeń, obszar ten był na początku znany z chorób i kolonii przestępczej. W ten sposób kupcy mieli stały dopływ tanich pracowników, którzy musieli wykonywać każdą wyznaczoną pracę.",
+      "lang": "Another factor is the shipping dock and the woodcutting in the Venore area. Before the Edron colony was established, the Venore area was the major source for wood needed for constrution and tools. What seems odd at the first glance, given the swamp area Venore was built in becomes more understandable when considering the next factor: Until the Druids and mages drove away all those poisonous insects and creatures the area was known for its diseases and a criminal colony in the beginning. So the merchants had a steady supply of cheap workers that had to do every job appointed to."
     },
     {
-      "key": "cpp.look.of",
-      "category": "cpp",
+      "key": "book.otbm.apothecary_and_holy_grounds_of",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " of ",
-      "pl": "z ",
-      "lang": " of "
+      "en": "Apothecary and Holy Grounds of the Dark Priestesses.",
+      "pl": "Aptekarz i Święte Tereny Ciemności Priestesses.",
+      "lang": "Apothecary and Holy Grounds of the Dark Priestesses."
     },
     {
-      "key": "cpp.look.of_connector",
-      "category": "cpp",
+      "key": "book.otbm.apparently_winning_uman_gave_humans",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " of",
-      "pl": "z",
-      "lang": " of"
+      "en": "apparently winning. Uman gave humans the art of magic and instructed them in the magic crafts. But even the sorcerers could",
+      "pl": "najwyraźniej zwycięski. Uman dał ludziom sztukę magii i poinstruował ich o magicznych rzemiosłach. Ale nawet czarodzieje mogli to zrobić",
+      "lang": "apparently winning. Uman gave humans the art of magic and instructed them in the magic crafts. But even the sorcerers could"
     },
     {
-      "key": "cpp.look.on_date",
-      "category": "cpp",
+      "key": "book.otbm.aquatic_life_observation_tank",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " on ",
-      "pl": "na ",
-      "lang": " on "
+      "en": "Aquatic Life Observation Tank",
+      "pl": "Zbiornik obserwacyjny życia wodnego",
+      "lang": "Aquatic Life Observation Tank"
     },
     {
-      "key": "cpp.look.or_higher",
-      "category": "cpp",
+      "key": "book.otbm.armaments_chapter_two_verses_nine",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " or higher",
-      "pl": "lub wyższy",
-      "lang": " or higher"
+      "en": "Armaments, Chapter Two, Verses Nine to Twenty-One.",
+      "pl": "Uzbrojenie, rozdział drugi, wersety od dziewiątego do dwudziestego pierwszego.",
+      "lang": "Armaments, Chapter Two, Verses Nine to Twenty-One."
     },
     {
-      "key": "cpp.look.players",
-      "category": "cpp",
+      "key": "book.otbm.armies_of_humans_they_triumphed",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "players",
-      "pl": "gracze",
-      "lang": "players"
+      "en": "armies of humans, they triumphed, but on the other battlegrounds they were too often crushed by the dark crowds.",
+      "pl": "armie ludzi zwyciężyły, ale na innych polach bitew zbyt często były miażdżone przez ciemne tłumy.",
+      "lang": "armies of humans, they triumphed, but on the other battlegrounds they were too often crushed by the dark crowds."
     },
     {
-      "key": "cpp.look.premium",
-      "category": "cpp",
+      "key": "book.otbm.armour_and_weapon_storage",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "premium ",
-      "pl": "premia ",
-      "lang": "premium "
+      "en": "Armour and Weapon Storage",
+      "pl": "Armour i Broń Magazynowanie, przechowywanie",
+      "lang": "Armour and Weapon Storage"
     },
     {
-      "key": "cpp.look.protection",
-      "category": "cpp",
+      "key": "book.otbm.as_expected_nothing_useful_could",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "protection ",
-      "pl": "ochrona, osłona ",
-      "lang": "protection "
+      "en": "As expected nothing useful could be learnt, even though the vampiric regeneration could once again be observed.",
+      "pl": "Zgodnie z oczekiwaniami nie udało się dowiedzieć niczego przydatnego, chociaż ponownie można było zaobserwować wampirzą regenerację.",
+      "lang": "As expected nothing useful could be learnt, even though the vampiric regeneration could once again be observed."
     },
     {
-      "key": "cpp.look.range",
-      "category": "cpp",
+      "key": "book.otbm.as_expected_sunlight_had_an",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Range:",
-      "pl": "Zakres:",
-      "lang": "Range:"
+      "en": "As expected sunlight had an effect on the creatures though not as severe and effective as one might wish.",
+      "pl": "Zgodnie z oczekiwaniami, światło słoneczne miało wpływ na stworzenia, choć nie tak dotkliwy i skuteczny, jak można by sobie tego życzyć.",
+      "lang": "As expected sunlight had an effect on the creatures though not as severe and effective as one might wish."
     },
     {
-      "key": "cpp.look.second_one",
-      "category": "cpp",
+      "key": "book.otbm.as_intensely_as_the_orcs",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "{0} second",
-      "pl": "{0} sekunda",
-      "lang": "{0} second"
+      "en": "As intensely as the orcs hate all other races, they share a feeling of community. The orcs can sense, to some extent, the feelings of other orcs. The shamans develop this ability to such an extent, that they can sense the innermost potential of newborn orc whelps. All newborn are tested and the shamans decide a future function in orcish society. The whelps are fed differently, raised differently, and educated differently. Wise men of other races say that such behavior is similar to some insects, such as bees, and through their empathetic bond might share a kind of 'hive-mind', so they refer to orc communities as hives. The chief of a hive owns a big harem of women who have no other function than to pleasure him and give birth to new orcs. These orcish matrons are usually incredibly big and fat, almost not able to walk on their own. Where 'normal' orcwomen function as laborer and craftwomen and give birth to two to three orcs in their lives, these female orcs are only reproductive machinery, giving birth to about six whelps each half year. Orcs are usually contend with their place in orcish society and only the leaders fight each other on purpose. Rarely will an orc raise a weapon against another orc, even if they are not of the same hive. Rivalry between hives is usually dissolved through a fight of their leaders and the victorious hive absorbs the other one. Now and then, when a new strong warrior reaches maturity he challenges the old leader for a fight of supremacy. Sometimes though, when the hive becomes too big for the area it occupies, such a warrior senses somehow that its time to move on. Then he and a few other orcs leave the hive in peace to settle somewhere else. This unique culture, together with its fertility, makes the orcs the most formidable threat to all other tibian communities.",
+      "pl": "Choć orkowie nienawidzą wszystkich innych ras, łączy ich poczucie wspólnoty. Orkowie potrafią w pewnym stopniu wyczuwać uczucia innych orków. Szamani rozwijają tę zdolność do tego stopnia, że ​​potrafią wyczuć najgłębszy potencjał nowo narodzonych orczych szczeniąt. Wszystkie noworodki są poddawane testom, a szamani decydują o ich przyszłej funkcji w społeczeństwie orków. Szczenięta są inaczej karmione, inaczej wychowywane i inaczej wychowywane. Mędrcy innych ras mówią, że takie zachowanie jest podobne do niektórych owadów, takich jak pszczoły, i poprzez ich empatyczną więź mogą dzielić coś w rodzaju 'hive-mind', dlatego nazywają społeczności orków ulami. Wódz ula posiada duży harem kobiet, których jedynym zadaniem jest sprawianie mu przyjemności i rodzenie nowych orków. Te orkowe matrony są zazwyczaj niewiarygodnie duże i grube, prawie nie są w stanie samodzielnie chodzić. Tam, gdzie 'normal' orki działają jako robotnice i rzemieślniczki i rodzą od dwóch do trzech orków w swoim życiu, te samice orków są jedynie maszyną reprodukcyjną, rodząc około sześciu młodych co pół roku. Orkowie zazwyczaj walczą o swoje miejsce w społeczeństwie orków i tylko przywódcy walczą między sobą celowo. Rzadko ork podnosi broń przeciwko innemu orkowi, nawet jeśli nie należą oni do tego samego ula. Rywalizacja między rojami zwykle zostaje rozwiązana poprzez walkę ich przywódców, a zwycięski ul wchłonie drugiego. Od czasu do czasu, gdy nowy silny wojownik osiąga dojrzałość, rzuca wyzwanie staremu przywódcy w walce o dominację. Czasami jednak, gdy ul staje się zbyt duży w stosunku do zajmowanego obszaru, taki wojownik w jakiś sposób wyczuwa, że ​​nadszedł czas, aby ruszyć dalej. Następnie on i kilka innych orków opuszczają ul w spokoju i osiedlają się gdzie indziej. Ta wyjątkowa kultura, wraz z jej płodnością, czyni orków najpotężniejszym zagrożeniem dla wszystkich innych społeczności Tibii.",
+      "lang": "As intensely as the orcs hate all other races, they share a feeling of community. The orcs can sense, to some extent, the feelings of other orcs. The shamans develop this ability to such an extent, that they can sense the innermost potential of newborn orc whelps. All newborn are tested and the shamans decide a future function in orcish society. The whelps are fed differently, raised differently, and educated differently. Wise men of other races say that such behavior is similar to some insects, such as bees, and through their empathetic bond might share a kind of 'hive-mind', so they refer to orc communities as hives. The chief of a hive owns a big harem of women who have no other function than to pleasure him and give birth to new orcs. These orcish matrons are usually incredibly big and fat, almost not able to walk on their own. Where 'normal' orcwomen function as laborer and craftwomen and give birth to two to three orcs in their lives, these female orcs are only reproductive machinery, giving birth to about six whelps each half year. Orcs are usually contend with their place in orcish society and only the leaders fight each other on purpose. Rarely will an orc raise a weapon against another orc, even if they are not of the same hive. Rivalry between hives is usually dissolved through a fight of their leaders and the victorious hive absorbs the other one. Now and then, when a new strong warrior reaches maturity he challenges the old leader for a fight of supremacy. Sometimes though, when the hive becomes too big for the area it occupies, such a warrior senses somehow that its time to move on. Then he and a few other orcs leave the hive in peace to settle somewhere else. This unique culture, together with its fertility, makes the orcs the most formidable threat to all other tibian communities."
     },
     {
-      "key": "cpp.look.speed_label",
-      "category": "cpp",
+      "key": "book.otbm.as_intensely_as_the_orcs_6bef4fc7",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "speed",
-      "pl": "szybkość",
-      "lang": "speed"
+      "en": "As intensely as the orcs hate all other races, they share a feeling of community. The orcs can sense, to some extent, the feelings of other orcs. The shamans develop this ability to such an extent, that they can sense the innermost potential of newborn orc whelps. All newborn are tested and the shamans decide a future function in orcish society. The whelps are fed differently, raised differently, and educated differently. Wise men of other races say that such behavior is similar to some insects, such as bees, and through their empathetic bond might share a kind of 'hive-mind', so they refer to orc communities as hives. The chief of a hive owns a big harem of women who have no other function than to pleasure him and give birth to new orcs. These orcish matrons are usually incredibly big and fat, almost not able to walk on their own. Where 'normal' orcwomen function as laborer and craftwomen and give birth to two to three orcs in their lives, these female orcs are only reproductive machinery, giving birth to about six whelps each half year. Orcs are usually contend with their place in orcish society and only the leaders fight each other on purpose. Rarely will an orc raise a weapon against another orc, even if they are not of the same hive. Rivalry between hives is usually dissolved through a fight of their leaders and the victorious hive absorbs the other one. Now and then, when a new strong warrior reaches maturity he challenges the old leader for a fight of supremacy. Sometimes though, when the hive becomes too big for the area it occupies, such a warrior senses somehow that its time to move on. Then he and a few other orcs leave the hive in peace to settle somewhere else. This unique culture, together with its fertility, makes the orcs the most formidable threat to all other tibian communities.",
+      "pl": "Choć orkowie nienawidzą wszystkich innych ras, łączy ich poczucie wspólnoty. Orkowie potrafią w pewnym stopniu wyczuwać uczucia innych orków. Szamani rozwijają tę zdolność do tego stopnia, że ​​potrafią wyczuć najgłębszy potencjał nowo narodzonych orczych szczeniąt. Wszystkie noworodki są poddawane testom, a szamani decydują o ich przyszłej funkcji w społeczeństwie orków. Szczenięta są inaczej karmione, inaczej wychowywane i inaczej wychowywane. Mędrcy innych ras mówią, że takie zachowanie jest podobne do niektórych owadów, takich jak pszczoły, i poprzez ich empatyczną więź mogą dzielić coś w rodzaju 'hive-mind', dlatego nazywają społeczności orków ulami. Wódz ula posiada duży harem kobiet, których jedynym zadaniem jest sprawianie mu przyjemności i rodzenie nowych orków. Te orkowe matrony są zazwyczaj niewiarygodnie duże i grube, prawie nie są w stanie samodzielnie chodzić. Tam, gdzie 'normal' orki działają jako robotnice i rzemieślniczki i rodzą od dwóch do trzech orków w swoim życiu, te samice orków są jedynie maszyną reprodukcyjną, rodząc około sześciu młodych co pół roku. Orkowie zazwyczaj walczą o swoje miejsce w społeczeństwie orków i tylko przywódcy walczą między sobą celowo. Rzadko ork podnosi broń przeciwko innemu orkowi, nawet jeśli nie należą oni do tego samego ula. Rywalizacja między rojami zwykle zostaje rozwiązana poprzez walkę ich przywódców, a zwycięski ul wchłonie drugiego. Od czasu do czasu, gdy nowy silny wojownik osiąga dojrzałość, rzuca wyzwanie staremu przywódcy w walce o dominację. Czasami jednak, gdy ul staje się zbyt duży w stosunku do zajmowanego obszaru, taki wojownik w jakiś sposób wyczuwa, że ​​nadszedł czas, aby ruszyć dalej. Następnie on i kilka innych orków opuszczają ul w spokoju i osiedlają się gdzie indziej. Ta wyjątkowa kultura, wraz z jej płodnością, czyni orków najpotężniejszym zagrożeniem dla wszystkich innych społeczności Tibii.",
+      "lang": "As intensely as the orcs hate all other races, they share a feeling of community. The orcs can sense, to some extent, the feelings of other orcs. The shamans develop this ability to such an extent, that they can sense the innermost potential of newborn orc whelps. All newborn are tested and the shamans decide a future function in orcish society. The whelps are fed differently, raised differently, and educated differently. Wise men of other races say that such behavior is similar to some insects, such as bees, and through their empathetic bond might share a kind of 'hive-mind', so they refer to orc communities as hives. The chief of a hive owns a big harem of women who have no other function than to pleasure him and give birth to new orcs. These orcish matrons are usually incredibly big and fat, almost not able to walk on their own. Where 'normal' orcwomen function as laborer and craftwomen and give birth to two to three orcs in their lives, these female orcs are only reproductive machinery, giving birth to about six whelps each half year. Orcs are usually contend with their place in orcish society and only the leaders fight each other on purpose. Rarely will an orc raise a weapon against another orc, even if they are not of the same hive. Rivalry between hives is usually dissolved through a fight of their leaders and the victorious hive absorbs the other one. Now and then, when a new strong warrior reaches maturity he challenges the old leader for a fight of supremacy. Sometimes though, when the hive becomes too big for the area it occupies, such a warrior senses somehow that its time to move on. Then he and a few other orcs leave the hive in peace to settle somewhere else. This unique culture, together with its fertility, makes the orcs the most formidable threat to all other tibian communities."
     },
     {
-      "key": "cpp.look.tier_ruse",
-      "category": "cpp",
+      "key": "book.otbm.as_long_as_the_pits",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "{0}% Ruse",
-      "pl": "{0}% Podstęp",
-      "lang": "{0}% Ruse"
+      "en": "As long as the pits were defended by the Nightmare Knights, who must have known previously when an eruption would occur, the demons could be fought back while they were still materialising and thus, most vulnerable. Now that the pits are lost and overrun by demonic hordes, an attack becomes more and more likely.",
+      "pl": "Tak długo, jak doły były bronione przez Rycerzy Koszmaru, którzy musieli wiedzieć wcześniej, kiedy nastąpi erupcja, demony można było odeprzeć, gdy jeszcze się materializowały, a zatem były najbardziej bezbronne. Teraz, gdy doły zostały zagubione i opanowane przez hordy demonów, atak staje się coraz bardziej prawdopodobny.",
+      "lang": "As long as the pits were defended by the Nightmare Knights, who must have known previously when an eruption would occur, the demons could be fought back while they were still materialising and thus, most vulnerable. Now that the pits are lost and overrun by demonic hordes, an attack becomes more and more likely."
     },
     {
-      "key": "cpp.look.unknown",
-      "category": "cpp",
+      "key": "book.otbm.as_long_as_there_are",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
+      "en": "As long as there are enough minions to boost the negative energy of a place, demons can exist for a very long time in our realm. So in theory, it would also be possible that the gate between the two realms is kept open, allowing more and more demons to enter our world that can easily form a demonic army causing mayhem and havoc.",
+      "pl": "Dopóki jest wystarczająca liczba sług, aby zwiększyć negatywną energię danego miejsca, demony mogą istnieć w naszym królestwie przez bardzo długi czas. Zatem teoretycznie możliwe byłoby również, że brama między dwoma królestwami pozostanie otwarta, umożliwiając coraz większej liczbie demonów wkraczanie do naszego świata, które z łatwością mogą utworzyć demoniczną armię siejącą chaos i spustoszenie.",
+      "lang": "As long as there are enough minions to boost the negative energy of a place, demons can exist for a very long time in our realm. So in theory, it would also be possible that the gate between the two realms is kept open, allowing more and more demons to enter our world that can easily form a demonic army causing mayhem and havoc."
     },
     {
-      "key": "cpp.look.vol",
-      "category": "cpp",
+      "key": "book.otbm.as_the_king_became_sick",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Vol:",
-      "pl": "Tom:",
-      "lang": "Vol:"
+      "en": "As the king became sick and no one was able to heal him, the traitor stepped forward with a strange medicine. Trusting in his beloved servant, the king drank the medicine which actually was the blood of some servant that had been murdered recently. The medicine seemed to restore the king's strength, so the traitor had no trouble to feed him with more blood. Soon the king's appearance started to change. His aversion to sunlight and his paleness were attributed to his illness, but also the king's temper and behaviour turned more and more violent and aggressive. Nonetheless, the people loved their king and put up with his moods.",
+      "pl": "Gdy król zachorował i nikt nie był w stanie go uleczyć, zdrajca wystąpił z dziwnym lekarstwem. Ufając swemu ukochanemu słudze, król wypił lekarstwo, które w rzeczywistości było krwią jakiegoś niedawno zamordowanego sługi. Lekarstwo zdawało się przywracać królowi siły, więc zdrajca nie miał problemu z nakarmieniem go większą ilością krwi. Wkrótce wygląd króla zaczął się zmieniać. Jego niechęć do światła słonecznego i bladość przypisywano chorobie, ale także temperament i zachowanie króla stawały się coraz bardziej gwałtowne i agresywne. Niemniej jednak lud kochał swego króla i tolerował jego nastroje.",
+      "lang": "As the king became sick and no one was able to heal him, the traitor stepped forward with a strange medicine. Trusting in his beloved servant, the king drank the medicine which actually was the blood of some servant that had been murdered recently. The medicine seemed to restore the king's strength, so the traitor had no trouble to feed him with more blood. Soon the king's appearance started to change. His aversion to sunlight and his paleness were attributed to his illness, but also the king's temper and behaviour turned more and more violent and aggressive. Nonetheless, the people loved their king and put up with his moods."
     },
     {
-      "key": "cpp.look.with",
-      "category": "cpp",
+      "key": "book.otbm.as_the_orcs_approached_ive",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " with",
-      "pl": "z",
-      "lang": " with"
+      "en": "As the orcs approached I've hidden myself in the bushes near the lake. I did hardly dare to breath as they met only some inches from my nose. I thought my wild beating heart might betray me to this murderous beasts.",
+      "pl": "Gdy orki się zbliżyły, ukryłem się w krzakach w pobliżu jeziora. Ledwo odważyłam się oddychać, ponieważ stykali się zaledwie kilka centymetrów od mojego nosa. Myślałam, że moje dziko bijące serce może mnie zdradzić tym morderczym bestiom.",
+      "lang": "As the orcs approached I've hidden myself in the bushes near the lake. I did hardly dare to breath as they met only some inches from my nose. I thought my wild beating heart might betray me to this murderous beasts."
     },
     {
-      "key": "cpp.look.wrote",
-      "category": "cpp",
+      "key": "book.otbm.as_we_travelled_through_the",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " wrote",
-      "pl": "wrote",
-      "lang": " wrote"
+      "en": "As we travelled through the dungeon tunnels we came to a big cave. In the light of our torches we saw several eyes glowing in the darkness, then the trolls attacked, silently as usual. We immediately dropped our torches and raised our shields to block the first attack, then we counterattacked. Soon the floor was wet with blood, ours and theirs. They were very skilled in blocking our blows and I am sure with inferior weapons we would have hacked on these beasts for an eternity.",
+      "pl": "Gdy podróżowaliśmy tunelami lochów, dotarliśmy do dużej jaskini. W świetle naszych pochodni widzieliśmy kilka oczu świecących w ciemności, po czym trolle zaatakowały, jak zwykle cicho. Natychmiast opuściliśmy pochodnie i podnieśliśmy tarcze, aby zablokować pierwszy atak, po czym przystąpiliśmy do kontrataku. Wkrótce podłoga była mokra od krwi, naszej i ich. Byli bardzo uzdolnieni w blokowaniu naszych ciosów i jestem pewien, że przy użyciu gorszej broni siekalibyśmy te bestie przez całą wieczność.",
+      "lang": "As we travelled through the dungeon tunnels we came to a big cave. In the light of our torches we saw several eyes glowing in the darkness, then the trolls attacked, silently as usual. We immediately dropped our torches and raised our shields to block the first attack, then we counterattacked. Soon the floor was wet with blood, ours and theirs. They were very skilled in blocking our blows and I am sure with inferior weapons we would have hacked on these beasts for an eternity."
     },
     {
-      "key": "cpp.look.you_read",
-      "category": "cpp",
+      "key": "book.otbm.as_with_other_tests_it",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You read: ",
-      "pl": "Ty czytać, przeczytać: ",
-      "lang": "You read: "
+      "en": "As with other tests it could be observed that the vampires have the ability of regeneration but not of regrowth.",
+      "pl": "Podobnie jak w przypadku innych testów, można było zaobserwować, że wampiry mają zdolność regeneracji, ale nie ponownego wzrostu.",
+      "lang": "As with other tests it could be observed that the vampires have the ability of regeneration but not of regrowth."
     },
     {
-      "key": "cpp.look.you_see",
-      "category": "cpp",
+      "key": "book.otbm.ask_for_the_different_goods",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You see ",
-      "pl": "Widzisz ",
-      "lang": "You see "
+      "en": "Ask for the different goods you need.",
+      "pl": "Zapytaj o różne potrzebne towary.",
+      "lang": "Ask for the different goods you need."
     },
     {
-      "key": "cpp.player.corpse_and",
-      "category": "cpp",
+      "key": "book.otbm.ask_muriel_to_learn_spells",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " and {0}",
-      "pl": "i {0}",
-      "lang": " and {0}"
+      "en": "Ask Muriel to learn spells or to",
+      "pl": "Poproś Muriel, aby nauczyła się zaklęć lub aby to zrobiła",
+      "lang": "Ask Muriel to learn spells or to"
     },
     {
-      "key": "cpp.player.corpse_and_others",
-      "category": "cpp",
+      "key": "book.otbm.at_a_store_sell_spare",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " and others",
-      "pl": "i drugi, pozostały",
-      "lang": " and others"
+      "en": "at a store. Sell spare food at the farm.",
+      "pl": "w sklepie. Sprzedawaj zapasową żywność na farmie.",
+      "lang": "at a store. Sell spare food at the farm."
     },
     {
-      "key": "cpp.player.exp_animus_bonus",
-      "category": "cpp",
+      "key": "book.otbm.at_last_even_baaleal_who",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": " (animus mastery bonus {0}%)",
-      "pl": "(animus biegłość premia {0}%)",
-      "lang": " (animus mastery bonus {0}%)"
+      "en": "At last even Baa'leal, who led the Efreet in battle, had to admit that the Marid and their despised human allies fought valiantly. However, despite the heavy losses he was determined to decide the war there and now. He summoned the most powerful Efreet wizards and ordered them to unleash a huge column of magic fire onto Ankrahmun in order to render the city and all those in it to cinders. The Efreet wizards' followed his orders and soon a wall of devastating fire rose up to the sky. However, when they tried to move it onto Ankrahmun they soon realised that it did not move into the desired direction. The Marid had soon seen through Baa'leals plan, and Fa'hradin and his fellow Marid mages used their own magic to turn the devastating flames against their creators. A fierce battle of wills ensued between the mages from both sides, and the whole battle came to a halt when the two armies watched in horrified fascination as the terrible pile of flames wandered seemingly undecided to and fro. But then, all of a sudden, the pile made a sudden leap to the north, and within seconds those who had summoned it from the sky were reduced to smouldering ashes. That was the turning point of the great battle.",
+      "pl": "W końcu nawet Baa'leal, który dowodził Efreetami w bitwie, musiał przyznać, że Maridowie i ich pogardzani ludzcy sojusznicy walczyli dzielnie. Jednak pomimo ciężkich strat był zdecydowany rozstrzygnąć wojnę tu i teraz. Przywołał najpotężniejszych czarodziejów Efreetów i rozkazał im wyzwolić ogromną kolumnę magicznego ognia na Ankrahmun, aby obrócić miasto i wszystkich w nim w popiół. Czarodzieje Efreetów wykonali jego rozkazy i wkrótce w niebo wzniosła się ściana niszczycielskiego ognia. Jednakże, gdy próbowali przenieść go na Ankrahmun, szybko zdali sobie sprawę, że nie poruszał się on w pożądanym kierunku. Maridowie wkrótce przejrzeli plan Baa'lealsa, a Fa'hradin i jego towarzysze magowie Maridowie użyli własnej magii, aby zwrócić niszczycielskie płomienie przeciwko swoim twórcom. Pomiędzy magami z obu stron doszło do zaciekłej bitwy woli, a cała bitwa została zatrzymana, gdy obie armie patrzyły z przerażającą fascynacją, jak straszliwy stos płomieni wędruje tam i z powrotem, pozornie niezdecydowany. Ale nagle stos skoczył na północ i w ciągu kilku sekund ci, którzy go wezwali z nieba, zostali zamienieni w tlący się popiół. To był punkt zwrotny wielkiej bitwy.",
+      "lang": "At last even Baa'leal, who led the Efreet in battle, had to admit that the Marid and their despised human allies fought valiantly. However, despite the heavy losses he was determined to decide the war there and now. He summoned the most powerful Efreet wizards and ordered them to unleash a huge column of magic fire onto Ankrahmun in order to render the city and all those in it to cinders. The Efreet wizards' followed his orders and soon a wall of devastating fire rose up to the sky. However, when they tried to move it onto Ankrahmun they soon realised that it did not move into the desired direction. The Marid had soon seen through Baa'leals plan, and Fa'hradin and his fellow Marid mages used their own magic to turn the devastating flames against their creators. A fierce battle of wills ensued between the mages from both sides, and the whole battle came to a halt when the two armies watched in horrified fascination as the terrible pile of flames wandered seemingly undecided to and fro. But then, all of a sudden, the pile made a sudden leap to the north, and within seconds those who had summoned it from the sky were reduced to smouldering ashes. That was the turning point of the great battle."
     },
     {
-      "key": "cpp.player.list_and",
-      "category": "cpp",
+      "key": "book.otbm.at_last_malor_prepared_for",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "and ",
-      "pl": "i ",
-      "lang": "and "
+      "en": "At last, Malor prepared for a decisive strike. He sent a messenger to Gabel and challenged him to a personal duel. Gabel, who was prepared to do anything to stop the fratricidal war, accepted the challenge. The enemies agreed to meet in the fertile plains of Kha'labal. There they stood, face to face, the old king and the usurper, and so did their armies, because neither of two was gullible or foolish enough to come on his own. It was the greatest gathering of djinns in recorded history.",
+      "pl": "Wreszcie Malor przygotował się do zdecydowanego uderzenia. Wysłał posłańca do Gabela i wyzwał go na osobisty pojedynek. Gabel, który był gotowy zrobić wszystko, aby położyć kres bratobójczej wojnie, przyjął wyzwanie. Wrogowie zgodzili się spotkać na żyznych równinach Kha'labal. Stali tam twarzą w twarz, stary król i uzurpator, podobnie jak ich armie, ponieważ żaden z nich nie był na tyle naiwny ani głupi, aby przyjść sam. Było to największe zgromadzenie dżinów w historii.",
+      "lang": "At last, Malor prepared for a decisive strike. He sent a messenger to Gabel and challenged him to a personal duel. Gabel, who was prepared to do anything to stop the fratricidal war, accepted the challenge. The enemies agreed to meet in the fertile plains of Kha'labal. There they stood, face to face, the old king and the usurper, and so did their armies, because neither of two was gullible or foolish enough to come on his own. It was the greatest gathering of djinns in recorded history."
     },
     {
-      "key": "cpp.player.list_delimiter",
-      "category": "cpp",
+      "key": "book.otbm.at_last_we_trapped_hugo",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": ", ",
-      "pl": ", ",
-      "lang": ", "
+      "en": "At last we trapped Hugo in the dungeon cellars!",
+      "pl": "W końcu uwięziliśmy Hugo w piwnicach lochów!",
+      "lang": "At last we trapped Hugo in the dungeon cellars!"
     },
     {
-      "key": "cpp.player.look.article_a",
-      "category": "cpp",
+      "key": "book.otbm.at_last_we_will_face",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "a",
-      "pl": "jeden",
-      "lang": "a"
+      "en": "At last we will face Goshnar the evil one!",
+      "pl": "W końcu zmierzymy się ze złym Goshnarem!",
+      "lang": "At last we will face Goshnar the evil one!"
     },
     {
-      "key": "cpp.player.look.article_an",
-      "category": "cpp",
+      "key": "book.otbm.at_least_a_leather_armor",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "an",
-      "pl": "jeden",
-      "lang": "an"
+      "en": "at least a leather armor and a helmet, a wooden shield, and a short sword.",
+      "pl": "przynajmniej skórzaną zbroję i hełm, drewnianą tarczę i krótki miecz.",
+      "lang": "at least a leather armor and a helmet, a wooden shield, and a short sword."
     },
     {
-      "key": "cpp.player.look.guild_prefix_self",
-      "category": "cpp",
+      "key": "book.otbm.at_one_faraway_point_in",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "You are",
-      "pl": "Jesteś",
-      "lang": "You are"
+      "en": "At one far-away point in history, the Yalahari seemingly vanished. Certain clues that our ancestors gathered, hint that they locked themselves in the city's centre and cut off all contact to their helpers. When the Augur sometime later dared to enter the inner city, the Yalahari were all gone - vanished without a trace. After getting over the initial shock, the Augur assumed the role of the Yalahari themselves. For a while they tried to get familiar with some of the secrets of their lost masters, but they were only able to understand the most basic concepts of the Yalahari's knowledge. They stuck to their usual tasks to keep the city running. Still, they were too few to keep the enormous city, of which they understood so little, in shape.",
+      "pl": "W pewnym odległym momencie historii Yalahari pozornie zniknęli. Pewne wskazówki, które zebrali nasi przodkowie, wskazują, że zamknęli się w centrum miasta i odcięli wszelki kontakt ze swoimi pomocnikami. Kiedy jakiś czas później Augur odważył się wkroczyć do centrum miasta, wszyscy Yalahari zniknęli – zniknęli bez śladu. Po otrząsnięciu się z początkowego szoku, Augur przyjął rolę samych Yalahari. Przez jakiś czas próbowali poznać niektóre tajemnice swoich zaginionych mistrzów, ale byli w stanie zrozumieć jedynie najbardziej podstawowe pojęcia wiedzy Yalahari. Trzymali się swoich zwykłych zadań, aby utrzymać miasto w ruchu. Było ich jednak za mało, aby utrzymać w dobrym stanie ogromne miasto, o którym tak mało rozumieli.",
+      "lang": "At one far-away point in history, the Yalahari seemingly vanished. Certain clues that our ancestors gathered, hint that they locked themselves in the city's centre and cut off all contact to their helpers. When the Augur sometime later dared to enter the inner city, the Yalahari were all gone - vanished without a trace. After getting over the initial shock, the Augur assumed the role of the Yalahari themselves. For a while they tried to get familiar with some of the secrets of their lost masters, but they were only able to understand the most basic concepts of the Yalahari's knowledge. They stuck to their usual tasks to keep the city running. Still, they were too few to keep the enormous city, of which they understood so little, in shape."
     },
     {
-      "key": "cpp.player.look.level_fmt",
-      "category": "cpp",
+      "key": "book.otbm.at_the_bottom_of_those",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Level {0}",
-      "pl": "poziom {0}",
-      "lang": "Level {0}"
+      "en": "at the bottom of those pages*",
+      "pl": "na dole tych stron*",
+      "lang": "at the bottom of those pages*"
     },
     {
-      "key": "cpp.player.look.self",
-      "category": "cpp",
+      "key": "book.otbm.at_the_great_bay_east",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "yourself",
-      "pl": "siebie",
-      "lang": "yourself"
+      "en": "At the great bay, east of Thais lies a rotten town of criminals. Little is known about it and only the most ruthles people even think about travelling there.",
+      "pl": "W Wielkiej Zatoce, na wschód od Thais leży zgniłe miasto przestępców. Niewiele o nim wiadomo i tylko najbardziej bezwzględni ludzie w ogóle myślą o wyjeździe tam.",
+      "lang": "At the great bay, east of Thais lies a rotten town of criminals. Little is known about it and only the most ruthles people even think about travelling there."
     },
     {
-      "key": "cpp.player.look.verb_vip",
-      "category": "cpp",
+      "key": "book.otbm.attempts_uman_consented_only_too",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "{0} VIP.",
-      "pl": "{0} BARDZO WAŻNA OSOBA.",
-      "lang": "{0} VIP."
+      "en": "attempts. Uman consented only too readily, but Zathroth, the dark one of the twins, refused himself. Thus Fardos and Uman",
+      "pl": "próbowanie. Uman zgodził się zbyt chętnie, ale Zathroth, ciemny z bliźniaków, sam odmówił. Zatem Fardos i Uman",
+      "lang": "attempts. Uman consented only too readily, but Zathroth, the dark one of the twins, refused himself. Thus Fardos and Uman"
     },
     {
-      "key": "cpp.protocol.level_label",
-      "category": "cpp",
+      "key": "book.otbm.attention_this_area_is_considered",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Level",
-      "pl": "Poziom",
-      "lang": "Level"
+      "en": "ATTENTION: This area is considered evil and deemed restricted by direct decree of the inquisition. We cannot spare any men to guard this passage to keep outsiders from venturing deeper into the island but, know this: next to none of our own",
+      "pl": "UWAGA: Ten obszar jest uważany za zły i ograniczony bezpośrednim dekretem inkwizycji. Nie możemy oszczędzić żadnych ludzi do pilnowania tego przejścia, aby powstrzymać osoby z zewnątrz przed zapuszczaniem się w głąb wyspy, ale wiedzcie jedno: prawie nikt z naszych",
+      "lang": "ATTENTION: This area is considered evil and deemed restricted by direct decree of the inquisition. We cannot spare any men to guard this passage to keep outsiders from venturing deeper into the island but, know this: next to none of our own"
     },
     {
-      "key": "cpp.protocol.married_to_label",
-      "category": "cpp",
+      "key": "book.otbm.attention_toad_is_spitting",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Married to",
-      "pl": "Żonaty, zamężna do",
-      "lang": "Married to"
+      "en": "ATTENTION: TOAD IS SPITTING",
+      "pl": "UWAGA: ROPUCHA JEST SPITTING",
+      "lang": "ATTENTION: TOAD IS SPITTING"
     },
     {
-      "key": "cpp.protocol.outfit_label",
-      "category": "cpp",
+      "key": "book.otbm.authorised_personnel_only",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Outfit",
-      "pl": "Strój",
-      "lang": "Outfit"
+      "en": "Authorised Personnel only!",
+      "pl": "Authorised Personel, obsługa tylko!",
+      "lang": "Authorised Personnel only!"
     },
     {
-      "key": "cpp.protocol.resting_active_bonuses",
-      "category": "cpp",
+      "key": "book.otbm.awakened_the_old_races_and",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Active Resting Area Bonuses:\n{0}.",
-      "pl": "Aktywni Resting Obszar, region Premia:\n{0}.",
-      "lang": "Active Resting Area Bonuses:\n{0}."
+      "en": "awakened the old races and old frights back to life. It is said that the city of Tibia was the first to rise again, barren of almost all",
+      "pl": "obudził do życia stare rasy i stare strachy. Mówi się, że miasto Tibia jako pierwsze podniosło się na nowo, pozbawione prawie wszystkiego",
+      "lang": "awakened the old races and old frights back to life. It is said that the city of Tibia was the first to rise again, barren of almost all"
     },
     {
-      "key": "cpp.protocol.support_outfit_gamemaster",
-      "category": "cpp",
+      "key": "book.otbm.bad_side_for_a_long",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Gamemaster",
-      "pl": "Mistrz Gry",
-      "lang": "Gamemaster"
+      "en": "bad side. For a long time they manipulated and pulled on the essence of Uman-Zathroth, but only to detect that this unitity was",
+      "pl": "zła strona. Przez długi czas manipulowali i wyciągali esencję Umana-Zathrotha, ale tylko po to, by odkryć, że ta jedność była",
+      "lang": "bad side. For a long time they manipulated and pulled on the essence of Uman-Zathroth, but only to detect that this unitity was"
     },
     {
-      "key": "cpp.protocol.tentugly_name",
-      "category": "cpp",
+      "key": "book.otbm.banana_cherry_grapes_melon_carrot",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Tentugly",
-      "pl": "Delikatnie",
-      "lang": "Tentugly"
+      "en": "banana, cherry, grapes, melon, carrot, cookie, roll, brown bread, egg, cheese",
+      "pl": "banan, wiśnia, winogrona, melon, marchewka, ciastko, bułka, ciemny chleb, jajko, ser",
+      "lang": "banana, cherry, grapes, melon, carrot, cookie, roll, brown bread, egg, cheese"
     },
     {
-      "key": "cpp.protocol.unknown_label",
-      "category": "cpp",
+      "key": "book.otbm.banor_however_chose_the_noblest",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
+      "en": "Banor however chose the noblest of the mortal ones, Kirana, as its wife, and she bore him Elane, which possessed as much",
+      "pl": "Banor jednak wybrał najszlachetniejszą ze śmiertelniczek, Kiranę, na swoją żonę, a ona urodziła mu Elane, która posiadała tyle samo",
+      "lang": "Banor however chose the noblest of the mortal ones, Kirana, as its wife, and she bore him Elane, which possessed as much"
     },
     {
-      "key": "cpp.protocol.vocation_all",
-      "category": "cpp",
+      "key": "book.otbm.banor_i_praise_your_name",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "(all)",
-      "pl": "(wszystkie)",
-      "lang": "(all)"
+      "en": "Banor I praise your name.",
+      "pl": "Banor, wysławiam Twoje imię.",
+      "lang": "Banor I praise your name."
     },
     {
-      "key": "cpp.protocol.vocation_label",
-      "category": "cpp",
+      "key": "book.otbm.basement_souterrain_training_statues",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Vocation",
-      "pl": "Profesja",
-      "lang": "Vocation"
+      "en": "Basement (souterrain): Training Statues",
+      "pl": "Suterena (souterrain): Trening Posąg",
+      "lang": "Basement (souterrain): Training Statues"
     },
     {
-      "key": "cpp.returnvalue.no_error",
-      "category": "cpp",
+      "key": "book.otbm.basement_the_trading_room_training",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "No error.",
-      "pl": "Nie błąd.",
-      "lang": "No error."
+      "en": "Basement - The Trading Room, Training Center and Bank",
+      "pl": "Piwnica – Sala Handlowa, Centrum Szkoleniowe i Bank",
+      "lang": "Basement - The Trading Room, Training Center and Bank"
     },
     {
-      "key": "cpp.skill.fishing",
-      "category": "cpp",
+      "key": "book.otbm.basic_spells_for_apprentices",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "fishing",
-      "pl": "Rybacki",
-      "lang": "fishing"
+      "en": "Basic spells for apprentices.",
+      "pl": "Podstawowy zaklęCentalna Agencja Wywiadowcza dla terminator, praktykant.",
+      "lang": "Basic spells for apprentices."
     },
     {
-      "key": "cpp.skill.level",
-      "category": "cpp",
+      "key": "book.otbm.bastesh_allowed_him_to_enter",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "level",
-      "pl": "poziom",
-      "lang": "level"
+      "en": "Bastesh allowed him to enter her realm in his early years",
+      "pl": "Bastesh pozwoliła mu wejść do swojego królestwa we wczesnych latach",
+      "lang": "Bastesh allowed him to enter her realm in his early years"
     },
     {
-      "key": "cpp.skill.life_leech",
-      "category": "cpp",
+      "key": "book.otbm.basteth_wanted_to_come_to",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "life leech",
-      "pl": "Życie Lecha",
-      "lang": "life leech"
+      "en": "Basteth wanted to come to aid her cousin, but her creatures, large and dreadful as they were simply could not walk ashore.",
+      "pl": "Basteth chciała przybyć na pomoc swojej kuzynce, ale jej stworzenia, choć duże i straszne, po prostu nie mogły zejść na brzeg.",
+      "lang": "Basteth wanted to come to aid her cousin, but her creatures, large and dreadful as they were simply could not walk ashore."
     },
     {
-      "key": "cpp.skill.mana_leech",
-      "category": "cpp",
+      "key": "book.otbm.battle_tactics_for_demona",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "mana leech",
-      "pl": "mana pijawka",
-      "lang": "mana leech"
+      "en": "Battle tactics for Demona",
+      "pl": "Taktyka walki dla Demona",
+      "lang": "Battle tactics for Demona"
     },
     {
-      "key": "cpp.skill.shielding",
-      "category": "cpp",
+      "key": "book.otbm.battle_tactics_for_demona_mazeforces",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "shielding",
-      "pl": "Zastawianie",
-      "lang": "shielding"
+      "en": "Battle tactics for Demona - Mazeforces",
+      "pl": "Taktyka walki dla Demona - Mazeforces",
+      "lang": "Battle tactics for Demona - Mazeforces"
     },
     {
-      "key": "cpp.skill.unknown",
-      "category": "cpp",
+      "key": "book.otbm.battletactics_for_mages_i",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "unknown",
-      "pl": "unkNiewn",
-      "lang": "unknown"
+      "en": "Battletactics for Mages [I]",
+      "pl": "Taktyka bojowa dla magów [I]",
+      "lang": "Battletactics for Mages [I]"
     },
     {
-      "key": "cpp.title.desc_70",
-      "category": "cpp",
+      "key": "book.otbm.battletactics_for_mages_ii",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Invested 160,000 tasks points.",
-      "pl": "Inwestować 160,000 zadanie, zajęcie points.",
-      "lang": "Invested 160,000 tasks points."
+      "en": "Battletactics for Mages [II]",
+      "pl": "Taktyka bojowa dla magów [II]",
+      "lang": "Battletactics for Mages [II]"
     },
     {
-      "key": "cpp.title.desc_71",
-      "category": "cpp",
+      "key": "book.otbm.battletactics_for_mages_iii",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Invested 320,000 tasks points.",
-      "pl": "Inwestować 320,000 zadanie, zajęcie points.",
-      "lang": "Invested 320,000 tasks points."
+      "en": "Battletactics for Mages [III]",
+      "pl": "Taktyka bojowa dla magów [III]",
+      "lang": "Battletactics for Mages [III]"
     },
     {
-      "key": "cpp.title.desc_72",
-      "category": "cpp",
+      "key": "book.otbm.battletactics_for_mages_iv",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Invested 430,000 tasks points.",
-      "pl": "Inwestować 430,000 zadanie, zajęcie points.",
-      "lang": "Invested 430,000 tasks points."
+      "en": "Battletactics for Mages [IV]",
+      "pl": "Taktyka bojowa dla magów [IV]",
+      "lang": "Battletactics for Mages [IV]"
     },
     {
-      "key": "cpp.title.desc_85",
-      "category": "cpp",
+      "key": "book.otbm.be_aware_that_our_kind",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Reached 2000 charm points. Quite beastly!",
-      "pl": "Osiągnięto 2000 punktów uroku. Całkiem bestialski!",
-      "lang": "Reached 2000 charm points. Quite beastly!"
+      "en": "Be aware that our kind mastered the art of tunnelling. It may take you a whole life to understand the techniques that are used and it takes generations to know all the tunnels of a mine and all their exits. You even may find an exit that you never expected to.",
+      "pl": "Bądź świadomy, że nasz gatunek opanował sztukę drążenia tuneli. Zrozumienie stosowanych technik może zająć całe życie, a poznanie wszystkich tuneli kopalni i wszystkich ich wyjść zajmuje całe pokolenia. Możesz nawet znaleźć wyjście, którego nigdy się nie spodziewałeś.",
+      "lang": "Be aware that our kind mastered the art of tunnelling. It may take you a whole life to understand the techniques that are used and it takes generations to know all the tunnels of a mine and all their exits. You even may find an exit that you never expected to."
     },
     {
-      "key": "cpp.title.desc_93",
-      "category": "cpp",
+      "key": "book.otbm.be_my_shield_let_me",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Reach 15,000 boss points.",
-      "pl": "Zdobądź 15 000 punktów bossa.",
-      "lang": "Reach 15,000 boss points."
+      "en": "Be my shield, let me be your sword.",
+      "pl": "Bądź moją tarczą, pozwól mi być Twoim mieczem.",
+      "lang": "Be my shield, let me be your sword."
     },
     {
-      "key": "cpp.title.name_10",
-      "category": "cpp",
+      "key": "book.otbm.be_polite_and_respectful_to",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Tibia's Topmodel (Grade 2)",
-      "pl": "Topmodelka Tibia (klasa 2)",
-      "lang": "Tibia's Topmodel (Grade 2)"
+      "en": "Be polite and respectful to other people you meet. Most dangers are far easier to overcome for",
+      "pl": "Zachowuj się grzecznie i okazując szacunek innym spotkanym osobom. Większość zagrożeń jest znacznie łatwiejsza do pokonania",
+      "lang": "Be polite and respectful to other people you meet. Most dangers are far easier to overcome for"
     },
     {
-      "key": "cpp.title.name_11",
-      "category": "cpp",
+      "key": "book.otbm.be_with_me_in_the",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Tibia's Topmodel (Grade 3)",
-      "pl": "Topmodelka Tibia (klasa 3)",
-      "lang": "Tibia's Topmodel (Grade 3)"
+      "en": "Be with me in the battle.",
+      "pl": "Bądź ze mną w bitwie.",
+      "lang": "Be with me in the battle."
     },
     {
-      "key": "cpp.title.name_12",
-      "category": "cpp",
+      "key": "book.otbm.because_the_gods_wanted_to",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Tibia's Topmodel (Grade 4)",
-      "pl": "Topmodelka Tibia (klasa 4)",
-      "lang": "Tibia's Topmodel (Grade 4)"
+      "en": "because the gods wanted to heal the wounds of the world, but because this powerleak frightened them that much. They further speculate that the withdrawel of the world was more an act of panic, an attempt not to lose complete control over",
+      "pl": "ponieważ bogowie chcieli uleczyć rany świata, ale dlatego, że ten wyciek mocy tak ich przeraził. Dalej spekulują, że wycofanie się świata było raczej aktem paniki, próbą nie utraty całkowitej kontroli",
+      "lang": "because the gods wanted to heal the wounds of the world, but because this powerleak frightened them that much. They further speculate that the withdrawel of the world was more an act of panic, an attempt not to lose complete control over"
     },
     {
-      "key": "cpp.title.name_13",
-      "category": "cpp",
+      "key": "book.otbm.because_the_gods_wanted_to_f5c45b0e",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Tibia's Topmodel (Grade 5)",
-      "pl": "Topmodelka Tibia (klasa 5)",
-      "lang": "Tibia's Topmodel (Grade 5)"
+      "en": "because the gods wanted to heal the wounds of the world, but because this powerleak frightened them that much. They further speculate that the withdrawel of the world was more an act of panic, an attempt not to lose complete control over",
+      "pl": "ponieważ bogowie chcieli uleczyć rany świata, ale dlatego, że ten wyciek mocy tak ich przeraził. Dalej spekulują, że wycofanie się świata było raczej aktem paniki, próbą nie utraty całkowitej kontroli",
+      "lang": "because the gods wanted to heal the wounds of the world, but because this powerleak frightened them that much. They further speculate that the withdrawel of the world was more an act of panic, an attempt not to lose complete control over"
     },
     {
-      "key": "cpp.title.name_15",
-      "category": "cpp",
+      "key": "book.otbm.because_they_all_wanted_power",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Cyclopscamper",
-      "pl": "Cyklopkamper",
-      "lang": "Cyclopscamper"
+      "en": "because they all wanted power over the creation, not its complete destruction. Thus the Gods threw the charm of the new",
+      "pl": "ponieważ wszyscy chcieli władzy nad stworzeniem, a nie jego całkowitego zniszczenia. W ten sposób bogowie rzucili urok nowego",
+      "lang": "because they all wanted power over the creation, not its complete destruction. Thus the Gods threw the charm of the new"
     },
     {
-      "key": "cpp.title.name_17",
-      "category": "cpp",
+      "key": "book.otbm.because_they_hardly_grew_in",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Demondoom",
-      "pl": "Demoniczna zagłada",
-      "lang": "Demondoom"
+      "en": "because they hardly grew in numbers.",
+      "pl": "ponieważ, bo oni prawie nie grew w numer.",
+      "lang": "because they hardly grew in numbers."
     },
     {
-      "key": "cpp.title.name_18",
-      "category": "cpp",
+      "key": "book.otbm.become_the_new_necromant_king",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Drakenbane",
-      "pl": "Smocza zguba",
-      "lang": "Drakenbane"
+      "en": "become the new necromant king, I can't give",
+      "pl": "zostać nowym królem nekromantów, nie mogę tego dać",
+      "lang": "become the new necromant king, I can't give"
     },
     {
-      "key": "cpp.title.name_19",
-      "category": "cpp",
+      "key": "book.otbm.beer_wine_lemonade_and_water",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Silencer",
-      "pl": "Tłumik",
-      "lang": "Silencer"
+      "en": "beer, wine, lemonade and water",
+      "pl": "piwo, wino, lemoniada i woda",
+      "lang": "beer, wine, lemonade and water"
     },
     {
-      "key": "cpp.title.name_20",
-      "category": "cpp",
+      "key": "book.otbm.before_picking_away_the_rubble",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Exalted",
-      "pl": "Wysoki",
-      "lang": "Exalted"
+      "en": "Before picking away the rubble you need to place a buttress otherwise the tunnel will collapse over and over again. If you don't have a matching tree at hand you could still build a brickwall to stabilize the tunnel. Good luck!",
+      "pl": "Przed wyburzeniem gruzu należy podbudować podporę, w przeciwnym razie tunel będzie się ciągle zapadał. Jeśli nie masz pod ręką odpowiedniego drzewa, nadal możesz zbudować ceglaną ścianę, aby ustabilizować tunel. Powodzenia!",
+      "lang": "Before picking away the rubble you need to place a buttress otherwise the tunnel will collapse over and over again. If you don't have a matching tree at hand you could still build a brickwall to stabilize the tunnel. Good luck!"
     },
     {
-      "key": "cpp.title.name_22",
-      "category": "cpp",
+      "key": "book.otbm.beginning_over_the_world_only",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Big Boss",
-      "pl": "Duży, wielki Boss",
-      "lang": "Big Boss"
+      "en": "beginning over the world! Only gradually the recovering sections of the old world started to rise from the nebulas of time,",
+      "pl": "początek na całym świecie! Dopiero stopniowo odradzające się części starego świata zaczęły wyłaniać się z mgławic czasu,",
+      "lang": "beginning over the world! Only gradually the recovering sections of the old world started to rise from the nebulas of time,"
     },
     {
-      "key": "cpp.title.name_33",
-      "category": "cpp",
+      "key": "book.otbm.beware_dangerous_monsters_down_here",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Reigning Drome Champion",
-      "pl": "Aktualny mistrz Drome",
-      "lang": "Reigning Drome Champion"
+      "en": "Beware! Dangerous monsters down here!",
+      "pl": "Strzec się! Niebezpieczne potwory tutaj!",
+      "lang": "Beware! Dangerous monsters down here!"
     },
     {
-      "key": "cpp.title.name_34",
-      "category": "cpp",
+      "key": "book.otbm.beware_dangerous_monsters_down_here_8ae557cd",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Bipedantic",
-      "pl": "Dwunożny",
-      "lang": "Bipedantic"
+      "en": "Beware! Dangerous monsters down here!",
+      "pl": "Strzec się! Niebezpieczne potwory tutaj!",
+      "lang": "Beware! Dangerous monsters down here!"
     },
     {
-      "key": "cpp.title.name_35",
-      "category": "cpp",
+      "key": "book.otbm.beware_of_drunken_dwarfs",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Blood Moon Hunter",
-      "pl": "Krew Księżyc Myśliwy",
-      "lang": "Blood Moon Hunter"
+      "en": "BEWARE OF DRUNKEN DWARFS!",
+      "pl": "UWAGA NA PIJANE KRASNOLE!",
+      "lang": "BEWARE OF DRUNKEN DWARFS!"
     },
     {
-      "key": "cpp.title.name_35_female",
-      "category": "cpp",
+      "key": "book.otbm.beware_of_polar_bears_and",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Blood Moon Huntress",
-      "pl": "Łowczyni Krwawego Księżyca",
-      "lang": "Blood Moon Huntress"
+      "en": "Beware of polar bears and winter wolves on Vega Island!",
+      "pl": "Uważaj na niedźwiedzie polarne i zimowe wilki na wyspie Vega!",
+      "lang": "Beware of polar bears and winter wolves on Vega Island!"
     },
     {
-      "key": "cpp.title.name_44",
-      "category": "cpp",
+      "key": "book.otbm.beware_of_the_dragon_clawer",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Handyman",
-      "pl": "Złota rączka",
-      "lang": "Handyman"
+      "en": "Beware of the dragon Clawer!",
+      "pl": "Uważaj na smoka Clawera!",
+      "lang": "Beware of the dragon Clawer!"
     },
     {
-      "key": "cpp.title.name_44_female",
-      "category": "cpp",
+      "key": "book.otbm.beware_of_the_enemy_lava",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Handywoman",
-      "pl": "Złota rączka",
-      "lang": "Handywoman"
+      "en": "BEWARE OF THE ENEMY! Lava pumps ahead!",
+      "pl": "UWAGA NA WROGA! Pompy lawy naprzód!",
+      "lang": "BEWARE OF THE ENEMY! Lava pumps ahead!"
     },
     {
-      "key": "cpp.title.name_45",
-      "category": "cpp",
+      "key": "book.otbm.beware_of_the_enemy_lava_7d739cce",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Huntsman",
-      "pl": "Myśliwy",
-      "lang": "Huntsman"
+      "en": "BEWARE OF THE ENEMY! Lava pumps ahead!",
+      "pl": "UWAGA NA WROGA! Pompy lawy naprzód!",
+      "lang": "BEWARE OF THE ENEMY! Lava pumps ahead!"
     },
     {
-      "key": "cpp.title.name_45_female",
-      "category": "cpp",
+      "key": "book.otbm.beware_the_tiles_inside_these",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Huntress",
-      "pl": "Łowczyni",
-      "lang": "Huntress"
+      "en": "Beware! The tiles inside these rooms will bring you to the lion's foes!",
+      "pl": "Strzec się! Płytki znajdujące się w tych pokojach zaprowadzą Cię do wrogów lwa!",
+      "lang": "Beware! The tiles inside these rooms will bring you to the lion's foes!"
     },
     {
-      "key": "cpp.title.name_47",
-      "category": "cpp",
+      "key": "book.otbm.bezils_and_nezils_stuff_an",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Manhunter",
-      "pl": "Pościg, obława",
-      "lang": "Manhunter"
+      "en": "Bezils And Nezils Stuff An' Pawn Shop",
+      "pl": "Bezils i Nezils Rzeczy w lombardzie",
+      "lang": "Bezils And Nezils Stuff An' Pawn Shop"
     },
     {
-      "key": "cpp.title.name_49",
-      "category": "cpp",
+      "key": "book.otbm.bite_squeeze_shake_enjoy",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Ooze Blues",
-      "pl": "Orzeźwiający blues",
-      "lang": "Ooze Blues"
+      "en": "Bite. Squeeze. Shake. Enjoy.",
+      "pl": "Ugryzienie. Ściśnięcie. Potrząsnąć. Cieszyć się.",
+      "lang": "Bite. Squeeze. Shake. Enjoy."
     },
     {
-      "key": "cpp.title.name_50",
-      "category": "cpp",
+      "key": "book.otbm.blood_extraction_must_be_supervised",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Sea Bane",
-      "pl": "Morze Bane",
-      "lang": "Sea Bane"
+      "en": "Blood extraction must be supervised by a trained necromancer.",
+      "pl": "Pobieranie krwi musi być nadzorowane przez przeszkolonego nekromantę.",
+      "lang": "Blood extraction must be supervised by a trained necromancer."
     },
     {
-      "key": "cpp.title.name_52",
-      "category": "cpp",
+      "key": "book.otbm.blood_extraction_pool_and_anatomy",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Tumbler",
-      "pl": "Szklanka",
-      "lang": "Tumbler"
+      "en": "Blood Extraction Pool and Anatomy Classes",
+      "pl": "Basen do pobierania krwi i zajęcia z anatomii",
+      "lang": "Blood Extraction Pool and Anatomy Classes"
     },
     {
-      "key": "cpp.title.name_53",
-      "category": "cpp",
+      "key": "book.otbm.blood_tincture_for_an_incantation",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Weedkiller",
-      "pl": "Środek chwastobójczy",
-      "lang": "Weedkiller"
+      "en": "blood tincture for an incantation",
+      "pl": "nalewka z krwi do zaklęcia",
+      "lang": "blood tincture for an incantation"
     },
     {
-      "key": "cpp.title.name_81",
-      "category": "cpp",
+      "key": "book.otbm.bloodthirsty_creatures_screeching_an_unholy",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Aeternal",
-      "pl": "Wieczny",
-      "lang": "Aeternal"
+      "en": "Bloodthirsty creatures screeching an unholy tune",
+      "pl": "Krwiożercze stworzenia wykrzykują bezbożną melodię",
+      "lang": "Bloodthirsty creatures screeching an unholy tune"
     },
     {
-      "key": "cpp.title.name_85",
-      "category": "cpp",
+      "key": "book.otbm.both_sides_for_this_unholy",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Beastly",
-      "pl": "Paskudny",
-      "lang": "Beastly"
+      "en": "both sides for this unholy war, and of which some individuals are said to still be around.",
+      "pl": "obie strony za tę bezbożną wojnę, o której podobno niektórzy nadal żyją.",
+      "lang": "both sides for this unholy war, and of which some individuals are said to still be around."
     },
     {
-      "key": "cpp.title.name_9",
-      "category": "cpp",
+      "key": "book.otbm.bow_and_arrows_crossbow_and",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Tibia's Topmodel (Grade 1)",
-      "pl": "Topmodelka Tibia (klasa 1)",
-      "lang": "Tibia's Topmodel (Grade 1)"
+      "en": "bow and arrows, crossbow and bolts",
+      "pl": "łuk i strzały, kusza i bełty",
+      "lang": "bow and arrows, crossbow and bolts"
     },
     {
-      "key": "cpp.title.name_91",
-      "category": "cpp",
+      "key": "book.otbm.bows_crossbows_and_ammunition",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Planegazer",
-      "pl": "Planetolog",
-      "lang": "Planegazer"
+      "en": "Bows, Crossbows, and Ammunition",
+      "pl": "Łuki, kusze i amunicja",
+      "lang": "Bows, Crossbows, and Ammunition"
     },
     {
-      "key": "cpp.title.name_93",
-      "category": "cpp",
+      "key": "book.otbm.brain_heater_machine_facility_students",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "Truly Boss",
-      "pl": "Naprawdę Boss",
-      "lang": "Truly Boss"
+      "en": "Brain Heater Machine Facility. Students, please note:",
+      "pl": "Maszyna do podgrzewania mózgów. Studencie, pamiętaj:",
+      "lang": "Brain Heater Machine Facility. Students, please note:"
     },
     {
-      "key": "cpp.vocation.desc_id_0",
-      "category": "cpp",
+      "key": "book.otbm.bread_cheese_meat_and_ham",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "none",
-      "pl": "Niene",
-      "lang": "none"
+      "en": "bread, cheese, meat and ham",
+      "pl": "chleb, ser, mięso i szynka",
+      "lang": "bread, cheese, meat and ham"
     },
     {
-      "key": "cpp.vocation.desc_id_1",
-      "category": "cpp",
+      "key": "book.otbm.brilliant_and_creative_on_the",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "a sorcerer",
-      "pl": "jeden sorcerer",
-      "lang": "a sorcerer"
+      "en": "brilliant and creative, on the other hand one he was ludicrous and full of folly. Thus Kirok became the protection patron of the",
+      "pl": "błyskotliwy i twórczy, z drugiej strony śmieszny i pełen szaleństwa. W ten sposób Kirok stał się patronem ochronnym",
+      "lang": "brilliant and creative, on the other hand one he was ludicrous and full of folly. Thus Kirok became the protection patron of the"
     },
     {
-      "key": "cpp.vocation.desc_id_2",
-      "category": "cpp",
+      "key": "book.otbm.brog_however_laughed_over_the",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "a druid",
-      "pl": "jeden druid",
-      "lang": "a druid"
+      "en": "Brog however laughed over the dragon, which he had created, because he roamed over Tibia and was a terror to the few",
+      "pl": "Brog jednak śmiał się ze smoka, którego stworzył, ponieważ wędrował po Tibia i był postrachem dla nielicznych",
+      "lang": "Brog however laughed over the dragon, which he had created, because he roamed over Tibia and was a terror to the few"
     },
     {
-      "key": "cpp.vocation.desc_id_3",
-      "category": "cpp",
+      "key": "book.otbm.brother_falnus_betrayed_our_order",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "a paladin",
-      "pl": "jeden paladin",
-      "lang": "a paladin"
+      "en": "brother Falnus betrayed our order, humanity and the gods. We will punish him and his unholy allies.",
+      "pl": "brat Falnus zdradził nasz porządek, ludzkość i bogów. Ukarzemy go i jego bezbożnych sojuszników.",
+      "lang": "brother Falnus betrayed our order, humanity and the gods. We will punish him and his unholy allies."
     },
     {
-      "key": "cpp.vocation.desc_id_4",
-      "category": "cpp",
+      "key": "book.otbm.brothers_and_sisters_but_the",
+      "category": "books",
       "type": "pl_reference_missing_translation",
       "severity": "MEDIUM",
-      "en": "a knight",
-      "pl": "rycerz",
-      "lang": "a knight"
-    },
-    {
-      "key": "cpp.vocation.id_0",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "None",
-      "pl": "Niene",
-      "lang": "None"
-    },
-    {
-      "key": "cpp.vocation.id_1",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sorcerer",
-      "pl": "Czarnoksiężnik",
-      "lang": "Sorcerer"
-    },
-    {
-      "key": "cpp.vocation.id_3",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Paladin",
-      "pl": "Paladyn",
-      "lang": "Paladin"
-    },
-    {
-      "key": "cpp.vocation.id_4",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Knight",
-      "pl": "Rycerz",
-      "lang": "Knight"
-    },
-    {
-      "key": "cpp.weapon.ammunition",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "ammunition",
-      "pl": "amunicja",
-      "lang": "ammunition"
-    },
-    {
-      "key": "cpp.weapon.axe",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "axe",
-      "pl": "Topór",
-      "lang": "axe"
-    },
-    {
-      "key": "cpp.weapon.club",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "club",
-      "pl": "Obuch",
-      "lang": "club"
-    },
-    {
-      "key": "cpp.weapon.distance",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "distance",
-      "pl": "Dystans",
-      "lang": "distance"
-    },
-    {
-      "key": "cpp.weapon.missile",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "missile",
-      "pl": "pocisk",
-      "lang": "missile"
-    },
-    {
-      "key": "cpp.weapon.sword",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "sword",
-      "pl": "Miecz",
-      "lang": "sword"
-    },
-    {
-      "key": "cpp.weapon.wand",
-      "category": "cpp",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "wand",
-      "pl": "różdżka",
-      "lang": "wand"
-    },
-    {
-      "key": "item.27511.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "It's black",
-      "pl": "Jest czarny",
-      "lang": "It's black"
-    },
-    {
-      "key": "item.9083.desc",
-      "category": "items",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Sweetness",
-      "pl": "Słodycz",
-      "lang": "Sweetness"
-    },
-    {
-      "key": "lib.player.modal_button_no",
-      "category": "libs",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "event.player.msg_move_fast",
-      "pl": "Nie możesz tak szybko przenosić tego przedmiotu.",
-      "lang": "event.player.msg_move_fast"
-    },
-    {
-      "key": "web.tpl.forum.add_board.td_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Guild:",
-      "pl": "Gildia:",
-      "lang": "Guild:"
-    },
-    {
-      "key": "web.tpl.guilds.manager.b_9",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tToDo = ",
-      "pl": "Do zrobienia = ",
-      "lang": "\tToDo = "
-    },
-    {
-      "key": "web.tpl.serverinfo.h2_4",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "\tVersion = ",
-      "pl": "Wersja = ",
-      "lang": "\tVersion = "
-    },
-    {
-      "key": "web.tpl.guilds.change_logo.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Change guild logo",
-      "pl": "Zmień logo gildii",
-      "lang": "Change guild logo"
-    },
-    {
-      "key": "web.tpl.guilds.change_motd.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Change guild MOTD",
-      "pl": "Zmień MOTD gildii",
-      "lang": "Change guild MOTD"
-    },
-    {
-      "key": "web.tpl.account.change_email.set_1",
-      "category": "html",
-      "type": "pl_reference_missing_translation",
-      "severity": "MEDIUM",
-      "en": "Amazon",
-      "pl": "Amazonka",
-      "lang": "Amazon"
+      "en": "brothers and sisters, but the dreams were",
+      "pl": "bracia i siostry, ale marzenia były",
+      "lang": "brothers and sisters, but the dreams were"
     }
   ],
   "length_ratio_issues": [
@@ -3990,6 +3838,15 @@
       "en_len": 6,
       "lang_ratio": 2.5,
       "pl_ratio": 0.5
+    },
+    {
+      "key": "npc.alexander.say_3",
+      "category": "npc",
+      "type": "crossref_length_ratio_diff",
+      "severity": "MEDIUM",
+      "en_len": 8,
+      "lang_ratio": 6.375,
+      "pl_ratio": 1.125
     },
     {
       "key": "npc.asima.say_3",

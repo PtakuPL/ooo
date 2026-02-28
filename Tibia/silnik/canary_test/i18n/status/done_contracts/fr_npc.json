@@ -4,9 +4,9 @@
   "conditions": {
     "no_critical_token_errors": {
       "ok": false,
-      "guard_placeholder": 255,
+      "guard_placeholder": 249,
       "guard_pipe": 6,
-      "batch_guard_placeholder": 85,
+      "batch_guard_placeholder": 0,
       "batch_guard_pipe": 0,
       "source": "file_state_audit"
     },
@@ -19,9 +19,9 @@
     },
     "coverage_above_95pct": {
       "ok": false,
-      "coverage_pct": 92.7,
+      "coverage_pct": 25.4,
       "total_keys": 14815,
-      "real_translations": 13738
+      "real_translations": 3762
     },
     "quality_entry_present": {
       "ok": true,
@@ -29,5 +29,5 @@
     }
   },
   "is_done": false,
-  "timestamp": "2026-02-25T22:26:45.865069Z"
+  "timestamp": "2026-02-26T19:11:49.311897Z"
 }

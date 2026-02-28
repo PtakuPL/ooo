@@ -1,12 +1,12 @@
 {
   "lang": "el",
   "script_group": "exotic",
-  "total_keys": 53770,
-  "translated": 3967,
-  "identical_to_en": 2706,
-  "placeholder_keys": 49783,
-  "coverage_pct": 7.4,
-  "issues_total": 54,
+  "total_keys": 74492,
+  "translated": 4091,
+  "identical_to_en": 2830,
+  "placeholder_keys": 49652,
+  "coverage_pct": 5.5,
+  "issues_total": 61,
   "issues_by_type": {
     "script_wrong_script": 54,
     "V2_length_ratio": 4,
@@ -18,7 +18,7 @@
     "MEDIUM": 4,
     "LOW": 0
   },
-  "score": 98.0,
+  "score": 97.8,
   "worst_keys": [
     {
       "key": "npc.a_dead_bureaucrat1.say_1",
@@ -149,5 +149,5 @@
     "length_ratio": 4,
     "auto_fix_applied": 0
   },
-  "validated_at": "2026-02-21T20:41:02.611045Z"
+  "validated_at": "2026-02-26T20:13:55.458907Z"
 }

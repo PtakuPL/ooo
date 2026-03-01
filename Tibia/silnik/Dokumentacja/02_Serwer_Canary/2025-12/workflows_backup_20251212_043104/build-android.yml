@@ -1,0 +1,190 @@
+name: Build - Android
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - 'Tibia/silnik/canary_test/testyy/src/**'
+      - 'Tibia/silnik/canary_test/testyy/android/**'
+  push:
+    paths:
+      - 'Tibia/silnik/canary_test/testyy/src/**'
+      - 'Tibia/silnik/canary_test/testyy/android/**'
+    branches:
+      - master
+
+env:
+  CMAKE_BUILD_PARALLEL_LEVEL: 4
+  MAKEFLAGS: '-j 4'
+  VCPKG_ROOT: C:\vcpkg
+
+jobs:
+  cancel-runs:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.11.0
+        with:
+          access_token: ${{ github.token }}
+
+  android:
+    name: android-apk
+    runs-on: windows-2022
+    timeout-minutes: 120
+    defaults:
+      run:
+        working-directory: Tibia/silnik/canary_test/testyy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: false
+          fetch-depth: 0
+
+      - name: Remove nested git directories (upstream mirrors)
+        shell: bash
+        run: |
+          rm -rf oryginall/canary-serwer/.git || true
+          rm -rf oryginall/otclient/.git || true
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Get vcpkg commit ID
+        id: vcpkg-step
+        shell: bash
+        run: |
+          vcpkgCommitId=$(grep '.builtin-baseline' vcpkg.json | awk -F: '{print $2}' | tr -d '," ')
+          echo "vcpkgGitCommitId=$vcpkgCommitId" >> $GITHUB_OUTPUT
+          echo "hash=$(sha256sum vcpkg.json | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+
+      - name: Cache vcpkg
+        uses: actions/cache@v4
+        with:
+          path: |
+            C:\vcpkg
+            ${{ env.LOCALAPPDATA }}\vcpkg
+          key: vcpkg-android-${{ steps.vcpkg-step.outputs.hash }}
+          restore-keys: |
+            vcpkg-android-
+
+      - name: Setup vcpkg
+        shell: powershell
+        run: |
+          if (-not (Test-Path "C:\vcpkg")) {
+            git clone https://github.com/microsoft/vcpkg.git C:\vcpkg
+          }
+          cd C:\vcpkg
+          git fetch --all
+          git checkout ${{ steps.vcpkg-step.outputs.vcpkgGitCommitId }}
+          if (-not (Test-Path "C:\vcpkg\vcpkg.exe")) {
+            .\bootstrap-vcpkg.bat
+          }
+
+      - name: Ensure 7zip and pkg-config
+        run: |
+          choco install -y 7zip pkgconfiglite
+
+      - name: Download Android build bundle
+        shell: powershell
+        run: |
+          $files = @(
+            @{ Name = 'jdk.zip'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/jdk8u302-b08.zip' },
+            @{ Name = 'ndk.zip'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/android-ndk-r23c-windows.zip' },
+            @{ Name = 'ant.zip'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/apache-ant-1.9.7-bin.zip' },
+            @{ Name = 'android_libs.7z'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/android-libs.7z' },
+            @{ Name = 'build-tools.zip'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/build-tools_r30-windows.zip' },
+            @{ Name = 'create_android_assets.ps1'; Url = 'https://github.com/opentibiabr/otcv8/releases/download/binary-files/create_android_assets.ps1' }
+          )
+          foreach ($f in $files) { Invoke-WebRequest -Uri $f.Url -OutFile $f.Name }
+
+      - name: Extract bundles
+        shell: powershell
+        run: |
+          New-Item -ItemType Directory -Force -Path C:\Android\android-sdk | Out-Null
+          7z x jdk.zip -aoa -oC:\Android\android-sdk
+          7z x ndk.zip -aoa -oC:\Android\android-sdk
+          7z x ant.zip -aoa -oC:\Android\android-sdk
+          7z x android_libs.7z -aoa -oC:\Android
+          7z x build-tools.zip -aoa -oC:\Android\android-sdk
+
+      - name: Install CMake via sdkmanager
+        shell: powershell
+        run: |
+          # Try to use sdkmanager from GitHub runner's ANDROID_HOME
+          $sdkmanager = "$env:ANDROID_HOME\cmdline-tools\latest\bin\sdkmanager.bat"
+          if (Test-Path $sdkmanager) {
+            Write-Host "Using sdkmanager at: $sdkmanager"
+            echo "y" | & $sdkmanager --install "cmake;3.22.1"
+          } else {
+            # CMake is preinstalled on GitHub runners
+            Write-Host "sdkmanager not found at $sdkmanager"
+            Write-Host "Using preinstalled CMake from GitHub runner..."
+            cmake --version
+          }
+
+      - name: Prepare assets (data.zip)
+        shell: powershell
+        run: |
+          powershell -ExecutionPolicy Bypass -File .\create_android_assets.ps1
+
+      - name: Cache Gradle
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: gradle-android-${{ hashFiles('Tibia/silnik/canary_test/testyy/android/**/*.gradle*', 'Tibia/silnik/canary_test/testyy/android/**/gradle-wrapper.properties') }}
+          restore-keys: |
+            gradle-android-
+
+      - name: Cache Android build directory
+        uses: actions/cache@v4
+        with:
+          path: |
+            Tibia/silnik/canary_test/testyy/android/app/build
+            Tibia/silnik/canary_test/testyy/android/app/.cxx
+          key: android-build-${{ hashFiles('Tibia/silnik/canary_test/testyy/src/**/*.cpp', 'Tibia/silnik/canary_test/testyy/src/**/*.h', 'Tibia/silnik/canary_test/testyy/src/**/*.hpp', 'Tibia/silnik/canary_test/testyy/CMakeLists.txt') }}
+          restore-keys: |
+            android-build-
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11'
+
+      - name: Build APK with Gradle
+        shell: bash
+        working-directory: Tibia/silnik/canary_test/testyy/android
+        env:
+          ANDROID_NDK_HOME: C:\Android\android-sdk\android-ndk-r23c
+          ANDROID_SDK_ROOT: ${{ env.ANDROID_HOME }}
+          VCPKG_ROOT: C:\vcpkg
+        run: |
+          chmod +x ./gradlew 2>/dev/null || true
+          ./gradlew assembleRelease --no-daemon --stacktrace --build-cache --warning-mode all
+
+      - name: Find APK
+        id: find-apk
+        shell: bash
+        working-directory: Tibia/silnik/canary_test/testyy/android
+        run: |
+          APK_PATH=$(find . -name "*.apk" -type f | head -n 1)
+          if [ -z "$APK_PATH" ]; then
+            echo "No APK found"
+            exit 1
+          fi
+          echo "apk_path=$APK_PATH" >> "$GITHUB_OUTPUT"
+          echo "Found APK: $APK_PATH"
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: otclient-android-${{ github.sha }}
+          path: ${{ steps.find-apk.outputs.apk_path }}
+          if-no-files-found: warn

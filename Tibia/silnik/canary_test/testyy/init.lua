@@ -9,20 +9,90 @@ Services = {
     --createAccount = "http://localhost/clientcreateaccount.php", --./client_entergame -- createAccount.lua
 }
 
---[[
-Servers_init = {
-    ["http://127.0.0.1/login.php"] = {
-        ["port"] = 80,
-        ["protocol"] = 1420,
-        ["httpLogin"] = true
+-- ============================================================
+-- KONFIGURACJA KLIENTA — BLOKADA + TRYBY GRY
+-- ============================================================
+
+-- Gdy true: klient jest przypisany do naszych serwerów.
+-- Gracz NIE może dodawać/usuwać/edytować serwerów.
+-- Lista serwerów pochodzi WYŁĄCZNIE z GameModes poniżej.
+CLIENT_LOCKED = true
+
+-- Tryby gry — każdy definiuje serwer i dozwolone funkcje.
+-- Klucze: "classic74", "modern" (matchują gameMode w tickecie HMAC)
+GameModes = {
+    classic74 = {
+        name = "Classic 7.4",
+        description = "Serwer w stylu Tibia 7.4 — bez hotkey na runy, bez market, bez quick loot.",
+        server = {
+            host = "ZMIEN_NA_ADRES_SERWERA",  -- TODO: wpisać prawdziwy adres
+            port = 7171,
+            protocol = 1420,
+            httpLogin = true,
+            httpLoginUrl = "https://ZMIEN_NA_ADRES/login.php",
+        },
+        features = {
+            hotkeys_items    = false,  -- blokada hotkey na itemy/runy
+            hotkeys_spells   = true,   -- hotkey na spelle dozwolone
+            quick_loot       = false,
+            auto_loot        = false,
+            market           = false,
+            action_bar       = false,
+            smart_equip      = false,  -- ctrl+klik auto-equip
+            prey             = false,
+            bestiary         = false,
+            wheel            = false,  -- koło umiejętności
+            analytics        = false,
+        },
     },
-    ["ip.net"] = {
-        ["port"] = 7171,
-        ["protocol"] = 860,
-        ["httpLogin"] = false
+    modern = {
+        name = "Modern 14.20+",
+        description = "Pełna wersja Tibia — wszystkie nowoczesne funkcje.",
+        server = {
+            host = "ZMIEN_NA_ADRES_SERWERA",  -- TODO: wpisać prawdziwy adres
+            port = 7171,
+            protocol = 1420,
+            httpLogin = true,
+            httpLoginUrl = "https://ZMIEN_NA_ADRES/login.php",
+        },
+        features = {
+            hotkeys_items    = true,
+            hotkeys_spells   = true,
+            quick_loot       = true,
+            auto_loot        = true,
+            market           = true,
+            action_bar       = true,
+            smart_equip      = true,
+            prey             = true,
+            bestiary         = true,
+            wheel            = true,
+            analytics        = true,
+        },
     },
 }
-]]
+
+-- Aktualnie wybrany tryb gry (nil = gracz jeszcze nie wybrał).
+-- Ustawiany przez ekran wyboru trybu (Faza A2/A3).
+CurrentGameMode = nil
+
+-- Helper: szybki dostęp do feature flags aktualnego trybu.
+-- Użycie: if isFeatureEnabled("quick_loot") then ...
+function isFeatureEnabled(featureName)
+    if not CurrentGameMode then return true end  -- domyślnie: włączone
+    local mode = GameModes[CurrentGameMode]
+    if not mode or not mode.features then return true end
+    local val = mode.features[featureName]
+    if val == nil then return true end  -- nieznana flaga = włączona
+    return val
+end
+
+-- Helper: pobierz konfigurację serwera dla aktualnego trybu.
+function getCurrentServerConfig()
+    if not CurrentGameMode then return nil end
+    local mode = GameModes[CurrentGameMode]
+    if not mode then return nil end
+    return mode.server
+end
 
 g_app.setName("OTClient");
 g_app.setCompactName("otclient");

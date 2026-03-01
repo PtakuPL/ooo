@@ -2,11 +2,103 @@ EnterGameWindow
   id: enterGame
   @onEnter: EnterGame.doLogin()
 
+  Panel
+    id: gameModePanel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: parent.top
+    height: 0
+    visible: false
+
+    MenuLabel
+      id: gameModeTitle
+      !text: 'Wybierz tryb gry:'
+      anchors.left: parent.left
+      anchors.right: parent.right
+      anchors.top: parent.top
+      text-auto-resize: true
+      text-align: center
+      font: verdana-11px-antialised
+
+    Button
+      id: btnClassic74
+      !text: 'Classic 7.4'
+      anchors.left: parent.left
+      anchors.right: parent.right
+      anchors.top: prev.bottom
+      margin-top: 8
+      height: 28
+      @onClick: EnterGame.selectGameMode("classic74")
+
+    Label
+      id: lblClassic74Desc
+      !text: 'Styl Tibia 7.4 — bez hotkey na runy, bez market'
+      anchors.left: parent.left
+      anchors.right: parent.right
+      anchors.top: prev.bottom
+      margin-top: 2
+      text-auto-resize: true
+      font: noto-12
+      color: #aaaaaa
+      text-align: center
+
+    Button
+      id: btnModern
+      !text: 'Modern 14.20+'
+      anchors.left: parent.left
+      anchors.right: parent.right
+      anchors.top: prev.bottom
+      margin-top: 10
+      height: 28
+      @onClick: EnterGame.selectGameMode("modern")
+
+    Label
+      id: lblModernDesc
+      !text: 'Pełna wersja — wszystkie nowoczesne funkcje'
+      anchors.left: parent.left
+      anchors.right: parent.right
+      anchors.top: prev.bottom
+      margin-top: 2
+      text-auto-resize: true
+      font: noto-12
+      color: #aaaaaa
+      text-align: center
+
+    HorizontalSeparator
+      anchors.left: parent.left
+      anchors.right: parent.right
+      anchors.top: prev.bottom
+      margin-top: 10
+
+    Button
+      id: btnChangeMode
+      !text: 'Zmień tryb'
+      anchors.left: parent.left
+      anchors.right: parent.right
+      anchors.top: prev.bottom
+      margin-top: 6
+      height: 22
+      visible: false
+      @onClick: EnterGame.showGameModeSelection()
+
+  MenuLabel
+    id: selectedModeLabel
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: gameModePanel.bottom
+    margin-top: 4
+    text-auto-resize: true
+    text-align: center
+    font: noto-12
+    color: #44dd44
+    visible: false
+
   MenuLabel
     id: emailLabel
     !text: tr("otclient_modules.entergame_otui.tr_14")
     anchors.left: parent.left
-    anchors.top: parent.top
+    anchors.top: selectedModeLabel.bottom
+    margin-top: 4
     text-auto-resize: true
 
   TextEdit
@@ -17,6 +109,7 @@ EnterGameWindow
     margin-top: 2
 
   MenuLabel
+    id: passwordLabel
     !text: tr("otclient_modules.entergame_otui.tr_13")
     anchors.left: prev.left
     anchors.top: prev.bottom

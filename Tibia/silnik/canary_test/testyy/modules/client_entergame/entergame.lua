@@ -8,6 +8,7 @@ local enterGameButton
 local clientBox
 local protocolLogin
 local motdEnabled = true
+local gameModeSelected = false  -- czy gracz wybrał tryb gry
 
 local function getEnterGameWidget(id)
     if not enterGame then
@@ -51,8 +52,10 @@ local function onCharacterList(protocol, characters, account, otui)
     local httpLoginBox = getEnterGameWidget('httpLoginBox')
     local httpLogin = httpLoginBox and httpLoginBox:isChecked() or false
 
-    -- Try add server to the server list
-    ServerList.add(G.host, G.port, g_game.getClientVersion(), httpLogin)
+    -- Try add server to the server list (skip when client is locked — A4)
+    if not CLIENT_LOCKED then
+        ServerList.add(G.host, G.port, g_game.getClientVersion(), httpLogin)
+    end
 
     -- Save 'Stay logged in' setting
     local stayLoggedBox = getEnterGameWidget('stayLoggedBox')
@@ -243,7 +246,10 @@ function EnterGame.init()
         })
     end
 
-    if Servers_init then
+    if CLIENT_LOCKED and GameModes then
+        -- === KLIENT ZABLOKOWANY: pokaż panel wyboru trybu ===
+        EnterGame.showGameModeSelection()
+    elseif Servers_init then
         if table.size(Servers_init) == 1 then
             local hostInit, valuesInit = next(Servers_init)
             EnterGame.setUniqueServer(hostInit, valuesInit.port, valuesInit.protocol)
@@ -795,6 +801,12 @@ function EnterGame.loginFailed(requestId, msg, result)
 end
 
 function EnterGame.doLogin()
+    -- A3: Sprawdź czy wybrany tryb gry (gdy CLIENT_LOCKED)
+    if CLIENT_LOCKED and not gameModeSelected then
+        EnterGame.showGameModeSelection()
+        return
+    end
+
     local accountNameTextEdit = getEnterGameWidget('accountNameTextEdit')
     G.account = accountNameTextEdit and accountNameTextEdit:getText() or ''
 
@@ -1010,6 +1022,138 @@ function EnterGame.setServerInfo(message)
     if label then
         label:setText(message)
     end
+end
+
+-- ============================================================
+-- A2/A3: WYBÓR TRYBU GRY (GameMode)
+-- ============================================================
+
+-- Pokaż panel wyboru trybu gry (ukryj formularz logowania)
+function EnterGame.showGameModeSelection()
+    gameModeSelected = false
+    CurrentGameMode = nil
+
+    local panel = getEnterGameWidget('gameModePanel')
+    if not panel then return end
+
+    -- Pokaż panel z przyciskami trybów
+    panel:setVisible(true)
+    panel:setHeight(200)
+
+    -- Pokaż przyciski trybów, ukryj przycisk "Zmień tryb"
+    local btnClassic = getEnterGameWidget('btnClassic74')
+    if btnClassic then btnClassic:setVisible(true) end
+    local lblClassicDesc = getEnterGameWidget('lblClassic74Desc')
+    if lblClassicDesc then lblClassicDesc:setVisible(true) end
+    local btnModern = getEnterGameWidget('btnModern')
+    if btnModern then btnModern:setVisible(true) end
+    local lblModernDesc = getEnterGameWidget('lblModernDesc')
+    if lblModernDesc then lblModernDesc:setVisible(true) end
+    local btnChange = getEnterGameWidget('btnChangeMode')
+    if btnChange then btnChange:setVisible(false) end
+
+    local modeLabel = getEnterGameWidget('selectedModeLabel')
+    if modeLabel then modeLabel:setVisible(false) end
+
+    -- Ukryj formularz logowania gdy tryb nie jest wybrany
+    EnterGame.setLoginFormVisible(false)
+
+    -- Powiększ okno żeby zmieścić panel
+    enterGame:setHeight(280)
+end
+
+-- Gracz wybrał tryb gry
+function EnterGame.selectGameMode(modeKey)
+    if not GameModes or not GameModes[modeKey] then
+        g_logger.warning("EnterGame.selectGameMode: unknown mode: " .. tostring(modeKey))
+        return
+    end
+
+    CurrentGameMode = modeKey
+    gameModeSelected = true
+    local mode = GameModes[modeKey]
+
+    -- Skonfiguruj serwer z trybu
+    local srv = mode.server
+    if srv then
+        EnterGame.setUniqueServer(srv.host, srv.port, srv.protocol)
+        EnterGame.setHttpLogin(srv.httpLogin or false)
+    end
+
+    -- Zaktualizuj panel — ukryj przyciski trybów, pokaż "Zmień tryb" + label
+    local panel = getEnterGameWidget('gameModePanel')
+    if panel then
+        panel:setHeight(50)
+    end
+
+    local btnClassic = getEnterGameWidget('btnClassic74')
+    if btnClassic then btnClassic:setVisible(false) end
+    local lblClassicDesc = getEnterGameWidget('lblClassic74Desc')
+    if lblClassicDesc then lblClassicDesc:setVisible(false) end
+    local btnModern = getEnterGameWidget('btnModern')
+    if btnModern then btnModern:setVisible(false) end
+    local lblModernDesc = getEnterGameWidget('lblModernDesc')
+    if lblModernDesc then lblModernDesc:setVisible(false) end
+
+    local btnChange = getEnterGameWidget('btnChangeMode')
+    if btnChange then btnChange:setVisible(true) end
+
+    local modeLabel = getEnterGameWidget('selectedModeLabel')
+    if modeLabel then
+        modeLabel:setText("Tryb: " .. mode.name)
+        modeLabel:setVisible(true)
+    end
+
+    -- Pokaż formularz logowania
+    EnterGame.setLoginFormVisible(true)
+
+    -- Ustaw rozmiar okna
+    enterGame:setHeight(290)
+
+    g_logger.info("GameMode selected: " .. modeKey .. " (" .. mode.name .. ")")
+end
+
+-- Pokaż/ukryj formularz logowania (email, hasło, przyciski)
+function EnterGame.setLoginFormVisible(visible)
+    local ids = {
+        'emailLabel', 'accountNameTextEdit',
+        'passwordLabel', 'accountPasswordTextEdit',
+        'authenticatorTokenLabel', 'authenticatorTokenTextEdit',
+        'rememberEmailBox', 'autoLoginBox', 'stayLoggedBox',
+        'httpLoginBox', 'serverInfoLabel'
+    }
+
+    for _, id in ipairs(ids) do
+        local w = getEnterGameWidget(id)
+        if w then
+            w:setVisible(visible)
+        end
+    end
+
+    -- Hasło label (szukamy po tekście "Password" — jest bezpośrednio w OTUI)
+    -- Separatory i przyciski Login/Create
+    -- Przejdźmy po dzieciach i ukryjmy/pokażmy separatory i panel z przyciskami
+    if enterGame then
+        for i = 1, enterGame:getChildCount() do
+            local child = enterGame:getChildByIndex(i)
+            if child then
+                local childId = child:getId()
+                -- Nie ukrywaj panelu gameModePanel ani selectedModeLabel
+                if childId ~= 'gameModePanel' and childId ~= 'selectedModeLabel'
+                   and childId ~= 'enterGame' then
+                    -- Ukryj separatory i niezidentyfikowane elementy (panel z przyciskami)
+                    local style = child:getStyleName and child:getStyleName() or ''
+                    if style == 'HorizontalSeparator' or (childId == '' and child:getHeight() == 26) then
+                        child:setVisible(visible)
+                    end
+                end
+            end
+        end
+    end
+
+    -- Hasło MenuLabel (jest tuż przed passwordEdit — nie ma id, szukamy po pozycji)
+    -- Tak naprawdę pola bez id (label "Password") będą ukryte razem z formularzem
+    -- bo są zakotwiczone do emailLabel/prev
 end
 
 function EnterGame.disableMotd()

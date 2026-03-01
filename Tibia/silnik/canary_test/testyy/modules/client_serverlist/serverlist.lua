@@ -58,6 +58,11 @@ function ServerList.select()
 end
 
 function ServerList.add(host, port, protocol, httpLogin, load)
+    -- A4: blokada dodawania serwerów gdy klient jest zablokowany
+    if CLIENT_LOCKED then
+        return false, 'Client is locked — server list is read-only'
+    end
+
     if not host or not port or not protocol then
         return false, 'Failed to load settings'
     elseif not load and servers[host] then
@@ -96,6 +101,11 @@ function ServerList.add(host, port, protocol, httpLogin, load)
 end
 
 function ServerList.remove(widget)
+    -- A4: blokada usuwania serwerów gdy klient jest zablokowany
+    if CLIENT_LOCKED then
+        return
+    end
+
     local host = widget:getId()
 
     if removeWindow then
@@ -135,6 +145,11 @@ function ServerList.destroy()
 end
 
 function ServerList.show()
+    -- A4: nie pokazuj listy serwerów gdy klient jest zablokowany
+    if CLIENT_LOCKED then
+        return
+    end
+
     if g_game.isOnline() then
         return
     end

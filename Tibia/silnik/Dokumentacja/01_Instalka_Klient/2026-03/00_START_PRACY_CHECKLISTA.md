@@ -31,10 +31,22 @@ Zakres: ticket-gate, tryby gry, blokada serwerów, launcher
 ### Codex Review — nowe findings (2026-03-01)
 | # | Priorytet | Problem | Plik | Status |
 |---|-----------|---------|------|--------|
-| CR-1 | WYSOKIE | Niespójny format hosta — `GameModes.server.host` to sam host, ale `tryHttpLogin` parsuje `G.host` jako host/path. `httpLoginUrl` zdefiniowany ale nigdzie nieużywany. | `init.lua:28`, `entergame.lua:691`, `init.lua:32` | ⬜ TODO |
-| CR-2 | ŚREDNIE | Komunikat błędu HTTP nieaktualny po usunięciu fallbacku — nadal sugeruje "Enable Http login / port 80/8080" co jest mylące. | `httplogin.cpp:135` | ⬜ TODO |
-| CR-3 | ŚREDNIE | X7 częściowo zrobione — body usunięte z logów, ale `req.headers` i `res.headers` nadal wypisywane. Wrażliwe nagłówki (np. `Set-Cookie`) mogą wyciekać. | `httplogin.cpp:53,63` | ⬜ TODO |
-| CR-4 | NISKIE | Unused variable — `httpLogin` nadal łapany przez lambdy ale już nieużywany po X2b. Potencjalny warning kompilatora przy ostrzejszych flagach. | `httplogin.cpp:106,146` | ⬜ TODO |
+| CR-1 | WYSOKIE | Niespójny format hosta — `GameModes.server.host` to sam host, ale `tryHttpLogin` parsuje `G.host` jako host/path. `httpLoginUrl` zdefiniowany ale nigdzie nieużywany. | `init.lua:28`, `entergame.lua:691`, `init.lua:32` | ✅ DONE |
+| CR-2 | ŚREDNIE | Komunikat błędu HTTP nieaktualny po usunięciu fallbacku — nadal sugeruje "Enable Http login / port 80/8080" co jest mylące. | `httplogin.cpp:135` | ✅ DONE |
+| CR-3 | ŚREDNIE | X7 częściowo zrobione — body usunięte z logów, ale `req.headers` i `res.headers` nadal wypisywane. Wrażliwe nagłówki (np. `Set-Cookie`) mogą wyciekać. | `httplogin.cpp:53,63` | ✅ DONE |
+| CR-4 | NISKIE | Unused variable — `httpLogin` nadal łapany przez lambdy ale już nieużywany po X2b. Potencjalny warning kompilatora przy ostrzejszych flagach. | `httplogin.cpp:106,146` | ✅ DONE |
+
+### Codex Review — FIX1-FIX8 (2026-03-01 sesja nocna)
+| # | Problem | Naprawa | Status |
+|---|---------|---------|--------|
+| FIX1 | 6 guardów D6/D10 wstawionych w złe miejsca w protocolgame.cpp | Usunięto błędne, dodano poprawne do metod parse* | ✅ DONE |
+| FIX2 | ticket_validator.cpp brakujący w CMakeLists.txt | Dodano do target_sources | ✅ DONE |
+| FIX3 | Brak ścieżki authType="ticket" — sessionKey splitowany przez `\n` | Dodano ticketGateActive check | ✅ DONE |
+| FIX4 | requestTicket brak worldName w JSON | Dodano worldName do C++ i Lua | ✅ DONE |
+| FIX5 | HMAC na base64 vs JSON — niespójność z planem | Udokumentowano: base64 jest celowe (JWT-like) | ✅ DONE |
+| FIX6 | Client fail-open — config error → bypass ticketu | Zmieniono na fail-closed + onTicketConfigError() | ✅ DONE |
+| FIX7 | D8 "rate-limit rune" ale kod limituje ruch | Udokumentowano: ruch celowy, runy kliencko (D7) | ✅ DONE |
+| FIX8 | ServerList ukryta zamiast read-only | Lista widoczna, add/remove/select ukryte | ✅ DONE |
 
 ### Quick Security Wins (X2, X3, X7)
 | # | Zadanie | Status | Commit | Priorytet |
@@ -47,13 +59,13 @@ Zakres: ticket-gate, tryby gry, blokada serwerów, launcher
 ### Faza B — API HTTP ticket-gate
 | # | Zadanie | Status | Commit |
 |---|---------|--------|--------|
-| B1 | `gameMode` + `launchToken` w login.php | ⬜ TODO | — |
-| B2 | Filtrowanie worldów wg gameMode | ⬜ TODO | — |
-| B3 | Nowy endpoint `ticket.php` | ⬜ TODO | — |
-| B4 | Tabela `ticket_nonces` MySQL | ⬜ TODO | — |
+| B1 | `gameMode` + `launchToken` w login.php | ✅ DONE | niezacommitowane |
+| B2 | Filtrowanie worldów wg gameMode | ✅ DONE | niezacommitowane |
+| B3 | Nowy endpoint `ticket.php` | ✅ DONE | niezacommitowane |
+| B4 | Tabela `ticket_nonces` + `ticket_sessions` MySQL | ✅ DONE | niezacommitowane |
 | B5 | Klient Lua: request do ticket.php | ✅ DONE | niezacommitowane |
 | B6 | Klient C++: `requestTicket()` | ✅ DONE | niezacommitowane |
-| B7 | Test flow login→ticket→connect | ⬜ TODO | — |
+| B7 | Test flow login→ticket→connect | ✅ DONE | smoke test CLI |
 
 ### Faza C — Serwer Canary ticket-gate
 | # | Zadanie | Status | Commit |
@@ -80,10 +92,32 @@ Zakres: ticket-gate, tryby gry, blokada serwerów, launcher
 | D10 | Blokada Bestiary | ✅ DONE | niezacommitowane |
 | D11 | Test integracyjny | ⬜ TODO | — |
 
-### Faza E — Launcher z auto-update
+### Faza E — Launcher z auto-update ✅ GOTOWE
 | # | Zadanie | Status | Commit |
 |---|---------|--------|--------|
-| E1-E7 | (jeszcze do rozpisania) | ⬜ TODO | — |
+| E1 | Skrypt `generate_manifest.php` | ✅ DONE | niezacommitowane |
+| E2 | Endpoint `update.php` | ✅ DONE | niezacommitowane |
+| E3 | Endpoint `launcher-token.php` | ✅ DONE | niezacommitowane |
+| E4 | Endpoint `launcher-version.php` | ✅ DONE | niezacommitowane |
+| E5 | Tabela `launch_tokens` + `manifest_versions` MySQL | ✅ DONE | niezacommitowane |
+| E6-E8 | Launcher Python (GUI + pobieranie + token) | ✅ DONE | niezacommitowane |
+| E9 | Launcher self-update | ✅ DONE | niezacommitowane |
+| E10 | Klient: `OTC_LAUNCH_TOKEN` env + C++ + Lua | ✅ DONE | niezacommitowane |
+| E11 | API `login.php`: walidacja `launchToken` | ✅ DONE | niezacommitowane |
+| E12 | Smoke test flow | ✅ DONE | niezacommitowane |
+| E13 | Hosting plików klienta | ⬜ TODO | — |
+
+### Codex Review #2 — FIX9-FIX17 (2026-03-02) ✅ GOTOWE
+| # | Priorytet | Problem | Naprawa | Status |
+|---|-----------|---------|---------|--------|
+| FIX9+15 | KRYTYCZNE | Wheel D6 guards: broken braces + floating code | Guardy na początek funkcji, usunięty floating block | ✅ DONE |
+| FIX10 | KRYTYCZNE | Auth bypass po ticket — `gameWorldAuthentication(ticketString)` zawsze FAIL | Skip gameWorldAuth, użyj `ticketAccountId` + `g_accountRepository()` | ✅ DONE |
+| FIX11 | KRYTYCZNE | `(int)$expires_at` na TIMESTAMP | Już naprawione (E11 sesja) — `strtotime()` | ✅ DONE |
+| FIX12 | WYSOKIE | launcher-token.php: empty manifestVersion = skip filesHash | Fail-closed — sprawdź filesHash vs najnowszy manifest | ✅ DONE |
+| FIX13 | WYSOKIE | worldName w tickecie nigdy niewalidowany | ticket.php: wymagany; ticket_validator: vs SERVER_NAME | ✅ DONE |
+| FIX14 | WYSOKIE | ServerList pusta w CLIENT_LOCKED | Wypełnienie z GameModes w `ServerList.init()` | ✅ DONE |
+| FIX16 | ŚREDNIE | CLIENT_LOCKED drift: init.lua=true, .env=false | .env zsync do true + komentarze SYNC w obu plikach | ✅ DONE |
+| FIX17 | NISKIE | `--icon "icon.ico"` — brak pliku | Linia wykomentowana w build_launcher.bat | ✅ DONE |
 
 **Legenda**: ⬜ TODO | 🔄 W TRAKCIE | ✅ DONE | ❌ FAIL (wymaga fix)
 
@@ -138,34 +172,57 @@ Zadanie uznajemy za gotowe tylko gdy:
 ### OTClient — `canary_test/testyy/` (9 plików, 3 C++)
 | Plik | Fazy | C++? |
 |------|------|------|
-| `init.lua` | A1, A-FIX | NIE |
-| `modules/client_entergame/entergame.lua` | A2, A3, A5, A-FIX, B5 | NIE |
+| `init.lua` | A1, A-FIX, FIX16 | NIE |
+| `modules/client_entergame/entergame.lua` | A2, A3, A5, A-FIX, B5, FIX4, FIX6, FIX8 | NIE |
 | `modules/client_entergame/entergame.otui` | A2 | NIE |
 | `modules/client_entergame/characterlist.lua` | B5 | NIE |
-| `modules/client_serverlist/serverlist.lua` | A4, A-FIX | NIE |
+| `modules/client_serverlist/serverlist.lua` | A4, A-FIX, FIX8, FIX14 | NIE |
 | `modules/game_hotkeys/hotkeys_manager.lua` | A6 | NIE |
-| `src/framework/net/httplogin.cpp` | X2, X2b, X7, B6 | **TAK** |
-| `src/framework/net/httplogin.h` | B6 | **TAK** |
-| `src/framework/luafunctions.cpp` | B6 | **TAK** |
+| `src/framework/net/httplogin.cpp` | X2, X2b, X7, B6, FIX4, E10 | **TAK** |
+| `src/framework/net/httplogin.h` | B6, FIX4, E10 | **TAK** |
+| `src/framework/luafunctions.cpp` | B6, E10 | **TAK** |
 
-### Canary Server — `canary/` (9 plików, 7 C++, 2 nowe)
+### Canary Server — `canary/` (10 plików, 8 C++, 2 nowe)
 | Plik | Fazy | C++? | Nowy? |
 |------|------|------|-------|
-| `src/server/network/protocol/ticket_validator.hpp` | C1 | **TAK** | ✅ NOWY |
-| `src/server/network/protocol/ticket_validator.cpp` | C1 | **TAK** | ✅ NOWY |
-| `src/server/network/protocol/protocolgame.cpp` | C2, D1, D2-D10 | **TAK** | |
+| `src/server/network/protocol/ticket_validator.hpp` | C1, FIX10 | **TAK** | ✅ NOWY |
+| `src/server/network/protocol/ticket_validator.cpp` | C1, FIX5, FIX10, FIX13 | **TAK** | ✅ NOWY |
+| `src/server/network/protocol/protocolgame.cpp` | C2, D1, D2-D10, FIX1, FIX3, FIX9, FIX10, FIX15 | **TAK** | |
 | `src/server/network/protocol/protocolgame.hpp` | D1 | **TAK** | |
+| `src/server/CMakeLists.txt` | FIX2 | NIE | |
 | `src/config/config_enums.hpp` | C3 | **TAK** | |
 | `src/config/configmanager.cpp` | C3 | **TAK** | |
 | `src/creatures/creatures_definitions.hpp` | D1 | **TAK** | |
 | `src/creatures/players/player.hpp` | D1, D8 | **TAK** | |
-| `src/game/game.cpp` | D8 | **TAK** | |
+| `src/game/game.cpp` | D8, FIX7 | **TAK** | |
 
 ### Konfiguracja (2 pliki)
 | Plik | Fazy |
 |------|------|
 | `canary/config.lua.dist` | C4 |
 | `canary_test/config.lua` | C4 |
+
+### PHP / MySQL — `canary_test/html_copy/apik/v1/` (9 plików, 7 nowych)
+| Plik | Fazy | Nowy? |
+|------|------|-------|
+| `login.php` | B1, B2, E11, FIX11 | |
+| `ticket.php` | B3, FIX13 | ✅ NOWY |
+| `schema_ticket_gate.sql` | B4 | ✅ NOWY |
+| `schema_launcher.sql` | E5 | ✅ NOWY |
+| `generate_manifest.php` | E1 | ✅ NOWY |
+| `update.php` | E2 | ✅ NOWY |
+| `launcher-token.php` | E3, FIX12 | ✅ NOWY |
+| `launcher-version.php` | E4 | ✅ NOWY |
+| `.env` | B4, E5, E11 (CLIENT_LOCKED) | |
+
+### Launcher Python — `canary_test/launcher/` (5 plików, 5 nowych)
+| Plik | Fazy | Nowy? |
+|------|------|-------|
+| `launcher.py` | E6-E8 | ✅ NOWY |
+| `launcher_config.json` | E6 | ✅ NOWY |
+| `requirements.txt` | E6 | ✅ NOWY |
+| `build_launcher.bat` | E12, FIX17 | ✅ NOWY |
+| `build_launcher.sh` | E12 | ✅ NOWY |
 
 ### Dokumentacja (3 pliki)
 | Plik | Aktualizowane na bieżąco |
@@ -174,6 +231,7 @@ Zadanie uznajemy za gotowe tylko gdy:
 | `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md` | ✅ |
 | `Dokumentacja/01_Instalka_Klient/2026-03/02_DZIENNIK_BUILDOW_GHA.md` | ✅ |
 
-**RAZEM: 23 pliki** (10 C++, 6 Lua, 1 OTUI, 2 config Lua, 1 config dist, 3 dokumentacja)  
-**Niezacommitowane**: wszystkie oprócz A1 (`72681f84c`) i A2-A5 (`b216fe683`)  
-**Commity na branchu**: `72681f84c` (A1), `b216fe683` (A2-A5) — reszta do zacommitowania
+**RAZEM: 42 pliki** (11 C++, 6 Lua, 1 OTUI, 2 config Lua, 1 config dist, 3 dokumentacja, 9 PHP/SQL, 5 launcher Python, 4 wygenerowane)  
+**Niezacommitowane**: wszystkie oprócz A1 (`72681f84c`) i A2-A5 (`b216fe683`) + docs restoration (`d0e121d77`)  
+**Commity na branchu**: `72681f84c` (A1), `b216fe683` (A2-A5), `d0e121d77` (docs) — reszta do zacommitowania  
+**Stan na 2026-03-02**: commit zbiorczy ze wszystkimi zmianami A6-E12 + FIX1-FIX17 + audyty X1-X8 + CR-1..CR-4

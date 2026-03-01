@@ -20,6 +20,7 @@ enum MessageClasses : uint8_t;
 enum ReturnValue : uint16_t;
 enum TextColor_t : uint8_t;
 enum OperatingSystem_t : uint8_t;
+enum PlayerGameMode_t : uint8_t;
 enum ChannelEvent_t : uint8_t;
 enum CyclopediaCharacterInfoType_t : uint8_t;
 enum Resource_t : uint8_t;
@@ -119,6 +120,9 @@ private:
 	void connect(const std::string &playerName, OperatingSystem_t operatingSystem);
 	void disconnectClient(const std::string &message) const;
 	void writeToOutputBuffer(NetworkMessage &msg);
+
+	// D2-D10: Returns true if feature should be blocked for Classic 7.4 mode
+	bool isClassic74Blocked(const std::string_view featureName) const;
 
 	void release() override;
 
@@ -556,6 +560,8 @@ private:
 	bool isOTCR = false;
 
 	uint16_t otclientV8 = 0;
+
+	PlayerGameMode_t pendingGameMode_ = GAMEMODE_MODERN;  // D1: set in onRecvFirstMessage, applied in login()
 
 	void sendOpenStash();
 	void parseStashWithdraw(NetworkMessage &msg);

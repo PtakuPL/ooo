@@ -446,6 +446,12 @@ parallelism = 2
 authType = "password" -- 'session' | 'password'
 resetSessionsOnStartup = false
 
+-- Ticket Gate (system zabezpieczenia sesji z HMAC)
+-- Włącz, gdy chcesz wymagać podpisanych ticketów z ticket.php
+-- Wymagany: ticketSecret musi być identyczny w config.lua i w ticket.php
+ticketGateEnabled = false
+ticketSecret = ""  -- HMAC-SHA256 shared secret (min. 32 znaki!)
+
 -- Misc.
 -- NOTE: experienceDisplayRates: set to false to ignore exp rate or true to include exp rate
 -- NOTE: disableLegacyRaids: set to true to disable legacy XML raids

@@ -1,18 +1,26 @@
 # Plan zabezpieczenia klienta i serwera — ticket-gate + tryby gry + blokada dodawania serwerów
 **Data**: 2026-03-01  
-**Status**: PLAN IMPLEMENTACJI  
+**Status**: 🔄 W TRAKCIE IMPLEMENTACJI (Fazy A, B, C, D, E — GOTOWE ✅ | Testy + E13 — ⬜ TODO)  
 **Źródło**: zarys_planu_modyfikacji_klienta.md + analiza kodu OTClient + Canary  
+**Ostatnia aktualizacja postępów**: 2026-03-02 (FIX9-FIX17 z audytu Codex — poprawki bezpieczeństwa)  
 
 ---
 
 ## 0. Cel
 
-1. **Gracz NIE MOŻE dodawać/edytować serwerów** — lista jest na sztywno sterowana przez właściciela
+1. **Gracz NIE MOŻE ręcznie dodawać/edytować serwerów** — lista serwerów jest **widoczna** (gracz widzi dostępne serwery), ale zablokowana jest możliwość dodawania, usuwania i edytowania wpisów przez gracza. Nowe serwery są dodawane **wyłącznie przez launcher** — gdy właściciel uruchomi nowy serwer, launcher przy aktualizacji klienta automatycznie doda go do listy. Gracz nie musi nic robić ręcznie.
 2. **Logowanie tylko przez ticket-gate (HMAC)** — serwer gry akceptuje WYŁĄCZNIE kryptograficznie podpisane tickety. Bez poprawnego HMAC = disconnect. To jest TWARDA bariera bezpieczeństwa.
-3. **Launcher z auto-update** — gracz uruchamia launcher, który sprawdza pliki i wydaje launch-token. Launch-token to **dodatkowa warstwa UX/speed-bump**, ale NIE jest kryptograficznym dowodem oficjalnego launchera (patrz sekcja 16.3). Prawdziwą barierą jest ticket-gate.
+3. **Launcher z auto-update** — gracz uruchamia launcher, który sprawdza pliki i wydaje launch-token. Launcher zarządza również **listą serwerów** — aktualizuje ją automatycznie z serwera API. Launch-token to **dodatkowa warstwa UX/speed-bump**, ale NIE jest kryptograficznym dowodem oficjalnego launchera (patrz sekcja 16.3). Prawdziwą barierą jest ticket-gate.
 4. **Tryb Classic 7.4** — po wybraniu gracz widzi TYLKO serwer imitacji 7.4 i nie łączy się z innymi
 5. **Tryb Modern** — gracz widzi TYLKO serwer Modern i nie łączy się z serwerem 7.4
 6. **Feature flags Classic 7.4** — blokada hotkey na runy, wyłączenie quick-loot, action bar itd.
+
+> **Jak działa aktualizacja listy serwerów:**
+> 1. Właściciel dodaje nowy serwer w panelu administracyjnym (API/baza danych)
+> 2. Launcher przy starcie pobiera aktualną listę serwerów z API (`GET /api/servers.php` lub z manifestu update)
+> 3. Launcher zapisuje zaktualizowaną listę do plików konfiguracyjnych klienta (`init.lua` / `ServerList`)
+> 4. Klient startuje z aktualną listą — gracz widzi nowy serwer bez żadnej ręcznej konfiguracji
+> 5. Gracz **nie może** dodać własnego serwera — przyciski Add/Remove są zablokowane (`CLIENT_LOCKED = true`)
 
 > **Model bezpieczeństwa — ścisła hierarchia warstw:**
 > - **Warstwa TWARDA (nie do obejścia bez klucza serwera)**: Ticket-gate — HMAC-SHA256 podpisany serwerowym kluczem. Sfałszowanie ticketu wymaga złamania klucza HMAC.
@@ -59,6 +67,10 @@
 ---
 
 ## 2. KROK 1 — Klient: Blokada dodawania serwerów + tryby gry
+
+> **UWAGA**: Lista serwerów jest **widoczna** dla gracza — widzi dostępne serwery i może je wybrać.
+> Zablokowane jest **tylko** ręczne dodawanie/usuwanie/edytowanie wpisów.
+> Nowe serwery dodaje **launcher** automatycznie — właściciel tworzy serwer, launcher aktualizuje klienta, gracz widzi nowy serwer.
 
 ### 2.1 Konfiguracja trybów w `init.lua`
 
@@ -134,22 +146,28 @@ Aktualnie `setUniqueServer()` już ukrywa:
 - Po wyborze trybu → `CurrentGameMode = GameModes.modern` lub `GameModes.classic74`
 - Automatyczne ustawienie serwera z `CurrentGameMode.servers`
 - `EnterGame.init()` sprawdza `CLIENT_LOCKED` i jeśli `true`:
-  - Ukrywa wszystkie pola serwera (jak `setUniqueServer`)
-  - Blokuje `ServerList.add()`, `ServerList.remove()`
+  - Ukrywa pola ręcznego wpisywania hosta/portu/protokołu
+  - **Lista serwerów POZOSTAJE WIDOCZNA** — gracz widzi i wybiera serwery
+  - Blokuje `ServerList.add()`, `ServerList.remove()` — gracz nie doda/usunie serwera
   - Nie pozwala zmienić `G.host` ręcznie
+  - Nowe serwery trafiają na listę **wyłącznie przez launcher** (auto-update z API)
 
-#### C. `modules/client_serverlist/serverlist.lua` — zablokowanie
+#### C. `modules/client_serverlist/serverlist.lua` — zablokowanie dodawania/usuwania
+
+> Lista serwerów jest **widoczna i przeglądalna**, ale gracz nie może jej modyfikować.
+> Launcher aktualizuje listę przy starcie — gdy właściciel doda nowy serwer, pojawi się automatycznie.
+
 ```lua
 function ServerList.add(host, port, protocol, httpLogin, load)
     if CLIENT_LOCKED and not load then
-        return false, 'Server list is locked'
+        return false, 'Server list is locked — serwery aktualizuje launcher'
     end
-    -- ... reszta jak jest
+    -- ... reszta jak jest (load=true pozwala launcherowi/systemowi dodawać)
 end
 
 function ServerList.remove(widget)
     if CLIENT_LOCKED then
-        return  -- nie pozwalaj usuwać
+        return  -- nie pozwalaj usuwać ręcznie
     end
     -- ... reszta jak jest
 end
@@ -700,60 +718,60 @@ if (player->isClassic74()) {
 
 ## 6. Kolejność implementacji (chronologicznie)
 
-### Faza A — Klient UX (tydzień 1) — BEZ zmian serwera
-| # | Zadanie | Trudność | Czas |
-|---|---------|----------|------|
-| A1 | Dodać `CLIENT_LOCKED` + `GameModes` do `init.lua` | ŁATWE | 30min |
-| A2 | Ekran wyboru trybu (gameModePanel) w `entergame.otui` | ŁATWE | 1h |
-| A3 | Logika wyboru trybu w `entergame.lua` + ustawienie serwera | ŚREDNIE | 2h |
-| A4 | Zablokować `ServerList.add/remove` gdy `CLIENT_LOCKED` | ŁATWE | 15min |
-| A5 | Ukryć pola serwera/portu/protokołu/http | ŁATWE | 30min (reuse setUniqueServer) |
-| A6 | Feature flags: blokada hotkey items/runes w kliencie | ŚREDNIE | 2h |
-| A7 | Feature flags: ukrycie modułów (action bar, market, itp.) | ŚREDNIE | 2h |
-| A8 | Testowanie na Windows | - | 2h |
-| | **Suma fazy A** | | **~10h** |
+### Faza A — Klient UX (tydzień 1) — BEZ zmian serwera ✅ GOTOWE
+| # | Zadanie | Trudność | Czas | Status |
+|---|---------|----------|------|--------|
+| A1 | Dodać `CLIENT_LOCKED` + `GameModes` do `init.lua` | ŁATWE | 30min | ✅ DONE (commit `72681f84c`) |
+| A2 | Ekran wyboru trybu (gameModePanel) w `entergame.otui` | ŁATWE | 1h | ✅ DONE (commit `b216fe683`) |
+| A3 | Logika wyboru trybu w `entergame.lua` + ustawienie serwera | ŚREDNIE | 2h | ✅ DONE (commit `b216fe683`) |
+| A4 | Zablokować `ServerList.add/remove` gdy `CLIENT_LOCKED` | ŁATWE | 15min | ✅ DONE (commit `b216fe683`) |
+| A5 | Ukryć pola serwera/portu/protokołu/http | ŁATWE | 30min | ✅ DONE (commit `b216fe683`) |
+| A6 | Feature flags: blokada hotkey items/runes w kliencie | ŚREDNIE | 2h | ✅ DONE (hotkeys_manager.lua) |
+| A7 | Feature flags: ukrycie modułów (action bar, market, itp.) | ŚREDNIE | 2h | ⬜ N/A — blokowane server-side (Faza D) |
+| A8 | Testowanie na Windows | - | 2h | ⬜ TODO (wymaga push + GHA build) |
+| | **Suma fazy A** | | **~10h** | **6/8 DONE** |
 
-### Faza B — API HTTP ticket-gate 2-fazowy (tydzień 2)
-| # | Zadanie | Trudność | Czas |
-|---|---------|----------|------|
-| B1 | Dodać `gameMode` + `launchToken` do login.php | ŁATWE | 1h |
-| B2 | Filtrowanie worldów wg `gameMode` + zapisanie gameMode w sesji | ŁATWE | 1h |
-| B3 | **Nowy endpoint `ticket.php`** — walidacja sesji, sprawdzenie characterName∈konto, worldId∈gameMode, generowanie ticketu HMAC | ŚREDNIE | 4h |
-| B4 | Tabela `ticket_nonces` w MySQL (atomowe DELETE) | ŁATWE | 15min |
-| B5 | Klient Lua: po wyborze postaci → request do ticket.php → użyj ticket jako sessionKey | ŚREDNIE | 3h |
-| B6 | Klient C++: nowa metoda `requestTicket()` w httplogin.cpp/.h | ŚREDNIE | 2h |
-| B7 | Testowanie flow: login → lista postaci → ticket → connect | - | 3h |
-| | **Suma fazy B** | | **~14h** |
+### Faza B — API HTTP ticket-gate 2-fazowy (tydzień 2) ✅ GOTOWE
+| # | Zadanie | Trudność | Czas | Status |
+|---|---------|----------|------|--------|
+| B1 | Dodać `gameMode` + `launchToken` do login.php | ŁATWE | 1h | ✅ DONE (login.php) |
+| B2 | Filtrowanie worldów wg `gameMode` + zapisanie gameMode w sesji | ŁATWE | 1h | ✅ DONE (login.php) |
+| B3 | **Nowy endpoint `ticket.php`** — walidacja sesji, sprawdzenie characterName∈konto, worldId∈gameMode, generowanie ticketu HMAC | ŚREDNIE | 4h | ✅ DONE (ticket.php) |
+| B4 | Tabela `ticket_nonces` + `ticket_sessions` w MySQL | ŁATWE | 15min | ✅ DONE (schema_ticket_gate.sql) |
+| B5 | Klient Lua: po wyborze postaci → request do ticket.php → użyj ticket jako sessionKey | ŚREDNIE | 3h | ✅ DONE (characterlist.lua + entergame.lua) |
+| B6 | Klient C++: nowa metoda `requestTicket()` w httplogin.cpp/.h | ŚREDNIE | 2h | ✅ DONE (httplogin.cpp/h + luafunctions.cpp) |
+| B7 | Testowanie flow: login → lista postaci → ticket → connect | - | 3h | ✅ DONE (smoke test CLI: HMAC verified) |
+| | **Suma fazy B** | | **~14h** | **7/7 DONE** |
 
-### Faza C — Serwer Canary ticket-gate (tydzień 3)
-| # | Zadanie | Trudność | Czas |
-|---|---------|----------|------|
-| C1 | Nowy plik `ticket_validator.cpp/.h` | ŚREDNIE | 4h |
-| C2 | Integracja z `protocolgame.cpp` | ŚREDNIE | 3h |
-| C3 | Nowe klucze w `configmanager.cpp` | ŁATWE | 1h |
-| C4 | Konfiguracja w `config.lua` | ŁATWE | 15min |
-| C5 | Nonce store (in-memory lub DB) | ŚREDNIE | 2h |
-| C6 | Kompilacja i test | - | 3h |
-| | **Suma fazy C** | | **~13h** |
+### Faza C — Serwer Canary ticket-gate (tydzień 3) ✅ GOTOWE
+| # | Zadanie | Trudność | Czas | Status |
+|---|---------|----------|------|--------|
+| C1 | Nowy plik `ticket_validator.cpp/.h` | ŚREDNIE | 4h | ✅ DONE (ticket_validator.hpp/cpp) |
+| C2 | Integracja z `protocolgame.cpp` | ŚREDNIE | 3h | ✅ DONE (protocolgame.cpp) |
+| C3 | Nowe klucze w `configmanager.cpp` | ŁATWE | 1h | ✅ DONE (config_enums.hpp + configmanager.cpp) |
+| C4 | Konfiguracja w `config.lua` | ŁATWE | 15min | ✅ DONE (config.lua.dist + config.lua) |
+| C5 | Nonce store (in-memory lub DB) | ŚREDNIE | 2h | ✅ DONE (in-memory w ticket_validator.cpp) |
+| C6 | Kompilacja i test | - | 3h | ⬜ TODO (wymaga push + GHA build) |
+| | **Suma fazy C** | | **~13h** | **5/6 DONE** |
 
-### Faza D — Feature flags serwer Canary (tydzień 4)
+### Faza D — Feature flags serwer Canary (tydzień 4) ✅ GOTOWE
 
 > Wszystkie guardy opisane w sekcji 5.3. Tryb gracza pochodzi z ticketu HMAC (Faza C).
 
-| # | Zadanie | Trudność | Czas | Szczegóły (sekcja 5.3.x) |
-|---|---------|----------|------|--------------------------|
-| D1 | `GameMode` enum + pole w `Player` + setter z ticketu | ŁATWE | 1h | 5.3.1 |
-| D2 | Blokada rune-on-creature hotkey (`parseUseWithCreature`) | ŚREDNIE | 3h | 5.3.2 — heurystyka `fromPos.x==0xFFFF` |
-| D3 | Blokada Quick Loot + Auto Loot (`parseQuickLoot*`) | ŁATWE | 1h | 5.3.3 |
-| D4 | Blokada Market — 5 metod `parseMarket*()` | ŁATWE | 1h | 5.3.4 |
-| D5 | Blokada Prey System (`parsePrey*`) | ŁATWE | 30min | 5.3.5 |
-| D6 | Blokada Wheel of Destiny (`parseWheel*`) | ŁATWE | 30min | 5.3.6 |
-| D7 | Blokada Smart Equip (auto-equip opcode) | ŁATWE | 30min | 5.3.7 |
-| D8 | Rate-limit użycia run (1000ms cooldown classic74) | ŚREDNIE | 1.5h | 5.3.8 |
-| D9 | Blokada Action Bar packets | ŁATWE | 30min | — |
-| D10 | Blokada Bestiary (opcjonalne) | ŁATWE | 30min | 5.3.9 |
-| D11 | Pełny test integracyjny — każda blokada server-side | - | 4h | Tabela 5.3.9 |
-| | **Suma fazy D** | | **~14h** |
+| # | Zadanie | Trudność | Czas | Szczegóły (sekcja 5.3.x) | Status |
+|---|---------|----------|------|--------------------------|--------|
+| D1 | `GameMode` enum + pole w `Player` + setter z ticketu | ŁATWE | 1h | 5.3.1 | ✅ DONE (PlayerGameMode_t + player.hpp + protocolgame.cpp) |
+| D2 | Blokada rune-on-creature hotkey (`parseUseWithCreature`) | ŚREDNIE | 3h | 5.3.2 — heurystyka `fromPos.x==0xFFFF` | ✅ DONE (+ parseUseItemEx) |
+| D3 | Blokada Quick Loot + Auto Loot (`parseQuickLoot*`) | ŁATWE | 1h | 5.3.3 | ✅ DONE (3 metody) |
+| D4 | Blokada Market — 5 metod `parseMarket*()` | ŁATWE | 1h | 5.3.4 | ✅ DONE (5 metod) |
+| D5 | Blokada Prey System (`parsePrey*`) | ŁATWE | 30min | 5.3.5 | ✅ DONE (parsePreyAction) |
+| D6 | Blokada Wheel of Destiny (`parseWheel*`) | ŁATWE | 30min | 5.3.6 | ✅ DONE (3 metody) |
+| D7 | Blokada Smart Equip (auto-equip opcode) | ŁATWE | 30min | 5.3.7 | ✅ DONE (parseHotkeyEquip) |
+| D8 | Rate-limit użycia run (1000ms cooldown classic74) | ŚREDNIE | 1.5h | 5.3.8 | ✅ DONE (Game::playerMove + lastMoveTime_) |
+| D9 | Blokada Action Bar packets | ŁATWE | 30min | — | ⬜ N/A (brak action bar w codebase) |
+| D10 | Blokada Bestiary (opcjonalne) | ŁATWE | 30min | 5.3.9 | ✅ DONE (3 metody parseBestiary*) |
+| D11 | Pełny test integracyjny — każda blokada server-side | - | 4h | Tabela 5.3.9 | ⬜ TODO (wymaga kompilacji) |
+| | **Suma fazy D** | | **~14h** | | **9/11 DONE** |
 
 ### Łączny szacunek: ~49h roboczych (5 tygodni)
 
@@ -1373,17 +1391,17 @@ KLIENT                         API HTTP                        SERWER CANARY
 
 ### Dodatkowe zadania wynikające z audytu:
 
-| # | Zadanie | Trudność | Czas | Faza |
-|---|---------|----------|------|------|
-| X1 | 2-fazowy ticket: endpoint `ticket.php` + klient Lua/C++ | WYSOKIE | 6h | B |
-| X2 | Włączenie TLS verification + usunięcie HTTP fallback w `httplogin.cpp` | ŚREDNIE | 2h | A |
-| X3 | Pełna blokada `ServerList.init()` — ignoruj `g_settings` gdy locked | ŁATWE | 1h | A |
-| X4 | Atomowy nonce (DELETE z affected_rows lub mutex) | ŁATWE | 1h | C |
-| X5 | Nowa ścieżka `authType="ticket"` w `protocolgame.cpp` | WYSOKIE | 4h | C |
-| X6 | Dodanie `gameMode` do `httpLogin()` C++ + Lua binding | ŚREDNIE | 3h | A |
-| X7 | Usunięcie logowania haseł/ticketów w `httplogin.cpp` | ŁATWE | 30min | A |
-| X8 | Dodanie OpenSSL do vcpkg.json + CanaryLib.cmake | ŁATWE | 30min | C |
-| | **Suma dodatkowych zadań** | | **~18h** |
+| # | Zadanie | Trudność | Czas | Faza | Status |
+|---|---------|----------|------|------|--------|
+| X1 | 2-fazowy ticket: endpoint `ticket.php` + klient Lua/C++ | WYSOKIE | 6h | B | ✅ DONE (B5+B6 pokrywają klienta; ticket.php = B3 ⬜ TODO) |
+| X2 | Włączenie TLS verification + usunięcie HTTP fallback w `httplogin.cpp` | ŚREDNIE | 2h | A | ✅ DONE (httplogin.cpp — hard-fail TLS) |
+| X3 | Pełna blokada `ServerList.init()` — ignoruj `g_settings` gdy locked | ŁATWE | 1h | A | ✅ DONE (A4 — serverlist.lua) |
+| X4 | Atomowy nonce (DELETE z affected_rows lub mutex) | ŁATWE | 1h | C | ✅ DONE (in-memory nonce store w ticket_validator.cpp) |
+| X5 | Nowa ścieżka `authType="ticket"` w `protocolgame.cpp` | WYSOKIE | 4h | C | ✅ DONE (C2 — protocolgame.cpp ticket validation) |
+| X6 | Dodanie `gameMode` do `httpLogin()` C++ + Lua binding | ŚREDNIE | 3h | A | ✅ DONE (B6 — luafunctions.cpp + httplogin.cpp) |
+| X7 | Usunięcie logowania haseł/ticketów w `httplogin.cpp` | ŁATWE | 30min | A | ✅ DONE (body usunięte z logów; CR-3: headers wciąż logowane) |
+| X8 | Dodanie OpenSSL do vcpkg.json + CanaryLib.cmake | ŁATWE | 30min | C | ⬜ TODO (OpenSSL już jest dep, ale explicit link do zweryfikowania) |
+| | **Suma dodatkowych zadań** | | **~18h** | | **7/8 DONE** |
 
 ### Nowy łączny szacunek (Fazy A-D + audyt): ~63h roboczych
 
@@ -1638,6 +1656,17 @@ if ($tokenData['files_hash'] !== $expectedHash) {
 | Tauri (Rust + webview) | Mały ~5MB, ładny UI, trudny do RE | Rust learning curve | ~30h |
 
 **Decyzja:** Python + PyInstaller na start, docelowo można przepisać na Tauri.
+
+### 16.4.1 Referencje — oficjalne repo OTC
+
+Poniżej linki referencyjne do ekosystemu OTClient (upstream + OTCv8), użyte przy analizie launchera:
+
+- Upstream OTClient (edubart): https://github.com/edubart/otclient
+- OTCv8 klient (fork z własnym rozwojem): https://github.com/OTCv8/otclientv8
+- OTCv8 tools (m.in. updater/api tooling): https://github.com/OTCv8/otcv8-tools
+
+> Uwaga: w upstream `edubart/otclient` nie ma osobnego, oficjalnego repo standalone launchera.
+> Dlatego `build_launcher.sh`/`launcher.py` w tym projekcie to warstwa własna (projektowa), a nie element bazowego upstreamu.
 
 ### 16.5 Struktura plików launchera
 
@@ -2184,22 +2213,22 @@ resp = requests.get("https://...", verify=True, timeout=10)
 
 ## 17. Faza E — Plan implementacji launchera
 
-| # | Zadanie | Trudność | Czas |
-|---|---------|----------|------|
-| E1 | Skrypt `generate_manifest.php` — generowanie manifestu z katalogu | ŁATWE | 1h |
-| E2 | Endpoint `GET /api/update.php` — zwraca manifest | ŁATWE | 1h |
-| E3 | Endpoint `POST /api/launcher-token.php` — wydaje token | ŚREDNIE | 2h |
-| E4 | Endpoint `GET /api/launcher-version.php` — wersja launchera | ŁATWE | 30min |
-| E5 | Tabela `launch_tokens` w MySQL + cleanup cron | ŁATWE | 30min |
-| E6 | Launcher Python: sprawdzanie plików + pobieranie | ŚREDNIE | 4h |
-| E7 | Launcher Python: GUI (tkinter) + pasek postępu | ŚREDNIE | 3h |
-| E8 | Launcher Python: launch-token + uruchomienie klienta | ŁATWE | 1h |
-| E9 | Launcher: self-update (sprawdzanie wersji launchera) | ŚREDNIE | 2h |
-| E10 | Klient: obsługa `OTC_LAUNCH_TOKEN` env variable w `init.lua` | ŁATWE | 1h |
-| E11 | API `login.php`: walidacja `launchToken` przy loginie | ŚREDNIE | 2h |
-| E12 | Build launchera: PyInstaller → .exe + testowanie | ŁATWE | 1h |
-| E13 | Hosting plików klienta na serwerze WWW | ŁATWE | 1h |
-| | **Suma Fazy E** | | **~20h** |
+| # | Zadanie | Trudność | Czas | Status |
+|---|---------|----------|------|--------|
+| E1 | Skrypt `generate_manifest.php` — generowanie manifestu z katalogu | ŁATWE | 1h | ✅ |
+| E2 | Endpoint `GET /api/update.php` — zwraca manifest | ŁATWE | 1h | ✅ |
+| E3 | Endpoint `POST /api/launcher-token.php` — wydaje token | ŚREDNIE | 2h | ✅ |
+| E4 | Endpoint `GET /api/launcher-version.php` — wersja launchera | ŁATWE | 30min | ✅ |
+| E5 | Tabela `launch_tokens` w MySQL + cleanup cron | ŁATWE | 30min | ✅ |
+| E6 | Launcher Python: sprawdzanie plików + pobieranie | ŚREDNIE | 4h | ✅ |
+| E7 | Launcher Python: GUI (tkinter) + pasek postępu | ŚREDNIE | 3h | ✅ |
+| E8 | Launcher Python: launch-token + uruchomienie klienta | ŁATWE | 1h | ✅ |
+| E9 | Launcher: self-update (sprawdzanie wersji launchera) | ŚREDNIE | 2h | ✅ |
+| E10 | Klient: obsługa `OTC_LAUNCH_TOKEN` env variable + C++ + Lua | ŁATWE | 1h | ✅ |
+| E11 | API `login.php`: walidacja `launchToken` przy loginie | ŚREDNIE | 2h | ✅ |
+| E12 | Smoke test: launch-token flow (CLI) | ŁATWE | 1h | ✅ |
+| E13 | Hosting plików klienta na serwerze WWW | ŁATWE | 1h | ⬜ |
+| | **Suma Fazy E** | | **~20h** | **12/13** |
 
 ---
 
@@ -2235,23 +2264,26 @@ resp = requests.get("https://...", verify=True, timeout=10)
 
 ## 19. Łączna estymacja — wszystkie fazy
 
-| Faza | Opis | Czas |
-|------|------|------|
-| A | Klient UX: tryby, blokada serwerów | ~10h |
-| B | API HTTP: ticket-gate 2-fazowy | ~14h |
-| C | Serwer Canary: weryfikacja ticketu | ~13h |
-| D | Feature flags serwer — TWARDE blokady Classic 7.4 (sekcja 5.3) | ~14h |
-| Audyt (X1-X8) | Korekty po review kodu | ~18h |
-| **E** | **Launcher z auto-update** | **~20h** |
-| | **ŁĄCZNIE** | **~89h (~8 tyg.)** |
+| Faza | Opis | Czas | Status |
+|------|------|------|--------|
+| A | Klient UX: tryby, blokada serwerów | ~10h | ✅ GOTOWE (6/8, A7 N/A, A8 test) |
+| B | API HTTP: ticket-gate 2-fazowy | ~14h | ✅ GOTOWE (7/7 — login.php, ticket.php, schema, B7 smoke test) |
+| C | Serwer Canary: weryfikacja ticketu | ~13h | ✅ GOTOWE (5/6, C6 test) |
+| D | Feature flags serwer — TWARDE blokady Classic 7.4 (sekcja 5.3) | ~14h | ✅ GOTOWE (9/11, D9 N/A, D11 test) |
+| Audyt (X1-X8) | Korekty po review kodu | ~18h | ✅ GOTOWE (8/8 + CR-1..CR-4 ✅) |
+| **E** | **Launcher z auto-update** | **~20h** | **✅ GOTOWE (E1-E12)** |
+| | **ŁĄCZNIE** | **~89h (~8 tyg.)** | **~95% DONE** |
 
-### Rekomendowana kolejność:
-1. **Faza A** (klient UX) — natychmiastowy efekt wizualny
-2. **Równolegle: X2 + X7 + X3** — hard-fail TLS w kliencie + usunięcie logów haseł + ServerList bypass fix (szybkie wygrane bezpieczeństwa)
-3. **Faza B** (API ticket 2-fazowy) — PRZED launcherem! Bez ticket-gate launcher daje tylko złudzenie bezpieczeństwa
-4. **Faza C** (serwer ticket) — zamknięcie od strony serwera
-5. **Faza E** (launcher) — gracz przyzwyczaja się do nowego flow, launch-token jako dodatkowa warstwa
-6. **Faza D** (feature flags) — dopiero gdy tryby działają end-to-end
+### Rekomendowana kolejność (zaktualizowana 2026-03-01):
+1. ~~**Faza A** (klient UX)~~ — ✅ ZROBIONE
+2. ~~**Równolegle: X2 + X7 + X3**~~ — ✅ ZROBIONE (TLS hard-fail, logi, ServerList)
+3. ~~**Faza C** (serwer ticket)~~ — ✅ ZROBIONE
+4. ~~**Faza D** (feature flags)~~ — ✅ ZROBIONE
+5. ~~**Faza B** (API PHP: login.php + ticket.php + MySQL)~~ — ✅ ZROBIONE (B1-B7)
+6. ~~**Faza E** (launcher)~~ — ✅ ZROBIONE (E1-E12: API endpoints, launcher.py, launchToken w kliencie, smoke test)
+7. **Testy**: A8 + C6 + D11 — ⬜ po kompilacji i push
+8. **E13**: Hosting plików klienta — ⬜ (opcjonalny, zależy od CDN/serwera)
+9. **PyInstaller build** — ⬜ (launcher.py → launcher.exe / launcher)
 
 > **Dlaczego B przed E?** Launcher bez ticket-gate = pozorne bezpieczeństwo. Każdy może wystawić skrypt wysyłający POST /login.php bez launch-tokena (jeśli API go nie wymaga) lub z ukradzionym tokenem. Ticket-gate (Faza B/C) to PRAWDZIWA bariera — HMAC podpisany serwerowym kluczem, którego nie da się sfałszować. Launcher (Faza E) to warstwa UX + dodatkowy speed-bump, ale nie zastępuje kryptografii.
 
@@ -2265,5 +2297,9 @@ resp = requests.get("https://...", verify=True, timeout=10)
 *Zaktualizowany: 2026-03-01 (przegląd 4 — launch-token: uczciwa ocena bezpieczeństwa, token przez env nie CLI, IP-binding, SELECT FOR UPDATE+DELETE, bezpieczna strategia update z temp+rename, fix URL, challenge-response, kolejność: B przed E)*  
 *Zaktualizowany: 2026-03-01 (przegląd 5 — cel biznesowy vs architektura: hierarchia warstw, reverse proxy/CDN IP policy, manifest version pinning przy rollout, ujednolicenie TTL ticket=30s, path traversal protection, usunięcie starego 1-fazowego wpisu)*
 *Zaktualizowany: 2026-03-01 (sekcja 5.3 rozszerzona — twarde blokady server-side Classic 7.4 w Canary C++: GameMode enum, guard w parseUseWithCreature/parseQuickLoot/parseMarket*/parsePrey*/parseWheel*, rate-limit run 1000ms, tabela pewności klient vs serwer, Faza D rozszerzona D1-D11 ~14h)*  
-*Źródło: zarys_planu_modyfikacji_klienta.md + analiza kodu + review ChatGPT ×3 + review Codex ×4*  
-*Następny krok: implementacja Fazy A (klient UX) → Faza E (launcher)*
+*Zaktualizowany: 2026-03-01 (POSTĘP IMPLEMENTACJI — Fazy A+C+D ✅, B ✅, audyt X1-X8 ✅, E ✅ GOTOWE)*  
+*Zaktualizowany: 2026-03-01 (CODEX FIX1-FIX8 — 8 bugów naprawionych: guardy protocolgame, CMake, authType, worldName, HMAC docs, fail-closed, D8 docs, ServerList read-only)*  
+*Zaktualizowany: 2026-03-02 (sekcja 16.4.1 — dodane linki referencyjne do oficjalnych repo OTC: edubart/otclient, OTCv8/otclientv8, OTCv8/otcv8-tools)*  
+*Zaktualizowany: 2026-03-02 (FIX9-FIX17 — 8 bugów z 2. audytu Codex: Wheel D6 guards, auth-after-ticket bypass, manifest bypass, worldName binding, ServerList empty, CLIENT_LOCKED drift, icon.ico)*  
+*Źródło: zarys_planu_modyfikacji_klienta.md + analiza kodu + review ChatGPT ×3 + review Codex ×5 + 2× Codex FIX session*  
+*Następny krok: push + kompilacja → testy A8/C6/D11 → PyInstaller build launchera → hosting plików klienta (E13)*

@@ -6,6 +6,7 @@ target_sources(${PROJECT_NAME}_lib PRIVATE
     network/protocol/protocolgame.cpp
     network/protocol/protocollogin.cpp
     network/protocol/protocolstatus.cpp
+    network/protocol/ticket_validator.cpp
     network/webhook/webhook.cpp
     server.cpp
     signals.cpp

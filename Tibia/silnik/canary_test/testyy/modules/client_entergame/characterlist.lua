@@ -59,8 +59,14 @@ local function tryLogin(charInfo, tries)
 
     CharacterList.hide()
 
-    g_game.loginWorld(G.account, G.password, charInfo.worldName, charInfo.worldHost, charInfo.worldPort,
-                      charInfo.characterName, G.authenticatorToken, G.sessionKey)
+    -- B5: Ticket flow — przy CLIENT_LOCKED żądamy ticketu HMAC przed połączeniem
+    if CLIENT_LOCKED and EnterGame and EnterGame.requestTicket then
+        EnterGame.requestTicket(charInfo)
+    else
+        -- Standardowe połączenie (bez ticket flow)
+        g_game.loginWorld(G.account, G.password, charInfo.worldName, charInfo.worldHost, charInfo.worldPort,
+                          charInfo.characterName, G.authenticatorToken, G.sessionKey)
+    end
 
     loadBox = displayCancelBox(tr("otclient_modules.characterlist.tr_18"), tr("otclient_modules.characterlist.tr_17"))
     connect(loadBox, {

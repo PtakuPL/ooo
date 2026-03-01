@@ -53,6 +53,19 @@ public:
                    uint16_t port, const std::string& email,
                    const std::string& password, int request_id, bool httpLogin);
 
+    // E10: Ustawia launchToken (z launchera) — dodawany do JSON body przy loginie.
+    // Launcher przekazuje token przez zmienną OTC_LAUNCH_TOKEN.
+    void setLaunchToken(const std::string& token);
+
+    // B6: Ticket request — po udanym loginie, przed połączeniem z game serverem.
+    // Wysyła sessionKey + characterName + gameMode + worldName do ticket.php,
+    // odbiera podpisany ticket HMAC do przesłania do Canary.
+    void requestTicket(const std::string& host, const std::string& path,
+                       uint16_t port, const std::string& sessionKey,
+                       const std::string& characterName,
+                       const std::string& gameMode,
+                       const std::string& worldName, int request_id);
+
     httplib::Result loginHttpsJson(const std::string& host,
                                    const std::string& path, uint16_t port,
                                    const std::string& email,
@@ -70,4 +83,5 @@ private:
     std::string worlds;
     std::string session;
     std::string errorMessage;
+    std::string launchToken;  // E10: token z launchera (OTC_LAUNCH_TOKEN)
 };

@@ -197,6 +197,25 @@ public:
 	void setLocale(const std::string &value);
 	[[nodiscard]] const std::string &getLocale() const;
 
+	// D1: Game mode (ticket-gate)
+	PlayerGameMode_t getGameMode() const {
+		return gameMode_;
+	}
+	void setGameMode(PlayerGameMode_t mode) {
+		gameMode_ = mode;
+	}
+	bool isClassic74() const {
+		return gameMode_ == GAMEMODE_CLASSIC74;
+	}
+
+	// D8: Rate-limit movement for Classic 7.4
+	int64_t getLastMoveTime() const {
+		return lastMoveTime_;
+	}
+	void setLastMoveTime(int64_t t) {
+		lastMoveTime_ = t;
+	}
+
 	CreatureType_t getType() const override {
 		return CREATURETYPE_PLAYER;
 	}
@@ -1614,6 +1633,8 @@ private:
 	Faction_t faction = FACTION_PLAYER;
 	QuickLootFilter_t quickLootFilter {};
 	PlayerPronoun_t pronoun = PLAYERPRONOUN_THEY;
+	PlayerGameMode_t gameMode_ = GAMEMODE_MODERN;  // D1: ticket-gate game mode
+	int64_t lastMoveTime_ = 0;  // D8: Classic 7.4 move rate limit
 
 	bool chaseMode = false;
 	bool secureMode = true;

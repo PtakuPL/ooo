@@ -11,17 +11,43 @@ function ServerList.init()
     serverListWindow = g_ui.displayUI('serverlist')
     serverTextList = serverListWindow:getChildById('serverList')
     local processedServers = {}
-    servers = g_settings.getNode('ServerList') or {}
-    if Servers_init then
-        for key, value in pairs(Servers_init) do
-            if not servers[key] then
-                servers[key] = value
-                if not processedServers[key] then
-                    processedServers[key] = true
+
+    -- Przy CLIENT_LOCKED serwery pochodzą wyłącznie z GameModes
+    if CLIENT_LOCKED then
+        servers = {}
+        -- FIX14: Wypełnij ServerList z GameModes, żeby lista nie była pusta
+        if GameModes then
+            for modeKey, mode in pairs(GameModes) do
+                if mode.server and mode.server.host then
+                    local host = mode.server.host
+                    local port = mode.server.port or 7171
+                    local protocol = mode.server.protocol or 1420
+                    local httpLogin = mode.server.httpLoginUrl ~= nil
+                    servers[host] = {
+                        port = port,
+                        protocol = protocol,
+                        account = '',
+                        password = '',
+                        httpLogin = httpLogin,
+                        gameMode = modeKey,
+                    }
+                end
+            end
+        end
+    else
+        servers = g_settings.getNode('ServerList') or {}
+        if Servers_init then
+            for key, value in pairs(Servers_init) do
+                if not servers[key] then
+                    servers[key] = value
+                    if not processedServers[key] then
+                        processedServers[key] = true
+                    end
                 end
             end
         end
     end
+
     if servers then
         ServerList.load()
     end
@@ -30,7 +56,10 @@ end
 function ServerList.terminate()
     ServerList.destroy()
 
-    g_settings.setNode('ServerList', servers)
+    -- Przy CLIENT_LOCKED nie zapisujemy do g_settings — brak persystencji listy
+    if not CLIENT_LOCKED then
+        g_settings.setNode('ServerList', servers)
+    end
 
     ServerList = nil
     serverListWindow = nil
@@ -58,8 +87,9 @@ function ServerList.select()
 end
 
 function ServerList.add(host, port, protocol, httpLogin, load)
-    -- A4: blokada dodawania serwerów gdy klient jest zablokowany
-    if CLIENT_LOCKED then
+    -- A4: blokada dodawania serwerów przez użytkownika gdy klient jest zablokowany
+    -- load=true oznacza wewnętrzne ładowanie (ServerList.load) — to przepuszczamy
+    if CLIENT_LOCKED and not load then
         return false, 'Client is locked — server list is read-only'
     end
 
@@ -145,14 +175,33 @@ function ServerList.destroy()
 end
 
 function ServerList.show()
-    -- A4: nie pokazuj listy serwerów gdy klient jest zablokowany
-    if CLIENT_LOCKED then
-        return
-    end
-
+    -- FIX8: Lista serwerów jest widoczna w trybie read-only gdy CLIENT_LOCKED.
+    -- Dodawanie/usuwanie/wybór serwera jest zablokowane (A4).
+    -- Nowe serwery dodawane są przez launcher.
     if g_game.isOnline() then
         return
     end
+
+    -- Ukryj/pokaż elementy zależnie od CLIENT_LOCKED
+    local buttonAdd = serverListWindow:getChildById('buttonAdd')
+    local buttonOk = serverListWindow:getChildById('buttonOk')
+    if buttonAdd then
+        buttonAdd:setVisible(not CLIENT_LOCKED)
+    end
+    if buttonOk then
+        buttonOk:setVisible(not CLIENT_LOCKED)
+    end
+
+    -- Ukryj przyciski "x" (remove) na każdym wpisie serwera
+    if CLIENT_LOCKED and serverTextList then
+        for _, child in ipairs(serverTextList:getChildren()) do
+            local removeBtn = child:getChildById('remove')
+            if removeBtn then
+                removeBtn:setVisible(false)
+            end
+        end
+    end
+
     serverListWindow:show()
     serverListWindow:raise()
     serverListWindow:focus()

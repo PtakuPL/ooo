@@ -43,27 +43,28 @@ LoginHttp::LoginHttp() {
 }
 
 void LoginHttp::Logger(const auto& req, const auto& res) {
+    // X7+CR-3: NIE logujemy body (dane wrażliwe) ani nagłówków (Set-Cookie itp.)
     std::cout << "======= LOG ======= " << std::endl;
     std::cout << "-- REQUEST --" << std::endl;
     std::cout << req.method << std::endl;
     std::cout << req.path << std::endl;
-    std::cout << req.body << std::endl;
+    // req.body pominięty — dane wrażliwe (email, password)
+    // req.headers pominięte — mogą zawierać tokeny autoryzacji
 
-    for (auto itr = req.headers.begin(); itr != req.headers.end(); ++itr) {
-        std::cout << itr->first << '\t' << itr->second << '\n';
-    }
     std::cout << "-- RESPONSE --" << std::endl;
     std::cout << res.version << std::endl;
     std::cout << res.status << std::endl;
     std::cout << res.reason << std::endl;
-    std::cout << res.body << std::endl;
+    // res.body pominięty — może zawierać session key
+    // res.headers pominięte — mogą zawierać Set-Cookie, auth tokens
     std::cout << res.location << std::endl;
 
-    for (auto itr = res.headers.begin(); itr != res.headers.end(); ++itr) {
-        std::cout << itr->first << '\t' << itr->second << '\n';
-    }
-
     std::cout << "========= " << std::endl;
+}
+
+// E10: setter launchToken — Lua woła http:setLaunchToken(token) przed httpLogin
+void LoginHttp::setLaunchToken(const std::string& token) {
+    this->launchToken = token;
 }
 
 void LoginHttp::startHttpLogin(const std::string& host, const std::string& path,
@@ -74,7 +75,11 @@ void LoginHttp::startHttpLogin(const std::string& host, const std::string& path,
     cli.set_logger(
         [this](const auto& req, const auto& res) { LoginHttp::Logger(req, res); });
 
-    const auto body = json{ {"email", email}, {"password", password}, {"stayloggedin", true}, {"type", "login"} };
+    // E10: launchToken dołączany do body logowania
+    json body = { {"email", email}, {"password", password}, {"stayloggedin", true}, {"type", "login"} };
+    if (!this->launchToken.empty()) {
+        body["launchToken"] = this->launchToken;
+    }
     const httplib::Headers headers = { {"User-Agent", "Mozilla/5.0"} };
 
     if (auto res = cli.Post(path, headers, body.dump(1), "application/json")) {
@@ -102,12 +107,11 @@ void LoginHttp::httpLogin(const std::string& host, const std::string& path,
                           bool httpLogin) {
 #ifndef __EMSCRIPTEN__
     (void)g_asyncDispatcher.submit_task(
-        [this, host, path, port, email, password, request_id, httpLogin] {
+        [this, host, path, port, email, password, request_id] {
         httplib::Result result =
             this->loginHttpsJson(host, path, port, email, password);
-        if (httpLogin && (!result || result->status != Success)) {
-            result = loginHttpJson(host, path, port, email, password);
-        }
+        // X2b: BRAK fallbacku na HTTP — jeśli HTTPS fail, to fail.
+        // Usunięto: if (httpLogin && ...) { result = loginHttpJson(...); }
 
         if (result && result->status == Success) {
             g_dispatcher.addEvent([this, request_id] {
@@ -132,7 +136,8 @@ void LoginHttp::httpLogin(const std::string& host, const std::string& path,
                 }
             } else {
                 status = -1;
-                msg = "Unknown error.\nCheck: \n-Enable Http login\n-Check Apache\n-Check login.php\n-check port 80/8080\n-Check Cloudflare";
+                // CR-2: Zaktualizowany komunikat — HTTPS-only, bez wzmianki o HTTP/port 80
+                msg = "Cannot connect to login server (HTTPS).\nCheck:\n- Server address and port\n- Apache / nginx running\n- login.php accessible\n- TLS certificate valid\n- Cloudflare / firewall rules";
             }
 
             g_dispatcher.addEvent([this, request_id, status, msg] {
@@ -143,7 +148,7 @@ void LoginHttp::httpLogin(const std::string& host, const std::string& path,
     });
 #else
     (void)g_asyncDispatcher.submit_task(
-        [this, host, path, port, email, password, request_id, httpLogin] {
+        [this, host, path, port, email, password, request_id] {
         emscripten_fetch_attr_t attr;
         emscripten_fetch_attr_init(&attr);
         strcpy(attr.requestMethod, "POST");
@@ -153,18 +158,18 @@ void LoginHttp::httpLogin(const std::string& host, const std::string& path,
         };
         attr.requestHeaders = headers;
         attr.attributes = EMSCRIPTEN_FETCH_LOAD_TO_MEMORY | EMSCRIPTEN_FETCH_SYNCHRONOUS;
+        // E10: launchToken dołączany do body logowania
         json body = json{ {"email", email}, {"password", password}, {"stayloggedin", true}, {"type", "login"} };
+        if (!this->launchToken.empty()) {
+            body["launchToken"] = this->launchToken;
+        }
         std::string bodyStr = body.dump(1);
         attr.requestData = bodyStr.data();
         attr.requestDataSize = bodyStr.length();
 
         std::string url = "https://" + (host.length() > 0 ? host : "127.0.0.1") + ":" + std::to_string(port) + path;
         emscripten_fetch_t* fetch = emscripten_fetch(&attr, url.c_str());
-
-        if (fetch->status != 200 && httpLogin) {
-            std::string url = "http://" + (host.length() > 0 ? host : "127.0.0.1") + ":" + std::to_string(port) + path;
-            fetch = emscripten_fetch(&attr, url.c_str());
-        }
+        // X2b: BRAK fallbacku na HTTP w Emscripten — tylko HTTPS.
 
         if (fetch && fetch->status == 200 &&
                !parseJsonResponse(std::string(fetch->data, fetch->numBytes))) {
@@ -212,9 +217,13 @@ httplib::Result LoginHttp::loginHttpsJson(const std::string& host,
         [this](const auto& req, const auto& res) { LoginHttp::Logger(req, res); });
 
     client.set_ca_cert_path("./cacert.pem");
-    client.enable_server_certificate_verification(false);
+    client.enable_server_certificate_verification(true);  // X2: TLS hard-fail — odrzucaj nieważne certy
 
-    const json body = { {"email", email}, {"password", password}, {"stayloggedin", true}, {"type", "login"} };
+    // E10: launchToken dołączany do body logowania
+    json body = { {"email", email}, {"password", password}, {"stayloggedin", true}, {"type", "login"} };
+    if (!this->launchToken.empty()) {
+        body["launchToken"] = this->launchToken;
+    }
     const httplib::Headers headers = { {"User-Agent", "Mozilla/5.0"} };
 
     httplib::Result response =
@@ -247,7 +256,11 @@ httplib::Result LoginHttp::loginHttpJson(const std::string& host,
         [this](const auto& req, const auto& res) { LoginHttp::Logger(req, res); });
 
     const httplib::Headers headers = { {"User-Agent", "Mozilla/5.0"} };
-    const json body = { {"email", email}, {"password", password}, {"stayloggedin", true}, {"type", "login"} };
+    // E10: launchToken dołączany do body logowania
+    json body = { {"email", email}, {"password", password}, {"stayloggedin", true}, {"type", "login"} };
+    if (!this->launchToken.empty()) {
+        body["launchToken"] = this->launchToken;
+    }
 
     httplib::Result response =
         client.Post(path, headers, body.dump(), "application/json");
@@ -266,6 +279,129 @@ httplib::Result LoginHttp::loginHttpJson(const std::string& host,
     }
 
     return response;
+}
+
+// ============================================================
+// B6: requestTicket — żądanie ticketu HMAC przed połączeniem z game serverem
+// Flow: klient → POST ticket.php {sessionKey, characterName, gameMode, worldName}
+//       ticket.php → {ticket: "HMAC_SIGNED_TOKEN", expiresAt: unix_ts}
+//       klient → przekazuje ticket do g_game.loginWorld (Faza C)
+// ============================================================
+void LoginHttp::requestTicket(const std::string& host, const std::string& path,
+                              uint16_t port, const std::string& sessionKey,
+                              const std::string& characterName,
+                              const std::string& gameMode,
+                              const std::string& worldName, int request_id) {
+#ifndef __EMSCRIPTEN__
+    (void)g_asyncDispatcher.submit_task(
+        [this, host, path, port, sessionKey, characterName, gameMode, worldName, request_id] {
+        httplib::SSLClient client(host, port);
+        client.set_ca_cert_path("./cacert.pem");
+        client.enable_server_certificate_verification(true);  // TLS hard-fail
+
+        const json body = {
+            {"sessionKey", sessionKey},
+            {"characterName", characterName},
+            {"gameMode", gameMode},
+            {"worldName", worldName},
+            {"type", "ticket"}
+        };
+        const httplib::Headers headers = {{"User-Agent", "Mozilla/5.0"}};
+
+        httplib::Result response =
+            client.Post(path, headers, body.dump(), "application/json");
+
+        if (response && response->status == Success) {
+            try {
+                auto respJson = json::parse(response->body);
+                if (respJson.contains("ticket")) {
+                    std::string ticket = respJson["ticket"].get<std::string>();
+                    g_dispatcher.addEvent([this, request_id, ticket] {
+                        g_lua.callGlobalField("EnterGame", "onTicketSuccess",
+                                              request_id, ticket);
+                    });
+                    return;
+                }
+            } catch (const std::exception& e) {
+                std::cout << "Ticket JSON parse error: " << e.what() << std::endl;
+            }
+        }
+
+        // Ticket request failed
+        std::string msg = "Ticket request failed.";
+        int status = 0;
+        if (response) {
+            status = response->status;
+            try {
+                auto errJson = json::parse(response->body);
+                if (errJson.contains("errorMessage")) {
+                    msg = errJson["errorMessage"].get<std::string>();
+                }
+            } catch (...) {}
+        } else {
+            status = -1;
+            msg = "Cannot connect to ticket server (HTTPS).";
+        }
+
+        g_dispatcher.addEvent([this, request_id, status, msg] {
+            g_lua.callGlobalField("EnterGame", "onTicketFailed",
+                                  request_id, msg, status);
+        });
+    });
+#else
+    // Emscripten: ticket request via emscripten_fetch (HTTPS only)
+    (void)g_asyncDispatcher.submit_task(
+        [this, host, path, port, sessionKey, characterName, gameMode, worldName, request_id] {
+        emscripten_fetch_attr_t attr;
+        emscripten_fetch_attr_init(&attr);
+        strcpy(attr.requestMethod, "POST");
+        static const char* const headers[] = {
+            "Content-Type", "application/json; charset=utf-8",
+            0,
+        };
+        attr.requestHeaders = headers;
+        attr.attributes = EMSCRIPTEN_FETCH_LOAD_TO_MEMORY | EMSCRIPTEN_FETCH_SYNCHRONOUS;
+
+        json body = {
+            {"sessionKey", sessionKey},
+            {"characterName", characterName},
+            {"gameMode", gameMode},
+            {"worldName", worldName},
+            {"type", "ticket"}
+        };
+        std::string bodyStr = body.dump(1);
+        attr.requestData = bodyStr.data();
+        attr.requestDataSize = bodyStr.length();
+
+        std::string url = "https://" + (host.length() > 0 ? host : "127.0.0.1") +
+                          ":" + std::to_string(port) + path;
+        emscripten_fetch_t* fetch = emscripten_fetch(&attr, url.c_str());
+
+        if (fetch && fetch->status == 200) {
+            try {
+                auto respJson = json::parse(std::string(fetch->data, fetch->numBytes));
+                if (respJson.contains("ticket")) {
+                    std::string ticket = respJson["ticket"].get<std::string>();
+                    emscripten_fetch_close(fetch);
+                    g_dispatcher.addEvent([this, request_id, ticket] {
+                        g_lua.callGlobalField("EnterGame", "onTicketSuccess",
+                                              request_id, ticket);
+                    });
+                    return;
+                }
+            } catch (...) {}
+        }
+
+        std::string msg = "Ticket request failed.";
+        int status = fetch ? fetch->status : -1;
+        emscripten_fetch_close(fetch);
+
+        g_dispatcher.addEvent([this, request_id, status, msg] {
+            g_lua.callGlobalField("EnterGame", "onTicketFailed",
+                                  request_id, msg, status);
+        });
+    });
+#endif
 }
 
 bool LoginHttp::parseJsonResponse(const std::string& body) {

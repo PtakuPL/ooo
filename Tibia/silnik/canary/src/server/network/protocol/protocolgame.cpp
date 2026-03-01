@@ -8,8 +8,10 @@
  */
 
 #include "server/network/protocol/protocolgame.hpp"
+#include "server/network/protocol/ticket_validator.hpp"
 
 #include "account/account.hpp"
+#include "account/account_repository.hpp"
 #include "config/configmanager.hpp"
 #include "core.hpp"
 #include "creatures/appearance/mounts/mounts.hpp"
@@ -527,6 +529,16 @@ void ProtocolGame::release() {
 	Protocol::release();
 }
 
+// D2-D10: Helper — returns true and sends message if feature is blocked for Classic 7.4
+bool ProtocolGame::isClassic74Blocked(const std::string_view featureName) const {
+	if (player && player->isClassic74()) {
+		player->sendTextMessage(MESSAGE_STATUS_SMALL,
+			fmt::format("Ta funkcja nie jest dostepna w trybie Classic 7.4: {}.", featureName));
+		return true;
+	}
+	return false;
+}
+
 void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingSystem_t operatingSystem) {
 	// OTCV8 features
 	if (otclientV8 > 0) {
@@ -553,6 +565,7 @@ void ProtocolGame::login(const std::string &name, uint32_t accountId, OperatingS
 	if (!foundPlayer) {
 		player = std::make_shared<Player>(getThis());
 		player->setName(name);
+		player->setGameMode(pendingGameMode_);  // D1: apply game mode from ticket-gate
 
 		player->setID();
 
@@ -704,6 +717,7 @@ void ProtocolGame::connect(const std::string &playerName, OperatingSystem_t oper
 	}
 
 	player = foundPlayer;
+	player->setGameMode(pendingGameMode_);  // D1: update game mode on reconnect
 
 	g_chat().removeUserFromAllChannels(player);
 	player->clearModalWindows();
@@ -821,7 +835,11 @@ void ProtocolGame::onRecvFirstMessage(NetworkMessage &msg) {
 	std::string accountDescriptor = sessionKey;
 	std::string password;
 
-	if (authType != "session") {
+	// C2/FIX3: When ticket-gate is enabled, sessionKey contains HMAC ticket
+	// — skip the normal session/password split logic entirely.
+	const bool ticketGateActive = TicketValidator::getInstance().isEnabled();
+
+	if (!ticketGateActive && authType != "session") {
 		size_t pos = sessionKey.find('\n');
 		if (pos == std::string::npos) {
 			ss << "You must enter your " << (oldProtocol ? "username" : "email") << ".";
@@ -845,6 +863,33 @@ void ProtocolGame::onRecvFirstMessage(NetworkMessage &msg) {
 	}
 
 	std::string characterName = msg.getString();
+
+	// ============================================================
+	// C2: Ticket-gate validation
+	// Jeśli ticket-gate jest włączony, sessionKey zawiera ticket HMAC
+	// zamiast zwykłego session key. Walidujemy go tutaj.
+	// ============================================================
+	std::string playerGameMode;  // tryb gry z ticketu (np. "classic74")
+	uint32_t ticketAccountId = 0;  // FIX10: accountId z ticketu
+	bool ticketValidated = false;
+	if (TicketValidator::getInstance().isEnabled()) {
+		std::string ticketError;
+		if (!TicketValidator::getInstance().validateTicket(
+		        sessionKey, characterName, playerGameMode, ticketAccountId, ticketError)) {
+			disconnectClient("Ticket validation failed: " + ticketError);
+			return;
+		}
+		ticketValidated = true;
+		g_logger().info("[ProtocolGame] Ticket validated: character='{}' gameMode='{}' accountId={}",
+		                characterName, playerGameMode, ticketAccountId);
+	}
+
+	// D1: Store game mode for later application to the Player object in login()
+	if (playerGameMode == "classic74") {
+		pendingGameMode_ = GAMEMODE_CLASSIC74;
+	} else {
+		pendingGameMode_ = GAMEMODE_MODERN;
+	}
 
 	const auto &onlinePlayer = g_game().getPlayerByName(characterName);
 	const auto &foundPlayer = !onlinePlayer ? g_game().getDeadPlayer(characterName) : onlinePlayer;
@@ -910,7 +955,17 @@ void ProtocolGame::onRecvFirstMessage(NetworkMessage &msg) {
 	}
 
 	uint32_t accountId;
-	if (!IOLoginData::gameWorldAuthentication(accountDescriptor, password, characterName, accountId, oldProtocol, getIP())) {
+	// FIX10: Gdy ticket-gate zwalidował ticket, accountId pochodzi z ticketu.
+	// Pomijamy gameWorldAuthentication — ticket.php już zweryfikował konto + postać.
+	// gameWorldAuthentication szukałby konta po ticket-string → zawsze fail.
+	if (ticketValidated) {
+		accountId = ticketAccountId;
+		// Nadal sprawdź czy postać istnieje i należy do konta
+		if (!g_accountRepository().getCharacterByAccountIdAndName(accountId, characterName)) {
+			disconnectClient("Character does not belong to account (ticket).");
+			return;
+		}
+	} else if (!IOLoginData::gameWorldAuthentication(accountDescriptor, password, characterName, accountId, oldProtocol, getIP())) {
 		ss.str(std::string());
 		if (authType == "session") {
 			ss << "Your session has expired. Please log in again.";
@@ -1460,6 +1515,11 @@ void ProtocolGame::parseHotkeyEquip(NetworkMessage &msg) {
 		return;
 	}
 
+	// D7: Block Smart Equip (hotkey equip) for Classic 7.4
+	if (isClassic74Blocked("Smart Equip")) {
+		return;
+	}
+
 	auto itemId = msg.get<uint16_t>();
 	uint8_t tier = 0;
 	bool hasTier = Item::items[itemId].upgradeClassification > 0;
@@ -1839,6 +1899,17 @@ void ProtocolGame::parseUseItemEx(NetworkMessage &msg) {
 	Position toPos = msg.getPosition();
 	auto toItemId = msg.get<uint16_t>();
 	uint8_t toStackPos = msg.getByte();
+
+	// D2: Block rune-from-hotkey for Classic 7.4
+	if (player && player->isClassic74() && fromPos.x == 0xFFFF) {
+		const auto &itemType = Item::items[fromItemId];
+		if (itemType.isRune()) {
+			player->sendTextMessage(MESSAGE_STATUS_SMALL,
+				"Uzycie run z hotkeya nie jest dostepne w trybie Classic 7.4.");
+			return;
+		}
+	}
+
 	g_game().playerUseItemEx(player->getID(), fromPos, fromStackPos, fromItemId, toPos, toStackPos, toItemId);
 }
 
@@ -1847,6 +1918,18 @@ void ProtocolGame::parseUseWithCreature(NetworkMessage &msg) {
 	auto itemId = msg.get<uint16_t>();
 	uint8_t fromStackPos = msg.getByte();
 	auto creatureId = msg.get<uint32_t>();
+
+	// D2: Block rune-on-creature hotkey for Classic 7.4
+	// Check if item is a rune (from hotkey position 0xFFFF)
+	if (player && player->isClassic74() && fromPos.x == 0xFFFF) {
+		const auto &itemType = Item::items[itemId];
+		if (itemType.isRune()) {
+			player->sendTextMessage(MESSAGE_STATUS_SMALL,
+				"Uzycie run z hotkeya nie jest dostepne w trybie Classic 7.4.");
+			return;
+		}
+	}
+
 	g_game().playerUseWithCreature(player->getID(), fromPos, fromStackPos, creatureId, itemId);
 }
 
@@ -1899,6 +1982,11 @@ void ProtocolGame::parseQuickLoot(NetworkMessage &msg) {
 		return;
 	}
 
+	// D3: Block Quick Loot for Classic 7.4
+	if (isClassic74Blocked("Quick Loot")) {
+		return;
+	}
+
 	uint8_t variant = msg.getByte();
 	const Position pos = msg.getPosition();
 	auto itemId = 0;
@@ -1920,6 +2008,11 @@ void ProtocolGame::parseQuickLoot(NetworkMessage &msg) {
 
 void ProtocolGame::parseLootContainer(NetworkMessage &msg) {
 	if (oldProtocol) {
+		return;
+	}
+
+	// D3: Block Auto Loot containers for Classic 7.4
+	if (isClassic74Blocked("Auto Loot")) {
 		return;
 	}
 
@@ -1959,6 +2052,11 @@ void ProtocolGame::parseLootContainer(NetworkMessage &msg) {
 
 void ProtocolGame::parseQuickLootBlackWhitelist(NetworkMessage &msg) {
 	if (oldProtocol) {
+		return;
+	}
+
+	// D3: Block Quick Loot config for Classic 7.4
+	if (isClassic74Blocked("Quick Loot")) {
 		return;
 	}
 
@@ -2397,6 +2495,11 @@ void ProtocolGame::parseBestiarySendRaces() {
 		return;
 	}
 
+	// D10: Block Bestiary for Classic 7.4
+	if (isClassic74Blocked("Bestiary")) {
+		return;
+	}
+
 	NetworkMessage msg;
 	msg.addByte(0xD5);
 	msg.add<uint16_t>(BESTY_RACE_LAST);
@@ -2419,6 +2522,7 @@ void ProtocolGame::parseBestiarySendRaces() {
 		uint16_t unlockedCount = g_iobestiary().getBestiaryRaceUnlocked(player, static_cast<BestiaryType_t>(i));
 		msg.add<uint16_t>(unlockedCount);
 	}
+
 	writeToOutputBuffer(msg);
 
 	player->sendBestiaryCharms();
@@ -2437,6 +2541,11 @@ void ProtocolGame::sendBestiaryEntryChanged(uint16_t raceid) {
 
 void ProtocolGame::parseBestiarysendMonsterData(NetworkMessage &msg) {
 	if (oldProtocol) {
+		return;
+	}
+
+	// D10: Block Bestiary for Classic 7.4
+	if (isClassic74Blocked("Bestiary")) {
 		return;
 	}
 
@@ -3074,6 +3183,11 @@ void ProtocolGame::parseBestiarySendCreatures(NetworkMessage &msg) {
 		return;
 	}
 
+	// D10: Block Bestiary for Classic 7.4
+	if (isClassic74Blocked("Bestiary")) {
+		return;
+	}
+
 	std::ostringstream ss;
 	std::map<uint16_t, std::string> race = {};
 	std::string text;
@@ -3169,6 +3283,11 @@ void ProtocolGame::parseOfferDescription(NetworkMessage &msg) {
 }
 
 void ProtocolGame::parsePreyAction(NetworkMessage &msg) {
+	// D5: Block Prey System for Classic 7.4
+	if (isClassic74Blocked("Prey System")) {
+		return;
+	}
+
 	int8_t index = -1;
 	uint8_t slot = msg.getByte();
 	uint8_t action = msg.getByte();
@@ -3241,10 +3360,20 @@ void ProtocolGame::parseQuestLine(NetworkMessage &msg) {
 }
 
 void ProtocolGame::parseMarketLeave() {
+	// D4: Block Market for Classic 7.4
+	if (isClassic74Blocked("Market")) {
+		return;
+	}
+
 	g_game().playerLeaveMarket(player->getID());
 }
 
 void ProtocolGame::parseMarketBrowse(NetworkMessage &msg) {
+	// D4: Block Market for Classic 7.4
+	if (isClassic74Blocked("Market")) {
+		return;
+	}
+
 	uint16_t browseId = oldProtocol ? msg.get<uint16_t>() : static_cast<uint16_t>(msg.getByte());
 
 	if ((oldProtocol && browseId == MARKETREQUEST_OWN_OFFERS_OLD) || (!oldProtocol && browseId == MARKETREQUEST_OWN_OFFERS)) {
@@ -3265,6 +3394,11 @@ void ProtocolGame::parseMarketBrowse(NetworkMessage &msg) {
 }
 
 void ProtocolGame::parseMarketCreateOffer(NetworkMessage &msg) {
+	// D4: Block Market for Classic 7.4
+	if (isClassic74Blocked("Market")) {
+		return;
+	}
+
 	uint8_t type = msg.getByte();
 	auto itemId = msg.get<uint16_t>();
 	uint8_t itemTier = 0;
@@ -3281,6 +3415,11 @@ void ProtocolGame::parseMarketCreateOffer(NetworkMessage &msg) {
 }
 
 void ProtocolGame::parseMarketCancelOffer(NetworkMessage &msg) {
+	// D4: Block Market for Classic 7.4
+	if (isClassic74Blocked("Market")) {
+		return;
+	}
+
 	auto timestamp = msg.get<uint32_t>();
 	auto counter = msg.get<uint16_t>();
 	if (counter > 0) {
@@ -3291,6 +3430,11 @@ void ProtocolGame::parseMarketCancelOffer(NetworkMessage &msg) {
 }
 
 void ProtocolGame::parseMarketAcceptOffer(NetworkMessage &msg) {
+	// D4: Block Market for Classic 7.4
+	if (isClassic74Blocked("Market")) {
+		return;
+	}
+
 	auto timestamp = msg.get<uint32_t>();
 	auto counter = msg.get<uint16_t>();
 	auto amount = msg.get<uint16_t>();
@@ -9753,12 +9897,22 @@ void ProtocolGame::parseOpenWheel(NetworkMessage &msg) {
 		return;
 	}
 
+	// D6: Block Wheel of Destiny for Classic 7.4
+	if (isClassic74Blocked("Wheel of Destiny")) {
+		return;
+	}
+
 	auto ownerId = msg.get<uint32_t>();
 	g_game().playerOpenWheel(player->getID(), ownerId);
 }
 
 void ProtocolGame::parseWheelGemAction(NetworkMessage &msg) {
 	if (oldProtocol || !g_configManager().getBoolean(TOGGLE_WHEELSYSTEM)) {
+		return;
+	}
+
+	// D6: Block Wheel of Destiny for Classic 7.4
+	if (isClassic74Blocked("Wheel of Destiny")) {
 		return;
 	}
 
@@ -9770,6 +9924,11 @@ void ProtocolGame::sendOpenWheelWindow(uint32_t ownerId) {
 		return;
 	}
 
+	// D6: Block Wheel of Destiny for Classic 7.4
+	if (isClassic74Blocked("Wheel of Destiny")) {
+		return;
+	}
+
 	NetworkMessage msg;
 	player->wheel().sendOpenWheelWindow(msg, ownerId);
 	writeToOutputBuffer(msg);
@@ -9777,6 +9936,11 @@ void ProtocolGame::sendOpenWheelWindow(uint32_t ownerId) {
 
 void ProtocolGame::parseSaveWheel(NetworkMessage &msg) {
 	if (oldProtocol || !g_configManager().getBoolean(TOGGLE_WHEELSYSTEM)) {
+		return;
+	}
+
+	// D6: Block Wheel of Destiny for Classic 7.4
+	if (isClassic74Blocked("Wheel of Destiny")) {
 		return;
 	}
 

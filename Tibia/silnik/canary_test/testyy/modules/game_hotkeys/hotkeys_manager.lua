@@ -525,6 +525,14 @@ function doKeyCombo(keyCombo)
 end
 
 function executeHotkeyItem(action, itemId, subType)
+    -- A6: Blokada hotkey na itemy/runy w trybie Classic 7.4
+    if not isFeatureEnabled("hotkeys_items") then
+        modules.game_textmessage.displayStatusMessage(
+            "Hotkey na itemy/runy jest zablokowany w trybie Classic 7.4."
+        )
+        return
+    end
+
     if action == HOTKEY_MANAGER_USE then
         if g_game.getClientVersion() < 780 or subType then
             local item = g_game.findPlayerItem(itemId, subType or -1)

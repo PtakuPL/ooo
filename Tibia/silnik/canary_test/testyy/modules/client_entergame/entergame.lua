@@ -688,7 +688,28 @@ function EnterGame.tryHttpLogin(clientVersion, httpLogin)
         return
     end
 
-    local host, path = G.host:match("([^/]+)/([^/].*)")
+    -- CR-1: Gdy CLIENT_LOCKED, użyj httpLoginUrl z konfiguracji trybu gry
+    -- (G.host to sam hostname, nie zawiera ścieżki /login.php)
+    local host, path
+    if CLIENT_LOCKED then
+        local srv = getCurrentServerConfig()
+        if srv and srv.httpLoginUrl then
+            host = srv.httpLoginUrl:match("https?://([^/:]+)")
+            path = srv.httpLoginUrl:match("https?://[^/]+(/.+)") or "/"
+            -- Port z httpLoginUrl lub z config serwera
+            local urlPort = srv.httpLoginUrl:match(":(%d+)")
+            if urlPort then
+                G.port = tonumber(urlPort)
+            elseif not G.port or G.port == 0 then
+                G.port = 443
+            end
+        else
+            -- Fallback: parsuj G.host jak dotychczas
+            host, path = G.host:match("([^/]+)/([^/].*)")
+        end
+    else
+        host, path = G.host:match("([^/]+)/([^/].*)")
+    end
     local url = G.host
 
     if not G.port then
@@ -724,6 +745,8 @@ function EnterGame.tryHttpLogin(clientVersion, httpLogin)
     G.requestId = math.random(1)
 
     local http = LoginHttp.create()
+    -- E10: Przekaż launchToken z launchera (env OTC_LAUNCH_TOKEN) do C++ → JSON body
+    http:setLaunchToken(G.launchToken or "")
     http:httpLogin(host, path, G.port, G.account, G.password, G.requestId, httpLogin)
 end
 
@@ -798,6 +821,141 @@ function EnterGame.loginFailed(requestId, msg, result)
         return
     end
     onError(nil, msg, result)
+end
+
+-- ============================================================
+-- B5: TICKET FLOW — żądanie ticketu HMAC przed połączeniem z game serverem
+-- ============================================================
+
+-- Dane ticketu (globalne — używane przez characterlist.lua)
+G.ticketToken = nil        -- otrzymany ticket HMAC
+G.ticketRequestId = 0      -- ID bieżącego żądania ticketu
+G.pendingCharInfo = nil    -- charInfo czekający na ticket
+
+-- Żądaj ticket od ticket.php (wywoływane z characterlist.lua przed g_game.loginWorld)
+function EnterGame.requestTicket(charInfo)
+    if not CLIENT_LOCKED or not CurrentGameMode then
+        -- Brak ticket flow — połącz bezpośrednio
+        EnterGame.onTicketBypassed(charInfo)
+        return
+    end
+
+    local srv = getCurrentServerConfig()
+    if not srv or not srv.httpLoginUrl then
+        -- FIX6: fail-closed — brak konfiguracji = błąd, nie bypass
+        g_logger.warning("[TICKET] Brak httpLoginUrl w konfiguracji serwera")
+        EnterGame.onTicketConfigError("Brak httpLoginUrl w konfiguracji serwera. Skontaktuj się z administratorem.")
+        return
+    end
+
+    -- Parsuj host/path z httpLoginUrl (np. "https://example.com/login.php" → host="example.com", ticketPath="/ticket.php")
+    local urlHost = srv.httpLoginUrl:match("https?://([^/]+)")
+    if not urlHost then
+        -- FIX6: fail-closed — nie można sparsować URL = błąd
+        g_logger.warning("[TICKET] Nie można sparsować hosta z httpLoginUrl: " .. tostring(srv.httpLoginUrl))
+        EnterGame.onTicketConfigError("Nieprawidłowy format httpLoginUrl: " .. tostring(srv.httpLoginUrl))
+        return
+    end
+
+    -- ticket.php jest obok login.php
+    local basePath = srv.httpLoginUrl:match("https?://[^/]+(/.+)") or "/"
+    local ticketPath = basePath:gsub("[^/]+$", "ticket.php")
+
+    G.pendingCharInfo = charInfo
+    G.ticketToken = nil
+    math.randomseed(os.time())
+    G.ticketRequestId = math.random(1000000)
+
+    local http = LoginHttp.create()
+    http:requestTicket(urlHost, ticketPath, srv.port, G.sessionKey or "",
+                       charInfo.characterName, CurrentGameMode,
+                       charInfo.worldName or "", G.ticketRequestId)
+
+    g_logger.info("[TICKET] Requesting ticket for " .. charInfo.characterName ..
+                  " mode=" .. CurrentGameMode .. " world=" .. (charInfo.worldName or "?") ..
+                  " from " .. urlHost .. ticketPath)
+end
+
+-- Callback C++: ticket otrzymany pomyślnie
+function EnterGame.onTicketSuccess(requestId, ticket)
+    if G.ticketRequestId ~= requestId then
+        return
+    end
+
+    G.ticketToken = ticket
+    g_logger.info("[TICKET] Ticket received, connecting to game server...")
+
+    if G.pendingCharInfo then
+        local charInfo = G.pendingCharInfo
+        G.pendingCharInfo = nil
+        -- Połącz z game serverem — ticket jest w G.ticketToken
+        -- CharacterList wie że ma użyć ticketu
+        EnterGame.connectWithTicket(charInfo)
+    end
+end
+
+-- Callback C++: ticket nie powiódł się
+function EnterGame.onTicketFailed(requestId, msg, status)
+    if G.ticketRequestId ~= requestId then
+        return
+    end
+
+    G.pendingCharInfo = nil
+    G.ticketToken = nil
+
+    g_logger.warning("[TICKET] Failed: " .. tostring(msg) .. " (status: " .. tostring(status) .. ")")
+
+    -- Pokaz błąd i wróć do listy postaci
+    if CharacterList then
+        CharacterList.destroyLoadBox()
+    end
+    local errorBox = displayErrorBox("Ticket Error", "Nie udało się uzyskać ticketu: " .. tostring(msg))
+    connect(errorBox, {
+        onOk = function()
+            if CharacterList then
+                CharacterList.show()
+            end
+        end
+    })
+end
+
+-- Brak ticket flow (stary tryb / brak CLIENT_LOCKED) — połącz bezpośrednio
+function EnterGame.onTicketBypassed(charInfo)
+    -- Standardowe połączenie bez ticketu
+    g_game.loginWorld(G.account, G.password, charInfo.worldName, charInfo.worldHost,
+                      charInfo.worldPort, charInfo.characterName, G.authenticatorToken,
+                      G.sessionKey)
+end
+
+-- Połącz z game serverem z ticketem HMAC
+function EnterGame.connectWithTicket(charInfo)
+    -- FIX6: fail-closed — jeśli ticket jest nil, nie łącz się
+    if not G.ticketToken or G.ticketToken == "" then
+        g_logger.warning("[TICKET] connectWithTicket called but ticketToken is nil/empty")
+        EnterGame.onTicketConfigError("Brak ticketu — nie można połączyć z serwerem.")
+        return
+    end
+    g_game.loginWorld(G.account, G.password, charInfo.worldName, charInfo.worldHost,
+                      charInfo.worldPort, charInfo.characterName, G.authenticatorToken,
+                      G.ticketToken)
+end
+
+-- FIX6: Błąd konfiguracji ticket flow (CLIENT_LOCKED ale brak URL/config)
+function EnterGame.onTicketConfigError(msg)
+    G.pendingCharInfo = nil
+    G.ticketToken = nil
+    if CharacterList then
+        CharacterList.destroyLoadBox()
+    end
+    local errorBox = displayErrorBox("Ticket Configuration Error",
+                                     msg or "Błąd konfiguracji ticket flow.")
+    connect(errorBox, {
+        onOk = function()
+            if CharacterList then
+                CharacterList.show()
+            end
+        end
+    })
 end
 
 function EnterGame.doLogin()
@@ -986,12 +1144,15 @@ function EnterGame.setUniqueServer(host, port, protocol, windowWidth, windowHeig
         httpLoginBox:setHeight(0)
     end
 
-    local serverListButton = getEnterGameWidget('serverListButton')
-    if serverListButton then
-        serverListButton:setVisible(false)
-        serverListButton:setHeight(0)
-        serverListButton:setWidth(0)
-    end
+    -- FIX8: serverListButton pozostaje widoczny — lista jest read-only gdy CLIENT_LOCKED
+    -- Przycisk otwiera listę serwerów w trybie podglądu (bez add/remove/select).
+    -- Nowe serwery dodawane są przez launcher.
+    -- local serverListButton = getEnterGameWidget('serverListButton')
+    -- if serverListButton then
+    --     serverListButton:setVisible(false)
+    --     serverListButton:setHeight(0)
+    --     serverListButton:setWidth(0)
+    -- end
 
     local rememberEmailBox = getEnterGameWidget('rememberEmailBox')
     if rememberEmailBox then
@@ -1120,7 +1281,11 @@ function EnterGame.setLoginFormVisible(visible)
         'passwordLabel', 'accountPasswordTextEdit',
         'authenticatorTokenLabel', 'authenticatorTokenTextEdit',
         'rememberEmailBox', 'autoLoginBox', 'stayLoggedBox',
-        'httpLoginBox', 'serverInfoLabel'
+        'httpLoginBox', 'serverInfoLabel',
+        -- pola serwera (ukrywane też przez setUniqueServer, ale tu dla spójności)
+        'serverHostTextEdit', 'serverPortTextEdit',
+        'serverLabel', 'portLabel', 'clientLabel',
+        'serverListButton'
     }
 
     for _, id in ipairs(ids) do

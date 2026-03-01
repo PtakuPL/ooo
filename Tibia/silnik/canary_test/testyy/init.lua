@@ -16,6 +16,10 @@ Services = {
 -- Gdy true: klient jest przypisany do naszych serwerów.
 -- Gracz NIE może dodawać/usuwać/edytować serwerów.
 -- Lista serwerów pochodzi WYŁĄCZNIE z GameModes poniżej.
+-- ⚠ FIX16 SYNC: Ta wartość MUSI być zsynchronizowana z CLIENT_LOCKED w .env (API).
+--   init.lua CLIENT_LOCKED = true  →  .env CLIENT_LOCKED=true
+--   init.lua CLIENT_LOCKED = false →  .env CLIENT_LOCKED=false
+--   Dryft powoduje, że klient jest zablokowany ale login.php nie wymaga launchToken (lub odwrotnie).
 CLIENT_LOCKED = true
 
 -- Tryby gry — każdy definiuje serwer i dozwolone funkcje.
@@ -26,7 +30,7 @@ GameModes = {
         description = "Serwer w stylu Tibia 7.4 — bez hotkey na runy, bez market, bez quick loot.",
         server = {
             host = "ZMIEN_NA_ADRES_SERWERA",  -- TODO: wpisać prawdziwy adres
-            port = 7171,
+            port = 443,        -- HTTPS port! (7171 = stary ProtocolLogin, 443 = HTTP ticket flow)
             protocol = 1420,
             httpLogin = true,
             httpLoginUrl = "https://ZMIEN_NA_ADRES/login.php",
@@ -50,7 +54,7 @@ GameModes = {
         description = "Pełna wersja Tibia — wszystkie nowoczesne funkcje.",
         server = {
             host = "ZMIEN_NA_ADRES_SERWERA",  -- TODO: wpisać prawdziwy adres
-            port = 7171,
+            port = 443,        -- HTTPS port! (7171 = stary ProtocolLogin, 443 = HTTP ticket flow)
             protocol = 1420,
             httpLogin = true,
             httpLoginUrl = "https://ZMIEN_NA_ADRES/login.php",
@@ -75,6 +79,11 @@ GameModes = {
 -- Ustawiany przez ekran wyboru trybu (Faza A2/A3).
 CurrentGameMode = nil
 
+-- E10: Token z launchera — przekazywany przez zmienną środowiskową OTC_LAUNCH_TOKEN.
+-- Launcher ustawia ją tuż przed uruchomieniem klienta (subprocess env).
+-- Login.php waliduje ten token (E11) aby upewnić się, że klient przeszedł przez launcher.
+G.launchToken = os.getenv("OTC_LAUNCH_TOKEN") or ""
+
 -- Helper: szybki dostęp do feature flags aktualnego trybu.
 -- Użycie: if isFeatureEnabled("quick_loot") then ...
 function isFeatureEnabled(featureName)
@@ -92,6 +101,20 @@ function getCurrentServerConfig()
     local mode = GameModes[CurrentGameMode]
     if not mode then return nil end
     return mode.server
+end
+
+-- Walidacja placeholderów — ostrzeż natychmiast jeśli adresy nie zostały zmienione.
+-- Dzięki temu fail widać od razu w logu, nie dopiero przy próbie logowania.
+do
+    local PLACEHOLDER = "ZMIEN_NA_ADRES"
+    for key, mode in pairs(GameModes) do
+        if mode.server and mode.server.host and mode.server.host:find(PLACEHOLDER) then
+            g_logger.warning("[CONFIG] GameModes." .. key .. ".server.host zawiera placeholder! Zmień na prawdziwy adres.")
+        end
+        if mode.server and mode.server.httpLoginUrl and mode.server.httpLoginUrl:find(PLACEHOLDER) then
+            g_logger.warning("[CONFIG] GameModes." .. key .. ".server.httpLoginUrl zawiera placeholder! Zmień na prawdziwy URL.")
+        end
+    end
 end
 
 g_app.setName("OTClient");

@@ -119,6 +119,16 @@ Zakres: ticket-gate, tryby gry, blokada serwerów, launcher
 | FIX16 | ŚREDNIE | CLIENT_LOCKED drift: init.lua=true, .env=false | .env zsync do true + komentarze SYNC w obu plikach | ✅ DONE |
 | FIX17 | NISKIE | `--icon "icon.ico"` — brak pliku | Linia wykomentowana w build_launcher.bat | ✅ DONE |
 
+### Codex Review #3 — nowe findings (2026-03-02) ⬜ DO NAPRAWIENIA
+| # | Priorytet | Problem | Plik(i) | Status |
+|---|-----------|---------|---------|--------|
+| FIX18 | KRYTYCZNE | gameMode nie wysyłany w body login HTTP → sesja=modern → ticket mismatch | `httplogin.cpp:223`, `login.php:298`, `ticket.php:137` | ⬜ TODO |
+| FIX19 | WYSOKIE | worldName: API wystawia "Classic 7.4" ale SERVER_NAME="Tibia 7.4 test" → mismatch | `login.php:97,99`, `ticket_validator.cpp:136`, `config.lua:89` | ⬜ TODO |
+| FIX20 | WYSOKIE | ticket.php: brak walidacji world↔gameMode (plan wymaga mapowania) | `ticket.php:143`, plan linia 344 | ⬜ TODO |
+| FIX21 | ŚREDNIE | launcher-token.php: fail-open przy pustej manifest_versions (sprzeczne z opisem) | `launcher-token.php:190` | ⬜ TODO |
+| FIX22 | ŚREDNIE | Podwójny slash w login URL (`//login.php`) | `entergame.lua:727` | ⬜ TODO |
+| FIX23 | ŚREDNIE | Nonce replay-store: cleanup >10k ale nigdzie cyklicznie nie wywoływany | `ticket_validator.cpp:159` | ⬜ TODO |
+
 **Legenda**: ⬜ TODO | 🔄 W TRAKCIE | ✅ DONE | ❌ FAIL (wymaga fix)
 
 ---

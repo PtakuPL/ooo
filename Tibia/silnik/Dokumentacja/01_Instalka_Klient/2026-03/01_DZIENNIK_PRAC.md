@@ -850,4 +850,78 @@ Fix: Linia wykomentowana z instrukcją jak dodać ikonę.
 | FIX16 | ŚREDNIE | init.lua, .env | ✅ |
 | FIX17 | NISKIE | build_launcher.bat | ✅ |
 
-Nie commitowane — do zrobienia po ewentualnej kompilacji testowej.
+Zacommitowane: `7957e93f5` na `feature/ticket-gate`.
+
+---
+
+## Codex Review #3 — nowe findings (2026-03-02)
+
+Data: 2026-03-02 (po commicie `7957e93f5`)
+Źródło: Kolejny przegląd Codex — 6 zgłoszonych problemów (1× KRYTYCZNE, 2× WYSOKIE, 3× ŚREDNIE).
+Status: ⬜ DO NAPRAWIENIA w następnej sesji.
+
+### FIX18 (KRYTYCZNE): Klient nie wysyła gameMode do login.php
+Pliki: `httplogin.cpp` (linia 223), `login.php` (linia 298), `ticket.php` (linia 137)
+Problem:
+- Body HTTP login w `httplogin.cpp` NIE zawiera `gameMode` → API otrzymuje pusty gameMode
+- `login.php` domyślnie ustawia `gameModeDb = 'modern'` gdy brak gameMode w requeście
+- `ticket.php` sprawdza `gameMode !== sessGameMode` → classic74 vs modern = MISMATCH → FAIL
+- Plan wprost wymaga tego pola: `plan_zabezpieczenia_klienta_i_serwera.md` linia 1245
+Efekt: Gracz wybierający tryb classic74 NIGDY nie przejdzie ticketu, bo sesja zapisała się jako modern.
+Priorytet: KRYTYCZNE — blokuje cały flow logowania w trybie classic74.
+
+### FIX19 (WYSOKIE): Niespójna walidacja worldName — zrywa logowanie
+Pliki: `login.php` (linie 97, 99), `ticket_validator.cpp` (linia 136), `config.lua` (linia 89)
+Problem:
+- API login.php wystawia nazwy światów `Classic 7.4` / `Modern`
+- ticket_validator.cpp porównuje `worldName` z `SERVER_NAME` z config.lua
+- Aktualny `serverName = "Tibia 7.4 test"` → nigdy nie pasuje do `Classic 7.4`
+Efekt: Walidacja worldName w C++ ZAWSZE failuje, bo nazwy się nie zgadzają.
+Priorytet: WYSOKIE — blokuje logowanie gdy worldName jest niepusty.
+
+### FIX20 (WYSOKIE): ticket.php nie sprawdza world↔gameMode
+Pliki: `ticket.php` (linia 143), `plan_zabezpieczenia_klienta_i_serwera.md` (linia 344)
+Problem:
+- FIX13 dodał wymóg `worldName !== ''`, ale NIE sprawdza czy dany world jest dozwolony dla gameMode
+- Plan wymaga mapowania world↔gameMode (np. classic74 → tylko "Classic 7.4" world)
+- Bez tego: gracz z sesją classic74 może podać worldName modern world i odwrotnie
+Priorytet: WYSOKIE — brak walidacji pozwala na cross-mode ticket.
+
+### FIX21 (ŚREDNIE): launcher-token.php fail-open przy pustej tabeli manifest_versions
+Pliki: `launcher-token.php` (linia 190)
+Problem:
+- FIX12 dodał sprawdzanie filesHash gdy manifestVersion pusty
+- ALE: gdy tabela `manifest_versions` jest pusta (0 rows) → loguje warning i PRZEPUSZCZA
+- Dokumentacja twierdzi "FIX12 DONE/fail-closed" — ale to jest fail-OPEN w edge case
+Efekt: Świeża instalacja lub pusta tabela = brak weryfikacji integralności plików.
+Uwaga: To jest celowa decyzja dev/fresh-install, ale niespójna z opisem "fail-closed".
+Priorytet: ŚREDNIE — dotyczy tylko edge case pustej tabeli.
+
+### FIX22 (ŚREDNIE): Podwójny slash w login URL (//login.php)
+Pliki: `entergame.lua` (linia 727)
+Problem:
+- `httpLoginUrl` z GameModes kończy się na `/` a `tryHttpLogin` dokłada `/login.php`
+- Efekt: URL typu `https://server.com//login.php`
+- Większość serwerów normalizuje `//` → `/`, ale nie jest to gwarantowane
+Priorytet: ŚREDNIE — w praktyce działa, ale niespójne parsowanie URL.
+
+### FIX23 (ŚREDNIE): Nonce replay-store architektonicznie niedokończony
+Pliki: `ticket_validator.cpp` (linia 159)
+Problem:
+- `cleanupExpiredNonces()` czyści CAŁY set dopiero przy >10k wpisów
+- Nigdzie nie jest wywoływany cyklicznie (brak timera/crona)
+- Przy dużym ruchu: set rośnie bez końca aż do 10k, potem jednorazowe wyczyszczenie
+- Stare nonce'y (nawet z wygasłymi ticketami) pozostają w pamięci
+Priorytet: ŚREDNIE — nie blokuje, ale memory leak w długim horyzoncie.
+
+### Podsumowanie Codex Review #3:
+| FIX | Severity | Problem | Status |
+|-----|----------|---------|--------|
+| FIX18 | KRYTYCZNE | gameMode nie wysyłany do login.php | ⬜ TODO |
+| FIX19 | WYSOKIE | worldName mismatch (API vs SERVER_NAME) | ⬜ TODO |
+| FIX20 | WYSOKIE | Brak walidacji world↔gameMode w ticket.php | ⬜ TODO |
+| FIX21 | ŚREDNIE | launcher-token fail-open przy pustej tabeli | ⬜ TODO |
+| FIX22 | ŚREDNIE | Podwójny slash w login URL | ⬜ TODO |
+| FIX23 | ŚREDNIE | Nonce store cleanup niedokończony | ⬜ TODO |
+
+Do naprawienia w następnej sesji roboczej.

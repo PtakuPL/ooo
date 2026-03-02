@@ -15,7 +15,9 @@
 
 set -uo pipefail
 # FIX65: Nie używamy -e bo cp/chown ze sudo mogą wymagać hasła i zwracać non-zero
-# Zamiast tego sprawdzamy kody wyjścia ręcznie w krytycznych miejscach
+# FIX-AUD19: Dodano zmienną ERRORS do śledzenia błędów krytycznych operacji
+
+ERRORS=0
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_API="${SCRIPT_DIR}/html_copy/apik/v1"
@@ -34,6 +36,10 @@ echo "=== Deploy API: ${REPO_API} → ${DEST_API} ==="
 # Upewnij się, że katalog docelowy istnieje
 if [[ "$DRY_RUN" == false ]]; then
     sudo mkdir -p "${DEST_API}"
+    if [[ $? -ne 0 ]]; then
+        echo "  [ERROR] Nie udało się utworzyć katalogu ${DEST_API}"
+        ((ERRORS++))
+    fi
 fi
 
 # Kopiuj pliki PHP
@@ -45,7 +51,10 @@ for f in "${REPO_API}"/*.php; do
         if ! diff -q "$f" "$dest" >/dev/null 2>&1; then
             echo "  [UPDATE] ${fname}"
             if [[ "$DRY_RUN" == false ]]; then
-                sudo cp "$f" "$dest"
+                if ! sudo cp "$f" "$dest"; then
+                    echo "  [ERROR] Nie udało się skopiować ${fname}"
+                    ((ERRORS++))
+                fi
             fi
             ((CHANGED++))
         else
@@ -54,7 +63,10 @@ for f in "${REPO_API}"/*.php; do
     else
         echo "  [NEW]    ${fname}"
         if [[ "$DRY_RUN" == false ]]; then
-            sudo cp "$f" "$dest"
+            if ! sudo cp "$f" "$dest"; then
+                echo "  [ERROR] Nie udało się skopiować ${fname}"
+                ((ERRORS++))
+            fi
         fi
         ((CHANGED++))
     fi
@@ -68,7 +80,10 @@ for f in "${REPO_API}"/*.sql; do
     if [[ ! -f "$dest" ]] || ! diff -q "$f" "$dest" >/dev/null 2>&1; then
         echo "  [SYNC]   ${fname}"
         if [[ "$DRY_RUN" == false ]]; then
-            sudo cp "$f" "$dest"
+            if ! sudo cp "$f" "$dest"; then
+                echo "  [ERROR] Nie udało się skopiować ${fname}"
+                ((ERRORS++))
+            fi
         fi
         ((CHANGED++))
     fi
@@ -78,7 +93,10 @@ done
 if [[ ! -f "${DEST_API}/.env" ]]; then
     echo "  [NEW]    .env (kopiuję z repo — zmień hasła na produkcji!)"
     if [[ "$DRY_RUN" == false ]]; then
-        sudo cp "${REPO_API}/.env" "${DEST_API}/.env"
+        if ! sudo cp "${REPO_API}/.env" "${DEST_API}/.env"; then
+            echo "  [ERROR] Nie udało się skopiować .env"
+            ((ERRORS++))
+        fi
         sudo chmod 640 "${DEST_API}/.env"
     fi
     ((CHANGED++))
@@ -92,7 +110,10 @@ if [[ -f "${REPO_ROOT}/launcher_config.json" ]]; then
     if [[ ! -f "$dest" ]] || ! diff -q "${REPO_ROOT}/launcher_config.json" "$dest" >/dev/null 2>&1; then
         echo "  [SYNC]   launcher_config.json"
         if [[ "$DRY_RUN" == false ]]; then
-            sudo cp "${REPO_ROOT}/launcher_config.json" "$dest"
+            if ! sudo cp "${REPO_ROOT}/launcher_config.json" "$dest"; then
+                echo "  [ERROR] Nie udało się skopiować launcher_config.json"
+                ((ERRORS++))
+            fi
         fi
         ((CHANGED++))
     fi
@@ -109,6 +130,14 @@ echo ""
 echo "=== Gotowe: ${CHANGED} plik(ów) zaktualizowanych ==="
 if [[ $CHANGED -gt 0 && "$DRY_RUN" == false ]]; then
     echo "⚠  Jeśli zmieniłeś .env — sprawdź wartości na serwerze: ${DEST_API}/.env"
+fi
+
+# FIX-AUD19: Podsumowanie błędów — deploy nie powinien raportować sukcesu przy błędach
+if [[ $ERRORS -gt 0 ]]; then
+    echo ""
+    echo "🔴 UWAGA: ${ERRORS} błąd(ów) podczas kopiowania! Deploy NIE jest kompletny."
+    echo "   Sprawdź logi powyżej i napraw ręcznie."
+    # Nie wychodzimy z kodem != 0 bo dalej jest walidacja spójności
 fi
 
 # ================================================================
@@ -154,4 +183,9 @@ if [[ -f "$CONFIG_LUA" && -f "$ENV_FILE" ]]; then
             echo "✓ TICKET_SECRET spójny: config.lua == .env"
         fi
     fi
+fi
+
+# FIX-AUD19: Exit z kodem błędu jeśli były problemy kopiowania
+if [[ $ERRORS -gt 0 ]]; then
+    exit 1
 fi

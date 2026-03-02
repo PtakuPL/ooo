@@ -7,8 +7,11 @@
     { "name": "storeimages" },
     { "name": "bin" }
   ],
-  "clientFolder": "Tibia",
+  "clientDir": "Tibia",
+  "clientExe": "otclient.exe",
+  "clientExeLinux": "./otclient",
   "newClientUrl": "https://127.0.0.1/clients/client-14.12.95abf3-full.zip",
-  "clientExecutable": "otclient.exe",
-  "apiUrl": "https://127.0.0.1/apik/v1/"
+  "apiBaseUrl": "https://127.0.0.1/apik/v1/",
+  "filesBaseUrl": "https://127.0.0.1/files",
+  "updateChannel": "stable"
 }

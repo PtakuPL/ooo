@@ -2305,7 +2305,7 @@ resp = requests.get("https://...", verify=True, timeout=10)
 | **GUARD-FIX** | **Naprawa guardów D2-D7 w canary_test/** | Skopiować poprawne guardy z canary/ do canary_test/protocolgame.cpp (11 lokalizacji) | 2-3h | 🔴 TODO |
 | X8 | Explicit OpenSSL w vcpkg.json + CMake | `#include <openssl/hmac.h>` wymaga OpenSSL::Crypto — dodać do vcpkg.json i target_link_libraries | 30min | 🔴 TODO |
 | **CFG-KEY** | **Brakujące 3 klucze config** | ticketMaxAge, ticketClockTolerance, worldId — config_enums.hpp + configmanager.cpp + config.lua.dist | 30min | 🔴 TODO |
-| **LNCFG** | **Naprawić launcher_config.json** | Klucze apiUrl→apiBaseUrl, clientFolder→clientDir, clientExecutable→clientExe (match launcher.py) | 15min | 🔴 TODO |
+| **LNCFG** | **Naprawić launcher_config.json** | Klucze apiUrl→apiBaseUrl, clientFolder→clientDir, clientExecutable→clientExe (match launcher.py) | 15min | ✅ DONE (FIX-AUD14) |
 | A8 | Kompilacja klienta OTClient | Push → GHA workflow → weryfikacja kompilacji Windows + Linux | 2-4h | ⏳ CZEKA na GUARD-FIX |
 | C6 | Kompilacja serwera Canary | GHA workflow → weryfikacja kompilacji C++ (ticket_validator, protocolgame) | 2-4h | ⏳ CZEKA na GUARD-FIX + X8 |
 | **DB** | **Schema SQL na produkcji** | Tabele `ticket_nonces`, `ticket_sessions`, `launch_tokens`, `manifest_versions` | 30min | ⬜ TODO |
@@ -2365,6 +2365,7 @@ resp = requests.get("https://...", verify=True, timeout=10)
 *Źródło: zarys_planu_modyfikacji_klienta.md + analiza kodu + review ChatGPT ×3 + review Codex ×5 + 2× Codex FIX session*  
 *Zaktualizowany: 2026-03-03 (port C++ canary/ → canary_test/, commit `98964825b`, sekcja 19 rozszerzona o "Co brakuje", ścieżki plików zaktualizowane)*  
 *Zaktualizowany: 2026-03-03 (sekcja 20 — audyt cross-check canary/ vs canary_test/, ikony statusu ✅🟠🔴⏳ w całym dokumencie, korekta statusów Faz C/D/E)*  
+*Zaktualizowany: 2026-03-03 (FIX-AUD5/9/13/14/15/17/18/19 — 8 fixów launcherowych: launcher_config.json keys, fail-closed API, channel-aware manifest, loadBox race, host:port parsing, deploy error checking)*  
 *Następny krok: GUARD-FIX → OpenSSL (X8) → config keys → launcher_config → GHA kompilacja → testy A8/C6/D11*
 
 ---
@@ -2410,6 +2411,9 @@ resp = requests.get("https://...", verify=True, timeout=10)
 | Serwer C++ (canary_test/) | 🔴 NIE SKOMPILUJE SIĘ | Niezdefiniowane zmienne (`fromPos`/`fromItemId`/`itemId`), osierocony kod poza funkcją |
 | Serwer C++ guardy D2-D7 | 🟠 Źle rozmieszczone | 7+ guardów w ZŁYCH metodach; 4 metody BEZ guardów |
 | Serwer C++ (canary/) | 🟢 Poprawny | Guardy we właściwych metodach, zmienne poprawne |
-| Launcher config | 🟠 Niespójny | `KeyError` przy uruchomieniu `launcher.py` |
+| Launcher config | ✅ Naprawiony | FIX-AUD14: klucze zsynchronizowane z launcher.py |
+| API fail-closed | ✅ Naprawione | FIX-AUD5/13/17/18: brak hardcoded fallback, channel-aware, fail-closed |
+| Deploy script | ✅ Naprawiony | FIX-AUD19: error checking + exit code |
+| UI ticket flow | ✅ Naprawiony | FIX-AUD15: loadBox race fix + FIX-AUD9: host:port parsing |
 | OpenSSL linkowanie | 🟠 Niejawne | Zależy od transitywnej zależności CURL |
 | Config ticket-gate | 🟡 Niepełny | Brak 3 z 5 kluczy z planu |

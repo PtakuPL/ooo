@@ -60,3 +60,25 @@ if (!function_exists('loadEnvFiles')) {
         return $env;
     }
 }
+
+if (!function_exists('requireDbConfig')) {
+    /**
+     * FIX-AUD18: Fail-closed DB config — wymagaj .env zamiast fallbacku na hardcoded credentials.
+     * Zwraca tablicę z kluczami: host, user, pass, name, port.
+     * Jeśli .env nie istnieje lub brak DB_USER/DB_PASS — sendError i exit.
+     */
+    function requireDbConfig(array $ENV): array {
+        // Wymagane minimum: DB_USER i DB_PASS muszą być z .env
+        if (!isset($ENV['DB_USER']) || !isset($ENV['DB_PASS'])) {
+            error_log('[API] FIX-AUD18 BLOCKED: DB_USER or DB_PASS not configured in .env. Deploy .env first.');
+            sendError('Server configuration error: database not configured. Contact administrator.');
+        }
+        return [
+            'host' => $ENV['DB_HOST'] ?? '127.0.0.1',
+            'user' => $ENV['DB_USER'],
+            'pass' => $ENV['DB_PASS'],
+            'name' => $ENV['DB_NAME'] ?? 'canaryaac',
+            'port' => isset($ENV['DB_PORT']) ? (int)$ENV['DB_PORT'] : 3306,
+        ];
+    }
+}

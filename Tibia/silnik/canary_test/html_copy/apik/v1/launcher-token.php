@@ -75,11 +75,13 @@ if (versionCompare($launcherVersion, $minVersion) < 0) {
 }
 
 // ------- DB -------
-$dbhost = $ENV['DB_HOST'] ?? '127.0.0.1';
-$dbuser = $ENV['DB_USER'] ?? 'ptaku';
-$dbpass = $ENV['DB_PASS'] ?? '12345678';
-$dbname = $ENV['DB_NAME'] ?? 'canaryaac';
-$dbport = isset($ENV['DB_PORT']) ? (int)$ENV['DB_PORT'] : 3306;
+// FIX-AUD18: fail-closed — wymagaj .env z DB credentials (bez hardcoded fallback)
+$db = requireDbConfig($ENV);
+$dbhost = $db['host'];
+$dbuser = $db['user'];
+$dbpass = $db['pass'];
+$dbname = $db['name'];
+$dbport = $db['port'];
 
 $mysqli = @new mysqli($dbhost, $dbuser, $dbpass, $dbname, $dbport);
 if ($mysqli->connect_errno) {
@@ -106,12 +108,17 @@ if ((int)$res['cnt'] >= $rateLimit) {
 // ------- filesHash verification -------
 // FIX12: fail-closed — gdy manifestVersion jest pusty, sprawdź filesHash
 //        przeciwko NAJNOWSZEMU aktywnemu manifestowi. Nie pozwalaj na bypass.
+// FIX-AUD5: fail-closed gdy manifestVersion podany ale nie istnieje w DB
+// FIX-AUD13: query uwzględnia channel (unique key = version+channel)
+$requestChannel = isset($req['channel']) ? trim((string)$req['channel']) : 'stable';
+
 if ($manifestVersion !== '') {
     // Sprawdź czy filesHash zgadza się z oczekiwanym hashem z manifest_versions
+    // FIX-AUD13: dodano channel do WHERE — schema ma UNIQUE(version, channel)
     $stmt = $mysqli->prepare(
-        "SELECT files_hash FROM manifest_versions WHERE version = ? AND is_active = 1 LIMIT 1"
+        "SELECT files_hash FROM manifest_versions WHERE version = ? AND channel = ? AND is_active = 1 LIMIT 1"
     );
-    $stmt->bind_param('s', $manifestVersion);
+    $stmt->bind_param('ss', $manifestVersion, $requestChannel);
     $stmt->execute();
     $mvRes = $stmt->get_result();
 
@@ -119,10 +126,12 @@ if ($manifestVersion !== '') {
         $mv = $mvRes->fetch_assoc();
         if ($mv['files_hash'] !== $filesHash) {
             $stmt->close();
-            // Sprawdź previous version (grace period)
+            // Sprawdź previous version (grace period) — w tym samym kanale
+            // FIX-AUD13: grace period query też filtruje po channel
             $stmt2 = $mysqli->prepare(
-                "SELECT files_hash FROM manifest_versions WHERE channel = 'stable' AND is_active = 1 ORDER BY id DESC LIMIT 2"
+                "SELECT files_hash FROM manifest_versions WHERE channel = ? AND is_active = 1 ORDER BY id DESC LIMIT 2"
             );
+            $stmt2->bind_param('s', $requestChannel);
             $stmt2->execute();
             $acceptedRes = $stmt2->get_result();
             $accepted = false;
@@ -138,14 +147,21 @@ if ($manifestVersion !== '') {
                 sendError('Client files hash mismatch. Pliki klienta nie pasują do oczekiwanych. Zrestartuj launcher.');
             }
         }
+    } else {
+        // FIX-AUD5: manifestVersion podany ale nie istnieje w DB → FAIL-CLOSED
+        // Nie przepuszczamy — klient twierdzi że ma wersję której nie znamy
+        $stmt->close();
+        error_log("[launcher-token.php] FIX-AUD5 BLOCKED: manifestVersion '{$manifestVersion}' channel '{$requestChannel}' not found in manifest_versions.");
+        sendError('Unknown manifest version. Please update your client.');
     }
     $stmt->close();
 } else {
     // FIX12: manifestVersion jest pusty — sprawdź filesHash przeciwko najnowszemu aktywnemu manifestowi
+    // FIX-AUD13: filtruj po kanale klienta
     $stmt = $mysqli->prepare(
-        "SELECT files_hash FROM manifest_versions WHERE channel = 'stable' AND is_active = 1 ORDER BY id DESC LIMIT 2"
+        "SELECT files_hash FROM manifest_versions WHERE channel = ? AND is_active = 1 ORDER BY id DESC LIMIT 2"
     );
-    $stmt->execute();
+    $stmt->bind_param('s', $requestChannel);
     $mvRes = $stmt->get_result();
 
     if ($mvRes->num_rows > 0) {

@@ -149,29 +149,34 @@ fwrite(STDERR, "  Latest saved:   {$latestFile}\n");
 fwrite(STDERR, "  Files hash:     {$combinedHash}\n");
 
 // ------- optional: update DB -------
-$dbhost = $ENV['DB_HOST'] ?? '127.0.0.1';
-$dbuser = $ENV['DB_USER'] ?? 'ptaku';
-$dbpass = $ENV['DB_PASS'] ?? '12345678';
-$dbname = $ENV['DB_NAME'] ?? 'canaryaac';
-$dbport = isset($ENV['DB_PORT']) ? (int)$ENV['DB_PORT'] : 3306;
-
-$mysqli = @new mysqli($dbhost, $dbuser, $dbpass, $dbname, $dbport);
-if (!$mysqli->connect_errno) {
-    $mysqli->set_charset('utf8mb4');
-    $stmt = $mysqli->prepare(
-        "INSERT INTO manifest_versions (version, channel, files_hash, file_count, total_size)
-         VALUES (?, ?, ?, ?, ?)
-         ON DUPLICATE KEY UPDATE files_hash = VALUES(files_hash), file_count = VALUES(file_count),
-                                 total_size = VALUES(total_size), is_active = 1"
-    );
-    $stmt->bind_param('sssii', $version, $channel, $combinedHash, $fileCount, $totalSize);
-    $stmt->execute();
-    $stmt->close();
-    $mysqli->close();
-    fwrite(STDERR, "  DB updated: manifest_versions\n");
+// FIX-AUD18: fail-closed — wymagaj .env z DB credentials
+if (!isset($ENV['DB_USER']) || !isset($ENV['DB_PASS'])) {
+    fwrite(STDERR, "  [WARN] DB_USER/DB_PASS not in .env — skipping DB update. Deploy .env first.\n");
 } else {
-    fwrite(STDERR, "  UWAGA: Nie udało się połączyć z DB — manifest zapisany tylko do pliku.\n");
-}
+    $dbhost = $ENV['DB_HOST'] ?? '127.0.0.1';
+    $dbuser = $ENV['DB_USER'];
+    $dbpass = $ENV['DB_PASS'];
+    $dbname = $ENV['DB_NAME'] ?? 'canaryaac';
+    $dbport = isset($ENV['DB_PORT']) ? (int)$ENV['DB_PORT'] : 3306;
+
+    $mysqli = @new mysqli($dbhost, $dbuser, $dbpass, $dbname, $dbport);
+    if (!$mysqli->connect_errno) {
+        $mysqli->set_charset('utf8mb4');
+        $stmt = $mysqli->prepare(
+            "INSERT INTO manifest_versions (version, channel, files_hash, file_count, total_size)
+             VALUES (?, ?, ?, ?, ?)
+             ON DUPLICATE KEY UPDATE files_hash = VALUES(files_hash), file_count = VALUES(file_count),
+                                     total_size = VALUES(total_size), is_active = 1"
+        );
+        $stmt->bind_param('sssii', $version, $channel, $combinedHash, $fileCount, $totalSize);
+        $stmt->execute();
+        $stmt->close();
+        $mysqli->close();
+        fwrite(STDERR, "  DB updated: manifest_versions\n");
+    } else {
+        fwrite(STDERR, "  UWAGA: Nie udało się połączyć z DB — manifest zapisany tylko do pliku.\n");
+    }
+} // FIX-AUD18 endif
 
 // Output to stdout as well (for piping)
 echo $manifestJson . "\n";

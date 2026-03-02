@@ -855,7 +855,10 @@ function EnterGame.requestTicket(charInfo)
     end
 
     -- Parsuj host/path z httpLoginUrl (np. "https://example.com/login.php" → host="example.com", ticketPath="/ticket.php")
-    local urlHost = srv.httpLoginUrl:match("https?://([^/]+)")
+    -- FIX-AUD9: Rozdziel host i port — regex [^/:] zamiast [^/] aby nie przechwycić "host:port" jako jednego stringa
+    local urlHost = srv.httpLoginUrl:match("https?://([^/:]+)")
+    local urlPortStr = srv.httpLoginUrl:match("https?://[^/:]+:(%d+)")
+    local urlPort = urlPortStr and tonumber(urlPortStr) or nil
     if not urlHost then
         -- FIX6: fail-closed — nie można sparsować URL = błąd
         g_logger.warning("[TICKET] Nie można sparsować hosta z httpLoginUrl: " .. tostring(srv.httpLoginUrl))
@@ -873,9 +876,8 @@ function EnterGame.requestTicket(charInfo)
     G.ticketRequestId = math.random(1000000)
 
     local http = LoginHttp.create()
-    -- FIX30: Użyj G.port (wyekstrahowane z httpLoginUrl) zamiast srv.port
-    -- srv.port = 443 z init.lua, ale API może działać na innym porcie
-    local ticketPort = G.port or srv.port or 443
+    -- FIX30+FIX-AUD9: Priorytet portów: urlPort (z httpLoginUrl) > G.port > srv.port > 443
+    local ticketPort = urlPort or G.port or srv.port or 443
     http:requestTicket(urlHost, ticketPath, ticketPort, G.sessionKey or "",
                        charInfo.characterName, CurrentGameMode,
                        charInfo.worldName or "", G.ticketRequestId)

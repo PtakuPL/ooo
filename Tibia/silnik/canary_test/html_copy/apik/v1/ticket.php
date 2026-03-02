@@ -52,11 +52,13 @@ $ENV = loadEnvFiles([
     dirname(__DIR__, 2) . '/.env',
 ]);
 
-$dbhost = $ENV['DB_HOST'] ?? '127.0.0.1';
-$dbuser = $ENV['DB_USER'] ?? 'ptaku';
-$dbpass = $ENV['DB_PASS'] ?? '12345678';
-$dbname = $ENV['DB_NAME'] ?? 'canaryaac';
-$dbport = isset($ENV['DB_PORT']) ? (int)$ENV['DB_PORT'] : 3306;
+// FIX-AUD18: fail-closed — wymagaj .env z DB credentials (bez hardcoded fallback)
+$db = requireDbConfig($ENV);
+$dbhost = $db['host'];
+$dbuser = $db['user'];
+$dbpass = $db['pass'];
+$dbname = $db['name'];
+$dbport = $db['port'];
 
 $ticketSecret = $ENV['TICKET_SECRET'] ?? '';
 $ticketTtl    = isset($ENV['TICKET_TTL']) ? (int)$ENV['TICKET_TTL'] : 30;
@@ -129,8 +131,10 @@ if (isset($worldMap[$effectiveGameMode])) {
         sendError('World "' . $worldName . '" is not allowed for game mode "' . $effectiveGameMode . '".');
     }
 } else {
-    // Nieznany gameMode — przepuść z logiem (forward-compatible)
-    error_log("[ticket.php] FIX20 WARNING: Unknown gameMode '{$effectiveGameMode}' — worldName not validated.");
+    // FIX-AUD17: Nieznany gameMode — FAIL-CLOSED zamiast przepuszczania z logiem.
+    // Security endpoint nie powinien akceptować nieznanych wartości.
+    error_log("[ticket.php] FIX-AUD17 BLOCKED: Unknown gameMode '{$effectiveGameMode}' — rejecting ticket request.");
+    sendError('Unknown game mode "' . $effectiveGameMode . '". Contact administrator.');
 }
 $stmt = $mysqli->prepare(
     "SELECT id, name FROM players WHERE account_id = ? AND name = ? AND deletion = 0 LIMIT 1"

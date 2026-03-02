@@ -102,11 +102,13 @@ $ENV = loadEnvFiles([
     dirname(__DIR__, 2) . '/.env', // /var/www/html/.env
 ]);
 
-$dbhost = $ENV['DB_HOST'] ?? '127.0.0.1';
-$dbuser = $ENV['DB_USER'] ?? 'ptaku';
-$dbpass = $ENV['DB_PASS'] ?? '12345678';
-$dbname = $ENV['DB_NAME'] ?? 'canaryaac';
-$dbport = isset($ENV['DB_PORT']) ? (int)$ENV['DB_PORT'] : 3306;
+// FIX-AUD18: fail-closed — wymagaj .env z DB credentials (bez hardcoded fallback)
+$db = requireDbConfig($ENV);
+$dbhost = $db['host'];
+$dbuser = $db['user'];
+$dbpass = $db['pass'];
+$dbname = $db['name'];
+$dbport = $db['port'];
 
 $sessionTtl = isset($ENV['SESSION_TTL']) ? (int)$ENV['SESSION_TTL'] : 1800; // 30 min
 

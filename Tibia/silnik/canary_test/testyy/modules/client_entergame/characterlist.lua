@@ -59,6 +59,17 @@ local function tryLogin(charInfo, tries)
 
     CharacterList.hide()
 
+    -- FIX-AUD15: Twórz loadBox PRZED requestTicket, aby onTicketConfigError/onTicketFailed
+    -- mogło go zniszczyć jeśli ticket flow zawiedzie synchronicznie.
+    loadBox = displayCancelBox(tr("otclient_modules.characterlist.tr_18"), tr("otclient_modules.characterlist.tr_17"))
+    connect(loadBox, {
+        onCancel = function()
+            loadBox = nil
+            g_game.cancelLogin()
+            CharacterList.show()
+        end
+    })
+
     -- B5: Ticket flow — przy CLIENT_LOCKED żądamy ticketu HMAC przed połączeniem
     if CLIENT_LOCKED and EnterGame and EnterGame.requestTicket then
         EnterGame.requestTicket(charInfo)
@@ -69,15 +80,6 @@ local function tryLogin(charInfo, tries)
         g_game.loginWorld(G.account, G.password, charInfo.worldName, charInfo.worldHost, charInfo.worldPort,
                           charInfo.characterName, G.authenticatorToken, sessionKey)
     end
-
-    loadBox = displayCancelBox(tr("otclient_modules.characterlist.tr_18"), tr("otclient_modules.characterlist.tr_17"))
-    connect(loadBox, {
-        onCancel = function()
-            loadBox = nil
-            g_game.cancelLogin()
-            CharacterList.show()
-        end
-    })
 
     -- save last used character
     g_settings.set('last-used-character', charInfo.characterName)

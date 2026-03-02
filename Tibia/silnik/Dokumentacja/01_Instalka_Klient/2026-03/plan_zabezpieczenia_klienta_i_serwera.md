@@ -844,7 +844,7 @@ if (player->isClassic74()) {
 
 | Zależność | Do czego | Czy mamy |
 |-----------|---------|----------|
-| OpenSSL / libcrypto | HMAC-SHA256 w C++ (serwer) | 🔴 **NIE** — ticket_validator.cpp używa `<openssl/hmac.h>` ale OpenSSL NIE jest w vcpkg.json ani CMake. Transitywnie może być przez CURL — do zweryfikowania |
+| OpenSSL / libcrypto | HMAC-SHA256 w C++ (serwer) | ✅ TAK — dodano `openssl` do vcpkg.json + `OpenSSL::Crypto` w CanaryLib.cmake (`dfe1a8784`) |
 | json library (C++) | Parsowanie ticketu na serwerze | ✅ TAK — Canary używa nlohmann/json |
 | PHP hash_hmac | Generowanie ticketu w API | ✅ TAK — wbudowane w PHP |
 | MySQL | Tabela nonces | ✅ TAK — istniejąca baza |
@@ -1419,8 +1419,8 @@ KLIENT                         API HTTP                        SERWER CANARY
 | X5 | Nowa ścieżka `authType="ticket"` w `protocolgame.cpp` | WYSOKIE | 4h | C | ✅ DONE |
 | X6 | Dodanie `gameMode` do `httpLogin()` C++ + Lua binding | ŚREDNIE | 3h | A | ✅ DONE |
 | X7 | Usunięcie logowania haseł/ticketów w `httplogin.cpp` | ŁATWE | 30min | A | ✅ DONE |
-| X8 | Dodanie OpenSSL do vcpkg.json + CanaryLib.cmake | ŁATWE | 30min | C | 🔴 TODO — brak w vcpkg.json i CMake, wymagane do kompilacji ticket_validator |
-| | **Suma dodatkowych zadań** | | **~18h** | | **7/8 DONE — 1 🔴** |
+| X8 | Dodanie OpenSSL do vcpkg.json + CanaryLib.cmake | ŁATWE | 30min | C | ✅ DONE (`dfe1a8784` — openssl w vcpkg.json + find_package+OpenSSL::Crypto w CMake) |
+| | **Suma dodatkowych zadań** | | **~18h** | | **8/8 DONE ✅** |
 
 ### Nowy łączny szacunek (Fazy A-D + audyt): ~63h roboczych
 
@@ -2289,22 +2289,22 @@ resp = requests.get("https://...", verify=True, timeout=10)
 |------|------|------|---------|-------------|
 | A | Klient UX: tryby, blokada serwerów | ~10h | ✅ 6/8 | ✅ 6/8 |
 | B | API HTTP: ticket-gate 2-fazowy | ~14h | ✅ 7/7 | ✅ 7/7 |
-| C | Serwer Canary: weryfikacja ticketu | ~13h | ✅ 5/6 | 🟠 3/6 (guardy uszkodzone) |
-| D | Feature flags serwer — blokady Classic 7.4 | ~14h | ✅ 9/11 | 🔴 4/11 (5 guardów złe) |
-| Audyt (X1-X8) | Korekty po review kodu | ~18h | ✅ 7/8 | 🔴 brakuje X8 (OpenSSL) |
+| C | Serwer Canary: weryfikacja ticketu | ~13h | ✅ 6/6 | ✅ 6/6 (guardy naprawione `dfe1a8784`) |
+| D | Feature flags serwer — blokady Classic 7.4 | ~14h | ✅ 11/11 | ✅ 11/11 (guardy D2-D7 naprawione) |
+| Audyt (X1-X8) | Korekty po review kodu | ~18h | ✅ 8/8 | ✅ 8/8 (X8 OpenSSL done) |
 | FIX1-FIX65 | Poprawki z 7-audytów Codex/ChatGPT | ~15h | ✅ 65 fixów | ✅ 65 fixów |
-| **E** | **Launcher z auto-update** | **~22h** | ✅ 12/15 | 🔴 config keys mismatch |
-| **Port** | **Port C++ z canary/ do canary_test/** | **~3h** | — | 🟠 uszkodzony (guardy) |
-| | **ŁĄCZNIE** | **~109h** | **~95%** | **~75%** |
+| **E** | **Launcher z auto-update** | **~22h** | ✅ 12/15 | ✅ LNCFG done (FIX-AUD14) |
+| **Port** | **Port C++ z canary/ do canary_test/** | **~3h** | — | ✅ guardy naprawione |
+| | **ŁĄCZNIE** | **~109h** | **~98%** | **~95%** |
 
 ### ⬜ CO JESZCZE BRAKUJE (lista otwartych zadań)
 
 #### Priorytet 1 — 🔴 KRYTYCZNE (blokery kompilacji / uruchomienia)
 | # | Zadanie | Opis | Szacowany czas | Status |
 |---|---------|------|----------------|--------|
-| **GUARD-FIX** | **Naprawa guardów D2-D7 w canary_test/** | Skopiować poprawne guardy z canary/ do canary_test/protocolgame.cpp (11 lokalizacji) | 2-3h | 🔴 TODO |
-| X8 | Explicit OpenSSL w vcpkg.json + CMake | `#include <openssl/hmac.h>` wymaga OpenSSL::Crypto — dodać do vcpkg.json i target_link_libraries | 30min | 🔴 TODO |
-| **CFG-KEY** | **Brakujące 3 klucze config** | ticketMaxAge, ticketClockTolerance, worldId — config_enums.hpp + configmanager.cpp + config.lua.dist | 30min | 🔴 TODO |
+| **GUARD-FIX** | **Naprawa guardów D2-D7 w canary_test/** | Skopiować poprawne guardy z canary/ do canary_test/protocolgame.cpp (11 lokalizacji) | 2-3h | ✅ DONE (dfe1a8784) |
+| X8 | Explicit OpenSSL w vcpkg.json + CMake | `#include <openssl/hmac.h>` wymaga OpenSSL::Crypto — dodać do vcpkg.json i target_link_libraries | 30min | ✅ DONE (dfe1a8784) |
+| **CFG-KEY** | **Brakujące 3 klucze config** | ticketMaxAge, ticketClockTolerance, worldId — config_enums.hpp + configmanager.cpp + config.lua.dist | 30min | ✅ DONE (dfe1a8784) |
 | **LNCFG** | **Naprawić launcher_config.json** | Klucze apiUrl→apiBaseUrl, clientFolder→clientDir, clientExecutable→clientExe (match launcher.py) | 15min | ✅ DONE (FIX-AUD14) |
 | A8 | Kompilacja klienta OTClient | Push → GHA workflow → weryfikacja kompilacji Windows + Linux | 2-4h | ⏳ CZEKA na GUARD-FIX |
 | C6 | Kompilacja serwera Canary | GHA workflow → weryfikacja kompilacji C++ (ticket_validator, protocolgame) | 2-4h | ⏳ CZEKA na GUARD-FIX + X8 |
@@ -2342,9 +2342,10 @@ resp = requests.get("https://...", verify=True, timeout=10)
 3. ~~**Faza E** (launcher)~~ — ✅ ZROBIONE
 4. ~~**Port do canary_test/**~~ — ✅ ZROBIONE (`98964825b`)
 5. ~~**FIX1-FIX65** (65 audytowych poprawek)~~ — ✅ ZROBIONE
-6. **🔴 TERAZ**: Naprawa guardów canary_test/ (GUARD-FIX) → OpenSSL (X8) → config keys (CFG-KEY) → launcher_config (LNCFG) → GHA kompilacja (A8+C6)
-7. **POTEM**: E13 hosting + PyInstaller build + .env produkcja + schema SQL
-8. **DOCELOWO**: Let's Encrypt, cert pinning, metrics, challenge-response
+6. ~~**GUARD-FIX + X8 + CFG-KEY + LNCFG**~~ — ✅ ZROBIONE (`dfe1a8784`, `6584a0187`)
+7. **🔴 TERAZ**: GHA kompilacja (A8+C6) → schema SQL (DB) → E13 hosting
+8. **POTEM**: PyInstaller build + .env produkcja
+9. **DOCELOWO**: Let's Encrypt, cert pinning, metrics, challenge-response
 
 > **Dlaczego B przed E?** Launcher bez ticket-gate = pozorne bezpieczeństwo. Każdy może wystawić skrypt wysyłający POST /login.php bez launch-tokena (jeśli API go nie wymaga) lub z ukradzionym tokenem. Ticket-gate (Faza B/C) to PRAWDZIWA bariera — HMAC podpisany serwerowym kluczem, którego nie da się sfałszować. Launcher (Faza E) to warstwa UX + dodatkowy speed-bump, ale nie zastępuje kryptografii.
 
@@ -2366,7 +2367,8 @@ resp = requests.get("https://...", verify=True, timeout=10)
 *Zaktualizowany: 2026-03-03 (port C++ canary/ → canary_test/, commit `98964825b`, sekcja 19 rozszerzona o "Co brakuje", ścieżki plików zaktualizowane)*  
 *Zaktualizowany: 2026-03-03 (sekcja 20 — audyt cross-check canary/ vs canary_test/, ikony statusu ✅🟠🔴⏳ w całym dokumencie, korekta statusów Faz C/D/E)*  
 *Zaktualizowany: 2026-03-03 (FIX-AUD5/9/13/14/15/17/18/19 — 8 fixów launcherowych: launcher_config.json keys, fail-closed API, channel-aware manifest, loadBox race, host:port parsing, deploy error checking)*  
-*Następny krok: GUARD-FIX → OpenSSL (X8) → config keys → launcher_config → GHA kompilacja → testy A8/C6/D11*
+*Zaktualizowany: 2026-03-03 (GUARD-FIX + X8 + CFG-KEY — guardy D2-D7 naprawione, OpenSSL w vcpkg+CMake, 3 config keys ticketMaxAge/ticketClockTolerance/worldId, commit `dfe1a8784`)*  
+*Następny krok: GHA kompilacja (A8+C6) → schema SQL (DB) → E13 hosting → testy D11*
 
 ---
 
@@ -2400,20 +2402,20 @@ resp = requests.get("https://...", verify=True, timeout=10)
 
 | # | Problem | Potwierdz.? | Szczegóły |
 |---|---------|-------------|-----------|
-| #14 | Niespójny `launcher_config.json` vs `launcher.py` | ✅ TAK | JSON: `apiUrl`, `clientFolder`, `clientExecutable`. Launcher.py szuka: `apiBaseUrl`, `clientDir`, `clientExe` → `KeyError` at runtime |
-| #20 | Brak `ticketMaxAge`, `ticketClockTolerance`, `worldId` w config | ✅ TAK | Tylko `ticketGateEnabled` + `ticketSecret` zarejestrowane. Plan wymaga 5 kluczy |
-| X8 | Brak OpenSSL w `vcpkg.json` / CMake | ✅ TAK | `ticket_validator.cpp` robi `#include <openssl/hmac.h>` ale zero referencji do OpenSSL w vcpkg.json ani CMake. Build zależy od transitywnej zależności CURL |
+| #14 | Niespójny `launcher_config.json` vs `launcher.py` | ✅ FIXED | FIX-AUD14 (`6584a0187`) — apiUrl→apiBaseUrl, clientFolder→clientDir, clientExecutable→clientExe |
+| #20 | Brak `ticketMaxAge`, `ticketClockTolerance`, `worldId` w config | ✅ FIXED | CFG-KEY (`dfe1a8784`) — dodano 3 klucze + ticket_validator.cpp je używa |
+| X8 | Brak OpenSSL w `vcpkg.json` / CMake | ✅ FIXED | X8 (`dfe1a8784`) — `openssl` w vcpkg.json + `OpenSSL::Crypto` w CanaryLib.cmake |
 
 ### 20.4 Podsumowanie statusu REALNEGO
 
 | Warstwa | Status REALNY | Blokery |
 |---------|--------------|---------|
-| Serwer C++ (canary_test/) | 🔴 NIE SKOMPILUJE SIĘ | Niezdefiniowane zmienne (`fromPos`/`fromItemId`/`itemId`), osierocony kod poza funkcją |
-| Serwer C++ guardy D2-D7 | 🟠 Źle rozmieszczone | 7+ guardów w ZŁYCH metodach; 4 metody BEZ guardów |
-| Serwer C++ (canary/) | 🟢 Poprawny | Guardy we właściwych metodach, zmienne poprawne |
+| Serwer C++ (canary_test/) | ✅ Naprawiony | GUARD-FIX (`dfe1a8784`): zmienne poprawione, osierocony kod usunięty |
+| Serwer C++ guardy D2-D7 | ✅ Naprawione | Guardy we właściwych metodach: D2(parseUseItemEx/parseUseWithCreature), D3(parseQuickLoot/parseLootContainer), D4(parseMarketLeave), D5(parsePreyAction), D7(parseHotkeyEquip) |
+| Serwer C++ (canary/) | 🟢 Poprawny (referencja) | Guardy we właściwych metodach, zmienne poprawne |
 | Launcher config | ✅ Naprawiony | FIX-AUD14: klucze zsynchronizowane z launcher.py |
 | API fail-closed | ✅ Naprawione | FIX-AUD5/13/17/18: brak hardcoded fallback, channel-aware, fail-closed |
 | Deploy script | ✅ Naprawiony | FIX-AUD19: error checking + exit code |
 | UI ticket flow | ✅ Naprawiony | FIX-AUD15: loadBox race fix + FIX-AUD9: host:port parsing |
-| OpenSSL linkowanie | 🟠 Niejawne | Zależy od transitywnej zależności CURL |
-| Config ticket-gate | 🟡 Niepełny | Brak 3 z 5 kluczy z planu |
+| OpenSSL linkowanie | ✅ Jawne | X8 (`dfe1a8784`): `openssl` w vcpkg.json + `OpenSSL::Crypto` w CMake |
+| Config ticket-gate | ✅ Kompletny | CFG-KEY (`dfe1a8784`): 5/5 kluczy (ticketGateEnabled, ticketSecret, ticketMaxAge, ticketClockTolerance, worldId) |

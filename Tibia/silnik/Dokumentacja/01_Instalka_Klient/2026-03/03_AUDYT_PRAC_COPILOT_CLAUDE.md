@@ -274,7 +274,7 @@ Ryzyko:
    - "Green deploy" przy niepelnym wdrozeniu i dryf produkcji vs repo.
 
 20. [SREDNIE] Konfiguracja ticket-gate w serwerze jest niepelna wzgledem planu (brak `worldId`/`ticketMaxAge`/`ticketClockTolerance`)  
-Status: OPEN  
+Status: ✅ FIXED (commit `dfe1a8784` — CFG-KEY: dodano TICKET_MAX_AGE, TICKET_CLOCK_TOLERANCE, WORLD_ID do config_enums.hpp + configmanager.cpp + config.lua.dist; ticket_validator.cpp używa nowych kluczy)  
 Pliki:
    - `canary_test/config.lua.dist`
    - `canary_test/src/config/configmanager.cpp`

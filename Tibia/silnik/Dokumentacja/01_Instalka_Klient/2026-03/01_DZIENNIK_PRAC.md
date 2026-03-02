@@ -45,7 +45,73 @@ Następny krok:
 
 ## Log
 
-## [2026-03-02 ~04:00] BLOK: B7 — Smoke-test login→ticket flow [DONE]
+## [2026-03-03 ~01:00] BLOK: PORT — Przeniesienie C++ serwera z canary/ do canary_test/ [DONE]
+
+Zakres:
+- Odkrycie problemu: GHA workflow `build-canary.yml` kompiluje z `canary_test/` (working-directory), ale pliki C++ ticket-gate (Fazy C, D) były TYLKO w `canary/`.
+- Systematyczne portowanie 10 plików C++ + config.lua.dist z canary/ do canary_test/.
+- Weryfikacja że canary_test/ ma pewne różnice (np. I18N system) — ręczne merge, nie proste kopiowanie.
+
+Sportowane pliki (10 C++ + 1 config):
+1. `canary_test/src/server/network/protocol/ticket_validator.cpp` — NOWY (skopiowany z canary/)
+2. `canary_test/src/server/network/protocol/ticket_validator.hpp` — NOWY (skopiowany z canary/)
+3. `canary_test/src/config/config_enums.hpp` — dodano TICKET_GATE_ENABLED, TICKET_SECRET
+4. `canary_test/src/config/configmanager.cpp` — dodano 2 loadConfig calls
+5. `canary_test/src/creatures/creatures_definitions.hpp` — dodano PlayerGameMode_t enum
+6. `canary_test/src/creatures/players/player.hpp` — dodano gameMode_, lastMoveTime_, gettery/settery
+7. `canary_test/src/server/network/protocol/protocolgame.hpp` — dodano isClassic74Blocked, pendingGameMode_
+8. `canary_test/src/server/network/protocol/protocolgame.cpp` — includes, helper, login/connect setGameMode, ticket validation, 18 guardów D2-D10
+9. `canary_test/src/game/game.cpp` — D8 rate-limit 1000ms
+10. `canary_test/src/server/CMakeLists.txt` — dodano ticket_validator.cpp
+11. `canary_test/config.lua.dist` — ticketGateEnabled, ticketSecret
+
+Weryfikacje:
+- `getCharacterByAccountIdAndName` istnieje w canary_test/ (account_repository.hpp:33, _db.cpp:68)
+- `account_repository.hpp` include dostępny
+- `grep -c "ticket\|TicketValidator"` w canary_test/ protocolgame.cpp → >0 (potwierdzone)
+
+Zacommitowane pliki (31 łącznie z API/OTClient/Launcher):
+- C++ serwer: 10 plików + config.lua.dist
+- PHP API: 7 plików (login.php, ticket.php, common.php, .env.example, generate_manifest, update, launcher-token, launcher-version)
+- OTClient: 5 plików (httplogin.cpp/h, entergame.lua, characterlist.lua, init.lua)
+- Launcher: 1 plik (launcher.py)
+- Inne: .gitignore, cacert.pem, launcher_config.json, deploy_api.sh
+- Dokumentacja: 2 pliki (checklista, dziennik)
+
+Commit:
+- SHA: `98964825b`
+- Branch: `feature/ticket-gate`
+- Msg: `feat(ticket-gate): port C++ server + API + OTClient + launcher do canary_test`
+- Stat: 31 files changed, 1409 insertions(+), 3447 deletions(-) (z czego ~3171 usunięć = czyszczenie cacert.pem)
+
+Wynik:
+- WSZYSTKIE pliki ticket-gate są teraz w canary_test/ (GHA build target)
+- Push udany: `3090e02e9..98964825b  feature/ticket-gate -> feature/ticket-gate`
+
+Następny krok:
+- GHA kompilacja (A8 + C6) — weryfikacja kompilacji C++
+- Aktualizacja dokumentacji (statusy, ścieżki, co brakuje)
+
+---
+
+## [2026-03-03 ~02:00] BLOK: DOCS — Aktualizacja dokumentacji po porcie [DONE]
+
+Zakres:
+- Aktualizacja 00_START_PRACY_CHECKLISTA.md: zmiana "niezacommitowane" → commit `98964825b`, ścieżki canary/ → canary_test/
+- Aktualizacja plan_zabezpieczenia_klienta_i_serwera.md: status header, sekcja 19 rozszerzona o "Co brakuje" (4 priorytety), ścieżki plików canary_test/
+- Aktualizacja 01_DZIENNIK_PRAC.md: nowy wpis PORT + DOCS
+- Aktualizacja 02_DZIENNIK_BUILDOW_GHA.md: ścieżki canary_test/
+
+Zmienione pliki:
+- `Dokumentacja/01_Instalka_Klient/2026-03/00_START_PRACY_CHECKLISTA.md`
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md`
+- `Dokumentacja/01_Instalka_Klient/2026-03/02_DZIENNIK_BUILDOW_GHA.md`
+- `Dokumentacja/01_Instalka_Klient/2026-03/plan_zabezpieczenia_klienta_i_serwera.md`
+
+Commit:
+- SHA: oczekuje na commit
+
+---
 
 Zakres:
 - Apliko schema SQL na bazę canaryaac (ticket_nonces + ticket_sessions)

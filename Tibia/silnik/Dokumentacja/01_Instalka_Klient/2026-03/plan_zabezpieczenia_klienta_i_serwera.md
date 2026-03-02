@@ -1,8 +1,8 @@
 # Plan zabezpieczenia klienta i serwera — ticket-gate + tryby gry + blokada dodawania serwerów
 **Data**: 2026-03-01  
-**Status**: 🔄 W TRAKCIE IMPLEMENTACJI (Fazy A, B, C, D, E — GOTOWE ✅ | Testy + E13 — ⬜ TODO)  
+**Status**: � KOD GOTOWY (Fazy A–E ✅ | Audyty FIX1–FIX65 ✅ | Port do canary_test/ ✅) | Pozostało: kompilacja GHA + testy + E13  
 **Źródło**: zarys_planu_modyfikacji_klienta.md + analiza kodu OTClient + Canary  
-**Ostatnia aktualizacja postępów**: 2026-03-02 (FIX9-FIX17 z audytu Codex — poprawki bezpieczeństwa)  
+**Ostatnia aktualizacja postępów**: 2026-03-03 (port C++ do canary_test, commit `98964825b`)  
 
 ---
 
@@ -478,14 +478,16 @@ worldId = "classic74"       -- lub "modern" — identyfikator tego świata
 
 ### 4.5 Pliki serwera do modyfikacji
 
+> **UWAGA**: Pliki serwera znajdują się w `canary_test/src/` (GHA build target). Pierwotnie były w `canary/`, sportowane do `canary_test/` w commicie `98964825b`.
+
 | Plik | Opis | Typ |
 |------|------|-----|
-| `src/server/network/protocol/protocolgame.cpp` | Dodać ticket validation przed auth | MODYFIKACJA |
-| `src/server/security/ticket_validator.h` | Struktura i deklaracja | NOWY |
-| `src/server/security/ticket_validator.cpp` | Implementacja walidacji HMAC + nonce | NOWY |
-| `src/config/configmanager.cpp` | Rejestracja `REQUIRE_TICKET`, `TICKET_SECRET`, `WORLD_ID` | MODYFIKACJA |
-| `config.lua` | Dodanie nowych kluczy | MODYFIKACJA |
-| `CMakeLists.txt` | Dodać nowy plik .cpp do buildu | MODYFIKACJA |
+| `canary_test/src/server/network/protocol/protocolgame.cpp` | Dodanie ticket validation przed auth + guardy D1-D10 | MODYFIKACJA |
+| `canary_test/src/server/network/protocol/ticket_validator.hpp` | Struktura i deklaracja | NOWY |
+| `canary_test/src/server/network/protocol/ticket_validator.cpp` | Implementacja walidacji HMAC + nonce | NOWY |
+| `canary_test/src/config/configmanager.cpp` | Rejestracja `TICKET_GATE_ENABLED`, `TICKET_SECRET` | MODYFIKACJA |
+| `canary_test/config.lua.dist` | Dodanie nowych kluczy | MODYFIKACJA |
+| `canary_test/src/server/CMakeLists.txt` | Dodanie ticket_validator.cpp do buildu | MODYFIKACJA |
 
 ---
 
@@ -751,7 +753,7 @@ if (player->isClassic74()) {
 | C3 | Nowe klucze w `configmanager.cpp` | ŁATWE | 1h | ✅ DONE (config_enums.hpp + configmanager.cpp) |
 | C4 | Konfiguracja w `config.lua` | ŁATWE | 15min | ✅ DONE (config.lua.dist + config.lua) |
 | C5 | Nonce store (in-memory lub DB) | ŚREDNIE | 2h | ✅ DONE (in-memory w ticket_validator.cpp) |
-| C6 | Kompilacja i test | - | 3h | ⬜ TODO (wymaga push + GHA build) |
+| C6 | Kompilacja i test | - | 3h | ⬜ TODO (wymaga GHA build z `98964825b`) |
 | | **Suma fazy C** | | **~13h** | **5/6 DONE** |
 
 ### Faza D — Feature flags serwer Canary (tydzień 4) ✅ GOTOWE
@@ -770,7 +772,7 @@ if (player->isClassic74()) {
 | D8 | Rate-limit użycia run (1000ms cooldown classic74) | ŚREDNIE | 1.5h | 5.3.8 | ✅ DONE (Game::playerMove + lastMoveTime_) |
 | D9 | Blokada Action Bar packets | ŁATWE | 30min | — | ⬜ N/A (brak action bar w codebase) |
 | D10 | Blokada Bestiary (opcjonalne) | ŁATWE | 30min | 5.3.9 | ✅ DONE (3 metody parseBestiary*) |
-| D11 | Pełny test integracyjny — każda blokada server-side | - | 4h | Tabela 5.3.9 | ⬜ TODO (wymaga kompilacji) |
+| D11 | Pełny test integracyjny — każda blokada server-side | - | 4h | Tabela 5.3.9 | ⬜ TODO (wymaga kompilacji `98964825b`) |
 | | **Suma fazy D** | | **~14h** | | **9/11 DONE** |
 
 ### Łączny szacunek: ~49h roboczych (5 tygodni)
@@ -1400,7 +1402,7 @@ KLIENT                         API HTTP                        SERWER CANARY
 | X5 | Nowa ścieżka `authType="ticket"` w `protocolgame.cpp` | WYSOKIE | 4h | C | ✅ DONE (C2 — protocolgame.cpp ticket validation) |
 | X6 | Dodanie `gameMode` do `httpLogin()` C++ + Lua binding | ŚREDNIE | 3h | A | ✅ DONE (B6 — luafunctions.cpp + httplogin.cpp) |
 | X7 | Usunięcie logowania haseł/ticketów w `httplogin.cpp` | ŁATWE | 30min | A | ✅ DONE (body usunięte z logów; CR-3: headers wciąż logowane) |
-| X8 | Dodanie OpenSSL do vcpkg.json + CanaryLib.cmake | ŁATWE | 30min | C | ⬜ TODO (OpenSSL już jest dep, ale explicit link do zweryfikowania) |
+| X8 | Dodanie OpenSSL do vcpkg.json + CanaryLib.cmake | ŁATWE | 30min | C | ⬜ TODO (OpenSSL już jest dep transitywny przez CURL, ale explicit link do zweryfikowania przy kompilacji) |
 | | **Suma dodatkowych zadań** | | **~18h** | | **7/8 DONE** |
 
 ### Nowy łączny szacunek (Fazy A-D + audyt): ~63h roboczych
@@ -2270,20 +2272,57 @@ resp = requests.get("https://...", verify=True, timeout=10)
 | B | API HTTP: ticket-gate 2-fazowy | ~14h | ✅ GOTOWE (7/7 — login.php, ticket.php, schema, B7 smoke test) |
 | C | Serwer Canary: weryfikacja ticketu | ~13h | ✅ GOTOWE (5/6, C6 test) |
 | D | Feature flags serwer — TWARDE blokady Classic 7.4 (sekcja 5.3) | ~14h | ✅ GOTOWE (9/11, D9 N/A, D11 test) |
-| Audyt (X1-X8) | Korekty po review kodu | ~18h | ✅ GOTOWE (8/8 + CR-1..CR-4 ✅) |
+| Audyt (X1-X8) | Korekty po review kodu | ~18h | ✅ GOTOWE (7/8, X8 przy kompilacji) |
+| FIX1-FIX65 | Poprawki z 7 audytów Codex/ChatGPT | ~15h | ✅ GOTOWE (65 fixów) |
 | **E** | **Launcher z auto-update** | **~20h** | **✅ GOTOWE (E1-E12)** |
-| | **ŁĄCZNIE** | **~89h (~8 tyg.)** | **~95% DONE** |
+| **Port** | **Port C++ z canary/ do canary_test/** | **~3h** | **✅ GOTOWE (`98964825b`)** |
+| | **ŁĄCZNIE** | **~107h (~10 tyg.)** | **~95% DONE** |
 
-### Rekomendowana kolejność (zaktualizowana 2026-03-01):
+### ⬜ CO JESZCZE BRAKUJE (lista otwartych zadań)
+
+#### Priorytet 1 — KRYTYCZNE (blokery uruchomienia)
+| # | Zadanie | Opis | Szacowany czas |
+|---|---------|------|----------------|
+| A8 | Kompilacja klienta OTClient | Push `98964825b` → GHA workflow → weryfikacja kompilacji Windows + Linux | 2-4h |
+| C6 | Kompilacja serwera Canary | GHA workflow `build-canary.yml` → weryfikacja kompilacji C++ (ticket_validator, protocolgame) | 2-4h |
+| X8 | Explicit OpenSSL linkowanie | Weryfikacja przy kompilacji — HMAC-SHA256 w ticket_validator wymaga OpenSSL::Crypto. Może być transitywne z CURL. | 30min |
+| **DB** | **Schema SQL na produkcji** | Tabele `ticket_nonces`, `ticket_sessions`, `launch_tokens`, `manifest_versions` na serwerze produkcyjnym | 30min |
+
+#### Priorytet 2 — WYSOKIE (wymagane do pełnej funkcjonalności)
+| # | Zadanie | Opis | Szacowany czas |
+|---|---------|------|----------------|
+| D11 | Test integracyjny feature flags | Zalogowanie jako Classic 7.4 → weryfikacja każdej blokady (Market, Prey, Wheel, Bestiary, QuickLoot, SmartEquip, rune hotkey, rate-limit ruchu) | 4h |
+| E13 | Hosting plików klienta | CDN/serwer HTTP do pobierania plików przez launcher (/files/stable/...) | 2h |
+| **PYINST** | **Build launchera PyInstaller** | `launcher.py` → `launcher.exe` (Windows) i `launcher` (Linux) via PyInstaller | 2h |
+| **DEPLOY** | **.env produkcyjny** | Konfiguracja TICKET_SECRET, WORLD_IP, CLIENT_LOCKED na serwerze produkcyjnym | 1h |
+
+#### Priorytet 3 — ŚREDNIE (ulepszenia, hardening)
+| # | Zadanie | Opis | Szacowany czas |
+|---|---------|------|----------------|
+| FIX36 | IP-binding za NAT/proxy | Trusted proxy headers (X-Forwarded-For) — wymaga konfiguracji nginx | 2h |
+| FIX37 | Fresh install docs | Dokumentacja setup od zera: schema SQL, .env, nginx, certyfikaty | 3h |
+| FIX40 | Cron cleanup sesji | Zastąpienie probabilistycznego cleanup (10%) cronem | 1h |
+| FIX41 | apiPort/gamePort separation | Oddzielenie portów API (443) i game (7172) w konfiguracji klienta | 2h |
+| **CERT** | **Certyfikat Let's Encrypt** | Zastąpienie self-signed cert prawdziwym certyfikatem na produkcji | 2h |
+| **METRICS** | **Logi/metryki odrzuceń ticket** | Structured logging w Canary: REJECT reason, IP, account, latency (sekcja 11.8) | 4h |
+
+#### Priorytet 4 — NISKIE (opcjonalne, defense-in-depth)
+| # | Zadanie | Opis | Szacowany czas |
+|---|---------|------|----------------|
+| **PINNING** | Certificate pinning w kliencie | Hardcode SPKI hash w httplogin.cpp — ochrona przed MITM z fałszywym certem | 4h |
+| **CHALLENGE** | Challenge-response launcher | Sekcja 16.16 — losowy nonce + hash pliku → utrudnia obejście launchera | 3h |
+| **TAURI** | Przepisanie launchera na Tauri/Rust | Trudniejszy do dekompilacji niż Python+PyInstaller | 40h |
+| **ROTACJA** | Rotacja kluczy HMAC (`kid`) | Multi-key support w ticket_validator + ticket.php (sekcja 11.2) | 4h |
+
+### Rekomendowana kolejność (zaktualizowana 2026-03-03):
 1. ~~**Faza A** (klient UX)~~ — ✅ ZROBIONE
-2. ~~**Równolegle: X2 + X7 + X3**~~ — ✅ ZROBIONE (TLS hard-fail, logi, ServerList)
-3. ~~**Faza C** (serwer ticket)~~ — ✅ ZROBIONE
-4. ~~**Faza D** (feature flags)~~ — ✅ ZROBIONE
-5. ~~**Faza B** (API PHP: login.php + ticket.php + MySQL)~~ — ✅ ZROBIONE (B1-B7)
-6. ~~**Faza E** (launcher)~~ — ✅ ZROBIONE (E1-E12: API endpoints, launcher.py, launchToken w kliencie, smoke test)
-7. **Testy**: A8 + C6 + D11 — ⬜ po kompilacji i push
-8. **E13**: Hosting plików klienta — ⬜ (opcjonalny, zależy od CDN/serwera)
-9. **PyInstaller build** — ⬜ (launcher.py → launcher.exe / launcher)
+2. ~~**Fazy B+C+D** (API + serwer)~~ — ✅ ZROBIONE
+3. ~~**Faza E** (launcher)~~ — ✅ ZROBIONE
+4. ~~**Port do canary_test/**~~ — ✅ ZROBIONE (`98964825b`)
+5. ~~**FIX1-FIX65** (65 audytowych poprawek)~~ — ✅ ZROBIONE
+6. **TERAZ**: GHA kompilacja (A8 + C6) → fix błędów kompilacji → test integracyjny (D11)
+7. **POTEM**: E13 hosting + PyInstaller build + .env produkcja + schema SQL
+8. **DOCELOWO**: Let's Encrypt, cert pinning, metrics, challenge-response
 
 > **Dlaczego B przed E?** Launcher bez ticket-gate = pozorne bezpieczeństwo. Każdy może wystawić skrypt wysyłający POST /login.php bez launch-tokena (jeśli API go nie wymaga) lub z ukradzionym tokenem. Ticket-gate (Faza B/C) to PRAWDZIWA bariera — HMAC podpisany serwerowym kluczem, którego nie da się sfałszować. Launcher (Faza E) to warstwa UX + dodatkowy speed-bump, ale nie zastępuje kryptografii.
 
@@ -2302,4 +2341,5 @@ resp = requests.get("https://...", verify=True, timeout=10)
 *Zaktualizowany: 2026-03-02 (sekcja 16.4.1 — dodane linki referencyjne do oficjalnych repo OTC: edubart/otclient, OTCv8/otclientv8, OTCv8/otcv8-tools)*  
 *Zaktualizowany: 2026-03-02 (FIX9-FIX17 — 8 bugów z 2. audytu Codex: Wheel D6 guards, auth-after-ticket bypass, manifest bypass, worldName binding, ServerList empty, CLIENT_LOCKED drift, icon.ico)*  
 *Źródło: zarys_planu_modyfikacji_klienta.md + analiza kodu + review ChatGPT ×3 + review Codex ×5 + 2× Codex FIX session*  
-*Następny krok: push + kompilacja → testy A8/C6/D11 → PyInstaller build launchera → hosting plików klienta (E13)*
+*Zaktualizowany: 2026-03-03 (port C++ canary/ → canary_test/, commit `98964825b`, sekcja 19 rozszerzona o "Co brakuje", ścieżki plików zaktualizowane)*  
+*Następny krok: GHA kompilacja (`98964825b`) → fix błędów → testy A8/C6/D11 → PyInstaller build → hosting plików (E13)*

@@ -15,10 +15,10 @@ Zakres: ticket-gate, tryby gry, blokada serwerów, launcher
 | A3 | Logika wyboru trybu w `entergame.lua` | ✅ DONE | `b216fe683` |
 | A4 | Blokada `ServerList.add/remove` | ✅ DONE | `b216fe683` |
 | A5 | Ukrycie pól serwera/portu/protokołu | ✅ DONE | `b216fe683` |
-| A6 | Feature flags: blokada hotkey runes | ✅ DONE | niezacommitowane |
+| A6 | Feature flags: blokada hotkey runes | ✅ DONE | `7957e93f5` → `98964825b` |
 | A7 | Feature flags: ukrycie modułów (market, itp.) | ❌ N/A | wycofane — blokady od serwera (Faza D) |
-| A8 | Test kompilacja Windows + Linux | ⬜ TODO | — |
-| A-FIX | Codex review: port 443, ServerList lock, setLoginFormVisible, placeholder walidacja | ✅ DONE | niezacommitowane |
+| A8 | Test kompilacja Windows + Linux | ⬜ TODO | wymaga push → GHA build |
+| A-FIX | Codex review: port 443, ServerList lock, setLoginFormVisible, placeholder walidacja | ✅ DONE | `7957e93f5` → `98964825b` |
 
 ### Znane problemy C++ (NIE ruszamy w Fazie A — do Fazy B/X2)
 | # | Problem | Plik | Linia | Priorytet | Status |
@@ -51,60 +51,60 @@ Zakres: ticket-gate, tryby gry, blokada serwerów, launcher
 ### Quick Security Wins (X2, X3, X7)
 | # | Zadanie | Status | Commit | Priorytet |
 |---|---------|--------|--------|-----------|
-| X2 | Hard-fail TLS w kliencie (`httplogin.cpp:211`) | ✅ DONE | niezacommitowane | KRYTYCZNY |
-| X2b | Usunięcie HTTP fallback (`httplogin.cpp:108` + Emscripten) | ✅ DONE | niezacommitowane | KRYTYCZNY |
-| X3 | Fix ServerList bypass | ✅ DONE (A-FIX) | niezacommitowane | — |
-| X7 | Usunięcie logów haseł (Logger: req.body + res.body) | ✅ DONE | niezacommitowane | NISKI |
+| X2 | Hard-fail TLS w kliencie (`httplogin.cpp:211`) | ✅ DONE | `7957e93f5` → `98964825b` | KRYTYCZNY |
+| X2b | Usunięcie HTTP fallback (`httplogin.cpp:108` + Emscripten) | ✅ DONE | `7957e93f5` → `98964825b` | KRYTYCZNY |
+| X3 | Fix ServerList bypass | ✅ DONE (A-FIX) | `7957e93f5` → `98964825b` | — |
+| X7 | Usunięcie logów haseł (Logger: req.body + res.body) | ✅ DONE | `7957e93f5` → `98964825b` | NISKI |
 
 ### Faza B — API HTTP ticket-gate
 | # | Zadanie | Status | Commit |
 |---|---------|--------|--------|
-| B1 | `gameMode` + `launchToken` w login.php | ✅ DONE | niezacommitowane |
-| B2 | Filtrowanie worldów wg gameMode | ✅ DONE | niezacommitowane |
-| B3 | Nowy endpoint `ticket.php` | ✅ DONE | niezacommitowane |
-| B4 | Tabela `ticket_nonces` + `ticket_sessions` MySQL | ✅ DONE | niezacommitowane |
-| B5 | Klient Lua: request do ticket.php | ✅ DONE | niezacommitowane |
-| B6 | Klient C++: `requestTicket()` | ✅ DONE | niezacommitowane |
-| B7 | Test flow login→ticket→connect | ✅ DONE | smoke test CLI |
+| B1 | `gameMode` + `launchToken` w login.php | ✅ DONE | `7957e93f5` → `98964825b` |
+| B2 | Filtrowanie worldów wg gameMode | ✅ DONE | `7957e93f5` → `98964825b` |
+| B3 | Nowy endpoint `ticket.php` | ✅ DONE | `7957e93f5` → `98964825b` |
+| B4 | Tabela `ticket_nonces` + `ticket_sessions` MySQL | ✅ DONE | `7957e93f5` → `98964825b` |
+| B5 | Klient Lua: request do ticket.php | ✅ DONE | `7957e93f5` → `98964825b` |
+| B6 | Klient C++: `requestTicket()` | ✅ DONE | `7957e93f5` → `98964825b` |
+| B7 | Test flow login→ticket→connect | ✅ DONE | `7957e93f5` (smoke test CLI) |
 
 ### Faza C — Serwer Canary ticket-gate
 | # | Zadanie | Status | Commit |
 |---|---------|--------|--------|
-| C1 | `ticket_validator.cpp/.h` | ✅ DONE | niezacommitowane |
-| C2 | Integracja z `protocolgame.cpp` | ✅ DONE | niezacommitowane |
-| C3 | Klucze w `configmanager.cpp` + `config_enums.hpp` | ✅ DONE | niezacommitowane |
-| C4 | Konfiguracja `config.lua` / `config.lua.dist` | ✅ DONE | niezacommitowane |
-| C5 | Nonce store | ✅ DONE (in-memory w ticket_validator) | niezacommitowane |
-| C6 | Kompilacja i test | ⬜ TODO | — |
+| C1 | `ticket_validator.cpp/.h` | ✅ DONE | `7957e93f5` → `98964825b` |
+| C2 | Integracja z `protocolgame.cpp` | ✅ DONE | `7957e93f5` → `98964825b` |
+| C3 | Klucze w `configmanager.cpp` + `config_enums.hpp` | ✅ DONE | `7957e93f5` → `98964825b` |
+| C4 | Konfiguracja `config.lua` / `config.lua.dist` | ✅ DONE | `7957e93f5` → `98964825b` |
+| C5 | Nonce store | ✅ DONE (in-memory w ticket_validator) | `7957e93f5` → `98964825b` |
+| C6 | Kompilacja i test | ⬜ TODO | wymaga push → GHA build |
 
 ### Faza D — Feature flags serwer Canary
 | # | Zadanie | Status | Commit |
 |---|---------|--------|--------|
-| D1 | `GameMode` enum + pole w `Player` | ✅ DONE | niezacommitowane |
-| D2 | Blokada rune-on-creature hotkey | ✅ DONE | niezacommitowane |
-| D3 | Blokada Quick Loot / Auto Loot | ✅ DONE | niezacommitowane |
-| D4 | Blokada Market (5 metod) | ✅ DONE | niezacommitowane |
-| D5 | Blokada Prey System | ✅ DONE | niezacommitowane |
-| D6 | Blokada Wheel of Destiny | ✅ DONE | niezacommitowane |
-| D7 | Blokada Smart Equip | ✅ DONE | niezacommitowane |
-| D8 | Rate-limit run 1000ms | ✅ DONE | niezacommitowane |
+| D1 | `GameMode` enum + pole w `Player` | ✅ DONE | `7957e93f5` → `98964825b` |
+| D2 | Blokada rune-on-creature hotkey | ✅ DONE | `7957e93f5` → `98964825b` |
+| D3 | Blokada Quick Loot / Auto Loot | ✅ DONE | `7957e93f5` → `98964825b` |
+| D4 | Blokada Market (5 metod) | ✅ DONE | `7957e93f5` → `98964825b` |
+| D5 | Blokada Prey System | ✅ DONE | `7957e93f5` → `98964825b` |
+| D6 | Blokada Wheel of Destiny | ✅ DONE | `7957e93f5` → `98964825b` |
+| D7 | Blokada Smart Equip | ✅ DONE | `7957e93f5` → `98964825b` |
+| D8 | Rate-limit run 1000ms | ✅ DONE | `7957e93f5` → `98964825b` |
 | D9 | Blokada Action Bar packets | ❌ N/A | brak w codebase |
-| D10 | Blokada Bestiary | ✅ DONE | niezacommitowane |
-| D11 | Test integracyjny | ⬜ TODO | — |
+| D10 | Blokada Bestiary | ✅ DONE | `7957e93f5` → `98964825b` |
+| D11 | Test integracyjny | ⬜ TODO | wymaga kompilacji |
 
 ### Faza E — Launcher z auto-update ✅ GOTOWE
 | # | Zadanie | Status | Commit |
 |---|---------|--------|--------|
-| E1 | Skrypt `generate_manifest.php` | ✅ DONE | niezacommitowane |
-| E2 | Endpoint `update.php` | ✅ DONE | niezacommitowane |
-| E3 | Endpoint `launcher-token.php` | ✅ DONE | niezacommitowane |
-| E4 | Endpoint `launcher-version.php` | ✅ DONE | niezacommitowane |
-| E5 | Tabela `launch_tokens` + `manifest_versions` MySQL | ✅ DONE | niezacommitowane |
-| E6-E8 | Launcher Python (GUI + pobieranie + token) | ✅ DONE | niezacommitowane |
-| E9 | Launcher self-update | ✅ DONE | niezacommitowane |
-| E10 | Klient: `OTC_LAUNCH_TOKEN` env + C++ + Lua | ✅ DONE | niezacommitowane |
-| E11 | API `login.php`: walidacja `launchToken` | ✅ DONE | niezacommitowane |
-| E12 | Smoke test flow | ✅ DONE | niezacommitowane |
+| E1 | Skrypt `generate_manifest.php` | ✅ DONE | `7957e93f5` → `98964825b` |
+| E2 | Endpoint `update.php` | ✅ DONE | `7957e93f5` → `98964825b` |
+| E3 | Endpoint `launcher-token.php` | ✅ DONE | `7957e93f5` → `98964825b` |
+| E4 | Endpoint `launcher-version.php` | ✅ DONE | `7957e93f5` → `98964825b` |
+| E5 | Tabela `launch_tokens` + `manifest_versions` MySQL | ✅ DONE | `7957e93f5` → `98964825b` |
+| E6-E8 | Launcher Python (GUI + pobieranie + token) | ✅ DONE | `7957e93f5` → `98964825b` |
+| E9 | Launcher self-update | ✅ DONE | `7957e93f5` → `98964825b` |
+| E10 | Klient: `OTC_LAUNCH_TOKEN` env + C++ + Lua | ✅ DONE | `7957e93f5` → `98964825b` |
+| E11 | API `login.php`: walidacja `launchToken` | ✅ DONE | `7957e93f5` → `98964825b` |
+| E12 | Smoke test flow | ✅ DONE | `7957e93f5` |
 | E13 | Hosting plików klienta | ⬜ TODO | — |
 
 ### Codex Review #2 — FIX9-FIX17 (2026-03-02) ✅ GOTOWE
@@ -250,7 +250,11 @@ Zadanie uznajemy za gotowe tylko gdy:
 | `src/framework/luafunctions.cpp` | B6, E10, FIX18 | **TAK** |
 | `cacert.pem` | **FIX46** | NIE | ✅ NOWY |
 
-### Canary Server — `canary/` (10 plików, 8 C++, 2 nowe)
+### Canary Server — `canary_test/src/` (10 plików, 8 C++, 2 nowe)
+
+> **UWAGA**: Pliki C++ serwera zostały sportowane z `canary/` do `canary_test/` w commicie `98964825b`.
+> GHA workflow `build-canary.yml` kompiluje z `canary_test/`, więc TYLKO ten katalog jest budowany.
+
 | Plik | Fazy | C++? | Nowy? |
 |------|------|------|-------|
 | `src/server/network/protocol/ticket_validator.hpp` | C1, FIX10, FIX23 | **TAK** | ✅ NOWY |
@@ -267,7 +271,7 @@ Zadanie uznajemy za gotowe tylko gdy:
 ### Konfiguracja (3 pliki)
 | Plik | Fazy |
 |------|------|
-| `canary/config.lua.dist` | C4 |
+| `canary_test/config.lua.dist` | C4 |
 | `canary_test/config.lua` | C4, **FIX-C1** |
 | `canary_test/.gitignore` | **FIX34**, Audyt#5 (ssl/) |
 
@@ -313,8 +317,8 @@ Zadanie uznajemy za gotowe tylko gdy:
 | `Dokumentacja/01_Instalka_Klient/2026-03/02_DZIENNIK_BUILDOW_GHA.md` | ✅ |
 
 **RAZEM: 47 plików** (11 C++, 6 Lua, 1 OTUI, 3 config, 3 dokumentacja, 11 PHP/SQL, 5 launcher Python, 2 launcher config, 1 deploy script, 1 cacert, 3 SSL [gitignored])
-**Niezacommitowane**: FIX24-FIX49 + FIX-C1/C2/W1 (2 audyty = ~25 fixów)
-**Commity na branchu**: `72681f84c` (A1), `b216fe683` (A2-A5), `d0e121d77` (docs), `7957e93f5` (Fazy A-E), `9bbd23f4e` (CR#3 docs), `3090e02e9` (FIX18-23)
+**Niezacommitowane**: brak (wszystko pushnięte)
+**Commity na branchu**: `72681f84c` (A1), `b216fe683` (A2-A5), `d0e121d77` (docs), `7957e93f5` (Fazy A-E + FIX1-17 + X1-X8 + CR1-4), `9bbd23f4e` (CR#3 docs), `3090e02e9` (FIX18-23), **`98964825b` (port C++ do canary_test/ + FIX24-65 + API + OTClient + Launcher)**
 
 ### Infrastruktura (poza git — wymagana ręczna konfiguracja na nowym serwerze)
 | Element | Opis | Audyt |
@@ -323,4 +327,4 @@ Zadanie uznajemy za gotowe tylko gdy:
 | nginx configs | `/etc/nginx/sites-enabled/myaac.conf` + `127.local.conf` | FIX45 |
 | PHP deploy | `/var/www/html/apik/v1/` — sync via `deploy_api.sh` | FIX47, FIX48 |
 | MySQL tables | `ticket_sessions`, `launch_tokens`, `ticket_nonces` | B4, E5 |
-**Stan na 2026-03-02**: commit zbiorczy ze wszystkimi zmianami A6-E12 + FIX1-FIX17 + audyty X1-X8 + CR-1..CR-4
+**Stan na 2026-03-03**: commit `98964825b` — port plików C++ serwera z canary/ do canary_test/ + WSZYSTKIE zmiany API/Launcher/OTClient/Dokumentacja. 31 plików, 1409 dodań, 276 usunięć kodu (+ ~3171 usunięć to czyszczenie cacert.pem).

@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "releaseDate": "2026-01-01",
+  "channel": "stable",
+  "files": [
+    {
+      "path": "a.txt",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "size": 5,
+      "url": "https://example.com/a.txt"
+    },
+    {
+      "path": "b.txt",
+      "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "size": 5,
+      "url": "https://example.com/b.txt"
+    }
+  ]
+}

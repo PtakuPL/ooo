@@ -1,0 +1,73 @@
+# CI: Launcher Rust — fmt, clippy, test
+# LR-062: PR nie przechodzi bez zielonego CI
+
+name: Launcher Rust CI
+
+on:
+  push:
+    branches: [master, feature/ticket-gate]
+    paths:
+      - 'launcher-rust/**'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'launcher-rust/**'
+
+defaults:
+  run:
+    working-directory: launcher-rust
+
+jobs:
+  check:
+    name: Format + Clippy + Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+
+      - name: Cache cargo registry & build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            launcher-rust/target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('launcher-rust/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-
+
+      - name: Check formatting
+        run: cargo fmt --all -- --check
+
+      - name: Clippy (warnings = errors)
+        run: cargo clippy --all-targets --all-features -- -D warnings
+
+      - name: Run tests
+        run: cargo test --all --verbose
+
+  # LR-063: Contract tests job (walidacja payloadów i schematów)
+  contract-tests:
+    name: Contract Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            launcher-rust/target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('launcher-rust/Cargo.lock') }}
+
+      - name: Run contract/fixture tests
+        run: cargo test --package common-models --verbose
+        working-directory: launcher-rust

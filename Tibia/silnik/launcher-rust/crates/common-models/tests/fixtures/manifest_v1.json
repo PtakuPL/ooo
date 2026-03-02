@@ -1,0 +1,28 @@
+{
+  "version": "1.0.2",
+  "releaseDate": "2026-02-28",
+  "channel": "stable",
+  "files": [
+    {
+      "path": "otclient.exe",
+      "sha256": "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2",
+      "size": 15728640,
+      "url": "https://example.com/files/stable/1.0.2/otclient.exe"
+    },
+    {
+      "path": "modules/client_entergame/entergame.lua",
+      "sha256": "1122334455667788112233445566778811223344556677881122334455667788",
+      "size": 32768,
+      "url": "https://example.com/files/stable/1.0.2/modules/client_entergame/entergame.lua"
+    },
+    {
+      "path": "data/things/items.otb",
+      "sha256": "aabbccddaabbccddaabbccddaabbccddaabbccddaabbccddaabbccddaabbccdd",
+      "size": 524288,
+      "url": "https://example.com/files/stable/1.0.2/data/things/items.otb"
+    }
+  ],
+  "changelog": [
+    { "date": "2026-02-28", "text": "Initial release" }
+  ]
+}

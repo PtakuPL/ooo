@@ -4,8 +4,8 @@ members = [
     "crates/common-models",
     "crates/launcher-api",
     "crates/launcher-core",
+    "apps/launcher-cli",
     # "crates/launcher-helper",  # Etap 4
-    # "apps/launcher-cli",       # Etap 1 (po core)
     # "apps/launcher-tauri",     # Etap 2
 ]
 

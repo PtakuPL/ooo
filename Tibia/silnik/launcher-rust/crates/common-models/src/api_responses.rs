@@ -44,7 +44,7 @@ pub struct LaunchTokenErrorResponse {
 // launcher-token.php request
 // ─────────────────────────────────────────────
 
-#[derive(Debug, Clone, Serialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct LaunchTokenRequest {
     pub launcher_version: String,

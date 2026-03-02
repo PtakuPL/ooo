@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0",
+  "installId": "6dc9f21d-b6af-44e2-bd7f-5b4f4a3f7a11",
+  "channel": "stable",
+  "clientInstallPath": "C:\\Games\\TwojaGra\\client",
+  "launcherVersion": "0.2.0",
+  "currentManifestVersion": "1.0.3",
+  "currentManifestId": "stable:1.0.3",
+  "currentFilesHash": "8d1b5fabcdef1234567890abcdef1234567890abcdef1234567890abc123",
+  "lastSuccessfulUpdateUtc": "2026-03-02T18:20:10Z",
+  "lastUpdateAttemptUtc": "2026-03-02T18:18:03Z",
+  "lastUpdateResult": "success",
+  "lastErrorCode": null,
+  "lastErrorMessage": null,
+  "lastApiBaseUrl": "https://example.com/api/",
+  "tlsEnforced": true,
+  "lastLauncherVersionCheckUtc": null,
+  "lastKnownServerManifestVersion": null,
+  "lastTokenRequest": null,
+  "updateTransaction": {
+    "txId": "00000000-0000-0000-0000-000000000000",
+    "status": "idle",
+    "targetManifestVersion": null,
+    "targetManifestId": null,
+    "startedAtUtc": null,
+    "updatedFiles": [],
+    "backupFiles": [],
+    "deletePlanned": [],
+    "deleteApplied": [],
+    "stagingPath": null,
+    "resumeSupported": false
+  },
+  "managedFilesIndex": {
+    "modules/game.lua": {
+      "sha256": "abc123def456",
+      "size": 1024,
+      "manifestVersion": "1.0.3",
+      "managed": true,
+      "installedAtUtc": "2026-03-02T18:20:10Z",
+      "tags": ["module"],
+      "wasModifiedLocally": false
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "version": "0.2.0",
+  "minVersion": "0.1.0",
+  "required": true,
+  "url": "https://example.com/releases/launcher/0.2.0/",
+  "sha256": "abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
+  "releaseDate": "2026-03-02",
+  "notes": "Poprawki stabilności"
+}

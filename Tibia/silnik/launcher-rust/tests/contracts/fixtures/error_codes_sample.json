@@ -1,0 +1,18 @@
+{
+  "LCH_001": {
+    "code": "LCH_001",
+    "scenario": "API offline"
+  },
+  "LCH_010": {
+    "code": "LCH_010",
+    "scenario": "Manifest parse error"
+  },
+  "LCH_020": {
+    "code": "LCH_020",
+    "scenario": "Hash compute failed"
+  },
+  "LCH_030": {
+    "code": "LCH_030",
+    "scenario": "Token rejected"
+  }
+}

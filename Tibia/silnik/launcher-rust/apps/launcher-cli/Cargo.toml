@@ -1,0 +1,23 @@
+[package]
+name = "launcher-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "launcher-cli"
+path = "src/main.rs"
+
+[dependencies]
+common-models = { path = "../../crates/common-models" }
+launcher-api = { path = "../../crates/launcher-api" }
+launcher-core = { path = "../../crates/launcher-core" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+uuid = { workspace = true }
+semver = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

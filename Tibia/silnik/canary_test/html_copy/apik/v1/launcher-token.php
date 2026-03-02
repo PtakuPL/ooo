@@ -188,10 +188,12 @@ if ($manifestVersion !== '') {
             sendError('Client files hash mismatch (no manifest version provided). Update your launcher.');
         }
     } else {
-        // Brak aktywnych manifestów w DB — loguj ostrzeżenie, ale przepuść
-        // (świeża instalacja / dev, tabela manifest_versions pusta)
+        // FIX21: Brak aktywnych manifestów w DB → FAIL-CLOSED.
+        // Nie przepuszczamy bez weryfikacji — admin musi dodać manifest do DB.
+        // Użyj: php generate_manifest.php aby wygenerować manifest.
         $stmt->close();
-        error_log('[launcher-token.php] FIX12 WARNING: No active manifest_versions in DB. filesHash not validated.');
+        error_log('[launcher-token.php] FIX21 BLOCKED: No active manifest_versions in DB. Cannot verify filesHash. Add manifest first.');
+        sendError('Server configuration error: no manifest available. Contact administrator.');
     }
 }
 

@@ -127,22 +127,26 @@ bool TicketValidator::validateTicket(const std::string &ticket,
 			outErrorMsg = "Ticket has already been used (replay detected).";
 			return false;
 		}
-		usedNonces_.insert(nonce);
+		// FIX23: Zapisz nonce z timestampem wstawienia
+		usedNonces_[nonce] = now;
+
+		// FIX23: Auto-cleanup co 100 walidacji
+		validateCallCount_++;
+		if (validateCallCount_ % 100 == 0) {
+			cleanupExpiredNonces(300); // wywołanie BEZ locka (mamy go już)
+		}
 	}
 
 	// 7. Ustaw gameMode
 	outGameMode = payload["gameMode"].get<std::string>();
 
-	// 7b. FIX13: Sprawdź worldName — musi zgadzać się z SERVER_NAME
+	// 7b. FIX19: worldName — logujemy ale NIE odrzucamy.
+	// Walidacja world↔gameMode odbywa się w ticket.php (FIX20) PRZED podpisaniem.
+	// Tu ticket jest już podpisany HMAC — jeśli dotarł, to ticket.php go zwalidował.
+	// Porównanie z SERVER_NAME nie ma sensu bo API wystawia inne nazwy niż config.lua.
 	if (payload.contains("worldName")) {
 		std::string ticketWorldName = payload["worldName"].get<std::string>();
-		std::string serverName = g_configManager().getString(SERVER_NAME);
-		if (!ticketWorldName.empty() && !serverName.empty() && ticketWorldName != serverName) {
-			outErrorMsg = "Ticket worldName mismatch. Expected: " + serverName;
-			g_logger().warn("[TicketValidator] worldName mismatch: ticket='{}' vs server='{}'",
-			                ticketWorldName, serverName);
-			return false;
-		}
+		g_logger().debug("[TicketValidator] Ticket worldName='{}' (informational only)", ticketWorldName);
 	}
 	if (payload.contains("accountId")) {
 		outAccountId = payload["accountId"].get<uint32_t>();
@@ -157,13 +161,21 @@ bool TicketValidator::validateTicket(const std::string &ticket,
 }
 
 void TicketValidator::cleanupExpiredNonces(uint64_t maxAgeSec) {
-	// Prosty cleanup — usuwamy wszystkie nonce'y.
-	// W produkcji: nonce powinien mieć timestamp i usuwamy stare.
-	// Na razie: czyścimy co N minut cały set (nonce'y i tak wygasają z ticketem).
-	std::lock_guard<std::mutex> lock(nonceMutex_);
-	if (usedNonces_.size() > 10000) {
-		g_logger().info("[TicketValidator] Cleaning up {} nonces", usedNonces_.size());
-		usedNonces_.clear();
+	// FIX23: Usuwamy nonce'y starsze niż maxAgeSec sekund.
+	// UWAGA: ta metoda jest wywoływana z validateTicket() WEWNĄTRZ locka nonceMutex_,
+	// więc NIE blokujemy ponownie.
+	auto now = static_cast<uint64_t>(std::time(nullptr));
+	size_t before = usedNonces_.size();
+	for (auto it = usedNonces_.begin(); it != usedNonces_.end(); ) {
+		if (now - it->second > maxAgeSec) {
+			it = usedNonces_.erase(it);
+		} else {
+			++it;
+		}
+	}
+	size_t removed = before - usedNonces_.size();
+	if (removed > 0) {
+		g_logger().info("[TicketValidator] Nonce cleanup: removed {} expired (>{} s), {} remain", removed, maxAgeSec, usedNonces_.size());
 	}
 }
 

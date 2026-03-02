@@ -144,6 +144,22 @@ $effectiveGameMode = $sessGameMode;
 if ($worldName === '') {
     sendError('Missing required field: worldName.');
 }
+
+// ------- 2c. FIX20: Sprawdź world↔gameMode — worldName musi pasować do trybu -------
+// Mapowanie gameMode → dozwolone nazwy światów (takie same jak w login.php getWorldsForGameMode)
+$allowedWorldsByMode = [
+    'classic74' => ['Classic 7.4'],
+    'modern'    => ['Modern'],
+];
+if (isset($allowedWorldsByMode[$effectiveGameMode])) {
+    if (!in_array($worldName, $allowedWorldsByMode[$effectiveGameMode], true)) {
+        sendError('World "' . $worldName . '" is not allowed for game mode "' . $effectiveGameMode . '".');
+    }
+}
+// Jeśli gameMode nie jest w mapowaniu (nowy tryb?) — przepuść z logiem
+if (!isset($allowedWorldsByMode[$effectiveGameMode])) {
+    error_log("[ticket.php] FIX20 WARNING: Unknown gameMode '{$effectiveGameMode}' — worldName not validated.");
+}
 $stmt = $mysqli->prepare(
     "SELECT id, name FROM players WHERE account_id = ? AND name = ? AND deletion = 0 LIMIT 1"
 );

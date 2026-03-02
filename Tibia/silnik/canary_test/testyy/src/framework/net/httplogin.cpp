@@ -67,6 +67,11 @@ void LoginHttp::setLaunchToken(const std::string& token) {
     this->launchToken = token;
 }
 
+// FIX18: setter gameMode — Lua woła http:setGameMode(mode) przed httpLogin
+void LoginHttp::setGameMode(const std::string& mode) {
+    this->gameMode = mode;
+}
+
 void LoginHttp::startHttpLogin(const std::string& host, const std::string& path,
                                const uint16_t port, const std::string& email,
                                const std::string& password) {
@@ -79,6 +84,10 @@ void LoginHttp::startHttpLogin(const std::string& host, const std::string& path,
     json body = { {"email", email}, {"password", password}, {"stayloggedin", true}, {"type", "login"} };
     if (!this->launchToken.empty()) {
         body["launchToken"] = this->launchToken;
+    }
+    // FIX18: gameMode dołączany do body logowania
+    if (!this->gameMode.empty()) {
+        body["gameMode"] = this->gameMode;
     }
     const httplib::Headers headers = { {"User-Agent", "Mozilla/5.0"} };
 
@@ -163,6 +172,10 @@ void LoginHttp::httpLogin(const std::string& host, const std::string& path,
         if (!this->launchToken.empty()) {
             body["launchToken"] = this->launchToken;
         }
+        // FIX18: gameMode dołączany do body logowania
+        if (!this->gameMode.empty()) {
+            body["gameMode"] = this->gameMode;
+        }
         std::string bodyStr = body.dump(1);
         attr.requestData = bodyStr.data();
         attr.requestDataSize = bodyStr.length();
@@ -224,6 +237,10 @@ httplib::Result LoginHttp::loginHttpsJson(const std::string& host,
     if (!this->launchToken.empty()) {
         body["launchToken"] = this->launchToken;
     }
+    // FIX18: gameMode dołączany do body logowania
+    if (!this->gameMode.empty()) {
+        body["gameMode"] = this->gameMode;
+    }
     const httplib::Headers headers = { {"User-Agent", "Mozilla/5.0"} };
 
     httplib::Result response =
@@ -260,6 +277,10 @@ httplib::Result LoginHttp::loginHttpJson(const std::string& host,
     json body = { {"email", email}, {"password", password}, {"stayloggedin", true}, {"type", "login"} };
     if (!this->launchToken.empty()) {
         body["launchToken"] = this->launchToken;
+    }
+    // FIX18: gameMode dołączany do body logowania
+    if (!this->gameMode.empty()) {
+        body["gameMode"] = this->gameMode;
     }
 
     httplib::Result response =

@@ -723,7 +723,9 @@ function EnterGame.tryHttpLogin(clientVersion, httpLogin)
 
     if not path then
         path = ""
-    else
+    elseif path:sub(1, 1) ~= '/' then
+        -- FIX22: Tylko dodaj '/' jeśli path jeszcze nie zaczyna się od '/'
+        -- Zapobiega podwójnemu slash (np. //login.php)
         path = '/' .. path
     end
 
@@ -747,6 +749,8 @@ function EnterGame.tryHttpLogin(clientVersion, httpLogin)
     local http = LoginHttp.create()
     -- E10: Przekaż launchToken z launchera (env OTC_LAUNCH_TOKEN) do C++ → JSON body
     http:setLaunchToken(G.launchToken or "")
+    -- FIX18: Przekaż gameMode (classic74/modern) do C++ → JSON body login
+    http:setGameMode(CurrentGameMode or "")
     http:httpLogin(host, path, G.port, G.account, G.password, G.requestId, httpLogin)
 end
 

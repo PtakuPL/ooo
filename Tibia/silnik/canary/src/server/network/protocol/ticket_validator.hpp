@@ -18,7 +18,7 @@
 
 #include <cstdint>
 #include <string>
-#include <unordered_set>
+#include <unordered_map>
 #include <mutex>
 
 class TicketValidator {
@@ -60,8 +60,10 @@ private:
 	// Base64 decode
 	std::string base64Decode(const std::string &encoded) const;
 
-	// Nonce store (in-memory, jednorazowe)
-	std::unordered_set<std::string> usedNonces_;
+	// Nonce store (in-memory, jednorazowe) — FIX23: z timestampem
+	// Klucz: nonce string, Wartość: unix timestamp wstawienia
+	std::unordered_map<std::string, int64_t> usedNonces_;
 	std::mutex nonceMutex_;
+	uint64_t validateCallCount_ = 0; // FIX23: licznik wywołań do auto-cleanup
 };
 

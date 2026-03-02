@@ -194,6 +194,7 @@ void Application::registerLuaFunctions()
     g_lua.bindClassStaticFunction<LoginHttp>("create", [] { return std::make_shared<LoginHttp>(); });
     g_lua.bindClassMemberFunction<LoginHttp>("httpLogin", &LoginHttp::httpLogin);
     g_lua.bindClassMemberFunction<LoginHttp>("setLaunchToken", &LoginHttp::setLaunchToken);  // E10
+    g_lua.bindClassMemberFunction<LoginHttp>("setGameMode", &LoginHttp::setGameMode);        // FIX18
     g_lua.bindClassMemberFunction<LoginHttp>("requestTicket", &LoginHttp::requestTicket);
 
     // Http

@@ -858,70 +858,64 @@ Zacommitowane: `7957e93f5` na `feature/ticket-gate`.
 
 Data: 2026-03-02 (po commicie `7957e93f5`)
 Źródło: Kolejny przegląd Codex — 6 zgłoszonych problemów (1× KRYTYCZNE, 2× WYSOKIE, 3× ŚREDNIE).
-Status: ⬜ DO NAPRAWIENIA w następnej sesji.
+Status: ✅ NAPRAWIONE (sesja 2026-03-03).
 
 ### FIX18 (KRYTYCZNE): Klient nie wysyła gameMode do login.php
-Pliki: `httplogin.cpp` (linia 223), `login.php` (linia 298), `ticket.php` (linia 137)
-Problem:
-- Body HTTP login w `httplogin.cpp` NIE zawiera `gameMode` → API otrzymuje pusty gameMode
-- `login.php` domyślnie ustawia `gameModeDb = 'modern'` gdy brak gameMode w requeście
-- `ticket.php` sprawdza `gameMode !== sessGameMode` → classic74 vs modern = MISMATCH → FAIL
-- Plan wprost wymaga tego pola: `plan_zabezpieczenia_klienta_i_serwera.md` linia 1245
-Efekt: Gracz wybierający tryb classic74 NIGDY nie przejdzie ticketu, bo sesja zapisała się jako modern.
-Priorytet: KRYTYCZNE — blokuje cały flow logowania w trybie classic74.
+Pliki: `httplogin.h/cpp`, `luafunctions.cpp`, `entergame.lua`
+Problem: Body HTTP login nie zawierało gameMode → login.php domyślnie ustawiał modern → ticket mismatch.
+Rozwiązanie (sesja 2026-03-03):
+- `httplogin.h`: dodano pole `std::string gameMode` + deklaracja `setGameMode()`
+- `httplogin.cpp`: implementacja setGameMode() + dodanie `body["gameMode"]` we WSZYSTKICH 4 miejscach budowy JSON body (startHttpLogin, loginHttpsJson, loginHttpJson, Emscripten fetch)
+- `luafunctions.cpp`: zarejestrowano binding `setGameMode`
+- `entergame.lua`: wywołanie `http:setGameMode(CurrentGameMode or "")` przed `httpLogin`
+Status: ✅ DONE
 
 ### FIX19 (WYSOKIE): Niespójna walidacja worldName — zrywa logowanie
-Pliki: `login.php` (linie 97, 99), `ticket_validator.cpp` (linia 136), `config.lua` (linia 89)
-Problem:
-- API login.php wystawia nazwy światów `Classic 7.4` / `Modern`
-- ticket_validator.cpp porównuje `worldName` z `SERVER_NAME` z config.lua
-- Aktualny `serverName = "Tibia 7.4 test"` → nigdy nie pasuje do `Classic 7.4`
-Efekt: Walidacja worldName w C++ ZAWSZE failuje, bo nazwy się nie zgadzają.
-Priorytet: WYSOKIE — blokuje logowanie gdy worldName jest niepusty.
+Pliki: `ticket_validator.cpp`
+Problem: API nazwy światów ("Classic 7.4") ≠ config.lua SERVER_NAME ("Tibia 7.4 test").
+Rozwiązanie: Zmieniono walidację worldName w C++ z hard-reject na info-only log.
+Ticket jest już podpisany HMAC przez ticket.php — worldName jest zwalidowane po stronie PHP (FIX20).
+Status: ✅ DONE
 
 ### FIX20 (WYSOKIE): ticket.php nie sprawdza world↔gameMode
-Pliki: `ticket.php` (linia 143), `plan_zabezpieczenia_klienta_i_serwera.md` (linia 344)
-Problem:
-- FIX13 dodał wymóg `worldName !== ''`, ale NIE sprawdza czy dany world jest dozwolony dla gameMode
-- Plan wymaga mapowania world↔gameMode (np. classic74 → tylko "Classic 7.4" world)
-- Bez tego: gracz z sesją classic74 może podać worldName modern world i odwrotnie
-Priorytet: WYSOKIE — brak walidacji pozwala na cross-mode ticket.
+Pliki: `ticket.php`
+Problem: Brak walidacji czy wybrany world jest dozwolony dla danego gameMode.
+Rozwiązanie: Dodano mapowanie `$allowedWorldsByMode` → `classic74 → ['Classic 7.4']`, `modern → ['Modern']`.
+Sprawdzenie `in_array($worldName, $allowedWorldsByMode[$effectiveGameMode], true)` → sendError przy niezgodności.
+Status: ✅ DONE
 
 ### FIX21 (ŚREDNIE): launcher-token.php fail-open przy pustej tabeli manifest_versions
-Pliki: `launcher-token.php` (linia 190)
-Problem:
-- FIX12 dodał sprawdzanie filesHash gdy manifestVersion pusty
-- ALE: gdy tabela `manifest_versions` jest pusta (0 rows) → loguje warning i PRZEPUSZCZA
-- Dokumentacja twierdzi "FIX12 DONE/fail-closed" — ale to jest fail-OPEN w edge case
-Efekt: Świeża instalacja lub pusta tabela = brak weryfikacji integralności plików.
-Uwaga: To jest celowa decyzja dev/fresh-install, ale niespójna z opisem "fail-closed".
-Priorytet: ŚREDNIE — dotyczy tylko edge case pustej tabeli.
+Pliki: `launcher-token.php`
+Problem: Pusta tabela manifest_versions → logował warning i przepuszczał (fail-open).
+Rozwiązanie: Zmieniono na `sendError('Server configuration error: no manifest available.')` — true fail-closed.
+Admin musi dodać manifest do DB zanim tokeny będą wydawane.
+Status: ✅ DONE
 
 ### FIX22 (ŚREDNIE): Podwójny slash w login URL (//login.php)
-Pliki: `entergame.lua` (linia 727)
-Problem:
-- `httpLoginUrl` z GameModes kończy się na `/` a `tryHttpLogin` dokłada `/login.php`
-- Efekt: URL typu `https://server.com//login.php`
-- Większość serwerów normalizuje `//` → `/`, ale nie jest to gwarantowane
-Priorytet: ŚREDNIE — w praktyce działa, ale niespójne parsowanie URL.
+Pliki: `entergame.lua`
+Problem: httpLoginUrl kończył się na `/`, a tryHttpLogin doklejal kolejny `/` → `//login.php`.
+Rozwiązanie: Dodano guard `if path:sub(1,1) ~= '/' then path = '/' .. path end` — slash dodawany tylko gdy brak.
+Status: ✅ DONE
 
 ### FIX23 (ŚREDNIE): Nonce replay-store architektonicznie niedokończony
-Pliki: `ticket_validator.cpp` (linia 159)
-Problem:
-- `cleanupExpiredNonces()` czyści CAŁY set dopiero przy >10k wpisów
-- Nigdzie nie jest wywoływany cyklicznie (brak timera/crona)
-- Przy dużym ruchu: set rośnie bez końca aż do 10k, potem jednorazowe wyczyszczenie
-- Stare nonce'y (nawet z wygasłymi ticketami) pozostają w pamięci
-Priorytet: ŚREDNIE — nie blokuje, ale memory leak w długim horyzoncie.
+Pliki: `ticket_validator.hpp`, `ticket_validator.cpp`
+Problem: Cleanup >10k jednorazowe clear, brak cyklicznego wywołania, memory leak w długim horyzoncie.
+Rozwiązanie:
+- `.hpp`: zmiana `unordered_set<string>` → `unordered_map<string, int64_t>` (nonce → timestamp wstawienia)
+- `.hpp`: dodano `validateCallCount_` do auto-triggera cleanup
+- `.cpp`: `usedNonces_[nonce] = now` zapisuje czas wstawienia
+- `.cpp`: `cleanupExpiredNonces()` iteruje mapę i usuwa wpisy starsze niż maxAgeSec (300s)
+- `.cpp`: cleanup triggerowany automatycznie co 100 wywołań `validateTicket()`
+Status: ✅ DONE
 
 ### Podsumowanie Codex Review #3:
 | FIX | Severity | Problem | Status |
 |-----|----------|---------|--------|
-| FIX18 | KRYTYCZNE | gameMode nie wysyłany do login.php | ⬜ TODO |
-| FIX19 | WYSOKIE | worldName mismatch (API vs SERVER_NAME) | ⬜ TODO |
-| FIX20 | WYSOKIE | Brak walidacji world↔gameMode w ticket.php | ⬜ TODO |
-| FIX21 | ŚREDNIE | launcher-token fail-open przy pustej tabeli | ⬜ TODO |
-| FIX22 | ŚREDNIE | Podwójny slash w login URL | ⬜ TODO |
-| FIX23 | ŚREDNIE | Nonce store cleanup niedokończony | ⬜ TODO |
+| FIX18 | KRYTYCZNE | gameMode nie wysyłany do login.php | ✅ DONE |
+| FIX19 | WYSOKIE | worldName mismatch (API vs SERVER_NAME) | ✅ DONE |
+| FIX20 | WYSOKIE | Brak walidacji world↔gameMode w ticket.php | ✅ DONE |
+| FIX21 | ŚREDNIE | launcher-token fail-open przy pustej tabeli | ✅ DONE |
+| FIX22 | ŚREDNIE | Podwójny slash w login URL | ✅ DONE |
+| FIX23 | ŚREDNIE | Nonce store cleanup niedokończony | ✅ DONE |
 
-Do naprawienia w następnej sesji roboczej.
+Naprawione w sesji 2026-03-03.

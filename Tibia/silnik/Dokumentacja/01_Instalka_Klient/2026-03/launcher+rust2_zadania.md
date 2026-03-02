@@ -1,8 +1,12 @@
 # Launcher Rust+Tauri - Plan Zadan Wykonawczy
 
 **Data:** 2026-03-02  
+**Ostatnia aktualizacja:** 2026-03-03  
 **Zrodlo:** `launcher+rust2.md`  
 **Cel:** zamienic plan architektury na konkretne zadania wdrozeniowe krok po kroku.
+
+**Commit Sprint 1:** `28499ce41` (2026-03-02) — branch `feature/ticket-gate`  
+**Kompilacja:** wylacznie GitHub Actions (nie lokalnie na WSL)
 
 ---
 
@@ -35,55 +39,55 @@
 
 | ID | Priorytet | Zadanie | Wynik | Kryterium akceptacji |
 |---|---|---|---|---|
-| LR-001 | P0 | Opisac kontrakt `launcher-version.php` | `docs/contracts/launcher-version.md` | Zawiera pola `version`, `minVersion`, `required`, `url` |
-| LR-002 | P0 | Opisac kontrakt `update.php` | `docs/contracts/update-manifest.md` | Okreslone pola required/optional oraz walidacja |
-| LR-003 | P0 | Opisac kontrakt `launcher-token.php` | `docs/contracts/launcher-token.md` | `channel` i `manifestVersion` oznaczone jako wymagane |
-| LR-004 | P0 | Opisac kontrakt `installer-catalog.php` | `docs/contracts/installer-catalog.md` | Zawiera Windows/Linux/Android + `sha256` + `size` |
-| LR-005 | P0 | Zamrozic schemat `manifest.json v2` | `docs/contracts/manifest-v2.md` | Pokrywa `files`, `filesHashExpected`, polityki `overwrite/delete` |
-| LR-006 | P0 | Zamrozic schemat `installed_state.json` | `docs/contracts/installed-state.md` | Pokrywa `updateTransaction`, rollback, `lastErrorCode` |
-| LR-007 | P0 | Zdefiniowac kody bledow launchera `LCH_*` | `docs/contracts/error-codes.md` | Kody mapuja sie na scenariusze runtime |
-| LR-008 | P0 | Ustalic polityke plikow managed/user-owned | `docs/contracts/file-ownership.md` | Jasna lista: co wolno nadpisac/usunac |
-| LR-009 | P0 | Zdefiniowac kontrakt integracji z klientem | `docs/contracts/client-integration.md` | Dokumentuje exe path, env token, channel |
+| LR-001 | P0 | ✅ Opisac kontrakt `launcher-version.php` | `docs/contracts/launcher-version.md` | Zawiera pola `version`, `minVersion`, `required`, `url` |
+| LR-002 | P0 | ✅ Opisac kontrakt `update.php` | `docs/contracts/update-manifest.md` | Okreslone pola required/optional oraz walidacja |
+| LR-003 | P0 | ✅ Opisac kontrakt `launcher-token.php` | `docs/contracts/launcher-token.md` | `channel` i `manifestVersion` oznaczone jako wymagane |
+| LR-004 | P0 | ✅ Opisac kontrakt `installer-catalog.php` | `docs/contracts/installer-catalog.md` | Zawiera Windows/Linux/Android + `sha256` + `size` |
+| LR-005 | P0 | ✅ Zamrozic schemat `manifest.json v2` | `docs/contracts/manifest-v2.md` | Pokrywa `files`, `filesHashExpected`, polityki `overwrite/delete` |
+| LR-006 | P0 | ✅ Zamrozic schemat `installed_state.json` | `docs/contracts/installed-state.md` | Pokrywa `updateTransaction`, rollback, `lastErrorCode` |
+| LR-007 | P0 | ✅ Zdefiniowac kody bledow launchera `LCH_*` | `docs/contracts/error-codes.md` | Kody mapuja sie na scenariusze runtime |
+| LR-008 | P0 | ✅ Ustalic polityke plikow managed/user-owned | `docs/contracts/file-ownership.md` | Jasna lista: co wolno nadpisac/usunac |
+| LR-009 | P0 | ✅ Zdefiniowac kontrakt integracji z klientem | `docs/contracts/client-integration.md` | Dokumentuje exe path, env token, channel |
 | LR-010 | P0 | Dodac testy kontraktowe API | `tests/contracts/*` | Testy przechodza dla stable/test |
 
 ### Etap 1 - Rust Core (CLI)
 
 | ID | Priorytet | Zadanie | Wynik | Kryterium akceptacji |
 |---|---|---|---|---|
-| LR-011 | P0 | Utworzyc workspace Rust | `apps/`, `crates/` | Projekt buduje sie lokalnie |
-| LR-012 | P0 | Dodac crate `common-models` | `crates/common-models` | Modele serde dla manifest/token/state |
-| LR-013 | P0 | Dodac crate `launcher-api` | `crates/launcher-api` | Klient HTTP do endpointow API |
-| LR-014 | P0 | Dodac crate `launcher-core` | `crates/launcher-core` | Moduly planner/patcher/hash/process |
-| LR-015 | P0 | Implementowac pobieranie i walidacje manifestu | `manifest` module | Odrzuca uszkodzony JSON i brak required fields |
-| LR-016 | P0 | Implementowac skan lokalnych plikow i SHA-256 | `file_index` module | Hash kazdego pliku zgodny z fixture |
-| LR-017 | P0 | Implementowac `filesHash` (zgodny z planem) | `integrity` module | Wynik zgodny z referencja API/Python |
-| LR-018 | P0 | Implementowac planner update | `patcher::planner` | Tworzy listy: download/replace/delete/keep |
-| LR-019 | P0 | Implementowac downloader z retry | `downloader` module | Retry dziala i raportuje bledy |
-| LR-020 | P0 | Implementowac verify pobrania po `sha256` | `downloader` module | Hash mismatch zatrzymuje update |
-| LR-021 | P0 | Implementowac staging i atomowa podmiane | `patcher::apply` | Brak half-state po sukcesie |
-| LR-022 | P0 | Implementowac rollback marker i recovery | `state` module | Przerwany update wraca do stanu spojnego |
-| LR-023 | P0 | Implementowac token client (`launcher-token.php`) | `launcher-api` | Wysyla `launcherVersion`, `filesHash`, `channel`, `manifestVersion` |
-| LR-024 | P0 | Implementowac process runner | `process_runner` | Klient startuje z `OTC_LAUNCH_TOKEN` |
-| LR-025 | P0 | Implementowac sync listy serwerow | `serverlist_sync` | Aktualizuje plik listy serwerow klienta |
-| LR-026 | P0 | Implementowac flow CLI `check->update->token->launch` | `apps/launcher-cli` | End-to-end dziala bez UI |
-| LR-027 | P0 | Implementowac zapis `installed_state.json` | `state::store` | Stan aktualizuje sie po kazdej probie update |
-| LR-028 | P0 | Implementowac `repair install` | `repair` command | Potrafi naprawic niezgodne pliki |
-| LR-029 | P0 | Testy jednostkowe core | `crates/*/tests` | Pokrycie parser/hash/planner |
-| LR-030 | P0 | Testy integracyjne core + fake API | `tests/integration` | Scenariusze token OK/FAIL, update OK/FAIL |
-| LR-071 | P0 | Zaimplementowac modele serde: `ManifestV2`, `ManifestV1`, `NormalizedManifest` | `models::manifest` | Obsluga v1 i v2 bez rozjazdu kontraktow |
-| LR-072 | P0 | Zaimplementowac `parse_manifest_compat()` (v1 -> normalized v2) | `manifest parser` | Dla v1 mapuje domyslne pola (`managed`, `action`, `includeInFilesHash`) |
-| LR-073 | P0 | Zaimplementowac `validate_basic()` dla manifestu | `manifest validator` | Odrzuca puste pola i duplikaty `path` |
-| LR-074 | P0 | Zaimplementowac bezpieczna walidacje sciezek (path traversal) | `path validator` | Odrzuca `..`, sciezki absolutne i niebezpieczne segmenty |
-| LR-075 | P0 | Dodac walidacje pol zaleznych od `action` | `manifest validator` | `file` wymaga hash/size, `delete` nie wymaga hash/url |
-| LR-076 | P0 | Wdrozyc polityke `filesHashExpected` (v1 opcjonalne, v2 wymagane) | `compat policy` | Launcher failuje dla v2 bez `filesHashExpected` |
-| LR-077 | P0 | Zaimplementowac `InstalledState` + `UpdateTransaction` wg specyfikacji | `models::installed_state` | Pokrywa statusy update i metadane rollback |
-| LR-078 | P0 | Dodac atomiczny zapis `installed_state.json` (`tmp + fsync + rename`) | `state::store` | Brak uszkodzonego state po crashu |
+| LR-011 | P0 | ✅ Utworzyc workspace Rust | `apps/`, `crates/` | Projekt buduje sie na GHA |
+| LR-012 | P0 | ✅ Dodac crate `common-models` | `crates/common-models` | Modele serde dla manifest/token/state |
+| LR-013 | P0 | ✅ Dodac crate `launcher-api` (pełna impl.) | `crates/launcher-api` | Klient HTTP do endpointow API |
+| LR-014 | P0 | ✅ Dodac crate `launcher-core` (pełna impl.) | `crates/launcher-core` | Moduly planner/patcher/hash/process |
+| LR-015 | P0 | ✅ Implementowac pobieranie i walidacje manifestu | `manifest` module | Odrzuca uszkodzony JSON i brak required fields |
+| LR-016 | P0 | ✅ Implementowac skan lokalnych plikow i SHA-256 | `file_index` module | Hash kazdego pliku zgodny z fixture |
+| LR-017 | P0 | ✅ Implementowac `filesHash` (zgodny z planem) | `integrity` module | Wynik zgodny z referencja API/Python |
+| LR-018 | P0 | ✅ Implementowac planner update | `patcher::planner` | Tworzy listy: download/replace/delete/keep |
+| LR-019 | P0 | ✅ Implementowac downloader z retry | `downloader` module | Retry dziala i raportuje bledy |
+| LR-020 | P0 | ✅ Implementowac verify pobrania po `sha256` | `downloader` module | Hash mismatch zatrzymuje update |
+| LR-021 | P0 | ✅ Implementowac staging i atomowa podmiane | `patcher::apply` | Brak half-state po sukcesie |
+| LR-022 | P0 | ✅ Implementowac rollback marker i recovery | `state` module | Przerwany update wraca do stanu spojnego |
+| LR-023 | P0 | ✅ Implementowac token client (`launcher-token.php`) | `launcher-api` | Wysyla `launcherVersion`, `filesHash`, `channel`, `manifestVersion` |
+| LR-024 | P0 | ✅ Implementowac process runner | `process_runner` | Klient startuje z `OTC_LAUNCH_TOKEN` |
+| LR-025 | P0 | ✅ Implementowac sync listy serwerow | `serverlist_sync` | Aktualizuje plik listy serwerow klienta |
+| LR-026 | P0 | 🔧 Implementowac flow CLI `check->update->token->launch` | `apps/launcher-cli` | End-to-end dziala bez UI |
+| LR-027 | P0 | ✅ Implementowac zapis `installed_state.json` | `state::store` | Stan aktualizuje sie po kazdej probie update |
+| LR-028 | P0 | ✅ Implementowac `repair install` | `repair` command | Potrafi naprawic niezgodne pliki |
+| LR-029 | P0 | ✅ Testy jednostkowe core | `crates/*/tests` | Pokrycie parser/hash/planner |
+| LR-030 | P0 | 🔧 Testy integracyjne core + fake API | `tests/integration` | Scenariusze token OK/FAIL, update OK/FAIL |
+| LR-071 | P0 | ✅ Zaimplementowac modele serde: `ManifestV2`, `ManifestV1`, `NormalizedManifest` | `models::manifest` | Obsluga v1 i v2 bez rozjazdu kontraktow |
+| LR-072 | P0 | ✅ Zaimplementowac `parse_manifest_compat()` (v1 -> normalized v2) | `manifest parser` | Dla v1 mapuje domyslne pola (`managed`, `action`, `includeInFilesHash`) |
+| LR-073 | P0 | ✅ Zaimplementowac `validate_basic()` dla manifestu | `manifest validator` | Odrzuca puste pola i duplikaty `path` |
+| LR-074 | P0 | ✅ Zaimplementowac bezpieczna walidacje sciezek (path traversal) | `path validator` | Odrzuca `..`, sciezki absolutne i niebezpieczne segmenty |
+| LR-075 | P0 | ✅ Dodac walidacje pol zaleznych od `action` | `manifest validator` | `file` wymaga hash/size, `delete` nie wymaga hash/url |
+| LR-076 | P0 | ✅ Wdrozyc polityke `filesHashExpected` (v1 opcjonalne, v2 wymagane) | `compat policy` | Launcher failuje dla v2 bez `filesHashExpected` |
+| LR-077 | P0 | ✅ Zaimplementowac `InstalledState` + `UpdateTransaction` wg specyfikacji | `models::installed_state` | Pokrywa statusy update i metadane rollback |
+| LR-078 | P0 | ✅ Dodac atomiczny zapis `installed_state.json` (`tmp + fsync + rename`) | `state::store` | Brak uszkodzonego state po crashu |
 | LR-079 | P1 | Dodac warstwe DTO statusow dla Tauri | `models::dto` | Front dostaje tylko statusy/komunikaty, nie surowy manifest |
 | LR-080 | P1 | Zablokowac logike bezpieczenstwa w UI (thin frontend) | `tauri integration` | Tauri wywoluje tylko komendy core |
-| LR-081 | P0 | Zaimplementowac `UpdatePlan` (`to_download`, `to_replace`, `to_delete`, `to_keep`) | `update::planner` | Plan zmian jest deterministyczny i testowalny |
-| LR-082 | P0 | Zaimplementowac referencyjne `compute_files_hash()` | `integrity::hash` | Zgodnosc 1:1 z regula sort + `MISSING` |
-| LR-083 | P0 | Dodac zestaw fixture: `manifest_v1`, `manifest_v2`, lokalne pliki | `tests/fixtures` | Testy parsera/plannera/hash uruchamiaja sie offline |
-| LR-084 | P0 | Testy parsera i migracji v1->v2 (happy path + reject cases) | `tests/manifest_compat` | Wykrywa regresje kompatybilnosci |
+| LR-081 | P0 | ✅ Zaimplementowac `UpdatePlan` (`to_download`, `to_replace`, `to_delete`, `to_keep`) | `update::planner` | Plan zmian jest deterministyczny i testowalny |
+| LR-082 | P0 | ✅ Zaimplementowac referencyjne `compute_files_hash()` | `integrity::hash` | Zgodnosc 1:1 z regula sort + `MISSING` |
+| LR-083 | P0 | ✅ Dodac zestaw fixture: `manifest_v1`, `manifest_v2`, lokalne pliki | `tests/fixtures` | Testy parsera/plannera/hash uruchamiaja sie offline |
+| LR-084 | P0 | ✅ Testy parsera i migracji v1->v2 (happy path + reject cases) | `tests/manifest_compat` | Wykrywa regresje kompatybilnosci |
 
 ### Etap 2 - Tauri UI v1
 
@@ -145,8 +149,8 @@
 
 | ID | Priorytet | Zadanie | Wynik | Kryterium akceptacji |
 |---|---|---|---|---|
-| LR-062 | P0 | Dodac `ci.yml` (fmt, clippy, test) | `.github/workflows/ci.yml` | PR nie przechodzi bez zielonego CI |
-| LR-063 | P0 | Dodac contract-tests job | `ci.yml` job | Waliduje zgodnosc payloadow i schema |
+| LR-062 | P0 | ✅ Dodac `ci.yml` (fmt, clippy, test) | `.github/workflows/ci.yml` | PR nie przechodzi bez zielonego CI |
+| LR-063 | P0 | ✅ Dodac contract-tests job | `ci.yml` job | Waliduje zgodnosc payloadow i schema |
 | LR-064 | P0 | Dodac matrix build Windows/Linux | workflow jobs | Artefakty powstaja na obu platformach |
 | LR-065 | P0 | Dodac `build-launcher.yml` | `.github/workflows/build-launcher.yml` | Build uruchamialny manualnie i dla `-rc` |
 | LR-066 | P0 | Dodac `release-launcher.yml` | `.github/workflows/release-launcher.yml` | Tag release publikuje artefakty |
@@ -181,8 +185,8 @@
 
 ## 5. Plan realizacji (5 sprintow)
 
-1. **Sprint 1:** LR-001..LR-012 + LR-062..LR-063.
-2. **Sprint 2:** LR-013..LR-030 + LR-071..LR-078 + LR-081..LR-084.
+1. **Sprint 1:** ✅ LR-001..LR-012 + LR-062..LR-063 + LR-071..LR-078 + LR-081..LR-084. Commit `28499ce41`.
+2. **Sprint 2:** ✅ LR-004 + LR-013..LR-025 + LR-027..LR-029. Pozostaje: LR-026 (CLI), LR-030 (integracyjne).
 3. **Sprint 3:** LR-031..LR-040 + LR-079..LR-080 + LR-064..LR-065.
 4. **Sprint 4:** LR-041..LR-051 + LR-066..LR-070.
 5. **Sprint 5:** LR-052..LR-061 + AT-001..AT-015 + rollout.

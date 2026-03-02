@@ -105,9 +105,36 @@ bool TicketValidator::validateTicket(const std::string &ticket,
 	               std::chrono::system_clock::now().time_since_epoch())
 	               .count();
 	int64_t expiresAt = payload["expiresAt"].get<int64_t>();
-	if (now > expiresAt) {
+
+	// CFG-KEY: ticketClockTolerance — pozwól na drobny dryf zegarów
+	int32_t clockTolerance = g_configManager().getNumber(TICKET_CLOCK_TOLERANCE);
+	if (now > expiresAt + clockTolerance) {
 		outErrorMsg = "Ticket has expired.";
 		return false;
+	}
+
+	// CFG-KEY: ticketMaxAge — serwer wymusza maks. wiek ticketa niezależnie od expiresAt
+	int32_t maxAge = g_configManager().getNumber(TICKET_MAX_AGE);
+	if (maxAge > 0 && payload.contains("iat")) {
+		int64_t issuedAt = payload["iat"].get<int64_t>();
+		if (now - issuedAt > maxAge + clockTolerance) {
+			outErrorMsg = "Ticket is too old (server maxAge policy).";
+			g_logger().warn("[TicketValidator] Ticket age {}s exceeds maxAge {}s",
+			                now - issuedAt, maxAge);
+			return false;
+		}
+	}
+
+	// CFG-KEY: worldId — binding ticketa do konkretnego świata
+	int32_t configWorldId = g_configManager().getNumber(WORLD_ID);
+	if (configWorldId > 0 && payload.contains("worldId")) {
+		int32_t ticketWorldId = payload["worldId"].get<int32_t>();
+		if (ticketWorldId != configWorldId) {
+			outErrorMsg = "Ticket worldId mismatch.";
+			g_logger().warn("[TicketValidator] worldId mismatch: ticket={} vs config={}",
+			                ticketWorldId, configWorldId);
+			return false;
+		}
 	}
 
 	// 5. Sprawdź characterName

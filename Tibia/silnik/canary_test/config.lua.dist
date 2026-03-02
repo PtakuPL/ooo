@@ -467,6 +467,9 @@ resetSessionsOnStartup = false
 -- Wymagany: ticketSecret musi być identyczny w config.lua i w ticket.php
 ticketGateEnabled = false
 ticketSecret = ""  -- HMAC-SHA256 shared secret (min. 32 znaki!)
+ticketMaxAge = 30  -- maks. wiek ticketa w sekundach (serwer odrzuca starsze)
+ticketClockTolerance = 5  -- tolerancja rozbieżności zegarów API↔serwer (sekundy)
+worldId = 0  -- ID świata — musi zgadzać się z wartością w ticket.php (0 = wyłączony)
 
 -- Misc.
 -- NOTE: experienceDisplayRates: set to false to ignore exp rate or true to include exp rate

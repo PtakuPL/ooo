@@ -18,6 +18,7 @@
     "pugixml",
     "spdlog",
     "zlib",
+    "openssl",
     "bshoshany-thread-pool",
     "atomic-queue",
     {

@@ -66,6 +66,11 @@ target_include_directories(${PROJECT_NAME}_lib
 )
 
 # *****************************************************************************
+# OpenSSL (required by ticket_validator — HMAC-SHA256)
+# *****************************************************************************
+find_package(OpenSSL REQUIRED)
+
+# *****************************************************************************
 # Target links to external dependencies
 # *****************************************************************************
 target_link_libraries(${PROJECT_NAME}_lib
@@ -73,6 +78,7 @@ target_link_libraries(${PROJECT_NAME}_lib
         ${GMP_LIBRARIES}
         ${LUAJIT_LIBRARIES}
         CURL::libcurl
+        OpenSSL::Crypto
         ZLIB::ZLIB
         absl::any absl::log absl::base absl::bits
         asio::asio

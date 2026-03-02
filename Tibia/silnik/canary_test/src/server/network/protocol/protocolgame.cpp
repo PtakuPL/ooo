@@ -1603,11 +1603,6 @@ void ProtocolGame::parsePacketFromDispatcher(NetworkMessage &msg, uint8_t recvby
 
 		default:
 			std::string hexString = fmt::format("0x{:02x}", recvbyte);
-	// D7: Block Smart Equip (hotkey equip) for Classic 7.4
-	if (isClassic74Blocked("Smart Equip")) {
-		return;
-	}
-
 			g_logger().debug("Player '{}' sent unknown packet header: hex[{}], decimal[{}]", player->getName(), asUpperCaseString(hexString), recvbyte);
 			break;
 	}
@@ -1615,6 +1610,11 @@ void ProtocolGame::parsePacketFromDispatcher(NetworkMessage &msg, uint8_t recvby
 
 void ProtocolGame::parseHotkeyEquip(NetworkMessage &msg) {
 	if (!player) {
+		return;
+	}
+
+	// D7: Block Smart Equip (hotkey equip) for Classic 7.4
+	if (isClassic74Blocked("Smart Equip")) {
 		return;
 	}
 
@@ -1983,16 +1983,6 @@ void ProtocolGame::parseCloseImbuementWindow(NetworkMessage &) {
 }
 
 void ProtocolGame::parseUseItem(NetworkMessage &msg) {
-	Position pos = msg.getPosition();
-	auto itemId = msg.get<uint16_t>();
-	uint8_t stackpos = msg.getByte();
-	uint8_t index = msg.getByte();
-
-	// D2: Block rune-from-hotkey for Classic 7.4
-	if (player && player->isClassic74() && fromPos.x == 0xFFFF) {
-		const auto &itemType = Item::items[fromItemId];
-		if (itemType.isRune()) {
-			player->sendTextMessage(MESSAGE_STATUS_SMALL,
 				"Uzycie run z hotkeya nie jest dostepne w trybie Classic 7.4.");
 			return;
 		}
@@ -2002,10 +1992,9 @@ void ProtocolGame::parseUseItem(NetworkMessage &msg) {
 }
 
 void ProtocolGame::parseUseItemEx(NetworkMessage &msg) {
-	Position fromPos = msg.getPosition();
-	auto fromItemId = msg.get<uint16_t>();
-	uint8_t fromStackPos = msg.getByte();
-	Position toPos = msg.getPosition();
+	Position fromPos =from-hotkey for Classic 7.4
+	if (player && player->isClassic74() && fromPos.x == 0xFFFF) {
+		const auto &itemType = Item::items[fromI
 
 	// D2: Block rune-on-creature hotkey for Classic 7.4
 	// Check if item is a rune (from hotkey position 0xFFFF)
@@ -2022,6 +2011,18 @@ void ProtocolGame::parseUseItemEx(NetworkMessage &msg) {
 	uint8_t toStackPos = msg.getByte();
 	g_game().playerUseItemEx(player->getID(), fromPos, fromStackPos, fromItemId, toPos, toStackPos, toItemId);
 }
+
+
+	// D2: Block rune-on-creature hotkey for Classic 7.4
+	// Check if item is a rune (from hotkey position 0xFFFF)
+	if (player && player->isClassic74() && fromPos.x == 0xFFFF) {
+		const auto &itemType = Item::items[itemId];
+		if (itemType.isRune()) {
+			player->sendTextMessage(MESSAGE_STATUS_SMALL,
+				"Uzycie run z hotkeya nie jest dostepne w trybie Classic 7.4.");
+			return;
+		}
+	}
 
 void ProtocolGame::parseUseWithCreature(NetworkMessage &msg) {
 	Position fromPos = msg.getPosition();
@@ -2042,11 +2043,6 @@ void ProtocolGame::parseUpArrowContainer(NetworkMessage &msg) {
 }
 
 void ProtocolGame::parseUpdateContainer(NetworkMessage &msg) {
-	// D3: Block Quick Loot for Classic 7.4
-	if (isClassic74Blocked("Quick Loot")) {
-		return;
-	}
-
 	uint8_t cid = msg.getByte();
 	g_game().playerUpdateContainer(player->getID(), cid);
 }
@@ -2071,11 +2067,6 @@ void ProtocolGame::parseThrow(NetworkMessage &msg) {
 void ProtocolGame::parseLookAt(NetworkMessage &msg) {
 	Position pos = msg.getPosition();
 	auto itemId = msg.get<uint16_t>();
-	// D3: Block Auto Loot containers for Classic 7.4
-	if (isClassic74Blocked("Auto Loot")) {
-		return;
-	}
-
 	uint8_t stackpos = msg.getByte();
 	g_game().playerLookAt(player->getID(), itemId, pos, stackpos);
 }
@@ -2087,6 +2078,11 @@ void ProtocolGame::parseLookInBattleList(NetworkMessage &msg) {
 
 void ProtocolGame::parseQuickLoot(NetworkMessage &msg) {
 	if (oldProtocol) {
+		return;
+	}
+
+	// D3: Block Quick Loot for Classic 7.4
+	if (isClassic74Blocked("Quick Loot")) {
 		return;
 	}
 
@@ -2114,12 +2110,12 @@ void ProtocolGame::parseLootContainer(NetworkMessage &msg) {
 		return;
 	}
 
-	uint8_t action = msg.getByte();
-	// D3: Block Quick Loot config for Classic 7.4
-	if (isClassic74Blocked("Quick Loot")) {
+	// D3: Block Auto Loot containers for Classic 7.4
+	if (isClassic74Blocked("Auto Loot")) {
 		return;
 	}
 
+	uint8_t action = msg.getByte();
 	if (action == 0) {
 		auto category = static_cast<ObjectCategory_t>(msg.getByte());
 		Position pos = msg.getPosition();
@@ -3332,11 +3328,6 @@ void ProtocolGame::parseBestiarySendCreatures(NetworkMessage &msg) {
 	// D5: Block Prey System for Classic 7.4
 	if (isClassic74Blocked("Prey System")) {
 		return;
-	}
-
-			if (_it.first == raceid_) {
-				const auto tmpType = g_monsters().getMonsterType(it_.second);
-				if (!tmpType) {
 					return;
 				}
 				progress = g_iobestiary().getKillStatus(tmpType, _it.second);
@@ -3395,6 +3386,11 @@ void ProtocolGame::parsePreyAction(NetworkMessage &msg) {
 	if (action == static_cast<uint8_t>(PreyAction_MonsterSelection)) {
 		index = msg.getByte();
 	} else if (action == static_cast<uint8_t>(PreyAction_Option)) {
+	// D5: Block Prey System for Classic 7.4
+	if (isClassic74Blocked("Prey System")) {
+		return;
+	}
+
 		option = msg.getByte();
 	} else if (action == static_cast<uint8_t>(PreyAction_ListAll_Selection)) {
 		raceId = msg.get<uint16_t>();
@@ -3409,11 +3405,6 @@ void ProtocolGame::parsePreyAction(NetworkMessage &msg) {
 // D4: Block Market for Classic 7.4
 	if (isClassic74Blocked("Market")) {
 		return;
-	}
-
-	
-void ProtocolGame::parseSendResourceBalance() {
-	auto [sliverCount, coreCount] = player->getForgeSliversAndCores();
 
 	sendResourcesBalance(
 		player->getMoney(),
@@ -3472,7 +3463,12 @@ void ProtocolGame::parseMarketBrowse(NetworkMessage &msg) {
 	if (isClassic74Blocked("Market")) {
 		return;
 	}
+// D4: Block Market for Classic 7.4
+	if (isClassic74Blocked("Market")) {
+		return;
+	}
 
+	
 	uint16_t browseId = oldProtocol ? msg.get<uint16_t>() : static_cast<uint16_t>(msg.getByte());
 
 	if ((oldProtocol && browseId == MARKETREQUEST_OWN_OFFERS_OLD) || (!oldProtocol && browseId == MARKETREQUEST_OWN_OFFERS)) {

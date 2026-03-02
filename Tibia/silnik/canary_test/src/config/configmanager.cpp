@@ -66,6 +66,9 @@ bool ConfigManager::load() {
 		loadStringConfig(L, AUTH_TYPE, "authType", "password");
 		loadStringConfig(L, HOUSE_RENT_PERIOD, "houseRentPeriod", "never");
 		loadStringConfig(L, TICKET_SECRET, "ticketSecret", "");
+		loadIntConfig(L, TICKET_MAX_AGE, "ticketMaxAge", 30);
+		loadIntConfig(L, TICKET_CLOCK_TOLERANCE, "ticketClockTolerance", 5);
+		loadIntConfig(L, WORLD_ID, "worldId", 0);
 		loadStringConfig(L, IP, "ip", "127.0.0.1");
 		loadStringConfig(L, MAINTAIN_MODE_MESSAGE, "maintainModeMessage", "");
 		loadStringConfig(L, MAP_AUTHOR, "mapAuthor", "Eduardo Dantas");

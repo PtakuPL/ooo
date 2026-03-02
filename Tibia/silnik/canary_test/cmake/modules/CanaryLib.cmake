@@ -86,6 +86,7 @@ target_link_libraries(${PROJECT_NAME}_lib
         fmt::fmt
         magic_enum::magic_enum
         mio::mio
+        nlohmann_json::nlohmann_json
         protobuf::libprotobuf
         pugixml::pugixml
         spdlog::spdlog

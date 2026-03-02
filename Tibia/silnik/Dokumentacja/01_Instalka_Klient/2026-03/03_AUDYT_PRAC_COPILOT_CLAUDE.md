@@ -17,7 +17,7 @@ Tryb pracy: tylko wykrywanie bledow i ryzyk, bez wdrazania fixow.
 ### 2026-03-02 - Runda #1
 
 1. [KRYTYCZNE] canary_test: uszkodzone wstrzykniecia guardow w `protocolgame.cpp`  
-Status: OPEN  
+Status: ✅ FIXED (commit `dfe1a8784` — GUARD-FIX: guardy D2-D7 naprawione, zmienne poprawione, osierocony kod usunięty)  
 Plik: `canary_test/src/server/network/protocol/protocolgame.cpp`  
 Opis:
    - W wielu miejscach guardy D2-D10 sa wstawione w niepoprawnych blokach kodu.
@@ -29,7 +29,7 @@ Ryzyko:
    - Potencjalna niemoznosc kompilacji i/lub nieprzewidywalne zachowanie blokad Classic 7.4.
 
 2. [KRYTYCZNE] D2 blokada run: bledne zmienne w parserach use-item  
-Status: OPEN  
+Status: ✅ FIXED (commit `dfe1a8784` — D2: parseUseItem guard usunięty, parseUseItemEx `itemId`→`fromItemId`, parseUseWithCreature guard dodany)  
 Plik: `canary_test/src/server/network/protocol/protocolgame.cpp`  
 Opis:
    - `parseUseItem`: uzywa `fromPos` i `fromItemId`, ktore nie sa zdefiniowane.
@@ -40,7 +40,7 @@ Ryzyko:
    - Blokada run moze nie dzialac albo kod nie przejdzie builda.
 
 3. [WYSOKIE] D5/D4 guardy poza docelowymi metodami  
-Status: OPEN  
+Status: ✅ FIXED (commit `dfe1a8784` — D5: guard przeniesiony z pętli bestiary do parsePreyAction; D4: osierocony guard usunięty, dodany do parseMarketLeave)  
 Plik: `canary_test/src/server/network/protocol/protocolgame.cpp`  
 Opis:
    - Guard Prey pojawia sie w petli `parseBestiarySendCreatures` zamiast na wejsciu `parsePreyAction`.
@@ -51,7 +51,7 @@ Ryzyko:
    - Niepelna ochrona Classic 7.4 i trudne do przewidzenia side-effecty.
 
 4. [WYSOKIE] Braki guardow Classic 7.4 na niektorych wejsciach  
-Status: OPEN  
+Status: ✅ FIXED (commit `dfe1a8784` — dodane guardy: parseUseWithCreature, parseQuickLoot, parsePreyAction, parseMarketLeave)  
 Plik: `canary_test/src/server/network/protocol/protocolgame.cpp`  
 Opis:
    - Brak blokady na wejsciu `parseUseWithCreature`.
@@ -78,7 +78,7 @@ Ryzyko:
    - Oslabiona walidacja integralnosci klienta.
 
 6. [SREDNIE] Login token flow nie wykorzystuje `manifest_version` z rekordu tokena  
-Status: OPEN  
+Status: ✅ FIXED (FIX-AUD6: SELECT pobiera manifest_version, walidacja vs REQUIRED_MANIFEST_VERSION z .env)  
 Plik: `canary_test/html_copy/apik/v1/login.php`  
 Opis:
    - Konsumpcja launch tokena pobiera `files_hash`, ale nie korzysta z `manifest_version`
@@ -101,7 +101,7 @@ Ryzyko:
 ### 2026-03-02 - Runda #2
 
 8. [WYSOKIE] D3 guardy sa przesuniete na niepoprawne parsery  
-Status: OPEN  
+Status: ✅ FIXED (commit `dfe1a8784` — D3: guardy usunięte z parseUpdateContainer/parseLookAt, dodane do parseQuickLoot/parseLootContainer)  
 Plik: `canary_test/src/server/network/protocol/protocolgame.cpp`  
 Opis:
    - W `canary_test` guard "Quick Loot" zostal dodany do `parseUpdateContainer`.
@@ -128,7 +128,7 @@ Ryzyko:
    - Ticket flow moze failowac dla konfiguracji API na niestandardowym porcie.
 
 10. [SREDNIE] Ticket nie jest twardo zbindowany do konkretnego swiata po stronie Canary  
-Status: OPEN  
+Status: ✅ FIXED (commit `dfe1a8784` — CFG-KEY: WORLD_ID w config + ticket_validator.cpp sprawdza worldId z payloadu vs config; ticket.php nadal waliduje worldName)  
 Pliki:
    - `canary_test/html_copy/apik/v1/ticket.php`
    - `canary_test/src/server/network/protocol/ticket_validator.cpp`

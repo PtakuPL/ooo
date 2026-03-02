@@ -12,6 +12,7 @@
     "libmariadb",
     "luajit",
     "magic-enum",
+    "nlohmann-json",
     "mio",
     "parallel-hashmap",
     "protobuf",

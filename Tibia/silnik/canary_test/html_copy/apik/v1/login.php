@@ -168,7 +168,7 @@ if ($clientLocked) {
     $mysqli->begin_transaction();
     try {
         $stmt = $mysqli->prepare(
-            "SELECT token, client_ip, expires_at, files_hash FROM launch_tokens WHERE token = ? FOR UPDATE"
+            "SELECT token, client_ip, expires_at, files_hash, manifest_version FROM launch_tokens WHERE token = ? FOR UPDATE"
         );
         $stmt->bind_param('s', $launchToken);
         $stmt->execute();
@@ -208,6 +208,20 @@ if ($clientLocked) {
             $delStmt->close();
             $mysqli->commit();
             sendError('Client files integrity check failed. Please update your client.');
+        }
+
+        // FIX-AUD6: Weryfikacja manifest_version — odrzuć tokeny z nieaktualną wersją klienta
+        $requiredManifest = $ENV['REQUIRED_MANIFEST_VERSION'] ?? '';
+        if ($requiredManifest !== '' && isset($tokenRow['manifest_version'])) {
+            if ($tokenRow['manifest_version'] !== $requiredManifest) {
+                $delStmt = $mysqli->prepare("DELETE FROM launch_tokens WHERE token = ?");
+                $delStmt->bind_param('s', $launchToken);
+                $delStmt->execute();
+                $delStmt->close();
+                $mysqli->commit();
+                error_log("[login.php] Manifest version mismatch: token has '{$tokenRow['manifest_version']}', required '{$requiredManifest}'");
+                sendError('Client version is outdated. Please update via launcher.');
+            }
         }
 
         // Konsumuj: one-time use — usuń token

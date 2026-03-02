@@ -16,6 +16,7 @@ function ServerList.init()
     if CLIENT_LOCKED then
         servers = {}
         -- FIX14: Wypełnij ServerList z GameModes, żeby lista nie była pusta
+        -- FIX-AUD7: Klucz = host:port (unikamy nadpisania gdy 2 GameModes współdzielą host)
         if GameModes then
             for modeKey, mode in pairs(GameModes) do
                 if mode.server and mode.server.host then
@@ -23,7 +24,9 @@ function ServerList.init()
                     local port = mode.server.port or 7171
                     local protocol = mode.server.protocol or 1420
                     local httpLogin = mode.server.httpLoginUrl ~= nil
-                    servers[host] = {
+                    local serverKey = host .. ':' .. tostring(port)
+                    servers[serverKey] = {
+                        host = host,
                         port = port,
                         protocol = protocol,
                         account = '',
@@ -67,7 +70,9 @@ function ServerList.terminate()
 end
 
 function ServerList.load()
-    for host, server in pairs(servers) do
+    for key, server in pairs(servers) do
+        -- FIX-AUD7: W lock mode klucz to host:port, serwer ma pole .host
+        local host = server.host or key
         ServerList.add(host, server.port, server.protocol, server.httpLogin, true)
     end
 end
@@ -75,9 +80,12 @@ end
 function ServerList.select()
     local selected = serverTextList:getFocusedChild()
     if selected then
-        local server = servers[selected:getId()]
+        local serverKey = selected:getId()
+        local server = servers[serverKey]
         if server then
-            EnterGame.setDefaultServer(selected:getId(), server.port, server.protocol)
+            -- FIX-AUD7: Użyj .host jeśli dostępne (lock mode), inaczej klucz = host
+            local host = server.host or serverKey
+            EnterGame.setDefaultServer(host, server.port, server.protocol)
             EnterGame.setAccountName(server.account)
             EnterGame.setPassword(server.password)
             EnterGame.setHttpLogin(server.httpLogin)
@@ -95,18 +103,21 @@ function ServerList.add(host, port, protocol, httpLogin, load)
 
     if not host or not port or not protocol then
         return false, 'Failed to load settings'
-    elseif not load and servers[host] then
+    elseif not load and servers[host .. ':' .. tostring(port)] then
         return false, 'Server already exists'
     elseif host == '' or port == '' then
         return false, 'Required fields are missing'
     elseif httpLogin == nil then
         httpLogin = false
     end
+    -- FIX-AUD7: Widget ID = host:port (unikalne), display = host:port
+    local serverKey = host .. ':' .. tostring(port)
     local widget = g_ui.createWidget('ServerWidget', serverTextList)
-    widget:setId(host)
+    widget:setId(serverKey)
 
     if not load then
-        servers[host] = {
+        servers[serverKey] = {
+            host = host,
             port = port,
             protocol = protocol,
             account = '',
@@ -136,6 +147,7 @@ function ServerList.remove(widget)
         return
     end
 
+    -- FIX-AUD7: getId() zwraca teraz host:port
     local host = widget:getId()
 
     if removeWindow then
@@ -212,13 +224,23 @@ function ServerList.hide()
 end
 
 function ServerList.setServerAccount(host, account)
-    if servers[host] then
-        servers[host].account = account
+    -- FIX-AUD7: Szukaj po host lub host:port
+    for key, server in pairs(servers) do
+        local srvHost = server.host or key
+        if srvHost == host or key == host then
+            servers[key].account = account
+            return
+        end
     end
 end
 
 function ServerList.setServerPassword(host, password)
-    if servers[host] then
-        servers[host].password = password
+    -- FIX-AUD7: Szukaj po host lub host:port
+    for key, server in pairs(servers) do
+        local srvHost = server.host or key
+        if srvHost == host or key == host then
+            servers[key].password = password
+            return
+        end
     end
 end

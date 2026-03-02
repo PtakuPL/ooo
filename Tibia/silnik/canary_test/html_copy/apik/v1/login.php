@@ -161,7 +161,8 @@ if ($clientLocked) {
         sendError('Launch token required. Please use the official launcher.');
     }
 
-    $clientIp = $_SERVER['REMOTE_ADDR'] ?? '0.0.0.0';
+    // FIX-AUD12: użyj getClientIp() z common.php (obsługa trusted proxy)
+    $clientIp = getClientIp($ENV);
     $now = time();
 
     // Atomowa walidacja + konsumpcja tokenu (SELECT FOR UPDATE + DELETE w transakcji)
@@ -238,19 +239,47 @@ if ($clientLocked) {
 
 // ------- characters -------
 $chars = [];
-$stmt = $mysqli->prepare("SELECT name, level, sex, vocation, looktype, lookhead, lookbody, looklegs, lookfeet, lookaddons, lastlogin, main
-                          FROM players WHERE account_id = ? AND deletion = 0 ORDER BY name");
+
+// FIX-AUD16: Próbuj pobrać world_id (kolumna dodana przez migrację ticket-gate).
+// Jeśli kolumna nie istnieje (stary schemat), fallback bez niej.
+$hasWorldIdCol = false;
+$sql = "SELECT name, level, sex, vocation, looktype, lookhead, lookbody, looklegs, lookfeet, lookaddons, lastlogin, main, world_id
+        FROM players WHERE account_id = ? AND deletion = 0 ORDER BY name";
+$stmt = $mysqli->prepare($sql);
+if (!$stmt) {
+    // Kolumna world_id nie istnieje — użyj zapytania bez niej
+    $sql = "SELECT name, level, sex, vocation, looktype, lookhead, lookbody, looklegs, lookfeet, lookaddons, lastlogin, main
+            FROM players WHERE account_id = ? AND deletion = 0 ORDER BY name";
+    $stmt = $mysqli->prepare($sql);
+    if (!$stmt) {
+        sendError('Database query error.');
+    }
+} else {
+    $hasWorldIdCol = true;
+}
 $stmt->bind_param('i', $acc['id']);
 $stmt->execute();
 $r = $stmt->get_result();
 
 // B2: Przypisz worldid na podstawie gameMode
-// FIX59: Gdy gameMode pusty (stary klient) — użyj id=0 (domyślny/classic)
-// Oba worldy są zwracane, ale postać dostaje domyślny worldId=0
-$worldId = ($gameMode === 'classic74') ? 0 : (($gameMode === 'modern') ? 1 : 0);
+// FIX-AUD16: Gdy gameMode pusty — użyj world_id z DB (jeśli istnieje), inaczej domyślny 0
+$worldIdFixed = ($gameMode === 'classic74') ? 0 : (($gameMode === 'modern') ? 1 : null);
+// Mapa world id → world id w odpowiedzi (walidacja)
+$worldIdsAvailable = array_column($worlds, 'id');
 while ($p = $r->fetch_assoc()) {
+    // FIX-AUD16: Określ worldId dla postaci
+    if ($worldIdFixed !== null) {
+        $charWorldId = $worldIdFixed;
+    } elseif (isset($p['world_id']) && $p['world_id'] !== null) {
+        // DB ma kolumnę world_id → użyj jej
+        $dbWorldId = (int)$p['world_id'];
+        $charWorldId = in_array($dbWorldId, $worldIdsAvailable, true) ? $dbWorldId : 0;
+    } else {
+        // Brak kolumny world_id w DB → fallback do worldId=0
+        $charWorldId = 0;
+    }
     $chars[] = [
-        'worldid'           => $worldId,
+        'worldid'           => $charWorldId,
         'name'              => $p['name'],
         'ismale'            => ((int)$p['sex'] === 1),
         'ismaincharacter'   => ((int)($p['main'] ?? 0) === 1),  // FIX26

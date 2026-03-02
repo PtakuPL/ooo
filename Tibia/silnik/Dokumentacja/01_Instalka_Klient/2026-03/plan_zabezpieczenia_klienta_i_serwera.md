@@ -2405,6 +2405,10 @@ resp = requests.get("https://...", verify=True, timeout=10)
 | #14 | Niespójny `launcher_config.json` vs `launcher.py` | ✅ FIXED | FIX-AUD14 (`6584a0187`) — apiUrl→apiBaseUrl, clientFolder→clientDir, clientExecutable→clientExe |
 | #20 | Brak `ticketMaxAge`, `ticketClockTolerance`, `worldId` w config | ✅ FIXED | CFG-KEY (`dfe1a8784`) — dodano 3 klucze + ticket_validator.cpp je używa |
 | X8 | Brak OpenSSL w `vcpkg.json` / CMake | ✅ FIXED | X8 (`dfe1a8784`) — `openssl` w vcpkg.json + `OpenSSL::Crypto` w CanaryLib.cmake |
+| #7 | ServerList keying — dwa servery na tym samym host nadpisują się | ✅ FIXED | FIX-AUD7 — `servers[host]` → `servers[host:port]` w serverlist.lua |
+| #11 | Nonce replay po restarcie — in-memory mapa się czyści | ✅ FIXED | FIX-AUD11 — DB-backed nonce check w ticket_validator.cpp (SELECT + INSERT IGNORE `ticket_nonces`) |
+| #12 | `REMOTE_ADDR` bez trusted proxy policy | ✅ FIXED | FIX-AUD12 — `getClientIp($ENV)` w common.php z TRUSTED_PROXIES (CF/nginx/XFF + CIDR) |
+| #16 | Puste `gameMode` → wszystkie postacie `worldId=0` | ✅ FIXED | FIX-AUD16 — `world_id` z DB players + fallback, migracja SQL |
 
 ### 20.4 Podsumowanie statusu REALNEGO
 
@@ -2418,4 +2422,9 @@ resp = requests.get("https://...", verify=True, timeout=10)
 | Deploy script | ✅ Naprawiony | FIX-AUD19: error checking + exit code |
 | UI ticket flow | ✅ Naprawiony | FIX-AUD15: loadBox race fix + FIX-AUD9: host:port parsing |
 | OpenSSL linkowanie | ✅ Jawne | X8 (`dfe1a8784`): `openssl` w vcpkg.json + `OpenSSL::Crypto` w CMake |
+| ServerList keying | ✅ Naprawione | FIX-AUD7: `host:port` composite key zamiast `host` |
+| Nonce DB persistence | ✅ Naprawione | FIX-AUD11: DB-backed nonce check w ticket_validator.cpp |
+| Trusted proxy IP | ✅ Naprawione | FIX-AUD12: `getClientIp($ENV)` z TRUSTED_PROXIES w common.php |
+| worldId mapping | ✅ Naprawione | FIX-AUD16: `world_id` z DB + fallback + migracja SQL |
+| DB schema | ✅ Gotowe | `sql/ticket_gate_migration.sql`: launch_tokens, manifest_versions, ticket_sessions, ticket_nonces, players.world_id |
 | Config ticket-gate | ✅ Kompletny | CFG-KEY (`dfe1a8784`): 5/5 kluczy (ticketGateEnabled, ticketSecret, ticketMaxAge, ticketClockTolerance, worldId) |

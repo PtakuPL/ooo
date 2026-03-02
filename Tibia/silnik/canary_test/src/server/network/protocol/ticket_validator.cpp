@@ -6,6 +6,7 @@
 #include "ticket_validator.hpp"
 
 #include "config/configmanager.hpp"
+#include "database/database.hpp"
 #include "lib/logging/logger.hpp"
 
 #include <nlohmann/json.hpp>
@@ -150,12 +151,40 @@ bool TicketValidator::validateTicket(const std::string &ticket,
 	std::string nonce = payload["nonce"].get<std::string>();
 	{
 		std::lock_guard<std::mutex> lock(nonceMutex_);
+		// FIX-AUD11: Sprawdź in-memory cache ORAZ DB (odporność na restart)
 		if (usedNonces_.count(nonce) > 0) {
 			outErrorMsg = "Ticket has already been used (replay detected).";
 			return false;
 		}
+
+		// FIX-AUD11: Sprawdź DB — ticket.php zapisuje nonce do ticket_nonces
+		try {
+			auto query = fmt::format(
+				"SELECT 1 FROM `ticket_nonces` WHERE `nonce` = {} AND `expires_at` >= {}",
+				g_database().escapeString(nonce), now);
+			if (g_database().storeQuery(query)) {
+				// Nonce istnieje w DB i jeszcze nie wygasł — replay
+				usedNonces_[nonce] = now; // zapamiętaj w cache
+				outErrorMsg = "Ticket has already been used (replay detected, DB check).";
+				return false;
+			}
+		} catch (const std::exception &e) {
+			// DB niedostępna — polegamy na in-memory (graceful degradation)
+			g_logger().warn("[TicketValidator] DB nonce check failed: {}", e.what());
+		}
+
 		// FIX23: Zapisz nonce z timestampem wstawienia
 		usedNonces_[nonce] = now;
+
+		// FIX-AUD11: Zapisz nonce do DB (jeśli ticket.php jeszcze nie zapisał)
+		try {
+			auto insertQuery = fmt::format(
+				"INSERT IGNORE INTO `ticket_nonces` (`nonce`, `account_id`, `expires_at`) VALUES ({}, 0, {})",
+				g_database().escapeString(nonce), now + 300);
+			g_database().executeQuery(insertQuery);
+		} catch (const std::exception &e) {
+			g_logger().warn("[TicketValidator] DB nonce insert failed: {}", e.what());
+		}
 
 		// FIX23: Auto-cleanup co 100 walidacji
 		validateCallCount_++;

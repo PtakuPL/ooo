@@ -29,15 +29,8 @@ header('Content-Type: application/json; charset=utf-8');
 // sendError now uses standardized format: {"errorCode": 3, "errorMessage": "..."}
 require_once __DIR__ . '/common.php';
 
-/**
- * Pobierz prawdziwe IP klienta (obsługa reverse proxy).
- * Dla dev/local: po prostu REMOTE_ADDR.
- */
-function getClientIp(): string {
-    // W produkcji z Cloudflare/nginx: użyj CF-Connecting-IP lub X-Forwarded-For
-    // z whitelistą trusted proxies (patrz plan sekcja 16.3)
-    return $_SERVER['REMOTE_ADDR'] ?? '127.0.0.1';
-}
+// FIX-AUD12: getClientIp() przeniesione do common.php z obsługą trusted proxy.
+// Użycie: getClientIp($ENV) — wymaga TRUSTED_PROXIES w .env
 
 /**
  * Porównaj wersje semantyczne (major.minor.patch).
@@ -89,7 +82,7 @@ if ($mysqli->connect_errno) {
 }
 $mysqli->set_charset('utf8mb4');
 
-$clientIp = getClientIp();
+$clientIp = getClientIp($ENV);
 $now = time();
 
 // ------- rate-limit: max N tokenów/min per IP -------

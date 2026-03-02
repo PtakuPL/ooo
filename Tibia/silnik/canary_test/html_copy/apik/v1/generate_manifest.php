@@ -24,28 +24,8 @@ declare(strict_types=1);
  *   - *.log        (logi)
  */
 
-// ------- utils (copy from login.php) -------
-function loadEnvFiles(array $paths): array {
-    $env = [];
-    foreach ($paths as $path) {
-        if (!is_file($path)) continue;
-        $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-        foreach ($lines as $line) {
-            $line = trim($line);
-            if ($line === '' || $line[0] === '#') continue;
-            $eq = strpos($line, '=');
-            if ($eq === false) continue;
-            $k = trim(substr($line, 0, $eq));
-            $v = trim(substr($line, $eq + 1));
-            if ((str_starts_with($v, '"') && str_ends_with($v, '"')) ||
-                (str_starts_with($v, "'") && str_ends_with($v, "'"))) {
-                $v = substr($v, 1, -1);
-            }
-            $env[$k] = $v;
-        }
-    }
-    return $env;
-}
+// FIX42: Shared utilities
+require_once __DIR__ . '/common.php';
 
 // ------- config -------
 $ENV = loadEnvFiles([__DIR__ . '/.env']);

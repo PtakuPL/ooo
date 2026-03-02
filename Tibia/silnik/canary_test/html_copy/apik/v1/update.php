@@ -27,9 +27,9 @@ $manifestDir = __DIR__ . '/manifests/' . $channel;
 $manifestFile = $manifestDir . '/' . $version . '.json';
 
 if (!is_file($manifestFile)) {
-    http_response_code(404);
-    echo json_encode(['error' => 'Manifest not found', 'channel' => $channel, 'version' => $version]);
-    exit;
+    // FIX62: Ujednolicony format błędów — używamy sendError() z common.php
+    require_once __DIR__ . '/common.php';
+    sendError('Manifest not found for channel=' . $channel . ' version=' . $version, 404);
 }
 
 // Serve the manifest file directly (already JSON)

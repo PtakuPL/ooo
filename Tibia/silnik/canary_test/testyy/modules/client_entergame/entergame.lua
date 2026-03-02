@@ -64,14 +64,14 @@ local function onCharacterList(protocol, characters, account, otui)
 
     local rememberEmailBox = getEnterGameWidget('rememberEmailBox')
     if rememberEmailBox and rememberEmailBox:isChecked() then
-        local account = g_crypt.encrypt(G.account)
-        local password = g_crypt.encrypt(G.password)
+        local encAccount = g_crypt.encrypt(G.account)   -- FIX64: renamed to avoid shadowing parameter
+        local encPassword = g_crypt.encrypt(G.password)  -- FIX64: renamed to avoid shadowing parameter
 
-        g_settings.set('account', account)
-        g_settings.set('password', password)
+        g_settings.set('account', encAccount)
+        g_settings.set('password', encPassword)
 
-        ServerList.setServerAccount(G.host, account)
-        ServerList.setServerPassword(G.host, password)
+        ServerList.setServerAccount(G.host, encAccount)
+        ServerList.setServerPassword(G.host, encPassword)
 
         local autoLoginBox = getEnterGameWidget('autoLoginBox')
         g_settings.set('autologin', autoLoginBox and autoLoginBox:isChecked() or false)
@@ -158,6 +158,8 @@ end
 
 -- public functions
 function EnterGame.init()
+    -- FIX55: Seed PRNG raz przy starcie modułu (nie per-request, bo os.time() ma sekundową granulację)
+    math.randomseed(os.time() * 256 + (os.clock() * 1000) % 256)
     enterGame = g_ui.displayUI('entergame')
     Keybind.new("Misc.", "Change Character", "Ctrl+G", "")
     Keybind.bind("Misc.", "Change Character", {
@@ -713,12 +715,10 @@ function EnterGame.tryHttpLogin(clientVersion, httpLogin)
     local url = G.host
 
     if not G.port then
-        local isHttps, _ = string.find(host, "https")
-        if not isHttps then
-            G.port = 443
-        else -- http
-            G.port = 80
-        end
+        -- FIX-W1: Poprawiona logika — CLIENT_LOCKED zawsze używa HTTPS (443).
+        -- W trybie non-locked host nigdy nie zawiera schematu (jest parsowany z pola),
+        -- więc domyślnie ustawiamy 443 (HTTPS) jako bezpieczne domyślne.
+        G.port = 443
     end
 
     if not path then
@@ -743,8 +743,8 @@ function EnterGame.tryHttpLogin(clientVersion, httpLogin)
         end
     })
 
-    math.randomseed(os.time())
-    G.requestId = math.random(1)
+    -- FIX55: randomseed przeniesiony do EnterGame.init(), tu tylko generujemy
+    G.requestId = math.random(1000000)  -- FIX27: math.random(1) zawsze zwraca 1
 
     local http = LoginHttp.create()
     -- E10: Przekaż launchToken z launchera (env OTC_LAUNCH_TOKEN) do C++ → JSON body
@@ -800,7 +800,7 @@ function EnterGame.loginSuccess(requestId, jsonSession, jsonWorlds, jsonCharacte
             worldName = world.name,
             worldIp = world.ip,
             worldPort = world.port,
-            previewState = world.previewstate
+            previewState = world.previewState  -- FIX63: camelCase (world table uses previewState)
         }
     end
 
@@ -816,6 +816,8 @@ function EnterGame.loginSuccess(requestId, jsonSession, jsonWorlds, jsonCharacte
 
     -- set session key
     G.sessionKey = session.sessionkey
+    -- FIX28: Legacy key (account\npassword) do połączenia bez ticket-gate
+    G.legacySessionKey = session.key or G.sessionKey
 
     onCharacterList(nil, characters, account)
 end
@@ -867,11 +869,14 @@ function EnterGame.requestTicket(charInfo)
 
     G.pendingCharInfo = charInfo
     G.ticketToken = nil
-    math.randomseed(os.time())
+    -- FIX55: randomseed przeniesiony do EnterGame.init(), tu tylko generujemy
     G.ticketRequestId = math.random(1000000)
 
     local http = LoginHttp.create()
-    http:requestTicket(urlHost, ticketPath, srv.port, G.sessionKey or "",
+    -- FIX30: Użyj G.port (wyekstrahowane z httpLoginUrl) zamiast srv.port
+    -- srv.port = 443 z init.lua, ale API może działać na innym porcie
+    local ticketPort = G.port or srv.port or 443
+    http:requestTicket(urlHost, ticketPath, ticketPort, G.sessionKey or "",
                        charInfo.characterName, CurrentGameMode,
                        charInfo.worldName or "", G.ticketRequestId)
 
@@ -925,10 +930,12 @@ end
 
 -- Brak ticket flow (stary tryb / brak CLIENT_LOCKED) — połącz bezpośrednio
 function EnterGame.onTicketBypassed(charInfo)
-    -- Standardowe połączenie bez ticketu
+    -- FIX28: Bez ticket-gate serwer oczekuje authType=password → legacy key (account\npassword)
+    -- G.sessionKey to UUID (dla ticket.php), G.legacySessionKey to "account\npassword" (dla protocolgame)
+    local sessionKey = G.legacySessionKey or G.sessionKey
     g_game.loginWorld(G.account, G.password, charInfo.worldName, charInfo.worldHost,
                       charInfo.worldPort, charInfo.characterName, G.authenticatorToken,
-                      G.sessionKey)
+                      sessionKey)
 end
 
 -- Połącz z game serverem z ticketem HMAC
@@ -1311,7 +1318,8 @@ function EnterGame.setLoginFormVisible(visible)
                 if childId ~= 'gameModePanel' and childId ~= 'selectedModeLabel'
                    and childId ~= 'enterGame' then
                     -- Ukryj separatory i niezidentyfikowane elementy (panel z przyciskami)
-                    local style = child:getStyleName and child:getStyleName() or ''
+                    -- FIX50: child.getStyleName (dot=field access) nie child:getStyleName (colon=call, parse error bez args)
+                    local style = child.getStyleName and child:getStyleName() or ''
                     if style == 'HorizontalSeparator' or (childId == '' and child:getHeight() == 26) then
                         child:setVisible(visible)
                     end

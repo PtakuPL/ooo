@@ -18,40 +18,8 @@ header('Content-Type: application/json; charset=utf-8');
  * - Buduje listę postaci i dane świata (filtrowane wg gameMode).
  */
 
-// ------- utils -------
-function sendError(string $msg, int $code = 200): void {
-    http_response_code($code); // OTClient oczekuje 200 nawet dla błędów
-    echo json_encode(['errorCode' => 3, 'errorMessage' => $msg], JSON_UNESCAPED_SLASHES);
-    exit;
-}
-
-function json_out($data, int $code = 200): void {
-    http_response_code($code);
-    echo json_encode($data, JSON_UNESCAPED_SLASHES);
-    exit;
-}
-
-function loadEnvFiles(array $paths): array {
-    $env = [];
-    foreach ($paths as $path) {
-        if (!is_file($path)) continue;
-        $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-        foreach ($lines as $line) {
-            $line = trim($line);
-            if ($line === '' || $line[0] === '#') continue;
-            $eq = strpos($line, '=');
-            if ($eq === false) continue;
-            $k = trim(substr($line, 0, $eq));
-            $v = trim(substr($line, $eq + 1));
-            if ((str_starts_with($v, '"') && str_ends_with($v, '"')) ||
-                (str_starts_with($v, "'") && str_ends_with($v, "'"))) {
-                $v = substr($v, 1, -1);
-            }
-            $env[$k] = $v;
-        }
-    }
-    return $env;
-}
+// FIX42: Shared utilities (loadEnvFiles, sendError, json_out)
+require_once __DIR__ . '/common.php';
 
 /**
  * B2: Konfiguracja worldów per gameMode.
@@ -150,7 +118,7 @@ if ($mysqli->connect_errno) {
 $mysqli->set_charset('utf8mb4');
 
 // ------- fetch account by email -------
-$stmt = $mysqli->prepare("SELECT id, name, password FROM accounts WHERE email = ? LIMIT 1");
+$stmt = $mysqli->prepare("SELECT id, name, password, premdays, lastday FROM accounts WHERE email = ? LIMIT 1");
 $stmt->bind_param('s', $email);
 $stmt->execute();
 $res = $stmt->get_result();
@@ -160,12 +128,17 @@ if ($res->num_rows === 0) {
 $acc = $res->fetch_assoc();
 $stmt->close();
 
-// ------- password check (case-insensitive for SHA1 hex) -------
+// ------- password check (SHA1, argon2/bcrypt, plaintext) -------
 $stored = (string)$acc['password'];
 $ok = false;
 if (strlen($stored) === 40 && ctype_xdigit($stored)) {
+    // SHA1 hex — case-insensitive compare
     $ok = hash_equals(strtolower($stored), strtolower(sha1($plain)));
+} elseif (str_starts_with($stored, '$2') || str_starts_with($stored, '$argon2')) {
+    // FIX39: bcrypt ($2a$, $2y$) lub argon2 ($argon2id$, $argon2i$) — password_verify
+    $ok = password_verify($plain, $stored);
 } else {
+    // Fallback: plaintext
     $ok = hash_equals($stored, $plain);
 }
 if (!$ok) {
@@ -249,29 +222,34 @@ if ($clientLocked) {
 
 // ------- characters -------
 $chars = [];
-$stmt = $mysqli->prepare("SELECT name, level, sex, vocation, looktype, lookhead, lookbody, looklegs, lookfeet, lookaddons, lastlogin
+$stmt = $mysqli->prepare("SELECT name, level, sex, vocation, looktype, lookhead, lookbody, looklegs, lookfeet, lookaddons, lastlogin, main
                           FROM players WHERE account_id = ? AND deletion = 0 ORDER BY name");
 $stmt->bind_param('i', $acc['id']);
 $stmt->execute();
 $r = $stmt->get_result();
 
 // B2: Przypisz worldid na podstawie gameMode
+// FIX59: Gdy gameMode pusty (stary klient) — użyj id=0 (domyślny/classic)
+// Oba worldy są zwracane, ale postać dostaje domyślny worldId=0
 $worldId = ($gameMode === 'classic74') ? 0 : (($gameMode === 'modern') ? 1 : 0);
 while ($p = $r->fetch_assoc()) {
     $chars[] = [
-        'worldid'     => $worldId,
-        'name'        => $p['name'],
-        'ismale'      => ((int)$p['sex'] === 1),
-        'vocation'    => (int)$p['vocation'],
-        'level'       => (int)$p['level'],
-        'outfitid'    => (int)$p['looktype'],
-        'headcolor'   => (int)$p['lookhead'],
-        'torsocolor'  => (int)$p['lookbody'],
-        'legscolor'   => (int)$p['looklegs'],
-        'detailcolor' => (int)$p['lookfeet'],
-        'addonsflags' => (int)$p['lookaddons'],
-        'istutorial'  => false,
-        'lastlogin'   => (int)$p['lastlogin'],
+        'worldid'           => $worldId,
+        'name'              => $p['name'],
+        'ismale'            => ((int)$p['sex'] === 1),
+        'ismaincharacter'   => ((int)($p['main'] ?? 0) === 1),  // FIX26
+        'ishidden'          => false,                             // FIX26
+        'dailyrewardstate'  => 0,                                 // FIX26
+        'vocation'          => (int)$p['vocation'],
+        'level'             => (int)$p['level'],
+        'outfitid'          => (int)$p['looktype'],
+        'headcolor'         => (int)$p['lookhead'],
+        'torsocolor'        => (int)$p['lookbody'],
+        'legscolor'         => (int)$p['looklegs'],
+        'detailcolor'       => (int)$p['lookfeet'],
+        'addonsflags'       => (int)$p['lookaddons'],
+        'istutorial'        => false,
+        'lastlogin'         => (int)$p['lastlogin'],
     ];
 }
 $stmt->close();
@@ -309,12 +287,25 @@ if (mt_rand(1, 10) === 1) {
 // Session key — UUID (do ticket.php) + legacy format (do protocolgame fallback)
 $legacySessionKey = $acc['name'] . "\n" . $plain;
 
+// FIX29+FIX52: Oblicz premium z DB — Canary: lastday = UNIX timestamp KOŃCA premium
+// Referencja: account_repository_db.cpp → premiumLastDay = lastday,
+//             premiumRemainingDays = (lastday - now) / 86400
+//             protocollogin.cpp → isPremium = premiumLastDay > now, premiumUntil = premiumLastDay
+$lastDay  = (int)($acc['lastday'] ?? 0);
+$isPremium = false;
+$premiumUntil = 0;
+if ($lastDay > 0) {
+    // lastday to timestamp KOŃCA premium (NIE start + dni)
+    $premiumUntil = $lastDay;
+    $isPremium = ($premiumUntil > time());
+}
+
 $session = [
     'sessionkey'    => $sessionUuid,                // B1: nowy UUID session — ticket.php używa tego
     'key'           => $legacySessionKey,            // Legacy — protocolgame bez ticket-gate
     'lastlogintime' => 0,
-    'ispremium'     => false,
-    'premiumuntil'  => 0,
+    'ispremium'     => $isPremium,                   // FIX29: z DB
+    'premiumuntil'  => $premiumUntil,                // FIX29: z DB
     'status'        => 'active',
     'gameMode'      => $gameModeDb,                  // B1: gameMode w odpowiedzi
 ];

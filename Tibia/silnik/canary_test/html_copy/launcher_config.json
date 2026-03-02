@@ -1,6 +1,6 @@
 {
   "clientVersion": "14.12.95abf3-forced",
-  "launcherVersion": "1.0",
+  "launcherVersion": "1.0.0",
   "replaceFolders": true,
   "replaceFolderName": [
     { "name": "assets" },
@@ -8,7 +8,7 @@
     { "name": "bin" }
   ],
   "clientFolder": "Tibia",
-  "newClientUrl": "http://127.0.0.1/clients/client-14.12.95abf3-full.zip",
-  "clientExecutable": "bin/client-127.0.0.1.exe",
-  "apiUrl": "http://127.0.0.1/api/v1/"
+  "newClientUrl": "https://127.0.0.1/clients/client-14.12.95abf3-full.zip",
+  "clientExecutable": "otclient.exe",
+  "apiUrl": "https://127.0.0.1/apik/v1/"
 }

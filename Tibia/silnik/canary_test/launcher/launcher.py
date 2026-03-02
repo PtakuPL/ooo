@@ -155,8 +155,9 @@ class LauncherAPI:
         resp = self.session.post(url, json=payload, timeout=10)
         resp.raise_for_status()
         data = resp.json()
-        if "error" in data:
-            raise RuntimeError(data["error"])
+        # FIX51: sendError zwraca {"errorCode":3, "errorMessage":"..."}, nie pole "error"
+        if "errorCode" in data:
+            raise RuntimeError(data.get("errorMessage", data.get("error", "Unknown API error")))
         return data
 
     def download_file(self, file_url: str, dest_path: Path, expected_sha256: str,
@@ -258,13 +259,26 @@ class UpdateManager:
                     final_path.parent.mkdir(parents=True, exist_ok=True)
                     os.replace(str(temp_path), str(final_path))
 
-        # KROK 3: Usuń nadmiarowe pliki
+        # KROK 3: Usuń nadmiarowe pliki (FIX60: z ochroną plików użytkownika)
+        # Pliki pasujące do tych wzorców NIE będą usuwane nawet jeśli nie ma ich w manifeście
+        PROTECTED_PATTERNS = [
+            '*.log', '*.cfg', '*.otml', 'cacert.pem',
+            'cache/**', 'logs/**', 'data/things/**',
+        ]
+        import fnmatch
+
+        def is_protected(rel: str) -> bool:
+            for pat in PROTECTED_PATTERNS:
+                if fnmatch.fnmatch(rel, pat):
+                    return True
+            return False
+
         to_delete = []
         if self.client_dir.exists():
             for local_file in self.client_dir.rglob("*"):
                 if local_file.is_file():
                     rel_path = str(local_file.relative_to(self.client_dir)).replace("\\", "/")
-                    if rel_path not in manifest_paths:
+                    if rel_path not in manifest_paths and not is_protected(rel_path):
                         to_delete.append(local_file)
 
         for old_file in to_delete:

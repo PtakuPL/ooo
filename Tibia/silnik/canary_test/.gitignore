@@ -414,3 +414,12 @@ cmake-build-*
 .env*
 .env*
 .env.local
+# FIX34: pozwól śledzić .env.example (szablon bez sekretów)
+!.env.example
+!**/.env.example
+
+# FIX-C2: SSL certs — klucze prywatne NIGDY w repo
+ssl/
+*.key
+*.csr
+*.srl

@@ -1,0 +1,62 @@
+<?php
+/**
+ * common.php — shared utilities for all API endpoints.
+ * FIX42: Extracted from login.php, ticket.php, launcher-token.php, etc.
+ * 
+ * Functions:
+ *   loadEnvFiles(array $paths): array
+ *   sendError(string $msg, int $code = 200): void  [exits]
+ *   json_out($data, int $code = 200): void          [exits]
+ */
+declare(strict_types=1);
+
+if (!function_exists('sendError')) {
+    /**
+     * Send standardized JSON error response and exit.
+     * Format: {"errorCode": 3, "errorMessage": "..."} — compatible with OTClient.
+     */
+    function sendError(string $msg, int $code = 200): void {
+        http_response_code($code);
+        echo json_encode(['errorCode' => 3, 'errorMessage' => $msg], JSON_UNESCAPED_SLASHES);
+        exit;
+    }
+}
+
+if (!function_exists('json_out')) {
+    /**
+     * Send JSON response and exit.
+     */
+    function json_out($data, int $code = 200): void {
+        http_response_code($code);
+        echo json_encode($data, JSON_UNESCAPED_SLASHES);
+        exit;
+    }
+}
+
+if (!function_exists('loadEnvFiles')) {
+    /**
+     * Load environment variables from one or more .env files.
+     * Later files override earlier ones.
+     */
+    function loadEnvFiles(array $paths): array {
+        $env = [];
+        foreach ($paths as $path) {
+            if (!is_file($path)) continue;
+            $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+            foreach ($lines as $line) {
+                $line = trim($line);
+                if ($line === '' || $line[0] === '#') continue;
+                $eq = strpos($line, '=');
+                if ($eq === false) continue;
+                $k = trim(substr($line, 0, $eq));
+                $v = trim(substr($line, $eq + 1));
+                if ((str_starts_with($v, '"') && str_ends_with($v, '"')) ||
+                    (str_starts_with($v, "'") && str_ends_with($v, "'"))) {
+                    $v = substr($v, 1, -1);
+                }
+                $env[$k] = $v;
+            }
+        }
+        return $env;
+    }
+}

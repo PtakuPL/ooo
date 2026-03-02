@@ -63,9 +63,11 @@ local function tryLogin(charInfo, tries)
     if CLIENT_LOCKED and EnterGame and EnterGame.requestTicket then
         EnterGame.requestTicket(charInfo)
     else
-        -- Standardowe połączenie (bez ticket flow)
+        -- FIX54: Standardowe połączenie (bez ticket flow) — użyj legacySessionKey (account\npassword)
+        -- G.sessionKey to UUID (dla ticket.php), G.legacySessionKey to "account\npassword" (dla protocolgame)
+        local sessionKey = G.legacySessionKey or G.sessionKey
         g_game.loginWorld(G.account, G.password, charInfo.worldName, charInfo.worldHost, charInfo.worldPort,
-                          charInfo.characterName, G.authenticatorToken, G.sessionKey)
+                          charInfo.characterName, G.authenticatorToken, sessionKey)
     end
 
     loadBox = displayCancelBox(tr("otclient_modules.characterlist.tr_18"), tr("otclient_modules.characterlist.tr_17"))

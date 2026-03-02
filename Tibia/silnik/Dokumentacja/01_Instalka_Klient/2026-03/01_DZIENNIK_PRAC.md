@@ -919,3 +919,266 @@ Status: ✅ DONE
 | FIX23 | ŚREDNIE | Nonce store cleanup niedokończony | ✅ DONE |
 
 Naprawione w sesji 2026-03-03.
+
+---
+
+## Audyt end-to-end #4 — FIX24-FIX44 (2026-03-03)
+
+Źródło: Pełny audyt flow launcher→klient→API→serwer. Znalezione 25 problemów, naprawionych 13 w tej sesji.
+Status: ✅ NAPRAWIONE.
+
+### FIX24 (KRYTYCZNE): .env brak WORLD_IP
+Pliki: `.env`, `.env.example`
+Problem: login.php czyta `$ENV['WORLD_IP']` ale .env nie ma tej zmiennej → fallback 127.0.0.1 → klienci łączą się na localhost.
+Rozwiązanie: Dodano WORLD_IP, WORLD_PORT + opcjonalne WORLD_CLASSIC74_IP/PORT, WORLD_MODERN_IP/PORT do .env.
+Dodatkowo: Utworzono `.env.example` z oczyszczonymi wartościami (FIX34) — .env nie jest w repo.
+
+### FIX26 (KRYTYCZNE): login.php brak pól charakteru
+Pliki: `login.php`
+Problem: Klient czyta `ismaincharacter`, `ishidden`, `dailyrewardstate` ale PHP ich nie zwracał → nil w Lua.
+Rozwiązanie: Dodano `ismaincharacter` (z kolumny `main` w DB), `ishidden` = false, `dailyrewardstate` = 0.
+Zmieniono query: `SELECT ... main FROM players`.
+
+### FIX27 (KRYTYCZNE): math.random(1) = zawsze 1
+Pliki: `entergame.lua`
+Problem: `math.random(1)` zwraca zawsze 1 → requestId kolizja → stale callbacki mogą być przyjmowane.
+Rozwiązanie: `math.random(1000000)` — zgodnie z ticket requestId.
+
+### FIX28 (KRYTYCZNE): Non-ticket auth wysyła UUID zamiast account\npassword
+Pliki: `entergame.lua`
+Problem: Gdy ticket-gate wyłączony, klient wysyła UUID sessionKey do serwera → serwer parsuje `\n` → brak `\n` → "You must enter your email."
+Rozwiązanie: `G.legacySessionKey = session.key` w loginSuccess. `onTicketBypassed` używa `G.legacySessionKey` (account\npassword) zamiast UUID.
+
+### FIX29 (WYSOKIE): Premium hardcoded 0/false
+Pliki: `login.php`
+Problem: Sesja zawsze zwraca `premiumuntil: 0, ispremium: false` → wszyscy Free z ujemnymi dniami premium.
+Rozwiązanie: Query `premdays, lastday` z tabeli `accounts`, obliczenie `premiumUntil = lastday + premdays * 86400`.
+
+### FIX30 (WYSOKIE): Ticket request port z srv.port zamiast G.port
+Pliki: `entergame.lua`
+Problem: `requestTicket` używał `srv.port` (443 z init.lua) zamiast portu wyekstrahowanego z httpLoginUrl.
+Rozwiązanie: `ticketPort = G.port or srv.port or 443`.
+
+### FIX34 (WYSOKIE): .env.example + .gitignore
+Pliki: `.env.example`, `canary_test/.gitignore`
+Problem: .env z sekretami (TICKET_SECRET, PayPal, DB) nie powinien być w repo.
+Rozwiązanie: Już ignore'owany (`**/.env`), dodano `.env.example` z oczyszczonymi wartościami. Dodano wyjątek `!**/.env.example` w .gitignore.
+
+### FIX35 (WYSOKIE): cacert.pem brak diagnostyki
+Pliki: `httplogin.cpp`
+Problem: `set_ca_cert_path("./cacert.pem")` — brak pliku = cichy TLS fail.
+Rozwiązanie: Dodano `std::ifstream` check + `std::cerr` warning logując brak pliku. Dodano `#include <fstream>`.
+
+### FIX38 (ŚREDNIE): startHttpLogin loguje body odpowiedzi
+Pliki: `httplogin.cpp`
+Problem: `std::cout << bodyResponse.dump()` wypisywał session keys do stdout (sprzeczne z komentarzem "NIE logujemy body").
+Rozwiązanie: Zastąpiono logiem "status 200 OK" bez body.
+
+### FIX39 (ŚREDNIE): Brak obsługi argon2/bcrypt haseł
+Pliki: `login.php`
+Problem: Tylko SHA1 i plaintext, mimo że .env ma konfigurację argon2 (M_COST, T_COST).
+Rozwiązanie: Dodano gałąź `password_verify()` dla `$2*` (bcrypt) i `$argon2*` hashów.
+
+### FIX42+FIX43 (ŚREDNIE): Duplikacja loadEnvFiles/sendError
+Pliki: `common.php` (NOWY), `login.php`, `ticket.php`, `launcher-token.php`, `launcher-version.php`, `generate_manifest.php`
+Problem: Identyczna ~15-linijkowa funkcja skopiowana w 5 plikach. launcher-token.php miał inny format error.
+Rozwiązanie: Wyekstrahowano do `common.php`, `require_once`. Ustandaryzowano format error na `{errorCode, errorMessage}`.
+
+### FIX44+CPP-4 (NISKIE): Dead code loginHttpJson
+Pliki: `httplogin.h`, `httplogin.cpp`
+Problem: Metoda `loginHttpJson()` (plain HTTP) nie była wywoływana od X2b (usunięcie HTTP fallback). Dead code.
+Rozwiązanie: Usunięto deklarację z `.h` i definicję (~35 linii) z `.cpp`.
+
+### Podsumowanie Audytu #4:
+| FIX | Severity | Problem | Status |
+|-----|----------|---------|--------|
+| FIX24 | KRYTYCZNE | .env brak WORLD_IP | ✅ DONE |
+| FIX26 | KRYTYCZNE | login.php brak pól char | ✅ DONE |
+| FIX27 | KRYTYCZNE | math.random(1) | ✅ DONE |
+| FIX28 | KRYTYCZNE | non-ticket auth UUID | ✅ DONE |
+| FIX29 | WYSOKIE | premium hardcoded | ✅ DONE |
+| FIX30 | WYSOKIE | ticket port | ✅ DONE |
+| FIX34 | WYSOKIE | .env.example | ✅ DONE |
+| FIX35 | WYSOKIE | cacert.pem check | ✅ DONE |
+| FIX38 | ŚREDNIE | body log leak | ✅ DONE |
+| FIX39 | ŚREDNIE | argon2/bcrypt | ✅ DONE |
+| FIX42 | ŚREDNIE | loadEnvFiles common | ✅ DONE |
+| FIX43 | NISKIE | error format | ✅ DONE |
+| FIX44+CPP-4 | NISKIE | dead code | ✅ DONE |
+
+### Znane otwarte problemy (nie naprawione w tej sesji):
+| # | Severity | Problem | Powód |
+|---|----------|---------|-------|
+| FIX25 | ✅ DONE | Placeholder URLs w init.lua → 127.0.0.1 + HTTPS | Sesja 2026-03-02 Audyt #5 |
+| FIX31 | ✅ DONE | launcher_config.json URLs → HTTPS + poprawne ścieżki | Sesja 2026-03-02 Audyt #5 |
+| FIX32 | ✅ DONE | launcher clientDir → ../testyy (prawdziwa lokalizacja) | Sesja 2026-03-02 Audyt #5 |
+| FIX33 | ✅ DONE | CLIENT_LOCKED + TICKET_SECRET auto-validation w deploy_api.sh | Sesja 2026-03-02 Audyt #5 |
+| FIX36 | ŚREDNIE | IP binding za NAT/proxy | Wymaga trusted proxy config |
+| FIX37 | ŚREDNIE | FIX21 fail-closed blokuje fresh install | Wymaga setup docs |
+| FIX40 | ŚREDNIE | Probabilistyczny cleanup sesji | Wymaga crona |
+| FIX41 | ŚREDNIE | port=443 API vs game — confusing config | Wymaga oddzielenia apiPort/gamePort |
+| FIX45 | ✅ DONE | SSL na nginx (self-signed cert, port 443) | Sesja 2026-03-02 Audyt #5 |
+| FIX46 | ✅ DONE | cacert.pem + dynamiczna ścieżka w C++ | Sesja 2026-03-02 Audyt #5 |
+| FIX47 | ✅ DONE | deploy_api.sh — automatyczny sync + walidacja | Sesja 2026-03-02 Audyt #5 |
+| FIX48 | ✅ DONE | Sync API files do /var/www/html | Sesja 2026-03-02 Audyt #5 |
+
+## [2026-03-02 ~14:00] BLOK: Audyt end-to-end #5 — SSL, deployment, infrastructure
+
+Zakres:
+- Konfiguracja SSL/TLS na nginx z self-signed CA
+- Wygenerowanie cacert.pem dla klienta OTClient
+- Wyeliminowanie placeholderów z init.lua
+- Stworzenie deploy_api.sh automatyzującego deployment
+- Naprawienie launcher_config.json URLs
+- Naprawienie ścieżki cacert.pem w C++ (względna → dynamiczna)
+- Naprawienie WORLD_IP mismatch (config.lua ip bind)
+- Synchronizacja plików API do /var/www/html
+- Walidacja CLIENT_LOCKED + TICKET_SECRET sync w deploy script
+
+Nowe FIXy:
+| # | Plik | Opis |
+|---|------|------|
+| FIX25 | testyy/init.lua | Placeholder ZMIEN_NA_ADRES → 127.0.0.1, httpLoginUrl → https://127.0.0.1/apik/v1/login.php |
+| FIX31 | html_copy/launcher_config.json | http:// → https://, apiUrl → /apik/v1/, clientExecutable → otclient.exe |
+| FIX32 | launcher/launcher_config.json | clientDir: ./client → ../testyy |
+| FIX33 | deploy_api.sh | Automatyczna walidacja CLIENT_LOCKED (init.lua vs .env) + TICKET_SECRET (config.lua vs .env) |
+| FIX45 | nginx ssl config | Self-signed CA+cert z SAN (127.0.0.1, 172.29.76.234, localhost). nginx listen 443 ssl, HTTP→HTTPS redirect |
+| FIX46 | testyy/cacert.pem | CA cert kopiowany do katalogu klienta (httplogin.cpp set_ca_cert_path) |
+| FIX47 | deploy_api.sh | Nowy skrypt — rsync PHP/SQL do /var/www/html, skip .env, sync launcher_config.json, chmod/chown |
+| FIX48 | /var/www/html/apik/v1/ | 9 plików zsynchronizowanych (common.php, login.php, ticket.php, launcher-token.php, launcher-version.php, generate_manifest.php, update.php + 2 SQL schemas) |
+| FIX49 | html_copy/apik/v1/.env + .env.example | URL='http://...' → URL='https://...' |
+| FIX-C1 | config.lua | ip = "172.29.76.234" → ip = "0.0.0.0" (bind all interfaces — WORLD_IP w .env jest 127.0.0.1) |
+| FIX-C2 | testyy/src/framework/net/httplogin.cpp | cacert.pem path: "./cacert.pem" → g_resources.getWorkDir() + "cacert.pem" (dynamiczny) |
+| FIX-W1 | testyy/modules/client_entergame/entergame.lua | Naprawiona odwrócona logika port detection — teraz zawsze 443 domyślnie |
+
+Nowe pliki:
+- deploy_api.sh — skrypt deploymentu API (bash, executable)
+- ssl/ — certyfikaty CA+server (gitignored, klucze prywatne)
+- testyy/cacert.pem — publiczny certyfikat CA (tracked in git)
+
+Zmienione pliki (łącznie z Audytem #4):
+1. testyy/init.lua (FIX25 — adresy + komentarze portów)
+2. testyy/modules/client_entergame/entergame.lua (FIX-W1 — port logic)
+3. testyy/src/framework/net/httplogin.cpp (FIX-C2 — cacert path + resourcemanager include)
+4. testyy/src/framework/net/httplogin.h (FIX44 — z Audytu #4)
+5. html_copy/apik/v1/common.php (FIX42 — z Audytu #4)
+6. html_copy/apik/v1/login.php (FIX26+29+39+42 — z Audytu #4)
+7. html_copy/apik/v1/ticket.php (FIX42 — z Audytu #4)
+8. html_copy/apik/v1/launcher-token.php (FIX42+43 — z Audytu #4)
+9. html_copy/apik/v1/launcher-version.php (FIX42 — z Audytu #4)
+10. html_copy/apik/v1/generate_manifest.php (FIX42 — z Audytu #4)
+11. html_copy/apik/v1/.env (FIX24+49)
+12. html_copy/apik/v1/.env.example (FIX34+49)
+13. html_copy/launcher_config.json (FIX31)
+14. launcher/launcher_config.json (FIX32)
+15. .gitignore (FIX34 + ssl/ ignore)
+16. deploy_api.sh (FIX47 — nowy)
+17. config.lua (FIX-C1 — ip bind, gitignored)
+18. testyy/cacert.pem (FIX46)
+
+Infrastruktura (niezarządzana przez git):
+- /etc/nginx/ssl/server.crt + server.key (self-signed cert zainstalowany)
+- /etc/nginx/sites-enabled/myaac.conf (HTTPS 443 + HTTP→HTTPS redirect)
+- /etc/nginx/sites-enabled/127.local.conf (HTTPS 443 dla localhost)
+- /var/www/html/apik/v1/ (9 plików PHP zsynchronizowanych z repo)
+
+Testy:
+- curl HTTPS z cacert.pem: health.php ✅, login.php ✅, ticket.php ✅
+- curl launcher-version.php ✅, launcher-token.php ✅
+- HTTP→HTTPS redirect: 301 ✅
+- .env access: 403 Forbidden ✅
+- PHP lint: 6/6 plików bez błędów ✅
+- C++ get_errors: 0 błędów ✅
+- deploy_api.sh --dry-run: sync check + CLIENT_LOCKED + TICKET_SECRET validation ✅
+
+Wynik:
+- HTTPS działa na nginx (port 443) z self-signed CA
+- Klient OTClient ma cacert.pem → walidacja TLS chain OK
+- Wszystkie placeholdery zastąpione prawdziwymi adresami
+- API zsynchronizowane z repo → /var/www/html
+- deploy_api.sh automatyzuje deployment + waliduje spójność konfiguracji
+- Canary server binduje na 0.0.0.0 → dostępny z localhost i WSL IP
+
+Pozostałe otwarte (wymagają decyzji/dodatkowej pracy):
+- FIX36: trusted proxy headers za NAT
+- FIX37: dokumentacja fresh install (schema SQL, .env setup)
+- FIX40: cron cleanup sessions zamiast probabilistycznego
+- FIX41: oddzielne apiPort/gamePort w konfiguracji
+
+Następny krok:
+- Commit zbiorczy + push (czekamy na potwierdzenie użytkownika)
+- Kompilacja klienta (A8/C6)
+- Test całego flow: launcher → token → login → ticket → game server
+
+## [2026-03-02 ~15:20] BLOK: Audyt end-to-end #6 — Codex Review fixes (FIX50-FIX55)
+
+Zakres:
+- Naprawy 6 problemów znalezionych przez Codex/ChatGPT code review
+- 1 KRYTYCZNY, 2 WYSOKIE, 2 ŚREDNIE, 1 NISKI
+
+Zmienione pliki:
+- `testyy/modules/client_entergame/entergame.lua` — FIX50: `child:getStyleName` → `child.getStyleName` (parse error dwukropek bez wywołania); FIX55: math.randomseed przeniesiony do init() z per-request
+- `launcher/launcher.py` — FIX51: error detection `"error" in data` → `"errorCode" in data` (zgodność z sendError contract)
+- `html_copy/apik/v1/login.php` — FIX52: premium logic `lastday + premdays*86400` → `lastday` (lastday to już timestamp końca, potwierdzone w account_repository_db.cpp)
+- `html_copy/apik/v1/ticket.php` — FIX53: dodano worldId do mapowania gameMode→world (odporność na rename)
+- `testyy/modules/client_entergame/characterlist.lua` — FIX54: `G.sessionKey` → `G.legacySessionKey or G.sessionKey` w ścieżce bez ticket-gate
+- `Dokumentacja/.../00_START_PRACY_CHECKLISTA.md` — aktualizacja tabeli Audyt #5
+
+Weryfikacja:
+- PHP lint: 4/4 zmienione pliki ✅
+- Python compile: launcher.py ✅
+- luac -p: entergame.lua ✅, characterlist.lua ✅
+- C++ (httplogin.cpp/h): 0 errors ✅
+- Test premium z DB: lastday=1775049476 (30 dni) → premiumUntil=1775049476 (NIE 60 dni jak stary kod by zwrócił) ✅
+- Deploy na /var/www/html: login.php + ticket.php zaktualizowane ✅
+- CLIENT_LOCKED + TICKET_SECRET: spójne ✅
+
+Szczegóły fixów:
+| # | Priorytet | Problem | Naprawa |
+|---|-----------|---------|---------|
+| FIX50 | KRYTYCZNY | `child:getStyleName and ...` = Lua parse error | Zmiana na `child.getStyleName` (dot = field access) |
+| FIX51 | WYSOKI | launcher.py szuka `error` ale API zwraca `errorCode` | Sprawdzanie `"errorCode" in data` |
+| FIX52 | WYSOKI | `premiumUntil = lastday + premdays*86400` = podwójne naliczanie | `premiumUntil = lastday` (timestamp końca premium, per C++ reference) |
+| FIX53 | ŚREDNI | worldName string validation kruche | Dodano worldId do mapy, forward-compatible |
+| FIX54 | ŚREDNI | characterlist.lua: `G.sessionKey` zamiast legacySessionKey | `G.legacySessionKey or G.sessionKey` (jak w onTicketBypassed) |
+| FIX55 | NISKI | randomseed(os.time()) per-request → kolizja w 1s | Seed raz w init() z wyższą entropią |
+
+## [2026-03-02 ~16:00] BLOK: Audyt end-to-end #7 — Deep static review (FIX56-FIX65)
+
+Zakres:
+- Pełny przegląd statyczny z subagent audit — 13 znalezisk (2 KRYTYCZNE w audycie, ale CRITICAL #1 okazał się FALSE POSITIVE — canary_test/ nie jest build source, canary/ ma ticket-gate)
+- 10 napraw wdrożonych, 1 pominięty (FIX61: LuaObject refcount chroni this w async)
+
+Zmienione pliki:
+- `testyy/src/framework/net/httplogin.cpp` — FIX56: Emscripten UAF (fetch->status po emscripten_fetch_close → savedStatus)
+- `html_copy/apik/v1/ticket.php` — FIX57: TICKET_SECRET placeholder check rozszerzony o oba warianty; FIX58: world IDs = 0/1 (match login.php)
+- `html_copy/apik/v1/login.php` — FIX59: komentarz do empty gameMode worldId default
+- `launcher/launcher.py` — FIX60: PROTECTED_PATTERNS chroni logi/cache/config przed usunięciem przez updater
+- `html_copy/apik/v1/update.php` — FIX62: sendError() z common.php zamiast {"error":"..."}
+- `testyy/modules/client_entergame/entergame.lua` — FIX63: `world.previewstate` → `world.previewState` (camelCase); FIX64: zmienne `account`/`password` → `encAccount`/`encPassword` (bez shadowing)
+- `deploy_api.sh` — FIX65: komentarz do braku `set -e` (celowy ze względu na sudo)
+
+Pominięte (z uzasadnieniem):
+- FIX61 (raw `this` w async): LuaObject ma refcount — Lua trzyma referencję przez cały flow logowania. Naprawa wymagałaby shared_from_this w LuaObject — zbyt inwazyjne.
+- Audyt #1 CRITICAL (brak ticket_validator w canary_test/): FALSE POSITIVE — build (budowa_silnik/) kompiluje z canary/ (SOURCE_DIR), nie z canary_test/. canary/ MA ticket_validator.cpp/hpp i pełny ticket-gate w protocolgame.cpp.
+
+Weryfikacja:
+- PHP lint: 4/4 ✅
+- Python compile: launcher.py ✅
+- luac -p: entergame.lua ✅, characterlist.lua ✅
+- C++ errors: httplogin.cpp 0 ✅
+- update.php: zwraca {"errorCode":3,"errorMessage":"..."} per standard ✅
+- Deploy: ticket.php + login.php + update.php synced ✅
+- CLIENT_LOCKED + TICKET_SECRET spójne ✅
+
+| # | Priorytet | Problem | Naprawa |
+|---|-----------|---------|---------|
+| FIX56 | KRYTYCZNY | Emscripten: fetch→status po close = UAF | savedStatus/savedData przed close |
+| FIX57 | WYSOKI | TICKET_SECRET placeholder mismatch .env.example vs check | Sprawdzanie obu wariantów |
+| FIX58 | WYSOKI | ticket.php world IDs 1/2 vs login.php 0/1 | Aligned do 0/1 |
+| FIX59 | ŚREDNI | Empty gameMode → ALL chars worldId=0 | Komentarz + domyślny 0 (classic) |
+| FIX60 | ŚREDNI | Launcher deletes user logs/cache/configs | PROTECTED_PATTERNS w UpdateManager |
+| FIX62 | NISKI | update.php {"error":"..."} ≠ kontrakt sendError | require common.php + sendError() |
+| FIX63 | NISKI | world.previewstate → world.previewState | camelCase fix |
+| FIX64 | NISKI | variable shadowing: local account/password | encAccount/encPassword |
+| FIX65 | NISKI | deploy_api.sh: set -uo pipefail bez -e | Komentarz wyjaśniający celowy brak |

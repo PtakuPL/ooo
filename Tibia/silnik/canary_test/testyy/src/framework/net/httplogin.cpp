@@ -24,8 +24,10 @@
 
 #include <framework/core/asyncdispatcher.h>
 #include <framework/core/eventdispatcher.h>
+#include <framework/core/resourcemanager.h>  // FIX-C2: g_resources.getWorkDir() for cacert.pem path
 #include <httplib.h>
 #include <iostream>
+#include <fstream>  // FIX35: std::ifstream for cacert.pem check
 #include <nlohmann/json.hpp>
 #include <string>
 
@@ -93,10 +95,8 @@ void LoginHttp::startHttpLogin(const std::string& host, const std::string& path,
 
     if (auto res = cli.Post(path, headers, body.dump(1), "application/json")) {
         if (res->status == 200) {
-            const json bodyResponse = json::parse(res->body);
-            std::cout << bodyResponse.dump() << std::endl;
-
-            std::cout << std::boolalpha << json::accept(res->body) << std::endl;
+            // FIX38: NIE logujemy body odpowiedzi — zawiera session keys
+            std::cout << "HTTPS sync login: status 200 OK" << std::endl;
         }
     } else {
         const auto err = res.error();
@@ -184,26 +184,28 @@ void LoginHttp::httpLogin(const std::string& host, const std::string& path,
         emscripten_fetch_t* fetch = emscripten_fetch(&attr, url.c_str());
         // X2b: BRAK fallbacku na HTTP w Emscripten — tylko HTTPS.
 
-        if (fetch && fetch->status == 200 &&
-               !parseJsonResponse(std::string(fetch->data, fetch->numBytes))) {
-            fetch->status = -1;
+        // FIX56: Zapisz status PRZED emscripten_fetch_close(), bo close zwalnia struct.
+        int savedStatus = (fetch) ? fetch->status : -1;
+        std::string savedData;
+        if (fetch && fetch->data && fetch->numBytes > 0) {
+            savedData.assign(fetch->data, fetch->numBytes);
+        }
+
+        if (savedStatus == 200 && !parseJsonResponse(savedData)) {
+            savedStatus = -1;
         }
 
         emscripten_fetch_close(fetch);
-        if (fetch && fetch->status == 200) {
+
+        if (savedStatus == 200) {
             g_dispatcher.addEvent([this, request_id] {
                 g_lua.callGlobalField("EnterGame", "loginSuccess", request_id,
                 this->getSession(), this->getWorldList(),
                 this->getCharacterList());
             });
         } else {
-            int status = 0;
+            int status = savedStatus;
             std::string msg = "";
-            if (fetch) {
-                status = fetch->status;
-            } else {
-                status = -1;
-            }
             if (this->errorMessage.length() == 0) {
                 msg = "Unknown error";
             } else {
@@ -229,8 +231,19 @@ httplib::Result LoginHttp::loginHttpsJson(const std::string& host,
     client.set_logger(
         [this](const auto& req, const auto& res) { LoginHttp::Logger(req, res); });
 
-    client.set_ca_cert_path("./cacert.pem");
+    // FIX-C2: Buduj ścieżkę do cacert.pem względem katalogu roboczego klienta
+    // zamiast hardkodowanego "./cacert.pem" (które zależy od cwd przy uruchomieniu).
+    std::string certPath = g_resources.getWorkDir() + "cacert.pem";
+    client.set_ca_cert_path(certPath);
     client.enable_server_certificate_verification(true);  // X2: TLS hard-fail — odrzucaj nieważne certy
+
+    // FIX35: Loguj warning jeśli cacert.pem nie istnieje.
+    {
+        std::ifstream certCheck(certPath);
+        if (!certCheck.good()) {
+            std::cerr << "[LOGIN] WARNING: cacert.pem not found at " << certPath << ". TLS connections will fail." << std::endl;
+        }
+    }
 
     // E10: launchToken dołączany do body logowania
     json body = { {"email", email}, {"password", password}, {"stayloggedin", true}, {"type", "login"} };
@@ -263,45 +276,6 @@ httplib::Result LoginHttp::loginHttpsJson(const std::string& host,
     return response;
 }
 
-httplib::Result LoginHttp::loginHttpJson(const std::string& host,
-                                         const std::string& path,
-                                         const uint16_t port,
-                                         const std::string& email,
-                                         const std::string& password) {
-    httplib::Client client(host, port);
-    client.set_logger(
-        [this](const auto& req, const auto& res) { LoginHttp::Logger(req, res); });
-
-    const httplib::Headers headers = { {"User-Agent", "Mozilla/5.0"} };
-    // E10: launchToken dołączany do body logowania
-    json body = { {"email", email}, {"password", password}, {"stayloggedin", true}, {"type", "login"} };
-    if (!this->launchToken.empty()) {
-        body["launchToken"] = this->launchToken;
-    }
-    // FIX18: gameMode dołączany do body logowania
-    if (!this->gameMode.empty()) {
-        body["gameMode"] = this->gameMode;
-    }
-
-    httplib::Result response =
-        client.Post(path, headers, body.dump(), "application/json");
-    if (!response) {
-        std::cout << "HTTP error: unknown" << std::endl;
-    } else if (response->status != Success) {
-        std::cout << "HTTP error: " << to_string(response.error())
-            << std::endl;
-    } else {
-        std::cout << "HTTP status: " << to_string(response.error())
-            << std::endl;
-    }
-    if (response && response->status == Success &&
-           !parseJsonResponse(response->body)) {
-        response->status = -1;
-    }
-
-    return response;
-}
-
 // ============================================================
 // B6: requestTicket — żądanie ticketu HMAC przed połączeniem z game serverem
 // Flow: klient → POST ticket.php {sessionKey, characterName, gameMode, worldName}
@@ -317,7 +291,9 @@ void LoginHttp::requestTicket(const std::string& host, const std::string& path,
     (void)g_asyncDispatcher.submit_task(
         [this, host, path, port, sessionKey, characterName, gameMode, worldName, request_id] {
         httplib::SSLClient client(host, port);
-        client.set_ca_cert_path("./cacert.pem");
+        // FIX-C2: użyj dynamicznej ścieżki do cacert.pem
+        std::string certPath = g_resources.getWorkDir() + "cacert.pem";
+        client.set_ca_cert_path(certPath);
         client.enable_server_certificate_verification(true);  // TLS hard-fail
 
         const json body = {

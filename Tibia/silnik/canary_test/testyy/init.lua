@@ -29,11 +29,11 @@ GameModes = {
         name = "Classic 7.4",
         description = "Serwer w stylu Tibia 7.4 — bez hotkey na runy, bez market, bez quick loot.",
         server = {
-            host = "ZMIEN_NA_ADRES_SERWERA",  -- TODO: wpisać prawdziwy adres
-            port = 443,        -- HTTPS port! (7171 = stary ProtocolLogin, 443 = HTTP ticket flow)
+            host = "127.0.0.1",   -- FIX25: adres serwera (dev: WSL localhost)
+            port = 443,            -- Port API (HTTPS). Game port (7172) jest w login.php response.
             protocol = 1420,
             httpLogin = true,
-            httpLoginUrl = "https://ZMIEN_NA_ADRES/login.php",
+            httpLoginUrl = "https://127.0.0.1/apik/v1/login.php",  -- FIX25: prawdziwy URL API
         },
         features = {
             hotkeys_items    = false,  -- blokada hotkey na itemy/runy
@@ -53,11 +53,11 @@ GameModes = {
         name = "Modern 14.20+",
         description = "Pełna wersja Tibia — wszystkie nowoczesne funkcje.",
         server = {
-            host = "ZMIEN_NA_ADRES_SERWERA",  -- TODO: wpisać prawdziwy adres
-            port = 443,        -- HTTPS port! (7171 = stary ProtocolLogin, 443 = HTTP ticket flow)
+            host = "127.0.0.1",   -- FIX25: adres serwera (dev: WSL localhost)
+            port = 443,            -- Port API (HTTPS). Game port (7172) jest w login.php response.
             protocol = 1420,
             httpLogin = true,
-            httpLoginUrl = "https://ZMIEN_NA_ADRES/login.php",
+            httpLoginUrl = "https://127.0.0.1/apik/v1/login.php",  -- FIX25: prawdziwy URL API
         },
         features = {
             hotkeys_items    = true,

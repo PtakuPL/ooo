@@ -129,6 +129,63 @@ Zakres: ticket-gate, tryby gry, blokada serwerów, launcher
 | FIX22 | ŚREDNIE | Podwójny slash w login URL (`//login.php`) | `entergame.lua` | ✅ DONE |
 | FIX23 | ŚREDNIE | Nonce replay-store: cleanup >10k ale nigdzie cyklicznie nie wywoływany | `ticket_validator.hpp/cpp` | ✅ DONE |
 
+### Audyt end-to-end #7 — FIX56-FIX65 (2026-03-02) ✅ DEEP STATIC REVIEW
+| # | Priorytet | Problem | Plik(i) | Status |
+|---|-----------|---------|---------|--------|
+| FIX56 | KRYTYCZNE | Emscripten UAF: fetch→status po close | `httplogin.cpp` | ✅ DONE |
+| FIX57 | WYSOKIE | TICKET_SECRET placeholder mismatch | `ticket.php` | ✅ DONE |
+| FIX58 | WYSOKIE | ticket.php world IDs 1/2 vs login.php 0/1 | `ticket.php` | ✅ DONE |
+| FIX59 | ŚREDNIE | Empty gameMode → ALL chars worldId=0 | `login.php` | ✅ DONE |
+| FIX60 | ŚREDNIE | Launcher deletes user logs/cache | `launcher.py` | ✅ DONE |
+| FIX61 | ŚREDNIE | raw `this` w async lambda | SKIP (LuaObject refcount) | ⬜ SKIP |
+| FIX62 | NISKIE | update.php error format ≠ sendError | `update.php` | ✅ DONE |
+| FIX63 | NISKIE | previewState case mismatch | `entergame.lua` | ✅ DONE |
+| FIX64 | NISKIE | variable shadowing account/password | `entergame.lua` | ✅ DONE |
+| FIX65 | NISKIE | deploy_api.sh: brak set -e | `deploy_api.sh` | ✅ DONE |
+
+### Audyt end-to-end #6 — FIX50-FIX55 (2026-03-02) ✅ CODEX REVIEW FIXES
+| # | Priorytet | Problem | Plik(i) | Status |
+|---|-----------|---------|---------|--------|
+| FIX50 | KRYTYCZNE | Lua parse error: `child:getStyleName` bez args | `entergame.lua` | ✅ DONE |
+| FIX51 | WYSOKIE | launcher.py szuka `error` ale API zwraca `errorCode` | `launcher.py` | ✅ DONE |
+| FIX52 | WYSOKIE | premium: `lastday + premdays*86400` = podwójne naliczanie | `login.php` | ✅ DONE |
+| FIX53 | ŚREDNIE | ticket.php worldName-only validation = kruche | `ticket.php` | ✅ DONE |
+| FIX54 | ŚREDNIE | characterlist.lua: `G.sessionKey` zamiast legacySessionKey | `characterlist.lua` | ✅ DONE |
+| FIX55 | NISKIE | randomseed per-request → kolizja w 1s | `entergame.lua` | ✅ DONE |
+
+### Audyt end-to-end #5 — FIX25, FIX31-33, FIX45-C2, FIX-W1 (2026-03-02) ✅ INFRASTRUKTURA + DEPLOYMENT
+| # | Priorytet | Problem | Plik(i) | Status |
+|---|-----------|---------|---------|--------|
+| FIX25 | KRYTYCZNE | Placeholder ZMIEN_NA_ADRES → prawdziwy adres 127.0.0.1 | `init.lua` | ✅ DONE |
+| FIX31 | WYSOKIE | launcher_config.json http→https + apiUrl→/apik/v1/ | `html_copy/launcher_config.json` | ✅ DONE |
+| FIX32 | WYSOKIE | launcher clientDir ./client → ../testyy | `launcher/launcher_config.json` | ✅ DONE |
+| FIX33 | WYSOKIE | CLIENT_LOCKED + TICKET_SECRET auto-validation | `deploy_api.sh` | ✅ DONE |
+| FIX45 | KRYTYCZNE | SSL/TLS na nginx (self-signed CA+cert, port 443) | nginx config + ssl/ | ✅ DONE |
+| FIX46 | WYSOKIE | cacert.pem dla klienta OTClient | `testyy/cacert.pem` | ✅ DONE |
+| FIX47 | WYSOKIE | deploy_api.sh — automatyczny sync PHP→/var/www/html | `deploy_api.sh` (nowy) | ✅ DONE |
+| FIX48 | WYSOKIE | Sync 9 plików API do /var/www/html | deployed files | ✅ DONE |
+| FIX49 | ŚREDNIE | .env URL http→https | `.env`, `.env.example` | ✅ DONE |
+| FIX-C1 | KRYTYCZNE | config.lua ip bind 172.29.76.234 → 0.0.0.0 (WORLD_IP mismatch) | `config.lua` | ✅ DONE |
+| FIX-C2 | WYSOKIE | cacert.pem ścieżka ./cacert.pem → g_resources.getWorkDir() | `httplogin.cpp` | ✅ DONE |
+| FIX-W1 | NISKIE | Odwrócona logika port detection → zawsze 443 domyślnie | `entergame.lua` | ✅ DONE |
+
+### Audyt end-to-end #4 — FIX24-FIX44 (2026-03-02) ✅ NAPRAWIONE
+| # | Priorytet | Problem | Plik(i) | Status |
+|---|-----------|---------|---------|--------|
+| FIX24 | KRYTYCZNE | .env brak WORLD_IP → klienci dostają 127.0.0.1 | `.env`, `.env.example` | ✅ DONE |
+| FIX26 | KRYTYCZNE | login.php brak ismaincharacter/ishidden/dailyrewardstate | `login.php` | ✅ DONE |
+| FIX27 | KRYTYCZNE | math.random(1) = zawsze 1 → kolizja requestId | `entergame.lua` | ✅ DONE |
+| FIX28 | KRYTYCZNE | Non-ticket auth: UUID zamiast account\npassword | `entergame.lua` | ✅ DONE |
+| FIX29 | WYSOKIE | premium hardcoded 0/false zamiast z DB | `login.php` | ✅ DONE |
+| FIX30 | WYSOKIE | ticket port z srv.port zamiast G.port | `entergame.lua` | ✅ DONE |
+| FIX34 | WYSOKIE | .env.example + .gitignore (sekrety nie w repo) | `.env.example`, `.gitignore` | ✅ DONE |
+| FIX35 | WYSOKIE | cacert.pem brak → TLS fail bez komunikatu | `httplogin.cpp` | ✅ DONE |
+| FIX38 | ŚREDNIE | startHttpLogin loguje body z session keys | `httplogin.cpp` | ✅ DONE |
+| FIX39 | ŚREDNIE | Brak obsługi argon2/bcrypt haseł | `login.php` | ✅ DONE |
+| FIX42 | ŚREDNIE | loadEnvFiles×5 duplikacja → common.php | `common.php` + 5 plików PHP | ✅ DONE |
+| FIX43 | NISKIE | launcher-token error format inny niż reszta | `launcher-token.php` (via common.php) | ✅ DONE |
+| FIX44+CPP-4 | NISKIE | Dead code loginHttpJson usunięty | `httplogin.h/cpp` | ✅ DONE |
+
 **Legenda**: ⬜ TODO | 🔄 W TRAKCIE | ✅ DONE | ❌ FAIL (wymaga fix)
 
 ---
@@ -177,26 +234,27 @@ Zadanie uznajemy za gotowe tylko gdy:
 
 ---
 
-## Sumaryczna lista zmodyfikowanych plików (stan na 2026-03-02)
+## Sumaryczna lista zmodyfikowanych plików (stan na 2026-03-03)
 
-### OTClient — `canary_test/testyy/` (9 plików, 3 C++)
+### OTClient — `canary_test/testyy/` (11 plików, 3 C++)
 | Plik | Fazy | C++? |
 |------|------|------|
-| `init.lua` | A1, A-FIX, FIX16 | NIE |
-| `modules/client_entergame/entergame.lua` | A2, A3, A5, A-FIX, B5, FIX4, FIX6, FIX8 | NIE |
+| `init.lua` | A1, A-FIX, FIX16, **FIX25** | NIE |
+| `modules/client_entergame/entergame.lua` | A2, A3, A5, A-FIX, B5, FIX4, FIX6, FIX8, FIX18, FIX22, FIX27, FIX28, FIX30, **FIX-W1**, **FIX50**, **FIX55**, **FIX63**, **FIX64** | NIE |
 | `modules/client_entergame/entergame.otui` | A2 | NIE |
-| `modules/client_entergame/characterlist.lua` | B5 | NIE |
+| `modules/client_entergame/characterlist.lua` | B5, **FIX54** | NIE |
 | `modules/client_serverlist/serverlist.lua` | A4, A-FIX, FIX8, FIX14 | NIE |
 | `modules/game_hotkeys/hotkeys_manager.lua` | A6 | NIE |
-| `src/framework/net/httplogin.cpp` | X2, X2b, X7, B6, FIX4, E10 | **TAK** |
-| `src/framework/net/httplogin.h` | B6, FIX4, E10 | **TAK** |
-| `src/framework/luafunctions.cpp` | B6, E10 | **TAK** |
+| `src/framework/net/httplogin.cpp` | X2, X2b, X7, B6, FIX4, E10, FIX18, FIX35, FIX38, FIX44/CPP-4, **FIX-C2**, **FIX56** | **TAK** |
+| `src/framework/net/httplogin.h` | B6, FIX4, E10, FIX18, FIX44/CPP-4 | **TAK** |
+| `src/framework/luafunctions.cpp` | B6, E10, FIX18 | **TAK** |
+| `cacert.pem` | **FIX46** | NIE | ✅ NOWY |
 
 ### Canary Server — `canary/` (10 plików, 8 C++, 2 nowe)
 | Plik | Fazy | C++? | Nowy? |
 |------|------|------|-------|
-| `src/server/network/protocol/ticket_validator.hpp` | C1, FIX10 | **TAK** | ✅ NOWY |
-| `src/server/network/protocol/ticket_validator.cpp` | C1, FIX5, FIX10, FIX13 | **TAK** | ✅ NOWY |
+| `src/server/network/protocol/ticket_validator.hpp` | C1, FIX10, FIX23 | **TAK** | ✅ NOWY |
+| `src/server/network/protocol/ticket_validator.cpp` | C1, FIX5, FIX10, FIX13, FIX19, FIX23 | **TAK** | ✅ NOWY |
 | `src/server/network/protocol/protocolgame.cpp` | C2, D1, D2-D10, FIX1, FIX3, FIX9, FIX10, FIX15 | **TAK** | |
 | `src/server/network/protocol/protocolgame.hpp` | D1 | **TAK** | |
 | `src/server/CMakeLists.txt` | FIX2 | NIE | |
@@ -206,33 +264,46 @@ Zadanie uznajemy za gotowe tylko gdy:
 | `src/creatures/players/player.hpp` | D1, D8 | **TAK** | |
 | `src/game/game.cpp` | D8, FIX7 | **TAK** | |
 
-### Konfiguracja (2 pliki)
+### Konfiguracja (3 pliki)
 | Plik | Fazy |
 |------|------|
 | `canary/config.lua.dist` | C4 |
-| `canary_test/config.lua` | C4 |
+| `canary_test/config.lua` | C4, **FIX-C1** |
+| `canary_test/.gitignore` | **FIX34**, Audyt#5 (ssl/) |
 
-### PHP / MySQL — `canary_test/html_copy/apik/v1/` (9 plików, 7 nowych)
+### PHP / MySQL — `canary_test/html_copy/apik/v1/` (11 plików, 9 nowych)
 | Plik | Fazy | Nowy? |
 |------|------|-------|
-| `login.php` | B1, B2, E11, FIX11 | |
-| `ticket.php` | B3, FIX13 | ✅ NOWY |
+| `common.php` | FIX42 | ✅ NOWY |
+| `.env.example` | FIX34, **FIX49** | ✅ NOWY |
+| `login.php` | B1, B2, E11, FIX11, FIX26, FIX29, FIX39, FIX42, **FIX52**, **FIX59** | |
+| `ticket.php` | B3, FIX13, FIX20, FIX42, **FIX53**, **FIX57**, **FIX58** | ✅ NOWY |
 | `schema_ticket_gate.sql` | B4 | ✅ NOWY |
 | `schema_launcher.sql` | E5 | ✅ NOWY |
-| `generate_manifest.php` | E1 | ✅ NOWY |
-| `update.php` | E2 | ✅ NOWY |
-| `launcher-token.php` | E3, FIX12 | ✅ NOWY |
-| `launcher-version.php` | E4 | ✅ NOWY |
-| `.env` | B4, E5, E11 (CLIENT_LOCKED) | |
+| `generate_manifest.php` | E1, FIX42 | ✅ NOWY |
+| `update.php` | E2, **FIX62** | ✅ NOWY |
+| `launcher-token.php` | E3, FIX12, FIX21, FIX42, FIX43 | ✅ NOWY |
+| `launcher-version.php` | E4, FIX42 | ✅ NOWY |
+| `.env` | B4, E5, E11, FIX24, **FIX49** (nie w repo) | |
 
 ### Launcher Python — `canary_test/launcher/` (5 plików, 5 nowych)
 | Plik | Fazy | Nowy? |
 |------|------|-------|
-| `launcher.py` | E6-E8 | ✅ NOWY |
-| `launcher_config.json` | E6 | ✅ NOWY |
+| `launcher.py` | E6-E8, **FIX51**, **FIX60** | ✅ NOWY |
+| `launcher_config.json` | E6, **FIX32** | ✅ NOWY |
 | `requirements.txt` | E6 | ✅ NOWY |
 | `build_launcher.bat` | E12, FIX17 | ✅ NOWY |
 | `build_launcher.sh` | E12 | ✅ NOWY |
+
+### Launcher HTML — `canary_test/html_copy/` (1 plik)
+| Plik | Fazy | Nowy? |
+|------|------|-------|
+| `launcher_config.json` | **FIX31** | |
+
+### Deployment — `canary_test/` (1 plik, nowy)
+| Plik | Fazy | Nowy? |
+|------|------|-------|
+| `deploy_api.sh` | **FIX47**, **FIX33** | ✅ NOWY |
 
 ### Dokumentacja (3 pliki)
 | Plik | Aktualizowane na bieżąco |
@@ -241,7 +312,15 @@ Zadanie uznajemy za gotowe tylko gdy:
 | `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md` | ✅ |
 | `Dokumentacja/01_Instalka_Klient/2026-03/02_DZIENNIK_BUILDOW_GHA.md` | ✅ |
 
-**RAZEM: 42 pliki** (11 C++, 6 Lua, 1 OTUI, 2 config Lua, 1 config dist, 3 dokumentacja, 9 PHP/SQL, 5 launcher Python, 4 wygenerowane)  
-**Niezacommitowane**: wszystkie oprócz A1 (`72681f84c`) i A2-A5 (`b216fe683`) + docs restoration (`d0e121d77`)  
-**Commity na branchu**: `72681f84c` (A1), `b216fe683` (A2-A5), `d0e121d77` (docs) — reszta do zacommitowania  
+**RAZEM: 47 plików** (11 C++, 6 Lua, 1 OTUI, 3 config, 3 dokumentacja, 11 PHP/SQL, 5 launcher Python, 2 launcher config, 1 deploy script, 1 cacert, 3 SSL [gitignored])
+**Niezacommitowane**: FIX24-FIX49 + FIX-C1/C2/W1 (2 audyty = ~25 fixów)
+**Commity na branchu**: `72681f84c` (A1), `b216fe683` (A2-A5), `d0e121d77` (docs), `7957e93f5` (Fazy A-E), `9bbd23f4e` (CR#3 docs), `3090e02e9` (FIX18-23)
+
+### Infrastruktura (poza git — wymagana ręczna konfiguracja na nowym serwerze)
+| Element | Opis | Audyt |
+|---------|------|-------|
+| nginx SSL | `/etc/nginx/ssl/server.crt` + `server.key`, port 443 z HTTP→HTTPS redirect | FIX45 |
+| nginx configs | `/etc/nginx/sites-enabled/myaac.conf` + `127.local.conf` | FIX45 |
+| PHP deploy | `/var/www/html/apik/v1/` — sync via `deploy_api.sh` | FIX47, FIX48 |
+| MySQL tables | `ticket_sessions`, `launch_tokens`, `ticket_nonces` | B4, E5 |
 **Stan na 2026-03-02**: commit zbiorczy ze wszystkimi zmianami A6-E12 + FIX1-FIX17 + audyty X1-X8 + CR-1..CR-4

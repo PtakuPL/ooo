@@ -75,11 +75,6 @@ public:
                                    const std::string& email,
                                    const std::string& password);
 
-    httplib::Result loginHttpJson(const std::string& host,
-                                  const std::string& path, uint16_t port,
-                                  const std::string& email,
-                                  const std::string& password);
-
     enum Result : int { Success = 200, Error = -1 };
 
 private:

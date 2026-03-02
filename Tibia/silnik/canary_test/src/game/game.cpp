@@ -3537,6 +3537,20 @@ void Game::playerMove(uint32_t playerId, Direction direction) {
 		return;
 	}
 
+	// D8: Rate-limit movement for Classic 7.4 — 1000ms between steps.
+	// UWAGA (FIX7): Plan oryginalnie nazwał to "rate-limit run (rune)", ale
+	// implementacja celowo limituje ruch (nie runy). Runy są blokowane po stronie
+	// klienta (D7 hotkey guard), a tu emulujemy wolniejsze chodzenie z 7.4.
+	// W razie zmiany wymagań — przenieść na Game::playerUseItemEx (rune use).
+	if (player->isClassic74()) {
+		const int64_t now = OTSYS_TIME();
+		const int64_t elapsed = now - player->getLastMoveTime();
+		if (elapsed < 1000) {
+			return;
+		}
+		player->setLastMoveTime(now);
+	}
+
 	player->resetLoginProtection();
 	player->resetIdleTime();
 	player->setNextWalkActionTask(nullptr);

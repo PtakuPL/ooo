@@ -22,40 +22,8 @@ header('Content-Type: application/json; charset=utf-8');
  * TICKET_SECRET w .env MUSI być identyczny z ticketSecret w config.lua Canary.
  */
 
-// ------- utils -------
-function sendError(string $msg, int $code = 200): void {
-    http_response_code($code);
-    echo json_encode(['errorCode' => 3, 'errorMessage' => $msg], JSON_UNESCAPED_SLASHES);
-    exit;
-}
-
-function json_out($data, int $code = 200): void {
-    http_response_code($code);
-    echo json_encode($data, JSON_UNESCAPED_SLASHES);
-    exit;
-}
-
-function loadEnvFiles(array $paths): array {
-    $env = [];
-    foreach ($paths as $path) {
-        if (!is_file($path)) continue;
-        $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-        foreach ($lines as $line) {
-            $line = trim($line);
-            if ($line === '' || $line[0] === '#') continue;
-            $eq = strpos($line, '=');
-            if ($eq === false) continue;
-            $k = trim(substr($line, 0, $eq));
-            $v = trim(substr($line, $eq + 1));
-            if ((str_starts_with($v, '"') && str_ends_with($v, '"')) ||
-                (str_starts_with($v, "'") && str_ends_with($v, "'"))) {
-                $v = substr($v, 1, -1);
-            }
-            $env[$k] = $v;
-        }
-    }
-    return $env;
-}
+// FIX42: Shared utilities (loadEnvFiles, sendError, json_out)
+require_once __DIR__ . '/common.php';
 
 // ------- read request -------
 $raw = file_get_contents('php://input') ?: '';
@@ -93,7 +61,9 @@ $dbport = isset($ENV['DB_PORT']) ? (int)$ENV['DB_PORT'] : 3306;
 $ticketSecret = $ENV['TICKET_SECRET'] ?? '';
 $ticketTtl    = isset($ENV['TICKET_TTL']) ? (int)$ENV['TICKET_TTL'] : 30;
 
-if ($ticketSecret === '' || $ticketSecret === 'ZMIEN_NA_LOSOWY_KLUCZ_64_ZNAKI_HEX') {
+// FIX57: Sprawdź oba placeholdery — ticket.php i .env.example używają różnych
+$secretPlaceholders = ['ZMIEN_NA_LOSOWY_KLUCZ_64_ZNAKI_HEX', 'ZMIEN_WYGENERUJ_NOWY_KLUCZ'];
+if ($ticketSecret === '' || in_array($ticketSecret, $secretPlaceholders, true)) {
     // KRYTYCZNE: brak skonfigurowanego klucza HMAC
     error_log('[ticket.php] TICKET_SECRET is not configured in .env!');
     sendError('Server configuration error.');
@@ -145,19 +115,21 @@ if ($worldName === '') {
     sendError('Missing required field: worldName.');
 }
 
-// ------- 2c. FIX20: Sprawdź world↔gameMode — worldName musi pasować do trybu -------
-// Mapowanie gameMode → dozwolone nazwy światów (takie same jak w login.php getWorldsForGameMode)
-$allowedWorldsByMode = [
-    'classic74' => ['Classic 7.4'],
-    'modern'    => ['Modern'],
+// ------- 2c. FIX20+FIX53: Sprawdź world↔gameMode — mapowanie po worldId (numeryczne) + worldName (fallback) -------
+// FIX53: Dodano worldId (numeryczne) obok worldName (string) — odporniejsze na rename/lokalizację
+// FIX58: World IDs zsynchronizowane z login.php (classic74=0, modern=1)
+$worldMap = [
+    'classic74' => ['id' => 0, 'names' => ['Classic 7.4']],
+    'modern'    => ['id' => 1, 'names' => ['Modern']],
 ];
-if (isset($allowedWorldsByMode[$effectiveGameMode])) {
-    if (!in_array($worldName, $allowedWorldsByMode[$effectiveGameMode], true)) {
+if (isset($worldMap[$effectiveGameMode])) {
+    $entry = $worldMap[$effectiveGameMode];
+    // Waliduj: worldName musi być na liście dozwolonych dla tego gameMode
+    if (!in_array($worldName, $entry['names'], true)) {
         sendError('World "' . $worldName . '" is not allowed for game mode "' . $effectiveGameMode . '".');
     }
-}
-// Jeśli gameMode nie jest w mapowaniu (nowy tryb?) — przepuść z logiem
-if (!isset($allowedWorldsByMode[$effectiveGameMode])) {
+} else {
+    // Nieznany gameMode — przepuść z logiem (forward-compatible)
     error_log("[ticket.php] FIX20 WARNING: Unknown gameMode '{$effectiveGameMode}' — worldName not validated.");
 }
 $stmt = $mysqli->prepare(

@@ -1,8 +1,18 @@
 # Plan zabezpieczenia klienta i serwera — ticket-gate + tryby gry + blokada dodawania serwerów
 **Data**: 2026-03-01  
-**Status**: � KOD GOTOWY (Fazy A–E ✅ | Audyty FIX1–FIX65 ✅ | Port do canary_test/ ✅) | Pozostało: kompilacja GHA + testy + E13  
+**Status**: 🟠 KOD WYMAGA POPRAWEK — guardy C++ w canary_test/ są uszkodzone (patrz sekcja 20)  
 **Źródło**: zarys_planu_modyfikacji_klienta.md + analiza kodu OTClient + Canary  
-**Ostatnia aktualizacja postępów**: 2026-03-03 (port C++ do canary_test, commit `98964825b`)  
+**Ostatnia aktualizacja postępów**: 2026-03-03 (audyt cross-check canary/ vs canary_test/ — wykryto 12+ błędów guardów)
+
+### Legenda ikon statusu
+| Ikona | Znaczenie |
+|---|---|
+| ✅ | Zrobione i zweryfikowane |
+| 🟢 | Gotowe, czeka na test/build |
+| 🟠 | Wymaga poprawek (znany problem) |
+| 🔴 | Bloker — nie skompiluje się / nie zadziała |
+| ⬜ | Nie rozpoczęte |
+| ⏳ | W trakcie |  
 
 ---
 
@@ -66,7 +76,7 @@
 
 ---
 
-## 2. KROK 1 — Klient: Blokada dodawania serwerów + tryby gry
+## 2. KROK 1 — Klient: Blokada dodawania serwerów + tryby gry ✅
 
 > **UWAGA**: Lista serwerów jest **widoczna** dla gracza — widzi dostępne serwery i może je wybrać.
 > Zablokowane jest **tylko** ręczne dodawanie/usuwanie/edytowanie wpisów.
@@ -234,7 +244,7 @@ UIWidget
 
 ---
 
-## 3. KROK 2 — API HTTP: Ticket-gate (token sesyjny)
+## 3. KROK 2 — API HTTP: Ticket-gate (token sesyjny) ✅
 
 > **UWAGA**: Ten krok opisuje **2-fazowy model** ticket-gate.  
 > Ticket NIE jest wydawany razem z login response — jest wydawany OSOBNO, po wyborze postaci.  
@@ -331,10 +341,10 @@ KLIENT                         API HTTP                        SERWER CANARY
 
 | Plik | Opis | Status |
 |------|------|--------|
-| `login.php` | Główny endpoint logowania — dodać gameMode + launchToken, NIE generuje ticketu | MODYFIKACJA |
-| `ticket.php` | **OSOBNY endpoint** — generowanie ticketu HMAC po wyborze postaci | NOWY |
-| `config.php` | Klucz tajny HMAC (`TICKET_SECRET`) | MODYFIKACJA |
-| `ticket_nonces` (tabela DB) | Jednorazowe nonces — `nonce VARCHAR(64) PRIMARY KEY, expires_at INT` — konsumpcja przez atomowe DELETE | NOWE |
+| `login.php` | Główny endpoint logowania — dodać gameMode + launchToken, NIE generuje ticketu | ✅ DONE |
+| `ticket.php` | **OSOBNY endpoint** — generowanie ticketu HMAC po wyborze postaci | ✅ DONE |
+| `config.php` | Klucz tajny HMAC (`TICKET_SECRET`) | ✅ DONE |
+| `ticket_nonces` (tabela DB) | Jednorazowe nonces — `nonce VARCHAR(64) PRIMARY KEY, expires_at INT` — konsumpcja przez atomowe DELETE | ✅ DONE |
 
 ### 3.5 Logika generowania ticketu na API (`ticket.php`)
 
@@ -389,7 +399,7 @@ Po naszej modyfikacji: klient Lua po wyborze postaci żąda ticketu z API i wsta
 
 ---
 
-## 4. KROK 3 — Serwer Canary: Weryfikacja ticketu
+## 4. KROK 3 — Serwer Canary: Weryfikacja ticketu 🟠 (guardy uszkodzone w canary_test/)
 
 ### 4.1 Gdzie w kodzie Canary
 
@@ -482,16 +492,16 @@ worldId = "classic74"       -- lub "modern" — identyfikator tego świata
 
 | Plik | Opis | Typ |
 |------|------|-----|
-| `canary_test/src/server/network/protocol/protocolgame.cpp` | Dodanie ticket validation przed auth + guardy D1-D10 | MODYFIKACJA |
-| `canary_test/src/server/network/protocol/ticket_validator.hpp` | Struktura i deklaracja | NOWY |
-| `canary_test/src/server/network/protocol/ticket_validator.cpp` | Implementacja walidacji HMAC + nonce | NOWY |
-| `canary_test/src/config/configmanager.cpp` | Rejestracja `TICKET_GATE_ENABLED`, `TICKET_SECRET` | MODYFIKACJA |
-| `canary_test/config.lua.dist` | Dodanie nowych kluczy | MODYFIKACJA |
-| `canary_test/src/server/CMakeLists.txt` | Dodanie ticket_validator.cpp do buildu | MODYFIKACJA |
+| `canary_test/src/server/network/protocol/protocolgame.cpp` | Dodanie ticket validation przed auth + guardy D1-D10 | 🟠 WYMAGA POPRAWEK (guardy źle rozmieszczone) |
+| `canary_test/src/server/network/protocol/ticket_validator.hpp` | Struktura i deklaracja | ✅ DONE |
+| `canary_test/src/server/network/protocol/ticket_validator.cpp` | Implementacja walidacji HMAC + nonce | 🟠 DONE ale wymaga OpenSSL w CMake |
+| `canary_test/src/config/configmanager.cpp` | Rejestracja `TICKET_GATE_ENABLED`, `TICKET_SECRET` | 🟠 DONE (brak `ticketMaxAge`, `ticketClockTolerance`, `worldId`) |
+| `canary_test/config.lua.dist` | Dodanie nowych kluczy | 🟠 DONE (brak 3 kluczy) |
+| `canary_test/src/server/CMakeLists.txt` | Dodanie ticket_validator.cpp do buildu | ✅ DONE |
 
 ---
 
-## 5. KROK 4 — Feature flags Classic 7.4
+## 5. KROK 4 — Feature flags Classic 7.4 🟠 (guardy D2-D7 źle rozmieszczone w canary_test/)
 
 ### 5.1 Lista flag
 
@@ -701,20 +711,22 @@ if (player->isClassic74()) {
 
 #### 5.3.9 Tabela podsumowująca — co blokuje klient, co serwer
 
-| Funkcja | Klient (Lua) | Serwer (C++) | Pewność |
-|---------|-------------|-------------|---------|
-| Hotkey na runę | Ukrywa opcję w UI | `parseUseWithCreature()` odrzuca runy z hotkey slot | **99%** |
-| Quick Loot | Ukrywa przycisk | `parseQuickLoot()` → return | **100%** |
-| Auto Loot | Ukrywa opcję | `parseQuickLoot()` → return | **100%** |
-| Market | Nie ładuje modułu | `parseMarket*()` → return | **100%** |
-| Action Bar | Ukrywa pasek | Serwer ignoruje pakiety action bar | **100%** |
-| Prey | Ukrywa panel | `parsePrey*()` → return | **100%** |
-| Wheel | Ukrywa panel | `parseWheel*()` → return | **100%** |
-| Smart Equip | Blokuje Ctrl+klik | Odrzuca auto-equip opcode | **100%** |
-| Rune cooldown | Komunikat "poczekaj" | 1000ms min między użyciami | **100%** |
-| Bestiary | Ukrywa panel | Opcjonalnie: blokuj parseBestiary | **95%** |
+> ⚠️ **UWAGA**: Poniższe "pewności" dotyczą **canary/** (referencja). W **canary_test/** guardy są uszkodzone — patrz sekcja 20.
 
-> **Wniosek**: Z serwerową blokadą nawet **w pełni zmodyfikowany klient** NIE może obejść ograniczeń Classic 7.4. Pakiety są odrzucane zanim dotą do logiki gry.
+| Funkcja | Klient (Lua) | Serwer (C++) | canary/ | canary_test/ |
+|---------|-------------|-------------|---------|-------------|
+| Hotkey na runę | Ukrywa opcję w UI | `parseUseWithCreature()` odrzuca runy z hotkey slot | ✅ OK | 🔴 brak guarda + złe zmienne |
+| Quick Loot | Ukrywa przycisk | `parseQuickLoot()` → return | ✅ OK | 🔴 brak guarda (jest w złej metodzie) |
+| Auto Loot | Ukrywa opcję | `parseQuickLoot()` → return | ✅ OK | 🔴 guard w `parseLookAt` zamiast właściwej |
+| Market | Nie ładuje modułu | `parseMarket*()` → return | ✅ OK | 🔴 osierocony + brak w `parseMarketLeave` |
+| Action Bar | Ukrywa pasek | Serwer ignoruje pakiety action bar | ✅ N/A | ✅ N/A |
+| Prey | Ukrywa panel | `parsePrey*()` → return | ✅ OK | 🔴 guard w pętli bestiary |
+| Wheel | Ukrywa panel | `parseWheel*()` → return | ✅ OK | ✅ OK |
+| Smart Equip | Blokuje Ctrl+klik | Odrzuca auto-equip opcode | ✅ OK | 🔴 guard w `default:` case |
+| Rune cooldown | Komunikat "poczekaj" | 1000ms min między użyciami | ✅ OK | ✅ OK |
+| Bestiary | Ukrywa panel | Opcjonalnie: blokuj parseBestiary | ✅ OK | ✅ OK |
+
+> **Wniosek**: W **canary/** guardy są poprawne. W **canary_test/** 6/10 guardów jest uszkodzonych — WYMAGA NAPRAWY przed buildem.
 
 ---
 
@@ -730,7 +742,7 @@ if (player->isClassic74()) {
 | A5 | Ukryć pola serwera/portu/protokołu/http | ŁATWE | 30min | ✅ DONE (commit `b216fe683`) |
 | A6 | Feature flags: blokada hotkey items/runes w kliencie | ŚREDNIE | 2h | ✅ DONE (hotkeys_manager.lua) |
 | A7 | Feature flags: ukrycie modułów (action bar, market, itp.) | ŚREDNIE | 2h | ⬜ N/A — blokowane server-side (Faza D) |
-| A8 | Testowanie na Windows | - | 2h | ⬜ TODO (wymaga push + GHA build) |
+| A8 | Testowanie na Windows | - | 2h | ⏳ CZEKA na GHA build |
 | | **Suma fazy A** | | **~10h** | **6/8 DONE** |
 
 ### Faza B — API HTTP ticket-gate 2-fazowy (tydzień 2) ✅ GOTOWE
@@ -745,35 +757,36 @@ if (player->isClassic74()) {
 | B7 | Testowanie flow: login → lista postaci → ticket → connect | - | 3h | ✅ DONE (smoke test CLI: HMAC verified) |
 | | **Suma fazy B** | | **~14h** | **7/7 DONE** |
 
-### Faza C — Serwer Canary ticket-gate (tydzień 3) ✅ GOTOWE
+### Faza C — Serwer Canary ticket-gate (tydzień 3) 🟠 KOD GOTOWY, WYMAGA POPRAWEK GUARDÓW
 | # | Zadanie | Trudność | Czas | Status |
 |---|---------|----------|------|--------|
 | C1 | Nowy plik `ticket_validator.cpp/.h` | ŚREDNIE | 4h | ✅ DONE (ticket_validator.hpp/cpp) |
-| C2 | Integracja z `protocolgame.cpp` | ŚREDNIE | 3h | ✅ DONE (protocolgame.cpp) |
-| C3 | Nowe klucze w `configmanager.cpp` | ŁATWE | 1h | ✅ DONE (config_enums.hpp + configmanager.cpp) |
-| C4 | Konfiguracja w `config.lua` | ŁATWE | 15min | ✅ DONE (config.lua.dist + config.lua) |
+| C2 | Integracja z `protocolgame.cpp` | ŚREDNIE | 3h | 🟠 DONE w canary/ — 🔴 USZKODZONE w canary_test/ |
+| C3 | Nowe klucze w `configmanager.cpp` | ŁATWE | 1h | 🟠 DONE (brak 3 kluczy: ticketMaxAge, ticketClockTolerance, worldId) |
+| C4 | Konfiguracja w `config.lua` | ŁATWE | 15min | 🟠 DONE (brak 3 kluczy w .dist) |
 | C5 | Nonce store (in-memory lub DB) | ŚREDNIE | 2h | ✅ DONE (in-memory w ticket_validator.cpp) |
-| C6 | Kompilacja i test | - | 3h | ⬜ TODO (wymaga GHA build z `98964825b`) |
-| | **Suma fazy C** | | **~13h** | **5/6 DONE** |
+| C6 | Kompilacja i test | - | 3h | ⏳ CZEKA na naprawę guardów + GHA build |
+| | **Suma fazy C** | | **~13h** | **3/6 ✅ + 2 🟠 + 1 ⏳** |
 
-### Faza D — Feature flags serwer Canary (tydzień 4) ✅ GOTOWE
+### Faza D — Feature flags serwer Canary (tydzień 4) 🟠 GUARDY USZKODZONE W canary_test/
 
 > Wszystkie guardy opisane w sekcji 5.3. Tryb gracza pochodzi z ticketu HMAC (Faza C).
+> ⚠️ **UWAGA**: Guardy w `canary/` są poprawne. W `canary_test/` port był uszkodzony — patrz sekcja 20.
 
-| # | Zadanie | Trudność | Czas | Szczegóły (sekcja 5.3.x) | Status |
-|---|---------|----------|------|--------------------------|--------|
-| D1 | `GameMode` enum + pole w `Player` + setter z ticketu | ŁATWE | 1h | 5.3.1 | ✅ DONE (PlayerGameMode_t + player.hpp + protocolgame.cpp) |
-| D2 | Blokada rune-on-creature hotkey (`parseUseWithCreature`) | ŚREDNIE | 3h | 5.3.2 — heurystyka `fromPos.x==0xFFFF` | ✅ DONE (+ parseUseItemEx) |
-| D3 | Blokada Quick Loot + Auto Loot (`parseQuickLoot*`) | ŁATWE | 1h | 5.3.3 | ✅ DONE (3 metody) |
-| D4 | Blokada Market — 5 metod `parseMarket*()` | ŁATWE | 1h | 5.3.4 | ✅ DONE (5 metod) |
-| D5 | Blokada Prey System (`parsePrey*`) | ŁATWE | 30min | 5.3.5 | ✅ DONE (parsePreyAction) |
-| D6 | Blokada Wheel of Destiny (`parseWheel*`) | ŁATWE | 30min | 5.3.6 | ✅ DONE (3 metody) |
-| D7 | Blokada Smart Equip (auto-equip opcode) | ŁATWE | 30min | 5.3.7 | ✅ DONE (parseHotkeyEquip) |
-| D8 | Rate-limit użycia run (1000ms cooldown classic74) | ŚREDNIE | 1.5h | 5.3.8 | ✅ DONE (Game::playerMove + lastMoveTime_) |
-| D9 | Blokada Action Bar packets | ŁATWE | 30min | — | ⬜ N/A (brak action bar w codebase) |
-| D10 | Blokada Bestiary (opcjonalne) | ŁATWE | 30min | 5.3.9 | ✅ DONE (3 metody parseBestiary*) |
-| D11 | Pełny test integracyjny — każda blokada server-side | - | 4h | Tabela 5.3.9 | ⬜ TODO (wymaga kompilacji `98964825b`) |
-| | **Suma fazy D** | | **~14h** | | **9/11 DONE** |
+| # | Zadanie | Trudność | Czas | Szczegóły (sekcja 5.3.x) | canary/ | canary_test/ |
+|---|---------|----------|------|--------------------------|---------|-------------|
+| D1 | `GameMode` enum + pole w `Player` + setter z ticketu | ŁATWE | 1h | 5.3.1 | ✅ | ✅ |
+| D2 | Blokada rune-on-creature hotkey (`parseUseWithCreature`) | ŚREDNIE | 3h | 5.3.2 | ✅ | 🔴 złe zmienne + brak guarda w parseUseWithCreature |
+| D3 | Blokada Quick Loot + Auto Loot (`parseQuickLoot*`) | ŁATWE | 1h | 5.3.3 | ✅ | 🔴 guard w złych metodach (parseUpdateContainer, parseLookAt) |
+| D4 | Blokada Market — 5 metod `parseMarket*()` | ŁATWE | 1h | 5.3.4 | ✅ | 🔴 osierocony guard + brak w parseMarketLeave |
+| D5 | Blokada Prey System (`parsePrey*`) | ŁATWE | 30min | 5.3.5 | ✅ | 🔴 guard w pętli bestiary |
+| D6 | Blokada Wheel of Destiny (`parseWheel*`) | ŁATWE | 30min | 5.3.6 | ✅ | ✅ |
+| D7 | Blokada Smart Equip (auto-equip opcode) | ŁATWE | 30min | 5.3.7 | ✅ | 🔴 guard w default: case zamiast parseHotkeyEquip |
+| D8 | Rate-limit użycia run (1000ms cooldown classic74) | ŚREDNIE | 1.5h | 5.3.8 | ✅ | ✅ |
+| D9 | Blokada Action Bar packets | ŁATWE | 30min | — | ⬜ N/A | ⬜ N/A |
+| D10 | Blokada Bestiary (opcjonalne) | ŁATWE | 30min | 5.3.9 | ✅ | ✅ |
+| D11 | Pełny test integracyjny | - | 4h | Tabela 5.3.9 | ⏳ CZEKA | ⏳ CZEKA |
+| | **Suma fazy D** | | **~14h** | | **9/11 ✅** | **4/11 ✅ + 5 🔴** |
 
 ### Łączny szacunek: ~49h roboczych (5 tygodni)
 
@@ -831,25 +844,29 @@ if (player->isClassic74()) {
 
 | Zależność | Do czego | Czy mamy |
 |-----------|---------|----------|
-| OpenSSL / libcrypto | HMAC-SHA256 w C++ (serwer) | TAK — Canary już linkuje OpenSSL |
-| json library (C++) | Parsowanie ticketu na serwerze | TAK — Canary używa nlohmann/json |
-| PHP hash_hmac | Generowanie ticketu w API | TAK — wbudowane w PHP |
-| MySQL | Tabela nonces | TAK — istniejąca baza |
+| OpenSSL / libcrypto | HMAC-SHA256 w C++ (serwer) | 🔴 **NIE** — ticket_validator.cpp używa `<openssl/hmac.h>` ale OpenSSL NIE jest w vcpkg.json ani CMake. Transitywnie może być przez CURL — do zweryfikowania |
+| json library (C++) | Parsowanie ticketu na serwerze | ✅ TAK — Canary używa nlohmann/json |
+| PHP hash_hmac | Generowanie ticketu w API | ✅ TAK — wbudowane w PHP |
+| MySQL | Tabela nonces | ✅ TAK — istniejąca baza |
 
 ---
 
 ## 10. Docelowy test akceptacyjny
 
-1. ✅ Gracz uruchamia klienta → widzi ekran wyboru trybu
-2. ✅ Wybiera "Classic 7.4" → wypełnia login → loguje się
-3. ✅ Widzi TYLKO postaci z serwera 7.4 (filtrowanie worldów)
-4. ✅ Nie ma opcji dodania/edycji serwera
-5. ✅ Na serwerze 7.4: hotkey na runę → komunikat "niedostępne"
-6. ✅ Na serwerze 7.4: brak action bar, quick loot, market
-7. ✅ Gracz z innego klienta (np. czysty OTClient) → próba loginu → odrzucona (brak ticketu)
-8. ✅ Stary ticket (>30s) → odrzucony
-9. ✅ Ten sam ticket użyty 2x → odrzucony (nonce)
-10. ✅ Gracz w trybie "Modern" → nie łączy się z serwerem 7.4
+> ⚠️ **STATUS**: To są **docelowe scenariusze testowe** — większość NIE ZOSTAŁA jeszcze przetestowana (brak działającego builda).
+
+| # | Scenariusz | KOD | TEST |
+|---|-----------|-----|------|
+| 1 | Gracz uruchamia klienta → widzi ekran wyboru trybu | ✅ | ⏳ |
+| 2 | Wybiera "Classic 7.4" → wypełnia login → loguje się | ✅ | ⏳ |
+| 3 | Widzi TYLKO postaci z serwera 7.4 (filtrowanie worldów) | ✅ | ⏳ |
+| 4 | Nie ma opcji dodania/edycji serwera | ✅ | ⏳ |
+| 5 | Na serwerze 7.4: hotkey na runę → komunikat "niedostępne" | 🟠 | ⏳ |
+| 6 | Na serwerze 7.4: brak action bar, quick loot, market | 🟠 | ⏳ |
+| 7 | Gracz z innego klienta (np. czysty OTClient) → odrzucona (brak ticketu) | ✅ | ⏳ |
+| 8 | Stary ticket (>30s) → odrzucony | ✅ | ⏳ |
+| 9 | Ten sam ticket użyty 2x → odrzucony (nonce) | ✅ | ⏳ |
+| 10 | Gracz w trybie "Modern" → nie łączy się z serwerem 7.4 | ✅ | ⏳ |
 
 ---
 
@@ -1395,15 +1412,15 @@ KLIENT                         API HTTP                        SERWER CANARY
 
 | # | Zadanie | Trudność | Czas | Faza | Status |
 |---|---------|----------|------|------|--------|
-| X1 | 2-fazowy ticket: endpoint `ticket.php` + klient Lua/C++ | WYSOKIE | 6h | B | ✅ DONE (B5+B6 pokrywają klienta; ticket.php = B3 ⬜ TODO) |
-| X2 | Włączenie TLS verification + usunięcie HTTP fallback w `httplogin.cpp` | ŚREDNIE | 2h | A | ✅ DONE (httplogin.cpp — hard-fail TLS) |
-| X3 | Pełna blokada `ServerList.init()` — ignoruj `g_settings` gdy locked | ŁATWE | 1h | A | ✅ DONE (A4 — serverlist.lua) |
-| X4 | Atomowy nonce (DELETE z affected_rows lub mutex) | ŁATWE | 1h | C | ✅ DONE (in-memory nonce store w ticket_validator.cpp) |
-| X5 | Nowa ścieżka `authType="ticket"` w `protocolgame.cpp` | WYSOKIE | 4h | C | ✅ DONE (C2 — protocolgame.cpp ticket validation) |
-| X6 | Dodanie `gameMode` do `httpLogin()` C++ + Lua binding | ŚREDNIE | 3h | A | ✅ DONE (B6 — luafunctions.cpp + httplogin.cpp) |
-| X7 | Usunięcie logowania haseł/ticketów w `httplogin.cpp` | ŁATWE | 30min | A | ✅ DONE (body usunięte z logów; CR-3: headers wciąż logowane) |
-| X8 | Dodanie OpenSSL do vcpkg.json + CanaryLib.cmake | ŁATWE | 30min | C | ⬜ TODO (OpenSSL już jest dep transitywny przez CURL, ale explicit link do zweryfikowania przy kompilacji) |
-| | **Suma dodatkowych zadań** | | **~18h** | | **7/8 DONE** |
+| X1 | 2-fazowy ticket: endpoint `ticket.php` + klient Lua/C++ | WYSOKIE | 6h | B | ✅ DONE |
+| X2 | Włączenie TLS verification + usunięcie HTTP fallback w `httplogin.cpp` | ŚREDNIE | 2h | A | ✅ DONE |
+| X3 | Pełna blokada `ServerList.init()` — ignoruj `g_settings` gdy locked | ŁATWE | 1h | A | ✅ DONE |
+| X4 | Atomowy nonce (DELETE z affected_rows lub mutex) | ŁATWE | 1h | C | ✅ DONE |
+| X5 | Nowa ścieżka `authType="ticket"` w `protocolgame.cpp` | WYSOKIE | 4h | C | ✅ DONE |
+| X6 | Dodanie `gameMode` do `httpLogin()` C++ + Lua binding | ŚREDNIE | 3h | A | ✅ DONE |
+| X7 | Usunięcie logowania haseł/ticketów w `httplogin.cpp` | ŁATWE | 30min | A | ✅ DONE |
+| X8 | Dodanie OpenSSL do vcpkg.json + CanaryLib.cmake | ŁATWE | 30min | C | 🔴 TODO — brak w vcpkg.json i CMake, wymagane do kompilacji ticket_validator |
+| | **Suma dodatkowych zadań** | | **~18h** | | **7/8 DONE — 1 🔴** |
 
 ### Nowy łączny szacunek (Fazy A-D + audyt): ~63h roboczych
 
@@ -2213,24 +2230,26 @@ resp = requests.get("https://...", verify=True, timeout=10)
 
 ---
 
-## 17. Faza E — Plan implementacji launchera
+## 17. Faza E — Plan implementacji launchera ✅ (12/13)
 
 | # | Zadanie | Trudność | Czas | Status |
 |---|---------|----------|------|--------|
-| E1 | Skrypt `generate_manifest.php` — generowanie manifestu z katalogu | ŁATWE | 1h | ✅ |
-| E2 | Endpoint `GET /api/update.php` — zwraca manifest | ŁATWE | 1h | ✅ |
-| E3 | Endpoint `POST /api/launcher-token.php` — wydaje token | ŚREDNIE | 2h | ✅ |
-| E4 | Endpoint `GET /api/launcher-version.php` — wersja launchera | ŁATWE | 30min | ✅ |
-| E5 | Tabela `launch_tokens` w MySQL + cleanup cron | ŁATWE | 30min | ✅ |
-| E6 | Launcher Python: sprawdzanie plików + pobieranie | ŚREDNIE | 4h | ✅ |
-| E7 | Launcher Python: GUI (tkinter) + pasek postępu | ŚREDNIE | 3h | ✅ |
-| E8 | Launcher Python: launch-token + uruchomienie klienta | ŁATWE | 1h | ✅ |
-| E9 | Launcher: self-update (sprawdzanie wersji launchera) | ŚREDNIE | 2h | ✅ |
-| E10 | Klient: obsługa `OTC_LAUNCH_TOKEN` env variable + C++ + Lua | ŁATWE | 1h | ✅ |
-| E11 | API `login.php`: walidacja `launchToken` przy loginie | ŚREDNIE | 2h | ✅ |
-| E12 | Smoke test: launch-token flow (CLI) | ŁATWE | 1h | ✅ |
-| E13 | Hosting plików klienta na serwerze WWW | ŁATWE | 1h | ⬜ |
-| | **Suma Fazy E** | | **~20h** | **12/13** |
+| E1 | Skrypt `generate_manifest.php` | ŁATWE | 1h | ✅ DONE |
+| E2 | Endpoint `GET /api/update.php` | ŁATWE | 1h | ✅ DONE |
+| E3 | Endpoint `POST /api/launcher-token.php` | ŚREDNIE | 2h | ✅ DONE |
+| E4 | Endpoint `GET /api/launcher-version.php` | ŁATWE | 30min | ✅ DONE |
+| E5 | Tabela `launch_tokens` w MySQL + cleanup cron | ŁATWE | 30min | ✅ DONE |
+| E6 | Launcher Python: sprawdzanie plików + pobieranie | ŚREDNIE | 4h | ✅ DONE |
+| E7 | Launcher Python: GUI (tkinter) + pasek postępu | ŚREDNIE | 3h | ✅ DONE |
+| E8 | Launcher Python: launch-token + uruchomienie klienta | ŁATWE | 1h | ✅ DONE |
+| E9 | Launcher: self-update | ŚREDNIE | 2h | ✅ DONE |
+| E10 | Klient: obsługa `OTC_LAUNCH_TOKEN` env variable + C++ + Lua | ŁATWE | 1h | ✅ DONE |
+| E11 | API `login.php`: walidacja `launchToken` przy loginie | ŚREDNIE | 2h | ✅ DONE |
+| E12 | Smoke test: launch-token flow (CLI) | ŁATWE | 1h | ✅ DONE |
+| E13 | Hosting plików klienta na serwerze WWW | ŁATWE | 1h | ⬜ TODO |
+| **PYINST** | **Build launchera PyInstaller** (.exe/.linux) | ŚREDNIE | 2h | ⬜ TODO |
+| **CFG** | **Naprawa `launcher_config.json`** — klucze niezgodne z `launcher.py` | ŁATWE | 15min | 🔴 BLOKER (patrz audyt #14) |
+| | **Suma Fazy E** | | **~22h** | **12/15 ✅ + 2 ⬜ + 1 🔴** |
 
 ---
 
@@ -2266,27 +2285,30 @@ resp = requests.get("https://...", verify=True, timeout=10)
 
 ## 19. Łączna estymacja — wszystkie fazy
 
-| Faza | Opis | Czas | Status |
-|------|------|------|--------|
-| A | Klient UX: tryby, blokada serwerów | ~10h | ✅ GOTOWE (6/8, A7 N/A, A8 test) |
-| B | API HTTP: ticket-gate 2-fazowy | ~14h | ✅ GOTOWE (7/7 — login.php, ticket.php, schema, B7 smoke test) |
-| C | Serwer Canary: weryfikacja ticketu | ~13h | ✅ GOTOWE (5/6, C6 test) |
-| D | Feature flags serwer — TWARDE blokady Classic 7.4 (sekcja 5.3) | ~14h | ✅ GOTOWE (9/11, D9 N/A, D11 test) |
-| Audyt (X1-X8) | Korekty po review kodu | ~18h | ✅ GOTOWE (7/8, X8 przy kompilacji) |
-| FIX1-FIX65 | Poprawki z 7 audytów Codex/ChatGPT | ~15h | ✅ GOTOWE (65 fixów) |
-| **E** | **Launcher z auto-update** | **~20h** | **✅ GOTOWE (E1-E12)** |
-| **Port** | **Port C++ z canary/ do canary_test/** | **~3h** | **✅ GOTOWE (`98964825b`)** |
-| | **ŁĄCZNIE** | **~107h (~10 tyg.)** | **~95% DONE** |
+| Faza | Opis | Czas | canary/ | canary_test/ |
+|------|------|------|---------|-------------|
+| A | Klient UX: tryby, blokada serwerów | ~10h | ✅ 6/8 | ✅ 6/8 |
+| B | API HTTP: ticket-gate 2-fazowy | ~14h | ✅ 7/7 | ✅ 7/7 |
+| C | Serwer Canary: weryfikacja ticketu | ~13h | ✅ 5/6 | 🟠 3/6 (guardy uszkodzone) |
+| D | Feature flags serwer — blokady Classic 7.4 | ~14h | ✅ 9/11 | 🔴 4/11 (5 guardów złe) |
+| Audyt (X1-X8) | Korekty po review kodu | ~18h | ✅ 7/8 | 🔴 brakuje X8 (OpenSSL) |
+| FIX1-FIX65 | Poprawki z 7-audytów Codex/ChatGPT | ~15h | ✅ 65 fixów | ✅ 65 fixów |
+| **E** | **Launcher z auto-update** | **~22h** | ✅ 12/15 | 🔴 config keys mismatch |
+| **Port** | **Port C++ z canary/ do canary_test/** | **~3h** | — | 🟠 uszkodzony (guardy) |
+| | **ŁĄCZNIE** | **~109h** | **~95%** | **~75%** |
 
 ### ⬜ CO JESZCZE BRAKUJE (lista otwartych zadań)
 
-#### Priorytet 1 — KRYTYCZNE (blokery uruchomienia)
-| # | Zadanie | Opis | Szacowany czas |
-|---|---------|------|----------------|
-| A8 | Kompilacja klienta OTClient | Push `98964825b` → GHA workflow → weryfikacja kompilacji Windows + Linux | 2-4h |
-| C6 | Kompilacja serwera Canary | GHA workflow `build-canary.yml` → weryfikacja kompilacji C++ (ticket_validator, protocolgame) | 2-4h |
-| X8 | Explicit OpenSSL linkowanie | Weryfikacja przy kompilacji — HMAC-SHA256 w ticket_validator wymaga OpenSSL::Crypto. Może być transitywne z CURL. | 30min |
-| **DB** | **Schema SQL na produkcji** | Tabele `ticket_nonces`, `ticket_sessions`, `launch_tokens`, `manifest_versions` na serwerze produkcyjnym | 30min |
+#### Priorytet 1 — 🔴 KRYTYCZNE (blokery kompilacji / uruchomienia)
+| # | Zadanie | Opis | Szacowany czas | Status |
+|---|---------|------|----------------|--------|
+| **GUARD-FIX** | **Naprawa guardów D2-D7 w canary_test/** | Skopiować poprawne guardy z canary/ do canary_test/protocolgame.cpp (11 lokalizacji) | 2-3h | 🔴 TODO |
+| X8 | Explicit OpenSSL w vcpkg.json + CMake | `#include <openssl/hmac.h>` wymaga OpenSSL::Crypto — dodać do vcpkg.json i target_link_libraries | 30min | 🔴 TODO |
+| **CFG-KEY** | **Brakujące 3 klucze config** | ticketMaxAge, ticketClockTolerance, worldId — config_enums.hpp + configmanager.cpp + config.lua.dist | 30min | 🔴 TODO |
+| **LNCFG** | **Naprawić launcher_config.json** | Klucze apiUrl→apiBaseUrl, clientFolder→clientDir, clientExecutable→clientExe (match launcher.py) | 15min | 🔴 TODO |
+| A8 | Kompilacja klienta OTClient | Push → GHA workflow → weryfikacja kompilacji Windows + Linux | 2-4h | ⏳ CZEKA na GUARD-FIX |
+| C6 | Kompilacja serwera Canary | GHA workflow → weryfikacja kompilacji C++ (ticket_validator, protocolgame) | 2-4h | ⏳ CZEKA na GUARD-FIX + X8 |
+| **DB** | **Schema SQL na produkcji** | Tabele `ticket_nonces`, `ticket_sessions`, `launch_tokens`, `manifest_versions` | 30min | ⬜ TODO |
 
 #### Priorytet 2 — WYSOKIE (wymagane do pełnej funkcjonalności)
 | # | Zadanie | Opis | Szacowany czas |
@@ -2320,7 +2342,7 @@ resp = requests.get("https://...", verify=True, timeout=10)
 3. ~~**Faza E** (launcher)~~ — ✅ ZROBIONE
 4. ~~**Port do canary_test/**~~ — ✅ ZROBIONE (`98964825b`)
 5. ~~**FIX1-FIX65** (65 audytowych poprawek)~~ — ✅ ZROBIONE
-6. **TERAZ**: GHA kompilacja (A8 + C6) → fix błędów kompilacji → test integracyjny (D11)
+6. **🔴 TERAZ**: Naprawa guardów canary_test/ (GUARD-FIX) → OpenSSL (X8) → config keys (CFG-KEY) → launcher_config (LNCFG) → GHA kompilacja (A8+C6)
 7. **POTEM**: E13 hosting + PyInstaller build + .env produkcja + schema SQL
 8. **DOCELOWO**: Let's Encrypt, cert pinning, metrics, challenge-response
 
@@ -2342,4 +2364,52 @@ resp = requests.get("https://...", verify=True, timeout=10)
 *Zaktualizowany: 2026-03-02 (FIX9-FIX17 — 8 bugów z 2. audytu Codex: Wheel D6 guards, auth-after-ticket bypass, manifest bypass, worldName binding, ServerList empty, CLIENT_LOCKED drift, icon.ico)*  
 *Źródło: zarys_planu_modyfikacji_klienta.md + analiza kodu + review ChatGPT ×3 + review Codex ×5 + 2× Codex FIX session*  
 *Zaktualizowany: 2026-03-03 (port C++ canary/ → canary_test/, commit `98964825b`, sekcja 19 rozszerzona o "Co brakuje", ścieżki plików zaktualizowane)*  
-*Następny krok: GHA kompilacja (`98964825b`) → fix błędów → testy A8/C6/D11 → PyInstaller build → hosting plików (E13)*
+*Zaktualizowany: 2026-03-03 (sekcja 20 — audyt cross-check canary/ vs canary_test/, ikony statusu ✅🟠🔴⏳ w całym dokumencie, korekta statusów Faz C/D/E)*  
+*Następny krok: GUARD-FIX → OpenSSL (X8) → config keys → launcher_config → GHA kompilacja → testy A8/C6/D11*
+
+---
+
+## 20. 🔴 Audyt cross-check: canary/ vs canary_test/ (2026-03-03)
+
+> **Źródło**: Cross-check wykonany przez Copilot (Claude) na podstawie pliku `03_AUDYT_PRAC_COPILOT_CLAUDE.md` (20 findings Codex, 3 rundy) oraz bezpośredniego porównania kodu `canary/` vs `canary_test/`.
+> **Wniosek**: Codex ma rację — canary_test/ ma poważne błędy, których canary/ nie ma.
+
+### 20.1 🔴 KRYTYCZNE — blokery kompilacji (nie przejdzie build)
+
+| # | Problem (audyt) | Potwierdz.? | Szczegóły |
+|---|-----------------|-------------|-----------|
+| #1, #2 | `parseUseItem` używa `fromPos`, `fromItemId` — niezdefiniowane | ✅ TAK | `protocolgame.cpp:1992` — zmienne lokalne to `pos`, `itemId`. W canary/ ten guard nie istnieje w parseUseItem (plan: blokuj w parseUseWithCreature) |
+| #2 | `parseUseItemEx` używa `itemId` — niezdefiniowane | ✅ TAK | `protocolgame.cpp:2012` — lokalna to `fromItemId`. W canary/ L1904: poprawnie `Items[fromItemId]` |
+| #3, #8 | D4 Market guard osierocony (poza funkcją) | ✅ TAK | `protocolgame.cpp:3409` — blok `if (isClassic74Blocked("Market"))` stoi MIĘDZY `parsePreyAction()` a `parseSendResourceBalance()`. NIE jest wewnątrz żadnej metody. W canary/ poprawnie wewnątrz `parseMarketLeave()` |
+
+### 20.2 🟠 WYSOKIE — guardy w złych metodach
+
+| # | Problem | Potwierdz.? | canary_test/ | canary/ (poprawne) |
+|---|---------|-------------|-------------|-------------------|
+| #3 | D5 Prey guard w pętli bestiary | ✅ TAK | `protocolgame.cpp:3332` — wewnątrz pętli for w `parseBestiarySendCreatures` | `protocolgame.cpp:3286` — na wejściu `parsePreyAction()` |
+| #4 | Brak guarda `parseUseWithCreature` | ✅ TAK | `protocolgame.cpp:2026` — zerowy guard | `protocolgame.cpp:1922` — guard D2 poprawnie |
+| #4 | Brak guarda `parseQuickLoot` | ✅ TAK | `protocolgame.cpp:2088` — brak guarda | `protocolgame.cpp:1985` — guard D3 poprawnie |
+| #4 | Brak guarda `parsePreyAction` | ✅ TAK | `protocolgame.cpp:3389` — brak guarda | `protocolgame.cpp:3286` — guard D5 poprawnie |
+| #4 | Brak guarda `parseMarketLeave` | ✅ TAK | `protocolgame.cpp:3466` — brak guarda | `protocolgame.cpp:3363` — guard D4 poprawnie |
+| #8 | D3 Quick Loot guard w `parseUpdateContainer` | ✅ TAK | `protocolgame.cpp:2045` — blokuje update container | canary/ nie ma guarda na parseUpdateContainer (poprawnie) |
+| #8 | D3 Auto Loot guard w `parseLookAt` | ✅ TAK | `protocolgame.cpp:2074` — blokuje PATRZENIE na przedmioty! | canary/ nie ma guarda na parseLookAt (poprawnie) |
+| D7 | Smart Equip guard w `default:` case switcha | ✅ TAK | `protocolgame.cpp:1606` — wewnątrz `default:` zamiast w `parseHotkeyEquip` | `protocolgame.cpp:1519` — wewnątrz `parseHotkeyEquip()` poprawnie |
+
+### 20.3 🟡 ŚREDNIE-WYSOKIE — konfiguracja / API
+
+| # | Problem | Potwierdz.? | Szczegóły |
+|---|---------|-------------|-----------|
+| #14 | Niespójny `launcher_config.json` vs `launcher.py` | ✅ TAK | JSON: `apiUrl`, `clientFolder`, `clientExecutable`. Launcher.py szuka: `apiBaseUrl`, `clientDir`, `clientExe` → `KeyError` at runtime |
+| #20 | Brak `ticketMaxAge`, `ticketClockTolerance`, `worldId` w config | ✅ TAK | Tylko `ticketGateEnabled` + `ticketSecret` zarejestrowane. Plan wymaga 5 kluczy |
+| X8 | Brak OpenSSL w `vcpkg.json` / CMake | ✅ TAK | `ticket_validator.cpp` robi `#include <openssl/hmac.h>` ale zero referencji do OpenSSL w vcpkg.json ani CMake. Build zależy od transitywnej zależności CURL |
+
+### 20.4 Podsumowanie statusu REALNEGO
+
+| Warstwa | Status REALNY | Blokery |
+|---------|--------------|---------|
+| Serwer C++ (canary_test/) | 🔴 NIE SKOMPILUJE SIĘ | Niezdefiniowane zmienne (`fromPos`/`fromItemId`/`itemId`), osierocony kod poza funkcją |
+| Serwer C++ guardy D2-D7 | 🟠 Źle rozmieszczone | 7+ guardów w ZŁYCH metodach; 4 metody BEZ guardów |
+| Serwer C++ (canary/) | 🟢 Poprawny | Guardy we właściwych metodach, zmienne poprawne |
+| Launcher config | 🟠 Niespójny | `KeyError` przy uruchomieniu `launcher.py` |
+| OpenSSL linkowanie | 🟠 Niejawne | Zależy od transitywnej zależności CURL |
+| Config ticket-gate | 🟡 Niepełny | Brak 3 z 5 kluczy z planu |

@@ -94,3 +94,6 @@ jobs:
 
       - name: Run integration tests (launcher-core)
         run: cargo test --package launcher-core --test integration_tests --verbose
+
+      - name: Run helper tests (launcher-helper)
+        run: cargo test --package launcher-helper --verbose

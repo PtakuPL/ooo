@@ -532,3 +532,237 @@ fn chrono_utc_now() -> String {
 
     format!("{yr:04}-{mon:02}-{d:02}T{h:02}:{m:02}:{s:02}Z")
 }
+
+// ─────────────────────────────────────────────
+// LR-044: Download Center — get_installer_catalog
+// ─────────────────────────────────────────────
+
+#[tauri::command]
+pub async fn get_installer_catalog(
+    state: State<'_, AppState>,
+) -> Result<serde_json::Value, String> {
+    let (api_url, channel) = {
+        let guard = state.inner.lock().map_err(|e| e.to_string())?;
+        (guard.api_base_url.clone(), guard.channel.clone())
+    };
+
+    let config = launcher_api::client::ApiClientConfig {
+        base_url: api_url,
+        ..Default::default()
+    };
+    let client = ApiClient::new(config).map_err(|e| e.to_string())?;
+
+    let catalog = client
+        .fetch_installer_catalog(&channel)
+        .await
+        .map_err(|e| format!("Błąd pobierania katalogu: {e}"))?;
+
+    serde_json::to_value(&catalog).map_err(|e| e.to_string())
+}
+
+// ─────────────────────────────────────────────
+// LR-045: download_and_verify_artifact
+// ─────────────────────────────────────────────
+
+#[tauri::command]
+pub async fn download_and_verify_artifact(
+    state: State<'_, AppState>,
+    url: String,
+    filename: String,
+    expected_sha256: String,
+    expected_size: u64,
+) -> Result<serde_json::Value, String> {
+    let (api_url, launcher_data) = {
+        let guard = state.inner.lock().map_err(|e| e.to_string())?;
+        (guard.api_base_url.clone(), guard.launcher_data_dir.clone())
+    };
+
+    let config = launcher_api::client::ApiClientConfig {
+        base_url: api_url,
+        ..Default::default()
+    };
+    let client = ApiClient::new(config).map_err(|e| e.to_string())?;
+
+    // Pobierz plik
+    let data = client
+        .download_file(&url)
+        .await
+        .map_err(|e| format!("Pobieranie nie powiodło się: {e}"))?;
+
+    // Zweryfikuj hash i rozmiar
+    let result = launcher_core::artifact_verify::verify_artifact_strict(
+        &data,
+        &filename,
+        &expected_sha256,
+        Some(expected_size),
+    )
+    .map_err(|e| format!("Weryfikacja nie powiodła się: {e}"))?;
+
+    // Zapisz zweryfikowany plik
+    let downloads_dir = launcher_data.join("downloads");
+    std::fs::create_dir_all(&downloads_dir)
+        .map_err(|e| format!("Nie można utworzyć katalogu downloads: {e}"))?;
+
+    let save_path = downloads_dir.join(&filename);
+    std::fs::write(&save_path, &data)
+        .map_err(|e| format!("Nie można zapisać pliku: {e}"))?;
+
+    Ok(serde_json::json!({
+        "savedTo": save_path.display().to_string(),
+        "sha256Ok": result.sha256_ok,
+        "sizeOk": result.size_ok,
+        "actualSize": result.actual_size,
+    }))
+}
+
+// ─────────────────────────────────────────────
+// LR-048: check_launcher_update
+// ─────────────────────────────────────────────
+
+#[tauri::command]
+pub async fn check_launcher_update(
+    state: State<'_, AppState>,
+) -> Result<serde_json::Value, String> {
+    let (api_url, current_version) = {
+        let guard = state.inner.lock().map_err(|e| e.to_string())?;
+        (guard.api_base_url.clone(), guard.launcher_version.clone())
+    };
+
+    let config = launcher_api::client::ApiClientConfig {
+        base_url: api_url,
+        ..Default::default()
+    };
+    let client = ApiClient::new(config).map_err(|e| e.to_string())?;
+
+    let version_resp = client
+        .check_launcher_version()
+        .await
+        .map_err(|e| format!("Nie można sprawdzić wersji: {e}"))?;
+
+    let check_result =
+        launcher_core::self_update::check_launcher_version(&current_version, &version_resp);
+
+    match check_result {
+        launcher_core::self_update::VersionCheckResult::UpToDate => {
+            Ok(serde_json::json!({
+                "updateAvailable": false,
+                "updateRequired": false,
+                "currentVersion": current_version,
+                "latestVersion": version_resp.version,
+            }))
+        }
+        launcher_core::self_update::VersionCheckResult::UpdateAvailable {
+            current,
+            latest,
+            url,
+            sha256,
+            notes,
+        } => Ok(serde_json::json!({
+            "updateAvailable": true,
+            "updateRequired": false,
+            "currentVersion": current,
+            "latestVersion": latest,
+            "url": url,
+            "sha256": sha256,
+            "notes": notes,
+        })),
+        launcher_core::self_update::VersionCheckResult::UpdateRequired {
+            current,
+            latest,
+            min_version,
+            url,
+            sha256,
+            notes,
+        } => Ok(serde_json::json!({
+            "updateAvailable": true,
+            "updateRequired": true,
+            "currentVersion": current,
+            "latestVersion": latest,
+            "minVersion": min_version,
+            "url": url,
+            "sha256": sha256,
+            "notes": notes,
+        })),
+    }
+}
+
+// ─────────────────────────────────────────────
+// LR-049..050: perform_self_update
+// ─────────────────────────────────────────────
+
+#[tauri::command]
+pub async fn perform_self_update(
+    state: State<'_, AppState>,
+) -> Result<serde_json::Value, String> {
+    let (api_url, current_version, launcher_data) = {
+        let guard = state.inner.lock().map_err(|e| e.to_string())?;
+        (
+            guard.api_base_url.clone(),
+            guard.launcher_version.clone(),
+            guard.launcher_data_dir.clone(),
+        )
+    };
+
+    // 1. Sprawdź wersję
+    let config = launcher_api::client::ApiClientConfig {
+        base_url: api_url,
+        ..Default::default()
+    };
+    let client = ApiClient::new(config).map_err(|e| e.to_string())?;
+
+    let version_resp = client
+        .check_launcher_version()
+        .await
+        .map_err(|e| format!("Nie można sprawdzić wersji: {e}"))?;
+
+    let check_result =
+        launcher_core::self_update::check_launcher_version(&current_version, &version_resp);
+
+    let (url, sha256) = match check_result {
+        launcher_core::self_update::VersionCheckResult::UpdateAvailable { url, sha256, .. }
+        | launcher_core::self_update::VersionCheckResult::UpdateRequired { url, sha256, .. } => {
+            (url, sha256)
+        }
+        launcher_core::self_update::VersionCheckResult::UpToDate => {
+            return Ok(serde_json::json!({
+                "status": "up_to_date",
+                "message": "Launcher jest aktualny",
+            }));
+        }
+    };
+
+    // 2. Pobierz nową paczkę
+    let data = client
+        .download_file(&url)
+        .await
+        .map_err(|e| format!("Pobieranie paczki nie powiodło się: {e}"))?;
+
+    // 3. Weryfikuj SHA-256
+    launcher_core::self_update::verify_self_update_package(&data, &sha256)
+        .map_err(|e| format!("Weryfikacja paczki: {e}"))?;
+
+    // 4. Stage do staging/
+    let exe_path = std::env::current_exe().map_err(|e| format!("Nie można ustalić ścieżki exe: {e}"))?;
+    let plan = launcher_core::self_update::build_self_update_plan(
+        &url,
+        &sha256,
+        &launcher_data,
+        &exe_path,
+    );
+
+    launcher_core::self_update::stage_self_update_package(&data, &plan.staging_path)
+        .map_err(|e| format!("Staging paczki: {e}"))?;
+
+    // 5. Uruchom helper
+    let helper_pid = launcher_core::self_update::launch_helper(&plan)
+        .map_err(|e| format!("Uruchomienie helpera: {e}"))?;
+
+    Ok(serde_json::json!({
+        "status": "restarting",
+        "message": "Helper uruchomiony — launcher zostanie zaktualizowany po restarcie",
+        "helperPid": helper_pid,
+    }))
+
+    // UWAGA: Po tym wywołaniu launcher powinien się zamknąć!
+    // W Tauri: caller (frontend) powinien wywołać window.close() lub process.exit()
+}

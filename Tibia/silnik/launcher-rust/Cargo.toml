@@ -6,7 +6,7 @@ members = [
     "crates/launcher-core",
     "apps/launcher-cli",
     "apps/launcher-tauri",
-    # "crates/launcher-helper",  # Etap 4
+    "crates/launcher-helper",
 ]
 
 [workspace.package]

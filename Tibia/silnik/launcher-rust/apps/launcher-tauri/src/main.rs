@@ -31,6 +31,10 @@ fn main() {
             commands::get_installation_info,
             commands::change_channel,
             commands::export_logs,
+            commands::get_installer_catalog,
+            commands::download_and_verify_artifact,
+            commands::check_launcher_update,
+            commands::perform_self_update,
         ])
         .run(tauri::generate_context!())
         .expect("Błąd uruchamiania Tauri");

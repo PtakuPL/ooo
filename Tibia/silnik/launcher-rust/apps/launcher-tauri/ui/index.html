@@ -121,9 +121,48 @@
       </div>
     </section>
 
+    <!-- Ekran: Download Center (LR-044) -->
+    <section id="screen-downloads" class="screen">
+      <h2>📦 Download Center</h2>
+      <div id="downloads-loading" class="info-text">Ładowanie katalogu…</div>
+      <div id="downloads-list" class="downloads-list" style="display:none">
+        <!-- Dynamicznie generowane karty artefaktów -->
+      </div>
+      <div id="downloads-error" class="error-text" style="display:none"></div>
+      <div class="actions">
+        <button id="btn-downloads-refresh" class="btn btn-secondary">🔄 Odśwież</button>
+        <button id="btn-downloads-back" class="btn btn-secondary">← Powrót</button>
+      </div>
+    </section>
+
+    <!-- Ekran: Self-update launchera (LR-048..050) -->
+    <section id="screen-self-update" class="screen">
+      <h2>🔄 Aktualizacja launchera</h2>
+      <div class="status-card">
+        <div class="status-row">
+          <span class="label">Obecna wersja:</span>
+          <span id="selfupdate-current">---</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Nowa wersja:</span>
+          <span id="selfupdate-latest">---</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Status:</span>
+          <span id="selfupdate-status" class="badge badge-phase">---</span>
+        </div>
+        <div id="selfupdate-notes" class="info-text" style="display:none"></div>
+      </div>
+      <div class="actions">
+        <button id="btn-selfupdate-start" class="btn btn-primary">⬇ Aktualizuj launcher</button>
+        <button id="btn-selfupdate-back" class="btn btn-secondary">← Powrót</button>
+      </div>
+    </section>
+
     <!-- Pasek dolny -->
     <footer id="footer">
       <button id="btn-nav-status" class="nav-btn active" data-screen="status">Status</button>
+      <button id="btn-nav-downloads" class="nav-btn" data-screen="downloads">Pobieranie</button>
       <button id="btn-nav-repair" class="nav-btn" data-screen="repair">Naprawa</button>
       <button id="btn-nav-settings" class="nav-btn" data-screen="settings">Ustawienia</button>
       <button id="btn-export-logs" class="nav-btn">Eksport logów</button>

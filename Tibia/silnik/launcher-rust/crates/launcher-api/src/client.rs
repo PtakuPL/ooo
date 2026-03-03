@@ -7,7 +7,8 @@
 //! - pobieranie plików z URL (download z retry)
 
 use common_models::api_responses::{
-    LaunchTokenErrorResponse, LaunchTokenRequest, LaunchTokenResponse, LauncherVersionResponse,
+    InstallerCatalogResponse, LaunchTokenErrorResponse, LaunchTokenRequest, LaunchTokenResponse,
+    LauncherVersionResponse,
 };
 use common_models::manifest::{parse_manifest_compat, ManifestParseError, NormalizedManifest};
 
@@ -202,6 +203,57 @@ impl ApiClient {
 
         let token_resp: LaunchTokenResponse = resp.json().await?;
         Ok(token_resp)
+    }
+
+    // ─────────────────────────────────────────
+    // LR-043: installer-catalog.php
+    // ─────────────────────────────────────────
+
+    /// Pobiera katalog artefaktów instalatora z API.
+    pub async fn fetch_installer_catalog(
+        &self,
+        channel: &str,
+    ) -> Result<InstallerCatalogResponse, ApiError> {
+        let url = self.url(&format!("installer-catalog.php?channel={}", channel));
+        tracing::info!("Pobieram katalog instalatorów: {}", url);
+
+        let resp = self.get_with_retry(&url).await?;
+        let status = resp.status();
+
+        if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+            return Err(ApiError::RateLimited);
+        }
+
+        if !status.is_success() {
+            let body = resp.text().await.unwrap_or_default();
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body,
+            });
+        }
+
+        let catalog: InstallerCatalogResponse = resp.json().await?;
+
+        // Walidacja: channel musi się zgadzać
+        if catalog.channel != channel {
+            return Err(ApiError::HttpStatus {
+                status: 200,
+                body: format!(
+                    "Catalog channel mismatch: expected '{}', got '{}'",
+                    channel, catalog.channel
+                ),
+            });
+        }
+
+        // Walidacja: artifacts nie może być pusty
+        if catalog.artifacts.is_empty() {
+            return Err(ApiError::HttpStatus {
+                status: 200,
+                body: "Catalog has no artifacts".to_string(),
+            });
+        }
+
+        Ok(catalog)
     }
 
     // ─────────────────────────────────────────

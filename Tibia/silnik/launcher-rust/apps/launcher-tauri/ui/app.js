@@ -373,10 +373,206 @@ function formatBytes(bytes) {
 }
 
 // ─────────────────────────────────────────────
+// Download Center (LR-044)
+// ─────────────────────────────────────────────
+
+const elDownloadsLoading = $("#downloads-loading");
+const elDownloadsList = $("#downloads-list");
+const elDownloadsError = $("#downloads-error");
+const btnDownloadsRefresh = $("#btn-downloads-refresh");
+const btnDownloadsBack = $("#btn-downloads-back");
+
+async function loadDownloadCenter() {
+  elDownloadsLoading.style.display = "block";
+  elDownloadsList.style.display = "none";
+  elDownloadsError.style.display = "none";
+
+  try {
+    const catalog = await invoke("get_installer_catalog");
+    elDownloadsList.innerHTML = "";
+
+    if (!catalog.artifacts || catalog.artifacts.length === 0) {
+      elDownloadsError.textContent = "Brak dostępnych artefaktów.";
+      elDownloadsError.style.display = "block";
+      return;
+    }
+
+    catalog.artifacts.forEach((art) => {
+      const card = document.createElement("div");
+      card.className = "download-card";
+
+      const platformClass = art.platform.toLowerCase();
+      card.innerHTML = `
+        <div class="download-info">
+          <div class="filename">${escapeHtml(art.filename)}</div>
+          <div class="meta">
+            <span class="platform-badge ${platformClass}">${escapeHtml(art.platform)}</span>
+            <span>${escapeHtml(art.arch)}</span> · 
+            <span>${formatBytes(art.size)}</span> · 
+            <span class="mono">${escapeHtml(art.sha256.substring(0, 12))}…</span>
+          </div>
+        </div>
+        <button class="btn-download" data-url="${escapeHtml(art.url)}" data-filename="${escapeHtml(art.filename)}" data-sha256="${escapeHtml(art.sha256)}" data-size="${art.size}">
+          ⬇ Pobierz
+        </button>
+      `;
+
+      elDownloadsList.appendChild(card);
+    });
+
+    // Obsługa przycisków pobierania
+    elDownloadsList.querySelectorAll(".btn-download").forEach((btn) => {
+      btn.addEventListener("click", () => downloadArtifact(btn));
+    });
+
+    elDownloadsList.style.display = "flex";
+  } catch (err) {
+    elDownloadsError.textContent = `Błąd: ${err}`;
+    elDownloadsError.style.display = "block";
+  } finally {
+    elDownloadsLoading.style.display = "none";
+  }
+}
+
+async function downloadArtifact(btn) {
+  const url = btn.dataset.url;
+  const filename = btn.dataset.filename;
+  const sha256 = btn.dataset.sha256;
+  const size = parseInt(btn.dataset.size, 10);
+
+  btn.disabled = true;
+  btn.textContent = "⏳ Pobieram…";
+
+  try {
+    const result = await invoke("download_and_verify_artifact", {
+      url,
+      filename,
+      expectedSha256: sha256,
+      expectedSize: size,
+    });
+    btn.textContent = "✅ Pobrano";
+    if (result.savedTo) {
+      alert(`Pobrano: ${result.savedTo}`);
+    }
+  } catch (err) {
+    btn.textContent = "❌ Błąd";
+    showError(`Pobieranie ${filename}: ${err}`, "DOWNLOAD_ERROR", true);
+  } finally {
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.textContent = "⬇ Pobierz";
+    }, 3000);
+  }
+}
+
+function escapeHtml(str) {
+  const div = document.createElement("div");
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+if (btnDownloadsRefresh) {
+  btnDownloadsRefresh.addEventListener("click", () => loadDownloadCenter());
+}
+if (btnDownloadsBack) {
+  btnDownloadsBack.addEventListener("click", () => showScreen("status"));
+}
+
+// ─────────────────────────────────────────────
+// Self-update UI (LR-048..050)
+// ─────────────────────────────────────────────
+
+const elSelfUpdateCurrent = $("#selfupdate-current");
+const elSelfUpdateLatest = $("#selfupdate-latest");
+const elSelfUpdateStatus = $("#selfupdate-status");
+const elSelfUpdateNotes = $("#selfupdate-notes");
+const btnSelfUpdateStart = $("#btn-selfupdate-start");
+const btnSelfUpdateBack = $("#btn-selfupdate-back");
+
+let selfUpdateInfo = null;
+
+async function checkSelfUpdate() {
+  try {
+    const check = await invoke("check_launcher_update");
+    selfUpdateInfo = check;
+
+    if (check.updateAvailable || check.updateRequired) {
+      if (elSelfUpdateCurrent) elSelfUpdateCurrent.textContent = check.currentVersion;
+      if (elSelfUpdateLatest) elSelfUpdateLatest.textContent = check.latestVersion;
+      if (elSelfUpdateStatus) {
+        elSelfUpdateStatus.textContent = check.updateRequired
+          ? "⚠ Wymagana aktualizacja"
+          : "Dostępna aktualizacja";
+        elSelfUpdateStatus.className = check.updateRequired
+          ? "badge badge-phase badge-error"
+          : "badge badge-phase badge-warn";
+      }
+      if (check.notes && elSelfUpdateNotes) {
+        elSelfUpdateNotes.textContent = check.notes;
+        elSelfUpdateNotes.style.display = "block";
+      }
+
+      // Jeśli update wymagany — automatycznie pokaż ekran
+      if (check.updateRequired) {
+        showScreen("self-update");
+      }
+    }
+  } catch (err) {
+    console.warn("Self-update check failed:", err);
+  }
+}
+
+if (btnSelfUpdateStart) {
+  btnSelfUpdateStart.addEventListener("click", async () => {
+    if (!selfUpdateInfo) return;
+    btnSelfUpdateStart.disabled = true;
+    btnSelfUpdateStart.textContent = "⏳ Aktualizuję…";
+    if (elSelfUpdateStatus) elSelfUpdateStatus.textContent = "Pobieranie…";
+
+    try {
+      await invoke("perform_self_update");
+      if (elSelfUpdateStatus) elSelfUpdateStatus.textContent = "Restart…";
+      // Launcher się zamknie + helper podmieni binarkę
+    } catch (err) {
+      showError(`Self-update: ${err}`, "SELF_UPDATE_ERROR", false);
+      btnSelfUpdateStart.disabled = false;
+      btnSelfUpdateStart.textContent = "⬇ Aktualizuj launcher";
+    }
+  });
+}
+
+if (btnSelfUpdateBack) {
+  btnSelfUpdateBack.addEventListener("click", () => showScreen("status"));
+}
+
+// ─────────────────────────────────────────────
+// Navigation — update for new screens
+// ─────────────────────────────────────────────
+
+// Extend nav click handler for download center
+navBtns.forEach((btn) => {
+  // Remove old listeners (override)
+  const clone = btn.cloneNode(true);
+  btn.parentNode.replaceChild(clone, btn);
+});
+
+// Re-bind nav buttons (after clone)
+document.querySelectorAll(".nav-btn[data-screen]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const screen = btn.dataset.screen;
+    showScreen(screen);
+    if (screen === "repair") loadRepairDiagnostics();
+    if (screen === "downloads") loadDownloadCenter();
+  });
+});
+
+// ─────────────────────────────────────────────
 // Init
 // ─────────────────────────────────────────────
 
 document.addEventListener("DOMContentLoaded", () => {
   showScreen("status");
   loadStatus();
+  // Sprawdź self-update w tle
+  checkSelfUpdate();
 });

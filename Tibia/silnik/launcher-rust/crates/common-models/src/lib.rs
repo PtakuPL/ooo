@@ -5,3 +5,4 @@ pub mod error_codes;
 pub mod validation;
 pub mod update_plan;
 pub mod dto;
+pub mod launcher_config;

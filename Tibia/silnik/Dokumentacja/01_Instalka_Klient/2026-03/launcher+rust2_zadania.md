@@ -1,7 +1,7 @@
 # Launcher Rust+Tauri - Plan Zadan Wykonawczy
 
 **Data:** 2026-03-02  
-**Ostatnia aktualizacja:** 2026-03-03 (Sprint 3 complete)  
+**Ostatnia aktualizacja:** 2026-03-03 (Sprint 4 complete)  
 **Zrodlo:** `launcher+rust2.md`  
 **Cel:** zamienic plan architektury na konkretne zadania wdrozeniowe krok po kroku.
 
@@ -109,22 +109,22 @@
 
 | ID | Priorytet | Zadanie | Wynik | Kryterium akceptacji |
 |---|---|---|---|---|
-| LR-041 | P0 | Zdefiniowac model instalatora bootstrap | `docs/installer-bootstrap.md` | Instalka instaluje launcher i minimalny config |
-| LR-042 | P0 | Zintegrowac instalke z launcherem | installer config | Pierwszy start uruchamia launcher |
-| LR-043 | P1 | Dodac endpoint `installer-catalog.php` | `api/installer-catalog.php` | Zwraca artefakty Windows/Linux/Android |
-| LR-044 | P1 | Dodac widok Download Center | UI tab | Lista artefaktow pobiera sie z API |
-| LR-045 | P1 | Dodac walidacje checksum pobieranych instalek | core/UI | Niepoprawny hash blokuje finalizacje |
-| LR-046 | P1 | Dodac polityke podpisow artefaktow | docs + verify step | Podpisy `.sig` sa publikowane i weryfikowane |
+| LR-041 | P0 | ✅ Zdefiniowac model instalatora bootstrap | `docs/installer-bootstrap.md` | Instalka instaluje launcher i minimalny config |
+| LR-042 | P0 | ✅ Zintegrowac instalke z launcherem | installer config | Pierwszy start uruchamia launcher |
+| LR-043 | P1 | ✅ Dodac endpoint `installer-catalog.php` | `api/installer-catalog.php` | Zwraca artefakty Windows/Linux/Android |
+| LR-044 | P1 | ✅ Dodac widok Download Center | UI tab | Lista artefaktow pobiera sie z API |
+| LR-045 | P1 | ✅ Dodac walidacje checksum pobieranych instalek | core/UI | Niepoprawny hash blokuje finalizacje |
+| LR-046 | P1 | ✅ Dodac polityke podpisow artefaktow | docs + verify step | Podpisy `.sig` sa publikowane i weryfikowane |
 
 ### Etap 4 - Self-update launchera
 
 | ID | Priorytet | Zadanie | Wynik | Kryterium akceptacji |
 |---|---|---|---|---|
-| LR-047 | P1 | Utworzyc `launcher-helper` | `crates/launcher-helper` | Helper potrafi podmienic binarke po zamknieciu launchera |
-| LR-048 | P1 | Integracja check `launcher-version.php` | `self_update` module | `required=true` wymusza update launchera |
-| LR-049 | P1 | Pobieranie paczki self-update + verify | `self_update` module | Update paczki przechodzi verify hash/podpis |
-| LR-050 | P1 | Restart launchera po podmianie | helper flow | Launcher wraca po udanym update |
-| LR-051 | P1 | Scenariusz rollback self-update | helper flow | Nieudany update nie brickuje launchera |
+| LR-047 | P1 | ✅ Utworzyc `launcher-helper` | `crates/launcher-helper` | Helper potrafi podmienic binarke po zamknieciu launchera |
+| LR-048 | P1 | ✅ Integracja check `launcher-version.php` | `self_update` module | `required=true` wymusza update launchera |
+| LR-049 | P1 | ✅ Pobieranie paczki self-update + verify | `self_update` module | Update paczki przechodzi verify hash/podpis |
+| LR-050 | P1 | ✅ Restart launchera po podmianie | helper flow | Launcher wraca po udanym update |
+| LR-051 | P1 | ✅ Scenariusz rollback self-update | helper flow | Nieudany update nie brickuje launchera |
 
 ### Etap 5 - Hardening (po stabilnym v1)
 
@@ -154,11 +154,11 @@
 | LR-063 | P0 | ✅ Dodac contract-tests job | `ci.yml` job | Waliduje zgodnosc payloadow i schema |
 | LR-064 | P0 | ✅ Dodac matrix build Windows/Linux | workflow jobs | Artefakty powstaja na obu platformach |
 | LR-065 | P0 | ✅ Dodac `build-launcher.yml` | `.github/workflows/build-launcher.yml` | Build uruchamialny manualnie i dla `-rc` |
-| LR-066 | P0 | Dodac `release-launcher.yml` | `.github/workflows/release-launcher.yml` | Tag release publikuje artefakty |
-| LR-067 | P1 | Automatycznie generowac `checksums.txt` | release artifact | Wszystkie pliki maja hash |
-| LR-068 | P1 | Automatycznie publikowac podpisy `.sig` | release artifact | Podpisy dostepne przy release |
-| LR-069 | P1 | Generowac `installer-catalog.json` z release | script + artifact | Katalog zgodny z endpointem API |
-| LR-070 | P1 | Smoke check po release | release gate | Endpointy i artefakty przechodza check |
+| LR-066 | P0 | ✅ Dodac `release-launcher.yml` | `.github/workflows/release-launcher.yml` | Tag release publikuje artefakty |
+| LR-067 | P1 | ✅ Automatycznie generowac `checksums.txt` | release artifact | Wszystkie pliki maja hash |
+| LR-068 | P1 | ✅ Automatycznie publikowac podpisy `.sig` | release artifact | Podpisy dostepne przy release |
+| LR-069 | P1 | ✅ Generowac `installer-catalog.json` z release | script + artifact | Katalog zgodny z endpointem API |
+| LR-070 | P1 | ✅ Smoke check po release | release gate | Endpointy i artefakty przechodza check |
 
 ---
 
@@ -189,7 +189,7 @@
 1. **Sprint 1:** ✅ LR-001..LR-012 + LR-062..LR-063 + LR-071..LR-078 + LR-081..LR-084. Commit `28499ce41`.
 2. **Sprint 2:** ✅ LR-004 + LR-010 + LR-013..LR-030. Commit `5c11b4490` + sprint3-patch.
 3. **Sprint 3:** ✅ KOMPLETNY. LR-031..LR-040 + LR-064 + LR-065 + LR-079 + LR-080.
-4. **Sprint 4:** LR-041..LR-051 + LR-066..LR-070.
+4. **Sprint 4:** ✅ KOMPLETNY. LR-041..LR-051 + LR-046 + LR-066..LR-070. Commit `75d5e8543`.
 5. **Sprint 5:** LR-052..LR-061 + AT-001..AT-015 + rollout.
 
 ---

@@ -164,33 +164,68 @@ jobs:
           if-no-files-found: error
 
   # ─────────────────────────────────────────────────
-  # 3. Build helper updater (placeholder — activated later)
+  # 3. Build helper updater (LR-047)
   # ─────────────────────────────────────────────────
-  # build-helper:
-  #   name: Helper (${{ matrix.os }})
-  #   needs: [build-core]
-  #   runs-on: ${{ matrix.os }}
-  #   strategy:
-  #     matrix:
-  #       include:
-  #         - os: ubuntu-latest
-  #         - os: windows-latest
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - uses: dtolnay/rust-toolchain@stable
-  #     - name: Build helper
-  #       run: cargo build --release --package launcher-helper
-  #     - uses: actions/upload-artifact@v4
-  #       with:
-  #         name: launcher-helper-${{ matrix.os }}
-  #         path: target/release/launcher-helper*
+  build-helper:
+    name: Helper (${{ matrix.os }})
+    needs: [build-core]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-gnu
+            artifact_suffix: linux-x86_64
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            artifact_suffix: windows-x86_64
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            launcher-rust/target
+          key: build-helper-${{ runner.os }}-cargo-${{ hashFiles('launcher-rust/Cargo.lock') }}
+
+      - name: Build helper
+        run: cargo build --release --package launcher-helper --target ${{ matrix.target }}
+
+      - name: Collect helper binary (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          mkdir -p ../artifacts
+          cp target/${{ matrix.target }}/release/launcher-helper ../artifacts/launcher-helper-${{ matrix.artifact_suffix }}
+
+      - name: Collect helper binary (Windows)
+        if: runner.os == 'Windows'
+        shell: bash
+        run: |
+          mkdir -p ../artifacts
+          cp target/${{ matrix.target }}/release/launcher-helper.exe ../artifacts/launcher-helper-${{ matrix.artifact_suffix }}.exe
+
+      - name: Upload helper artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: launcher-helper-${{ matrix.artifact_suffix }}
+          path: artifacts/launcher-helper*
+          if-no-files-found: error
 
   # ─────────────────────────────────────────────────
   # 4. Generate SHA-256 checksums & summary
   # ─────────────────────────────────────────────────
   checksums:
     name: SHA-256 Checksums
-    needs: [build-core, build-tauri]
+    needs: [build-core, build-tauri, build-helper]
     runs-on: ubuntu-latest
     steps:
       - name: Download all artifacts

@@ -266,3 +266,81 @@ select {
     width: 100%;
   }
 }
+
+/* ───── Download Center (LR-044) ───── */
+
+.downloads-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.download-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-card);
+  padding: 12px 16px;
+  border-radius: var(--border-radius);
+  transition: background 0.2s;
+}
+
+.download-card:hover {
+  background: var(--bg-secondary);
+}
+
+.download-info {
+  flex: 1;
+}
+
+.download-info .filename {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.download-info .meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.download-info .meta .platform-badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.platform-badge.windows { background: #0078d4; color: #fff; }
+.platform-badge.linux { background: #f5a623; color: #000; }
+.platform-badge.android { background: #3ddc84; color: #000; }
+
+.btn-download {
+  padding: 6px 14px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-download:hover {
+  background: var(--accent-hover);
+}
+
+.btn-download:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.info-text {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  padding: 8px 0;
+}

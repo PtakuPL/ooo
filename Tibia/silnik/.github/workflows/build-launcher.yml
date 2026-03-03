@@ -16,6 +16,9 @@ on:
           - release
           - debug
   push:
+    branches: [feature/ticket-gate]
+    paths:
+      - 'launcher-rust/**'
     tags:
       - 'v*-rc*'
 
@@ -146,15 +149,15 @@ jobs:
       - name: Collect Tauri binary (Linux)
         if: runner.os == 'Linux'
         run: |
-          mkdir -p artifacts
-          cp launcher-rust/target/${{ matrix.target }}/release/launcher-tauri artifacts/launcher-tauri-${{ matrix.artifact_suffix }}
+          mkdir -p ../artifacts
+          cp target/${{ matrix.target }}/release/launcher-tauri ../artifacts/launcher-tauri-${{ matrix.artifact_suffix }}
 
       - name: Collect Tauri binary (Windows)
         if: runner.os == 'Windows'
         shell: bash
         run: |
-          mkdir -p artifacts
-          cp launcher-rust/target/${{ matrix.target }}/release/launcher-tauri.exe artifacts/launcher-tauri-${{ matrix.artifact_suffix }}.exe
+          mkdir -p ../artifacts
+          cp target/${{ matrix.target }}/release/launcher-tauri.exe ../artifacts/launcher-tauri-${{ matrix.artifact_suffix }}.exe
 
       - name: Upload Tauri artifact
         uses: actions/upload-artifact@v4

@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - feature/i18n-multilanguage
+      - feature/ticket-gate
     paths:
       - 'src/**'
       - 'CMakeLists.txt'
@@ -16,6 +17,7 @@ on:
     branches:
       - master
       - feature/i18n-multilanguage
+      - feature/ticket-gate
     paths:
       - 'src/**'
       - 'CMakeLists.txt'

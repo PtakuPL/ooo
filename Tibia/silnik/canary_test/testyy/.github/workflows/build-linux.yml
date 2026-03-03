@@ -2,14 +2,14 @@ name: build-linux
 
 on:
   push:
-    branches: [ master, feature/i18n-multilanguage ]
+    branches: [ master, feature/i18n-multilanguage, feature/ticket-gate ]
     paths:
       - 'Tibia/silnik/canary_test/testyy/src/**'
       - 'Tibia/silnik/canary_test/testyy/CMakeLists.txt'
       - 'Tibia/silnik/canary_test/testyy/vcpkg.json'
       - 'Tibia/silnik/canary_test/testyy/.github/workflows/build-linux.yml'
   pull_request:
-    branches: [ master ]
+    branches: [ master, feature/ticket-gate ]
     paths:
       - 'Tibia/silnik/canary_test/testyy/src/**'
       - 'Tibia/silnik/canary_test/testyy/CMakeLists.txt'

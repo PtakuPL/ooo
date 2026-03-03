@@ -264,6 +264,10 @@ $r = $stmt->get_result();
 // B2: Przypisz worldid na podstawie gameMode
 // FIX-AUD16: Gdy gameMode pusty — użyj world_id z DB (jeśli istnieje), inaczej domyślny 0
 $worldIdFixed = ($gameMode === 'classic74') ? 0 : (($gameMode === 'modern') ? 1 : null);
+
+// ------- B2: worlds (filtered by gameMode) — PRZED pętlą characters (FIX-ORD) -------
+$worlds = getWorldsForGameMode($gameMode, $ENV);
+
 // Mapa world id → world id w odpowiedzi (walidacja)
 $worldIdsAvailable = array_column($worlds, 'id');
 while ($p = $r->fetch_assoc()) {
@@ -298,9 +302,6 @@ while ($p = $r->fetch_assoc()) {
     ];
 }
 $stmt->close();
-
-// ------- B2: worlds (filtered by gameMode) -------
-$worlds = getWorldsForGameMode($gameMode, $ENV);
 
 $playdata = ['worlds' => $worlds, 'characters' => $chars];
 

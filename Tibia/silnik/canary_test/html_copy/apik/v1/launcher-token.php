@@ -155,6 +155,7 @@ if ($manifestVersion !== '') {
         "SELECT files_hash FROM manifest_versions WHERE channel = ? AND is_active = 1 ORDER BY id DESC LIMIT 2"
     );
     $stmt->bind_param('s', $requestChannel);
+    $stmt->execute();
     $mvRes = $stmt->get_result();
 
     if ($mvRes->num_rows > 0) {

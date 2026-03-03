@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `ticket_sessions` (
     `account_id`    INT UNSIGNED    NOT NULL,
     `game_mode`     VARCHAR(32)     NOT NULL DEFAULT '',
     `created_at`    TIMESTAMP       NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `expires_at`    DATETIME        NOT NULL,
+    `expires_at`    INT UNSIGNED    NOT NULL COMMENT 'Unix timestamp — PHP bind_param(i) + time() comparison',
     PRIMARY KEY (`id`),
     UNIQUE KEY `uq_session_key` (`session_key`),
     KEY `idx_expires_at` (`expires_at`),
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `ticket_nonces` (
     `nonce`         VARCHAR(64)     NOT NULL,
     `account_id`    INT UNSIGNED    NOT NULL DEFAULT 0,
     `created_at`    TIMESTAMP       NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `expires_at`    DATETIME        NOT NULL,
+    `expires_at`    INT UNSIGNED    NOT NULL COMMENT 'Unix timestamp — PHP bind_param(i) + C++ integer comparison',
     PRIMARY KEY (`id`),
     UNIQUE KEY `uq_nonce` (`nonce`),
     KEY `idx_expires_at` (`expires_at`)
@@ -107,8 +107,8 @@ CREATE EVENT IF NOT EXISTS `evt_ticket_gate_cleanup`
     DO
     BEGIN
         DELETE FROM `launch_tokens`   WHERE `expires_at` < NOW();
-        DELETE FROM `ticket_sessions` WHERE `expires_at` < NOW();
-        DELETE FROM `ticket_nonces`   WHERE `expires_at` < NOW();
+        DELETE FROM `ticket_sessions` WHERE `expires_at` < UNIX_TIMESTAMP();
+        DELETE FROM `ticket_nonces`   WHERE `expires_at` < UNIX_TIMESTAMP();
     END;
 */
 

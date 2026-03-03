@@ -27,7 +27,7 @@ pub enum VersionCheckResult {
         current: String,
         latest: String,
         url: String,
-        sha256: String,
+        sha256: Option<String>,
         notes: Option<String>,
     },
     /// Wymagana jest aktualizacja (hard block — launcher nie pozwala kontynuować).
@@ -36,7 +36,7 @@ pub enum VersionCheckResult {
         latest: String,
         min_version: String,
         url: String,
-        sha256: String,
+        sha256: Option<String>,
         notes: Option<String>,
     },
 }
@@ -383,7 +383,7 @@ mod tests {
             min_version: min_version.to_string(),
             required,
             url: "https://cdn.example.com/launcher.tar.gz".to_string(),
-            sha256: "abc123".to_string(),
+            sha256: Some("abc123".to_string()),
             release_date: None,
             notes: None,
         }

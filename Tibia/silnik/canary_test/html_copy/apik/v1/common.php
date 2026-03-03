@@ -22,6 +22,19 @@ if (!function_exists('sendError')) {
     }
 }
 
+if (!function_exists('sendLauncherError')) {
+    /**
+     * Send launcher-contract error response and exit.
+     * Format: {"error": "error_code", "message": "human-readable"} — Rust launcher contract.
+     * Used by launcher-token.php and other launcher-facing endpoints.
+     */
+    function sendLauncherError(string $errorCode, string $message, int $httpCode = 400): void {
+        http_response_code($httpCode);
+        echo json_encode(['error' => $errorCode, 'message' => $message], JSON_UNESCAPED_SLASHES);
+        exit;
+    }
+}
+
 if (!function_exists('json_out')) {
     /**
      * Send JSON response and exit.

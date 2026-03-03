@@ -25,8 +25,9 @@ header('Content-Type: application/json; charset=utf-8');
  * Konsumowany atomowo przez login.php (SELECT FOR UPDATE + DELETE).
  */
 
-// FIX42+FIX43: Shared utilities (loadEnvFiles, sendError, json_out)
-// sendError now uses standardized format: {"errorCode": 3, "errorMessage": "..."}
+// FIX42+FIX43: Shared utilities (loadEnvFiles, sendError, sendLauncherError, json_out)
+// launcher-token.php uses sendLauncherError() — Rust launcher contract format:
+//   {"error": "error_code", "message": "human readable"}
 require_once __DIR__ . '/common.php';
 
 // FIX-AUD12: getClientIp() przeniesione do common.php z obsługą trusted proxy.
@@ -44,7 +45,7 @@ function versionCompare(string $a, string $b): int {
 $raw = file_get_contents('php://input') ?: '';
 $req = json_decode($raw, true);
 if (!is_array($req)) {
-    sendError('Invalid JSON request.');
+    sendLauncherError('missing_fields', 'Invalid JSON request.', 400);
 }
 
 $launcherVersion = isset($req['launcherVersion']) ? trim((string)$req['launcherVersion']) : '';
@@ -52,7 +53,7 @@ $filesHash       = isset($req['filesHash'])       ? trim((string)$req['filesHash
 $manifestVersion = isset($req['manifestVersion'])  ? trim((string)$req['manifestVersion']) : '';
 
 if ($launcherVersion === '' || $filesHash === '') {
-    sendError('Missing required fields: launcherVersion, filesHash.');
+    sendLauncherError('missing_fields', 'Missing required fields: launcherVersion, filesHash.', 400);
 }
 
 // ------- config -------
@@ -64,7 +65,7 @@ $rateLimit     = isset($ENV['LAUNCH_TOKEN_RATE_LIMIT']) ? (int)$ENV['LAUNCH_TOKE
 
 // ------- version check -------
 if (versionCompare($launcherVersion, $minVersion) < 0) {
-    sendError("Launcher version {$launcherVersion} is too old. Minimum: {$minVersion}. Please update your launcher.");
+    sendLauncherError('launcher_version_rejected', "Launcher version {$launcherVersion} is too old. Minimum: {$minVersion}. Please update your launcher.", 403);
 }
 
 // ------- DB -------
@@ -78,7 +79,7 @@ $dbport = $db['port'];
 
 $mysqli = @new mysqli($dbhost, $dbuser, $dbpass, $dbname, $dbport);
 if ($mysqli->connect_errno) {
-    sendError('Database connection failed.');
+    sendLauncherError('internal_error', 'Database connection failed.', 500);
 }
 $mysqli->set_charset('utf8mb4');
 
@@ -95,7 +96,7 @@ $res = $stmt->get_result()->fetch_assoc();
 $stmt->close();
 
 if ((int)$res['cnt'] >= $rateLimit) {
-    sendError("Rate limit exceeded. Max {$rateLimit} tokens per minute.");
+    sendLauncherError('rate_limited', "Rate limit exceeded. Max {$rateLimit} tokens per minute.", 429);
 }
 
 // ------- filesHash verification -------
@@ -137,7 +138,7 @@ if ($manifestVersion !== '') {
             $stmt2->close();
 
             if (!$accepted) {
-                sendError('Client files hash mismatch. Pliki klienta nie pasują do oczekiwanych. Zrestartuj launcher.');
+                sendLauncherError('files_hash_mismatch', 'Client files hash mismatch. Pliki klienta nie pasują do oczekiwanych. Zrestartuj launcher.', 403);
             }
         }
     } else {
@@ -145,7 +146,7 @@ if ($manifestVersion !== '') {
         // Nie przepuszczamy — klient twierdzi że ma wersję której nie znamy
         $stmt->close();
         error_log("[launcher-token.php] FIX-AUD5 BLOCKED: manifestVersion '{$manifestVersion}' channel '{$requestChannel}' not found in manifest_versions.");
-        sendError('Unknown manifest version. Please update your client.');
+        sendLauncherError('manifest_version_expired', 'Unknown manifest version. Please update your client.', 403);
     }
     $stmt->close();
 } else {
@@ -170,7 +171,7 @@ if ($manifestVersion !== '') {
         $stmt->close();
 
         if (!$accepted) {
-            sendError('Client files hash mismatch (no manifest version provided). Update your launcher.');
+            sendLauncherError('files_hash_mismatch', 'Client files hash mismatch (no manifest version provided). Update your launcher.', 403);
         }
     } else {
         // FIX21: Brak aktywnych manifestów w DB → FAIL-CLOSED.
@@ -178,7 +179,7 @@ if ($manifestVersion !== '') {
         // Użyj: php generate_manifest.php aby wygenerować manifest.
         $stmt->close();
         error_log('[launcher-token.php] FIX21 BLOCKED: No active manifest_versions in DB. Cannot verify filesHash. Add manifest first.');
-        sendError('Server configuration error: no manifest available. Contact administrator.');
+        sendLauncherError('internal_error', 'Server configuration error: no manifest available. Contact administrator.', 500);
     }
 }
 
@@ -203,6 +204,6 @@ if (mt_rand(1, 10) === 1) {
 $mysqli->close();
 
 echo json_encode([
-    'launchToken' => $token,
-    'expiresIn'   => $tokenTtl,
+    'token'            => $token,
+    'expiresInSeconds'  => $tokenTtl,
 ], JSON_UNESCAPED_SLASHES);

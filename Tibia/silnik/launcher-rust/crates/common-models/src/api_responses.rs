@@ -13,7 +13,10 @@ pub struct LauncherVersionResponse {
     pub min_version: String,
     pub required: bool,
     pub url: String,
-    pub sha256: String,
+
+    /// SHA-256 of the launcher binary (hex). Optional for backward compat.
+    #[serde(default)]
+    pub sha256: Option<String>,
 
     #[serde(default)]
     pub release_date: Option<String>,

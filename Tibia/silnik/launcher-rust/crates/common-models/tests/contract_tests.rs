@@ -28,7 +28,7 @@ fn contract_launcher_version_response_deserializes() {
     assert_eq!(resp.min_version, "0.1.0");
     assert!(resp.required);
     assert!(!resp.url.is_empty());
-    assert!(!resp.sha256.is_empty());
+    assert!(!resp.sha256.as_deref().unwrap_or("").is_empty());
 
     // Opcjonalne pola
     assert_eq!(resp.release_date.as_deref(), Some("2026-03-02"));
@@ -53,6 +53,25 @@ fn contract_launcher_version_response_required_fields_only() {
     assert!(!resp.required);
     assert_eq!(resp.release_date, None);
     assert_eq!(resp.notes, None);
+}
+
+#[test]
+fn contract_launcher_version_response_without_sha256() {
+    // PHP może nie zwracać sha256 (backward compat) — Rust musi to obsłużyć
+    let json = r#"{
+        "version": "1.0.0",
+        "minVersion": "0.9.0",
+        "required": false,
+        "url": "https://example.com/dl/",
+        "notes": "Test release"
+    }"#;
+
+    let resp: common_models::api_responses::LauncherVersionResponse =
+        serde_json::from_str(json).expect("deserialize without sha256");
+
+    assert_eq!(resp.version, "1.0.0");
+    assert_eq!(resp.sha256, None);
+    assert_eq!(resp.notes.as_deref(), Some("Test release"));
 }
 
 // ─────────────────────────────────────────

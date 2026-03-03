@@ -8,7 +8,7 @@
 
 ```
 POST /api/launcher-token.php
-Content-Type: application/x-www-form-urlencoded
+Content-Type: application/json
 ```
 
 ## Opis

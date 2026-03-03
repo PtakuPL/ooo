@@ -721,7 +721,10 @@ pub async fn perform_self_update(
     let (url, sha256) = match check_result {
         launcher_core::self_update::VersionCheckResult::UpdateAvailable { url, sha256, .. }
         | launcher_core::self_update::VersionCheckResult::UpdateRequired { url, sha256, .. } => {
-            (url, sha256)
+            let sha = sha256.ok_or_else(|| {
+                "Serwer nie zwrócił SHA-256 paczki — self-update zablokowany (brak weryfikacji)".to_string()
+            })?;
+            (url, sha)
         }
         launcher_core::self_update::VersionCheckResult::UpToDate => {
             return Ok(serde_json::json!({

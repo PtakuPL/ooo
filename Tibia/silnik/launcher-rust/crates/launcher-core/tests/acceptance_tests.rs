@@ -315,8 +315,8 @@ fn at_008_self_update_success_flow() {
         min_version: "0.1.0".to_string(),
         required: false,
         url: "https://cdn.example.com/launcher-v1.0.0".to_string(),
-        sha256: "abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"
-            .to_string(),
+        sha256: Some("abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"
+            .to_string()),
         release_date: None,
         notes: None,
     };

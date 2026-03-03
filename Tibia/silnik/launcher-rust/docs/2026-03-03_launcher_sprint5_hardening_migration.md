@@ -85,7 +85,40 @@ Sprint 5 zamyka cały backlog projektu launcher-rust:
 - **7 etapów** (Core → API → UI → CI → Hardening → Migration → Support) ✅
 - **5 sprintów** realizacji ✅
 
-Łącznie w projekcie: ~120 unit testów + 15 testów akceptacyjnych + 559 linii testów integracyjnych.
+Łącznie w projekcie: ~210 unit testów + 15 testów akceptacyjnych + 559 linii testów integracyjnych.
+
+---
+
+## Post-sprint: Audyt i uzupełnienia (gap-fix)
+
+Po audycie kompletności zidentyfikowano i wypełniono luki:
+
+### 1. `validation.rs` rozbudowany (z 5 do ~310 linii)
+
+Był placeholder (re-eksport z manifest.rs). Teraz zawiera:
+- `validate_url()` — walidacja URL, wymuszanie HTTPS w produkcji
+- `validate_semver()` — walidacja wersji X.Y.Z
+- `validate_channel()` — lista dozwolonych kanałów (stable/test/dev/canary/beta)
+- `validate_sha256_hex()` — walidacja hex SHA-256 (64 znaki)
+- `is_grace_period_active()` — §5.4 spec: porównanie dat ISO 8601
+- `is_files_hash_acceptable()` — akceptacja current+previous hash w grace period
+- 20 unit testów
+
+### 2. Grace period logic (§5.4 spec)
+
+Pole `grace_previous_version_accepted_until_utc` istniało w modelu, ale brakowało logiki decyzyjnej.
+Teraz `is_files_hash_acceptable()` implementuje zasadę: "jesli grace period aktywny, akceptuj filesHash
+obliczony zarówno z bieżącej jak i z poprzedniej wersji manifestu".
+
+### 3. Edge-case testy (`edge_case_tests.rs`)
+
+Nowy plik testowy pokrywający:
+- filesHash deterministyczność (3 wywołania = ten sam wynik)
+- filesHash sortowanie po path (nie po kolejności deklaracji)
+- filesHash wykluczenie non-managed i delete
+- filesHash marker MISSING (powtarzalny)
+- Walidacja URL/semver/channel/SHA-256
+- Grace period: active/expired/none
 
 ### Następne kroki
 

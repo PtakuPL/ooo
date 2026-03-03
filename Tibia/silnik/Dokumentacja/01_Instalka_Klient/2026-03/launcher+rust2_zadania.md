@@ -1,7 +1,7 @@
 # Launcher Rust+Tauri - Plan Zadan Wykonawczy
 
 **Data:** 2026-03-02  
-**Ostatnia aktualizacja:** 2026-03-03 (Sprint 4 complete)  
+**Ostatnia aktualizacja:** 2026-03-03 (Sprint 5 complete — PROJEKT KOMPLETNY)  
 **Zrodlo:** `launcher+rust2.md`  
 **Cel:** zamienic plan architektury na konkretne zadania wdrozeniowe krok po kroku.
 
@@ -130,21 +130,21 @@
 
 | ID | Priorytet | Zadanie | Wynik | Kryterium akceptacji |
 |---|---|---|---|---|
-| LR-052 | P2 | Challenge-response dla launch-token flow | design + implementation | API i launcher obsluguja nonce flow |
-| LR-053 | P2 | Podpis manifestu (silniejszy model) | verify signature | Launcher odrzuca manifest bez poprawnego podpisu |
-| LR-054 | P2 | Telemetria techniczna (opt-in) | metrics pipeline | Metryki update/token bledow widoczne |
-| LR-055 | P2 | Dashboard odrzuconych tokenow/ticketow | ops dashboard | Widoczne trendy i powody odrzucen |
-| LR-056 | P2 | Rotacja kluczy HMAC (`kid`) | API+validator update | Multi-key validation przechodzi testy |
+| LR-052 | P2 | ✅ Challenge-response dla launch-token flow | design + implementation | API i launcher obsluguja nonce flow |
+| LR-053 | P2 | ✅ Podpis manifestu (silniejszy model) | verify signature | Launcher odrzuca manifest bez poprawnego podpisu |
+| LR-054 | P2 | ✅ Telemetria techniczna (opt-in) | metrics pipeline | Metryki update/token bledow widoczne |
+| LR-055 | P2 | ✅ Dashboard odrzuconych tokenow/ticketow | ops dashboard | Widoczne trendy i powody odrzucen |
+| LR-056 | P2 | ✅ Rotacja kluczy HMAC (`kid`) | API+validator update | Multi-key validation przechodzi testy |
 
 ### Etap 6 - Migracja i rollout
 
 | ID | Priorytet | Zadanie | Wynik | Kryterium akceptacji |
 |---|---|---|---|---|
-| LR-057 | P0 | Faza M1: parytet Rust vs Python | parity report | Te same endpointy, ten sam `filesHash`, ten sam flow |
-| LR-058 | P0 | Faza M2: kanal testowy Rust launcher | test channel rollout | Rust launcher dziala na test/dev, stable na Python |
-| LR-059 | P0 | Faza M3: soft rollout | rollout config | Stopniowe wlaczanie bez regresji krytycznych |
-| LR-060 | P1 | Faza M4: full rollout | production default | Rust launcher domyslny, Python jako fallback czasowy |
-| LR-061 | P1 | Runbook rollback i fallback | `docs/runbooks/rollback.md` | Zespol ma procedury awaryjne |
+| LR-057 | P0 | ✅ Faza M1: parytet Rust vs Python | parity report | Te same endpointy, ten sam `filesHash`, ten sam flow |
+| LR-058 | P0 | ✅ Faza M2: kanal testowy Rust launcher | test channel rollout | Rust launcher dziala na test/dev, stable na Python |
+| LR-059 | P0 | ✅ Faza M3: soft rollout | rollout config | Stopniowe wlaczanie bez regresji krytycznych |
+| LR-060 | P1 | ✅ Faza M4: full rollout | production default | Rust launcher domyslny, Python jako fallback czasowy |
+| LR-061 | P1 | ✅ Runbook rollback i fallback | `docs/runbooks/rollback.md` | Zespol ma procedury awaryjne |
 
 ### Etap 7 - GitHub Actions (CI/CD)
 
@@ -166,21 +166,21 @@
 
 | ID | Test | Oczekiwany wynik |
 |---|---|---|
-| AT-001 | API offline przy starcie | Launcher fail-closed, brak wejscia do gry |
-| AT-002 | Uszkodzony plik lokalny | Redownload + poprawny hash |
-| AT-003 | Poprawny `filesHash` | Token wydany, start klienta dziala |
-| AT-004 | Niepoprawny `filesHash` | Token odrzucony |
-| AT-005 | Ponowne uzycie tokena | Login odrzucony (one-time use) |
-| AT-006 | Zly kanal (`channel`) | Odrzucenie tokena/walidacji |
-| AT-007 | Przerwany update | Recovery/rollback przy kolejnym starcie |
-| AT-008 | Self-update sukces | Launcher podmieniony i restartuje sie |
-| AT-009 | Self-update fail | Launcher wraca do poprzedniej wersji |
-| AT-010 | Download Center checksum | Bledny plik nie jest akceptowany |
-| AT-011 | Parser v1/v2 | v1 i v2 mapuja sie do jednego `NormalizedManifest` |
-| AT-012 | Duplikat `path` w manifeście | Manifest jest odrzucany |
-| AT-013 | Path traversal w `files[].path` | Manifest jest odrzucany |
-| AT-014 | `action=delete` bez `sha256/size` | Manifest przechodzi walidacje |
-| AT-015 | Crash w trakcie zapisu state | `installed_state.json` pozostaje spojny |
+| AT-001 | ✅ API offline przy starcie | Launcher fail-closed, brak wejscia do gry |
+| AT-002 | ✅ Uszkodzony plik lokalny | Redownload + poprawny hash |
+| AT-003 | ✅ Poprawny `filesHash` | Token wydany, start klienta dziala |
+| AT-004 | ✅ Niepoprawny `filesHash` | Token odrzucony |
+| AT-005 | ✅ Ponowne uzycie tokena | Login odrzucony (one-time use) |
+| AT-006 | ✅ Zly kanal (`channel`) | Odrzucenie tokena/walidacji |
+| AT-007 | ✅ Przerwany update | Recovery/rollback przy kolejnym starcie |
+| AT-008 | ✅ Self-update sukces | Launcher podmieniony i restartuje sie |
+| AT-009 | ✅ Self-update fail | Launcher wraca do poprzedniej wersji |
+| AT-010 | ✅ Download Center checksum | Bledny plik nie jest akceptowany |
+| AT-011 | ✅ Parser v1/v2 | v1 i v2 mapuja sie do jednego `NormalizedManifest` |
+| AT-012 | ✅ Duplikat `path` w manifeście | Manifest jest odrzucany |
+| AT-013 | ✅ Path traversal w `files[].path` | Manifest jest odrzucany |
+| AT-014 | ✅ `action=delete` bez `sha256/size` | Manifest przechodzi walidacje |
+| AT-015 | ✅ Crash w trakcie zapisu state | `installed_state.json` pozostaje spojny |
 
 ---
 
@@ -190,7 +190,7 @@
 2. **Sprint 2:** ✅ LR-004 + LR-010 + LR-013..LR-030. Commit `5c11b4490` + sprint3-patch.
 3. **Sprint 3:** ✅ KOMPLETNY. LR-031..LR-040 + LR-064 + LR-065 + LR-079 + LR-080.
 4. **Sprint 4:** ✅ KOMPLETNY. LR-041..LR-051 + LR-046 + LR-066..LR-070. Commit `75d5e8543`.
-5. **Sprint 5:** LR-052..LR-061 + AT-001..AT-015 + rollout.
+5. **Sprint 5:** ✅ KOMPLETNY. LR-052..LR-061 + AT-001..AT-015. Commit `2c5ecc431`.
 
 ---
 

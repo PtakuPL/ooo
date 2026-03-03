@@ -51,6 +51,14 @@ pub struct LaunchTokenRequest {
     pub files_hash: String,
     pub channel: String,
     pub manifest_version: String,
+
+    /// Nonce z /challenge.php (LR-052, opcjonalny dla backward compat).
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub nonce: Option<String>,
+
+    /// SHA-256(nonce + ":" + filesHash) — challenge response.
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub challenge_response: Option<String>,
 }
 
 // ─────────────────────────────────────────────
@@ -103,4 +111,23 @@ pub struct InstallerArtifact {
     /// Opcjonalna minimalna wersja OS.
     #[serde(default)]
     pub min_os_version: Option<String>,
+}
+
+// ─────────────────────────────────────────────
+// challenge.php response (LR-052)
+// ─────────────────────────────────────────────
+
+/// Odpowiedź z GET /challenge.php — nonce do challenge-response flow.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ChallengeResponse {
+    /// Jednorazowy nonce (hex string, min 32 znaków).
+    pub nonce: String,
+
+    /// Czas ważności nonce w sekundach.
+    pub expires_in_seconds: u32,
+
+    /// Data wydania nonce (ISO-8601 UTC).
+    #[serde(default)]
+    pub issued_at_utc: Option<String>,
 }

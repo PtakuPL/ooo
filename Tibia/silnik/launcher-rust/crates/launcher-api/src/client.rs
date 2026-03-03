@@ -7,8 +7,8 @@
 //! - pobieranie plików z URL (download z retry)
 
 use common_models::api_responses::{
-    InstallerCatalogResponse, LaunchTokenErrorResponse, LaunchTokenRequest, LaunchTokenResponse,
-    LauncherVersionResponse,
+    ChallengeResponse, InstallerCatalogResponse, LaunchTokenErrorResponse, LaunchTokenRequest,
+    LaunchTokenResponse, LauncherVersionResponse,
 };
 use common_models::manifest::{parse_manifest_compat, ManifestParseError, NormalizedManifest};
 
@@ -254,6 +254,54 @@ impl ApiClient {
         }
 
         Ok(catalog)
+    }
+
+    // ─────────────────────────────────────────
+    // LR-052: challenge.php
+    // ─────────────────────────────────────────
+
+    /// Pobiera nonce z /challenge.php do challenge-response flow.
+    /// Zwraca ChallengeResponse z nonce i TTL.
+    /// Jeśli API nie wspiera challenge (404), zwraca None (backward compat).
+    pub async fn fetch_challenge(
+        &self,
+        channel: &str,
+    ) -> Result<Option<ChallengeResponse>, ApiError> {
+        let url = self.url(&format!("challenge.php?channel={}", channel));
+        tracing::info!("Pobieram challenge nonce: {}", url);
+
+        let resp = self.get_with_retry(&url).await?;
+        let status = resp.status();
+
+        // 404 = API nie wspiera challenge → backward compat
+        if status == reqwest::StatusCode::NOT_FOUND {
+            tracing::info!("Challenge endpoint nie istnieje (404) — tryb legacy");
+            return Ok(None);
+        }
+
+        if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+            return Err(ApiError::RateLimited);
+        }
+
+        if !status.is_success() {
+            let body = resp.text().await.unwrap_or_default();
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body,
+            });
+        }
+
+        let challenge: ChallengeResponse = resp.json().await?;
+
+        // Walidacja: nonce nie może być pusty
+        if challenge.nonce.is_empty() {
+            return Err(ApiError::HttpStatus {
+                status: 200,
+                body: "Challenge nonce is empty".to_string(),
+            });
+        }
+
+        Ok(Some(challenge))
     }
 
     // ─────────────────────────────────────────

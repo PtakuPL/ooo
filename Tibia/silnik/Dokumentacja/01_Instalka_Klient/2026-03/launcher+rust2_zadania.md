@@ -1,7 +1,7 @@
 # Launcher Rust+Tauri - Plan Zadan Wykonawczy
 
 **Data:** 2026-03-02  
-**Ostatnia aktualizacja:** 2026-03-03  
+**Ostatnia aktualizacja:** 2026-03-03 (Sprint 3 patch)  
 **Zrodlo:** `launcher+rust2.md`  
 **Cel:** zamienic plan architektury na konkretne zadania wdrozeniowe krok po kroku.
 
@@ -83,8 +83,8 @@
 | LR-076 | P0 | ✅ Wdrozyc polityke `filesHashExpected` (v1 opcjonalne, v2 wymagane) | `compat policy` | Launcher failuje dla v2 bez `filesHashExpected` |
 | LR-077 | P0 | ✅ Zaimplementowac `InstalledState` + `UpdateTransaction` wg specyfikacji | `models::installed_state` | Pokrywa statusy update i metadane rollback |
 | LR-078 | P0 | ✅ Dodac atomiczny zapis `installed_state.json` (`tmp + fsync + rename`) | `state::store` | Brak uszkodzonego state po crashu |
-| LR-079 | P1 | Dodac warstwe DTO statusow dla Tauri | `models::dto` | Front dostaje tylko statusy/komunikaty, nie surowy manifest |
-| LR-080 | P1 | Zablokowac logike bezpieczenstwa w UI (thin frontend) | `tauri integration` | Tauri wywoluje tylko komendy core |
+| LR-079 | P1 | ✅ Dodac warstwe DTO statusow dla Tauri | `models::dto` | Front dostaje tylko statusy/komunikaty, nie surowy manifest |
+| LR-080 | P1 | ✅ Zablokowac logike bezpieczenstwa w UI (thin frontend) | `tauri integration` | Tauri wywoluje tylko komendy core |
 | LR-081 | P0 | ✅ Zaimplementowac `UpdatePlan` (`to_download`, `to_replace`, `to_delete`, `to_keep`) | `update::planner` | Plan zmian jest deterministyczny i testowalny |
 | LR-082 | P0 | ✅ Zaimplementowac referencyjne `compute_files_hash()` | `integrity::hash` | Zgodnosc 1:1 z regula sort + `MISSING` |
 | LR-083 | P0 | ✅ Dodac zestaw fixture: `manifest_v1`, `manifest_v2`, lokalne pliki | `tests/fixtures` | Testy parsera/plannera/hash uruchamiaja sie offline |
@@ -152,8 +152,8 @@
 |---|---|---|---|---|
 | LR-062 | P0 | ✅ Dodac `ci.yml` (fmt, clippy, test) | `.github/workflows/ci.yml` | PR nie przechodzi bez zielonego CI |
 | LR-063 | P0 | ✅ Dodac contract-tests job | `ci.yml` job | Waliduje zgodnosc payloadow i schema |
-| LR-064 | P0 | Dodac matrix build Windows/Linux | workflow jobs | Artefakty powstaja na obu platformach |
-| LR-065 | P0 | Dodac `build-launcher.yml` | `.github/workflows/build-launcher.yml` | Build uruchamialny manualnie i dla `-rc` |
+| LR-064 | P0 | ✅ Dodac matrix build Windows/Linux | workflow jobs | Artefakty powstaja na obu platformach |
+| LR-065 | P0 | ✅ Dodac `build-launcher.yml` | `.github/workflows/build-launcher.yml` | Build uruchamialny manualnie i dla `-rc` |
 | LR-066 | P0 | Dodac `release-launcher.yml` | `.github/workflows/release-launcher.yml` | Tag release publikuje artefakty |
 | LR-067 | P1 | Automatycznie generowac `checksums.txt` | release artifact | Wszystkie pliki maja hash |
 | LR-068 | P1 | Automatycznie publikowac podpisy `.sig` | release artifact | Podpisy dostepne przy release |
@@ -188,7 +188,7 @@
 
 1. **Sprint 1:** ✅ LR-001..LR-012 + LR-062..LR-063 + LR-071..LR-078 + LR-081..LR-084. Commit `28499ce41`.
 2. **Sprint 2:** ✅ LR-004 + LR-010 + LR-013..LR-030. Commit `5c11b4490` + sprint3-patch.
-3. **Sprint 3 (w trakcie):** LR-031..LR-040 + LR-079..LR-080 + LR-064..LR-065.
+3. **Sprint 3 (w trakcie):** ✅ LR-064, LR-065, LR-079, LR-080. Pozostaje: LR-031..LR-040 (Tauri UI v1).
 4. **Sprint 4:** LR-041..LR-051 + LR-066..LR-070.
 5. **Sprint 5:** LR-052..LR-061 + AT-001..AT-015 + rollout.
 

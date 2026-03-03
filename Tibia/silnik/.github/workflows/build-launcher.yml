@@ -1,0 +1,197 @@
+# Build Launcher – cross-platform release candidates
+# LR-065: Manual dispatch + pre-release tag trigger
+# Spec: launcher+rust.md §6.2
+
+name: Build Launcher
+
+on:
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: 'Build profile (release / debug)'
+        required: false
+        default: 'release'
+        type: choice
+        options:
+          - release
+          - debug
+  push:
+    tags:
+      - 'v*-rc*'
+
+defaults:
+  run:
+    working-directory: launcher-rust
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  # ─────────────────────────────────────────────────
+  # 1. Build Rust core (CLI + library crates)
+  # ─────────────────────────────────────────────────
+  build-core:
+    name: Core (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-gnu
+            artifact_suffix: linux-x86_64
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            artifact_suffix: windows-x86_64
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            launcher-rust/target
+          key: build-${{ runner.os }}-cargo-${{ hashFiles('launcher-rust/Cargo.lock') }}
+          restore-keys: build-${{ runner.os }}-cargo-
+
+      - name: Determine profile
+        id: profile
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "flag=${{ github.event.inputs.profile == 'debug' && '' || '--release' }}" >> "$GITHUB_OUTPUT"
+            echo "dir=${{ github.event.inputs.profile == 'debug' && 'debug' || 'release' }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "flag=--release" >> "$GITHUB_OUTPUT"
+            echo "dir=release" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build all crates
+        run: cargo build --all ${{ steps.profile.outputs.flag }} --target ${{ matrix.target }}
+
+      - name: Run tests
+        run: cargo test --all ${{ steps.profile.outputs.flag }} --target ${{ matrix.target }}
+
+      - name: Collect CLI binary (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          mkdir -p ../artifacts
+          cp target/${{ matrix.target }}/${{ steps.profile.outputs.dir }}/launcher-cli ../artifacts/launcher-cli-${{ matrix.artifact_suffix }}
+
+      - name: Collect CLI binary (Windows)
+        if: runner.os == 'Windows'
+        shell: bash
+        run: |
+          mkdir -p ../artifacts
+          cp target/${{ matrix.target }}/${{ steps.profile.outputs.dir }}/launcher-cli.exe ../artifacts/launcher-cli-${{ matrix.artifact_suffix }}.exe
+
+      - name: Upload CLI artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: launcher-cli-${{ matrix.artifact_suffix }}
+          path: artifacts/launcher-cli*
+          if-no-files-found: error
+
+  # ─────────────────────────────────────────────────
+  # 2. Build Tauri app (placeholder — activated later)
+  # ─────────────────────────────────────────────────
+  # build-tauri:
+  #   name: Tauri (${{ matrix.os }})
+  #   needs: [build-core]
+  #   runs-on: ${{ matrix.os }}
+  #   strategy:
+  #     matrix:
+  #       include:
+  #         - os: ubuntu-latest
+  #           target: x86_64-unknown-linux-gnu
+  #         - os: windows-latest
+  #           target: x86_64-pc-windows-msvc
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - name: Install Rust + Node
+  #       uses: dtolnay/rust-toolchain@stable
+  #     - uses: actions/setup-node@v4
+  #       with:
+  #         node-version: 20
+  #     - name: Install Tauri deps (Linux)
+  #       if: runner.os == 'Linux'
+  #       run: |
+  #         sudo apt-get update
+  #         sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev
+  #     - name: Build Tauri
+  #       run: |
+  #         cd apps/launcher-tauri
+  #         npm ci
+  #         npx tauri build --target ${{ matrix.target }}
+  #     - name: Upload Tauri artifact
+  #       uses: actions/upload-artifact@v4
+  #       with:
+  #         name: launcher-tauri-${{ matrix.os }}
+  #         path: apps/launcher-tauri/src-tauri/target/${{ matrix.target }}/release/bundle/**
+
+  # ─────────────────────────────────────────────────
+  # 3. Build helper updater (placeholder — activated later)
+  # ─────────────────────────────────────────────────
+  # build-helper:
+  #   name: Helper (${{ matrix.os }})
+  #   needs: [build-core]
+  #   runs-on: ${{ matrix.os }}
+  #   strategy:
+  #     matrix:
+  #       include:
+  #         - os: ubuntu-latest
+  #         - os: windows-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: dtolnay/rust-toolchain@stable
+  #     - name: Build helper
+  #       run: cargo build --release --package launcher-helper
+  #     - uses: actions/upload-artifact@v4
+  #       with:
+  #         name: launcher-helper-${{ matrix.os }}
+  #         path: target/release/launcher-helper*
+
+  # ─────────────────────────────────────────────────
+  # 4. Generate SHA-256 checksums & summary
+  # ─────────────────────────────────────────────────
+  checksums:
+    name: SHA-256 Checksums
+    needs: [build-core]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: all-artifacts
+
+      - name: Generate checksums
+        run: |
+          cd all-artifacts
+          find . -type f \( -name 'launcher-*' \) -exec sha256sum {} + | sort > ../checksums.txt
+          cat ../checksums.txt
+
+      - name: Upload checksums
+        uses: actions/upload-artifact@v4
+        with:
+          name: checksums
+          path: checksums.txt
+          if-no-files-found: error
+
+      - name: Job summary
+        run: |
+          echo "## Build Launcher Artifacts" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "| File | SHA-256 |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|------|---------|" >> "$GITHUB_STEP_SUMMARY"
+          while IFS= read -r line; do
+            hash=$(echo "$line" | awk '{print $1}')
+            file=$(echo "$line" | awk '{print $2}' | sed 's|^\./||')
+            echo "| \`$file\` | \`${hash:0:16}…\` |" >> "$GITHUB_STEP_SUMMARY"
+          done < checksums.txt

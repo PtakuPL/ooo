@@ -100,41 +100,68 @@ jobs:
           if-no-files-found: error
 
   # ─────────────────────────────────────────────────
-  # 2. Build Tauri app (placeholder — activated later)
+  # 2. Build Tauri app (LR-031)
   # ─────────────────────────────────────────────────
-  # build-tauri:
-  #   name: Tauri (${{ matrix.os }})
-  #   needs: [build-core]
-  #   runs-on: ${{ matrix.os }}
-  #   strategy:
-  #     matrix:
-  #       include:
-  #         - os: ubuntu-latest
-  #           target: x86_64-unknown-linux-gnu
-  #         - os: windows-latest
-  #           target: x86_64-pc-windows-msvc
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - name: Install Rust + Node
-  #       uses: dtolnay/rust-toolchain@stable
-  #     - uses: actions/setup-node@v4
-  #       with:
-  #         node-version: 20
-  #     - name: Install Tauri deps (Linux)
-  #       if: runner.os == 'Linux'
-  #       run: |
-  #         sudo apt-get update
-  #         sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev
-  #     - name: Build Tauri
-  #       run: |
-  #         cd apps/launcher-tauri
-  #         npm ci
-  #         npx tauri build --target ${{ matrix.target }}
-  #     - name: Upload Tauri artifact
-  #       uses: actions/upload-artifact@v4
-  #       with:
-  #         name: launcher-tauri-${{ matrix.os }}
-  #         path: apps/launcher-tauri/src-tauri/target/${{ matrix.target }}/release/bundle/**
+  build-tauri:
+    name: Tauri (${{ matrix.os }})
+    needs: [build-core]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-gnu
+            artifact_suffix: linux-x86_64
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            artifact_suffix: windows-x86_64
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Install Tauri system deps (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            launcher-rust/target
+          key: build-tauri-${{ runner.os }}-cargo-${{ hashFiles('launcher-rust/Cargo.lock') }}
+
+      - name: Build Tauri binary
+        working-directory: launcher-rust
+        run: cargo build --release --package launcher-tauri --target ${{ matrix.target }}
+
+      - name: Collect Tauri binary (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          mkdir -p artifacts
+          cp launcher-rust/target/${{ matrix.target }}/release/launcher-tauri artifacts/launcher-tauri-${{ matrix.artifact_suffix }}
+
+      - name: Collect Tauri binary (Windows)
+        if: runner.os == 'Windows'
+        shell: bash
+        run: |
+          mkdir -p artifacts
+          cp launcher-rust/target/${{ matrix.target }}/release/launcher-tauri.exe artifacts/launcher-tauri-${{ matrix.artifact_suffix }}.exe
+
+      - name: Upload Tauri artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: launcher-tauri-${{ matrix.artifact_suffix }}
+          path: artifacts/launcher-tauri*
+          if-no-files-found: error
 
   # ─────────────────────────────────────────────────
   # 3. Build helper updater (placeholder — activated later)
@@ -163,7 +190,7 @@ jobs:
   # ─────────────────────────────────────────────────
   checksums:
     name: SHA-256 Checksums
-    needs: [build-core]
+    needs: [build-core, build-tauri]
     runs-on: ubuntu-latest
     steps:
       - name: Download all artifacts

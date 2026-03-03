@@ -9,6 +9,11 @@ Firma_budowlana/
 # But allow i18n translation files
 !canary_test/i18n/**/*.json
 !canary_test/i18n/*.json
+# Allow launcher-tauri config files
+!launcher-rust/apps/launcher-tauri/tauri.conf.json
+!launcher-rust/apps/launcher-tauri/capabilities/*.json
+# Allow launcher-rust workspace/package configs
+!launcher-rust/**/Cargo.toml
 
 # Ignore Django media and local env files inside this subtree
 **/media/
@@ -69,3 +74,4 @@ canary_test/i18n_full_documentation.md
 budowa_silnik/
 iwyu/
 include-what-you-use/
+canary_test/.guardian_status_push_repo/

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SerwerCanary Launcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Nagłówek -->
+    <header id="header">
+      <h1>SerwerCanary</h1>
+      <span id="version-badge" class="badge">v---</span>
+    </header>
+
+    <!-- Ekran: Status / Gotowy -->
+    <section id="screen-status" class="screen active">
+      <div class="status-card">
+        <div class="status-row">
+          <span class="label">Launcher:</span>
+          <span id="status-launcher-ver">---</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Klient:</span>
+          <span id="status-client-ver">---</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Kanał:</span>
+          <span id="status-channel" class="badge badge-channel">---</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Status:</span>
+          <span id="status-phase" class="badge badge-phase">sprawdzanie…</span>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="btn-play" class="btn btn-primary" disabled>▶ Uruchom grę</button>
+        <button id="btn-check" class="btn btn-secondary">🔄 Sprawdź aktualizacje</button>
+      </div>
+    </section>
+
+    <!-- Ekran: Aktualizacja -->
+    <section id="screen-update" class="screen">
+      <h2>Aktualizacja</h2>
+      <div class="progress-area">
+        <div class="progress-bar-container">
+          <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+        </div>
+        <div class="progress-info">
+          <span id="progress-stage">Sprawdzanie…</span>
+          <span id="progress-percent">0%</span>
+        </div>
+        <div class="progress-detail">
+          <span id="progress-file">---</span>
+          <span id="progress-files-count">0 / 0 plików</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ekran: Błąd -->
+    <section id="screen-error" class="screen">
+      <div class="error-card">
+        <h2>⚠ Wystąpił błąd</h2>
+        <p id="error-message" class="error-text">---</p>
+        <p id="error-code" class="error-code">---</p>
+        <div class="actions">
+          <button id="btn-retry" class="btn btn-primary">🔄 Ponów</button>
+          <button id="btn-back" class="btn btn-secondary">← Powrót</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ekran: Naprawa -->
+    <section id="screen-repair" class="screen">
+      <h2>🔧 Diagnostyka instalacji</h2>
+      <div class="repair-card">
+        <div class="status-row">
+          <span class="label">Pliki OK:</span>
+          <span id="repair-ok" class="badge badge-ok">0</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Uszkodzone:</span>
+          <span id="repair-corrupted" class="badge badge-error">0</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Brakujące:</span>
+          <span id="repair-missing" class="badge badge-warn">0</span>
+        </div>
+        <div class="status-row">
+          <span class="label">Do pobrania:</span>
+          <span id="repair-bytes">0 B</span>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="btn-repair-start" class="btn btn-primary">🔧 Napraw</button>
+        <button id="btn-repair-back" class="btn btn-secondary">← Powrót</button>
+      </div>
+    </section>
+
+    <!-- Ekran: Ustawienia -->
+    <section id="screen-settings" class="screen">
+      <h2>⚙ Ustawienia</h2>
+      <div class="settings-card">
+        <div class="setting-row">
+          <label for="setting-channel">Kanał:</label>
+          <select id="setting-channel">
+            <option value="stable">stable</option>
+            <option value="test">test</option>
+            <option value="dev">dev</option>
+          </select>
+        </div>
+        <div class="setting-row">
+          <label>Ścieżka instalacji:</label>
+          <span id="setting-install-path" class="mono">---</span>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="btn-save-settings" class="btn btn-primary">💾 Zapisz</button>
+        <button id="btn-settings-back" class="btn btn-secondary">← Powrót</button>
+      </div>
+    </section>
+
+    <!-- Pasek dolny -->
+    <footer id="footer">
+      <button id="btn-nav-status" class="nav-btn active" data-screen="status">Status</button>
+      <button id="btn-nav-repair" class="nav-btn" data-screen="repair">Naprawa</button>
+      <button id="btn-nav-settings" class="nav-btn" data-screen="settings">Ustawienia</button>
+      <button id="btn-export-logs" class="nav-btn">Eksport logów</button>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

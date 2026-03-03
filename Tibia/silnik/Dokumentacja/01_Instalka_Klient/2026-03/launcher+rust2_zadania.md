@@ -1,7 +1,7 @@
 # Launcher Rust+Tauri - Plan Zadan Wykonawczy
 
 **Data:** 2026-03-02  
-**Ostatnia aktualizacja:** 2026-03-03 (Sprint 3 patch)  
+**Ostatnia aktualizacja:** 2026-03-03 (Sprint 3 complete)  
 **Zrodlo:** `launcher+rust2.md`  
 **Cel:** zamienic plan architektury na konkretne zadania wdrozeniowe krok po kroku.
 
@@ -94,16 +94,16 @@
 
 | ID | Priorytet | Zadanie | Wynik | Kryterium akceptacji |
 |---|---|---|---|---|
-| LR-031 | P0 | Utworzyc app Tauri | `apps/launcher-tauri` | App startuje na Windows/Linux |
-| LR-032 | P0 | Podpiac komendy z `launcher-core` | Tauri commands | UI nie trzyma logiki bezpieczenstwa |
-| LR-033 | P0 | Ekran statusu (launcher/client/api) | UI screen | Pokazuje wersje i status endpointow |
-| LR-034 | P0 | Ekran aktualizacji z progress barem | UI screen | Pokazuje postep plikow i etapow |
-| LR-035 | P0 | Ekran startu gry | UI screen | Startuje klienta po tokenie |
-| LR-036 | P1 | Ekran bledow i diagnostyki | UI screen | Pokazuje `LCH_*` i zrozumialy komunikat |
-| LR-037 | P1 | Eksport logow | UI action | Tworzy archiwum/log bundle |
-| LR-038 | P1 | Ustawienia (`channel`, install path) | UI screen | Zapis i odczyt ustawien dziala |
-| LR-039 | P1 | Widok statusu API/serwera (read-only) | UI widget | Dane widoczne bez ingerencji w login flow |
-| LR-040 | P1 | UX retry po bledzie | UI flow | Retry dziala bez restartu aplikacji |
+| LR-031 | P0 | ✅ Utworzyc app Tauri | `apps/launcher-tauri` | App startuje na Windows/Linux |
+| LR-032 | P0 | ✅ Podpiac komendy z `launcher-core` | Tauri commands | UI nie trzyma logiki bezpieczenstwa |
+| LR-033 | P0 | ✅ Ekran statusu (launcher/client/api) | UI screen | Pokazuje wersje i status endpointow |
+| LR-034 | P0 | ✅ Ekran aktualizacji z progress barem | UI screen | Pokazuje postep plikow i etapow |
+| LR-035 | P0 | ✅ Ekran startu gry | UI screen | Startuje klienta po tokenie |
+| LR-036 | P1 | ✅ Ekran bledow i diagnostyki | UI screen | Pokazuje `LCH_*` i zrozumialy komunikat |
+| LR-037 | P1 | ✅ Eksport logow | UI action | Tworzy archiwum/log bundle |
+| LR-038 | P1 | ✅ Ustawienia (`channel`, install path) | UI screen | Zapis i odczyt ustawien dziala |
+| LR-039 | P1 | ✅ Widok statusu API/serwera (read-only) | UI widget | Dane widoczne bez ingerencji w login flow |
+| LR-040 | P1 | ✅ UX retry po bledzie | UI flow | Retry dziala bez restartu aplikacji |
 
 ### Etap 3 - Integracja z instalka + Download Center
 
@@ -188,7 +188,7 @@
 
 1. **Sprint 1:** ✅ LR-001..LR-012 + LR-062..LR-063 + LR-071..LR-078 + LR-081..LR-084. Commit `28499ce41`.
 2. **Sprint 2:** ✅ LR-004 + LR-010 + LR-013..LR-030. Commit `5c11b4490` + sprint3-patch.
-3. **Sprint 3 (w trakcie):** ✅ LR-064, LR-065, LR-079, LR-080. Pozostaje: LR-031..LR-040 (Tauri UI v1).
+3. **Sprint 3:** ✅ KOMPLETNY. LR-031..LR-040 + LR-064 + LR-065 + LR-079 + LR-080.
 4. **Sprint 4:** LR-041..LR-051 + LR-066..LR-070.
 5. **Sprint 5:** LR-052..LR-061 + AT-001..AT-015 + rollout.
 

@@ -1,0 +1,268 @@
+/* ─────────────────────────────────────────────
+   SerwerCanary Launcher — UI Stylesheet
+   Minimalistyczny, ciemny motyw gry
+   ───────────────────────────────────────────── */
+
+:root {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --bg-card: #0f3460;
+  --accent: #e94560;
+  --accent-hover: #ff6b81;
+  --text: #eaeaea;
+  --text-muted: #a0a0b0;
+  --success: #2ecc71;
+  --warn: #f39c12;
+  --error: #e74c3c;
+  --border-radius: 8px;
+  --font-mono: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Inter', system-ui, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* ───── Header ───── */
+
+#header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: var(--bg-secondary);
+  border-bottom: 2px solid var(--accent);
+}
+
+#header h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ───── Badges ───── */
+
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--bg-card);
+  color: var(--text-muted);
+}
+
+.badge-channel {
+  background: var(--accent);
+  color: #fff;
+}
+
+.badge-phase {
+  background: var(--bg-card);
+}
+
+.badge-ok { background: var(--success); color: #fff; }
+.badge-warn { background: var(--warn); color: #fff; }
+.badge-error { background: var(--error); color: #fff; }
+
+/* ───── Screens ───── */
+
+.screen {
+  display: none;
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.screen.active {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ───── Status Card ───── */
+
+.status-card, .repair-card, .settings-card, .error-card {
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.status-row, .setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+/* ───── Buttons ───── */
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.btn-secondary {
+  background: var(--bg-card);
+  color: var(--text);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: #1a4f8a;
+}
+
+/* ───── Progress ───── */
+
+.progress-area {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 24px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+  border-radius: 12px;
+  transition: width 0.3s ease;
+}
+
+.progress-info, .progress-detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* ───── Error ───── */
+
+.error-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.error-code {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ───── Settings ───── */
+
+select {
+  padding: 6px 12px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--bg-card);
+  background: var(--bg-primary);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+/* ───── Footer / Nav ───── */
+
+#footer {
+  display: flex;
+  gap: 4px;
+  padding: 8px 16px;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--bg-card);
+}
+
+.nav-btn {
+  flex: 1;
+  padding: 8px 4px;
+  border: none;
+  border-radius: var(--border-radius);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-btn:hover {
+  background: var(--bg-card);
+}
+
+.nav-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ───── Responsive ───── */
+
+@media (max-width: 500px) {
+  .actions {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+  }
+}

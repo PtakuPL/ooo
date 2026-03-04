@@ -59,7 +59,9 @@ impl LauncherErrorCode {
     /// Komunikat user-facing (do UI).
     pub fn user_message(&self) -> &'static str {
         match self {
-            Self::ManifestFetchFailed => "Nie można sprawdzić aktualizacji. Sprawdź połączenie internetowe.",
+            Self::ManifestFetchFailed => {
+                "Nie można sprawdzić aktualizacji. Sprawdź połączenie internetowe."
+            }
             Self::ManifestParseFailed => "Błąd danych aktualizacji. Spróbuj ponownie.",
             Self::ManifestSchemaUnsupported => "Wymagana nowsza wersja launchera.",
             Self::ManifestSignatureInvalid => "Błąd weryfikacji aktualizacji. Zgłoś problem.",

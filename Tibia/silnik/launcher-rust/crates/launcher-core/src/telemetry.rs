@@ -216,11 +216,7 @@ pub fn metric_token_rejected(collector: &TelemetryCollector, error: &str) {
 }
 
 /// Metryka: download throughput.
-pub fn metric_download_throughput(
-    collector: &TelemetryCollector,
-    bytes: u64,
-    duration: Duration,
-) {
+pub fn metric_download_throughput(collector: &TelemetryCollector, bytes: u64, duration: Duration) {
     let throughput_kbps = if duration.as_millis() > 0 {
         (bytes as f64 / 1024.0) / (duration.as_millis() as f64 / 1000.0)
     } else {
@@ -231,7 +227,12 @@ pub fn metric_download_throughput(
 }
 
 /// Metryka: self-update result.
-pub fn metric_self_update(collector: &TelemetryCollector, success: bool, from_version: &str, to_version: &str) {
+pub fn metric_self_update(
+    collector: &TelemetryCollector,
+    success: bool,
+    from_version: &str,
+    to_version: &str,
+) {
     let mut tags = HashMap::new();
     tags.insert("success".to_string(), success.to_string());
     tags.insert("from".to_string(), from_version.to_string());

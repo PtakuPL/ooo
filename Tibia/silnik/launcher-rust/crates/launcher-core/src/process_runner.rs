@@ -56,9 +56,7 @@ pub fn launch_client(config: &LaunchConfig) -> Result<LaunchResult, ProcessError
     let exe_path = Path::new(&config.client_exe_path);
 
     if !exe_path.exists() {
-        return Err(ProcessError::ClientNotFound(
-            config.client_exe_path.clone(),
-        ));
+        return Err(ProcessError::ClientNotFound(config.client_exe_path.clone()));
     }
 
     tracing::info!(
@@ -96,9 +94,7 @@ pub fn launch_client_and_wait(config: &LaunchConfig) -> Result<LaunchResult, Pro
     let exe_path = Path::new(&config.client_exe_path);
 
     if !exe_path.exists() {
-        return Err(ProcessError::ClientNotFound(
-            config.client_exe_path.clone(),
-        ));
+        return Err(ProcessError::ClientNotFound(config.client_exe_path.clone()));
     }
 
     let mut cmd = Command::new(exe_path);

@@ -120,8 +120,7 @@ pub fn sync_serverlist_json(
         return Ok(());
     }
 
-    let json =
-        serde_json::to_string_pretty(servers).unwrap_or_else(|_| "[]".to_string());
+    let json = serde_json::to_string_pretty(servers).unwrap_or_else(|_| "[]".to_string());
 
     if let Some(parent) = output_path.parent() {
         fs::create_dir_all(parent).map_err(|e| ServerlistError::IoError {

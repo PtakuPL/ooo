@@ -65,11 +65,10 @@ impl LauncherConfig {
             path: path.to_path_buf(),
             source: e,
         })?;
-        let config: Self =
-            serde_json::from_str(&content).map_err(|e| ConfigError::Parse {
-                path: path.to_path_buf(),
-                source: e,
-            })?;
+        let config: Self = serde_json::from_str(&content).map_err(|e| ConfigError::Parse {
+            path: path.to_path_buf(),
+            source: e,
+        })?;
         config.validate()?;
         Ok(config)
     }
@@ -99,7 +98,10 @@ impl LauncherConfig {
     pub fn discover(exe_dir: &Path) -> Result<Self, ConfigError> {
         let candidates = [
             exe_dir.join("launcher_config.json"),
-            exe_dir.parent().map(|p| p.join("launcher_config.json")).unwrap_or_default(),
+            exe_dir
+                .parent()
+                .map(|p| p.join("launcher_config.json"))
+                .unwrap_or_default(),
         ];
 
         for path in &candidates {
@@ -116,7 +118,9 @@ impl LauncherConfig {
     /// Waliduje pola konfiguracji.
     pub fn validate(&self) -> Result<(), ConfigError> {
         if self.api_base_url.is_empty() {
-            return Err(ConfigError::Validation("api_base_url nie może być pusty".into()));
+            return Err(ConfigError::Validation(
+                "api_base_url nie może być pusty".into(),
+            ));
         }
         if !["stable", "test", "dev"].contains(&self.channel.as_str()) {
             return Err(ConfigError::Validation(format!(
@@ -125,10 +129,14 @@ impl LauncherConfig {
             )));
         }
         if self.client_dir.is_empty() {
-            return Err(ConfigError::Validation("client_dir nie może być pusty".into()));
+            return Err(ConfigError::Validation(
+                "client_dir nie może być pusty".into(),
+            ));
         }
         if self.launcher_data_dir.is_empty() {
-            return Err(ConfigError::Validation("launcher_data_dir nie może być pusty".into()));
+            return Err(ConfigError::Validation(
+                "launcher_data_dir nie może być pusty".into(),
+            ));
         }
         Ok(())
     }

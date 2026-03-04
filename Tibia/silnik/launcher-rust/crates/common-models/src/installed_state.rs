@@ -100,7 +100,13 @@ impl InstalledState {
         self.last_error_message = None;
     }
 
-    pub fn mark_success(&mut self, manifest_version: String, manifest_id: String, files_hash: String, now_utc: String) {
+    pub fn mark_success(
+        &mut self,
+        manifest_version: String,
+        manifest_id: String,
+        files_hash: String,
+        now_utc: String,
+    ) {
         self.current_manifest_version = Some(manifest_version);
         self.current_manifest_id = Some(manifest_id);
         self.current_files_hash = Some(files_hash);
@@ -290,7 +296,11 @@ mod tests {
     #[test]
     fn test_mark_success() {
         let mut state = InstalledState::new_minimal(
-            "uuid".into(), "stable".into(), "/c".into(), "0.1.0".into(), "https://x/".into(),
+            "uuid".into(),
+            "stable".into(),
+            "/c".into(),
+            "0.1.0".into(),
+            "https://x/".into(),
         );
         state.mark_success(
             "1.0.3".into(),
@@ -307,11 +317,22 @@ mod tests {
     #[test]
     fn test_mark_error() {
         let mut state = InstalledState::new_minimal(
-            "uuid".into(), "stable".into(), "/c".into(), "0.1.0".into(), "https://x/".into(),
+            "uuid".into(),
+            "stable".into(),
+            "/c".into(),
+            "0.1.0".into(),
+            "https://x/".into(),
         );
-        state.mark_error("LCH_DOWNLOAD_FAILED", "timeout", "2026-03-02T18:00:00Z".into());
+        state.mark_error(
+            "LCH_DOWNLOAD_FAILED",
+            "timeout",
+            "2026-03-02T18:00:00Z".into(),
+        );
         assert_eq!(state.last_update_result, UpdateResult::Failed);
-        assert_eq!(state.last_error_code.as_deref(), Some("LCH_DOWNLOAD_FAILED"));
+        assert_eq!(
+            state.last_error_code.as_deref(),
+            Some("LCH_DOWNLOAD_FAILED")
+        );
     }
 
     #[test]
@@ -319,7 +340,13 @@ mod tests {
         let mut tx = UpdateTransaction::idle();
         assert!(!tx.needs_recovery());
 
-        tx.begin("tx1".into(), "1.0".into(), "s:1.0".into(), "now".into(), "/tmp".into());
+        tx.begin(
+            "tx1".into(),
+            "1.0".into(),
+            "s:1.0".into(),
+            "now".into(),
+            "/tmp".into(),
+        );
         assert!(tx.needs_recovery());
         assert_eq!(tx.status, UpdateTxStatus::Preparing);
 
@@ -330,7 +357,11 @@ mod tests {
     #[test]
     fn test_serialize_roundtrip() {
         let state = InstalledState::new_minimal(
-            "uuid-1".into(), "test".into(), "/client".into(), "0.1.0".into(), "https://api/".into(),
+            "uuid-1".into(),
+            "test".into(),
+            "/client".into(),
+            "0.1.0".into(),
+            "https://api/".into(),
         );
         let json = serde_json::to_string_pretty(&state).expect("serialize");
         let back: InstalledState = serde_json::from_str(&json).expect("deserialize");

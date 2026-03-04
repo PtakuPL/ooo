@@ -52,11 +52,7 @@ pub fn compute_files_hash(
     let mut entries: Vec<&str> = manifest
         .files
         .iter()
-        .filter(|f| {
-            f.managed
-                && f.action == ManifestFileAction::File
-                && f.include_in_files_hash
-        })
+        .filter(|f| f.managed && f.action == ManifestFileAction::File && f.include_in_files_hash)
         .map(|f| f.path.as_str())
         .collect();
 

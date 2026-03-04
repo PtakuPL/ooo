@@ -233,8 +233,12 @@ pub async fn run_repair(args: &CliArgs) -> i32 {
 
         match api.download_file(&file_action.url).await {
             Ok(data) => {
-                match patcher::stage_file(&ctx, &file_action.path, &data, &file_action.expected_sha256)
-                {
+                match patcher::stage_file(
+                    &ctx,
+                    &file_action.path,
+                    &data,
+                    &file_action.expected_sha256,
+                ) {
                     Ok(()) => {
                         if let Err(e) = patcher::apply_staged_file(&ctx, &file_action.path) {
                             eprintln!("  [BŁĄD] Nie mogę zastosować {}: {}", file_action.path, e);
@@ -261,7 +265,11 @@ pub async fn run_repair(args: &CliArgs) -> i32 {
 
     let _ = ctx.cleanup();
 
-    if fail_count > 0 { 33 } else { 0 }
+    if fail_count > 0 {
+        33
+    } else {
+        0
+    }
 }
 
 // ─────────────────────────────────────────────────────────
@@ -275,7 +283,10 @@ pub fn run_status(args: &CliArgs) -> i32 {
     let state_path = launcher_data.join("installed_state.json");
 
     if !state_path.exists() {
-        eprintln!("Brak pliku installed_state.json w: {}", state_path.display());
+        eprintln!(
+            "Brak pliku installed_state.json w: {}",
+            state_path.display()
+        );
         eprintln!("Uruchom 'launcher-cli update' aby utworzyć stan.");
         return 1;
     }
@@ -432,11 +443,10 @@ async fn run_update_flow(
 
     // 2. Skan lokalnych plików
     tracing::info!("Skanuję lokalne pliki...");
-    let local_index =
-        LocalFileIndex::scan_from_manifest(&manifest, client_dir).map_err(|e| {
-            eprintln!("[BŁĄD] Skan plików nie powiódł się: {}", e);
-            31i32
-        })?;
+    let local_index = LocalFileIndex::scan_from_manifest(&manifest, client_dir).map_err(|e| {
+        eprintln!("[BŁĄD] Skan plików nie powiódł się: {}", e);
+        31i32
+    })?;
 
     tracing::info!("Zeskanowano {} plików", local_index.files.len());
 
@@ -503,7 +513,15 @@ async fn run_update_flow(
     };
 
     // Begin transaction
-    installed_state.update_transaction.begin(&tx_id);
+    let now_utc = chrono_utc_now();
+    let staging_path = ctx.staging_dir.to_string_lossy().to_string();
+    installed_state.update_transaction.begin(
+        tx_id.clone(),
+        manifest.version.clone(),
+        manifest.manifest_id.clone(),
+        now_utc,
+        staging_path,
+    );
     installed_state.update_transaction.status = UpdateTxStatus::Downloading;
     let _ = state::save_state(&installed_state, &state_path);
 
@@ -530,12 +548,13 @@ async fn run_update_flow(
             34i32
         })?;
 
-        patcher::stage_file(&ctx, &file_action.path, &data, &file_action.expected_sha256)
-            .map_err(|e| {
+        patcher::stage_file(&ctx, &file_action.path, &data, &file_action.expected_sha256).map_err(
+            |e| {
                 eprintln!("[BŁĄD] Weryfikacja {}: {}", file_action.path, e);
                 let _ = patcher::rollback(&ctx, &mut installed_state);
                 35i32
-            })?;
+            },
+        )?;
 
         staged_files.push(file_action.path.clone());
     }
@@ -599,6 +618,8 @@ async fn request_token(
         files_hash: files_hash.to_string(),
         channel: args.channel.clone(),
         manifest_version: manifest.version.clone(),
+        nonce: None,
+        challenge_response: None,
     };
 
     match api.request_launch_token(&request).await {

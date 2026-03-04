@@ -245,8 +245,7 @@ mod tests {
     fn test_key(kid: &str, active: bool, deprecated: bool) -> HmacKey {
         HmacKey {
             kid: kid.to_string(),
-            key_hex: "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
-                .to_string(),
+            key_hex: "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef".to_string(),
             active,
             deprecated,
             added_at: None,
@@ -359,8 +358,7 @@ mod tests {
         let mut registry = HmacKeyRegistry::new();
         registry.add_key(HmacKey {
             kid: "key-wrong".to_string(),
-            key_hex: "0000000000000000000000000000000000000000000000000000000000000000"
-                .to_string(),
+            key_hex: "0000000000000000000000000000000000000000000000000000000000000000".to_string(),
             active: false,
             deprecated: true,
             added_at: None,

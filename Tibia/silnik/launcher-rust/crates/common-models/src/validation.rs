@@ -43,7 +43,9 @@ pub fn validate_url(url: &str, require_https: bool) -> Result<(), ValidationErro
         &trimmed[7..]
     };
 
-    if after_scheme.is_empty() || !after_scheme.contains('.') && !after_scheme.starts_with("localhost") {
+    if after_scheme.is_empty()
+        || !after_scheme.contains('.') && !after_scheme.starts_with("localhost")
+    {
         return Err(ValidationError::InvalidUrl {
             url: url.to_string(),
             reason: "missing host".to_string(),
@@ -141,10 +143,7 @@ pub fn validate_sha256_hex(hash: &str) -> Result<(), ValidationError> {
 /// jak i z poprzedniej wersji manifestu aż do podanej daty.
 ///
 /// Zwraca `true` jeśli grace period jest aktywny (data nie minęła).
-pub fn is_grace_period_active(
-    grace_until_utc: Option<&str>,
-    now_utc: &str,
-) -> bool {
+pub fn is_grace_period_active(grace_until_utc: Option<&str>, now_utc: &str) -> bool {
     match grace_until_utc {
         None => false,
         Some(until) => {
@@ -354,14 +353,20 @@ mod tests {
     #[test]
     fn test_hash_matches_previous_with_grace() {
         assert!(is_files_hash_acceptable(
-            "new_hash", Some("old_hash"), "old_hash", true
+            "new_hash",
+            Some("old_hash"),
+            "old_hash",
+            true
         ));
     }
 
     #[test]
     fn test_hash_no_match_previous_without_grace() {
         assert!(!is_files_hash_acceptable(
-            "new_hash", Some("old_hash"), "old_hash", false
+            "new_hash",
+            Some("old_hash"),
+            "old_hash",
+            false
         ));
     }
 

@@ -179,7 +179,11 @@ fn at_003_correct_files_hash_allows_token() {
     let files_hash = compute_files_hash(&manifest, &client_dir).unwrap();
 
     // filesHash nie jest pusty i jest prawidłowym SHA-256
-    assert_eq!(files_hash.len(), 64, "AT-003: filesHash musi być 64-znakowy hex");
+    assert_eq!(
+        files_hash.len(),
+        64,
+        "AT-003: filesHash musi być 64-znakowy hex"
+    );
     assert!(
         files_hash.chars().all(|c| c.is_ascii_hexdigit()),
         "AT-003: filesHash musi być hex"
@@ -206,8 +210,7 @@ fn at_004_incorrect_files_hash_means_token_rejected() {
     // Symulacja: launcher wysyła zły filesHash
     let request = LaunchTokenRequest {
         launcher_version: "0.2.0".to_string(),
-        files_hash: "0000000000000000000000000000000000000000000000000000000000000000"
-            .to_string(),
+        files_hash: "0000000000000000000000000000000000000000000000000000000000000000".to_string(),
         channel: "test".to_string(),
         manifest_version: "2.0.0".to_string(),
         nonce: None,
@@ -315,22 +318,22 @@ fn at_008_self_update_success_flow() {
         min_version: "0.1.0".to_string(),
         required: false,
         url: "https://cdn.example.com/launcher-v1.0.0".to_string(),
-        sha256: Some("abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890"
-            .to_string()),
+        sha256: Some(
+            "abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890".to_string(),
+        ),
         release_date: None,
         notes: None,
     };
 
     let result = self_update::check_launcher_version("0.2.0", &response);
     match result {
-        self_update::VersionCheckResult::UpdateAvailable { current, latest, .. } => {
+        self_update::VersionCheckResult::UpdateAvailable {
+            current, latest, ..
+        } => {
             assert_eq!(current, "0.2.0");
             assert_eq!(latest, "1.0.0");
         }
-        other => panic!(
-            "AT-008: Oczekiwano UpdateAvailable, got {:?}",
-            other
-        ),
+        other => panic!("AT-008: Oczekiwano UpdateAvailable, got {:?}", other),
     }
 }
 
@@ -369,8 +372,7 @@ fn at_009_self_update_fail_rollback() {
     // Target powinien mieć zawartość backup
     let target_content = fs::read(&target_path).unwrap();
     assert_eq!(
-        target_content,
-        b"original_binary",
+        target_content, b"original_binary",
         "AT-009: Po rollbacku target musi mieć zawartość backup"
     );
 }
@@ -385,7 +387,12 @@ fn at_010_download_center_bad_checksum_rejected() {
     let expected_sha256 = "0000000000000000000000000000000000000000000000000000000000000000";
     let expected_size: u64 = 12345;
 
-    let result = artifact_verify::verify_artifact(data, "installer.exe", expected_sha256, Some(expected_size));
+    let result = artifact_verify::verify_artifact(
+        data,
+        "installer.exe",
+        expected_sha256,
+        Some(expected_size),
+    );
 
     assert!(
         !result.is_ok(),

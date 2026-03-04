@@ -156,8 +156,8 @@ impl UpdateProgressDto {
         if self.bytes_total == 0 {
             self.percent = 100;
         } else {
-            self.percent = ((self.bytes_done as f64 / self.bytes_total as f64) * 100.0)
-                .min(100.0) as u8;
+            self.percent =
+                ((self.bytes_done as f64 / self.bytes_total as f64) * 100.0).min(100.0) as u8;
         }
     }
 }
@@ -388,10 +388,8 @@ mod tests {
 
     #[test]
     fn test_error_info_from_code() {
-        let err = ErrorInfoDto::from_code(
-            &crate::error_codes::LauncherErrorCode::DownloadFailed,
-            3,
-        );
+        let err =
+            ErrorInfoDto::from_code(&crate::error_codes::LauncherErrorCode::DownloadFailed, 3);
         assert_eq!(err.code, "LCH_DOWNLOAD_FAILED");
         assert!(err.retryable);
         assert_eq!(err.attempt, 3);
@@ -510,11 +508,7 @@ mod tests {
 
     #[test]
     fn test_status_dto_with_error() {
-        let err = ErrorInfoDto::generic(
-            "LCH_CUSTOM".into(),
-            "Something broke".into(),
-            false,
-        );
+        let err = ErrorInfoDto::generic("LCH_CUSTOM".into(), "Something broke".into(), false);
         let dto = LauncherStatusDto::with_error("0.1.0".into(), "test".into(), err);
         let json = serde_json::to_value(&dto).unwrap();
         assert_eq!(json["phase"], "error");

@@ -128,10 +128,7 @@ impl ApiClient {
     // ─────────────────────────────────────────
 
     /// Pobiera manifest klienta z API i parsuje go (v1/v2 compat).
-    pub async fn fetch_manifest(
-        &self,
-        channel: &str,
-    ) -> Result<NormalizedManifest, ApiError> {
+    pub async fn fetch_manifest(&self, channel: &str) -> Result<NormalizedManifest, ApiError> {
         let url = self.url(&format!("update.php?channel={}", channel));
         tracing::info!("Pobieram manifest: {}", url);
 
@@ -171,12 +168,7 @@ impl ApiClient {
             request.manifest_version
         );
 
-        let resp = self
-            .http
-            .post(&url)
-            .json(request)
-            .send()
-            .await?;
+        let resp = self.http.post(&url).json(request).send().await?;
 
         let status = resp.status();
 

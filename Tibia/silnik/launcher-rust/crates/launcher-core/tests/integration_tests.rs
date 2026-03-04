@@ -76,10 +76,7 @@ fn sample_manifest_json() -> String {
 }
 
 /// Tworzy pliki w katalogu klienta i aktualizuje SHA-256 w manifeście.
-fn setup_client_files(
-    client_dir: &PathBuf,
-    files: &[(&str, &[u8])],
-) -> NormalizedManifest {
+fn setup_client_files(client_dir: &PathBuf, files: &[(&str, &[u8])]) -> NormalizedManifest {
     let mut json = sample_manifest_json();
 
     for (path, content) in files {
@@ -126,8 +123,14 @@ fn integration_fresh_install_generates_download_plan() {
     assert!(!plan.is_up_to_date);
     assert_eq!(plan.to_download.len(), 2);
     assert_eq!(plan.to_delete.len(), 0); // Brak old/deprecated.txt na dysku
-    assert!(plan.to_download.iter().any(|f| f.path == "modules/core.lua"));
-    assert!(plan.to_download.iter().any(|f| f.path == "data/config.json"));
+    assert!(plan
+        .to_download
+        .iter()
+        .any(|f| f.path == "modules/core.lua"));
+    assert!(plan
+        .to_download
+        .iter()
+        .any(|f| f.path == "data/config.json"));
 }
 
 // ─────────────────────────────────────────────
@@ -380,14 +383,8 @@ fn integration_state_save_load_roundtrip() {
     let loaded = state::load_state(&state_path).expect("load");
     assert_eq!(loaded.install_id, "int-test-id");
     assert_eq!(loaded.channel, "stable");
-    assert_eq!(
-        loaded.current_manifest_version.as_deref(),
-        Some("1.0.3")
-    );
-    assert_eq!(
-        loaded.current_files_hash.as_deref(),
-        Some("abcdef1234")
-    );
+    assert_eq!(loaded.current_manifest_version.as_deref(), Some("1.0.3"));
+    assert_eq!(loaded.current_files_hash.as_deref(), Some("abcdef1234"));
     assert_eq!(loaded.update_transaction.status, UpdateTxStatus::Idle);
 }
 
@@ -501,10 +498,7 @@ fn integration_serverlist_sync_generates_files() {
     let client_dir = tmp.path().join("client");
     fs::create_dir_all(&client_dir).expect("mkdir");
 
-    let manifest = setup_client_files(
-        &client_dir,
-        &[("modules/core.lua", b"core")],
-    );
+    let manifest = setup_client_files(&client_dir, &[("modules/core.lua", b"core")]);
 
     // Sync serverlist Lua
     let lua_path = client_dir.join("init_serverlist.lua");

@@ -253,10 +253,7 @@ pub enum ManifestValidationError {
     DuplicatePath(String),
 
     #[error("Missing field '{field}' for managed file '{path}'")]
-    MissingRequiredForFile {
-        path: String,
-        field: &'static str,
-    },
+    MissingRequiredForFile { path: String, field: &'static str },
 
     #[error("Path traversal detected: {0}")]
     PathTraversal(String),
@@ -306,7 +303,9 @@ impl NormalizedManifest {
     pub fn files_hash_entries(&self) -> Vec<&ManifestFileEntry> {
         self.files
             .iter()
-            .filter(|f| f.managed && f.action == ManifestFileAction::File && f.include_in_files_hash)
+            .filter(|f| {
+                f.managed && f.action == ManifestFileAction::File && f.include_in_files_hash
+            })
             .collect()
     }
 }
@@ -459,8 +458,7 @@ fn normalize_v2(raw: ManifestV2Raw) -> Result<NormalizedManifest, ManifestParseE
         files,
         servers: raw.servers,
         changelog: raw.changelog,
-        grace_previous_version_accepted_until_utc: raw
-            .grace_previous_version_accepted_until_utc,
+        grace_previous_version_accepted_until_utc: raw.grace_previous_version_accepted_until_utc,
         signature: raw.signature,
         notes: raw.notes,
     })
@@ -610,7 +608,10 @@ mod tests {
     fn test_reject_unsupported_schema() {
         let json = r#"{"schemaVersion":"3.0","version":"1","channel":"stable","files":[]}"#;
         let result = parse_manifest_compat(json);
-        assert!(matches!(result, Err(ManifestParseError::UnsupportedSchema(_))));
+        assert!(matches!(
+            result,
+            Err(ManifestParseError::UnsupportedSchema(_))
+        ));
     }
 
     #[test]
@@ -634,7 +635,9 @@ mod tests {
         let result = parse_manifest_compat(json);
         assert!(matches!(
             result,
-            Err(ManifestParseError::Validation(ManifestValidationError::DuplicatePath(_)))
+            Err(ManifestParseError::Validation(
+                ManifestValidationError::DuplicatePath(_)
+            ))
         ));
     }
 
@@ -650,7 +653,9 @@ mod tests {
             assert!(
                 matches!(
                     result,
-                    Err(ManifestParseError::Validation(ManifestValidationError::PathTraversal(_)))
+                    Err(ManifestParseError::Validation(
+                        ManifestValidationError::PathTraversal(_)
+                    ))
                 ),
                 "Should reject: {json}"
             );

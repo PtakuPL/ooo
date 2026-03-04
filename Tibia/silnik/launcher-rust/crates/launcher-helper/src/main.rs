@@ -90,7 +90,11 @@ fn wait_for_process_exit(pid: u32, timeout: Duration) -> Result<(), HelperError>
     let start = Instant::now();
     let poll_interval = Duration::from_millis(250);
 
-    tracing::info!("Waiting for launcher PID {} to exit (timeout: {:?})", pid, timeout);
+    tracing::info!(
+        "Waiting for launcher PID {} to exit (timeout: {:?})",
+        pid,
+        timeout
+    );
 
     loop {
         if !is_process_running(pid) {
@@ -228,10 +232,9 @@ pub fn execute_self_update(config: &UpdateConfig) -> Result<(), HelperError> {
     #[cfg(unix)]
     {
         use std::os::unix::fs::PermissionsExt;
-        if let Err(e) = std::fs::set_permissions(
-            &config.target_path,
-            std::fs::Permissions::from_mode(0o755),
-        ) {
+        if let Err(e) =
+            std::fs::set_permissions(&config.target_path, std::fs::Permissions::from_mode(0o755))
+        {
             tracing::warn!("Cannot set executable permission: {}", e);
         }
     }
@@ -239,8 +242,7 @@ pub fn execute_self_update(config: &UpdateConfig) -> Result<(), HelperError> {
     // 7. Restart launcher (jeśli żądany)
     if config.restart {
         tracing::info!("Restarting launcher: {}", config.target_path.display());
-        let result = Command::new(&config.target_path)
-            .spawn();
+        let result = Command::new(&config.target_path).spawn();
 
         match result {
             Ok(child) => {
@@ -265,7 +267,10 @@ pub fn execute_self_update(config: &UpdateConfig) -> Result<(), HelperError> {
         "backup": config.backup_path.to_string_lossy(),
         "timestamp": chrono_utc_now(),
     });
-    if let Err(e) = std::fs::write(&status_path, serde_json::to_string_pretty(&status_json).unwrap_or_default()) {
+    if let Err(e) = std::fs::write(
+        &status_path,
+        serde_json::to_string_pretty(&status_json).unwrap_or_default(),
+    ) {
         tracing::warn!("Cannot write update status: {}", e);
     }
 
@@ -330,10 +335,7 @@ fn chrono_utc_now() -> String {
     let mm = (time_of_day % 3600) / 60;
     let ss = time_of_day % 60;
 
-    format!(
-        "{:04}-{:02}-{:02}T{:02}:{:02}:{:02}Z",
-        y, m, d, hh, mm, ss
-    )
+    format!("{:04}-{:02}-{:02}T{:02}:{:02}:{:02}Z", y, m, d, hh, mm, ss)
 }
 
 /// Parsuje argumenty CLI.
@@ -362,27 +364,20 @@ pub fn parse_args(args: &[String]) -> Result<UpdateConfig, String> {
             }
             "--source" => {
                 i += 1;
-                config.source_path = PathBuf::from(
-                    args.get(i).ok_or("--source requires a value")?,
-                );
+                config.source_path = PathBuf::from(args.get(i).ok_or("--source requires a value")?);
             }
             "--target" => {
                 i += 1;
-                config.target_path = PathBuf::from(
-                    args.get(i).ok_or("--target requires a value")?,
-                );
+                config.target_path = PathBuf::from(args.get(i).ok_or("--target requires a value")?);
             }
             "--backup" => {
                 i += 1;
-                config.backup_path = PathBuf::from(
-                    args.get(i).ok_or("--backup requires a value")?,
-                );
+                config.backup_path = PathBuf::from(args.get(i).ok_or("--backup requires a value")?);
             }
             "--sha256" => {
                 i += 1;
-                config.expected_sha256 = Some(
-                    args.get(i).ok_or("--sha256 requires a value")?.clone(),
-                );
+                config.expected_sha256 =
+                    Some(args.get(i).ok_or("--sha256 requires a value")?.clone());
             }
             "--timeout" => {
                 i += 1;
@@ -464,15 +459,24 @@ mod tests {
     #[test]
     fn test_parse_args_minimal() {
         let args: Vec<String> = vec![
-            "--source", "/tmp/new_launcher",
-            "--target", "/opt/launcher/Launcher",
-            "--backup", "/opt/launcher/Launcher.bak",
-        ].into_iter().map(String::from).collect();
+            "--source",
+            "/tmp/new_launcher",
+            "--target",
+            "/opt/launcher/Launcher",
+            "--backup",
+            "/opt/launcher/Launcher.bak",
+        ]
+        .into_iter()
+        .map(String::from)
+        .collect();
 
         let config = parse_args(&args).unwrap();
         assert_eq!(config.source_path, PathBuf::from("/tmp/new_launcher"));
         assert_eq!(config.target_path, PathBuf::from("/opt/launcher/Launcher"));
-        assert_eq!(config.backup_path, PathBuf::from("/opt/launcher/Launcher.bak"));
+        assert_eq!(
+            config.backup_path,
+            PathBuf::from("/opt/launcher/Launcher.bak")
+        );
         assert!(!config.restart);
         assert!(config.launcher_pid.is_none());
     }
@@ -480,14 +484,23 @@ mod tests {
     #[test]
     fn test_parse_args_full() {
         let args: Vec<String> = vec![
-            "--pid", "12345",
-            "--source", "/tmp/new",
-            "--target", "/opt/launcher",
-            "--backup", "/opt/launcher.bak",
-            "--sha256", "abc123",
+            "--pid",
+            "12345",
+            "--source",
+            "/tmp/new",
+            "--target",
+            "/opt/launcher",
+            "--backup",
+            "/opt/launcher.bak",
+            "--sha256",
+            "abc123",
             "--restart",
-            "--timeout", "60",
-        ].into_iter().map(String::from).collect();
+            "--timeout",
+            "60",
+        ]
+        .into_iter()
+        .map(String::from)
+        .collect();
 
         let config = parse_args(&args).unwrap();
         assert_eq!(config.launcher_pid, Some(12345));
@@ -498,10 +511,10 @@ mod tests {
 
     #[test]
     fn test_parse_args_missing_source() {
-        let args: Vec<String> = vec![
-            "--target", "/opt/launcher",
-            "--backup", "/opt/launcher.bak",
-        ].into_iter().map(String::from).collect();
+        let args: Vec<String> = vec!["--target", "/opt/launcher", "--backup", "/opt/launcher.bak"]
+            .into_iter()
+            .map(String::from)
+            .collect();
 
         assert!(parse_args(&args).is_err());
     }

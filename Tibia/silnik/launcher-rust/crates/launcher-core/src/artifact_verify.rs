@@ -187,7 +187,9 @@ mod tests {
         let result = verify_artifact_strict(data, "test.exe", &hash, Some(999));
         assert!(result.is_err());
         match result.unwrap_err() {
-            ArtifactVerifyError::SizeMismatch { expected, actual, .. } => {
+            ArtifactVerifyError::SizeMismatch {
+                expected, actual, ..
+            } => {
                 assert_eq!(expected, 999);
                 assert_eq!(actual, 13);
             }

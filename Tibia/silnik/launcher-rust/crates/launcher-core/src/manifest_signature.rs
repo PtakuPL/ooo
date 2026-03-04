@@ -139,11 +139,8 @@ pub fn verify_manifest_signature(
             // Weryfikacja Ed25519
             // UWAGA: W pełnej implementacji tu byłoby ed25519-dalek::verify.
             // Na razie placeholder sprawdzający format + HMAC-SHA256 jako interim.
-            let is_valid = verify_ed25519_placeholder(
-                manifest_json.as_bytes(),
-                &sig_bytes,
-                &pub_key_bytes,
-            );
+            let is_valid =
+                verify_ed25519_placeholder(manifest_json.as_bytes(), &sig_bytes, &pub_key_bytes);
 
             if !is_valid && config.policy == SignaturePolicy::Require {
                 return Err(SignatureError::SignatureInvalid);
@@ -170,11 +167,7 @@ pub fn verify_manifest_signature(
 ///
 /// WAŻNE: To NIE jest prawdziwe Ed25519 — to tymczasowy placeholder
 /// do ustrukturyzowania flow. Prawdziwe Ed25519 w kolejnym etapie.
-fn verify_ed25519_placeholder(
-    message: &[u8],
-    signature: &[u8],
-    public_key: &[u8],
-) -> bool {
+fn verify_ed25519_placeholder(message: &[u8], signature: &[u8], public_key: &[u8]) -> bool {
     // Placeholder: oblicz HMAC-like = SHA-256(key + message) i porównaj
     // To nie jest kryptograficznie poprawne, ale strukturyzuje flow
     use sha2::{Digest, Sha256};
@@ -215,7 +208,9 @@ mod tests {
     fn test_config(policy: SignaturePolicy) -> SignatureConfig {
         SignatureConfig {
             policy,
-            public_key_hex: Some("a1b2c3d4e5f60718a1b2c3d4e5f60718a1b2c3d4e5f60718a1b2c3d4e5f60718".to_string()),
+            public_key_hex: Some(
+                "a1b2c3d4e5f60718a1b2c3d4e5f60718a1b2c3d4e5f60718a1b2c3d4e5f60718".to_string(),
+            ),
         }
     }
 

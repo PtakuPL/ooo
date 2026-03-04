@@ -16,17 +16,17 @@
 //! - telemetry: metryki techniczne opt-in (LR-054)
 //! - hmac_rotation: rotacja kluczy HMAC z kid (LR-056)
 
-pub mod integrity;
-pub mod file_index;
-pub mod planner;
-pub mod patcher;
-pub mod state;
-pub mod process_runner;
-pub mod serverlist_sync;
-pub mod repair;
 pub mod artifact_verify;
-pub mod self_update;
 pub mod challenge;
-pub mod manifest_signature;
-pub mod telemetry;
+pub mod file_index;
 pub mod hmac_rotation;
+pub mod integrity;
+pub mod manifest_signature;
+pub mod patcher;
+pub mod planner;
+pub mod process_runner;
+pub mod repair;
+pub mod self_update;
+pub mod serverlist_sync;
+pub mod state;
+pub mod telemetry;

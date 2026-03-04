@@ -193,7 +193,11 @@ fn files_hash_missing_marker_is_predictable() {
 #[test]
 fn url_validation_accepts_valid_https() {
     assert!(validate_url("https://cdn.example.com/files/", true).is_ok());
-    assert!(validate_url("https://api.example.com:8443/update.php?channel=stable", true).is_ok());
+    assert!(validate_url(
+        "https://api.example.com:8443/update.php?channel=stable",
+        true
+    )
+    .is_ok());
 }
 
 #[test]

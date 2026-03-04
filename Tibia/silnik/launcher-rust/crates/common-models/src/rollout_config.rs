@@ -72,10 +72,7 @@ fn default_true() -> bool {
 
 /// Sprawdza czy użytkownik powinien używać Rust launchera
 /// na podstawie rollout config i hashu identyfikatora.
-pub fn should_use_rust_launcher(
-    channel_config: &ChannelRollout,
-    user_identifier: &str,
-) -> bool {
+pub fn should_use_rust_launcher(channel_config: &ChannelRollout, user_identifier: &str) -> bool {
     // Sprawdź czy kanał jest aktywny
     if !channel_config.enabled {
         return false;
@@ -88,7 +85,10 @@ pub fn should_use_rust_launcher(
 
     // Sprawdź allowlist (jeśli niepusta, tylko ci użytkownicy)
     if !channel_config.allowlist.is_empty() {
-        return channel_config.allowlist.iter().any(|a| a == user_identifier);
+        return channel_config
+            .allowlist
+            .iter()
+            .any(|a| a == user_identifier);
     }
 
     // Sprawdź rollout procentowy
@@ -246,8 +246,11 @@ mod tests {
             }
         }
         // Z 50% rollout, powinno trafić ~500 (+/- margines)
-        assert!(rust_count > 350 && rust_count < 650,
-            "Expected ~500, got {}", rust_count);
+        assert!(
+            rust_count > 350 && rust_count < 650,
+            "Expected ~500, got {}",
+            rust_count
+        );
     }
 
     #[test]

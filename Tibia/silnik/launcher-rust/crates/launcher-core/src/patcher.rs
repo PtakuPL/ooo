@@ -188,13 +188,17 @@ pub fn apply_staged_file(ctx: &PatchContext, path: &str) -> Result<(), PatcherEr
         })?;
     }
 
-    fs::rename(&staged, &target).or_else(|_| {
-        // Fallback: rename może nie działać cross-device → kopiuj + usuń
-        fs::copy(&staged, &target).and_then(|_| fs::remove_file(&staged)).map(|_| ())
-    }).map_err(|e| PatcherError::IoError {
-        context: format!("apply staged file {}", path),
-        source: e,
-    })?;
+    fs::rename(&staged, &target)
+        .or_else(|_| {
+            // Fallback: rename może nie działać cross-device → kopiuj + usuń
+            fs::copy(&staged, &target)
+                .and_then(|_| fs::remove_file(&staged))
+                .map(|_| ())
+        })
+        .map_err(|e| PatcherError::IoError {
+            context: format!("apply staged file {}", path),
+            source: e,
+        })?;
 
     tracing::debug!("Applied: {}", path);
     Ok(())
@@ -234,7 +238,10 @@ pub fn apply_plan(
                 context: format!("delete {}", del.path),
                 source: e,
             })?;
-            state.update_transaction.delete_applied.push(del.path.clone());
+            state
+                .update_transaction
+                .delete_applied
+                .push(del.path.clone());
             tracing::debug!("Deleted: {}", del.path);
         }
     }
@@ -244,7 +251,10 @@ pub fn apply_plan(
 
 /// LR-022: Rollback — przywraca pliki z backupu po błędzie.
 pub fn rollback(ctx: &PatchContext, state: &mut InstalledState) -> Result<(), PatcherError> {
-    tracing::warn!("Uruchamiam rollback transakcji: {}", state.update_transaction.tx_id);
+    tracing::warn!(
+        "Uruchamiam rollback transakcji: {}",
+        state.update_transaction.tx_id
+    );
     state.update_transaction.status = UpdateTxStatus::RollbackInProgress;
     state::save_state(state, &ctx.state_path)?;
 
@@ -296,11 +306,7 @@ pub fn check_recovery_needed(state: &InstalledState) -> bool {
 }
 
 /// Aktualizuje managed_files_index po udanym update.
-pub fn update_managed_index(
-    state: &mut InstalledState,
-    plan: &UpdatePlan,
-    now_utc: &str,
-) {
+pub fn update_managed_index(state: &mut InstalledState, plan: &UpdatePlan, now_utc: &str) {
     // Dodaj/zaktualizuj pliki pobrane
     for file in &plan.to_replace {
         state.managed_files_index.insert(
@@ -394,12 +400,18 @@ mod tests {
 
         // Przygotuj state do rollback
         let mut installed = InstalledState::new_minimal(
-            "test".into(), "stable".into(), client_dir.to_string_lossy().to_string(),
-            "0.1.0".into(), "https://api/".into(),
+            "test".into(),
+            "stable".into(),
+            client_dir.to_string_lossy().to_string(),
+            "0.1.0".into(),
+            "https://api/".into(),
         );
         installed.update_transaction.tx_id = "test-tx-2".into();
         installed.update_transaction.status = UpdateTxStatus::Applying;
-        installed.update_transaction.updated_files.push("original.txt".into());
+        installed
+            .update_transaction
+            .updated_files
+            .push("original.txt".into());
 
         // Zapisz state (rollback go potrzebuje)
         state::save_state(&installed, &ctx.state_path).expect("save state");
@@ -431,7 +443,11 @@ mod tests {
     #[test]
     fn test_check_recovery_needed() {
         let state = InstalledState::new_minimal(
-            "test".into(), "stable".into(), "/c".into(), "0.1.0".into(), "https://api/".into(),
+            "test".into(),
+            "stable".into(),
+            "/c".into(),
+            "0.1.0".into(),
+            "https://api/".into(),
         );
         assert!(!check_recovery_needed(&state));
 

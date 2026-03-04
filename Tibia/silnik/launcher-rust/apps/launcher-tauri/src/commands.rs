@@ -79,9 +79,7 @@ pub async fn get_status(state: State<'_, AppState>) -> Result<LauncherStatusDto,
 // ─────────────────────────────────────────────
 
 #[tauri::command]
-pub async fn check_for_updates(
-    state: State<'_, AppState>,
-) -> Result<UpdatePlanSummaryDto, String> {
+pub async fn check_for_updates(state: State<'_, AppState>) -> Result<UpdatePlanSummaryDto, String> {
     let (api_url, channel, client_dir) = {
         let g = state.inner.lock().map_err(|e| e.to_string())?;
         (
@@ -107,8 +105,7 @@ pub async fn check_for_updates(
         .map_err(|e| format!("Błąd skanowania: {e}"))?;
 
     // Wygeneruj plan
-    let plan = build_update_plan(&manifest, &index)
-        .map_err(|e| format!("Błąd planowania: {e}"))?;
+    let plan = build_update_plan(&manifest, &index).map_err(|e| format!("Błąd planowania: {e}"))?;
 
     tracing::info!("{}", plan.summary());
 
@@ -185,8 +182,7 @@ async fn run_update_inner(
     let index = LocalFileIndex::scan_from_manifest(&manifest, &client_dir)
         .map_err(|e| format!("Błąd skanowania: {e}"))?;
 
-    let plan = build_update_plan(&manifest, &index)
-        .map_err(|e| format!("Błąd planowania: {e}"))?;
+    let plan = build_update_plan(&manifest, &index).map_err(|e| format!("Błąd planowania: {e}"))?;
 
     if plan.is_up_to_date {
         let now = chrono_utc_now();
@@ -215,7 +211,8 @@ async fn run_update_inner(
     let tx_id = uuid::Uuid::new_v4().to_string();
     let ctx = PatchContext::new(&client_dir, &launcher_data, &tx_id);
 
-    ctx.init_dirs().map_err(|e| format!("Błąd init dirs: {e}"))?;
+    ctx.init_dirs()
+        .map_err(|e| format!("Błąd init dirs: {e}"))?;
 
     installed.update_transaction.begin(
         tx_id.clone(),
@@ -246,12 +243,7 @@ async fn run_update_inner(
 
         staged_paths.push(file_action.path.clone());
 
-        tracing::info!(
-            "Pobrano [{}/{}]: {}",
-            i + 1,
-            total_files,
-            file_action.path
-        );
+        tracing::info!("Pobrano [{}/{}]: {}", i + 1, total_files, file_action.path);
     }
 
     // --- Faza 4: Backup + Apply ---
@@ -339,6 +331,8 @@ pub async fn launch_game(state: State<'_, AppState>) -> Result<String, String> {
         files_hash,
         channel: channel.clone(),
         manifest_version,
+        nonce: None,
+        challenge_response: None,
     };
 
     let token_resp = api
@@ -436,13 +430,12 @@ pub async fn get_installation_info(
 // ─────────────────────────────────────────────
 
 #[tauri::command]
-pub async fn change_channel(
-    channel: String,
-    state: State<'_, AppState>,
-) -> Result<String, String> {
+pub async fn change_channel(channel: String, state: State<'_, AppState>) -> Result<String, String> {
     let valid = ["stable", "test", "dev"];
     if !valid.contains(&channel.as_str()) {
-        return Err(format!("Nieprawidłowy kanał: {channel}. Dostępne: stable, test, dev"));
+        return Err(format!(
+            "Nieprawidłowy kanał: {channel}. Dostępne: stable, test, dev"
+        ));
     }
 
     let mut g = state.inner.lock().map_err(|e| e.to_string())?;
@@ -495,8 +488,7 @@ pub async fn export_logs(state: State<'_, AppState>) -> Result<String, String> {
         }
     }
 
-    std::fs::write(&export_path, &content)
-        .map_err(|e| format!("Błąd zapisu eksportu: {e}"))?;
+    std::fs::write(&export_path, &content).map_err(|e| format!("Błąd zapisu eksportu: {e}"))?;
 
     Ok(export_path.display().to_string())
 }
@@ -604,8 +596,7 @@ pub async fn download_and_verify_artifact(
         .map_err(|e| format!("Nie można utworzyć katalogu downloads: {e}"))?;
 
     let save_path = downloads_dir.join(&filename);
-    std::fs::write(&save_path, &data)
-        .map_err(|e| format!("Nie można zapisać pliku: {e}"))?;
+    std::fs::write(&save_path, &data).map_err(|e| format!("Nie można zapisać pliku: {e}"))?;
 
     Ok(serde_json::json!({
         "savedTo": save_path.display().to_string(),
@@ -643,14 +634,12 @@ pub async fn check_launcher_update(
         launcher_core::self_update::check_launcher_version(&current_version, &version_resp);
 
     match check_result {
-        launcher_core::self_update::VersionCheckResult::UpToDate => {
-            Ok(serde_json::json!({
-                "updateAvailable": false,
-                "updateRequired": false,
-                "currentVersion": current_version,
-                "latestVersion": version_resp.version,
-            }))
-        }
+        launcher_core::self_update::VersionCheckResult::UpToDate => Ok(serde_json::json!({
+            "updateAvailable": false,
+            "updateRequired": false,
+            "currentVersion": current_version,
+            "latestVersion": version_resp.version,
+        })),
         launcher_core::self_update::VersionCheckResult::UpdateAvailable {
             current,
             latest,
@@ -691,9 +680,7 @@ pub async fn check_launcher_update(
 // ─────────────────────────────────────────────
 
 #[tauri::command]
-pub async fn perform_self_update(
-    state: State<'_, AppState>,
-) -> Result<serde_json::Value, String> {
+pub async fn perform_self_update(state: State<'_, AppState>) -> Result<serde_json::Value, String> {
     let (api_url, current_version, launcher_data) = {
         let guard = state.inner.lock().map_err(|e| e.to_string())?;
         (
@@ -722,7 +709,8 @@ pub async fn perform_self_update(
         launcher_core::self_update::VersionCheckResult::UpdateAvailable { url, sha256, .. }
         | launcher_core::self_update::VersionCheckResult::UpdateRequired { url, sha256, .. } => {
             let sha = sha256.ok_or_else(|| {
-                "Serwer nie zwrócił SHA-256 paczki — self-update zablokowany (brak weryfikacji)".to_string()
+                "Serwer nie zwrócił SHA-256 paczki — self-update zablokowany (brak weryfikacji)"
+                    .to_string()
             })?;
             (url, sha)
         }
@@ -745,7 +733,8 @@ pub async fn perform_self_update(
         .map_err(|e| format!("Weryfikacja paczki: {e}"))?;
 
     // 4. Stage do staging/
-    let exe_path = std::env::current_exe().map_err(|e| format!("Nie można ustalić ścieżki exe: {e}"))?;
+    let exe_path =
+        std::env::current_exe().map_err(|e| format!("Nie można ustalić ścieżki exe: {e}"))?;
     let plan = launcher_core::self_update::build_self_update_plan(
         &url,
         &sha256,

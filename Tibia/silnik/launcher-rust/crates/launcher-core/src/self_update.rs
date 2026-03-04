@@ -132,7 +132,10 @@ pub fn check_launcher_version(
     let latest = match semver::Version::parse(&server_response.version) {
         Ok(v) => v,
         Err(_) => {
-            tracing::warn!("Cannot parse server launcher version: {}", server_response.version);
+            tracing::warn!(
+                "Cannot parse server launcher version: {}",
+                server_response.version
+            );
             return VersionCheckResult::UpToDate; // Nie blokujemy jeśli serwer zwraca śmieci
         }
     };
@@ -208,10 +211,7 @@ pub fn verify_self_update_package(
 }
 
 /// Zapisuje pobraną paczkę do staging.
-pub fn stage_self_update_package(
-    data: &[u8],
-    staging_path: &Path,
-) -> Result<(), SelfUpdateError> {
+pub fn stage_self_update_package(data: &[u8], staging_path: &Path) -> Result<(), SelfUpdateError> {
     if let Some(parent) = staging_path.parent() {
         std::fs::create_dir_all(parent)?;
     }
@@ -241,11 +241,16 @@ pub fn launch_helper(plan: &SelfUpdatePlan) -> Result<u32, SelfUpdateError> {
     let current_pid = std::process::id();
 
     let mut cmd = std::process::Command::new(&plan.helper_path);
-    cmd.arg("--pid").arg(current_pid.to_string())
-        .arg("--source").arg(&plan.staging_path)
-        .arg("--target").arg(&plan.target_path)
-        .arg("--backup").arg(&plan.backup_path)
-        .arg("--sha256").arg(&plan.expected_sha256);
+    cmd.arg("--pid")
+        .arg(current_pid.to_string())
+        .arg("--source")
+        .arg(&plan.staging_path)
+        .arg("--target")
+        .arg(&plan.target_path)
+        .arg("--backup")
+        .arg(&plan.backup_path)
+        .arg("--sha256")
+        .arg(&plan.expected_sha256);
 
     if plan.restart {
         cmd.arg("--restart");
@@ -303,7 +308,10 @@ pub fn check_for_rollback(backup_path: &Path, target_path: &Path) -> Result<bool
 
     // Update się nie powiódł — sprawdź czy backup istnieje
     if backup_path.exists() {
-        tracing::warn!("Previous self-update may have failed — backup exists at {}", backup_path.display());
+        tracing::warn!(
+            "Previous self-update may have failed — backup exists at {}",
+            backup_path.display()
+        );
         // NIE robimy automatycznego rollbacku — zostawiamy decyzję launcherowi
         return Ok(true);
     }
@@ -377,7 +385,11 @@ mod tests {
     use super::*;
     use common_models::api_responses::LauncherVersionResponse;
 
-    fn make_version_response(version: &str, min_version: &str, required: bool) -> LauncherVersionResponse {
+    fn make_version_response(
+        version: &str,
+        min_version: &str,
+        required: bool,
+    ) -> LauncherVersionResponse {
         LauncherVersionResponse {
             version: version.to_string(),
             min_version: min_version.to_string(),
@@ -402,7 +414,9 @@ mod tests {
     fn test_newer_version_available() {
         let resp = make_version_response("0.2.0", "0.1.0", false);
         match check_launcher_version("0.1.0", &resp) {
-            VersionCheckResult::UpdateAvailable { current, latest, .. } => {
+            VersionCheckResult::UpdateAvailable {
+                current, latest, ..
+            } => {
                 assert_eq!(current, "0.1.0");
                 assert_eq!(latest, "0.2.0");
             }

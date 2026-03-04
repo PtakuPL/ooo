@@ -26,8 +26,7 @@ async fn main() {
     // Inicjalizuj tracing
     tracing_subscriber::fmt()
         .with_env_filter(
-            EnvFilter::try_from_default_env()
-                .unwrap_or_else(|_| EnvFilter::new("info")),
+            EnvFilter::try_from_default_env().unwrap_or_else(|_| EnvFilter::new("info")),
         )
         .init();
 
@@ -41,7 +40,10 @@ async fn main() {
         "check" => flow::run_check_version(&args).await,
         "hash" => flow::run_compute_hash(&args).await,
         _ => {
-            eprintln!("Nieznana komenda: {}. Użyj: run, update, repair, status, check, hash", args.command);
+            eprintln!(
+                "Nieznana komenda: {}. Użyj: run, update, repair, status, check, hash",
+                args.command
+            );
             1
         }
     };

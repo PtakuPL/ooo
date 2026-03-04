@@ -124,11 +124,9 @@ fn contract_launch_token_response_deserializes() {
 
 #[test]
 fn contract_launch_token_error_response_deserializes() {
-    let json = std::fs::read_to_string(format!(
-        "{}/launch_token_error_response.json",
-        FIXTURES_DIR
-    ))
-    .expect("fixture file");
+    let json =
+        std::fs::read_to_string(format!("{}/launch_token_error_response.json", FIXTURES_DIR))
+            .expect("fixture file");
 
     let resp: common_models::api_responses::LaunchTokenErrorResponse =
         serde_json::from_str(&json).expect("deserialize LaunchTokenErrorResponse");
@@ -148,15 +146,23 @@ fn contract_launch_token_request_serializes_to_camel_case() {
         files_hash: "abcdef".into(),
         channel: "stable".into(),
         manifest_version: "1.0.3".into(),
+        nonce: None,
+        challenge_response: None,
     };
 
     let json = serde_json::to_value(&req).expect("serialize request");
 
     // Kontrakt wymaga camelCase w JSON
-    assert!(json.get("launcherVersion").is_some(), "camelCase: launcherVersion");
+    assert!(
+        json.get("launcherVersion").is_some(),
+        "camelCase: launcherVersion"
+    );
     assert!(json.get("filesHash").is_some(), "camelCase: filesHash");
     assert!(json.get("channel").is_some(), "camelCase: channel");
-    assert!(json.get("manifestVersion").is_some(), "camelCase: manifestVersion");
+    assert!(
+        json.get("manifestVersion").is_some(),
+        "camelCase: manifestVersion"
+    );
 
     // Nie powinno być snake_case
     assert!(json.get("launcher_version").is_none(), "no snake_case");
@@ -196,14 +202,8 @@ fn contract_installed_state_deserializes_full() {
     assert_eq!(state.channel, "stable");
     assert!(!state.client_install_path.is_empty());
     assert_eq!(state.launcher_version, "0.2.0");
-    assert_eq!(
-        state.current_manifest_version.as_deref(),
-        Some("1.0.3")
-    );
-    assert_eq!(
-        state.current_manifest_id.as_deref(),
-        Some("stable:1.0.3")
-    );
+    assert_eq!(state.current_manifest_version.as_deref(), Some("1.0.3"));
+    assert_eq!(state.current_manifest_id.as_deref(), Some("stable:1.0.3"));
     assert!(state.current_files_hash.is_some());
     assert!(state.tls_enforced);
 
@@ -241,7 +241,10 @@ fn contract_installed_state_roundtrip() {
         state.current_manifest_version,
         state2.current_manifest_version
     );
-    assert_eq!(state.update_transaction.status, state2.update_transaction.status);
+    assert_eq!(
+        state.update_transaction.status,
+        state2.update_transaction.status
+    );
     assert_eq!(
         state.managed_files_index.len(),
         state2.managed_files_index.len()
@@ -326,8 +329,8 @@ fn contract_manifest_v1_parses_to_normalized() {
     );
     let json = std::fs::read_to_string(fixture).expect("fixture file");
 
-    let manifest = common_models::manifest::parse_manifest_compat(&json)
-        .expect("parse manifest v1");
+    let manifest =
+        common_models::manifest::parse_manifest_compat(&json).expect("parse manifest v1");
 
     // Znormalizowany manifest powinien mieć wymagane pola
     assert_eq!(manifest.schema_version, "1");
@@ -348,8 +351,8 @@ fn contract_manifest_v2_parses_to_normalized() {
     );
     let json = std::fs::read_to_string(fixture).expect("fixture file");
 
-    let manifest = common_models::manifest::parse_manifest_compat(&json)
-        .expect("parse manifest v2");
+    let manifest =
+        common_models::manifest::parse_manifest_compat(&json).expect("parse manifest v2");
 
     // V2 specyficzne pola wg LR-005
     assert_eq!(manifest.schema_version, "2");
@@ -431,9 +434,9 @@ fn contract_manifest_overwrite_delete_policies_serde() {
 
     // DeletePolicy
     let cases_del = vec![
-        (DeletePolicy::Hard, "hard"),
-        (DeletePolicy::Soft, "soft"),
-        (DeletePolicy::KeepBackup, "keep_backup"),
+        (DeletePolicy::Allow, "allow"),
+        (DeletePolicy::Protect, "protect"),
+        (DeletePolicy::OrphanCleanup, "orphan_cleanup"),
     ];
 
     for (variant, expected) in cases_del {

@@ -121,11 +121,18 @@ mod tests {
         let tmp_path = path.with_extension("json.tmp");
 
         let state = InstalledState::new_minimal(
-            "id".into(), "stable".into(), "/c".into(), "0.1.0".into(), "https://x/".into(),
+            "id".into(),
+            "stable".into(),
+            "/c".into(),
+            "0.1.0".into(),
+            "https://x/".into(),
         );
 
         save_state(&state, &path).expect("save");
         assert!(path.exists());
-        assert!(!tmp_path.exists(), "Plik tymczasowy powinien być usunięty po rename");
+        assert!(
+            !tmp_path.exists(),
+            "Plik tymczasowy powinien być usunięty po rename"
+        );
     }
 }

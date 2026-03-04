@@ -62,12 +62,11 @@ impl LocalFileIndex {
                     source: e,
                 })?;
 
-                let metadata = std::fs::metadata(&full_path).map_err(|e| {
-                    FileIndexError::IoError {
+                let metadata =
+                    std::fs::metadata(&full_path).map_err(|e| FileIndexError::IoError {
                         path: entry.path.clone(),
                         source: e,
-                    }
-                })?;
+                    })?;
 
                 files.insert(
                     entry.path.clone(),
@@ -138,9 +137,7 @@ impl LocalFileIndex {
                         source: e,
                     })?;
 
-                    let size = std::fs::metadata(&path)
-                        .map(|m| m.len())
-                        .unwrap_or(0);
+                    let size = std::fs::metadata(&path).map(|m| m.len()).unwrap_or(0);
 
                     files.insert(
                         rel,

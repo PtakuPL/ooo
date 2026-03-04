@@ -42,11 +42,7 @@ pub fn validate_nonce(nonce: &str) -> Result<(), ChallengeError> {
 /// Sprawdza czy challenge response jest poprawny (weryfikacja lokalna).
 ///
 /// Używane do self-check przed wysłaniem requestu.
-pub fn verify_challenge_response(
-    nonce: &str,
-    files_hash: &str,
-    response: &str,
-) -> bool {
+pub fn verify_challenge_response(nonce: &str, files_hash: &str, response: &str) -> bool {
     let expected = compute_challenge_response(nonce, files_hash);
     expected.eq_ignore_ascii_case(response)
 }

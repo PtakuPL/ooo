@@ -37,10 +37,12 @@ pub fn validate_url(url: &str, require_https: bool) -> Result<(), ValidationErro
     }
 
     // Sprawdź minimalną strukturę: scheme://host
-    let after_scheme = if trimmed.starts_with("https://") {
-        &trimmed[8..]
+    let after_scheme = if let Some(stripped) = trimmed.strip_prefix("https://") {
+        stripped
+    } else if let Some(stripped) = trimmed.strip_prefix("http://") {
+        stripped
     } else {
-        &trimmed[7..]
+        trimmed
     };
 
     if after_scheme.is_empty()

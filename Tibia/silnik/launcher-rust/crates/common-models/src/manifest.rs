@@ -276,10 +276,10 @@ impl NormalizedManifest {
         }
 
         // filesHashExpected wymagane dla v2, opcjonalne dla v1-compat
-        if self.schema_version.starts_with('2') {
-            if self.files_hash_expected.as_deref().unwrap_or("").is_empty() {
-                return Err(ManifestValidationError::FilesHashExpectedRequired);
-            }
+        if self.schema_version.starts_with('2')
+            && self.files_hash_expected.as_deref().unwrap_or("").is_empty()
+        {
+            return Err(ManifestValidationError::FilesHashExpectedRequired);
         }
 
         let mut seen = BTreeSet::new();
@@ -549,10 +549,10 @@ fn infer_tags_from_path(path: &str) -> Vec<String> {
     if p.ends_with(".otui") {
         tags.push("otui".to_string());
     }
-    if p.contains("/modules/") {
+    if p.contains("modules/") {
         tags.push("ui".to_string());
     }
-    if p.contains("/data/") || p.contains("/assets/") {
+    if p.contains("data/") || p.contains("assets/") {
         tags.push("asset".to_string());
     }
 

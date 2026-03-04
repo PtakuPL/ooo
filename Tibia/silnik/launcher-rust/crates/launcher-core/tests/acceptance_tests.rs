@@ -4,7 +4,7 @@
 //! Testy działają offline z fixture'ami i mockami.
 
 use std::fs;
-use std::path::{Path, PathBuf};
+use std::path::Path;
 
 use common_models::api_responses::{
     LaunchTokenRequest, LaunchTokenResponse, LauncherVersionResponse,

@@ -10,7 +10,6 @@ use tauri::State;
 use common_models::api_responses::LaunchTokenRequest;
 use common_models::dto::*;
 use common_models::installed_state::InstalledState;
-use common_models::manifest::parse_manifest_compat;
 
 use launcher_api::client::{ApiClient, ApiClientConfig};
 use launcher_core::file_index::LocalFileIndex;
@@ -96,13 +95,10 @@ pub async fn check_for_updates(state: State<'_, AppState>) -> Result<UpdatePlanS
     .map_err(|e| e.to_string())?;
 
     // Pobierz manifest
-    let manifest_json = api
+    let manifest = api
         .fetch_manifest(&channel)
         .await
         .map_err(|e| format!("LCH_MANIFEST_FETCH_FAILED: {e}"))?;
-
-    let manifest = parse_manifest_compat(&manifest_json)
-        .map_err(|e| format!("LCH_MANIFEST_PARSE_FAILED: {e}"))?;
 
     // Skanuj lokalne pliki
     let index = LocalFileIndex::scan_from_manifest(&manifest, &client_dir)
@@ -178,13 +174,10 @@ async fn run_update_inner(
     });
 
     // --- Faza 1: Manifest ---
-    let manifest_json = api
+    let manifest = api
         .fetch_manifest(&channel)
         .await
         .map_err(|e| format!("LCH_MANIFEST_FETCH_FAILED: {e}"))?;
-
-    let manifest = parse_manifest_compat(&manifest_json)
-        .map_err(|e| format!("LCH_MANIFEST_PARSE_FAILED: {e}"))?;
 
     // --- Faza 2: Skan ---
     let index = LocalFileIndex::scan_from_manifest(&manifest, &client_dir)
@@ -400,13 +393,10 @@ pub async fn repair_installation(
     })
     .map_err(|e| e.to_string())?;
 
-    let manifest_json = api
+    let manifest = api
         .fetch_manifest(&channel)
         .await
         .map_err(|e| format!("LCH_MANIFEST_FETCH_FAILED: {e}"))?;
-
-    let manifest = parse_manifest_compat(&manifest_json)
-        .map_err(|e| format!("LCH_MANIFEST_PARSE_FAILED: {e}"))?;
 
     let (diag, _plan) = diagnose_installation(&manifest, &client_dir)
         .map_err(|e| format!("Błąd diagnostyki: {e}"))?;

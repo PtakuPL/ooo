@@ -190,7 +190,7 @@ mod tests {
 
         // Pliki powinny być w indeksie, ale jako nieistniejące
         assert!(!index.files.is_empty());
-        for (_, info) in &index.files {
+        for info in index.files.values() {
             assert!(!info.exists);
             assert!(info.sha256.is_empty());
         }

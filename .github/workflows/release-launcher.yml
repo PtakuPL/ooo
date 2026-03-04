@@ -1,0 +1,323 @@
+# Release Launcher — tag-based release pipeline
+# LR-066: Tag release publikuje artefakty
+# LR-067: Automatycznie generuje checksums.txt
+# LR-068: Placeholder dla podpisów .sig (manual signing)
+# LR-069: Generuje installer-catalog.json
+# LR-070: Smoke check po release
+
+name: Release Launcher
+
+on:
+  push:
+    tags:
+      - 'v[0-9]*'  # v0.1.0, v1.0.0, etc. (nie -rc)
+
+permissions:
+  contents: write  # Potrzebne do tworzenia GitHub Release
+
+defaults:
+  run:
+    working-directory: Tibia/silnik/launcher-rust
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  # ─────────────────────────────────────────────────
+  # 1. Build all crates (CLI + Tauri + Helper)
+  # ─────────────────────────────────────────────────
+  build:
+    name: Build (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-gnu
+            suffix: linux-x86_64
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            suffix: windows-x86_64
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Install Tauri system deps (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            Tibia/silnik/launcher-rust/target
+          key: release-${{ runner.os }}-cargo-${{ hashFiles('Tibia/silnik/launcher-rust/Cargo.lock') }}
+
+      - name: Build all (release)
+        run: cargo build --all --release --target ${{ matrix.target }}
+
+      - name: Run tests
+        run: cargo test --all --release --target ${{ matrix.target }}
+
+      - name: Collect binaries (Linux)
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          mkdir -p ../artifacts
+          cp target/${{ matrix.target }}/release/launcher-cli ../artifacts/launcher-cli-${{ matrix.suffix }}
+          cp target/${{ matrix.target }}/release/launcher-tauri ../artifacts/launcher-tauri-${{ matrix.suffix }}
+          cp target/${{ matrix.target }}/release/launcher-helper ../artifacts/launcher-helper-${{ matrix.suffix }}
+          chmod +x ../artifacts/launcher-*
+
+      - name: Collect binaries (Windows)
+        if: runner.os == 'Windows'
+        shell: bash
+        run: |
+          mkdir -p ../artifacts
+          cp target/${{ matrix.target }}/release/launcher-cli.exe ../artifacts/launcher-cli-${{ matrix.suffix }}.exe
+          cp target/${{ matrix.target }}/release/launcher-tauri.exe ../artifacts/launcher-tauri-${{ matrix.suffix }}.exe
+          cp target/${{ matrix.target }}/release/launcher-helper.exe ../artifacts/launcher-helper-${{ matrix.suffix }}.exe
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-${{ matrix.suffix }}
+          path: Tibia/silnik/artifacts/*
+          if-no-files-found: error
+
+  # ─────────────────────────────────────────────────
+  # 2. LR-067: Generate checksums + LR-069: installer-catalog.json
+  # ─────────────────────────────────────────────────
+  checksums-and-catalog:
+    name: Checksums & Catalog
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: all-artifacts
+
+      - name: Extract version from tag
+        id: version
+        run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+
+      # LR-067: Checksums
+      - name: Generate checksums.txt
+        working-directory: .
+        run: |
+          cd all-artifacts
+          find . -type f \( -name 'launcher-*' \) -exec sha256sum {} + | sort > ../checksums.txt
+          cat ../checksums.txt
+
+      # LR-069: installer-catalog.json
+      - name: Generate installer-catalog.json
+        working-directory: .
+        shell: bash
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          
+          # Zbierz hashe z checksums.txt
+          declare -A HASHES
+          declare -A SIZES
+          while IFS= read -r line; do
+            hash=$(echo "$line" | awk '{print $1}')
+            file=$(echo "$line" | awk '{print $2}' | sed 's|.*/||')
+            HASHES["$file"]="$hash"
+            
+            # Rozmiar pliku
+            filepath=$(echo "$line" | awk '{print $2}')
+            if [[ -f "$filepath" ]]; then
+              SIZES["$file"]=$(stat -c%s "$filepath" 2>/dev/null || echo "0")
+            fi
+          done < checksums.txt
+          
+          # Generuj JSON
+          cat > installer-catalog.json <<CATALOG_EOF
+          {
+            "channel": "stable",
+            "version": "$VERSION",
+            "generatedAtUtc": "$TIMESTAMP",
+            "artifacts": [
+              {
+                "platform": "windows",
+                "arch": "x86_64",
+                "filename": "launcher-tauri-windows-x86_64.exe",
+                "url": "https://github.com/${{ github.repository }}/releases/download/${GITHUB_REF_NAME}/launcher-tauri-windows-x86_64.exe",
+                "sha256": "${HASHES[launcher-tauri-windows-x86_64.exe]:-unknown}",
+                "size": ${SIZES[launcher-tauri-windows-x86_64.exe]:-0},
+                "type": "portable"
+              },
+              {
+                "platform": "linux",
+                "arch": "x86_64",
+                "filename": "launcher-tauri-linux-x86_64",
+                "url": "https://github.com/${{ github.repository }}/releases/download/${GITHUB_REF_NAME}/launcher-tauri-linux-x86_64",
+                "sha256": "${HASHES[launcher-tauri-linux-x86_64]:-unknown}",
+                "size": ${SIZES[launcher-tauri-linux-x86_64]:-0},
+                "type": "portable"
+              }
+            ]
+          }
+          CATALOG_EOF
+
+      - name: Upload checksums + catalog
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-meta
+          path: |
+            checksums.txt
+            installer-catalog.json
+
+  # ─────────────────────────────────────────────────
+  # 3. Create GitHub Release
+  # ─────────────────────────────────────────────────
+  release:
+    name: GitHub Release
+    needs: [checksums-and-catalog]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: all-artifacts
+
+      - name: Flatten artifacts
+        working-directory: .
+        run: |
+          mkdir -p release-files
+          find all-artifacts -type f -exec cp {} release-files/ \;
+          ls -la release-files/
+
+      - name: Extract version
+        id: version
+        run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: "Launcher v${{ steps.version.outputs.version }}"
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+          files: |
+            release-files/launcher-cli-*
+            release-files/launcher-tauri-*
+            release-files/launcher-helper-*
+            release-files/checksums.txt
+            release-files/installer-catalog.json
+          body: |
+            ## SerwerCanary Launcher v${{ steps.version.outputs.version }}
+            
+            ### Artefakty
+            | Platform | CLI | Launcher (Tauri) | Helper |
+            |----------|-----|------------------|--------|
+            | Windows x86_64 | `launcher-cli-windows-x86_64.exe` | `launcher-tauri-windows-x86_64.exe` | `launcher-helper-windows-x86_64.exe` |
+            | Linux x86_64 | `launcher-cli-linux-x86_64` | `launcher-tauri-linux-x86_64` | `launcher-helper-linux-x86_64` |
+            
+            ### Weryfikacja
+            Sprawdź `checksums.txt` dla SHA-256 hashów.
+            
+            ### LR-068: Podpisy (.sig)
+            Podpisy `.sig` będą dodane przez maintainera po ręcznym podpisaniu.
+
+  # ─────────────────────────────────────────────────
+  # 4. LR-070: Smoke check po release
+  # ─────────────────────────────────────────────────
+  smoke-check:
+    name: Smoke Check
+    needs: [release]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract version
+        id: version
+        run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Check release exists
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "Checking release for tag ${{ github.ref_name }}..."
+          
+          # Pobierz info o release
+          RELEASE_URL="https://api.github.com/repos/${{ github.repository }}/releases/tags/${{ github.ref_name }}"
+          RESPONSE=$(curl -s -H "Authorization: token $GH_TOKEN" "$RELEASE_URL")
+          
+          # Sprawdź czy release istnieje
+          if echo "$RESPONSE" | jq -e '.id' > /dev/null 2>&1; then
+            echo "✅ Release exists"
+          else
+            echo "❌ Release not found"
+            exit 1
+          fi
+          
+          # Policz artefakty
+          ASSETS_COUNT=$(echo "$RESPONSE" | jq '.assets | length')
+          echo "Assets count: $ASSETS_COUNT"
+          
+          if [[ "$ASSETS_COUNT" -lt 6 ]]; then
+            echo "⚠ Expected at least 6 assets (3 binaries × 2 platforms), got $ASSETS_COUNT"
+            echo "Assets:"
+            echo "$RESPONSE" | jq '.assets[].name'
+            exit 1
+          fi
+          
+          echo "✅ Asset count OK ($ASSETS_COUNT)"
+
+      - name: Verify checksums.txt present
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RELEASE_URL="https://api.github.com/repos/${{ github.repository }}/releases/tags/${{ github.ref_name }}"
+          RESPONSE=$(curl -s -H "Authorization: token $GH_TOKEN" "$RELEASE_URL")
+          
+          HAS_CHECKSUMS=$(echo "$RESPONSE" | jq '.assets[] | select(.name == "checksums.txt") | .name')
+          if [[ -n "$HAS_CHECKSUMS" ]]; then
+            echo "✅ checksums.txt present"
+          else
+            echo "❌ checksums.txt missing"
+            exit 1
+          fi
+
+      - name: Verify installer-catalog.json present
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RELEASE_URL="https://api.github.com/repos/${{ github.repository }}/releases/tags/${{ github.ref_name }}"
+          RESPONSE=$(curl -s -H "Authorization: token $GH_TOKEN" "$RELEASE_URL")
+          
+          HAS_CATALOG=$(echo "$RESPONSE" | jq '.assets[] | select(.name == "installer-catalog.json") | .name')
+          if [[ -n "$HAS_CATALOG" ]]; then
+            echo "✅ installer-catalog.json present"
+          else
+            echo "❌ installer-catalog.json missing"
+            exit 1
+          fi
+
+      - name: Summary
+        run: |
+          echo "## 🚀 Release Smoke Check" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Check | Result |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|-------|--------|" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Release exists | ✅ |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| Assets count | ✅ |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| checksums.txt | ✅ |" >> "$GITHUB_STEP_SUMMARY"
+          echo "| installer-catalog.json | ✅ |" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Release: \`${{ github.ref_name }}\`" >> "$GITHUB_STEP_SUMMARY"

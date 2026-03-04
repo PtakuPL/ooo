@@ -1,0 +1,99 @@
+# CI: Launcher Rust — fmt, clippy, test (matrix: Ubuntu + Windows)
+# LR-062 + LR-064: Matrix build Windows/Linux, PR nie przechodzi bez zielonego CI
+
+name: Launcher Rust CI
+
+on:
+  push:
+    branches: [master, feature/ticket-gate]
+    paths:
+      - 'Tibia/silnik/launcher-rust/**'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'Tibia/silnik/launcher-rust/**'
+
+defaults:
+  run:
+    working-directory: Tibia/silnik/launcher-rust
+
+jobs:
+  # ───────────────────────────────────────────────
+  # LR-064: Matrix build (Ubuntu + Windows)
+  # ───────────────────────────────────────────────
+  check:
+    name: CI (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        include:
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-gnu
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+          targets: ${{ matrix.target }}
+
+      - name: Install Tauri system deps (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+
+      - name: Cache cargo registry & build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            Tibia/silnik/launcher-rust/target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('Tibia/silnik/launcher-rust/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-
+
+      - name: Check formatting
+        run: cargo fmt --all -- --check
+
+      - name: Clippy (warnings = errors)
+        run: cargo clippy --all-targets --all-features -- -D warnings
+
+      - name: Run all tests
+        run: cargo test --all --verbose
+
+  # ───────────────────────────────────────────────
+  # LR-063: Contract tests job
+  # ───────────────────────────────────────────────
+  contract-tests:
+    name: Contract Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            Tibia/silnik/launcher-rust/target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('Tibia/silnik/launcher-rust/Cargo.lock') }}
+
+      - name: Run contract tests (common-models)
+        run: cargo test --package common-models --verbose
+
+      - name: Run integration tests (launcher-core)
+        run: cargo test --package launcher-core --test integration_tests --verbose
+
+      - name: Run helper tests (launcher-helper)
+        run: cargo test --package launcher-helper --verbose

@@ -11,7 +11,7 @@
 
 use sha2::{Digest, Sha256};
 use std::io::Read;
-use std::path::{Path, PathBuf};
+use std::path::Path;
 
 use common_models::manifest::{ManifestFileAction, NormalizedManifest};
 

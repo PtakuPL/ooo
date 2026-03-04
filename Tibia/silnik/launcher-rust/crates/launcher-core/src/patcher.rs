@@ -13,7 +13,7 @@ use std::fs;
 use std::path::{Path, PathBuf};
 
 use common_models::installed_state::{InstalledState, ManagedFileState, UpdateTxStatus};
-use common_models::update_plan::{PlannedDeleteAction, PlannedFileAction, UpdatePlan};
+use common_models::update_plan::UpdatePlan;
 
 use crate::integrity::sha256_bytes;
 use crate::state;

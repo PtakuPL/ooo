@@ -333,7 +333,7 @@ fn contract_manifest_v1_parses_to_normalized() {
         common_models::manifest::parse_manifest_compat(&json).expect("parse manifest v1");
 
     // Znormalizowany manifest powinien mieć wymagane pola
-    assert_eq!(manifest.schema_version, "1");
+    assert_eq!(manifest.schema_version, "1-compat");
     assert!(!manifest.version.is_empty());
     assert!(!manifest.channel.is_empty());
     assert!(!manifest.files.is_empty());
@@ -355,7 +355,7 @@ fn contract_manifest_v2_parses_to_normalized() {
         common_models::manifest::parse_manifest_compat(&json).expect("parse manifest v2");
 
     // V2 specyficzne pola wg LR-005
-    assert_eq!(manifest.schema_version, "2");
+    assert_eq!(manifest.schema_version, "2.0");
     assert!(manifest.files_hash_expected.is_some());
     assert!(!manifest.version.is_empty());
 }

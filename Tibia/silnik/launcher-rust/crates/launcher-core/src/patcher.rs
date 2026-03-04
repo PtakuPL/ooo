@@ -15,7 +15,7 @@ use std::path::{Path, PathBuf};
 use common_models::installed_state::{InstalledState, ManagedFileState, UpdateTxStatus};
 use common_models::update_plan::{PlannedDeleteAction, PlannedFileAction, UpdatePlan};
 
-use crate::integrity::{sha256_bytes, sha256_file};
+use crate::integrity::sha256_bytes;
 use crate::state;
 
 /// Błędy patchera.

@@ -12,7 +12,7 @@ use common_models::dto::*;
 use common_models::installed_state::InstalledState;
 use common_models::manifest::parse_manifest_compat;
 
-use launcher_api::client::ApiClient;
+use launcher_api::client::{ApiClient, ApiClientConfig};
 use launcher_core::file_index::LocalFileIndex;
 use launcher_core::integrity::compute_files_hash;
 use launcher_core::patcher::{self, PatchContext};
@@ -89,7 +89,11 @@ pub async fn check_for_updates(state: State<'_, AppState>) -> Result<UpdatePlanS
         )
     };
 
-    let api = ApiClient::new(&api_url);
+    let api = ApiClient::new(ApiClientConfig {
+        base_url: api_url,
+        ..Default::default()
+    })
+    .map_err(|e| e.to_string())?;
 
     // Pobierz manifest
     let manifest_json = api
@@ -155,7 +159,11 @@ async fn run_update_inner(
         )
     };
 
-    let api = ApiClient::new(&api_url);
+    let api = ApiClient::new(ApiClientConfig {
+        base_url: api_url.clone(),
+        ..Default::default()
+    })
+    .map_err(|e| e.to_string())?;
     let state_path = launcher_data.join("installed_state.json");
 
     // Załaduj lub utwórz stan
@@ -325,7 +333,11 @@ pub async fn launch_game(state: State<'_, AppState>) -> Result<String, String> {
         .to_string();
 
     // Pobierz token
-    let api = ApiClient::new(&api_url);
+    let api = ApiClient::new(ApiClientConfig {
+        base_url: api_url,
+        ..Default::default()
+    })
+    .map_err(|e| e.to_string())?;
     let token_req = LaunchTokenRequest {
         launcher_version: launcher_version.clone(),
         files_hash,
@@ -382,7 +394,11 @@ pub async fn repair_installation(
         )
     };
 
-    let api = ApiClient::new(&api_url);
+    let api = ApiClient::new(ApiClientConfig {
+        base_url: api_url,
+        ..Default::default()
+    })
+    .map_err(|e| e.to_string())?;
 
     let manifest_json = api
         .fetch_manifest(&channel)

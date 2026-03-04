@@ -84,8 +84,7 @@ impl HmacKeyRegistry {
     pub fn get_signing_key(&self) -> Option<&HmacKey> {
         self.keys
             .values()
-            .filter(|k| k.active && !k.deprecated)
-            .next()
+            .find(|k| k.active && !k.deprecated)
     }
 
     /// Pobiera wszystkie klucze do weryfikacji (aktywne + deprecated).
@@ -222,7 +221,7 @@ pub enum HmacKeyError {
 
 /// Dekoduje hex string na bajty.
 fn hex_decode(hex: &str) -> Result<Vec<u8>, HmacKeyError> {
-    if hex.len() % 2 != 0 {
+    if !hex.len().is_multiple_of(2) {
         return Err(HmacKeyError::InvalidHex("odd length".to_string()));
     }
     (0..hex.len())

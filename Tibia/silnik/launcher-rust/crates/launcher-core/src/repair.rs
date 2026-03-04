@@ -6,7 +6,7 @@
 use std::path::Path;
 
 use common_models::manifest::NormalizedManifest;
-use common_models::update_plan::{PlannedFileAction, UpdatePlan};
+use common_models::update_plan::UpdatePlan;
 
 use crate::file_index::LocalFileIndex;
 use crate::planner;
@@ -76,7 +76,7 @@ pub fn diagnose_installation(
 
     // Opcjonalnie: skan orphan files
     if let Ok(full_index) = LocalFileIndex::scan_full_directory(client_dir) {
-        for (path, _) in &full_index.files {
+        for path in full_index.files.keys() {
             let in_manifest = manifest.files.iter().any(|f| &f.path == path);
             if !in_manifest {
                 diag.orphan_files.push(path.clone());

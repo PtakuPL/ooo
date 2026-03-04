@@ -3,13 +3,11 @@
 //! Testują flow: manifest → skan → plan → stage → apply bez real API.
 //! Używają katalogów tymczasowych i fixture'ów JSON.
 
-use std::collections::BTreeMap;
 use std::fs;
-use std::path::PathBuf;
+use std::path::Path;
 
 use common_models::installed_state::{InstalledState, UpdateTxStatus};
 use common_models::manifest::{parse_manifest_compat, NormalizedManifest};
-use common_models::update_plan::UpdatePlan;
 
 use launcher_core::file_index::LocalFileIndex;
 use launcher_core::integrity::{compute_files_hash, sha256_bytes};
@@ -77,7 +75,7 @@ fn sample_manifest_json() -> String {
 }
 
 /// Tworzy pliki w katalogu klienta i aktualizuje SHA-256 w manifeście.
-fn setup_client_files(client_dir: &PathBuf, files: &[(&str, &[u8])]) -> NormalizedManifest {
+fn setup_client_files(client_dir: &Path, files: &[(&str, &[u8])]) -> NormalizedManifest {
     let mut json = sample_manifest_json();
 
     for (path, content) in files {

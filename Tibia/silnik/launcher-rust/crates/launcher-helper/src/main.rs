@@ -286,12 +286,12 @@ fn replace_binary(source: &Path, target: &Path) -> Result<(), std::io::Error> {
     {
         // Najpierw próbujemy rename (atomowo)
         match std::fs::rename(source, target) {
-            Ok(()) => return Ok(()),
+            Ok(()) => Ok(()),
             Err(_) => {
                 // Różne filesystemy — fallback na copy
                 std::fs::copy(source, target)?;
                 let _ = std::fs::remove_file(source);
-                return Ok(());
+                Ok(())
             }
         }
     }

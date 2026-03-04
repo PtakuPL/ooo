@@ -584,7 +584,6 @@ async fn run_update_flow(
 
     // Oblicz nowy filesHash po update
     let new_files_hash = compute_files_hash(&manifest, client_dir)
-        .map(|h| h)
         .unwrap_or_else(|_| String::new());
 
     // Zakończ transakcję

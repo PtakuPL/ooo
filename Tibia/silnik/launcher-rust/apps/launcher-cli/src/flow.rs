@@ -583,8 +583,8 @@ async fn run_update_flow(
     patcher::update_managed_index(&mut installed_state, &plan, &now);
 
     // Oblicz nowy filesHash po update
-    let new_files_hash = compute_files_hash(&manifest, client_dir)
-        .unwrap_or_else(|_| String::new());
+    let new_files_hash =
+        compute_files_hash(&manifest, client_dir).unwrap_or_else(|_| String::new());
 
     // Zakończ transakcję
     installed_state.mark_success(

@@ -82,9 +82,7 @@ impl HmacKeyRegistry {
 
     /// Pobiera aktywny klucz do podpisywania (najnowszy aktywny).
     pub fn get_signing_key(&self) -> Option<&HmacKey> {
-        self.keys
-            .values()
-            .find(|k| k.active && !k.deprecated)
+        self.keys.values().find(|k| k.active && !k.deprecated)
     }
 
     /// Pobiera wszystkie klucze do weryfikacji (aktywne + deprecated).

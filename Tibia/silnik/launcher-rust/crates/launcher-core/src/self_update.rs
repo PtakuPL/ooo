@@ -288,7 +288,10 @@ pub fn launch_helper(plan: &SelfUpdatePlan) -> Result<u32, SelfUpdateError> {
 /// Launcher przy starcie może sprawdzić:
 /// 1. Czy istnieje plik `*.update_status.json` z wynikiem helpera
 /// 2. Jeśli wynik = failed, przywraca backup
-pub fn check_for_rollback(backup_path: &Path, _target_path: &Path) -> Result<bool, SelfUpdateError> {
+pub fn check_for_rollback(
+    backup_path: &Path,
+    _target_path: &Path,
+) -> Result<bool, SelfUpdateError> {
     let status_path = backup_path.with_extension("update_status.json");
 
     if !status_path.exists() {

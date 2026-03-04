@@ -26,6 +26,8 @@ use launcher_core::state;
 fn manifest_v1_json() -> String {
     r#"{
         "version": "1.0.0",
+        "releaseDate": "2026-03-03",
+        "channel": "test",
         "files": [
             {
                 "path": "core.lua",
@@ -44,6 +46,7 @@ fn manifest_v2_json() -> String {
         "manifestId": "test:2.0.0",
         "version": "2.0.0",
         "releaseDate": "2026-03-03",
+        "generatedAtUtc": "2026-03-03T00:00:00Z",
         "channel": "test",
         "baseUrl": "https://cdn.example.com/files",
         "filesHashExpected": "test_hash",
@@ -74,6 +77,7 @@ fn manifest_v2_with_hashexpected(client_dir: &Path) -> NormalizedManifest {
         "manifestId": "test:2.0.0",
         "version": "2.0.0",
         "releaseDate": "2026-03-03",
+        "generatedAtUtc": "2026-03-03T00:00:00Z",
         "channel": "test",
         "baseUrl": "https://cdn.example.com",
         "filesHashExpected": "placeholder",
@@ -136,6 +140,7 @@ fn at_002_corrupted_local_file_triggers_redownload() {
         "manifestId": "test:1.0.0",
         "version": "1.0.0",
         "releaseDate": "2026-03-03",
+        "generatedAtUtc": "2026-03-03T00:00:00Z",
         "channel": "test",
         "baseUrl": "https://cdn.example.com",
         "filesHashExpected": "ph",
@@ -438,6 +443,7 @@ fn at_012_duplicate_path_rejected() {
         "manifestId": "test:dup",
         "version": "1.0.0",
         "releaseDate": "2026-03-03",
+        "generatedAtUtc": "2026-03-03T00:00:00Z",
         "channel": "test",
         "filesHashExpected": "test",
         "files": [
@@ -479,6 +485,7 @@ fn at_013_path_traversal_rejected() {
         "manifestId": "test:traversal",
         "version": "1.0.0",
         "releaseDate": "2026-03-03",
+        "generatedAtUtc": "2026-03-03T00:00:00Z",
         "channel": "test",
         "filesHashExpected": "test",
         "files": [
@@ -512,6 +519,7 @@ fn at_014_delete_action_without_hash_ok() {
         "manifestId": "test:delete",
         "version": "1.0.0",
         "releaseDate": "2026-03-03",
+        "generatedAtUtc": "2026-03-03T00:00:00Z",
         "channel": "test",
         "filesHashExpected": "test",
         "files": [

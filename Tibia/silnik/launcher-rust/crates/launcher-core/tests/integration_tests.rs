@@ -29,6 +29,7 @@ fn sample_manifest_json() -> String {
         "manifestId": "test:1.0.0",
         "version": "1.0.0",
         "releaseDate": "2026-03-03",
+        "generatedAtUtc": "2026-03-03T00:00:00Z",
         "channel": "test",
         "baseUrl": "https://cdn.example.com/files",
         "filesHashExpected": "placeholder",

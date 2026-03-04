@@ -4,7 +4,7 @@
 //! Testy działają offline z fixture'ami i mockami.
 
 use std::fs;
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 
 use common_models::api_responses::{
     LaunchTokenRequest, LaunchTokenResponse, LauncherVersionResponse,
@@ -62,7 +62,7 @@ fn manifest_v2_json() -> String {
     .to_string()
 }
 
-fn manifest_v2_with_hashexpected(client_dir: &PathBuf) -> NormalizedManifest {
+fn manifest_v2_with_hashexpected(client_dir: &Path) -> NormalizedManifest {
     let content = b"hello world content";
     let hash = sha256_bytes(content);
     fs::create_dir_all(client_dir).ok();

@@ -219,15 +219,19 @@ mod tests {
 
     #[test]
     fn test_config_validation_empty_url() {
-        let mut config = LauncherConfig::default();
-        config.api_base_url = String::new();
+        let config = LauncherConfig {
+            api_base_url: String::new(),
+            ..LauncherConfig::default()
+        };
         assert!(config.validate().is_err());
     }
 
     #[test]
     fn test_config_validation_bad_channel() {
-        let mut config = LauncherConfig::default();
-        config.channel = "beta".to_string();
+        let config = LauncherConfig {
+            channel: "beta".to_string(),
+            ..LauncherConfig::default()
+        };
         assert!(config.validate().is_err());
     }
 

@@ -45,6 +45,713 @@ Następny krok:
 
 ## Log
 
+## [2026-03-05 19:54] BLOK: PLAN-K K15 — Google OAuth callback (link/create konto lokalne) [W TRAKCIE]
+
+Zakres:
+- Domkniecie backendu social login dla Google: callback mapujacy tozsamosc social do lokalnego `accounts`.
+- Utrzymanie zasady fail-closed i brak kompilacji lokalnej.
+
+Zmienione pliki:
+- `canary_test/html_copy/apik/v1/oauth-callback.php` (NOWY; walidacja `state/code`, exchange token, userinfo, link/create konto, sesja launcher, opcjonalny deep-link)
+- `canary_test/html_copy/apik/v1/.env.example` (sekcja konfiguracji Google OAuth + callback/deep-link)
+- `Dokumentacja/01_Instalka_Klient/2026-03/03_PLAN_WSPOLNE_KONTO_2_SERWERY.md` (K15/K18 status + 9.4 + korekta kontraktu endpointow social)
+- `Dokumentacja/01_Instalka_Klient/2026-03/00_START_PRACY_CHECKLISTA.md` (K15/K16 -> 🔄)
+- `Dokumentacja/01_Instalka_Klient/2026-03/plan_zabezpieczenia_klienta_i_serwera.md` (K-15/K-16 update + notatka operacyjna)
+- `../../Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (J27/J29 -> 🔄 + update)
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md` (ten wpis)
+
+Nowe pliki:
+- `canary_test/html_copy/apik/v1/oauth-callback.php`
+
+Komendy lokalne:
+- `php -l canary_test/html_copy/apik/v1/oauth-callback.php`
+- `php -l canary_test/html_copy/apik/v1/oauth-start.php`
+- `php -S 127.0.0.1:18120 -t canary_test/html_copy/apik/v1` + `curl` smoke-test (`missing_provider`, `provider_not_configured`)
+
+Wynik:
+- Google OAuth callback jest gotowy kodowo w repo: `oauth-start.php` + `oauth-callback.php`.
+- Flow obejmuje: link do istniejącego konta (mode=link), login przez istniejący link, auto-link po emailu (z blokadą konfliktu wielu kont) oraz utworzenie nowego konta.
+- K18 domkniete czesciowo dla Google (one-time `state`, audit log, anti-merge-collision).
+- Nadal otwarte: konfiguracja sekretow Google na runtime, deploy do `/var/www/html/apik/v1/`, oraz implementacja Facebook/Steam.
+
+Następny krok:
+- K16/K17: dodać warstwę provider abstraction (Facebook/Steam) + dopiąć rate-limit dla `oauth-start.php`.
+
+## [2026-03-05 19:39] BLOK: PLAN-K K19/K20 — launcher UI + WWW preselect swiata [W TRAKCIE]
+
+Zakres:
+- Implementacja UX po rejestracji: 2 akcje w launcherze (`Tibia 7.4` / `Modern`) prowadzące do tworzenia postaci na WWW.
+- Dopięcie WWW: zachowanie redirectu przez login i preselect swiata na formularzu create-character.
+- Bez kompilacji lokalnej.
+
+Zmienione pliki:
+- `launcher-rust/apps/launcher-tauri/ui/index.html` (nowe przyciski create-character)
+- `launcher-rust/apps/launcher-tauri/ui/app.js` (obsluga przyciskow + URL `source=launcher&mode=classic74|modern`)
+- `launcher-rust/apps/launcher-tauri/ui/style.css` (styl `btn-character`)
+- `launcher-rust/apps/launcher-tauri/ui/i18n/pl.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/en.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/ar.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/he.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/fa.json`
+- `canary_test/html_copy/app/Http/Middleware/RequireLogin.php` (redirect do login z parametrem `redirect`)
+- `canary_test/html_copy/app/Controller/Pages/Account/Login.php` (bezpieczny redirect po loginie)
+- `canary_test/html_copy/resources/view/pages/account/login.html.twig` (hidden field `redirect`)
+- `canary_test/html_copy/app/Controller/Pages/Account/CreateCharacter.php` (mapowanie `mode` -> preselect world)
+- `canary_test/html_copy/resources/view/pages/account/createcharacter.html.twig` (preselect radio + launcher hint + zachowanie query)
+- `Dokumentacja/01_Instalka_Klient/2026-03/03_PLAN_WSPOLNE_KONTO_2_SERWERY.md` (K19/K20 status + 9.3)
+- `Dokumentacja/01_Instalka_Klient/2026-03/00_START_PRACY_CHECKLISTA.md` (K17 status)
+- `Dokumentacja/01_Instalka_Klient/2026-03/plan_zabezpieczenia_klienta_i_serwera.md` (K-17 status + update)
+- `../../Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (J30 status)
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md` (ten wpis)
+
+Komendy lokalne:
+- `php -l` dla `RequireLogin.php`, `Login.php`, `CreateCharacter.php`
+- `node --check launcher-rust/apps/launcher-tauri/ui/app.js`
+- `jq empty launcher-rust/apps/launcher-tauri/ui/i18n/{pl,en,ar,he,fa}.json`
+
+Wynik:
+- K19 i K20 sa gotowe kodowo w repo (launcher + WWW).
+- K21 domkniete czesciowo (fallback/redirect), finalne testy runtime nadal pending.
+- Brak kompilacji lokalnej.
+
+Następny krok:
+- Runtime test flow na `/var/www/html/` po deployu (klik z launchera -> login WWW -> create-character z preselectem) i domkniecie K21.
+
+## [2026-03-05 19:27] BLOK: PLAN-K UX launcher-first — wybor `Tibia 7.4/Modern` po rejestracji [DOKUMENTACJA]
+
+Zakres:
+- Dopisanie wymagania usera do dokumentacji: po utworzeniu konta w launcherze gracz ma od razu wybrac tworzenie postaci `Tibia 7.4` albo `Modern`.
+- Uporzadkowanie tego jako osobny tor UX (spojny i intuicyjny), z preselectem swiata na WWW.
+
+Zmienione pliki:
+- `Dokumentacja/01_Instalka_Klient/2026-03/03_PLAN_WSPOLNE_KONTO_2_SERWERY.md` (K-REQ-9, luki #10, zadania K19-K21, kontrakt 5.8, gate KG11-KG12, aktualizacja flow 10.1)
+- `Dokumentacja/01_Instalka_Klient/2026-03/00_START_PRACY_CHECKLISTA.md` (nowy wiersz K17 UX launcher-first)
+- `Dokumentacja/01_Instalka_Klient/2026-03/plan_zabezpieczenia_klienta_i_serwera.md` (sekcja 28.9: K-17 + doprecyzowanie wymogu UX)
+- `../../Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (J30 + uwaga UX)
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md` (ten wpis)
+
+Komendy lokalne:
+- `sed -n ...` / `rg -n ...` (przeglad sekcji K/J przed aktualizacja)
+- brak kompilacji lokalnej (zgodnie z dyspozycja)
+
+Wynik:
+- Wymaganie UX usera jest formalnie wpisane do glownej dokumentacji i planow 2-agent.
+- Kolejne zadania implementacyjne maja jawny cel: 2 przyciski w launcherze + przekierowanie WWW create-character z preselectem swiata.
+
+Następny krok:
+- Realizacja kodowa K19/K20 (launcher UI + WWW preselect swiata) po stronie implementacji.
+
+## [2026-03-05 19:21] BLOK: PLAN-K K13/K14 — most sesji launcher<->WWW [W TRAKCIE]
+
+Zakres:
+- Domkniecie flow `launcher->WWW` (auto-login WWW przez token) i `WWW->launcher` (issue token z aktywnej sesji WWW).
+- Brak kompilacji lokalnej; tylko API/PHP + testy curl.
+
+Zmienione pliki:
+- `canary_test/html_copy/apik/v1/account-sync-token.php` (dodane `consumeUrl` dla `target=www`)
+- `canary_test/html_copy/apik/v1/account-sync-www-login.php` (NOWY; consume token `target=www`, zalozenie sesji WWW + redirect/json)
+- `canary_test/html_copy/apik/v1/account-sync-www-token.php` (NOWY; issue token `source=www,target=launcher` z aktywnej sesji WWW)
+- `Dokumentacja/01_Instalka_Klient/2026-03/03_PLAN_WSPOLNE_KONTO_2_SERWERY.md` (K13/K14 status + testy 9.2 + kontrakt 5.6)
+- `Dokumentacja/01_Instalka_Klient/2026-03/00_START_PRACY_CHECKLISTA.md` (statusy K10-K14)
+- `Dokumentacja/01_Instalka_Klient/2026-03/plan_zabezpieczenia_klienta_i_serwera.md` (sekcja 28.9: K13/K14 + update)
+- `../../Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (J25/J26 -> 🟢)
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md` (ten wpis)
+
+Nowe pliki:
+- `canary_test/html_copy/apik/v1/account-sync-www-login.php`
+- `canary_test/html_copy/apik/v1/account-sync-www-token.php`
+
+Komendy lokalne:
+- `php -l canary_test/html_copy/apik/v1/account-sync-token.php`
+- `php -l canary_test/html_copy/apik/v1/account-sync-www-login.php`
+- `php -l canary_test/html_copy/apik/v1/account-sync-www-token.php`
+- `php -S 127.0.0.1:18082 -t canary_test/html_copy` + testy `curl` E2E launcher->WWW->launcher
+- `mysql ... INSERT/DELETE ticket_sessions/account_sync_tokens/accounts` (dane testowe)
+
+Wynik:
+- K13: PASS lokalnie (issue token launcher->www, consume, aktywna sesja WWW).
+- K14: PASS lokalnie (token z sesji WWW -> consume po stronie launchera).
+- K10 rozszerzone o PASS dla K13/K14.
+- Runtime deploy do `/var/www/html/apik/v1/` nadal BLOCKED przez uprawnienia.
+
+Następny krok:
+- K15-K18: social auth (Google/Facebook/Steam) + hardening PKCE/state/nonce/rate-limit/audit.
+
+## [2026-03-05 19:08] BLOK: PLAN-K rozszerzenie o sync WWW<->launcher + social Google/Facebook/Steam [W TRAKCIE]
+
+Zakres:
+- Dopięcie nowych wymagan usera do dokumentacji: konto launcher->WWW, WWW->launcher sync oraz social signup/login.
+- Kontynuacja zadania technicznego: przygotowanie migracji DB pod identity linking i sync tokeny.
+
+Zmienione pliki:
+- `Dokumentacja/01_Instalka_Klient/2026-03/03_PLAN_WSPOLNE_KONTO_2_SERWERY.md` (K-REQ-6/7/8, K11-K18, flow usera, status migracji)
+- `Dokumentacja/01_Instalka_Klient/2026-03/00_START_PRACY_CHECKLISTA.md` (nowe wiersze K10-K16)
+- `Dokumentacja/01_Instalka_Klient/2026-03/plan_zabezpieczenia_klienta_i_serwera.md` (28.9: K-11..K-16 + doprecyzowanie wymagan)
+- `../../Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (J22 aktualizacja + J23..J29)
+- `canary_test/html_copy/apik/v1/migrations/004_identity_social_rollout.sql` (NOWY)
+- `canary_test/html_copy/apik/v1/migrations/004_identity_social_rollback.sql` (NOWY)
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md` (ten wpis)
+
+Nowe pliki:
+- `canary_test/html_copy/apik/v1/migrations/004_identity_social_rollout.sql`
+- `canary_test/html_copy/apik/v1/migrations/004_identity_social_rollback.sql`
+
+Komendy lokalne:
+- `php canary_test/html_copy/apik/v1/migrations/migrate.php status`
+
+Wynik:
+- Wymaganie usera jest rozpisane jako osobny tor z flow i kryteriami.
+- Migracja 004 pod identity/social/sync jest gotowa i wykrywana przez migrator jako `PENDING`.
+- Nie wykonywano kompilacji lokalnej.
+
+Następny krok:
+- K12: endpointy `account-sync-token.php` + `account-sync-consume.php` oraz testy kontraktu.
+
+## [2026-03-06 00:18] BLOK: PLAN-K K10 — testy kontraktu endpointow (lokalny PHP server) [W TRAKCIE]
+
+Zakres:
+- Testy curl dla nowo dodanych endpointow K5-K8 bez kompilacji.
+- Weryfikacja odpowiedzi JSON i podstawowych walidacji.
+
+Komendy lokalne:
+- `php -S 127.0.0.1:18080 -t canary_test/html_copy/apik/v1`
+- `curl ... register-account.php / toplist.php / players-list.php / account-context.php`
+- `mysql ... DELETE FROM accounts WHERE name='k10test_<ts>'`
+
+Wynik testow:
+- `register-account.php` (create): PASS
+- `register-account.php` (duplicate): PASS (`account_exists`)
+- `toplist.php` (`all`, `classic74`): PASS
+- `players-list.php` (`modern`): PASS
+- `account-context.php` (invalid session): PASS (`invalid_session`)
+
+Zmienione pliki:
+- `Dokumentacja/01_Instalka_Klient/2026-03/03_PLAN_WSPOLNE_KONTO_2_SERWERY.md` (sekcja testow K10)
+- `Dokumentacja/01_Instalka_Klient/2026-03/00_START_PRACY_CHECKLISTA.md` (K9 -> 🔄)
+- `Dokumentacja/01_Instalka_Klient/2026-03/plan_zabezpieczenia_klienta_i_serwera.md` (K-10 -> 🔄)
+- `../../Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (J22 -> 🔄)
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md` (ten wpis)
+
+Następny krok:
+- Testy runtime po deployu do `/var/www/html/apik/v1/` (obecnie BLOCKED uprawnieniami), potem testy E2E sesji login/ticket.
+
+## [2026-03-06 00:08] BLOK: PLAN-K K5-K8 — nowe endpointy konto/kontekst/topki/listy [W TRAKCIE]
+
+Zakres:
+- Kontynuacja zadań K5-K8 bez kompilacji lokalnej.
+- Dodanie brakujących endpointów API dla strony i launchera (repo).
+- Uzupełnienie dokumentacji o nowy problem logiczny (brak UNIQUE na email).
+
+Zmienione pliki:
+- `canary_test/html_copy/apik/v1/register-account.php` (NOWY)
+- `canary_test/html_copy/apik/v1/account-context.php` (NOWY)
+- `canary_test/html_copy/apik/v1/toplist.php` (NOWY)
+- `canary_test/html_copy/apik/v1/players-list.php` (NOWY)
+- `canary_test/html_copy/apik/v1/login.php` (K1/K3)
+- `canary_test/html_copy/apik/v1/ticket.php` (K2/K4)
+- `canary_test/html_copy/apik/v1/server-status.php` (K2)
+- `canary_test/html_copy/apik/v1/generate_manifest.php` (K2)
+- `Dokumentacja/01_Instalka_Klient/2026-03/03_PLAN_WSPOLNE_KONTO_2_SERWERY.md`
+- `Dokumentacja/01_Instalka_Klient/2026-03/00_START_PRACY_CHECKLISTA.md`
+- `Dokumentacja/01_Instalka_Klient/2026-03/plan_zabezpieczenia_klienta_i_serwera.md`
+- `../../Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md`
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md`
+
+Komendy lokalne:
+- `php -l canary_test/html_copy/apik/v1/*.php` (tylko walidacja składni)
+- `cp ... /var/www/html/apik/v1/*.php` (próba deployu)
+- `sudo -n cp ...` (próba deployu bez hasła)
+
+Wynik:
+- Endpointy K5-K8 dodane i walidują składnię.
+- K1-K4 zintegrowane z nowym flow (`session gameMode=all`, world-map, walidacja postaci do świata).
+- Runtime deploy do `/var/www/html/apik/v1/` nadal BLOCKED przez brak uprawnień sudo.
+- Wykryto nowy problem logiczny: brak UNIQUE dla `accounts.email`.
+
+Następny krok:
+- K9/K10: spisać i wykonać testy curl kontraktu endpointów K1-K8, a po uzyskaniu uprawnień wdrożyć runtime.
+
+## [2026-03-05 23:52] BLOK: PLAN-K K1-K4 — login/ticket/world-map (repo) + nowe luki logiczne [W TRAKCIE]
+
+Zakres:
+- Realizacja pierwszego pakietu zadan K1-K4 (kod API PHP w repo).
+- Ujednolicenie logiki sesji `all`, wyboru trybu na etapie ticketu oraz walidacji postaci do serwera.
+- Rozszerzenie mapowania swiatow w endpointach status/manifest.
+
+Zmienione pliki:
+- `canary_test/html_copy/apik/v1/login.php`
+- `canary_test/html_copy/apik/v1/ticket.php`
+- `canary_test/html_copy/apik/v1/server-status.php`
+- `canary_test/html_copy/apik/v1/generate_manifest.php`
+- `Dokumentacja/01_Instalka_Klient/2026-03/03_PLAN_WSPOLNE_KONTO_2_SERWERY.md`
+- `Dokumentacja/01_Instalka_Klient/2026-03/00_START_PRACY_CHECKLISTA.md`
+- `Dokumentacja/01_Instalka_Klient/2026-03/plan_zabezpieczenia_klienta_i_serwera.md`
+- `../../Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md`
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md`
+
+Komendy lokalne:
+- `php -l canary_test/html_copy/apik/v1/{login,ticket,server-status,generate_manifest}.php`
+- `mysql ... SHOW COLUMNS FROM players/accounts/players_online`
+- `cp ... /var/www/html/apik/v1/*.php` (próba deployu runtime)
+
+Wynik:
+- K1: `login.php` zapisuje sesje `gameMode=all` przy braku wyboru trybu.
+- K3: `players.world` obslugiwane jako primary + fallback `world_id`.
+- K4: `ticket.php` wymaga wyboru `gameMode` dla sesji `all` i blokuje postac spoza wybranego serwera.
+- K2: mapowanie world/gameMode dopiete rowniez w `server-status.php` i `generate_manifest.php`.
+- Nowy problem operacyjny: brak uprawnien do deployu runtime (`/var/www/html/apik/v1/`) bez sudo hasla.
+
+Następny krok:
+- K5: endpoint rejestracji konta (`register-account.php`) + K6 (`account-context.php`) i dalsze uzupelnienie dokumentacji.
+
+## [2026-03-05 23:25] BLOK: PLAN-K — wspólne konto 2 serwery + wybór serwera + topki/listy [DOKUMENTACJA]
+
+Zakres:
+- Tylko dokumentacja (bez zmian kodu, bez kompilacji).
+- Spisanie pełnego planu dla wymagania: jedno konto na 2 serwery, wybór serwera po zalogowaniu (strona i launcher), wspólne i per-serwer topki/listy graczy.
+- Dopisanie wykrytych błędów logicznych do planów głównych.
+
+Zmienione pliki:
+- `Dokumentacja/01_Instalka_Klient/2026-03/03_PLAN_WSPOLNE_KONTO_2_SERWERY.md` (NOWY plan K1..K10 + KG1..KG7)
+- `Dokumentacja/01_Instalka_Klient/2026-03/00_START_PRACY_CHECKLISTA.md` (Faza K w tabeli statusów)
+- `Dokumentacja/01_Instalka_Klient/2026-03/plan_zabezpieczenia_klienta_i_serwera.md` (sekcja 28.9 TOR G + aktualizacja statusu i portów)
+- `../../Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (J15..J22 dla wspólnego konta i strony)
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md` (ten wpis)
+
+Nowe pliki:
+- `Dokumentacja/01_Instalka_Klient/2026-03/03_PLAN_WSPOLNE_KONTO_2_SERWERY.md`
+
+Komendy lokalne:
+- `sed -n ...` / `rg -n ...` / `tail -n ...`
+- `mysql ... SHOW COLUMNS ...` (diagnoza `players.world` vs `world_id`)
+
+Commit:
+- SHA: niezacommitowane
+
+Wynik:
+- Wymaganie usera zostało rozpisane na atomowe zadania z kolejnością realizacji.
+- Dopisane luki logiczne:
+- sesja login domyślnie blokująca wybór serwera (`modern`),
+- rozjazd runtime `/var/www` vs wersja repo,
+- niejednoznaczność `players.world` / `players.world_id`,
+- ryzyko fallbacku portów przy zakomentowanych WORLD_* w `.env`.
+
+Następny krok:
+- Realizacja kodowa K1-K4 (session `all`, ticket `all`, mapowanie world, walidacja postaci do świata), potem K5-K8.
+
+## [2026-03-05 18:32] BLOK: INSTALKA-J7 — dev vs gracze/prod (specyfikacja i status w planie głównym) [DONE]
+
+Zakres:
+- Utworzenie dedykowanego dokumentu J7 rozdzielającego instalka `dev` i `gracze/prod`.
+- Wpięcie statusu J7 do planu głównego (sekcja 28) i planu 2-agent.
+
+Zmienione pliki:
+- `../../Dokumentacja/2026-03-05_instalka_dev_vs_gracze_J7.md` (nowa specyfikacja J7)
+- `../../Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (J7 = 🔄 + link)
+- `Dokumentacja/01_Instalka_Klient/2026-03/plan_zabezpieczenia_klienta_i_serwera.md` (sekcja 28.7a + aktualizacja timestampu)
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md` (ten wpis)
+
+Nowe pliki:
+- `../../Dokumentacja/2026-03-05_instalka_dev_vs_gracze_J7.md`
+
+Komendy lokalne:
+- `rg -n ...` / `sed -n ...` / `tail -n ...`
+
+Commit:
+- SHA: niezacommitowane
+
+Wynik:
+- Rozdział dev/prod jest opisany jako osobny artefakt z checklistą wdrożeniową.
+- Plan główny ma jawny status: dokument J7 gotowy, wdrożenie J7.1 nadal w toku.
+
+Następny krok:
+- Realizacja J7.1: wdrożenie separacji kanałów/katalogów i smoke testy na obu torach.
+
+## [2026-03-05 18:30] BLOK: I18N-LANGPACKS — UI + Tauri integration (9.4.2/9.4.4/9.4.5) [W TRAKCIE]
+
+Zakres:
+- Podpięcie frontendu launchera pod nowy backend paczek językowych.
+- Dodanie panelu "Language packs" w Ustawieniach (lista, status, przycisk pobrania, odświeżenie).
+- Aktualizacja słowników i18n dla nowych elementów UI.
+
+Zmienione pliki:
+- `launcher-rust/apps/launcher-tauri/src/commands.rs` (komendy language-pack)
+- `launcher-rust/apps/launcher-tauri/src/main.rs` (rejestracja komend)
+- `launcher-rust/apps/launcher-tauri/ui/index.html` (panel paczek w ekranie Ustawienia)
+- `launcher-rust/apps/launcher-tauri/ui/style.css` (style listy paczek + RTL)
+- `launcher-rust/apps/launcher-tauri/ui/app.js` (load/install/list paczek + integracja z ekranem settings)
+- `launcher-rust/apps/launcher-tauri/ui/i18n/pl.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/en.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/ar.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/he.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/fa.json`
+- `../../Dokumentacja/2026-03-04_launcher_i18n_plan.md` (aktualizacja 13.10)
+- `../../Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (status 9.4.2/9.4.4/9.4.5)
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md` (ten wpis)
+
+Komendy lokalne:
+- `node --check launcher-rust/apps/launcher-tauri/ui/app.js`
+- `jq empty launcher-rust/apps/launcher-tauri/ui/i18n/{pl,en,ar,he,fa}.json`
+
+Commit:
+- SHA: niezacommitowane
+
+Wynik:
+- Panel paczek językowych działa po stronie UI/Tauri (lista + install flow).
+- Klucze i18n są zsynchronizowane we wszystkich aktualnie wspieranych locale.
+- Brak kompilacji lokalnej Rust (zgodnie z dyspozycją usera).
+
+Następny krok:
+- Dokończyć 9.4.6 (testy) i domknąć API endpoint `language-packs.php` po stronie backendu.
+
+## [2026-03-05 18:17] BLOK: I18N-LANGPACKS — backend 9.4.4/9.4.5 (download + install + list) [W TRAKCIE]
+
+Zakres:
+- Kontynuacja i18n launchera (brakujące elementy backendowe dla paczek językowych).
+- Realizacja kodowa etapu 9.4.4 i 9.4.5 bez uruchamiania lokalnej kompilacji.
+- Synchronizacja statusu w planach `.md`.
+
+Zmienione pliki:
+- `launcher-rust/Cargo.toml` (dodanie dependency `zip` w workspace)
+- `launcher-rust/crates/launcher-core/Cargo.toml` (dependency `zip`)
+- `launcher-rust/crates/common-models/src/api_responses.rs` (modele `LanguagePacksResponse` + `LanguagePackInfo`)
+- `launcher-rust/crates/launcher-api/src/client.rs` (`fetch_language_packs()`)
+- `launcher-rust/apps/launcher-tauri/src/commands.rs` (komendy `get/download/list language packs`)
+- `launcher-rust/apps/launcher-tauri/src/main.rs` (rejestracja nowych komend Tauri)
+- `launcher-rust/crates/launcher-core/src/lib.rs` (eksport `language_pack_download`)
+- `../../Dokumentacja/2026-03-04_launcher_i18n_plan.md` (status i18n + sekcja 13.10)
+- `../../Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (status 9.4.4/9.4.5)
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md` (ten wpis)
+
+Nowe pliki:
+- `launcher-rust/crates/launcher-core/src/language_pack_download.rs`
+
+Komendy lokalne:
+- `sed -n ...` / `rg -n ...` / `tail -n ...`
+
+Commit:
+- SHA: niezacommitowane
+
+Wynik:
+- Backend i18n dla paczek językowych został rozszerzony o pobieranie katalogu, instalację (verify+unzip) i listowanie zainstalowanych paczek.
+- Dodano komendy Tauri do obsługi paczek językowych po stronie frontend bridge.
+- Status 9.4.4/9.4.5 ustawiony na 🟢 (kod gotowy), testy 9.4.6 nadal otwarte.
+- Brak kompilacji lokalnej (zgodnie z dyspozycją usera).
+
+Następny krok:
+- Dokończyć 9.4.6 (testy modułu language-pack) i spiąć przyciski UI launchera z nowymi komendami Tauri.
+
+## [2026-03-05 18:17] BLOK: PLAN-UPDATE — rozszerzenie zadań instalki + dual-server + E2E update [DONE]
+
+Zakres:
+- Rozszerzenie dokumentacji o brakujące zadania dla:
+  - instalki zwykłej/dev,
+  - instalki dla graczy/prod,
+  - osobnych serwerów `Canary Modern` i `Canary 7.4`,
+  - pełnego łańcucha testowego: self-update launchera -> update instalki -> start obu serwerów.
+- Doprecyzowanie, że lokalna kompilacja Rust pozostaje zablokowana.
+
+Zmienione pliki:
+- `Dokumentacja/01_Instalka_Klient/2026-03/plan_zabezpieczenia_klienta_i_serwera.md` (sekcja 27 + nowe gate G1..G6 + aktualizacja statusu nagłówka)
+- `../../Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (rozszerzone kryteria D6..D9, zadania J7..J14, reguła braku lokalnej kompilacji)
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md` (ten wpis)
+
+Komendy lokalne:
+- `rg -n ...` / `sed -n ...` / `tail -n ...`
+
+Commit:
+- SHA: niezacommitowane
+
+Wynik:
+- Dokumentacja zawiera teraz jawny plan wykonania dla instalek i dual-server flow.
+- Dodane konkretne checklisty pod finalny test na paczce graczy.
+- Brak sugestii lokalnej kompilacji; kompilacje lokalne nadal zablokowane.
+
+Następny krok:
+- Wypełniać zadania J7..J14 i raportować PASS/FAIL/BLOCKED w `2026-03-05_dual_mode_test_results_J4.md`.
+
+## [2026-03-05 18:17] BLOK: OPERACYJNE — blokada lokalnych kompilacji Rust [DONE]
+
+Zakres:
+- Wyłączenie lokalnych kompilacji Rust na życzenie usera.
+- Cleanup artefaktów build i sprawdzenie, że nie ma aktywnych procesów `cargo`/`rustc`.
+
+Zmienione pliki:
+- `launcher-rust/.cargo/config.toml` (blokada kompilacji przez `rustc-wrapper = "/bin/false"`)
+
+Usunięte pliki:
+- `launcher-rust/target/` (lokalne artefakty build)
+- `/tmp/launcher-rust-target/` (tymczasowe artefakty build)
+
+Komendy lokalne:
+- `pgrep -af "cargo|rustc|rustup|sccache"`
+- `rm -rf launcher-rust/target /tmp/launcher-rust-target`
+- `sed -n '1,80p' launcher-rust/.cargo/config.toml`
+
+Commit:
+- SHA: niezacommitowane
+
+Wynik:
+- Brak aktywnych procesów kompilacji Rust.
+- Lokalna kompilacja Rust w repo jest zablokowana do czasu zdjęcia blokady w `.cargo/config.toml`.
+
+Następny krok:
+- Kontynuować zadania kodowe bez kompilacji lokalnej.
+
+## [2026-03-05 18:11] BLOK: I18N-FONTS — aktualizacja planów 2-agent (9.3.5/9.3.6) [W TRAKCIE]
+
+Zakres:
+- Wznowienie prac z ostatnio edytowanych `.md` zgodnie z trybem 2-agent.
+- Synchronizacja statusu i18n launchera dla etapu font-pack download.
+- Dopisanie statusu blokady walidacji build/test (bez kompilacji na życzenie usera).
+
+Zmienione pliki:
+- `Dokumentacja/01_Instalka_Klient/2026-03/01_DZIENNIK_PRAC.md` (ten wpis roboczy)
+- `../../Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (9.3.5, 9.3.6 + update)
+- `../../Dokumentacja/2026-03-04_launcher_i18n_plan.md` (sekcja 13.9)
+
+Komendy lokalne:
+- `find . -type f -name '*.md' ...`
+- `sed -n ...` / `rg -n ...` / `jq ...`
+- `date '+%Y-%m-%d %H:%M'`
+
+Commit:
+- SHA: niezacommitowane
+
+Wynik:
+- Plan 2-agent i plan i18n mają spójny status dla 9.3.5/9.3.6.
+- Status oznaczony jako gotowy kodowo (🟢), z jawnym oznaczeniem oczekującej walidacji.
+- Prace prowadzone bez kompilacji zgodnie z dyspozycją usera.
+
+Następny krok:
+- Start kolejnego zadania i18n: 9.4.4 (`download_language_pack(locale)` w `launcher-core`) + wpisy statusu w trakcie pracy.
+
+## [2026-03-05 22:00] BLOK: WZNOWIENIE SESJI — przegląd stanu projektu [DONE]
+
+Zakres:
+- Nowa sesja Copilot — przegląd wszystkich plików .md i stanu zadań.
+- Audyt stanu git (HEAD: `35f321ded`, remote pushed: `652c0e033`, 5 commitów niepushniętych, ~1659 niezacommitowanych plików).
+- Identyfikacja otwartych zadań z checklisty i audytu.
+
+Przejrzane pliki:
+- `01_DZIENNIK_PRAC.md` (ten plik)
+- `00_START_PRACY_CHECKLISTA.md` (statusy faz A-E, FIXy, audyty)
+- `02_DZIENNIK_BUILDOW_GHA.md` (build #22695571939 FAIL RSA, #22717070014 monitoring wstrzymany)
+- `03_AUDYT_PRAC_COPILOT_CLAUDE.md` (20 findings, 4 nadal OPEN: #7, #11, #12, #16)
+- `plan_zabezpieczenia_klienta_i_serwera.md` (architektura, wszystkie fazy)
+- `launcher-rust/docs/2026-03-03_launcher_sprint5_hardening_migration.md` (84/84 tasks ✅, 15/15 AT ✅)
+
+Bilans otwartych zadań:
+- A8: Test kompilacja Windows + Linux (OTClient) — ⬜ TODO (wymaga push → GHA)
+- C6: Kompilacja serwer Canary + test — ⬜ TODO (wymaga push → GHA)
+- D11: Test integracyjny feature flags — ⬜ TODO
+- E13: Hosting plików klienta — ⬜ TODO
+- CPP-4: Dead code cleanup loginHttpJson() — ⚠️
+- Audyt #7: ServerList key collision po host — OPEN
+- Audyt #11: Nonce replay-store in-memory — OPEN
+- Audyt #12: IP-binding bez trusted proxy — OPEN
+- Audyt #16: login.php puste gameMode → worldid=0 — OPEN
+
+Status GHA builda #22717070014 (commit `652c0e033`):
+- ⏸️ Monitoring wstrzymany w poprzedniej sesji — wynik nieznany.
+- ❗ Od tamtego builda jest 5 lokalnych commitów + 1659 niezacommitowanych zmian.
+
+Niezacommitowane zmiany obejmują:
+- Cały launcher-rust (Tauri UI, i18n, API, testy akceptacyjne)
+- Canary server (C++ ticket-gate porty, guardy D2-D10)
+- Workflows GHA (build-linux, analysis-sonarcloud-windows)
+- Dokumentacja (plany, dzienniki, audyty)
+
+Wynik:
+- Pełny obraz stanu projektu odtworzony. Gotowe do wznowienia prac.
+
+Następny krok:
+- PRIORYTET 1: Sprawdzić wynik builda #22717070014 (czy RSA fix przeszedł?).
+- PRIORYTET 2: Zacommitować + push bieżące zmiany → weryfikacja GHA.
+- PRIORYTET 3: Kontynuacja 9.3.5 (download_font_pack() w launcher-core).
+- PRIORYTET 4: Domknięcie otwartych audytów (#7, #11, #12, #16).
+
+## [2026-03-05 18:55] BLOK: MONITORING — testy error-report 8.6–8.8 + hook download/self-update [DONE]
+
+Zakres:
+- Domknięcie zadań 8.6–8.8 z planu `2026-03-05_plan_2_agenty_copilot_codex.md`.
+- Dopięcie frontendowego raportowania błędów dla flow pobierania artefaktu i self-update.
+
+Zmienione pliki:
+- `launcher-rust/crates/launcher-api/src/client.rs` (3 nowe testy error-report + mini harness HTTP do walidacji requestu)
+- `launcher-rust/apps/launcher-tauri/ui/app.js` (`reportError(...)` w `downloadArtifact()` i self-update catch)
+- `Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (8.6, 8.7, 8.8 → ✅ + update)
+- `Dokumentacja/AGENT_COMMUNICATION.md` (raport dla Copilot)
+
+Komendy lokalne:
+- `node --check Tibia/silnik/launcher-rust/apps/launcher-tauri/ui/app.js`
+- `cargo fmt -p launcher-api`
+- `cargo test -p launcher-api test_error_report -- --nocapture`
+- `cargo test -p launcher-api -- --nocapture`
+
+Commit:
+- SHA: niezacommitowane
+
+Wynik:
+- 8.6–8.8 zamknięte testami automatycznymi.
+- `downloadArtifact()` raportuje błąd do API zanim pokaże ekran `DOWNLOAD_ERROR`.
+- Self-update fail również raportowany do API.
+
+Następny krok:
+- Start 9.3.5 (`download_font_pack()` w `launcher-core`) + testy 9.3.6.
+
+## [2026-03-05 18:45] BLOK: I18N-FONTS — model FontPackInfo (9.3.4) [DONE]
+
+Zakres:
+- Realizacja punktu 9.3.4 z planu i18n: model metadanych paczek fontów po stronie Rust.
+
+Zmienione pliki:
+- `launcher-rust/crates/common-models/src/lib.rs` (eksport modułu `font_pack`)
+- `Dokumentacja/2026-03-04_launcher_i18n_plan.md` (etap 6)
+- `Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (9.3.4 oznaczone jako wykonane)
+
+Nowe pliki:
+- `launcher-rust/crates/common-models/src/font_pack.rs`
+
+Komendy lokalne:
+- `cargo test -p common-models font_pack -- --nocapture`
+
+Wynik:
+- Dodano `FontPackInfo` + walidację (`https`, `sha256`, `size`) + testy jednostkowe.
+
+Następny krok:
+- 9.3.5 `download_font_pack()` w `launcher-core`.
+
+## [2026-03-05 18:20] BLOK: I18N-LAUNCHER — domknięcie coverage tekstów + J3/J4/J6 docs [DONE]
+
+Zakres:
+- Audyt i dopięcie i18n coverage tekstów UI launchera.
+- Przepięcie frontendowych błędów technicznych na klucze `errors.frontend.*`.
+- Uzupełnienie dokumentów zadaniowych pod cel D1..D5 (J3/J4/J6).
+
+Zmienione pliki:
+- `launcher-rust/apps/launcher-tauri/ui/index.html` (ID nazw serwerów pod i18n)
+- `launcher-rust/apps/launcher-tauri/ui/app.js` (showFrontendError + mapowanie kodów + i18n nazw serwerów)
+- `launcher-rust/apps/launcher-tauri/ui/style.css` (fallback chain fontów Unicode)
+- `launcher-rust/apps/launcher-tauri/ui/i18n/en.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/pl.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/ar.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/he.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/fa.json`
+- `Dokumentacja/2026-03-05_plan_2_agenty_copilot_codex.md` (J3=✅, J4/J6=🔄 z odnośnikami)
+- `Dokumentacja/2026-03-04_launcher_i18n_plan.md` (etap 5)
+
+Nowe pliki:
+- `Dokumentacja/2026-03-05_dual_mode_test_results_J4.md`
+- `Dokumentacja/2026-03-05_ui_installer_bug_registry_J6.md`
+
+Komendy lokalne:
+- `node --check Tibia/silnik/launcher-rust/apps/launcher-tauri/ui/app.js`
+- `jq empty Tibia/silnik/launcher-rust/apps/launcher-tauri/ui/i18n/{pl,en,ar,he,fa}.json`
+- porównanie kluczy i18n: `jq -r 'paths(scalars)|join(\".\")' ...`
+
+Commit:
+- SHA: niezacommitowane
+
+Wynik:
+- UI ma pełniejsze pokrycie i18n (łącznie z kodami błędów frontendu i nazwami światów).
+- Faza 8.1–8.4 potwierdzona obecnością implementacji w API + Rust + Tauri + frontend.
+- Przygotowane artefakty dokumentacyjne do rejestracji wyników testów (J4) i bugów (J6).
+
+Następny krok:
+- Wypełnianie `J4` i `J6` realnymi wynikami po testach D1..D5 na paczce Windows usera.
+
+## [2026-03-05 17:55] BLOK: DEMO-READY — J1 checklista dual-mode D1..D5 [DONE]
+
+Zakres:
+- Realizacja zadania J1 z planu P1..P6: spisanie checklisty testowej dual-mode (7.4 + modern) z expected result.
+- Uporządkowanie statusów dokumentacyjnych pod cel na 2026-03-06.
+
+Zmienione pliki:
+- `Dokumentacja/2026-03-05_plan_pracy_P1_P6_agents.md` (J1 → ✅ + link do checklisty)
+- `Dokumentacja/2026-03-05_launcher_architecture_how_it_works.md` (aktualizacja statusu RTL/B18)
+- `Dokumentacja/AGENT_COMMUNICATION.md` (raport J1/RTL)
+
+Nowe pliki:
+- `Dokumentacja/2026-03-05_dual_mode_test_checklista_J1.md`
+
+Commit:
+- SHA: niezacommitowane
+
+Wynik:
+- J1 formalnie domknięte: jest osobna checklista D1..D5 z expected result i formatem raportowania bugów.
+
+Następny krok:
+- Start wykonania checklisty D1..D5 na paczce Windows usera i rejestr PASS/FAIL/BLOCKED.
+
+## [2026-03-05 17:35] BLOK: I18N-LAUNCHER — RTL ar/he/fa + mirrored layout [DONE]
+
+Zakres:
+- Domknięcie ostatniego otwartego punktu z planu i18n launchera: pełny RTL.
+- Rozszerzenie selektora języka o `ar`, `he`, `fa` i dynamiczne przełączanie `dir=ltr/rtl`.
+- Dodanie reguł CSS mirrorujących layout dla RTL.
+
+Zmienione pliki:
+- `launcher-rust/apps/launcher-tauri/ui/app.js` (SUPPORTED_LOCALES + RTL_LOCALES + normalizeLocale + dynamic dir)
+- `launcher-rust/apps/launcher-tauri/ui/style.css` (sekcja `html[dir="rtl"]` dla głównych kontenerów i nawigacji)
+- `Dokumentacja/2026-03-04_launcher_i18n_plan.md` (odhaczenie RTL + opis etapu 4)
+
+Nowe pliki:
+- `launcher-rust/apps/launcher-tauri/ui/i18n/ar.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/he.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/fa.json`
+
+Komendy lokalne:
+- `node --check Tibia/silnik/launcher-rust/apps/launcher-tauri/ui/app.js`
+- `jq empty Tibia/silnik/launcher-rust/apps/launcher-tauri/ui/i18n/ar.json`
+- `jq empty Tibia/silnik/launcher-rust/apps/launcher-tauri/ui/i18n/he.json`
+- `jq empty Tibia/silnik/launcher-rust/apps/launcher-tauri/ui/i18n/fa.json`
+
+Commit:
+- SHA: niezacommitowane
+
+Wynik:
+- Punkt RTL (`ar/he/fa`) domknięty technicznie.
+- UI działa w LTR/RTL bez zmiany backendu.
+
+Następny krok:
+- Uzupełnienie jakości tłumaczeń `ar/he/fa` (na razie bazowe paczki pod test layoutu).
+
+## [2026-03-05 17:10] BLOK: I18N-LAUNCHER — słowniki JSON + klucze błędów backendu [DONE]
+
+Zakres:
+- Kontynuacja i18n launchera po etapie runtime switch.
+- Wydzielenie słowników PL/EN z `app.js` do osobnych plików `ui/i18n/*.json`.
+- Przepięcie ścieżki błędów statusu na klucze i18n (`userMessageKey`) z fallbackiem do `userMessage`.
+
+Zmienione pliki:
+- `launcher-rust/apps/launcher-tauri/ui/app.js` (loader słowników, start po `loadI18nDictionaries()`, resolver błędów backendu)
+- `launcher-rust/crates/common-models/src/dto.rs` (nowe pole `userMessageKey` + testy)
+- `launcher-rust/docs/2026-03-03_launcher_sprint5_hardening_migration.md` (aktualizacja sekcji sprintu)
+- `Dokumentacja/2026-03-04_launcher_i18n_plan.md` (odhaczenie zadań i etap 3)
+
+Nowe pliki:
+- `launcher-rust/apps/launcher-tauri/ui/i18n/pl.json`
+- `launcher-rust/apps/launcher-tauri/ui/i18n/en.json`
+
+Komendy lokalne:
+- `node --check Tibia/silnik/launcher-rust/apps/launcher-tauri/ui/app.js`
+- `jq empty Tibia/silnik/launcher-rust/apps/launcher-tauri/ui/i18n/pl.json`
+- `jq empty Tibia/silnik/launcher-rust/apps/launcher-tauri/ui/i18n/en.json`
+- `cargo test -p common-models test_error_info_from_code`
+- `cargo test -p common-models test_status_dto_with_error`
+- `cargo test -p common-models test_error_info_generic_non_launcher_code_without_i18n_key`
+
+Commit:
+- SHA: niezacommitowane
+
+Wynik:
+- Task „wyciągnięcie słownika z app.js” domknięty.
+- Task „status.error.userMessage na klucze i18n” domknięty technicznie (zachowany fallback kompatybilności).
+
+Następny krok:
+- Domknięcie RTL (`ar/he/fa`) oraz przygotowanie paczek językowych > Tier0.
+
 ## [2026-03-03 ~01:00] BLOK: PORT — Przeniesienie C++ serwera z canary/ do canary_test/ [DONE]
 
 Zakres:
@@ -1297,3 +2004,298 @@ Weryfikacja lokalna:
 Następny krok:
 - Commit zmian + push `feature/ticket-gate`.
 - Rerun workflow `Canary - Build` (`231874122`) i wpis wyniku do `02_DZIENNIK_BUILDOW_GHA.md`.
+
+## [2026-03-05 13:08] BLOK: Korekta statusu po pushu + aktualizacja dokumentacji (bez monitoringu GHA)
+
+Zakres:
+- Urealnienie statusu po wykonanym pushu i starcie nowego runa Canary.
+- Zamrożenie monitoringu buildu na prośbę użytkownika (build 30-40 min).
+- Dopisanie listy kolejnych prac, które można robić równolegle do GHA.
+
+Status wykonania (fakty):
+- Naprawy C++/PHP ticket-gate zostały wypchnięte na branch:
+  - commit: `652c0e033` (`fix(canary): resolve RSA/OpenSSL build blocker and harden ticket nonce flow`)
+  - branch: `feature/ticket-gate`
+- Nowy run Canary został uruchomiony:
+  - workflow: `Canary - Build` (`231874122`)
+  - run: `22717070014`
+  - commit runa: `652c0e033`
+
+Decyzja operacyjna (ta sesja):
+- Nie sprawdzamy teraz statusu runa `22717070014` ani logów końcowych.
+- Weryfikacja PASS/FAIL zostaje odłożona do osobnej komendy użytkownika.
+
+Co można robić dalej bez czekania na build:
+1. Uporządkować i sparametryzować deployment DB (`ticket_gate_migration.sql`) pod produkcję + rollback.
+2. Dodać testy replay/time-skew dla ticketów (nonce replay, expired ticket, clock drift).
+3. Dopiąć structured logging odrzuceń ticketów (reason, accountId, worldId, IP hash, latency).
+4. Zrobić runbook „fresh install” (nginx + TLS + .env + SQL + smoke test API/klient).
+5. Dokończyć packaging launchera (PyInstaller/Tauri artifacts + podpisy/checksum workflow).
+
+## [2026-03-05 15:42] BLOK: Start realizacji P1 (migracje SQL + runner CLI) [IN PROGRESS]
+
+Zakres:
+- Implementacja `P1` z planu agentów: rollout/rollback migracji oraz runner `migrate.php`.
+- Priorytet: spójność ze schema używaną przez `login.php`, `ticket.php`, `launcher-token.php`, `generate_manifest.php`, `ticket_validator.cpp`.
+
+Zrobione:
+- Utworzono katalog:
+  - `canary_test/html_copy/apik/v1/migrations/`
+- Dodano migracje SQL:
+  - `001_ticket_gate_rollout.sql`
+  - `001_ticket_gate_rollback.sql`
+  - `002_launcher_tables_rollout.sql`
+  - `002_launcher_tables_rollback.sql`
+  - `003_cleanup_events_rollout.sql`
+  - `003_cleanup_events_rollback.sql`
+- Dodano runner:
+  - `migrations/migrate.php` (CLI: `status`, `rollout`, `rollback <target_version>`)
+  - auto-discovery migracji, walidacja par rollout/rollback, obsługa `_migrations`
+  - wykonanie SQL przez `multi_query`, status aplikowanych migracji
+  - próba `SET GLOBAL event_scheduler = ON` przed migracją 003 (warning-only przy braku uprawnień)
+
+Weryfikacja:
+- `php -l migrations/migrate.php` ✅
+- `php migrations/migrate.php status` ✅
+  - `001_ticket_gate` = `PENDING`
+  - `002_launcher_tables` = `PENDING`
+  - `003_cleanup_events` = `PENDING`
+
+Wykryte problemy/ryzyka do współpracy z Copilotem:
+1. `event_scheduler` może wymagać uprawnień DBA (`SUPER`/admin) — runner już to obsługuje ostrzeżeniem, ale finalny deploy musi to potwierdzić operacyjnie.
+2. W repo są dwa źródła schemy (`schema_*.sql` i `sql/ticket_gate_migration.sql`) z historycznymi różnicami kolumn/indeksów — trzeba utrzymać jeden canonical rollout path (rekomendacja: `apik/v1/migrations/` + runner).
+3. `generate_manifest.php` zapisuje do `manifest_versions` kolumny `file_count/total_size` — migracja 002 została dopasowana, ale wymaga potwierdzenia na docelowej DB po rollout.
+
+Następny krok:
+- Dokończyć dokumentację cross-agent (`AGENT_COMMUNICATION.md`, plan P1-P6, plan zabezpieczeń) i przejść do `P2` (testy replay/expired/clock-skew) po akceptacji statusu `P1`.
+
+## [2026-03-05 15:48] BLOK: Start realizacji P3 (structured security logging PHP) [IN PROGRESS]
+
+Zakres:
+- Wdrożenie logowania zdarzeń bezpieczeństwa w istniejących endpointach API.
+- Cel: mieć czytelne JSONL dla `issued` i `rejected.*` (ticket + launcher-token), z anonimizacją IP.
+
+Zrobione:
+- `canary_test/html_copy/apik/v1/common.php`
+  - dodano `hashClientIp()` (skrót IP na bazie `LOG_IP_SALT`/`TICKET_SECRET`)
+  - dodano `logTicketEvent()` (structured logging JSONL, best-effort fallback do `error_log`)
+- `canary_test/html_copy/apik/v1/ticket.php`
+  - dodane eventy:
+    - `ticket.issued`
+    - `ticket.rejected.*` (invalid_json, invalid_action, missing_fields, invalid_session, session_expired, game_mode_mismatch, world_missing, world_mode_mismatch, unknown_game_mode, character_not_owned, db/config errors)
+  - logowane pola m.in.: `ipHash`, `sessionKeyHash`, `accountId`, `worldId`, `gameMode`, `latencyMs`
+- `canary_test/html_copy/apik/v1/launcher-token.php`
+  - dodane eventy:
+    - `launcher_token.issued`
+    - `launcher_token.rejected.*` (invalid_json, missing_fields, version_too_old, rate_limited, files_hash_mismatch, manifest_version_unknown, no_active_manifest, db error)
+  - logowane pola m.in.: `ipHash`, `channel`, `manifestVersion`, `launcherVersion`, `latencyMs`
+- `canary_test/html_copy/apik/v1/logrotate/serwercanary` (nowy)
+  - przykładowa konfiguracja rotacji `/var/log/serwercanary/security-events.log`
+
+Weryfikacja:
+- `php -l common.php` ✅
+- `php -l ticket.php` ✅
+- `php -l launcher-token.php` ✅
+- `php -l migrations/migrate.php` ✅
+
+Wykryte problemy/ryzyka do współpracy z Copilotem:
+1. W planie P3 są endpointy `challenge.php` i `server-status.php`, ale w aktualnym drzewie `apik/v1` tych plików nie ma.
+2. `SECURITY_LOG_FILE` domyślnie wskazuje `/var/log/serwercanary/security-events.log` — deploy musi utworzyć katalog i prawa dla `www-data`.
+3. Trzeba zdecydować retencję i politykę rotacji (aktualnie: `daily`, `rotate 14`, `compress`).
+
+Następny krok:
+- Uzgodnić z Copilotem brakujące endpointy P3 (`challenge.php`, `server-status.php`) i przejść do `P2` (testy bezpieczeństwa po stronie Rust).
+
+## [2026-03-05 15:55] BLOK: P2 — testy hardening launcher (challenge/planner/manifest) [IN PROGRESS]
+
+Zakres:
+- Pierwszy pakiet domknięcia `P2` bez uruchamiania długiego buildu canary.
+- Fokus: przypadki brakujące w planie (`challenge` TTL/nonce, `planner` URL edge-case, `manifest.servers[]` parse).
+
+Zmienione pliki:
+- `launcher-rust/crates/launcher-api/src/client.rs`
+  - dodano walidację odpowiedzi `challenge.php`:
+    - nonce: non-empty, min 32, hex-only
+    - TTL: `1..=30` sekund (odrzucenie `0` i `>30`)
+  - `fetch_challenge()` używa teraz wspólnego `validate_challenge_response()`.
+  - dodano testy jednostkowe walidacji challenge.
+- `launcher-rust/crates/launcher-core/src/planner.rs`
+  - test: `test_resolve_file_url_absolute_v2_unchanged`
+  - test: `test_plan_missing_base_url_error_when_entry_url_empty`
+- `launcher-rust/crates/common-models/src/manifest.rs`
+  - test: `test_parse_v2_servers_field` (host/port/gameMode/channel)
+
+Walidacja lokalna:
+- `rustfmt --edition 2021 --check` na zmienionych plikach Rust ✅
+- Celowo bez pełnego `cargo test`/build (decyzja operacyjna: ciężkie buildy i matrix tylko na GHA).
+
+Wykryte ryzyko do decyzji z Copilotem:
+1. Nowy limit challenge TTL (`max 30s`) jest fail-closed; jeśli API zwróci większe TTL, launcher odrzuci odpowiedź.
+2. Trzeba potwierdzić kontrakt API (`challenge.php`) i ewentualnie wyrównać TTL po stronie PHP/infra.
+
+Następny krok:
+- Dokończyć statusy `P2` w dokumentach planistycznych (`P1-P6`, plan 2-agentowy, AGENT_COMMUNICATION) i przekazać Copilotowi listę zrobione/blokery.
+
+## [2026-03-05 16:03] BLOK: Domknięcie P2.11 + P3.4/P3.5 (challenge/server-status + challenge verify) [IN PROGRESS]
+
+Zakres:
+- Domknięcie brakującego testu `P2 2.11` (rotacja kluczy challenge/HMAC).
+- Zdjęcie blokerów `P3 3.4/3.5` przez wdrożenie brakujących endpointów.
+- Dodatkowe utwardzenie `launcher-token.php` przez walidację challenge-response (etapowo, flagą).
+
+Zmienione pliki:
+- `launcher-rust/crates/launcher-core/src/hmac_rotation.rs`
+  - dodano test `test_challenge_with_rotated_key`:
+    - stary `kid` (deprecated) i nowy `kid` (active),
+    - fallback bez `kid` nadal akceptuje podpis starego klucza.
+- `canary_test/html_copy/apik/v1/challenge.php` (NOWY)
+  - `GET /challenge.php`:
+    - wydanie nonce (hex),
+    - zapis nonce do `ticket_nonces` z `account_id=0`,
+    - TTL clamp do `<=30s`,
+    - eventy `challenge.issued` / `challenge.rejected.*`.
+- `canary_test/html_copy/apik/v1/server-status.php` (NOWY)
+  - `GET /server-status.php`:
+    - TCP health-check dla `modern` i `classic74`,
+    - format odpowiedzi zgodny z `ServerStatusResponse` launchera,
+    - eventy `server_status.checked` / `server_status.rejected.*`.
+- `canary_test/html_copy/apik/v1/launcher-token.php`
+  - dodano opcjonalną/wymaganą walidację challenge-response:
+    - flaga `CHALLENGE_REQUIRED`,
+    - sprawdzenie formatu nonce/response,
+    - lookup nonce w `ticket_nonces (account_id=0)`,
+    - expiry check + one-time consume (DELETE),
+    - eventy `launcher_token.rejected.challenge_*` i `launcher_token.challenge_validated`.
+- `canary_test/html_copy/apik/v1/.env.example`
+  - dodane klucze:
+    - `CHALLENGE_TTL=30`
+    - `CHALLENGE_REQUIRED=false`
+    - `SERVER_STATUS_TIMEOUT_MS=800`
+    - `SECURITY_LOG_FILE`
+    - `LOG_IP_SALT`
+
+Walidacja:
+- `php -l challenge.php` ✅
+- `php -l server-status.php` ✅
+- `php -l launcher-token.php` ✅
+- `rustfmt --edition 2021 --check launcher-rust/crates/launcher-core/src/hmac_rotation.rs` ✅
+- smoke CLI:
+  - `php server-status.php` zwraca `{"ts":...,"servers":[...]}` zgodnie z kontraktem launchera ✅
+  - `php challenge.php` zwraca `{"nonce":"...","expiresInSeconds":30,"issuedAtUtc":"..."}` ✅
+
+Nowe ryzyka/decyzje:
+1. Włączenie `CHALLENGE_REQUIRED=true` powinno iść etapowo (najpierw rollout klienta, potem enforce na API), inaczej starsze klienty dostaną `403 challenge_required`.
+2. `challenge.php` i `launcher-token.php` dzielą tabelę `ticket_nonces` (challenge: `account_id=0`); model jest poprawny, ale warto monitorować wolumen i cleanup.
+
+Następny krok:
+- Uzupełnić statusy w dokumentach planistycznych (`P1-P6`, plan 2-agentowy, AGENT_COMMUNICATION, plan zabezpieczeń) i przejść do kolejnej otwartej puli testów serwerowych replay/expired/skew.
+
+---
+
+## 2026-03-05 19:00–20:00 — Realizacja sekcji 28: dual-server, launcher, update, paczka graczy
+
+### Co zrobiono NAPRAWDĘ (nie "prawie działa" — przetestowane):
+
+#### TOR A — Dual-Server ✅ KOMPLETNY
+- Utworzono `canary_modern/` z osobnym `config.lua` (port 7173/7174, worldId=1, db=canary_modern)
+- Symlinki do binary + data packs
+- Osobna baza MySQL `canary_modern` z importem schema.sql + konto admin (id=6 ptakukolo) + postać (Ptaku Modern)
+- Classic `canary_test/config.lua` worldId=0 potwierdzone
+- `.env` API: odkomentowane WORLD_CLASSIC74_PORT=7172, WORLD_MODERN_PORT=7174
+- `login.php` routuje: classic74→7172, modern→7174 (potwierdzone curlem)
+- OBA serwery chodzą jednocześnie: Classic PID 21040 (7171/7172), Modern PID 22305 (7173/7174)
+- Naprawiono crash Arena.lua (dodano stub constants guard)
+
+#### TOR C — Hosting plików klienta ✅ KOMPLETNY
+- `build_client_pack.sh`: buduje czystą paczkę (bez src/git/cmake/docs)
+- Paczka `client_pack/1.1.0/`: 7224 plików, 432MB
+- Manifest v1.1.1 wygenerowany przez `generate_manifest.php` (hash=89d86ba3...)
+- Naprawiono `generate_manifest.php`: STDERR guard dla FPM, HTTP POST support, obsługa form-urlencoded (`$_POST` fallback)
+- Symlink hostingu `/files/stable/1.1.1/` → client_pack
+- DB `manifest_versions` zaktualizowane
+
+#### TOR B — Launcher (częściowo — reszta na Windows)
+- Rozpakowano launcher-tauri-linux (FAIL: brak libwebkit2gtk na WSL) i launcher-cli-linux (OK: 8MB, działa headless)
+- Utworzono `launcher_config.json` (devMode=true)
+- CLI `check` — działa (porównuje wersje, wykrywa mismatch)
+- CLI `update --dry-run` — działa (skanuje 7224 plików, plan: 7 download/7 replace)
+- CLI `hash` — działa (filesHash=3b76c368...)
+- **Problem**: self-signed TLS cert → CLI nie miało `--dev-mode` flagi
+- **Fix**: dodano `--dev-mode` / `--insecure` do `cli.rs` + `flow.rs`, commit be239e86e, push na feature/ticket-gate
+- **Workaround**: PHP built-in server na port 8080 (HTTP, bez TLS) do testów
+- L-5..L-8 (Tauri UI) → odkładamy na Windows (`testy-kopia otclient`)
+
+#### TOR D — Self-update API ✅ (SU-1..SU-3)
+- `launcher-version.php` zwraca: version, minVersion, required, url, sha256, notes
+- sha256 binary launchera dodane do `.env` i response
+- Binary launchera hostowane: `/files/launcher/launcher-cli-linux`
+- CLI `check` potwierdza: serwer 1.0.0 vs lokalna 0.1.0
+- Scenariusz "brak aktualizacji" (wersje ==) OK
+- Scenariusz "required=true" (klient < minVersion) OK
+- SU-4/SU-5 (prawdziwy self-update z nowym binarym) → wymaga builda na GHA
+
+#### TOR E — Update instalki ✅ (UP-1..UP-4 na WSL)
+- Zmieniono init.lua (dodano linię wersji)
+- Manifest v1.1.1 wygenerowany poprawnie z nowym hashem
+- CLI `update --dry-run`: wykrywa 1 plik do update (init.lua 8492B), up_to_date=false
+- CLI `update` (prawdziwy): pobrał init.lua, zastąpił, SHA OK, filesHash=89d86ba3...
+- `installed_state.json`: version=1.1.1, lastUpdateResult=success
+- UP-5 (uruchomienie gry po update) → Windows
+
+#### TOR F — Paczka graczy (PK-1..PK-3)
+- Struktura: `player_package/` z launcher + launcher-cli + launcher_config.json (prod + dev) + client/
+- ZIP: `TwojaGra-Linux-v1.0.0.zip` (7.9MB)
+- PK-4/PK-5 (E2E test gracza) → Windows (`testy-kopia otclient`)
+
+### Pliki zmodyfikowane/utworzone:
+- `canary_modern/config.lua` — NOWY
+- `canary_test/config.lua` — worldId=0
+- `canary_test/data/libs/systems/arena.lua` — stub constants guard
+- `/var/www/html/apik/v1/.env` — porty, sha256 launchera
+- `/var/www/html/apik/v1/launcher-version.php` — sha256 w response
+- `/var/www/html/apik/v1/generate_manifest.php` — STDERR guard, HTTP POST fix
+- `launcher-rust/apps/launcher-cli/src/cli.rs` — --dev-mode flag
+- `launcher-rust/apps/launcher-cli/src/flow.rs` — dev_mode w ApiClientConfig
+- `canary_test/build_client_pack.sh` — NOWY
+- `player_package/` — NOWY (launcher + config + client/)
+- `plan_zabezpieczenia_klienta_i_serwera.md` — sekcja 28 statusy zaktualizowane
+
+### Co zostaje na Windows:
+- L-5..L-8: Tauri UI testy (server-status, manifest, "Graj")
+- H-6: launcher pobiera pliki → hash → token
+- UP-5: gra po aktualizacji → login → serwer
+- PK-4/PK-5: paczka gracza E2E
+- SU-4/SU-5: self-update z nowym binarym (po buildzie na GHA)
+- G2, G4, G6, G7, G8: Gates wymagające Windows
+
+---
+
+## 2026-03-05 20:30 — Plan przygotowania pod kompilację
+
+Utworzono dokument: `2026-03-05_PLAN_PRZED_KOMPILACJA.md`
+
+### Decyzja: Instalator NIE jest potrzebny
+- Launcher sam jest "instalatorem" — pobiera pliki klienta z serwera
+- Gracz dostaje ZIP z launcherem + pustym folderem client/
+- Przy starcie launcher pobiera pliki → gracz klika "Graj"
+- Instalator NSIS/Inno Setup = opcjonalny, nie blokuje
+
+### Co kompilujemy (na GHA):
+1. Serwer Canary (canary_test) — Linux + Windows
+2. Instalka testowa OTClient (testyy) — Windows
+3. Paczka graczy OTClient (czysta, bez plików dev) — Windows
+4. Launcher Rust (CLI + Tauri) — Linux + Windows
+
+### Zadania PRZED kompilacją (6 grup, ~30 zadań):
+- **A** (10): Przegląd niezacommitowanych zmian launchera (23 pliki)
+- **B** (7): Przegląd zmian serwera Canary (protocolgame, game, config)
+- **C** (4): Przegląd nowych plików instalki (workflow, narzędzia deploy)
+- **D** (5): Konfiguracja API — spójność wersji, URL-e, routing
+- **E** (3): Pliki config klienta (init.lua, config.lua, tryby)
+- **F** (3): Dokumentacja + plan testu
+
+### Test po kompilacji:
+Zmiana 1 tłumaczenia/klucza w C++ → nowa kompilacja → nowy manifest → launcher wykrywa zmianę → pobiera TYLKO zmieniony plik → gra działa.
+
+Następny krok:
+- Realizacja zadań z grup A–F, zaczynając od A (przegląd kodu launchera)

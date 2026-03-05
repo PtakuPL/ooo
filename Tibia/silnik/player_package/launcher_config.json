@@ -1,0 +1,10 @@
+{
+  "apiBaseUrl": "https://api.serwercanary.pl/client/",
+  "channel": "stable",
+  "language": "pl",
+  "launcherVersionCheck": true,
+  "clientDir": "./client",
+  "launcherDataDir": "./.launcher",
+  "devMode": false,
+  "manifestPublicKey": ""
+}

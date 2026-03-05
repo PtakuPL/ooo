@@ -24,6 +24,8 @@ pub struct CliArgs {
     pub verbose: bool,
     /// Tryb dry-run (nie aplikuj zmian).
     pub dry_run: bool,
+    /// Tryb deweloperski — akceptuj self-signed certy.
+    pub dev_mode: bool,
 }
 
 impl Default for CliArgs {
@@ -38,6 +40,7 @@ impl Default for CliArgs {
             launcher_version: env!("CARGO_PKG_VERSION").into(),
             verbose: false,
             dry_run: false,
+            dev_mode: false,
         }
     }
 }
@@ -103,6 +106,9 @@ pub fn parse_from_vec(args: &[String]) -> CliArgs {
             "--dry-run" | "-n" => {
                 result.dry_run = true;
             }
+            "--dev-mode" | "--insecure" => {
+                result.dev_mode = true;
+            }
             "--help" | "-h" => {
                 print_help();
                 std::process::exit(0);
@@ -141,6 +147,7 @@ OPCJE:
       --launcher-version <VER>  Wersja launchera do raportowania
   -v, --verbose                 Szczegółowe logi
   -n, --dry-run                 Nie aplikuj zmian (tylko pokaż plan)
+      --dev-mode, --insecure    Akceptuj self-signed certy (tylko dev!)
   -h, --help                    Pokaż tę pomoc
 
 PRZYKŁADY:

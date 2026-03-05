@@ -383,6 +383,7 @@ fn create_api_client(args: &CliArgs) -> Result<ApiClient, i32> {
         timeout_seconds: 30,
         max_retries: 3,
         user_agent: format!("TwojaGra-Launcher/{}", args.launcher_version),
+        dev_mode: args.dev_mode,
     };
 
     ApiClient::new(config).map_err(|e| {

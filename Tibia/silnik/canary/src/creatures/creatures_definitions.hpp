@@ -405,14 +405,6 @@ enum PlayerSex_t : uint8_t {
 	PLAYERSEX_LAST = PLAYERSEX_MALE
 };
 
-// D1: Tryb gry gracza — ustawiany z ticket-gate (Faza C)
-// GAMEMODE_MODERN = bez ograniczeń (domyślny)
-// GAMEMODE_CLASSIC74 = ograniczenia 7.4 (blokada market, prey, wheel, itp.)
-enum PlayerGameMode_t : uint8_t {
-	GAMEMODE_MODERN = 0,
-	GAMEMODE_CLASSIC74 = 1,
-};
-
 enum PlayerPronoun_t : uint8_t {
 	PLAYERPRONOUN_UNSET = 0,
 	PLAYERPRONOUN_THEY = 1,

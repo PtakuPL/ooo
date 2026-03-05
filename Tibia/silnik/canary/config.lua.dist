@@ -60,6 +60,14 @@ cleanProtectionZones = false
 -- NOTE: maxPlayers set to 0 means no limit
 -- NOTE: MaxPacketsPerSeconds if you change you will be subject to bugs by WPE, keep the default value of 25,
 -- It's recommended to use a range like min 50 in this function, otherwise you will be disconnected after equipping two-handed distance weapons.
+--
+-- PORTY:
+--   loginProtocolPort — port dla klienta do logowania (domyślnie 7171)
+--   gameProtocolPort  — port dla sesji gry po zalogowaniu (domyślnie 7172)
+--   statusProtocolPort — port statusu (protocol status/info), zazwyczaj = loginProtocolPort
+-- Launcher SerwerCanary odczytuje te porty z manifestu (loginPort / gamePort).
+-- Zmiana portów tu wymaga aktualizacji: .env (WORLD_PORT, WORLD_LOGIN_PORT),
+-- generate_manifest.php, server-status.php i konfiguracji firewalla.
 ip = "127.0.0.1"
 allowOldProtocol = false
 bindOnlyGlobalAddress = false
@@ -445,12 +453,6 @@ parallelism = 2
 -- Session Auth
 authType = "password" -- 'session' | 'password'
 resetSessionsOnStartup = false
-
--- Ticket Gate (system zabezpieczenia sesji z HMAC)
--- Włącz, gdy chcesz wymagać podpisanych ticketów z ticket.php
--- Wymagany: ticketSecret musi być identyczny w config.lua i w ticket.php
-ticketGateEnabled = false
-ticketSecret = ""  -- HMAC-SHA256 shared secret (min. 32 znaki!)
 
 -- Misc.
 -- NOTE: experienceDisplayRates: set to false to ignore exp rate or true to include exp rate

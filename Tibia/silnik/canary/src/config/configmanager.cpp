@@ -48,7 +48,6 @@ bool ConfigManager::load() {
 		loadBoolConfig(L, RESET_SESSIONS_ON_STARTUP, "resetSessionsOnStartup", false);
 		loadBoolConfig(L, TOGGLE_MAINTAIN_MODE, "toggleMaintainMode", false);
 		loadBoolConfig(L, TOGGLE_MAP_CUSTOM, "toggleMapCustom", true);
-		loadBoolConfig(L, TICKET_GATE_ENABLED, "ticketGateEnabled", false);
 
 		loadFloatConfig(L, HOUSE_PRICE_RENT_MULTIPLIER, "housePriceRentMultiplier", 1.0);
 		loadFloatConfig(L, HOUSE_RENT_RATE, "houseRentRate", 1.0);
@@ -65,7 +64,6 @@ bool ConfigManager::load() {
 
 		loadStringConfig(L, AUTH_TYPE, "authType", "password");
 		loadStringConfig(L, HOUSE_RENT_PERIOD, "houseRentPeriod", "never");
-		loadStringConfig(L, TICKET_SECRET, "ticketSecret", "");
 		loadStringConfig(L, IP, "ip", "127.0.0.1");
 		loadStringConfig(L, MAINTAIN_MODE_MESSAGE, "maintainModeMessage", "");
 		loadStringConfig(L, MAP_AUTHOR, "mapAuthor", "Eduardo Dantas");

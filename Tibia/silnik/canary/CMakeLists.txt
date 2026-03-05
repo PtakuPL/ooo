@@ -1,5 +1,12 @@
 cmake_minimum_required(VERSION 3.22 FATAL_ERROR)
 
+if(NOT DEFINED ENV{GITHUB_ACTIONS} OR NOT "$ENV{GITHUB_ACTIONS}" STREQUAL "true")
+    message(FATAL_ERROR
+            "Lokalna kompilacja jest zablokowana.\n"
+            "Kompilacje wykonujemy wyłącznie na GitHub Actions.\n"
+            "Uruchom workflow CI/CD w repozytorium zamiast budować lokalnie.")
+endif()
+
 # VCPKG
 # cmake -DCMAKE_TOOLCHAIN_FILE=/opt/workspace/vcpkg/scripts/buildsystems/vcpkg.cmake ..
 # Needed libs are in file vcpkg.json

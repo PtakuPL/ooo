@@ -60,10 +60,10 @@ private:
 	// Base64 decode
 	std::string base64Decode(const std::string &encoded) const;
 
-	// Nonce store (in-memory, jednorazowe) — FIX23: z timestampem
+	// Nonce store (in-memory, jednorazowe) — cache szybkiego odrzucania replay
 	// Klucz: nonce string, Wartość: unix timestamp wstawienia
+	// Źródło prawdy cross-process: tabela `ticket_nonces` konsumowana przy validateTicket().
 	std::unordered_map<std::string, int64_t> usedNonces_;
 	std::mutex nonceMutex_;
 	uint64_t validateCallCount_ = 0; // FIX23: licznik wywołań do auto-cleanup
 };
-

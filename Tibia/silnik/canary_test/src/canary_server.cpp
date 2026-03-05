@@ -36,7 +36,7 @@
 
 CanaryServer::CanaryServer(
 	Logger &logger,
-	RSA &rsa,
+	CanaryRSA &rsa,
 	ServiceManager &serviceManager
 ) :
 	logger(logger),

@@ -9,11 +9,14 @@
 #include "database/database.hpp"
 #include "lib/logging/logger.hpp"
 
+#include <fmt/format.h>
 #include <nlohmann/json.hpp>
 #include <openssl/evp.h>
 #include <openssl/hmac.h>
 
 #include <chrono>
+#include <algorithm>
+#include <ctime>
 #include <sstream>
 #include <iomanip>
 
@@ -116,8 +119,22 @@ bool TicketValidator::validateTicket(const std::string &ticket,
 
 	// CFG-KEY: ticketMaxAge — serwer wymusza maks. wiek ticketa niezależnie od expiresAt
 	int32_t maxAge = g_configManager().getNumber(TICKET_MAX_AGE);
-	if (maxAge > 0 && payload.contains("iat")) {
-		int64_t issuedAt = payload["iat"].get<int64_t>();
+	if (maxAge > 0) {
+		int64_t issuedAt = 0;
+		bool hasIssuedAt = false;
+		if (payload.contains("iat")) {
+			issuedAt = payload["iat"].get<int64_t>();
+			hasIssuedAt = true;
+		} else if (payload.contains("issuedAt")) {
+			issuedAt = payload["issuedAt"].get<int64_t>();
+			hasIssuedAt = true;
+		}
+
+		if (!hasIssuedAt) {
+			outErrorMsg = "Ticket missing issue timestamp (iat/issuedAt).";
+			return false;
+		}
+
 		if (now - issuedAt > maxAge + clockTolerance) {
 			outErrorMsg = "Ticket is too old (server maxAge policy).";
 			g_logger().warn("[TicketValidator] Ticket age {}s exceeds maxAge {}s",
@@ -147,44 +164,53 @@ bool TicketValidator::validateTicket(const std::string &ticket,
 		return false;
 	}
 
+	// 5b. accountId i gameMode są wymagane przed konsumpcją nonce.
+	if (!payload.contains("accountId")) {
+		outErrorMsg = "Ticket missing accountId field.";
+		return false;
+	}
+	outAccountId = payload["accountId"].get<uint32_t>();
+	outGameMode = payload["gameMode"].get<std::string>();
+
 	// 6. Sprawdź nonce (jednorazowy)
 	std::string nonce = payload["nonce"].get<std::string>();
 	{
 		std::lock_guard<std::mutex> lock(nonceMutex_);
-		// FIX-AUD11: Sprawdź in-memory cache ORAZ DB (odporność na restart)
+		// Fast-path in-memory check (same process).
 		if (usedNonces_.count(nonce) > 0) {
 			outErrorMsg = "Ticket has already been used (replay detected).";
 			return false;
 		}
 
-		// FIX-AUD11: Sprawdź DB — ticket.php zapisuje nonce do ticket_nonces
+		// DB is source of truth cross-process:
+		// consume nonce by inserting it once (UNIQUE nonce). First use succeeds, replay fails.
 		try {
-			auto query = fmt::format(
-				"SELECT 1 FROM `ticket_nonces` WHERE `nonce` = {} AND `expires_at` >= {}",
-				g_database().escapeString(nonce), now);
-			if (g_database().storeQuery(query)) {
-				// Nonce istnieje w DB i jeszcze nie wygasł — replay
-				usedNonces_[nonce] = now; // zapamiętaj w cache
-				outErrorMsg = "Ticket has already been used (replay detected, DB check).";
+			int64_t nonceExpiry = std::max<int64_t>(expiresAt, now + 1);
+			auto consumeQuery = fmt::format(
+				"INSERT INTO `ticket_nonces` (`nonce`, `account_id`, `expires_at`) VALUES ({}, {}, {})",
+				g_database().escapeString(nonce), outAccountId, nonceExpiry);
+			if (!g_database().executeQuery(consumeQuery)) {
+				// If nonce already exists and still valid -> replay.
+				auto existsQuery = fmt::format(
+					"SELECT 1 FROM `ticket_nonces` WHERE `nonce` = {} AND `expires_at` >= {}",
+					g_database().escapeString(nonce), now - clockTolerance);
+				if (g_database().storeQuery(existsQuery)) {
+					outErrorMsg = "Ticket has already been used (replay detected, DB).";
+					usedNonces_[nonce] = now;
+					return false;
+				}
+				outErrorMsg = "Ticket nonce persistence error.";
+				g_logger().error("[TicketValidator] Nonce consume failed for '{}'", nonce);
 				return false;
 			}
 		} catch (const std::exception &e) {
-			// DB niedostępna — polegamy na in-memory (graceful degradation)
-			g_logger().warn("[TicketValidator] DB nonce check failed: {}", e.what());
+			outErrorMsg = "Ticket nonce DB validation error.";
+			g_logger().error("[TicketValidator] DB nonce consume failed: {}", e.what());
+			return false;
 		}
 
-		// FIX23: Zapisz nonce z timestampem wstawienia
+		// Remember in-process to short-circuit duplicates in this process.
 		usedNonces_[nonce] = now;
-
-		// FIX-AUD11: Zapisz nonce do DB (jeśli ticket.php jeszcze nie zapisał)
-		try {
-			auto insertQuery = fmt::format(
-				"INSERT IGNORE INTO `ticket_nonces` (`nonce`, `account_id`, `expires_at`) VALUES ({}, 0, {})",
-				g_database().escapeString(nonce), now + 300);
-			g_database().executeQuery(insertQuery);
-		} catch (const std::exception &e) {
-			g_logger().warn("[TicketValidator] DB nonce insert failed: {}", e.what());
-		}
 
 		// FIX23: Auto-cleanup co 100 walidacji
 		validateCallCount_++;
@@ -192,9 +218,6 @@ bool TicketValidator::validateTicket(const std::string &ticket,
 			cleanupExpiredNonces(300); // wywołanie BEZ locka (mamy go już)
 		}
 	}
-
-	// 7. Ustaw gameMode
-	outGameMode = payload["gameMode"].get<std::string>();
 
 	// 7b. FIX19: worldName — logujemy ale NIE odrzucamy.
 	// Walidacja world↔gameMode odbywa się w ticket.php (FIX20) PRZED podpisaniem.
@@ -204,13 +227,6 @@ bool TicketValidator::validateTicket(const std::string &ticket,
 		std::string ticketWorldName = payload["worldName"].get<std::string>();
 		g_logger().debug("[TicketValidator] Ticket worldName='{}' (informational only)", ticketWorldName);
 	}
-	if (payload.contains("accountId")) {
-		outAccountId = payload["accountId"].get<uint32_t>();
-	} else {
-		outErrorMsg = "Ticket missing accountId field.";
-		return false;
-	}
-
 	g_logger().info("[TicketValidator] Ticket valid for character='{}' gameMode='{}' accountId={}",
 	                expectedCharacterName, outGameMode, outAccountId);
 	return true;
@@ -290,4 +306,3 @@ std::string TicketValidator::base64Decode(const std::string &encoded) const {
 	decoded.resize(outLen);
 	return decoded;
 }
-

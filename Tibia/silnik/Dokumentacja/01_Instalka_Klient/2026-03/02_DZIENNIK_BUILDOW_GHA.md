@@ -72,3 +72,38 @@ Poprawka:
 1. OpenSSL linkowanie — `ticket_validator.cpp` używa `HMAC()`, `EVP_sha256()`, `EVP_DecodeInit()` z OpenSSL. Canary nie linkuje jawnie OpenSSL (ale CURL może go transitywnie dostarczać).
 2. Nowe includy: `#include "account/account_repository.hpp"` w protocolgame.cpp — weryfikowane (metoda istnieje na linia 33 .hpp).
 3. Nowy enum `PlayerGameMode_t` w creatures_definitions.hpp — forward-declared w protocolgame.hpp.
+
+## [2026-03-05 13:08] Build #22695571939 — FAIL (zdiagnozowany)
+
+Commit: `74574f49a`
+Branch: `feature/ticket-gate`
+Trigger: `workflow_dispatch`
+Run URL: https://github.com/PtakuPL/ooo/actions/runs/22695571939
+
+Jobs:
+- canary-ubuntu-22.04-linux-release: FAIL
+- canary-ubuntu-22.04-linux-debug: FAIL
+- canary-ubuntu-24.04-linux-release: FAIL
+- canary-ubuntu-24.04-linux-debug: FAIL
+
+Pierwszy błąd (root-cause):
+- Job: `canary-ubuntu-22.04-linux-release` (`65801033005`)
+- Plik: `Tibia/silnik/canary_test/src/server/network/message/networkmessage.hpp`
+- Linia: 19
+- Komunikat:
+  - `invalid use of incomplete type 'class RSA'`
+  - `conflicting declaration 'typedef struct rsa_st RSA'`
+
+Diagnoza:
+- W kodzie część referencji była już zmieniona na `CanaryRSA`, ale część nadal używała `RSA`.
+- Forward declaration `class RSA;` kolidowała z typem `RSA` z OpenSSL (`rsa_st`).
+- To powodowało lawinę błędów w DI i kompilacji unity (main.cpp/canary_server.cpp/ticket_validator unity unit).
+
+Poprawka wdrożona lokalnie (2026-03-05):
+- `canary_test/src/canary_server.hpp`: `RSA&` -> `CanaryRSA&`
+- `canary_test/src/canary_server.cpp`: `RSA&` -> `CanaryRSA&`
+- `canary_test/src/server/network/message/networkmessage.hpp`: usunięto `class RSA;`
+- Dodatkowo domknięto ticket-gate nonce/iat flow (ticket.php + ticket_validator.cpp/hpp), aby runtime bezpieczeństwa był spójny po przejściu builda.
+
+Status:
+- ⏳ Oczekuje na nowy run Canary po pushu poprawek.

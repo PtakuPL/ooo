@@ -1248,3 +1248,52 @@ Weryfikacja:
 | FIX63 | NISKI | world.previewstate → world.previewState | camelCase fix |
 | FIX64 | NISKI | variable shadowing: local account/password | encAccount/encPassword |
 | FIX65 | NISKI | deploy_api.sh: set -uo pipefail bez -e | Komentarz wyjaśniający celowy brak |
+
+## [2026-03-05 13:05] BLOK: GHA Canary FAIL + hardening ticket-gate (C++/PHP) [IN PROGRESS]
+
+Zakres:
+- Diagnoza ostatniego faila `Canary - Build` (run `22695571939`, commit `74574f49`).
+- Naprawa blokeru kompilacji C++ (kolizja `RSA` vs OpenSSL `RSA`).
+- Domknięcie spójności ticket-gate: nonce consume flow + timestamp `iat`.
+- Przywrócenie przypadkowo usuniętych plików z GitHuba (wcześniej: `ticket_validator.*`, `launcher-token.php`).
+
+Root-cause faila Canary (potwierdzone logami GHA):
+- `invalid use of incomplete type 'class RSA'`
+- `conflicting declaration 'typedef struct rsa_st RSA'`
+- Źródło: rename klasy kryptograficznej do `CanaryRSA` bez pełnej synchronizacji typów i forward-declaration.
+
+Zmienione pliki (w tym bloker kompilacji):
+- `canary_test/src/canary_server.hpp`
+  - `RSA&` -> `CanaryRSA&`
+- `canary_test/src/canary_server.cpp`
+  - `RSA&` -> `CanaryRSA&`
+- `canary_test/src/server/network/message/networkmessage.hpp`
+  - usunięto `class RSA;` (kolizja z OpenSSL)
+
+Hardening ticket-gate (spójność runtime):
+- `canary_test/html_copy/apik/v1/ticket.php`
+  - payload rozszerzony o `worldId` i `iat` (zachowany też `issuedAt` dla kompatybilności)
+  - nonce NIE jest już zapisywany przy wystawianiu ticketu (uniknięcie false replay na pierwszym użyciu)
+- `canary_test/src/server/network/protocol/ticket_validator.cpp`
+  - akceptacja `iat` lub `issuedAt` przy polityce `ticketMaxAge`
+  - nonce consume przeniesione do modelu DB-source-of-truth (INSERT nonce przy pierwszym użyciu + detekcja replay)
+  - fail-closed przy błędach walidacji nonce w DB
+  - dodane jawne include (`fmt/format.h`, `<algorithm>`, `<ctime>`)
+- `canary_test/src/server/network/protocol/ticket_validator.hpp`
+  - komentarz: in-memory cache + DB jako źródło prawdy cross-process
+- `canary_test/html_copy/apik/v1/schema_ticket_gate.sql`
+  - komentarze zaktualizowane do nowego modelu nonce
+- `canary_test/sql/ticket_gate_migration.sql`
+  - komentarze migracji zaktualizowane do nowego modelu nonce
+
+Weryfikacja lokalna:
+- PHP lint:
+  - `ticket.php` ✅
+  - `login.php` ✅
+  - `launcher-token.php` ✅
+- Build lokalny CMake:
+  - niepełna walidacja (lokalnie brak kompletnego `VCPKG_ROOT`; docelowa walidacja przez GHA Canary matrix)
+
+Następny krok:
+- Commit zmian + push `feature/ticket-gate`.
+- Rerun workflow `Canary - Build` (`231874122`) i wpis wyniku do `02_DZIENNIK_BUILDOW_GHA.md`.

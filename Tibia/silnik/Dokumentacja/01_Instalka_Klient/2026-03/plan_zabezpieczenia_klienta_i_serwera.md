@@ -2428,3 +2428,26 @@ resp = requests.get("https://...", verify=True, timeout=10)
 | worldId mapping | ✅ Naprawione | FIX-AUD16: `world_id` z DB + fallback + migracja SQL |
 | DB schema | ✅ Gotowe | `sql/ticket_gate_migration.sql`: launch_tokens, manifest_versions, ticket_sessions, ticket_nonces, players.world_id |
 | Config ticket-gate | ✅ Kompletny | CFG-KEY (`dfe1a8784`): 5/5 kluczy (ticketGateEnabled, ticketSecret, ticketMaxAge, ticketClockTolerance, worldId) |
+## 21. Aktualizacja 2026-03-05 — Canary build blocker + spójność ticket-gate
+
+### 21.1 Co zrobiono
+- Zdiagnozowano ostatni fail `Canary - Build` (`22695571939`, commit `74574f49a`):
+  - `invalid use of incomplete type 'class RSA'`
+  - `conflicting declaration 'typedef struct rsa_st RSA'`
+- Naprawiono bloker kompilacji w `canary_test/src`:
+  - `canary_server.hpp/.cpp`: `RSA&` -> `CanaryRSA&`
+  - `networkmessage.hpp`: usunięto `class RSA;`
+- Domknięto spójność bezpieczeństwa ticket-gate po stronie API+Canary:
+  - `ticket.php`: payload ma `worldId` + `iat` (zachowany `issuedAt` dla compat), brak pre-insert nonce
+  - `ticket_validator.cpp`: consume nonce po stronie Canary (DB + cache), fail-closed na błędach nonce DB, obsługa `iat/issuedAt` dla `ticketMaxAge`
+  - schema/migration comments zaktualizowane do nowego modelu replay-protection
+
+### 21.2 Co będzie robione dalej (bezpośrednio)
+1. Push poprawek na `feature/ticket-gate`.
+2. Uruchomienie nowego runa `Canary - Build` (workflow `231874122`).
+3. Po wyniku runa: dopisanie PASS/FAIL + ewentualny kolejny hotfix do `02_DZIENNIK_BUILDOW_GHA.md`.
+
+### 21.3 Status operacyjny
+- Build blocker C++: ✅ naprawiony w kodzie lokalnym.
+- Ticket-gate runtime consistency (nonce/iat/world binding): ✅ poprawione.
+- Walidacja końcowa: ⏳ oczekuje na nowy run GHA Canary matrix.

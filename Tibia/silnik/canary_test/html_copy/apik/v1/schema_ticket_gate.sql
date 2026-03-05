@@ -1,8 +1,8 @@
 -- B4: Tabela ticket_nonces — jednorazowe nonce'y do ticket-gate HMAC
--- Replay protection: Canary konsumuje nonce server-side (in-memory),
--- ale PHP insertuje tu nonce przy generowaniu ticketu dla audyt/cleanup.
--- Atomowe DELETE w ticket.php NIE jest potrzebne (nonce jest w payload, Canary weryfikuje),
--- tabela służy jako backup/audit + cleanup expired.
+-- Replay protection: Canary konsumuje nonce server-side (DB + in-memory cache).
+-- ticket.php NIE insertuje nonce przy generowaniu — pierwszy poprawny login
+-- zapisuje nonce w Canary (INSERT), replay wpada na UNIQUE nonce.
+-- Tabela służy też do cleanup wygasłych nonce.
 
 CREATE TABLE IF NOT EXISTS `ticket_nonces` (
     `nonce`      VARCHAR(64)  NOT NULL,

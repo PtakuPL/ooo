@@ -12,7 +12,7 @@ header('Content-Type: application/json; charset=utf-8');
  *      b) Sprawdza characterName → należy do konta z sesji
  *      c) Sprawdza gameMode → zgadza się z sesją
  *      d) Generuje ticket: base64(json_payload).hmac_hex
- *      e) Zapisuje nonce do ticket_nonces (audit + backup)
+ *      e) NIE zapisuje nonce w DB — nonce konsumuje Canary przy pierwszym użyciu
  *   3. Zwraca {ticket: "base64.hmac", expiresAt: unix_ts}
  *
  * HMAC jest obliczany na base64-encoded payload (NIE surowy JSON).
@@ -124,8 +124,10 @@ $worldMap = [
     'classic74' => ['id' => 0, 'names' => ['Classic 7.4']],
     'modern'    => ['id' => 1, 'names' => ['Modern']],
 ];
+$worldId = 0;
 if (isset($worldMap[$effectiveGameMode])) {
     $entry = $worldMap[$effectiveGameMode];
+    $worldId = (int)$entry['id'];
     // Waliduj: worldName musi być na liście dozwolonych dla tego gameMode
     if (!in_array($worldName, $entry['names'], true)) {
         sendError('World "' . $worldName . '" is not allowed for game mode "' . $effectiveGameMode . '".');
@@ -162,7 +164,11 @@ $payload = json_encode([
     'characterName' => $canonicalName,
     'gameMode'      => $effectiveGameMode,
     'worldName'     => $worldName,
+    'worldId'       => $worldId,
     'nonce'         => $nonce,
+    // iat: canonical issue-time key used by Canary maxAge policy.
+    // issuedAt: kept for backward compatibility with older parser variants.
+    'iat'           => $issuedAt,
     'issuedAt'      => $issuedAt,
     'expiresAt'     => $expiresAt,
 ], JSON_UNESCAPED_SLASHES);
@@ -173,19 +179,6 @@ $payloadB64 = base64_encode($payload);
 $hmacHex    = hash_hmac('sha256', $payloadB64, $ticketSecret);
 
 $ticket = $payloadB64 . '.' . $hmacHex;
-
-// ------- 5. Zapisz nonce do ticket_nonces (audit/backup) -------
-$stmt = $mysqli->prepare(
-    "INSERT INTO ticket_nonces (nonce, account_id, expires_at) VALUES (?, ?, ?)"
-);
-$stmt->bind_param('sii', $nonce, $accountId, $expiresAt);
-$stmt->execute();
-$stmt->close();
-
-// Cleanup: okazyjnie usuń wygasłe nonce'y (~5% requestów)
-if (mt_rand(1, 20) === 1) {
-    $mysqli->query("DELETE FROM ticket_nonces WHERE expires_at < {$now}");
-}
 
 $mysqli->close();
 

@@ -64,8 +64,9 @@ CREATE TABLE IF NOT EXISTS `ticket_sessions` (
 
 -- ---------------------------------------------------------------------------
 -- 4. ticket_nonces — jednorazowe nonce z ticketów HMAC
---    Zapisywane przez ticket.php (PHP) i ticket_validator.cpp (C++).
---    Zapobiegają replay attack.
+--    Konsumowane przez ticket_validator.cpp (C++) przy pierwszym użyciu.
+--    ticket.php nie zapisuje nonce podczas wystawiania ticketu.
+--    UNIQUE(nonce) + INSERT po stronie Canary = skuteczna blokada replay.
 -- ---------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ticket_nonces` (
     `id`            BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,

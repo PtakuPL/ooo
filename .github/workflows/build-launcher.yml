@@ -19,6 +19,7 @@ on:
     branches: [feature/ticket-gate]
     paths:
       - 'Tibia/silnik/launcher-rust/**'
+      - '.github/workflows/build-launcher.yml'
     tags:
       - 'v*-rc*'
 
@@ -235,6 +236,9 @@ jobs:
     name: SHA-256 Checksums
     needs: [build-core, build-tauri, build-helper]
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
     steps:
       - name: Download all artifacts
         uses: actions/download-artifact@v4

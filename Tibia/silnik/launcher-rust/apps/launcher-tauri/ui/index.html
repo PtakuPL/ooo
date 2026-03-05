@@ -34,9 +34,43 @@
           <span id="status-phase" class="badge badge-phase">sprawdzanie…</span>
         </div>
       </div>
+
+      <!-- Lista serwerów -->
+      <div class="servers-section">
+        <div class="servers-header" id="servers-toggle">
+          <span>🖥 Serwery</span>
+          <span class="servers-arrow" id="servers-arrow">▼</span>
+        </div>
+        <div class="servers-list" id="servers-list">
+          <div class="server-card" data-server="tibia-main">
+            <div class="server-status-dot dot-offline"></div>
+            <div class="server-info">
+              <div class="server-name">SerwerCanary — Tibia 14.20+</div>
+              <div class="server-meta">
+                <span class="server-players">Gracze: <strong id="srv-tibia-main-players">---</strong></span>
+                <span class="server-ping">Ping: <span id="srv-tibia-main-ping">---</span></span>
+              </div>
+            </div>
+            <span class="server-status-badge badge" id="srv-tibia-main-status">offline</span>
+          </div>
+          <div class="server-card" data-server="tibia-retro">
+            <div class="server-status-dot dot-offline"></div>
+            <div class="server-info">
+              <div class="server-name">SerwerCanary — Retro 7.4</div>
+              <div class="server-meta">
+                <span class="server-players">Gracze: <strong id="srv-tibia-retro-players">---</strong></span>
+                <span class="server-ping">Ping: <span id="srv-tibia-retro-ping">---</span></span>
+              </div>
+            </div>
+            <span class="server-status-badge badge" id="srv-tibia-retro-status">offline</span>
+          </div>
+        </div>
+      </div>
+
       <div class="actions">
         <button id="btn-play" class="btn btn-primary" disabled>▶ Uruchom grę</button>
         <button id="btn-check" class="btn btn-secondary">🔄 Sprawdź aktualizacje</button>
+        <button id="btn-website" class="btn btn-website">🌐 Strona WWW</button>
       </div>
     </section>
 
@@ -128,7 +162,10 @@
       <div id="downloads-list" class="downloads-list" style="display:none">
         <!-- Dynamicznie generowane karty artefaktów -->
       </div>
-      <div id="downloads-error" class="error-text" style="display:none"></div>
+      <div id="downloads-error" class="error-card" style="display:none">
+        <p class="error-text" id="downloads-error-msg">---</p>
+        <p class="info-text">Serwer API nie jest jeszcze dostępny. Pobieranie artefaktów będzie możliwe po uruchomieniu backendu.</p>
+      </div>
       <div class="actions">
         <button id="btn-downloads-refresh" class="btn btn-secondary">🔄 Odśwież</button>
         <button id="btn-downloads-back" class="btn btn-secondary">← Powrót</button>

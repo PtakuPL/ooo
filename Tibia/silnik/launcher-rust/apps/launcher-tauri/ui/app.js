@@ -153,7 +153,72 @@ async function loadStatus() {
     }
   } catch (err) {
     console.error("loadStatus error:", err);
+    // Graceful: pokaż co mamy, nie crashuj
+    elPhase.textContent = "brak po\u0142\u0105czenia";
+    elPhase.className = "badge badge-phase badge-warn";
   }
+}
+
+// ─────────────────────────────────────────────
+// Server list — toggle + status
+// ─────────────────────────────────────────────
+
+const serversToggle = $("#servers-toggle");
+const serversList = $("#servers-list");
+const serversArrow = $("#servers-arrow");
+
+if (serversToggle) {
+  serversToggle.addEventListener("click", () => {
+    serversList.classList.toggle("collapsed");
+    serversArrow.classList.toggle("collapsed");
+  });
+}
+
+// Hardcoded servers (p\u00f3\u017aniej: fetch z API)
+const SERVERS = [
+  { id: "tibia-main", name: "SerwerCanary \u2014 Tibia 14.20+", host: null },
+  { id: "tibia-retro", name: "SerwerCanary \u2014 Retro 7.4", host: null },
+];
+
+function updateServerStatus(serverId, status, players, ping) {
+  const dot = document.querySelector(`.server-card[data-server="${serverId}"] .server-status-dot`);
+  const badge = $(`#srv-${serverId}-status`);
+  const playersEl = $(`#srv-${serverId}-players`);
+  const pingEl = $(`#srv-${serverId}-ping`);
+
+  if (dot) {
+    dot.className = "server-status-dot";
+    if (status === "online") dot.classList.add("dot-online");
+    else if (status === "maintenance") dot.classList.add("dot-maintenance");
+    else dot.classList.add("dot-offline");
+  }
+  if (badge) {
+    badge.textContent = status;
+    badge.className = "server-status-badge badge";
+    if (status === "online") badge.classList.add("badge-ok");
+    else if (status === "maintenance") badge.classList.add("badge-warn");
+  }
+  if (playersEl) playersEl.textContent = players != null ? players : "---";
+  if (pingEl) pingEl.textContent = ping != null ? `${ping}ms` : "---";
+}
+
+// Placeholder: serwery offline (zostan\u0105 podmienione gdy API b\u0119dzie gotowe)
+SERVERS.forEach(s => updateServerStatus(s.id, "offline", null, null));
+
+// ─────────────────────────────────────────────
+// Website button
+// ─────────────────────────────────────────────
+
+const btnWebsite = $("#btn-website");
+if (btnWebsite) {
+  btnWebsite.addEventListener("click", () => {
+    // Tauri v2: open URL in default browser
+    if (window.__TAURI__ && window.__TAURI__.shell) {
+      window.__TAURI__.shell.open("https://serwercanary.pl");
+    } else {
+      window.open("https://serwercanary.pl", "_blank");
+    }
+  });
 }
 
 // ─────────────────────────────────────────────
@@ -297,7 +362,12 @@ async function loadRepairDiagnostics() {
     elRepairMissing.textContent = diag.missingCount;
     elRepairBytes.textContent = formatBytes(diag.repairDownloadBytes);
   } catch (err) {
-    showError(String(err), "REPAIR_ERROR", true);
+    // Graceful: nie crashuj na ekran b\u0142\u0119du, poka\u017c info w miejscu
+    elRepairOk.textContent = "---";
+    elRepairCorrupted.textContent = "---";
+    elRepairMissing.textContent = "---";
+    elRepairBytes.textContent = "Nie uda\u0142o si\u0119 po\u0142\u0105czy\u0107 z API";
+    console.warn("Repair diagnostics failed:", err);
   }
 }
 
@@ -427,7 +497,8 @@ async function loadDownloadCenter() {
 
     elDownloadsList.style.display = "flex";
   } catch (err) {
-    elDownloadsError.textContent = `Błąd: ${err}`;
+    const errorMsg = $("#downloads-error-msg");
+    if (errorMsg) errorMsg.textContent = `Błąd pobierania katalogu: ${err}`;
     elDownloadsError.style.display = "block";
   } finally {
     elDownloadsLoading.style.display = "none";

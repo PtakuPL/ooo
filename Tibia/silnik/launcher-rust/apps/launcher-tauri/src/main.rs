@@ -21,6 +21,7 @@ fn main() {
     tracing::info!("SerwerCanary Launcher v{}", env!("CARGO_PKG_VERSION"));
 
     tauri::Builder::default()
+        .plugin(tauri_plugin_shell::init())
         .manage(state::AppState::new())
         .invoke_handler(tauri::generate_handler![
             commands::get_status,

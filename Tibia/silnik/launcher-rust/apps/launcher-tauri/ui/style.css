@@ -344,3 +344,107 @@ select {
   font-size: 0.9rem;
   padding: 8px 0;
 }
+
+/* ───── Server List ───── */
+
+.servers-section {
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.servers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.servers-header:hover {
+  background: var(--bg-card);
+}
+
+.servers-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s;
+}
+
+.servers-arrow.collapsed {
+  transform: rotate(-90deg);
+}
+
+.servers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.servers-list.collapsed {
+  max-height: 0 !important;
+}
+
+.server-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  background: var(--bg-primary);
+  transition: background 0.2s;
+  cursor: default;
+}
+
+.server-card:hover {
+  background: rgba(15, 52, 96, 0.5);
+}
+
+.server-status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dot-online { background: var(--success); box-shadow: 0 0 6px var(--success); }
+.dot-offline { background: var(--text-muted); }
+.dot-maintenance { background: var(--warn); box-shadow: 0 0 6px var(--warn); }
+
+.server-info {
+  flex: 1;
+}
+
+.server-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.server-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: flex;
+  gap: 16px;
+  margin-top: 2px;
+}
+
+.server-status-badge {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+/* ───── Website Button ───── */
+
+.btn-website {
+  background: var(--bg-card);
+  color: var(--text);
+  border: 1px solid var(--text-muted);
+}
+
+.btn-website:hover:not(:disabled) {
+  background: #1a4f8a;
+  border-color: var(--accent);
+}

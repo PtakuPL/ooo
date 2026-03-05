@@ -19,6 +19,7 @@ uuid.workspace = true
 semver.workspace = true
 tauri = { version = "2", features = ["devtools"] }
 tauri-build = { version = "2", features = [] }
+tauri-plugin-shell = "2"
 
 [build-dependencies]
 tauri-build = { version = "2", features = [] }

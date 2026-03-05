@@ -1,0 +1,538 @@
+# =============================================================
+# Build Client Package — czysta instalka OTClient dla graczy
+# =============================================================
+# Buduje OTClient, wstrzykuje customizacje (init.lua, moduły),
+# stripuje pliki deweloperskie i pakuje ZIP gotowy do dystrybucji.
+#
+# Trigger: manual (workflow_dispatch) lub push taga v*-client
+# Output: ZIP per OS, upload jako GHA artifact
+
+name: build-client-package
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Client version (e.g. 1.0.3)'
+        required: true
+        type: string
+      channel:
+        description: 'Release channel'
+        required: false
+        default: 'stable'
+        type: choice
+        options:
+          - stable
+          - beta
+          - dev
+  push:
+    tags:
+      - 'v*-client'
+
+env:
+  VCPKG_BINARY_SOURCES: "clear;x-gha,readwrite"
+  CLIENT_SRC: Tibia/silnik/canary_test/testyy
+
+jobs:
+  # ─────────────────────────────────────────────
+  # Windows x64 build
+  # ─────────────────────────────────────────────
+  windows:
+    name: Package (Windows x64)
+    runs-on: windows-2022
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Export GitHub Actions cache variables
+        uses: actions/github-script@v7
+        with:
+          script: |
+            core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
+            core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
+
+      - name: Setup vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgDirectory: '${{ github.workspace }}/vcpkg'
+          vcpkgGitCommitId: '5b1214315250939257ef5d62ecdcbca18cf4fb1c'
+
+      - name: Setup MSVC Developer Command Prompt
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
+      - name: Install Ninja
+        run: choco install ninja -y
+
+      - name: Configure CMake
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: |
+          cmake -S . -B build -G Ninja `
+            -DCMAKE_BUILD_TYPE=Release `
+            -DVCPKG_TARGET_TRIPLET=x64-windows-static `
+            -DCMAKE_TOOLCHAIN_FILE="${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake" `
+            -DCMAKE_MSVC_RUNTIME_LIBRARY="MultiThreaded"
+
+      - name: Build
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: cmake --build build --config Release --parallel
+
+      - name: Determine version
+        id: version
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "version=${{ github.event.inputs.version }}" >> "$GITHUB_OUTPUT"
+            echo "channel=${{ github.event.inputs.channel }}" >> "$GITHUB_OUTPUT"
+          else
+            TAG="${{ github.ref_name }}"
+            VER="${TAG#v}"
+            VER="${VER%-client}"
+            echo "version=${VER}" >> "$GITHUB_OUTPUT"
+            echo "channel=stable" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Assemble client package
+        shell: bash
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: |
+          set -e
+          PKG="package"
+          rm -rf "$PKG"
+          mkdir -p "$PKG"
+
+          # ── 1. Compiled binary ──
+          cp build/otclient.exe "$PKG/" 2>/dev/null || cp build/Release/otclient.exe "$PKG/" 2>/dev/null || cp build/RelWithDebInfo/otclient.exe "$PKG/" || { echo "ERROR: otclient.exe not found"; exit 1; }
+
+          # ── 2. Runtime DLLs (from build output or vcpkg installed) ──
+          # Copy DLLs co-located with exe first, then root DLLs as fallback
+          find build -maxdepth 3 -name "*.dll" -exec cp {} "$PKG/" \; 2>/dev/null || true
+          for dll in *.dll; do
+            [ -f "$dll" ] && [ ! -f "$PKG/$dll" ] && cp "$dll" "$PKG/"
+          done
+
+          # ── 3. Data directories ──
+          cp -r data "$PKG/data"
+          cp -r modules "$PKG/modules"
+          [ -d mods ] && cp -r mods "$PKG/mods"
+
+          # ── 4. Config files ──
+          cp init.lua "$PKG/"
+          [ -f meta.lua ] && cp meta.lua "$PKG/"
+          [ -f cacert.pem ] && cp cacert.pem "$PKG/"
+          [ -f otclientrc.lua ] && cp otclientrc.lua "$PKG/otclientrc.lua.default"
+
+          # ── 5. Inject customizations ──
+          # 5a. init.lua: force CLIENT_LOCKED = true
+          if grep -q "CLIENT_LOCKED" "$PKG/init.lua"; then
+            sed -i 's/CLIENT_LOCKED\s*=\s*false/CLIENT_LOCKED = true/g' "$PKG/init.lua"
+          fi
+
+          # 5b. Overlay custom modules from customizations/ directory
+          # This directory contains our server-specific overrides:
+          #   customizations/modules/  — patched game modules (serverlist lock, feature flags)
+          #   customizations/data/     — custom sprites, translations
+          #   customizations/init.lua  — full override (optional)
+          CUSTOM_DIR="customizations"
+          if [ -d "$CUSTOM_DIR" ]; then
+            echo "Injecting customizations from $CUSTOM_DIR"
+            if [ -f "$CUSTOM_DIR/init.lua" ]; then
+              cp "$CUSTOM_DIR/init.lua" "$PKG/init.lua"
+              echo "  → init.lua overridden"
+            fi
+            if [ -d "$CUSTOM_DIR/modules" ]; then
+              cp -r "$CUSTOM_DIR/modules/"* "$PKG/modules/" 2>/dev/null || true
+              echo "  → modules/ merged ($(find "$CUSTOM_DIR/modules" -type f | wc -l) files)"
+            fi
+            if [ -d "$CUSTOM_DIR/data" ]; then
+              cp -r "$CUSTOM_DIR/data/"* "$PKG/data/" 2>/dev/null || true
+              echo "  → data/ merged"
+            fi
+          else
+            echo "No customizations/ directory — using defaults"
+          fi
+
+          # ── 6. Strip dev files that may have leaked ──
+          rm -rf "$PKG/data"/.git* 2>/dev/null || true
+          find "$PKG" -name "CMakeLists.txt" -delete 2>/dev/null || true
+          find "$PKG" -name "*.cpp" -o -name "*.h" -o -name "*.hpp" | xargs rm -f 2>/dev/null || true
+
+          # ── 7. Create empty dirs for user data ──
+          mkdir -p "$PKG/records"
+
+          echo "=== Package contents ==="
+          find "$PKG" -type f | wc -l
+          echo "files"
+          du -sh "$PKG"
+
+      - name: Verify package integrity
+        shell: bash
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: |
+          set -e
+          PKG="package"
+
+          # Must have executable
+          [ -f "$PKG/otclient.exe" ] || { echo "FAIL: missing otclient.exe"; exit 1; }
+
+          # Must have init.lua with CLIENT_LOCKED = true
+          grep -q "CLIENT_LOCKED = true" "$PKG/init.lua" || { echo "FAIL: CLIENT_LOCKED not true"; exit 1; }
+
+          # Must NOT have source files
+          SRC_COUNT=$(find "$PKG" -name "*.cpp" -o -name "*.h" -o -name "*.hpp" | wc -l)
+          [ "$SRC_COUNT" -eq 0 ] || { echo "FAIL: found $SRC_COUNT source files"; exit 1; }
+
+          # Must NOT have CMake files
+          CMAKE_COUNT=$(find "$PKG" -name "CMakeLists.txt" | wc -l)
+          [ "$CMAKE_COUNT" -eq 0 ] || { echo "FAIL: found CMakeLists.txt"; exit 1; }
+
+          # Must have modules/
+          [ -d "$PKG/modules" ] || { echo "FAIL: missing modules/"; exit 1; }
+
+          # Must have data/
+          [ -d "$PKG/data" ] || { echo "FAIL: missing data/"; exit 1; }
+
+          echo "All integrity checks passed"
+
+      - name: Generate file manifest (SHA-256 per file)
+        shell: bash
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: |
+          set -e
+          PKG="package"
+          VERSION="${{ steps.version.outputs.version }}"
+          CHANNEL="${{ steps.version.outputs.channel }}"
+          MANIFEST="package-manifest-${VERSION}.json"
+
+          echo "{" > "$MANIFEST"
+          echo "  \"version\": \"${VERSION}\"," >> "$MANIFEST"
+          echo "  \"channel\": \"${CHANNEL}\"," >> "$MANIFEST"
+          echo "  \"os\": \"windows\"," >> "$MANIFEST"
+          echo "  \"generatedAt\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"," >> "$MANIFEST"
+          echo "  \"files\": [" >> "$MANIFEST"
+
+          FIRST=true
+          find "$PKG" -type f | sort | while read -r filepath; do
+            REL="${filepath#$PKG/}"
+            HASH=$(sha256sum "$filepath" | cut -d' ' -f1)
+            SIZE=$(stat -c%s "$filepath")
+            if [ "$FIRST" = true ]; then
+              FIRST=false
+            else
+              echo "," >> "$MANIFEST"
+            fi
+            printf '    {"path": "%s", "sha256": "%s", "size": %s}' "$REL" "$HASH" "$SIZE" >> "$MANIFEST"
+          done
+
+          echo "" >> "$MANIFEST"
+          echo "  ]" >> "$MANIFEST"
+          echo "}" >> "$MANIFEST"
+
+          echo "Generated $MANIFEST with $(grep -c sha256 "$MANIFEST") files"
+
+      - name: Create ZIP
+        shell: bash
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          cd package
+          7z a -tzip "../otclient-windows-x64-${VERSION}.zip" .
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: otclient-windows-x64-${{ steps.version.outputs.version }}
+          path: |
+            ${{ env.CLIENT_SRC }}/otclient-windows-x64-${{ steps.version.outputs.version }}.zip
+            ${{ env.CLIENT_SRC }}/package-manifest-${{ steps.version.outputs.version }}.json
+          retention-days: 90
+
+  # ─────────────────────────────────────────────
+  # Linux x64 build
+  # ─────────────────────────────────────────────
+  linux:
+    name: Package (Linux x64)
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes \
+            build-essential \
+            ninja-build \
+            cmake \
+            pkg-config \
+            libglu1-mesa-dev \
+            mesa-common-dev \
+            libxi-dev \
+            libxrandr-dev \
+            libxinerama-dev \
+            libxcursor-dev \
+            libasound2-dev \
+            libudev-dev
+
+      - name: Setup vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgDirectory: '${{ github.workspace }}/vcpkg'
+          vcpkgGitCommitId: '5b1214315250939257ef5d62ecdcbca18cf4fb1c'
+
+      - name: Export GitHub Actions cache variables
+        uses: actions/github-script@v7
+        with:
+          script: |
+            core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
+            core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
+
+      - name: Configure CMake
+        working-directory: ${{ env.CLIENT_SRC }}
+        env:
+          VCPKG_BINARY_SOURCES: "clear;x-gha,readwrite"
+        run: |
+          cmake -S . -B build -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DVCPKG_TARGET_TRIPLET=x64-linux \
+            -DCMAKE_TOOLCHAIN_FILE="${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake"
+
+      - name: Build
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: cmake --build build --config Release --parallel
+
+      - name: Determine version
+        id: version
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "version=${{ github.event.inputs.version }}" >> "$GITHUB_OUTPUT"
+            echo "channel=${{ github.event.inputs.channel }}" >> "$GITHUB_OUTPUT"
+          else
+            TAG="${{ github.ref_name }}"
+            VER="${TAG#v}"
+            VER="${VER%-client}"
+            echo "version=${VER}" >> "$GITHUB_OUTPUT"
+            echo "channel=stable" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Assemble client package
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: |
+          set -e
+          PKG="package"
+          rm -rf "$PKG"
+          mkdir -p "$PKG"
+
+          # ── 1. Compiled binary ──
+          cp build/otclient "$PKG/" || { echo "ERROR: otclient binary not found"; exit 1; }
+          chmod +x "$PKG/otclient"
+
+          # ── 2. Shared libraries (if any from build) ──
+          find build -maxdepth 3 -name "*.so" -o -name "*.so.*" | while read so; do
+            cp "$so" "$PKG/" 2>/dev/null || true
+          done
+
+          # ── 3. Data directories ──
+          cp -r data "$PKG/data"
+          cp -r modules "$PKG/modules"
+          [ -d mods ] && cp -r mods "$PKG/mods"
+
+          # ── 4. Config files ──
+          cp init.lua "$PKG/"
+          [ -f meta.lua ] && cp meta.lua "$PKG/"
+          [ -f cacert.pem ] && cp cacert.pem "$PKG/"
+          [ -f otclientrc.lua ] && cp otclientrc.lua "$PKG/otclientrc.lua.default"
+
+          # ── 5. Inject customizations ──
+          # 5a. init.lua: force CLIENT_LOCKED = true
+          if grep -q "CLIENT_LOCKED" "$PKG/init.lua"; then
+            sed -i 's/CLIENT_LOCKED\s*=\s*false/CLIENT_LOCKED = true/g' "$PKG/init.lua"
+          fi
+
+          # 5b. Overlay custom modules from customizations/ directory
+          CUSTOM_DIR="customizations"
+          if [ -d "$CUSTOM_DIR" ]; then
+            echo "Injecting customizations from $CUSTOM_DIR"
+            if [ -f "$CUSTOM_DIR/init.lua" ]; then
+              cp "$CUSTOM_DIR/init.lua" "$PKG/init.lua"
+              echo "  → init.lua overridden"
+            fi
+            if [ -d "$CUSTOM_DIR/modules" ]; then
+              cp -r "$CUSTOM_DIR/modules/"* "$PKG/modules/" 2>/dev/null || true
+              echo "  → modules/ merged ($(find "$CUSTOM_DIR/modules" -type f | wc -l) files)"
+            fi
+            if [ -d "$CUSTOM_DIR/data" ]; then
+              cp -r "$CUSTOM_DIR/data/"* "$PKG/data/" 2>/dev/null || true
+              echo "  → data/ merged"
+            fi
+          else
+            echo "No customizations/ directory — using defaults"
+          fi
+
+          # ── 6. Strip dev files ──
+          rm -rf "$PKG/data"/.git* 2>/dev/null || true
+          find "$PKG" -name "CMakeLists.txt" -delete 2>/dev/null || true
+          find "$PKG" \( -name "*.cpp" -o -name "*.h" -o -name "*.hpp" \) -delete 2>/dev/null || true
+
+          # ── 7. Create empty dirs for user data ──
+          mkdir -p "$PKG/records"
+
+          echo "=== Package contents ==="
+          find "$PKG" -type f | wc -l
+          echo "files"
+          du -sh "$PKG"
+
+      - name: Verify package integrity
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: |
+          set -e
+          PKG="package"
+
+          [ -f "$PKG/otclient" ] || { echo "FAIL: missing otclient"; exit 1; }
+          grep -q "CLIENT_LOCKED = true" "$PKG/init.lua" || { echo "FAIL: CLIENT_LOCKED not true"; exit 1; }
+
+          SRC_COUNT=$(find "$PKG" \( -name "*.cpp" -o -name "*.h" -o -name "*.hpp" \) | wc -l)
+          [ "$SRC_COUNT" -eq 0 ] || { echo "FAIL: found $SRC_COUNT source files"; exit 1; }
+
+          CMAKE_COUNT=$(find "$PKG" -name "CMakeLists.txt" | wc -l)
+          [ "$CMAKE_COUNT" -eq 0 ] || { echo "FAIL: found CMakeLists.txt"; exit 1; }
+
+          [ -d "$PKG/modules" ] || { echo "FAIL: missing modules/"; exit 1; }
+          [ -d "$PKG/data" ] || { echo "FAIL: missing data/"; exit 1; }
+
+          echo "All integrity checks passed"
+
+      - name: Generate file manifest (SHA-256 per file)
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: |
+          set -e
+          PKG="package"
+          VERSION="${{ steps.version.outputs.version }}"
+          CHANNEL="${{ steps.version.outputs.channel }}"
+          MANIFEST="package-manifest-${VERSION}.json"
+
+          echo "{" > "$MANIFEST"
+          echo "  \"version\": \"${VERSION}\"," >> "$MANIFEST"
+          echo "  \"channel\": \"${CHANNEL}\"," >> "$MANIFEST"
+          echo "  \"os\": \"linux\"," >> "$MANIFEST"
+          echo "  \"generatedAt\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"," >> "$MANIFEST"
+          echo "  \"files\": [" >> "$MANIFEST"
+
+          FIRST=true
+          find "$PKG" -type f | sort | while read -r filepath; do
+            REL="${filepath#$PKG/}"
+            HASH=$(sha256sum "$filepath" | cut -d' ' -f1)
+            SIZE=$(stat -c%s "$filepath")
+            if [ "$FIRST" = true ]; then
+              FIRST=false
+            else
+              echo "," >> "$MANIFEST"
+            fi
+            printf '    {"path": "%s", "sha256": "%s", "size": %s}' "$REL" "$HASH" "$SIZE" >> "$MANIFEST"
+          done
+
+          echo "" >> "$MANIFEST"
+          echo "  ]" >> "$MANIFEST"
+          echo "}" >> "$MANIFEST"
+
+          echo "Generated $MANIFEST with $(grep -c sha256 \"$MANIFEST\") files"
+
+      - name: Create tarball
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          tar -czf "otclient-linux-x64-${VERSION}.tar.gz" -C package .
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: otclient-linux-x64-${{ steps.version.outputs.version }}
+          path: |
+            ${{ env.CLIENT_SRC }}/otclient-linux-x64-${{ steps.version.outputs.version }}.tar.gz
+            ${{ env.CLIENT_SRC }}/package-manifest-${{ steps.version.outputs.version }}.json
+          retention-days: 90
+
+  # ─────────────────────────────────────────────
+  # Sign & Checksums (runs after both builds)
+  # ─────────────────────────────────────────────
+  sign:
+    name: Sign artifacts & checksums
+    needs: [windows, linux]
+    runs-on: ubuntu-22.04
+    if: ${{ secrets.MANIFEST_SIGNING_KEY != '' }}
+
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: Generate checksums.txt
+        run: |
+          set -e
+          cd artifacts
+          echo "# SerwerCanary Client checksums (SHA-256)" > checksums.txt
+          echo "# Generated: $(date -u +%Y-%m-%dT%H:%M:%SZ)" >> checksums.txt
+          echo "" >> checksums.txt
+
+          find . -type f \( -name "*.zip" -o -name "*.tar.gz" -o -name "*.json" \) | sort | while read -r f; do
+            HASH=$(sha256sum "$f" | cut -d' ' -f1)
+            echo "$HASH  $f" >> checksums.txt
+          done
+
+          echo "=== checksums.txt ==="
+          cat checksums.txt
+
+      - name: Sign checksums with Ed25519
+        env:
+          SIGNING_KEY_B64: ${{ secrets.MANIFEST_SIGNING_KEY }}
+        run: |
+          set -e
+          cd artifacts
+
+          # Decode signing key from base64 secret
+          echo "$SIGNING_KEY_B64" | base64 -d > /tmp/signing.key
+          chmod 600 /tmp/signing.key
+
+          # Sign checksums.txt
+          openssl pkeyutl -sign \
+            -inkey /tmp/signing.key \
+            -rawin \
+            -in <(sha256sum checksums.txt | cut -d' ' -f1 | xxd -r -p) \
+            -out checksums.txt.sig
+
+          # Hex-encode signature for easy embedding
+          xxd -p -c 128 checksums.txt.sig > checksums.txt.sig.hex
+
+          # Sign each package-manifest JSON
+          for manifest in $(find . -name "package-manifest-*.json"); do
+            openssl pkeyutl -sign \
+              -inkey /tmp/signing.key \
+              -rawin \
+              -in <(sha256sum "$manifest" | cut -d' ' -f1 | xxd -r -p) \
+              -out "${manifest}.sig"
+            echo "Signed: $manifest"
+          done
+
+          # Cleanup
+          rm -f /tmp/signing.key
+
+          echo "=== Signatures generated ==="
+          ls -la *.sig *.hex 2>/dev/null || true
+          find . -name "*.sig" -ls
+
+      - name: Upload signed artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: checksums-signed
+          path: |
+            artifacts/checksums.txt
+            artifacts/checksums.txt.sig
+            artifacts/checksums.txt.sig.hex
+            artifacts/**/*.sig
+          retention-days: 90

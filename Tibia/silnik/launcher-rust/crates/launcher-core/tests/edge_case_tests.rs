@@ -34,6 +34,7 @@ fn files_hash_is_deterministic_across_calls() {
         "manifestId": "test:det",
         "version": "1.0.0",
         "releaseDate": "2026-03-03",
+        "generatedAtUtc": "2026-03-03T00:00:00Z",
         "channel": "test",
         "baseUrl": "https://cdn.example.com",
         "filesHashExpected": "placeholder",
@@ -88,7 +89,7 @@ fn files_hash_sorted_by_path_not_by_declaration_order() {
     let json1 = format!(
         r#"{{
         "schemaVersion": "2", "manifestId": "t:1", "version": "1.0.0",
-        "releaseDate": "2026-03-03", "channel": "test",
+        "releaseDate": "2026-03-03", "generatedAtUtc": "2026-03-03T00:00:00Z", "channel": "test",
         "filesHashExpected": "x",
         "files": [
             {{"path": "alpha.lua", "sha256": "{hash}", "size": {size}, "action": "file", "managed": true, "includeInFilesHash": true, "overwritePolicy": "always"}},
@@ -103,7 +104,7 @@ fn files_hash_sorted_by_path_not_by_declaration_order() {
     let json2 = format!(
         r#"{{
         "schemaVersion": "2", "manifestId": "t:1", "version": "1.0.0",
-        "releaseDate": "2026-03-03", "channel": "test",
+        "releaseDate": "2026-03-03", "generatedAtUtc": "2026-03-03T00:00:00Z", "channel": "test",
         "filesHashExpected": "x",
         "files": [
             {{"path": "beta.lua", "sha256": "{hash}", "size": {size}, "action": "file", "managed": true, "includeInFilesHash": true, "overwritePolicy": "always"}},
@@ -138,7 +139,7 @@ fn files_hash_excludes_non_managed_and_delete() {
     let json = format!(
         r#"{{
         "schemaVersion": "2", "manifestId": "t:1", "version": "1.0.0",
-        "releaseDate": "2026-03-03", "channel": "test",
+        "releaseDate": "2026-03-03", "generatedAtUtc": "2026-03-03T00:00:00Z", "channel": "test",
         "filesHashExpected": "x",
         "files": [
             {{"path": "managed.lua", "sha256": "{hash}", "size": {size}, "action": "file", "managed": true, "includeInFilesHash": true, "overwritePolicy": "always"}},
@@ -170,7 +171,7 @@ fn files_hash_missing_marker_is_predictable() {
 
     let json = r#"{
         "schemaVersion": "2", "manifestId": "t:1", "version": "1.0.0",
-        "releaseDate": "2026-03-03", "channel": "test",
+        "releaseDate": "2026-03-03", "generatedAtUtc": "2026-03-03T00:00:00Z", "channel": "test",
         "filesHashExpected": "x",
         "files": [
             {"path": "a.lua", "sha256": "aaaa", "size": 10, "action": "file", "managed": true, "includeInFilesHash": true, "overwritePolicy": "always"},

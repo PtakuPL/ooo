@@ -585,7 +585,8 @@ private:
 
 	uint16_t otclientV8 = 0;
 
-	PlayerGameMode_t pendingGameMode_ = GAMEMODE_MODERN;  // D1: set in onRecvFirstMessage, applied in login()
+	// Keep default aligned with GAMEMODE_MODERN (enum value 0) without requiring full enum definition here.
+	PlayerGameMode_t pendingGameMode_ = static_cast<PlayerGameMode_t>(0);  // D1: set in onRecvFirstMessage, applied in login()
 
 	void sendOpenStash();
 	void parseStashWithdraw(NetworkMessage &msg);

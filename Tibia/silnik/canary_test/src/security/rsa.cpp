@@ -11,22 +11,22 @@
 
 #include "lib/di/container.hpp"
 
-RSA::RSA(Logger &logger) :
+CanaryRSA::CanaryRSA(Logger &logger) :
 	logger(logger) {
 	mpz_init(n);
 	mpz_init2(d, 1024);
 }
 
-RSA::~RSA() {
+CanaryRSA::~CanaryRSA() {
 	mpz_clear(n);
 	mpz_clear(d);
 }
 
-RSA &RSA::getInstance() {
-	return inject<RSA>();
+CanaryRSA &CanaryRSA::getInstance() {
+	return inject<CanaryRSA>();
 }
 
-void RSA::start() {
+void CanaryRSA::start() {
 	const auto p("14299623962416399520070177382898895550795403345466153217470516082934737582776038882967213386204600674145392845853859217990626450972452084065728686565928113");
 	const auto q("7630979195970404721891201847792002125535401292779123937207447574596692788513647179235335529307251350570728407373705564708871762033017096809910315212884101");
 	try {
@@ -42,7 +42,7 @@ void RSA::start() {
 	}
 }
 
-void RSA::setKey(const char* pString, const char* qString, int base /* = 10*/) {
+void CanaryRSA::setKey(const char* pString, const char* qString, int base /* = 10*/) {
 	mpz_t p;
 	mpz_t q;
 	mpz_t e;
@@ -85,7 +85,7 @@ void RSA::setKey(const char* pString, const char* qString, int base /* = 10*/) {
 	mpz_clear(e);
 }
 
-void RSA::decrypt(char* msg) const {
+void CanaryRSA::decrypt(char* msg) const {
 	mpz_t c;
 	mpz_t m;
 	mpz_init2(c, 1024);
@@ -105,7 +105,7 @@ void RSA::decrypt(char* msg) const {
 	mpz_clear(m);
 }
 
-std::string RSA::base64Decrypt(const std::string &input) const {
+std::string CanaryRSA::base64Decrypt(const std::string &input) const {
 	auto posOfCharacter = [](const uint8_t chr) -> uint16_t {
 		if (chr >= 'A' && chr <= 'Z') {
 			return chr - 'A';
@@ -164,7 +164,7 @@ enum {
 	CRYPT_RSA_ASN1_BITSTRING = 3
 };
 
-uint16_t RSA::decodeLength(char*&pos) const {
+uint16_t CanaryRSA::decodeLength(char*&pos) const {
 	std::array<uint8_t, 4> buffer = { 0 };
 	uint16_t length = static_cast<uint8_t>(*pos++);
 	if (length & 0x80) {
@@ -196,7 +196,7 @@ uint16_t RSA::decodeLength(char*&pos) const {
 	return length;
 }
 
-void RSA::readHexString(char*&pos, uint16_t length, std::string &output) const {
+void CanaryRSA::readHexString(char*&pos, uint16_t length, std::string &output) const {
 	output.reserve(static_cast<size_t>(length) * 2);
 	for (uint16_t i = 0; i < length; ++i) {
 		const auto hex = static_cast<uint8_t>(*pos++);
@@ -205,7 +205,7 @@ void RSA::readHexString(char*&pos, uint16_t length, std::string &output) const {
 	}
 }
 
-bool RSA::loadPEM(const std::string &filename) {
+bool CanaryRSA::loadPEM(const std::string &filename) {
 	std::ifstream file { filename };
 	if (!file.is_open()) {
 		return false;

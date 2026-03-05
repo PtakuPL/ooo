@@ -632,7 +632,7 @@ void ProtocolGame::release() {
 // D2-D10: Helper — returns true and sends message if feature is blocked for Classic 7.4
 bool ProtocolGame::isClassic74Blocked(const std::string_view featureName) const {
 	if (player && player->isClassic74()) {
-		player->sendTextMessage(MESSAGE_STATUS_SMALL,
+		player->sendTextMessage(MESSAGE_STATUS,
 			fmt::format("Ta funkcja nie jest dostepna w trybie Classic 7.4: {}.", featureName));
 		return true;
 	}
@@ -2002,7 +2002,7 @@ void ProtocolGame::parseUseItemEx(NetworkMessage &msg) {
 	if (player && player->isClassic74() && fromPos.x == 0xFFFF) {
 		const auto &itemType = Item::items[fromItemId];
 		if (itemType.isRune()) {
-			player->sendTextMessage(MESSAGE_STATUS_SMALL,
+			player->sendTextMessage(MESSAGE_STATUS,
 				"Uzycie run z hotkeya nie jest dostepne w trybie Classic 7.4.");
 			return;
 		}
@@ -2022,7 +2022,7 @@ void ProtocolGame::parseUseWithCreature(NetworkMessage &msg) {
 	if (player && player->isClassic74() && fromPos.x == 0xFFFF) {
 		const auto &itemType = Item::items[itemId];
 		if (itemType.isRune()) {
-			player->sendTextMessage(MESSAGE_STATUS_SMALL,
+			player->sendTextMessage(MESSAGE_STATUS,
 				"Uzycie run z hotkeya nie jest dostepne w trybie Classic 7.4.");
 			return;
 		}

@@ -11,16 +11,16 @@
 
 class Logger;
 
-class RSA {
+class CanaryRSA {
 public:
-	explicit RSA(Logger &logger);
-	~RSA();
+	explicit CanaryRSA(Logger &logger);
+	~CanaryRSA();
 
 	// Singleton - ensures we don't accidentally copy it
-	RSA(RSA const &) = delete;
-	void operator=(RSA const &) = delete;
+	CanaryRSA(CanaryRSA const &) = delete;
+	void operator=(CanaryRSA const &) = delete;
 
-	static RSA &getInstance();
+	static CanaryRSA &getInstance();
 
 	void start();
 
@@ -38,4 +38,4 @@ private:
 	mpz_t d {};
 };
 
-constexpr auto g_RSA = RSA::getInstance;
+constexpr auto g_RSA = CanaryRSA::getInstance;

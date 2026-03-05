@@ -87,3 +87,38 @@ Stworzony obszerny plan w `/Dokumentacja/2026-03-04_launcher_i18n_plan.md`:
 
 - Brak finalnego, potwierdzonego green run po aktualnym pakiecie poprawek.
 - Brak jednego źródła prawdy z numerami runów „ostatni fail / pierwszy pass” (do dopisania po rerunie).
+
+---
+
+## Aktualizacja 2026-03-05 (nocny follow-up, ticket-gate)
+
+### Najnowsze twarde przyczyny z GitHub Actions
+
+- `Launcher Rust CI` run `22695082311` (job Ubuntu `65799538204`) pada na:
+  - `crates/launcher-core/tests/edge_case_tests.rs`
+  - 4 testy: `files_hash_*`
+  - błąd: `missing field generatedAtUtc`
+- `Build Launcher` run `22695082302` (job Ubuntu `65799538007`) pada identycznie na tych samych testach i tym samym błędzie.
+- `Canary - Build` run `22693935502` pada na:
+  - `protocolgame.hpp`: `GAMEMODE_MODERN` not declared
+  - `protocolgame.cpp`: `MESSAGE_STATUS_SMALL` not declared
+  - konflikt typu `RSA` z OpenSSL (`rsa_st` vs lokalna klasa `RSA`)
+
+### Co już poprawione lokalnie (czeka na commit/push)
+
+- `launcher-rust/crates/launcher-core/tests/edge_case_tests.rs`
+  - dodane `generatedAtUtc` do wszystkich fixture manifestu v2 używanych w `files_hash_*`.
+  - lokalny wynik: `cargo test -p launcher-core --test edge_case_tests` => `18 passed; 0 failed`.
+- `canary_test/src/server/network/protocol/protocolgame.hpp`
+  - default `pendingGameMode_` zmieniony z `GAMEMODE_MODERN` na `static_cast<PlayerGameMode_t>(0)`.
+- `canary_test/src/server/network/protocol/protocolgame.cpp`
+  - `MESSAGE_STATUS_SMALL` zamienione na `MESSAGE_STATUS` (3 miejsca).
+- `canary_test/src/security/rsa.hpp` + `rsa.cpp`
+  - lokalna klasa `RSA` przemianowana na `CanaryRSA` (eliminuje kolizję z OpenSSL).
+
+### Najbliższe kroki (operacyjne)
+
+- [ ] Commit + push powyższych poprawek na `feature/ticket-gate`.
+- [ ] Odpalić / poczekać na nowe runy i sprawdzać najpierw Ubuntu.
+- [ ] Jeśli Ubuntu przejdzie: sprawdzić domknięcie Windows.
+- [ ] Zaktualizować ten dokument o numery: "pierwszy zielony run Ubuntu" i "pierwszy zielony run Windows".

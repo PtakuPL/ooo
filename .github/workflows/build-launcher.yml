@@ -1,6 +1,5 @@
-# Build Launcher – cross-platform release candidates
-# LR-065: Manual dispatch + pre-release tag trigger
-# Spec: launcher+rust.md §6.2
+# Build Launcher – Linux + Windows
+# Unified: jeden job buduje CLI + Tauri + Helper na każdej platformie
 
 name: Build Launcher
 
@@ -31,11 +30,8 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  # ─────────────────────────────────────────────────
-  # 1. Build Rust core (CLI + library crates)
-  # ─────────────────────────────────────────────────
-  build-core:
-    name: Core (${{ matrix.os }})
+  build:
+    name: Build (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
@@ -43,10 +39,10 @@ jobs:
         include:
           - os: ubuntu-latest
             target: x86_64-unknown-linux-gnu
-            artifact_suffix: linux-x86_64
+            suffix: linux-x86_64
           - os: windows-latest
             target: x86_64-pc-windows-msvc
-            artifact_suffix: windows-x86_64
+            suffix: windows-x86_64
     steps:
       - uses: actions/checkout@v4
 
@@ -89,152 +85,36 @@ jobs:
       - name: Run tests
         run: cargo test --all ${{ steps.profile.outputs.flag }} --target ${{ matrix.target }}
 
-      - name: Collect CLI binary (Linux)
+      - name: Collect binaries (Linux)
         if: runner.os == 'Linux'
         run: |
+          DIR="${{ steps.profile.outputs.dir }}"
           mkdir -p ../artifacts
-          cp target/${{ matrix.target }}/${{ steps.profile.outputs.dir }}/launcher-cli ../artifacts/launcher-cli-${{ matrix.artifact_suffix }}
+          cp target/${{ matrix.target }}/$DIR/launcher-cli    ../artifacts/launcher-cli-${{ matrix.suffix }}
+          cp target/${{ matrix.target }}/$DIR/launcher-tauri  ../artifacts/launcher-tauri-${{ matrix.suffix }}
+          cp target/${{ matrix.target }}/$DIR/launcher-helper ../artifacts/launcher-helper-${{ matrix.suffix }}
+          chmod +x ../artifacts/launcher-*
 
-      - name: Collect CLI binary (Windows)
+      - name: Collect binaries (Windows)
         if: runner.os == 'Windows'
         shell: bash
         run: |
+          DIR="${{ steps.profile.outputs.dir }}"
           mkdir -p ../artifacts
-          cp target/${{ matrix.target }}/${{ steps.profile.outputs.dir }}/launcher-cli.exe ../artifacts/launcher-cli-${{ matrix.artifact_suffix }}.exe
+          cp target/${{ matrix.target }}/$DIR/launcher-cli.exe    ../artifacts/launcher-cli-${{ matrix.suffix }}.exe
+          cp target/${{ matrix.target }}/$DIR/launcher-tauri.exe  ../artifacts/launcher-tauri-${{ matrix.suffix }}.exe
+          cp target/${{ matrix.target }}/$DIR/launcher-helper.exe ../artifacts/launcher-helper-${{ matrix.suffix }}.exe
 
-      - name: Upload CLI artifact
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: launcher-cli-${{ matrix.artifact_suffix }}
-          path: Tibia/silnik/artifacts/launcher-cli*
+          name: launcher-${{ matrix.suffix }}
+          path: Tibia/silnik/artifacts/launcher-*
           if-no-files-found: error
 
-  # ─────────────────────────────────────────────────
-  # 2. Build Tauri app (LR-031)
-  # ─────────────────────────────────────────────────
-  build-tauri:
-    name: Tauri (${{ matrix.os }})
-    needs: [build-core]
-    runs-on: ${{ matrix.os }}
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - os: ubuntu-latest
-            target: x86_64-unknown-linux-gnu
-            artifact_suffix: linux-x86_64
-          - os: windows-latest
-            target: x86_64-pc-windows-msvc
-            artifact_suffix: windows-x86_64
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install Rust stable
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          targets: ${{ matrix.target }}
-
-      - name: Install Tauri system deps (Linux)
-        if: runner.os == 'Linux'
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
-
-      - name: Cache cargo
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            Tibia/silnik/launcher-rust/target
-          key: build-tauri-${{ runner.os }}-cargo-${{ hashFiles('Tibia/silnik/launcher-rust/Cargo.lock') }}
-
-      - name: Build Tauri binary
-        run: cargo build --release --package launcher-tauri --target ${{ matrix.target }}
-
-      - name: Collect Tauri binary (Linux)
-        if: runner.os == 'Linux'
-        run: |
-          mkdir -p ../artifacts
-          cp target/${{ matrix.target }}/release/launcher-tauri ../artifacts/launcher-tauri-${{ matrix.artifact_suffix }}
-
-      - name: Collect Tauri binary (Windows)
-        if: runner.os == 'Windows'
-        shell: bash
-        run: |
-          mkdir -p ../artifacts
-          cp target/${{ matrix.target }}/release/launcher-tauri.exe ../artifacts/launcher-tauri-${{ matrix.artifact_suffix }}.exe
-
-      - name: Upload Tauri artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: launcher-tauri-${{ matrix.artifact_suffix }}
-          path: Tibia/silnik/artifacts/launcher-tauri*
-          if-no-files-found: error
-
-  # ─────────────────────────────────────────────────
-  # 3. Build helper updater (LR-047)
-  # ─────────────────────────────────────────────────
-  build-helper:
-    name: Helper (${{ matrix.os }})
-    needs: [build-core]
-    runs-on: ${{ matrix.os }}
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - os: ubuntu-latest
-            target: x86_64-unknown-linux-gnu
-            artifact_suffix: linux-x86_64
-          - os: windows-latest
-            target: x86_64-pc-windows-msvc
-            artifact_suffix: windows-x86_64
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install Rust stable
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          targets: ${{ matrix.target }}
-
-      - name: Cache cargo
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            Tibia/silnik/launcher-rust/target
-          key: build-helper-${{ runner.os }}-cargo-${{ hashFiles('Tibia/silnik/launcher-rust/Cargo.lock') }}
-
-      - name: Build helper
-        run: cargo build --release --package launcher-helper --target ${{ matrix.target }}
-
-      - name: Collect helper binary (Linux)
-        if: runner.os == 'Linux'
-        run: |
-          mkdir -p ../artifacts
-          cp target/${{ matrix.target }}/release/launcher-helper ../artifacts/launcher-helper-${{ matrix.artifact_suffix }}
-
-      - name: Collect helper binary (Windows)
-        if: runner.os == 'Windows'
-        shell: bash
-        run: |
-          mkdir -p ../artifacts
-          cp target/${{ matrix.target }}/release/launcher-helper.exe ../artifacts/launcher-helper-${{ matrix.artifact_suffix }}.exe
-
-      - name: Upload helper artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: launcher-helper-${{ matrix.artifact_suffix }}
-          path: Tibia/silnik/artifacts/launcher-helper*
-          if-no-files-found: error
-
-  # ─────────────────────────────────────────────────
-  # 4. Generate SHA-256 checksums & summary
-  # ─────────────────────────────────────────────────
   checksums:
     name: SHA-256 Checksums
-    needs: [build-core, build-tauri, build-helper]
+    needs: [build]
     runs-on: ubuntu-latest
     defaults:
       run:

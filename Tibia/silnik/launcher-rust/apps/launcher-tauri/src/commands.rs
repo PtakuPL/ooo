@@ -12,9 +12,11 @@ use common_models::dto::*;
 use common_models::installed_state::InstalledState;
 
 use launcher_api::client::{ApiClient, ApiClientConfig, ManifestFetchResult};
-use launcher_core::manifest_signature::{verify_manifest_signature, SignatureConfig, SignaturePolicy};
 use launcher_core::file_index::LocalFileIndex;
 use launcher_core::integrity::compute_files_hash;
+use launcher_core::manifest_signature::{
+    verify_manifest_signature, SignatureConfig, SignaturePolicy,
+};
 use launcher_core::patcher::{self, PatchContext};
 use launcher_core::planner::build_update_plan;
 use launcher_core::process_runner::{launch_client, LaunchConfig};
@@ -39,12 +41,12 @@ fn build_signature_config(public_key_hex: &Option<String>) -> SignatureConfig {
 }
 
 /// Weryfikuje podpis manifestu i loguje wynik. Zwraca błąd tylko przy policy=Require.
-fn verify_fetched_manifest(result: &ManifestFetchResult, config: &SignatureConfig) -> Result<(), String> {
-    let verify = verify_manifest_signature(
-        &result.raw_json,
-        result.signature_hex.as_deref(),
-        config,
-    );
+fn verify_fetched_manifest(
+    result: &ManifestFetchResult,
+    config: &SignatureConfig,
+) -> Result<(), String> {
+    let verify =
+        verify_manifest_signature(&result.raw_json, result.signature_hex.as_deref(), config);
     match verify {
         Ok(res) => {
             tracing::info!("Weryfikacja podpisu manifestu: {}", res.message);
@@ -727,9 +729,7 @@ pub async fn get_installer_catalog(
 // ─────────────────────────────────────────────
 
 #[tauri::command]
-pub async fn get_language_packs(
-    state: State<'_, AppState>,
-) -> Result<serde_json::Value, String> {
+pub async fn get_language_packs(state: State<'_, AppState>) -> Result<serde_json::Value, String> {
     let (api_url, dev_mode) = {
         let guard = state.inner.lock().map_err(|e| e.to_string())?;
         (guard.api_base_url.clone(), guard.dev_mode)
@@ -785,16 +785,15 @@ pub async fn download_language_pack(
         .available_packs
         .iter()
         .find(|p| p.locale.eq_ignore_ascii_case(&normalized_locale))
-        .ok_or_else(|| format!("Nie znaleziono paczki językowej dla locale '{normalized_locale}'"))?;
+        .ok_or_else(|| {
+            format!("Nie znaleziono paczki językowej dla locale '{normalized_locale}'")
+        })?;
 
     let packs_root = launcher_data.join("i18n").join("language-packs");
-    let result = launcher_core::language_pack_download::download_language_pack(
-        &client,
-        pack,
-        &packs_root,
-    )
-    .await
-    .map_err(|e| format!("Instalacja paczki językowej nie powiodła się: {e}"))?;
+    let result =
+        launcher_core::language_pack_download::download_language_pack(&client, pack, &packs_root)
+            .await
+            .map_err(|e| format!("Instalacja paczki językowej nie powiodła się: {e}"))?;
 
     Ok(serde_json::json!({
       "locale": result.locale,

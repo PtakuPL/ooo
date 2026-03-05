@@ -2,6 +2,9 @@
 /target/
 **/*.rs.bk
 
+# Local cargo config (blocks rustc locally — must not reach CI)
+.cargo/config.toml
+
 # IDE
 .idea/
 .vscode/

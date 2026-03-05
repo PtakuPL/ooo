@@ -565,10 +565,7 @@ mod tests {
         assert_eq!(json["phase"], "error");
         assert_eq!(json["language"], "en");
         assert_eq!(json["error"]["code"], "LCH_CUSTOM");
-        assert_eq!(
-            json["error"]["userMessageKey"],
-            "errors.backend.LCH_CUSTOM"
-        );
+        assert_eq!(json["error"]["userMessageKey"], "errors.backend.LCH_CUSTOM");
         assert_eq!(json["error"]["retryable"], false);
     }
 

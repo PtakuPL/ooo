@@ -1,4 +1,0 @@
-# Blokada lokalnych kompilacji Rust w tym repo (na życzenie usera).
-# Aby odblokować: usuń lub zmień `rustc-wrapper`.
-[build]
-rustc-wrapper = "/bin/false"

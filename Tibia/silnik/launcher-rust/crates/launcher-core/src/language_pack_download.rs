@@ -106,26 +106,26 @@ pub async fn download_language_pack(
     let version = pack.version.trim().to_string();
     let cache_key = format!("{locale}:{version}");
 
-    let url = pack
-        .url
-        .as_deref()
-        .ok_or_else(|| LanguagePackDownloadError::MissingDownloadField {
-            locale: locale.clone(),
-            field: "url",
-        })?;
-    let expected_sha = pack
-        .sha256
-        .as_deref()
-        .ok_or_else(|| LanguagePackDownloadError::MissingDownloadField {
-            locale: locale.clone(),
-            field: "sha256",
-        })?;
-    let expected_size = pack
-        .size
-        .ok_or_else(|| LanguagePackDownloadError::MissingDownloadField {
-            locale: locale.clone(),
-            field: "size",
-        })?;
+    let url =
+        pack.url
+            .as_deref()
+            .ok_or_else(|| LanguagePackDownloadError::MissingDownloadField {
+                locale: locale.clone(),
+                field: "url",
+            })?;
+    let expected_sha =
+        pack.sha256
+            .as_deref()
+            .ok_or_else(|| LanguagePackDownloadError::MissingDownloadField {
+                locale: locale.clone(),
+                field: "sha256",
+            })?;
+    let expected_size =
+        pack.size
+            .ok_or_else(|| LanguagePackDownloadError::MissingDownloadField {
+                locale: locale.clone(),
+                field: "size",
+            })?;
 
     let bytes = api_client
         .download_file(url)
@@ -246,41 +246,43 @@ fn validate_language_pack_for_download(
         ));
     }
     if pack.bundled {
-        return Err(LanguagePackDownloadError::AlreadyBundled(pack.locale.clone()));
+        return Err(LanguagePackDownloadError::AlreadyBundled(
+            pack.locale.clone(),
+        ));
     }
 
-    let url = pack
-        .url
-        .as_deref()
-        .ok_or_else(|| LanguagePackDownloadError::MissingDownloadField {
-            locale: pack.locale.clone(),
-            field: "url",
-        })?;
+    let url =
+        pack.url
+            .as_deref()
+            .ok_or_else(|| LanguagePackDownloadError::MissingDownloadField {
+                locale: pack.locale.clone(),
+                field: "url",
+            })?;
     if !url.starts_with("https://") && !is_loopback_http_url(url) {
         return Err(LanguagePackDownloadError::InvalidMetadata(
             "url must use HTTPS".to_string(),
         ));
     }
 
-    let sha = pack
-        .sha256
-        .as_deref()
-        .ok_or_else(|| LanguagePackDownloadError::MissingDownloadField {
-            locale: pack.locale.clone(),
-            field: "sha256",
-        })?;
+    let sha =
+        pack.sha256
+            .as_deref()
+            .ok_or_else(|| LanguagePackDownloadError::MissingDownloadField {
+                locale: pack.locale.clone(),
+                field: "sha256",
+            })?;
     if sha.len() != 64 || !sha.chars().all(|c| c.is_ascii_hexdigit()) {
         return Err(LanguagePackDownloadError::InvalidMetadata(
             "sha256 must be a 64-char hex string".to_string(),
         ));
     }
 
-    let size = pack
-        .size
-        .ok_or_else(|| LanguagePackDownloadError::MissingDownloadField {
-            locale: pack.locale.clone(),
-            field: "size",
-        })?;
+    let size =
+        pack.size
+            .ok_or_else(|| LanguagePackDownloadError::MissingDownloadField {
+                locale: pack.locale.clone(),
+                field: "size",
+            })?;
     if size == 0 {
         return Err(LanguagePackDownloadError::InvalidMetadata(
             "size must be greater than zero".to_string(),
@@ -370,4 +372,3 @@ fn sanitize_segment(value: &str) -> String {
         sanitized
     }
 }
-

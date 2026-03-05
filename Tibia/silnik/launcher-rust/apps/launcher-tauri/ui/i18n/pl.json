@@ -1,0 +1,169 @@
+{
+  "app": {
+    "title": "SerwerCanary Launcher",
+    "heading": "SerwerCanary"
+  },
+  "labels": {
+    "launcher": "Launcher:",
+    "client": "Klient:",
+    "channel": "Kanał:",
+    "status": "Status:",
+    "servers": "🖥 Serwery",
+    "serverMainName": "SerwerCanary — Tibia 14.20+",
+    "serverRetroName": "SerwerCanary — Retro 7.4",
+    "players": "Gracze",
+    "ping": "Ping",
+    "currentVersion": "Obecna wersja:",
+    "latestVersion": "Nowa wersja:",
+    "selfUpdateStatus": "Status:",
+    "repairOk": "Pliki OK:",
+    "repairCorrupted": "Uszkodzone:",
+    "repairMissing": "Brakujące:",
+    "repairBytes": "Do pobrania:",
+    "settingChannel": "Kanał:",
+    "settingLanguage": "Język:",
+    "settingInstallPath": "Ścieżka instalacji:",
+    "languagePacks": "Pakiety językowe:"
+  },
+  "buttons": {
+    "play": "▶ Uruchom grę",
+    "playChecking": "🔍 Sprawdzanie integralności…",
+    "playLaunching": "⏳ Uruchamianie…",
+    "playLaunched": "✅ Uruchomiono",
+    "checkUpdates": "🔄 Sprawdź aktualizacje",
+    "checkingUpdates": "🔄 Sprawdzam…",
+    "createCharacterClassic": "🧙 Utwórz postać Tibia 7.4",
+    "createCharacterModern": "⚔ Utwórz postać Modern",
+    "website": "🌐 Strona WWW",
+    "retry": "🔄 Ponów",
+    "back": "← Powrót",
+    "repair": "🔧 Napraw",
+    "repairing": "🔧 Naprawiam…",
+    "save": "💾 Zapisz",
+    "refresh": "🔄 Odśwież",
+    "download": "⬇ Pobierz",
+    "downloading": "⏳ Pobieram…",
+    "downloaded": "✅ Pobrano",
+    "downloadError": "❌ Błąd",
+    "updateLauncher": "⬇ Aktualizuj launcher",
+    "updatingLauncher": "⏳ Aktualizuję…",
+    "exportLogs": "Eksport logów"
+  },
+  "screens": {
+    "update": "Aktualizacja",
+    "error": "⚠ Wystąpił błąd",
+    "repair": "🔧 Diagnostyka instalacji",
+    "settings": "⚙ Ustawienia",
+    "downloads": "📦 Download Center",
+    "selfUpdate": "🔄 Aktualizacja launchera"
+  },
+  "nav": {
+    "status": "Status",
+    "downloads": "Pobieranie",
+    "repair": "Naprawa",
+    "settings": "Ustawienia"
+  },
+  "phase": {
+    "checking": "sprawdzanie…",
+    "updating": "aktualizacja…",
+    "ready": "✅ gotowy",
+    "repairing": "naprawa…",
+    "error": "⚠ błąd",
+    "launcher_update_required": "⬆ aktualizacja launchera",
+    "upToDate": "✅ aktualny",
+    "offline": "brak połączenia"
+  },
+  "progress": {
+    "checking": "Sprawdzanie…",
+    "filesCount": "{0} / {1} plików",
+    "stage": {
+      "checking_manifest": "Sprawdzanie manifestu…",
+      "scanning_files": "Skanowanie plików…",
+      "downloading": "Pobieranie…",
+      "verifying": "Weryfikacja…",
+      "applying": "Aplikowanie zmian…",
+      "finalizing": "Finalizacja…",
+      "done": "✅ Zakończono!"
+    }
+  },
+  "repair": {
+    "apiUnavailable": "Nie udało się połączyć z API"
+  },
+  "downloads": {
+    "loading": "Ładowanie katalogu…",
+    "noArtifacts": "Brak dostępnych artefaktów.",
+    "apiHint": "Serwer API nie jest jeszcze dostępny. Pobieranie artefaktów będzie możliwe po uruchomieniu backendu.",
+    "catalogError": "Błąd pobierania katalogu: {0}",
+    "downloadedTo": "Pobrano: {0}",
+    "downloadError": "Pobieranie {0}: {1}"
+  },
+  "languagePacks": {
+    "loading": "Ładowanie paczek językowych…",
+    "empty": "Brak dostępnych paczek językowych.",
+    "bundled": "wbudowany",
+    "installed": "zainstalowany",
+    "available": "dostępny",
+    "version": "Wersja",
+    "tier": "Tier",
+    "installing": "Instaluję…",
+    "loadError": "Błąd pobierania paczek: {0}",
+    "installError": "Błąd instalacji paczki: {0}"
+  },
+  "selfUpdate": {
+    "required": "⚠ Wymagana aktualizacja",
+    "available": "Dostępna aktualizacja",
+    "downloading": "Pobieranie…",
+    "restarting": "Restart…"
+  },
+  "server": {
+    "online": "online",
+    "offline": "offline",
+    "maintenance": "przerwa techniczna"
+  },
+  "alerts": {
+    "logsExported": "Logi wyeksportowane do:\n{0}",
+    "logsExportError": "Błąd eksportu logów: {0}"
+  },
+  "errors": {
+    "launcherUpdateRequired": "Wymagana aktualizacja launchera do v{0}",
+    "integrityFailed": "Pliki klienta zostały zmodyfikowane lub usunięte. Napraw instalację.",
+    "modified": "Zmodyfikowane ({0}): {1}",
+    "missing": "Brakujące ({0}): {1}",
+    "readErrors": "Błędy odczytu ({0}): {1}",
+    "selfUpdate": "Self-update: {0}",
+    "frontend": {
+      "UNKNOWN": "Wystąpił nieoczekiwany błąd launchera.",
+      "CHECK_ERROR": "Nie udało się sprawdzić aktualizacji.",
+      "UPDATE_ERROR": "Aktualizacja klienta nie powiodła się.",
+      "LAUNCH_ERROR": "Nie udało się uruchomić klienta gry.",
+      "REPAIR_ERROR": "Naprawa instalacji nie powiodła się.",
+      "SETTINGS_ERROR": "Nie udało się zapisać ustawień launchera.",
+      "DOWNLOAD_ERROR": "Pobieranie artefaktu zakończyło się błędem.",
+      "SELF_UPDATE_ERROR": "Aktualizacja launchera nie powiodła się."
+    },
+    "backend": {
+      "LCH_RECOVERY_NEEDED": "Wykryto przerwaną aktualizację. Uruchom ponownie.",
+      "LCH_MANIFEST_FETCH_FAILED": "Nie można sprawdzić aktualizacji. Sprawdź połączenie internetowe.",
+      "LCH_MANIFEST_PARSE_FAILED": "Błąd danych aktualizacji. Spróbuj ponownie.",
+      "LCH_MANIFEST_SCHEMA_UNSUPPORTED": "Wymagana nowsza wersja launchera.",
+      "LCH_MANIFEST_SIGNATURE_INVALID": "Błąd weryfikacji aktualizacji. Zgłoś problem.",
+      "LCH_MANIFEST_PATH_TRAVERSAL": "Wykryto niebezpieczną ścieżkę w aktualizacji.",
+      "LCH_MANIFEST_DUPLICATE_PATH": "Błąd danych aktualizacji (duplikat pliku).",
+      "LCH_DOWNLOAD_FAILED": "Nie można pobrać pliku. Sprawdź połączenie.",
+      "LCH_FILE_HASH_MISMATCH": "Pobrany plik jest uszkodzony. Ponów pobieranie.",
+      "LCH_PATCH_APPLY_FAILED": "Aktualizacja nie powiodła się. Spróbuj naprawić instalację.",
+      "LCH_ROLLBACK_FAILED": "Przywracanie nie powiodło się. Napraw instalację ręcznie.",
+      "LCH_ROLLBACK_SUCCESS": "Aktualizacja cofnięta do poprzedniej wersji.",
+      "LCH_FILES_HASH_COMPUTE_FAILED": "Błąd weryfikacji plików. Napraw instalację.",
+      "LCH_TOKEN_REQUEST_FAILED": "Nie można uzyskać tokena startu. Spróbuj ponownie.",
+      "LCH_TOKEN_REJECTED": "Token odrzucony. Sprawdź aktualizacje.",
+      "LCH_TOKEN_RATE_LIMITED": "Za dużo prób. Poczekaj chwilę.",
+      "LCH_CLIENT_START_FAILED": "Nie można uruchomić gry. Sprawdź instalację.",
+      "LCH_CLIENT_NOT_FOUND": "Plik klienta gry nie znaleziony. Napraw instalację.",
+      "LCH_TLS_REQUIRED": "Wymagane bezpieczne połączenie (HTTPS).",
+      "LCH_STATE_CORRUPTED": "Stan launchera uszkodzony. Uruchamiam naprawę.",
+      "LCH_LAUNCHER_UPDATE_REQUIRED": "Wymagana aktualizacja launchera.",
+      "LCH_STAGING_CLEANUP_FAILED": "Ostrzeżenie: pliki tymczasowe nie zostały wyczyszczone."
+    }
+  }
+}

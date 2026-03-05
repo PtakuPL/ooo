@@ -125,3 +125,91 @@ Nowy plik testowy pokrywający:
 1. Uruchomienie pełnego CI pipeline na GitHub Actions (cargo test --all)
 2. Weryfikacja kompilacji na GHA (NIGDY lokalnie)  
 3. Push do remote gdy użytkownik zatwierdzi
+
+---
+
+## Aktualizacja 2026-03-05 (Codex/Copilot sync)
+
+### Domknięte po audycie wykonawczym
+- `launcher-core/src/hmac_rotation.rs`:
+  - dodano test `test_challenge_with_rotated_key` (stary/new `kid` + fallback bez `kid`).
+- API PHP:
+  - dodano endpoint `apik/v1/challenge.php` (nonce issue + DB persist + structured logging),
+  - dodano endpoint `apik/v1/server-status.php` (Rust-compatible response schema + structured logging),
+  - `apik/v1/launcher-token.php` rozszerzono o walidację challenge-response (`nonce`, `challengeResponse`, one-time consume).
+- Konfiguracja:
+  - `.env.example` rozszerzone o `CHALLENGE_TTL`, `CHALLENGE_REQUIRED`, `SERVER_STATUS_TIMEOUT_MS`, `SECURITY_LOG_FILE`, `LOG_IP_SALT`.
+
+### Ryzyko rolloutowe
+- `CHALLENGE_REQUIRED=true` wymaga etapowego wdrożenia (najpierw klient challenge-ready), inaczej legacy klient dostanie `403 challenge_required`.
+
+### Aktualizacja 2026-03-05 (i18n UI kickoff)
+- `apps/launcher-tauri/ui/app.js`:
+  - dodano runtime i18n PL/EN z fallbackami (`current -> pl -> en`) i interpolacją placeholderów,
+  - dodano przełącznik języka oraz persist wyboru po stronie frontendu (`localStorage`),
+  - przetłumaczono dynamiczne komunikaty status/progress/download/self-update.
+- `apps/launcher-tauri/ui/index.html`:
+  - dodano identyfikatory elementów pod i18n i selector języka w ekranie ustawień.
+
+Otwarte na kolejny etap (stan aktualny):
+- persist locale w backendzie (`LauncherConfig.language`) — ✅ domknięte,
+- pełny RTL (`ar/he/fa`) i wydzielenie słowników do plików JSON — ✅ domknięte,
+- nadal otwarte: pipeline language-packów/font-packów poza Tier0 (PL/EN).
+
+### Aktualizacja 2026-03-05 (i18n persist backend)
+- `crates/common-models/src/launcher_config.rs`:
+  - dodano pole `language` (default `pl`) + walidację,
+  - dodano `discover_with_path()` do bezpiecznego zapisu settings.
+- `apps/launcher-tauri/src/state.rs`:
+  - `AppStateInner` trzyma `language`, `config`, `config_path`.
+- `apps/launcher-tauri/src/commands.rs`:
+  - `change_channel(channel, language)` zapisuje trwałe ustawienia do `launcher_config.json`,
+  - `get_status` zwraca aktualny `language`.
+- `crates/common-models/src/dto.rs`:
+  - `LauncherStatusDto` rozszerzony o `language`.
+
+### Aktualizacja 2026-03-05 (i18n dictionaries + backend error keys)
+- `apps/launcher-tauri/ui/i18n/pl.json` oraz `apps/launcher-tauri/ui/i18n/en.json`:
+  - słowniki PL/EN wydzielone z `app.js`,
+  - dodana sekcja `errors.backend.*` pod kody `LCH_*`.
+- `apps/launcher-tauri/ui/app.js`:
+  - dodano loader słowników `loadI18nDictionaries()` i start po ich załadowaniu,
+  - dodano obsługę `status.error.userMessageKey` z fallbackiem do `status.error.userMessage`.
+- `crates/common-models/src/dto.rs`:
+  - `ErrorInfoDto` ma nowe pole `userMessageKey`,
+  - dla kodów launcherowych generowany jest klucz `errors.backend.<KOD>`.
+
+### Aktualizacja 2026-03-05 (RTL ar/he/fa)
+- `apps/launcher-tauri/ui/app.js`:
+  - dodano locale `ar`, `he`, `fa` + normalizację locale (`normalizeLocale`),
+  - dynamiczne przełączanie `document.documentElement.dir` (`ltr`/`rtl`).
+- `apps/launcher-tauri/ui/style.css`:
+  - dodano mirrored layout dla `html[dir="rtl"]` (nagłówek, karty, lista serwerów, progress, download card, footer/nav).
+- `apps/launcher-tauri/ui/i18n/`:
+  - dodano bazowe paczki `ar.json`, `he.json`, `fa.json` pod testy RTL.
+
+### Aktualizacja 2026-03-05 (i18n coverage refinement)
+- `apps/launcher-tauri/ui/index.html` + `ui/app.js`:
+  - nazwy światów są podpinane pod klucze i18n (brak finalnych hardcoded labeli).
+- `apps/launcher-tauri/ui/i18n/*.json`:
+  - dodano `errors.frontend.*` dla kodów błędów frontendu (`CHECK_ERROR`, `UPDATE_ERROR`, `LAUNCH_ERROR`, `REPAIR_ERROR`, `SETTINGS_ERROR`, ...).
+- `apps/launcher-tauri/ui/style.css`:
+  - dodano fallback font stack oparty o Noto dla lepszego pokrycia Unicode.
+
+### Aktualizacja 2026-03-05 (cel końcowy na 2026-03-06)
+
+Cel operacyjny na 2026-03-06:
+- uruchomienie klienta przez launcher na docelowej paczce Windows (tej pobranej do testów graczy),
+- równoległe połączenie na światy 7.4 i modern,
+- jawnie widoczna różnica anti-cheat między trybami (blokada hotkeys/runy w 7.4, brak tej blokady w modern),
+- potwierdzony kanał dystrybucji poprawek przez update klienta i self-update launchera.
+
+Definicja "done" dla etapu demonstracyjnego:
+1. Przejście checklisty D1..D5 bez regresji bezpieczeństwa.
+2. Każda poprawka launcher/klient zweryfikowana na tej samej paczce Windows (source-of-truth).
+3. Wszystkie nowe problemy UI/instalki dopisane do planu z właścicielem (Copilot/Codex) i statusem.
+
+Otwarte ryzyka do monitorowania:
+- rozjazd konfiguracji trybów 7.4 vs modern między manifestem, modułami klienta i server-side gate,
+- niepełne domknięcie ścieżki self-update przy zmianach launchera,
+- regresje UI instalatora wykryte dopiero na finalnej paczce Windows.

@@ -7,11 +7,12 @@
 
 use tauri::State;
 
-use common_models::api_responses::LaunchTokenRequest;
+use common_models::api_responses::{ErrorReportRequest, LaunchTokenRequest};
 use common_models::dto::*;
 use common_models::installed_state::InstalledState;
 
-use launcher_api::client::{ApiClient, ApiClientConfig};
+use launcher_api::client::{ApiClient, ApiClientConfig, ManifestFetchResult};
+use launcher_core::manifest_signature::{verify_manifest_signature, SignatureConfig, SignaturePolicy};
 use launcher_core::file_index::LocalFileIndex;
 use launcher_core::integrity::compute_files_hash;
 use launcher_core::patcher::{self, PatchContext};
@@ -22,6 +23,43 @@ use launcher_core::serverlist_sync;
 use launcher_core::state as core_state;
 
 use crate::state::AppState;
+
+// ─────────────────────────────────────────────
+// Helper: buduje SignatureConfig z klucza publicznego
+// ─────────────────────────────────────────────
+
+fn build_signature_config(public_key_hex: &Option<String>) -> SignatureConfig {
+    match public_key_hex {
+        Some(key) if !key.is_empty() => SignatureConfig {
+            policy: SignaturePolicy::WarnIfMissing,
+            public_key_hex: Some(key.clone()),
+        },
+        _ => SignatureConfig::default(), // Ignore
+    }
+}
+
+/// Weryfikuje podpis manifestu i loguje wynik. Zwraca błąd tylko przy policy=Require.
+fn verify_fetched_manifest(result: &ManifestFetchResult, config: &SignatureConfig) -> Result<(), String> {
+    let verify = verify_manifest_signature(
+        &result.raw_json,
+        result.signature_hex.as_deref(),
+        config,
+    );
+    match verify {
+        Ok(res) => {
+            tracing::info!("Weryfikacja podpisu manifestu: {}", res.message);
+            Ok(())
+        }
+        Err(e) => {
+            tracing::warn!("Błąd weryfikacji podpisu manifestu: {e}");
+            if config.policy == SignaturePolicy::Require {
+                Err(format!("LCH_MANIFEST_SIGNATURE_FAILED: {e}"))
+            } else {
+                Ok(()) // WarnIfMissing — kontynuuj
+            }
+        }
+    }
+}
 
 // ─────────────────────────────────────────────
 // LR-033: get_status — ekran statusu
@@ -47,6 +85,7 @@ pub async fn get_status(state: State<'_, AppState>) -> Result<LauncherStatusDto,
                 Ok(LauncherStatusDto::with_error(
                     guard.launcher_version.clone(),
                     guard.channel.clone(),
+                    guard.language.clone(),
                     ErrorInfoDto::generic(
                         "LCH_RECOVERY_NEEDED".into(),
                         "Wykryto przerwaną aktualizację. Uruchom ponownie.".into(),
@@ -57,18 +96,21 @@ pub async fn get_status(state: State<'_, AppState>) -> Result<LauncherStatusDto,
                 Ok(LauncherStatusDto::ready(
                     guard.launcher_version.clone(),
                     guard.channel.clone(),
+                    guard.language.clone(),
                     version,
                 ))
             } else {
                 Ok(LauncherStatusDto::checking(
                     guard.launcher_version.clone(),
                     guard.channel.clone(),
+                    guard.language.clone(),
                 ))
             }
         }
         None => Ok(LauncherStatusDto::checking(
             guard.launcher_version.clone(),
             guard.channel.clone(),
+            guard.language.clone(),
         )),
     }
 }
@@ -79,13 +121,14 @@ pub async fn get_status(state: State<'_, AppState>) -> Result<LauncherStatusDto,
 
 #[tauri::command]
 pub async fn check_for_updates(state: State<'_, AppState>) -> Result<UpdatePlanSummaryDto, String> {
-    let (api_url, channel, client_dir, dev_mode) = {
+    let (api_url, channel, client_dir, dev_mode, sig_key) = {
         let g = state.inner.lock().map_err(|e| e.to_string())?;
         (
             g.api_base_url.clone(),
             g.channel.clone(),
             g.client_dir.clone(),
             g.dev_mode,
+            g.signature_public_key.clone(),
         )
     };
 
@@ -96,11 +139,15 @@ pub async fn check_for_updates(state: State<'_, AppState>) -> Result<UpdatePlanS
     })
     .map_err(|e| e.to_string())?;
 
-    // Pobierz manifest
-    let manifest = api
-        .fetch_manifest(&channel)
+    // Pobierz manifest z weryfikacją podpisu (LR-053)
+    let fetch_result = api
+        .fetch_manifest_with_signature(&channel)
         .await
         .map_err(|e| format!("LCH_MANIFEST_FETCH_FAILED: {e}"))?;
+
+    let sig_config = build_signature_config(&sig_key);
+    verify_fetched_manifest(&fetch_result, &sig_config)?;
+    let manifest = fetch_result.manifest;
 
     // Skanuj lokalne pliki
     let index = LocalFileIndex::scan_from_manifest(&manifest, &client_dir)
@@ -146,7 +193,7 @@ async fn run_update_inner(
     _app: &tauri::AppHandle,
     state: &State<'_, AppState>,
 ) -> Result<UpdateProgressDto, String> {
-    let (api_url, channel, client_dir, launcher_data, launcher_version, dev_mode) = {
+    let (api_url, channel, client_dir, launcher_data, launcher_version, dev_mode, sig_key) = {
         let g = state.inner.lock().map_err(|e| e.to_string())?;
         (
             g.api_base_url.clone(),
@@ -155,6 +202,7 @@ async fn run_update_inner(
             g.launcher_data_dir.clone(),
             g.launcher_version.clone(),
             g.dev_mode,
+            g.signature_public_key.clone(),
         )
     };
 
@@ -177,11 +225,15 @@ async fn run_update_inner(
         )
     });
 
-    // --- Faza 1: Manifest ---
-    let manifest = api
-        .fetch_manifest(&channel)
+    // --- Faza 1: Manifest z weryfikacją podpisu (LR-053) ---
+    let fetch_result = api
+        .fetch_manifest_with_signature(&channel)
         .await
         .map_err(|e| format!("LCH_MANIFEST_FETCH_FAILED: {e}"))?;
+
+    let sig_config = build_signature_config(&sig_key);
+    verify_fetched_manifest(&fetch_result, &sig_config)?;
+    let manifest = fetch_result.manifest;
 
     // --- Faza 2: Skan ---
     let index = LocalFileIndex::scan_from_manifest(&manifest, &client_dir)
@@ -297,6 +349,69 @@ async fn run_update_inner(
 }
 
 // ─────────────────────────────────────────────
+// LR-085: pre_launch_check — weryfikacja plików krytycznych
+// ─────────────────────────────────────────────
+
+#[tauri::command]
+pub async fn pre_launch_check(state: State<'_, AppState>) -> Result<PreLaunchCheckDto, String> {
+    let (api_url, channel, client_dir, dev_mode, sig_key) = {
+        let g = state.inner.lock().map_err(|e| e.to_string())?;
+        (
+            g.api_base_url.clone(),
+            g.channel.clone(),
+            g.client_dir.clone(),
+            g.dev_mode,
+            g.signature_public_key.clone(),
+        )
+    };
+
+    let api = ApiClient::new(ApiClientConfig {
+        base_url: api_url,
+        dev_mode,
+        ..Default::default()
+    })
+    .map_err(|e| e.to_string())?;
+
+    let fetch_result = api
+        .fetch_manifest_with_signature(&channel)
+        .await
+        .map_err(|e| format!("LCH_MANIFEST_FETCH_FAILED: {e}"))?;
+
+    let sig_config = build_signature_config(&sig_key);
+    verify_fetched_manifest(&fetch_result, &sig_config)?;
+    let manifest = fetch_result.manifest;
+
+    if manifest.critical_files.is_empty() {
+        return Ok(PreLaunchCheckDto {
+            passed: true,
+            ok_count: 0,
+            modified_files: Vec::new(),
+            missing_files: Vec::new(),
+            error_files: Vec::new(),
+        });
+    }
+
+    let report =
+        launcher_core::integrity::verify_critical_files(&manifest.critical_files, &client_dir);
+
+    tracing::info!(
+        "Pre-launch check: passed={}, ok={}, modified={}, missing={}",
+        report.passed,
+        report.ok_count,
+        report.modified.len(),
+        report.missing.len()
+    );
+
+    Ok(PreLaunchCheckDto {
+        passed: report.passed,
+        ok_count: report.ok_count,
+        modified_files: report.modified,
+        missing_files: report.missing,
+        error_files: report.errors,
+    })
+}
+
+// ─────────────────────────────────────────────
 // LR-035: launch_game — start klienta
 // ─────────────────────────────────────────────
 
@@ -384,13 +499,14 @@ pub async fn launch_game(state: State<'_, AppState>) -> Result<String, String> {
 pub async fn repair_installation(
     state: State<'_, AppState>,
 ) -> Result<RepairDiagnosticsDto, String> {
-    let (api_url, channel, client_dir, dev_mode) = {
+    let (api_url, channel, client_dir, dev_mode, sig_key) = {
         let g = state.inner.lock().map_err(|e| e.to_string())?;
         (
             g.api_base_url.clone(),
             g.channel.clone(),
             g.client_dir.clone(),
             g.dev_mode,
+            g.signature_public_key.clone(),
         )
     };
 
@@ -401,10 +517,14 @@ pub async fn repair_installation(
     })
     .map_err(|e| e.to_string())?;
 
-    let manifest = api
-        .fetch_manifest(&channel)
+    let fetch_result = api
+        .fetch_manifest_with_signature(&channel)
         .await
         .map_err(|e| format!("LCH_MANIFEST_FETCH_FAILED: {e}"))?;
+
+    let sig_config = build_signature_config(&sig_key);
+    verify_fetched_manifest(&fetch_result, &sig_config)?;
+    let manifest = fetch_result.manifest;
 
     let (diag, _plan) = diagnose_installation(&manifest, &client_dir)
         .map_err(|e| format!("Błąd diagnostyki: {e}"))?;
@@ -444,7 +564,11 @@ pub async fn get_installation_info(
 // ─────────────────────────────────────────────
 
 #[tauri::command]
-pub async fn change_channel(channel: String, state: State<'_, AppState>) -> Result<String, String> {
+pub async fn change_channel(
+    channel: String,
+    language: Option<String>,
+    state: State<'_, AppState>,
+) -> Result<String, String> {
     let valid = ["stable", "test", "dev"];
     if !valid.contains(&channel.as_str()) {
         return Err(format!(
@@ -452,11 +576,38 @@ pub async fn change_channel(channel: String, state: State<'_, AppState>) -> Resu
         ));
     }
 
+    if let Some(lang) = &language {
+        if lang.trim().is_empty() {
+            return Err("Nieprawidłowy język: wartość pusta".to_string());
+        }
+    }
+
     let mut g = state.inner.lock().map_err(|e| e.to_string())?;
     g.channel = channel.clone();
+    g.config.channel = channel.clone();
 
-    tracing::info!("Zmieniono kanał na: {channel}");
-    Ok(format!("Kanał zmieniony na: {channel}"))
+    if let Some(lang) = language {
+        g.language = lang.clone();
+        g.config.language = lang;
+    }
+
+    g.config
+        .validate()
+        .map_err(|e| format!("Błąd walidacji configu: {e}"))?;
+    g.config
+        .save_to_file(&g.config_path)
+        .map_err(|e| format!("Błąd zapisu launcher_config.json: {e}"))?;
+
+    tracing::info!(
+        "Zmieniono ustawienia launchera: channel={} language={} config={}",
+        g.channel,
+        g.language,
+        g.config_path.display()
+    );
+    Ok(format!(
+        "Ustawienia zapisane: channel={} language={}",
+        g.channel, g.language
+    ))
 }
 
 // ─────────────────────────────────────────────
@@ -549,7 +700,11 @@ pub async fn get_installer_catalog(
 ) -> Result<serde_json::Value, String> {
     let (api_url, channel, dev_mode) = {
         let guard = state.inner.lock().map_err(|e| e.to_string())?;
-        (guard.api_base_url.clone(), guard.channel.clone(), guard.dev_mode)
+        (
+            guard.api_base_url.clone(),
+            guard.channel.clone(),
+            guard.dev_mode,
+        )
     };
 
     let config = launcher_api::client::ApiClientConfig {
@@ -568,6 +723,107 @@ pub async fn get_installer_catalog(
 }
 
 // ─────────────────────────────────────────────
+// Faza 9.4: language packs
+// ─────────────────────────────────────────────
+
+#[tauri::command]
+pub async fn get_language_packs(
+    state: State<'_, AppState>,
+) -> Result<serde_json::Value, String> {
+    let (api_url, dev_mode) = {
+        let guard = state.inner.lock().map_err(|e| e.to_string())?;
+        (guard.api_base_url.clone(), guard.dev_mode)
+    };
+
+    let config = launcher_api::client::ApiClientConfig {
+        base_url: api_url,
+        dev_mode,
+        ..Default::default()
+    };
+    let client = ApiClient::new(config).map_err(|e| e.to_string())?;
+
+    let packs = client
+        .fetch_language_packs()
+        .await
+        .map_err(|e| format!("Błąd pobierania paczek językowych: {e}"))?;
+
+    serde_json::to_value(&packs).map_err(|e| e.to_string())
+}
+
+#[tauri::command]
+pub async fn download_language_pack(
+    state: State<'_, AppState>,
+    locale: String,
+) -> Result<serde_json::Value, String> {
+    let normalized_locale = locale.trim().to_ascii_lowercase();
+    if normalized_locale.is_empty() {
+        return Err("Locale nie może być pusty".to_string());
+    }
+
+    let (api_url, launcher_data, dev_mode) = {
+        let guard = state.inner.lock().map_err(|e| e.to_string())?;
+        (
+            guard.api_base_url.clone(),
+            guard.launcher_data_dir.clone(),
+            guard.dev_mode,
+        )
+    };
+
+    let config = launcher_api::client::ApiClientConfig {
+        base_url: api_url,
+        dev_mode,
+        ..Default::default()
+    };
+    let client = ApiClient::new(config).map_err(|e| e.to_string())?;
+
+    let catalog = client
+        .fetch_language_packs()
+        .await
+        .map_err(|e| format!("Błąd pobierania katalogu paczek: {e}"))?;
+
+    let pack = catalog
+        .available_packs
+        .iter()
+        .find(|p| p.locale.eq_ignore_ascii_case(&normalized_locale))
+        .ok_or_else(|| format!("Nie znaleziono paczki językowej dla locale '{normalized_locale}'"))?;
+
+    let packs_root = launcher_data.join("i18n").join("language-packs");
+    let result = launcher_core::language_pack_download::download_language_pack(
+        &client,
+        pack,
+        &packs_root,
+    )
+    .await
+    .map_err(|e| format!("Instalacja paczki językowej nie powiodła się: {e}"))?;
+
+    Ok(serde_json::json!({
+      "locale": result.locale,
+      "version": result.version,
+      "cacheKey": result.cache_key,
+      "archivePath": result.archive_path.display().to_string(),
+      "installDir": result.install_dir.display().to_string(),
+      "fileCount": result.file_count,
+      "totalUnpackedBytes": result.total_unpacked_bytes
+    }))
+}
+
+#[tauri::command]
+pub async fn list_installed_language_packs(
+    state: State<'_, AppState>,
+) -> Result<serde_json::Value, String> {
+    let launcher_data = {
+        let guard = state.inner.lock().map_err(|e| e.to_string())?;
+        guard.launcher_data_dir.clone()
+    };
+    let packs_root = launcher_data.join("i18n").join("language-packs");
+
+    let packs = launcher_core::language_pack_download::list_installed_packs(&packs_root)
+        .map_err(|e| format!("Błąd odczytu zainstalowanych paczek: {e}"))?;
+
+    serde_json::to_value(&packs).map_err(|e| e.to_string())
+}
+
+// ─────────────────────────────────────────────
 // LR-045: download_and_verify_artifact
 // ─────────────────────────────────────────────
 
@@ -581,7 +837,11 @@ pub async fn download_and_verify_artifact(
 ) -> Result<serde_json::Value, String> {
     let (api_url, launcher_data, dev_mode) = {
         let guard = state.inner.lock().map_err(|e| e.to_string())?;
-        (guard.api_base_url.clone(), guard.launcher_data_dir.clone(), guard.dev_mode)
+        (
+            guard.api_base_url.clone(),
+            guard.launcher_data_dir.clone(),
+            guard.dev_mode,
+        )
     };
 
     let config = launcher_api::client::ApiClientConfig {
@@ -632,7 +892,11 @@ pub async fn check_launcher_update(
 ) -> Result<serde_json::Value, String> {
     let (api_url, current_version, dev_mode) = {
         let guard = state.inner.lock().map_err(|e| e.to_string())?;
-        (guard.api_base_url.clone(), guard.launcher_version.clone(), guard.dev_mode)
+        (
+            guard.api_base_url.clone(),
+            guard.launcher_version.clone(),
+            guard.dev_mode,
+        )
     };
 
     let config = launcher_api::client::ApiClientConfig {
@@ -783,9 +1047,7 @@ pub async fn perform_self_update(state: State<'_, AppState>) -> Result<serde_jso
 // ─────────────────────────────────────────────
 
 #[tauri::command]
-pub async fn get_server_status(
-    state: State<'_, AppState>,
-) -> Result<serde_json::Value, String> {
+pub async fn get_server_status(state: State<'_, AppState>) -> Result<serde_json::Value, String> {
     let (api_url, dev_mode) = {
         let g = state.inner.lock().map_err(|e| e.to_string())?;
         (g.api_base_url.clone(), g.dev_mode)
@@ -805,4 +1067,50 @@ pub async fn get_server_status(
         .map_err(|e| format!("Nie można pobrać statusu serwerów: {e}"))?;
 
     serde_json::to_value(&status).map_err(|e| e.to_string())
+}
+
+// ─────────────────────────────────────────────
+// Faza 8: report_error — raportowanie błędów
+// ─────────────────────────────────────────────
+
+#[tauri::command]
+pub async fn report_error(
+    state: State<'_, AppState>,
+    error_code: String,
+    message: String,
+    context: Option<serde_json::Value>,
+) -> Result<serde_json::Value, String> {
+    let (api_url, dev_mode, version) = {
+        let g = state.inner.lock().map_err(|e| e.to_string())?;
+        (
+            g.api_base_url.clone(),
+            g.dev_mode,
+            g.launcher_version.clone(),
+        )
+    };
+
+    let report = ErrorReportRequest {
+        error_code,
+        message,
+        launcher_version: version,
+        os: std::env::consts::OS.to_string(),
+        context,
+    };
+
+    let config = ApiClientConfig {
+        base_url: api_url,
+        timeout_seconds: 5,
+        max_retries: 1,
+        dev_mode,
+        ..Default::default()
+    };
+    let client = ApiClient::new(config).map_err(|e| e.to_string())?;
+
+    match client.report_error(&report).await {
+        Ok(resp) => serde_json::to_value(&resp).map_err(|e| e.to_string()),
+        Err(e) => {
+            tracing::warn!("Nie udało się wysłać raportu: {}", e);
+            Ok(serde_json::json!({"status": "failed_silently", "reason": e.to_string()}))
+        }
+    }
 }

@@ -298,4 +298,86 @@ mod tests {
         assert!(!result.manifest_hash.is_empty());
         assert_eq!(result.manifest_hash.len(), 64);
     }
+
+    // ─── 6.6: Tampered manifest tests ───
+
+    /// Generuje poprawny podpis placeholder (HMAC-SHA256) dla danego manifestu i klucza.
+    fn sign_placeholder(manifest_json: &str, key_hex: &str) -> String {
+        use sha2::{Digest, Sha256};
+        let key_bytes = hex_decode(key_hex).unwrap();
+        let mut hasher = Sha256::new();
+        hasher.update(&key_bytes);
+        hasher.update(manifest_json.as_bytes());
+        let hash = hasher.finalize();
+        // Ed25519 sig = 64 bytes = 128 hex chars. Placeholder: hash (32b) + padding (32b).
+        let mut sig = hash.to_vec();
+        sig.extend_from_slice(&[0u8; 32]); // pad to 64 bytes
+        sig.iter().map(|b| format!("{:02x}", b)).collect::<String>()
+    }
+
+    #[test]
+    fn test_valid_signature_accepted() {
+        let key = "a1b2c3d4e5f60718a1b2c3d4e5f60718a1b2c3d4e5f60718a1b2c3d4e5f60718";
+        let manifest = r#"{"version":"1.0.0","files":[]}"#;
+        let sig = sign_placeholder(manifest, key);
+
+        let config = SignatureConfig {
+            policy: SignaturePolicy::Require,
+            public_key_hex: Some(key.to_string()),
+        };
+        let result = verify_manifest_signature(manifest, Some(&sig), &config).unwrap();
+        assert!(result.signature_present);
+        assert_eq!(result.signature_valid, Some(true));
+        assert!(result.message.contains("valid"));
+    }
+
+    #[test]
+    fn test_tampered_manifest_rejected_require() {
+        let key = "a1b2c3d4e5f60718a1b2c3d4e5f60718a1b2c3d4e5f60718a1b2c3d4e5f60718";
+        let original = r#"{"version":"1.0.0","files":[]}"#;
+        let tampered = r#"{"version":"1.0.0","files":[{"path":"malware.exe"}]}"#;
+        let sig = sign_placeholder(original, key);
+
+        let config = SignatureConfig {
+            policy: SignaturePolicy::Require,
+            public_key_hex: Some(key.to_string()),
+        };
+        // Podpis oryginalnego manifestu zastosowany do zmienionego → odrzucenie
+        let result = verify_manifest_signature(tampered, Some(&sig), &config);
+        assert!(matches!(result, Err(SignatureError::SignatureInvalid)));
+    }
+
+    #[test]
+    fn test_tampered_manifest_warn_mode() {
+        let key = "a1b2c3d4e5f60718a1b2c3d4e5f60718a1b2c3d4e5f60718a1b2c3d4e5f60718";
+        let original = r#"{"version":"1.0.0"}"#;
+        let tampered = r#"{"version":"1.0.1"}"#;
+        let sig = sign_placeholder(original, key);
+
+        let config = SignatureConfig {
+            policy: SignaturePolicy::WarnIfMissing,
+            public_key_hex: Some(key.to_string()),
+        };
+        // WarnIfMissing: tampered → signature_valid=false ale Ok (nie Err)
+        let result = verify_manifest_signature(tampered, Some(&sig), &config).unwrap();
+        assert!(result.signature_present);
+        assert_eq!(result.signature_valid, Some(false));
+        assert!(result.message.contains("invalid"));
+    }
+
+    #[test]
+    fn test_wrong_key_rejected() {
+        let key1 = "a1b2c3d4e5f60718a1b2c3d4e5f60718a1b2c3d4e5f60718a1b2c3d4e5f60718";
+        let key2 = "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
+        let manifest = r#"{"version":"1.0.0"}"#;
+        let sig = sign_placeholder(manifest, key1);
+
+        let config = SignatureConfig {
+            policy: SignaturePolicy::Require,
+            public_key_hex: Some(key2.to_string()),
+        };
+        // Podpis z key1, weryfikacja z key2 → odrzucenie
+        let result = verify_manifest_signature(manifest, Some(&sig), &config);
+        assert!(matches!(result, Err(SignatureError::SignatureInvalid)));
+    }
 }

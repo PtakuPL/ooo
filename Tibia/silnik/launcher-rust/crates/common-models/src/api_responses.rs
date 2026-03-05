@@ -117,6 +117,64 @@ pub struct InstallerArtifact {
 }
 
 // ─────────────────────────────────────────────
+// language-packs.php response (Faza 9.4)
+// ─────────────────────────────────────────────
+
+/// Odpowiedź z endpointu `language-packs.php`.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct LanguagePacksResponse {
+    pub available_packs: Vec<LanguagePackInfo>,
+}
+
+/// Metadane pojedynczej paczki językowej.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct LanguagePackInfo {
+    /// Locale paczki (`en`, `pl`, `de`, `ar`, ...).
+    pub locale: String,
+
+    /// Wersja paczki.
+    pub version: String,
+
+    /// Czy paczka jest wbudowana w launcher.
+    #[serde(default)]
+    pub bundled: bool,
+
+    /// Nazwa wyświetlana (opcjonalnie).
+    #[serde(default)]
+    pub display_name: Option<String>,
+
+    /// Nazwa natywna (opcjonalnie).
+    #[serde(default)]
+    pub native_name: Option<String>,
+
+    /// Emoji flagi (opcjonalnie).
+    #[serde(default)]
+    pub flag: Option<String>,
+
+    /// Tier paczki (0..5) — opcjonalny.
+    #[serde(default)]
+    pub tier: Option<u8>,
+
+    /// URL pobrania (wymagany dla `bundled=false`).
+    #[serde(default)]
+    pub url: Option<String>,
+
+    /// Hash SHA-256 (wymagany dla `bundled=false`).
+    #[serde(default)]
+    pub sha256: Option<String>,
+
+    /// Rozmiar w bajtach (wymagany dla `bundled=false`).
+    #[serde(default)]
+    pub size: Option<u64>,
+
+    /// Dodatkowe wymagane fonty (opcjonalnie).
+    #[serde(default)]
+    pub requires_fonts: Vec<String>,
+}
+
+// ─────────────────────────────────────────────
 // challenge.php response (LR-052)
 // ─────────────────────────────────────────────
 
@@ -158,4 +216,28 @@ pub struct GameServerInfo {
     pub ping: Option<u32>,
     pub host: String,
     pub port: u16,
+}
+
+// ─────────────────────────────────────────────
+// Error Reporting (Faza 8)
+// ─────────────────────────────────────────────
+
+/// Raport o błędzie wysyłany do POST /error-report.php.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ErrorReportRequest {
+    #[serde(rename = "errorCode")]
+    pub error_code: String,
+    pub message: String,
+    #[serde(rename = "launcherVersion")]
+    pub launcher_version: String,
+    pub os: String,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub context: Option<serde_json::Value>,
+}
+
+/// Odpowiedź z POST /error-report.php.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ErrorReportResponse {
+    pub status: String,
+    pub id: Option<String>,
 }

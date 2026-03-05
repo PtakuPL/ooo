@@ -89,6 +89,88 @@ pub enum FilesHashError {
 }
 
 // ─────────────────────────────────────────────
+// LR-085: Weryfikacja plików krytycznych przed launch
+// ─────────────────────────────────────────────
+
+use common_models::manifest::CriticalFileEntry;
+
+/// Wynik weryfikacji pojedynczego pliku krytycznego.
+#[derive(Debug, Clone)]
+pub enum CriticalFileStatus {
+    /// Hash zgadza się z manifestem.
+    Ok,
+    /// Plik istnieje ale hash nie zgadza się.
+    Modified { expected: String, actual: String },
+    /// Plik nie istnieje na dysku.
+    Missing,
+    /// Błąd odczytu pliku.
+    ReadError(String),
+}
+
+/// Wynik weryfikacji wszystkich plików krytycznych.
+#[derive(Debug, Clone)]
+pub struct CriticalFilesReport {
+    /// Pliki które przeszły weryfikację.
+    pub ok_count: u32,
+    /// Pliki zmodyfikowane (hash niezgodny).
+    pub modified: Vec<String>,
+    /// Pliki brakujące.
+    pub missing: Vec<String>,
+    /// Pliki z błędem odczytu.
+    pub errors: Vec<String>,
+    /// Czy weryfikacja się powiodła (brak modified + missing + errors).
+    pub passed: bool,
+}
+
+/// LR-085: Weryfikuje SHA-256 plików krytycznych przed uruchomieniem klienta.
+///
+/// `critical_files` — lista z manifestu (path + expected sha256).
+/// `client_dir` — katalog instalacji klienta.
+///
+/// Zwraca raport: które pliki OK, które zmodyfikowane, które brakujące.
+pub fn verify_critical_files(
+    critical_files: &[CriticalFileEntry],
+    client_dir: &Path,
+) -> CriticalFilesReport {
+    let mut ok_count: u32 = 0;
+    let mut modified = Vec::new();
+    let mut missing = Vec::new();
+    let mut errors = Vec::new();
+
+    for cf in critical_files {
+        let full_path = client_dir.join(&cf.path);
+
+        if !full_path.exists() {
+            missing.push(cf.path.clone());
+            continue;
+        }
+
+        match sha256_file(&full_path) {
+            Ok(actual_hash) => {
+                if actual_hash == cf.sha256 {
+                    ok_count += 1;
+                } else {
+                    modified.push(cf.path.clone());
+                }
+            }
+            Err(e) => {
+                errors.push(format!("{}: {}", cf.path, e));
+            }
+        }
+    }
+
+    let passed = modified.is_empty() && missing.is_empty() && errors.is_empty();
+
+    CriticalFilesReport {
+        ok_count,
+        modified,
+        missing,
+        errors,
+        passed,
+    }
+}
+
+// ─────────────────────────────────────────────
 // Testy
 // ─────────────────────────────────────────────
 
@@ -167,5 +249,83 @@ mod tests {
         let hash_present = compute_files_hash(&manifest, tmp.path()).expect("h2");
 
         assert_ne!(hash_missing, hash_present);
+    }
+
+    // ─── verify_critical_files tests ───
+
+    #[test]
+    fn test_critical_files_all_ok() {
+        let tmp = tempfile::tempdir().expect("tmpdir");
+        let content = b"test content";
+        fs::write(tmp.path().join("init.lua"), content).expect("write");
+        let hash = sha256_file(&tmp.path().join("init.lua")).expect("hash");
+
+        let critical = vec![CriticalFileEntry {
+            path: "init.lua".into(),
+            sha256: hash,
+        }];
+
+        let report = verify_critical_files(&critical, tmp.path());
+        assert!(report.passed);
+        assert_eq!(report.ok_count, 1);
+        assert!(report.modified.is_empty());
+        assert!(report.missing.is_empty());
+    }
+
+    #[test]
+    fn test_critical_file_modified_detected() {
+        let tmp = tempfile::tempdir().expect("tmpdir");
+        fs::write(tmp.path().join("init.lua"), b"original").expect("write");
+
+        let critical = vec![CriticalFileEntry {
+            path: "init.lua".into(),
+            sha256: "0000000000000000000000000000000000000000000000000000000000000000".into(),
+        }];
+
+        let report = verify_critical_files(&critical, tmp.path());
+        assert!(!report.passed);
+        assert_eq!(report.modified.len(), 1);
+        assert_eq!(report.modified[0], "init.lua");
+    }
+
+    #[test]
+    fn test_critical_file_missing_detected() {
+        let tmp = tempfile::tempdir().expect("tmpdir");
+
+        let critical = vec![CriticalFileEntry {
+            path: "init.lua".into(),
+            sha256: "abc".into(),
+        }];
+
+        let report = verify_critical_files(&critical, tmp.path());
+        assert!(!report.passed);
+        assert_eq!(report.missing.len(), 1);
+        assert_eq!(report.missing[0], "init.lua");
+    }
+
+    #[test]
+    fn test_critical_files_empty_list() {
+        let tmp = tempfile::tempdir().expect("tmpdir");
+        let report = verify_critical_files(&[], tmp.path());
+        assert!(report.passed);
+        assert_eq!(report.ok_count, 0);
+    }
+
+    #[test]
+    fn test_critical_files_subdirectory() {
+        let tmp = tempfile::tempdir().expect("tmpdir");
+        let subdir = tmp.path().join("modules/client_entergame");
+        fs::create_dir_all(&subdir).expect("mkdir");
+        fs::write(subdir.join("entergame.lua"), b"game code").expect("write");
+        let hash = sha256_file(&subdir.join("entergame.lua")).expect("hash");
+
+        let critical = vec![CriticalFileEntry {
+            path: "modules/client_entergame/entergame.lua".into(),
+            sha256: hash,
+        }];
+
+        let report = verify_critical_files(&critical, tmp.path());
+        assert!(report.passed);
+        assert_eq!(report.ok_count, 1);
     }
 }

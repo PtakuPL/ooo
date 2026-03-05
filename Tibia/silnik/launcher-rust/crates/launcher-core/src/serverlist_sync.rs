@@ -85,6 +85,11 @@ fn generate_serverlist_lua(servers: &[ServerEntryRaw]) -> String {
         lua.push_str(&format!("    host = \"{}\",\n", escape_lua(&server.host)));
         lua.push_str(&format!("    port = {},\n", server.port));
 
+        let lp = server.login_port.unwrap_or(server.port);
+        let gp = server.game_port.unwrap_or(server.port);
+        lua.push_str(&format!("    loginPort = {},\n", lp));
+        lua.push_str(&format!("    gamePort = {},\n", gp));
+
         if let Some(ref mode) = server.game_mode {
             lua.push_str(&format!("    gameMode = \"{}\",\n", escape_lua(mode)));
         }
@@ -158,6 +163,8 @@ mod tests {
                 name: "Classic 7.4".to_string(),
                 host: "classic.example.com".to_string(),
                 port: 7171,
+                login_port: None,
+                game_port: None,
                 game_mode: Some("classic74".to_string()),
                 visible: true,
                 enabled: true,
@@ -169,6 +176,8 @@ mod tests {
                 name: "Modern".to_string(),
                 host: "modern.example.com".to_string(),
                 port: 7171,
+                login_port: None,
+                game_port: None,
                 game_mode: Some("modern".to_string()),
                 visible: true,
                 enabled: true,
@@ -180,6 +189,8 @@ mod tests {
                 name: "Hidden Test".to_string(),
                 host: "test.example.com".to_string(),
                 port: 7172,
+                login_port: None,
+                game_port: None,
                 game_mode: None,
                 visible: false,
                 enabled: true,

@@ -33,6 +33,9 @@ pub struct ManifestV2Raw {
     pub files: Vec<ManifestFileEntryV2Raw>,
 
     #[serde(default)]
+    pub critical_files: Vec<CriticalFileEntryRaw>,
+
+    #[serde(default)]
     pub servers: Vec<ServerEntryRaw>,
 
     #[serde(default)]
@@ -46,6 +49,14 @@ pub struct ManifestV2Raw {
 
     #[serde(default)]
     pub notes: Option<String>,
+}
+
+/// Wpis krytycznego pliku wymagającego weryfikacji integralności przed uruchomieniem.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct CriticalFileEntryRaw {
+    pub path: String,
+    pub sha256: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -171,6 +182,14 @@ pub struct ServerEntryRaw {
     pub host: String,
     pub port: u16,
 
+    /// Login protocol port (default: same as `port`).
+    #[serde(default)]
+    pub login_port: Option<u16>,
+
+    /// Game protocol port (default: same as `port`).
+    #[serde(default)]
+    pub game_port: Option<u16>,
+
     #[serde(default)]
     pub game_mode: Option<String>,
 
@@ -213,12 +232,21 @@ pub struct NormalizedManifest {
     pub files_hash_expected: Option<String>,
 
     pub files: Vec<ManifestFileEntry>,
+    pub critical_files: Vec<CriticalFileEntry>,
     pub servers: Vec<ServerEntryRaw>,
     pub changelog: Vec<ChangelogEntryRaw>,
 
     pub grace_previous_version_accepted_until_utc: Option<String>,
     pub signature: Option<String>,
     pub notes: Option<String>,
+}
+
+/// Znormalizowany wpis pliku krytycznego.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct CriticalFileEntry {
+    pub path: String,
+    pub sha256: String,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -456,6 +484,14 @@ fn normalize_v2(raw: ManifestV2Raw) -> Result<NormalizedManifest, ManifestParseE
         base_url: raw.base_url,
         files_hash_expected: raw.files_hash_expected,
         files,
+        critical_files: raw
+            .critical_files
+            .into_iter()
+            .map(|c| CriticalFileEntry {
+                path: normalize_rel_path(&c.path),
+                sha256: c.sha256,
+            })
+            .collect(),
         servers: raw.servers,
         changelog: raw.changelog,
         grace_previous_version_accepted_until_utc: raw.grace_previous_version_accepted_until_utc,
@@ -496,6 +532,7 @@ fn normalize_v1(raw: ManifestV1Raw) -> Result<NormalizedManifest, ManifestParseE
         base_url: None,
         files_hash_expected: None,
         files,
+        critical_files: Vec::new(),
         servers: Vec::new(),
         changelog: raw.changelog,
         grace_previous_version_accepted_until_utc: None,
@@ -602,6 +639,56 @@ mod tests {
         assert_eq!(manifest.manifest_id, "stable:1.0.3");
         assert!(manifest.files_hash_expected.is_some());
         assert!(!manifest.files.is_empty());
+    }
+
+    #[test]
+    fn test_parse_v2_critical_files() {
+        let json = include_str!("../tests/fixtures/manifest_v2.json");
+        let manifest = parse_manifest_compat(json).expect("v2 parse failed");
+        assert_eq!(manifest.critical_files.len(), 1);
+        assert_eq!(
+            manifest.critical_files[0].path,
+            "modules/client_entergame/entergame.lua"
+        );
+        assert_eq!(manifest.critical_files[0].sha256.len(), 64);
+    }
+
+    #[test]
+    fn test_parse_v2_servers_field() {
+        let json = r#"{
+            "schemaVersion": "2.0",
+            "manifestId": "stable:1.0.3",
+            "version": "1.0.3",
+            "releaseDate": "2026-03-02",
+            "generatedAtUtc": "2026-03-02T18:00:00Z",
+            "channel": "stable",
+            "baseUrl": "https://cdn.example.com/files/stable/1.0.3",
+            "filesHashExpected": "abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
+            "files": [
+                {"path": "core.lua", "sha256": "aabbcc1234567890aabbcc1234567890aabbcc1234567890aabbcc1234567890", "size": 1000, "managed": true, "action": "file"}
+            ],
+            "servers": [
+                {"id": "modern-1", "name": "Modern", "host": "game.example.com", "port": 7171, "gameMode": "modern", "visible": true, "enabled": true, "priority": 1, "channel": "stable"},
+                {"id": "classic74-1", "name": "Classic 7.4", "host": "classic.example.com", "port": 7172, "gameMode": "classic74", "visible": true, "enabled": true, "priority": 2, "channel": "stable"}
+            ]
+        }"#;
+
+        let manifest = parse_manifest_compat(json).expect("v2 parse failed");
+        assert_eq!(manifest.servers.len(), 2);
+        assert_eq!(manifest.servers[0].id, "modern-1");
+        assert_eq!(manifest.servers[0].host, "game.example.com");
+        assert_eq!(manifest.servers[0].port, 7171);
+        assert_eq!(manifest.servers[0].game_mode.as_deref(), Some("modern"));
+        assert_eq!(manifest.servers[1].id, "classic74-1");
+        assert_eq!(manifest.servers[1].game_mode.as_deref(), Some("classic74"));
+        assert_eq!(manifest.servers[1].channel.as_deref(), Some("stable"));
+    }
+
+    #[test]
+    fn test_v1_has_empty_critical_files() {
+        let json = include_str!("../tests/fixtures/manifest_v1.json");
+        let manifest = parse_manifest_compat(json).expect("v1 parse failed");
+        assert!(manifest.critical_files.is_empty());
     }
 
     #[test]

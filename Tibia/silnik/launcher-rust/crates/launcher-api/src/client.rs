@@ -7,10 +7,14 @@
 //! - pobieranie plików z URL (download z retry)
 
 use common_models::api_responses::{
-    ChallengeResponse, InstallerCatalogResponse, LaunchTokenErrorResponse, LaunchTokenRequest,
-    LaunchTokenResponse, LauncherVersionResponse,
+    ChallengeResponse, ErrorReportRequest, ErrorReportResponse, InstallerCatalogResponse,
+    LanguagePacksResponse, LaunchTokenErrorResponse, LaunchTokenRequest, LaunchTokenResponse,
+    LauncherVersionResponse,
 };
 use common_models::manifest::{parse_manifest_compat, ManifestParseError, NormalizedManifest};
+
+const CHALLENGE_MAX_TTL_SECONDS: u32 = 30;
+const CHALLENGE_MIN_NONCE_LEN: usize = 32;
 
 /// Konfiguracja klienta API.
 #[derive(Debug, Clone)]
@@ -64,6 +68,16 @@ pub enum ApiError {
 
     #[error("I/O error: {0}")]
     Io(#[from] std::io::Error),
+}
+
+/// Wynik pobrania manifestu z surowym JSON-em i opcjonalnym podpisem.
+///
+/// Używane przez `fetch_manifest_with_signature()` do weryfikacji podpisów (LR-053).
+#[derive(Debug, Clone)]
+pub struct ManifestFetchResult {
+    pub manifest: NormalizedManifest,
+    pub raw_json: String,
+    pub signature_hex: Option<String>,
 }
 
 /// Klient API launchera.
@@ -154,6 +168,48 @@ impl ApiClient {
         let json_text = resp.text().await?;
         let manifest = parse_manifest_compat(&json_text)?;
         Ok(manifest)
+    }
+
+    /// Pobiera manifest + surowy JSON + opcjonalny podpis z nagłówka `X-Manifest-Signature`.
+    ///
+    /// Używane przez flow aktualizacji do weryfikacji podpisu (LR-053).
+    pub async fn fetch_manifest_with_signature(
+        &self,
+        channel: &str,
+    ) -> Result<ManifestFetchResult, ApiError> {
+        let url = self.url(&format!("update.php?channel={}", channel));
+        tracing::info!("Pobieram manifest (z weryfikacją podpisu): {}", url);
+
+        let resp = self.get_with_retry(&url).await?;
+        let status = resp.status();
+
+        if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+            return Err(ApiError::RateLimited);
+        }
+
+        if !status.is_success() {
+            let body = resp.text().await.unwrap_or_default();
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body,
+            });
+        }
+
+        // Wyciągnij podpis z nagłówka zanim konsumujemy body
+        let signature_hex = resp
+            .headers()
+            .get("X-Manifest-Signature")
+            .and_then(|v| v.to_str().ok())
+            .map(|s| s.to_string());
+
+        let raw_json = resp.text().await?;
+        let manifest = parse_manifest_compat(&raw_json)?;
+
+        Ok(ManifestFetchResult {
+            manifest,
+            raw_json,
+            signature_hex,
+        })
     }
 
     // ─────────────────────────────────────────
@@ -253,6 +309,34 @@ impl ApiClient {
     }
 
     // ─────────────────────────────────────────
+    // Faza 9.4: language-packs.php
+    // ─────────────────────────────────────────
+
+    /// Pobiera listę dostępnych paczek językowych.
+    pub async fn fetch_language_packs(&self) -> Result<LanguagePacksResponse, ApiError> {
+        let url = self.url("language-packs.php");
+        tracing::info!("Pobieram katalog paczek językowych: {}", url);
+
+        let resp = self.get_with_retry(&url).await?;
+        let status = resp.status();
+
+        if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+            return Err(ApiError::RateLimited);
+        }
+
+        if !status.is_success() {
+            let body = resp.text().await.unwrap_or_default();
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body,
+            });
+        }
+
+        let packs: LanguagePacksResponse = resp.json().await?;
+        Ok(packs)
+    }
+
+    // ─────────────────────────────────────────
     // LR-052: challenge.php
     // ─────────────────────────────────────────
 
@@ -288,14 +372,7 @@ impl ApiClient {
         }
 
         let challenge: ChallengeResponse = resp.json().await?;
-
-        // Walidacja: nonce nie może być pusty
-        if challenge.nonce.is_empty() {
-            return Err(ApiError::HttpStatus {
-                status: 200,
-                body: "Challenge nonce is empty".to_string(),
-            });
-        }
+        validate_challenge_response(&challenge)?;
 
         Ok(Some(challenge))
     }
@@ -383,6 +460,50 @@ impl ApiClient {
     }
 
     // ─────────────────────────────────────────
+    // Faza 8: error-report.php — raportowanie błędów
+    // ─────────────────────────────────────────
+
+    /// Wysyła raport o błędzie do API (fire-and-forget, nie blokuje UI).
+    /// Zwraca Ok(()) nawet jeśli serwer odrzuci — loguje tylko ostrzeżenie.
+    pub async fn report_error(
+        &self,
+        report: &ErrorReportRequest,
+    ) -> Result<ErrorReportResponse, ApiError> {
+        let url = self.url("error-report.php");
+        tracing::info!(
+            "Wysyłam raport o błędzie: {} (code={})",
+            url,
+            report.error_code
+        );
+
+        let resp = self.http.post(&url).json(report).send().await?;
+        let status = resp.status();
+
+        if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+            return Err(ApiError::RateLimited);
+        }
+
+        if !status.is_success() {
+            let body = resp.text().await.unwrap_or_default();
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body,
+            });
+        }
+
+        let response: ErrorReportResponse = resp.json().await?;
+        Ok(response)
+    }
+
+    /// Fire-and-forget: wysyła raport i loguje wynik, nigdy nie zwraca błędu.
+    pub async fn report_error_silent(&self, report: &ErrorReportRequest) {
+        match self.report_error(report).await {
+            Ok(r) => tracing::debug!("Raport wysłany: id={}", r.id.unwrap_or_default()),
+            Err(e) => tracing::warn!("Nie udało się wysłać raportu o błędzie: {}", e),
+        }
+    }
+
+    // ─────────────────────────────────────────
     // Helper: GET z retry
     // ─────────────────────────────────────────
 
@@ -419,6 +540,53 @@ impl ApiClient {
     }
 }
 
+fn validate_challenge_response(challenge: &ChallengeResponse) -> Result<(), ApiError> {
+    let nonce = challenge.nonce.trim();
+    if nonce.is_empty() {
+        return Err(ApiError::HttpStatus {
+            status: 200,
+            body: "Challenge nonce is empty".to_string(),
+        });
+    }
+
+    if nonce.len() < CHALLENGE_MIN_NONCE_LEN {
+        return Err(ApiError::HttpStatus {
+            status: 200,
+            body: format!(
+                "Challenge nonce too short: got {}, expected at least {}",
+                nonce.len(),
+                CHALLENGE_MIN_NONCE_LEN
+            ),
+        });
+    }
+
+    if !nonce.chars().all(|c| c.is_ascii_hexdigit()) {
+        return Err(ApiError::HttpStatus {
+            status: 200,
+            body: "Challenge nonce is not hex".to_string(),
+        });
+    }
+
+    if challenge.expires_in_seconds == 0 {
+        return Err(ApiError::HttpStatus {
+            status: 200,
+            body: "Challenge TTL is zero".to_string(),
+        });
+    }
+
+    if challenge.expires_in_seconds > CHALLENGE_MAX_TTL_SECONDS {
+        return Err(ApiError::HttpStatus {
+            status: 200,
+            body: format!(
+                "Challenge TTL too high: {}s (max {}s)",
+                challenge.expires_in_seconds, CHALLENGE_MAX_TTL_SECONDS
+            ),
+        });
+    }
+
+    Ok(())
+}
+
 // ─────────────────────────────────────────────
 // Testy
 // ─────────────────────────────────────────────
@@ -426,6 +594,154 @@ impl ApiClient {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use serde_json::{json, Value};
+    use std::io::{Read, Write};
+    use std::net::{TcpListener, TcpStream};
+    use std::sync::{Arc, Mutex};
+    use std::thread;
+    use std::time::Duration;
+
+    #[derive(Debug, Clone)]
+    struct CapturedHttpRequest {
+        request_line: String,
+        headers: Vec<String>,
+        body: String,
+    }
+
+    struct SingleRequestServer {
+        base_url: String,
+        captured: Arc<Mutex<Option<CapturedHttpRequest>>>,
+        handle: thread::JoinHandle<()>,
+    }
+
+    impl SingleRequestServer {
+        fn start(status_code: u16, response_body: &str) -> Self {
+            let listener = TcpListener::bind("127.0.0.1:0").expect("bind test server");
+            let addr = listener.local_addr().expect("local addr");
+            let captured = Arc::new(Mutex::new(None));
+            let captured_clone = Arc::clone(&captured);
+            let body = response_body.to_string();
+
+            let handle = thread::spawn(move || {
+                let (mut stream, _) = listener.accept().expect("accept");
+                stream
+                    .set_read_timeout(Some(Duration::from_secs(2)))
+                    .expect("set timeout");
+
+                let request = read_http_request(&mut stream).expect("read request");
+                *captured_clone.lock().expect("lock captured") = Some(request);
+
+                let reason = match status_code {
+                    200 => "OK",
+                    429 => "Too Many Requests",
+                    500 => "Internal Server Error",
+                    _ => "OK",
+                };
+
+                let response = format!(
+                    "HTTP/1.1 {} {}\r\nContent-Type: application/json\r\nContent-Length: {}\r\nConnection: close\r\n\r\n{}",
+                    status_code,
+                    reason,
+                    body.len(),
+                    body
+                );
+                stream
+                    .write_all(response.as_bytes())
+                    .expect("write response");
+                stream.flush().expect("flush response");
+            });
+
+            Self {
+                base_url: format!("http://{}", addr),
+                captured,
+                handle,
+            }
+        }
+
+        fn wait(self) -> CapturedHttpRequest {
+            self.handle.join().expect("join server thread");
+            self.captured
+                .lock()
+                .expect("lock captured")
+                .clone()
+                .expect("captured request")
+        }
+    }
+
+    fn find_sequence(haystack: &[u8], needle: &[u8]) -> Option<usize> {
+        haystack
+            .windows(needle.len())
+            .position(|window| window == needle)
+    }
+
+    fn parse_content_length(headers: &str) -> usize {
+        headers
+            .lines()
+            .find_map(|line| {
+                let (name, value) = line.split_once(':')?;
+                if name.trim().eq_ignore_ascii_case("content-length") {
+                    return value.trim().parse::<usize>().ok();
+                }
+                None
+            })
+            .unwrap_or(0)
+    }
+
+    fn read_http_request(stream: &mut TcpStream) -> std::io::Result<CapturedHttpRequest> {
+        let mut bytes = Vec::new();
+        let mut buf = [0_u8; 1024];
+        let mut headers_end = None;
+
+        while headers_end.is_none() {
+            let n = stream.read(&mut buf)?;
+            if n == 0 {
+                break;
+            }
+            bytes.extend_from_slice(&buf[..n]);
+            headers_end = find_sequence(&bytes, b"\r\n\r\n");
+            if bytes.len() > 128 * 1024 {
+                break;
+            }
+        }
+
+        let headers_end = headers_end.ok_or_else(|| {
+            std::io::Error::new(
+                std::io::ErrorKind::InvalidData,
+                "missing HTTP headers terminator",
+            )
+        })?;
+        let headers_text = String::from_utf8_lossy(&bytes[..headers_end]).to_string();
+
+        let mut lines = headers_text.lines();
+        let request_line = lines.next().unwrap_or_default().to_string();
+        let headers: Vec<String> = lines
+            .filter(|line| !line.trim().is_empty())
+            .map(ToString::to_string)
+            .collect();
+
+        let content_length = parse_content_length(&headers_text);
+        let body_start = headers_end + 4;
+        let mut body = if bytes.len() > body_start {
+            bytes[body_start..].to_vec()
+        } else {
+            Vec::new()
+        };
+
+        while body.len() < content_length {
+            let n = stream.read(&mut buf)?;
+            if n == 0 {
+                break;
+            }
+            body.extend_from_slice(&buf[..n]);
+        }
+        body.truncate(content_length);
+
+        Ok(CapturedHttpRequest {
+            request_line,
+            headers,
+            body: String::from_utf8_lossy(&body).to_string(),
+        })
+    }
 
     #[test]
     fn test_api_client_config_default() {
@@ -462,6 +778,212 @@ mod tests {
         assert_eq!(
             client.url("launcher-version.php"),
             "https://api.example.com/v1/launcher-version.php"
+        );
+    }
+
+    #[test]
+    fn test_validate_challenge_response_ok() {
+        let challenge = ChallengeResponse {
+            nonce: "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4".to_string(),
+            expires_in_seconds: 30,
+            issued_at_utc: Some("2026-03-05T15:00:00Z".to_string()),
+        };
+
+        assert!(validate_challenge_response(&challenge).is_ok());
+    }
+
+    #[test]
+    fn test_validate_challenge_response_empty_nonce() {
+        let challenge = ChallengeResponse {
+            nonce: String::new(),
+            expires_in_seconds: 30,
+            issued_at_utc: None,
+        };
+
+        assert!(matches!(
+            validate_challenge_response(&challenge),
+            Err(ApiError::HttpStatus { status: 200, .. })
+        ));
+    }
+
+    #[test]
+    fn test_validate_challenge_response_nonce_not_hex() {
+        let challenge = ChallengeResponse {
+            nonce: "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz".to_string(),
+            expires_in_seconds: 30,
+            issued_at_utc: None,
+        };
+
+        assert!(matches!(
+            validate_challenge_response(&challenge),
+            Err(ApiError::HttpStatus { status: 200, .. })
+        ));
+    }
+
+    #[test]
+    fn test_validate_challenge_response_nonce_too_short() {
+        let challenge = ChallengeResponse {
+            nonce: "abcd1234".to_string(),
+            expires_in_seconds: 30,
+            issued_at_utc: None,
+        };
+
+        assert!(matches!(
+            validate_challenge_response(&challenge),
+            Err(ApiError::HttpStatus { status: 200, .. })
+        ));
+    }
+
+    #[test]
+    fn test_validate_challenge_response_ttl_zero() {
+        let challenge = ChallengeResponse {
+            nonce: "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4".to_string(),
+            expires_in_seconds: 0,
+            issued_at_utc: None,
+        };
+
+        assert!(matches!(
+            validate_challenge_response(&challenge),
+            Err(ApiError::HttpStatus { status: 200, .. })
+        ));
+    }
+
+    #[test]
+    fn test_validate_challenge_response_ttl_too_high() {
+        let challenge = ChallengeResponse {
+            nonce: "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4".to_string(),
+            expires_in_seconds: 31,
+            issued_at_utc: None,
+        };
+
+        assert!(matches!(
+            validate_challenge_response(&challenge),
+            Err(ApiError::HttpStatus { status: 200, .. })
+        ));
+    }
+
+    #[tokio::test]
+    async fn test_error_report_sent_on_download_failure() {
+        let server =
+            SingleRequestServer::start(200, r#"{"status":"accepted","id":"err-download-1"}"#);
+
+        let client = ApiClient::new(ApiClientConfig {
+            base_url: server.base_url.clone(),
+            timeout_seconds: 5,
+            max_retries: 0,
+            ..Default::default()
+        })
+        .expect("client");
+
+        let report = ErrorReportRequest {
+            error_code: "DOWNLOAD_ERROR".to_string(),
+            message: "Failed to download artifact: timeout".to_string(),
+            launcher_version: "0.1.0-test".to_string(),
+            os: "linux".to_string(),
+            context: Some(json!({
+                "filename": "otclient.exe",
+                "stage": "download",
+                "retryable": true
+            })),
+        };
+
+        let response = client.report_error(&report).await.expect("report accepted");
+        assert_eq!(response.status, "accepted");
+        assert_eq!(response.id.as_deref(), Some("err-download-1"));
+
+        let captured = server.wait();
+        assert!(
+            captured.request_line.starts_with("POST /error-report.php"),
+            "unexpected request line: {}",
+            captured.request_line
+        );
+        assert!(
+            captured.headers.iter().any(|h| h
+                .to_ascii_lowercase()
+                .starts_with("content-type: application/json")),
+            "missing application/json header: {:?}",
+            captured.headers
+        );
+
+        let payload: Value = serde_json::from_str(&captured.body).expect("json payload");
+        assert_eq!(payload["errorCode"], "DOWNLOAD_ERROR");
+        assert_eq!(payload["message"], "Failed to download artifact: timeout");
+        assert_eq!(payload["launcherVersion"], "0.1.0-test");
+        assert_eq!(payload["os"], "linux");
+        assert_eq!(payload["context"]["filename"], "otclient.exe");
+    }
+
+    #[tokio::test]
+    async fn test_error_report_format() {
+        let server =
+            SingleRequestServer::start(200, r#"{"status":"accepted","id":"err-format-1"}"#);
+
+        let client = ApiClient::new(ApiClientConfig {
+            base_url: server.base_url.clone(),
+            timeout_seconds: 5,
+            max_retries: 0,
+            ..Default::default()
+        })
+        .expect("client");
+
+        let report = ErrorReportRequest {
+            error_code: "frontend.download_failure".to_string(),
+            message: "Network error while downloading launcher.msi".to_string(),
+            launcher_version: "0.2.3".to_string(),
+            os: "windows".to_string(),
+            context: Some(json!({
+                "screen": "downloads",
+                "attempt": 2,
+                "url": "https://example.invalid/launcher.msi"
+            })),
+        };
+
+        let response = client.report_error(&report).await.expect("report accepted");
+        assert_eq!(response.status, "accepted");
+
+        let captured = server.wait();
+        let payload: Value = serde_json::from_str(&captured.body).expect("json payload");
+        let object = payload.as_object().expect("payload object");
+
+        assert!(object.contains_key("errorCode"));
+        assert!(object.contains_key("message"));
+        assert!(object.contains_key("launcherVersion"));
+        assert!(object.contains_key("os"));
+        assert!(object.contains_key("context"));
+        assert_eq!(
+            object.get("errorCode").and_then(Value::as_str),
+            Some("frontend.download_failure")
+        );
+    }
+
+    #[tokio::test]
+    async fn test_error_report_rate_limited() {
+        let server = SingleRequestServer::start(429, r#"{"status":"rate_limited"}"#);
+
+        let client = ApiClient::new(ApiClientConfig {
+            base_url: server.base_url.clone(),
+            timeout_seconds: 5,
+            max_retries: 0,
+            ..Default::default()
+        })
+        .expect("client");
+
+        let report = ErrorReportRequest {
+            error_code: "DOWNLOAD_ERROR".to_string(),
+            message: "Failed to download artifact".to_string(),
+            launcher_version: "0.1.0-test".to_string(),
+            os: "linux".to_string(),
+            context: None,
+        };
+
+        let result = client.report_error(&report).await;
+        assert!(matches!(result, Err(ApiError::RateLimited)));
+
+        let captured = server.wait();
+        assert!(
+            captured.request_line.starts_with("POST /error-report.php"),
+            "unexpected request line: {}",
+            captured.request_line
         );
     }
 }

@@ -10,7 +10,7 @@
   <div id="app">
     <!-- Nagłówek -->
     <header id="header">
-      <h1>SerwerCanary</h1>
+      <h1 id="app-title">SerwerCanary</h1>
       <span id="version-badge" class="badge">v---</span>
     </header>
 
@@ -18,19 +18,19 @@
     <section id="screen-status" class="screen active">
       <div class="status-card">
         <div class="status-row">
-          <span class="label">Launcher:</span>
+          <span id="label-launcher" class="label">Launcher:</span>
           <span id="status-launcher-ver">---</span>
         </div>
         <div class="status-row">
-          <span class="label">Klient:</span>
+          <span id="label-client" class="label">Klient:</span>
           <span id="status-client-ver">---</span>
         </div>
         <div class="status-row">
-          <span class="label">Kanał:</span>
+          <span id="label-channel" class="label">Kanał:</span>
           <span id="status-channel" class="badge badge-channel">---</span>
         </div>
         <div class="status-row">
-          <span class="label">Status:</span>
+          <span id="label-status" class="label">Status:</span>
           <span id="status-phase" class="badge badge-phase">sprawdzanie…</span>
         </div>
       </div>
@@ -38,14 +38,14 @@
       <!-- Lista serwerów -->
       <div class="servers-section">
         <div class="servers-header" id="servers-toggle">
-          <span>🖥 Serwery</span>
+          <span id="servers-title">🖥 Serwery</span>
           <span class="servers-arrow" id="servers-arrow">▼</span>
         </div>
         <div class="servers-list" id="servers-list">
           <div class="server-card" data-server="tibia-main">
             <div class="server-status-dot dot-offline"></div>
             <div class="server-info">
-              <div class="server-name">SerwerCanary — Tibia 14.20+</div>
+              <div id="server-name-main" class="server-name">SerwerCanary — Tibia 14.20+</div>
               <div class="server-meta">
                 <span class="server-players">Gracze: <strong id="srv-tibia-main-players">---</strong></span>
                 <span class="server-ping">Ping: <span id="srv-tibia-main-ping">---</span></span>
@@ -56,7 +56,7 @@
           <div class="server-card" data-server="tibia-retro">
             <div class="server-status-dot dot-offline"></div>
             <div class="server-info">
-              <div class="server-name">SerwerCanary — Retro 7.4</div>
+              <div id="server-name-retro" class="server-name">SerwerCanary — Retro 7.4</div>
               <div class="server-meta">
                 <span class="server-players">Gracze: <strong id="srv-tibia-retro-players">---</strong></span>
                 <span class="server-ping">Ping: <span id="srv-tibia-retro-ping">---</span></span>
@@ -70,13 +70,15 @@
       <div class="actions">
         <button id="btn-play" class="btn btn-primary" disabled>▶ Uruchom grę</button>
         <button id="btn-check" class="btn btn-secondary">🔄 Sprawdź aktualizacje</button>
+        <button id="btn-create-char-classic" class="btn btn-character">🧙 Utwórz postać Tibia 7.4</button>
+        <button id="btn-create-char-modern" class="btn btn-character">⚔ Utwórz postać Modern</button>
         <button id="btn-website" class="btn btn-website">🌐 Strona WWW</button>
       </div>
     </section>
 
     <!-- Ekran: Aktualizacja -->
     <section id="screen-update" class="screen">
-      <h2>Aktualizacja</h2>
+      <h2 id="update-title">Aktualizacja</h2>
       <div class="progress-area">
         <div class="progress-bar-container">
           <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
@@ -95,7 +97,7 @@
     <!-- Ekran: Błąd -->
     <section id="screen-error" class="screen">
       <div class="error-card">
-        <h2>⚠ Wystąpił błąd</h2>
+        <h2 id="error-title">⚠ Wystąpił błąd</h2>
         <p id="error-message" class="error-text">---</p>
         <p id="error-code" class="error-code">---</p>
         <div class="actions">
@@ -107,22 +109,22 @@
 
     <!-- Ekran: Naprawa -->
     <section id="screen-repair" class="screen">
-      <h2>🔧 Diagnostyka instalacji</h2>
+      <h2 id="repair-title">🔧 Diagnostyka instalacji</h2>
       <div class="repair-card">
         <div class="status-row">
-          <span class="label">Pliki OK:</span>
+          <span id="repair-label-ok" class="label">Pliki OK:</span>
           <span id="repair-ok" class="badge badge-ok">0</span>
         </div>
         <div class="status-row">
-          <span class="label">Uszkodzone:</span>
+          <span id="repair-label-corrupted" class="label">Uszkodzone:</span>
           <span id="repair-corrupted" class="badge badge-error">0</span>
         </div>
         <div class="status-row">
-          <span class="label">Brakujące:</span>
+          <span id="repair-label-missing" class="label">Brakujące:</span>
           <span id="repair-missing" class="badge badge-warn">0</span>
         </div>
         <div class="status-row">
-          <span class="label">Do pobrania:</span>
+          <span id="repair-label-bytes" class="label">Do pobrania:</span>
           <span id="repair-bytes">0 B</span>
         </div>
       </div>
@@ -134,10 +136,10 @@
 
     <!-- Ekran: Ustawienia -->
     <section id="screen-settings" class="screen">
-      <h2>⚙ Ustawienia</h2>
+      <h2 id="settings-title">⚙ Ustawienia</h2>
       <div class="settings-card">
         <div class="setting-row">
-          <label for="setting-channel">Kanał:</label>
+          <label id="setting-channel-label" for="setting-channel">Kanał:</label>
           <select id="setting-channel">
             <option value="stable">stable</option>
             <option value="test">test</option>
@@ -145,8 +147,19 @@
           </select>
         </div>
         <div class="setting-row">
-          <label>Ścieżka instalacji:</label>
+          <label id="setting-language-label" for="setting-language">Język:</label>
+          <select id="setting-language"></select>
+        </div>
+        <div class="setting-row">
+          <label id="setting-install-path-label">Ścieżka instalacji:</label>
           <span id="setting-install-path" class="mono">---</span>
+        </div>
+        <div class="setting-row setting-row-stack">
+          <label id="language-packs-label">Pakiety językowe:</label>
+          <div id="language-packs-list" class="language-packs-list"></div>
+          <p id="language-packs-empty" class="info-text">Ładowanie paczek językowych…</p>
+          <p id="language-packs-error" class="error-code" style="display:none"></p>
+          <button id="btn-language-packs-refresh" class="btn btn-secondary btn-compact">🔄 Odśwież pakiety</button>
         </div>
       </div>
       <div class="actions">
@@ -157,14 +170,14 @@
 
     <!-- Ekran: Download Center (LR-044) -->
     <section id="screen-downloads" class="screen">
-      <h2>📦 Download Center</h2>
+      <h2 id="downloads-title">📦 Download Center</h2>
       <div id="downloads-loading" class="info-text">Ładowanie katalogu…</div>
       <div id="downloads-list" class="downloads-list" style="display:none">
         <!-- Dynamicznie generowane karty artefaktów -->
       </div>
       <div id="downloads-error" class="error-card" style="display:none">
         <p class="error-text" id="downloads-error-msg">---</p>
-        <p class="info-text">Serwer API nie jest jeszcze dostępny. Pobieranie artefaktów będzie możliwe po uruchomieniu backendu.</p>
+        <p id="downloads-error-hint" class="info-text">Serwer API nie jest jeszcze dostępny. Pobieranie artefaktów będzie możliwe po uruchomieniu backendu.</p>
       </div>
       <div class="actions">
         <button id="btn-downloads-refresh" class="btn btn-secondary">🔄 Odśwież</button>
@@ -174,18 +187,18 @@
 
     <!-- Ekran: Self-update launchera (LR-048..050) -->
     <section id="screen-self-update" class="screen">
-      <h2>🔄 Aktualizacja launchera</h2>
+      <h2 id="selfupdate-title">🔄 Aktualizacja launchera</h2>
       <div class="status-card">
         <div class="status-row">
-          <span class="label">Obecna wersja:</span>
+          <span id="selfupdate-label-current" class="label">Obecna wersja:</span>
           <span id="selfupdate-current">---</span>
         </div>
         <div class="status-row">
-          <span class="label">Nowa wersja:</span>
+          <span id="selfupdate-label-latest" class="label">Nowa wersja:</span>
           <span id="selfupdate-latest">---</span>
         </div>
         <div class="status-row">
-          <span class="label">Status:</span>
+          <span id="selfupdate-label-status" class="label">Status:</span>
           <span id="selfupdate-status" class="badge badge-phase">---</span>
         </div>
         <div id="selfupdate-notes" class="info-text" style="display:none"></div>

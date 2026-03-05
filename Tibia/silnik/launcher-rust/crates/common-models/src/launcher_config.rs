@@ -17,6 +17,10 @@ pub struct LauncherConfig {
     #[serde(default = "default_channel")]
     pub channel: String,
 
+    /// Język interfejsu launchera (np. "pl", "en").
+    #[serde(default = "default_language")]
+    pub language: String,
+
     /// Czy sprawdzać wersję launchera przy starcie.
     #[serde(default = "default_true")]
     pub launcher_version_check: bool,
@@ -32,10 +36,19 @@ pub struct LauncherConfig {
     /// Tryb deweloperski — akceptuj self-signed certy (NIE używać na produkcji!).
     #[serde(default)]
     pub dev_mode: bool,
+
+    /// Klucz publiczny Ed25519 (hex, 64 znaki) do weryfikacji podpisu manifestu.
+    /// Jeśli pusty/brak — podpis nie jest weryfikowany.
+    #[serde(default)]
+    pub manifest_public_key: Option<String>,
 }
 
 fn default_channel() -> String {
     "stable".to_string()
+}
+
+fn default_language() -> String {
+    "pl".to_string()
 }
 
 fn default_true() -> bool {
@@ -55,10 +68,12 @@ impl Default for LauncherConfig {
         Self {
             api_base_url: "https://api.serwercanary.pl/client/".to_string(),
             channel: default_channel(),
+            language: default_language(),
             launcher_version_check: true,
             client_dir: default_client_dir(),
             launcher_data_dir: default_launcher_data_dir(),
             dev_mode: false,
+            manifest_public_key: None,
         }
     }
 }
@@ -101,6 +116,13 @@ impl LauncherConfig {
     /// 1. Obok binarki launchera
     /// 2. W katalogu nadrzędnym
     pub fn discover(exe_dir: &Path) -> Result<Self, ConfigError> {
+        let (config, _path) = Self::discover_with_path(exe_dir)?;
+        Ok(config)
+    }
+
+    /// Jak `discover()`, ale zwraca również ścieżkę pliku config.
+    /// Jeśli config nie istnieje — zwracana jest domyślna ścieżka zapisu: `{exe_dir}/launcher_config.json`.
+    pub fn discover_with_path(exe_dir: &Path) -> Result<(Self, PathBuf), ConfigError> {
         let candidates = [
             exe_dir.join("launcher_config.json"),
             exe_dir
@@ -111,13 +133,14 @@ impl LauncherConfig {
 
         for path in &candidates {
             if path.exists() {
-                return Self::load_from_file(path);
+                let config = Self::load_from_file(path)?;
+                return Ok((config, path.clone()));
             }
         }
 
         // Brak configu — użyj domyślnych wartości
         tracing::warn!("Nie znaleziono launcher_config.json — używam domyślnych ustawień");
-        Ok(Self::default())
+        Ok((Self::default(), exe_dir.join("launcher_config.json")))
     }
 
     /// Waliduje pola konfiguracji.
@@ -132,6 +155,25 @@ impl LauncherConfig {
                 "Nieprawidłowy kanał: '{}' (dozwolone: stable, test, dev)",
                 self.channel
             )));
+        }
+        if self.language.trim().is_empty() {
+            return Err(ConfigError::Validation(
+                "language nie może być pusty".into(),
+            ));
+        }
+        if self.language.len() > 16 {
+            return Err(ConfigError::Validation(
+                "language jest za długi (max 16 znaków)".into(),
+            ));
+        }
+        if !self
+            .language
+            .chars()
+            .all(|c| c.is_ascii_alphanumeric() || c == '-' || c == '_')
+        {
+            return Err(ConfigError::Validation(
+                "language może zawierać tylko [a-zA-Z0-9_-]".into(),
+            ));
         }
         if self.client_dir.is_empty() {
             return Err(ConfigError::Validation(
@@ -198,6 +240,7 @@ mod tests {
     fn test_default_config() {
         let config = LauncherConfig::default();
         assert_eq!(config.channel, "stable");
+        assert_eq!(config.language, "pl");
         assert!(config.launcher_version_check);
         assert_eq!(config.client_dir, "client");
         assert_eq!(config.launcher_data_dir, "launcher_data");
@@ -219,6 +262,7 @@ mod tests {
         let config: LauncherConfig = serde_json::from_str(json).unwrap();
         assert_eq!(config.api_base_url, "https://api.example.com/");
         assert_eq!(config.channel, "stable");
+        assert_eq!(config.language, "pl");
         assert_eq!(config.client_dir, "client");
     }
 
@@ -235,6 +279,15 @@ mod tests {
     fn test_config_validation_bad_channel() {
         let config = LauncherConfig {
             channel: "beta".to_string(),
+            ..LauncherConfig::default()
+        };
+        assert!(config.validate().is_err());
+    }
+
+    #[test]
+    fn test_config_validation_empty_language() {
+        let config = LauncherConfig {
+            language: " ".to_string(),
             ..LauncherConfig::default()
         };
         assert!(config.validate().is_err());

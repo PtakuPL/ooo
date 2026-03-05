@@ -1,0 +1,169 @@
+{
+  "app": {
+    "title": "SerwerCanary Launcher",
+    "heading": "SerwerCanary"
+  },
+  "labels": {
+    "launcher": "Launcher:",
+    "client": "Client:",
+    "channel": "Channel:",
+    "status": "Status:",
+    "servers": "🖥 Servers",
+    "serverMainName": "SerwerCanary — Tibia 14.20+",
+    "serverRetroName": "SerwerCanary — Retro 7.4",
+    "players": "Players",
+    "ping": "Ping",
+    "currentVersion": "Current version:",
+    "latestVersion": "Latest version:",
+    "selfUpdateStatus": "Status:",
+    "repairOk": "Files OK:",
+    "repairCorrupted": "Corrupted:",
+    "repairMissing": "Missing:",
+    "repairBytes": "To download:",
+    "settingChannel": "Channel:",
+    "settingLanguage": "Language:",
+    "settingInstallPath": "Install path:",
+    "languagePacks": "Language packs:"
+  },
+  "buttons": {
+    "play": "▶ Launch game",
+    "playChecking": "🔍 Checking integrity…",
+    "playLaunching": "⏳ Launching…",
+    "playLaunched": "✅ Started",
+    "checkUpdates": "🔄 Check for updates",
+    "checkingUpdates": "🔄 Checking…",
+    "createCharacterClassic": "🧙 Create character Tibia 7.4",
+    "createCharacterModern": "⚔ Create character Modern",
+    "website": "🌐 Website",
+    "retry": "🔄 Retry",
+    "back": "← Back",
+    "repair": "🔧 Repair",
+    "repairing": "🔧 Repairing…",
+    "save": "💾 Save",
+    "refresh": "🔄 Refresh",
+    "download": "⬇ Download",
+    "downloading": "⏳ Downloading…",
+    "downloaded": "✅ Downloaded",
+    "downloadError": "❌ Error",
+    "updateLauncher": "⬇ Update launcher",
+    "updatingLauncher": "⏳ Updating…",
+    "exportLogs": "Export logs"
+  },
+  "screens": {
+    "update": "Update",
+    "error": "⚠ An error occurred",
+    "repair": "🔧 Installation diagnostics",
+    "settings": "⚙ Settings",
+    "downloads": "📦 Download Center",
+    "selfUpdate": "🔄 Launcher update"
+  },
+  "nav": {
+    "status": "Status",
+    "downloads": "Downloads",
+    "repair": "Repair",
+    "settings": "Settings"
+  },
+  "phase": {
+    "checking": "checking…",
+    "updating": "updating…",
+    "ready": "✅ ready",
+    "repairing": "repairing…",
+    "error": "⚠ error",
+    "launcher_update_required": "⬆ launcher update required",
+    "upToDate": "✅ up to date",
+    "offline": "offline"
+  },
+  "progress": {
+    "checking": "Checking…",
+    "filesCount": "{0} / {1} files",
+    "stage": {
+      "checking_manifest": "Checking manifest…",
+      "scanning_files": "Scanning files…",
+      "downloading": "Downloading…",
+      "verifying": "Verifying…",
+      "applying": "Applying changes…",
+      "finalizing": "Finalizing…",
+      "done": "✅ Finished!"
+    }
+  },
+  "repair": {
+    "apiUnavailable": "Could not connect to API"
+  },
+  "downloads": {
+    "loading": "Loading catalog…",
+    "noArtifacts": "No artifacts available.",
+    "apiHint": "API server is not available yet. Artifact downloads will be enabled after backend startup.",
+    "catalogError": "Catalog download error: {0}",
+    "downloadedTo": "Downloaded: {0}",
+    "downloadError": "Downloading {0}: {1}"
+  },
+  "languagePacks": {
+    "loading": "Loading language packs…",
+    "empty": "No language packs available.",
+    "bundled": "bundled",
+    "installed": "installed",
+    "available": "available",
+    "version": "Version",
+    "tier": "Tier",
+    "installing": "Installing…",
+    "loadError": "Language packs fetch failed: {0}",
+    "installError": "Language pack installation failed: {0}"
+  },
+  "selfUpdate": {
+    "required": "⚠ Update required",
+    "available": "Update available",
+    "downloading": "Downloading…",
+    "restarting": "Restarting…"
+  },
+  "server": {
+    "online": "online",
+    "offline": "offline",
+    "maintenance": "maintenance"
+  },
+  "alerts": {
+    "logsExported": "Logs exported to:\n{0}",
+    "logsExportError": "Log export error: {0}"
+  },
+  "errors": {
+    "launcherUpdateRequired": "Launcher update required to v{0}",
+    "integrityFailed": "Client files were modified or removed. Repair installation first.",
+    "modified": "Modified ({0}): {1}",
+    "missing": "Missing ({0}): {1}",
+    "readErrors": "Read errors ({0}): {1}",
+    "selfUpdate": "Self-update: {0}",
+    "frontend": {
+      "UNKNOWN": "An unexpected launcher error occurred.",
+      "CHECK_ERROR": "Failed to check for updates.",
+      "UPDATE_ERROR": "Client update failed.",
+      "LAUNCH_ERROR": "Failed to launch the game client.",
+      "REPAIR_ERROR": "Installation repair failed.",
+      "SETTINGS_ERROR": "Failed to save launcher settings.",
+      "DOWNLOAD_ERROR": "Artifact download failed.",
+      "SELF_UPDATE_ERROR": "Launcher self-update failed."
+    },
+    "backend": {
+      "LCH_RECOVERY_NEEDED": "Interrupted update detected. Restart the launcher.",
+      "LCH_MANIFEST_FETCH_FAILED": "Could not check for updates. Verify your internet connection.",
+      "LCH_MANIFEST_PARSE_FAILED": "Update data is invalid. Please try again.",
+      "LCH_MANIFEST_SCHEMA_UNSUPPORTED": "A newer launcher version is required.",
+      "LCH_MANIFEST_SIGNATURE_INVALID": "Update verification failed. Please report this issue.",
+      "LCH_MANIFEST_PATH_TRAVERSAL": "Unsafe path detected in update manifest.",
+      "LCH_MANIFEST_DUPLICATE_PATH": "Update data error (duplicate file path).",
+      "LCH_DOWNLOAD_FAILED": "Could not download file. Check your connection.",
+      "LCH_FILE_HASH_MISMATCH": "Downloaded file is corrupted. Retry download.",
+      "LCH_PATCH_APPLY_FAILED": "Update failed. Try repairing the installation.",
+      "LCH_ROLLBACK_FAILED": "Rollback failed. Repair installation manually.",
+      "LCH_ROLLBACK_SUCCESS": "Update was rolled back to the previous version.",
+      "LCH_FILES_HASH_COMPUTE_FAILED": "File verification failed. Repair the installation.",
+      "LCH_TOKEN_REQUEST_FAILED": "Could not obtain launch token. Please retry.",
+      "LCH_TOKEN_REJECTED": "Token rejected. Check for updates.",
+      "LCH_TOKEN_RATE_LIMITED": "Too many attempts. Please wait a moment.",
+      "LCH_CLIENT_START_FAILED": "Could not start the game client. Check installation.",
+      "LCH_CLIENT_NOT_FOUND": "Game client executable not found. Repair installation.",
+      "LCH_TLS_REQUIRED": "Secure connection (HTTPS) is required.",
+      "LCH_STATE_CORRUPTED": "Launcher state is corrupted. Repair has been started.",
+      "LCH_LAUNCHER_UPDATE_REQUIRED": "Launcher update is required.",
+      "LCH_STAGING_CLEANUP_FAILED": "Warning: temporary files were not cleaned up."
+    }
+  }
+}

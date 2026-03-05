@@ -1,6 +1,7 @@
 pub mod api_responses;
 pub mod dto;
 pub mod error_codes;
+pub mod font_pack;
 pub mod installed_state;
 pub mod launcher_config;
 pub mod manifest;

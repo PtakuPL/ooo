@@ -341,4 +341,50 @@ mod tests {
             "https://cdn.example.com/files/stable/1.0.3/data/file.spr"
         );
     }
+
+    #[test]
+    fn test_resolve_file_url_absolute_v2_unchanged() {
+        let json = r#"{
+            "schemaVersion": "2.0",
+            "manifestId": "stable:1.0.3",
+            "version": "1.0.3",
+            "releaseDate": "2026-03-02",
+            "generatedAtUtc": "2026-03-02T18:00:00Z",
+            "channel": "stable",
+            "baseUrl": "https://cdn.example.com/files/stable/1.0.3/",
+            "filesHashExpected": "abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
+            "files": [
+                {"path": "data/file.spr", "sha256": "aabbcc1234567890aabbcc1234567890aabbcc1234567890aabbcc1234567890", "size": 1000, "url": "https://files.example.net/custom/file.spr", "managed": true, "action": "file"}
+            ]
+        }"#;
+        let manifest = parse_manifest_compat(json).expect("parse");
+
+        let url = resolve_file_url(&manifest, &manifest.files[0]).unwrap();
+        assert_eq!(url, "https://files.example.net/custom/file.spr");
+    }
+
+    #[test]
+    fn test_plan_missing_base_url_error_when_entry_url_empty() {
+        let json = r#"{
+            "schemaVersion": "2.0",
+            "manifestId": "stable:1.0.3",
+            "version": "1.0.3",
+            "releaseDate": "2026-03-02",
+            "generatedAtUtc": "2026-03-02T18:00:00Z",
+            "channel": "stable",
+            "filesHashExpected": "abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
+            "files": [
+                {"path": "data/file.spr", "sha256": "aabbcc1234567890aabbcc1234567890aabbcc1234567890aabbcc1234567890", "size": 1000, "managed": true, "action": "file"}
+            ]
+        }"#;
+        let manifest = parse_manifest_compat(json).expect("parse");
+        let tmp = tempfile::tempdir().expect("tmpdir");
+        let index = LocalFileIndex::scan_from_manifest(&manifest, tmp.path()).expect("scan");
+
+        let err = build_update_plan(&manifest, &index).expect_err("missing base_url should fail");
+        assert!(matches!(
+            err,
+            PlannerError::MissingBaseUrl(ref path) if path == "data/file.spr"
+        ));
+    }
 }

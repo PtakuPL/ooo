@@ -66,6 +66,12 @@
       "tags": ["user-config"]
     }
   ],
+  "criticalFiles": [
+    {
+      "path": "modules/client_entergame/entergame.lua",
+      "sha256": "1122334455667788112233445566778811223344556677881122334455667788"
+    }
+  ],
   "servers": [
     {
       "id": "classic74-main",

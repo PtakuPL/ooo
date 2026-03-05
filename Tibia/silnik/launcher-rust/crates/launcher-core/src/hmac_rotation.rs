@@ -376,6 +376,53 @@ mod tests {
     }
 
     #[test]
+    fn test_challenge_with_rotated_key() {
+        let old_key = "1111111111111111111111111111111111111111111111111111111111111111";
+        let new_key = "2222222222222222222222222222222222222222222222222222222222222222";
+        let challenge_payload = b"a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4:deadbeefcafebabe";
+
+        let old_sig = hmac_sha256(old_key, challenge_payload).unwrap();
+        let new_sig = hmac_sha256(new_key, challenge_payload).unwrap();
+        assert_ne!(old_sig, new_sig);
+
+        let mut registry = HmacKeyRegistry::new();
+        registry.add_key(HmacKey {
+            kid: "key-2026-01".to_string(),
+            key_hex: old_key.to_string(),
+            active: false,
+            deprecated: true,
+            added_at: Some("2026-01-01T00:00:00Z".to_string()),
+            deprecated_at: Some("2026-03-01T00:00:00Z".to_string()),
+        });
+        registry.add_key(HmacKey {
+            kid: "key-2026-03".to_string(),
+            key_hex: new_key.to_string(),
+            active: true,
+            deprecated: false,
+            added_at: Some("2026-03-01T00:00:00Z".to_string()),
+            deprecated_at: None,
+        });
+
+        // Klient na starym kluczu (kid=old) nadal przechodzi w okresie rotacji.
+        let old_result =
+            verify_hmac(&registry, Some("key-2026-01"), challenge_payload, &old_sig).unwrap();
+        assert!(old_result.valid);
+        assert_eq!(old_result.matched_kid.as_deref(), Some("key-2026-01"));
+
+        // Klient na nowym kluczu (kid=new) przechodzi normalnie.
+        let new_result =
+            verify_hmac(&registry, Some("key-2026-03"), challenge_payload, &new_sig).unwrap();
+        assert!(new_result.valid);
+        assert_eq!(new_result.matched_kid.as_deref(), Some("key-2026-03"));
+
+        // Brak kid: fallback brute-force nadal akceptuje podpis ze starego klucza.
+        let legacy_result = verify_hmac(&registry, None, challenge_payload, &old_sig).unwrap();
+        assert!(legacy_result.valid);
+        assert_eq!(legacy_result.matched_kid.as_deref(), Some("key-2026-01"));
+        assert!(legacy_result.keys_tried >= 1);
+    }
+
+    #[test]
     fn test_verify_hmac_no_match() {
         let mut registry = HmacKeyRegistry::new();
         registry.add_key(test_key("key-1", true, false));

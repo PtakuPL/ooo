@@ -35,6 +35,7 @@ pub struct LauncherStatusDto {
     pub phase: LauncherPhase,
     pub launcher_version: String,
     pub channel: String,
+    pub language: String,
 
     /// Wersja manifestu klienta (jeśli znana).
     pub client_version: Option<String>,
@@ -50,11 +51,17 @@ pub struct LauncherStatusDto {
 }
 
 impl LauncherStatusDto {
-    pub fn ready(launcher_version: String, channel: String, client_version: String) -> Self {
+    pub fn ready(
+        launcher_version: String,
+        channel: String,
+        language: String,
+        client_version: String,
+    ) -> Self {
         Self {
             phase: LauncherPhase::Ready,
             launcher_version,
             channel,
+            language,
             client_version: Some(client_version),
             client_up_to_date: true,
             error: None,
@@ -62,11 +69,12 @@ impl LauncherStatusDto {
         }
     }
 
-    pub fn checking(launcher_version: String, channel: String) -> Self {
+    pub fn checking(launcher_version: String, channel: String, language: String) -> Self {
         Self {
             phase: LauncherPhase::Checking,
             launcher_version,
             channel,
+            language,
             client_version: None,
             client_up_to_date: false,
             error: None,
@@ -74,11 +82,17 @@ impl LauncherStatusDto {
         }
     }
 
-    pub fn with_error(launcher_version: String, channel: String, error: ErrorInfoDto) -> Self {
+    pub fn with_error(
+        launcher_version: String,
+        channel: String,
+        language: String,
+        error: ErrorInfoDto,
+    ) -> Self {
         Self {
             phase: LauncherPhase::Error,
             launcher_version,
             channel,
+            language,
             client_version: None,
             client_up_to_date: false,
             error: Some(error),
@@ -174,6 +188,8 @@ pub struct ErrorInfoDto {
     pub code: String,
     /// Wiadomość PL dla użytkownika.
     pub user_message: String,
+    /// Klucz i18n (np. `errors.backend.LCH_DOWNLOAD_FAILED`) dla UI.
+    pub user_message_key: Option<String>,
     /// Czy można ponowić (retry button w UI).
     pub retryable: bool,
     /// Ile razy już próbowano.
@@ -190,19 +206,28 @@ impl ErrorInfoDto {
                 | crate::error_codes::LauncherErrorCode::TokenRateLimited
                 | crate::error_codes::LauncherErrorCode::ClientStartFailed
         );
+        let code_str = code.as_str().to_string();
 
         Self {
-            code: code.as_str().to_string(),
+            code: code_str.clone(),
             user_message: code.user_message().to_string(),
+            user_message_key: Some(format!("errors.backend.{code_str}")),
             retryable,
             attempt,
         }
     }
 
     pub fn generic(code: String, message: String, retryable: bool) -> Self {
+        let user_message_key = if code.starts_with("LCH_") {
+            Some(format!("errors.backend.{code}"))
+        } else {
+            None
+        };
+
         Self {
             code,
             user_message: message,
+            user_message_key,
             retryable,
             attempt: 0,
         }
@@ -349,6 +374,26 @@ impl UpdatePlanSummaryDto {
 }
 
 // ─────────────────────────────────────────────
+// Pre-launch integrity check
+// ─────────────────────────────────────────────
+
+/// Wynik weryfikacji plików krytycznych przed uruchomieniem klienta.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct PreLaunchCheckDto {
+    /// Czy wszystkie pliki krytyczne przeszły weryfikację.
+    pub passed: bool,
+    /// Ile plików OK.
+    pub ok_count: u32,
+    /// Zmodyfikowane pliki (hash niezgodny).
+    pub modified_files: Vec<String>,
+    /// Brakujące pliki.
+    pub missing_files: Vec<String>,
+    /// Pliki z błędem odczytu.
+    pub error_files: Vec<String>,
+}
+
+// ─────────────────────────────────────────────
 // Testy
 // ─────────────────────────────────────────────
 
@@ -358,10 +403,12 @@ mod tests {
 
     #[test]
     fn test_launcher_status_dto_serialize() {
-        let dto = LauncherStatusDto::ready("0.1.0".into(), "stable".into(), "1.2.3".into());
+        let dto =
+            LauncherStatusDto::ready("0.1.0".into(), "stable".into(), "pl".into(), "1.2.3".into());
         let json = serde_json::to_value(&dto).unwrap();
         assert_eq!(json["phase"], "ready");
         assert_eq!(json["launcherVersion"], "0.1.0");
+        assert_eq!(json["language"], "pl");
         assert_eq!(json["clientVersion"], "1.2.3");
         assert_eq!(json["clientUpToDate"], true);
         assert!(json["error"].is_null());
@@ -391,6 +438,10 @@ mod tests {
         let err =
             ErrorInfoDto::from_code(&crate::error_codes::LauncherErrorCode::DownloadFailed, 3);
         assert_eq!(err.code, "LCH_DOWNLOAD_FAILED");
+        assert_eq!(
+            err.user_message_key.as_deref(),
+            Some("errors.backend.LCH_DOWNLOAD_FAILED")
+        );
         assert!(err.retryable);
         assert_eq!(err.attempt, 3);
         assert!(!err.user_message.is_empty());
@@ -509,10 +560,21 @@ mod tests {
     #[test]
     fn test_status_dto_with_error() {
         let err = ErrorInfoDto::generic("LCH_CUSTOM".into(), "Something broke".into(), false);
-        let dto = LauncherStatusDto::with_error("0.1.0".into(), "test".into(), err);
+        let dto = LauncherStatusDto::with_error("0.1.0".into(), "test".into(), "en".into(), err);
         let json = serde_json::to_value(&dto).unwrap();
         assert_eq!(json["phase"], "error");
+        assert_eq!(json["language"], "en");
         assert_eq!(json["error"]["code"], "LCH_CUSTOM");
+        assert_eq!(
+            json["error"]["userMessageKey"],
+            "errors.backend.LCH_CUSTOM"
+        );
         assert_eq!(json["error"]["retryable"], false);
+    }
+
+    #[test]
+    fn test_error_info_generic_non_launcher_code_without_i18n_key() {
+        let err = ErrorInfoDto::generic("CHECK_ERROR".into(), "Oops".into(), true);
+        assert_eq!(err.user_message_key, None);
     }
 }

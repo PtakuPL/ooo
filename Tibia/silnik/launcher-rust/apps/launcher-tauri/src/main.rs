@@ -27,16 +27,21 @@ fn main() {
             commands::get_status,
             commands::check_for_updates,
             commands::start_update,
+            commands::pre_launch_check,
             commands::launch_game,
             commands::repair_installation,
             commands::get_installation_info,
             commands::change_channel,
             commands::export_logs,
             commands::get_installer_catalog,
+            commands::get_language_packs,
+            commands::download_language_pack,
+            commands::list_installed_language_packs,
             commands::download_and_verify_artifact,
             commands::check_launcher_update,
             commands::perform_self_update,
             commands::get_server_status,
+            commands::report_error,
         ])
         .run(tauri::generate_context!())
         .expect("Błąd uruchamiania Tauri");

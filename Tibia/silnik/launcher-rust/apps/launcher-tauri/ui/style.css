@@ -15,7 +15,8 @@
   --warn: #f39c12;
   --error: #e74c3c;
   --border-radius: 8px;
-  --font-mono: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  --font-ui: 'Noto Sans', 'Noto Sans Arabic', 'Noto Sans Hebrew', 'Noto Sans CJK SC', 'Noto Sans CJK JP', 'Segoe UI', 'Inter', system-ui, sans-serif;
+  --font-mono: 'Noto Sans Mono', 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
 }
 
 * {
@@ -25,7 +26,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', 'Inter', system-ui, sans-serif;
+  font-family: var(--font-ui);
   background: var(--bg-primary);
   color: var(--text);
   min-height: 100vh;
@@ -113,6 +114,64 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.setting-row-stack {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.btn-compact {
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  align-self: flex-start;
+}
+
+.language-packs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.language-pack-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  padding: 10px 12px;
+}
+
+.language-pack-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.language-pack-locale {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.language-pack-meta {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.language-pack-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge-pack {
+  font-size: 0.75rem;
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: var(--bg-secondary);
+  color: var(--text-muted);
 }
 
 .label {
@@ -254,6 +313,54 @@ select {
 .nav-btn.active {
   background: var(--accent);
   color: #fff;
+}
+
+/* ───── RTL (ar/he/fa) ───── */
+
+html[dir="rtl"] body {
+  direction: rtl;
+}
+
+html[dir="rtl"] #header,
+html[dir="rtl"] .status-row,
+html[dir="rtl"] .setting-row,
+html[dir="rtl"] .servers-header,
+html[dir="rtl"] .server-card,
+html[dir="rtl"] .download-card,
+html[dir="rtl"] .progress-info,
+html[dir="rtl"] .progress-detail,
+html[dir="rtl"] #footer {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .server-info,
+html[dir="rtl"] .error-text,
+html[dir="rtl"] .error-code,
+html[dir="rtl"] .status-card,
+html[dir="rtl"] .repair-card,
+html[dir="rtl"] .settings-card,
+html[dir="rtl"] .error-card {
+  text-align: right;
+}
+
+html[dir="rtl"] .server-meta {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .language-pack-row {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .language-pack-actions {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .actions {
+  justify-content: flex-end;
+}
+
+html[dir="rtl"] .servers-arrow.collapsed {
+  transform: rotate(90deg);
 }
 
 /* ───── Responsive ───── */
@@ -445,6 +552,17 @@ select {
 }
 
 .btn-website:hover:not(:disabled) {
+  background: #1a4f8a;
+  border-color: var(--accent);
+}
+
+.btn-character {
+  background: var(--bg-card);
+  color: var(--text);
+  border: 1px solid rgba(233, 69, 96, 0.6);
+}
+
+.btn-character:hover:not(:disabled) {
   background: #1a4f8a;
   border-color: var(--accent);
 }

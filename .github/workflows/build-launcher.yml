@@ -79,6 +79,17 @@ jobs:
             echo "dir=release" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Verify frontend files exist
+        shell: bash
+        run: |
+          echo "--- Checking apps/launcher-tauri/ui/ ---"
+          ls -la apps/launcher-tauri/ui/
+          test -f apps/launcher-tauri/ui/index.html || { echo "ERROR: index.html missing!"; exit 1; }
+
+      - name: Clean launcher-tauri cache (force re-embed frontend)
+        shell: bash
+        run: cargo clean -p launcher-tauri ${{ steps.profile.outputs.flag }} --target ${{ matrix.target }} 2>/dev/null || true
+
       - name: Build all crates
         run: cargo build --all ${{ steps.profile.outputs.flag }} --target ${{ matrix.target }}
 

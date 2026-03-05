@@ -28,6 +28,10 @@ pub struct LauncherConfig {
     /// Ścieżka katalogu danych launchera.
     #[serde(default = "default_launcher_data_dir")]
     pub launcher_data_dir: String,
+
+    /// Tryb deweloperski — akceptuj self-signed certy (NIE używać na produkcji!).
+    #[serde(default)]
+    pub dev_mode: bool,
 }
 
 fn default_channel() -> String {
@@ -54,6 +58,7 @@ impl Default for LauncherConfig {
             launcher_version_check: true,
             client_dir: default_client_dir(),
             launcher_data_dir: default_launcher_data_dir(),
+            dev_mode: false,
         }
     }
 }

@@ -134,3 +134,28 @@ pub struct ChallengeResponse {
     #[serde(default)]
     pub issued_at_utc: Option<String>,
 }
+
+// ─────────────────────────────────────────────
+// server-status.php response
+// ─────────────────────────────────────────────
+
+/// Odpowiedź z GET /server-status.php — lista serwerów z ich statusem.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ServerStatusResponse {
+    pub ts: u64,
+    pub servers: Vec<GameServerInfo>,
+}
+
+/// Informacja o pojedynczym serwerze gry.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct GameServerInfo {
+    pub id: String,
+    pub name: String,
+    #[serde(rename = "type")]
+    pub server_type: String,
+    pub status: String,
+    pub players: Option<u32>,
+    pub ping: Option<u32>,
+    pub host: String,
+    pub port: u16,
+}

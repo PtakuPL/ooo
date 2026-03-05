@@ -19,6 +19,8 @@ pub struct ApiClientConfig {
     pub timeout_seconds: u64,
     pub max_retries: u32,
     pub user_agent: String,
+    /// Accept self-signed certs (dev only!).
+    pub dev_mode: bool,
 }
 
 impl Default for ApiClientConfig {
@@ -28,6 +30,7 @@ impl Default for ApiClientConfig {
             timeout_seconds: 30,
             max_retries: 3,
             user_agent: "TwojaGra-Launcher/0.1.0".to_string(),
+            dev_mode: false,
         }
     }
 }
@@ -84,6 +87,7 @@ impl ApiClient {
         let http = reqwest::Client::builder()
             .timeout(std::time::Duration::from_secs(config.timeout_seconds))
             .user_agent(&config.user_agent)
+            .danger_accept_invalid_certs(config.dev_mode)
             .build()?;
 
         Ok(Self { config, http })
@@ -294,6 +298,32 @@ impl ApiClient {
         }
 
         Ok(Some(challenge))
+    }
+
+    // ─────────────────────────────────────────
+    // server-status.php — status serwerów gry
+    // ─────────────────────────────────────────
+
+    /// Pobiera status serwerów gry (online/offline, gracze, ping).
+    pub async fn fetch_server_status(
+        &self,
+    ) -> Result<common_models::api_responses::ServerStatusResponse, ApiError> {
+        let url = self.url("server-status.php");
+        tracing::debug!("Pobieram status serwerów: {}", url);
+
+        let resp = self.get_with_retry(&url).await?;
+        let status = resp.status();
+
+        if !status.is_success() {
+            let body = resp.text().await.unwrap_or_default();
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body,
+            });
+        }
+
+        let server_status = resp.json().await?;
+        Ok(server_status)
     }
 
     // ─────────────────────────────────────────

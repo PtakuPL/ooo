@@ -36,6 +36,7 @@ fn main() {
             commands::download_and_verify_artifact,
             commands::check_launcher_update,
             commands::perform_self_update,
+            commands::get_server_status,
         ])
         .run(tauri::generate_context!())
         .expect("Błąd uruchamiania Tauri");

@@ -79,17 +79,19 @@ pub async fn get_status(state: State<'_, AppState>) -> Result<LauncherStatusDto,
 
 #[tauri::command]
 pub async fn check_for_updates(state: State<'_, AppState>) -> Result<UpdatePlanSummaryDto, String> {
-    let (api_url, channel, client_dir) = {
+    let (api_url, channel, client_dir, dev_mode) = {
         let g = state.inner.lock().map_err(|e| e.to_string())?;
         (
             g.api_base_url.clone(),
             g.channel.clone(),
             g.client_dir.clone(),
+            g.dev_mode,
         )
     };
 
     let api = ApiClient::new(ApiClientConfig {
         base_url: api_url,
+        dev_mode,
         ..Default::default()
     })
     .map_err(|e| e.to_string())?;
@@ -144,7 +146,7 @@ async fn run_update_inner(
     _app: &tauri::AppHandle,
     state: &State<'_, AppState>,
 ) -> Result<UpdateProgressDto, String> {
-    let (api_url, channel, client_dir, launcher_data, launcher_version) = {
+    let (api_url, channel, client_dir, launcher_data, launcher_version, dev_mode) = {
         let g = state.inner.lock().map_err(|e| e.to_string())?;
         (
             g.api_base_url.clone(),
@@ -152,11 +154,13 @@ async fn run_update_inner(
             g.client_dir.clone(),
             g.launcher_data_dir.clone(),
             g.launcher_version.clone(),
+            g.dev_mode,
         )
     };
 
     let api = ApiClient::new(ApiClientConfig {
         base_url: api_url.clone(),
+        dev_mode,
         ..Default::default()
     })
     .map_err(|e| e.to_string())?;
@@ -298,7 +302,7 @@ async fn run_update_inner(
 
 #[tauri::command]
 pub async fn launch_game(state: State<'_, AppState>) -> Result<String, String> {
-    let (api_url, channel, client_dir, launcher_data, launcher_version) = {
+    let (api_url, channel, client_dir, launcher_data, launcher_version, dev_mode) = {
         let g = state.inner.lock().map_err(|e| e.to_string())?;
         (
             g.api_base_url.clone(),
@@ -306,6 +310,7 @@ pub async fn launch_game(state: State<'_, AppState>) -> Result<String, String> {
             g.client_dir.clone(),
             g.launcher_data_dir.clone(),
             g.launcher_version.clone(),
+            g.dev_mode,
         )
     };
 
@@ -328,6 +333,7 @@ pub async fn launch_game(state: State<'_, AppState>) -> Result<String, String> {
     // Pobierz token
     let api = ApiClient::new(ApiClientConfig {
         base_url: api_url,
+        dev_mode,
         ..Default::default()
     })
     .map_err(|e| e.to_string())?;
@@ -378,17 +384,19 @@ pub async fn launch_game(state: State<'_, AppState>) -> Result<String, String> {
 pub async fn repair_installation(
     state: State<'_, AppState>,
 ) -> Result<RepairDiagnosticsDto, String> {
-    let (api_url, channel, client_dir) = {
+    let (api_url, channel, client_dir, dev_mode) = {
         let g = state.inner.lock().map_err(|e| e.to_string())?;
         (
             g.api_base_url.clone(),
             g.channel.clone(),
             g.client_dir.clone(),
+            g.dev_mode,
         )
     };
 
     let api = ApiClient::new(ApiClientConfig {
         base_url: api_url,
+        dev_mode,
         ..Default::default()
     })
     .map_err(|e| e.to_string())?;
@@ -539,13 +547,14 @@ fn chrono_utc_now() -> String {
 pub async fn get_installer_catalog(
     state: State<'_, AppState>,
 ) -> Result<serde_json::Value, String> {
-    let (api_url, channel) = {
+    let (api_url, channel, dev_mode) = {
         let guard = state.inner.lock().map_err(|e| e.to_string())?;
-        (guard.api_base_url.clone(), guard.channel.clone())
+        (guard.api_base_url.clone(), guard.channel.clone(), guard.dev_mode)
     };
 
     let config = launcher_api::client::ApiClientConfig {
         base_url: api_url,
+        dev_mode,
         ..Default::default()
     };
     let client = ApiClient::new(config).map_err(|e| e.to_string())?;
@@ -570,13 +579,14 @@ pub async fn download_and_verify_artifact(
     expected_sha256: String,
     expected_size: u64,
 ) -> Result<serde_json::Value, String> {
-    let (api_url, launcher_data) = {
+    let (api_url, launcher_data, dev_mode) = {
         let guard = state.inner.lock().map_err(|e| e.to_string())?;
-        (guard.api_base_url.clone(), guard.launcher_data_dir.clone())
+        (guard.api_base_url.clone(), guard.launcher_data_dir.clone(), guard.dev_mode)
     };
 
     let config = launcher_api::client::ApiClientConfig {
         base_url: api_url,
+        dev_mode,
         ..Default::default()
     };
     let client = ApiClient::new(config).map_err(|e| e.to_string())?;
@@ -620,13 +630,14 @@ pub async fn download_and_verify_artifact(
 pub async fn check_launcher_update(
     state: State<'_, AppState>,
 ) -> Result<serde_json::Value, String> {
-    let (api_url, current_version) = {
+    let (api_url, current_version, dev_mode) = {
         let guard = state.inner.lock().map_err(|e| e.to_string())?;
-        (guard.api_base_url.clone(), guard.launcher_version.clone())
+        (guard.api_base_url.clone(), guard.launcher_version.clone(), guard.dev_mode)
     };
 
     let config = launcher_api::client::ApiClientConfig {
         base_url: api_url,
+        dev_mode,
         ..Default::default()
     };
     let client = ApiClient::new(config).map_err(|e| e.to_string())?;
@@ -687,18 +698,20 @@ pub async fn check_launcher_update(
 
 #[tauri::command]
 pub async fn perform_self_update(state: State<'_, AppState>) -> Result<serde_json::Value, String> {
-    let (api_url, current_version, launcher_data) = {
+    let (api_url, current_version, launcher_data, dev_mode) = {
         let guard = state.inner.lock().map_err(|e| e.to_string())?;
         (
             guard.api_base_url.clone(),
             guard.launcher_version.clone(),
             guard.launcher_data_dir.clone(),
+            guard.dev_mode,
         )
     };
 
     // 1. Sprawdź wersję
     let config = launcher_api::client::ApiClientConfig {
         base_url: api_url,
+        dev_mode,
         ..Default::default()
     };
     let client = ApiClient::new(config).map_err(|e| e.to_string())?;
@@ -763,4 +776,33 @@ pub async fn perform_self_update(state: State<'_, AppState>) -> Result<serde_jso
 
     // UWAGA: Po tym wywołaniu launcher powinien się zamknąć!
     // W Tauri: caller (frontend) powinien wywołać window.close() lub process.exit()
+}
+
+// ─────────────────────────────────────────────
+// get_server_status — status serwerów gry
+// ─────────────────────────────────────────────
+
+#[tauri::command]
+pub async fn get_server_status(
+    state: State<'_, AppState>,
+) -> Result<serde_json::Value, String> {
+    let (api_url, dev_mode) = {
+        let g = state.inner.lock().map_err(|e| e.to_string())?;
+        (g.api_base_url.clone(), g.dev_mode)
+    };
+
+    let config = ApiClientConfig {
+        base_url: api_url,
+        timeout_seconds: 5,
+        dev_mode,
+        ..Default::default()
+    };
+    let client = ApiClient::new(config).map_err(|e| e.to_string())?;
+
+    let status = client
+        .fetch_server_status()
+        .await
+        .map_err(|e| format!("Nie można pobrać statusu serwerów: {e}"))?;
+
+    serde_json::to_value(&status).map_err(|e| e.to_string())
 }

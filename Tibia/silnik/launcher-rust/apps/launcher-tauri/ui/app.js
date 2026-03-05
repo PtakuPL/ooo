@@ -205,6 +205,24 @@ function updateServerStatus(serverId, status, players, ping) {
 // Placeholder: serwery offline (zostan\u0105 podmienione gdy API b\u0119dzie gotowe)
 SERVERS.forEach(s => updateServerStatus(s.id, "offline", null, null));
 
+// Fetch real server status from backend API
+async function loadServerStatus() {
+  try {
+    const data = await invoke("get_server_status");
+    if (data && data.servers) {
+      data.servers.forEach(srv => {
+        updateServerStatus(srv.id, srv.status, srv.players, srv.ping);
+      });
+    }
+  } catch (err) {
+    console.warn("Server status fetch failed:", err);
+  }
+}
+
+// Refresh server status every 30s
+loadServerStatus();
+setInterval(loadServerStatus, 30000);
+
 // ─────────────────────────────────────────────
 // Website button
 // ─────────────────────────────────────────────

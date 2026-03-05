@@ -1,6 +1,6 @@
 # Plan zadań PRZED kompilacją — przygotowanie kodu
 **Data**: 2026-03-05  
-**Status**: ⏳ Do realizacji  
+**Status**: ✅ WSZYSTKIE GRUPY GOTOWE — do pusha i kompilacji  
 **Zasada**: Najpierw WSZYSTKIE zadania z tej listy, potem dopiero push + kompilacja na GHA.  
 **WWW**: Strona www NIE wymaga kompilacji — zajmuje się nią Codex (pomijamy).
 
@@ -39,71 +39,76 @@ Wrzucenie skompilowanego launchera + plików konfiguracyjnych do folderu na Wind
 
 ## 2. Zadania do wykonania PRZED kompilacją
 
-### GRUPA A — Kod launchera (Rust) — niezacommitowane zmiany
+### GRUPA A — Kod launchera (Rust) — ✅ PRZEJRZANE I ZACOMMITOWANE
 
-Mamy 23 zmienione pliki w `launcher-rust/` (niezacommitowane). Trzeba je przejrzeć i upewnić się, że wszystko działa logicznie:
+32 pliki w `launcher-rust/` — przejrzane, commitnięte jako `6421c9631`.
 
-| # | Zadanie | Plik(i) | Status |
+| # | Zadanie | Status | Uwagi |
 |---|---|---|---|
-| A-1 | Przejrzeć zmiany w `commands.rs` (Tauri) — 352+ linii zmian | `launcher-tauri/src/commands.rs` | ⬜ |
-| A-2 | Przejrzeć zmiany w `state.rs` + `main.rs` (Tauri) | `launcher-tauri/src/state.rs`, `main.rs` | ⬜ |
-| A-3 | Przejrzeć UI: `app.js`, `index.html`, `style.css` | `launcher-tauri/ui/` | ⬜ |
-| A-4 | Przejrzeć `api_responses.rs` + `dto.rs` — nowe typy API | `common-models/src/` | ⬜ |
-| A-5 | Przejrzeć `launcher_config.rs` — rozszerzenie configu | `common-models/src/launcher_config.rs` | ⬜ |
-| A-6 | Przejrzeć `manifest.rs` + fixture JSON | `common-models/src/manifest.rs` | ⬜ |
-| A-7 | Przejrzeć `client.rs` — 542+ linii zmian w API client | `launcher-api/src/client.rs` | ⬜ |
-| A-8 | Przejrzeć nowe moduły core: `hmac_rotation`, `integrity`, `manifest_signature`, `planner`, `serverlist_sync` | `launcher-core/src/` | ⬜ |
-| A-9 | Sprawdzić `Cargo.toml` + `Cargo.lock` — nowe zależności | `launcher-rust/Cargo.toml` | ⬜ |
-| A-10 | Commitnąć wszystkie zmiany launchera jako logiczny commit | git | ⬜ |
+| A-1 | commands.rs (Tauri) | ✅ | +352 linii: pre_launch_check, language_packs, error_report, channel/signature |
+| A-2 | state.rs + main.rs | ✅ | config+config_path persistence, signature_public_key, language |
+| A-3 | UI: app.js, index.html, style.css | ✅ | i18n (5 locale: pl/en/ar/he/fa), RTL, IDs for localization |
+| A-4 | api_responses.rs + dto.rs | ✅ | LanguagePacksResponse, ErrorReport, PreLaunchCheckDto, i18n keys |
+| A-5 | launcher_config.rs | ✅ | +language, +manifest_public_key, discover_with_path(), walidacja |
+| A-6 | manifest.rs + fixture | ✅ | critical_files, login_port/game_port, testy |
+| A-7 | client.rs — API client | ✅ | +542 linii: fetch_manifest_with_signature, language_packs, error_report, challenge validation |
+| A-8 | Nowe moduły core | ✅ | font_pack_download, language_pack_download (zip), integrity.verify_critical_files |
+| A-9 | Cargo.toml + lock | ✅ | +zip crate, +.cargo/config.toml (blokada lokalnych buildów), 6 ZIP artefaktów usunięte ze stage |
+| A-10 | Commit | ✅ | `6421c9631` — 32 pliki, 4217+/155- |
 
-### GRUPA B — Kod serwera Canary — niezacommitowane zmiany
+### GRUPA B — Kod serwera Canary — ✅ PRZEJRZANE I ZACOMMITOWANE
 
-Zmienione pliki w `canary/`:
+13 plików w `canary/` — przejrzane, commitnięte jako `a02e74725`.
+**Główna zmiana**: usunięcie inline ticket-gate + Classic 7.4 blocking z canary/ (clean reference).
 
-| # | Zadanie | Plik(i) | Status |
+⚠️ **WAŻNE**: `canary_test/` (kompilowany na GHA) nadal ma ticket-gate — to zamierzone!
+
+| # | Zadanie | Status | Co zmieniono |
 |---|---|---|---|
-| B-1 | Przejrzeć `protocolgame.cpp/.hpp` — ticket-gate/HMAC logika | `canary/src/server/network/protocol/` | ⬜ |
-| B-2 | Przejrzeć `game.cpp` — zmiany w logice gry | `canary/src/game/game.cpp` | ⬜ |
-| B-3 | Przejrzeć `config_enums.hpp` + `configmanager.cpp` — nowe configi | `canary/src/config/` | ⬜ |
-| B-4 | Przejrzeć `player.hpp` + `creatures_definitions.hpp` | `canary/src/creatures/` | ⬜ |
-| B-5 | Przejrzeć `server/CMakeLists.txt` — zmiany w buildzie | `canary/src/server/CMakeLists.txt` | ⬜ |
-| B-6 | Przejrzeć `canary/CMakeLists.txt` + `config.lua.dist` | `canary/` root | ⬜ |
-| B-7 | Commitnąć zmiany serwera | git | ⬜ |
+| B-1 | protocolgame.cpp/.hpp | ✅ | -166 linii: usunięto TicketValidator, isClassic74Blocked, pendingGameMode, blokady rune/market/prey/wheel |
+| B-2 | game.cpp | ✅ | -14 linii: usunięto rate-limit ruchu Classic 7.4 |
+| B-3 | config_enums + configmanager | ✅ | Usunięto TICKET_GATE_ENABLED, TICKET_SECRET |
+| B-4 | player.hpp + creatures_definitions | ✅ | Usunięto PlayerGameMode_t, gameMode_, isClassic74(), lastMoveTime_ |
+| B-5 | server/CMakeLists.txt | ✅ | Usunięto ticket_validator.cpp z buildu (pliki nadal na dysku) |
+| B-6 | CMakeLists.txt + config.lua.dist | ✅ | +GHA guard, +porty doc, -ticketGateEnabled/ticketSecret |
+| B-7 | Commit | ✅ | `a02e74725` — 13 plików, 439+/226- |
 
-### GRUPA C — Instalka OTClient (testyy) — nowe pliki
+### GRUPA C — Instalka OTClient (testyy) — ✅ PRZEJRZANE I ZACOMMITOWANE
 
-| # | Zadanie | Plik(i) | Status |
+4 pliki — commitnięte jako `b98d6521d`.
+
+| # | Zadanie | Status | Uwagi |
 |---|---|---|---|
-| C-1 | Przejrzeć `build-client-package.yml` — workflow dla paczki graczy | `testyy/.github/workflows/` | ⬜ |
-| C-2 | Przejrzeć `deploy-client.sh` + `generate-ed25519-keys.sh` — nowe narzędzia | `testyy/tools/` | ⬜ |
-| C-3 | Upewnić się, że OTClient source kompiluje się poprawnie (sprawdzić CMakeLists, src zmiany) | `testyy/` | ⬜ |
-| C-4 | Commitnąć nowe pliki instalki | git | ⬜ |
+| C-1 | build-client-package.yml | ✅ | 538 linii: Windows+Linux, manifest gen, Ed25519 signing, checksums |
+| C-2 | deploy-client.sh + generate-ed25519-keys.sh | ✅ | OK — deploy z cleanup starych wersji, key gen z DER extraction |
+| C-3 | OTClient source | ✅ | Brak zmian w src/ — kompilacja nie powinna się zmienić |
+| C-4 | Commit | ✅ | `b98d6521d` — 4 pliki, 731+ |
 
-### GRUPA D — Konfiguracja i API (PHP)
+### GRUPA D — Konfiguracja i API (PHP) — ✅ SPRAWDZONE
 
-| # | Zadanie | Plik(i) | Status |
+| # | Zadanie | Status | Uwagi |
 |---|---|---|---|
-| D-1 | Sprawdzić spójność `.env` (wersje, porty, ścieżki) — czy prod-ready | `/var/www/html/apik/v1/.env` | ⬜ |
-| D-2 | Sprawdzić `launcher-version.php` — czy wersja launchera match z Cargo.toml | API | ⬜ |
-| D-3 | Sprawdzić `generate_manifest.php` — czy poprawnie generuje manifest dla nowej paczki | API | ⬜ |
-| D-4 | Sprawdzić `login.php` — routing classic/modern z ticket-gate HMAC | API | ⬜ |
-| D-5 | Upewnić się, że `launcher_config.json` w player_package ma poprawne URL-e (prod) | `player_package/` | ⬜ |
+| D-1 | .env spójność | ✅ | Dev OK: porty 7172/7174, TICKET_SECRET jest, LAUNCHER_VERSION=1.0.0 |
+| D-2 | launcher-version.php vs Cargo.toml | ✅ | .env=1.0.0, Cargo=0.1.0 — po kompilacji trzeba zsyncować |
+| D-3 | generate_manifest.php | ✅ | Przetestowane wcześniej (TOR C) — OK |
+| D-4 | login.php routing | ✅ | Przetestowane wcześniej (TOR A) — classic→7172, modern→7174 |
+| D-5 | launcher_config.json | ✅ | **NAPRAWIONE**: dodano `language`, zmieniono apiBaseUrl na prod |
 
-### GRUPA E — Pliki konfiguracyjne klienta
+### GRUPA E — Pliki konfiguracyjne klienta — ✅ SPRAWDZONE
 
-| # | Zadanie | Plik(i) | Status |
+| # | Zadanie | Status | Uwagi |
 |---|---|---|---|
-| E-1 | Sprawdzić `init.lua` — konfiguracja klienta (serwery, tryby, CLIENT_LOCKED) | `client_pack/1.1.0/init.lua` lub `testyy/init.lua` | ⬜ |
-| E-2 | Sprawdzić `config.lua` serwera (Classic + Modern) — porty, worldId, klucze HMAC | `canary_test/config.lua`, `canary_modern/config.lua` | ⬜ |
-| E-3 | Sprawdzić `config.lua.dist` w `canary/` — template z nowymi opcjami | `canary/config.lua.dist` | ⬜ |
+| E-1 | init.lua | ✅ | CLIENT_LOCKED=true, GameModes classic74+modern, porty dev=127.0.0.1 |
+| E-2 | config.lua serwery | ✅ | Classic worldId=0 port 7171/7172, Modern worldId=1 port 7173/7174 |
+| E-3 | config.lua.dist | ✅ | Usunięto ticketGateEnabled/ticketSecret, dodano doc portów |
 
-### GRUPA F — Dokumentacja (przed kompilacją)
+### GRUPA F — Dokumentacja — ✅ GOTOWE
 
-| # | Zadanie | Plik(i) | Status |
+| # | Zadanie | Status | Uwagi |
 |---|---|---|---|
-| F-1 | Zaktualizować dziennik o ten plan | `01_DZIENNIK_PRAC.md` | ⬜ |
-| F-2 | Spisać DOKŁADNIE jakie wersje będziemy kompilować (serwer, instalka, launcher) | ten dokument | ⬜ |
-| F-3 | Opisać procedurę testu: "zmień 1 tłumaczenie/klucz → kompiluj → sprawdź czy launcher wykryje" | ten dokument | ⬜ |
+| F-1 | Dziennik + plan | ✅ | `b9cdaa4a5` — dziennik + plan przed kompilacją |
+| F-2 | Wersje do kompilacji | ✅ | Sekcja 5 tego dokumentu |
+| F-3 | Procedura testu | ✅ | Sekcja 3 tego dokumentu |
 
 ---
 

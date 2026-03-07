@@ -16,7 +16,6 @@ on:
     branches:
       - master
       - main
-      - feature/ticket-gate
 
 env:
   CMAKE_BUILD_PARALLEL_LEVEL: 2

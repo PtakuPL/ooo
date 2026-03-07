@@ -9,6 +9,7 @@
 
 #include "lua/creature/movement.hpp"
 
+#include "config/configmanager.hpp"
 #include "lib/di/container.hpp"
 #include "creatures/combat/combat.hpp"
 #include "creatures/combat/condition.hpp"
@@ -505,6 +506,24 @@ uint32_t MoveEvent::RemoveItemField(const std::shared_ptr<Item> &, const std::sh
 	return 1;
 }
 
+// Helper: does item's slotPosition match the actual equipment slot?
+static bool isItemInCorrectSlot(const std::shared_ptr<Item> &item, Slots_t slot) {
+	const uint32_t slotPos = item->getSlotPosition();
+	switch (slot) {
+		case CONST_SLOT_HEAD:     return (slotPos & SLOTP_HEAD) != 0;
+		case CONST_SLOT_NECKLACE: return (slotPos & SLOTP_NECKLACE) != 0;
+		case CONST_SLOT_BACKPACK: return (slotPos & SLOTP_BACKPACK) != 0;
+		case CONST_SLOT_ARMOR:    return (slotPos & SLOTP_ARMOR) != 0;
+		case CONST_SLOT_RIGHT:    return (slotPos & (SLOTP_RIGHT | SLOTP_TWO_HAND)) != 0;
+		case CONST_SLOT_LEFT:     return (slotPos & (SLOTP_LEFT | SLOTP_TWO_HAND)) != 0;
+		case CONST_SLOT_LEGS:     return (slotPos & SLOTP_LEGS) != 0;
+		case CONST_SLOT_FEET:     return (slotPos & SLOTP_FEET) != 0;
+		case CONST_SLOT_RING:     return (slotPos & SLOTP_RING) != 0;
+		case CONST_SLOT_AMMO:     return (slotPos & SLOTP_AMMO) != 0;
+		default:                  return true;
+	}
+}
+
 uint32_t MoveEvent::EquipItem(const std::shared_ptr<MoveEvent> &moveEvent, const std::shared_ptr<Player> &player, const std::shared_ptr<Item> &item, Slots_t slot, bool isCheck) {
 	if (player == nullptr) {
 		g_logger().error("[MoveEvent::EquipItem] - Player is nullptr");
@@ -517,21 +536,41 @@ uint32_t MoveEvent::EquipItem(const std::shared_ptr<MoveEvent> &moveEvent, const
 	}
 
 	if (!player->hasFlag(PlayerFlags_t::IgnoreWeaponCheck) && moveEvent->getWieldInfo() != 0) {
-		if (player->getLevel() < moveEvent->getReqLevel() || player->getMagicLevel() < moveEvent->getReqMagLv()) {
-			return 0;
-		}
+		// In free equip mode, skip level/vocation checks for items in wrong slots
+		// (they won't give bonuses anyway)
+		const bool freeEquipWrongSlot = g_configManager().getBoolean(FREE_EQUIP) && !isItemInCorrectSlot(item, slot);
+		if (!freeEquipWrongSlot) {
+			if (player->getLevel() < moveEvent->getReqLevel() || player->getMagicLevel() < moveEvent->getReqMagLv()) {
+				return 0;
+			}
 
-		if (moveEvent->isPremium() && !player->isPremium()) {
-			return 0;
-		}
+			if (moveEvent->isPremium() && !player->isPremium()) {
+				return 0;
+			}
 
-		const std::map<uint16_t, bool> &vocEquipMap = moveEvent->getVocEquipMap();
-		if (!vocEquipMap.empty() && !vocEquipMap.contains(player->getVocationId())) {
-			return 0;
+			const std::map<uint16_t, bool> &vocEquipMap = moveEvent->getVocEquipMap();
+			if (!vocEquipMap.empty() && !vocEquipMap.contains(player->getVocationId())) {
+				return 0;
+			}
 		}
 	}
 
 	if (isCheck) {
+		return 1;
+	}
+
+	// Free equip (7.4): item in wrong slot = no stat bonuses
+	if (g_configManager().getBoolean(FREE_EQUIP) && !isItemInCorrectSlot(item, slot)) {
+		const ItemType &it = Item::items[item->getID()];
+		if (it.transformEquipTo != 0) {
+			g_game().transformItem(item, it.transformEquipTo);
+		}
+		player->setItemAbility(slot, false);
+		if (slot == CONST_SLOT_BACKPACK) {
+			player->setMainBackpackUnassigned(item->getContainer());
+		}
+		player->sendStats();
+		player->sendSkills();
 		return 1;
 	}
 
@@ -638,7 +677,11 @@ uint32_t MoveEvent::DeEquipItem(const std::shared_ptr<MoveEvent> &, const std::s
 	}
 
 	if (!player->isItemAbilityEnabled(slot)) {
-		g_logger().debug("[{}] item ability is not enabled", __FUNCTION__);
+		// Free equip wrong slot: no bonuses to remove, but handle transform
+		const ItemType &it = Item::items[item->getID()];
+		if (it.transformDeEquipTo != 0) {
+			g_game().transformItem(item, it.transformDeEquipTo);
+		}
 		return 1;
 	}
 

@@ -20,7 +20,7 @@ const invoke = window.__TAURI__
       if (cmd === "get_status")
         return {
           phase: "ready",
-          launcherVersion: "0.1.0-dev",
+          launcherVersion: "1.0.0-dev",
           channel: "stable",
           language: "pl",
           clientVersion: "1.0.0",
@@ -98,10 +98,21 @@ const elChannel = $("#status-channel");
 const elPhase = $("#status-phase");
 const elServerNameMain = $("#server-name-main");
 const elServerNameRetro = $("#server-name-retro");
+const elLauncherAccountName = $("#launcher-account-name");
+const elLauncherAccountEmail = $("#launcher-account-email");
+const elLauncherAccountPassword = $("#launcher-account-password");
+const elLauncherAccountPasswordConfirm = $("#launcher-account-password-confirm");
+const elLauncherAccountLoginStatus = $("#launcher-account-login-status");
+const btnLauncherAccountLogin = $("#btn-launcher-account-login");
+const btnLauncherAccountRegister = $("#btn-launcher-account-register");
+const elLauncherSessionKey = $("#launcher-session-key");
 const btnPlay = $("#btn-play");
 const btnCheck = $("#btn-check");
 const btnCreateCharClassic = $("#btn-create-char-classic");
 const btnCreateCharModern = $("#btn-create-char-modern");
+const btnRulesAll = $("#btn-rules-all");
+const btnRulesClassic = $("#btn-rules-classic");
+const btnRulesModern = $("#btn-rules-modern");
 
 // Update screen
 const elProgressBar = $("#progress-bar");
@@ -142,6 +153,8 @@ const btnExportLogs = $("#btn-export-logs");
 // ─────────────────────────────────────────────
 
 const LANGUAGE_STORAGE_KEY = "launcher.locale";
+const ACCOUNT_EMAIL_STORAGE_KEY = "launcher.accountEmail";
+const ACCOUNT_SESSION_KEY_STORAGE_KEY = "launcher.accountSessionKey";
 const DEFAULT_LOCALE = "pl";
 const SUPPORTED_LOCALES = ["pl", "en", "ar", "he", "fa"];
 const RTL_LOCALES = ["ar", "he", "fa"];
@@ -264,6 +277,25 @@ function showFrontendError(code, retryable, fallbackMessage = "") {
   showError(resolveFrontendErrorMessage(code, fallbackMessage), code, retryable);
 }
 
+function extractKnownErrorCode(rawValue) {
+  const raw = String(rawValue || "");
+  const lchMatch = raw.match(/LCH_[A-Z_]+/);
+  if (lchMatch) return lchMatch[0];
+  return null;
+}
+
+function resolveOnboardingErrorMessage(rawValue, genericAlertKey) {
+  const code = extractKnownErrorCode(rawValue);
+  if (code) {
+    const backendKey = `errors.backend.${code}`;
+    const translated = t(backendKey);
+    if (translated !== backendKey) {
+      return translated;
+    }
+  }
+  return t(genericAlertKey);
+}
+
 function normalizeLocale(locale) {
   if (typeof locale !== "string") return "";
   return locale.toLowerCase().split(/[-_]/)[0];
@@ -302,8 +334,33 @@ function applyStaticTranslations() {
   setText("#label-channel", t("labels.channel"));
   setText("#label-status", t("labels.status"));
   setText("#servers-title", t("labels.servers"));
+  setText("#label-launcher-account-name", t("labels.launcherAccountName"));
+  setText("#label-launcher-account-email", t("labels.launcherAccountEmail"));
+  setText("#label-launcher-account-password", t("labels.launcherAccountPassword"));
+  setText(
+    "#label-launcher-account-password-confirm",
+    t("labels.launcherAccountPasswordConfirm")
+  );
+  setText("#label-launcher-session-key", t("labels.launcherSessionKey"));
+  if (elLauncherAccountName) {
+    elLauncherAccountName.placeholder = t("labels.launcherAccountNamePlaceholder");
+  }
   if (elServerNameMain) elServerNameMain.textContent = t("labels.serverMainName");
   if (elServerNameRetro) elServerNameRetro.textContent = t("labels.serverRetroName");
+  if (elLauncherAccountEmail) {
+    elLauncherAccountEmail.placeholder = t("labels.launcherAccountEmailPlaceholder");
+  }
+  if (elLauncherAccountPassword) {
+    elLauncherAccountPassword.placeholder = t("labels.launcherAccountPasswordPlaceholder");
+  }
+  if (elLauncherAccountPasswordConfirm) {
+    elLauncherAccountPasswordConfirm.placeholder = t(
+      "labels.launcherAccountPasswordConfirmPlaceholder"
+    );
+  }
+  if (elLauncherSessionKey) {
+    elLauncherSessionKey.placeholder = t("labels.launcherSessionKeyPlaceholder");
+  }
   setText("#update-title", t("screens.update"));
   setText("#error-title", t("screens.error"));
   setText("#repair-title", t("screens.repair"));
@@ -327,8 +384,13 @@ function applyStaticTranslations() {
 
   setText("#btn-play", t("buttons.play"));
   setText("#btn-check", t("buttons.checkUpdates"));
+  setText("#btn-launcher-account-login", t("buttons.loginAccount"));
+  setText("#btn-launcher-account-register", t("buttons.registerAccount"));
   setText("#btn-create-char-classic", t("buttons.createCharacterClassic"));
   setText("#btn-create-char-modern", t("buttons.createCharacterModern"));
+  setText("#btn-rules-all", t("buttons.rulesAll"));
+  setText("#btn-rules-classic", t("buttons.rulesClassic"));
+  setText("#btn-rules-modern", t("buttons.rulesModern"));
   setText("#btn-website", t("buttons.website"));
   setText("#btn-retry", t("buttons.retry"));
   setText("#btn-back", t("buttons.back"));
@@ -535,6 +597,44 @@ setInterval(loadServerStatus, 30000);
 
 const btnWebsite = $("#btn-website");
 const WEBSITE_BASE_URL = "https://serwercanary.pl";
+let launcherSessionKey = "";
+let launcherAccountPassword = "";  // In-memory only — passed to launch_game, never persisted
+let pendingAccountContextRefreshUntil = 0;
+let accountContextRefreshInFlight = false;
+
+function getStoredAccountEmail() {
+  return String(localStorage.getItem(ACCOUNT_EMAIL_STORAGE_KEY) || "").trim();
+}
+
+function saveAccountEmail(value) {
+  const clean = String(value || "").trim();
+  if (clean) localStorage.setItem(ACCOUNT_EMAIL_STORAGE_KEY, clean);
+  else localStorage.removeItem(ACCOUNT_EMAIL_STORAGE_KEY);
+  if (elLauncherAccountEmail && elLauncherAccountEmail.value !== clean) {
+    elLauncherAccountEmail.value = clean;
+  }
+  return clean;
+}
+
+function sanitizeSessionKey(value) {
+  const str = typeof value === "string" ? value.trim() : "";
+  return str.length > 256 ? str.slice(0, 256) : str;
+}
+
+function getStoredSessionKey() {
+  return sanitizeSessionKey(localStorage.getItem(ACCOUNT_SESSION_KEY_STORAGE_KEY) || "");
+}
+
+function saveSessionKey(value) {
+  const clean = sanitizeSessionKey(value);
+  launcherSessionKey = clean;
+  if (clean) localStorage.setItem(ACCOUNT_SESSION_KEY_STORAGE_KEY, clean);
+  else localStorage.removeItem(ACCOUNT_SESSION_KEY_STORAGE_KEY);
+  if (elLauncherSessionKey && elLauncherSessionKey.value !== clean) {
+    elLauncherSessionKey.value = clean;
+  }
+  return clean;
+}
 
 function openExternalUrl(url) {
   if (!url) return;
@@ -550,6 +650,246 @@ function buildCreateCharacterUrl(mode) {
   return `${WEBSITE_BASE_URL}/account/createcharacter?source=launcher&mode=${encodeURIComponent(safeMode)}`;
 }
 
+function buildRulesUrl(mode) {
+  const safeMode = ["all", "classic74", "modern"].includes(mode) ? mode : "all";
+  return `${WEBSITE_BASE_URL}/?subtopic=rules&mode=${encodeURIComponent(safeMode)}&source=launcher`;
+}
+
+function setAccountLoginStatus(message, isError = false) {
+  if (!elLauncherAccountLoginStatus) return;
+  const text = String(message || "").trim();
+  if (!text) {
+    elLauncherAccountLoginStatus.style.display = "none";
+    elLauncherAccountLoginStatus.textContent = "";
+    elLauncherAccountLoginStatus.classList.remove("login-status-ok", "login-status-error");
+    return;
+  }
+  elLauncherAccountLoginStatus.style.display = "block";
+  elLauncherAccountLoginStatus.textContent = text;
+  elLauncherAccountLoginStatus.classList.remove("login-status-ok", "login-status-error");
+  elLauncherAccountLoginStatus.classList.add(isError ? "login-status-error" : "login-status-ok");
+}
+
+function setAccountAuthButtonsBusy(isBusy, activeAction = "") {
+  if (btnLauncherAccountLogin) {
+    btnLauncherAccountLogin.disabled = isBusy;
+    btnLauncherAccountLogin.textContent =
+      isBusy && activeAction === "login"
+        ? t("buttons.loggingInAccount")
+        : t("buttons.loginAccount");
+  }
+
+  if (btnLauncherAccountRegister) {
+    btnLauncherAccountRegister.disabled = isBusy;
+    btnLauncherAccountRegister.textContent =
+      isBusy && activeAction === "register"
+        ? t("buttons.registeringAccount")
+        : t("buttons.registerAccount");
+  }
+}
+
+async function loginLauncherAccount() {
+  const email = (elLauncherAccountEmail ? elLauncherAccountEmail.value : "").trim();
+  const password = elLauncherAccountPassword ? elLauncherAccountPassword.value : "";
+
+  if (!email || !password) {
+    setAccountLoginStatus(t("alerts.accountLoginMissingCredentials"), true);
+    return;
+  }
+
+  setAccountAuthButtonsBusy(true, "login");
+  setAccountLoginStatus(t("alerts.accountLoginInProgress"), false);
+
+  try {
+    const result = await invoke("login_launcher_account", { email, password });
+    const sessionKey = sanitizeSessionKey(result?.sessionKey || "");
+    if (!sessionKey) {
+      throw new Error("missing_session_key");
+    }
+
+    saveAccountEmail(String(result?.email || email));
+    saveSessionKey(sessionKey);
+    launcherAccountPassword = password;  // Keep in-memory for launch_game
+
+    if (elLauncherAccountPassword) {
+      elLauncherAccountPassword.value = "";
+    }
+
+    setAccountLoginStatus(t("alerts.accountLoginSuccess"), false);
+  } catch (err) {
+    const message = String(err || "unknown_error");
+    reportError("frontend.account_login_failed", message, { email: email || null });
+    setAccountLoginStatus(
+      resolveOnboardingErrorMessage(message, "alerts.accountLoginErrorGeneric"),
+      true
+    );
+  } finally {
+    setAccountAuthButtonsBusy(false);
+  }
+}
+
+async function registerLauncherAccount() {
+  const accountName = (elLauncherAccountName ? elLauncherAccountName.value : "").trim();
+  const email = (elLauncherAccountEmail ? elLauncherAccountEmail.value : "").trim();
+  const password = elLauncherAccountPassword ? elLauncherAccountPassword.value : "";
+  const passwordConfirm = elLauncherAccountPasswordConfirm
+    ? elLauncherAccountPasswordConfirm.value
+    : "";
+
+  if (!accountName || !email || !password || !passwordConfirm) {
+    setAccountLoginStatus(t("alerts.accountRegisterMissingFields"), true);
+    return;
+  }
+
+  setAccountAuthButtonsBusy(true, "register");
+  setAccountLoginStatus(t("alerts.accountRegisterInProgress"), false);
+
+  try {
+    const result = await invoke("register_launcher_account", {
+      accountName,
+      email,
+      password,
+      passwordConfirm,
+    });
+
+    saveAccountEmail(String(result?.email || email));
+    if (elLauncherAccountName) {
+      elLauncherAccountName.value = String(result?.accountName || accountName);
+    }
+
+    if (elLauncherAccountPassword) {
+      elLauncherAccountPassword.value = "";
+    }
+    if (elLauncherAccountPasswordConfirm) {
+      elLauncherAccountPasswordConfirm.value = "";
+    }
+
+    const autoLogin = Boolean(result?.autoLogin);
+    const sessionKey = sanitizeSessionKey(result?.sessionKey || "");
+    if (autoLogin && sessionKey) {
+      saveSessionKey(sessionKey);
+      setAccountLoginStatus(t("alerts.accountRegisterSuccessAutoLogin"), false);
+    } else {
+      setAccountLoginStatus(t("alerts.accountRegisterSuccessNoAutoLogin"), false);
+    }
+  } catch (err) {
+    const message = String(err || "unknown_error");
+    reportError("frontend.account_register_failed", message, {
+      email: email || null,
+      accountName: accountName || null,
+    });
+    setAccountLoginStatus(
+      resolveOnboardingErrorMessage(message, "alerts.accountRegisterErrorGeneric"),
+      true
+    );
+  } finally {
+    setAccountAuthButtonsBusy(false);
+  }
+}
+
+async function buildSyncedCreateCharacterUrl(mode) {
+  const safeMode = mode === "classic74" ? "classic74" : "modern";
+  const sessionKey = saveSessionKey(
+    (elLauncherSessionKey && elLauncherSessionKey.value) || launcherSessionKey
+  );
+
+  if (!sessionKey) {
+    return {
+      url: buildCreateCharacterUrl(safeMode),
+      fallback: true,
+      reason: "missing_session_key",
+    };
+  }
+
+  try {
+    const response = await invoke("build_create_character_url", {
+      sessionKey,
+      mode: safeMode,
+    });
+
+    if (response && typeof response.url === "string" && response.url.length > 0) {
+      return {
+        url: response.url,
+        fallback: false,
+      };
+    }
+  } catch (err) {
+    console.warn("build_create_character_url failed:", err);
+    reportError("frontend.sync_url_failed", String(err), { mode: safeMode });
+    return {
+      url: buildCreateCharacterUrl(safeMode),
+      fallback: true,
+      reason: String(err),
+    };
+  }
+
+  return {
+    url: buildCreateCharacterUrl(safeMode),
+    fallback: true,
+    reason: "empty_sync_response",
+  };
+}
+
+async function refreshLauncherAccountContext(trigger = "manual") {
+  if (accountContextRefreshInFlight) {
+    return false;
+  }
+
+  const sessionKey = saveSessionKey(
+    (elLauncherSessionKey && elLauncherSessionKey.value) || launcherSessionKey
+  );
+  if (!sessionKey) {
+    return false;
+  }
+
+  accountContextRefreshInFlight = true;
+  try {
+    const result = await invoke("refresh_launcher_account_context", { sessionKey });
+
+    if (result?.email) {
+      saveAccountEmail(String(result.email));
+    }
+    if (elLauncherAccountName && result?.accountName) {
+      elLauncherAccountName.value = String(result.accountName);
+    }
+
+    setAccountLoginStatus(t("alerts.accountContextRefreshed"), false);
+
+    return true;
+  } catch (err) {
+    if (trigger !== "focus") {
+      const message = String(err || "unknown_error");
+      reportError("frontend.account_context_refresh_failed", message, {
+        trigger,
+      });
+      setAccountLoginStatus(
+        resolveOnboardingErrorMessage(message, "alerts.accountContextRefreshErrorGeneric"),
+        true
+      );
+    }
+    return false;
+  } finally {
+    accountContextRefreshInFlight = false;
+  }
+}
+
+async function openCreateCharacterFlow(mode) {
+  const result = await buildSyncedCreateCharacterUrl(mode);
+  openExternalUrl(result.url);
+
+  if (!result.fallback) {
+    pendingAccountContextRefreshUntil = Date.now() + 10 * 60 * 1000;
+    setAccountLoginStatus(t("alerts.accountContextRefreshPending"), false);
+  }
+
+  if (result.fallback) {
+    const reason = result.reason === "missing_session_key"
+      ? t("alerts.createCharacterFallbackMissingSession")
+      : t("alerts.createCharacterFallbackErrorGeneric");
+    alert(reason);
+  }
+}
+
 if (btnWebsite) {
   btnWebsite.addEventListener("click", () => {
     openExternalUrl(WEBSITE_BASE_URL);
@@ -557,14 +897,32 @@ if (btnWebsite) {
 }
 
 if (btnCreateCharClassic) {
-  btnCreateCharClassic.addEventListener("click", () => {
-    openExternalUrl(buildCreateCharacterUrl("classic74"));
+  btnCreateCharClassic.addEventListener("click", async () => {
+    await openCreateCharacterFlow("classic74");
   });
 }
 
 if (btnCreateCharModern) {
-  btnCreateCharModern.addEventListener("click", () => {
-    openExternalUrl(buildCreateCharacterUrl("modern"));
+  btnCreateCharModern.addEventListener("click", async () => {
+    await openCreateCharacterFlow("modern");
+  });
+}
+
+if (btnRulesAll) {
+  btnRulesAll.addEventListener("click", () => {
+    openExternalUrl(buildRulesUrl("all"));
+  });
+}
+
+if (btnRulesClassic) {
+  btnRulesClassic.addEventListener("click", () => {
+    openExternalUrl(buildRulesUrl("classic74"));
+  });
+}
+
+if (btnRulesModern) {
+  btnRulesModern.addEventListener("click", () => {
+    openExternalUrl(buildRulesUrl("modern"));
   });
 }
 
@@ -661,11 +1019,36 @@ btnPlay.addEventListener("click", async () => {
       if (check.errorFiles.length > 0) {
         problems.push(t("errors.readErrors", [check.errorFiles.length, check.errorFiles.join(", ")]));
       }
-      showError(
-        `${t("errors.integrityFailed")}\n\n${problems.join("\n")}`,
-        "INTEGRITY_CHECK_FAILED",
-        true
-      );
+
+      // K105: tampered critical files -> quarantine + redownload via backend.
+      showScreen("update");
+      updateProgress({
+        stage: "verifying",
+        currentFile: null,
+        filesDone: 0,
+        filesTotal: 0,
+        bytesDone: 0,
+        bytesTotal: 0,
+        percent: 0,
+        etaSeconds: null,
+      });
+
+      try {
+        const repairResult = await invoke("repair_tampered_critical_files");
+        updateProgress(repairResult);
+
+        setTimeout(() => {
+          showScreen("status");
+          loadStatus();
+        }, 800);
+      } catch (repairErr) {
+        showError(
+          `${t("errors.integrityFailed")}\n\n${problems.join("\n")}\n\n${t("alerts.antiTamperRepairFailed")}`,
+          "LCH_ANTI_TAMPER_REPAIR_FAILED",
+          true
+        );
+      }
+
       btnPlay.textContent = t("buttons.play");
       btnPlay.disabled = false;
       return;
@@ -678,7 +1061,10 @@ btnPlay.addEventListener("click", async () => {
   btnPlay.textContent = t("buttons.playLaunching");
 
   try {
-    await invoke("launch_game");
+    const email = getStoredAccountEmail();
+    const pw = launcherAccountPassword || "";
+    await invoke("launch_game", { email: email || null, password: pw || null });
+    launcherAccountPassword = "";  // Clear after use
     btnPlay.textContent = t("buttons.playLaunched");
     setTimeout(() => {
       btnPlay.textContent = t("buttons.play");
@@ -1158,10 +1544,62 @@ document.addEventListener("DOMContentLoaded", async () => {
   await loadI18nDictionaries();
   populateLanguageSelector();
   setLocale(getPreferredLocale(), false);
+  saveAccountEmail(getStoredAccountEmail());
+  saveSessionKey(getStoredSessionKey());
 
   if (elSettingLanguage) {
     elSettingLanguage.addEventListener("change", () => {
       setLocale(elSettingLanguage.value);
+    });
+  }
+
+  if (elLauncherSessionKey) {
+    elLauncherSessionKey.addEventListener("change", () => {
+      saveSessionKey(elLauncherSessionKey.value);
+    });
+    elLauncherSessionKey.addEventListener("blur", () => {
+      saveSessionKey(elLauncherSessionKey.value);
+    });
+  }
+
+  if (elLauncherAccountEmail) {
+    elLauncherAccountEmail.addEventListener("blur", () => {
+      saveAccountEmail(elLauncherAccountEmail.value);
+    });
+  }
+
+  window.addEventListener("focus", () => {
+    if (Date.now() > pendingAccountContextRefreshUntil) {
+      return;
+    }
+    void refreshLauncherAccountContext("focus").then((ok) => {
+      if (ok) {
+        pendingAccountContextRefreshUntil = 0;
+      }
+    });
+  });
+
+  if (btnLauncherAccountLogin) {
+    btnLauncherAccountLogin.addEventListener("click", () => loginLauncherAccount());
+  }
+  if (btnLauncherAccountRegister) {
+    btnLauncherAccountRegister.addEventListener("click", () => registerLauncherAccount());
+  }
+
+  if (elLauncherAccountPassword) {
+    elLauncherAccountPassword.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        loginLauncherAccount();
+      }
+    });
+  }
+  if (elLauncherAccountPasswordConfirm) {
+    elLauncherAccountPasswordConfirm.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        registerLauncherAccount();
+      }
     });
   }
 

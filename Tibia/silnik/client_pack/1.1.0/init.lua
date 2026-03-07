@@ -36,7 +36,6 @@ GameModes = {
     classic74 = {
         name = "Classic 7.4",
         description = "Serwer w stylu Tibia 7.4 — bez hotkey na runy, bez market, bez quick loot.",
-        allowedWorldIds = { 0 },
         server = {
             host = "127.0.0.1",   -- FIX25: adres serwera (dev: WSL localhost)
             port = 443,            -- Port API (HTTPS). Game port (7172) jest w login.php response.
@@ -61,7 +60,6 @@ GameModes = {
     modern = {
         name = "Modern 14.20+",
         description = "Pełna wersja Tibia — wszystkie nowoczesne funkcje.",
-        allowedWorldIds = { 1 },
         server = {
             host = "127.0.0.1",   -- FIX25: adres serwera (dev: WSL localhost)
             port = 443,            -- Port API (HTTPS). Game port (7172) jest w login.php response.
@@ -118,40 +116,6 @@ function getCurrentServerConfig()
     return mode.server
 end
 
--- Helper: twarda walidacja mapowania mode -> world.
--- W CLIENT_LOCKED fail-closed: brak mapowania = brak dostepu.
-function isWorldAllowedForMode(modeKey, worldId, worldName)
-    if not CLIENT_LOCKED then
-        return true
-    end
-
-    local mode = GameModes and GameModes[modeKey]
-    if not mode then
-        return false
-    end
-
-    local allowedWorldIds = mode.allowedWorldIds
-    if type(allowedWorldIds) ~= "table" or #allowedWorldIds == 0 then
-        g_logger.warning("[MODE-GATE] Missing allowedWorldIds for mode=" .. tostring(modeKey))
-        return false
-    end
-
-    local worldIdNum = tonumber(worldId)
-    if worldIdNum == nil then
-        g_logger.warning("[MODE-GATE] Missing/invalid worldId for mode=" .. tostring(modeKey) .. " worldName=" .. tostring(worldName))
-        return false
-    end
-
-    worldIdNum = math.floor(worldIdNum)
-    for _, allowedId in ipairs(allowedWorldIds) do
-        if worldIdNum == tonumber(allowedId) then
-            return true
-        end
-    end
-
-    return false
-end
-
 -- Walidacja placeholderów — ostrzeż natychmiast jeśli adresy nie zostały zmienione.
 -- Dzięki temu fail widać od razu w logu, nie dopiero przy próbie logowania.
 do
@@ -167,6 +131,9 @@ do
 end
 
 -- INS-66/67: Load MANAGED_SERVER_LIST from launcher-generated file.
+-- Launcher writes init_serverlist.lua with dynamic server data from manifest (= from DB).
+-- If available, override GameModes server addresses with launcher-managed data.
+-- Feature flags (hotkeys, market, etc.) stay from GameModes in init.lua.
 MANAGED_SERVER_LIST = nil
 do
     local serverlistPath = g_resources.getWorkDir() .. "init_serverlist.lua"
@@ -176,11 +143,15 @@ do
         local ok, err = pcall(dofile, serverlistPath)
         if ok and MANAGED_SERVER_LIST then
             g_logger.info("[CONFIG] Loaded MANAGED_SERVER_LIST with " .. #MANAGED_SERVER_LIST .. " servers from launcher")
+            -- Override GameModes server addresses from MANAGED_SERVER_LIST
             for _, srv in ipairs(MANAGED_SERVER_LIST) do
                 local mode = srv.gameMode
                 if mode and GameModes[mode] and GameModes[mode].server then
+                    -- Update server connection info from launcher-managed data
                     GameModes[mode].server.host = srv.host
                     GameModes[mode].server.port = srv.loginPort or srv.port
+                    -- Rebuild httpLoginUrl from the same host (API is on HTTPS port)
+                    -- Only update if current URL is still dev placeholder (127.0.0.1)
                     local currentUrl = GameModes[mode].server.httpLoginUrl or ""
                     if currentUrl:find("127%.0%.0%.1") or currentUrl:find("localhost") then
                         GameModes[mode].server.httpLoginUrl = "https://" .. srv.host .. "/apik/v1/login.php"
@@ -192,7 +163,7 @@ do
             g_logger.warning("[CONFIG] Failed to load init_serverlist.lua: " .. tostring(err))
         end
     else
-        g_logger.info("[CONFIG] No init_serverlist.lua found — using GameModes defaults")
+        g_logger.info("[CONFIG] No init_serverlist.lua found — using GameModes defaults (dev mode or first run)")
     end
 end
 

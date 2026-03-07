@@ -14,7 +14,7 @@ on:
       - "Tibia/silnik/canary_test/.github/workflows/build-linuxsr.yml"
   merge_group:
   push:
-    branches: [master, main, feature/ticket-gate]
+    branches: [master, main]
     paths:
       - "Tibia/silnik/canary_test/src/**"
       - "Tibia/silnik/canary_test/tests/**/*.cpp"

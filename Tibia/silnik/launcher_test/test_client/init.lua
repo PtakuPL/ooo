@@ -36,7 +36,6 @@ GameModes = {
     classic74 = {
         name = "Classic 7.4",
         description = "Serwer w stylu Tibia 7.4 — bez hotkey na runy, bez market, bez quick loot.",
-        allowedWorldIds = { 0 },
         server = {
             host = "127.0.0.1",   -- FIX25: adres serwera (dev: WSL localhost)
             port = 443,            -- Port API (HTTPS). Game port (7172) jest w login.php response.
@@ -61,7 +60,6 @@ GameModes = {
     modern = {
         name = "Modern 14.20+",
         description = "Pełna wersja Tibia — wszystkie nowoczesne funkcje.",
-        allowedWorldIds = { 1 },
         server = {
             host = "127.0.0.1",   -- FIX25: adres serwera (dev: WSL localhost)
             port = 443,            -- Port API (HTTPS). Game port (7172) jest w login.php response.
@@ -116,40 +114,6 @@ function getCurrentServerConfig()
     local mode = GameModes[CurrentGameMode]
     if not mode then return nil end
     return mode.server
-end
-
--- Helper: twarda walidacja mapowania mode -> world.
--- W CLIENT_LOCKED fail-closed: brak mapowania = brak dostepu.
-function isWorldAllowedForMode(modeKey, worldId, worldName)
-    if not CLIENT_LOCKED then
-        return true
-    end
-
-    local mode = GameModes and GameModes[modeKey]
-    if not mode then
-        return false
-    end
-
-    local allowedWorldIds = mode.allowedWorldIds
-    if type(allowedWorldIds) ~= "table" or #allowedWorldIds == 0 then
-        g_logger.warning("[MODE-GATE] Missing allowedWorldIds for mode=" .. tostring(modeKey))
-        return false
-    end
-
-    local worldIdNum = tonumber(worldId)
-    if worldIdNum == nil then
-        g_logger.warning("[MODE-GATE] Missing/invalid worldId for mode=" .. tostring(modeKey) .. " worldName=" .. tostring(worldName))
-        return false
-    end
-
-    worldIdNum = math.floor(worldIdNum)
-    for _, allowedId in ipairs(allowedWorldIds) do
-        if worldIdNum == tonumber(allowedId) then
-            return true
-        end
-    end
-
-    return false
 end
 
 -- Walidacja placeholderów — ostrzeż natychmiast jeśli adresy nie zostały zmienione.

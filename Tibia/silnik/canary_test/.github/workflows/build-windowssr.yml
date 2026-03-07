@@ -2,9 +2,9 @@ name: Build Windows Server
 
 on:
   push:
-    branches: [ master, main, feature/ticket-gate ]
+    branches: [ master, main ]
   pull_request:
-    branches: [ master, main, feature/ticket-gate ]
+    branches: [ master, main ]
   workflow_dispatch:  # Manual trigger
 
 env:

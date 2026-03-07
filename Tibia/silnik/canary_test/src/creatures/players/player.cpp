@@ -67,6 +67,24 @@
 #include "creatures/players/vocations/vocation.hpp"
 #include "creatures/players/components/wheel/wheel_definitions.hpp"
 
+// Helper for free equip: checks if item's slotPosition matches the equipment slot
+static bool isItemInCorrectSlotCheck(const std::shared_ptr<Item> &item, Slots_t slot) {
+	const uint32_t slotPos = item->getSlotPosition();
+	switch (slot) {
+		case CONST_SLOT_HEAD:     return (slotPos & SLOTP_HEAD) != 0;
+		case CONST_SLOT_NECKLACE: return (slotPos & SLOTP_NECKLACE) != 0;
+		case CONST_SLOT_BACKPACK: return (slotPos & SLOTP_BACKPACK) != 0;
+		case CONST_SLOT_ARMOR:    return (slotPos & SLOTP_ARMOR) != 0;
+		case CONST_SLOT_RIGHT:    return (slotPos & (SLOTP_RIGHT | SLOTP_TWO_HAND)) != 0;
+		case CONST_SLOT_LEFT:     return (slotPos & (SLOTP_LEFT | SLOTP_TWO_HAND)) != 0;
+		case CONST_SLOT_LEGS:     return (slotPos & SLOTP_LEGS) != 0;
+		case CONST_SLOT_FEET:     return (slotPos & SLOTP_FEET) != 0;
+		case CONST_SLOT_RING:     return (slotPos & SLOTP_RING) != 0;
+		case CONST_SLOT_AMMO:     return (slotPos & SLOTP_AMMO) != 0;
+		default:                  return true;
+	}
+}
+
 MuteCountMap Player::muteCountMap;
 
 Player::Player(std::shared_ptr<ProtocolGame> p) :
@@ -4423,175 +4441,241 @@ ReturnValue Player::queryAdd(int32_t index, const std::shared_ptr<Thing> &thing,
 
 	const int32_t &slotPosition = item->getSlotPosition();
 
-	bool allowPutItemsOnAmmoSlot = g_configManager().getBoolean(ENABLE_PLAYER_PUT_ITEM_IN_AMMO_SLOT);
-	if (allowPutItemsOnAmmoSlot && index == CONST_SLOT_AMMO) {
-		ret = RETURNVALUE_NOERROR;
-	} else {
-		if ((slotPosition & SLOTP_HEAD) || (slotPosition & SLOTP_NECKLACE) || (slotPosition & SLOTP_BACKPACK) || (slotPosition & SLOTP_ARMOR) || (slotPosition & SLOTP_LEGS) || (slotPosition & SLOTP_FEET) || (slotPosition & SLOTP_RING)) {
-			ret = RETURNVALUE_CANNOTBEDRESSED;
-		} else if (slotPosition & SLOTP_TWO_HAND) {
-			ret = RETURNVALUE_PUTTHISOBJECTINBOTHHANDS;
-		} else if ((slotPosition & SLOTP_RIGHT) || (slotPosition & SLOTP_LEFT)) {
-			ret = RETURNVALUE_CANNOTBEDRESSED;
-		}
-	}
+	const bool enableFreeEquip = g_configManager().getBoolean(FREE_EQUIP);
 
-	switch (index) {
-		case CONST_SLOT_HEAD: {
-			if (slotPosition & SLOTP_HEAD) {
-				ret = RETURNVALUE_NOERROR;
+	if (enableFreeEquip) {
+		// Free equip mode (Tibia 7.4): any pickupable item in (almost) any slot.
+		// Exceptions: backpack = containers only, ring = rings only, two-hand rule preserved.
+		ret = RETURNVALUE_CANNOTBEDRESSED;
+
+		switch (index) {
+			case CONST_SLOT_BACKPACK: {
+				if (slotPosition & SLOTP_BACKPACK) {
+					ret = RETURNVALUE_NOERROR;
+				}
+				break;
 			}
-			break;
-		}
 
-		case CONST_SLOT_NECKLACE: {
-			if (slotPosition & SLOTP_NECKLACE) {
-				ret = RETURNVALUE_NOERROR;
+			case CONST_SLOT_RING: {
+				if (slotPosition & SLOTP_RING) {
+					ret = RETURNVALUE_NOERROR;
+				}
+				break;
 			}
-			break;
-		}
 
-		case CONST_SLOT_BACKPACK: {
-			if (slotPosition & SLOTP_BACKPACK) {
-				ret = RETURNVALUE_NOERROR;
+			case CONST_SLOT_LEFT: {
+				// Preserve two-hand rule
+				if (slotPosition & SLOTP_TWO_HAND) {
+					if (inventory[CONST_SLOT_RIGHT]) {
+						ret = RETURNVALUE_BOTHHANDSNEEDTOBEFREE;
+					} else {
+						ret = RETURNVALUE_NOERROR;
+					}
+				} else {
+					if (inventory[CONST_SLOT_RIGHT] && inventory[CONST_SLOT_RIGHT]->getSlotPosition() & SLOTP_TWO_HAND) {
+						ret = RETURNVALUE_DROPTWOHANDEDITEM;
+					} else {
+						ret = RETURNVALUE_NOERROR;
+					}
+				}
+				break;
 			}
-			break;
-		}
 
-		case CONST_SLOT_ARMOR: {
-			if (slotPosition & SLOTP_ARMOR) {
-				ret = RETURNVALUE_NOERROR;
-			}
-			break;
-		}
-
-		case CONST_SLOT_RIGHT: {
-			if (slotPosition & SLOTP_RIGHT) {
-				if (item->getWeaponType() != WEAPON_SHIELD && !item->isQuiver()) {
+			case CONST_SLOT_RIGHT: {
+				if (slotPosition & SLOTP_TWO_HAND) {
 					ret = RETURNVALUE_CANNOTBEDRESSED;
 				} else {
-					const auto &leftItem = inventory[CONST_SLOT_LEFT];
-					if (leftItem) {
-						if ((leftItem->getSlotPosition() | slotPosition) & SLOTP_TWO_HAND) {
-							if (item->isQuiver() && leftItem->getWeaponType() == WEAPON_DISTANCE) {
-								ret = RETURNVALUE_NOERROR;
+					if (inventory[CONST_SLOT_LEFT] && inventory[CONST_SLOT_LEFT]->getSlotPosition() & SLOTP_TWO_HAND) {
+						ret = RETURNVALUE_DROPTWOHANDEDITEM;
+					} else {
+						ret = RETURNVALUE_NOERROR;
+					}
+				}
+				break;
+			}
+
+			case CONST_SLOT_WHEREEVER:
+			case -1:
+				ret = RETURNVALUE_NOTENOUGHROOM;
+				break;
+
+			default:
+				// Head, Neck, Armor, Legs, Feet, Ammo — all free
+				ret = RETURNVALUE_NOERROR;
+				break;
+		}
+	} else {
+		// Standard mode (modern): strict slot validation
+		bool allowPutItemsOnAmmoSlot = g_configManager().getBoolean(ENABLE_PLAYER_PUT_ITEM_IN_AMMO_SLOT);
+		if (allowPutItemsOnAmmoSlot && index == CONST_SLOT_AMMO) {
+			ret = RETURNVALUE_NOERROR;
+		} else {
+			if ((slotPosition & SLOTP_HEAD) || (slotPosition & SLOTP_NECKLACE) || (slotPosition & SLOTP_BACKPACK) || (slotPosition & SLOTP_ARMOR) || (slotPosition & SLOTP_LEGS) || (slotPosition & SLOTP_FEET) || (slotPosition & SLOTP_RING)) {
+				ret = RETURNVALUE_CANNOTBEDRESSED;
+			} else if (slotPosition & SLOTP_TWO_HAND) {
+				ret = RETURNVALUE_PUTTHISOBJECTINBOTHHANDS;
+			} else if ((slotPosition & SLOTP_RIGHT) || (slotPosition & SLOTP_LEFT)) {
+				ret = RETURNVALUE_CANNOTBEDRESSED;
+			}
+		}
+
+		switch (index) {
+			case CONST_SLOT_HEAD: {
+				if (slotPosition & SLOTP_HEAD) {
+					ret = RETURNVALUE_NOERROR;
+				}
+				break;
+			}
+
+			case CONST_SLOT_NECKLACE: {
+				if (slotPosition & SLOTP_NECKLACE) {
+					ret = RETURNVALUE_NOERROR;
+				}
+				break;
+			}
+
+			case CONST_SLOT_BACKPACK: {
+				if (slotPosition & SLOTP_BACKPACK) {
+					ret = RETURNVALUE_NOERROR;
+				}
+				break;
+			}
+
+			case CONST_SLOT_ARMOR: {
+				if (slotPosition & SLOTP_ARMOR) {
+					ret = RETURNVALUE_NOERROR;
+				}
+				break;
+			}
+
+			case CONST_SLOT_RIGHT: {
+				if (slotPosition & SLOTP_RIGHT) {
+					if (item->getWeaponType() != WEAPON_SHIELD && !item->isQuiver()) {
+						ret = RETURNVALUE_CANNOTBEDRESSED;
+					} else {
+						const auto &leftItem = inventory[CONST_SLOT_LEFT];
+						if (leftItem) {
+							if ((leftItem->getSlotPosition() | slotPosition) & SLOTP_TWO_HAND) {
+								if (item->isQuiver() && leftItem->getWeaponType() == WEAPON_DISTANCE) {
+									ret = RETURNVALUE_NOERROR;
+								} else {
+									ret = RETURNVALUE_BOTHHANDSNEEDTOBEFREE;
+								}
 							} else {
-								ret = RETURNVALUE_BOTHHANDSNEEDTOBEFREE;
+								ret = RETURNVALUE_NOERROR;
 							}
 						} else {
 							ret = RETURNVALUE_NOERROR;
 						}
-					} else {
-						ret = RETURNVALUE_NOERROR;
 					}
-				}
-			} else if (slotPosition & SLOTP_TWO_HAND) {
-				ret = RETURNVALUE_CANNOTBEDRESSED;
-			} else if (inventory[CONST_SLOT_LEFT]) {
-				const auto &leftItem = inventory[CONST_SLOT_LEFT];
-				const WeaponType_t type = item->getWeaponType();
-				const WeaponType_t leftType = leftItem ? leftItem->getWeaponType() : WEAPON_NONE;
-				if (leftItem && leftItem->getSlotPosition() & SLOTP_TWO_HAND) {
-					ret = RETURNVALUE_DROPTWOHANDEDITEM;
-				} else if (leftItem && item == leftItem && count == item->getItemCount()) {
-					ret = RETURNVALUE_NOERROR;
-				} else if (leftType == WEAPON_SHIELD && type == WEAPON_SHIELD) {
-					ret = RETURNVALUE_CANONLYUSEONESHIELD;
-				} else if (leftType == WEAPON_NONE || type == WEAPON_NONE || leftType == WEAPON_SHIELD || leftType == WEAPON_AMMO || type == WEAPON_SHIELD || type == WEAPON_AMMO) {
-					ret = RETURNVALUE_NOERROR;
-				} else {
-					ret = RETURNVALUE_CANONLYUSEONEWEAPON;
-				}
-			} else {
-				ret = RETURNVALUE_NOERROR;
-			}
-			break;
-		}
-
-		case CONST_SLOT_LEFT: {
-			if (item->isQuiver()) {
-				ret = RETURNVALUE_CANNOTBEDRESSED;
-			} else if (slotPosition & SLOTP_TWO_HAND) {
-				if (inventory[CONST_SLOT_RIGHT]) {
-					const WeaponType_t type = item->getWeaponType();
-					// Allow equip bow when quiver is in SLOT_RIGHT
-					if (type == WEAPON_DISTANCE && inventory[CONST_SLOT_RIGHT]->isQuiver()) {
-						ret = RETURNVALUE_NOERROR;
-					} else {
-						ret = RETURNVALUE_BOTHHANDSNEEDTOBEFREE;
-					}
-				} else {
-					ret = RETURNVALUE_NOERROR;
-				}
-			} else if (slotPosition & SLOTP_LEFT) {
-				const WeaponType_t type = item->getWeaponType();
-				if (type == WEAPON_NONE || type == WEAPON_SHIELD || type == WEAPON_AMMO) {
+				} else if (slotPosition & SLOTP_TWO_HAND) {
 					ret = RETURNVALUE_CANNOTBEDRESSED;
+				} else if (inventory[CONST_SLOT_LEFT]) {
+					const auto &leftItem = inventory[CONST_SLOT_LEFT];
+					const WeaponType_t type = item->getWeaponType();
+					const WeaponType_t leftType = leftItem ? leftItem->getWeaponType() : WEAPON_NONE;
+					if (leftItem && leftItem->getSlotPosition() & SLOTP_TWO_HAND) {
+						ret = RETURNVALUE_DROPTWOHANDEDITEM;
+					} else if (leftItem && item == leftItem && count == item->getItemCount()) {
+						ret = RETURNVALUE_NOERROR;
+					} else if (leftType == WEAPON_SHIELD && type == WEAPON_SHIELD) {
+						ret = RETURNVALUE_CANONLYUSEONESHIELD;
+					} else if (leftType == WEAPON_NONE || type == WEAPON_NONE || leftType == WEAPON_SHIELD || leftType == WEAPON_AMMO || type == WEAPON_SHIELD || type == WEAPON_AMMO) {
+						ret = RETURNVALUE_NOERROR;
+					} else {
+						ret = RETURNVALUE_CANONLYUSEONEWEAPON;
+					}
 				} else {
 					ret = RETURNVALUE_NOERROR;
 				}
-			} else if (inventory[CONST_SLOT_RIGHT]) {
-				const auto &rightItem = inventory[CONST_SLOT_RIGHT];
-				const WeaponType_t type = item->getWeaponType();
-				const WeaponType_t rightType = rightItem ? rightItem->getWeaponType() : WEAPON_NONE;
+				break;
+			}
 
-				if (rightItem && rightItem->getSlotPosition() & SLOTP_TWO_HAND) {
-					ret = RETURNVALUE_DROPTWOHANDEDITEM;
-				} else if (rightItem && item == rightItem && count == item->getItemCount()) {
+			case CONST_SLOT_LEFT: {
+				if (item->isQuiver()) {
+					ret = RETURNVALUE_CANNOTBEDRESSED;
+				} else if (slotPosition & SLOTP_TWO_HAND) {
+					if (inventory[CONST_SLOT_RIGHT]) {
+						const WeaponType_t type = item->getWeaponType();
+						// Allow equip bow when quiver is in SLOT_RIGHT
+						if (type == WEAPON_DISTANCE && inventory[CONST_SLOT_RIGHT]->isQuiver()) {
+							ret = RETURNVALUE_NOERROR;
+						} else {
+							ret = RETURNVALUE_BOTHHANDSNEEDTOBEFREE;
+						}
+					} else {
+						ret = RETURNVALUE_NOERROR;
+					}
+				} else if (slotPosition & SLOTP_LEFT) {
+					const WeaponType_t type = item->getWeaponType();
+					if (type == WEAPON_NONE || type == WEAPON_SHIELD || type == WEAPON_AMMO) {
+						ret = RETURNVALUE_CANNOTBEDRESSED;
+					} else {
+						ret = RETURNVALUE_NOERROR;
+					}
+				} else if (inventory[CONST_SLOT_RIGHT]) {
+					const auto &rightItem = inventory[CONST_SLOT_RIGHT];
+					const WeaponType_t type = item->getWeaponType();
+					const WeaponType_t rightType = rightItem ? rightItem->getWeaponType() : WEAPON_NONE;
+
+					if (rightItem && rightItem->getSlotPosition() & SLOTP_TWO_HAND) {
+						ret = RETURNVALUE_DROPTWOHANDEDITEM;
+					} else if (rightItem && item == rightItem && count == item->getItemCount()) {
+						ret = RETURNVALUE_NOERROR;
+					} else if (rightType == WEAPON_SHIELD && type == WEAPON_SHIELD) {
+						ret = RETURNVALUE_CANONLYUSEONESHIELD;
+					} else if (rightType == WEAPON_NONE || type == WEAPON_NONE || rightType == WEAPON_SHIELD || rightType == WEAPON_AMMO || type == WEAPON_SHIELD || type == WEAPON_AMMO) {
+						ret = RETURNVALUE_NOERROR;
+					} else {
+						ret = RETURNVALUE_CANONLYUSEONEWEAPON;
+					}
+				} else {
 					ret = RETURNVALUE_NOERROR;
-				} else if (rightType == WEAPON_SHIELD && type == WEAPON_SHIELD) {
-					ret = RETURNVALUE_CANONLYUSEONESHIELD;
-				} else if (rightType == WEAPON_NONE || type == WEAPON_NONE || rightType == WEAPON_SHIELD || rightType == WEAPON_AMMO || type == WEAPON_SHIELD || type == WEAPON_AMMO) {
+				}
+				break;
+			}
+
+			case CONST_SLOT_LEGS: {
+				if (slotPosition & SLOTP_LEGS) {
+					ret = RETURNVALUE_NOERROR;
+				}
+				break;
+			}
+
+			case CONST_SLOT_FEET: {
+				if (slotPosition & SLOTP_FEET) {
+					ret = RETURNVALUE_NOERROR;
+				}
+				break;
+			}
+
+			case CONST_SLOT_RING: {
+				if (slotPosition & SLOTP_RING) {
+					ret = RETURNVALUE_NOERROR;
+				}
+				break;
+			}
+
+			case CONST_SLOT_AMMO: {
+				if (allowPutItemsOnAmmoSlot) {
 					ret = RETURNVALUE_NOERROR;
 				} else {
-					ret = RETURNVALUE_CANONLYUSEONEWEAPON;
+					if ((slotPosition & SLOTP_AMMO)) {
+						ret = RETURNVALUE_NOERROR;
+					}
 				}
-			} else {
-				ret = RETURNVALUE_NOERROR;
+				break;
 			}
-			break;
+
+			case CONST_SLOT_WHEREEVER:
+			case -1:
+				ret = RETURNVALUE_NOTENOUGHROOM;
+				break;
+
+			default:
+				ret = RETURNVALUE_NOTPOSSIBLE;
+				break;
 		}
-
-		case CONST_SLOT_LEGS: {
-			if (slotPosition & SLOTP_LEGS) {
-				ret = RETURNVALUE_NOERROR;
-			}
-			break;
-		}
-
-		case CONST_SLOT_FEET: {
-			if (slotPosition & SLOTP_FEET) {
-				ret = RETURNVALUE_NOERROR;
-			}
-			break;
-		}
-
-		case CONST_SLOT_RING: {
-			if (slotPosition & SLOTP_RING) {
-				ret = RETURNVALUE_NOERROR;
-			}
-			break;
-		}
-
-		case CONST_SLOT_AMMO: {
-			if (allowPutItemsOnAmmoSlot) {
-				ret = RETURNVALUE_NOERROR;
-			} else {
-				if ((slotPosition & SLOTP_AMMO)) {
-					ret = RETURNVALUE_NOERROR;
-				}
-			}
-			break;
-		}
-
-		case CONST_SLOT_WHEREEVER:
-		case -1:
-			ret = RETURNVALUE_NOTENOUGHROOM;
-			break;
-
-		default:
-			ret = RETURNVALUE_NOTPOSSIBLE;
-			break;
 	}
 
 	if (ret == RETURNVALUE_NOERROR || ret == RETURNVALUE_NOTENOUGHROOM) {
@@ -4606,8 +4690,12 @@ ReturnValue Player::queryAdd(int32_t index, const std::shared_ptr<Thing> &thing,
 			return RETURNVALUE_NOTENOUGHCAPACITY;
 		}
 
-		if (!g_moveEvents().onPlayerEquip(getPlayer(), item, static_cast<Slots_t>(index), true)) {
-			return RETURNVALUE_CANNOTBEDRESSED;
+		// In free equip mode, skip equip requirements (level, vocation) for items in wrong slots
+		// since they won't provide any bonuses anyway
+		if (!enableFreeEquip || isItemInCorrectSlotCheck(item, static_cast<Slots_t>(index))) {
+			if (!g_moveEvents().onPlayerEquip(getPlayer(), item, static_cast<Slots_t>(index), true)) {
+				return RETURNVALUE_CANNOTBEDRESSED;
+			}
 		}
 	}
 

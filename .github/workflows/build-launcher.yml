@@ -23,10 +23,6 @@ on:
     tags:
       - 'v*-rc*'
 
-defaults:
-  run:
-    working-directory: Tibia/silnik/launcher-rust
-
 env:
   CARGO_TERM_COLOR: always
 
@@ -37,6 +33,9 @@ jobs:
   build-core:
     name: Core (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: Tibia/silnik/launcher-rust
     strategy:
       fail-fast: false
       matrix:
@@ -116,6 +115,9 @@ jobs:
     name: Tauri (${{ matrix.os }})
     needs: [build-core]
     runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: Tibia/silnik/launcher-rust
     strategy:
       fail-fast: false
       matrix:
@@ -180,6 +182,9 @@ jobs:
     name: Helper (${{ matrix.os }})
     needs: [build-core]
     runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: Tibia/silnik/launcher-rust
     strategy:
       fail-fast: false
       matrix:

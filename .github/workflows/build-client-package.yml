@@ -44,8 +44,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
 
       - name: Export GitHub Actions cache variables
         uses: actions/github-script@v7
@@ -380,7 +378,7 @@ jobs:
           mkdir -p "$PKG"
 
           # ── 1. Compiled binary ──
-          cp build/otclient "$PKG/" || { echo "ERROR: otclient binary not found"; exit 1; }
+          cp build/otclient "$PKG/" 2>/dev/null || cp otclient "$PKG/" 2>/dev/null || { echo "ERROR: otclient binary not found in build/ or source dir"; exit 1; }
           chmod +x "$PKG/otclient"
 
           # ── 2. Shared libraries (if any from build) ──

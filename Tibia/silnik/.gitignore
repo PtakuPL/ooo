@@ -92,3 +92,7 @@ include-what-you-use/
 
 # Guardian status push repo (embedded git)
 canary_test/.guardian_status_push_repo/
+
+# Oryginalne repozytoria (embedded git repos)
+canary_test/oryginall/canary-serwer/
+canary_test/oryginall/otclient/

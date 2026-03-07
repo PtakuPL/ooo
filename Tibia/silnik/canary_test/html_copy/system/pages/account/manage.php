@@ -13,6 +13,7 @@ defined('MYAAC') or die('Direct access not allowed!');
 $title = 'Account Management';
 require __DIR__ . '/login.php';
 require __DIR__ . '/base.php';
+require __DIR__ . '/global-profile.php';
 
 if(!$logged) {
 	return;
@@ -97,6 +98,94 @@ $players = array();
 $account_players = $account_logged->getPlayersList();
 $account_players->orderBy('id');
 
+$worldLabels = [
+	'classic74' => 'Classic 7.4',
+	'modern' => 'Modern',
+	'unknown' => 'Unknown',
+];
+if (isset($config['worlds'][0])) {
+	$worldLabels['classic74'] = (string)$config['worlds'][0];
+}
+if (isset($config['worlds'][1])) {
+	$worldLabels['modern'] = (string)$config['worlds'][1];
+}
+
+$charactersByWorld = [
+	'classic74' => [],
+	'modern' => [],
+	'unknown' => [],
+];
+foreach ($account_players as $player) {
+	$worldId = 0;
+	try {
+		$worldId = (int)$player->getWorldId();
+	} catch (\Throwable $e) {
+		$worldId = (int)$player->getCustomField('world');
+	}
+	$entry = [
+		'name' => $player->getName(),
+		'level' => (int)$player->getLevel(),
+		'vocation' => (string)($config['vocations'][$player->getVocation()] ?? $player->getVocation()),
+		'online' => $player->isOnline(),
+		'deleted' => $player->isDeleted(),
+		'editName' => urlencode($player->getName()),
+		'worldId' => $worldId,
+		'outfit' => setting('core.online_outfit') ? $player->getOutfit() : '',
+	];
+
+	if ($worldId === 0) {
+		$charactersByWorld['classic74'][] = $entry;
+	} elseif ($worldId === 1) {
+		$charactersByWorld['modern'][] = $entry;
+	} else {
+		$charactersByWorld['unknown'][] = $entry;
+	}
+}
+
+$requestedActiveMode = (string)($_GET['active_mode'] ?? $_POST['active_mode'] ?? '');
+if ($requestedActiveMode !== '') {
+	globalProfileSetActiveMode($requestedActiveMode);
+}
+$activeProfileMode = globalProfileGetActiveMode('all');
+$activeProfileLabel = globalProfileModeLabel($activeProfileMode, $worldLabels);
+
+$filteredCharacters = $charactersByWorld;
+if ($activeProfileMode === 'classic74') {
+	$filteredCharacters['modern'] = [];
+	$filteredCharacters['unknown'] = [];
+} elseif ($activeProfileMode === 'modern') {
+	$filteredCharacters['classic74'] = [];
+	$filteredCharacters['unknown'] = [];
+}
+
+// Server status info for account page
+require_once SYSTEM . 'database_modern.php';
+$serverStatus = [
+	'classic74' => ['online' => false, 'players' => 0],
+	'modern' => ['online' => false, 'players' => 0],
+];
+// Classic server — check players_online table
+try {
+	$classicOnline = $db->query('SELECT COUNT(*) AS cnt FROM `players_online`')->fetch();
+	$serverStatus['classic74']['online'] = true;
+	$serverStatus['classic74']['players'] = (int)($classicOnline['cnt'] ?? 0);
+} catch (\Throwable $e) {
+	$serverStatus['classic74']['online'] = false;
+}
+// Modern server
+$mDb = getModernDb();
+if ($mDb) {
+	try {
+		$stmt = $mDb->query('SELECT COUNT(*) AS cnt FROM `players_online`');
+		$serverStatus['modern']['online'] = true;
+		$serverStatus['modern']['players'] = (int)($stmt->fetchColumn() ?: 0);
+	} catch (\Throwable $e) {
+		$serverStatus['modern']['online'] = false;
+	}
+} else {
+	$serverStatus['modern']['online'] = false;
+}
+
 $twig->display('account.management.html.twig', array(
 	'welcome_message' => $welcome_message,
 	'recovery_key' => $recovery_key,
@@ -112,5 +201,11 @@ $twig->display('account.management.html.twig', array(
 	'account_rlname' => $account_rlname,
 	'account_location' => $account_location,
 	'actions' => $actions,
-	'players' => $account_players
+	'players' => $account_players,
+	'characters_by_world' => $filteredCharacters,
+	'characters_by_world_raw' => $charactersByWorld,
+	'world_labels' => $worldLabels,
+	'active_profile_mode' => $activeProfileMode,
+	'active_profile_label' => $activeProfileLabel,
+	'server_status' => $serverStatus,
 ));

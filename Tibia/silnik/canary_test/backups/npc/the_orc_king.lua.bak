@@ -55,7 +55,7 @@ local function greetCallback(npc, creature)
 		for i = 1, #creatures do
 			Game.createMonster(creatures[i], npc:getPosition())
 		end
-		npcHandler:say("Arrrrgh! A dirty paleskin! To me my children! Kill them my guards!", npc, creature, 1000, TALKTYPE_SAY)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.the_orc_king.say_1")
 		return false
 	else
 		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.the_orc_king.greet_msg_1")

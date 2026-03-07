@@ -53,6 +53,7 @@ if(!empty($login_account) && !empty($login_password))
 			session_regenerate_id();
 			setSession('account', $account_logged->getId());
 			setSession('password', encrypt((USE_ACCOUNT_SALT ? $account_logged->getCustomField('salt') : '') . $login_password));
+			setSession('global_profile_mode', 'all');
 			if($remember_me) {
 				setSession('remember_me', true);
 			}
@@ -69,6 +70,16 @@ if(!empty($login_account) && !empty($login_password))
 			}
 			else {
 				$account_logged->setCustomField('web_lastlogin', time());
+
+				// Cross-site sync: set RedDAXE session keys so the user
+				// is also logged in on RedDAXE.pl
+				$_SESSION['account']['user'] = [
+					'id' => $account_logged->getId(),
+					'name' => $account_logged->getName(),
+					'email' => $account_logged->getEMail(),
+				];
+				$_SESSION['account']['sessionKey'] = bin2hex(random_bytes(16));
+				$_SESSION['login_timeout'] = time();
 			}
 
 			$hooks->trigger(HOOK_LOGIN, array('account' => $account_logged, 'password' => $login_password, 'remember_me' => $remember_me));

@@ -112,19 +112,19 @@ local function creatureSayCallback(npc, creature, type, message)
 
 				player:teleportTo({ x = 32478, y = 31905, z = 1 })
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_9")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_14")
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_10")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_15")
 				player:teleportTo({ x = 32725, y = 31589, z = 12 })
 				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			end
 		end
 	elseif npcHandler:getTopic(playerId) == 5 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_11")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_16")
 		player:teleportTo({ x = 32725, y = 31589, z = 12 })
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 	else
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_12")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.riddler.say_17")
 		player:teleportTo({ x = 32725, y = 31589, z = 12 })
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 	end

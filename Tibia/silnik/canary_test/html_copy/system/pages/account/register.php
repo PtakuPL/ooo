@@ -30,7 +30,7 @@ if(isset($_POST['registeraccountsave']) && $_POST['registeraccountsave'] == "1")
 			$new_rec_key = generateRandomString(10, false, true, true);
 
 			$account_logged->setCustomField("key", $new_rec_key);
-			$account_logged->logAction('Generated recovery key.');
+			$account_logged->logAction(__('log_recovery_key_generated'));
 			$message = '';
 
 			if(setting('core.mail_enabled') && setting('core.mail_send_when_generate_reckey'))

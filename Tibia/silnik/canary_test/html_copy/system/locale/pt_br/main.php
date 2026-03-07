@@ -56,7 +56,7 @@ $locale['back'] = 'Voltar';
 $locale['change_password'] = 'Alterar Senha';
 $locale['old_password'] = 'Senha Antiga:';
 $locale['new_password'] = 'Nova Senha:';
-?>// Menu items
+// Menu items
 $locale['menu_latest_news'] = 'Últimas Notícias';
 $locale['menu_news_archive'] = 'Arquivo de Notícias';
 $locale['menu_changelog'] = 'Registro de Mudanças';

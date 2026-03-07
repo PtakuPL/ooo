@@ -45,7 +45,7 @@ namespace stdext
     const char* demangle_name(const char* name)
     {
         static constexpr unsigned BufferSize = 1024;
-        static char Buffer[BufferSize] = {};
+        thread_local char Buffer[BufferSize] = {};
 
 #ifdef _MSC_VER
         const int written = UnDecorateSymbolName(name, Buffer, BufferSize - 1, UNDNAME_COMPLETE);

@@ -6,175 +6,69 @@
 
 ---
 
-## Update wykonania (2026-02-14 18:30 UTC) — grammar audit + per-file drift + inline dict removal + GT heuristics S25-S26
+## Update wykonania (2026-02-19 23:40 UTC) — plan zwiększenia throughput tłumaczeń/h (bez zmian architektury)
 
-## Update wykonania (2026-02-15 14:45 UTC) — WQ-FAST-7 probe + webhook scope decision
+Cel tej aktualizacji:
+- zwiększyć liczbę realnie przetłumaczonych kluczy na godzinę,
+- bez obniżania jakości i bez regresji guardów,
+- najpierw przez tuning runtime/env (bez refaktoru pipeline).
 
-### Zakres (decyzja właściciela)
-- `STATUSD_WEBHOOK_URL` → **DE-SCOPED** (nie wdrażamy webhooka w tym etapie).
-- Wszystkie historyczne wpisy TODO o konfiguracji webhooka traktować jako archiwalne.
+### Pakiet zadań THROUGHPUT (P0/P1)
 
-### WQ-FAST-7 (status bieżący)
-- Wykonano serię wymuszeń `AUTO:<lang>:<json>:1:ONCE` i zebrano próbki runtime.
-- Aktualny wynik formalny: **OPEN / NOT MET**.
-  - `forced_command_fast`: `status=sla_elevated`
-  - `p95_roundtrip` i `p95_pending` nadal powyżej celu SLA w oknie analizowanym przez doctor.
-- Dodatkowo usunięto runtime crash path w workerze (`NameError: _gt_rate_limited`) przez inicjalizację flagi poza warunkowym blokiem GT.
+- [ ] `WQ-THROUGHPUT-1 (P0)`: Ustawić i utrwalić profil runtime „GT throughput baseline”
+  - `USE_GOOGLE_TRANSLATE=true` jako tryb domyślny profilu tłumaczeń.
+  - Potwierdzić, że worker nie startuje w trybie fallback-only (bez GT) w cyklu nocnym.
+  - Dodać check operacyjny w statusie: czy GT jest aktywny (`gt_translated > 0` w oknie).
+  - **Kryterium sukcesu:** w oknie 60 min występują cykle z `gt_translated>0` i brak spike `gt_guard_fail`.
 
-### Następny krok
-- Kontynuować zbieranie próbek w stabilnej epoce runtime i domknąć `WQ-FAST-7` dopiero po spełnieniu:
-  - `p95 pending_age<=15s`
-  - `p95 roundtrip<=45s`
-  - min. 20 próbek w docelowym oknie.
+- [ ] `WQ-THROUGHPUT-2 (P0)`: Zablokować limit tłumaczeń w paśmie „fast-lane safe”
+  - Ustawić `TRANSLATE_LIMIT` operacyjnie na zakres `25–30` (domyślnie `30`).
+  - Nie przekraczać `30` bez testu A/B, bo fast-lane może zostać wyłączony i throughput netto spada.
+  - Dodać checklistę restartową: po zmianie limitu sprawdzić 3 kolejne cykle (`translated`, `guard_fail`, `strict_skipped_done`).
+  - **Kryterium sukcesu:** `net_effective_translated/h` wyższy niż baseline przy stabilnym `guard_fail_rate`.
 
-## Update wykonania (2026-02-14 18:30 UTC) — grammar audit + per-file drift + inline dict removal + GT heuristics S25-S26
+- [ ] `WQ-THROUGHPUT-3 (P0)`: Strojenie GT batch/rate-limit krokowe (bez skoków)
+  - Start: `GT_BATCH_SIZE=50`, `GT_DELAY=1.5`.
+  - Kroki tuningowe:
+    - Krok A: `GT_BATCH_SIZE=60`, `GT_DELAY=1.0`
+    - Krok B: `GT_BATCH_SIZE=70`, `GT_DELAY=0.6`
+  - Każdy krok utrzymać min. 30–60 min i porównać KPI do poprzedniego.
+  - Natychmiastowy rollback kroku, jeśli rośnie `guard_fail_rate` lub `gt_guard_fail` (trend >20% względem poprzedniego kroku).
+  - **Kryterium sukcesu:** dodatni trend `translated/h` i brak trwałego wzrostu odrzuceń.
 
-### WQ-QUALITY-55-1: Grammar/style audit (DONE)
-- Zaimplementowano `run_grammar_audit()` w statusd — 12 heurystyk agnostycznych językowo (G1-G12):
-  - G1: placeholder_mismatch (critical), G2: format_token_mismatch (warning), G3: html_tag_mismatch (warning),
-    G4: number_drift (warning), G5: length_anomaly (info), G6: punctuation_missing (info),
-    G7: bracket_mismatch (warning), G8: repeated_words (warning), G9: truncated (warning),
-    G10: mixed_language (info), G11: double_spaces (info), G12: artifact_token (critical)
-- Integracja z daemonem (interval gate 3600s), CLI `--grammar-audit`, artefakty JSON/JSONL.
-- Wynik: **886 issues (42 critical, 324 warning, 520 info)** w 148 895 genuine entries (52 langs).
-- Naprawiono false positive G8 `repeated_words`: teraz pomija jeśli EN ma ten sam wzorzec (np. "Six. Six. Six.").
+- [ ] `WQ-THROUGHPUT-4 (P1)`: Ograniczyć koszt odrzuceń przez poprawę jakości wejścia
+  - Cotygodniowo (lub co noc przy dużym ruchu) zasilać `i18n/overrides/reviewed/{lang}.json` kluczami o wysokiej częstotliwości odrzuceń.
+  - Priorytet dla kluczy, które powtarzają `CRITICAL/HIGH` w `suspicious_rejected.jsonl`.
+  - Traktować poprawki reviewed jako „throughput multiplier” (mniej retry i mniej guard_fail).
+  - **Kryterium sukcesu:** spadek `suspicious_rejected` dla top-50 problematycznych kluczy.
 
-### H5: Per-file reconcile backfill (DONE)
-- Rozszerzono `run_registry_reconcile()` o per-file drift: `registry_keys`, `drift`, `drift_pct` per plik.
-- Dodano `per_file_drift_summary`: `files_with_drift`, `total_drift_keys`, `top_drifters[:15]`.
-- Wynik: 31 plików z driftem, 53 586 kluczy drift łącznie.
+- [ ] `WQ-THROUGHPUT-5 (P1)`: Priorytetyzacja kolejki pod realny zysk tłumaczeń
+  - Preferować pliki/kategorie z większą szansą realnego postępu (`description`/dłuższe treści) nad krótkimi nazwami własnymi.
+  - Dla nazw własnych utrzymać ścieżkę review/whitelist, żeby nie marnować batchy GT na EN-identical.
+  - W telemetry oznaczać, które kategorie generują najwyższy udział `translated=0` przy wysokim koszcie cyklu.
+  - **Kryterium sukcesu:** większy udział cykli z dodatnim `translated` w tej samej jednostce czasu.
 
-### Inline dict removal (DONE)
-- Usunięto inline `SIMPLE_TRANSLATIONS` (1 404 linie) i `WORD_TRANSLATIONS` (704 linie) z workera.
-- Kanoniczne źródło: `simple_translations_base.json` + `word_translations_base.json` (git-tracked).
-- Naprawiono pre-existing bug w `WORD_TRANSLATIONS_ACTIVE` (zepsuta dict comprehension).
-- Worker zmniejszony: 23 535 → 21 432 linii (−2 103 linii).
+- [ ] `WQ-THROUGHPUT-6 (P0)`: Ujednolicić KPI wydajności na metryce netto
+  - Metryka główna (operatorska):
+    - `effective_share = translated / (translated + guard_fail + strict_skipped_done)`
+    - monitorowana razem z `net_effective_translated/h`.
+  - Dodać monitoring trendu 1h/6h dla `effective_share` i alert przy trwałym spadku.
+  - Decyzje tuningowe (batch/delay/limit) podejmować wyłącznie na metryce netto, nie na samym `translated`.
+  - **Kryterium sukcesu:** stabilny wzrost `effective_share` i `net_effective_translated/h` przez kolejne okna.
 
-### GT lexical heuristics S25-S26 (DONE)
-- S25: `code_css_translated` — wykrywa przetłumaczony CSS/kod (`{display: none}` → `{display: aucun}`). CRITICAL.
-- S26: `game_term_preservation` — wykrywa usunięcie kluczowych terminów gry (mana, hp, exp, npc, etc.) w kontekście technicznym. MEDIUM.
-- Istniejące S1-S24 + nowe S25-S26 = **26 heurystyk** w `detect_suspicious()`.
+### Plan wdrożenia etapami (operacyjnie)
 
-### Deferred
-- WQ-FAST-7: SLA 24h — 0 samples post-baseline, potrzebna akumulacja forced commands.
+1. **Etap A (P0, dzień 1):** wdrożyć `WQ-THROUGHPUT-1/2/6` i zebrać baseline 1h + 6h.
+2. **Etap B (P0, dzień 1–2):** wdrożyć `WQ-THROUGHPUT-3` w krokach A/B z rollbackiem progowym.
+3. **Etap C (P1, dzień 2+):** wdrożyć `WQ-THROUGHPUT-4/5` dla trwałego obniżenia odrzuceń i stabilizacji zysku/h.
 
-## Update wykonania (2026-02-14 17:10 UTC) — C9 quality gate exempt + H12 external dicts
+### Guardrails i rollback
 
-Zrealizowane pełne zadania:
-
-- ✅ **C9: Quality gate proper nouns (`identical_to_en_exempt`)**
-  - Dodano `_is_nontranslatable_tier()` do `validate_tier_quality()`.
-  - Exempt entries (URLs, identyfikatory, markup, proper nouns) liczone jako „effectively translated".
-  - Nowe pola w `tier_quality_gate.json`: `coverage_genuine`, `identical_to_en_exempt`, `exempt` per lang.
-  - Tier gate używa `coverage` (z exempt) zamiast czystego genuine — nie penalizuje za nietłumaczalne wpisy.
-
-- ✅ **H12: External SIMPLE_TRANSLATIONS i WORD_TRANSLATIONS do JSON**
-  - Wyeksportowano inline `SIMPLE_TRANSLATIONS` (26 langs, 1289 entries) → `i18n/status/simple_translations_base.json`.
-  - Wyeksportowano inline `WORD_TRANSLATIONS` (2 langs, 676 entries) → `i18n/status/word_translations_base.json`.
-  - 3-warstwowy merge: `base JSON` → `inline fallback` → `external override`.
-  - PL/ES protection zachowane (inline dict ma priorytet nad external).
-  - Inline dicts nadal obecne jako fallback; base JSON jest kanonicznym źródłem do edycji.
-
-Nowe TODO:
-- ⬜ Usunąć inline SIMPLE_TRANSLATIONS z worker-a (po weryfikacji stabilności ładowania z JSON).
-
-## Update wykonania (2026-02-14 16:50 UTC) — C3/C4/C5/C6/C7 + SLA verification + PYEPOCH fix
-
-Zrealizowane pełne zadania:
-
-- ✅ **Fix PYEPOCH Python syntax error w statusd (blocker)**
-  - Linia `state["bootstrap_first_observation"]` była rozdzielona na dwie linie w heredoc.
-  - Naprawiono: cała instrukcja w jednej linii, statusd restart OK (PID 2393788).
-
-- ✅ **C3: Webhook reason code `worker_translation_contract_broken`**
-  - Dodano dedykowany sygnał w `run_webhook_alerting()` dla `WORKER_TRANSLATION_CONTRACT_BROKEN` i `_WARNING`.
-  - Dodano reason_code do `reason_rank`: `worker_translation_contract_broken=6`, `_warning=3`.
-  - Doctor już wykrywa kontrakt (istniejący check), teraz alert jest propagowany do webhooka.
-
-- ✅ **C4+C5: RU/RO priorytetyzacja via multilang wave**
-  - Dodano `ru ro` do `MULTILANG_WAVE_LANGS` (było: `lt cs el it`, teraz: `lt cs el it ru ro`).
-  - RU/RO są już w TIER2 — wave daje ekstra boost z domain-floor gating.
-  - Stan: RU items=57%, achievements=84%, ale npc=0.67%. RO items=35%, npc=0.21%.
-  - Wave wymusi dispatch do npc.json (lowest coverage < 25% floor).
-
-- ✅ **C6: Diagnostyka [EN]-prefix FR/RO**
-  - FR: 34,327 [EN]-prefix (64%), RO: 44,197 (82%).
-  - Wniosek: to normalne pending tłumaczeń, nie bug. FR jest w TIER2 (50 cykli dispatched).
-  - RO dodane do wave — powinno przyspieszyć tłumaczenie.
-  - Brak dowodów na GT failure czy validation reject.
-
-- ✅ **C7: Diagnostyka PL coverage (44% genuine)**
-  - PL: 23,610 genuine (44%), 28,053 [EN]-prefix, 1,914 identical_to_en.
-  - PL w TIER1 z wagą 4x (najwyższy priorytet), 2432 cykli dispatched.
-  - Brak blokady — dispatch działa poprawnie, potrzeba czasu na przerobienie 28K backlogu.
-  - ES dla porównania: 39,323 genuine (73.4%).
-
-- ⏳ **WQ-FAST-7: SLA 24h — nie do potwierdzenia jeszcze**
-  - Operational window (2h od baseline) nie ma jeszcze próbek.
-  - Ostatnia próbka (sprzed baseline): `pending_age=13s`, `roundtrip=15s` — SLA met.
-  - Full window 24h: p95 pending_age=81s, p95 roundtrip=172s — FAIL (includes pre-fix samples).
-  - Wymaga: min 20 próbek w oknie post-baseline do formalnego audytu.
-
-Nowe problemy/TODO:
-- ⬜ Czekać na 20+ próbek forced command w operational window, potem potwierdzić SLA formalnie (WQ-FAST-7).
-- ⬜ C9: Quality gate proper nouns `identical_to_en_exempt`.
-- ⬜ H12: External SIMPLE_TRANSLATIONS do JSON.
-- ⬜ WQ-QUALITY-55-1: Automatyczny audyt gramatyczno-stylistyczny.
-- ⬜ H5: Reconcile backfill per-file.
-- ⬜ Skonfigurować `STATUSD_WEBHOOK_URL`.
-
-## Update wykonania (2026-02-14 15:40 UTC) — orkiestracja systemd + multilang wave + domain audit + bootstrap epoch
-
-Zrealizowane pełne zadania:
-
-- ✅ **C1: Rozwiązanie konfliktu orkiestracji systemd vs start_all**
-  - Decyzja: **systemd** jako kanoniczne źródło orkiestracji dla guardian **i** statusd.
-  - Dodano `i18n-statusd.service` (systemd user unit) z `Restart=always`, `RestartSec=10`.
-  - Dodano `Environment=GUARDIAN_START_SOURCE=service` do `i18n-guardian.service`.
-  - Oba serwisy: `enabled`, `active (running)`.
-  - Rozwiązano problem z wcześniejszym brakiem statusd po SIGKILL — teraz systemd auto-restartuje.
-
-- ✅ **Multilang wave `lt_cs_el_it` z domain floor (H1+H2)**
-  - Dodano konfigurację:
-    - `MULTILANG_WAVE_ENABLED=true`
-    - `MULTILANG_WAVE_LANGS=lt cs el it`
-    - `MULTILANG_WAVE_DOMAIN_ORDER=items.json npc.json quests.json`
-    - `MULTILANG_WAVE_DOMAIN_FLOOR_PCT=25` (hard floor: min 25% genuine coverage w domenie zanim przejdzie do następnej)
-    - `MULTILANG_WAVE_WEIGHT=2` (boost weight)
-  - Implementacja w `select_auto_translate_target_strict()`:
-    - Oblicza genuine coverage per lang/domain dla wave langs.
-    - Wyznacza dozwoloną domenę: pierwsza z coverage < floor.
-    - Wstawia wave candidates do rotacji z boostem co `WEIGHT+1` pozycji.
-  - Telemetria: `translation_dispatch_state.json` ma nowy blok `multilang_wave` z `gated_langs`, `domain_coverages`, wave status.
-  - Aktualny stan wave langs w items.json: cs=0.79%, el=1.32%, it=1.24%, lt=2.18% — wszystkie poniżej floor 25%.
-
-- ✅ **Report operacyjny `translation_domain_audit_latest.json` (H3)**
-  - Nowy moduł `run_domain_audit()` w `i18n-statusd.sh`.
-  - Skanuje per-lang/per-domain: genuine, en_copy, [EN]-prefix, missing, placeholder_mismatch.
-  - Artefakt: `i18n/status/translation_domain_audit_latest.json`.
-  - Wynik: 1976 entries (52 langs × 38 domen), z podsumowaniem per domena.
-  - Dostępny z CLI: `bash i18n-statusd.sh --domain-audit`.
-  - Automatycznie wykonywany w każdym cyklu daemon.
-
-- ✅ **WQ-FAST-11: Bootstrap auto-baseline dla pierwszej obserwacji epoki**
-  - Feature-flag: `bootstrap_first_observation=true` w `statusd_thresholds.json` i defaults statusd.
-  - Zmiana logiki: przy pierwszym wykryciu epoki (`first_observation_no_baseline`) LUB przy braku baseline w stabilnej epoce (`epoch_stable_no_baseline`) — jeśli flag=true, automatycznie ustawia baseline.
-  - `baseline_source`: `auto_bootstrap_first_observation` / `auto_bootstrap_stable_no_baseline`.
-  - Eliminuje wpływ historycznych próbek po pierwszym uruchomieniu mechanizmu.
-
-Nowe problemy/TODO wykryte:
-- ⬜ Skonfigurować `STATUSD_WEBHOOK_URL` (nadal `WEBHOOK_NOT_CONFIGURED`).
-- ⬜ Dodać webhook reason code `WORKER_TRANSLATION_CONTRACT_BROKEN` (C3).
-- ⬜ Priorytetyzować RU translations (C4: 98-100% identical w NPC/questlog/books/monsters).
-- ⬜ Priorytetyzować RO translations (C5: 0 genuine w 4/6 domen) — dodać RO do wave lub TIER2 boost.
-- ⬜ Fix [EN]-prefix rework dla FR (6,083) i RO (9,751) — zbadać czy GT failure czy validation reject (C6).
-- ⬜ PL coverage < 80% (70.7%; target 80%) — upewnić się że PL dispatch nie jest blokowany (C7).
-- ⬜ Potwierdzić SLA 24h `p95 pending_age<=15s`, `p95 roundtrip<=45s` (WQ-FAST-7).
-- ⬜ Automatyczny audyt gramatyczno-stylistyczny 55 języków per domena (WQ-QUALITY-55-1).
-- ⬜ Rozważyć etap 2 reconcile: backfill per-file (H5).
-- ⬜ External SIMPLE_TRANSLATIONS do JSON (H12).
-- ⬜ Quality gate proper nouns `identical_to_en_exempt` jako osobny licznik rolloutu (C9).
-- ⬜ Wzmocnić heurystyki leksykalne pod tłumaczenia GT (frazy wymagające ręcznego review).
+- Każdy tuning wykonujemy pojedynczą zmianą parametru (single-variable change).
+- Jeśli po zmianie występuje degradacja jakości (wzrost `guard_fail`/`gt_guard_fail`) przez >=2 kolejne okna pomiarowe:
+  - wrócić do poprzedniego kroku,
+  - oznaczyć krok jako `rejected-by-quality`,
+  - nie łączyć kolejnej zmiany zanim trend się nie ustabilizuje.
 
 ## Update wykonania (2026-02-14 11:22 UTC) — status auto-refresh + kontrakt tłumaczeń + audyt LT/CS/EL/IT
 

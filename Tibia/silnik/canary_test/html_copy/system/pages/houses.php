@@ -10,11 +10,14 @@
  * @link      https://my-aac.org
  */
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Houses';
+require_once SYSTEM . 'database_modern.php';
+$title = __('menu_houses');
+
+$housesServerMode = $_SESSION['server_mode'] ?? 'all';
 
 $errors = array();
 if(!$db->hasColumn('houses', 'name')) {
-	$errors[] = 'Houses list is not available on this server.';
+	$errors[] = 'Lista domów nie jest dostępna na tym serwerze.';
 
 	$twig->display('houses.html.twig', array(
 		'errors' => $errors
@@ -53,9 +56,9 @@ if(isset($_REQUEST['name']))
 		$bedsMessage = null;
 		$houseBeds = $house['beds'];
 		if($houseBeds > 0)
-			$bedsMessage = 'House have ' . (isset($beds[$houseBeds]) ? $beds[$houseBeds] : $houseBeds) . ' bed' . ($houseBeds > 1 ? 's' : '');
+			$bedsMessage = 'Dom ma ' . (isset($beds[$houseBeds]) ? $beds[$houseBeds] : $houseBeds) . ' łóżk' . ($houseBeds > 1 ? 'a' : 'o');
 		else
-			$bedsMessage = 'This house dont have any beds';
+			$bedsMessage = 'Ten dom nie ma żadnych łóżek';
 
 		$houseOwner = $house['owner'];
 		if($houseOwner > 0)
@@ -86,12 +89,12 @@ if(isset($_REQUEST['name']))
 						$who = $sexs[$player->getSex()];
 					}
 				}
-				$owner .= ' ' . $who . ' has paid the rent until ' . date("M d Y, H:i:s", $house['paid']) . ' CEST.';
+				$owner .= ' ' . $who . ' opłacił czynsz do ' . date("M d Y, H:i:s", $house['paid']) . ' CEST.';
 			}
 		}
 	}
 	else
-		$errors[] =  'House with name ' . $houseName . ' does not exists.';
+		$errors[] =  'Dom o nazwie ' . $houseName . ' nie istnieje.';
 
 	$twig->display('houses.view.html.twig', array(
 		'errors' => $errors,
@@ -167,27 +170,67 @@ if(isset($_POST['town']) && isset($_POST['state']) && isset($_POST['order']) && 
 
 	$hasTilesColumn = $db->hasColumn('houses', 'tiles');
 
+	// If modern server mode, also fetch houses from canary_modern
+	$modernHousesResults = [];
+	if ($housesServerMode === 'modern' || $housesServerMode === 'all') {
+		$mDb = getModernDb();
+		if ($mDb) {
+			$mTown = 'town_id'; // canary_modern uses town_id
+			$mWhereby = '`' . $mTown . '` = ' . (int)$_POST['town'];
+			if (!empty($state)) {
+				$mWhereby .= ' AND `owner` ' . ($state == 'free' ? '' : '!') . '= 0';
+			}
+			$mStmt = $mDb->query('SELECT * FROM `houses` WHERE ' . $mWhereby . ' ORDER BY ' . $orderby);
+			if ($mStmt) {
+				$mPlayersStmt = $mDb->query("SELECT houses.id AS houseid, players.name AS ownername FROM houses, players, accounts WHERE players.id = houses.owner AND accounts.id = players.account_id");
+				$mPlayers = [];
+				if ($mPlayersStmt) {
+					foreach ($mPlayersStmt->fetchAll(PDO::FETCH_ASSOC) as $mp) {
+						$mPlayers[$mp['houseid']] = ['name' => $mp['ownername']];
+					}
+				}
+				foreach ($mStmt->fetchAll(PDO::FETCH_ASSOC) as $mh) {
+					$modernHousesResults[] = ['house' => $mh, 'players' => $mPlayers];
+				}
+			}
+		}
+	}
+
 	$houses = array();
-	foreach($houses_info->fetchAll() as $house)
-	{
-		$owner = isset($players[$house['id']]) ? $players[$house['id']] : array();
 
-		$houseRent = null;
-		if($db->hasColumn('houses', 'guild') && $house['guild'] == 1 && $house['owner'] != 0)
+	// Classic houses (skip if server_mode is modern-only)
+	if ($housesServerMode !== 'modern') {
+		foreach($houses_info->fetchAll() as $house)
 		{
-			$guild = new OTS_Guild();
-			$guild->load($house['owner']);
-			$houseRent = 'Rented by ' . getGuildLink($guild->getName());
-		}
-		else
-		{
-			if(!empty($owner['name']))
-				$houseRent = 'Rented by ' . getPlayerLink($owner['name']);
+			$owner = isset($players[$house['id']]) ? $players[$house['id']] : array();
+
+			$houseRent = null;
+			if($db->hasColumn('houses', 'guild') && $house['guild'] == 1 && $house['owner'] != 0)
+			{
+				$guild = new OTS_Guild();
+				$guild->load($house['owner']);
+				$houseRent = 'Wynajęty przez ' . getGuildLink($guild->getName());
+			}
 			else
-				$houseRent = 'Free';
-		}
+			{
+				if(!empty($owner['name']))
+					$houseRent = 'Wynajęty przez ' . getPlayerLink($owner['name']);
+				else
+					$houseRent = 'Wolny';
+			}
 
-		$houses[] = array('owner' => $owner, 'name' => $house['name'], 'size' => ($hasTilesColumn ? $house['tiles'] : $house['size']), 'rent' => $house['rent'], 'rentedBy' => $houseRent, 'link' => getHouseLink($house['name'], false));
+			$houses[] = array('owner' => $owner, 'name' => $house['name'], 'size' => ($hasTilesColumn ? $house['tiles'] : $house['size']), 'rent' => $house['rent'], 'rentedBy' => $houseRent, 'link' => getHouseLink($house['name'], false), 'server' => 'Classic 7.4');
+		}
+	}
+
+	// Modern houses
+	foreach ($modernHousesResults as $mhr) {
+		$mh = $mhr['house'];
+		$mPlayers = $mhr['players'];
+		$owner = isset($mPlayers[$mh['id']]) ? $mPlayers[$mh['id']] : [];
+		$houseRent = !empty($owner['name']) ? 'Wynajęty przez ' . getPlayerLink($owner['name']) : 'Wolny';
+		$houseSize = isset($mh['tiles']) ? $mh['tiles'] : (isset($mh['size']) ? $mh['size'] : 0);
+		$houses[] = ['owner' => $owner, 'name' => $mh['name'], 'size' => $houseSize, 'rent' => $mh['rent'] ?? 0, 'rentedBy' => $houseRent, 'link' => getHouseLink($mh['name'], false), 'server' => 'Modern'];
 	}
 
 	$housesSearch = true;
@@ -198,7 +241,7 @@ $twig->display('houses.html.twig', array(
 	'state' => $state,
 	'order' => $order,
 	'type' => $type,
-	'houseType' => $type == 'guildhalls' ? 'Guildhalls' : 'Houses and Flats',
+	'houseType' => $type == 'guildhalls' ? 'Hale gildii' : 'Domy i mieszkania',
 	'townName' => isset($townName) ? $townName : null,
 	'townId' => isset($_POST['town']) ? $_POST['town'] : null,
 	'guild' => $guild,

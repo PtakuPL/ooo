@@ -2454,5 +2454,93 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T07:54:34.868429Z"
+  },
+  "npc.a_ghostly_sage.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Довиждане.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:37.044899Z"
+  },
+  "npc.ahmet.say_5": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Нямаш достатъчно пари.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:37.079955Z"
+  },
+  "npc.aldo.say_4": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Заповядай.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:37.090030Z"
+  },
+  "npc.alesar.say_5": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Тогава не.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:37.091819Z"
+  },
+  "npc.alesar_functions.say_3": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Тогава не.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:37.093549Z"
+  },
+  "npc.alia.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Няма проблем.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:37.094607Z"
+  },
+  "npc.alia.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Няма проблем.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:37.096091Z"
+  },
+  "npc.alkestios.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Тогава не.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:37.097535Z"
+  },
+  "npc.altar.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Чао.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:37.099382Z"
+  },
+  "npc.alyxo.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как мога да ти помогна?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:37.100408Z"
+  },
+  "npc.alyxo.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Как мога да ти помогна?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:37.101462Z"
   }
 }

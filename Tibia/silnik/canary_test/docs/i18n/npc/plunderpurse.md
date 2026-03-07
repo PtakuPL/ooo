@@ -1,7 +1,7 @@
 # NPC: plunderpurse
 
-**Plik:** 
-**Data migracji:** 2025-12-20 20:25
+**Plik:** `data-otservbr-global/npc/plunderpurse.lua`
+**Data migracji:** 2026-02-23 12:48
 **Liczba tekstów:** 0
 
 ## Klucze i18n

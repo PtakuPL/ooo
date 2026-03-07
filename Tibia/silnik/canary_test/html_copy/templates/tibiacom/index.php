@@ -1,6 +1,16 @@
 <?php
 defined('MYAAC') or die('Direct access not allowed!');
 
+$requestPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
+if (is_string($requestPath) && in_array($requestPath, ['/account', '/index.php/account/manage', '/index.php/account/login', '/index.php/account/logout'], true)) {
+	header('Location: ' . BASE_URL . '?subtopic=accountmanagement', true, 302);
+	exit;
+}
+if (is_string($requestPath) && in_array($requestPath, ['/index.php/account/create', '/account/create'], true)) {
+	header('Location: ' . BASE_URL . 'reddaxe/account-create.php?source=tibiawww', true, 302);
+	exit;
+}
+
 if(isset($config['boxes']))
 	$config['boxes'] = explode(",", $config['boxes']);
 ?>
@@ -9,9 +19,9 @@ if(isset($config['boxes']))
 	<?php echo template_place_holder('head_start'); ?>
 	<link rel="shortcut icon" href="<?php echo $template_path; ?>/images/favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="<?php echo $template_path; ?>/images/favicon.ico" type="image/x-icon" />
-	<link href="<?php echo $template_path; ?>/basic.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo $template_path; ?>/basic.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="tools/basic.js"></script>
-	<script src="/resources/i18n/i18n.js" defer></script>
+	<script src="/resources/i18n/i18n.js?v=<?php echo @filemtime(BASE . 'resources/i18n/i18n.js'); ?>" defer></script>
 	<script type="text/javascript" src="<?php echo $template_path; ?>/ticker.js"></script>
 
 	<?php if(!empty($config['network_twitter'])): ?>
@@ -23,8 +33,15 @@ if(isset($config['boxes']))
 	<link href="<?php echo $template_path; ?>/css/facebook.css" rel="stylesheet" type="text/css">
 	<?php endif; ?>
 
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<?php $imgVer = '?v=' . filemtime(__DIR__ . '/basic.css'); ?>
+
 	<script type="text/javascript">
 		var menus = '';
+		var IMGVER = '<?php echo $imgVer; ?>';
 		var loginStatus="<?php echo ($logged ? 'true' : 'false'); ?>";
 		<?php
 			if(PAGE !== 'news') {
@@ -66,54 +83,30 @@ if(isset($config['boxes']))
 		}
 
 		function InitializePage() {
-		  LoadLoginBox();
+		  BustImageCache();
 		  LoadMenu();
 		}
 
-		// initialisation of the loginbox status by the value of the variable 'loginStatus' which is provided to the HTML-document by PHP in the file 'header.inc'
-		function LoadLoginBox()
-		{
-		  if(loginStatus == "false") {
-			document.getElementById('LoginstatusText_1').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-you-are-not-logged-in.gif')";
-			document.getElementById('ButtonText').style.backgroundImage = "url('" + IMAGES + "/global/buttons/_sbutton_login.gif')";
-			document.getElementById('LoginstatusText_2').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account.gif')";
-			document.getElementById('LoginstatusText_2_1').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account.gif')";
-			document.getElementById('LoginstatusText_2_2').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-create-account-over.gif')";
-		  } else {
-			document.getElementById('LoginstatusText_1').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-welcome.gif')";
-			document.getElementById('ButtonText').style.backgroundImage = "url('" + IMAGES + "/global/buttons/_sbutton_myaccount.gif')";
-			document.getElementById('LoginstatusText_2').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-logout.gif')";
-			document.getElementById('LoginstatusText_2_1').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-logout.gif')";
-			document.getElementById('LoginstatusText_2_2').style.backgroundImage = "url('" + IMAGES + "/loginbox/loginbox-font-logout-over.gif')";
-		  }
+		// Force reload of all template images with cache-busting
+		function BustImageCache() {
+		  var ver = IMGVER;
+		  // Bust background-image cache for all divs with inline styles
+		  document.querySelectorAll('[style*=\"background-image\"]').forEach(function(el) {
+		    var bg = el.style.backgroundImage;
+		    if (bg && bg.indexOf('url(') !== -1 && bg.indexOf(ver) === -1) {
+		      el.style.backgroundImage = bg.replace(/\.gif\b/g, '.gif' + ver).replace(/\.png\b/g, '.png' + ver);
+		    }
+		  });
+		  // Bust img src cache
+		  document.querySelectorAll('img[src*=\"/images/\"]').forEach(function(el) {
+		    if (el.src.indexOf(ver) === -1) {
+		      el.src = el.src + ver;
+		    }
+		  });
 		}
 
-		// mouse-over and click events of the loginbox
-		function MouseOverLoginBoxText(source)
-		{
-		  source.lastChild.style.visibility = "visible";
-		  source.firstChild.style.visibility = "hidden";
-		}
-		function MouseOutLoginBoxText(source)
-		{
-		  source.firstChild.style.visibility = "visible";
-		  source.lastChild.style.visibility = "hidden";
-		}
-		function LoginButtonAction()
-		{
-		  if(loginStatus == "false") {
-			window.location = "<?php echo getLink('account/manage'); ?>";
-		  } else {
-			window.location = "<?php echo getLink('account/manage'); ?>";
-		  }
-		}
-		function LoginstatusTextAction(source) {
-		  if(loginStatus == "false") {
-			window.location = "<?php echo getLink('account/create'); ?>";
-		  } else {
-			window.location = "<?php echo getLink('account/logout'); ?>";
-		  }
-		}
+		// legacy loginbox handlers no longer used (new sidebar is static HTML/CSS)
+		function LoadLoginBox() {}
 
 		var menu = [];
 		menu[0] = {};
@@ -123,7 +116,7 @@ if(isset($config['boxes']))
 			$menuInitStr = '';
 			foreach ($config['menu_categories'] as $item) {
 				if ($item['id'] !== 'shops' || setting('core.gifts_system')) {
-					$menuInitStr .= $item['id'] . '=' . ($item['id'] === 'news' ? '1' : '0') . '&';
+					$menuInitStr .= $item['id'] . '=0&';
 				}
 			}
 		?>
@@ -131,12 +124,16 @@ if(isset($config['boxes']))
 		// load the menu and set the active submenu item by using the variable 'activeSubmenuItem'
 		function LoadMenu()
 		{
-		  document.getElementById("submenu_"+activeSubmenuItem).style.color = "white";
-		  document.getElementById("ActiveSubmenuItemIcon_"+activeSubmenuItem).style.visibility = "visible";
-		  menus = localStorage.getItem('menus');
-		  if(menus == null || menus.lastIndexOf("&") === -1) {
-			  menus = "<?= $menuInitStr ?>";
+		  var activeSubmenuNode = document.getElementById("submenu_" + activeSubmenuItem);
+		  if (activeSubmenuNode) {
+			activeSubmenuNode.style.color = "white";
 		  }
+		  var activeSubmenuIcon = document.getElementById("ActiveSubmenuItemIcon_" + activeSubmenuItem);
+		  if (activeSubmenuIcon) {
+			activeSubmenuIcon.style.visibility = "visible";
+		  }
+		  // Always start collapsed after each page refresh (requested UX behavior).
+		  menus = "<?= $menuInitStr ?>";
 		  FillMenuArray();
 		  InitializeMenu();
 		}
@@ -144,7 +141,6 @@ if(isset($config['boxes']))
 		function SaveMenu()
 		{
 		  if(unloadhelper == false) {
-			SaveMenuArray();
 			unloadhelper = true;
 		  }
 		}
@@ -186,15 +182,8 @@ if(isset($config['boxes']))
 
 		function SaveMenuArray()
 		{
-			var stringSlices = "";
-			var temp = "";
-
-			for(menuItemName in menu[0]) {
-				stringSlices = menuItemName + "=" + menu[0][menuItemName] + "&";
-				temp = temp + stringSlices;
-			}
-
-			localStorage.setItem('menus', temp);
+			// disabled on purpose: submenu state should not persist between refreshes
+			return;
 		}
 
 		// onClick open or close submenus
@@ -295,6 +284,11 @@ if(isset($config['boxes']))
 	</script>
 	<?php } ?>
   <div id="top"></div>
+  <div id="RedDAXEBar">
+    <a href="/reddaxe/" id="RedDAXEBarLink" title="RedDAXE.pl — Portal">
+      <span class="RedDAXEBarLogo">RedDAXE<span class="RedDAXEBarDot">.pl</span></span>
+    </a>
+  </div>
   <div id="ArtworkHelper" style="background-image:url(<?php echo $template_path; ?>/images/header/<?php echo $config['background_image']; ?>);" >
     <div id="Bodycontainer">
       <div id="ContentRow">
@@ -306,34 +300,51 @@ if(isset($config['boxes']))
 						<img id="Statue_2" src="<?php echo $template_path; ?>/images/header/animated-statue.gif" alt="logoartwork" data-i18n-attr="alt" data-i18n="image.alt.logoartwork" />
 						<img id="LogoLink" src="<?php echo $template_path; ?>/images/header/tibia-logo-artwork-string.gif" onClick="window.location = 'mailto:<?php echo setting('core.mail_address'); ?>';" alt="logoartwork" data-i18n-attr="alt" data-i18n="image.alt.logoartwork" />
 					</div>
-    <div id="LoginTop" style="background-image:url(<?php echo $template_path; ?>/images/general/box-top.gif)" ></div>
-    <div id="BorderLeft" class="LoginBorder" style="background-image:url(<?php echo $template_path; ?>/images/general/chain.gif)" ></div>
-
-    <div class="Loginstatus" style="background-image:url(<?php echo $template_path; ?>/images/loginbox/loginbox-textfield-background.gif)" >
-      <div id="LoginstatusText_1" class="LoginstatusText" style="background-image:url(<?php echo $template_path; ?>/images/loginbox/loginbox-font-you-are-not-logged-in.gif)" ></div>
-    </div>
-
-    <div id="LoginButtonContainer" style="background-image:url(<?php echo $template_path; ?>/images/loginbox/loginbox-textfield-background.gif)" >
-      <div id="LoginButton" style="background-image:url(<?php echo $template_path; ?>/images/global/buttons/sbutton.gif)" >
-        <div onClick="LoginButtonAction();" onMouseOver="MouseOverBigButton(this);" onMouseOut="MouseOutBigButton(this);"><div class="Button" style="background-image:url(<?php echo $template_path; ?>/images/global/buttons/sbutton_over.gif)" ></div>
-			<?php
-          echo '<div id="ButtonText" '.($logged ? '' : 'style="background-image:url('.$template_path.'/images/global/buttons/_sbutton_login.gif)"').'>
-			 </div>';
-			 ?>
-        </div>
-      </div>
-
-    </div>
-
-    <div style="clear:both" ></div>
-
-    <div class="Loginstatus" style="background-image:url(<?php echo $template_path; ?>/images/loginbox/loginbox-textfield-background.gif)" >
-      <div id="LoginstatusText_2" onClick="LoginstatusTextAction(this);" onMouseOver="MouseOverLoginBoxText(this);" onMouseOut="MouseOutLoginBoxText(this);" ><div id="LoginstatusText_2_1" class="LoginstatusText" style="background-image:url(<?php echo $template_path; ?>/images/loginbox/loginbox-font-create-account.gif)" ></div><div id="LoginstatusText_2_2" class="LoginstatusText" style="background-image:url(<?php echo $template_path; ?>/images/loginbox/loginbox-font-create-account-over.gif)" ></div></div>
-    </div>
-
-    <div id="BorderRight" class="LoginBorder" style="background-image:url(<?php echo $template_path; ?>/images/general/chain.gif)" ></div>
-    <div id="LoginBottom" class="Loginstatus" style="background-image:url(<?php echo $template_path; ?>/images/general/box-bottom.gif)" ></div>
-  </div>
+					<?php
+					$sidebarProfileMode = $_SESSION['global_profile_mode'] ?? 'all';
+					if (!in_array($sidebarProfileMode, ['all', 'classic74', 'modern'], true)) {
+						$sidebarProfileMode = 'all';
+					}
+					$sidebarModeLabels = [
+						'all' => __('server_mode_all'),
+						'classic74' => __('server_mode_classic74'),
+						'modern' => __('server_mode_modern'),
+					];
+					$sidebarCurrentUri = $_SERVER['REQUEST_URI'] ?? '/';
+					$sidebarSwitchBase = getLink('account/profile-switch');
+					$sidebarManageUrl = BASE_URL . '?subtopic=accountmanagement';
+					$sidebarCreateUrl = BASE_URL . 'reddaxe/account-create.php?source=tibiawww';
+					$sidebarLogoutUrl = getLink('account/logout');
+					?>
+					<div id="Loginbox" class="GlobalLoginSidebar">
+						<div class="GlobalLoginHead" data-i18n="sidebar.account_title"><?php echo __('sidebar_account_title'); ?></div>
+						<div class="GlobalLoginBody">
+							<?php if (!$logged): ?>
+								<a class="GlobalLoginBtn" href="<?php echo $sidebarManageUrl; ?>" data-i18n="sidebar.login"><?php echo __('login'); ?></a>
+								<a class="GlobalLoginBtn secondary" href="<?php echo $sidebarCreateUrl; ?>" data-i18n="sidebar.create_account"><?php echo __('create_account'); ?></a>
+								<div class="GlobalLoginHint" data-i18n="sidebar.global_account_hint"><?php echo __('sidebar_global_account_hint'); ?></div>
+							<?php else: ?>
+								<div class="GlobalLoginHint">
+									<span data-i18n="sidebar.logged_in_as"><?php echo __('sidebar_logged_in_as'); ?></span>
+									<b><?php echo escapeHtml($account_logged->getName()); ?></b>
+								</div>
+								<a class="GlobalLoginBtn" href="<?php echo $sidebarManageUrl; ?>" data-i18n="sidebar.manage_account"><?php echo __('sidebar_manage_account'); ?></a>
+								<a class="GlobalLoginBtn secondary" href="<?php echo $sidebarLogoutUrl; ?>" data-i18n="sidebar.logout"><?php echo __('sidebar_logout'); ?></a>
+								<div class="GlobalProfileArea">
+									<div class="GlobalProfileLabel" data-i18n="sidebar.global_profile"><?php echo __('sidebar_global_profile'); ?></div>
+									<div class="GlobalProfileButtons">
+										<?php foreach ($sidebarModeLabels as $sidebarModeKey => $sidebarModeLabel): ?>
+											<?php
+											$profileSwitchUrl = $sidebarSwitchBase . '?mode=' . urlencode($sidebarModeKey) . '&redirect=' . rawurlencode($sidebarCurrentUri);
+											$profileClass = 'GlobalProfileBtn' . ($sidebarProfileMode === $sidebarModeKey ? ' isActive' : '');
+											?>
+											<a class="<?php echo $profileClass; ?>" href="<?php echo escapeHtml($profileSwitchUrl); ?>"><?php echo escapeHtml($sidebarModeLabel); ?></a>
+										<?php endforeach; ?>
+									</div>
+								</div>
+							<?php endif; ?>
+						</div>
+					</div>
 
 <div id='Menu'>
 <div id='MenuTop' style='background-image:url(<?php echo $template_path; ?>/images/general/box-top.gif);'></div>
@@ -374,11 +385,15 @@ foreach($config['menu_categories'] as $id => $cat) {
 		</div>
 	</span>
 	<div id='<?php echo $cat['id']; ?>_Submenu' class='Submenu'>
-	<?php
-		foreach($menus[$id] as $category => $menu) {
-			?>
-			<a href='<?php echo $menu['link_full']; ?>'<?= $menu['target_blank']?>>
-				<div id='submenu_<?php echo str_replace('/', '_', $menu['link']); ?>' class='Submenuitem' onMouseOver='MouseOverSubmenuItem(this)' onMouseOut='MouseOutSubmenuItem(this)' >
+		<?php
+			foreach($menus[$id] as $category => $menu) {
+				$menuLinkFull = $menu['link_full'];
+				if (($menu['link'] ?? '') === 'rules') {
+					$menuLinkFull = BASE_URL . '?subtopic=rules';
+				}
+				?>
+				<a href='<?php echo $menuLinkFull; ?>'<?= $menu['target_blank']?>>
+					<div id='submenu_<?php echo str_replace('/', '_', $menu['link']); ?>' class='Submenuitem' onMouseOver='MouseOverSubmenuItem(this)' onMouseOut='MouseOutSubmenuItem(this)' >
 					<div class='LeftChain' style='background-image:url(<?php echo $template_path; ?>/images/general/chain.gif);'></div>
 					<div id='ActiveSubmenuItemIcon_<?php echo str_replace('/', '_', $menu['link']); ?>' class='ActiveSubmenuItemIcon' style='background-image:url(<?php echo $template_path; ?>/images/menu/icon-activesubmenu.gif);'></div>
 					<div class='SubmenuitemLabel' <?php echo $menu['style_color']; ?>><?php echo $menu['name']; ?></div>
@@ -400,6 +415,7 @@ foreach($config['menu_categories'] as $id => $cat) {
 	<?php
 	}
 	?>
+		</div>
 		<script type="text/javascript">
 			InitializePage();
         </script>
@@ -407,6 +423,18 @@ foreach($config['menu_categories'] as $id => $cat) {
         <div id="ContentColumn">
           <div class="Content">
             <div id="ContentHelper">
+			<?php
+				$twitchUrl = 'https://www.twitch.tv/directory/game/Tibia';
+				$youtubeUrl = 'https://www.youtube.com/results?search_query=tibia';
+				$fankitUrl = 'https://www.tibia.com/community/?subtopic=fansites';
+			?>
+			<div id="SocialNavBar" class="SocialNavBar">
+				<a href="<?php echo $twitchUrl; ?>" target="_blank" rel="noopener">Twitch</a>
+				<span class="dot"></span>
+				<a href="<?php echo $youtubeUrl; ?>" target="_blank" rel="noopener">YouTube</a>
+				<span class="dot"></span>
+				<a href="<?php echo $fankitUrl; ?>" target="_blank" rel="noopener">Fankit</a>
+			</div>
 			<?php echo tickers(); ?>
 
 
@@ -417,14 +445,83 @@ foreach($config['menu_categories'] as $id => $cat) {
     <div class="BorderTitleText" style="background-image:url(<?php echo $template_path; ?>/images/content/title-background-green.gif);"></div>
 	<?php
 	$headline = $template_path.'/images/header/headline-' . PAGE . '.gif';
-	if(!file_exists($headline))
-		$headline = $template_path . '/headline.php?t=' . ucfirst($title);
+	$useDynamicHeadline = getBoolean(config('tibiacom_force_headline_php'));
+	if($useDynamicHeadline || !file_exists(BASE . $headline))
+		$headline = $template_path . '/headline.php?t=' . rawurlencode((string)$title);
 ?>
 	<img class="Title" src="<?php echo $headline; ?>" alt="Contentbox headline" data-i18n-attr="alt" data-i18n="image.alt.contentbox_headline" />
     <div class="Border_2">
       <div class="Border_3">
 		<?php $hooks->trigger(HOOK_TIBIACOM_BORDER_3); ?>
 		<div class="BoxContent" style="background-image:url(<?php echo $template_path; ?>/images/content/scroll.gif);">
+			<?php
+			// K52/K154: Server mode + global account profile bar.
+			$currentMode = $_SESSION['server_mode'] ?? 'all';
+			if (isset($_GET['mode'])) {
+				$currentMode = strtolower(trim((string)$_GET['mode']));
+				if (!in_array($currentMode, ['all', 'classic74', 'modern'], true)) {
+					$currentMode = 'all';
+				}
+				$_SESSION['server_mode'] = $currentMode;
+				if ($logged) {
+					$_SESSION['global_profile_mode'] = $currentMode;
+				}
+			}
+			if (!in_array($currentMode, ['all', 'classic74', 'modern'], true)) {
+				$currentMode = 'all';
+				$_SESSION['server_mode'] = $currentMode;
+			}
+
+			$modeLabels = [
+				'all' => __('server_mode_all'),
+				'classic74' => __('server_mode_classic74'),
+				'modern' => __('server_mode_modern')
+			];
+
+			$globalProfileMode = $_SESSION['global_profile_mode'] ?? 'all';
+			if (!in_array($globalProfileMode, ['all', 'classic74', 'modern'], true)) {
+				$globalProfileMode = 'all';
+			}
+			$globalProfileLabel = $modeLabels[$globalProfileMode] ?? 'All';
+
+			$currentUri = $_SERVER['REQUEST_URI'] ?? '/';
+			$uriPath = '/';
+			$uriQueryParams = [];
+			$parsedUri = @parse_url($currentUri);
+			if (is_array($parsedUri)) {
+				if (isset($parsedUri['path']) && is_string($parsedUri['path']) && $parsedUri['path'] !== '') {
+					$uriPath = $parsedUri['path'];
+				}
+				if (isset($parsedUri['query']) && is_string($parsedUri['query']) && $parsedUri['query'] !== '') {
+					parse_str($parsedUri['query'], $uriQueryParams);
+				}
+			}
+			unset($uriQueryParams['mode']);
+			?>
+			<div id="serverModeBar" class="serverModeBar">
+				<div class="serverModeBarInner">
+					<span class="serverModeLabel"><?php echo __('server_mode_label'); ?>:</span>
+					<?php foreach ($modeLabels as $mk => $ml): ?>
+						<?php
+							$modeQuery = $uriQueryParams;
+							$modeQuery['mode'] = $mk;
+							$modeHref = $uriPath . '?' . http_build_query($modeQuery);
+						?>
+						<?php if ($mk === $currentMode): ?>
+							<span class="serverModePill isActive"><?php echo escapeHtml($ml); ?></span>
+						<?php else: ?>
+							<a class="serverModePill" href="<?php echo escapeHtml($modeHref); ?>"><?php echo escapeHtml($ml); ?></a>
+						<?php endif; ?>
+					<?php endforeach; ?>
+				</div>
+				<?php if ($logged): ?>
+					<div class="globalAccountHint">
+						<span><?php echo __('global_account_profile'); ?></span>
+						<b><?php echo escapeHtml($globalProfileLabel); ?></b>
+						<a href="<?php echo getLink('account/manage'); ?>"><?php echo __('manage_account'); ?></a>
+					</div>
+				<?php endif; ?>
+			</div>
 			<?php echo template_place_holder('center_top') . $content; ?>
 		</div>
       </div>
@@ -436,19 +533,91 @@ foreach($config['menu_categories'] as $id => $cat) {
   </div>
            </div>
           </div>
-		  <div id="Footer"><?php echo template_footer(); ?><br/><span data-i18n="footer.layout_credit">Layout by CipSoft GmbH.</span></div>
+			  <div id="Footer"><?php echo template_footer(); ?><br/><span data-i18n="footer.layout_credit"><?php echo __('footer_layout_credit'); ?></span></div>
         </div>
         <div id="ThemeboxesColumn">
           <div id="RightArtwork">
+			<?php
+			$onlineByWorld = ['classic74' => 0, 'modern' => 0];
+			$globalOnlinePlayers = 0;
+			$statusDataAvailable = false;
+			try {
+				if (isset($db) && $db->hasTable('players') && $db->hasColumn('players', 'online')) {
+					if ($db->hasColumn('players', 'world')) {
+						$stmtOnline = $db->query('SELECT `world`, COUNT(*) AS total FROM `players` WHERE `online` > 0 GROUP BY `world`');
+						$rowsOnline = $stmtOnline ? $stmtOnline->fetchAll(PDO::FETCH_ASSOC) : [];
+						foreach ((array)$rowsOnline as $rowOnline) {
+							$worldId = (int)($rowOnline['world'] ?? -1);
+							$totalOnline = (int)($rowOnline['total'] ?? 0);
+							if ($worldId === 1) {
+								$onlineByWorld['modern'] += $totalOnline;
+							} else {
+								$onlineByWorld['classic74'] += $totalOnline;
+							}
+							$globalOnlinePlayers += $totalOnline;
+						}
+					} else {
+						$stmtOnline = $db->query('SELECT COUNT(*) AS total FROM `players` WHERE `online` > 0');
+						$globalOnlinePlayers = (int)($stmtOnline ? $stmtOnline->fetchColumn() : 0);
+						$onlineByWorld['classic74'] = $globalOnlinePlayers;
+					}
+					$statusDataAvailable = true;
+				}
+			}
+			catch (Throwable $e) {
+				$statusDataAvailable = false;
+			}
+
+			if (!$statusDataAvailable) {
+				$globalOnlinePlayers = (int)($status['players'] ?? 0);
+				if ($globalOnlinePlayers < 0) {
+					$globalOnlinePlayers = 0;
+				}
+				$onlineByWorld['classic74'] = $globalOnlinePlayers;
+			}
+
+			$apiOnline = true;
+			$gameStatusFromPing = (bool)($status['online'] ?? false);
+			$worldStatusRows = [
+				[
+					'key' => 'classic74',
+					'label' => __('server_mode_classic74'),
+					'players' => (int)$onlineByWorld['classic74'],
+					'online' => $statusDataAvailable ? true : $gameStatusFromPing,
+				],
+				[
+					'key' => 'modern',
+					'label' => __('server_mode_modern'),
+					'players' => (int)$onlineByWorld['modern'],
+					'online' => $statusDataAvailable ? true : $gameStatusFromPing,
+				],
+			];
+			?>
 			<img id="Monster" src="images/monsters/<?php echo logo_monster() ?>.gif" onClick="window.location = '?subtopic=creatures&creature=<?php echo $config['logo_monster'] ?>';" alt="Monster of the Week" data-i18n-attr="alt" data-i18n="image.alt.monster_the_week" />
 			<img id="PedestalAndOnline" src="<?php echo $template_path; ?>/images/header/pedestal-and-online.gif" alt="Monster Pedestal and Players Online Box" data-i18n-attr="alt" data-i18n="image.alt.monster_pedestal_and"/>
-          <div id="PlayersOnline" onClick="window.location = '<?php echo getLink('online'); ?>'">
-		  <?php
-			if($status['online'])
-				echo '<div id="players" style="display: inline;">' . $status['players'] . '</div><br><span data-i18n="status.players">Players Online</span>';
-			else
-				echo '<span style="color: red"><b><span data-i18n="status.server_offline_line1">Server</span><br /><span data-i18n="status.server_offline_line2">OFFLINE</span></b></span>';
-			?></div>
+          <div id="PlayersOnline">
+			<div class="ServerStatusSummary">
+				<div class="statusMainCount"><?php echo (int)$globalOnlinePlayers; ?></div>
+				<div class="statusMainLabel" data-i18n="status.players"><?php echo __('status_players_online'); ?></div>
+			</div>
+			<details class="ServerStatusDetails">
+				<summary>
+					<span class="statusToggleText" data-i18n="status.server_details_toggle"><?php echo __('status_server_details_toggle'); ?></span>
+				</summary>
+				<div class="ServerStatusRow">
+					<span class="statusServerName" data-i18n="status.api_status"><?php echo __('status_api_status'); ?></span>
+					<span class="statusServerState <?php echo $apiOnline ? 'isOnline' : 'isOffline'; ?>" data-i18n="<?php echo $apiOnline ? 'status.online_short' : 'status.offline_short'; ?>"><?php echo $apiOnline ? __('status_online_short') : __('status_offline_short'); ?></span>
+				</div>
+				<?php foreach ($worldStatusRows as $worldStatusRow): ?>
+					<div class="ServerStatusRow">
+						<span class="statusServerName"><?php echo escapeHtml($worldStatusRow['label']); ?></span>
+						<span class="statusServerState <?php echo $worldStatusRow['online'] ? 'isOnline' : 'isOffline'; ?>" data-i18n="<?php echo $worldStatusRow['online'] ? 'status.online_short' : 'status.offline_short'; ?>"><?php echo $worldStatusRow['online'] ? __('status_online_short') : __('status_offline_short'); ?></span>
+						<span class="statusServerPlayers"><?php echo (int)$worldStatusRow['players']; ?></span>
+					</div>
+				<?php endforeach; ?>
+				<a class="ServerStatusLink" href="<?php echo getLink('online'); ?>" data-i18n="status.view_online_list"><?php echo __('status_view_online_list'); ?></a>
+			</details>
+		  </div>
         </div>
 
         <div id="Themeboxes">
@@ -464,9 +633,9 @@ foreach($config['menu_categories'] as $id => $cat) {
 				}
 			}
 
-	if($config['template_allow_change'])
-		 echo '<span style="color: white" data-i18n="label.template_selector">Template:</span><br/>' . template_form();
- ?>
+		if($config['template_allow_change'])
+			 echo '<span style="color: white" data-i18n="label.template_selector">' . __('label_template_selector') . '</span><br/>' . template_form();
+	 ?>
         </div>
       </div>
      </div>

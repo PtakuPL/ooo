@@ -130,6 +130,10 @@ jobs:
           # 5a. init.lua: force CLIENT_LOCKED = true
           if grep -q "CLIENT_LOCKED" "$PKG/init.lua"; then
             sed -i 's/CLIENT_LOCKED\s*=\s*false/CLIENT_LOCKED = true/g' "$PKG/init.lua"
+            # R-02: Weryfikacja że sed zadziałał
+            if ! grep -q "CLIENT_LOCKED = true" "$PKG/init.lua"; then
+              echo "WARNING: sed did not enforce CLIENT_LOCKED = true — verify init.lua format"
+            fi
           fi
 
           # 5b. Overlay custom modules from customizations/ directory
@@ -159,7 +163,7 @@ jobs:
           # ── 6. Strip dev files that may have leaked ──
           rm -rf "$PKG/data"/.git* 2>/dev/null || true
           find "$PKG" -name "CMakeLists.txt" -delete 2>/dev/null || true
-          find "$PKG" -name "*.cpp" -o -name "*.h" -o -name "*.hpp" | xargs rm -f 2>/dev/null || true
+          find "$PKG" \( -name "*.cpp" -o -name "*.h" -o -name "*.hpp" \) -delete 2>/dev/null || true
 
           # ── 7. Create empty dirs for user data ──
           mkdir -p "$PKG/records"
@@ -183,7 +187,7 @@ jobs:
           grep -q "CLIENT_LOCKED = true" "$PKG/init.lua" || { echo "FAIL: CLIENT_LOCKED not true"; exit 1; }
 
           # Must NOT have source files
-          SRC_COUNT=$(find "$PKG" -name "*.cpp" -o -name "*.h" -o -name "*.hpp" | wc -l)
+          SRC_COUNT=$(find "$PKG" \( -name "*.cpp" -o -name "*.h" -o -name "*.hpp" \) | wc -l)
           [ "$SRC_COUNT" -eq 0 ] || { echo "FAIL: found $SRC_COUNT source files"; exit 1; }
 
           # Must NOT have CMake files
@@ -197,6 +201,53 @@ jobs:
           [ -d "$PKG/data" ] || { echo "FAIL: missing data/"; exit 1; }
 
           echo "All integrity checks passed"
+
+      - name: Package lint (allowlist/denylist + secret scan)
+        shell: bash
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: |
+          set -euo pipefail
+          PKG="package"
+          REPORT="package-lint-report-windows.txt"
+          : > "$REPORT"
+
+          echo "[LINT] Top-level allowlist check" | tee -a "$REPORT"
+          find "$PKG" -mindepth 1 -maxdepth 1 -printf '%f\n' | while read -r item; do
+            case "$item" in
+              otclient.exe|init.lua|meta.lua|cacert.pem|otclientrc.lua.default|data|modules|mods|records|*.dll)
+                ;;
+              *)
+                echo "FAIL: unexpected top-level item: $item" | tee -a "$REPORT"
+                exit 1
+                ;;
+            esac
+          done
+
+          echo "[LINT] Denylist extensions check" | tee -a "$REPORT"
+          DENY_EXT_COUNT=$(find "$PKG" -type f \
+            \( -name '*.pdb' -o -name '*.ilk' -o -name '*.exp' -o -name '*.lib' -o -name '*.a' -o -name '*.obj' -o -name '*.o' \
+            -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' -o -name '*.rs' -o -name 'Cargo.toml' -o -name 'Cargo.lock' \
+            -o -name '.env' -o -name '.env.*' -o -name '*.pem.key' -o -name '*.key' -o -name '*.secret' \
+            -o -name '*.ps1' -o -name '*.bat' -o -name '*.cmd' -o -name 'CMakeLists.txt' \) | wc -l)
+          if [ "$DENY_EXT_COUNT" -ne 0 ]; then
+            echo "FAIL: denylist files found ($DENY_EXT_COUNT)" | tee -a "$REPORT"
+            find "$PKG" -type f \
+              \( -name '*.pdb' -o -name '*.ilk' -o -name '*.exp' -o -name '*.lib' -o -name '*.a' -o -name '*.obj' -o -name '*.o' \
+              -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' -o -name '*.rs' -o -name 'Cargo.toml' -o -name 'Cargo.lock' \
+              -o -name '.env' -o -name '.env.*' -o -name '*.pem.key' -o -name '*.key' -o -name '*.secret' \
+              -o -name '*.ps1' -o -name '*.bat' -o -name '*.cmd' -o -name 'CMakeLists.txt' \) | sort | tee -a "$REPORT"
+            exit 1
+          fi
+
+          echo "[LINT] Secret pattern scan" | tee -a "$REPORT"
+          if grep -RInE --binary-files=without-match \
+            '(TICKET_SECRET|DB_PASS|MYSQL_PASSWORD|PRIVATE KEY|BEGIN [A-Z ]*PRIVATE KEY|PAYPAL_CLIENT_SECRET|GOOGLE_CLIENT_SECRET|FACEBOOK_CLIENT_SECRET|STEAM_API_KEY|HMAC_SECRET|SIGNING_KEY)' \
+            "$PKG" >> "$REPORT"; then
+            echo "FAIL: secret-like content found in package" | tee -a "$REPORT"
+            exit 1
+          fi
+
+          echo "PASS: package lint checks completed" | tee -a "$REPORT"
 
       - name: Generate file manifest (SHA-256 per file)
         shell: bash
@@ -407,6 +458,52 @@ jobs:
 
           echo "All integrity checks passed"
 
+      - name: Package lint (allowlist/denylist + secret scan)
+        working-directory: ${{ env.CLIENT_SRC }}
+        run: |
+          set -euo pipefail
+          PKG="package"
+          REPORT="package-lint-report-linux.txt"
+          : > "$REPORT"
+
+          echo "[LINT] Top-level allowlist check" | tee -a "$REPORT"
+          find "$PKG" -mindepth 1 -maxdepth 1 -printf '%f\n' | while read -r item; do
+            case "$item" in
+              otclient|init.lua|meta.lua|cacert.pem|otclientrc.lua.default|data|modules|mods|records|*.so|*.so.*)
+                ;;
+              *)
+                echo "FAIL: unexpected top-level item: $item" | tee -a "$REPORT"
+                exit 1
+                ;;
+            esac
+          done
+
+          echo "[LINT] Denylist extensions check" | tee -a "$REPORT"
+          DENY_EXT_COUNT=$(find "$PKG" -type f \
+            \( -name '*.pdb' -o -name '*.ilk' -o -name '*.exp' -o -name '*.lib' -o -name '*.a' -o -name '*.obj' -o -name '*.o' \
+            -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' -o -name '*.rs' -o -name 'Cargo.toml' -o -name 'Cargo.lock' \
+            -o -name '.env' -o -name '.env.*' -o -name '*.pem.key' -o -name '*.key' -o -name '*.secret' \
+            -o -name '*.ps1' -o -name '*.bat' -o -name '*.cmd' -o -name 'CMakeLists.txt' \) | wc -l)
+          if [ "$DENY_EXT_COUNT" -ne 0 ]; then
+            echo "FAIL: denylist files found ($DENY_EXT_COUNT)" | tee -a "$REPORT"
+            find "$PKG" -type f \
+              \( -name '*.pdb' -o -name '*.ilk' -o -name '*.exp' -o -name '*.lib' -o -name '*.a' -o -name '*.obj' -o -name '*.o' \
+              -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' -o -name '*.rs' -o -name 'Cargo.toml' -o -name 'Cargo.lock' \
+              -o -name '.env' -o -name '.env.*' -o -name '*.pem.key' -o -name '*.key' -o -name '*.secret' \
+              -o -name '*.ps1' -o -name '*.bat' -o -name '*.cmd' -o -name 'CMakeLists.txt' \) | sort | tee -a "$REPORT"
+            exit 1
+          fi
+
+          echo "[LINT] Secret pattern scan" | tee -a "$REPORT"
+          if grep -RInE --binary-files=without-match \
+            '(TICKET_SECRET|DB_PASS|MYSQL_PASSWORD|PRIVATE KEY|BEGIN [A-Z ]*PRIVATE KEY|PAYPAL_CLIENT_SECRET|GOOGLE_CLIENT_SECRET|FACEBOOK_CLIENT_SECRET|STEAM_API_KEY|HMAC_SECRET|SIGNING_KEY)' \
+            "$PKG" >> "$REPORT"; then
+            echo "FAIL: secret-like content found in package" | tee -a "$REPORT"
+            exit 1
+          fi
+
+          echo "PASS: package lint checks completed" | tee -a "$REPORT"
+
       - name: Generate file manifest (SHA-256 per file)
         working-directory: ${{ env.CLIENT_SRC }}
         run: |
@@ -440,7 +537,7 @@ jobs:
           echo "  ]" >> "$MANIFEST"
           echo "}" >> "$MANIFEST"
 
-          echo "Generated $MANIFEST with $(grep -c sha256 \"$MANIFEST\") files"
+          echo "Generated $MANIFEST with $(grep -c sha256 "$MANIFEST") files"
 
       - name: Create tarball
         working-directory: ${{ env.CLIENT_SRC }}

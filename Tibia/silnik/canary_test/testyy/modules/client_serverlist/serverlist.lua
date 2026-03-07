@@ -37,6 +37,25 @@ function ServerList.init()
                 end
             end
         end
+        -- INS-66: Add any MANAGED_SERVER_LIST entries not already covered by GameModes
+        if MANAGED_SERVER_LIST then
+            for _, srv in ipairs(MANAGED_SERVER_LIST) do
+                local host = srv.host
+                local port = srv.loginPort or srv.port or 7171
+                local serverKey = host .. ':' .. tostring(port)
+                if not servers[serverKey] then
+                    servers[serverKey] = {
+                        host = host,
+                        port = port,
+                        protocol = 1412,
+                        account = '',
+                        password = '',
+                        httpLogin = true,
+                        gameMode = srv.gameMode or '',
+                    }
+                end
+            end
+        end
     else
         servers = g_settings.getNode('ServerList') or {}
         if Servers_init then

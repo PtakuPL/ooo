@@ -3019,4 +3019,7 @@
 	<npc centerx="33587" centery="32966" centerz="15" radius="1">
 		<npc name="Gnomish Operative (Raiders)" x="0" y="0" z="15" spawntime="60" />
 	</npc>
+	<npc centerx="32369" centery="31782" centerz="7" radius="2">
+		<npc name="Arena Master" x="0" y="0" z="7" spawntime="60" />
+	</npc>
 </npcs>

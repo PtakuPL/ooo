@@ -134,8 +134,8 @@ keywordHandler:addKeyword({ "urgith" }, StdModule.say, { npcHandler = npcHandler
 keywordHandler:addKeyword({ "archdemons" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tibra.stdmod_43" })
 keywordHandler:addKeyword({ "ruthless seven" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.tibra.stdmod_44" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome in the name of the gods, pilgrim |PLAYERNAME|!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye, |PLAYERNAME|. May the gods be with you to guard and guide you, my child!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.tibra.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.tibra.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

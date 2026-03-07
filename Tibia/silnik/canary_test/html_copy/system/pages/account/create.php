@@ -12,18 +12,30 @@
 use MyAAC\CreateCharacter;
 
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Create Account';
+$title = __('create_account');
+
+// Rejestracja konta globalnego jest utrzymywana w RedDAXE.
+$redirectUrl = '/reddaxe/account-create.php?source=tibiawww';
+$mode = $_GET['mode'] ?? '';
+if (in_array($mode, ['classic74', 'modern'], true)) {
+	$redirectUrl .= '&mode=' . $mode;
+}
+header('Location: ' . $redirectUrl, true, 302);
+exit;
 
 if (setting('core.account_country'))
 	require SYSTEM . 'countries.conf.php';
 
 if($logged)
 {
-	echo 'Please logout before attempting to create a new account.';
+	echo __('account_create_logout_required');
 	return;
 }
 
-csrfProtect();
+$save = isset($_POST['save']) && $_POST['save'] == 1;
+if ($save) {
+	csrfProtect();
+}
 
 if(setting('core.account_create_character_create')) {
 	$createCharacter = new CreateCharacter();
@@ -31,16 +43,18 @@ if(setting('core.account_create_character_create')) {
 
 $account_type = 'number';
 if (config('account_login_by_email')) {
-	$account_type = 'Email Address';
+	$account_type = rtrim(__('email_address'), ':');
 }
 else {
 	if(USE_ACCOUNT_NAME) {
-		$account_type = 'name';
+		$account_type = __('account_label_name');
+	}
+	else {
+		$account_type = __('account_label_number');
 	}
 }
 
 $errors = array();
-$save = isset($_POST['save']) && $_POST['save'] == 1;
 if($save)
 {
 	if(!config('account_login_by_email')) {
@@ -130,8 +144,8 @@ if($save)
 		}
 	}
 
-	if(!isset($_POST['accept_rules']) || $_POST['accept_rules'] !== 'true')
-		$errors['accept_rules'] = 'You have to agree to the ' . $config['lua']['serverName'] . ' Rules in order to create an account!';
+		if(!isset($_POST['accept_rules']) || $_POST['accept_rules'] !== 'true')
+			$errors['accept_rules'] = __('account_create_accept_rules_error', ['SERVER' => $config['lua']['serverName']]);
 
 	$params = array(
 		'account' => $account_db,
@@ -193,13 +207,16 @@ if($save)
 		$new_account->setEMail($email);
 		$new_account->save();
 
+		// Set engine_password_sha1 for trigger sync to game server DBs (canary + canary_modern)
+		$new_account->setCustomField('engine_password_sha1', sha1($_POST['password']));
+
 		$hooks->trigger(HOOK_ACCOUNT_CREATE_AFTER_SAVED, ['account' => $new_account]);
 
 		if(USE_ACCOUNT_SALT)
 			$new_account->setCustomField('salt', $salt);
 
 		$new_account->setCustomField('created', time());
-		$new_account->logAction('Account created.');
+		$new_account->logAction(__('log_account_created'));
 
 		if(setting('core.account_country')) {
 			$new_account->setCustomField('country', $country);
@@ -369,6 +386,11 @@ if (setting('core.account_country')) {
 
 $twig->display('account.create.js.html.twig');
 
+$rules_mode = strtolower((string)($_GET['mode'] ?? getSession('rules_mode')));
+if (!in_array($rules_mode, ['all', 'classic74', 'modern'], true)) {
+	$rules_mode = 'all';
+}
+
 $params = array(
 	'account' => isset($_POST['account']) ? $_POST['account'] : '',
 	'email' => isset($_POST['email']) ? $_POST['email'] : '',
@@ -377,7 +399,8 @@ $params = array(
 	'country_recognized' => $country_recognized,
 	'country' => isset($country) ? $country : null,
 	'errors' => $errors,
-	'save' => $save
+	'save' => $save,
+	'rules_mode' => $rules_mode,
 );
 
 if($save && setting('core.account_create_character_create')) {

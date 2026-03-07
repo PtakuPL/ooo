@@ -1,11 +1,67 @@
-Please choose a name{% if config.character_samples|length > 1 %}, vocation{% endif %}
-{% if config.character_towns|length > 1 %}, town{% endif %}
- and sex for your character. <br/>
-In any case the name must not violate the naming conventions stated in the <a href="?subtopic=rules" target="_blank" >{{ config.lua.serverName }} Rules</a>, or your character might get deleted or name locked.
+{% set selected_mode = mode|default('classic74') %}
+{% set rules_mode = selected_mode in ['classic74', 'modern'] ? selected_mode : 'all' %}
+{% set rules_href = '?subtopic=rules&mode=' ~ rules_mode %}
+{{ __('create_char_choose_prefix') }}{% if config.character_samples|length > 1 %}, {{ __('create_char_choose_vocation') }}{% endif %}
+{% if config.character_towns|length > 1 %}, {{ __('create_char_choose_town') }}{% endif %}
+ {{ __('create_char_choose_suffix') }} <br/>
+{{ __('create_char_naming_warning')|replace({'$RULES_HREF$': rules_href, '$SERVER$': config.lua.serverName})|raw }}
 {% if account_logged.getPlayersList(true)|length >= setting('core.characters_per_account') %}
-<b><span style="color: red"> You have maximum number of characters per account on your account. Delete one before you make new.</span></b>
+<b><span style="color: red"> {{ __('create_char_max_limit') }}</span></b>
 {% endif %}
 <br/><br/>
+<div class="TableContainer">
+	<table class="Table3" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+				<div class="InnerTableContainer">
+					<table style="width:100%;">
+						<tr>
+							<td>
+								<div class="TableShadowContainerRightTop">
+									<div class="TableShadowRightTop" style="background-image:url({{ template_path }}/images/content/table-shadow-rt.gif);"></div>
+								</div>
+								<div class="TableContentAndRightShadow" style="background-image:url({{ template_path }}/images/content/table-shadow-rm.gif);">
+									<div class="TableContentContainer">
+										<table class="TableContent" width="100%">
+											<tr class="LabelH">
+												<td><span data-i18n="highscores.filter_world">{{ __('highscores_choose_server') }}</span></td>
+											</tr>
+											<tr class="Odd">
+												<td>
+													<input form="form" type="radio" name="mode" id="mode_classic74" value="classic74"{% if selected_mode != 'modern' %} checked="checked"{% endif %}>
+<label for="mode_classic74">{{ __('server_classic74') }}</label>
+														&nbsp;&nbsp;&nbsp;
+														<input form="form" type="radio" name="mode" id="mode_modern" value="modern"{% if selected_mode == 'modern' %} checked="checked"{% endif %}>
+														<label for="mode_modern">{{ __('server_modern') }}</label>
+														<br/>
+														<small>
+															{{ __('create_char_rules_label') }}
+															<a href="?subtopic=rules&mode=all" target="_blank">{{ __('common_all') }}</a>
+															|
+															<a href="?subtopic=rules&mode=classic74" target="_blank">{{ __('server_classic74') }}</a>
+															|
+															<a href="?subtopic=rules&mode=modern" target="_blank">{{ __('server_modern') }}</a>
+													</small>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div class="TableShadowContainer">
+									<div class="TableBottomShadow" style="background-image:url({{ template_path }}/images/content/table-shadow-bm.gif);">
+										<div class="TableBottomLeftShadow" style="background-image:url({{ template_path }}/images/content/table-shadow-bl.gif);"></div>
+										<div class="TableBottomRightShadow" style="background-image:url({{ template_path }}/images/content/table-shadow-br.gif);"></div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+<br/>
 <div class="TableContainer">
 	<table class="Table3" cellpadding="0" cellspacing="0">
 		<div class="CaptionContainer">
@@ -14,7 +70,7 @@ In any case the name must not violate the naming conventions stated in the <a hr
 				<span class="CaptionEdgeRightTop" style="background-image:url({{ template_path }}/images/content/box-frame-edge.gif);"></span>
 				<span class="CaptionBorderTop" style="background-image:url({{ template_path }}/images/content/table-headline-border.gif);"></span>
 				<span class="CaptionVerticalLeft" style="background-image:url({{ template_path }}/images/content/box-frame-vertical.gif);"></span>
-				<div class="Text" >Create Character</div>
+				<div class="Text" >{{ __('create_char_title') }}</div>
 				<span class="CaptionVerticalRight" style="background-image:url({{ template_path }}/images/content/box-frame-vertical.gif);"></span>
 				<span class="CaptionBorderBottom" style="background-image:url({{ template_path }}/images/content/table-headline-border.gif);"></span>
 				<span class="CaptionEdgeLeftBottom" style="background-image:url({{ template_path }}/images/content/box-frame-edge.gif);"></span>
@@ -38,10 +94,10 @@ In any case the name must not violate the naming conventions stated in the <a hr
 										<table class="TableContent" width="100%">
 											<tr class="LabelH">
 												<td style="width:50%;">
-													<span>Name</span>
-												</td>
-												<td>
-													<span>Sex</span>
+														<span>{{ __('label_name') }}</span>
+													</td>
+													<td>
+														<span>{{ __('label_sex') }}</span>
 												</td>
 											</tr>
 											<tr class="Odd">
@@ -50,7 +106,7 @@ In any case the name must not violate the naming conventions stated in the <a hr
 													<img id="character_indicator" src="images/global/general/{% if not save or errors.name is defined %}n{% endif %}ok.gif" />
 													<br/>
 													<span style="font-size: 10px">
-														<div id="character_error">{% if not save or errors.name is defined %}Please enter your character name.{% endif %}</div>
+														<div id="character_error">{% if not save or errors.name is defined %}{{ __('create_char_name_hint') }}{% endif %}</div>
 													</span>
 												</td>
 												<td>
@@ -79,7 +135,7 @@ In any case the name must not violate the naming conventions stated in the <a hr
 							<td>
 								<table class="TableContent" width="100%">
 									<tr class="Odd" valign="top">
-										<td width="160"><br/><b>Select your vocation:</b></td>
+										<td width="160"><br/><b>{{ __('create_char_select_vocation') }}</b></td>
 										<td>
 											<table class="TableContent" width="100%" >
 												{% for key, sample_char in config.character_samples %}
@@ -104,7 +160,7 @@ In any case the name must not violate the naming conventions stated in the <a hr
 							<td>
 								<table class="TableContent" width="100%">
 									<tr class="Odd" valign="top">
-										<td width="160"><br/><b>Select your city:</b></td>
+										<td width="160"><br/><b>{{ __('create_char_select_city') }}</b></td>
 										<td>
 											<table class="TableContent" width="100%">
 												{% for town_id in config.character_towns %}

@@ -25,7 +25,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ i18nKey = "npc.lokur.voice_1", yell = false },
+	{ text = "Don't forget to deposit your money here in the Tibian Bank before you head out for adventure.", yell = false },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -72,31 +72,31 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "ticket") then
 		if Player(creature):getStorageValue(Storage.WagonTicket) >= os.time() then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lokur.say_1")
+			npcHandler:say("Your weekly ticket is still valid. Would be a waste of money to purchase a second one", npc, creature)
 			return true
 		end
 
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lokur.say_2")
+		npcHandler:say("Do you want to purchase a weekly ticket for the ore wagons? With it you can travel freely and swiftly through Kazordoon for one week. 250 gold only. Deal?", npc, creature)
 		npcHandler:setTopic(playerId, 9)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) > 0 then
 		local player = Player(creature)
 		if npcHandler:getTopic(playerId) == 9 then
 			if not player:removeMoneyBank(250) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lokur.say_3")
+				npcHandler:say("You don't have enough money.", npc, creature)
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
 
 			player:setStorageValue(Storage.WagonTicket, os.time() + 7 * 24 * 60 * 60)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lokur.say_4")
+			npcHandler:say("Here is your stamp. It can't be transferred to another person and will last one week from now. You'll get notified upon using an ore wagon when it isn't valid anymore.", npc, creature)
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) > 0 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lokur.say_5")
+		npcHandler:say("No then.", npc, creature)
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "measurements") then
 		if player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07) >= 6 and player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.MeasurementsKroox) ~= 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lokur.say_6")
+			npcHandler:say("Come on, I have no clue what they are. Better ask my armorer Kroox for such nonsense.Go and ask him for good ol' Lokurs measurements, he'll know.", npc, creature)
 			player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07, player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07) + 1)
 		else
 			npcHandler:say("...", npc, creature)
@@ -107,9 +107,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lokur.greet_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.lokur.farewell_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.lokur.walkaway_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "Yes? What may I do for you, |PLAYERNAME|? Bank business, perhaps?")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Have a nice day.")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Have a nice day.")
 npcHandler:setCallback(CALLBACK_GREET, NpcBankGreetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

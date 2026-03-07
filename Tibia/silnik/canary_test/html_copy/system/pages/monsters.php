@@ -13,7 +13,7 @@
 use MyAAC\Models\Monster;
 
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Monsters';
+$title = __('menu_monsters');
 
 if (empty($_REQUEST['name'])) {
 	$preview = setting('core.monsters_images_preview');
@@ -57,7 +57,7 @@ if ($monsterModel && isset($monsterModel->name)) {
 		return ($a['chance'] > $b['chance']) ? -1 : 1;
 	}
 
-	$title = $monster['name'] . " - Monsters";
+	$title = $monster['name'] . ' - ' . __('menu_monsters');
 
 	$monster['img_link']= getMonsterImage($monster);
 

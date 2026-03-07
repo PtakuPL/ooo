@@ -60,10 +60,10 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLineComplete) >= 2 then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) < 30 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_1")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.commander_stone.say_28", "npc.commander_stone.say_29" })
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) >= 30 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_2")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.commander_stone.say_30", "npc.commander_stone.say_31" })
 			npcHandler:setTopic(playerId, 0)
 		end
 
@@ -71,12 +71,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "keeper") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) < 30 then
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionCrystalKeeper) < 1 and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.CrystalKeeperTimout) < os.time() then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_32")
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionCrystalKeeper, 1)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.RepairedCrystalCount, 0)
 				player:addItem(15703, 1) --- taking missions
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.CrystalKeeperTimout) > os.time() then -- trying to take mission while in cooldown
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_33")
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionCrystalKeeper) > 0 then -- reporting mission
 				if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.RepairedCrystalCount) >= 5 then -- can report missions
 					player:removeItem(15703, 1)
@@ -88,19 +88,19 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.RepairedCrystalCount, -1)
 					player:addAchievement("Crystal Keeper")
 					player:checkGnomeRank()
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_5")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_34")
 					npcHandler:setTopic(playerId, 0)
 				else -- haven't finished
 					if npcHandler:getTopic(playerId) >= 1 then
-						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_6") -- is reporting
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_35") -- is reporting
 					else
-						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_7") -- se nao tiver reportando
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_36") -- se nao tiver reportando
 					end
 					npcHandler:setTopic(playerId, 0)
 				end
 			end
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_37")
 		end
 		-- Crystal Keeper
 
@@ -108,12 +108,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "spark") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) < 30 then
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionRaidersOfTheLostSpark) < 1 and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.RaidersOfTheLostSparkTimeout) < os.time() then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_9")
+				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.commander_stone.say_38", "npc.commander_stone.say_39" })
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionRaidersOfTheLostSpark, 1)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExtractedCount, 0)
 				player:addItem(15696, 1) --- taking missions
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.RaidersOfTheLostSparkTimeout) > os.time() then -- trying to take mission while in cooldown
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_10")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_40")
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionRaidersOfTheLostSpark) > 0 then -- reporting mission
 				if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExtractedCount) >= 7 then -- can report missions
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) + 5)
@@ -125,19 +125,19 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.RaidersOfTheLostSparkTimeout, os.time() + configManager.getNumber(configKeys.BOSS_DEFAULT_TIME_TO_FIGHT_AGAIN))
 					player:addAchievement("Call Me Sparky")
 					player:checkGnomeRank()
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_11")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_41")
 					npcHandler:setTopic(playerId, 0)
 				else -- haven't finished
 					if npcHandler:getTopic(playerId) >= 1 then
-						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_12") -- is reporting
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_42") -- is reporting
 					else
-						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_13") -- se nao tiver reportando
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_43") -- se nao tiver reportando
 					end
 					npcHandler:setTopic(playerId, 0)
 				end
 			end
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_14")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_44")
 		end
 		-- Raiders of the Lost Spark
 
@@ -145,11 +145,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "extermination") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) >= 30 then
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionExterminators) < 1 and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExterminatorsTimeout) < os.time() then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_15")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_45")
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionExterminators, 1)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExterminatedCount, 0) --- taking missions
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExterminatorsTimeout) > os.time() then -- trying to take mission while in cooldown
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_16")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_46")
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionExterminators) > 0 then -- reporting mission
 				if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExterminatedCount) >= 10 then -- can report missions
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) + 5)
@@ -160,19 +160,19 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.ExterminatorsTimeout, os.time() + configManager.getNumber(configKeys.BOSS_DEFAULT_TIME_TO_FIGHT_AGAIN))
 					player:addAchievement("One Foot Vs. Many")
 					player:checkGnomeRank()
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_17")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_47")
 					npcHandler:setTopic(playerId, 0)
 				else -- haven't finished
 					if npcHandler:getTopic(playerId) >= 1 then
-						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_18") -- is reporting
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_48") -- is reporting
 					else
-						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_19") -- se nao tiver reportando
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_49") -- se nao tiver reportando
 					end
 					npcHandler:setTopic(playerId, 0)
 				end
 			end
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_20")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_50")
 		end
 		-- Exterminators
 
@@ -180,15 +180,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "digging") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) >= 30 then
 			if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionMushroomDigger) < 1 and player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MushroomDiggerTimeout) < os.time() then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.multi_1")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.multi_2")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.multi_3")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.multi_4")
+				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.commander_stone.say_51", "npc.commander_stone.say_52", "npc.commander_stone.say_53", "npc.commander_stone.say_54" })
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionMushroomDigger, 1)
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MushroomCount, 0)
 				player:addItem(15828, 1) --- taking missions
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MushroomDiggerTimeout) > os.time() then -- trying to take mission while in cooldown
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_21")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_55")
 			elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MissionMushroomDigger) > 0 then -- reporting mission
 				if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.MushroomCount) >= 3 then -- can report missions
 					player:removeItem(15828, 1)
@@ -200,34 +197,34 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.MushroomDiggerTimeout, os.time() + configManager.getNumber(configKeys.BOSS_DEFAULT_TIME_TO_FIGHT_AGAIN))
 					player:addAchievement("The Picky Pig")
 					player:checkGnomeRank()
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_22")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_56")
 					npcHandler:setTopic(playerId, 0)
 				else -- haven't finished
 					if npcHandler:getTopic(playerId) >= 1 then
-						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_23") -- is reporting
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_57") -- is reporting
 					else
-						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_24") -- se nao tiver reportando
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_58") -- se nao tiver reportando
 					end
 					npcHandler:setTopic(playerId, 0)
 				end
 			end
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_25")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_59")
 		end
 		-- Mushroom Digger
 	elseif MsgContains(message, "report") then
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) < 30 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_26")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_60")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) >= 30 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_27")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.commander_stone.say_61")
 			npcHandler:setTopic(playerId, 2)
 		end
 	end
 	return true
 end
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.commander_stone.greet_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "Hello recruit.")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

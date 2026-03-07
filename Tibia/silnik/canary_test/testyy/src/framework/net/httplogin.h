@@ -35,9 +35,7 @@ class LoginHttp final : public LuaObject
 public:
     LoginHttp();
 
-    void startHttpLogin(const std::string& host, const std::string& path,
-                        uint16_t port, const std::string& email,
-                        const std::string& password);
+    // INS-CPP1: startHttpLogin() usunięty — dead code (nigdy bindowany do Lua, discards response)
 
     void Logger(const auto& req, const auto& res);
 

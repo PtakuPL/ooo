@@ -1,16 +1,16 @@
 {
   "event.player.msg1": "Вы не можете так быстро перемещать этот предмет.",
-  "event.player.msg2": "[EN] daily-reward-xp-boost",
-  "event.player.msg3": "[EN] daily-reward-xp-boost",
-  "event.player.msg4": "[EN] daily-reward-xp-boost",
-  "event.player.msg5": "[EN] daily-reward-xp-boost",
-  "event.player.msg_1": "[EN] You are no longer refilling stamina, since you left a regeneration zone.",
-  "event.player.msg_2": "[EN] There was an error when processing your report, please contact a gamemaster.",
-  "event.player.msg_3": "[EN] Thank you for reporting {}. Your report \\z\n\twill be processed by {} team as soon as possible.",
-  "event.player.msg_4": "[EN] There was an error when processing your report, please contact a gamemaster.",
-  "event.player.msg_5": "[EN] Your report is being processed.",
+  "event.player.msg2": "ежедневная награда-повышение опыта",
+  "event.player.msg3": "ежедневная награда-повышение опыта",
+  "event.player.msg4": "ежедневная награда-повышение опыта",
+  "event.player.msg5": "ежедневная награда-повышение опыта",
+  "event.player.msg_1": "Вы больше не восполняете выносливость, так как вышли из зоны регенерации.",
+  "event.player.msg_2": "При обработке вашего отчета произошла ошибка, обратитесь к мастеру игры.",
+  "event.player.msg_3": "Благодарим вас за сообщение о {}. Ваш отчет \\z\n\tбудет обработано командой {} как можно скорее.",
+  "event.player.msg_4": "При обработке вашего отчета произошла ошибка, обратитесь к мастеру игры.",
+  "event.player.msg_5": "Ваш отчет находится в обработке.",
   "event.player.msg_move_fast": "Вы не можете так быстро перемещать этот предмет.",
-  "event.player.msg_report_sent": "[EN] Your report has been sent to {server}.",
-  "event.player.say_1": "[EN] You feed the turtle, now you may pass.",
-  "event.player.stamina_pz_recharge": "[EN] In protection zone. Recharging {0} stamina every {1} minutes."
+  "event.player.msg_report_sent": "Ваш отчет отправлен на {server}.",
+  "event.player.say_1": "Вы покормили черепаху, теперь можете проходить.",
+  "event.player.stamina_pz_recharge": "В охранной зоне. Перезарядка выносливости {0} каждые {1} минут."
 }

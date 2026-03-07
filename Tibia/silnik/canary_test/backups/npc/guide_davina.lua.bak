@@ -26,10 +26,10 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "I'm informed about the status the world is in. If you have questions, let me know." },
-	{ text = "Need some help finding your way through Liberty Bay? Let me assist you." },
-	{ text = "Free escort to the depot for newcomers!" },
-	{ text = "Hello, is this your first visit to Liberty Bay? I can show you around the town." },
+	{ i18nKey = "npc.guide_davina.voice_1" },
+	{ i18nKey = "npc.guide_davina.voice_2" },
+	{ i18nKey = "npc.guide_davina.voice_3" },
+	{ i18nKey = "npc.guide_davina.voice_4" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -100,9 +100,9 @@ keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i
 keywordHandler:addKeyword({ "town" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_davina.stdmod_7" })
 keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.guide_davina.stdmod_8" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello there, |PLAYERNAME| and welcome to Liberty Bay! Would you like some information and a map guide?")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and enjoy your stay in Liberty Bay, |PLAYERNAME|")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.guide_davina.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.guide_davina.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.guide_davina.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

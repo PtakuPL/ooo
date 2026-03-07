@@ -54,6 +54,7 @@ void unzipper::extract(const char* fileBuffer, uint fileLength, std::string& des
     if ( unzGetGlobalInfo( zipfile, &global_info ) != UNZ_OK )
     {
         unzClose( zipfile );
+        free(unzmem.base);
         g_logger.fatal("could not read file global info");
     }
 
@@ -76,6 +77,7 @@ void unzipper::extract(const char* fileBuffer, uint fileLength, std::string& des
                 nullptr, 0, nullptr, 0 ) != UNZ_OK )
         {
             unzClose( zipfile );
+            free(unzmem.base);
             g_logger.fatal("could not read file info");
         }
 
@@ -91,6 +93,7 @@ void unzipper::extract(const char* fileBuffer, uint fileLength, std::string& des
             if ( unzOpenCurrentFile( zipfile ) != UNZ_OK )
             {
                 unzClose( zipfile );
+                free(unzmem.base);
                 g_logger.fatal("could not open file");
             }
 
@@ -101,6 +104,7 @@ void unzipper::extract(const char* fileBuffer, uint fileLength, std::string& des
             {
                 unzCloseCurrentFile( zipfile );
                 unzClose( zipfile );
+                free(unzmem.base);
                 g_logger.fatal("could not open destination file");
             }
 
@@ -112,7 +116,8 @@ void unzipper::extract(const char* fileBuffer, uint fileLength, std::string& des
                 {
                     unzCloseCurrentFile( zipfile );
                     unzClose(zipfile);
-                    g_logger.fatal( &"error: " [ error] );
+                    free(unzmem.base);
+                    g_logger.fatal(std::string("unzip read error: ") + std::to_string(error));
                 }
 
                 // Write data to file.
@@ -133,12 +138,14 @@ void unzipper::extract(const char* fileBuffer, uint fileLength, std::string& des
             if ( unzGoToNextFile( zipfile ) != UNZ_OK )
             {
                 unzClose( zipfile );
+                free(unzmem.base);
                 g_logger.fatal("cound not read next file");
             }
         }
     }
 
     unzClose(zipfile);
+    free(unzmem.base);
 }
 
 #endif

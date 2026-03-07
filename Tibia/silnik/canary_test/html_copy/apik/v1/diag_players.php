@@ -9,6 +9,28 @@ foreach([__DIR__.'/.env',__DIR__.'/../.env','/var/www/html/.env'] as $f)
 foreach(['_ENV','_SERVER'] as $S) foreach(($GLOBALS[$S]??[]) as $K=>$V) if(!array_key_exists($K,$e)) $e[$K]=$V;}
 $v=$e[$k]??getenv($k); return ($v===false||$v===null)?$d:$v;}
 
+// T-02: DEV_MODE guard — diagnostic endpoint, production must return 404
+if (strtolower((string)env_get('DEV_MODE', '')) !== 'true') {
+    http_response_code(404);
+    echo json_encode(['error' => 'Not Found']);
+    exit;
+}
+
+// T-02: Rate-limit — max 5 requests per minute per IP
+$ip = $_SERVER['REMOTE_ADDR'] ?? '0.0.0.0';
+$rlDir = sys_get_temp_dir() . '/diag_players_rl';
+@mkdir($rlDir, 0700, true);
+$rlFile = $rlDir . '/' . md5($ip) . '.json';
+$rlData = @json_decode((string)@file_get_contents($rlFile), true) ?: ['ts' => 0, 'cnt' => 0];
+$now = time();
+if ($now - $rlData['ts'] > 60) { $rlData = ['ts' => $now, 'cnt' => 1]; } else { $rlData['cnt']++; }
+@file_put_contents($rlFile, json_encode($rlData), LOCK_EX);
+if ($rlData['cnt'] > 5) {
+    http_response_code(429);
+    echo json_encode(['error' => 'Rate limit exceeded, try again later']);
+    exit;
+}
+
 $out = ['engine_db'=>env_get('ENGINE_DB_NAME','(default)')];
 
 try {

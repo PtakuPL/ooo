@@ -335,7 +335,7 @@ void WIN32Window::internalCreateGLContext()
     if (m_eglDisplay == EGL_NO_DISPLAY)
         g_logger.fatal("EGL not supported");
 
-    if (!eglInitialize(m_eglDisplay, NULL, NULL))
+    if (!eglInitialize(m_eglDisplay, nullptr, nullptr))
         g_logger.fatal("Unable to initialize EGL");
 
     static int configList[] = {
@@ -349,7 +349,7 @@ void WIN32Window::internalCreateGLContext()
 
     EGLint numConfig;
 
-    if (!eglGetConfigs(m_eglDisplay, NULL, 0, &numConfig))
+    if (!eglGetConfigs(m_eglDisplay, nullptr, 0, &numConfig))
         g_logger.fatal("No valid GL configurations");
 
     if (!eglChooseConfig(m_eglDisplay, configList, &m_eglConfig, 1, &numConfig))
@@ -363,7 +363,7 @@ void WIN32Window::internalCreateGLContext()
         EGL_NONE
     };
 
-    m_eglSurface = eglCreateWindowSurface(m_eglDisplay, m_eglConfig, m_window, NULL);
+    m_eglSurface = eglCreateWindowSurface(m_eglDisplay, m_eglConfig, m_window, nullptr);
     if (m_eglSurface == EGL_NO_SURFACE)
         g_logger.fatal("Unable to create EGL surface: {}", eglGetError());
 
@@ -461,7 +461,7 @@ void* WIN32Window::getExtensionProcAddress(const char* ext)
 {
 #ifdef OPENGL_ES
     //TODO
-    return NULL;
+    return nullptr;
 #else
     return (void*)wglGetProcAddress(ext);
 #endif
@@ -1077,8 +1077,10 @@ void WIN32Window::setClipboardText(const std::string_view text)
             return;
 
         const HGLOBAL hglb = GlobalAlloc(GMEM_MOVEABLE, (text.length() + 1) * sizeof(WCHAR));
-        if (!hglb)
+        if (!hglb) {
+            CloseClipboard();
             return;
+        }
 
         const std::wstring wtext = stdext::latin1_to_utf16(text);
 

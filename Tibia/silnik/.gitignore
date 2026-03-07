@@ -89,3 +89,6 @@ canary_test/canary-ubuntu-24.04-linux-release-5688*
 budowa_silnik/
 iwyu/
 include-what-you-use/
+
+# Guardian status push repo (embedded git)
+canary_test/.guardian_status_push_repo/

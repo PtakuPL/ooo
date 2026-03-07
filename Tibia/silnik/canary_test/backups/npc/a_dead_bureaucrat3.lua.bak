@@ -53,8 +53,7 @@ npcType.onCloseChannel = function(npc, creature)
 end
 
 local function greetCallback(npc, creature)
-	local playerId = creature:getId()
-	npcHandler:setMessage(MESSAGE_GREET, "Hello " .. (Player(creature):getSex() == PLAYERSEX_FEMALE and "beautiful lady" or "handsome gentleman") .. ", welcome to the atrium of Pumin's Domain. We require some information from you before we can let you pass. Where do you want to go?")
+	npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.a_dead_bureaucrat.greet_msg_1", { args = function(player) return { player:getSex() == PLAYERSEX_FEMALE and "beautiful lady" or "handsome gentleman" } end })
 	return true
 end
 
@@ -80,7 +79,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, vocation:getName()) then
 		if npcHandler:getTopic(playerId) == 2 then
-			npcHandler:say("I was a " .. vocation:getName() .. ", too, before I died!! What do you want from me?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dead_bureaucrat3.say_5", { vocation:getName() })
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "145") then

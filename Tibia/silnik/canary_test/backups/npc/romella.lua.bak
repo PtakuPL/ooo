@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Check out my good and sturdy weapons!" },
+	{ i18nKey = "npc.romella.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()
@@ -120,8 +120,8 @@ keywordHandler:addKeyword({ "amazons" }, StdModule.say, { npcHandler = npcHandle
 keywordHandler:addKeyword({ "ferumbras" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.romella.stdmod_7" })
 keywordHandler:addKeyword({ "excalibug" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.romella.stdmod_8" })
 keywordHandler:addKeyword({ "swamps" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.romella.stdmod_9" })
-npcHandler:setMessage(MESSAGE_GREET, "I welcome thee, |PLAYERNAME|! I suppose you are looking for a trade in fine weapons!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Goodbye and please bring more gold next time <chuckles>. I mean, it would be nice to see you again.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.romella.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.romella.farewell_msg_1")
 -- On buy npc shop message
 npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)
 	npc:sellItem(player, itemId, amount, subType, 0, ignore, inBackpacks)

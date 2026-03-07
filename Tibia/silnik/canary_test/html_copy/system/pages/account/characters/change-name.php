@@ -94,7 +94,7 @@ else
 						}
 
 						$account_logged->setCustomField(setting('core.donate_column'), $points - setting('core.account_change_character_name_price'));
-						$account_logged->logAction('Changed name from <b>' . $old_name . '</b> to <b>' . $player->getName() . '</b>.');
+						$account_logged->logAction(str_replace(['$OLD$', '$NEW$'], [$old_name, $player->getName()], __('log_changed_name')));
 						$twig->display('success.html.twig', array(
 							'title' => 'Character Name Changed',
 							'description' => 'The character <b>'.$old_name.'</b> name has been changed to <b>' . $player->getName() . '</b>.'

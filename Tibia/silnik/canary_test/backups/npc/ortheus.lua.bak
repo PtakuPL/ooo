@@ -107,7 +107,7 @@ keywordHandler:addKeyword({ "augur" }, StdModule.say, { npcHandler = npcHandler,
 keywordHandler:addKeyword({ "mission" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ortheus.stdmod_17" })
 keywordHandler:addAliasKeyword({ "quest" })
 
-npcHandler:setMessage(MESSAGE_GREET, "What's your business here with the {magicians}, |PLAYERNAME|?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.ortheus.greet_msg_1")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

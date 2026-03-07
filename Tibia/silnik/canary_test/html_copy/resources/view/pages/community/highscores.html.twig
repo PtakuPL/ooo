@@ -53,6 +53,14 @@
 																<option value="8" {% if players.category == 'skill_sword' %}selected{% endif %}>{{ __('category_sword_fighting') }}</option>
 															</select>
 														</td>
+														<td>{{ __('highscores_filter_server') }}:</td>
+														<td>
+															<select name="gameMode">
+																<option value="all" {% if players.game_mode == 'all' %}selected{% endif %}>{{ __('server_all') }}</option>
+																<option value="classic74" {% if players.game_mode == 'classic74' %}selected{% endif %}>{{ __('server_classic74') }}</option>
+																<option value="modern" {% if players.game_mode == 'modern' %}selected{% endif %}>{{ __('server_modern') }}</option>
+															</select>
+														</td>
 														<td>
 															{% set button_name = __('submit') %}
                                                             {% include "blue_button.html.twig" %}

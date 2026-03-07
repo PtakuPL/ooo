@@ -11,7 +11,7 @@
 use MyAAC\Models\FAQ as ModelsFAQ;
 
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Frequently Asked Questions';
+$title = __('menu_faq');
 
 $canEdit = hasFlag(FLAG_CONTENT_FAQ) || superAdmin();
 if($canEdit)

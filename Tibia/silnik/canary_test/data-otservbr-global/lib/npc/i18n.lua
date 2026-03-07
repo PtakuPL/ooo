@@ -45,6 +45,7 @@ function NPC_LIB.i18n.ensureKeyExists(key)
 end
 
 -- Helper function for NPC to say localized message through npcHandler
+-- Resolves translation server-side, then uses npc:say() for proper NPC dialog window
 -- Usage: NPC_LIB.i18n.npcSay(npcHandler, npc, creature, key, args)
 function NPC_LIB.i18n.npcSay(npcHandler, npc, creature, key, args)
 	if not npcHandler or not npc or not creature then
@@ -56,7 +57,17 @@ function NPC_LIB.i18n.npcSay(npcHandler, npc, creature, key, args)
 		return false
 	end
 
-	player:sendLocalizedTextMessage(MESSAGE_NPC_FROM, key, normalizeArgs(args))
+	-- Resolve translation server-side (strip language tags)
+	local translatedMessage = stripI18nLanguageTags(player:getTranslation(key, normalizeArgs(args)))
+	if not translatedMessage or translatedMessage == "" then
+		translatedMessage = key -- fallback to key
+	end
+
+	-- Replace |PLAYERNAME| tag (normally done in SayEvent, but npcSay bypasses it)
+	translatedMessage = translatedMessage:gsub("|PLAYERNAME|", player:getName() or "")
+
+	-- Use npc:say with TALKTYPE_PRIVATE_NP to open NPC dialog window
+	npc:say(translatedMessage, TALKTYPE_PRIVATE_NP, false, player, npc:getPosition())
 	return true
 end
 
@@ -116,6 +127,7 @@ function NPC_LIB.i18n.setLocalizedTradeMessage(npcHandler, key, options)
 end
 
 -- Helper for NPC dialogue with multiple messages
+-- Resolves translations server-side, then uses npc:say() for proper NPC dialog window
 -- Usage: NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, keys, delay)
 function NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, keys, delay)
 	if not npcHandler or not npc or not creature or not keys then
@@ -136,14 +148,26 @@ function NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, keys, delay)
 			end
 
 			if scheduledDelay <= 0 then
-				player:sendLocalizedTextMessage(messageClass or MESSAGE_NPC_FROM, key, normalizeArgs(args))
+				-- Resolve translation server-side and use npc:say (strip language tags)
+				local translatedMessage = stripI18nLanguageTags(player:getTranslation(key, normalizeArgs(args)))
+				if not translatedMessage or translatedMessage == "" then
+					translatedMessage = key
+				end
+				translatedMessage = translatedMessage:gsub("|PLAYERNAME|", player:getName() or "")
+				npc:say(translatedMessage, TALKTYPE_PRIVATE_NP, false, player, npc:getPosition())
 			else
-				addEvent(function()
-					local p = Player(creature)
-					if p then
-						p:sendLocalizedTextMessage(messageClass or MESSAGE_NPC_FROM, key, normalizeArgs(args))
+				addEvent(function(npcId, playerId, msgKey, msgArgs)
+					local p = Player(playerId)
+					local npcEntity = Npc(npcId)
+					if p and npcEntity then
+						local translatedMsg = stripI18nLanguageTags(p:getTranslation(msgKey, msgArgs))
+						if not translatedMsg or translatedMsg == "" then
+							translatedMsg = msgKey
+						end
+						translatedMsg = translatedMsg:gsub("|PLAYERNAME|", p:getName() or "")
+						npcEntity:say(translatedMsg, TALKTYPE_PRIVATE_NP, false, p, npcEntity:getPosition())
 					end
-				end, scheduledDelay)
+				end, scheduledDelay, npc:getId(), player:getId(), key, normalizeArgs(args))
 			end
 		end
 	end

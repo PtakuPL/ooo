@@ -2,7 +2,7 @@
 <form action="{{ getLink('account/create') }}" method="post" id="createaccount">
 	{{ csrf() }}
 
-	{% set title = 'Create ' ~ config.lua.serverName ~ ' Account' %}
+		{% set title = __('account_create_title', {'SERVER': config.lua.serverName}) %}
 	{% set background = config('darkborder') %}
 	{% set tableClass = 'Table5' %}
 	{% set content %}
@@ -21,10 +21,10 @@
 								{% if not config.account_login_by_email %}
 								<tr>
 									<td class="LabelV" style="width: 150px">
-										<span{% if errors.account is defined %} class="red"{% endif %}>Account {% if constant('USE_ACCOUNT_NAME') %}Name{% else %}Number{% endif %}:</span>
-										{% if not constant('USE_ACCOUNT_NAME') %}
-										<div id="SuggestAccountNumber">[<a href="#">suggest number</a>]</div>
-										{% endif %}
+											<span{% if errors.account is defined %} class="red"{% endif %}>{% if constant('USE_ACCOUNT_NAME') %}{{ __('account_label_name') }}{% else %}{{ __('account_label_number') }}{% endif %}:</span>
+											{% if not constant('USE_ACCOUNT_NAME') %}
+											<div id="SuggestAccountNumber">[<a href="#">{{ __('account_create_suggest_number') }}</a>]</div>
+											{% endif %}
 									</td>
 									<td>
 										<input type="text" name="account" id="account_input" size="30" maxlength="{% if constant('USE_ACCOUNT_NAME') %}30{% else %}10{% endif %}" value="{{ account }}" autofocus/>
@@ -36,7 +36,7 @@
 								{{ hook('HOOK_ACCOUNT_CREATE_AFTER_ACCOUNT') }}
 								<tr>
 									<td class="LabelV" style="width: 150px">
-										<span{% if errors.email is defined %} class="red"{% endif %}>Email Address:</span>
+											<span{% if errors.email is defined %} class="red"{% endif %}>{{ __('email_address') }}</span>
 									</td>
 									<td>
 										<input type="text" name="email" id="email" size="30" maxlength="50" value="{{ email }}" />
@@ -48,7 +48,7 @@
 								</tr>
 
 								{% if setting('core.mail_enabled') and setting('core.account_mail_verify') %}
-									<tr><td></td><td><span><strong>Please use real address!<br/>We will send a link to validate your Email.</strong></span></td></tr>
+										<tr><td></td><td><span><strong>{{ __('account_create_mail_verify_notice') }}</strong></span></td></tr>
 								{% endif %}
 
 								{{ hook('HOOK_ACCOUNT_CREATE_AFTER_EMAIL') }}
@@ -56,7 +56,7 @@
 								{% if setting('core.account_country') %}
 									<tr>
 										<td class="LabelV" style="width: 150px">
-											<span{% if errors.country[0] is defined %} class="red"{% endif %}>Country:</span>
+												<span{% if errors.country[0] is defined %} class="red"{% endif %}>{{ __('label_country') }}:</span>
 										</td>
 										<td>
 											<select name="country" id="account_country">
@@ -76,7 +76,7 @@
 
 								<tr>
 									<td class="LabelV" style="width: 150px">
-										<span{% if errors.password is defined %} class="red"{% endif %}>Password:</span>
+											<span{% if errors.password is defined %} class="red"{% endif %}>{{ __('password') }}</span>
 									</td>
 									<td>
 										<input type="password" name="password" id="password" value="" size="30" maxlength="29" />
@@ -89,7 +89,7 @@
 
 								<tr>
 									<td class="LabelV" style="width: 150px">
-										<span{% if errors.password is defined %} class="red"{% endif %}>Repeat password:</span>
+											<span{% if errors.password is defined %} class="red"{% endif %}>{{ __('label_repeat_password') }}</span>
 									</td>
 									<td>
 										<input type="password" name="password_confirm" id="password_confirm" value="" size="30" maxlength="29" />
@@ -125,7 +125,7 @@
 
 								<tr>
 									<td class="LabelV" style="width: 150px">
-										<span{% if errors.name is defined %} class="red"{% endif %}>Character Name:</span>
+											<span{% if errors.name is defined %} class="red"{% endif %}>{{ __('label_character_name') }}:</span>
 									</td>
 									<td>
 										<input id="character_name" name="name" size="{{ setting('core.create_character_name_max_length') }}" maxlength="{{ setting('core.create_character_name_max_length') }}" value="{{ name }}"/>
@@ -144,7 +144,7 @@
 
 								<tr>
 									<td class="LabelV" style="width: 150px">
-										<span{% if errors.sex is defined %} class="red"{% endif %}>Sex:</span>
+											<span{% if errors.sex is defined %} class="red"{% endif %}>{{ __('label_sex') }}:</span>
 									</td>
 									<td>
 										<table width="100%">
@@ -179,7 +179,7 @@
 								{% if config.character_samples|length > 1 %}
 								<tr>
 									<td class="LabelV" style="width: 150px">
-										<span{% if errors.vocation is defined %} class="red"{% endif %}>Vocation:</span>
+											<span{% if errors.vocation is defined %} class="red"{% endif %}>{{ __('label_vocation') }}:</span>
 									</td>
 									<td>
 										<table width="100%" >
@@ -212,7 +212,7 @@
 								{% if config.character_towns|length > 1 %}
 								<tr>
 									<td class="LabelV" style="width: 150px">
-										<span{% if errors.town is defined %} class="red"{% endif %}>Select your town:</span>
+											<span{% if errors.town is defined %} class="red"{% endif %}>{{ __('label_select_town') }}:</span>
 									</td>
 									<td>
 										<table width="100%" >
@@ -262,13 +262,24 @@
 							<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
 								<tbody>
 								<tr>
-									<td colspan="2" ><b>Please select the following check box:</b></td>
-								</tr>
-								<tr>
-									<td colspan="2" >
-										<span><input type="checkbox" id="accept_rules" name="accept_rules" value="true"{% if accept_rules %}checked{% endif %}/> <label for="accept_rules">I agree to the <a href="?subtopic=rules" target="_blank">{{ config.lua.serverName }} Rules</a>.</label></span>
-									</td>
-								</tr>
+										<td colspan="2" ><b>{{ __('account_create_rules_select_label') }}</b></td>
+									</tr>
+									<tr>
+										<td colspan="2" >
+											<span>
+												<input type="checkbox" id="accept_rules" name="accept_rules" value="true"{% if accept_rules %}checked{% endif %}/>
+												<label for="accept_rules">{{ __('account_create_accept_rules_label', {'SERVER': config.lua.serverName}) }}</label>
+											</span>
+											<br/>
+											<small>
+												<a href="{{ constant('BASE_URL') }}?subtopic=rules&mode=all" target="_blank"{% if rules_mode == 'all' %} style="font-weight:bold;"{% endif %}>{{ __('server_mode_all') }}</a>
+												|
+												<a href="{{ constant('BASE_URL') }}?subtopic=rules&mode=classic74" target="_blank"{% if rules_mode == 'classic74' %} style="font-weight:bold;"{% endif %}>{{ __('server_mode_classic74') }}</a>
+												|
+												<a href="{{ constant('BASE_URL') }}?subtopic=rules&mode=modern" target="_blank"{% if rules_mode == 'modern' %} style="font-weight:bold;"{% endif %}>{{ __('server_mode_modern') }}</a>
+											</small>
+										</td>
+									</tr>
 								{% if errors.accept_rules is defined %}
 									<tr>
 										<td colspan="2">

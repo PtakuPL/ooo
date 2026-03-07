@@ -11,38 +11,49 @@ namespace App\Payment\PagSeguro;
 
 use PagSeguro\Configuration\Configure;
 use PagSeguro\Services\Transactions\Notification;
-use App\Model\Entity\Payments as EntityPayments;
-use App\Model\Entity\Account as EntityAccount;
+use App\Payment\CallbackProcessor;
 
 class NotifyPagSeguro {
 
     public static function ReturnPagSeguro()
     {
-        if($_SERVER['REQUEST_METHOD'] == 'POST'){
-            $filter_type = filter_input(INPUT_GET, $_POST['notificationType'], FILTER_SANITIZE_STRING);
-            $filter_notifycode = filter_input(INPUT_GET, $_POST['notificationCode'], FILTER_SANITIZE_STRING);
-            if($filter_type == 'transaction'){
-                $credentials = Configure::getAccountCredentials();
-                $transaction = Notification::check($credentials);
-
-                $reference = $transaction->getReference();
-                $transaction_code = $transaction->getCode();
-                $transaction_status = $transaction->getStatus()->getTypeFromValue();
-                
-                if ($transaction_status == 'PAID') {
-                    $dbPayment = EntityPayments::getPayment([ 'preference' => $reference])->fetchObject();
-                    $dbAccount = EntityAccount::getAccount([ 'id' => $dbPayment->account_id])->fetchObject();
-                    $finalcoins = $dbAccount->coins + $dbPayment->total_coins;
-
-                    EntityPayments::updatePayment([ 'reference' => $reference], [
-                        'status' => 4,
-                    ]);
-                    EntityAccount::updateAccount([ 'id' => $dbPayment->account_id], [
-                        'coins' => $finalcoins,
-                    ]);
-                }
-            }
+        if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+            return;
         }
+
+        $notificationType = filter_var($_POST['notificationType'] ?? '', FILTER_SANITIZE_SPECIAL_CHARS);
+        $notificationCode = filter_var($_POST['notificationCode'] ?? '', FILTER_SANITIZE_SPECIAL_CHARS);
+        if ($notificationType !== 'transaction' || $notificationCode === '') {
+            return;
+        }
+
+        $credentials = Configure::getAccountCredentials();
+        $transaction = Notification::check($credentials);
+        if (!$transaction) {
+            return;
+        }
+
+        $reference = (string) $transaction->getReference();
+        $transactionCode = (string) $transaction->getCode();
+        $transactionStatus = strtoupper((string) $transaction->getStatus()->getTypeFromValue());
+
+        if ($transactionStatus !== 'PAID' || $reference === '') {
+            return;
+        }
+
+        CallbackProcessor::processApproved(
+            'pagseguro',
+            $transactionCode !== '' ? $transactionCode : $notificationCode,
+            $reference,
+            [
+                'notification_type' => $notificationType,
+                'notification_code' => $notificationCode,
+                'transaction_code' => $transactionCode,
+                'transaction_status' => $transactionStatus,
+                'reference' => $reference,
+            ],
+            true
+        );
     }
 
 }

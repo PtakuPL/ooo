@@ -192,7 +192,7 @@ std::vector<ShapedGlyph> TextShaper::shape(const std::u32string& text32,
   hb_buffer_t* buf = hb_buffer_create();
 
   // Add codepoints in visual order
-  hb_buffer_add_codepoints(buf, visualOrder.data(), (int)visualOrder.size(), 0, (int)visualOrder.size());
+  hb_buffer_add_codepoints(buf, visualOrder.data(), static_cast<int>(visualOrder.size()), 0, static_cast<int>(visualOrder.size()));
 
   hb_buffer_set_script(buf, toHbScript(params.script));
   hb_buffer_set_direction(buf, toHbDir(params.direction));

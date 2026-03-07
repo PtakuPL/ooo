@@ -486,6 +486,9 @@ ThingPtr Tile::getTopUseThing()
     if (isEmpty())
         return nullptr;
 
+    if (m_things.empty())
+        return nullptr;
+
     for (const auto& thing : m_things) {
         if (thing->isForceUse() || (!thing->isGround() && !thing->isGroundBorder() && !thing->isOnBottom() && !thing->isOnTop() && !thing->isCreature() && !thing->isSplash()))
             return thing;

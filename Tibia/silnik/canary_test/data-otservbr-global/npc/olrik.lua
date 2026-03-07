@@ -71,9 +71,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:removeMoneyBank(5)
 			local number = math.random(6)
 			if number ~= 6 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.olrik.say_1", { number })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.olrik.say_3", { number })
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.olrik.say_2", { number })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.olrik.say_4", { number })
 				player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07, player:getStorageValue(Storage.Quest.U7_24.ThePostmanMissions.Mission07) + 1)
 				player:setStorageValue(Storage.Quest.U7_24.ThePostmanMissions.MeasurementsOlrik, 1)
 				npcHandler:setTopic(playerId, 0)

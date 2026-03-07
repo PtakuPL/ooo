@@ -45,7 +45,7 @@ if($player_name != null) {
 					$player->hide = $new_hideacc;
 					$player->comment = $new_comment;
 					$player->save();
-					$account_logged->logAction('Changed comment for character <b>' . $player->name . '</b>.');
+					$account_logged->logAction(str_replace('$NAME$', $player->name, __('log_changed_comment')));
 					$twig->display('success.html.twig', array(
 						'title' => 'Character Information Changed',
 						'description' => 'The character information has been changed.'

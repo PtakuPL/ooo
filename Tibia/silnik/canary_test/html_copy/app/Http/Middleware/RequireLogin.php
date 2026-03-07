@@ -16,7 +16,12 @@ class RequireLogin{
     public static function handle($request, $next)
     {
         if(!SessionPlayerLogin::isLogged()){
-            $request->getRouter()->redirect('/account/login');
+            $path = $request->getUri();
+            $query = $request->getQueryParams();
+            if (!empty($query)) {
+                $path .= '?' . http_build_query($query);
+            }
+            $request->getRouter()->redirect('/account/login?redirect=' . rawurlencode($path));
         }
         return $next($request);
     }

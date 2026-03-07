@@ -68,9 +68,9 @@ function addItemsToShoppingBag(npc, player)
 		local moneyRequired = playerData.moneyRequired
 		local itemList = playerData.itemList
 		if player:getMoney() + player:getBankBalance() < moneyRequired then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.imbuement_assistant.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.imbuement_assistant.say_4")
 			npcHandler:setTopic(player:getId(), 0)
-			return false, "npc.imbuement_assistant.not_enough_money"
+			return false, "You don't have enough money."
 		end
 
 		local totalWeight = 0
@@ -80,11 +80,11 @@ function addItemsToShoppingBag(npc, player)
 		end
 
 		if player:getFreeCapacity() < totalWeight then
-			return false, "npc.imbuement_assistant.not_enough_cap"
+			return false, "You don't have enough weight."
 		end
 
 		if player:getFreeBackpackSlots() == 0 then
-			return false, "npc.imbuement_assistant.not_enough_room"
+			return false, "You don't have enough room."
 		end
 
 		local shoppingBag = player:addItem(2856, 1) -- present box
@@ -103,6 +103,7 @@ end
 local imbuementPackagesData = {
 	-- Skill increase packages
 	["bash"] = {
+		text = "skill club",
 		moneyRequired = 6250,
 		itemList = {
 			{ itemId = 9657, count = 20 }, -- cyclops toe
@@ -111,6 +112,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["blockade"] = {
+		text = "skill shield",
 		moneyRequired = 16150,
 		itemList = {
 			{ itemId = 9641, count = 20 }, -- piece of scarab shell
@@ -119,6 +121,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["chop"] = {
+		text = "skill axe",
 		moneyRequired = 13050,
 		itemList = {
 			{ itemId = 10196, count = 20 }, -- orc tooth
@@ -127,6 +130,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["epiphany"] = {
+		text = "magic level",
 		moneyRequired = 10650,
 		itemList = {
 			{ itemId = 9635, count = 25 }, -- elvish talisman
@@ -135,6 +139,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["precision"] = {
+		text = "skill distance",
 		moneyRequired = 6750,
 		itemList = {
 			{ itemId = 11464, count = 25 }, -- elven scouting glass
@@ -143,6 +148,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["slash"] = {
+		text = "skill sword",
 		moneyRequired = 6550,
 		itemList = {
 			{ itemId = 9691, count = 25 }, -- lion's mane
@@ -152,6 +158,7 @@ local imbuementPackagesData = {
 	},
 	-- Additional attributes packages
 	["featherweight"] = {
+		text = "capacity increase",
 		moneyRequired = 12250,
 		itemList = {
 			{ itemId = 25694, count = 20 }, -- fairy wings
@@ -160,6 +167,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["strike"] = {
+		text = "critical",
 		moneyRequired = 16700,
 		itemList = {
 			{ itemId = 11444, count = 20 }, -- protective charm
@@ -168,6 +176,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["swiftness"] = {
+		text = "speed",
 		moneyRequired = 5225,
 		itemList = {
 			{ itemId = 17458, count = 15 }, -- damselfly wing
@@ -176,6 +185,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["vampirism"] = {
+		text = "life leech",
 		moneyRequired = 10475,
 		itemList = {
 			{ itemId = 9685, count = 25 }, -- vampire teeth
@@ -184,6 +194,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["vibrancy"] = {
+		text = "paralysis removal",
 		moneyRequired = 15000,
 		itemList = {
 			{ itemId = 22053, count = 20 }, -- wereboar hooves
@@ -192,6 +203,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["void"] = {
+		text = "mana leech",
 		moneyRequired = 17400,
 		itemList = {
 			{ itemId = 11492, count = 25 }, -- rope belt
@@ -201,6 +213,7 @@ local imbuementPackagesData = {
 	},
 	-- Elemental damage packages
 	["electrify"] = {
+		text = "energy damage",
 		moneyRequired = 3770,
 		itemList = {
 			{ itemId = 18993, count = 25 }, -- rorc feather
@@ -209,6 +222,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["frost"] = {
+		text = "ice damage",
 		moneyRequired = 9750,
 		itemList = {
 			{ itemId = 9661, count = 25 }, -- frosty heart
@@ -217,6 +231,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["reap"] = {
+		text = "death damage",
 		moneyRequired = 3475,
 		itemList = {
 			{ itemId = 11484, count = 25 }, -- pile of grave earth
@@ -225,6 +240,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["scorch"] = {
+		text = "fire damage",
 		moneyRequired = 15875,
 		itemList = {
 			{ itemId = 9636, count = 25 }, -- fiery heart
@@ -233,6 +249,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["venom"] = {
+		text = "earth damage",
 		moneyRequired = 1820,
 		itemList = {
 			{ itemId = 9686, count = 25 }, -- swamp grass
@@ -242,6 +259,7 @@ local imbuementPackagesData = {
 	},
 	-- Elemental protection packages
 	["cloud fabric"] = {
+		text = "energy protection",
 		moneyRequired = 13775,
 		itemList = {
 			{ itemId = 9644, count = 20 }, -- wyvern talisman
@@ -250,6 +268,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["demon presence"] = {
+		text = "holy protection",
 		moneyRequired = 20250,
 		itemList = {
 			{ itemId = 9639, count = 25 }, -- cultish robe
@@ -258,6 +277,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["dragon hide"] = {
+		text = "fire protection",
 		moneyRequired = 10850,
 		itemList = {
 			{ itemId = 5877, count = 20 }, -- green dragon leather
@@ -266,6 +286,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["lich shroud"] = {
+		text = "death protection",
 		moneyRequired = 5650,
 		itemList = {
 			{ itemId = 11466, count = 25 }, -- flask of embalming fluid
@@ -274,6 +295,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["quara scale"] = {
+		text = "ice protection",
 		moneyRequired = 3650,
 		itemList = {
 			{ itemId = 10295, count = 25 }, -- winter wolf fur
@@ -282,6 +304,7 @@ local imbuementPackagesData = {
 		},
 	},
 	["snake skin"] = {
+		text = "earth protection",
 		moneyRequired = 12550,
 		itemList = {
 			{ itemId = 17823, count = 25 }, -- piece of swampling wood
@@ -294,7 +317,7 @@ local imbuementPackagesData = {
 local function purchaseItems(npc, player, message)
 	local packageData = imbuementPackagesData[message]
 	if packageData and npcHandler:getTopic(player:getId()) == 1 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.imbuement_assistant.say_3", { tostring(packageData.moneyRequired) })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.imbuement_assistant.say_5", { packageData.text, packageData.moneyRequired })
 		npcHandler:setTopic(player:getId(), 2)
 		playerImbuementData[player:getId()] = {
 			moneyRequired = packageData.moneyRequired,
@@ -310,30 +333,32 @@ local function creatureSayCallback(npc, creature, type, message)
 		return false
 	end
 
+	local imbuementPackages =
+		"These are the available imbuement packages, Skill increase: {bash}, {blockade}, {chop}, {epiphany}, {precision}, {slash}. Additional attributes: {featherweight}, {strike}, {swiftness}, {vampirism}, {vibrancy}, {void}. Elemental damage: {electrify}, {frost}, {reap}, {scorch}, {venom}. Elemental protection: {cloud fabric}, {demon presence}, {dragon hide}, {lich shroud}, {quara scale}, {snake skin}."
 	if MsgContains(message, "imbuement packages") then
 		npcHandler:setTopic(playerId, 1)
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.imbuement_assistant.packages_list")
+		npcHandler:say(imbuementPackages, npc, creature)
 	elseif imbuementPackagesData[message] then
 		purchaseItems(npc, player, message)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 then
 		local success, message = addItemsToShoppingBag(npc, player)
 		if not success then
-			player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, message)
+			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, message)
 			npcHandler:setTopic(playerId, 1)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.imbuement_assistant.packages_list")
+			npcHandler:say(imbuementPackages, npc, player)
 			return
 		end
 
 		playerImbuementData[playerId] = nil
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.imbuement_assistant.say_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.imbuement_assistant.say_6")
 		npcHandler:setTopic(playerId, 1)
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.imbuement_assistant.packages_list")
+		npcHandler:say(imbuementPackages, npc, creature)
 	end
 end
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.imbuement_assistant.greet_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.imbuement_assistant.walkaway_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.imbuement_assistant.farewell_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME|, say {imbuement packages} or {trade} for buy imbuement items.")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "See you later |PLAYERNAME| come back soon.")
+npcHandler:setMessage(MESSAGE_FAREWELL, "See you later |PLAYERNAME| come back soon.")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
@@ -416,7 +441,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
+	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end

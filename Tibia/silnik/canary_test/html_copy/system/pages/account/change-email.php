@@ -80,7 +80,7 @@ else
 			$account_logged->setCustomField("email_new_time", 0);
 			$account_logged->setEmail($email_new);
 			$account_logged->save();
-			$account_logged->logAction('Account email changed to <b>' . $email_new . '</b>');
+			$account_logged->logAction(str_replace('$EMAIL$', $email_new, __('log_email_changed')));
 
 			$twig->display('success.html.twig', array(
 				'title' => 'Email Address Change Accepted',

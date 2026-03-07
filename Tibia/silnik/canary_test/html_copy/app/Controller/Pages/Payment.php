@@ -9,16 +9,71 @@
 
 namespace App\Controller\Pages;
 
+use App\DatabaseManager\Database;
 use App\Model\Entity\Account as EntityAccount;
-use App\Payment\PagSeguro\ApiPagSeguro;
-use App\Payment\MercadoPago\ApiMercadoPago;
-use App\Payment\PayPal\ApiPayPal;
-use \App\Utils\View;
-use App\Session\Admin\Login as SessionAdminLogin;
 use App\Model\Entity\Payments as EntityPayments;
 use App\Model\Entity\ServerConfig as EntityServerConfig;
+use App\Payment\MercadoPago\ApiMercadoPago;
+use App\Payment\PagSeguro\ApiPagSeguro;
+use App\Session\Admin\Login as SessionAdminLogin;
+use App\Utils\View;
 
-class Payment extends Base{
+class Payment extends Base
+{
+    private const WORLD_CLASSIC = 0;
+    private const WORLD_MODERN = 1;
+
+    private static function parseWorldId($value): int
+    {
+        $worldId = filter_var($value, FILTER_SANITIZE_NUMBER_INT);
+        $worldId = is_numeric($worldId) ? (int) $worldId : self::WORLD_CLASSIC;
+        return $worldId === self::WORLD_MODERN ? self::WORLD_MODERN : self::WORLD_CLASSIC;
+    }
+
+    private static function worldModeById(int $worldId): string
+    {
+        return $worldId === self::WORLD_MODERN ? 'modern' : 'classic74';
+    }
+
+    private static function worldLabelById(int $worldId): string
+    {
+        return $worldId === self::WORLD_MODERN ? 'Modern' : 'Classic 7.4';
+    }
+
+    private static function paymentTableHasColumn(string $column): bool
+    {
+        static $cache = [];
+        if (isset($cache[$column])) {
+            return $cache[$column];
+        }
+
+        $database = new Database('canary_payments');
+        $stmt = $database->execute("SHOW COLUMNS FROM canary_payments LIKE '" . $column . "'");
+        $cache[$column] = (bool) $stmt->fetchObject();
+        return $cache[$column];
+    }
+
+    private static function appendWorldContext(array $order, int $worldId): array
+    {
+        if (self::paymentTableHasColumn('world_id')) {
+            $order['world_id'] = $worldId;
+        }
+
+        if (self::paymentTableHasColumn('game_mode')) {
+            $order['game_mode'] = self::worldModeById($worldId);
+        }
+
+        return $order;
+    }
+
+    private static function requirePostKeys($request, array $postVars, array $required): void
+    {
+        foreach ($required as $key) {
+            if (!isset($postVars[$key])) {
+                $request->getRouter()->redirect('/payment');
+            }
+        }
+    }
 
     public static function viewPayment()
     {
@@ -26,6 +81,7 @@ class Payment extends Base{
         $dbAccount = EntityAccount::getAccount([ 'id' => $idLogged])->fetchObject();
         $donateConfigs = EntityServerConfig::getInfoWebsite([ 'id' => 1])->fetchObject();
 
+        $arrayProducts = [];
         $select_products = EntityServerConfig::getProducts(null, 'id ASC');
         $product_web_id = 192;
         while ($product = $select_products->fetchObject()) {
@@ -39,12 +95,16 @@ class Payment extends Base{
             ];
         }
 
+        $selectedWorldId = self::parseWorldId($_GET['payment_world_id'] ?? ($_GET['worldId'] ?? ($_GET['world'] ?? 0)));
+
         $content = View::render('pages/shop/payment', [
             'email' => $dbAccount->email ?? null,
             'products' => $arrayProducts,
             'active_mercadopago' => $donateConfigs->mercadopago,
             'active_pagseguro' => $donateConfigs->pagseguro,
             'active_paypal' => $donateConfigs->paypal,
+            'selected_world_id' => $selectedWorldId,
+            'selected_world_name' => self::worldLabelById($selectedWorldId),
         ]);
         return parent::getBase('Webshop', $content, 'donate');
     }
@@ -54,22 +114,17 @@ class Payment extends Base{
         $idLogged = SessionAdminLogin::idLogged();
         $dbAccount = EntityAccount::getAccount([ 'id' => $idLogged])->fetchObject();
         $postVars = $request->getPostVars();
+        self::requirePostKeys($request, $postVars, ['payment_country', 'payment_method', 'payment_coins', 'payment_world_id']);
 
-        if(!isset($postVars['payment_country'])){
-            $request->getRouter()->redirect('/payment');
-        }
-        if(!isset($postVars['payment_method'])){
-            $request->getRouter()->redirect('/payment');
-        }
-        if(!isset($postVars['payment_coins'])){
-            $request->getRouter()->redirect('/payment');
-        }
+        $worldId = self::parseWorldId($postVars['payment_world_id']);
 
         $content = View::render('pages/shop/paymentdata', [
             'country' => $postVars['payment_country'],
             'coins' => $postVars['payment_coins'],
             'method' => $postVars['payment_method'],
             'email' => $dbAccount->email ?? null,
+            'world_id' => $worldId,
+            'world_name' => self::worldLabelById($worldId),
         ]);
         return parent::getBase('Webshop', $content, 'donate');
     }
@@ -78,16 +133,18 @@ class Payment extends Base{
     {
         $donateConfigs = EntityServerConfig::getInfoWebsite([ 'id' => 1])->fetchObject();
         $postVars = $request->getPostVars();
+        self::requirePostKeys($request, $postVars, ['payment_email', 'payment_coins', 'payment_method', 'payment_country', 'payment_world_id']);
 
-        if(!isset($postVars['payment_email'])){
-            $request->getRouter()->redirect('/payment');
-        }
         if(!filter_var($postVars['payment_email'], FILTER_VALIDATE_EMAIL)){
             $request->getRouter()->redirect('/payment');
         }
 
-        $filter_coins = filter_var($postVars['payment_coins'], FILTER_SANITIZE_NUMBER_INT);
+        $filter_coins = (int) filter_var($postVars['payment_coins'], FILTER_SANITIZE_NUMBER_INT);
+        if ($filter_coins < 1) {
+            $request->getRouter()->redirect('/payment');
+        }
         $final_price = $filter_coins * $donateConfigs->coin_price;
+        $worldId = self::parseWorldId($postVars['payment_world_id']);
         
         $content = View::render('pages/shop/paymentconfirm', [
             'method' => $postVars['payment_method'],
@@ -95,6 +152,8 @@ class Payment extends Base{
             'country' => $postVars['payment_country'],
             'email' => $postVars['payment_email'],
             'price' => $final_price,
+            'world_id' => $worldId,
+            'world_name' => self::worldLabelById($worldId),
         ]);
         return parent::getBase('Webshop', $content, 'donate');
     }
@@ -102,55 +161,43 @@ class Payment extends Base{
     public static function viewPaymentSummary($request)
     {
         $idLogged = SessionAdminLogin::idLogged();
-        $dbAccount = EntityAccount::getAccount([ 'id' => $idLogged])->fetchObject();
         $donateConfigs = EntityServerConfig::getInfoWebsite([ 'id' => 1])->fetchObject();
         $postVars = $request->getPostVars();
 
-        if($postVars['TermsOfService'] != 1){
+        if (!isset($postVars['TermsOfService']) || (int)$postVars['TermsOfService'] !== 1) {
             $request->getRouter()->redirect('/payment');
         }
-        if(!isset($postVars['payment_coins'])){
-            $request->getRouter()->redirect('/payment');
-        }
-        if(!isset($postVars['payment_method'])){
-            $request->getRouter()->redirect('/payment');
-        }
-        if(!isset($postVars['payment_country'])){
-            $request->getRouter()->redirect('/payment');
-        }
-        if(!isset($postVars['payment_email'])){
-            $request->getRouter()->redirect('/payment');
-        }
+        self::requirePostKeys($request, $postVars, ['payment_coins', 'payment_method', 'payment_country', 'payment_email', 'payment_world_id']);
 
-        if ($donateConfigs->mercadopago == 0) {
-            $request->getRouter()->redirect('/payment');
-        }
-        if ($donateConfigs->pagseguro == 0) {
-            $request->getRouter()->redirect('/payment');
-        }
-        if ($donateConfigs->paypal == 0) {
-            $request->getRouter()->redirect('/payment');
-        }
-
-        if(!filter_var($postVars['payment_email'], FILTER_VALIDATE_EMAIL)){
+        if (!filter_var($postVars['payment_email'], FILTER_VALIDATE_EMAIL)) {
             $request->getRouter()->redirect('/payment');
         }
         $filter_email = filter_var($postVars['payment_email'], FILTER_SANITIZE_EMAIL);
 
         $filter_method = filter_var($postVars['payment_method'], FILTER_SANITIZE_SPECIAL_CHARS);
+        $url_method = 0;
         switch($filter_method)
         {
             case 'paypal':
                 $url_method = 1;
+                if ((int)$donateConfigs->paypal !== 1) {
+                    $request->getRouter()->redirect('/payment');
+                }
                 break;
             case 'pagseguro':
                 $url_method = 2;
+                if ((int)$donateConfigs->pagseguro !== 1) {
+                    $request->getRouter()->redirect('/payment');
+                }
                 break;
             case 'pix':
                 $url_method = 3;
                 break;
             case 'mercadopago':
                 $url_method = 4;
+                if ((int)$donateConfigs->mercadopago !== 1) {
+                    $request->getRouter()->redirect('/payment');
+                }
                 break;
             default:
                 $url_method = 0;
@@ -162,12 +209,16 @@ class Payment extends Base{
         if(!filter_var($postVars['payment_coins'], FILTER_VALIDATE_INT)){
             $request->getRouter()->redirect('/payment');
         }
-        $filter_coins = filter_var($postVars['payment_coins'], FILTER_SANITIZE_NUMBER_INT);
-        $final_price = $donateConfigs->coin_price;
-        if($final_price == 0){
+        $filter_coins = (int) filter_var($postVars['payment_coins'], FILTER_SANITIZE_NUMBER_INT);
+        if($filter_coins < 1){
             $request->getRouter()->redirect('/payment');
         }
-        $price = $final_price * $filter_coins;
+        $coin_price = (float)$donateConfigs->coin_price;
+        if($coin_price <= 0){
+            $request->getRouter()->redirect('/payment');
+        }
+        $price = $coin_price * $filter_coins;
+        $worldId = self::parseWorldId($postVars['payment_world_id']);
 
         // METHOD PAGSEGURO
         if($url_method == 2){
@@ -177,7 +228,7 @@ class Payment extends Base{
                 'item' => [
                     'id' => '0001',
                     'title' => $filter_coins.' Coins',
-                    'amount' => $final_price,
+                    'amount' => $coin_price,
                     'quantity' => $filter_coins,
                 ],
             ];
@@ -191,56 +242,41 @@ class Payment extends Base{
                 'status' => 0,
                 'date' => strtotime(date('Y-m-d h:i:s')),
             ];
-            EntityPayments::insertPayment($order);
+            EntityPayments::insertPayment(self::appendWorldContext($order, $worldId));
         }
 
         // METHOD PAYPAL (API v2)
-if ($url_method == 1) {
-    $reference = uniqid();
-    $checkout = [
-        'reference' => $reference,
-        'item' => [
-            'id' => '0001',
-            'title' => $filter_coins . ' Coins',
-            'amount' => $final_price,
-            'quantity' => $filter_coins,
-        ],
-    ];
-
-    // Zapis zamówienia jako "oczekujące" (status=0) – jak wcześniej
-    $order = [
-        'account_id'  => $idLogged,
-        'method'      => 'paypal',
-        'reference'   => $reference,
-        'total_coins' => $filter_coins,
-        'final_price' => $price,
-        'status'      => 0,
-        'date'        => strtotime(date('Y-m-d h:i:s')),
-    ];
-    EntityPayments::insertPayment($order);
-
-    // Nowe SDK: tworzymy ORDER i przekierowujemy użytkownika na PayPal
-    $description = $checkout['item']['title'];
-    $currency    = getenv('PAYPAL_CURRENCY') ?: 'USD'; // ustaw w .env, np. PLN/USD/EUR
-
-    $api = new \App\Payment\PayPal\ApiPayPal();
-    $approvalUrl = $api->createOrder((float)$price, $currency, $description, $reference);
-
-    header('Location: ' . $approvalUrl);
-    exit;
-}
-
-            $code_payment = ApiPayPal::createPayment($checkout, $filter_email);
-            $order = [
-                'account_id' => $idLogged,
-                'method' => 'paypal',
+        if ($url_method == 1) {
+            $reference = uniqid();
+            $checkout = [
                 'reference' => $reference,
+                'item' => [
+                    'id' => '0001',
+                    'title' => $filter_coins . ' Coins',
+                    'amount' => $coin_price,
+                    'quantity' => $filter_coins,
+                ],
+            ];
+
+            $order = [
+                'account_id'  => $idLogged,
+                'method'      => 'paypal',
+                'reference'   => $reference,
                 'total_coins' => $filter_coins,
                 'final_price' => $price,
-                'status' => 0,
-                'date' => strtotime(date('Y-m-d h:i:s')),
+                'status'      => 0,
+                'date'        => strtotime(date('Y-m-d h:i:s')),
             ];
-            EntityPayments::insertPayment($order);
+            EntityPayments::insertPayment(self::appendWorldContext($order, $worldId));
+
+            $description = $checkout['item']['title'];
+            $currency    = getenv('PAYPAL_CURRENCY') ?: 'USD';
+
+            $api = new \App\Payment\PayPal\ApiPayPal();
+            $approvalUrl = $api->createOrder((float)$price, $currency, $description, $reference);
+
+            header('Location: ' . $approvalUrl);
+            exit;
         }
 
         // METHOD PIX
@@ -254,7 +290,7 @@ if ($url_method == 1) {
                 'item' => [
                     'id' => '0001',
                     'title' => $filter_coins.' Coins',
-                    'amount' => $final_price,
+                    'amount' => $coin_price,
                     'quantity' => $filter_coins,
                 ],
             ];
@@ -268,7 +304,7 @@ if ($url_method == 1) {
                 'status' => 0,
                 'date' => strtotime(date('Y-m-d h:i:s')),
             ];
-            EntityPayments::insertPayment($order);
+            EntityPayments::insertPayment(self::appendWorldContext($order, $worldId));
         }
 
         $content = View::render('pages/shop/paymentsummary', [
@@ -278,5 +314,4 @@ if ($url_method == 1) {
         ]);
         return parent::getBase('Webshop', $content, 'donate');
     }
-
 }

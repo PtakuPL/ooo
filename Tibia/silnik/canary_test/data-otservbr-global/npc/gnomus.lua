@@ -225,7 +225,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if amount[playerId] > 1 then
 				plural = plural .. "s"
 			end
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_1", { amount[playerId], plural })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_18", { amount[playerId], plural })
 			npcHandler:setTopic(playerId, 56)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_10")
@@ -276,11 +276,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_17")
 		npcHandler:setTopic(playerId, 5)
 	elseif MsgContains(message, "gnomes") and npcHandler:getTopic(playerId) == 5 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_2", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points), 0) })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_19", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Gnomes.Points), 0) })
 	elseif MsgContains(message, "dwarves") and npcHandler:getTopic(playerId) == 5 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_3", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points), 0) })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_20", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Dwarves.Points), 0) })
 	elseif MsgContains(message, "scouts") and npcHandler:getTopic(playerId) == 5 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_4", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points), 0) })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomus.say_21", { math.max(player:getStorageValue(Storage.Quest.U11_50.DangerousDepths.Scouts.Points), 0) })
 	end
 
 	return true

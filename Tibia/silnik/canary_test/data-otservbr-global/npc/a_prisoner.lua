@@ -109,13 +109,13 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_prisoner.say_9")
 		npcHandler:setTopic(playerId, 7)
 	elseif MsgContains(message, "green") and npcHandler:getTopic(playerId) == 7 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_prisoner.say_10")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_prisoner.say_13")
 		npcHandler:setTopic(playerId, 8)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 8 then
 		if player:getStorageValue(Storage.Quest.U7_24.TheParadoxTower.Mathemagics) < 1 then
 			player:setStorageValue(Storage.Quest.U7_24.TheParadoxTower.Mathemagics, 1)
 			player:addAchievement("Mathemagician")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_prisoner.say_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_prisoner.say_14")
 			npcHandler:setTopic(playerId, 0)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_prisoner.say_12")

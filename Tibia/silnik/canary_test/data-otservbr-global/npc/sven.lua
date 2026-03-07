@@ -141,7 +141,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "no") then
 		if player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKillStatus) == 1 and npcHandler:getTopic(playerId) == 0 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sven.say_1", { player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKill) * 1500 })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sven.say_7", { player:getStorageValue(Storage.Quest.U8_0.TheIceIslands.HuskyKill) * 1500 })
 			npcHandler:setTopic(playerId, 10)
 		elseif npcHandler:getTopic(playerId) == 10 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.sven.say_6")

@@ -841,27 +841,27 @@
   },
   "npc.a_behemoth.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drži se dolje! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Drži se dolje! <daje vam detaljan izvještaj o aktivnostima čudovišta>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:22:02.958387Z"
+    "updated_at": "2026-02-21T09:33:30.279273Z"
   },
   "npc.a_behemoth.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drži se dolje! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Drži se dolje! <daje vam detaljan izvještaj o aktivnostima čudovišta>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:22:02.959068Z"
+    "updated_at": "2026-02-21T09:33:30.279820Z"
   },
   "npc.a_behemoth.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drži se dolje! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! Drži se dolje! <daje vam detaljan izvještaj o aktivnostima čudovišta>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:22:02.959732Z"
+    "updated_at": "2026-02-21T09:33:30.280294Z"
   },
   "npc.a_dead_bureaucrat.greet_msg_1": {
     "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
@@ -2193,51 +2193,51 @@
   },
   "npc.a_dragon_lord.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drži se dolje! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Drži se dolje! <daje vam detaljan izvještaj o aktivnostima čudovišta>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:24:25.462375Z"
+    "updated_at": "2026-02-21T09:33:33.252268Z"
   },
   "npc.a_dragon_lord.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drži se dolje! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Drži se dolje! <daje vam detaljan izvještaj o aktivnostima čudovišta>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:24:25.463262Z"
+    "updated_at": "2026-02-21T09:33:33.253020Z"
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drži se dolje! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Drži se dolje! <daje vam detaljan izvještaj o aktivnostima čudovišta>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:24:25.464085Z"
+    "updated_at": "2026-02-21T09:33:33.253713Z"
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drži se dolje! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Drži se dolje! <daje vam detaljan izvještaj o aktivnostima čudovišta>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:24:25.464991Z"
+    "updated_at": "2026-02-21T09:33:33.254196Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drži se dolje! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Drži se dolje! <daje vam detaljan izvještaj o aktivnostima čudovišta>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:24:25.465694Z"
+    "updated_at": "2026-02-21T09:33:36.745762Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! Drži se dolje! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! Drži se dolje! <daje vam detaljan izvještaj o aktivnostima čudovišta>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:24:25.466464Z"
+    "updated_at": "2026-02-21T09:33:36.746252Z"
   },
   "npc.a_lost_basher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
@@ -3334,5 +3334,61 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T07:56:36.270394Z"
+  },
+  "npc.canary.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Da, doviđenja i nemoj više dolaziti!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:33:25.312898Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Živio Pumin. Da, pozdrav.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:33:30.280752Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Živio Pumin. Da, pozdrav.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:33:30.281058Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Živio Pumin. Da, pozdrav.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:33:33.251333Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Živio Pumin. Da, pozdrav.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:33:33.251742Z"
+  },
+  "npc.a_fading_memory.greet_msg_1": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "Oh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:33:36.746514Z"
+  },
+  "npc.a_fluffy_squirrel.farewell_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:33:36.746733Z"
   }
 }

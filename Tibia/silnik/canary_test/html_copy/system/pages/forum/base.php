@@ -12,7 +12,7 @@
 use MyAAC\Forum;
 
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Forum';
+$title = __('menu_forum');
 
 class_exists('MyAAC\Forum');
 

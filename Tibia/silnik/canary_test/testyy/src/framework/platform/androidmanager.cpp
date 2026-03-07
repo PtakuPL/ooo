@@ -70,7 +70,7 @@ void AndroidManager::unZipAssetData() {
             AASSET_MODE_BUFFER);
 
     auto dataFileLength = AAsset_getLength(dataAsset);
-    char* dataContent = (char *) malloc(dataFileLength + 1);
+    char* dataContent = new char[dataFileLength + 1];
     AAsset_read(dataAsset, dataContent, dataFileLength);
     dataContent[dataFileLength] = '\0';
 

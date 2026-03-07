@@ -201,6 +201,11 @@ $found = true;
 
 // old support for pages like /?subtopic=accountmanagement
 $page = $_REQUEST['p'] ?? ($_REQUEST['subtopic'] ?? '');
+if (empty($page) && in_array(URI, ['rules', 'index.php/rules'], true)) {
+	$page = 'rules';
+	$_REQUEST['subtopic'] = 'rules';
+	$_GET['subtopic'] = 'rules';
+}
 if(!empty($page) && preg_match('/^[A-z0-9\-]+$/', $page)) {
 	if (isset($_REQUEST['p'])) { // some plugins may require this
 		$_REQUEST['subtopic'] = $_REQUEST['p'];
@@ -267,6 +272,10 @@ else {
 				}
 			} else if (str_contains($path, '__redirect__/')) {
 				$path = str_replace('__redirect__/', '', $path);
+				$qs = $_SERVER['QUERY_STRING'] ?? '';
+				if ($qs !== '') {
+					$path .= (str_contains($path, '?') ? '&' : '?') . $qs;
+				}
 				header('Location: ' . BASE_URL . $path);
 				exit;
 			} else {

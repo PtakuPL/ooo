@@ -26,7 +26,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "<sigh> The world has grown complicated since my youth." },
+	{ i18nKey = "npc.rotem_valos.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

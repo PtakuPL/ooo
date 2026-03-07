@@ -704,58 +704,28 @@ function getSkillName($skillId, $suffix = true)
 	switch($skillId)
 	{
 		case POT::SKILL_FIST:
-		{
-			$tmp = 'fist';
-			if($suffix)
-				$tmp .= ' fighting';
-
-			return $tmp;
-		}
+			return 'walka wręcz';
 		case POT::SKILL_CLUB:
-		{
-			$tmp = 'club';
-			if($suffix)
-				$tmp .= ' fighting';
-
-			return $tmp;
-		}
+			return 'walka maczugą';
 		case POT::SKILL_SWORD:
-		{
-			$tmp = 'sword';
-			if($suffix)
-				$tmp .= ' fighting';
-
-			return $tmp;
-		}
+			return 'walka mieczem';
 		case POT::SKILL_AXE:
-		{
-			$tmp = 'axe';
-			if($suffix)
-				$tmp .= ' fighting';
-
-			return $tmp;
-		}
+			return 'walka toporem';
 		case POT::SKILL_DIST:
-		{
-			$tmp = 'distance';
-			if($suffix)
-				$tmp .= ' fighting';
-
-			return $tmp;
-		}
+			return 'walka dystansowa';
 		case POT::SKILL_SHIELD:
-			return 'shielding';
+			return 'obrona tarczą';
 		case POT::SKILL_FISH:
-			return 'fishing';
+			return 'wędkarstwo';
 		case POT::SKILL__MAGLEVEL:
-			return 'magic level';
+			return 'poziom magii';
 		case POT::SKILL__LEVEL:
-			return 'level';
+			return 'poziom';
 		default:
 			break;
 	}
 
-	return 'unknown';
+	return 'nieznana';
 }
 
 /**
@@ -1185,7 +1155,7 @@ function csrfProtect(): void
 {
 	if (!isValidToken()) {
 		$lastUri = BASE_URL . str_replace_first('/', '', getSession('last_uri'));
-		echo 'Request has been cancelled due to security reasons - token is invalid. Go <a href="' . $lastUri . '">back</a>';
+		echo __('csrf_invalid_token') . ' <a href="' . $lastUri . '">' . __('back') . '</a>';
 		exit();
 	}
 }
@@ -1316,14 +1286,17 @@ function clearCache()
 
 		// highscores cache
 		$configHighscoresPerPage = setting('core.highscores_per_page');
-		$skills = [POT::SKILL_FIST, POT::SKILL_CLUB, POT::SKILL_SWORD, POT::SKILL_AXE, POT::SKILL_DIST, POT::SKILL_SHIELD, POT::SKILL_FISH, POT::SKILL_LEVEL, POT::SKILL__MAGLEVEL, SKILL_FRAGS, SKILL_BALANCE];
+		$skills = [POT::SKILL_FIST, POT::SKILL_CLUB, POT::SKILL_SWORD, POT::SKILL_AXE, POT::SKILL_DIST, POT::SKILL_SHIELD, POT::SKILL_FISH, POT::SKILL_LEVEL, POT::SKILL__MAGLEVEL, SKILL_FRAGS, SKILL_BALANCE, SKILL_ONLINETIME];
+		$modes = ['all', 'classic74', 'modern'];
 		foreach ($skills as $skill) {
 			// config('vocations') may be empty after previous cache clear
 			$vocations = (config('vocations') ?? []) + ['all'];
 			foreach ($vocations as $vocation) {
-				for($page = 0; $page < 10; $page++) {
-					$cacheKey = 'highscores_' . $skill . '_' . strtolower($vocation) . '_' . $page . '_' . $configHighscoresPerPage;
-					$keysToClear[] = $cacheKey;
+				foreach ($modes as $mode) {
+					for($page = 1; $page <= 10; $page++) {
+						$cacheKey = 'highscores_' . $skill . '_' . strtolower((string)$vocation) . '_' . $mode . '_' . $page . '_' . $configHighscoresPerPage;
+						$keysToClear[] = $cacheKey;
+					}
 				}
 			}
 		}
@@ -1675,14 +1648,14 @@ function getAccountLoginByLabel()
 {
 	$ret = '';
 	if (config('account_login_by_email')) {
-		$ret = 'Email Address';
+		$ret = rtrim(__('email_address'), ':');
 		if (config('account_login_by_email_fallback')) {
-			$ret .= ' or ';
+			$ret .= ' ' . __('or_word') . ' ';
 		}
 	}
 
 	if (!config('account_login_by_email') || config('account_login_by_email_fallback')) {
-		$ret .= 'Account ' . (USE_ACCOUNT_NAME ? 'Name' : 'Number');
+		$ret .= USE_ACCOUNT_NAME ? __('account_label_name') : __('account_label_number');
 	}
 
 	return $ret;

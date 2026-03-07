@@ -134,10 +134,10 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.trisha.say_1", "npc.trisha.say_2", "npc.trisha.say_3", "npc.trisha.say_4", "npc.trisha.say_5", "npc.trisha.say_6", "npc.trisha.say_7"}, 100)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.trisha.say_10", "npc.trisha.say_11", "npc.trisha.say_12", "npc.trisha.say_13", "npc.trisha.say_5", "npc.trisha.say_6", "npc.trisha.say_7" }, 100)
 			npcHandler:setTopic(playerId, 2)
 		elseif MsgContains(message, "no") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.trisha.say_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.trisha.say_14")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif npcHandler:getTopic(playerId) == 2 then
@@ -145,10 +145,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(storage, 1)
 			-- This for default start of outfit and addon quests
 			player:setStorageValue(Storage.OutfitQuest.DefaultStart, 1)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.trisha.say_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.trisha.say_15")
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.trisha.say_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.trisha.say_16")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif npcHandler:getTopic(playerId) == 3 then

@@ -28,7 +28,7 @@
 
 										<td style="word-break: break-all">
 											<span{% if guild.description is not empty %} valign="top"{% endif %}>
-												<b>{{ guild.name }}</b>{% if isAdmin %}<a href="{{ getLink('guilds') }}?action=delete_by_admin&guild={{ guild.name }}"> - Delete this guild (for ADMIN only!)</a>{% endif %}
+												<b>{{ guild.name }}</b>{% if guild.server is defined %} <small style="color:#888;">[{{ guild.server }}]</small>{% endif %}{% if isAdmin %}<a href="{{ getLink('guilds') }}?action=delete_by_admin&guild={{ guild.name }}"> - Delete this guild (for ADMIN only!)</a>{% endif %}
 											</span>
 
 											{% if guild.description is not empty %}
@@ -56,9 +56,9 @@
 								{% else %}
 								<tr bgcolor="{{ config.darkborder }}">
 									<td valign="top">
-										<b>Create Guild</b>
+										<b>Stwórz gildię</b>
 										<br/>
-										Actually there is no guild on server.{% if logged %} Create first! Press button "Create Guild"{% endif %}
+										Aktualnie nie ma żadnej gildii na serwerze.{% if logged %} Stwórz pierwszą! Naciśnij przycisk "Stwórz gildię"{% endif %}
 									</td>
 
 									{% if logged %}

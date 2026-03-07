@@ -60,69 +60,69 @@ local function playerSayCallback(npc, player, type, message)
 
 	local playerId = player:getId()
 	if MsgContains(message, "living") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_48")
 	elseif MsgContains(message, "mortal") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_49")
 	elseif MsgContains(message, "Goshnar") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, {"npc.flickering_soul.say_18", "npc.flickering_soul.say_19"}, 4000)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.flickering_soul.say_50", "npc.flickering_soul.say_51" }, 4000)
 	elseif MsgContains(message, "ambition") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, {"npc.flickering_soul.say_20", "npc.flickering_soul.say_21"}, 4000)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.flickering_soul.say_52", "npc.flickering_soul.say_53" }, 4000)
 	elseif MsgContains(message, "milestone") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_3")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_54")
 	elseif MsgContains(message, "everything") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_4")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_55")
 	elseif MsgContains(message, "accomplish") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, {"npc.flickering_soul.say_22", "npc.flickering_soul.say_23", "npc.flickering_soul.say_24"}, 4000)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.flickering_soul.say_56", "npc.flickering_soul.say_57", "npc.flickering_soul.say_58" }, 4000)
 	elseif MsgContains(message, "dead") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_59")
 	elseif MsgContains(message, "confident") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_6")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_60")
 	elseif MsgContains(message, "peace") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, {"npc.flickering_soul.say_25", "npc.flickering_soul.say_26", "npc.flickering_soul.say_27", "npc.flickering_soul.say_28"}, 4000)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.flickering_soul.say_61", "npc.flickering_soul.say_62", "npc.flickering_soul.say_63", "npc.flickering_soul.say_64" }, 4000)
 	elseif MsgContains(message, "soul") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, {"npc.flickering_soul.say_29", "npc.flickering_soul.say_30"}, 4000)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.flickering_soul.say_65", "npc.flickering_soul.say_66" }, 4000)
 	elseif MsgContains(message, "weariness") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, {"npc.flickering_soul.say_31", "npc.flickering_soul.say_32"}, 4000)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.flickering_soul.say_67", "npc.flickering_soul.say_68" }, 4000)
 	elseif MsgContains(message, "knowledge") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_7")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_69")
 	elseif MsgContains(message, "return") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, {"npc.flickering_soul.say_33", "npc.flickering_soul.say_34"}, 4000)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.flickering_soul.say_70", "npc.flickering_soul.say_71" }, 4000)
 	elseif MsgContains(message, "fetters") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, {"npc.flickering_soul.say_35", "npc.flickering_soul.say_36", "npc.flickering_soul.say_37"}, 4000)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.flickering_soul.say_72", "npc.flickering_soul.say_73", "npc.flickering_soul.say_74" }, 4000)
 	elseif MsgContains(message, "powerful") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_8")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_75")
 	elseif MsgContains(message, "task") then
 		local soulWarQuest = player:soulWarQuestKV()
 		-- Checks if the boss has already been defeated
 		if soulWarQuest:get("goshnar's-megalomania-killed") then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, {"npc.flickering_soul.say_38", "npc.flickering_soul.say_39"}, 2000)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.flickering_soul.say_76", "npc.flickering_soul.say_77" }, 2000)
 			npcHandler:setTopic(playerId, 2)
 			player:addOutfit("Revenant")
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_78")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_10")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_79")
 		soulWarQuest:set("teleport-access", true)
 	elseif MsgContains(message, "burden") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, {"npc.flickering_soul.say_40", "npc.flickering_soul.say_41"}, 5000)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.flickering_soul.say_80", "npc.flickering_soul.say_81" }, 5000)
 	elseif MsgContains(message, "shards") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_11")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_82")
 	elseif MsgContains(message, "hate") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, {"npc.flickering_soul.say_42", "npc.flickering_soul.say_43"}, 4000)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.flickering_soul.say_83", "npc.flickering_soul.say_84" }, 4000)
 	elseif MsgContains(message, "fermuba") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_12")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_85")
 	elseif MsgContains(message, "ferumbras") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, {"npc.flickering_soul.say_44", "npc.flickering_soul.say_45"}, 4000)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.flickering_soul.say_86", "npc.flickering_soul.say_87" }, 4000)
 	elseif MsgContains(message, "grandson") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_13")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_88")
 	elseif MsgContains(message, "pale worm") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_14")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_89")
 	elseif MsgContains(message, "necromant king") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, {"npc.flickering_soul.say_46", "npc.flickering_soul.say_47"}, 4000)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, player, { "npc.flickering_soul.say_90", "npc.flickering_soul.say_91" }, 4000)
 	elseif MsgContains(message, "minions") or MsgContains(message, "followers") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_15")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_92")
 	elseif MsgContains(message, "shards") then
 		local bossesYetToDefeat = {}
 		for bossName, _ in pairs(SoulWarQuest.miniBosses) do
@@ -133,26 +133,26 @@ local function playerSayCallback(npc, player, type, message)
 
 		local message
 		if #bossesYetToDefeat > 0 then
-			local bossList = table.concat(bossesYetToDefeat, ", ")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.shards_remaining", { bossList })
+			message = "You haven't killed " .. table.concat(bossesYetToDefeat, ", ") .. " yet."
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.shards_all_done")
+			message = "You have defeated all the Goshnar's Bosses. Your soul shines brighter with each victory."
 		end
+		npcHandler:say(message, npc, player)
 	elseif MsgContains(message, "taints") or MsgContains(message, "penalties") then
 		if player:getTaintLevel() ~= nil then
 			player:resetTaints(true)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_16")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_93")
 			return
 		end
 
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.flickering_soul.say_17")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.flickering_soul.say_94")
 	end
 	return true
 end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, playerSayCallback)
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.flickering_soul.greet_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "Be greeted, living soul!")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

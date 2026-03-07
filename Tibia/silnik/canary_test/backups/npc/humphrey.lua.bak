@@ -52,7 +52,7 @@ end
 
 -- Embrace of Tibia
 local blessKeyword = keywordHandler:addKeyword({ "embrace" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.humphrey.stdmod_1" })
-blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, text = "So receive the embrace of Tibia, pilgrim.", cost = "|BLESSCOST|", bless = 6 })
+blessKeyword:addChildKeyword({ "yes" }, StdModule.bless, { npcHandler = npcHandler, i18nKey = "npc.humphrey.keyword_1", cost = "|BLESSCOST|", bless = 6 })
 blessKeyword:addChildKeyword({ "" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.humphrey.stdmod_2", reset = true })
 
 -- Healing
@@ -108,9 +108,9 @@ keywordHandler:addAliasKeyword({ "spark" })
 keywordHandler:addKeyword({ "solitude" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.humphrey.stdmod_14" })
 keywordHandler:addAliasKeyword({ "wisdom" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome, noble |PLAYERNAME|")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good Bye, noble |PLAYERNAME|")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good Bye, noble |PLAYERNAME|")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.humphrey.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.humphrey.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.humphrey.farewell_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

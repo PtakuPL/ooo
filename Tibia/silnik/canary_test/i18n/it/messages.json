@@ -1,13 +1,13 @@
 {
-  "system.blessing.already": "[EN] You are already blessed.",
-  "system.blessing.received": "[EN] You received the remaining {1} blesses.",
-  "system.experience.gained": "[EN] You gained {1} experience points.",
-  "system.item.received": "[EN] You gained a {1}.",
-  "system.mission.points": "[EN] You earned {1} point(s) on the {2} mission.",
-  "system.mount.received": "[EN] Congratulations you received the {1} mount.",
-  "system.stash.count": "[EN] Your supply stash contains {1} items.",
-  "system.store.check_inbox": "[EN] Please make sure you have free slots in your store inbox.",
-  "system.trade.bought": "[EN] Bought {1}x {2} for {3} gold.",
-  "system.trade.sold": "[EN] Sold {1}x {2} for {3} gold.",
-  "system.venture.decay": "[EN] Venture the path of decay!"
+  "system.blessing.already": "Sei già benedetto.",
+  "system.blessing.received": "Hai ricevuto le rimanenti benedizioni {1}.",
+  "system.experience.gained": "Hai guadagnato {1} punti esperienza.",
+  "system.item.received": "Hai guadagnato un {1}.",
+  "system.mission.points": "Hai guadagnato {1} punto/i nella missione {2}.",
+  "system.mount.received": "Congratulazioni, hai ricevuto la montatura {1}.",
+  "system.stash.count": "La tua scorta di scorte contiene {1} articoli.",
+  "system.store.check_inbox": "Assicurati di avere spazi liberi nella casella di posta del tuo negozio.",
+  "system.trade.bought": "Comprato {1}x {2} per {3} oro.",
+  "system.trade.sold": "Venduto {1}x {2} per {3} oro.",
+  "system.venture.decay": "Avventurati sul sentiero della decadenza!"
 }

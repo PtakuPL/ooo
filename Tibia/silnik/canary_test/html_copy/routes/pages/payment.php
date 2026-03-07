@@ -7,12 +7,15 @@ use App\Controller\Pages\PremiumFeatures;
 use App\Payment\MercadoPago\NotifyMercadoPago;
 use App\Payment\PagSeguro\NotifyPagSeguro;
 use App\Payment\PayPal\NotifyPayPal;
+use App\Session\Admin\Login as SessionAdminLogin;
 
 $obRouter->get('/payment', [
-    'middlewares' => [
-        'required-login'
-    ],
     function($request){
+        if (!SessionAdminLogin::isLogged()) {
+            $response = new Response(302, '');
+            $response->addHeader('Location', '/account/login');
+            return $response;
+        }
         return new Response(200, Payment::viewPayment($request));
     }
 ]);

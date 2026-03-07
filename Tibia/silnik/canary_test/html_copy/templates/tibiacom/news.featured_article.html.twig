@@ -3,7 +3,7 @@
 	<div class="Corner-tr" style="background-image:url({{ template_path }}/images/content/corner-tr.gif);"></div>
 	<div class="Border_1" style="background-image:url({{ template_path }}/images/content/border-1.gif);"></div>
 	<div class="BorderTitleText" style="background-image:url({{ template_path }}/images/content/title-background-green.gif);"></div>
-	<img id="ContentBoxHeadline" class="Title" src="{{ template_path }}/images/header/headline-featuredarticle.gif" alt="Contentbox headline" data-i18n-attr="alt" data-i18n="news.featured.headline_alt|Contentbox headline" />
+	<img id="ContentBoxHeadline" class="Title" src="{{ template_path }}/headline.php?t={{ __('featured_article')|urlencode }}" alt="Contentbox headline" data-i18n-attr="alt" data-i18n="news.featured.headline_alt|Contentbox headline" />
 	<div class="Border_2">
 		<div class="Border_3">
 			<div class="BoxContent" style="background-image:url({{ template_path }}/images/content/scroll.gif);">
@@ -15,7 +15,7 @@
 				{% if article.read_more is not empty %}
 					<a id="Link" href="{{ article.read_more }}">
 						<span aria-hidden="true">&raquo;&nbsp;</span>
-						<span data-i18n="news.featured.read_more">read more</span>
+						<span data-i18n="news.featured.read_more">{{ __('news_featured_read_more') }}</span>
 					</a>
 				{% endif %}
 				<div id="TeaserText">

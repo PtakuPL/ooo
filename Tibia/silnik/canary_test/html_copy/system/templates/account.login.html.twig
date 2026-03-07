@@ -1,5 +1,5 @@
 {{ hook('HOOK_ACCOUNT_LOGIN_BEFORE_PAGE') }}
-Please enter your account {{ account|lower }} and your password.<br/><a href="{{ getLink('account/create') }}">Create an account</a> if you do not have one yet.<br/><br/>
+Podaj swoją nazwę konta ({{ account|lower }}) i hasło.<br/><a href="{{ getLink('account/create') }}">Załóż konto</a> jeśli jeszcze go nie masz.<br/><br/>
 <form action="{{ getLink('account/manage') }}" method="post">
 	{{ csrf() }}
 
@@ -15,7 +15,7 @@ Please enter your account {{ account|lower }} and your password.<br/><a href="{{
 					<span class="CaptionEdgeRightTop" style="background-image:url({{ template_path }}/images/content/box-frame-edge.gif);" /></span>
 					<span class="CaptionBorderTop" style="background-image:url({{ template_path }}/images/content/table-headline-border.gif);" ></span>
 					<span class="CaptionVerticalLeft" style="background-image:url({{ template_path }}/images/content/box-frame-vertical.gif);" /></span>
-					<div class="Text" >Account Login</div>
+					<div class="Text" >Logowanie do konta</div>
 					<span class="CaptionVerticalRight" style="background-image:url({{ template_path }}/images/content/box-frame-vertical.gif);" /></span>
 					<span class="CaptionBorderBottom" style="background-image:url({{ template_path }}/images/content/table-headline-border.gif);" ></span>
 					<span class="CaptionEdgeLeftBottom" style="background-image:url({{ template_path }}/images/content/box-frame-edge.gif);" /></span>
@@ -41,7 +41,7 @@ Please enter your account {{ account|lower }} and your password.<br/><a href="{{
 
 							<tr>
 								<td class="LabelV" >
-									<span{% if error is not null %} class="red"{% endif %}>Password:</span>
+									<span{% if error is not null %} class="red"{% endif %}>Hasło:</span>
 								</td>
 								<td><input type="password" name="password_login" size="30" maxlength="29" ></td>
 							</tr>
@@ -51,7 +51,7 @@ Please enter your account {{ account|lower }} and your password.<br/><a href="{{
 							<tr>
 								<td class="LabelV" ></td>
 								<td><input type="checkbox" id="remember_me" name="remember_me" value="true" />
-									<label for="remember_me"> Remember me</label></td>
+									<label for="remember_me"> Zapamiętaj mnie</label></td>
 							</tr>
 							{{ hook('HOOK_ACCOUNT_LOGIN_AFTER_REMEMBER_ME') }}
 						</table>

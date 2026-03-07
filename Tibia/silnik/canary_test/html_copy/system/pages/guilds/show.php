@@ -11,7 +11,7 @@
  */
 defined('MYAAC') or die('Direct access not allowed!');
 
-$title = 'Guilds';
+$title = __('menu_guilds');
 
 require __DIR__ . '/base.php';
 

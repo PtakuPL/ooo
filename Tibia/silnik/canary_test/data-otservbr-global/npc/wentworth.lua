@@ -76,17 +76,17 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	--Help
 	if MsgContains(message, "bank account") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.wentworth.say_1", "npc.wentworth.say_2"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.wentworth.say_1", "npc.wentworth.say_2" }, 10)
 		npcHandler:setTopic(playerId, 0)
 		return true
 		--Balance
 	elseif MsgContains(message, "balance") then
 		npcHandler:setTopic(playerId, 0)
 		if player:getBankBalance() >= 100000000 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_1", { player:getBankBalance() })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_45", { player:getBankBalance() })
 			return true
 		elseif player:getBankBalance() >= 10000000 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_2", { player:getBankBalance() })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_46", { player:getBankBalance() })
 			return true
 		elseif player:getBankBalance() >= 1000000 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_3", { player:getBankBalance() })
@@ -102,11 +102,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "deposit") then
 		count[playerId] = player:getMoney()
 		if count[playerId] < 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_42")
 			npcHandler:setTopic(playerId, 0)
 			return false
 		elseif not isValidMoney(count[playerId]) then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_43")
 			npcHandler:setTopic(playerId, 0)
 			return false
 		end
@@ -119,7 +119,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if string.match(message, "%d+") then
 				count[playerId] = getMoneyCount(message)
 				if count[playerId] < 1 then
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_4")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_47")
 					npcHandler:setTopic(playerId, 0)
 					return false
 				end
@@ -127,7 +127,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				npcHandler:setTopic(playerId, 2)
 				return true
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_6")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_48")
 				npcHandler:setTopic(playerId, 1)
 				return true
 			end
@@ -139,7 +139,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 2)
 			return true
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_8")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_49")
 			npcHandler:setTopic(playerId, 0)
 			return true
 		end
@@ -159,7 +159,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				end
 			end
 			if player:depositMoney(count[playerId]) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_9", { count[playerId] })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_50", { count[playerId] })
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_11")
 			end
@@ -173,7 +173,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		if string.match(message, "%d+") then
 			count[playerId] = getMoneyCount(message)
 			if isValidMoney(count[playerId]) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_10", { count[playerId] })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_51", { count[playerId] })
 				npcHandler:setTopic(playerId, 7)
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_14")
@@ -188,7 +188,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif npcHandler:getTopic(playerId) == 6 then
 		count[playerId] = getMoneyCount(message)
 		if isValidMoney(count[playerId]) then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_11", { count[playerId] })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_52", { count[playerId] })
 			npcHandler:setTopic(playerId, 7)
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_17")
@@ -201,10 +201,10 @@ local function creatureSayCallback(npc, creature, type, message)
 				if not player:withdrawMoney(count[playerId]) then
 					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_18")
 				else
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_12", { count[playerId] })
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_53", { count[playerId] })
 				end
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_44")
 			end
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
@@ -257,7 +257,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		else
 			count[playerId] = getMoneyCount(message)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_14", { count[playerId], count[playerId] * 100 })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_54", { count[playerId], count[playerId] * 100 })
 			npcHandler:setTopic(playerId, 18)
 		end
 	elseif npcHandler:getTopic(playerId) == 18 then
@@ -278,7 +278,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		else
 			count[playerId] = getMoneyCount(message)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_15", { count[playerId] * 100, count[playerId] })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.wentworth.say_55", { count[playerId] * 100, count[playerId] })
 			npcHandler:setTopic(playerId, 20)
 		end
 	elseif npcHandler:getTopic(playerId) == 20 then

@@ -185,27 +185,27 @@
   },
   "npc.a_behemoth.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:37:16.939755Z"
+    "updated_at": "2026-02-21T09:43:09.235445Z"
   },
   "npc.a_behemoth.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:37:16.940448Z"
+    "updated_at": "2026-02-21T09:43:09.236261Z"
   },
   "npc.a_behemoth.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:37:16.941136Z"
+    "updated_at": "2026-02-21T09:43:09.237024Z"
   },
   "npc.a_dead_bureaucrat.greet_msg_1": {
     "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
@@ -1457,99 +1457,99 @@
   },
   "npc.a_dragon_lord.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:41:54.015529Z"
+    "updated_at": "2026-02-21T09:43:09.239966Z"
   },
   "npc.a_dragon_lord.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:41:54.016507Z"
+    "updated_at": "2026-02-21T09:43:09.240663Z"
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:41:54.017289Z"
+    "updated_at": "2026-02-21T09:43:14.665029Z"
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:41:54.018228Z"
+    "updated_at": "2026-02-21T09:43:14.665927Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:41:54.019039Z"
+    "updated_at": "2026-02-21T09:43:14.666864Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:41:54.019835Z"
+    "updated_at": "2026-02-21T09:43:14.667632Z"
   },
   "npc.a_lost_basher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:41:54.021344Z"
+    "updated_at": "2026-02-21T09:43:18.830682Z"
   },
   "npc.a_lost_basher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:41:54.022142Z"
+    "updated_at": "2026-02-21T09:43:18.831373Z"
   },
   "npc.a_lost_basher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:41:54.023045Z"
+    "updated_at": "2026-02-21T09:43:18.832059Z"
   },
   "npc.a_lost_husher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:41:54.023948Z"
+    "updated_at": "2026-02-21T09:43:18.832746Z"
   },
   "npc.a_lost_husher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:41:54.024732Z"
+    "updated_at": "2026-02-21T09:43:18.833518Z"
   },
   "npc.a_lost_husher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Პსსსტ! შეინახეთ! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Პსსსტ! შეინახეთ! <მოგიწვდით დეტალურ ანგარიშს მონსტრების საქმიანობის შესახებ>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:41:54.025447Z"
+    "updated_at": "2026-02-21T09:43:18.834269Z"
   },
   "npc.a_lost_thrower.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
@@ -1825,11 +1825,11 @@
   },
   "npc.a_fluffy_squirrel.sendtrade_msg_1": {
     "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
-    "text": "Ჩჩჩ. ჩხ! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "text": "Ჩჩჩ. ჩხ! <დარწმუნებული არ ხართ, მაგრამ, როგორც ჩანს, ციყვს უნდა გაცვალოს თქვენი ძვირფასი მუწუკები უსარგებლო ქვებზე, რომლებიც მან იპოვა და მიიჩნია, რომ უვარგისად იყო.",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:42:19.572565Z"
+    "updated_at": "2026-02-21T09:43:14.669692Z"
   },
   "npc.a_fluffy_squirrel.stdmod_1": {
     "src_hash": "ac2f68634467394485198b5db1d3f7a3",
@@ -2022,5 +2022,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T06:42:19.585190Z"
+  },
+  "npc.canary.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Ჰო, ნახვამდის და აღარ მოხვიდე!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:04.529916Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Სეტყვა პუმინი. დიახ, სეტყვა.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:09.237798Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Სეტყვა პუმინი. დიახ, სეტყვა.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:09.238266Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Სეტყვა პუმინი. დიახ, სეტყვა.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:09.238740Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Სეტყვა პუმინი. დიახ, სეტყვა.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:09.239199Z"
+  },
+  "npc.a_fading_memory.greet_msg_1": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "Ოჰ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:14.667919Z"
+  },
+  "npc.a_fluffy_squirrel.farewell_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Ჩხ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:14.668242Z"
+  },
+  "npc.a_fluffy_squirrel.greet_msg_1": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "Ჩჰჩჰ?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:14.668509Z"
+  },
+  "npc.a_fluffy_squirrel.voice_1": {
+    "src_hash": "9280e35fe8a04c63939438a4aded92fa",
+    "text": "Ჩჩჩ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:14.670223Z"
+  },
+  "npc.a_fluffy_squirrel.walkaway_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Ჩხ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:18.829136Z"
+  },
+  "npc.a_ghostly_sage.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Ნახვამდის.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:18.829615Z"
+  },
+  "npc.a_ghostly_sage.walkaway_msg_1": {
+    "src_hash": "dd4dd73f3c2fe38f2d02c9b2a246f3ce",
+    "text": "Მშვიდობით მაშინ.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:43:18.829981Z"
   }
 }

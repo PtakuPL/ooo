@@ -8,7 +8,7 @@
  * @link      https://my-aac.org
  */
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Experience Table';
+$title = __('menu_exp_table');
 
 $experience = array();
 $columns = setting('core.experience_table_columns');

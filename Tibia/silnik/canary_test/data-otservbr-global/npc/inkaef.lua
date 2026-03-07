@@ -73,12 +73,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.inkaef.say_2", { ItemType(itemId):getName() })
 			end
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.inkaef.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.inkaef.say_4")
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			player:addItem(itemId, 1)
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.inkaef.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.inkaef.say_5")
 			player:setStorageValue(Storage.FirstMageWeapon, 1)
 		end
 		npcHandler:setTopic(playerId, 0)

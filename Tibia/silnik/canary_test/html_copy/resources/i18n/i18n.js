@@ -1,5 +1,5 @@
 (() => {
-  const DEFAULT_LANG = localStorage.getItem('lang') || (navigator.language?.slice(0, 2) || 'en');
+  const DEFAULT_LANG = 'pl';
   const MANIFEST_URL = '/resources/i18n/languages.json';
   const FALLBACK_LANGUAGES = [
     { code: 'en', label: 'English' },
@@ -8,8 +8,52 @@
 
   let availableLanguages = [...FALLBACK_LANGUAGES];
 
+  function getCookie(name) {
+    const cookie = document.cookie
+      .split(';')
+      .map(v => v.trim())
+      .find(v => v.startsWith(`${name}=`));
+    return cookie ? decodeURIComponent(cookie.split('=').slice(1).join('=')) : '';
+  }
+
+  function getQueryLanguage() {
+    const value = new URLSearchParams(window.location.search).get('lang');
+    return value ? value.trim() : '';
+  }
+
+  function setServerLocale(lang) {
+    const maxAge = 365 * 24 * 60 * 60;
+    document.cookie = `locale=${encodeURIComponent(lang)}; path=/; max-age=${maxAge}; SameSite=Lax`;
+  }
+
+  function syncServerLanguage(lang) {
+    setServerLocale(lang);
+    const url = new URL(window.location.href);
+    if (url.searchParams.get('lang') !== lang) {
+      url.searchParams.set('lang', lang);
+      window.location.replace(url.toString());
+      return true;
+    }
+    return false;
+  }
+
   function getLangPreference() {
-    return localStorage.getItem('lang') || DEFAULT_LANG;
+    const queryLang = getQueryLanguage();
+    if (queryLang) {
+      return resolveLanguage(queryLang);
+    }
+
+    const cookieLang = getCookie('locale');
+    if (cookieLang) {
+      return resolveLanguage(cookieLang);
+    }
+
+    const storedLang = localStorage.getItem('lang');
+    if (storedLang) {
+      return resolveLanguage(storedLang);
+    }
+
+    return DEFAULT_LANG;
   }
 
   async function loadTranslations(lang) {
@@ -37,7 +81,7 @@
 
   function resolveLanguage(candidate) {
     if (!candidate) {
-      return 'en';
+      return 'pl';
     }
 
     const normalized = candidate.toLowerCase();
@@ -48,16 +92,16 @@
 
     const short = normalized.split(/[-_]/)[0];
     const partial = availableLanguages.find(lang => lang.code.toLowerCase().startsWith(short));
-    return partial ? partial.code : 'en';
+    return partial ? partial.code : 'pl';
   }
 
   async function loadDictionary(lang) {
     try {
       return await loadTranslations(lang);
     } catch (err) {
-      if (lang !== 'en') {
-        console.warn(`Falling back to English translations because ${lang} failed.`, err);
-        return loadTranslations('en');
+      if (lang !== 'pl') {
+        console.warn(`Falling back to Polish translations because ${lang} failed.`, err);
+        return loadTranslations('pl');
       }
       throw err;
     }
@@ -97,7 +141,14 @@
 
   async function initI18n() {
     await ensureManifestLoaded();
-    const lang = resolveLanguage(getLangPreference());
+    const lang = getLangPreference();
+    localStorage.setItem('lang', lang);
+    const cookieLang = resolveLanguage(getCookie('locale'));
+    if (cookieLang !== lang) {
+      if (syncServerLanguage(lang)) {
+        return;
+      }
+    }
     try {
       const dict = await loadDictionary(lang);
       applyTranslations(dict);
@@ -134,8 +185,11 @@
       select.appendChild(opt);
     });
     select.addEventListener('change', () => {
-      localStorage.setItem('lang', select.value);
-      location.reload();
+      const selected = resolveLanguage(select.value);
+      localStorage.setItem('lang', selected);
+      if (!syncServerLanguage(selected)) {
+        location.reload();
+      }
     });
 
     container.appendChild(select);

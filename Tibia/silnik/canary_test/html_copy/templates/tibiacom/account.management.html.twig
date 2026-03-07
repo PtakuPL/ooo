@@ -54,8 +54,8 @@
 			<div class="BoxFrameVerticalRight" style="background-image:url({{ template_path }}/images/content/box-frame-vertical.gif);"></div>
 			<table>
 				<tr>
-					<td class="LabelV"  data-i18n="table.header.hint">Hint:</td>
-					<td style="width:100%;" data-i18n="account.recovery.prompt">You can register your account for increased protection. Click on "Register Account" and get your free recovery key today!</td>
+						<td class="LabelV"  data-i18n="table.header.hint">{{ __('table_header_hint') }}</td>
+						<td style="width:100%;" data-i18n="account.recovery.prompt">{{ __('account_recovery_prompt') }}</td>
 				</tr>
 			</table>
 			<div style="text-align:center">
@@ -79,6 +79,60 @@
 <br/>
 {% endif %}
 
+<a name="Active+Profile"></a>
+<div class="TopButtonContainer">
+	<div class="TopButton">
+		<a href="#top">
+			<img style="border:0px;" src="{{ template_path }}/images/content/back-to-top.gif" />
+		</a>
+	</div>
+</div>
+{% set title = __('global_profile') %}
+{% set tableClass = 'Table3' %}
+{% set content %}
+<table style="width:100%;">
+	<tr style="background-color: {{ config.lightborder }};">
+		<td class="LabelV" style="width:25%;">{{ __('active_profile') }}</td>
+		<td style="width:75%;"><b>{{ active_profile_label }}</b> ({{ active_profile_mode }})</td>
+	</tr>
+	<tr style="background-color: {{ config.darkborder }};">
+		<td class="LabelV">{{ __('switch_profile') }}</td>
+		<td>
+			<table class="GlobalProfileSwitchTable" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td style="border:0;padding-right:6px;">
+						<form action="{{ getLink('account/profile-switch') }}" method="post">
+							{{ csrf() }}
+							<input type="hidden" name="mode" value="all" />
+							<input type="hidden" name="redirect" value="/account/manage" />
+							<input class="GlobalSwitchButton" type="submit" value="All Worlds" {% if active_profile_mode == 'all' %}disabled="disabled"{% endif %} />
+						</form>
+					</td>
+					<td style="border:0;padding-right:6px;">
+						<form action="{{ getLink('account/profile-switch') }}" method="post">
+							{{ csrf() }}
+							<input type="hidden" name="mode" value="classic74" />
+							<input type="hidden" name="redirect" value="/account/manage" />
+							<input class="GlobalSwitchButton" type="submit" value="{{ world_labels.classic74 }}" {% if active_profile_mode == 'classic74' %}disabled="disabled"{% endif %} />
+						</form>
+					</td>
+					<td style="border:0;">
+						<form action="{{ getLink('account/profile-switch') }}" method="post">
+							{{ csrf() }}
+							<input type="hidden" name="mode" value="modern" />
+							<input type="hidden" name="redirect" value="/account/manage" />
+							<input class="GlobalSwitchButton" type="submit" value="{{ world_labels.modern }}" {% if active_profile_mode == 'modern' %}disabled="disabled"{% endif %} />
+						</form>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+{% endset %}
+{% include 'tables.headline.html.twig' %}
+<br/>
+
 {% if email_request %}
 <div class="SmallBox">
 	<div class="MessageContainer">
@@ -90,14 +144,14 @@
 			<div class="BoxFrameVerticalRight" style="background-image:url({{ template_path }}/images/content/box-frame-vertical.gif);"></div>
 			<table>
 				<tr>
-						<td class="LabelV" data-i18n="table.header.note">Note:</td>
-					<td style="width:100%;">
-						<span data-i18n="account.email_request.notice_prefix">A request has been submitted to change the email address of this account to </span>
-						<b>{{ email_new }}</b>
-						<span data-i18n="account.email_request.notice_middle">. After </span>
-						<b>{{ email_new_time|date("j F Y, G:i:s") }}</b>
-						<span data-i18n="account.email_request.notice_suffix"> you can accept the new email address and finish the process. Please cancel the request if you do not want your email address to be changed! Also cancel the request if you have no access to the new email address!</span>
-					</td>
+							<td class="LabelV" data-i18n="table.header.note">{{ __('table_header_note') }}</td>
+						<td style="width:100%;">
+							<span data-i18n="account.email_request.notice_prefix">{{ __('account_email_request_notice_prefix') }}</span>
+							<b>{{ email_new }}</b>
+							<span data-i18n="account.email_request.notice_middle">{{ __('account_email_request_notice_middle') }}</span>
+							<b>{{ email_new_time|date("j F Y, G:i:s") }}</b>
+							<span data-i18n="account.email_request.notice_suffix">{{ __('account_email_request_notice_suffix') }}</span>
+						</td>
 				</tr>
 			</table>
 			<div style="text-align:center">
@@ -129,7 +183,7 @@
 		</a>
 	</div>
 </div>
-{% set title = 'General Information' %}
+{% set title = __('account_section_general_information') %}
 {% set i18n_key = 'account.section.general_information' %}
 {% set tableClass = 'Table3' %}
 {% set content %}
@@ -145,32 +199,32 @@
 						{% if not config.account_login_by_email or config.account_login_by_email_fallback %}
 						<tr style="background-color: {{ config.lightborder }};" >
 								{% if constant('USE_ACCOUNT_NAME') %}
-								<td class="LabelV" data-i18n="account.info.account_name">Account Name:</td>
-								{% else %}
-								<td class="LabelV" data-i18n="account.info.account_number">Account Number:</td>
-								{% endif %}
+									<td class="LabelV" data-i18n="account.info.account_name">{{ __('account_info_account_name') }}</td>
+									{% else %}
+									<td class="LabelV" data-i18n="account.info.account_number">{{ __('account_info_account_number') }}</td>
+									{% endif %}
 							<td style="width:90%;" >{{ account }}</td>
 						</tr>
 						{% endif %}
 						<tr style="background-color: {{ config.darkborder }};" >
-								<td class="LabelV" data-i18n="account.info.email">Email Address:</td>
+									<td class="LabelV" data-i18n="account.info.email">{{ __('account_info_email') }}</td>
 							<td style="width:90%;" >{{ account_email }}{{ email_change|raw }}</td>
 						</tr>
 						<tr style="background-color: {{ config.lightborder }};" >
-								<td class="LabelV" data-i18n="account.info.created">Created:</td>
+									<td class="LabelV" data-i18n="account.info.created">{{ __('account_info_created') }}</td>
 							<td>{{ account_created|date("j F Y, G:i:s") }}</td>
 						</tr>
 						<tr style="background-color: {{ config.darkborder }};" >
-								<td class="LabelV" data-i18n="account.info.last_login">Last Login:</td>
+									<td class="LabelV" data-i18n="account.info.last_login">{{ __('account_info_last_login') }}</td>
 							<td>{{ "now"|date("j F Y, G:i:s") }}</td>
 						</tr>
 						{% autoescape false %}
 						<tr style="background-color: {{ config.lightborder }};">
-								<td class="LabelV" data-i18n="account.info.status">Account Status:</td>
+									<td class="LabelV" data-i18n="account.info.status">{{ __('account_info_status') }}</td>
 							<td>{{ account_status }}</td>
 						</tr>
 						<tr style="background-color: {{ config.darkborder }};" >
-								<td class="LabelV" data-i18n="account.info.registered">Registered:</td>
+									<td class="LabelV" data-i18n="account.info.registered">{{ __('account_info_registered') }}</td>
 							<td>{{ account_registered }}</td>
 						</tr>
 						{% endautoescape %}
@@ -249,7 +303,7 @@
 		</a>
 	</div>
 </div>
-{% set title = 'Public Information' %}
+{% set title = __('account_section_public_information') %}
 {% set i18n_key = 'account.section.public_information' %}
 {% set tableClass = 'Table5' %}
 {% set content %}
@@ -266,11 +320,11 @@
 							<td>
 								<table style="width:100%;">
 									<tr>
-											<td class="LabelV" data-i18n="account.info.real_name">Real Name:</td>
+												<td class="LabelV" data-i18n="account.info.real_name">{{ __('account_info_real_name') }}</td>
 										<td style="width:90%;" >{{ account_rlname }}</td>
 									</tr>
 									<tr>
-											<td class="LabelV" data-i18n="account.info.location">Location:</td>
+												<td class="LabelV" data-i18n="account.info.location">{{ __('account_info_location') }}</td>
 										<td style="width:90%;" >{{ account_location }}</td>
 									</tr>
 								</table>
@@ -311,7 +365,7 @@
 		</a>
 	</div>
 </div>
-{% set title = 'Account Logs' %}
+{% set title = __('account_section_logs') %}
 {% set i18n_key = 'account.section.logs' %}
 {% set tableClass = 'Table3' %}
 {% set content %}
@@ -325,9 +379,9 @@
 				<div class="TableContentContainer" >
 					<table class="TableContent" width="100%">
 						<tr class="LabelH">
-							<td style="width:60%" data-i18n="table.header.action">Action</td>
-							<td style="width:25%" data-i18n="table.header.date">Date</td>
-							<td style="width:15%" data-i18n="table.header.ip">IP</td>
+								<td style="width:60%" data-i18n="table.header.action">{{ __('table_header_action') }}</td>
+								<td style="width:25%" data-i18n="table.header.date">{{ __('table_header_date') }}</td>
+								<td style="width:15%" data-i18n="table.header.ip">{{ __('table_header_ip') }}</td>
 						</tr>
 						{% autoescape false %}
 						{% set i = 0 %}
@@ -366,7 +420,7 @@
 		</a>
 	</div>
 </div>
-{% set title = 'Characters' %}
+{% set title = __('account_section_characters') %}
 {% set i18n_key = 'account.section.characters' %}
 {% set content %}
 <table style="width:100%;">
@@ -377,34 +431,70 @@
 			</div>
 			<div class="TableContentAndRightShadow" style="background-image:url({{ template_path }}/images/content/table-shadow-rm.gif);">
 				<div class="TableContentContainer">
-					<table class="TableContent" width="100%">
-						<tr class="LabelH">
-							<td style="width:65%" data-i18n="table.header.name">Name</td>
-							<td style="width:15%" data-i18n="table.header.level">Level</td>
-							<td style="width:7%" data-i18n="table.header.status">Status</td>
-							<td style="width:5%">&#160;</td>
-						</tr>
-						{% set i = 0 %}
-						{% for player in players %}
-							{% set i = i + 1 %}
-						<tr style="background-color: {{ getStyle(i) }};">
-							<td>
-								<nobr>{{ i }}. {{ player.getName() }}{% if player.isDeleted() %}<span style="color: red"><b data-i18n="account.characters.deleted"> [ DELETED ] </b></span>{% endif %}</nobr>
-							</td>
-							<td>
-								<nobr>{{ player.getLevel() }} {{ config.vocations[player.getVocation()] }}</nobr>
-							</td>
-							{% if player.isOnline() %}
-							<td><span style="color: green"><b data-i18n="status.online">Online</b></span></td>
-							{% else %}
-							<td><span style="color: red"><b data-i18n="status.offline">Offline</b></span></td>
-							{% endif %}
-							<td>{% if not player.isDeleted() %}[<a href="{{ getLink('account/characters/change-comment?name=' ~ player.getName|urlencode) }}"  data-i18n="text.edit">Edit</a>]{% endif %}</td>
-						</tr>
-						{% endfor %}
-					</table>
+						<table class="TableContent" width="100%">
+							<tr class="LabelH">
+									<td style="width:50%" data-i18n="table.header.name">{{ __('table_header_name') }}</td>
+									<td style="width:10%" data-i18n="table.header.world">{{ __('table_header_world') }}</td>
+									<td style="width:20%" data-i18n="table.header.level">{{ __('table_header_level') }}</td>
+									<td style="width:10%" data-i18n="table.header.status">{{ __('table_header_status') }}</td>
+								<td style="width:5%">&#160;</td>
+							</tr>
+							{% set sections = [
+								{'key': 'classic74', 'label': world_labels.classic74},
+								{'key': 'modern', 'label': world_labels.modern},
+								{'key': 'unknown', 'label': world_labels.unknown}
+							] %}
+							{% for section in sections %}
+								{% set worldPlayers = characters_by_world[section.key]|default([]) %}
+								{% if active_profile_mode == 'all' or worldPlayers|length > 0 %}
+								<tr style="background-color: {{ config.darkborder }};">
+									<td colspan="5">
+										<b>{{ section.label }}</b>
+										{% if server_status is defined and server_status[section.key] is defined %}
+											{% if server_status[section.key].online %}
+												<span style="color: #00CC00; font-size: 11px; margin-left: 8px;">● ONLINE</span>
+												<small style="color: #AAA; margin-left: 4px;">({{ server_status[section.key].players }} online)</small>
+											{% else %}
+												<span style="color: #CC3333; font-size: 11px; margin-left: 8px;">● OFFLINE</span>
+											{% endif %}
+										{% endif %}
+									</td>
+								</tr>
+								{% set worldPlayers = characters_by_world[section.key]|default([]) %}
+								{% if worldPlayers|length == 0 %}
+									<tr style="background-color: {{ config.lightborder }};">
+											<td colspan="5"><span>{{ __('account_no_characters_found') }}</span></td>
+									</tr>
+								{% else %}
+									{% for player in worldPlayers %}
+										<tr style="background-color: {{ getStyle(loop.index) }};">
+											<td>
+													<nobr>{{ loop.index }}.
+													{% if player.outfit is defined and player.outfit %}
+														<img src="{{ player.outfit }}" style="width:32px;height:32px;vertical-align:middle;margin-right:4px;" alt="" />
+													{% endif %}
+													<a href="{{ getLink('characters') }}/{{ player.name|url_encode }}" style="text-decoration:none;color:inherit;">{{ player.name }}</a>{% if player.deleted %}<span style="color: red"><b data-i18n="account.characters.deleted"> [ {{ __('account_character_deleted_label') }} ] </b></span>{% endif %}</nobr>
+											</td>
+											<td>
+												<nobr>{{ section.label }}</nobr>
+											</td>
+											<td>
+												<nobr>{{ player.level }} {{ player.vocation }}</nobr>
+											</td>
+											{% if player.online %}
+													<td><span style="color: green"><b data-i18n="status.online">{{ __('status_online') }}</b></span></td>
+												{% else %}
+													<td><span style="color: red"><b data-i18n="status.offline">{{ __('status_offline') }}</b></span></td>
+												{% endif %}
+												<td>{% if not player.deleted %}[<a href="{{ getLink('account/characters/change-comment?name=' ~ player.editName) }}" data-i18n="text.edit">{{ __('common_edit') }}</a>]{% endif %}</td>
+										</tr>
+									{% endfor %}
+								{% endif %}
+								{% endif %}
+							{% endfor %}
+						</table>
+					</div>
 				</div>
-			</div>
 			<div class="TableShadowContainer">
 				<div class="TableBottomShadow" style="background-image:url({{ template_path }}/images/content/table-shadow-bm.gif);" >
 					<div class="TableBottomLeftShadow" style="background-image:url({{ template_path }}/images/content/table-shadow-bl.gif);"></div>
@@ -417,18 +507,32 @@
 		<td>
 			<table class="InnerTableButtonRow" cellpadding="0" cellspacing="0" >
 				<tr>
-					<td>
-						<table border="0" cellspacing="0" cellpadding="0" >
-							<tr>
-								<td style="border:0;">
-									<form action="{{ getLink('account/characters/create') }}" method="post" >
-										{{ csrf() }}
-										{{ include('buttons.create_character.html.twig') }}
-									</form>
-								</td>
-							</tr>
-						</table>
-					</td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" >
+								<tr>
+									<td style="border:0;">
+										<div style="text-align:center; margin-bottom: 4px;"><small>{{ world_labels.classic74 }}</small></div>
+										<form action="{{ getLink('account/characters/create') }}?mode=classic74" method="post" >
+											{{ csrf() }}
+											{{ include('buttons.create_character.html.twig') }}
+										</form>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td>
+							<table border="0" cellspacing="0" cellpadding="0" >
+								<tr>
+									<td style="border:0;">
+										<div style="text-align:center; margin-bottom: 4px;"><small>{{ world_labels.modern }}</small></div>
+										<form action="{{ getLink('account/characters/create') }}?mode=modern" method="post" >
+											{{ csrf() }}
+											{{ include('buttons.create_character.html.twig') }}
+										</form>
+									</td>
+								</tr>
+							</table>
+						</td>
 					{% if setting('core.account_change_character_name') %}
 					<td>
 						<table border="0" cellspacing="0" cellpadding="0" >

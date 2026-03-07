@@ -61,16 +61,18 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission) < 1 then
-		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jamesfrancis.greet_msg_1")
+		npcHandler:setMessage(MESSAGE_GREET, "Gerimor is right. As an expert for minotaurs I am researching these creatures for years. I thought I already knew a lot but the monsters in this cave are {different}. It's a big {mystery}.")
 		npcHandler:setTopic(playerId, 0)
 	elseif player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.JamesfrancisTask) <= 50 and player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission) < 3 then
-		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jamesfrancis.greet_msg_2")
+		npcHandler:setMessage(MESSAGE_GREET, "How is your {mission} going?")
 		npcHandler:setTopic(playerId, 0)
 	elseif player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission) == 4 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.jamesfrancis.greet_msg_3", "npc.jamesfrancis.greet_msg_4" }, 1000)
+		npcHandler:setMessage(MESSAGE_GREET, {
+			"You say the minotaurs were controlled by a very powerful boss they worshipped. This explains why they had so much more power than the normal ones. ...",
+			"I'm very thankful. Please go to the Druid of Crunor and tell him what you've seen. He might be interested in that.",
+		})
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission, 5)
 		npcHandler:setTopic(playerId, 0)
-		return false
 	end
 
 	return true
@@ -85,23 +87,23 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "mystery") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jamesfrancis.say_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jamesfrancis.say_6")
 		npcHandler:setTopic(playerId, 2)
 	elseif MsgContains(message, "favour") and npcHandler:getTopic(playerId) == 2 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jamesfrancis.say_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jamesfrancis.say_7")
 		npcHandler:setTopic(playerId, 3)
 	elseif MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.JamesfrancisTask) >= 50 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jamesfrancis.say_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jamesfrancis.say_8")
 			player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission, 3)
 			player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.BossAccessDoor, 1)
 			npcHandler:setTopic(playerId, 0)
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jamesfrancis.say_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jamesfrancis.say_9")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jamesfrancis.say_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jamesfrancis.say_10")
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.Mission, 2)
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.JamesfrancisTask, 0)
 		player:setStorageValue(Storage.Quest.U11_40.CultsOfTibia.Minotaurs.AccessDoor, 1)
@@ -111,7 +113,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.jamesfrancis.walkaway_msg_1")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
 
 npcHandler:setCallback(CALLBACK_SET_INTERACTION, onAddFocus)
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)

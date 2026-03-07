@@ -114,46 +114,30 @@ keywordHandler:addKeyword({ "lore" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "relics" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_5" })
 keywordHandler:addKeyword({ "left" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Some of the relics are still left in this world. They are insignia of the snake god's power. We know that you came for one of those insignia. ...",
-		"The Great {Snake} approves that you acquire its holy {sceptre}. We will not question the wisdom of the god to hand this relic to one of the false-born.",
-	},
+	i18nKey = "npc.ghost_of_a_priest.stdmod_20",
 })
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_6" })
 keywordHandler:addKeyword({ "banuta" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_7" })
 keywordHandler:addKeyword({ "apes" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_8" })
 keywordHandler:addKeyword({ "redeem" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"We have failed our god and paid a high price. But all tragedies and obstacles are just a test of the Great Snake. We will have to prove we are worthy to be its first true-born. ...",
-		"Only in the face of seemingly impossible odds, we can prove what we are capable of. If we overcome all obstacles, the favour of the Great {Snake} will return to us. ...",
-		"The god has cast us down only to elevate us to new heights if we are worthy.",
-	},
+	i18nKey = "npc.ghost_of_a_priest.stdmod_21",
 })
 keywordHandler:addKeyword({ "dragon" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_9" })
 keywordHandler:addKeyword({ "corruption" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_10" })
 keywordHandler:addKeyword({ "zalamon" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"We understand what he is and what he has become. We were not aware there were others like us left in the world. ...",
-		"Perhaps there is still a chance our race can redeem itself in the eyes of the Great {Snake}.",
-	},
+	i18nKey = "npc.ghost_of_a_priest.stdmod_22",
 })
 keywordHandler:addKeyword({ "snake" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"The father and mother of everything. Its first egg hatched the world. Its second egg hatched life itself. The lizard people were of its third litter. ...",
-		"Of the third litter but the first true-born, we became its keepers. As its first true children, we inherited the earth but it was taken from us by the {egg stealers}.",
-	},
+	i18nKey = "npc.ghost_of_a_priest.stdmod_23",
 })
 keywordHandler:addAliasKeyword({ "gods" })
 keywordHandler:addKeyword({ "egg stealers" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_11" })
 keywordHandler:addKeyword({ "birthright" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"We were the rulers of the world. We overlooked the world in the name of the Great {Snake}. The egg stealers and their creatures stole it from our claws. ...",
-		"We have failed the Great {Snake} and our {decline} is its punishment.",
-	},
+	i18nKey = "npc.ghost_of_a_priest.stdmod_24",
 })
 keywordHandler:addKeyword({ "decline" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_12" })
 keywordHandler:addKeyword({ "false born" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_13" })
@@ -162,27 +146,18 @@ keywordHandler:addKeyword({ "serpent spawn" }, StdModule.say, { npcHandler = npc
 keywordHandler:addKeyword({ "lizard" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_16" })
 keywordHandler:addKeyword({ "worthy" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"The Great Snake deserves that we try to use the best of our abilities and capabilities to serve it. Our existence is a test in this world corrupted by the egg stealers. ...",
-		"Only when we overcome all obstacles cast into our way, we will become worthy to serve the Great Snake in all eternity.",
-	},
+	i18nKey = "npc.ghost_of_a_priest.stdmod_25",
 })
 keywordHandler:addKeyword({ "creatures" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_17" })
 keywordHandler:addKeyword({ "temple" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_18" })
 keywordHandler:addKeyword({ "zao" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.ghost_of_a_priest.stdmod_19" })
 keywordHandler:addKeyword({ "left" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"Some of the relics are still left in this world. They are insignia of the snake god's power. We know that you came for one of those insignia. ...",
-		"The Great Snake approves that you acquire its holy sceptre. We will not question the wisdom of the god to hand this relic to one of the false-born.",
-	},
+	i18nKey = "npc.ghost_of_a_priest.stdmod_26",
 })
 keywordHandler:addKeyword({ "slumber" }, StdModule.say, {
 	npcHandler = npcHandler,
-	text = {
-		"We were once the heigh priests of the Great Snake. We willingly left our mortal existence behind to become bound to this temple. ...",
-		"In this state we can serve the Great Snake in a more suitable way. You have to understand that it is an honour and a privilege, not a sacrifice.",
-	},
+	i18nKey = "npc.ghost_of_a_priest.stdmod_27",
 })
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.ghost_of_a_priest.farewell_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.ghost_of_a_priest.greet_msg_1")

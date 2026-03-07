@@ -9,7 +9,7 @@
  * @link      https://my-aac.org
  */
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Support in game';
+$title = __('menu_support_list');
 
 if(setting('core.account_country'))
 	require SYSTEM . 'countries.conf.php';

@@ -9,11 +9,11 @@
  * @link      https://my-aac.org
  */
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Lost Account Interface';
+$title = __('lost_account');
 
 if(!setting('core.mail_enabled'))
 {
-	echo '<b>Account maker is not configured to send e-mails, you can\'t use Lost Account Interface. Contact with admin to get help.</b>';
+	echo '<b>System nie jest skonfigurowany do wysyłania e-maili. Nie możesz skorzystać z odzyskiwania konta. Skontaktuj się z administratorem.</b>';
 	return;
 }
 
@@ -39,14 +39,14 @@ elseif($action == 'step1' && $action_type == 'email')
 		if($account->isLoaded())
 		{
 			if($account->getCustomField('email_next') < time())
-				echo 'Please enter e-mail to account with this character.<BR>
+				echo 'Podaj adres e-mail przypisany do konta z tą postacią.<BR>
 				<form action="' . getLink('account/lost') . '?action=sendcode" method=post>
 				<input type=hidden name="character">
 				<table cellspacing=1 cellpadding=4 border=0 width=100%>
-				<TR><TD BGCOLOR="'.$config['vdarkborder'].'" class="white"><B>Please enter e-mail to account</B></TD></TR>
+				<TR><TD BGCOLOR="'.$config['vdarkborder'].'" class="white"><B>Podaj e-mail przypisany do konta</B></TD></TR>
 				<TR><TD BGCOLOR="'.$config['darkborder'].'">
-				Character: <INPUT TYPE=text NAME="nick" VALUE="'.$nick.'" SIZE="40" readonly="readonly"><BR>
-				E-mail to account:<INPUT TYPE=text NAME="email" VALUE="" SIZE="40"><BR>
+				Postać: <INPUT TYPE=text NAME="nick" VALUE="'.$nick.'" SIZE="40" readonly="readonly"><BR>
+				E-mail do konta:<INPUT TYPE=text NAME="email" VALUE="" SIZE="40"><BR>
 				</TD></TR>
 				</TABLE>
 				<BR>
@@ -57,16 +57,16 @@ elseif($action == 'step1' && $action_type == 'email')
 			{
 				$insec = (int)$account->getCustomField('email_next') - time();
 				$minutesleft = floor($insec / 60);
-				$secondsleft = $insec - ($minutesleft * 60);
-				$timeleft = $minutesleft.' minutes '.$secondsleft.' seconds';
-				echo 'Account of selected character (<b>'.$nick.'</b>) received e-mail in last '.ceil(setting('core.mail_lost_account_interval') / 60).' minutes. You must wait '.$timeleft.' before you can use Lost Account Interface again.';
+				$sekundleft = $insec - ($minutesleft * 60);
+				$timeleft = $minutesleft.' minut '.$secondsleft.' seconds';
+				echo 'Konto wybranej postaci (<b>'.$nick.'</b>) otrzymało e-mail w ciągu ostatnich '.ceil(setting('core.mail_lost_account_interval') / 60).' minut. Musisz poczekać '.$timeleft.' zanim będziesz mógł ponownie skorzystać z odzyskiwania konta.';
 			}
 		}
 		else
-			echo 'Player or account of player <b>' . $nick . '</b> doesn\'t exist.';
+			echo 'Gracz lub konto gracza <b>' . $nick . '</b> nie istnieje.';
 	}
 	else
-		echo 'Invalid player name format. If you have other characters on account try with other name.';
+		echo 'Nieprawidłowy format nazwy postaci. Jeśli masz inne postacie na koncie, spróbuj z inną nazwą.';
 	echo '<BR /><TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=100%><TR><TD><div style="text-align:center">
 				<a href="' . getLink('account/lost') . '" border="0"><IMG SRC="'.$template_path.'/images/global/buttons/sbutton_back.gif" NAME="Back" ALT="Back" BORDER=0 WIDTH=120 HEIGHT=18></a></div>
 				</TD></TR></FORM></TABLE></TABLE>';
@@ -91,30 +91,30 @@ elseif($action == 'sendcode')
 				{
 					$newcode = generateRandomString(30, true, false, true);
 					$mailBody = '
-					You asked to reset your ' . $config['lua']['serverName'] . ' password.<br/>
-					<p>Account name: '.$account->getName().'</p>
+					Prosiłeś o zresetowanie hasła do serwera ' . $config['lua']['serverName'] . '.<br/>
+					<p>Nazwa konta: '.$account->getName().'</p>
 					<br />
-					To do so, please click this link:
+					Aby to zrobić, kliknij ten link:
 					<p><a href="' . getLink('account/lost') . '?action=checkcode&code='.$newcode.'&character='.urlencode($nick).'">' . getLink('account/lost') . '?action=checkcode&code='.$newcode.'&character='.urlencode($nick).'</a></p>
-					<p>or open page: <i>' . getLink('account/lost') . '?action=checkcode</i> and in field "code" write <b>'.$newcode.'</b></p>
+					<p>lub otwórz stronę: <i>' . getLink('account/lost') . '?action=checkcode</i> i w polu "kod" wpisz <b>'.$newcode.'</b></p>
 					<br/>
-						<p>If you did not request a password change, you may ignore this message and your password will remain unchanged.';
+						<p>Jeśli nie prosiłeś o zmianę hasła, możesz zignorować tę wiadomość — hasło pozostanie niezmienione.';
 
 					$account_mail = $account->getCustomField('email');
-					if(_mail($account_mail, $config['lua']['serverName'].' - Recover your account', $mailBody))
+					if(_mail($account_mail, $config['lua']['serverName'].' - Odzyskiwanie konta', $mailBody))
 					{
 						$account->setCustomField('email_code', $newcode);
 						$account->setCustomField('email_next', (time() + setting('core.mail_lost_account_interval')));
-						echo '<br />Details about steps required to recover your account has been sent to <b>' . $account_mail . '</b>. You should receive this email within 15 minutes. Please check your inbox/spam directory.';
+						echo '<br />Szczegóły dotyczące odzyskania konta zostały wysłane na <b>' . $account_mail . '</b>. You should receive this email within 15 minutes. Please check your inbox/spam directory.';
 					}
 					else
 					{
 						$account->setCustomField('email_next', (time() + 60));
-						echo '<br /><p class="error">An error occurred while sending email! Try again later or contact with admin. For Admin: More info can be found in system/logs/mailer-error.log</p>';
+						echo '<br /><p class="error">Wystąpił błąd podczas wysyłania e-maila! Spróbuj ponownie później lub skontaktuj się z administratorem. Dla admina: więcej informacji w system/logs/mailer-error.log</p>';
 					}
 				}
 				else
-					echo 'Invalid e-mail to account of character <b>'.$nick.'</b>. Try again.';
+					echo 'Nieprawidłowy e-mail do konta postaci <b>'.$nick.'</b>. Spróbuj ponownie.';
 			}
 			else
 			{
@@ -149,13 +149,13 @@ elseif($action == 'step1' && $action_type == 'reckey')
 			$account_key = $account->getCustomField('key');
 			if(!empty($account_key))
 			{
-						echo 'If you enter right recovery key you will see form to set new e-mail and password to account. To this e-mail will be send your new password and account name.<BR>
+						echo 'Jeśli wpiszesz prawidłowy klucz odzyskiwania, wyświetli się formularz do ustawienia nowego e-maila i hasła. Na ten e-mail zostanie wysłana nazwa konta i nowe hasło.<BR>
 						<FORM ACTION="' . getLink('account/lost') . '?action=step2" METHOD=post>
 						<TABLE CELLSPACING=1 CELLPADDING=4 BORDER=0 WIDTH=100%>
-						<TR><TD BGCOLOR="'.$config['vdarkborder'].'" class="white"><B>Please enter your recovery key</B></TD></TR>
+						<TR><TD BGCOLOR="'.$config['vdarkborder'].'" class="white"><B>Podaj swój klucz odzyskiwania</B></TD></TR>
 						<TR><TD BGCOLOR="'.$config['darkborder'].'">
-						Character name:&nbsp;<INPUT TYPE=text NAME="nick" VALUE="'.$nick.'" SIZE="40" readonly="readonly"><BR />
-						Recovery key:&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE=text NAME="key" VALUE="" SIZE="40"><BR>
+						Nazwa postaci:&nbsp;<INPUT TYPE=text NAME="nick" VALUE="'.$nick.'" SIZE="40" readonly="readonly"><BR />
+						Klucz odzyskiwania:&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE=text NAME="key" VALUE="" SIZE="40"><BR>
 						</TD></TR>
 						</TABLE>
 						<BR>
@@ -164,7 +164,7 @@ elseif($action == 'step1' && $action_type == 'reckey')
 						</TD></TR></FORM></TABLE></TABLE>';
 			}
 			else
-				echo 'Account of this character has no recovery key!';
+				echo 'Konto tej postaci nie ma klucza odzyskiwania!';
 		}
 		else
 			echo 'Player or account of player <b>'.$nick.'</b> doesn\'t exist.';
@@ -218,29 +218,29 @@ elseif($action == 'step2')
 					{
 					with (thisform)
 					{
-					if (validate_required(email,"Please enter your e-mail!")==false)
+					if (validate_required(email,"Podaj swój e-mail!")==false)
 					  {email.focus();return false;}
-					if (validate_email(email,"Invalid e-mail format!")==false)
+					if (validate_email(email,"Nieprawidłowy format e-maila!")==false)
 					  {email.focus();return false;}
-					if (validate_required(passor,"Please enter password!")==false)
+					if (validate_required(passor,"Podaj hasło!")==false)
 					  {passor.focus();return false;}
-					if (validate_required(passor2,"Please repeat password!")==false)
+					if (validate_required(passor2,"Powtórz hasło!")==false)
 					  {passor2.focus();return false;}
 					if (passor2.value!=passor.value)
-					  {alert(\'Repeated password is not equal to password!\');return false;}
+					  {alert(\'Powtórzone hasło nie jest identyczne z hasłem!\');return false;}
 					}
 					}
 					</script>';
-					echo 'Set new password and e-mail to your account.<BR>
+					echo 'Ustaw nowe hasło i e-mail do konta.<BR>
 					<FORM ACTION="' . getLink('account/lost') . '?action=step3" onsubmit="return validate_form(this)" METHOD=post>
 					<INPUT TYPE=hidden NAME="character" VALUE="">
 					<TABLE CELLSPACING=1 CELLPADDING=4 BORDER=0 WIDTH=100%>
-					<TR><TD BGCOLOR="'.$config['vdarkborder'].'" class="white"><B>Please enter new password and e-mail</B></TD></TR>
+					<TR><TD BGCOLOR="'.$config['vdarkborder'].'" class="white"><B>Podaj nowe hasło i e-mail</B></TD></TR>
 					<TR><TD BGCOLOR="'.$config['darkborder'].'">
-					Account of character:&nbsp;&nbsp;<INPUT TYPE=text NAME="nick" VALUE="'.$nick.'" SIZE="40" readonly="readonly"><BR />
-					New password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT id="passor" TYPE=password NAME="passor" VALUE="" SIZE="40"><BR>
-					Repeat new password:&nbsp;&nbsp;<INPUT id="passor2" TYPE=password NAME="passor" VALUE="" SIZE="40"><BR>
-					New e-mail address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT id="email" TYPE=text NAME="email" VALUE="" SIZE="40"><BR>
+					Konto postaci:&nbsp;&nbsp;<INPUT TYPE=text NAME="nick" VALUE="'.$nick.'" SIZE="40" readonly="readonly"><BR />
+					Nowe hasło:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT id="passor" TYPE=password NAME="passor" VALUE="" SIZE="40"><BR>
+					Powtórz nowe hasło:&nbsp;&nbsp;<INPUT id="passor2" TYPE=password NAME="passor" VALUE="" SIZE="40"><BR>
+					Nowy adres e-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT id="email" TYPE=text NAME="email" VALUE="" SIZE="40"><BR>
 					<INPUT TYPE=hidden NAME="key" VALUE="'.$rec_key.'">
 					</TD></TR>
 					</TABLE>
@@ -250,7 +250,7 @@ elseif($action == 'step2')
 					</TD></TR></FORM></TABLE></TABLE>';
 				}
 				else
-					echo 'Wrong recovery key!';
+					echo 'Błędny klucz odzyskiwania!';
 			}
 			else
 				echo 'Account of this character has no recovery key!';
@@ -299,42 +299,43 @@ elseif($action == 'step3')
 
 							$account->setPassword(encrypt($tmp_new_pass));
 							$account->save();
+							$account->setCustomField('engine_password_sha1', sha1($new_pass));
 
 							if(USE_ACCOUNT_SALT)
 								$account->setCustomField('salt', $salt);
 
-							echo 'Your account name, new password and new e-mail.<BR>
+							echo 'Twoja nazwa konta, nowe hasło i nowy e-mail.<BR>
 							<FORM ACTION="' . getLink('account/manage') . '" onsubmit="return validate_form(this)" METHOD=post>
 							<INPUT TYPE=hidden NAME="character" VALUE="">
 							<TABLE CELLSPACING=1 CELLPADDING=4 BORDER=0 WIDTH=100%>
-							<TR><TD BGCOLOR="'.$config['vdarkborder'].'" class="white"><B>Your account name, new password and new e-mail</B></TD></TR>
+							<TR><TD BGCOLOR="'.$config['vdarkborder'].'" class="white"><B>Twoja nazwa konta, nowe hasło i nowy e-mail</B></TD></TR>
 							<TR><TD BGCOLOR="'.$config['darkborder'].'">
 							Account name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>'.$account->getName().'</b><BR>
-							New password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>'.$new_pass.'</b><BR>
-							New e-mail address:&nbsp;<b>'.$new_email.'</b><BR>';
+							Nowe hasło:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>'.$new_pass.'</b><BR>
+							Nowy adres e-mail:&nbsp;<b>'.$new_email.'</b><BR>';
 							if($account->getCustomField('email_next') < time())
 							{
 								$mailBody = '
 								<h3>Your account name and new password!</h3>
-								<p>Changed password and e-mail to your account in Lost Account Interface on server <a href="'.BASE_URL.'"><b>'.$config['lua']['serverName'].'</b></a></p>
+								<p>Zmieniono hasło i e-mail do konta w panelu odzyskiwania konta na serwerze <a href="'.BASE_URL.'"><b>'.$config['lua']['serverName'].'</b></a></p>
 								<p>Account name: <b>'.$account->getName().'</b></p>
 								<p>New password: <b>'.$new_pass.'</b></p>
-								<p>E-mail: <b>'.$new_email.'</b> (this e-mail)</p>
+								<p>E-mail: <b>'.$new_email.'</b> (ten e-mail)</p>
 								<br />
-								<p><u>It\'s automatic e-mail from OTS Lost Account System. Do not reply!</u></p>';
+								<p><u>To jest automatyczny e-mail z systemu odzyskiwania konta. Nie odpowiadaj!</u></p>';
 
-								if(_mail($account->getCustomField('email'), $config['lua']['serverName']." - New password to your account", $mailBody))
+								if(_mail($account->getCustomField('email'), $config['lua']['serverName']." - Nowe hasło do konta", $mailBody))
 								{
-									echo '<br /><small>Sent e-mail with your account name and password to new e-mail. You should receive this e-mail in 15 minutes. You can login now with new password!</small>';
+									echo '<br /><small>Wysłano e-mail z nazwą konta i hasłem na nowy adres e-mail. Powinieneś go otrzymać w ciągu 15 minut. Możesz się teraz zalogować nowym hasłem!</small>';
 								}
 								else
 								{
-									echo '<br /><p class="error">An error occurred while sending email! You will not receive e-mail with this informations. For Admin: More info can be found in system/logs/mailer-error.log</p>';
+									echo '<br /><p class="error">Wystąpił błąd podczas wysyłania e-maila! Nie otrzymasz e-maila z tymi informacjami. Dla admina: więcej informacji w system/logs/mailer-error.log</p>';
 								}
 							}
 							else
 							{
-								echo '<br /><small>You will not receive e-mail with this informations.</small>';
+								echo '<br /><small>Nie otrzymasz e-maila z tymi informacjami.</small>';
 							}
 							echo '<INPUT TYPE=hidden NAME="account_login" VALUE="'.$account->getId().'">
 							<INPUT TYPE=hidden NAME="password_login" VALUE="'.$new_pass.'">
@@ -369,12 +370,12 @@ elseif($action == 'checkcode')
 	$code = trim($_REQUEST['code']);
 	$character = stripslashes(trim($_REQUEST['character']));
 	if(empty($code) || empty($character))
-		echo 'Please enter code from e-mail and name of one character from account. Then press Submit.<BR>
+		echo 'Podaj kod z e-maila i nazwę jednej postaci z konta. Następnie naciśnij Wyślij.<BR>
 				<FORM ACTION="' . getLink('account/lost') . '?action=checkcode" METHOD=post>
 				<TABLE CELLSPACING=1 CELLPADDING=4 BORDER=0 WIDTH=100%>
-				<TR><TD BGCOLOR="'.$config['vdarkborder'].'" class="white"><B>Code & character name</B></TD></TR>
+				<TR><TD BGCOLOR="'.$config['vdarkborder'].'" class="white"><B>Kod i nazwa postaci</B></TD></TR>
 				<TR><TD BGCOLOR="'.$config['darkborder'].'">
-				Your code:&nbsp;<INPUT TYPE=text NAME="code" VALUE="" SIZE="40")><BR />
+				Twój kod:&nbsp;<INPUT TYPE=text NAME="code" VALUE="" SIZE="40")><BR />
 				Character:&nbsp;<INPUT TYPE=text NAME="character" VALUE="" SIZE="40")><BR />
 				</TD></TR>
 				</TABLE>
@@ -417,12 +418,12 @@ elseif($action == 'checkcode')
 				}
 				}
 				</script>
-				Please enter new password to your account and repeat to make sure you remember password.<BR>
+				Podaj nowe hasło do konta i powtórz je, aby upewnić się, że je zapamiętasz.<BR>
 				<FORM ACTION="' . getLink('account/lost') . '?action=setnewpassword" onsubmit="return validate_form(this)" METHOD=post>
 				<INPUT TYPE=hidden NAME="character" VALUE="'.$character.'">
 				<INPUT TYPE=hidden NAME="code" VALUE="'.$code.'">
 				<TABLE CELLSPACING=1 CELLPADDING=4 BORDER=0 WIDTH=100%>
-				<TR><TD BGCOLOR="'.$config['vdarkborder'].'" class="white"><B>Code & account name</B></TD></TR>
+				<TR><TD BGCOLOR="'.$config['vdarkborder'].'" class="white"><B>Kod i nazwa konta</B></TD></TR>
 				<TR><TD BGCOLOR="'.$config['darkborder'].'">
 				New password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE=password ID="passor" NAME="passor" VALUE="" SIZE="40")><BR />
 				Repeat new password:&nbsp;<INPUT TYPE=password ID="passor2" NAME="passor2" VALUE="" SIZE="40")><BR />
@@ -434,10 +435,10 @@ elseif($action == 'checkcode')
 				</TD></TR></FORM></TABLE></TABLE>';
 			}
 			else
-				$error= 'Wrong code to change password.';
+				$error= 'Błędny kod do zmiany hasła.';
 		}
 		else
-			$error = 'Account of this character or this character doesn\'t exist.';
+			$error = 'Konto tej postaci lub ta postać nie istnieje.';
 	}
 	if(!empty($error))
 				echo '<span style="color: red"><b>'.$error.'</b></span><br />Please enter code from e-mail and name of one character from account. Then press Submit.<BR>
@@ -461,7 +462,7 @@ elseif($action == 'setnewpassword')
 	$character = stripslashes($_REQUEST['character']);
 	echo '';
 	if(empty($code) || empty($character) || empty($newpassword))
-		echo '<span style="color: red"><b>Error. Try again.</b></span><br />Please enter code from e-mail and name of one character from account. Then press Submit.<BR>
+		echo '<span style="color: red"><b>Błąd. Spróbuj ponownie.</b></span><br />Please enter code from e-mail and name of one character from account. Then press Submit.<BR>
 				<BR><FORM ACTION="' . getLink('account/lost') . '?action=checkcode" METHOD=post>
 				<TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0 WIDTH=100%><TR><TD><div style="text-align:center">
 				<INPUT TYPE=image NAME="Back" ALT="Back" SRC="'.$template_path.'/images/global/buttons/sbutton_back.gif" BORDER=0 WIDTH=120 HEIGHT=18></div>
@@ -489,18 +490,19 @@ elseif($action == 'setnewpassword')
 
 					$account->setPassword(encrypt($tmp_new_pass ));
 					$account->save();
+					$account->setCustomField('engine_password_sha1', sha1($newpassword));
 					$account->setCustomField('email_code', '');
-					echo 'New password to your account is below. Now you can login.<BR>
+					echo 'Nowe hasło do konta poniżej. Możesz się teraz zalogować.<BR>
 					<INPUT TYPE=hidden NAME="character" VALUE="'.$character.'">
 					<TABLE CELLSPACING=1 CELLPADDING=4 BORDER=0 WIDTH=100%>
-					<TR><TD BGCOLOR="'.$config['vdarkborder'].'" class="white"><B>Changed password</B></TD></TR>
+					<TR><TD BGCOLOR="'.$config['vdarkborder'].'" class="white"><B>Zmieniono hasło</B></TD></TR>
 					<TR><TD BGCOLOR="'.$config['darkborder'].'">
 					New password:&nbsp;<b>'.$newpassword.'</b><BR />
-					Account name:&nbsp;&nbsp;&nbsp;<i>(Already on your e-mail)</i><BR />';
+					Account name:&nbsp;&nbsp;&nbsp;<i>(Już na Twoim e-mailu)</i><BR />';
 
 					$mailBody = '
 					<h3>Your account name and password!</h3>
-					<p>Changed password to your account in Lost Account Interface on server <a href="'.BASE_URL.'"><b>'.$config['lua']['serverName'].'</b></a></p>
+					<p>Zmieniono hasło do konta w panelu odzyskiwania konta na serwerze <a href="'.BASE_URL.'"><b>'.$config['lua']['serverName'].'</b></a></p>
 					<p>Account name: <b>'.$account->getName().'</b></p>
 					<p>New password: <b>'.$newpassword.'</b></p>
 					<br />
@@ -508,11 +510,11 @@ elseif($action == 'setnewpassword')
 
 					if(_mail($account->getCustomField('email'), $config['lua']['serverName']." - Your new password", $mailBody))
 					{
-						echo '<br /><small>New password work! Sent e-mail with your password and account name. You should receive this e-mail in 15 minutes. You can login now with new password!';
+						echo '<br /><small>Nowe hasło działa! Wysłano e-mail z hasłem i nazwą konta. Powinieneś go otrzymać w ciągu 15 minut. Możesz się teraz zalogować nowym hasłem!';
 					}
 					else
 					{
-						echo '<br /><p class="error">New password work! An error occurred while sending email! You will not receive e-mail with new password. For Admin: More info can be found in system/logs/mailer-error.log';
+						echo '<br /><p class="error">Nowe hasło działa! Wystąpił błąd podczas wysyłania e-maila! Nie otrzymasz e-maila z nowym hasłem. Dla admina: więcej informacji w system/logs/mailer-error.log';
 					}
 				echo '</TD></TR>
 				</TABLE>

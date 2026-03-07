@@ -1,13 +1,13 @@
 {
-  "system.blessing.already": "[EN] You are already blessed.",
-  "system.blessing.received": "[EN] You received the remaining {1} blesses.",
-  "system.experience.gained": "[EN] You gained {1} experience points.",
-  "system.item.received": "[EN] You gained a {1}.",
-  "system.mission.points": "[EN] You earned {1} point(s) on the {2} mission.",
-  "system.mount.received": "[EN] Congratulations you received the {1} mount.",
-  "system.stash.count": "[EN] Your supply stash contains {1} items.",
-  "system.store.check_inbox": "[EN] Please make sure you have free slots in your store inbox.",
+  "system.blessing.already": "Ești deja binecuvântat.",
+  "system.blessing.received": "Ai primit {1} binecuvântări rămase.",
+  "system.experience.gained": "Ați câștigat {1} puncte de experiență.",
+  "system.item.received": "Ai câștigat un {1}.",
+  "system.mission.points": "Ați câștigat {1} punct(e) în misiunea {2}.",
+  "system.mount.received": "Felicitări, ați primit montura {1}.",
+  "system.stash.count": "Rezerva dumneavoastră conține {1} articole.",
+  "system.store.check_inbox": "Vă rugăm să vă asigurați că aveți sloturi gratuite în căsuța de e-mail din magazin.",
   "system.trade.bought": "Ai cumpărat {1}x {2} pentru {3} aur.",
   "system.trade.sold": "Ai vândut {1}x {2} pentru {3} aur.",
-  "system.venture.decay": "[EN] Venture the path of decay!"
+  "system.venture.decay": "Aventurați calea decăderii!"
 }

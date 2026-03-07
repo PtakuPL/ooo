@@ -61,7 +61,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	-- START TASK
 	if MsgContains(message, "food") then
 		if player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Mission) < 1 then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.chavis.say_1", "npc.chavis.say_2", "npc.chavis.say_3"}, 10)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.chavis.say_1", "npc.chavis.say_2", "npc.chavis.say_3" }, 10)
 			if player:getStorageValue(Storage.Quest.U10_50.OramondQuest.QuestLine) < 1 then
 				player:setStorageValue(Storage.Quest.U10_50.OramondQuest.QuestLine, 1)
 			end
@@ -69,16 +69,16 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		elseif player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Mission) == 1 then
 			if player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Count) < 5 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chavis.say_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chavis.say_7")
 				npcHandler:setTopic(playerId, 0)
 			elseif player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Count) >= 5 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chavis.say_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chavis.say_8")
 				npcHandler:setTopic(playerId, 1)
 			end
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 and player:removeItem(21291, 5) then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chavis.say_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chavis.say_9")
 			player:setStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Count, player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Count) - 5)
 			player:setStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Mission, -1)
 			if player:getStorageValue(Storage.Quest.U10_50.OramondQuest.ToTakeRoots.Door) < 1 then
@@ -101,7 +101,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "magistrate") then
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.chavis.say_6")
 	elseif MsgContains(message, "rathleton") then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.chavis.say_4", "npc.chavis.say_5"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.chavis.say_10", "npc.chavis.say_11" }, 10)
 		npcHandler:setTopic(playerId, 0)
 	end
 

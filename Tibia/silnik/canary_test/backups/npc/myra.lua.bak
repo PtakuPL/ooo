@@ -103,22 +103,22 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "task") then
-		local tasks = {
-			[1] = "Your current task is to bring me 70 bat wings, |PLAYERNAME|.",
-			[2] = "Your current task is to bring me 20 pieces of red cloth, |PLAYERNAME|.",
-			[3] = "Your current task is to bring me 40 pieces of ape fur, |PLAYERNAME|.",
-			[4] = "Your current task is to bring me 35 holy orchids, |PLAYERNAME|.",
-			[5] = "Your current task is to bring me 10 spools of spider silk yarn, |PLAYERNAME|.",
-			[6] = "Your current task is to bring me 60 lizard scales, |PLAYERNAME|.",
-			[7] = "Your current task is to bring me 40 red dragon scales, |PLAYERNAME|.",
-			[8] = "Your current task is to bring me 15 ounces of magic sulphur, |PLAYERNAME|.",
-			[9] = "Your current task is to bring me 30 ounces of vampire dust, |PLAYERNAME|.",
-			[10] = "Go to the academy in Edron and tell Zoltan that I sent you, |PLAYERNAME|.",
-			[11] = "I don't have any tasks for you right now, |PLAYERNAME|. You were of great help.",
+		local taskKeys = {
+			[1] = "npc.myra.task_1",
+			[2] = "npc.myra.task_2",
+			[3] = "npc.myra.task_3",
+			[4] = "npc.myra.task_4",
+			[5] = "npc.myra.task_5",
+			[6] = "npc.myra.task_6",
+			[7] = "npc.myra.task_7",
+			[8] = "npc.myra.task_8",
+			[9] = "npc.myra.task_9",
+			[10] = "npc.myra.task_10",
+			[11] = "npc.myra.task_11",
 		}
-		local taskMessage = tasks[player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak)]
-		if taskMessage then
-			npcHandler:say(taskMessage, npc, creature)
+		local taskKey = taskKeys[player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak)]
+		if taskKey then
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, taskKey)
 		end
 	elseif MsgContains(message, "bat wing") then
 		if player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) == 1 then

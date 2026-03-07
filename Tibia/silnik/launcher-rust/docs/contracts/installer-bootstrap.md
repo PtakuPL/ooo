@@ -1,31 +1,70 @@
 # Kontrakt: Model instalatora bootstrap
 
 **ID:** LR-041  
-**Status:** zamrozony  
-**Data:** 2026-03-03
+**Status:** zaktualizowany (BL-30)  
+**Data:** 2026-03-03  
+**Aktualizacja:** 2026-03-07 — nowy model: lekki launcher bootstrap (~KB)
 
 ## Cel
 
-Instalator bootstrap to maly plik (~10-50 MB), ktory instaluje launcher na nowej
-maszynie. Nie jest odpowiedzialny za aktualizacje klienta gry — to robi launcher.
+Bootstrap launcher to **minimalny plik** (~50-300 KB), pobierany ze strony RedDaxe.pl,
+którego jedynym zadaniem jest pobranie i zainstalowanie pełnego launchera (Tauri ~3-5 MB).
+Po instalacji pełny launcher samodzielnie pobiera klienta gry.
 
-## Trzy byty w systemie
+> **⚠️ ZMIANA:** Poprzedni model zakładał instalator ~10-50 MB zawierający binarkę launchera.
+> Nowy model: lekki bootstrap (~KB) pobiera pełny launcher z API (jak plik .torrent).
 
-| Byt | Opis | Rozmiar | Kto go pobiera |
-|---|---|---|---|
-| Installer bootstrap | Instaluje launcher + minimalny config | ~10-50 MB | Uzytkownik recznie (ze strony / Download Center) |
-| Launcher | Zarzadza gra: update, token, start klienta | ~5-20 MB | Installer go instaluje; potem sam sie aktualizuje |
-| Klient gry (OTClient + dane) | Wlasciwa gra | ~100-500 MB | Launcher go pobiera i patchuje |
+## Trzy warstwy dystrybucji
 
-## Flow uzytkownika
+| Warstwa | Byt | Rozmiar | Kto go pobiera | Źródło |
+|---|---|---|---|---|
+| 1 | **Bootstrap** (lekki launcher) | ~50-300 KB | Gracz ze strony RedDaxe.pl | GHA build → serwer artefaktów |
+| 2 | **Pełny Launcher** (Tauri) | ~3-5 MB | Bootstrap z `installer-catalog.php?type=launcher` | GHA build → serwer artefaktów |
+| 3 | **Klient gry** (OTClient + dane) | ~100-500 MB | Pełny launcher z manifest API | **GOTOWE BINARKI** — skompilowane osobno, wrzucone do bazy |
+
+> **Launcher NIE kompiluje klienta gry.** Pobiera GOTOWE, skompilowane paczki z serwera artefaktów.
+
+## Flow użytkownika
 
 ```
-1. Uzytkownik pobiera installer ze strony / Download Center
-2. Installer tworzy katalog instalacji
-3. Installer kopiuje: Launcher.exe + launcher_config.json
-4. Installer tworzy skrot na pulpicie
-5. Installer uruchamia launcher
-6. Launcher sprawdza wersje -> pobiera klienta -> gotowy do gry
+1. Gracz wchodzi na RedDaxe.pl → klika "Pobierz grę"
+2. Pobiera lekki bootstrap (~50-300 KB)
+3. Uruchamia bootstrap
+4. Bootstrap:
+   a. GET /apik/v1/installer-catalog.php?channel=stable&type=launcher
+   b. Sprawdza platform/arch
+   c. Pobiera pełny launcher (~3-5 MB) z progress barem
+   d. Weryfikuje SHA-256
+   e. Rozpakowuje do docelowego katalogu
+   f. Tworzy launcher_config.json
+   g. Uruchamia pełny launcher
+   h. Zamyka się (jednorazowe użycie)
+5. Pełny launcher startuje:
+   a. Self-update check
+   b. Login/rejestracja
+   c. Pobiera GOTOWĄ paczkę klienta gry z manifestu (~100-500 MB)
+   d. Gracz gra
+```
+
+## Technologia bootstrap
+
+- **Rust** + reqwest(blocking) + sha2 + zip — cele: < 500 KB
+- **Brak** tokio/async — blocking HTTP (bez runtime = mniejsza binarka)
+- **Brak** launcher-core, launcher-api — bootstrap jest autonomiczny
+- **Brak** Tauri — to nie GUI app z WebView, to minimalny downloader
+- **Profile release:** opt-level="z", lto=true, strip=true, codegen-units=1, panic="abort"
+
+## Kod źródłowy
+
+```
+launcher-rust/apps/launcher-bootstrap/
+├── Cargo.toml
+└── src/
+    ├── main.rs          (entry point + orchestracja)
+    ├── downloader.rs    (HTTP GET + progress + SHA-256 + retry 3x)
+    ├── installer.rs     (rozpakowanie ZIP, config, detekcja)
+    ├── platform.rs      (Windows/Linux detekcja, ścieżki)
+    └── ui.rs            (console progress + Win32 MessageBox)
 ```
 
 ## Struktura katalogu po instalacji

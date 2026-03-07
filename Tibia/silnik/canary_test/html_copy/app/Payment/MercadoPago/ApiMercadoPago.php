@@ -37,6 +37,7 @@ class ApiMercadoPago {
         $item->currency_id = "BRL";
         $item->unit_price = $products['item']['amount']; 
 
+        $preference->external_reference = $products['reference'] ?? null;
         $preference->items = array($item);
         $preference->save();
 
@@ -71,6 +72,7 @@ class ApiMercadoPago {
         $item->currency_id = "BRL";
         $item->unit_price = $products['item']['amount']; 
 
+        $preference->external_reference = $products['reference'] ?? null;
         $preference->items = array($item);
         $preference->save();
       

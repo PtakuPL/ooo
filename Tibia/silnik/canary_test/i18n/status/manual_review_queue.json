@@ -12,14 +12,184 @@
       "reason": "validation-test",
       "applied": true,
       "applied_at": 1770932745
+    },
+    {
+      "timestamp": "2026-02-20T23:29:28.127013Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "questlog.json",
+      "key": "questlog.quest_11.mission_10.name",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "Paw and Fur: Carniphilas",
+      "attempted_translation": "Paw and Fur: Карнипхилас",
+      "issues": [
+        {
+          "type": "contains_tibia_proper_noun",
+          "severity": "LOW",
+          "message": "Tekst zawiera nazwę własną Tibia"
+        },
+        {
+          "type": "mixed_scripts",
+          "severity": "HIGH",
+          "message": "Wykryto mieszane skrypty Unicode"
+        },
+        {
+          "type": "partial_translation_mix",
+          "severity": "HIGH",
+          "message": "Tłumaczenie to mix EN/lang (>70% EN): 'Paw and Fur: Карнипхилас' (EN: 'Paw and Fur: Carniphilas')"
+        },
+        {
+          "type": "cyrillic_latin_mix",
+          "severity": "HIGH",
+          "ratio": 0.45,
+          "message": "Język cyrylicowy ma 45% łacińskich liter"
+        }
+      ],
+      "source": "google_translate"
+    },
+    {
+      "timestamp": "2026-02-20T23:29:28.130028Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "questlog.json",
+      "key": "questlog.quest_11.mission_12.name",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "Paw and Fur: Mammoths",
+      "attempted_translation": "Paw and Fur: Маммотхс",
+      "issues": [
+        {
+          "type": "contains_tibia_proper_noun",
+          "severity": "LOW",
+          "message": "Tekst zawiera nazwę własną Tibia"
+        },
+        {
+          "type": "mixed_scripts",
+          "severity": "HIGH",
+          "message": "Wykryto mieszane skrypty Unicode"
+        },
+        {
+          "type": "partial_translation_mix",
+          "severity": "HIGH",
+          "message": "Tłumaczenie to mix EN/lang (>70% EN): 'Paw and Fur: Маммотхс' (EN: 'Paw and Fur: Mammoths')"
+        },
+        {
+          "type": "cyrillic_latin_mix",
+          "severity": "HIGH",
+          "ratio": 0.529,
+          "message": "Język cyrylicowy ma 53% łacińskich liter"
+        }
+      ],
+      "source": "google_translate"
+    },
+    {
+      "timestamp": "2026-02-20T23:29:28.147534Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "questlog.json",
+      "key": "questlog.quest_11.mission_13.name",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "Paw and Fur: Gnarlhounds",
+      "attempted_translation": "Paw and Fur: Гнарлхоундс",
+      "issues": [
+        {
+          "type": "contains_tibia_proper_noun",
+          "severity": "LOW",
+          "message": "Tekst zawiera nazwę własną Tibia"
+        },
+        {
+          "type": "mixed_scripts",
+          "severity": "HIGH",
+          "message": "Wykryto mieszane skrypty Unicode"
+        },
+        {
+          "type": "partial_translation_mix",
+          "severity": "HIGH",
+          "message": "Tłumaczenie to mix EN/lang (>70% EN): 'Paw and Fur: Гнарлхоундс' (EN: 'Paw and Fur: Gnarlhounds')"
+        },
+        {
+          "type": "cyrillic_latin_mix",
+          "severity": "HIGH",
+          "ratio": 0.45,
+          "message": "Język cyrylicowy ma 45% łacińskich liter"
+        }
+      ],
+      "source": "google_translate"
+    },
+    {
+      "timestamp": "2026-02-21T00:05:52.168984Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "questlog.json",
+      "key": "questlog.quest_11.mission_14.name",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "Paw and Fur: Terramites",
+      "attempted_translation": "Paw and Fur: Террамитес",
+      "issues": [
+        {
+          "type": "contains_tibia_proper_noun",
+          "severity": "LOW",
+          "message": "Tekst zawiera nazwę własną Tibia"
+        },
+        {
+          "type": "mixed_scripts",
+          "severity": "HIGH",
+          "message": "Wykryto mieszane skrypty Unicode"
+        },
+        {
+          "type": "partial_translation_mix",
+          "severity": "HIGH",
+          "message": "Tłumaczenie to mix EN/lang (>70% EN): 'Paw and Fur: Террамитес' (EN: 'Paw and Fur: Terramites')"
+        },
+        {
+          "type": "cyrillic_latin_mix",
+          "severity": "HIGH",
+          "ratio": 0.474,
+          "message": "Język cyrylicowy ma 47% łacińskich liter"
+        }
+      ],
+      "source": "google_translate"
+    },
+    {
+      "timestamp": "2026-02-21T00:05:54.653054Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "questlog.json",
+      "key": "questlog.quest_11.mission_15.name",
+      "reason": "more_than_3_suspicious_flags",
+      "en_text": "Paw and Fur: Apes",
+      "attempted_translation": "Paw and Fur: Апес",
+      "issues": [
+        {
+          "type": "contains_tibia_proper_noun",
+          "severity": "LOW",
+          "message": "Tekst zawiera nazwę własną Tibia"
+        },
+        {
+          "type": "mixed_scripts",
+          "severity": "HIGH",
+          "message": "Wykryto mieszane skrypty Unicode"
+        },
+        {
+          "type": "partial_translation_mix",
+          "severity": "HIGH",
+          "message": "Tłumaczenie to mix EN/lang (>70% EN): 'Paw and Fur: Апес' (EN: 'Paw and Fur: Apes')"
+        },
+        {
+          "type": "cyrillic_latin_mix",
+          "severity": "HIGH",
+          "ratio": 0.692,
+          "message": "Język cyrylicowy ma 69% łacińskich liter"
+        }
+      ],
+      "source": "google_translate"
     }
   ],
   "stats": {
-    "total": 0,
+    "total": 5,
     "reviewed": 0,
     "approved": 1,
     "rejected": 0,
     "applied": 1
   },
-  "updated_at": 1771163468
+  "updated_at": 1772136884
 }

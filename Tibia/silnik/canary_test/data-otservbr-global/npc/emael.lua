@@ -57,24 +57,16 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
-local function greetCallback(npc, creature)
-	NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {
-		"npc.emael.greet_msg_1",
-		"npc.emael.greet_msg_2",
-	}, 1000)
-	return false
-end
-
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)
 	local playerId = player:getId()
 	if message == "podium" then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_7")
 		npcHandler:setTopic(playerId, 1)
 	elseif message == "yes" and npcHandler:getTopic(playerId) == 1 then
 		if player:getStorageValue(30020) == 1 then
 			if player:removeMoney(1000000) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_8")
 				local inbox = player:getStoreInbox()
 				local inboxItems = inbox:getItems()
 				if inbox and #inboxItems < inbox:getMaxCapacity() then
@@ -84,24 +76,24 @@ local function creatureSayCallback(npc, creature, type, message)
 						decoKit:setCustomAttribute("unWrapId", 38707)
 					end
 				else
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_3")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_9")
 				end
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_10")
 			end
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_11")
 		end
 		npcHandler:setTopic(playerId, 0)
 	elseif message == "no" and npcHandler:getTopic(playerId == 1) then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_6")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.emael.say_12")
 		npcHandler:setTopic(playerId, 0)
 	end
 end
 
-npcHandler:setCallback(CALLBACK_GREET, greetCallback)
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.emael.farewell_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.emael.walkaway_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, { "Hello! Ever asked yourself who killed all the monsters for the wall trophies? Yeah, that was me, Emael the Beasthunter! I am an expert in displaying trophies. ...", "So if you have at least some dangerous monster to show off I strongly advise you to aquire a {podium} of vigour." })
+npcHandler:setMessage(MESSAGE_FAREWELL, "I wish you a good hunt. Goodbye!")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Good hunting!")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

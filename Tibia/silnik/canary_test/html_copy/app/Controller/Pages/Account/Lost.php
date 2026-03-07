@@ -77,14 +77,14 @@ class Lost extends Base{
         $content = View::render('pages/account/lostaccount_first', [
             'email' => $account->email,
         ]);
-        return parent::getBase('Lost Account', $content, 'lostaccount');
+        return parent::getBase(__('lost_account'), $content, 'lostaccount');
     }
 
     public static function getLostAccount($request)
     {
         $content = View::render('pages/account/lostaccount', [
         ]);
-        return parent::getBase('Lost Account', $content, 'lostaccount');
+        return parent::getBase(__('lost_account'), $content, 'lostaccount');
     }
 
 }

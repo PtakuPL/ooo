@@ -1,5 +1,16 @@
 math.randomseed(os.time())
 
+-- Define MESSAGE_NPC_FROM as alias for MESSAGE_EVENT_ADVANCE (19)
+-- This constant is used by NPC i18n system but not registered in C++ enums
+MESSAGE_NPC_FROM = MESSAGE_EVENT_ADVANCE or 19
+
+-- Strip [XX] language tags from i18n translations (e.g., "[EN] Hello" → "Hello")
+-- Some translations have [EN]/[PL] etc. prefixes left by translation workers
+function stripI18nLanguageTags(text)
+	if type(text) ~= "string" then return text end
+	return text:gsub("^%[%a%a%] ", "")
+end
+
 dofile(DATA_DIRECTORY .. "/lib/lib.lua")
 local startupFile = io.open(DATA_DIRECTORY .. "/startup/startup.lua", "r")
 if startupFile ~= nil then

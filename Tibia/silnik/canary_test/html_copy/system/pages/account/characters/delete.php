@@ -82,7 +82,7 @@ if(isset($_POST['deletecharactersave']) && $_POST['deletecharactersave'] == 1) {
 		else
 			$player->setCustomField('deleted', 1);
 
-		$account_logged->logAction('Deleted character <b>' . $player->getName() . '</b>.');
+		$account_logged->logAction(str_replace('$NAME$', $player->getName(), __('log_deleted_character')));
 		$twig->display('success.html.twig', [
 			'title' => 'Character Deleted',
 			'description' => 'The character <b>' . $player_name . '</b> has been deleted.'

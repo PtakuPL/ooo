@@ -78,9 +78,9 @@ local function greetCallback(npc, creature)
 		player:setStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Oneeyedjoe, 4)
 		player:setStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Questline, 4)
 		player:setStorageValue(Storage.Quest.U10_70.TheCursedCrystal.Time, currentTime + 20 * 60 * 60)
-		npcHandler:setMessage(MESSAGE_GREET, "Well done! But know this: The cursed crystal seems to regenerate over time. It could be necessary to come back and repeat whatever you have done down there.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.one_eyed_joe.greet_msg_1")
 	else
-		npcHandler:setMessage(MESSAGE_GREET, "Hello there. I'm sorry, I hardly noticed you. I'm a bit nervous. The spooky {sounds} down there, you know")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.one_eyed_joe.greet_msg_2")
 	end
 
 	return true

@@ -93,8 +93,12 @@
 												<tr>
 													<td>
 														<div class="TableContentContainer">
-															<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
-																<tbody>
+																<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+																	<tbody>
+																	<tr>
+																		<td style="vertical-align: middle;" class="LabelV200 ">Server:</td>
+																		<td>{{ world_name }}</td>
+																	</tr>
 																	<tr>
 																		<td style="vertical-align: middle;" class="LabelV200 ">Country:</td>
 																		<td><input type="text" name="Form_OrderServiceStep3[Country]" value="{{ country }}" disabled="disabled">
@@ -137,12 +141,13 @@
 					<input type="hidden" name="payment_method" value="{{ method }}">
 					<input type="hidden" name="payment_coins" value="{{ coins }}">
 					<input type="hidden" name="payment_country" value="{{ country }}">
+					<input type="hidden" name="payment_world_id" value="{{ world_id }}">
 					<div class="BigButton" style="background-image:url({{IMAGE_PATH}}/global/buttons/button_green.gif)">
 							<div onmouseover="MouseOverBigButton(this);" onmouseout="MouseOutBigButton(this);"><div class="BigButtonOver" style="background-image:url({{IMAGE_PATH}}/global/buttons/button_green_over.gif);"></div><input class="BigButtonText" type="submit" value="Next"></div>
 						</div>
 					</div>
 					<div class="RightButton" style="padding: 10px;">
-						<a href="{{URL}}/payment">
+						<a href="{{URL}}/payment?payment_world_id={{ world_id }}">
 							<div class="BigButton" style="background-image:url({{IMAGE_PATH}}/global/buttons/button_blue.gif)">
 								<div onmouseover="MouseOverBigButton(this);" onmouseout="MouseOutBigButton(this);"><div class="BigButtonOver" style="background-image: url(&quot;{{IMAGE_PATH}}/global/buttons/button_blue_over.gif&quot;); visibility: hidden;"></div><input class="BigButtonText" type="button" value="Previous"></div>
 							</div>

@@ -48,7 +48,7 @@ PacketPlayer::PacketPlayer(const std::string_view& file)
         std::string packetStr;
         for (size_t i = 0; i < packetHex.length(); i += 2) {
             std::string byteString = packetHex.substr(i, 2);
-            char byte = (char)strtol(byteString.c_str(), nullptr, 16);
+            char byte = static_cast<char>(strtol(byteString.c_str(), nullptr, 16));
             packetStr.push_back(byte);
         }
         auto packet = std::make_shared<std::vector<uint8_t>>(packetStr.begin(), packetStr.end());

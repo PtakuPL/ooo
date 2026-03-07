@@ -38,7 +38,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
+	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end
@@ -71,15 +71,15 @@ local function creatureSayCallback(npc, creature, type, message)
 	local playerId = player:getId()
 
 	if MsgContains(message, "job") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomux.say_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomux.say_4")
 	end
 
 	if MsgContains(message, "gnome") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomux.say_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomux.say_5")
 	end
 
 	if MsgContains(message, "spike") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomux.say_3")
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.gnomux.say_6", "npc.gnomux.say_7" })
 	end
 	return true
 end

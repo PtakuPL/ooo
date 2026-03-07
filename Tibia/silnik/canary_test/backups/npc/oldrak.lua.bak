@@ -69,27 +69,27 @@ keywordHandler:addKeyword({ "name" }, StdModule.say, { npcHandler = npcHandler, 
 keywordHandler:addKeyword({ "monster" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.monster" })
 keywordHandler:addKeyword({ "help" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.help" })
 keywordHandler:addKeyword({ "goshnar" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.goshnar" })
-keywordHandler:addKeyword({ "nightmare" }, StdModule.say, { npcHandler = npcHandler, text = "This ancient order was created by a circle of wise humans who were called 'The {Dreamers}'. The order became {extinct} a long time ago." })
-keywordHandler:addKeyword({ "extinct" }, StdModule.say, { npcHandler = npcHandler, text = "Many perished in their battles against evil, some went mad, not able to stand their nightmares any longer. Others were seduced by the darkness." })
-keywordHandler:addKeyword({ "dreamers" }, StdModule.say, { npcHandler = npcHandler, text = "They learned the ancient art of {dreamwalking} from some elves they befriended." })
-keywordHandler:addKeyword({ "dreamwalking" }, StdModule.say, { npcHandler = npcHandler, text = "While the dreamwalkers of the elves experienenced the brightest dreams of pleasure, the humans strangely had dreams of {dark omen}." })
-keywordHandler:addKeyword({ "omen" }, StdModule.say, { npcHandler = npcHandler, text = "They dreamed of doom, destruction, talked to dead, tormented souls, and gained unwanted insight into the {schemes of darkness}." })
-keywordHandler:addKeyword({ "schemes of darkness" }, StdModule.say, { npcHandler = npcHandler, text = "They figured out how to interpret their dark dreams and so could foresee the plans of the dark gods and their minions." })
-keywordHandler:addKeyword({ "plan" }, StdModule.say, { npcHandler = npcHandler, text = "Using this knowledge they formed an order to thwart these plans, and because they battled their nightmares as brave as knights, they named their order accordingly." })
-keywordHandler:addKeyword({ "necromant" }, StdModule.say, { npcHandler = npcHandler, text = "It is rumoured to open the entrance to the pits of inferno, also called the nightmare pits. Even if I knew about this secret I wouldn't tell you." })
-keywordHandler:addKeyword({ "havok" }, StdModule.say, { npcHandler = npcHandler, text = "Before the battles raged across them, they were called the fair plains." })
-keywordHandler:addKeyword({ "tibia" }, StdModule.say, { npcHandler = npcHandler, text = "That's where we are. The world of Tibia." })
-keywordHandler:addKeyword({ "god" }, StdModule.say, { npcHandler = npcHandler, text = "They created Tibia and all life on it ... and unlife, too." })
-keywordHandler:addKeyword({ "unlife" }, StdModule.say, { npcHandler = npcHandler, text = "Beware the foul undead!" })
-keywordHandler:addKeyword({ "undead" }, StdModule.say, { npcHandler = npcHandler, text = "Beware the foul undead!" })
-keywordHandler:addKeyword({ "excalibug" }, StdModule.say, { npcHandler = npcHandler, text = "A weapon of myth and legend. It was lost in ancient times ... perhaps lost forever." })
-keywordHandler:addKeyword({ "yenny the gentle" }, StdModule.say, { npcHandler = npcHandler, text = "Yenny, known as the Gentle, was one of most powerfull magicwielders in ancient times and known throughout the world for her mercy and kindness." })
-keywordHandler:addKeyword({ "offer" }, StdModule.say, { npcHandler = npcHandler, text = "I can offer you the holy tible for a small fee." })
-keywordHandler:addKeyword({ "trade" }, StdModule.say, { npcHandler = npcHandler, text = "I can offer you the holy tible for a small fee." })
-keywordHandler:addKeyword({ "sell" }, StdModule.say, { npcHandler = npcHandler, text = "I can offer you the holy tible for a small fee." })
-keywordHandler:addKeyword({ "buy" }, StdModule.say, { npcHandler = npcHandler, text = "I can offer you the holy tible for a small fee." })
-keywordHandler:addKeyword({ "have" }, StdModule.say, { npcHandler = npcHandler, text = "I can offer you the holy tible for a small fee." })
-keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, text = "Now, it is |TIME|." })
+keywordHandler:addKeyword({ "nightmare" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_1" })
+keywordHandler:addKeyword({ "extinct" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_2" })
+keywordHandler:addKeyword({ "dreamers" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_3" })
+keywordHandler:addKeyword({ "dreamwalking" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_4" })
+keywordHandler:addKeyword({ "omen" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_5" })
+keywordHandler:addKeyword({ "schemes of darkness" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_6" })
+keywordHandler:addKeyword({ "plan" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_7" })
+keywordHandler:addKeyword({ "necromant" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_8" })
+keywordHandler:addKeyword({ "havok" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_9" })
+keywordHandler:addKeyword({ "tibia" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_10" })
+keywordHandler:addKeyword({ "god" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_11" })
+keywordHandler:addKeyword({ "unlife" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_12" })
+keywordHandler:addKeyword({ "undead" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_13" })
+keywordHandler:addKeyword({ "excalibug" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_14" })
+keywordHandler:addKeyword({ "yenny the gentle" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_15" })
+keywordHandler:addKeyword({ "offer" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_16" })
+keywordHandler:addKeyword({ "trade" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_17" })
+keywordHandler:addKeyword({ "sell" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_18" })
+keywordHandler:addKeyword({ "buy" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_19" })
+keywordHandler:addKeyword({ "have" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_20" })
+keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.oldrak.stdmod_21" })
 
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)
@@ -102,10 +102,10 @@ local function creatureSayCallback(npc, creature, type, message)
 	-- Demon oak quest
 	if MsgContains(message, "mission") or MsgContains(message, "demon oak") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Done) < 1 then
-			npcHandler:say("How do you know? Did you go into the infested area?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_1")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Progress) == 2 and player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Done) < 1 then
-			npcHandler:say("You better don't return here until you've defeated the Demon Oak.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_2")
 		elseif player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Done) == 1 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.multi_1")
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.multi_2")
@@ -115,49 +115,49 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
 		player:setStorageValue(Storage.Quest.U8_2.TheDemonOak.Progress, 1)
 		if player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Progress) == 1 then
-			npcHandler:say("A demon oak?!? <mumbles some blessings> May the gods be on our side. You'll need a {hallowed axe} to harm that tree. Bring me a simple {axe} and I'll prepare it for you.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_3")
 			player:setStorageValue(Storage.Quest.U8_2.TheDemonOak.Progress, 2)
 			npcHandler:setTopic(playerId, 0)
 		else
-			npcHandler:say("I don't believe a word of it! How rude to lie to a monk!", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_4")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "axe") then
 		if player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Progress) == 2 then
-			npcHandler:say("Ahh, you've got an axe. Very good. I can make a hallowed axe out of it. It will cost you... er... a donation of 1,000 gold. Alright?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_5")
 			npcHandler:setTopic(playerId, 2)
 		else
-			npcHandler:say("You have to first talk about {demon oak} or the {mission} before we continue.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_6")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 2 then
 		if player:getStorageValue(Storage.Quest.U8_2.TheDemonOak.Progress) == 2 then
 			if player:getMoney() + player:getBankBalance() >= 1000 then
 				if player:removeItem(3274, 1) and player:removeMoneyBank(1000) then
-					npcHandler:say("Let's see....<mumbles a prayer>....here we go. The blessing on this axe will be absorbed by all the demonic energy around here. I presume it will not last very long, so better hurry. Actually, I can refresh the blessing as often as you like.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_7")
 					player:addItem(919, 1)
 					npc:getPosition():sendMagicEffect(CONST_ME_YELLOWENERGY)
 					npcHandler:setTopic(playerId, 0)
 				else
-					npcHandler:say("There is no axe with you.", npc, creature)
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_8")
 					npcHandler:setTopic(playerId, 0)
 				end
 			else
-				npcHandler:say("There is not enough of money with you.", npc, creature)
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_9")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 1 then
-		npcHandler:say("What a pity! Let me know when you managed to get in there. Maybe I can help you when we know what we are dealing with.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_10")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) == 2 then
-		npcHandler:say("No then.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_11")
 		npcHandler:setTopic(playerId, 0)
 	end
 
 	-- The paradox tower quest
 	if MsgContains(message, "hugo") then
-		npcHandler:say("Ah, the curse of the Plains of Havoc, the hidden beast, the unbeatable foe. I've been living here for years and I'm sure this is only a myth.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_12")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "myth") then
 		if player:getStorageValue(Storage.Quest.U7_24.TheParadoxTower.TheFearedHugo) < 1 then
@@ -166,26 +166,26 @@ local function creatureSayCallback(npc, creature, type, message)
 			-- Questlog: The Feared Hugo (Zoltan)
 			player:setStorageValue(Storage.Quest.U7_24.TheParadoxTower.TheFearedHugo, 1)
 		end
-		npcHandler:say("There are many tales about the fearsome Hugo. It's said it's an abnormality, accidentally created by Yenny the Gentle. It's half demon, half something else and people say it's still alive after all these years.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_13")
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "yenny the gentle") then
-		npcHandler:say("Yenny, known as the Gentle, was one of the most powerful wielders of magic in ancient times. She was known throughout the world for her mercy and kindness.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_14")
 		npcHandler:setTopic(playerId, 0)
 	end
 
 	if MsgContains(message, "holy") or MsgContains(message, "tible") then
 		if player:getStorageValue(Storage.Quest.U7_9.ThePitsOfInferno.ChestTible) == 1 then
-			npcHandler:say("Would you like to buy a The Holy Tible for 1000 gold?", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_15")
 			npcHandler:setTopic(playerId, 3)
 		else
-			npcHandler:say("You need to complete the quest for the book first before you can buy The Holy Tible.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_16")
 		end
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 3 then
 		if player:removeMoney(1000) then
 			player:addItem(2836, 1)
-			npcHandler:say("Here is your The Holy Tible.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_17")
 		else
-			npcHandler:say("You do not have enough money.", npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oldrak.say_18")
 		end
 		npcHandler:setTopic(playerId, 0)
 	end
@@ -193,9 +193,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome |PLAYERNAME|! Only rarely I can welcome {visitors} these days.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Take care, it's dangerous out there.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good Bye, |PLAYERNAME|")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.oldrak.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.oldrak.walkaway_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.oldrak.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

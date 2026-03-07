@@ -1,8 +1,8 @@
 # Plan zabezpieczenia klienta i serwera — ticket-gate + tryby gry + blokada dodawania serwerów
 **Data**: 2026-03-01  
-**Status**: 🟠 KOD WYMAGA POPRAWEK — guardy C++ w canary_test/ są uszkodzone (patrz sekcja 20)  
+**Status**: ⏳ W TRAKCIE — architektura i backlog sa opisane, ale runtime/E2E przed kompilacja nie sa jeszcze domkniete (`launcher + WWW + instalka + dual-server`)  
 **Źródło**: zarys_planu_modyfikacji_klienta.md + analiza kodu OTClient + Canary  
-**Ostatnia aktualizacja postępów**: 2026-03-03 (audyt cross-check canary/ vs canary_test/ — wykryto 12+ błędów guardów)
+**Ostatnia aktualizacja postępów**: 2026-03-06 01:31 (uzupelniono mape dokumentacji i referencje do planow 07/08/09/10)
 
 ### Legenda ikon statusu
 | Ikona | Znaczenie |
@@ -13,6 +13,68 @@
 | 🔴 | Bloker — nie skompiluje się / nie zadziała |
 | ⬜ | Nie rozpoczęte |
 | ⏳ | W trakcie |  
+
+---
+
+## 0.1 Aktualna mapa dokumentacji (source of truth)
+
+Ten dokument jest **glownym opisem architektury i backlogu strategicznego**, ale **nie** jest juz jedynym operacyjnym zrodlem prawdy na jutro.
+
+### Dokumenty aktywne (utrzymywac na biezaco)
+
+1. `00_START_PRACY_CHECKLISTA.md`
+- glowna checklista statusow `K*`
+- jedyne miejsce, gdzie ma byc widac zbiorczy stan TODO / DONE / PARTIAL
+
+2. `01_DZIENNIK_PRAC.md`
+- chronologiczny log zmian, decyzji i wynikow PASS/FAIL/BLOCKED
+
+3. `07_PLAN_JUTRO_DZIEN_KOMPILACJI.md`
+- operacyjny plan dnia kompilacji
+- gate globalne i harmonogram dnia
+
+4. `08_PLAN_INSTALKA_JUTRO_DETALE.md`
+- operacyjny plan instalki i paczki gracza
+- gate `G-INS` / `PG-INS`
+
+5. `09_PLAN_INTEGRACJA_LAUNCHER_WWW_CANARY_JUTRO.md`
+- operacyjny plan integracji launcher/API/WWW/RedDAXE/Canary
+- gate `G-INT`
+
+6. `10_AUDYT_DOKUMENTACJI_I_BRAKOW_2026-03-06.md`
+- audyt brakow dokumentacyjnych, rozjazdow i realnych blockerow przed kompilacja
+
+### Dokumenty aktywne tematyczne (uzupelniaj tylko w swoim zakresie)
+
+1. `03_PLAN_WSPOLNE_KONTO_2_SERWERY.md`
+- model konta globalnego, dual-server i roadmapa multi-game
+
+2. `04_PLAN_PORTAL_REDDAXE_PREKOMPILACJA.md`
+- portal `/portal` i `/reddaxe`, konto globalne i routing front-door
+
+3. `05_PLAN_SKLEP_SMS_2_BAZY.md`
+- sklep/platnosci w modelu 2 baz
+
+4. `06_AUDYT_RUNTIME_UI_I18N_TIBIACOM.md`
+- legacy WWW, i18n, clipping, runtime drift i route issues
+
+### Dokumenty historyczne / referencyjne
+
+1. `2026-03-05_PLAN_PRZED_KOMPILACJA.md`
+- archiwalny snapshot, zastapiony przez `07`
+
+2. sprinty launcherowe (`2026-03-03_launcher_sprint*.md`)
+- material referencyjny do implementacji launchera, nie glowna checklista na jutro
+
+3. `launcher+rust.md`, `launcher+rust2.md`, `launcher+rust2_zadania.md`
+- szczegolowa specyfikacja launchera, helper do implementacji i walidacji kontraktow
+
+### Zasada source of truth
+
+1. Status zadania = `00_START_PRACY_CHECKLISTA.md`.
+2. Przebieg pracy i decyzje = `01_DZIENNIK_PRAC.md`.
+3. Plan jutra = `07` + `08` + `09`.
+4. Ten dokument = szeroka architektura, backlog i uzasadnienia techniczne.
 
 ---
 
@@ -2451,3 +2513,409 @@ resp = requests.get("https://...", verify=True, timeout=10)
 - Build blocker C++: ✅ naprawiony w kodzie lokalnym.
 - Ticket-gate runtime consistency (nonce/iat/world binding): ✅ poprawione.
 - Walidacja końcowa: ⏳ oczekuje na nowy run GHA Canary matrix.
+
+## 22. Aktualizacja 2026-03-05 13:08 — stan po pushu + backlog decyzji
+
+### 22.1 Stan bieżący (as-is)
+- Poprawki krytyczne zostały wypchnięte: commit `652c0e033` na `feature/ticket-gate`.
+- Run Canary został odpalony: `22717070014`.
+- Zgodnie z decyzją operacyjną w tej sesji: **nie monitorujemy teraz wyniku GHA** (build 30-40 min).
+
+### 22.2 Co można robić teraz (bez czekania na GHA)
+| ID | Zadanie | Efekt bezpieczeństwa / jakości | Czas |
+|---|---|---|---|
+| P1 | Twardy rollout SQL (prod + rollback) | Mniejsze ryzyko awarii przy migracji `ticket_nonces/sessions/launch_tokens` | 1-2h |
+| P2 | Testy replay i czasu dla ticketów | Potwierdzenie, że nonce replay i expired/clock-skew są fail-closed | 2-3h |
+| P3 | Structured logging odrzuceń ticket | Lepsza diagnostyka cheat prób i szybsze reagowanie operacyjne | 2h |
+| P4 | Runbook fresh install (API+Canary+launcher) | Powtarzalne wdrożenia bez „ukrytej wiedzy” i szybszy onboarding | 2-3h |
+| P5 | Hardening launchera (artefakty + checksums + podpis) | Trudniejsze podmiany binarek i pewniejszy update channel | 2-4h |
+| P6 | Rozdzielenie `apiPort`/`gamePort` w całym flow | Mniej błędów konfiguracji i mniej false-negative w połączeniach | 1-2h |
+
+### 22.3 Rekomendowana kolejność do decyzji
+1. `P1` SQL rollout + rollback.
+2. `P2` testy replay/time-skew.
+3. `P3` logging odrzuceń ticket.
+4. `P4` runbook fresh install.
+5. `P5` packaging/podpis launchera.
+6. `P6` cleanup konfiguracji portów.
+
+## 23. Aktualizacja 2026-03-05 15:42 — Postęp P1 (Codex)
+
+### 23.1 Status P1
+- `P1` rozpoczęte: ✅ implementacja plików migracji i runnera CLI zakończona.
+- `P1` wdrożenie produkcyjne: ⏳ oczekuje na decyzję Copilot/user (uruchomienie `rollout` na docelowej DB).
+
+### 23.2 Artefakty P1
+- `canary_test/html_copy/apik/v1/migrations/001_ticket_gate_rollout.sql`
+- `canary_test/html_copy/apik/v1/migrations/001_ticket_gate_rollback.sql`
+- `canary_test/html_copy/apik/v1/migrations/002_launcher_tables_rollout.sql`
+- `canary_test/html_copy/apik/v1/migrations/002_launcher_tables_rollback.sql`
+- `canary_test/html_copy/apik/v1/migrations/003_cleanup_events_rollout.sql`
+- `canary_test/html_copy/apik/v1/migrations/003_cleanup_events_rollback.sql`
+- `canary_test/html_copy/apik/v1/migrations/migrate.php`
+
+### 23.3 Walidacja wykonana
+- `php -l migrate.php` — OK.
+- `php migrate.php status` — OK (001/002/003 jako `PENDING`).
+
+### 23.4 Problemy wykryte (do wspólnego rozwiązania z Copilotem)
+1. Event scheduler:
+`003_cleanup_events` wymaga działającego `event_scheduler`; w części środowisk potrzebne będą uprawnienia DBA do `SET GLOBAL event_scheduler = ON`.
+2. Podwójne źródła schemy:
+historycznie istnieją równolegle `schema_ticket_gate.sql`, `schema_launcher.sql` i `sql/ticket_gate_migration.sql`; trzeba utrzymać jeden canonical flow wdrożeniowy (rekomendacja: `apik/v1/migrations/` + `migrate.php`).
+3. Spójność manifest_versions:
+`generate_manifest.php` używa `file_count` i `total_size` — migracja 002 została pod to dopasowana, ale wymaga potwierdzenia po rollout.
+
+## 24. Aktualizacja 2026-03-05 15:48 — Postęp P3 (structured logging)
+
+### 24.1 Status P3
+- `P3` wdrożone: ✅ logging w `ticket.php`, `launcher-token.php`, `challenge.php`, `server-status.php`.
+- `P3` operacyjne domknięcie: ⏳ rollout/deploy po stronie hosta (katalog logów + logrotate + monitoring).
+
+### 24.2 Co wdrożono
+- `common.php`: `hashClientIp()`, `logTicketEvent()` (JSONL + fallback do `error_log`).
+- `ticket.php`: eventy `ticket.issued` i `ticket.rejected.*` z metadanymi bezpieczeństwa.
+- `launcher-token.php`: eventy `launcher_token.issued` i `launcher_token.rejected.*`.
+- Dodano template logrotate:
+  - `canary_test/html_copy/apik/v1/logrotate/serwercanary`
+
+### 24.3 Ryzyka/otwarte decyzje
+1. Domyślna ścieżka logów `/var/log/serwercanary/security-events.log` wymaga provisioning katalogu + praw (`www-data`).
+2. Do potwierdzenia retencja logów i PII policy (obecnie logowane jest `ipHash`, bez surowego IP).
+3. `CHALLENGE_REQUIRED` wdrażać etapowo (najpierw klienty challenge-ready, potem enforce).
+
+## 25. Aktualizacja 2026-03-05 15:55 — Postęp P2 (testy bezpieczeństwa Rust)
+
+### 25.1 Status
+- `P2` rozpoczęte: ✅ pierwszy pakiet testów i walidacji wdrożony.
+- `P2` pełne domknięcie: ⏳ nadal otwarte pozycje stricte ticket/replay po stronie API/DB (do dalszej pracy z Copilotem).
+
+### 25.2 Co wdrożono teraz
+- `launcher-api/src/client.rs`
+  - twarda walidacja challenge-response:
+    - nonce: non-empty, min 32 znaki, hex-only
+    - TTL: `1..=30s` (odrzucane `0` i `>30`)
+  - `fetch_challenge()` przechodzi przez wspólną funkcję walidacji.
+  - dopisane testy jednostkowe walidacji challenge.
+- `launcher-core/src/planner.rs`
+  - test: absolutny URL pozostaje bez zmian (`https://...` passthrough).
+  - test: brak `baseUrl` + pusty `url` w wpisie manifestu kończy się `MissingBaseUrl`.
+- `common-models/src/manifest.rs`
+  - test parsowania `servers[]` (id/host/port/gameMode/channel) dla manifestu v2.
+
+### 25.3 Ryzyka / decyzje do wspólnego domknięcia
+1. Limit challenge TTL na launcherze jest teraz fail-closed (`max 30s`) — API musi mieć zgodny kontrakt.
+2. Jeśli produkcyjne `challenge.php` zwraca większy TTL, launcher odrzuci challenge aż do ujednolicenia konfiguracji.
+
+## 26. Aktualizacja 2026-03-05 16:03 — Domknięcie blokad P2/P3 (challenge + server-status)
+
+### 26.1 Co wdrożono
+- `P2 2.11`: dodano test `test_challenge_with_rotated_key` w `launcher-rust/crates/launcher-core/src/hmac_rotation.rs`.
+- `P3`:
+  - dodano `canary_test/html_copy/apik/v1/challenge.php`,
+  - dodano `canary_test/html_copy/apik/v1/server-status.php`,
+  - oba endpointy logują structured eventy przez `logTicketEvent()`.
+- `launcher-token.php`:
+  - dodana walidacja `nonce` + `challengeResponse`,
+  - one-time consume nonce z `ticket_nonces` (`account_id=0`),
+  - flaga rolloutowa `CHALLENGE_REQUIRED` (domyślnie `false`).
+- `.env.example`:
+  - dodane `CHALLENGE_TTL`, `CHALLENGE_REQUIRED`, `SERVER_STATUS_TIMEOUT_MS`, `SECURITY_LOG_FILE`, `LOG_IP_SALT`.
+
+### 26.2 Walidacja techniczna
+- `php -l challenge.php` — OK.
+- `php -l server-status.php` — OK.
+- `php -l launcher-token.php` — OK.
+- `rustfmt --check launcher-rust/crates/launcher-core/src/hmac_rotation.rs` — OK.
+
+### 26.3 Otwarte decyzje operacyjne
+1. `CHALLENGE_REQUIRED=true` włączyć dopiero po rollout klienta wspierającego challenge flow (żeby uniknąć `403` dla legacy).
+2. Monitorować tabelę `ticket_nonces` (challenge + ticket flow) i retencję cleanup.
+
+## 27. REALNY PLAN WYKONAWCZY — aktualizacja 2026-03-05 22:30
+
+> **BRUTALNA DIAGNOZA**: Kod launcher-rust istnieje, Canary kompiluje się na GHA,
+> ale NIE MA ŻADNEJ działającej paczki dla graczy, NIE MA drugiego serwera (Modern),
+> launcher NIGDY nie został uruchomiony E2E, a hosting plików to symlinki na dev testyy/.
+> Poniżej konkretne, atomowe kroki — bez ściemniania.
+>
+> **Poprzednia sekcja 27 (z 18:17) była za ogólnikowa** — ta ją zastępuje konkretnymi krokami.
+
+### ~~27.2 TOR A — Instalka zwykła / dev~~ → ZASTĄPIONE przez 27.2–27.9 poniżej
+
+> **Cała stara sekcja 27.2–27.6 jest nieaktualna — patrz sekcja 28 poniżej z konkretnymi krokami.**
+
+### ~~27.3 TOR B — Instalka dla graczy / prod (dystrybucja)~~ → ZASTĄPIONE przez sekcję 28
+
+| ID | Zadanie | Status |
+|---|---|---|
+| P-INS-1 | Build czystej paczki graczy na GHA (bez `src/`, bez plików deweloperskich) | ⬜ |
+| P-INS-2 | Publikacja paczki graczy na hostingu (`/files/stable/<version>/`) | ⬜ |
+| P-INS-3 | Generacja manifestu i checksum dla paczki graczy (z gotowego artefaktu) | ⬜ |
+| P-INS-4 | Test świeżej instalacji z paczki graczy na Windows (bez artefaktów dev) | ⬜ |
+| P-INS-5 | Rejestr wersji i changelog paczki graczy (co weszło do release) | ⬜ |
+| P-INS-6 | Procedura rollback paczki graczy (rollback symlink + poprzedni manifest) | ⬜ |
+
+### ~~27.4 TOR C — Rozdzielenie serwerów: Canary Modern i Canary 7.4~~ → ZASTĄPIONE przez sekcję 28
+
+| ID | Zadanie | Status |
+|---|---|---|
+| S-1 | Ustalić finalne identyfikatory światów (`canary-modern`, `canary-classic74`) i przypisać do DB/API | ⬜ |
+| S-2 | Potwierdzić osobne endpointy host:port dla `Modern` i `Classic 7.4` | ⬜ |
+| S-3 | W launcherze pokazywać oba światy jako osobne pozycje (bez nadpisywania hostem) | ⬜ |
+| S-4 | W `ticket.php` wymusić mapowanie `gameMode -> worldId` (bez fallbacków „wszystko”) | ⬜ |
+| S-5 | Blokada cross-mode: klient `classic74` nie może wejść na `modern` i odwrotnie | ⬜ |
+| S-6 | Test równoległych sesji: jednoczesny login 7.4 + modern z tej samej instalki graczy | ⬜ |
+
+### ~~27.5 TOR D — Finalny flow: launcher update + update instalki + oba serwery~~ → ZASTĄPIONE przez sekcję 28
+
+| ID | Zadanie | Status |
+|---|---|---|
+| U-1 | Test self-update launchera po podbiciu wersji (`launcher-version.php`) | ⬜ |
+| U-2 | Test update instalki po zmianie pliku i podbiciu wersji manifestu | ⬜ |
+| U-3 | Test „self-update + update klienta” w jednym pełnym przebiegu | ⬜ |
+| U-4 | Test naprawy: modyfikacja pliku krytycznego -> blokada -> repair -> ponowny start | ⬜ |
+| U-5 | Po aktualizacji uruchomić równolegle sesję `canary-modern` i `canary-classic74` | ⬜ |
+| U-6 | Zapis PASS/FAIL/BLOCKED do `2026-03-05_dual_mode_test_results_J4.md` | 🔄 |
+
+### ~~27.6 Kryteria końcowe (gate)~~ → ZASTĄPIONE przez sekcję 28
+
+| Gate | Kryterium | Status |
+|---|---|---|
+| G1 | Paczka graczy uruchamia launcher bez zależności deweloperskich | ⬜ |
+| G2 | Self-update launchera działa na paczce graczy | ⬜ |
+| G3 | Update instalki graczy działa po zmianie manifestu | ⬜ |
+| G4 | Canary Modern i Canary 7.4 są osobno widoczne i osobno osiągalne | ⬜ |
+| G5 | Jednoczesna sesja 7.4 + modern z jednej instalki graczy działa | ⬜ |
+| G6 | Różnice zasad bezpieczeństwa między 7.4 i modern potwierdzone testem | ⬜ |
+
+---
+
+## 28. KONKRETNY PLAN WYKONAWCZY (2026-03-05 22:30) — zastępuje ogólnikowe 27.2–27.6
+
+### 28.0 STAN FAKTYCZNY — co naprawdę mamy, a czego nie
+
+| Element | Istnieje? | Działa? | Co brakuje |
+|---|---|---|---|
+| Launcher Rust/Tauri — kod źródłowy | ✅ 15+ crate'ów | ❓ | NIGDY nie odpalony E2E |
+| Launcher — artefakty ZIP z GHA | ✅ 6 zipów (tauri/cli/helper × win/linux) | ❓ | Nikt nie rozpakował i nie uruchomił |
+| API PHP (login/ticket/update/server-status/challenge) | ✅ wdrożone /var/www/html | ⚠️ testowane curl-em | Nie testowane launcherem |
+| Canary binary (serwer "7.4 test") | ✅ 153MB z GHA build #29 PASS | ⚠️ nie odpalony z ticket-gate | Brak testu z ticket flow |
+| **Canary Modern (drugi serwer)** | ❌ NIE ISTNIEJE | ❌ | Osobny katalog, config, port, world w DB |
+| OTClient binary (otclient + otclient.exe) | ✅ | ❓ | Nie testowane z ticket flow |
+| **Paczka dla graczy** | ❌ NIE ISTNIEJE | ❌ | Brak katalogu z czystymi plikami (bez src/git/docs) |
+| **Hosting plików klienta** | ⚠️ symlinki na testyy/ (dev!) | ❌ FAKE | Trzeba prawdziwą paczkę z manifestem |
+| Dual-server .env config | ⚠️ porty ZAKOMENTOWANE | ❌ | Odkomentować + ustawić porty |
+| Self-update launchera | ⚠️ kod istnieje | ❌ NIGDY testowany | - |
+| Update instalki (patching) | ⚠️ kod istnieje | ❌ NIGDY testowany | - |
+| DB tables (ticket_nonces, ticket_sessions, launch_tokens, manifest_versions) | ✅ | ⚠️ dane z curl | - |
+
+### 28.1 TOR A — Dual-Server: uruchomienie 2 instancji Canary (Modern + Classic 7.4)
+
+**Stan:** ✅ ZROBIONE (2026-03-05). Oba serwery chodzą: Classic PID 21040 (7171/7172), Modern PID 22305 (7173/7174). API routuje poprawnie.
+
+| ID | Zadanie | Plik(i) | Status |
+|---|---|---|---|
+| S-1 | Utworzyć `canary_modern/` z osobnym `config.lua` (serverName="Canary Modern", login=7173, game=7174, ticketGateEnabled=true, worldId=1) | `canary_modern/config.lua` | ✅ |
+| S-2 | Skopiować binary Canary do `canary_modern/` + podlinkować data pack | `canary_modern/` | ✅ |
+| S-3 | Utworzyć world "Modern" w DB lub osobną bazę `canary_modern_db` | MySQL | ✅ db=canary_modern |
+| S-4 | W `canary_test/config.lua` potwierdzić worldId=0 + game port 7172 (spójnie z API mapowaniem) | `canary_test/config.lua` | ✅ |
+| S-5 | W `.env` API ODKOMENTOWAĆ: `WORLD_CLASSIC74_PORT=7172`, `WORLD_MODERN_PORT=7174` | `/var/www/html/apik/v1/.env` | ✅ |
+| S-6 | Zweryfikować `login.php`: filtrowanie worldów per gameMode → poprawne IP:port | `login.php` | ✅ |
+| S-7 | Uruchomić OBA serwery jednocześnie (7172 + 7174) | terminal | ✅ |
+| S-8 | Test curl: login z gameMode=classic74 → world 7172; gameMode=modern → 7174 | curl | ✅ |
+| S-9 | Test curl: ticket.php generuje ticket z poprawnym worldId per gameMode | curl | ✅ |
+
+### 28.2 TOR B — Launcher: pierwsze uruchomienie i test E2E
+
+**Stan:** CLI launcher działa na WSL (check/update/hash OK). Tauri wymaga WebKit (brak na WSL). Testy Tauri UI → **Windows** (`testy-kopia otclient`). Dodano `--dev-mode` flagę do CLI (commit be239e86e).
+
+| ID | Zadanie | Plik(i) | Status |
+|---|---|---|---|
+| L-1 | Rozpakować `launcher-tauri-linux-x86_64.zip` do katalogu testowego | zip | ✅ |
+| L-2 | Umieścić `launcher_config.json` (devMode=true, apiBaseUrl na serwer) obok binary | config | ✅ |
+| L-3 | Uruchomić launcher Tauri — czy UI się otwiera? | terminal | ⚠️ Tauri=FAIL (brak WebKit na WSL), CLI=OK |
+| L-4 | Jeśli L-3 FAIL → spisać błędy, zdiagnozować, naprawić | docs | ✅ dodano --dev-mode do CLI |
+| L-5 | UI: launcher łączy się z server-status.php i widzi oba serwery? | UI | ⬜ → Windows |
+| L-6 | UI: launcher pobiera manifest z update.php i widzi listę plików? | UI | ⬜ → Windows |
+| L-7 | Przycisk „Graj" uruchamia OTClient z launch-tokenem? | UI+proces | ⬜ → Windows |
+| L-8 | **Na Windows**: powtórzyć L-2..L-7 z launcher-tauri-windows-x86_64.zip | Windows | ⬜ → Windows (testy-kopia otclient) |
+
+### 28.3 TOR C — Prawdziwy hosting plików klienta
+
+**Stan:** ✅ ZROBIONE (2026-03-05). Czysta paczka 7224 plików / 432MB w `client_pack/1.1.0/`. Manifest v1.1.1 wygenerowany (hash=89d86ba3...). H-6 test launcher download → **Windows**.
+
+| ID | Zadanie | Plik(i) | Status |
+|---|---|---|---|
+| H-1 | Zdefiniować zawartość paczki graczy (otclient.exe + data/ + modules/ + init.lua, BEZ src/git/docs) | docs | ✅ |
+| H-2 | Napisać `build_client_pack.sh` kopiujący TYLKO wymagane pliki | skrypt | ✅ |
+| H-3 | Wygenerować manifest na czystej paczce (generate_manifest.php) | API | ✅ v1.1.1 |
+| H-4 | Umieścić pod `/files/stable/1.1.0/` (prawdziwy katalog, NIE symlink) | serwer www | ✅ |
+| H-5 | Wpis do `manifest_versions` w DB | MySQL | ✅ |
+| H-6 | Test: launcher pobiera manifest → pliki → filesHash OK → token OK | launcher | ⬜ → Windows |
+
+### 28.4 TOR D — Self-update launchera
+
+**Stan:** API gotowe (sha256 dodane). CLI check działa — widzi version mismatch i required=true/false. SU-4/SU-5 wymagają nowego builda → po zakończeniu wszystkich zadań.
+
+| ID | Zadanie | Plik(i) | Status |
+|---|---|---|---|
+| SU-1 | Ustawić poprawny response w launcher-version.php (version, downloadUrl, sha256) | API | ✅ sha256 dodane |
+| SU-2 | Sprawdzić curl → poprawny JSON | curl | ✅ |
+| SU-3 | Launcher v0.1.0 → "Brak aktualizacji" (wersja ta sama) | launcher | ✅ CLI check potwierdza |
+| SU-4 | Podbić na v0.2.0 w API, zbudować nowy launcher na GHA, wgrać binary | GHA+serwer | ⬜ wymaga builda |
+| SU-5 | Stary launcher → "Aktualizuj" → podmiana → restart OK | launcher | ⬜ → Windows |
+
+### 28.5 TOR E — Update instalki klienta po zmianach
+
+**Stan:** Przetestowano na WSL z CLI launcher: zmiana init.lua → nowy manifest v1.1.1 → launcher wykrywa 1 plik do update → pobiera → SHA OK. UP-5 (uruchomienie gry) → **Windows**.
+
+| ID | Zadanie | Plik(i) | Status |
+|---|---|---|---|
+| UP-1 | Zmienić 1 plik w paczce klienta (np. init.lua) | client_pack/ | ✅ |
+| UP-2 | Podbić manifest (1.1.0 → 1.1.1), wygenerować nowy | generate_manifest + DB | ✅ naprawiono POST parsing |
+| UP-3 | Launcher wykrywa "Update dostępny" → "Aktualizuj" | launcher UI | ✅ CLI: 1 download, up_to_date=false |
+| UP-4 | Launcher pobrał zmieniony plik, SHA OK, nowy filesHash OK | launcher logs | ✅ init.lua pobrany, hash=89d86ba3 |
+| UP-5 | Gra po aktualizacji → login → serwer | OTClient | ⬜ → Windows |
+
+### 28.6 TOR F — Paczka graczy finalna (produkcyjna instalka)
+
+**Stan:** Struktura Linux gotowa (`player_package/`): launcher + launcher-cli + configs + client/. ZIP=7.9MB. Paczka Windows → z `testy-kopia otclient` + launcher-tauri-windows.
+
+| ID | Zadanie | Plik(i) | Status |
+|---|---|---|---|
+| PK-1 | Struktura: launcher.exe + client/ + launcher_config.json | - | ✅ Linux gotowe |
+| PK-2 | launcher_config.json z URL produkcyjnym (devMode=false) | config | ✅ + dev wariant |
+| PK-3 | Spakować w ZIP / instalator | - | ✅ TwojaGra-Linux-v1.0.0.zip (7.9MB) |
+| PK-4 | Test E2E: gracz pobiera → rozpakowuje → launcher → update → gra | test | ⬜ → Windows |
+| PK-5 | Test: nowy gracz bez historii — paczka self-sufficient? | test | ⬜ → Windows |
+
+### 28.7 Kryteria końcowe — G1..G9 WSZYSTKIE ✅ = "działa"
+
+| Gate | Kryterium | Zależy od | Status |
+|---|---|---|---|
+| G1 | Oba serwery (Modern 7174 + Classic74 7172) chodzą jednocześnie | S-7 | ✅ |
+| G2 | Launcher Tauri na Windows pokazuje ekran + status obu serwerów | L-8 | ⬜ → Windows |
+| G3 | Launcher pobiera pliki z prawdziwego manifestu (nie symlinki) | H-6 | ✅ CLI (WSL) potwierdza |
+| G4 | Self-update launchera: stara → nowa wersja | SU-5 | ⬜ wymaga builda |
+| G5 | Update instalki: zmiana → nowy manifest → launcher patchuje | UP-5 | ✅ CLI (WSL) potwierdza |
+| G6 | Classic74: login → ticket → serwer 7172, blokady działają | S-9+UP-5 | ⬜ → Windows |
+| G7 | Modern: login → ticket → serwer 7174, bez blokad | S-9+UP-5 | ⬜ → Windows |
+| G8 | Paczka graczy ZIP: rozpakuj → uruchom → graj | PK-5 | ⬜ → Windows |
+| G9 | Cross-mode block: classic74 ≠ modern i odwrotnie | S-5 | ✅ API routuje poprawnie |
+
+### 28.7a J7 — dev vs prod (status dokumentacyjny)
+
+| ID | Zadanie | Artefakt | Status |
+|---|---|---|---|
+| J7.0 | Spisać różnice instalka `dev` vs `gracze/prod` (kanały, katalogi, zasady rollout) | `../../Dokumentacja/2026-03-05_instalka_dev_vs_gracze_J7.md` | ✅ |
+| J7.1 | Przełożyć dokument na wdrożenie konfiguracji i smoke testy (L/H/PK) | sekcje 28.2, 28.3, 28.6 | ⏳ |
+
+### 28.8 Kolejność realizacji (sugerowana)
+
+```
+1. TOR A (Dual-Server) → S-1..S-9
+   ↓ oba serwery chodzą, API zwraca poprawne porty
+2. TOR C (Hosting plików) → H-1..H-6
+   ↓ prawdziwa paczka z manifestem
+3. TOR B (Launcher E2E) → L-1..L-8
+   ↓ launcher uruchamia się, widzi serwery, pobiera pliki, odpala grę
+4. TOR D (Self-update) → SU-1..SU-5
+   ↓ stary launcher podmienia się na nowy
+5. TOR E (Update instalki) → UP-1..UP-5
+   ↓ zmiana pliku → nowy manifest → launcher patchuje → gra działa
+6. TOR F (Paczka graczy) → PK-1..PK-5
+   ↓ self-sufficient ZIP dla gracza
+```
+
+### 28.9 TOR G — Wspolne konto na 2 serwery + strona/launcher (NOWE wymaganie 2026-03-05)
+
+**Stan:** brak domknietej logiki `konto wspolne + wybor serwera po loginie + topki/listy all/per-serwer`.
+
+| ID | Zadanie | Plik(i) | Status |
+|---|---|---|---|
+| K-1 | Login: sesja neutralna `gameMode=all` (gdy user nie wybral serwera) zamiast domyslnego `modern` | `login.php` | 🟢 (repo) |
+| K-2 | Ticket: dla sesji `all` wymagac `gameMode` i walidowac postac do wybranego serwera | `ticket.php` | 🟢 (repo) |
+| K-3 | Ujednolicic mapowanie `gameMode↔worldId↔worldName` we wszystkich endpointach | `login.php`, `ticket.php`, `server-status.php`, `generate_manifest.php` | 🟢 (repo) |
+| K-4 | Potwierdzic kolumne bazy dla swiata postaci (`players.world`, fallback kompatybilnosci) | API + SQL | 🟢 (diagnoza + fallback w repo) |
+| K-5 | Dodac endpoint rejestracji konta pod launcher (`register-account.php`) | API | 🟢 (repo) |
+| K-6 | Dodac endpoint kontekstu konta i wyboru serwera (`account-context.php`) | API | 🟢 (repo) |
+| K-7 | Dodac endpoint topki `all/classic74/modern` | API | 🟢 (repo) |
+| K-8 | Dodac endpoint listy graczy `all/classic74/modern` | API | 🟢 (repo) |
+| K-9 | Wpisac kontrakt JSON dla strony i launchera (jeden format danych) | docs | ✅ |
+| K-10 | Testy curl + raport PASS/FAIL/BLOCKED | `03_PLAN_WSPOLNE_KONTO_2_SERWERY.md` | 🔄 (lokalne testy kontraktu PASS, w tym K12 + K13/K14) |
+| K-11 | Migracja DB identity/social/sync (`004_identity_social`) | `migrations/004_*` | ✅ (APPLIED 2026-03-05 19:12) |
+| K-12 | Sync token WWW↔launcher: issue/consume endpointy | API | 🟢 (repo + testy lokalne PASS) |
+| K-13 | Flow launcher->WWW: konto zalozone w launcherze, postacie tworzone na WWW | API + WWW | 🟢 (repo + test lokalny PASS) |
+| K-14 | Flow WWW->launcher: konto zalozone na WWW synchronizowane do launchera | API + launcher | 🟢 (repo + test lokalny PASS) |
+| K-15 | Social auth launcher: Google/Facebook/Steam (link/create konto lokalne) | API + launcher | 🔄 backend dla Google/Facebook/Steam gotowy w repo (`oauth-start.php`, `oauth-callback.php`), runtime/secrets/E2E pending |
+| K-16 | Hardening social/sync: PKCE + state/nonce + rate-limit + audit trail | API + DB | 🔄 czesciowo (PKCE oauth2 + one-time state + audit + anti-merge-collision + DB rate-limit w repo; migracja 005 pending), pelny pakiet TODO |
+| K-17 | UX launcher-first: po rejestracji 2 akcje `Utworz postac Tibia 7.4` / `Utworz postac Modern` + redirect WWW z preselectem swiata | launcher + WWW | 🟢 (repo, runtime test pending) |
+| K-18 | Launcher: `Utworz postac` probuje auto-login WWW przez `account-sync-token.php` (gdy jest `sessionKey`) i fallbackuje do zwyklego URL przy bledzie | launcher-tauri + API | 🟢 (repo, runtime test pending) |
+| K-19 | Natywny login konta launchera (email+haslo -> `sessionKey` bez recznego wklejania) | launcher UX/auth | 🟢 kod gotowy (repo): formularz UI + komenda Tauri, runtime E2E pending |
+| K-20 | Spec globalnego konta launchera dla wielu gier (`identity` + profile per gra/serwer) | API + docs | ⬜ TODO |
+| K-21 | Security scope multi-game (identity token vs profile token + audit) | API + docs | ⬜ TODO |
+| K-22 | Gildie: model globalny + odwzorowanie per gra/serwer | API + WWW | ⏸ DEFERRED (po stabilizacji login/security) |
+| K-23 | UI aren | launcher + WWW | ⏸ DEFERRED (po stabilizacji login/security) |
+| K-24 | Natywna rejestracja konta launchera (`accountName/email/password/passwordConfirm`) + auto-login + fallback | launcher UX/auth | 🟢 kod gotowy (repo), runtime E2E pending |
+| K-28 | Ujednolicenie rejestracji WWW/API (walidacja + pola konta) | WWW + API | 🟢 kod gotowy (repo), runtime E2E pending |
+| K-29 | Portal `RedDAXE.pl` jako front-door (download launcher + konto + nawigacja) | WWW | ✅ RUNTIME PASS (`/portal/index.php` HTTP 200) |
+| K-30 | `RedDAXE.pl` download launchera: artefakt + checksum + fallback link | WWW + API | ✅ RUNTIME PASS (`/portal/download.php` HTTP 200, SHA-256 widoczny) |
+| K-31 | `RedDAXE.pl` konto wspolne (rejestracja/logowanie) na tym samym backendzie `accounts` | WWW + API | ✅ RUNTIME PASS (register+login portal) |
+| K-32 | `RedDAXE.pl` bezpieczne redirecty do WWW/forum/wiki/external (allow-list) | WWW | ✅ RUNTIME PASS (allow-list 302, open-redirect 400) |
+| K-33 | Testy pre-kompilacyjne E2E dla portalu (konto + download + routing) | testy runtime | ✅ RUNTIME PASS |
+| K-34 | Spojnosc brandingu/copy: `RedDAXE.pl` <-> WWW gry <-> launcher | WWW + docs | 🔄 W TRAKCIE (MVP copy gotowe; pelna standaryzacja po i18n) |
+| K-35 | Spike architektury front-door: PHP vs Python+Django (koszt, ryzyko, migracja) | architektura + docs | ⬜ TODO |
+| K-36 | Model globalnych rang (Helper/Admin/Multiadmin) per gra/serwer | authz + docs | ⬜ TODO (etap pozniejszy) |
+| K-37 | Federacja rang do forum/serwisow zewnetrznych (badge/title sync API) | API + forum | ⬜ TODO (po wyborze forum) |
+| K-41 | Pelne i18n portalu RedDAXE (`/portal` + `/reddaxe`): slowniki, selector jezyka, fallback | WWW + i18n | 🔄 PARTIAL — `/portal` runtime PASS; `/reddaxe` i18n wdrozone (PL/EN + selector + fallback), lokalny smoke PASS, runtime smoke pending |
+| K-42 | Pelne i18n WWW Tibia (CanaryAAC): account/create-character/toplist/players-list + bledy | WWW + i18n | ⬜ TODO (must-have) |
+| K-43 | Matryca testow i18n E2E (launcher+portal+WWW): PL/EN + fallback + missing keys | QA + i18n | 🔄 PARTIAL — `/portal` + AAC PASS, `/reddaxe` lokalny smoke PASS po i18n, launcher + runtime smoke `/reddaxe` pending |
+| K-47 | Architektura 2 baz serwerow: `global accounts` + `game_classic74` + `game_modern` | DB + arch | ⬜ TODO (spec) |
+| K-48 | Migracje infra/ENV: osobne DSN dla baz `classic74` i `modern` | DB + API | ⬜ TODO |
+| K-49 | Warstwa read/write routing po `gameMode` (repozytoria per-serwer) | API + WWW | ⬜ TODO |
+| K-50 | Mapowanie kont globalnych do profili per-baza (`account_world_links`) | DB + API | ⬜ TODO |
+| K-51 | API agregacji `all/classic74/modern` nad 2 bazami z tagiem zrodla rekordu | API | ⬜ TODO |
+| K-52 | Jedna strona WWW nad 2 bazami (switch serwera + degraded mode) | WWW | ⬜ TODO |
+| K-53 | Checkout sklepu SMS z twardym kontekstem serwera/bazy | WWW + platnosci | 🔄 SPEC READY (`05_PLAN_SKLEP_SMS_2_BAZY.md`) |
+| K-54 | Callback SMS: idempotencja + podpis + anti-replay + routing creditu | API + platnosci | 🔄 PARTIAL — callback core wdrozony (`CallbackProcessor` + PayPal/MercadoPago/PagSeguro), runtime E2E + signature hardening pending |
+| K-55 | Historia zakupow `all` + filtry per-serwer + audit | WWW + DB | 🔄 PARTIAL — audit ledger schema + callback write do `payment_ledger_entries` wdrozone, read-model pending |
+| K-56 | Rekonsyliacja transakcji (worker/cron) provider <-> DB | API + ops | 🔄 SPEC READY (`05_PLAN_SKLEP_SMS_2_BAZY.md`) |
+| K-57 | Matryca testow E2E bez kompilacji (register/login/characters/shop SMS, 2 bazy) | QA | 🔄 SPEC READY (`05_PLAN_SKLEP_SMS_2_BAZY.md`) |
+| K-58 | Plan migracji danych 1-baza -> 2-bazy + rollback | DB + ops | 🔄 SPEC READY (`05_PLAN_SKLEP_SMS_2_BAZY.md`) |
+| K-59 | Monitoring i alerty (DB health, callback SMS fail, duplicate txn) | ops | 🔄 SPEC READY (`05_PLAN_SKLEP_SMS_2_BAZY.md`) |
+| K-60 | Runbook operacyjny (onboarding nowej bazy/serwera + recovery) | ops + docs | 🔄 DRAFT READY (`05_PLAN_SKLEP_SMS_2_BAZY.md`) |
+
+**Uwaga operacyjna (2026-03-05):**
+- ✅ Runtime deploy plikow PHP do `/var/www/html/apik/v1/` nie jest obecnie blokerem uprawnien (grupa `www-data` + deploy przez `cp/install`).
+- Dla K-13/K-14 dodano endpointy mostu sesji WWW: `account-sync-www-login.php` (consume + auto-login WWW) i `account-sync-www-token.php` (issue z aktywnej sesji WWW).
+- Dla K-15 dodano backend social callback/start dla providerow Google/Facebook/Steam: `oauth-start.php` + `oauth-callback.php` (link/create lokalnego konta, sesja launchera, opcjonalny deep-link powrotu do launchera).
+- Dla K-16 dodano migracje `005_oauth_rate_limit_*` i DB-backed rate-limit w `oauth-start.php` / `oauth-callback.php` (feature flag `OAUTH_RATE_LIMIT_ENABLED`).
+- Dla K-18 launcher UI ma pole `sessionKey` i nowa komende Tauri `build_create_character_url`, ktora wywoluje `account-sync-token.php` i otwiera `account-sync-www-login.php` z redirectem do create-character + `mode`.
+- Dodatkowo wykryto brak indeksu UNIQUE na `accounts.email` (ryzyko duplikacji emaila bez transakcyjnej ochrony DB).
+- Dla K-19 launcher ma nowy formularz loginu (email+haslo) i komende `login_launcher_account`, ktora pobiera `launchToken`, loguje przez `login.php` i uzupelnia `sessionKey`.
+- Dla K-24 launcher ma formularz rejestracji i komende `register_launcher_account`, ktora tworzy konto przez `register-account.php`, potem probuje auto-login i przy bledzie daje czytelny fallback do recznego loginu.
+- Dla K-28 ujednolicono kontrakt rejestracji WWW/API: WWW `Create.php` ma regex `accountName` + limit hasla 6-72 + email lowercase + hash surowego hasla (bez HTML-sanitizacji), a API `register-account.php` uzupelnia ten sam zestaw pol konta (`page_access/premdays/type/coins/recruiter`).
+- Nowy kierunek pre-kompilacyjny: `RedDAXE.pl` jako strona glowna testowa systemu (download launchera, wspolne konto, przejscia do WWW/forum/wiki i linkow zewnetrznych), z pelnym E2E bez kompilacji.
+- Szczegolowy plan wykonawczy K-29..K-34: `Dokumentacja/01_Instalka_Klient/2026-03/04_PLAN_PORTAL_REDDAXE_PREKOMPILACJA.md`.
+- Dla K-29/K-30/K-32 wdrozono kod portalu i API: `reddaxe/index.php`, `reddaxe/go.php`, `reddaxe/bootstrap.php`, `apik/v1/installer-catalog.php`.
+- Runtime front-door aktualnie dziala pod sciezka `https://127.0.0.1/portal/` (HTTP 301 -> HTTPS); wariant `/reddaxe/*` utrzymywany jako rownolegly modul repo.
+- Dla K-41..K-43 zakres i18n portal+WWW zostal oznaczony jako gate must-have przed finalnym release.
+- Dla K-41 wdrozono i18n runtime portalu `/portal`: pl/en, selector jezyka (cookie `portal_lang`) i fallback do en; testy runtime PASS.
+- Dla K-41 wdrozono i18n rownoleglego modulu `/reddaxe`: slowniki `pl/en`, selector jezyka, fallback i usuniecie hardcoded PL (lokalny smoke PASS bez kompilacji).
+- Dla security redirectow `/reddaxe/go.php` log nie zapisuje juz surowego IP; w `redirect.log` trafia `ipHash` (sha256 + salt z `.env`).
+- Smoke K-44/K-45 (2026-03-05): API split (`/apik/v1/toplist.php`, `/apik/v1/players-list.php`) PASS; runtime WWW ma rozjazd routingu (`/community/highscores` i `/shop/payment` zwracaja 404, legacy `/index.php/highscores` zwraca 200).
+- Dla nowego zakresu pre-release dopisano pakiet K-47..K-60: separacja 2 baz runtime, agregacja WWW/API i pelny sklep SMS (checkout+callback+rekonsyliacja) w modelu serwer-aware.
+- Dla K-53..K-60 dodano szczegolowy plan wykonawczy: `05_PLAN_SKLEP_SMS_2_BAZY.md`.
+- Przygotowano migracje `009_payment_provider_idempotency` (tabele `payment_provider_events` + `payment_ledger_entries`) pod idempotentne callbacki i audyt ksiegowania.
+- Lokalny smoke (bez kompilacji): `installer-catalog.php` zwraca artefakt `launcher-main`; `go.php?to=www` zwraca `302`, a niepoprawny klucz redirectu zwraca `400`.
+- Dla K-31 dodano dedykowane strony konta portalu: `reddaxe/account-create.php`, `reddaxe/account-login.php`, `reddaxe/post-login.php`.
+- Rejestracja portalowa korzysta ze wspolnej uslugi `register-account-lib.php` (ta sama logika co API), co usuwa ryzyko self-HTTP deadlock przy single-worker.
+- `reddaxe/post-login.php` ma przycisk generowania tokenu `WWW -> launcher` przez `account-sync-www-token.php` (potwierdzenie wspolnego konta z launcherem).
+- Bloker do finalnego K-31/K-33: rozjazd stacku logowania WWW (`/account/login` vs legacy routing/template) wymaga potwierdzenia w docelowym runtime przegladarkowym.
+- Wykryto luke implementacyjna: bootstrap routera aplikacyjnego (`App/Routes`) nie jest czytelny w aktualnym drzewie, dlatego portal jest wdrozony jako niezalezny moduł plikowy `/reddaxe/*` (pod vhost `RedDAXE.pl`) i nie wymaga kompilacji.
+- Do backlogu dopisano etap pozniejszy: decyzja architektury `PHP vs Django` dla front-door oraz model globalnych rang z federacja na forum/serwisy zewnetrzne.
+- Otwarta luka logiczna: K-19 jest jeszcze bez potwierdzonego runtime E2E (deploy + test na docelowym launcherze).
+- Wymagane przez usera: konto z launchera ma dzialac na WWW (tworzenie postaci), konto z WWW ma synchronizowac sie z launcherem oraz social signup/login (Google/Facebook/Steam).
+- Nowy wymog UX: po zalozeniu konta w launcherze gracz ma od razu widziec wybor `Tibia 7.4` / `Modern`, a WWW ma otwierac formularz tworzenia postaci z odpowiednim preselectem swiata.
+- Dodatkowy wymog produktowy: konto launchera ma byc globalne dla wielu gier; na tym etapie domykamy security+linked accounts, a gildie i UI aren sa celowo odlozone.

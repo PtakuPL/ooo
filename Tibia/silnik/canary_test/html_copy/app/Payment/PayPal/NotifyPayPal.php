@@ -1,8 +1,7 @@
 <?php
 namespace App\Payment\PayPal;
 
-use App\Model\Entity\Payments as EntityPayments;
-use App\Model\Entity\Account as EntityAccount;
+use App\Payment\CallbackProcessor;
 use PayPalCheckoutSdk\Orders\OrdersCaptureRequest;
 
 class NotifyPayPal
@@ -37,71 +36,67 @@ class NotifyPayPal
      * Handler trasy GET/POST /payment/paypal/return
      * - pobiera token (orderId) z query
      * - wykonuje CAPTURE
-     * - aktualizuje rekord płatności po naszym reference_id
-     * - przyznaje coiny na konto użytkownika
-     * - przekierowuje z komunikatem statusu
+     * - uruchamia idempotentny proces zaksięgowania
      */
     public static function ReturnPayPal($request)
     {
-        // Pobierz parametry zapytania
         $query = \method_exists($request, 'getQueryParams')
             ? $request->getQueryParams()
             : ($_GET ?? []);
 
-        $token = $query['token'] ?? ''; // orderId z PayPal
+        $token = $query['token'] ?? '';
         if (!$token) {
             header('Location: ' . URL . '/payment?status=error&provider=paypal&msg=missing_token');
             exit;
         }
 
         try {
-            // 1) CAPTURE
             $notifier = new self();
-            $response = $notifier->capture($token); // rzuci wyjątek, jeśli nie COMPLETED
-            $result   = $response->result ?? null;
+            $response = $notifier->capture($token);
+            $result = $response->result ?? null;
 
-            // 2) Wyciągnij nasz reference z purchase_units
             $reference = '';
             if (!empty($result->purchase_units) && isset($result->purchase_units[0])) {
-                $pu = $result->purchase_units[0];
-                // w createOrder ustawiliśmy oba: reference_id i custom_id
-                $reference = $pu->reference_id ?? ($pu->custom_id ?? '');
+                $purchaseUnit = $result->purchase_units[0];
+                // createOrder ustawia reference_id i custom_id
+                $reference = $purchaseUnit->reference_id ?? ($purchaseUnit->custom_id ?? '');
             }
+
             if (!$reference) {
-                // Bez reference nie zwiążemy z naszą płatnością
                 header('Location: ' . URL . '/payment?status=error&provider=paypal&msg=missing_reference');
                 exit;
             }
 
-            // 3) Znajdź rekord płatności po reference
-            $dbPayment = EntityPayments::getPayment(['reference' => $reference])->fetchObject();
-            if (!$dbPayment) {
-                header('Location: ' . URL . '/payment?status=error&provider=paypal&msg=payment_not_found');
+            $providerTxnId = (string) ($result->id ?? $token);
+            $callbackResult = CallbackProcessor::processApproved(
+                'paypal',
+                $providerTxnId,
+                $reference,
+                self::normalizePayload($result),
+                true
+            );
+
+            if ($callbackResult['ok'] ?? false) {
+                header('Location: ' . URL . '/payment?status=success&provider=paypal&ref=' . urlencode($reference) . '&msg=' . urlencode((string) ($callbackResult['reason'] ?? 'ok')));
                 exit;
             }
 
-            // 4) Zaktualizuj status płatności: 4 = approved (wg Twojego kodu)
-            EntityPayments::updatePayment(['reference' => $reference], [
-                'status' => 4,
-            ]);
-
-            // 5) Przyznaj coiny na konto
-            $dbAccount = EntityAccount::getAccount(['id' => $dbPayment->account_id])->fetchObject();
-            if ($dbAccount) {
-                $newCoins = (int)$dbAccount->coins + (int)$dbPayment->total_coins;
-                EntityAccount::updateAccount(['id' => $dbPayment->account_id], [
-                    'coins' => $newCoins,
-                ]);
-            }
-
-            // 6) Przekierowanie sukces
-            header('Location: ' . URL . '/payment?status=success&provider=paypal&ref=' . urlencode($reference));
+            header('Location: ' . URL . '/payment?status=error&provider=paypal&msg=' . urlencode((string) ($callbackResult['reason'] ?? 'processing_failed')));
             exit;
-
         } catch (\Throwable $e) {
-            // (opcjonalnie) można zalogować $e->getMessage()
             header('Location: ' . URL . '/payment?status=error&provider=paypal');
             exit;
         }
+    }
+
+    private static function normalizePayload($payload): array
+    {
+        $encoded = json_encode($payload);
+        if (!is_string($encoded)) {
+            return [];
+        }
+
+        $decoded = json_decode($encoded, true);
+        return is_array($decoded) ? $decoded : [];
     }
 }

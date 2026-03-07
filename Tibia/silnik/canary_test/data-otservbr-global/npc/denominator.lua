@@ -166,7 +166,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, quiz1[questionId].pKey)
 		npcHandler:setTopic(playerId, 3)
 	elseif npcHandler:getTopic(playerId) == 3 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.denominator.say_1", { message })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.denominator.say_13", { message })
 		playerLastResp[playerId] = tonumber(message)
 		npcHandler:setTopic(playerId, 4)
 	elseif npcHandler:getTopic(playerId) == 4 then
@@ -235,7 +235,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.denominator.say_9")
 		npcHandler:setTopic(playerId, 10)
 	elseif npcHandler:getTopic(playerId) == 10 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.denominator.say_2", { message })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.denominator.say_14", { message })
 		playerLastResp[playerId] = tonumber(message)
 		npcHandler:setTopic(playerId, 11)
 	elseif npcHandler:getTopic(playerId) == 11 then

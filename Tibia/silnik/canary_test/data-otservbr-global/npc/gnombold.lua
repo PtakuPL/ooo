@@ -142,11 +142,11 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "charges") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Daily) >= os.time() then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_1", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Daily) - os.time()) })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_39", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Daily) - os.time()) })
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_2", { levels[1], levels[2] })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_40", { levels[1], levels[2] })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Main) == -1 then
@@ -162,7 +162,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			player:addItem(19207, 1)
 			player:setStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Charge_Main, 0)
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.gnombold.say_3", "npc.gnombold.say_4" })
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.gnombold.say_37", "npc.gnombold.say_38" })
 			talkState[playerId] = nil
 		elseif MsgContains(message, "no") then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_21")
@@ -175,11 +175,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	///////////////]]
 	if MsgContains(message, "fertilise") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Daily) >= os.time() then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_5", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Daily) - os.time()) })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_41", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Daily) - os.time()) })
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_6", { levels[1], levels[2] })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_42", { levels[1], levels[2] })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Mushroom_Main) == -1 then
@@ -207,11 +207,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	////////////////////]]
 	if MsgContains(message, "nests") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Daily) >= os.time() then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_7", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Daily) - os.time()) })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_43", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Daily) - os.time()) })
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_8", { levels[1], levels[2] })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_44", { levels[1], levels[2] })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Nest_Main) == -1 then
@@ -238,11 +238,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	///////////]]
 	if MsgContains(message, "kill") then
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Daily) >= os.time() then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_9", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Daily) - os.time()) })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_45", { string.diff(player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Daily) - os.time()) })
 		end
 
 		if (player:getLevel() < levels[1]) or (player:getLevel() > levels[2]) then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_10", { levels[1], levels[2] })
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnombold.say_46", { levels[1], levels[2] })
 		end
 
 		if player:getStorageValue(Storage.Quest.U10_20.SpikeTaskQuest.Spike_Middle_Kill_Main) == -1 then

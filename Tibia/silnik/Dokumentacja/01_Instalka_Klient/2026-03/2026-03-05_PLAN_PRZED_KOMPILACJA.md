@@ -1,8 +1,10 @@
 # Plan zadań PRZED kompilacją — przygotowanie kodu
 **Data**: 2026-03-05  
-**Status**: ✅ WSZYSTKIE GRUPY GOTOWE — do pusha i kompilacji  
+**Status**: ⚠️ HISTORYCZNY — zastapiony planem dnia `07_PLAN_JUTRO_DZIEN_KOMPILACJI.md`  
 **Zasada**: Najpierw WSZYSTKIE zadania z tej listy, potem dopiero push + kompilacja na GHA.  
 **WWW**: Strona www NIE wymaga kompilacji — zajmuje się nią Codex (pomijamy).
+
+> Uwaga (2026-03-06): po wykryciu nowych problemow runtime (i18n/legacy routes/account flow) ten dokument traktujemy jako archiwalny snapshot. Aktualna kolejka przed kompilacja jest w `07_PLAN_JUTRO_DZIEN_KOMPILACJI.md` oraz `00_START_PRACY_CHECKLISTA.md` (K80-K89).
 
 ---
 

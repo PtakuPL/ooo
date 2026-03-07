@@ -18,10 +18,11 @@ use Twig\TwigFunction;
 global $twig, $twig_loader;
 
 $dev_mode = (config('env') === 'dev');
+$twig_auto_reload = $dev_mode || getBoolean(config('twig_auto_reload'));
 $twig_loader = new Twig_FilesystemLoader(SYSTEM . 'templates');
 $twig = new MyAAC_Twig_EnvironmentBridge($twig_loader, array(
 	'cache' => CACHE . 'twig/',
-	'auto_reload' => $dev_mode,
+	'auto_reload' => $twig_auto_reload,
 	'debug' => $dev_mode
 ));
 
@@ -30,7 +31,7 @@ $twig_loader->addPath(PLUGINS);
 if($dev_mode) {
 	$twig->addExtension(new Twig_DebugExtension());
 }
-unset($dev_mode);
+unset($dev_mode, $twig_auto_reload);
 
 $twig->addExtension(new MyAAC\Twig\Extension\TypeCastingExtension());
 

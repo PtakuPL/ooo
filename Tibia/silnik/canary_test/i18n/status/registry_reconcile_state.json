@@ -1,9 +1,9 @@
 {
-  "last_applied_at": "2026-02-14T13:57:12.914825Z",
+  "last_applied_at": "2026-02-21T20:40:03.020275Z",
   "last_action": "skipped_threshold",
   "last_reason": "no_sync_needed",
-  "last_target_adjustment": 53579,
-  "last_outside_keys_raw": 53579,
+  "last_target_adjustment": 53763,
+  "last_outside_keys_raw": 53763,
   "last_outside_pct_raw": 99.987,
-  "last_checked_at": "2026-02-15T13:52:18.484104Z"
+  "last_checked_at": "2026-02-21T21:18:38.972988Z"
 }

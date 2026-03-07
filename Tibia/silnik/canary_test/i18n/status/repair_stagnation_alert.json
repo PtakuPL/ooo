@@ -1,333 +1,333 @@
 {
-  "timestamp": "2026-02-15T13:28:17.776591Z",
+  "timestamp": "2026-02-21T21:11:14.462532Z",
   "window_hours": 6.0,
   "min_samples": 6,
   "min_drop_required": 1,
   "status": "warming_up",
   "alert": false,
-  "message": "Stagnation window not ready (window_too_short), span=5.99h samples=47",
+  "message": "Stagnation window not ready (window_too_short), span=5.99h samples=105",
   "reason": "window_too_short",
   "top_key": "es:npc.json",
-  "top_count": 11,
-  "old_total": 39594,
-  "new_total": 39100,
-  "decrease_pct": 1.25,
-  "old_ts": "2026-02-15T07:11:35.549054Z",
-  "new_ts": "2026-02-15T13:21:48.683338Z",
-  "hours_elapsed": 5.993,
-  "sample_count": 47,
+  "top_count": 43,
+  "old_total": 45370,
+  "new_total": 45236,
+  "decrease_pct": 0.3,
+  "old_ts": "2026-02-21T15:05:50.864620Z",
+  "new_ts": "2026-02-21T21:08:31.510044Z",
+  "hours_elapsed": 5.99,
+  "sample_count": 105,
   "per_lang_trend": {
     "ar": {
-      "old": 904,
-      "new": 904,
+      "old": 1054,
+      "new": 1054,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "az": {
-      "old": 662,
-      "new": 662,
+      "old": 812,
+      "new": 812,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "bg": {
-      "old": 691,
-      "new": 691,
+      "old": 842,
+      "new": 842,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "bn": {
-      "old": 904,
-      "new": 904,
+      "old": 1054,
+      "new": 1054,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "bs": {
-      "old": 663,
-      "new": 663,
+      "old": 813,
+      "new": 813,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "cs": {
-      "old": 641,
-      "new": 641,
+      "old": 791,
+      "new": 791,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "da": {
-      "old": 663,
-      "new": 663,
+      "old": 813,
+      "new": 813,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "de": {
-      "old": 660,
-      "new": 660,
+      "old": 809,
+      "new": 809,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "el": {
-      "old": 647,
-      "new": 647,
+      "old": 797,
+      "new": 797,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "es": {
-      "old": 549,
-      "new": 532,
-      "delta": 17,
-      "decrease_pct": 3.1
+      "old": 356,
+      "new": 330,
+      "delta": 26,
+      "decrease_pct": 7.3
     },
     "et": {
-      "old": 663,
-      "new": 663,
+      "old": 813,
+      "new": 813,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "fa": {
-      "old": 904,
-      "new": 904,
+      "old": 1054,
+      "new": 1054,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "fi": {
-      "old": 663,
-      "new": 663,
+      "old": 813,
+      "new": 813,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "fr": {
-      "old": 584,
-      "new": 578,
-      "delta": 6,
-      "decrease_pct": 1.03
+      "old": 728,
+      "new": 728,
+      "delta": 0,
+      "decrease_pct": 0.0
     },
     "he": {
-      "old": 904,
-      "new": 904,
+      "old": 1054,
+      "new": 1054,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "hi": {
-      "old": 904,
-      "new": 904,
+      "old": 1054,
+      "new": 1054,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "hr": {
-      "old": 663,
-      "new": 663,
+      "old": 813,
+      "new": 813,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "hu": {
-      "old": 663,
-      "new": 663,
+      "old": 813,
+      "new": 813,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "hy": {
-      "old": 905,
-      "new": 905,
+      "old": 1055,
+      "new": 1055,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "id": {
-      "old": 904,
-      "new": 904,
+      "old": 1054,
+      "new": 1054,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "it": {
-      "old": 630,
-      "new": 630,
-      "delta": 0,
-      "decrease_pct": 0.0
+      "old": 538,
+      "new": 484,
+      "delta": 54,
+      "decrease_pct": 10.04
     },
     "ja": {
-      "old": 904,
-      "new": 904,
+      "old": 1054,
+      "new": 1054,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "ka": {
-      "old": 905,
-      "new": 905,
+      "old": 1055,
+      "new": 1055,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "kk": {
-      "old": 663,
-      "new": 663,
+      "old": 813,
+      "new": 813,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "ko": {
-      "old": 905,
-      "new": 905,
+      "old": 1055,
+      "new": 1055,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "lt": {
-      "old": 641,
-      "new": 641,
+      "old": 791,
+      "new": 791,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "lv": {
-      "old": 663,
-      "new": 663,
+      "old": 813,
+      "new": 813,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "mk": {
-      "old": 662,
-      "new": 662,
+      "old": 812,
+      "new": 812,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "ml": {
-      "old": 905,
-      "new": 905,
+      "old": 1055,
+      "new": 1055,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "ms": {
-      "old": 904,
-      "new": 904,
+      "old": 1054,
+      "new": 1054,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "nl": {
-      "old": 691,
-      "new": 691,
+      "old": 841,
+      "new": 841,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "no": {
-      "old": 663,
-      "new": 663,
+      "old": 813,
+      "new": 813,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "pl": {
-      "old": 333,
-      "new": 314,
-      "delta": 19,
-      "decrease_pct": 5.71
+      "old": 162,
+      "new": 164,
+      "delta": -2,
+      "decrease_pct": -1.23
     },
     "pt": {
-      "old": 620,
-      "new": 620,
+      "old": 770,
+      "new": 770,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "ro": {
-      "old": 689,
-      "new": 689,
-      "delta": 0,
-      "decrease_pct": 0.0
+      "old": 547,
+      "new": 516,
+      "delta": 31,
+      "decrease_pct": 5.67
     },
     "ru": {
-      "old": 101,
-      "new": 65,
-      "delta": 36,
-      "decrease_pct": 35.64
+      "old": 262,
+      "new": 237,
+      "delta": 25,
+      "decrease_pct": 9.54
     },
     "sk": {
-      "old": 663,
-      "new": 663,
+      "old": 813,
+      "new": 813,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "sl": {
-      "old": 663,
-      "new": 663,
+      "old": 813,
+      "new": 813,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "sq": {
-      "old": 663,
-      "new": 663,
+      "old": 813,
+      "new": 813,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "sr": {
-      "old": 663,
-      "new": 663,
+      "old": 246,
+      "new": 246,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "sv": {
-      "old": 663,
-      "new": 663,
+      "old": 549,
+      "new": 549,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "sw": {
-      "old": 905,
-      "new": 905,
+      "old": 1055,
+      "new": 1055,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "ta": {
-      "old": 905,
-      "new": 905,
+      "old": 1055,
+      "new": 1055,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "te": {
-      "old": 905,
-      "new": 905,
+      "old": 1055,
+      "new": 1055,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "th": {
-      "old": 905,
-      "new": 905,
+      "old": 1055,
+      "new": 1055,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "tl": {
-      "old": 905,
-      "new": 905,
+      "old": 1055,
+      "new": 1055,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "tr": {
-      "old": 542,
-      "new": 542,
+      "old": 692,
+      "new": 692,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "uk": {
-      "old": 663,
-      "new": 663,
+      "old": 813,
+      "new": 813,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "uz": {
-      "old": 663,
-      "new": 663,
+      "old": 813,
+      "new": 813,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "vi": {
-      "old": 905,
-      "new": 905,
+      "old": 1055,
+      "new": 1055,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "zh": {
-      "old": 905,
-      "new": 905,
+      "old": 1055,
+      "new": 1055,
       "delta": 0,
       "decrease_pct": 0.0
     },
     "zh_TW": {
-      "old": 2456,
-      "new": 2040,
-      "delta": 416,
-      "decrease_pct": 16.94
+      "old": 2606,
+      "new": 2606,
+      "delta": 0,
+      "decrease_pct": 0.0
     }
   }
 }

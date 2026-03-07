@@ -1,72 +1,17 @@
 {
-  "timestamp": "2026-02-15T13:49:59.329269Z",
+  "timestamp": "2026-02-26T20:06:11.856561Z",
   "checked_entries": 100,
-  "issues_found": 8,
+  "issues_found": 0,
   "issues_by_type": {
-    "identical_to_en": 8,
-    "identical_to_en_exempt": 5,
-    "suspicious_log_high": 186,
-    "suspicious_log_low": 14,
-    "suspicious_rejected_critical": 200
+    "identical_to_en_exempt": 45,
+    "suspicious_log_high": 41,
+    "suspicious_log_low": 75,
+    "suspicious_log_medium": 8,
+    "suspicious_log_critical": 8,
+    "suspicious_rejected_critical": 92,
+    "suspicious_rejected_high": 21
   },
-  "issues": [
-    {
-      "key": "item.10096.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "stacke",
-      "translated": "stacke"
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.greet_msg_1",
-      "lang": "cs",
-      "type": "identical_to_en",
-      "en": "Chhchh?",
-      "translated": "Chhchh?"
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "lang": "cs",
-      "type": "identical_to_en",
-      "en": "Chchch",
-      "translated": "Chchch"
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Chchch",
-      "translated": "Chchch"
-    },
-    {
-      "key": "item.10.name",
-      "lang": "cs",
-      "type": "identical_to_en",
-      "en": "manafluid",
-      "translated": "manafluid"
-    },
-    {
-      "key": "item.10.name",
-      "lang": "it",
-      "type": "identical_to_en",
-      "en": "manafluid",
-      "translated": "manafluid"
-    },
-    {
-      "key": "item.10180.name",
-      "lang": "lt",
-      "type": "identical_to_en",
-      "en": "groud",
-      "translated": "groud"
-    },
-    {
-      "key": "npc.a_fluffy_squirrel.voice_1",
-      "lang": "es",
-      "type": "identical_to_en",
-      "en": "Chchch",
-      "translated": "Chchch"
-    }
-  ],
+  "issues": [],
   "threshold": 10,
   "slow_mode": false
 }

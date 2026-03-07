@@ -181,7 +181,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif categoryTable then
 		local remainingCategories = npc:getRemainingShopCategories(message:lower(), itemsTable)
-		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.rabaz.say_1", { remainingCategories })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, player, "npc.rabaz.say_4", { remainingCategories })
 		npc:openShopWindowTable(player, categoryTable)
 	end
 	return true

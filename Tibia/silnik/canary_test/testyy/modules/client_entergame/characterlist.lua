@@ -14,6 +14,27 @@ local outfitCreatureBox
 local autoReconnectButton
 local autoReconnectEvent
 local lastLogout = 0
+
+local function ensureSelectedCharacterAllowed(charInfo)
+    if not CLIENT_LOCKED then
+        return true
+    end
+
+    if not CurrentGameMode or not isWorldAllowedForMode then
+        displayErrorBox("Blokada trybu", "Brak aktywnego trybu gry lub konfiguracji walidacji swiata.")
+        CharacterList.showAgain()
+        return false
+    end
+
+    if not isWorldAllowedForMode(CurrentGameMode, charInfo and charInfo.worldId, charInfo and charInfo.worldName) then
+        displayErrorBox("Blokada trybu", "Wybrana postac nalezy do innego serwera/trybu. W tym kliencie polaczysz sie tylko z serwerem przypisanym do wybranego trybu.")
+        CharacterList.showAgain()
+        return false
+    end
+
+    return true
+end
+
 local function removeAutoReconnectEvent() --prevent
     if autoReconnectEvent then
         removeEvent(autoReconnectEvent)
@@ -40,6 +61,10 @@ local function tryLogin(charInfo, tries)
     tries = tries or 1
 
     if tries > 50 then
+        return
+    end
+
+    if not ensureSelectedCharacterAllowed(charInfo) then
         return
     end
 
@@ -130,6 +155,7 @@ local function resendWait()
                     worldHost = selected.worldHost,
                     worldPort = selected.worldPort,
                     worldName = selected.worldName,
+                    worldId = selected.worldId,
                     characterName = selected.characterName,
                     characterLevel = selected.characterLevel,
                     main = selected.main,
@@ -373,6 +399,7 @@ function CharacterList.create(characters, account, otui)
         widget.worldName = characterInfo.worldName
         widget.worldHost = characterInfo.worldIp
         widget.worldPort = characterInfo.worldPort
+        widget.worldId = characterInfo.worldId
 
         connect(widget, {
             onDoubleClick = function()
@@ -494,6 +521,7 @@ function CharacterList.doLogin()
             worldHost = selected.worldHost,
             worldPort = selected.worldPort,
             worldName = selected.worldName,
+            worldId = selected.worldId,
             characterName = selected.characterName
         }
         charactersWindow:hide()

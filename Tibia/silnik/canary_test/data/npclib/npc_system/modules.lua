@@ -1,5 +1,10 @@
 -- Advanced NPC System by Jiddo
 
+-- Ensure MESSAGE_NPC_FROM is always defined (fallback to MESSAGE_TRADE = green msg in game window)
+if MESSAGE_NPC_FROM == nil then
+	MESSAGE_NPC_FROM = MESSAGE_TRADE or 32
+end
+
 if Modules == nil then
 	-- default words for greeting and ungreeting the npc. Should be a table containing all such words.
 	FOCUS_GREETWORDS = { "hi", "hello" }
@@ -72,7 +77,7 @@ if Modules == nil then
 		
 		-- I18N: Obsługa klucza i18n (priorytet nad text)
 		if parameters.i18nKey then
-			-- Używamy sendLocalizedTextMessage z kluczem i18n
+			-- Resolve translation server-side, then use npc:say for NPC dialog window
 			local args = {}
 			-- Custom i18nArgs first (become {0}, {1}, ...)
 			if parameters.i18nArgs then
@@ -84,7 +89,11 @@ if Modules == nil then
 			if parseInfo[TAG_TRAVELCOST] then
 				table.insert(args, parseInfo[TAG_TRAVELCOST])
 			end
-			player:sendLocalizedTextMessage(MESSAGE_NPC_FROM, parameters.i18nKey, #args > 0 and args or nil)
+			local translatedMessage = player:getTranslation(parameters.i18nKey, #args > 0 and args or nil)
+			if not translatedMessage or translatedMessage == "" then
+				translatedMessage = parameters.i18nKey
+			end
+			npcHandler:say(translatedMessage, npc, player)
 		elseif parameters.text then
 			npcHandler:say(npcHandler:parseMessage(parameters.text, parseInfo, player, message), npc, player)
 		end

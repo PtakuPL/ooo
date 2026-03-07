@@ -24,8 +24,11 @@
 
 #include "platform.h"
 #include <cstring>
+#include <filesystem>
 #include <fstream>
 #include <unistd.h>
+#include <sys/wait.h>
+#include <signal.h>
 #include <framework/stdext/stdext.h>
 #include <framework/core/eventdispatcher.h>
 
@@ -40,6 +43,7 @@
 void Platform::init(std::vector<std::string>& args)
 {
     processArgs(args);
+    signal(SIGCHLD, SIG_IGN); // prevent zombie processes from fork() calls
 
 #ifdef __APPLE__
     #include "TargetConditionals.h"
@@ -118,7 +122,9 @@ std::string Platform::getCurrentDir()
 
 bool Platform::copyFile(std::string from, std::string to)
 {
-    return system(fmt::format("/bin/cp '{}' '{}'", from, to).c_str()) == 0;
+    // INS-CPP4: Zamiana system("/bin/cp ...") na std::filesystem — brak shell injection
+    std::error_code ec;
+    return std::filesystem::copy_file(from, to, std::filesystem::copy_options::overwrite_existing, ec);
 }
 
 bool Platform::fileExists(std::string file)
@@ -147,12 +153,20 @@ bool Platform::openUrl(std::string url, bool now)
     if(url.find("http://") == std::string::npos && url.find("https://") == std::string::npos)
         url.insert(0, "http://");
 
+    // INS-CPP4: fork()+execlp() zamiast system() — brak shell injection
     const auto& action = [url] {
+        pid_t pid = fork();
+        if (pid == -1) return false;
+        if (pid == 0) {
 #if defined(__APPLE__)
-        return system(fmt::format("open {}", url).c_str()) == 0;
+            execlp("open", "open", url.c_str(), (char*)NULL);
 #else
-        return system(fmt::format("xdg-open {}", url).c_str()) == 0;
+            execlp("xdg-open", "xdg-open", url.c_str(), (char*)NULL);
 #endif
+            _exit(EXIT_FAILURE);
+        }
+        // Parent: nie czekamy na dziecko (fire-and-forget)
+        return true;
     };
 
     if (now)
@@ -165,8 +179,15 @@ bool Platform::openUrl(std::string url, bool now)
 
 bool Platform::openDir(std::string path, bool now)
 {
+    // INS-CPP9: fork()+execlp() zamiast system() — brak shell injection
     const auto& action = [path] {
-        return system(fmt::format("xdg-open {}", path).c_str()) == 0;
+        pid_t pid = fork();
+        if (pid == -1) return false;
+        if (pid == 0) {
+            execlp("xdg-open", "xdg-open", path.c_str(), (char*)NULL);
+            _exit(EXIT_FAILURE);
+        }
+        return true;
     };
 	
     if(now)

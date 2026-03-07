@@ -85,22 +85,22 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "offers") then
-		local offersList = ""
+		local text = "I have these offers: "
 		for i, v in pairs(itemsTable) do
-			offersList = offersList .. "{" .. i .. "}, "
+			text = text .. "{" .. i .. "}, "
 		end
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_offers", { offersList })
+		npcHandler:say(text, npc, creature)
 	end
 
 	if npcHandler:getTopic(playerId) == 0 then
 		local table = itemsTable[message]
 		if table then
 			if table.itemId ~= 6496 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_1", { message, table.count })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_7", { message, table.count })
 				storeTable[playerId] = message
 				npcHandler:setTopic(playerId, 1)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_2", { message, table.count })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_8", { message, table.count })
 				storeTable[playerId] = 6526
 				npcHandler:setTopic(playerId, 1)
 			end
@@ -109,42 +109,31 @@ local function creatureSayCallback(npc, creature, type, message)
 		if MsgContains(message, "yes") then
 			if tonumber(storeTable[playerId]) == 6526 then
 				if player:removeItem(6496, 1) then
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_2")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_9")
 					player:addItem(6526, 1)
 					npcHandler:setTopic(playerId, 0)
 				else
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_3")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_10")
 					npcHandler:setTopic(playerId, 0)
 				end
 				return false
 			end
 			if player:removeItem(6526, itemsTable[storeTable[playerId]].count) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_3", { storeTable[playerId] })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_11", { storeTable[playerId] })
 				player:addItem(itemsTable[storeTable[playerId]].itemId, 1)
 				npcHandler:setTopic(playerId, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_5")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_12")
 				npcHandler:setTopic(playerId, 0)
 			end
 		end
 	elseif npcHandler:getTopic(playerId) > 0 then
 		if MsgContains(message, "no") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.say_13")
 		end
 	end
 	if MsgContains(message, "santa claus") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_1")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_2")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_3")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_4")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_5")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_6")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_7")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_8")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_9")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_10")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_11")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.ruprecht.multi_12")
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.ruprecht.say_14", "npc.ruprecht.say_15", "npc.ruprecht.say_16", "npc.ruprecht.say_17", "npc.ruprecht.say_18", "npc.ruprecht.say_19", "npc.ruprecht.say_20", "npc.ruprecht.say_21", "npc.ruprecht.say_22", "npc.ruprecht.say_23", "npc.ruprecht.say_24", "npc.ruprecht.say_25" })
 	end
 	return true
 end

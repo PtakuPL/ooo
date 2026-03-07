@@ -119,6 +119,9 @@ unset($tmp);
 if(isset($config['lua']['servername']))
 	$config['lua']['serverName'] = $config['lua']['servername'];
 
+// Override server name for web display (branding)
+$config['lua']['serverName'] = 'RedDaxe.pl';
+
 if(isset($config['lua']['houserentperiod']))
 	$config['lua']['houseRentPeriod'] = $config['lua']['houserentperiod'];
 

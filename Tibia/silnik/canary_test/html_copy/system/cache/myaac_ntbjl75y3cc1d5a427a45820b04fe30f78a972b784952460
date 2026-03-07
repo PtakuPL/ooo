@@ -1,1 +1,1 @@
-a:1:{s:4:"core";a:4:{s:13:"date_timezone";s:13:"Europe/Warsaw";s:6:"client";s:4:"1412";s:26:"anonymous_usage_statistics";s:4:"true";s:21:"highscores_ids_hidden";s:17:"9, 10, 11, 12, 13";}}
+a:1:{s:4:"core";a:5:{s:13:"date_timezone";s:13:"Europe/Warsaw";s:6:"client";s:4:"1412";s:26:"anonymous_usage_statistics";s:4:"true";s:21:"highscores_ids_hidden";s:17:"9, 10, 11, 12, 13";s:8:"template";s:8:"tibiacom";}}

@@ -9,7 +9,7 @@
  * @link      https://my-aac.org
  */
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Last Kills';
+$title = __('menu_last_kills');
 
 $last_kills = array();
 $players_deaths_count = 0;

@@ -265,7 +265,9 @@ $obRouter->get('/createaccount', [
         'required-logout'
     ],
     function($request){
-        return new Response(200, Account\Create::getCreateAccount($request));
+        $response = new Response(302, '');
+        $response->addHeader('Location', '/reddaxe/account-create.php?source=tibiawww');
+        return $response;
     }
 ]);
 $obRouter->post('/createaccount', [
@@ -273,6 +275,8 @@ $obRouter->post('/createaccount', [
         'required-logout'
     ],
     function($request){
-        return new Response(200, Account\Create::createAccount($request));
+        $response = new Response(302, '');
+        $response->addHeader('Location', '/reddaxe/account-create.php?source=tibiawww');
+        return $response;
     }
 ]);

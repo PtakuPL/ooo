@@ -18,6 +18,12 @@ if(isset($account_logged) && $account_logged->isLoaded()) {
 		unsetSession('password');
 		unsetSession('remember_me');
 
+		// Clear RedDAXE cross-site session keys
+		unset(
+			$_SESSION['account'],
+			$_SESSION['login_timeout']
+		);
+
 		CsrfToken::generate();
 
 		$logged = false;

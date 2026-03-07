@@ -64,7 +64,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 1)
 	elseif MsgContains(message, "yes") and npcHandler:getTopic(playerId) == 1 then
 		if player:getItemCount(10328) > 0 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.swolt.say_1", { player:getItemCount(10328) * 10 })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.swolt.say_3", { player:getItemCount(10328) * 10 })
 			player:addItem(10329, player:getItemCount(10328) * 10)
 			player:removeItem(10328, player:getItemCount(10328))
 		else

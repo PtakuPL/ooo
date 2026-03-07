@@ -25,6 +25,8 @@
 #include "demangle.h"
 #include "exception.h"
 
+#include <cerrno>
+#include <climits>
 #include <cstdlib>
 #include <iostream>
 #include <sstream>
@@ -86,7 +88,11 @@ namespace stdext
             return false;
         if (const std::size_t t = in.find_last_of('-'); t != std::string::npos && t != 0)
             return false;
-        l = atol(in.data());
+        char* end = nullptr;
+        errno = 0;
+        l = strtol(in.data(), &end, 10);
+        if (errno == ERANGE || end == in.data())
+            return false;
         return true;
     }
 
@@ -94,7 +100,9 @@ namespace stdext
     inline bool cast(const std::string& in, int& i)
     {
         if (long l; cast(in, l)) {
-            i = l;
+            if (l < INT_MIN || l > INT_MAX)
+                return false;
+            i = static_cast<int>(l);
             return true;
         }
         return false;
@@ -111,7 +119,11 @@ namespace stdext
         t = in.find_first_of('.');
         if (t != std::string::npos && (t == 0 || t == in.length() - 1 || in.find_first_of('.', t + 1) != std::string::npos))
             return false;
-        d = atof(in.data());
+        char* end = nullptr;
+        errno = 0;
+        d = strtod(in.data(), &end);
+        if (errno == ERANGE || end == in.data())
+            return false;
         return true;
     }
 

@@ -865,27 +865,27 @@
   },
   "npc.a_behemoth.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Ssst! Tetap tenang! <gives you an elaborate report on monster activity>",
+    "text": "Ssst! Tetap tenang! <memberimu laporan terperinci tentang aktivitas monster>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:32:52.842798Z"
+    "updated_at": "2026-02-21T09:41:38.511160Z"
   },
   "npc.a_behemoth.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Ssst! Tetap tenang! <gives you an elaborate report on monster activity>",
+    "text": "Ssst! Tetap tenang! <memberimu laporan terperinci tentang aktivitas monster>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:32:52.843507Z"
+    "updated_at": "2026-02-21T09:41:38.512382Z"
   },
   "npc.a_behemoth.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Ssst! Tetap tenang! <gives you an elaborate report on monster activity>",
+    "text": "Ssst! Tetap tenang! <memberimu laporan terperinci tentang aktivitas monster>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:32:52.844125Z"
+    "updated_at": "2026-02-21T09:41:38.522998Z"
   },
   "npc.a_dead_bureaucrat.greet_msg_1": {
     "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
@@ -2329,51 +2329,51 @@
   },
   "npc.a_dragon_lord.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Ssst! Tetap tenang! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Ssst! Tetap tenang! <memberimu laporan terperinci tentang aktivitas monster>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:39:37.065136Z"
+    "updated_at": "2026-02-21T09:41:38.529382Z"
   },
   "npc.a_dragon_lord.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Ssst! Tetap tenang! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Ssst! Tetap tenang! <memberimu laporan terperinci tentang aktivitas monster>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:39:37.065878Z"
+    "updated_at": "2026-02-21T09:41:38.530981Z"
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Ssst! Tetap tenang! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Ssst! Tetap tenang! <memberimu laporan terperinci tentang aktivitas monster>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:39:37.066592Z"
+    "updated_at": "2026-02-21T09:41:43.847424Z"
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Ssst! Tetap tenang! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Ssst! Tetap tenang! <memberimu laporan terperinci tentang aktivitas monster>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:39:37.067426Z"
+    "updated_at": "2026-02-21T09:41:43.848871Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Ssst! Tetap tenang! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Ssst! Tetap tenang! <memberimu laporan terperinci tentang aktivitas monster>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:39:37.068101Z"
+    "updated_at": "2026-02-21T09:41:43.850260Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Ssst! Tetap tenang! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Ssst! Tetap tenang! <memberimu laporan terperinci tentang aktivitas monster>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:39:37.068776Z"
+    "updated_at": "2026-02-21T09:41:43.851556Z"
   },
   "npc.a_lost_basher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
@@ -3462,5 +3462,61 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T08:13:22.596439Z"
+  },
+  "npc.canary.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "Ya, selamat tinggal dan jangan datang lagi!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:41:31.961450Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Salam Pumin. Ya, hujan es.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:41:38.524493Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Salam Pumin. Ya, hujan es.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:41:38.525535Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Salam Pumin. Ya, hujan es.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:41:38.526843Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "Salam Pumin. Ya, hujan es.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:41:38.527852Z"
+  },
+  "npc.a_fading_memory.greet_msg_1": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "Oh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:41:43.852248Z"
+  },
+  "npc.a_fluffy_squirrel.farewell_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "Chh...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:41:43.852910Z"
   }
 }

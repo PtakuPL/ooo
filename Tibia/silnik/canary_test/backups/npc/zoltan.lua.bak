@@ -90,7 +90,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "myra") then
 		if player:getSex() == PLAYERSEX_FEMALE and player:getStorageValue(Storage.Quest.U7_8.MageAndSummonerOutfits.AddonHatCloak) == 10 and not player:hasOutfit(138, 2) then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.zoltan.say_1", "npc.zoltan.say_2", "npc.zoltan.say_3"}, 100)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.zoltan.say_9", "npc.zoltan.say_10", "npc.zoltan.say_11" }, 100)
 			player:addOutfitAddon(138, 2) -- female mage addon
 			player:addOutfitAddon(141, 2) -- female summoner addon
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
@@ -106,8 +106,8 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome |PLAYERNAME|, student of the arcane arts. I teach the fiercest {spells} available.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Use your knowledge wisely, |PLAYERNAME|.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.zoltan.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.zoltan.farewell_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

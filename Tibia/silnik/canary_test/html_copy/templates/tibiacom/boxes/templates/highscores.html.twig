@@ -1,62 +1,78 @@
 <style type="text/css">
-	.top_level {
-		position: absolute;
-		top: 29px;
-		left: 6px;
-		height: 160px;
-		width: 168px;
-		z-index: 20;
-		padding-top: 6px;
-		font-family: Tahoma, Geneva, sans-serif;
-		font-size: 9.2pt;
-		color: #FFF;
-		font-weight: bold;
-		text-align: right;
-		text-decoration: inherit;
-		text-shadow: 0.1em 0.1em #333
-	}
+		.top_level {
+			position: absolute;
+			top: 29px;
+			left: 6px;
+			height: 160px;
+			width: 168px;
+			z-index: 20;
+			padding-top: 6px;
+			padding-right: 4px;
+			box-sizing: border-box;
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 9px;
+			line-height: 1.2;
+			color: #FFF;
+			font-weight: bold;
+			text-align: left;
+			text-decoration: inherit;
+			text-shadow: 1px 1px 1px #333;
+			overflow-y: auto;
+			overflow-x: hidden;
+			scrollbar-width: thin;
+		}
 
 	#Topbar a {
 		text-decoration: none;
 	}
 
 	.online {
-		color: #008000;
+		color: #00CC00;
 	}
 
 	.offline {
-		color: #FF0000;
+		color: #CC3333;
 	}
 
-	a.topfont {
-		font-family: Verdana, Arial, Helvetica, sans-serif;
-		font-size: 11px;
-		text-decoration: none
-	}
-	a:hover.topfont {
-		font-family: Verdana, Arial, Helvetica, sans-serif;
-		font-size: 11px;
-		color: #CCC;
-		text-decoration:none
-	}
+		a.topfont {
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 9px;
+			text-decoration: none;
+			display: block;
+			white-space: normal;
+			word-break: break-word;
+			line-height: 1.25;
+			padding: 2px 0;
+		}
+		a:hover.topfont {
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+			font-size: 9px;
+			color: #CCC;
+			text-decoration:none;
+		}
+
+		.top_player_entry {
+			text-align: left;
+			margin-bottom: 3px;
+			position: relative;
+			min-height: 18px;
+			padding-left: 2px;
+			border-bottom: 1px solid rgba(255,255,255,0.08);
+		}
 </style>
 
 <div id="Topbar" class="Themebox" style="background-image:url({{ template_path }}/images/themeboxes/highscores/highscores.png);">
-	<div class="top_level" style="background:url({{ template_path }}/images/themeboxes/bg_top.png)" align="	">
+	<div class="top_level" style="background:url({{ template_path }}/images/themeboxes/bg_top.png)">
     {% for player in topPlayers %}
-	    <div style="text-align:left"><a href="{{ getPlayerLink(player['name'], false) }} " class="topfont {% if player['online'] %}online{% else %}offline{% endif %}">
-			{% if setting('core.online_outfit') %}
-				<img style="position:absolute;margin-top:{% if player.looktype in setting('core.outfit_images_wrong_looktypes') %}-20px;margin-left:-0px;{% else %}-45px;margin-left:-25px;{%  endif %}" src="{{ player.outfit }}" alt="player outfit"/>
-			{% endif %}
-				<span style="color: #CCC; margin-left: 40px" data-i18n="text.level">{{ player['rank'] }} - </span>
-				{{ player['name'] }}
-			<br>
-			<small><span style="color: white; margin-left: 50px" data-i18n="highscores.level">Level</span>: ({{ player['level'] }})</small>
-			<br>
+	    <div class="top_player_entry"><a href="{{ getPlayerLink(player['name'], false) }} " class="topfont {% if player['online'] %}online{% else %}offline{% endif %}">
+					<span style="color: #CCC;">{{ player['rank'] }}.</span>
+					{{ player['name'] }}
+				<br>
+				<small><span style="color: #AAA;">{{ __('col_level') }}: {{ player['level'] }}</span></small>
 		</a>
 	</div>
 	{% endfor %}
-	<div class="Bottom" style="background-image:url({{ template_path }}/images/general/box-bottom.gif); top: 159px;; left:-5px;">
+	<div class="Bottom" style="background-image:url({{ template_path }}/images/general/box-bottom.gif); top: 159px; left:-5px;">
 	</div>
 </div>
 </div>

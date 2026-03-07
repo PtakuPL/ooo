@@ -55,7 +55,7 @@ npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBac
 end
 -- On sell npc shop message
 npcType.onSellItem = function(npc, player, itemId, subtype, amount, ignore, name, totalCost)
-	player:sendLocalizedTextMessage(MESSAGE_TRADE, "system.trade.sold", {tostring(amount), name, tostring(totalCost)})
+	player:sendTextMessage(MESSAGE_TRADE, string.format("Sold %ix %s for %i gold.", amount, name, totalCost))
 end
 -- On check npc shop message (look item)
 npcType.onCheckItem = function(npc, player, clientId, subType) end
@@ -125,86 +125,83 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "token") or MsgContains(message, "tokens") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_1")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_12")
 	elseif MsgContains(message, "information") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_2")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_13")
 	elseif MsgContains(message, "talk") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.multi_3")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.multi_4")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.multi_5")
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.cledwyn.say_14", "npc.cledwyn.say_15", "npc.cledwyn.say_16" })
 	elseif MsgContains(message, "silver") then
 		npc:openShopWindow(creature)
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_3")
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { { "npc.cledwyn.say_17", { player:getName() } }, "npc.cledwyn.say_18" })
 	elseif MsgContains(message, "enchant") then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.multi_1")
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.multi_2")
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.cledwyn.say_19", "npc.cledwyn.say_20" })
 		npcHandler:setTopic(playerId, 1)
 	elseif table.contains({ "pendulet", "sleep shawl", "blister ring", "theurgic amulet", "ring of souls", "turtle amulet" }, message:lower()) and npcHandler:getTopic(playerId) == 1 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_1", { message, ItemType(npc:getCurrency()):getPluralName():lower() })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_21", { message, ItemType(npc:getCurrency()):getPluralName():lower() })
 		charge = message:lower()
 		chargePrice = 2
 		npcHandler:setTopic(playerId, 2)
 	elseif table.contains({ "spiritthorn ring", "alicorn ring", "arcanomancer sigil", "arboreal ring" }, message:lower()) and npcHandler:getTopic(playerId) == 1 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_2", { message, ItemType(npc:getCurrency()):getPluralName():lower() })
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_22", { message, ItemType(npc:getCurrency()):getPluralName():lower() })
 		charge = message:lower()
 		chargePrice = 5
 		npcHandler:setTopic(playerId, 2)
 	elseif npcHandler:getTopic(playerId) == 2 then
 		if MsgContains(message, "yes") then
 			if not chargeItem[charge] then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_3", { charge })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_23", { charge })
 			else
 				if (player:getItemCount(npc:getCurrency()) >= chargePrice) and (player:getItemCount(chargeItem[charge].noChargeID) >= 1) then
 					player:removeItem(npc:getCurrency(), chargePrice)
 					player:removeItem(chargeItem[charge].noChargeID, 1)
 					local itemAdd = player:addItem(chargeItem[charge].ChargeID, 1)
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_4", { itemAdd:getName():lower() })
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_24", { itemAdd:getName():lower() })
 				else
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_5", { ItemType(npc:getCurrency()):getPluralName():lower() })
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_25", { ItemType(npc:getCurrency()):getPluralName():lower() })
 				end
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif MsgContains(message, "no") then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_26")
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "addon") then
 		if player:hasOutfit(846, 0) or player:hasOutfit(845, 0) then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_27")
 			npcHandler:setTopic(playerId, 3)
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_7")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_28")
 		end
 	elseif table.contains({ "first", "second" }, message:lower()) and npcHandler:getTopic(playerId) == 3 then
 		if message:lower() == "first" then
 			if not (player:hasOutfit(846, 1)) and not (player:hasOutfit(845, 1)) then
 				if player:removeItem(22516, 100) then
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_8")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_29")
 					player:addOutfitAddon(846, 1)
 					player:addOutfitAddon(845, 1)
 					if (player:hasOutfit(846, 1) or player:hasOutfit(845, 1)) and (player:hasOutfit(846, 2) or player:hasOutfit(845, 2)) then
 						player:addAchievement("Rift Warrior")
 					end
 				else
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_6", { ItemType(npc:getCurrency()):getPluralName():lower() })
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_30", { ItemType(npc:getCurrency()):getPluralName():lower() })
 				end
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_9")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_31")
 			end
 		elseif message:lower() == "second" then
 			if not (player:hasOutfit(846, 2)) and not (player:hasOutfit(845, 2)) then
 				if player:removeItem(22516, 100) then
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_10")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_32")
 					player:addOutfitAddon(846, 2)
 					player:addOutfitAddon(845, 2)
 					if (player:hasOutfit(846, 1) or player:hasOutfit(845, 1)) and (player:hasOutfit(846, 2) or player:hasOutfit(845, 2)) then
 						player:addAchievement("Rift Warrior")
 					end
 				else
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_7", { ItemType(npc:getCurrency()):getPluralName():lower() })
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_33", { ItemType(npc:getCurrency()):getPluralName():lower() })
 				end
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_11")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.cledwyn.say_34")
 			end
 		end
 		npcHandler:setTopic(playerId, 0)
@@ -212,7 +209,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.cledwyn.greet_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "Blessings, Player! How may I be of service? Do you wish to trade some {token}s, or would you like some {information} or {talk}? Should I {enchant} certain items for you?")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

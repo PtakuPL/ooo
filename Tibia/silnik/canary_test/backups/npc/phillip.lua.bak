@@ -76,9 +76,9 @@ keywordHandler:addKeyword({ "lugri" }, StdModule.say, { npcHandler = npcHandler,
 keywordHandler:addKeyword({ "ferumbras" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.phillip.stdmod_24" })
 keywordHandler:addKeyword({ "excalibug" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.phillip.stdmod_25" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello, mighty adventurer |PLAYERNAME|. Can I teach you something you don't know?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Go and be careful. Remember what you have learned!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Did the bell ring?")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.phillip.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.phillip.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.phillip.walkaway_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

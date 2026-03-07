@@ -38,7 +38,7 @@ void Discord::init(std::function<bool()>& canUpdate, std::function<void(std::str
     m_onUpdate = onUpdate;
     DiscordEventHandlers Handle;
     memset(&Handle, 0, sizeof(Handle));
-    Discord_Initialize(RPC_API_KEY, &Handle, 1, NULL);
+    Discord_Initialize(RPC_API_KEY, &Handle, 1, nullptr);
     update();
 }
 

@@ -9,7 +9,7 @@
  * @link      https://my-aac.org
  */
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Guilds';
+$title = __('menu_guilds');
 
 //show list of guilds
 if(empty($action)) {

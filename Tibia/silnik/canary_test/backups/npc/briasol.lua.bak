@@ -89,9 +89,9 @@ end
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
 -- Greeting message
-keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, text = "Greetings, |PLAYERNAME|.", i18nKey = "npc.briasol.greet_1" })
+keywordHandler:addGreetKeyword({ "ashari" }, { npcHandler = npcHandler, i18nKey = "npc.briasol.greet_1" })
 --Farewell message
-keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, text = "Good bye, |PLAYERNAME|.", i18nKey = "npc.briasol.farewell_1" })
+keywordHandler:addFarewellKeyword({ "asgha thrazi" }, { npcHandler = npcHandler, i18nKey = "npc.briasol.farewell_1" })
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

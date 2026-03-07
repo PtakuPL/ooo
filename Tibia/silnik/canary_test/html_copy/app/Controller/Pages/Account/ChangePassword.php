@@ -31,7 +31,7 @@ class ChangePassword extends Base{
         $convert_oldpassword = Argon::generateArgonPassword($filter_oldpassword);
 
         if(SessionAdminLogin::isLogged() == true){
-            return self::viewChangePassword($request, 'You are not logged in.');
+            return self::viewChangePassword($request, __('error_not_logged_in'));
         }
         if(empty($newpassword)){
             return self::viewChangePassword($request);
@@ -42,7 +42,7 @@ class ChangePassword extends Base{
         $AccountId = SessionAdminLogin::idLogged();
         $account = EntityPlayer::getAccount([ 'id' => $AccountId])->fetchObject();
         if (!Argon::checkPassword($convert_oldpassword, $account->password, $account->id)) {
-            return self::viewChangePassword($request, 'Invalid password.');
+            return self::viewChangePassword($request, __('error_invalid_password'));
         }
         if(Argon::checkPassword($convert_oldpassword, $account->password, $account->id)){
             EntityAccount::updateAccount([ 'id' => $AccountId], [

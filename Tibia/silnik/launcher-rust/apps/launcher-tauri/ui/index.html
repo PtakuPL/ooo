@@ -67,11 +67,70 @@
         </div>
       </div>
 
+      <div class="session-sync-row">
+        <label id="label-launcher-account-name" for="launcher-account-name" class="label">Nazwa konta launchera:</label>
+        <input
+          id="launcher-account-name"
+          type="text"
+          class="session-input"
+          placeholder="gracz123"
+          autocomplete="username"
+          spellcheck="false"
+        />
+        <label id="label-launcher-account-email" for="launcher-account-email" class="label">Email konta launchera:</label>
+        <input
+          id="launcher-account-email"
+          type="email"
+          class="session-input"
+          placeholder="email@gracz.pl"
+          autocomplete="username"
+          spellcheck="false"
+        />
+        <label id="label-launcher-account-password" for="launcher-account-password" class="label">Hasło konta launchera:</label>
+        <input
+          id="launcher-account-password"
+          type="password"
+          class="session-input"
+          placeholder="Wpisz hasło konta"
+          autocomplete="current-password"
+          spellcheck="false"
+        />
+        <label id="label-launcher-account-password-confirm" for="launcher-account-password-confirm" class="label">Powtórz hasło konta launchera:</label>
+        <input
+          id="launcher-account-password-confirm"
+          type="password"
+          class="session-input"
+          placeholder="Powtórz hasło konta"
+          autocomplete="new-password"
+          spellcheck="false"
+        />
+        <div class="actions">
+          <button id="btn-launcher-account-login" class="btn btn-secondary">🔐 Zaloguj konto</button>
+          <button id="btn-launcher-account-register" class="btn btn-secondary">🆕 Utwórz konto</button>
+        </div>
+        <p id="launcher-account-login-status" class="info-text" style="display:none"></p>
+      </div>
+
+      <div class="session-sync-row">
+        <label id="label-launcher-session-key" for="launcher-session-key" class="label">Klucz sesji launchera:</label>
+        <input
+          id="launcher-session-key"
+          type="password"
+          class="session-input"
+          placeholder="Wklej sessionKey z logowania launchera"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+
       <div class="actions">
         <button id="btn-play" class="btn btn-primary" disabled>▶ Uruchom grę</button>
         <button id="btn-check" class="btn btn-secondary">🔄 Sprawdź aktualizacje</button>
         <button id="btn-create-char-classic" class="btn btn-character">🧙 Utwórz postać Tibia 7.4</button>
         <button id="btn-create-char-modern" class="btn btn-character">⚔ Utwórz postać Modern</button>
+        <button id="btn-rules-all" class="btn btn-secondary">📜 Zasady (all)</button>
+        <button id="btn-rules-classic" class="btn btn-secondary">📜 Zasady Classic 7.4</button>
+        <button id="btn-rules-modern" class="btn btn-secondary">📜 Zasady Modern</button>
         <button id="btn-website" class="btn btn-website">🌐 Strona WWW</button>
       </div>
     </section>

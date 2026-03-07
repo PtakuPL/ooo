@@ -64,7 +64,7 @@ extern "C" {
             g_resources.runEncryption(args.size() >= 3 ? args[2] : std::string(ENCRYPTION_PASSWORD));
             std::cout << "Encryption complete" << std::endl;
 #ifdef WIN32
-            MessageBoxA(NULL, "Encryption complete", "Success", 0);
+            MessageBoxA(nullptr, "Encryption complete", "Success", 0);
 #endif
             return 0;
         }

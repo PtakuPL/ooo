@@ -1,25 +1,34 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tr>
 		<td style="width: 17px"></td>
-		<td>
-			<div style="text-align:center"><h2>Ranking for {{ skillName }}{% if vocation is not null %} ({{ vocation }}){% endif %} on {{ config.lua.serverName }}</h2></div><br/>
+		<td class="HighscoresMainCol" style="padding-left: 6px; padding-right: 6px;">
+			<div style="text-align:center"><h2><span data-i18n="highscores.title">{{ __('highscores_title') }}</span> - {{ skillName }}{% if vocation is not null %} ({{ vocation }}){% endif %} - {{ modeLabel }}</h2></div><br/>
 			<table border="0" cellpadding="4" cellspacing="1" width="100%">
 				<tr>
-					<td>Filters</td>
+					<td data-i18n="tables.filter">{{ __('highscores_filter_title') }}</td>
 					<td>
-						<label for="skillFilter">Choose a Skill</label>
+						<label for="skillFilter" data-i18n="highscores.skill">{{ __('highscores_choose_skill') }}</label>
 						<select onchange="location = this.value;" id="skillFilter">
 							{% for link, name in types %}
-								<option value="{{ getLink('highscores') }}/{{ link|urlencode }}{% if vocation is not null %}/{{ vocation|lower|urlencode }}{% endif %}" class="size_xs" {% if list is not null and list == link %}selected{% endif %}>{{ name }}</option>
+								<option value="{{ getLink('highscores') }}/{{ link|urlencode }}{% if vocationId is not null %}/{{ vocationSlugs[vocationId] }}{% endif %}{{ modeQuery }}" class="size_xs" {% if list is not null and list == link %}selected{% endif %}>{{ name }}</option>
 							{% endfor %}
 						</select>
 					</td>
 					<td>
-						<label for="vocationFilter">Choose a vocation</label>
-						<select onchange="location = this.value;" id="vocationFilter">
-							<option value="{{ getLink('highscores') }}/{{ list|urlencode }}" class="size_xs">[ALL]</option>
-							{% for i in 0..config.vocations_amount %}
-								<option value="{{ getLink('highscores') }}/{{ list|urlencode }}/{{ config.vocations[i]|lower|urlencode }}" class="size_xs" {% if vocationId is not null and vocationId == i %}selected{% endif %}>{{ config.vocations[i]}}</option>
+						<label for="vocationFilter" data-i18n="highscores.filter_vocation">{{ __('highscores_choose_vocation') }}</label>
+							<select onchange="location = this.value;" id="vocationFilter">
+								<option value="{{ getLink('highscores') }}/{{ list|urlencode }}{{ modeQuery }}" class="size_xs" data-i18n="highscores.all_vocations">{{ __('highscores_all_vocations') }}</option>
+								{% for i in 0..config.vocations_amount %}
+									{% set vocationLabel = vocationNames[i] is defined ? vocationNames[i] : config.vocations[i] %}
+									<option value="{{ getLink('highscores') }}/{{ list|urlencode }}/{{ vocationSlugs[i] }}{{ modeQuery }}" class="size_xs" {% if vocationId is not null and vocationId == i %}selected{% endif %}>{{ vocationLabel }}</option>
+								{% endfor %}
+							</select>
+					</td>
+					<td>
+						<label for="serverFilter" data-i18n="highscores.filter_world">{{ __('highscores_choose_server') }}</label>
+						<select onchange="location = this.value;" id="serverFilter">
+							{% for serverMode in modes %}
+								<option value="{{ serverMode.link }}" class="size_xs" {% if mode == serverMode.key %}selected{% endif %}>{{ serverMode.name }}</option>
 							{% endfor %}
 						</select>
 					</td>
@@ -28,26 +37,27 @@
 			<table border="0" cellpadding="4" cellspacing="1" width="100%">
 				<tr bgcolor="{{ config.vdarkborder }}">
 					{% if setting('core.account_country') %}
-					<td style="width: 11px" class="white">#</td>
-					{% endif %}
+						<td style="width: 11px" class="white">#</td>
+						{% endif %}
 
-					<td style="width: 10%" class="white"><b>Rank</b></td>
+						<td style="width: 10%" class="white"><b data-i18n="highscores.rank">{{ __('col_rank') }}</b></td>
 
-					{% if setting('core.highscores_outfit') %}
-					<td class="white"><b>Outfit</b></td>
-					{% endif %}
+						{% if setting('core.highscores_outfit') %}
+						<td style="width: 64px" class="white"><b data-i18n="online.outfit">{{ __('online_outfit') }}</b></td>
+						{% endif %}
 
-					<td width="75%" class="white"><b>Name</b></td>
+						<td class="white"><b data-i18n="highscores.name">{{ __('col_name') }}</b></td>
+						<td style="width: 15%; white-space: nowrap;" class="white"><b>{{ __('character_world') }}</b></td>
 
-					<td width="15%" class="white"><b>{{ levelName }}</b></td>
+					<td style="width: 12%; white-space: nowrap;" class="white"><b>{{ levelName }}</b></td>
 
 					{% if skill == constant('POT::SKILL__LEVEL') %}
-					<td class="white"><b>Points</b></td>
+						<td style="width: 15%; white-space: nowrap;" class="white"><b data-i18n="highscores.points">{{ __('col_points') }}</b></td>
 					{% endif %}
 				</tr>
 
 				{% if highscores|length < 1 %}
-				<tr bgcolor="{{ config('darkborder') }}"><td colspan="100%">No records yet.</td></tr>
+					<tr bgcolor="{{ config('darkborder') }}"><td colspan="100%"><span data-i18n="highscores.no_records_yet">{{ __('highscores_no_records_yet') }}</span></td></tr>
 				{% else %}
 					{% set row = 0 %}
 					{% for player in highscores %}
@@ -72,9 +82,12 @@
 							<br/><small>{{ player.vocation }}</small>
 							{% endif %}
 						</td>
+						<td>
+							<div style="text-align:center">{{ player.server_label|default(__('server_classic74')) }}</div>
+						</td>
 
 						<td>
-							<div style="text-align:center">{{ player.value }}</div>
+							<div style="text-align:center">{{ player.value_formatted|default(player.value) }}</div>
 						</td>
 
 						{% if skill == constant('POT::SKILL__LEVEL') %}
@@ -85,27 +98,27 @@
 				{% endif %}
 			</table>
 			<table border="0" cellpadding="4" cellspacing="1" width="100%">
-				{% if linkPreviousPage|length > 0 %}
-					<tr><td style="width: 100%" align="right" valign="bottom"><a href="{{ linkPreviousPage }}" class="size_xxs">Previous Page</a></td></tr>
-				{% endif %}
+					{% if linkPreviousPage|length > 0 %}
+						<tr><td style="width: 100%" align="right" valign="bottom"><a href="{{ linkPreviousPage }}" class="size_xxs" data-i18n="tables.previous">{{ __('tables_previous_page') }}</a></td></tr>
+					{% endif %}
 
-				{% if linkNextPage|length > 0 %}
-					<tr><td style="width: 100%" align="right" valign="bottom"><a href="{{ linkNextPage }}" class="size_xxs">Next Page</a></td></tr>
-				{% endif %}
+					{% if linkNextPage|length > 0 %}
+						<tr><td style="width: 100%" align="right" valign="bottom"><a href="{{ linkNextPage }}" class="size_xxs" data-i18n="tables.next">{{ __('tables_next_page') }}</a></td></tr>
+					{% endif %}
 			</table>
 		</td>
 		{% if setting('core.highscores_skills_box') or setting('core.highscores_vocation_box') %}
 		<td width="5%"></td>
 		<td width="15%" valign="top" align="right">
 			{% if setting('core.highscores_skills_box') %}
-			<table style="border: 0; width: 100%" cellpadding="4" cellspacing="1">
-				<tr bgcolor="{{ config.vdarkborder }}">
-					<td class="white"><B>Choose a skill</B></TD>
-				</tr>
+				<table style="border: 0; width: 100%" cellpadding="4" cellspacing="1">
+					<tr bgcolor="{{ config.vdarkborder }}">
+						<td class="white"><b data-i18n="highscores.skill">{{ __('highscores_choose_skill') }}</b></td>
+					</tr>
 				<tr bgcolor="{{ config.lightborder }}">
 					<td>
 						{% for link, name in types %}
-							<a href="{{ getLink('highscores') }}/{{ link|urlencode }}{% if vocation is not null %}/{{ vocation|urlencode }}{% endif %}" class="size_xs">{{ name }}</a><br/>
+							<a href="{{ getLink('highscores') }}/{{ link|urlencode }}{% if vocationId is not null %}/{{ vocationSlugs[vocationId] }}{% endif %}{{ modeQuery }}" class="size_xs">{{ name }}</a><br/>
 						{% endfor %}
 					</td>
 				</tr>
@@ -113,22 +126,23 @@
 			<br/>
 			{% endif %}
 			{% if setting('core.highscores_vocation_box') %}
-			<table border="0" width="100%" cellpadding="4" cellspacing="1">
-				<tr bgcolor="{{ config.vdarkborder }}">
-					<td class="white"><b>Choose a vocation</b></td>
-				</tr>
+				<table border="0" width="100%" cellpadding="4" cellspacing="1">
+					<tr bgcolor="{{ config.vdarkborder }}">
+						<td class="white"><b data-i18n="highscores.filter_vocation">{{ __('highscores_choose_vocation') }}</b></td>
+					</tr>
 				<tr bgcolor="{{ config.lightborder }}">
-					<td>
-						<a href="{{ getLink('highscores') }}/{{ list|urlencode }}" class="size_xs">[ALL]</a><br/>
-						{% for i in 0..config.vocations_amount %}
-							<a href="{{ getLink('highscores') }}/{{ list|urlencode }}/{{ config.vocations[i]|lower|urlencode }}" class="size_xs">{{ config.vocations[i]}}</a><br/>
-						{% endfor %}
-					</td>
+						<td>
+							<a href="{{ getLink('highscores') }}/{{ list|urlencode }}{{ modeQuery }}" class="size_xs"><span data-i18n="highscores.all_vocations">{{ __('highscores_all_vocations') }}</span></a><br/>
+							{% for i in 0..config.vocations_amount %}
+								{% set vocationLabel = vocationNames[i] is defined ? vocationNames[i] : config.vocations[i] %}
+							<a href="{{ getLink('highscores') }}/{{ list|urlencode }}/{{ vocationSlugs[i] }}{{ modeQuery }}" class="size_xs">{{ vocationLabel }}</a><br/>
+							{% endfor %}
+						</td>
 				</tr>
 			</table>
 			{% endif %}
 		</td>
-		<td style="width: 18px"></td>
+		<td style="width: 24px"></td>
 		{% endif %}
 	</tr>
 </table>

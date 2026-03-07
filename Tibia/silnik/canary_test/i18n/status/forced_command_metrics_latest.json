@@ -1,16 +1,14 @@
 {
-  "timestamp": "2026-02-15T13:41:58.574530Z",
+  "timestamp": "2026-02-26T07:10:02.813769Z",
   "stage": "completed",
-  "command": "AUTO:es:npc.json:1:ONCE",
-  "pending_age_s": 12,
-  "mid_cycle_command_pickup_s": 12,
-  "roundtrip_s": 26,
-  "forced_command_pending_age_s": 12,
-  "forced_command_mid_cycle_pickup_s": 12,
-  "forced_command_roundtrip_s": 26,
+  "command": "restart",
+  "pending_age_s": 19,
+  "mid_cycle_command_pickup_s": 19,
+  "roundtrip_s": 33,
+  "forced_command_pending_age_s": 19,
+  "forced_command_mid_cycle_pickup_s": 19,
+  "forced_command_roundtrip_s": 33,
   "mode_type": "AUTO_TRANSLATE",
-  "mode_cat": "es",
-  "mode_count": "npc.json",
-  "sla_target_s": 45,
-  "sla_met": true
+  "mode_cat": "de",
+  "mode_count": "npc.json"
 }

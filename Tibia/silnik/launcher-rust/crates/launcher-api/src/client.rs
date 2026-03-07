@@ -7,9 +7,9 @@
 //! - pobieranie plików z URL (download z retry)
 
 use common_models::api_responses::{
-    ChallengeResponse, ErrorReportRequest, ErrorReportResponse, InstallerCatalogResponse,
-    LanguagePacksResponse, LaunchTokenErrorResponse, LaunchTokenRequest, LaunchTokenResponse,
-    LauncherVersionResponse,
+    AccountSyncTokenRequest, AccountSyncTokenResponse, ChallengeResponse, ErrorReportRequest,
+    ErrorReportResponse, InstallerCatalogResponse, LanguagePacksResponse, LaunchTokenErrorResponse,
+    LaunchTokenRequest, LaunchTokenResponse, LauncherVersionResponse,
 };
 use common_models::manifest::{parse_manifest_compat, ManifestParseError, NormalizedManifest};
 
@@ -33,7 +33,7 @@ impl Default for ApiClientConfig {
             base_url: String::new(),
             timeout_seconds: 30,
             max_retries: 3,
-            user_agent: "TwojaGra-Launcher/0.1.0".to_string(),
+            user_agent: "TwojaGra-Launcher/1.0.0".to_string(),
             dev_mode: false,
         }
     }
@@ -89,11 +89,19 @@ pub struct ApiClient {
 impl ApiClient {
     /// Tworzy nowego klienta API z podaną konfiguracją.
     pub fn new(config: ApiClientConfig) -> Result<Self, ApiError> {
-        // Wymuszenie HTTPS
+        // HTTPS is required outside explicit dev mode.
+        // Loopback HTTP (127.0.0.1/localhost/[::1]) is always allowed for tests.
+        if !config.base_url.is_empty()
+            && !config.base_url.starts_with("https://")
+            && !is_loopback_http(&config.base_url)
+            && !config.dev_mode
+        {
+            return Err(ApiError::TlsRequired);
+        }
+
         if !config.base_url.is_empty() && !config.base_url.starts_with("https://") {
-            // W testach pozwalamy na http, ale logujemy ostrzeżenie
             tracing::warn!(
-                "Base URL nie używa HTTPS: {} — w produkcji wymuszaj TLS!",
+                "Base URL nie używa HTTPS: {} — dozwolone tylko w dev_mode",
                 config.base_url
             );
         }
@@ -257,6 +265,203 @@ impl ApiClient {
         Ok(token_resp)
     }
 
+    /// Issue one-time WWW sync token from launcher session.
+    pub async fn request_account_sync_token(
+        &self,
+        session_key: &str,
+        source: &str,
+        target: &str,
+    ) -> Result<AccountSyncTokenResponse, ApiError> {
+        let url = self.url("account-sync-token.php");
+        tracing::info!(
+            "Pobieram account sync token: {} ({} -> {})",
+            url,
+            source,
+            target
+        );
+
+        let request = AccountSyncTokenRequest {
+            request_type: "account_sync_token".to_string(),
+            session_key: session_key.to_string(),
+            source: source.to_string(),
+            target: target.to_string(),
+        };
+
+        let resp = self.http.post(&url).json(&request).send().await?;
+        let status = resp.status();
+
+        if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+            return Err(ApiError::RateLimited);
+        }
+
+        if !status.is_success() {
+            let body = resp.text().await.unwrap_or_default();
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body,
+            });
+        }
+
+        let sync_resp: AccountSyncTokenResponse = resp.json().await?;
+        if !sync_resp.ok {
+            return Err(ApiError::HttpStatus {
+                status: 200,
+                body: "Account sync token response has ok=false".to_string(),
+            });
+        }
+        if sync_resp.sync_token.trim().is_empty() {
+            return Err(ApiError::HttpStatus {
+                status: 200,
+                body: "Account sync token is empty".to_string(),
+            });
+        }
+
+        Ok(sync_resp)
+    }
+
+    /// Fetch account context (worlds/characters/session) for existing launcher session.
+    pub async fn fetch_account_context(
+        &self,
+        session_key: &str,
+    ) -> Result<serde_json::Value, ApiError> {
+        let url = self.url("account-context.php");
+        tracing::info!("Pobieram account context: {}", url);
+
+        let payload = serde_json::json!({
+            "type": "account_context",
+            "sessionKey": session_key,
+        });
+
+        let resp = self.http.post(&url).json(&payload).send().await?;
+        let status = resp.status();
+
+        if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+            return Err(ApiError::RateLimited);
+        }
+
+        let body = resp.text().await.unwrap_or_default();
+        let value: serde_json::Value = serde_json::from_str(&body)?;
+
+        // account-context.php moze zwracac bledy jako JSON z errorMessage.
+        if let Some(error_message) = value.get("errorMessage").and_then(|v| v.as_str()) {
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body: error_message.to_string(),
+            });
+        }
+
+        if !status.is_success() {
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body,
+            });
+        }
+
+        Ok(value)
+    }
+
+    /// Login konta launchera (email+password) przez `login.php`.
+    /// Zwraca surowy JSON odpowiedzi endpointu.
+    pub async fn login_account(
+        &self,
+        email: &str,
+        password: &str,
+        game_mode: &str,
+        launch_token: Option<&str>,
+    ) -> Result<serde_json::Value, ApiError> {
+        let url = self.url("login.php");
+        tracing::info!("Logowanie konta launchera: {}", url);
+
+        let mut payload = serde_json::json!({
+            "type": "login",
+            "email": email,
+            "password": password,
+            "gameMode": game_mode
+        });
+
+        if let Some(token) = launch_token {
+            if !token.trim().is_empty() {
+                payload["launchToken"] = serde_json::Value::String(token.to_string());
+            }
+        }
+
+        let resp = self.http.post(&url).json(&payload).send().await?;
+        let status = resp.status();
+
+        if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+            return Err(ApiError::RateLimited);
+        }
+
+        let body = resp.text().await.unwrap_or_default();
+        let value: serde_json::Value = serde_json::from_str(&body)?;
+
+        // login.php historycznie zwraca błędy jako 200 + {errorCode, errorMessage}
+        if let Some(error_message) = value.get("errorMessage").and_then(|v| v.as_str()) {
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body: error_message.to_string(),
+            });
+        }
+
+        if !status.is_success() {
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body,
+            });
+        }
+
+        Ok(value)
+    }
+
+    /// Rejestracja konta launchera przez `register-account.php`.
+    /// Zwraca surowy JSON odpowiedzi endpointu.
+    pub async fn register_account(
+        &self,
+        account_name: &str,
+        email: &str,
+        password: &str,
+        password_confirm: &str,
+    ) -> Result<serde_json::Value, ApiError> {
+        let url = self.url("register-account.php");
+        tracing::info!("Rejestracja konta launchera: {}", url);
+
+        // Keep the same action as WWW/RedDAXE to guarantee one shared register flow.
+        let payload = serde_json::json!({
+            "type": "register",
+            "accountName": account_name,
+            "email": email,
+            "password": password,
+            "passwordConfirm": password_confirm
+        });
+
+        let resp = self.http.post(&url).json(&payload).send().await?;
+        let status = resp.status();
+
+        if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+            return Err(ApiError::RateLimited);
+        }
+
+        let body = resp.text().await.unwrap_or_default();
+        let value: serde_json::Value = serde_json::from_str(&body)?;
+
+        // register-account.php moze zwracac bledy jako JSON z errorMessage.
+        if let Some(error_message) = value.get("errorMessage").and_then(|v| v.as_str()) {
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body: error_message.to_string(),
+            });
+        }
+
+        if !status.is_success() {
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body,
+            });
+        }
+
+        Ok(value)
+    }
+
     // ─────────────────────────────────────────
     // LR-043: installer-catalog.php
     // ─────────────────────────────────────────
@@ -401,6 +606,16 @@ impl ApiClient {
 
         let server_status = resp.json().await?;
         Ok(server_status)
+    }
+
+    /// Lightweight endpoint probe for health-check/preflight.
+    ///
+    /// Returns raw HTTP status code for the given endpoint path.
+    /// Network/TLS/transport failures are returned as `ApiError`.
+    pub async fn probe_endpoint_status(&self, endpoint: &str) -> Result<u16, ApiError> {
+        let url = self.url(endpoint);
+        let resp = self.http.get(&url).send().await?;
+        Ok(resp.status().as_u16())
     }
 
     // ─────────────────────────────────────────
@@ -585,6 +800,15 @@ fn validate_challenge_response(challenge: &ChallengeResponse) -> Result<(), ApiE
     }
 
     Ok(())
+}
+
+/// Sprawdza czy URL to HTTP na loopback (127.0.0.1/localhost/[::1]).
+/// Loopback HTTP jest dozwolony dla testów lokalnych.
+fn is_loopback_http(url: &str) -> bool {
+    let lower = url.to_ascii_lowercase();
+    lower.starts_with("http://127.0.0.1")
+        || lower.starts_with("http://localhost")
+        || lower.starts_with("http://[::1]")
 }
 
 // ─────────────────────────────────────────────

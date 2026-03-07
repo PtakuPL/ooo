@@ -52,12 +52,11 @@ end
 
 local function greetCallback(npc, creature)
 	local playerId = creature:getId()
-	npcHandler:setMessage(
-		MESSAGE_GREET,
-		"Greetings, "
-			.. Player(creature):getName()
-			.. ". Well, we all know what time it is. Always when we meet, the citizens of rathleton voted for the {Glooth Fairy}! ... Well, the rules are as simples as always. Ask me for a {fight} and I'll teleport you into the room with the lever, therefore I'll charge one voting right. ... From this room there is no way back to me. Pull the trigger and after one minute you and your buddies will face the {Glooth Fairy}."
-	)
+	npcHandler:setLocalizedMessage(MESSAGE_GREET, "npc.flora.greet_msg_1", {
+		args = function(player)
+			return { player:getName() }
+		end,
+	})
 	npcHandler:setTopic(playerId, 0)
 	return true
 end
@@ -91,7 +90,7 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.flora.farewell_msg_1")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.flora.walkaway_msg_1")
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

@@ -115,16 +115,17 @@ void Stacktrace(LPEXCEPTION_POINTERS e, std::stringstream& ss)
         if (dwModBase)
             GetModuleFileName(reinterpret_cast<HINSTANCE>(dwModBase), modname, MAX_PATH);
         else
-            strcpy(modname, "Unknown");
+            strncpy(modname, "Unknown", MAX_PATH - 1);
+            modname[MAX_PATH - 1] = '\0';
 
         Disp = 0;
         pSym->SizeOfStruct = sizeof(symBuffer);
         pSym->MaxNameLength = 254;
 
         if (SymGetSymFromAddr(process, sf.AddrPC.Offset, &Disp, pSym))
-            ss << fmt::format("    {}: {}({}+%#0lx) [0x%016lX]\n", count, modname, pSym->Name, Disp, sf.AddrPC.Offset);
+            ss << fmt::format("    {}: {}({}+{:#x}) [{:#016X}]\n", count, modname, pSym->Name, Disp, sf.AddrPC.Offset);
         else
-            ss << fmt::format("    {}: {} [0x%016lX]\n", count, modname, sf.AddrPC.Offset);
+            ss << fmt::format("    {}: {} [{:#016X}]\n", count, modname, sf.AddrPC.Offset);
         ++count;
     }
     GlobalFree(pSym);

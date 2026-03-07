@@ -238,12 +238,23 @@ $('#ServiceID_Icon_Over_' + a_ServiceID).css('background-image', '');
 													<tr>
 														<td>
 															<div class="TableContentContainer">
-																<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
-																	<tbody>
-																		<tr>
-																			<td class="LabelV150">
-																				<span>Country:</span>
-																			</td>
+																	<table class="TableContent" width="100%" style="border:1px solid #faf0d7;">
+																		<tbody>
+																			<tr>
+																				<td class="LabelV150">
+																					<span>Server:</span>
+																				</td>
+																				<td>
+																					<select name="payment_world_id" class="Width100Percent">
+																						<option value="0" {% if selected_world_id == 0 %}selected{% endif %}>Classic 7.4</option>
+																						<option value="1" {% if selected_world_id == 1 %}selected{% endif %}>Modern</option>
+																					</select>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td class="LabelV150">
+																					<span>Country:</span>
+																				</td>
 																			<td>
 																				<select name="payment_country" class="Width100Percent" onblur="CheckForReload(this)">
 																					<option value="">--- please select your country ---</option>

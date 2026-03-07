@@ -71,15 +71,15 @@ local function creatureSayCallback(npc, creature, type, message)
 					end
 				end
 			end
-			local text = ""
-			if sleightInfo[message].cost > 0 then
-				text = sleightInfo[message].cost .. " gp"
-			elseif table.maxn(sleightInfo[message].items) then
-				text = items_list
-			elseif (sleightInfo[message].cost > 0) and table.maxn(sleightInfo[message].items) then
-				text = items_list .. " and " .. sleightInfo[message].cost .. " gp"
-			end
-			npcHandler:say("For a " .. message .. " you will need " .. text .. ". Do you have it with you?", npc, creature)
+				local offerText = ""
+				if sleightInfo[message].cost > 0 then
+					offerText = sleightInfo[message].cost .. " gp"
+				elseif table.maxn(sleightInfo[message].items) then
+					offerText = items_list
+				elseif (sleightInfo[message].cost > 0) and table.maxn(sleightInfo[message].items) then
+					offerText = items_list .. " and " .. sleightInfo[message].cost .. " gp"
+				end
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frosty.say_8", { message, offerText })
 			rtnt[playerId] = message
 			talkState[playerId] = sleightInfo[message].storageID
 			return true
@@ -116,7 +116,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			return true
 		end
 	elseif MsgContains(message, "mount") or MsgContains(message, "mounts") or MsgContains(message, "sleigh") or MsgContains(message, "sleighs") then
-		npcHandler:say("I can give you one of the following sleighs: {" .. table.concat(monsterName, "}, {") .. "}.", npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.frosty.say_2", { table.concat(monsterName, "}, {") })
 		rtnt[playerId] = nil
 		talkState[playerId] = 0
 		npcHandler:resetNpc(player)

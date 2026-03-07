@@ -15,7 +15,11 @@ defined('MYAAC') or die('Direct access not allowed!');
  * Priority: ?lang= parameter > cookie > Accept-Language header > default (en)
  */
 function get_current_language() {
-	$detected_locale = 'en'; // default fallback
+	$available_locales = get_locales();
+	$detected_locale = config('default_locale') ?: 'pl';
+	if (!in_array($detected_locale, $available_locales, true)) {
+		$detected_locale = 'en';
+	}
 	
 	// 1. Check URL parameter ?lang=
 	if (isset($_GET['lang'])) {
@@ -36,7 +40,6 @@ function get_current_language() {
 	
 	// 3. Check Accept-Language header
 	$browser_langs = get_browser_languages();
-	$available_locales = get_locales();
 	
 	foreach ($browser_langs as $lang) {
 		if (in_array($lang, $available_locales)) {
@@ -44,7 +47,7 @@ function get_current_language() {
 		}
 	}
 	
-	// 4. Fallback to English
+	// 4. Fallback to configured default
 	return $detected_locale;
 }
 

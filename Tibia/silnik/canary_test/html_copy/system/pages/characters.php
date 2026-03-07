@@ -12,7 +12,8 @@
 use MyAAC\Models\PlayerDeath;
 
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Characters';
+require_once SYSTEM . 'database_modern.php';
+$title = __('menu_characters');
 
 $groups = new OTS_Groups_List();
 function generate_search_form($autofocus = false)
@@ -59,6 +60,7 @@ $oldName = '';
 
 $player = new OTS_Player();
 $player->find($name);
+$playerServer = 'classic74'; // default server
 if(!$player->isLoaded())
 {
 	$tmp_zmienna = "";
@@ -71,6 +73,20 @@ if(!$player->isLoaded())
 
 	if(!empty($tmp_zmienna))
 		$player->find($tmp_zmienna);
+}
+
+// Cross-server search: try canary_modern if not found in default DB
+$modernPlayerData = null;
+if (!$player->isLoaded() || $player->isDeleted()) {
+	$modernDb = getModernDb();
+	if ($modernDb) {
+		$stmt = $modernDb->prepare('SELECT * FROM `players` WHERE `name` = ? AND `deletion` = 0 LIMIT 1');
+		$stmt->execute([$name]);
+		$modernPlayerData = $stmt->fetch(PDO::FETCH_ASSOC);
+		if ($modernPlayerData) {
+			$playerServer = 'modern';
+		}
+	}
 }
 
 if($player->isLoaded() && !$player->isDeleted())
@@ -89,7 +105,7 @@ if($player->isLoaded() && !$player->isDeleted())
 
 	$player_sex = 'Unknown';
 	if(isset($config['genders'][$player->getSex()]))
-		$player_sex = strtolower($config['genders'][$player->getSex()]);
+		$player_sex = $config['genders'][$player->getSex()];
 
 	$marital_status = 'single';
 	$marriage_id = $player->getMarriage();
@@ -382,15 +398,23 @@ WHERE killers.death_id = '".$death['id']."' ORDER BY killers.final_hit DESC, kil
 		}
 
 		$account_players = array();
-		$query = $db->query('SELECT `id` FROM `players` WHERE `account_id` = ' . $account->getId() . ' ORDER BY `name`')->fetchAll();
+		$other_server_players = array();
+		$currentWorldId = (int)$db->query('SELECT `world` FROM `players` WHERE `id` = ' . $player->getId())->fetchColumn();
+		$query = $db->query('SELECT `id`, `world` FROM `players` WHERE `account_id` = ' . $account->getId() . ' ORDER BY `name`')->fetchAll();
 		foreach($query as $p) {
 			$_player = new OTS_Player();
 			$fields = array('id', 'name', 'vocation', 'level', 'online', 'deleted', 'hide');
 			$_player->load($p['id'], $fields, false);
 			if($_player->isLoaded() && !$_player->isHidden()) {
-				$account_players[] = $_player;
+				if ((int)$p['world'] === $currentWorldId) {
+					$account_players[] = $_player;
+				} else {
+					$other_server_players[] = $_player;
+				}
 			}
 		}
+		$currentServerLabel = $currentWorldId === 1 ? 'Modern' : 'Classic 7.4';
+		$otherServerLabel = $currentWorldId === 1 ? 'Classic 7.4' : 'Modern';
 	}
 
 	$twig->display('characters.html.twig', array(
@@ -430,9 +454,162 @@ WHERE killers.death_id = '".$death['id']."' ORDER BY killers.final_hit DESC, kil
 		'hidden' => $hide,
 		'bannedUntil' => isset($bannedUntil) ? $bannedUntil : null,
 		'account_players' => isset($account_players) ? $account_players : null,
+		'other_server_players' => isset($other_server_players) ? $other_server_players : null,
+		'current_server_label' => isset($currentServerLabel) ? $currentServerLabel : '',
+		'other_server_label' => isset($otherServerLabel) ? $otherServerLabel : '',
 		'search_form' => generate_search_form(),
 		'canEdit' => hasFlag(FLAG_CONTENT_PLAYERS) || superAdmin()
 	));
+} elseif ($modernPlayerData) {
+	// Player found in canary_modern — display simplified profile from PDO data
+	$title = $modernPlayerData['name'] . ' - ' . $title;
+
+	$modernSex = 'Unknown';
+	if (isset($config['genders'][$modernPlayerData['sex']])) {
+		$modernSex = $config['genders'][$modernPlayerData['sex']];
+	}
+
+	$modernVoc = isset($config['vocations'][$modernPlayerData['vocation']]) ? $config['vocations'][$modernPlayerData['vocation']] : 'None';
+	$modernTown = isset($config['towns'][$modernPlayerData['town_id']]) ? $config['towns'][$modernPlayerData['town_id']] : 'Unknown';
+	$modernLevel = (int)$modernPlayerData['level'];
+
+	$modernOutfit = '';
+	if ($config['characters']['outfit'] ?? false) {
+		$modernOutfit = setting('core.outfit_images_url') . '?id=' . $modernPlayerData['looktype']
+			. (isset($modernPlayerData['lookaddons']) ? '&addons=' . $modernPlayerData['lookaddons'] : '')
+			. '&head=' . $modernPlayerData['lookhead'] . '&body=' . $modernPlayerData['lookbody']
+			. '&legs=' . $modernPlayerData['looklegs'] . '&feet=' . $modernPlayerData['lookfeet'];
+	}
+
+	// Fetch deaths from canary_modern
+	$modernDeaths = [];
+	$modernDb2 = getModernDb();
+	if ($modernDb2) {
+		$deathStmt = $modernDb2->prepare('SELECT `player_id`, `time`, `level`, `killed_by`, `is_player`, `mostdamage_by`, `mostdamage_is_player`, `unjustified`, `mostdamage_unjustified` FROM `player_deaths` WHERE `player_id` = ? ORDER BY `time` DESC LIMIT 10');
+		$deathStmt->execute([$modernPlayerData['id']]);
+		foreach ($deathStmt->fetchAll(PDO::FETCH_ASSOC) as $d) {
+			$lasthit = $d['is_player'] ? getPlayerLink($d['killed_by']) : $d['killed_by'];
+			$desc = 'Killed at level ' . $d['level'] . ' by ' . $lasthit;
+			if ($d['unjustified']) {
+				$desc .= ' <span style="color: red; font-style: italic;">(unjustified)</span>';
+			}
+			if ($d['mostdamage_by'] !== $d['killed_by']) {
+				$mostdmg = $d['mostdamage_is_player'] ? getPlayerLink($d['mostdamage_by']) : $d['mostdamage_by'];
+				$desc .= ' and by ' . $mostdmg;
+				if ($d['mostdamage_unjustified']) {
+					$desc .= ' <span style="color: red; font-style: italic;">(unjustified)</span>';
+				}
+			} else {
+				$desc .= ' <b>(soloed)</b>';
+			}
+			$modernDeaths[] = ['time' => $d['time'], 'description' => $desc];
+		}
+
+		// Fetch other characters on the same account from modern DB
+		$accStmt = $modernDb2->prepare('SELECT `id`, `name`, `vocation`, `level` FROM `players` WHERE `account_id` = ? AND `deletion` = 0 ORDER BY `name`');
+		$accStmt->execute([$modernPlayerData['account_id']]);
+		$modernAccountPlayers = $accStmt->fetchAll(PDO::FETCH_ASSOC);
+
+		// Fetch classic server characters for the same account (other server)
+		$classicAccountPlayers = array();
+		$classicQuery = $db->query('SELECT `id` FROM `players` WHERE `account_id` = ' . (int)$modernPlayerData['account_id'] . ' AND `world` = 0 ORDER BY `name`')->fetchAll();
+		foreach($classicQuery as $cp) {
+			$_cplayer = new OTS_Player();
+			$_cplayer->load($cp['id'], array('id', 'name', 'vocation', 'level', 'online', 'deleted', 'hide'), false);
+			if($_cplayer->isLoaded() && !$_cplayer->isHidden()) {
+				$classicAccountPlayers[] = $_cplayer;
+			}
+		}
+	}
+
+	// Create a compatible player proxy object for the Twig template
+	$modernPlayerProxy = new class($modernPlayerData) {
+		private $data;
+		public function __construct(array $data) { $this->data = $data; }
+		public function getId() { return (int)$this->data['id']; }
+		public function getName() { return $this->data['name']; }
+		public function getLevel() { return (int)$this->data['level']; }
+		public function getExperience() { return (int)($this->data['experience'] ?? 0); }
+		public function getLookType() { return (int)($this->data['looktype'] ?? 136); }
+		public function getLookAddons() { return (int)($this->data['lookaddons'] ?? 0); }
+		public function getLookHead() { return (int)($this->data['lookhead'] ?? 0); }
+		public function getLookBody() { return (int)($this->data['lookbody'] ?? 0); }
+		public function getLookLegs() { return (int)($this->data['looklegs'] ?? 0); }
+		public function getLookFeet() { return (int)($this->data['lookfeet'] ?? 0); }
+		public function isOnline() { return false; }
+		public function isDeleted() { return false; }
+		public function isHidden() { return false; }
+		public function getSex() { return (int)($this->data['sex'] ?? 0); }
+		public function getBalance() { return (int)($this->data['balance'] ?? 0); }
+		public function getVocation() { return (int)($this->data['vocation'] ?? 0); }
+		public function getVocationName() {
+			global $config;
+			$voc = (int)($this->data['vocation'] ?? 0);
+			return $config['vocations'][$voc] ?? 'None';
+		}
+		public function getSkullTime() { return 0; }
+		public function getSkull() { return 0; }
+		public function getCreationDate() { return (int)($this->data['creation'] ?? 0); }
+		public function getLastLogin() { return (int)($this->data['lastlogin'] ?? 0); }
+		public function getMagLevel() { return (int)($this->data['maglevel'] ?? 0); }
+	};
+
+	// Wrap modern account players as proxy objects for the template
+	$modernAccountPlayerProxies = [];
+	foreach ($modernAccountPlayers ?? [] as $mp) {
+		$modernAccountPlayerProxies[] = new class($mp) {
+			private $d;
+			public function __construct(array $d) { $this->d = $d; }
+			public function getName() { return $this->d['name']; }
+			public function getLevel() { return (int)$this->d['level']; }
+			public function getVocationName() {
+				global $config;
+				return $config['vocations'][(int)$this->d['vocation']] ?? 'None';
+			}
+			public function isOnline() { return false; }
+			public function isDeleted() { return false; }
+			public function isHidden() { return false; }
+		};
+	}
+
+	$twig->display('characters.html.twig', [
+		'outfit' => !empty($modernOutfit) ? $modernOutfit : null,
+		'player' => $modernPlayerProxy,
+		'account' => null,
+		'flag' => '',
+		'oldName' => '',
+		'sex' => $modernSex,
+		'marriage_enabled' => false,
+		'marital_status' => 'single',
+		'vocation' => $modernVoc,
+		'frags_enabled' => false,
+		'frags_count' => 0,
+		'town' => $modernTown,
+		'house' => ['found' => false, 'add' => null, 'name' => null, 'town' => ''],
+		'guild' => ['rank' => null, 'link' => null],
+		'comment' => !empty($modernPlayerData['comment']) ? nl2br($modernPlayerData['comment']) : null,
+		'skills' => null,
+		'quests_enabled' => false,
+		'quests' => null,
+		'equipment' => null,
+		'skull' => null,
+		'deaths' => $modernDeaths,
+		'frags' => [],
+		'signature_url' => null,
+		'player_link' => getPlayerLink($modernPlayerData['name'], false),
+		'hide' => false,
+		'hidden' => false,
+		'bannedUntil' => null,
+		'account_players' => $modernAccountPlayerProxies,
+		'other_server_players' => !empty($classicAccountPlayers) ? $classicAccountPlayers : null,
+		'current_server_label' => 'Modern',
+		'other_server_label' => 'Classic 7.4',
+		'search_form' => generate_search_form(),
+		'canEdit' => false,
+		'serverTag' => 'Modern',
+		'serverBadgeClass' => 'badge badge-info',
+		'level' => $modernLevel,
+	]);
 } else {
 	$search_errors[] = 'Character <b>' . $name . '</b> does not exist or has been deleted.';
 	$twig->display('error_box.html.twig', array('errors' => $search_errors));
@@ -454,9 +631,27 @@ WHERE killers.death_id = '".$death['id']."' ORDER BY killers.final_hit DESC, kil
 				if((int)$player['promotion'] > 0)
 					$player['vocation'] += ($player['promotion'] * $config['vocations_amount']);
 			}
-			echo '<li>' . getPlayerLink($player['name']) . ' (<small><strong>level ' . $player['level'] . ', ' . $config['vocations'][$player['vocation']] . '</strong></small>)</li>';
+			echo '<li>' . getPlayerLink($player['name']) . ' (<small><strong>level ' . $player['level'] . ', ' . $config['vocations'][$player['vocation']] . '</strong></small>) <span style="color:#888;">[Classic 7.4]</span></li>';
 		}
 		echo '</ul>';
+	}
+
+	// Also search canary_modern for matching names
+	$modernDb3 = getModernDb();
+	if ($modernDb3) {
+		$modernSearch = $modernDb3->prepare('SELECT `name`, `level`, `vocation` FROM `players` WHERE `name` LIKE ? AND `deletion` = 0 LIMIT ' . (int)setting('core.characters_search_limit'));
+		$modernSearch->execute(['%' . $name . '%']);
+		$modernResults = $modernSearch->fetchAll(PDO::FETCH_ASSOC);
+		if (count($modernResults) > 0) {
+			if ($query->rowCount() == 0) {
+				echo 'Did you mean:<ul>';
+			}
+			foreach ($modernResults as $mp) {
+				$mpVoc = isset($config['vocations'][$mp['vocation']]) ? $config['vocations'][$mp['vocation']] : 'None';
+				echo '<li>' . getPlayerLink($mp['name']) . ' (<small><strong>level ' . (int)$mp['level'] . ', ' . $mpVoc . '</strong></small>) <span style="color:#17a2b8;">[Modern]</span></li>';
+			}
+			echo '</ul>';
+		}
 	}
 
 	echo generate_search_form(true);

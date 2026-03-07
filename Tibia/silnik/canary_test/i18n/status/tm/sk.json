@@ -2830,5 +2830,245 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T06:55:54.223839Z"
+  },
+  "monster.hunter.name": {
+    "src_hash": "5e409e09f43d85c6e61301149e4f803b",
+    "text": "Hunter",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.722156Z"
+  },
+  "monster.dharalion.name": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.726716Z"
+  },
+  "monster.dharalion.desc": {
+    "src_hash": "f4b02a0be06c383d37eaf02f4359402b",
+    "text": "Dharalion",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.727258Z"
+  },
+  "monster.cyclops.name": {
+    "src_hash": "1a1ea04451ed996376aac96e92f38324",
+    "text": "Cyclops",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.728206Z"
+  },
+  "monster.firestarter.voice_1": {
+    "src_hash": "768bf59c2fc9b6d051299536a1d19e54",
+    "text": "OHEŇ!",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.752271Z"
+  },
+  "monster.lord_of_the_elements.name": {
+    "src_hash": "26f35529002a0a103c2080451deda86a",
+    "text": "Pán živlov",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.806169Z"
+  },
+  "monster.lord_of_the_elements.desc": {
+    "src_hash": "26f35529002a0a103c2080451deda86a",
+    "text": "Pán živlov",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.806794Z"
+  },
+  "monster.void.name": {
+    "src_hash": "81ceb48a978444906d80119200aa358d",
+    "text": "Neplatné",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.821069Z"
+  },
+  "monster.void.desc": {
+    "src_hash": "cab8111fd0b710a336c898e539090e34",
+    "text": "neplatné",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.821342Z"
+  },
+  "monster.omrafir.name": {
+    "src_hash": "97a239b13834eab0ab19c2978ec1ef57",
+    "text": "Omrafir",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.865535Z"
+  },
+  "monster.omrafir.desc": {
+    "src_hash": "97a239b13834eab0ab19c2978ec1ef57",
+    "text": "Omrafir",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.866413Z"
+  },
+  "monster.feroxa.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.884631Z"
+  },
+  "monster.feroxa.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.885510Z"
+  },
+  "monster.feroxa2.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.886471Z"
+  },
+  "monster.feroxa2.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.887252Z"
+  },
+  "monster.feroxa4.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.888565Z"
+  },
+  "monster.feroxa4.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.889414Z"
+  },
+  "monster.feroxa3.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.890346Z"
+  },
+  "monster.feroxa3.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.890927Z"
+  },
+  "monster.feroxa5.name": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.891458Z"
+  },
+  "monster.feroxa5.desc": {
+    "src_hash": "6c59b09bfce69d20bb2b2e9eccf12b41",
+    "text": "Feroxa",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.891908Z"
+  },
+  "monster.ocyakao.name": {
+    "src_hash": "49a73d64c23681571806a21b38c2614e",
+    "text": "Ocyakao",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.942563Z"
+  },
+  "monster.ocyakao.desc": {
+    "src_hash": "49a73d64c23681571806a21b38c2614e",
+    "text": "Ocyakao",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.943023Z"
+  },
+  "monster.ghazbaran.name": {
+    "src_hash": "7011c4937708c913e39ffc5369fbf7c9",
+    "text": "Ghazbaran",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.946648Z"
+  },
+  "monster.ghazbaran.desc": {
+    "src_hash": "7011c4937708c913e39ffc5369fbf7c9",
+    "text": "Ghazbaran",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.947174Z"
+  },
+  "monster.hirintror.name": {
+    "src_hash": "fecc29ff7925e8e289a31d474cef424d",
+    "text": "Hirintror",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.947888Z"
+  },
+  "monster.hirintror.desc": {
+    "src_hash": "fecc29ff7925e8e289a31d474cef424d",
+    "text": "Hirintror",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.948376Z"
+  },
+  "monster.draptor.name": {
+    "src_hash": "0298e34bc88fa8299cacd8f457233da3",
+    "text": "Draptor",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.950265Z"
+  },
+  "monster.chayenne.name": {
+    "src_hash": "33cb5e6c61118b97e3593d52e381b83d",
+    "text": "Chayenne",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.950972Z"
+  },
+  "monster.chayenne.desc": {
+    "src_hash": "33cb5e6c61118b97e3593d52e381b83d",
+    "text": "Chayenne",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:27:54.951487Z"
   }
 }

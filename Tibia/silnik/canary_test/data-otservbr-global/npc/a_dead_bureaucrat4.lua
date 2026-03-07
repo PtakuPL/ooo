@@ -88,7 +88,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, Vocation(vocationId):getName()) then
 		if npcHandler:getTopic(playerId) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dead_bureaucrat4.say_1", { config[vocationBaseId] })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.a_dead_bureaucrat4.say_5", { config[vocationBaseId] })
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "356") then

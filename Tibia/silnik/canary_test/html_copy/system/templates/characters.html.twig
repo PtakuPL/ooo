@@ -21,39 +21,39 @@
 			{% endif %}
 
 			<tr bgcolor="{{ config.vdarkborder }}">
-				<td colspan="2" class="white"><b>Character Information</b></td>
+				<td colspan="2" class="white"><b>Informacje o postaci</b></td>
 			</tr>
 
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td width="20%">Name:</td>
+				<td width="20%">Nazwa:</td>
 				<td>{{ flag|raw }} <span style="color: {% if player.isOnline() %}green{% else %}red{% endif %}"><b>{{ player.getName() }}</b></span>{{ oldName }}</td>
 			</tr>
 
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>Sex:</td>
+				<td>Płeć:</td>
 				<td>{{ sex }}</td>
 			</tr>
 
 			{% if marriage_enabled %}
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>Marital status:</td>
+				<td>Stan cywilny:</td>
 				<td>{{ marital_status }}</td>
 			</tr>
 			{% endif %}
 
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>Profession:</td>
+				<td>Profesja:</td>
 				<td>{{ vocation }}</td>
 			</tr>
 
 			{% if config.characters.level %}
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>Level:</td>
+				<td>Poziom:</td>
 				<td>{{ player.getLevel() }}</td>
 			</tr>
 			{% endif %}
@@ -61,7 +61,7 @@
 			{% if config.characters.experience %}
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>Experience:</td>
+				<td>Doświadczenie:</td>
 				<td>{{ player.getExperience() }}</td>
 			</tr>
 			{% endif %}
@@ -69,7 +69,7 @@
 			{% if config.characters.magic_level %}
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>Magic Level:</td>
+				<td>Poziom magii:</td>
 				<td>{{ player.getMagLevel() }}</td>
 			</tr>
 			{% endif %}
@@ -77,29 +77,29 @@
 			{% if frags_enabled %}
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>Frags:</td>
+				<td>Zabójstwa:</td>
 				<td>{{ frags_count }}</td>
 			</tr>
 			{% endif %}
 
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>Residence:</td>
+				<td>Miasto:</td>
 				<td>{{ town }}</td>
 			</tr>
 
 			{% if config.characters.balance %}
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>Balance:</td>
-				<td>{{ player.getBalance() }} Gold Coins.</td>
+				<td>Saldo:</td>
+				<td>{{ player.getBalance() }} złotych monet</td>
 			</tr>
 			{% endif %}
 
 			{% if house.found %}
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>House:</td>
+				<td>Dom:</td>
 				<td>
 					<table border="0">
 						<tr>
@@ -120,37 +120,37 @@
 			{% if guild.rank is not null %}
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>Guild membership:</td>
-				<td>{{ guild.rank }} of the {{ guild.link|raw }}</td>
+				<td>Członkostwo w gildii:</td>
+				<td>{{ guild.rank }} w gildii {{ guild.link|raw }}</td>
 			</tr>
 			{% endif %}
 
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>Last login:</td>
-				<td>{% if player.getLastLogin() == 0 %}Never logged in.{% else %}{{ player.getLastLogin()|date("M d Y, H:i:s") }} CEST{% endif %}</td>
+				<td>Ostatnie logowanie:</td>
+				<td>{% if player.getLastLogin() == 0 %}Nigdy się nie logował.{% else %}{{ player.getLastLogin()|date("d.m.Y, H:i:s") }} CEST{% endif %}</td>
 			</tr>
 
 			{% if config.characters.creation_date %}
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>Created:</td>
-				<td>{{ player.getCreated()|date("M d Y, H:i:s") }} CEST</td>
+				<td>Utworzono:</td>
+				<td>{{ player.getCreated()|date("d.m.Y, H:i:s") }} CEST</td>
 			</tr>
 			{% endif %}
 
 			{% if comment is not null %}
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td valign="top">Comment:</td>
+				<td valign="top">Komentarz:</td>
 				<td style="word-break: break-all">{{ comment|raw }}</td>
 			</tr>
 			{% endif %}
 
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>Account Status:</td>
-				<td>{% if account.isPremium() %}Premium Account{% else %}Free Account{% endif %}</td>
+				<td>Status konta:</td>
+				<td>{% if account.isPremium() %}Konto Premium{% else %}Darmowe konto{% endif %}</td>
 			</tr>
 		</table>
 		{{ hook(constant('HOOK_CHARACTERS_AFTER_INFORMATIONS')) }}
@@ -164,7 +164,7 @@
 				<td width="30%" valign="top">
 					<table border="0" cellspacing="1" cellpadding="4" width="100%">
 						<tr bgcolor="{{ config.vdarkborder }}">
-							<td colspan="2" class="white"><B>Skills</b></td>
+							<td colspan="2" class="white"><B>Umiejętności</b></td>
 						</tr>
 						{% set i = 0 %}
 						{% for skill in skills %}
@@ -186,7 +186,7 @@
 				<td width="40%" valign="top">
 					<table border="0" cellspacing="1" cellpadding="4" width="100%">
 						<tr bgcolor="{{ config.vdarkborder }}">
-							<td colspan="2" class="white"><b>Quests</b></td>
+							<td colspan="2" class="white"><b>Zadania</b></td>
 						</tr>
 						{% set i = 0 %}
 						{% for name, done in quests %}
@@ -208,7 +208,7 @@
 				<td width="100" valign="top">
 					<table border="0" cellspacing="1" cellpadding="4" width="100%">
 						<tr bgcolor="{{ config.vdarkborder}}">
-							<td colspan="2" class="white"><b>Equipment</b></td>
+							<td colspan="2" class="white"><b>Ekwipunek</b></td>
 						</tr>
 						<tr bgcolor="{{ getStyle(1) }}">
 							<td>
@@ -250,7 +250,7 @@
 		<br/>
 		<table border="0" cellspacing="1" cellpadding="4" width="100%">
 			<tr bgcolor="{{ config.vdarkborder }}">
-				<td colspan="2" class="white"><b>Character Deaths</b></td>
+				<td colspan="2" class="white"><b>Śmierci postaci</b></td>
 			</tr>
 			{% set i = 0 %}
 			{% for death in deaths %}
@@ -269,13 +269,13 @@
 		<br/>
 		<table border="0" cellspacing="1" cellpadding="4" width="100%">
 			<tr bgcolor="{{ config.vdarkborder }}">
-				<td colspan="2" class="white"><b>Victims</b></td>
+				<td colspan="2" class="white"><b>Ofiary</b></td>
 			</tr>
 			{% set i = 0 %}
 			{% for frag in frags %}
 			<tr bgcolor="{{ getStyle(i) }}">
 				<td width="20%" align="center">{{ frag.time|date("j M Y, H:i") }}</td>
-				<td>{{ frag.description|raw }} ({% if frag.unjustified %}<span style="color: red; font-size: 10px">Unjustified</span>{% else %}<span style="color: green; font-size: 10px">Justified</span>{% endif %})</td>
+				<td>{{ frag.description|raw }} ({% if frag.unjustified %}<span style="color: red; font-size: 10px">Nieuzasadnione</span>{% else %}<span style="color: green; font-size: 10px">Uzasadnione</span>{% endif %})</td>
 			</tr>
 			{% set i = i + 1 %}
 			{% endfor %}
@@ -293,21 +293,21 @@
 				if(document.getElementById('signLinks').style.display == "none")
 				{
 					document.getElementById('signLinks').style.display = "inline";
-					document.getElementById('signText').innerHTML = "Hide links";
+					document.getElementById('signText').innerHTML = "Ukryj linki";
 				}
 				else
 				{
 					document.getElementById('signLinks').style.display = "none";
-					document.getElementById('signText').innerHTML = "Show links";
+					document.getElementById('signText').innerHTML = "Pokaż linki";
 				}
 			}
 		</script>
 		<br/>
-		<table border="0" cellspacing="1" cellpadding="4" width="100%"><tr bgcolor="{{ config.vdarkborder }}"><td colspan=2 class="white"><b>Signature</b></td></tr>
+		<table border="0" cellspacing="1" cellpadding="4" width="100%"><tr bgcolor="{{ config.vdarkborder }}"><td colspan=2 class="white"><b>Sygnatura</b></td></tr>
 			<tr bgcolor="{{ config.lightborder }}"><td align="center" valign="top">
-				<img src="{{ signature_url }}" alt="Signature for player {{ player.getName() }}">
+				<img src="{{ signature_url }}" alt="Sygnatura gracza {{ player.getName() }}">
 				<br/>
-				<b><a href="#" onclick="showSignLinks(); return false;" id="signText">Show links</a></b>
+				<b><a href="#" onclick="showSignLinks(); return false;" id="signText">Pokaż linki</a></b>
 				<br/>
 				<table id="signLinks" style="display: none;">
 					<tr>
@@ -319,7 +319,7 @@
 						<td><input type="text" value="[URL={{ player_link }}][IMG]{{ signature_url }}[/IMG][/URL]" style="width: 400px;" onclick="this.select()"></td>
 					</tr>
 					<tr>
-						<td>Direct link:</td>
+						<td>Bezpośredni link:</td>
 						<td><input type="text" value="{{ signature_url }}" style="width: 400px;" onclick="this.select()"></td>
 					</tr>
 				</table>
@@ -334,14 +334,14 @@
 		<br/><br/>
 		<table border="0" cellspacing="1" cellpadding="4" width="100%">
 			<tr bgcolor="{{ config.vdarkborder }}">
-				<td colspan="2" class="white"><b>Account Information</b></td>
+				<td colspan="2" class="white"><b>Informacje o koncie</b></td>
 			</tr>
 
 			{% set realName = account.getRLName() %}
 			{% if realName is not empty %}
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td width="20%">Real name:</td>
+				<td width="20%">Prawdziwe imię:</td>
 				<td>{{ realName }}</td>
 			</tr>
 			{% endif %}
@@ -350,7 +350,7 @@
 			{% if group.isLoaded() and group.getId() != 1 %}
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td>Position:</td>
+				<td>Pozycja:</td>
 				<td>{{ group.getName()|capitalize }}</td>
 			</tr>
 			{% endif %}
@@ -359,17 +359,17 @@
 			{% if realLocation is not empty %}
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td width="20%">Location:</td>
+				<td width="20%">Lokalizacja:</td>
 				<td>{{ realLocation }}</td>
 			</tr>
 			{% endif %}
 
 			{% set rows = rows + 1 %}
 			<tr bgcolor="{{ getStyle(rows) }}">
-				<td width="20%">Created:</td>
-				<td>{{ account.getCreated()|date("j F Y, g:i a") }}
+				<td width="20%">Utworzono:</td>
+				<td>{{ account.getCreated()|date("d.m.Y, H:i:s") }}
 					{% if bannedUntil matches '/^\\d+$/' or bannedUntil == '-1' %}
-						<span style="color: red">[Banished {% if bannedUntil == '-1' %}forever{% else %}until {{ bannedUntil|date('d F Y, h:s') }}{% endif %}]</span>
+						<span style="color: red">[Zbanowany {% if bannedUntil == '-1' %}na zawsze{% else %}do {{ bannedUntil|date('d.m.Y, H:i') }}{% endif %}]</span>
 					{% else %}
 					{{ bannedUntil|raw }}
 					{% endif %}
@@ -382,11 +382,11 @@
 		<br/><br/>
 		<table border="0" cellspacing="1" cellpadding="4" width="100%">
 			<tr bgcolor="{{ config.vdarkborder }}">
-				<td colspan=4 class="white"><b>Characters</b></td>
+				<td colspan=4 class="white"><b>Postacie — {{ current_server_label }}</b></td>
 			</tr>
 			<tr bgcolor="{{ config.darkborder }}">
-				<td width="62%"><B>Name</b></td>
-				<td width="30%"><B>Level</b></td>
+				<td width="62%"><B>Nazwa</b></td>
+				<td width="30%"><B>Poziom</b></td>
 				<td width="8%"><b>Status</b></td>
 				<td><b>&#160;</b></td>
 			</tr>
@@ -408,7 +408,7 @@
 							<tr>
 								<td>
 									<input type="hidden" name="name" value="{{ player.getName() }}"/>
-									{% set button_name = "View" %}
+									{% set button_name = "Pokaż" %}
 									{{ include('buttons.base.html.twig') }}
 								</td>
 							</tr>
@@ -420,6 +420,51 @@
 			{% endfor %}
 		</table>
 		<!-- CHARACTERS_LIST_END -->
+		{% if other_server_players is not empty %}
+		<!-- OTHER_SERVER_CHARACTERS -->
+		<br/>
+		<table border="0" cellspacing="1" cellpadding="4" width="100%">
+			<tr bgcolor="{{ config.vdarkborder }}" style="cursor: pointer;" onclick="var el=document.getElementById('otherServerRows');var arr=document.getElementById('otherServerArrow');if(el.style.display==='none'){el.style.display='';arr.textContent='▼';}else{el.style.display='none';arr.textContent='►';}">
+				<td colspan=4 class="white"><b><span id="otherServerArrow">►</span> Postacie — {{ other_server_label }}</b></td>
+			</tr>
+		</table>
+		<table border="0" cellspacing="1" cellpadding="4" width="100%" id="otherServerRows" style="display: none;">
+			<tr bgcolor="{{ config.darkborder }}">
+				<td width="62%"><B>Nazwa</b></td>
+				<td width="30%"><B>Poziom</b></td>
+				<td width="8%"><b>Status</b></td>
+				<td><b>&#160;</b></td>
+			</tr>
+			{% set j = 0 %}
+			{% for player in other_server_players %}
+				{% if not player.isHidden() and (config('characters')['deleted'] or not player.isDeleted()) %}
+				{% set j = j + 1 %}
+			<tr bgcolor="{{ getStyle(j) }}">
+				<td>
+					<nobr>{{ j }}.&#160;{{ player.getName() }}{% if player.isDeleted() %}<span style="color: red"> [DELETED]</span>{% endif %}</nobr>
+				</td>
+				<td>{{ player.getLevel() }} {{ player.getVocationName() }}</td>
+				<td>{% if player.isOnline() %}<b><span style="color: green">Online</span></b>{% endif %}</td>
+				<td>
+					<table border="0" cellspacing="0" cellpadding="0">
+						<form action="{{ getLink('characters') }}" method="post">
+							{{ csrf() }}
+							<tr>
+								<td>
+									<input type="hidden" name="name" value="{{ player.getName() }}"/>
+									{% set button_name = "Pokaż" %}
+									{{ include('buttons.base.html.twig') }}
+								</td>
+							</tr>
+						</form>
+					</table>
+				</td>
+			</tr>
+				{% endif %}
+			{% endfor %}
+		</table>
+		<!-- OTHER_SERVER_CHARACTERS_END -->
+		{% endif %}
 		{% endif %}
 		{{ hook(constant('HOOK_CHARACTERS_AFTER_CHARACTERS')) }}
 		{% if canEdit %}

@@ -4,7 +4,7 @@
 		<div class="NewsHeadlineDate">{{ date|date(setting('core.news_date_format')) }} - </div>
 		<div class="NewsHeadlineText">{{ title }}</div>
 		{% if setting('core.news_author') and author is not empty %}
-		<div class="NewsHeadlineAuthor"><b>Author: </b><i>{{ author }}</i></div>
+		<div class="NewsHeadlineAuthor"><b>{{ __('news_author') }}: </b><i>{{ author }}</i></div>
 		{% endif %}
 	</div>
 </div>
@@ -15,7 +15,7 @@
 	{% if comments is not null %}
 	<tr>
 		<td>
-			<div style="text-align: right; margin-right: 10px;"><a href="{{ comments }}">» Comment on this news</a></div>
+			<div style="text-align: right; margin-right: 10px;"><a href="{{ comments }}">» {{ __('news_comment_link') }}</a></div>
 		</td>
 	</tr>
 	{% endif %}

@@ -27,6 +27,7 @@
 #include <framework/core/resourcemanager.h>  // FIX-C2: g_resources.getWorkDir() for cacert.pem path
 #include <httplib.h>
 #include <iostream>
+#include <algorithm>
 #include <fstream>  // FIX35: std::ifstream for cacert.pem check
 #include <nlohmann/json.hpp>
 #include <string>
@@ -66,43 +67,33 @@ void LoginHttp::Logger(const auto& req, const auto& res) {
 
 // E10: setter launchToken — Lua woła http:setLaunchToken(token) przed httpLogin
 void LoginHttp::setLaunchToken(const std::string& token) {
+    // INS-CPP5: Walidacja formatu tokenu — max 512 znaków, tylko alfanumeryczne + _-.
+    if (token.size() > 512) {
+        std::cerr << "[LOGIN] WARNING: launchToken too long (" << token.size() << " chars), ignoring." << std::endl;
+        return;
+    }
+    if (!std::all_of(token.begin(), token.end(), [](unsigned char c) {
+            return std::isalnum(c) || c == '_' || c == '-' || c == '.';
+        })) {
+        std::cerr << "[LOGIN] WARNING: launchToken contains invalid characters, ignoring." << std::endl;
+        return;
+    }
     this->launchToken = token;
 }
 
 // FIX18: setter gameMode — Lua woła http:setGameMode(mode) przed httpLogin
 void LoginHttp::setGameMode(const std::string& mode) {
+    // INS-CPP6: Whitelist — tylko znane tryby gry
+    if (mode != "classic74" && mode != "modern" && !mode.empty()) {
+        std::cerr << "[LOGIN] WARNING: unknown gameMode '" << mode << "', ignoring." << std::endl;
+        return;
+    }
     this->gameMode = mode;
 }
 
-void LoginHttp::startHttpLogin(const std::string& host, const std::string& path,
-                               const uint16_t port, const std::string& email,
-                               const std::string& password) {
-    httplib::SSLClient cli(host, port);
-
-    cli.set_logger(
-        [this](const auto& req, const auto& res) { LoginHttp::Logger(req, res); });
-
-    // E10: launchToken dołączany do body logowania
-    json body = { {"email", email}, {"password", password}, {"stayloggedin", true}, {"type", "login"} };
-    if (!this->launchToken.empty()) {
-        body["launchToken"] = this->launchToken;
-    }
-    // FIX18: gameMode dołączany do body logowania
-    if (!this->gameMode.empty()) {
-        body["gameMode"] = this->gameMode;
-    }
-    const httplib::Headers headers = { {"User-Agent", "Mozilla/5.0"} };
-
-    if (auto res = cli.Post(path, headers, body.dump(1), "application/json")) {
-        if (res->status == 200) {
-            // FIX38: NIE logujemy body odpowiedzi — zawiera session keys
-            std::cout << "HTTPS sync login: status 200 OK" << std::endl;
-        }
-    } else {
-        const auto err = res.error();
-        std::cout << "HTTP error: " << to_string(err) << std::endl;
-    }
-}
+// INS-CPP1: startHttpLogin() usunięty — dead code.
+// Nigdy nie był bindowany do Lua, nie parsował response, brak TLS verify.
+// Jedyna ścieżka logowania to httpLogin() → loginHttpsJson() (z TLS) lub Emscripten fetch.
 
 std::string LoginHttp::getCharacterList() { return this->characters; }
 
@@ -160,7 +151,7 @@ void LoginHttp::httpLogin(const std::string& host, const std::string& path,
         [this, host, path, port, email, password, request_id] {
         emscripten_fetch_attr_t attr;
         emscripten_fetch_attr_init(&attr);
-        strcpy(attr.requestMethod, "POST");
+        strncpy(attr.requestMethod, "POST", sizeof(attr.requestMethod) - 1);
         static const char* const headers[] = {
             "Content-Type", "application/json; charset=utf-8",
             0,
@@ -228,6 +219,11 @@ httplib::Result LoginHttp::loginHttpsJson(const std::string& host,
                                           const std::string& password) {
     httplib::SSLClient client(host, port);
 
+    // INS-CPP2: Timeouty HTTP — zapobiegają zawieszeniu wątku na nieosiągalnym serwerze
+    client.set_connection_timeout(10, 0);   // 10s na nawiązanie połączenia
+    client.set_read_timeout(15, 0);         // 15s na odczyt odpowiedzi
+    client.set_write_timeout(10, 0);        // 10s na wysłanie requestu
+
     client.set_logger(
         [this](const auto& req, const auto& res) { LoginHttp::Logger(req, res); });
 
@@ -291,10 +287,22 @@ void LoginHttp::requestTicket(const std::string& host, const std::string& path,
     (void)g_asyncDispatcher.submit_task(
         [this, host, path, port, sessionKey, characterName, gameMode, worldName, request_id] {
         httplib::SSLClient client(host, port);
+        // INS-CPP2: Timeouty HTTP — zapobiegają zawieszeniu wątku
+        client.set_connection_timeout(10, 0);
+        client.set_read_timeout(15, 0);
+        client.set_write_timeout(10, 0);
         // FIX-C2: użyj dynamicznej ścieżki do cacert.pem
         std::string certPath = g_resources.getWorkDir() + "cacert.pem";
         client.set_ca_cert_path(certPath);
         client.enable_server_certificate_verification(true);  // TLS hard-fail
+
+        // INS-CPP7: Sprawdź czy cacert.pem istnieje (analogicznie do loginHttpsJson)
+        {
+            std::ifstream certCheck(certPath);
+            if (!certCheck.good()) {
+                std::cerr << "[TICKET] WARNING: cacert.pem not found at " << certPath << ". TLS connections will fail." << std::endl;
+            }
+        }
 
         const json body = {
             {"sessionKey", sessionKey},
@@ -334,7 +342,9 @@ void LoginHttp::requestTicket(const std::string& host, const std::string& path,
                 if (errJson.contains("errorMessage")) {
                     msg = errJson["errorMessage"].get<std::string>();
                 }
-            } catch (...) {}
+            } catch (...) {
+                g_logger.warning("Failed to parse ticket error JSON");
+            }
         } else {
             status = -1;
             msg = "Cannot connect to ticket server (HTTPS).";
@@ -351,7 +361,7 @@ void LoginHttp::requestTicket(const std::string& host, const std::string& path,
         [this, host, path, port, sessionKey, characterName, gameMode, worldName, request_id] {
         emscripten_fetch_attr_t attr;
         emscripten_fetch_attr_init(&attr);
-        strcpy(attr.requestMethod, "POST");
+        strncpy(attr.requestMethod, "POST", sizeof(attr.requestMethod) - 1);
         static const char* const headers[] = {
             "Content-Type", "application/json; charset=utf-8",
             0,
@@ -386,7 +396,9 @@ void LoginHttp::requestTicket(const std::string& host, const std::string& path,
                     });
                     return;
                 }
-            } catch (...) {}
+            } catch (...) {
+                g_logger.warning("Failed to parse ticket response JSON (emscripten)");
+            }
         }
 
         std::string msg = "Ticket request failed.";
@@ -435,6 +447,9 @@ bool LoginHttp::parseJsonResponse(const std::string& body) {
     }
 
     this->session = to_string(responseJson.at("session"));
+
+    // INS-CPP8: Wyczyść launchToken po udanym loginie — jednorazowe użycie
+    this->launchToken.clear();
 
     return true;
 }

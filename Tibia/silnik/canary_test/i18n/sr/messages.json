@@ -1,13 +1,13 @@
 {
-  "system.blessing.already": "[EN] You are already blessed.",
+  "system.blessing.already": "Већ сте благословени.",
   "system.blessing.received": "[EN] You received the remaining {1} blesses.",
   "system.experience.gained": "[EN] You gained {1} experience points.",
   "system.item.received": "[EN] You gained a {1}.",
   "system.mission.points": "[EN] You earned {1} point(s) on the {2} mission.",
   "system.mount.received": "[EN] Congratulations you received the {1} mount.",
   "system.stash.count": "[EN] Your supply stash contains {1} items.",
-  "system.store.check_inbox": "[EN] Please make sure you have free slots in your store inbox.",
+  "system.store.check_inbox": "Уверите се да имате слободна места у пријемном сандучету продавнице.",
   "system.trade.bought": "[EN] Bought {1}x {2} for {3} gold.",
   "system.trade.sold": "[EN] Sold {1}x {2} for {3} gold.",
-  "system.venture.decay": "[EN] Venture the path of decay!"
+  "system.venture.decay": "Крените путем пропадања!"
 }

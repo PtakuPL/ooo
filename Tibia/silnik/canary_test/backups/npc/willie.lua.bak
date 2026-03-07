@@ -282,7 +282,7 @@ bananaKeyword:addChildKeyword({ "" }, StdModule.say, {
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.willie.walkaway_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.willie.farewell_msg_1")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Ya take a good look.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.willie.sendtrade_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.willie.greet_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

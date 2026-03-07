@@ -12,7 +12,7 @@ use MyAAC\Cache\Cache;
 use MyAAC\Models\Gallery as ModelsGallery;
 
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Gallery';
+$title = __('menu_gallery');
 
 $canEdit = hasFlag(FLAG_CONTENT_GALLERY) || superAdmin();
 if($canEdit) {

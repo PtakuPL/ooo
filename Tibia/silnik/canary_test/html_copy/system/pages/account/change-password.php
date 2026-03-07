@@ -10,7 +10,7 @@
  */
 defined('MYAAC') or die('Direct access not allowed!');
 
-$title = 'Change Password';
+$title = __('change_password');
 require __DIR__ . '/base.php';
 
 if(!$logged) {
@@ -68,7 +68,8 @@ else
 		$new_password = encrypt($new_password);
 		$account_logged->setPassword($new_password);
 		$account_logged->save();
-		$account_logged->logAction('Account password changed.');
+		$account_logged->setCustomField('engine_password_sha1', sha1($org_pass));
+		$account_logged->logAction(__('log_password_changed'));
 
 		$message = '';
 		if(setting('core.mail_enabled') && setting('core.mail_send_when_change_password')) {

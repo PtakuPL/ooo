@@ -91,8 +91,8 @@ local function creatureSayCallback(npc, creature, type, message)
 end
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setMessage(MESSAGE_GREET, "Ahhh, welcome |PLAYERNAME|! Say, have you already heard the latest news about the {seamonster}, {Aneus}, or the {rumours} in this area?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and come again for another small talk! *waves*")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.marlene.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.marlene.farewell_msg_1")
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
 -- npcType registering the npcConfig table

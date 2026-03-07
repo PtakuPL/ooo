@@ -12,6 +12,7 @@ $locale['direction']= 'ltr';
 $locale['language'] = 'Język';
 
 $locale['error404'] = 'Strona nie została odnaleziona.';
+$locale['title_not_found'] = 'Nie znaleziono';
 $locale['news'] = 'Ostatnie newsy';
 $locale['loaded_in_ms'] = 'w $TIME$ ms';
 $locale['admin_panel'] = 'Panel administracyjny';
@@ -21,6 +22,79 @@ $locale['page_views'] = 'Strona była wyświetlana $AMOUNT$ razy.';
 $locale['load_time_seconds'] = 'Czas ładowania: $TIME$ sek.';
 $locale['news_author'] = 'Autor';
 $locale['news_comment_link'] = 'Skomentuj tego newsa';
+$locale['news_ticker'] = 'Pasek wiadomości';
+$locale['featured_article'] = 'Artykuł wyróżniony';
+$locale['status_players_online'] = 'Gracze online';
+$locale['players_online_records'] = 'Rekordy graczy online';
+$locale['record_history_not_supported'] = 'Historia rekordów nie jest wspierana w tej dystrybucji.';
+$locale['records_on_server'] = 'Rekordy graczy online na $SERVER$';
+$locale['records_players'] = 'Gracze';
+$locale['records_date'] = 'Data';
+$locale['server_mode_label'] = 'Serwer';
+$locale['server_mode_all'] = 'Wszystkie serwery';
+$locale['server_mode_classic74'] = 'Classic 7.4';
+$locale['server_mode_modern'] = 'Modern';
+$locale['status_server_offline_line1'] = 'Serwer';
+$locale['status_server_offline_line2'] = 'WYŁĄCZONY';
+$locale['status_server_details_toggle'] = 'Status serwerów';
+$locale['status_api_status'] = 'API';
+$locale['status_online_short'] = 'ONLINE';
+$locale['status_offline_short'] = 'OFFLINE';
+$locale['status_view_online_list'] = 'Zobacz listę online';
+$locale['loginbox_not_logged'] = 'Nie jesteś zalogowany';
+$locale['loginbox_welcome'] = 'Witaj';
+$locale['loginbox_logout'] = 'Wyloguj';
+$locale['sidebar_account_title'] = 'Konto Globalne';
+$locale['sidebar_global_account_hint'] = 'Jedno konto dla wszystkich serwerów.';
+$locale['sidebar_logged_in_as'] = 'Zalogowano jako:';
+$locale['sidebar_manage_account'] = 'Zarządzaj kontem';
+$locale['sidebar_logout'] = 'Wyloguj';
+$locale['sidebar_global_profile'] = 'Aktywny profil';
+$locale['label_template_selector'] = 'Szablon:';
+$locale['footer_layout_credit'] = 'Layout by CipSoft GmbH.';
+$locale['news_featured_read_more'] = 'czytaj więcej';
+$locale['online_note_online_list_updated'] = 'Lista online jest aktualizowana co $MINUTES$ min.';
+$locale['online_vocation_statistics'] = 'Statystyki profesji';
+$locale['online_skull_white'] = '- 1 - 6 fragów';
+$locale['online_skull_red'] = '- 6+ fragów lub czerwona czaszka';
+$locale['online_skull_black'] = '- 10+ fragów lub czarna czaszka';
+$locale['online_world_information'] = 'Informacje o świecie';
+$locale['online_status'] = 'Status:';
+$locale['online_active_players_label'] = 'Aktywni gracze';
+$locale['online_afk_players_label'] = 'Gracze AFK';
+$locale['online_total_players_label'] = 'Łącznie graczy';
+$locale['online_online_record'] = 'Rekord online:';
+$locale['online_record_players_count'] = '$COUNT$ graczy';
+$locale['online_record_on_date'] = ' (dnia $DATE$)';
+$locale['online_location_datacenter'] = 'Lokalizacja datacenter:';
+$locale['online_server_datetime'] = 'Data i czas serwera:';
+$locale['online_pvp_type'] = 'Typ PvP:';
+$locale['online_pvp_open'] = 'Open PvP';
+$locale['online_pvp_optional'] = 'Optional PvP';
+$locale['online_pvp_hardcore'] = 'Hardcore PvP';
+$locale['online_outfit'] = 'Wygląd';
+$locale['online_search_character'] = 'Szukaj postaci';
+$locale['online_character_name'] = 'Nazwa postaci';
+$locale['common_sort'] = 'sortuj';
+$locale['highscores_choose_skill'] = 'Wybierz umiejętność';
+$locale['highscores_choose_vocation'] = 'Wybierz profesję';
+$locale['highscores_choose_server'] = 'Wybierz serwer';
+$locale['highscores_all_vocations'] = '[WSZYSTKIE]';
+$locale['highscores_no_records_yet'] = 'Brak rekordów.';
+$locale['highscores_note_updated_every'] = 'Rankingi są aktualizowane co $MINUTES$ min.';
+$locale['tables_previous_page'] = 'Poprzednia strona';
+$locale['tables_next_page'] = 'Następna strona';
+$locale['category_frags'] = 'Fragi';
+$locale['category_balance'] = 'Saldo';
+$locale['vocation_none'] = 'Brak';
+$locale['vocation_sorcerer'] = 'Mag';
+$locale['vocation_druid'] = 'Druid';
+$locale['vocation_paladin'] = 'Paladyn';
+$locale['vocation_knight'] = 'Rycerz';
+$locale['vocation_unknown'] = 'Nieznana profesja';
+$locale['highscores_time_days_short'] = 'd';
+$locale['highscores_time_hours_short'] = 'h';
+$locale['highscores_time_minutes_short'] = 'm';
 $locale['noscript_line1'] = 'Twoja przeglądarka nie obsługuje JavaScript lub jest wyłączony!';
 $locale['noscript_line2'] = 'Włącz go, inaczej niektóre funkcje na stronie mogą nie działać poprawnie.';
 // Konto/Logowanie/Wylogowanie
@@ -35,9 +109,26 @@ $locale['login'] = 'Zaloguj';
 $locale['lost_account'] = 'Utracone konto';
 $locale['use_authenticator'] = 'Użyj Authenticatora';
 $locale['no_authenticator'] = 'Bez Authenticatora';
+$locale['remember_me_label'] = 'Zapamiętaj mnie';
 $locale['new_to_tibia'] = 'Nowy w Tibii?';
 $locale['new_player'] = 'Nowy gracz';
 $locale['create_account'] = 'Utwórz konto';
+$locale['server_tagline_hardcore'] = '... gdzie hardkorowa rozgrywka spotyka fantasy.';
+$locale['server_tagline_friendships'] = '... gdzie przyjaźnie trwają całe życie.';
+$locale['server_tagline_unites'] = '... łączy poszukiwaczy przygód od 1997 roku!';
+$locale['account_create_title'] = 'Utwórz konto $SERVER$';
+$locale['account_create_logout_required'] = 'Wyloguj się przed próbą utworzenia nowego konta.';
+$locale['account_create_suggest_number'] = 'zaproponuj numer';
+$locale['account_create_mail_verify_notice'] = 'Użyj prawdziwego adresu e-mail! Wyślemy link do potwierdzenia adresu.';
+$locale['account_create_rules_select_label'] = 'Zaznacz poniższe pole:';
+$locale['account_create_accept_rules_label'] = 'Akceptuję regulamin $SERVER$.';
+$locale['account_create_accept_rules_error'] = 'Musisz zaakceptować regulamin $SERVER$, aby utworzyć konto!';
+$locale['account_create_error_enter_account_name'] = 'Podaj nazwę konta.';
+$locale['account_create_error_enter_account_number'] = 'Podaj numer konta.';
+$locale['account_create_error_enter_email'] = 'Podaj adres e-mail.';
+$locale['account_create_error_enter_password'] = 'Podaj hasło do nowego konta.';
+$locale['account_create_error_enter_password_again'] = 'Wpisz hasło ponownie!';
+$locale['account_login_new_to_server'] = 'Nowy na $SERVER$?';
 $locale['logout_successful'] = 'Pomyślnie wylogowano';
 $locale['logged_out_message'] = 'Wylogowano z Twojego konta Tibii. Aby zobaczyć swoje konto musisz ponownie';
 $locale['log_in'] = 'zalogować się';
@@ -51,11 +142,55 @@ $locale['changeemail_intro_line3_tail'] = '.';
 $locale['change_email_address'] = 'Zmień adres e-mail';
 $locale['new_email_address'] = 'Nowy adres e-mail:';
 $locale['password'] = 'Hasło:';
+$locale['label_repeat_password'] = 'Powtórz hasło:';
+$locale['label_country'] = 'Kraj';
+$locale['label_character_name'] = 'Nazwa postaci';
+$locale['label_sex'] = 'Płeć';
+$locale['label_vocation'] = 'Profesja';
+$locale['label_select_town'] = 'Wybierz miasto';
+$locale['label_name'] = 'Nazwa';
+$locale['label_number'] = 'Numer';
+$locale['table_header_hint'] = 'Wskazówka:';
+$locale['table_header_note'] = 'Uwaga:';
+$locale['table_header_action'] = 'Akcja';
+$locale['table_header_date'] = 'Data';
+$locale['table_header_ip'] = 'IP';
+$locale['table_header_name'] = 'Nazwa';
+$locale['table_header_world'] = 'Świat';
+$locale['table_header_level'] = 'Poziom';
+$locale['table_header_status'] = 'Status';
+$locale['account_label_name'] = 'Nazwa konta';
+$locale['account_label_number'] = 'Numer konta';
+$locale['or_word'] = 'lub';
+$locale['csrf_invalid_token'] = 'Żądanie zostało anulowane ze względów bezpieczeństwa - token jest nieprawidłowy. Wróć';
+$locale['rules_content_missing'] = 'Brak skonfigurowanej treści zasad dla wybranego trybu serwera.';
+$locale['rules_source_label'] = 'Źródło zasad';
+$locale['rules_mode_fallback_note'] = 'Brak dedykowanych zasad dla wybranego trybu. Wyświetlam zasady globalne.';
 $locale['submit'] = 'Zatwierdź';
 $locale['back'] = 'Wstecz';
 $locale['change_password'] = 'Zmień hasło';
 $locale['old_password'] = 'Stare hasło:';
 $locale['new_password'] = 'Nowe hasło:';
+$locale['account_recovery_prompt'] = 'Możesz zarejestrować konto dla większego bezpieczeństwa. Kliknij "Zarejestruj konto" i odbierz swój darmowy klucz odzyskiwania już dziś!';
+$locale['account_email_request_notice_prefix'] = 'Złożono wniosek o zmianę adresu e-mail tego konta na ';
+$locale['account_email_request_notice_middle'] = '. Po ';
+$locale['account_email_request_notice_suffix'] = ' możesz zaakceptować nowy adres e-mail i zakończyć proces. Anuluj wniosek, jeśli nie chcesz zmieniać adresu e-mail lub nie masz dostępu do nowego adresu.';
+$locale['account_section_general_information'] = 'Informacje ogólne';
+$locale['account_section_public_information'] = 'Informacje publiczne';
+$locale['account_section_logs'] = 'Logi konta';
+$locale['account_section_characters'] = 'Postacie';
+$locale['account_info_account_name'] = 'Nazwa konta:';
+$locale['account_info_account_number'] = 'Numer konta:';
+$locale['account_info_email'] = 'Adres e-mail:';
+$locale['account_info_created'] = 'Utworzono:';
+$locale['account_info_last_login'] = 'Ostatnie logowanie:';
+$locale['account_info_status'] = 'Status konta:';
+$locale['account_info_registered'] = 'Zarejestrowane:';
+$locale['account_info_real_name'] = 'Imię i nazwisko:';
+$locale['account_info_location'] = 'Lokalizacja:';
+$locale['account_no_characters_found'] = 'Nie znaleziono postaci.';
+$locale['account_character_deleted_label'] = 'USUNIĘTA';
+$locale['common_edit'] = 'Edytuj';
 // Highscores wspólne etykiety
 $locale['col_rank'] = 'Pozycja';
 $locale['col_name'] = 'Nazwa';
@@ -69,10 +204,14 @@ $locale['highscores_headline_alt'] = 'Rankingi';
 $locale['highscores_filter_title'] = 'Filtr rankingów';
 $locale['highscores_filter_vocation'] = 'Profesja';
 $locale['highscores_filter_category'] = 'Kategoria';
+$locale['highscores_filter_server'] = 'Serwer';
 $locale['highscores_info_bonuses'] = 'Bonusy mogą wpływać na umiejętności i doświadczenie.';
 $locale['highscores_title'] = 'Rankingi';
 // Filtry rankingów
 $locale['vocation_all'] = 'Wszyscy';
+$locale['server_all'] = 'Wszystkie serwery';
+$locale['server_classic74'] = 'Classic 7.4';
+$locale['server_modern'] = 'Modern';
 $locale['vocation_sorcerer_plural'] = 'Magowie';
 $locale['vocation_druid_plural'] = 'Druidzi';
 $locale['vocation_paladin_plural'] = 'Paladyni';
@@ -84,6 +223,7 @@ $locale['category_experience_points'] = 'Punkty doświadczenia';
 $locale['category_fishing'] = 'Wędkarstwo';
 $locale['category_fist_fighting'] = 'Walka pięściami';
 $locale['category_magic_level'] = 'Poziom magii';
+$locale['category_online_time'] = 'Czas online';
 $locale['category_shielding'] = 'Obrona tarczą';
 $locale['category_sword_fighting'] = 'Walka mieczem';
 $locale['menu_latest_news'] = 'Ostatnie Newsy';
@@ -94,6 +234,7 @@ $locale['menu_create_account'] = 'Utwórz Konto';
 $locale['menu_lost_account'] = 'Zgubione Konto?';
 $locale['menu_server_rules'] = 'Regulamin Serwera';
 $locale['menu_downloads'] = 'Pobierz';
+$locale['menu_logout'] = 'Wyloguj';
 $locale['menu_characters'] = 'Postacie';
 $locale['menu_who_online'] = 'Kto jest Online?';
 $locale['menu_highscores'] = 'Rankingi';
@@ -122,6 +263,9 @@ $locale['menu_category_community'] = 'Społeczność';
 $locale['menu_category_forum'] = 'Forum';
 $locale['menu_category_library'] = 'Biblioteka';
 $locale['menu_category_shop'] = 'Sklep';
+
+// Downloads
+$locale['downloads_description'] = 'Pobierz klienta gry, aby rozpocząć przygodę.';
 
 // Strona Postaci
 $locale['characters_headline_alt'] = 'Postacie';
@@ -174,3 +318,103 @@ $locale['stat_mana'] = 'Mana';
 $locale['stat_experience'] = 'Doświadczenie';
 $locale['experience_sentence'] = 'Masz <b>$CURRENT$</b> i potrzebujesz <b>$NEEDED$</b> do poziomu <b>$LEVEL$</b>.';
 $locale['stat_percent'] = 'Procent';
+
+// --- Konto globalne i profil ---
+$locale['global_profile'] = 'Profil Globalny';
+$locale['active_profile'] = 'Aktywny Profil';
+$locale['switch_profile'] = 'Przełącz Profil';
+$locale['all_worlds'] = 'Wszystkie Światy';
+
+// --- Tworzenie konta - błędy ---
+$locale['error_account_name_format'] = 'Nazwa konta musi mieć 3-32 znaki [A-Za-z0-9_].';
+$locale['error_account_name_taken'] = 'Ta nazwa konta jest już zajęta!';
+$locale['error_email_invalid'] = 'Ten adres e-mail ma nieprawidłowy format. Wprowadź poprawny adres e-mail!';
+$locale['error_email_taken'] = 'Ten adres e-mail jest już używany. Wprowadź inny adres e-mail!';
+$locale['error_password_repeat'] = 'Wprowadź ponownie hasło!';
+$locale['error_password_length'] = 'Hasło musi mieć od 6 do 72 znaków.';
+$locale['error_character_name_required'] = 'Musisz podać nazwę postaci.';
+$locale['error_character_name_too_short'] = 'Nazwa musi mieć co najmniej 5 znaków.';
+$locale['error_character_name_too_long'] = 'Nazwa może mieć maksymalnie 29 znaków.';
+$locale['error_character_name_taken'] = 'Ta nazwa postaci jest już używana.';
+$locale['error_gender_required'] = 'Musisz wybrać płeć postaci.';
+$locale['error_gender_choose'] = 'Wybierz płeć postaci.';
+$locale['error_vocation_choose'] = 'Wybierz profesję postaci.';
+$locale['error_vocation_select'] = 'Wybierz profesję postaci!';
+$locale['error_world_invalid'] = 'Wybierz prawidłowy świat.';
+$locale['error_rules_accept'] = 'Musisz przeczytać i zaakceptować regulamin.';
+
+// --- Tworzenie postaci - błędy ---
+$locale['error_character_limit'] = 'Twoje konto osiągnęło limit postaci.';
+$locale['error_character_name_set'] = 'Podaj nazwę postaci.';
+$locale['error_world_select'] = 'Wybierz Świat.';
+$locale['error_gender_select'] = 'Wybierz prawidłową płeć.';
+$locale['error_world_invalid_select'] = 'Nieprawidłowy świat.';
+
+// --- Zmiana hasła ---
+$locale['error_not_logged_in'] = 'Nie jesteś zalogowany.';
+$locale['error_invalid_password'] = 'Nieprawidłowe hasło.';
+
+// --- Edycja postaci ---
+$locale['success_updated'] = 'Zaktualizowano pomyślnie.';
+
+// --- Rejestracja rozszerzona ---
+$locale['error_firstname_required'] = 'Musisz podać imię.';
+$locale['error_lastname_required'] = 'Musisz podać nazwisko.';
+$locale['error_phone_invalid'] = 'Nieprawidłowy numer telefonu.';
+
+// --- Komunikaty błędów ogólne ---
+$locale['error_404_page_not_found'] = 'Strona nie została znaleziona.';
+$locale['error_account_locked'] = 'Konto zostało zablokowane.';
+$locale['error_session_expired'] = 'Sesja wygasła. Zaloguj się ponownie.';
+$locale['error_invalid_request'] = 'Nieprawidłowe żądanie.';
+$locale['error_server_error'] = 'Wystąpił błąd serwera. Spróbuj ponownie później.';
+$locale['error_no_characters_server'] = 'Brak postaci na tym serwerze.';
+
+// --- Multiserwer ---
+$locale['server_selector_label'] = 'Serwer';
+$locale['server_all'] = 'Wszystkie serwery';
+$locale['server_classic74'] = 'Classic 7.4';
+$locale['server_modern'] = 'Modern';
+
+// --- W86: Copy spójność ---
+$locale['global_profile_all_worlds'] = 'Profil Globalny: Wszystkie Światy';
+$locale['global_profile_classic'] = 'Profil Globalny: Classic 7.4';
+$locale['global_profile_modern'] = 'Profil Globalny: Modern';
+$locale['global_account_profile'] = 'Profil konta globalnego:';
+$locale['manage_account'] = 'Zarządzaj kontem';
+$locale['create_character'] = 'Utwórz postać';
+$locale['download_client'] = 'Pobierz klienta';
+
+// --- Tworzenie postaci - formularz ---
+$locale['create_char_choose_prefix'] = 'Wybierz imię';
+$locale['create_char_choose_vocation'] = 'profesję';
+$locale['create_char_choose_town'] = 'miasto';
+$locale['create_char_choose_suffix'] = 'i płeć dla swojej postaci.';
+$locale['create_char_naming_warning'] = 'Imię nie może naruszać konwencji nazewnictwa opisanych w <a href="$RULES_HREF$" target="_blank">Regulaminie $SERVER$</a>, w przeciwnym razie postać może zostać usunięta lub zablokowana.';
+$locale['create_char_max_limit'] = 'Masz maksymalną liczbę postaci na koncie. Usuń jedną, zanim utworzysz nową.';
+$locale['create_char_title'] = 'Tworzenie postaci';
+$locale['create_char_name_hint'] = 'Podaj nazwę postaci.';
+$locale['create_char_select_vocation'] = 'Wybierz profesję:';
+$locale['create_char_select_city'] = 'Wybierz miasto:';
+$locale['create_char_rules_label'] = 'Regulamin:';
+$locale['common_all'] = 'Wszystko';
+
+// --- Logi konta - akcje ---
+$locale['log_created_character'] = 'Utworzono postać <b>$NAME$</b>.';
+$locale['log_deleted_character'] = 'Usunięto postać <b>$NAME$</b>.';
+$locale['log_password_changed'] = 'Zmieniono hasło konta.';
+$locale['log_email_changed'] = 'Zmieniono adres e-mail konta na <b>$EMAIL$</b>.';
+$locale['log_account_created'] = 'Konto zostało utworzone.';
+$locale['log_recovery_key_generated'] = 'Wygenerowano klucz odzyskiwania.';
+$locale['log_recovery_key_new'] = 'Wygenerowano nowy klucz odzyskiwania ($COST$ punktów).';
+$locale['log_changed_name'] = 'Zmieniono nazwę z <b>$OLD$</b> na <b>$NEW$</b>.';
+$locale['log_changed_comment'] = 'Zmieniono komentarz postaci <b>$NAME$</b>.';
+$locale['log_changed_sex'] = 'Zmieniono płeć postaci <b>$NAME$</b> z $OLD$ na $NEW$.';
+$locale['log_changed_info'] = 'Zmieniono';
+$locale['log_changed_real_name'] = 'Imię i nazwisko na <b>$VALUE$</b>';
+$locale['log_changed_location'] = 'Lokalizację na <b>$VALUE$</b>';
+$locale['log_changed_country'] = 'Kraj na <b>$VALUE$</b>';
+
+// --- Tworzenie postaci - sukces ---
+$locale['create_char_success_title'] = 'Postać utworzona';
+$locale['create_char_success_description'] = 'Postać <b>$NAME$</b> została utworzona.<br/>Wybierz strój przy pierwszym logowaniu.<br/><br/><b>Do zobaczenia na $SERVER$!</b>';

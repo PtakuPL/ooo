@@ -1,0 +1,25 @@
+<div style="margin-bottom: 10px; padding: 6px 10px; background: #efefef; border: 1px solid #bfbfbf;">
+	<strong>{{ __('server_mode_label') }}:</strong>
+	{% for tab in tabs %}
+		{% if tab.mode == mode %}
+			<span style="font-weight: bold; margin-left: 8px;">{{ tab.label }}</span>
+		{% else %}
+			<a href="{{ tab.link }}" style="margin-left: 8px;">{{ tab.label }}</a>
+		{% endif %}
+	{% endfor %}
+</div>
+
+{% if fallback_used %}
+	<p><small>{{ __('rules_mode_fallback_note') }}</small></p>
+{% endif %}
+
+{% if rules_missing %}
+	<p>{{ __('rules_content_missing') }}</p>
+{% else %}
+	{{ rules_content|raw }}
+{% endif %}
+
+{% if rules_source is not null %}
+	<p><small>{{ __('rules_source_label') }}: <code>{{ rules_source }}</code></small></p>
+{% endif %}
+

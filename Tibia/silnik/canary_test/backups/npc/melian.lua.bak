@@ -52,7 +52,7 @@ end
 
 -- Travel
 local function addTravelKeyword(keyword, text, cost, destination)
-	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.melian.stdmod_1" .. text .. " for |TRAVELCOST|?", cost = cost, discount = "postman" })
+	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.melian.stdmod_1", i18nArgs = { text }, cost = cost, discount = "postman" })
 	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, cost = cost, discount = "postman", destination = destination })
 	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.melian.stdmod_2", reset = true })
 end
@@ -91,9 +91,9 @@ keywordHandler:addKeyword({ "continent" }, StdModule.say, { npcHandler = npcHand
 keywordHandler:addKeyword({ "femur" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.melian.stdmod_22" })
 keywordHandler:addKeyword({ "time" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.melian.stdmod_23" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings, traveller |PLAYERNAME|. Where do you want me to {fly} you?")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.melian.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.melian.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.melian.walkaway_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 

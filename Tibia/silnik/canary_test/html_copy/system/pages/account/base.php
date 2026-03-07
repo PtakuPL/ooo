@@ -12,20 +12,9 @@ defined('MYAAC') or die('Direct access not allowed!');
 
 if(!$logged)
 {
-	$title = 'Login';
-
-	if(!empty($errors))
-		$twig->display('error_box.html.twig', array('errors' => $errors));
-
-	$twig->display('account.login.html.twig', array(
-		'redirect' => $_REQUEST['redirect'] ?? null,
-		'account' => USE_ACCOUNT_NAME ? 'Name' : 'Number',
-		'account_login_by' => getAccountLoginByLabel(),
-		'error' => $errors[0] ?? null,
-		'errors' => $errors ?? [],
-	));
-
-	return;
+	// Redirect to RedDAXE global login instead of showing per-server MyAAC login form
+	header('Location: /reddaxe/account-login.php?source=tibiawww', true, 302);
+	exit;
 }
 else {
 	$show_form = true;

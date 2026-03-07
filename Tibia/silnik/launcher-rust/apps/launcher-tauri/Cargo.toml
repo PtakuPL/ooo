@@ -17,6 +17,7 @@ tracing.workspace = true
 tracing-subscriber.workspace = true
 uuid.workspace = true
 semver.workspace = true
+fs2 = "0.4"
 tauri = { version = "2", features = ["devtools"] }
 tauri-build = { version = "2", features = [] }
 tauri-plugin-shell = "2"

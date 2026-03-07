@@ -9,7 +9,7 @@
  * @link      https://my-aac.org
  */
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Polls';
+$title = __('menu_polls');
 
 /* Polls System By Averatec from pervera.pl & otland.net */
 

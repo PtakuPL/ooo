@@ -192,6 +192,40 @@ body {
   flex-wrap: wrap;
 }
 
+.session-sync-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  padding: 12px 14px;
+}
+
+.session-input {
+  width: 100%;
+  border: 1px solid var(--bg-card);
+  border-radius: var(--border-radius);
+  background: var(--bg-primary);
+  color: var(--text);
+  padding: 10px 12px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.session-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.2);
+}
+
+.login-status-ok {
+  color: var(--success);
+}
+
+.login-status-error {
+  color: var(--error);
+}
+
 .btn {
   padding: 12px 24px;
   border: none;

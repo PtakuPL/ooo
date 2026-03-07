@@ -48,13 +48,13 @@
 			eventId = 0;
 		}
 
-		if(document.getElementById("account_input").value == "")
-		{
-			$('#account_error').html('Please enter account {% if constant('USE_ACCOUNT_NAME') %}name{% else %}number{% endif %}.');
-			$('#account_indicator').attr('src', 'images/global/general/nok.gif');
-			$('#account_indicator').show();
-			return;
-		}
+			if(document.getElementById("account_input").value == "")
+			{
+				$('#account_error').html('{% if constant('USE_ACCOUNT_NAME') %}{{ __('account_create_error_enter_account_name')|e('js') }}{% else %}{{ __('account_create_error_enter_account_number')|e('js') }}{% endif %}');
+				$('#account_indicator').attr('src', 'images/global/general/nok.gif');
+				$('#account_indicator').show();
+				return;
+			}
 
 		//anti flood
 		var date = new Date;
@@ -96,13 +96,13 @@
 			eventId = 0;
 		}
 
-		if(document.getElementById("email").value == "")
-		{
-			$('#email_error').html('Please enter e-mail.');
-			$('#email_indicator').attr('src', 'images/global/general/nok.gif');
-			$('#email_indicator').show();
-			return;
-		}
+			if(document.getElementById("email").value == "")
+			{
+				$('#email_error').html('{{ __('account_create_error_enter_email')|e('js') }}');
+				$('#email_indicator').attr('src', 'images/global/general/nok.gif');
+				$('#email_indicator').show();
+				return;
+			}
 
 		//anti flood
 		var date = new Date;
@@ -144,21 +144,21 @@
 			eventId = 0;
 		}
 
-		if(document.getElementById("password").value == "")
-		{
-			$('#password_error').html('Please enter the password for your new account.');
-			$('#password_indicator').attr('src', 'images/global/general/nok.gif');
-			$('#password_indicator').show();
-			return;
-		}
+			if(document.getElementById("password").value == "")
+			{
+				$('#password_error').html('{{ __('account_create_error_enter_password')|e('js') }}');
+				$('#password_indicator').attr('src', 'images/global/general/nok.gif');
+				$('#password_indicator').show();
+				return;
+			}
 
-		if(document.getElementById("password_confirm").value == "")
-		{
-			$('#password_confirm_error').html('Please enter the password again!');
-			$('#password_confirm_indicator').attr('src', 'images/global/general/nok.gif');
-			$('#password_confirm_indicator').show();
-			return;
-		}
+			if(document.getElementById("password_confirm").value == "")
+			{
+				$('#password_confirm_error').html('{{ __('account_create_error_enter_password_again')|e('js') }}');
+				$('#password_confirm_indicator').attr('src', 'images/global/general/nok.gif');
+				$('#password_confirm_indicator').show();
+				return;
+			}
 
 		//anti flood
 		var date = new Date;

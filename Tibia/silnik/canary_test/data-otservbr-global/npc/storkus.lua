@@ -65,7 +65,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.StorkusVampiredust, 0)
 			end
 			if player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.StorkusVampiredust) < 20 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.storkus.say_1", { player:getItemCount(5905) })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.storkus.say_23", { player:getItemCount(5905) })
 				npcHandler:setTopic(playerId, 1)
 			elseif player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.StorkusVampiredust) == 20 then
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.storkus.say_2")
@@ -125,7 +125,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.StorkusVampiredust, player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.StorkusVampiredust) + count)
 			player:removeItem(5905, count)
 
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.storkus.say_2", { count, (20 - player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.StorkusVampiredust)) == 0 and "Ask me for a {mission} to continue your quest." or ("Ye' need to bring " .. (20 - player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.StorkusVampiredust)) .. " more.") })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.storkus.say_24", { count, (20 - player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.StorkusVampiredust)) == 0 and "Ask me for a {mission} to continue your quest." or ("Ye' need to bring " .. (20 - player:getStorageValue(Storage.Quest.U8_2.TheInquisitionQuest.StorkusVampiredust)) .. " more.") })
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeItem(8192, 1) then

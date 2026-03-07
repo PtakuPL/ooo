@@ -34,14 +34,14 @@
 <form action="{{ getLink('spells') }}" method="post">
 	<table border="0" cellspacing="1" cellpadding="4" width="100%">
 		<tr bgcolor="{{ config.vdarkborder }}">
-			<td class="white"><b>Spell Search</b></td>
+			<td class="white"><b>Wyszukiwanie czarów</b></td>
 		</tr>
 		<tr bgcolor="{{ config.darkborder }}">
 			<td>
 				<table border="0" cellpadding="1">
 					<tr>
-						<td>Only for vocation: <select name="vocation_id">
-								<option value="all" {% if post_vocation_id == 'all' %} selected{% endif %}>All</option>
+						<td>Tylko dla profesji: <select name="vocation_id">
+								<option value="all" {% if post_vocation_id == 'all' %} selected{% endif %}>Wszystkie</option>
 								{% for id, vocation in config.vocations %}
 									<option value="{{ id }}"{% if id == post_vocation_id and post_vocation_id != "all" and post_vocation_id != '' %} selected{% endif %}>{{ vocation }}</option>
 								{% endfor %}
@@ -60,21 +60,21 @@
 
 <div class="ts_Spells">
 	<input type="radio" name="ts_Spells" id="tab_instant" aria-controls="instant" checked>
-	<label for="tab_instant" class="white">Instant</label>
+	<label for="tab_instant" class="white">Natychmiastowe</label>
 
 	<input type="radio" name="ts_Spells" id="tab_conjure" aria-controls="conjure">
-	<label for="tab_conjure" class="white">Conjure</label>
+	<label for="tab_conjure" class="white">Przywoływanie</label>
 
 	<input type="radio" name="ts_Spells" id="tab_rune" aria-controls="rune">
-	<label for="tab_rune" class="white">Rune</label>
+	<label for="tab_rune" class="white">Runowe</label>
 
 	<div class="tab-panels">
 		<section id="instant" class="tab-panel">
 			<table id="tb_instantSpells">
 				<thead>
-				<th>Name</th>
-				<th>Words</th>
-				<th>Level</th>
+				<th>Nazwa</th>
+				<th>Słowa</th>
+				<th>Poziom</th>
 				<th>Mana</th>
 				<th>Vocations</th>
 				</thead>
@@ -106,11 +106,11 @@
 		<section id="conjure" class="tab-panel">
 			<table id="tb_conjureSpells">
 				<thead>
-				<th>Name</th>
-				<th>Words</th>
-				<th>Level</th>
+				<th>Nazwa</th>
+				<th>Słowa</th>
+				<th>Poziom</th>
 				<th>Mana</th>
-				<th>Soul</th>
+				<th>Dusza</th>
 				<th>Item</th>
 				<th>Reagent</th>
 				<th>Vocations</th>
@@ -156,8 +156,8 @@
 		<section id="rune" class="tab-panel">
 			<table id="tb_runeSpells">
 				<thead>
-				<th>Name</th>
-				<th>Level</th>
+				<th>Nazwa</th>
+				<th>Poziom</th>
 				<th>Magic Level</th>
 				<th>Item</th>
 				<th>Vocations</th>

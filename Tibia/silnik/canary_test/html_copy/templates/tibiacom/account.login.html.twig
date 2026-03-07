@@ -7,13 +7,13 @@
 	{% endif %}
 
 	<div class="TableContainer" >
-		<div class="CaptionContainer"  data-i18n="text.account_login">
-			<div class="CaptionInnerContainer"  data-i18n="text.account_login">
+		<div class="CaptionContainer">
+			<div class="CaptionInnerContainer">
 				<span class="CaptionEdgeLeftTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);" ></span>
 				<span class="CaptionEdgeRightTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);" ></span>
 				<span class="CaptionBorderTop" style="background-image:url({{ template_path }}/images/global/content/table-headline-border.gif);" ></span>
 				<span class="CaptionVerticalLeft" style="background-image:url({{ template_path }}/images/global/content/box-frame-vertical.gif);" ></span>
-				<div class="Text" data-i18n="account.login.title">Account Login</div>
+					<div class="Text" data-i18n="account.login.title">{{ __('account_login') }}</div>
 				<span class="CaptionVerticalRight" style="background-image:url({{ template_path }}/images/global/content/box-frame-vertical.gif);" ></span>
 				<span class="CaptionBorderBottom" style="background-image:url({{ template_path }}/images/global/content/table-headline-border.gif);" ></span>
 				<span class="CaptionEdgeLeftBottom" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);" ></span>
@@ -46,15 +46,15 @@
 																<td><input style="width: 100%;" type="text" name="account_login" size="35" maxlength="{{ setting('core.account_login_by_email') ? '255' : '30' }}" autofocus data-i18n-placeholder="login.username" /></td>
 															</tr>
 															{{ hook('HOOK_ACCOUNT_LOGIN_AFTER_ACCOUNT') }}
-															<tr>
-																<td class="LabelV" ><span{% if error is not null %} class="red"{% endif %} data-i18n="login.password">Password:</span></td>
-																<td><input style="width: 100%;" type="password" name="password_login" size="35" maxlength="29" data-i18n-placeholder="login.password" /></td>
-															</tr>
+																<tr>
+																	<td class="LabelV" ><span{% if error is not null %} class="red"{% endif %} data-i18n="login.password">{{ __('tibia_password') }}</span></td>
+																	<td><input style="width: 100%;" type="password" name="password_login" size="35" maxlength="29" data-i18n-placeholder="login.password" /></td>
+																</tr>
 															{{ hook('HOOK_ACCOUNT_LOGIN_AFTER_PASSWORD') }}
 															<tr>
 																<td class="LabelV" ></td>
-																<td><input type="checkbox" id="remember_me" name="remember_me" value="true" />
-																	<label for="remember_me" data-i18n="login.remember"> Remember me</label></td>
+																	<td><input type="checkbox" id="remember_me" name="remember_me" value="true" />
+																		<label for="remember_me" data-i18n="login.remember"> {{ __('remember_me_label') }}</label></td>
 															</tr>
 															{{ hook('HOOK_ACCOUNT_LOGIN_AFTER_REMEMBER_ME') }}
 														</table>
@@ -93,7 +93,7 @@
 <br/>
 
 <div style="text-align:center">
-	<h1 data-i18n="login.new_to_server">New to {{ config.lua.serverName }}?</h1>
+	<h1>{{ __('account_login_new_to_server', {'SERVER': config.lua.serverName}) }}</h1>
 </div>
 <div class="TableContainer" >
 	<div class="CaptionContainer" >
@@ -102,7 +102,7 @@
 			<span class="CaptionEdgeRightTop" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
 			<span class="CaptionBorderTop" style="background-image:url({{ template_path }}/images/global/content/table-headline-border.gif);" ></span>
 			<span class="CaptionVerticalLeft" style="background-image:url({{ template_path }}/images/global/content/box-frame-vertical.gif);"></span>
-			<div class="Text" data-i18n="account.login.new_player">New Player</div>
+				<div class="Text" data-i18n="account.login.new_player">{{ __('new_player') }}</div>
 			<span class="CaptionVerticalRight" style="background-image:url({{ template_path }}/images/global/content/box-frame-vertical.gif);"></span>
 			<span class="CaptionBorderBottom" style="background-image:url({{ template_path }}/images/global/content/table-headline-border.gif);" ></span>
 			<span class="CaptionEdgeLeftBottom" style="background-image:url({{ template_path }}/images/global/content/box-frame-edge.gif);"></span>
@@ -129,10 +129,10 @@
 												<td >
 													<div style="float: right; margin-top: 20px;" >
 														{% apply spaceless %}
-														<form class="MediumButtonForm" action="{{ getLink('account/create') }}" method="post" >
+															<form class="MediumButtonForm" action="{{ getLink('account/create') }}" method="get" >
 															<div class="MediumButtonBackground" style="background-image:url({{ template_path }}/images/global/buttons/mediumbutton.gif)" onMouseOver="MouseOverBigButton(this);" onMouseOut="MouseOutBigButton(this);">
 																<div class="MediumButtonOver" style="background-image:url({{ template_path }}/images/global/buttons/mediumbutton-over.gif)" onMouseOver="MouseOverBigButton(this);" onMouseOut="MouseOutBigButton(this);"></div>
-																<input class="MediumButtonText" type="image" name="Create Account" alt="Create Account" src="{{ template_path }}/images/global/buttons/mediumbutton_createaccount.png" data-i18n-attr="alt" data-i18n="action.create_account" />
+																	<input class="MediumButtonText" type="image" name="Create Account" alt="{{ __('create_account') }}" src="{{ template_path }}/images/global/buttons/mediumbutton_createaccount.png" data-i18n-attr="alt" data-i18n="action.create_account" />
 															</div>
 														</form>
 														{% endapply %}
@@ -140,9 +140,9 @@
 													<div id="LoginCreateAccountBox" >
 														<p><b>{{ config.lua.serverName }}...</b></p>
 														<div style="margin-left: 10px;" >
-															<p data-i18n="server.tagline.hardcore">... where hardcore gaming meets fantasy.</p>
-															<p data-i18n="server.tagline.friendships">... where friendships last a lifetime.</p>
-															<p data-i18n="server.tagline.unites">... unites adventurers since 1997!</p>
+																<p data-i18n="server.tagline.hardcore">{{ __('server_tagline_hardcore') }}</p>
+																<p data-i18n="server.tagline.friendships">{{ __('server_tagline_friendships') }}</p>
+																<p data-i18n="server.tagline.unites">{{ __('server_tagline_unites') }}</p>
 														</div>
 													</div>
 												</td>

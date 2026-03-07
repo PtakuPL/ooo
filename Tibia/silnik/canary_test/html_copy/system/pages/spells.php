@@ -12,7 +12,7 @@
 use MyAAC\Models\Spell;
 
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Spells';
+$title = __('menu_spells');
 
 if(isset($_REQUEST['vocation_id'])) {
 	$vocation_id = $_REQUEST['vocation_id'];

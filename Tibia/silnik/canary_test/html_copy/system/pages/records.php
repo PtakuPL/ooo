@@ -13,19 +13,19 @@ use MyAAC\Models\ServerRecord;
 
 defined('MYAAC') or die('Direct access not allowed!');
 
-$title = "Players Online Records";
+$title = __('players_online_records');
 
 if(!$db->hasTable('server_record')) {
-	echo 'Record History is not supported in your distribution.';
+	echo __('record_history_not_supported');
 	return;
 }
 
 echo '
-<b><div style="text-align:center">Players online records on '.$config['lua']['serverName'].'</div></b>
+<b><div style="text-align:center">'.__('records_on_server', ['SERVER' => $config['lua']['serverName']]).'</div></b>
 <TABLE BORDER=0 CELLSPACING=1 CELLPADDING=4 WIDTH=100%>
 	<TR BGCOLOR="'.$config['vdarkborder'].'">
-		<TD class="white"><b><div style="text-align:center">Players</div></b></TD>
-		<TD class="white"><b><div style="text-align:center">Date</div></b></TD>
+		<TD class="white"><b><div style="text-align:center">'.__('records_players').'</div></b></TD>
+		<TD class="white"><b><div style="text-align:center">'.__('records_date').'</div></b></TD>
 	</TR>';
 
 	$i = 0;

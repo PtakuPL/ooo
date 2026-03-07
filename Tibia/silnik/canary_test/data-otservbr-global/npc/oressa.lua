@@ -155,15 +155,15 @@ local function creatureSayCallback(npc, creature, type, message)
 					player:removeCondition(CONDITION_POISON)
 					player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 				end
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oressa.say_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oressa.healing_healed")
 				npcHandler:setTopic(playerId, 0)
 			else
-				return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oressa.say_2")
+				return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oressa.healing_not_needed")
 			end
 		end
 	elseif MsgContains(message, "help") and npcHandler:getTopic(playerId) == 0 then
 		if player:getCondition(CONDITION_POISON) == nil or health > 40 then
-			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oressa.say_3")
+			return NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oressa.healing_not_needed")
 		end
 		if health < 40 or player:getCondition(CONDITION_POISON) then
 			if health < 40 then
@@ -174,7 +174,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:removeCondition(CONDITION_POISON)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
 			end
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oressa.say_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oressa.healing_healed")
 			npcHandler:setTopic(playerId, 0)
 		end
 		-- Vocation dialog
@@ -182,7 +182,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, vocationDefaultMessageKeys, 10)
 		npcHandler:setTopic(playerId, 0)
 		-- Choosing dialog start
-	elseif MsgContains(message, "choosing") or MsgContains(message, "choose") and npcHandler:getTopic(playerId) == 0 then
+	elseif (MsgContains(message, "choosing") or MsgContains(message, "choose")) and npcHandler:getTopic(playerId) == 0 then
 		if player:getLevel() >= 8 then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oressa.choose_prompt_1")
 			npcHandler:setTopic(playerId, 2)
@@ -191,15 +191,15 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "distance") and npcHandler:getTopic(playerId) == 2 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oressa.say_5")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oressa.distance_prompt")
 		npcHandler:setTopic(playerId, 3)
 		-- knight
 	elseif MsgContains(message, "close") and npcHandler:getTopic(playerId) == 2 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_1", "npc.oressa.say_2", "npc.oressa.say_3", "npc.oressa.say_4"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.oressa.knight_info_1", "npc.oressa.knight_info_2", "npc.oressa.knight_info_3", "npc.oressa.knight_confirm_1" }, 10)
 		npcHandler:setTopic(playerId, 5)
 		-- Paladin
-	elseif MsgContains(message, "bow") or MsgContains(message, "spear") and npcHandler:getTopic(playerId) == 3 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_5", "npc.oressa.say_6", "npc.oressa.say_7", "npc.oressa.say_8", "npc.oressa.say_9"}, 10)
+	elseif (MsgContains(message, "bow") or MsgContains(message, "spear")) and npcHandler:getTopic(playerId) == 3 then
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.oressa.paladin_info_1", "npc.oressa.paladin_info_2", "npc.oressa.paladin_info_3", "npc.oressa.paladin_info_4", "npc.oressa.paladin_confirm_1" }, 10)
 		npcHandler:setTopic(playerId, 6)
 		-- Mage
 	elseif MsgContains(message, "magic") and npcHandler:getTopic(playerId) == 3 then
@@ -207,15 +207,15 @@ local function creatureSayCallback(npc, creature, type, message)
 		npcHandler:setTopic(playerId, 4)
 		-- Druid
 	elseif MsgContains(message, "heal") and npcHandler:getTopic(playerId) == 4 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_10", "npc.oressa.say_11", "npc.oressa.say_12", "npc.oressa.say_13"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.oressa.druid_info_1", "npc.oressa.druid_info_2", "npc.oressa.druid_info_3", "npc.oressa.druid_confirm_1" }, 10)
 		npcHandler:setTopic(playerId, 7)
 		-- Sorcerer
 	elseif MsgContains(message, "death") and npcHandler:getTopic(playerId) == 4 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_14", "npc.oressa.say_15", "npc.oressa.say_16", "npc.oressa.say_17"}, 10)
+		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.oressa.sorcerer_info_1", "npc.oressa.sorcerer_info_2", "npc.oressa.sorcerer_info_3", "npc.oressa.sorcerer_confirm_1" }, 10)
 		npcHandler:setTopic(playerId, 8)
 		-- Choosing dialog start
 	elseif MsgContains(message, "decided") and npcHandler:getTopic(playerId) == 0 then
-		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oressa.say_6")
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oressa.decided_prompt")
 		-- Say vocations name
 	elseif MsgContains(message, "sorcerer") and npcHandler:getTopic(playerId) == 0 then
 		local sorcererMessageKeys = {
@@ -299,7 +299,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			end
 			-- Remove Mainland smuggling items
 			removeMainlandSmugglingItems(player)
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_18", "npc.oressa.say_19", "npc.oressa.say_20", "npc.oressa.say_21"}, 10)
+			-- Confirmation: say_18 has {0} placeholder for vocation name
+			local vocName = player:getVocation():getName():upper()
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.oressa.say_18", "npc.oressa.say_20", "npc.oressa.say_21" }, 10, {vocName})
 			npcHandler:setTopic(playerId, 0)
 		elseif MsgContains(message, "no") then
 			local vocationMessage = {
@@ -308,7 +310,9 @@ local function creatureSayCallback(npc, creature, type, message)
 				[7] = "{knight}, {paladin} or {sorcerer}",
 				[8] = "{knight}, {paladin} or {druid}",
 			}
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.oressa.say_22", "npc.oressa.say_23"}, 10)
+			-- Decline: say_22 has {0} placeholder for alternative vocations list
+			local altVocations = vocationMessage[npcHandler:getTopic(playerId)] or ""
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.oressa.say_22", {altVocations})
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

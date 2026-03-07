@@ -36,7 +36,7 @@
 	$MadGD->addText( 'Sex:', $MadGD->textBold )->setPosition( 10, $i * $eachRow );
 	$player_sex = 'unknown';
 	if(isset($config['genders'][$player->getSex()]))
-		$player_sex = strtolower($config['genders'][$player->getSex()]);
+		$player_sex = $config['genders'][$player->getSex()];
 	$MadGD->addText($player_sex)->setPosition( ); $i++;
 	/** PROFESSION **/
 	$vocation = 'Unknown';

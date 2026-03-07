@@ -64,15 +64,17 @@ local function greetCallback(npc, creature, message)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 7 then
-		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jack.greet_msg_1")
+		npcHandler:setMessage(MESSAGE_GREET, "You!! What have you told my family? They are mad at me and I don't even know why! They think I lied to them about working in Edron in secrecy! Why should I even do that!")
 	elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 8 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.jack.greet_msg_4", "npc.jack.greet_msg_5" }, 1000)
+		npcHandler:setMessage(MESSAGE_GREET, {
+			"What did you do to my SCULPTURE? You simply DESTROYED it? Why? You... you ruined everything... my house, my hobby, my life. My family even refuses to talk to me anymore. ...",
+			"Alright, alright you win. I am done for. You... you must be right, yes. Yes, I was working as an intern... in the academy in Edron... yes... Just... tell this Spectulus guy I want to see him. I have nothing left. I am ready.",
+		})
 		player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 9)
-		return false
 	elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 10 then
-		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jack.greet_msg_2")
+		npcHandler:setMessage(MESSAGE_GREET, "So, you've returned to Spectulus? What did he say, is anything wrong? You have this strange expression on your face - is there anything wrong? You DID tell me the truth here, didn't you?")
 	else
-		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.jack.greet_msg_3")
+		npcHandler:setMessage(MESSAGE_GREET, "Yes? What can I do for you? I hope this won't take long, though.")
 	end
 
 	return true
@@ -88,27 +90,26 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "spectulus") then
 		if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.say_7")
 			npcHandler:setTopic(playerId, 1)
 		elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 3 then
 			if npcHandler:getTopic(playerId) == 3 then
-				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.jack.say_1", "npc.jack.say_2"}, 1000)
+				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.jack.say_8", "npc.jack.say_9" }, 1000)
 				player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 4)
 			end
 		end
 	elseif MsgContains(message, "furniture") then
 		if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 3 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.say_10")
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "no") then
 		if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 10 then
 			if npcHandler:getTopic(playerId) == 0 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.say_3")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.say_11")
 				npcHandler:setTopic(playerId, 5)
 			elseif npcHandler:getTopic(playerId) == 5 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_8")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_9")
+				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.jack.say_12", "npc.jack.say_13" })
 				player:addAchievement("Truth Be Told")
 				player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 11)
 				player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.LastMissionState, 1)
@@ -117,22 +118,20 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_6")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_7")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.jack.say_14", "npc.jack.say_15" })
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_4")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_5")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.jack.say_16", "npc.jack.say_17" })
 			npcHandler:setTopic(playerId, 0)
 			player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 2)
 		end
 
 		if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 10 then
 			if npcHandler:getTopic(playerId) == 0 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.say_4")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.say_18")
 				npcHandler:setTopic(playerId, 6)
 			elseif npcHandler:getTopic(playerId) == 6 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.say_5")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.say_19")
 				player:addAchievement("You Don't Know Jack")
 				player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine, 11)
 				player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.LastMissionState, 2)
@@ -142,14 +141,12 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "hobbies") or MsgContains(message, "hobby") then
 		if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 7 then
 			if player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.Statue) < 0 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_1")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_2")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.multi_3")
+				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.jack.say_20", "npc.jack.say_21", "npc.jack.say_22" })
 				player:setStorageValue(Storage.Quest.U8_7.JackFutureQuest.Statue, 1)
 				npcHandler:setTopic(playerId, 0)
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_7.JackFutureQuest.QuestLine) == 8 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.say_6")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.jack.say_23")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

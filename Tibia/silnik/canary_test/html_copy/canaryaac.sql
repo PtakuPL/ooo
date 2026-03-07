@@ -243,6 +243,8 @@ CREATE TABLE IF NOT EXISTS `canary_news` (
 CREATE TABLE IF NOT EXISTS `canary_payments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `account_id` int(11) NOT NULL,
+  `world_id` int(11) NOT NULL DEFAULT 0,
+  `game_mode` varchar(32) NOT NULL DEFAULT 'classic74',
   `method` varchar(100) NOT NULL,
   `reference` varchar(200) NOT NULL,
   `total_coins` int(11) NOT NULL,

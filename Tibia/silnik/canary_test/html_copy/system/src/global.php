@@ -2,6 +2,7 @@
 
 const SKILL_FRAGS = -1;
 const SKILL_BALANCE = -2;
+const SKILL_ONLINETIME = -3;
 
 $i = 0;
 

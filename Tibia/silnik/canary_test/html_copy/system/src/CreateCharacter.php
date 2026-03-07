@@ -251,14 +251,21 @@ class CreateCharacter
 		}
 
 		global $twig;
+		$serverLabel = configLua('serverName');
+		$charMode = getSession('global_profile_mode');
+		if ($charMode === 'modern') {
+			$serverLabel = __('server_modern');
+		}
 		$twig->display('success.html.twig', array(
-			'title' => 'Character Created',
-			'description' => 'The character <b>' . $name . '</b> has been created.<br/>
-					Please select the outfit when you log in for the first time.<br/><br/>
-					<b>See you on ' . configLua('serverName') . '!</b>'
+			'title' => __('create_char_success_title'),
+			'description' => str_replace(
+				['$NAME$', '$SERVER$'],
+				[$name, $serverLabel],
+				__('create_char_success_description')
+			)
 		));
 
-		$account->logAction('Created character <b>' . $name . '</b>.');
+		$account->logAction(str_replace('$NAME$', $name, __('log_created_character')));
 		return true;
 	}
 }

@@ -15,9 +15,17 @@ use MyAAC\News;
 defined('MYAAC') or die('Direct access not allowed!');
 
 $canEdit = hasFlag(FLAG_CONTENT_NEWS) || superAdmin();
+
+// Multi-server news filtering (for archive pages)
+$archiveServerMode = $_SESSION['server_mode'] ?? 'all';
+$archiveGameModeFilter = '';
+if ($archiveServerMode !== 'all' && in_array($archiveServerMode, ['classic74', 'modern'])) {
+	$archiveGameModeFilter = " AND (`game_mode` = 'all' OR `game_mode` = " . $db->quote($archiveServerMode) . ")";
+}
+
 if(isset($_GET['archive']))
 {
-	$title = 'News Archive';
+	$title = __('menu_news_archive');
 
 	$categories = array();
 	foreach($db->query('SELECT id, name, icon_id FROM ' . TABLE_PREFIX . 'news_categories WHERE hide != 1') as $cat)
@@ -84,7 +92,7 @@ if(isset($_GET['archive']))
 	<?php
 
 	$newses = array();
-	$news_DB = $db->query('SELECT * FROM '.$db->tableName(TABLE_PREFIX . 'news').' WHERE `type` = 1 AND `hide` != 1 ORDER BY `date` DESC');
+	$news_DB = $db->query('SELECT * FROM '.$db->tableName(TABLE_PREFIX . 'news').' WHERE `type` = 1 AND `hide` != 1' . $archiveGameModeFilter . ' ORDER BY `date` DESC');
 	foreach($news_DB as $news)
 	{
 		$newses[] = array(
@@ -103,12 +111,19 @@ if(isset($_GET['archive']))
 }
 
 header('X-XSS-Protection: 0');
-$title = 'Latest News';
+$title = __('menu_latest_news');
+
+// Multi-server news filtering
+$newsServerMode = $_SESSION['server_mode'] ?? 'all';
+$newsGameModeFilter = '';
+if ($newsServerMode !== 'all' && in_array($newsServerMode, ['classic74', 'modern'])) {
+	$newsGameModeFilter = " AND (`game_mode` = 'all' OR `game_mode` = " . $db->quote($newsServerMode) . ")";
+}
 
 $cache = Cache::getInstance();
 
 $news_cached = false;
-if($cache->enabled())
+if($cache->enabled() && $newsServerMode === 'all')
 	$news_cached = News::getCached(NEWS);
 
 if(!$news_cached)
@@ -122,7 +137,7 @@ if(!$news_cached)
 		);
 	}
 
-	$tickers_db = $db->query('SELECT * FROM `' . TABLE_PREFIX . 'news` WHERE `type` = ' . TICKER .($canEdit ? '' : ' AND `hide` != 1') .' ORDER BY `date` DESC LIMIT ' . setting('core.news_ticker_limit'));
+	$tickers_db = $db->query('SELECT * FROM `' . TABLE_PREFIX . 'news` WHERE `type` = ' . TICKER .($canEdit ? '' : ' AND `hide` != 1') . $newsGameModeFilter . ' ORDER BY `date` DESC LIMIT ' . setting('core.news_ticker_limit'));
 	$tickers_content = '';
 	if($tickers_db->rowCount() > 0)
 	{
@@ -140,9 +155,9 @@ if(!$news_cached)
 	}
 
 	if($cache->enabled() && !$canEdit)
-		$cache->set('news_' . $template_name . '_' . TICKER, $tickers_content, 60 * 60);
+		$cache->set('news_' . $template_name . '_' . TICKER . '_' . $newsServerMode, $tickers_content, 60 * 60);
 
-	$featured_article_db =$db->query('SELECT `id`, `title`, `article_text`, `article_image`, `hide` FROM `' . TABLE_PREFIX . 'news` WHERE `type` = ' . ARTICLE . ($canEdit ? '' : ' AND `hide` != 1') .' ORDER BY `date` DESC LIMIT 1');
+	$featured_article_db =$db->query('SELECT `id`, `title`, `article_text`, `article_image`, `hide` FROM `' . TABLE_PREFIX . 'news` WHERE `type` = ' . ARTICLE . ($canEdit ? '' : ' AND `hide` != 1') . $newsGameModeFilter . ' ORDER BY `date` DESC LIMIT 1');
 	$article = '';
 	if($featured_article_db->rowCount() > 0) {
 		$article = $featured_article_db->fetch();
@@ -164,7 +179,7 @@ if(!$news_cached)
 		}
 
 		if($cache->enabled() && !$canEdit)
-			$cache->set('news_' . $template_name . '_' . ARTICLE, $featured_article, 60 * 60);
+			$cache->set('news_' . $template_name . '_' . ARTICLE . '_' . $newsServerMode, $featured_article, 60 * 60);
 	}
 }
 else {
@@ -175,7 +190,7 @@ else {
 if(!$news_cached)
 {
 	ob_start();
-	$newses = $db->query('SELECT * FROM ' . $db->tableName(TABLE_PREFIX . 'news') . ' WHERE type = ' . NEWS . ($canEdit ? '' : ' AND hide != 1') . ' ORDER BY date' . ' DESC LIMIT ' . setting('core.news_limit'));
+	$newses = $db->query('SELECT * FROM ' . $db->tableName(TABLE_PREFIX . 'news') . ' WHERE type = ' . NEWS . ($canEdit ? '' : ' AND hide != 1') . $newsGameModeFilter . ' ORDER BY date' . ' DESC LIMIT ' . setting('core.news_limit'));
 	if($newses->rowCount() > 0)
 	{
 		foreach($newses as $news)
@@ -220,7 +235,7 @@ if(!$news_cached)
 	ob_end_clean();
 
 	if($cache->enabled() && !$canEdit)
-		$cache->set('news_' . $template_name . '_' . NEWS, $tmp_content, 60 * 60);
+		$cache->set('news_' . $template_name . '_' . NEWS . '_' . $newsServerMode, $tmp_content, 60 * 60);
 
 	echo $tmp_content;
 }

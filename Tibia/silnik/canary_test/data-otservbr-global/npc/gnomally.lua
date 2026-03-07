@@ -120,11 +120,11 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "relations") then
 		local player = Player(creature)
 		if player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.QuestLine) >= 25 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_12")
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_2", { math.max(0, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank)) })
 			npcHandler:setTopic(playerId, 2)
 		else
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_13")
 		end
 	elseif npcHandler:getTopic(playerId) == 3 then
 		local amount = getMoneyCount(message)
@@ -140,7 +140,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		if npcHandler:getTopic(playerId) == 1 then
 			local player, targetTable = Player(creature), config[topic[playerId]]
 			if player:getItemCount(targetTable.token.id) < targetTable.token.count then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_4", { targetTable.token.type })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_14", { targetTable.token.type })
 				npcHandler:setTopic(playerId, 0)
 				return true
 			end
@@ -170,7 +170,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			if player:removeItem(16128, renown[playerId]) then
 				player:setStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank, math.max(0, player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank)) + renown[playerId] * 5)
 				player:checkGnomeRank()
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_6", { player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_15", { player:getStorageValue(Storage.Quest.U9_60.BigfootsBurden.Rank) })
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomally.say_9")
 			end

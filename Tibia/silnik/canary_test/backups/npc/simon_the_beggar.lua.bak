@@ -282,20 +282,20 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "no") and npcHandler:getTopic(playerId) ~= 0 then
-		local noResponse = {
-			[1] = "I see.",
-			[2] = "Hmm, maybe next time.",
-			[3] = "It was your decision.",
-			[4] = "I see.",
-			[5] = "Hmm, maybe next time.",
-			[6] = "It was your decision.",
-			[7] = "Ok. No problem",
-			[8] = "Ok. No problem",
-			[9] = "Ok. No problem",
-			[10] = "Ok. No problem",
-			[11] = "Ok. No problem",
+		local noResponseKeys = {
+			[1] = "npc.simon_the_beggar.no_i_see",
+			[2] = "npc.simon_the_beggar.no_next_time",
+			[3] = "npc.simon_the_beggar.no_your_decision",
+			[4] = "npc.simon_the_beggar.no_i_see",
+			[5] = "npc.simon_the_beggar.no_next_time",
+			[6] = "npc.simon_the_beggar.no_your_decision",
+			[7] = "npc.simon_the_beggar.no_ok",
+			[8] = "npc.simon_the_beggar.no_ok",
+			[9] = "npc.simon_the_beggar.no_ok",
+			[10] = "npc.simon_the_beggar.no_ok",
+			[11] = "npc.simon_the_beggar.no_ok",
 		}
-		npcHandler:say(noResponse[npcHandler:getTopic(playerId)], npc, creature)
+		NPC_LIB.i18n.npcSay(npcHandler, npc, creature, noResponseKeys[npcHandler:getTopic(playerId)])
 		npcHandler:setTopic(playerId, 0)
 	end
 

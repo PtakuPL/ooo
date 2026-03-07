@@ -6,11 +6,12 @@ members = [
     "crates/launcher-core",
     "apps/launcher-cli",
     "apps/launcher-tauri",
+    "apps/launcher-bootstrap",
     "crates/launcher-helper",
 ]
 
 [workspace.package]
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
 license = "MIT"
 repository = "https://github.com/PtakuPL/ooo"
@@ -28,3 +29,10 @@ tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 semver = "1"
 tempfile = "3"
 zip = { version = "2", default-features = false, features = ["deflate"] }
+
+[profile.release]
+opt-level = "z"
+lto = true
+strip = true
+codegen-units = 1
+panic = "abort"

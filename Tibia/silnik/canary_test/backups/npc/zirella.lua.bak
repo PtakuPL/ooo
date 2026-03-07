@@ -64,31 +64,31 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage) < 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Oh, heaven must have sent you! Could you please help me with a {quest}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.zirella.greet_msg_1")
 		storeTalkCid[playerId] = 0
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage) == 1 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back, darling... so about that firewood, could you please {help} me?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.zirella.greet_msg_2")
 		storeTalkCid[playerId] = 2
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage) == 2 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back, darling... so about the {dead trees}, let me explain that a little more, {yes}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.zirella.greet_msg_3")
 		storeTalkCid[playerId] = 3
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage) == 3 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back, darling... so about the {branches}, let me explain that a little more, {yes}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.zirella.greet_msg_4")
 		storeTalkCid[playerId] = 4
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage) == 4 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back, darling... so about the {pushing}, let me explain that a little more, {yes}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.zirella.greet_msg_5")
 		storeTalkCid[playerId] = 5
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage) == 5 then
-		npcHandler:setMessage(MESSAGE_GREET, "Welcome back, darling... so about the {cart}, let me explain that a little more, {yes}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.zirella.greet_msg_6")
 		storeTalkCid[playerId] = 6
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage) == 6 then
-		npcHandler:setMessage(MESSAGE_GREET, "Oh, sweetheart, is there a problem with the quest? Should I {explain} it again?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.zirella.greet_msg_7")
 		storeTalkCid[playerId] = 7
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage) == 7 then
-		npcHandler:setMessage(MESSAGE_GREET, "Right, thank you sweetheart! This will be enough to heat my oven. Oh, and you are probably waiting for your reward, {yes}?")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.zirella.greet_msg_8")
 		storeTalkCid[playerId] = 8
 	elseif player:getStorageValue(Storage.Quest.U8_2.TheBeginningQuest.ZirellaNpcGreetStorage) == 8 then
-		npcHandler:setMessage(MESSAGE_GREET, "Oh, welcome back, dear Isleth Eagonst! Are you here for a little chat? Just use the highlighted {keywords} again to choose a {topic}.")
+		NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.zirella.greet_msg_9")
 	end
 	return true
 end
@@ -173,8 +173,8 @@ end
 npcHandler:setCallback(CALLBACK_REMOVE_INTERACTION, onReleaseFocus)
 
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye |PLAYERNAME|, may Uman bless you!.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye traveller, take care.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.zirella.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.zirella.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

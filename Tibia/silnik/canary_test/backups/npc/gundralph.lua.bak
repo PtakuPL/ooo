@@ -21,7 +21,7 @@ npcConfig.flags = {
 npcConfig.voices = {
 	interval = 15000,
 	chance = 50,
-	{ text = "Utevo vis lux!" },
+	{ i18nKey = "npc.gundralph.voice_1" },
 }
 
 local keywordHandler = KeywordHandler:new()

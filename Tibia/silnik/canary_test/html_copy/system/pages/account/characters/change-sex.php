@@ -69,7 +69,7 @@ else
 
 						$player->save();
 						$account_logged->setCustomField(setting('core.donate_column'), $points - setting('core.account_change_character_sex_price'));
-						$account_logged->logAction('Changed sex on character <b>' . $player->getName() . '</b> from <b>' . $old_sex_str . '</b> to <b>' . $new_sex_str . '</b>.');
+						$account_logged->logAction(str_replace(['$NAME$', '$OLD$', '$NEW$'], [$player->getName(), $old_sex_str, $new_sex_str], __('log_changed_sex')));
 						$twig->display('success.html.twig', array(
 							'title' => 'Character Sex Changed',
 							'description' => 'The character <b>' . $player->getName() . '</b> sex has been changed to <b>' . $new_sex_str . '</b>.'

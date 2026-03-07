@@ -1,19 +1,20 @@
 <br/>
 <form action="{{ getLink('characters') }}" method="post">
-	{% set title = 'Search Character' %}
+	{% set title = __('online_search_character') %}
+	{% set i18n_key = 'online.search_character' %}
 	{% set tableClass = 'Table1' %}
 	{% set background = config('darkborder') %}
 	{% set content %}
 		<table width="100%">
 			<tr>
 				<td style="vertical-align:middle" class="LabelV150">
-					Character Name:
+					<span data-i18n="online.character_name">{{ __('online_character_name') }}</span>:
 				</td>
 				<td style="width:170px">
 					<input style="width:165px" name="name" value="" size="29" maxlength="29"/>
 				</td>
 				<td>
-					{% set button_name = 'Submit' %}
+					{% set button_name = __('submit') %}
 					{{ include('buttons.base.html.twig') }}
 				</td>
 			</tr>

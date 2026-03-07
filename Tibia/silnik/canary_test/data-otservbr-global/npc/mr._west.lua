@@ -55,17 +55,9 @@ local function greetCallback(npc, creature)
 	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MrWestDoor) == 1 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {
-			"npc.mr._west.greet_msg_1",
-			"npc.mr._west.greet_msg_2",
-		}, 1000)
-		return false
+		npcHandler:setMessage(MESSAGE_GREET, { "Wh .. What? How did you get here? Where are all the guards? You .. you could have killed me but yet you chose to talk? What a relief! ...", "So what brings you here my friend, if I might call you like that?" })
 	elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MrWestDoor) == 2 then
-		NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {
-			"npc.mr._west.greet_msg_3",
-			"npc.mr._west.greet_msg_4",
-		}, 1000)
-		return false
+		npcHandler:setMessage(MESSAGE_GREET, { "Murderer! But .. I give in, you won!", "Dictate me your conditions but please, I beg you, spare my life. What do you want?" })
 	end
 	return true
 end
@@ -81,13 +73,13 @@ local function creatureSayCallback(npc, creature, type, message)
 	if MsgContains(message, "mission") then
 		if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline) == 24 then
 			if player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MrWestDoor) == 1 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr._west.say_1")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr._west.say_3")
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 25)
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission04, 3) -- StorageValue for Questlog "Mission 04: Good to be Kingpin"
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MrWestStatus, 1)
 				npcHandler:setTopic(playerId, 0)
 			elseif player:getStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MrWestDoor) == 2 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr._west.say_2")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.mr._west.say_4")
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Questline, 25)
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.Mission04, 4) -- StorageValue for Questlog "Mission 04: Good to be Kingpin"
 				player:setStorageValue(Storage.Quest.U8_4.InServiceOfYalahar.MrWestStatus, 2)

@@ -11,7 +11,7 @@
 
 use sha2::{Digest, Sha256};
 use std::io::Read;
-use std::path::Path;
+use std::path::{Path, PathBuf};
 
 use common_models::manifest::{ManifestFileAction, NormalizedManifest};
 
@@ -167,6 +167,88 @@ pub fn verify_critical_files(
         missing,
         errors,
         passed,
+    }
+}
+
+/// Wynik kwarantanny plikow krytycznych.
+#[derive(Debug, Clone)]
+pub struct QuarantineResult {
+    /// Katalog, do ktorego przeniesiono pliki.
+    pub quarantine_dir: PathBuf,
+    /// Lista sciezek przeniesionych poprawnie.
+    pub moved_files: Vec<String>,
+    /// Lista bledow przeniesienia.
+    pub failed_files: Vec<String>,
+}
+
+fn copy_and_remove(src: &Path, dst: &Path) -> std::io::Result<()> {
+    std::fs::copy(src, dst)?;
+    std::fs::remove_file(src)?;
+    Ok(())
+}
+
+/// Przenosi zmodyfikowane pliki krytyczne do kwarantanny.
+///
+/// Uwaga: `relative_paths` powinny byc sciezkami wzglednymi wzgledem `client_dir`.
+pub fn quarantine_critical_files(
+    relative_paths: &[String],
+    client_dir: &Path,
+    quarantine_root: &Path,
+) -> QuarantineResult {
+    let stamp = std::time::SystemTime::now()
+        .duration_since(std::time::UNIX_EPOCH)
+        .map(|d| d.as_secs())
+        .unwrap_or(0);
+
+    let quarantine_dir = quarantine_root.join(format!("critical-{stamp}"));
+    let mut moved_files = Vec::new();
+    let mut failed_files = Vec::new();
+
+    if let Err(e) = std::fs::create_dir_all(&quarantine_dir) {
+        failed_files.push(format!(
+            "<init>: nie mozna utworzyc katalogu kwarantanny {}: {}",
+            quarantine_dir.display(),
+            e
+        ));
+        return QuarantineResult {
+            quarantine_dir,
+            moved_files,
+            failed_files,
+        };
+    }
+
+    for rel in relative_paths {
+        let src = client_dir.join(rel);
+        if !src.exists() {
+            continue;
+        }
+
+        let dst = quarantine_dir.join(rel);
+        if let Some(parent) = dst.parent() {
+            if let Err(e) = std::fs::create_dir_all(parent) {
+                failed_files.push(format!("{}: mkdir failed: {}", rel, e));
+                continue;
+            }
+        }
+
+        match std::fs::rename(&src, &dst) {
+            Ok(_) => moved_files.push(rel.clone()),
+            Err(rename_err) => {
+                match copy_and_remove(&src, &dst) {
+                    Ok(_) => moved_files.push(rel.clone()),
+                    Err(copy_err) => failed_files.push(format!(
+                        "{}: rename failed: {}; copy+remove failed: {}",
+                        rel, rename_err, copy_err
+                    )),
+                }
+            }
+        }
+    }
+
+    QuarantineResult {
+        quarantine_dir,
+        moved_files,
+        failed_files,
     }
 }
 

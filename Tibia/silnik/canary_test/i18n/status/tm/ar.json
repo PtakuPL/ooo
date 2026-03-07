@@ -433,27 +433,27 @@
   },
   "npc.a_behemoth.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "بسسست! يبقيه إلى أسفل! <gives you an elaborate report on monster activity>",
+    "text": "بسسست! يبقيه إلى أسفل! <يعطيك تقريرا مفصلا عن نشاط الوحش>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:21:37.089399Z"
+    "updated_at": "2026-02-21T09:31:09.702632Z"
   },
   "npc.a_behemoth.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "بسسست! يبقيه إلى أسفل! <gives you an elaborate report on monster activity>",
+    "text": "بسسست! يبقيه إلى أسفل! <يعطيك تقريرا مفصلا عن نشاط الوحش>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:21:37.090062Z"
+    "updated_at": "2026-02-21T09:31:09.703172Z"
   },
   "npc.a_behemoth.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "بسسست! يبقيه إلى أسفل! <gives you an elaborate report on monster activity>",
+    "text": "بسسست! يبقيه إلى أسفل! <يعطيك تقريرا مفصلا عن نشاط الوحش>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:21:37.090796Z"
+    "updated_at": "2026-02-21T09:31:09.703637Z"
   },
   "npc.a_dead_bureaucrat.greet_msg_1": {
     "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
@@ -673,27 +673,27 @@
   },
   "npc.a_dragon_lord.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "بسسست! يبقيه إلى أسفل! <gives you an elaborate report on monster activity>",
+    "text": "بسسست! يبقيه إلى أسفل! <يعطيك تقريرا مفصلا عن نشاط الوحش>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:21:52.652975Z"
+    "updated_at": "2026-02-21T09:31:15.248932Z"
   },
   "npc.a_dragon_lord.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "بسسست! يبقيه إلى أسفل! <gives you an elaborate report on monster activity>",
+    "text": "بسسست! يبقيه إلى أسفل! <يعطيك تقريرا مفصلا عن نشاط الوحش>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:21:52.653660Z"
+    "updated_at": "2026-02-21T09:31:15.249520Z"
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "بسسست! يبقيه إلى أسفل! <gives you an elaborate report on monster activity>",
+    "text": "بسسست! يبقيه إلى أسفل! <يعطيك تقريرا مفصلا عن نشاط الوحش>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:21:52.654352Z"
+    "updated_at": "2026-02-21T09:31:15.249981Z"
   },
   "npc.a_dragon_mother.greet_msg_1": {
     "src_hash": "1dce3066f0e7cf3054a32cbec80df4a6",
@@ -769,35 +769,35 @@
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "بسسست! يبقيه إلى أسفل! <gives you an elaborate report on monster activity>",
+    "text": "بسسست! يبقيه إلى أسفل! <يعطيك تقريرا مفصلا عن نشاط الوحش>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:21:52.661299Z"
+    "updated_at": "2026-02-21T09:31:15.250471Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "بسسست! يبقيه إلى أسفل! <gives you an elaborate report on monster activity>",
+    "text": "بسسست! يبقيه إلى أسفل! <يعطيك تقريرا مفصلا عن نشاط الوحش>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:21:52.661954Z"
+    "updated_at": "2026-02-21T09:31:15.250920Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "بسسست! يبقيه إلى أسفل! <gives you an elaborate report on monster activity>",
+    "text": "بسسست! يبقيه إلى أسفل! <يعطيك تقريرا مفصلا عن نشاط الوحش>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:21:52.662647Z"
+    "updated_at": "2026-02-21T09:31:20.052458Z"
   },
   "npc.a_fluffy_squirrel.sendtrade_msg_1": {
     "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
-    "text": "تشيش. الفصل! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "text": "تشيش. الفصل! <لست متأكدًا، ولكن يبدو أن السنجاب يريد مقايضة جوزك الثمين بأحجار عديمة الفائدة وجدها واعتبرها غير صالحة للأكل>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:21:52.663528Z"
+    "updated_at": "2026-02-21T09:31:20.054119Z"
   },
   "monster.salamander.name": {
     "src_hash": "5617d73c694ad8f8004009e0f6b2e3d6",
@@ -1326,5 +1326,93 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T07:52:55.605567Z"
+  },
+  "npc.graubart.farewell_msg_1": {
+    "src_hash": "ab77abfbd0bb407bde746eb505c8dc42",
+    "text": "وداعا ولا تنساني!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:31:07.261585Z"
+  },
+  "npc.a_dead_bureaucrat1.say_3": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "حسنًا |PLAYERNAME|. مهنة؟?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:31:09.704218Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "حائل بومين. نعم برد.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:31:09.704575Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "حائل بومين. نعم برد.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:31:12.509141Z"
+  },
+  "npc.a_dead_bureaucrat3.say_2": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "حسنًا |PLAYERNAME|. مهنة؟?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:31:12.509900Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "حائل بومين. نعم برد.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:31:12.510330Z"
+  },
+  "npc.a_dead_bureaucrat4.say_2": {
+    "src_hash": "7c9a6b9ee4bce0d9b7654294cdfe405e",
+    "text": "حسنًا |PLAYERNAME|. مهنة؟?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:31:12.511148Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "حائل بومين. نعم برد.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:31:12.511578Z"
+  },
+  "npc.a_fading_memory.greet_msg_1": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "أوه...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:31:20.052704Z"
+  },
+  "npc.a_fluffy_squirrel.farewell_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "تشه...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:31:20.052900Z"
+  },
+  "npc.a_fluffy_squirrel.greet_msg_1": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "تشششش؟?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:31:20.053095Z"
   }
 }

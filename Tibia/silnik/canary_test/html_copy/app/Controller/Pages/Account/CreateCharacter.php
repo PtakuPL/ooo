@@ -23,6 +23,7 @@ class CreateCharacter extends Base{
 
     public static function getWorlds()
     {
+        $arrayAllWorlds = [];
         $allWorlds = EntityWorlds::getWorlds();
         while($world = $allWorlds->fetchObject()){
             $arrayAllWorlds[] = [
@@ -37,6 +38,86 @@ class CreateCharacter extends Base{
             ];
         }
         return $arrayAllWorlds;
+    }
+
+    private static function normalizeMode(string $mode): ?string
+    {
+        $mode = strtolower(trim($mode));
+        if (in_array($mode, ['classic74', 'classic', 'retro', 'retro74', '7.4', '74'], true)) {
+            return 'classic74';
+        }
+        if (in_array($mode, ['modern', 'main', '14', '14.20', 'latest'], true)) {
+            return 'modern';
+        }
+        return null;
+    }
+
+    private static function isClassicWorldName(string $name): bool
+    {
+        $name = strtolower($name);
+        foreach (['classic', 'retro', '7.4', '74'] as $needle) {
+            if (str_contains($name, $needle)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static function isModernWorldName(string $name): bool
+    {
+        $name = strtolower($name);
+        foreach (['modern', 'main', 'global', '14', '14.'] as $needle) {
+            if (str_contains($name, $needle)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static function resolvePreselectedWorldId(array $worlds, ?string $mode): ?int
+    {
+        if (empty($worlds) || $mode === null) {
+            return null;
+        }
+
+        foreach ($worlds as $world) {
+            $id = isset($world['id']) ? (int)$world['id'] : 0;
+            $name = isset($world['name']) ? (string)$world['name'] : '';
+            if ($mode === 'classic74' && (self::isClassicWorldName($name) || $id === 0)) {
+                return $id;
+            }
+            if ($mode === 'modern' && (self::isModernWorldName($name) || $id === 1)) {
+                return $id;
+            }
+        }
+
+        return isset($worlds[0]['id']) ? (int)$worlds[0]['id'] : null;
+    }
+
+    private static function resolvePreselectedWorldName(array $worlds, ?int $worldId): string
+    {
+        if ($worldId === null) {
+            return '';
+        }
+        foreach ($worlds as $world) {
+            if (isset($world['id']) && (int)$world['id'] === $worldId) {
+                return (string)($world['name'] ?? '');
+            }
+        }
+        return '';
+    }
+
+    private static function resolveWorldMode(int $worldId, string $worldName): string
+    {
+        if ($worldId === 0 || self::isClassicWorldName($worldName)) {
+            return 'classic74';
+        }
+
+        if ($worldId === 1 || self::isModernWorldName($worldName)) {
+            return 'modern';
+        }
+
+        return 'unknown';
     }
 
     public static function getActiveVocation()
@@ -56,17 +137,19 @@ class CreateCharacter extends Base{
         $ServerConfig = EntityServerConfig::getInfoWebsite()->fetchObject();
         $countPlayers = (int)EntityPlayer::getPlayer([ 'account_id' => $AccountId], null, null, ['COUNT(*) as qtd'])->fetchObject()->qtd;
         if($countPlayers >= $ServerConfig->player_max){
-            return self::viewCreateCharacter($request, 'Your account has reached the character limit.');
+            return self::viewCreateCharacter($request, __('error_character_limit'));
         }
 
         $postVars = $request->getPostVars();
+        $queryParams = $request->getQueryParams();
+        $requestedMode = self::normalizeMode((string)($queryParams['mode'] ?? ''));
         $LoggedId = SessionAdminLogin::idLogged();
 
         if(empty($postVars['name'])){
-            return self::viewCreateCharacter($request, 'Set a name for the character.');
+            return self::viewCreateCharacter($request, __('error_character_name_set'));
         }
         if(empty($postVars['world'])){
-            return self::viewCreateCharacter($request, 'Select a World.');
+            return self::viewCreateCharacter($request, __('error_world_select'));
         }
         
         $character_name = filter_var($postVars['name'], FILTER_SANITIZE_SPECIAL_CHARS);
@@ -76,19 +159,19 @@ class CreateCharacter extends Base{
 
         $CountName = strlen($character_name);
         if($CountName < 5){
-            return self::viewCreateCharacter($request, 'The name must be at least 5 characters long.');
+            return self::viewCreateCharacter($request, __('error_character_name_too_short'));
         }
         if($CountName > 29){
-            return self::viewCreateCharacter($request, 'The name must be at least 29 characters long.');
+            return self::viewCreateCharacter($request, __('error_character_name_too_long'));
         }
         $verifyPlayerName = EntityPlayer::getPlayer([ 'name' => $character_name])->fetchObject();
         if($verifyPlayerName == true){
-            return self::viewCreateCharacter($request, 'This character name is already being used.');
+            return self::viewCreateCharacter($request, __('error_character_name_taken'));
         }
 
         $character_sex = filter_var($postVars['sex'], FILTER_SANITIZE_NUMBER_INT);
         if($character_sex > 2){
-            return self::viewCreateCharacter($request, 'Please select a valid gender.');
+            return self::viewCreateCharacter($request, __('error_gender_select'));
         }
         if ($character_sex == 2) {
             $character_sex = 0;
@@ -97,12 +180,12 @@ class CreateCharacter extends Base{
         $activeVocations = EntityServerConfig::getInfoWebsite()->fetchObject();
         if($activeVocations->player_voc == 1){
             if (empty($character_vocation)) {
-                return self::viewCreateCharacter($request, 'Choose a vocation for the character.');
+                return self::viewCreateCharacter($request, __('error_vocation_choose'));
             }
 
             $verifyVocation = EntityCreateAccount::getPlayerSamples([ 'vocation' => $character_vocation])->fetchObject();
             if($verifyVocation == false){
-                return self::viewCreateCharacter($request, 'Please select your character vocation!');
+                return self::viewCreateCharacter($request, __('error_vocation_select'));
             }
         }else{
             $character_vocation = 0;
@@ -110,8 +193,20 @@ class CreateCharacter extends Base{
 
         $selectWorlds = EntityWorlds::getWorlds([ 'id' => $character_world])->fetchObject();
         if($selectWorlds == false){
-            return self::viewCreateCharacter($request, 'Invalid world.');
+            return self::viewCreateCharacter($request, __('error_world_invalid_select'));
         }
+
+        if ($requestedMode !== null) {
+            $selectedWorldMode = self::resolveWorldMode((int)$selectWorlds->id, (string)$selectWorlds->name);
+            if ($selectedWorldMode !== 'unknown' && $selectedWorldMode !== $requestedMode) {
+                if ($requestedMode === 'classic74') {
+                    return self::viewCreateCharacter($request, 'Tryb Classic 7.4 moze tworzyc postacie tylko na swiecie Tibia 7.4.');
+                }
+
+                return self::viewCreateCharacter($request, 'Tryb Modern moze tworzyc postacie tylko na swiecie Modern.');
+            }
+        }
+
         if(empty($character_tutorial)){
             $character_tutorial = 0;
         }
@@ -161,15 +256,27 @@ class CreateCharacter extends Base{
             'world_pvptype' => Server::convertPvpType($selectWorlds->pvp_type),
             'world_location' => Server::convertLocation($selectWorlds->location),
         ]);
-        return parent::getBase('Create Account', $content);
+        return parent::getBase(__('create_account'), $content);
     }
 
     public static function viewCreateCharacter($request, $errorMessage = null)
     {
+        $queryParams = $request->getQueryParams();
+        $source = isset($queryParams['source']) ? strtolower((string)$queryParams['source']) : '';
+        $source = $source === 'launcher' ? 'launcher' : '';
+        $mode = self::normalizeMode((string)($queryParams['mode'] ?? ''));
+        $worlds = self::getWorlds();
+        $preselectedWorldId = self::resolvePreselectedWorldId($worlds, $mode);
+        $preselectedWorldName = self::resolvePreselectedWorldName($worlds, $preselectedWorldId);
+
         $content = View::render('pages/account/createcharacter', [
-            'worlds' => self::getWorlds(),
+            'worlds' => $worlds,
             'status' => $errorMessage,
             'activevoc' => self::getActiveVocation(),
+            'preselect_mode' => $mode,
+            'preselect_source' => $source,
+            'preselect_world_id' => $preselectedWorldId,
+            'preselect_world_name' => $preselectedWorldName,
         ]);
         return parent::getBase('Account Management', $content);
     }

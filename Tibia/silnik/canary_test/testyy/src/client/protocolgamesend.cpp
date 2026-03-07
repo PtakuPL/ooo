@@ -117,6 +117,13 @@ void ProtocolGame::sendLoginPacket(const uint32_t challengeTimestamp, const uint
 
     send(msg);
 
+    // INS-CPP8: Wyczyść dane wrażliwe z pamięci po wysłaniu pakietu logowania.
+    // Password i authenticator token nie są już potrzebne po tym momencie.
+    m_accountPassword.clear();
+    m_accountPassword.shrink_to_fit();
+    m_authenticatorToken.clear();
+    m_authenticatorToken.shrink_to_fit();
+
     if (g_game.getFeature(Otc::GameLoginPacketEncryption))
         enableXteaEncryption();
 

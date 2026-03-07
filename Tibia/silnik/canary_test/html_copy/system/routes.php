@@ -11,8 +11,34 @@ defined('MYAAC') or die('Direct access not allowed!');
 
 return [
 	['GET', '', 'news.php'], // empty URL = show news
+	['GET', 'latestnews', 'news.php'], // tibia.com-style alias
+	['GET', 'newsarchive', 'news/archive.php'], // tibia.com-style alias
+	['GET', 'rules', 'rules.php', 50],
+	['GET', 'rules/{mode:alphanum}', 'rules.php', 50],
 	['GET', 'news/archive/{id:int}', 'news/archive.php'],
+	['GET', 'news/archive', 'news/archive.php'], // archive index (no id)
 	['GET', 'news/{id:int}', 'news/archive.php'],
+
+	// K86: Clean URL aliases for tibia.com-style paths
+	['GET', 'community/highscores', 'highscores.php'],
+	['GET', 'community/highscores/{list:string}', 'highscores.php'],
+	['GET', 'community/highscores/{list:string}/{vocation:string}', 'highscores.php'],
+	['GET', 'community/online', 'online.php'],
+	['GET', 'community/characters', 'characters.php'],
+	[['GET', 'POST'], 'community/characters/{name:[A-Za-z0-9-_%+\' \[\]]+}', 'characters.php'],
+	['GET', 'community/guilds', 'guilds.php'],
+	[['GET', 'POST'], 'community/guilds/{guild:string}', 'guilds/show.php'],
+	['GET', 'community/houses', 'houses.php'],
+	['GET', 'community/houses/{action:string}', 'houses.php'],
+	['GET', 'shop', '__redirect__/account/login'],
+	['GET', 'createaccount', '__redirect__/reddaxe/account-create.php?source=tibiawww'],
+	['POST', 'createaccount', '__redirect__/reddaxe/account-create.php?source=tibiawww'],
+	['GET', 'account/create', '__redirect__/reddaxe/account-create.php?source=tibiawww'],
+	['POST', 'account/create', '__redirect__/reddaxe/account-create.php?source=tibiawww'],
+	[['GET', 'POST'], 'account/createcharacter', 'account/characters/create.php'],
+	['GET', 'payment', '__redirect__/account/login'],
+	['GET', 'shop/payment', '__redirect__/payment'],
+	['GET', 'shop/payment/{action:string}', '__redirect__/payment'],
 
 	// block access to some files
 	['*', 'account/base', '404.php', 10], // this is to block account/base.php
@@ -20,6 +46,13 @@ return [
 	['*', 'guilds/base', '404.php', 10],
 
 	['GET', 'account/confirm-email/{hash:alphanum}', 'account/confirm-email.php'],
+	['GET', 'account/sync-login', 'account/sync-login.php'],
+	['GET', 'account', '__redirect__/index.php/account/manage'],
+	[['GET', 'POST'], 'account/manage', 'account/manage.php'],
+	[['GET', 'POST'], 'account/login', 'account/login.php'],
+	['GET', 'account/logout', 'account/logout.php'],
+	[['GET', 'POST'], 'account/lost', 'account/lost.php'],
+	[['GET', 'POST'], 'account/profile-switch', 'account/profile-switch.php'],
 
 	['GET', 'bans/{page:int}', 'bans.php'],
 	[['GET', 'POST'], 'characters/{name:[A-Za-z0-9-_%+\' \[\]]+}', 'characters.php'],

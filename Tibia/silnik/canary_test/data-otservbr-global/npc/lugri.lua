@@ -60,112 +60,104 @@ local function creatureSayCallback(npc, creature, type, message)
 
 	if MsgContains(message, "outfit") or MsgContains(message, "addon") then
 		if player:getStorageValue(Storage.Quest.U7_8.WizardOutfits) < 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_1")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_22")
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "shield") or MsgContains(message, "medusa shield") then
 		if player:getStorageValue(Storage.Quest.U7_8.WizardOutfits) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_2")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_23")
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "mail") or MsgContains(message, "dragon scale mail") then
 		if player:getStorageValue(Storage.Quest.U7_8.WizardOutfits) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_3")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_24")
 			npcHandler:setTopic(playerId, 4)
 		end
 	elseif MsgContains(message, "legs") or MsgContains(message, "crown legs") then
 		if player:getStorageValue(Storage.Quest.U7_8.WizardOutfits) == 3 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_4")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_25")
 			npcHandler:setTopic(playerId, 5)
 		end
 	elseif MsgContains(message, "ring") or MsgContains(message, "ring of the sky") then
 		if player:getStorageValue(Storage.Quest.U7_8.WizardOutfits) == 4 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_5")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_26")
 			npcHandler:setTopic(playerId, 6)
 		end
 
 		------------Task Part-------------
 	elseif MsgContains(message, "task") then
 		if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.LugriNecromancers) < 0 and player:getLevel() >= 60 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.multi_10")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.multi_11")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.multi_12")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.lugri.say_27", "npc.lugri.say_28", "npc.lugri.say_29" })
 			npcHandler:setTopic(playerId, 7)
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.LugriNecromancers) == 0 then
 			if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.NecromancerCount) >= 4000 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.multi_6")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.multi_7")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.multi_8")
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.multi_9")
+				NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { { "npc.lugri.say_30", { player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.NecromancerCount) } }, "npc.lugri.say_31", "npc.lugri.say_32" })
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.LugriNecromancers, 1)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.BossKillCount.NecropharusCount, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_6")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_33")
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.LugriNecromancers) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.multi_4")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.multi_5")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.lugri.say_34", "npc.lugri.say_35" })
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.LugriNecromancers, 4)
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.LugriNecromancers) == 3 then
 			if player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.NecromancerCount) >= 1000 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_7")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_36")
 				player:addExperience(40000, true)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.LugriNecromancers, 4)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_8")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_37")
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.LugriNecromancers) == 4 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_9")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_38")
 			npcHandler:setTopic(playerId, 8)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_10")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_39")
 			npcHandler:setTopic(playerId, 2)
 		elseif npcHandler:getTopic(playerId) == 2 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_11")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_40")
 			player:setStorageValue(Storage.Quest.U7_8.WizardOutfits, 1)
 			player:setStorageValue(Storage.OutfitQuest.DefaultStart, 1) --this for default start of Outfit and Addon Quests
 			npcHandler:setTopic(playerId, 0)
 		elseif npcHandler:getTopic(playerId) == 3 then
 			if player:removeItem(3436, 1) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_12")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_41")
 				player:setStorageValue(Storage.Quest.U7_8.WizardOutfits, 2)
 				npcHandler:setTopic(playerId, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_13")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_42")
 			end
 		elseif npcHandler:getTopic(playerId) == 4 then
 			if player:removeItem(3386, 1) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_14")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_43")
 				player:setStorageValue(Storage.Quest.U7_8.WizardOutfits, 3)
 				npcHandler:setTopic(playerId, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_15")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_44")
 			end
 		elseif npcHandler:getTopic(playerId) == 5 then
 			if player:removeItem(3382, 1) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_16")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_45")
 				player:setStorageValue(Storage.Quest.U7_8.WizardOutfits, 4)
 				npcHandler:setTopic(playerId, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_17")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_46")
 			end
 		elseif npcHandler:getTopic(playerId) == 6 then
 			if player:removeItem(3006, 1) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_18")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_47")
 				player:setStorageValue(Storage.Quest.U7_8.WizardOutfits, 5)
 				player:addOutfitAddon(145, 2)
 				player:addOutfitAddon(149, 2)
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 				npcHandler:setTopic(playerId, 0)
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_19")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_48")
 			end
 		elseif npcHandler:getTopic(playerId) == 7 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.multi_1")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.multi_2")
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.multi_3")
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.lugri.say_49", "npc.lugri.say_50", "npc.lugri.say_51" })
 			player:setStorageValue(JOIN_STOR, 1)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.NecromancerCount, 0)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.NecromancerCount, 0)
@@ -175,7 +167,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.ShadowPupilCount, 0)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.LugriNecromancers, 0)
 		elseif npcHandler:getTopic(playerId) == 8 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_20")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_52")
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.NecromancerCount, 0)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.NecromancerCount, 0)
 			player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.AltKillCount.PriestessCount, 0)
@@ -186,16 +178,16 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif MsgContains(message, "no") then
 		if npcHandler:getTopic(playerId) > 1 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_21")
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.lugri.say_53")
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
 	return true
 end
 
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lugri.greet_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.lugri.farewell_msg_1")
-NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.lugri.walkaway_msg_1")
+npcHandler:setMessage(MESSAGE_GREET, "What is it that you {want}, |PLAYERNAME|?")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Bye.")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Bye.")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

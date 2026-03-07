@@ -82,7 +82,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				return true
 			end
 			if hazard:setPlayerCurrentLevel(player, desiredLevel) then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomadness.say_2", { desiredLevel })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gnomadness.say_6", { desiredLevel })
 				if desiredLevel >= 6 and not player:kv():scoped("primal-ordeal"):get("received-prize") then
 					player:addMount(202)
 					player:sendLocalizedTextMessage(MESSAGE_EVENT_ADVANCE, "system.mount.received", {"Noxious Ripptor"})

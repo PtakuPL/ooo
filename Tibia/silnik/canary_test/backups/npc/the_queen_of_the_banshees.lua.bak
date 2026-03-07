@@ -212,7 +212,7 @@ keywordHandler:addKeyword({ "banshee" }, StdModule.say, {
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 
-npcHandler:setMessage(MESSAGE_GREET, "Be greeted, dear visitor. Come and {stay} ... a while.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.the_queen_of_the_banshees.greet_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.the_queen_of_the_banshees.farewell_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.the_queen_of_the_banshees.walkaway_msg_1")
 

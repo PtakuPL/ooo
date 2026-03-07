@@ -47,7 +47,7 @@ else
 				{
 					$account_logged->setCustomField('key', $new_rec_key);
 					$account_logged->setCustomField(setting('core.donate_column'), $account_logged->getCustomField(setting('core.donate_column')) - setting('core.account_generate_new_reckey_price'));
-					$account_logged->logAction('Generated new recovery key for ' . setting('core.account_generate_new_reckey_price') . ' premium points.');
+					$account_logged->logAction(str_replace('$COST$', setting('core.account_generate_new_reckey_price'), __('log_recovery_key_new')));
 					$message = '<br />Your recovery key were send on email address <b>'.$account_logged->getEMail().'</b> for '.setting('core.account_generate_new_reckey_price').' premium points.';
 				}
 				else

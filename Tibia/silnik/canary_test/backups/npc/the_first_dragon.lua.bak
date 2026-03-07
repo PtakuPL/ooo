@@ -120,7 +120,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	return true
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Hello, my sparring buddy. We should have another fight sometimes. I think you may have earned a little reward.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.the_first_dragon.greet_msg_1")
 
 keywordHandler:addKeyword({ "times" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.the_first_dragon.stdmod_1" })
 keywordHandler:addKeyword({ "demons" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.the_first_dragon.stdmod_2" })

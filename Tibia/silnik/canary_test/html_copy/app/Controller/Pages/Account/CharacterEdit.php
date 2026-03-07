@@ -82,7 +82,7 @@ class CharacterEdit extends Base{
                 $check_exists_display = EntityPlayer::getDisplay([ 'player_id' => $select_player->id])->fetchObject();
                 if (empty($check_exists_display)) {
                     EntityPlayer::insertDisplay($arrayCharacterDisplay);
-                    return self::viewCharacterEdit($request, $name, 'Updated successfully.');
+                    return self::viewCharacterEdit($request, $name, __('success_updated'));
                 } else {
                     EntityPlayer::updateDisplay([ 'player_id' => $select_player->id], [
                         'account' => $filter_account,
@@ -94,7 +94,7 @@ class CharacterEdit extends Base{
                         'comment' => $filter_comment,
                     ]);
 
-                    return self::viewCharacterEdit($request, $name, 'Updated successfully.');
+                    return self::viewCharacterEdit($request, $name, __('success_updated'));
                 }
                 $request->getRouter()->redirect('/account/character/'.$name.'/edit');
             }

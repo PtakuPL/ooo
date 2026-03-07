@@ -81,9 +81,9 @@ end
 
 keywordHandler:addKeyword({ "job" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.miles_the_guard.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "LONG LIVE THE KING!")
-npcHandler:setMessage(MESSAGE_FAREWELL, "LONG LIVE THE KING!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "LONG LIVE THE KING!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.miles_the_guard.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.miles_the_guard.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.miles_the_guard.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

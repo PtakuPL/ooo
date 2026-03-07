@@ -8,7 +8,7 @@
  * @link      https://my-aac.org
  */
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Changelog';
+$title = __('menu_changelog');
 
 use MyAAC\Models\Changelog;
 

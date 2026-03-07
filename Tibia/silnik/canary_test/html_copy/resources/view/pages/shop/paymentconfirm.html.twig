@@ -120,6 +120,11 @@
 																		<input type="hidden" name="payment_method" value="{{ method }}">
 																	</tr>
 																	<tr>
+																		<td class="LabelV200">Server:</td>
+																		<td>{{ world_name }}</td>
+																		<input type="hidden" name="payment_world_id" value="{{ world_id }}">
+																	</tr>
+																	<tr>
 																		<td class="LabelV200">Country:</td>
 																		<td>{{ country }}</td>
 																		<input type="hidden" name="payment_country" value="{{ country }}">
@@ -167,7 +172,7 @@
 						</div>
 					</div>
 					<div class="RightButton" style="padding: 10px;">
-						<a href="{{URL}}/payment">
+						<a href="{{URL}}/payment?payment_world_id={{ world_id }}">
 							<div class="BigButton" style="background-image:url({{IMAGE_PATH}}/global/buttons/button_blue.gif)">
 								<div onmouseover="MouseOverBigButton(this);" onmouseout="MouseOutBigButton(this);"><div class="BigButtonOver" style="background-image:url({{IMAGE_PATH}}/global/buttons/button_blue_over.gif);"></div><input class="BigButtonText" type="button" value="Previous"></div>
 							</div>

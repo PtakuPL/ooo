@@ -102,9 +102,9 @@ end
 
 keywordHandler:addKeyword({ "weapons" }, StdModule.say, { npcHandler = npcHandler, i18nKey = "npc.habdel.stdmod_1" })
 
-npcHandler:setMessage(MESSAGE_GREET, "Welcome |PLAYERNAME|! See the fine {weapons} I sell.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye. Come back soon.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye. Come back soon.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.habdel.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.habdel.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.habdel.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

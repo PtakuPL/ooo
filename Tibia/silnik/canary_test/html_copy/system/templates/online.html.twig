@@ -1,8 +1,28 @@
 {% set onlineTTL = setting('core.online_cache_ttl') %}
 {% if onlineTTL > 0 and cache.enabled() %}
-<small>*Note: Online List is updated every {{ onlineTTL > 1 ? ' ' ~ onlineTTL : '' }} minute{{ onlineTTL > 1 ? 's' : '' }}.</small>
+<small>*<span data-i18n="online.note_online_list_updated">{{ __('online_note_online_list_updated', {'MINUTES': onlineTTL}) }}</span></small>
 <br/>
 {% endif %}
+
+<table border="0" cellpadding="4" cellspacing="1" width="100%">
+	<tr>
+		<td>
+			<label for="onlineServerFilter" data-i18n="highscores.filter_world">{{ __('highscores_choose_server') }}</label>
+			<select onchange="location = this.value;" id="onlineServerFilter">
+				{% for serverMode in modes %}
+					<option value="{{ serverMode.link }}" class="size_xs" {% if mode == serverMode.key %}selected{% endif %}>{{ serverMode.name }}</option>
+				{% endfor %}
+			</select>
+		</td>
+		<td style="text-align:right;">
+			{% if mode == 'all' %}
+				{{ __('server_classic74') }}: <b>{{ counts.classic74 }}</b> |
+				{{ __('server_modern') }}: <b>{{ counts.modern }}</b> |
+			{% endif %}
+			{{ __('online_total_players_label') }}: <b>{{ counts.total }}</b>
+		</td>
+	</tr>
+</table>
 
 {# vocation statistics #}
 {% if setting('core.online_vocations') %}
@@ -15,12 +35,12 @@
 			<td><img src="images/paladin.png" /></td>
 			<td><img src="images/knight.png" /></td>
 		</tr>
-		<tr bgcolor="{{ config.vdarkborder }}">
-			<td class="white" style="text-align: center;"><strong>Sorcerers</strong></td>
-			<td class="white" style="text-align: center;"><strong>Druids</strong></td>
-			<td class="white" style="text-align: center;"><strong>Paladins</strong></td>
-			<td class="white" style="text-align: center;"><strong>Knights</strong></td>
-		</tr>
+			<tr bgcolor="{{ config.vdarkborder }}">
+				<td class="white" style="text-align: center;"><strong data-i18n="online.sorcerers">{{ __('vocation_sorcerer_plural') }}</strong></td>
+				<td class="white" style="text-align: center;"><strong data-i18n="online.druids">{{ __('vocation_druid_plural') }}</strong></td>
+				<td class="white" style="text-align: center;"><strong data-i18n="online.paladins">{{ __('vocation_paladin_plural') }}</strong></td>
+				<td class="white" style="text-align: center;"><strong data-i18n="online.knights">{{ __('vocation_knight_plural') }}</strong></td>
+			</tr>
 		<tr bgcolor="{{ config.lightborder }}">
 			<td style="text-align: center;">{{ vocs[1] }}</td>
 			<td style="text-align: center;">{{ vocs[2] }}</td>
@@ -30,10 +50,10 @@
 	</table>
 	<div style="text-align: center;">&nbsp;</div>
 		{% else %}
-	<table border="0" cellspacing="1" cellpadding="4" width="100%">
-		<tr bgcolor="{{ config.vdarkborder }}">
-			<td class="white" colspan="2"><b>Vocation statistics</b></td>
-		</tr>
+		<table border="0" cellspacing="1" cellpadding="4" width="100%">
+			<tr bgcolor="{{ config.vdarkborder }}">
+				<td class="white" colspan="2"><b data-i18n="online.vocation_statistics">{{ __('online_vocation_statistics') }}</b></td>
+			</tr>
 
 		{% for i in 1..config.vocations_amount %}
 		<tr bgcolor="{{ getStyle(i) }}">
@@ -51,100 +71,107 @@
 {# show skulls #}
 {% if setting('core.online_skulls') %}
 <table width="100%" cellspacing="1">
-	<tr>
-		<td style="background: {{ config.darkborder }};" align="center">
-			<img src="images/white_skull.gif"/> - 1 - 6 Frags<br/>
-			<img src="images/red_skull.gif"/> - 6+ Frags or Red Skull<br/>
-			<img src="images/black_skull.gif"/> - 10+ Frags or Black Skull
-		</td>
-	</tr>
+		<tr>
+			<td style="background: {{ config.darkborder }};" align="center">
+				<img src="images/white_skull.gif"/> <span data-i18n="online.skull.white">{{ __('online_skull_white') }}</span><br/>
+				<img src="images/red_skull.gif"/> <span data-i18n="online.skull.red">{{ __('online_skull_red') }}</span><br/>
+				<img src="images/black_skull.gif"/> <span data-i18n="online.skull.black">{{ __('online_skull_black') }}</span>
+			</td>
+		</tr>
 </table>
 {% endif %}
 
 <br/>
 
-{% set title = 'World Information' %}
+{% set title = __('online_world_information') %}
+{% set i18n_key = 'online.world_information' %}
 {% set tableClass = 'Table3' %}
 {% set background = config('darkborder') %}
 {% set content %}
 <table width="100%">
 	<tr>
-		<td class="LabelV150"><b>Status:</b></td>
-		<td>{% if not status.online %}Offline{% else %}Online{% endif %}</td>
+		<td class="LabelV150"><b data-i18n="online.status">{{ __('online_status') }}</b></td>
+		<td>{% if not status.online %}<span data-i18n="online.offline">Offline</span>{% else %}<span data-i18n="online.online">Online</span>{% endif %}</td>
 	</tr>
 	<tr>
-		<td class="LabelV150"><b>Players Online:</b></td>
+		<td class="LabelV150"><b data-i18n="status.players">{{ __('status_players_online') }}:</b></td>
 		<td>
-			{% if setting('core.online_afk') %}
+			{% if mode == 'classic74' and setting('core.online_afk') %}
 				{% set players_count = players|length %}
 				{% set afk = players_count - status.players %}
 				{% if afk < 0 %}
 					{% set players_count = players_count + afk|abs %}
 					{% set afk = 0 %}
 				{% endif %}
-				Currently there are <b>{{ status.players }}</b> active and <b>{{ afk }}</b> AFK players.<br/>
-				Total number of players: <b>{{ players_count }}</b>.<br/>
+				<span data-i18n="online.active_players_label">{{ __('online_active_players_label') }}</span>: <b>{{ status.players }}</b>, <span data-i18n="online.afk_players_label">{{ __('online_afk_players_label') }}</span>: <b>{{ afk }}</b>.<br/>
+				<span data-i18n="online.total_players_label">{{ __('online_total_players_label') }}</span>: <b>{{ players_count }}</b>.<br/>
+			{% elseif mode == 'all' %}
+				{{ __('server_classic74') }}: <b>{{ counts.classic74 }}</b>,
+				{{ __('server_modern') }}: <b>{{ counts.modern }}</b>,
+				{{ __('online_total_players_label') }}: <b>{{ counts.total }}</b>.
 			{% else %}
-				{{ players|length }}
+				{{ counts.total }}
 			{% endif %}
 		</td>
 	</tr>
 
-	{% if setting('core.online_record') and record|length > 0 %}
-	<tr>
-		<td class="LabelV150"><b>Online Record:</b></td>
-		<td>
-			{{ record }}
-		</td>
+		{% if setting('core.online_record') and record|length > 0 %}
+		<tr>
+			<td class="LabelV150"><b data-i18n="online.online_record">{{ __('online_online_record') }}</b></td>
+			<td>
+				{{ record }}
+			</td>
 	</tr>
 	{% endif %}
 
-	<tr>
-		<td class="LabelV150"><b>Location Datacenter:</b></td>
-		<td>{{ setting('core.online_datacenter') }} <small>(Server date & time: - {{ "now"|date("d/m/Y H:i:s") }})</small></td>
-	</tr>
-	<tr>
-		<td class="LabelV150"><b>PvP Type:</b></td>
-		<td>
-			{% set worldType = config('lua')['worldType']|lower %}
-			{% if worldType in ['pvp','2','normal','open','openpvp'] %}
-			Open PvP
-			{% elseif worldType in ['no-pvp','nopvp','non-pvp','nonpvp','1','safe','optional','optionalpvp'] %}
-			Optional PvP
-			{% elseif worldType in ['pvp-enforced','pvpenforced','pvp-enfo','pvpenfo','pvpe','enforced','enfo','3','war','hardcore','hardcorepvp'] %}
-			Hardcore PvP
-			{% endif %}
-		</td>
-	</tr>
+			<tr>
+				<td class="LabelV150"><b data-i18n="online.location_datacenter">{{ __('online_location_datacenter') }}</b></td>
+				<td>{{ setting('core.online_datacenter') }} <small>(<span data-i18n="online.server_datetime">{{ __('online_server_datetime') }}</span> - {{ "now"|date("d/m/Y H:i:s") }})</small></td>
+			</tr>
+			<tr>
+				<td class="LabelV150"><b data-i18n="online.pvp_type">{{ __('online_pvp_type') }}</b></td>
+				<td>
+					{% set worldType = config('lua')['worldType']|lower %}
+				{% if worldType in ['pvp','2','normal','open','openpvp'] %}
+				<span data-i18n="online.pvp.open">{{ __('online_pvp_open') }}</span>
+				{% elseif worldType in ['no-pvp','nopvp','non-pvp','nonpvp','1','safe','optional','optionalpvp'] %}
+				<span data-i18n="online.pvp.optional">{{ __('online_pvp_optional') }}</span>
+				{% elseif worldType in ['pvp-enforced','pvpenforced','pvp-enfo','pvpenfo','pvpe','enforced','enfo','3','war','hardcore','hardcorepvp'] %}
+				<span data-i18n="online.pvp.hardcore">{{ __('online_pvp_hardcore') }}</span>
+				{% endif %}
+			</td>
+		</tr>
 </table>
 {% endset %}
 {% include 'tables.headline.html.twig' %}
 <br/>
 <br/>
 
-{% set title = 'Players Online' %}
+{% set title = __('status_players_online') %}
+{% set i18n_key = 'online.players_online_heading' %}
 {% set tableClass = 'Table2' %}
 {% set content %}
 <table width="100%">
 	<tr class="LabelH" style="position: relative; z-index: 20;">
 		{% if setting('core.account_country') %}
-			<td width="11px"><a href="{{ getLink('online')}}?order=country_{{ order == 'country_asc' ? 'desc' : 'asc' }}">#&#160;&#160;</a>
+			<td width="11px"><a href="{{ getLink('online')}}?order=country_{{ order == 'country_asc' ? 'desc' : 'asc' }}{{ modeQuery }}">#&#160;&#160;</a>
 			</td>
 		{% endif %}
-		{% if setting('core.online_outfit') %}
-			<td><b>Outfit</b></td>
-		{% endif %}
-		<td style="text-align:left; width:50%">Name&#160;&#160;
-			<small style="font-weight:normal">[<a href="{{ getLink('online')}}?order=name_{{ order == 'name_asc' ? 'desc' : 'asc' }}">sort</a>]</small>
-			<img class="sortarrow" src="images/{{ order == 'name_asc' ? 'order_desc' : (order == 'name_desc' ? 'order_asc' : 'news/blank') }}.gif"/></td>
-		<td style="text-align:left;width:30%">Level&#160;&#160;
-			<small style="font-weight:normal">[<a href="{{ getLink('online')}}?order=level_{{ order == 'level_asc' ? 'desc' : 'asc' }}">sort</a>]</small>
-			<img class="sortarrow" src="images/{{ order == 'level_asc' ? 'order_desc' : (order == 'level_desc' ? 'order_asc' : 'news/blank') }}.gif"/>
-		</td>
-		<td style="text-align:left;width:50%">Vocation&#160;&#160;
-			<small style="font-weight:normal">[<a href="{{ getLink('online')}}?order=vocation_{{ order == 'vocation_asc' ? 'desc' : 'asc' }}">sort</a>]</small>
-			<img class="sortarrow" src="images/{{ order == 'vocation_asc' ? 'order_desc' : (order == 'vocation_desc' ? 'order_asc' : 'news/blank') }}.gif"/>
-		</td>
+			{% if setting('core.online_outfit') %}
+				<td><b data-i18n="online.outfit">{{ __('online_outfit') }}</b></td>
+			{% endif %}
+			<td style="text-align:left; width:50%"><span data-i18n="online.name">{{ __('col_name') }}</span>&#160;&#160;
+				<small style="font-weight:normal">[<a href="{{ getLink('online')}}?order=name_{{ order == 'name_asc' ? 'desc' : 'asc' }}{{ modeQuery }}"><span data-i18n="online.sort">{{ __('common_sort') }}</span></a>]</small>
+				<img class="sortarrow" src="images/{{ order == 'name_asc' ? 'order_desc' : (order == 'name_desc' ? 'order_asc' : 'news/blank') }}.gif"/></td>
+			<td style="text-align:left;width:30%"><span data-i18n="highscores.level">{{ __('col_level') }}</span>&#160;&#160;
+				<small style="font-weight:normal">[<a href="{{ getLink('online')}}?order=level_{{ order == 'level_asc' ? 'desc' : 'asc' }}{{ modeQuery }}"><span data-i18n="online.sort">{{ __('common_sort') }}</span></a>]</small>
+				<img class="sortarrow" src="images/{{ order == 'level_asc' ? 'order_desc' : (order == 'level_desc' ? 'order_asc' : 'news/blank') }}.gif"/>
+			</td>
+			<td style="text-align:left;width:28%"><span>{{ __('character_world') }}</span></td>
+			<td style="text-align:left;width:50%"><span data-i18n="online.vocation">{{ __('col_vocation') }}</span>&#160;&#160;
+				<small style="font-weight:normal">[<a href="{{ getLink('online')}}?order=vocation_{{ order == 'vocation_asc' ? 'desc' : 'asc' }}{{ modeQuery }}"><span data-i18n="online.sort">{{ __('common_sort') }}</span></a>]</small>
+				<img class="sortarrow" src="images/{{ order == 'vocation_asc' ? 'order_desc' : (order == 'vocation_desc' ? 'order_asc' : 'news/blank') }}.gif"/>
+			</td>
 	</tr>
 
 	{% set i = 0 %}
@@ -157,13 +184,14 @@
 			{% endif %}
 
 			{% if setting('core.online_outfit') %}
-				<td width="5%"><img style="position:absolute;margin-top:-48px;margin-left:-70px;" src="{{ player.outfit }}" alt="player outfit"/></td>
+				<td width="5%"><img style="position:absolute;margin-top:-48px;margin-left:-70px;" src="{{ player.outfit }}" alt="{{ __('player_outfit_alt') }}"/></td>
 			{% endif %}
 
 			<td style="width:70%; text-align:left">
 				{{ player.name|raw }}{{ player.skull|raw }}
 			</td>
 			<td style="width:10%">{{ player.level }}</td>
+			<td style="width:18%; text-align:left">{{ player.server_label }}</td>
 			<td style="width:20%">{{ player.vocation }}</td>
 		</tr>
 	{% endfor %}

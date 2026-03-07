@@ -79,7 +79,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			local realRoll = math.random(30)
 			local roll = math.random(5)
 			if realRoll < 30 then
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zebron.say_1", { roll })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zebron.say_13", { roll })
 			else
 				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zebron.say_4")
 				player:addItem(5792, 1)
@@ -118,7 +118,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		npc:getPosition():sendMagicEffect(CONST_ME_CRAPS)
 		local roll = math.random(6)
 		if roll < 6 then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zebron.say_2", { roll })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zebron.say_14", { roll })
 		else
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.zebron.say_3", { amount * 5 })
 			player:addMoney(amount * 5)

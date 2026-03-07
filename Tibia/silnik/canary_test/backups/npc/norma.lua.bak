@@ -185,7 +185,7 @@ keywordHandler:addAliasKeyword({ "zerbrus" })
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.norma.walkaway_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.norma.farewell_msg_1")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Take all the time you need to decide what you want!")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.norma.sendtrade_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.norma.greet_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)

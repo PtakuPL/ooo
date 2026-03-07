@@ -185,27 +185,27 @@
   },
   "npc.a_behemoth.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! এটা নিচে রাখুন! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! এটা নিচে রাখুন! <আপনাকে দৈত্য কার্যকলাপের উপর একটি বিস্তৃত প্রতিবেদন দেয়>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:20:37.746303Z"
+    "updated_at": "2026-02-21T09:32:56.743165Z"
   },
   "npc.a_behemoth.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! এটা নিচে রাখুন! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! এটা নিচে রাখুন! <আপনাকে দৈত্য কার্যকলাপের উপর একটি বিস্তৃত প্রতিবেদন দেয়>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:20:37.746992Z"
+    "updated_at": "2026-02-21T09:32:56.743691Z"
   },
   "npc.a_behemoth.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! এটা নিচে রাখুন! <gives you an elaborate report on monster activity>",
+    "text": "Pssst! এটা নিচে রাখুন! <আপনাকে দৈত্য কার্যকলাপের উপর একটি বিস্তৃত প্রতিবেদন দেয়>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T01:20:37.747661Z"
+    "updated_at": "2026-02-21T09:32:56.744220Z"
   },
   "npc.a_dead_bureaucrat.greet_msg_1": {
     "src_hash": "1fb51950fc35d0b9f7979cbb0fff81b2",
@@ -1473,83 +1473,83 @@
   },
   "npc.a_dragon_lord.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! এটা নিচে রাখুন! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! এটা নিচে রাখুন! <আপনাকে দৈত্য কার্যকলাপের উপর একটি বিস্তৃত প্রতিবেদন দেয়>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:23:40.159240Z"
+    "updated_at": "2026-02-21T09:32:59.658886Z"
   },
   "npc.a_dragon_lord.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! এটা নিচে রাখুন! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! এটা নিচে রাখুন! <আপনাকে দৈত্য কার্যকলাপের উপর একটি বিস্তৃত প্রতিবেদন দেয়>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:23:40.160008Z"
+    "updated_at": "2026-02-21T09:32:59.659416Z"
   },
   "npc.a_dragon_lord.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! এটা নিচে রাখুন! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! এটা নিচে রাখুন! <আপনাকে দৈত্য কার্যকলাপের উপর একটি বিস্তৃত প্রতিবেদন দেয়>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:23:40.160750Z"
+    "updated_at": "2026-02-21T09:33:02.883108Z"
   },
   "npc.a_drillworm.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! এটা নিচে রাখুন! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! এটা নিচে রাখুন! <আপনাকে দৈত্য কার্যকলাপের উপর একটি বিস্তৃত প্রতিবেদন দেয়>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:23:40.161660Z"
+    "updated_at": "2026-02-21T09:33:02.883618Z"
   },
   "npc.a_drillworm.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! এটা নিচে রাখুন! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! এটা নিচে রাখুন! <আপনাকে দৈত্য কার্যকলাপের উপর একটি বিস্তৃত প্রতিবেদন দেয়>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:23:40.162392Z"
+    "updated_at": "2026-02-21T09:33:02.884110Z"
   },
   "npc.a_drillworm.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! এটা নিচে রাখুন! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! এটা নিচে রাখুন! <আপনাকে দৈত্য কার্যকলাপের উপর একটি বিস্তৃত প্রতিবেদন দেয়>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:23:40.163151Z"
+    "updated_at": "2026-02-21T09:33:02.884599Z"
   },
   "npc.a_lost_basher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! এটা নিচে রাখুন! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! এটা নিচে রাখুন! <আপনাকে দৈত্য কার্যকলাপের উপর একটি বিস্তৃত প্রতিবেদন দেয়>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:23:40.164462Z"
+    "updated_at": "2026-02-21T09:33:09.632995Z"
   },
   "npc.a_lost_basher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! এটা নিচে রাখুন! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! এটা নিচে রাখুন! <আপনাকে দৈত্য কার্যকলাপের উপর একটি বিস্তৃত প্রতিবেদন দেয়>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:23:40.165231Z"
+    "updated_at": "2026-02-21T09:33:09.633519Z"
   },
   "npc.a_lost_basher.greet_msg_3": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! এটা নিচে রাখুন! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! এটা নিচে রাখুন! <আপনাকে দৈত্য কার্যকলাপের উপর একটি বিস্তৃত প্রতিবেদন দেয়>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:23:40.165976Z"
+    "updated_at": "2026-02-21T09:33:09.634024Z"
   },
   "npc.a_lost_husher.greet_msg_1": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
-    "text": "Pssst! এটা নিচে রাখুন! <gives you an elaborate report on monster activity>",
-    "source": "word_dict",
-    "confidence": 0.92,
+    "text": "Pssst! এটা নিচে রাখুন! <আপনাকে দৈত্য কার্যকলাপের উপর একটি বিস্তৃত প্রতিবেদন দেয়>",
+    "source": "google_translate",
+    "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:23:40.166735Z"
+    "updated_at": "2026-02-21T09:33:09.634523Z"
   },
   "npc.a_lost_husher.greet_msg_2": {
     "src_hash": "9db6041114d8fa56e973e38355fd9e60",
@@ -1841,11 +1841,11 @@
   },
   "npc.a_fluffy_squirrel.sendtrade_msg_1": {
     "src_hash": "03c8f51bfe7975b94ce3c76ec9647116",
-    "text": "ছচছ. ছহ! <you're not sure, but it seems that squirrel wants to trade your valuable acorns for useless stones that it found and considered uneatable>",
+    "text": "ছচছ. ছহ! <আপনি নিশ্চিত নন, তবে মনে হচ্ছে কাঠবিড়ালি আপনার মূল্যবান অ্যাকর্নের অকেজো পাথরের জন্য ব্যবসা করতে চায় যা এটি খুঁজে পেয়েছিল এবং এটি খাওয়ার অযোগ্য বলে বিবেচিত হয়েছিল>",
     "source": "google_translate",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-02-14T06:24:01.668703Z"
+    "updated_at": "2026-02-21T09:33:06.919882Z"
   },
   "npc.a_fluffy_squirrel.stdmod_1": {
     "src_hash": "ac2f68634467394485198b5db1d3f7a3",
@@ -2574,5 +2574,101 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-02-14T07:56:24.500186Z"
+  },
+  "npc.canary.farewell_msg_1": {
+    "src_hash": "588e73837fba9553ffca81df889548ec",
+    "text": "হ্যাঁ, বিদায় এবং আর এসো না!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:54.205380Z"
+  },
+  "npc.a_dead_bureaucrat1.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "হাই পুমিন। হ্যাঁ, শিলাবৃষ্টি।.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:56.745306Z"
+  },
+  "npc.a_dead_bureaucrat2.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "হাই পুমিন। হ্যাঁ, শিলাবৃষ্টি।.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:56.745643Z"
+  },
+  "npc.a_dead_bureaucrat3.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "হাই পুমিন। হ্যাঁ, শিলাবৃষ্টি।.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:59.657405Z"
+  },
+  "npc.a_dead_bureaucrat4.voice_2": {
+    "src_hash": "e77105e8c04ed0b00ebdea90f9e4463c",
+    "text": "হাই পুমিন। হ্যাঁ, শিলাবৃষ্টি।.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:32:59.658351Z"
+  },
+  "npc.a_fading_memory.greet_msg_1": {
+    "src_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
+    "text": "ওহ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:33:02.884783Z"
+  },
+  "npc.a_fluffy_squirrel.farewell_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "ছ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:33:02.884953Z"
+  },
+  "npc.a_fluffy_squirrel.greet_msg_1": {
+    "src_hash": "e7c179e419e210af295f41ecac05aa1b",
+    "text": "ছছছ?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:33:06.919037Z"
+  },
+  "npc.a_fluffy_squirrel.voice_1": {
+    "src_hash": "9280e35fe8a04c63939438a4aded92fa",
+    "text": "ছচছ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:33:06.920224Z"
+  },
+  "npc.a_fluffy_squirrel.walkaway_msg_1": {
+    "src_hash": "0d0fa573b6610b79f1936f9a9fc407ac",
+    "text": "ছ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:33:06.920436Z"
+  },
+  "npc.a_ghostly_sage.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "গুড বাই।.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:33:06.920669Z"
+  },
+  "npc.a_ghostly_sage.walkaway_msg_1": {
+    "src_hash": "dd4dd73f3c2fe38f2d02c9b2a246f3ce",
+    "text": "তারপর বিদায়।.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-02-21T09:33:09.632467Z"
   }
 }

@@ -304,7 +304,7 @@ int Crypt::rsaGetSize()
 {
 #ifdef USE_GMP
     size_t count = (mpz_sizeinbase(m_n, 2) + 7) / 8;
-    return ((int)count / 128) * 128;
+    return (static_cast<int>(count) / 128) * 128;
 #else
     return RSA_size(m_rsa);
 #endif

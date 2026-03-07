@@ -1,16 +1,16 @@
-{% set title = 'House Search' %}
+{% set title = 'Wyszukiwanie domów' %}
 {% set content %}
 {% if errors is not empty %}
 	{% for error in errors %}
 		<p class="error">{{ error }}</p>
 	{% endfor %}
 {% else %}
-Here you can see the list of all available houses, flats{{ guildString }}.
-Click on any view button to get more information about a house or adjust
-the search criteria and start a new search.
+Tutaj możesz zobaczyć listę wszystkich dostępnych domów, mieszkań{{ guildString }}.
+Kliknij przycisk podglądu, aby uzyskać więcej informacji o domu lub zmień
+kryteria wyszukiwania i rozpocznij nowe wyszukiwanie.
 <br><br>
 {% if cleanOldHouse is not empty or rentType != 'never' %}
-	Every morning during global server save there is automatic house cleaning. Server delete house owners who have not logged in last {{ cleanOldHouse }} days{% if rentType != 'never' %} or have not paid {{ rentType }} house rent. Remember to leave money for a rent in {% if config.lua.bankSystem is not empty %}your house bank or {% else %}depo in same city where you have house!{% endif %}{% else %}.{% endif %}
+	Co rano podczas globalnego zapisu serwera odbywa się automatyczne czyszczenie domów. Serwer usuwa właścicieli domów, którzy nie logowali się od {{ cleanOldHouse }} dni{% if rentType != 'never' %} lub nie zapłacili {{ rentType }} czynszu za dom. Pamiętaj o zostawieniu pieniędzy na czynsz w {% if config.lua.bankSystem is not empty %}banku domu lub {% else %}depo w mieście, w którym masz dom!{% endif %}{% else %}.{% endif %}
 	<br><br>
 {% endif %}
 
@@ -18,19 +18,19 @@ the search criteria and start a new search.
 <table border="0" cellspacing="1" cellpadding="4" width="100%">
 	<tbody>
 		<tr bgcolor="{{ config.vdarkborder }}">
-			<td colspan="6" class="white"><b>Available {{ houseType }}{% if townName is not empty %} in {{ townName }}{% endif %} on <b>{{ config.lua.serverName }}</b></b></td>
+			<td colspan="6" class="white"><b>Dostępne {{ houseType }}{% if townName is not empty %} w {{ townName }}{% endif %} na <b>{{ config.lua.serverName }}</b></b></td>
 		</tr>
 
 		<tr bgcolor="{{ config.darkborder }}">
 			{% if houses is not empty %}
-				<td width="40%"><b>Name</b></td>
-				<td width="10%"><b>Size</b></td>
-				<td width="10%"><b>Rent</b></td>
+				<td width="40%"><b>Nazwa</b></td>
+				<td width="10%"><b>Rozmiar</b></td>
+				<td width="10%"><b>Czynsz</b></td>
 
 				<td width="40%"><b>Status</b></td>
 				<td>&nbsp;</td>
 			{% elseif housesSearch %}
-				<td>No {{ houseType }} with specified criterias.</td>
+				<td>Brak {{ houseType }} spełniających podane kryteria.</td>
 			{% endif %}
 		</tr>
 
@@ -48,7 +48,7 @@ the search criteria and start a new search.
 					</td>
 
 					<td width="10%">
-						{{ house.rent }} golds
+						{{ house.rent }} szt. złota
 					</td>
 
 					<td width="40%">
@@ -72,13 +72,13 @@ the search criteria and start a new search.
 	<table border="0" cellspacing="1" cellpadding="4" width="100%">
 		<tbody>
 			<tr bgcolor="{{ config.vdarkborder }}">
-				<td colspan="4" class="white"><b>House Search</b></td>
+				<td colspan="4" class="white"><b>Wyszukiwanie domów</b></td>
 			</tr>
 
 			<tr bgcolor="{{ config.darkborder }}">
-				<td width="25%"><b>Town</b></td>
+				<td width="25%"><b>Miasto</b></td>
 				<td width="25%"><b>Status</b></td>
-				<td width="25%"><b>Order</b></td>
+				<td width="25%"><b>Kolejność</b></td>
 			</tr>
 
 			<tr bgcolor="{{ config.darkborder }}">
@@ -102,35 +102,35 @@ the search criteria and start a new search.
 
 				<td valign="top">
 					<input type="radio" name="state" id="state_all" value=""{% if state is empty %} checked{% endif %}>
-					<label for="state_all">all states</label><br>
+					<label for="state_all">wszystkie</label><br>
 
 					<input type="radio" name="state" id="state_free" value="free"{% if state == 'free' %} checked{% endif %}>
-					<label for="state_free">free</label><br>
+					<label for="state_free">wolne</label><br>
 
 					<input type="radio" name="state" id="state_rented" value="rented"{% if state == 'rented' %} checked{% endif %}>
-					<label for="state_rented">rented</label><br>
+					<label for="state_rented">wynajęte</label><br>
 				</td>
 
 				<td valign="top" rowspan="2">
 					<input type="radio" name="order" id="order_name" value=""{% if order is empty %} checked{% endif %}>
-					<label for="order_name"> by name</label><br>
+					<label for="order_name">wg nazwy</label><br>
 
 					<input type="radio" name="order" id="order_size" value="size"{% if order == 'size' %} checked{% endif %}>
-					<label for="order_size"> by size</label><br>
+					<label for="order_size">wg rozmiaru</label><br>
 
 					<input type="radio" name="order" id="order_rent" value="rent"{% if order == 'rent' %} checked{% endif %}>
-					<label for="order_rent"> by rent</label><br>
+					<label for="order_rent">wg czynszu</label><br>
 				</td>
 			</tr>
 
 			<tr bgcolor="{{ config.darkborder }}">
 				<td valign="top">
 					<input type="radio" name="type" id="type_all" value=""{% if type is empty %} checked{% endif %}>
-					<label for="type"> all</label><br>
+					<label for="type">wszystkie</label><br>
 					<input type="radio" name="type" id="type_houses" value="houses"{% if type == 'houses' %} checked{% endif %}>
-					<label for="type_houses"> houses and flats</label><br>
+					<label for="type_houses"> domy i mieszkania</label><br>
 					<input type="radio" name="type" id="type_guildhalls" value="guildhalls"{% if type == 'guildhalls' %} checked{% endif %}>
-					<label for="type_guildhalls"> guildhalls</label><br>
+					<label for="type_guildhalls"> hale gildii</label><br>
 				</td>
 			</tr>
 		</tbody>

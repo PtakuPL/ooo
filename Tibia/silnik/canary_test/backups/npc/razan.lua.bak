@@ -57,40 +57,40 @@ local config = {
 		itemId = 5883,
 		count = 100,
 		storageValue = 1,
-		text = {
-			"Have you really managed to fulfil the task and brought me 100 pieces of ape fur?",
-			"Only ape fur is good enough to touch the feet of our Caliph.",
-			"Ahhh, this softness! I'm impressed, |PLAYERNAME|. You're on the best way to earn that turban. Now, please retrieve 100 fish fins.",
+		textKey = {
+			"npc.razan.ape_fur_ask",
+			"npc.razan.ape_fur_info",
+			"npc.razan.ape_fur_done",
 		},
 	},
 	["fish fins"] = {
 		itemId = 5895,
 		count = 100,
 		storageValue = 2,
-		text = {
-			"Were you able to discover the undersea race and retrieved 100 fish fins?",
-			"I really wonder what the explorer society is up to. Actually I have no idea how they managed to dive unterwater.",
-			"I never thought you'd make it, |PLAYERNAME|. Now we only need two enchanted chicken wings to start our waterwalking test!",
+		textKey = {
+			"npc.razan.fish_fins_ask",
+			"npc.razan.fish_fins_info",
+			"npc.razan.fish_fins_done",
 		},
 	},
 	["enchanted chicken wings"] = {
 		itemId = 5891,
 		count = 2,
 		storageValue = 3,
-		text = {
-			"Were you able to get hold of two enchanted chicken wings?",
-			"Enchanted chicken wings are actually used to make boots of haste, so they could be magically extracted again. Djinns are said to be good at that.",
-			"Great, thank you very much. Just bring me 100 pieces of blue cloth now and I will happily show you how to make a turban.",
+		textKey = {
+			"npc.razan.chicken_wings_ask",
+			"npc.razan.chicken_wings_info",
+			"npc.razan.chicken_wings_done",
 		},
 	},
 	["blue cloth"] = {
 		itemId = 5912,
 		count = 100,
 		storageValue = 4,
-		text = {
-			"Ah, have you brought the 100 pieces of blue cloth?",
-			"It's a great material for turbans.",
-			"Ah! Congratulations - even if you are not a true weaponmaster, you surely deserve to wear this turban. Here, I'll tie it for you.",
+		textKey = {
+			"npc.razan.blue_cloth_ask",
+			"npc.razan.blue_cloth_info",
+			"npc.razan.blue_cloth_done",
 		},
 	},
 }
@@ -112,11 +112,11 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif config[message] and npcHandler:getTopic(playerId) == 0 then
 		if player:getStorageValue(Storage.Quest.U7_8.OrientalOutfits.SecondOrientalAddon) == config[message].storageValue then
-			npcHandler:say(config[message].text[1], npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, config[message].textKey[1])
 			npcHandler:setTopic(playerId, 3)
 			topic[playerId] = message
 		else
-			npcHandler:say(config[message].text[2], npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, config[message].textKey[2])
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
@@ -147,7 +147,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:addOutfitAddon(146, 2) -- male addon
 				player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			end
-			npcHandler:say(targetMessage.text[3], npc, creature)
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, targetMessage.textKey[3])
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "no") and npcHandler:getTopic(playerId) ~= 0 then

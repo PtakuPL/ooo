@@ -23,7 +23,17 @@
     "settingChannel": "Channel:",
     "settingLanguage": "Language:",
     "settingInstallPath": "Install path:",
-    "languagePacks": "Language packs:"
+    "languagePacks": "Language packs:",
+    "launcherAccountName": "Launcher account name:",
+    "launcherAccountEmail": "Launcher account email:",
+    "launcherAccountPassword": "Launcher account password:",
+    "launcherAccountPasswordConfirm": "Confirm launcher account password:",
+    "launcherAccountNamePlaceholder": "player123",
+    "launcherAccountEmailPlaceholder": "player@email.com",
+    "launcherAccountPasswordPlaceholder": "Enter account password",
+    "launcherAccountPasswordConfirmPlaceholder": "Repeat account password",
+    "launcherSessionKey": "Launcher session key:",
+    "launcherSessionKeyPlaceholder": "Paste sessionKey from launcher login"
   },
   "buttons": {
     "play": "▶ Launch game",
@@ -32,6 +42,10 @@
     "playLaunched": "✅ Started",
     "checkUpdates": "🔄 Check for updates",
     "checkingUpdates": "🔄 Checking…",
+    "loginAccount": "🔐 Login account",
+    "loggingInAccount": "🔐 Logging in…",
+    "registerAccount": "🆕 Create account",
+    "registeringAccount": "🆕 Registering…",
     "createCharacterClassic": "🧙 Create character Tibia 7.4",
     "createCharacterModern": "⚔ Create character Modern",
     "website": "🌐 Website",
@@ -122,7 +136,18 @@
   },
   "alerts": {
     "logsExported": "Logs exported to:\n{0}",
-    "logsExportError": "Log export error: {0}"
+    "logsExportError": "Log export error: {0}",
+    "accountLoginMissingCredentials": "Provide launcher account email and password.",
+    "accountLoginInProgress": "Launcher account login in progress…",
+    "accountLoginSuccess": "Account logged in.",
+    "accountLoginError": "Account login failed: {0}",
+    "accountRegisterMissingFields": "Provide account name, email, password and password confirmation.",
+    "accountRegisterInProgress": "Launcher account registration in progress…",
+    "accountRegisterSuccessAutoLogin": "Account created and logged in.",
+    "accountRegisterSuccessNoAutoLogin": "Account created, but auto-login failed ({0}). Use Login account button.",
+    "accountRegisterError": "Account registration failed: {0}",
+    "createCharacterFallbackMissingSession": "No sessionKey provided. Opening website form without auto-login.",
+    "createCharacterFallbackError": "Could not prepare website auto-login ({0}). Opening form without auto-login."
   },
   "errors": {
     "launcherUpdateRequired": "Launcher update required to v{0}",

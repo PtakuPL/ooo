@@ -107,3 +107,36 @@ Poprawka wdrożona lokalnie (2026-03-05):
 
 Status:
 - ⏳ Oczekuje na nowy run Canary po pushu poprawek.
+
+## [2026-03-05 13:08] Build #22717070014 — ✅ PASS
+
+Commit: `652c0e033`
+Branch: `feature/ticket-gate`
+Trigger: `push`
+Run URL: https://github.com/PtakuPL/ooo/actions/runs/22717070014
+
+Jobs:
+- canary-ubuntu-22.04-linux-release: ✅ PASS
+- canary-ubuntu-22.04-linux-debug: ✅ PASS
+- canary-ubuntu-24.04-linux-release: ✅ PASS
+- canary-ubuntu-24.04-linux-debug: ✅ PASS
+
+Czas trwania: 30m 26s
+
+Artefakty (4):
+- canary-ubuntu-22.04-linux-debug-652c0e033 (100 MB)
+- canary-ubuntu-22.04-linux-release-652c0e033 (54.1 MB)
+- canary-ubuntu-24.04-linux-debug-652c0e033 (105 MB)
+- canary-ubuntu-24.04-linux-release-652c0e033 (54.7 MB)
+
+Warningi (32, bez błędów kompilacji):
+- `-Wrange-loop-construct` w protocolgame.cpp (L6255, L6277, L7735) — structured bindings kopiują zamiast referencji
+- `-Wunused-variable` charmPoints (protocolgame.cpp:3215), ghost (creature_functions.cpp:1348)
+- `-Wparentheses` w game.cpp:7474 — brak nawiasów wokół && w ||
+- LogCollection warns dot. brakujących cmake-get-vars logów (luajit, gmp, openssl) — normalne
+
+Wniosek:
+- ✅ **KOMPILACJA CANARY SERWERA PRZESZŁA** — RSA/OpenSSL bloker naprawiony.
+- ✅ Ticket-gate (C1-C5), Feature flags (D1-D10), nonce/iat flow — wszystko kompiluje się poprawnie.
+- ⚠️ Warningi do domknięcia w przyszłości (nie blokujące).
+- Zadania A8 (OTClient build) i C6 (Canary build) mogą być oznaczone jako 🟢 GOTOWE na Linux.

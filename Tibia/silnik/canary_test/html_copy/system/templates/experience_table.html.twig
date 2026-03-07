@@ -1,17 +1,17 @@
-This is a list of the experience points that are required to advance to the various levels.
-Remember you can also check the respective skill bar in your skill window of the client to check your progress towards the next level.<br/><br/>
+Poniżej znajduje się lista punktów doświadczenia wymaganych do osiągnięcia kolejnych poziomów.
+Pamiętaj, że możesz również sprawdzić pasek umiejętności w oknie klienta, aby śledzić postęp do następnego poziomu.<br/><br/>
 
 <table bgcolor="{{ config.darkborder }}" border="0" cellpadding="4" cellspacing="1" width="100%">
 	<tr bgcolor="{{ config.vdarkborder }}">
-		<td class="white" colspan="5"><b>Experience Table</b></td>
+		<td class="white" colspan="5"><b>Tabela doświadczenia</b></td>
 	</tr>
 	<tr>
 	{% for i in 0..setting('core.experience_table_columns')-1 %}
 		<td>
 			<table border="0" cellpadding="2" cellspacing="1" width="100%">
 				<tr bgcolor="{{ config.lightborder }}">
-					<td><b>Level</b></td>
-					<td><b>Experience</b></td>
+					<td><b>Poziom</b></td>
+					<td><b>Doświadczenie</b></td>
 				</tr>
 				{% for level in i * setting('core.experience_table_rows') + 1..i * setting('core.experience_table_rows') + (setting('core.experience_table_rows') + 1) - 1 %}
 				<tr bgcolor="{{ config.lightborder }}">

@@ -3,14 +3,15 @@
   "lang": "pl",
   "conditions": {
     "no_critical_token_errors": {
-      "ok": false,
+      "ok": true,
       "guard_placeholder": 0,
-      "guard_pipe": 1
+      "guard_pipe": 0
     },
     "guard_command_below_threshold": {
       "ok": true,
       "guard_command": 0,
-      "threshold": 5
+      "threshold": 5,
+      "source": "file_state_audit"
     },
     "coverage_above_95pct": {
       "ok": false,
@@ -19,10 +20,10 @@
       "real_translations": 169
     },
     "quality_entry_present": {
-      "ok": true,
-      "has_quality_data": true
+      "ok": false,
+      "has_quality_data": false
     }
   },
   "is_done": false,
-  "timestamp": "2026-02-15T12:10:59.467157Z"
+  "timestamp": "2026-02-20T23:45:09.807524Z"
 }

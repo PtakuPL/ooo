@@ -82,7 +82,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.TrollTask, 1)
 				return true
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.say_1", { player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.TrollCount) })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.say_18", { player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.TrollCount) })
 				return true
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.GoblinTask) == 0 then
@@ -93,7 +93,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.GoblinTask, 1)
 				return true
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.say_2", { player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.GoblinCount) })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.say_19", { player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.GoblinCount) })
 				return true
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.RotwormTask) == 0 then
@@ -104,7 +104,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.RotwormTask, 1)
 				return true
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.say_3", { player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.RotwormCount) })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.say_20", { player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.RotwormCount) })
 				return true
 			end
 		elseif player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.CyclopsTask) == 0 then
@@ -115,7 +115,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				player:setStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.CyclopsTask, 1)
 				return true
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.say_4", { player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.CyclopsCount) })
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.daniel_steelsoul.say_21", { player:getStorageValue(Storage.Quest.U8_5.KillingInTheNameOf.MonsterKillCount.CyclopsCount) })
 				return true
 			end
 		end

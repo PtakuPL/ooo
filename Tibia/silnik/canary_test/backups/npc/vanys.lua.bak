@@ -158,9 +158,9 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 end
 
-npcHandler:setMessage(MESSAGE_GREET, "Greetings hero. I guess you came to {talk}.")
-npcHandler:setMessage(MESSAGE_FAREWELL, "Well, bye then.")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Well, bye then.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.vanys.greet_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.vanys.farewell_msg_1")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.vanys.walkaway_msg_1")
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 

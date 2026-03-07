@@ -10,17 +10,17 @@
 	<tr style="display: inline-flex;">
 		<td><img src="{{ imgPath }}"></td>
 		<td>
-			{{ bedsMessage }} and has a size of <b>{{ houseSize }} square meters</b>.
+			{{ bedsMessage }} i ma rozmiar <b>{{ houseSize }} metrów kwadratowych</b>.
 
 			{% if rentType != 'never' %}
-				The {{ rentType }} is <b>{{ houseRent }} gold</b> and will be debited to the bank account on <b>{{ config.lua.serverName }}</b>.
+				Czynsz {{ rentType }} wynosi <b>{{ houseRent }} złota</b> i będzie pobierany z konta bankowego na <b>{{ config.lua.serverName }}</b>.
 			{% endif %}
 			<br>
 
 			{% if owner is not empty  %}
-			The house has been rented by <b>{{ owner|raw }}</b>.
+			Ten dom został wynajęty przez <b>{{ owner|raw }}</b>.
 			{% else %}
-			No one has bought this house yet.
+			Nikt jeszcze nie kupił tego domu.
 			{% endif %}
 		</td>
 	</tr>

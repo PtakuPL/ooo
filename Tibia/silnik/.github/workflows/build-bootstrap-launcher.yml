@@ -1,0 +1,180 @@
+# Build Bootstrap Launcher — lekki launcher (~KB) do dystrybucji
+# BL-11: Build Windows + Linux, upload artefaktu
+# BL-12: Weryfikacja rozmiaru < 512 KB
+# BL-13: SHA-256 hash obok artefaktu
+
+name: Build Bootstrap Launcher
+
+on:
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: 'Build profile (release / debug)'
+        required: false
+        default: 'release'
+        type: choice
+        options:
+          - release
+          - debug
+  push:
+    branches: [feature/ticket-gate]
+    paths:
+      - 'launcher-rust/apps/launcher-bootstrap/**'
+      - 'launcher-rust/Cargo.toml'
+      - 'launcher-rust/Cargo.lock'
+
+defaults:
+  run:
+    working-directory: launcher-rust
+
+env:
+  CARGO_TERM_COLOR: always
+  # Maksymalny akceptowalny rozmiar binarki (bajty): 512 KB
+  MAX_SIZE_BYTES: 524288
+
+jobs:
+  # ─────────────────────────────────────────────────
+  # 1. Build bootstrap launcher (Windows + Linux)
+  # ─────────────────────────────────────────────────
+  build-bootstrap:
+    name: Bootstrap (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            target: x86_64-unknown-linux-gnu
+            artifact_suffix: linux-x86_64
+            exe_name: launcher-bootstrap
+          - os: windows-latest
+            target: x86_64-pc-windows-msvc
+            artifact_suffix: windows-x86_64
+            exe_name: launcher-bootstrap.exe
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            launcher-rust/target
+          key: bootstrap-${{ runner.os }}-cargo-${{ hashFiles('launcher-rust/Cargo.lock') }}
+          restore-keys: bootstrap-${{ runner.os }}-cargo-
+
+      - name: Determine profile
+        id: profile
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "flag=${{ github.event.inputs.profile == 'debug' && '' || '--release' }}" >> "$GITHUB_OUTPUT"
+            echo "dir=${{ github.event.inputs.profile == 'debug' && 'debug' || 'release' }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "flag=--release" >> "$GITHUB_OUTPUT"
+            echo "dir=release" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build bootstrap launcher
+        run: cargo build --package launcher-bootstrap ${{ steps.profile.outputs.flag }} --target ${{ matrix.target }}
+
+      - name: Collect binary
+        shell: bash
+        run: |
+          mkdir -p ../artifacts
+          cp target/${{ matrix.target }}/${{ steps.profile.outputs.dir }}/${{ matrix.exe_name }} ../artifacts/launcher-bootstrap-${{ matrix.artifact_suffix }}${{ runner.os == 'Windows' && '.exe' || '' }}
+
+      # ── BL-12: Weryfikacja rozmiaru ──
+      - name: Check binary size
+        shell: bash
+        run: |
+          BINARY="../artifacts/launcher-bootstrap-${{ matrix.artifact_suffix }}${{ runner.os == 'Windows' && '.exe' || '' }}"
+          SIZE=$(stat --format=%s "$BINARY" 2>/dev/null || stat -f%z "$BINARY" 2>/dev/null)
+          SIZE_KB=$((SIZE / 1024))
+          echo "📦 Binary size: ${SIZE_KB} KB (${SIZE} bytes)"
+
+          if [ "$SIZE" -gt "$MAX_SIZE_BYTES" ]; then
+            echo "::warning::⚠️ Bootstrap binary too large: ${SIZE_KB} KB > 512 KB limit!"
+            echo "BOOTSTRAP_SIZE_OK=false" >> "$GITHUB_ENV"
+          else
+            echo "✅ Size OK: ${SIZE_KB} KB <= 512 KB limit"
+            echo "BOOTSTRAP_SIZE_OK=true" >> "$GITHUB_ENV"
+          fi
+          echo "BOOTSTRAP_SIZE_KB=${SIZE_KB}" >> "$GITHUB_ENV"
+
+      # ── BL-13: SHA-256 hash ──
+      - name: Generate SHA-256 checksum
+        shell: bash
+        run: |
+          cd ../artifacts
+          BINARY="launcher-bootstrap-${{ matrix.artifact_suffix }}${{ runner.os == 'Windows' && '.exe' || '' }}"
+          sha256sum "$BINARY" > "${BINARY}.sha256"
+          echo "🔒 SHA-256:"
+          cat "${BINARY}.sha256"
+
+      - name: Upload bootstrap artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: launcher-bootstrap-${{ matrix.artifact_suffix }}
+          path: |
+            artifacts/launcher-bootstrap-${{ matrix.artifact_suffix }}*
+          if-no-files-found: error
+
+      # ── BL-14: Smoke test ──
+      - name: Smoke test (--help / --version)
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          BINARY="../artifacts/launcher-bootstrap-${{ matrix.artifact_suffix }}"
+          chmod +x "$BINARY"
+          # Bootstrap bez argumentów powinien spróbować pobrać z API i zwrócić exit code
+          # Sprawdzamy czy binarka w ogóle się uruchamia (nie crashuje od razu)
+          # Timeout 5s — nie chcemy czekać na sieć w CI
+          timeout 5 "$BINARY" --help 2>&1 || EXIT_CODE=$?
+          # Exit code 0 = OK, 1 = expected (no network), 2 = help shown
+          # Tylko segfault/signal (>128) to problem
+          if [ "${EXIT_CODE:-0}" -gt 128 ]; then
+            echo "::error::❌ Bootstrap binary crashed with signal $((EXIT_CODE - 128))"
+            exit 1
+          else
+            echo "✅ Smoke test passed (exit code: ${EXIT_CODE:-0})"
+          fi
+
+  # ─────────────────────────────────────────────────
+  # 2. Summary — zestawienie artefaktów
+  # ─────────────────────────────────────────────────
+  summary:
+    name: Build Summary
+    needs: [build-bootstrap]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: all-artifacts
+
+      - name: Generate summary
+        run: |
+          echo "## 🚀 Bootstrap Launcher Build" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "| File | Size | SHA-256 |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|------|------|---------|" >> "$GITHUB_STEP_SUMMARY"
+
+          for sha_file in all-artifacts/**/*.sha256; do
+            if [ -f "$sha_file" ]; then
+              HASH=$(awk '{print $1}' "$sha_file")
+              BINARY=$(awk '{print $2}' "$sha_file" | sed 's|^\./||' | xargs basename)
+              SIZE=$(stat --format=%s "${sha_file%.sha256}" 2>/dev/null || echo "?")
+              SIZE_KB=$((SIZE / 1024))
+              echo "| \`${BINARY}\` | ${SIZE_KB} KB | \`${HASH:0:16}...\` |" >> "$GITHUB_STEP_SUMMARY"
+            fi
+          done
+
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "> Limit: 512 KB per binary. Cel: < 300 KB." >> "$GITHUB_STEP_SUMMARY"

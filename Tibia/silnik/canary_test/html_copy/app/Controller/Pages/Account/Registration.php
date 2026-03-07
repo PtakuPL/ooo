@@ -80,21 +80,21 @@ class Registration extends Base{
 
         
         if(empty($filter_firstname)){
-            return self::getRegistration($request, 'You need to set a firstname.');
+            return self::getRegistration($request, __('error_firstname_required'));
         }
         
         if(empty($filter_lastname)){
-            return self::getRegistration($request, 'You need to set a lastname.');
+            return self::getRegistration($request, __('error_lastname_required'));
         }
 
         
         if(!filter_var($filter_housenr, FILTER_VALIDATE_INT)){
-            return self::getRegistration($request, 'You need to set a lastname.');
+            return self::getRegistration($request, __('error_lastname_required'));
         }
 
         
         if(self::brazilianPhoneParser($filter_mobilenumber) == false){
-            return self::getRegistration($request, 'Invalid phone.');
+            return self::getRegistration($request, __('error_phone_invalid'));
         }
         
 
@@ -134,7 +134,7 @@ class Registration extends Base{
         $selectRegister = EntityAccount::getAccountRegistration([ 'account_id' => $LoggedId])->fetchObject();
         if($selectRegister == true){
             $update = EntityAccount::updateRegister([ 'account_id' => $LoggedId], $UpdateRegistration);
-            return self::getRegistration($request, 'Updated successfully.');
+            return self::getRegistration($request, __('success_updated'));
         }else{
             $insert = EntityAccount::insertRegister($InsertRegistration);
         }

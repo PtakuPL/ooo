@@ -9,7 +9,7 @@
  * @link      https://my-aac.org
  */
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Experience Stages';
+$title = __('menu_exp_stages');
 
 if(file_exists($config['data_path'] . 'XML/stages.xml')) {
 	$stages = new DOMDocument();

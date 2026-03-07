@@ -43,11 +43,13 @@ if(isset($_POST['changeinfosave']) && $_POST['changeinfosave'] == 1) {
 		$account->country = $new_country;
 		$account->save();
 
-		$log = 'Changed Real Name to <b>' . $new_rlname . '</b>, Location to <b>' . $new_location . '</b>';
+		$parts = [];
+		$parts[] = str_replace('$VALUE$', $new_rlname, __('log_changed_real_name'));
+		$parts[] = str_replace('$VALUE$', $new_location, __('log_changed_location'));
 		if(setting('core.account_country')) {
-			$log .= ' and Country to <b>' . $config['countries'][$new_country] . '</b>';
+			$parts[] = str_replace('$VALUE$', $config['countries'][$new_country], __('log_changed_country'));
 		}
-		$log .= '.';
+		$log = __('log_changed_info') . ' ' . implode(', ', $parts) . '.';
 
 		$account_logged->logAction($log);
 		$twig->display('success.html.twig', array(

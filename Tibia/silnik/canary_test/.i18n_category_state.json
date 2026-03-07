@@ -1,37 +1,5 @@
 {
-  "skip_until": {
-    "scripts": 1771164384.6379132,
-    "actions": 1771164391.104555,
-    "quests": 1771164402.6316445,
-    "spells": 1771164419.1804078,
-    "talkactions": 1771164431.8244913,
-    "creaturescripts": 1771164450.2651112,
-    "mounts": 1771164457.4097254,
-    "libs": 1771164465.819372,
-    "events": 1771164472.8055573,
-    "chatchannels": 1771164480.0283828,
-    "npclib": 1771164487.2760744,
-    "dataroot": 1771164498.9604504,
-    "php": 1771164757.481011,
-    "html": 1771164771.8226314,
-    "cpp": 1771164793.9789732,
-    "otclient_modules": 1771164815.9306188,
-    "otclient_data": 1771164877.8927455,
-    "otclient_src": 1771164894.917472,
-    "otclient_tools": 1771164911.1594322,
-    "server": 1771164927.1094127,
-    "errors": 1771164945.9541316,
-    "npc": 1771153214.0079432,
-    "monsters": 1771153232.7208207,
-    "raids": 1771153256.555328,
-    "world": 1771153324.2129886,
-    "movements": 1771153340.2789814,
-    "globalevents": 1771153355.3471994,
-    "items": 1771153371.8381534,
-    "modules": 1771153391.4821563,
-    "startup": 1771153407.4106798,
-    "otclient_mods": 1771153424.6833189
-  },
+  "skip_until": {},
   "last_processed": {
     "npc": {
       "count": 1,
@@ -181,15 +149,34 @@
     "server": 0,
     "errors": 0,
     "npc": 0,
+    "scripts": 0,
     "monsters": 0,
+    "actions": 0,
+    "quests": 0,
     "raids": 0,
     "world": 0,
+    "spells": 0,
+    "talkactions": 0,
     "movements": 0,
+    "creaturescripts": 0,
     "globalevents": 0,
     "items": 0,
+    "mounts": 0,
+    "libs": 0,
+    "events": 0,
+    "chatchannels": 0,
     "modules": 0,
     "startup": 0,
-    "otclient_mods": 0
+    "npclib": 0,
+    "dataroot": 0,
+    "cpp": 0,
+    "otclient_modules": 0,
+    "otclient_mods": 0,
+    "otclient_data": 0,
+    "otclient_src": 0,
+    "otclient_tools": 0,
+    "server": 0,
+    "errors": 0
   },
   "total_processed": {
     "items": 47761,
@@ -224,12 +211,15 @@
     "startup": 36,
     "otclient_mods": 0
   },
-  "migrations_done": true,
+  "migrations_done": false,
   "docs_done": false,
   "translation_sync": {
-    "current_lang": "zh_TW",
-    "current_category": "npclib.json",
-    "languages_done": [],
+    "current_lang": "ru",
+    "current_category": "items.json",
+    "languages_done": [
+      "pl",
+      "ru"
+    ],
     "stats": {
       "de": {
         "spells": 1426,
@@ -237,8 +227,10 @@
       },
       "pl": {
         "spells": 1426,
-        "total": 3596,
-        "scripts": 2170
+        "total": 46244,
+        "scripts": 2170,
+        "monsters": 5915,
+        "items": 36733
       },
       "es": {
         "spells": 1426,
@@ -358,7 +350,9 @@
       },
       "ru": {
         "spells": 1426,
-        "total": 1426
+        "total": 44074,
+        "monsters": 5915,
+        "items": 36733
       },
       "uk": {
         "npc": 6946,
@@ -491,7 +485,7 @@
         "spells": 1426
       }
     },
-    "last_sync": 1771149624.5882678
+    "last_sync": 1771971812.3582234
   },
   "auto_translate_done": [
     "de:actions.json",

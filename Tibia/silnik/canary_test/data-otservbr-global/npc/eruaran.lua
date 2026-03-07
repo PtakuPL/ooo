@@ -254,13 +254,13 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif MsgContains(message, "blade") or MsgContains(message, "slayer") and npcHandler:getTopic(playerId) == 2 then
 		weapon_sub[playerId] = (MsgContains(message, "blade") and SUB_TYPES.BLADE or SUB_TYPES.SLAYER)
 		if action[playerId] == ACTION.CREATE then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_1", { (Config.Create.DreamMatter == 1 and "your" or Config.Create.DreamMatter), (Config.Create.Clusters > 1 and "those" or "your"), Config.Create.Clusters })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_23", { (Config.Create.DreamMatter == 1 and "your" or Config.Create.DreamMatter), (Config.Create.Clusters > 1 and "those" or "your"), Config.Create.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.IMPROVE then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_2", { (weapon_sub[playerId] == SUB_TYPES.BLADE and "blade" or "slayer"), (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_24", { (weapon_sub[playerId] == SUB_TYPES.BLADE and "blade" or "slayer"), (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.TRANSFORM then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_3", { (weapon_sub[playerId] == SUB_TYPES.BLADE and "blade" or "slayer"), (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_25", { (weapon_sub[playerId] == SUB_TYPES.BLADE and "blade" or "slayer"), (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "axe") and npcHandler:getTopic(playerId) == 1 then
@@ -281,10 +281,10 @@ local function creatureSayCallback(npc, creature, type, message)
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_10")
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.IMPROVE then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_4", { (weapon_sub[playerId] == SUB_TYPES.AXE and "axe" or "chopper"), (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_26", { (weapon_sub[playerId] == SUB_TYPES.AXE and "axe" or "chopper"), (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.TRANSFORM then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_5", { (weapon_sub[playerId] == SUB_TYPES.AXE and "axe" or "chopper"), (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_27", { (weapon_sub[playerId] == SUB_TYPES.AXE and "axe" or "chopper"), (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "club") and npcHandler:getTopic(playerId) == 1 then
@@ -302,34 +302,34 @@ local function creatureSayCallback(npc, creature, type, message)
 	elseif table.contains({ "mace", "hammer" }, message) and npcHandler:getTopic(playerId) == 2 then
 		weapon_sub[playerId] = (MsgContains(message, "mace") and SUB_TYPES.MACE or SUB_TYPES.HAMMER)
 		if action[playerId] == ACTION.CREATE then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_6", { (Config.Create.Clusters > 1 and "those" or "your"), Config.Create.Clusters })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_28", { (Config.Create.Clusters > 1 and "those" or "your"), Config.Create.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.IMPROVE then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_7", { (weapon_sub[playerId] == SUB_TYPES.MACE and "mace" or "hammer"), (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_29", { (weapon_sub[playerId] == SUB_TYPES.MACE and "mace" or "hammer"), (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.TRANSFORM then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_8", { (weapon_sub[playerId] == SUB_TYPES.MACE and "mace" or "hammer"), (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_30", { (weapon_sub[playerId] == SUB_TYPES.MACE and "mace" or "hammer"), (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "bow") and npcHandler:getTopic(playerId) == 1 then
 		weapon[playerId] = TYPES.BOW
 		if action[playerId] == ACTION.CREATE then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_9", { (Config.Create.Clusters > 1 and "those" or "your"), Config.Create.Clusters })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_31", { (Config.Create.Clusters > 1 and "those" or "your"), Config.Create.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.IMPROVE then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_10", { (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_32", { (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.TRANSFORM then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_11", { (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_33", { (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		end
 	elseif MsgContains(message, "crossbow") and npcHandler:getTopic(playerId) == 1 then
 		weapon[playerId] = TYPES.CROSSBOW
 		if action[playerId] == ACTION.CREATE then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_12", { (Config.Create.Clusters > 1 and "those" or "your"), Config.Create.Clusters })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_34", { (Config.Create.Clusters > 1 and "those" or "your"), Config.Create.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.IMPROVE then
-			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_13", { (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
+			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_35", { (Config.Improve.Clusters > 1 and "those" or "your"), Config.Improve.Clusters })
 			npcHandler:setTopic(playerId, 3)
 		elseif action[playerId] == ACTION.TRANSFORM then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_14", { (Config.Transform.Clusters > 1 and "those" or "your"), Config.Transform.Clusters })
@@ -366,14 +366,14 @@ local function creatureSayCallback(npc, creature, type, message)
 						player:removeItem(IDS.CLUSTER_OF_SOLACE, Config.Create.Clusters)
 						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_18", { ItemType(newItemId):getName() })
 					else
-						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_14")
+						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_36")
 					end
 				else
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_15")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_37")
 					player:removeItem(IDS.DREAM_MATTER, 1)
 				end
 			else
-				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_16")
+				NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_38")
 			end
 		elseif action[playerId] == ACTION.IMPROVE then --improve
 			local oldItemId = (
@@ -395,7 +395,7 @@ local function creatureSayCallback(npc, creature, type, message)
 							player:removeItem(IDS.CLUSTER_OF_SOLACE, Config.Improve.Clusters)
 							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_19", { ItemType(newItemId):getName() })
 						else
-							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_17")
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_39")
 							local rand = math.random(100)
 							player:removeItem((rand <= Config.Improve.BreakChance and oldItemId or IDS.CLUSTER_OF_SOLACE), (rand <= Config.Improve.BreakChance and 1 or Config.Improve.Clusters))
 						end
@@ -403,7 +403,7 @@ local function creatureSayCallback(npc, creature, type, message)
 						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_20", { ItemType(oldItemId):getArticle(), ItemType(oldItemId):getName() })
 					end
 				else
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_18")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_40")
 				end
 			end
 		elseif action[playerId] == ACTION.TRANSFORM then --transform
@@ -426,7 +426,7 @@ local function creatureSayCallback(npc, creature, type, message)
 							player:removeItem(IDS.CLUSTER_OF_SOLACE, Config.Transform.Clusters)
 							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_21", { ItemType(newItemId):getName() })
 						else
-							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_19")
+							NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_41")
 							local rand = math.random(100)
 							if Config.Transform.BreakChance <= rand then
 								player:removeItem(oldItemId, 1)
@@ -440,7 +440,7 @@ local function creatureSayCallback(npc, creature, type, message)
 						NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_22", { ItemType(oldItemId):getArticle(), ItemType(oldItemId):getName() })
 					end
 				else
-					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_20")
+					NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.eruaran.say_42")
 				end
 			end
 		end

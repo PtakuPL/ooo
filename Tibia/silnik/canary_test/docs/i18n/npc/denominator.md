@@ -1,7 +1,7 @@
 # NPC: denominator
 
-**Plik:** 
-**Data migracji:** 2025-12-20 20:24
+**Plik:** `data-otservbr-global/npc/denominator.lua`
+**Data migracji:** 2026-02-23 12:23
 **Liczba tekstów:** 0
 
 ## Klucze i18n

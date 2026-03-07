@@ -149,7 +149,7 @@ keywordHandler:addKeyword({ "honey", "flower" }, StdModule.say, { npcHandler = n
 
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_WALKAWAY, "npc.lee_delle.walkaway_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_FAREWELL, "npc.lee_delle.farewell_msg_1")
-npcHandler:setMessage(MESSAGE_SENDTRADE, "Sure, take a look, honey.")
+NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_SENDTRADE, "npc.lee_delle.sendtrade_msg_1")
 NPC_LIB.i18n.setLocalizedMessage(npcHandler, MESSAGE_GREET, "npc.lee_delle.greet_msg_1")
 
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)

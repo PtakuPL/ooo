@@ -3502,5 +3502,221 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-02-14T07:58:07.638946Z"
+  },
+  "npc.a_ghostly_sage.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Head aega.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.884119Z"
+  },
+  "npc.ahmet.say_5": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Sul pole piisavalt raha.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.923681Z"
+  },
+  "npc.aldo.say_4": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Palun.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.937955Z"
+  },
+  "npc.alia.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Pole probleemi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.944810Z"
+  },
+  "npc.alia.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Pole probleemi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.947110Z"
+  },
+  "npc.altar.walkaway_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Nägemist.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.951127Z"
+  },
+  "npc.alyxo.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Kuidas saan sind aidata?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.953692Z"
+  },
+  "npc.alyxo.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Kuidas saan sind aidata?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.954984Z"
+  },
+  "npc.alyxo.greet_msg_3": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Kuidas saan sind aidata?",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.955877Z"
+  },
+  "npc.alyxo.say_12": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Vabandust.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.957377Z"
+  },
+  "npc.alyxo.say_15": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Vabandust.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.958252Z"
+  },
+  "npc.alyxo.say_18": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Vabandust.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.959156Z"
+  },
+  "npc.alyxo.say_21": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Vabandust.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.960010Z"
+  },
+  "npc.alyxo.say_24": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Vabandust.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.960627Z"
+  },
+  "npc.alyxo.say_6": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Vabandust.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.961604Z"
+  },
+  "npc.alyxo.say_9": {
+    "src_hash": "ed2916ed9e933cd7f348aab814a5c7d4",
+    "text": "Vabandust.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.962422Z"
+  },
+  "npc.amanda.stdmod_13": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Pole probleemi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.963461Z"
+  },
+  "npc.andrew_lyze.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Head aega.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.973672Z"
+  },
+  "npc.andrew_lyze.say_7": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Sul pole piisavalt raha.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.976772Z"
+  },
+  "npc.appaloosa.say_4": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Sul pole piisavalt raha.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:34.986474Z"
+  },
+  "npc.atur.farewell_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ilusat päeva.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:35.001017Z"
+  },
+  "npc.atur.walkaway_msg_1": {
+    "src_hash": "224acf8f2ad2e63dd330e351f1f5f9c7",
+    "text": "Ilusat päeva.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:35.001464Z"
+  },
+  "npc.azalea.stdmod_10": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Pole probleemi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:35.005144Z"
+  },
+  "npc.azalea.stdmod_6": {
+    "src_hash": "b3095dc51ed906ab6b4f1b23a86aa676",
+    "text": "Pole probleemi.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:35.006262Z"
+  },
+  "npc.beatrice.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Sul pole piisavalt raha.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:35.015092Z"
+  },
+  "npc.bertha.say_3": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Sul pole piisavalt raha.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:35.018374Z"
+  },
+  "npc.billy.farewell_msg_1": {
+    "src_hash": "39901654a7b8cda86a0b9f0180cb51fd",
+    "text": "Nägemist.",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-02-21T09:35:35.019571Z"
   }
 }

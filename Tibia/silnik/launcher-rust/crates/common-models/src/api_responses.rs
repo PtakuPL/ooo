@@ -44,6 +44,33 @@ pub struct LaunchTokenErrorResponse {
 }
 
 // ─────────────────────────────────────────────
+// account-sync-token.php request/response (K12/K20)
+// ─────────────────────────────────────────────
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AccountSyncTokenRequest {
+    #[serde(rename = "type")]
+    pub request_type: String,
+    pub session_key: String,
+    pub source: String,
+    pub target: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AccountSyncTokenResponse {
+    pub ok: bool,
+    pub sync_token: String,
+    pub source: String,
+    pub target: String,
+    pub expires_at: u64,
+
+    #[serde(default)]
+    pub consume_url: Option<String>,
+}
+
+// ─────────────────────────────────────────────
 // launcher-token.php request
 // ─────────────────────────────────────────────
 

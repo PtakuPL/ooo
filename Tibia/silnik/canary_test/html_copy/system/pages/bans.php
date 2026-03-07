@@ -9,7 +9,7 @@
  * @link      https://my-aac.org
  */
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Bans list';
+$title = __('menu_bans');
 
 $configBansPerPage = setting('core.bans_per_page');
 $_page = $_GET['page'] ?? 1;

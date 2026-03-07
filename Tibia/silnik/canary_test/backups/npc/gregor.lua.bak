@@ -122,7 +122,7 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif npcHandler:getTopic(playerId) == 1 then
 		if MsgContains(message, "yes") then
-			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, {"npc.gregor.say_1", "npc.gregor.say_2", "npc.gregor.say_3", "npc.gregor.say_4", "npc.gregor.say_5"}, 100)
+			NPC_LIB.i18n.npcSayMultiple(npcHandler, npc, creature, { "npc.gregor.say_33", "npc.gregor.say_34", "npc.gregor.say_35", "npc.gregor.say_36", "npc.gregor.say_37" }, 100)
 			npcHandler:setTopic(playerId, 2)
 		elseif MsgContains(message, "no") then
 			NPC_LIB.i18n.npcSay(npcHandler, npc, creature, "npc.gregor.say_18")

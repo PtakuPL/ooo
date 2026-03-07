@@ -1,5 +1,8 @@
 <script type="text/javascript" src="{{JS_PATH}}/create_character.js"></script>
 
+{% set rules_mode = preselect_mode ?: 'all' %}
+{% set rules_href = URL ~ '/rules?mode=' ~ rules_mode %}
+
 <div id="accountmanagement" class="Box">
 	<div class="Corner-tl" style="background-image:url({{IMAGE_PATH}}/global/content/corner-tl.gif);"></div>
 	<div class="Corner-tr" style="background-image:url({{IMAGE_PATH}}/global/content/corner-tr.gif);"></div>
@@ -9,9 +12,46 @@
 		<div class="Border_3">
 			<div class="BoxContent" style="background-image:url({{IMAGE_PATH}}/global/content/scroll.gif);">
                 Please choose a name and sex for your character as well as the game world on which you want the character to live. If you cannot think of any fantasy names, click on the link below the name field to get some suggestions for a name.<br><br>In any case the name must not violate the naming conventions stated in the
-				Tibia Rules, or your character might get deleted or name locked.<br><br><br>
+				<a href="{{ rules_href }}">Tibia Rules</a>, or your character might get deleted or name locked.<br><br><br>
 				{{ status }}
-				<form action="{{URL}}/account/createcharacter" method="post">
+				{% if preselect_source == 'launcher' %}
+				<div class="SmallBox">
+					<div class="MessageContainer">
+						<div class="BoxFrameHorizontal" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-horizontal.gif);"></div>
+						<div class="BoxFrameEdgeLeftTop" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></div>
+						<div class="BoxFrameEdgeRightTop" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></div>
+						<div class="ErrorMessage">
+							<div class="BoxFrameVerticalLeft" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-vertical.gif);"></div>
+							<div class="BoxFrameVerticalRight" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-vertical.gif);"></div>
+							<div class="AttentionSign" style="background-image:url({{IMAGE_PATH}}/global/content/attentionsign.gif);"></div>
+							<b>Launcher flow</b><br>
+							Tworzenie postaci uruchomione z launchera.
+							{% if preselect_mode == 'classic74' %}
+							Dozwolony swiat: Tibia 7.4.
+							{% elseif preselect_mode == 'modern' %}
+							Dozwolony swiat: Modern.
+							{% endif %}
+							<br>Obowiazuja zasady dla wybranego trybu: <a href="{{ rules_href }}">Tibia Rules</a>.
+						</div>
+						<div class="BoxFrameHorizontal" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-horizontal.gif);"></div>
+						<div class="BoxFrameEdgeRightBottom" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></div>
+						<div class="BoxFrameEdgeLeftBottom" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></div>
+					</div>
+				</div>
+				<br>
+				{% endif %}
+				{% set query_parts = [] %}
+				{% if preselect_source == 'launcher' %}
+					{% set query_parts = query_parts|merge(['source=launcher']) %}
+				{% endif %}
+				{% if preselect_mode %}
+					{% set query_parts = query_parts|merge(['mode=' ~ preselect_mode]) %}
+				{% endif %}
+				{% set create_character_action = URL ~ '/account/createcharacter' %}
+				{% if query_parts|length > 0 %}
+					{% set create_character_action = create_character_action ~ '?' ~ query_parts|join('&') %}
+				{% endif %}
+				<form action="{{ create_character_action }}" method="post">
 					<div class="TableContainer">
 						<div class="CaptionContainer">
 							<div class="CaptionInnerContainer">
@@ -120,8 +160,10 @@
 																						<tr id="world_list_tr">
 																							<td style="border-style: none" align="center">
 																							{% for world in worlds %}
+																							{% set world_mode = (world.id == 0 or 'classic' in world.name|lower or 'retro' in world.name|lower or '7.4' in world.name|lower or '74' in world.name|lower) ? 'classic74' : ((world.id == 1 or 'modern' in world.name|lower or 'main' in world.name|lower or 'global' in world.name|lower or '14.' in world.name|lower) ? 'modern' : '') %}
+																							{% set is_mode_locked = preselect_source == 'launcher' and preselect_mode and world_mode and world_mode != preselect_mode %}
 																								<div style="width: 15em; position: relative; text-align: left;">
-																								<input type="radio" name="world" id="server_{{ world.name }}" value="{{ world.id }}">
+																							<input type="radio" name="world" id="server_{{ world.name }}" value="{{ world.id }}" {% if preselect_world_id is not null and preselect_world_id == world.id %}checked="checked"{% endif %} {% if is_mode_locked %}disabled="disabled"{% endif %}>
 																									<label for="server_{{ world.name }}">{{ world.name }}</label>
 																								</div>
 																							{% endfor %}
@@ -177,8 +219,8 @@
 						</tbody>
 					</table>
 					<script type="text/javascript">
-						PreselectWorld = "Canary";
-InitializeCharacterCreator('REG', 'BRA', 'open')
+						PreselectWorld = "{{ preselect_world_name|default('')|e('js') }}";
+						InitializeCharacterCreator('REG', 'BRA', 'open');
 					</script>
 				</form>
 			</div>

@@ -1,13 +1,13 @@
 {
-  "system.blessing.already": "[EN] You are already blessed.",
-  "system.blessing.received": "[EN] You received the remaining {1} blesses.",
-  "system.experience.gained": "[EN] You gained {1} experience points.",
-  "system.item.received": "[EN] You gained a {1}.",
-  "system.mission.points": "[EN] You earned {1} point(s) on the {2} mission.",
-  "system.mount.received": "[EN] Congratulations you received the {1} mount.",
-  "system.stash.count": "[EN] Your supply stash contains {1} items.",
+  "system.blessing.already": "Вы уже благословлены.",
+  "system.blessing.received": "Вы получили оставшиеся благословения {1}.",
+  "system.experience.gained": "Вы получили {1} очков опыта.",
+  "system.item.received": "Вы получили {1}.",
+  "system.mission.points": "Вы заработали {1} баллов за выполнение миссии {2}.",
+  "system.mount.received": "Поздравляем, вы получили крепление {1}.",
+  "system.stash.count": "В вашем запасе содержится {1} предметов.",
   "system.store.check_inbox": "Пожалуйста, убедитесь, что в вашем ящике магазина есть свободные слоты.",
-  "system.trade.bought": "[EN] Bought {1}x {2} for {3} gold.",
-  "system.trade.sold": "[EN] Sold {1}x {2} for {3} gold.",
-  "system.venture.decay": "[EN] Venture the path of decay!"
+  "system.trade.bought": "Купили {1}x {2} за {3} золота.",
+  "system.trade.sold": "Продано {1}x {2} за {3} золота.",
+  "system.venture.decay": "Встаньте на путь распада!"
 }

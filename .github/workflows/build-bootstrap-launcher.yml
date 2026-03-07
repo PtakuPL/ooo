@@ -23,10 +23,6 @@ on:
       - 'Tibia/silnik/launcher-rust/Cargo.toml'
       - 'Tibia/silnik/launcher-rust/Cargo.lock'
 
-defaults:
-  run:
-    working-directory: Tibia/silnik/launcher-rust
-
 env:
   CARGO_TERM_COLOR: always
   # Maksymalny akceptowalny rozmiar binarki (bajty): 512 KB
@@ -39,6 +35,9 @@ jobs:
   build-bootstrap:
     name: Bootstrap (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: Tibia/silnik/launcher-rust
     strategy:
       fail-fast: false
       matrix:

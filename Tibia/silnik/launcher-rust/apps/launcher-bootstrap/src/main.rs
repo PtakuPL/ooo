@@ -4,7 +4,6 @@ mod platform;
 mod ui;
 
 use serde::Deserialize;
-use std::path::PathBuf;
 use std::process;
 
 /// API base URL baked into the binary.  
@@ -21,6 +20,7 @@ struct CatalogResponse {
 }
 
 #[derive(Debug, Deserialize)]
+#[allow(dead_code)]
 struct CatalogArtifact {
     #[serde(default)]
     id: String,

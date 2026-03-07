@@ -5,7 +5,7 @@
 //! 2. Deleguje do launcher-core / launcher-api.
 //! 3. Zwraca DTO (nigdy surowe struktury).
 
-use tauri::{Manager, State};
+use tauri::State;
 use semver::Version;
 use std::collections::BTreeSet;
 use std::path::Path;

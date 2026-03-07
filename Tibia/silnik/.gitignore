@@ -3,17 +3,25 @@
 # Ignore the whole Firma_budowlana project folder (as requested)
 Firma_budowlana/
 
+# Distribution binaries — not source code
+client_pack/
+launcher_test/
+canary_modern/
+
+# Build artifact ZIPs
+launcher-rust/*.zip
+
+# Temp files
+0
+buildcheck*.txt
+
 # Also ignore common secret/service-account JSON patterns just in case
 *.json
 *.json.*
 # But allow i18n translation files
 !canary_test/i18n/**/*.json
 !canary_test/i18n/*.json
-# Allow launcher-tauri config files
-!launcher-rust/apps/launcher-tauri/tauri.conf.json
-!launcher-rust/apps/launcher-tauri/capabilities/*.json
-# Allow launcher-rust workspace/package configs
-!launcher-rust/**/Cargo.toml
+!launcher-rust/apps/launcher-tauri/ui/i18n/*.json
 
 # Ignore Django media and local env files inside this subtree
 **/media/
@@ -22,6 +30,7 @@ Firma_budowlana/
 
 # OS/tooling noise
 **/*.Zone.Identifier
+**/*:Zone.Identifier
 
 # ===== I18N Worker temporary files =====
 # Backup files
@@ -70,8 +79,13 @@ canary_test/SUMMARY_*.md
 canary_test/i18n_changes_documentation.md
 canary_test/i18n_full_documentation.md
 
+# Large binary executables (exceed GitHub 100MB limit)
+canary_test/canary-backup-old*
+canary_test/canary-debug-backup*
+canary_test/canary-ubuntu-24.04-linux-debug-*
+canary_test/canary-ubuntu-24.04-linux-release-5688*
+
 # Build artifacts
 budowa_silnik/
 iwyu/
 include-what-you-use/
-canary_test/.guardian_status_push_repo/

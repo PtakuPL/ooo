@@ -561,7 +561,6 @@ jobs:
     name: Sign artifacts & checksums
     needs: [windows, linux]
     runs-on: ubuntu-22.04
-    if: ${{ secrets.MANIFEST_SIGNING_KEY != '' }}
 
     steps:
       - name: Download all artifacts
@@ -586,6 +585,7 @@ jobs:
           cat checksums.txt
 
       - name: Sign checksums with Ed25519
+        if: env.SIGNING_KEY_B64 != ''
         env:
           SIGNING_KEY_B64: ${{ secrets.MANIFEST_SIGNING_KEY }}
         run: |

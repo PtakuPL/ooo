@@ -8,10 +8,12 @@ on:
     branches: [master, feature/ticket-gate]
     paths:
       - 'Tibia/silnik/launcher-rust/**'
+      - '.github/workflows/launcher-ci.yml'
   pull_request:
     branches: [master]
     paths:
       - 'Tibia/silnik/launcher-rust/**'
+      - '.github/workflows/launcher-ci.yml'
 
 defaults:
   run:

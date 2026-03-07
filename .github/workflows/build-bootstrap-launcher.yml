@@ -123,7 +123,7 @@ jobs:
         with:
           name: launcher-bootstrap-${{ matrix.artifact_suffix }}
           path: |
-            artifacts/launcher-bootstrap-${{ matrix.artifact_suffix }}*
+            Tibia/silnik/artifacts/launcher-bootstrap-${{ matrix.artifact_suffix }}*
           if-no-files-found: error
 
       # ── BL-14: Smoke test ──

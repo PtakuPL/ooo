@@ -1,6 +1,9 @@
 # *****************************************************************************
 # Project protobuf
 # *****************************************************************************
+# cmake_minimum_required is required before project() to properly initialize
+# CMP0091 (MSVC_RUNTIME_LIBRARY) policy in this subdirectory scope.
+cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
 project(protobuf)
 
 if(APPLE)
@@ -35,6 +38,15 @@ if(PROTOBUF_FOUND)
 		elseif(CMAKE_BUILD_TYPE STREQUAL "RelWithDebInfo")
 			string(REPLACE "/Zi" "/Z7" CMAKE_CXX_FLAGS_RELWITHDEBINFO "${CMAKE_CXX_FLAGS_RELWITHDEBINFO}")
 			string(REPLACE "/Zi" "/Z7" CMAKE_C_FLAGS_RELWITHDEBINFO "${CMAKE_C_FLAGS_RELWITHDEBINFO}")
+		endif()
+
+		# Force /MT for static builds — replace any /MD that project() may have
+		# initialized in flags (belt-and-suspenders with MSVC_RUNTIME_LIBRARY property)
+		if (BUILD_STATIC_LIBRARY)
+			foreach(flag_var CMAKE_CXX_FLAGS CMAKE_CXX_FLAGS_RELEASE CMAKE_CXX_FLAGS_RELWITHDEBINFO
+			                 CMAKE_C_FLAGS CMAKE_C_FLAGS_RELEASE CMAKE_C_FLAGS_RELWITHDEBINFO)
+				string(REPLACE "/MD" "/MT" ${flag_var} "${${flag_var}}")
+			endforeach()
 		endif()
 
 		if (BUILD_STATIC_LIBRARY)

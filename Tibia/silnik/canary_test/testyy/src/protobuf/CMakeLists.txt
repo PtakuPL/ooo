@@ -4,6 +4,14 @@
 # cmake_minimum_required is required before project() to properly initialize
 # CMP0091 (MSVC_RUNTIME_LIBRARY) policy in this subdirectory scope.
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
+
+# CMP0091 must be explicitly set to NEW here — nested project() re-initializes
+# MSVC flags and the parent scope's policy does NOT propagate reliably.
+cmake_policy(SET CMP0091 NEW)
+if(BUILD_STATIC_LIBRARY)
+    set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+endif()
+
 project(protobuf)
 
 if(APPLE)

@@ -17,11 +17,32 @@ import json
 import os
 import sys
 import argparse
+import re
 from pathlib import Path
 from datetime import datetime
 
 I18N_DIR = Path("i18n")
 BATCH_DIR = Path("i18n/translation_batches")
+SOUND_TEXT_RE = re.compile(
+    r'^(grr|hiss|rawr|roar|growl|snarl|howl|woof|arf|meow|miau|moo|baa|oink|snort|chirp|tweet|croak|ribbit)$',
+    re.IGNORECASE,
+)
+
+
+def is_non_translatable_sound(text: str) -> bool:
+    """Heurystyka: odgłosy potworów/zwierząt pomijamy w normalnym tłumaczeniu."""
+    normalized = re.sub(r"[^a-zA-Z]", "", str(text or "")).lower()
+    if not normalized:
+        return False
+    if SOUND_TEXT_RE.fullmatch(normalized):
+        return True
+    # 5+ znaków, <=3 unikalne litery i potrójne powtórzenia zwykle oznaczają odgłos (np. "grrrraaa")
+    if len(normalized) >= 5 and len(set(normalized)) <= 3 and re.search(r'(.)\1{2,}', normalized):
+        return True
+    vowels = sum(1 for ch in normalized if ch in "aeiouy")
+    if vowels == 0 and len(normalized) >= 3:
+        return True
+    return False
 
 def get_untranslated_keys(category: str, target_lang: str, limit: int = 50) -> list:
     """Znajdź klucze które nie mają tłumaczenia w danym języku."""
@@ -51,8 +72,12 @@ def get_untranslated_keys(category: str, target_lang: str, limit: int = 50) -> l
             if target_text and target_text.strip() and target_text != en_text:
                 continue
         
-        # Pomiń bardzo krótkie teksty (prawdopodobnie kody/komendy)
-        if len(en_text) < 5:
+        # Pomiń odgłosy potworów/zwierząt - nie są normalnie tłumaczone
+        if is_non_translatable_sound(en_text):
+            continue
+        # Dopuszczamy krótsze frazy (3-4 znaki), bo część z nich jest tłumaczalna ("yes", "run")
+        # i wcześniej nie trafiała do batcha.
+        if len(en_text) < 3:
             continue
             
         untranslated.append({
@@ -64,6 +89,83 @@ def get_untranslated_keys(category: str, target_lang: str, limit: int = 50) -> l
             break
     
     return untranslated
+
+
+def _collect_rejected_keys(target_lang: str, validation_dir: Path) -> list:
+    """Collect keys rejected by the automatic worker from validation reports."""
+    keys = []
+    report_path = validation_dir / f"{target_lang}_report.json"
+    if report_path.exists():
+        try:
+            report_data = json.loads(report_path.read_text(encoding="utf-8"))
+            for item in report_data.get("worst_keys", []):
+                key = item.get("key")
+                if key:
+                    keys.append({"key": key, "issue_type": item.get("type", "report_issue")})
+        except Exception:
+            pass
+
+    for gf_path in validation_dir.glob(f"{target_lang}_*_grammarfix.json"):
+        try:
+            gf_data = json.loads(gf_path.read_text(encoding="utf-8"))
+            for item in gf_data.get("details", []):
+                if item.get("status") in {"skipped_guard", "translate_error", "skipped_no_translator"} and item.get("key"):
+                    keys.append({"key": item["key"], "issue_type": item.get("status", "grammarfix_issue")})
+        except Exception:
+            continue
+    return keys
+
+
+def generate_rejected_batch(targets: list, batch_size: int, validation_dir: Path) -> dict:
+    """Generate a batch from worker-rejected entries for manual translation."""
+    BATCH_DIR.mkdir(parents=True, exist_ok=True)
+    batch = {
+        "generated": datetime.now().isoformat(),
+        "category": "rejected_by_worker",
+        "target_languages": targets,
+        "batch_size": batch_size,
+        "keys": [],
+        "instructions": f"Translate worker-rejected entries into: {', '.join(targets)}. Keep placeholders and tokens unchanged.",
+    }
+
+    en_cache = {}
+    keys_map = {}
+    for lang in targets:
+        for item in _collect_rejected_keys(lang, validation_dir):
+            key = item["key"]
+            category = key.split(".")[0]
+            if category not in en_cache:
+                en_file = I18N_DIR / "en" / f"{category}.json"
+                if en_file.exists():
+                    try:
+                        en_cache[category] = json.loads(en_file.read_text(encoding="utf-8"))
+                    except Exception:
+                        en_cache[category] = {}
+                else:
+                    en_cache[category] = {}
+            en_text = str(en_cache[category].get(key, "") or "")
+            if not en_text:
+                continue
+            entry = keys_map.setdefault(
+                key,
+                {"key": key, "en": en_text, "missing_in": [], "source": "worker_rejected", "issues": []},
+            )
+            if lang not in entry["missing_in"]:
+                entry["missing_in"].append(lang)
+            issue = item.get("issue_type", "worker_rejected")
+            if issue not in entry["issues"]:
+                entry["issues"].append(issue)
+
+    batch["keys"] = list(keys_map.values())[:batch_size]
+    batch["total_keys"] = len(batch["keys"])
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    batch_file = BATCH_DIR / f"batch_rejected_{timestamp}.json"
+    with open(batch_file, "w", encoding="utf-8") as f:
+        json.dump(batch, f, indent=2, ensure_ascii=False)
+    print(f"✅ Rejected batch generated: {batch_file}")
+    print(f"📊 Keys for manual translation: {batch['total_keys']}")
+    return batch
 
 
 def generate_batch(category: str, targets: list, batch_size: int) -> dict:
@@ -99,8 +201,15 @@ FORMAT ODPOWIEDZI (JSON):
 """
     }
     
-    # Zbierz klucze dla pierwszego języka docelowego
-    keys = get_untranslated_keys(category, targets[0], batch_size)
+    # Zbierz klucze brakujące w dowolnym języku docelowym (np. PL i ES)
+    keys_map = {}
+    scan_limit = batch_size * len(targets)
+    for lang in targets:
+        for item in get_untranslated_keys(category, lang, scan_limit):
+            entry = keys_map.setdefault(item["key"], {"key": item["key"], "en": item["en"], "missing_in": []})
+            if lang not in entry["missing_in"]:
+                entry["missing_in"].append(lang)
+    keys = list(keys_map.values())[:batch_size]
     batch["keys"] = keys
     batch["total_keys"] = len(keys)
     
@@ -186,6 +295,8 @@ def main():
     parser.add_argument("--apply", help="Plik JSON z tłumaczeniami do zastosowania")
     parser.add_argument("--sample", action="store_true", help="Pokaż przykładowe klucze")
     parser.add_argument("--count", type=int, default=10, help="Ile przykładów pokazać")
+    parser.add_argument("--rejected-only", action="store_true", help="Generuj batch tylko z wpisów odrzuconych przez worker")
+    parser.add_argument("--validation-dir", default="i18n/status/validation", help="Katalog z raportami walidacji")
     
     args = parser.parse_args()
     
@@ -193,6 +304,9 @@ def main():
         apply_translations(args.apply)
     elif args.sample:
         show_sample(args.category, args.count)
+    elif args.rejected_only:
+        targets = [t.strip() for t in args.target.split(",") if t.strip()]
+        generate_rejected_batch(targets, args.batch, Path(args.validation_dir))
     else:
         targets = [t.strip() for t in args.target.split(",")]
         generate_batch(args.category, targets, args.batch)

@@ -92,24 +92,12 @@ static hb_direction_t toHbDir(TextDirection d) {
 
 /**
  * @brief Reorders a sequence of Unicode codepoints from logical to visual order using FriBidi.
- *
- * Reorders input codepoints for visual display according to the Unicode Bidirectional Algorithm
- * with the given paragraph base direction. Also returns the resolved per-codepoint embedding
- * levels via the outLevels parameter.
- *
- * @param logical Unicode codepoints in logical (storage) order.
- * @param baseDir Paragraph base direction used to resolve embedding levels.
- * @param outLevels Output vector that will be resized and filled with the resolved embedding
- *                  level for each codepoint (one entry per input codepoint).
- * @return std::vector<uint32_t> Codepoints in visual order. Returns an empty vector if `logical`
- *                              is empty. If the computed maximum embedding level is 0 (no
- *                              reordering required), the original `logical` sequence is returned.
  */
 static std::vector<uint32_t> applyBidiReordering(const std::vector<uint32_t>& logical,
                                                   TextDirection baseDir,
                                                   std::vector<int8_t>& outLevels) {
   if (logical.empty()) return {};
-  
+#ifdef OTC_ENABLE_FRIBIDI
   size_t len = logical.size();
   std::vector<FriBidiChar> input(logical.begin(), logical.end());
   std::vector<FriBidiChar> visual(len);
@@ -148,6 +136,11 @@ static std::vector<uint32_t> applyBidiReordering(const std::vector<uint32_t>& lo
   }
   
   return std::vector<uint32_t>(visual.begin(), visual.end());
+#else
+  // No FriBidi — passthrough (no bidi reordering)
+  outLevels.assign(logical.size(), 0);
+  return logical;
+#endif
 }
 
 #endif // OTC_ENABLE_FRIBIDI

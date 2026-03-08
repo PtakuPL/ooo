@@ -1241,7 +1241,7 @@ pub async fn login_launcher_account(
     };
 
     let login_resp = api
-        .login_account(&canonical_email, &password, "all", launch_token_str.as_deref())
+        .login_account(&canonical_email, &password, "all", launch_token_str.as_deref(), fresh_install)
         .await
         .map_err(|e| format!("ACCOUNT_LOGIN_FAILED: {e}"))?;
 
@@ -1413,7 +1413,7 @@ pub async fn register_launcher_account(
     };
 
     match api
-        .login_account(&returned_email, &password, "all", launch_token.as_ref().map(|t| t.token.as_str()))
+        .login_account(&returned_email, &password, "all", launch_token.as_ref().map(|t| t.token.as_str()), fresh_install)
         .await
     {
         Ok(login_resp) => {

@@ -171,10 +171,6 @@ fn find_launcher_exe(install_dir: &Path) -> Result<PathBuf, InstallError> {
 pub fn uninstall(install_dir: &Path) -> Result<(), String> {
     let s = i18n::t();
 
-    // Preserve language preference before deleting files
-    // (language.conf may live inside install_dir on Windows)
-    let saved_lang = i18n::load_saved_language();
-
     // Kill running launcher
     ui::set_status(s.uninstall_killing_launcher);
     kill_running_launcher();
@@ -199,10 +195,8 @@ pub fn uninstall(install_dir: &Path) -> Result<(), String> {
         }
     }
 
-    // Restore language preference so a future reinstall remembers the choice
-    if let Some(lang) = saved_lang {
-        i18n::save_language(lang);
-    }
+    // Remove language preference so next install starts fresh
+    i18n::delete_saved_language();
 
     // Remove registry entry (Windows only)
     #[cfg(target_os = "windows")]
@@ -238,7 +232,18 @@ fn remove_dir_contents(dir: &Path, skip_file: Option<&Path>) -> Result<(), io::E
         if path.is_dir() {
             let _ = fs::remove_dir_all(&path);
         } else {
-            let _ = fs::remove_file(&path);
+            // Retry a few times — the file may still be locked after process kill
+            let mut removed = false;
+            for _ in 0..5 {
+                if fs::remove_file(&path).is_ok() {
+                    removed = true;
+                    break;
+                }
+                std::thread::sleep(std::time::Duration::from_millis(500));
+            }
+            if !removed {
+                let _ = fs::remove_file(&path);
+            }
         }
     }
     Ok(())
@@ -260,7 +265,7 @@ fn schedule_self_cleanup(install_dir: &Path) {
         .spawn();
 }
 
-/// Kill any running launcher process.
+/// Kill any running launcher process and wait for it to terminate.
 fn kill_running_launcher() {
     let exe_name = platform::launcher_exe_name();
 
@@ -276,6 +281,9 @@ fn kill_running_launcher() {
             .args(["-f", exe_name])
             .output();
     }
+
+    // Wait for the process to fully terminate so file locks are released
+    std::thread::sleep(std::time::Duration::from_millis(1500));
 }
 
 /// Copy the current bootstrap executable to `install_dir` for use as uninstaller.

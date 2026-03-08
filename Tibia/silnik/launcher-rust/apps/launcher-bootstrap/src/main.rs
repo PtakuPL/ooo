@@ -159,7 +159,10 @@ fn run() -> Result<(), String> {
         }
     } else {
         // No existing installation — show folder picker
-        platform::ask_install_dir(s.bootstrap_title, s.choose_install_dir)
+        match platform::ask_install_dir(s.bootstrap_title, s.choose_install_dir, s.install_dir_hint) {
+            Some(dir) => dir,
+            None => return Ok(()), // User cancelled — abort silently
+        }
     };
 
     let client = reqwest::blocking::Client::builder()

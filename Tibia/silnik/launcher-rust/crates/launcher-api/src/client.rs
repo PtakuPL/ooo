@@ -368,6 +368,7 @@ impl ApiClient {
         password: &str,
         game_mode: &str,
         launch_token: Option<&str>,
+        fresh_install: bool,
     ) -> Result<serde_json::Value, ApiError> {
         let url = self.url("login.php");
         tracing::info!("Logowanie konta launchera: {}", url);
@@ -383,6 +384,10 @@ impl ApiClient {
             if !token.trim().is_empty() {
                 payload["launchToken"] = serde_json::Value::String(token.to_string());
             }
+        }
+
+        if fresh_install {
+            payload["freshInstall"] = serde_json::Value::Bool(true);
         }
 
         let resp = self.http.post(&url).json(&payload).send().await?;

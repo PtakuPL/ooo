@@ -107,7 +107,7 @@ jobs:
           mkdir -p "$PKG"
 
           # ── 1. Compiled binary ──
-          cp build/otclient.exe "$PKG/" 2>/dev/null || cp build/Release/otclient.exe "$PKG/" 2>/dev/null || cp build/RelWithDebInfo/otclient.exe "$PKG/" || { echo "ERROR: otclient.exe not found"; exit 1; }
+          cp build/otclient.exe "$PKG/" 2>/dev/null || cp build/Release/otclient.exe "$PKG/" 2>/dev/null || cp build/RelWithDebInfo/otclient.exe "$PKG/" 2>/dev/null || cp otclient.exe "$PKG/" 2>/dev/null || { echo "ERROR: otclient.exe not found"; exit 1; }
 
           # ── 2. Runtime DLLs (from build output or vcpkg installed) ──
           # Copy DLLs co-located with exe first, then root DLLs as fallback
@@ -381,7 +381,7 @@ jobs:
           mkdir -p "$PKG"
 
           # ── 1. Compiled binary ──
-          cp build/otclient "$PKG/" || { echo "ERROR: otclient binary not found"; exit 1; }
+          cp build/otclient "$PKG/" 2>/dev/null || cp otclient "$PKG/" || { echo "ERROR: otclient binary not found"; exit 1; }
           chmod +x "$PKG/otclient"
 
           # ── 2. Shared libraries (if any from build) ──

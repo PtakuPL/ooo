@@ -43,29 +43,29 @@ pub fn default_install_dir() -> PathBuf {
     }
 }
 
-/// Ask the user where to install. Returns chosen path or default.
+/// Ask the user where to install. Returns `Some(path)` or `None` if cancelled.
 ///
 /// Windows: shows a "Yes/No" MessageBox with default path. If "No",
 ///          opens a folder picker dialog (SHBrowseForFolderW).
+///          If user cancels the folder picker → returns `None` (abort).
 /// Linux:   returns the default path (no GUI available).
-pub fn ask_install_dir(prompt_title: &str, prompt_msg: &str) -> PathBuf {
+pub fn ask_install_dir(prompt_title: &str, prompt_msg: &str, hint_msg: &str) -> Option<PathBuf> {
     let default = default_install_dir();
 
     #[cfg(target_os = "windows")]
     {
-        let chosen = win_ask_install_dir(&default, prompt_title, prompt_msg);
-        return chosen.unwrap_or(default);
+        return win_ask_install_dir(&default, prompt_title, prompt_msg, hint_msg);
     }
 
     #[cfg(not(target_os = "windows"))]
     {
-        let _ = (prompt_title, prompt_msg);
-        default
+        let _ = (prompt_title, prompt_msg, hint_msg);
+        Some(default)
     }
 }
 
 #[cfg(target_os = "windows")]
-fn win_ask_install_dir(default: &std::path::Path, title: &str, msg: &str) -> Option<PathBuf> {
+fn win_ask_install_dir(default: &std::path::Path, title: &str, msg: &str, hint: &str) -> Option<PathBuf> {
     use std::ffi::OsStr;
     use std::os::windows::ffi::OsStrExt;
 
@@ -79,7 +79,7 @@ fn win_ask_install_dir(default: &std::path::Path, title: &str, msg: &str) -> Opt
     }
 
     // Ask: "Install to <default>?"  YES=default, NO=pick folder
-    let full_msg = format!("{msg}\n\n{}\n\nClick YES to install here, or NO to choose a different folder.", default.display());
+    let full_msg = format!("{msg}\n\n{}\n\n{hint}", default.display());
     let text_w = to_wide(&full_msg);
     let caption_w = to_wide(title);
 
@@ -97,8 +97,8 @@ fn win_ask_install_dir(default: &std::path::Path, title: &str, msg: &str) -> Opt
         return Some(default.to_path_buf());
     }
 
-    // User wants to pick a folder
-    win_browse_for_folder(title).or_else(|| Some(default.to_path_buf()))
+    // User wants to pick a folder — None means user cancelled (abort)
+    win_browse_for_folder(title)
 }
 
 #[cfg(target_os = "windows")]

@@ -100,6 +100,7 @@ pub struct Strings {
     pub creating_shortcuts: &'static str,
     pub desktop_shortcut_prompt: &'static str,
     pub copying_uninstaller: &'static str,
+    pub install_dir_hint: &'static str,
 }
 
 pub fn strings(lang: Lang) -> &'static Strings {
@@ -150,6 +151,7 @@ static EN: Strings = Strings {
     creating_shortcuts: "Creating shortcuts\u{2026}",
     desktop_shortcut_prompt: "Create a desktop shortcut for RedDaxe.pl?",
     copying_uninstaller: "Setting up uninstaller\u{2026}",
+    install_dir_hint: "Click YES to install here, or NO to choose a different folder.",
 };
 
 static PL: Strings = Strings {
@@ -190,6 +192,7 @@ static PL: Strings = Strings {
     creating_shortcuts: "Tworzenie skr\u{00f3}t\u{00f3}w\u{2026}",
     desktop_shortcut_prompt: "Utworzy\u{0107} skr\u{00f3}t na pulpicie dla RedDaxe.pl?",
     copying_uninstaller: "Przygotowywanie deinstalatora\u{2026}",
+    install_dir_hint: "Kliknij TAK aby zainstalowa\u{0107} tutaj, lub NIE aby wybra\u{0107} inny folder.",
 };
 
 static PT_BR: Strings = Strings {
@@ -230,6 +233,7 @@ static PT_BR: Strings = Strings {
     creating_shortcuts: "Criando atalhos\u{2026}",
     desktop_shortcut_prompt: "Criar um atalho na \u{00e1}rea de trabalho para o RedDaxe.pl?",
     copying_uninstaller: "Configurando desinstalador\u{2026}",
+    install_dir_hint: "Clique SIM para instalar aqui, ou N\u{00c3}O para escolher outra pasta.",
 };
 
 static ES: Strings = Strings {
@@ -270,6 +274,7 @@ static ES: Strings = Strings {
     creating_shortcuts: "Creando accesos directos\u{2026}",
     desktop_shortcut_prompt: "\u{00bf}Crear un acceso directo en el escritorio para RedDaxe.pl?",
     copying_uninstaller: "Configurando desinstalador\u{2026}",
+    install_dir_hint: "Haz clic en S\u{00cd} para instalar aqu\u{00ed}, o NO para elegir otra carpeta.",
 };
 
 static DE: Strings = Strings {
@@ -310,6 +315,7 @@ static DE: Strings = Strings {
     creating_shortcuts: "Verkn\u{00fc}pfungen werden erstellt\u{2026}",
     desktop_shortcut_prompt: "Desktop-Verkn\u{00fc}pfung f\u{00fc}r RedDaxe.pl erstellen?",
     copying_uninstaller: "Deinstallationsprogramm wird eingerichtet\u{2026}",
+    install_dir_hint: "Klicken Sie JA um hier zu installieren, oder NEIN um einen anderen Ordner zu w\u{00e4}hlen.",
 };
 
 // ── Auto-detection ──
@@ -382,7 +388,7 @@ fn choose_language_win32() -> Lang {
     for (i, lang) in Lang::ALL.iter().enumerate() {
         msg.push_str(&format!("  {}. {}\n", i + 1, lang.label()));
     }
-    msg.push_str("\nClick a button:\nYes = English | No = Polski | Cancel = more options");
+    msg.push_str("\nClick a button:\nYes/Tak = English | No/Nie = Polski | Cancel/Anuluj = more options");
 
     fn to_wide(s: &str) -> Vec<u16> {
         OsStr::new(s).encode_wide().chain(std::iter::once(0)).collect()
@@ -423,7 +429,7 @@ fn choose_language_extended_win32() -> Lang {
 
     // Show remaining 3 languages: PT-BR, ES, DE
     let msg = "3. Português (Brasil)\n4. Español\n5. Deutsch\n\n\
-               Yes = Português | No = Español | Cancel = Deutsch";
+               Yes/Tak = Português | No/Nie = Español | Cancel/Anuluj = Deutsch";
     let text_w = to_wide(msg);
     let caption_w = to_wide("RedDaxe.pl \u{2014} Language");
 
@@ -481,6 +487,13 @@ pub fn save_language(lang: Lang) {
             let _ = std::fs::create_dir_all(parent);
         }
         let _ = std::fs::write(path, lang.code());
+    }
+}
+
+/// Delete the saved language preference (used during full uninstall).
+pub fn delete_saved_language() {
+    if let Some(path) = language_conf_path() {
+        let _ = std::fs::remove_file(&path);
     }
 }
 

@@ -2107,3 +2107,34 @@ pub async fn uninstall_launcher() -> Result<String, String> {
     std::thread::sleep(std::time::Duration::from_millis(500));
     std::process::exit(0);
 }
+
+// ─────────────────────────────────────────────
+// Bootstrap language preference
+// ─────────────────────────────────────────────
+
+/// Read the language preference saved by the bootstrap installer (language.conf).
+/// Returns the locale code (e.g. "pl", "en", "de") or empty string if not found.
+#[tauri::command]
+pub fn get_bootstrap_language() -> String {
+    let path = bootstrap_language_conf_path();
+    match path {
+        Some(p) => std::fs::read_to_string(p)
+            .unwrap_or_default()
+            .trim()
+            .to_string(),
+        None => String::new(),
+    }
+}
+
+fn bootstrap_language_conf_path() -> Option<std::path::PathBuf> {
+    #[cfg(target_os = "windows")]
+    {
+        std::env::var("LOCALAPPDATA").ok()
+            .map(|p| std::path::PathBuf::from(p).join("RedDaxe").join("language.conf"))
+    }
+    #[cfg(not(target_os = "windows"))]
+    {
+        std::env::var("HOME").ok()
+            .map(|p| std::path::PathBuf::from(p).join(".config").join("RedDaxe").join("language.conf"))
+    }
+}

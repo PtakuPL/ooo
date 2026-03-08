@@ -179,6 +179,7 @@ fn main() {
             commands::report_error,
             commands::uninstall_game_files,
             commands::uninstall_launcher,
+            commands::get_bootstrap_language,
         ])
         .run(tauri::generate_context!())
         .expect("Błąd uruchamiania Tauri");

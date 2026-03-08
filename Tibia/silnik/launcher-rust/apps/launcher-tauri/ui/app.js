@@ -244,6 +244,39 @@ function getPreferredLocale() {
   return DEFAULT_LOCALE;
 }
 
+// Map bootstrap language codes (de, es, pt-br etc.) to supported launcher locales
+function mapBootstrapLocale(code) {
+  if (!code) return null;
+  const normalized = code.trim().toLowerCase();
+  // Direct match
+  if (SUPPORTED_LOCALES.includes(normalized)) return normalized;
+  // Bootstrap uses these codes for languages we don't have full translations yet
+  const BOOTSTRAP_FALLBACK = { "de": "en", "es": "en", "pt-br": "en", "pt_br": "en" };
+  return BOOTSTRAP_FALLBACK[normalized] || null;
+}
+
+async function getPreferredLocaleAsync() {
+  // 1. Already stored in localStorage — use it
+  const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+  const storedNormalized = normalizeLocale(stored);
+  if (SUPPORTED_LOCALES.includes(storedNormalized)) return storedNormalized;
+
+  // 2. Try bootstrap language.conf via Tauri command
+  try {
+    const bootstrapLang = await window.__TAURI__.core.invoke("get_bootstrap_language");
+    const mapped = mapBootstrapLocale(bootstrapLang);
+    if (mapped) {
+      localStorage.setItem(LANGUAGE_STORAGE_KEY, mapped);
+      return mapped;
+    }
+  } catch (_) { /* Tauri not available or command failed */ }
+
+  // 3. Browser language
+  const browser = normalizeLocale(navigator.language || DEFAULT_LOCALE);
+  if (SUPPORTED_LOCALES.includes(browser)) return browser;
+  return DEFAULT_LOCALE;
+}
+
 function getPhaseLabel(phase) {
   const translated = deepGet(I18N[currentLocale], `phase.${phase}`)
     ?? deepGet(I18N[DEFAULT_LOCALE], `phase.${phase}`)
@@ -1764,7 +1797,8 @@ document.querySelectorAll(".nav-btn[data-screen]").forEach((btn) => {
 document.addEventListener("DOMContentLoaded", async () => {
   await loadI18nDictionaries();
   populateLanguageSelector();
-  setLocale(getPreferredLocale(), false);
+  const preferredLocale = await getPreferredLocaleAsync();
+  setLocale(preferredLocale, false);
 
   // Restore stored values to hidden fields (backward compat)
   saveAccountEmail(getStoredAccountEmail());

@@ -394,28 +394,36 @@ fn choose_language_win32() -> Lang {
         OsStr::new(s).encode_wide().chain(std::iter::once(0)).collect()
     }
 
-    let text_w = to_wide(&msg);
-    let caption_w = to_wide("RedDaxe.pl \u{2014} Language");
+    loop {
+        let text_w = to_wide(&msg);
+        let caption_w = to_wide("RedDaxe.pl \u{2014} Language");
 
-    // MB_YESNOCANCEL | MB_ICONQUESTION = 0x23
-    let result = unsafe {
-        MessageBoxW(
-            std::ptr::null_mut(),
-            text_w.as_ptr(),
-            caption_w.as_ptr(),
-            0x23,
-        )
-    };
+        // MB_YESNOCANCEL | MB_ICONQUESTION = 0x23
+        let result = unsafe {
+            MessageBoxW(
+                std::ptr::null_mut(),
+                text_w.as_ptr(),
+                caption_w.as_ptr(),
+                0x23,
+            )
+        };
 
-    match result {
-        6 => Lang::En,  // IDYES
-        7 => Lang::Pl,  // IDNO
-        _ => choose_language_extended_win32(), // IDCANCEL or other → show full picker
+        match result {
+            6 => return Lang::En,  // IDYES
+            7 => return Lang::Pl,  // IDNO
+            _ => {
+                // IDCANCEL → show extended picker; None = user wants to go back
+                if let Some(lang) = choose_language_extended_win32() {
+                    return lang;
+                }
+                // None → loop back to main picker
+            }
+        }
     }
 }
 
 #[cfg(target_os = "windows")]
-fn choose_language_extended_win32() -> Lang {
+fn choose_language_extended_win32() -> Option<Lang> {
     use std::ffi::OsStr;
     use std::os::windows::ffi::OsStrExt;
 
@@ -427,11 +435,11 @@ fn choose_language_extended_win32() -> Lang {
         OsStr::new(s).encode_wide().chain(std::iter::once(0)).collect()
     }
 
-    // Show remaining 3 languages: PT-BR, ES, DE
-    let msg = "3. Português (Brasil)\n4. Español\n5. Deutsch\n\n\
-               Yes/Tak = Português | No/Nie = Español | Cancel/Anuluj = Deutsch";
-    let text_w = to_wide(msg);
-    let caption_w = to_wide("RedDaxe.pl \u{2014} Language");
+    // Page 1: PT-BR, ES, more
+    let msg1 = "3. Português (Brasil)\n4. Español\n5. Deutsch\n\n\
+                Yes/Tak = Português | No/Nie = Español | Cancel/Anuluj = next \u{2192}";
+    let text_w = to_wide(msg1);
+    let caption_w = to_wide("RedDaxe.pl \u{2014} Language (2/3)");
 
     let result = unsafe {
         MessageBoxW(
@@ -443,9 +451,30 @@ fn choose_language_extended_win32() -> Lang {
     };
 
     match result {
-        6 => Lang::PtBr, // IDYES
-        7 => Lang::Es,   // IDNO
-        _ => Lang::De,    // IDCANCEL
+        6 => return Some(Lang::PtBr), // IDYES
+        7 => return Some(Lang::Es),   // IDNO
+        _ => {}                        // IDCANCEL → page 2
+    }
+
+    // Page 2: DE or back
+    let msg2 = "5. Deutsch\n\n\
+                Yes/Tak = Deutsch | No/Nie = \u{2190} Wróć / Back";
+    let text_w2 = to_wide(msg2);
+    let caption_w2 = to_wide("RedDaxe.pl \u{2014} Language (3/3)");
+
+    // MB_YESNO | MB_ICONQUESTION = 0x24
+    let result2 = unsafe {
+        MessageBoxW(
+            std::ptr::null_mut(),
+            text_w2.as_ptr(),
+            caption_w2.as_ptr(),
+            0x24,
+        )
+    };
+
+    match result2 {
+        6 => Some(Lang::De),  // IDYES = Deutsch
+        _ => None,             // IDNO = back to main picker
     }
 }
 

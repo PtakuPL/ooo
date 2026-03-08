@@ -749,12 +749,12 @@ pub async fn launch_game(
     run_preflight_for_launch(&client_dir, &launcher_data)?;
 
     let installed = core_state::load_state(&state_path)
-        .map_err(|_| "Brak stanu instalacji. Uruchom najpierw aktualizację.".to_string())?;
+        .map_err(|_| "LCH_NO_CLIENT_FILES: Brak stanu instalacji. Uruchom najpierw aktualizację.".to_string())?;
 
     let files_hash = installed
         .current_files_hash
         .as_deref()
-        .ok_or("Brak filesHash. Uruchom aktualizację.")?
+        .ok_or("LCH_NO_FILES_HASH: Brak filesHash. Uruchom aktualizację.")?
         .to_string();
 
     let manifest_version = installed
@@ -1196,21 +1196,9 @@ pub async fn login_launcher_account(
         )
     };
 
-    let state_path = launcher_data.join("installed_state.json");
-    let installed = core_state::load_state(&state_path).map_err(|_| {
-        "Brak stanu instalacji klienta. Najpierw uruchom aktualizację launchera.".to_string()
-    })?;
-
-    let files_hash = installed
-        .current_files_hash
-        .as_deref()
-        .ok_or_else(|| "Brak filesHash klienta. Uruchom aktualizację launchera.".to_string())?
-        .to_string();
-    let manifest_version = installed
-        .current_manifest_version
-        .as_deref()
-        .unwrap_or("unknown")
-        .to_string();
+    // B3: Fresh install — logowanie bez launchToken gdy brak installed_state.json
+    let installed = load_installed_state_or_none(&launcher_data);
+    let fresh_install = is_bootstrap_install(installed.as_ref());
 
     let api = ApiClient::new(ApiClientConfig {
         base_url: api_url,
@@ -1219,20 +1207,41 @@ pub async fn login_launcher_account(
     })
     .map_err(|e| e.to_string())?;
 
-    let launch_token = api
-        .request_launch_token(&LaunchTokenRequest {
-            launcher_version: launcher_version.clone(),
-            files_hash,
-            channel,
-            manifest_version,
-            nonce: None,
-            challenge_response: None,
-        })
-        .await
-        .map_err(|e| format!("ACCOUNT_LOGIN_TOKEN_FAILED: {e}"))?;
+    let launch_token_str = if !fresh_install {
+        let files_hash = installed
+            .as_ref()
+            .and_then(|s| s.current_files_hash.as_deref())
+            .unwrap_or_default()
+            .to_string();
+        let manifest_version = installed
+            .as_ref()
+            .and_then(|s| s.current_manifest_version.as_deref())
+            .unwrap_or("unknown")
+            .to_string();
+        match api
+            .request_launch_token(&LaunchTokenRequest {
+                launcher_version: launcher_version.clone(),
+                files_hash,
+                channel,
+                manifest_version,
+                nonce: None,
+                challenge_response: None,
+            })
+            .await
+        {
+            Ok(token) => Some(token.token),
+            Err(e) => {
+                tracing::warn!("Nie udało się pobrać launchToken: {e}");
+                None
+            }
+        }
+    } else {
+        tracing::info!("Fresh install — logowanie bez launchToken");
+        None
+    };
 
     let login_resp = api
-        .login_account(&canonical_email, &password, "all", Some(&launch_token.token))
+        .login_account(&canonical_email, &password, "all", launch_token_str.as_deref())
         .await
         .map_err(|e| format!("ACCOUNT_LOGIN_FAILED: {e}"))?;
 
@@ -1279,7 +1288,8 @@ pub async fn login_launcher_account(
         "gameMode": game_mode,
         "email": canonical_email,
         "worldCount": world_count,
-        "characterCount": character_count
+        "characterCount": character_count,
+        "freshInstall": fresh_install
     }))
 }
 
@@ -1325,19 +1335,18 @@ pub async fn register_launcher_account(
         )
     };
 
-    let state_path = launcher_data.join("installed_state.json");
-    let installed = core_state::load_state(&state_path).map_err(|_| {
-        "Brak stanu instalacji klienta. Najpierw uruchom aktualizację launchera.".to_string()
-    })?;
+    // B3: Fresh install — rejestracja nie wymaga installed_state.json
+    let installed = load_installed_state_or_none(&launcher_data);
+    let fresh_install = is_bootstrap_install(installed.as_ref());
 
     let files_hash = installed
-        .current_files_hash
-        .as_deref()
-        .ok_or_else(|| "Brak filesHash klienta. Uruchom aktualizację launchera.".to_string())?
+        .as_ref()
+        .and_then(|s| s.current_files_hash.as_deref())
+        .unwrap_or_default()
         .to_string();
     let manifest_version = installed
-        .current_manifest_version
-        .as_deref()
+        .as_ref()
+        .and_then(|s| s.current_manifest_version.as_deref())
         .unwrap_or("unknown")
         .to_string();
 
@@ -1374,32 +1383,37 @@ pub async fn register_launcher_account(
         .trim()
         .to_lowercase();
 
-    let launch_token = match api
-        .request_launch_token(&LaunchTokenRequest {
-            launcher_version: launcher_version.clone(),
-            files_hash,
-            channel,
-            manifest_version,
-            nonce: None,
-            challenge_response: None,
-        })
-        .await
-    {
-        Ok(token) => token,
-        Err(err) => {
-            return Ok(serde_json::json!({
-                "ok": true,
-                "accountId": account_id,
-                "accountName": returned_account_name,
-                "email": returned_email,
-                "autoLogin": false,
-                "autoLoginError": format!("ACCOUNT_AUTOLOGIN_TOKEN_FAILED: {err}")
-            }));
+    let launch_token = if fresh_install {
+        tracing::info!("Fresh install — auto-login bez launchToken");
+        None
+    } else {
+        match api
+            .request_launch_token(&LaunchTokenRequest {
+                launcher_version: launcher_version.clone(),
+                files_hash,
+                channel,
+                manifest_version,
+                nonce: None,
+                challenge_response: None,
+            })
+            .await
+        {
+            Ok(token) => Some(token),
+            Err(err) => {
+                return Ok(serde_json::json!({
+                    "ok": true,
+                    "accountId": account_id,
+                    "accountName": returned_account_name,
+                    "email": returned_email,
+                    "autoLogin": false,
+                    "autoLoginError": format!("ACCOUNT_AUTOLOGIN_TOKEN_FAILED: {err}")
+                }));
+            }
         }
     };
 
     match api
-        .login_account(&returned_email, &password, "all", Some(&launch_token.token))
+        .login_account(&returned_email, &password, "all", launch_token.as_ref().map(|t| t.token.as_str()))
         .await
     {
         Ok(login_resp) => {

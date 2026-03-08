@@ -11,7 +11,7 @@
   "clientExe": "otclient.exe",
   "clientExeLinux": "./otclient",
   "newClientUrl": "https://127.0.0.1/clients/client-14.12.95abf3-full.zip",
-  "apiBaseUrl": "https://127.0.0.1/apik/v1/",
+  "apiBaseUrl": "https://tibia.reddaxe.pl/apik/v1/",
   "filesBaseUrl": "https://127.0.0.1/files",
   "updateChannel": "stable"
 }

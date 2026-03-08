@@ -49,7 +49,7 @@
 
 4. **Zweryfikuj:**
    ```bash
-   curl -s https://api.serwercanary.pl/rollout-config.php | jq '.channels.stable.launcher'
+   curl -s https://tibia.reddaxe.pl/rollout-config.php | jq '.channels.stable.launcher'
    # Powinno zwrócić: "python"
    ```
 

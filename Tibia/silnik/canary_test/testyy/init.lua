@@ -42,7 +42,7 @@ GameModes = {
             port = 443,            -- Port API (HTTPS). Game port (7172) jest w login.php response.
             protocol = 1412,       -- MUSI zgadzać się z data/setup.otml last-supported-version i things/1412/
             httpLogin = true,
-            httpLoginUrl = "https://127.0.0.1/apik/v1/login.php",  -- FIX25: prawdziwy URL API
+            httpLoginUrl = "https://tibia.reddaxe.pl/apik/v1/login.php",  -- FIX25: prawdziwy URL API
         },
         features = {
             hotkeys_items    = false,  -- blokada hotkey na itemy/runy
@@ -67,7 +67,7 @@ GameModes = {
             port = 443,            -- Port API (HTTPS). Game port (7172) jest w login.php response.
             protocol = 1412,       -- MUSI zgadzać się z data/setup.otml last-supported-version i things/1412/
             httpLogin = true,
-            httpLoginUrl = "https://127.0.0.1/apik/v1/login.php",  -- FIX25: prawdziwy URL API
+            httpLoginUrl = "https://tibia.reddaxe.pl/apik/v1/login.php",  -- FIX25: prawdziwy URL API
         },
         features = {
             hotkeys_items    = true,

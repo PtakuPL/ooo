@@ -43,6 +43,14 @@ Zrobione w kodzie roboczym:
 - wykonane realne smoke testy zapisowe `reserve / conflict / attach / heartbeat / helper createGuild` z cleanupem danych testowych dnia `2026-03-08`,
 - dodany CLI `global-guilds-repair.php` z domyslnym `dry-run` i opcjonalnym `--apply` do reconcile / repair niespojnosci registry,
 - dodany CLI `global-guilds-routing-guard.php`, ktory pilnuje, ze oba webowe pathy tworzenia gildii nadal ida przez `GlobalGuildRegistry::createGuild`,
+- dodany CLI `global-guilds-race-test.php` do testu rownoczesnej rezerwacji tej samej nazwy gildii,
+- dodany CLI `global-guilds-fail-closed-smoke.php` do testu odseparowanego registry bez mapowania ownera,
+- dodany CLI `global-guilds-legacy-create-smoke.php` do realnego smoke testu starego flow `system/pages/guilds/create.php`,
+- dodany CLI `global-guilds-validation-guard.php` do pilnowania parytetu walidacji nazwy gildii miedzy `MyAAC\Validator` i API registry,
+- podjeta decyzja auth dla endpointow gildii: dedykowany `GLOBAL_GUILDS_API_KEY`,
+- `globalGuildsRequireAdmin()` zostal uproszczony do jednego modelu auth opartego o `GLOBAL_GUILDS_API_KEY`,
+- skonfigurowany testowy `GLOBAL_GUILDS_API_KEY` w aktualnym runtime,
+- dodany CLI `global-guilds-auth-smoke.php` do testu auth po HTTPS na lokalnych endpointach,
 - dodane komunikaty `i18n` dla flow zakladania gildii,
 - poprawione regex walidacji nazw gildii / nickow / rang w flow gildii,
 - dodane logowanie kontekstu partial-failure dla flow globalny <-> lokalny,
@@ -54,7 +62,7 @@ Jeszcze niewdrozone operacyjnie:
 - migracja nie zostala jeszcze odpalona na produkcyjnym `GLOBAL_DB`, ale jest juz wdrozona na testowym `global_accounts`,
 - registry nie ma jeszcze rolloutu produkcyjnego,
 - nowe endpointy gildii nie maja jeszcze rolloutu produkcyjnego configu, ale przeszly smoke testy na bazie testowej,
-- live API nie ma jeszcze wspolnej warstwy `admin_api_keys`, wiec endpointy gildii wymagaja osobnego klucza rolloutowego,
+- model auth dla gildii jest juz zamkniety na dedykowanym `GLOBAL_GUILDS_API_KEY`, ale produkcyjny rollout klucza nadal czeka,
 - nie potwierdzono jeszcze docelowej tabeli mapujacej `local_account_id -> global_account_id` po separacji `global_accounts`,
 - standardowy runner `migrate.php` jest skierowany na `DB_NAME`, wiec nie nadaje sie do rolloutu registry w `GLOBAL_DB`,
 - nadal trzeba dopiac pelny wspolny kontrakt dla rejestracji API / `RedDAXE`, bo `register-account-lib.php` seeduje juz `account_games`, ale nadal nie mirroruje lokalnego `accounts` jak WWW create flow,
@@ -78,6 +86,20 @@ Wyniki testow DB z `2026-03-08`:
   - pelnego helpera `GlobalGuildRegistry::createGuild`,
 - `global-guilds-repair.php --limit=20` przeszedl w trybie `dry-run` i nie wykryl niespojnosci,
 - `global-guilds-routing-guard.php` potwierdzil, ze oba webowe pathy gildii sa nadal podpiete pod registry,
+- `global-guilds-race-test.php` potwierdzil, ze przy rownoczesnej probie tylko jeden owner wygrywa rezerwacje nazwy, a drugi dostaje `guild_name_reserved` z `HTTP 409`,
+- `global-guilds-fail-closed-smoke.php` potwierdzil, ze przy odseparowanym registry bez `account_world_links` lokalna gildia nie jest tworzona, a globalne tabele pozostaja puste,
+- `global-guilds-legacy-create-smoke.php` potwierdzil, ze legacy path `system/pages/guilds/create.php`:
+  - na aktualnej konfiguracji testowej blokuje create dla konta bez premium i nie zapisuje nic lokalnie ani globalnie,
+  - po bezpiecznym override `core.guild_need_premium=false` tylko wewnatrz procesu testowego tworzy jedna lokalna gildie i jedna globalna instancje,
+  - po cleanupie przywraca stan `local/global = 0`,
+- `global-guilds-validation-guard.php` potwierdzil parytet walidacji nazw gildii miedzy `Validator::guildName()` i `globalGuildsIsValidName()` dla zestawu przypadkow pozytywnych i negatywnych,
+- `global-guilds-auth-smoke.php` potwierdzil kontrakt auth dla endpointow gildii:
+  - `401 missing_api_key` bez naglowka,
+  - `403 invalid_api_key` dla blednego klucza,
+  - `404 not_found` dla poprawnego klucza i brakujacej gildii,
+  - `201 created` dla `reserve-or-attach`,
+  - `200` dla `lookup`, `instances` i `heartbeat`,
+  - cleanup danych testowych przywrocil `global_guilds/global_guild_events` do zera po tescie,
 - smoke test ujawnil i doprowadzil do poprawki blednego rozpoznawania `heartbeat instanceState`,
 - po cleanupie danych testowych stan baz wrocil do:
   - `global_guilds = 0`
@@ -89,6 +111,8 @@ Wniosek:
 
 - etap `globalne gildie P0` jest rozpoczecy,
 - etap `globalne gildie P0` ma juz wykonany rollout i zapisowe smoke testy na bazie testowej,
+- etap `globalne gildie P0` ma juz takze zamkniety model auth na bazie testowej,
+- oba webowe pathy tworzenia gildii sa juz potwierdzone testami: nowy helperowy i legacy,
 - etap `globalne topki` nadal pozostaje nieruszony,
 - przed produkcja trzeba domknac kilka blockerow technicznych opisanych nizej.
 
@@ -493,7 +517,10 @@ Skoro nie mamy jednej transakcji cross-DB, to potrzebujemy narzedzia, ktore:
 Stan na dzis:
 
 - report-only endpoint reconcile jest juz przygotowany,
-- nadal brakuje wlasciwego trybu naprawczego `repair`.
+- CLI `global-guilds-repair.php` jest juz przygotowany:
+  - domyslnie `dry-run`
+  - opcjonalnie `--apply` dla kontrolowanej naprawy
+  - przetestowany na bazie testowej bez wykrytych niespojnosci.
 
 ### 4.8.3 Rollout musi miec kolejnosc operacyjna
 
@@ -502,9 +529,9 @@ Kolejnosc dla produkcji powinna byc jawnie ustalona:
 1. poprawa schematu i walidacji,
 2. dodanie configu API,
 3. odpalanie migracji,
-4. decyzja auth:
-   - dedykowany `GLOBAL_GUILDS_API_KEY`
-   - albo migracja do wspolnego `admin_api_keys`
+4. auth:
+   - aktualny model: dedykowany `GLOBAL_GUILDS_API_KEY`
+   - ewentualna migracja do wspolnego `admin_api_keys` nie jest blockerem P0
 5. smoke testy owner / conflict / attach,
 6. dopiero potem wlaczenie flow produkcyjnego.
 

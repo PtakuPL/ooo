@@ -10,7 +10,7 @@ use std::process;
 
 /// API base URL baked into the binary.  
 /// The bootstrap launcher talks only to this endpoint.
-const API_BASE: &str = "https://127.0.0.1/apik/v1";
+const API_BASE: &str = "https://tibia.reddaxe.pl/apik/v1";
 const CATALOG_ENDPOINT: &str = "/installer-catalog.php";
 const BOOTSTRAP_VERSION: &str = env!("CARGO_PKG_VERSION");
 

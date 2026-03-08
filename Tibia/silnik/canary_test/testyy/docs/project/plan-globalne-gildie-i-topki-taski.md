@@ -41,6 +41,14 @@ Stan prac `2026-03-08`:
 - [x] Naprawiono falszywy `heartbeat missing` przy `UPDATE` w tej samej sekundzie.
 - [x] Dodano CLI `global-guilds-repair.php` z domyslnym `dry-run`.
 - [x] Dodano CLI `global-guilds-routing-guard.php`.
+- [x] Dodano CLI `global-guilds-race-test.php`.
+- [x] Dodano CLI `global-guilds-fail-closed-smoke.php`.
+- [x] Dodano CLI `global-guilds-legacy-create-smoke.php`.
+- [x] Dodano CLI `global-guilds-validation-guard.php`.
+- [x] Podjeto decyzje auth: endpointy gildii zostaja przy dedykowanym `GLOBAL_GUILDS_API_KEY`.
+- [x] Uproszczono runtime auth endpointow gildii do `GLOBAL_GUILDS_API_KEY`.
+- [x] Skonfigurowano testowy `GLOBAL_GUILDS_API_KEY` w aktualnym runtime.
+- [x] Dodano CLI `global-guilds-auth-smoke.php`.
 - [x] Dodano podstawowe komunikaty `i18n` dla flow gildii.
 - [x] Dodano fallback `local-only`, gdy registry nie jest jeszcze wdrozone w DB.
 - [x] Poprawiono regex walidacji nazw gildii / rank / nick w flow gildii.
@@ -63,6 +71,18 @@ Wyniki testow DB z `2026-03-08`:
 - [x] Potwierdzono zapisowe smoke testy i cleanup bazy do `global_guilds=0`, `global_guild_instances=0`, `global_guild_events=0`, `local_guilds=0`.
 - [x] Potwierdzono `global-guilds-repair.php --limit=20` bez niespojnosci w `dry-run`.
 - [x] Potwierdzono `global-guilds-routing-guard.php` dla obu webowych pathow.
+- [x] Potwierdzono `global-guilds-race-test.php` dla rownoczesnej rezerwacji tej samej nazwy.
+- [x] Potwierdzono `global-guilds-fail-closed-smoke.php` dla odseparowanego registry bez mapowania ownera.
+- [x] Potwierdzono `global-guilds-legacy-create-smoke.php` dla starego flow `system/pages/guilds/create.php`:
+  - aktualna konfiguracja testowa blokuje create i nie zapisuje nic do DB,
+  - procesowy override `core.guild_need_premium=false` pozwala przejsc przez legacy path i zapisac `local guild + global guild + global instance`,
+  - cleanup przywraca stan baz do zera.
+- [x] Potwierdzono `global-guilds-validation-guard.php` dla parytetu walidacji nazw gildii miedzy `Validator::guildName()` i `globalGuildsIsValidName()`.
+- [x] Potwierdzono `global-guilds-auth-smoke.php`:
+  - brak klucza => `401 missing_api_key`,
+  - bledny klucz => `403 invalid_api_key`,
+  - poprawny klucz + brak gildii => `404 not_found`,
+  - poprawny klucz => `reserve-or-attach`, `lookup`, `instances`, `heartbeat` przechodza po HTTPS i cleanup wraca do zera.
 
 Wniosek:
 
@@ -156,7 +176,7 @@ Kolejnosc:
 - [x] Dodac heartbeat / last_seen.
 - [x] Dodac report-only endpoint reconcile.
 - [ ] Skonfigurowac produkcyjny klucz API dla endpointow gildii.
-- [ ] Zdecydowac, czy endpointy gildii zostaja przy dedykowanym `GLOBAL_GUILDS_API_KEY`, czy przechodza na wspolne `admin_api_keys`.
+- [x] Zdecydowac model auth endpointow gildii: dedykowany `GLOBAL_GUILDS_API_KEY`.
 - [x] Dodac tooling CLI do statusu i preflightu registry na `GLOBAL_DB`.
 - [x] Dodac tooling CLI do dry-run backfillu owner mapping.
 - [x] Dodac tooling CLI do zapisowych smoke testow registry i helpera WWW.
@@ -190,20 +210,22 @@ Kolejnosc:
 
 - [x] Dodac podstawowa walidacje nazwy gildii w nowym flow.
 - [x] Poprawic regex `A-z` -> `A-Za-z` we wszystkich miejscach walidacji gildii.
-- [ ] Ujednolicic walidacje nazwy gildii miedzy WWW, API i ewentualnym hookiem serwerowym.
-- [ ] Dodac test konfliktu nazwy przy dwoch rownoczesnych probach rezerwacji.
+- [x] Ujednolicic walidacje nazwy gildii miedzy WWW i API oraz dodac guard pilnujacy parytetu.
+- [x] Dodac test konfliktu nazwy przy dwoch rownoczesnych probach rezerwacji.
 - [x] Dodac test odtworzenia tej samej gildii przez tego samego ownera na innym swiecie.
 - [x] Dodac test blokady dla innego ownera.
 - [x] Dodac test `heartbeat` instancji gildii.
-- [ ] Dodac smoke test legacy path `system/pages/guilds/create.php`, zeby nie byl ponownie bypassem registry.
+- [x] Dodac smoke test legacy path `system/pages/guilds/create.php`, zeby nie byl ponownie bypassem registry.
+- [x] Potwierdzic zapisowo, ze legacy path nie zapisuje lokalnej gildii bez registry i po success path tworzy tez wpis globalny.
 - [x] Dodac guard dla obu webowych pathow, ze dalej ida przez `GlobalGuildRegistry::createGuild`.
-- [ ] Dodac test fail-closed:
+- [x] Dodac test fail-closed:
   - `GLOBAL_DB_NAME` ustawione na osobna baze
   - brak mapowania ownera
   - brak zgody na create / attach
-- [ ] Dodac operacyjny test CLI:
+- [x] Dodac operacyjny test CLI:
   - `php migrate-global-guilds.php status`
   - `php global-guilds-db-preflight.php`
+  - `php global-guilds-auth-smoke.php`
   - potwierdzenie blockerow przed rolloutem
 
 ## 4. Epic C - Kanal synchronizacji

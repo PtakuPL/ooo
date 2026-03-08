@@ -11,7 +11,7 @@
 #   - Apache/nginx z SSL na porcie 443
 #   - .env: CLIENT_LOCKED=false (synchronizacja z klientem)
 #   - Serwer gry (canary) uruchomiony na portach 7171-7174
-#   - login.php dostępny pod https://127.0.0.1/apik/v1/login.php
+#   - login.php dostępny pod https://tibia.reddaxe.pl/apik/v1/login.php
 #
 # UŻYCIE:
 #   chmod +x start_dev.sh

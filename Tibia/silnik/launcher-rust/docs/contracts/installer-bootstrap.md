@@ -88,7 +88,7 @@ C:\SerwerCanary\
 
 ```json
 {
-  "api_base_url": "https://api.serwercanary.pl/client/",
+  "api_base_url": "https://tibia.reddaxe.pl/client/",
   "channel": "stable",
   "launcher_version_check": true,
   "client_dir": "client",

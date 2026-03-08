@@ -17,7 +17,7 @@ json_payload=$(cat <<JSON
 JSON
 )
 
-curl -sk -X POST https://127.0.0.1/apik/v1/register-account.php \
+curl -sk -X POST https://tibia.reddaxe.pl/apik/v1/register-account.php \
   -H 'Content-Type: application/json' \
   -d "$json_payload" \
   > "$REG_JSON"

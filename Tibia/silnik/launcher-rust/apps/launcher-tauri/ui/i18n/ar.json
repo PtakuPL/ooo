@@ -1,18 +1,18 @@
 {
   "app": {
-    "title": "SerwerCanary Launcher",
-    "heading": "SerwerCanary"
+    "title": "RedDaxe.pl Launcher",
+    "heading": "RedDaxe.pl"
   },
   "login": {
-    "title": "\uD83D\uDD10 تسجيل الدخول",
+    "title": "🔐 تسجيل الدخول",
     "subtitle": "سجّل الدخول إلى حسابك لاستخدام المشغّل.",
     "email": "البريد الإلكتروني:",
     "emailPlaceholder": "player@email.com",
     "password": "كلمة المرور:",
     "passwordPlaceholder": "أدخل كلمة المرور",
-    "submit": "\uD83D\uDD10 تسجيل الدخول",
+    "submit": "🔐 تسجيل الدخول",
     "noAccountHint": "ليس لديك حساب؟",
-    "showRegister": "\uD83C\uDD95 إنشاء حساب",
+    "showRegister": "🆕 إنشاء حساب",
     "registerName": "اسم الحساب:",
     "registerNamePlaceholder": "player123",
     "registerEmail": "البريد الإلكتروني:",
@@ -21,11 +21,11 @@
     "registerPasswordPlaceholder": "أدخل كلمة المرور",
     "registerPasswordConfirm": "تأكيد كلمة المرور:",
     "registerPasswordConfirmPlaceholder": "أعد إدخال كلمة المرور",
-    "registerSubmit": "\uD83C\uDD95 إنشاء حساب",
-    "registerBack": "\u2190 العودة لتسجيل الدخول",
+    "registerSubmit": "🆕 إنشاء حساب",
+    "registerBack": "← العودة لتسجيل الدخول",
     "oauthHint": "أو سجّل الدخول عبر:",
     "oauthRedirected": "تم فتح صفحة تسجيل الدخول في المتصفح. عُد إلى المشغّل بعد المصادقة.",
-    "logout": "\uD83D\uDEAA تسجيل الخروج"
+    "logout": "🚪 تسجيل الخروج"
   },
   "labels": {
     "launcher": "Launcher:",
@@ -33,8 +33,8 @@
     "channel": "Channel:",
     "status": "Status:",
     "servers": "🖥 Servers",
-    "serverMainName": "SerwerCanary — Tibia 14.20+",
-    "serverRetroName": "SerwerCanary — Retro 7.4",
+    "serverMainName": "RedDaxe.pl — Tibia 14.20+",
+    "serverRetroName": "RedDaxe.pl — Retro 7.4",
     "players": "Players",
     "ping": "Ping",
     "currentVersion": "Current version:",
@@ -225,7 +225,20 @@
       "LCH_TLS_REQUIRED": "Secure connection (HTTPS) is required.",
       "LCH_STATE_CORRUPTED": "Launcher state is corrupted. Repair has been started.",
       "LCH_LAUNCHER_UPDATE_REQUIRED": "Launcher update is required.",
-      "LCH_STAGING_CLEANUP_FAILED": "Warning: temporary files were not cleaned up."
+      "LCH_STAGING_CLEANUP_FAILED": "Warning: temporary files were not cleaned up.",
+      "LCH_WRONG_CREDENTIALS": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+      "LCH_EMPTY_CREDENTIALS": "أدخل البريد الإلكتروني وكلمة المرور.",
+      "LCH_RATE_LIMITED_IP": "محاولات تسجيل دخول كثيرة جدًا. حاول مرة أخرى بعد قليل.",
+      "LCH_RATE_LIMITED_EMAIL": "محاولات كثيرة لهذا الحساب. حاول لاحقًا.",
+      "LCH_TOKEN_REQUIRED": "رمز الإطلاق مطلوب. استخدم المشغل الرسمي.",
+      "LCH_TOKEN_INVALID": "رمز إطلاق غير صالح. أعد تشغيل المشغل.",
+      "LCH_TOKEN_EXPIRED": "انتهت صلاحية رمز الإطلاق. أعد تشغيل المشغل.",
+      "LCH_TOKEN_IP_MISMATCH": "عدم تطابق IP للرمز. لا تشارك الرموز.",
+      "LCH_INTEGRITY_FAILED": "فشل فحص سلامة الملفات. حدّث العميل.",
+      "LCH_VERSION_OUTDATED": "إصدار العميل قديم. حدّث عبر المشغل.",
+      "LCH_TOKEN_ERROR": "خطأ في التحقق من الرمز. حاول مرة أخرى.",
+      "LCH_BAD_ACTION": "إجراء تسجيل دخول غير معروف.",
+      "LCH_INVALID_GAMEMODE": "وضع لعب غير صالح."
     }
   },
   "settings": {

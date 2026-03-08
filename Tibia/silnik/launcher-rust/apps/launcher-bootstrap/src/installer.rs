@@ -340,7 +340,7 @@ mod registry {
     const REG_DWORD: u32 = 4;
 
     const UNINSTALL_KEY: &str =
-        r"Software\Microsoft\Windows\CurrentVersion\Uninstall\SerwerCanary";
+        r"Software\Microsoft\Windows\CurrentVersion\Uninstall\RedDaxe";
 
     #[link(name = "advapi32")]
     extern "system" {
@@ -391,7 +391,7 @@ mod registry {
         let version = env!("CARGO_PKG_VERSION");
 
         let res = (|| {
-            set_string_value(hkey, "DisplayName", "SerwerCanary Launcher")?;
+            set_string_value(hkey, "DisplayName", "RedDaxe.pl Launcher")?;
             set_string_value(
                 hkey, "UninstallString",
                 &format!("\"{}\" --uninstall", uninstall_exe.display()),
@@ -404,7 +404,7 @@ mod registry {
                 hkey, "DisplayIcon",
                 &launcher_exe.display().to_string(),
             )?;
-            set_string_value(hkey, "Publisher", "SerwerCanary")?;
+            set_string_value(hkey, "Publisher", "RedDaxe.pl")?;
             set_string_value(hkey, "DisplayVersion", version)?;
             set_dword_value(hkey, "NoModify", 1)?;
             set_dword_value(hkey, "NoRepair", 1)?;

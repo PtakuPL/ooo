@@ -39,7 +39,7 @@ pub struct LauncherProfiles {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase", deny_unknown_fields)]
 pub struct LauncherConfig {
-    /// Bazowy URL API launchera (np. "https://api.serwercanary.pl/client/").
+    /// Bazowy URL API launchera (np. "https://tibia.reddaxe.pl/client/").
     pub api_base_url: String,
 
     /// Kanał aktualizacji: "stable", "test", "dev".
@@ -108,7 +108,7 @@ fn default_launcher_data_dir() -> String {
 impl Default for LauncherConfig {
     fn default() -> Self {
         Self {
-            api_base_url: "https://127.0.0.1/apik/v1/".to_string(),
+            api_base_url: "https://tibia.reddaxe.pl/apik/v1/".to_string(),
             channel: default_channel(),
             profile: default_profile(),
             profiles: None,
@@ -578,14 +578,14 @@ mod tests {
     #[test]
     fn test_resolve_relative_dirs() {
         let config = LauncherConfig::default();
-        let base = Path::new("/opt/serwercanary");
+        let base = Path::new("/opt/reddaxe");
         assert_eq!(
             config.resolve_client_dir(base),
-            PathBuf::from("/opt/serwercanary/client")
+            PathBuf::from("/opt/reddaxe/client")
         );
         assert_eq!(
             config.resolve_data_dir(base),
-            PathBuf::from("/opt/serwercanary/launcher_data")
+            PathBuf::from("/opt/reddaxe/launcher_data")
         );
     }
 
@@ -596,7 +596,7 @@ mod tests {
             launcher_data_dir: "/custom/data".to_string(),
             ..Default::default()
         };
-        let base = Path::new("/opt/serwercanary");
+        let base = Path::new("/opt/reddaxe");
         assert_eq!(
             config.resolve_client_dir(base),
             PathBuf::from("/custom/path/client")

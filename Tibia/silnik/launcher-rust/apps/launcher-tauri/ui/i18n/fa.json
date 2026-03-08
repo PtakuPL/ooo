@@ -1,18 +1,18 @@
 {
   "app": {
-    "title": "SerwerCanary Launcher",
-    "heading": "SerwerCanary"
+    "title": "RedDaxe.pl Launcher",
+    "heading": "RedDaxe.pl"
   },
   "login": {
-    "title": "\uD83D\uDD10 ورود",
+    "title": "🔐 ورود",
     "subtitle": "برای استفاده از لانچر وارد حساب خود شوید.",
     "email": "ایمیل:",
     "emailPlaceholder": "player@email.com",
     "password": "رمز عبور:",
     "passwordPlaceholder": "رمز عبور را وارد کنید",
-    "submit": "\uD83D\uDD10 ورود",
+    "submit": "🔐 ورود",
     "noAccountHint": "حساب ندارید؟",
-    "showRegister": "\uD83C\uDD95 ساخت حساب",
+    "showRegister": "🆕 ساخت حساب",
     "registerName": "نام حساب:",
     "registerNamePlaceholder": "player123",
     "registerEmail": "ایمیل:",
@@ -21,11 +21,11 @@
     "registerPasswordPlaceholder": "رمز عبور را وارد کنید",
     "registerPasswordConfirm": "تأیید رمز عبور:",
     "registerPasswordConfirmPlaceholder": "رمز عبور را دوباره وارد کنید",
-    "registerSubmit": "\uD83C\uDD95 ساخت حساب",
-    "registerBack": "\u2190 بازگشت به ورود",
+    "registerSubmit": "🆕 ساخت حساب",
+    "registerBack": "← بازگشت به ورود",
     "oauthHint": "یا وارد شوید از طریق:",
     "oauthRedirected": "صفحه ورود در مرورگر باز شد. پس از احراز هویت به لانچر برگردید.",
-    "logout": "\uD83D\uDEAA خروج"
+    "logout": "🚪 خروج"
   },
   "labels": {
     "launcher": "Launcher:",
@@ -33,8 +33,8 @@
     "channel": "Channel:",
     "status": "Status:",
     "servers": "🖥 Servers",
-    "serverMainName": "SerwerCanary — Tibia 14.20+",
-    "serverRetroName": "SerwerCanary — Retro 7.4",
+    "serverMainName": "RedDaxe.pl — Tibia 14.20+",
+    "serverRetroName": "RedDaxe.pl — Retro 7.4",
     "players": "Players",
     "ping": "Ping",
     "currentVersion": "Current version:",
@@ -225,7 +225,20 @@
       "LCH_TLS_REQUIRED": "Secure connection (HTTPS) is required.",
       "LCH_STATE_CORRUPTED": "Launcher state is corrupted. Repair has been started.",
       "LCH_LAUNCHER_UPDATE_REQUIRED": "Launcher update is required.",
-      "LCH_STAGING_CLEANUP_FAILED": "Warning: temporary files were not cleaned up."
+      "LCH_STAGING_CLEANUP_FAILED": "Warning: temporary files were not cleaned up.",
+      "LCH_WRONG_CREDENTIALS": "ایمیل یا رمز عبور نادرست است.",
+      "LCH_EMPTY_CREDENTIALS": "ایمیل و رمز عبور را وارد کنید.",
+      "LCH_RATE_LIMITED_IP": "تلاش‌های ورود بیش از حد مجاز. کمی بعد دوباره امتحان کنید.",
+      "LCH_RATE_LIMITED_EMAIL": "تلاش‌های زیاد برای این حساب. کمی بعد دوباره امتحان کنید.",
+      "LCH_TOKEN_REQUIRED": "توکن راه‌اندازی لازم است. از لانچر رسمی استفاده کنید.",
+      "LCH_TOKEN_INVALID": "توکن راه‌اندازی نامعتبر. لانچر را دوباره راه‌اندازی کنید.",
+      "LCH_TOKEN_EXPIRED": "توکن راه‌اندازی منقضی شده. لانچر را دوباره راه‌اندازی کنید.",
+      "LCH_TOKEN_IP_MISMATCH": "عدم تطابق IP توکن. توکن‌ها را به اشتراک نگذارید.",
+      "LCH_INTEGRITY_FAILED": "بررسی یکپارچگی فایل ناموفق بود. کلاینت را به‌روز کنید.",
+      "LCH_VERSION_OUTDATED": "نسخه کلاینت قدیمی است. از طریق لانچر به‌روز کنید.",
+      "LCH_TOKEN_ERROR": "خطای اعتبارسنجی توکن. دوباره امتحان کنید.",
+      "LCH_BAD_ACTION": "عملیات ورود ناشناخته.",
+      "LCH_INVALID_GAMEMODE": "حالت بازی نامعتبر."
     }
   },
   "settings": {

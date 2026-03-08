@@ -425,7 +425,7 @@ fn main() {
     if args.is_empty() || args.contains(&"--help".to_string()) {
         eprintln!("Usage: launcher-helper --source <path> --target <path> --backup <path> [--pid <PID>] [--sha256 <hash>] [--restart] [--timeout <secs>]");
         eprintln!();
-        eprintln!("Self-update helper for SerwerCanary Launcher.");
+        eprintln!("Self-update helper for RedDaxe.pl Launcher.");
         eprintln!("Replaces the launcher binary while it's not running.");
         std::process::exit(if args.is_empty() { 1 } else { 0 });
     }

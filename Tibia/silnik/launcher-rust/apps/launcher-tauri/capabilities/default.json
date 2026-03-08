@@ -1,7 +1,9 @@
 {
   "identifier": "default",
-  "description": "SerwerCanary Launcher — default capabilities",
-  "windows": ["main"],
+  "description": "RedDaxe.pl Launcher — default capabilities",
+  "windows": [
+    "main"
+  ],
   "permissions": [
     "core:default",
     "shell:allow-open"

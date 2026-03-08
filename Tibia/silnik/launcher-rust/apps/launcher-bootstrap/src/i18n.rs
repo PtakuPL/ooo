@@ -113,7 +113,7 @@ pub fn strings(lang: Lang) -> &'static Strings {
 }
 
 static EN: Strings = Strings {
-    bootstrap_title: "SerwerCanary \u{2014} Bootstrap",
+    bootstrap_title: "RedDaxe.pl \u{2014} Installer",
     installing_launcher: "installing launcher",
     existing_installation: "Existing launcher installation detected.",
     updating: "Updating to latest version\u{2026}",
@@ -138,9 +138,9 @@ static EN: Strings = Strings {
     error_prefix: "ERROR",
     choose_install_dir: "Choose where to install the launcher:",
     installed_at: "Launcher installed in:",
-    uninstall_confirm: "Are you sure you want to uninstall SerwerCanary?\n\nThis will remove: launcher files, game files, shortcuts, and settings.",
+    uninstall_confirm: "Are you sure you want to uninstall RedDaxe.pl?\n\nThis will remove: launcher files, game files, shortcuts, and settings.",
     uninstall_complete: "Uninstallation complete.",
-    uninstall_bootstrap_hint: "The bootstrap installer in your Downloads folder can be deleted manually.",
+    uninstall_bootstrap_hint: "The installer in your Downloads folder can be deleted manually.",
     uninstall_removing_files: "Removing installed files\u{2026}",
     uninstall_removing_registry: "Removing registry entry\u{2026}",
     uninstall_removing_shortcuts: "Removing shortcuts\u{2026}",
@@ -148,12 +148,12 @@ static EN: Strings = Strings {
     existing_install_uninstall_prompt: "An existing installation was found.\n\nYES = Uninstall everything and exit\nNO = Update (reinstall)\nCANCEL = Abort",
     registering_uninstaller: "Registering uninstaller\u{2026}",
     creating_shortcuts: "Creating shortcuts\u{2026}",
-    desktop_shortcut_prompt: "Create a desktop shortcut for SerwerCanary?",
+    desktop_shortcut_prompt: "Create a desktop shortcut for RedDaxe.pl?",
     copying_uninstaller: "Setting up uninstaller\u{2026}",
 };
 
 static PL: Strings = Strings {
-    bootstrap_title: "SerwerCanary \u{2014} Bootstrap",
+    bootstrap_title: "RedDaxe.pl \u{2014} Installer",
     installing_launcher: "instalacja launchera",
     existing_installation: "Wykryto istniej\u{0105}c\u{0105} instalacj\u{0119} launchera.",
     updating: "Aktualizuj\u{0119} do najnowszej wersji\u{2026}",
@@ -178,9 +178,9 @@ static PL: Strings = Strings {
     error_prefix: "B\u{0141}\u{0104}D",
     choose_install_dir: "Wybierz folder instalacji launchera:",
     installed_at: "Launcher zainstalowany w:",
-    uninstall_confirm: "Na pewno chcesz odinstalowa\u{0107} SerwerCanary?\n\nUsuni\u{0119}te zostan\u{0105}: pliki launchera, pliki gry, skr\u{00f3}ty, ustawienia.",
+    uninstall_confirm: "Na pewno chcesz odinstalowa\u{0107} RedDaxe.pl?\n\nUsuni\u{0119}te zostan\u{0105}: pliki launchera, pliki gry, skr\u{00f3}ty, ustawienia.",
     uninstall_complete: "Deinstalacja zako\u{0144}czona.",
-    uninstall_bootstrap_hint: "Plik bootstrap w folderze Pobrane mo\u{017c}esz usun\u{0105}\u{0107} r\u{0119}cznie.",
+    uninstall_bootstrap_hint: "Plik instalatora w folderze Pobrane mo\u{017c}esz usun\u{0105}\u{0107} r\u{0119}cznie.",
     uninstall_removing_files: "Usuwanie plik\u{00f3}w\u{2026}",
     uninstall_removing_registry: "Usuwanie wpisu z rejestru\u{2026}",
     uninstall_removing_shortcuts: "Usuwanie skr\u{00f3}t\u{00f3}w\u{2026}",
@@ -188,12 +188,12 @@ static PL: Strings = Strings {
     existing_install_uninstall_prompt: "Wykryto istniej\u{0105}c\u{0105} instalacj\u{0119}.\n\nTAK = Odinstaluj wszystko i zako\u{0144}cz\nNIE = Aktualizuj (reinstalacja)\nANULUJ = Przerwij",
     registering_uninstaller: "Rejestrowanie deinstalatora\u{2026}",
     creating_shortcuts: "Tworzenie skr\u{00f3}t\u{00f3}w\u{2026}",
-    desktop_shortcut_prompt: "Utworzy\u{0107} skr\u{00f3}t na pulpicie dla SerwerCanary?",
+    desktop_shortcut_prompt: "Utworzy\u{0107} skr\u{00f3}t na pulpicie dla RedDaxe.pl?",
     copying_uninstaller: "Przygotowywanie deinstalatora\u{2026}",
 };
 
 static PT_BR: Strings = Strings {
-    bootstrap_title: "SerwerCanary \u{2014} Bootstrap",
+    bootstrap_title: "RedDaxe.pl \u{2014} Installer",
     installing_launcher: "instala\u{00e7}\u{00e3}o do launcher",
     existing_installation: "Instala\u{00e7}\u{00e3}o existente do launcher detectada.",
     updating: "Atualizando para a vers\u{00e3}o mais recente\u{2026}",
@@ -218,9 +218,9 @@ static PT_BR: Strings = Strings {
     error_prefix: "ERRO",
     choose_install_dir: "Escolha onde instalar o launcher:",
     installed_at: "Launcher instalado em:",
-    uninstall_confirm: "Tem certeza que deseja desinstalar o SerwerCanary?\n\nSer\u{00e3}o removidos: arquivos do launcher, arquivos do jogo, atalhos e configura\u{00e7}\u{00f5}es.",
+    uninstall_confirm: "Tem certeza que deseja desinstalar o RedDaxe.pl?\n\nSer\u{00e3}o removidos: arquivos do launcher, arquivos do jogo, atalhos e configura\u{00e7}\u{00f5}es.",
     uninstall_complete: "Desinstala\u{00e7}\u{00e3}o conclu\u{00ed}da.",
-    uninstall_bootstrap_hint: "O arquivo bootstrap na pasta de Downloads pode ser exclu\u{00ed}do manualmente.",
+    uninstall_bootstrap_hint: "O arquivo do instalador na pasta de Downloads pode ser exclu\u{00ed}do manualmente.",
     uninstall_removing_files: "Removendo arquivos\u{2026}",
     uninstall_removing_registry: "Removendo entrada do registro\u{2026}",
     uninstall_removing_shortcuts: "Removendo atalhos\u{2026}",
@@ -228,12 +228,12 @@ static PT_BR: Strings = Strings {
     existing_install_uninstall_prompt: "Instala\u{00e7}\u{00e3}o existente encontrada.\n\nSIM = Desinstalar tudo e sair\nN\u{00c3}O = Atualizar (reinstalar)\nCANCELAR = Abortar",
     registering_uninstaller: "Registrando desinstalador\u{2026}",
     creating_shortcuts: "Criando atalhos\u{2026}",
-    desktop_shortcut_prompt: "Criar um atalho na \u{00e1}rea de trabalho para o SerwerCanary?",
+    desktop_shortcut_prompt: "Criar um atalho na \u{00e1}rea de trabalho para o RedDaxe.pl?",
     copying_uninstaller: "Configurando desinstalador\u{2026}",
 };
 
 static ES: Strings = Strings {
-    bootstrap_title: "SerwerCanary \u{2014} Bootstrap",
+    bootstrap_title: "RedDaxe.pl \u{2014} Installer",
     installing_launcher: "instalaci\u{00f3}n del launcher",
     existing_installation: "Se detect\u{00f3} una instalaci\u{00f3}n existente del launcher.",
     updating: "Actualizando a la \u{00fa}ltima versi\u{00f3}n\u{2026}",
@@ -258,9 +258,9 @@ static ES: Strings = Strings {
     error_prefix: "ERROR",
     choose_install_dir: "Elige d\u{00f3}nde instalar el launcher:",
     installed_at: "Launcher instalado en:",
-    uninstall_confirm: "\u{00bf}Est\u{00e1}s seguro de que quieres desinstalar SerwerCanary?\n\nSe eliminar\u{00e1}n: archivos del launcher, archivos del juego, accesos directos y configuraci\u{00f3}n.",
+    uninstall_confirm: "\u{00bf}Est\u{00e1}s seguro de que quieres desinstalar RedDaxe.pl?\n\nSe eliminar\u{00e1}n: archivos del launcher, archivos del juego, accesos directos y configuraci\u{00f3}n.",
     uninstall_complete: "Desinstalaci\u{00f3}n completada.",
-    uninstall_bootstrap_hint: "El archivo bootstrap en tu carpeta de Descargas puede eliminarse manualmente.",
+    uninstall_bootstrap_hint: "El archivo del instalador en tu carpeta de Descargas puede eliminarse manualmente.",
     uninstall_removing_files: "Eliminando archivos\u{2026}",
     uninstall_removing_registry: "Eliminando entrada del registro\u{2026}",
     uninstall_removing_shortcuts: "Eliminando accesos directos\u{2026}",
@@ -268,12 +268,12 @@ static ES: Strings = Strings {
     existing_install_uninstall_prompt: "Se encontr\u{00f3} una instalaci\u{00f3}n existente.\n\nS\u{00cd} = Desinstalar todo y salir\nNO = Actualizar (reinstalar)\nCANCELAR = Abortar",
     registering_uninstaller: "Registrando desinstalador\u{2026}",
     creating_shortcuts: "Creando accesos directos\u{2026}",
-    desktop_shortcut_prompt: "\u{00bf}Crear un acceso directo en el escritorio para SerwerCanary?",
+    desktop_shortcut_prompt: "\u{00bf}Crear un acceso directo en el escritorio para RedDaxe.pl?",
     copying_uninstaller: "Configurando desinstalador\u{2026}",
 };
 
 static DE: Strings = Strings {
-    bootstrap_title: "SerwerCanary \u{2014} Bootstrap",
+    bootstrap_title: "RedDaxe.pl \u{2014} Installer",
     installing_launcher: "Launcher-Installation",
     existing_installation: "Bestehende Launcher-Installation erkannt.",
     updating: "Aktualisierung auf die neueste Version\u{2026}",
@@ -298,9 +298,9 @@ static DE: Strings = Strings {
     error_prefix: "FEHLER",
     choose_install_dir: "W\u{00e4}hlen Sie den Installationsordner:",
     installed_at: "Launcher installiert in:",
-    uninstall_confirm: "M\u{00f6}chten Sie SerwerCanary wirklich deinstallieren?\n\nFolgendes wird entfernt: Launcher-Dateien, Spieldateien, Verkn\u{00fc}pfungen und Einstellungen.",
+    uninstall_confirm: "M\u{00f6}chten Sie RedDaxe.pl wirklich deinstallieren?\n\nFolgendes wird entfernt: Launcher-Dateien, Spieldateien, Verkn\u{00fc}pfungen und Einstellungen.",
     uninstall_complete: "Deinstallation abgeschlossen.",
-    uninstall_bootstrap_hint: "Die Bootstrap-Datei in Ihrem Download-Ordner k\u{00f6}nnen Sie manuell l\u{00f6}schen.",
+    uninstall_bootstrap_hint: "Die Installationsdatei in Ihrem Download-Ordner k\u{00f6}nnen Sie manuell l\u{00f6}schen.",
     uninstall_removing_files: "Dateien werden entfernt\u{2026}",
     uninstall_removing_registry: "Registrierungseintrag wird entfernt\u{2026}",
     uninstall_removing_shortcuts: "Verkn\u{00fc}pfungen werden entfernt\u{2026}",
@@ -308,7 +308,7 @@ static DE: Strings = Strings {
     existing_install_uninstall_prompt: "Bestehende Installation gefunden.\n\nJA = Alles deinstallieren und beenden\nNEIN = Aktualisieren (Neuinstallation)\nABBRECHEN = Abbrechen",
     registering_uninstaller: "Deinstallationsprogramm wird registriert\u{2026}",
     creating_shortcuts: "Verkn\u{00fc}pfungen werden erstellt\u{2026}",
-    desktop_shortcut_prompt: "Desktop-Verkn\u{00fc}pfung f\u{00fc}r SerwerCanary erstellen?",
+    desktop_shortcut_prompt: "Desktop-Verkn\u{00fc}pfung f\u{00fc}r RedDaxe.pl erstellen?",
     copying_uninstaller: "Deinstallationsprogramm wird eingerichtet\u{2026}",
 };
 
@@ -389,7 +389,7 @@ fn choose_language_win32() -> Lang {
     }
 
     let text_w = to_wide(&msg);
-    let caption_w = to_wide("SerwerCanary \u{2014} Language");
+    let caption_w = to_wide("RedDaxe.pl \u{2014} Language");
 
     // MB_YESNOCANCEL | MB_ICONQUESTION = 0x23
     let result = unsafe {
@@ -425,7 +425,7 @@ fn choose_language_extended_win32() -> Lang {
     let msg = "3. Português (Brasil)\n4. Español\n5. Deutsch\n\n\
                Yes = Português | No = Español | Cancel = Deutsch";
     let text_w = to_wide(msg);
-    let caption_w = to_wide("SerwerCanary \u{2014} Language");
+    let caption_w = to_wide("RedDaxe.pl \u{2014} Language");
 
     let result = unsafe {
         MessageBoxW(
@@ -488,31 +488,25 @@ fn language_conf_path() -> Option<std::path::PathBuf> {
     #[cfg(target_os = "windows")]
     {
         std::env::var("LOCALAPPDATA").ok()
-            .map(|p| std::path::PathBuf::from(p).join("SerwerCanary").join("language.conf"))
+            .map(|p| std::path::PathBuf::from(p).join("RedDaxe").join("language.conf"))
     }
     #[cfg(not(target_os = "windows"))]
     {
         std::env::var("HOME").ok()
-            .map(|p| std::path::PathBuf::from(p).join(".config").join("SerwerCanary").join("language.conf"))
+            .map(|p| std::path::PathBuf::from(p).join(".config").join("RedDaxe").join("language.conf"))
     }
 }
 
 /// Resolve the language to use:
 /// 1. Saved preference (from previous run) → use directly
-/// 2. First run → always show dialog (auto-detect only pre-selects default)
+/// 2. First run → ALWAYS show dialog (user's decision, even if OS language detected)
 pub fn resolve_language() -> Lang {
     // 1. Check saved preference
     if let Some(lang) = load_saved_language() {
         return lang;
     }
 
-    // 2. Try OS language auto-detection
-    if let Some(lang) = detect_system_language() {
-        save_language(lang);
-        return lang;
-    }
-
-    // 3. First run, unknown OS locale — ask the user
+    // 2. First run — always show dialog, regardless of OS language
     let lang = choose_language_dialog();
     save_language(lang);
     lang

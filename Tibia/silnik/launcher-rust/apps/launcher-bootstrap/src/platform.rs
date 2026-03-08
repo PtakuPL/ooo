@@ -24,22 +24,22 @@ pub fn arch_name() -> &'static str {
 
 /// Default installation directory for the full launcher.
 ///
-/// Windows: `%LOCALAPPDATA%\SerwerCanary\`
-/// Linux:   `~/Games/SerwerCanary/`
+/// Windows: `%LOCALAPPDATA%\RedDaxe\`
+/// Linux:   `~/Games/RedDaxe/`
 pub fn default_install_dir() -> PathBuf {
     #[cfg(target_os = "windows")]
     {
         if let Ok(local) = std::env::var("LOCALAPPDATA") {
-            return PathBuf::from(local).join("SerwerCanary");
+            return PathBuf::from(local).join("RedDaxe");
         }
-        PathBuf::from(r"C:\SerwerCanary")
+        PathBuf::from(r"C:\RedDaxe")
     }
     #[cfg(not(target_os = "windows"))]
     {
         if let Ok(home) = std::env::var("HOME") {
-            return PathBuf::from(home).join("Games").join("SerwerCanary");
+            return PathBuf::from(home).join("Games").join("RedDaxe");
         }
-        PathBuf::from("/tmp/SerwerCanary")
+        PathBuf::from("/tmp/RedDaxe")
     }
 }
 
@@ -174,7 +174,7 @@ fn win_browse_for_folder(title: &str) -> Option<PathBuf> {
     if path_str.is_empty() {
         None
     } else {
-        Some(PathBuf::from(path_str).join("SerwerCanary"))
+        Some(PathBuf::from(path_str).join("RedDaxe"))
     }
 }
 
@@ -225,14 +225,14 @@ pub fn create_shortcuts(install_dir: &std::path::Path, ask_desktop: bool) {
     {
         // Start Menu shortcut (always)
         if let Some(sm_dir) = start_menu_path() {
-            let lnk = sm_dir.join("SerwerCanary.lnk");
-            let _ = create_shortcut_win(&lnk, &launcher_exe, "SerwerCanary Launcher");
+            let lnk = sm_dir.join("RedDaxe.lnk");
+            let _ = create_shortcut_win(&lnk, &launcher_exe, "RedDaxe.pl Launcher");
         }
         // Desktop shortcut (if user agreed)
         if ask_desktop {
             if let Some(desktop) = desktop_path() {
-                let lnk = desktop.join("SerwerCanary.lnk");
-                let _ = create_shortcut_win(&lnk, &launcher_exe, "SerwerCanary Launcher");
+                let lnk = desktop.join("RedDaxe.lnk");
+                let _ = create_shortcut_win(&lnk, &launcher_exe, "RedDaxe.pl Launcher");
             }
         }
     }
@@ -279,20 +279,20 @@ fn create_desktop_entry_linux(install_dir: &std::path::Path) {
     if let Ok(home) = std::env::var("HOME") {
         let desktop_entry_path = PathBuf::from(&home)
             .join(".local").join("share").join("applications")
-            .join("SerwerCanary.desktop");
+            .join("RedDaxe.desktop");
 
         let launcher_path = install_dir.join(launcher_exe_name());
         let content = format!(
             "[Desktop Entry]\n\
              Type=Application\n\
-             Name=SerwerCanary\n\
-             Comment=SerwerCanary Tibia Launcher\n\
+             Name=RedDaxe.pl\n\
+             Comment=RedDaxe.pl Tibia Launcher\n\
              Exec={}\n\
              Path={}\n\
              Icon={}\n\
              Terminal=false\n\
              Categories=Game;\n\
-             StartupWMClass=SerwerCanary\n",
+             StartupWMClass=RedDaxe\n",
             launcher_path.display(),
             install_dir.display(),
             install_dir.join("icon.png").display(),
@@ -310,10 +310,10 @@ pub fn remove_shortcuts() {
     #[cfg(target_os = "windows")]
     {
         if let Some(desktop) = desktop_path() {
-            let _ = std::fs::remove_file(desktop.join("SerwerCanary.lnk"));
+            let _ = std::fs::remove_file(desktop.join("RedDaxe.lnk"));
         }
         if let Some(sm_dir) = start_menu_path() {
-            let _ = std::fs::remove_file(sm_dir.join("SerwerCanary.lnk"));
+            let _ = std::fs::remove_file(sm_dir.join("RedDaxe.lnk"));
         }
     }
 
@@ -322,7 +322,7 @@ pub fn remove_shortcuts() {
         if let Ok(home) = std::env::var("HOME") {
             let desktop_entry = PathBuf::from(&home)
                 .join(".local").join("share").join("applications")
-                .join("SerwerCanary.desktop");
+                .join("RedDaxe.desktop");
             let _ = std::fs::remove_file(desktop_entry);
         }
     }

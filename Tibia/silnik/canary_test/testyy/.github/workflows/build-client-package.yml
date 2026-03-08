@@ -74,6 +74,7 @@ jobs:
           cmake -S . -B build -G Ninja `
             -DCMAKE_BUILD_TYPE=Release `
             -DVCPKG_TARGET_TRIPLET=x64-windows-static `
+            -DBUILD_STATIC_LIBRARY=ON `
             -DCMAKE_TOOLCHAIN_FILE="${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake" `
             -DCMAKE_MSVC_RUNTIME_LIBRARY="MultiThreaded"
 

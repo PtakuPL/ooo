@@ -3,21 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SerwerCanary Launcher</title>
+  <title>RedDaxe.pl Launcher</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="app">
     <!-- Nagłówek -->
     <header id="header">
-      <h1 id="app-title">SerwerCanary</h1>
+      <h1 id="app-title">RedDaxe.pl</h1>
       <span id="version-badge" class="badge">v---</span>
     </header>
 
     <!-- Ekran: Logowanie (login-first gate) -->
     <section id="screen-login" class="screen active">
       <div class="login-card">
-        <h2 id="login-title">🔐 Zaloguj się</h2>
+        <div class="login-card-header">
+          <h2 id="login-title">🔐 Zaloguj się</h2>
+          <select id="login-language-picker" class="login-lang-select">
+            <option value="pl">Polski</option>
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+            <option value="he">עברית</option>
+            <option value="fa">فارسی</option>
+          </select>
+        </div>
         <p id="login-subtitle" class="info-text">Zaloguj się na konto aby korzystać z launchera.</p>
 
         <div class="login-form">
@@ -148,7 +157,7 @@
           <div class="server-card" data-server="tibia-main">
             <div class="server-status-dot dot-offline"></div>
             <div class="server-info">
-              <div id="server-name-main" class="server-name">SerwerCanary — Tibia 14.20+</div>
+              <div id="server-name-main" class="server-name">RedDaxe.pl — Tibia 14.20+</div>
               <div class="server-meta">
                 <span class="server-players">Gracze: <strong id="srv-tibia-main-players">---</strong></span>
                 <span class="server-ping">Ping: <span id="srv-tibia-main-ping">---</span></span>
@@ -159,7 +168,7 @@
           <div class="server-card" data-server="tibia-retro">
             <div class="server-status-dot dot-offline"></div>
             <div class="server-info">
-              <div id="server-name-retro" class="server-name">SerwerCanary — Retro 7.4</div>
+              <div id="server-name-retro" class="server-name">RedDaxe.pl — Retro 7.4</div>
               <div class="server-meta">
                 <span class="server-players">Gracze: <strong id="srv-tibia-retro-players">---</strong></span>
                 <span class="server-ping">Ping: <span id="srv-tibia-retro-ping">---</span></span>

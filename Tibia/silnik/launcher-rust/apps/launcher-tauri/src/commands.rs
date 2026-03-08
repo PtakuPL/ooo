@@ -964,7 +964,7 @@ pub async fn export_logs(state: State<'_, AppState>) -> Result<String, String> {
     // Zbierz pliki logów do archiwum tekstowego
     let export_path = launcher_data.join("launcher_logs_export.txt");
     let mut content = String::new();
-    content.push_str("=== SerwerCanary Launcher — eksport logów ===\n\n");
+    content.push_str("=== RedDaxe.pl Launcher — eksport logów ===\n\n");
 
     if let Ok(entries) = std::fs::read_dir(&log_dir) {
         for entry in entries.flatten() {

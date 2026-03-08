@@ -395,11 +395,15 @@ impl ApiClient {
         let body = resp.text().await.unwrap_or_default();
         let value: serde_json::Value = serde_json::from_str(&body)?;
 
-        // login.php historycznie zwraca błędy jako 200 + {errorCode, errorMessage}
+        // login.php historycznie zwraca błędy jako 200 + {errorCode, errorMessage, lchCode?}
         if let Some(error_message) = value.get("errorMessage").and_then(|v| v.as_str()) {
+            let mut msg = error_message.to_string();
+            if let Some(lch) = value.get("lchCode").and_then(|v| v.as_str()) {
+                msg = format!("{lch}: {msg}");
+            }
             return Err(ApiError::HttpStatus {
                 status: status.as_u16(),
-                body: error_message.to_string(),
+                body: msg,
             });
         }
 

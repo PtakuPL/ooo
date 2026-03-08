@@ -115,7 +115,7 @@ fn run() -> Result<(), String> {
     let s = i18n::t();
 
     ui::set_status(&format!(
-        "SerwerCanary Bootstrap v{BOOTSTRAP_VERSION} \u{2014} {}", s.installing_launcher
+        "RedDaxe.pl Installer v{BOOTSTRAP_VERSION} \u{2014} {}", s.installing_launcher
     ));
 
     // Pre-install: check registry/default location BEFORE showing folder picker
@@ -163,7 +163,7 @@ fn run() -> Result<(), String> {
     };
 
     let client = reqwest::blocking::Client::builder()
-        .user_agent(format!("SerwerCanary-Bootstrap/{BOOTSTRAP_VERSION}"))
+        .user_agent(format!("RedDaxe-Installer/{BOOTSTRAP_VERSION}"))
         .timeout(std::time::Duration::from_secs(120))
         .danger_accept_invalid_certs(true)
         .build()
@@ -197,7 +197,7 @@ fn run() -> Result<(), String> {
     ));
 
     // 3. Download to a temporary file
-    let tmp_dir = std::env::temp_dir().join("serwercanary_bootstrap");
+    let tmp_dir = std::env::temp_dir().join("reddaxe_installer");
     std::fs::create_dir_all(&tmp_dir)
         .map_err(|e| format!("{}: {e}", s.error_temp_dir))?;
 

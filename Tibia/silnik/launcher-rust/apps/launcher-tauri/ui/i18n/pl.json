@@ -1,31 +1,31 @@
 {
   "app": {
-    "title": "SerwerCanary Launcher",
-    "heading": "SerwerCanary"
+    "title": "RedDaxe.pl Launcher",
+    "heading": "RedDaxe.pl"
   },
   "login": {
-    "title": "\uD83D\uDD10 Zaloguj się",
+    "title": "🔐 Zaloguj się",
     "subtitle": "Zaloguj się na konto aby korzystać z launchera.",
     "email": "Email:",
     "emailPlaceholder": "email@gracz.pl",
-    "password": "Has\u0142o:",
-    "passwordPlaceholder": "Wpisz has\u0142o",
-    "submit": "\uD83D\uDD10 Zaloguj",
+    "password": "Hasło:",
+    "passwordPlaceholder": "Wpisz hasło",
+    "submit": "🔐 Zaloguj",
     "noAccountHint": "Nie masz konta?",
-    "showRegister": "\uD83C\uDD95 Utwórz konto",
+    "showRegister": "🆕 Utwórz konto",
     "registerName": "Nazwa konta:",
     "registerNamePlaceholder": "gracz123",
     "registerEmail": "Email:",
     "registerEmailPlaceholder": "email@gracz.pl",
-    "registerPassword": "Has\u0142o:",
-    "registerPasswordPlaceholder": "Wpisz has\u0142o",
-    "registerPasswordConfirm": "Powtórz has\u0142o:",
-    "registerPasswordConfirmPlaceholder": "Powtórz has\u0142o",
-    "registerSubmit": "\uD83C\uDD95 Utwórz konto",
-    "registerBack": "\u2190 Powrót do logowania",
+    "registerPassword": "Hasło:",
+    "registerPasswordPlaceholder": "Wpisz hasło",
+    "registerPasswordConfirm": "Powtórz hasło:",
+    "registerPasswordConfirmPlaceholder": "Powtórz hasło",
+    "registerSubmit": "🆕 Utwórz konto",
+    "registerBack": "← Powrót do logowania",
     "oauthHint": "Lub zaloguj przez:",
     "oauthRedirected": "Otwarto stronę logowania w przeglądarce. Wróć do launchera po zalogowaniu.",
-    "logout": "\uD83D\uDEAA Wyloguj"
+    "logout": "🚪 Wyloguj"
   },
   "labels": {
     "launcher": "Launcher:",
@@ -33,8 +33,8 @@
     "channel": "Kanał:",
     "status": "Status:",
     "servers": "🖥 Serwery",
-    "serverMainName": "SerwerCanary — Tibia 14.20+",
-    "serverRetroName": "SerwerCanary — Retro 7.4",
+    "serverMainName": "RedDaxe.pl — Tibia 14.20+",
+    "serverRetroName": "RedDaxe.pl — Retro 7.4",
     "players": "Gracze",
     "ping": "Ping",
     "currentVersion": "Obecna wersja:",
@@ -225,7 +225,20 @@
       "LCH_TLS_REQUIRED": "Wymagane bezpieczne połączenie (HTTPS).",
       "LCH_STATE_CORRUPTED": "Stan launchera uszkodzony. Uruchamiam naprawę.",
       "LCH_LAUNCHER_UPDATE_REQUIRED": "Wymagana aktualizacja launchera.",
-      "LCH_STAGING_CLEANUP_FAILED": "Ostrzeżenie: pliki tymczasowe nie zostały wyczyszczone."
+      "LCH_STAGING_CLEANUP_FAILED": "Ostrzeżenie: pliki tymczasowe nie zostały wyczyszczone.",
+      "LCH_WRONG_CREDENTIALS": "Nieprawidłowy email lub hasło.",
+      "LCH_EMPTY_CREDENTIALS": "Wpisz email i hasło.",
+      "LCH_RATE_LIMITED_IP": "Za dużo prób logowania. Spróbuj ponownie za chwilę.",
+      "LCH_RATE_LIMITED_EMAIL": "Za dużo prób logowania na to konto. Spróbuj za chwilę.",
+      "LCH_TOKEN_REQUIRED": "Token startu wymagany. Użyj oficjalnego launchera.",
+      "LCH_TOKEN_INVALID": "Nieprawidłowy token startu. Uruchom ponownie launcher.",
+      "LCH_TOKEN_EXPIRED": "Token startu wygasł. Uruchom ponownie launcher.",
+      "LCH_TOKEN_IP_MISMATCH": "Niezgodność IP tokena. Nie udostępniaj tokenów.",
+      "LCH_INTEGRITY_FAILED": "Sprawdzenie integralności plików nie powiodło się. Zaktualizuj klienta.",
+      "LCH_VERSION_OUTDATED": "Wersja klienta jest przestarzała. Zaktualizuj przez launcher.",
+      "LCH_TOKEN_ERROR": "Błąd walidacji tokena. Spróbuj ponownie.",
+      "LCH_BAD_ACTION": "Nierozpoznana akcja logowania.",
+      "LCH_INVALID_GAMEMODE": "Nieprawidłowy tryb gry."
     }
   },
   "settings": {

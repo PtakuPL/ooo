@@ -1,5 +1,5 @@
 /**
- * SerwerCanary Launcher — Frontend Application
+ * RedDaxe.pl Launcher — Frontend Application
  *
  * LR-033..040: Ekrany statusu, aktualizacji, startu gry,
  * błędów, naprawy, ustawień, eksportu logów, retry.
@@ -463,6 +463,8 @@ function setLocale(locale, persist = true) {
   currentLocale = normalized;
   if (persist) localStorage.setItem(LANGUAGE_STORAGE_KEY, normalized);
   if (elSettingLanguage) elSettingLanguage.value = normalized;
+  const loginPicker = $("#login-language-picker");
+  if (loginPicker) loginPicker.value = normalized;
   applyStaticTranslations();
   if (lastStatus) renderStatus(lastStatus);
   if (lastProgress) updateProgress(lastProgress);
@@ -688,8 +690,8 @@ if (serversToggle) {
 
 // Hardcoded servers (p\u00f3\u017aniej: fetch z API)
 const SERVERS = [
-  { id: "tibia-main", name: "SerwerCanary \u2014 Tibia 14.20+", host: null },
-  { id: "tibia-retro", name: "SerwerCanary \u2014 Retro 7.4", host: null },
+  { id: "tibia-main", name: "RedDaxe.pl \u2014 Tibia 14.20+", host: null },
+  { id: "tibia-retro", name: "RedDaxe.pl \u2014 Retro 7.4", host: null },
 ];
 
 function updateServerStatus(serverId, status, players, ping) {
@@ -1771,6 +1773,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (elSettingLanguage) {
     elSettingLanguage.addEventListener("change", () => {
       setLocale(elSettingLanguage.value);
+    });
+  }
+
+  const loginPicker = $("#login-language-picker");
+  if (loginPicker) {
+    loginPicker.value = currentLocale;
+    loginPicker.addEventListener("change", () => {
+      setLocale(loginPicker.value);
     });
   }
 

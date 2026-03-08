@@ -562,7 +562,7 @@ jobs:
     name: Sign artifacts & checksums
     needs: [windows, linux]
     runs-on: ubuntu-22.04
-    if: ${{ secrets.MANIFEST_SIGNING_KEY != '' }}
+    if: ${{ vars.ENABLE_SIGNING == 'true' }}
 
     steps:
       - name: Download all artifacts

@@ -124,7 +124,9 @@ static EN: Strings = Strings {
     error_prefix: "ERROR",
     choose_install_dir: "Choose where to install the launcher:",
     installed_at: "Launcher installed in:",
-}; = Strings {
+};
+
+static PL: Strings = Strings {
     bootstrap_title: "SerwerCanary \u{2014} Bootstrap",
     installing_launcher: "instalacja launchera",
     existing_installation: "Wykryto istniej\u{0105}c\u{0105} instalacj\u{0119} launchera.",
@@ -150,7 +152,9 @@ static EN: Strings = Strings {
     error_prefix: "B\u{0141}\u{0104}D",
     choose_install_dir: "Wybierz folder instalacji launchera:",
     installed_at: "Launcher zainstalowany w:",
-}; = Strings {
+};
+
+static PT_BR: Strings = Strings {
     bootstrap_title: "SerwerCanary \u{2014} Bootstrap",
     installing_launcher: "instala\u{00e7}\u{00e3}o do launcher",
     existing_installation: "Instala\u{00e7}\u{00e3}o existente do launcher detectada.",
@@ -176,7 +180,9 @@ static EN: Strings = Strings {
     error_prefix: "ERRO",
     choose_install_dir: "Escolha onde instalar o launcher:",
     installed_at: "Launcher instalado em:",
-}; = Strings {
+};
+
+static ES: Strings = Strings {
     bootstrap_title: "SerwerCanary \u{2014} Bootstrap",
     installing_launcher: "instalaci\u{00f3}n del launcher",
     existing_installation: "Se detect\u{00f3} una instalaci\u{00f3}n existente del launcher.",
@@ -202,7 +208,9 @@ static EN: Strings = Strings {
     error_prefix: "ERROR",
     choose_install_dir: "Elige d\u{00f3}nde instalar el launcher:",
     installed_at: "Launcher instalado en:",
-}; = Strings {
+};
+
+static DE: Strings = Strings {
     bootstrap_title: "SerwerCanary \u{2014} Bootstrap",
     installing_launcher: "Launcher-Installation",
     existing_installation: "Bestehende Launcher-Installation erkannt.",

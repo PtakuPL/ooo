@@ -13,6 +13,7 @@ static LAST_PROGRESS: AtomicU8 = AtomicU8::new(0);
 pub fn init_console_utf8() {
     #[cfg(target_os = "windows")]
     {
+        #[link(name = "kernel32")]
         extern "system" {
             fn SetConsoleOutputCP(code_page: u32) -> i32;
             fn SetConsoleCP(code_page: u32) -> i32;
@@ -59,6 +60,7 @@ fn show_message_box_win(msg: &str) {
     use std::ffi::OsStr;
     use std::os::windows::ffi::OsStrExt;
 
+    #[link(name = "user32")]
     extern "system" {
         fn MessageBoxW(hwnd: *mut u8, text: *const u16, caption: *const u16, utype: u32) -> i32;
     }

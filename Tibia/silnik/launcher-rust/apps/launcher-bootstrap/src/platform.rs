@@ -73,6 +73,7 @@ fn win_ask_install_dir(default: &std::path::Path, title: &str, msg: &str) -> Opt
         OsStr::new(s).encode_wide().chain(std::iter::once(0)).collect()
     }
 
+    #[link(name = "user32")]
     extern "system" {
         fn MessageBoxW(hwnd: *mut u8, text: *const u16, caption: *const u16, utype: u32) -> i32;
     }
@@ -122,11 +123,16 @@ fn win_browse_for_folder(title: &str) -> Option<PathBuf> {
         iImage: i32,
     }
 
+    #[link(name = "ole32")]
     extern "system" {
         fn CoInitializeEx(reserved: *mut u8, co_init: u32) -> i32;
+        fn CoTaskMemFree(pv: *mut u8);
+    }
+
+    #[link(name = "shell32")]
+    extern "system" {
         fn SHBrowseForFolderW(bi: *const BROWSEINFOW) -> *mut u8;
         fn SHGetPathFromIDListW(pidl: *const u8, path: *mut u16) -> i32;
-        fn CoTaskMemFree(pv: *mut u8);
     }
 
     const BIF_RETURNONLYFSDIRS: u32 = 0x0001;

@@ -2032,3 +2032,64 @@ pub async fn report_error(
         }
     }
 }
+
+// ─────────────────────────────────────────────
+// Uninstall: remove game files
+// ─────────────────────────────────────────────
+
+#[tauri::command]
+pub async fn uninstall_game_files(
+    state: State<'_, AppState>,
+) -> Result<String, String> {
+    let client_dir = {
+        let g = state.inner.lock().map_err(|e| e.to_string())?;
+        g.client_dir.clone()
+    };
+
+    if !client_dir.exists() {
+        return Ok("No game files to remove.".to_string());
+    }
+
+    std::fs::remove_dir_all(&client_dir)
+        .map_err(|e| format!("Failed to remove game files: {e}"))?;
+
+    tracing::info!("Game files removed: {}", client_dir.display());
+    Ok("Game files removed.".to_string())
+}
+
+// ─────────────────────────────────────────────
+// Uninstall: launch bootstrap --uninstall
+// ─────────────────────────────────────────────
+
+#[tauri::command]
+pub async fn uninstall_launcher() -> Result<String, String> {
+    let exe_dir = std::env::current_exe()
+        .ok()
+        .and_then(|p| p.parent().map(|d| d.to_path_buf()))
+        .ok_or("Cannot determine launcher directory")?;
+
+    let bootstrap_name = if cfg!(target_os = "windows") {
+        "launcher-bootstrap.exe"
+    } else {
+        "launcher-bootstrap"
+    };
+
+    let bootstrap_path = exe_dir.join(bootstrap_name);
+    if !bootstrap_path.exists() {
+        return Err(format!(
+            "Uninstaller not found: {}",
+            bootstrap_path.display()
+        ));
+    }
+
+    std::process::Command::new(&bootstrap_path)
+        .arg("--uninstall")
+        .spawn()
+        .map_err(|e| format!("Failed to start uninstaller: {e}"))?;
+
+    tracing::info!("Uninstaller started: {}", bootstrap_path.display());
+
+    // Give the uninstaller a moment to start, then exit
+    std::thread::sleep(std::time::Duration::from_millis(500));
+    std::process::exit(0);
+}

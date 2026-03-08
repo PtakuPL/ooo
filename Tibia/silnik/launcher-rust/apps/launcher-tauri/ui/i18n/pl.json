@@ -48,6 +48,7 @@
     "settingLanguage": "Język:",
     "settingInstallPath": "Ścieżka instalacji:",
     "languagePacks": "Pakiety językowe:",
+    "settingUninstall": "Deinstalacja:",
     "launcherAccountName": "Nazwa konta launchera:",
     "launcherAccountEmail": "Email konta launchera:",
     "launcherAccountPassword": "Hasło konta launchera:",
@@ -88,7 +89,9 @@
     "downloadError": "❌ Błąd",
     "updateLauncher": "⬇ Aktualizuj launcher",
     "updatingLauncher": "⏳ Aktualizuję…",
-    "exportLogs": "Eksport logów"
+    "exportLogs": "Eksport logów",
+    "uninstallGame": "🗑 Odinstaluj pliki gry",
+    "uninstallLauncher": "🗑 Odinstaluj launcher"
   },
   "screens": {
     "update": "Aktualizacja",
@@ -224,5 +227,12 @@
       "LCH_LAUNCHER_UPDATE_REQUIRED": "Wymagana aktualizacja launchera.",
       "LCH_STAGING_CLEANUP_FAILED": "Ostrzeżenie: pliki tymczasowe nie zostały wyczyszczone."
     }
+  },
+  "settings": {
+    "uninstallGameConfirm": "Na pewno chcesz usunąć wszystkie pliki gry (klient)?\nMożesz je ponownie pobrać później.",
+    "uninstallGameDone": "Pliki gry zostały usunięte.",
+    "uninstallGameError": "Nie udało się usunąć plików gry.",
+    "uninstallLauncherConfirm": "Na pewno chcesz odinstalować cały launcher?\nUsunięte zostaną: wszystkie pliki, skróty i ustawienia.",
+    "uninstallLauncherError": "Nie udało się uruchomić deinstalatora."
   }
 }

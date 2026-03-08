@@ -48,6 +48,7 @@
     "settingLanguage": "Language:",
     "settingInstallPath": "Install path:",
     "languagePacks": "Language packs:",
+    "settingUninstall": "Uninstall:",
     "launcherAccountName": "Launcher account name:",
     "launcherAccountEmail": "Launcher account email:",
     "launcherAccountPassword": "Launcher account password:",
@@ -88,7 +89,9 @@
     "downloadError": "❌ Error",
     "updateLauncher": "⬇ Update launcher",
     "updatingLauncher": "⏳ Updating…",
-    "exportLogs": "Export logs"
+    "exportLogs": "Export logs",
+    "uninstallGame": "🗑 Uninstall game files",
+    "uninstallLauncher": "🗑 Uninstall launcher"
   },
   "screens": {
     "update": "Update",
@@ -224,5 +227,12 @@
       "LCH_LAUNCHER_UPDATE_REQUIRED": "Launcher update is required.",
       "LCH_STAGING_CLEANUP_FAILED": "Warning: temporary files were not cleaned up."
     }
+  },
+  "settings": {
+    "uninstallGameConfirm": "Are you sure you want to delete all game files (client)?\nYou can re-download them later.",
+    "uninstallGameDone": "Game files have been removed.",
+    "uninstallGameError": "Failed to remove game files.",
+    "uninstallLauncherConfirm": "Are you sure you want to uninstall the entire launcher?\nThis will remove all files, shortcuts, and settings.",
+    "uninstallLauncherError": "Failed to start the uninstaller."
   }
 }

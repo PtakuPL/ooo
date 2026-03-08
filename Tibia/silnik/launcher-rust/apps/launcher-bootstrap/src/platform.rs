@@ -186,3 +186,144 @@ pub fn launcher_exe_name() -> &'static str {
         "launcher-tauri-linux-x86_64"
     }
 }
+
+/// Path to the user's Desktop folder.
+pub fn desktop_path() -> Option<PathBuf> {
+    #[cfg(target_os = "windows")]
+    {
+        std::env::var("USERPROFILE").ok()
+            .map(|p| PathBuf::from(p).join("Desktop"))
+    }
+    #[cfg(not(target_os = "windows"))]
+    {
+        std::env::var("HOME").ok()
+            .map(|p| PathBuf::from(p).join("Desktop"))
+    }
+}
+
+/// Path to the Start Menu Programs folder (Windows only).
+pub fn start_menu_path() -> Option<PathBuf> {
+    #[cfg(target_os = "windows")]
+    {
+        std::env::var("APPDATA").ok()
+            .map(|p| PathBuf::from(p)
+                .join("Microsoft").join("Windows")
+                .join("Start Menu").join("Programs"))
+    }
+    #[cfg(not(target_os = "windows"))]
+    {
+        None
+    }
+}
+
+/// Create shortcuts for the launcher.
+/// `ask_desktop` — if true, also creates a desktop shortcut.
+pub fn create_shortcuts(install_dir: &std::path::Path, ask_desktop: bool) {
+    let launcher_exe = install_dir.join(launcher_exe_name());
+
+    #[cfg(target_os = "windows")]
+    {
+        // Start Menu shortcut (always)
+        if let Some(sm_dir) = start_menu_path() {
+            let lnk = sm_dir.join("SerwerCanary.lnk");
+            let _ = create_shortcut_win(&lnk, &launcher_exe, "SerwerCanary Launcher");
+        }
+        // Desktop shortcut (if user agreed)
+        if ask_desktop {
+            if let Some(desktop) = desktop_path() {
+                let lnk = desktop.join("SerwerCanary.lnk");
+                let _ = create_shortcut_win(&lnk, &launcher_exe, "SerwerCanary Launcher");
+            }
+        }
+    }
+
+    #[cfg(target_os = "linux")]
+    {
+        let _ = ask_desktop;
+        create_desktop_entry_linux(install_dir);
+    }
+}
+
+#[cfg(target_os = "windows")]
+fn create_shortcut_win(
+    shortcut_path: &std::path::Path,
+    target: &std::path::Path,
+    description: &str,
+) -> Result<(), std::io::Error> {
+    // Escape single quotes for PowerShell single-quoted strings
+    fn ps_escape(s: &str) -> String {
+        s.replace('\'', "''")
+    }
+
+    let ps_script = format!(
+        "$ws = New-Object -ComObject WScript.Shell; \
+         $sc = $ws.CreateShortcut('{}'); \
+         $sc.TargetPath = '{}'; \
+         $sc.Description = '{}'; \
+         $sc.WorkingDirectory = '{}'; \
+         $sc.Save()",
+        ps_escape(&shortcut_path.display().to_string()),
+        ps_escape(&target.display().to_string()),
+        ps_escape(description),
+        ps_escape(&target.parent().map(|p| p.display().to_string()).unwrap_or_default()),
+    );
+
+    std::process::Command::new("powershell")
+        .args(["-NoProfile", "-NonInteractive", "-Command", &ps_script])
+        .output()
+        .map(|_| ())
+}
+
+#[cfg(target_os = "linux")]
+fn create_desktop_entry_linux(install_dir: &std::path::Path) {
+    if let Ok(home) = std::env::var("HOME") {
+        let desktop_entry_path = PathBuf::from(&home)
+            .join(".local").join("share").join("applications")
+            .join("SerwerCanary.desktop");
+
+        let launcher_path = install_dir.join(launcher_exe_name());
+        let content = format!(
+            "[Desktop Entry]\n\
+             Type=Application\n\
+             Name=SerwerCanary\n\
+             Comment=SerwerCanary Tibia Launcher\n\
+             Exec={}\n\
+             Path={}\n\
+             Icon={}\n\
+             Terminal=false\n\
+             Categories=Game;\n\
+             StartupWMClass=SerwerCanary\n",
+            launcher_path.display(),
+            install_dir.display(),
+            install_dir.join("icon.png").display(),
+        );
+
+        if let Some(parent) = desktop_entry_path.parent() {
+            let _ = std::fs::create_dir_all(parent);
+        }
+        let _ = std::fs::write(&desktop_entry_path, content);
+    }
+}
+
+/// Remove all shortcuts created during installation.
+pub fn remove_shortcuts() {
+    #[cfg(target_os = "windows")]
+    {
+        if let Some(desktop) = desktop_path() {
+            let _ = std::fs::remove_file(desktop.join("SerwerCanary.lnk"));
+        }
+        if let Some(sm_dir) = start_menu_path() {
+            let _ = std::fs::remove_file(sm_dir.join("SerwerCanary.lnk"));
+        }
+    }
+
+    #[cfg(target_os = "linux")]
+    {
+        if let Ok(home) = std::env::var("HOME") {
+            let desktop_entry = PathBuf::from(&home)
+                .join(".local").join("share").join("applications")
+                .join("SerwerCanary.desktop");
+            let _ = std::fs::remove_file(desktop_entry);
+        }
+    }
+}

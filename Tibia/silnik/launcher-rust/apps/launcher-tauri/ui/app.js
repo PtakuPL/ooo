@@ -165,6 +165,8 @@ const elLanguagePacksList = $("#language-packs-list");
 const elLanguagePacksEmpty = $("#language-packs-empty");
 const elLanguagePacksError = $("#language-packs-error");
 const btnLanguagePacksRefresh = $("#btn-language-packs-refresh");
+const btnUninstallGame = $("#btn-uninstall-game");
+const btnUninstallLauncher = $("#btn-uninstall-launcher");
 
 // Nav
 const btnExportLogs = $("#btn-export-logs");
@@ -419,6 +421,9 @@ function applyStaticTranslations() {
   setText("#btn-repair-back", t("buttons.back"));
   setText("#btn-save-settings", t("buttons.save"));
   setText("#btn-settings-back", t("buttons.back"));
+  setText("#setting-uninstall-label", t("labels.settingUninstall"));
+  setText("#btn-uninstall-game", t("buttons.uninstallGame"));
+  setText("#btn-uninstall-launcher", t("buttons.uninstallLauncher"));
   setText("#btn-downloads-refresh", t("buttons.refresh"));
   setText("#btn-downloads-back", t("buttons.back"));
   setText("#btn-selfupdate-start", t("buttons.updateLauncher"));
@@ -1489,6 +1494,31 @@ btnSaveSettings.addEventListener("click", async () => {
 btnSettingsBack.addEventListener("click", () => {
   showScreen("status");
 });
+
+// ── Uninstall buttons ──
+
+if (btnUninstallGame) {
+  btnUninstallGame.addEventListener("click", async () => {
+    if (!confirm(t("settings.uninstallGameConfirm"))) return;
+    try {
+      await invoke("uninstall_game_files");
+      alert(t("settings.uninstallGameDone"));
+    } catch (err) {
+      alert(t("settings.uninstallGameError") + "\n" + String(err));
+    }
+  });
+}
+
+if (btnUninstallLauncher) {
+  btnUninstallLauncher.addEventListener("click", async () => {
+    if (!confirm(t("settings.uninstallLauncherConfirm"))) return;
+    try {
+      await invoke("uninstall_launcher");
+    } catch (err) {
+      alert(t("settings.uninstallLauncherError") + "\n" + String(err));
+    }
+  });
+}
 
 // ─────────────────────────────────────────────
 // Export logs (LR-037)

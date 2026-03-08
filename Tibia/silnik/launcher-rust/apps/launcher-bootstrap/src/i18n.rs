@@ -86,6 +86,20 @@ pub struct Strings {
     pub error_prefix: &'static str,
     pub choose_install_dir: &'static str,
     pub installed_at: &'static str,
+    // Uninstall
+    pub uninstall_confirm: &'static str,
+    pub uninstall_complete: &'static str,
+    pub uninstall_bootstrap_hint: &'static str,
+    pub uninstall_removing_files: &'static str,
+    pub uninstall_removing_registry: &'static str,
+    pub uninstall_removing_shortcuts: &'static str,
+    pub uninstall_killing_launcher: &'static str,
+    pub existing_install_uninstall_prompt: &'static str,
+    // Install additions
+    pub registering_uninstaller: &'static str,
+    pub creating_shortcuts: &'static str,
+    pub desktop_shortcut_prompt: &'static str,
+    pub copying_uninstaller: &'static str,
 }
 
 pub fn strings(lang: Lang) -> &'static Strings {
@@ -124,6 +138,18 @@ static EN: Strings = Strings {
     error_prefix: "ERROR",
     choose_install_dir: "Choose where to install the launcher:",
     installed_at: "Launcher installed in:",
+    uninstall_confirm: "Are you sure you want to uninstall SerwerCanary?\n\nThis will remove: launcher files, game files, shortcuts, and settings.",
+    uninstall_complete: "Uninstallation complete.",
+    uninstall_bootstrap_hint: "The bootstrap installer in your Downloads folder can be deleted manually.",
+    uninstall_removing_files: "Removing installed files\u{2026}",
+    uninstall_removing_registry: "Removing registry entry\u{2026}",
+    uninstall_removing_shortcuts: "Removing shortcuts\u{2026}",
+    uninstall_killing_launcher: "Closing running launcher\u{2026}",
+    existing_install_uninstall_prompt: "An existing installation was found.\n\nYES = Uninstall everything and exit\nNO = Update (reinstall)\nCANCEL = Abort",
+    registering_uninstaller: "Registering uninstaller\u{2026}",
+    creating_shortcuts: "Creating shortcuts\u{2026}",
+    desktop_shortcut_prompt: "Create a desktop shortcut for SerwerCanary?",
+    copying_uninstaller: "Setting up uninstaller\u{2026}",
 };
 
 static PL: Strings = Strings {
@@ -152,6 +178,18 @@ static PL: Strings = Strings {
     error_prefix: "B\u{0141}\u{0104}D",
     choose_install_dir: "Wybierz folder instalacji launchera:",
     installed_at: "Launcher zainstalowany w:",
+    uninstall_confirm: "Na pewno chcesz odinstalowa\u{0107} SerwerCanary?\n\nUsuni\u{0119}te zostan\u{0105}: pliki launchera, pliki gry, skr\u{00f3}ty, ustawienia.",
+    uninstall_complete: "Deinstalacja zako\u{0144}czona.",
+    uninstall_bootstrap_hint: "Plik bootstrap w folderze Pobrane mo\u{017c}esz usun\u{0105}\u{0107} r\u{0119}cznie.",
+    uninstall_removing_files: "Usuwanie plik\u{00f3}w\u{2026}",
+    uninstall_removing_registry: "Usuwanie wpisu z rejestru\u{2026}",
+    uninstall_removing_shortcuts: "Usuwanie skr\u{00f3}t\u{00f3}w\u{2026}",
+    uninstall_killing_launcher: "Zamykanie dzia\u{0142}aj\u{0105}cego launchera\u{2026}",
+    existing_install_uninstall_prompt: "Wykryto istniej\u{0105}c\u{0105} instalacj\u{0119}.\n\nTAK = Odinstaluj wszystko i zako\u{0144}cz\nNIE = Aktualizuj (reinstalacja)\nANULUJ = Przerwij",
+    registering_uninstaller: "Rejestrowanie deinstalatora\u{2026}",
+    creating_shortcuts: "Tworzenie skr\u{00f3}t\u{00f3}w\u{2026}",
+    desktop_shortcut_prompt: "Utworzy\u{0107} skr\u{00f3}t na pulpicie dla SerwerCanary?",
+    copying_uninstaller: "Przygotowywanie deinstalatora\u{2026}",
 };
 
 static PT_BR: Strings = Strings {
@@ -180,6 +218,18 @@ static PT_BR: Strings = Strings {
     error_prefix: "ERRO",
     choose_install_dir: "Escolha onde instalar o launcher:",
     installed_at: "Launcher instalado em:",
+    uninstall_confirm: "Tem certeza que deseja desinstalar o SerwerCanary?\n\nSer\u{00e3}o removidos: arquivos do launcher, arquivos do jogo, atalhos e configura\u{00e7}\u{00f5}es.",
+    uninstall_complete: "Desinstala\u{00e7}\u{00e3}o conclu\u{00ed}da.",
+    uninstall_bootstrap_hint: "O arquivo bootstrap na pasta de Downloads pode ser exclu\u{00ed}do manualmente.",
+    uninstall_removing_files: "Removendo arquivos\u{2026}",
+    uninstall_removing_registry: "Removendo entrada do registro\u{2026}",
+    uninstall_removing_shortcuts: "Removendo atalhos\u{2026}",
+    uninstall_killing_launcher: "Fechando o launcher em execu\u{00e7}\u{00e3}o\u{2026}",
+    existing_install_uninstall_prompt: "Instala\u{00e7}\u{00e3}o existente encontrada.\n\nSIM = Desinstalar tudo e sair\nN\u{00c3}O = Atualizar (reinstalar)\nCANCELAR = Abortar",
+    registering_uninstaller: "Registrando desinstalador\u{2026}",
+    creating_shortcuts: "Criando atalhos\u{2026}",
+    desktop_shortcut_prompt: "Criar um atalho na \u{00e1}rea de trabalho para o SerwerCanary?",
+    copying_uninstaller: "Configurando desinstalador\u{2026}",
 };
 
 static ES: Strings = Strings {
@@ -208,6 +258,18 @@ static ES: Strings = Strings {
     error_prefix: "ERROR",
     choose_install_dir: "Elige d\u{00f3}nde instalar el launcher:",
     installed_at: "Launcher instalado en:",
+    uninstall_confirm: "\u{00bf}Est\u{00e1}s seguro de que quieres desinstalar SerwerCanary?\n\nSe eliminar\u{00e1}n: archivos del launcher, archivos del juego, accesos directos y configuraci\u{00f3}n.",
+    uninstall_complete: "Desinstalaci\u{00f3}n completada.",
+    uninstall_bootstrap_hint: "El archivo bootstrap en tu carpeta de Descargas puede eliminarse manualmente.",
+    uninstall_removing_files: "Eliminando archivos\u{2026}",
+    uninstall_removing_registry: "Eliminando entrada del registro\u{2026}",
+    uninstall_removing_shortcuts: "Eliminando accesos directos\u{2026}",
+    uninstall_killing_launcher: "Cerrando el launcher en ejecuci\u{00f3}n\u{2026}",
+    existing_install_uninstall_prompt: "Se encontr\u{00f3} una instalaci\u{00f3}n existente.\n\nS\u{00cd} = Desinstalar todo y salir\nNO = Actualizar (reinstalar)\nCANCELAR = Abortar",
+    registering_uninstaller: "Registrando desinstalador\u{2026}",
+    creating_shortcuts: "Creando accesos directos\u{2026}",
+    desktop_shortcut_prompt: "\u{00bf}Crear un acceso directo en el escritorio para SerwerCanary?",
+    copying_uninstaller: "Configurando desinstalador\u{2026}",
 };
 
 static DE: Strings = Strings {
@@ -236,6 +298,18 @@ static DE: Strings = Strings {
     error_prefix: "FEHLER",
     choose_install_dir: "W\u{00e4}hlen Sie den Installationsordner:",
     installed_at: "Launcher installiert in:",
+    uninstall_confirm: "M\u{00f6}chten Sie SerwerCanary wirklich deinstallieren?\n\nFolgendes wird entfernt: Launcher-Dateien, Spieldateien, Verkn\u{00fc}pfungen und Einstellungen.",
+    uninstall_complete: "Deinstallation abgeschlossen.",
+    uninstall_bootstrap_hint: "Die Bootstrap-Datei in Ihrem Download-Ordner k\u{00f6}nnen Sie manuell l\u{00f6}schen.",
+    uninstall_removing_files: "Dateien werden entfernt\u{2026}",
+    uninstall_removing_registry: "Registrierungseintrag wird entfernt\u{2026}",
+    uninstall_removing_shortcuts: "Verkn\u{00fc}pfungen werden entfernt\u{2026}",
+    uninstall_killing_launcher: "Laufender Launcher wird geschlossen\u{2026}",
+    existing_install_uninstall_prompt: "Bestehende Installation gefunden.\n\nJA = Alles deinstallieren und beenden\nNEIN = Aktualisieren (Neuinstallation)\nABBRECHEN = Abbrechen",
+    registering_uninstaller: "Deinstallationsprogramm wird registriert\u{2026}",
+    creating_shortcuts: "Verkn\u{00fc}pfungen werden erstellt\u{2026}",
+    desktop_shortcut_prompt: "Desktop-Verkn\u{00fc}pfung f\u{00fc}r SerwerCanary erstellen?",
+    copying_uninstaller: "Deinstallationsprogramm wird eingerichtet\u{2026}",
 };
 
 // ── Auto-detection ──

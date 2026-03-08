@@ -5,6 +5,7 @@ mod platform;
 mod ui;
 
 use serde::Deserialize;
+use std::path::PathBuf;
 use std::process;
 
 /// API base URL baked into the binary.  
@@ -41,6 +42,20 @@ struct CatalogArtifact {
 fn main() {
     // 0. Console UTF-8 + language resolution (before any output)
     ui::init_console_utf8();
+
+    // Check for --uninstall flag before anything else
+    let args: Vec<String> = std::env::args().collect();
+    if args.iter().any(|a| a == "--uninstall") {
+        let lang = i18n::resolve_language();
+        i18n::init(lang);
+
+        if let Err(msg) = run_uninstall() {
+            ui::show_error(&msg);
+            process::exit(1);
+        }
+        return;
+    }
+
     let lang = i18n::resolve_language();
     i18n::init(lang);
 
@@ -50,6 +65,52 @@ fn main() {
     }
 }
 
+/// Uninstall mode — invoked via `--uninstall` flag (or from Windows Add/Remove Programs).
+fn run_uninstall() -> Result<(), String> {
+    let s = i18n::t();
+
+    // Determine install directory
+    let install_dir = determine_install_dir_for_uninstall();
+
+    if !install_dir.exists() {
+        return Err(format!("Install directory not found: {}", install_dir.display()));
+    }
+
+    // Confirm with user
+    if !ui::confirm_yes_no(s.bootstrap_title, s.uninstall_confirm) {
+        return Ok(());
+    }
+
+    installer::uninstall(&install_dir)?;
+
+    // Show completion message
+    let final_msg = format!("{}\n\n{}", s.uninstall_complete, s.uninstall_bootstrap_hint);
+    ui::show_info(&final_msg);
+
+    Ok(())
+}
+
+/// Determine the install directory for uninstall.
+/// Priority: 1) exe parent (if it has launcher_config.json), 2) registry, 3) default.
+fn determine_install_dir_for_uninstall() -> PathBuf {
+    // 1. If running from inside the install directory
+    if let Ok(exe) = std::env::current_exe() {
+        if let Some(parent) = exe.parent() {
+            if parent.join("launcher_config.json").exists() {
+                return parent.to_path_buf();
+            }
+        }
+    }
+
+    // 2. Try registry (Windows)
+    if let Some(dir) = installer::read_install_location() {
+        return dir;
+    }
+
+    // 3. Fall back to default
+    platform::default_install_dir()
+}
+
 fn run() -> Result<(), String> {
     let s = i18n::t();
 
@@ -57,12 +118,49 @@ fn run() -> Result<(), String> {
         "SerwerCanary Bootstrap v{BOOTSTRAP_VERSION} \u{2014} {}", s.installing_launcher
     ));
 
-    let install_dir = platform::ask_install_dir(s.bootstrap_title, s.choose_install_dir);
+    // Pre-install: check registry/default location BEFORE showing folder picker
+    let existing_dir = installer::read_install_location()
+        .or_else(|| {
+            let default = platform::default_install_dir();
+            if installer::launcher_already_installed(&default) {
+                Some(default)
+            } else {
+                None
+            }
+        });
 
-    if installer::launcher_already_installed(&install_dir) {
-        ui::set_status(s.existing_installation);
-        ui::set_status(s.updating);
-    }
+    let install_dir = if let Some(ref existing) = existing_dir {
+        // Found existing installation — ask user what to do BEFORE folder picker
+        let prompt_msg = format!(
+            "{}\n{}\n\n{}",
+            s.existing_installation,
+            existing.display(),
+            s.existing_install_uninstall_prompt
+        );
+        match ui::confirm_yes_no_cancel(s.bootstrap_title, &prompt_msg) {
+            Some(true) => {
+                // YES = uninstall everything and exit
+                installer::uninstall(existing)?;
+                let final_msg = format!(
+                    "{}\n\n{}", s.uninstall_complete, s.uninstall_bootstrap_hint
+                );
+                ui::show_info(&final_msg);
+                return Ok(());
+            }
+            Some(false) => {
+                // NO = update in-place (reuse existing dir, skip folder picker)
+                ui::set_status(s.updating);
+                existing.clone()
+            }
+            None => {
+                // CANCEL = abort
+                return Ok(());
+            }
+        }
+    } else {
+        // No existing installation — show folder picker
+        platform::ask_install_dir(s.bootstrap_title, s.choose_install_dir)
+    };
 
     let client = reqwest::blocking::Client::builder()
         .user_agent(format!("SerwerCanary-Bootstrap/{BOOTSTRAP_VERSION}"))
@@ -119,6 +217,22 @@ fn run() -> Result<(), String> {
     // 5. Write config
     installer::write_config(&install_dir, BOOTSTRAP_VERSION)
         .map_err(|e| format!("{e}"))?;
+
+    // 5a. Copy bootstrap to install_dir as uninstaller
+    installer::copy_self_to_install_dir(&install_dir)
+        .map_err(|e| format!("{e}"))?;
+
+    // 5b. Register in Windows Add/Remove Programs
+    #[cfg(target_os = "windows")]
+    {
+        installer::register_uninstaller(&install_dir)
+            .map_err(|e| format!("{e}"))?;
+    }
+
+    // 5c. Create shortcuts
+    ui::set_status(s.creating_shortcuts);
+    let want_desktop = ui::confirm_yes_no(s.bootstrap_title, s.desktop_shortcut_prompt);
+    platform::create_shortcuts(&install_dir, want_desktop);
 
     // 6. Cleanup temp
     let _ = std::fs::remove_dir_all(&tmp_dir);

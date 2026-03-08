@@ -9,8 +9,12 @@ $env = loadEnvFiles([__DIR__ . '/.env']);
 
 $launcherVersion = trim((string)($env['LAUNCHER_VERSION'] ?? '1.0.0'));
 $launcherMinVersion = trim((string)($env['LAUNCHER_MIN_VERSION'] ?? $launcherVersion));
-$launcherUrl = trim((string)($env['LAUNCHER_DOWNLOAD_URL'] ?? '/downloads'));
-$launcherSha256 = strtolower(trim((string)($env['LAUNCHER_SHA256'] ?? '')));
+$launcherUrlWin = trim((string)($env['LAUNCHER_DOWNLOAD_URL'] ?? '/downloads'));
+$launcherUrlLinux = trim((string)($env['LAUNCHER_DOWNLOAD_URL_LINUX'] ?? ''));
+$launcherSha256Win = strtolower(trim((string)($env['LAUNCHER_SHA256'] ?? '')));
+$launcherSha256Linux = strtolower(trim((string)($env['LAUNCHER_SHA256_LINUX'] ?? '')));
+$launcherFilenameWin = trim((string)($env['LAUNCHER_FILENAME_WIN'] ?? 'launcher-tauri-windows-x86_64.zip'));
+$launcherFilenameLinux = trim((string)($env['LAUNCHER_FILENAME_LINUX'] ?? 'launcher-tauri-linux-x86_64.zip'));
 $launcherReleaseDate = trim((string)($env['LAUNCHER_RELEASE_DATE'] ?? date('Y-m-d')));
 $launcherNotes = trim((string)($env['LAUNCHER_NOTES'] ?? 'Launcher package'));
 
@@ -22,15 +26,21 @@ if ($launcherVersion === '') {
 if ($launcherMinVersion === '') {
     $launcherMinVersion = $launcherVersion;
 }
-if ($launcherUrl === '') {
-    $launcherUrl = '/downloads';
+if ($launcherUrlWin === '') {
+    $launcherUrlWin = '/downloads';
+}
+if ($launcherUrlLinux === '') {
+    $launcherUrlLinux = str_replace('windows', 'linux', $launcherUrlWin);
 }
 if ($fallbackUrl === '') {
     $fallbackUrl = '/downloads';
 }
 
-if ($launcherSha256 !== '' && !preg_match('/^[a-f0-9]{64}$/', $launcherSha256)) {
-    $launcherSha256 = '';
+if ($launcherSha256Win !== '' && !preg_match('/^[a-f0-9]{64}$/', $launcherSha256Win)) {
+    $launcherSha256Win = '';
+}
+if ($launcherSha256Linux !== '' && !preg_match('/^[a-f0-9]{64}$/', $launcherSha256Linux)) {
+    $launcherSha256Linux = '';
 }
 
 // ── type filter ──
@@ -56,9 +66,9 @@ $launcherArtifactWin = [
     'channel' => 'stable',
     'version' => $launcherVersion,
     'minVersion' => $launcherMinVersion,
-    'filename' => 'launcher-tauri-' . $launcherVersion . '-win64.zip',
-    'url' => $launcherUrl,
-    'sha256' => $launcherSha256,
+    'filename' => $launcherFilenameWin,
+    'url' => $launcherUrlWin,
+    'sha256' => $launcherSha256Win,
     'releaseDate' => $launcherReleaseDate,
     'notes' => $launcherNotes,
     'fallbackUrl' => $fallbackUrl,
@@ -73,9 +83,9 @@ $launcherArtifactLinux = [
     'channel' => 'stable',
     'version' => $launcherVersion,
     'minVersion' => $launcherMinVersion,
-    'filename' => 'launcher-tauri-' . $launcherVersion . '-linux.tar.gz',
-    'url' => str_replace('-win64.zip', '-linux.tar.gz', $launcherUrl),
-    'sha256' => '',
+    'filename' => $launcherFilenameLinux,
+    'url' => $launcherUrlLinux,
+    'sha256' => $launcherSha256Linux,
     'releaseDate' => $launcherReleaseDate,
     'notes' => $launcherNotes,
     'fallbackUrl' => $fallbackUrl,
@@ -142,8 +152,8 @@ $installerArtifact = [
     'channel' => 'stable',
     'version' => $launcherVersion,
     'minVersion' => $launcherMinVersion,
-    'url' => $launcherUrl,
-    'sha256' => $launcherSha256,
+    'url' => $launcherUrlWin,
+    'sha256' => $launcherSha256Win,
     'releaseDate' => $launcherReleaseDate,
     'notes' => $launcherNotes,
     'fallbackUrl' => $fallbackUrl,

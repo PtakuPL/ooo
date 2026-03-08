@@ -46,8 +46,8 @@ pub fn default_install_dir() -> PathBuf {
 /// Name of the full launcher executable for the current platform.
 pub fn launcher_exe_name() -> &'static str {
     if cfg!(target_os = "windows") {
-        "launcher-tauri.exe"
+        "launcher-tauri-windows-x86_64.exe"
     } else {
-        "launcher-tauri"
+        "launcher-tauri-linux-x86_64"
     }
 }

@@ -3,6 +3,7 @@ use std::io::{self, Read, Write};
 use reqwest::blocking::Client;
 use sha2::{Digest, Sha256};
 
+use crate::i18n;
 use crate::ui;
 
 /// Error type for download operations.
@@ -15,12 +16,13 @@ pub enum DownloadError {
 
 impl std::fmt::Display for DownloadError {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        let s = i18n::t();
         match self {
-            Self::Http(msg) => write!(f, "Błąd pobierania: {msg}"),
+            Self::Http(msg) => write!(f, "{}: {msg}", s.error_download),
             Self::HashMismatch { expected, got } => {
-                write!(f, "Weryfikacja SHA-256 nie powiodła się (oczekiwano {expected}, otrzymano {got})")
+                write!(f, "{} ({expected} \u{2260} {got})", s.error_hash_mismatch)
             }
-            Self::Io(e) => write!(f, "Błąd I/O: {e}"),
+            Self::Io(e) => write!(f, "{}: {e}", s.error_io),
         }
     }
 }
@@ -51,8 +53,9 @@ pub fn download_and_verify(
             Ok(()) => return Ok(()),
             Err(e) => {
                 if attempt < MAX_RETRIES {
+                    let s = i18n::t();
                     ui::set_status(&format!(
-                        "Próba {attempt}/{MAX_RETRIES} nie powiodła się, ponawiam…"
+                        "{attempt}/{MAX_RETRIES} {}", s.retry_message
                     ));
                 }
                 last_err = Some(e);

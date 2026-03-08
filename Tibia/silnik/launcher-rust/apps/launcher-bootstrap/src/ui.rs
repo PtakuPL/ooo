@@ -1,11 +1,28 @@
 /// Minimal UI module for the bootstrap launcher.
 ///
-/// Phase 1: console-based output (print to stderr).
-/// Phase 2 (BL-05/BL-06): replace with native Win32 window / GTK / TUI.
+/// Uses MessageBoxW (UTF-16) on Windows for correct Polish/international chars.
+/// Console output uses UTF-8 code page.
 
 use std::sync::atomic::{AtomicU8, Ordering};
 
+use crate::i18n;
+
 static LAST_PROGRESS: AtomicU8 = AtomicU8::new(0);
+
+/// Set the Windows console to UTF-8 code page.  No-op on other platforms.
+pub fn init_console_utf8() {
+    #[cfg(target_os = "windows")]
+    {
+        extern "system" {
+            fn SetConsoleOutputCP(code_page: u32) -> i32;
+            fn SetConsoleCP(code_page: u32) -> i32;
+        }
+        unsafe {
+            SetConsoleOutputCP(65001); // CP_UTF8
+            SetConsoleCP(65001);
+        }
+    }
+}
 
 /// Display a status message to the user.
 pub fn set_status(msg: &str) {
@@ -18,7 +35,8 @@ pub fn set_progress(pct: u8) {
     let pct = pct.min(100);
     let prev = LAST_PROGRESS.swap(pct, Ordering::Relaxed);
     if pct != prev {
-        eprint!("\r[bootstrap] Postęp: {pct:>3}%");
+        let label = i18n::t().progress_label;
+        eprint!("\r[bootstrap] {label}: {pct:>3}%");
         if pct == 100 {
             eprintln!();
         }
@@ -27,30 +45,37 @@ pub fn set_progress(pct: u8) {
 
 /// Show a fatal error to the user and wait for acknowledgement.
 pub fn show_error(msg: &str) {
-    eprintln!("\n[bootstrap] BŁĄD: {msg}");
+    let prefix = i18n::t().error_prefix;
+    eprintln!("\n[bootstrap] {prefix}: {msg}");
 
     #[cfg(target_os = "windows")]
     {
-        // On Windows, show a MessageBox so the user sees the error even if the
-        // console closes immediately.
         show_message_box_win(msg);
     }
 }
 
 #[cfg(target_os = "windows")]
 fn show_message_box_win(msg: &str) {
-    use std::ffi::CString;
-    // Use raw Win32 API via extern to avoid extra dependencies.
+    use std::ffi::OsStr;
+    use std::os::windows::ffi::OsStrExt;
+
     extern "system" {
-        fn MessageBoxA(hwnd: *mut u8, text: *const u8, caption: *const u8, utype: u32) -> i32;
+        fn MessageBoxW(hwnd: *mut u8, text: *const u16, caption: *const u16, utype: u32) -> i32;
     }
-    let text = CString::new(msg).unwrap_or_default();
-    let caption = CString::new("SerwerCanary — Bootstrap").unwrap_or_default();
+
+    fn to_wide(s: &str) -> Vec<u16> {
+        OsStr::new(s).encode_wide().chain(std::iter::once(0)).collect()
+    }
+
+    let title = i18n::t().bootstrap_title;
+    let text_w = to_wide(msg);
+    let caption_w = to_wide(title);
+
     unsafe {
-        MessageBoxA(
+        MessageBoxW(
             std::ptr::null_mut(),
-            text.as_ptr() as *const u8,
-            caption.as_ptr() as *const u8,
+            text_w.as_ptr(),
+            caption_w.as_ptr(),
             0x10, // MB_ICONERROR
         );
     }

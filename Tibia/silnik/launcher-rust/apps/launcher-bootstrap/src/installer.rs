@@ -2,6 +2,7 @@ use std::fs;
 use std::io::{self, Read};
 use std::path::{Path, PathBuf};
 
+use crate::i18n;
 use crate::platform;
 use crate::ui;
 
@@ -15,13 +16,11 @@ pub enum InstallError {
 
 impl std::fmt::Display for InstallError {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        let s = i18n::t();
         match self {
-            Self::Io(e) => write!(f, "Błąd I/O: {e}"),
-            Self::Zip(msg) => write!(f, "Błąd rozpakowania: {msg}"),
-            Self::LauncherNotFound => write!(
-                f,
-                "Nie znaleziono pliku launchera w pobranym archiwum"
-            ),
+            Self::Io(e) => write!(f, "{}: {e}", s.error_io),
+            Self::Zip(msg) => write!(f, "{}: {msg}", s.error_unzip),
+            Self::LauncherNotFound => write!(f, "{}", s.error_launcher_not_found),
         }
     }
 }
@@ -35,7 +34,7 @@ impl From<io::Error> for InstallError {
 /// Extract a ZIP archive at `zip_path` into `install_dir`.
 /// Returns the path to the launcher executable inside the extracted tree.
 pub fn extract_launcher(zip_path: &Path, install_dir: &Path) -> Result<PathBuf, InstallError> {
-    ui::set_status("Rozpakowywanie launchera…");
+    ui::set_status(i18n::t().extracting);
 
     fs::create_dir_all(install_dir)?;
 
@@ -94,7 +93,7 @@ pub fn extract_launcher(zip_path: &Path, install_dir: &Path) -> Result<PathBuf, 
 
 /// Write the default `launcher_config.json` next to the launcher exe.
 pub fn write_config(install_dir: &Path, bootstrap_version: &str) -> Result<(), InstallError> {
-    ui::set_status("Zapisywanie konfiguracji…");
+    ui::set_status(i18n::t().saving_config);
 
     let config = serde_json::json!({
         "apiBaseUrl": "https://twojserwer.pl/apik/v1",
@@ -125,7 +124,7 @@ pub fn launcher_already_installed(install_dir: &Path) -> bool {
 
 /// Launch the full launcher executable.
 pub fn launch_full_launcher(launcher_exe: &Path) -> Result<(), InstallError> {
-    ui::set_status("Uruchamianie launchera…");
+    ui::set_status(i18n::t().launching);
 
     let working_dir = launcher_exe
         .parent()

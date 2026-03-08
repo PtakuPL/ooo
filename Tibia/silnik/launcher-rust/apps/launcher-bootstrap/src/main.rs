@@ -1,4 +1,5 @@
 mod downloader;
+mod i18n;
 mod installer;
 mod platform;
 mod ui;
@@ -8,7 +9,7 @@ use std::process;
 
 /// API base URL baked into the binary.  
 /// The bootstrap launcher talks only to this endpoint.
-const API_BASE: &str = "https://twojserwer.pl/apik/v1";
+const API_BASE: &str = "https://127.0.0.1/apik/v1";
 const CATALOG_ENDPOINT: &str = "/installer-catalog.php";
 const BOOTSTRAP_VERSION: &str = env!("CARGO_PKG_VERSION");
 
@@ -38,6 +39,11 @@ struct CatalogArtifact {
 }
 
 fn main() {
+    // 0. Console UTF-8 + language resolution (before any output)
+    ui::init_console_utf8();
+    let lang = i18n::resolve_language();
+    i18n::init(lang);
+
     if let Err(msg) = run() {
         ui::show_error(&msg);
         process::exit(1);
@@ -45,27 +51,28 @@ fn main() {
 }
 
 fn run() -> Result<(), String> {
+    let s = i18n::t();
+
     ui::set_status(&format!(
-        "SerwerCanary Bootstrap v{BOOTSTRAP_VERSION} — instalacja launchera"
+        "SerwerCanary Bootstrap v{BOOTSTRAP_VERSION} \u{2014} {}", s.installing_launcher
     ));
 
     let install_dir = platform::default_install_dir();
 
-    // Check for existing installation
     if installer::launcher_already_installed(&install_dir) {
-        ui::set_status("Wykryto istniejącą instalację launchera.");
-        ui::set_status("Aktualizuję do najnowszej wersji…");
+        ui::set_status(s.existing_installation);
+        ui::set_status(s.updating);
     }
 
-    // Build HTTP client (no extra runtime — blocking reqwest)
     let client = reqwest::blocking::Client::builder()
         .user_agent(format!("SerwerCanary-Bootstrap/{BOOTSTRAP_VERSION}"))
         .timeout(std::time::Duration::from_secs(120))
+        .danger_accept_invalid_certs(true)
         .build()
-        .map_err(|e| format!("Nie można utworzyć klienta HTTP: {e}"))?;
+        .map_err(|e| format!("{}: {e}", s.error_http_client))?;
 
     // 1. Fetch installer catalog
-    ui::set_status("Pobieranie katalogu artefaktów…");
+    ui::set_status(s.fetching_catalog);
     let catalog_url = format!(
         "{API_BASE}{CATALOG_ENDPOINT}?channel=stable&type=launcher"
     );
@@ -73,34 +80,35 @@ fn run() -> Result<(), String> {
         .map_err(|e| format!("{e}"))?;
 
     let catalog: CatalogResponse = serde_json::from_str(&json_body)
-        .map_err(|e| format!("Nieprawidłowa odpowiedź API: {e}"))?;
+        .map_err(|e| format!("{}: {e}", s.invalid_api_response))?;
 
     // 2. Find the right artifact for this platform
     let artifact = find_artifact(&catalog)
         .ok_or_else(|| {
             format!(
-                "Brak artefaktu dla platformy {} / {}",
+                "{}: {} / {}",
+                s.no_artifact,
                 platform::platform_name(),
                 platform::arch_name()
             )
         })?;
 
     ui::set_status(&format!(
-        "Pobieranie pełnego launchera: {} …",
-        artifact.filename
+        "{}: {} \u{2026}",
+        s.downloading_launcher, artifact.filename
     ));
 
     // 3. Download to a temporary file
     let tmp_dir = std::env::temp_dir().join("serwercanary_bootstrap");
     std::fs::create_dir_all(&tmp_dir)
-        .map_err(|e| format!("Nie można utworzyć katalogu tymczasowego: {e}"))?;
+        .map_err(|e| format!("{}: {e}", s.error_temp_dir))?;
 
     let download_path = tmp_dir.join(&artifact.filename);
 
     downloader::download_and_verify(&client, &artifact.url, &artifact.sha256, &download_path)
         .map_err(|e| format!("{e}"))?;
 
-    ui::set_status("Pobieranie zakończone. Weryfikacja SHA-256 OK.");
+    ui::set_status(s.download_complete);
 
     // 4. Extract
     ui::reset_progress();
@@ -116,7 +124,7 @@ fn run() -> Result<(), String> {
     let _ = std::fs::remove_dir_all(&tmp_dir);
 
     // 7. Launch the full launcher
-    ui::set_status("Instalacja zakończona! Uruchamiam launcher…");
+    ui::set_status(s.install_complete);
     installer::launch_full_launcher(&launcher_exe)
         .map_err(|e| format!("{e}"))?;
 

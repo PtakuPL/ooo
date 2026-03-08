@@ -108,7 +108,7 @@ fn default_launcher_data_dir() -> String {
 impl Default for LauncherConfig {
     fn default() -> Self {
         Self {
-            api_base_url: "https://api.serwercanary.pl/client/".to_string(),
+            api_base_url: "https://127.0.0.1/apik/v1/".to_string(),
             channel: default_channel(),
             profile: default_profile(),
             profiles: None,

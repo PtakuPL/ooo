@@ -1,5 +1,5 @@
 {
-  "apiBaseUrl": "https://api.serwercanary.pl/client/",
+  "apiBaseUrl": "https://127.0.0.1/apik/v1/",
   "channel": "stable",
   "language": "pl",
   "launcherVersionCheck": true,

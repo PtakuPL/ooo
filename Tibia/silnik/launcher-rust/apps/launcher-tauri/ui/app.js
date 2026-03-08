@@ -113,6 +113,27 @@ const btnCreateCharModern = $("#btn-create-char-modern");
 const btnRulesAll = $("#btn-rules-all");
 const btnRulesClassic = $("#btn-rules-classic");
 const btnRulesModern = $("#btn-rules-modern");
+const elLoggedUserEmail = $("#logged-user-email");
+const btnLogout = $("#btn-logout");
+
+// Login screen
+const elLoginEmail = $("#login-email");
+const elLoginPassword = $("#login-password");
+const btnLoginSubmit = $("#btn-login-submit");
+const elLoginStatus = $("#login-status");
+const btnLoginShowRegister = $("#btn-login-show-register");
+const elRegisterForm = $("#register-form");
+const elRegisterName = $("#register-name");
+const elRegisterEmail = $("#register-email");
+const elRegisterPassword = $("#register-password");
+const elRegisterPasswordConfirm = $("#register-password-confirm");
+const btnRegisterSubmit = $("#btn-register-submit");
+const btnRegisterBack = $("#btn-register-back");
+const elRegisterStatus = $("#register-status");
+const btnOAuthGoogle = $("#btn-oauth-google");
+const btnOAuthFacebook = $("#btn-oauth-facebook");
+const btnOAuthSteam = $("#btn-oauth-steam");
+const elFooter = $("#footer");
 
 // Update screen
 const elProgressBar = $("#progress-bar");
@@ -329,38 +350,38 @@ function applyStaticTranslations() {
   document.body.classList.toggle("rtl", isRtl);
 
   setText("#app-title", t("app.heading"));
+
+  // Login screen
+  setText("#login-title", t("login.title"));
+  setText("#login-subtitle", t("login.subtitle"));
+  setText("#label-login-email", t("login.email"));
+  setText("#label-login-password", t("login.password"));
+  setText("#btn-login-submit", t("login.submit"));
+  setText("#login-register-hint", t("login.noAccountHint"));
+  setText("#btn-login-show-register", t("login.showRegister"));
+  setText("#label-register-name", t("login.registerName"));
+  setText("#label-register-email", t("login.registerEmail"));
+  setText("#label-register-password", t("login.registerPassword"));
+  setText("#label-register-password-confirm", t("login.registerPasswordConfirm"));
+  setText("#btn-register-submit", t("login.registerSubmit"));
+  setText("#btn-register-back", t("login.registerBack"));
+  setText("#login-oauth-hint", t("login.oauthHint"));
+  setText("#btn-logout", t("login.logout"));
+  if (elLoginEmail) elLoginEmail.placeholder = t("login.emailPlaceholder");
+  if (elLoginPassword) elLoginPassword.placeholder = t("login.passwordPlaceholder");
+  if (elRegisterName) elRegisterName.placeholder = t("login.registerNamePlaceholder");
+  if (elRegisterEmail) elRegisterEmail.placeholder = t("login.registerEmailPlaceholder");
+  if (elRegisterPassword) elRegisterPassword.placeholder = t("login.registerPasswordPlaceholder");
+  if (elRegisterPasswordConfirm) elRegisterPasswordConfirm.placeholder = t("login.registerPasswordConfirmPlaceholder");
+
+  // Status screen
   setText("#label-launcher", t("labels.launcher"));
   setText("#label-client", t("labels.client"));
   setText("#label-channel", t("labels.channel"));
   setText("#label-status", t("labels.status"));
   setText("#servers-title", t("labels.servers"));
-  setText("#label-launcher-account-name", t("labels.launcherAccountName"));
-  setText("#label-launcher-account-email", t("labels.launcherAccountEmail"));
-  setText("#label-launcher-account-password", t("labels.launcherAccountPassword"));
-  setText(
-    "#label-launcher-account-password-confirm",
-    t("labels.launcherAccountPasswordConfirm")
-  );
-  setText("#label-launcher-session-key", t("labels.launcherSessionKey"));
-  if (elLauncherAccountName) {
-    elLauncherAccountName.placeholder = t("labels.launcherAccountNamePlaceholder");
-  }
   if (elServerNameMain) elServerNameMain.textContent = t("labels.serverMainName");
   if (elServerNameRetro) elServerNameRetro.textContent = t("labels.serverRetroName");
-  if (elLauncherAccountEmail) {
-    elLauncherAccountEmail.placeholder = t("labels.launcherAccountEmailPlaceholder");
-  }
-  if (elLauncherAccountPassword) {
-    elLauncherAccountPassword.placeholder = t("labels.launcherAccountPasswordPlaceholder");
-  }
-  if (elLauncherAccountPasswordConfirm) {
-    elLauncherAccountPasswordConfirm.placeholder = t(
-      "labels.launcherAccountPasswordConfirmPlaceholder"
-    );
-  }
-  if (elLauncherSessionKey) {
-    elLauncherSessionKey.placeholder = t("labels.launcherSessionKeyPlaceholder");
-  }
   setText("#update-title", t("screens.update"));
   setText("#error-title", t("screens.error"));
   setText("#repair-title", t("screens.repair"));
@@ -442,6 +463,125 @@ function setLocale(locale, persist = true) {
   if (lastProgress) updateProgress(lastProgress);
   if ($("#screen-settings")?.classList.contains("active")) {
     loadLanguagePacksPanel();
+  }
+}
+
+// ─────────────────────────────────────────────
+// Auth gate — login-first flow (E1+E2)
+// ─────────────────────────────────────────────
+
+let isAuthenticated = false;
+
+function isUserLoggedIn() {
+  return Boolean(getStoredSessionKey());
+}
+
+function showLoginScreen() {
+  isAuthenticated = false;
+  screens.forEach((s) => s.classList.remove("active"));
+  const loginScreen = $("#screen-login");
+  if (loginScreen) loginScreen.classList.add("active");
+  if (elFooter) elFooter.style.display = "none";
+}
+
+function enterAuthenticatedMode() {
+  isAuthenticated = true;
+  if (elFooter) elFooter.style.display = "";
+  const email = getStoredAccountEmail();
+  if (elLoggedUserEmail) elLoggedUserEmail.textContent = email || "---";
+  showScreen("status");
+  loadStatus();
+  checkSelfUpdate();
+}
+
+function handleLogout() {
+  // Clear session
+  saveSessionKey("");
+  launcherSessionKey = "";
+  launcherAccountPassword = "";
+  if (elLoginEmail) elLoginEmail.value = "";
+  if (elLoginPassword) elLoginPassword.value = "";
+  if (elLoginStatus) { elLoginStatus.style.display = "none"; elLoginStatus.textContent = ""; }
+  showLoginScreen();
+}
+
+function setLoginStatus(el, message, isError = false) {
+  if (!el) return;
+  const text = String(message || "").trim();
+  if (!text) { el.style.display = "none"; el.textContent = ""; return; }
+  el.style.display = "block";
+  el.textContent = text;
+  el.classList.remove("login-status-ok", "login-status-error");
+  el.classList.add(isError ? "login-status-error" : "login-status-ok");
+}
+
+async function handleLoginSubmit() {
+  const email = (elLoginEmail ? elLoginEmail.value : "").trim();
+  const password = elLoginPassword ? elLoginPassword.value : "";
+
+  if (!email || !password) {
+    setLoginStatus(elLoginStatus, t("alerts.accountLoginMissingCredentials"), true);
+    return;
+  }
+
+  if (btnLoginSubmit) { btnLoginSubmit.disabled = true; btnLoginSubmit.textContent = t("buttons.loggingInAccount"); }
+  setLoginStatus(elLoginStatus, t("alerts.accountLoginInProgress"), false);
+
+  try {
+    const result = await invoke("login_launcher_account", { email, password });
+    const sessionKey = sanitizeSessionKey(result?.sessionKey || "");
+    if (!sessionKey) throw new Error("missing_session_key");
+
+    saveAccountEmail(String(result?.email || email));
+    saveSessionKey(sessionKey);
+    launcherAccountPassword = password;
+
+    if (elLoginPassword) elLoginPassword.value = "";
+    setLoginStatus(elLoginStatus, "", false);
+    enterAuthenticatedMode();
+  } catch (err) {
+    const message = String(err || "unknown_error");
+    reportError("frontend.account_login_failed", message, { email });
+    setLoginStatus(elLoginStatus, resolveOnboardingErrorMessage(message, "alerts.accountLoginErrorGeneric"), true);
+  } finally {
+    if (btnLoginSubmit) { btnLoginSubmit.disabled = false; btnLoginSubmit.textContent = t("buttons.loginAccount"); }
+  }
+}
+
+async function handleRegisterSubmit() {
+  const accountName = (elRegisterName ? elRegisterName.value : "").trim();
+  const email = (elRegisterEmail ? elRegisterEmail.value : "").trim();
+  const password = elRegisterPassword ? elRegisterPassword.value : "";
+  const passwordConfirm = elRegisterPasswordConfirm ? elRegisterPasswordConfirm.value : "";
+
+  if (!accountName || !email || !password || !passwordConfirm) {
+    setLoginStatus(elRegisterStatus, t("alerts.accountRegisterMissingFields"), true);
+    return;
+  }
+
+  if (btnRegisterSubmit) { btnRegisterSubmit.disabled = true; btnRegisterSubmit.textContent = t("buttons.registeringAccount"); }
+  setLoginStatus(elRegisterStatus, t("alerts.accountRegisterInProgress"), false);
+
+  try {
+    const result = await invoke("register_launcher_account", { accountName, email, password, passwordConfirm });
+    saveAccountEmail(String(result?.email || email));
+
+    const autoLogin = Boolean(result?.autoLogin);
+    const sessionKey = sanitizeSessionKey(result?.sessionKey || "");
+    if (autoLogin && sessionKey) {
+      saveSessionKey(sessionKey);
+      enterAuthenticatedMode();
+    } else {
+      setLoginStatus(elRegisterStatus, t("alerts.accountRegisterSuccessNoAutoLogin"), false);
+      // Show login form
+      if (elRegisterForm) elRegisterForm.style.display = "none";
+    }
+  } catch (err) {
+    const message = String(err || "unknown_error");
+    reportError("frontend.account_register_failed", message, { email, accountName });
+    setLoginStatus(elRegisterStatus, resolveOnboardingErrorMessage(message, "alerts.accountRegisterErrorGeneric"), true);
+  } finally {
+    if (btnRegisterSubmit) { btnRegisterSubmit.disabled = false; btnRegisterSubmit.textContent = t("buttons.registerAccount"); }
   }
 }
 
@@ -596,7 +736,7 @@ setInterval(loadServerStatus, 30000);
 // ─────────────────────────────────────────────
 
 const btnWebsite = $("#btn-website");
-const WEBSITE_BASE_URL = "https://serwercanary.pl";
+const WEBSITE_BASE_URL = "https://127.0.0.1";
 let launcherSessionKey = "";
 let launcherAccountPassword = "";  // In-memory only — passed to launch_game, never persisted
 let pendingAccountContextRefreshUntil = 0;
@@ -891,7 +1031,26 @@ async function openCreateCharacterFlow(mode) {
 }
 
 if (btnWebsite) {
-  btnWebsite.addEventListener("click", () => {
+  btnWebsite.addEventListener("click", async () => {
+    // Try to open website with session auto-login
+    const sessionKey = getStoredSessionKey();
+    if (sessionKey) {
+      try {
+        const response = await invoke("build_create_character_url", {
+          sessionKey,
+          mode: "modern",  // mode doesn't matter for website, just need sync token
+        });
+        if (response && response.consumeUrl) {
+          // Use the sync consume URL to auto-login, then redirect to homepage
+          const homeUrl = `${response.consumeUrl}?redirect=/`;
+          openExternalUrl(homeUrl);
+          return;
+        }
+      } catch (err) {
+        console.warn("Website sync URL failed, opening without login:", err);
+      }
+    }
+    // Fallback: open without session
     openExternalUrl(WEBSITE_BASE_URL);
   });
 }
@@ -909,19 +1068,49 @@ if (btnCreateCharModern) {
 }
 
 if (btnRulesAll) {
-  btnRulesAll.addEventListener("click", () => {
+  btnRulesAll.addEventListener("click", async () => {
+    const sessionKey = getStoredSessionKey();
+    if (sessionKey) {
+      try {
+        const response = await invoke("build_create_character_url", { sessionKey, mode: "modern" });
+        if (response && response.consumeUrl) {
+          openExternalUrl(`${response.consumeUrl}?redirect=${encodeURIComponent("/?subtopic=rules&mode=all&source=launcher")}`);
+          return;
+        }
+      } catch (_) { /* fallback below */ }
+    }
     openExternalUrl(buildRulesUrl("all"));
   });
 }
 
 if (btnRulesClassic) {
-  btnRulesClassic.addEventListener("click", () => {
+  btnRulesClassic.addEventListener("click", async () => {
+    const sessionKey = getStoredSessionKey();
+    if (sessionKey) {
+      try {
+        const response = await invoke("build_create_character_url", { sessionKey, mode: "classic74" });
+        if (response && response.consumeUrl) {
+          openExternalUrl(`${response.consumeUrl}?redirect=${encodeURIComponent("/?subtopic=rules&mode=classic74&source=launcher")}`);
+          return;
+        }
+      } catch (_) { /* fallback below */ }
+    }
     openExternalUrl(buildRulesUrl("classic74"));
   });
 }
 
 if (btnRulesModern) {
-  btnRulesModern.addEventListener("click", () => {
+  btnRulesModern.addEventListener("click", async () => {
+    const sessionKey = getStoredSessionKey();
+    if (sessionKey) {
+      try {
+        const response = await invoke("build_create_character_url", { sessionKey, mode: "modern" });
+        if (response && response.consumeUrl) {
+          openExternalUrl(`${response.consumeUrl}?redirect=${encodeURIComponent("/?subtopic=rules&mode=modern&source=launcher")}`);
+          return;
+        }
+      } catch (_) { /* fallback below */ }
+    }
     openExternalUrl(buildRulesUrl("modern"));
   });
 }
@@ -1544,6 +1733,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   await loadI18nDictionaries();
   populateLanguageSelector();
   setLocale(getPreferredLocale(), false);
+
+  // Restore stored values to hidden fields (backward compat)
   saveAccountEmail(getStoredAccountEmail());
   saveSessionKey(getStoredSessionKey());
 
@@ -1553,22 +1744,69 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-  if (elLauncherSessionKey) {
-    elLauncherSessionKey.addEventListener("change", () => {
-      saveSessionKey(elLauncherSessionKey.value);
+  // --- Login screen handlers ---
+  if (btnLoginSubmit) {
+    btnLoginSubmit.addEventListener("click", () => handleLoginSubmit());
+  }
+  if (elLoginPassword) {
+    elLoginPassword.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") { e.preventDefault(); handleLoginSubmit(); }
     });
-    elLauncherSessionKey.addEventListener("blur", () => {
-      saveSessionKey(elLauncherSessionKey.value);
+  }
+  if (btnLoginShowRegister) {
+    btnLoginShowRegister.addEventListener("click", () => {
+      if (elRegisterForm) elRegisterForm.style.display = elRegisterForm.style.display === "none" ? "" : "none";
+    });
+  }
+  if (btnRegisterSubmit) {
+    btnRegisterSubmit.addEventListener("click", () => handleRegisterSubmit());
+  }
+  if (elRegisterPasswordConfirm) {
+    elRegisterPasswordConfirm.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") { e.preventDefault(); handleRegisterSubmit(); }
+    });
+  }
+  if (btnRegisterBack) {
+    btnRegisterBack.addEventListener("click", () => {
+      if (elRegisterForm) elRegisterForm.style.display = "none";
     });
   }
 
+  // OAuth buttons — open provider auth URL in the browser
+  function handleOAuth(provider) {
+    const apiBase = WEBSITE_BASE_URL;
+    const oauthUrl = `${apiBase}/apik/v1/oauth-start.php?provider=${encodeURIComponent(provider)}&mode=login&source=launcher`;
+    openExternalUrl(oauthUrl);
+    setLoginStatus(elLoginStatus, t("login.oauthRedirected"), false);
+  }
+  if (btnOAuthGoogle) btnOAuthGoogle.addEventListener("click", () => handleOAuth("google"));
+  if (btnOAuthFacebook) btnOAuthFacebook.addEventListener("click", () => handleOAuth("facebook"));
+  if (btnOAuthSteam) btnOAuthSteam.addEventListener("click", () => handleOAuth("steam"));
+
+  // --- Logout handler ---
+  if (btnLogout) {
+    btnLogout.addEventListener("click", () => handleLogout());
+  }
+
+  // --- Legacy login form (hidden fields, kept for backward compat) ---
+  if (elLauncherSessionKey) {
+    elLauncherSessionKey.addEventListener("change", () => { saveSessionKey(elLauncherSessionKey.value); });
+    elLauncherSessionKey.addEventListener("blur", () => { saveSessionKey(elLauncherSessionKey.value); });
+  }
   if (elLauncherAccountEmail) {
-    elLauncherAccountEmail.addEventListener("blur", () => {
-      saveAccountEmail(elLauncherAccountEmail.value);
-    });
+    elLauncherAccountEmail.addEventListener("blur", () => { saveAccountEmail(elLauncherAccountEmail.value); });
+  }
+
+  // Keep legacy handlers wired (their buttons are now hidden/removed but keep for safety)
+  if (btnLauncherAccountLogin) {
+    btnLauncherAccountLogin.addEventListener("click", () => loginLauncherAccount());
+  }
+  if (btnLauncherAccountRegister) {
+    btnLauncherAccountRegister.addEventListener("click", () => registerLauncherAccount());
   }
 
   window.addEventListener("focus", () => {
+    if (!isAuthenticated) return;
     if (Date.now() > pendingAccountContextRefreshUntil) {
       return;
     }
@@ -1579,32 +1817,20 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
-  if (btnLauncherAccountLogin) {
-    btnLauncherAccountLogin.addEventListener("click", () => loginLauncherAccount());
+  // --- Auth gate: check stored session ---
+  if (isUserLoggedIn()) {
+    // Try to validate the stored session
+    try {
+      const sessionKey = getStoredSessionKey();
+      const result = await invoke("refresh_launcher_account_context", { sessionKey });
+      if (result?.email) saveAccountEmail(String(result.email));
+      enterAuthenticatedMode();
+    } catch (err) {
+      // Stored session expired/invalid → show login
+      console.warn("Stored session invalid:", err);
+      showLoginScreen();
+    }
+  } else {
+    showLoginScreen();
   }
-  if (btnLauncherAccountRegister) {
-    btnLauncherAccountRegister.addEventListener("click", () => registerLauncherAccount());
-  }
-
-  if (elLauncherAccountPassword) {
-    elLauncherAccountPassword.addEventListener("keydown", (event) => {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        loginLauncherAccount();
-      }
-    });
-  }
-  if (elLauncherAccountPasswordConfirm) {
-    elLauncherAccountPasswordConfirm.addEventListener("keydown", (event) => {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        registerLauncherAccount();
-      }
-    });
-  }
-
-  showScreen("status");
-  loadStatus();
-  // Sprawdź self-update w tle
-  checkSelfUpdate();
 });

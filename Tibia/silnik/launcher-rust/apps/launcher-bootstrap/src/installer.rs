@@ -96,7 +96,7 @@ pub fn write_config(install_dir: &Path, bootstrap_version: &str) -> Result<(), I
     ui::set_status(i18n::t().saving_config);
 
     let config = serde_json::json!({
-        "apiBaseUrl": "https://twojserwer.pl/apik/v1",
+        "apiBaseUrl": "https://127.0.0.1/apik/v1",
         "channel": "stable",
         "launcher_version_check": true,
         "client_dir": "client",

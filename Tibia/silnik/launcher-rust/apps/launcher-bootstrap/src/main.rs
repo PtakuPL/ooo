@@ -57,7 +57,7 @@ fn run() -> Result<(), String> {
         "SerwerCanary Bootstrap v{BOOTSTRAP_VERSION} \u{2014} {}", s.installing_launcher
     ));
 
-    let install_dir = platform::default_install_dir();
+    let install_dir = platform::ask_install_dir(s.bootstrap_title, s.choose_install_dir);
 
     if installer::launcher_already_installed(&install_dir) {
         ui::set_status(s.existing_installation);
@@ -123,7 +123,8 @@ fn run() -> Result<(), String> {
     // 6. Cleanup temp
     let _ = std::fs::remove_dir_all(&tmp_dir);
 
-    // 7. Launch the full launcher
+    // 7. Show install path + launch
+    ui::set_status(&format!("{} {}", s.installed_at, install_dir.display()));
     ui::set_status(s.install_complete);
     installer::launch_full_launcher(&launcher_exe)
         .map_err(|e| format!("{e}"))?;

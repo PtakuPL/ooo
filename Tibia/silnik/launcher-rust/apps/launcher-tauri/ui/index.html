@@ -14,8 +14,105 @@
       <span id="version-badge" class="badge">v---</span>
     </header>
 
+    <!-- Ekran: Logowanie (login-first gate) -->
+    <section id="screen-login" class="screen active">
+      <div class="login-card">
+        <h2 id="login-title">🔐 Zaloguj się</h2>
+        <p id="login-subtitle" class="info-text">Zaloguj się na konto aby korzystać z launchera.</p>
+
+        <div class="login-form">
+          <label id="label-login-email" for="login-email" class="label">Email:</label>
+          <input
+            id="login-email"
+            type="email"
+            class="session-input"
+            placeholder="email@gracz.pl"
+            autocomplete="username"
+            spellcheck="false"
+          />
+          <label id="label-login-password" for="login-password" class="label">Hasło:</label>
+          <input
+            id="login-password"
+            type="password"
+            class="session-input"
+            placeholder="Wpisz hasło"
+            autocomplete="current-password"
+            spellcheck="false"
+          />
+          <div class="actions">
+            <button id="btn-login-submit" class="btn btn-primary">🔐 Zaloguj</button>
+          </div>
+          <p id="login-status" class="info-text" style="display:none"></p>
+        </div>
+
+        <hr class="login-divider" />
+
+        <div class="login-register-section">
+          <p id="login-register-hint" class="info-text">Nie masz konta?</p>
+          <button id="btn-login-show-register" class="btn btn-secondary">🆕 Utwórz konto</button>
+        </div>
+
+        <!-- Rejestracja (domyślnie ukryta) -->
+        <div id="register-form" class="login-form" style="display:none">
+          <label id="label-register-name" for="register-name" class="label">Nazwa konta:</label>
+          <input
+            id="register-name"
+            type="text"
+            class="session-input"
+            placeholder="gracz123"
+            autocomplete="username"
+            spellcheck="false"
+          />
+          <label id="label-register-email" for="register-email" class="label">Email:</label>
+          <input
+            id="register-email"
+            type="email"
+            class="session-input"
+            placeholder="email@gracz.pl"
+            autocomplete="email"
+            spellcheck="false"
+          />
+          <label id="label-register-password" for="register-password" class="label">Hasło:</label>
+          <input
+            id="register-password"
+            type="password"
+            class="session-input"
+            placeholder="Wpisz hasło"
+            autocomplete="new-password"
+            spellcheck="false"
+          />
+          <label id="label-register-password-confirm" for="register-password-confirm" class="label">Powtórz hasło:</label>
+          <input
+            id="register-password-confirm"
+            type="password"
+            class="session-input"
+            placeholder="Powtórz hasło"
+            autocomplete="new-password"
+            spellcheck="false"
+          />
+          <div class="actions">
+            <button id="btn-register-submit" class="btn btn-primary">🆕 Utwórz konto</button>
+            <button id="btn-register-back" class="btn btn-secondary">← Powrót do logowania</button>
+          </div>
+          <p id="register-status" class="info-text" style="display:none"></p>
+        </div>
+
+        <hr class="login-divider" />
+
+        <!-- OAuth buttons -->
+        <div class="oauth-section">
+          <p id="login-oauth-hint" class="info-text">Lub zaloguj przez:</p>
+          <div class="oauth-buttons">
+            <button id="btn-oauth-google" class="btn btn-oauth btn-oauth-google">Google</button>
+            <button id="btn-oauth-facebook" class="btn btn-oauth btn-oauth-facebook">Facebook</button>
+            <button id="btn-oauth-steam" class="btn btn-oauth btn-oauth-steam">Steam</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Ekran: Status / Gotowy -->
-    <section id="screen-status" class="screen active">
+    <section id="screen-status" class="screen">
       <div class="status-card">
         <div class="status-row">
           <span id="label-launcher" class="label">Launcher:</span>
@@ -33,6 +130,12 @@
           <span id="label-status" class="label">Status:</span>
           <span id="status-phase" class="badge badge-phase">sprawdzanie…</span>
         </div>
+      </div>
+
+      <!-- Zalogowany użytkownik -->
+      <div class="logged-user-bar">
+        <span id="logged-user-email" class="logged-user-email">---</span>
+        <button id="btn-logout" class="btn btn-secondary btn-compact">🚪 Wyloguj</button>
       </div>
 
       <!-- Lista serwerów -->
@@ -67,61 +170,12 @@
         </div>
       </div>
 
-      <div class="session-sync-row">
-        <label id="label-launcher-account-name" for="launcher-account-name" class="label">Nazwa konta launchera:</label>
-        <input
-          id="launcher-account-name"
-          type="text"
-          class="session-input"
-          placeholder="gracz123"
-          autocomplete="username"
-          spellcheck="false"
-        />
-        <label id="label-launcher-account-email" for="launcher-account-email" class="label">Email konta launchera:</label>
-        <input
-          id="launcher-account-email"
-          type="email"
-          class="session-input"
-          placeholder="email@gracz.pl"
-          autocomplete="username"
-          spellcheck="false"
-        />
-        <label id="label-launcher-account-password" for="launcher-account-password" class="label">Hasło konta launchera:</label>
-        <input
-          id="launcher-account-password"
-          type="password"
-          class="session-input"
-          placeholder="Wpisz hasło konta"
-          autocomplete="current-password"
-          spellcheck="false"
-        />
-        <label id="label-launcher-account-password-confirm" for="launcher-account-password-confirm" class="label">Powtórz hasło konta launchera:</label>
-        <input
-          id="launcher-account-password-confirm"
-          type="password"
-          class="session-input"
-          placeholder="Powtórz hasło konta"
-          autocomplete="new-password"
-          spellcheck="false"
-        />
-        <div class="actions">
-          <button id="btn-launcher-account-login" class="btn btn-secondary">🔐 Zaloguj konto</button>
-          <button id="btn-launcher-account-register" class="btn btn-secondary">🆕 Utwórz konto</button>
-        </div>
-        <p id="launcher-account-login-status" class="info-text" style="display:none"></p>
-      </div>
-
-      <div class="session-sync-row">
-        <label id="label-launcher-session-key" for="launcher-session-key" class="label">Klucz sesji launchera:</label>
-        <input
-          id="launcher-session-key"
-          type="password"
-          class="session-input"
-          placeholder="Wklej sessionKey z logowania launchera"
-          autocomplete="off"
-          spellcheck="false"
-        />
-      </div>
+      <!-- Hidden fields for backward compat (used by JS internally) -->
+      <input id="launcher-account-name" type="hidden" />
+      <input id="launcher-account-email" type="hidden" />
+      <input id="launcher-account-password" type="hidden" />
+      <input id="launcher-account-password-confirm" type="hidden" />
+      <input id="launcher-session-key" type="hidden" />
 
       <div class="actions">
         <button id="btn-play" class="btn btn-primary" disabled>▶ Uruchom grę</button>

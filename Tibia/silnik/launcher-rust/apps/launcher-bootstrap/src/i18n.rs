@@ -84,6 +84,8 @@ pub struct Strings {
     pub progress_label: &'static str,
     pub retry_message: &'static str,
     pub error_prefix: &'static str,
+    pub choose_install_dir: &'static str,
+    pub installed_at: &'static str,
 }
 
 pub fn strings(lang: Lang) -> &'static Strings {
@@ -120,9 +122,9 @@ static EN: Strings = Strings {
     progress_label: "Progress",
     retry_message: "failed, retrying\u{2026}",
     error_prefix: "ERROR",
-};
-
-static PL: Strings = Strings {
+    choose_install_dir: "Choose where to install the launcher:",
+    installed_at: "Launcher installed in:",
+}; = Strings {
     bootstrap_title: "SerwerCanary \u{2014} Bootstrap",
     installing_launcher: "instalacja launchera",
     existing_installation: "Wykryto istniej\u{0105}c\u{0105} instalacj\u{0119} launchera.",
@@ -146,9 +148,9 @@ static PL: Strings = Strings {
     progress_label: "Post\u{0119}p",
     retry_message: "nie powiod\u{0142}a si\u{0119}, ponawiam\u{2026}",
     error_prefix: "B\u{0141}\u{0104}D",
-};
-
-static PT_BR: Strings = Strings {
+    choose_install_dir: "Wybierz folder instalacji launchera:",
+    installed_at: "Launcher zainstalowany w:",
+}; = Strings {
     bootstrap_title: "SerwerCanary \u{2014} Bootstrap",
     installing_launcher: "instala\u{00e7}\u{00e3}o do launcher",
     existing_installation: "Instala\u{00e7}\u{00e3}o existente do launcher detectada.",
@@ -172,9 +174,9 @@ static PT_BR: Strings = Strings {
     progress_label: "Progresso",
     retry_message: "falhou, tentando novamente\u{2026}",
     error_prefix: "ERRO",
-};
-
-static ES: Strings = Strings {
+    choose_install_dir: "Escolha onde instalar o launcher:",
+    installed_at: "Launcher instalado em:",
+}; = Strings {
     bootstrap_title: "SerwerCanary \u{2014} Bootstrap",
     installing_launcher: "instalaci\u{00f3}n del launcher",
     existing_installation: "Se detect\u{00f3} una instalaci\u{00f3}n existente del launcher.",
@@ -198,9 +200,9 @@ static ES: Strings = Strings {
     progress_label: "Progreso",
     retry_message: "fall\u{00f3}, reintentando\u{2026}",
     error_prefix: "ERROR",
-};
-
-static DE: Strings = Strings {
+    choose_install_dir: "Elige d\u{00f3}nde instalar el launcher:",
+    installed_at: "Launcher instalado en:",
+}; = Strings {
     bootstrap_title: "SerwerCanary \u{2014} Bootstrap",
     installing_launcher: "Launcher-Installation",
     existing_installation: "Bestehende Launcher-Installation erkannt.",
@@ -224,6 +226,8 @@ static DE: Strings = Strings {
     progress_label: "Fortschritt",
     retry_message: "fehlgeschlagen, erneuter Versuch\u{2026}",
     error_prefix: "FEHLER",
+    choose_install_dir: "W\u{00e4}hlen Sie den Installationsordner:",
+    installed_at: "Launcher installiert in:",
 };
 
 // ── Auto-detection ──

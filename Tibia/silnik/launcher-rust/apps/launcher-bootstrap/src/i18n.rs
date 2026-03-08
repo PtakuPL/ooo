@@ -432,7 +432,13 @@ pub fn resolve_language() -> Lang {
         return lang;
     }
 
-    // 2. First run — always ask the user
+    // 2. Try OS language auto-detection
+    if let Some(lang) = detect_system_language() {
+        save_language(lang);
+        return lang;
+    }
+
+    // 3. First run, unknown OS locale — ask the user
     let lang = choose_language_dialog();
     save_language(lang);
     lang

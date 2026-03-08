@@ -3,10 +3,12 @@
 #include <vector>
 #include <memory>
 
-// HarfBuzz / FriBidi
+// HarfBuzz
 #include <hb.h>
 #include <hb-ft.h>
+#ifdef OTC_ENABLE_FRIBIDI
 #include <fribidi.h>
+#endif
 
 // Minimalny zestaw danych wyjściowych po shapingu
 struct ShapedGlyph {

@@ -531,7 +531,7 @@ function enterAuthenticatedMode() {
   if (elLoggedUserEmail) elLoggedUserEmail.textContent = email || "---";
   showScreen("status");
   loadStatus();
-  checkSelfUpdate();
+  // Self-update now runs at startup (before login), no need to re-check here
 }
 
 function handleLogout() {
@@ -1890,6 +1890,18 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     });
   });
+
+  // --- Self-update check BEFORE auth gate ---
+  // This ensures even unauthenticated launchers can update themselves
+  try {
+    await checkSelfUpdate();
+    if (selfUpdateInfo?.updateRequired) {
+      // Required update — show self-update screen, block login
+      return;
+    }
+  } catch (err) {
+    console.warn("Pre-auth self-update check failed:", err);
+  }
 
   // --- Auth gate: check stored session ---
   if (isUserLoggedIn()) {

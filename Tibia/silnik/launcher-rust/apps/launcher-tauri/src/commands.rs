@@ -1240,10 +1240,28 @@ pub async fn login_launcher_account(
         None
     };
 
-    let login_resp = api
+    let login_resp = match api
         .login_account(&canonical_email, &password, "all", launch_token_str.as_deref(), fresh_install)
         .await
-        .map_err(|e| format!("ACCOUNT_LOGIN_FAILED: {e}"))?;
+    {
+        Ok(resp) => resp,
+        Err(e) => {
+            let err_str = format!("{e}");
+            // If login failed due to token issues (CLIENT_LOCKED enforcement) and
+            // we weren't already in fresh_install mode, retry as fresh install.
+            // This handles stale installed_state.json after bootstrap update.
+            if !fresh_install && err_str.contains("LCH_TOKEN") {
+                tracing::warn!(
+                    "Login rejected by LCH_TOKEN check with stale token — retrying as fresh install"
+                );
+                api.login_account(&canonical_email, &password, "all", None, true)
+                    .await
+                    .map_err(|e2| format!("ACCOUNT_LOGIN_FAILED: {e2}"))?
+            } else {
+                return Err(format!("ACCOUNT_LOGIN_FAILED: {e}"));
+            }
+        }
+    };
 
     let session_key = login_resp
         .get("session")
@@ -1412,10 +1430,21 @@ pub async fn register_launcher_account(
         }
     };
 
-    match api
+    let login_result = api
         .login_account(&returned_email, &password, "all", launch_token.as_ref().map(|t| t.token.as_str()), fresh_install)
-        .await
-    {
+        .await;
+
+    // CLIENT_LOCKED fallback: retry as fresh install if token was stale
+    let login_resp = match login_result {
+        Ok(resp) => Ok(resp),
+        Err(ref e) if !fresh_install && format!("{e}").contains("LCH_TOKEN") => {
+            tracing::warn!("Auto-login after register rejected by LCH_TOKEN check — retrying as fresh install");
+            api.login_account(&returned_email, &password, "all", None, true).await
+        }
+        Err(e) => Err(e),
+    };
+
+    match login_resp {
         Ok(login_resp) => {
             let session_key = login_resp
                 .get("session")

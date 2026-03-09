@@ -461,6 +461,7 @@ function applyStaticTranslations() {
   setText("#btn-downloads-back", t("buttons.back"));
   setText("#btn-selfupdate-start", t("buttons.updateLauncher"));
   setText("#btn-selfupdate-back", t("buttons.back"));
+  setText("#btn-nav-login", t("nav.login"));
   setText("#btn-nav-status", t("nav.status"));
   setText("#btn-nav-downloads", t("nav.downloads"));
   setText("#btn-nav-repair", t("nav.repair"));
@@ -521,12 +522,20 @@ function showLoginScreen() {
   screens.forEach((s) => s.classList.remove("active"));
   const loginScreen = $("#screen-login");
   if (loginScreen) loginScreen.classList.add("active");
-  if (elFooter) elFooter.style.display = "none";
+  // Footer stays visible so user can access Repair/Settings/Logs before login
+  if (elFooter) elFooter.style.display = "";
+  // Show login nav button, highlight it
+  const btnNavLogin = $("#btn-nav-login");
+  if (btnNavLogin) btnNavLogin.style.display = "";
+  getNavButtons().forEach((b) => b.classList.toggle("active", b.dataset.screen === "login"));
 }
 
 function enterAuthenticatedMode() {
   isAuthenticated = true;
   if (elFooter) elFooter.style.display = "";
+  // Hide login nav button when authenticated
+  const btnNavLogin = $("#btn-nav-login");
+  if (btnNavLogin) btnNavLogin.style.display = "none";
   const email = getStoredAccountEmail();
   if (elLoggedUserEmail) elLoggedUserEmail.textContent = email || "---";
   showScreen("status");
@@ -642,6 +651,16 @@ function showScreen(name) {
 getNavButtons().forEach((btn) => {
   btn.addEventListener("click", () => {
     const screen = btn.dataset.screen;
+    // Screens that require authentication — redirect to login if not logged in
+    const authRequired = ["status", "downloads"];
+    if (!isAuthenticated && authRequired.includes(screen)) {
+      showLoginScreen();
+      return;
+    }
+    if (screen === "login") {
+      showLoginScreen();
+      return;
+    }
     showScreen(screen);
     if (screen === "repair") loadRepairDiagnostics();
   });

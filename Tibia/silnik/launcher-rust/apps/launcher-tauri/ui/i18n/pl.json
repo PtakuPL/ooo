@@ -102,6 +102,7 @@
     "selfUpdate": "🔄 Aktualizacja launchera"
   },
   "nav": {
+    "login": "Logowanie",
     "status": "Status",
     "downloads": "Pobieranie",
     "repair": "Naprawa",

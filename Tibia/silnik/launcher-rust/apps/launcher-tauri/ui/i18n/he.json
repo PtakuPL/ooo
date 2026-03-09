@@ -102,6 +102,7 @@
     "selfUpdate": "🔄 Launcher update"
   },
   "nav": {
+    "login": "כניסה",
     "status": "Status",
     "downloads": "Downloads",
     "repair": "Repair",

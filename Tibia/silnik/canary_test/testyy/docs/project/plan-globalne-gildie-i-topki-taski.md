@@ -1,12 +1,12 @@
 # Taski wdrozeniowe - globalne gildie i globalne topki
 
 Status: P0 w toku  
-Data: 2026-03-08  
+Data: 2026-03-09
 Powiazany dokument bazowy: `plan-globalne-gildie-i-topki.md`
 
 ## 0. Snapshot wykonania na dzis
 
-Stan prac `2026-03-08`:
+Stan prac `2026-03-09`:
 
 - [x] Przygotowano pierwszy draft migracji `global_guilds` i `global_guild_instances`.
 - [x] Poprawiono draft migracji pod `owner_global_account_id`, scoped unique dla instancji gildii i binarne porownanie `guild_name_normalized`.
@@ -28,8 +28,9 @@ Stan prac `2026-03-08`:
 - [x] Dodano read-only preflight `global-guilds-db-preflight.php`.
 - [x] Wykonano testy live DB dla `GLOBAL_DB` i lokalnego DB.
 - [x] Dodano draft migracji `010_global_guild_account_links`.
+- [x] Dodano migracje `011_global_guild_ownership_and_instance_leaders`.
 - [x] Dodano dry-run backfill `backfill-global-guild-account-links.php`.
-- [x] Odpalono realny rollout migracji `008/009/010` na testowym `GLOBAL_DB`.
+- [x] Odpalono realny rollout migracji `008/009/010/011` na testowym `GLOBAL_DB`.
 - [x] Odpalono realny backfill `account_world_links` na testowym `GLOBAL_DB`.
 - [x] Dopieto resolver ownera gildii do scoped `account_world_links` po `game_slug + game_mode`.
 - [x] Podpieto aktywny WWW `createaccount` pod mirror `local + GLOBAL_DB`.
@@ -49,7 +50,64 @@ Stan prac `2026-03-08`:
 - [x] Uproszczono runtime auth endpointow gildii do `GLOBAL_GUILDS_API_KEY`.
 - [x] Skonfigurowano testowy `GLOBAL_GUILDS_API_KEY` w aktualnym runtime.
 - [x] Dodano CLI `global-guilds-auth-smoke.php`.
+- [x] Dodano CLI `global-guilds-mutation-guard.php`.
+- [x] Dodano endpoint `global-guilds-archive-instance.php`.
+- [x] Dodano backendowy prymityw `archive instance` dla registry.
+- [x] Dodano CLI `global-guilds-archive-smoke.php`.
+- [x] Dodano helpery `captureGuildSyncContext()` i `archiveDeletedGuild()` w `GlobalGuildRegistry`.
+- [x] Podpieto `DisbandGuild` pod sync delete -> registry.
+- [x] Podpieto adminowy delete gildii pod sync delete -> registry.
+- [x] Podpieto legacy `delete_guild()` helper pod sync delete -> registry.
+- [x] Dodano CLI `global-guilds-delete-helper-smoke.php`.
+- [x] Przepieto adminowy `POST /admin/guilds/{id}` na `Guilds::updateGuild`.
+- [x] Zablokowano adminowy `rename` gildii w backendzie i UI panelu admina.
+- [x] Domknieto `global-guilds-mutation-guard.php` bez follow-upow dla znanych lokalnych pathow mutacji gildii.
+- [x] Dodano CLI `global-guilds-rollout-readiness.php` do zbiorczego checku rolloutowego.
+- [x] Dodano CLI `global-guilds-create-audit.php` do audytu webowych create pathow gildii.
+- [x] Dodano CLI `global-guilds-owner-audit.php` do read-only inspekcji `global owner` vs `local leader`.
+- [x] Dodano wewnetrzny endpoint `global-guilds-transfer-owner.php`.
+- [x] Dodano wewnetrzny endpoint `global-guilds-assign-local-leader.php`.
+- [x] Dodano backendowy bootstrap pierwszego `local leader` dla pustej instancji przy `create / attach`.
+- [x] Dodano CLI `global-guilds-ownership-model-smoke.php`.
+- [x] Rozszerzono `global-guilds-rollout-readiness.php` o opcjonalny `--with-ownership-smoke`.
+- [x] Dodano backendowy widok `sync status per server`:
+  - `global-guilds-sync-status.php`
+  - `migrations/global-guilds-sync-status.php`
+- [x] Dodano pierwszy read-only panel gildii ownera na `RedDaxe.pl`:
+  - sekcja `guilds` w `account-manage.php`, widoczna tylko dla zalogowanego ownera z co najmniej jedna globalna gildia
+  - helper `reddaxe_fetch_owned_global_guilds()`
+  - lista instancji per serwer i lokalnych czlonkow dla Tibii
+- [x] Dodano CTA `Zaloz gildie` na `RedDaxe.pl` dla zalogowanego konta bez wlasnej globalnej gildii.
+- [x] Dodano dedykowany formularz `RedDAXE` `/reddaxe/guild-found.php` do zakladania globalnej gildii bez przejscia na strone Tibii.
+- [x] Dopracowano formularz `RedDAXE` `/reddaxe/guild-found.php`, zeby po sukcesie rozroznial:
+  - pierwszy globalny create,
+  - attach / odtworzenie gildii ownera na kolejnym serwerze,
+  - bootstrap pierwszego `local leader`,
+- [x] Ograniczono przycisk przejscia do panelu gildii po sukcesie tylko do przypadkow, gdy zapis przeszedl przez globalne registry.
+- [x] Dodano do panelu `RedDAXE` read-only stan delegacji `local leader` per instancja:
+  - `assigned`,
+  - `assignable`,
+  - `bootstrap_pending`,
+  - `no_members`,
+- [x] Dodano podstawowa akcje ownera na `RedDAXE`: przypisanie / zmiana `local leader` z listy aktualnych czlonkow lokalnej gildii Tibii.
+- [x] Dodano podstawowa akcje ownera na `RedDAXE`: `transfer owner` na inne konto globalne po e-mailu.
+- [x] Backend waliduje juz, ze dla Tibii `local leader` musi nalezec do lokalnej gildii w poprawnym scope serwera.
+- [x] Dodano do panelu `RedDAXE` bardziej szczegolowe dane read-only:
+  - aktualny globalny owner,
+  - `assigned by`,
+  - `assigned at`,
+- [x] Dopracowano komunikaty gracza w panelu `RedDAXE`:
+  - usunieto surowe kody API z glownego komunikatu widocznego dla gracza,
+  - dodano mapowanie bledow na `i18n`,
+  - dodano opisy stanow `assigned / archived / unsupported`,
+  - dodano i18n-hinty przy `transfer owner` i `local leader`,
+- [x] Potwierdzono decyzje produktowa dla `RedDAXE`:
+  - zadanie `1` (`transfer owner`) jest wdrozone,
+  - zadanie `3` (szersze dane read-only) jest wdrozone,
+  - zadanie `2` (`attach / odtworzenie`) nie jest dalej rozwijane w `RedDAXE` i zostaje po stronie fizycznego serwera / strony serwera,
+- [x] Potwierdzono helper `RedDAXE` dla `transfer owner` realnym testem w kontekscie HTTPS.
 - [x] Dodano podstawowe komunikaty `i18n` dla flow gildii.
+- [x] Potwierdzono lokalny podglad i screenshot HTTPS widokow `RedDAXE` do review UI podczas dalszych etapow.
 - [x] Dodano fallback `local-only`, gdy registry nie jest jeszcze wdrozone w DB.
 - [x] Poprawiono regex walidacji nazw gildii / rank / nick w flow gildii.
 - [x] Dodano podstawowe logowanie kontekstu partial-failure dla flow globalny <-> lokalny.
@@ -61,7 +119,7 @@ Stan prac `2026-03-08`:
 Wyniki testow DB z `2026-03-08`:
 
 - [x] Potwierdzono, ze `GLOBAL_DB_NAME=global_accounts` jest juz osobna baza.
-- [x] Potwierdzono, ze migracje `008`, `009`, `010` sa wdrozone na testowym `global_accounts`.
+- [x] Potwierdzono, ze migracje `008`, `009`, `010`, `011` sa wdrozone na testowym `global_accounts`.
 - [x] Potwierdzono, ze `global_accounts` ma juz `global_guilds`, `global_guild_instances`, `global_guild_events` i `account_world_links`.
 - [x] Potwierdzono, ze `global_accounts.accounts` i `canaryaac.accounts` maja obecnie zgodnosc `41/41` po `id + email`.
 - [x] Potwierdzono realny backfill `82` mapowan ownera dla `tibia/classic74+modern`.
@@ -83,6 +141,42 @@ Wyniki testow DB z `2026-03-08`:
   - bledny klucz => `403 invalid_api_key`,
   - poprawny klucz + brak gildii => `404 not_found`,
   - poprawny klucz => `reserve-or-attach`, `lookup`, `instances`, `heartbeat` przechodza po HTTPS i cleanup wraca do zera.
+- [x] Potwierdzono `global-guilds-mutation-guard.php`:
+  - oba pathy `create` ida przez registry,
+  - `delete / disband / cleanup` sa podpiete do registry,
+  - adminowy `rename` jest twardo zablokowany,
+  - brak follow-upow dla znanych lokalnych pathow mutacji gildii.
+- [x] Potwierdzono `global-guilds-archive-smoke.php`:
+  - `reserve-or-attach` tworzy globalna gildie i instancje,
+  - `archive instance` archiwizuje ostatnia instancje i ustawia `global_guilds.status=archived`,
+  - inny owner nadal dostaje `409 guild_name_reserved`, wiec nazwa nie jest uwalniana automatycznie,
+  - ten sam owner moze odtworzyc gildie przez `reattach`, a status wraca do `active`,
+  - cleanup przywraca `global_guilds/global_guild_events` do zera.
+- [x] Potwierdzono `global-guilds-create-audit.php`:
+  - w repo WWW nie ma dodatkowych webowych pathow create poza `Found.php` i legacy `create.php`,
+  - create routing idzie do `Found::insertFoundGuild`,
+  - bezposredni create w silniku gry pozostaje osobnym otwartym taskiem.
+- [x] Potwierdzono `global-guilds-owner-audit.php`:
+  - delegowany `local leader` jest traktowany jako poprawny stan,
+  - raportowane sa tylko braki registry / braki instancji,
+  - na aktualnej bazie testowej przeskanowano `1` lokalna gildie i nie wykryto problemow registry.
+- [x] Potwierdzono `global-guilds-delete-helper-smoke.php`:
+  - `GlobalGuildRegistry::createGuild()` tworzy lokalna + globalna gildie,
+  - realny `delete_guild()` usuwa lokalna gildie i archiwizuje globalna instancje,
+  - `global_guilds.status` przechodzi do `archived`,
+  - cleanup przywraca testowe rekordy globalne do zera.
+- [x] Potwierdzono `global-guilds-ownership-model-smoke.php`:
+  - delegowany `local leader` pozostaje zachowany po transferze ownera,
+  - stary owner jest blokowany po transferze,
+  - nowy owner moze wykonac `attach / reattach`,
+  - cleanup przywraca testowe rekordy do zera.
+- [x] Potwierdzono `global-guilds-rollout-readiness.php --with-auth-smoke --with-ownership-smoke` z wynikiem `ok=true`.
+- [x] Potwierdzono `global-guilds-sync-status.php` / `migrations/global-guilds-sync-status.php` na testowym `GLOBAL_DB`.
+- [x] Potwierdzono `global-guilds-smoke-test.php` dla bootstrapu `local leader` w helperze WWW.
+- [x] Potwierdzono `global-guilds-auth-smoke.php` dla bootstrapu `local leader` w `reserve-or-attach`.
+- [x] Potwierdzono read-only helper `RedDaxe.pl` na test DB:
+  - dla ownera `6` zwraca `1` globalna gildie i `1` aktywna instancje,
+  - instancja Tibii zwraca lokalnych czlonkow z `canaryaac`.
 
 Wniosek:
 
@@ -148,7 +242,18 @@ Kolejnosc:
   - kolumna i API nazywaja sie `owner_global_account_id` / `ownerGlobalAccountId`
   - w shared DB fallbackiem jest obecne `accounts.id`
   - przy osobnym `global_accounts` wymagane jest jawne mapowanie
-- [ ] Zdefiniowac ownership globalny vs lokalny.
+- [x] Zdefiniowac ownership globalny vs lokalny:
+  - `global guild` ma dokladnie jednego `owner_global_account_id`
+  - transfer ownera jest globalny i jawny
+  - kazda instancja serwerowa moze miec innego `local leader`
+  - `local leader` nie musi byc rowny `global owner`
+  - `global owner` moze nigdy nie pojawic sie na danym serwerze
+  - instancja moze czasowo nie miec jeszcze przypisanego lokalnego lidera
+- [x] Zdefiniowac polityke bootstrapu `local leader`:
+  - sam login na serwer nie tworzy gildii automatycznie
+  - po poprawnym lokalnym flow zalozenia / konfiguracji gildii `global owner` moze zostac automatycznie pierwszym `local leader`
+  - tylko gdy instancja jest pusta: brak czlonkow i brak lidera
+  - bootstrap nie zmienia `owner_global_account_id`
 - [x] Zapisac scope instancji gildii: `game_slug + game_mode + world_id + local_guild_id`.
 - [x] Zapisac polityke collation dla `guild_name_normalized`.
 
@@ -166,7 +271,8 @@ Kolejnosc:
 - [x] Odpalic migracje `010_global_guild_account_links` na test `GLOBAL_DB`.
 - [ ] Odpalic migracje registry na live `GLOBAL_DB`.
 - [ ] Odpalic migracje `010_global_guild_account_links` na live `GLOBAL_DB`.
-- [ ] Dodac lub potwierdzic `_migrations` w `GLOBAL_DB` jako zrodlo prawdy dla rolloutow registry.
+- [ ] Odpalic migracje `011_global_guild_ownership_and_instance_leaders` na live `GLOBAL_DB`.
+- [x] Dodac lub potwierdzic `_migrations` w `GLOBAL_DB` jako zrodlo prawdy dla rolloutow registry.
 
 ### B3. API
 
@@ -174,7 +280,11 @@ Kolejnosc:
 - [x] Dodac draft endpointu reserve / attach.
 - [x] Dodac endpoint listy instancji gildii.
 - [x] Dodac heartbeat / last_seen.
+- [x] Dodac endpoint archive / archive-instance dla lokalnie usuwanej gildii.
 - [x] Dodac report-only endpoint reconcile.
+- [x] Dodac endpoint transferu globalnego ownera.
+- [x] Dodac endpoint przypisania / wyczyszczenia `local leader`.
+- [x] Dodac read-only endpoint / CLI `sync status per server`.
 - [ ] Skonfigurowac produkcyjny klucz API dla endpointow gildii.
 - [x] Zdecydowac model auth endpointow gildii: dedykowany `GLOBAL_GUILDS_API_KEY`.
 - [x] Dodac tooling CLI do statusu i preflightu registry na `GLOBAL_DB`.
@@ -190,18 +300,65 @@ Kolejnosc:
 - [x] Jesli nazwa wolna, backend tworzy `global guild`.
 - [x] Jesli nazwa nalezy do tego samego ownera, backend moze zrobic `attach`.
 - [x] Jesli nazwa nalezy do kogos innego, backend blokuje tworzenie.
+- [x] Utrzymac dwa rownoprawne entry pointy do pierwszego utworzenia globalnej gildii:
+  - flow WWW `/community/guilds/found`
+  - lokalny flow serwerowy
+- [x] Dodac trzeci rownorzedny entry point:
+  - formularz `RedDAXE` `/reddaxe/guild-found.php`
 - [x] Potwierdzic, ze na WWW istnial drugi aktywny path zakladania gildii:
   - `app/Controller/Pages/Guilds/Found.php`
   - `system/pages/guilds/create.php`
+- [x] Potwierdzic, ze w repo WWW nie ma dodatkowych create pathow poza:
+  - `app/Controller/Pages/Guilds/Found.php`
+  - `system/pages/guilds/create.php`
+  - `GlobalGuildRegistry::createGuild`
 - [ ] Potwierdzic, czy gildie moga powstawac tez bezposrednio w silniku lub innymi narzedziami poza WWW.
+- [x] Potwierdzic, ze poza create flow istnieja lokalne pathy mutacji gildii poza registry:
+  - admin rename / delete
+  - web disband
+  - legacy delete / cleanup
+- [x] Podpiac lokalne flow delete / disband pod globalne registry:
+  - `DisbandGuild`
+  - `Admin/Guilds::deleteGuild`
+  - `delete_guild()` helper
+  - legacy `delete_guild.php`, `delete_by_admin.php`, `cleanup_guilds.php`
+- [x] Domknac adminowy path `rename / update`:
+  - `POST /admin/guilds/{id}` idzie do `Guilds::updateGuild`
+  - `guild.name` pozostaje readonly
+  - backend wymusza zachowanie kanonicznej nazwy
+- [x] Dopic bootstrap `local leader` do flow tworzenia instancji gildii:
+  - po poprawnym local create / attach
+  - tylko dla pustej instancji bez czlonkow i bez lidera
+  - postac ownera uzyta do zalozenia gildii staje sie pierwszym `local leader`
 - [ ] Jesli gildie moga powstawac poza WWW, dodac hook / sync do silnika.
 - [ ] Skonfigurowac mapowanie ownera z lokalnego konta na globalne przed docelowym rolloutem multi-game.
 
 ### B5. Polityki v1
 
-- [ ] Zablokowac rename globalny.
-- [ ] Nie uwalniac nazw automatycznie.
-- [ ] Dodac reczne narzedzie admina do sporow i wyjatkow.
+- [x] Zablokowac rename globalny.
+- [x] Nie uwalniac nazw automatycznie.
+- [x] Dodac read-only tooling do sporow i wyjatkow:
+  - `global-guilds-owner-audit.php`
+  - `global-guilds-create-audit.php`
+- [ ] Dodac write/admin tooling do sporow i wyjatkow:
+  - [x] kontrolowany transfer `owner_global_account_id`
+  - [x] przypisanie / zmiana `local leader` per serwer
+  - [ ] reczne rozwiazywanie sporow ownership
+- [x] Dodac polityke dla adminowego rename gildii:
+  - wybrana i wdrozona opcja v1: twarda blokada rename
+  - kontrolowany `rename + migracja registry` zostaje poza zakresem P0
+- [x] Zaprojektowac i wdrozyc backendowy flow transferu globalnego ownera:
+  - `1 global owner` na gildie
+  - transfer tylko jawny, nie przez uboczna zmiane lokalnego lidera
+- [x] Zaprojektowac i wdrozyc backendowy flow delegowania `local leader` per serwer:
+  - lider moze byc rozny na kazdym serwerze
+  - globalny owner moze nie miec postaci na tym serwerze
+  - instancja moze byc czasowo bez lokalnego lidera
+- [x] Dodac automatyczny bootstrap pierwszego `local leader`:
+  - tylko dla pustej instancji
+  - tylko po spelnieniu wymagan lokalnego serwera
+  - bez automatycznego nadania na juz obsadzonej instancji
+- [ ] Dodac UI ownera / admina do transferu i delegowania na frontach.
 - [x] Dodac reconcile / repair flow dla niespojnosci miedzy lokalna gildia a `global_guild_instances`.
 - [x] Dodac report-only reconcile do wykrywania niespojnosci.
 - [x] Dodac logowanie partial-failure dla flow globalny -> lokalny -> attach.
@@ -218,6 +375,7 @@ Kolejnosc:
 - [x] Dodac smoke test legacy path `system/pages/guilds/create.php`, zeby nie byl ponownie bypassem registry.
 - [x] Potwierdzic zapisowo, ze legacy path nie zapisuje lokalnej gildii bez registry i po success path tworzy tez wpis globalny.
 - [x] Dodac guard dla obu webowych pathow, ze dalej ida przez `GlobalGuildRegistry::createGuild`.
+- [x] Dodac guard wykrywajacy lokalne pathy rename / delete poza registry.
 - [x] Dodac test fail-closed:
   - `GLOBAL_DB_NAME` ustawione na osobna baze
   - brak mapowania ownera
@@ -227,6 +385,9 @@ Kolejnosc:
   - `php global-guilds-db-preflight.php`
   - `php global-guilds-auth-smoke.php`
   - potwierdzenie blockerow przed rolloutem
+- [x] Dodac zbiorczy readiness check CLI dla rolloutu:
+  - `php global-guilds-rollout-readiness.php`
+  - opcjonalnie `php global-guilds-rollout-readiness.php --with-auth-smoke`
 
 ## 4. Epic C - Kanal synchronizacji
 
@@ -246,7 +407,7 @@ Kolejnosc:
 ### C3. Narzedzia operacyjne
 
 - [ ] Dodac retry i dead-letter handling.
-- [ ] Dodac widok sync status per server.
+- [x] Dodac widok sync status per server.
 - [ ] Dodac reczne przeliczenie agregatow.
 - [ ] Dodac plan backfillu danych historycznych.
 
@@ -287,10 +448,31 @@ Kolejnosc:
 
 ### E1. RedDaxe.pl
 
-- [ ] Minimalny panel gildii.
-- [ ] Lista czlonkow gildii z podzialem na serwery.
-- [ ] Widok instancji gildii na roznych serwerach.
-- [ ] Podstawowe operacje ownership / attach / zarzadzanie dostepem.
+- [x] Minimalny panel gildii.
+- [x] Lista czlonkow gildii z podzialem na serwery.
+- [x] Widok instancji gildii na roznych serwerach.
+- [x] Dedykowany formularz `RedDAXE` do zalozenia globalnej gildii bez przejscia na `WWW Tibia`.
+- [x] Czytelne komunikaty sukcesu w formularzu:
+  - pierwszy globalny create,
+  - attach / odtworzenie na kolejnym serwerze,
+  - bootstrap pierwszego `local leader`.
+- [ ] Usunac pole lokalnego hasla z `RedDAXE` `/reddaxe/guild-found.php` i oprzec ten flow o aktywna sesje.
+- [ ] Dodac do `RedDAXE` `/reddaxe/guild-found.php` zestaw ochronny:
+  - `CSRF`
+  - audit log
+  - rate limit
+  - `i18n` copy oparte o sesje zamiast hasla
+- [ ] Dopic polityke kont social `Google / Facebook / Steam` dla akcji wrazliwych zgodnie z dokumentem:
+  - `Dokumentacja/2026-03-09_plan_reddaxe_auth_akcji_wrazliwych_i_social.md`
+- [x] Delegowanie / zmiana `local leader` per serwer przez `global owner`.
+- [x] Pokazac stan bootstrapu lidera dla pustej instancji:
+  - `leader unassigned`
+  - `owner can bootstrap on first valid create`
+- [x] Podstawowe operacje ownership:
+  - transfer `global owner`
+  - delegowanie `local leader`
+- [ ] Dalsze operacje dostepowe / zarzadcze, jesli zostana dopuszczone produktowo.
+- [ ] `attach / odtworzenie gildii` pozostaje poza zakresem `RedDAXE` i jest obslugiwane po stronie fizycznego serwera / strony serwera.
 
 ### E2. WWW Tibia
 
@@ -301,6 +483,7 @@ Kolejnosc:
 - [ ] Glowne / maksymalne zarzadzanie gildia dla Tibii.
 - [ ] Wyszukiwarka gildii / gracza.
 - [ ] CTA do launchera i flow konta.
+- [ ] Pokazac w flow zalozenia / odtworzenia gildii, ze owner po spelnieniu wymagan serwera stanie sie pierwszym `local leader`.
 
 ### E3. Inne strony per-gra
 
@@ -366,7 +549,7 @@ Kolejnosc:
 - [ ] Dodac sync snapshotow.
 - [ ] Dodac pierwsze metryki globalne.
 - [ ] Dodac podstawowe topki na `WWW Tibia` i stronach per-gra.
-- [ ] Dodac minimalny panel gildii na `RedDaxe.pl`.
+- [ ] Rozwinac minimalny panel gildii na `RedDaxe.pl` ponad aktualny read-only foundation dla zalogowanego ownera.
 - [ ] Dodac glowny panel / widok `all worlds` gildii na `WWW Tibia`.
 - [ ] Dodac smoke i18n dla nowych widokow.
 
@@ -392,6 +575,7 @@ Kolejnosc:
   - owner zaklada gildie
   - inny owner dostaje konflikt
   - ten sam owner odtwarza gildie na innym swiecie
+- [x] Przygotowac rollout runbook i readiness tooling dla produkcji.
 - [ ] Dodac operacyjne logowanie i reconcile dla partial failures.
 - [ ] Zdecydowac, czy tymczasowo akceptujemy zgodnosc `accounts.id` miedzy lokalna i globalna baza jako kontrakt przejsciowy.
 - [x] Domknac aktywny WWW flow tworzenia kont, zeby nie rozjezdzal `GLOBAL_DB` i lokalnego `accounts`.

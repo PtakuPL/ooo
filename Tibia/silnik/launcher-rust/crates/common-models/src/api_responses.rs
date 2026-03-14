@@ -70,6 +70,43 @@ pub struct AccountSyncTokenResponse {
     pub consume_url: Option<String>,
 }
 
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AccountSyncConsumeResponse {
+    pub ok: bool,
+    pub sync: AccountSyncConsumeMeta,
+    pub session: AccountSyncConsumeSession,
+    pub account: AccountSyncConsumeAccount,
+
+    #[serde(default)]
+    pub counts: Option<serde_json::Value>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AccountSyncConsumeMeta {
+    pub source: String,
+    pub target: String,
+    pub consumed: bool,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AccountSyncConsumeSession {
+    pub session_key: String,
+    pub account_id: u64,
+    pub game_mode: String,
+    pub expires_at: u64,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct AccountSyncConsumeAccount {
+    pub id: u64,
+    pub name: String,
+    pub email: String,
+}
+
 // ─────────────────────────────────────────────
 // launcher-token.php request
 // ─────────────────────────────────────────────

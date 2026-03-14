@@ -185,6 +185,8 @@
     "accountContextRefreshed": "Account context refreshed.",
     "accountContextRefreshPending": "Return to the launcher after creating a character to refresh account context.",
     "accountContextRefreshErrorGeneric": "Could not refresh account context. Please try again.",
+    "websiteLauncherSyncSuccess": "The launcher has been linked with your active website session.",
+    "websiteLauncherSyncErrorGeneric": "Could not sync the launcher with your website session.",
     "createCharacterFallbackErrorGeneric": "Could not prepare website auto-login. Opening form without auto-login."
   },
   "errors": {

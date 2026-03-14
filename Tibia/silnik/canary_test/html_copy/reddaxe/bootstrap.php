@@ -189,12 +189,35 @@ function reddaxe_skip_tls_verify_for_url(string $url): bool
         return false;
     }
     $host = strtolower((string)($parts['host'] ?? ''));
-    return in_array($host, ['127.0.0.1', 'localhost', '::1'], true);
+
+    if (in_array($host, ['127.0.0.1', 'localhost', '::1'], true)) {
+        return true;
+    }
+
+    // Host rozwiązujący się na loopback (np. tibia.reddaxe.pl → 127.0.0.1 w /etc/hosts)
+    $resolved = gethostbyname($host);
+    if ($resolved !== $host && str_starts_with($resolved, '127.')) {
+        return true;
+    }
+
+    return false;
+}
+
+function reddaxe_internal_api_base_url(): string
+{
+    static $cached = null;
+    if ($cached !== null) {
+        return $cached;
+    }
+    $env = reddaxe_env(__DIR__ . '/../apik/v1/.env');
+    $override = trim((string)($env['INTERNAL_API_BASE_URL'] ?? ''));
+    $cached = ($override !== '') ? $override : reddaxe_public_base_url();
+    return $cached;
 }
 
 function reddaxe_post_json(string $path, array $payload, int &$httpCode = 0): array
 {
-    $url = rtrim(reddaxe_public_base_url(), '/') . '/' . ltrim($path, '/');
+    $url = rtrim(reddaxe_internal_api_base_url(), '/') . '/' . ltrim($path, '/');
     $skipTlsVerify = reddaxe_skip_tls_verify_for_url($url);
     $body = json_encode($payload, JSON_UNESCAPED_SLASHES);
     if (!is_string($body)) {

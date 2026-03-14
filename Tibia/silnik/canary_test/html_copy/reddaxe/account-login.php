@@ -5,7 +5,7 @@ require_once __DIR__ . '/bootstrap.php';
 
 function reddaxe_http_get_json(string $pathWithQuery, int &$httpCode = 0): array
 {
-    $url = rtrim(reddaxe_public_base_url(), '/') . '/' . ltrim($pathWithQuery, '/');
+    $url = rtrim(reddaxe_internal_api_base_url(), '/') . '/' . ltrim($pathWithQuery, '/');
     $skipTlsVerify = function_exists('reddaxe_skip_tls_verify_for_url')
         ? reddaxe_skip_tls_verify_for_url($url)
         : false;
@@ -125,7 +125,7 @@ function reddaxe_issue_launch_token(array $apiEnv): array
 
 $cfg = reddaxe_build_config();
 $apiEnv = reddaxe_env(__DIR__ . '/../apik/v1/.env');
-$siteName = trim((string)($apiEnv['SITE_NAME'] ?? 'CanaryAAC'));
+$siteName = trim((string)($apiEnv['SITE_NAME'] ?? 'RedDaxe'));
 
 $emailHint = strtolower(trim((string)($_GET['email'] ?? '')));
 if ($emailHint === '' && isset($_COOKIE['reddaxe_email'])) {
@@ -173,6 +173,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'email' => $emailHint,
             'password' => $password,
             'gameMode' => 'all',
+            'freshInstall' => true,
         ];
         if ($launchToken !== '') {
             $loginPayload['launchToken'] = $launchToken;
@@ -180,6 +181,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $loginHttpCode = 0;
         $loginCall = reddaxe_post_json('/apik/v1/login.php', $loginPayload, $loginHttpCode);
+
+        // DEBUG-LOGIN: log the full API response for diagnostics (no password in loginPayload log)
+        $debugLogFile = '/tmp/login_debug.log';
+        $debugPayloadSafe = $loginPayload;
+        $debugPayloadSafe['password'] = '***(' . strlen($password) . ' chars)';
+        $debugEntry = json_encode([
+            'ts' => gmdate('c'),
+            'source' => 'account-login.php',
+            'payloadSent' => $debugPayloadSafe,
+            'httpCode' => $loginHttpCode,
+            'apiOk' => $loginCall['ok'] ?? null,
+            'apiError' => $loginCall['error'] ?? null,
+            'apiDataKeys' => is_array($loginCall['data'] ?? null) ? array_keys($loginCall['data']) : null,
+            'errorCode' => $loginCall['data']['errorCode'] ?? null,
+            'errorMessage' => $loginCall['data']['errorMessage'] ?? null,
+            'lchCode' => $loginCall['data']['lchCode'] ?? null,
+            'hasSessionKey' => isset($loginCall['data']['session']['sessionkey']),
+            'launchTokenOk' => ($launchToken !== ''),
+            'launchTokenError' => $launchTokenError !== '' ? $launchTokenError : null,
+        ], JSON_UNESCAPED_SLASHES) . "\n";
+        @file_put_contents($debugLogFile, $debugEntry, FILE_APPEND | LOCK_EX);
 
         if (($loginCall['ok'] ?? false) !== true) {
             $errors[] = reddaxe_t('account_login.error.api_unreachable') . ': ' . (string)($loginCall['message'] ?? 'request failed');

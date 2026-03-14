@@ -800,6 +800,7 @@ let launcherSessionKey = "";
 let launcherAccountPassword = "";  // In-memory only — passed to launch_game, never persisted
 let pendingAccountContextRefreshUntil = 0;
 let accountContextRefreshInFlight = false;
+let accountSyncConsumeInFlight = false;
 
 function getStoredAccountEmail() {
   return String(localStorage.getItem(ACCOUNT_EMAIL_STORAGE_KEY) || "").trim();
@@ -867,6 +868,55 @@ function setAccountLoginStatus(message, isError = false) {
   elLauncherAccountLoginStatus.textContent = text;
   elLauncherAccountLoginStatus.classList.remove("login-status-ok", "login-status-error");
   elLauncherAccountLoginStatus.classList.add(isError ? "login-status-error" : "login-status-ok");
+}
+
+async function consumePendingWebsiteSync(trigger = "startup") {
+  if (accountSyncConsumeInFlight) {
+    return false;
+  }
+
+  accountSyncConsumeInFlight = true;
+  try {
+    const result = await invoke("consume_pending_account_sync");
+    if (!result?.pending) {
+      return false;
+    }
+
+    const sessionKey = sanitizeSessionKey(result?.sessionKey || "");
+    if (!result?.ok || !sessionKey) {
+      return false;
+    }
+
+    saveAccountEmail(String(result?.email || ""));
+    saveSessionKey(sessionKey);
+
+    if (elLoginPassword) {
+      elLoginPassword.value = "";
+    }
+    if (elLauncherAccountPassword) {
+      elLauncherAccountPassword.value = "";
+    }
+    if (elLauncherAccountPasswordConfirm) {
+      elLauncherAccountPasswordConfirm.value = "";
+    }
+
+    setLoginStatus(elLoginStatus, t("alerts.websiteLauncherSyncSuccess"), false);
+    setAccountLoginStatus(t("alerts.websiteLauncherSyncSuccess"), false);
+    enterAuthenticatedMode();
+    return true;
+  } catch (err) {
+    const message = String(err || "unknown_error");
+    reportError("frontend.website_launcher_sync_failed", message, { trigger });
+    const userMessage = resolveOnboardingErrorMessage(
+      message,
+      "alerts.websiteLauncherSyncErrorGeneric"
+    );
+    setLoginStatus(elLoginStatus, userMessage, true);
+    setAccountLoginStatus(userMessage, true);
+    return false;
+  } finally {
+    accountSyncConsumeInFlight = false;
+  }
 }
 
 function setAccountAuthButtonsBusy(isBusy, activeAction = "") {
@@ -1899,6 +1949,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   window.addEventListener("focus", () => {
+    void consumePendingWebsiteSync("focus");
     if (!isAuthenticated) return;
     if (Date.now() > pendingAccountContextRefreshUntil) {
       return;
@@ -1910,6 +1961,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
+  setInterval(() => {
+    void consumePendingWebsiteSync("poll");
+  }, 3000);
+
   // --- Self-update check BEFORE auth gate ---
   // This ensures even unauthenticated launchers can update themselves
   try {
@@ -1920,6 +1975,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   } catch (err) {
     console.warn("Pre-auth self-update check failed:", err);
+  }
+
+  if (await consumePendingWebsiteSync("startup")) {
+    return;
   }
 
   // --- Auth gate: check stored session ---

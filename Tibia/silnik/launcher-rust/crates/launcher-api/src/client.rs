@@ -7,11 +7,13 @@
 //! - pobieranie plików z URL (download z retry)
 
 use common_models::api_responses::{
-    AccountSyncTokenRequest, AccountSyncTokenResponse, ChallengeResponse, ErrorReportRequest,
-    ErrorReportResponse, InstallerCatalogResponse, LanguagePacksResponse, LaunchTokenErrorResponse,
-    LaunchTokenRequest, LaunchTokenResponse, LauncherVersionResponse,
+    AccountSyncConsumeResponse, AccountSyncTokenRequest, AccountSyncTokenResponse,
+    ChallengeResponse, ErrorReportRequest, ErrorReportResponse, InstallerCatalogResponse,
+    LanguagePacksResponse, LaunchTokenErrorResponse, LaunchTokenRequest, LaunchTokenResponse,
+    LauncherVersionResponse,
 };
 use common_models::manifest::{parse_manifest_compat, ManifestParseError, NormalizedManifest};
+use std::net::{IpAddr, ToSocketAddrs};
 
 const CHALLENGE_MAX_TTL_SECONDS: u32 = 30;
 const CHALLENGE_MIN_NONCE_LEN: usize = 32;
@@ -89,11 +91,14 @@ pub struct ApiClient {
 impl ApiClient {
     /// Tworzy nowego klienta API z podaną konfiguracją.
     pub fn new(config: ApiClientConfig) -> Result<Self, ApiError> {
+        let loopback_origin = is_loopback_origin(&config.base_url);
+
         // HTTPS is required outside explicit dev mode.
-        // Loopback HTTP (127.0.0.1/localhost/[::1]) is always allowed for tests.
+        // Loopback HTTP/HTTPS (127.0.0.1/localhost/[::1] or host resolving only to loopback)
+        // is always allowed for local tests.
         if !config.base_url.is_empty()
             && !config.base_url.starts_with("https://")
-            && !is_loopback_http(&config.base_url)
+            && !loopback_origin
             && !config.dev_mode
         {
             return Err(ApiError::TlsRequired);
@@ -106,10 +111,18 @@ impl ApiClient {
             );
         }
 
+        let allow_invalid_certs = config.dev_mode || loopback_origin;
+        if loopback_origin && !config.dev_mode {
+            tracing::warn!(
+                "Base URL rozwiazuje sie do loopbacka — wlaczam akceptacje lokalnego certyfikatu: {}",
+                config.base_url
+            );
+        }
+
         let http = reqwest::Client::builder()
             .timeout(std::time::Duration::from_secs(config.timeout_seconds))
             .user_agent(&config.user_agent)
-            .danger_accept_invalid_certs(config.dev_mode)
+            .danger_accept_invalid_certs(allow_invalid_certs)
             .build()?;
 
         Ok(Self { config, http })
@@ -313,6 +326,73 @@ impl ApiClient {
             return Err(ApiError::HttpStatus {
                 status: 200,
                 body: "Account sync token is empty".to_string(),
+            });
+        }
+
+        Ok(sync_resp)
+    }
+
+    /// Consume one-time WWW->launcher sync token and issue launcher session.
+    pub async fn consume_account_sync_token(
+        &self,
+        sync_token: &str,
+        source: &str,
+        target: &str,
+    ) -> Result<AccountSyncConsumeResponse, ApiError> {
+        let url = self.url("account-sync-consume.php");
+        tracing::info!(
+            "Konsumuje account sync token: {} ({} -> {})",
+            url,
+            source,
+            target
+        );
+
+        let payload = serde_json::json!({
+            "type": "account_sync_consume",
+            "syncToken": sync_token,
+            "source": source,
+            "target": target,
+        });
+
+        let resp = self.http.post(&url).json(&payload).send().await?;
+        let status = resp.status();
+
+        if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+            return Err(ApiError::RateLimited);
+        }
+
+        if !status.is_success() {
+            let body = resp.text().await.unwrap_or_default();
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body,
+            });
+        }
+
+        let body = resp.text().await?;
+        let value: serde_json::Value = serde_json::from_str(&body)?;
+        if let Some(error_message) = value.get("message").and_then(|v| v.as_str()) {
+            let error_code = value
+                .get("error")
+                .and_then(|v| v.as_str())
+                .unwrap_or("account_sync_consume_failed");
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body: format!("{error_code}: {error_message}"),
+            });
+        }
+
+        let sync_resp: AccountSyncConsumeResponse = serde_json::from_value(value)?;
+        if !sync_resp.ok {
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body: "Account sync consume response has ok=false".to_string(),
+            });
+        }
+        if sync_resp.session.session_key.trim().is_empty() {
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body: "Account sync consume sessionKey is empty".to_string(),
             });
         }
 
@@ -811,13 +891,56 @@ fn validate_challenge_response(challenge: &ChallengeResponse) -> Result<(), ApiE
     Ok(())
 }
 
-/// Sprawdza czy URL to HTTP na loopback (127.0.0.1/localhost/[::1]).
-/// Loopback HTTP jest dozwolony dla testów lokalnych.
-fn is_loopback_http(url: &str) -> bool {
-    let lower = url.to_ascii_lowercase();
-    lower.starts_with("http://127.0.0.1")
-        || lower.starts_with("http://localhost")
-        || lower.starts_with("http://[::1]")
+fn is_literal_loopback_host(host: &str) -> bool {
+    let normalized = host.trim_matches(['[', ']']);
+
+    if normalized.eq_ignore_ascii_case("localhost") {
+        return true;
+    }
+
+    match normalized.parse::<IpAddr>() {
+        Ok(ip) => ip.is_loopback(),
+        Err(_) => false,
+    }
+}
+
+/// Sprawdza czy origin URL jest lokalnym loopbackiem:
+/// - bezposrednio po hoscie (`127.0.0.1`, `localhost`, `[::1]`)
+/// - albo po DNS, jesli host rozwiazuje sie wyłącznie do adresow loopback.
+fn is_loopback_origin(url: &str) -> bool {
+    let parsed = match reqwest::Url::parse(url) {
+        Ok(parsed) => parsed,
+        Err(_) => return false,
+    };
+
+    let host = match parsed.host_str() {
+        Some(host) => host,
+        None => return false,
+    };
+
+    if is_literal_loopback_host(host) {
+        return true;
+    }
+
+    let port = match parsed.port_or_known_default() {
+        Some(port) => port,
+        None => return false,
+    };
+
+    let addrs = match (host, port).to_socket_addrs() {
+        Ok(addrs) => addrs,
+        Err(_) => return false,
+    };
+
+    let mut resolved_any = false;
+    for addr in addrs {
+        resolved_any = true;
+        if !addr.ip().is_loopback() {
+            return false;
+        }
+    }
+
+    resolved_any
 }
 
 // ─────────────────────────────────────────────
@@ -1012,6 +1135,21 @@ mod tests {
             client.url("launcher-version.php"),
             "https://api.example.com/v1/launcher-version.php"
         );
+    }
+
+    #[test]
+    fn test_is_literal_loopback_host() {
+        assert!(is_literal_loopback_host("127.0.0.1"));
+        assert!(is_literal_loopback_host("::1"));
+        assert!(is_literal_loopback_host("localhost"));
+        assert!(!is_literal_loopback_host("example.com"));
+    }
+
+    #[test]
+    fn test_is_loopback_origin_for_literal_loopback_urls() {
+        assert!(is_loopback_origin("http://127.0.0.1:8080/apik/v1"));
+        assert!(is_loopback_origin("https://localhost/apik/v1"));
+        assert!(is_loopback_origin("https://[::1]/apik/v1"));
     }
 
     #[test]

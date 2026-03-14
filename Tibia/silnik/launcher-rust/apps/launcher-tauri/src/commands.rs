@@ -1016,6 +1016,38 @@ fn append_query_param(url: &str, key: &str, value: &str) -> String {
     format!("{url}{separator}{key}={}", percent_encode_component(value))
 }
 
+fn pending_account_sync_path(launcher_data: &Path) -> std::path::PathBuf {
+    launcher_data.join("pending_account_sync_token.txt")
+}
+
+fn read_pending_account_sync_token(launcher_data: &Path) -> Option<String> {
+    let path = pending_account_sync_path(launcher_data);
+    let token = std::fs::read_to_string(path).ok()?;
+    let trimmed = token.trim();
+    if trimmed.len() == 64 && trimmed.chars().all(|c| c.is_ascii_hexdigit()) {
+        Some(trimmed.to_ascii_lowercase())
+    } else {
+        None
+    }
+}
+
+fn clear_pending_account_sync_token(launcher_data: &Path) {
+    let path = pending_account_sync_path(launcher_data);
+    let _ = std::fs::remove_file(path);
+}
+
+fn should_clear_account_sync_error(error: &str) -> bool {
+    [
+        "invalid_sync_token",
+        "sync_token_already_used",
+        "sync_token_expired",
+        "target_mismatch",
+        "source_mismatch",
+    ]
+    .iter()
+    .any(|needle| error.contains(needle))
+}
+
 #[tauri::command]
 pub async fn build_create_character_url(
     state: State<'_, AppState>,
@@ -1069,6 +1101,83 @@ pub async fn build_create_character_url(
         "expiresAt": sync.expires_at,
         "consumeUrl": consume_url
     }))
+}
+
+#[tauri::command]
+pub async fn consume_pending_account_sync(
+    state: State<'_, AppState>,
+) -> Result<serde_json::Value, String> {
+    let (api_url, dev_mode, launcher_data, memory_token) = {
+        let g = state.inner.lock().map_err(|e| e.to_string())?;
+        (
+            g.api_base_url.clone(),
+            g.dev_mode,
+            g.launcher_data_dir.clone(),
+            g.pending_account_sync_token.clone(),
+        )
+    };
+
+    let file_token = read_pending_account_sync_token(&launcher_data);
+    let token = file_token.or(memory_token);
+    let Some(sync_token) = token else {
+        return Ok(serde_json::json!({
+            "ok": false,
+            "pending": false
+        }));
+    };
+
+    let api = ApiClient::new(ApiClientConfig {
+        base_url: api_url,
+        dev_mode,
+        ..Default::default()
+    })
+    .map_err(|e| e.to_string())?;
+
+    tracing::info!(
+        "Launcher consume pending WWW sync token start: api_url={}",
+        api.config.base_url
+    );
+
+    match api
+        .consume_account_sync_token(&sync_token, "www", "launcher")
+        .await
+    {
+        Ok(resp) => {
+            {
+                let mut g = state.inner.lock().map_err(|e| e.to_string())?;
+                g.pending_account_sync_token = None;
+            }
+            clear_pending_account_sync_token(&launcher_data);
+
+            Ok(serde_json::json!({
+                "ok": true,
+                "pending": true,
+                "sessionKey": resp.session.session_key,
+                "gameMode": resp.session.game_mode,
+                "sessionExpiresAt": resp.session.expires_at,
+                "accountId": resp.account.id,
+                "accountName": resp.account.name,
+                "email": resp.account.email,
+                "counts": resp.counts
+            }))
+        }
+        Err(e) => {
+            let err = format!("ACCOUNT_SYNC_CONSUME_FAILED: {e}");
+            tracing::warn!(
+                "Launcher consume pending WWW sync token failed: api_url={}, error={}",
+                api.config.base_url,
+                err
+            );
+
+            if should_clear_account_sync_error(&err) {
+                let mut g = state.inner.lock().map_err(|e| e.to_string())?;
+                g.pending_account_sync_token = None;
+                clear_pending_account_sync_token(&launcher_data);
+            }
+
+            Err(err)
+        }
+    }
 }
 
 #[tauri::command]
@@ -1207,6 +1316,13 @@ pub async fn login_launcher_account(
     })
     .map_err(|e| e.to_string())?;
 
+    tracing::info!(
+        "Launcher account login start: api_url={}, dev_mode={}, fresh_install={}",
+        api.config.base_url,
+        dev_mode,
+        fresh_install
+    );
+
     let launch_token_str = if !fresh_install {
         let files_hash = installed
             .as_ref()
@@ -1231,7 +1347,12 @@ pub async fn login_launcher_account(
         {
             Ok(token) => Some(token.token),
             Err(e) => {
-                tracing::warn!("Nie udało się pobrać launchToken: {e}");
+                tracing::warn!(
+                    "Nie udalo sie pobrac launchToken (api_url={}, fresh_install={}): {}",
+                    api.config.base_url,
+                    fresh_install,
+                    e
+                );
                 None
             }
         }
@@ -1247,6 +1368,13 @@ pub async fn login_launcher_account(
         Ok(resp) => resp,
         Err(e) => {
             let err_str = format!("{e}");
+            tracing::warn!(
+                "Launcher account login failed before session parse: api_url={}, fresh_install={}, has_launch_token={}, error={}",
+                api.config.base_url,
+                fresh_install,
+                !launch_token_str.as_deref().unwrap_or("").is_empty(),
+                err_str
+            );
             // If login failed due to token issues (CLIENT_LOCKED enforcement) and
             // we weren't already in fresh_install mode, retry as fresh install.
             // This handles stale installed_state.json after bootstrap update.
@@ -1271,6 +1399,11 @@ pub async fn login_launcher_account(
         .trim()
         .to_string();
     if session_key.is_empty() {
+        tracing::warn!(
+            "Launcher account login returned success without sessionkey: api_url={}, fresh_install={}",
+            api.config.base_url,
+            fresh_install
+        );
         return Err("ACCOUNT_LOGIN_FAILED: Brak sessionkey w odpowiedzi login.php".to_string());
     }
 

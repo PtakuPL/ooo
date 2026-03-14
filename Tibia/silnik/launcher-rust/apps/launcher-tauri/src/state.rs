@@ -36,10 +36,12 @@ pub struct AppStateInner {
     pub config: LauncherConfig,
     /// Ścieżka do `launcher_config.json` używana do zapisu ustawień.
     pub config_path: PathBuf,
+    /// Token jednorazowy przekazany z WWW -> launcher przy starcie procesu.
+    pub pending_account_sync_token: Option<String>,
 }
 
 impl AppState {
-    pub fn new() -> Self {
+    pub fn new(pending_account_sync_token: Option<String>) -> Self {
         let exe_dir = std::env::current_exe()
             .ok()
             .and_then(|p| p.parent().map(|d| d.to_path_buf()))
@@ -79,6 +81,7 @@ impl AppState {
                 signature_public_key,
                 config,
                 config_path,
+                pending_account_sync_token,
             }),
         }
     }

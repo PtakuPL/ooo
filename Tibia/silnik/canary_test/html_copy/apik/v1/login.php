@@ -88,13 +88,13 @@ $req = json_decode($raw, true);
 $action = is_array($req) && isset($req['type']) ? (string)$req['type'] : 'login';
 
 if ($action !== 'login') {
-    sendError("Unrecognized event {$action}.");
+    sendError("Unrecognized event {$action}.", 200, 'LCH_BAD_ACTION');
 }
 
 $email = isset($req['email']) ? trim((string)$req['email']) : '';
 $plain = isset($req['password']) ? (string)$req['password'] : '';
 if ($email === '' || $plain === '') {
-    sendError('Email or password is empty.');
+    sendError('Email or password is empty.', 200, 'LCH_EMPTY_CREDENTIALS');
 }
 
 // B1: Opcjonalny gameMode z klienta (classic74 / modern / all / brak)
@@ -129,7 +129,7 @@ if (!$rlIp['allowed']) {
         'ipHash' => $ipHashRate,
         'retryAfter' => $rlIp['retryAfter'],
     ], $ENV);
-    sendError('Too many login attempts. Please try again later.', 429);
+    sendError('Too many login attempts. Please try again later.', 429, 'LCH_RATE_LIMITED_IP');
 }
 $rlEmail = applyRateLimit($apiDb, 'login:email', $emailHashRate, 10, 60);
 if (!$rlEmail['allowed']) {
@@ -139,7 +139,7 @@ if (!$rlEmail['allowed']) {
         'ipHash' => $ipHashRate,
         'retryAfter' => $rlEmail['retryAfter'],
     ], $ENV);
-    sendError('Too many login attempts for this account. Please try again later.', 429);
+    sendError('Too many login attempts for this account. Please try again later.', 429, 'LCH_RATE_LIMITED_EMAIL');
 }
 
 $sessionTtl = isset($ENV['SESSION_TTL']) ? (int)$ENV['SESSION_TTL'] : 1800; // 30 min
@@ -149,7 +149,7 @@ if ($gameModeNeedsValidation) {
     $vStmt = $globalDb->prepare("SELECT 1 FROM games WHERE game_mode = ? AND status = 'active' LIMIT 1");
     $vStmt->execute([$gameMode]);
     if (!$vStmt->fetch()) {
-        sendError('Invalid gameMode: ' . $gameMode);
+        sendError('Invalid gameMode: ' . $gameMode, 200, 'LCH_INVALID_GAMEMODE');
     }
 }
 
@@ -158,33 +158,72 @@ $stmt = $globalDb->prepare("SELECT id, name, password, premdays, lastday FROM ac
 $stmt->execute([$email]);
 $acc = $stmt->fetch();
 if (!$acc) {
+    // DEBUG-LOGIN: log account-not-found separately
+    $debugLogFile = '/tmp/login_debug.log';
+    $debugEntry = json_encode([
+        'ts' => gmdate('c'),
+        'email' => $email,
+        'accountFound' => false,
+        'plainLen' => strlen($plain),
+        'hasFreshInstall' => isset($req['freshInstall']),
+        'hasLaunchToken' => isset($req['launchToken']) && trim((string)$req['launchToken']) !== '',
+        'userAgent' => substr((string)($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 120),
+    ], JSON_UNESCAPED_SLASHES) . "\n";
+    @file_put_contents($debugLogFile, $debugEntry, FILE_APPEND | LOCK_EX);
+
     logTicketEvent('login.rejected.account_not_found', [
         'endpoint' => 'login.php',
         'ipHash' => $ipHashRate,
     ], $ENV);
-    sendError('Email or password is not correct.');
+    sendError('Email or password is not correct.', 200, 'LCH_WRONG_CREDENTIALS');
 }
 
 // ------- password check (SHA1, argon2/bcrypt, plaintext) -------
 $stored = (string)$acc['password'];
 $ok = false;
+$hashType = 'unknown';
 if (strlen($stored) === 40 && ctype_xdigit($stored)) {
     // SHA1 hex — case-insensitive compare
+    $hashType = 'sha1';
     $ok = hash_equals(strtolower($stored), strtolower(sha1($plain)));
 } elseif (str_starts_with($stored, '$2') || str_starts_with($stored, '$argon2')) {
     // FIX39: bcrypt ($2a$, $2y$) lub argon2 ($argon2id$, $argon2i$) — password_verify
+    $hashType = str_starts_with($stored, '$argon2') ? 'argon2' : 'bcrypt';
     $ok = password_verify($plain, $stored);
 } else {
     // Fallback: plaintext
+    $hashType = 'plain(len=' . strlen($stored) . ')';
     $ok = hash_equals($stored, $plain);
 }
+
+// DEBUG-LOGIN: safe diagnostic log (no plaintext password, no full hash)
+$debugLogFile = '/tmp/login_debug.log';
+$debugEntry = json_encode([
+    'ts' => gmdate('c'),
+    'email' => $email,
+    'accountFound' => true,
+    'accountId' => (int)$acc['id'],
+    'hashType' => $hashType,
+    'storedHashPrefix' => substr($stored, 0, 8) . '...',
+    'storedHashLen' => strlen($stored),
+    'plainLen' => strlen($plain),
+    'passwordMatch' => $ok,
+    'hasFreshInstall' => isset($req['freshInstall']),
+    'hasLaunchToken' => isset($req['launchToken']) && trim((string)$req['launchToken']) !== '',
+    'hasSource' => isset($req['source']),
+    'gameMode' => $gameMode,
+    'userAgent' => substr((string)($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 120),
+], JSON_UNESCAPED_SLASHES) . "\n";
+@file_put_contents($debugLogFile, $debugEntry, FILE_APPEND | LOCK_EX);
+
 if (!$ok) {
     logTicketEvent('login.rejected.bad_password', [
         'endpoint' => 'login.php',
         'accountId' => (int)$acc['id'],
         'ipHash' => $ipHashRate,
+        'hashType' => $hashType,
     ], $ENV);
-    sendError('Email or password is not correct.');
+    sendError('Email or password is not correct.', 200, 'LCH_WRONG_CREDENTIALS');
 }
 
 // ============================================================
@@ -195,10 +234,13 @@ if (!$ok) {
 // ============================================================
 $launchToken = isset($req['launchToken']) ? trim((string)$req['launchToken']) : '';
 $clientLocked = ($ENV['CLIENT_LOCKED'] ?? 'false') === 'true';
+$freshInstall = isset($req['freshInstall']) && $req['freshInstall'] === true;
+// Web login (source=web) is not subject to CLIENT_LOCKED token checks
+$sourceIsWeb = isset($req['source']) && $req['source'] === 'web';
 
-if ($clientLocked) {
+if ($clientLocked && !$freshInstall && !$sourceIsWeb) {
     if ($launchToken === '') {
-        sendError('Launch token required. Please use the official launcher.');
+        sendError('Launch token required. Please use the official launcher.', 200, 'LCH_TOKEN_REQUIRED');
     }
 
     // FIX-AUD12: użyj getClientIp() z common.php (obsługa trusted proxy)
@@ -216,7 +258,7 @@ if ($clientLocked) {
 
         if (!$tokenRow) {
             $apiDb->rollBack();
-            sendError('Invalid launch token. Please restart the launcher.');
+            sendError('Invalid launch token. Please restart the launcher.', 200, 'LCH_TOKEN_INVALID');
         }
 
         // Sprawdź wygaśnięcie (expires_at jest TIMESTAMP/datetime w MySQL)
@@ -224,13 +266,13 @@ if ($clientLocked) {
             $delStmt = $apiDb->prepare("DELETE FROM launch_tokens WHERE token = ?");
             $delStmt->execute([$launchToken]);
             $apiDb->commit();
-            sendError('Launch token expired. Please restart the launcher.');
+            sendError('Launch token expired. Please restart the launcher.', 200, 'LCH_TOKEN_EXPIRED');
         }
 
         // Sprawdź IP (token przypisany do IP, z którego launcher go pobrał)
         if ($tokenRow['client_ip'] !== $clientIp) {
             $apiDb->rollBack();
-            sendError('Launch token IP mismatch. Do not share tokens.');
+            sendError('Launch token IP mismatch. Do not share tokens.', 200, 'LCH_TOKEN_IP_MISMATCH');
         }
 
         // Opcjonalnie: sprawdź files_hash (integralność plików klienta)
@@ -239,7 +281,7 @@ if ($clientLocked) {
             $delStmt = $apiDb->prepare("DELETE FROM launch_tokens WHERE token = ?");
             $delStmt->execute([$launchToken]);
             $apiDb->commit();
-            sendError('Client files integrity check failed. Please update your client.');
+            sendError('Client files integrity check failed. Please update your client.', 200, 'LCH_INTEGRITY_FAILED');
         }
 
         // FIX-AUD6: Weryfikacja manifest_version — odrzuć tokeny z nieaktualną wersją klienta
@@ -250,7 +292,7 @@ if ($clientLocked) {
                 $delStmt->execute([$launchToken]);
                 $apiDb->commit();
                 error_log("[login.php] Manifest version mismatch: token has '{$tokenRow['manifest_version']}', required '{$requiredManifest}'");
-                sendError('Client version is outdated. Please update via launcher.');
+                sendError('Client version is outdated. Please update via launcher.', 200, 'LCH_VERSION_OUTDATED');
             }
         }
 
@@ -260,7 +302,7 @@ if ($clientLocked) {
         $apiDb->commit();
     } catch (\Exception $e) {
         $apiDb->rollBack();
-        sendError('Token validation error.');
+        sendError('Token validation error.', 200, 'LCH_TOKEN_ERROR');
     }
 }
 

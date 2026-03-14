@@ -349,6 +349,10 @@ mod registry {
 
     const UNINSTALL_KEY: &str =
         r"Software\Microsoft\Windows\CurrentVersion\Uninstall\RedDaxe";
+    const LAUNCHER_SCHEME_KEY: &str = r"Software\Classes\launcher";
+    const LAUNCHER_SCHEME_OPEN_KEY: &str = r"Software\Classes\launcher\shell\open";
+    const LAUNCHER_SCHEME_SHELL_KEY: &str = r"Software\Classes\launcher\shell";
+    const LAUNCHER_SCHEME_COMMAND_KEY: &str = r"Software\Classes\launcher\shell\open\command";
 
     #[link(name = "advapi32")]
     extern "system" {
@@ -416,6 +420,7 @@ mod registry {
             set_string_value(hkey, "DisplayVersion", version)?;
             set_dword_value(hkey, "NoModify", 1)?;
             set_dword_value(hkey, "NoRepair", 1)?;
+            register_launcher_scheme(install_dir)?;
             Ok(())
         })();
 
@@ -457,9 +462,66 @@ mod registry {
     }
 
     pub fn remove() -> Result<(), String> {
-        let key_w = to_wide(UNINSTALL_KEY);
+        delete_key(UNINSTALL_KEY)?;
+        delete_key(LAUNCHER_SCHEME_COMMAND_KEY)?;
+        delete_key(LAUNCHER_SCHEME_OPEN_KEY)?;
+        delete_key(LAUNCHER_SCHEME_SHELL_KEY)?;
+        delete_key(LAUNCHER_SCHEME_KEY)?;
+        Ok(())
+    }
+
+    fn register_launcher_scheme(install_dir: &Path) -> Result<(), String> {
+        let launcher_exe = install_dir.join(crate::platform::launcher_exe_name());
+        let scheme_hkey = create_key(LAUNCHER_SCHEME_KEY)?;
+        let command_hkey = create_key(LAUNCHER_SCHEME_COMMAND_KEY)?;
+
+        let result = (|| {
+            set_string_value(scheme_hkey, "", "URL:RedDaxe Launcher")?;
+            set_string_value(scheme_hkey, "URL Protocol", "")?;
+            set_string_value(
+                command_hkey,
+                "",
+                &format!("\"{}\" \"%1\"", launcher_exe.display()),
+            )?;
+            Ok(())
+        })();
+
+        unsafe {
+            RegCloseKey(command_hkey);
+            RegCloseKey(scheme_hkey);
+        }
+
+        result
+    }
+
+    fn create_key(path: &str) -> Result<isize, String> {
+        let key_w = to_wide(path);
+        let mut hkey: isize = 0;
+        let mut disposition: u32 = 0;
+
+        let result = unsafe {
+            RegCreateKeyExW(
+                HKEY_CURRENT_USER,
+                key_w.as_ptr(),
+                0,
+                std::ptr::null(),
+                0,
+                KEY_WRITE,
+                std::ptr::null_mut(),
+                &mut hkey,
+                &mut disposition,
+            )
+        };
+        if result != 0 {
+            return Err(format!("RegCreateKeyExW failed: {result}"));
+        }
+
+        Ok(hkey)
+    }
+
+    fn delete_key(path: &str) -> Result<(), String> {
+        let key_w = to_wide(path);
         let result = unsafe { RegDeleteKeyW(HKEY_CURRENT_USER, key_w.as_ptr()) };
-        // 2 = ERROR_FILE_NOT_FOUND — key doesn't exist, that's OK
         if result != 0 && result != 2 {
             return Err(format!("RegDeleteKeyW failed: {result}"));
         }

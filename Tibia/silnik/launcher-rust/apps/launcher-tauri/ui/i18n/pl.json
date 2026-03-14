@@ -182,6 +182,8 @@
     "accountContextRefreshPending": "Wróć do launchera po utworzeniu postaci, aby odświeżyć kontekst konta.",
     "accountContextRefreshed": "Kontekst konta odświeżony.",
     "accountContextRefreshErrorGeneric": "Nie udało się odświeżyć kontekstu konta. Spróbuj ponownie.",
+    "websiteLauncherSyncSuccess": "Launcher został połączony z zalogowaną sesją WWW.",
+    "websiteLauncherSyncErrorGeneric": "Nie udało się zsynchronizować launchera z sesją WWW.",
     "createCharacterFallbackMissingSession": "Brak sessionKey. Otwieram formularz WWW bez auto-logowania.",
     "createCharacterFallbackError": "Nie udało się przygotować auto-logowania WWW ({0}). Otwieram formularz bez auto-logowania.",
     "createCharacterFallbackErrorGeneric": "Nie udało się przygotować auto-logowania WWW. Otwieram formularz bez auto-logowania.",

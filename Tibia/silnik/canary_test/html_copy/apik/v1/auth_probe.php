@@ -70,8 +70,16 @@ function verify_password(string $plain, string $stored): bool {
   return hash_equals($s, $plain);
 }
 
-$login = trim((string)($_GET['email'] ?? $_GET['login'] ?? ''));
-$pass  = (string)($_GET['password'] ?? '');
+// SEC-01 FIX: Accept credentials from POST body only (never GET — passwords leak to access logs)
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405);
+    echo json_encode(['error' => 'Method Not Allowed. Use POST with JSON body: {"email":"...","password":"..."}']);
+    exit;
+}
+$raw = file_get_contents('php://input') ?: '';
+$req = json_decode($raw, true);
+$login = trim((string)($req['email'] ?? $req['login'] ?? ''));
+$pass  = (string)($req['password'] ?? '');
 $out   = ['login'=>$login];
 
 try {

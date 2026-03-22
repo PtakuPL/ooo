@@ -11,14 +11,11 @@ header('Content-Type: application/json; charset=utf-8');
  *     Zapisuje sesję z gameMode do tabeli `ticket_sessions` (do użycia przez ticket.php).
  *
  * - Czyta konfigurację DB z .env (najpierw /var/www/html/api/v1/.env, potem /var/www/html/.env).
- * - Weryfikuje hasło:
- *      • jeśli w DB jest 40-znakowy hex (SHA1) → porównanie case-insensitive (lower/UPPER)
- *      • w innym wypadku dopuszcza tryb plain (==)
- * - Tworzy sesję z losowym kluczem (UUID) zamiast account\npassword
+ * - Weryfikuje hasło albo launcherowy `sessionToken`.
+ * - Tworzy sesję z losowym kluczem (UUID) zamiast account\npassword.
  * - Buduje listę postaci i dane świata (filtrowane wg gameMode).
  */
 
-// FIX42: Shared utilities (loadEnvFiles, sendError, json_out)
 require_once __DIR__ . '/common.php';
 
 $requestStartedAt = microtime(true);
@@ -31,7 +28,8 @@ $requestStartedAt = microtime(true);
  */
 function getWorldsForGameMode(string $gameMode, array $ENV, PDO $globalDb): array {
     // Build world entry template
-    $buildWorld = function(int $id, string $name, string $ip, int $port): array {
+    // OTC-014: dodano online_players — klient może wyświetlić status serwera
+    $buildWorld = function(int $id, string $name, string $ip, int $port, int $onlinePlayers = 0): array {
         return [
             'id'                         => $id,
             'name'                       => $name,
@@ -49,6 +47,7 @@ function getWorldsForGameMode(string $gameMode, array $ENV, PDO $globalDb): arra
             'pvp_type'                   => 0,
             'battleye_protected'         => false,
             'worldstatus'                => 'online',
+            'online_players'             => $onlinePlayers,
         ];
     };
 
@@ -93,7 +92,8 @@ if ($action !== 'login') {
 
 $email = isset($req['email']) ? trim((string)$req['email']) : '';
 $plain = isset($req['password']) ? (string)$req['password'] : '';
-if ($email === '' || $plain === '') {
+$sessionToken = isset($req['sessionToken']) ? trim((string)$req['sessionToken']) : '';
+if ($sessionToken === '' && ($email === '' || $plain === '')) {
     sendError('Email or password is empty.', 200, 'LCH_EMPTY_CREDENTIALS');
 }
 
@@ -101,7 +101,6 @@ if ($email === '' || $plain === '') {
 // PLAN-S2: walidacja dynamiczna z tabeli games — nie hardkodujemy listy
 $gameMode = isset($req['gameMode']) ? trim((string)$req['gameMode']) : '';
 if ($gameMode !== '' && $gameMode !== 'all') {
-    // Walidacja odroczona do momentu po DB connect — zapamiętaj do sprawdzenia
     $gameModeNeedsValidation = true;
 } else {
     $gameModeNeedsValidation = false;
@@ -110,16 +109,15 @@ if ($gameMode !== '' && $gameMode !== 'all') {
 // ------- DB config (F1: multi-DB) -------
 $ENV = loadEnvFiles([
     __DIR__ . '/.env',
-    dirname(__DIR__, 2) . '/.env', // /var/www/html/.env
+    dirname(__DIR__, 2) . '/.env',
 ]);
 
 $globalDb = getGlobalDb($ENV);  // accounts, games
 $apiDb    = getApiDb($ENV);     // ticket_sessions, launch_tokens
 
-// W71: Rate limiting — per email (10/min) + per IP (30/min)
+// W71: Rate limiting — per IP + per email/session
 $clientIpForRate = getClientIp($ENV);
 $ipHashRate = hashClientIp($clientIpForRate, $ENV);
-$emailHashRate = hash('sha256', strtolower($email));
 
 $rlIp = applyRateLimit($apiDb, 'login:ip', $ipHashRate, 30, 60);
 if (!$rlIp['allowed']) {
@@ -131,18 +129,37 @@ if (!$rlIp['allowed']) {
     ], $ENV);
     sendError('Too many login attempts. Please try again later.', 429, 'LCH_RATE_LIMITED_IP');
 }
-$rlEmail = applyRateLimit($apiDb, 'login:email', $emailHashRate, 10, 60);
-if (!$rlEmail['allowed']) {
-    logTicketEvent('login.rejected.rate_limited', [
-        'endpoint' => 'login.php',
-        'bucket' => 'login:email',
-        'ipHash' => $ipHashRate,
-        'retryAfter' => $rlEmail['retryAfter'],
-    ], $ENV);
-    sendError('Too many login attempts for this account. Please try again later.', 429, 'LCH_RATE_LIMITED_EMAIL');
+
+if ($sessionToken !== '') {
+    if (strlen($sessionToken) > 256 || !ctype_xdigit($sessionToken)) {
+        sendError('Invalid launcher session. Please log in again in launcher.', 200, 'LCH_SESSION_TOKEN_INVALID');
+    }
+    $sessionHashRate = hash('sha256', strtolower($sessionToken));
+    $rlSession = applyRateLimit($apiDb, 'login:session', $sessionHashRate, 30, 60);
+    if (!$rlSession['allowed']) {
+        logTicketEvent('login.rejected.rate_limited', [
+            'endpoint' => 'login.php',
+            'bucket' => 'login:session',
+            'ipHash' => $ipHashRate,
+            'retryAfter' => $rlSession['retryAfter'],
+        ], $ENV);
+        sendError('Too many login attempts for this launcher session. Please try again later.', 429, 'LCH_RATE_LIMITED_SESSION');
+    }
+} else {
+    $emailHashRate = hash('sha256', strtolower($email));
+    $rlEmail = applyRateLimit($apiDb, 'login:email', $emailHashRate, 10, 60);
+    if (!$rlEmail['allowed']) {
+        logTicketEvent('login.rejected.rate_limited', [
+            'endpoint' => 'login.php',
+            'bucket' => 'login:email',
+            'ipHash' => $ipHashRate,
+            'retryAfter' => $rlEmail['retryAfter'],
+        ], $ENV);
+        sendError('Too many login attempts for this account. Please try again later.', 429, 'LCH_RATE_LIMITED_EMAIL');
+    }
 }
 
-$sessionTtl = isset($ENV['SESSION_TTL']) ? (int)$ENV['SESSION_TTL'] : 1800; // 30 min
+$sessionTtl = isset($ENV['SESSION_TTL']) ? (int)$ENV['SESSION_TTL'] : 1800;
 
 // PLAN-S2: Dynamiczna walidacja gameMode z tabeli games (GLOBAL_DB)
 if ($gameModeNeedsValidation) {
@@ -153,89 +170,91 @@ if ($gameModeNeedsValidation) {
     }
 }
 
-// ------- fetch account by email (GLOBAL_DB) -------
-$stmt = $globalDb->prepare("SELECT id, name, password, premdays, lastday FROM accounts WHERE email = ? LIMIT 1");
-$stmt->execute([$email]);
-$acc = $stmt->fetch();
-if (!$acc) {
-    // DEBUG-LOGIN: log account-not-found separately
-    $debugLogFile = '/tmp/login_debug.log';
-    $debugEntry = json_encode([
-        'ts' => gmdate('c'),
-        'email' => $email,
-        'accountFound' => false,
-        'plainLen' => strlen($plain),
-        'hasFreshInstall' => isset($req['freshInstall']),
-        'hasLaunchToken' => isset($req['launchToken']) && trim((string)$req['launchToken']) !== '',
-        'userAgent' => substr((string)($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 120),
-    ], JSON_UNESCAPED_SLASHES) . "\n";
-    @file_put_contents($debugLogFile, $debugEntry, FILE_APPEND | LOCK_EX);
+$authMethod = ($sessionToken !== '') ? 'session_token' : 'password';
 
-    logTicketEvent('login.rejected.account_not_found', [
-        'endpoint' => 'login.php',
-        'ipHash' => $ipHashRate,
-    ], $ENV);
-    sendError('Email or password is not correct.', 200, 'LCH_WRONG_CREDENTIALS');
-}
+if ($sessionToken !== '') {
+    $sessionLookup = $apiDb->prepare(
+        "SELECT session_key, account_id, game_mode, expires_at FROM ticket_sessions WHERE session_key = ? LIMIT 1"
+    );
+    $sessionLookup->execute([$sessionToken]);
+    $launcherSession = $sessionLookup->fetch();
+    if (!$launcherSession) {
+        logTicketEvent('login.rejected.invalid_session_token', [
+            'endpoint' => 'login.php',
+            'ipHash' => $ipHashRate,
+        ], $ENV);
+        sendError('Invalid launcher session. Please log in again in launcher.', 200, 'LCH_SESSION_TOKEN_INVALID');
+    }
 
-// ------- password check (SHA1, argon2/bcrypt, plaintext) -------
-$stored = (string)$acc['password'];
-$ok = false;
-$hashType = 'unknown';
-if (strlen($stored) === 40 && ctype_xdigit($stored)) {
-    // SHA1 hex — case-insensitive compare
-    $hashType = 'sha1';
-    $ok = hash_equals(strtolower($stored), strtolower(sha1($plain)));
-} elseif (str_starts_with($stored, '$2') || str_starts_with($stored, '$argon2')) {
-    // FIX39: bcrypt ($2a$, $2y$) lub argon2 ($argon2id$, $argon2i$) — password_verify
-    $hashType = str_starts_with($stored, '$argon2') ? 'argon2' : 'bcrypt';
-    $ok = password_verify($plain, $stored);
+    $now = time();
+    if ((int)$launcherSession['expires_at'] < $now) {
+        $deleteSession = $apiDb->prepare("DELETE FROM ticket_sessions WHERE session_key = ?");
+        $deleteSession->execute([$sessionToken]);
+        logTicketEvent('login.rejected.expired_session_token', [
+            'endpoint' => 'login.php',
+            'ipHash' => $ipHashRate,
+        ], $ENV);
+        sendError('Launcher session expired. Please log in again in launcher.', 200, 'LCH_SESSION_TOKEN_EXPIRED');
+    }
+
+    $stmt = $globalDb->prepare("SELECT id, name, password, premdays, lastday FROM accounts WHERE id = ? LIMIT 1");
+    $stmt->execute([(int)$launcherSession['account_id']]);
+    $acc = $stmt->fetch();
+    if (!$acc) {
+        logTicketEvent('login.rejected.account_not_found', [
+            'endpoint' => 'login.php',
+            'ipHash' => $ipHashRate,
+        ], $ENV);
+        sendError('Account linked to launcher session was not found.', 200, 'LCH_SESSION_TOKEN_ACCOUNT_MISSING');
+    }
 } else {
-    // Fallback: plaintext
-    $hashType = 'plain(len=' . strlen($stored) . ')';
-    $ok = hash_equals($stored, $plain);
-}
+    // ------- fetch account by email (GLOBAL_DB) -------
+    $stmt = $globalDb->prepare("SELECT id, name, password, premdays, lastday FROM accounts WHERE email = ? LIMIT 1");
+    $stmt->execute([$email]);
+    $acc = $stmt->fetch();
+    if (!$acc) {
+        logTicketEvent('login.rejected.account_not_found', [
+            'endpoint' => 'login.php',
+            'ipHash' => $ipHashRate,
+        ], $ENV);
+        sendError('Email or password is not correct.', 200, 'LCH_WRONG_CREDENTIALS');
+    }
 
-// DEBUG-LOGIN: safe diagnostic log (no plaintext password, no full hash)
-$debugLogFile = '/tmp/login_debug.log';
-$debugEntry = json_encode([
-    'ts' => gmdate('c'),
-    'email' => $email,
-    'accountFound' => true,
-    'accountId' => (int)$acc['id'],
-    'hashType' => $hashType,
-    'storedHashPrefix' => substr($stored, 0, 8) . '...',
-    'storedHashLen' => strlen($stored),
-    'plainLen' => strlen($plain),
-    'passwordMatch' => $ok,
-    'hasFreshInstall' => isset($req['freshInstall']),
-    'hasLaunchToken' => isset($req['launchToken']) && trim((string)$req['launchToken']) !== '',
-    'hasSource' => isset($req['source']),
-    'gameMode' => $gameMode,
-    'userAgent' => substr((string)($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 120),
-], JSON_UNESCAPED_SLASHES) . "\n";
-@file_put_contents($debugLogFile, $debugEntry, FILE_APPEND | LOCK_EX);
+    // ------- password check (SHA1, argon2/bcrypt, plaintext) -------
+    $stored = (string)$acc['password'];
+    $ok = false;
+    $hashType = 'unknown';
+    if (strlen($stored) === 40 && ctype_xdigit($stored)) {
+        $hashType = 'sha1';
+        $ok = hash_equals(strtolower($stored), strtolower(sha1($plain)));
+    } elseif (str_starts_with($stored, '$2') || str_starts_with($stored, '$argon2')) {
+        $hashType = str_starts_with($stored, '$argon2') ? 'argon2' : 'bcrypt';
+        $ok = password_verify($plain, $stored);
+    } else {
+        $hashType = 'plain(len=' . strlen($stored) . ')';
+        $ok = hash_equals($stored, $plain);
+    }
 
-if (!$ok) {
-    logTicketEvent('login.rejected.bad_password', [
-        'endpoint' => 'login.php',
-        'accountId' => (int)$acc['id'],
-        'ipHash' => $ipHashRate,
-        'hashType' => $hashType,
-    ], $ENV);
-    sendError('Email or password is not correct.', 200, 'LCH_WRONG_CREDENTIALS');
+    if (!$ok) {
+        logTicketEvent('login.rejected.bad_password', [
+            'endpoint' => 'login.php',
+            'accountId' => (int)$acc['id'],
+            'ipHash' => $ipHashRate,
+            'hashType' => $hashType,
+        ], $ENV);
+        sendError('Email or password is not correct.', 200, 'LCH_WRONG_CREDENTIALS');
+    }
 }
 
 // ============================================================
 // E11: LaunchToken validation — klient musi przejść przez launcher
 // Launcher pobiera token z launcher-token.php i przekazuje go przez env OTC_LAUNCH_TOKEN.
-// Klient dołącza token do JSON body logowania (E10).
+// Klient dołącza token do JSON body logowania.
 // Jeden token = jedno logowanie (one-time use, atomowa konsumpcja).
 // ============================================================
 $launchToken = isset($req['launchToken']) ? trim((string)$req['launchToken']) : '';
 $clientLocked = ($ENV['CLIENT_LOCKED'] ?? 'false') === 'true';
 $freshInstall = isset($req['freshInstall']) && $req['freshInstall'] === true;
-// Web login (source=web) is not subject to CLIENT_LOCKED token checks
 $sourceIsWeb = isset($req['source']) && $req['source'] === 'web';
 
 if ($clientLocked && !$freshInstall && !$sourceIsWeb) {
@@ -243,11 +262,9 @@ if ($clientLocked && !$freshInstall && !$sourceIsWeb) {
         sendError('Launch token required. Please use the official launcher.', 200, 'LCH_TOKEN_REQUIRED');
     }
 
-    // FIX-AUD12: użyj getClientIp() z common.php (obsługa trusted proxy)
     $clientIp = getClientIp($ENV);
     $now = time();
 
-    // Atomowa walidacja + konsumpcja tokenu (SELECT FOR UPDATE + DELETE w transakcji) — API_DB
     $apiDb->beginTransaction();
     try {
         $stmt = $apiDb->prepare(
@@ -261,7 +278,6 @@ if ($clientLocked && !$freshInstall && !$sourceIsWeb) {
             sendError('Invalid launch token. Please restart the launcher.', 200, 'LCH_TOKEN_INVALID');
         }
 
-        // Sprawdź wygaśnięcie (expires_at jest TIMESTAMP/datetime w MySQL)
         if (strtotime($tokenRow['expires_at']) < $now) {
             $delStmt = $apiDb->prepare("DELETE FROM launch_tokens WHERE token = ?");
             $delStmt->execute([$launchToken]);
@@ -269,13 +285,11 @@ if ($clientLocked && !$freshInstall && !$sourceIsWeb) {
             sendError('Launch token expired. Please restart the launcher.', 200, 'LCH_TOKEN_EXPIRED');
         }
 
-        // Sprawdź IP (token przypisany do IP, z którego launcher go pobrał)
         if ($tokenRow['client_ip'] !== $clientIp) {
             $apiDb->rollBack();
             sendError('Launch token IP mismatch. Do not share tokens.', 200, 'LCH_TOKEN_IP_MISMATCH');
         }
 
-        // Opcjonalnie: sprawdź files_hash (integralność plików klienta)
         $expectedHash = $ENV['EXPECTED_FILES_HASH'] ?? '';
         if ($expectedHash !== '' && $tokenRow['files_hash'] !== $expectedHash) {
             $delStmt = $apiDb->prepare("DELETE FROM launch_tokens WHERE token = ?");
@@ -284,7 +298,6 @@ if ($clientLocked && !$freshInstall && !$sourceIsWeb) {
             sendError('Client files integrity check failed. Please update your client.', 200, 'LCH_INTEGRITY_FAILED');
         }
 
-        // FIX-AUD6: Weryfikacja manifest_version — odrzuć tokeny z nieaktualną wersją klienta
         $requiredManifest = $ENV['REQUIRED_MANIFEST_VERSION'] ?? '';
         if ($requiredManifest !== '' && isset($tokenRow['manifest_version'])) {
             if ($tokenRow['manifest_version'] !== $requiredManifest) {
@@ -296,7 +309,6 @@ if ($clientLocked && !$freshInstall && !$sourceIsWeb) {
             }
         }
 
-        // Konsumuj: one-time use — usuń token
         $delStmt = $apiDb->prepare("DELETE FROM launch_tokens WHERE token = ?");
         $delStmt->execute([$launchToken]);
         $apiDb->commit();
@@ -312,21 +324,17 @@ $chars = [];
 // ------- PLAN-S2: dynamic worlds from games table (GLOBAL_DB) -------
 $worlds = getWorldsForGameMode($gameMode, $ENV, $globalDb);
 
-// PLAN-S2: worldIdFixed — when a specific gameMode is selected, force characters to that world
 $worldIdFixed = null;
 if ($gameMode !== '' && $gameMode !== 'all' && count($worlds) === 1) {
     $worldIdFixed = $worlds[0]['id'];
 }
 
-// Mapa world id → world id w odpowiedzi (walidacja)
 $worldIdsAvailable = array_column($worlds, 'id');
 
-// F1: Query players from engine DB(s) instead of monolith
 $playerSql = "SELECT name, level, sex, vocation, looktype, lookhead, lookbody, looklegs, lookfeet, lookaddons, lastlogin, main
               FROM players WHERE account_id = ? AND deletion = 0 ORDER BY name";
 
 if ($gameMode !== '' && $gameMode !== 'all') {
-    // Specific game mode — query single engine DB
     $engineDb = getEnginePdo($ENV, $gameMode);
     $stmt = $engineDb->prepare($playerSql);
     $stmt->execute([(int)$acc['id']]);
@@ -352,7 +360,6 @@ if ($gameMode !== '' && $gameMode !== 'all') {
         ];
     }
 } else {
-    // All modes — query both engine DBs and merge
     $engines = getBothEnginePdos($ENV);
     foreach ($engines as $gm => $engineDb) {
         $engineWorldId = ($gm === 'modern') ? 1 : 0;
@@ -390,13 +397,26 @@ if ($gameMode !== '' && $gameMode !== 'all') {
 
 $playdata = ['worlds' => $worlds, 'characters' => $chars];
 
-// ------- B1: session z kluczem UUID + zapis do ticket_sessions -------
-// Generujemy losowy session key (NIE account\npassword — bezpieczniejsze).
-// Stary format (account\npassword) nadal potrzebny jako fallback dla sessionkey
-// w OTClient protocolgame — ale to ticket.php generuje ticket z HMAC.
-$sessionUuid = bin2hex(random_bytes(32)); // 64-znakowy hex
+// ------- OTC-013: Account ban check -------
+$banInfo = null;
+$banStmt = $globalDb->prepare(
+    "SELECT reason, expires_at FROM account_bans WHERE account_id = ? LIMIT 1"
+);
+$banStmt->execute([(int)$acc['id']]);
+$banRow = $banStmt->fetch();
+if ($banRow) {
+    $banExpires = (int)$banRow['expires_at'];
+    if ($banExpires > time()) {
+        $banInfo = [
+            'reason'    => $banRow['reason'],
+            'expiresAt' => $banExpires,
+        ];
+    }
+}
 
-// Zapisz sesję do bazy (ticket.php będzie weryfikować) — API_DB
+// ------- B1: session z kluczem UUID + zapis do ticket_sessions -------
+$sessionUuid = bin2hex(random_bytes(32));
+
 $expiresAt = time() + $sessionTtl;
 $stmt = $apiDb->prepare(
     "INSERT INTO ticket_sessions (session_key, account_id, game_mode, expires_at)
@@ -407,43 +427,41 @@ $accountId = (int)$acc['id'];
 $gameModeDb = ($gameMode === '') ? 'all' : $gameMode;
 $stmt->execute([$sessionUuid, $accountId, $gameModeDb, $expiresAt]);
 
-// Cleanup: usuń wygasłe sesje (okazyjnie, co ~10% requestów)
 if (mt_rand(1, 10) === 1) {
     $now = time();
     $apiDb->exec("DELETE FROM ticket_sessions WHERE expires_at < {$now}");
 }
 
-// Session key — UUID (do ticket.php) + legacy format (do protocolgame fallback)
-$legacySessionKey = $acc['name'] . "\n" . $plain;
+$legacySessionKey = ($sessionToken === '') ? ($acc['name'] . "\n" . $plain) : $sessionUuid;
 
-// FIX29+FIX52: Oblicz premium z DB — Canary: lastday = UNIX timestamp KOŃCA premium
-// Referencja: account_repository_db.cpp → premiumLastDay = lastday,
-//             premiumRemainingDays = (lastday - now) / 86400
-//             protocollogin.cpp → isPremium = premiumLastDay > now, premiumUntil = premiumLastDay
 $lastDay  = (int)($acc['lastday'] ?? 0);
 $isPremium = false;
 $premiumUntil = 0;
 if ($lastDay > 0) {
-    // lastday to timestamp KOŃCA premium (NIE start + dni)
     $premiumUntil = $lastDay;
     $isPremium = ($premiumUntil > time());
 }
 
 $session = [
-    'sessionkey'    => $sessionUuid,                // B1: nowy UUID session — ticket.php używa tego
-    'key'           => $legacySessionKey,            // Legacy — protocolgame bez ticket-gate
+    'sessionkey'    => $sessionUuid,
+    'key'           => $legacySessionKey,
     'lastlogintime' => 0,
-    'ispremium'     => $isPremium,                   // FIX29: z DB
-    'premiumuntil'  => $premiumUntil,                // FIX29: z DB
+    'ispremium'     => $isPremium,
+    'premiumuntil'  => $premiumUntil,
     'status'        => 'active',
-    'gameMode'      => $gameModeDb,                  // B1: gameMode w odpowiedzi
+    'gameMode'      => $gameModeDb,
 ];
+
+if ($banInfo !== null) {
+    $session['accountBan'] = $banInfo;
+}
 
 $requestEndTime = microtime(true);
 $latencyMs = (int)(($requestEndTime - ($requestStartedAt ?? $requestEndTime)) * 1000);
 logTicketEvent('login.success', [
     'endpoint' => 'login.php',
     'accountId' => $accountId,
+    'authMethod' => $authMethod,
     'gameMode' => $gameModeDb,
     'ipHash' => $ipHashRate,
     'characters' => count($chars),

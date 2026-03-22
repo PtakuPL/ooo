@@ -12,8 +12,35 @@ header('Content-Type: application/json; charset=utf-8');
 
 require_once __DIR__ . '/common.php';
 
-function getWorldsContext(array $ENV): array
+function getWorldsContext(array $ENV, PDO $globalDb): array
 {
+    // Dynamic: read active games from DB (single source of truth)
+    try {
+        $stmt = $globalDb->prepare(
+            "SELECT slug, name, game_host, game_port, sort_order
+             FROM games
+             WHERE status IN ('active', 'maintenance')
+             ORDER BY sort_order"
+        );
+        $stmt->execute();
+        $worlds = [];
+        while ($row = $stmt->fetch()) {
+            $worlds[] = [
+                'id' => (int)$row['sort_order'] - 1,
+                'gameMode' => (string)$row['slug'],
+                'name' => (string)$row['name'],
+                'host' => (string)$row['game_host'],
+                'port' => (int)$row['game_port'],
+            ];
+        }
+        if (!empty($worlds)) {
+            return $worlds;
+        }
+    } catch (\PDOException $e) {
+        // DB unavailable — fall through to ENV fallback
+    }
+
+    // Fallback: ENV-based (legacy, used only if games table empty/unavailable)
     $worldIp = $ENV['WORLD_IP'] ?? '127.0.0.1';
     $worldPort = isset($ENV['WORLD_PORT']) ? (int)$ENV['WORLD_PORT'] : 7172;
     $classic74Ip = $ENV['WORLD_CLASSIC74_IP'] ?? $worldIp;
@@ -75,8 +102,20 @@ $ENV = loadEnvFiles([
 ]);
 
 // F1: multi-DB connections
-$apiDb    = getApiDb($ENV);     // ticket_sessions
-$globalDb = getGlobalDb($ENV);  // accounts
+$apiDb    = getApiDb($ENV);     // ticket_sessions, api_rate_limits
+$globalDb = getGlobalDb($ENV);  // accounts, games
+
+// Rate limit: 60 requests per minute per IP, 30 per session
+$clientIp = getClientIp($ENV);
+$ipHash = hashClientIp($clientIp, $ENV);
+$rl = applyRateLimit($apiDb, 'account_context:ip', $ipHash, 60, 60);
+if (!$rl['allowed']) {
+    sendLauncherError('rate_limited', 'Too many requests. Try again later.', 429);
+}
+$rl2 = applyRateLimit($apiDb, 'account_context:session', hash('sha256', $sessionKey), 30, 60);
+if (!$rl2['allowed']) {
+    sendLauncherError('rate_limited', 'Too many requests for this session. Try again later.', 429);
+}
 
 // Session validation (API_DB)
 $now = time();
@@ -126,6 +165,7 @@ foreach ($engines as $gm => $engineDb) {
                 'vocation' => (int)$row['vocation'],
                 'lastlogin' => (int)$row['lastlogin'],
                 'worldId' => $worldIdVal,
+                'profileId' => $gm,
             ];
         }
     } catch (\PDOException $e) {
@@ -138,6 +178,16 @@ $counts = [
     'classic74' => count($charactersByWorld['classic74']),
     'modern' => count($charactersByWorld['modern']),
     'unknown' => count($charactersByWorld['unknown']),
+];
+
+// API-005: eligibility — can the account create new characters per mode?
+$maxCharsPerMode = (int)($ENV['MAX_CHARACTERS_PER_MODE'] ?? 10);
+$eligibility = [
+    'canCreateCharacter' => [
+        'classic74' => $counts['classic74'] < $maxCharsPerMode,
+        'modern'    => $counts['modern'] < $maxCharsPerMode,
+    ],
+    'maxCharactersPerMode' => $maxCharsPerMode,
 ];
 
 $sessionGameMode = normalizeSessionGameMode((string)$session['game_mode']);
@@ -154,9 +204,10 @@ json_out([
         'name' => (string)$account['name'],
         'email' => (string)$account['email'],
     ],
-    'worlds' => getWorldsContext($ENV),
+    'worlds' => getWorldsContext($ENV, $globalDb),
     'charactersByWorld' => $charactersByWorld,
     'counts' => $counts,
+    'eligibility' => $eligibility,
     'activeProfile' => [
         'gameMode' => $sessionGameMode,
         'allowedModes' => ['all', 'classic74', 'modern'],

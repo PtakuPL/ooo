@@ -112,6 +112,7 @@ if (!in_array($action, ['account_sync_consume', 'sync_token_consume'], true)) {
 }
 
 $syncToken = trim((string)($req['syncToken'] ?? ''));
+$verifier = trim((string)($req['verifier'] ?? ''));
 $requestedTarget = strtolower(trim((string)($req['target'] ?? '')));
 $requestedSource = strtolower(trim((string)($req['source'] ?? '')));
 if ($syncToken === '') {
@@ -148,7 +149,7 @@ $newSessionExpiresAt = 0;
 $apiDb->beginTransaction();
 try {
     $stmt = $apiDb->prepare(
-        "SELECT token, account_id, source, target, expires_at, used_at
+        "SELECT token, account_id, source, target, expires_at, used_at, verifier_hash
          FROM account_sync_tokens
          WHERE token = ?
          LIMIT 1
@@ -178,6 +179,14 @@ try {
     $source = (string)$syncRow['source'];
     if ($requestedSource !== '' && $requestedSource !== $source) {
         throw new RuntimeException('source_mismatch');
+    }
+
+    // SEC-P2-001: Validate PKCE-like verifier (fail-closed: if hash stored, verifier required)
+    $storedHash = (string)($syncRow['verifier_hash'] ?? '');
+    if ($storedHash !== '') {
+        if ($verifier === '' || !hash_equals($storedHash, hash('sha256', $verifier))) {
+            throw new RuntimeException('verifier_mismatch');
+        }
     }
 
     $mark = $apiDb->prepare("UPDATE account_sync_tokens SET used_at = NOW() WHERE token = ?");
@@ -211,6 +220,9 @@ try {
     }
     if ($code === 'source_mismatch') {
         syncConsumeError('source_mismatch', 'Sync token source mismatch.', 409);
+    }
+    if ($code === 'verifier_mismatch') {
+        syncConsumeError('verifier_mismatch', 'Sync token verifier mismatch.', 403);
     }
     syncConsumeError('sync_consume_failed', 'Cannot consume sync token.', 500);
 }

@@ -1613,7 +1613,7 @@ void ProtocolGame::parseHotkeyEquip(NetworkMessage &msg) {
 		return;
 	}
 
-	// D7: Block Smart Equip (hotkey equip) for Classic 7.4
+	// D7: Block Smart Equip (hotkey equip) for Classic 7.4 — JEDYNE ograniczenie Classic 7.4
 	if (isClassic74Blocked("Smart Equip")) {
 		return;
 	}
@@ -2080,10 +2080,7 @@ void ProtocolGame::parseQuickLoot(NetworkMessage &msg) {
 		return;
 	}
 
-	// D3: Block Quick Loot for Classic 7.4
-	if (isClassic74Blocked("Quick Loot")) {
-		return;
-	}
+	// D3: Quick Loot — KOREKTA 2026-03-18: odblokowane dla Classic 7.4 (tylko hotkeye zablokowane)
 
 	uint8_t variant = msg.getByte();
 	const Position pos = msg.getPosition();
@@ -2109,10 +2106,7 @@ void ProtocolGame::parseLootContainer(NetworkMessage &msg) {
 		return;
 	}
 
-	// D3: Block Auto Loot containers for Classic 7.4
-	if (isClassic74Blocked("Auto Loot")) {
-		return;
-	}
+	// D3: Auto Loot — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	uint8_t action = msg.getByte();
 	if (action == 0) {
@@ -2153,10 +2147,7 @@ void ProtocolGame::parseQuickLootBlackWhitelist(NetworkMessage &msg) {
 		return;
 	}
 
-	// D3: Block Quick Loot config for Classic 7.4
-	if (isClassic74Blocked("Quick Loot")) {
-		return;
-	}
+	// D3: Quick Loot config — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	auto filter = (QuickLootFilter_t)msg.getByte();
 	std::vector<uint16_t> listedItems;
@@ -2595,10 +2586,7 @@ void ProtocolGame::parseBestiarySendRaces() {
 		return;
 	}
 
-	// D10: Block Bestiary for Classic 7.4
-	if (isClassic74Blocked("Bestiary")) {
-		return;
-	}
+	// D10: Bestiary — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	NetworkMessage msg;
 	msg.addByte(0xD5);
@@ -2643,10 +2631,7 @@ void ProtocolGame::parseBestiarysendMonsterData(NetworkMessage &msg) {
 		return;
 	}
 
-	// D10: Block Bestiary for Classic 7.4
-	if (isClassic74Blocked("Bestiary")) {
-		return;
-	}
+	// D10: Bestiary — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	auto raceId = msg.get<uint16_t>();
 	std::string Class;
@@ -3282,10 +3267,7 @@ void ProtocolGame::parseBestiarySendCreatures(NetworkMessage &msg) {
 		return;
 	}
 
-	// D10: Block Bestiary for Classic 7.4
-	if (isClassic74Blocked("Bestiary")) {
-		return;
-	}
+	// D10: Bestiary — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	std::ostringstream ss;
 	std::map<uint16_t, std::string> race = {};
@@ -3382,10 +3364,7 @@ void ProtocolGame::parseOfferDescription(NetworkMessage &msg) {
 }
 
 void ProtocolGame::parsePreyAction(NetworkMessage &msg) {
-	// D5: Block Prey System for Classic 7.4
-	if (isClassic74Blocked("Prey System")) {
-		return;
-	}
+	// D5: Prey System — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	int8_t index = -1;
 	uint8_t slot = msg.getByte();
@@ -3459,19 +3438,13 @@ void ProtocolGame::parseQuestLine(NetworkMessage &msg) {
 }
 
 void ProtocolGame::parseMarketLeave() {
-	// D4: Block Market for Classic 7.4
-	if (isClassic74Blocked("Market")) {
-		return;
-	}
+	// D4: Market — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	g_game().playerLeaveMarket(player->getID());
 }
 
 void ProtocolGame::parseMarketBrowse(NetworkMessage &msg) {
-	// D4: Block Market for Classic 7.4
-	if (isClassic74Blocked("Market")) {
-		return;
-	}
+	// D4: Market — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	
 	uint16_t browseId = oldProtocol ? msg.get<uint16_t>() : static_cast<uint16_t>(msg.getByte());
@@ -3494,10 +3467,7 @@ void ProtocolGame::parseMarketBrowse(NetworkMessage &msg) {
 }
 
 void ProtocolGame::parseMarketCreateOffer(NetworkMessage &msg) {
-	// D4: Block Market for Classic 7.4
-	if (isClassic74Blocked("Market")) {
-		return;
-	}
+	// D4: Market — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	uint8_t type = msg.getByte();
 	auto itemId = msg.get<uint16_t>();
@@ -3515,10 +3485,7 @@ void ProtocolGame::parseMarketCreateOffer(NetworkMessage &msg) {
 }
 
 void ProtocolGame::parseMarketCancelOffer(NetworkMessage &msg) {
-	// D4: Block Market for Classic 7.4
-	if (isClassic74Blocked("Market")) {
-		return;
-	}
+	// D4: Market — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	auto timestamp = msg.get<uint32_t>();
 	auto counter = msg.get<uint16_t>();
@@ -3530,10 +3497,7 @@ void ProtocolGame::parseMarketCancelOffer(NetworkMessage &msg) {
 }
 
 void ProtocolGame::parseMarketAcceptOffer(NetworkMessage &msg) {
-	// D4: Block Market for Classic 7.4
-	if (isClassic74Blocked("Market")) {
-		return;
-	}
+	// D4: Market — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	auto timestamp = msg.get<uint32_t>();
 	auto counter = msg.get<uint16_t>();
@@ -10443,10 +10407,7 @@ void ProtocolGame::parseOpenWheel(NetworkMessage &msg) {
 		return;
 	}
 
-	// D6: Block Wheel of Destiny for Classic 7.4
-	if (isClassic74Blocked("Wheel of Destiny")) {
-		return;
-	}
+	// D6: Wheel of Destiny — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	auto ownerId = msg.get<uint32_t>();
 	g_game().playerOpenWheel(player->getID(), ownerId);
@@ -10457,10 +10418,7 @@ void ProtocolGame::parseWheelGemAction(NetworkMessage &msg) {
 		return;
 	}
 
-	// D6: Block Wheel of Destiny for Classic 7.4
-	if (isClassic74Blocked("Wheel of Destiny")) {
-		return;
-	}
+	// D6: Wheel of Destiny — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	g_game().playerWheelGemAction(player->getID(), msg);
 }
@@ -10470,10 +10428,7 @@ void ProtocolGame::sendOpenWheelWindow(uint32_t ownerId) {
 		return;
 	}
 
-	// D6: Block Wheel of Destiny for Classic 7.4
-	if (isClassic74Blocked("Wheel of Destiny")) {
-		return;
-	}
+	// D6: Wheel of Destiny — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	NetworkMessage msg;
 	player->wheel().sendOpenWheelWindow(msg, ownerId);
@@ -10485,10 +10440,7 @@ void ProtocolGame::parseSaveWheel(NetworkMessage &msg) {
 		return;
 	}
 
-	// D6: Block Wheel of Destiny for Classic 7.4
-	if (isClassic74Blocked("Wheel of Destiny")) {
-		return;
-	}
+	// D6: Wheel of Destiny — KOREKTA 2026-03-18: odblokowane dla Classic 7.4
 
 	g_game().playerSaveWheel(player->getID(), msg);
 }

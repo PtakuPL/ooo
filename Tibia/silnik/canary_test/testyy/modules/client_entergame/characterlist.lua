@@ -15,8 +15,15 @@ local autoReconnectButton
 local autoReconnectEvent
 local lastLogout = 0
 
+local function isPlayerMode()
+    if g_game and g_game.isPlayerMode then
+        return g_game.isPlayerMode()
+    end
+    return CLIENT_LOCKED
+end
+
 local function ensureSelectedCharacterAllowed(charInfo)
-    if not CLIENT_LOCKED then
+    if not isPlayerMode() then
         return true
     end
 
@@ -96,7 +103,7 @@ local function tryLogin(charInfo, tries)
     })
 
     -- B5: Ticket flow — przy CLIENT_LOCKED żądamy ticketu HMAC przed połączeniem
-    if CLIENT_LOCKED and EnterGame and EnterGame.requestTicket then
+    if isPlayerMode() and EnterGame and EnterGame.requestTicket then
         EnterGame.requestTicket(charInfo)
     else
         -- FIX54: Standardowe połączenie (bez ticket flow) — użyj legacySessionKey (account\npassword)
@@ -401,6 +408,15 @@ function CharacterList.create(characters, account, otui)
         widget.worldPort = characterInfo.worldPort
         widget.worldId = characterInfo.worldId
 
+        -- OTC-014: Pokaż liczbę graczy online przy nazwie świata
+        if characterInfo.onlinePlayers and characterInfo.onlinePlayers > 0 then
+            local worldWidget = widget:getChildById('worldName')
+            if worldWidget then
+                local currentText = worldWidget:getText()
+                worldWidget:setText(currentText .. " [" .. characterInfo.onlinePlayers .. " online]")
+            end
+        end
+
         connect(widget, {
             onDoubleClick = function()
                 CharacterList.doLogin()
@@ -408,7 +424,11 @@ function CharacterList.create(characters, account, otui)
             end
         })
 
+        -- LK-017: OTC_CHARACTER_HINT env var takes priority over last-used-character
+        local characterHint = os.getenv and os.getenv("OTC_CHARACTER_HINT") or nil
         if i == 1 or
+            (characterHint and characterHint ~= "" and widget.characterName == characterHint) or
+            (not characterHint or characterHint == "") and
             (g_settings.get('last-used-character') == widget.characterName and g_settings.get('last-used-world') ==
                 widget.worldName) then
             focusLabel = widget

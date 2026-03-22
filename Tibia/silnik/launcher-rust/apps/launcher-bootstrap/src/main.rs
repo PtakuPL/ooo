@@ -168,7 +168,6 @@ fn run() -> Result<(), String> {
     let client = reqwest::blocking::Client::builder()
         .user_agent(format!("RedDaxe-Installer/{BOOTSTRAP_VERSION}"))
         .timeout(std::time::Duration::from_secs(120))
-        .danger_accept_invalid_certs(true)
         .build()
         .map_err(|e| format!("{}: {e}", s.error_http_client))?;
 

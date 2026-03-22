@@ -22,7 +22,13 @@ $isLocal = in_array($clientIp, ['127.0.0.1', '::1', 'localhost'], true)
         || str_starts_with($clientIp, '192.168.');
 
 $dashToken = trim((string)($ENV['DASHBOARD_TOKEN'] ?? ''));
-$givenToken = trim((string)($_GET['token'] ?? ''));
+// SEC-01 FIX: Accept token from Authorization header (preferred) or GET param (fallback for browser)
+$authHeader = trim((string)($_SERVER['HTTP_AUTHORIZATION'] ?? ''));
+if (str_starts_with($authHeader, 'Bearer ')) {
+    $givenToken = trim(substr($authHeader, 7));
+} else {
+    $givenToken = trim((string)($_GET['token'] ?? ''));
+}
 
 if (!$isLocal && ($dashToken === '' || !hash_equals($dashToken, $givenToken))) {
     http_response_code(403);

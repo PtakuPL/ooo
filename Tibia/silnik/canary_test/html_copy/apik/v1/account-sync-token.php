@@ -105,14 +105,16 @@ $metaJson = json_encode([
 
 $inserted = false;
 $syncToken = '';
+$verifier = bin2hex(random_bytes(32));
+$verifierHash = hash('sha256', $verifier);
 for ($attempt = 0; $attempt < 3; $attempt++) {
     $syncToken = bin2hex(random_bytes(32));
     try {
         $stmt = $apiDb->prepare(
-            "INSERT INTO account_sync_tokens (token, account_id, source, target, expires_at, metadata_json)
-             VALUES (?, ?, ?, ?, ?, ?)"
+            "INSERT INTO account_sync_tokens (token, account_id, source, target, expires_at, metadata_json, verifier_hash)
+             VALUES (?, ?, ?, ?, ?, ?, ?)"
         );
-        $ok = $stmt->execute([$syncToken, $accountId, $source, $target, $expiresAt, $metaJson]);
+        $ok = $stmt->execute([$syncToken, $accountId, $source, $target, $expiresAt, $metaJson, $verifierHash]);
         if ($ok) {
             $inserted = true;
             break;
@@ -149,12 +151,15 @@ logTicketEvent('account.sync_token.issued', [
 
 $consumeUrl = null;
 if ($target === 'www') {
-    $consumeUrl = buildPublicBaseUrl($ENV) . '/account/sync-login?syncToken=' . urlencode($syncToken);
+    // SEC-P2-001: Token is NOT in the URL — launcher puts it in fragment hash.
+    // This prevents leakage via server logs, browser history, and Referer headers.
+    $consumeUrl = buildPublicBaseUrl($ENV) . '/account/sync-login';
 }
 
 json_out([
     'ok' => true,
     'syncToken' => $syncToken,
+    'verifier' => $verifier,
     'source' => $source,
     'target' => $target,
     'expiresAt' => $expiresAt,

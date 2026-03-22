@@ -8,7 +8,7 @@
 use tauri::State;
 use semver::Version;
 use std::collections::BTreeSet;
-use std::path::Path;
+use std::path::{Path, PathBuf};
 
 use common_models::api_responses::{ErrorReportRequest, LaunchTokenRequest};
 use common_models::dto::*;
@@ -28,6 +28,7 @@ use launcher_core::repair::diagnose_installation;
 use launcher_core::serverlist_sync;
 use launcher_core::state as core_state;
 
+use crate::session_store;
 use crate::state::AppState;
 
 // ─────────────────────────────────────────────
@@ -202,6 +203,121 @@ fn run_preflight_for_launch(client_dir: &Path, launcher_data: &Path) -> Result<(
     ensure_path_writable(launcher_data, "launcher_data_dir")?;
     let _ = ensure_free_space(client_dir, "client_dir", PREFLIGHT_MIN_LAUNCH_FREE_BYTES)?;
     Ok(())
+}
+
+fn load_stored_launcher_session_key(launcher_data: &Path) -> Result<String, String> {
+    session_store::load_session_key(launcher_data)?
+        .ok_or_else(|| "Brak sessionKey launchera.".to_string())
+}
+
+fn store_launcher_session_key(launcher_data: &Path, session_key: &str) -> Result<String, String> {
+    session_store::store_session_key(launcher_data, session_key)
+}
+
+fn clear_stored_launcher_session_key(launcher_data: &Path) -> Result<(), String> {
+    session_store::clear_session_key(launcher_data)
+}
+
+fn should_clear_stored_session(error: &str) -> bool {
+    let lower = error.to_ascii_lowercase();
+    [
+        "invalid_session",
+        "expired_session",
+        "missing sessionkey",
+        "missing_session_key",
+        "invalid or expired session",
+        "session expired",
+    ]
+    .iter()
+    .any(|needle| lower.contains(needle))
+}
+
+fn normalize_profile_mode(mode: &str) -> Result<&'static str, String> {
+    match mode.trim().to_ascii_lowercase().as_str() {
+        "all" => Ok("all"),
+        "classic74" => Ok("classic74"),
+        "modern" => Ok("modern"),
+        _ => Err("Nieprawidlowy tryb profilu. Dozwolone: all, classic74, modern".to_string()),
+    }
+}
+
+fn normalize_launch_mode(mode: Option<&str>) -> Result<Option<&'static str>, String> {
+    let Some(raw_mode) = mode else {
+        return Ok(None);
+    };
+    match normalize_profile_mode(raw_mode)? {
+        "classic74" => Ok(Some("classic74")),
+        "modern" => Ok(Some("modern")),
+        _ => Err("Tryb launchera musi byc konkretny: classic74 albo modern.".to_string()),
+    }
+}
+
+fn build_launcher_account_context_response(ctx: &serde_json::Value) -> serde_json::Value {
+    let account_name = ctx
+        .get("account")
+        .and_then(|a| a.get("name"))
+        .and_then(|v| v.as_str())
+        .unwrap_or("")
+        .to_string();
+    let account_email = ctx
+        .get("account")
+        .and_then(|a| a.get("email"))
+        .and_then(|v| v.as_str())
+        .unwrap_or("")
+        .trim()
+        .to_lowercase();
+
+    let world_count = ctx
+        .get("worlds")
+        .and_then(|w| w.as_array())
+        .map(|arr| arr.len())
+        .unwrap_or(0);
+
+    let counts_obj = ctx.get("counts").and_then(|c| c.as_object());
+    let count_all = counts_obj
+        .and_then(|c| c.get("all"))
+        .and_then(|v| v.as_u64())
+        .unwrap_or(0) as usize;
+    let count_classic = counts_obj
+        .and_then(|c| c.get("classic74"))
+        .and_then(|v| v.as_u64())
+        .unwrap_or(0) as usize;
+    let count_modern = counts_obj
+        .and_then(|c| c.get("modern"))
+        .and_then(|v| v.as_u64())
+        .unwrap_or(0) as usize;
+    let count_unknown = counts_obj
+        .and_then(|c| c.get("unknown"))
+        .and_then(|v| v.as_u64())
+        .unwrap_or(0) as usize;
+
+    let session_game_mode = ctx
+        .get("session")
+        .and_then(|s| s.get("gameMode"))
+        .and_then(|v| v.as_str())
+        .unwrap_or("all")
+        .to_string();
+    let session_expires_at = ctx
+        .get("session")
+        .and_then(|s| s.get("expiresAt"))
+        .and_then(|v| v.as_u64())
+        .unwrap_or(0);
+
+    serde_json::json!({
+        "ok": true,
+        "accountName": account_name,
+        "email": account_email,
+        "worldCount": world_count,
+        "characterCount": count_all,
+        "counts": {
+            "all": count_all,
+            "classic74": count_classic,
+            "modern": count_modern,
+            "unknown": count_unknown
+        },
+        "gameMode": session_game_mode,
+        "sessionExpiresAt": session_expires_at
+    })
 }
 
 // ─────────────────────────────────────────────
@@ -730,7 +846,8 @@ async fn repair_tampered_critical_files_inner(
 pub async fn launch_game(
     state: State<'_, AppState>,
     email: Option<String>,
-    password: Option<String>,
+    character_hint: Option<String>,
+    game_mode: Option<String>,
 ) -> Result<String, String> {
     let (api_url, channel, client_dir, launcher_data, launcher_version, dev_mode) = {
         let g = state.inner.lock().map_err(|e| e.to_string())?;
@@ -762,6 +879,8 @@ pub async fn launch_game(
         .as_deref()
         .unwrap_or("unknown")
         .to_string();
+    let session_token = load_stored_launcher_session_key(&launcher_data)?;
+    let requested_launch_mode = normalize_launch_mode(game_mode.as_deref())?;
 
     // Pobierz token
     let api = ApiClient::new(ApiClientConfig {
@@ -770,6 +889,13 @@ pub async fn launch_game(
         ..Default::default()
     })
     .map_err(|e| e.to_string())?;
+
+    if let Some(mode) = requested_launch_mode {
+        api.switch_account_profile(&session_token, mode)
+            .await
+            .map_err(|e| format!("ACCOUNT_PROFILE_SWITCH_FAILED: {e}"))?;
+    }
+
     let token_req = LaunchTokenRequest {
         launcher_version: launcher_version.clone(),
         files_hash,
@@ -802,10 +928,17 @@ pub async fn launch_game(
             extra_env.push(("OTC_ACCOUNT".into(), e.clone()));
         }
     }
-    if let Some(ref p) = password {
-        if !p.is_empty() {
-            extra_env.push(("OTC_PASSWORD".into(), p.clone()));
+    extra_env.push(("OTC_SESSION_TOKEN".into(), session_token));
+
+    if let Some(ref hint) = character_hint {
+        let trimmed = hint.trim();
+        if !trimmed.is_empty() && trimmed.len() <= 64 {
+            extra_env.push(("OTC_CHARACTER_HINT".into(), trimmed.to_string()));
         }
+    }
+
+    if let Some(mode) = requested_launch_mode {
+        extra_env.push(("OTC_GAME_MODE".into(), mode.to_string()));
     }
 
     let config = LaunchConfig {
@@ -1020,20 +1153,34 @@ fn pending_account_sync_path(launcher_data: &Path) -> std::path::PathBuf {
     launcher_data.join("pending_account_sync_token.txt")
 }
 
-fn read_pending_account_sync_token(launcher_data: &Path) -> Option<String> {
+fn read_pending_account_sync_token(launcher_data: &Path) -> Option<(String, Option<String>)> {
     let path = pending_account_sync_path(launcher_data);
-    let token = std::fs::read_to_string(path).ok()?;
-    let trimmed = token.trim();
-    if trimmed.len() == 64 && trimmed.chars().all(|c| c.is_ascii_hexdigit()) {
-        Some(trimmed.to_ascii_lowercase())
-    } else {
-        None
+    let content = std::fs::read_to_string(path).ok()?;
+    let mut lines = content.lines();
+    let token = lines.next()?.trim().to_string();
+    if token.len() != 64 || !token.chars().all(|c| c.is_ascii_hexdigit()) {
+        return None;
     }
+    let verifier = lines.next().map(|v| v.trim().to_string()).filter(|v| {
+        v.len() == 64 && v.chars().all(|c| c.is_ascii_hexdigit())
+    });
+    Some((token.to_ascii_lowercase(), verifier.map(|v| v.to_ascii_lowercase())))
 }
 
 fn clear_pending_account_sync_token(launcher_data: &Path) {
     let path = pending_account_sync_path(launcher_data);
     let _ = std::fs::remove_file(path);
+}
+
+fn normalize_website_redirect_path(redirect_path: &str) -> Result<String, String> {
+    let trimmed = redirect_path.trim();
+    if trimmed.is_empty() {
+        return Err("Brak redirect path.".to_string());
+    }
+    if !trimmed.starts_with('/') || trimmed.starts_with("//") {
+        return Err("Redirect musi zaczynac sie od pojedynczego '/'.".to_string());
+    }
+    Ok(trimmed.to_string())
 }
 
 fn should_clear_account_sync_error(error: &str) -> bool {
@@ -1048,30 +1195,14 @@ fn should_clear_account_sync_error(error: &str) -> bool {
     .any(|needle| error.contains(needle))
 }
 
-#[tauri::command]
-pub async fn build_create_character_url(
-    state: State<'_, AppState>,
-    session_key: String,
-    mode: String,
+async fn build_www_sync_url_payload(
+    api_url: String,
+    dev_mode: bool,
+    launcher_data: PathBuf,
+    redirect_path: &str,
 ) -> Result<serde_json::Value, String> {
-    let safe_mode = match mode.trim().to_ascii_lowercase().as_str() {
-        "classic74" => "classic74",
-        "modern" => "modern",
-        _ => return Err("Nieprawidłowy tryb. Dozwolone: classic74, modern".to_string()),
-    };
-
-    let trimmed_session_key = session_key.trim();
-    if trimmed_session_key.is_empty() {
-        return Err("Brak sessionKey launchera.".to_string());
-    }
-    if trimmed_session_key.len() > 256 {
-        return Err("sessionKey jest zbyt długi.".to_string());
-    }
-
-    let (api_url, dev_mode) = {
-        let g = state.inner.lock().map_err(|e| e.to_string())?;
-        (g.api_base_url.clone(), g.dev_mode)
-    };
+    let safe_redirect = normalize_website_redirect_path(redirect_path)?;
+    let stored_session_key = load_stored_launcher_session_key(&launcher_data)?;
 
     let api = ApiClient::new(ApiClientConfig {
         base_url: api_url,
@@ -1081,7 +1212,7 @@ pub async fn build_create_character_url(
     .map_err(|e| e.to_string())?;
 
     let sync = api
-        .request_account_sync_token(trimmed_session_key, "launcher", "www")
+        .request_account_sync_token(&stored_session_key, "launcher", "www")
         .await
         .map_err(|e| format!("SYNC_TOKEN_REQUEST_FAILED: {e}"))?;
 
@@ -1090,13 +1221,24 @@ pub async fn build_create_character_url(
         .clone()
         .ok_or_else(|| "SYNC_TOKEN_CONSUME_URL_MISSING".to_string())?;
 
-    let redirect = format!("/account/createcharacter?source=launcher&mode={safe_mode}");
-    let final_url = append_query_param(&consume_url, "redirect", &redirect);
+    let verifier = sync
+        .verifier
+        .clone()
+        .ok_or_else(|| "SYNC_TOKEN_VERIFIER_MISSING".to_string())?;
+
+    // SEC-P2-001: token + verifier ida w hash, a redirect w query string.
+    let base_url = append_query_param(&consume_url, "redirect", &safe_redirect);
+    let final_url = format!(
+        "{}#t={}&v={}",
+        base_url,
+        percent_encode_component(&sync.sync_token),
+        percent_encode_component(&verifier),
+    );
 
     Ok(serde_json::json!({
         "ok": true,
         "url": final_url,
-        "mode": safe_mode,
+        "redirect": safe_redirect,
         "syncToken": sync.sync_token,
         "expiresAt": sync.expires_at,
         "consumeUrl": consume_url
@@ -1104,22 +1246,69 @@ pub async fn build_create_character_url(
 }
 
 #[tauri::command]
+pub async fn build_create_character_url(
+    state: State<'_, AppState>,
+    mode: String,
+) -> Result<serde_json::Value, String> {
+    let safe_mode = match mode.trim().to_ascii_lowercase().as_str() {
+        "classic74" => "classic74",
+        "modern" => "modern",
+        _ => return Err("Nieprawidłowy tryb. Dozwolone: classic74, modern".to_string()),
+    };
+
+    let (api_url, dev_mode, launcher_data) = {
+        let g = state.inner.lock().map_err(|e| e.to_string())?;
+        (
+            g.api_base_url.clone(),
+            g.dev_mode,
+            g.launcher_data_dir.clone(),
+        )
+    };
+    let redirect = format!("/account/createcharacter?source=launcher&mode={safe_mode}");
+    let mut payload = build_www_sync_url_payload(api_url, dev_mode, launcher_data, &redirect).await?;
+    if let Some(obj) = payload.as_object_mut() {
+        obj.insert("mode".to_string(), serde_json::Value::String(safe_mode.to_string()));
+    }
+    Ok(payload)
+}
+
+#[tauri::command]
+pub async fn build_website_sync_url(
+    state: State<'_, AppState>,
+    redirect_path: String,
+) -> Result<serde_json::Value, String> {
+    let (api_url, dev_mode, launcher_data) = {
+        let g = state.inner.lock().map_err(|e| e.to_string())?;
+        (
+            g.api_base_url.clone(),
+            g.dev_mode,
+            g.launcher_data_dir.clone(),
+        )
+    };
+    build_www_sync_url_payload(api_url, dev_mode, launcher_data, &redirect_path).await
+}
+
+#[tauri::command]
 pub async fn consume_pending_account_sync(
     state: State<'_, AppState>,
 ) -> Result<serde_json::Value, String> {
-    let (api_url, dev_mode, launcher_data, memory_token) = {
+    let (api_url, dev_mode, launcher_data, memory_token, memory_verifier) = {
         let g = state.inner.lock().map_err(|e| e.to_string())?;
         (
             g.api_base_url.clone(),
             g.dev_mode,
             g.launcher_data_dir.clone(),
             g.pending_account_sync_token.clone(),
+            g.pending_account_sync_verifier.clone(),
         )
     };
 
-    let file_token = read_pending_account_sync_token(&launcher_data);
-    let token = file_token.or(memory_token);
-    let Some(sync_token) = token else {
+    let file_sync = read_pending_account_sync_token(&launcher_data);
+    let (sync_token, verifier) = match file_sync {
+        Some((t, v)) => (Some(t), v),
+        None => (memory_token, memory_verifier),
+    };
+    let Some(sync_token) = sync_token else {
         return Ok(serde_json::json!({
             "ok": false,
             "pending": false
@@ -1139,20 +1328,22 @@ pub async fn consume_pending_account_sync(
     );
 
     match api
-        .consume_account_sync_token(&sync_token, "www", "launcher")
+        .consume_account_sync_token(&sync_token, "www", "launcher", verifier.as_deref())
         .await
     {
         Ok(resp) => {
+            store_launcher_session_key(&launcher_data, &resp.session.session_key)?;
             {
                 let mut g = state.inner.lock().map_err(|e| e.to_string())?;
                 g.pending_account_sync_token = None;
+                g.pending_account_sync_verifier = None;
             }
             clear_pending_account_sync_token(&launcher_data);
 
             Ok(serde_json::json!({
                 "ok": true,
                 "pending": true,
-                "sessionKey": resp.session.session_key,
+                "sessionStored": true,
                 "gameMode": resp.session.game_mode,
                 "sessionExpiresAt": resp.session.expires_at,
                 "accountId": resp.account.id,
@@ -1172,6 +1363,7 @@ pub async fn consume_pending_account_sync(
             if should_clear_account_sync_error(&err) {
                 let mut g = state.inner.lock().map_err(|e| e.to_string())?;
                 g.pending_account_sync_token = None;
+                g.pending_account_sync_verifier = None;
                 clear_pending_account_sync_token(&launcher_data);
             }
 
@@ -1183,16 +1375,88 @@ pub async fn consume_pending_account_sync(
 #[tauri::command]
 pub async fn refresh_launcher_account_context(
     state: State<'_, AppState>,
-    session_key: String,
 ) -> Result<serde_json::Value, String> {
-    let trimmed_session_key = session_key.trim();
-    if trimmed_session_key.is_empty() {
-        return Err("Brak sessionKey launchera.".to_string());
-    }
-    if trimmed_session_key.len() > 256 {
-        return Err("sessionKey jest zbyt długi.".to_string());
-    }
+    let (api_url, dev_mode, launcher_data) = {
+        let g = state.inner.lock().map_err(|e| e.to_string())?;
+        (
+            g.api_base_url.clone(),
+            g.dev_mode,
+            g.launcher_data_dir.clone(),
+        )
+    };
+    let stored_session_key = load_stored_launcher_session_key(&launcher_data)?;
 
+    let api = ApiClient::new(ApiClientConfig {
+        base_url: api_url,
+        dev_mode,
+        ..Default::default()
+    })
+    .map_err(|e| e.to_string())?;
+
+    let ctx = api
+        .fetch_account_context(&stored_session_key)
+        .await
+        .map_err(|e| {
+            let err = format!("ACCOUNT_CONTEXT_REFRESH_FAILED: {e}");
+            if should_clear_stored_session(&err) {
+                let _ = clear_stored_launcher_session_key(&launcher_data);
+            }
+            err
+        })?;
+
+    Ok(build_launcher_account_context_response(&ctx))
+}
+
+#[tauri::command]
+pub async fn switch_launcher_account_profile(
+    state: State<'_, AppState>,
+    game_mode: String,
+) -> Result<serde_json::Value, String> {
+    let safe_mode = normalize_profile_mode(&game_mode)?;
+
+    let (api_url, dev_mode, launcher_data) = {
+        let g = state.inner.lock().map_err(|e| e.to_string())?;
+        (
+            g.api_base_url.clone(),
+            g.dev_mode,
+            g.launcher_data_dir.clone(),
+        )
+    };
+    let stored_session_key = load_stored_launcher_session_key(&launcher_data)?;
+
+    let api = ApiClient::new(ApiClientConfig {
+        base_url: api_url,
+        dev_mode,
+        ..Default::default()
+    })
+    .map_err(|e| e.to_string())?;
+
+    api.switch_account_profile(&stored_session_key, safe_mode)
+        .await
+        .map_err(|e| {
+            let err = format!("ACCOUNT_PROFILE_SWITCH_FAILED: {e}");
+            if should_clear_stored_session(&err) {
+                let _ = clear_stored_launcher_session_key(&launcher_data);
+            }
+            err
+        })?;
+
+    let ctx = api
+        .fetch_account_context(&stored_session_key)
+        .await
+        .map_err(|e| format!("ACCOUNT_CONTEXT_REFRESH_FAILED: {e}"))?;
+
+    Ok(build_launcher_account_context_response(&ctx))
+}
+
+// ─────────────────────────────────────────────
+// LK-012: Fetch game profiles (public, no auth)
+// ─────────────────────────────────────────────
+
+#[tauri::command]
+pub async fn fetch_launcher_game_profiles(
+    state: State<'_, AppState>,
+) -> Result<serde_json::Value, String> {
     let (api_url, dev_mode) = {
         let g = state.inner.lock().map_err(|e| e.to_string())?;
         (g.api_base_url.clone(), g.dev_mode)
@@ -1205,76 +1469,12 @@ pub async fn refresh_launcher_account_context(
     })
     .map_err(|e| e.to_string())?;
 
-    let ctx = api
-        .fetch_account_context(trimmed_session_key)
+    let profiles = api
+        .fetch_game_profiles()
         .await
-        .map_err(|e| format!("ACCOUNT_CONTEXT_REFRESH_FAILED: {e}"))?;
+        .map_err(|e| format!("GAME_PROFILES_FETCH_FAILED: {e}"))?;
 
-    let account_name = ctx
-        .get("account")
-        .and_then(|a| a.get("name"))
-        .and_then(|v| v.as_str())
-        .unwrap_or("")
-        .to_string();
-    let account_email = ctx
-        .get("account")
-        .and_then(|a| a.get("email"))
-        .and_then(|v| v.as_str())
-        .unwrap_or("")
-        .trim()
-        .to_lowercase();
-
-    let world_count = ctx
-        .get("worlds")
-        .and_then(|w| w.as_array())
-        .map(|arr| arr.len())
-        .unwrap_or(0);
-
-    let counts_obj = ctx.get("counts").and_then(|c| c.as_object());
-    let count_all = counts_obj
-        .and_then(|c| c.get("all"))
-        .and_then(|v| v.as_u64())
-        .unwrap_or(0) as usize;
-    let count_classic = counts_obj
-        .and_then(|c| c.get("classic74"))
-        .and_then(|v| v.as_u64())
-        .unwrap_or(0) as usize;
-    let count_modern = counts_obj
-        .and_then(|c| c.get("modern"))
-        .and_then(|v| v.as_u64())
-        .unwrap_or(0) as usize;
-    let count_unknown = counts_obj
-        .and_then(|c| c.get("unknown"))
-        .and_then(|v| v.as_u64())
-        .unwrap_or(0) as usize;
-
-    let session_game_mode = ctx
-        .get("session")
-        .and_then(|s| s.get("gameMode"))
-        .and_then(|v| v.as_str())
-        .unwrap_or("all")
-        .to_string();
-    let session_expires_at = ctx
-        .get("session")
-        .and_then(|s| s.get("expiresAt"))
-        .and_then(|v| v.as_u64())
-        .unwrap_or(0);
-
-    Ok(serde_json::json!({
-        "ok": true,
-        "accountName": account_name,
-        "email": account_email,
-        "worldCount": world_count,
-        "characterCount": count_all,
-        "counts": {
-            "all": count_all,
-            "classic74": count_classic,
-            "modern": count_modern,
-            "unknown": count_unknown
-        },
-        "gameMode": session_game_mode,
-        "sessionExpiresAt": session_expires_at
-    }))
+    Ok(profiles)
 }
 
 #[tauri::command]
@@ -1406,13 +1606,8 @@ pub async fn login_launcher_account(
         );
         return Err("ACCOUNT_LOGIN_FAILED: Brak sessionkey w odpowiedzi login.php".to_string());
     }
+    store_launcher_session_key(&launcher_data, &session_key)?;
 
-    let legacy_session_key = login_resp
-        .get("session")
-        .and_then(|s| s.get("key"))
-        .and_then(|v| v.as_str())
-        .unwrap_or("")
-        .to_string();
     let game_mode = login_resp
         .get("session")
         .and_then(|s| s.get("gameMode"))
@@ -1434,8 +1629,7 @@ pub async fn login_launcher_account(
 
     Ok(serde_json::json!({
         "ok": true,
-        "sessionKey": session_key,
-        "legacySessionKey": legacy_session_key,
+        "sessionStored": true,
         "gameMode": game_mode,
         "email": canonical_email,
         "worldCount": world_count,
@@ -1586,13 +1780,11 @@ pub async fn register_launcher_account(
                 .unwrap_or("")
                 .trim()
                 .to_string();
+            let auto_login = !session_key.is_empty();
+            if auto_login {
+                store_launcher_session_key(&launcher_data, &session_key)?;
+            }
 
-            let legacy_session_key = login_resp
-                .get("session")
-                .and_then(|s| s.get("key"))
-                .and_then(|v| v.as_str())
-                .unwrap_or("")
-                .to_string();
             let game_mode = login_resp
                 .get("session")
                 .and_then(|s| s.get("gameMode"))
@@ -1617,9 +1809,8 @@ pub async fn register_launcher_account(
                 "accountId": account_id,
                 "accountName": returned_account_name,
                 "email": returned_email,
-                "autoLogin": !session_key.is_empty(),
-                "sessionKey": session_key,
-                "legacySessionKey": legacy_session_key,
+                "autoLogin": auto_login,
+                "sessionStored": auto_login,
                 "gameMode": game_mode,
                 "worldCount": world_count,
                 "characterCount": character_count
@@ -1634,6 +1825,20 @@ pub async fn register_launcher_account(
             "autoLoginError": format!("ACCOUNT_AUTOLOGIN_FAILED: {err}")
         })),
     }
+}
+
+#[tauri::command]
+pub async fn clear_launcher_session(
+    state: State<'_, AppState>,
+) -> Result<serde_json::Value, String> {
+    let launcher_data = {
+        let g = state.inner.lock().map_err(|e| e.to_string())?;
+        g.launcher_data_dir.clone()
+    };
+    clear_stored_launcher_session_key(&launcher_data)?;
+    Ok(serde_json::json!({
+        "ok": true
+    }))
 }
 
 // ─────────────────────────────────────────────
@@ -1696,6 +1901,40 @@ pub async fn get_installer_catalog(
         .fetch_installer_catalog(&channel)
         .await
         .map_err(|e| format!("Błąd pobierania katalogu: {e}"))?;
+
+    serde_json::to_value(&catalog).map_err(|e| e.to_string())
+}
+
+// ─────────────────────────────────────────────
+// LR-045: Client Pack Catalog
+// ─────────────────────────────────────────────
+
+#[tauri::command]
+pub async fn get_client_pack_catalog(
+    state: State<'_, AppState>,
+    profile: Option<String>,
+) -> Result<serde_json::Value, String> {
+    let (api_url, channel, dev_mode) = {
+        let guard = state.inner.lock().map_err(|e| e.to_string())?;
+        (
+            guard.api_base_url.clone(),
+            guard.channel.clone(),
+            guard.dev_mode,
+        )
+    };
+
+    let config = launcher_api::client::ApiClientConfig {
+        base_url: api_url,
+        dev_mode,
+        ..Default::default()
+    };
+    let client = ApiClient::new(config).map_err(|e| e.to_string())?;
+
+    let profile_str = profile.as_deref().unwrap_or("player");
+    let catalog = client
+        .fetch_client_pack_catalog(&channel, profile_str)
+        .await
+        .map_err(|e| format!("Błąd pobierania katalogu klienta: {e}"))?;
 
     serde_json::to_value(&catalog).map_err(|e| e.to_string())
 }

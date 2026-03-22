@@ -60,6 +60,12 @@ $ipHash = hashClientIp($clientIp, $ENV);
 // F1: multi-DB — ticket_sessions is in API_DB
 $apiDb = getApiDb($ENV);
 
+// Rate limit: 10 per minute per session
+$rl = applyRateLimit($apiDb, 'profile_switch:session', hash('sha256', $sessionKey), 10, 60);
+if (!$rl['allowed']) {
+    profileSwitchError('rate_limited', 'Too many profile switch attempts. Try again later.', 429);
+}
+
 $now = time();
 $stmt = $apiDb->prepare(
     "SELECT session_key, account_id, expires_at

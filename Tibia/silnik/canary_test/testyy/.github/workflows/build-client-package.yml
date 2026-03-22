@@ -72,15 +72,16 @@ jobs:
         working-directory: ${{ env.CLIENT_SRC }}
         run: |
           cmake -S . -B build -G Ninja `
-            -DCMAKE_BUILD_TYPE=Release `
+            -DCMAKE_BUILD_TYPE=RelWithDebInfo `
             -DVCPKG_TARGET_TRIPLET=x64-windows-static `
+            -DVCPKG_OVERLAY_TRIPLETS="${{ github.workspace }}/${{ env.CLIENT_SRC }}/custom-triplets" `
             -DBUILD_STATIC_LIBRARY=ON `
             -DCMAKE_TOOLCHAIN_FILE="${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake" `
             -DCMAKE_MSVC_RUNTIME_LIBRARY="MultiThreaded"
 
       - name: Build
         working-directory: ${{ env.CLIENT_SRC }}
-        run: cmake --build build --config Release --parallel
+        run: cmake --build build --config RelWithDebInfo --parallel
 
       - name: Determine version
         id: version
@@ -128,14 +129,8 @@ jobs:
           [ -f otclientrc.lua ] && cp otclientrc.lua "$PKG/otclientrc.lua.default"
 
           # ── 5. Inject customizations ──
-          # 5a. init.lua: force CLIENT_LOCKED = true
-          if grep -q "CLIENT_LOCKED" "$PKG/init.lua"; then
-            sed -i 's/CLIENT_LOCKED\s*=\s*false/CLIENT_LOCKED = true/g' "$PKG/init.lua"
-            # R-02: Weryfikacja że sed zadziałał
-            if ! grep -q "CLIENT_LOCKED = true" "$PKG/init.lua"; then
-              echo "WARNING: sed did not enforce CLIENT_LOCKED = true — verify init.lua format"
-            fi
-          fi
+          # NOTE: CLIENT_LOCKED is now handled via getNativeClientLocked() in C++ —
+          # no sed needed. The customizations overlay provides the canonical init.lua.
 
           # 5b. Overlay custom modules from customizations/ directory
           # This directory contains our server-specific overrides:
@@ -166,6 +161,31 @@ jobs:
           find "$PKG" -name "CMakeLists.txt" -delete 2>/dev/null || true
           find "$PKG" \( -name "*.cpp" -o -name "*.h" -o -name "*.hpp" \) -delete 2>/dev/null || true
 
+          # ── 6b. Remove dev/operator files not needed by player ──
+          rm -f "$PKG/start_dev.bat" "$PKG/start_dev.sh" 2>/dev/null || true
+          rm -f "$PKG/start_player.bat" 2>/dev/null || true
+          rm -f "$PKG/otclientrc.lua" 2>/dev/null || true
+          rm -f "$PKG/serverlist.json" "$PKG/init_serverlist.lua" 2>/dev/null || true
+          rm -rf "$PKG/data/styles.bak" 2>/dev/null || true
+          # Remove any leftover shell/batch scripts
+          find "$PKG" -maxdepth 1 \( -name "*.sh" -o -name "*.bat" -o -name "*.cmd" \) -delete 2>/dev/null || true
+          echo "  → dev files stripped"
+
+          # ── 6c. Trim locales — keep only base languages, rest downloaded on-demand ──
+          LOCALE_DIR="$PKG/data/locales"
+          if [ -d "$LOCALE_DIR" ]; then
+            KEEP_LOCALES="en.lua|pl.lua|de.lua|pt.lua|game_i18n_en.lua|game_i18n_pl.lua|game_i18n_de.lua|game_i18n_pt.lua|game_i18n_en_compact.lua|game_i18n_pl_compact.lua|game_i18n_de_compact.lua|game_i18n_pt_compact.lua|disabled"
+            BEFORE=$(find "$LOCALE_DIR" -type f | wc -l)
+            find "$LOCALE_DIR" -maxdepth 1 -type f | while read -r f; do
+              BASE=$(basename "$f")
+              if ! echo "$BASE" | grep -qE "^($KEEP_LOCALES)$"; then
+                rm -f "$f"
+              fi
+            done
+            AFTER=$(find "$LOCALE_DIR" -type f | wc -l)
+            echo "  → locales trimmed: $BEFORE → $AFTER files"
+          fi
+
           # ── 7. Create empty dirs for user data ──
           mkdir -p "$PKG/records"
 
@@ -184,8 +204,8 @@ jobs:
           # Must have executable
           [ -f "$PKG/otclient.exe" ] || { echo "FAIL: missing otclient.exe"; exit 1; }
 
-          # Must have init.lua with CLIENT_LOCKED = true
-          grep -q "CLIENT_LOCKED = true" "$PKG/init.lua" || { echo "FAIL: CLIENT_LOCKED not true"; exit 1; }
+          # Must have init.lua wired to native runtime policy
+          grep -q "CLIENT_LOCKED = getNativeClientLocked()" "$PKG/init.lua" || { echo "FAIL: init.lua is not wired to native client lock policy"; exit 1; }
 
           # Must NOT have source files
           SRC_COUNT=$(find "$PKG" \( -name "*.cpp" -o -name "*.h" -o -name "*.hpp" \) | wc -l)
@@ -201,7 +221,19 @@ jobs:
           # Must have data/
           [ -d "$PKG/data" ] || { echo "FAIL: missing data/"; exit 1; }
 
-          echo "All integrity checks passed"
+          # Must NOT have dev files
+          DEV_FILES=$(find "$PKG" -maxdepth 1 \( -name "start_dev*" -o -name "otclientrc*" -o -name "serverlist.json" -o -name "init_serverlist*" -o -name "*.sh" -o -name "*.bat" \) | wc -l)
+          [ "$DEV_FILES" -eq 0 ] || { echo "FAIL: found $DEV_FILES dev files in player package"; find "$PKG" -maxdepth 1 \( -name "start_dev*" -o -name "otclientrc*" -o -name "serverlist.json" -o -name "init_serverlist*" -o -name "*.sh" -o -name "*.bat" \); exit 1; }
+
+          # DLL count check — target is zero-DLL (GHA-007)
+          DLL_COUNT=$(find "$PKG" -maxdepth 1 -name "*.dll" | wc -l)
+          echo "DLL count: $DLL_COUNT"
+          if [ "$DLL_COUNT" -ne 0 ]; then
+            echo "::warning::Found $DLL_COUNT DLLs in package — zero-DLL target not yet met (see GHA-007)"
+            find "$PKG" -maxdepth 1 -name "*.dll" -exec ls -lh {} \;
+          fi
+
+          echo "All integrity checks passed (Windows)"
 
       - name: Package lint (allowlist/denylist + secret scan)
         shell: bash
@@ -242,7 +274,7 @@ jobs:
 
           echo "[LINT] Secret pattern scan" | tee -a "$REPORT"
           if grep -RInE --binary-files=without-match \
-            '(TICKET_SECRET|DB_PASS|MYSQL_PASSWORD|PRIVATE KEY|BEGIN [A-Z ]*PRIVATE KEY|PAYPAL_CLIENT_SECRET|GOOGLE_CLIENT_SECRET|FACEBOOK_CLIENT_SECRET|STEAM_API_KEY|HMAC_SECRET|SIGNING_KEY)' \
+            '(TICKET_SECRET|DB_PASS|MYSQL_PASSWORD|PRIVATE KEY|BEGIN [A-Z ]*PRIVATE KEY|PAYPAL_CLIENT_SECRET|GOOGLE_CLIENT_SECRET|FACEBOOK_CLIENT_SECRET|STEAM_API_KEY|HMAC_SECRET|SIGNING_KEY|AWS_SECRET|API_KEY[[:space:]]*=)' \
             "$PKG" >> "$REPORT"; then
             echo "FAIL: secret-like content found in package" | tee -a "$REPORT"
             exit 1
@@ -267,18 +299,17 @@ jobs:
           echo "  \"generatedAt\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"," >> "$MANIFEST"
           echo "  \"files\": [" >> "$MANIFEST"
 
-          FIRST=true
-          find "$PKG" -type f | sort | while read -r filepath; do
+          SEP=""
+          while IFS= read -r filepath; do
             REL="${filepath#$PKG/}"
             HASH=$(sha256sum "$filepath" | cut -d' ' -f1)
             SIZE=$(stat -c%s "$filepath")
-            if [ "$FIRST" = true ]; then
-              FIRST=false
-            else
+            if [ -n "$SEP" ]; then
               echo "," >> "$MANIFEST"
             fi
+            SEP=","
             printf '    {"path": "%s", "sha256": "%s", "size": %s}' "$REL" "$HASH" "$SIZE" >> "$MANIFEST"
-          done
+          done < <(find "$PKG" -type f | sort)
 
           echo "" >> "$MANIFEST"
           echo "  ]" >> "$MANIFEST"
@@ -308,11 +339,13 @@ jobs:
   # ─────────────────────────────────────────────
   linux:
     name: Package (Linux x64)
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
 
       - name: Install system dependencies
         run: |
@@ -331,12 +364,6 @@ jobs:
             libasound2-dev \
             libudev-dev
 
-      - name: Setup vcpkg
-        uses: lukka/run-vcpkg@v11
-        with:
-          vcpkgDirectory: '${{ github.workspace }}/vcpkg'
-          vcpkgGitCommitId: 'cf6692675e04c036e21f26d64ae5fa3c8485f224'
-
       - name: Export GitHub Actions cache variables
         uses: actions/github-script@v7
         with:
@@ -344,19 +371,25 @@ jobs:
             core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
             core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
 
+      - name: Setup vcpkg
+        uses: lukka/run-vcpkg@v11
+        with:
+          vcpkgDirectory: '${{ github.workspace }}/vcpkg'
+          vcpkgGitCommitId: '5b1214315250939257ef5d62ecdcbca18cf4fb1c'
+
       - name: Configure CMake
         working-directory: ${{ env.CLIENT_SRC }}
         env:
           VCPKG_BINARY_SOURCES: "clear;x-gha,readwrite"
         run: |
           cmake -S . -B build -G Ninja \
-            -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_BUILD_TYPE=RelWithDebInfo \
             -DVCPKG_TARGET_TRIPLET=x64-linux \
             -DCMAKE_TOOLCHAIN_FILE="${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake"
 
       - name: Build
         working-directory: ${{ env.CLIENT_SRC }}
-        run: cmake --build build --config Release --parallel
+        run: cmake --build build --config RelWithDebInfo --parallel
 
       - name: Determine version
         id: version
@@ -401,10 +434,7 @@ jobs:
           [ -f otclientrc.lua ] && cp otclientrc.lua "$PKG/otclientrc.lua.default"
 
           # ── 5. Inject customizations ──
-          # 5a. init.lua: force CLIENT_LOCKED = true
-          if grep -q "CLIENT_LOCKED" "$PKG/init.lua"; then
-            sed -i 's/CLIENT_LOCKED\s*=\s*false/CLIENT_LOCKED = true/g' "$PKG/init.lua"
-          fi
+          # NOTE: CLIENT_LOCKED handled via getNativeClientLocked() — no sed needed.
 
           # 5b. Overlay custom modules from customizations/ directory
           CUSTOM_DIR="customizations"
@@ -431,6 +461,30 @@ jobs:
           find "$PKG" -name "CMakeLists.txt" -delete 2>/dev/null || true
           find "$PKG" \( -name "*.cpp" -o -name "*.h" -o -name "*.hpp" \) -delete 2>/dev/null || true
 
+          # ── 6b. Remove dev/operator files not needed by player ──
+          rm -f "$PKG/start_dev.bat" "$PKG/start_dev.sh" 2>/dev/null || true
+          rm -f "$PKG/start_player.bat" 2>/dev/null || true
+          rm -f "$PKG/otclientrc.lua" 2>/dev/null || true
+          rm -f "$PKG/serverlist.json" "$PKG/init_serverlist.lua" 2>/dev/null || true
+          rm -rf "$PKG/data/styles.bak" 2>/dev/null || true
+          find "$PKG" -maxdepth 1 \( -name "*.sh" -o -name "*.bat" -o -name "*.cmd" \) -delete 2>/dev/null || true
+          echo "  → dev files stripped"
+
+          # ── 6c. Trim locales — keep only base languages ──
+          LOCALE_DIR="$PKG/data/locales"
+          if [ -d "$LOCALE_DIR" ]; then
+            KEEP_LOCALES="en.lua|pl.lua|de.lua|pt.lua|game_i18n_en.lua|game_i18n_pl.lua|game_i18n_de.lua|game_i18n_pt.lua|game_i18n_en_compact.lua|game_i18n_pl_compact.lua|game_i18n_de_compact.lua|game_i18n_pt_compact.lua|disabled"
+            BEFORE=$(find "$LOCALE_DIR" -type f | wc -l)
+            find "$LOCALE_DIR" -maxdepth 1 -type f | while read -r f; do
+              BASE=$(basename "$f")
+              if ! echo "$BASE" | grep -qE "^($KEEP_LOCALES)$"; then
+                rm -f "$f"
+              fi
+            done
+            AFTER=$(find "$LOCALE_DIR" -type f | wc -l)
+            echo "  → locales trimmed: $BEFORE → $AFTER files"
+          fi
+
           # ── 7. Create empty dirs for user data ──
           mkdir -p "$PKG/records"
 
@@ -446,7 +500,7 @@ jobs:
           PKG="package"
 
           [ -f "$PKG/otclient" ] || { echo "FAIL: missing otclient"; exit 1; }
-          grep -q "CLIENT_LOCKED = true" "$PKG/init.lua" || { echo "FAIL: CLIENT_LOCKED not true"; exit 1; }
+          grep -q "CLIENT_LOCKED = getNativeClientLocked()" "$PKG/init.lua" || { echo "FAIL: init.lua is not wired to native client lock policy"; exit 1; }
 
           SRC_COUNT=$(find "$PKG" \( -name "*.cpp" -o -name "*.h" -o -name "*.hpp" \) | wc -l)
           [ "$SRC_COUNT" -eq 0 ] || { echo "FAIL: found $SRC_COUNT source files"; exit 1; }
@@ -457,7 +511,11 @@ jobs:
           [ -d "$PKG/modules" ] || { echo "FAIL: missing modules/"; exit 1; }
           [ -d "$PKG/data" ] || { echo "FAIL: missing data/"; exit 1; }
 
-          echo "All integrity checks passed"
+          # Must NOT have dev files
+          DEV_FILES=$(find "$PKG" -maxdepth 1 \( -name "start_dev*" -o -name "otclientrc*" -o -name "serverlist.json" -o -name "init_serverlist*" -o -name "*.sh" -o -name "*.bat" \) | wc -l)
+          [ "$DEV_FILES" -eq 0 ] || { echo "FAIL: found $DEV_FILES dev files in player package"; exit 1; }
+
+          echo "All integrity checks passed (Linux)"
 
       - name: Package lint (allowlist/denylist + secret scan)
         working-directory: ${{ env.CLIENT_SRC }}
@@ -497,7 +555,7 @@ jobs:
 
           echo "[LINT] Secret pattern scan" | tee -a "$REPORT"
           if grep -RInE --binary-files=without-match \
-            '(TICKET_SECRET|DB_PASS|MYSQL_PASSWORD|PRIVATE KEY|BEGIN [A-Z ]*PRIVATE KEY|PAYPAL_CLIENT_SECRET|GOOGLE_CLIENT_SECRET|FACEBOOK_CLIENT_SECRET|STEAM_API_KEY|HMAC_SECRET|SIGNING_KEY)' \
+            '(TICKET_SECRET|DB_PASS|MYSQL_PASSWORD|PRIVATE KEY|BEGIN [A-Z ]*PRIVATE KEY|PAYPAL_CLIENT_SECRET|GOOGLE_CLIENT_SECRET|FACEBOOK_CLIENT_SECRET|STEAM_API_KEY|HMAC_SECRET|SIGNING_KEY|AWS_SECRET|API_KEY[[:space:]]*=)' \
             "$PKG" >> "$REPORT"; then
             echo "FAIL: secret-like content found in package" | tee -a "$REPORT"
             exit 1
@@ -521,18 +579,17 @@ jobs:
           echo "  \"generatedAt\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"," >> "$MANIFEST"
           echo "  \"files\": [" >> "$MANIFEST"
 
-          FIRST=true
-          find "$PKG" -type f | sort | while read -r filepath; do
+          SEP=""
+          while IFS= read -r filepath; do
             REL="${filepath#$PKG/}"
             HASH=$(sha256sum "$filepath" | cut -d' ' -f1)
             SIZE=$(stat -c%s "$filepath")
-            if [ "$FIRST" = true ]; then
-              FIRST=false
-            else
+            if [ -n "$SEP" ]; then
               echo "," >> "$MANIFEST"
             fi
+            SEP=","
             printf '    {"path": "%s", "sha256": "%s", "size": %s}' "$REL" "$HASH" "$SIZE" >> "$MANIFEST"
-          done
+          done < <(find "$PKG" -type f | sort)
 
           echo "" >> "$MANIFEST"
           echo "  ]" >> "$MANIFEST"
@@ -634,3 +691,26 @@ jobs:
             artifacts/checksums.txt.sig.hex
             artifacts/**/*.sig
           retention-days: 90
+
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "Client ${{ github.ref_name }}"
+          body: |
+            ## OTClient ${{ github.ref_name }}
+
+
+
+            **Checksums:** See `checksums.txt` for SHA-256 verification.
+            **Signatures:** Ed25519 signatures attached (`.sig` files).
+          draft: true
+          prerelease: ${{ contains(github.ref_name, 'beta') || contains(github.ref_name, 'rc') }}
+          files: |
+            artifacts/**/*.zip
+            artifacts/**/*.tar.gz
+            artifacts/**/*.json
+            artifacts/checksums.txt
+            artifacts/checksums.txt.sig
+            artifacts/checksums.txt.sig.hex
+            artifacts/**/*.sig

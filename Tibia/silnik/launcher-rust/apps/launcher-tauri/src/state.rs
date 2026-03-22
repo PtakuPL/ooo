@@ -38,10 +38,15 @@ pub struct AppStateInner {
     pub config_path: PathBuf,
     /// Token jednorazowy przekazany z WWW -> launcher przy starcie procesu.
     pub pending_account_sync_token: Option<String>,
+    /// SEC-P2-001: PKCE-like verifier towarzyszący tokenowi.
+    pub pending_account_sync_verifier: Option<String>,
 }
 
 impl AppState {
-    pub fn new(pending_account_sync_token: Option<String>) -> Self {
+    pub fn new(
+        pending_account_sync_token: Option<String>,
+        pending_account_sync_verifier: Option<String>,
+    ) -> Self {
         let exe_dir = std::env::current_exe()
             .ok()
             .and_then(|p| p.parent().map(|d| d.to_path_buf()))
@@ -82,6 +87,7 @@ impl AppState {
                 config,
                 config_path,
                 pending_account_sync_token,
+                pending_account_sync_verifier,
             }),
         }
     }

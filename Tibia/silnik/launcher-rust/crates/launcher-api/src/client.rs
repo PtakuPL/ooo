@@ -338,6 +338,7 @@ impl ApiClient {
         sync_token: &str,
         source: &str,
         target: &str,
+        verifier: Option<&str>,
     ) -> Result<AccountSyncConsumeResponse, ApiError> {
         let url = self.url("account-sync-consume.php");
         tracing::info!(
@@ -347,12 +348,15 @@ impl ApiClient {
             target
         );
 
-        let payload = serde_json::json!({
+        let mut payload = serde_json::json!({
             "type": "account_sync_consume",
             "syncToken": sync_token,
             "source": source,
             "target": target,
         });
+        if let Some(v) = verifier {
+            payload["verifier"] = serde_json::Value::String(v.to_string());
+        }
 
         let resp = self.http.post(&url).json(&payload).send().await?;
         let status = resp.status();
@@ -434,6 +438,81 @@ impl ApiClient {
             return Err(ApiError::HttpStatus {
                 status: status.as_u16(),
                 body,
+            });
+        }
+
+        Ok(value)
+    }
+
+    /// Switch active launcher account profile (`gameMode`) for existing session.
+    pub async fn switch_account_profile(
+        &self,
+        session_key: &str,
+        game_mode: &str,
+    ) -> Result<serde_json::Value, ApiError> {
+        let url = self.url("account-profile-switch.php");
+        tracing::info!("Przelaczam account profile: {} -> {}", url, game_mode);
+
+        let payload = serde_json::json!({
+            "type": "account_profile_switch",
+            "sessionKey": session_key,
+            "gameMode": game_mode,
+        });
+
+        let resp = self.http.post(&url).json(&payload).send().await?;
+        let status = resp.status();
+
+        if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+            return Err(ApiError::RateLimited);
+        }
+
+        let body = resp.text().await.unwrap_or_default();
+        let value: serde_json::Value = serde_json::from_str(&body)?;
+
+        if let Some(error_message) = value.get("errorMessage").and_then(|v| v.as_str()) {
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body: error_message.to_string(),
+            });
+        }
+
+        if !status.is_success() {
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body,
+            });
+        }
+
+        Ok(value)
+    }
+
+    /// LK-012: Fetch game profiles (modes, servers, features) — public endpoint, no auth.
+    pub async fn fetch_game_profiles(&self) -> Result<serde_json::Value, ApiError> {
+        let url = self.url("game-profiles.php");
+        tracing::info!("Pobieram game profiles: {}", url);
+
+        let resp = self.http.get(&url).send().await?;
+        let status = resp.status();
+
+        if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+            return Err(ApiError::RateLimited);
+        }
+
+        let body = resp.text().await.unwrap_or_default();
+
+        if !status.is_success() {
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body,
+            });
+        }
+
+        let value: serde_json::Value = serde_json::from_str(&body)?;
+
+        if let Some(error_message) = value.get("errorMessage").and_then(|v| v.as_str()) {
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body: error_message.to_string(),
             });
         }
 
@@ -580,17 +659,6 @@ impl ApiClient {
 
         let catalog: InstallerCatalogResponse = resp.json().await?;
 
-        // Walidacja: channel musi się zgadzać
-        if catalog.channel != channel {
-            return Err(ApiError::HttpStatus {
-                status: 200,
-                body: format!(
-                    "Catalog channel mismatch: expected '{}', got '{}'",
-                    channel, catalog.channel
-                ),
-            });
-        }
-
         // Walidacja: artifacts nie może być pusty
         if catalog.artifacts.is_empty() {
             return Err(ApiError::HttpStatus {
@@ -628,6 +696,41 @@ impl ApiClient {
 
         let packs: LanguagePacksResponse = resp.json().await?;
         Ok(packs)
+    }
+
+    // ─────────────────────────────────────────
+    // LR-045: client pack from installer-catalog
+    // ─────────────────────────────────────────
+
+    /// Pobiera katalog artefaktów klienta z API (type=client, opcjonalnie profile=player).
+    pub async fn fetch_client_pack_catalog(
+        &self,
+        channel: &str,
+        profile: &str,
+    ) -> Result<InstallerCatalogResponse, ApiError> {
+        let url = self.url(&format!(
+            "installer-catalog.php?channel={}&type=client&profile={}",
+            channel, profile
+        ));
+        tracing::info!("Pobieram katalog client pack: {}", url);
+
+        let resp = self.get_with_retry(&url).await?;
+        let status = resp.status();
+
+        if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+            return Err(ApiError::RateLimited);
+        }
+
+        if !status.is_success() {
+            let body = resp.text().await.unwrap_or_default();
+            return Err(ApiError::HttpStatus {
+                status: status.as_u16(),
+                body,
+            });
+        }
+
+        let catalog: InstallerCatalogResponse = resp.json().await?;
+        Ok(catalog)
     }
 
     // ─────────────────────────────────────────

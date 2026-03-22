@@ -55,6 +55,9 @@ public:
     // Launcher przekazuje token przez zmienną OTC_LAUNCH_TOKEN.
     void setLaunchToken(const std::string& token);
 
+    // Session token z launchera — alternatywa dla plaintext password w player mode.
+    void setSessionToken(const std::string& token);
+
     // FIX18: Ustawia gameMode (classic74/modern) — dodawany do JSON body przy loginie.
     // Bez tego login.php zapisuje sesję jako 'modern' i ticket mismatch dla classic74.
     void setGameMode(const std::string& mode);
@@ -81,5 +84,6 @@ private:
     std::string session;
     std::string errorMessage;
     std::string launchToken;  // E10: token z launchera (OTC_LAUNCH_TOKEN)
+    std::string sessionToken;
     std::string gameMode;      // FIX18: tryb gry (classic74/modern)
 };

@@ -311,6 +311,13 @@ void Client::registerLuaFunctions()
     g_lua.bindSingletonFunction("g_game", "setPingDelay", &Game::setPingDelay, &g_game);
     g_lua.bindSingletonFunction("g_game", "changeMapAwareRange", &Game::changeMapAwareRange, &g_game);
     g_lua.bindSingletonFunction("g_game", "canReportBugs", &Game::canReportBugs, &g_game);
+    g_lua.bindSingletonFunction("g_game", "isPlayerMode", &Game::isPlayerMode, &g_game);
+    // LUA-006: Allowed worlds API for player mode validation
+    g_lua.bindSingletonFunction("g_game", "clearAllowedWorlds", &Game::clearAllowedWorlds, &g_game);
+    g_lua.bindSingletonFunction("g_game", "addAllowedWorld", &Game::addAllowedWorld, &g_game);
+    // LUA-009: Read-only queries for Lua — world validation + player mode info
+    g_lua.bindSingletonFunction("g_game", "isWorldAllowed", &Game::isWorldAllowed, &g_game);
+    g_lua.bindSingletonFunction("g_game", "getAllowedWorldCount", &Game::getAllowedWorldCount, &g_game);
     g_lua.bindSingletonFunction("g_game", "isOnline", &Game::isOnline, &g_game);
     g_lua.bindSingletonFunction("g_game", "isLogging", &Game::isLogging, &g_game);
     g_lua.bindSingletonFunction("g_game", "isDead", &Game::isDead, &g_game);

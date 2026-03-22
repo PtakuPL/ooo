@@ -12,7 +12,7 @@ EnterGameWindow
 
     MenuLabel
       id: gameModeTitle
-      !text: 'Wybierz tryb gry:'
+      !text: tr("otclient_modules.entergame.game_mode_title")
       anchors.left: parent.left
       anchors.right: parent.right
       anchors.top: parent.top
@@ -20,59 +20,26 @@ EnterGameWindow
       text-align: center
       font: verdana-11px-antialised
 
-    Button
-      id: btnClassic74
-      !text: 'Classic 7.4'
+    Panel
+      id: gameModeButtonsContainer
       anchors.left: parent.left
       anchors.right: parent.right
       anchors.top: prev.bottom
-      margin-top: 8
-      height: 28
-      @onClick: EnterGame.selectGameMode("classic74")
-
-    Label
-      id: lblClassic74Desc
-      !text: 'Styl Tibia 7.4 — bez hotkey na runy, bez market'
-      anchors.left: parent.left
-      anchors.right: parent.right
-      anchors.top: prev.bottom
-      margin-top: 2
-      text-auto-resize: true
-      font: noto-12
-      color: #aaaaaa
-      text-align: center
-
-    Button
-      id: btnModern
-      !text: 'Modern 14.20+'
-      anchors.left: parent.left
-      anchors.right: parent.right
-      anchors.top: prev.bottom
-      margin-top: 10
-      height: 28
-      @onClick: EnterGame.selectGameMode("modern")
-
-    Label
-      id: lblModernDesc
-      !text: 'Pełna wersja — wszystkie nowoczesne funkcje'
-      anchors.left: parent.left
-      anchors.right: parent.right
-      anchors.top: prev.bottom
-      margin-top: 2
-      text-auto-resize: true
-      font: noto-12
-      color: #aaaaaa
-      text-align: center
+      margin-top: 4
+      layout:
+        type: verticalBox
+        fit-children: true
 
     HorizontalSeparator
+      id: gameModeSep
       anchors.left: parent.left
       anchors.right: parent.right
-      anchors.top: prev.bottom
+      anchors.top: gameModeButtonsContainer.bottom
       margin-top: 10
 
     Button
       id: btnChangeMode
-      !text: 'Zmień tryb'
+      !text: tr("otclient_modules.entergame.change_mode")
       anchors.left: parent.left
       anchors.right: parent.right
       anchors.top: prev.bottom
@@ -273,11 +240,7 @@ EnterGameWindow
       anchors.top: parent.top
       anchors.bottom: parent.bottom
       margin-left: 4
-      enabled: false
-      @onClick: |
-        if toggleCreateAccount then
-          toggleCreateAccount(false)
-        end
+      @onClick: EnterGame.openCreateAccount()
 
   Label
     id: serverInfoLabel

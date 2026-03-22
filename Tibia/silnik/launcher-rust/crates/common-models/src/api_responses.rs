@@ -68,6 +68,10 @@ pub struct AccountSyncTokenResponse {
 
     #[serde(default)]
     pub consume_url: Option<String>,
+
+    /// SEC-P2-001: PKCE-like verifier — passed via URL fragment hash, validated on consumption.
+    #[serde(default)]
+    pub verifier: Option<String>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -137,8 +141,12 @@ pub struct LaunchTokenRequest {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct InstallerCatalogResponse {
-    pub channel: String,
-    pub version: String,
+    #[serde(default)]
+    pub brand: Option<String>,
+    #[serde(default)]
+    pub channel: Option<String>,
+    #[serde(default)]
+    pub version: Option<String>,
     pub artifacts: Vec<InstallerArtifact>,
 
     #[serde(default)]
@@ -149,27 +157,74 @@ pub struct InstallerCatalogResponse {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct InstallerArtifact {
+    /// Identyfikator artefaktu (np. "launcher-main-win", "client-player-win").
+    #[serde(default)]
+    pub id: Option<String>,
+
+    /// Nazwa wyświetlana.
+    #[serde(default)]
+    pub name: Option<String>,
+
     /// Platforma: "windows", "linux", "android".
-    pub platform: String,
+    #[serde(default)]
+    pub platform: Option<String>,
 
     /// Architektura: "x86_64", "arm64".
-    pub arch: String,
+    #[serde(default)]
+    pub arch: Option<String>,
 
     /// Nazwa pliku instalatora.
-    pub filename: String,
+    #[serde(default)]
+    pub filename: Option<String>,
 
     /// URL do pobrania.
-    pub url: String,
+    #[serde(default)]
+    pub url: Option<String>,
 
     /// Hash SHA-256 (hex, 64 znaki).
-    pub sha256: String,
+    #[serde(default)]
+    pub sha256: Option<String>,
 
     /// Rozmiar w bajtach.
-    pub size: u64,
+    #[serde(default)]
+    pub size: Option<u64>,
 
-    /// Typ artefaktu: "installer", "portable", "update".
+    /// Typ artefaktu: "launcher", "bootstrap", "installer", "client".
     #[serde(rename = "type")]
-    pub artifact_type: String,
+    #[serde(default)]
+    pub artifact_type: Option<String>,
+
+    /// Profil klienta: "player", "staff", "dev" (tylko dla type=client).
+    #[serde(default)]
+    pub client_profile: Option<String>,
+
+    /// Kanał: "stable", "beta", "dev".
+    #[serde(default)]
+    pub channel: Option<String>,
+
+    /// Wersja artefaktu.
+    #[serde(default)]
+    pub version: Option<String>,
+
+    /// Minimalna wymagana wersja (dla launcher).
+    #[serde(default)]
+    pub min_version: Option<String>,
+
+    /// URL manifestu klienta (dla type=client — launcher pobiera listę plików).
+    #[serde(default)]
+    pub manifest_url: Option<String>,
+
+    /// Data wydania.
+    #[serde(default)]
+    pub release_date: Option<String>,
+
+    /// Notatki wydania.
+    #[serde(default)]
+    pub notes: Option<String>,
+
+    /// Fallback URL.
+    #[serde(default)]
+    pub fallback_url: Option<String>,
 
     /// Opcjonalny podpis .sig (Etap 5: hardening).
     #[serde(default)]

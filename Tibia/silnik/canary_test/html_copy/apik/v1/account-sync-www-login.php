@@ -102,11 +102,17 @@ $redirectPath = normalizeRedirectPath((string)($_GET['redirect'] ?? $_POST['redi
 $jsonResponse = wantsJsonResponse();
 
 $syncToken = trim((string)($_GET['syncToken'] ?? $_POST['syncToken'] ?? ''));
-if ($syncToken === '') {
+$verifier = trim((string)($_POST['verifier'] ?? ''));
+if ($syncToken === '' || $verifier === '') {
     $raw = file_get_contents('php://input') ?: '';
     $req = json_decode($raw, true);
     if (is_array($req)) {
-        $syncToken = trim((string)($req['syncToken'] ?? ''));
+        if ($syncToken === '') {
+            $syncToken = trim((string)($req['syncToken'] ?? ''));
+        }
+        if ($verifier === '') {
+            $verifier = trim((string)($req['verifier'] ?? ''));
+        }
     }
 }
 if ($syncToken === '') {
@@ -129,7 +135,7 @@ $account = null;
 $apiDb->beginTransaction();
 try {
     $stmt = $apiDb->prepare(
-        "SELECT token, account_id, source, target, expires_at, used_at
+        "SELECT token, account_id, source, target, expires_at, used_at, verifier_hash
          FROM account_sync_tokens
          WHERE token = ?
          LIMIT 1
@@ -157,6 +163,14 @@ try {
         throw new RuntimeException('source_mismatch');
     }
 
+    // SEC-P2-001: Validate PKCE-like verifier (fail-closed: if hash stored, verifier required)
+    $storedHash = (string)($tokenRow['verifier_hash'] ?? '');
+    if ($storedHash !== '') {
+        if ($verifier === '' || !hash_equals($storedHash, hash('sha256', $verifier))) {
+            throw new RuntimeException('verifier_mismatch');
+        }
+    }
+
     $mark = $apiDb->prepare("UPDATE account_sync_tokens SET used_at = NOW() WHERE token = ?");
     $mark->execute([$syncToken]);
 
@@ -178,6 +192,9 @@ try {
     }
     if ($code === 'source_mismatch') {
         syncWwwLoginFail('source_mismatch', 'Only launcher->www token is accepted here.', 409, $jsonResponse, $redirectPath);
+    }
+    if ($code === 'verifier_mismatch') {
+        syncWwwLoginFail('verifier_mismatch', 'Sync token verifier mismatch.', 403, $jsonResponse, $redirectPath);
     }
     syncWwwLoginFail('sync_consume_failed', 'Cannot consume sync token.', 500, $jsonResponse, $redirectPath);
 }

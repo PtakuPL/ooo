@@ -22,9 +22,38 @@
 
 #include "configmanager.h"
 
+#include <cstdlib>
+#include <string_view>
+
 ConfigManager g_configs;
 
-void ConfigManager::init() { m_settings = std::make_shared<Config>(); }
+namespace
+{
+bool envFlagEnabled(const char* name)
+{
+    if (const char* value = std::getenv(name)) {
+        const std::string_view raw{ value };
+        return raw == "1" || raw == "true" || raw == "TRUE" || raw == "yes" || raw == "YES";
+    }
+
+    return false;
+}
+
+std::string envString(const char* name)
+{
+    if (const char* value = std::getenv(name)) {
+        return value;
+    }
+
+    return {};
+}
+}
+
+void ConfigManager::init()
+{
+    m_settings = std::make_shared<Config>();
+    loadRuntimePolicy();
+}
 
 void ConfigManager::terminate()
 {
@@ -117,3 +146,147 @@ bool ConfigManager::unload(const std::string& file)
 }
 
 void ConfigManager::remove(const ConfigPtr& config) { m_configs.remove(config); }
+
+void ConfigManager::loadRuntimePolicy()
+{
+    m_devMode = envFlagEnabled("OTC_DEV_MODE");
+    m_clientLocked = !m_devMode;
+    m_startupGameMode = envString("OTC_GAME_MODE");
+    initBuiltinGameModes();
+}
+
+void ConfigManager::initBuiltinGameModes()
+{
+    m_gameModes.clear();
+
+    // Classic 7.4
+    GameModeConfig classic;
+    classic.key = "classic74";
+    classic.name = "Classic 7.4";
+    classic.description = "Serwer w stylu Tibia 7.4";
+    classic.allowedWorldIds = { 0 };
+    classic.server.host = "tibia.reddaxe.pl";
+    classic.server.port = 443;
+    classic.server.protocol = 1412;
+    classic.server.httpLogin = true;
+    classic.server.httpLoginUrl = "https://tibia.reddaxe.pl/apik/v1/login.php";
+    classic.features["hotkeys_items"] = false;
+    classic.features["hotkeys_spells"] = true;
+    classic.features["quick_loot"] = true;
+    classic.features["auto_loot"] = true;
+    classic.features["market"] = true;
+    classic.features["action_bar"] = true;
+    classic.features["smart_equip"] = true;
+    classic.features["prey"] = true;
+    classic.features["bestiary"] = true;
+    classic.features["wheel"] = true;
+    classic.features["analytics"] = true;
+    m_gameModes["classic74"] = std::move(classic);
+
+    // Modern 14.20+
+    GameModeConfig modern;
+    modern.key = "modern";
+    modern.name = "Modern 14.20+";
+    modern.description = "Pelna wersja Tibia";
+    modern.allowedWorldIds = { 1 };
+    modern.server.host = "tibia.reddaxe.pl";
+    modern.server.port = 443;
+    modern.server.protocol = 1412;
+    modern.server.httpLogin = true;
+    modern.server.httpLoginUrl = "https://tibia.reddaxe.pl/apik/v1/login.php";
+    modern.features["hotkeys_items"] = true;
+    modern.features["hotkeys_spells"] = true;
+    modern.features["quick_loot"] = true;
+    modern.features["auto_loot"] = true;
+    modern.features["market"] = true;
+    modern.features["action_bar"] = true;
+    modern.features["smart_equip"] = true;
+    modern.features["prey"] = true;
+    modern.features["bestiary"] = true;
+    modern.features["wheel"] = true;
+    modern.features["analytics"] = true;
+    m_gameModes["modern"] = std::move(modern);
+}
+
+int ConfigManager::getGameModeCount() const
+{
+    return static_cast<int>(m_gameModes.size());
+}
+
+std::vector<std::string> ConfigManager::getGameModeKeys() const
+{
+    std::vector<std::string> keys;
+    keys.reserve(m_gameModes.size());
+    for (const auto& [k, _] : m_gameModes)
+        keys.push_back(k);
+    return keys;
+}
+
+bool ConfigManager::hasGameMode(const std::string& key) const
+{
+    return m_gameModes.count(key) > 0;
+}
+
+std::string ConfigManager::getGameModeName(const std::string& key) const
+{
+    auto it = m_gameModes.find(key);
+    return it != m_gameModes.end() ? it->second.name : "";
+}
+
+std::string ConfigManager::getGameModeDescription(const std::string& key) const
+{
+    auto it = m_gameModes.find(key);
+    return it != m_gameModes.end() ? it->second.description : "";
+}
+
+std::string ConfigManager::getGameModeHost(const std::string& key) const
+{
+    auto it = m_gameModes.find(key);
+    return it != m_gameModes.end() ? it->second.server.host : "";
+}
+
+int ConfigManager::getGameModePort(const std::string& key) const
+{
+    auto it = m_gameModes.find(key);
+    return it != m_gameModes.end() ? it->second.server.port : 0;
+}
+
+int ConfigManager::getGameModeProtocol(const std::string& key) const
+{
+    auto it = m_gameModes.find(key);
+    return it != m_gameModes.end() ? it->second.server.protocol : 0;
+}
+
+bool ConfigManager::getGameModeHttpLogin(const std::string& key) const
+{
+    auto it = m_gameModes.find(key);
+    return it != m_gameModes.end() ? it->second.server.httpLogin : false;
+}
+
+std::string ConfigManager::getGameModeHttpLoginUrl(const std::string& key) const
+{
+    auto it = m_gameModes.find(key);
+    return it != m_gameModes.end() ? it->second.server.httpLoginUrl : "";
+}
+
+bool ConfigManager::getGameModeFeature(const std::string& key, const std::string& feature) const
+{
+    auto modeIt = m_gameModes.find(key);
+    if (modeIt == m_gameModes.end())
+        return false;
+    auto featIt = modeIt->second.features.find(feature);
+    return featIt != modeIt->second.features.end() ? featIt->second : false;
+}
+
+std::string ConfigManager::getGameModeAllowedWorldIds(const std::string& key) const
+{
+    auto it = m_gameModes.find(key);
+    if (it == m_gameModes.end())
+        return "";
+    std::string result;
+    for (size_t i = 0; i < it->second.allowedWorldIds.size(); ++i) {
+        if (i > 0) result += ",";
+        result += std::to_string(it->second.allowedWorldIds[i]);
+    }
+    return result;
+}

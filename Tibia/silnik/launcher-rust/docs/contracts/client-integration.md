@@ -1,8 +1,21 @@
 # Kontrakt integracji z klientem
 
 **ID:** LR-009  
-**Status:** FROZEN  
+**Status:** HISTORYCZNY / FROZEN
 **Data:** 2026-03-02
+
+> Uwaga 2026-03-15:
+> Ten dokument opisuje starszy model integracji `launcher -> klient`.
+> Nie jest juz kanonicznym zrodlem prawdy dla finalnego pipeline.
+> Aktualne dokumenty nadrzedne:
+> - [15_MASTER_PLAN_LAUNCHER_INSTALKA_FINALNY_PIPELINE.md](/home/ptaku/serweryt/Tibia/silnik/Dokumentacja/01_Instalka_Klient/2026-03/15_MASTER_PLAN_LAUNCHER_INSTALKA_FINALNY_PIPELINE.md)
+> - [15_PLAN_MINIMALNA_INSTALKA_GRACZA_I_PLAYER_RUNTIME.md](/home/ptaku/serweryt/Tibia/silnik/Dokumentacja/01_Instalka_Klient/2026-03/15_PLAN_MINIMALNA_INSTALKA_GRACZA_I_PLAYER_RUNTIME.md)
+> - [15_ARCHITEKTURA_LAUNCHER_KLIENT_KONTRAKTY.md](/home/ptaku/serweryt/Tibia/silnik/Dokumentacja/01_Instalka_Klient/2026-03/15_ARCHITEKTURA_LAUNCHER_KLIENT_KONTRAKTY.md)
+>
+> Najwazniejsze rozjazdy wzgledem obecnego stanu:
+> - launcher przekazuje `OTC_LAUNCH_TOKEN`, `OTC_CHANNEL`, opcjonalny `OTC_ACCOUNT` i `OTC_SESSION_TOKEN` zamiast `OTC_PASSWORD`,
+> - `launch_game()` nie przekazuje juz `OTC_GAME_MODE`; wybor trybu pozostaje po stronie klienta,
+> - finalny produkt nie zaklada juz recznego logowania klienta jako glownego UX dla gracza.
 
 ## Cel
 

@@ -83,13 +83,72 @@ if ($logged) {
 	exit;
 }
 
-$syncToken = trim((string)($_GET['syncToken'] ?? $_GET['token'] ?? $_POST['syncToken'] ?? $_POST['token'] ?? ''));
-if ($syncToken === '') {
+// SEC-P2-001: Token and verifier arrive via URL fragment hash (not query string).
+// GET → serve interstitial page with JS that extracts fragment and auto-POSTs.
+// POST → authenticate with token + verifier.
+$isPost = ($_SERVER['REQUEST_METHOD'] === 'POST');
+
+if (!$isPost) {
+	// GET: Serve interstitial page — JS extracts token+verifier from fragment hash and auto-POSTs.
+	// Token is NEVER in the query string, so it won't appear in server logs or Referer headers.
+	$safeRedirect = htmlspecialchars($redirectPath, ENT_QUOTES, 'UTF-8');
+	$safeMode = htmlspecialchars($modeHint, ENT_QUOTES, 'UTF-8');
+	echo <<<HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Account Sync</title>
+<style>
+body { font-family: sans-serif; text-align: center; padding-top: 80px; background: #1a1a2e; color: #e0e0e0; }
+.spinner { margin: 20px auto; width: 40px; height: 40px; border: 4px solid #333; border-top-color: #0af; border-radius: 50%; animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+noscript { color: #f44; }
+</style>
+</head>
+<body>
+<div class="spinner"></div>
+<p>Syncing your account&hellip;</p>
+<noscript><p>JavaScript is required for account sync. Please enable JavaScript and try again.</p></noscript>
+<form id="sf" method="POST" action="">
+<input type="hidden" name="syncToken" id="ft">
+<input type="hidden" name="verifier" id="fv">
+<input type="hidden" name="redirect" value="{$safeRedirect}">
+<input type="hidden" name="mode" value="{$safeMode}">
+</form>
+<script>
+(function(){
+ var h=location.hash.substring(1);
+ if(!h){document.body.innerHTML='<p style="color:#f44">Missing sync data. Please retry from the launcher.</p>';return;}
+ var p={};h.split('&').forEach(function(s){var kv=s.split('=');if(kv.length===2)p[decodeURIComponent(kv[0])]=decodeURIComponent(kv[1]);});
+ var t=p['t']||'',v=p['v']||'';
+ if(!t||!v){document.body.innerHTML='<p style="color:#f44">Incomplete sync data. Please retry from the launcher.</p>';return;}
+ document.getElementById('ft').value=t;
+ document.getElementById('fv').value=v;
+ history.replaceState(null,'',location.pathname+location.search);
+ document.getElementById('sf').submit();
+})();
+</script>
+</body>
+</html>
+HTML;
+	exit;
+}
+
+// POST: Validate token + verifier
+$syncToken = trim((string)($_POST['syncToken'] ?? ''));
+$verifier = trim((string)($_POST['verifier'] ?? ''));
+
+if ($syncToken === '' || $verifier === '') {
 	syncLoginFail('missing_sync_token', $redirectPath, $modeHint);
 }
 
 if (!preg_match('/^[a-f0-9]{64}$/i', $syncToken)) {
 	syncLoginFail('invalid_sync_token', $redirectPath, $modeHint);
+}
+
+if (!preg_match('/^[a-f0-9]{64}$/i', $verifier)) {
+	syncLoginFail('invalid_verifier', $redirectPath, $modeHint);
 }
 
 if (!$db->hasTable('account_sync_tokens')) {
@@ -106,7 +165,7 @@ try {
 	$inTransaction = true;
 
 	$syncQuery = $db->query(
-		'SELECT `token`, `account_id`, `source`, `target`, `expires_at`, `used_at`
+		'SELECT `token`, `account_id`, `source`, `target`, `expires_at`, `used_at`, `verifier_hash`
 		 FROM `account_sync_tokens`
 		 WHERE `token` = ' . $db->quote($syncToken) . '
 		 LIMIT 1
@@ -143,6 +202,13 @@ try {
 	if ((string)$syncRow['source'] !== 'launcher') {
 		$errorCode = 'source_mismatch';
 		throw new RuntimeException('sync token source mismatch');
+	}
+
+	// SEC-P2-001: Validate PKCE-like verifier (fail-closed: missing hash = reject)
+	$storedHash = (string)($syncRow['verifier_hash'] ?? '');
+	if ($storedHash === '' || !hash_equals($storedHash, hash('sha256', $verifier))) {
+		$errorCode = 'verifier_mismatch';
+		throw new RuntimeException('sync token verifier mismatch');
 	}
 
 	$accountId = (int)$syncRow['account_id'];

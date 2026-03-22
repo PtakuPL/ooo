@@ -136,14 +136,16 @@ $metaJson = json_encode([
 
 $inserted = false;
 $syncToken = '';
+$verifier = bin2hex(random_bytes(32));
+$verifierHash = hash('sha256', $verifier);
 for ($attempt = 0; $attempt < 3; $attempt++) {
     $syncToken = bin2hex(random_bytes(32));
     try {
         $insert = $apiDb->prepare(
-            "INSERT INTO account_sync_tokens (token, account_id, source, target, expires_at, metadata_json)
-             VALUES (?, ?, 'www', 'launcher', ?, ?)"
+            "INSERT INTO account_sync_tokens (token, account_id, source, target, expires_at, metadata_json, verifier_hash)
+             VALUES (?, ?, 'www', 'launcher', ?, ?, ?)"
         );
-        $insert->execute([$syncToken, $accountId, $expiresAt, $metaJson]);
+        $insert->execute([$syncToken, $accountId, $expiresAt, $metaJson, $verifierHash]);
         $inserted = true;
         break;
     } catch (PDOException $e) {
@@ -183,9 +185,10 @@ logTicketEvent('account.sync_www_token.issued', [
 json_out([
     'ok' => true,
     'syncToken' => $syncToken,
+    'verifier' => $verifier,
     'source' => 'www',
     'target' => 'launcher',
     'expiresAt' => $expiresAt,
     'consumeEndpoint' => $baseUrl . '/apik/v1/account-sync-consume.php',
-    'launcherDeepLink' => $launcherScheme . '://account-sync?token=' . urlencode($syncToken),
+    'launcherDeepLink' => $launcherScheme . '://account-sync?token=' . urlencode($syncToken) . '&v=' . urlencode($verifier),
 ]);

@@ -6,6 +6,7 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 mod commands;
+mod session_store;
 mod state;
 
 use common_models::launcher_config::LauncherConfig;
@@ -139,7 +140,7 @@ fn acquire_app_lock() -> Result<AppLock, String> {
     Ok(AppLock { path: lock_path })
 }
 
-fn parse_account_sync_token_from_args(args: &[String]) -> Option<String> {
+fn parse_account_sync_token_from_args(args: &[String]) -> Option<(String, Option<String>)> {
     for arg in args.iter().skip(1) {
         let trimmed = arg.trim();
         if trimmed.is_empty() {
@@ -150,27 +151,41 @@ fn parse_account_sync_token_from_args(args: &[String]) -> Option<String> {
         if !host_and_path.eq_ignore_ascii_case("account-sync") {
             continue;
         }
+        let mut token: Option<String> = None;
+        let mut verifier: Option<String> = None;
         for pair in query.split('&') {
-            let (key, value) = pair.split_once('=')?;
-            if key != "token" {
-                continue;
+            if let Some((key, value)) = pair.split_once('=') {
+                if key == "token" {
+                    let t = value.trim();
+                    if t.len() == 64 && t.chars().all(|c| c.is_ascii_hexdigit()) {
+                        token = Some(t.to_ascii_lowercase());
+                    }
+                } else if key == "v" {
+                    let v = value.trim();
+                    if v.len() == 64 && v.chars().all(|c| c.is_ascii_hexdigit()) {
+                        verifier = Some(v.to_ascii_lowercase());
+                    }
+                }
             }
-            let token = value.trim();
-            if token.len() == 64 && token.chars().all(|c| c.is_ascii_hexdigit()) {
-                return Some(token.to_ascii_lowercase());
-            }
+        }
+        if let Some(t) = token {
+            return Some((t, verifier));
         }
     }
     None
 }
 
-fn write_pending_account_sync_token(token: &str) -> Result<(), String> {
+fn write_pending_account_sync_token(token: &str, verifier: Option<&str>) -> Result<(), String> {
     let path = pending_account_sync_path();
     if let Some(parent) = path.parent() {
         std::fs::create_dir_all(parent)
             .map_err(|e| format!("Nie mozna utworzyc katalogu pending sync: {e}"))?;
     }
-    std::fs::write(&path, token)
+    let content = match verifier {
+        Some(v) => format!("{token}\n{v}"),
+        None => token.to_string(),
+    };
+    std::fs::write(&path, content)
         .map_err(|e| format!("Nie mozna zapisac pending sync token: {e}"))?;
     Ok(())
 }
@@ -185,7 +200,6 @@ fn best_effort_register_url_scheme() {
     const REG_SZ: u32 = 1;
     const SCHEME_KEY: &str = r"Software\Classes\launcher";
     const COMMAND_KEY: &str = r"Software\Classes\launcher\shell\open\command";
-
     #[link(name = "advapi32")]
     extern "system" {
         fn RegCreateKeyExW(
@@ -318,13 +332,13 @@ fn main() {
     tracing::info!("RedDaxe.pl Launcher v{}", env!("CARGO_PKG_VERSION"));
 
     let args: Vec<String> = std::env::args().collect();
-    let startup_account_sync_token = parse_account_sync_token_from_args(&args);
+    let startup_sync = parse_account_sync_token_from_args(&args);
 
     let _app_lock = match acquire_app_lock() {
         Ok(lock) => lock,
         Err(err) => {
-            if let Some(token) = startup_account_sync_token.as_deref() {
-                match write_pending_account_sync_token(token) {
+            if let Some((ref token, ref verifier)) = startup_sync {
+                match write_pending_account_sync_token(token, verifier.as_deref()) {
                     Ok(()) => {
                         tracing::info!(
                             "Launcher juz dziala — zapisano pending WWW sync token dla aktywnej instancji"
@@ -346,9 +360,14 @@ fn main() {
 
     best_effort_register_url_scheme();
 
+    let (startup_token, startup_verifier) = match startup_sync {
+        Some((t, v)) => (Some(t), v),
+        None => (None, None),
+    };
+
     tauri::Builder::default()
         .plugin(tauri_plugin_shell::init())
-        .manage(state::AppState::new(startup_account_sync_token))
+        .manage(state::AppState::new(startup_token, startup_verifier))
         .invoke_handler(tauri::generate_handler![
             commands::get_status,
             commands::check_for_updates,
@@ -361,6 +380,7 @@ fn main() {
             commands::change_channel,
             commands::export_logs,
             commands::get_installer_catalog,
+            commands::get_client_pack_catalog,
             commands::get_language_packs,
             commands::download_language_pack,
             commands::list_installed_language_packs,
@@ -370,10 +390,14 @@ fn main() {
             commands::get_server_status,
             commands::health_check_critical_endpoints,
             commands::build_create_character_url,
+            commands::build_website_sync_url,
             commands::consume_pending_account_sync,
             commands::refresh_launcher_account_context,
+            commands::switch_launcher_account_profile,
+            commands::fetch_launcher_game_profiles,
             commands::login_launcher_account,
             commands::register_launcher_account,
+            commands::clear_launcher_session,
             commands::report_error,
             commands::uninstall_game_files,
             commands::uninstall_launcher,

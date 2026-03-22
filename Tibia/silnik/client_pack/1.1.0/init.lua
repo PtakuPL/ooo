@@ -13,89 +13,184 @@ Services = {
 -- KONFIGURACJA KLIENTA — BLOKADA + TRYBY GRY
 -- ============================================================
 
--- Gdy true: klient jest przypisany do naszych serwerów.
--- Gracz NIE może dodawać/usuwać/edytować serwerów.
--- Lista serwerów pochodzi WYŁĄCZNIE z GameModes poniżej.
--- ⚠ FIX16 SYNC: Ta wartość MUSI być zsynchronizowana z CLIENT_LOCKED w .env (API).
---   init.lua CLIENT_LOCKED = true  →  .env CLIENT_LOCKED=true
---   init.lua CLIENT_LOCKED = false →  .env CLIENT_LOCKED=false
---   Dryft powoduje, że klient jest zablokowany ale login.php nie wymaga launchToken (lub odwrotnie).
-CLIENT_LOCKED = true
-
--- DEV_MODE: Ustaw zmienną środowiskową OTC_DEV_MODE=1 aby wyłączyć CLIENT_LOCKED
--- W trybie deweloperskim: logowanie bez launchera, brak ticket-gate.
--- ⚠ Pamiętaj: .env też musi mieć CLIENT_LOCKED=false w trybie DEV!
-local DEV_MODE = (os.getenv("OTC_DEV_MODE") or "") == "1"
-if DEV_MODE then
-    CLIENT_LOCKED = false
+local function getNativeClientLocked()
+    if g_configs and g_configs.isClientLocked then
+        return g_configs.isClientLocked()
+    end
+    return true
 end
 
--- Tryby gry — każdy definiuje serwer i dozwolone funkcje.
--- Klucze: "classic74", "modern" (matchują gameMode w tickecie HMAC)
-GameModes = {
-    classic74 = {
-        name = "Classic 7.4",
-        description = "Serwer w stylu Tibia 7.4 — bez hotkey na runy, bez market, bez quick loot.",
-        server = {
-            host = "127.0.0.1",   -- FIX25: adres serwera (dev: WSL localhost)
-            port = 443,            -- Port API (HTTPS). Game port (7172) jest w login.php response.
-            protocol = 1412,       -- MUSI zgadzać się z data/setup.otml last-supported-version i things/1412/
-            httpLogin = true,
-            httpLoginUrl = "https://tibia.reddaxe.pl/apik/v1/login.php",  -- FIX25: prawdziwy URL API
+local function getNativeDevMode()
+    if g_configs and g_configs.isDevMode then
+        return g_configs.isDevMode()
+    end
+    return (os.getenv("OTC_DEV_MODE") or "") == "1"
+end
+
+local function getStartupGameModeHint()
+    if g_configs and g_configs.getStartupGameMode then
+        return g_configs.getStartupGameMode() or ""
+    end
+    return os.getenv("OTC_GAME_MODE") or ""
+end
+
+-- Native runtime policy jest source-of-truth. Lua ma byc tylko read-only consumerem.
+CLIENT_LOCKED = getNativeClientLocked()
+local DEV_MODE = getNativeDevMode()
+
+-- LUA-003: Funkcja budująca GameModes z C++ ConfigManager.
+-- W player mode dane serwerów i feature flags pochodzą z binarki C++,
+-- NIE z edytowalnego pliku Lua. Gracz nie może zmodyfikować adresów.
+local function buildGameModesFromNative()
+    if not g_configs or not g_configs.hasGameMode then
+        return nil
+    end
+
+    -- Sprawdź znane klucze trybu gry
+    local knownKeys = { "classic74", "modern" }
+    local modes = {}
+    local count = 0
+
+    for _, key in ipairs(knownKeys) do
+        if g_configs.hasGameMode(key) then
+            -- Parsowanie allowedWorldIds z CSV stringa
+            local worldIdsStr = g_configs.getGameModeAllowedWorldIds(key)
+            local worldIds = {}
+            if worldIdsStr and #worldIdsStr > 0 then
+                for id in worldIdsStr:gmatch("[^,]+") do
+                    local numId = tonumber(id)
+                    if numId then table.insert(worldIds, numId) end
+                end
+            end
+
+            -- Budowanie feature flags z C++
+            local featureNames = {
+                "hotkeys_items", "hotkeys_spells", "quick_loot", "auto_loot",
+                "market", "action_bar", "smart_equip", "prey", "bestiary",
+                "wheel", "analytics"
+            }
+            local features = {}
+            for _, feat in ipairs(featureNames) do
+                features[feat] = g_configs.getGameModeFeature(key, feat)
+            end
+
+            modes[key] = {
+                name = g_configs.getGameModeName(key),
+                description = g_configs.getGameModeDescription(key),
+                allowedWorldIds = worldIds,
+                server = {
+                    host = g_configs.getGameModeHost(key),
+                    port = g_configs.getGameModePort(key),
+                    protocol = g_configs.getGameModeProtocol(key),
+                    httpLogin = g_configs.getGameModeHttpLogin(key),
+                    httpLoginUrl = g_configs.getGameModeHttpLoginUrl(key),
+                },
+                features = features,
+            }
+            count = count + 1
+        end
+    end
+
+    if count > 0 then
+        return modes
+    end
+    return nil
+end
+
+-- Tryby gry — źródło danych zależy od trybu:
+-- Player mode (CLIENT_LOCKED=true): C++ ConfigManager (sealed, nieedytowalny)
+-- Dev mode: Lua fallback table (edytowalny do testów)
+GameModes = nil
+
+if CLIENT_LOCKED then
+    GameModes = buildGameModesFromNative()
+    if GameModes then
+        g_logger.info("[CONFIG] GameModes loaded from C++ ConfigManager (sealed)")
+    else
+        g_logger.warning("[CONFIG] C++ GameModes unavailable — falling back to Lua defaults")
+    end
+end
+
+-- Fallback: hardcoded Lua table (używane w dev mode lub gdy C++ binding niedostępny)
+if not GameModes then
+    GameModes = {
+        classic74 = {
+            name = "Classic 7.4",
+            description = "Serwer w stylu Tibia 7.4 — ograniczenia hotkeyów na runy/itemy (styl walki 7.4).",
+            allowedWorldIds = { 0 },
+            server = {
+                host = "tibia.reddaxe.pl",
+                port = 443,
+                protocol = 1412,
+                httpLogin = true,
+                httpLoginUrl = "https://tibia.reddaxe.pl/apik/v1/login.php",
+            },
+            features = {
+                hotkeys_items    = false,
+                hotkeys_spells   = true,
+                quick_loot       = true,
+                auto_loot        = true,
+                market           = true,
+                action_bar       = true,
+                smart_equip      = true,
+                prey             = true,
+                bestiary         = true,
+                wheel            = true,
+                analytics        = true,
+            },
         },
-        features = {
-            hotkeys_items    = false,  -- blokada hotkey na itemy/runy
-            hotkeys_spells   = true,   -- hotkey na spelle dozwolone
-            quick_loot       = false,
-            auto_loot        = false,
-            market           = false,
-            action_bar       = false,
-            smart_equip      = false,  -- ctrl+klik auto-equip
-            prey             = false,
-            bestiary         = false,
-            wheel            = false,  -- koło umiejętności
-            analytics        = false,
+        modern = {
+            name = "Modern 14.20+",
+            description = "Pełna wersja Tibia — wszystkie nowoczesne funkcje.",
+            allowedWorldIds = { 1 },
+            server = {
+                host = "tibia.reddaxe.pl",
+                port = 443,
+                protocol = 1412,
+                httpLogin = true,
+                httpLoginUrl = "https://tibia.reddaxe.pl/apik/v1/login.php",
+            },
+            features = {
+                hotkeys_items    = true,
+                hotkeys_spells   = true,
+                quick_loot       = true,
+                auto_loot        = true,
+                market           = true,
+                action_bar       = true,
+                smart_equip      = true,
+                prey             = true,
+                bestiary         = true,
+                wheel            = true,
+                analytics        = true,
+            },
         },
-    },
-    modern = {
-        name = "Modern 14.20+",
-        description = "Pełna wersja Tibia — wszystkie nowoczesne funkcje.",
-        server = {
-            host = "127.0.0.1",   -- FIX25: adres serwera (dev: WSL localhost)
-            port = 443,            -- Port API (HTTPS). Game port (7172) jest w login.php response.
-            protocol = 1412,       -- MUSI zgadzać się z data/setup.otml last-supported-version i things/1412/
-            httpLogin = true,
-            httpLoginUrl = "https://tibia.reddaxe.pl/apik/v1/login.php",  -- FIX25: prawdziwy URL API
-        },
-        features = {
-            hotkeys_items    = true,
-            hotkeys_spells   = true,
-            quick_loot       = true,
-            auto_loot        = true,
-            market           = true,
-            action_bar       = true,
-            smart_equip      = true,
-            prey             = true,
-            bestiary         = true,
-            wheel            = true,
-            analytics        = true,
-        },
-    },
-}
+    }
+    g_logger.info("[CONFIG] GameModes loaded from Lua fallback table")
+end
 
 -- Aktualnie wybrany tryb gry (nil = gracz jeszcze nie wybrał).
--- Ustawiany przez ekran wyboru trybu (Faza A2/A3).
+-- Ustawiany przez ekran wyboru trybu (Faza A2/A3) LUB przez env var OTC_GAME_MODE z launchera.
 CurrentGameMode = nil
+
+-- OTC_GAME_MODE: launcher moze przekazac jednorazowy hint startowy dla sesji.
+-- Nie jest to trwale ustawienie instalki; user dalej moze zmienic tryb w kliencie.
+do
+    local envGameMode = getStartupGameModeHint()
+    if envGameMode ~= "" and GameModes[envGameMode] then
+        CurrentGameMode = envGameMode
+        g_logger.info("[CONFIG] OTC_GAME_MODE=" .. envGameMode .. " — startowy hint trybu z launchera")
+    end
+end
 
 -- E10: Token z launchera — przekazywany przez zmienną środowiskową OTC_LAUNCH_TOKEN.
 -- Launcher ustawia ją tuż przed uruchomieniem klienta (subprocess env).
 -- Login.php waliduje ten token (E11) aby upewnić się, że klient przeszedł przez launcher.
 G.launchToken = os.getenv("OTC_LAUNCH_TOKEN") or ""
 
--- Dane logowania z launchera — launcher przekazuje email/hasło aby klient auto-logował.
--- Czyszczone z env natychmiast po odczycie (bezpieczeństwo).
-G.launcherAccount  = os.getenv("OTC_ACCOUNT")  or ""
-G.launcherPassword = os.getenv("OTC_PASSWORD") or ""
+-- Kontekst startowy z launchera.
+-- Email jest opcjonalny (UI/autofill), a sesja launchera przechodzi jako token zamiast hasla.
+G.launcherAccount      = os.getenv("OTC_ACCOUNT") or ""
+G.launcherSessionToken = os.getenv("OTC_SESSION_TOKEN") or ""
 
 -- Helper: szybki dostęp do feature flags aktualnego trybu.
 -- Użycie: if isFeatureEnabled("quick_loot") then ...
@@ -116,6 +211,40 @@ function getCurrentServerConfig()
     return mode.server
 end
 
+-- Helper: twarda walidacja mapowania mode -> world.
+-- W CLIENT_LOCKED fail-closed: brak mapowania = brak dostepu.
+function isWorldAllowedForMode(modeKey, worldId, worldName)
+    if not CLIENT_LOCKED then
+        return true
+    end
+
+    local mode = GameModes and GameModes[modeKey]
+    if not mode then
+        return false
+    end
+
+    local allowedWorldIds = mode.allowedWorldIds
+    if type(allowedWorldIds) ~= "table" or #allowedWorldIds == 0 then
+        g_logger.warning("[MODE-GATE] Missing allowedWorldIds for mode=" .. tostring(modeKey))
+        return false
+    end
+
+    local worldIdNum = tonumber(worldId)
+    if worldIdNum == nil then
+        g_logger.warning("[MODE-GATE] Missing/invalid worldId for mode=" .. tostring(modeKey) .. " worldName=" .. tostring(worldName))
+        return false
+    end
+
+    worldIdNum = math.floor(worldIdNum)
+    for _, allowedId in ipairs(allowedWorldIds) do
+        if worldIdNum == tonumber(allowedId) then
+            return true
+        end
+    end
+
+    return false
+end
+
 -- Walidacja placeholderów — ostrzeż natychmiast jeśli adresy nie zostały zmienione.
 -- Dzięki temu fail widać od razu w logu, nie dopiero przy próbie logowania.
 do
@@ -131,9 +260,6 @@ do
 end
 
 -- INS-66/67: Load MANAGED_SERVER_LIST from launcher-generated file.
--- Launcher writes init_serverlist.lua with dynamic server data from manifest (= from DB).
--- If available, override GameModes server addresses with launcher-managed data.
--- Feature flags (hotkeys, market, etc.) stay from GameModes in init.lua.
 MANAGED_SERVER_LIST = nil
 do
     local serverlistPath = g_resources.getWorkDir() .. "init_serverlist.lua"
@@ -143,15 +269,11 @@ do
         local ok, err = pcall(dofile, serverlistPath)
         if ok and MANAGED_SERVER_LIST then
             g_logger.info("[CONFIG] Loaded MANAGED_SERVER_LIST with " .. #MANAGED_SERVER_LIST .. " servers from launcher")
-            -- Override GameModes server addresses from MANAGED_SERVER_LIST
             for _, srv in ipairs(MANAGED_SERVER_LIST) do
                 local mode = srv.gameMode
                 if mode and GameModes[mode] and GameModes[mode].server then
-                    -- Update server connection info from launcher-managed data
                     GameModes[mode].server.host = srv.host
                     GameModes[mode].server.port = srv.loginPort or srv.port
-                    -- Rebuild httpLoginUrl from the same host (API is on HTTPS port)
-                    -- Only update if current URL is still dev placeholder (127.0.0.1)
                     local currentUrl = GameModes[mode].server.httpLoginUrl or ""
                     if currentUrl:find("127%.0%.0%.1") or currentUrl:find("localhost") then
                         GameModes[mode].server.httpLoginUrl = "https://" .. srv.host .. "/apik/v1/login.php"
@@ -163,7 +285,7 @@ do
             g_logger.warning("[CONFIG] Failed to load init_serverlist.lua: " .. tostring(err))
         end
     else
-        g_logger.info("[CONFIG] No init_serverlist.lua found — using GameModes defaults (dev mode or first run)")
+        g_logger.info("[CONFIG] No init_serverlist.lua found — using GameModes defaults")
     end
 end
 

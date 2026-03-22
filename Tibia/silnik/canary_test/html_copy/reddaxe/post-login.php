@@ -18,6 +18,9 @@ $syncI18n = [
     'token' => reddaxe_t('post_login.sync.token'),
     'expires' => reddaxe_t('post_login.sync.expires'),
     'deepLink' => reddaxe_t('post_login.sync.deep_link'),
+    'launching' => reddaxe_t('post_login.sync.launching'),
+    'fallbackDownload' => reddaxe_t('post_login.sync.fallback_download'),
+    'errorMissingDeepLink' => reddaxe_t('post_login.sync.error_missing_deep_link'),
     'errorPrefix' => reddaxe_t('post_login.sync.error_prefix'),
     'errorUnknownCode' => reddaxe_t('post_login.sync.error_unknown_code'),
     'errorUnknownMsg' => reddaxe_t('post_login.sync.error_unknown_msg'),
@@ -154,7 +157,7 @@ header('Content-Type: text/html; charset=utf-8');
 
         <?php if ($hasActiveSession): ?>
             <div class="btns">
-                <button id="syncBtn" class="btn" type="button"><?php echo reddaxe_e(reddaxe_t('post_login.btn.sync')); ?></button>
+                <button id="syncBtn" class="btn" type="button"><?php echo reddaxe_e(reddaxe_t('post_login.btn.open_launcher')); ?></button>
             </div>
             <div class="syncbox">
                 <div class="muted"><?php echo reddaxe_e(reddaxe_t('post_login.sync.hint')); ?></div>
@@ -170,7 +173,13 @@ header('Content-Type: text/html; charset=utf-8');
     const btn = document.getElementById('syncBtn');
     const out = document.getElementById('syncOut');
     if (!btn || !out) return;
+    let fallbackTimer = null;
+
     btn.addEventListener('click', async () => {
+        if (fallbackTimer) {
+            clearTimeout(fallbackTimer);
+            fallbackTimer = null;
+        }
         btn.disabled = true;
         out.textContent = i18n.loading;
         try {
@@ -181,12 +190,20 @@ header('Content-Type: text/html; charset=utf-8');
                 credentials: 'same-origin'
             });
             const data = await resp.json();
-            if (data && data.ok) {
-                out.textContent =
-                    i18n.ok + '\n' +
-                    i18n.token + ': ' + (data.syncToken || '') + '\n' +
-                    i18n.expires + ': ' + (data.expiresAt || '') + '\n' +
-                    i18n.deepLink + ': ' + (data.launcherDeepLink || '');
+            if (data && data.ok && data.launcherDeepLink) {
+                const deepLink = String(data.launcherDeepLink || '');
+                out.textContent = i18n.launching;
+                window.location.href = deepLink;
+                fallbackTimer = window.setTimeout(() => {
+                    out.textContent =
+                        i18n.fallbackDownload + '\n' +
+                        i18n.deepLink + ': ' + deepLink;
+                    btn.disabled = false;
+                    fallbackTimer = null;
+                }, 1800);
+                return;
+            } else if (data && data.ok) {
+                out.textContent = i18n.errorPrefix + ': ' + i18n.errorMissingDeepLink;
             } else {
                 const code = (data && (data.error || data.errorCode)) ? (data.error || data.errorCode) : i18n.errorUnknownCode;
                 const msg = (data && (data.message || data.errorMessage)) ? (data.message || data.errorMessage) : i18n.errorUnknownMsg;
@@ -195,7 +212,9 @@ header('Content-Type: text/html; charset=utf-8');
         } catch (err) {
             out.textContent = i18n.errorHttp + ': ' + (err && err.message ? err.message : i18n.errorHttpFallback);
         } finally {
-            btn.disabled = false;
+            if (!fallbackTimer) {
+                btn.disabled = false;
+            }
         }
     });
 })();

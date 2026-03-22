@@ -41,7 +41,7 @@ jobs:
         uses: lukka/run-vcpkg@v11
         with:
           vcpkgDirectory: '${{ github.workspace }}/vcpkg'
-          vcpkgGitCommitId: '5b1214315250939257ef5d62ecdcbca18cf4fb1c'
+          vcpkgGitCommitId: 'cf6692675e04c036e21f26d64ae5fa3c8485f224'
 
       - name: Setup MSVC Developer Command Prompt
         uses: ilammy/msvc-dev-cmd@v1
@@ -57,6 +57,8 @@ jobs:
           cmake -S . -B build -G Ninja `
             -DCMAKE_BUILD_TYPE=RelWithDebInfo `
             -DVCPKG_TARGET_TRIPLET=x64-windows-static `
+            -DVCPKG_OVERLAY_TRIPLETS="${{ github.workspace }}/Tibia/silnik/canary_test/testyy/custom-triplets" `
+            -DBUILD_STATIC_LIBRARY=ON `
             -DCMAKE_TOOLCHAIN_FILE="${{ github.workspace }}/vcpkg/scripts/buildsystems/vcpkg.cmake" `
             -DCMAKE_MSVC_RUNTIME_LIBRARY="MultiThreaded"
 
@@ -68,6 +70,18 @@ jobs:
         working-directory: Tibia/silnik/canary_test/testyy
         run: ctest --test-dir build --output-on-failure
         continue-on-error: true
+
+      - name: Report DLL count
+        shell: bash
+        working-directory: Tibia/silnik/canary_test/testyy
+        run: |
+          echo "=== DLLs found in build output ==="
+          find build -name "*.dll" -type f | sort
+          DLL_COUNT=$(find build -name "*.dll" -type f | wc -l)
+          echo "Total DLLs: $DLL_COUNT"
+          if [ "$DLL_COUNT" -gt 2 ]; then
+            echo "WARNING: Expected 0-2 DLLs with static build, found $DLL_COUNT"
+          fi
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4

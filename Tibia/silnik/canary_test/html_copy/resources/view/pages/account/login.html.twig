@@ -46,6 +46,10 @@
 							{% else %}
 							Zaloguj sie, aby kontynuowac tworzenie postaci{% if launcher_mode == 'classic74' %} (Tibia 7.4){% elseif launcher_mode == 'modern' %} (Modern){% endif %}.
 							{% endif %}
+							{% if sync_error != '' %}
+							<br><br>
+							<a href="{{URL}}/downloads">Pobierz launcher</a>
+							{% endif %}
 						</div>
 						<div class="BoxFrameHorizontal" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-horizontal.gif);"></div>
 						<div class="BoxFrameEdgeRightBottom" style="background-image:url({{IMAGE_PATH}}/global/content/box-frame-edge.gif);"></div>

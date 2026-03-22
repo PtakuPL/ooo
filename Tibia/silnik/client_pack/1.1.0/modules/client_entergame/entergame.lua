@@ -10,8 +10,17 @@ local protocolLogin
 local motdEnabled = true
 local gameModeSelected = false  -- czy gracz wybrał tryb gry
 local noCharactersWindow
+local launcherContextWindow
 local pendingAccountContextRefresh = false
 local launcherAutoLoginAttempted = false
+local launcherContextState = nil
+
+local function isPlayerMode()
+    if g_game and g_game.isPlayerMode then
+        return g_game.isPlayerMode()
+    end
+    return CLIENT_LOCKED
+end
 
 local function clearNoCharactersWindow()
     if noCharactersWindow then
@@ -20,12 +29,75 @@ local function clearNoCharactersWindow()
     end
 end
 
+local function clearLauncherContextWindow()
+    if launcherContextWindow then
+        launcherContextWindow:destroy()
+        launcherContextWindow = nil
+    end
+end
+
+local function hasLaunchTokenContext()
+    return #tostring(G.launchToken or "") > 0
+end
+
+local function dropLauncherRuntimeContext(reason)
+    launcherContextState = reason or launcherContextState or "token_rejected"
+    launcherAutoLoginAttempted = true
+    pendingAccountContextRefresh = false
+    G.launchToken = ""
+    G.launcherSessionToken = ""
+    G.sessionKey = nil
+    G.legacySessionKey = nil
+end
+
+local function closeClientFromLauncherGate()
+    clearLauncherContextWindow()
+    if g_app and g_app.close then
+        g_app.close()
+    end
+end
+
+local function showLauncherRequiredScreen(reason)
+    launcherContextState = reason or launcherContextState or "no_context"
+
+    clearNoCharactersWindow()
+    clearLauncherContextWindow()
+
+    if loadBox then
+        loadBox:destroy()
+        loadBox = nil
+    end
+
+    if CharacterList and CharacterList.isVisible and CharacterList.isVisible() and CharacterList.hide then
+        CharacterList.hide(false)
+    end
+
+    if enterGame then
+        enterGame:hide()
+    end
+
+    local title = "Uruchom gre przez launcher"
+    local text = "Ten klient w trybie gracza dziala tylko z oficjalnego launchera.\nUruchom gre ponownie z launchera."
+    if launcherContextState == "token_rejected" then
+        title = "Wymagane ponowne logowanie"
+        text = "Token startowy wygasl albo zostal odrzucony.\nZaloguj sie ponownie w launcherze i uruchom gre jeszcze raz."
+    end
+
+    launcherContextWindow = displayGeneralBox(title, text, {
+        {
+            text = "Zamknij",
+            callback = closeClientFromLauncherGate
+        },
+        anchor = AnchorHorizontalCenter
+    }, closeClientFromLauncherGate, clearLauncherContextWindow)
+end
+
 local function shouldForceLauncherRelogin(message, errorCode)
     local code = tonumber(errorCode) or 0
     local launchToken = tostring(G.launchToken or "")
     local msg = tostring(message or ""):lower()
 
-    if (code == 401 or code == 403) and (CLIENT_LOCKED or #launchToken > 0) then
+    if (code == 401 or code == 403) and (isPlayerMode() or #launchToken > 0) then
         return true
     end
 
@@ -47,12 +119,11 @@ local function shouldForceLauncherRelogin(message, errorCode)
 end
 
 local function shouldAutoLoginFromLauncher()
-    if not CLIENT_LOCKED then
+    if not isPlayerMode() then
         return false
     end
 
-    local launchToken = tostring(G.launchToken or "")
-    if #launchToken == 0 then
+    if not hasLaunchTokenContext() then
         return false
     end
 
@@ -93,7 +164,7 @@ local function normalizeWorldId(worldId)
 end
 
 local function isWorldAllowedForActiveMode(characterInfo)
-    if not CLIENT_LOCKED then
+    if not isPlayerMode() then
         return true
     end
 
@@ -137,6 +208,49 @@ local function openCreateCharacterFlow(modeKey)
 
     pendingAccountContextRefresh = true
     g_platform.openUrl(url)
+end
+
+-- LOG-009: Otwórz stronę rejestracji konta w przeglądarce
+function EnterGame.openCreateAccount()
+    local srv = getCurrentServerConfig()
+    local websiteBase = "http://localhost"
+
+    if srv and srv.httpLoginUrl then
+        local loginUrl = tostring(srv.httpLoginUrl)
+        local base = loginUrl:gsub("/apik/v1/login%.php.*$", ""):gsub("/login%.php.*$", "")
+        local origin = loginUrl:match("^(https?://[^/]+)")
+        if base ~= loginUrl then
+            websiteBase = base
+        elseif origin then
+            websiteBase = origin
+        end
+    end
+
+    g_platform.openUrl(websiteBase .. "/account/register")
+end
+
+-- OTC-009: Fetch account-context.php po loginie — odświeża dane konta (postacie, profil, uprawnienia)
+local function buildAccountContextUrl()
+    local srv = getCurrentServerConfig()
+    if not srv or not srv.httpLoginUrl then return nil end
+    -- login.php → account-context.php (ten sam katalog API)
+    return tostring(srv.httpLoginUrl):gsub("login%.php", "account-context.php")
+end
+
+local function fetchAccountContext()
+    if not G.sessionKey or G.sessionKey == "" then return end
+    local url = buildAccountContextUrl()
+    if not url then return end
+
+    HTTP.postJSON(url, { sessionKey = G.sessionKey }, function(data, err)
+        if err or not data then
+            g_logger.warning("[OTC-009] account-context fetch failed: " .. tostring(err))
+            return
+        end
+        -- Zapisz kontekst konta globalnie — dostępny dla UI (dashboard, character list)
+        G.accountContext = data
+        g_logger.info("[OTC-009] account-context refreshed")
+    end)
 end
 
 local function showNoCharactersGate()
@@ -203,8 +317,9 @@ local function onError(protocol, message, errorCode)
     local title = tr("otclient_modules.entergame.tr_21")
     local text = message
     if shouldForceLauncherRelogin(message, errorCode) then
-        title = "Wymagane ponowne logowanie"
-        text = "Sesja launchera wygasla lub jest niewazna.\nZaloguj sie ponownie w launcherze i uruchom gre jeszcze raz."
+        dropLauncherRuntimeContext("token_rejected")
+        showLauncherRequiredScreen("token_rejected")
+        return
     end
 
     local errorBox = displayErrorBox(title, text)
@@ -229,7 +344,7 @@ local function onCharacterList(protocol, characters, account, otui)
     local httpLogin = httpLoginBox and httpLoginBox:isChecked() or false
 
     -- Try add server to the server list (skip when client is locked — A4)
-    if not CLIENT_LOCKED then
+    if not isPlayerMode() then
         ServerList.add(G.host, G.port, g_game.getClientVersion(), httpLogin)
     end
 
@@ -271,7 +386,7 @@ local function onCharacterList(protocol, characters, account, otui)
         end
     end
 
-    if CLIENT_LOCKED then
+    if isPlayerMode() then
         local filteredCharacters = {}
         for _, characterInfo in ipairs(characters) do
             if isWorldAllowedForActiveMode(characterInfo) then
@@ -283,15 +398,44 @@ local function onCharacterList(protocol, characters, account, otui)
         characters = filteredCharacters
     end
 
-    if CLIENT_LOCKED and CurrentGameMode and #characters == 0 then
+    if isPlayerMode() and CurrentGameMode and #characters == 0 then
         pendingAccountContextRefresh = false
         EnterGame.show()
         showNoCharactersGate()
         return
     end
 
+    -- OTC-013: Jeśli konto jest zbanowane, pokaż komunikat bana zamiast listy postaci
+    if account.banned then
+        local banMsg = "Twoje konto jest zablokowane.\n"
+        local reason = account.banReason or ""
+        if #reason > 0 then
+            banMsg = banMsg .. "Powod: " .. reason .. "\n"
+        end
+        if account.banPermanent then
+            banMsg = banMsg .. "Blokada: na stale"
+        else
+            local banUntil = tonumber(account.banExpiresAt) or 0
+            local hoursLeft = math.max(0, math.floor((banUntil - os.time()) / 3600))
+            if hoursLeft > 24 then
+                local daysLeft = math.floor(hoursLeft / 24)
+                banMsg = banMsg .. "Wygasa za: " .. daysLeft .. " dni"
+            elseif hoursLeft > 0 then
+                banMsg = banMsg .. "Wygasa za: " .. hoursLeft .. "h"
+            else
+                banMsg = banMsg .. "Wygasa wkrotce"
+            end
+        end
+        local banBox = displayErrorBox("Konto zablokowane", banMsg)
+        connect(banBox, { onOk = EnterGame.show })
+        return
+    end
+
     CharacterList.create(characters, account, otui)
     CharacterList.show()
+
+    -- OTC-009: Po zalogowaniu pobierz świeży kontekst konta z API
+    fetchAccountContext()
 
     if motdEnabled then
         local lastMotdNumber = g_settings.getNumber('motd')
@@ -445,9 +589,23 @@ function EnterGame.init()
     end
 
     if GameModes then
-        -- === Pokaż panel wyboru trybu gry (GameModes zdefiniowane) ===
-        -- Działa zarówno w trybie CLIENT_LOCKED jak i DEV (CLIENT_LOCKED=false)
-        EnterGame.showGameModeSelection()
+        -- Jeśli tryb przyszedl jako hint z launchera, ustawiamy startowy tryb sesji.
+        -- User nadal moze uzyc "Zmien tryb" w instalce/kliencie.
+        if CurrentGameMode and GameModes[CurrentGameMode] then
+            EnterGame.selectGameMode(CurrentGameMode)
+        -- LOG-007: W dev mode zapamiętaj ostatni tryb między restartami
+        elseif not isPlayerMode() then
+            local saved = g_settings.get('lastGameMode')
+            if saved and saved ~= "" and GameModes[saved] then
+                EnterGame.selectGameMode(saved)
+            else
+                EnterGame.showGameModeSelection()
+            end
+        else
+            -- === Pokaż panel wyboru trybu gry (GameModes zdefiniowane) ===
+            -- Działa zarówno w trybie CLIENT_LOCKED jak i DEV (CLIENT_LOCKED=false)
+            EnterGame.showGameModeSelection()
+        end
     elseif Servers_init then
         if table.size(Servers_init) == 1 then
             local hostInit, valuesInit = next(Servers_init)
@@ -476,7 +634,7 @@ function EnterGame.init()
     })
 
     if g_app.isRunning() and not g_game.isOnline() then
-        enterGame:show()
+        EnterGame.show()
     end
 end
 
@@ -495,28 +653,40 @@ function EnterGame.showPanels()
 end
 
 function EnterGame.firstShow()
+    if isPlayerMode() and not hasLaunchTokenContext() then
+        showLauncherRequiredScreen("no_context")
+        return
+    end
+
     EnterGame.show()
+
+    -- LOG-001: Jeśli tryb gry nie jest jeszcze wybrany, nie próbuj logowania.
+    -- Panel wyboru trybu jest już widoczny (ustawiony w init()).
+    -- Gracz najpierw musi wybrać tryb — selectGameMode() odpali triggerLauncherAutoLogin().
+    if GameModes and not gameModeSelected then
+        return
+    end
 
     local account = g_crypt.decrypt(g_settings.get('account'))
     local password = g_crypt.decrypt(g_settings.get('password'))
     local host = g_settings.get('host')
     local autologin = g_settings.getBoolean('autologin')
 
-    -- Launcher credentials: higher priority than saved settings.
-    -- Launcher przekazuje email/hasło przez env OTC_ACCOUNT / OTC_PASSWORD.
+    -- Launcher startup context: higher priority than saved settings.
+    -- Launcher przekazuje opcjonalny email i session token przez env.
     local launcherAccount = G.launcherAccount or ""
-    local launcherPassword = G.launcherPassword or ""
-    local hasLauncherCreds = #launcherAccount > 0 and #launcherPassword > 0
+    local launcherSessionToken = G.launcherSessionToken or ""
+    local hasLauncherSession = #launcherSessionToken > 0
 
-    if hasLauncherCreds then
-        EnterGame.setAccountName(launcherAccount)
-        EnterGame.setPassword(launcherPassword)
-        -- Wyczyść globale po użyciu (bezpieczeństwo)
+    -- LOG-002: W bloku launcherowym tylko ustawiamy pola konta.
+    -- Nie wywołujemy doLogin() — triggerLauncherAutoLogin() na końcu firstShow
+    -- zadba o jednokrotne wywołanie loginu (z guardem launcherAutoLoginAttempted).
+    if hasLauncherSession then
+        if #launcherAccount > 0 then
+            EnterGame.setAccountName(launcherAccount)
+        end
+        EnterGame.setPassword("")
         G.launcherAccount = nil
-        G.launcherPassword = nil
-        addEvent(function()
-            EnterGame.doLogin()
-        end)
     elseif #host > 0 and #password > 0 and #account > 0 and autologin then
         addEvent(function()
             if not g_settings.getBoolean('autologin') then
@@ -736,6 +906,11 @@ function EnterGame.show()
         return
     end
 
+    if isPlayerMode() and not hasLaunchTokenContext() then
+        showLauncherRequiredScreen(launcherContextState or "no_context")
+        return
+    end
+
     enterGame:show()
     enterGame:raise()
     enterGame:focus()
@@ -830,30 +1005,17 @@ function EnterGame.toggleAuthenticatorToken(clientVersion, init)
     local authenticatorTokenLabel = getEnterGameWidget('authenticatorTokenLabel')
     if authenticatorTokenLabel then
         authenticatorTokenLabel:setOn(enabled)
+        authenticatorTokenLabel:setVisible(enabled)
     end
     local authenticatorTokenTextEdit = getEnterGameWidget('authenticatorTokenTextEdit')
     if authenticatorTokenTextEdit then
         authenticatorTokenTextEdit:setOn(enabled)
+        authenticatorTokenTextEdit:setVisible(enabled)
     end
 
-    local newHeight = enterGame:getHeight()
-    local newY = enterGame:getY()
-    if enabled then
-        newY = newY - enterGame.authenticatorHeight
-        newHeight = newHeight + enterGame.authenticatorHeight
-    else
-        newY = newY + enterGame.authenticatorHeight
-        newHeight = newHeight - enterGame.authenticatorHeight
-    end
-
-    if not init then
-        enterGame:breakAnchors()
-        enterGame:setY(newY)
-        enterGame:bindRectToParent()
-    end
-
-    enterGame:setHeight(newHeight)
     enterGame.authenticatorEnabled = enabled
+    -- LOG-005: Automatyczne dopasowanie zamiast ręcznego przeliczania
+    recalculateWindowSize()
 end
 
 function EnterGame.toggleStayLoggedBox(clientVersion, init)
@@ -868,26 +1030,12 @@ function EnterGame.toggleStayLoggedBox(clientVersion, init)
     local stayLoggedBox = getEnterGameWidget('stayLoggedBox')
     if stayLoggedBox then
         stayLoggedBox:setOn(enabled)
+        stayLoggedBox:setVisible(enabled)
     end
 
-    local newHeight = enterGame:getHeight()
-    local newY = enterGame:getY()
-    if enabled then
-        newY = newY - enterGame.stayLoggedBoxHeight
-        newHeight = newHeight + enterGame.stayLoggedBoxHeight
-    else
-        newY = newY + enterGame.stayLoggedBoxHeight
-        newHeight = newHeight - enterGame.stayLoggedBoxHeight
-    end
-
-    if not init then
-        enterGame:breakAnchors()
-        enterGame:setY(newY)
-        enterGame:bindRectToParent()
-    end
-
-    enterGame:setHeight(newHeight)
     enterGame.stayLoggedBoxEnabled = enabled
+    -- LOG-005: Automatyczne dopasowanie zamiast ręcznego przeliczania
+    recalculateWindowSize()
 end
 
 function EnterGame.onClientVersionChange(comboBox, text, data)
@@ -932,7 +1080,6 @@ function EnterGame.tryHttpLogin(clientVersion, httpLogin)
         -- Fallback: parsuj G.host jak dotychczas (brak GameModes / brak httpLoginUrl)
         host, path = G.host:match("([^/]+)/([^/].*)")
     end
-    local url = G.host
 
     if not G.port then
         -- FIX-W1: Poprawiona logika — CLIENT_LOCKED zawsze używa HTTPS (443).
@@ -969,6 +1116,8 @@ function EnterGame.tryHttpLogin(clientVersion, httpLogin)
     local http = LoginHttp.create()
     -- E10: Przekaż launchToken z launchera (env OTC_LAUNCH_TOKEN) do C++ → JSON body
     http:setLaunchToken(G.launchToken or "")
+    http:setSessionToken(G.launcherSessionToken or "")
+    G.launcherSessionToken = nil
     -- FIX18: Przekaż gameMode (classic74/modern) do C++ → JSON body login
     http:setGameMode(CurrentGameMode or "")
     http:httpLogin(host, path, G.port, G.account, G.password, G.requestId, httpLogin)
@@ -990,6 +1139,7 @@ function EnterGame.loginSuccess(requestId, jsonSession, jsonWorlds, jsonCharacte
     if G.requestId ~= requestId then
         return
     end
+    launcherContextState = nil
 
     local worlds = {}
     for _, world in ipairs(json.decode(jsonWorlds)) do
@@ -997,7 +1147,8 @@ function EnterGame.loginSuccess(requestId, jsonSession, jsonWorlds, jsonCharacte
             name = world.name,
             ip = world.externaladdressprotected or world.externaladdress,
             port = world.externalportprotected or world.externalport,
-            previewState = world.previewstate == 1
+            previewState = world.previewstate == 1,
+            onlinePlayers = world.online_players or 0  -- OTC-014: status serwera
         }
     end
 
@@ -1021,11 +1172,17 @@ function EnterGame.loginSuccess(requestId, jsonSession, jsonWorlds, jsonCharacte
             worldName = world.name,
             worldIp = world.ip,
             worldPort = world.port,
-            previewState = world.previewState  -- FIX63: camelCase (world table uses previewState)
+            previewState = world.previewState,  -- FIX63: camelCase (world table uses previewState)
+            onlinePlayers = world.onlinePlayers  -- OTC-014
         }
     end
 
-    local session = json.decode(jsonSession)
+    local ok, session = pcall(json.decode, jsonSession)
+    if not ok or type(session) ~= "table" then
+        g_logger.error("[loginSuccess] Invalid session JSON from server")
+        onError(nil, "Serwer zwrocil nieprawidlowa odpowiedz. Sprobuj ponownie.", nil)
+        return
+    end
 
     local premiumUntil = tonumber(session.premiumuntil)
 
@@ -1035,10 +1192,31 @@ function EnterGame.loginSuccess(requestId, jsonSession, jsonWorlds, jsonCharacte
         subStatus = premiumUntil > os.time() and SubscriptionStatus.Premium or SubscriptionStatus.Free
     }
 
+    -- OTC-013: Sprawdź ban konta z session response
+    if session.accountBan then
+        local banExpires = tonumber(session.accountBan.expiresAt) or 0
+        if banExpires == 0 or banExpires > os.time() then
+            account.banned = true
+            account.banReason = session.accountBan.reason or ""
+            account.banExpiresAt = banExpires
+            account.banPermanent = (banExpires == 0)
+        end
+    end
+
     -- set session key
     G.sessionKey = session.sessionkey
     -- FIX28: Legacy key (account\npassword) do połączenia bez ticket-gate
     G.legacySessionKey = session.key or G.sessionKey
+
+    -- LUA-006: Populate C++ allowed worlds list (loginWorld() validates against it)
+    if isPlayerMode() and g_game.clearAllowedWorlds then
+        g_game.clearAllowedWorlds()
+        for _, world in pairs(worlds) do
+            if world.ip and world.port then
+                g_game.addAllowedWorld(world.ip, world.port)
+            end
+        end
+    end
 
     onCharacterList(nil, characters, account)
 end
@@ -1061,7 +1239,7 @@ G.pendingCharInfo = nil    -- charInfo czekający na ticket
 
 -- Żądaj ticket od ticket.php (wywoływane z characterlist.lua przed g_game.loginWorld)
 function EnterGame.requestTicket(charInfo)
-    if not CLIENT_LOCKED or not CurrentGameMode then
+    if not isPlayerMode() or not CurrentGameMode then
         -- Brak ticket flow — połącz bezpośrednio
         EnterGame.onTicketBypassed(charInfo)
         return
@@ -1403,12 +1581,10 @@ function EnterGame.setUniqueServer(host, port, protocol, windowWidth, windowHeig
         windowWidth = 380
     end
     enterGame:setWidth(windowWidth)
-    if not windowHeight then
-        windowHeight = 210
-    end
 
-    enterGame:setHeight(windowHeight)
+    -- LOG-005: Wysokość przeliczana automatycznie zamiast hardcoded
     enterGame.disableToken = true
+    recalculateWindowSize()
 
     -- preload the assets
     -- this is for the client_bottommenu module
@@ -1429,6 +1605,68 @@ end
 -- A2/A3: WYBÓR TRYBU GRY (GameMode)
 -- ============================================================
 
+-- LOG-003: Sortowanie kluczy GameModes (pairs() jest niedeterministyczny w Lua)
+local function getSortedGameModeKeys()
+    local keys = {}
+    if not GameModes then return keys end
+    for k, _ in pairs(GameModes) do
+        table.insert(keys, k)
+    end
+    table.sort(keys)
+    return keys
+end
+
+-- LOG-003: Wyczyść dynamicznie utworzone przyciski trybów z kontenera
+local function clearGameModeButtons()
+    local container = getEnterGameWidget('gameModeButtonsContainer')
+    if not container then return end
+    local children = {}
+    for i = 1, container:getChildCount() do
+        table.insert(children, container:getChildByIndex(i))
+    end
+    for _, child in ipairs(children) do
+        child:destroy()
+    end
+end
+
+-- LOG-005: Automatyczne dopasowywanie rozmiaru okna logowania.
+-- Zamiast hardcoded setHeight() — przelicz z sumy widocznych dzieci.
+-- Używa addEvent() żeby layouty (fit-children itp.) zdążyły się przeliczyć.
+local recalcPending = false
+local function recalculateWindowSize()
+    if not enterGame then return end
+    if recalcPending then return end
+    recalcPending = true
+    addEvent(function()
+        recalcPending = false
+        if not enterGame then return end
+
+        -- Najpierw przelicz panel trybów gry (jeśli widoczny)
+        local panel = getEnterGameWidget('gameModePanel')
+        if panel and panel:isVisible() then
+            local panelH = 0
+            for i = 1, panel:getChildCount() do
+                local child = panel:getChildByIndex(i)
+                if child and child:isVisible() then
+                    panelH = panelH + child:getHeight() + child:getMarginTop() + child:getMarginBottom()
+                end
+            end
+            panel:setHeight(math.max(panelH + 10, 30))
+        end
+
+        -- Przelicz wysokość okna
+        local totalH = 0
+        local padding = 20
+        for i = 1, enterGame:getChildCount() do
+            local child = enterGame:getChildByIndex(i)
+            if child and child:isVisible() and child:getHeight() > 0 then
+                totalH = totalH + child:getHeight() + child:getMarginTop() + child:getMarginBottom()
+            end
+        end
+        enterGame:setHeight(math.max(totalH + padding, 180))
+    end)
+end
+
 -- Pokaż panel wyboru trybu gry (ukryj formularz logowania)
 function EnterGame.showGameModeSelection()
     gameModeSelected = false
@@ -1437,30 +1675,57 @@ function EnterGame.showGameModeSelection()
     local panel = getEnterGameWidget('gameModePanel')
     if not panel then return end
 
-    -- Pokaż panel z przyciskami trybów
-    panel:setVisible(true)
-    panel:setHeight(200)
+    -- Wyczyść stare dynamiczne przyciski
+    clearGameModeButtons()
 
-    -- Pokaż przyciski trybów, ukryj przycisk "Zmień tryb"
-    local btnClassic = getEnterGameWidget('btnClassic74')
-    if btnClassic then btnClassic:setVisible(true) end
-    local lblClassicDesc = getEnterGameWidget('lblClassic74Desc')
-    if lblClassicDesc then lblClassicDesc:setVisible(true) end
-    local btnModern = getEnterGameWidget('btnModern')
-    if btnModern then btnModern:setVisible(true) end
-    local lblModernDesc = getEnterGameWidget('lblModernDesc')
-    if lblModernDesc then lblModernDesc:setVisible(true) end
+    -- LOG-003: Dynamicznie generuj przyciski z tabeli GameModes
+    local container = getEnterGameWidget('gameModeButtonsContainer')
+    if container and GameModes then
+        local sortedKeys = getSortedGameModeKeys()
+        for _, modeKey in ipairs(sortedKeys) do
+            local mode = GameModes[modeKey]
+
+            -- Przycisk trybu
+            local btn = g_ui.createWidget('Button', container)
+            btn:setId('dynBtn_' .. modeKey)
+            btn:setText(mode.name or modeKey)
+            btn:setHeight(28)
+            btn:setMarginTop(8)
+            btn.onClick = function()
+                EnterGame.selectGameMode(modeKey)
+            end
+
+            -- Opis trybu
+            if mode.description and #mode.description > 0 then
+                local desc = g_ui.createWidget('Label', container)
+                desc:setId('dynDesc_' .. modeKey)
+                desc:setText(mode.description)
+                desc:setMarginTop(2)
+                desc:setTextAlign(AlignCenter)
+                desc:setColor('#aaaaaa')
+                desc:setFont('noto-12')
+                desc:setTextAutoResize(true)
+            end
+        end
+    end
+
+    -- Pokaż panel, ukryj "Zmień tryb"
+    panel:setVisible(true)
+
     local btnChange = getEnterGameWidget('btnChangeMode')
     if btnChange then btnChange:setVisible(false) end
 
     local modeLabel = getEnterGameWidget('selectedModeLabel')
     if modeLabel then modeLabel:setVisible(false) end
 
+    local sep = getEnterGameWidget('gameModeSep')
+    if sep then sep:setVisible(true) end
+
     -- Ukryj formularz logowania gdy tryb nie jest wybrany
     EnterGame.setLoginFormVisible(false)
 
-    -- Powiększ okno żeby zmieścić panel
-    enterGame:setHeight(280)
+    -- LOG-005: Automatyczne dopasowanie rozmiaru
+    recalculateWindowSize()
 end
 
 -- Gracz wybrał tryb gry
@@ -1481,35 +1746,64 @@ function EnterGame.selectGameMode(modeKey)
         EnterGame.setHttpLogin(srv.httpLogin or false)
     end
 
-    -- Zaktualizuj panel — ukryj przyciski trybów, pokaż "Zmień tryb" + label
-    local panel = getEnterGameWidget('gameModePanel')
-    if panel then
-        panel:setHeight(50)
-    end
+    -- LOG-003: Ukryj dynamiczne przyciski trybów
+    clearGameModeButtons()
 
-    local btnClassic = getEnterGameWidget('btnClassic74')
-    if btnClassic then btnClassic:setVisible(false) end
-    local lblClassicDesc = getEnterGameWidget('lblClassic74Desc')
-    if lblClassicDesc then lblClassicDesc:setVisible(false) end
-    local btnModern = getEnterGameWidget('btnModern')
-    if btnModern then btnModern:setVisible(false) end
-    local lblModernDesc = getEnterGameWidget('lblModernDesc')
-    if lblModernDesc then lblModernDesc:setVisible(false) end
+    -- Zaktualizuj panel — pokaż "Zmień tryb" + label
+    local panel = getEnterGameWidget('gameModePanel')
+
+    local sep = getEnterGameWidget('gameModeSep')
+    if sep then sep:setVisible(false) end
 
     local btnChange = getEnterGameWidget('btnChangeMode')
-    if btnChange then btnChange:setVisible(true) end
+    -- LOG-006: W player mode tryb jest jednorazowy na sesję — "Zmień tryb" ukryty.
+    if btnChange then btnChange:setVisible(not isPlayerMode()) end
+
+    -- LOG-009: W player mode Create Account jest ukryty (rejestracja przez launcher/WWW)
+    local btnCreate = getEnterGameWidget('btnCreateNewAccount')
+    if btnCreate then btnCreate:setVisible(not isPlayerMode()) end
 
     local modeLabel = getEnterGameWidget('selectedModeLabel')
     if modeLabel then
-        modeLabel:setText("Tryb: " .. mode.name)
+        modeLabel:setText(tr("otclient_modules.entergame.mode_prefix") .. mode.name)
         modeLabel:setVisible(true)
     end
 
     -- Pokaż formularz logowania
     EnterGame.setLoginFormVisible(true)
 
-    -- Ustaw rozmiar okna
-    enterGame:setHeight(290)
+    -- OTC-005: W player mode z launch tokenem, ukryj pola email/hasło
+    -- (auto-login nastapi natychmiast, gracz nie musi ich widzieć)
+    if isPlayerMode() and G.launchToken and #tostring(G.launchToken) > 0 then
+        local emailField = getEnterGameWidget('accountNameTextEdit')
+        if emailField then emailField:setVisible(false) end
+        local emailLabel = getEnterGameWidget('emailLabel')
+        if emailLabel then emailLabel:setVisible(false) end
+        local pwField = getEnterGameWidget('accountPasswordTextEdit')
+        if pwField then pwField:setVisible(false) end
+        local pwLabel = getEnterGameWidget('passwordLabel')
+        if pwLabel then pwLabel:setVisible(false) end
+        local rememberBox = getEnterGameWidget('rememberEmailBox')
+        if rememberBox then rememberBox:setVisible(false) end
+        local autoLoginBox = getEnterGameWidget('autoLoginBox')
+        if autoLoginBox then autoLoginBox:setVisible(false) end
+        local stayLoggedBox = getEnterGameWidget('stayLoggedBox')
+        if stayLoggedBox then stayLoggedBox:setVisible(false) end
+
+        local infoLabel = getEnterGameWidget('serverInfoLabel')
+        if infoLabel then
+            infoLabel:setText(tr("otclient_modules.entergame.auto_login_msg"))
+            infoLabel:setVisible(true)
+        end
+    end
+
+    -- LOG-005: Automatyczne dopasowanie rozmiaru
+    recalculateWindowSize()
+
+    -- LOG-007: Zapamiętaj tryb w dev mode (żeby nie wybierać po restarcie)
+    if not isPlayerMode() then
+        g_settings.set('lastGameMode', modeKey)
+    end
 
     g_logger.info("GameMode selected: " .. modeKey .. " (" .. mode.name .. ")")
     triggerLauncherAutoLogin()

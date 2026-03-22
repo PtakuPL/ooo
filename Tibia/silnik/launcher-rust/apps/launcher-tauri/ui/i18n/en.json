@@ -32,9 +32,18 @@
     "client": "Client:",
     "channel": "Channel:",
     "status": "Status:",
+    "launchMode": "Launch mode:",
+    "sessionMode": "API session:",
+    "charactersAll": "Characters (all):",
+    "charactersClassic": "Characters (Classic 7.4):",
+    "charactersModern": "Characters (Modern):",
     "servers": "🖥 Servers",
     "serverMainName": "RedDaxe.pl — Tibia 14.20+",
     "serverRetroName": "RedDaxe.pl — Retro 7.4",
+    "serverClassicName": "Classic 7.4",
+    "serverModernName": "Modern",
+    "totalPlayers": "{0} players online",
+    "reddaxeStatus": "RedDaxe:",
     "players": "Players",
     "ping": "Ping",
     "currentVersion": "Current version:",
@@ -73,6 +82,8 @@
     "registeringAccount": "🆕 Registering…",
     "createCharacterClassic": "🧙 Create character Tibia 7.4",
     "createCharacterModern": "⚔ Create character Modern",
+    "createCharacter": "🧙 Create character",
+    "refreshAccountContext": "🔄 Refresh account context",
     "rulesAll": "📜 Rules (all)",
     "rulesClassic": "📜 Rules Classic 7.4",
     "rulesModern": "📜 Rules Modern",
@@ -106,7 +117,9 @@
     "status": "Status",
     "downloads": "Downloads",
     "repair": "Repair",
-    "settings": "Settings"
+    "settings": "Settings",
+    "website": "🌐 WWW",
+    "myAccount": "👤 Account"
   },
   "phase": {
     "checking": "checking…",
@@ -132,7 +145,9 @@
     }
   },
   "repair": {
-    "apiUnavailable": "Could not connect to API"
+    "apiUnavailable": "Could not connect to API",
+    "apiOffline": "API server unavailable. Check your internet connection and click Refresh.",
+    "refresh": "🔄 Refresh"
   },
   "downloads": {
     "loading": "Loading catalog…",
@@ -163,7 +178,17 @@
   "server": {
     "online": "online",
     "offline": "offline",
-    "maintenance": "maintenance"
+    "maintenance": "maintenance",
+    "active": "active",
+    "full": "full"
+  },
+  "status": {
+    "reddaxeOnline": "✅ Active",
+    "reddaxeOffline": "❌ Unavailable",
+    "modeSelectPlaceholder": "Select server…",
+    "modeAll": "All",
+    "modeClassic": "Classic 7.4",
+    "modeModern": "Modern"
   },
   "alerts": {
     "logsExported": "Logs exported to:\n{0}",
@@ -182,12 +207,27 @@
     "accountContextRefreshPending": "Return to the launcher after creating a character to refresh account context.",
     "accountContextRefreshed": "Account context refreshed.",
     "accountContextRefreshErrorGeneric": "Could not refresh account context. Please try again.",
+    "accountContextLoading": "Loading account context…",
+    "launchModeRequired": "Select a server (Classic 7.4 or Modern) before launching the game.",
+    "playBlockedNoCharacterOnMode": "No characters on server {0}. Create a character first.",
+    "playReadyForMode": "Ready to launch: {0} (characters: {1}).",
+    "profileSwitched": "Active profile switched to: {0}.",
+    "sessionExpiredRelogin": "Session expired. Please log in again.",
     "websiteLauncherSyncSuccess": "The launcher has been linked with your active website session.",
     "websiteLauncherSyncErrorGeneric": "Could not sync the launcher with your website session.",
+    "websiteLauncherSyncExpiredRetry": "This link expired or was already used. Generate a new link and try again.",
+    "createCharacterModeRequired": "Choose the server mode first to create a character.",
     "createCharacterFallbackMissingSession": "No sessionKey provided. Opening website form without auto-login.",
     "createCharacterFallbackError": "Could not prepare website auto-login ({0}). Opening form without auto-login.",
     "createCharacterFallbackErrorGeneric": "Could not prepare website auto-login. Opening form without auto-login.",
-    "antiTamperRepairFailed": "Automatic anti-tamper repair failed. Run manual update or installation repair."
+    "antiTamperRepairFailed": "Automatic anti-tamper repair failed. Run manual update or installation repair.",
+    "sessionExpiredPleaseRelogin": "Session expired. Please log in again.",
+    "selectServerRequired": "Your account mode is \"All servers\". Choose which server to play on:",
+    "characters": "characters",
+    "selectServerConfirmClassic": "Click OK to select Classic 7.4.\nClick Cancel to select Modern.",
+    "selectServerConfirmModern": "Click OK to select Modern.\nClick Cancel to cancel.",
+    "noCharactersOnServer": "You have no characters on {0} server.",
+    "noCharactersCreatePrompt": "Would you like to open the character creation page in your browser?"
   },
   "errors": {
     "launcherUpdateRequired": "Launcher update required to v{0}",

@@ -6,6 +6,13 @@ local serverTextList = nil
 local removeWindow = nil
 local servers = {}
 
+local function isPlayerMode()
+    if g_game and g_game.isPlayerMode then
+        return g_game.isPlayerMode()
+    end
+    return CLIENT_LOCKED
+end
+
 -- public functions
 function ServerList.init()
     serverListWindow = g_ui.displayUI('serverlist')
@@ -13,7 +20,7 @@ function ServerList.init()
     local processedServers = {}
 
     -- Przy CLIENT_LOCKED serwery pochodzą wyłącznie z GameModes
-    if CLIENT_LOCKED then
+    if isPlayerMode() then
         servers = {}
         -- FIX14: Wypełnij ServerList z GameModes, żeby lista nie była pusta
         -- FIX-AUD7: Klucz = host:port (unikamy nadpisania gdy 2 GameModes współdzielą host)
@@ -79,7 +86,7 @@ function ServerList.terminate()
     ServerList.destroy()
 
     -- Przy CLIENT_LOCKED nie zapisujemy do g_settings — brak persystencji listy
-    if not CLIENT_LOCKED then
+    if not isPlayerMode() then
         g_settings.setNode('ServerList', servers)
     end
 
@@ -116,7 +123,7 @@ end
 function ServerList.add(host, port, protocol, httpLogin, load)
     -- A4: blokada dodawania serwerów przez użytkownika gdy klient jest zablokowany
     -- load=true oznacza wewnętrzne ładowanie (ServerList.load) — to przepuszczamy
-    if CLIENT_LOCKED and not load then
+    if isPlayerMode() and not load then
         return false, 'Client is locked — server list is read-only'
     end
 
@@ -162,7 +169,7 @@ end
 
 function ServerList.remove(widget)
     -- A4: blokada usuwania serwerów gdy klient jest zablokowany
-    if CLIENT_LOCKED then
+    if isPlayerMode() then
         return
     end
 
@@ -217,14 +224,14 @@ function ServerList.show()
     local buttonAdd = serverListWindow:getChildById('buttonAdd')
     local buttonOk = serverListWindow:getChildById('buttonOk')
     if buttonAdd then
-        buttonAdd:setVisible(not CLIENT_LOCKED)
+        buttonAdd:setVisible(not isPlayerMode())
     end
     if buttonOk then
-        buttonOk:setVisible(not CLIENT_LOCKED)
+        buttonOk:setVisible(not isPlayerMode())
     end
 
     -- Ukryj przyciski "x" (remove) na każdym wpisie serwera
-    if CLIENT_LOCKED and serverTextList then
+    if isPlayerMode() and serverTextList then
         for _, child in ipairs(serverTextList:getChildren()) do
             local removeBtn = child:getChildById('remove')
             if removeBtn then

@@ -174,6 +174,21 @@ void Application::registerLuaFunctions()
     g_lua.bindSingletonFunction("g_configs", "load", &ConfigManager::load, &g_configs);
     g_lua.bindSingletonFunction("g_configs", "unload", &ConfigManager::unload, &g_configs);
     g_lua.bindSingletonFunction("g_configs", "create", &ConfigManager::create, &g_configs);
+    g_lua.bindSingletonFunction("g_configs", "isDevMode", &ConfigManager::isDevMode, &g_configs);
+    g_lua.bindSingletonFunction("g_configs", "isClientLocked", &ConfigManager::isClientLocked, &g_configs);
+    g_lua.bindSingletonFunction("g_configs", "getStartupGameMode", &ConfigManager::getStartupGameMode, &g_configs);
+    // LUA-003: GameModes read-only access
+    g_lua.bindSingletonFunction("g_configs", "getGameModeCount", &ConfigManager::getGameModeCount, &g_configs);
+    g_lua.bindSingletonFunction("g_configs", "hasGameMode", &ConfigManager::hasGameMode, &g_configs);
+    g_lua.bindSingletonFunction("g_configs", "getGameModeName", &ConfigManager::getGameModeName, &g_configs);
+    g_lua.bindSingletonFunction("g_configs", "getGameModeDescription", &ConfigManager::getGameModeDescription, &g_configs);
+    g_lua.bindSingletonFunction("g_configs", "getGameModeHost", &ConfigManager::getGameModeHost, &g_configs);
+    g_lua.bindSingletonFunction("g_configs", "getGameModePort", &ConfigManager::getGameModePort, &g_configs);
+    g_lua.bindSingletonFunction("g_configs", "getGameModeProtocol", &ConfigManager::getGameModeProtocol, &g_configs);
+    g_lua.bindSingletonFunction("g_configs", "getGameModeHttpLogin", &ConfigManager::getGameModeHttpLogin, &g_configs);
+    g_lua.bindSingletonFunction("g_configs", "getGameModeHttpLoginUrl", &ConfigManager::getGameModeHttpLoginUrl, &g_configs);
+    g_lua.bindSingletonFunction("g_configs", "getGameModeFeature", &ConfigManager::getGameModeFeature, &g_configs);
+    g_lua.bindSingletonFunction("g_configs", "getGameModeAllowedWorldIds", &ConfigManager::getGameModeAllowedWorldIds, &g_configs);
 
     // Logger
     g_lua.registerSingletonClass("g_logger");
@@ -194,6 +209,7 @@ void Application::registerLuaFunctions()
     g_lua.bindClassStaticFunction<LoginHttp>("create", [] { return std::make_shared<LoginHttp>(); });
     g_lua.bindClassMemberFunction<LoginHttp>("httpLogin", &LoginHttp::httpLogin);
     g_lua.bindClassMemberFunction<LoginHttp>("setLaunchToken", &LoginHttp::setLaunchToken);  // E10
+    g_lua.bindClassMemberFunction<LoginHttp>("setSessionToken", &LoginHttp::setSessionToken);
     g_lua.bindClassMemberFunction<LoginHttp>("setGameMode", &LoginHttp::setGameMode);        // FIX18
     g_lua.bindClassMemberFunction<LoginHttp>("requestTicket", &LoginHttp::requestTicket);
 

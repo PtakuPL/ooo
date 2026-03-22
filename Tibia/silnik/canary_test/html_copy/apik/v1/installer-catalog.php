@@ -46,12 +46,19 @@ if ($launcherSha256Linux !== '' && !preg_match('/^[a-f0-9]{64}$/', $launcherSha2
 // ── type filter ──
 // ?type=launcher  → only launcher artifacts
 // ?type=installer → only installer artifacts (legacy)
+// ?type=bootstrap → only bootstrap artifacts
+// ?type=client    → only client pack artifacts (player/staff)
 // ?type=all (or omitted) → all artifacts
 $requestedType = strtolower(trim($_GET['type'] ?? 'all'));
-$allowedTypes = ['all', 'launcher', 'installer', 'bootstrap'];
+$allowedTypes = ['all', 'launcher', 'installer', 'bootstrap', 'client'];
 if (!in_array($requestedType, $allowedTypes, true)) {
     $requestedType = 'all';
 }
+
+// ── profile filter (for client packs) ──
+// ?profile=player → only player client pack
+// ?profile=staff  → only staff client pack
+$requestedProfile = strtolower(trim($_GET['profile'] ?? ''));
 
 // Build the full artifact list
 $allArtifacts = [];
@@ -161,10 +168,81 @@ $installerArtifact = [
 
 $allArtifacts[] = $installerArtifact;
 
+// ── Client pack artifacts (type = "client") ──
+// Paczka klienta gry pobierana przez launcher (manifest-based update)
+$clientPackVersion = trim((string)($env['CLIENT_PACK_VERSION'] ?? ''));
+$clientPackProfile = trim((string)($env['CLIENT_PACK_PROFILE'] ?? 'player'));
+$clientPackUrlWin = trim((string)($env['CLIENT_PACK_DOWNLOAD_URL_WIN'] ?? ''));
+$clientPackUrlLinux = trim((string)($env['CLIENT_PACK_DOWNLOAD_URL_LINUX'] ?? ''));
+$clientPackFilenameWin = trim((string)($env['CLIENT_PACK_FILENAME_WIN'] ?? ''));
+$clientPackFilenameLinux = trim((string)($env['CLIENT_PACK_FILENAME_LINUX'] ?? ''));
+$clientPackSha256Win = strtolower(trim((string)($env['CLIENT_PACK_SHA256_WIN'] ?? '')));
+$clientPackSha256Linux = strtolower(trim((string)($env['CLIENT_PACK_SHA256_LINUX'] ?? '')));
+$clientPackReleaseDate = trim((string)($env['CLIENT_PACK_RELEASE_DATE'] ?? date('Y-m-d')));
+$clientPackNotes = trim((string)($env['CLIENT_PACK_NOTES'] ?? 'Client package'));
+$clientPackManifestUrlWin = trim((string)($env['CLIENT_PACK_MANIFEST_URL_WIN'] ?? ''));
+$clientPackManifestUrlLinux = trim((string)($env['CLIENT_PACK_MANIFEST_URL_LINUX'] ?? ''));
+
+if ($clientPackSha256Win !== '' && !preg_match('/^[a-f0-9]{64}$/', $clientPackSha256Win)) {
+    $clientPackSha256Win = '';
+}
+if ($clientPackSha256Linux !== '' && !preg_match('/^[a-f0-9]{64}$/', $clientPackSha256Linux)) {
+    $clientPackSha256Linux = '';
+}
+
+if ($clientPackVersion !== '' && $clientPackUrlWin !== '') {
+    $allArtifacts[] = [
+        'id' => 'client-' . $clientPackProfile . '-win',
+        'name' => 'Player Client',
+        'type' => 'client',
+        'clientProfile' => $clientPackProfile,
+        'platform' => 'windows',
+        'arch' => 'x86_64',
+        'channel' => 'stable',
+        'version' => $clientPackVersion,
+        'filename' => $clientPackFilenameWin,
+        'url' => $clientPackUrlWin,
+        'sha256' => $clientPackSha256Win,
+        'manifestUrl' => $clientPackManifestUrlWin,
+        'releaseDate' => $clientPackReleaseDate,
+        'notes' => $clientPackNotes,
+    ];
+}
+
+if ($clientPackVersion !== '' && $clientPackUrlLinux !== '') {
+    $allArtifacts[] = [
+        'id' => 'client-' . $clientPackProfile . '-linux',
+        'name' => 'Player Client',
+        'type' => 'client',
+        'clientProfile' => $clientPackProfile,
+        'platform' => 'linux',
+        'arch' => 'x86_64',
+        'channel' => 'stable',
+        'version' => $clientPackVersion,
+        'filename' => $clientPackFilenameLinux,
+        'url' => $clientPackUrlLinux,
+        'sha256' => $clientPackSha256Linux,
+        'manifestUrl' => $clientPackManifestUrlLinux,
+        'releaseDate' => $clientPackReleaseDate,
+        'notes' => $clientPackNotes,
+    ];
+}
+
 // Filter by type
 if ($requestedType !== 'all') {
     $allArtifacts = array_values(array_filter($allArtifacts, function ($a) use ($requestedType) {
         return ($a['type'] ?? '') === $requestedType;
+    }));
+}
+
+// Filter by profile (only applies to client pack artifacts)
+if ($requestedProfile !== '' && in_array($requestedProfile, ['player', 'staff', 'dev'], true)) {
+    $allArtifacts = array_values(array_filter($allArtifacts, function ($a) use ($requestedProfile) {
+        // Non-client artifacts pass through, client artifacts must match profile
+        if (($a['type'] ?? '') !== 'client') {
+            return true;
+        }
+        return ($a['clientProfile'] ?? '') === $requestedProfile;
     }));
 }
 

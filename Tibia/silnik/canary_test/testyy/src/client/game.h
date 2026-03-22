@@ -885,8 +885,15 @@ public:
 
     bool canPerformGameAction() const;
 
+    bool isPlayerMode() const;
     bool isOnline() { return m_online; }
     bool isLogging() { return !m_online && m_protocolGame; }
+
+    // LUA-006: Allowed worlds — Lua sets them after login, loginWorld validates
+    void clearAllowedWorlds();
+    void addAllowedWorld(const std::string& host, int port);
+    bool isWorldAllowed(const std::string& host, int port) const;
+    int getAllowedWorldCount() const { return static_cast<int>(m_allowedWorlds.size()); }
     bool isDead() { return m_dead; }
     bool isAttacking() { return !!m_attackingCreature && !m_attackingCreature->isRemoved(); }
     bool isFollowing() { return !!m_followingCreature && !m_followingCreature->isRemoved(); }
@@ -1035,6 +1042,9 @@ private:
     std::string m_clientSignature;
     std::vector<uint8_t > m_gmActions;
     std::bitset<Otc::LastGameFeature> m_features;
+
+    // LUA-006: Allowed world hosts (populated by Lua after login)
+    std::vector<std::pair<std::string, int>> m_allowedWorlds;
 
     stdext::map<int, ContainerPtr> m_containers;
     stdext::map<int, Vip> m_vips;

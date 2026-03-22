@@ -12,6 +12,9 @@
     <header id="header">
       <h1 id="app-title">RedDaxe.pl</h1>
       <span id="version-badge" class="badge">v---</span>
+      <div class="header-spacer"></div>
+      <button id="btn-header-www" class="header-link" title="Strona WWW">🌐</button>
+      <button id="btn-header-account" class="header-link" title="Moje konto">👤</button>
     </header>
 
     <!-- Ekran: Logowanie (login-first gate) -->
@@ -122,7 +125,12 @@
 
     <!-- Ekran: Status / Gotowy -->
     <section id="screen-status" class="screen">
+      <!-- Status RedDaxe -->
       <div class="status-card">
+        <div class="status-row">
+          <span id="label-reddaxe-status" class="label">RedDaxe:</span>
+          <span id="reddaxe-health" class="badge badge-phase">sprawdzanie…</span>
+        </div>
         <div class="status-row">
           <span id="label-launcher" class="label">Launcher:</span>
           <span id="status-launcher-ver">---</span>
@@ -147,34 +155,67 @@
         <button id="btn-logout" class="btn btn-secondary btn-compact">🚪 Wyloguj</button>
       </div>
 
-      <!-- Lista serwerów -->
+      <div id="account-context-panel" class="status-card account-context-panel">
+        <div class="status-row">
+          <span id="label-launch-mode" class="label">Tryb startu:</span>
+          <select id="launch-mode-select">
+            <option value="">Wybierz serwer…</option>
+            <option value="classic74">Classic 7.4</option>
+            <option value="modern">Modern</option>
+          </select>
+        </div>
+        <div class="status-row">
+          <span id="label-session-mode" class="label">Sesja API:</span>
+          <span id="ctx-session-mode" class="badge">---</span>
+        </div>
+        <div class="status-row">
+          <span id="label-characters-all" class="label">Postacie (all):</span>
+          <span id="ctx-count-all">0</span>
+        </div>
+        <div class="status-row">
+          <span id="label-characters-classic" class="label">Postacie (Classic 7.4):</span>
+          <span id="ctx-count-classic">0</span>
+        </div>
+        <div class="status-row">
+          <span id="label-characters-modern" class="label">Postacie (Modern):</span>
+          <span id="ctx-count-modern">0</span>
+        </div>
+        <p id="account-context-hint" class="info-text"></p>
+        <div class="actions">
+          <button id="btn-refresh-account-context" class="btn btn-secondary btn-compact">🔄 Odśwież kontekst konta</button>
+          <button id="btn-create-character" class="btn btn-character btn-compact">🧙 Utwórz postać</button>
+        </div>
+      </div>
+
+      <!-- Status gier — accordion -->
       <div class="servers-section">
         <div class="servers-header" id="servers-toggle">
-          <span id="servers-title">🖥 Serwery</span>
+          <span id="servers-title">🎮 Tibia</span>
+          <span id="servers-total-players" class="servers-total-badge">0 graczy</span>
           <span class="servers-arrow" id="servers-arrow">▼</span>
         </div>
         <div class="servers-list" id="servers-list">
-          <div class="server-card" data-server="tibia-main">
+          <div class="server-card" data-server="tibia-classic">
             <div class="server-status-dot dot-offline"></div>
             <div class="server-info">
-              <div id="server-name-main" class="server-name">RedDaxe.pl — Tibia 14.20+</div>
+              <div id="server-name-classic" class="server-name">Classic 7.4</div>
               <div class="server-meta">
-                <span class="server-players">Gracze: <strong id="srv-tibia-main-players">---</strong></span>
-                <span class="server-ping">Ping: <span id="srv-tibia-main-ping">---</span></span>
+                <span class="server-players">Gracze: <strong id="srv-tibia-classic-players">0</strong> / <span id="srv-tibia-classic-max">100</span></span>
+                <span class="server-ping">Ping: <span id="srv-tibia-classic-ping">---</span></span>
               </div>
             </div>
-            <span class="server-status-badge badge" id="srv-tibia-main-status">offline</span>
+            <span class="server-status-badge badge" id="srv-tibia-classic-status">offline</span>
           </div>
-          <div class="server-card" data-server="tibia-retro">
+          <div class="server-card" data-server="tibia-modern">
             <div class="server-status-dot dot-offline"></div>
             <div class="server-info">
-              <div id="server-name-retro" class="server-name">RedDaxe.pl — Retro 7.4</div>
+              <div id="server-name-modern" class="server-name">Modern</div>
               <div class="server-meta">
-                <span class="server-players">Gracze: <strong id="srv-tibia-retro-players">---</strong></span>
-                <span class="server-ping">Ping: <span id="srv-tibia-retro-ping">---</span></span>
+                <span class="server-players">Gracze: <strong id="srv-tibia-modern-players">0</strong> / <span id="srv-tibia-modern-max">100</span></span>
+                <span class="server-ping">Ping: <span id="srv-tibia-modern-ping">---</span></span>
               </div>
             </div>
-            <span class="server-status-badge badge" id="srv-tibia-retro-status">offline</span>
+            <span class="server-status-badge badge" id="srv-tibia-modern-status">offline</span>
           </div>
         </div>
       </div>
@@ -186,16 +227,11 @@
       <input id="launcher-account-password-confirm" type="hidden" />
       <input id="launcher-session-key" type="hidden" />
 
-      <div class="actions">
-        <button id="btn-play" class="btn btn-primary" disabled>▶ Uruchom grę</button>
+      <div class="actions actions-main">
+        <button id="btn-play" class="btn btn-primary btn-play-large" disabled>▶ Uruchom grę</button>
         <button id="btn-check" class="btn btn-secondary">🔄 Sprawdź aktualizacje</button>
-        <button id="btn-create-char-classic" class="btn btn-character">🧙 Utwórz postać Tibia 7.4</button>
-        <button id="btn-create-char-modern" class="btn btn-character">⚔ Utwórz postać Modern</button>
-        <button id="btn-rules-all" class="btn btn-secondary">📜 Zasady (all)</button>
-        <button id="btn-rules-classic" class="btn btn-secondary">📜 Zasady Classic 7.4</button>
-        <button id="btn-rules-modern" class="btn btn-secondary">📜 Zasady Modern</button>
-        <button id="btn-website" class="btn btn-website">🌐 Strona WWW</button>
       </div>
+
     </section>
 
     <!-- Ekran: Aktualizacja -->
@@ -251,6 +287,7 @@
         </div>
       </div>
       <div class="actions">
+        <button id="btn-repair-refresh" class="btn btn-secondary">🔄 Odśwież</button>
         <button id="btn-repair-start" class="btn btn-primary">🔧 Napraw</button>
         <button id="btn-repair-back" class="btn btn-secondary">← Powrót</button>
       </div>

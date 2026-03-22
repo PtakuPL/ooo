@@ -28,6 +28,7 @@
 #include "map.h"
 #include "protocolcodes.h"
 #include "protocolgame.h"
+#include <framework/core/configmanager.h>
 #include <framework/core/application.h>
 #include <framework/core/eventdispatcher.h>
 #include <framework/stdext/string.h>
@@ -39,6 +40,32 @@
 #include <framework/net/packet_recorder.h>
 
 Game g_game;
+
+bool Game::isPlayerMode() const
+{
+    return g_configs.isClientLocked();
+}
+
+// LUA-006: Allowed worlds management for player mode validation
+void Game::clearAllowedWorlds()
+{
+    m_allowedWorlds.clear();
+}
+
+void Game::addAllowedWorld(const std::string& host, int port)
+{
+    m_allowedWorlds.emplace_back(host, port);
+}
+
+bool Game::isWorldAllowed(const std::string& host, int port) const
+{
+    for (const auto& [allowedHost, allowedPort] : m_allowedWorlds) {
+        if (allowedHost == host && allowedPort == port) {
+            return true;
+        }
+    }
+    return false;
+}
 
 void Game::init()
 {
@@ -596,6 +623,17 @@ void Game::loginWorld(const std::string_view account, const std::string_view pas
 
     if (m_protocolVersion == 0)
         throw Exception("Must set a valid game protocol version before logging.");
+
+    // LUA-006: In player mode, verify worldHost:worldPort is in the allowed list
+    // This prevents Lua script tampering from redirecting to a malicious server
+    if (isPlayerMode()) {
+        if (m_allowedWorlds.empty()) {
+            throw Exception("Connection blocked: allowed world list is missing in player mode.");
+        }
+        if (!isWorldAllowed(std::string(worldHost), worldPort)) {
+            throw Exception("Connection blocked: world host is not in the allowed list for this game mode.");
+        }
+    }
 
     // reset the new game state
     resetGameStates();

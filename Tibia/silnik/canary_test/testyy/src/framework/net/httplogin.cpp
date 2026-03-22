@@ -81,6 +81,20 @@ void LoginHttp::setLaunchToken(const std::string& token) {
     this->launchToken = token;
 }
 
+void LoginHttp::setSessionToken(const std::string& token) {
+    if (token.size() > 256) {
+        std::cerr << "[LOGIN] WARNING: sessionToken too long (" << token.size() << " chars), ignoring." << std::endl;
+        return;
+    }
+    if (!std::all_of(token.begin(), token.end(), [](unsigned char c) {
+            return std::isalnum(c);
+        })) {
+        std::cerr << "[LOGIN] WARNING: sessionToken contains invalid characters, ignoring." << std::endl;
+        return;
+    }
+    this->sessionToken = token;
+}
+
 // FIX18: setter gameMode — Lua woła http:setGameMode(mode) przed httpLogin
 void LoginHttp::setGameMode(const std::string& mode) {
     // INS-CPP6: Whitelist — tylko znane tryby gry
@@ -162,6 +176,9 @@ void LoginHttp::httpLogin(const std::string& host, const std::string& path,
         json body = json{ {"email", email}, {"password", password}, {"stayloggedin", true}, {"type", "login"} };
         if (!this->launchToken.empty()) {
             body["launchToken"] = this->launchToken;
+        }
+        if (!this->sessionToken.empty()) {
+            body["sessionToken"] = this->sessionToken;
         }
         // FIX18: gameMode dołączany do body logowania
         if (!this->gameMode.empty()) {
@@ -245,6 +262,9 @@ httplib::Result LoginHttp::loginHttpsJson(const std::string& host,
     json body = { {"email", email}, {"password", password}, {"stayloggedin", true}, {"type", "login"} };
     if (!this->launchToken.empty()) {
         body["launchToken"] = this->launchToken;
+    }
+    if (!this->sessionToken.empty()) {
+        body["sessionToken"] = this->sessionToken;
     }
     // FIX18: gameMode dołączany do body logowania
     if (!this->gameMode.empty()) {

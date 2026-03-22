@@ -393,10 +393,16 @@
 																									<tbody>
 																										<tr>
 																											<td>
-																												<div class="DivWithButton">
-																													<a href="{{URL}}/account/createcharacter">
-																													{% set button_name = 'Create Character' %}
+																												<div class="DivWithButton" style="display:inline-block; margin-right:6px;">
+																													<a href="{{URL}}/account/createcharacter?mode=classic74">
+																													{% set button_name = 'Create Classic 7.4' %}
 																													{% include "blue_button.html.twig" %}
+																													</a>
+																												</div>
+																												<div class="DivWithButton" style="display:inline-block;">
+																													<a href="{{URL}}/account/createcharacter?mode=modern">
+																													{% set button_name = 'Create Modern' %}
+																													{% include "green_button.html.twig" %}
 																													</a>
 																												</div>
 																											</td>

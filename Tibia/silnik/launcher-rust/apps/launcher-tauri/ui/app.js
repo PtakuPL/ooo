@@ -98,6 +98,8 @@ const elChannel = $("#status-channel");
 const elPhase = $("#status-phase");
 const elServerNameMain = $("#server-name-main");
 const elServerNameRetro = $("#server-name-retro");
+const elServerNameClassic = $("#server-name-classic");
+const elServerNameModern = $("#server-name-modern");
 const elLauncherAccountName = $("#launcher-account-name");
 const elLauncherAccountEmail = $("#launcher-account-email");
 const elLauncherAccountPassword = $("#launcher-account-password");
@@ -115,6 +117,14 @@ const btnRulesClassic = $("#btn-rules-classic");
 const btnRulesModern = $("#btn-rules-modern");
 const elLoggedUserEmail = $("#logged-user-email");
 const btnLogout = $("#btn-logout");
+const elLaunchModeSelect = $("#launch-mode-select");
+const elCtxSessionMode = $("#ctx-session-mode");
+const elCtxCountAll = $("#ctx-count-all");
+const elCtxCountClassic = $("#ctx-count-classic");
+const elCtxCountModern = $("#ctx-count-modern");
+const elAccountContextHint = $("#account-context-hint");
+const btnRefreshAccountContext = $("#btn-refresh-account-context");
+const btnCreateCharacter = $("#btn-create-character");
 
 // Login screen
 const elLoginEmail = $("#login-email");
@@ -178,6 +188,7 @@ const btnExportLogs = $("#btn-export-logs");
 const LANGUAGE_STORAGE_KEY = "launcher.locale";
 const ACCOUNT_EMAIL_STORAGE_KEY = "launcher.accountEmail";
 const ACCOUNT_SESSION_KEY_STORAGE_KEY = "launcher.accountSessionKey";
+const LAUNCH_MODE_STORAGE_KEY = "launcher.launchMode";
 const DEFAULT_LOCALE = "pl";
 const SUPPORTED_LOCALES = ["pl", "en", "ar", "he", "fa"];
 const RTL_LOCALES = ["ar", "he", "fa"];
@@ -216,6 +227,8 @@ async function loadI18nDictionaries() {
 let currentLocale = DEFAULT_LOCALE;
 let lastStatus = null;
 let lastProgress = null;
+let launcherAccountContext = null;
+let selectedLaunchMode = "";
 
 function deepGet(obj, path) {
   return path.split(".").reduce((acc, key) => (acc && Object.prototype.hasOwnProperty.call(acc, key) ? acc[key] : undefined), obj);
@@ -363,7 +376,7 @@ function setText(selector, value) {
 }
 
 function applyServerMetaLabels() {
-  ["tibia-main", "tibia-retro"].forEach((serverId) => {
+  ["tibia-classic", "tibia-modern"].forEach((serverId) => {
     const playersEl = $(`#srv-${serverId}-players`);
     if (playersEl && playersEl.parentElement) {
       const playersValue = playersEl.textContent || "---";
@@ -417,6 +430,13 @@ function applyStaticTranslations() {
   setText("#servers-title", t("labels.servers"));
   if (elServerNameMain) elServerNameMain.textContent = t("labels.serverMainName");
   if (elServerNameRetro) elServerNameRetro.textContent = t("labels.serverRetroName");
+  if (elServerNameClassic) elServerNameClassic.textContent = t("labels.serverClassicName");
+  if (elServerNameModern) elServerNameModern.textContent = t("labels.serverModernName");
+  setText("#label-launch-mode", t("labels.launchMode"));
+  setText("#label-session-mode", t("labels.sessionMode"));
+  setText("#label-characters-all", t("labels.charactersAll"));
+  setText("#label-characters-classic", t("labels.charactersClassic"));
+  setText("#label-characters-modern", t("labels.charactersModern"));
   setText("#update-title", t("screens.update"));
   setText("#error-title", t("screens.error"));
   setText("#repair-title", t("screens.repair"));
@@ -444,6 +464,8 @@ function applyStaticTranslations() {
   setText("#btn-launcher-account-register", t("buttons.registerAccount"));
   setText("#btn-create-char-classic", t("buttons.createCharacterClassic"));
   setText("#btn-create-char-modern", t("buttons.createCharacterModern"));
+  setText("#btn-create-character", t("buttons.createCharacter"));
+  setText("#btn-refresh-account-context", t("buttons.refreshAccountContext"));
   setText("#btn-rules-all", t("buttons.rulesAll"));
   setText("#btn-rules-classic", t("buttons.rulesClassic"));
   setText("#btn-rules-modern", t("buttons.rulesModern"));
@@ -477,6 +499,21 @@ function applyStaticTranslations() {
   if (elLanguagePacksEmpty && (!elLanguagePacksList || elLanguagePacksList.children.length === 0)) {
     elLanguagePacksEmpty.textContent = t("languagePacks.loading");
   }
+
+  if (elLaunchModeSelect) {
+    Array.from(elLaunchModeSelect.options).forEach((option) => {
+      if (option.value === "classic74") option.textContent = t("status.modeClassic");
+      else if (option.value === "modern") option.textContent = t("status.modeModern");
+      else option.textContent = t("status.modeSelectPlaceholder");
+    });
+  }
+
+  if (launcherAccountContext) {
+    renderLauncherAccountContext(launcherAccountContext, { preserveHint: true });
+  } else {
+    updatePlayGateState();
+  }
+
   applyServerMetaLabels();
 }
 
@@ -540,17 +577,26 @@ function enterAuthenticatedMode() {
   if (elLoggedUserEmail) elLoggedUserEmail.textContent = email || "---";
   showScreen("status");
   loadStatus();
+  void refreshLauncherAccountContext("auth");
   // Self-update now runs at startup (before login), no need to re-check here
 }
 
 function handleLogout() {
   // Clear session
   saveSessionKey("");
+  void invoke("clear_launcher_session").catch((err) => {
+    console.warn("clear_launcher_session failed:", err);
+  });
   launcherSessionKey = "";
   launcherAccountPassword = "";
+  launcherAccountContext = null;
+  persistSelectedLaunchMode("");
+  renderLauncherAccountContext(null);
+  setAccountContextHint("");
   if (elLoginEmail) elLoginEmail.value = "";
   if (elLoginPassword) elLoginPassword.value = "";
   if (elLoginStatus) { elLoginStatus.style.display = "none"; elLoginStatus.textContent = ""; }
+  if (elLaunchModeSelect) elLaunchModeSelect.value = "";
   showLoginScreen();
 }
 
@@ -682,9 +728,11 @@ function renderStatus(status) {
   else if (status.phase === "error") elPhase.classList.add("badge-error");
 
   btnPlay.disabled = status.phase !== "ready";
-  if (!btnPlay.disabled) {
+  if (btnPlay.textContent !== t("buttons.playChecking")
+    && btnPlay.textContent !== t("buttons.playLaunching")) {
     btnPlay.textContent = t("buttons.play");
   }
+  updatePlayGateState({ preserveHint: true });
 }
 
 async function loadStatus() {
@@ -742,15 +790,23 @@ if (serversToggle) {
 
 // Hardcoded servers (p\u00f3\u017aniej: fetch z API)
 const SERVERS = [
-  { id: "tibia-main", name: "RedDaxe.pl \u2014 Tibia 14.20+", host: null },
-  { id: "tibia-retro", name: "RedDaxe.pl \u2014 Retro 7.4", host: null },
+  { id: "tibia-classic", name: "RedDaxe.pl \u2014 Classic 7.4", host: null },
+  { id: "tibia-modern", name: "RedDaxe.pl \u2014 Modern", host: null },
 ];
 
+function mapServerId(rawId) {
+  const id = String(rawId || "").trim().toLowerCase();
+  if (id === "classic74" || id === "classic" || id === "tibia-retro") return "tibia-classic";
+  if (id === "modern" || id === "tibia-main") return "tibia-modern";
+  return id;
+}
+
 function updateServerStatus(serverId, status, players, ping) {
-  const dot = document.querySelector(`.server-card[data-server="${serverId}"] .server-status-dot`);
-  const badge = $(`#srv-${serverId}-status`);
-  const playersEl = $(`#srv-${serverId}-players`);
-  const pingEl = $(`#srv-${serverId}-ping`);
+  const uiServerId = mapServerId(serverId);
+  const dot = document.querySelector(`.server-card[data-server="${uiServerId}"] .server-status-dot`);
+  const badge = $(`#srv-${uiServerId}-status`);
+  const playersEl = $(`#srv-${uiServerId}-players`);
+  const pingEl = $(`#srv-${uiServerId}-ping`);
 
   if (dot) {
     dot.className = "server-status-dot";
@@ -798,6 +854,7 @@ const btnWebsite = $("#btn-website");
 const WEBSITE_BASE_URL = "https://127.0.0.1";
 let launcherSessionKey = "";
 let launcherAccountPassword = "";  // In-memory only — passed to launch_game, never persisted
+
 let pendingAccountContextRefreshUntil = 0;
 let accountContextRefreshInFlight = false;
 let accountSyncConsumeInFlight = false;
@@ -834,6 +891,182 @@ function saveSessionKey(value) {
     elLauncherSessionKey.value = clean;
   }
   return clean;
+}
+
+function normalizeGameMode(mode) {
+  const normalized = String(mode || "").trim().toLowerCase();
+  if (normalized === "all" || normalized === "classic74" || normalized === "modern") {
+    return normalized;
+  }
+  return "";
+}
+
+function normalizeSelectableLaunchMode(mode) {
+  const normalized = normalizeGameMode(mode);
+  return normalized === "classic74" || normalized === "modern" ? normalized : "";
+}
+
+function getModeLabel(mode) {
+  const normalized = normalizeGameMode(mode);
+  if (normalized === "classic74") return t("status.modeClassic");
+  if (normalized === "modern") return t("status.modeModern");
+  return t("status.modeAll");
+}
+
+function loadSelectedLaunchMode() {
+  return normalizeSelectableLaunchMode(localStorage.getItem(LAUNCH_MODE_STORAGE_KEY) || "");
+}
+
+function persistSelectedLaunchMode(mode) {
+  const clean = normalizeSelectableLaunchMode(mode);
+  selectedLaunchMode = clean;
+  if (clean) localStorage.setItem(LAUNCH_MODE_STORAGE_KEY, clean);
+  else localStorage.removeItem(LAUNCH_MODE_STORAGE_KEY);
+  if (elLaunchModeSelect && elLaunchModeSelect.value !== clean) {
+    elLaunchModeSelect.value = clean;
+  }
+  return clean;
+}
+
+function setAccountContextHint(message, kind = "") {
+  if (!elAccountContextHint) return;
+  const text = String(message || "").trim();
+  if (!text) {
+    elAccountContextHint.textContent = "";
+    elAccountContextHint.classList.remove("hint-error", "hint-ok");
+    return;
+  }
+  elAccountContextHint.textContent = text;
+  elAccountContextHint.classList.remove("hint-error", "hint-ok");
+  if (kind === "error") elAccountContextHint.classList.add("hint-error");
+  if (kind === "ok") elAccountContextHint.classList.add("hint-ok");
+}
+
+function getCharacterCountForMode(mode, context = launcherAccountContext) {
+  const normalized = normalizeSelectableLaunchMode(mode);
+  const counts = context && typeof context === "object" ? context.counts : null;
+  if (!counts || typeof counts !== "object") return 0;
+  const value = counts[normalized];
+  return Number.isFinite(value) ? Number(value) : 0;
+}
+
+function getEffectiveLaunchMode() {
+  const selected = normalizeSelectableLaunchMode(selectedLaunchMode);
+  if (selected) return selected;
+  const sessionMode = normalizeSelectableLaunchMode(launcherAccountContext?.gameMode);
+  if (sessionMode) return sessionMode;
+  return "";
+}
+
+function updatePlayGateState(options = {}) {
+  const preserveHint = Boolean(options.preserveHint);
+  if (!btnPlay) return;
+
+  if (!lastStatus || lastStatus.phase !== "ready") {
+    btnPlay.disabled = true;
+    return;
+  }
+
+  if (!launcherAccountContext) {
+    btnPlay.disabled = true;
+    if (!preserveHint && isAuthenticated) {
+      setAccountContextHint(t("alerts.accountContextLoading"));
+    }
+    return;
+  }
+
+  const sessionMode = normalizeGameMode(launcherAccountContext.gameMode) || "all";
+  const launchMode = getEffectiveLaunchMode();
+
+  if (sessionMode === "all" && !launchMode) {
+    btnPlay.disabled = true;
+    if (!preserveHint) setAccountContextHint(t("alerts.launchModeRequired"), "error");
+    return;
+  }
+
+  if (!launchMode) {
+    btnPlay.disabled = true;
+    if (!preserveHint) setAccountContextHint(t("alerts.launchModeRequired"), "error");
+    return;
+  }
+
+  const count = getCharacterCountForMode(launchMode, launcherAccountContext);
+  if (count <= 0) {
+    btnPlay.disabled = true;
+    if (!preserveHint) {
+      setAccountContextHint(t("alerts.playBlockedNoCharacterOnMode", [getModeLabel(launchMode)]), "error");
+    }
+    return;
+  }
+
+  btnPlay.disabled = false;
+  if (!preserveHint) {
+    setAccountContextHint(t("alerts.playReadyForMode", [getModeLabel(launchMode), count]), "ok");
+  }
+}
+
+function renderLauncherAccountContext(context, options = {}) {
+  const preserveHint = Boolean(options.preserveHint);
+  launcherAccountContext = context && typeof context === "object" ? context : null;
+
+  const sessionMode = normalizeGameMode(launcherAccountContext?.gameMode) || "all";
+  const counts = launcherAccountContext?.counts && typeof launcherAccountContext.counts === "object"
+    ? launcherAccountContext.counts
+    : {};
+
+  if (!selectedLaunchMode) {
+    selectedLaunchMode = loadSelectedLaunchMode();
+  }
+
+  if (sessionMode === "classic74" || sessionMode === "modern") {
+    persistSelectedLaunchMode(sessionMode);
+  } else if (!normalizeSelectableLaunchMode(selectedLaunchMode)) {
+    persistSelectedLaunchMode("");
+  }
+
+  if (elCtxSessionMode) {
+    elCtxSessionMode.textContent = getModeLabel(sessionMode);
+    elCtxSessionMode.className = "badge";
+    if (sessionMode === "all") elCtxSessionMode.classList.add("badge-warn");
+    else elCtxSessionMode.classList.add("badge-ok");
+  }
+  if (elCtxCountAll) elCtxCountAll.textContent = String(Number.isFinite(counts.all) ? counts.all : 0);
+  if (elCtxCountClassic) {
+    elCtxCountClassic.textContent = String(Number.isFinite(counts.classic74) ? counts.classic74 : 0);
+  }
+  if (elCtxCountModern) {
+    elCtxCountModern.textContent = String(Number.isFinite(counts.modern) ? counts.modern : 0);
+  }
+
+  if (elLaunchModeSelect) {
+    const value = normalizeSelectableLaunchMode(selectedLaunchMode);
+    if (elLaunchModeSelect.value !== value) {
+      elLaunchModeSelect.value = value;
+    }
+  }
+
+  updatePlayGateState({ preserveHint });
+}
+
+function isSessionInvalidError(error) {
+  const lower = String(error || "").toLowerCase();
+  return lower.includes("invalid_session")
+    || lower.includes("expired_session")
+    || lower.includes("invalid or expired session")
+    || lower.includes("session_invalid")
+    || lower.includes("session_expired")
+    || lower.includes("missing sessionkey")
+    || lower.includes("missing_session_key")
+    || lower.includes("account_context_refresh_failed: 401")
+    || lower.includes("account_context_refresh_failed: 403")
+    || lower.includes("session expired");
+}
+
+function isSyncTokenExpiredError(error) {
+  const lower = String(error || "").toLowerCase();
+  return lower.includes("sync_token_expired")
+    || lower.includes("invalid_sync_token")
+    || lower.includes("sync_token_already_used");
 }
 
 function openExternalUrl(url) {
@@ -907,12 +1140,15 @@ async function consumePendingWebsiteSync(trigger = "startup") {
   } catch (err) {
     const message = String(err || "unknown_error");
     reportError("frontend.website_launcher_sync_failed", message, { trigger });
-    const userMessage = resolveOnboardingErrorMessage(
-      message,
-      "alerts.websiteLauncherSyncErrorGeneric"
-    );
+    const userMessage = isSyncTokenExpiredError(message)
+      ? t("alerts.websiteLauncherSyncExpiredRetry")
+      : resolveOnboardingErrorMessage(
+        message,
+        "alerts.websiteLauncherSyncErrorGeneric"
+      );
     setLoginStatus(elLoginStatus, userMessage, true);
     setAccountLoginStatus(userMessage, true);
+    setAccountContextHint(userMessage, "error");
     return false;
   } finally {
     accountSyncConsumeInFlight = false;
@@ -1051,10 +1287,7 @@ async function buildSyncedCreateCharacterUrl(mode) {
   }
 
   try {
-    const response = await invoke("build_create_character_url", {
-      sessionKey,
-      mode: safeMode,
-    });
+    const response = await invoke("build_create_character_url", { mode: safeMode });
 
     if (response && typeof response.url === "string" && response.url.length > 0) {
       return {
@@ -1088,12 +1321,15 @@ async function refreshLauncherAccountContext(trigger = "manual") {
     (elLauncherSessionKey && elLauncherSessionKey.value) || launcherSessionKey
   );
   if (!sessionKey) {
+    launcherAccountContext = null;
+    renderLauncherAccountContext(null);
     return false;
   }
 
+  const silentTrigger = trigger === "focus" || trigger === "auth";
   accountContextRefreshInFlight = true;
   try {
-    const result = await invoke("refresh_launcher_account_context", { sessionKey });
+    const result = await invoke("refresh_launcher_account_context");
 
     if (result?.email) {
       saveAccountEmail(String(result.email));
@@ -1101,25 +1337,121 @@ async function refreshLauncherAccountContext(trigger = "manual") {
     if (elLauncherAccountName && result?.accountName) {
       elLauncherAccountName.value = String(result.accountName);
     }
-
-    setAccountLoginStatus(t("alerts.accountContextRefreshed"), false);
+    renderLauncherAccountContext(result);
+    if (!silentTrigger) {
+      setAccountLoginStatus(t("alerts.accountContextRefreshed"), false);
+    }
 
     return true;
   } catch (err) {
-    if (trigger !== "focus") {
-      const message = String(err || "unknown_error");
-      reportError("frontend.account_context_refresh_failed", message, {
-        trigger,
-      });
-      setAccountLoginStatus(
-        resolveOnboardingErrorMessage(message, "alerts.accountContextRefreshErrorGeneric"),
-        true
-      );
+    const message = String(err || "unknown_error");
+    const sessionInvalid = isSessionInvalidError(message);
+    if (sessionInvalid) {
+      saveSessionKey("");
+      launcherSessionKey = "";
+      launcherAccountContext = null;
+      renderLauncherAccountContext(null);
     }
+
+    if (!silentTrigger) {
+      reportError("frontend.account_context_refresh_failed", message, { trigger });
+      const userMessage = sessionInvalid
+        ? t("alerts.sessionExpiredRelogin")
+        : resolveOnboardingErrorMessage(message, "alerts.accountContextRefreshErrorGeneric");
+      setAccountLoginStatus(userMessage, true);
+      setAccountContextHint(userMessage, "error");
+    }
+
+    if (sessionInvalid && isAuthenticated) {
+      showLoginScreen();
+    }
+
     return false;
   } finally {
     accountContextRefreshInFlight = false;
   }
+}
+
+async function switchLauncherAccountProfile(mode, trigger = "manual") {
+  const safeMode = normalizeSelectableLaunchMode(mode);
+  if (!safeMode) return false;
+
+  try {
+    const result = await invoke("switch_launcher_account_profile", { gameMode: safeMode });
+    renderLauncherAccountContext(result);
+    if (trigger === "mode-change") {
+      setAccountContextHint(t("alerts.profileSwitched", [getModeLabel(safeMode)]), "ok");
+    }
+    return true;
+  } catch (err) {
+    const message = String(err || "unknown_error");
+    const sessionInvalid = isSessionInvalidError(message);
+    reportError("frontend.account_profile_switch_failed", message, { trigger, mode: safeMode });
+
+    if (sessionInvalid) {
+      saveSessionKey("");
+      launcherSessionKey = "";
+      launcherAccountContext = null;
+      renderLauncherAccountContext(null);
+      if (isAuthenticated) showLoginScreen();
+    }
+
+    const userMessage = sessionInvalid
+      ? t("alerts.sessionExpiredRelogin")
+      : resolveOnboardingErrorMessage(message, "alerts.accountContextRefreshErrorGeneric");
+    setAccountLoginStatus(userMessage, true);
+    setAccountContextHint(userMessage, "error");
+    return false;
+  }
+}
+
+async function buildSyncedWebsiteUrl(redirectPath = "/") {
+  const sessionKey = getStoredSessionKey();
+  if (!sessionKey) {
+    return {
+      url: `${WEBSITE_BASE_URL}${redirectPath}`,
+      fallback: true,
+      error: "missing_session_key",
+    };
+  }
+
+  try {
+    const response = await invoke("build_website_sync_url", { redirectPath });
+    if (response && typeof response.url === "string" && response.url.length > 0) {
+      return {
+        url: response.url,
+        fallback: false,
+      };
+    }
+  } catch (err) {
+    return {
+      url: `${WEBSITE_BASE_URL}${redirectPath}`,
+      fallback: true,
+      error: String(err || "sync_url_failed"),
+    };
+  }
+
+  return {
+    url: `${WEBSITE_BASE_URL}${redirectPath}`,
+    fallback: true,
+    error: "sync_url_empty",
+  };
+}
+
+async function openCreateCharacterForSelectedMode() {
+  const launchMode = getEffectiveLaunchMode();
+  if (!launchMode) {
+    const msg = t("alerts.createCharacterModeRequired");
+    setAccountContextHint(msg, "error");
+    setAccountLoginStatus(msg, true);
+    return false;
+  }
+
+  if (isAuthenticated && getStoredSessionKey()) {
+    await switchLauncherAccountProfile(launchMode, "create-character");
+  }
+  await openCreateCharacterFlow(launchMode);
+  return true;
 }
 
 async function openCreateCharacterFlow(mode) {
@@ -1129,38 +1461,29 @@ async function openCreateCharacterFlow(mode) {
   if (!result.fallback) {
     pendingAccountContextRefreshUntil = Date.now() + 10 * 60 * 1000;
     setAccountLoginStatus(t("alerts.accountContextRefreshPending"), false);
+    setAccountContextHint(t("alerts.accountContextRefreshPending"));
   }
 
   if (result.fallback) {
     const reason = result.reason === "missing_session_key"
       ? t("alerts.createCharacterFallbackMissingSession")
-      : t("alerts.createCharacterFallbackErrorGeneric");
+      : isSyncTokenExpiredError(result.reason)
+        ? t("alerts.websiteLauncherSyncExpiredRetry")
+        : t("alerts.createCharacterFallbackErrorGeneric");
+    setAccountContextHint(reason, "error");
     alert(reason);
   }
 }
 
 if (btnWebsite) {
   btnWebsite.addEventListener("click", async () => {
-    // Try to open website with session auto-login
-    const sessionKey = getStoredSessionKey();
-    if (sessionKey) {
-      try {
-        const response = await invoke("build_create_character_url", {
-          sessionKey,
-          mode: "modern",  // mode doesn't matter for website, just need sync token
-        });
-        if (response && response.consumeUrl) {
-          // Use the sync consume URL to auto-login, then redirect to homepage
-          const homeUrl = `${response.consumeUrl}?redirect=/`;
-          openExternalUrl(homeUrl);
-          return;
-        }
-      } catch (err) {
-        console.warn("Website sync URL failed, opening without login:", err);
-      }
+    const result = await buildSyncedWebsiteUrl("/");
+    openExternalUrl(result.url);
+    if (result.fallback && result.error && isSyncTokenExpiredError(result.error)) {
+      const msg = t("alerts.websiteLauncherSyncExpiredRetry");
+      setAccountLoginStatus(msg, true);
+      setAccountContextHint(msg, "error");
     }
-    // Fallback: open without session
-    openExternalUrl(WEBSITE_BASE_URL);
   });
 }
 
@@ -1176,51 +1499,69 @@ if (btnCreateCharModern) {
   });
 }
 
+if (elLaunchModeSelect) {
+  elLaunchModeSelect.addEventListener("change", async () => {
+    const pickedMode = normalizeSelectableLaunchMode(elLaunchModeSelect.value);
+    persistSelectedLaunchMode(pickedMode);
+
+    if (!pickedMode) {
+      updatePlayGateState();
+      return;
+    }
+
+    if (isAuthenticated && getStoredSessionKey()) {
+      await switchLauncherAccountProfile(pickedMode, "mode-change");
+      return;
+    }
+
+    updatePlayGateState();
+  });
+}
+
+if (btnRefreshAccountContext) {
+  btnRefreshAccountContext.addEventListener("click", async () => {
+    btnRefreshAccountContext.disabled = true;
+    const ok = await refreshLauncherAccountContext("manual");
+    if (ok) {
+      setAccountContextHint(t("alerts.accountContextRefreshed"), "ok");
+    }
+    btnRefreshAccountContext.disabled = false;
+  });
+}
+
+if (btnCreateCharacter) {
+  btnCreateCharacter.addEventListener("click", async () => {
+    await openCreateCharacterForSelectedMode();
+  });
+}
+
 if (btnRulesAll) {
   btnRulesAll.addEventListener("click", async () => {
-    const sessionKey = getStoredSessionKey();
-    if (sessionKey) {
-      try {
-        const response = await invoke("build_create_character_url", { sessionKey, mode: "modern" });
-        if (response && response.consumeUrl) {
-          openExternalUrl(`${response.consumeUrl}?redirect=${encodeURIComponent("/?subtopic=rules&mode=all&source=launcher")}`);
-          return;
-        }
-      } catch (_) { /* fallback below */ }
+    const result = await buildSyncedWebsiteUrl("/?subtopic=rules&mode=all&source=launcher");
+    openExternalUrl(result.url);
+    if (result.fallback && result.error && isSyncTokenExpiredError(result.error)) {
+      setAccountContextHint(t("alerts.websiteLauncherSyncExpiredRetry"), "error");
     }
-    openExternalUrl(buildRulesUrl("all"));
   });
 }
 
 if (btnRulesClassic) {
   btnRulesClassic.addEventListener("click", async () => {
-    const sessionKey = getStoredSessionKey();
-    if (sessionKey) {
-      try {
-        const response = await invoke("build_create_character_url", { sessionKey, mode: "classic74" });
-        if (response && response.consumeUrl) {
-          openExternalUrl(`${response.consumeUrl}?redirect=${encodeURIComponent("/?subtopic=rules&mode=classic74&source=launcher")}`);
-          return;
-        }
-      } catch (_) { /* fallback below */ }
+    const result = await buildSyncedWebsiteUrl("/?subtopic=rules&mode=classic74&source=launcher");
+    openExternalUrl(result.url);
+    if (result.fallback && result.error && isSyncTokenExpiredError(result.error)) {
+      setAccountContextHint(t("alerts.websiteLauncherSyncExpiredRetry"), "error");
     }
-    openExternalUrl(buildRulesUrl("classic74"));
   });
 }
 
 if (btnRulesModern) {
   btnRulesModern.addEventListener("click", async () => {
-    const sessionKey = getStoredSessionKey();
-    if (sessionKey) {
-      try {
-        const response = await invoke("build_create_character_url", { sessionKey, mode: "modern" });
-        if (response && response.consumeUrl) {
-          openExternalUrl(`${response.consumeUrl}?redirect=${encodeURIComponent("/?subtopic=rules&mode=modern&source=launcher")}`);
-          return;
-        }
-      } catch (_) { /* fallback below */ }
+    const result = await buildSyncedWebsiteUrl("/?subtopic=rules&mode=modern&source=launcher");
+    openExternalUrl(result.url);
+    if (result.fallback && result.error && isSyncTokenExpiredError(result.error)) {
+      setAccountContextHint(t("alerts.websiteLauncherSyncExpiredRetry"), "error");
     }
-    openExternalUrl(buildRulesUrl("modern"));
   });
 }
 
@@ -1238,8 +1579,8 @@ btnCheck.addEventListener("click", async () => {
     if (plan.upToDate) {
       elPhase.textContent = t("phase.upToDate");
       elPhase.className = "badge badge-phase badge-ok";
-      btnPlay.disabled = false;
       btnPlay.textContent = t("buttons.play");
+      updatePlayGateState();
     } else {
       // Pokaż ekran aktualizacji i uruchom update
       showScreen("update");
@@ -1299,6 +1640,37 @@ function updateProgress(dto) {
 // ─────────────────────────────────────────────
 
 btnPlay.addEventListener("click", async () => {
+  const launchMode = getEffectiveLaunchMode();
+  const modeRequired = normalizeGameMode(launcherAccountContext?.gameMode) === "all" && !launchMode;
+  if (modeRequired) {
+    const msg = t("alerts.launchModeRequired");
+    setAccountContextHint(msg, "error");
+    setAccountLoginStatus(msg, true);
+    if (elLaunchModeSelect) elLaunchModeSelect.focus();
+    btnPlay.textContent = t("buttons.play");
+    btnPlay.disabled = true;
+    return;
+  }
+
+  if (!launchMode) {
+    const msg = t("alerts.launchModeRequired");
+    setAccountContextHint(msg, "error");
+    setAccountLoginStatus(msg, true);
+    btnPlay.textContent = t("buttons.play");
+    btnPlay.disabled = true;
+    return;
+  }
+
+  const charCount = getCharacterCountForMode(launchMode, launcherAccountContext);
+  if (charCount <= 0) {
+    const msg = t("alerts.playBlockedNoCharacterOnMode", [getModeLabel(launchMode)]);
+    setAccountContextHint(msg, "error");
+    setAccountLoginStatus(msg, true);
+    btnPlay.textContent = t("buttons.play");
+    btnPlay.disabled = true;
+    return;
+  }
+
   btnPlay.disabled = true;
   btnPlay.textContent = t("buttons.playChecking");
 
@@ -1348,7 +1720,7 @@ btnPlay.addEventListener("click", async () => {
       }
 
       btnPlay.textContent = t("buttons.play");
-      btnPlay.disabled = false;
+      updatePlayGateState();
       return;
     }
   } catch (err) {
@@ -1360,18 +1732,34 @@ btnPlay.addEventListener("click", async () => {
 
   try {
     const email = getStoredAccountEmail();
-    const pw = launcherAccountPassword || "";
-    await invoke("launch_game", { email: email || null, password: pw || null });
-    launcherAccountPassword = "";  // Clear after use
+    await invoke("launch_game", {
+      email: email || null,
+      characterHint: null,
+      gameMode: launchMode,
+    });
+    launcherAccountPassword = "";
+    setAccountContextHint(t("alerts.playReadyForMode", [getModeLabel(launchMode), charCount]), "ok");
     btnPlay.textContent = t("buttons.playLaunched");
     setTimeout(() => {
       btnPlay.textContent = t("buttons.play");
-      btnPlay.disabled = false;
+      updatePlayGateState();
     }, 3000);
   } catch (err) {
-    showFrontendError("LAUNCH_ERROR", true, String(err));
+    const errMsg = String(err);
+    if (isSessionInvalidError(errMsg)) {
+      saveSessionKey("");
+      launcherSessionKey = "";
+      launcherAccountContext = null;
+      renderLauncherAccountContext(null);
+      const msg = t("alerts.sessionExpiredRelogin");
+      setAccountLoginStatus(msg, true);
+      setAccountContextHint(msg, "error");
+      showLoginScreen();
+    } else {
+      showFrontendError("LAUNCH_ERROR", true, errMsg);
+    }
     btnPlay.textContent = t("buttons.play");
-    btnPlay.disabled = false;
+    updatePlayGateState();
   }
 });
 
@@ -1872,6 +2260,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Restore stored values to hidden fields (backward compat)
   saveAccountEmail(getStoredAccountEmail());
   saveSessionKey(getStoredSessionKey());
+  persistSelectedLaunchMode(loadSelectedLaunchMode());
+  renderLauncherAccountContext(null, { preserveHint: true });
 
   if (elSettingLanguage) {
     elSettingLanguage.addEventListener("change", () => {
@@ -1985,13 +2375,17 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (isUserLoggedIn()) {
     // Try to validate the stored session
     try {
-      const sessionKey = getStoredSessionKey();
-      const result = await invoke("refresh_launcher_account_context", { sessionKey });
+      const result = await invoke("refresh_launcher_account_context");
       if (result?.email) saveAccountEmail(String(result.email));
+      renderLauncherAccountContext(result);
       enterAuthenticatedMode();
     } catch (err) {
       // Stored session expired/invalid → show login
       console.warn("Stored session invalid:", err);
+      saveSessionKey("");
+      launcherSessionKey = "";
+      launcherAccountContext = null;
+      renderLauncherAccountContext(null);
       showLoginScreen();
     }
   } else {

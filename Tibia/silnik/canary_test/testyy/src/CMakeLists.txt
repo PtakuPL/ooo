@@ -859,10 +859,17 @@ if(MSVC)
       find_package(Vorbis CONFIG REQUIRED)
     endif()
     set_property(TARGET ${PROJECT_NAME} PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
-    set(VCPKG_TARGET_TRIPLET "x64-windows-static" CACHE STRING "")
+    # VCPKG_TARGET_TRIPLET is set before project() in root CMakeLists.txt or via -D flag.
+    # Do NOT override here — it's too late (after project()), vcpkg toolchain already resolved.
+
+    # Static GLEW requires GLEW_STATIC to avoid __declspec(dllimport)
+    target_compile_definitions(${PROJECT_NAME} PRIVATE GLEW_STATIC)
+
+    # System libs required by statically-linked OpenAL, OpenSSL, etc.
+    target_link_libraries(${PROJECT_NAME} PRIVATE ole32 winmm Shell32 Advapi32 Crypt32 Ws2_32)
   else()
     log_option_disabled("STATIC_LIBRARY")
-    set(VCPKG_TARGET_TRIPLET "x64-windows" CACHE STRING "")
+    # VCPKG_TARGET_TRIPLET inherited from root CMakeLists.txt or -D flag.
   endif()
 
   target_include_directories(${PROJECT_NAME}

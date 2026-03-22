@@ -32,9 +32,18 @@
     "client": "Klient:",
     "channel": "Kanał:",
     "status": "Status:",
+    "launchMode": "Tryb startu:",
+    "sessionMode": "Sesja API:",
+    "charactersAll": "Postacie (all):",
+    "charactersClassic": "Postacie (Classic 7.4):",
+    "charactersModern": "Postacie (Modern):",
     "servers": "🖥 Serwery",
     "serverMainName": "RedDaxe.pl — Tibia 14.20+",
     "serverRetroName": "RedDaxe.pl — Retro 7.4",
+    "serverClassicName": "Classic 7.4",
+    "serverModernName": "Modern",
+    "totalPlayers": "{0} graczy online",
+    "reddaxeStatus": "RedDaxe:",
     "players": "Gracze",
     "ping": "Ping",
     "currentVersion": "Obecna wersja:",
@@ -73,6 +82,8 @@
     "registeringAccount": "🆕 Rejestracja…",
     "createCharacterClassic": "🧙 Utwórz postać Tibia 7.4",
     "createCharacterModern": "⚔ Utwórz postać Modern",
+    "createCharacter": "🧙 Utwórz postać",
+    "refreshAccountContext": "🔄 Odśwież kontekst konta",
     "rulesAll": "📜 Zasady (all)",
     "rulesClassic": "📜 Zasady Classic 7.4",
     "rulesModern": "📜 Zasady Modern",
@@ -106,7 +117,9 @@
     "status": "Status",
     "downloads": "Pobieranie",
     "repair": "Naprawa",
-    "settings": "Ustawienia"
+    "settings": "Ustawienia",
+    "website": "🌐 WWW",
+    "myAccount": "👤 Konto"
   },
   "phase": {
     "checking": "sprawdzanie…",
@@ -132,7 +145,9 @@
     }
   },
   "repair": {
-    "apiUnavailable": "Nie udało się połączyć z API"
+    "apiUnavailable": "Nie udało się połączyć z API",
+    "apiOffline": "Serwer API niedostępny. Sprawdź połączenie internetowe i kliknij Odśwież.",
+    "refresh": "🔄 Odśwież"
   },
   "downloads": {
     "loading": "Ładowanie katalogu…",
@@ -163,7 +178,17 @@
   "server": {
     "online": "online",
     "offline": "offline",
-    "maintenance": "przerwa techniczna"
+    "maintenance": "przerwa techniczna",
+    "active": "aktywny",
+    "full": "pełny"
+  },
+  "status": {
+    "reddaxeOnline": "✅ Aktywny",
+    "reddaxeOffline": "❌ Niedostępny",
+    "modeSelectPlaceholder": "Wybierz serwer…",
+    "modeAll": "All",
+    "modeClassic": "Classic 7.4",
+    "modeModern": "Modern"
   },
   "alerts": {
     "logsExported": "Logi wyeksportowane do:\n{0}",
@@ -182,12 +207,27 @@
     "accountContextRefreshPending": "Wróć do launchera po utworzeniu postaci, aby odświeżyć kontekst konta.",
     "accountContextRefreshed": "Kontekst konta odświeżony.",
     "accountContextRefreshErrorGeneric": "Nie udało się odświeżyć kontekstu konta. Spróbuj ponownie.",
+    "accountContextLoading": "Wczytywanie kontekstu konta…",
+    "launchModeRequired": "Wybierz serwer (Classic 7.4 lub Modern), aby uruchomić grę.",
+    "playBlockedNoCharacterOnMode": "Brak postaci na serwerze {0}. Najpierw utwórz postać.",
+    "playReadyForMode": "Gotowe do startu: {0} (postacie: {1}).",
+    "profileSwitched": "Aktywny profil przełączony na: {0}.",
+    "sessionExpiredRelogin": "Sesja wygasła. Zaloguj się ponownie.",
     "websiteLauncherSyncSuccess": "Launcher został połączony z zalogowaną sesją WWW.",
     "websiteLauncherSyncErrorGeneric": "Nie udało się zsynchronizować launchera z sesją WWW.",
+    "websiteLauncherSyncExpiredRetry": "Link wygasł lub został już użyty. Wygeneruj nowy link i spróbuj ponownie.",
+    "createCharacterModeRequired": "Najpierw wybierz serwer dla nowej postaci.",
     "createCharacterFallbackMissingSession": "Brak sessionKey. Otwieram formularz WWW bez auto-logowania.",
     "createCharacterFallbackError": "Nie udało się przygotować auto-logowania WWW ({0}). Otwieram formularz bez auto-logowania.",
     "createCharacterFallbackErrorGeneric": "Nie udało się przygotować auto-logowania WWW. Otwieram formularz bez auto-logowania.",
-    "antiTamperRepairFailed": "Automatyczna naprawa anti-tamper nie powiodła się. Uruchom ręcznie aktualizację lub naprawę instalacji."
+    "antiTamperRepairFailed": "Automatyczna naprawa anti-tamper nie powiodła się. Uruchom ręcznie aktualizację lub naprawę instalacji.",
+    "sessionExpiredPleaseRelogin": "Sesja wygasla. Zaloguj sie ponownie.",
+    "selectServerRequired": "Twoje konto ma tryb 'Wszystkie serwery'. Wybierz serwer, na ktorym chcesz grac:",
+    "characters": "postaci",
+    "selectServerConfirmClassic": "Kliknij OK aby wybrać Classic 7.4.\nKliknij Anuluj aby wybrać Modern.",
+    "selectServerConfirmModern": "Kliknij OK aby wybrać Modern.\nKliknij Anuluj aby anulować.",
+    "noCharactersOnServer": "Nie masz zadnych postaci na serwerze {0}.",
+    "noCharactersCreatePrompt": "Czy chcesz otworzyc strone tworzenia postaci w przegladarce?"
   },
   "errors": {
     "launcherUpdateRequired": "Wymagana aktualizacja launchera do v{0}",

@@ -1,6 +1,5 @@
 /// Lightweight built-in i18n for the bootstrap launcher.
 /// ~25 strings × 5 languages ≈ 5-10 KB compiled.  Zero extra dependencies.
-
 use std::sync::OnceLock;
 
 static CURRENT_LANG: OnceLock<Lang> = OnceLock::new();
@@ -50,11 +49,21 @@ impl Lang {
     /// Try to match a language code string (case-insensitive, prefix).
     pub fn from_code(code: &str) -> Option<Lang> {
         let c = code.to_ascii_lowercase();
-        if c.starts_with("pl") { return Some(Lang::Pl); }
-        if c.starts_with("pt") { return Some(Lang::PtBr); }
-        if c.starts_with("es") { return Some(Lang::Es); }
-        if c.starts_with("de") { return Some(Lang::De); }
-        if c.starts_with("en") { return Some(Lang::En); }
+        if c.starts_with("pl") {
+            return Some(Lang::Pl);
+        }
+        if c.starts_with("pt") {
+            return Some(Lang::PtBr);
+        }
+        if c.starts_with("es") {
+            return Some(Lang::Es);
+        }
+        if c.starts_with("de") {
+            return Some(Lang::De);
+        }
+        if c.starts_with("en") {
+            return Some(Lang::En);
+        }
         None
     }
 }
@@ -388,10 +397,15 @@ fn choose_language_win32() -> Lang {
     for (i, lang) in Lang::ALL.iter().enumerate() {
         msg.push_str(&format!("  {}. {}\n", i + 1, lang.label()));
     }
-    msg.push_str("\nClick a button:\nYes/Tak = English | No/Nie = Polski | Cancel/Anuluj = more options");
+    msg.push_str(
+        "\nClick a button:\nYes/Tak = English | No/Nie = Polski | Cancel/Anuluj = more options",
+    );
 
     fn to_wide(s: &str) -> Vec<u16> {
-        OsStr::new(s).encode_wide().chain(std::iter::once(0)).collect()
+        OsStr::new(s)
+            .encode_wide()
+            .chain(std::iter::once(0))
+            .collect()
     }
 
     loop {
@@ -409,8 +423,8 @@ fn choose_language_win32() -> Lang {
         };
 
         match result {
-            6 => return Lang::En,  // IDYES
-            7 => return Lang::Pl,  // IDNO
+            6 => return Lang::En, // IDYES
+            7 => return Lang::Pl, // IDNO
             _ => {
                 // IDCANCEL → show extended picker; None = user wants to go back
                 if let Some(lang) = choose_language_extended_win32() {
@@ -432,7 +446,10 @@ fn choose_language_extended_win32() -> Option<Lang> {
     }
 
     fn to_wide(s: &str) -> Vec<u16> {
-        OsStr::new(s).encode_wide().chain(std::iter::once(0)).collect()
+        OsStr::new(s)
+            .encode_wide()
+            .chain(std::iter::once(0))
+            .collect()
     }
 
     // Page 1: PT-BR, ES, more
@@ -453,7 +470,7 @@ fn choose_language_extended_win32() -> Option<Lang> {
     match result {
         6 => return Some(Lang::PtBr), // IDYES
         7 => return Some(Lang::Es),   // IDNO
-        _ => {}                        // IDCANCEL → page 2
+        _ => {}                       // IDCANCEL → page 2
     }
 
     // Page 2: DE or back
@@ -473,8 +490,8 @@ fn choose_language_extended_win32() -> Option<Lang> {
     };
 
     match result2 {
-        6 => Some(Lang::De),  // IDYES = Deutsch
-        _ => None,             // IDNO = back to main picker
+        6 => Some(Lang::De), // IDYES = Deutsch
+        _ => None,           // IDNO = back to main picker
     }
 }
 
@@ -529,13 +546,20 @@ pub fn delete_saved_language() {
 fn language_conf_path() -> Option<std::path::PathBuf> {
     #[cfg(target_os = "windows")]
     {
-        std::env::var("LOCALAPPDATA").ok()
-            .map(|p| std::path::PathBuf::from(p).join("RedDaxe").join("language.conf"))
+        std::env::var("LOCALAPPDATA").ok().map(|p| {
+            std::path::PathBuf::from(p)
+                .join("RedDaxe")
+                .join("language.conf")
+        })
     }
     #[cfg(not(target_os = "windows"))]
     {
-        std::env::var("HOME").ok()
-            .map(|p| std::path::PathBuf::from(p).join(".config").join("RedDaxe").join("language.conf"))
+        std::env::var("HOME").ok().map(|p| {
+            std::path::PathBuf::from(p)
+                .join(".config")
+                .join("RedDaxe")
+                .join("language.conf")
+        })
     }
 }
 

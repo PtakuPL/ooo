@@ -5,10 +5,10 @@
 //! 2. Deleguje do launcher-core / launcher-api.
 //! 3. Zwraca DTO (nigdy surowe struktury).
 
-use tauri::State;
 use semver::Version;
 use std::collections::BTreeSet;
 use std::path::{Path, PathBuf};
+use tauri::State;
 
 use common_models::api_responses::{ErrorReportRequest, LaunchTokenRequest};
 use common_models::dto::*;
@@ -35,7 +35,10 @@ use crate::state::AppState;
 // Helper: buduje SignatureConfig z klucza publicznego
 // ─────────────────────────────────────────────
 
-fn build_signature_config(public_key_hex: &Option<String>, require_signature: bool) -> SignatureConfig {
+fn build_signature_config(
+    public_key_hex: &Option<String>,
+    require_signature: bool,
+) -> SignatureConfig {
     if require_signature {
         return SignatureConfig {
             policy: SignaturePolicy::Require,
@@ -163,8 +166,12 @@ fn ensure_path_writable(path: &Path, label: &str) -> Result<(), String> {
     let probe = path.join(".write_test.tmp");
     std::fs::write(&probe, b"ok")
         .map_err(|e| format!("LCH_PREFLIGHT_NOT_WRITABLE: {} write failed: {}", label, e))?;
-    std::fs::remove_file(&probe)
-        .map_err(|e| format!("LCH_PREFLIGHT_NOT_WRITABLE: {} cleanup failed: {}", label, e))?;
+    std::fs::remove_file(&probe).map_err(|e| {
+        format!(
+            "LCH_PREFLIGHT_NOT_WRITABLE: {} cleanup failed: {}",
+            label, e
+        )
+    })?;
     Ok(())
 }
 
@@ -413,14 +420,18 @@ pub async fn check_for_updates(state: State<'_, AppState>) -> Result<UpdatePlanS
     verify_fetched_manifest(&fetch_result, &sig_config)?;
     let manifest = fetch_result.manifest;
 
-    if bootstrap_mode && manifest.files_hash_expected.as_deref().unwrap_or("").trim().is_empty() {
+    if bootstrap_mode
+        && manifest
+            .files_hash_expected
+            .as_deref()
+            .unwrap_or("")
+            .trim()
+            .is_empty()
+    {
         return Err("LCH_BOOTSTRAP_FILES_HASH_EXPECTED_MISSING".to_string());
     }
 
-    enforce_manifest_launcher_compat(
-        manifest.min_launcher_version.as_deref(),
-        &launcher_version,
-    )?;
+    enforce_manifest_launcher_compat(manifest.min_launcher_version.as_deref(), &launcher_version)?;
 
     // Skanuj lokalne pliki
     let index = LocalFileIndex::scan_from_manifest(&manifest, &client_dir)
@@ -510,14 +521,18 @@ async fn run_update_inner(
     verify_fetched_manifest(&fetch_result, &sig_config)?;
     let manifest = fetch_result.manifest;
 
-    if bootstrap_mode && manifest.files_hash_expected.as_deref().unwrap_or("").trim().is_empty() {
+    if bootstrap_mode
+        && manifest
+            .files_hash_expected
+            .as_deref()
+            .unwrap_or("")
+            .trim()
+            .is_empty()
+    {
         return Err("LCH_BOOTSTRAP_FILES_HASH_EXPECTED_MISSING".to_string());
     }
 
-    enforce_manifest_launcher_compat(
-        manifest.min_launcher_version.as_deref(),
-        &launcher_version,
-    )?;
+    enforce_manifest_launcher_compat(manifest.min_launcher_version.as_deref(), &launcher_version)?;
 
     // --- Faza 2: Skan ---
     let index = LocalFileIndex::scan_from_manifest(&manifest, &client_dir)
@@ -678,10 +693,7 @@ pub async fn pre_launch_check(state: State<'_, AppState>) -> Result<PreLaunchChe
     verify_fetched_manifest(&fetch_result, &sig_config)?;
     let manifest = fetch_result.manifest;
 
-    enforce_manifest_launcher_compat(
-        manifest.min_launcher_version.as_deref(),
-        &launcher_version,
-    )?;
+    enforce_manifest_launcher_compat(manifest.min_launcher_version.as_deref(), &launcher_version)?;
 
     if manifest.critical_files.is_empty() {
         return Ok(PreLaunchCheckDto {
@@ -772,10 +784,7 @@ async fn repair_tampered_critical_files_inner(
     verify_fetched_manifest(&fetch_result, &sig_config)?;
     let manifest = fetch_result.manifest;
 
-    enforce_manifest_launcher_compat(
-        manifest.min_launcher_version.as_deref(),
-        &launcher_version,
-    )?;
+    enforce_manifest_launcher_compat(manifest.min_launcher_version.as_deref(), &launcher_version)?;
 
     if manifest.critical_files.is_empty() {
         return Ok(UpdateProgressDto {
@@ -790,7 +799,8 @@ async fn repair_tampered_critical_files_inner(
         });
     }
 
-    let report = launcher_core::integrity::verify_critical_files(&manifest.critical_files, &client_dir);
+    let report =
+        launcher_core::integrity::verify_critical_files(&manifest.critical_files, &client_dir);
     if report.passed {
         return Ok(UpdateProgressDto {
             stage: UpdateStage::Done,
@@ -865,8 +875,9 @@ pub async fn launch_game(
 
     run_preflight_for_launch(&client_dir, &launcher_data)?;
 
-    let installed = core_state::load_state(&state_path)
-        .map_err(|_| "LCH_NO_CLIENT_FILES: Brak stanu instalacji. Uruchom najpierw aktualizację.".to_string())?;
+    let installed = core_state::load_state(&state_path).map_err(|_| {
+        "LCH_NO_CLIENT_FILES: Brak stanu instalacji. Uruchom najpierw aktualizację.".to_string()
+    })?;
 
     let files_hash = installed
         .current_files_hash
@@ -1161,10 +1172,14 @@ fn read_pending_account_sync_token(launcher_data: &Path) -> Option<(String, Opti
     if token.len() != 64 || !token.chars().all(|c| c.is_ascii_hexdigit()) {
         return None;
     }
-    let verifier = lines.next().map(|v| v.trim().to_string()).filter(|v| {
-        v.len() == 64 && v.chars().all(|c| c.is_ascii_hexdigit())
-    });
-    Some((token.to_ascii_lowercase(), verifier.map(|v| v.to_ascii_lowercase())))
+    let verifier = lines
+        .next()
+        .map(|v| v.trim().to_string())
+        .filter(|v| v.len() == 64 && v.chars().all(|c| c.is_ascii_hexdigit()));
+    Some((
+        token.to_ascii_lowercase(),
+        verifier.map(|v| v.to_ascii_lowercase()),
+    ))
 }
 
 fn clear_pending_account_sync_token(launcher_data: &Path) {
@@ -1265,9 +1280,13 @@ pub async fn build_create_character_url(
         )
     };
     let redirect = format!("/account/createcharacter?source=launcher&mode={safe_mode}");
-    let mut payload = build_www_sync_url_payload(api_url, dev_mode, launcher_data, &redirect).await?;
+    let mut payload =
+        build_www_sync_url_payload(api_url, dev_mode, launcher_data, &redirect).await?;
     if let Some(obj) = payload.as_object_mut() {
-        obj.insert("mode".to_string(), serde_json::Value::String(safe_mode.to_string()));
+        obj.insert(
+            "mode".to_string(),
+            serde_json::Value::String(safe_mode.to_string()),
+        );
     }
     Ok(payload)
 }
@@ -1562,7 +1581,13 @@ pub async fn login_launcher_account(
     };
 
     let login_resp = match api
-        .login_account(&canonical_email, &password, "all", launch_token_str.as_deref(), fresh_install)
+        .login_account(
+            &canonical_email,
+            &password,
+            "all",
+            launch_token_str.as_deref(),
+            fresh_install,
+        )
         .await
     {
         Ok(resp) => resp,
@@ -1758,15 +1783,24 @@ pub async fn register_launcher_account(
     };
 
     let login_result = api
-        .login_account(&returned_email, &password, "all", launch_token.as_ref().map(|t| t.token.as_str()), fresh_install)
+        .login_account(
+            &returned_email,
+            &password,
+            "all",
+            launch_token.as_ref().map(|t| t.token.as_str()),
+            fresh_install,
+        )
         .await;
 
     // CLIENT_LOCKED fallback: retry as fresh install if token was stale
     let login_resp = match login_result {
         Ok(resp) => Ok(resp),
         Err(ref e) if !fresh_install && format!("{e}").contains("LCH_TOKEN") => {
-            tracing::warn!("Auto-login after register rejected by LCH_TOKEN check — retrying as fresh install");
-            api.login_account(&returned_email, &password, "all", None, true).await
+            tracing::warn!(
+                "Auto-login after register rejected by LCH_TOKEN check — retrying as fresh install"
+            );
+            api.login_account(&returned_email, &password, "all", None, true)
+                .await
         }
         Err(e) => Err(e),
     };
@@ -2453,9 +2487,7 @@ pub async fn report_error(
 // ─────────────────────────────────────────────
 
 #[tauri::command]
-pub async fn uninstall_game_files(
-    state: State<'_, AppState>,
-) -> Result<String, String> {
+pub async fn uninstall_game_files(state: State<'_, AppState>) -> Result<String, String> {
     let client_dir = {
         let g = state.inner.lock().map_err(|e| e.to_string())?;
         g.client_dir.clone()
@@ -2530,12 +2562,19 @@ pub fn get_bootstrap_language() -> String {
 fn bootstrap_language_conf_path() -> Option<std::path::PathBuf> {
     #[cfg(target_os = "windows")]
     {
-        std::env::var("LOCALAPPDATA").ok()
-            .map(|p| std::path::PathBuf::from(p).join("RedDaxe").join("language.conf"))
+        std::env::var("LOCALAPPDATA").ok().map(|p| {
+            std::path::PathBuf::from(p)
+                .join("RedDaxe")
+                .join("language.conf")
+        })
     }
     #[cfg(not(target_os = "windows"))]
     {
-        std::env::var("HOME").ok()
-            .map(|p| std::path::PathBuf::from(p).join(".config").join("RedDaxe").join("language.conf"))
+        std::env::var("HOME").ok().map(|p| {
+            std::path::PathBuf::from(p)
+                .join(".config")
+                .join("RedDaxe")
+                .join("language.conf")
+        })
     }
 }

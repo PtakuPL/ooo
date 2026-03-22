@@ -15,8 +15,8 @@ pub fn load_session_key(launcher_data: &Path) -> Result<Option<String>, String> 
         return Ok(None);
     }
 
-    let encrypted = std::fs::read(&path)
-        .map_err(|e| format!("Nie mozna odczytac session store: {e}"))?;
+    let encrypted =
+        std::fs::read(&path).map_err(|e| format!("Nie mozna odczytac session store: {e}"))?;
     if encrypted.is_empty() {
         clear_session_key(launcher_data)?;
         return Ok(None);
@@ -169,7 +169,8 @@ fn windows_dpapi_protect(plaintext: &[u8]) -> Result<Vec<u8>, String> {
         ));
     }
 
-    let bytes = unsafe { std::slice::from_raw_parts(output.pb_data, output.cb_data as usize).to_vec() };
+    let bytes =
+        unsafe { std::slice::from_raw_parts(output.pb_data, output.cb_data as usize).to_vec() };
     unsafe {
         LocalFree(output.pb_data as *mut c_void);
     }
@@ -237,7 +238,8 @@ fn windows_dpapi_unprotect(ciphertext: &[u8]) -> Result<Vec<u8>, String> {
         ));
     }
 
-    let bytes = unsafe { std::slice::from_raw_parts(output.pb_data, output.cb_data as usize).to_vec() };
+    let bytes =
+        unsafe { std::slice::from_raw_parts(output.pb_data, output.cb_data as usize).to_vec() };
     unsafe {
         LocalFree(output.pb_data as *mut c_void);
     }

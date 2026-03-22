@@ -39,8 +39,7 @@ pub fn extract_launcher(zip_path: &Path, install_dir: &Path) -> Result<PathBuf, 
     fs::create_dir_all(install_dir)?;
 
     let file = fs::File::open(zip_path)?;
-    let mut archive =
-        zip::ZipArchive::new(file).map_err(|e| InstallError::Zip(e.to_string()))?;
+    let mut archive = zip::ZipArchive::new(file).map_err(|e| InstallError::Zip(e.to_string()))?;
 
     let total = archive.len();
     for i in 0..total {
@@ -126,9 +125,7 @@ pub fn launcher_already_installed(install_dir: &Path) -> bool {
 pub fn launch_full_launcher(launcher_exe: &Path) -> Result<(), InstallError> {
     ui::set_status(i18n::t().launching);
 
-    let working_dir = launcher_exe
-        .parent()
-        .unwrap_or_else(|| Path::new("."));
+    let working_dir = launcher_exe.parent().unwrap_or_else(|| Path::new("."));
 
     std::process::Command::new(launcher_exe)
         .current_dir(working_dir)
@@ -290,8 +287,7 @@ fn kill_running_launcher() {
 pub fn copy_self_to_install_dir(install_dir: &Path) -> Result<(), InstallError> {
     ui::set_status(i18n::t().copying_uninstaller);
 
-    let current_exe = std::env::current_exe()
-        .map_err(InstallError::Io)?;
+    let current_exe = std::env::current_exe().map_err(InstallError::Io)?;
 
     let target_name = if cfg!(target_os = "windows") {
         "launcher-bootstrap.exe"
@@ -347,8 +343,7 @@ mod registry {
     const REG_SZ: u32 = 1;
     const REG_DWORD: u32 = 4;
 
-    const UNINSTALL_KEY: &str =
-        r"Software\Microsoft\Windows\CurrentVersion\Uninstall\RedDaxe";
+    const UNINSTALL_KEY: &str = r"Software\Microsoft\Windows\CurrentVersion\Uninstall\RedDaxe";
     const LAUNCHER_SCHEME_KEY: &str = r"Software\Classes\launcher";
     const LAUNCHER_SCHEME_OPEN_KEY: &str = r"Software\Classes\launcher\shell\open";
     const LAUNCHER_SCHEME_SHELL_KEY: &str = r"Software\Classes\launcher\shell";
@@ -357,29 +352,48 @@ mod registry {
     #[link(name = "advapi32")]
     extern "system" {
         fn RegCreateKeyExW(
-            hKey: isize, lpSubKey: *const u16, reserved: u32,
-            lpClass: *const u16, dwOptions: u32, samDesired: u32,
-            lpSecurityAttributes: *mut u8, phkResult: *mut isize,
+            hKey: isize,
+            lpSubKey: *const u16,
+            reserved: u32,
+            lpClass: *const u16,
+            dwOptions: u32,
+            samDesired: u32,
+            lpSecurityAttributes: *mut u8,
+            phkResult: *mut isize,
             lpdwDisposition: *mut u32,
         ) -> i32;
         fn RegSetValueExW(
-            hKey: isize, lpValueName: *const u16, reserved: u32,
-            dwType: u32, lpData: *const u8, cbData: u32,
+            hKey: isize,
+            lpValueName: *const u16,
+            reserved: u32,
+            dwType: u32,
+            lpData: *const u8,
+            cbData: u32,
         ) -> i32;
         fn RegCloseKey(hKey: isize) -> i32;
         fn RegDeleteKeyW(hKey: isize, lpSubKey: *const u16) -> i32;
         fn RegOpenKeyExW(
-            hKey: isize, lpSubKey: *const u16, ulOptions: u32,
-            samDesired: u32, phkResult: *mut isize,
+            hKey: isize,
+            lpSubKey: *const u16,
+            ulOptions: u32,
+            samDesired: u32,
+            phkResult: *mut isize,
         ) -> i32;
         fn RegQueryValueExW(
-            hKey: isize, lpValueName: *const u16, lpReserved: *mut u32,
-            lpType: *mut u32, lpData: *mut u8, lpcbData: *mut u32,
+            hKey: isize,
+            lpValueName: *const u16,
+            lpReserved: *mut u32,
+            lpType: *mut u32,
+            lpData: *mut u8,
+            lpcbData: *mut u32,
         ) -> i32;
     }
 
     fn to_wide(s: &str) -> Vec<u16> {
-        OsStr::new(s).encode_wide().chain(std::iter::once(0)).collect()
+        OsStr::new(s)
+            .encode_wide()
+            .chain(std::iter::once(0))
+            .collect()
     }
 
     pub fn register(install_dir: &Path) -> Result<(), String> {
@@ -389,9 +403,15 @@ mod registry {
 
         let result = unsafe {
             RegCreateKeyExW(
-                HKEY_CURRENT_USER, key_w.as_ptr(), 0,
-                std::ptr::null(), 0, KEY_WRITE,
-                std::ptr::null_mut(), &mut hkey, &mut disposition,
+                HKEY_CURRENT_USER,
+                key_w.as_ptr(),
+                0,
+                std::ptr::null(),
+                0,
+                KEY_WRITE,
+                std::ptr::null_mut(),
+                &mut hkey,
+                &mut disposition,
             )
         };
         if result != 0 {
@@ -405,17 +425,12 @@ mod registry {
         let res = (|| {
             set_string_value(hkey, "DisplayName", "RedDaxe.pl Launcher")?;
             set_string_value(
-                hkey, "UninstallString",
+                hkey,
+                "UninstallString",
                 &format!("\"{}\" --uninstall", uninstall_exe.display()),
             )?;
-            set_string_value(
-                hkey, "InstallLocation",
-                &install_dir.display().to_string(),
-            )?;
-            set_string_value(
-                hkey, "DisplayIcon",
-                &launcher_exe.display().to_string(),
-            )?;
+            set_string_value(hkey, "InstallLocation", &install_dir.display().to_string())?;
+            set_string_value(hkey, "DisplayIcon", &launcher_exe.display().to_string())?;
             set_string_value(hkey, "Publisher", "RedDaxe.pl")?;
             set_string_value(hkey, "DisplayVersion", version)?;
             set_dword_value(hkey, "NoModify", 1)?;
@@ -424,7 +439,9 @@ mod registry {
             Ok(())
         })();
 
-        unsafe { RegCloseKey(hkey); }
+        unsafe {
+            RegCloseKey(hkey);
+        }
         res
     }
 
@@ -435,8 +452,12 @@ mod registry {
 
         let result = unsafe {
             RegSetValueExW(
-                hkey, name_w.as_ptr(), 0, REG_SZ,
-                value_w.as_ptr() as *const u8, data_bytes as u32,
+                hkey,
+                name_w.as_ptr(),
+                0,
+                REG_SZ,
+                value_w.as_ptr() as *const u8,
+                data_bytes as u32,
             )
         };
         if result != 0 {
@@ -449,12 +470,8 @@ mod registry {
         let name_w = to_wide(name);
         let data = value.to_le_bytes();
 
-        let result = unsafe {
-            RegSetValueExW(
-                hkey, name_w.as_ptr(), 0, REG_DWORD,
-                data.as_ptr(), 4,
-            )
-        };
+        let result =
+            unsafe { RegSetValueExW(hkey, name_w.as_ptr(), 0, REG_DWORD, data.as_ptr(), 4) };
         if result != 0 {
             return Err(format!("RegSetValueExW({name}) failed: {result}"));
         }
@@ -532,12 +549,8 @@ mod registry {
         let key_w = to_wide(UNINSTALL_KEY);
         let mut hkey: isize = 0;
 
-        let result = unsafe {
-            RegOpenKeyExW(
-                HKEY_CURRENT_USER, key_w.as_ptr(), 0,
-                KEY_READ, &mut hkey,
-            )
-        };
+        let result =
+            unsafe { RegOpenKeyExW(HKEY_CURRENT_USER, key_w.as_ptr(), 0, KEY_READ, &mut hkey) };
         if result != 0 {
             return None;
         }
@@ -549,21 +562,26 @@ mod registry {
 
         let result = unsafe {
             RegQueryValueExW(
-                hkey, name_w.as_ptr(), std::ptr::null_mut(),
-                &mut value_type, data.as_mut_ptr(), &mut data_size,
+                hkey,
+                name_w.as_ptr(),
+                std::ptr::null_mut(),
+                &mut value_type,
+                data.as_mut_ptr(),
+                &mut data_size,
             )
         };
 
-        unsafe { RegCloseKey(hkey); }
+        unsafe {
+            RegCloseKey(hkey);
+        }
 
         if result != 0 || value_type != REG_SZ {
             return None;
         }
 
         let wide_len = (data_size as usize) / 2;
-        let wide: &[u16] = unsafe {
-            std::slice::from_raw_parts(data.as_ptr() as *const u16, wide_len)
-        };
+        let wide: &[u16] =
+            unsafe { std::slice::from_raw_parts(data.as_ptr() as *const u16, wide_len) };
         let len = wide.iter().position(|&c| c == 0).unwrap_or(wide.len());
         let path_str = String::from_utf16_lossy(&wide[..len]);
 

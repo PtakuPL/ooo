@@ -54,9 +54,7 @@ pub fn download_and_verify(
             Err(e) => {
                 if attempt < MAX_RETRIES {
                     let s = i18n::t();
-                    ui::set_status(&format!(
-                        "{attempt}/{MAX_RETRIES} {}", s.retry_message
-                    ));
+                    ui::set_status(&format!("{attempt}/{MAX_RETRIES} {}", s.retry_message));
                 }
                 last_err = Some(e);
             }
@@ -83,8 +81,7 @@ fn try_download(
 
     let total_size = resp.content_length().unwrap_or(0);
     let mut reader = resp;
-    let mut file =
-        std::fs::File::create(dest).map_err(DownloadError::Io)?;
+    let mut file = std::fs::File::create(dest).map_err(DownloadError::Io)?;
 
     let mut hasher = Sha256::new();
     let mut downloaded: u64 = 0;
@@ -135,6 +132,5 @@ pub fn fetch_json(client: &Client, url: &str) -> Result<String, DownloadError> {
         return Err(DownloadError::Http(format!("HTTP {}", resp.status())));
     }
 
-    resp.text()
-        .map_err(|e| DownloadError::Http(e.to_string()))
+    resp.text().map_err(|e| DownloadError::Http(e.to_string()))
 }

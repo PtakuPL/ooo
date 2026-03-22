@@ -65,12 +65,20 @@ pub fn ask_install_dir(prompt_title: &str, prompt_msg: &str, hint_msg: &str) -> 
 }
 
 #[cfg(target_os = "windows")]
-fn win_ask_install_dir(default: &std::path::Path, title: &str, msg: &str, hint: &str) -> Option<PathBuf> {
+fn win_ask_install_dir(
+    default: &std::path::Path,
+    title: &str,
+    msg: &str,
+    hint: &str,
+) -> Option<PathBuf> {
     use std::ffi::OsStr;
     use std::os::windows::ffi::OsStrExt;
 
     fn to_wide(s: &str) -> Vec<u16> {
-        OsStr::new(s).encode_wide().chain(std::iter::once(0)).collect()
+        OsStr::new(s)
+            .encode_wide()
+            .chain(std::iter::once(0))
+            .collect()
     }
 
     #[link(name = "user32")]
@@ -107,7 +115,10 @@ fn win_browse_for_folder(title: &str) -> Option<PathBuf> {
     use std::os::windows::ffi::OsStrExt;
 
     fn to_wide(s: &str) -> Vec<u16> {
-        OsStr::new(s).encode_wide().chain(std::iter::once(0)).collect()
+        OsStr::new(s)
+            .encode_wide()
+            .chain(std::iter::once(0))
+            .collect()
     }
 
     #[repr(C)]
@@ -139,7 +150,9 @@ fn win_browse_for_folder(title: &str) -> Option<PathBuf> {
     const BIF_NEWDIALOGSTYLE: u32 = 0x0040;
     const COINIT_APARTMENTTHREADED: u32 = 0x2;
 
-    unsafe { CoInitializeEx(std::ptr::null_mut(), COINIT_APARTMENTTHREADED); }
+    unsafe {
+        CoInitializeEx(std::ptr::null_mut(), COINIT_APARTMENTTHREADED);
+    }
 
     let title_w = to_wide(title);
     let mut display_name: Vec<u16> = vec![0u16; 260];
@@ -162,13 +175,18 @@ fn win_browse_for_folder(title: &str) -> Option<PathBuf> {
 
     let mut path_buf: Vec<u16> = vec![0u16; 260];
     let ok = unsafe { SHGetPathFromIDListW(pidl, path_buf.as_mut_ptr()) };
-    unsafe { CoTaskMemFree(pidl); }
+    unsafe {
+        CoTaskMemFree(pidl);
+    }
 
     if ok == 0 {
         return None;
     }
 
-    let len = path_buf.iter().position(|&c| c == 0).unwrap_or(path_buf.len());
+    let len = path_buf
+        .iter()
+        .position(|&c| c == 0)
+        .unwrap_or(path_buf.len());
     let path_str = String::from_utf16_lossy(&path_buf[..len]);
 
     if path_str.is_empty() {
@@ -191,12 +209,14 @@ pub fn launcher_exe_name() -> &'static str {
 pub fn desktop_path() -> Option<PathBuf> {
     #[cfg(target_os = "windows")]
     {
-        std::env::var("USERPROFILE").ok()
+        std::env::var("USERPROFILE")
+            .ok()
             .map(|p| PathBuf::from(p).join("Desktop"))
     }
     #[cfg(not(target_os = "windows"))]
     {
-        std::env::var("HOME").ok()
+        std::env::var("HOME")
+            .ok()
             .map(|p| PathBuf::from(p).join("Desktop"))
     }
 }
@@ -205,10 +225,13 @@ pub fn desktop_path() -> Option<PathBuf> {
 pub fn start_menu_path() -> Option<PathBuf> {
     #[cfg(target_os = "windows")]
     {
-        std::env::var("APPDATA").ok()
-            .map(|p| PathBuf::from(p)
-                .join("Microsoft").join("Windows")
-                .join("Start Menu").join("Programs"))
+        std::env::var("APPDATA").ok().map(|p| {
+            PathBuf::from(p)
+                .join("Microsoft")
+                .join("Windows")
+                .join("Start Menu")
+                .join("Programs")
+        })
     }
     #[cfg(not(target_os = "windows"))]
     {
@@ -265,7 +288,12 @@ fn create_shortcut_win(
         ps_escape(&shortcut_path.display().to_string()),
         ps_escape(&target.display().to_string()),
         ps_escape(description),
-        ps_escape(&target.parent().map(|p| p.display().to_string()).unwrap_or_default()),
+        ps_escape(
+            &target
+                .parent()
+                .map(|p| p.display().to_string())
+                .unwrap_or_default()
+        ),
     );
 
     std::process::Command::new("powershell")
@@ -278,7 +306,9 @@ fn create_shortcut_win(
 fn create_desktop_entry_linux(install_dir: &std::path::Path) {
     if let Ok(home) = std::env::var("HOME") {
         let desktop_entry_path = PathBuf::from(&home)
-            .join(".local").join("share").join("applications")
+            .join(".local")
+            .join("share")
+            .join("applications")
             .join("RedDaxe.desktop");
 
         let launcher_path = install_dir.join(launcher_exe_name());
@@ -321,7 +351,9 @@ pub fn remove_shortcuts() {
     {
         if let Ok(home) = std::env::var("HOME") {
             let desktop_entry = PathBuf::from(&home)
-                .join(".local").join("share").join("applications")
+                .join(".local")
+                .join("share")
+                .join("applications")
                 .join("RedDaxe.desktop");
             let _ = std::fs::remove_file(desktop_entry);
         }

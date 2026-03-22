@@ -23,7 +23,11 @@ struct AppLock {
 impl Drop for AppLock {
     fn drop(&mut self) {
         if let Err(e) = std::fs::remove_file(&self.path) {
-            tracing::warn!("Nie udalo sie usunac lock-file {}: {}", self.path.display(), e);
+            tracing::warn!(
+                "Nie udalo sie usunac lock-file {}: {}",
+                self.path.display(),
+                e
+            );
         }
     }
 }
@@ -38,7 +42,11 @@ fn launcher_lock_path() -> PathBuf {
         .map(|cfg| cfg.launcher_data_dir)
         .unwrap_or_else(|_| "launcher_data".to_string());
 
-    let lock_name = if cfg!(target_os = "windows") { "launcher.lock" } else { ".launcher.lock" };
+    let lock_name = if cfg!(target_os = "windows") {
+        "launcher.lock"
+    } else {
+        ".launcher.lock"
+    };
     exe_dir.join(launcher_data_dir).join(lock_name)
 }
 
@@ -122,17 +130,22 @@ fn acquire_app_lock() -> Result<AppLock, String> {
         .map_err(|e| format!("Nie mozna utworzyc lock-file: {e}"))?;
 
     let pid = std::process::id();
-    writeln!(lock_file, "pid={pid}")
-        .map_err(|e| format!("Nie mozna zapisac lock-file: {e}"))?;
+    writeln!(lock_file, "pid={pid}").map_err(|e| format!("Nie mozna zapisac lock-file: {e}"))?;
 
     // A2: Hide lock file on Windows
     #[cfg(target_os = "windows")]
     {
         use std::os::windows::ffi::OsStrExt;
-        let wide_path: Vec<u16> = lock_path.as_os_str().encode_wide().chain(std::iter::once(0)).collect();
+        let wide_path: Vec<u16> = lock_path
+            .as_os_str()
+            .encode_wide()
+            .chain(std::iter::once(0))
+            .collect();
         unsafe {
             #[link(name = "kernel32")]
-            extern "system" { fn SetFileAttributesW(path: *const u16, attr: u32) -> i32; }
+            extern "system" {
+                fn SetFileAttributesW(path: *const u16, attr: u32) -> i32;
+            }
             SetFileAttributesW(wide_path.as_ptr(), 0x02); // FILE_ATTRIBUTE_HIDDEN
         }
     }

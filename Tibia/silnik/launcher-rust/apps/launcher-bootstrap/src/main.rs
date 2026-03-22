@@ -73,7 +73,10 @@ fn run_uninstall() -> Result<(), String> {
     let install_dir = determine_install_dir_for_uninstall();
 
     if !install_dir.exists() {
-        return Err(format!("Install directory not found: {}", install_dir.display()));
+        return Err(format!(
+            "Install directory not found: {}",
+            install_dir.display()
+        ));
     }
 
     // Confirm with user
@@ -115,19 +118,19 @@ fn run() -> Result<(), String> {
     let s = i18n::t();
 
     ui::set_status(&format!(
-        "RedDaxe.pl Installer v{BOOTSTRAP_VERSION} \u{2014} {}", s.installing_launcher
+        "RedDaxe.pl Installer v{BOOTSTRAP_VERSION} \u{2014} {}",
+        s.installing_launcher
     ));
 
     // Pre-install: check registry/default location BEFORE showing folder picker
-    let existing_dir = installer::read_install_location()
-        .or_else(|| {
-            let default = platform::default_install_dir();
-            if installer::launcher_already_installed(&default) {
-                Some(default)
-            } else {
-                None
-            }
-        });
+    let existing_dir = installer::read_install_location().or_else(|| {
+        let default = platform::default_install_dir();
+        if installer::launcher_already_installed(&default) {
+            Some(default)
+        } else {
+            None
+        }
+    });
 
     let install_dir = if let Some(ref existing) = existing_dir {
         // Found existing installation — ask user what to do BEFORE folder picker
@@ -141,9 +144,8 @@ fn run() -> Result<(), String> {
             Some(true) => {
                 // YES = uninstall everything and exit
                 installer::uninstall(existing)?;
-                let final_msg = format!(
-                    "{}\n\n{}", s.uninstall_complete, s.uninstall_bootstrap_hint
-                );
+                let final_msg =
+                    format!("{}\n\n{}", s.uninstall_complete, s.uninstall_bootstrap_hint);
                 ui::show_info(&final_msg);
                 return Ok(());
             }
@@ -159,7 +161,8 @@ fn run() -> Result<(), String> {
         }
     } else {
         // No existing installation — show folder picker
-        match platform::ask_install_dir(s.bootstrap_title, s.choose_install_dir, s.install_dir_hint) {
+        match platform::ask_install_dir(s.bootstrap_title, s.choose_install_dir, s.install_dir_hint)
+        {
             Some(dir) => dir,
             None => return Ok(()), // User cancelled — abort silently
         }
@@ -173,25 +176,21 @@ fn run() -> Result<(), String> {
 
     // 1. Fetch installer catalog
     ui::set_status(s.fetching_catalog);
-    let catalog_url = format!(
-        "{API_BASE}{CATALOG_ENDPOINT}?channel=stable&type=launcher"
-    );
-    let json_body = downloader::fetch_json(&client, &catalog_url)
-        .map_err(|e| format!("{e}"))?;
+    let catalog_url = format!("{API_BASE}{CATALOG_ENDPOINT}?channel=stable&type=launcher");
+    let json_body = downloader::fetch_json(&client, &catalog_url).map_err(|e| format!("{e}"))?;
 
-    let catalog: CatalogResponse = serde_json::from_str(&json_body)
-        .map_err(|e| format!("{}: {e}", s.invalid_api_response))?;
+    let catalog: CatalogResponse =
+        serde_json::from_str(&json_body).map_err(|e| format!("{}: {e}", s.invalid_api_response))?;
 
     // 2. Find the right artifact for this platform
-    let artifact = find_artifact(&catalog)
-        .ok_or_else(|| {
-            format!(
-                "{}: {} / {}",
-                s.no_artifact,
-                platform::platform_name(),
-                platform::arch_name()
-            )
-        })?;
+    let artifact = find_artifact(&catalog).ok_or_else(|| {
+        format!(
+            "{}: {} / {}",
+            s.no_artifact,
+            platform::platform_name(),
+            platform::arch_name()
+        )
+    })?;
 
     ui::set_status(&format!(
         "{}: {} \u{2026}",
@@ -200,8 +199,7 @@ fn run() -> Result<(), String> {
 
     // 3. Download to a temporary file
     let tmp_dir = std::env::temp_dir().join("reddaxe_installer");
-    std::fs::create_dir_all(&tmp_dir)
-        .map_err(|e| format!("{}: {e}", s.error_temp_dir))?;
+    std::fs::create_dir_all(&tmp_dir).map_err(|e| format!("{}: {e}", s.error_temp_dir))?;
 
     let download_path = tmp_dir.join(&artifact.filename);
 
@@ -213,22 +211,18 @@ fn run() -> Result<(), String> {
     // 4. Extract
     ui::reset_progress();
     let launcher_exe =
-        installer::extract_launcher(&download_path, &install_dir)
-            .map_err(|e| format!("{e}"))?;
+        installer::extract_launcher(&download_path, &install_dir).map_err(|e| format!("{e}"))?;
 
     // 5. Write config
-    installer::write_config(&install_dir, BOOTSTRAP_VERSION)
-        .map_err(|e| format!("{e}"))?;
+    installer::write_config(&install_dir, BOOTSTRAP_VERSION).map_err(|e| format!("{e}"))?;
 
     // 5a. Copy bootstrap to install_dir as uninstaller
-    installer::copy_self_to_install_dir(&install_dir)
-        .map_err(|e| format!("{e}"))?;
+    installer::copy_self_to_install_dir(&install_dir).map_err(|e| format!("{e}"))?;
 
     // 5b. Register in Windows Add/Remove Programs
     #[cfg(target_os = "windows")]
     {
-        installer::register_uninstaller(&install_dir)
-            .map_err(|e| format!("{e}"))?;
+        installer::register_uninstaller(&install_dir).map_err(|e| format!("{e}"))?;
     }
 
     // 5c. Create shortcuts
@@ -242,8 +236,7 @@ fn run() -> Result<(), String> {
     // 7. Show install path + launch
     ui::set_status(&format!("{} {}", s.installed_at, install_dir.display()));
     ui::set_status(s.install_complete);
-    installer::launch_full_launcher(&launcher_exe)
-        .map_err(|e| format!("{e}"))?;
+    installer::launch_full_launcher(&launcher_exe).map_err(|e| format!("{e}"))?;
 
     Ok(())
 }
@@ -254,16 +247,20 @@ fn find_artifact(catalog: &CatalogResponse) -> Option<&CatalogArtifact> {
     let arch = platform::arch_name();
 
     // Try exact platform+arch match first
-    catalog.artifacts.iter().find(|a| {
-        a.platform.eq_ignore_ascii_case(os) && a.arch.eq_ignore_ascii_case(arch)
-    }).or_else(|| {
-        // Fallback: match on platform only (for legacy catalog without platform/arch fields)
-        catalog.artifacts.iter().find(|a| {
-            a.platform.eq_ignore_ascii_case(os)
+    catalog
+        .artifacts
+        .iter()
+        .find(|a| a.platform.eq_ignore_ascii_case(os) && a.arch.eq_ignore_ascii_case(arch))
+        .or_else(|| {
+            // Fallback: match on platform only (for legacy catalog without platform/arch fields)
+            catalog
+                .artifacts
+                .iter()
+                .find(|a| a.platform.eq_ignore_ascii_case(os))
         })
-    }).or_else(|| {
-        // Last resort: take the first artifact with a non-empty URL
-        // (for the current simple catalog that has only one entry)
-        catalog.artifacts.iter().find(|a| !a.url.is_empty())
-    })
+        .or_else(|| {
+            // Last resort: take the first artifact with a non-empty URL
+            // (for the current simple catalog that has only one entry)
+            catalog.artifacts.iter().find(|a| !a.url.is_empty())
+        })
 }

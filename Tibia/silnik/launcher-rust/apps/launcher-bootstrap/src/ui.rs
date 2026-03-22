@@ -2,7 +2,6 @@
 ///
 /// Uses MessageBoxW (UTF-16) on Windows for correct Polish/international chars.
 /// Console output uses UTF-8 code page.
-
 use std::sync::atomic::{AtomicU8, Ordering};
 
 use crate::i18n;
@@ -66,7 +65,10 @@ fn show_message_box_win(msg: &str) {
     }
 
     fn to_wide(s: &str) -> Vec<u16> {
-        OsStr::new(s).encode_wide().chain(std::iter::once(0)).collect()
+        OsStr::new(s)
+            .encode_wide()
+            .chain(std::iter::once(0))
+            .collect()
     }
 
     let title = i18n::t().bootstrap_title;
@@ -129,7 +131,10 @@ fn confirm_yes_no_win(title: &str, msg: &str) -> bool {
     use std::os::windows::ffi::OsStrExt;
 
     fn to_wide(s: &str) -> Vec<u16> {
-        OsStr::new(s).encode_wide().chain(std::iter::once(0)).collect()
+        OsStr::new(s)
+            .encode_wide()
+            .chain(std::iter::once(0))
+            .collect()
     }
 
     #[link(name = "user32")]
@@ -157,7 +162,10 @@ fn confirm_yes_no_cancel_win(title: &str, msg: &str) -> Option<bool> {
     use std::os::windows::ffi::OsStrExt;
 
     fn to_wide(s: &str) -> Vec<u16> {
-        OsStr::new(s).encode_wide().chain(std::iter::once(0)).collect()
+        OsStr::new(s)
+            .encode_wide()
+            .chain(std::iter::once(0))
+            .collect()
     }
 
     #[link(name = "user32")]
@@ -195,7 +203,10 @@ fn show_info_box_win(msg: &str) {
     }
 
     fn to_wide(s: &str) -> Vec<u16> {
-        OsStr::new(s).encode_wide().chain(std::iter::once(0)).collect()
+        OsStr::new(s)
+            .encode_wide()
+            .chain(std::iter::once(0))
+            .collect()
     }
 
     let title = i18n::t().bootstrap_title;

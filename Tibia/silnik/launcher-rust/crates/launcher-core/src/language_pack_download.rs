@@ -277,12 +277,12 @@ fn validate_language_pack_for_download(
         ));
     }
 
-    let size =
-        pack.size
-            .ok_or_else(|| LanguagePackDownloadError::MissingDownloadField {
-                locale: pack.locale.clone(),
-                field: "size",
-            })?;
+    let size = pack
+        .size
+        .ok_or_else(|| LanguagePackDownloadError::MissingDownloadField {
+            locale: pack.locale.clone(),
+            field: "size",
+        })?;
     if size == 0 {
         return Err(LanguagePackDownloadError::InvalidMetadata(
             "size must be greater than zero".to_string(),

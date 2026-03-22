@@ -233,15 +233,13 @@ pub fn quarantine_critical_files(
 
         match std::fs::rename(&src, &dst) {
             Ok(_) => moved_files.push(rel.clone()),
-            Err(rename_err) => {
-                match copy_and_remove(&src, &dst) {
-                    Ok(_) => moved_files.push(rel.clone()),
-                    Err(copy_err) => failed_files.push(format!(
-                        "{}: rename failed: {}; copy+remove failed: {}",
-                        rel, rename_err, copy_err
-                    )),
-                }
-            }
+            Err(rename_err) => match copy_and_remove(&src, &dst) {
+                Ok(_) => moved_files.push(rel.clone()),
+                Err(copy_err) => failed_files.push(format!(
+                    "{}: rename failed: {}; copy+remove failed: {}",
+                    rel, rename_err, copy_err
+                )),
+            },
         }
     }
 

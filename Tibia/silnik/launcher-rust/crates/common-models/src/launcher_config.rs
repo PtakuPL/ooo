@@ -412,8 +412,9 @@ fn validate_profile_url(
     url: &str,
     require_https: bool,
 ) -> Result<(), ConfigError> {
-    validate_url(url, require_https)
-        .map_err(|e| ConfigError::Validation(format!("profiles.{}.apiBaseUrl: {}", profile_name, e)))
+    validate_url(url, require_https).map_err(|e| {
+        ConfigError::Validation(format!("profiles.{}.apiBaseUrl: {}", profile_name, e))
+    })
 }
 
 fn api_path_suffix(url: &str) -> Result<String, ConfigError> {

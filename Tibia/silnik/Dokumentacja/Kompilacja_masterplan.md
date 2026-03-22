@@ -163,11 +163,13 @@ KROK 6: Po PASS — pobieramy artefakty i testujemy
 
 | Krok | Status | Data | Uwagi |
 |------|--------|------|-------|
-| Push do ticket-gate | ⬜ TODO | — | — |
-| C1: Canary build | ⬜ TODO | — | — |
-| C2: OTC Linux build | ⬜ TODO | — | — |
-| C3: OTC Windows build | ⬜ TODO | — | — |
-| C4: Paczka gracza | ⬜ TODO | — | — |
-| C5: Launcher build | ⬜ TODO | — | — |
-| C6: Bootstrap build | ⬜ TODO | — | — |
+| Push do ticket-gate | ✅ DONE | 2026-03-22 | commit `fcb62b6c2`, 75 files, +7320/-973 |
+| C1: Canary build | ✅ SUCCESS | 2026-03-22 | Run #23401384350 |
+| C2: OTC Linux build | ❌ FAIL → FIX READY | 2026-03-22 | Run #23401385971, const cv-qualifier fix w luabinder.h |
+| C3: OTC Windows build | 🔄 RUNNING | 2026-03-22 | Run #23401387845 |
+| C4: Paczka gracza (Win+Linux) | 🔄 RUNNING | 2026-03-22 | Run #23401389833, version=1.2.0, channel=dev |
+| C5: Launcher build | ✅ SUCCESS | 2026-03-22 | Run #23401376171 |
+| C6: Bootstrap build | ✅ SUCCESS | 2026-03-22 | Run #23401376165 |
+| CI: Launcher CI | ❌ FAIL (non-blocking) | 2026-03-22 | Run #23401376166, cargo fmt only |
+| Push fix + re-trigger | ⬜ TODO | — | luabinder.h + Rust fmt |
 | Smoke test post-build | ⬜ TODO | — | — |

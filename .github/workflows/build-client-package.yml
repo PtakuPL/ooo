@@ -128,14 +128,9 @@ jobs:
           [ -f otclientrc.lua ] && cp otclientrc.lua "$PKG/otclientrc.lua.default"
 
           # ── 5. Inject customizations ──
-          # 5a. init.lua: force CLIENT_LOCKED = true
-          if grep -q "CLIENT_LOCKED" "$PKG/init.lua"; then
-            sed -i 's/CLIENT_LOCKED\s*=\s*false/CLIENT_LOCKED = true/g' "$PKG/init.lua"
-            # R-02: Weryfikacja że sed zadziałał
-            if ! grep -q "CLIENT_LOCKED = true" "$PKG/init.lua"; then
-              echo "WARNING: sed did not enforce CLIENT_LOCKED = true — verify init.lua format"
-            fi
-          fi
+          # NOTE: CLIENT_LOCKED is now handled via getNativeClientLocked() in C++ —
+          # no sed rewriting needed. The native function always returns true for
+          # production builds (ConfigManager::m_clientLocked default = true).
 
           # 5b. Overlay custom modules from customizations/ directory
           # This directory contains our server-specific overrides:
@@ -184,8 +179,8 @@ jobs:
           # Must have executable
           [ -f "$PKG/otclient.exe" ] || { echo "FAIL: missing otclient.exe"; exit 1; }
 
-          # Must have init.lua with CLIENT_LOCKED = true
-          grep -q "CLIENT_LOCKED = true" "$PKG/init.lua" || { echo "FAIL: CLIENT_LOCKED not true"; exit 1; }
+          # Must have init.lua wired to native client lock policy
+          grep -q "CLIENT_LOCKED = getNativeClientLocked()" "$PKG/init.lua" || { echo "FAIL: init.lua is not wired to native client lock policy"; exit 1; }
 
           # Must NOT have source files
           SRC_COUNT=$(find "$PKG" \( -name "*.cpp" -o -name "*.h" -o -name "*.hpp" \) | wc -l)
@@ -401,10 +396,7 @@ jobs:
           [ -f otclientrc.lua ] && cp otclientrc.lua "$PKG/otclientrc.lua.default"
 
           # ── 5. Inject customizations ──
-          # 5a. init.lua: force CLIENT_LOCKED = true
-          if grep -q "CLIENT_LOCKED" "$PKG/init.lua"; then
-            sed -i 's/CLIENT_LOCKED\s*=\s*false/CLIENT_LOCKED = true/g' "$PKG/init.lua"
-          fi
+          # NOTE: CLIENT_LOCKED handled via getNativeClientLocked() — no sed needed.
 
           # 5b. Overlay custom modules from customizations/ directory
           CUSTOM_DIR="customizations"
@@ -446,7 +438,7 @@ jobs:
           PKG="package"
 
           [ -f "$PKG/otclient" ] || { echo "FAIL: missing otclient"; exit 1; }
-          grep -q "CLIENT_LOCKED = true" "$PKG/init.lua" || { echo "FAIL: CLIENT_LOCKED not true"; exit 1; }
+          grep -q "CLIENT_LOCKED = getNativeClientLocked()" "$PKG/init.lua" || { echo "FAIL: init.lua is not wired to native client lock policy"; exit 1; }
 
           SRC_COUNT=$(find "$PKG" \( -name "*.cpp" -o -name "*.h" -o -name "*.hpp" \) | wc -l)
           [ "$SRC_COUNT" -eq 0 ] || { echo "FAIL: found $SRC_COUNT source files"; exit 1; }

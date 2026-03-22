@@ -4,28 +4,28 @@
 
 ## 📝 PODSUMOWANIE
 
-> Worker tłumaczy **53** języków. Klucze EN: **74,536**. Pokrycie globalne: **18.27%**. Tempo: **992.5 kluczy/h**. Tłumaczeń netto: **24,683**.
+> Worker tłumaczy **53** języków. Klucze EN: **74,536**. Pokrycie globalne: **18.28%**. Tempo: **992.5 kluczy/h**. Tłumaczeń netto: **24,683**.
 
 ## 🧭 META
 
 > **[META]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-03-22 18:46:56
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-03-22 18:49:14
 
-> **Aktualizacja:** 2026-03-22 18:46:56 UTC  
+> **Aktualizacja:** 2026-03-22 18:49:14 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 74536  
-> **LIVE:** Cykl #8,958 | Status: 🟢 DZIAŁA | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: ru | Plik: books.json | Heartbeat: 2026-03-22T18:46:48Z  
+> **LIVE:** Cykl #8,958 | Status: 🟢 DZIAŁA | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: ru | Plik: books.json | Heartbeat: 2026-03-22T18:48:19Z  
 > **Okno godzinowe:** okno=1.0h | cykli=26 | pominięte=0.0% | odrzucone=0.8% | przepustowość=992.5/h  
 > **Tłumaczeń netto:** 24,683
 
 ### 🧩 Status sekcji
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-03-22 18:46:56 |
-| LIVE | 🟢 AKTYWNY | 9s temu | - | `activity.json / worker_state.json` | 2026-03-22T18:46:48Z |
-| PRE_MIGRATION | 🔒 NIEAKTYWNY | 1min temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-03-22 18:46:56 |
-| TRANSLATION | 🟢 AKTYWNY | 3min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-03-22T18:43:26.092203Z |
-| QUALITY | 🔒 NIEAKTYWNY | 13min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-03-22T18:33:17.299926Z |
-| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-03-22 18:46:56 |
+| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-03-22 18:49:14 |
+| LIVE | 🟢 AKTYWNY | 57s temu | - | `activity.json / worker_state.json` | 2026-03-22T18:48:19Z |
+| PRE_MIGRATION | 🔒 NIEAKTYWNY | 54s temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-03-22 18:49:14 |
+| TRANSLATION | 🟢 AKTYWNY | 5min temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-03-22T18:43:26.092203Z |
+| QUALITY | 🔒 NIEAKTYWNY | 15min temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-03-22T18:33:17.299926Z |
+| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-03-22 18:49:14 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -34,7 +34,7 @@
 ## 🔴 LIVE — Bieżąca praca
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 9s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-03-22T18:46:48Z
+> Świeżość: 57s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-03-22T18:48:19Z
 
 | Metryka | Wartość |
 |---------|---------|
@@ -48,7 +48,7 @@
 | 📈 **Postęp** | Batch: 30 keys/cykl |
 | 🔧 **Metoda** | Translation Memory (GT wyłączony) |
 | 🔄 **Ostatni cykl** | 0 kluczy, 0 odrzuconych, 0s, tryb: AUTO_TRANSLATE |
-| ❤️ **Heartbeat** | 2026-03-22T18:46:48Z |
+| ❤️ **Heartbeat** | 2026-03-22T18:48:19Z |
 
 **Ostatnie operacje:**
 - → AUTO_TRANSLATE_DONE (TR) [warn]
@@ -73,7 +73,7 @@
 | 📄 Najczęstszy plik | otclient_modules.json |
 | ⚡ Przepustowość | ~992 kluczy/h |
 | 🛡️ Odrzucone (strażnik) | 0.8% |
-| ⚠️ Podejrzane | 662 |
+| ⚠️ Podejrzane | 720 |
 
 ---
 
@@ -94,7 +94,7 @@
 
 | Język | Przetłumaczono | Kluczy EN | Pokrycie | Kopie EN |
 |-------|---------------|-----------|----------|----------|
-| ES | 69,300 | 74,536 | 92.98% →0% | 25,438 |
+| ES | 69,478 | 74,536 | 93.21% ↑+0.23% | 25,266 |
 | PL | 55,783 | 74,536 | 74.84% →0% | 14,402 |
 | FR | 52,613 | 74,536 | 70.59% →0% | 50,686 |
 | IT | 52,602 | 74,536 | 70.57% | 33,743 |
@@ -121,11 +121,11 @@
 
 ## 📈 Postęp i ETA (cel: 95%)
 
-> **ETA globalne:** ~125 dni (2,973,863 kluczy do celu 95%)
+> **ETA globalne:** ~125 dni (2,973,685 kluczy do celu 95%)
 
 | Język | Pasek | Pokrycie | Przetłumaczono | ETA do 95% |
 |-------|-------|----------|---------------|------------|
-| ES | ██████████████████░░ | 93.0% | 69,300/74,536 | ~2h |
+| ES | ██████████████████░░ | 93.2% | 69,478/74,536 | ~1h |
 | PL | ██████████████░░░░░░ | 74.8% | 55,783/74,536 | ~15h |
 | FR | ██████████████░░░░░░ | 70.6% | 52,613/74,536 | ~18h |
 | IT | ██████████████░░░░░░ | 70.6% | 52,602/74,536 | ~18h |
@@ -202,7 +202,7 @@
 ## 🔍 PRE_MIGRATION — Skan plików źródłowych
 
 > **[PRE_MIGRATION]** 🔒 NIEAKTYWNY (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 1min temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-03-22 18:46:56
+> Świeżość: 54s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-03-22 18:49:14
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -306,7 +306,7 @@
 ## 🌍 TŁUMACZENIA
 
 > **[TRANSLATION]** 🟢 AKTYWNY  
-> Świeżość: 3min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-03-22T18:43:26.092203Z
+> Świeżość: 5min temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-03-22T18:43:26.092203Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -318,7 +318,7 @@
 ### 🎯 Pokrycie tłumaczeń per język (EN → LANG)
 | Język | Przetłumaczone | % poprawnie przetłumaczonych | Kopie EN | Braki kluczy |
 |-------|----------------|-------------------------------|---------|--------------|
-| ES (Hiszpański) | 69,300/74,536 | 92.98% | 25,438 | 2,385 |
+| ES (Hiszpański) | 69,478/74,536 | 93.21% | 25,266 | 2,385 |
 | PL (Polski) | 55,783/74,536 | 74.84% | 14,402 | 13,769 |
 | FR (Francuski) | 52,613/74,536 | 70.59% | 50,686 | 1,668 |
 | IT (Włoski) | 52,602/74,536 | 70.57% | 33,743 | 11,523 |
@@ -345,30 +345,26 @@
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- Type to search → Zadejte a vyhledejte (otclient_modules.cyclopedia_widgets_otui.tr_26)
-- Unlocks if you reach the
-Prowess level for any boss → Odemkne se, pokud dosáhnete
-Úroveň zdatnosti pro každého šéfa (otclient_modules.cyclopedia_widgets_otui.tr_27)
-- Physical → Fyzikální (otclient_modules.cyclopedia_widgets_otui.tr_29)
-- sort by remaining kills → seřadit podle zbývajících sestřelů (otclient_modules.cyclopedia_widgets_otui.tr_3)
-- Max. Beds: 1 → Max. Lůžka: 1 (otclient_modules.cyclopedia_widgets_otui.tr_34)
-- Status: auctioned (no bid yet) → Stav: vydraženo (zatím žádná nabídka) (otclient_modules.cyclopedia_widgets_otui.tr_35)
-- Size: 17sqm → Velikost: 17m2 (otclient_modules.cyclopedia_widgets_otui.tr_36)
-- Set bid limit: → Nastavit limit nabídky: (otclient_modules.cyclopedia_widgets_otui.tr_37)
-- Short by completion percentage → Zkrácené procentem dokončení (otclient_modules.cyclopedia_widgets_otui.tr_4)
-- sort by name → seřadit podle názvu (otclient_modules.cyclopedia_widgets_otui.tr_5)
-- Bestiary Tracker → Bestiary Sledovač (otclient_modules.cyclopedia_widgets_otui.tr_6)
-- Track → Dráha (otclient_modules.cyclopedia_widgets_otui.tr_9)
-- You are dead → Jsi mrtvý (otclient_modules.deathwindow_otui.tr_3)
-- Debug Info → Informace o ladění (otclient_modules.debug_info.tr_1)
-- Proxies → Proxy (otclient_modules.debug_info_otui.tr_1)
-- Debug Info → Informace o ladění (otclient_modules.debug_info_otui.tr_2)
-- Clear → Jasný (otclient_modules.edit_hotkey_otui.tr_2)
-- This hotkey is already in use and will be overwritten. → Tato klávesová zkratka se již používá a bude přepsána. (otclient_modules.edit_hotkey_otui.tr_4)
-- Click "Apply" to assign the hotkey.
-Click "Clear" to remove the hotkey. → Kliknutím na „Použít“ přiřadíte klávesovou zkratku.
-Kliknutím na „Vymazat“ odstr (otclient_modules.edit_hotkey_otui.tr_5)
-- Edit Hotkey → Upravit klávesovou zkratku (otclient_modules.edit_hotkey_otui.tr_7)
+- Fine. You have {} attunements left. What is the new city of your choice? Thais,  → Bien. Te quedan {} sintonizaciones. ¿Cuál es la nueva ciudad de tu elección? ¿Th (npc.charos.say_4)
+- Sorry, you don't have an unenchanted {}. → Lo siento, no tienes un {} sin encantar. (npc.cledwyn.say_23)
+- For your {rank} there are four missions avaliable: crystal {keeper}, {spark} hun → Para tu {rank} hay cuatro misiones disponibles: cristal {keeper}, caza {spark},  (npc.commander_stone.say_30)
+- For a {} you will need {}. Do you have it with you? → Para un {} necesitarás {}. ¿Lo tienes contigo? (npc.frosty.say_8)
+- Your hazard level has been set to {}. Good luck! → Su nivel de peligro se ha establecido en {}. ¡Buena suerte! (npc.gnomadness.say_6)
+- Our relations improve with every mission you undertake on our behalf. Another wa → Nuestras relaciones mejoran con cada misión que usted emprende en nuestro nombre (npc.gnomally.say_12)
+- You are not even a recruit of the Bigfoots. Sorry I can't help you. → Ni siquiera eres un recluta de los Bigfoots. Lo siento, no puedo ayudarte. (npc.gnomally.say_13)
+- Sorry, you don't have enough {} tokens with you. → Lo sentimos, no tienes suficientes tokens {} contigo. (npc.gnomally.say_14)
+- As you wish! Your new renown is {{}}. → ¡Como desées! Tu nuevo renombre es {{}}. (npc.gnomally.say_15)
+- You want to offer {} suspicious device{}. Which leader shall have it, (Gnomus) o → Quieres ofrecer {} dispositivo sospechoso{}. ¿Qué líder lo tendrá, (Gnomus) del  (npc.gnomus.say_18)
+- I'm responsible for resupplying foolish adventurers with equipment that they may → Soy responsable de reabastecer a los tontos aventureros con el equipo que puedan (npc.gnomux.say_4)
+- When most other crystal experts left for new assignments, I decided to stay and  → Cuando la mayoría de los demás expertos en cristales se fueron para nuevas asign (npc.gnomux.say_7)
+- Well then, listen closely. First, you will have to prove that you are a fierce a → Pues bien, escucha atentamente. Primero, tendrás que demostrar que eres un guerr (npc.gregor.say_33)
+- Secondly, please retrieve a helmet for us which has been lost a long time ago. T → En segundo lugar, por favor recupérenos un casco que se perdió hace mucho tiempo (npc.gregor.say_34)
+- Third, we need a new flask of warrior's sweat. We've run out of it recently, but → En tercer lugar, necesitamos una nueva botella de sudor de guerrero. Se nos acab (npc.gregor.say_35)
+- Lastly, I will have our smith refine your helmet if you bring me royal steel, an → Por último, haré que nuestro herrero refine tu casco si me traes acero real, un  (npc.gregor.say_36)
+- Do you want to receive the blessing of the inquisition - which means {} blessing → ¿Quieres recibir la bendición de la inquisición - que significa {} bendiciones - (npc.henricus.say_33)
+- Do you want to buy the special flask of holy water for {} gold? → ¿Quieres comprar el frasco especial de agua bendita por {} oro? (npc.henricus.say_34)
+- Do you want to buy items for {} imbuement for {} gold? → ¿Quieres comprar artículos por {} imbución por {} oro? (npc.imbuement_assistant.say_5)
+- I'm sorry, but I cannot let you go there, you'll get much better training here t → Lo siento, pero no puedo dejarte ir allí, recibirás un entrenamiento mucho mejor (npc.inigo.say_97)
 
 ### 🚫 Raporty strażnika jakości
 - Raporty strażnika jakości: **2677**  
@@ -376,12 +372,12 @@ Kliknutím na „Vymazat“ odstr (otclient_modules.edit_hotkey_otui.tr_5)
 - Widoczne raporty 'nie mogę przetłumaczyć': **2541**
 
 ### 🌐 Globalne info wszystkich języków
-- **Pokrycie globalne:** **18.27%** (708,205/3,875,872)
-- **Kopie EN (łącznie):** **617,443**
+- **Pokrycie globalne:** **18.28%** (708,383/3,875,872)
+- **Kopie EN (łącznie):** **617,271**
 - **Braki kluczy (łącznie):** **917,383**
 - **Brakujące pliki językowe:** **12**
-- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
-- **Cache STATUSPY (per-file):** hit **2028**, miss **0**, hit-rate **100.0%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
+- **Cache STATUSPY (per-file):** hit **2027**, miss **1**, hit-rate **100.0%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -393,7 +389,7 @@ Kliknutím na „Vymazat“ odstr (otclient_modules.edit_hotkey_otui.tr_5)
 
 | Język | Serwer | Serwer % | Instalka | Instalka % |
 |-------|--------|----------|----------|------------|
-| ES | 66,222/70,637 | 93.8% | 3,078/3,899 | 78.9% |
+| ES | 66,400/70,637 | 94.0% | 3,078/3,899 | 78.9% |
 | PL | 52,677/70,637 | 74.6% | 3,106/3,899 | 79.7% |
 | FR | 50,014/70,637 | 70.8% | 2,599/3,899 | 66.7% |
 | IT | 50,146/70,637 | 71.0% | 2,456/3,899 | 63.0% |
@@ -409,13 +405,13 @@ Kliknutím na „Vymazat“ odstr (otclient_modules.edit_hotkey_otui.tr_5)
 ### ⏱️ Ścisłe okno godzinowe (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-03-22T17:46:56.660849Z → 2026-03-22T18:46:56.660849Z) |
+| Okno | **1.0h** (2026-03-22T17:49:15.249156Z → 2026-03-22T18:49:15.249156Z) |
 | Cykle | **26** (TŁUMACZENIE=26, PRE_MIGRATION=0) |
 | Pominięte (kat. nieaktywna) | **0** (ogółem=0.0%, migracja=0.0%) |
 | Odrzucone (strażnik jakości) % | **0.8%** |
 | Cykle bez postępu % | **0.0%** |
 | Przepustowość (kluczy/h) | **992.5 kluczy/h** |
-| Podejrzane tłumaczenia | **662** |
+| Podejrzane tłumaczenia | **720** |
 | Najgorsze cele (strażnik) | tr/scripts.json (gf=4), tr/actions.json (gf=4), nl/otclient_modules.json (gf=2), pt/otclient_modules.json (gf=1), de/raids.json (gf=0) |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
@@ -423,7 +419,7 @@ Kliknutím na „Vymazat“ odstr (otclient_modules.edit_hotkey_otui.tr_5)
 ## 🔬 JAKOŚĆ TŁUMACZEŃ
 
 > **[QUALITY]** 🔒 NIEAKTYWNY (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 13min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-03-22T18:33:17.299926Z
+> Świeżość: 15min temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-03-22T18:33:17.299926Z
 
 - **Ostatni audyt:** OK | 7 issue(s) / 100 entries | 2026-03-22T18:33:17.299926Z
 - **Top 5 typów problemów:** suspicious_rejected_critical=175, suspicious_log_low=116, suspicious_log_high=84, suspicious_rejected_high=25, identical_to_en=7
@@ -467,7 +463,7 @@ Kliknutím na „Vymazat“ odstr (otclient_modules.edit_hotkey_otui.tr_5)
 | Komponent | Status | Szczegóły |
 |-----------|--------|-----------|
 | Worker | 🟢 DZIAŁA | Cykl #8,958 |
-| Heartbeat | 9s temu | 2026-03-22T18:46:48Z |
+| Heartbeat | 57s temu | 2026-03-22T18:48:19Z |
 | Uptime | - | od startu workera |
 
 ---
@@ -552,7 +548,7 @@ Kliknutím na „Vymazat“ odstr (otclient_modules.edit_hotkey_otui.tr_5)
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 9s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-03-22T18:46:48Z
+> Świeżość: 57s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-03-22T18:48:19Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -567,18 +563,18 @@ Kliknutím na „Vymazat“ odstr (otclient_modules.edit_hotkey_otui.tr_5)
 │ Postęp: batch: 30 keys/cykl                                   │
 │ Info: auto translate in progress                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-03-22T18:46:48Z           │
+│ ❤️ Heartbeat: 2026-03-22T18:48:19Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-03-22 18:48:19 | AUTO_TRANSLATE:heartbeat_tick | ru | ok | books.json
 - 2026-03-22 18:46:48 | AUTO_TRANSLATE:heartbeat_tick | ru | ok | books.json
 - 2026-03-22 18:46:47 | AUTO_TRANSLATE:auto_start | ru | ok | books.json
 - 2026-03-22 18:45:18 | AUTO_TRANSLATE:heartbeat_tick | es | ok | npc.json
 - 2026-03-22 18:43:48 | AUTO_TRANSLATE:heartbeat_tick | es | ok | npc.json
 - 2026-03-22 18:43:26 | AUTO_TRANSLATE:auto_done | tr | ok | actions.json
-- 2026-03-22 18:42:55 | AUTO_TRANSLATE:heartbeat_tick | tr | ok | actions.json
 
 ---
 
@@ -587,7 +583,7 @@ Kliknutím na „Vymazat“ odstr (otclient_modules.edit_hotkey_otui.tr_5)
 | Język | Pokrycie | Brakujące | Kopie EN | Przetłumaczone(200) | Odrzucone | Wpisy |
 |-------|----------|-----------|---------|-----------------|------------|---------|
 | 🟡 PL | 74.8% | 13,769 | 14,402 | 297 | 120 (28.8%) | 19 |
-| 🟡 ES | 93.0% | 2,385 | 25,438 | 264 | 140 (34.7%) | 18 |
+| 🟡 ES | 93.2% | 2,385 | 25,266 | 264 | 140 (34.7%) | 18 |
 
 | Wskaźnik | Wartość | Cel | Status |
 |-----|---------|--------|--------|
@@ -600,7 +596,7 @@ Kliknutím na „Vymazat“ odstr (otclient_modules.edit_hotkey_otui.tr_5)
 ## 📜 HISTORIA
 
 > **[HISTORY]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-03-22 18:46:56
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-03-22 18:49:14
 
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [tr] → warn (files+1, translated+30, skipped+0) — lang=tr file=actions.json strict_skipped_done=5 guard_fail=4 placeholder=0 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: REPAIR_IDENTICAL_DONE [es] → ok (translated+228) — repair_identical lang=es file=npc.json target_identical=1027 limit=156 tier=base+domain_cap+suspicious_guard domain_cap=260 gt=true suspicious_pct=26.45
@@ -956,7 +952,7 @@ Kliknutím na „Vymazat“ odstr (otclient_modules.edit_hotkey_otui.tr_5)
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-03-22 18:46:56  
+📅 Auto-updated by Worker v1.1 | Last: 2026-03-22 18:49:14  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

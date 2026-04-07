@@ -9,24 +9,24 @@
 ## 🧭 META
 
 > **[META]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-04-07 14:06:59
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-04-07 14:09:24
 
-> **Aktualizacja:** 2026-04-07 14:06:59 UTC  
+> **Aktualizacja:** 2026-04-07 14:09:24 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 74536  
 > **Publikacja:** git-enabled  
-> **LIVE:** Cykl #13,458 | Status: 🟢 DZIAŁA | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: it | Plik: items.json | Heartbeat: 2026-04-07T14:06:58Z  
+> **LIVE:** Cykl #13,458 | Status: 🟢 DZIAŁA | Faza: AUTO_TRANSLATE | Etap: heartbeat_tick | Kategoria: it | Plik: items.json | Heartbeat: 2026-04-07T14:08:24Z  
 > **Okno godzinowe:** okno=1.0h | cykli=1 | pominięte=0.0% | odrzucone=0.0% | przepustowość=0.0/h  
 > **Tłumaczeń netto:** 109,344
 
 ### 🧩 Status sekcji
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-04-07 14:06:59 |
-| LIVE | 🟢 AKTYWNY | 5s temu | - | `activity.json / worker_state.json` | 2026-04-07T14:06:58Z |
-| PRE_MIGRATION | 🔒 NIEAKTYWNY | 13s temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-04-07 14:06:59 |
+| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-04-07 14:09:24 |
+| LIVE | 🟢 AKTYWNY | 1min temu | - | `activity.json / worker_state.json` | 2026-04-07T14:08:24Z |
+| PRE_MIGRATION | 🔒 NIEAKTYWNY | 13s temu | worker w trybie AUTO_TRANSLATE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-04-07 14:09:24 |
 | TRANSLATION | 🟢 AKTYWNY | 2d temu | - | `translation_guard_latest.json / translation_recent_latest.json` | 2026-04-04T22:57:29.389158Z |
 | QUALITY | 🔒 NIEAKTYWNY | 2d temu | worker w trybie AUTO_TRANSLATE | `quality_audit_latest.json` | 2026-04-04T22:57:30.785528Z |
-| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-04-07 14:06:59 |
+| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-04-07 14:09:24 |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -35,7 +35,7 @@
 ## 🔴 LIVE — Bieżąca praca
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 5s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-04-07T14:06:58Z
+> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-04-07T14:08:24Z
 
 | Metryka | Wartość |
 |---------|---------|
@@ -49,7 +49,7 @@
 | 📈 **Postęp** | Batch: 30 keys/cykl |
 | 🔧 **Metoda** | Translation Memory (GT wyłączony) |
 | 🔄 **Ostatni cykl** | 0 kluczy, 0 odrzuconych, 0s, tryb: AUTO_TRANSLATE |
-| ❤️ **Heartbeat** | 2026-04-07T14:06:58Z |
+| ❤️ **Heartbeat** | 2026-04-07T14:08:24Z |
 
 **Ostatnie operacje:**
 - → AUTO_TRANSLATE_DONE (RU) [warn]
@@ -74,7 +74,7 @@
 | 📄 Najczęstszy plik | - |
 | ⚡ Przepustowość | ~0 kluczy/h |
 | 🛡️ Odrzucone (strażnik) | 0.0% |
-| ⚠️ Podejrzane | 174 |
+| ⚠️ Podejrzane | 175 |
 
 ---
 
@@ -95,7 +95,7 @@
 | ES | 57,871 | 74,536 | 77.64% →0% | 9,725 |
 | PL | 52,739 | 74,536 | 70.76% →0% | 5,888 |
 | IT | 48,341 | 74,536 | 64.86% | 10,484 |
-| RO | 48,150 | 74,536 | 64.6% | 13,201 |
+| RO | 48,206 | 74,536 | 64.67% | 13,204 |
 | RU | 31,177 | 74,536 | 41.83% →0% | 5,069 |
 | FR | 41,396 | 74,536 | 55.54% →0% | 27,649 |
 | SR | 24,827 | 74,536 | 33.31% | 1,218 |
@@ -119,14 +119,14 @@
 
 ## 📈 Postęp i ETA (cel: 95%)
 
-> **ETA globalne:** ~125827 dni (3,019,838 kluczy do celu 95%)
+> **ETA globalne:** ~125824 dni (3,019,782 kluczy do celu 95%)
 
 | Język | Pasek | Pokrycie | Przetłumaczono | ETA do 95% |
 |-------|-------|----------|---------------|------------|
 | ES | ███████████████░░░░░ | 77.6% | 57,871/74,536 | ~539d |
 | PL | ██████████████░░░░░░ | 70.8% | 52,739/74,536 | ~753d |
 | IT | ████████████░░░░░░░░ | 64.9% | 48,341/74,536 | ~936d |
-| RO | ████████████░░░░░░░░ | 64.6% | 48,150/74,536 | ~944d |
+| RO | ████████████░░░░░░░░ | 64.7% | 48,206/74,536 | ~942d |
 | RU | ████████░░░░░░░░░░░░ | 41.8% | 31,177/74,536 | ~1651d |
 | FR | ███████████░░░░░░░░░ | 55.5% | 41,396/74,536 | ~1226d |
 | SR | ██████░░░░░░░░░░░░░░ | 33.3% | 24,827/74,536 | ~1916d |
@@ -200,7 +200,7 @@
 ## 🔍 PRE_MIGRATION — Skan plików źródłowych
 
 > **[PRE_MIGRATION]** 🔒 NIEAKTYWNY (worker w trybie AUTO_TRANSLATE)  
-> Świeżość: 13s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-04-07 14:06:59
+> Świeżość: 13s temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-04-07 14:09:24
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -319,7 +319,7 @@
 | ES (Hiszpański) | 77.64% (57,871/74,536) | 66.48% (49,548/74,536) | 9,725 | 15,282 | 0 |
 | PL (Polski) | 70.76% (52,739/74,536) | 64.84% (48,328/74,536) | 5,888 | 20,343 | 0 |
 | IT (Włoski) | 64.86% (48,341/74,536) | 56.53% (42,134/74,536) | 10,484 | 21,940 | 0 |
-| RO (Rumuński) | 64.60% (48,150/74,536) | 51.30% (38,238/74,536) | 13,201 | 23,122 | 0 |
+| RO (Rumuński) | 64.67% (48,206/74,536) | 51.37% (38,291/74,536) | 13,204 | 23,066 | 0 |
 | RU (Rosyjski) | 41.83% (31,177/74,536) | 40.02% (29,826/74,536) | 5,069 | 39,659 | 0 |
 | FR (Francuski) | 55.54% (41,396/74,536) | 39.76% (29,638/74,536) | 27,649 | 17,269 | 0 |
 | SR (SR) | 33.31% (24,827/74,536) | 32.04% (23,885/74,536) | 1,218 | 28,698 | 20,793 |
@@ -343,26 +343,26 @@
 - **Ostatnie klucze (10-20):** 20
 
 ### 📝 Ostatnie 10-20 przetłumaczonych kluczy
-- carapace shield → карапаце щит (item.14088.name)
-- hive scythe → хиве коса (item.14089.name)
-- dead poodle → мёртвый пудле (item.14090.name)
-- dead poodle → мёртвый пудле (item.14091.name)
-- deepling claw → глубокий коготь (item.14044.name)
-- The substance will dissolve after a while → Вещество растворится через некоторое время. (item.14051.desc)
-- gooey substance → клейкое вещество (item.14051.name)
-- It is unstable and will lose its aggressive properties soon → Он нестабилен и скоро потеряет свои агрессивные свойства. (item.14055.desc)
-- aggressive fluid → агрессивная жидкость (item.14055.name)
-- overgrown hive pore → заросшая пора улья (item.14065.name)
-- A filigree case made of seashell. It seems there is a small lock on the side of  → Филигранный футляр из морской ракушки. Кажется, сбоку на корпусе есть небольшой  (item.14066.desc)
-- swarmer antenna → роющая антенна (item.14076.name)
-- kollos shell → раковина коллоса (item.14077.name)
-- crawler head plating → покрытие гусеничной головки (item.14079.name)
-- waspoid claw → осиный коготь (item.14080.name)
-- waspoid wing → осиное крыло (item.14081.name)
-- spidris mandible → спидрис нижней челюсти (item.14082.name)
-- compound eye → сложный глаз (item.14083.name)
-- deepling filet → глубокое филе (item.14085.name)
-- calopteryx cape → накидка калоптерикс (item.14086.name)
+- nomad soul core (female) → miez de suflet nomad (feminin) (item.48966.name)
+- ladybug soul core → miez de suflet de gărgăriță (item.48967.name)
+- manta ray soul core → miez de suflet manta ray (item.48968.name)
+- calamary soul core → miez sufletesc calamar (item.48969.name)
+- jellyfish soul core → miez de suflet de meduză (item.48970.name)
+- northern pike soul core → miezul sufletului de stiuca nordica (item.48971.name)
+- spidris soul core → miezul sufletului spidris (item.48972.name)
+- kollos soul core → miezul sufletului kollos (item.48973.name)
+- spidris elite soul core → miezul sufletului de elită spidris (item.48974.name)
+- hive overseer soul core → miezul sufletului supraveghetor al stupului (item.48975.name)
+- deepling brawler soul core → deepling brawler suflet nucleu (item.48976.name)
+- deepling master librarian soul core → adâncirea nucleului sufletului maestrului bibliotecar (item.48977.name)
+- deepling tyrant soul core → adâncirea miezului sufletului tiranului (item.48978.name)
+- deepling elite soul core → adâncirea nucleului sufletului de elită (item.48979.name)
+- grave robber soul core → nucleul sufletului tâlharului de morminte (item.48980.name)
+- crypt defiler soul core → cripta defiler soul core (item.48981.name)
+- damaged crystal golem soul core → miezul sufletului golem de cristal deteriorat (item.48982.name)
+- modified gnarlhound soul core → miezul sufletului gnarlhound modificat (item.48983.name)
+- stone devourer soul core → miez de suflet devorator de pietre (item.48984.name)
+- armadile soul core → miezul sufletului armadilei (item.48985.name)
 
 ### 🚫 Raporty strażnika jakości
 - Raporty strażnika jakości: **3707**  
@@ -375,15 +375,15 @@
 | 🟠 active | 280 | 0 | 0 | - | 2026-04-07T14:03:48.577987Z |
 
 ### 🌐 Globalne info wszystkich języków
-- **Pokrycie globalne (nominal):** **17.09%** (662,230/3,875,872)
-- **Pokrycie globalne (real):** **9.92%** (384,530/3,875,872)
-- **Kopie EN (łącznie):** **426,751**
-- **Placeholdery [EN]/puste (łącznie):** **2,210,452**
+- **Pokrycie globalne (nominal):** **17.09%** (662,286/3,875,872)
+- **Pokrycie globalne (real):** **9.92%** (384,583/3,875,872)
+- **Kopie EN (łącznie):** **426,754**
+- **Placeholdery [EN]/puste (łącznie):** **2,210,396**
 - **Referencje `#i18n:` (łącznie):** **8,476**
 - **Braki kluczy (łącznie):** **856,235**
 - **Brakujące pliki językowe:** **11**
-- **Cache STATUSPY (per-lang):** **warm-cache** | hit **52**, miss **0**, hit-rate **100.0%**
-- **Cache STATUSPY (per-file):** hit **2028**, miss **0**, hit-rate **100.0%**
+- **Cache STATUSPY (per-lang):** **mixed** | hit **51**, miss **1**, hit-rate **98.1%**
+- **Cache STATUSPY (per-file):** hit **2027**, miss **1**, hit-rate **100.0%**
 - **Profiler cyklu (ostatni):** -
 - **Osobny raport:** `i18n/status/translation_global_overview.json`
 
@@ -405,7 +405,7 @@
 | ES | 54,696/70,637 | 77.4% / 65.8% | 3,175/3,899 | 81.4% / 79.6% |
 | PL | 49,590/70,637 | 70.2% / 64.1% | 3,149/3,899 | 80.8% / 78.5% |
 | IT | 45,363/70,637 | 64.2% / 55.6% | 2,978/3,899 | 76.4% / 73.2% |
-| RO | 45,367/70,637 | 64.2% / 50.3% | 2,783/3,899 | 71.4% / 69.5% |
+| RO | 45,423/70,637 | 64.3% / 50.4% | 2,783/3,899 | 71.4% / 69.5% |
 | RU | 28,107/70,637 | 39.8% / 38.0% | 3,070/3,899 | 78.7% / 77.4% |
 | FR | 38,469/70,637 | 54.5% / 37.9% | 2,927/3,899 | 75.1% / 73.7% |
 | SR | 24,726/70,637 | 35.0% / 33.7% | 101/3,899 | 2.6% / 2.3% |
@@ -473,13 +473,13 @@
 ### ⏱️ Ścisłe okno godzinowe (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-04-07T13:06:59.961826Z → 2026-04-07T14:06:59.961826Z) |
+| Okno | **1.0h** (2026-04-07T13:09:25.055595Z → 2026-04-07T14:09:25.055595Z) |
 | Cykle | **1** (TŁUMACZENIE=1, PRE_MIGRATION=0) |
 | Pominięte (kat. nieaktywna) | **0** (ogółem=0.0%, migracja=0.0%) |
 | Odrzucone (strażnik jakości) % | **0.0%** |
 | Cykle bez postępu % | **0.0%** |
 | Przepustowość (kluczy/h) | **0.0 kluczy/h** |
-| Podejrzane tłumaczenia | **174** |
+| Podejrzane tłumaczenia | **175** |
 | Najgorsze cele (strażnik) | - |
 | Źródła | `i18n/status/worker_cycle_perf.jsonl`, `i18n/status/translation_guard_report.jsonl`, `i18n/status/suspicious_log.jsonl`, `i18n/status/deferred_translation_queue.jsonl` |
 | Plik | `i18n/status/strict_hourly_window_latest.json` |
@@ -537,7 +537,7 @@
 | Komponent | Status | Szczegóły |
 |-----------|--------|-----------|
 | Worker | 🟢 DZIAŁA | Cykl #13,458 |
-| Heartbeat | 5s temu | 2026-04-07T14:06:58Z |
+| Heartbeat | 66s temu | 2026-04-07T14:08:24Z |
 | Uptime | - | od startu workera |
 
 ---
@@ -622,7 +622,7 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 5s temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-04-07T14:06:58Z
+> Świeżość: 1min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-04-07T14:08:24Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -637,18 +637,18 @@
 │ Postęp: batch: 30 keys/cykl                                   │
 │ Info: auto translate in progress                              │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-04-07T14:06:58Z           │
+│ ❤️ Heartbeat: 2026-04-07T14:08:24Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ### 🧾 Ostatnie akcje (dla czytelności)
 
+- 2026-04-07 14:08:24 | AUTO_TRANSLATE:heartbeat_tick | it | ok | items.json
 - 2026-04-07 14:06:58 | AUTO_TRANSLATE:heartbeat_tick | it | ok | items.json
 - 2026-04-07 14:05:30 | AUTO_TRANSLATE:heartbeat_tick | it | ok | items.json
 - 2026-04-07 14:04:02 | AUTO_TRANSLATE:heartbeat_tick | it | ok | items.json
 - 2026-04-07 14:04:01 | AUTO_TRANSLATE:auto_start | it | ok | items.json
 - 2026-04-07 14:03:02 | AUTO_TRANSLATE:heartbeat_tick | ro | ok | items.json
-- 2026-04-04 22:59:08 | AUTO_TRANSLATE:heartbeat_tick | ro | ok | items.json
 
 ---
 
@@ -670,7 +670,7 @@
 ## 📜 HISTORIA
 
 > **[HISTORY]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-04-07 14:06:59
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-04-07 14:09:24
 
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [cs] → warn (files+1, translated+176, skipped+0) — lang=cs file=npc.json strict_skipped_done=3829 guard_fail=103 placeholder=51 command=0 pipe=0
 - 🤖 AUTO_TRANSLATE: AUTO_TRANSLATE_DONE [it] → warn (files+1, translated+61, skipped+0) — lang=it file=items.json strict_skipped_done=14653 guard_fail=26 placeholder=0 command=0 pipe=0
@@ -1026,7 +1026,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-04-07 14:06:59  
+📅 Auto-updated by Worker v1.1 | Last: 2026-04-07 14:09:24  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

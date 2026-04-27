@@ -9,25 +9,25 @@
 ## 🧭 META
 
 > **[META]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-04-24 19:09:10
+> Świeżość: teraz | Źródło: `update_github_status()` | Ostatnia aktualizacja: 2026-04-27 14:00:13
 
-> **Aktualizacja:** 2026-04-24 19:09:10 UTC  
+> **Aktualizacja:** 2026-04-27 14:00:13 UTC  
 > **Worker:** v1.1 Simple | **Guardian:** v2.0 | **Języki:** 53 | **Klucze EN:** 74536  
 > **Publikacja:** git-enabled  
-> **LIVE:** Cykl #16,328 | Status: ✅ BEZCZYNNY | Faza: IDLE | Etap: doctor_pause | Kategoria: - | Plik: - | Heartbeat: 2026-04-24T19:06:44Z  
+> **LIVE:** Cykl #16,328 | Status: ✅ BEZCZYNNY | Faza: IDLE | Etap: doctor_pause | Kategoria: - | Plik: - | Heartbeat: 2026-04-24T19:09:06Z  
 > **Okno godzinowe:** okno=1.0h | cykli=0 | pominięte=0.0% | odrzucone=0.0% | przepustowość=0.0/h  
 > **Tłumaczeń netto:** 125,945
 
 ### 🧩 Status sekcji
 | Sekcja | Stan | Świeżość | Powód | Źródło | Ostatnia aktualizacja |
 |--------|------|----------|-------|--------|-----------------------|
-| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-04-24 19:09:10 |
-| LIVE | 🟢 AKTYWNY | 2min temu | - | `activity.json / worker_state.json` | 2026-04-24T19:06:44Z |
-| PRE_MIGRATION | 🔒 NIEAKTYWNY | 1min temu | worker w trybie IDLE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-04-24 19:09:10 |
-| TRANSLATION | 🔒 NIEAKTYWNY | 23h temu | worker w trybie IDLE | `translation_guard_latest.json / translation_recent_latest.json` | 2026-04-23T19:18:02.317840Z |
-| QUALITY | 🔒 NIEAKTYWNY | 23h temu | worker w trybie IDLE | `quality_audit_latest.json` | 2026-04-23T19:18:32.407318Z |
-| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-04-24 19:09:10 |
-| DOCTOR | 🟠 AKTYWNY | 0s temu | 2 alarmów | `doctor_alerts_latest.json` | 2026-04-24T19:09:18.538907Z |
+| META | 🟢 AKTYWNY | teraz | - | `update_github_status()` | 2026-04-27 14:00:13 |
+| LIVE | 🟢 AKTYWNY | 2d temu | - | `activity.json / worker_state.json` | 2026-04-24T19:09:06Z |
+| PRE_MIGRATION | 🔒 NIEAKTYWNY | 2d temu | worker w trybie IDLE | `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | 2026-04-27 14:00:13 |
+| TRANSLATION | 🔒 NIEAKTYWNY | 3d temu | worker w trybie IDLE | `translation_guard_latest.json / translation_recent_latest.json` | 2026-04-23T19:18:02.317840Z |
+| QUALITY | 🔒 NIEAKTYWNY | 3d temu | worker w trybie IDLE | `quality_audit_latest.json` | 2026-04-23T19:18:32.407318Z |
+| HISTORY | 🟢 AKTYWNY | teraz | - | `daily/*.json / ops.jsonl` | 2026-04-27 14:00:13 |
+| DOCTOR | 🟠 AKTYWNY | 0s temu | 2 alarmów | `doctor_alerts_latest.json` | 2026-04-27T14:00:31.986301Z |
 
 > Artefakt machine-readable: `i18n/status/status_sections_latest.json`
 
@@ -36,7 +36,7 @@
 ## 🤖 Worker Live
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 2min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-04-24T19:06:44Z
+> Świeżość: 2d temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-04-24T19:09:06Z
 
 | Metryka | Wartość |
 |---------|---------|
@@ -53,7 +53,7 @@
 | 🧠 **Detail** | critical_alarm:PROVIDER_BUDGET_EXHAUSTED |
 | 🔑 **Current key** | `-` |
 | 🔄 **Ostatni cykl** | 0 kluczy, 0 odrzuconych, 0s, tryb: AUTO_TRANSLATE |
-| ❤️ **Heartbeat** | 2026-04-24T19:06:44Z |
+| ❤️ **Heartbeat** | 2026-04-24T19:09:06Z |
 
 **Ostatnie operacje:**
 - → REPAIR_IDENTICAL_DONE (ES) [ok]
@@ -129,11 +129,11 @@
 | 🔒 Blockers state | `active` |
 | 📌 Blocker candidates | 279 |
 | 📨 Pending queue (visible tail) | 400 z ostatnich 400 poprawnych wpisów JSONL |
-| ⏳ Oldest pending (visible tail) | 86317 s |
+| ⏳ Oldest pending (visible tail) | 326990 s |
 | 🌍 Top języki | PL(294), ES(106) |
 | 🧱 Top reason_bucket | provider_error(344), default(56) |
 | 🗂️ Deferred state keys | 7732 |
-| 🕒 Deferred state freshness | fresh (274s) |
+| 🕒 Deferred state freshness | fresh (0s) |
 | ♻️ Deferred stats | enqueued=0, cooldown=0, deduped=0, manual_review=0, partial_staged=0, partial_completed=0 |
 
 > Źródła: `deferred_translation_queue.jsonl`, `deferred_retry_state.json`, `translation_blockers_latest.json`
@@ -192,7 +192,7 @@
 | 📁 Files | client.json, otclient_modules.json |
 | 🌍 Langs evaluated | 51/51 |
 | 🚫 Failing langs | - |
-| 📈 Trend 24h | pass=186/186 (100.00%), fail=0, Δchecks=+0, dir=stable |
+| 📈 Trend 24h | pass=1/1 (100.00%), fail=0, Δchecks=+0, dir=stable |
 | 📏 Thresholds | identical<=35.00% ; word_salad<=5 ; placeholder<=3 |
 | 🧪 Reject window | tail=1200 wpisów suspicious_rejected |
 | 🧠 Recommendation | Launcher quality gate PASS: brak naruszeń progów dla client/otclient_modules. |
@@ -210,10 +210,10 @@
 
 | Alarm | Status | Severity | Value | Threshold | Detail |
 |-------|--------|----------|-------|-----------|--------|
-| `HEARTBEAT_STALE` | OK | OK | `87` | `300` | Heartbeat świeży (87s, src=worker_runtime_heartbeat) Runtime[status=critical, reason=guardian_daemon_owner_... |
-| `NO_WRITE` | ALERT | WARNING | `85851` | `900` | Brak świeżych zapisów przy pending=400. |
+| `HEARTBEAT_STALE` | OK | OK | `80` | `300` | Heartbeat świeży (80s, src=worker_runtime_heartbeat) Runtime[status=critical, reason=guardian_daemon_owner_... |
+| `NO_WRITE` | ALERT | WARNING | `326524` | `900` | Brak świeżych zapisów przy pending=400. |
 | `LEASE_CONFLICT` | OK | OK | `0` | `0` | Brak konfliktów lease/lock w oknie 1800s. |
-| `QUEUE_STARVATION` | ALERT | WARNING | `{'pending': 400, 'oldest_s': 86317}` | `{'pending_min': 200, 'oldest_s': 3600}` | Duży pending i stara kolejka sugerują głodzenie queue. |
+| `QUEUE_STARVATION` | ALERT | WARNING | `{'pending': 400, 'oldest_s': 326990}` | `{'pending_min': 200, 'oldest_s': 3600}` | Duży pending i stara kolejka sugerują głodzenie queue. |
 | `DLQ_GROWTH` | OK | OK | `{'count': 0, 'delta': 0}` | `{'growth_step': 25}` | DLQ precursor bez niepokojącego wzrostu. |
 
 > Źródło: `doctor_alerts_latest.json` (checks: HEARTBEAT_STALE, NO_WRITE, LEASE_CONFLICT, QUEUE_STARVATION, DLQ_GROWTH)
@@ -380,7 +380,7 @@
 ## 🔍 PRE_MIGRATION — Skan plików źródłowych
 
 > **[PRE_MIGRATION]** 🔒 NIEAKTYWNY (worker w trybie IDLE)  
-> Świeżość: 1min temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-04-24 19:09:10
+> Świeżość: 2d temu | Źródło: `i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt` | Ostatnia aktualizacja: 2026-04-27 14:00:13
 
 ### 📁 Pliki Projektu (pełny skan)
 | Metryka | Wartość | Procent | Info |
@@ -484,7 +484,7 @@
 ## 🌍 TŁUMACZENIA
 
 > **[TRANSLATION]** 🔒 NIEAKTYWNY (worker w trybie IDLE)  
-> Świeżość: 23h temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-04-23T19:18:02.317840Z
+> Świeżość: 3d temu | Źródło: `translation_guard_latest.json / translation_recent_latest.json` | Ostatnia aktualizacja: 2026-04-23T19:18:02.317840Z
 
 | Metryka | Wartość | Procent | Info |
 |---------|---------|---------|------|
@@ -639,7 +639,7 @@
 | 🥉 Worst | Server 10.60% |
 | ↕️ Spread | 7.71 pp |
 | 📉 Largest regression 24h | Launcher (+0.00 pp) |
-| 🕒 Window | 24h, samples=186 |
+| 🕒 Window | 24h, samples=1 |
 
 | Rank | Surface | Real coverage | Δ24h | Langs | Regression focus (lowest langs) |
 |------|---------|---------------|------|-------|----------------------------------|
@@ -658,14 +658,14 @@
 | 🌍 Production langs | PL, DE, AR |
 | 📄 Claim table open tasks | B23-02 |
 | 🚫 Failed checks | tasks_closed_claim_table, doctor_alerts_clean_3_waves |
-| 🕒 Evidence window | 24h (span=24.03h) |
+| 🕒 Evidence window | 24h (span=66.85h) |
 | 🧠 Recommendation | Domknij check: tasks_closed_claim_table |
 
 | Check | Status | Detail |
 |-------|--------|--------|
 | Claim table `B23-02..B23-08` | ❌ FAIL | open dependencies: B23-02; contract B23-08=🟢 in_progress (2026-04-23, 90%) |
 | 3 launcher waves bez stale alerts | ❌ FAIL | insufficient/dirty waves (0/3); recent=- |
-| Trend 24h `identical_to_en` + `word_salad` | ✅ PASS | window=24.03h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0 |
+| Trend 24h `identical_to_en` + `word_salad` | ✅ PASS | window=66.85h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0 |
 | Bridge launcher-rust (`missing=0`, `extra=0`) | ✅ PASS | all prod langs clean |
 
 > Źródła: `launcher_readiness_latest.json`, `launcher_readiness_report.jsonl`, `launcher_quality_gate_latest.json`, `translation_dispatch_state.json`, `doctor_alerts_latest.json`, `docs/i18n/launcher_rust_bridge_apply_latest.json`
@@ -673,7 +673,7 @@
 ### ⏱️ Ścisłe okno godzinowe (JSONL-only)
 | Metryka | Wartość |
 |---------|---------|
-| Okno | **1.0h** (2026-04-24T18:09:11.112451Z → 2026-04-24T19:09:11.112451Z) |
+| Okno | **1.0h** (2026-04-27T13:00:14.266078Z → 2026-04-27T14:00:14.266078Z) |
 | Cykle | **0** (TŁUMACZENIE=0, PRE_MIGRATION=0) |
 | Pominięte (kat. nieaktywna) | **0** (ogółem=0.0%, migracja=0.0%) |
 | Odrzucone (strażnik jakości) % | **0.0%** |
@@ -692,7 +692,7 @@
 ## 🔬 JAKOŚĆ TŁUMACZEŃ
 
 > **[QUALITY]** 🔒 NIEAKTYWNY (worker w trybie IDLE)  
-> Świeżość: 23h temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-04-23T19:18:32.407318Z
+> Świeżość: 3d temu | Źródło: `quality_audit_latest.json` | Ostatnia aktualizacja: 2026-04-23T19:18:32.407318Z
 
 - **Ostatni audyt:** SLOW_MODE | 17 issue(s) / 100 entries | 2026-04-23T19:18:32.407318Z
 - **Top 5 typów problemów:** suspicious_rejected_critical=187, suspicious_log_high=167, suspicious_log_warning=24, artifact_token=17, suspicious_rejected_medium=10
@@ -702,7 +702,7 @@
 ### 📈 Statystyki Pracy
 | Metryka | Wartość | Info |
 |---------|---------|------|
-| 🔄 Cykl aktualny | **#3360** | od uruchomienia |
+| 🔄 Cykl aktualny | **#3375** | od uruchomienia |
 | 🔑 Kluczy wyekstrahowanych (LIVE) | **74,536** | realny stan EN |
 | 🤖 Kluczy z rejestru workera (efektywne) | **74,536** | raw + reconcile |
 | 🧾 Kluczy z rejestru workera (raw) | **7** | historia runów workera |
@@ -736,7 +736,7 @@
 | Komponent | Status | Szczegóły |
 |-----------|--------|-----------|
 | Worker | ✅ BEZCZYNNY | Cykl #16,328 |
-| Heartbeat | 154s temu | 2026-04-24T19:06:44Z |
+| Heartbeat | 240685s temu | 2026-04-24T19:09:06Z |
 | Uptime | - | od startu workera |
 
 ---
@@ -821,7 +821,7 @@
 ## 🔴 LIVE: Szczegóły wykonania
 
 > **[LIVE]** 🟢 AKTYWNY  
-> Świeżość: 2min temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-04-24T19:06:44Z
+> Świeżość: 2d temu | Źródło: `activity.json / worker_state.json` | Ostatnia aktualizacja: 2026-04-24T19:09:06Z
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -836,7 +836,7 @@
 │ Postęp: -                                                     │
 │ Info: critical_alarm:PROVIDER_BUDGET_EXHAUSTED                │
 ├─────────────────────────────────────────────────────────────────┤
-│ ❤️ Heartbeat: 2026-04-24T19:06:44Z           │
+│ ❤️ Heartbeat: 2026-04-24T19:09:06Z           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -869,12 +869,12 @@
 ## 📜 HISTORIA
 
 > **[HISTORY]** 🟢 AKTYWNY  
-> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-04-24 19:09:10
+> Świeżość: teraz | Źródło: `daily/*.json / ops.jsonl` | Ostatnia aktualizacja: 2026-04-27 14:00:13
 
 - Brak operacji
 
 
-## 📅 Dziś (2026-04-24)
+## 📅 Dziś (2026-04-27)
 
 | Metryka | Wartość |
 |---------|---------|
@@ -884,21 +884,21 @@
 | ❌ Błędów | 0 |
 | 🌍 Aktywnych języków | 0 |
 | 🏆 TOP 5 | - |
-| 📊 Porównanie | ↓ 100.0% vs wczoraj (5,564) |
+| 📊 Porównanie | brak danych z wczoraj |
 
 ## 📆 Ten tydzień (7 dni)
 
-> Suma tygodnia: **33,248** kluczy
+> Suma tygodnia: **26,300** kluczy
 
 | Dzień | Wykres | Przetłumaczono | Cykli |
 |-------|--------|---------------|-------|
-| 2026-04-18 | ░ | 0 | 0 |
-| 2026-04-19 | ██████████████████████████████████████████████████ | 6,948 | 22 |
-| 2026-04-20 | ░ | 0 | 0 |
 | 2026-04-21 | ██████████████████████████████████████████████████ | 8,628 | 89 |
 | 2026-04-22 | ██████████████████████████████████████████████████ | 12,108 | 106 |
 | 2026-04-23 | ██████████████████████████████████████████████████ | 5,564 | 168 |
 | 2026-04-24 | ░ | 0 | 0 |
+| 2026-04-25 | ░ | 0 | 0 |
+| 2026-04-26 | ░ | 0 | 0 |
+| 2026-04-27 | ░ | 0 | 0 |
 
 ---
 
@@ -1216,7 +1216,7 @@
 ---
 
 🤖 Machine-readable: `i18n_file_status.json`  
-📅 Auto-updated by Worker v1.1 | Last: 2026-04-24 19:09:10  
+📅 Auto-updated by Worker v1.1 | Last: 2026-04-27 14:00:13  
 🔗 Repository: [PtakuPL/ooo](https://github.com/PtakuPL/ooo)
 
 ---

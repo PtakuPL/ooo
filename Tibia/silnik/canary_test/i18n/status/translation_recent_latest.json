@@ -1,8 +1,129 @@
 {
-  "timestamp": "2026-04-29T22:35:57.999250Z",
-  "language": "es",
-  "json_file": "server.json",
-  "translated": 0,
-  "entries": [],
+  "timestamp": "2026-04-29T22:40:41.628367Z",
+  "language": "cs",
+  "json_file": "items.json",
+  "translated": 69,
+  "entries": [
+    {
+      "key": "item.15576.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15577.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15578.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15579.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15580.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15581.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15582.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15583.name",
+      "en": "titanic mushroom",
+      "translated": "titanická houba",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15584.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15585.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15586.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15587.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15588.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15589.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15590.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15591.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15592.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15593.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15594.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15595.name",
+      "en": "mushroom sponge",
+      "translated": "houba houbová",
+      "source": "openai:openai/gpt-4o-mini"
+    }
+  ],
   "filtered_untranslated_marker": 0
 }

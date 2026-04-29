@@ -115917,7 +115917,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:31:23.330076Z"
+    "updated_at": "2026-04-29T22:37:30.425806Z"
   },
   "item.1262.name": {
     "src_hash": "4b2eef524ee371e73b293e0987babf23",
@@ -115925,7 +115925,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:31:25.712603Z"
+    "updated_at": "2026-04-29T22:37:30.430530Z"
   },
   "item.12624.name": {
     "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
@@ -115981,7 +115981,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:31:25.716359Z"
+    "updated_at": "2026-04-29T22:37:30.434237Z"
   },
   "item.12630.name": {
     "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
@@ -116005,7 +116005,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:31:25.720040Z"
+    "updated_at": "2026-04-29T22:37:30.437466Z"
   },
   "item.1265.name": {
     "src_hash": "4b2eef524ee371e73b293e0987babf23",
@@ -116013,7 +116013,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:31:25.723598Z"
+    "updated_at": "2026-04-29T22:37:30.440662Z"
   },
   "item.1266.name": {
     "src_hash": "4b2eef524ee371e73b293e0987babf23",
@@ -116021,7 +116021,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:31:25.727098Z"
+    "updated_at": "2026-04-29T22:37:30.443922Z"
   },
   "item.12666.name": {
     "src_hash": "b17bf040f2649c15a07eee76959bcaa4",
@@ -116053,7 +116053,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:31:25.730572Z"
+    "updated_at": "2026-04-29T22:37:33.190795Z"
   },
   "item.12676.name": {
     "src_hash": "97f961d2a6c66006e2bbf4ad4001e292",
@@ -116077,7 +116077,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:31:28.304326Z"
+    "updated_at": "2026-04-29T22:37:33.194470Z"
   },
   "item.1269.name": {
     "src_hash": "4b2eef524ee371e73b293e0987babf23",
@@ -116085,7 +116085,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:31:28.308361Z"
+    "updated_at": "2026-04-29T22:37:33.197698Z"
   },
   "item.12713.name": {
     "src_hash": "338800676161294469abb3eae7c2d3c1",
@@ -131370,10 +131370,10 @@
   "item.15535.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:12.163624Z"
+    "updated_at": "2026-04-29T22:37:33.200662Z"
   },
   "item.15536.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
@@ -131626,234 +131626,234 @@
   "item.15567.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:12.168260Z"
+    "updated_at": "2026-04-29T22:37:33.203564Z"
   },
   "item.15568.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:12.172593Z"
+    "updated_at": "2026-04-29T22:37:33.206450Z"
   },
   "item.15569.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:14.407139Z"
+    "updated_at": "2026-04-29T22:37:35.511483Z"
   },
   "item.15570.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:14.412192Z"
+    "updated_at": "2026-04-29T22:37:35.514849Z"
   },
   "item.15571.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:14.415985Z"
+    "updated_at": "2026-04-29T22:37:35.517784Z"
   },
   "item.15572.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:14.420312Z"
+    "updated_at": "2026-04-29T22:37:35.520567Z"
   },
   "item.15573.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:14.422989Z"
+    "updated_at": "2026-04-29T22:37:35.523482Z"
   },
   "item.15574.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:14.425720Z"
+    "updated_at": "2026-04-29T22:37:35.526348Z"
   },
   "item.15575.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:16.289222Z"
+    "updated_at": "2026-04-29T22:37:37.664258Z"
   },
   "item.15576.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:16.292588Z"
+    "updated_at": "2026-04-29T22:37:37.667537Z"
   },
   "item.15577.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:16.298026Z"
+    "updated_at": "2026-04-29T22:37:37.670626Z"
   },
   "item.15578.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:16.302038Z"
+    "updated_at": "2026-04-29T22:37:37.673677Z"
   },
   "item.15579.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:16.305655Z"
+    "updated_at": "2026-04-29T22:37:37.676476Z"
   },
   "item.15580.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:16.309174Z"
+    "updated_at": "2026-04-29T22:37:37.679327Z"
   },
   "item.15581.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:18.236977Z"
+    "updated_at": "2026-04-29T22:37:40.109796Z"
   },
   "item.15582.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:18.240919Z"
+    "updated_at": "2026-04-29T22:37:40.113082Z"
   },
   "item.15583.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "text": "titanická houba",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:18.244092Z"
+    "updated_at": "2026-04-29T22:37:40.115989Z"
   },
   "item.15584.name": {
     "src_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "text": "houba houbová",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:18.246936Z"
+    "updated_at": "2026-04-29T22:37:40.118567Z"
   },
   "item.15585.name": {
     "src_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "text": "houba houbová",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:18.249683Z"
+    "updated_at": "2026-04-29T22:37:40.121081Z"
   },
   "item.15586.name": {
     "src_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "text": "houba houbová",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:18.255243Z"
+    "updated_at": "2026-04-29T22:37:40.123572Z"
   },
   "item.15587.name": {
     "src_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "text": "houba houbová",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:20.290299Z"
+    "updated_at": "2026-04-29T22:37:42.154767Z"
   },
   "item.15588.name": {
     "src_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "text": "houba houbová",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:20.294561Z"
+    "updated_at": "2026-04-29T22:37:42.157322Z"
   },
   "item.15589.name": {
     "src_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "text": "houba houbová",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:20.299821Z"
+    "updated_at": "2026-04-29T22:37:42.159220Z"
   },
   "item.15590.name": {
     "src_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "text": "houba houbová",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:20.306637Z"
+    "updated_at": "2026-04-29T22:37:42.161175Z"
   },
   "item.15591.name": {
     "src_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "text": "houba houbová",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:20.310016Z"
+    "updated_at": "2026-04-29T22:37:42.163144Z"
   },
   "item.15592.name": {
     "src_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "text": "houba houbová",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:20.313982Z"
+    "updated_at": "2026-04-29T22:37:42.165033Z"
   },
   "item.15593.name": {
     "src_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "text": "houba houbová",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:21.699664Z"
+    "updated_at": "2026-04-29T22:37:43.952163Z"
   },
   "item.15594.name": {
     "src_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "text": "houba houbová",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:21.705163Z"
+    "updated_at": "2026-04-29T22:37:43.954709Z"
   },
   "item.15595.name": {
     "src_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "text": "houba houbová",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:21.710571Z"
+    "updated_at": "2026-04-29T22:37:43.956942Z"
   },
   "item.15599.name": {
     "src_hash": "c1034078ce530eefbf98c20c90aec615",
@@ -133566,5 +133566,245 @@
     "confidence": 0.96,
     "verified": false,
     "updated_at": "2026-04-29T21:32:01.292752Z"
+  },
+  "item.15933.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.515801Z"
+  },
+  "item.15934.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.518163Z"
+  },
+  "item.15935.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.520730Z"
+  },
+  "item.15936.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.523117Z"
+  },
+  "item.15937.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.525442Z"
+  },
+  "item.15938.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.527742Z"
+  },
+  "item.15939.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.530249Z"
+  },
+  "item.1594.name": {
+    "src_hash": "3e8be45aa2e1f5519d1676025d5a2919",
+    "text": "oblouk z trávy",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.535823Z"
+  },
+  "item.15940.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.539846Z"
+  },
+  "item.15941.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.544589Z"
+  },
+  "item.15942.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.549296Z"
+  },
+  "item.15943.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.553932Z"
+  },
+  "item.15944.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.558844Z"
+  },
+  "item.15945.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.563408Z"
+  },
+  "item.15946.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.568007Z"
+  },
+  "item.15947.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.571808Z"
+  },
+  "item.15948.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.574310Z"
+  },
+  "item.15949.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.576979Z"
+  },
+  "item.15950.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.579886Z"
+  },
+  "item.15951.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.582185Z"
+  },
+  "item.15952.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.584446Z"
+  },
+  "item.15953.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.586882Z"
+  },
+  "item.15954.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.589256Z"
+  },
+  "item.15955.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.591540Z"
+  },
+  "item.15956.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "kamenná zeď",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.593849Z"
+  },
+  "item.15957.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "REZERVOVANÝ SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.600528Z"
+  },
+  "item.15958.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "REZERVOVANÝ SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.608033Z"
+  },
+  "item.15959.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "REZERVOVANÝ SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.614779Z"
+  },
+  "item.15960.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "REZERVOVANÝ SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.621976Z"
+  },
+  "item.15961.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "REZERVOVANÝ SPRITE",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:37:14.629676Z"
   }
 }

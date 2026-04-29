@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-04-29T22:38:14.951161Z",
+  "updated_at": "2026-04-29T22:40:30.481542Z",
   "tracked_keys": 8983,
   "retry_due_now": 5684,
   "manual_review_locked": 2939,
@@ -8,7 +8,7 @@
   "stats": {
     "enqueued": 0,
     "suppressed_cooldown": 0,
-    "suppressed_manual_review": 39,
+    "suppressed_manual_review": 132,
     "deduped_ttl": 0,
     "manual_review_escalations": 0,
     "partial_staged": 0,

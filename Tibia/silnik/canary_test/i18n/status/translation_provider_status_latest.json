@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:30:03.722651Z",
+  "generated_at_utc": "2026-04-29T23:32:05.036662Z",
   "active_provider": "TM/simple",
   "active_provider_code": "tm_simple",
   "active_provider_source": "tm",
   "active_provider_timestamp": "2026-04-29T23:28:01.679749Z",
   "active_model": "openai/gpt-4o-mini",
-  "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
+  "fallback_reason": "OpenAI model pool → fallback chain exhausted high reject types [high_reject_types] items.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
   "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
   "router_registry_path": "provider_router_registry.json",
@@ -98,12 +98,17 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 1,
+    "fallbacks_last_200": 4,
     "fallback_action_breakdown": [
+      {
+        "action": "fallback_chain_exhausted_high_reject_types",
+        "action_label": "fallback chain exhausted high reject types",
+        "count": 2
+      },
       {
         "action": "fallback_to_google_translate_high",
         "action_label": "fallback to google translate high",
-        "count": 1
+        "count": 2
       }
     ],
     "providers": {
@@ -126,7 +131,7 @@
         "status": "active",
         "active_model": "openai/gpt-4o-mini",
         "recent_writes": 256,
-        "requests_today": 252
+        "requests_today": 266
       }
     },
     "openai_model_pool": {
@@ -169,19 +174,19 @@
       ],
       "request_budget_cap": 250,
       "request_budget_policy": "telemetry_only",
-      "requests_today": 252,
+      "requests_today": 266,
       "selected_model": "openai/gpt-4o-mini",
       "pool_latest": {
         "schema_version": "1.0",
-        "generated_at_utc": "2026-04-29T23:04:10.131825Z",
+        "generated_at_utc": "2026-04-29T23:31:54.867766Z",
         "status": "active",
         "reason": "ok",
         "active": true,
         "selected_model": "openai/gpt-4o-mini",
-        "response_ms": 1271,
+        "response_ms": 2721,
         "rate_limited": false,
-        "requests_total_today": 252,
-        "translated_total_today": 1310,
+        "requests_total_today": 266,
+        "translated_total_today": 1394,
         "request_budget_cap": 250,
         "request_budget_policy": "telemetry_only",
         "models": [
@@ -198,12 +203,12 @@
           {
             "model": "openai/gpt-4o-mini",
             "priority": 1,
-            "requests_today": 90,
-            "translated_today": 465,
+            "requests_today": 104,
+            "translated_today": 549,
             "blocked_until_utc": "",
             "last_status": "ok",
             "last_error_reason": "",
-            "last_response_ms": 1271
+            "last_response_ms": 2721
           },
           {
             "model": "openai/gpt-5",
@@ -232,10 +237,10 @@
         "warn_used_pct": 80.0,
         "critical_used_pct": 100.0
       },
-      "used_pct": 100.8,
+      "used_pct": 103.2,
       "monthly_cap": 250.0,
-      "spent": 252.0,
-      "latest_age_s": 1516.205851,
+      "spent": 258.0,
+      "latest_age_s": 0.293072,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false
@@ -268,14 +273,14 @@
     }
   },
   "latest_fallback": {
-    "timestamp": "2026-04-29T23:29:59.763791Z",
-    "provider": "tm_simple",
-    "provider_label": "TM/simple",
-    "source": "tm",
-    "action": "fallback_to_google_translate_high",
-    "action_label": "fallback to google translate high",
+    "timestamp": "2026-04-29T23:30:23.943925Z",
+    "provider": "openai_model_pool",
+    "provider_label": "OpenAI model pool",
+    "source": "openai_model_pool",
+    "action": "fallback_chain_exhausted_high_reject_types",
+    "action_label": "fallback chain exhausted high reject types",
     "decision_reason": "high_reject_types",
     "json_file": "items.json",
-    "key": "item.11541.name"
+    "key": "item.14670.name"
   }
 }

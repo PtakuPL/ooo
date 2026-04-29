@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T23:30:00.498849Z",
+  "timestamp": "2026-04-29T23:32:02.012474Z",
   "global": {
     "total_reference_keys": 3875872,
     "translated_keys": 712586,
@@ -79,8 +79,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T22:29:59.165716Z",
-    "window_end_utc": "2026-04-29T23:29:59.165716Z",
+    "window_start_utc": "2026-04-29T22:32:00.618758Z",
+    "window_end_utc": "2026-04-29T23:32:00.618758Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -105,34 +105,41 @@
     "throughput_keys_per_h": 615.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
-    "suspicious_total": 709,
-    "deferred_total": 5,
+    "suspicious_total": 807,
+    "deferred_total": 37,
     "top_deferred_reasons": [
+      {
+        "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "count": 32,
+        "share_pct": 86.5,
+        "top_target": "ru/items.json",
+        "top_target_count": 32
+      },
       {
         "reason": "gt_rejected_multi_issues",
         "count": 2,
-        "share_pct": 40.0,
+        "share_pct": 5.4,
         "top_target": "de/npc.json",
         "top_target_count": 2
       },
       {
         "reason": "gt_identity_retry_identical_to_en",
         "count": 1,
-        "share_pct": 20.0,
+        "share_pct": 2.7,
         "top_target": "de/npc.json",
         "top_target_count": 1
       },
       {
         "reason": "gt_structure_retry_placeholder",
         "count": 1,
-        "share_pct": 20.0,
+        "share_pct": 2.7,
         "top_target": "de/npc.json",
         "top_target_count": 1
       },
       {
         "reason": "gt_partial_validate_word_salad",
         "count": 1,
-        "share_pct": 20.0,
+        "share_pct": 2.7,
         "top_target": "de/npc.json",
         "top_target_count": 1
       }

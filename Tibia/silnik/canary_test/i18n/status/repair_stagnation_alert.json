@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T22:26:07.446923Z",
+  "timestamp": "2026-04-29T22:57:09.124388Z",
   "window_hours": 6.0,
   "min_samples": 6,
   "min_drop_required": 1,
@@ -12,10 +12,10 @@
   "old_total": 114167,
   "new_total": 113655,
   "decrease_pct": 0.45,
-  "old_ts": "2026-04-29T16:14:13.951669Z",
-  "new_ts": "2026-04-29T22:17:05.034577Z",
-  "hours_elapsed": 5.943,
-  "sample_count": 27,
+  "old_ts": "2026-04-29T16:39:29.012824Z",
+  "new_ts": "2026-04-29T22:47:36.582035Z",
+  "hours_elapsed": 5.954,
+  "sample_count": 25,
   "per_lang_trend": {
     "ar": {
       "old": 878,

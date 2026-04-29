@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T22:49:44.053054Z",
+  "timestamp": "2026-04-29T22:52:03.612891Z",
   "global": {
     "total_reference_keys": 3875872,
     "translated_keys": 712199,
@@ -79,8 +79,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T21:49:42.354605Z",
-    "window_end_utc": "2026-04-29T22:49:42.354605Z",
+    "window_start_utc": "2026-04-29T21:52:02.145291Z",
+    "window_end_utc": "2026-04-29T22:52:02.145291Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",

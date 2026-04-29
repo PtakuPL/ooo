@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:49:46.873522Z",
+  "generated_at_utc": "2026-04-29T22:52:06.877902Z",
   "active_provider": "OpenAI model pool",
   "active_provider_code": "openai_model_pool",
   "active_provider_source": "openai:openai/gpt-4o-mini",
@@ -250,7 +250,7 @@
       "used_pct": 97.2,
       "monthly_cap": 250.0,
       "spent": 243.0,
-      "latest_age_s": 383.178832,
+      "latest_age_s": 566.080876,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

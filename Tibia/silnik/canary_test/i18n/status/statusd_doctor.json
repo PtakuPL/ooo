@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T22:00:54.933969Z",
+  "timestamp": "2026-04-29T22:03:16.004462Z",
   "first_run_ts": "2026-04-29T19:08:47.626129Z",
   "overall": "WARNING",
   "issues_count": 0,
@@ -8,35 +8,35 @@
   "issues": [],
   "warnings": [
     "QUEUE_STARVATION_DETECTED: source=deferred_translation_queue.jsonl detail=Duży pending i stara kolejka sugerują głodzenie queue.",
-    "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=454 rate=13.708% window=6.0h top_lang=es:148 per_domain=[server.json:39(1300.0%/warning)]",
+    "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=426 rate=13.055% window=6.0h top_lang=cs:143 per_domain=[server.json:39(1300.0%/warning)]",
     "NATIVE_READINESS_BELOW_THRESHOLD: monitored=52/52 missing=[-] tier1=[-] tier2=[tr=35.83<50.0,sk=4.03<50.0,hu=4.14<50.0] tier3=[az=4.71<5.0,bg=4.7<5.0,bs=3.74<5.0,da=4.23<5.0,el=4.33<5.0,et=4.47<5.0,fi=4.19<5.0,hr=4.4<5.0,...] source=statusd_report.json",
     "SURFACE_COVERAGE_IMBALANCE: max_spread=36.23pp top=[ru:36.23pp,sr:32.41pp,pt:29.74pp,nl:27.42pp,de:19.13pp] source=statusd_report.json",
-    "PROVIDER_BUDGET_80PCT: used=87.2% cap=250.0 spent=218.0 source=provider_budget_latest.json"
+    "PROVIDER_BUDGET_80PCT: used=88.0% cap=250.0 spent=220.0 source=provider_budget_latest.json"
   ],
   "ok": [
-    "heartbeat_fresh (122s, aging/stale/stuck=300/480/900s, src=worker_runtime_heartbeat)",
-    "status_md_fresh (112s)",
-    "guard_report_fresh (122s)",
-    "dispatch_fresh (409s)",
+    "heartbeat_fresh (133s, aging/stale/stuck=300/480/900s, src=worker_runtime_heartbeat)",
+    "status_md_fresh (124s)",
+    "guard_report_fresh (263s)",
+    "dispatch_fresh (105s)",
     "worker_pid_alive (6760, src=worker_runtime_heartbeat, status=healthy)",
-    "worker_process_topology_ok (main=6760 roots=1 helpers=3 matching=4 extras=3 desc=3 foreign=0 oldest_desc=106s oldest_foreign=0s status=helper_descendants_detected)",
+    "worker_process_topology_ok (main=6760 roots=1 helpers=3 matching=4 extras=3 desc=3 foreign=0 oldest_desc=104s oldest_foreign=0s status=helper_descendants_detected)",
     "worker_translation_contract_ok (pid=6760 translations_only=1 use_gt=1 no_git=1 priority_gate=1 priority_langs=[es,pl] pending=[-])",
     "guardian_daemon_lock_ok (owner_pid=9567 owner_alive=1 lock_age=22s stale_threshold=60s daemon_state=blocked daemon_reason=active_daemon_lock status=owner_alive)",
     "guardian_healthy (src=worker_runtime_heartbeat)",
-    "queue_freshness_ok (107s, WARN>900s CRIT>1800s)",
-    "deferred_retry_pipeline_ok (status=active tracked_keys=8950 retry_due_now=5619 manual_locked=2938 cooldown_locked=2 manual_queue=3448 deferred_backlog=1814 deferred_recent_1h=33 latest_age=3.536s top_reason=existing_canonical_name_quality_cyrillic_latin_mix:1493 reason=ok)",
+    "queue_freshness_ok (248s, WARN>900s CRIT>1800s)",
+    "deferred_retry_pipeline_ok (status=active tracked_keys=8950 retry_due_now=5619 manual_locked=2938 cooldown_locked=2 manual_queue=3448 deferred_backlog=1814 deferred_recent_1h=33 latest_age=135.665s top_reason=existing_canonical_name_quality_cyrillic_latin_mix:1493 reason=ok)",
     "worker_doctor_alerts_ok (DEAD_LETTER_GROWTH,WORKER_HEARTBEAT_STALE,WORKER_LEASE_CONFLICT,WORKER_STUCK_NO_WRITE)",
-    "dead_letter_growth_ok (pending_skip_24h=0 share=0.000% events_1h=0 events_24h=0 latest_age=3024.917s top_reason=- reason=no_pending_skip_events)",
-    "progress_regression_ok (window=1.00h cycles=24 translated=739 guard_fail_rate=0.30% no_progress=0 no_progress_rate=0.00% pending_skip=0 ledger=0 src=translation_global_overview.json)",
-    "fixture_regression_ok (failed=0 langs_failed=0/2 critical_max=0 critical_total=0 pack_max=0 latest_age=5363157.5s top_lang=pl src=critical_bad_keys_pack_regression_latest.json reason=fixture_regression_clean_stale_artifact)",
+    "dead_letter_growth_ok (pending_skip_24h=0 share=0.000% events_1h=0 events_24h=0 latest_age=3165.987s top_reason=- reason=no_pending_skip_events)",
+    "progress_regression_ok (window=1.00h cycles=25 translated=739 guard_fail_rate=0.30% no_progress=0 no_progress_rate=0.00% pending_skip=0 ledger=0 src=translation_global_overview.json)",
+    "fixture_regression_ok (failed=0 langs_failed=0/2 critical_max=0 critical_total=0 pack_max=0 latest_age=5363298.6s top_lang=pl src=critical_bad_keys_pack_regression_latest.json reason=fixture_regression_clean_stale_artifact)",
     "metrics_drift_ok (outside=0 (0.00%) live=74536 registry=74536)",
     "priority_gate_inactive",
     "forced_cmd_sla_ok (view=full_window samples=0 (op=0/3) baseline=2026-04-29T19:40:39.756005Z baseline_src=manual_config epoch=17d9537f sla_target=45s p95_roundtrip=0.0s p95_pickup=0.0s p95_pending=0.0s p95_exec=0.0s miss=0/0 consecutive_miss=0 action=collect_samples)",
     "term_consistency_ok",
     "launcher_quality_gate_ok (state=pass overall_pass=True langs_failing=0 checks_failed=0 trend_fail_samples=0 trend_pass_rate=100.0% trend_direction=stable source=launcher_quality_gate_latest.json)",
     "provider_circuit_closed (provider_error_total=0 provider_error_keys=0 pipeline=active:ok top_reason=existing_canonical_name_quality_cyrillic_latin_mix:1493)",
-    "disk_space_ok (path=/home/ptaku/serweryt/Tibia/silnik/canary_test free=915.53GB used=3.984% total=1006.854GB)",
-    "repair_tuning_active (samples_2h=7)"
+    "disk_space_ok (path=/home/ptaku/serweryt/Tibia/silnik/canary_test free=915.529GB used=3.984% total=1006.854GB)",
+    "repair_tuning_active (samples_2h=8)"
   ],
   "metrics_drift": {
     "available": true,
@@ -102,11 +102,11 @@
     "latest_mid_cycle_command_pickup_s": 0.0,
     "latest_pending_age_s": 0.0,
     "latest_exec_time_s": 0.0,
-    "active_window_start_utc": "2026-04-28T22:00:54.933969Z",
-    "active_window_end_utc": "2026-04-29T22:00:54.933969Z",
+    "active_window_start_utc": "2026-04-28T22:03:16.004462Z",
+    "active_window_end_utc": "2026-04-29T22:03:16.004462Z",
     "baseline_ts_utc": "2026-04-29T19:40:39.756005Z",
     "baseline_ts_valid": true,
-    "baseline_effective_start_utc": "2026-04-29T20:00:54.933969Z",
+    "baseline_effective_start_utc": "2026-04-29T20:03:16.004462Z",
     "baseline_source": "manual_config",
     "auto_baseline_on_epoch_change": true,
     "auto_baseline_applied": false,
@@ -139,8 +139,8 @@
       "latest_exec_time_s": 0.0,
       "severity": "info",
       "status": "no_completed_samples",
-      "window_start_utc": "2026-04-28T22:00:54.933969Z",
-      "window_end_utc": "2026-04-29T22:00:54.933969Z"
+      "window_start_utc": "2026-04-28T22:03:16.004462Z",
+      "window_end_utc": "2026-04-29T22:03:16.004462Z"
     },
     "operational_window": {
       "samples": 0,
@@ -160,8 +160,8 @@
       "latest_exec_time_s": 0.0,
       "severity": "info",
       "status": "no_completed_samples",
-      "window_start_utc": "2026-04-29T20:00:54.933969Z",
-      "window_end_utc": "2026-04-29T22:00:54.933969Z",
+      "window_start_utc": "2026-04-29T20:03:16.004462Z",
+      "window_end_utc": "2026-04-29T22:03:16.004462Z",
       "baseline_applied": false,
       "baseline_ts_utc": "2026-04-29T19:40:39.756005Z",
       "baseline_ts_valid": true
@@ -521,8 +521,8 @@
     "placeholder_rejects_total": 0,
     "trend_24h": {
       "window_hours": 24,
-      "samples": 1027,
-      "pass_samples": 1027,
+      "samples": 1028,
+      "pass_samples": 1028,
       "fail_samples": 0,
       "pass_rate_pct": 100.0,
       "checks_failed_delta": 0,
@@ -543,10 +543,10 @@
       "warn_used_pct": 80.0,
       "critical_used_pct": 100.0
     },
-    "used_pct": 87.2,
+    "used_pct": 88.0,
     "monthly_cap": 250.0,
-    "spent": 218.0,
-    "latest_age_s": 305.897612,
+    "spent": 220.0,
+    "latest_age_s": 2.175447,
     "day_utc": "2026-04-29",
     "unit": "requests_per_day",
     "stale": false
@@ -583,7 +583,7 @@
     "severity": "ok",
     "reason": "disk_free_ok",
     "path": "/home/ptaku/serweryt/Tibia/silnik/canary_test",
-    "free_gb": 915.53,
+    "free_gb": 915.529,
     "total_gb": 1006.854,
     "used_pct": 3.984,
     "thresholds": {
@@ -601,25 +601,25 @@
       6760
     ],
     "helper_descendant_pids": [
-      63426,
-      63441,
-      63443
+      64594,
+      64609,
+      64611
     ],
     "matched_pids": [
       6760,
-      63426,
-      63441,
-      63443
+      64594,
+      64609,
+      64611
     ],
     "extra_pids": [
-      63426,
-      63441,
-      63443
+      64594,
+      64609,
+      64611
     ],
     "descendant_extra_pids": [
-      63426,
-      63441,
-      63443
+      64594,
+      64609,
+      64611
     ],
     "foreign_extra_pids": [],
     "root_worker_count": 1,
@@ -628,7 +628,7 @@
     "extra_count": 3,
     "descendant_extra_count": 3,
     "foreign_extra_count": 0,
-    "oldest_descendant_age_s": 106,
+    "oldest_descendant_age_s": 104,
     "oldest_foreign_age_s": 0,
     "warn_persist_seconds": 900,
     "critical_persist_seconds": 1800
@@ -676,8 +676,8 @@
     "status": "active",
     "severity": "ok",
     "reason": "ok",
-    "latest_timestamp": "2026-04-29T22:00:50.559037Z",
-    "latest_age_s": 3.536,
+    "latest_timestamp": "2026-04-29T22:00:59.507348Z",
+    "latest_age_s": 135.665,
     "tracked_keys": 8950,
     "retry_due_now": 5619,
     "manual_review_locked": 2938,
@@ -720,7 +720,7 @@
     "available": true,
     "status": "ok",
     "reason": "loaded",
-    "generated_at": "2026-04-29T21:59:02.540775Z",
+    "generated_at": "2026-04-29T22:01:11.825997Z",
     "overall": "warning",
     "schema_version": "1.0",
     "checks_count": 5,
@@ -731,9 +731,9 @@
         "canonical_name": "WORKER_HEARTBEAT_STALE",
         "status": "ok",
         "severity": "ok",
-        "value": 189,
+        "value": 122,
         "threshold": 300,
-        "detail": "Heartbeat świeży (189s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=it:items.json].",
+        "detail": "Heartbeat świeży (122s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=it:items.json].",
         "source": "worker_runtime_heartbeat.json"
       },
       {
@@ -741,7 +741,7 @@
         "canonical_name": "WORKER_STUCK_NO_WRITE",
         "status": "ok",
         "severity": "ok",
-        "value": 17,
+        "value": 146,
         "threshold": 900,
         "detail": "Recent writes wyglądają zdrowo.",
         "source": "translation_recent_report.jsonl"
@@ -763,7 +763,7 @@
         "severity": "warning",
         "value": {
           "pending": 397,
-          "oldest_s": 26831
+          "oldest_s": 26960
         },
         "threshold": {
           "pending_min": 200,
@@ -796,7 +796,7 @@
         "severity": "warning",
         "value": {
           "pending": 397,
-          "oldest_s": 26831
+          "oldest_s": 26960
         },
         "threshold": {
           "pending_min": 200,
@@ -813,7 +813,7 @@
     "severity": "ok",
     "reason": "no_pending_skip_events",
     "timestamp": "2026-04-29T21:10:30.017416Z",
-    "latest_age_s": 3024.917,
+    "latest_age_s": 3165.987,
     "window_hours": 24,
     "pending_skip_count_24h": 0,
     "pending_skip_share_pct": 0.0,
@@ -836,7 +836,7 @@
     "reason": "no_regression_signal",
     "source_artifact": "translation_global_overview.json",
     "window_hours": 1.0,
-    "total_cycles": 24,
+    "total_cycles": 25,
     "translated": 739,
     "guard_fail": 2,
     "guard_fail_rate_pct": 0.3,
@@ -876,7 +876,7 @@
     "reason": "fixture_regression_clean_stale_artifact",
     "source_artifact": "critical_bad_keys_pack_regression_latest.json",
     "timestamp": "2026-02-26T20:14:57.415054Z",
-    "latest_age_s": 5363157.519,
+    "latest_age_s": 5363298.589,
     "failed": false,
     "langs_total": 2,
     "langs_failed": 0,

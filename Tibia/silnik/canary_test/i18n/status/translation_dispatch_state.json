@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-04-29T21:54:06.312752Z",
-  "cycle_counter": 13298,
-  "last_target_key": "it:items.json",
-  "last_pending_total": 13564,
-  "last_marker_todo": 13564,
-  "last_tier": 2,
-  "last_cat_priority": 1,
+  "timestamp": "2026-04-29T22:01:31.035178Z",
+  "cycle_counter": 13299,
+  "last_target_key": "es:items.json",
+  "last_pending_total": 12816,
+  "last_marker_todo": 12816,
+  "last_tier": 1,
+  "last_cat_priority": 0,
   "candidates_count": 96,
   "active_candidates_count": 89,
   "skipped_backoff": 7,
@@ -14,7 +14,7 @@
   "marker_debt": {
     "priority_enabled": true,
     "priority_min_keys": 25,
-    "total_marker_todo": 152404,
+    "total_marker_todo": 152364,
     "top_candidates": [
       {
         "lang": "tr",
@@ -43,14 +43,14 @@
       {
         "lang": "ro",
         "json_file": "items.json",
-        "marker_todo": 14579,
-        "pending_total": 14579
+        "marker_todo": 14569,
+        "pending_total": 14569
       },
       {
         "lang": "it",
         "json_file": "items.json",
-        "marker_todo": 13564,
-        "pending_total": 13564
+        "marker_todo": 13534,
+        "pending_total": 13534
       },
       {
         "lang": "es",
@@ -129,14 +129,14 @@
       {
         "lang": "ro",
         "json_file": "items.json",
-        "marker_todo": 14579,
-        "pending_total": 14579
+        "marker_todo": 14569,
+        "pending_total": 14569
       },
       {
         "lang": "it",
         "json_file": "items.json",
-        "marker_todo": 13564,
-        "pending_total": 13564
+        "marker_todo": 13534,
+        "pending_total": 13534
       },
       {
         "lang": "es",
@@ -175,9 +175,9 @@
     "w2": 3,
     "w3": 1
   },
-  "cache_hit": true,
+  "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 16,
+  "cache_cycle": 17,
   "no_progress_counts": {
     "sv:dataroot.json": 0,
     "sr:dataroot.json": 0,
@@ -541,22 +541,6 @@
     "floor_pct": 25.0,
     "weight": 2,
     "gated_langs": {
-      "it": {
-        "allowed_domain": null,
-        "domain_coverages": {
-          "items.json": 52.9,
-          "npc.json": 76.51,
-          "quests.json": 99.18
-        }
-      },
-      "cs": {
-        "allowed_domain": null,
-        "domain_coverages": {
-          "items.json": 28.37,
-          "npc.json": 39.51,
-          "quests.json": 98.85
-        }
-      },
       "ru": {
         "allowed_domain": "npc.json",
         "domain_coverages": {
@@ -565,12 +549,28 @@
           "quests.json": 99.51
         }
       },
+      "it": {
+        "allowed_domain": null,
+        "domain_coverages": {
+          "items.json": 52.98,
+          "npc.json": 76.51,
+          "quests.json": 99.18
+        }
+      },
       "ro": {
         "allowed_domain": null,
         "domain_coverages": {
           "items.json": 46.17,
           "npc.json": 69.88,
           "quests.json": 99.02
+        }
+      },
+      "cs": {
+        "allowed_domain": null,
+        "domain_coverages": {
+          "items.json": 28.37,
+          "npc.json": 39.51,
+          "quests.json": 98.85
         }
       }
     },
@@ -721,12 +721,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 14543,
+        "name_pending_total": 14533,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 14543,
-            "name_coverage_pct": 56.49
+            "name_pending": 14533,
+            "name_coverage_pct": 56.52
           },
           "monsters.json": {
             "name_total": 1637,
@@ -745,12 +745,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 13563,
+        "name_pending_total": 13533,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 13563,
-            "name_coverage_pct": 59.42
+            "name_pending": 13533,
+            "name_coverage_pct": 59.51
           },
           "monsters.json": {
             "name_total": 1637,

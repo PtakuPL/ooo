@@ -1,7 +1,7 @@
 {
   "day_utc": "2026-04-29",
-  "requests_total_today": 218,
-  "translated_total_today": 1132,
+  "requests_total_today": 225,
+  "translated_total_today": 1170,
   "models": {
     "gpt-5": {
       "requests_today": 0,
@@ -56,17 +56,17 @@
       "last_response_ms": 2118
     },
     "openai/gpt-4o-mini": {
-      "requests_today": 56,
-      "success_today": 54,
-      "translated_today": 287,
+      "requests_today": 63,
+      "success_today": 61,
+      "translated_today": 325,
       "rate_limit_hits_today": 2,
       "quota_hits_today": 0,
       "unavailable_hits_today": 0,
       "blocked_until_utc": "",
       "last_error_reason": "",
       "last_status": "ok",
-      "last_used_at_utc": "2026-04-29T21:55:49.233162Z",
-      "last_response_ms": 2005
+      "last_used_at_utc": "2026-04-29T22:03:23.708104Z",
+      "last_response_ms": 1309
     },
     "openai/gpt-5": {
       "requests_today": 3,

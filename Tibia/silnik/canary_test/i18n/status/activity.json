@@ -3,7 +3,7 @@
   "cycle": 14,
   "eta_seconds": 0,
   "file": "items.json",
-  "generated_at_utc": "2026-04-29T21:29:50Z",
+  "generated_at_utc": "2026-04-29T21:33:15Z",
   "message": "auto translate in progress",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -12,6 +12,26 @@
     "unit": "keys"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "cs",
+      "cycle": 14,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T21:33:15Z"
+    },
+    {
+      "action": "update",
+      "category": "cs",
+      "cycle": 14,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T21:31:41Z"
+    },
     {
       "action": "update",
       "category": "cs",
@@ -91,26 +111,6 @@
       "result": "ok",
       "stage": "auto_start",
       "t": "2026-04-29T21:24:44Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 12,
-      "file": "server.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T21:23:28Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 12,
-      "file": "server.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T21:21:48Z"
     }
   ],
   "stage": "heartbeat_tick",

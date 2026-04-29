@@ -61936,11 +61936,821 @@
       ],
       "previous_state_source": "tm",
       "previous_state_updated_at": "2026-04-29T19:12:27.646899Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:56:49.577864Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_beggar.say_4",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "So why don't you show your dedication to the poor? Go and help Chavis at the poor house. He's collecting food for people like us. ...",
+      "attempted_translation": "Entonces, ¿por qué no muestras tu dedicación a los pobres? Ve y ayuda a Chavis en la casa de pobres. Está recolectando comida para gente como nosotros. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Alimento' for EN 'Food' from spells.json:spell.food.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:56:51.654362Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_prisoner.say_1",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Hurray! For that I will give you my key for - hmm - let's say ... some apples. Interested?",
+      "attempted_translation": "Gran acertijo, ¿no? Si puedes decirme la respuesta correcta, \\z te daré algo. ¡Jejeje!",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'manzanas' for EN 'apples' from items.json:item.24490.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:56:51.751185Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_prisoner.say_2",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Mnjam - excellent apples. Now - about that key. You are sure want it?",
+      "attempted_translation": "Mis números surrealistas se basan en hechos sorprendentes. \\z ¿Estás interesado en aprender el secreto de las matemáticas?",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'manzanas' for EN 'apples' from items.json:item.24490.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:56:53.228848Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_17",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You lunge out and throw the model far into the water. As nothing happens, you turn your back to the ocean. ...",
+      "attempted_translation": "Te lanzas y arrojas el modelo al agua. Como no pasa nada, le das la espalda al océano. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Nothing' for EN 'nothing' from items.json:item.31381.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:56:53.324459Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_20",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You pick the mirror from the ground.",
+      "attempted_translation": "Coges el espejo del suelo.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'elegir' for EN 'pick' from items.json:item.31613.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:56:55.402555Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_21",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Dragon dreams are golden. ...",
+      "attempted_translation": "Los sueños de dragones son dorados. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Dragón' for EN 'Dragon' from monsters.json:monster.dragon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:56:55.560369Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_32",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Dragon dreams are golden. ...",
+      "attempted_translation": "Los sueños de dragones son dorados. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Dragón' for EN 'Dragon' from monsters.json:monster.dragon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:56:55.710779Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_11",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You head back north to the plateau.",
+      "attempted_translation": "Regresas al norte hasta la meseta.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cabeza' for EN 'head' from items.json:item.33932.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:56:56.004614Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_14",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You head north passing countless stones in the crimson sea of stones beneath your feet.",
+      "attempted_translation": "Te diriges hacia el norte pasando innumerables piedras en el mar carmesí de piedras bajo tus pies.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cabeza' for EN 'head' from items.json:item.33932.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:57:22.715587Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_16",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Your path to the north is open. You pass the gigantic gate wings to your left and right as you advance. After about an hour of travel you hear a slight rustling in the distance. You head further into that direction. ...",
+      "attempted_translation": "Tu camino hacia el norte está abierto. Pasas las gigantescas alas de la puerta a tu izquierda y derecha a medida que avanzas. Después de aproximadamente una hora de viaje se oye un ligero crujido a lo lejos. Te diriges m",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cabeza' for EN 'head' from items.json:item.33932.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:15.315637Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_24",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You head back to the east and to the plateau.",
+      "attempted_translation": "Regresas al este y a la meseta.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cabeza' for EN 'head' from items.json:item.33932.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:16.322503Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_25",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You head back south to the site with the onyx lookout.",
+      "attempted_translation": "Regresas al sur hasta el sitio con el mirador de ónix.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cabeza' for EN 'head' from items.json:item.33932.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:19.111442Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_3",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You carefully lift the onyx attachment from its socket. It is lighter than you expected.",
+      "attempted_translation": "Levantas con cuidado el accesorio de ónix de su casquillo. Es más ligero de lo que esperabas.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'enchufe' for EN 'socket' from items.json:item.17340.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:22.670427Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_6",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "As you rip the solid stand out of its socket and take it with you, the large gate opens with a deafening rumble.",
+      "attempted_translation": "Cuando arrancas el sólido soporte de su soporte y te lo llevas, la gran puerta se abre con un estruendo ensordecedor.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'enchufe' for EN 'socket' from items.json:item.17340.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:23.545069Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_7",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You gasp at the size of the large open gate as you walk through to head further to the east.",
+      "attempted_translation": "Te quedas sin aliento ante el tamaño de la gran puerta abierta mientras caminas para dirigirte más hacia el este.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cabeza' for EN 'head' from items.json:item.33932.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:27.258702Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_1",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Yes, well for instance I tried for some time to figure out how to enter the fiery portal in this complex. Most of the draken never come up here. They rather hide somewhere down there, planning and plotting. ...",
+      "attempted_translation": "Sí, bueno, por ejemplo, intenté durante algún tiempo descubrir cómo ingresar al portal de fuego en este complejo. La mayoría de los draken nunca suben aquí. Prefieren esconderse en algún lugar ahí abajo, planeando y cons",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Piel' for EN 'Hide' from monsters.json:monster.hide.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:28.345004Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_12",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "I quickly dug a tunnel to get into what I assume is a throne room and waited for them to pick me up an carry me around! ...",
+      "attempted_translation": "¡Rápidamente cavé un túnel para entrar a lo que supongo es una sala del trono y esperé a que me recogieran y me llevaran! ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'elegir' for EN 'pick' from items.json:item.31613.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:30.601698Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_3",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "I heard them say it once, when a seemingly drunk guard yelled it in front of a wall mounted torch, hitting his head against it afterwards. He spilt all my contents on the floor, hmpf.",
+      "attempted_translation": "Los escuché decirlo una vez, cuando un guardia aparentemente borracho lo gritó frente a una antorcha montada en la pared, y luego se golpeó la cabeza contra ella. Derramó todo mi contenido en el suelo, hmpf.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'muro' for EN 'wall' from items.json:item.20579.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:32.622492Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_fellow.say_4",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "What? My hat?? Theres... nothing special about it!",
+      "attempted_translation": "¿Qué? ¿Mi sombrero? ¡No tiene... nada de especial!",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Nothing' for EN 'nothing' from items.json:item.31381.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:32.719927Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_swan.multi_4",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Please give them to me so I can restore my cloak. But don't watch me! Swan maidens don't like to be observed. Nature's blessings, human being. I will tell Ikassis that you have been of great assistance.",
+      "attempted_translation": "Por favor, dámelos para que pueda restaurar mi capa. ¡Pero no me mires! A las doncellas cisne no les gusta que las observen. Bendiciones de la naturaleza, ser humano. Le diré a Ikassis que has sido de gran ayuda.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'mirar' for EN 'watch' from items.json:item.2906.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:35.013400Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_sweaty_cyclops.say_21",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Uh. Me can make some nasty lil' bolt from soul orbs. Lil' one want to trade all?",
+      "attempted_translation": "Oh. Puedo hacer algunos pequeños rayos desagradables con orbes del alma. ¿Un pequeño quiere cambiarlo todo?",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'virote' for EN 'bolt' from items.json:item.3446.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:35.108844Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_sweaty_cyclops.stdmod_8",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's evil. Demon iron is. No good cyclops goes where you can find and need evil flame to melt.",
+      "attempted_translation": "Es malvado. El hierro demoníaco lo es. Ningún cíclope bueno va donde pueda encontrar y necesita llamas malignas para derretirse.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'demonio' for EN 'demon' from items.json:item.26173.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:39.381900Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.a_weakened_forest_fury.stdmod_3",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This glade's time is growing short if nothing will be done soon.",
+      "attempted_translation": "El tiempo de este claro se está acortando si no se hace nada pronto.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Nothing' for EN 'nothing' from items.json:item.31381.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:39.697244Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.ahmet.multi_2",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "So if you want to make sure they read this anytime soon, perhaps don't hide the book in a shelf or chest. Make sure to place it somewhere where they will find it easily, like very obviously on a table or something.",
+      "attempted_translation": "Entonces, si quieres asegurarte de que lean esto pronto, tal vez no escondas el libro en un estante o en un cofre. Asegúrate de colocarlo en algún lugar donde lo encuentren fácilmente, como obviamente en una mesa o algo ",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Piel' for EN 'Hide' from monsters.json:monster.hide.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:40.165028Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.ahmet.multi_4",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "I saw them running out of town and then to the north. Maybe they hide at the oasis.",
+      "attempted_translation": "Los vi salir corriendo de la ciudad y luego hacia el norte. Quizás se escondan en el oasis.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Piel' for EN 'Hide' from monsters.json:monster.hide.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:40.261488Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.ahmet.multi_6",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "<nothing happens>....<SIGH> Like usual, they hide at the slightest sign of trouble! YOU! Want to earn some quick money?",
+      "attempted_translation": "<Nothing happens>....<SIGH> Como de costumbre, ¡se esconden ante la menor señal de problema! ¡TÚ! ¿Quieres ganar algo de dinero rápido?",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Piel' for EN 'Hide' from monsters.json:monster.hide.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:40.948008Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.ahmet.multi_7",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You need some forged documents? But I will only forge something for a friend. ...",
+      "attempted_translation": "¿Necesita algunos documentos falsificados? Pero sólo haré algo para un amigo. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'fragua' for EN 'forge' from items.json:item.35155.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:42.357063Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.ahmet.say_8",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You need 5000 gps and book with ancient legends.",
+      "attempted_translation": "Necesitas 5000 gps y reservar con leyendas antiguas.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'libro' for EN 'book' from items.json:item.12276.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:46.369294Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.ajax.say_1",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "YOURS? WHAT IS YOURS! NOTHING IS YOURS! IS MINE! GO AWAY, YES?!",
+      "attempted_translation": "¿TUYO? ¡CUÁL ES EL TUYO! ¡NADA ES TUYO! ¡ES MÍO! VETE, ¡¿SÍ?!",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Nothing' for EN 'nothing' from items.json:item.31381.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:46.470188Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_13",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "If you want to challenge monsters in the {dungeons}, you need some {weapons} and {armor} from the local {merchants}.",
+      "attempted_translation": "Si quieres desafiar a los monstruos en el {dungeons}, necesitas algunos {weapons} y {armadura} del {merchants} local.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Desafío' for EN 'Challenge' from spells.json:spell.challenge.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:46.629437Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_25",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Blueberries grow on bushes. They're quite common in Tibia. Just pick them from a bush if you need a snack!",
+      "attempted_translation": "Los arándanos crecen en los arbustos. Son bastante comunes en Tibia. ¡Simplemente recógelos de un arbusto si necesitas un refrigerio!",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'elegir' for EN 'pick' from items.json:item.31613.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:48.029665Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_27",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Hmm, the best address to look for food might be {Willie} or {Billy}. {Norma} also has some snacks for sale.",
+      "attempted_translation": "Hmm, la mejor dirección para buscar comida podría ser {Willie} o {Billy}. {Norma} también tiene algunos snacks a la venta.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Alimento' for EN 'Food' from spells.json:spell.food.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:49.665427Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_37",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "I sell fishing rods and worms if you want to fish. Simply ask me for a {trade}.",
+      "attempted_translation": "Vendo cañas de pescar y lombrices si quieres pescar. Simplemente pídeme un {trade}.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'varillas' for EN 'rods' from items.json:item.11825.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:55.436871Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_4",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Don't head for adventure without a rope and torches! Buy your supplies here!",
+      "attempted_translation": "¡No te lances a la aventura sin cuerda y antorchas! ¡Compra tus insumos aquí!",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cabeza' for EN 'head' from items.json:item.33932.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:58:59.299982Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.voice_4",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Don't head for adventure without a rope and torches! Buy your supplies here!",
+      "attempted_translation": "¡No te lances a la aventura sin cuerda y antorchas! ¡Compra tus insumos aquí!",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cabeza' for EN 'head' from items.json:item.33932.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:59:00.258498Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.albinius.say_21",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You may pass this portal if you have 50 marsh stalker feathers as offering. Do you have the marsh stalker feathers with you?",
+      "attempted_translation": "Puedes pasar este portal si tienes 50 plumas de acechador de los pantanos como oferta. ¿Tienes las plumas del acechador de los pantanos contigo?",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Stalker de pantano' for EN 'Marsh Stalker' from monsters.json:monster.marsh_stalker.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:59:00.353902Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.albinius.say_24",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "I'm sorry, you don't have enough marsh stalker feathers. Return if you can offer fifty of them.",
+      "attempted_translation": "Lo siento, no tienes suficientes plumas de acechador de los pantanos. Vuelve si puedes ofrecer cincuenta de ellos.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Stalker de pantano' for EN 'Marsh Stalker' from monsters.json:monster.marsh_stalker.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:59:00.455410Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.albinius.say_4",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You need 5 heavy old tome.",
+      "attempted_translation": "Necesitas 5 tomos viejos y pesados.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'tome viejo' for EN 'old tome' from items.json:item.23985.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:59:00.588496Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.alesar.multi_10",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Unfortunately my last gemstone broke and therefore I'm not able to create new blades anymore. ...",
+      "attempted_translation": "Que yo sepa, sólo hay un lugar donde se pueden encontrar estas piedras preciosas; sé con certeza que los Marid tienen al menos una de ellas. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'hojas' for EN 'blades' from items.json:item.2146.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:59:01.106677Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.alesar_functions.multi_10",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Unfortunately my last gemstone broke and therefore I'm not able to create new blades anymore. ...",
+      "attempted_translation": "Que yo sepa, sólo hay un lugar donde se pueden encontrar estas piedras preciosas; sé con certeza que los Marid tienen al menos una de ellas. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'hojas' for EN 'blades' from items.json:item.2146.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:59:01.206621Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.multi_1",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "I heard there is a problem with a wolf mother and her whelps. However, I don't know more about it. One of my sisters, Ikassis, has taken over the body of a snake. ...",
+      "attempted_translation": "Escuché que hay un problema con una madre loba y sus cachorros. Sin embargo, no sé más al respecto. Una de mis hermanas, Ikassis, se ha apoderado del cuerpo de una serpiente. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Lobo' for EN 'Wolf' from monsters.json:monster.old_wolf.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:59:01.862975Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.multi_10",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You succeeded! It seems the poachers have read your little faked story about killing white deer and the ensuing doom. They stopped chasing me. Thank you! ...",
+      "attempted_translation": "¡Lo lograste! Parece que los cazadores furtivos han leído tu pequeña historia falsa sobre la matanza de ciervos blancos y la consiguiente perdición. Dejaron de perseguirme. ¡Gracias! ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Ciervo blanco' for EN 'White Deer' from monsters.json:monster.white_deer.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:59:01.959649Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.multi_5",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Please search it out and examine it closely. Perhaps you will find something you can use against them in order to stop them from hunting white deer.",
+      "attempted_translation": "Búsquelo y examínelo de cerca. Quizás encuentres algo que puedas usar contra ellos para evitar que cacen ciervos blancos.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Ciervo blanco' for EN 'White Deer' from monsters.json:monster.white_deer.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:59:02.241018Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.stdmod_2",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "We call it Feyrist and it is a secret, hidden place. Just few mortals get permission to enter it. A long time ago, we learned how to hide our realm from the outside world. Only if you gain our trust I will tell you how t",
+      "attempted_translation": "Lo llamamos Feyrist y es un lugar secreto y escondido. Sólo unos pocos mortales obtienen permiso para entrar. Hace mucho tiempo, aprendimos a ocultar nuestro reino del mundo exterior. Sólo si te ganas nuestra confianza t",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Piel' for EN 'Hide' from monsters.json:monster.hide.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:59:03.431074Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.alkestios.stdmod_7",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Some call us nature spirits or peri but we prefer the term fae. Most of us are rather reclusive and live peaceful lives in our secret realm. We only leave it in order to protect our home. ... \\z\n\tWe tend to be secretive ",
+      "attempted_translation": "Algunos nos llaman espíritus de la naturaleza o peri, pero nosotros preferimos el término fae. La mayoría de nosotros somos bastante solitarios y vivimos vidas pacíficas en nuestro reino secreto. Sólo lo dejamos para pro",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'papel' for EN 'paper' from items.json:item.34238.name"
+        }
+      ],
+      "source": "term_consistency_scan"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3115
+    "total": 3160
   },
-  "updated_at": "2026-04-29T19:56:11.986585Z"
+  "updated_at": "2026-04-29T19:59:03.456443Z"
 }

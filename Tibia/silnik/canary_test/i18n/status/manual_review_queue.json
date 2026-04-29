@@ -69319,11 +69319,28 @@
       ],
       "previous_state_source": "google_translate",
       "previous_state_updated_at": "2026-04-29T21:18:27.302395Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:18:54.136042Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.captain_haba_open_sea.larboard_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
+      "attempted_translation": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "HIGH",
+      "issue_types": [
+        "artifact_tokens"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T21:40:19.670630Z"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3531
+    "total": 3532
   },
-  "updated_at": "2026-04-29T22:16:47.100342Z"
+  "updated_at": "2026-04-29T22:19:44.970957Z"
 }

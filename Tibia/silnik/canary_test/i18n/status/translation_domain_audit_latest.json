@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T22:16:48.911641Z",
+  "timestamp": "2026-04-29T22:19:19.916196Z",
   "total_langs": 52,
   "total_domains": 39,
   "entries": [
@@ -3241,12 +3241,12 @@
       "lang": "de",
       "domain": "npc.json",
       "total_keys": 14815,
-      "genuine": 529,
-      "genuine_pct": 3.57,
-      "en_copy": 13771,
-      "en_prefix": 515,
+      "genuine": 778,
+      "genuine_pct": 5.25,
+      "en_copy": 13524,
+      "en_prefix": 513,
       "missing": 0,
-      "placeholder_mismatch": 2
+      "placeholder_mismatch": 4
     },
     {
       "lang": "de",
@@ -22442,8 +22442,8 @@
     "npc.json": {
       "total_keys": 14815,
       "langs": 52,
-      "avg_genuine_pct": 12.5,
-      "total_placeholder_mismatch": 907
+      "avg_genuine_pct": 12.53,
+      "total_placeholder_mismatch": 909
     },
     "npclib.json": {
       "total_keys": 147,

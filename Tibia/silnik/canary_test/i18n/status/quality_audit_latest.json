@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-04-29T22:07:37.619421Z",
+  "timestamp": "2026-04-29T22:24:19.135016Z",
   "checked_entries": 100,
-  "issues_found": 1,
+  "issues_found": 3,
   "issues_by_type": {
-    "artifact_token": 1,
-    "suspicious_log_high": 43,
-    "suspicious_log_low": 155,
-    "suspicious_log_medium": 1,
+    "artifact_token": 3,
+    "suspicious_log_medium": 139,
+    "suspicious_log_low": 46,
     "suspicious_log_critical": 1,
+    "suspicious_log_high": 14,
     "suspicious_rejected_critical": 172,
     "suspicious_rejected_high": 28
   },
@@ -18,6 +18,20 @@
       "type": "artifact_token",
       "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
       "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.say_3",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "translated": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!"
+    },
+    {
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "lang": "es",
+      "type": "artifact_token",
+      "en": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!"
     }
   ],
   "threshold": 10,

@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-04-29T22:16:48.286755Z",
-  "language": "de",
-  "json_file": "npc.json",
-  "translated": 249,
+  "timestamp": "2026-04-29T22:26:29.425148Z",
+  "language": "tr",
+  "json_file": "items.json",
+  "translated": 30,
   "entries": [
     {
-      "key": "npc.andrew_lyze.multi_4",
-      "en": "These are quite shy, but I have a {bait} for you to lure them. But take care not to face too many of them at once. And hurry, the effect won't last forever!",
-      "translated": "Diese sind ziemlich schüchtern, aber ich habe ein {bait} für dich, um sie anzulocken. Aber achten Sie darauf, nicht zu vielen davon auf einmal gegenüberzutreten. Und beeilen Sie sich, die Wirkung wird nicht ewig anhalten!",
-      "source": "google_translate"
+      "key": "item.14428.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.multi_5",
-      "en": "Alright, I put the glasses into the right pattern and can repair the compass. ...",
-      "translated": "Okay, ich habe die Brille in das richtige Muster gebracht und kann den Kompass reparieren. ...",
-      "source": "google_translate"
+      "key": "item.14429.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.multi_6",
-      "en": "There we are! The next step is the charging of the compass. For this you have to dig three different crystals down there: 5 blue, 3 green and one violet crystal. Are you ready to do that?",
-      "translated": "Da sind wir! Der nächste Schritt ist das Aufladen des Kompasses. Dafür musst du dort unten drei verschiedene Kristalle ausgraben: 5 blaue, 3 grüne und einen violetten Kristall. Sind Sie dazu bereit?",
-      "source": "google_translate"
+      "key": "item.1443.name",
+      "en": "lava wall",
+      "translated": "lav duvar",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.multi_7",
-      "en": "Only in the cave down there you will find the materials you need to repair the {compass}. Now you know why the entrance is sealed. There's the seal, but I have a deal for you: ...",
-      "translated": "Nur in der Höhle dort unten finden Sie die Materialien, die Sie zur Reparatur des {Kompass} benötigen. Jetzt wissen Sie, warum der Eingang verschlossen ist. Da ist das Siegel, aber ich habe einen Deal für dich: ...",
-      "source": "google_translate"
+      "key": "item.14430.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.multi_8",
-      "en": "I can repair the compass for you if you deliver what I need. Besides the broken compass you have to bring me the following materials: 50 blue glas plates, 15 green glas plates and 5 violet glas plates. ...",
-      "translated": "Ich kann den Kompass für Sie reparieren, wenn Sie mir das liefern, was ich brauche. Außer dem kaputten Kompass musst du mir folgende Materialien mitbringen: 50 blaue Glasplatten, 15 grüne Glasplatten und 5 violette Glasplatten. ...",
-      "source": "google_translate"
+      "key": "item.14431.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.multi_9",
-      "en": "They all can be found in this closed cave in front of you. I should have destroyed this seal key but things have changed. The entrance is opened now, go down and do what has to be done.",
-      "translated": "Sie alle sind in dieser geschlossenen Höhle vor Ihnen zu finden. Ich hätte diesen Siegelschlüssel zerstören sollen, aber die Dinge haben sich geändert. Der Eingang ist jetzt geöffnet, gehen Sie hinunter und erledigen Sie, was zu tun ist.",
-      "source": "google_translate"
+      "key": "item.14432.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.say_1",
-      "en": "As far as I know it is a place of helish heat with bloodthirsty monsters of all kinds.",
-      "translated": "Soweit ich weiß, ist es ein Ort höllischer Hitze mit blutrünstigen Monstern aller Art.",
-      "source": "google_translate"
+      "key": "item.14433.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.say_10",
-      "en": "You're already with my bait!",
-      "translated": "Du bist schon bei meinem Köder!",
-      "source": "google_translate"
+      "key": "item.14434.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.say_11",
-      "en": "You cannot do that yet.",
-      "translated": "Das können Sie noch nicht tun.",
-      "source": "google_translate"
+      "key": "item.14435.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.say_12",
-      "en": "It was decided to collect all of the compasses, destroy them and throw them in the fiery depths of Tibia. I still have some of them here. I {sell} them for a low price if you want.",
-      "translated": "Es wurde beschlossen, alle Kompasse einzusammeln, zu zerstören und in die feurigen Tiefen von Tibia zu werfen. Einige davon habe ich noch hier. Ich {sell} sie zu einem günstigen Preis, wenn Sie möchten.",
-      "source": "google_translate"
+      "key": "item.14436.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.say_13",
-      "en": "Would you like to buy a broken compass for 10.000 gold?",
-      "translated": "Möchten Sie einen kaputten Kompass für 10.000 Gold kaufen?",
-      "source": "google_translate"
+      "key": "item.14437.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.say_14",
-      "en": "Don't waste my time.",
-      "translated": "Verschwende nicht meine Zeit.",
-      "source": "google_translate"
+      "key": "item.14438.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.say_15",
-      "en": "Sorry, I didn't understand.",
-      "translated": "Entschuldigung, ich habe es nicht verstanden.",
-      "source": "google_translate"
+      "key": "item.14439.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.say_2",
-      "en": "This sarcophagus seals the entrance to the caves down there. Only here you can get all the {materials} you need for a working compass of this kind. So no entrance here - no further magic compasses in Tibia. In theory.",
-      "translated": "Dieser Sarkophag verschließt den Eingang zu den Höhlen dort unten. Nur hier erhalten Sie alle {materials}, die Sie für einen funktionierenden Kompass dieser Art benötigen. Also hier kein Eintritt – keine weiteren magischen Kompasse in Tibia. Theoretisch.",
-      "source": "google_translate"
+      "key": "item.1444.name",
+      "en": "lava wall",
+      "translated": "lav duvar",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.say_3",
-      "en": "On first glance, this cave does not look very spectacular, but the things you find in there, are. You have to know that this is the only place where you can find the respective materials to build the compass.",
-      "translated": "Auf den ersten Blick sieht diese Höhle nicht sehr spektakulär aus, aber die Dinge, die man dort findet, sind es. Sie müssen wissen, dass dies der einzige Ort ist, dem Sie die entsprechenden Materialien zum Bau des Kompasses finden können.",
-      "source": "google_translate"
+      "key": "item.14440.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.say_4",
-      "en": "May I repair your compass if possible?",
-      "translated": "Darf ich Ihren Kompass reparieren, wenn möglich?",
-      "source": "google_translate"
+      "key": "item.14441.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.say_5",
-      "en": "You don't have the needed itens yet.",
-      "translated": "Sie haben noch nicht die benötigten Artikel.",
-      "source": "google_translate"
+      "key": "item.14442.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.say_6",
-      "en": "Here's your broken compass!",
-      "translated": "Hier ist dein kaputter Kompass!",
-      "source": "google_translate"
+      "key": "item.14443.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.say_8",
-      "en": "You don't have the needed itens yet.",
-      "translated": "Sie haben noch nicht die benötigten Artikel.",
-      "source": "google_translate"
+      "key": "item.14444.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     },
     {
-      "key": "npc.andrew_lyze.say_9",
-      "en": "Done. Worry, the effect won't last forever!",
-      "translated": "Erledigt. Seien Sie beunruhigt, die Wirkung wird nicht ewig anhalten!",
-      "source": "google_translate"
+      "key": "item.14445.name",
+      "en": "RESERVED SPRITE",
+      "translated": "AYRILMIŞ SPRİTE",
+      "source": "simple"
     }
   ],
   "filtered_untranslated_marker": 0

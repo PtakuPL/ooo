@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-04-29T21:24:03.142905Z",
-  "window_end_utc": "2026-04-29T22:24:03.142905Z",
+  "window_start_utc": "2026-04-29T21:26:24.301477Z",
+  "window_end_utc": "2026-04-29T22:26:24.301477Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,11 +8,11 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/deferred_translation_queue.jsonl"
   ],
-  "total_cycles": 23,
+  "total_cycles": 24,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 23
+    "AUTO_TRANSLATE": 24
   },
-  "auto_translate_cycles": 23,
+  "auto_translate_cycles": 24,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
@@ -22,37 +22,16 @@
   "guard_fail_rate_pct": 0.3,
   "no_progress_entries": 0,
   "no_progress_rate_pct": 0.0,
-  "throughput_keys_per_h": 383.9,
-  "throughput_runtime_hours": 1.4873,
-  "throughput_runtime_source": "cycle_duration_ms",
-  "suspicious_total": 613,
-  "deferred_total": 34,
+  "throughput_keys_per_h": 571.0,
+  "throughput_runtime_hours": 1.0,
+  "throughput_runtime_source": "window_hours_long_runtime_fallback",
+  "suspicious_total": 582,
+  "deferred_total": 1,
   "top_deferred_reasons": [
-    {
-      "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
-      "count": 30,
-      "share_pct": 88.2,
-      "top_target": "ru/items.json",
-      "top_target_count": 30
-    },
-    {
-      "reason": "existing_canonical_name_quality_mixed_scripts",
-      "count": 2,
-      "share_pct": 5.9,
-      "top_target": "ru/items.json",
-      "top_target_count": 2
-    },
-    {
-      "reason": "retry_loop_cooldown_default",
-      "count": 1,
-      "share_pct": 2.9,
-      "top_target": "ru/items.json",
-      "top_target_count": 1
-    },
     {
       "reason": "gt_identity_retry_identical_to_en",
       "count": 1,
-      "share_pct": 2.9,
+      "share_pct": 100.0,
       "top_target": "de/npc.json",
       "top_target_count": 1
     }

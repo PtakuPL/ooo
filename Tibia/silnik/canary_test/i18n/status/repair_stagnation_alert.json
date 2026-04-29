@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T21:55:17.836127Z",
+  "timestamp": "2026-04-29T22:26:07.446923Z",
   "window_hours": 6.0,
   "min_samples": 6,
   "min_drop_required": 1,
@@ -7,15 +7,15 @@
   "alert": false,
   "message": "Repair queue healthy (top_target_changed)",
   "reason": "top_target_changed",
-  "top_key": "es:server.json",
-  "top_count": 9,
+  "top_key": "es:npc.json",
+  "top_count": 2,
   "old_total": 114167,
-  "new_total": 113875,
-  "decrease_pct": 0.26,
-  "old_ts": "2026-04-29T15:46:02.293891Z",
-  "new_ts": "2026-04-29T21:49:36.258604Z",
-  "hours_elapsed": 5.59,
-  "sample_count": 17,
+  "new_total": 113655,
+  "decrease_pct": 0.45,
+  "old_ts": "2026-04-29T16:14:13.951669Z",
+  "new_ts": "2026-04-29T22:17:05.034577Z",
+  "hours_elapsed": 5.943,
+  "sample_count": 27,
   "per_lang_trend": {
     "ar": {
       "old": 878,
@@ -61,9 +61,9 @@
     },
     "de": {
       "old": 19855,
-      "new": 19563,
-      "delta": 292,
-      "decrease_pct": 1.47
+      "new": 19343,
+      "delta": 512,
+      "decrease_pct": 2.58
     },
     "el": {
       "old": 638,

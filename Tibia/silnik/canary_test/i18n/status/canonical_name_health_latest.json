@@ -1,100 +1,95 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:07:33.459035Z",
-  "lang": "es",
+  "generated_at_utc": "2026-04-29T22:26:31.016360Z",
+  "lang": "tr",
   "json_file": "items.json",
   "name_total": 33425,
-  "name_pending": 14621,
-  "name_suspicious": 91,
-  "name_coverage_pct": 56.26,
+  "name_pending": 26154,
+  "name_suspicious": 13,
+  "name_coverage_pct": 21.75,
   "pending_examples": [
-    "item.16104.name",
     "item.17372.name",
-    "item.21823.name",
-    "item.21824.name",
-    "item.21952.name",
-    "item.24394.name",
-    "item.31582.name",
-    "item.31583.name",
-    "item.32758.name",
-    "item.32759.name",
-    "item.32760.name",
-    "item.32761.name"
+    "item.17669.name",
+    "item.21841.name",
+    "item.24806.name",
+    "item.24807.name",
+    "item.24808.name",
+    "item.24809.name",
+    "item.2481.name",
+    "item.24810.name",
+    "item.24811.name",
+    "item.24812.name",
+    "item.24813.name"
   ],
   "suspicious_examples": [
     {
-      "key": "item.11695.name",
+      "key": "item.21091.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.18327.name",
-      "issues": [
-        "contains_tibia_proper_noun",
-        "mixed_language"
-      ]
-    },
-    {
-      "key": "item.18329.name",
-      "issues": [
-        "contains_tibia_proper_noun",
-        "mixed_language"
-      ]
-    },
-    {
-      "key": "item.18330.name",
-      "issues": [
-        "contains_tibia_proper_noun",
-        "mixed_language"
-      ]
-    },
-    {
-      "key": "item.20228.name",
+      "key": "item.21092.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.20229.name",
+      "key": "item.21093.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.20230.name",
+      "key": "item.21094.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.20231.name",
+      "key": "item.1261.name",
       "issues": [
         "mixed_language"
       ]
     },
     {
-      "key": "item.22769.name",
+      "key": "item.1262.name",
       "issues": [
-        "contains_tibia_proper_noun",
-        "game_term_missing"
+        "mixed_language"
       ]
     },
     {
-      "key": "item.22770.name",
+      "key": "item.1263.name",
       "issues": [
-        "contains_tibia_proper_noun",
-        "game_term_missing"
+        "mixed_language"
       ]
     },
     {
-      "key": "item.23373.name",
+      "key": "item.1264.name",
       "issues": [
-        "game_term_missing"
+        "mixed_language"
       ]
     },
     {
-      "key": "item.23526.name",
+      "key": "item.1265.name",
+      "issues": [
+        "mixed_language"
+      ]
+    },
+    {
+      "key": "item.1266.name",
+      "issues": [
+        "mixed_language"
+      ]
+    },
+    {
+      "key": "item.1267.name",
+      "issues": [
+        "mixed_language"
+      ]
+    },
+    {
+      "key": "item.1268.name",
       "issues": [
         "mixed_language"
       ]

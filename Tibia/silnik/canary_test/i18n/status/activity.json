@@ -1,17 +1,47 @@
 {
-  "category": "es",
-  "cycle": 18,
+  "category": "tr",
+  "cycle": 19,
   "eta_seconds": 0,
-  "file": "npc.json",
-  "generated_at_utc": "2026-04-29T22:24:12Z",
-  "message": "auto translate in progress",
+  "file": "items.json",
+  "generated_at_utc": "2026-04-29T22:26:34Z",
+  "message": "translated=30 guard_fail=0 strict_missing_key=0 strict_skipped_done=4119",
   "phase": "AUTO_TRANSLATE",
   "progress": {
-    "done": 0,
-    "total": 2,
+    "done": 30,
+    "total": 30,
     "unit": "keys"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "tr",
+      "cycle": 19,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-04-29T22:26:34Z"
+    },
+    {
+      "action": "update",
+      "category": "tr",
+      "cycle": 19,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T22:25:32Z"
+    },
+    {
+      "action": "update",
+      "category": "tr",
+      "cycle": 19,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-04-29T22:25:32Z"
+    },
     {
       "action": "update",
       "category": "es",
@@ -81,38 +111,8 @@
       "result": "ok",
       "stage": "heartbeat_tick",
       "t": "2026-04-29T22:16:09Z"
-    },
-    {
-      "action": "update",
-      "category": "de",
-      "cycle": 18,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T22:14:36Z"
-    },
-    {
-      "action": "update",
-      "category": "de",
-      "cycle": 18,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T22:13:06Z"
-    },
-    {
-      "action": "update",
-      "category": "de",
-      "cycle": 18,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T22:11:35Z"
     }
   ],
-  "stage": "heartbeat_tick",
+  "stage": "auto_done",
   "status": "running"
 }

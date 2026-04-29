@@ -1,14 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:01:16.855263Z",
-  "cycle": 17,
+  "generated_at_utc": "2026-04-29T22:07:51.562523Z",
+  "cycle": 18,
   "open_alarms": [
-    {
-      "code": "GUARD_REPORT_STALE",
-      "severity": "warning",
-      "source": "statusd_doctor.json",
-      "detail": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 866s"
-    },
     {
       "code": "NATIVE_READINESS_BELOW_THRESHOLD",
       "severity": "warning",
@@ -19,7 +13,7 @@
       "code": "PROVIDER_BUDGET_80PCT",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "PROVIDER_BUDGET_80PCT: used=87.2% cap=250.0 spent=218.0 source=provider_budget_latest.json"
+      "detail": "PROVIDER_BUDGET_80PCT: used=90.0% cap=250.0 spent=225.0 source=provider_budget_latest.json"
     },
     {
       "code": "QUEUE_STARVATION_DETECTED",
@@ -37,21 +31,21 @@
       "code": "SUSPICIOUS_HIGH_ELEVATED",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=454 rate=13.708% window=6.0h top_lang=es:148 per_domain=[server.json:39(1300.0%/warning)]"
+      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=414 rate=12.982% window=6.0h top_lang=cs:143 per_domain=[server.json:39(1300.0%/warning)]"
     },
     {
       "code": "TERM_CONSISTENCY_REGRESSION",
       "severity": "critical",
       "source": "statusd_doctor.json",
-      "detail": "TERM_CONSISTENCY_REGRESSION: rate=39.64% delta=39.64% total=80 source=term_conflicts_latest.json"
+      "detail": "TERM_CONSISTENCY_REGRESSION: rate=19.205% delta=19.205% total=86 source=term_conflicts_latest.json"
     }
   ],
   "resolved_this_cycle": [
-    "DISPATCH_STALE"
+    "GUARD_REPORT_STALE"
   ],
   "newly_opened": [],
   "summary": {
-    "open_count": 7,
+    "open_count": 6,
     "resolved_count": 1,
     "tracked_alarms": 32
   },
@@ -68,6 +62,6 @@
     "selected_command": "-",
     "result": "resolved_update",
     "result_reason": "resolved_count=1",
-    "updated_at_utc": "2026-04-29T22:01:16.855263Z"
+    "updated_at_utc": "2026-04-29T22:07:51.562523Z"
   }
 }

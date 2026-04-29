@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:05:45.244336Z",
-  "active_provider": "TM/simple",
-  "active_provider_code": "tm_simple",
-  "active_provider_source": "simple",
-  "active_provider_timestamp": "2026-04-29T21:58:45.040393Z",
+  "generated_at_utc": "2026-04-29T22:08:01.741704Z",
+  "active_provider": "OpenAI model pool",
+  "active_provider_code": "openai_model_pool",
+  "active_provider_source": "openai:openai/gpt-4o-mini",
+  "active_provider_timestamp": "2026-04-29T22:07:28.846623Z",
   "active_model": "openai/gpt-4o-mini",
   "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -66,16 +66,16 @@
     "overall_status": "degraded",
     "signals": [
       "recent_fallback",
-      "provider_consistency_debt:443",
+      "provider_consistency_debt:450",
       "provider_limit_telemetry:provider_budget_high"
     ],
-    "provider_consistency_debt": 443,
+    "provider_consistency_debt": 450,
     "recent_window_writes": 554,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
         "provider_label": "OpenAI model pool",
-        "writes": 220
+        "writes": 237
       },
       {
         "provider": "tm_simple",
@@ -85,12 +85,12 @@
       {
         "provider": "free_google_translate",
         "provider_label": "Free Google Translate",
-        "writes": 120
+        "writes": 100
       },
       {
         "provider": "canonical_name_semantic_autofix",
         "provider_label": "canonical_name_semantic_autofix",
-        "writes": 21
+        "writes": 24
       },
       {
         "provider": "term_consistency_autofix",
@@ -98,7 +98,7 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 11,
+    "fallbacks_last_200": 10,
     "fallback_action_breakdown": [
       {
         "action": "fallback_to_next_provider_validate_fail",
@@ -108,7 +108,7 @@
       {
         "action": "fallback_to_google_translate_high",
         "action_label": "fallback to google translate high",
-        "count": 4
+        "count": 3
       },
       {
         "action": "fallback_to_google_translate_validate_fail",
@@ -124,7 +124,7 @@
       "free_google_translate": {
         "status": "active",
         "enabled": true,
-        "recent_writes": 120
+        "recent_writes": 100
       },
       "google_cloud": {
         "status": "disabled",
@@ -135,7 +135,7 @@
       "openai_model_pool": {
         "status": "active",
         "active_model": "openai/gpt-4o-mini",
-        "recent_writes": 220,
+        "recent_writes": 237,
         "requests_today": 225
       }
     },
@@ -245,7 +245,7 @@
       "used_pct": 90.0,
       "monthly_cap": 250.0,
       "spent": 225.0,
-      "latest_age_s": 99.136833,
+      "latest_age_s": 185.188023,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

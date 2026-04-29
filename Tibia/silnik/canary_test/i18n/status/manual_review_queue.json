@@ -67898,11 +67898,96 @@
         }
       ],
       "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T22:08:03.758777Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_9",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "If I could enter their lair unseen and establish a forward camp, I would be able to study the draken in peace - or so I thought. Turns out the whole place was empty. I set up my camp and waited. ...",
+      "attempted_translation": "Wenn ich ungesehen in ihr Versteck eindringen und ein Vorpostenlager errichten könnte, könnte ich die Draken in Ruhe studieren – zumindest dachte ich das. Es stellte sich heraus, dass der ganze Ort leer war. Ich baute mein Lager auf und wartete. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T21:12:53.995356Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:08:05.383455Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.say_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Finally. That's what I... oh wait, you're still talking to me - you will blow my cover! What do you want? Oh wait, did my {daughter} send you? It has been some time now, indeed.",
+      "attempted_translation": "Endlich. Das ist es, was ich ... Oh, warte, du redest immer noch mit mir – du wirst meine Tarnung auffliegen lassen! Was willst du? Oh warte, hat mein {daughter} dich geschickt? Es ist tatsächlich schon einige Zeit her.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T21:12:54.020265Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:08:05.512474Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.stdmod_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Well, I am drinking most of the time. Er, no I mean - trying to hold my fluids... ah, wait that came out wrong: I am doing research. Let's just keep it at that.",
+      "attempted_translation": "Nun ja, ich trinke die meiste Zeit. Ähm, nein, ich meine – ich versuche, meine Flüssigkeiten zurückzuhalten … ach, warte, das kam falsch heraus: Ich recherchiere. Belassen wir es einfach dabei.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T21:12:54.049051Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:08:06.406326Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_fellow.say_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "A bill? Oh boy so you are delivering another bill to poor me?",
+      "attempted_translation": "Eine Rechnung? Oh Mann, du überbringst mir also eine weitere Rechnung?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T21:12:54.057278Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:08:06.569216Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_fellow.say_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Hey! Don't touch that hat! Leave it alone!!! Don't do this!!!!",
+      "attempted_translation": "Hey! Fass den Hut nicht an! Lass es in Ruhe!!! Tu das nicht!!!!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T21:12:54.078830Z"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3448
+    "total": 3453
   },
-  "updated_at": "2026-04-29T22:05:41.591470Z"
+  "updated_at": "2026-04-29T22:08:06.599673Z"
 }

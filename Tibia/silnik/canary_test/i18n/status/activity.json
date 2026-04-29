@@ -1,9 +1,9 @@
 {
-  "category": "es",
-  "cycle": 17,
+  "category": "de",
+  "cycle": 18,
   "eta_seconds": 0,
-  "file": "items.json",
-  "generated_at_utc": "2026-04-29T22:05:02Z",
+  "file": "npc.json",
+  "generated_at_utc": "2026-04-29T22:07:53Z",
   "message": "auto translate in progress",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -12,6 +12,46 @@
     "unit": "keys"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "de",
+      "cycle": 18,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T22:07:53Z"
+    },
+    {
+      "action": "update",
+      "category": "de",
+      "cycle": 18,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-04-29T22:07:52Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 17,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-04-29T22:07:36Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 17,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T22:07:24Z"
+    },
     {
       "action": "update",
       "category": "es",
@@ -71,46 +111,6 @@
       "result": "ok",
       "stage": "heartbeat_tick",
       "t": "2026-04-29T21:59:08Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 16,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-04-29T21:58:52Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 16,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T21:57:25Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 16,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T21:55:10Z"
-    },
-    {
-      "action": "update",
-      "category": "it",
-      "cycle": 16,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-04-29T21:54:09Z"
     }
   ],
   "stage": "heartbeat_tick",

@@ -1,8 +1,129 @@
 {
-  "timestamp": "2026-04-29T22:00:57.875694Z",
+  "timestamp": "2026-04-29T22:07:28.846623Z",
   "language": "es",
-  "json_file": "server.json",
-  "translated": 0,
-  "entries": [],
+  "json_file": "items.json",
+  "translated": 71,
+  "entries": [
+    {
+      "key": "item.12407.name",
+      "en": "rocky wall",
+      "translated": "muro rocoso",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12408.name",
+      "en": "rocky wall",
+      "translated": "muro rocoso",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12409.name",
+      "en": "rocky wall",
+      "translated": "muro rocoso",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12410.name",
+      "en": "rocky wall",
+      "translated": "muro rocoso",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12411.name",
+      "en": "rocky wall",
+      "translated": "muro rocoso",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12474.name",
+      "en": "scorpion altar",
+      "translated": "altar de escorpión",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12475.name",
+      "en": "scorpion altar",
+      "translated": "altar de escorpión",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12491.name",
+      "en": "scorpion altar",
+      "translated": "altar de escorpión",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12492.name",
+      "en": "scorpion altar",
+      "translated": "altar de escorpión",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12558.name",
+      "en": "dirty water",
+      "translated": "agua sucia",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12926.name",
+      "en": "hive pillar",
+      "translated": "pilar de colmena",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12927.name",
+      "en": "hive pillar",
+      "translated": "pilar de colmena",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12928.name",
+      "en": "hive pillar",
+      "translated": "pilar de colmena",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12929.name",
+      "en": "hive pillar",
+      "translated": "pilar de colmena",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12930.name",
+      "en": "hive pillar",
+      "translated": "pilar de colmena",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12937.name",
+      "en": "insectoid cell",
+      "translated": "célula insectoide",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12938.name",
+      "en": "insectoid cell",
+      "translated": "célula insectoide",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.10026.name",
+      "en": "baby rotworm",
+      "translated": "rotworm de bebé",
+      "source": "canonical_name_semantic_autofix"
+    },
+    {
+      "key": "item.10299.name",
+      "en": "badger fur",
+      "translated": "pelaje de badger",
+      "source": "canonical_name_semantic_autofix"
+    },
+    {
+      "key": "item.10194.name",
+      "en": "bamboo drawer",
+      "translated": "drawer de bambú",
+      "source": "canonical_name_semantic_autofix"
+    }
+  ],
   "filtered_untranslated_marker": 0
 }

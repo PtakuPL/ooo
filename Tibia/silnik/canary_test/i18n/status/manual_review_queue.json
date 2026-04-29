@@ -62746,11 +62746,551 @@
         }
       ],
       "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:59:03.733171Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.alyxo.say_16",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Did you manage to find Small Tortoise?",
+      "attempted_translation": "¿Conseguiste encontrar la Tortuga Pequeña?",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'tortoise pequeño' for EN 'small tortoise' from items.json:item.31445.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:59:04.678773Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.alyxo.say_17",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Thanks. I was looking for Small Tortoise.",
+      "attempted_translation": "Gracias. Estaba buscando una tortuga pequeña.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'tortoise pequeño' for EN 'small tortoise' from items.json:item.31445.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:59:04.957034Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.alyxo.say_19",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Do you want me to stone a small tortoise?",
+      "attempted_translation": "¿Quieres que apedree una tortuga pequeña?",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'piedra' for EN 'stone' from items.json:item.1129.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:00:38.807899Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.alyxo.say_8",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Kill 300 members of the Fafnar cult, help me find Ivory Lyre and help me find an animal to stone.",
+      "attempted_translation": "Mata a 300 miembros del culto Fafnar, ayúdame a encontrar lira marfil y ayúdame a encontrar un animal para apedrear.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'piedra' for EN 'stone' from items.json:item.1129.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:00:50.655062Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_11",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Sorry, I lost my watch in a storm.",
+      "attempted_translation": "Lo siento, perdí mi reloj en una tormenta.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'mirar' for EN 'watch' from items.json:item.2906.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:00:53.875577Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_22",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "I think this poor guy was a bad choice as head of the {academy}.",
+      "attempted_translation": "Creo que este pobre tipo fue una mala elección como jefe del {academy}.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cabeza' for EN 'head' from items.json:item.33932.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:00:59.217869Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_32",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "One day I fell into a hole without having a rope. I was yelling for help for three whole days! Eventually a fisherman passed by and pulled me out with his own rope, lucky me.",
+      "attempted_translation": "Un día caí en un hoyo sin tener cuerda. ¡Estuve gritando pidiendo ayuda durante tres días enteros! Finalmente pasó un pescador y me sacó con su propia cuerda, por suerte para mí.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'agujero' for EN 'hole' from items.json:item.12203.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:01.015309Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_42",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "She seriously asked me if she could have the remains of my {raft} as fire wood! Can you imagine that??",
+      "attempted_translation": "¡En serio me preguntó si podía tener los restos de mi {balsa} como leña! ¿Te imaginas eso?",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'madera' for EN 'wood' from items.json:item.5901.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:01.528618Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_49",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "I think this poor guy was a bad choice as head of the {academy}.",
+      "attempted_translation": "Creo que este pobre tipo fue una mala elección como jefe del {academy}.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cabeza' for EN 'head' from items.json:item.33932.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:02.119497Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.greet_msg_3",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "If you dug up all three crystals of sufficient quantity and obtained the poison gland, the charging of your compass can start! For the very first time it will be charged by the violet crystal. Ready to {unleash} the powe",
+      "attempted_translation": "Si desenterraste los tres cristales en cantidad suficiente y obtuviste la glándula venenosa, ¡la carga de tu brújula puede comenzar! Por primera vez será cargado por el cristal violeta. ¿Listo para {unleash} el poder de ",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'gland de veneno' for EN 'poison gland' from items.json:item.29348.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:02.197758Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.multi_3",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Nice! To do so, take this golden axe and mine the prominent crystals in the cave. Besides, I need a poison gland of quite rare spiders, they are called lucifuga araneae. ...",
+      "attempted_translation": "¡Lindo! Para hacerlo, toma esta hacha dorada y extrae los cristales prominentes de la cueva. Además, necesito una glándula venenosa de arañas bastante raras, se llaman lucifuga araneae. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Oroen axe' for EN 'golden axe' from items.json:item.29286.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:02.353246Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.multi_8",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "I can repair the compass for you if you deliver what I need. Besides the broken compass you have to bring me the following materials: 50 blue glas plates, 15 green glas plates and 5 violet glas plates. ...",
+      "attempted_translation": "Todos ellos se pueden encontrar en esta cueva cerrada frente a ti. Debería haber destruido esta llave de sello pero las cosas han cambiado. La entrada está abierta ahora, baja y haz lo que tengas que hacer.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'brújula' for EN 'compass' from items.json:item.10302.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:02.508930Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.say_10",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You're already with my bait!",
+      "attempted_translation": "¡Ya estás con mi cebo!",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'carnada' for EN 'bait' from items.json:item.939.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:03.405098Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.say_13",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Would you like to buy a broken compass for 10.000 gold?",
+      "attempted_translation": "¿Te gustaría comprar una brújula rota por 10.000 de oro?",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'compass roto' for EN 'broken compass' from items.json:item.25746.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:03.848166Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.say_6",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Here's your broken compass!",
+      "attempted_translation": "¡Aquí está tu brújula rota!",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'compass roto' for EN 'broken compass' from items.json:item.25746.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:04.635723Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angelo.greet_msg_1",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The Druid of Crunor? He told you that a new cave appeared here? That's right. I'm the head of a {project} that tries to find out more about this new {area}.",
+      "attempted_translation": "¿El Druid de Crunor? ¿Te dijo que aquí apareció una nueva cueva? Así es. Soy el jefe de un {project} que intenta saber más sobre este nuevo {area}.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cabeza' for EN 'head' from items.json:item.33932.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:05.363120Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angelo.greet_msg_2",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Just get out of my way! You killed this beautiful creature. I have nothing more to say. Damn druid of Crunor!",
+      "attempted_translation": "¡Apártate de mi camino! Mataste a esta hermosa criatura. No tengo nada más que decir. ¡Maldito druida de Crunor!",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Nothing' for EN 'nothing' from items.json:item.31381.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:05.920210Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angelo.greet_msg_4",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The Druid of Crunor? He told you that a new cave appeared here? That's right. I'm the head of a project that tries to find out more about this new area.",
+      "attempted_translation": "¿El Druid de Crunor? ¿Te dijo que aquí apareció una nueva cueva? Así es. Soy el líder de un proyecto que intenta conocer más sobre esta nueva área.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cabeza' for EN 'head' from items.json:item.33932.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:06.161955Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angelo.say_6",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Just get out of my way! You killed this beautiful creature. I have nothing more to say. Damn druid of Crunor!",
+      "attempted_translation": "¡Apártate de mi camino! Mataste a esta hermosa criatura. No tengo nada más que decir. ¡Maldito druida de Crunor!",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Nothing' for EN 'nothing' from items.json:item.31381.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:06.339687Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angelo.say_7",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "{Gareth} told you that there are rumours about fake artefacts in the MoTA? And it is your task to check that with a magnifier? I see. I don't need one right now, so you can have one of mine. You find one in the crate ove",
+      "attempted_translation": "¿{Gareth} te dijo que hay rumores sobre artefactos falsos en el MoTA? ¿Y es tu tarea comprobarlo con una lupa? Veo. No necesito uno ahora, así que puedes tener uno mío. Encuentras uno en la caja de allí.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cajón' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:10.325348Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_26",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Did you acquire the sample of the jungle bells plant we are looking for?",
+      "attempted_translation": "¿Adquiriste la muestra de la planta campanillas de la selva que buscamos?",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'bells de jungla' for EN 'jungle bells' from items.json:item.3874.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:10.497151Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_27",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Use this botanist's container on a witches cauldron to collect a sample for us. Bring it here and report about your plant collection.",
+      "attempted_translation": "Usa el recipiente de este botánico en un caldero de brujas para recolectar una muestra para nosotros. Tráelo aquí e informa sobre tu colección de plantas.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'contenedor de Botanist' for EN 'botanist's container' from items.json:item.22704.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:15.967964Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_29",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Use this botanist's container on a giant jungle rose to obtain a sample for us. Bring it here and report about your plant collection.",
+      "attempted_translation": "Usa el recipiente de este botánico en una rosa gigante de la jungla para obtener una muestra para nosotros. Tráelo aquí e informa sobre tu colección de plantas.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'contenedor de Botanist' for EN 'botanist's container' from items.json:item.22704.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:18.071080Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_41",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "So listen please: Take this ice pick and use it on a block of ice in the caves beneath Folda. Get some ice and bring it here as fast as you can ...",
+      "attempted_translation": "Así que escuchen, por favor: tomen este picahielos y úselo en un bloque de hielo en las cuevas debajo de Folda. Consigue un poco de hielo y tráelo aquí lo más rápido que puedas...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'elegir' for EN 'pick' from items.json:item.31613.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:19.189228Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_45",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "A little bit battered but it will do. Thank you! If you think you are ready, ask for another butterfly hunt.",
+      "attempted_translation": "Un poco estropeado pero servirá. ¡Gracias! Si cree que está listo, solicite otra caza de mariposas.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Mariposa azul' for EN 'Butterfly' from monsters.json:monster.blue_butterfly.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:20.260019Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_46",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "A little bit battered but it will do. Thank you! If you think you are ready, ask for another butterfly hunt.",
+      "attempted_translation": "Un poco estropeado pero servirá. ¡Gracias! Si cree que está listo, solicite otra caza de mariposas.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Mariposa azul' for EN 'Butterfly' from monsters.json:monster.blue_butterfly.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:20.674894Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_54",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Excellent! So travel to the city of Darashia and then head north-east for the pyramid ...",
+      "attempted_translation": "¡Excelente! Así que viaja a la ciudad de Darashia y luego dirígete al noreste hacia la pirámide...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cabeza' for EN 'head' from items.json:item.33932.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:20.838802Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_6",
+      "reason": "term_consistency_english_name_leak",
+      "en_text": "The missions available for your rank are the {butterfly hunt}, {plant collection} and {ice delivery}.",
+      "attempted_translation": "Las misiones disponibles para tu rango son las {butterfly hunt}, {plant collection} y {ice delivery}.",
+      "issues": [
+        {
+          "type": "english_name_leak",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Mariposa azul' for EN 'Butterfly' from monsters.json:monster.blue_butterfly.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:21.760360Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_64",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Good! Take this container and use it on a ghost that was recently slain. Return with the collected ectoplasm and hand me that container ...",
+      "attempted_translation": "¡Bien! Toma este contenedor y úsalo con un fantasma que haya sido asesinado recientemente. Regresa con el ectoplasma recolectado y pásame ese recipiente...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'mano' for EN 'hand' from items.json:item.33936.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:01:21.841987Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_69",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Poor Ratha. Thank you for returning this skull to the society. We will see to a honourable burial of Ratha.",
+      "attempted_translation": "Pobre Ratha. Gracias por devolver esta calavera a la sociedad. Nos ocuparemos de un entierro honorable de Ratha.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cráneo' for EN 'skull' from items.json:item.10876.name"
+        }
+      ],
+      "source": "term_consistency_scan"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3160
+    "total": 3190
   },
-  "updated_at": "2026-04-29T19:59:03.456443Z"
+  "updated_at": "2026-04-29T20:01:23.431236Z"
 }

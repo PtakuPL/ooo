@@ -71041,11 +71041,119 @@
       ],
       "previous_state_source": "tm",
       "previous_state_updated_at": "2026-04-29T22:49:20.768514Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:34:50.121574Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.15420.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "basalt crystal wall",
+      "attempted_translation": "базальтовая кристальная стена",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'кристальная стена из базальта' for EN 'basalt crystal wall', but source key item.15420.name still uses conflicting variant 'базальтовая кристальная стена'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T23:34:50.250552Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.15421.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "basalt crystal wall",
+      "attempted_translation": "базальтовая кристальная стена",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'кристальная стена из базальта' for EN 'basalt crystal wall', but source key item.15421.name still uses conflicting variant 'базальтовая кристальная стена'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T23:35:40.852336Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.15422.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "basalt crystal wall",
+      "attempted_translation": "базальтовая кристальная стена",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'кристальная стена из базальта' for EN 'basalt crystal wall', but source key item.15422.name still uses conflicting variant 'базальтовая кристальная стена'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T23:36:18.387479Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.15423.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "basalt crystal wall",
+      "attempted_translation": "базальтовая кристальная стена",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'кристальная стена из базальта' for EN 'basalt crystal wall', but source key item.15423.name still uses conflicting variant 'базальтовая кристальная стена'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T23:36:45.538303Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.15397.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "mossy spots",
+      "attempted_translation": "мохнатые пятна",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'моховые пятна' for EN 'mossy spots', but source key item.15397.name still uses conflicting variant 'мохнатые пятна'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T23:36:45.634276Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.15398.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "mossy spots",
+      "attempted_translation": "мохнатые пятна",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'моховые пятна' for EN 'mossy spots', but source key item.15398.name still uses conflicting variant 'мохнатые пятна'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3627
+    "total": 3633
   },
-  "updated_at": "2026-04-29T23:34:44.559453Z"
+  "updated_at": "2026-04-29T23:36:54.673914Z"
 }

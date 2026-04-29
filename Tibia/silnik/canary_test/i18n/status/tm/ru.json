@@ -123213,7 +123213,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:25:19.764608Z"
+    "updated_at": "2026-04-29T23:30:23.948334Z"
   },
   "item.14858.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
@@ -123221,7 +123221,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:25:19.768726Z"
+    "updated_at": "2026-04-29T23:30:23.952668Z"
   },
   "item.14859.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
@@ -123242,18 +123242,18 @@
   "item.14861.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
     "text": "басалт стена",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:22:52.952373Z"
+    "updated_at": "2026-04-29T23:30:23.957065Z"
   },
   "item.14862.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
     "text": "басалт стена",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:22:52.958082Z"
+    "updated_at": "2026-04-29T23:30:23.961457Z"
   },
   "item.1487.name": {
     "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
@@ -123498,146 +123498,146 @@
   "item.14867.name": {
     "src_hash": "bfd8891de38d9fa39b5daa48c35ca1f3",
     "text": "маленькая басалт стена",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:22:56.385167Z"
+    "updated_at": "2026-04-29T23:30:27.339451Z"
   },
   "item.14868.name": {
     "src_hash": "bfd8891de38d9fa39b5daa48c35ca1f3",
     "text": "маленькая басалт стена",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:22:56.398739Z"
+    "updated_at": "2026-04-29T23:30:27.347621Z"
   },
   "item.14869.name": {
     "src_hash": "bfd8891de38d9fa39b5daa48c35ca1f3",
     "text": "маленькая басалт стена",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:22:56.411995Z"
+    "updated_at": "2026-04-29T23:30:27.355651Z"
   },
   "item.14884.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
     "text": "басалт стена",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:22:56.420179Z"
+    "updated_at": "2026-04-29T23:30:27.360666Z"
   },
   "item.14885.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
     "text": "басалт стена",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:22:56.428513Z"
+    "updated_at": "2026-04-29T23:30:27.365421Z"
   },
   "item.14913.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:22:56.438255Z"
+    "updated_at": "2026-04-29T23:30:27.370915Z"
   },
   "item.14914.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:22:58.446575Z"
+    "updated_at": "2026-04-29T23:30:29.507664Z"
   },
   "item.14915.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:22:58.451921Z"
+    "updated_at": "2026-04-29T23:30:29.513739Z"
   },
   "item.14916.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:22:58.457029Z"
+    "updated_at": "2026-04-29T23:30:29.518980Z"
   },
   "item.14917.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:22:58.462045Z"
+    "updated_at": "2026-04-29T23:30:29.524052Z"
   },
   "item.14918.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:22:58.466944Z"
+    "updated_at": "2026-04-29T23:30:29.529272Z"
   },
   "item.14919.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:22:58.471947Z"
+    "updated_at": "2026-04-29T23:30:29.534606Z"
   },
   "item.14920.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:23:05.074390Z"
+    "updated_at": "2026-04-29T23:30:31.296323Z"
   },
   "item.14921.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:23:05.080435Z"
+    "updated_at": "2026-04-29T23:30:31.301896Z"
   },
   "item.14922.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:23:05.086398Z"
+    "updated_at": "2026-04-29T23:30:31.307045Z"
   },
   "item.14923.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:23:05.092440Z"
+    "updated_at": "2026-04-29T23:30:31.312181Z"
   },
   "item.14924.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:23:05.098300Z"
+    "updated_at": "2026-04-29T23:30:31.317220Z"
   },
   "item.14925.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:23:05.103604Z"
+    "updated_at": "2026-04-29T23:30:31.322194Z"
   },
   "item.14926.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123645,7 +123645,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:25:19.773625Z"
+    "updated_at": "2026-04-29T23:30:37.761001Z"
   },
   "item.14927.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123653,7 +123653,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:25:19.778483Z"
+    "updated_at": "2026-04-29T23:30:37.767446Z"
   },
   "item.14928.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123661,7 +123661,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T21:25:22.300461Z"
+    "updated_at": "2026-04-29T23:30:37.773581Z"
   },
   "item.14929.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123674,18 +123674,18 @@
   "item.14930.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "canonical_name_semantic_autofix",
-    "confidence": 0.92,
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:27:10.191334Z"
+    "updated_at": "2026-04-29T23:30:37.779167Z"
   },
   "item.14931.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:23:08.214659Z"
+    "updated_at": "2026-04-29T23:30:37.784864Z"
   },
   "item.14943.name": {
     "src_hash": "be86c8701b090cf034db2a5ab7370c2e",
@@ -124138,10 +124138,10 @@
   "item.150.name": {
     "src_hash": "0dfe0d9880996dbaf08d42b2f2f1e01a",
     "text": "ледяная святыня",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:23:08.220962Z"
+    "updated_at": "2026-04-29T23:30:37.790583Z"
   },
   "item.15032.name": {
     "src_hash": "7f8f42ac05def7a47a0cfebed611f607",
@@ -124858,18 +124858,18 @@
   "item.15156.name": {
     "src_hash": "578a9cd5fac44ee0985a1709096ba731",
     "text": "большой декоративный гриб",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:23:08.229542Z"
+    "updated_at": "2026-04-29T23:31:13.126156Z"
   },
   "item.15157.name": {
     "src_hash": "578a9cd5fac44ee0985a1709096ba731",
     "text": "большой декоративный гриб",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:23:08.237879Z"
+    "updated_at": "2026-04-29T23:31:13.133086Z"
   },
   "item.1523.name": {
     "src_hash": "3355422c34ac82ed950028cf2dd3fac5",
@@ -125366,5 +125366,661 @@
     "confidence": 0.98,
     "verified": false,
     "updated_at": "2026-04-29T22:28:21.280366Z"
+  },
+  "item.1533.name": {
+    "src_hash": "29ce6182fed9103279c2ee7a9594dd3d",
+    "text": "арка",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:18.983109Z"
+  },
+  "item.15333.name": {
+    "src_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "text": "кристаллы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.000533Z"
+  },
+  "item.15334.name": {
+    "src_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "text": "кристаллы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.007878Z"
+  },
+  "item.15335.name": {
+    "src_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "text": "кристаллы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.015302Z"
+  },
+  "item.15336.name": {
+    "src_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "text": "кристаллы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.023570Z"
+  },
+  "item.15337.name": {
+    "src_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "text": "кристаллы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.031672Z"
+  },
+  "item.15338.name": {
+    "src_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "text": "кристаллы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.039430Z"
+  },
+  "item.15339.name": {
+    "src_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "text": "кристаллы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.047257Z"
+  },
+  "item.1534.name": {
+    "src_hash": "29ce6182fed9103279c2ee7a9594dd3d",
+    "text": "арка",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.053760Z"
+  },
+  "item.15340.name": {
+    "src_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "text": "кристаллы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.061282Z"
+  },
+  "item.15341.name": {
+    "src_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "text": "кристаллы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.068993Z"
+  },
+  "item.15342.name": {
+    "src_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "text": "кристаллы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.076375Z"
+  },
+  "item.15343.name": {
+    "src_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "text": "кристаллы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.083875Z"
+  },
+  "item.15344.name": {
+    "src_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "text": "кристаллы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.091429Z"
+  },
+  "item.1535.name": {
+    "src_hash": "29ce6182fed9103279c2ee7a9594dd3d",
+    "text": "арка",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.108381Z"
+  },
+  "item.1536.name": {
+    "src_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "text": "бамбуковая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.118462Z"
+  },
+  "item.1537.name": {
+    "src_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "text": "бамбуковая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.128553Z"
+  },
+  "item.1539.name": {
+    "src_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "text": "бамбуковая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.143840Z"
+  },
+  "item.154.name": {
+    "src_hash": "59611a77c60eb6bdb32e9260cc2330e9",
+    "text": "энергетический храм",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.182311Z"
+  },
+  "item.1540.name": {
+    "src_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "text": "бамбуковая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.192530Z"
+  },
+  "item.1543.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "каменный стена",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.283781Z"
+  },
+  "item.1544.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "каменный стена",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.364978Z"
+  },
+  "item.1545.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "каменный стена",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.451855Z"
+  },
+  "item.15454.name": {
+    "src_hash": "141d0026a165e6b6a8e945b0ab5859ee",
+    "text": "мшистая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.492662Z"
+  },
+  "item.15455.name": {
+    "src_hash": "141d0026a165e6b6a8e945b0ab5859ee",
+    "text": "мшистая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.502310Z"
+  },
+  "item.15456.name": {
+    "src_hash": "141d0026a165e6b6a8e945b0ab5859ee",
+    "text": "мшистая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.511880Z"
+  },
+  "item.15457.name": {
+    "src_hash": "141d0026a165e6b6a8e945b0ab5859ee",
+    "text": "мшистая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.521370Z"
+  },
+  "item.15458.name": {
+    "src_hash": "141d0026a165e6b6a8e945b0ab5859ee",
+    "text": "мшистая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.531522Z"
+  },
+  "item.15459.name": {
+    "src_hash": "141d0026a165e6b6a8e945b0ab5859ee",
+    "text": "мшистая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.541574Z"
+  },
+  "item.1546.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "каменный стена",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T23:30:19.551169Z"
+  },
+  "item.15321.name": {
+    "src_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "text": "базальт",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:13.136194Z"
+  },
+  "item.15322.name": {
+    "src_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "text": "базальт",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:13.139192Z"
+  },
+  "item.15323.name": {
+    "src_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "text": "базальт",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:13.142328Z"
+  },
+  "item.15324.name": {
+    "src_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "text": "базальт",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:13.146049Z"
+  },
+  "item.15325.name": {
+    "src_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "text": "базальт",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:39.010589Z"
+  },
+  "item.15326.name": {
+    "src_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "text": "базальт",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:39.013810Z"
+  },
+  "item.15327.name": {
+    "src_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "text": "базальт",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:39.016588Z"
+  },
+  "item.15328.name": {
+    "src_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "text": "базальт",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:39.019422Z"
+  },
+  "item.15329.name": {
+    "src_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "text": "базальт",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:39.022390Z"
+  },
+  "item.15330.name": {
+    "src_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "text": "базальт",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:39.025196Z"
+  },
+  "item.15331.name": {
+    "src_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "text": "базальт",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:41.349684Z"
+  },
+  "item.15332.name": {
+    "src_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "text": "базальт",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:41.352505Z"
+  },
+  "item.15393.name": {
+    "src_hash": "7f49a665560a2d7f6d61b72590a5517a",
+    "text": "моховые пятна",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:41.356003Z"
+  },
+  "item.15394.name": {
+    "src_hash": "7f49a665560a2d7f6d61b72590a5517a",
+    "text": "моховые пятна",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:41.359482Z"
+  },
+  "item.15395.name": {
+    "src_hash": "7f49a665560a2d7f6d61b72590a5517a",
+    "text": "моховые пятна",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:41.363121Z"
+  },
+  "item.15396.name": {
+    "src_hash": "7f49a665560a2d7f6d61b72590a5517a",
+    "text": "моховые пятна",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:41.366511Z"
+  },
+  "item.15397.name": {
+    "src_hash": "7f49a665560a2d7f6d61b72590a5517a",
+    "text": "мохнатые пятна",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:43.553470Z"
+  },
+  "item.15398.name": {
+    "src_hash": "7f49a665560a2d7f6d61b72590a5517a",
+    "text": "мохнатые пятна",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:43.557517Z"
+  },
+  "item.15420.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "базальтовая кристальная стена",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:43.564335Z"
+  },
+  "item.15421.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "базальтовая кристальная стена",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:43.571277Z"
+  },
+  "item.15422.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "базальтовая кристальная стена",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:43.578128Z"
+  },
+  "item.15423.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "базальтовая кристальная стена",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:43.584937Z"
+  },
+  "item.15424.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:45.657378Z"
+  },
+  "item.15425.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:45.664522Z"
+  },
+  "item.15426.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:45.671339Z"
+  },
+  "item.15427.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:45.678078Z"
+  },
+  "item.15428.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:45.684829Z"
+  },
+  "item.15429.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:45.690871Z"
+  },
+  "item.15430.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:47.738124Z"
+  },
+  "item.15431.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:47.744904Z"
+  },
+  "item.15432.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:47.751643Z"
+  },
+  "item.15433.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:47.758382Z"
+  },
+  "item.15434.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:47.765014Z"
+  },
+  "item.15435.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:47.770995Z"
+  },
+  "item.15436.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:49.769246Z"
+  },
+  "item.15437.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:49.776221Z"
+  },
+  "item.15438.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:49.783006Z"
+  },
+  "item.15439.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:49.789647Z"
+  },
+  "item.15440.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:49.795899Z"
+  },
+  "item.15441.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:49.801990Z"
+  },
+  "item.15442.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:52.092206Z"
+  },
+  "item.15443.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:52.099328Z"
+  },
+  "item.15444.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:52.106296Z"
+  },
+  "item.15445.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:52.113117Z"
+  },
+  "item.15446.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:52.120008Z"
+  },
+  "item.15447.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:52.126215Z"
+  },
+  "item.15448.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:54.876224Z"
+  },
+  "item.15449.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:54.883586Z"
+  },
+  "item.15450.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:54.890333Z"
+  },
+  "item.15451.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:54.897034Z"
+  },
+  "item.15452.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:54.903884Z"
+  },
+  "item.15453.name": {
+    "src_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "text": "кристальная стена из базальта",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T23:31:54.910039Z"
   }
 }

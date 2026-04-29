@@ -12062,7 +12062,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:25:19.764467Z",
+    "updated_at": "2026-04-29T23:30:23.948157Z",
     "en_hash": "b5a61ffa400b95ea98495f07d310b8cf",
     "attempted_preview": "басалт стена",
     "extra": {
@@ -12071,7 +12071,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:25:19Z"
+        "retry_not_before_utc": "2026-04-29T23:30:23Z"
       }
     },
     "attempted_hash": "127a85d786004cd170a24ff990bb8523"
@@ -12083,7 +12083,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:25:19.768569Z",
+    "updated_at": "2026-04-29T23:30:23.952514Z",
     "en_hash": "b5a61ffa400b95ea98495f07d310b8cf",
     "attempted_preview": "басалт стена",
     "extra": {
@@ -12092,7 +12092,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:25:19Z"
+        "retry_not_before_utc": "2026-04-29T23:30:23Z"
       }
     },
     "attempted_hash": "127a85d786004cd170a24ff990bb8523"
@@ -12145,8 +12145,8 @@
     "key": "item.14861.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:22:52.952218Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:23.956912Z",
     "en_hash": "b5a61ffa400b95ea98495f07d310b8cf",
     "attempted_preview": "басалт стена",
     "extra": {
@@ -12155,7 +12155,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:22:52Z"
+        "retry_not_before_utc": "2026-04-29T23:30:23Z"
       }
     },
     "attempted_hash": "127a85d786004cd170a24ff990bb8523"
@@ -12166,8 +12166,8 @@
     "key": "item.14862.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:22:52.957909Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:23.961308Z",
     "en_hash": "b5a61ffa400b95ea98495f07d310b8cf",
     "attempted_preview": "басалт стена",
     "extra": {
@@ -12176,7 +12176,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:22:52Z"
+        "retry_not_before_utc": "2026-04-29T23:30:23Z"
       }
     },
     "attempted_hash": "127a85d786004cd170a24ff990bb8523"
@@ -12188,23 +12188,23 @@
     "status": "deferred_retry",
     "reason": "retry_loop_cooldown_default",
     "source": "deferred_translation_queue_cooldown_deduped",
-    "updated_at": "2026-04-29T22:28:36.256781Z",
+    "updated_at": "2026-04-29T23:31:55.459033Z",
     "en_hash": "e00ca0c6da7a0dd1cdbd911250012b55",
     "extra": {
       "deferred_retry_limiter": {
         "schema_version": "1.0",
-        "attempts_total": 7,
+        "attempts_total": 8,
         "attempts_by_bucket": {
-          "default": 7
+          "default": 8
         },
         "last_reason": "gt_rejected_high_mixed_scripts",
         "last_bucket": "default",
-        "last_seen_utc": "2026-04-29T22:28:36Z",
+        "last_seen_utc": "2026-04-29T23:31:55Z",
         "first_seen_utc": "2026-04-29T16:27:14Z",
         "bucket_limit": 6,
-        "bucket_attempts": 7,
+        "bucket_attempts": 8,
         "action": "cooldown",
-        "retry_not_before_utc": "2026-04-30T22:28:36Z",
+        "retry_not_before_utc": "2026-04-30T23:31:55Z",
         "cooldown_seconds": 86400
       }
     }
@@ -12216,23 +12216,23 @@
     "status": "deferred_retry",
     "reason": "retry_loop_cooldown_default",
     "source": "deferred_translation_queue_cooldown_deduped",
-    "updated_at": "2026-04-29T22:28:37.722833Z",
+    "updated_at": "2026-04-29T23:31:56.548507Z",
     "en_hash": "e40a11578769485d190e51230f5967de",
     "extra": {
       "deferred_retry_limiter": {
         "schema_version": "1.0",
-        "attempts_total": 7,
+        "attempts_total": 8,
         "attempts_by_bucket": {
-          "default": 7
+          "default": 8
         },
         "last_reason": "gt_rejected_high_mixed_scripts",
         "last_bucket": "default",
-        "last_seen_utc": "2026-04-29T22:28:37Z",
+        "last_seen_utc": "2026-04-29T23:31:56Z",
         "first_seen_utc": "2026-04-29T16:27:16Z",
         "bucket_limit": 6,
-        "bucket_attempts": 7,
+        "bucket_attempts": 8,
         "action": "cooldown",
-        "retry_not_before_utc": "2026-04-30T22:28:37Z",
+        "retry_not_before_utc": "2026-04-30T23:31:56Z",
         "cooldown_seconds": 86400
       }
     }
@@ -13364,7 +13364,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:28:46.506695Z",
+    "updated_at": "2026-04-29T23:32:06.962425Z",
     "en_hash": "7f2103a12e6c4c48b7f9b7c02d92934f",
     "attempted_preview": "Используйте его в своем доме, чтобы увидеть снеговика.",
     "extra": {
@@ -13386,7 +13386,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:28:48.707340Z",
+    "updated_at": "2026-04-29T23:32:08.733264Z",
     "en_hash": "4277fbe6c944de4097a47b4cc39005bc",
     "attempted_preview": "Эту рыбу засолили и уже заготовили на провизию солдатам.",
     "extra": {
@@ -13408,7 +13408,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:28:48.912541Z",
+    "updated_at": "2026-04-29T23:32:08.853910Z",
     "en_hash": "8ac93627e4eff83f99a1e67b72aaaca6",
     "attempted_preview": "Кажется, просто идеально попробовать создать из этого что-нибудь острым обсидиановым ножом.",
     "extra": {
@@ -13430,7 +13430,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:28:49.699487Z",
+    "updated_at": "2026-04-29T23:32:09.497134Z",
     "en_hash": "f3181b5d350c388079a2884540cb8a12",
     "attempted_preview": "В нем присутствует запах только что убитого слизняка.",
     "extra": {
@@ -13452,7 +13452,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:28:49.930739Z",
+    "updated_at": "2026-04-29T23:32:10.134579Z",
     "en_hash": "89f4f1c1c993c508cbe01c1163c5d0c4",
     "attempted_preview": "Эта чаша была сделана из священного дерева и в настоящее время не подвергается обработке.",
     "extra": {
@@ -13474,7 +13474,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:28:50.046652Z",
+    "updated_at": "2026-04-29T23:32:11.658366Z",
     "en_hash": "780367cb103682624b01e2dd370f1f9d",
     "attempted_preview": "Вода в этой чаше очищена.",
     "extra": {
@@ -13496,7 +13496,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:28:57.144219Z",
+    "updated_at": "2026-04-29T23:34:05.073638Z",
     "en_hash": "16ba2621362b2d453e79afbf3b3bf674",
     "attempted_preview": "Очищенный священным огнем, этот уголь способен очистить значительное количество нечистой воды.",
     "extra": {
@@ -13518,7 +13518,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:00.643458Z",
+    "updated_at": "2026-04-29T23:34:05.193533Z",
     "en_hash": "eec6d5a5291c1aa2fc5939505c9260c4",
     "attempted_preview": "Этот кусок был вырезан из священного дерева в храмовом комплексе и идеально подходит для резьбы.",
     "extra": {
@@ -13540,7 +13540,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:06.371326Z",
+    "updated_at": "2026-04-29T23:34:10.034246Z",
     "en_hash": "557ca322c4358b15b6f9f6082860c6db",
     "attempted_preview": "Эта чаша была покрыта священной глиной, и ее можно использовать для очистки небольшого количества испорченной воды.",
     "extra": {
@@ -13562,7 +13562,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:07.828401Z",
+    "updated_at": "2026-04-29T23:34:10.962918Z",
     "en_hash": "5ae9f693ac227ebabbd1f69e11d11fb0",
     "attempted_preview": "Этот растительный яд предназначен для уничтожения порослей возле логова Хранителя глубоко под садами.",
     "extra": {
@@ -13584,7 +13584,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:08.169560Z",
+    "updated_at": "2026-04-29T23:34:11.828496Z",
     "en_hash": "dae0b5d5321efbca600ef5014f1d45bf",
     "attempted_preview": "Он слишком велик, чтобы его могли носить люди, но довольно легкий.",
     "extra": {
@@ -13606,7 +13606,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:11.964445Z",
+    "updated_at": "2026-04-29T23:34:12.870616Z",
     "en_hash": "2aa445e1e99ae6df21d679ca6764b3a0",
     "attempted_preview": "Хотя название подразумевает, этот простой и тонкий ремень не подходит для использования в качестве веревки.",
     "extra": {
@@ -13628,7 +13628,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:12.504248Z",
+    "updated_at": "2026-04-29T23:34:14.924341Z",
     "en_hash": "f539323da6ba32246e972e54c6b33137",
     "attempted_preview": "Никогда не знаешь, на что подействуют демонические леденцы, но на вкус они наверняка сладкие и захватывающие.",
     "extra": {
@@ -13650,7 +13650,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:12.852791Z",
+    "updated_at": "2026-04-29T23:34:15.042848Z",
     "en_hash": "964010137d180c408e8d0cf4efe3bf94",
     "attempted_preview": "Это украшенная руна окончательного исцеления.",
     "extra": {
@@ -13672,7 +13672,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:13.434920Z",
+    "updated_at": "2026-04-29T23:34:15.426551Z",
     "en_hash": "964010137d180c408e8d0cf4efe3bf94",
     "attempted_preview": "Это украшенная руна окончательного исцеления.",
     "extra": {
@@ -13694,7 +13694,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:15.418633Z",
+    "updated_at": "2026-04-29T23:34:18.246187Z",
     "en_hash": "8d0504df5491ef3c971915357622291d",
     "attempted_preview": "Это украшенная магическая настенная руна.",
     "extra": {
@@ -13716,7 +13716,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:16.313495Z",
+    "updated_at": "2026-04-29T23:34:19.626160Z",
     "en_hash": "8d0504df5491ef3c971915357622291d",
     "attempted_preview": "Это украшенная магическая настенная руна.",
     "extra": {
@@ -13738,7 +13738,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:16.431494Z",
+    "updated_at": "2026-04-29T23:34:19.743295Z",
     "en_hash": "ae9bf208d9f309053b238ada89a724e2",
     "attempted_preview": "Это украшенная ожившая мертвая руна.",
     "extra": {
@@ -13760,7 +13760,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:16.941728Z",
+    "updated_at": "2026-04-29T23:34:19.862953Z",
     "en_hash": "ae9bf208d9f309053b238ada89a724e2",
     "attempted_preview": "Это украшенная ожившая мертвая руна.",
     "extra": {
@@ -13782,7 +13782,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:17.062015Z",
+    "updated_at": "2026-04-29T23:34:19.980862Z",
     "en_hash": "08d83b1d5e95d81ca96d3c7b0ba45577",
     "attempted_preview": "Это украшенная лавинная руна.",
     "extra": {
@@ -13804,7 +13804,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:17.178416Z",
+    "updated_at": "2026-04-29T23:34:20.098698Z",
     "en_hash": "08d83b1d5e95d81ca96d3c7b0ba45577",
     "attempted_preview": "Это украшенная лавинная руна.",
     "extra": {
@@ -13826,7 +13826,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:17.295582Z",
+    "updated_at": "2026-04-29T23:34:20.216563Z",
     "en_hash": "e5a3d42b0b5c54e33cbbb0f9856dad13",
     "attempted_preview": "Это украшенная полевая руна разрушения.",
     "extra": {
@@ -13848,7 +13848,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:29:18.321591Z",
+    "updated_at": "2026-04-29T23:34:20.334670Z",
     "en_hash": "e5a3d42b0b5c54e33cbbb0f9856dad13",
     "attempted_preview": "Это украшенная полевая руна разрушения.",
     "extra": {
@@ -13870,7 +13870,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:30:34.446610Z",
+    "updated_at": "2026-04-29T23:34:21.447931Z",
     "en_hash": "62b1acf4907ec73623b9c8434b5bcdea",
     "attempted_preview": "Это украшенная руна огненного поля.",
     "extra": {
@@ -13892,7 +13892,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:30:55.527807Z",
+    "updated_at": "2026-04-29T23:34:22.158346Z",
     "en_hash": "62b1acf4907ec73623b9c8434b5bcdea",
     "attempted_preview": "Это украшенная руна огненного поля.",
     "extra": {
@@ -13914,7 +13914,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:30:56.314474Z",
+    "updated_at": "2026-04-29T23:34:22.522677Z",
     "en_hash": "7353cd27d0e075e4188fe27bf8194a41",
     "attempted_preview": "Ты подменил его ящиком Бозо с винными флягами.",
     "extra": {
@@ -13936,7 +13936,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:30:59.085577Z",
+    "updated_at": "2026-04-29T23:34:28.812469Z",
     "en_hash": "7d5bb6c9594a3294e8f051d84105b712",
     "attempted_preview": "Это маленькое создание просто обожает слизистый грибок",
     "extra": {
@@ -13958,7 +13958,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:30:59.253721Z",
+    "updated_at": "2026-04-29T23:34:29.024340Z",
     "en_hash": "b226018568231b0cd49095173725e28b",
     "attempted_preview": "Эту ленту изготовили вручную Роттин Вуд и лесные женатые мужчины.",
     "extra": {
@@ -13980,7 +13980,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:30:59.457518Z",
+    "updated_at": "2026-04-29T23:34:29.880738Z",
     "en_hash": "5bfeb6d835123881a1ceddc41f36095c",
     "attempted_preview": "Шерсть, набитая под ленту, делает ложку похожей на настоящую кроличью лапку.",
     "extra": {
@@ -14002,7 +14002,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:00.622042Z",
+    "updated_at": "2026-04-29T23:34:30.298284Z",
     "en_hash": "c85ba08bbc37495e6b3045f411f0f2d4",
     "attempted_preview": "Если добавить немного шерсти здесь и там, это, безусловно, сделает эту лапку настоящей кроличьей лапкой.",
     "extra": {
@@ -14024,7 +14024,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:01.358552Z",
+    "updated_at": "2026-04-29T23:34:30.710314Z",
     "en_hash": "04c16c127086440130fc2ca3d73a2894",
     "attempted_preview": "Этот фрукт был собран с Кричащего вишневого дерева.",
     "extra": {
@@ -14046,7 +14046,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:06.134820Z",
+    "updated_at": "2026-04-29T23:34:34.343781Z",
     "en_hash": "95e68430b7fcf60c186f452198fba715",
     "attempted_preview": "Эту рыбу и редкий ингредиент можно найти только в самой грязной, мутной и мутной воде.",
     "extra": {
@@ -14068,7 +14068,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:06.654265Z",
+    "updated_at": "2026-04-29T23:34:34.435538Z",
     "en_hash": "1f5dbb781e453bd540fbe20a5c7c45fe",
     "attempted_preview": "Используйте этот нож на мертвом боевом волке, чтобы добыть немного кожи. Не теряй его и не выходи из пещеры.",
     "extra": {
@@ -14090,7 +14090,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:06.740394Z",
+    "updated_at": "2026-04-29T23:34:34.551533Z",
     "en_hash": "1c5365d2350b3c54f3b453d06a55391c",
     "attempted_preview": "Эта шляпа была изготовлена ​​вручную Уманом Мудрым и проклята Затротом Разрушителем. Он присуждается Тибиавики.ком.br.",
     "extra": {
@@ -14112,7 +14112,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:08.696184Z",
+    "updated_at": "2026-04-29T23:34:36.254835Z",
     "en_hash": "cb4a051f4b3005c172f505951719fe56",
     "attempted_preview": "Это ведро специально подготовлено для волшебной воды, которая, как известно, вытекает практически из любого сосуда.",
     "extra": {
@@ -14134,7 +14134,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:08.869145Z",
+    "updated_at": "2026-04-29T23:34:36.628528Z",
     "en_hash": "776c1b7fdab84b050993d5bfd5dffbad",
     "attempted_preview": "В нем содержится святая вода из монастыря Белого Ворона.",
     "extra": {
@@ -14156,7 +14156,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:08.955086Z",
+    "updated_at": "2026-04-29T23:34:36.724274Z",
     "en_hash": "e8f275431dd2a4c0cf9cef90e2684128",
     "attempted_preview": "Пряжка ремня, вырванная у глубоководного охранника",
     "extra": {
@@ -14178,7 +14178,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:09.043518Z",
+    "updated_at": "2026-04-29T23:34:36.818090Z",
     "en_hash": "37206ee03b4771b718b45d77d73b4167",
     "attempted_preview": "Этот грозный драгоценный камень был огранен вручную |PLAYERNAME|.",
     "extra": {
@@ -14200,7 +14200,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:09.215982Z",
+    "updated_at": "2026-04-29T23:34:37.006966Z",
     "en_hash": "21de8d2e3df7aebe3d49f73bc68a6470",
     "attempted_preview": "В нем находится взрослый цветок волшебной танцовщицы. Это растение больше не может завянуть",
     "extra": {
@@ -14222,7 +14222,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:09.733268Z",
+    "updated_at": "2026-04-29T23:34:39.569124Z",
     "en_hash": "9c82be8409b524a31df4d028b4355219",
     "attempted_preview": "Этот непрерывный поток воды кажется достаточно сильным, чтобы разрезать даже самые твердые материалы.",
     "extra": {
@@ -14244,7 +14244,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:09.948874Z",
+    "updated_at": "2026-04-29T23:34:40.202829Z",
     "en_hash": "ef6ca63c430d6e3bfdf7144ec4729e75",
     "attempted_preview": "Этот кроваво-красный драгоценный камень все еще груб.",
     "extra": {
@@ -14266,7 +14266,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:10.063913Z",
+    "updated_at": "2026-04-29T23:34:40.803713Z",
     "en_hash": "fd3552c39886db2debf3933f425d3433",
     "attempted_preview": "Этот ящик полон окаменелых кораллов. Его необходимо вовремя заблокировать, иначе он подвергнется коррозии.",
     "extra": {
@@ -14288,7 +14288,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:10.588153Z",
+    "updated_at": "2026-04-29T23:34:40.923497Z",
     "en_hash": "d09d43bde11ada7b26331f3beb99fa62",
     "attempted_preview": "Этот ящик полон окаменелых кораллов. Его необходимо вовремя заблокировать, иначе он подвергнется коррозии.",
     "extra": {
@@ -14310,7 +14310,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:11.351006Z",
+    "updated_at": "2026-04-29T23:34:41.678501Z",
     "en_hash": "3ef67566e087afacf0e4eb12e9a74fa1",
     "attempted_preview": "Тьма сжимает морских существ, чтобы уничтожить все живое. Будьте осторожны с этой черной пустотой",
     "extra": {
@@ -14332,7 +14332,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:12.155288Z",
+    "updated_at": "2026-04-29T23:34:41.800627Z",
     "en_hash": "de6402e7310054867bd91403eaf4018a",
     "attempted_preview": "Содержит красные споры. Соберите ЗЕЛЕНЫЕ споры.",
     "extra": {
@@ -14354,7 +14354,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:14.105730Z",
+    "updated_at": "2026-04-29T23:34:42.001291Z",
     "en_hash": "356977365fb1ef63f4a7fed4ca1c3073",
     "attempted_preview": "Содержит красные и зеленые споры. Соберите немного СИНИХ спор.",
     "extra": {
@@ -14376,7 +14376,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:14.423155Z",
+    "updated_at": "2026-04-29T23:34:42.122715Z",
     "en_hash": "0157edfa55d4c042852b51df197da7cf",
     "attempted_preview": "Он содержит красные, зеленые и синие споры. Соберите немного ЖЕЛТЫХ спор.",
     "extra": {
@@ -14398,7 +14398,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:15.279310Z",
+    "updated_at": "2026-04-29T23:34:42.243893Z",
     "en_hash": "3b93915ccaa1d2a3d8dc56b9d380d092",
     "attempted_preview": "Он содержит красные, зеленые, синие и желтые споры. Доставьте это гномам",
     "extra": {
@@ -14420,7 +14420,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:15.559055Z",
+    "updated_at": "2026-04-29T23:34:42.487885Z",
     "en_hash": "50283fcdee5a10ddc24b58e33308b07f",
     "attempted_preview": "Поросенка необходимо вернуть хозяину в течение часа.",
     "extra": {
@@ -14442,7 +14442,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:15.938354Z",
+    "updated_at": "2026-04-29T23:34:44.321445Z",
     "en_hash": "50283fcdee5a10ddc24b58e33308b07f",
     "attempted_preview": "Поросенка необходимо вернуть хозяину в течение часа.",
     "extra": {
@@ -14464,7 +14464,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:16.113767Z",
+    "updated_at": "2026-04-29T23:34:44.530566Z",
     "en_hash": "0f8b98d30e2ded148860fce1e059e14a",
     "attempted_preview": "Даже при свете дня кажется, что звезды отражаются в каждой грани этого кристального топора.",
     "extra": {
@@ -14486,7 +14486,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T22:31:16.292136Z",
+    "updated_at": "2026-04-29T23:34:46.694817Z",
     "en_hash": "65208b230be21802465cb5da345633e7",
     "attempted_preview": "Такие кристаллы используются для зарядки телепортов дальнего действия в города.",
     "extra": {
@@ -14508,7 +14508,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:19.371924Z",
+    "updated_at": "2026-04-29T23:36:22.796604Z",
     "en_hash": "983b822c1fe9b3a3bd821020d1998e94",
     "attempted_preview": "голова мозга",
     "extra": {
@@ -14528,7 +14528,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:20.320847Z",
+    "updated_at": "2026-04-29T23:36:24.925133Z",
     "en_hash": "d7d6ec67ef23ac56142018b7fd378943",
     "attempted_preview": "кальмар",
     "extra": {
@@ -14548,7 +14548,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:22.275310Z",
+    "updated_at": "2026-04-29T23:36:25.392366Z",
     "en_hash": "d5578710397e82bd3e6da8cee91df34d",
     "attempted_preview": "caНетpic jar",
     "extra": {
@@ -14568,7 +14568,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:22.401288Z",
+    "updated_at": "2026-04-29T23:36:26.183137Z",
     "en_hash": "97223fab7b0d4c64c07e6e004c602302",
     "attempted_preview": "походная койка",
     "extra": {
@@ -14588,7 +14588,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:22.577842Z",
+    "updated_at": "2026-04-29T23:36:27.619049Z",
     "en_hash": "97223fab7b0d4c64c07e6e004c602302",
     "attempted_preview": "походная койка",
     "extra": {
@@ -14608,7 +14608,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:22.771125Z",
+    "updated_at": "2026-04-29T23:36:28.383703Z",
     "en_hash": "97223fab7b0d4c64c07e6e004c602302",
     "attempted_preview": "походная койка",
     "extra": {
@@ -14628,7 +14628,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:22.973010Z",
+    "updated_at": "2026-04-29T23:36:28.589018Z",
     "en_hash": "97223fab7b0d4c64c07e6e004c602302",
     "attempted_preview": "походная койка",
     "extra": {
@@ -14648,7 +14648,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:23.127728Z",
+    "updated_at": "2026-04-29T23:36:28.714915Z",
     "en_hash": "e8f8fcee742b9660355e3a4ba29212dc",
     "attempted_preview": "мёртвый циклоп",
     "extra": {
@@ -14668,7 +14668,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:23.273671Z",
+    "updated_at": "2026-04-29T23:36:28.838425Z",
     "en_hash": "e8f8fcee742b9660355e3a4ba29212dc",
     "attempted_preview": "мёртвый циклоп",
     "extra": {
@@ -14688,7 +14688,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:23.399847Z",
+    "updated_at": "2026-04-29T23:36:30.049980Z",
     "en_hash": "e8f8fcee742b9660355e3a4ba29212dc",
     "attempted_preview": "мёртвый циклоп",
     "extra": {
@@ -14708,7 +14708,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:23.544880Z",
+    "updated_at": "2026-04-29T23:36:30.176393Z",
     "en_hash": "e8f8fcee742b9660355e3a4ba29212dc",
     "attempted_preview": "мёртвый циклоп",
     "extra": {
@@ -14728,7 +14728,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:23.773140Z",
+    "updated_at": "2026-04-29T23:36:32.424188Z",
     "en_hash": "ecfbae8621e997bdaef1b12c02810bf7",
     "attempted_preview": "мёртвый дракон hatchling",
     "extra": {
@@ -14748,7 +14748,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:24.000539Z",
+    "updated_at": "2026-04-29T23:36:33.915710Z",
     "en_hash": "ecfbae8621e997bdaef1b12c02810bf7",
     "attempted_preview": "мёртвый дракон hatchling",
     "extra": {
@@ -14768,7 +14768,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:24.229273Z",
+    "updated_at": "2026-04-29T23:36:35.683496Z",
     "en_hash": "ecfbae8621e997bdaef1b12c02810bf7",
     "attempted_preview": "мёртвый дракон hatchling",
     "extra": {
@@ -14788,7 +14788,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:24.461159Z",
+    "updated_at": "2026-04-29T23:36:37.040161Z",
     "en_hash": "bb5dad9de6289d827da1d1319070635c",
     "attempted_preview": "земля ground",
     "extra": {
@@ -14808,7 +14808,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:25.041418Z",
+    "updated_at": "2026-04-29T23:36:38.983062Z",
     "en_hash": "bb5dad9de6289d827da1d1319070635c",
     "attempted_preview": "земля ground",
     "extra": {
@@ -14828,7 +14828,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:25.169183Z",
+    "updated_at": "2026-04-29T23:36:42.618233Z",
     "en_hash": "e70ca6091cdb4461aeb4bff2fa3857a8",
     "attempted_preview": "цветок bouquet",
     "extra": {
@@ -14848,7 +14848,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:25.293611Z",
+    "updated_at": "2026-04-29T23:36:42.711463Z",
     "en_hash": "5ec35309ee0073919cb69e392b43e430",
     "attempted_preview": "цветок pot",
     "extra": {
@@ -14868,7 +14868,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:25.418357Z",
+    "updated_at": "2026-04-29T23:36:43.144384Z",
     "en_hash": "5ec35309ee0073919cb69e392b43e430",
     "attempted_preview": "цветок pot",
     "extra": {
@@ -14888,7 +14888,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:25.563845Z",
+    "updated_at": "2026-04-29T23:36:43.240521Z",
     "en_hash": "5ec35309ee0073919cb69e392b43e430",
     "attempted_preview": "цветок pot",
     "extra": {
@@ -14908,7 +14908,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:25.689416Z",
+    "updated_at": "2026-04-29T23:36:43.333478Z",
     "en_hash": "5ec35309ee0073919cb69e392b43e430",
     "attempted_preview": "цветок pot",
     "extra": {
@@ -14928,7 +14928,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:27.598897Z",
+    "updated_at": "2026-04-29T23:36:43.801766Z",
     "en_hash": "2569b5dbea513485c8dd7478e50e57fd",
     "attempted_preview": "ворота экспертизы",
     "extra": {
@@ -14948,7 +14948,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:27.721009Z",
+    "updated_at": "2026-04-29T23:36:44.312960Z",
     "en_hash": "2569b5dbea513485c8dd7478e50e57fd",
     "attempted_preview": "ворота экспертизы",
     "extra": {
@@ -14968,7 +14968,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:28.240918Z",
+    "updated_at": "2026-04-29T23:36:44.404893Z",
     "en_hash": "2569b5dbea513485c8dd7478e50e57fd",
     "attempted_preview": "ворота экспертизы",
     "extra": {
@@ -14988,7 +14988,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:28.367509Z",
+    "updated_at": "2026-04-29T23:36:44.497796Z",
     "en_hash": "2569b5dbea513485c8dd7478e50e57fd",
     "attempted_preview": "ворота экспертизы",
     "extra": {
@@ -15008,7 +15008,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:28.522986Z",
+    "updated_at": "2026-04-29T23:36:44.591344Z",
     "en_hash": "0f08fe58cc8158b144f8fdf31f3658b7",
     "attempted_preview": "кровавый рог",
     "extra": {
@@ -15028,7 +15028,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:28.711787Z",
+    "updated_at": "2026-04-29T23:36:44.684997Z",
     "en_hash": "7a8cc8c14b95e1ffddcfb1455eebb909",
     "attempted_preview": "шлем the deep",
     "extra": {
@@ -15048,7 +15048,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:28.836744Z",
+    "updated_at": "2026-04-29T23:36:44.779557Z",
     "en_hash": "cc4dd0d71a1a70d1cc513c317f04d5b4",
     "attempted_preview": "большой coral",
     "extra": {
@@ -15068,7 +15068,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:28.963360Z",
+    "updated_at": "2026-04-29T23:36:44.876612Z",
     "en_hash": "25b1331a71dad1d01977134b8c6b524f",
     "attempted_preview": "lost душа",
     "extra": {
@@ -15088,7 +15088,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:29.089929Z",
+    "updated_at": "2026-04-29T23:36:45.436968Z",
     "en_hash": "40b25f4a6a4f4fa20e43c63414523461",
     "attempted_preview": "lucky clover амулет",
     "extra": {
@@ -15108,7 +15108,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:29.598187Z",
+    "updated_at": "2026-04-29T23:36:45.538054Z",
     "en_hash": "583b618761fed7fce313298c7f67bfba",
     "attempted_preview": "mining шлем",
     "extra": {
@@ -15128,7 +15128,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:29.723334Z",
+    "updated_at": "2026-04-29T23:36:45.824175Z",
     "en_hash": "54f813fcbc9ea57c19ff9fb26b3cac79",
     "attempted_preview": "Нетrthern pike",
     "extra": {
@@ -15148,7 +15148,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:29.848420Z",
+    "updated_at": "2026-04-29T23:36:45.917912Z",
     "en_hash": "21b4ecae5bc41de456ef144bf6d2e1eb",
     "attempted_preview": "ornamented стена",
     "extra": {
@@ -15168,7 +15168,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:29.973410Z",
+    "updated_at": "2026-04-29T23:36:46.012447Z",
     "en_hash": "21b4ecae5bc41de456ef144bf6d2e1eb",
     "attempted_preview": "ornamented стена",
     "extra": {
@@ -15188,7 +15188,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:30.225415Z",
+    "updated_at": "2026-04-29T23:36:47.134374Z",
     "en_hash": "86e79fae37e1a12435e54bc8dc33a767",
     "attempted_preview": "ловушка",
     "extra": {
@@ -15208,7 +15208,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:30.350456Z",
+    "updated_at": "2026-04-29T23:36:47.344416Z",
     "en_hash": "86e79fae37e1a12435e54bc8dc33a767",
     "attempted_preview": "ловушка",
     "extra": {
@@ -15228,7 +15228,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:30.475844Z",
+    "updated_at": "2026-04-29T23:36:47.539364Z",
     "en_hash": "86e79fae37e1a12435e54bc8dc33a767",
     "attempted_preview": "ловушка",
     "extra": {
@@ -15248,7 +15248,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:30.601161Z",
+    "updated_at": "2026-04-29T23:36:47.729389Z",
     "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
     "attempted_preview": "Зарезервированная Сприте",
     "extra": {
@@ -15268,7 +15268,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:31.450698Z",
+    "updated_at": "2026-04-29T23:36:47.947606Z",
     "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
     "attempted_preview": "Зарезервированная Сприте",
     "extra": {
@@ -15288,7 +15288,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:31.589679Z",
+    "updated_at": "2026-04-29T23:36:48.147869Z",
     "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
     "attempted_preview": "Зарезервированная Сприте",
     "extra": {
@@ -15308,7 +15308,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:32.300074Z",
+    "updated_at": "2026-04-29T23:36:48.349541Z",
     "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
     "attempted_preview": "Зарезервированная Сприте",
     "extra": {
@@ -15490,7 +15490,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:34.811051Z",
+    "updated_at": "2026-04-29T23:36:51.931680Z",
     "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
     "attempted_preview": "ЗАРЕЗЕРВИРОВАННЫЙ СПРАЙТ",
     "extra": {
@@ -15510,7 +15510,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:37.609609Z",
+    "updated_at": "2026-04-29T23:36:52.822156Z",
     "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
     "attempted_preview": "ЗАРЕЗЕРВИРОВАННЫЙ СПРАЙТ",
     "extra": {
@@ -15530,7 +15530,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:37.801941Z",
+    "updated_at": "2026-04-29T23:36:53.909045Z",
     "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
     "attempted_preview": "ЗАРЕЗЕРВИРОВАННЫЙ СПРАЙТ",
     "extra": {
@@ -15550,7 +15550,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:45.065449Z",
+    "updated_at": "2026-04-29T23:36:54.039453Z",
     "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
     "attempted_preview": "ЗАРЕЗЕРВИРОВАННЫЙ СПРАЙТ",
     "extra": {
@@ -15570,7 +15570,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:32:10.330651Z",
+    "updated_at": "2026-04-29T23:36:54.235703Z",
     "en_hash": "b7191a556bb13541494d8e7a52e6ff07",
     "attempted_preview": "зарезервированная sprite",
     "extra": {
@@ -15590,7 +15590,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:32:10.491357Z",
+    "updated_at": "2026-04-29T23:36:54.440383Z",
     "en_hash": "b7191a556bb13541494d8e7a52e6ff07",
     "attempted_preview": "зарезервированная sprite",
     "extra": {
@@ -15610,7 +15610,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:32:33.094326Z",
+    "updated_at": "2026-04-29T23:36:54.643208Z",
     "en_hash": "b7191a556bb13541494d8e7a52e6ff07",
     "attempted_preview": "зарезервированная sprite",
     "extra": {
@@ -15630,7 +15630,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:32:33.555065Z",
+    "updated_at": "2026-04-29T23:36:54.870360Z",
     "en_hash": "b7191a556bb13541494d8e7a52e6ff07",
     "attempted_preview": "зарезервированная sprite",
     "extra": {
@@ -18938,8 +18938,8 @@
     "key": "item.14867.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:22:56.384925Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:27.339259Z",
     "en_hash": "bfd8891de38d9fa39b5daa48c35ca1f3",
     "attempted_preview": "маленькая басалт стена",
     "extra": {
@@ -18948,7 +18948,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:22:56Z"
+        "retry_not_before_utc": "2026-04-29T23:30:27Z"
       }
     },
     "attempted_hash": "c09381d66d38aa10de537a08f7967925"
@@ -18959,8 +18959,8 @@
     "key": "item.14868.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:22:56.398495Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:27.347446Z",
     "en_hash": "bfd8891de38d9fa39b5daa48c35ca1f3",
     "attempted_preview": "маленькая басалт стена",
     "extra": {
@@ -18969,7 +18969,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:22:56Z"
+        "retry_not_before_utc": "2026-04-29T23:30:27Z"
       }
     },
     "attempted_hash": "c09381d66d38aa10de537a08f7967925"
@@ -18980,8 +18980,8 @@
     "key": "item.14869.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:22:56.411777Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:27.355477Z",
     "en_hash": "bfd8891de38d9fa39b5daa48c35ca1f3",
     "attempted_preview": "маленькая басалт стена",
     "extra": {
@@ -18990,7 +18990,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:22:56Z"
+        "retry_not_before_utc": "2026-04-29T23:30:27Z"
       }
     },
     "attempted_hash": "c09381d66d38aa10de537a08f7967925"
@@ -19001,8 +19001,8 @@
     "key": "item.14884.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:22:56.419955Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:27.360525Z",
     "en_hash": "b5a61ffa400b95ea98495f07d310b8cf",
     "attempted_preview": "басалт стена",
     "extra": {
@@ -19011,7 +19011,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:22:56Z"
+        "retry_not_before_utc": "2026-04-29T23:30:27Z"
       }
     },
     "attempted_hash": "127a85d786004cd170a24ff990bb8523"
@@ -19022,8 +19022,8 @@
     "key": "item.14885.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:22:56.428275Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:27.365272Z",
     "en_hash": "b5a61ffa400b95ea98495f07d310b8cf",
     "attempted_preview": "басалт стена",
     "extra": {
@@ -19032,7 +19032,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:22:56Z"
+        "retry_not_before_utc": "2026-04-29T23:30:27Z"
       },
       "canonical_name_conflict": {
         "status": "auto_fixed_semantic_dominant",
@@ -19049,8 +19049,8 @@
     "key": "item.14913.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:22:56.438031Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:27.370764Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19059,7 +19059,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:22:56Z"
+        "retry_not_before_utc": "2026-04-29T23:30:27Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19070,8 +19070,8 @@
     "key": "item.14914.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:22:58.446434Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:29.507485Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19080,7 +19080,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:22:58Z"
+        "retry_not_before_utc": "2026-04-29T23:30:29Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19091,8 +19091,8 @@
     "key": "item.14915.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:22:58.451791Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:29.513590Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19101,7 +19101,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:22:58Z"
+        "retry_not_before_utc": "2026-04-29T23:30:29Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19112,8 +19112,8 @@
     "key": "item.14916.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:22:58.456895Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:29.518839Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19122,7 +19122,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:22:58Z"
+        "retry_not_before_utc": "2026-04-29T23:30:29Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19133,8 +19133,8 @@
     "key": "item.14917.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:22:58.461913Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:29.523915Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19143,7 +19143,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:22:58Z"
+        "retry_not_before_utc": "2026-04-29T23:30:29Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19154,8 +19154,8 @@
     "key": "item.14918.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:22:58.466812Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:29.529127Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19164,7 +19164,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:22:58Z"
+        "retry_not_before_utc": "2026-04-29T23:30:29Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19175,8 +19175,8 @@
     "key": "item.14919.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:22:58.471813Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:29.534462Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19185,7 +19185,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:22:58Z"
+        "retry_not_before_utc": "2026-04-29T23:30:29Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19196,8 +19196,8 @@
     "key": "item.14920.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:23:05.074217Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:31.296162Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19206,7 +19206,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:23:05Z"
+        "retry_not_before_utc": "2026-04-29T23:30:31Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19217,8 +19217,8 @@
     "key": "item.14921.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:23:05.080268Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:31.301757Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19227,7 +19227,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:23:05Z"
+        "retry_not_before_utc": "2026-04-29T23:30:31Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19238,8 +19238,8 @@
     "key": "item.14922.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:23:05.086252Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:31.306911Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19248,7 +19248,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:23:05Z"
+        "retry_not_before_utc": "2026-04-29T23:30:31Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19259,8 +19259,8 @@
     "key": "item.14923.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:23:05.092293Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:31.312033Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19269,7 +19269,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:23:05Z"
+        "retry_not_before_utc": "2026-04-29T23:30:31Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19280,8 +19280,8 @@
     "key": "item.14924.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:23:05.098160Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:31.317072Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19290,7 +19290,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:23:05Z"
+        "retry_not_before_utc": "2026-04-29T23:30:31Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19301,8 +19301,8 @@
     "key": "item.14925.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:23:05.103469Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:31.322049Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19311,7 +19311,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:23:05Z"
+        "retry_not_before_utc": "2026-04-29T23:30:31Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19323,7 +19323,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:25:19.773485Z",
+    "updated_at": "2026-04-29T23:30:37.760824Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19332,7 +19332,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:25:19Z"
+        "retry_not_before_utc": "2026-04-29T23:30:37Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19344,7 +19344,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:25:19.778343Z",
+    "updated_at": "2026-04-29T23:30:37.767275Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19353,7 +19353,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:25:19Z"
+        "retry_not_before_utc": "2026-04-29T23:30:37Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19365,7 +19365,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:25:22.300285Z",
+    "updated_at": "2026-04-29T23:30:37.773422Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19374,7 +19374,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:25:22Z"
+        "retry_not_before_utc": "2026-04-29T23:30:37Z"
       }
     },
     "attempted_hash": "95ca66cb0e45d262b63b611bfc0ca155"
@@ -19405,9 +19405,9 @@
     "json_file": "items.json",
     "key": "item.14930.name",
     "status": "translated_ok",
-    "reason": "accepted_translation",
-    "source": "canonical_name_semantic_autofix",
-    "updated_at": "2026-04-29T20:27:10.191379Z",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:37.779016Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19416,7 +19416,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T17:14:42Z"
+        "retry_not_before_utc": "2026-04-29T23:30:37Z"
       },
       "canonical_name_conflict": {
         "status": "auto_fixed_semantic_dominant",
@@ -19433,8 +19433,8 @@
     "key": "item.14931.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:23:08.214485Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:37.784651Z",
     "en_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "attempted_preview": "маленький ручей",
     "extra": {
@@ -19443,7 +19443,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:23:08Z"
+        "retry_not_before_utc": "2026-04-29T23:30:37Z"
       },
       "canonical_name_conflict": {
         "pending": true,
@@ -19692,7 +19692,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:26.198796Z",
+    "updated_at": "2026-04-29T23:36:43.425956Z",
     "en_hash": "7c09d42dc8122c01ded29ccdec1e8c99",
     "attempted_preview": "ископаемый шип",
     "extra": {
@@ -19719,7 +19719,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:26.331900Z",
+    "updated_at": "2026-04-29T23:36:43.519225Z",
     "en_hash": "7c09d42dc8122c01ded29ccdec1e8c99",
     "attempted_preview": "ископаемый шип",
     "extra": {
@@ -19746,7 +19746,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:27.351293Z",
+    "updated_at": "2026-04-29T23:36:43.612955Z",
     "en_hash": "7c09d42dc8122c01ded29ccdec1e8c99",
     "attempted_preview": "ископаемый шип",
     "extra": {
@@ -19773,7 +19773,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:27.475965Z",
+    "updated_at": "2026-04-29T23:36:43.706854Z",
     "en_hash": "7c09d42dc8122c01ded29ccdec1e8c99",
     "attempted_preview": "ископаемый шип",
     "extra": {
@@ -49971,8 +49971,8 @@
     "key": "item.150.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:23:08.220817Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:30:37.790411Z",
     "en_hash": "0dfe0d9880996dbaf08d42b2f2f1e01a",
     "attempted_preview": "ледяная святыня",
     "extra": {
@@ -49981,7 +49981,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:23:08Z"
+        "retry_not_before_utc": "2026-04-29T23:30:37Z"
       }
     },
     "attempted_hash": "97ec29d478f7638ddd65e3addf3183b0"
@@ -55246,7 +55246,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:30.099461Z",
+    "updated_at": "2026-04-29T23:36:47.035926Z",
     "en_hash": "486b35cbe96eb614af20314406a8cde1",
     "attempted_hash": "a6d7b0b35f61cd966ac1478b1dcd1960",
     "attempted_preview": "гриб Паксиллус",
@@ -56502,7 +56502,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:32.611108Z",
+    "updated_at": "2026-04-29T23:36:49.164269Z",
     "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
     "attempted_hash": "22e5dca742809c6b89a9f7e3cfd0e37a",
     "attempted_preview": "зарезервированная SPRITE",
@@ -66045,8 +66045,8 @@
     "key": "item.15156.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:23:08.229349Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:13.125996Z",
     "en_hash": "578a9cd5fac44ee0985a1709096ba731",
     "attempted_hash": "1e714322522fc354b9535f7764c328bc",
     "attempted_preview": "большой декоративный гриб",
@@ -66056,7 +66056,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:23:08Z"
+        "retry_not_before_utc": "2026-04-29T23:31:13Z"
       }
     }
   },
@@ -66066,8 +66066,8 @@
     "key": "item.15157.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T20:23:08.237742Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:13.132945Z",
     "en_hash": "578a9cd5fac44ee0985a1709096ba731",
     "attempted_hash": "1e714322522fc354b9535f7764c328bc",
     "attempted_preview": "большой декоративный гриб",
@@ -66077,7 +66077,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T20:23:08Z"
+        "retry_not_before_utc": "2026-04-29T23:31:13Z"
       }
     }
   },
@@ -67200,7 +67200,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:32.804658Z",
+    "updated_at": "2026-04-29T23:36:49.267477Z",
     "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
     "attempted_hash": "22e5dca742809c6b89a9f7e3cfd0e37a",
     "attempted_preview": "зарезервированная SPRITE",
@@ -76937,7 +76937,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:32.983752Z",
+    "updated_at": "2026-04-29T23:36:50.208910Z",
     "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
     "attempted_hash": "22e5dca742809c6b89a9f7e3cfd0e37a",
     "attempted_preview": "зарезервированная SPRITE",
@@ -84141,7 +84141,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T22:31:34.687892Z",
+    "updated_at": "2026-04-29T23:36:50.943422Z",
     "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
     "attempted_hash": "22e5dca742809c6b89a9f7e3cfd0e37a",
     "attempted_preview": "зарезервированная SPRITE",
@@ -89891,5 +89891,2645 @@
     "en_hash": "51242c3311b41e9d8180d5965355b5c2",
     "attempted_hash": "1b9fa457b7c432a3f739993e327de632",
     "attempted_preview": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}."
+  },
+  "ru::items.json::item.1533.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.1533.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-29T23:30:18.983145Z",
+    "en_hash": "29ce6182fed9103279c2ee7a9594dd3d",
+    "attempted_hash": "b2e57c68434e63d4bf3feccb2b4a749c",
+    "attempted_preview": "арка"
+  },
+  "ru::items.json::item.15333.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15333.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.000568Z",
+    "en_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "attempted_hash": "c647cbf231c26b30fa624958447ab066",
+    "attempted_preview": "кристаллы"
+  },
+  "ru::items.json::item.15334.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15334.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.007907Z",
+    "en_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "attempted_hash": "c647cbf231c26b30fa624958447ab066",
+    "attempted_preview": "кристаллы"
+  },
+  "ru::items.json::item.15335.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15335.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.015337Z",
+    "en_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "attempted_hash": "c647cbf231c26b30fa624958447ab066",
+    "attempted_preview": "кристаллы"
+  },
+  "ru::items.json::item.15336.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15336.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.023601Z",
+    "en_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "attempted_hash": "c647cbf231c26b30fa624958447ab066",
+    "attempted_preview": "кристаллы"
+  },
+  "ru::items.json::item.15337.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15337.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.031701Z",
+    "en_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "attempted_hash": "c647cbf231c26b30fa624958447ab066",
+    "attempted_preview": "кристаллы"
+  },
+  "ru::items.json::item.15338.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15338.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.039460Z",
+    "en_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "attempted_hash": "c647cbf231c26b30fa624958447ab066",
+    "attempted_preview": "кристаллы"
+  },
+  "ru::items.json::item.15339.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15339.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.047286Z",
+    "en_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "attempted_hash": "c647cbf231c26b30fa624958447ab066",
+    "attempted_preview": "кристаллы"
+  },
+  "ru::items.json::item.1534.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.1534.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-29T23:30:19.053787Z",
+    "en_hash": "29ce6182fed9103279c2ee7a9594dd3d",
+    "attempted_hash": "b2e57c68434e63d4bf3feccb2b4a749c",
+    "attempted_preview": "арка"
+  },
+  "ru::items.json::item.15340.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15340.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.061311Z",
+    "en_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "attempted_hash": "c647cbf231c26b30fa624958447ab066",
+    "attempted_preview": "кристаллы"
+  },
+  "ru::items.json::item.15341.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15341.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.069021Z",
+    "en_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "attempted_hash": "c647cbf231c26b30fa624958447ab066",
+    "attempted_preview": "кристаллы"
+  },
+  "ru::items.json::item.15342.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15342.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.076402Z",
+    "en_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "attempted_hash": "c647cbf231c26b30fa624958447ab066",
+    "attempted_preview": "кристаллы"
+  },
+  "ru::items.json::item.15343.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15343.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.083902Z",
+    "en_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "attempted_hash": "c647cbf231c26b30fa624958447ab066",
+    "attempted_preview": "кристаллы"
+  },
+  "ru::items.json::item.15344.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15344.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.091456Z",
+    "en_hash": "ed5ededbfd2be117598eb3e53417fc04",
+    "attempted_hash": "c647cbf231c26b30fa624958447ab066",
+    "attempted_preview": "кристаллы"
+  },
+  "ru::items.json::item.1535.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.1535.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-29T23:30:19.108409Z",
+    "en_hash": "29ce6182fed9103279c2ee7a9594dd3d",
+    "attempted_hash": "b2e57c68434e63d4bf3feccb2b4a749c",
+    "attempted_preview": "арка"
+  },
+  "ru::items.json::item.1536.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.1536.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.118490Z",
+    "en_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "attempted_hash": "5481b557a1b6b7e4db2c8625744cf655",
+    "attempted_preview": "бамбуковая стена"
+  },
+  "ru::items.json::item.1537.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.1537.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.128582Z",
+    "en_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "attempted_hash": "5481b557a1b6b7e4db2c8625744cf655",
+    "attempted_preview": "бамбуковая стена"
+  },
+  "ru::items.json::item.1539.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.1539.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.143870Z",
+    "en_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "attempted_hash": "5481b557a1b6b7e4db2c8625744cf655",
+    "attempted_preview": "бамбуковая стена"
+  },
+  "ru::items.json::item.154.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.154.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.182341Z",
+    "en_hash": "59611a77c60eb6bdb32e9260cc2330e9",
+    "attempted_hash": "e8737b73b28ba782c2571a57c97d41b7",
+    "attempted_preview": "энергетический храм"
+  },
+  "ru::items.json::item.1540.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.1540.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.192560Z",
+    "en_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "attempted_hash": "5481b557a1b6b7e4db2c8625744cf655",
+    "attempted_preview": "бамбуковая стена"
+  },
+  "ru::items.json::item.1543.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.1543.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-29T23:30:19.283809Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "1a7f66266350eb05eb325084685034b7",
+    "attempted_preview": "каменный стена"
+  },
+  "ru::items.json::item.1544.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.1544.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-29T23:30:19.365006Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "1a7f66266350eb05eb325084685034b7",
+    "attempted_preview": "каменный стена"
+  },
+  "ru::items.json::item.1545.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.1545.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-29T23:30:19.451886Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "1a7f66266350eb05eb325084685034b7",
+    "attempted_preview": "каменный стена"
+  },
+  "ru::items.json::item.15454.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15454.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.492711Z",
+    "en_hash": "141d0026a165e6b6a8e945b0ab5859ee",
+    "attempted_hash": "764a1660dac3e8bb622142ab9ba11420",
+    "attempted_preview": "мшистая стена"
+  },
+  "ru::items.json::item.15455.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15455.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.502340Z",
+    "en_hash": "141d0026a165e6b6a8e945b0ab5859ee",
+    "attempted_hash": "764a1660dac3e8bb622142ab9ba11420",
+    "attempted_preview": "мшистая стена"
+  },
+  "ru::items.json::item.15456.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15456.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.511910Z",
+    "en_hash": "141d0026a165e6b6a8e945b0ab5859ee",
+    "attempted_hash": "764a1660dac3e8bb622142ab9ba11420",
+    "attempted_preview": "мшистая стена"
+  },
+  "ru::items.json::item.15457.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15457.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.521400Z",
+    "en_hash": "141d0026a165e6b6a8e945b0ab5859ee",
+    "attempted_hash": "764a1660dac3e8bb622142ab9ba11420",
+    "attempted_preview": "мшистая стена"
+  },
+  "ru::items.json::item.15458.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15458.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.531553Z",
+    "en_hash": "141d0026a165e6b6a8e945b0ab5859ee",
+    "attempted_hash": "764a1660dac3e8bb622142ab9ba11420",
+    "attempted_preview": "мшистая стена"
+  },
+  "ru::items.json::item.15459.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15459.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T23:30:19.541604Z",
+    "en_hash": "141d0026a165e6b6a8e945b0ab5859ee",
+    "attempted_hash": "764a1660dac3e8bb622142ab9ba11420",
+    "attempted_preview": "мшистая стена"
+  },
+  "ru::items.json::item.1546.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.1546.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "simple_dict",
+    "updated_at": "2026-04-29T23:30:19.551196Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "1a7f66266350eb05eb325084685034b7",
+    "attempted_preview": "каменный стена"
+  },
+  "ru::items.json::item.15321.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15321.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:13.136070Z",
+    "en_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "attempted_hash": "ab3c40f357696cdc2a8864eeb244d71b",
+    "attempted_preview": "базальт",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:13Z"
+      }
+    }
+  },
+  "ru::items.json::item.15322.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15322.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:13.139068Z",
+    "en_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "attempted_hash": "ab3c40f357696cdc2a8864eeb244d71b",
+    "attempted_preview": "базальт",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:13Z"
+      }
+    }
+  },
+  "ru::items.json::item.15323.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15323.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:13.142213Z",
+    "en_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "attempted_hash": "ab3c40f357696cdc2a8864eeb244d71b",
+    "attempted_preview": "базальт",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:13Z"
+      }
+    }
+  },
+  "ru::items.json::item.15324.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15324.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:13.145863Z",
+    "en_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "attempted_hash": "ab3c40f357696cdc2a8864eeb244d71b",
+    "attempted_preview": "базальт",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:13Z"
+      }
+    }
+  },
+  "ru::items.json::item.15325.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15325.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:39.010476Z",
+    "en_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "attempted_hash": "ab3c40f357696cdc2a8864eeb244d71b",
+    "attempted_preview": "базальт",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:39Z"
+      }
+    }
+  },
+  "ru::items.json::item.15326.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15326.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:39.013705Z",
+    "en_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "attempted_hash": "ab3c40f357696cdc2a8864eeb244d71b",
+    "attempted_preview": "базальт",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:39Z"
+      }
+    }
+  },
+  "ru::items.json::item.15327.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15327.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:39.016490Z",
+    "en_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "attempted_hash": "ab3c40f357696cdc2a8864eeb244d71b",
+    "attempted_preview": "базальт",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:39Z"
+      }
+    }
+  },
+  "ru::items.json::item.15328.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15328.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:39.019318Z",
+    "en_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "attempted_hash": "ab3c40f357696cdc2a8864eeb244d71b",
+    "attempted_preview": "базальт",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:39Z"
+      }
+    }
+  },
+  "ru::items.json::item.15329.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15329.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:39.022285Z",
+    "en_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "attempted_hash": "ab3c40f357696cdc2a8864eeb244d71b",
+    "attempted_preview": "базальт",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:39Z"
+      }
+    }
+  },
+  "ru::items.json::item.15330.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15330.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:39.025083Z",
+    "en_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "attempted_hash": "ab3c40f357696cdc2a8864eeb244d71b",
+    "attempted_preview": "базальт",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:39Z"
+      }
+    }
+  },
+  "ru::items.json::item.15331.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15331.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:41.349574Z",
+    "en_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "attempted_hash": "ab3c40f357696cdc2a8864eeb244d71b",
+    "attempted_preview": "базальт",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:41Z"
+      }
+    }
+  },
+  "ru::items.json::item.15332.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15332.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:41.352408Z",
+    "en_hash": "90e69a94a23be6a2a690e09da9adaa24",
+    "attempted_hash": "ab3c40f357696cdc2a8864eeb244d71b",
+    "attempted_preview": "базальт",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:41Z"
+      }
+    }
+  },
+  "ru::items.json::item.15393.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15393.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:41.355890Z",
+    "en_hash": "7f49a665560a2d7f6d61b72590a5517a",
+    "attempted_hash": "ce703da51e6031d3396c8daf1c753d36",
+    "attempted_preview": "моховые пятна",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:41Z"
+      }
+    }
+  },
+  "ru::items.json::item.15394.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15394.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:41.359373Z",
+    "en_hash": "7f49a665560a2d7f6d61b72590a5517a",
+    "attempted_hash": "ce703da51e6031d3396c8daf1c753d36",
+    "attempted_preview": "моховые пятна",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:41Z"
+      }
+    }
+  },
+  "ru::items.json::item.15395.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15395.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:41.363009Z",
+    "en_hash": "7f49a665560a2d7f6d61b72590a5517a",
+    "attempted_hash": "ce703da51e6031d3396c8daf1c753d36",
+    "attempted_preview": "моховые пятна",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:41Z"
+      }
+    }
+  },
+  "ru::items.json::item.15396.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15396.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:41.366405Z",
+    "en_hash": "7f49a665560a2d7f6d61b72590a5517a",
+    "attempted_hash": "ce703da51e6031d3396c8daf1c753d36",
+    "attempted_preview": "моховые пятна",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:41Z"
+      }
+    }
+  },
+  "ru::items.json::item.15397.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15397.name",
+    "status": "manual_review",
+    "reason": "canonical_name_semantic_conflict",
+    "source": "canonical_name_conflicts",
+    "updated_at": "2026-04-29T23:36:45.634220Z",
+    "en_hash": "7f49a665560a2d7f6d61b72590a5517a",
+    "attempted_hash": "d4df698676b45d11051a87698776226f",
+    "attempted_preview": "мохнатые пятна",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:43Z"
+      },
+      "canonical_name_conflict": {
+        "pending": true,
+        "canonical_en": "mossy spots",
+        "selected_translation": "моховые пятна",
+        "conflicting_translation": "мохнатые пятна"
+      }
+    }
+  },
+  "ru::items.json::item.15398.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15398.name",
+    "status": "manual_review",
+    "reason": "canonical_name_semantic_conflict",
+    "source": "canonical_name_conflicts",
+    "updated_at": "2026-04-29T23:36:45.729799Z",
+    "en_hash": "7f49a665560a2d7f6d61b72590a5517a",
+    "attempted_hash": "d4df698676b45d11051a87698776226f",
+    "attempted_preview": "мохнатые пятна",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:43Z"
+      },
+      "canonical_name_conflict": {
+        "pending": true,
+        "canonical_en": "mossy spots",
+        "selected_translation": "моховые пятна",
+        "conflicting_translation": "мохнатые пятна"
+      }
+    }
+  },
+  "ru::items.json::item.15420.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15420.name",
+    "status": "manual_review",
+    "reason": "canonical_name_semantic_conflict",
+    "source": "canonical_name_conflicts",
+    "updated_at": "2026-04-29T23:34:50.250479Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "bba67a6564e9f37e2e6e74b82c8237df",
+    "attempted_preview": "базальтовая кристальная стена",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:43Z"
+      },
+      "canonical_name_conflict": {
+        "pending": true,
+        "canonical_en": "basalt crystal wall",
+        "selected_translation": "кристальная стена из базальта",
+        "conflicting_translation": "базальтовая кристальная стена"
+      }
+    }
+  },
+  "ru::items.json::item.15421.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15421.name",
+    "status": "manual_review",
+    "reason": "canonical_name_semantic_conflict",
+    "source": "canonical_name_conflicts",
+    "updated_at": "2026-04-29T23:35:40.852275Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "bba67a6564e9f37e2e6e74b82c8237df",
+    "attempted_preview": "базальтовая кристальная стена",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:43Z"
+      },
+      "canonical_name_conflict": {
+        "pending": true,
+        "canonical_en": "basalt crystal wall",
+        "selected_translation": "кристальная стена из базальта",
+        "conflicting_translation": "базальтовая кристальная стена"
+      }
+    }
+  },
+  "ru::items.json::item.15422.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15422.name",
+    "status": "manual_review",
+    "reason": "canonical_name_semantic_conflict",
+    "source": "canonical_name_conflicts",
+    "updated_at": "2026-04-29T23:36:18.387428Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "bba67a6564e9f37e2e6e74b82c8237df",
+    "attempted_preview": "базальтовая кристальная стена",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:43Z"
+      },
+      "canonical_name_conflict": {
+        "pending": true,
+        "canonical_en": "basalt crystal wall",
+        "selected_translation": "кристальная стена из базальта",
+        "conflicting_translation": "базальтовая кристальная стена"
+      }
+    }
+  },
+  "ru::items.json::item.15423.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15423.name",
+    "status": "manual_review",
+    "reason": "canonical_name_semantic_conflict",
+    "source": "canonical_name_conflicts",
+    "updated_at": "2026-04-29T23:36:22.399414Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "bba67a6564e9f37e2e6e74b82c8237df",
+    "attempted_preview": "базальтовая кристальная стена",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:43Z"
+      },
+      "canonical_name_conflict": {
+        "pending": true,
+        "canonical_en": "basalt crystal wall",
+        "selected_translation": "кристальная стена из базальта",
+        "conflicting_translation": "базальтовая кристальная стена"
+      }
+    }
+  },
+  "ru::items.json::item.15424.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15424.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:45.657260Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:45Z"
+      }
+    }
+  },
+  "ru::items.json::item.15425.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15425.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:45.664401Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:45Z"
+      }
+    }
+  },
+  "ru::items.json::item.15426.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15426.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:45.671213Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:45Z"
+      }
+    }
+  },
+  "ru::items.json::item.15427.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15427.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:45.677959Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:45Z"
+      }
+    }
+  },
+  "ru::items.json::item.15428.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15428.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:45.684619Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:45Z"
+      }
+    }
+  },
+  "ru::items.json::item.15429.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15429.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:45.690762Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:45Z"
+      }
+    }
+  },
+  "ru::items.json::item.15430.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15430.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:47.737984Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:47Z"
+      }
+    }
+  },
+  "ru::items.json::item.15431.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15431.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:47.744783Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:47Z"
+      }
+    }
+  },
+  "ru::items.json::item.15432.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15432.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:47.751522Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:47Z"
+      }
+    }
+  },
+  "ru::items.json::item.15433.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15433.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:47.758254Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:47Z"
+      }
+    }
+  },
+  "ru::items.json::item.15434.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15434.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:47.764889Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:47Z"
+      }
+    }
+  },
+  "ru::items.json::item.15435.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15435.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:47.770893Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:47Z"
+      }
+    }
+  },
+  "ru::items.json::item.15436.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15436.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:49.769122Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:49Z"
+      }
+    }
+  },
+  "ru::items.json::item.15437.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15437.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:49.776089Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:49Z"
+      }
+    }
+  },
+  "ru::items.json::item.15438.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15438.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:49.782884Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:49Z"
+      }
+    }
+  },
+  "ru::items.json::item.15439.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15439.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:49.789527Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:49Z"
+      }
+    }
+  },
+  "ru::items.json::item.15440.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15440.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:49.795809Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:49Z"
+      }
+    }
+  },
+  "ru::items.json::item.15441.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15441.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:49.801899Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:49Z"
+      }
+    }
+  },
+  "ru::items.json::item.15442.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15442.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:52.092063Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:52Z"
+      }
+    }
+  },
+  "ru::items.json::item.15443.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15443.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:52.099200Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:52Z"
+      }
+    }
+  },
+  "ru::items.json::item.15444.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15444.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:52.106167Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:52Z"
+      }
+    }
+  },
+  "ru::items.json::item.15445.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15445.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:52.112980Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:52Z"
+      }
+    }
+  },
+  "ru::items.json::item.15446.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15446.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:52.119877Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:52Z"
+      }
+    }
+  },
+  "ru::items.json::item.15447.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15447.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:52.126126Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:52Z"
+      }
+    }
+  },
+  "ru::items.json::item.15448.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15448.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:54.876060Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:54Z"
+      }
+    }
+  },
+  "ru::items.json::item.15449.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15449.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:54.883471Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:54Z"
+      }
+    }
+  },
+  "ru::items.json::item.15450.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15450.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:54.890208Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:54Z"
+      }
+    }
+  },
+  "ru::items.json::item.15451.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15451.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:54.896913Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:54Z"
+      }
+    }
+  },
+  "ru::items.json::item.15452.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15452.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:54.903763Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:54Z"
+      }
+    }
+  },
+  "ru::items.json::item.15453.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.15453.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T23:31:54.909955Z",
+    "en_hash": "05c70a4cd780813ba27ce86be8b99a06",
+    "attempted_hash": "9d85303386380e1daa32bab3b455ece6",
+    "attempted_preview": "кристальная стена из базальта",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T23:31:54Z"
+      }
+    }
+  },
+  "ru::items.json::item.30145.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30145.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.455254Z",
+    "en_hash": "e24e4a4b8ee14f5960f66f2ec351afa9",
+    "attempted_hash": "7767a5b560fdd55648af579d2b761366",
+    "attempted_preview": "frozen сундук",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "7767a5b560fdd55648af579d2b761366",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30148.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30148.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.456039Z",
+    "en_hash": "a13f8d3c0d80b9a0f6c881ca959bdf79",
+    "attempted_hash": "f71f3461ac98d7ce87cadc93c9571d58",
+    "attempted_preview": "мёртвый Maxxenius",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "f71f3461ac98d7ce87cadc93c9571d58",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30149.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30149.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.456977Z",
+    "en_hash": "a13f8d3c0d80b9a0f6c881ca959bdf79",
+    "attempted_hash": "f71f3461ac98d7ce87cadc93c9571d58",
+    "attempted_preview": "мёртвый Maxxenius",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "f71f3461ac98d7ce87cadc93c9571d58",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30150.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30150.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.458151Z",
+    "en_hash": "a13f8d3c0d80b9a0f6c881ca959bdf79",
+    "attempted_hash": "f71f3461ac98d7ce87cadc93c9571d58",
+    "attempted_preview": "мёртвый Maxxenius",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "f71f3461ac98d7ce87cadc93c9571d58",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30151.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30151.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.458854Z",
+    "en_hash": "a13f8d3c0d80b9a0f6c881ca959bdf79",
+    "attempted_hash": "f71f3461ac98d7ce87cadc93c9571d58",
+    "attempted_preview": "мёртвый Maxxenius",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "f71f3461ac98d7ce87cadc93c9571d58",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30152.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30152.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.459563Z",
+    "en_hash": "3241cdd53c33a5e4cc7c83fc0a996cb3",
+    "attempted_hash": "fbec13f62f30695982726dc2d9ef1877",
+    "attempted_preview": "мёртвый Alptramun",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "fbec13f62f30695982726dc2d9ef1877",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30153.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30153.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.460255Z",
+    "en_hash": "3241cdd53c33a5e4cc7c83fc0a996cb3",
+    "attempted_hash": "fbec13f62f30695982726dc2d9ef1877",
+    "attempted_preview": "мёртвый Alptramun",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "fbec13f62f30695982726dc2d9ef1877",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30154.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30154.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.461007Z",
+    "en_hash": "3241cdd53c33a5e4cc7c83fc0a996cb3",
+    "attempted_hash": "fbec13f62f30695982726dc2d9ef1877",
+    "attempted_preview": "мёртвый Alptramun",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "fbec13f62f30695982726dc2d9ef1877",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30155.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30155.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.461711Z",
+    "en_hash": "3241cdd53c33a5e4cc7c83fc0a996cb3",
+    "attempted_hash": "fbec13f62f30695982726dc2d9ef1877",
+    "attempted_preview": "мёртвый Alptramun",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "fbec13f62f30695982726dc2d9ef1877",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.3016.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.3016.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.462441Z",
+    "en_hash": "c639763f244d6ce15a7d9f04c4f6a837",
+    "attempted_hash": "d1af95b33d5b085c9e6d640b826622cf",
+    "attempted_preview": "ruby ожерелье",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "d1af95b33d5b085c9e6d640b826622cf",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30160.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30160.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.463193Z",
+    "en_hash": "1a5e8473d97f2a739ef3437ea19d5593",
+    "attempted_hash": "ccffc65a0ec8fd04528411bfca403239",
+    "attempted_preview": "мёртвый burster spectre",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "ccffc65a0ec8fd04528411bfca403239",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30161.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30161.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.463934Z",
+    "en_hash": "1a5e8473d97f2a739ef3437ea19d5593",
+    "attempted_hash": "ccffc65a0ec8fd04528411bfca403239",
+    "attempted_preview": "мёртвый burster spectre",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "ccffc65a0ec8fd04528411bfca403239",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30162.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30162.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.464655Z",
+    "en_hash": "1a5e8473d97f2a739ef3437ea19d5593",
+    "attempted_hash": "ccffc65a0ec8fd04528411bfca403239",
+    "attempted_preview": "мёртвый burster spectre",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "ccffc65a0ec8fd04528411bfca403239",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30163.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30163.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.465469Z",
+    "en_hash": "1a5e8473d97f2a739ef3437ea19d5593",
+    "attempted_hash": "ccffc65a0ec8fd04528411bfca403239",
+    "attempted_preview": "мёртвый burster spectre",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "ccffc65a0ec8fd04528411bfca403239",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30164.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30164.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.466192Z",
+    "en_hash": "7ba2b520e3bdd82a334364a611f40faf",
+    "attempted_hash": "7b7892bae96d5219b482bb00804e3e96",
+    "attempted_preview": "мёртвый gazer spectre",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "7b7892bae96d5219b482bb00804e3e96",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30165.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30165.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.466899Z",
+    "en_hash": "7ba2b520e3bdd82a334364a611f40faf",
+    "attempted_hash": "7b7892bae96d5219b482bb00804e3e96",
+    "attempted_preview": "мёртвый gazer spectre",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "7b7892bae96d5219b482bb00804e3e96",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30166.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30166.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.467646Z",
+    "en_hash": "7ba2b520e3bdd82a334364a611f40faf",
+    "attempted_hash": "7b7892bae96d5219b482bb00804e3e96",
+    "attempted_preview": "мёртвый gazer spectre",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "7b7892bae96d5219b482bb00804e3e96",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30167.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30167.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.468370Z",
+    "en_hash": "7ba2b520e3bdd82a334364a611f40faf",
+    "attempted_hash": "7b7892bae96d5219b482bb00804e3e96",
+    "attempted_preview": "мёртвый gazer spectre",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "7b7892bae96d5219b482bb00804e3e96",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30168.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30168.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.468974Z",
+    "en_hash": "adf99e286e91d4997b2dd81a8f2b67ad",
+    "attempted_hash": "d7db94cdae8fe053c69e25c13b206358",
+    "attempted_preview": "ice щит",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "d7db94cdae8fe053c69e25c13b206358",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.3017.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.3017.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.469658Z",
+    "en_hash": "428785f44d96c9ac5af808a10f9117ae",
+    "attempted_hash": "fdb5c338fa5a54ca0f65e001f682a0dc",
+    "attempted_preview": "серебряный brooch",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "fdb5c338fa5a54ca0f65e001f682a0dc",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30171.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30171.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.470398Z",
+    "en_hash": "039ae0ee6489662b5d2b7c95b9c688a1",
+    "attempted_hash": "0b3cad70560a0afa0704e37e0725f634",
+    "attempted_preview": "фиолетовый tendril lantern",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "0b3cad70560a0afa0704e37e0725f634",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30172.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30172.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.471116Z",
+    "en_hash": "bca7729dd8bfbbcd16bef587a7f83bab",
+    "attempted_hash": "a72d613e96d2e88a99272c87fe3eae65",
+    "attempted_preview": "мёртвый lacewing moth",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "a72d613e96d2e88a99272c87fe3eae65",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30173.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30173.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.471842Z",
+    "en_hash": "bca7729dd8bfbbcd16bef587a7f83bab",
+    "attempted_hash": "a72d613e96d2e88a99272c87fe3eae65",
+    "attempted_preview": "мёртвый lacewing moth",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "a72d613e96d2e88a99272c87fe3eae65",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30174.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30174.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.472555Z",
+    "en_hash": "bca7729dd8bfbbcd16bef587a7f83bab",
+    "attempted_hash": "a72d613e96d2e88a99272c87fe3eae65",
+    "attempted_preview": "мёртвый lacewing moth",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "a72d613e96d2e88a99272c87fe3eae65",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30175.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30175.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.473404Z",
+    "en_hash": "bca7729dd8bfbbcd16bef587a7f83bab",
+    "attempted_hash": "a72d613e96d2e88a99272c87fe3eae65",
+    "attempted_preview": "мёртвый lacewing moth",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "a72d613e96d2e88a99272c87fe3eae65",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30176.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30176.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.474190Z",
+    "en_hash": "a579de29e153473275c95e102e9f10f6",
+    "attempted_hash": "a09be65c193f8f5549ed1911d8673fb1",
+    "attempted_preview": "мёртвый hibernal moth",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "a09be65c193f8f5549ed1911d8673fb1",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30177.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30177.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.474920Z",
+    "en_hash": "a579de29e153473275c95e102e9f10f6",
+    "attempted_hash": "a09be65c193f8f5549ed1911d8673fb1",
+    "attempted_preview": "мёртвый hibernal moth",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "a09be65c193f8f5549ed1911d8673fb1",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30178.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30178.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.475628Z",
+    "en_hash": "a579de29e153473275c95e102e9f10f6",
+    "attempted_hash": "a09be65c193f8f5549ed1911d8673fb1",
+    "attempted_preview": "мёртвый hibernal moth",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "a09be65c193f8f5549ed1911d8673fb1",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30179.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30179.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.476335Z",
+    "en_hash": "a579de29e153473275c95e102e9f10f6",
+    "attempted_hash": "a09be65c193f8f5549ed1911d8673fb1",
+    "attempted_preview": "мёртвый hibernal moth",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "a09be65c193f8f5549ed1911d8673fb1",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.3018.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.3018.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.477040Z",
+    "en_hash": "7c6f4cdcd64f2161d7816568a8fcbd17",
+    "attempted_hash": "1587f481c823ccf0cbd32cfa8c6fbeaf",
+    "attempted_preview": "scarab амулет",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "1587f481c823ccf0cbd32cfa8c6fbeaf",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30181.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30181.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.477838Z",
+    "en_hash": "9841a52dac346a905c180d22068350dd",
+    "attempted_hash": "64214a5f3ba81389a73b66eff1567cc5",
+    "attempted_preview": "щит endless search",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "64214a5f3ba81389a73b66eff1567cc5",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
+  },
+  "ru::items.json::item.30182.name": {
+    "lang": "ru",
+    "json_file": "items.json",
+    "key": "item.30182.name",
+    "status": "pending",
+    "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+    "source": "canonical_name_existing_quality_guard",
+    "updated_at": "2026-04-29T23:31:59.478601Z",
+    "en_hash": "9841a52dac346a905c180d22068350dd",
+    "attempted_hash": "64214a5f3ba81389a73b66eff1567cc5",
+    "attempted_preview": "щит endless search",
+    "extra": {
+      "canonical_name_existing_quality_guard": {
+        "previous_translation_hash": "64214a5f3ba81389a73b66eff1567cc5",
+        "quality_blockers": [
+          "cyrillic_latin_mix",
+          "mixed_scripts"
+        ]
+      },
+      "deferred_retry_limiter": {
+        "schema_version": "1.0",
+        "attempts_total": 1,
+        "attempts_by_bucket": {
+          "quality": 1
+        },
+        "last_reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "last_bucket": "quality",
+        "last_seen_utc": "2026-04-29T23:31:59Z",
+        "first_seen_utc": "2026-04-29T23:31:59Z",
+        "bucket_limit": 4,
+        "bucket_attempts": 1,
+        "action": "none",
+        "retry_not_before_utc": "2026-04-29T23:31:59Z"
+      }
+    }
   }
 }

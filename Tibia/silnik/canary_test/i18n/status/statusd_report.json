@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-29T23:34:03.599935Z",
+  "timestamp": "2026-04-29T23:35:40.679039Z",
   "version": "statusd-mvp-1.0",
   "worker": {
     "pid": 6760,
-    "heartbeat_at": "2026-04-29T23:31:14Z",
-    "heartbeat_age_s": 169.6,
+    "heartbeat_at": "2026-04-29T23:33:14Z",
+    "heartbeat_age_s": 146.7,
     "cycle": 27,
     "mode": "continuous",
     "category": "?",
@@ -86,7 +86,7 @@
   },
   "worker_runtime_heartbeat": {
     "schema_version": 1,
-    "generated_at_utc": "2026-04-29T23:34:03.599935Z",
+    "generated_at_utc": "2026-04-29T23:35:40.679039Z",
     "source": "statusd.aggregate_telemetry",
     "status": "healthy",
     "reason": "heartbeat_fresh",
@@ -96,26 +96,26 @@
     "current_lang": "ru",
     "current_file": "items.json",
     "cycle": 27,
-    "heartbeat_at_utc": "2026-04-29T23:31:14Z",
-    "heartbeat_age_s": 169.6,
+    "heartbeat_at_utc": "2026-04-29T23:33:14Z",
+    "heartbeat_age_s": 146.679,
     "worker": {
       "pid": 6760,
       "pid_alive": true,
-      "heartbeat_at_utc": "2026-04-29T23:31:14Z",
-      "heartbeat_age_s": 169.6,
+      "heartbeat_at_utc": "2026-04-29T23:33:14Z",
+      "heartbeat_age_s": 146.679,
       "mode": "continuous",
       "category": "",
       "cycle": 27,
-      "activity_heartbeat_at_utc": "2026-04-29T23:33:14Z",
-      "activity_heartbeat_age_s": 49.6
+      "activity_heartbeat_at_utc": "2026-04-29T23:35:40Z",
+      "activity_heartbeat_age_s": 0.679
     },
     "guardian": {
-      "timestamp": "2026-04-29T23:31:56.243677Z",
+      "timestamp": "2026-04-29T23:34:33.150773Z",
       "state": "healthy",
-      "heartbeat_age_s": 132.2,
+      "heartbeat_age_s": 199.2,
       "pid_alive": true,
-      "worker_log_age_s": 132.0,
-      "guard_last_entry_age_s": 569.7,
+      "worker_log_age_s": 288.9,
+      "guard_last_entry_age_s": 726.6,
       "active_log_grace_seconds": 300.0,
       "throughput_per_h": 0.0,
       "guard_fail_rate_pct": 0.9,
@@ -136,8 +136,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T22:32:00.618758Z",
-    "window_end_utc": "2026-04-29T23:32:00.618758Z",
+    "window_start_utc": "2026-04-29T22:34:39.668947Z",
+    "window_end_utc": "2026-04-29T23:34:39.668947Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -154,15 +154,15 @@
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 615,
-    "guard_fail": 5,
-    "guard_fail_rate_pct": 0.8,
+    "translated": 555,
+    "guard_fail": 3,
+    "guard_fail_rate_pct": 0.5,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 615.0,
+    "throughput_keys_per_h": 555.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
-    "suspicious_total": 807,
+    "suspicious_total": 794,
     "deferred_total": 37,
     "top_deferred_reasons": [
       {
@@ -206,12 +206,6 @@
         "target": "de/npc.json",
         "translated": 289,
         "guard_fail": 3,
-        "guard_command": 0
-      },
-      {
-        "target": "ru/items.json",
-        "translated": 60,
-        "guard_fail": 2,
         "guard_command": 0
       },
       {
@@ -532,7 +526,7 @@
     "npc_total": 1028,
     "npc_migrated": 700,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-04-29T23:34:03.671732Z",
+    "statusd_live_snapshot_at_utc": "2026-04-29T23:35:40.754490Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -1210,15 +1204,15 @@
     "status": "active",
     "severity": "ok",
     "reason": "ok",
-    "latest_timestamp": "2026-04-29T23:33:15.381460Z",
-    "latest_age_s": 48.218,
+    "latest_timestamp": "2026-04-29T23:35:19.299230Z",
+    "latest_age_s": 21.38,
     "stale_warn_seconds": 1800,
     "stale_critical_seconds": 7200,
     "tracked_keys": 9020,
     "retry_due_now": 5748,
     "manual_review_locked": 2941,
     "cooldown_locked": 2,
-    "manual_review_queue_size": 3627,
+    "manual_review_queue_size": 3629,
     "deferred_backlog_total": 1722,
     "deferred_backlog_total_all_time": 52227,
     "deferred_backlog_window_seconds": 86400,
@@ -1270,9 +1264,9 @@
     "stats": {
       "enqueued": 32,
       "suppressed_cooldown": 2,
-      "suppressed_manual_review": 17,
+      "suppressed_manual_review": 117,
       "deduped_ttl": 2,
-      "manual_review_escalations": 0
+      "manual_review_escalations": 2
     },
     "alerts": []
   },

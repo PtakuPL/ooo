@@ -1,56 +1,128 @@
 {
-  "timestamp": "2026-04-29T23:28:01.679749Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 8,
+  "timestamp": "2026-04-29T23:36:55.745276Z",
+  "language": "ru",
+  "json_file": "items.json",
+  "translated": 112,
   "entries": [
     {
-      "key": "npc.captain_pelagia.greet_msg_1",
-      "en": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?",
-      "translated": "Bienvenido a bordo, |PLAYERNAME|. ¿Dónde puedo {sail} hoy?",
-      "source": "tm"
+      "key": "item.15434.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "npc.captain_pelagia.stdmod_4",
-      "en": "Do you seek a passage to Darashia for |TRAVELCOST|?",
-      "translated": "¿Busca un pasaje a Darashia para |TRAVELCOST|?",
-      "source": "tm"
+      "key": "item.15435.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "npc.captain_harava.stdmod_10",
-      "en": "I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",
-      "translated": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
-      "source": "google_translate"
+      "key": "item.15436.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "npc.captain_harava.stdmod_5",
-      "en": "I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",
-      "translated": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
-      "source": "google_translate"
+      "key": "item.15437.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "npc.captain_harava.stdmod_6",
-      "en": "I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",
-      "translated": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
-      "source": "google_translate"
+      "key": "item.15438.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "npc.captain_harava.stdmod_7",
-      "en": "I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",
-      "translated": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
-      "source": "google_translate"
+      "key": "item.15439.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "npc.captain_harava.stdmod_8",
-      "en": "I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",
-      "translated": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
-      "source": "google_translate"
+      "key": "item.15440.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "npc.captain_harava.stdmod_9",
-      "en": "I'm ready to bring you to {Oramond}, {Krailos}, {Venore} or {Darashia}.",
-      "translated": "Estoy listo para llevarte a {Oramond}, {Krailos}, {Venore} o {Darashia}.",
-      "source": "google_translate"
+      "key": "item.15441.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15442.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15443.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15444.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15445.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15446.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15447.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15448.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15449.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15450.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15451.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15452.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15453.name",
+      "en": "basalt crystal wall",
+      "translated": "кристальная стена из базальта",
+      "source": "openai:openai/gpt-4o-mini"
     }
   ],
   "filtered_untranslated_marker": 0

@@ -1,97 +1,105 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:22:23.884060Z",
-  "lang": "tr",
+  "generated_at_utc": "2026-04-29T23:36:59.052938Z",
+  "lang": "ru",
   "json_file": "items.json",
   "name_total": 33425,
-  "name_pending": 26124,
-  "name_suspicious": 13,
-  "name_coverage_pct": 21.84,
+  "name_pending": 21188,
+  "name_suspicious": 3524,
+  "name_coverage_pct": 36.61,
   "pending_examples": [
-    "item.17372.name",
-    "item.17669.name",
-    "item.21841.name",
-    "item.24806.name",
-    "item.24807.name",
-    "item.24808.name",
-    "item.24809.name",
-    "item.2481.name",
-    "item.24810.name",
-    "item.24811.name",
-    "item.24812.name",
-    "item.24813.name"
+    "item.11541.name",
+    "item.14670.name",
+    "item.15611.name",
+    "item.1566.name",
+    "item.16245.name",
+    "item.16247.name",
+    "item.16248.name",
+    "item.16249.name",
+    "item.16250.name",
+    "item.16251.name",
+    "item.16252.name",
+    "item.16253.name"
   ],
   "suspicious_examples": [
     {
-      "key": "item.21091.name",
+      "key": "item.237.name",
       "issues": [
-        "mixed_language"
+        "game_term_missing"
       ]
     },
     {
-      "key": "item.21092.name",
+      "key": "item.238.name",
       "issues": [
-        "mixed_language"
+        "game_term_missing"
       ]
     },
     {
-      "key": "item.21093.name",
+      "key": "item.25908.name",
       "issues": [
-        "mixed_language"
+        "game_term_missing"
       ]
     },
     {
-      "key": "item.21094.name",
+      "key": "item.268.name",
       "issues": [
-        "mixed_language"
+        "game_term_missing"
       ]
     },
     {
-      "key": "item.1261.name",
+      "key": "item.30183.name",
       "issues": [
-        "mixed_language"
+        "mixed_scripts",
+        "cyrillic_latin_mix"
       ]
     },
     {
-      "key": "item.1262.name",
+      "key": "item.30184.name",
       "issues": [
-        "mixed_language"
+        "mixed_scripts",
+        "cyrillic_latin_mix"
       ]
     },
     {
-      "key": "item.1263.name",
+      "key": "item.30188.name",
       "issues": [
-        "mixed_language"
+        "mixed_scripts",
+        "cyrillic_latin_mix"
       ]
     },
     {
-      "key": "item.1264.name",
+      "key": "item.30189.name",
       "issues": [
-        "mixed_language"
+        "mixed_scripts",
+        "cyrillic_latin_mix"
       ]
     },
     {
-      "key": "item.1265.name",
+      "key": "item.3019.name",
       "issues": [
-        "mixed_language"
+        "mixed_scripts",
+        "cyrillic_latin_mix"
       ]
     },
     {
-      "key": "item.1266.name",
+      "key": "item.30190.name",
       "issues": [
-        "mixed_language"
+        "mixed_scripts",
+        "cyrillic_latin_mix"
       ]
     },
     {
-      "key": "item.1267.name",
+      "key": "item.30191.name",
       "issues": [
-        "mixed_language"
+        "mixed_scripts",
+        "cyrillic_latin_mix"
       ]
     },
     {
-      "key": "item.1268.name",
+      "key": "item.30192.name",
       "issues": [
-        "mixed_language"
+        "mixed_scripts",
+        "cyrillic_latin_mix"
       ]
     }
   ]

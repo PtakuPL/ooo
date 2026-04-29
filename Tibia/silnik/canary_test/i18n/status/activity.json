@@ -1,17 +1,47 @@
 {
-  "category": "es",
-  "cycle": 22,
+  "category": "it",
+  "cycle": 23,
   "eta_seconds": 0,
-  "file": "npc.json",
-  "generated_at_utc": "2026-04-29T22:57:09Z",
+  "file": "items.json",
+  "generated_at_utc": "2026-04-29T23:00:00Z",
   "message": "auto translate in progress",
   "phase": "AUTO_TRANSLATE",
   "progress": {
     "done": 0,
-    "total": 2,
+    "total": 30,
     "unit": "keys"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 23,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T23:00:00Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 23,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-04-29T23:00:00Z"
+    },
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 22,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T22:59:15Z"
+    },
     {
       "action": "update",
       "category": "es",
@@ -81,36 +111,6 @@
       "result": "ok",
       "stage": "heartbeat_tick",
       "t": "2026-04-29T22:47:37Z"
-    },
-    {
-      "action": "update",
-      "category": "ro",
-      "cycle": 22,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-04-29T22:47:22Z"
-    },
-    {
-      "action": "update",
-      "category": "ro",
-      "cycle": 22,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T22:46:08Z"
-    },
-    {
-      "action": "update",
-      "category": "ro",
-      "cycle": 22,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T22:43:37Z"
     }
   ],
   "stage": "heartbeat_tick",

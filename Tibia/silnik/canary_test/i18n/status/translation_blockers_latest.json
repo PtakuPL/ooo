@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T22:41:18.292027Z",
+  "timestamp": "2026-04-29T22:59:59.573861Z",
   "mode": "translations_only_strict",
   "state": "active",
   "reason": "",
@@ -9,7 +9,7 @@
   "marker_debt": {
     "priority_enabled": true,
     "priority_min_keys": 25,
-    "total_marker_todo": 152301,
+    "total_marker_todo": 152294,
     "top_candidates": [
       {
         "lang": "tr",
@@ -26,8 +26,8 @@
       {
         "lang": "cs",
         "json_file": "items.json",
-        "marker_todo": 17919,
-        "pending_total": 17919
+        "marker_todo": 17913,
+        "pending_total": 17913
       },
       {
         "lang": "fr",
@@ -38,8 +38,8 @@
       {
         "lang": "ro",
         "json_file": "items.json",
-        "marker_todo": 14569,
-        "pending_total": 14569
+        "marker_todo": 14568,
+        "pending_total": 14568
       },
       {
         "lang": "it",
@@ -99,9 +99,9 @@
     "tr"
   ],
   "json_files": 39,
-  "cache_hit": true,
+  "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 22,
+  "cache_cycle": 23,
   "candidates_count": 96,
   "global_quality_mode": false,
   "priority_gate": {
@@ -203,11 +203,11 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 14533,
+        "name_pending_total": 14532,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 14533,
+            "name_pending": 14532,
             "name_coverage_pct": 56.52
           },
           "monsters.json": {
@@ -275,12 +275,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 15933,
+        "name_pending_total": 15927,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 15933,
-            "name_coverage_pct": 52.33
+            "name_pending": 15927,
+            "name_coverage_pct": 52.35
           },
           "monsters.json": {
             "name_total": 1637,

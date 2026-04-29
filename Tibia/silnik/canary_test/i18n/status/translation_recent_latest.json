@@ -1,128 +1,20 @@
 {
-  "timestamp": "2026-04-29T22:47:14.820798Z",
-  "language": "ro",
-  "json_file": "items.json",
-  "translated": 60,
+  "timestamp": "2026-04-29T22:59:31.594451Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 2,
   "entries": [
     {
-      "key": "item.11669.name",
-      "en": "dead draken abomination",
-      "translated": "draken abominație moartă",
-      "source": "openai:openai/gpt-4o-mini"
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "tm"
     },
     {
-      "key": "item.11670.name",
-      "en": "dead draken abomination",
-      "translated": "draken abominație moartă",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.1177.name",
-      "en": "wooden roof",
-      "translated": "acoperiș de lemn",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.1178.name",
-      "en": "wooden roof",
-      "translated": "acoperiș de lemn",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.1179.name",
-      "en": "wooden roof",
-      "translated": "acoperiș de lemn",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11809.name",
-      "en": "wooden trunk",
-      "translated": "trunchi de lemn",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11810.name",
-      "en": "wooden trunk",
-      "translated": "trunchi de lemn",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11815.name",
-      "en": "tattered curtain",
-      "translated": "perdea zdrențuită",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11816.name",
-      "en": "tattered curtain",
-      "translated": "perdea zdrențuită",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11817.name",
-      "en": "tattered curtain",
-      "translated": "perdea zdrențuită",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11818.name",
-      "en": "tattered curtain",
-      "translated": "perdea zdrențuită",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11823.name",
-      "en": "wolf hide",
-      "translated": "ascunzătoare de lup",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11824.name",
-      "en": "wolf hide",
-      "translated": "ascunzătoare de lup",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11835.name",
-      "en": "hanging fur",
-      "translated": "blană atârnată",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11836.name",
-      "en": "hanging fur",
-      "translated": "blană atârnată",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.13656.desc",
-      "en": "This lamp is glowing very dimly.",
-      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
-      "source": "term_consistency_autofix"
-    },
-    {
-      "key": "item.13658.desc",
-      "en": "This lamp is glowing very dimly.",
-      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
-      "source": "term_consistency_autofix"
-    },
-    {
-      "key": "item.14760.desc",
-      "en": "This is an emblem of wisdom. It was awarded by TibiaStat.com",
-      "translated": "Aceasta este o emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă a înțelepciunii. A fost acordat de TibiaStat.com",
-      "source": "term_consistency_autofix"
-    },
-    {
-      "key": "item.10507.name",
-      "en": "lamp",
-      "translated": "lampă",
-      "source": "canonical_name_semantic_autofix"
-    },
-    {
-      "key": "item.11365.name",
-      "en": "ramp",
-      "translated": "rampă",
-      "source": "canonical_name_semantic_autofix"
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "tm"
     }
   ],
   "filtered_untranslated_marker": 0

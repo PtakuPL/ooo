@@ -1,5 +1,8 @@
 {
-  "last_cycle": 20,
-  "last_ts": 1777502163,
-  "reason": "forced"
+  "last_cycle": 22,
+  "last_ts": 1777503576,
+  "every_cycles": 5,
+  "min_interval_sec": 300,
+  "cycle_delta": 2,
+  "time_delta": 1413
 }

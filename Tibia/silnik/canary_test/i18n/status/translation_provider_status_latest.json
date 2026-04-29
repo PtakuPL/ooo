@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:48:34.349784Z",
+  "generated_at_utc": "2026-04-29T21:51:10.560069Z",
   "active_provider": "TM/simple",
   "active_provider_code": "tm_simple",
   "active_provider_source": "tm",
@@ -242,10 +242,10 @@
         "warn_used_pct": 80.0,
         "critical_used_pct": 100.0
       },
-      "used_pct": 84.8,
+      "used_pct": 86.8,
       "monthly_cap": 250.0,
-      "spent": 212.0,
-      "latest_age_s": 877.740451,
+      "spent": 217.0,
+      "latest_age_s": 126.142705,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

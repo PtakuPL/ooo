@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-29T19:09:29.678487Z",
+  "timestamp": "2026-04-29T19:11:53.917130Z",
   "state": "blocked",
   "source": "service",
-  "pid": 55906,
+  "pid": 57353,
   "reason": "active_daemon_lock",
   "owner_pid": 42461,
   "owner_source": "service",
-  "lock_age_sec": 41
+  "lock_age_sec": 21
 }

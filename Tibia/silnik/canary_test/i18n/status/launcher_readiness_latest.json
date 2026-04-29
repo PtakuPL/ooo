@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:09:13.013665Z",
+  "generated_at_utc": "2026-04-29T19:11:45.748013Z",
   "summary": {
     "state": "in_progress",
     "state_label": "🟡 IN_PROGRESS",
@@ -58,8 +58,8 @@
       "required_waves": 3,
       "waves_observed": 0,
       "waves_considered": [],
-      "wave_history_rows_total": 1661,
-      "wave_history_rows_window": 1074,
+      "wave_history_rows_total": 1662,
+      "wave_history_rows_window": 1073,
       "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
       "stale_alerts_monitored": [
         "DLQ_GROWTH",
@@ -79,15 +79,15 @@
       "pass": true,
       "detail": "window=24.01h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
       "window_hours": 24,
-      "window_start_utc": "2026-04-28T19:08:28.288514Z",
-      "window_end_utc": "2026-04-29T19:09:13.013665Z",
+      "window_start_utc": "2026-04-28T19:11:19.378437Z",
+      "window_end_utc": "2026-04-29T19:11:45.748013Z",
       "window_span_hours": 24.01,
       "has_min_24h_window": true,
       "files": {
         "client.json": {
-          "samples": 1076,
-          "oldest_timestamp": "2026-04-28T19:08:28.288514Z",
-          "latest_timestamp": "2026-04-29T19:09:13.013665Z",
+          "samples": 1075,
+          "oldest_timestamp": "2026-04-28T19:11:19.378437Z",
+          "latest_timestamp": "2026-04-29T19:11:45.748013Z",
           "oldest_identical_to_en_pct": 31.4,
           "latest_identical_to_en_pct": 31.4,
           "delta_identical_to_en_pct": 0.0,
@@ -97,9 +97,9 @@
           "trend_pass": true
         },
         "otclient_modules.json": {
-          "samples": 1076,
-          "oldest_timestamp": "2026-04-28T19:08:28.288514Z",
-          "latest_timestamp": "2026-04-29T19:09:13.013665Z",
+          "samples": 1075,
+          "oldest_timestamp": "2026-04-28T19:11:19.378437Z",
+          "latest_timestamp": "2026-04-29T19:11:45.748013Z",
           "oldest_identical_to_en_pct": 29.79,
           "latest_identical_to_en_pct": 29.79,
           "delta_identical_to_en_pct": 0.0,

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:09:15.172921Z",
+  "generated_at_utc": "2026-04-29T19:11:47.835624Z",
   "overall": "warning",
   "thresholds": {
     "heartbeat_stale_s": 300,
@@ -24,7 +24,7 @@
       "name": "NO_WRITE",
       "status": "ok",
       "severity": "ok",
-      "value": 221,
+      "value": 155,
       "threshold": 900,
       "detail": "Recent writes wyglądają zdrowo.",
       "source": "translation_recent_report.jsonl"
@@ -44,7 +44,7 @@
       "severity": "warning",
       "value": {
         "pending": 399,
-        "oldest_s": 20923
+        "oldest_s": 21076
       },
       "threshold": {
         "pending_min": 200,

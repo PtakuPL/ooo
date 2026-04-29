@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:06:01.000602Z",
-  "lang": "tr",
-  "json_file": "items.json",
-  "surface": "items",
+  "generated_at_utc": "2026-04-29T19:09:42.020225Z",
+  "lang": "es",
+  "json_file": "npc.json",
+  "surface": "npc",
   "target_chain": [
     "tm_simple",
     "free_google_translate",
@@ -12,16 +12,17 @@
   ],
   "effective_chain": [
     "tm_simple",
-    "free_google_translate"
+    "free_google_translate",
+    "openai_model_pool"
   ],
   "target_chain_label": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
-  "effective_chain_label": "TM/simple -> Free Google Translate",
+  "effective_chain_label": "TM/simple -> Free Google Translate -> OpenAI model pool",
   "first_batch_provider": "free_google_translate",
   "first_batch_provider_label": "Free Google Translate",
   "allow_batch_provider": true,
   "allow_google_cloud": false,
   "allow_free_google_translate": true,
-  "allow_openai_model_pool": false,
+  "allow_openai_model_pool": true,
   "preferred_batch_provider": "free_google_translate",
   "style_authority": "free_google_translate",
   "free_gt_cooldown_active": false,
@@ -40,7 +41,5 @@
     "rate_limit",
     "model_unavailable"
   ],
-  "notes": [
-    "openai_not_eligible_for_lang_surface"
-  ]
+  "notes": []
 }

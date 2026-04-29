@@ -404,10 +404,10 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-04-29T22:26:20Z",
+  "generated_at_utc": "2026-04-29T22:28:47Z",
   "global": {
     "en_keys_total": 74536,
-    "errors_total": 11361,
+    "errors_total": 11362,
     "files_processed_total": 6443,
     "languages_total": 56
   },
@@ -415,15 +415,136 @@
     "i18n_global_stats": {
       "auto_translate": {
         "guard_fail": 0,
-        "json_file": "npc.json",
-        "keys_to_translate": 12743,
-        "language": "de",
-        "recent_examples": [],
-        "recent_translated": 0,
+        "json_file": "items.json",
+        "keys_to_translate": 28631,
+        "language": "tr",
+        "recent_examples": [
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14428.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14429.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "lava wall",
+            "key": "item.1443.name",
+            "source": "simple",
+            "translated": "lav duvar"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14430.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14431.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14432.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14433.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14434.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14435.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14436.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14437.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14438.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14439.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "lava wall",
+            "key": "item.1444.name",
+            "source": "simple",
+            "translated": "lav duvar"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14440.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14441.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14442.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14443.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14444.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          },
+          {
+            "en": "RESERVED SPRITE",
+            "key": "item.14445.name",
+            "source": "simple",
+            "translated": "AYRILMIŞ SPRİTE"
+          }
+        ],
+        "recent_translated": 30,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
-      "category": "de",
+      "category": "tr",
       "documentation": {
         "cursor": 18,
         "documented": 18,
@@ -466,7 +587,7 @@
         "new_files_detected": 0,
         "quality_issues": 6017
       },
-      "last_update": "2026-04-30T00:24:19.269927",
+      "last_update": "2026-04-30T00:26:35.489882",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -690,7 +811,7 @@
         "files_with_hits": 5423,
         "hits": 112434
       },
-      "total_cycles": 18,
+      "total_cycles": 19,
       "translation_sync": {
         "json_file": "arena.json",
         "keys_to_sync": 184,
@@ -708,7 +829,7 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "tr",
+      "category": "ru",
       "detail": "auto translate in progress",
       "eta_seconds": 0,
       "file": "items.json",
@@ -720,8 +841,8 @@
       },
       "stage": "heartbeat_tick"
     },
-    "cycle": 19,
-    "heartbeat_at_utc": "2026-04-29T22:25:32Z",
+    "cycle": 20,
+    "heartbeat_at_utc": "2026-04-29T22:27:50Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

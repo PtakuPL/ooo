@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at_utc": "2026-04-29T22:25:23.106378Z",
-  "cycle": 19,
+  "updated_at_utc": "2026-04-29T22:27:01.906067Z",
+  "cycle": 20,
   "doctor_available": true,
   "doctor_overall": "critical",
   "alarms": {
@@ -109,9 +109,9 @@
       "first_seen_utc": "2026-04-22T16:20:20.340230Z",
       "activations": 3,
       "status": "active",
-      "last_seen_utc": "2026-04-29T22:25:23.106378Z",
+      "last_seen_utc": "2026-04-29T22:27:01.906067Z",
       "last_severity": "warning",
-      "last_message": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=348 rate=10.626% window=6.0h top_lang=es:113 per_domain=[server.json:26(1300.0%/warning)]",
+      "last_message": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=322 rate=10.003% window=6.0h top_lang=cs:112 per_domain=[server.json:26(1300.0%/warning)]",
       "last_resolved_utc": "2026-04-23T18:51:32.536689Z",
       "resolutions": 2
     },
@@ -129,7 +129,7 @@
       "first_seen_utc": "2026-04-22T17:58:04.018028Z",
       "activations": 2,
       "status": "active",
-      "last_seen_utc": "2026-04-29T22:25:23.106378Z",
+      "last_seen_utc": "2026-04-29T22:27:01.906067Z",
       "last_severity": "warning",
       "last_message": "NATIVE_READINESS_BELOW_THRESHOLD: monitored=52/52 missing=[-] tier1=[-] tier2=[tr=35.83<50.0,sk=4.03<50.0,hu=4.14<50.0] tier3=[az=4.71<5.0,bg=4.7<5.0,bs=3.74<5.0,da=4.23<5.0,el=4.33<5.0,et=4.47<5.0,fi=4.19<5.0,hr=4.4<5.0,...] source=statusd_report.json",
       "last_resolved_utc": "2026-04-23T19:26:23.569214Z",
@@ -149,7 +149,7 @@
       "first_seen_utc": "2026-04-22T17:58:04.018028Z",
       "activations": 1,
       "status": "active",
-      "last_seen_utc": "2026-04-29T22:25:23.106378Z",
+      "last_seen_utc": "2026-04-29T22:27:01.906067Z",
       "last_severity": "warning",
       "last_message": "SURFACE_COVERAGE_IMBALANCE: max_spread=36.23pp top=[ru:36.23pp,sr:32.41pp,pt:29.74pp,nl:27.42pp,de:19.46pp] source=statusd_report.json"
     },
@@ -167,7 +167,7 @@
       "first_seen_utc": "2026-04-22T18:42:28.846541Z",
       "activations": 6,
       "status": "active",
-      "last_seen_utc": "2026-04-29T22:25:23.106378Z",
+      "last_seen_utc": "2026-04-29T22:27:01.906067Z",
       "last_severity": "warning",
       "last_message": "QUEUE_STARVATION_DETECTED: source=deferred_translation_queue.jsonl detail=Duży pending i stara kolejka sugerują głodzenie queue.",
       "last_resolved_utc": "2026-04-23T17:11:02.275660Z",
@@ -186,12 +186,12 @@
     "DISPATCH_STALE": {
       "first_seen_utc": "2026-04-23T16:44:42.830162Z",
       "activations": 10,
-      "status": "active",
-      "last_seen_utc": "2026-04-29T22:25:23.106378Z",
+      "status": "resolved",
+      "last_seen_utc": "2026-04-29T22:27:01.906067Z",
       "last_severity": "warning",
       "last_message": "DISPATCH_STALE: dispatch state sprzed 1019s",
-      "last_resolved_utc": "2026-04-29T21:54:05.203531Z",
-      "resolutions": 9
+      "last_resolved_utc": "2026-04-29T22:27:01.906067Z",
+      "resolutions": 10
     },
     "GUARDIAN_STUCK": {
       "first_seen_utc": "2026-04-23T16:44:42.830162Z",
@@ -207,7 +207,7 @@
       "first_seen_utc": "2026-04-23T19:11:41.812430Z",
       "activations": 4,
       "status": "active",
-      "last_seen_utc": "2026-04-29T22:25:23.106378Z",
+      "last_seen_utc": "2026-04-29T22:27:01.906067Z",
       "last_severity": "warning",
       "last_message": "PROVIDER_BUDGET_80PCT: used=90.0% cap=250.0 spent=225.0 source=provider_budget_latest.json",
       "last_resolved_utc": "2026-04-29T00:04:55.674626Z",
@@ -387,7 +387,7 @@
       "first_seen_utc": "2026-04-27T15:23:48.252528Z",
       "activations": 117,
       "status": "active",
-      "last_seen_utc": "2026-04-29T22:25:23.106378Z",
+      "last_seen_utc": "2026-04-29T22:27:01.906067Z",
       "last_severity": "critical",
       "last_message": "TERM_CONSISTENCY_REGRESSION: rate=28.235% delta=28.235% total=200 source=term_conflicts_latest.json",
       "last_resolved_utc": "2026-04-29T22:01:16.401306Z",
@@ -395,7 +395,6 @@
     }
   },
   "active_alarm_tokens": [
-    "DISPATCH_STALE",
     "NATIVE_READINESS_BELOW_THRESHOLD",
     "PROVIDER_BUDGET_80PCT",
     "QUEUE_STARVATION_DETECTED",
@@ -403,8 +402,8 @@
     "SUSPICIOUS_HIGH_ELEVATED",
     "TERM_CONSISTENCY_REGRESSION"
   ],
-  "last_opened_tokens": [
+  "last_opened_tokens": [],
+  "last_resolved_tokens": [
     "DISPATCH_STALE"
-  ],
-  "last_resolved_tokens": []
+  ]
 }

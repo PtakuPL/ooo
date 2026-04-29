@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:25:23.337732Z",
-  "cycle": 19,
+  "generated_at_utc": "2026-04-29T22:27:02.221394Z",
+  "cycle": 20,
   "open_alarms": [
     {
       "code": "DISPATCH_STALE",
@@ -37,7 +37,7 @@
       "code": "SUSPICIOUS_HIGH_ELEVATED",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=348 rate=10.626% window=6.0h top_lang=es:113 per_domain=[server.json:26(1300.0%/warning)]"
+      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=322 rate=10.003% window=6.0h top_lang=cs:112 per_domain=[server.json:26(1300.0%/warning)]"
     },
     {
       "code": "TERM_CONSISTENCY_REGRESSION",
@@ -47,9 +47,7 @@
     }
   ],
   "resolved_this_cycle": [],
-  "newly_opened": [
-    "DISPATCH_STALE"
-  ],
+  "newly_opened": [],
   "summary": {
     "open_count": 7,
     "resolved_count": 0,

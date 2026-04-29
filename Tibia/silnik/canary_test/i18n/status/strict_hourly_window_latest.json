@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-04-29T21:26:24.301477Z",
-  "window_end_utc": "2026-04-29T22:26:24.301477Z",
+  "window_start_utc": "2026-04-29T21:28:52.087201Z",
+  "window_end_utc": "2026-04-29T22:28:52.087201Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,30 +8,44 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/deferred_translation_queue.jsonl"
   ],
-  "total_cycles": 24,
+  "total_cycles": 28,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 24
+    "AUTO_TRANSLATE": 28
   },
-  "auto_translate_cycles": 24,
+  "auto_translate_cycles": 28,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 571,
+  "translated": 601,
   "guard_fail": 2,
   "guard_fail_rate_pct": 0.3,
   "no_progress_entries": 0,
   "no_progress_rate_pct": 0.0,
-  "throughput_keys_per_h": 571.0,
+  "throughput_keys_per_h": 601.0,
   "throughput_runtime_hours": 1.0,
   "throughput_runtime_source": "window_hours_long_runtime_fallback",
-  "suspicious_total": 582,
-  "deferred_total": 1,
+  "suspicious_total": 648,
+  "deferred_total": 33,
   "top_deferred_reasons": [
+    {
+      "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+      "count": 29,
+      "share_pct": 87.9,
+      "top_target": "ru/items.json",
+      "top_target_count": 29
+    },
+    {
+      "reason": "existing_canonical_name_quality_mixed_scripts",
+      "count": 3,
+      "share_pct": 9.1,
+      "top_target": "ru/items.json",
+      "top_target_count": 3
+    },
     {
       "reason": "gt_identity_retry_identical_to_en",
       "count": 1,
-      "share_pct": 100.0,
+      "share_pct": 3.0,
       "top_target": "de/npc.json",
       "top_target_count": 1
     }
@@ -70,6 +84,12 @@
     {
       "target": "de/npc.json",
       "translated": 249,
+      "guard_fail": 0,
+      "guard_command": 0
+    },
+    {
+      "target": "tr/items.json",
+      "translated": 30,
       "guard_fail": 0,
       "guard_command": 0
     }

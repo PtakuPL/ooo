@@ -67754,11 +67754,137 @@
       ],
       "previous_state_source": "tm",
       "previous_state_updated_at": "2026-04-29T19:03:40.704799Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:18:34.716967Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_majestic_warwolf.say_male",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "From now on, you shall be known as |PLAYERNAME|, the bear warrior. You shall be strong and proud as Angros, the great dark bear. He shall guide your path.",
+      "attempted_translation": "Von nun werden Sie als |PLAYERNAME|, der Bärenkrieger, bekannt sein. Du sollst stark und stolz sein wie Angros, der große dunkle Bär. Er wird deinen Weg leiten.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Tragen' for EN 'bear' from items.json:item.7174.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T21:18:39.922528Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_30",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "A majestic dragon in his sleep is surrounded by what seems the warmth and energy of a thousand suns. The tranquillity of its sight makes you smile gently. ...",
+      "attempted_translation": "Ein majestätischer Drache ist im Schlaf von der Wärme und Energie von tausend Sonnen umgeben. Die Ruhe seines Anblicks lässt Sie sanft lächeln. ...",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Drachen' for EN 'Dragon' from monsters.json:monster.dragon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T21:18:40.006477Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.al_dee.stdmod_37",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "I sell fishing rods and worms if you want to fish. Simply ask me for a {trade}.",
+      "attempted_translation": "Ich verkaufe Angelruten und Würmer, wenn Sie angeln möchten. Fragen Sie mich einfach nach einem {trade}.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Stangen' for EN 'rods' from items.json:item.11825.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T21:18:41.119135Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.angus.say_60",
+      "reason": "term_consistency_english_name_leak",
+      "en_text": "In the ruins of north-western Edron you should be able to find a memory stone. Good luck.",
+      "attempted_translation": "In the ruins of north-western Edron you should be able to find a memory stone. Good luck.",
+      "issues": [
+        {
+          "type": "english_name_leak",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'stein' for EN 'stone' from items.json:item.12007.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T21:18:41.201477Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.broken_servant_sentry.say_1",
+      "reason": "term_consistency_english_name_leak",
+      "en_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+      "attempted_translation": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+      "issues": [
+        {
+          "type": "english_name_leak",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Schleim' for EN 'slime' from items.json:item.6.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T21:18:41.369379Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.broken_servant_sentry.say_2",
+      "reason": "term_consistency_english_name_leak",
+      "en_text": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+      "attempted_translation": "If. You. Bring. Slime. Fungus. Samples. Fro-Fro-Fro-Frrrr*chhhhchrk*From. Other. Tower. You. Must. Be. The. Master. Are. You. There. Master?",
+      "issues": [
+        {
+          "type": "english_name_leak",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Schleim' for EN 'slime' from items.json:item.6.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T21:18:42.497418Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.cael.multi_4",
+      "reason": "term_consistency_english_name_leak",
+      "en_text": "On an interesting side note - there were some hints in the tome that the dragon kings themselves are somehow bound to the dragon emperor through the same kind of magic. ...",
+      "attempted_translation": "On an interesting side note - there were some hints in the tome that the dragon kings themselves are somehow bound to the dragon emperor through the same kind of magic. ...",
+      "issues": [
+        {
+          "type": "english_name_leak",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Drachen' for EN 'Dragon' from monsters.json:monster.dragon.name"
+        }
+      ],
+      "source": "term_consistency_scan"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3440
+    "total": 3447
   },
-  "updated_at": "2026-04-29T21:12:53.688634Z"
+  "updated_at": "2026-04-29T21:19:29.006438Z"
 }

@@ -404,10 +404,10 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-04-29T21:16:57Z",
+  "generated_at_utc": "2026-04-29T21:19:15Z",
   "global": {
     "en_keys_total": 74536,
-    "errors_total": 11352,
+    "errors_total": 11353,
     "files_processed_total": 6443,
     "languages_total": 56
   },
@@ -415,15 +415,136 @@
     "i18n_global_stats": {
       "auto_translate": {
         "guard_fail": 0,
-        "json_file": "items.json",
-        "keys_to_translate": 12933,
-        "language": "es",
-        "recent_examples": [],
-        "recent_translated": 0,
+        "json_file": "npc.json",
+        "keys_to_translate": 13022,
+        "language": "de",
+        "recent_examples": [
+          {
+            "en": "I think he is getting old, entrusting human scum such as you are with an important mission like that. ...",
+            "key": "npc.alesar_functions.multi_15",
+            "source": "google_translate",
+            "translated": "Ich glaube, er wird alt, wenn er einem menschlichen Abschaum wie Ihnen eine so wichtige Mission anvertraut. ..."
+          },
+          {
+            "en": "Personally, I don't understand why you haven't been slaughtered right at the gates. ...",
+            "key": "npc.alesar_functions.multi_16",
+            "source": "google_translate",
+            "translated": "Ich persönlich verstehe nicht, warum Sie nicht direkt vor den Toren abgeschlachtet wurden. ..."
+          },
+          {
+            "en": "Anyway. Are you prepared to embark on a dangerous mission for us?",
+            "key": "npc.alesar_functions.multi_17",
+            "source": "google_translate",
+            "translated": "Ohnehin. Sind Sie bereit, sich für uns auf eine gefährliche Mission einzulassen?"
+          },
+          {
+            "en": "Amazing how you humans are just impossible to get rid of. Incidentally, you have this character trait in common with many insects and with other vermin. ...",
+            "key": "npc.alesar_functions.multi_2",
+            "source": "google_translate",
+            "translated": "Erstaunlich, wie unmöglich es ist, euch Menschen loszuwerden. Diese Charaktereigenschaft haben Sie übrigens mit vielen Insekten und anderem Ungeziefer gemeinsam. ..."
+          },
+          {
+            "en": "Nevermind. I hate to say it, but it you have done us a favour, human. That gemstone will serve us well. ...",
+            "key": "npc.alesar_functions.multi_3",
+            "source": "google_translate",
+            "translated": "Egal. Ich hasse es, es zu sagen, aber du hast uns einen Gefallen getan, Mensch. Dieser Edelstein wird uns gute Dienste leisten. ..."
+          },
+          {
+            "en": "Baa'leal, wants you to talk to Malor concerning some new mission. ...",
+            "key": "npc.alesar_functions.multi_4",
+            "source": "google_translate",
+            "translated": "Baa'leal möchte, dass du mit Malor über eine neue Mission sprichst. ..."
+          },
+          {
+            "en": "Looks like you have managed to extended your life expectancy - for just a bit longer.",
+            "key": "npc.alesar_functions.multi_5",
+            "source": "google_translate",
+            "translated": "Sieht so aus, als hätten Sie es geschafft, Ihre Lebenserwartung zu verlängern – und zwar um ein kleines bisschen länger."
+          },
+          {
+            "en": "All right then, human. Have you ever heard of the {'Tears of Daraman'}? ...",
+            "key": "npc.alesar_functions.multi_6",
+            "source": "google_translate",
+            "translated": "Also gut, Mensch. Haben Sie schon einmal vom {'Tears of Daraman'} gehört? ..."
+          },
+          {
+            "en": "They are precious gemstones made of some unknown blue mineral and possess enormous magical power. ...",
+            "key": "npc.alesar_functions.multi_7",
+            "source": "google_translate",
+            "translated": "Es handelt sich um kostbare Edelsteine, die aus einem unbekannten blauen Mineral bestehen und eine enorme magische Kraft besitzen. ..."
+          },
+          {
+            "en": "If you want to learn more about these gemstones don't forget to visit our library. ...",
+            "key": "npc.alesar_functions.multi_8",
+            "source": "google_translate",
+            "translated": "Wenn Sie mehr über diese Edelsteine ​​erfahren möchten, vergessen Sie nicht, unsere Bibliothek zu besuchen. ..."
+          },
+          {
+            "en": "Anyway, one of them is enough to create thousands of our mighty djinn blades. ...",
+            "key": "npc.alesar_functions.multi_9",
+            "source": "google_translate",
+            "translated": "Wie auch immer, eine davon reicht aus, um Tausende unserer mächtigen Dschinn-Klingen herzustellen. ..."
+          },
+          {
+            "en": "Did you find the tear of Daraman?",
+            "key": "npc.alesar_functions.say_1",
+            "source": "google_translate",
+            "translated": "Hast du die Träne von Daraman gefunden?"
+          },
+          {
+            "en": "Don't forget to talk to Malor concerning your next mission.",
+            "key": "npc.alesar_functions.say_2",
+            "source": "google_translate",
+            "translated": "Vergessen Sie nicht, mit Malor über Ihre nächste Mission zu sprechen."
+          },
+          {
+            "en": "Then not.",
+            "key": "npc.alesar_functions.say_3",
+            "source": "google_translate",
+            "translated": "Dann nicht."
+          },
+          {
+            "en": "As I expected. You haven't got the stone. Shall I explain your mission again?",
+            "key": "npc.alesar_functions.say_4",
+            "source": "google_translate",
+            "translated": "Wie ich erwartet hatte. Du hast den Stein nicht. Soll ich deine Mission noch einmal erklären?"
+          },
+          {
+            "en": "As I expected. You haven't got the stone. Shall I explain your mission again?",
+            "key": "npc.alesar_functions.say_5",
+            "source": "google_translate",
+            "translated": "Wie ich erwartet hatte. Du hast den Stein nicht. Soll ich deine Mission noch einmal erklären?"
+          },
+          {
+            "en": "So you ask me for a {{}} to begin your adventure?",
+            "key": "npc.alexander.say_1",
+            "source": "google_translate",
+            "translated": "Du bittest mich also um ein {{}}, um dein Abenteuer zu beginnen?"
+          },
+          {
+            "en": "Ok then.",
+            "key": "npc.alexander.say_3",
+            "source": "google_translate",
+            "translated": "Ok, dann."
+          },
+          {
+            "en": "Selling all sorts of magic equipment. Come and have a look",
+            "key": "npc.alexander.stdmod_1",
+            "source": "google_translate",
+            "translated": "Verkaufe alle möglichen Zaubergeräte. Kommen Sie vorbei und schauen Sie sich das an"
+          },
+          {
+            "en": "Selling all sorts of magic equipment. Come and have a look",
+            "key": "npc.alexander.voice_1",
+            "source": "google_translate",
+            "translated": "Verkaufe alle möglichen Zaubergeräte. Kommen Sie vorbei und schauen Sie sich das an"
+          }
+        ],
+        "recent_translated": 299,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
-      "category": "es",
+      "category": "de",
       "documentation": {
         "cursor": 18,
         "documented": 18,
@@ -466,7 +587,7 @@
         "new_files_detected": 0,
         "quality_issues": 6017
       },
-      "last_update": "2026-04-29T23:10:30.114454",
+      "last_update": "2026-04-29T23:18:46.351267",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -690,7 +811,7 @@
         "files_with_hits": 5423,
         "hits": 112434
       },
-      "total_cycles": 10,
+      "total_cycles": 11,
       "translation_sync": {
         "json_file": "arena.json",
         "keys_to_sync": 184,
@@ -708,10 +829,10 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "de",
+      "category": "tr",
       "detail": "auto translate in progress",
       "eta_seconds": 0,
-      "file": "npc.json",
+      "file": "items.json",
       "phase": "AUTO_TRANSLATE",
       "progress": {
         "done": 0,
@@ -720,8 +841,8 @@
       },
       "stage": "heartbeat_tick"
     },
-    "cycle": 11,
-    "heartbeat_at_utc": "2026-04-29T21:15:26Z",
+    "cycle": 12,
+    "heartbeat_at_utc": "2026-04-29T21:19:01Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

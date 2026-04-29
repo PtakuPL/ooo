@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at_utc": "2026-04-29T21:10:51.101911Z",
-  "cycle": 11,
+  "updated_at_utc": "2026-04-29T21:18:59.788725Z",
+  "cycle": 12,
   "doctor_available": true,
   "doctor_overall": "critical",
   "alarms": {
@@ -87,11 +87,11 @@
     },
     "GUARD_REPORT_STALE": {
       "first_seen_utc": "2026-04-22T16:14:44.259527Z",
-      "activations": 8,
-      "status": "resolved",
-      "last_seen_utc": "2026-04-29T20:51:19.811966Z",
+      "activations": 9,
+      "status": "active",
+      "last_seen_utc": "2026-04-29T21:18:59.788725Z",
       "last_severity": "warning",
-      "last_message": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 820s",
+      "last_message": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 1035s",
       "last_resolved_utc": "2026-04-29T20:51:19.811966Z",
       "resolutions": 8
     },
@@ -109,9 +109,9 @@
       "first_seen_utc": "2026-04-22T16:20:20.340230Z",
       "activations": 3,
       "status": "active",
-      "last_seen_utc": "2026-04-29T21:10:51.101911Z",
+      "last_seen_utc": "2026-04-29T21:18:59.788725Z",
       "last_severity": "warning",
-      "last_message": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=686 rate=20.57% window=6.0h top_lang=es:243 per_lang=[es:243(44.022%/warning)] per_domain=[npc.json:163(53.618%/warning),server.json:78(1300.0%/warning)]",
+      "last_message": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=654 rate=20.198% window=6.0h top_lang=es:232 per_lang=[es:232(41.953%/warning)] per_domain=[npc.json:163(59.058%/warning),server.json:65(1300.0%/warning)]",
       "last_resolved_utc": "2026-04-23T18:51:32.536689Z",
       "resolutions": 2
     },
@@ -129,7 +129,7 @@
       "first_seen_utc": "2026-04-22T17:58:04.018028Z",
       "activations": 2,
       "status": "active",
-      "last_seen_utc": "2026-04-29T21:10:51.101911Z",
+      "last_seen_utc": "2026-04-29T21:18:59.788725Z",
       "last_severity": "warning",
       "last_message": "NATIVE_READINESS_BELOW_THRESHOLD: monitored=52/52 missing=[-] tier1=[-] tier2=[tr=35.79<50.0,sk=4.03<50.0,hu=4.14<50.0] tier3=[az=4.71<5.0,bg=4.7<5.0,bs=3.74<5.0,da=4.23<5.0,el=4.33<5.0,et=4.47<5.0,fi=4.19<5.0,hr=4.4<5.0,...] source=statusd_report.json",
       "last_resolved_utc": "2026-04-23T19:26:23.569214Z",
@@ -149,7 +149,7 @@
       "first_seen_utc": "2026-04-22T17:58:04.018028Z",
       "activations": 1,
       "status": "active",
-      "last_seen_utc": "2026-04-29T21:10:51.101911Z",
+      "last_seen_utc": "2026-04-29T21:18:59.788725Z",
       "last_severity": "warning",
       "last_message": "SURFACE_COVERAGE_IMBALANCE: max_spread=36.23pp top=[ru:36.23pp,sr:32.41pp,pt:29.74pp,nl:27.42pp,de:18.74pp] source=statusd_report.json"
     },
@@ -167,7 +167,7 @@
       "first_seen_utc": "2026-04-22T18:42:28.846541Z",
       "activations": 6,
       "status": "active",
-      "last_seen_utc": "2026-04-29T21:10:51.101911Z",
+      "last_seen_utc": "2026-04-29T21:18:59.788725Z",
       "last_severity": "warning",
       "last_message": "QUEUE_STARVATION_DETECTED: source=deferred_translation_queue.jsonl detail=Duży pending i stara kolejka sugerują głodzenie queue.",
       "last_resolved_utc": "2026-04-23T17:11:02.275660Z",
@@ -186,12 +186,12 @@
     "DISPATCH_STALE": {
       "first_seen_utc": "2026-04-23T16:44:42.830162Z",
       "activations": 8,
-      "status": "active",
-      "last_seen_utc": "2026-04-29T21:10:51.101911Z",
+      "status": "resolved",
+      "last_seen_utc": "2026-04-29T21:18:59.788725Z",
       "last_severity": "warning",
       "last_message": "DISPATCH_STALE: dispatch state sprzed 922s",
-      "last_resolved_utc": "2026-04-29T20:44:37.049916Z",
-      "resolutions": 7
+      "last_resolved_utc": "2026-04-29T21:18:59.788725Z",
+      "resolutions": 8
     },
     "GUARDIAN_STUCK": {
       "first_seen_utc": "2026-04-23T16:44:42.830162Z",
@@ -387,15 +387,15 @@
       "first_seen_utc": "2026-04-27T15:23:48.252528Z",
       "activations": 116,
       "status": "active",
-      "last_seen_utc": "2026-04-29T21:10:51.101911Z",
+      "last_seen_utc": "2026-04-29T21:18:59.788725Z",
       "last_severity": "critical",
-      "last_message": "TERM_CONSISTENCY_REGRESSION: rate=19.205% delta=19.205% total=86 source=term_conflicts_latest.json",
+      "last_message": "TERM_CONSISTENCY_REGRESSION: rate=28.235% delta=28.235% total=200 source=term_conflicts_latest.json",
       "last_resolved_utc": "2026-04-29T20:51:19.811966Z",
       "resolutions": 115
     }
   },
   "active_alarm_tokens": [
-    "DISPATCH_STALE",
+    "GUARD_REPORT_STALE",
     "NATIVE_READINESS_BELOW_THRESHOLD",
     "QUEUE_STARVATION_DETECTED",
     "SURFACE_COVERAGE_IMBALANCE",
@@ -403,8 +403,9 @@
     "TERM_CONSISTENCY_REGRESSION"
   ],
   "last_opened_tokens": [
-    "DISPATCH_STALE",
-    "TERM_CONSISTENCY_REGRESSION"
+    "GUARD_REPORT_STALE"
   ],
-  "last_resolved_tokens": []
+  "last_resolved_tokens": [
+    "DISPATCH_STALE"
+  ]
 }

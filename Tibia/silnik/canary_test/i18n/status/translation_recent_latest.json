@@ -1,14 +1,128 @@
 {
-  "timestamp": "2026-04-29T21:10:24.953168Z",
-  "language": "es",
+  "timestamp": "2026-04-29T21:18:43.229239Z",
+  "language": "de",
   "json_file": "npc.json",
-  "translated": 2,
+  "translated": 299,
   "entries": [
     {
-      "key": "npc.captain_gulliver.voice_1",
-      "en": "Passages to Thais and Krailos! Visit the strange lands!",
-      "translated": "Pasajes a Thais y Krailos! ¡Visita las tierras extrañas!",
-      "source": "tm"
+      "key": "npc.alesar_functions.multi_15",
+      "en": "I think he is getting old, entrusting human scum such as you are with an important mission like that. ...",
+      "translated": "Ich glaube, er wird alt, wenn er einem menschlichen Abschaum wie Ihnen eine so wichtige Mission anvertraut. ...",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.multi_16",
+      "en": "Personally, I don't understand why you haven't been slaughtered right at the gates. ...",
+      "translated": "Ich persönlich verstehe nicht, warum Sie nicht direkt vor den Toren abgeschlachtet wurden. ...",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.multi_17",
+      "en": "Anyway. Are you prepared to embark on a dangerous mission for us?",
+      "translated": "Ohnehin. Sind Sie bereit, sich für uns auf eine gefährliche Mission einzulassen?",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.multi_2",
+      "en": "Amazing how you humans are just impossible to get rid of. Incidentally, you have this character trait in common with many insects and with other vermin. ...",
+      "translated": "Erstaunlich, wie unmöglich es ist, euch Menschen loszuwerden. Diese Charaktereigenschaft haben Sie übrigens mit vielen Insekten und anderem Ungeziefer gemeinsam. ...",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.multi_3",
+      "en": "Nevermind. I hate to say it, but it you have done us a favour, human. That gemstone will serve us well. ...",
+      "translated": "Egal. Ich hasse es, es zu sagen, aber du hast uns einen Gefallen getan, Mensch. Dieser Edelstein wird uns gute Dienste leisten. ...",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.multi_4",
+      "en": "Baa'leal, wants you to talk to Malor concerning some new mission. ...",
+      "translated": "Baa'leal möchte, dass du mit Malor über eine neue Mission sprichst. ...",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.multi_5",
+      "en": "Looks like you have managed to extended your life expectancy - for just a bit longer.",
+      "translated": "Sieht so aus, als hätten Sie es geschafft, Ihre Lebenserwartung zu verlängern – und zwar um ein kleines bisschen länger.",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.multi_6",
+      "en": "All right then, human. Have you ever heard of the {'Tears of Daraman'}? ...",
+      "translated": "Also gut, Mensch. Haben Sie schon einmal vom {'Tears of Daraman'} gehört? ...",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.multi_7",
+      "en": "They are precious gemstones made of some unknown blue mineral and possess enormous magical power. ...",
+      "translated": "Es handelt sich um kostbare Edelsteine, die aus einem unbekannten blauen Mineral bestehen und eine enorme magische Kraft besitzen. ...",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.multi_8",
+      "en": "If you want to learn more about these gemstones don't forget to visit our library. ...",
+      "translated": "Wenn Sie mehr über diese Edelsteine ​​erfahren möchten, vergessen Sie nicht, unsere Bibliothek zu besuchen. ...",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.multi_9",
+      "en": "Anyway, one of them is enough to create thousands of our mighty djinn blades. ...",
+      "translated": "Wie auch immer, eine davon reicht aus, um Tausende unserer mächtigen Dschinn-Klingen herzustellen. ...",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.say_1",
+      "en": "Did you find the tear of Daraman?",
+      "translated": "Hast du die Träne von Daraman gefunden?",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.say_2",
+      "en": "Don't forget to talk to Malor concerning your next mission.",
+      "translated": "Vergessen Sie nicht, mit Malor über Ihre nächste Mission zu sprechen.",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.say_3",
+      "en": "Then not.",
+      "translated": "Dann nicht.",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.say_4",
+      "en": "As I expected. You haven't got the stone. Shall I explain your mission again?",
+      "translated": "Wie ich erwartet hatte. Du hast den Stein nicht. Soll ich deine Mission noch einmal erklären?",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alesar_functions.say_5",
+      "en": "As I expected. You haven't got the stone. Shall I explain your mission again?",
+      "translated": "Wie ich erwartet hatte. Du hast den Stein nicht. Soll ich deine Mission noch einmal erklären?",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alexander.say_1",
+      "en": "So you ask me for a {{}} to begin your adventure?",
+      "translated": "Du bittest mich also um ein {{}}, um dein Abenteuer zu beginnen?",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alexander.say_3",
+      "en": "Ok then.",
+      "translated": "Ok, dann.",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alexander.stdmod_1",
+      "en": "Selling all sorts of magic equipment. Come and have a look",
+      "translated": "Verkaufe alle möglichen Zaubergeräte. Kommen Sie vorbei und schauen Sie sich das an",
+      "source": "google_translate"
+    },
+    {
+      "key": "npc.alexander.voice_1",
+      "en": "Selling all sorts of magic equipment. Come and have a look",
+      "translated": "Verkaufe alle möglichen Zaubergeräte. Kommen Sie vorbei und schauen Sie sich das an",
+      "source": "google_translate"
     }
   ],
   "filtered_untranslated_marker": 0

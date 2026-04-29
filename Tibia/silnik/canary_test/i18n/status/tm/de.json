@@ -63734,5 +63734,2317 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-04-29T20:14:30.551601Z"
+  },
+  "npc.a_vulcongra.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.263539Z"
+  },
+  "npc.a_vulcongra.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.269149Z"
+  },
+  "npc.a_vulcongra.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.274626Z"
+  },
+  "npc.a_weakened_forest_fury.greet_msg_1": {
+    "src_hash": "72de401885f0bfc9802b1df2e36c8844",
+    "text": "Ich grüße dich, Mensch. Dies ist eine Zeit der Not, mehr denn je brauchen wir Wächter, die uns und unsere Welt schützen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.281614Z"
+  },
+  "npc.a_wrinkled_bonelord.farewell_msg_1": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Warte genau dort. Ich werde dich essen, nachdem ich aufgeschrieben habe, was ich herausgefunden habe.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.325577Z"
+  },
+  "npc.a_wrinkled_bonelord.greet_msg_1": {
+    "src_hash": "695b5e1e25e59b54c194959defc700d8",
+    "text": "Was ist das? Eine optisch behinderte Entität namens |PLAYERNAME|. Wie faszinierend!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.330519Z"
+  },
+  "npc.a_wrinkled_bonelord.walkaway_msg_1": {
+    "src_hash": "a217603789234152819bdbda2e1521ed",
+    "text": "Warte genau dort. Ich werde dich essen, nachdem ich aufgeschrieben habe, was ich herausgefunden habe.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.341971Z"
+  },
+  "npc.a_wyrm.greet_msg_1": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.347571Z"
+  },
+  "npc.a_wyrm.greet_msg_2": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.353161Z"
+  },
+  "npc.a_wyrm.greet_msg_3": {
+    "src_hash": "9db6041114d8fa56e973e38355fd9e60",
+    "text": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.358759Z"
+  },
+  "npc.ahmet.greet_msg_1": {
+    "src_hash": "c597f49f64372b4fcd004f1248d40e64",
+    "text": "Sei ein betrauerter Pilger im Fleisch. Ich verkaufe allgemeine Waren. Fragen Sie mich einfach nach einem {trade}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.365035Z"
+  },
+  "npc.ajax.greet_msg_1": {
+    "src_hash": "f75a0f42b675c7b8f6018f7bba370ace",
+    "text": "Du bist zurück. Weißt du, du hast recht. Bruder hat recht. Faust ist nicht immer gut. Sag ihm das!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.378400Z"
+  },
+  "npc.ajax.greet_msg_2": {
+    "src_hash": "5914e3f1c4504eaa5630a9f613626f2f",
+    "text": "Was machst du meiner Stelle?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.380473Z"
+  },
+  "npc.al_dee.farewell_msg_1": {
+    "src_hash": "9e61047ab3d551d7478466ce6a0284d0",
+    "text": "Tschüss, tschüss |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.390115Z"
+  },
+  "npc.al_dee.sendtrade_msg_1": {
+    "src_hash": "5b85415fe43fd72f95fe1e37cb9d77f6",
+    "text": "Werfen Sie einen Blick in das Handelsfenster auf der linken Seite.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.394890Z"
+  },
+  "npc.albinius.greet_msg_1": {
+    "src_hash": "8993bb530fd5ed280dd79f7609011019",
+    "text": "Sei gegrüßt, Pilger. Willkommen in den Hallen der Hoffnung. Wir sind die Hüter dieses {temple} und heißen alle willkommen, die bereit sind, einen Beitrag zu leisten.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.427935Z"
+  },
+  "npc.alesar.sendtrade_msg_1": {
+    "src_hash": "8d51ad58869c65b132efb94f44710fac",
+    "text": "Stöbere zu Deinen Diensten und stöbere einfach durch meine Waren.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.498281Z"
+  },
+  "npc.alexander.farewell_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Wir sehen uns, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.541221Z"
+  },
+  "npc.alexander.greet_msg_1": {
+    "src_hash": "6fe4b246c8652dfd3d389d9b352404d9",
+    "text": "Hallo |PLAYERNAME| und willkommen im {magic}-Shop.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.544528Z"
+  },
+  "npc.alexander.walkaway_msg_1": {
+    "src_hash": "fa07eeb5b43148cd479e57957d82514c",
+    "text": "Wir sehen uns, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:12:54.552595Z"
+  },
+  "npc.a_swan.say_1": {
+    "src_hash": "7ee6814666cac426ac5be7b04694ca62",
+    "text": "Du musst mir etwa 5 Federn liefern.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.074494Z"
+  },
+  "npc.a_sweaty_cyclops.say_1": {
+    "src_hash": "6beccb9bfedbe4518601bc6abf1daaa0",
+    "text": "Es ist feuriger Stahl. Ich brauche den Atem der Grünen, um zu schmelzen. Oder noch besser rot. Ich kann aus Schild machen. Möchte jemand handeln?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.082493Z"
+  },
+  "npc.a_sweaty_cyclops.say_10": {
+    "src_hash": "df94f6492d4dbcb156f56bd7716a9ce6",
+    "text": "Gut gut! Die Frau wird glücklich sein. Jetzt freue ich mich auch und helfe dir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.089806Z"
+  },
+  "npc.a_sweaty_cyclops.say_11": {
+    "src_hash": "c1797de5abaae0bcca3d986020ae77c7",
+    "text": "Der Kleine bringt drei Baströcke mit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.095658Z"
+  },
+  "npc.a_sweaty_cyclops.say_12": {
+    "src_hash": "757b1055368c3b14285c19fc46a1cfe2",
+    "text": "Kleiner bringt drei Baströcke mit?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.101035Z"
+  },
+  "npc.a_sweaty_cyclops.say_13": {
+    "src_hash": "c5f0d99b72aaa10a0066ebf47608f11d",
+    "text": "Sehr edel. Glänzend. Ich mag. Aber geht so schnell kaputt. Ich kann aus glänzender Rüstung herstellen. Möchte jemand handeln?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.113876Z"
+  },
+  "npc.a_sweaty_cyclops.say_15": {
+    "src_hash": "6beccb9bfedbe4518601bc6abf1daaa0",
+    "text": "Es ist feuriger Stahl. Ich brauche den Atem der Grünen, um zu schmelzen. Oder noch besser rot. Ich kann aus Schild machen. Möchte jemand handeln?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.121639Z"
+  },
+  "npc.a_sweaty_cyclops.say_17": {
+    "src_hash": "435d8bb0c99a0fe1546075366243c38e",
+    "text": "Hellsteel ist. Verflucht und böse. Es ist gefährlich, damit zu arbeiten. Ich kann aus einem bösen Helm einen machen. Möchte jemand handeln?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.129301Z"
+  },
+  "npc.a_sweaty_cyclops.say_19": {
+    "src_hash": "288925310189db3c1cf79d4a6b027a7c",
+    "text": "Gutes Eisen ist. Meine Freunde benutzen es oft zum Kämpfen. Ich kann aus einer Waffe herstellen. Möchte jemand handeln?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.135796Z"
+  },
+  "npc.a_sweaty_cyclops.say_2": {
+    "src_hash": "a5032219e3602413d207c77b27cc1c1d",
+    "text": "Warten. Für mich ist die Arbeit nicht billig. Tu mir zuerst einen Gefallen, ja?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.140255Z"
+  },
+  "npc.a_sweaty_cyclops.say_21": {
+    "src_hash": "28f589eb678777cc11c66a2e59633d7e",
+    "text": "Äh. Ich kann aus Seelenkugeln einen fiesen kleinen Blitz machen. Möchte der Kleine alles tauschen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.145780Z"
+  },
+  "npc.a_sweaty_cyclops.say_22": {
+    "src_hash": "f5b4810e0002ea4372411b68dfbf6344",
+    "text": "Klammer kling! Ich habe heute gute Arbeit geleistet! Der Kleine bekommt Doppelbolzen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.150504Z"
+  },
+  "npc.a_sweaty_cyclops.say_3": {
+    "src_hash": "9ea8aff6ec20c59ff6637f48269b9cdc",
+    "text": "Ich brauche ein Geschenk für eine Frau. Wir tanzen, deshalb möchte ich ihr einen Bastrock geben. Aber sie ist groß. Ich brauche also viele, um ein großes zu machen. Bring drei mit, okay? Ich warte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.160698Z"
+  },
+  "npc.a_sweaty_cyclops.say_4": {
+    "src_hash": "df94f6492d4dbcb156f56bd7716a9ce6",
+    "text": "Gut gut! Die Frau wird glücklich sein. Jetzt freue ich mich auch und helfe dir.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.165066Z"
+  },
+  "npc.a_sweaty_cyclops.say_5": {
+    "src_hash": "c1797de5abaae0bcca3d986020ae77c7",
+    "text": "Der Kleine bringt drei Baströcke mit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.167352Z"
+  },
+  "npc.a_sweaty_cyclops.say_6": {
+    "src_hash": "757b1055368c3b14285c19fc46a1cfe2",
+    "text": "Kleiner bringt drei Baströcke mit?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.169474Z"
+  },
+  "npc.a_sweaty_cyclops.say_7": {
+    "src_hash": "6beccb9bfedbe4518601bc6abf1daaa0",
+    "text": "Es ist feuriger Stahl. Ich brauche den Atem der Grünen, um zu schmelzen. Oder noch besser rot. Ich kann aus Schild machen. Möchte jemand handeln?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.177030Z"
+  },
+  "npc.a_sweaty_cyclops.say_8": {
+    "src_hash": "a5032219e3602413d207c77b27cc1c1d",
+    "text": "Warten. Für mich ist die Arbeit nicht billig. Tu mir zuerst einen Gefallen, ja?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.181330Z"
+  },
+  "npc.a_sweaty_cyclops.say_9": {
+    "src_hash": "9ea8aff6ec20c59ff6637f48269b9cdc",
+    "text": "Ich brauche ein Geschenk für eine Frau. Wir tanzen, deshalb möchte ich ihr einen Bastrock geben. Aber sie ist groß. Ich brauche also viele, um ein großes zu machen. Bring drei mit, okay? Ich warte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.191618Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_10": {
+    "src_hash": "a13fa74c13f58f18eeb7505836dd988f",
+    "text": "Es ist nicht gut, Sachen daraus zu machen. Es ist schlechter Stahl. Aber Magie zu essen, so nützlich ist es.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:11.197440Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_11": {
+    "src_hash": "cd9d9b8a7936c7b21029afb21e9e4b4a",
+    "text": "Brightsteel ist. Damit wurde viel Kunst geschaffen. Zauberer sind zu faul und haben Angst, viel zu verzaubern.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.572563Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_12": {
+    "src_hash": "c7e8c755d404f5c2a023e05fee8f5435",
+    "text": "Herzeisen aus dem Herzen eines großen alten Berges, sehr tief gefunden. Die Kleinen verteidigen sich heftig. Ich möchte nicht, dass es für Dinge verwendet wird, sondern für heilige Dinge.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.582752Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_13": {
+    "src_hash": "bdc8a4554678daf7f347c8552ada0041",
+    "text": "Meine Eltern lebten hier, bevor die Stadt existierte. Die Kleinen sind mir egal.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.587522Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_14": {
+    "src_hash": "ad7b558dcc8b2f18771d99920ab04f05",
+    "text": "Die kleinen machen so viel Spaß. Wir chatten oft.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.590706Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_15": {
+    "src_hash": "a883a73cdfd5134f1d0a701d6f2aeb4d",
+    "text": "Eines Tages werde ich hingehen und nachsehen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.593324Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_16": {
+    "src_hash": "49278b13edc627aea5d017179d23f441",
+    "text": "Gehört einer Elfenfamilie oder so etwas an. Ich verstehe die Kleinen und ihr Geschäft nicht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.598454Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_17": {
+    "src_hash": "49278b13edc627aea5d017179d23f441",
+    "text": "Gehört einer Elfenfamilie oder so etwas an. Ich verstehe die Kleinen und ihr Geschäft nicht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.603720Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_18": {
+    "src_hash": "f7ffa2f302db40ad16ecb76b9668a870",
+    "text": "Ich habe Bencthyclthrtrprr von meinen Leuten genannt. Die Kleinen nenne ich Big Ben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.608518Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_19": {
+    "src_hash": "57f6d3f3e232aca525f807c7a0d2d15a",
+    "text": "Du bist still. Ich will es nicht hören.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.611176Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_20": {
+    "src_hash": "17d90660143c3016dd9502f898e0184b",
+    "text": "Möchte der Kleine ein Feuerschwert tauschen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.614046Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_21": {
+    "src_hash": "f51d37b6b16447c7f3c96809992cd18e",
+    "text": "Möchte der Kleine einen Drachenschild tauschen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.617097Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_22": {
+    "src_hash": "1dec14094f05ba6d48a081b4c53669e7",
+    "text": "Möchte der Kleine ein Schwert der Tapferkeit tauschen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.620347Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_23": {
+    "src_hash": "968fab5045f93890267288944c812dab",
+    "text": "Will jemand ein Warlord-Schwert tauschen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.623054Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_24": {
+    "src_hash": "e49e35fbdea87d0ec446f56fe4ea9b82",
+    "text": "Sie waren mit meinen Eltern befreundet. Lange bevor Elfen hierher kamen, kamen sie oft zu Besuch. Komme nicht mehr hierher.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.629783Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_25": {
+    "src_hash": "c9b23c256931354aa8c13614b41548b4",
+    "text": "Ich kämpfe nicht gegen sie, sie kämpfen nicht gegen mich.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.633214Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_4": {
+    "src_hash": "0594dc5ead1c454a84b652b144bec8ca",
+    "text": "Stahlbearbeitung ist mein Beruf.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.635256Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_6": {
+    "src_hash": "cb367446bb1f76fd5ef38e0f22390fb8",
+    "text": "Die meisten Menschen der Antike verwendeten Traumsilber für verschiedene Zwecke. Jetzt sind die Alten größtenteils verschwunden. Die meisten wissen es nicht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.643561Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_7": {
+    "src_hash": "4b3efefe57f6d2ef644467d4adfdb396",
+    "text": "Es heißt Hochstahl. Nur die Kleinen wissen, wie man etwas macht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.647457Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_8": {
+    "src_hash": "c6c80a3dde68893a72bf35c142b4d133",
+    "text": "Es ist böse. Dämoneneisen ist. Kein guter Zyklop geht dorthin, wo man böse Flammen finden kann und zum Schmelzen braucht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.654219Z"
+  },
+  "npc.a_sweaty_cyclops.stdmod_9": {
+    "src_hash": "2833c7e14905733cf1a705926e168506",
+    "text": "Stahl, der singt, wenn er geschmiedet wird. Niemand weiß, wo es heute zu finden ist.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:13:36.659563Z"
+  },
+  "npc.a_weakened_forest_fury.multi_1": {
+    "src_hash": "b5c61236d3315c42a44aeae3710513a2",
+    "text": "Vor Generationen geschaffen, um einem Geschöpf seine Freiheit zu rauben, damit es sie wahrhaftig wieder erlangen kann. Sie benötigen sie, wenn Sie vorhaben, die Vögel in ihr rechtmäßiges Zuhause auf der Lichtung zurückzubringen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.440359Z"
+  },
+  "npc.a_weakened_forest_fury.multi_10": {
+    "src_hash": "00d7a64ed041c6ca62c3fbf2ef74b9ab",
+    "text": "Wirst du unser Beschützer sein?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.441862Z"
+  },
+  "npc.a_weakened_forest_fury.multi_2": {
+    "src_hash": "cb6b895924847c7df5baf481ad617fb9",
+    "text": "Brauchen Sie noch eins?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.442898Z"
+  },
+  "npc.a_weakened_forest_fury.multi_3": {
+    "src_hash": "63eec6b94d6354613e87439834cde2fa",
+    "text": "In der Tat, das wirst du. Nehmen Sie einen dieser Käfige, die vor Generationen gebaut wurden, um einem Geschöpf seine Freiheit zu rauben, damit es sie wahrhaftig wiedererlangen kann. Bringen Sie die Vögel zurück in ihr Zuhause auf der Lichtung. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.452934Z"
+  },
+  "npc.a_weakened_forest_fury.multi_4": {
+    "src_hash": "30e9fbab3401acfe9c02cd768676823a",
+    "text": "In der Nähe dieses heiligen Brunnens finden Sie {phials} für Wasser, das Sie sicher zur Lichtung bringt. Es sind keine Samen mehr übrig, sie sind jetzt in den Händen der Eindringlinge. Vertraue dir selbst, Vormund.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.462200Z"
+  },
+  "npc.a_weakened_forest_fury.multi_5": {
+    "src_hash": "067516ba214c8403c0445d5e8f4adeea",
+    "text": "Mein Stolz ist groß, aber nicht größer als die Vernunft. Ich bin nicht zu stolz, um Hilfe zu bitten, da dies eine dunkle Stunde ist. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.467934Z"
+  },
+  "npc.a_weakened_forest_fury.multi_6": {
+    "src_hash": "1e30ec7d70fd1b16ada49f6ab3be510a",
+    "text": "Diese Lichtung wurde geschändet. Wir hielten es jahrhundertelang geheim, doch das Böse hat einen Weg gefunden, das zu besudeln und zu zerstören, was uns am heiligsten war. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.474446Z"
+  },
+  "npc.a_weakened_forest_fury.multi_7": {
+    "src_hash": "4e6bd8868a7bd92269c9c1892743d62e",
+    "text": "Es gibt nur einen Weg, seine Lebensgeister wiederzubeleben: Ein Wächter muss sich dorthin wagen und dem Wald wieder Leben einhauchen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.479582Z"
+  },
+  "npc.a_weakened_forest_fury.multi_8": {
+    "src_hash": "2604532e005fa4358433885748c9f485",
+    "text": "Gestohlene {seeds} müssen den {intruders} entrissen und dort gepflanzt werden, wo der Boden noch hungert. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.484603Z"
+  },
+  "npc.a_weakened_forest_fury.multi_9": {
+    "src_hash": "ec255bee3e133245c94c19e83f1fba9d",
+    "text": "Das reinste {Wasser} aus dem reinsten Brunnen muss dorthin gebracht und gegossen werden und {birds}, das Leben gibt, muss zurück in das innere Heiligtum der Lichtung gebracht werden. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.491933Z"
+  },
+  "npc.a_weakened_forest_fury.say_1": {
+    "src_hash": "7448e9db1cb3dab1e3f767edc5096dd7",
+    "text": "Samen, die starken, blühenden und stolzen Bäumen Leben einhauchen. Die {intruders} haben uns ihnen beraubt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.496187Z"
+  },
+  "npc.a_weakened_forest_fury.say_2": {
+    "src_hash": "a8565c2ba7e9d4d3534c7a703b6a6276",
+    "text": "Die Eindringlinge erschienen im Handumdrehen. Aus dem Nichts, als kämen sie aus dem Nichts. Sie überrannten die Lichtung in unserem Inneren und vertrieben alles, was diesem Tag von uns übrig geblieben war.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.504394Z"
+  },
+  "npc.a_weakened_forest_fury.say_3": {
+    "src_hash": "a411d42a289aafbf203c5caeb379e3f6",
+    "text": "Durch diesen Brunnen fließt reinstes Wasser. Jahrhunderte lang haben wir es verborgen, damit andere Wesen es nicht zu Gesicht bekamen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.509597Z"
+  },
+  "npc.a_weakened_forest_fury.say_5": {
+    "src_hash": "b083ea578f8aa1fadf1c933494096fb8",
+    "text": "Fläschchen für reinstes Wasser aus unserem heiligen Brunnen. Sie sind fein gearbeitet und sehr zerbrechlich. Wir haben hier oben rund um den Brunnen einen kleinen Vorrat. Wahrscheinlich das Einzige, was den Eindringlingen egal war.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.518146Z"
+  },
+  "npc.a_weakened_forest_fury.say_6": {
+    "src_hash": "6059c79ce3a8c0b9791f41c39cbe060f",
+    "text": "Ich habe dir bereits einen Käfig gegeben. Wenn Sie ein weiteres benötigen, müssen Sie später zu mir zurückkehren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.522609Z"
+  },
+  "npc.a_weakened_forest_fury.stdmod_1": {
+    "src_hash": "19483b510c4083e683cf85777f6a0bd8",
+    "text": "Mein Name ist jetzt nur noch dem Wind bekannt und er wird so bleiben, bis ich zu meinen Verwandten zurückkehre.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.526954Z"
+  },
+  "npc.a_weakened_forest_fury.stdmod_2": {
+    "src_hash": "24e71111f5cd6c344a51fc84bc7d7ac8",
+    "text": "Ich war ein Wächter dieser Lichtung. Ich bin der Letzte... alle mussten gehen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.530194Z"
+  },
+  "npc.a_weakened_forest_fury.stdmod_3": {
+    "src_hash": "4b4c28cf9514e263cd64e2cf8515fef0",
+    "text": "Die Zeit dieser Lichtung wird knapp, wenn bald nichts unternommen wird.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.532970Z"
+  },
+  "npc.a_weakened_forest_fury.stdmod_5": {
+    "src_hash": "6eae3ba94f153241f7139753a33e34e7",
+    "text": "Grausame Wesen. Groß und monströs, mit einem einzigen Auge, das seine Beute anstarrt. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.536369Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_10": {
+    "src_hash": "0d87c1622e87ee2e5337a11eeb52ac9e",
+    "text": "Diese Narren und ihr abergläubischer Lebenskult verstehen nichts Wichtiges.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:04.539229Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_11": {
+    "src_hash": "54c30b0c73d996b60052eb31ab154850",
+    "text": "Nur minderwertige Arten brauchen Waffen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.481379Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_12": {
+    "src_hash": "1dab24bde8e2aeae70dca275e7c751a7",
+    "text": "Ich habe gehört, dass oben Elfen eingezogen sind.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.484581Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_13": {
+    "src_hash": "4e155dba3d938b25d6866fe778d12ccd",
+    "text": "Zahlen sind wichtig. Sie sind das Geheimnis hinter den Kulissen. Wenn Sie ein Meister der Mathematik sind, sind Sie ein Meister über Leben und Tod.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.492869Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_14": {
+    "src_hash": "c004dfa5adae261ac341f4b270b8ce76",
+    "text": "Unsere Bücher sind im Jahr 469 geschrieben, natürlich kann man sie nicht verstehen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.497861Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_15": {
+    "src_hash": "5d263b8b730e9ad07ec466c44bbeb705",
+    "text": "Geh und wasche dir die Augen, weil du diese obszöne Nummer benutzt hast!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.502169Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_16": {
+    "src_hash": "044c55af3bd9294eb2627adbd549af31",
+    "text": "Die Sprache meiner Art. Jeder anderen Sprache überlegen und nur von Wesen gesprochen, die genug Augen haben, um mit der Sprache zu blinzeln.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.510068Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_18": {
+    "src_hash": "058b80d38ebd854ca10a0e142e371f80",
+    "text": "Ihre Magier sind der Wahrheit so nah. Näher, als sie wissen, und näher, als es ihnen gut tut.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.515744Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_19": {
+    "src_hash": "2235776232edbe8cf7a37a7fba1a0bf1",
+    "text": "Gute Werkzeuge zum Arbeiten ... Zumindest nach ihrem Tod.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.519617Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_3": {
+    "src_hash": "e4544088897d6811ed922f9fc2138f36",
+    "text": "Ja, ja, ich werde dich früh genug töten, jetzt lass mich meine Ermittlungen gegen dich fortsetzen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.525548Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_4": {
+    "src_hash": "9d6e9f2fbe7de3b1b0007ccb46c2b47b",
+    "text": "Sie werden den Tag betrauern, dem sie uns verlassen haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.529728Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_5": {
+    "src_hash": "41d134b2a8410adc9bce48ffe2331502",
+    "text": "Ich bin der große Bibliothekar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.532288Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_6": {
+    "src_hash": "0daab9156f7fb23d59b6ff1906b6c17c",
+    "text": "Es ist eine schöne Bibliothek, nicht wahr?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.535413Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_7": {
+    "src_hash": "4e0592887430cfbffc525b3f49d3bcc1",
+    "text": "Ich bin 486486 und NICHT 'Blinky', wie mich einige Leute nannten ... bevor sie starben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.540948Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_8": {
+    "src_hash": "4ab242d317d6d91f01ba24feb40c1d75",
+    "text": "Es ist 1, nicht 'Tibia', albern.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.543367Z"
+  },
+  "npc.a_wrinkled_bonelord.stdmod_9": {
+    "src_hash": "64cfea2b486417441fa96a7e7b6d4717",
+    "text": "Inkarnierte Hässlichkeit. Ein Auge! Stellen Sie sich das vor! Schrecklich!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.547749Z"
+  },
+  "npc.ahmet.multi_1": {
+    "src_hash": "2d0b3d1f241c773cbcefbb392128acb7",
+    "text": "Na dann. Hier, nimm das Buch, ich habe die Geschichte hinzugefügt. Oh, nur ein Ratschlag: Ich möchte keine Vorurteile schüren, aber Wilderer sind von eher einfacher Natur. Ich bezweifle, dass sie begeisterte Leser sind. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.559350Z"
+  },
+  "npc.ahmet.multi_2": {
+    "src_hash": "182c8585598302535ced93e8c70f753e",
+    "text": "Wenn Sie also sicherstellen möchten, dass sie dies bald lesen, verstecken Sie das Buch vielleicht nicht in einem Regal oder einer Truhe. Stellen Sie sicher, dass Sie es einem Ort platzieren, wo es leicht zu finden ist, beispielsweise auf einem Tisch oder so etwas.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.573031Z"
+  },
+  "npc.ahmet.multi_3": {
+    "src_hash": "843318a528e8becb2b7b086b3ffc58d9",
+    "text": "Natürlich tust du das! Geht auf die Jagd nach den Dieben und bringt die Sachen zurück, die sie mir gestohlen haben. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.579988Z"
+  },
+  "npc.ahmet.multi_4": {
+    "src_hash": "afc62477c975f202a63bd0b53789a593",
+    "text": "Ich sah sie aus der Stadt und dann nach Norden rennen. Vielleicht verstecken sie sich in der Oase.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.585546Z"
+  },
+  "npc.ahmet.multi_5": {
+    "src_hash": "b9530212489095917620911591703f8c",
+    "text": "Worüber redest du?? Ich wurde ausgeraubt!!!! Jemand fängt diese dreckigen Diebe!!!!! WÄCHTER! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:14:33.590902Z"
+  },
+  "npc.ahmet.multi_6": {
+    "src_hash": "ab0b75f114c227e77d33d8d27fbc5049",
+    "text": "<nichts passiert>....<SEUFF> Wie üblich verstecken sie sich beim geringsten Anzeichen von Ärger! DU! Möchten Sie schnell Geld verdienen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.054178Z"
+  },
+  "npc.ahmet.multi_7": {
+    "src_hash": "d741cb41b98b79e54149e4a468dbae50",
+    "text": "Sie benötigen gefälschte Dokumente? Aber ich werde nur für einen Freund etwas fälschen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.059410Z"
+  },
+  "npc.ahmet.multi_8": {
+    "src_hash": "78924063791e7fb1a53aa0441b010278",
+    "text": "Die Nomaden in der nördlichen Oase haben jemanden getötet, der mir lieb war. Gehen Sie und töten Sie mindestens einen von ihnen, dann reden wir über Ihr Dokument.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.068244Z"
+  },
+  "npc.ahmet.say_1": {
+    "src_hash": "f4093c5a43c897971ab2593530197453",
+    "text": "Der Vernichter meiner Feinde ist mein Freund! Für nur 1000 Gold erstelle ich die von Ihnen benötigten Dokumente. Sind Sie interessiert?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.075752Z"
+  },
+  "npc.ahmet.say_2": {
+    "src_hash": "e619bd06d61550cb3d6e160575a63b3d",
+    "text": "Hast du meine Sachen gefunden?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.077912Z"
+  },
+  "npc.ahmet.say_3": {
+    "src_hash": "4cffa0753cf6e3df553096c37e134da0",
+    "text": "Ich verstehe: Sie möchten, dass ich diesem Buch eine zusätzliche Geschichte hinzufüge. Eine Legende darüber, wie es Unglück bringt, ein weißes Reh zu töten. Das könnte ich tun, ja. Es kostet allerdings 5000 Gold. Sind Sie immer noch interessiert?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.091008Z"
+  },
+  "npc.ahmet.say_4": {
+    "src_hash": "03ed7c260027126bcdd6318ab31cb036",
+    "text": "Und hier sind sie! Jetzt vergessen Sie, woher Sie sie haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.094746Z"
+  },
+  "npc.ahmet.say_5": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du hast nicht genug Geld.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.096527Z"
+  },
+  "npc.ahmet.say_6": {
+    "src_hash": "f5e1fe9e47e6dd03c51c08d50c42e547",
+    "text": "GROSSARTIG! Wenn Sie jemals einen Job als mein persönlicher Sicherheitsbeamter benötigen, lassen Sie es mich wissen. Hier ist die Belohnung, die ich dir versprochen habe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.105572Z"
+  },
+  "npc.ahmet.say_7": {
+    "src_hash": "51a959a1f5a65a04ba5da31a38ac57da",
+    "text": "Komm zurück, wenn du meine Sachen findest.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.108296Z"
+  },
+  "npc.ahmet.say_9": {
+    "src_hash": "65fdae85d9e79865bdc8f48a46234168",
+    "text": "Du bist nicht in dieser Mission.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.110464Z"
+  },
+  "npc.ajax.multi_1": {
+    "src_hash": "0514860bcceb371bd1f1651ed7b4123e",
+    "text": "Gut! Ich mache glänzende Waffen. Wenn du mir hilfst, mache ich auch eins für dich. Wie eine Axt, die ich trage. Ich brauche Sachen. Hören. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.118378Z"
+  },
+  "npc.ajax.multi_2": {
+    "src_hash": "b55613c549b8629d30af316cadd89a71",
+    "text": "Ich brauche 100 Eisenerz. Dann brauchen Sie Roheisen. Dann danach 50 riesige Reißzähne. Und 50 Eidechsenleder. Verstehst du?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.125442Z"
+  },
+  "npc.ajax.multi_3": {
+    "src_hash": "5a2b96b2fec5ec0dc0809fc430caeff7",
+    "text": "Hilf mir ja oder nein?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.127007Z"
+  },
+  "npc.ajax.say_1": {
+    "src_hash": "9cbe268f9091550035676742440f653c",
+    "text": "DEIN? WAS GEHÖRT DIR! NICHTS gehört DIR! GEHÖRT MIR! GEH WEG, JA?!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.130906Z"
+  },
+  "npc.ajax.say_10": {
+    "src_hash": "5a32ba1545609091a15cd37ee3523792",
+    "text": "Du bringst Roheisen mit?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.132513Z"
+  },
+  "npc.ajax.say_11": {
+    "src_hash": "cae49d0d29c8fdc68dd06d4fbbc3b5db",
+    "text": "Du bringst 50 riesige Reißzähne mit?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.134748Z"
+  },
+  "npc.ajax.say_12": {
+    "src_hash": "5ad8884cb99d2668f8bc961e858bf17d",
+    "text": "Du bringst 50 Eidechsenleder mit?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.136797Z"
+  },
+  "npc.ajax.say_13": {
+    "src_hash": "f3b456061c90a94300a68ae3cbb1695b",
+    "text": "Axt ist fertig! Für dich. Nehmen. Tragen Sie es wie ich.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.140121Z"
+  },
+  "npc.ajax.say_14": {
+    "src_hash": "4180cbf0f36e9ea96b061185a09df327",
+    "text": "Axe ist noch nicht fertig!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:02.141868Z"
+  },
+  "npc.ajax.say_15": {
+    "src_hash": "5313539317e21a20537def6471792ee8",
+    "text": "Oh. Einfach. Okay. Bitte ist gut. Jetzt sag nichts. Kopfschmerzen. ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.852776Z"
+  },
+  "npc.ajax.say_16": {
+    "src_hash": "fad6520209c86cf4d3da6a9303122877",
+    "text": "Gut. Du erhältst zuerst 100 Eisenerz. Komm zurück.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.855594Z"
+  },
+  "npc.ajax.say_17": {
+    "src_hash": "b2f6e03a7c4192148b8b6be3aa459fe6",
+    "text": "Gut! Bringen Sie nun rohes Eisen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.857444Z"
+  },
+  "npc.ajax.say_18": {
+    "src_hash": "1595ee7e66d715d3404843c86c8ab43c",
+    "text": "Gut! Bringen Sie jetzt 50 Behemoth-Reißzähne mit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.860164Z"
+  },
+  "npc.ajax.say_19": {
+    "src_hash": "8cd827af485e452e64070d76ec41d3c0",
+    "text": "Gut! Bringt jetzt 50 Echsenleder mit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.862288Z"
+  },
+  "npc.ajax.say_2": {
+    "src_hash": "890098ec3848b065edac21167ca51264",
+    "text": "DU DUMM! HARTNÄCKIG! ICH TÖTE DICH! WIRD JETZT GEHEN?!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.865219Z"
+  },
+  "npc.ajax.say_20": {
+    "src_hash": "c62a2bd9d487e55c57451417eaacc63d",
+    "text": "Ah! Alles da. Ich werde jetzt mit der Herstellung von Äxten beginnen. Komm später und bitte mich um eine Axt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.870742Z"
+  },
+  "npc.ajax.say_3": {
+    "src_hash": "f07ab3f60677dc856786b5f68b2b4ae0",
+    "text": "ARRRRRRRRRR! Du bist verrückt geworden! WIE BRINGE ICH DICH ZUM GEHEN??",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.874416Z"
+  },
+  "npc.ajax.say_4": {
+    "src_hash": "b7040b10d1c5ce15b695647b9c20f457",
+    "text": "ICH GEBE DIR NEIN!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.875493Z"
+  },
+  "npc.ajax.say_5": {
+    "src_hash": "3c85f7f4a6fd161fa6454ce397749e8c",
+    "text": "Bitte? Was meinst du bitte? Wie ich schon sagte: Bitte verabschieden Sie sich? Bitte?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.880037Z"
+  },
+  "npc.ajax.say_6": {
+    "src_hash": "28ee1a0171fc67d97933d62f3aff326a",
+    "text": "Nerviges Kind. Bro hasst ihn, aber Reden hilft nicht. Bro braucht {fighting spirit}!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.885036Z"
+  },
+  "npc.ajax.say_7": {
+    "src_hash": "ad0a4395f7a247d0d304a83a06aba5ed",
+    "text": "Wenn du deinem Bruder helfen willst, bring ihm Kampfgeist mit. Magischer Kampfgeist. Frag Dschinn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.890289Z"
+  },
+  "npc.ajax.say_8": {
+    "src_hash": "3a85809fa6d07edc3b53e7432db5bd0d",
+    "text": "Bron hat mir ein Geschenk gegeben. Hässlich, aber nett von ihm. Ich möchte auch ein Geschenk machen. Du hilfst mir?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.896187Z"
+  },
+  "npc.ajax.say_9": {
+    "src_hash": "8b4ab579d1bc0c286fa1aa7706d9801b",
+    "text": "Du bringst 100 Eisenerz mit?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.897821Z"
+  },
+  "npc.al_dee.greet_msg_1": {
+    "src_hash": "833b3df0f1377cdf11594fce0f2a7759",
+    "text": "Hallo, hallo, |PLAYERNAME|! Bitte kommen Sie vorbei, schauen Sie und kaufen Sie! Ich bin Spezialist für alle Arten von {tools}. Fragen Sie mich einfach nach einem {trade}, um meine Angebote zu sehen! Sie können mich auch nach allgemeinen {hints} Informationen zum Spiel fragen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.912687Z"
+  },
+  "npc.al_dee.stdmod_1": {
+    "src_hash": "7c7c7e1c5ff6641d4e968f817324a68a",
+    "text": "Sind Sie auf der Suche nach den besten Trades? Kommen Sie in meinen Shop!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.916649Z"
+  },
+  "npc.al_dee.stdmod_10": {
+    "src_hash": "746dc13a01e60f937ccb663928b1f79c",
+    "text": "Ich bin Kaufmann. Fragen Sie mich einfach nach einem {trade}, um meine Angebote zu sehen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.921368Z"
+  },
+  "npc.al_dee.stdmod_11": {
+    "src_hash": "44f143c4c94a16130e8f33a52ba47e90",
+    "text": "Mein Name ist Al Dee, aber Sie können mich Al nennen. Kann ich Sie für ein {trade} interessieren?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.926591Z"
+  },
+  "npc.al_dee.stdmod_12": {
+    "src_hash": "aa515054e45aa140497236333a457754",
+    "text": "Es geht um |TIME|. Es tut mir so leid, ich habe keine Uhren zu verkaufen. Möchten Sie etwas anderes kaufen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.932397Z"
+  },
+  "npc.al_dee.stdmod_13": {
+    "src_hash": "1a7cf3603f3c8b7dce848f0d9e79cdf1",
+    "text": "Wenn du Monster im {dungeons} herausfordern willst, brauchst du etwas {weapons} und {armor} vom lokalen {merchants}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:29.938916Z"
+  },
+  "npc.al_dee.stdmod_14": {
+    "src_hash": "af9be20f5dd1f235ad33691ff98b61ad",
+    "text": "Wenn Sie Dungeons wie {sewers} erkunden möchten, müssen Sie sich mit den lebenswichtigen Dingen, die ich verkaufe, selbst {equip} besorgen. Es ist {vital} im tiefsten Sinne des Wortes.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.252972Z"
+  },
+  "npc.al_dee.stdmod_15": {
+    "src_hash": "0f5811a915a247d882f4ebd5fe63561c",
+    "text": "Oh, unser Abwassersystem ist sehr primitiv – es ist so primitiv, dass es von {rats} überschwemmt wird. Aber die Sachen, die ich verkaufe, sind vor ihnen sicher. Bitten Sie mich einfach um ein {trade}, um es zu sehen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.262810Z"
+  },
+  "npc.al_dee.stdmod_16": {
+    "src_hash": "72f97516fb4d02e4719a7ea8bb221c60",
+    "text": "Der König ermutigte Händler, hierher zu reisen, aber nur ich wagte es, das Risiko einzugehen, und ein Risiko war es!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.267302Z"
+  },
+  "npc.al_dee.stdmod_17": {
+    "src_hash": "b71c08618b092332f16a3ba4b70a4711",
+    "text": "Diese Insel wird von Insekten heimgesucht, aber meine Waren sind fehlerfrei, völlig fehlerfrei.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.270795Z"
+  },
+  "npc.al_dee.stdmod_18": {
+    "src_hash": "635bdf5ae03366e8933ba34230c76a14",
+    "text": "Eines Tages werde ich als reicher, sehr reicher Mann auf den Kontinent zurückkehren!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.273951Z"
+  },
+  "npc.al_dee.stdmod_19": {
+    "src_hash": "48a7dce38423d069b394598f7a96160c",
+    "text": "Thais ist eine überfüllte Stadt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.275383Z"
+  },
+  "npc.al_dee.stdmod_2": {
+    "src_hash": "8a61d0bc206f0b9aaf1c6b728868f7d7",
+    "text": "Fühlen Sie sich verloren? Sie können mich jederzeit nach allgemeinen Hinweisen fragen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.278535Z"
+  },
+  "npc.al_dee.stdmod_20": {
+    "src_hash": "1cbea449820b3dc675ab3186f17a0c07",
+    "text": "Haben Sie sich jemals gefragt, wovon 'main' die Leute reden? Nun, sobald du Level 8 erreicht hast, solltest du mit dem {oracle} sprechen. Anschließend können Sie einen {profession} auswählen und viel mehr von Tibia erkunden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.286972Z"
+  },
+  "npc.al_dee.stdmod_21": {
+    "src_hash": "1a0783e302f3cece4d787353e39bb8a5",
+    "text": "Oh, es tut mir leid, aber ich beschäftige mich nicht mit Waffen. Das ist eine Angelegenheit von {Obi's} oder {Lee'Delle's}. Ich könnte Ihnen einen {pick} im Austausch gegen einen {small axe} anbieten, falls Sie zufällig einen besitzen sollten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.296481Z"
+  },
+  "npc.al_dee.stdmod_22": {
+    "src_hash": "40af2cb7cc98465d889bcbc19c38ea73",
+    "text": "Rüstungen und Schilde können bei {Dixi's} oder bei {Lee'Delle's} gekauft werden. Dixi betreibt diesen Laden in der Nähe von {Obi's}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.301928Z"
+  },
+  "npc.al_dee.stdmod_23": {
+    "src_hash": "40af2cb7cc98465d889bcbc19c38ea73",
+    "text": "Rüstungen und Schilde können bei {Dixi's} oder bei {Lee'Delle's} gekauft werden. Dixi betreibt diesen Laden in der Nähe von {Obi's}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.306968Z"
+  },
+  "npc.al_dee.stdmod_24": {
+    "src_hash": "29973dbdc99881d0dbbb2542d356383f",
+    "text": "Wenn Sie jemanden finden möchten, der Ihre Kekse kaufen möchte, sollten Sie Lily kennenlernen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.310505Z"
+  },
+  "npc.al_dee.stdmod_25": {
+    "src_hash": "aea2ca891a25753f8c1c6d01c727729e",
+    "text": "Blaubeeren wachsen an Büschen. Sie kommen in Tibia recht häufig vor. Wenn Sie einen Snack brauchen, pflücken Sie sie einfach aus einem Busch!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.315815Z"
+  },
+  "npc.al_dee.stdmod_26": {
+    "src_hash": "4eaa31366e8b4104288ac96b272b93d3",
+    "text": "Tut mir leid, ich verkaufe keine Zaubertränke. Besuchen Sie dazu {Lily}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.318656Z"
+  },
+  "npc.al_dee.stdmod_27": {
+    "src_hash": "b0d843e1b849e2f081d336edf5bea73d",
+    "text": "Hmm, die beste Adresse, um nach Essen zu suchen, könnte {Willie} oder {Billy} sein. {Norma} hat auch einige Snacks zum Verkauf.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.323813Z"
+  },
+  "npc.al_dee.stdmod_28": {
+    "src_hash": "f157baaea290b1a58de4263bbe111c87",
+    "text": "Eine Bank ist durchaus nützlich. Dort können Sie Ihr Geld sicher einzahlen. So müssen Sie es nicht ständig mit sich herumtragen. Du könntest dein Geld auch in mein {wares} investieren!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.330777Z"
+  },
+  "npc.al_dee.stdmod_29": {
+    "src_hash": "9de0f2ff72e1bb2162b42e4c94984d46",
+    "text": "Das große Gebäude im Zentrum von Rookgaard. Sie verfügen über eine Bibliothek, ein Schulungszentrum, ein {bank} und den Raum des {oracle}. {Seymour} ist dort der Lehrer.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.337366Z"
+  },
+  "npc.al_dee.stdmod_3": {
+    "src_hash": "9f9f8f2f49227f8da3e1461f5ae612f3",
+    "text": "Werkzeuge und allgemeine Ausrüstung bei Al Dee's!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.339280Z"
+  },
+  "npc.al_dee.stdmod_30": {
+    "src_hash": "84f11d34a90859e15b6f5b0100cfaac3",
+    "text": "Der Mönch {Cipfried} kümmert sich um unseren Tempel. Er kann dich heilen, wenn du schwer verletzt oder vergiftet bist.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.343865Z"
+  },
+  "npc.al_dee.stdmod_31": {
+    "src_hash": "ecda037e825b2a6296a5382de80cda09",
+    "text": "Als Premium-Abenteurer haben Sie viele Vorteile. Sie sollten sie sich unbedingt ansehen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:15:58.347133Z"
+  },
+  "npc.al_dee.stdmod_32": {
+    "src_hash": "e1358dab3ba6953efb2d59f54724b812",
+    "text": "Wenn Sie mir den Namen eines Bürgers nennen, sage ich Ihnen, was ich über ihn oder sie weiß.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.602212Z"
+  },
+  "npc.al_dee.stdmod_33": {
+    "src_hash": "7defe47d2884475b8bd17dca63d0bcd8",
+    "text": "Um die Angebote eines Händlers einzusehen, sprechen Sie einfach mit ihm oder ihr und fragen Sie nach einem {trade}. Sie zeigen Ihnen gerne ihre Angebote und auch die Dinge, die sie bei Ihnen kaufen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.609805Z"
+  },
+  "npc.al_dee.stdmod_34": {
+    "src_hash": "78a6f6e01f3f7077189e1194f5168c3d",
+    "text": "Ab dem {Island of Destiny} erfahren Sie alles, was Sie über Berufe wissen müssen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.613229Z"
+  },
+  "npc.al_dee.stdmod_35": {
+    "src_hash": "f759ebda4888988d7c657c9424e00b3a",
+    "text": "Die Insel des Schicksals kann über {oracle} erreicht werden, sobald du Level 8 erreicht hast. Diese Reise wird dir bei der Auswahl deines {profession} helfen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.618962Z"
+  },
+  "npc.al_dee.stdmod_36": {
+    "src_hash": "f27f75ca293c39f9d06e533196a52e02",
+    "text": "Nein danke. Ich kann den Markt bereits mit Taschenlampen überfüllen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.621602Z"
+  },
+  "npc.al_dee.stdmod_37": {
+    "src_hash": "d0e5531f650021b1d8e488f627c74bd0",
+    "text": "Ich verkaufe Angelruten und Würmer, wenn Sie angeln möchten. Fragen Sie mich einfach nach einem {trade}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.625698Z"
+  },
+  "npc.al_dee.stdmod_38": {
+    "src_hash": "cc0832e05b2e168a7bbb947ba958122b",
+    "text": "Ja, das verkaufe ich. Fragen Sie mich einfach nach einem {trade}, um alle meine Angebote anzuzeigen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.629757Z"
+  },
+  "npc.al_dee.stdmod_39": {
+    "src_hash": "da04063f5a614792e85f40f416e286a2",
+    "text": "Er ist nur ein alter Mönch. Allerdings kann er dich heilen, wenn du schwer verletzt oder vergiftet bist.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.633770Z"
+  },
+  "npc.al_dee.stdmod_4": {
+    "src_hash": "67e5624d4742eb7da886542ced51b032",
+    "text": "Gehen Sie nicht ohne Seil und Taschenlampen ins Abenteuer! Kaufen Sie hier Ihre Vorräte!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.637114Z"
+  },
+  "npc.al_dee.stdmod_40": {
+    "src_hash": "9e48c63b7708028e36d3561878e4eb33",
+    "text": "Arme alte Frau, ihr Sohn {Tom} besucht sie nie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.639065Z"
+  },
+  "npc.al_dee.stdmod_41": {
+    "src_hash": "c7b698bf128650165ce7b3f169e297ff",
+    "text": "Er widmete sein Leben der Begrüßung von Neuankömmlingen auf dieser Insel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.641742Z"
+  },
+  "npc.al_dee.stdmod_42": {
+    "src_hash": "f280e4de299577a0cd5ec043cf4b27e8",
+    "text": "Keine Ahnung, wer das ist.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.642934Z"
+  },
+  "npc.al_dee.stdmod_43": {
+    "src_hash": "6544554f85eda91fa6565ded8439447a",
+    "text": "Ja, das bin ich. Klug von dir, das zu bemerken!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.644864Z"
+  },
+  "npc.al_dee.stdmod_45": {
+    "src_hash": "1eb45a909a22c6117d2ec6f884f996fa",
+    "text": "Meistens bleibt er alleine. Er ist ein Einsiedler außerhalb der Stadt – viel Glück dabei, ihn zu finden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.648958Z"
+  },
+  "npc.al_dee.stdmod_46": {
+    "src_hash": "4608d6e9f079974d8a0ab83ac1461644",
+    "text": "Sie ist {Obi's} Enkelin und kümmert sich um {armors} und {shields}. Ihr Laden liegt südwestlich der Stadt, in der Nähe des {temple}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.654361Z"
+  },
+  "npc.al_dee.stdmod_48": {
+    "src_hash": "9a613c51415f19b330e736c5ea2fe7f9",
+    "text": "Wenn Sie ein {premium}-Abenteurer sind, sollten Sie im {Lee'Delle's}-Shop vorbeischauen. Sie wohnt im westlichen Teil der Stadt, direkt gegenüber der Brücke.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.660239Z"
+  },
+  "npc.al_dee.stdmod_49": {
+    "src_hash": "e8899364d696c697b01a31b7ce5a01ca",
+    "text": "Er ist der örtliche Gerber. Sie könnten versuchen, ihm frische Leichen oder Leder zu verkaufen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.663894Z"
+  },
+  "npc.al_dee.stdmod_50": {
+    "src_hash": "98c5bcaac9d0cd3e93bd1888c87f6892",
+    "text": "Sie erholt sich derzeit von ihren Reisen im {academy}. Es ist immer schön, mit ihr zu plaudern!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.667606Z"
+  },
+  "npc.al_dee.stdmod_51": {
+    "src_hash": "c06ddadc05733914c9e2f9d0d2aa28e3",
+    "text": "Sie finden das Orakel im obersten Stockwerk des {academy}, direkt über {Seymour}. Gehen Sie dorthin, wenn Sie Level 8 erreicht haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.672929Z"
+  },
+  "npc.al_dee.stdmod_52": {
+    "src_hash": "cf8b49af7a38e262548c0f68783f4bfa",
+    "text": "Seymour ist ein Lehrer, der die {academy} leitet. Er hat viele wichtige {information} über Tibia.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:26.676908Z"
+  },
+  "npc.al_dee.stdmod_53": {
+    "src_hash": "1e26e03d3bf9e3e6c97ed3b6a4817370",
+    "text": "Sie verkauft Gesundheits- {potions} und Gegenmitteltränke. Außerdem kauft sie {blueberries} und {cookies}, falls Sie welche finden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.509106Z"
+  },
+  "npc.al_dee.stdmod_54": {
+    "src_hash": "5a2bb4cd5d939db8c83c16cc78c98bfe",
+    "text": "Dies ist ein lokaler Bauer. Wenn Sie frisches {food} benötigen, um wieder gesund zu werden, ist dies eine gute Anlaufstelle. Viele Monster tragen jedoch auch Lebensmittel wie Fleisch oder Käse bei sich. Oder Sie können einfach {blueberries} auswählen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.518673Z"
+  },
+  "npc.al_dee.stdmod_55": {
+    "src_hash": "6695f026bd76696901948ec44e4d55b2",
+    "text": "Dies ist ein lokaler Bauer. Wenn Sie frisches {food} benötigen, um wieder gesund zu werden, ist dies eine gute Anlaufstelle. Allerdings handelt er nur mit {premium} Abenteurern.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.525677Z"
+  },
+  "npc.al_dee.stdmod_56": {
+    "src_hash": "96383925492ed33f923b5fd69187c683",
+    "text": "Früher hat sie Ausrüstung verkauft, aber ich glaube, sie hat jetzt eine kleine Bar eröffnet. Spricht davon, ihren Namen in 'Mary' zu ändern und so ein seltsames Mädchen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.532508Z"
+  },
+  "npc.al_dee.stdmod_57": {
+    "src_hash": "16cfe7cb3d77d29e4419d65b8d4fa2f8",
+    "text": "Manche nennen ihn einen Helden. Er beschützt die Stadt vor {monsters}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.535370Z"
+  },
+  "npc.al_dee.stdmod_6": {
+    "src_hash": "a17453fea5b9bb0129d1a0e36f5dfb96",
+    "text": "Fragen Sie mich einfach nach einem {trade}, um meine Angebote zu sehen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.538348Z"
+  },
+  "npc.al_dee.stdmod_7": {
+    "src_hash": "70019a96b2ee543694cb3491a35374f0",
+    "text": "Wenn Sie allgemeines {equipment} benötigen, fragen Sie mich einfach nach einem {trade}. Ich kann Ihnen auch einige allgemeine {hints} zum Spiel geben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.544380Z"
+  },
+  "npc.al_dee.stdmod_8": {
+    "src_hash": "974c1698a5ea0d640ec3cd5c000442ed",
+    "text": "Als Abenteurer solltest du immer mindestens einen {backpack}, einen {rope}, einen {shovel}, einen {weapon}, einen {armor} und einen {shield} haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.550869Z"
+  },
+  "npc.al_dee.stdmod_9": {
+    "src_hash": "5c8a80ba05d7522a7d78b08181b36e05",
+    "text": "Mir geht es gut. Ich freue mich sehr, Sie als meinen Kunden hier zu haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.553849Z"
+  },
+  "npc.al_dee.voice_1": {
+    "src_hash": "7c7c7e1c5ff6641d4e968f817324a68a",
+    "text": "Sind Sie auf der Suche nach den besten Trades? Kommen Sie in meinen Shop!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.556807Z"
+  },
+  "npc.al_dee.voice_2": {
+    "src_hash": "8a61d0bc206f0b9aaf1c6b728868f7d7",
+    "text": "Fühlen Sie sich verloren? Sie können mich jederzeit nach allgemeinen Hinweisen fragen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.560344Z"
+  },
+  "npc.al_dee.voice_3": {
+    "src_hash": "9f9f8f2f49227f8da3e1461f5ae612f3",
+    "text": "Werkzeuge und allgemeine Ausrüstung bei Al Dee's!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.562324Z"
+  },
+  "npc.al_dee.voice_4": {
+    "src_hash": "67e5624d4742eb7da886542ced51b032",
+    "text": "Gehen Sie nicht ohne Seil und Taschenlampen ins Abenteuer! Kaufen Sie hier Ihre Vorräte!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.565832Z"
+  },
+  "npc.alaistar.say_1": {
+    "src_hash": "097b7697b40f39b1c95dac04088148c9",
+    "text": "Stöbern Sie natürlich einfach in meinen Angeboten. Sie können sich auch {} ansehen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.569151Z"
+  },
+  "npc.albinius.multi_1": {
+    "src_hash": "6db1f2b62d92a40fd65f24d1b6158eeb",
+    "text": "Die {Shapers} waren eine fortgeschrittene Zivilisation, die sich zu ihrer Zeit gut mit Kunst, Bauwesen, Sprache und der Erforschung unserer Welt auskannte. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.575080Z"
+  },
+  "npc.albinius.multi_2": {
+    "src_hash": "cda9d4b0a2c52cef058bbde2e89410a1",
+    "text": "Die Grundlagen dieses {temple} zeugen von ihrer Genialität und ihrem fortgeschrittenen Verständnis komplexer Probleme. Sie waren Meisterhandwerker und zeichneten sich durch Magie aus.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.581653Z"
+  },
+  "npc.albinius.say_1": {
+    "src_hash": "c5bbc7fc18f99b4f525429ed9dc2bc56",
+    "text": "Der Tempel wurde in seinem früheren Glanz wiederhergestellt, dennoch bemühen wir uns, auf die {Shaper}-Art zu leben und zu loben. Muss ich dir, mein Kind, immer noch etwas altes {tomes} abnehmen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.589250Z"
+  },
+  "npc.albinius.say_10": {
+    "src_hash": "8ebe07d7adacdd880130a981ebf53704",
+    "text": "Wie Sie möchten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.589983Z"
+  },
+  "npc.albinius.say_11": {
+    "src_hash": "97343d414b0279359cf551dd0ded5cb2",
+    "text": "Sie können dieses Portal passieren, wenn Sie 50 Fische als Angebot haben. Hast du den Fisch dabei?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.593708Z"
+  },
+  "npc.albinius.say_12": {
+    "src_hash": "564d77fd05cf85eafc7beaf98158c8e9",
+    "text": "Entschuldigung, Sie müssen zuerst meine schweren alten Wälzer mitbringen oder die Quest erledigen, bevor Sie fortfahren können.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:16:45.598325Z"
+  },
+  "npc.albinius.say_13": {
+    "src_hash": "d3cb4061dfe0650f4f5123939b054e6f",
+    "text": "Vielen Dank für Ihr Angebot. Sie können jetzt das Portal zu den Mächten des Eises passieren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.537947Z"
+  },
+  "npc.albinius.say_14": {
+    "src_hash": "6ae2e72acfa36357841de88ec88e450b",
+    "text": "Es tut mir leid, Sie haben nicht genug Fisch. Kommen Sie zurück, wenn Sie fünfzig davon anbieten können.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.544194Z"
+  },
+  "npc.albinius.say_15": {
+    "src_hash": "26073f1e05ca9d6e075982d625434653",
+    "text": "In diesem Fall tut es mir Leid, Sie dürfen dieses Portal nicht passieren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.548374Z"
+  },
+  "npc.albinius.say_16": {
+    "src_hash": "eaa143d798834955ebbf3ace3155bb8e",
+    "text": "Sie können dieses Portal passieren, wenn Sie 50 Beschwörungsnotizen als Opfergabe haben. Hast du die Beschwörungsnotizen dabei?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.555160Z"
+  },
+  "npc.albinius.say_17": {
+    "src_hash": "e72619f6dbdda90f9eaf458295d43fff",
+    "text": "Entschuldigung, zuerst müssen Sie meine schweren alten Wälzer mitbringen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.559149Z"
+  },
+  "npc.albinius.say_18": {
+    "src_hash": "83ba7f03ddeb2b2c681408242fa4e09a",
+    "text": "Vielen Dank für Ihr Angebot. Sie können jetzt das Portal zu den Mächten des Heiligen passieren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.564461Z"
+  },
+  "npc.albinius.say_19": {
+    "src_hash": "8ed697ec051fcb942bfa778b28ba14b1",
+    "text": "Es tut mir leid, Sie haben nicht genügend Beschwörungsnotizen. Kommen Sie zurück, wenn Sie fünfzig davon anbieten können.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.570701Z"
+  },
+  "npc.albinius.say_2": {
+    "src_hash": "163f1f766107c4fcd0aabc4dc8c9e0d1",
+    "text": "Sie haben uns bereits genügend Wälzer zur Verfügung gestellt, damit wir diesen Tempel studieren und wieder aufbauen können. Danke, mein Kind.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.577759Z"
+  },
+  "npc.albinius.say_20": {
+    "src_hash": "26073f1e05ca9d6e075982d625434653",
+    "text": "In diesem Fall tut es mir Leid, Sie dürfen dieses Portal nicht passieren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.581752Z"
+  },
+  "npc.albinius.say_21": {
+    "src_hash": "6d6c47a93e194bbded938709f693594c",
+    "text": "Sie können dieses Portal passieren, wenn Sie 50 Sumpfpirscherfedern als Opfergabe haben. Hast du die Sumpfpirscherfedern dabei?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.588200Z"
+  },
+  "npc.albinius.say_22": {
+    "src_hash": "e72619f6dbdda90f9eaf458295d43fff",
+    "text": "Entschuldigung, zuerst müssen Sie meine schweren alten Wälzer mitbringen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.592068Z"
+  },
+  "npc.albinius.say_23": {
+    "src_hash": "bbf86a6f22a0ba07820ae1d6d04f081b",
+    "text": "Vielen Dank für Ihr Angebot. Sie können jetzt das Portal zu den Energiemächten passieren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.597216Z"
+  },
+  "npc.albinius.say_24": {
+    "src_hash": "8758511cab8f6c329da20174d4ebd085",
+    "text": "Es tut mir leid, du hast nicht genug Sumpfpirscherfedern. Kommen Sie zurück, wenn Sie fünfzig davon anbieten können.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.603285Z"
+  },
+  "npc.albinius.say_25": {
+    "src_hash": "26073f1e05ca9d6e075982d625434653",
+    "text": "In diesem Fall tut es mir Leid, Sie dürfen dieses Portal nicht passieren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.607359Z"
+  },
+  "npc.albinius.say_26": {
+    "src_hash": "4d114a765cc5574d1ccd1bd0bdf49d52",
+    "text": "Sie können dieses Portal passieren, wenn Sie 50 Eicheln als Opfergabe haben. Hast du die Eicheln dabei?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.613102Z"
+  },
+  "npc.albinius.say_27": {
+    "src_hash": "e72619f6dbdda90f9eaf458295d43fff",
+    "text": "Entschuldigung, zuerst müssen Sie meine schweren alten Wälzer mitbringen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.617008Z"
+  },
+  "npc.albinius.say_28": {
+    "src_hash": "353dcea077754d9851e281d01dcbcec9",
+    "text": "Vielen Dank für Ihr Angebot. Sie können jetzt das Portal die Mächte der Erde übergeben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.622119Z"
+  },
+  "npc.albinius.say_29": {
+    "src_hash": "b5ccfdd88f146a28c57b23ed711208ea",
+    "text": "Es tut mir leid, du hast nicht genug Eicheln. Kommen Sie zurück, wenn Sie fünfzig davon anbieten können.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.627688Z"
+  },
+  "npc.albinius.say_3": {
+    "src_hash": "784f387469d7dbf30dcd2e02e73e88c7",
+    "text": "Vielen Dank für deinen Beitrag, Kind. Ihr erster Schritt auf dem Weg des {Shapers} ist getan.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.632953Z"
+  },
+  "npc.albinius.say_30": {
+    "src_hash": "26073f1e05ca9d6e075982d625434653",
+    "text": "In diesem Fall tut es mir Leid, Sie dürfen dieses Portal nicht passieren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:04.636982Z"
+  },
+  "npc.albinius.say_31": {
+    "src_hash": "86acaa41910414b537537135662aca9d",
+    "text": "Sie können dieses Portal passieren, wenn Sie 50 Beckenknochen als Opfergabe haben. Hast du die Beckenknochen dabei?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.755554Z"
+  },
+  "npc.albinius.say_32": {
+    "src_hash": "e72619f6dbdda90f9eaf458295d43fff",
+    "text": "Entschuldigung, zuerst müssen Sie meine schweren alten Wälzer mitbringen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.759407Z"
+  },
+  "npc.albinius.say_33": {
+    "src_hash": "3d4ad8c25735f929accf915f609f656d",
+    "text": "Vielen Dank für Ihr Angebot. Sie können jetzt das Portal zu den Mächten des Todes passieren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.764470Z"
+  },
+  "npc.albinius.say_34": {
+    "src_hash": "2e841c934b55e6acc1ea691275b55bdc",
+    "text": "Es tut mir leid, Sie haben nicht genügend Beckenknochen. Kommen Sie zurück, wenn Sie fünfzig davon anbieten können.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.770396Z"
+  },
+  "npc.albinius.say_35": {
+    "src_hash": "26073f1e05ca9d6e075982d625434653",
+    "text": "In diesem Fall tut es mir Leid, Sie dürfen dieses Portal nicht passieren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.774562Z"
+  },
+  "npc.albinius.say_5": {
+    "src_hash": "1c2cf164ae1da4a0e0621b8ed22b5036",
+    "text": "Ich verstehe. Kehre zu mir zurück, wenn du deine Meinung änderst, mein Kind.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.778592Z"
+  },
+  "npc.albinius.say_6": {
+    "src_hash": "58d9f6475821d994d60a78ea9b5070ca",
+    "text": "Wenn Sie ein paar alte Shaper-Bücher haben, würde ich sie {buy}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.782513Z"
+  },
+  "npc.albinius.say_7": {
+    "src_hash": "5c8ce76dfb8fb52717e384903ddc718d",
+    "text": "Es tut mir leid, ich kaufe nichts. Meine größte Sorge gilt im Moment dem Bau dieses Tempels.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.787456Z"
+  },
+  "npc.albinius.say_8": {
+    "src_hash": "03d2f0ff4dd329177b81704019178b85",
+    "text": "Möchten Sie Ihre Runenteile zu einer Astralformer-Rune zusammenführen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.791338Z"
+  },
+  "npc.albinius.say_9": {
+    "src_hash": "74e07bf32edc0b0fc1bc7ebfc2718f67",
+    "text": "Es tut mir leid, aber dir fehlen die benötigten Runenteile.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.794787Z"
+  },
+  "npc.albinius.stdmod_1": {
+    "src_hash": "a25481c27be96973de945d5290bd82fd",
+    "text": "Ich bin Albinius, ein Verehrer des {Astral Shapers}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.797764Z"
+  },
+  "npc.albinius.stdmod_3": {
+    "src_hash": "b9af397be50c2a5b7054af0a56c0d5da",
+    "text": "Ich finde Wege, die Geheimnisse der Sterne zu enthüllen. Dieser Frage nach zu urteilen, bezweifle ich, dass Sie meinen wöchentlichen Veröffentlichungen zu dieser Forschung folgen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.806432Z"
+  },
+  "npc.aldo.say_1": {
+    "src_hash": "92bd15659fd110a449445da2f9911ede",
+    "text": "Möchten Sie Ihre abgenutzten Softboots für 10.000 Goldmünzen reparieren?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.810277Z"
+  },
+  "npc.aldo.say_2": {
+    "src_hash": "c290972324c5eea4715d6f4b17634ef1",
+    "text": "Leider haben Sie den Artikel nicht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.812327Z"
+  },
+  "npc.aldo.say_3": {
+    "src_hash": "62cb03af2f0829dd4c2a372fde981566",
+    "text": "Tut mir leid, du hast nicht genug Gold.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.814491Z"
+  },
+  "npc.aldo.say_4": {
+    "src_hash": "57403500decbf544b4f5d3639691234e",
+    "text": "Hier sind Sie ja.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.815518Z"
+  },
+  "npc.aldo.say_5": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Ok, dann.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.816236Z"
+  },
+  "npc.alesar.multi_1": {
+    "src_hash": "1114c8595689519453630e05184e72b2",
+    "text": "Du hast es also geschafft? Du hast es wirklich geschafft, eine Träne von Daraman zu stehlen? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.821234Z"
+  },
+  "npc.alesar.multi_10": {
+    "src_hash": "f417ebf365835e86276c5c4f060cf57c",
+    "text": "Leider ist mein letzter Edelstein kaputt gegangen und daher kann ich keine neuen Klingen mehr herstellen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.826737Z"
+  },
+  "npc.alesar.multi_11": {
+    "src_hash": "e2b2dc12c46d440e07b82de6bda59754",
+    "text": "Meines Wissens gibt es nur einen Ort, dem man diese Edelsteine ​​finden kann – ich weiß mit Sicherheit, dass die Marid mindestens einen davon haben. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:28.835112Z"
+  },
+  "npc.alesar.multi_12": {
+    "src_hash": "1c750dad9b543077bebba40850fdc93c",
+    "text": "Nun ... um es kurz zu machen: Ihre Mission besteht darin, sich in Ashta'daramai einzuschleichen und es zu stehlen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.105550Z"
+  },
+  "npc.alesar.multi_13": {
+    "src_hash": "917408c5c2abd331f48cd3becf0e4b93",
+    "text": "Unnötig zu erwähnen, dass die Marid sich nicht allzu gern davon trennen werden. Versuchen Sie, nicht getötet zu werden, bis Sie mir den Stein übergeben haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.111929Z"
+  },
+  "npc.alesar.multi_14": {
+    "src_hash": "3e22aacce6bba5ae12a3dc44e8a9b8fe",
+    "text": "Also denkt Baa'leal, dass du bereit bist, eine Mission für uns zu erfüllen? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.114987Z"
+  },
+  "npc.alesar.multi_15": {
+    "src_hash": "034d6d789ef350210f9614db4cac7675",
+    "text": "Ich glaube, er wird alt, wenn er einem menschlichen Abschaum wie Ihnen eine so wichtige Mission anvertraut. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.119218Z"
+  },
+  "npc.alesar.multi_16": {
+    "src_hash": "5b5571563e05166021894dc7de4716ab",
+    "text": "Ich persönlich verstehe nicht, warum Sie nicht direkt vor den Toren abgeschlachtet wurden. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.122887Z"
+  },
+  "npc.alesar.multi_17": {
+    "src_hash": "c80a802a64c336e2e120469bcaceb413",
+    "text": "Ohnehin. Sind Sie bereit, sich für uns auf eine gefährliche Mission einzulassen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.126018Z"
+  },
+  "npc.alesar.multi_19": {
+    "src_hash": "af1d7676e080534cde9afadad6e12530",
+    "text": "|PLAYERNAME|, das klang fast wie ein Grußwort. Menschen – süß sind sie!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.129175Z"
+  },
+  "npc.alesar.multi_2": {
+    "src_hash": "2d7f5e5be4caec64e0c05ad363e713ef",
+    "text": "Erstaunlich, wie unmöglich es ist, euch Menschen loszuwerden. Diese Charaktereigenschaft haben Sie übrigens mit vielen Insekten und anderem Ungeziefer gemeinsam. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.135340Z"
+  },
+  "npc.alesar.multi_3": {
+    "src_hash": "02035617fbb95b9cbfa733992a28d510",
+    "text": "Egal. Ich hasse es, es zu sagen, aber du hast uns einen Gefallen getan, Mensch. Dieser Edelstein wird uns gute Dienste leisten. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.140393Z"
+  },
+  "npc.alesar.multi_4": {
+    "src_hash": "d5e841d7d78dda0cd408fe03c5663788",
+    "text": "Baa'leal möchte, dass du mit Malor über eine neue Mission sprichst. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.143183Z"
+  },
+  "npc.alesar.multi_5": {
+    "src_hash": "7516b2fca66e7a23ce20065f20f078a2",
+    "text": "Sieht so aus, als hätten Sie es geschafft, Ihre Lebenserwartung zu verlängern – und zwar um ein kleines bisschen länger.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.147970Z"
+  },
+  "npc.alesar.multi_6": {
+    "src_hash": "e09c1e901d9793510c6fce1671d2ff6a",
+    "text": "Also gut, Mensch. Haben Sie schon einmal vom {'Tears of Daraman'} gehört? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.151199Z"
+  },
+  "npc.alesar.multi_7": {
+    "src_hash": "e5cfe9bc59d7e98522d3c7383300bf5a",
+    "text": "Es handelt sich um kostbare Edelsteine, die aus einem unbekannten blauen Mineral bestehen und eine enorme magische Kraft besitzen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.156157Z"
+  },
+  "npc.alesar.multi_8": {
+    "src_hash": "a948d3656a6cafd135ba1801fd39a17f",
+    "text": "Wenn Sie mehr über diese Edelsteine ​​erfahren möchten, vergessen Sie nicht, unsere Bibliothek zu besuchen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.160561Z"
+  },
+  "npc.alesar.multi_9": {
+    "src_hash": "69a7f8c142af3184b06d9c430e107b35",
+    "text": "Wie auch immer, eine davon reicht aus, um Tausende unserer mächtigen Dschinn-Klingen herzustellen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.164475Z"
+  },
+  "npc.alesar.say_1": {
+    "src_hash": "17bb78642c4a960215206201b82d1feb",
+    "text": "Verschwinde, Kleiner! Menschen sind hier nicht willkommen, |PLAYERNAME|!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.167165Z"
+  },
+  "npc.alesar.say_2": {
+    "src_hash": "a1d872d59dd5dfe91df89bb467bf32ec",
+    "text": "Was willst du von mir, |PLAYERNAME|?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.168661Z"
+  },
+  "npc.alesar.say_3": {
+    "src_hash": "33fba8268cb0d4cd9fa4e7ae7a023d69",
+    "text": "Hast du die Träne von Daraman gefunden?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.170316Z"
+  },
+  "npc.alesar.say_4": {
+    "src_hash": "015a3bd226bba9e93ec9da76b03a27ac",
+    "text": "Vergessen Sie nicht, mit Malor über Ihre nächste Mission zu sprechen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.173044Z"
+  },
+  "npc.alesar.say_5": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Dann nicht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:17:54.173627Z"
+  },
+  "npc.alesar.say_6": {
+    "src_hash": "d61944d86fccb84905ad61e91f964801",
+    "text": "Wie ich erwartet hatte. Du hast den Stein nicht. Soll ich deine Mission noch einmal erklären?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:02.060653Z"
+  },
+  "npc.alesar.say_7": {
+    "src_hash": "d61944d86fccb84905ad61e91f964801",
+    "text": "Wie ich erwartet hatte. Du hast den Stein nicht. Soll ich deine Mission noch einmal erklären?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:02.064394Z"
+  },
+  "npc.alesar.say_8": {
+    "src_hash": "63349cb1b00c4debabd768c4b022333a",
+    "text": "Es tut mir leid, aber Sie haben nicht Malors Erlaubnis, mit mir Handel zu treiben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.215963Z"
+  },
+  "npc.alesar_functions.multi_1": {
+    "src_hash": "1114c8595689519453630e05184e72b2",
+    "text": "Du hast es also geschafft? Du hast es wirklich geschafft, eine Träne von Daraman zu stehlen? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.220986Z"
+  },
+  "npc.alesar_functions.multi_10": {
+    "src_hash": "f417ebf365835e86276c5c4f060cf57c",
+    "text": "Leider ist mein letzter Edelstein kaputt gegangen und daher kann ich keine neuen Klingen mehr herstellen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.226064Z"
+  },
+  "npc.alesar_functions.multi_11": {
+    "src_hash": "e2b2dc12c46d440e07b82de6bda59754",
+    "text": "Meines Wissens gibt es nur einen Ort, dem man diese Edelsteine ​​finden kann – ich weiß mit Sicherheit, dass die Marid mindestens einen davon haben. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.233247Z"
+  },
+  "npc.alesar_functions.multi_12": {
+    "src_hash": "1c750dad9b543077bebba40850fdc93c",
+    "text": "Nun ... um es kurz zu machen: Ihre Mission besteht darin, sich in Ashta'daramai einzuschleichen und es zu stehlen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.238545Z"
+  },
+  "npc.alesar_functions.multi_13": {
+    "src_hash": "917408c5c2abd331f48cd3becf0e4b93",
+    "text": "Unnötig zu erwähnen, dass die Marid sich nicht allzu gern davon trennen werden. Versuchen Sie, nicht getötet zu werden, bis Sie mir den Stein übergeben haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.245679Z"
+  },
+  "npc.alesar_functions.multi_14": {
+    "src_hash": "3e22aacce6bba5ae12a3dc44e8a9b8fe",
+    "text": "Also denkt Baa'leal, dass du bereit bist, eine Mission für uns zu erfüllen? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.249462Z"
+  },
+  "npc.alesar_functions.multi_15": {
+    "src_hash": "034d6d789ef350210f9614db4cac7675",
+    "text": "Ich glaube, er wird alt, wenn er einem menschlichen Abschaum wie Ihnen eine so wichtige Mission anvertraut. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.254344Z"
+  },
+  "npc.alesar_functions.multi_16": {
+    "src_hash": "5b5571563e05166021894dc7de4716ab",
+    "text": "Ich persönlich verstehe nicht, warum Sie nicht direkt vor den Toren abgeschlachtet wurden. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.258374Z"
+  },
+  "npc.alesar_functions.multi_17": {
+    "src_hash": "c80a802a64c336e2e120469bcaceb413",
+    "text": "Ohnehin. Sind Sie bereit, sich für uns auf eine gefährliche Mission einzulassen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.262096Z"
+  },
+  "npc.alesar_functions.multi_2": {
+    "src_hash": "2d7f5e5be4caec64e0c05ad363e713ef",
+    "text": "Erstaunlich, wie unmöglich es ist, euch Menschen loszuwerden. Diese Charaktereigenschaft haben Sie übrigens mit vielen Insekten und anderem Ungeziefer gemeinsam. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.268616Z"
+  },
+  "npc.alesar_functions.multi_3": {
+    "src_hash": "02035617fbb95b9cbfa733992a28d510",
+    "text": "Egal. Ich hasse es, es zu sagen, aber du hast uns einen Gefallen getan, Mensch. Dieser Edelstein wird uns gute Dienste leisten. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.274422Z"
+  },
+  "npc.alesar_functions.multi_4": {
+    "src_hash": "d5e841d7d78dda0cd408fe03c5663788",
+    "text": "Baa'leal möchte, dass du mit Malor über eine neue Mission sprichst. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.278147Z"
+  },
+  "npc.alesar_functions.multi_5": {
+    "src_hash": "7516b2fca66e7a23ce20065f20f078a2",
+    "text": "Sieht so aus, als hätten Sie es geschafft, Ihre Lebenserwartung zu verlängern – und zwar um ein kleines bisschen länger.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.283735Z"
+  },
+  "npc.alesar_functions.multi_6": {
+    "src_hash": "e09c1e901d9793510c6fce1671d2ff6a",
+    "text": "Also gut, Mensch. Haben Sie schon einmal vom {'Tears of Daraman'} gehört? ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.287414Z"
+  },
+  "npc.alesar_functions.multi_7": {
+    "src_hash": "e5cfe9bc59d7e98522d3c7383300bf5a",
+    "text": "Es handelt sich um kostbare Edelsteine, die aus einem unbekannten blauen Mineral bestehen und eine enorme magische Kraft besitzen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.292913Z"
+  },
+  "npc.alesar_functions.multi_8": {
+    "src_hash": "a948d3656a6cafd135ba1801fd39a17f",
+    "text": "Wenn Sie mehr über diese Edelsteine ​​erfahren möchten, vergessen Sie nicht, unsere Bibliothek zu besuchen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.297942Z"
+  },
+  "npc.alesar_functions.multi_9": {
+    "src_hash": "69a7f8c142af3184b06d9c430e107b35",
+    "text": "Wie auch immer, eine davon reicht aus, um Tausende unserer mächtigen Dschinn-Klingen herzustellen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:27.302428Z"
+  },
+  "npc.alesar_functions.say_1": {
+    "src_hash": "33fba8268cb0d4cd9fa4e7ae7a023d69",
+    "text": "Hast du die Träne von Daraman gefunden?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:32.060508Z"
+  },
+  "npc.alesar_functions.say_2": {
+    "src_hash": "015a3bd226bba9e93ec9da76b03a27ac",
+    "text": "Vergessen Sie nicht, mit Malor über Ihre nächste Mission zu sprechen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:32.064691Z"
+  },
+  "npc.alesar_functions.say_3": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Dann nicht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:32.065812Z"
+  },
+  "npc.alesar_functions.say_4": {
+    "src_hash": "d61944d86fccb84905ad61e91f964801",
+    "text": "Wie ich erwartet hatte. Du hast den Stein nicht. Soll ich deine Mission noch einmal erklären?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:32.071258Z"
+  },
+  "npc.alesar_functions.say_5": {
+    "src_hash": "d61944d86fccb84905ad61e91f964801",
+    "text": "Wie ich erwartet hatte. Du hast den Stein nicht. Soll ich deine Mission noch einmal erklären?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:32.076651Z"
+  },
+  "npc.alexander.say_1": {
+    "src_hash": "b62a0dd738c7bd24999a8405be0ab6de",
+    "text": "Du bittest mich also um ein {{}}, um dein Abenteuer zu beginnen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:32.080580Z"
+  },
+  "npc.alexander.say_3": {
+    "src_hash": "8936c4405857b4f0c4a62fbd983ab87f",
+    "text": "Ok, dann.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:32.081533Z"
+  },
+  "npc.alexander.stdmod_1": {
+    "src_hash": "bbdce9ca85221459cb94bf2733257a94",
+    "text": "Verkaufe alle möglichen Zaubergeräte. Kommen Sie vorbei und schauen Sie sich das an",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:32.086466Z"
+  },
+  "npc.alexander.voice_1": {
+    "src_hash": "bbdce9ca85221459cb94bf2733257a94",
+    "text": "Verkaufe alle möglichen Zaubergeräte. Kommen Sie vorbei und schauen Sie sich das an",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T21:18:32.091467Z"
   }
 }

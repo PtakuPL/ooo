@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:11:18.397469Z",
+  "generated_at_utc": "2026-04-29T23:13:30.468330Z",
   "active_provider": "OpenAI model pool",
   "active_provider_code": "openai_model_pool",
   "active_provider_source": "openai:openai/gpt-4o-mini",
@@ -228,7 +228,7 @@
       "used_pct": 100.8,
       "monthly_cap": 250.0,
       "spent": 252.0,
-      "latest_age_s": 396.86321,
+      "latest_age_s": 523.426976,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false
@@ -256,7 +256,7 @@
       "pipeline_status": "active",
       "pipeline_severity": "ok",
       "pipeline_reason": "ok",
-      "top_reason": "existing_canonical_name_quality_cyrillic_latin_mix:1435",
+      "top_reason": "existing_canonical_name_quality_cyrillic_latin_mix:1413",
       "window_seconds": 86400
     }
   },

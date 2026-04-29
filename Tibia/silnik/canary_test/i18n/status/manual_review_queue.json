@@ -70560,11 +70560,360 @@
       ],
       "previous_state_source": "google_translate",
       "previous_state_updated_at": "2026-04-29T22:14:50.045349Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:26.540849Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_58",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "An extraordinary warrior. He's the first and last line of defense of {Rookgaard}.",
+      "attempted_translation": "Ein außergewöhnlicher Krieger. Er ist die erste und letzte Verteidigungslinie von {Rookgaard}.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:50.048763Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:11:26.685778Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_59",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Not the nicest guys you can encounter. I had some clashes with them and finally ended up being their {prisoner} for a few months.",
+      "attempted_translation": "Nicht die nettesten Typen, denen man begegnen kann. Ich hatte einige Auseinandersetzungen mit ihnen und war schließlich für ein paar Monate ihr {prisoner}.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:50.054744Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:12:52.953803Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_60",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I speak some Orcish words, not many though, just a few basics like '{yes}' and '{no}'.",
+      "attempted_translation": "Ich spreche einige orkische Wörter, allerdings nicht viele, nur ein paar Grundkenntnisse wie '{yes}' und '{no}'.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:50.060874Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:12:54.300722Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_64",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Yeah! If you give me some salmon, I'll tell you another Orcish word. Okay?",
+      "attempted_translation": "Ja! Wenn du mir etwas Lachs gibst, sage ich dir ein weiteres orkisches Wort. Okay?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:14:50.073658Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:12:54.434209Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_9",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I fought fierce {monsters}, climbed the highest mountains, explored the deepest {dungeons} and crossed the {sea} on a {raft}.",
+      "attempted_translation": "Ich kämpfte heftig gegen {monsters}, bestieg die höchsten Berge, erkundete die tiefsten {dungeons} und überquerte den {sea} auf einem {raft}.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:16.088502Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:12:55.797076Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.voice_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "What was that word again in Orcish language... hmm.",
+      "attempted_translation": "Wie war das nochmal für ein Wort in der orkischen Sprache... hmm.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:16.098327Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:12:56.171172Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.greet_msg_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "If you dug up all three crystals of sufficient quantity and obtained the poison gland, the charging of your compass can start! For the very first time it will be charged by the violet crystal. Ready to {unleash} the power of the crystals?",
+      "attempted_translation": "Wenn Sie alle drei Kristalle in ausreichender Menge ausgegraben und die Giftdrüse erhalten haben, kann die Aufladung Ihres Kompasses beginnen! Zum ersten Mal wird es durch den violetten Kristall aufgeladen. Bereit für {unleash} die Kraft der Kristalle?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "word_dict",
+      "previous_state_updated_at": "2026-04-29T22:10:19.875763Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:12:57.004935Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.multi_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I put these crystals onto the top of compass. As you can see, the compass is now pulsating in a warm, violet colour. ...",
+      "attempted_translation": "Ich habe diese Kristalle oben auf den Kompass gelegt. Wie Sie sehen, pulsiert der Kompass jetzt in einer warmen, violetten Farbe. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:16.140204Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:12:57.420389Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.multi_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Now this compass is ready for usage. It can transfer the bound energy to other inanimate objects to open certain gates or chests.",
+      "attempted_translation": "Jetzt ist dieser Kompass einsatzbereit. Es kann die gebundene Energie auf andere unbelebte Objekte übertragen, um bestimmte Tore oder Truhen zu öffnen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:16.179192Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:12:57.869790Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.multi_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Nice! To do so, take this golden axe and mine the prominent crystals in the cave. Besides, I need a poison gland of quite rare spiders, they are called lucifuga araneae. ...",
+      "attempted_translation": "Hübsch! Nehmen Sie dazu diese goldene Axt und bauen Sie die markanten Kristalle in der Höhle ab. Außerdem brauche ich eine Giftdrüse von recht seltenen Spinnen, sie heißen Lucifuga araneae. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:16.189836Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:12:58.718649Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.multi_5",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Alright, I put the glasses into the right pattern and can repair the compass. ...",
+      "attempted_translation": "Okay, ich habe die Brille in das richtige Muster gebracht und kann den Kompass reparieren. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:42.955947Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:12:59.096008Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.multi_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "There we are! The next step is the charging of the compass. For this you have to dig three different crystals down there: 5 blue, 3 green and one violet crystal. Are you ready to do that?",
+      "attempted_translation": "Da sind wir! Der nächste Schritt ist das Aufladen des Kompasses. Dafür musst du dort unten drei verschiedene Kristalle ausgraben: 5 blaue, 3 grüne und einen violetten Kristall. Sind Sie dazu bereit?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:42.963559Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:12:59.530925Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.multi_8",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I can repair the compass for you if you deliver what I need. Besides the broken compass you have to bring me the following materials: 50 blue glas plates, 15 green glas plates and 5 violet glas plates. ...",
+      "attempted_translation": "Ich kann den Kompass für Sie reparieren, wenn Sie mir das liefern, was ich brauche. Außer dem kaputten Kompass musst du mir folgende Materialien mitbringen: 50 blaue Glasplatten, 15 grüne Glasplatten und 5 violette Glasplatten. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:42.980302Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:13:00.103282Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.say_11",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You cannot do that yet.",
+      "attempted_translation": "Das können Sie noch nicht tun.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:42.994547Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:13:00.233279Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.say_12",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "It was decided to collect all of the compasses, destroy them and throw them in the fiery depths of Tibia. I still have some of them here. I {sell} them for a low price if you want.",
+      "attempted_translation": "Es wurde beschlossen, alle Kompasse einzusammeln, zu zerstören und in die feurigen Tiefen von Tibia zu werfen. Einige davon habe ich noch hier. Ich {sell} sie zu einem günstigen Preis, wenn Sie möchten.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:43.002159Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:13:00.952952Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.say_13",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Would you like to buy a broken compass for 10.000 gold?",
+      "attempted_translation": "Möchten Sie einen kaputten Kompass für 10.000 Gold kaufen?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:43.004502Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:13:01.138420Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.say_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "This sarcophagus seals the entrance to the caves down there. Only here you can get all the {materials} you need for a working compass of this kind. So no entrance here - no further magic compasses in Tibia. In theory.",
+      "attempted_translation": "Dieser Sarkophag verschließt den Eingang zu den Höhlen dort unten. Nur hier erhalten Sie alle {materials}, die Sie für einen funktionierenden Kompass dieser Art benötigen. Also hier kein Eintritt – keine weiteren magischen Kompasse in Tibia. Theoretisch.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:43.017107Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:13:01.341220Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.say_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "On first glance, this cave does not look very spectacular, but the things you find in there, are. You have to know that this is the only place where you can find the respective materials to build the compass.",
+      "attempted_translation": "Auf den ersten Blick sieht diese Höhle nicht sehr spektakulär aus, aber die Dinge, die man dort findet, sind es. Sie müssen wissen, dass dies der einzige Ort ist, dem Sie die entsprechenden Materialien zum Bau des Kompasses finden können.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:43.025977Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:13:01.659418Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.say_5",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You don't have the needed itens yet.",
+      "attempted_translation": "Sie haben noch nicht die benötigten Artikel.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:43.029673Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:13:02.042906Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.andrew_lyze.say_8",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You don't have the needed itens yet.",
+      "attempted_translation": "Sie haben noch nicht die benötigten Artikel.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T22:15:43.032732Z"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3603
+    "total": 3623
   },
-  "updated_at": "2026-04-29T23:11:25.659385Z"
+  "updated_at": "2026-04-29T23:13:02.070919Z"
 }

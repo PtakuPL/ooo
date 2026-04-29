@@ -1639,75 +1639,75 @@
   },
   {
     "date": "2026-04-29",
-    "hours_covered": 25,
+    "hours_covered": 26,
     "threshold": 24,
     "is_final": true,
     "ts_first": "2026-04-29T00:32:55Z",
-    "ts_last": "2026-04-29T19:50:43Z",
-    "translated": 16076,
-    "guard_fail": 626,
-    "suspicious_high": 7465,
+    "ts_last": "2026-04-29T20:51:39Z",
+    "translated": 16698,
+    "guard_fail": 628,
+    "suspicious_high": 7526,
     "identical_to_en": 0,
     "repair_start": 114185,
-    "repair_end": 114156,
-    "cycles": 385,
+    "repair_end": 114127,
+    "cycles": 393,
     "coverage_start": 17.91,
-    "coverage_end": 18.34,
-    "guard_fail_pct": 3.75,
-    "throughput_per_h": 643.0,
+    "coverage_end": 18.35,
+    "guard_fail_pct": 3.62,
+    "throughput_per_h": 642.2,
     "per_lang": {
       "cs": {
-        "t": 3065,
+        "t": 3172,
         "gf": 283,
-        "cov": 51.84
-      },
-      "ru": {
-        "t": 2738,
-        "gf": 63,
-        "cov": 46.3
+        "cov": 51.91
       },
       "de": {
-        "t": 2663,
+        "t": 2891,
         "gf": 84,
-        "cov": 67.98
+        "cov": 68.29
+      },
+      "ru": {
+        "t": 2801,
+        "gf": 65,
+        "cov": 46.3
       },
       "tr": {
-        "t": 2322,
+        "t": 2352,
         "gf": 0,
-        "cov": 35.75
+        "cov": 35.79
       },
       "ro": {
-        "t": 2048,
+        "t": 2104,
         "gf": 156,
-        "cov": 69.83
+        "cov": 69.85
       },
       "it": {
-        "t": 1919,
+        "t": 1950,
         "gf": 40,
-        "cov": 71.66
+        "cov": 71.7
       },
       "es": {
-        "t": 1321,
+        "t": 1428,
         "gf": 0,
-        "cov": 79.38
+        "cov": 79.45
       }
     },
     "per_cat": {
       "items.json": {
-        "t": 13413,
-        "gf": 542
+        "t": 13807,
+        "gf": 544
       },
       "npc.json": {
         "t": 1572,
         "gf": 42
       },
       "otclient_modules.json": {
-        "t": 1091,
+        "t": 1319,
         "gf": 42
       }
     },
     "mode_distribution": {
-      "AUTO_TRANSLATE": 1581
+      "AUTO_TRANSLATE": 1609
     },
     "migration_completed": 15,
     "migration_total": 15

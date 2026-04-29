@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T20:44:38.283817Z",
+  "timestamp": "2026-04-29T20:51:30.543979Z",
   "mode": "translations_only_strict",
   "state": "active",
   "reason": "",
@@ -9,7 +9,7 @@
   "marker_debt": {
     "priority_enabled": true,
     "priority_min_keys": 25,
-    "total_marker_todo": 152710,
+    "total_marker_todo": 152637,
     "top_candidates": [
       {
         "lang": "tr",
@@ -26,8 +26,8 @@
       {
         "lang": "cs",
         "json_file": "items.json",
-        "marker_todo": 18010,
-        "pending_total": 18010
+        "marker_todo": 17953,
+        "pending_total": 17953
       },
       {
         "lang": "fr",
@@ -38,8 +38,8 @@
       {
         "lang": "ro",
         "json_file": "items.json",
-        "marker_todo": 14595,
-        "pending_total": 14595
+        "marker_todo": 14579,
+        "pending_total": 14579
       },
       {
         "lang": "it",
@@ -99,9 +99,9 @@
     "tr"
   ],
   "json_files": 39,
-  "cache_hit": true,
+  "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 8,
+  "cache_cycle": 9,
   "candidates_count": 96,
   "global_quality_mode": false,
   "priority_gate": {
@@ -203,12 +203,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 14559,
+        "name_pending_total": 14543,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 14559,
-            "name_coverage_pct": 56.44
+            "name_pending": 14543,
+            "name_coverage_pct": 56.49
           },
           "monsters.json": {
             "name_total": 1637,
@@ -275,12 +275,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 16024,
+        "name_pending_total": 15967,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 16024,
-            "name_coverage_pct": 52.06
+            "name_pending": 15967,
+            "name_coverage_pct": 52.23
           },
           "monsters.json": {
             "name_total": 1637,

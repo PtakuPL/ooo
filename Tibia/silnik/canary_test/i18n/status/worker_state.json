@@ -404,7 +404,7 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-04-29T19:01:08Z",
+  "generated_at_utc": "2026-04-29T19:03:26Z",
   "global": {
     "en_keys_total": 74536,
     "errors_total": 11339,
@@ -415,136 +415,15 @@
     "i18n_global_stats": {
       "auto_translate": {
         "guard_fail": 0,
-        "json_file": "items.json",
-        "keys_to_translate": 13004,
-        "language": "es",
-        "recent_examples": [
-          {
-            "en": "hieroglyphs",
-            "key": "item.12444.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "jeroglíficos"
-          },
-          {
-            "en": "carving of a scorpion",
-            "key": "item.12447.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "talla de un escorpión"
-          },
-          {
-            "en": "carving of a scorpion",
-            "key": "item.12448.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "talla de un escorpión"
-          },
-          {
-            "en": "carving of a scorpion",
-            "key": "item.12449.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "talla de un escorpión"
-          },
-          {
-            "en": "carving of a scorpion",
-            "key": "item.12450.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "talla de un escorpión"
-          },
-          {
-            "en": "carving of a battle",
-            "key": "item.12453.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "talla de una batalla"
-          },
-          {
-            "en": "carving of a battle",
-            "key": "item.12454.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "talla de una batalla"
-          },
-          {
-            "en": "carving of a battle",
-            "key": "item.12455.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "talla de una batalla"
-          },
-          {
-            "en": "carving of a battle",
-            "key": "item.12458.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "talla de una batalla"
-          },
-          {
-            "en": "carving of a battle",
-            "key": "item.12459.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "talla de una batalla"
-          },
-          {
-            "en": "carving of a battle",
-            "key": "item.12460.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "talla de una batalla"
-          },
-          {
-            "en": "hyaena statue",
-            "key": "item.12465.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "estatua de hiena"
-          },
-          {
-            "en": "hyaena statue",
-            "key": "item.12466.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "estatua de hiena"
-          },
-          {
-            "en": "golden scorpion",
-            "key": "item.12467.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "escorpión dorado"
-          },
-          {
-            "en": "golden scorpion",
-            "key": "item.12468.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "escorpión dorado"
-          },
-          {
-            "en": "small golden scorpion",
-            "key": "item.12470.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "pequeño escorpión dorado"
-          },
-          {
-            "en": "small golden scorpion",
-            "key": "item.12471.name",
-            "source": "openai:openai/gpt-4.1-mini",
-            "translated": "pequeño escorpión dorado"
-          },
-          {
-            "en": "baby rotworm",
-            "key": "item.10026.name",
-            "source": "canonical_name_semantic_autofix",
-            "translated": "rotworm de bebé"
-          },
-          {
-            "en": "badger fur",
-            "key": "item.10299.name",
-            "source": "canonical_name_semantic_autofix",
-            "translated": "pelaje de badger"
-          },
-          {
-            "en": "bamboo drawer",
-            "key": "item.10194.name",
-            "source": "canonical_name_semantic_autofix",
-            "translated": "drawer de bambú"
-          }
-        ],
-        "recent_translated": 55,
+        "json_file": "otclient_modules.json",
+        "keys_to_translate": 1202,
+        "language": "de",
+        "recent_examples": [],
+        "recent_translated": 0,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
-      "category": "es",
+      "category": "de",
       "documentation": {
         "cursor": 18,
         "documented": 18,
@@ -587,7 +466,7 @@
         "new_files_detected": 0,
         "quality_issues": 6017
       },
-      "last_update": "2026-04-29T20:53:58.287143",
+      "last_update": "2026-04-29T21:02:28.941319",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -811,7 +690,7 @@
         "files_with_hits": 5423,
         "hits": 112434
       },
-      "total_cycles": 1,
+      "total_cycles": 2,
       "translation_sync": {
         "json_file": "arena.json",
         "keys_to_sync": 184,
@@ -829,20 +708,20 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "es",
+      "category": "de",
       "detail": "auto translate in progress",
       "eta_seconds": 0,
-      "file": "server.json",
+      "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "progress": {
         "done": 0,
-        "total": 9,
+        "total": 30,
         "unit": "keys"
       },
       "stage": "heartbeat_tick"
     },
-    "cycle": 2,
-    "heartbeat_at_utc": "2026-04-29T19:00:22Z",
+    "cycle": 3,
+    "heartbeat_at_utc": "2026-04-29T19:03:12Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

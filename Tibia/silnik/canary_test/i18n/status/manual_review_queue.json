@@ -68521,14 +68521,527 @@
       ],
       "previous_state_source": "tm",
       "previous_state_updated_at": "2026-04-29T18:18:16.798507Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:22.407357Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_lost_basher.greet_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:21.744426Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:24.247286Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_lost_basher.greet_msg_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:21.755729Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:24.409952Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_lost_basher.greet_msg_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:21.766458Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:26.443894Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_lost_husher.greet_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:21.779225Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:26.802227Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_lost_husher.greet_msg_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:21.789735Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:27.705092Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_lost_husher.greet_msg_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:21.800611Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:27.983739Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_lost_thrower.greet_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:21.815081Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:28.185582Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_lost_thrower.greet_msg_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:21.837778Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:28.592004Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_lost_thrower.greet_msg_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:21.849467Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:31.584835Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_majestic_warwolf.greet_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Interesting. A human who can speak the language of wolves.",
+      "attempted_translation": "Interessant. Ein Mensch, der die Sprache der Wölfe sprechen kann.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:21.870804Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:31.915403Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_majestic_warwolf.say_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I can see in your eyes that you are a honest and friendly person, |PLAYERNAME|. You were patient enough to learn our language and I will grant you a special gift. Will you accept it?",
+      "attempted_translation": "Ich kann in deinen Augen sehen, dass du ein ehrlicher und freundlicher Mensch bist, |PLAYERNAME|. Du hattest genug Geduld, unsere Sprache zu lernen, und ich werde dir ein besonderes Geschenk machen. Wirst du es akzeptieren?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:21.903214Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:32.365416Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_majestic_warwolf.say_female",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "From now on, you shall be known as |PLAYERNAME|, the wolf girl. You shall be fast and smart as Morgrar, the great white wolf. He shall guide your path.",
+      "attempted_translation": "Von nun wirst du als |PLAYERNAME|, das Wolfsmädchen, bekannt sein. Du sollst schnell und klug sein wie Morgrar, der große weiße Wolf. Er wird deinen Weg leiten.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:21.922165Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:32.570828Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_nightmare_scion.greet_msg_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:21.944033Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:32.762484Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_nightmare_scion.greet_msg_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:21.954871Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:32.962604Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_nightmare_scion.greet_msg_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "attempted_translation": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.051312Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:33.284077Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_prisoner.say_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Hurray! For that I will give you my key for - hmm - let's say ... some apples. Interested?",
+      "attempted_translation": "Hurra! Dafür gebe ich dir meinen Schlüssel für – hmm – sagen wir mal … ein paar Äpfel. Interessiert?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.068614Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:33.610801Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_prisoner.say_10",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Great riddle, isn't it? If you can tell me the correct answer, I will give you something. Hehehe!",
+      "attempted_translation": "Tolles Rätsel, nicht wahr? Wenn Sie mir die richtige Antwort sagen können, gebe ich Ihnen etwas. Hehehe!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.083140Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:34.403951Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_prisoner.say_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Get some more apples first!",
+      "attempted_translation": "Holen Sie sich zuerst noch ein paar Äpfel!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.108865Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:34.929449Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_restless_soul.multi_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I was captured and tortured to death by the cultists here. They worship a being that they call Ghazbaran ...",
+      "attempted_translation": "Ich wurde hier von den Kultisten gefangen genommen und zu Tode gefoltert. Sie verehren ein Wesen, das sie Ghazbaran nennen ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.142518Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:35.939058Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_restless_soul.multi_2",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "In his name they have claimed the mines and started to melt the ice to free an army of vile demons that have been frozen here for ages ...",
+      "attempted_translation": "In seinem Namen haben sie die Minen beansprucht und begonnen, das Eis zu schmelzen, um eine Armee abscheulicher Dämonen zu befreien, die hier seit Ewigkeiten eingefroren waren ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.162820Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:36.131357Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_restless_soul.multi_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Their plan is to create a new demon army for their master to conquer the world. Hjaern and the other shamans must learn about it! Hurry before its too late.",
+      "attempted_translation": "Ihr Plan ist es, für ihren Meister eine neue Dämonenarmee zu erschaffen, um die Welt zu erobern. Hjaern und die anderen Schamanen müssen davon erfahren! Beeilen Sie sich, bevor es zu spät ist.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.185412Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:36.514840Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_10",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "With your eyes covered and avoiding direct sight of the rays, you put the mirror into the stand. ...",
+      "attempted_translation": "Bedecken Sie die Augen und vermeiden Sie den direkten Blick auf die Strahlen. Stellen Sie den Spiegel in den Ständer. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.200566Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:36.720867Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_11",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Instinctively you run to a larger emerald bluff near the raise to find cover. Mere seconds after you claimed the sturdy shelter, a deep dark humming starts to swirl through the air. ...",
+      "attempted_translation": "Instinktiv rennen Sie zu einer größeren smaragdgrünen Klippe in der Nähe der Anhöhe, um dort Deckung zu finden. Nur wenige Sekunden, nachdem Sie den stabilen Unterschlupf erobert haben, beginnt ein tiefes, dunkles Summen durch die Luft zu wirbeln. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.228121Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:37.598829Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_14",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The hand seems to have grown into a fist. In the distance you can now see a blurry scheme of a creature too large for your eyes to get a sharper view of its head. ...",
+      "attempted_translation": "Die Hand scheint zu einer Faust gewachsen zu sein. In der Ferne können Sie jetzt das verschwommene Schema einer Kreatur erkennen, die zu groß ist, als dass Ihre Augen einen schärferen Blick auf ihren Kopf ermöglichen könnten. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.259090Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:37.815725Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_19",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "As your eyes adjust to the sudden reduction of brightness, you see the giant wings of the gate before you move to the side. You can also make out something shiny on the ground.",
+      "attempted_translation": "Während sich Ihre Augen die plötzliche Verringerung der Helligkeit gewöhnen, sehen Sie die riesigen Flügel des Tors, bevor Sie zur Seite gehen. Sie können auch etwas Glänzendes auf dem Boden erkennen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.308319Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:38.014096Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_22",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "A broad darkness surrounds you as if a heavy curtain is closing before your eyes. After what seems like minutes of floating through emptiness, you get the feeling as if a hole opens in the dark before you. ...",
+      "attempted_translation": "Eine weite Dunkelheit umgibt Sie, als würde sich ein schwerer Vorhang vor Ihren Augen schließen. Nach gefühlten Minuten des Schwebens durch die Leere hat man das Gefühl, als würde sich vor einem ein Loch im Dunkeln öffnen. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.338511Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:38.252669Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_23",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The hole grows larger, you cannot close your eyes. An unimaginable black. Deeper and darker than any nothingness you could possibly imagine drags you into it. ...",
+      "attempted_translation": "Das Loch wird größer, man kann die Augen nicht schließen. Ein unvorstellbares Schwarz. Tiefer und dunkler als jedes Nichts, das Sie sich vorstellen können, zieht Sie hinein. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.358056Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:38.642108Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_25",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You dive into an ocean of emerald light. Feeling like born anew the colour around you is almost overwhelming. Countless objects of all shapes and sizes are dashing past you. Racing against each other, millions are clashing in the distance. ..",
+      "attempted_translation": "Du tauchst ein in einen Ozean aus smaragdgrünem Licht. Das Gefühl, neu geboren zu sein, die Farbe um einen herum ist fast überwältigend. Unzählige Objekte aller Formen und Größen flitzen an Ihnen vorbei. Im Wettlauf gegeneinander prallen Millionen in der Ferne aufeinander. ..",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.396953Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:39.421639Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_26",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "The loudness of the gargantuan spectacle around you bursts your hearing, yet you absorb all the sounds around you. ...",
+      "attempted_translation": "Die Lautstärke des gigantischen Spektakels um Sie herum sprengt Ihr Gehör, und doch absorbieren Sie alle Geräusche um Sie herum. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.412444Z"
+    },
+    {
+      "timestamp": "2026-04-29T19:03:39.579227Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_27",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "As several large obstacles move aside directly in front of you, an intense bright centre leaps into your view. Though you cannot perceive how fast you are, your pace seems too slow. ...",
+      "attempted_translation": "Während sich mehrere große Hindernisse direkt vor Ihnen zur Seite bewegen, springt ein intensiv helles Zentrum in Ihr Blickfeld. Obwohl Sie Ihre Geschwindigkeit nicht wahrnehmen können, scheint Ihr Tempo zu langsam zu sein. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:24:22.436850Z"
     }
   ],
   "stats": {
-    "total": 3484,
+    "total": 3514,
     "reviewed": 0,
     "approved": 0,
     "rejected": 0,
     "applied": 0
   },
-  "updated_at": "2026-04-29T19:01:36.179115Z"
+  "updated_at": "2026-04-29T19:03:39.615469Z"
 }

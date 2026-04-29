@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-04-29T19:01:35.753742Z",
+  "updated_at": "2026-04-29T19:03:23.885972Z",
   "tracked_keys": 8885,
   "retry_due_now": 5396,
   "manual_review_locked": 2939,
@@ -8,12 +8,12 @@
   "stats": {
     "enqueued": 0,
     "suppressed_cooldown": 0,
-    "suppressed_manual_review": 4,
+    "suppressed_manual_review": 0,
     "deduped_ttl": 0,
-    "manual_review_escalations": 0,
-    "partial_staged": 4,
+    "manual_review_escalations": 1,
+    "partial_staged": 0,
     "partial_completed": 0,
     "retry_loop_cooldown": 0,
-    "retry_loop_manual_review": 4
+    "retry_loop_manual_review": 0
   }
 }

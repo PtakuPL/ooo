@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T18:54:21.105225Z",
+  "timestamp": "2026-04-29T19:03:11.173865Z",
   "mode": "translations_only_strict",
   "state": "active",
   "reason": "",
@@ -9,7 +9,7 @@
   "marker_debt": {
     "priority_enabled": true,
     "priority_min_keys": 25,
-    "total_marker_todo": 153187,
+    "total_marker_todo": 153082,
     "top_candidates": [
       {
         "lang": "tr",
@@ -38,8 +38,8 @@
       {
         "lang": "ro",
         "json_file": "items.json",
-        "marker_todo": 14618,
-        "pending_total": 14618
+        "marker_todo": 14608,
+        "pending_total": 14608
       },
       {
         "lang": "it",
@@ -50,8 +50,8 @@
       {
         "lang": "es",
         "json_file": "items.json",
-        "marker_todo": 13004,
-        "pending_total": 13004
+        "marker_todo": 12977,
+        "pending_total": 12977
       },
       {
         "lang": "ru",
@@ -68,8 +68,8 @@
       {
         "lang": "de",
         "json_file": "otclient_modules.json",
-        "marker_todo": 715,
-        "pending_total": 1202
+        "marker_todo": 647,
+        "pending_total": 1128
       },
       {
         "lang": "de",
@@ -99,9 +99,9 @@
     "tr"
   ],
   "json_files": 39,
-  "cache_hit": true,
+  "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 2,
+  "cache_cycle": 3,
   "candidates_count": 96,
   "global_quality_mode": false,
   "priority_gate": {
@@ -163,12 +163,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 12893,
+        "name_pending_total": 12866,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 12893,
-            "name_coverage_pct": 61.43
+            "name_pending": 12866,
+            "name_coverage_pct": 61.51
           },
           "monsters.json": {
             "name_total": 1637,
@@ -212,12 +212,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 14582,
+        "name_pending_total": 14572,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 14582,
-            "name_coverage_pct": 56.37
+            "name_pending": 14572,
+            "name_coverage_pct": 56.4
           },
           "monsters.json": {
             "name_total": 1637,

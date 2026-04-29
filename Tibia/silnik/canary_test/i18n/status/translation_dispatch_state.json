@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-04-29T18:54:20.865540Z",
-  "cycle_counter": 13278,
-  "last_target_key": "de:otclient_modules.json",
-  "last_pending_total": 1202,
-  "last_marker_todo": 715,
+  "timestamp": "2026-04-29T19:03:11.171056Z",
+  "cycle_counter": 13279,
+  "last_target_key": "de:npc.json",
+  "last_pending_total": 13025,
+  "last_marker_todo": 537,
   "last_tier": 2,
-  "last_cat_priority": 8,
+  "last_cat_priority": 0,
   "candidates_count": 96,
   "active_candidates_count": 89,
   "skipped_backoff": 7,
@@ -14,7 +14,7 @@
   "marker_debt": {
     "priority_enabled": true,
     "priority_min_keys": 25,
-    "total_marker_todo": 153187,
+    "total_marker_todo": 153082,
     "top_candidates": [
       {
         "lang": "tr",
@@ -43,8 +43,8 @@
       {
         "lang": "ro",
         "json_file": "items.json",
-        "marker_todo": 14618,
-        "pending_total": 14618
+        "marker_todo": 14608,
+        "pending_total": 14608
       },
       {
         "lang": "it",
@@ -55,8 +55,8 @@
       {
         "lang": "es",
         "json_file": "items.json",
-        "marker_todo": 13004,
-        "pending_total": 13004
+        "marker_todo": 12977,
+        "pending_total": 12977
       },
       {
         "lang": "ru",
@@ -73,8 +73,8 @@
       {
         "lang": "de",
         "json_file": "otclient_modules.json",
-        "marker_todo": 715,
-        "pending_total": 1202
+        "marker_todo": 647,
+        "pending_total": 1128
       },
       {
         "lang": "de",
@@ -130,8 +130,8 @@
       {
         "lang": "ro",
         "json_file": "items.json",
-        "marker_todo": 14618,
-        "pending_total": 14618
+        "marker_todo": 14608,
+        "pending_total": 14608
       },
       {
         "lang": "it",
@@ -142,14 +142,14 @@
       {
         "lang": "es",
         "json_file": "items.json",
-        "marker_todo": 13004,
-        "pending_total": 13004
+        "marker_todo": 12977,
+        "pending_total": 12977
       },
       {
         "lang": "de",
         "json_file": "otclient_modules.json",
-        "marker_todo": 715,
-        "pending_total": 1202
+        "marker_todo": 647,
+        "pending_total": 1128
       },
       {
         "lang": "de",
@@ -182,9 +182,9 @@
     "w2": 3,
     "w3": 1
   },
-  "cache_hit": true,
+  "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 2,
+  "cache_cycle": 3,
   "no_progress_counts": {
     "sv:dataroot.json": 0,
     "sr:dataroot.json": 0,
@@ -557,20 +557,12 @@
     "floor_pct": 25.0,
     "weight": 2,
     "gated_langs": {
-      "ru": {
-        "allowed_domain": "npc.json",
-        "domain_coverages": {
-          "items.json": 34.48,
-          "npc.json": 19.1,
-          "quests.json": 99.51
-        }
-      },
-      "ro": {
+      "it": {
         "allowed_domain": null,
         "domain_coverages": {
-          "items.json": 46.06,
-          "npc.json": 69.88,
-          "quests.json": 99.02
+          "items.json": 52.73,
+          "npc.json": 76.51,
+          "quests.json": 99.18
         }
       },
       "cs": {
@@ -581,12 +573,20 @@
           "quests.json": 98.85
         }
       },
-      "it": {
+      "ro": {
         "allowed_domain": null,
         "domain_coverages": {
-          "items.json": 52.73,
-          "npc.json": 76.51,
-          "quests.json": 99.18
+          "items.json": 46.06,
+          "npc.json": 69.88,
+          "quests.json": 99.02
+        }
+      },
+      "ru": {
+        "allowed_domain": "npc.json",
+        "domain_coverages": {
+          "items.json": 34.48,
+          "npc.json": 19.1,
+          "quests.json": 99.51
         }
       }
     },
@@ -697,12 +697,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 12893,
+        "name_pending_total": 12866,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 12893,
-            "name_coverage_pct": 61.43
+            "name_pending": 12866,
+            "name_coverage_pct": 61.51
           },
           "monsters.json": {
             "name_total": 1637,
@@ -746,12 +746,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 14582,
+        "name_pending_total": 14572,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 14582,
-            "name_coverage_pct": 56.37
+            "name_pending": 14572,
+            "name_coverage_pct": 56.4
           },
           "monsters.json": {
             "name_total": 1637,
@@ -864,7 +864,5 @@
         }
       }
     }
-  },
-  "last_phase": "PRE_MIGRATION",
-  "last_phase_ts": "2026-04-29T20:54:26"
+  }
 }

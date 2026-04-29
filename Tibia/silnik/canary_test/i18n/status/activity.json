@@ -3,7 +3,7 @@
   "cycle": 14,
   "eta_seconds": 0,
   "file": "npc.json",
-  "generated_at_utc": "2026-04-29T21:43:17Z",
+  "generated_at_utc": "2026-04-29T21:45:10Z",
   "message": "auto translate in progress",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -12,6 +12,16 @@
     "unit": "keys"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 14,
+      "file": "npc.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T21:45:10Z"
+    },
     {
       "action": "update",
       "category": "es",
@@ -101,16 +111,6 @@
       "result": "ok",
       "stage": "heartbeat_tick",
       "t": "2026-04-29T21:31:41Z"
-    },
-    {
-      "action": "update",
-      "category": "cs",
-      "cycle": 14,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T21:29:50Z"
     }
   ],
   "stage": "heartbeat_tick",

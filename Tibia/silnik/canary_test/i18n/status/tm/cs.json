@@ -13541,7 +13541,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:06.201859Z"
+    "updated_at": "2026-04-29T20:38:38.493919Z"
   },
   "item.11660.name": {
     "src_hash": "4fa8a3df507626f1fed6d77630dc2ba4",
@@ -13549,7 +13549,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:06.208731Z"
+    "updated_at": "2026-04-29T20:38:38.498437Z"
   },
   "item.11699.desc": {
     "src_hash": "a3941ffba3cca1b52d1610c6b29884fc",
@@ -115917,7 +115917,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:10.238650Z"
+    "updated_at": "2026-04-29T20:38:38.501424Z"
   },
   "item.1262.name": {
     "src_hash": "4b2eef524ee371e73b293e0987babf23",
@@ -115925,7 +115925,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:10.246176Z"
+    "updated_at": "2026-04-29T20:38:38.503903Z"
   },
   "item.12624.name": {
     "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
@@ -115981,7 +115981,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:10.254280Z"
+    "updated_at": "2026-04-29T20:38:38.506300Z"
   },
   "item.12630.name": {
     "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
@@ -116005,7 +116005,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:10.260329Z"
+    "updated_at": "2026-04-29T20:38:38.508586Z"
   },
   "item.1265.name": {
     "src_hash": "4b2eef524ee371e73b293e0987babf23",
@@ -116013,7 +116013,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:10.268351Z"
+    "updated_at": "2026-04-29T20:38:40.292041Z"
   },
   "item.1266.name": {
     "src_hash": "4b2eef524ee371e73b293e0987babf23",
@@ -116021,7 +116021,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:10.273824Z"
+    "updated_at": "2026-04-29T20:38:40.295443Z"
   },
   "item.12666.name": {
     "src_hash": "b17bf040f2649c15a07eee76959bcaa4",
@@ -116053,7 +116053,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:12.149983Z"
+    "updated_at": "2026-04-29T20:38:40.298547Z"
   },
   "item.12676.name": {
     "src_hash": "97f961d2a6c66006e2bbf4ad4001e292",
@@ -116077,7 +116077,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:12.155168Z"
+    "updated_at": "2026-04-29T20:38:40.301919Z"
   },
   "item.1269.name": {
     "src_hash": "4b2eef524ee371e73b293e0987babf23",
@@ -116085,7 +116085,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T19:34:12.159693Z"
+    "updated_at": "2026-04-29T20:38:40.305402Z"
   },
   "item.12713.name": {
     "src_hash": "338800676161294469abb3eae7c2d3c1",
@@ -130965,7 +130965,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:08.173984Z"
+    "updated_at": "2026-04-29T20:38:40.307930Z"
   },
   "item.15485.name": {
     "src_hash": "7910c9220bf57c7720fd8318ee0b1555",
@@ -130973,7 +130973,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:10.634137Z"
+    "updated_at": "2026-04-29T20:38:43.120855Z"
   },
   "item.15486.name": {
     "src_hash": "7910c9220bf57c7720fd8318ee0b1555",
@@ -130981,7 +130981,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:10.637161Z"
+    "updated_at": "2026-04-29T20:38:43.124434Z"
   },
   "item.15487.name": {
     "src_hash": "7910c9220bf57c7720fd8318ee0b1555",
@@ -130989,7 +130989,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:10.640338Z"
+    "updated_at": "2026-04-29T20:38:43.128038Z"
   },
   "item.1549.name": {
     "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
@@ -131237,7 +131237,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:10.645779Z"
+    "updated_at": "2026-04-29T20:38:43.132161Z"
   },
   "item.15519.name": {
     "src_hash": "3256327dea93e8c8caaedea13b54bbc9",
@@ -131245,7 +131245,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:10.649362Z"
+    "updated_at": "2026-04-29T20:38:43.135784Z"
   },
   "item.15520.name": {
     "src_hash": "3256327dea93e8c8caaedea13b54bbc9",
@@ -131253,7 +131253,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:10.652954Z"
+    "updated_at": "2026-04-29T20:38:43.139409Z"
   },
   "item.15521.name": {
     "src_hash": "3256327dea93e8c8caaedea13b54bbc9",
@@ -131261,7 +131261,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:12.966937Z"
+    "updated_at": "2026-04-29T20:38:45.042261Z"
   },
   "item.15522.name": {
     "src_hash": "3256327dea93e8c8caaedea13b54bbc9",
@@ -131269,7 +131269,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:12.970739Z"
+    "updated_at": "2026-04-29T20:38:45.046051Z"
   },
   "item.15523.name": {
     "src_hash": "3256327dea93e8c8caaedea13b54bbc9",
@@ -131277,7 +131277,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:12.975493Z"
+    "updated_at": "2026-04-29T20:38:45.049681Z"
   },
   "item.15524.name": {
     "src_hash": "3256327dea93e8c8caaedea13b54bbc9",
@@ -131285,7 +131285,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:12.981172Z"
+    "updated_at": "2026-04-29T20:38:45.053336Z"
   },
   "item.15525.name": {
     "src_hash": "3256327dea93e8c8caaedea13b54bbc9",
@@ -131293,7 +131293,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:12.988825Z"
+    "updated_at": "2026-04-29T20:38:45.056894Z"
   },
   "item.15526.name": {
     "src_hash": "3256327dea93e8c8caaedea13b54bbc9",
@@ -131301,7 +131301,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:12.996508Z"
+    "updated_at": "2026-04-29T20:38:45.060294Z"
   },
   "item.15527.name": {
     "src_hash": "3256327dea93e8c8caaedea13b54bbc9",
@@ -131309,7 +131309,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:15.108311Z"
+    "updated_at": "2026-04-29T20:38:47.277144Z"
   },
   "item.15528.name": {
     "src_hash": "edefcf0fac9cfe9d7b79cf35391a1079",
@@ -131317,7 +131317,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:15.112447Z"
+    "updated_at": "2026-04-29T20:38:47.280825Z"
   },
   "item.15529.name": {
     "src_hash": "edefcf0fac9cfe9d7b79cf35391a1079",
@@ -131325,7 +131325,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:15.115314Z"
+    "updated_at": "2026-04-29T20:38:47.284372Z"
   },
   "item.15530.name": {
     "src_hash": "edefcf0fac9cfe9d7b79cf35391a1079",
@@ -131333,7 +131333,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:15.118488Z"
+    "updated_at": "2026-04-29T20:38:47.288032Z"
   },
   "item.15531.name": {
     "src_hash": "edefcf0fac9cfe9d7b79cf35391a1079",
@@ -131341,7 +131341,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:15.122522Z"
+    "updated_at": "2026-04-29T20:38:47.291596Z"
   },
   "item.15532.name": {
     "src_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
@@ -131381,7 +131381,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:01:15.128830Z"
+    "updated_at": "2026-04-29T20:38:47.295523Z"
   },
   "item.15537.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
@@ -131389,7 +131389,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:33:19.923709Z"
+    "updated_at": "2026-04-29T20:38:48.893459Z"
   },
   "item.15538.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
@@ -131397,7 +131397,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:33:19.927931Z"
+    "updated_at": "2026-04-29T20:38:48.896641Z"
   },
   "item.15539.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
@@ -131405,7 +131405,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:33:19.931938Z"
+    "updated_at": "2026-04-29T20:38:48.899687Z"
   },
   "item.15540.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
@@ -131413,7 +131413,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:33:21.829488Z"
+    "updated_at": "2026-04-29T20:38:48.902570Z"
   },
   "item.15541.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
@@ -131421,7 +131421,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:33:21.836952Z"
+    "updated_at": "2026-04-29T20:38:48.905484Z"
   },
   "item.15542.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
@@ -131429,7 +131429,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:33:21.843042Z"
+    "updated_at": "2026-04-29T20:38:48.908336Z"
   },
   "item.15543.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
@@ -131437,7 +131437,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:33:21.848850Z"
+    "updated_at": "2026-04-29T20:38:51.211492Z"
   },
   "item.15544.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
@@ -131445,7 +131445,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:33:21.854807Z"
+    "updated_at": "2026-04-29T20:38:51.215338Z"
   },
   "item.15545.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
@@ -131453,7 +131453,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:33:21.859817Z"
+    "updated_at": "2026-04-29T20:38:51.219089Z"
   },
   "item.15546.name": {
     "src_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
@@ -132574,5 +132574,533 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-04-29T19:32:50.619606Z"
+  },
+  "item.15771.name": {
+    "src_hash": "31c431698a52248592e4368acccc3fee",
+    "text": "ledová stěna",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.514968Z"
+  },
+  "item.15772.name": {
+    "src_hash": "31c431698a52248592e4368acccc3fee",
+    "text": "ledová stěna",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.517458Z"
+  },
+  "item.15773.name": {
+    "src_hash": "31c431698a52248592e4368acccc3fee",
+    "text": "ledová stěna",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.519850Z"
+  },
+  "item.15797.name": {
+    "src_hash": "81b7d73f65ee73dbe866bc9ac588267d",
+    "text": "velký krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.582814Z"
+  },
+  "item.15798.name": {
+    "src_hash": "81b7d73f65ee73dbe866bc9ac588267d",
+    "text": "velký krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.587962Z"
+  },
+  "item.15799.name": {
+    "src_hash": "81b7d73f65ee73dbe866bc9ac588267d",
+    "text": "velký krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.593077Z"
+  },
+  "item.158.name": {
+    "src_hash": "6e8db59f5f03a790dd55901a206a1e23",
+    "text": "zemská svatyně",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.598322Z"
+  },
+  "item.15800.name": {
+    "src_hash": "81b7d73f65ee73dbe866bc9ac588267d",
+    "text": "velký krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.608195Z"
+  },
+  "item.15803.name": {
+    "src_hash": "d7a3f255ca2719f48ee4a2cc5a76b249",
+    "text": "osamělý krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.622769Z"
+  },
+  "item.15804.name": {
+    "src_hash": "d7a3f255ca2719f48ee4a2cc5a76b249",
+    "text": "osamělý krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.629101Z"
+  },
+  "item.15805.name": {
+    "src_hash": "d7a3f255ca2719f48ee4a2cc5a76b249",
+    "text": "osamělý krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.635458Z"
+  },
+  "item.15806.name": {
+    "src_hash": "d7a3f255ca2719f48ee4a2cc5a76b249",
+    "text": "osamělý krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.641918Z"
+  },
+  "item.15807.name": {
+    "src_hash": "d7a3f255ca2719f48ee4a2cc5a76b249",
+    "text": "osamělý krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.648462Z"
+  },
+  "item.15808.name": {
+    "src_hash": "d7a3f255ca2719f48ee4a2cc5a76b249",
+    "text": "osamělý krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.654950Z"
+  },
+  "item.15809.name": {
+    "src_hash": "81b7d73f65ee73dbe866bc9ac588267d",
+    "text": "velký krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.660726Z"
+  },
+  "item.15810.name": {
+    "src_hash": "81b7d73f65ee73dbe866bc9ac588267d",
+    "text": "velký krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.669832Z"
+  },
+  "item.15811.name": {
+    "src_hash": "81b7d73f65ee73dbe866bc9ac588267d",
+    "text": "velký krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.675245Z"
+  },
+  "item.15812.name": {
+    "src_hash": "81b7d73f65ee73dbe866bc9ac588267d",
+    "text": "velký krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.680608Z"
+  },
+  "item.15813.name": {
+    "src_hash": "81b7d73f65ee73dbe866bc9ac588267d",
+    "text": "velký krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.685944Z"
+  },
+  "item.15814.name": {
+    "src_hash": "81b7d73f65ee73dbe866bc9ac588267d",
+    "text": "velký krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.691158Z"
+  },
+  "item.15815.name": {
+    "src_hash": "81b7d73f65ee73dbe866bc9ac588267d",
+    "text": "velký krystal",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.696328Z"
+  },
+  "item.15834.name": {
+    "src_hash": "4c7828f8184284733e533011708ce42d",
+    "text": "ledová kamenná podlaha",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.756498Z"
+  },
+  "item.15835.name": {
+    "src_hash": "4c7828f8184284733e533011708ce42d",
+    "text": "ledová kamenná podlaha",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.764033Z"
+  },
+  "item.15836.name": {
+    "src_hash": "4c7828f8184284733e533011708ce42d",
+    "text": "ledová kamenná podlaha",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.771594Z"
+  },
+  "item.15837.name": {
+    "src_hash": "4c7828f8184284733e533011708ce42d",
+    "text": "ledová kamenná podlaha",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.778958Z"
+  },
+  "item.15838.name": {
+    "src_hash": "4c7828f8184284733e533011708ce42d",
+    "text": "ledová kamenná podlaha",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.786863Z"
+  },
+  "item.15839.name": {
+    "src_hash": "4c7828f8184284733e533011708ce42d",
+    "text": "ledová kamenná podlaha",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.795629Z"
+  },
+  "item.15840.name": {
+    "src_hash": "4c7828f8184284733e533011708ce42d",
+    "text": "ledová kamenná podlaha",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.808090Z"
+  },
+  "item.15841.name": {
+    "src_hash": "4c7828f8184284733e533011708ce42d",
+    "text": "ledová kamenná podlaha",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.816219Z"
+  },
+  "item.15842.name": {
+    "src_hash": "4c7828f8184284733e533011708ce42d",
+    "text": "ledová kamenná podlaha",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:34.824235Z"
+  },
+  "item.1573.name": {
+    "src_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
+    "text": "poškozená kamenná zeď",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:51.224098Z"
+  },
+  "item.1574.name": {
+    "src_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
+    "text": "poškozená kamenná zeď",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:51.229201Z"
+  },
+  "item.15747.name": {
+    "src_hash": "e980fa5e20c4268400361adaf3b40939",
+    "text": "ledový kostěný zábradlí",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:51.234863Z"
+  },
+  "item.15748.name": {
+    "src_hash": "e980fa5e20c4268400361adaf3b40939",
+    "text": "ledový kostěný zábradlí",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:53.450847Z"
+  },
+  "item.15749.name": {
+    "src_hash": "e980fa5e20c4268400361adaf3b40939",
+    "text": "ledový kostěný zábradlí",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:53.456366Z"
+  },
+  "item.1575.name": {
+    "src_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
+    "text": "poškozená kamenná zeď",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:53.461246Z"
+  },
+  "item.15750.name": {
+    "src_hash": "e980fa5e20c4268400361adaf3b40939",
+    "text": "ledový kostěný zábradlí",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:53.466303Z"
+  },
+  "item.15751.name": {
+    "src_hash": "e980fa5e20c4268400361adaf3b40939",
+    "text": "ledový kostěný zábradlí",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:53.470972Z"
+  },
+  "item.15754.name": {
+    "src_hash": "d881502de87cd6cced7c4ebc7365111a",
+    "text": "ledové kosti",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:53.473580Z"
+  },
+  "item.15755.name": {
+    "src_hash": "d881502de87cd6cced7c4ebc7365111a",
+    "text": "ledové kosti",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:56.074853Z"
+  },
+  "item.15756.name": {
+    "src_hash": "d881502de87cd6cced7c4ebc7365111a",
+    "text": "ledové kosti",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:56.077630Z"
+  },
+  "item.15757.name": {
+    "src_hash": "d881502de87cd6cced7c4ebc7365111a",
+    "text": "ledové kosti",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:56.080161Z"
+  },
+  "item.1576.name": {
+    "src_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
+    "text": "zlomená kamenná zeď",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:56.084203Z"
+  },
+  "item.15767.name": {
+    "src_hash": "8333d4f7e0133e870c445efdbde1d2de",
+    "text": "ledový kostěný dráp",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:56.088359Z"
+  },
+  "item.15768.name": {
+    "src_hash": "8333d4f7e0133e870c445efdbde1d2de",
+    "text": "ledový kostěný dráp",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:56.092495Z"
+  },
+  "item.15769.name": {
+    "src_hash": "8333d4f7e0133e870c445efdbde1d2de",
+    "text": "ledový kostěný dráp",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:58.015830Z"
+  },
+  "item.1577.name": {
+    "src_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
+    "text": "zlomená kamenná zeď",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:58.020169Z"
+  },
+  "item.15770.name": {
+    "src_hash": "8333d4f7e0133e870c445efdbde1d2de",
+    "text": "ledový kostěný dráp",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:58.023971Z"
+  },
+  "item.15774.name": {
+    "src_hash": "f12ccd7ac1ec6d3f9490251611cf1c28",
+    "text": "ledový mamutí roh",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:58.027192Z"
+  },
+  "item.15775.name": {
+    "src_hash": "f12ccd7ac1ec6d3f9490251611cf1c28",
+    "text": "ledový mamutí roh",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:58.030323Z"
+  },
+  "item.15776.name": {
+    "src_hash": "f12ccd7ac1ec6d3f9490251611cf1c28",
+    "text": "ledový mamutí roh",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:58.033499Z"
+  },
+  "item.15777.name": {
+    "src_hash": "f12ccd7ac1ec6d3f9490251611cf1c28",
+    "text": "ledový mamutí roh",
+    "source": "canonical_name_semantic_autofix",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:43:39.487253Z"
+  },
+  "item.1578.name": {
+    "src_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
+    "text": "zlomená kamenná zeď",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:59.859447Z"
+  },
+  "item.15780.name": {
+    "src_hash": "87fc63e285dda0a48de1c16bb4b386fc",
+    "text": "ledová hlava mamuta",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:59.863041Z"
+  },
+  "item.15781.name": {
+    "src_hash": "87fc63e285dda0a48de1c16bb4b386fc",
+    "text": "ledová hlava mamuta",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:59.866589Z"
+  },
+  "item.15782.name": {
+    "src_hash": "537ae0085857e717554840a11a859aa5",
+    "text": "ledový chobot mamuta",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:59.870318Z"
+  },
+  "item.15783.name": {
+    "src_hash": "537ae0085857e717554840a11a859aa5",
+    "text": "ledový chobot mamuta",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:38:59.874070Z"
+  },
+  "item.15784.name": {
+    "src_hash": "537ae0085857e717554840a11a859aa5",
+    "text": "ledový chobot mamuta",
+    "source": "canonical_name_semantic_autofix",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:43:39.487800Z"
+  },
+  "item.1579.name": {
+    "src_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
+    "text": "zlomená kamenná zeď",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:39:01.809633Z"
+  },
+  "item.15790.name": {
+    "src_hash": "d881502de87cd6cced7c4ebc7365111a",
+    "text": "ledové kosti",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:39:01.812297Z"
+  },
+  "item.15791.name": {
+    "src_hash": "d881502de87cd6cced7c4ebc7365111a",
+    "text": "ledové kosti",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:39:01.814731Z"
+  },
+  "item.1580.name": {
+    "src_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
+    "text": "zlomená kamenná zeď",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:39:01.818416Z"
+  },
+  "item.1581.name": {
+    "src_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
+    "text": "zlomená kamenná zeď",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:39:01.822222Z"
+  },
+  "item.1582.name": {
+    "src_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
+    "text": "poškozená kamenná zeď",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:39:03.244047Z"
+  },
+  "item.1583.name": {
+    "src_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
+    "text": "poškozená kamenná zeď",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:39:03.249090Z"
+  },
+  "item.1584.name": {
+    "src_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
+    "text": "poškozená kamenná zeď",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:39:03.253998Z"
   }
 }

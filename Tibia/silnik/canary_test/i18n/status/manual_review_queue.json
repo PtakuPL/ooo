@@ -67135,11 +67135,83 @@
       ],
       "previous_state_source": "tm",
       "previous_state_updated_at": "2026-04-29T19:54:28.902393Z"
+    },
+    {
+      "timestamp": "2026-04-29T20:43:41.636727Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.1576.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "broken stone wall",
+      "attempted_translation": "zlomená kamenná zeď",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'poškozená kamenná zeď' for EN 'broken stone wall', but source key item.1576.name still uses conflicting variant 'zlomená kamenná zeď'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:43:41.753227Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.1577.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "broken stone wall",
+      "attempted_translation": "zlomená kamenná zeď",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'poškozená kamenná zeď' for EN 'broken stone wall', but source key item.1577.name still uses conflicting variant 'zlomená kamenná zeď'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:43:42.546441Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.1578.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "broken stone wall",
+      "attempted_translation": "zlomená kamenná zeď",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'poškozená kamenná zeď' for EN 'broken stone wall', but source key item.1578.name still uses conflicting variant 'zlomená kamenná zeď'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:43:42.661947Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.1579.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "broken stone wall",
+      "attempted_translation": "zlomená kamenná zeď",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'poškozená kamenná zeď' for EN 'broken stone wall', but source key item.1579.name still uses conflicting variant 'zlomená kamenná zeď'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3404
+    "total": 3408
   },
-  "updated_at": "2026-04-29T20:41:30.049413Z"
+  "updated_at": 1777495477
 }

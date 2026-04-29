@@ -1,13 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:36:43.197781Z",
-  "cycle": 7,
+  "generated_at_utc": "2026-04-29T20:44:37.419504Z",
+  "cycle": 8,
   "open_alarms": [
     {
       "code": "DISPATCH_STALE",
       "severity": "warning",
       "source": "statusd_doctor.json",
       "detail": "DISPATCH_STALE: dispatch state sprzed 859s"
+    },
+    {
+      "code": "GUARD_REPORT_STALE",
+      "severity": "warning",
+      "source": "statusd_doctor.json",
+      "detail": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 820s"
     },
     {
       "code": "NATIVE_READINESS_BELOW_THRESHOLD",
@@ -31,7 +37,7 @@
       "code": "SUSPICIOUS_HIGH_ELEVATED",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=819 rate=24.382% window=6.0h top_lang=es:310 per_lang=[es:310(69.196%/warning)] per_domain=[npc.json:203(58.671%/warning),server.json:104(1300.0%/warning)]"
+      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=806 rate=24.513% window=6.0h top_lang=es:310 per_lang=[es:310(69.196%/warning)] per_domain=[npc.json:203(58.671%/warning),server.json:104(1300.0%/warning)]"
     },
     {
       "code": "TERM_CONSISTENCY_REGRESSION",
@@ -42,11 +48,10 @@
   ],
   "resolved_this_cycle": [],
   "newly_opened": [
-    "DISPATCH_STALE",
-    "TERM_CONSISTENCY_REGRESSION"
+    "GUARD_REPORT_STALE"
   ],
   "summary": {
-    "open_count": 6,
+    "open_count": 7,
     "resolved_count": 0,
     "tracked_alarms": 32
   },

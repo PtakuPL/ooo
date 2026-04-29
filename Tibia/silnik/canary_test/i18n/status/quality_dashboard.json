@@ -550,12 +550,12 @@
     "issues_count": 0
   },
   "ro": {
-    "last_cycle": "2026-04-29T21:53:31.392284Z",
-    "last_translated": 61,
-    "total_suspicious": 120347,
+    "last_cycle": "2026-04-29T22:47:14.819687Z",
+    "last_translated": 60,
+    "total_suspicious": 120348,
     "total_rejected": 16956,
     "total_gt_guard_fail": 25284,
-    "cycles": 1107,
+    "cycles": 1108,
     "quality_score": 60.1,
     "last_audit": "2026-04-29T22:40:49.420656Z",
     "issues_count": 450245

@@ -5350,7 +5350,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:48:01.474467Z",
+    "updated_at": "2026-04-29T22:42:19.602449Z",
     "en_hash": "a29bac723ca2d59ed78a2d715e17e92f",
     "attempted_preview": "sai",
     "attempted_hash": "a29bac723ca2d59ed78a2d715e17e92f"
@@ -5362,7 +5362,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation",
     "source": "canonical_name_semantic_autofix",
-    "updated_at": "2026-04-29T21:51:18.892954Z",
+    "updated_at": "2026-04-29T22:45:09.633274Z",
     "en_hash": "263addb7611158a2c3db7c164a20cc2f",
     "attempted_preview": "lampă",
     "extra": {
@@ -5382,7 +5382,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:48:02.918220Z",
+    "updated_at": "2026-04-29T22:42:20.920553Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -5394,7 +5394,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:48:02.918274Z",
+    "updated_at": "2026-04-29T22:42:20.920607Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -5406,7 +5406,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:48:02.918423Z",
+    "updated_at": "2026-04-29T22:42:20.920762Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -5418,7 +5418,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:48:02.918452Z",
+    "updated_at": "2026-04-29T22:42:20.920793Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -5430,7 +5430,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:48:02.918471Z",
+    "updated_at": "2026-04-29T22:42:20.920811Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -5442,7 +5442,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation",
     "source": "canonical_name_semantic_autofix",
-    "updated_at": "2026-04-29T21:51:18.895175Z",
+    "updated_at": "2026-04-29T22:45:09.635369Z",
     "en_hash": "93939238f5427e2d2d2b1365d18483f9",
     "attempted_preview": "rampă",
     "extra": {
@@ -5462,7 +5462,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:48:04.953873Z",
+    "updated_at": "2026-04-29T22:42:22.870905Z",
     "en_hash": "001cbc059a402b3be7c99be558eaaf73",
     "attempted_preview": "bed",
     "attempted_hash": "001cbc059a402b3be7c99be558eaaf73"
@@ -5552,18 +5552,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:25.551296Z",
+    "updated_at": "2026-04-29T22:47:05.140289Z",
     "en_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "attempted_preview": "emblemăăăăăăăăăăăăăăă de rună de argint",
+    "attempted_preview": "emblemăăăăăăăăăăăăăăăă de rună de argint",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "silver rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint",
-        "conflicting_translation": "emblemăăăăăăăăăăăăăăă de rună de argint"
+        "conflicting_translation": "emblemăăăăăăăăăăăăăăăă de rună de argint"
       }
     },
-    "attempted_hash": "8dd48c09ee6da476ba55049e8e76dfbf"
+    "attempted_hash": "8040e11e375e35d5b8c01f5946985a52"
   },
   "ro::items.json::item.11632.name": {
     "lang": "ro",
@@ -5572,18 +5572,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:07.483474Z",
+    "updated_at": "2026-04-29T22:46:56.944331Z",
     "en_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "attempted_preview": "emblemăăăăăăăăăăăăăăă de rună de aur",
+    "attempted_preview": "emblemăăăăăăăăăăăăăăăă de rună de aur",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "golden rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
-        "conflicting_translation": "emblemăăăăăăăăăăăăăăă de rună de aur"
+        "conflicting_translation": "emblemăăăăăăăăăăăăăăăă de rună de aur"
       }
     },
-    "attempted_hash": "48ee8028bc5962e19e629cf68ca55980"
+    "attempted_hash": "2baf102f0b24c23419b3644774146c91"
   },
   "ro::items.json::item.11633.name": {
     "lang": "ro",
@@ -5592,18 +5592,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:25.668814Z",
+    "updated_at": "2026-04-29T22:47:05.234015Z",
     "en_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "attempted_preview": "emblemăăăăăăăăăăăăăăă de rună de argint",
+    "attempted_preview": "emblemăăăăăăăăăăăăăăăă de rună de argint",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "silver rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint",
-        "conflicting_translation": "emblemăăăăăăăăăăăăăăă de rună de argint"
+        "conflicting_translation": "emblemăăăăăăăăăăăăăăăă de rună de argint"
       }
     },
-    "attempted_hash": "8dd48c09ee6da476ba55049e8e76dfbf"
+    "attempted_hash": "8040e11e375e35d5b8c01f5946985a52"
   },
   "ro::items.json::item.11634.name": {
     "lang": "ro",
@@ -5612,18 +5612,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:10.327392Z",
+    "updated_at": "2026-04-29T22:46:57.734883Z",
     "en_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "attempted_preview": "emblemăăăăăăăăăăăăăăă de rună de aur",
+    "attempted_preview": "emblemăăăăăăăăăăăăăăăă de rună de aur",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "golden rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
-        "conflicting_translation": "emblemăăăăăăăăăăăăăăă de rună de aur"
+        "conflicting_translation": "emblemăăăăăăăăăăăăăăăă de rună de aur"
       }
     },
-    "attempted_hash": "48ee8028bc5962e19e629cf68ca55980"
+    "attempted_hash": "2baf102f0b24c23419b3644774146c91"
   },
   "ro::items.json::item.11635.name": {
     "lang": "ro",
@@ -5632,18 +5632,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:25.785543Z",
+    "updated_at": "2026-04-29T22:47:05.819402Z",
     "en_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "attempted_preview": "emblemăăăăăăăăăăăăăăă de rună de argint",
+    "attempted_preview": "emblemăăăăăăăăăăăăăăăă de rună de argint",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "silver rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint",
-        "conflicting_translation": "emblemăăăăăăăăăăăăăăă de rună de argint"
+        "conflicting_translation": "emblemăăăăăăăăăăăăăăăă de rună de argint"
       }
     },
-    "attempted_hash": "8dd48c09ee6da476ba55049e8e76dfbf"
+    "attempted_hash": "8040e11e375e35d5b8c01f5946985a52"
   },
   "ro::items.json::item.11636.name": {
     "lang": "ro",
@@ -5652,18 +5652,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:11.085564Z",
+    "updated_at": "2026-04-29T22:46:57.830735Z",
     "en_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "attempted_preview": "emblemăăăăăăăăăăăăăăă de rună de aur",
+    "attempted_preview": "emblemăăăăăăăăăăăăăăăă de rună de aur",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "golden rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
-        "conflicting_translation": "emblemăăăăăăăăăăăăăăă de rună de aur"
+        "conflicting_translation": "emblemăăăăăăăăăăăăăăăă de rună de aur"
       }
     },
-    "attempted_hash": "48ee8028bc5962e19e629cf68ca55980"
+    "attempted_hash": "2baf102f0b24c23419b3644774146c91"
   },
   "ro::items.json::item.11637.name": {
     "lang": "ro",
@@ -5672,18 +5672,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:25.901694Z",
+    "updated_at": "2026-04-29T22:47:06.489597Z",
     "en_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "attempted_preview": "emblemăăăăăăăăăăăăăăă de rună de argint",
+    "attempted_preview": "emblemăăăăăăăăăăăăăăăă de rună de argint",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "silver rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint",
-        "conflicting_translation": "emblemăăăăăăăăăăăăăăă de rună de argint"
+        "conflicting_translation": "emblemăăăăăăăăăăăăăăăă de rună de argint"
       }
     },
-    "attempted_hash": "8dd48c09ee6da476ba55049e8e76dfbf"
+    "attempted_hash": "8040e11e375e35d5b8c01f5946985a52"
   },
   "ro::items.json::item.11638.name": {
     "lang": "ro",
@@ -5692,18 +5692,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:12.451278Z",
+    "updated_at": "2026-04-29T22:46:58.009108Z",
     "en_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "attempted_preview": "emblemăăăăăăăăăăăăăăă de rună de aur",
+    "attempted_preview": "emblemăăăăăăăăăăăăăăăă de rună de aur",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "golden rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
-        "conflicting_translation": "emblemăăăăăăăăăăăăăăă de rună de aur"
+        "conflicting_translation": "emblemăăăăăăăăăăăăăăăă de rună de aur"
       }
     },
-    "attempted_hash": "48ee8028bc5962e19e629cf68ca55980"
+    "attempted_hash": "2baf102f0b24c23419b3644774146c91"
   },
   "ro::items.json::item.11639.name": {
     "lang": "ro",
@@ -5712,10 +5712,10 @@
     "status": "translated_ok",
     "reason": "accepted_translation",
     "source": "autofix_existing_normalization",
-    "updated_at": "2026-04-29T21:48:06.094441Z",
+    "updated_at": "2026-04-29T22:42:23.964473Z",
     "en_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "attempted_preview": "emblemăăăăăăăăăăăăăăă de rună de argint",
-    "attempted_hash": "8dd48c09ee6da476ba55049e8e76dfbf"
+    "attempted_preview": "emblemăăăăăăăăăăăăăăăă de rună de argint",
+    "attempted_hash": "8040e11e375e35d5b8c01f5946985a52"
   },
   "ro::items.json::item.11644.name": {
     "lang": "ro",
@@ -5724,18 +5724,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:13.198069Z",
+    "updated_at": "2026-04-29T22:46:58.693484Z",
     "en_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "attempted_preview": "emblemăăăăăăăăăăăă de rună de aur",
+    "attempted_preview": "emblemăăăăăăăăăăăăă de rună de aur",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "golden rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
-        "conflicting_translation": "emblemăăăăăăăăăăăă de rună de aur"
+        "conflicting_translation": "emblemăăăăăăăăăăăăă de rună de aur"
       }
     },
-    "attempted_hash": "0088fe78c28c56d16cbf205ce80bbd2c"
+    "attempted_hash": "967280814ee79e2ab50ce109728b41dd"
   },
   "ro::items.json::item.11645.name": {
     "lang": "ro",
@@ -5744,18 +5744,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:26.458596Z",
+    "updated_at": "2026-04-29T22:47:07.610728Z",
     "en_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "attempted_preview": "emblemăăăăăăăăăăăă de rună de argint",
+    "attempted_preview": "emblemăăăăăăăăăăăăă de rună de argint",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "silver rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint",
-        "conflicting_translation": "emblemăăăăăăăăăăăă de rună de argint"
+        "conflicting_translation": "emblemăăăăăăăăăăăăă de rună de argint"
       }
     },
-    "attempted_hash": "dc5d7afcb352222fefb80f9d8b7f1c67"
+    "attempted_hash": "3e4edc7284d75d8894b44728587f197f"
   },
   "ro::items.json::item.11646.name": {
     "lang": "ro",
@@ -5764,18 +5764,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:14.594958Z",
+    "updated_at": "2026-04-29T22:46:58.933660Z",
     "en_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "attempted_preview": "emblemăăăăăăăăăăăă de rună de aur",
+    "attempted_preview": "emblemăăăăăăăăăăăăă de rună de aur",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "golden rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
-        "conflicting_translation": "emblemăăăăăăăăăăăă de rună de aur"
+        "conflicting_translation": "emblemăăăăăăăăăăăăă de rună de aur"
       }
     },
-    "attempted_hash": "0088fe78c28c56d16cbf205ce80bbd2c"
+    "attempted_hash": "967280814ee79e2ab50ce109728b41dd"
   },
   "ro::items.json::item.11647.name": {
     "lang": "ro",
@@ -5784,18 +5784,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:26.575369Z",
+    "updated_at": "2026-04-29T22:47:08.137782Z",
     "en_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "attempted_preview": "emblemăăăăăăăăăăăă de rună de argint",
+    "attempted_preview": "emblemăăăăăăăăăăăăă de rună de argint",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "silver rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint",
-        "conflicting_translation": "emblemăăăăăăăăăăăă de rună de argint"
+        "conflicting_translation": "emblemăăăăăăăăăăăăă de rună de argint"
       }
     },
-    "attempted_hash": "dc5d7afcb352222fefb80f9d8b7f1c67"
+    "attempted_hash": "3e4edc7284d75d8894b44728587f197f"
   },
   "ro::items.json::item.11648.name": {
     "lang": "ro",
@@ -5804,18 +5804,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:17.438576Z",
+    "updated_at": "2026-04-29T22:46:59.025401Z",
     "en_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "attempted_preview": "emblemăăăăăăăăăăăă de rună de aur",
+    "attempted_preview": "emblemăăăăăăăăăăăăă de rună de aur",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "golden rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
-        "conflicting_translation": "emblemăăăăăăăăăăăă de rună de aur"
+        "conflicting_translation": "emblemăăăăăăăăăăăăă de rună de aur"
       }
     },
-    "attempted_hash": "0088fe78c28c56d16cbf205ce80bbd2c"
+    "attempted_hash": "967280814ee79e2ab50ce109728b41dd"
   },
   "ro::items.json::item.11649.name": {
     "lang": "ro",
@@ -5824,18 +5824,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:26.691302Z",
+    "updated_at": "2026-04-29T22:47:08.756611Z",
     "en_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "attempted_preview": "emblemăăăăăăăăăăăă de rună de argint",
+    "attempted_preview": "emblemăăăăăăăăăăăăă de rună de argint",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "silver rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de argint",
-        "conflicting_translation": "emblemăăăăăăăăăăăă de rună de argint"
+        "conflicting_translation": "emblemăăăăăăăăăăăăă de rună de argint"
       }
     },
-    "attempted_hash": "dc5d7afcb352222fefb80f9d8b7f1c67"
+    "attempted_hash": "3e4edc7284d75d8894b44728587f197f"
   },
   "ro::items.json::item.11650.name": {
     "lang": "ro",
@@ -5844,18 +5844,18 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:17.557180Z",
+    "updated_at": "2026-04-29T22:46:59.116901Z",
     "en_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "attempted_preview": "emblemăăăăăăăăăăăă de rună de aur",
+    "attempted_preview": "emblemăăăăăăăăăăăăă de rună de aur",
     "extra": {
       "canonical_name_conflict": {
         "pending": true,
         "canonical_en": "golden rune emblem",
         "selected_translation": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
-        "conflicting_translation": "emblemăăăăăăăăăăăă de rună de aur"
+        "conflicting_translation": "emblemăăăăăăăăăăăăă de rună de aur"
       }
     },
-    "attempted_hash": "0088fe78c28c56d16cbf205ce80bbd2c"
+    "attempted_hash": "967280814ee79e2ab50ce109728b41dd"
   },
   "ro::items.json::item.11727.name": {
     "lang": "ro",
@@ -5952,7 +5952,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:11.339321Z",
+    "updated_at": "2026-04-29T22:42:29.286884Z",
     "en_hash": "c4f472440ff1cb095aa917bb4daa2be0",
     "attempted_preview": "războinic draken mort",
     "extra": {
@@ -5961,7 +5961,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:11Z"
+        "retry_not_before_utc": "2026-04-29T22:42:29Z"
       }
     },
     "attempted_hash": "bf8b5d286c09b056097d8cc5bda4f533"
@@ -5973,7 +5973,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:11.345760Z",
+    "updated_at": "2026-04-29T22:42:29.293234Z",
     "en_hash": "c4f472440ff1cb095aa917bb4daa2be0",
     "attempted_preview": "războinic draken mort",
     "extra": {
@@ -5982,7 +5982,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:11Z"
+        "retry_not_before_utc": "2026-04-29T22:42:29Z"
       }
     },
     "attempted_hash": "bf8b5d286c09b056097d8cc5bda4f533"
@@ -5994,7 +5994,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:11.352451Z",
+    "updated_at": "2026-04-29T22:42:29.299189Z",
     "en_hash": "c4f472440ff1cb095aa917bb4daa2be0",
     "attempted_preview": "războinic draken mort",
     "extra": {
@@ -6003,7 +6003,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:11Z"
+        "retry_not_before_utc": "2026-04-29T22:42:29Z"
       }
     },
     "attempted_hash": "bf8b5d286c09b056097d8cc5bda4f533"
@@ -6015,7 +6015,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:11.358717Z",
+    "updated_at": "2026-04-29T22:42:29.305319Z",
     "en_hash": "c4f472440ff1cb095aa917bb4daa2be0",
     "attempted_preview": "războinic draken mort",
     "extra": {
@@ -6024,7 +6024,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:11Z"
+        "retry_not_before_utc": "2026-04-29T22:42:29Z"
       }
     },
     "attempted_hash": "bf8b5d286c09b056097d8cc5bda4f533"
@@ -6036,7 +6036,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:11.364081Z",
+    "updated_at": "2026-04-29T22:42:29.310585Z",
     "en_hash": "a5c37b0b99535230dcd569b7130cc54b",
     "attempted_preview": "kit statuie dragon",
     "extra": {
@@ -6045,7 +6045,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:11Z"
+        "retry_not_before_utc": "2026-04-29T22:42:29Z"
       }
     },
     "attempted_hash": "da39acbdd0bbae9c36be4bac09b733d6"
@@ -6055,9 +6055,9 @@
     "json_file": "items.json",
     "key": "item.10334.name",
     "status": "translated_ok",
-    "reason": "accepted_translation",
-    "source": "canonical_name_semantic_autofix",
-    "updated_at": "2026-04-29T21:51:18.889254Z",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:42:29.315265Z",
     "en_hash": "959ce8c7e2a761366662cf50e48fffc8",
     "attempted_preview": "orc mort jefuitor",
     "extra": {
@@ -6066,7 +6066,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:11Z"
+        "retry_not_before_utc": "2026-04-29T22:42:29Z"
       },
       "canonical_name_conflict": {
         "status": "auto_fixed_semantic_dominant",
@@ -6084,7 +6084,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:13.840805Z",
+    "updated_at": "2026-04-29T22:42:31.454196Z",
     "en_hash": "959ce8c7e2a761366662cf50e48fffc8",
     "attempted_preview": "orc mort jefuitor",
     "extra": {
@@ -6093,7 +6093,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:13Z"
+        "retry_not_before_utc": "2026-04-29T22:42:31Z"
       }
     },
     "attempted_hash": "9e527fc310414e6aaa71dbd8d7257aa1"
@@ -6105,7 +6105,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:13.846132Z",
+    "updated_at": "2026-04-29T22:42:31.459275Z",
     "en_hash": "959ce8c7e2a761366662cf50e48fffc8",
     "attempted_preview": "orc mort jefuitor",
     "extra": {
@@ -6114,7 +6114,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:13Z"
+        "retry_not_before_utc": "2026-04-29T22:42:31Z"
       }
     },
     "attempted_hash": "9e527fc310414e6aaa71dbd8d7257aa1"
@@ -6126,7 +6126,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:13.853020Z",
+    "updated_at": "2026-04-29T22:42:31.465821Z",
     "en_hash": "770e51ca85f88a2ba066ab1f2ea5c70c",
     "attempted_preview": "draken abominație moartă",
     "extra": {
@@ -6135,7 +6135,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:13Z"
+        "retry_not_before_utc": "2026-04-29T22:42:31Z"
       }
     },
     "attempted_hash": "cdd70d9a424d929be0a1dacb31000bf1"
@@ -6147,7 +6147,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:13.859611Z",
+    "updated_at": "2026-04-29T22:42:31.472310Z",
     "en_hash": "770e51ca85f88a2ba066ab1f2ea5c70c",
     "attempted_preview": "draken abominație moartă",
     "extra": {
@@ -6156,7 +6156,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:13Z"
+        "retry_not_before_utc": "2026-04-29T22:42:31Z"
       }
     },
     "attempted_hash": "cdd70d9a424d929be0a1dacb31000bf1"
@@ -6168,7 +6168,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:13.866405Z",
+    "updated_at": "2026-04-29T22:42:31.478879Z",
     "en_hash": "770e51ca85f88a2ba066ab1f2ea5c70c",
     "attempted_preview": "draken abominație moartă",
     "extra": {
@@ -6177,7 +6177,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:13Z"
+        "retry_not_before_utc": "2026-04-29T22:42:31Z"
       }
     },
     "attempted_hash": "cdd70d9a424d929be0a1dacb31000bf1"
@@ -6189,7 +6189,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:13.873001Z",
+    "updated_at": "2026-04-29T22:42:31.485717Z",
     "en_hash": "770e51ca85f88a2ba066ab1f2ea5c70c",
     "attempted_preview": "draken abominație moartă",
     "extra": {
@@ -6198,7 +6198,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:13Z"
+        "retry_not_before_utc": "2026-04-29T22:42:31Z"
       }
     },
     "attempted_hash": "cdd70d9a424d929be0a1dacb31000bf1"
@@ -6210,16 +6210,16 @@
     "status": "translated_ok",
     "reason": "accepted_translation",
     "source": "term_consistency_autofix",
-    "updated_at": "2026-04-29T21:48:33.423366Z",
+    "updated_at": "2026-04-29T22:42:52.209133Z",
     "en_hash": "3578c5b32f47da7a6e917932befd7db6",
-    "attempted_preview": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
+    "attempted_preview": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
     "extra": {
       "term_consistency": {
         "status": "auto_fixed",
         "reason": "canonical_english_name_leak_harmonized"
       }
     },
-    "attempted_hash": "f8e0b5230ec23ecaec04d0a73cd8b903"
+    "attempted_hash": "fd4661cfab9985ff248939187eef89c8"
   },
   "ro::items.json::item.13658.desc": {
     "lang": "ro",
@@ -6228,16 +6228,16 @@
     "status": "translated_ok",
     "reason": "accepted_translation",
     "source": "term_consistency_autofix",
-    "updated_at": "2026-04-29T21:48:33.423438Z",
+    "updated_at": "2026-04-29T22:42:52.209193Z",
     "en_hash": "3578c5b32f47da7a6e917932befd7db6",
-    "attempted_preview": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
+    "attempted_preview": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
     "extra": {
       "term_consistency": {
         "status": "auto_fixed",
         "reason": "canonical_english_name_leak_harmonized"
       }
     },
-    "attempted_hash": "f8e0b5230ec23ecaec04d0a73cd8b903"
+    "attempted_hash": "fd4661cfab9985ff248939187eef89c8"
   },
   "ro::items.json::item.14760.desc": {
     "lang": "ro",
@@ -6246,16 +6246,16 @@
     "status": "translated_ok",
     "reason": "accepted_translation",
     "source": "term_consistency_autofix",
-    "updated_at": "2026-04-29T21:48:33.423484Z",
+    "updated_at": "2026-04-29T22:42:52.209233Z",
     "en_hash": "234ede9831e1902a0c3fde8ec8683ebc",
-    "attempted_preview": "Aceasta este o emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă a înțelepciunii. A fost acordat de TibiaStat.com",
+    "attempted_preview": "Aceasta este o emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă a înțelepciunii. A fost acordat de TibiaStat.com",
     "extra": {
       "term_consistency": {
         "status": "auto_fixed",
         "reason": "canonical_english_name_leak_harmonized"
       }
     },
-    "attempted_hash": "3afa771273da2bd9ecce8c5eebe0a34a"
+    "attempted_hash": "cb1431a726d324ba8dcefe1477796734"
   },
   "ro::items.json::item.10218.desc": {
     "lang": "ro",
@@ -6264,7 +6264,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:48:35.729066Z",
+    "updated_at": "2026-04-29T22:42:53.904426Z",
     "en_hash": "4277fbe6c944de4097a47b4cc39005bc",
     "attempted_preview": "Acest pește a fost sărat și deja pregătit ca provizie pentru soldați",
     "extra": {
@@ -6286,7 +6286,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:48:37.809153Z",
+    "updated_at": "2026-04-29T22:43:00.257665Z",
     "en_hash": "353e14b2a3f813f1fb537fbaeec1166f",
     "attempted_preview": "Folosește-l în casa ta pentru a construi un tron ​​de dragon",
     "extra": {
@@ -6308,7 +6308,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:48:37.897556Z",
+    "updated_at": "2026-04-29T22:43:40.280747Z",
     "en_hash": "dae0b5d5321efbca600ef5014f1d45bf",
     "attempted_preview": "Este prea mare pentru a fi purtat de oameni, ci mai degrabă ușor",
     "extra": {
@@ -6330,7 +6330,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:48:37.986545Z",
+    "updated_at": "2026-04-29T22:43:40.372834Z",
     "en_hash": "30889c919fa2b2f4a56b9edfd9460e33",
     "attempted_preview": "Este o rună împodobită a morții subite",
     "extra": {
@@ -6352,7 +6352,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:48:38.134082Z",
+    "updated_at": "2026-04-29T22:44:31.336278Z",
     "en_hash": "30889c919fa2b2f4a56b9edfd9460e33",
     "attempted_preview": "Este o rună împodobită a morții subite",
     "extra": {
@@ -6374,7 +6374,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:48:39.317333Z",
+    "updated_at": "2026-04-29T22:44:31.869782Z",
     "en_hash": "8d0504df5491ef3c971915357622291d",
     "attempted_preview": "Este o rună magică de perete împodobită",
     "extra": {
@@ -6396,7 +6396,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:48:41.343714Z",
+    "updated_at": "2026-04-29T22:44:33.003587Z",
     "en_hash": "8d0504df5491ef3c971915357622291d",
     "attempted_preview": "Este o rună magică de perete împodobită",
     "extra": {
@@ -6418,7 +6418,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:48:43.576430Z",
+    "updated_at": "2026-04-29T22:44:33.637126Z",
     "en_hash": "ae9bf208d9f309053b238ada89a724e2",
     "attempted_preview": "Este o rună moartă animată împodobită",
     "extra": {
@@ -6440,7 +6440,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:49:25.369151Z",
+    "updated_at": "2026-04-29T22:44:33.869877Z",
     "en_hash": "ae9bf208d9f309053b238ada89a724e2",
     "attempted_preview": "Este o rună moartă animată împodobită",
     "extra": {
@@ -6462,7 +6462,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:26.815989Z",
+    "updated_at": "2026-04-29T22:44:33.986053Z",
     "en_hash": "45d7589488c894201699bba8e0401bb9",
     "attempted_preview": "Este o rună de rachetă sfântă împodobită",
     "extra": {
@@ -6484,7 +6484,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:26.930710Z",
+    "updated_at": "2026-04-29T22:44:34.521862Z",
     "en_hash": "45d7589488c894201699bba8e0401bb9",
     "attempted_preview": "Este o rună de rachetă sfântă împodobită",
     "extra": {
@@ -6506,7 +6506,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:27.462014Z",
+    "updated_at": "2026-04-29T22:44:35.030654Z",
     "en_hash": "a2db5ac857c213b3e478a99490efc5c2",
     "attempted_preview": "Este o rună împodobită cu bombe energetice",
     "extra": {
@@ -6528,7 +6528,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:27.605845Z",
+    "updated_at": "2026-04-29T22:44:35.533437Z",
     "en_hash": "a2db5ac857c213b3e478a99490efc5c2",
     "attempted_preview": "Este o rună împodobită cu bombe energetice",
     "extra": {
@@ -6550,7 +6550,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:27.720599Z",
+    "updated_at": "2026-04-29T22:44:37.561078Z",
     "en_hash": "96d91350b79f099110fa17a2e283ea10",
     "attempted_preview": "Este o rună de perete energetic împodobită",
     "extra": {
@@ -6572,7 +6572,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:28.824946Z",
+    "updated_at": "2026-04-29T22:44:37.677232Z",
     "en_hash": "96d91350b79f099110fa17a2e283ea10",
     "attempted_preview": "Este o rună de perete energetic împodobită",
     "extra": {
@@ -6594,7 +6594,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:30.620190Z",
+    "updated_at": "2026-04-29T22:44:37.911562Z",
     "en_hash": "e5a3d42b0b5c54e33cbbb0f9856dad13",
     "attempted_preview": "Este o rună de câmp de distrugere împodobită",
     "extra": {
@@ -6616,7 +6616,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:31.239430Z",
+    "updated_at": "2026-04-29T22:44:38.141086Z",
     "en_hash": "e5a3d42b0b5c54e33cbbb0f9856dad13",
     "attempted_preview": "Este o rună de câmp de distrugere împodobită",
     "extra": {
@@ -6638,7 +6638,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:31.423189Z",
+    "updated_at": "2026-04-29T22:44:38.256075Z",
     "en_hash": "ca58523787bd84ca3374d38d14271188",
     "attempted_preview": "Este o rună de creștere sălbatică împodobită",
     "extra": {
@@ -6660,7 +6660,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:31.621398Z",
+    "updated_at": "2026-04-29T22:44:38.371506Z",
     "en_hash": "ca58523787bd84ca3374d38d14271188",
     "attempted_preview": "Este o rună de creștere sălbatică împodobită",
     "extra": {
@@ -6682,7 +6682,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:32.469756Z",
+    "updated_at": "2026-04-29T22:44:38.487086Z",
     "en_hash": "0a8e9652f7dd95e9ae4c589b3726e0ba",
     "attempted_preview": "Este o rună împodobită cu bombe otrăvitoare",
     "extra": {
@@ -6704,7 +6704,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:32.777515Z",
+    "updated_at": "2026-04-29T22:44:38.601495Z",
     "en_hash": "0a8e9652f7dd95e9ae4c589b3726e0ba",
     "attempted_preview": "Este o rună împodobită cu bombe otrăvitoare",
     "extra": {
@@ -6726,7 +6726,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:33.028879Z",
+    "updated_at": "2026-04-29T22:44:38.714834Z",
     "en_hash": "afdf2f07d4f14040fff552146ae6390d",
     "attempted_preview": "Este o rună de rachetă magică ușoară împodobită",
     "extra": {
@@ -6748,7 +6748,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:33.366025Z",
+    "updated_at": "2026-04-29T22:44:38.828044Z",
     "en_hash": "afdf2f07d4f14040fff552146ae6390d",
     "attempted_preview": "Este o rună de rachetă magică ușoară împodobită",
     "extra": {
@@ -6770,7 +6770,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:34.583389Z",
+    "updated_at": "2026-04-29T22:44:39.162654Z",
     "en_hash": "62b1acf4907ec73623b9c8434b5bcdea",
     "attempted_preview": "Este o rună de câmp de foc împodobită",
     "extra": {
@@ -6792,7 +6792,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:35.771279Z",
+    "updated_at": "2026-04-29T22:44:39.496910Z",
     "en_hash": "62b1acf4907ec73623b9c8434b5bcdea",
     "attempted_preview": "Este o rună de câmp de foc împodobită",
     "extra": {
@@ -6814,7 +6814,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:38.468007Z",
+    "updated_at": "2026-04-29T22:44:42.594442Z",
     "en_hash": "a3941ffba3cca1b52d1610c6b29884fc",
     "attempted_preview": "Titlul acestei cărți grele spune: „Rabaz” Almanahul neprelucrat al botanicii”",
     "extra": {
@@ -6836,7 +6836,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:47.236855Z",
+    "updated_at": "2026-04-29T22:44:45.587596Z",
     "en_hash": "7353cd27d0e075e4188fe27bf8194a41",
     "attempted_preview": "L-ai schimbat cu lada lui Bozo cu pahare de vin",
     "extra": {
@@ -6858,7 +6858,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:50.363690Z",
+    "updated_at": "2026-04-29T22:44:45.775761Z",
     "en_hash": "7d5bb6c9594a3294e8f051d84105b712",
     "attempted_preview": "Această creatură mică iubește ciuperca de slime",
     "extra": {
@@ -6880,7 +6880,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:51.840657Z",
+    "updated_at": "2026-04-29T22:44:45.948654Z",
     "en_hash": "5bfeb6d835123881a1ceddc41f36095c",
     "attempted_preview": "Lâna care a fost umplută sub panglică face ca lingura să arate și să se simtă ca un adevărat picior de iepure",
     "extra": {
@@ -6902,7 +6902,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:53.677777Z",
+    "updated_at": "2026-04-29T22:44:46.144565Z",
     "en_hash": "04c16c127086440130fc2ca3d73a2894",
     "attempted_preview": "Acest fruct a fost cules din cireșul care țipă",
     "extra": {
@@ -6924,7 +6924,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:50:54.723262Z",
+    "updated_at": "2026-04-29T22:44:46.530651Z",
     "en_hash": "95e68430b7fcf60c186f452198fba715",
     "attempted_preview": "Acest pește, și ingredient rar, poate fi găsit doar în cele mai murdare, tulburi și noroioase ape.",
     "extra": {
@@ -6946,7 +6946,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:51:00.692487Z",
+    "updated_at": "2026-04-29T22:44:49.005397Z",
     "en_hash": "25447addfecb86102efa8cef28f12ea3",
     "attempted_preview": "Există o gaură în tavan.",
     "extra": {
@@ -6968,7 +6968,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:51:03.342417Z",
+    "updated_at": "2026-04-29T22:44:51.575717Z",
     "en_hash": "776c1b7fdab84b050993d5bfd5dffbad",
     "attempted_preview": "Conține apă sfințită de la mănăstirea corbului alb.",
     "extra": {
@@ -6990,7 +6990,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:51:05.160668Z",
+    "updated_at": "2026-04-29T22:44:55.612968Z",
     "en_hash": "c0b89e9ef530b1575bb04fc07a8feda8",
     "attempted_preview": "Este coletul pentru turnul de veghe de pe Femor Hills",
     "extra": {
@@ -7012,7 +7012,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:51:05.617495Z",
+    "updated_at": "2026-04-29T22:44:55.766598Z",
     "en_hash": "aa2ab6ed1566c584b962506b18482c20",
     "attempted_preview": "Forma ciudată a acestei chei strălucește încet în lumină",
     "extra": {
@@ -7034,7 +7034,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:51:10.041994Z",
+    "updated_at": "2026-04-29T22:45:01.402392Z",
     "en_hash": "25447addfecb86102efa8cef28f12ea3",
     "attempted_preview": "Există o gaură în tavan.",
     "extra": {
@@ -7056,7 +7056,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:51:10.238473Z",
+    "updated_at": "2026-04-29T22:45:02.949373Z",
     "en_hash": "4a52911faeb0be65e7d31bfb2e1a6e26",
     "attempted_preview": "Atâta timp cât este scufundat atât de adânc, nu vei putea obține o piatră de ascuțit.",
     "extra": {
@@ -7078,7 +7078,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:51:11.121122Z",
+    "updated_at": "2026-04-29T22:45:03.730774Z",
     "en_hash": "4a52911faeb0be65e7d31bfb2e1a6e26",
     "attempted_preview": "Atâta timp cât este scufundat atât de adânc, nu vei putea obține o piatră de ascuțit.",
     "extra": {
@@ -7100,7 +7100,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:51:11.905522Z",
+    "updated_at": "2026-04-29T22:45:04.351565Z",
     "en_hash": "4a52911faeb0be65e7d31bfb2e1a6e26",
     "attempted_preview": "Atâta timp cât este scufundat atât de adânc, nu vei putea obține o piatră de ascuțit.",
     "extra": {
@@ -7122,7 +7122,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:51:13.163159Z",
+    "updated_at": "2026-04-29T22:45:04.997078Z",
     "en_hash": "50283fcdee5a10ddc24b58e33308b07f",
     "attempted_preview": "Micul porcușor trebuie returnat deținătorului său în termen de o oră",
     "extra": {
@@ -7144,7 +7144,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:51:13.786139Z",
+    "updated_at": "2026-04-29T22:45:05.228326Z",
     "en_hash": "50283fcdee5a10ddc24b58e33308b07f",
     "attempted_preview": "Micul porcușor trebuie returnat deținătorului său în termen de o oră",
     "extra": {
@@ -7166,7 +7166,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:51:14.064059Z",
+    "updated_at": "2026-04-29T22:45:05.343798Z",
     "en_hash": "0f8b98d30e2ded148860fce1e059e14a",
     "attempted_preview": "Chiar și în lumina zilei, stelele par să se reflecte în fiecare fațetă a acestui topor cristalin",
     "extra": {
@@ -7188,7 +7188,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:51:22.806368Z",
+    "updated_at": "2026-04-29T22:45:19.297580Z",
     "en_hash": "69c97276273d5b7f4faf11b058c37266",
     "attempted_preview": "anima rune moarte",
     "extra": {
@@ -7208,7 +7208,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:52:07.750223Z",
+    "updated_at": "2026-04-29T22:46:08.418865Z",
     "en_hash": "961fd74b70425c951d4cbbb14b6479e3",
     "attempted_preview": "convinge creatura rune",
     "extra": {
@@ -7228,7 +7228,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:52:07.848382Z",
+    "updated_at": "2026-04-29T22:46:49.730403Z",
     "en_hash": "cb4d58d9f24fa57abff821799c9fc94f",
     "attempted_preview": "Energy Bomb Rune",
     "extra": {
@@ -7248,7 +7248,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:52:56.901688Z",
+    "updated_at": "2026-04-29T22:46:51.915225Z",
     "en_hash": "f60e5a60c1b758e59152ab854051f6f2",
     "attempted_preview": "Energy Field Rune",
     "extra": {
@@ -7268,7 +7268,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:52:56.996067Z",
+    "updated_at": "2026-04-29T22:46:52.726070Z",
     "en_hash": "9afbdfa527777fc5d260fcd1dd0f4094",
     "attempted_preview": "Energy Wall Rune",
     "extra": {
@@ -7288,7 +7288,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:05.753222Z",
+    "updated_at": "2026-04-29T22:46:54.135056Z",
     "en_hash": "533a42d998f407c9860eda103d41854c",
     "attempted_preview": "Fire Bomb Rune",
     "extra": {
@@ -7308,7 +7308,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:06.085212Z",
+    "updated_at": "2026-04-29T22:46:56.458957Z",
     "en_hash": "bf99d79327d646790c45047cc04d8182",
     "attempted_preview": "Fire Field Rune",
     "extra": {
@@ -7328,7 +7328,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:07.292055Z",
+    "updated_at": "2026-04-29T22:46:56.657456Z",
     "en_hash": "5eb3ba2aca23558a99f38c4ac773a913",
     "attempted_preview": "Fire Wall Rune",
     "extra": {
@@ -7348,7 +7348,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:21.306897Z",
+    "updated_at": "2026-04-29T22:46:59.210300Z",
     "en_hash": "7997a69ae49a90c11c1136ac972bc953",
     "attempted_preview": "mare rună minge de foc",
     "extra": {
@@ -7368,7 +7368,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:23.229835Z",
+    "updated_at": "2026-04-29T22:46:59.300397Z",
     "en_hash": "79269881630466ca0eca7525a026c059",
     "attempted_preview": "rună sfântă a rachetei",
     "extra": {
@@ -7388,7 +7388,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:23.348251Z",
+    "updated_at": "2026-04-29T22:47:00.667429Z",
     "en_hash": "130859064dcec73dfefffb635fd5b0c6",
     "attempted_preview": "Magic Wall Rune",
     "extra": {
@@ -7408,7 +7408,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:24.202131Z",
+    "updated_at": "2026-04-29T22:47:01.866037Z",
     "en_hash": "858721d74877cf4710ed54517d35713d",
     "attempted_preview": "Poison Bomb Rune",
     "extra": {
@@ -7428,7 +7428,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:25.196322Z",
+    "updated_at": "2026-04-29T22:47:02.097882Z",
     "en_hash": "29bdf0054473b50fa81a1b59875edbf9",
     "attempted_preview": "Poison Field Rune",
     "extra": {
@@ -7448,7 +7448,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:25.314899Z",
+    "updated_at": "2026-04-29T22:47:02.809915Z",
     "en_hash": "78e6136805ee4ea8f53e60caf96a394b",
     "attempted_preview": "Poison Wall Rune",
     "extra": {
@@ -7468,7 +7468,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:25.433018Z",
+    "updated_at": "2026-04-29T22:47:03.492754Z",
     "en_hash": "375968507f84e6225f328f297c2e542c",
     "attempted_preview": "inel de gânduri secrete",
     "extra": {
@@ -7488,7 +7488,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:26.809089Z",
+    "updated_at": "2026-04-29T22:47:09.413163Z",
     "en_hash": "cbfc07583f13c79dac2907489a8a169e",
     "attempted_preview": "piatră archway",
     "extra": {
@@ -7508,7 +7508,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:27.326424Z",
+    "updated_at": "2026-04-29T22:47:12.151159Z",
     "en_hash": "cbfc07583f13c79dac2907489a8a169e",
     "attempted_preview": "piatră archway",
     "extra": {
@@ -7528,7 +7528,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:28.329434Z",
+    "updated_at": "2026-04-29T22:47:12.242974Z",
     "en_hash": "cbfc07583f13c79dac2907489a8a169e",
     "attempted_preview": "piatră archway",
     "extra": {
@@ -7548,7 +7548,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:28.448122Z",
+    "updated_at": "2026-04-29T22:47:12.333955Z",
     "en_hash": "25854a690aad0b2f569b5c34e1691b91",
     "attempted_preview": "Stone Shower Rune",
     "extra": {
@@ -7568,7 +7568,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:28.565711Z",
+    "updated_at": "2026-04-29T22:47:12.850873Z",
     "en_hash": "fb18e4528342a1c41cbe37d70830a516",
     "attempted_preview": "Sudden Death Rune",
     "extra": {
@@ -7588,7 +7588,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:29.088919Z",
+    "updated_at": "2026-04-29T22:47:12.942476Z",
     "en_hash": "0cc528604e259eb9f6acb75ece633ffc",
     "attempted_preview": "Enciclopedia Tibiacității",
     "extra": {
@@ -7608,7 +7608,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:29.209714Z",
+    "updated_at": "2026-04-29T22:47:13.033145Z",
     "en_hash": "b25b53c822bcd98974fcaa1fbf8fb0aa",
     "attempted_preview": "runa de vindecare supremă",
     "extra": {
@@ -7628,7 +7628,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:30.713872Z",
+    "updated_at": "2026-04-29T22:47:13.543914Z",
     "en_hash": "028d4ab4e3ccc115a11ec4687aa2c87a",
     "attempted_preview": "lampăăăăăăăăăăăăăăăăă de perete",
     "extra": {
@@ -7648,7 +7648,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:30.803102Z",
+    "updated_at": "2026-04-29T22:47:13.635674Z",
     "en_hash": "028d4ab4e3ccc115a11ec4687aa2c87a",
     "attempted_preview": "lampăăăăăăăăăăăăăăăăă de perete",
     "extra": {
@@ -7668,7 +7668,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:30.892837Z",
+    "updated_at": "2026-04-29T22:47:13.727273Z",
     "en_hash": "028d4ab4e3ccc115a11ec4687aa2c87a",
     "attempted_preview": "lampăăăăăăăăăăăăăăăăă de perete",
     "extra": {
@@ -7688,7 +7688,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:30.982652Z",
+    "updated_at": "2026-04-29T22:47:13.831331Z",
     "en_hash": "028d4ab4e3ccc115a11ec4687aa2c87a",
     "attempted_preview": "lampăăăăăăăăăăăăăăăăă de perete",
     "extra": {
@@ -7708,7 +7708,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:53:31.071457Z",
+    "updated_at": "2026-04-29T22:47:14.497348Z",
     "en_hash": "9dc8d6d2135459483a32e42f4c71bfae",
     "attempted_preview": "Wild Growth Rune",
     "extra": {
@@ -60253,7 +60253,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:16.371964Z",
+    "updated_at": "2026-04-29T22:42:33.719358Z",
     "en_hash": "2737b0c4c8e6bf0de9757788b845d1d7",
     "attempted_hash": "bd3fa48f94d744f6c0d57d596e448e26",
     "attempted_preview": "acoperiș de lemn",
@@ -60263,7 +60263,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:16Z"
+        "retry_not_before_utc": "2026-04-29T22:42:33Z"
       }
     }
   },
@@ -60274,7 +60274,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:16.377042Z",
+    "updated_at": "2026-04-29T22:42:33.725830Z",
     "en_hash": "2737b0c4c8e6bf0de9757788b845d1d7",
     "attempted_hash": "bd3fa48f94d744f6c0d57d596e448e26",
     "attempted_preview": "acoperiș de lemn",
@@ -60284,7 +60284,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:16Z"
+        "retry_not_before_utc": "2026-04-29T22:42:33Z"
       }
     }
   },
@@ -60295,7 +60295,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:16.382002Z",
+    "updated_at": "2026-04-29T22:42:33.731843Z",
     "en_hash": "2737b0c4c8e6bf0de9757788b845d1d7",
     "attempted_hash": "bd3fa48f94d744f6c0d57d596e448e26",
     "attempted_preview": "acoperiș de lemn",
@@ -60305,7 +60305,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:16Z"
+        "retry_not_before_utc": "2026-04-29T22:42:33Z"
       }
     }
   },
@@ -68588,7 +68588,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:16.386261Z",
+    "updated_at": "2026-04-29T22:42:33.737035Z",
     "en_hash": "da0902528f41770f795689cb4945f609",
     "attempted_hash": "83f6fcc4a2aafac3987d7d674bb06c28",
     "attempted_preview": "trunchi de lemn",
@@ -68598,7 +68598,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:16Z"
+        "retry_not_before_utc": "2026-04-29T22:42:33Z"
       }
     }
   },
@@ -68609,7 +68609,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:16.390360Z",
+    "updated_at": "2026-04-29T22:42:33.742139Z",
     "en_hash": "da0902528f41770f795689cb4945f609",
     "attempted_hash": "83f6fcc4a2aafac3987d7d674bb06c28",
     "attempted_preview": "trunchi de lemn",
@@ -68619,7 +68619,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:16Z"
+        "retry_not_before_utc": "2026-04-29T22:42:33Z"
       }
     }
   },
@@ -68630,7 +68630,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:16.395103Z",
+    "updated_at": "2026-04-29T22:42:33.747937Z",
     "en_hash": "ac309a9c301524eba9556ec901d5f61c",
     "attempted_hash": "6639eda5a718cd860df2b0dce7971e85",
     "attempted_preview": "perdea zdrențuită",
@@ -68640,7 +68640,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:16Z"
+        "retry_not_before_utc": "2026-04-29T22:42:33Z"
       }
     }
   },
@@ -68651,7 +68651,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:18.572015Z",
+    "updated_at": "2026-04-29T22:42:36.086304Z",
     "en_hash": "ac309a9c301524eba9556ec901d5f61c",
     "attempted_hash": "6639eda5a718cd860df2b0dce7971e85",
     "attempted_preview": "perdea zdrențuită",
@@ -68661,7 +68661,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:18Z"
+        "retry_not_before_utc": "2026-04-29T22:42:36Z"
       }
     }
   },
@@ -68672,7 +68672,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:18.577244Z",
+    "updated_at": "2026-04-29T22:42:36.093204Z",
     "en_hash": "ac309a9c301524eba9556ec901d5f61c",
     "attempted_hash": "6639eda5a718cd860df2b0dce7971e85",
     "attempted_preview": "perdea zdrențuită",
@@ -68682,7 +68682,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:18Z"
+        "retry_not_before_utc": "2026-04-29T22:42:36Z"
       }
     }
   },
@@ -68693,7 +68693,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:18.582185Z",
+    "updated_at": "2026-04-29T22:42:36.100267Z",
     "en_hash": "ac309a9c301524eba9556ec901d5f61c",
     "attempted_hash": "6639eda5a718cd860df2b0dce7971e85",
     "attempted_preview": "perdea zdrențuită",
@@ -68703,7 +68703,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:18Z"
+        "retry_not_before_utc": "2026-04-29T22:42:36Z"
       }
     }
   },
@@ -78061,7 +78061,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:18.587534Z",
+    "updated_at": "2026-04-29T22:42:36.107521Z",
     "en_hash": "86e8567a1912d0cf599fa7e384bcf453",
     "attempted_hash": "57a4be66edfb32d461def00e868d6edd",
     "attempted_preview": "ascunzătoare de lup",
@@ -78071,7 +78071,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:18Z"
+        "retry_not_before_utc": "2026-04-29T22:42:36Z"
       }
     }
   },
@@ -78082,7 +78082,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:18.592845Z",
+    "updated_at": "2026-04-29T22:42:36.115087Z",
     "en_hash": "86e8567a1912d0cf599fa7e384bcf453",
     "attempted_hash": "57a4be66edfb32d461def00e868d6edd",
     "attempted_preview": "ascunzătoare de lup",
@@ -78092,7 +78092,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:18Z"
+        "retry_not_before_utc": "2026-04-29T22:42:36Z"
       }
     }
   },
@@ -78103,7 +78103,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:18.596953Z",
+    "updated_at": "2026-04-29T22:42:36.121121Z",
     "en_hash": "1ffafb87da08e799ae23b55a345d2446",
     "attempted_hash": "90f3308da9d5f7f20bfbb9ea21d6438e",
     "attempted_preview": "blană atârnată",
@@ -78113,7 +78113,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:18Z"
+        "retry_not_before_utc": "2026-04-29T22:42:36Z"
       }
     }
   },
@@ -78124,7 +78124,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:48:20.451650Z",
+    "updated_at": "2026-04-29T22:42:37.801970Z",
     "en_hash": "1ffafb87da08e799ae23b55a345d2446",
     "attempted_hash": "90f3308da9d5f7f20bfbb9ea21d6438e",
     "attempted_preview": "blană atârnată",
@@ -78134,7 +78134,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:48:20Z"
+        "retry_not_before_utc": "2026-04-29T22:42:37Z"
       }
     }
   },
@@ -84511,5 +84511,149 @@
     "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
     "attempted_hash": "5f0d47673a3d0fc9c6dd5ad8c7195e5d",
     "attempted_preview": "REZERVOVANÝ SPRITE"
+  },
+  "ro::items.json::item.11844.name": {
+    "lang": "ro",
+    "json_file": "items.json",
+    "key": "item.11844.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:42:25.147130Z",
+    "en_hash": "b8b7f457a4f45ada248185d38d8bb2b4",
+    "attempted_hash": "ee3217149a2a361bc886847c6a8d7198",
+    "attempted_preview": "nisip magică"
+  },
+  "ro::items.json::item.11845.name": {
+    "lang": "ro",
+    "json_file": "items.json",
+    "key": "item.11845.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:42:25.152617Z",
+    "en_hash": "b8b7f457a4f45ada248185d38d8bb2b4",
+    "attempted_hash": "ee3217149a2a361bc886847c6a8d7198",
+    "attempted_preview": "nisip magică"
+  },
+  "ro::items.json::item.11846.name": {
+    "lang": "ro",
+    "json_file": "items.json",
+    "key": "item.11846.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:42:25.157822Z",
+    "en_hash": "b8b7f457a4f45ada248185d38d8bb2b4",
+    "attempted_hash": "ee3217149a2a361bc886847c6a8d7198",
+    "attempted_preview": "nisip magică"
+  },
+  "ro::items.json::item.11847.name": {
+    "lang": "ro",
+    "json_file": "items.json",
+    "key": "item.11847.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:42:25.162884Z",
+    "en_hash": "b8b7f457a4f45ada248185d38d8bb2b4",
+    "attempted_hash": "ee3217149a2a361bc886847c6a8d7198",
+    "attempted_preview": "nisip magică"
+  },
+  "ro::items.json::item.11848.name": {
+    "lang": "ro",
+    "json_file": "items.json",
+    "key": "item.11848.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:42:25.167871Z",
+    "en_hash": "b8b7f457a4f45ada248185d38d8bb2b4",
+    "attempted_hash": "ee3217149a2a361bc886847c6a8d7198",
+    "attempted_preview": "nisip magică"
+  },
+  "ro::items.json::item.11849.name": {
+    "lang": "ro",
+    "json_file": "items.json",
+    "key": "item.11849.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:42:25.172768Z",
+    "en_hash": "b8b7f457a4f45ada248185d38d8bb2b4",
+    "attempted_hash": "ee3217149a2a361bc886847c6a8d7198",
+    "attempted_preview": "nisip magică"
+  },
+  "ro::items.json::item.1185.name": {
+    "lang": "ro",
+    "json_file": "items.json",
+    "key": "item.1185.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:42:25.183713Z",
+    "en_hash": "2737b0c4c8e6bf0de9757788b845d1d7",
+    "attempted_hash": "bd3fa48f94d744f6c0d57d596e448e26",
+    "attempted_preview": "acoperiș de lemn"
+  },
+  "ro::items.json::item.11850.name": {
+    "lang": "ro",
+    "json_file": "items.json",
+    "key": "item.11850.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:42:25.188414Z",
+    "en_hash": "b8b7f457a4f45ada248185d38d8bb2b4",
+    "attempted_hash": "ee3217149a2a361bc886847c6a8d7198",
+    "attempted_preview": "nisip magică"
+  },
+  "ro::items.json::item.11851.name": {
+    "lang": "ro",
+    "json_file": "items.json",
+    "key": "item.11851.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:42:25.193073Z",
+    "en_hash": "b8b7f457a4f45ada248185d38d8bb2b4",
+    "attempted_hash": "ee3217149a2a361bc886847c6a8d7198",
+    "attempted_preview": "nisip magică"
+  },
+  "ro::items.json::item.11852.name": {
+    "lang": "ro",
+    "json_file": "items.json",
+    "key": "item.11852.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:42:25.197764Z",
+    "en_hash": "b8b7f457a4f45ada248185d38d8bb2b4",
+    "attempted_hash": "ee3217149a2a361bc886847c6a8d7198",
+    "attempted_preview": "nisip magică"
+  },
+  "ro::items.json::item.11853.name": {
+    "lang": "ro",
+    "json_file": "items.json",
+    "key": "item.11853.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:42:25.202418Z",
+    "en_hash": "b8b7f457a4f45ada248185d38d8bb2b4",
+    "attempted_hash": "ee3217149a2a361bc886847c6a8d7198",
+    "attempted_preview": "nisip magică"
+  },
+  "ro::items.json::item.11854.name": {
+    "lang": "ro",
+    "json_file": "items.json",
+    "key": "item.11854.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:42:25.207154Z",
+    "en_hash": "b8b7f457a4f45ada248185d38d8bb2b4",
+    "attempted_hash": "ee3217149a2a361bc886847c6a8d7198",
+    "attempted_preview": "nisip magică"
   }
 }

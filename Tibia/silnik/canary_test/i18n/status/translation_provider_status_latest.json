@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:45:05.282585Z",
+  "generated_at_utc": "2026-04-29T22:47:29.321621Z",
   "active_provider": "OpenAI model pool",
   "active_provider_code": "openai_model_pool",
   "active_provider_source": "openai:openai/gpt-4o-mini",
-  "active_provider_timestamp": "2026-04-29T22:40:41.628367Z",
+  "active_provider_timestamp": "2026-04-29T22:47:14.820798Z",
   "active_model": "openai/gpt-4o-mini",
   "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -70,27 +70,27 @@
       "provider_limit_telemetry:provider_budget_high"
     ],
     "provider_consistency_debt": 450,
-    "recent_window_writes": 547,
+    "recent_window_writes": 558,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
         "provider_label": "OpenAI model pool",
-        "writes": 237
+        "writes": 252
       },
       {
         "provider": "tm_simple",
         "provider_label": "TM/simple",
-        "writes": 170
+        "writes": 168
       },
       {
         "provider": "free_google_translate",
         "provider_label": "Free Google Translate",
-        "writes": 113
+        "writes": 109
       },
       {
         "provider": "canonical_name_semantic_autofix",
         "provider_label": "canonical_name_semantic_autofix",
-        "writes": 24
+        "writes": 26
       },
       {
         "provider": "term_consistency_autofix",
@@ -124,12 +124,12 @@
     "providers": {
       "tm_simple": {
         "status": "active",
-        "recent_writes": 170
+        "recent_writes": 168
       },
       "free_google_translate": {
         "status": "active",
         "enabled": true,
-        "recent_writes": 113
+        "recent_writes": 109
       },
       "google_cloud": {
         "status": "disabled",
@@ -140,7 +140,7 @@
       "openai_model_pool": {
         "status": "active",
         "active_model": "openai/gpt-4o-mini",
-        "recent_writes": 237,
+        "recent_writes": 252,
         "requests_today": 243
       }
     },
@@ -250,7 +250,7 @@
       "used_pct": 97.2,
       "monthly_cap": 250.0,
       "spent": 243.0,
-      "latest_age_s": 112.375595,
+      "latest_age_s": 210.914178,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:45:05.693561Z",
+  "generated_at_utc": "2026-04-29T22:47:29.669845Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,7 +9,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-04-29 22:44:58"
+      "last_update": "2026-04-29 22:47:24"
     },
     "LIVE": {
       "state": "active",
@@ -17,7 +17,7 @@
       "reason": "",
       "freshness": "3min temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-04-29T22:41:44Z"
+      "last_update": "2026-04-29T22:43:37Z"
     },
     "PRE_MIGRATION": {
       "state": "inactive",
@@ -25,21 +25,21 @@
       "reason": "worker w trybie AUTO_TRANSLATE",
       "freshness": "1min temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-04-29 22:44:58"
+      "last_update": "2026-04-29 22:47:24"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "4min temu",
+      "freshness": "7s temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
-      "last_update": "2026-04-29T22:40:48.536627Z"
+      "last_update": "2026-04-29T22:47:22.022467Z"
     },
     "QUALITY": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "4min temu",
+      "freshness": "6min temu",
       "source": "quality_audit_latest.json",
       "last_update": "2026-04-29T22:40:49.420656Z"
     },
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-04-29 22:44:58"
+      "last_update": "2026-04-29 22:47:24"
     },
     "DOCTOR": {
       "state": "active",
@@ -57,14 +57,14 @@
       "reason": "1 alarmów",
       "freshness": "0s temu",
       "source": "doctor_alerts_latest.json",
-      "last_update": "2026-04-29T22:45:05.691792Z"
+      "last_update": "2026-04-29T22:47:29.667864Z"
     }
   },
   "operator_panels": {
     "worker_live": {
       "effective_state": "🟢 DZIAŁA",
       "phase": "AUTO_TRANSLATE",
-      "stage": "heartbeat_tick",
+      "stage": "auto_done",
       "category": "ro",
       "json_file": "items.json",
       "current_lang": "ro",
@@ -72,13 +72,24 @@
       "current_scope": "Serwer",
       "detail": "auto translate in progress",
       "current_key": "ro:items.json",
-      "heartbeat_at": "2026-04-29T22:41:44Z",
-      "heartbeat_age_s": 116,
+      "heartbeat_at": "2026-04-29T22:43:37Z",
+      "heartbeat_age_s": 138,
       "cycle": 18852
     },
     "recent_writes": {
-      "count": 16,
+      "count": 17,
       "items": [
+        {
+          "timestamp": "2026-04-29T22:47:14.820798Z",
+          "lang": "ro",
+          "json_file": "items.json",
+          "surface": "Serwer",
+          "translated": 60,
+          "sample_source": "openai:openai/gpt-4o-mini",
+          "sample_key": "item.11669.name",
+          "sample_text": "draken abominație moartă",
+          "physical_verified": true
+        },
         {
           "timestamp": "2026-04-29T22:40:41.628367Z",
           "lang": "cs",
@@ -529,7 +540,7 @@
     },
     "launcher_quality_gate": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T22:45:03.094231Z",
+      "generated_at_utc": "2026-04-29T22:47:28.258278Z",
       "enabled": true,
       "files": [
         "client.json",
@@ -614,15 +625,15 @@
       },
       "trend_24h": {
         "window_hours": 24,
-        "samples": 1016,
-        "pass_samples": 1016,
+        "samples": 1015,
+        "pass_samples": 1015,
         "fail_samples": 0,
         "pass_rate_pct": 100.0,
         "state_changes": 0,
         "latest_state": "pass",
         "oldest_state": "pass",
-        "latest_timestamp": "2026-04-29T22:45:03.094231Z",
-        "oldest_timestamp": "2026-04-28T22:46:21.204452Z",
+        "latest_timestamp": "2026-04-29T22:47:28.258278Z",
+        "oldest_timestamp": "2026-04-28T22:47:57.281442Z",
         "checks_failed_delta": 0,
         "word_salad_rejects_delta": 0,
         "placeholder_rejects_delta": 0,
@@ -2291,12 +2302,12 @@
     },
     "surface_parity": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T22:45:03.733951Z",
+      "generated_at_utc": "2026-04-29T22:47:28.287228Z",
       "window": {
         "trend_hours": 24,
-        "samples": 1016,
-        "window_start_utc": "2026-04-28T22:46:21.224619Z",
-        "window_end_utc": "2026-04-29T22:45:03.733951Z"
+        "samples": 1015,
+        "window_start_utc": "2026-04-28T22:47:57.302127Z",
+        "window_end_utc": "2026-04-29T22:47:28.287228Z"
       },
       "summary": {
         "surface_count": 4,
@@ -2312,7 +2323,7 @@
         "server": {
           "label": "Server",
           "total_reference_keys": 3602487,
-          "real_translated_keys": 411590,
+          "real_translated_keys": 411602,
           "coverage_real_pct": 11.43,
           "langs_count": 51,
           "delta_24h_pp": 0.56,
@@ -2333,9 +2344,9 @@
               "missing_keys": 70031
             }
           ],
-          "trend_samples": 1016,
-          "window_oldest_utc": "2026-04-28T22:46:21.224619Z",
-          "window_latest_utc": "2026-04-29T22:45:03.733951Z"
+          "trend_samples": 1015,
+          "window_oldest_utc": "2026-04-28T22:47:57.302127Z",
+          "window_latest_utc": "2026-04-29T22:47:28.287228Z"
         },
         "website": {
           "label": "Website",
@@ -2361,9 +2372,9 @@
               "missing_keys": 1554
             }
           ],
-          "trend_samples": 1016,
-          "window_oldest_utc": "2026-04-28T22:46:21.224619Z",
-          "window_latest_utc": "2026-04-29T22:45:03.733951Z"
+          "trend_samples": 1015,
+          "window_oldest_utc": "2026-04-28T22:47:57.302127Z",
+          "window_latest_utc": "2026-04-29T22:47:28.287228Z"
         },
         "launcher": {
           "label": "Launcher",
@@ -2389,9 +2400,9 @@
               "missing_keys": 242
             }
           ],
-          "trend_samples": 1016,
-          "window_oldest_utc": "2026-04-28T22:46:21.224619Z",
-          "window_latest_utc": "2026-04-29T22:45:03.733951Z"
+          "trend_samples": 1015,
+          "window_oldest_utc": "2026-04-28T22:47:57.302127Z",
+          "window_latest_utc": "2026-04-29T22:47:28.287228Z"
         },
         "installer": {
           "label": "Installer",
@@ -2417,9 +2428,9 @@
               "missing_keys": 2031
             }
           ],
-          "trend_samples": 1016,
-          "window_oldest_utc": "2026-04-28T22:46:21.224619Z",
-          "window_latest_utc": "2026-04-29T22:45:03.733951Z"
+          "trend_samples": 1015,
+          "window_oldest_utc": "2026-04-28T22:47:57.302127Z",
+          "window_latest_utc": "2026-04-29T22:47:28.287228Z"
         }
       },
       "ranking": [
@@ -2448,9 +2459,9 @@
               "missing_keys": 242
             }
           ],
-          "trend_samples": 1016,
-          "window_oldest_utc": "2026-04-28T22:46:21.224619Z",
-          "window_latest_utc": "2026-04-29T22:45:03.733951Z",
+          "trend_samples": 1015,
+          "window_oldest_utc": "2026-04-28T22:47:57.302127Z",
+          "window_latest_utc": "2026-04-29T22:47:28.287228Z",
           "rank": 1
         },
         {
@@ -2478,16 +2489,16 @@
               "missing_keys": 2031
             }
           ],
-          "trend_samples": 1016,
-          "window_oldest_utc": "2026-04-28T22:46:21.224619Z",
-          "window_latest_utc": "2026-04-29T22:45:03.733951Z",
+          "trend_samples": 1015,
+          "window_oldest_utc": "2026-04-28T22:47:57.302127Z",
+          "window_latest_utc": "2026-04-29T22:47:28.287228Z",
           "rank": 2
         },
         {
           "surface": "server",
           "label": "Server",
           "total_reference_keys": 3602487,
-          "real_translated_keys": 411590,
+          "real_translated_keys": 411602,
           "coverage_real_pct": 11.43,
           "langs_count": 51,
           "delta_24h_pp": 0.56,
@@ -2508,9 +2519,9 @@
               "missing_keys": 70031
             }
           ],
-          "trend_samples": 1016,
-          "window_oldest_utc": "2026-04-28T22:46:21.224619Z",
-          "window_latest_utc": "2026-04-29T22:45:03.733951Z",
+          "trend_samples": 1015,
+          "window_oldest_utc": "2026-04-28T22:47:57.302127Z",
+          "window_latest_utc": "2026-04-29T22:47:28.287228Z",
           "rank": 3
         },
         {
@@ -2538,16 +2549,16 @@
               "missing_keys": 1554
             }
           ],
-          "trend_samples": 1016,
-          "window_oldest_utc": "2026-04-28T22:46:21.224619Z",
-          "window_latest_utc": "2026-04-29T22:45:03.733951Z",
+          "trend_samples": 1015,
+          "window_oldest_utc": "2026-04-28T22:47:57.302127Z",
+          "window_latest_utc": "2026-04-29T22:47:28.287228Z",
           "rank": 4
         }
       ]
     },
     "launcher_readiness": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T22:45:03.762318Z",
+      "generated_at_utc": "2026-04-29T22:47:28.312024Z",
       "summary": {
         "state": "in_progress",
         "state_label": "🟡 IN_PROGRESS",
@@ -2605,8 +2616,8 @@
           "required_waves": 3,
           "waves_observed": 0,
           "waves_considered": [],
-          "wave_history_rows_total": 1773,
-          "wave_history_rows_window": 1016,
+          "wave_history_rows_total": 1774,
+          "wave_history_rows_window": 1015,
           "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
           "stale_alerts_monitored": [
             "DLQ_GROWTH",
@@ -2626,15 +2637,15 @@
           "pass": true,
           "detail": "window=24.02h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
           "window_hours": 24,
-          "window_start_utc": "2026-04-28T22:44:01.050162Z",
-          "window_end_utc": "2026-04-29T22:45:03.762318Z",
+          "window_start_utc": "2026-04-28T22:46:31.370963Z",
+          "window_end_utc": "2026-04-29T22:47:28.312024Z",
           "window_span_hours": 24.02,
           "has_min_24h_window": true,
           "files": {
             "client.json": {
-              "samples": 1018,
-              "oldest_timestamp": "2026-04-28T22:44:01.050162Z",
-              "latest_timestamp": "2026-04-29T22:45:03.762318Z",
+              "samples": 1017,
+              "oldest_timestamp": "2026-04-28T22:46:31.370963Z",
+              "latest_timestamp": "2026-04-29T22:47:28.312024Z",
               "oldest_identical_to_en_pct": 31.4,
               "latest_identical_to_en_pct": 31.4,
               "delta_identical_to_en_pct": 0.0,
@@ -2644,9 +2655,9 @@
               "trend_pass": true
             },
             "otclient_modules.json": {
-              "samples": 1018,
-              "oldest_timestamp": "2026-04-28T22:44:01.050162Z",
-              "latest_timestamp": "2026-04-29T22:45:03.762318Z",
+              "samples": 1017,
+              "oldest_timestamp": "2026-04-28T22:46:31.370963Z",
+              "latest_timestamp": "2026-04-29T22:47:28.312024Z",
               "oldest_identical_to_en_pct": 29.79,
               "latest_identical_to_en_pct": 29.79,
               "delta_identical_to_en_pct": 0.0,
@@ -2708,11 +2719,11 @@
     },
     "provider_routing": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T22:45:05.282585Z",
+      "generated_at_utc": "2026-04-29T22:47:29.321621Z",
       "active_provider": "OpenAI model pool",
       "active_provider_code": "openai_model_pool",
       "active_provider_source": "openai:openai/gpt-4o-mini",
-      "active_provider_timestamp": "2026-04-29T22:40:41.628367Z",
+      "active_provider_timestamp": "2026-04-29T22:47:14.820798Z",
       "active_model": "openai/gpt-4o-mini",
       "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
       "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -2778,27 +2789,27 @@
           "provider_limit_telemetry:provider_budget_high"
         ],
         "provider_consistency_debt": 450,
-        "recent_window_writes": 547,
+        "recent_window_writes": 558,
         "recent_write_breakdown": [
           {
             "provider": "openai_model_pool",
             "provider_label": "OpenAI model pool",
-            "writes": 237
+            "writes": 252
           },
           {
             "provider": "tm_simple",
             "provider_label": "TM/simple",
-            "writes": 170
+            "writes": 168
           },
           {
             "provider": "free_google_translate",
             "provider_label": "Free Google Translate",
-            "writes": 113
+            "writes": 109
           },
           {
             "provider": "canonical_name_semantic_autofix",
             "provider_label": "canonical_name_semantic_autofix",
-            "writes": 24
+            "writes": 26
           },
           {
             "provider": "term_consistency_autofix",
@@ -2832,12 +2843,12 @@
         "providers": {
           "tm_simple": {
             "status": "active",
-            "recent_writes": 170
+            "recent_writes": 168
           },
           "free_google_translate": {
             "status": "active",
             "enabled": true,
-            "recent_writes": 113
+            "recent_writes": 109
           },
           "google_cloud": {
             "status": "disabled",
@@ -2848,7 +2859,7 @@
           "openai_model_pool": {
             "status": "active",
             "active_model": "openai/gpt-4o-mini",
-            "recent_writes": 237,
+            "recent_writes": 252,
             "requests_today": 243
           }
         },
@@ -2958,7 +2969,7 @@
           "used_pct": 97.2,
           "monthly_cap": 250.0,
           "spent": 243.0,
-          "latest_age_s": 112.375595,
+          "latest_age_s": 210.914178,
           "day_utc": "2026-04-29",
           "unit": "requests_per_day",
           "stale": false
@@ -3004,22 +3015,22 @@
     },
     "term_consistency": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T22:45:05.286074Z",
+      "generated_at_utc": "2026-04-29T22:47:29.324198Z",
       "available": true,
-      "lang": "cs",
+      "lang": "ro",
       "json_file": "items.json",
       "surface": "items",
       "registry_path": "term_registry_enriched.json",
-      "registry_terms_total": 10400,
-      "keys_scanned": 340,
-      "keys_with_term_usages": 128,
-      "keys_with_conflicts": 70,
-      "term_conflicts_total": 166,
-      "term_conflict_rate_pct": 54.688,
-      "term_conflict_rate_delta_pct": 54.688,
-      "auto_fixed_english_name_leaks": 0,
-      "inflection_suspects_flagged": 32,
-      "manual_review_enqueued": 134,
+      "registry_terms_total": 14386,
+      "keys_scanned": 341,
+      "keys_with_term_usages": 111,
+      "keys_with_conflicts": 44,
+      "term_conflicts_total": 80,
+      "term_conflict_rate_pct": 39.64,
+      "term_conflict_rate_delta_pct": 39.64,
+      "auto_fixed_english_name_leaks": 3,
+      "inflection_suspects_flagged": 3,
+      "manual_review_enqueued": 77,
       "canonical_name_review_candidates": 0,
       "canonical_name_case_only_autofixed": 0,
       "canonical_name_semantic_autofixed": 0,
@@ -3028,117 +3039,117 @@
       "canonical_name_existing_quality_sanitized_keys": [],
       "canonical_name_semantic_quality_blocked_keys": [],
       "conflict_type_breakdown": {
-        "canonical_term_missing": 134,
-        "canonical_term_inflection_suspect": 32
+        "canonical_term_missing": 77,
+        "canonical_term_inflection_suspect": 3
       },
       "top_conflicts": [
         {
-          "key": "item.10216.desc",
+          "key": "item.10218.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "socha draka",
-          "canonical_en": "dragon statue",
-          "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+          "canonical": "peşte",
+          "canonical_en": "fish",
+          "translated_text": "Acest pește a fost sărat și deja pregătit ca provizie pentru soldați",
           "source_file": "items.json",
-          "source_key": "item.10029.name"
+          "source_key": "item.10245.name"
         },
         {
-          "key": "item.10216.desc",
+          "key": "item.10218.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "socha draka",
-          "canonical_en": "dragon statue",
-          "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+          "canonical": "peşte",
+          "canonical_en": "fish",
+          "translated_text": "Acest pește a fost sărat și deja pregătit ca provizie pentru soldați",
           "source_file": "items.json",
-          "source_key": "item.10030.name"
-        },
-        {
-          "key": "item.10216.desc",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "socha draka",
-          "canonical_en": "dragon statue",
-          "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
-          "source_file": "items.json",
-          "source_key": "item.10031.name"
-        },
-        {
-          "key": "item.10216.desc",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "socha draka",
-          "canonical_en": "dragon statue",
-          "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
-          "source_file": "items.json",
-          "source_key": "item.10032.name"
-        },
-        {
-          "key": "item.10216.desc",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "socha draka",
-          "canonical_en": "dragon statue",
-          "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
-          "source_file": "items.json",
-          "source_key": "item.10172.name"
-        },
-        {
-          "key": "item.10216.desc",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "socha draka",
-          "canonical_en": "dragon statue",
-          "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
-          "source_file": "items.json",
-          "source_key": "item.10173.name"
-        },
-        {
-          "key": "item.10217.desc",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "rezervovat",
-          "canonical_en": "book",
-          "translated_text": "Přineste tuto zašifrovanou knihu mudrci v Farmine, abyste získali moudrost nebo odemkli další Zaovu kulturu",
-          "source_file": "items.json",
-          "source_key": "item.12276.name"
+          "source_key": "item.10246.name"
         },
         {
           "key": "item.10288.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "dračí trůn",
+          "canonical": "tronul dragonului",
           "canonical_en": "dragon throne",
-          "translated_text": "Použijte jej ve svém domě k postavení dračího trůnu",
+          "translated_text": "Folosește-l în casa ta pentru a construi un tron ​​de dragon",
           "source_file": "items.json",
           "source_key": "item.10286.name"
         },
         {
           "key": "item.10288.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "dračí trůn",
+          "canonical": "tronul dragonului",
           "canonical_en": "dragon throne",
-          "translated_text": "Použijte jej ve svém domě k postavení dračího trůnu",
+          "translated_text": "Folosește-l în casa ta pentru a construi un tron ​​de dragon",
           "source_file": "items.json",
           "source_key": "item.10287.name"
         },
         {
-          "key": "item.10288.desc",
+          "key": "item.11473.desc",
           "conflict_type": "canonical_term_missing",
-          "canonical": "Drak",
-          "canonical_en": "Dragon",
-          "translated_text": "Použijte jej ve svém domě k postavení dračího trůnu",
-          "source_file": "monsters.json",
-          "source_key": "monster.dragon.name"
+          "canonical": "Aprinde",
+          "canonical_en": "Light",
+          "translated_text": "Este prea mare pentru a fi purtat de oameni, ci mai degrabă ușor",
+          "source_file": "spells.json",
+          "source_key": "spell.light.name"
         },
         {
-          "key": "item.10422.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "socha",
-          "canonical_en": "statue",
-          "translated_text": "Můžete to použít a zkusit z toho vytvořit sochu",
+          "key": "item.11609.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Sudden Death Rune",
+          "canonical_en": "sudden death rune",
+          "translated_text": "Este o rună împodobită a morții subite",
           "source_file": "items.json",
-          "source_key": "item.10322.name"
+          "source_key": "item.3155.name"
         },
         {
-          "key": "item.10422.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "socha",
-          "canonical_en": "statue",
-          "translated_text": "Můžete to použít a zkusit z toho vytvořit sochu",
+          "key": "item.11610.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Sudden Death Rune",
+          "canonical_en": "sudden death rune",
+          "translated_text": "Este o rună împodobită a morții subite",
           "source_file": "items.json",
-          "source_key": "item.2025.name"
+          "source_key": "item.3155.name"
+        },
+        {
+          "key": "item.11611.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Magic Wall Rune",
+          "canonical_en": "magic wall rune",
+          "translated_text": "Este o rună magică de perete împodobită",
+          "source_file": "items.json",
+          "source_key": "item.3180.name"
+        },
+        {
+          "key": "item.11611.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Runa peretelui magic",
+          "canonical_en": "Magic Wall Rune",
+          "translated_text": "Este o rună magică de perete împodobită",
+          "source_file": "spells.json",
+          "source_key": "spell.magic_wall_rune.name"
+        },
+        {
+          "key": "item.11612.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Magic Wall Rune",
+          "canonical_en": "magic wall rune",
+          "translated_text": "Este o rună magică de perete împodobită",
+          "source_file": "items.json",
+          "source_key": "item.3180.name"
+        },
+        {
+          "key": "item.11612.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "Runa peretelui magic",
+          "canonical_en": "Magic Wall Rune",
+          "translated_text": "Este o rună magică de perete împodobită",
+          "source_file": "spells.json",
+          "source_key": "spell.magic_wall_rune.name"
+        },
+        {
+          "key": "item.11613.desc",
+          "conflict_type": "canonical_term_missing",
+          "canonical": "anima rune moarte",
+          "canonical_en": "animate dead rune",
+          "translated_text": "Este o rună moartă animată împodobită",
+          "source_file": "items.json",
+          "source_key": "item.3203.name"
         }
       ]
     },
@@ -3148,7 +3159,7 @@
       "blockers_missing_keys_total": 0,
       "blockers_missing_lang_files": 0,
       "visible_pending_tail": 397,
-      "oldest_visible_pending_age_s": 28164,
+      "oldest_visible_pending_age_s": 28308,
       "top_langs": [
         {
           "lang": "ru",
@@ -3186,12 +3197,12 @@
         }
       ],
       "deferred_state_keys_total": 8983,
-      "deferred_state_updated_at": "2026-04-29T22:44:51.355214Z",
-      "deferred_state_age_s": 10,
+      "deferred_state_updated_at": "2026-04-29T22:47:20.100420Z",
+      "deferred_state_age_s": 6,
       "deferred_state_stats": {
         "enqueued": 0,
         "suppressed_cooldown": 0,
-        "suppressed_manual_review": 60,
+        "suppressed_manual_review": 119,
         "deduped_ttl": 0,
         "manual_review_escalations": 0,
         "partial_staged": 0,
@@ -3202,7 +3213,7 @@
     },
     "doctor_alerts": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T22:45:05.691792Z",
+      "generated_at_utc": "2026-04-29T22:47:29.667864Z",
       "overall": "warning",
       "thresholds": {
         "heartbeat_stale_s": 300,
@@ -3217,16 +3228,16 @@
           "name": "HEARTBEAT_STALE",
           "status": "ok",
           "severity": "ok",
-          "value": 116,
+          "value": 138,
           "threshold": 300,
-          "detail": "Heartbeat świeży (116s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=ro:items.json].",
+          "detail": "Heartbeat świeży (138s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=ro:items.json].",
           "source": "worker_runtime_heartbeat.json"
         },
         {
           "name": "NO_WRITE",
           "status": "ok",
           "severity": "ok",
-          "value": 263,
+          "value": 14,
           "threshold": 900,
           "detail": "Recent writes wyglądają zdrowo.",
           "source": "translation_recent_report.jsonl"
@@ -3246,7 +3257,7 @@
           "severity": "warning",
           "value": {
             "pending": 397,
-            "oldest_s": 28164
+            "oldest_s": 28308
           },
           "threshold": {
             "pending_min": 200,

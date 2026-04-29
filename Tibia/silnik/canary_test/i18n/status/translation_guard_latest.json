@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-04-29T21:29:24.008618Z",
-  "cycle": 13,
+  "timestamp": "2026-04-29T21:38:30.056895Z",
+  "cycle": 14,
   "context": "normal",
-  "language": "ru",
+  "language": "cs",
   "json_file": "items.json",
-  "translated": 62,
+  "translated": 97,
   "placeholders": 0,
-  "guard_fail": 2,
+  "guard_fail": 0,
   "guard": {
     "placeholder": 0,
     "command": 0,
@@ -14,5 +14,5 @@
   },
   "strict_missing_file": 0,
   "strict_missing_key": 0,
-  "strict_skipped_done": 4850
+  "strict_skipped_done": 5420
 }

@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-04-29T21:29:16.550699Z",
-  "language": "ru",
+  "timestamp": "2026-04-29T21:38:23.968734Z",
+  "language": "cs",
   "json_file": "items.json",
-  "translated": 62,
+  "translated": 97,
   "entries": [
     {
-      "key": "item.14967.name",
-      "en": "crystal geode",
-      "translated": "кристаллический геод",
+      "key": "item.15854.name",
+      "en": "scattered crystals",
+      "translated": "rozptýlené krystaly",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14968.name",
-      "en": "crystal geode",
-      "translated": "кристаллический геод",
+      "key": "item.15855.name",
+      "en": "scattered crystals",
+      "translated": "rozptýlené krystaly",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14969.name",
-      "en": "crystal geode",
-      "translated": "кристаллический геод",
+      "key": "item.15856.name",
+      "en": "scattered crystals",
+      "translated": "rozptýlené krystaly",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14970.name",
-      "en": "crystal geode",
-      "translated": "кристаллический геод",
+      "key": "item.15857.name",
+      "en": "scattered crystals",
+      "translated": "rozptýlené krystaly",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14971.name",
-      "en": "crystal geode",
-      "translated": "кристаллический геод",
+      "key": "item.15858.name",
+      "en": "scattered crystals",
+      "translated": "rozptýlené krystaly",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14979.name",
-      "en": "fossilised spine",
-      "translated": "ископаемый позвоночник",
+      "key": "item.15859.name",
+      "en": "scattered crystals",
+      "translated": "rozptýlené krystaly",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14980.name",
-      "en": "fossilised spine",
-      "translated": "ископаемый позвоночник",
+      "key": "item.15860.name",
+      "en": "scattered crystals",
+      "translated": "rozptýlené krystaly",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14981.name",
-      "en": "fossilised spine",
-      "translated": "ископаемый позвоночник",
+      "key": "item.15861.name",
+      "en": "scattered crystals",
+      "translated": "rozptýlené krystaly",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14982.name",
-      "en": "fossilised spine",
-      "translated": "ископаемый позвоночник",
+      "key": "item.15862.name",
+      "en": "scattered crystals",
+      "translated": "rozptýlené krystaly",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14983.name",
-      "en": "fossilised spine",
-      "translated": "ископаемый позвоночник",
+      "key": "item.15895.name",
+      "en": "broken idol",
+      "translated": "zlomený idol",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14984.name",
-      "en": "fossilised spine",
-      "translated": "ископаемый позвоночник",
+      "key": "item.15896.name",
+      "en": "broken idol",
+      "translated": "zlomený idol",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14985.name",
-      "en": "fossilised spine",
-      "translated": "ископаемый позвоночник",
+      "key": "item.15898.name",
+      "en": "strange pedestal",
+      "translated": "podivný podstavec",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15040.name",
-      "en": "mossy floor",
-      "translated": "мшистый пол",
+      "key": "item.15899.name",
+      "en": "strange pedestal",
+      "translated": "podivný podstavec",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15041.name",
-      "en": "mossy floor",
-      "translated": "мшистый пол",
+      "key": "item.15900.name",
+      "en": "strange pedestal",
+      "translated": "podivný podstavec",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15042.name",
-      "en": "mossy floor",
-      "translated": "мшистый пол",
+      "key": "item.15901.name",
+      "en": "strange pedestal",
+      "translated": "podivný podstavec",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15043.name",
-      "en": "mossy floor",
-      "translated": "мшистый пол",
+      "key": "item.15902.name",
+      "en": "strange pedestal",
+      "translated": "podivný podstavec",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15044.name",
-      "en": "mossy floor",
-      "translated": "мшистый пол",
+      "key": "item.15903.name",
+      "en": "strange pedestal",
+      "translated": "podivný podstavec",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15045.name",
-      "en": "mossy floor",
-      "translated": "мшистый пол",
+      "key": "item.15904.name",
+      "en": "strange pedestal",
+      "translated": "podivný podstavec",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15267.name",
-      "en": "mossy wall",
-      "translated": "мшистая стена",
+      "key": "item.15905.name",
+      "en": "strange pedestal",
+      "translated": "podivný podstavec",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.15268.name",
-      "en": "mossy wall",
-      "translated": "мшистая стена",
+      "key": "item.1593.name",
+      "en": "grass archway",
+      "translated": "oblouk z trávy",
       "source": "openai:openai/gpt-4o-mini"
     }
   ],

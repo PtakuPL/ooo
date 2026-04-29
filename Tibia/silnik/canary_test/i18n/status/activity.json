@@ -3,7 +3,7 @@
   "cycle": 1,
   "eta_seconds": 0,
   "file": "items.json",
-  "generated_at_utc": "2026-04-29T19:20:59Z",
+  "generated_at_utc": "2026-04-29T19:23:41Z",
   "message": "auto translate in progress",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -12,6 +12,16 @@
     "unit": "keys"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "ru",
+      "cycle": 1,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T19:23:41Z"
+    },
     {
       "action": "update",
       "category": "ru",
@@ -101,16 +111,6 @@
       "result": "ok",
       "stage": "heartbeat_tick",
       "t": "2026-04-29T19:09:41Z"
-    },
-    {
-      "action": "update",
-      "category": "tr",
-      "cycle": 4,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-04-29T19:09:22Z"
     }
   ],
   "stage": "heartbeat_tick",

@@ -1,29 +1,141 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:23:50.686824Z",
-  "lang": "es",
-  "json_file": "server.json",
-  "surface": "server",
+  "generated_at_utc": "2026-04-29T21:27:11.980609Z",
+  "lang": "ru",
+  "json_file": "items.json",
+  "surface": "items",
   "term_registry_path": "term_registry_enriched.json",
-  "term_conflicts_total": 0,
-  "keys_visited": 0,
-  "keys_scanned": 0,
+  "term_conflicts_total": 200,
+  "keys_visited": 1971,
+  "keys_scanned": 336,
   "visit_limit_hit": false,
-  "keys_with_term_usages": 0,
-  "keys_with_conflicts": 0,
-  "term_conflict_rate_pct": 0.0,
-  "term_conflict_rate_delta_pct": 0.0,
-  "registry_terms_total": 16737,
+  "keys_with_term_usages": 152,
+  "keys_with_conflicts": 71,
+  "term_conflict_rate_pct": 46.711,
+  "term_conflict_rate_delta_pct": 46.711,
+  "registry_terms_total": 14342,
   "auto_fixed_english_name_leaks": 0,
-  "inflection_suspects_flagged": 0,
-  "manual_review_enqueued": 0,
-  "conflict_type_breakdown": {},
+  "inflection_suspects_flagged": 83,
+  "manual_review_enqueued": 117,
+  "conflict_type_breakdown": {
+    "canonical_term_missing": 117,
+    "canonical_term_inflection_suspect": 83
+  },
   "surface_breakdown": {
-    "server": {
-      "keys_with_term_usages": 0,
-      "keys_with_conflicts": 0,
-      "term_conflicts_total": 0
+    "items": {
+      "keys_with_term_usages": 152,
+      "keys_with_conflicts": 71,
+      "term_conflicts_total": 200
     }
   },
-  "top_conflicts": []
+  "top_conflicts": [
+    {
+      "key": "item.10207.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "sНетwman",
+      "canonical_en": "snowman",
+      "translated_text": "Используйте его в своем доме, чтобы увидеть снеговика.",
+      "source_file": "items.json",
+      "source_key": "item.30336.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "статуя",
+      "canonical_en": "statue",
+      "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
+      "source_file": "items.json",
+      "source_key": "item.10322.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "статуя",
+      "canonical_en": "statue",
+      "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
+      "source_file": "items.json",
+      "source_key": "item.10975.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "статуя",
+      "canonical_en": "statue",
+      "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
+      "source_file": "items.json",
+      "source_key": "item.10976.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "статуя",
+      "canonical_en": "statue",
+      "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
+      "source_file": "items.json",
+      "source_key": "item.11696.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "статуя",
+      "canonical_en": "statue",
+      "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
+      "source_file": "items.json",
+      "source_key": "item.11697.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "статуя",
+      "canonical_en": "statue",
+      "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
+      "source_file": "items.json",
+      "source_key": "item.2025.name"
+    },
+    {
+      "key": "item.10217.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "книга",
+      "canonical_en": "book",
+      "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
+      "source_file": "items.json",
+      "source_key": "item.12276.name"
+    },
+    {
+      "key": "item.10217.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "книга",
+      "canonical_en": "book",
+      "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
+      "source_file": "items.json",
+      "source_key": "item.27929.name"
+    },
+    {
+      "key": "item.10217.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "книга",
+      "canonical_en": "book",
+      "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
+      "source_file": "items.json",
+      "source_key": "item.27930.name"
+    },
+    {
+      "key": "item.10217.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "книга",
+      "canonical_en": "book",
+      "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
+      "source_file": "items.json",
+      "source_key": "item.27931.name"
+    },
+    {
+      "key": "item.10217.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "книга",
+      "canonical_en": "book",
+      "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
+      "source_file": "items.json",
+      "source_key": "item.2816.name"
+    }
+  ]
 }

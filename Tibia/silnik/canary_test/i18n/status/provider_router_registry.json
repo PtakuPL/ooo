@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:24:08.169196Z",
+  "generated_at_utc": "2026-04-29T21:27:08.076907Z",
   "policy_version": "2026-04-22",
   "routing_order": [
     "tm_simple",
@@ -304,11 +304,11 @@
       "disabled": false,
       "disabled_by_doctor": false,
       "implemented": true,
-      "status": "degraded",
+      "status": "active",
       "active_model": "openai/gpt-4o-mini",
       "request_budget_cap": 250,
       "request_budget_policy": "telemetry_only",
-      "requests_today": 194,
+      "requests_today": 200,
       "models": [
         {
           "name": "openai/gpt-4.1-mini",

@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:21:49.251538Z",
-  "lang": "es",
-  "json_file": "server.json",
-  "surface": "world",
+  "generated_at_utc": "2026-04-29T21:24:44.869619Z",
+  "lang": "ru",
+  "json_file": "items.json",
+  "surface": "items",
   "target_chain": [
     "tm_simple",
     "free_google_translate",

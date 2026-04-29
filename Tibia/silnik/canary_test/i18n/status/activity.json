@@ -1,17 +1,47 @@
 {
-  "category": "tr",
-  "cycle": 12,
+  "category": "ru",
+  "cycle": 13,
   "eta_seconds": 0,
-  "file": "-",
-  "generated_at_utc": "2026-04-29T21:23:59Z",
-  "message": "cycle end",
+  "file": "items.json",
+  "generated_at_utc": "2026-04-29T21:26:14Z",
+  "message": "auto translate in progress",
   "phase": "AUTO_TRANSLATE",
   "progress": {
     "done": 0,
-    "total": 0,
-    "unit": "units"
+    "total": 30,
+    "unit": "keys"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "ru",
+      "cycle": 13,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T21:26:14Z"
+    },
+    {
+      "action": "update",
+      "category": "ru",
+      "cycle": 13,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T21:24:44Z"
+    },
+    {
+      "action": "update",
+      "category": "ru",
+      "cycle": 13,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-04-29T21:24:44Z"
+    },
     {
       "action": "update",
       "category": "es",
@@ -81,38 +111,8 @@
       "result": "ok",
       "stage": "auto_done",
       "t": "2026-04-29T21:18:45Z"
-    },
-    {
-      "action": "update",
-      "category": "de",
-      "cycle": 11,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T21:18:29Z"
-    },
-    {
-      "action": "update",
-      "category": "de",
-      "cycle": 11,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T21:16:59Z"
-    },
-    {
-      "action": "update",
-      "category": "de",
-      "cycle": 11,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T21:15:26Z"
     }
   ],
-  "stage": "cycle_end",
+  "stage": "heartbeat_tick",
   "status": "running"
 }

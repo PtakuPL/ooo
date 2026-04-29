@@ -1,30 +1,27 @@
 {
   "version": 1,
-  "generated_at_utc": "2026-04-29T21:18:59.788725Z",
-  "cycle": 12,
+  "generated_at_utc": "2026-04-29T21:24:17.052959Z",
+  "cycle": 13,
   "doctor": {
     "available": true,
     "overall": "critical",
     "issues_count": 1,
-    "warnings_count": 5
+    "warnings_count": 4
   },
   "alarm_summary": {
-    "active_count": 6,
-    "opened_count": 1,
+    "active_count": 5,
+    "opened_count": 0,
     "resolved_count": 1,
     "active_tokens": [
-      "GUARD_REPORT_STALE",
       "NATIVE_READINESS_BELOW_THRESHOLD",
       "QUEUE_STARVATION_DETECTED",
       "SURFACE_COVERAGE_IMBALANCE",
       "SUSPICIOUS_HIGH_ELEVATED",
       "TERM_CONSISTENCY_REGRESSION"
     ],
-    "opened_tokens": [
-      "GUARD_REPORT_STALE"
-    ],
+    "opened_tokens": [],
     "resolved_tokens": [
-      "DISPATCH_STALE"
+      "GUARD_REPORT_STALE"
     ]
   },
   "reaction": {
@@ -56,25 +53,15 @@
     }
   },
   "progress_snapshot": {
-    "statusd_report_timestamp": "2026-04-29T21:18:27.278176Z",
+    "statusd_report_timestamp": "2026-04-29T21:23:28.082094Z",
     "deferred_backlog_total": 0,
     "deferred_backlog_recent_1h": 0,
     "translation_kpi": {
       "window_entries": 200,
-      "total_translated": 8031,
-      "total_guard_fail": 313,
-      "guard_fail_rate_pct": 3.75,
+      "total_translated": 8285,
+      "total_guard_fail": 312,
+      "guard_fail_rate_pct": 3.63,
       "per_lang": {
-        "tr": {
-          "translated": 1211,
-          "guard_fail": 0,
-          "cycles": 26
-        },
-        "ru": {
-          "translated": 1157,
-          "guard_fail": 34,
-          "cycles": 26
-        },
         "cs": {
           "translated": 1401,
           "guard_fail": 151,
@@ -96,15 +83,25 @@
           "cycles": 24
         },
         "de": {
-          "translated": 1415,
+          "translated": 1714,
           "guard_fail": 38,
-          "cycles": 50
+          "cycles": 51
+        },
+        "tr": {
+          "translated": 1202,
+          "guard_fail": 0,
+          "cycles": 26
+        },
+        "ru": {
+          "translated": 1121,
+          "guard_fail": 33,
+          "cycles": 25
         }
       }
     },
     "strict_hourly_window": {
-      "window_start_utc": "2026-04-29T20:17:00.687330Z",
-      "window_end_utc": "2026-04-29T21:17:00.687330Z",
+      "window_start_utc": "2026-04-29T20:21:45.742195Z",
+      "window_end_utc": "2026-04-29T21:21:45.742195Z",
       "window_hours": 1.0,
       "sources": [
         "i18n/status/worker_cycle_perf.jsonl",
@@ -121,15 +118,15 @@
       "pending_skip_count": 0,
       "pending_skip_share_pct": 0.0,
       "pending_skip_share_migration_pct": 0.0,
-      "translated": 446,
+      "translated": 775,
       "guard_fail": 2,
-      "guard_fail_rate_pct": 0.4,
+      "guard_fail_rate_pct": 0.3,
       "no_progress_entries": 0,
       "no_progress_rate_pct": 0.0,
-      "throughput_keys_per_h": 446.0,
+      "throughput_keys_per_h": 775.0,
       "throughput_runtime_hours": 1.0,
       "throughput_runtime_source": "window_hours_long_runtime_fallback",
-      "suspicious_total": 624,
+      "suspicious_total": 648,
       "deferred_total": 32,
       "top_deferred_reasons": [
         {
@@ -156,7 +153,7 @@
         },
         {
           "target": "tr/items.json",
-          "translated": 30,
+          "translated": 60,
           "guard_fail": 0,
           "guard_command": 0
         },
@@ -183,6 +180,12 @@
           "translated": 159,
           "guard_fail": 0,
           "guard_command": 0
+        },
+        {
+          "target": "de/npc.json",
+          "translated": 299,
+          "guard_fail": 0,
+          "guard_command": 0
         }
       ]
     }
@@ -190,22 +193,22 @@
   "translation_data_freshness": {
     "translation_key_state.json": {
       "exists": true,
-      "age_s": 16,
+      "age_s": 22,
       "stale": false
     },
     "translation_guard_latest.json": {
       "exists": true,
-      "age_s": 14,
+      "age_s": 164,
       "stale": false
     },
     "translation_recent_report.jsonl": {
       "exists": true,
-      "age_s": 16,
+      "age_s": 22,
       "stale": false
     },
     "translation_global_overview.json": {
       "exists": true,
-      "age_s": 7,
+      "age_s": 12,
       "stale": false
     }
   }

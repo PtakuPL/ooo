@@ -1,9 +1,9 @@
 {
-  "category": "cs",
-  "cycle": 21,
+  "category": "ro",
+  "cycle": 22,
   "eta_seconds": 0,
   "file": "items.json",
-  "generated_at_utc": "2026-04-29T22:39:51Z",
+  "generated_at_utc": "2026-04-29T22:41:44Z",
   "message": "auto translate in progress",
   "phase": "AUTO_TRANSLATE",
   "progress": {
@@ -12,6 +12,36 @@
     "unit": "keys"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "ro",
+      "cycle": 22,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T22:41:44Z"
+    },
+    {
+      "action": "update",
+      "category": "ro",
+      "cycle": 22,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-04-29T22:41:44Z"
+    },
+    {
+      "action": "update",
+      "category": "cs",
+      "cycle": 21,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-04-29T22:40:48Z"
+    },
     {
       "action": "update",
       "category": "cs",
@@ -81,36 +111,6 @@
       "result": "ok",
       "stage": "auto_done",
       "t": "2026-04-29T22:33:25Z"
-    },
-    {
-      "action": "update",
-      "category": "ru",
-      "cycle": 20,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T22:32:31Z"
-    },
-    {
-      "action": "update",
-      "category": "ru",
-      "cycle": 20,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T22:31:00Z"
-    },
-    {
-      "action": "update",
-      "category": "ru",
-      "cycle": 20,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T22:29:29Z"
     }
   ],
   "stage": "heartbeat_tick",

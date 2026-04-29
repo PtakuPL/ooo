@@ -2521,7 +2521,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:31:06.697072Z",
+    "updated_at": "2026-04-29T22:37:01.201709Z",
     "en_hash": "a29bac723ca2d59ed78a2d715e17e92f",
     "attempted_preview": "sai",
     "attempted_hash": "a29bac723ca2d59ed78a2d715e17e92f"
@@ -2533,7 +2533,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:31:07.394846Z",
+    "updated_at": "2026-04-29T22:37:01.924798Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -2545,7 +2545,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:31:07.394905Z",
+    "updated_at": "2026-04-29T22:37:01.924857Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -2557,7 +2557,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:31:07.395029Z",
+    "updated_at": "2026-04-29T22:37:01.924984Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -2569,7 +2569,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:31:07.395057Z",
+    "updated_at": "2026-04-29T22:37:01.925013Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -2581,7 +2581,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:31:07.395076Z",
+    "updated_at": "2026-04-29T22:37:01.925033Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -2593,7 +2593,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:31:08.224813Z",
+    "updated_at": "2026-04-29T22:37:02.778888Z",
     "en_hash": "001cbc059a402b3be7c99be558eaaf73",
     "attempted_preview": "bed",
     "attempted_hash": "001cbc059a402b3be7c99be558eaaf73"
@@ -2605,7 +2605,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:31:08.492625Z",
+    "updated_at": "2026-04-29T22:37:03.041796Z",
     "en_hash": "001cbc059a402b3be7c99be558eaaf73",
     "attempted_preview": "bed",
     "attempted_hash": "001cbc059a402b3be7c99be558eaaf73"
@@ -2617,7 +2617,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T21:31:12.114397Z",
+    "updated_at": "2026-04-29T22:37:07.038476Z",
     "en_hash": "6845b7dc0f2f049ef0bd30a83292a969",
     "attempted_preview": "rum",
     "attempted_hash": "6845b7dc0f2f049ef0bd30a83292a969"
@@ -3191,7 +3191,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:31:23.329955Z",
+    "updated_at": "2026-04-29T22:37:30.425665Z",
     "en_hash": "4b2eef524ee371e73b293e0987babf23",
     "attempted_preview": "tic-tac-toe deska",
     "extra": {
@@ -3200,7 +3200,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:31:23Z"
+        "retry_not_before_utc": "2026-04-29T22:37:30Z"
       }
     },
     "attempted_hash": "3ab89d702c6479d50a42a58c9b8ea46f"
@@ -3212,7 +3212,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:31:25.712494Z",
+    "updated_at": "2026-04-29T22:37:30.430416Z",
     "en_hash": "4b2eef524ee371e73b293e0987babf23",
     "attempted_preview": "tic-tac-toe deska",
     "extra": {
@@ -3221,7 +3221,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:31:25Z"
+        "retry_not_before_utc": "2026-04-29T22:37:30Z"
       }
     },
     "attempted_hash": "3ab89d702c6479d50a42a58c9b8ea46f"
@@ -3233,7 +3233,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:31:25.716260Z",
+    "updated_at": "2026-04-29T22:37:30.434135Z",
     "en_hash": "4b2eef524ee371e73b293e0987babf23",
     "attempted_preview": "tic-tac-toe deska",
     "extra": {
@@ -3242,7 +3242,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:31:25Z"
+        "retry_not_before_utc": "2026-04-29T22:37:30Z"
       }
     },
     "attempted_hash": "3ab89d702c6479d50a42a58c9b8ea46f"
@@ -3254,7 +3254,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:31:25.719940Z",
+    "updated_at": "2026-04-29T22:37:30.437350Z",
     "en_hash": "4b2eef524ee371e73b293e0987babf23",
     "attempted_preview": "tic-tac-toe deska",
     "extra": {
@@ -3263,7 +3263,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:31:25Z"
+        "retry_not_before_utc": "2026-04-29T22:37:30Z"
       }
     },
     "attempted_hash": "3ab89d702c6479d50a42a58c9b8ea46f"
@@ -3275,7 +3275,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:31:25.723496Z",
+    "updated_at": "2026-04-29T22:37:30.440559Z",
     "en_hash": "4b2eef524ee371e73b293e0987babf23",
     "attempted_preview": "tic-tac-toe deska",
     "extra": {
@@ -3284,7 +3284,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:31:25Z"
+        "retry_not_before_utc": "2026-04-29T22:37:30Z"
       }
     },
     "attempted_hash": "3ab89d702c6479d50a42a58c9b8ea46f"
@@ -3296,7 +3296,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:31:25.726995Z",
+    "updated_at": "2026-04-29T22:37:30.443820Z",
     "en_hash": "4b2eef524ee371e73b293e0987babf23",
     "attempted_preview": "tic-tac-toe deska",
     "extra": {
@@ -3305,7 +3305,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:31:25Z"
+        "retry_not_before_utc": "2026-04-29T22:37:30Z"
       }
     },
     "attempted_hash": "3ab89d702c6479d50a42a58c9b8ea46f"
@@ -3317,7 +3317,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:31:25.730457Z",
+    "updated_at": "2026-04-29T22:37:33.190684Z",
     "en_hash": "4b2eef524ee371e73b293e0987babf23",
     "attempted_preview": "tic-tac-toe deska",
     "extra": {
@@ -3326,7 +3326,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:31:25Z"
+        "retry_not_before_utc": "2026-04-29T22:37:33Z"
       }
     },
     "attempted_hash": "3ab89d702c6479d50a42a58c9b8ea46f"
@@ -3338,7 +3338,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:31:28.304216Z",
+    "updated_at": "2026-04-29T22:37:33.194368Z",
     "en_hash": "4b2eef524ee371e73b293e0987babf23",
     "attempted_preview": "tic-tac-toe deska",
     "extra": {
@@ -3347,7 +3347,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:31:28Z"
+        "retry_not_before_utc": "2026-04-29T22:37:33Z"
       }
     },
     "attempted_hash": "3ab89d702c6479d50a42a58c9b8ea46f"
@@ -3359,7 +3359,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4o-mini",
-    "updated_at": "2026-04-29T21:31:28.308258Z",
+    "updated_at": "2026-04-29T22:37:33.197597Z",
     "en_hash": "4b2eef524ee371e73b293e0987babf23",
     "attempted_preview": "tic-tac-toe deska",
     "extra": {
@@ -3368,7 +3368,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T21:31:28Z"
+        "retry_not_before_utc": "2026-04-29T22:37:33Z"
       }
     },
     "attempted_hash": "3ab89d702c6479d50a42a58c9b8ea46f"
@@ -3972,7 +3972,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:19.123623Z",
+    "updated_at": "2026-04-29T22:37:59.215237Z",
     "en_hash": "f5983fdd8fd2e2fc1c22faaa80439f68",
     "attempted_preview": "Použijte jej ve svém domě k postavení dračí sochy",
     "extra": {
@@ -3994,7 +3994,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:19.263089Z",
+    "updated_at": "2026-04-29T22:37:59.398483Z",
     "en_hash": "95fc558d85dc30bac93a98ad1a8bd42f",
     "attempted_preview": "Přineste tuto zašifrovanou knihu mudrci v Farmine, abyste získali moudrost nebo odemkli další Zaovu kulturu",
     "extra": {
@@ -4016,7 +4016,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:20.998920Z",
+    "updated_at": "2026-04-29T22:37:59.962211Z",
     "en_hash": "353e14b2a3f813f1fb537fbaeec1166f",
     "attempted_preview": "Použijte jej ve svém domě k postavení dračího trůnu",
     "extra": {
@@ -4038,7 +4038,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:22.475459Z",
+    "updated_at": "2026-04-29T22:38:03.806514Z",
     "en_hash": "16ba2621362b2d453e79afbf3b3bf674",
     "attempted_preview": "Toto uhlí, vyčištěné posvátnými ohni, má sílu vyčistit značné množství nečisté vody",
     "extra": {
@@ -4060,7 +4060,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:25.964268Z",
+    "updated_at": "2026-04-29T22:38:04.992880Z",
     "en_hash": "959a4146c46d54cf5cf44ba91e6a653d",
     "attempted_preview": "Tato hlína byla smíchána s posvátnou zemí",
     "extra": {
@@ -4082,7 +4082,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:28.103887Z",
+    "updated_at": "2026-04-29T22:38:08.156441Z",
     "en_hash": "557ca322c4358b15b6f9f6082860c6db",
     "attempted_preview": "Tato miska byla potažena posvátnou hlínou a lze ji použít k čištění malého množství zkažené vody",
     "extra": {
@@ -4104,7 +4104,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:28.423663Z",
+    "updated_at": "2026-04-29T22:38:09.244309Z",
     "en_hash": "5ae9f693ac227ebabbd1f69e11d11fb0",
     "attempted_preview": "Tento rostlinný jed má zničit porosty poblíž Strážcova doupěte hluboko pod zahradami",
     "extra": {
@@ -4126,7 +4126,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:28.568743Z",
+    "updated_at": "2026-04-29T22:38:09.360433Z",
     "en_hash": "dae0b5d5321efbca600ef5014f1d45bf",
     "attempted_preview": "Je příliš velký na to, aby jej mohli nosit lidé, ale spíše lehký",
     "extra": {
@@ -4148,7 +4148,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:28.754841Z",
+    "updated_at": "2026-04-29T22:38:09.476011Z",
     "en_hash": "964010137d180c408e8d0cf4efe3bf94",
     "attempted_preview": "Je to ozdobená ultimátní léčivá runa",
     "extra": {
@@ -4170,7 +4170,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:29.612333Z",
+    "updated_at": "2026-04-29T22:38:10.491823Z",
     "en_hash": "964010137d180c408e8d0cf4efe3bf94",
     "attempted_preview": "Je to ozdobená ultimátní léčivá runa",
     "extra": {
@@ -4192,7 +4192,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:30.371983Z",
+    "updated_at": "2026-04-29T22:38:10.608760Z",
     "en_hash": "8d6e34d53b9a83d42b00e5370e68c363",
     "attempted_preview": "Je to ozdobená runa výbuchu",
     "extra": {
@@ -4214,7 +4214,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:33.404550Z",
+    "updated_at": "2026-04-29T22:38:11.129111Z",
     "en_hash": "8d6e34d53b9a83d42b00e5370e68c363",
     "attempted_preview": "Je to ozdobená runa výbuchu",
     "extra": {
@@ -4236,7 +4236,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:35.197297Z",
+    "updated_at": "2026-04-29T22:38:11.475113Z",
     "en_hash": "8d0504df5491ef3c971915357622291d",
     "attempted_preview": "Je to ozdobená runa magické zdi",
     "extra": {
@@ -4258,7 +4258,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:38.152324Z",
+    "updated_at": "2026-04-29T22:38:15.572499Z",
     "en_hash": "8d0504df5491ef3c971915357622291d",
     "attempted_preview": "Je to ozdobená runa magické zdi",
     "extra": {
@@ -4280,7 +4280,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:39.830625Z",
+    "updated_at": "2026-04-29T22:38:15.688809Z",
     "en_hash": "ae9bf208d9f309053b238ada89a724e2",
     "attempted_preview": "Je to ozdobená animovaná mrtvá runa",
     "extra": {
@@ -4302,7 +4302,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:41.155852Z",
+    "updated_at": "2026-04-29T22:38:15.805858Z",
     "en_hash": "ae9bf208d9f309053b238ada89a724e2",
     "attempted_preview": "Je to ozdobená animovaná mrtvá runa",
     "extra": {
@@ -4324,7 +4324,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:44.063028Z",
+    "updated_at": "2026-04-29T22:38:15.922443Z",
     "en_hash": "5209781c30655c8dd9013d825b4fd3fb",
     "attempted_preview": "Je to ozdobená velká runa ohnivé koule",
     "extra": {
@@ -4346,7 +4346,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:44.824220Z",
+    "updated_at": "2026-04-29T22:38:16.039089Z",
     "en_hash": "5209781c30655c8dd9013d825b4fd3fb",
     "attempted_preview": "Je to ozdobená velká runa ohnivé koule",
     "extra": {
@@ -4368,7 +4368,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:46.775958Z",
+    "updated_at": "2026-04-29T22:38:16.155739Z",
     "en_hash": "9851ceff64f152137cb46bca5761a046",
     "attempted_preview": "Je to ozdobená runa ohnivé koule",
     "extra": {
@@ -4390,7 +4390,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:47.763507Z",
+    "updated_at": "2026-04-29T22:38:16.272846Z",
     "en_hash": "9851ceff64f152137cb46bca5761a046",
     "attempted_preview": "Je to ozdobená runa ohnivé koule",
     "extra": {
@@ -4412,7 +4412,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:48.782717Z",
+    "updated_at": "2026-04-29T22:38:16.389573Z",
     "en_hash": "9c0013c945e9960010ced1d559368aac",
     "attempted_preview": "Je to ozdobená runa bouřky",
     "extra": {
@@ -4434,7 +4434,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:48.868876Z",
+    "updated_at": "2026-04-29T22:38:16.909500Z",
     "en_hash": "9c0013c945e9960010ced1d559368aac",
     "attempted_preview": "Je to ozdobená runa bouřky",
     "extra": {
@@ -4456,7 +4456,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:49.388969Z",
+    "updated_at": "2026-04-29T22:38:17.027513Z",
     "en_hash": "0c7e73079deb9dec34b004dcb71a2caa",
     "attempted_preview": "Je to ozdobená rampouchová runa",
     "extra": {
@@ -4478,7 +4478,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:49.475440Z",
+    "updated_at": "2026-04-29T22:38:17.147847Z",
     "en_hash": "0c7e73079deb9dec34b004dcb71a2caa",
     "attempted_preview": "Je to ozdobená rampouchová runa",
     "extra": {
@@ -4500,7 +4500,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:33:51.403579Z",
+    "updated_at": "2026-04-29T22:38:17.384152Z",
     "en_hash": "08d83b1d5e95d81ca96d3c7b0ba45577",
     "attempted_preview": "Je to ozdobená lavinová runa",
     "extra": {
@@ -4522,7 +4522,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:34:18.074802Z",
+    "updated_at": "2026-04-29T22:38:17.618946Z",
     "en_hash": "08d83b1d5e95d81ca96d3c7b0ba45577",
     "attempted_preview": "Je to ozdobená lavinová runa",
     "extra": {
@@ -4544,7 +4544,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:00.249161Z",
+    "updated_at": "2026-04-29T22:38:17.735871Z",
     "en_hash": "1dbfd3e382ac1a742b8bdd461c1df2e6",
     "attempted_preview": "Je to ozdobená paralyzující runa",
     "extra": {
@@ -4566,7 +4566,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:09.106419Z",
+    "updated_at": "2026-04-29T22:38:20.514574Z",
     "en_hash": "1dbfd3e382ac1a742b8bdd461c1df2e6",
     "attempted_preview": "Je to ozdobená paralyzující runa",
     "extra": {
@@ -4588,7 +4588,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:39.185295Z",
+    "updated_at": "2026-04-29T22:38:20.722090Z",
     "en_hash": "cc0e850a0556cdfcfd0c72104d3b71f0",
     "attempted_preview": "Je to ozdobená rozpadlá runa",
     "extra": {
@@ -4610,7 +4610,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:39.270698Z",
+    "updated_at": "2026-04-29T22:38:21.110432Z",
     "en_hash": "cc0e850a0556cdfcfd0c72104d3b71f0",
     "attempted_preview": "Je to ozdobená rozpadlá runa",
     "extra": {
@@ -4632,7 +4632,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:42.580980Z",
+    "updated_at": "2026-04-29T22:38:21.382284Z",
     "en_hash": "2dce5700ee83e199b11c075b5eac05c9",
     "attempted_preview": "Je to ozdobená chameleonská runa",
     "extra": {
@@ -4654,7 +4654,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:42.777062Z",
+    "updated_at": "2026-04-29T22:38:21.568267Z",
     "en_hash": "2dce5700ee83e199b11c075b5eac05c9",
     "attempted_preview": "Je to ozdobená chameleonská runa",
     "extra": {
@@ -4676,7 +4676,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:42.945987Z",
+    "updated_at": "2026-04-29T22:38:21.751640Z",
     "en_hash": "e5a3d42b0b5c54e33cbbb0f9856dad13",
     "attempted_preview": "Je to ozdobená zničit polní runu",
     "extra": {
@@ -4698,7 +4698,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:45.231815Z",
+    "updated_at": "2026-04-29T22:38:44.017084Z",
     "en_hash": "e5a3d42b0b5c54e33cbbb0f9856dad13",
     "attempted_preview": "Je to ozdobená zničit polní runu",
     "extra": {
@@ -4720,7 +4720,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:46.728193Z",
+    "updated_at": "2026-04-29T22:38:44.102544Z",
     "en_hash": "afdf2f07d4f14040fff552146ae6390d",
     "attempted_preview": "Je to ozdobená runa světelné magické střely",
     "extra": {
@@ -4742,7 +4742,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:48.020399Z",
+    "updated_at": "2026-04-29T22:39:25.866942Z",
     "en_hash": "afdf2f07d4f14040fff552146ae6390d",
     "attempted_preview": "Je to ozdobená runa světelné magické střely",
     "extra": {
@@ -4764,7 +4764,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:49.418366Z",
+    "updated_at": "2026-04-29T22:39:25.972284Z",
     "en_hash": "a3941ffba3cca1b52d1610c6b29884fc",
     "attempted_preview": "Název této těžké knihy zní: 'Rabaz' Unabridged Almanach Of Botany'",
     "extra": {
@@ -4786,7 +4786,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:51.296596Z",
+    "updated_at": "2026-04-29T22:39:27.665616Z",
     "en_hash": "025563dcb06d6731717fc7d1b715c468",
     "attempted_preview": "Obsahuje hodně vinných baněk.",
     "extra": {
@@ -4808,7 +4808,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:56.031271Z",
+    "updated_at": "2026-04-29T22:39:38.325451Z",
     "en_hash": "7353cd27d0e075e4188fe27bf8194a41",
     "attempted_preview": "Vyměnil jsi to s Bozovou přepravkou lahví vína",
     "extra": {
@@ -4830,7 +4830,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:57.478082Z",
+    "updated_at": "2026-04-29T22:39:52.581125Z",
     "en_hash": "7d5bb6c9594a3294e8f051d84105b712",
     "attempted_preview": "Toto malé zvířátko prostě miluje slizovitou houbu",
     "extra": {
@@ -4852,7 +4852,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:58.000853Z",
+    "updated_at": "2026-04-29T22:39:52.732750Z",
     "en_hash": "c85ba08bbc37495e6b3045f411f0f2d4",
     "attempted_preview": "Pokud byste sem tam přidali nějakou vlnu, určitě by to vypadalo a vypadalo jako skutečná králičí noha",
     "extra": {
@@ -4874,7 +4874,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:35:59.244150Z",
+    "updated_at": "2026-04-29T22:39:53.832770Z",
     "en_hash": "1f5dbb781e453bd540fbe20a5c7c45fe",
     "attempted_preview": "Použijte tento nůž na mrtvého válečného vlka, abyste získali trochu kůže. Neztrácejte to a neopouštějte jeskyni",
     "extra": {
@@ -4896,7 +4896,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:00.253614Z",
+    "updated_at": "2026-04-29T22:39:55.422776Z",
     "en_hash": "ea09e3143c78bfc7ae5e54c16b25c08a",
     "attempted_preview": "Vascalir ti to dal, abys sesbíral vosí jed",
     "extra": {
@@ -4918,7 +4918,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:00.813408Z",
+    "updated_at": "2026-04-29T22:39:55.512936Z",
     "en_hash": "1c5365d2350b3c54f3b453d06a55391c",
     "attempted_preview": "Tento klobouk ručně vyrobil Uman Moudrý a proklel Zathroth Ničitel. Uděluje ji TibiaWiki.com.br",
     "extra": {
@@ -4940,7 +4940,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:06.370029Z",
+    "updated_at": "2026-04-29T22:39:59.334456Z",
     "en_hash": "cb4a051f4b3005c172f505951719fe56",
     "attempted_preview": "Toto vědro je speciálně připraveno pro magickou vodu, o které je známo, že unikne téměř každému plavidlu",
     "extra": {
@@ -4962,7 +4962,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:11.047798Z",
+    "updated_at": "2026-04-29T22:40:04.532230Z",
     "en_hash": "25447addfecb86102efa8cef28f12ea3",
     "attempted_preview": "Ve stropě je díra.",
     "extra": {
@@ -4984,7 +4984,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:12.232060Z",
+    "updated_at": "2026-04-29T22:40:08.295151Z",
     "en_hash": "776c1b7fdab84b050993d5bfd5dffbad",
     "attempted_preview": "Obsahuje svěcenou vodu z kláštera bílého havrana.",
     "extra": {
@@ -5006,7 +5006,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:13.248670Z",
+    "updated_at": "2026-04-29T22:40:10.223835Z",
     "en_hash": "3578c5b32f47da7a6e917932befd7db6",
     "attempted_preview": "Tato lampa svítí velmi slabě.",
     "extra": {
@@ -5028,7 +5028,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:13.867851Z",
+    "updated_at": "2026-04-29T22:40:18.095617Z",
     "en_hash": "3578c5b32f47da7a6e917932befd7db6",
     "attempted_preview": "Tato lampa svítí velmi slabě.",
     "extra": {
@@ -5050,7 +5050,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:14.047131Z",
+    "updated_at": "2026-04-29T22:40:19.769061Z",
     "en_hash": "c0b89e9ef530b1575bb04fc07a8feda8",
     "attempted_preview": "Je to parcela pro strážní věž na Femor Hills",
     "extra": {
@@ -5072,7 +5072,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:16.310748Z",
+    "updated_at": "2026-04-29T22:40:23.336304Z",
     "en_hash": "ec385e5717e19a2037e8986fc553a3e8",
     "attempted_preview": "Tato rostlina nutně potřebuje trochu vody, jinak uschne a úplně zmizí",
     "extra": {
@@ -5094,7 +5094,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:16.998017Z",
+    "updated_at": "2026-04-29T22:40:25.206163Z",
     "en_hash": "9c82be8409b524a31df4d028b4355219",
     "attempted_preview": "Tento nepřetržitý proud vody se zdá být dostatečně silný, aby řezal i ty nejtvrdší materiály.",
     "extra": {
@@ -5116,7 +5116,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:17.508826Z",
+    "updated_at": "2026-04-29T22:40:25.295429Z",
     "en_hash": "ef6ca63c430d6e3bfdf7144ec4729e75",
     "attempted_preview": "Tento krvavě červený drahokam je stále drsný",
     "extra": {
@@ -5138,7 +5138,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:17.623499Z",
+    "updated_at": "2026-04-29T22:40:25.379736Z",
     "en_hash": "fd3552c39886db2debf3933f425d3433",
     "attempted_preview": "Tato bedna je plná zkamenělých korálů. Musí se včas zablokovat, jinak zkoroduje",
     "extra": {
@@ -5160,7 +5160,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:17.736442Z",
+    "updated_at": "2026-04-29T22:40:25.464571Z",
     "en_hash": "d09d43bde11ada7b26331f3beb99fa62",
     "attempted_preview": "Tato bedna je plná zkamenělých korálů. Musí se včas zablokovat, jinak zkoroduje.",
     "extra": {
@@ -5182,7 +5182,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:20.909514Z",
+    "updated_at": "2026-04-29T22:40:26.077013Z",
     "en_hash": "e651d792e0f39e1745df3e5f891c26ea",
     "attempted_preview": "Židle je přivázána k tomuto podivnému stroji. Mohli byste to použít, pokud byste měli příslušné pokyny.",
     "extra": {
@@ -5204,7 +5204,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:22.506290Z",
+    "updated_at": "2026-04-29T22:40:30.771611Z",
     "en_hash": "25447addfecb86102efa8cef28f12ea3",
     "attempted_preview": "Ve stropě je díra.",
     "extra": {
@@ -5226,7 +5226,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:22.643709Z",
+    "updated_at": "2026-04-29T22:40:30.888043Z",
     "en_hash": "1481c5a049b02850e99ef99d46e4c402",
     "attempted_preview": "Nikdo vlastně neví, kam to vede, ale dračí hřbitov může tajemství odhalit – nebo ne",
     "extra": {
@@ -5248,7 +5248,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T21:36:22.842963Z",
+    "updated_at": "2026-04-29T22:40:32.656292Z",
     "en_hash": "0ceb71ec246c81495fa3acf78ca561d9",
     "attempted_preview": "Další sada podivných symbolů.",
     "extra": {
@@ -5270,7 +5270,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:38:13.385680Z",
+    "updated_at": "2026-04-29T22:40:36.800114Z",
     "en_hash": "e4dffd3fb54b1d62a93edcf8c7d48e43",
     "attempted_preview": "mrtvých vadnoucích listů golem",
     "extra": {
@@ -5290,7 +5290,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:38:15.107801Z",
+    "updated_at": "2026-04-29T22:40:38.367456Z",
     "en_hash": "e4dffd3fb54b1d62a93edcf8c7d48e43",
     "attempted_preview": "mrtvých vadnoucích listů golem",
     "extra": {
@@ -5310,7 +5310,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:38:21.066019Z",
+    "updated_at": "2026-04-29T22:40:41.242511Z",
     "en_hash": "10ab30a37a7b51e48e4d8d07c29eb1f0",
     "attempted_preview": "dřevěná židle",
     "extra": {
@@ -5330,7 +5330,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:38:23.775900Z",
+    "updated_at": "2026-04-29T22:40:41.371315Z",
     "en_hash": "10ab30a37a7b51e48e4d8d07c29eb1f0",
     "attempted_preview": "dřevěná židle",
     "extra": {
@@ -21748,7 +21748,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:38:15.299540Z",
+    "updated_at": "2026-04-29T22:40:39.826153Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbička",
     "extra": {
@@ -21775,7 +21775,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:38:17.626095Z",
+    "updated_at": "2026-04-29T22:40:40.884633Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbička",
     "extra": {
@@ -21802,7 +21802,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:38:19.328910Z",
+    "updated_at": "2026-04-29T22:40:41.012864Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbička",
     "extra": {
@@ -21828,8 +21828,8 @@
     "key": "item.15535.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:12.163386Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:33.200546Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -21838,7 +21838,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:12Z"
+        "retry_not_before_utc": "2026-04-29T22:37:33Z"
       },
       "canonical_name_conflict": {
         "status": "auto_fixed_semantic_dominant",
@@ -22506,8 +22506,8 @@
     "key": "item.15567.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:12.168009Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:33.203433Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22516,7 +22516,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:12Z"
+        "retry_not_before_utc": "2026-04-29T22:37:33Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22527,8 +22527,8 @@
     "key": "item.15568.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:12.172330Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:33.206330Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22537,7 +22537,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:12Z"
+        "retry_not_before_utc": "2026-04-29T22:37:33Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22548,8 +22548,8 @@
     "key": "item.15569.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:14.406871Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:35.511341Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22558,7 +22558,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:14Z"
+        "retry_not_before_utc": "2026-04-29T22:37:35Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22569,8 +22569,8 @@
     "key": "item.15570.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:14.412043Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:35.514728Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22579,7 +22579,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:14Z"
+        "retry_not_before_utc": "2026-04-29T22:37:35Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22590,8 +22590,8 @@
     "key": "item.15571.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:14.415672Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:35.517664Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22600,7 +22600,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:14Z"
+        "retry_not_before_utc": "2026-04-29T22:37:35Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22611,8 +22611,8 @@
     "key": "item.15572.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:14.420074Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:35.520460Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22621,7 +22621,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:14Z"
+        "retry_not_before_utc": "2026-04-29T22:37:35Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22632,8 +22632,8 @@
     "key": "item.15573.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:14.422844Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:35.523362Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22642,7 +22642,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:14Z"
+        "retry_not_before_utc": "2026-04-29T22:37:35Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22653,8 +22653,8 @@
     "key": "item.15574.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:14.425582Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:35.526230Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22663,7 +22663,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:14Z"
+        "retry_not_before_utc": "2026-04-29T22:37:35Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22674,8 +22674,8 @@
     "key": "item.15575.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:16.289034Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:37.664129Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22684,7 +22684,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:16Z"
+        "retry_not_before_utc": "2026-04-29T22:37:37Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22695,8 +22695,8 @@
     "key": "item.15576.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:16.292397Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:37.667416Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22705,7 +22705,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:16Z"
+        "retry_not_before_utc": "2026-04-29T22:37:37Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22716,8 +22716,8 @@
     "key": "item.15577.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:16.297763Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:37.670499Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22726,7 +22726,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:16Z"
+        "retry_not_before_utc": "2026-04-29T22:37:37Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22737,8 +22737,8 @@
     "key": "item.15578.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:16.301840Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:37.673544Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22747,7 +22747,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:16Z"
+        "retry_not_before_utc": "2026-04-29T22:37:37Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22758,8 +22758,8 @@
     "key": "item.15579.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:16.305452Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:37.676339Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22768,7 +22768,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:16Z"
+        "retry_not_before_utc": "2026-04-29T22:37:37Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22779,8 +22779,8 @@
     "key": "item.15580.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:16.308982Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:37.679207Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22789,7 +22789,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:16Z"
+        "retry_not_before_utc": "2026-04-29T22:37:37Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22800,8 +22800,8 @@
     "key": "item.15581.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:18.236697Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:40.109658Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22810,7 +22810,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:18Z"
+        "retry_not_before_utc": "2026-04-29T22:37:40Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22821,8 +22821,8 @@
     "key": "item.15582.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:18.240753Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:40.112964Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22831,7 +22831,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:18Z"
+        "retry_not_before_utc": "2026-04-29T22:37:40Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22842,8 +22842,8 @@
     "key": "item.15583.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:18.243906Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:40.115876Z",
     "en_hash": "1d5b97f1b2db9379a9b499c986f0d4ca",
     "attempted_preview": "titanická houba",
     "extra": {
@@ -22852,7 +22852,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:18Z"
+        "retry_not_before_utc": "2026-04-29T22:37:40Z"
       }
     },
     "attempted_hash": "3a6ff152402aaeb70c14289354dae210"
@@ -22863,8 +22863,8 @@
     "key": "item.15584.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:18.246777Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:40.118450Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbová",
     "extra": {
@@ -22873,7 +22873,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:18Z"
+        "retry_not_before_utc": "2026-04-29T22:37:40Z"
       }
     },
     "attempted_hash": "738fdfc7ba84de9b5eb6c22f586bc496"
@@ -22884,8 +22884,8 @@
     "key": "item.15585.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:18.249532Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:40.120967Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbová",
     "extra": {
@@ -22894,7 +22894,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:18Z"
+        "retry_not_before_utc": "2026-04-29T22:37:40Z"
       }
     },
     "attempted_hash": "738fdfc7ba84de9b5eb6c22f586bc496"
@@ -22905,8 +22905,8 @@
     "key": "item.15586.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:18.255008Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:40.123463Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbová",
     "extra": {
@@ -22915,7 +22915,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:18Z"
+        "retry_not_before_utc": "2026-04-29T22:37:40Z"
       }
     },
     "attempted_hash": "738fdfc7ba84de9b5eb6c22f586bc496"
@@ -22926,8 +22926,8 @@
     "key": "item.15587.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:20.290104Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:42.154665Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbová",
     "extra": {
@@ -22936,7 +22936,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:20Z"
+        "retry_not_before_utc": "2026-04-29T22:37:42Z"
       }
     },
     "attempted_hash": "738fdfc7ba84de9b5eb6c22f586bc496"
@@ -22947,8 +22947,8 @@
     "key": "item.15588.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:20.293889Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:42.157233Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbová",
     "extra": {
@@ -22957,7 +22957,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:20Z"
+        "retry_not_before_utc": "2026-04-29T22:37:42Z"
       }
     },
     "attempted_hash": "738fdfc7ba84de9b5eb6c22f586bc496"
@@ -22968,8 +22968,8 @@
     "key": "item.15589.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:20.299609Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:42.159142Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbová",
     "extra": {
@@ -22978,7 +22978,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:20Z"
+        "retry_not_before_utc": "2026-04-29T22:37:42Z"
       }
     },
     "attempted_hash": "738fdfc7ba84de9b5eb6c22f586bc496"
@@ -22989,8 +22989,8 @@
     "key": "item.15590.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:20.306450Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:42.161034Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbová",
     "extra": {
@@ -22999,7 +22999,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:20Z"
+        "retry_not_before_utc": "2026-04-29T22:37:42Z"
       }
     },
     "attempted_hash": "738fdfc7ba84de9b5eb6c22f586bc496"
@@ -23010,8 +23010,8 @@
     "key": "item.15591.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:20.309838Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:42.163060Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbová",
     "extra": {
@@ -23020,7 +23020,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:20Z"
+        "retry_not_before_utc": "2026-04-29T22:37:42Z"
       }
     },
     "attempted_hash": "738fdfc7ba84de9b5eb6c22f586bc496"
@@ -23031,8 +23031,8 @@
     "key": "item.15592.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:20.313520Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:42.164950Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbová",
     "extra": {
@@ -23041,7 +23041,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:20Z"
+        "retry_not_before_utc": "2026-04-29T22:37:42Z"
       }
     },
     "attempted_hash": "738fdfc7ba84de9b5eb6c22f586bc496"
@@ -23052,8 +23052,8 @@
     "key": "item.15593.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:21.699379Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:43.952055Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbová",
     "extra": {
@@ -23062,7 +23062,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:21Z"
+        "retry_not_before_utc": "2026-04-29T22:37:43Z"
       }
     },
     "attempted_hash": "738fdfc7ba84de9b5eb6c22f586bc496"
@@ -23073,8 +23073,8 @@
     "key": "item.15594.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:21.704898Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:43.954620Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbová",
     "extra": {
@@ -23083,7 +23083,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:21Z"
+        "retry_not_before_utc": "2026-04-29T22:37:43Z"
       }
     },
     "attempted_hash": "738fdfc7ba84de9b5eb6c22f586bc496"
@@ -23094,8 +23094,8 @@
     "key": "item.15595.name",
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
-    "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T19:34:21.710213Z",
+    "source": "openai:openai/gpt-4o-mini",
+    "updated_at": "2026-04-29T22:37:43.956847Z",
     "en_hash": "cb94cba0b4dce9e7765f60e0d21d5ce7",
     "attempted_preview": "houba houbová",
     "extra": {
@@ -23104,7 +23104,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T19:34:21Z"
+        "retry_not_before_utc": "2026-04-29T22:37:43Z"
       }
     },
     "attempted_hash": "738fdfc7ba84de9b5eb6c22f586bc496"
@@ -67928,7 +67928,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:36:25.728460Z",
+    "updated_at": "2026-04-29T22:40:35.670111Z",
     "en_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
     "attempted_hash": "7e0e59b9da7df6c4889dc601c6c16a58",
     "attempted_preview": "zlomená kamenná zeď",
@@ -68018,7 +68018,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:37:08.142360Z",
+    "updated_at": "2026-04-29T22:40:35.850381Z",
     "en_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
     "attempted_hash": "7e0e59b9da7df6c4889dc601c6c16a58",
     "attempted_preview": "zlomená kamenná zeď",
@@ -68156,7 +68156,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:37:08.234913Z",
+    "updated_at": "2026-04-29T22:40:36.140059Z",
     "en_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
     "attempted_hash": "7e0e59b9da7df6c4889dc601c6c16a58",
     "attempted_preview": "zlomená kamenná zeď",
@@ -68294,7 +68294,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T21:38:13.265603Z",
+    "updated_at": "2026-04-29T22:40:36.496014Z",
     "en_hash": "f3d4ed5442ce28837ff3fbafc34e8d0b",
     "attempted_hash": "7e0e59b9da7df6c4889dc601c6c16a58",
     "attempted_preview": "zlomená kamenná zeď",
@@ -84151,5 +84151,365 @@
         "conflicting_translation": "зарезервированная SPRITE"
       }
     }
+  },
+  "cs::items.json::item.15933.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15933.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.515837Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15934.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15934.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.518189Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15935.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15935.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.520756Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15936.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15936.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.523139Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15937.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15937.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.525465Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15938.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15938.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.527765Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15939.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15939.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.530275Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.1594.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.1594.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.535846Z",
+    "en_hash": "3e8be45aa2e1f5519d1676025d5a2919",
+    "attempted_hash": "ed7928473752e06a1fb3d9c79bf5f054",
+    "attempted_preview": "oblouk z trávy"
+  },
+  "cs::items.json::item.15940.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15940.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.539886Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15941.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15941.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.544623Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15942.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15942.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.549333Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15943.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15943.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.553966Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15944.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15944.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.558878Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15945.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15945.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.563441Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15946.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15946.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.568041Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15947.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15947.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.571832Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15948.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15948.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.574335Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15949.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15949.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.577005Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15950.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15950.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.579910Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15951.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15951.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.582207Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15952.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15952.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.584468Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15953.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15953.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.586905Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15954.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15954.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.589278Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15955.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15955.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.591562Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15956.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15956.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.593871Z",
+    "en_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "attempted_hash": "80c8021f00d17d156f2373afa8dd81e6",
+    "attempted_preview": "kamenná zeď"
+  },
+  "cs::items.json::item.15957.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15957.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.600554Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "5f0d47673a3d0fc9c6dd5ad8c7195e5d",
+    "attempted_preview": "REZERVOVANÝ SPRITE"
+  },
+  "cs::items.json::item.15958.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15958.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.608061Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "5f0d47673a3d0fc9c6dd5ad8c7195e5d",
+    "attempted_preview": "REZERVOVANÝ SPRITE"
+  },
+  "cs::items.json::item.15959.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15959.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.614807Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "5f0d47673a3d0fc9c6dd5ad8c7195e5d",
+    "attempted_preview": "REZERVOVANÝ SPRITE"
+  },
+  "cs::items.json::item.15960.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15960.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.622003Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "5f0d47673a3d0fc9c6dd5ad8c7195e5d",
+    "attempted_preview": "REZERVOVANÝ SPRITE"
+  },
+  "cs::items.json::item.15961.name": {
+    "lang": "cs",
+    "json_file": "items.json",
+    "key": "item.15961.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T22:37:14.629713Z",
+    "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "attempted_hash": "5f0d47673a3d0fc9c6dd5ad8c7195e5d",
+    "attempted_preview": "REZERVOVANÝ SPRITE"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T20:03:34.483000Z",
+  "timestamp": "2026-04-29T20:15:02.416789Z",
   "priority_langs": [
     "es",
     "pl",
@@ -70,7 +70,7 @@
     "es": 704,
     "pl": 767,
     "cs": 15153,
-    "de": 19844,
+    "de": 19815,
     "fr": 13129,
     "hu": 638,
     "it": 2993,
@@ -122,7 +122,7 @@
   },
   "cooldown_state_file": "i18n/status/repair_target_cooldown_state.json",
   "cooldown_filtered_entries": 0,
-  "last_selected_target": "es:server.json",
+  "last_selected_target": "es:npc.json",
   "top_entries": [
     {
       "lang": "es",
@@ -576,14 +576,14 @@
     },
     {
       "lang": "de",
-      "json_file": "otclient_modules.json",
-      "identical_to_en": 462,
+      "json_file": "achievements.json",
+      "identical_to_en": 452,
       "domain_priority": 9
     },
     {
       "lang": "de",
-      "json_file": "achievements.json",
-      "identical_to_en": 452,
+      "json_file": "otclient_modules.json",
+      "identical_to_en": 433,
       "domain_priority": 9
     },
     {
@@ -1327,8 +1327,8 @@
   ],
   "selected": {
     "lang": "es",
-    "json_file": "npc.json",
-    "identical_to_en": 2,
-    "domain_priority": 0
+    "json_file": "server.json",
+    "identical_to_en": 9,
+    "domain_priority": 1
   }
 }

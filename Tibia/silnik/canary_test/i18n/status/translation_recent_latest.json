@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-04-29T20:09:07.905631Z",
-  "language": "es",
-  "json_file": "items.json",
-  "translated": 107,
+  "timestamp": "2026-04-29T20:14:31.775995Z",
+  "language": "de",
+  "json_file": "otclient_modules.json",
+  "translated": 228,
   "entries": [
     {
-      "key": "item.12627.name",
-      "en": "small shed",
-      "translated": "pequeño cobertizo",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.house_otui.tr_94",
+      "en": "No house selected",
+      "translated": "Kein Haus ausgewählt",
+      "source": "google_translate"
     },
     {
-      "key": "item.12628.name",
-      "en": "small shed",
-      "translated": "pequeño cobertizo",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.house_otui.tr_95",
+      "en": "Houses and Flats",
+      "translated": "Häuser und Wohnungen",
+      "source": "google_translate"
     },
     {
-      "key": "item.12629.name",
-      "en": "small shed",
-      "translated": "pequeño cobertizo",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.hud_otui.tr_1",
+      "en": "Joystick in RightPanel",
+      "translated": "Joystick im rechten Bedienfeld",
+      "source": "google_translate"
     },
     {
-      "key": "item.1263.name",
-      "en": "tic-tac-toe board",
-      "translated": "tablero de tres en raya",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.hud_otui.tr_2",
+      "en": "Display player mana bar",
+      "translated": "Manaleiste des Spielers anzeigen",
+      "source": "google_translate"
     },
     {
-      "key": "item.12630.name",
-      "en": "small shed",
-      "translated": "pequeño cobertizo",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.hud_otui.tr_3",
+      "en": "Display creature health bars",
+      "translated": "Gesundheitsbalken für Kreaturen anzeigen",
+      "source": "google_translate"
     },
     {
-      "key": "item.12631.name",
-      "en": "small shed",
-      "translated": "pequeño cobertizo",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.hud_otui.tr_4",
+      "en": "Display creature names",
+      "translated": "Namen von Kreaturen anzeigen",
+      "source": "google_translate"
     },
     {
-      "key": "item.1264.name",
-      "en": "tic-tac-toe board",
-      "translated": "tablero de tres en raya",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.imbuementtracker.tr_1",
+      "en": "Imbuement Tracker",
+      "translated": "Imbuement-Tracker",
+      "source": "google_translate"
     },
     {
-      "key": "item.1265.name",
-      "en": "tic-tac-toe board",
-      "translated": "tablero de tres en raya",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.imbuementtracker_otui.tr_2",
+      "en": "Show items with no active imbuement",
+      "translated": "Elemente ohne aktive Imbuement anzeigen",
+      "source": "google_translate"
     },
     {
-      "key": "item.1266.name",
-      "en": "tic-tac-toe board",
-      "translated": "tablero de tres en raya",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.imbuementtracker_otui.tr_3",
+      "en": "Show imbuements that last more than 3h",
+      "translated": "Zeigen Sie Durchdringungen an, die länger als 3 Stunden dauern",
+      "source": "google_translate"
     },
     {
-      "key": "item.12666.name",
-      "en": "water pump",
-      "translated": "bomba de agua",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.imbuementtracker_otui.tr_4",
+      "en": "Show imbuements that last between 1h and 3h",
+      "translated": "Zeigen Sie Durchdringungen an, die zwischen 1 und 3 Stunden dauern",
+      "source": "google_translate"
     },
     {
-      "key": "item.12667.name",
-      "en": "water pump",
-      "translated": "bomba de agua",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.imbuementtracker_otui.tr_5",
+      "en": "Show imbuements that last less than 1h",
+      "translated": "Zeigen Sie Durchdringungen an, die weniger als 1 Stunde dauern",
+      "source": "google_translate"
     },
     {
-      "key": "item.12668.name",
-      "en": "water pump",
-      "translated": "bomba de agua",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.imbuing.tr_10",
+      "en": "Items can have up to three imbuements slots. This slot is not available for this item.",
+      "translated": "Gegenstände können bis zu drei Imbuements-Slots haben. Dieser Slot ist für diesen Artikel nicht verfügbar.",
+      "source": "google_translate"
     },
     {
-      "key": "item.1267.name",
-      "en": "tic-tac-toe board",
-      "translated": "tablero de tres en raya",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.imbuing.tr_12",
+      "en": "The imbuement requires %s.",
+      "translated": "Die Imbuement erfordert %s.",
+      "source": "google_translate"
     },
     {
-      "key": "item.12676.name",
-      "en": "bird's nest",
-      "translated": "nido de pájaro",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.imbuing.tr_4",
+      "en": "Confirm Imbuing Attempt",
+      "translated": "Bestätigen Sie den Imbuing-Versuch",
+      "source": "google_translate"
     },
     {
-      "key": "item.12677.name",
-      "en": "bird's nest",
-      "translated": "nido de pájaro",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.imbuing.tr_7",
+      "en": "Confirm Clearing",
+      "translated": "Bestätigen Sie die Löschung",
+      "source": "google_translate"
     },
     {
-      "key": "item.1268.name",
-      "en": "tic-tac-toe board",
-      "translated": "tablero de tres en raya",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.imbuing_otui.tr_16",
+      "en": "Items can have up to three imbuements slots. This slot is not available for this item.",
+      "translated": "Gegenstände können bis zu drei Imbuements-Slots haben. Dieser Slot ist für diesen Artikel nicht verfügbar.",
+      "source": "google_translate"
     },
     {
-      "key": "item.1269.name",
-      "en": "tic-tac-toe board",
-      "translated": "tablero de tres en raya",
-      "source": "openai:openai/gpt-4.1-mini"
+      "key": "otclient_modules.imbuing_otui.tr_2",
+      "en": "Imbue Item",
+      "translated": "Gegenstand durchdringen",
+      "source": "google_translate"
     },
     {
-      "key": "item.10026.name",
-      "en": "baby rotworm",
-      "translated": "rotworm de bebé",
-      "source": "canonical_name_semantic_autofix"
+      "key": "otclient_modules.imbuing_otui.tr_3",
+      "en": "Your needs have changed? Click here to clear the imbuement from your item for a fee.",
+      "translated": "Ihre Bedürfnisse haben sich geändert? Klicken Sie hier, um die Belastung Ihres Artikels gegen eine Gebühr zu löschen.",
+      "source": "google_translate"
     },
     {
-      "key": "item.10299.name",
-      "en": "badger fur",
-      "translated": "pelaje de badger",
-      "source": "canonical_name_semantic_autofix"
+      "key": "otclient_modules.imbuing_otui.tr_4",
+      "en": "Clear imbuement:",
+      "translated": "Klare Durchdringung:",
+      "source": "google_translate"
     },
     {
-      "key": "item.10194.name",
-      "en": "bamboo drawer",
-      "translated": "drawer de bambú",
-      "source": "canonical_name_semantic_autofix"
+      "key": "otclient_modules.imbuing_otui.tr_5",
+      "en": "Time remaining:",
+      "translated": "Verbleibende Zeit:",
+      "source": "google_translate"
     }
   ],
   "filtered_untranslated_marker": 0

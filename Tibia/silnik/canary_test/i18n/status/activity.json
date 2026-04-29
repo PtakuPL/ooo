@@ -1,17 +1,47 @@
 {
-  "category": "de",
+  "category": "es",
   "cycle": 4,
   "eta_seconds": 0,
-  "file": "otclient_modules.json",
-  "generated_at_utc": "2026-04-29T20:12:02Z",
+  "file": "server.json",
+  "generated_at_utc": "2026-04-29T20:15:02Z",
   "message": "auto translate in progress",
   "phase": "AUTO_TRANSLATE",
   "progress": {
     "done": 0,
-    "total": 30,
+    "total": 9,
     "unit": "keys"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "es",
+      "cycle": 4,
+      "file": "server.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T20:15:02Z"
+    },
+    {
+      "action": "update",
+      "category": "de",
+      "cycle": 4,
+      "file": "otclient_modules.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-04-29T20:14:48Z"
+    },
+    {
+      "action": "update",
+      "category": "de",
+      "cycle": 4,
+      "file": "otclient_modules.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T20:13:32Z"
+    },
     {
       "action": "update",
       "category": "de",
@@ -81,36 +111,6 @@
       "result": "ok",
       "stage": "heartbeat_tick",
       "t": "2026-04-29T20:05:27Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 3,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T20:03:57Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 3,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_start",
-      "t": "2026-04-29T20:03:56Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 2,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T20:02:04Z"
     }
   ],
   "stage": "heartbeat_tick",

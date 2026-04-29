@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:13:06.012845Z",
+  "generated_at_utc": "2026-04-29T20:15:23.461112Z",
   "enabled": true,
   "files": [
     "client.json",
@@ -85,15 +85,15 @@
   },
   "trend_24h": {
     "window_hours": 24,
-    "samples": 1054,
-    "pass_samples": 1054,
+    "samples": 1053,
+    "pass_samples": 1053,
     "fail_samples": 0,
     "pass_rate_pct": 100.0,
     "state_changes": 0,
     "latest_state": "pass",
     "oldest_state": "pass",
-    "latest_timestamp": "2026-04-29T20:13:06.012845Z",
-    "oldest_timestamp": "2026-04-28T20:14:00.411869Z",
+    "latest_timestamp": "2026-04-29T20:15:23.461112Z",
+    "oldest_timestamp": "2026-04-28T20:16:27.641565Z",
     "checks_failed_delta": 0,
     "word_salad_rejects_delta": 0,
     "placeholder_rejects_delta": 0,
@@ -368,8 +368,8 @@
       },
       "otclient_modules.json": {
         "total_reference_keys": 2031,
-        "english_copy_keys": 584,
-        "identical_to_en_pct": 28.75,
+        "english_copy_keys": 556,
+        "identical_to_en_pct": 27.38,
         "word_salad_rejects": 0,
         "placeholder_rejects": 0,
         "total_rejects": 60,

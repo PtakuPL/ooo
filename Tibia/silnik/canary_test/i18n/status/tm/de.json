@@ -61910,5 +61910,1829 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-04-29T19:03:44.001802Z"
+  },
+  "otclient_modules.gameinterface.tr_2": {
+    "src_hash": "a7e8f0f7c140cc80cc98df15c6268957",
+    "text": "Zur Beuteliste hinzufügen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.725434Z"
+  },
+  "otclient_modules.gameinterface.tr_3": {
+    "src_hash": "619c926a17e038937d730675aa457628",
+    "text": "Aus der Beuteliste entfernen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.735015Z"
+  },
+  "otclient_modules.gameinterface.tr_6": {
+    "src_hash": "d7b89a0a29f2dbb493df4e4d2ed59c6a",
+    "text": "Namen kopieren",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.760373Z"
+  },
+  "otclient_modules.gameinterface.tr_7": {
+    "src_hash": "133ce3234294455af30316ec37e2ca3f",
+    "text": "Regelverstoß",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.762008Z"
+  },
+  "otclient_modules.gameinterface.tr_8": {
+    "src_hash": "96c46cc8518fb5aede01e092b0f717c0",
+    "text": "Einladen zu Party",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.763842Z"
+  },
+  "otclient_modules.graphics_otui.tr_1": {
+    "src_hash": "8ade35fdb6abe34f78026c4de4e3d51a",
+    "text": "Spielfenster nicht dehnen/verkleinern",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.808062Z"
+  },
+  "otclient_modules.graphics_otui.tr_8": {
+    "src_hash": "e46aa3f5fbe44b1210caa8db4281d50a",
+    "text": "Framerate-Limit des Spiels: %s",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.828427Z"
+  },
+  "otclient_modules.graphics_otui.tr_9": {
+    "src_hash": "e46aa3f5fbe44b1210caa8db4281d50a",
+    "text": "Framerate-Limit des Spiels: %s",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.831347Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_10": {
+    "src_hash": "b139c4284c5c3111b857052dac419d42",
+    "text": "Für sich selbst verwenden",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.849660Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_12": {
+    "src_hash": "15479c5427a844a0695a36c7be1d394e",
+    "text": "Wählen Sie Objekt aus",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.852328Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_13": {
+    "src_hash": "05da0bdce5c7b0f0edc2afe63de23eea",
+    "text": "Automatisch senden",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.854289Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_9": {
+    "src_hash": "d2bf683c031ce553916e0a4462bf6558",
+    "text": "Zielgerichtet einsetzen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.866123Z"
+  },
+  "otclient_modules.house.tr_100": {
+    "src_hash": "0059ab21743c19543af55cf48bcc4b1d",
+    "text": "Eigene Häuser",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.867368Z"
+  },
+  "otclient_modules.house.tr_101": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Alle Staaten",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.868473Z"
+  },
+  "otclient_modules.house.tr_47": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Nach Namen sortieren",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.936542Z"
+  },
+  "otclient_modules.house.tr_48": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Alle Staaten",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.937640Z"
+  },
+  "otclient_modules.house.tr_53": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Nach Namen sortieren",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.946254Z"
+  },
+  "otclient_modules.house.tr_54": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Alle Staaten",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.947241Z"
+  },
+  "otclient_modules.house.tr_59": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Nach Namen sortieren",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.967095Z"
+  },
+  "otclient_modules.house.tr_60": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Alle Staaten",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.968732Z"
+  },
+  "otclient_modules.house.tr_65": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Nach Namen sortieren",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.980387Z"
+  },
+  "otclient_modules.house.tr_66": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Alle Staaten",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:45.981494Z"
+  },
+  "otclient_modules.house.tr_95": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Nach Namen sortieren",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:46.018839Z"
+  },
+  "otclient_modules.house.tr_98": {
+    "src_hash": "e5eaeb0ddb86fbb954e0ecf32410e1a4",
+    "text": "Alle Staaten",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:46.020881Z"
+  },
+  "otclient_modules.house.tr_99": {
+    "src_hash": "deb7ecd44df5d3b059fd31075a895308",
+    "text": "Nach Namen sortieren",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:46.022651Z"
+  },
+  "otclient_modules.imbuing.tr_9": {
+    "src_hash": "8915216a0bcb92f0a170985473b74e30",
+    "text": "Klare Durchdringung",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:46.134112Z"
+  },
+  "otclient_modules.imbuing_otui.tr_10": {
+    "src_hash": "bb2a2334aa0d8fbb37d661b97fc6c766",
+    "text": "Imbue Empty Slot",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:46.136472Z"
+  },
+  "otclient_modules.imbuing_otui.tr_11": {
+    "src_hash": "18adfb026ad4b2df79b6c2ec81a59f14",
+    "text": "Slot auswählen:",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:46.138135Z"
+  },
+  "otclient_modules.imbuing_otui.tr_15": {
+    "src_hash": "60d65769e17d580b4cc077b24ba2b1dd",
+    "text": "Artikelinformationen",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:46.141511Z"
+  },
+  "otclient_modules.imbuing_otui.tr_6": {
+    "src_hash": "8915216a0bcb92f0a170985473b74e30",
+    "text": "Klare Durchdringung",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:10:46.153007Z"
+  },
+  "otclient_modules.gameinterface.tr_19": {
+    "src_hash": "bfdbb127b7e07f0ee628705d5d9c0bea",
+    "text": "Nachricht an %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:05.367916Z"
+  },
+  "otclient_modules.gameinterface.tr_20": {
+    "src_hash": "976eec2529d2687881a5648aeb7583c6",
+    "text": "Hör auf zu folgen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:05.370296Z"
+  },
+  "otclient_modules.gameinterface.tr_22": {
+    "src_hash": "849c0e450ef4b187fac2639a9e4b7c59",
+    "text": "Stoppen Sie den Angriff",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:05.373153Z"
+  },
+  "otclient_modules.gameinterface.tr_24": {
+    "src_hash": "688f29c7b9b569fad4dad380746f31c8",
+    "text": "Verlassen Sie Party",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:05.375621Z"
+  },
+  "otclient_modules.gameinterface.tr_25": {
+    "src_hash": "13b6567348091a85e6220d60e1c72880",
+    "text": "Aktivieren Sie Shared Experience",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:05.379282Z"
+  },
+  "otclient_modules.gameinterface.tr_26": {
+    "src_hash": "3259fb8205740488d6b852317e5eeff7",
+    "text": "Geteilte Erfahrung deaktivieren",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:05.382716Z"
+  },
+  "otclient_modules.gameinterface.tr_29": {
+    "src_hash": "85b5878c00c832c95b8c4572999c158a",
+    "text": "Beutedialog",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:05.384325Z"
+  },
+  "otclient_modules.gameinterface.tr_31": {
+    "src_hash": "ea28314fcb2876611302e2e056f5f10d",
+    "text": "Handeln Sie mit ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:05.389388Z"
+  },
+  "otclient_modules.gameinterface.tr_32": {
+    "src_hash": "b2b615a368ee0edfeeb79bf811c817d4",
+    "text": "Leiche plündern",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:05.391308Z"
+  },
+  "otclient_modules.gameinterface.tr_33": {
+    "src_hash": "d1d839ea1702ef006d8b44a77b3e869c",
+    "text": "Feld durchsuchen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:05.393312Z"
+  },
+  "otclient_modules.gameinterface.tr_38": {
+    "src_hash": "c46170e27615d35575f19ddf0edab208",
+    "text": "Verwendung mit ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:05.395401Z"
+  },
+  "otclient_modules.gameinterface.tr_4": {
+    "src_hash": "78c65a9023caefd91854ee076905b157",
+    "text": "Beutecontainer verwalten",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:05.398206Z"
+  },
+  "otclient_modules.gameinterface.tr_40": {
+    "src_hash": "2959ce8aed67d6b6e6f5cefd601f1091",
+    "text": "In neuem Fenster öffnen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.458109Z"
+  },
+  "otclient_modules.gameinterface.tr_46": {
+    "src_hash": "18895ac34ba36ad53aad98046ce15440",
+    "text": "Beenden erzwingen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.459200Z"
+  },
+  "otclient_modules.gameinterface.tr_49": {
+    "src_hash": "eaf0b666047d147666d8f27678f61b93",
+    "text": "Wenn Sie das Programm beenden, bleibt Ihr Charakter möglicherweise im Spiel.\nKlicken Sie auf 'Logout', um sicherzustellen, dass Ihr Charakter das Spiel ordnungsgemäß verlässt.\nKlicken Sie auf 'Exit', wenn Sie das Programm beenden möchten, ohne Ihren Charakter abzumelden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.472793Z"
+  },
+  "otclient_modules.gameinterface.tr_51": {
+    "src_hash": "8e175b33dedf798073624f61a7fd9155",
+    "text": "Zu Ihrer Information",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.474052Z"
+  },
+  "otclient_modules.gameinterface.tr_9": {
+    "src_hash": "f3d07438a875d9b538f837311dd11091",
+    "text": "Übergeben Sie die Führung an %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.475767Z"
+  },
+  "otclient_modules.gameinterface_otui.tr_1": {
+    "src_hash": "07d1431c42800e6d36d62bb06e171aca",
+    "text": "Hauptmenü anzeigen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.476849Z"
+  },
+  "otclient_modules.general_otui.tr_1": {
+    "src_hash": "ee9ea1860f7652de92e8cede94dd2826",
+    "text": "Hotkeys-Manager",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.477770Z"
+  },
+  "otclient_modules.general_otui.tr_10": {
+    "src_hash": "b59a1a77eadc0c564a3ad1bc5e74c53a",
+    "text": "Textnachrichten anzeigen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.479074Z"
+  },
+  "otclient_modules.general_otui.tr_11": {
+    "src_hash": "9c0859761217af71e4b645a84fd7c81d",
+    "text": "Offene Behälter maximiert",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.480531Z"
+  },
+  "otclient_modules.general_otui.tr_12": {
+    "src_hash": "92e57181d8c86f6af541fd42d691a68a",
+    "text": "Erkennt anhand des, wann der Diagonalschritt verwendet werden soll\nTasten, die Sie drücken",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.485097Z"
+  },
+  "otclient_modules.general_otui.tr_13": {
+    "src_hash": "aef88a1f13915482659e0c341fa4614a",
+    "text": "Ermöglichen Sie intelligentes Gehen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.487123Z"
+  },
+  "otclient_modules.general_otui.tr_14": {
+    "src_hash": "c913f9d1b8813de52039f2dd63dbe215",
+    "text": "Stapel direkt verschieben",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.488534Z"
+  },
+  "otclient_modules.general_otui.tr_15": {
+    "src_hash": "f323c53605075c6d1d69b70a1c8897cd",
+    "text": "Automatische Verfolgungsüberschreibung zulassen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.490937Z"
+  },
+  "otclient_modules.general_otui.tr_16": {
+    "src_hash": "03c65f2f8b1b5c1781ca836588c34690",
+    "text": "Klassische Steuerung",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.492087Z"
+  },
+  "otclient_modules.general_otui.tr_17": {
+    "src_hash": "acc6fbe4a6755e6efbbbe22583fd144e",
+    "text": "Verbindungsgeschwindigkeit zum Server anzeigen (Millisekunden)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.495085Z"
+  },
+  "otclient_modules.general_otui.tr_18": {
+    "src_hash": "c1b49e3a955ab576b8d569888612e8d2",
+    "text": "Verbindungs-Ping anzeigen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.496493Z"
+  },
+  "otclient_modules.general_otui.tr_2": {
+    "src_hash": "9ef44d485b19d1ef9ad16cf7cc3d4431",
+    "text": "Gehverzögerung nach Etagenwechsel: %dms",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.498601Z"
+  },
+  "otclient_modules.general_otui.tr_3": {
+    "src_hash": "0fca4731c536105d8bb5e6bff6c57fa7",
+    "text": "Gehverzögerung nach Etagenwechsel: 200 ms",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.500668Z"
+  },
+  "otclient_modules.general_otui.tr_4": {
+    "src_hash": "a3c7684f1e03172f953abe59429cd4f5",
+    "text": "Gehverzögerung nach Teleport: %dms",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.502562Z"
+  },
+  "otclient_modules.general_otui.tr_5": {
+    "src_hash": "cde86a20f0e83b5109abe6e2c69735e5",
+    "text": "Gehverzögerung nach Teleport: 200 ms",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:32.504410Z"
+  },
+  "otclient_modules.general_otui.tr_6": {
+    "src_hash": "e88dbe08f73d2856e4a12f74e79b2475",
+    "text": "Gehverzögerung nach der Wende: %dms",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.074402Z"
+  },
+  "otclient_modules.general_otui.tr_7": {
+    "src_hash": "d8ac783719d0e1cdec1bf0b4066ee348",
+    "text": "Gehverzögerung nach der Wende: 50 ms",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.075895Z"
+  },
+  "otclient_modules.general_otui.tr_8": {
+    "src_hash": "3b6e01172bc88cf3e83c292d5ac59061",
+    "text": "Hotkey-Verzögerung: %dms",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.076991Z"
+  },
+  "otclient_modules.general_otui.tr_9": {
+    "src_hash": "c100d8cd35239c0f7776bb93de12f2d9",
+    "text": "Hotkey-Verzögerung: 30 ms",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.078035Z"
+  },
+  "otclient_modules.gift_otui.tr_3": {
+    "src_hash": "8db61ba8bc85fde639110b3098e827bb",
+    "text": "Geben Sie den Spielernamen ein",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.079254Z"
+  },
+  "otclient_modules.giftcoins_otui.tr_3": {
+    "src_hash": "4015d6689d01a2da03f9cb64811c8527",
+    "text": "Zu verschenkender Betrag: 0",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.080320Z"
+  },
+  "otclient_modules.giftcoins_otui.tr_4": {
+    "src_hash": "af5aa25c0c6f9d0106f73a9e0c03df5d",
+    "text": "Übertragbare Aufgabenpunkte:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.081473Z"
+  },
+  "otclient_modules.giftcoins_otui.tr_5": {
+    "src_hash": "4015d6689d01a2da03f9cb64811c8527",
+    "text": "Zu verschenkender Betrag: 0",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.082529Z"
+  },
+  "otclient_modules.giftcoins_otui.tr_6": {
+    "src_hash": "b82c97e22a03155b832884a506d5c7e8",
+    "text": "Übertragbare Tibia-Münzen:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.083755Z"
+  },
+  "otclient_modules.giftcoins_otui.tr_8": {
+    "src_hash": "70774c8aa7e30c1d2ecd803063499594",
+    "text": "Bitte wählen Sie die Menge an Tibia-Münzen aus, die Sie verschenken möchten, und geben Sie den Namen des Charakters ein, der die Tibia-Münzen erhalten soll.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.089623Z"
+  },
+  "otclient_modules.giftcoins_otui.tr_9": {
+    "src_hash": "f68168bddbe2a0f87544177c2ddc5efa",
+    "text": "Verschenke Tibia Münzen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.090681Z"
+  },
+  "otclient_modules.graphics_otui.tr_10": {
+    "src_hash": "8fe60a8f548bc634dde6f4c6185d47ac",
+    "text": "Bildrate anzeigen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.091434Z"
+  },
+  "otclient_modules.graphics_otui.tr_11": {
+    "src_hash": "8fe60a8f548bc634dde6f4c6185d47ac",
+    "text": "Bildrate anzeigen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.092172Z"
+  },
+  "otclient_modules.graphics_otui.tr_12": {
+    "src_hash": "21769516cd9221e1edf7dceb667afb45",
+    "text": "Begrenzt Ihre FPS basierend auf der Bildwiederholfrequenz des Monitors",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.094720Z"
+  },
+  "otclient_modules.graphics_otui.tr_14": {
+    "src_hash": "e5afd54a401d4daa1f85303a7af396a7",
+    "text": "Vollbildmodus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.095451Z"
+  },
+  "otclient_modules.graphics_otui.tr_15": {
+    "src_hash": "b181e170abc9aacd083329a8fb1a3b62",
+    "text": "Antialiasing-Modus:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.096296Z"
+  },
+  "otclient_modules.graphics_otui.tr_2": {
+    "src_hash": "2708c771e825cafa207a1d049d4931f9",
+    "text": "Diese Option sorgt dafür, dass Texturen asynchron geladen werden und verbraucht weniger RAM.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.099625Z"
+  },
+  "otclient_modules.graphics_otui.tr_3": {
+    "src_hash": "2544520d7e3b4b9d16e4c6ea6e4a9a42",
+    "text": "Asynchrones Laden von Texturen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.100868Z"
+  },
+  "otclient_modules.graphics_otui.tr_4": {
+    "src_hash": "186ee2249d2ea2e0ceacd1d29a2de74e",
+    "text": "In bestimmten Fällen werden Zeichnungseffekte vermieden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.102977Z"
+  },
+  "otclient_modules.graphics_otui.tr_5": {
+    "src_hash": "5f2d12850540c4766d6417bca355b9bd",
+    "text": "Kraftwirkungsoptimierung",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:11:59.103919Z"
+  },
+  "otclient_modules.graphics_otui.tr_6": {
+    "src_hash": "39115f2b9f70ed69596651249d3a635a",
+    "text": "Versuchen Sie zu optimieren, wenn die Bildrate unter 60 liegt. VISUELLE PROBLEME KÖNNEN AUFTRETEN",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.434669Z"
+  },
+  "otclient_modules.graphics_otui.tr_7": {
+    "src_hash": "e51d257345e90dd54b02602ea85c230f",
+    "text": "FPS optimieren",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.435544Z"
+  },
+  "otclient_modules.healthinfo.tr_1": {
+    "src_hash": "5bc12052a91b6752c9b4884724146fa8",
+    "text": "Zeigen Sie Gesundheit",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.436473Z"
+  },
+  "otclient_modules.help_otui.tr_1": {
+    "src_hash": "91d656fbb78e3322a596f4d8ed753c05",
+    "text": "Sprache ändern",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.437210Z"
+  },
+  "otclient_modules.help_otui.tr_2": {
+    "src_hash": "06f4f7bd90b1c8a0145d18ee55c265c4",
+    "text": "Cache leeren",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.437852Z"
+  },
+  "otclient_modules.hotkeys_manager.tr_1": {
+    "src_hash": "17b46904cde294d5373bf16e5a305404",
+    "text": "Aktueller Hotkey zum Hinzufügen: %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.439280Z"
+  },
+  "otclient_modules.hotkeys_manager.tr_10": {
+    "src_hash": "04b2416a3e1b21fe76d02d929d206177",
+    "text": "Greife die nächste Kreatur in der Kampfliste an",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.441307Z"
+  },
+  "otclient_modules.hotkeys_manager.tr_11": {
+    "src_hash": "b1033a735c69710b6a09f01854f057ea",
+    "text": "Schalten Sie den WASD-Chatmodus um",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.442731Z"
+  },
+  "otclient_modules.hotkeys_manager.tr_2": {
+    "src_hash": "514f193720abb6102d7b7fb78c9e59a8",
+    "text": "%s: (Objekt verwenden)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.443681Z"
+  },
+  "otclient_modules.hotkeys_manager.tr_3": {
+    "src_hash": "a292903ffd481a8254ebb5328c08b691",
+    "text": "%s: (Objekt mit Fadenkreuz verwenden)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.445224Z"
+  },
+  "otclient_modules.hotkeys_manager.tr_4": {
+    "src_hash": "599b3a5e0856cef3140973352a6789fe",
+    "text": "%s: (Objekt auf Ziel verwenden)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.446503Z"
+  },
+  "otclient_modules.hotkeys_manager.tr_5": {
+    "src_hash": "8bbab331fd0dd75cce99b0f63ea0d4bf",
+    "text": "%s: (Gegenstand auf sich selbst anwenden)",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.448116Z"
+  },
+  "otclient_modules.hotkeys_manager.tr_8": {
+    "src_hash": "4f555780fb4e63e9c6c3bb4f41a9de26",
+    "text": "Chase-Modus umschalten",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.449205Z"
+  },
+  "otclient_modules.hotkeys_manager.tr_9": {
+    "src_hash": "66fbf0afb76f303ece5bc6ce47d0826b",
+    "text": "Greife die vorherige Kreatur in der Kampfliste an",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.451302Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_11": {
+    "src_hash": "e1a926339e475a42ae4389211d5d1e2c",
+    "text": "Klares Objekt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.451961Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_14": {
+    "src_hash": "36e161cbb0c6ccc84a55ce595ffb95d5",
+    "text": "Bearbeiten Sie den Hotkey-Text",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.453204Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_15": {
+    "src_hash": "69e2b37f7101bc15fafadc1761c56fbb",
+    "text": "Hotkey-Aktion",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.453817Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_18": {
+    "src_hash": "b69a15a8be75b9f1204ace4e56cb4584",
+    "text": "Alles zurücksetzen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.454570Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_19": {
+    "src_hash": "cf41c000cd5337223350b214d0e16a1f",
+    "text": "Aktuelle Hotkeys",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.455261Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_3": {
+    "src_hash": "17b46904cde294d5373bf16e5a305404",
+    "text": "Aktueller Hotkey zum Hinzufügen: %s",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:24.456628Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_4": {
+    "src_hash": "d2714b30e2e8a7be90bdc4b44429ab4a",
+    "text": "Bitte drücken Sie die Taste, die Sie Ihrem Hotkeys-Manager hinzufügen möchten",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.444984Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_5": {
+    "src_hash": "cf6f2edf6bc0a6bd5851fd8863367de0",
+    "text": "Schaltfläche zuweisen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.446234Z"
+  },
+  "otclient_modules.hotkeys_manager_otui.tr_8": {
+    "src_hash": "8523f518f1e5ee3b9d38a7d29829fa68",
+    "text": "Mit Fadenkreuz",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.447215Z"
+  },
+  "otclient_modules.house.tr_10": {
+    "src_hash": "5a821bf7af0c6496ab36e94118ca268f",
+    "text": "Neuer Besitzer:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.448116Z"
+  },
+  "otclient_modules.house.tr_11": {
+    "src_hash": "ff925d63d7032d21b3579fea9e345943",
+    "text": "Bezahlt bis:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.448962Z"
+  },
+  "otclient_modules.house.tr_13": {
+    "src_hash": "f2dada13b167be8e22c827bfb78fcca3",
+    "text": "Mietdetails",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.449761Z"
+  },
+  "otclient_modules.house.tr_14": {
+    "src_hash": "a0744b5c4dbf61c9e57892acf13a4159",
+    "text": "Höchstes Gebot:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.450673Z"
+  },
+  "otclient_modules.house.tr_15": {
+    "src_hash": "ff181b759ba6edb8cd47e61ebe210f6d",
+    "text": "Endzeit:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.451355Z"
+  },
+  "otclient_modules.house.tr_16": {
+    "src_hash": "12396a25397310a7dbbd34820eef23e9",
+    "text": "Höchstbietender:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.452337Z"
+  },
+  "otclient_modules.house.tr_18": {
+    "src_hash": "51c65a68c2fd3a271aeab65750dce820",
+    "text": "Dieses Haus ist ein Geschäft.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.454046Z"
+  },
+  "otclient_modules.house.tr_19": {
+    "src_hash": "51c65a68c2fd3a271aeab65750dce820",
+    "text": "Dieses Haus ist ein Geschäft.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.455759Z"
+  },
+  "otclient_modules.house.tr_2": {
+    "src_hash": "6adca43e4c49dda8045a6267140b8113",
+    "text": "Akzeptieren Sie die Übertragung",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.457389Z"
+  },
+  "otclient_modules.house.tr_20": {
+    "src_hash": "e6b48847f500609079b5a18a7621dba9",
+    "text": "gemietet von",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.458197Z"
+  },
+  "otclient_modules.house.tr_22": {
+    "src_hash": "3864018bfd755226d4ba8a29e06d5b8e",
+    "text": "noch kein Gebot",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.459098Z"
+  },
+  "otclient_modules.house.tr_25": {
+    "src_hash": "8475c48dd2371833d8f6aa6507152c85",
+    "text": "Endet in:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.459780Z"
+  },
+  "otclient_modules.house.tr_29": {
+    "src_hash": "9f77e91a2e53b2595efc396b60351d76",
+    "text": "Max. Betten:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.460584Z"
+  },
+  "otclient_modules.house.tr_3": {
+    "src_hash": "e897282b23dbb8788998660ff102aef1",
+    "text": "Übertragung ablehnen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.461786Z"
+  },
+  "otclient_modules.house.tr_33": {
+    "src_hash": "173d078b3661e39259ebb86ee4c44c00",
+    "text": "Möchten Sie wirklich auf das Haus '%s' bieten?\nSie haben Ihr Gebotslimit auf %s festgelegt.\nWenn die Auktion endet, wird Ihnen das Höchstgebot zuzüglich der Miete von %s für den ersten Monat in Rechnung gestellt\nBankkonto.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.473394Z"
+  },
+  "otclient_modules.house.tr_34": {
+    "src_hash": "82202ad54232d5c951ab2befdcc37cc9",
+    "text": "Bestätigen Sie die Aktion des Hauses",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.475348Z"
+  },
+  "otclient_modules.house.tr_35": {
+    "src_hash": "980ca6f7ad5e1c073f733923dc69fdbd",
+    "text": "Wenn die Auktion endet, wird Ihr Bankkonto mit dem Höchstgebot und der Miete für den ersten Monat (%s) abgebucht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:12:49.481381Z"
+  },
+  "otclient_modules.house.tr_36": {
+    "src_hash": "96781dbff28fb0432940da8230e57b97",
+    "text": "Wenn die Auktion um %s endet, wird Ihr Bankkonto mit dem Zuschlagsgebot und der Miete für den ersten Monat (%s) abgebucht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.729928Z"
+  },
+  "otclient_modules.house.tr_37": {
+    "src_hash": "c2dd8b20720a19eb70adfd9f87f0a71d",
+    "text": "Bisher gibt es kein Angebot.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.731765Z"
+  },
+  "otclient_modules.house.tr_38": {
+    "src_hash": "b2f2e2dfe47dec20dfb2698733d10df1",
+    "text": "Ihr Limit: ",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.732526Z"
+  },
+  "otclient_modules.house.tr_4": {
+    "src_hash": "d19c0bdad87dbf3db945f197a75d973e",
+    "text": "Übertragung abbrechen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.733794Z"
+  },
+  "otclient_modules.house.tr_41": {
+    "src_hash": "e5a866dd03befe57f723db0b7bbea9e6",
+    "text": "Möchten Sie wirklich aus dem Haus '%s' ausziehen?\nKlicken Sie auf 'Yes', um auf %s zu gelangen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.739004Z"
+  },
+  "otclient_modules.house.tr_42": {
+    "src_hash": "82202ad54232d5c951ab2befdcc37cc9",
+    "text": "Bestätigen Sie die Aktion des Hauses",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.740984Z"
+  },
+  "otclient_modules.house.tr_45": {
+    "src_hash": "cd6ebd54276dd355da9c3dcdbcee10a7",
+    "text": "Möchten Sie Ihr Haus '%s' wirklich nach %s verlegen?\nDie Übertragung ist für %s geplant.\nSie haben den Verrechnungspreis auf %s eingestellt.\n\nDie Übertragung erfolgt nur, wenn %s dies akzeptiert!.\n\nBitte nehmen Sie alle Ihre persönlichen Gegenstände am Tag Ihres Umzugs vor der täglichen Serverspeicherung aus dem Haus\nraus. Alles, was im Haus verbleibt, geht nach der Übergabe in das Eigentum des neuen Eigentümers über. Der Einzige\nAusnahme bilden Artikel, die im Store gekauft wurden. Sie werden wieder verpackt und an Sie gesendet\nPosteingang.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.768428Z"
+  },
+  "otclient_modules.house.tr_46": {
+    "src_hash": "82202ad54232d5c951ab2befdcc37cc9",
+    "text": "Bestätigen Sie die Aktion des Hauses",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.770771Z"
+  },
+  "otclient_modules.house.tr_5": {
+    "src_hash": "ed57e6896667e6166c973eded7f017e1",
+    "text": "Ausziehen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.771501Z"
+  },
+  "otclient_modules.house.tr_51": {
+    "src_hash": "85819321a5248a315a510196e2e646ba",
+    "text": "Möchten Sie Ihr Haus '%s' wirklich behalten?\nSie werden das Haus am %s nicht mehr nach %s übertragen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.776994Z"
+  },
+  "otclient_modules.house.tr_52": {
+    "src_hash": "82202ad54232d5c951ab2befdcc37cc9",
+    "text": "Bestätigen Sie die Aktion des Hauses",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.778986Z"
+  },
+  "otclient_modules.house.tr_57": {
+    "src_hash": "74f3a9f1c39b5d19641995f8b026b321",
+    "text": "Möchten Sie den von %s angebotenen Haustransfer für die Immobilie '%s' annehmen?\nDie Übertragung ist für %s geplant.\nDer Transferpreis wurde auf %s festgelegt.\n\nStellen Sie sicher, dass Sie genügend Gold auf Ihrem Bankkonto haben, um die Kosten für diesen Haustransfer und die nächste Miete zu bezahlen.\nDenken Sie daran, die Türrechte zu bearbeiten, da nach der Übertragung nur die Gästeliste zurückgesetzt wird!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.799492Z"
+  },
+  "otclient_modules.house.tr_58": {
+    "src_hash": "82202ad54232d5c951ab2befdcc37cc9",
+    "text": "Bestätigen Sie die Aktion des Hauses",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.801764Z"
+  },
+  "otclient_modules.house.tr_63": {
+    "src_hash": "eb87d1245eb3c94f750e711a9d692ea5",
+    "text": "Möchten Sie die von %s angebotene Übertragung für das Haus '%s' wirklich ablehnen?\nDu wirst das Haus nicht bekommen. %s behält das Haus und kann jederzeit eine neue Übertragung veranlassen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.812065Z"
+  },
+  "otclient_modules.house.tr_64": {
+    "src_hash": "82202ad54232d5c951ab2befdcc37cc9",
+    "text": "Bestätigen Sie die Aktion des Hauses",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.816078Z"
+  },
+  "otclient_modules.house.tr_68": {
+    "src_hash": "273069b06f7681d3c6847205da8417b9",
+    "text": "Sie haben die Hausübergabe erfolgreich durchgeführt. Der alte Eigentümer wird das Haus behalten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.825188Z"
+  },
+  "otclient_modules.house.tr_7": {
+    "src_hash": "4e962063bf697862cf00d3c41d315160",
+    "text": "Bisher gibt es kein Angebot.\nBieten Sie als Erster auf dieses Haus.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.831726Z"
+  },
+  "otclient_modules.house.tr_71": {
+    "src_hash": "8b8919d2224929040e26897e90963ebd",
+    "text": "Sie haben die Übertragung erfolgreich angenommen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.834897Z"
+  },
+  "otclient_modules.house.tr_74": {
+    "src_hash": "938dc3d3c9cf04839407eaf55adfaeff",
+    "text": "Sie haben die Übertragung erfolgreich abgebrochen. Du wirst das Haus behalten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.838900Z"
+  },
+  "otclient_modules.house.tr_77": {
+    "src_hash": "f60c06b7b8f88fc1ce65c357485f5f05",
+    "text": "Das Einrichten einer Hausübergabe ist fehlgeschlagen.\nEin Charakter mit diesem Namen existiert nicht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:13.843854Z"
+  },
+  "otclient_modules.house.tr_80": {
+    "src_hash": "e6f1092b0fa2401945c0db7b72dc0d42",
+    "text": "Sie haben die Übergabe Ihres Hauses erfolgreich eingeleitet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.702887Z"
+  },
+  "otclient_modules.house.tr_83": {
+    "src_hash": "e202a5bdf6ee4d9b1c34ba633043aac1",
+    "text": "Sie haben Ihren Auszug erfolgreich eingeleitet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.704818Z"
+  },
+  "otclient_modules.house.tr_86": {
+    "src_hash": "ed0fd73e6210826ab57493e23b613c56",
+    "text": "Angebot fehlgeschlagen.\nDer Kontostand deines Charakters ist zu niedrig, um das Gebot und die Miete für den ersten Monat zu bezahlen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.709818Z"
+  },
+  "otclient_modules.house.tr_89": {
+    "src_hash": "c7395f69abbe31146fc3634ab1dea810",
+    "text": "Ihr Gebot war erfolgreich. Sie haben derzeit das Höchstgebot.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.712259Z"
+  },
+  "otclient_modules.house.tr_91": {
+    "src_hash": "1e713cd6a829d516aae684fcead4ed27",
+    "text": "Sortieren nach Auktionsende",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.713391Z"
+  },
+  "otclient_modules.house.tr_92": {
+    "src_hash": "1d594e6f1cc74fefa02743fd91d5e92b",
+    "text": "Nach Gebot sortieren",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.714219Z"
+  },
+  "otclient_modules.house.tr_93": {
+    "src_hash": "4fd4550fd44ff287d019596a13215ae2",
+    "text": "Sortieren nach Miete",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.715022Z"
+  },
+  "otclient_modules.house.tr_94": {
+    "src_hash": "cd6af127fe8d4c34f43ab79576160893",
+    "text": "Nach Größe sortieren",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.715835Z"
+  },
+  "otclient_modules.house_otui.tr_1": {
+    "src_hash": "9bbe8491e11389efe6fba0093d8c4606",
+    "text": "Lehnen Sie die Übertragung ab, wenn Sie das Haus nicht wollen\nauf Sie übertragen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.718930Z"
+  },
+  "otclient_modules.house_otui.tr_11": {
+    "src_hash": "660cfe3e11e8f12f7aa7e168237ce8e1",
+    "text": "Hausinformationen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.719655Z"
+  },
+  "otclient_modules.house_otui.tr_12": {
+    "src_hash": "e897282b23dbb8788998660ff102aef1",
+    "text": "Übertragung ablehnen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.720485Z"
+  },
+  "otclient_modules.house_otui.tr_14": {
+    "src_hash": "91120d388ba240364c2148a975daaf0c",
+    "text": "Hausübertragung ablehnen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.721498Z"
+  },
+  "otclient_modules.house_otui.tr_15": {
+    "src_hash": "f19e0134b954151dc3f225f51f612c29",
+    "text": "Stellen Sie sicher, dass auf Ihrem Bankkonto genügend Gold vorhanden ist\ndie Kosten für diese Hausübergabe und die nächste Miete bezahlen.\nDenken Sie daran, die Türrechte wie nur die Gästeliste zu bearbeiten\nwird nach der Übertragung zurückgesetzt!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.730298Z"
+  },
+  "otclient_modules.house_otui.tr_17": {
+    "src_hash": "94446171c265d71d1af13ce675e8b559",
+    "text": "Datum der Übertragung:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.731251Z"
+  },
+  "otclient_modules.house_otui.tr_18": {
+    "src_hash": "5a821bf7af0c6496ab36e94118ca268f",
+    "text": "Neuer Besitzer:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.731896Z"
+  },
+  "otclient_modules.house_otui.tr_19": {
+    "src_hash": "d6b90c71fe23c5622eece4ac9de19250",
+    "text": "Bezahlt bis:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.732609Z"
+  },
+  "otclient_modules.house_otui.tr_20": {
+    "src_hash": "5b8d13dc50492284b6ac3ebde9c1e965",
+    "text": "Übertragungsinformationen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.733657Z"
+  },
+  "otclient_modules.house_otui.tr_22": {
+    "src_hash": "9f77e91a2e53b2595efc396b60351d76",
+    "text": "Max. Betten:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.734242Z"
+  },
+  "otclient_modules.house_otui.tr_25": {
+    "src_hash": "660cfe3e11e8f12f7aa7e168237ce8e1",
+    "text": "Hausinformationen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.734959Z"
+  },
+  "otclient_modules.house_otui.tr_26": {
+    "src_hash": "6adca43e4c49dda8045a6267140b8113",
+    "text": "Akzeptieren Sie die Übertragung",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:32.736152Z"
+  },
+  "otclient_modules.house_otui.tr_28": {
+    "src_hash": "afe2db44dd12df7711e4c8e786ec9e6d",
+    "text": "Akzeptieren Sie den Haustransfer",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.521353Z"
+  },
+  "otclient_modules.house_otui.tr_29": {
+    "src_hash": "c7f47b73c639397b6b77cf8db7c627ab",
+    "text": "Wenn Sie dieses Haus behalten möchten. Klicken Sie auf „Übertragung abbrechen“.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.524725Z"
+  },
+  "otclient_modules.house_otui.tr_3": {
+    "src_hash": "94446171c265d71d1af13ce675e8b559",
+    "text": "Datum der Übertragung:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.525673Z"
+  },
+  "otclient_modules.house_otui.tr_31": {
+    "src_hash": "94446171c265d71d1af13ce675e8b559",
+    "text": "Datum der Übertragung:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.526573Z"
+  },
+  "otclient_modules.house_otui.tr_32": {
+    "src_hash": "5a821bf7af0c6496ab36e94118ca268f",
+    "text": "Neuer Besitzer:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.527220Z"
+  },
+  "otclient_modules.house_otui.tr_33": {
+    "src_hash": "d6b90c71fe23c5622eece4ac9de19250",
+    "text": "Bezahlt bis:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.527808Z"
+  },
+  "otclient_modules.house_otui.tr_34": {
+    "src_hash": "5b8d13dc50492284b6ac3ebde9c1e965",
+    "text": "Übertragungsinformationen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.528846Z"
+  },
+  "otclient_modules.house_otui.tr_36": {
+    "src_hash": "9f77e91a2e53b2595efc396b60351d76",
+    "text": "Max. Betten:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.529436Z"
+  },
+  "otclient_modules.house_otui.tr_39": {
+    "src_hash": "660cfe3e11e8f12f7aa7e168237ce8e1",
+    "text": "Hausinformationen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.530241Z"
+  },
+  "otclient_modules.house_otui.tr_4": {
+    "src_hash": "5a821bf7af0c6496ab36e94118ca268f",
+    "text": "Neuer Besitzer:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.531001Z"
+  },
+  "otclient_modules.house_otui.tr_40": {
+    "src_hash": "d19c0bdad87dbf3db945f197a75d973e",
+    "text": "Übertragung abbrechen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.531842Z"
+  },
+  "otclient_modules.house_otui.tr_42": {
+    "src_hash": "e0dce4fc2065f36d01690adc5e5a8cfd",
+    "text": "Hausübergabe stornieren",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.532827Z"
+  },
+  "otclient_modules.house_otui.tr_43": {
+    "src_hash": "bfa6bce86fbe2da7fa3dc0f27cf65873",
+    "text": "Bitte denken Sie daran, Ihre persönlichen Gegenstände mitzunehmen\ndas Haus, bevor Sie ausziehen. Verbleibende Gegenstände in der\nDas Haus geht nach der Übertragung in den Besitz des neuen Eigentümers über.\nDie einzige Ausnahme bilden Artikel, die gekauft wurden\nim Store. Sie werden an Ihren Posteingang gesendet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.544248Z"
+  },
+  "otclient_modules.house_otui.tr_44": {
+    "src_hash": "d0534b5a3a6ebb8087154e0d25e3dbe2",
+    "text": "Transferpreis:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.545010Z"
+  },
+  "otclient_modules.house_otui.tr_45": {
+    "src_hash": "6752801d452a1e9ca8312b7801ec9278",
+    "text": "Beachten Sie, dass der neue Eigentümer der Übertragung zustimmen muss.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.547749Z"
+  },
+  "otclient_modules.house_otui.tr_46": {
+    "src_hash": "922456f5487f32f83cd5c5fb1ef70029",
+    "text": "Das Feld muss ausgefüllt werden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.549100Z"
+  },
+  "otclient_modules.house_otui.tr_47": {
+    "src_hash": "d1752e76a12ec90eaba0257bb61966df",
+    "text": "Name des neuen Besitzers",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.550156Z"
+  },
+  "otclient_modules.house_otui.tr_48": {
+    "src_hash": "5a821bf7af0c6496ab36e94118ca268f",
+    "text": "Neuer Besitzer:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.550813Z"
+  },
+  "otclient_modules.house_otui.tr_49": {
+    "src_hash": "825fefedbd017577bf9b715bbeb52e81",
+    "text": "Sie gelangen zum täglichen Serverspeicher des ausgewählten Tages.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.553505Z"
+  },
+  "otclient_modules.house_otui.tr_5": {
+    "src_hash": "d6b90c71fe23c5622eece4ac9de19250",
+    "text": "Bezahlt bis:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:46.554294Z"
+  },
+  "otclient_modules.house_otui.tr_50": {
+    "src_hash": "56d2d7c636197cd152938ac856192219",
+    "text": "Wählen Sie ein Datum in der Zukunft!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:58.669091Z"
+  },
+  "otclient_modules.house_otui.tr_53": {
+    "src_hash": "94446171c265d71d1af13ce675e8b559",
+    "text": "Datum der Übertragung:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:58.670129Z"
+  },
+  "otclient_modules.house_otui.tr_54": {
+    "src_hash": "d6b90c71fe23c5622eece4ac9de19250",
+    "text": "Bezahlt bis:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:58.670717Z"
+  },
+  "otclient_modules.house_otui.tr_55": {
+    "src_hash": "5b8d13dc50492284b6ac3ebde9c1e965",
+    "text": "Übertragungsinformationen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:58.671675Z"
+  },
+  "otclient_modules.house_otui.tr_57": {
+    "src_hash": "9f77e91a2e53b2595efc396b60351d76",
+    "text": "Max. Betten:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:58.672255Z"
+  },
+  "otclient_modules.house_otui.tr_6": {
+    "src_hash": "5b8d13dc50492284b6ac3ebde9c1e965",
+    "text": "Übertragungsinformationen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:58.673334Z"
+  },
+  "otclient_modules.house_otui.tr_60": {
+    "src_hash": "660cfe3e11e8f12f7aa7e168237ce8e1",
+    "text": "Hausinformationen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:58.674102Z"
+  },
+  "otclient_modules.house_otui.tr_63": {
+    "src_hash": "524399ea1578ca5a4fd195cc9099f11d",
+    "text": "Haustransfer konfigurieren",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:58.675152Z"
+  },
+  "otclient_modules.house_otui.tr_64": {
+    "src_hash": "1becbcd1ea314e146001da04fa72211e",
+    "text": "Alle Gegenstände, die Sie im Haus gelassen haben, werden automatisch gelöscht\nan Ihren Posteingang gesendet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:13:58.679185Z"
+  },
+  "otclient_modules.house_otui.tr_65": {
+    "src_hash": "825fefedbd017577bf9b715bbeb52e81",
+    "text": "Sie gelangen zum täglichen Serverspeicher des ausgewählten Tages.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:02.374957Z"
+  },
+  "otclient_modules.house_otui.tr_66": {
+    "src_hash": "56d2d7c636197cd152938ac856192219",
+    "text": "Wählen Sie ein Datum in der Zukunft!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:02.377768Z"
+  },
+  "otclient_modules.house_otui.tr_69": {
+    "src_hash": "ccaaa45fd33b232dbe328fd59cd5cd22",
+    "text": "Umzugsdatum:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:02.378817Z"
+  },
+  "otclient_modules.house_otui.tr_70": {
+    "src_hash": "d6b90c71fe23c5622eece4ac9de19250",
+    "text": "Bezahlt bis:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:02.379720Z"
+  },
+  "otclient_modules.house_otui.tr_71": {
+    "src_hash": "3b510c933419b11673a10d17d05cd9ba",
+    "text": "Informationen verschieben",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:02.381365Z"
+  },
+  "otclient_modules.house_otui.tr_73": {
+    "src_hash": "9f77e91a2e53b2595efc396b60351d76",
+    "text": "Max. Betten:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:02.382382Z"
+  },
+  "otclient_modules.house_otui.tr_76": {
+    "src_hash": "660cfe3e11e8f12f7aa7e168237ce8e1",
+    "text": "Hausinformationen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:02.383531Z"
+  },
+  "otclient_modules.house_otui.tr_77": {
+    "src_hash": "ed57e6896667e6166c973eded7f017e1",
+    "text": "Ausziehen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:02.384282Z"
+  },
+  "otclient_modules.house_otui.tr_79": {
+    "src_hash": "a63ad6c3c8edaa0e29b6cc6f1bb8d744",
+    "text": "Wählen Sie Datum verschieben aus",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:02.386293Z"
+  },
+  "otclient_modules.house_otui.tr_8": {
+    "src_hash": "9f77e91a2e53b2595efc396b60351d76",
+    "text": "Max. Betten:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:02.387242Z"
+  },
+  "otclient_modules.house_otui.tr_80": {
+    "src_hash": "c0c2eb33c365eb6b4e5b8cf6ce4f26c8",
+    "text": "Auktionsinformationen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:02.388614Z"
+  },
+  "otclient_modules.house_otui.tr_82": {
+    "src_hash": "9f77e91a2e53b2595efc396b60351d76",
+    "text": "Max. Betten:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:21.135445Z"
+  },
+  "otclient_modules.house_otui.tr_85": {
+    "src_hash": "660cfe3e11e8f12f7aa7e168237ce8e1",
+    "text": "Hausinformationen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:21.136977Z"
+  },
+  "otclient_modules.house_otui.tr_88": {
+    "src_hash": "8977e3b787a6056ea9094d8e5d20d0f1",
+    "text": "Geben Sie Ihr Gebot ab",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:21.138663Z"
+  },
+  "otclient_modules.house_otui.tr_90": {
+    "src_hash": "a54675d574725ceb09aaede64d39025a",
+    "text": "Ihr Limit:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:21.139659Z"
+  },
+  "otclient_modules.house_otui.tr_91": {
+    "src_hash": "7e156989a94bc0a4680ff2f59981870e",
+    "text": "Ausstehende Übertragung",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:21.141328Z"
+  },
+  "otclient_modules.house_otui.tr_92": {
+    "src_hash": "4e962063bf697862cf00d3c41d315160",
+    "text": "Bisher gibt es kein Angebot.\nBieten Sie als Erster auf dieses Haus.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:21.145153Z"
+  },
+  "otclient_modules.house_otui.tr_94": {
+    "src_hash": "84119190de007dd52f10b4b79298d7a9",
+    "text": "Kein Haus ausgewählt",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:21.146551Z"
+  },
+  "otclient_modules.house_otui.tr_95": {
+    "src_hash": "de4292c922f16f1b62aab4fc7e92ae27",
+    "text": "Häuser und Wohnungen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:21.147982Z"
+  },
+  "otclient_modules.hud_otui.tr_1": {
+    "src_hash": "ea5065aa4af9d36715e6d864552aa525",
+    "text": "Joystick im rechten Bedienfeld",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:21.149863Z"
+  },
+  "otclient_modules.hud_otui.tr_2": {
+    "src_hash": "249907e82bc2fbf06815130e58745a32",
+    "text": "Manaleiste des Spielers anzeigen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:21.151577Z"
+  },
+  "otclient_modules.hud_otui.tr_3": {
+    "src_hash": "4e780201877b9703d7063214923082d1",
+    "text": "Gesundheitsbalken für Kreaturen anzeigen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:21.153624Z"
+  },
+  "otclient_modules.hud_otui.tr_4": {
+    "src_hash": "4153c6b4301f40c982992b7fecfa2292",
+    "text": "Namen von Kreaturen anzeigen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:21.155199Z"
+  },
+  "otclient_modules.imbuementtracker.tr_1": {
+    "src_hash": "50e76744725adef09e1a1e1590861a6e",
+    "text": "Imbuement-Tracker",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:21.156222Z"
+  },
+  "otclient_modules.imbuementtracker_otui.tr_2": {
+    "src_hash": "471306ce100d4e033dfd03504dc76203",
+    "text": "Elemente ohne aktive Imbuement anzeigen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:21.158331Z"
+  },
+  "otclient_modules.imbuementtracker_otui.tr_3": {
+    "src_hash": "b9d42901f184f4b6e7436d361a37892b",
+    "text": "Zeigen Sie Durchdringungen an, die länger als 3 Stunden dauern",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:22.300022Z"
+  },
+  "otclient_modules.imbuementtracker_otui.tr_4": {
+    "src_hash": "85b847572d2185744d29da4e571676cc",
+    "text": "Zeigen Sie Durchdringungen an, die zwischen 1 und 3 Stunden dauern",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:22.304141Z"
+  },
+  "otclient_modules.imbuementtracker_otui.tr_5": {
+    "src_hash": "777a68a2785eee3f1a032b781aab4fa4",
+    "text": "Zeigen Sie Durchdringungen an, die weniger als 1 Stunde dauern",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:22.307845Z"
+  },
+  "otclient_modules.imbuing.tr_10": {
+    "src_hash": "8698a5359c7525baeaebed0c0f583771",
+    "text": "Gegenstände können bis zu drei Imbuements-Slots haben. Dieser Slot ist für diesen Artikel nicht verfügbar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:22.313544Z"
+  },
+  "otclient_modules.imbuing.tr_12": {
+    "src_hash": "f3a226e0abe82efb31877efeca43417b",
+    "text": "Die Imbuement erfordert %s.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:22.315348Z"
+  },
+  "otclient_modules.imbuing.tr_4": {
+    "src_hash": "a18a4a1198de70cbbe109e3df0f25bc6",
+    "text": "Bestätigen Sie den Imbuing-Versuch",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:22.317569Z"
+  },
+  "otclient_modules.imbuing.tr_7": {
+    "src_hash": "723e72125fdcd314e1eb9ced7310dbd2",
+    "text": "Bestätigen Sie die Löschung",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:30.536872Z"
+  },
+  "otclient_modules.imbuing_otui.tr_16": {
+    "src_hash": "8698a5359c7525baeaebed0c0f583771",
+    "text": "Gegenstände können bis zu drei Imbuements-Slots haben. Dieser Slot ist für diesen Artikel nicht verfügbar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:30.542333Z"
+  },
+  "otclient_modules.imbuing_otui.tr_2": {
+    "src_hash": "769920a475c9696b06f99dea4d590cbe",
+    "text": "Gegenstand durchdringen",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:30.543546Z"
+  },
+  "otclient_modules.imbuing_otui.tr_3": {
+    "src_hash": "5675fdcd2288eda237e09864fcdc2a4d",
+    "text": "Ihre Bedürfnisse haben sich geändert? Klicken Sie hier, um die Belastung Ihres Artikels gegen eine Gebühr zu löschen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:30.549424Z"
+  },
+  "otclient_modules.imbuing_otui.tr_4": {
+    "src_hash": "75c81cc246f328e7220bb5a25aa76301",
+    "text": "Klare Durchdringung:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:30.550579Z"
+  },
+  "otclient_modules.imbuing_otui.tr_5": {
+    "src_hash": "3447c1a3cc1806424152db59987e4450",
+    "text": "Verbleibende Zeit:",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T20:14:30.551601Z"
   }
 }

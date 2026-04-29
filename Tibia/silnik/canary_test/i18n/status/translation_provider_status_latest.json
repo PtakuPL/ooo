@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:59:02.039527Z",
+  "generated_at_utc": "2026-04-29T22:01:06.724600Z",
   "active_provider": "TM/simple",
   "active_provider_code": "tm_simple",
   "active_provider_source": "simple",
   "active_provider_timestamp": "2026-04-29T21:58:45.040393Z",
   "active_model": "openai/gpt-4o-mini",
-  "fallback_reason": "TM/simple → fallback to google translate validate fail [validate_word_salad] npc.json",
+  "fallback_reason": "TM/simple → fallback to next provider validate fail [validate_word_salad] server.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
   "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
   "router_registry_path": "provider_router_registry.json",
@@ -65,16 +65,17 @@
   "provider_pool_health": {
     "overall_status": "degraded",
     "signals": [
+      "recent_fallback",
       "provider_consistency_debt:443",
       "provider_limit_telemetry:provider_budget_high"
     ],
     "provider_consistency_debt": 443,
-    "recent_window_writes": 574,
+    "recent_window_writes": 554,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
         "provider_label": "OpenAI model pool",
-        "writes": 237
+        "writes": 220
       },
       {
         "provider": "tm_simple",
@@ -89,7 +90,7 @@
       {
         "provider": "canonical_name_semantic_autofix",
         "provider_label": "canonical_name_semantic_autofix",
-        "writes": 24
+        "writes": 21
       },
       {
         "provider": "term_consistency_autofix",
@@ -97,7 +98,7 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 12,
+    "fallbacks_last_200": 16,
     "fallback_action_breakdown": [
       {
         "action": "fallback_to_google_translate_high",
@@ -105,14 +106,14 @@
         "count": 9
       },
       {
-        "action": "fallback_chain_exhausted_high_reject_types",
-        "action_label": "fallback chain exhausted high reject types",
-        "count": 2
+        "action": "fallback_to_next_provider_validate_fail",
+        "action_label": "fallback to next provider validate fail",
+        "count": 5
       },
       {
         "action": "fallback_to_google_translate_validate_fail",
         "action_label": "fallback to google translate validate fail",
-        "count": 1
+        "count": 2
       }
     ],
     "providers": {
@@ -134,7 +135,7 @@
       "openai_model_pool": {
         "status": "active",
         "active_model": "openai/gpt-4o-mini",
-        "recent_writes": 237,
+        "recent_writes": 220,
         "requests_today": 218
       }
     },
@@ -244,7 +245,7 @@
       "used_pct": 87.2,
       "monthly_cap": 250.0,
       "spent": 218.0,
-      "latest_age_s": 151.885875,
+      "latest_age_s": 305.897612,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false
@@ -277,14 +278,14 @@
     }
   },
   "latest_fallback": {
-    "timestamp": "2026-04-29T21:40:19.592711Z",
+    "timestamp": "2026-04-29T21:59:17.876297Z",
     "provider": "tm_simple",
     "provider_label": "TM/simple",
-    "source": "simple",
-    "action": "fallback_to_google_translate_validate_fail",
-    "action_label": "fallback to google translate validate fail",
+    "source": "tm",
+    "action": "fallback_to_next_provider_validate_fail",
+    "action_label": "fallback to next provider validate fail",
     "decision_reason": "validate_word_salad",
-    "json_file": "npc.json",
-    "key": "npc.captain_haba_open_sea.greet_msg_1"
+    "json_file": "server.json",
+    "key": "data.otservbr.global.scripts.quests.ferumbras.ascension.movements.shulgrax.lever.L16.1956"
   }
 }

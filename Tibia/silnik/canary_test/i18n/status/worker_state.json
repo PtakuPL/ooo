@@ -404,7 +404,7 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-04-29T21:58:53Z",
+  "generated_at_utc": "2026-04-29T22:01:03Z",
   "global": {
     "en_keys_total": 74536,
     "errors_total": 11359,
@@ -416,135 +416,14 @@
       "auto_translate": {
         "guard_fail": 0,
         "json_file": "items.json",
-        "keys_to_translate": 14579,
-        "language": "ro",
-        "recent_examples": [
-          {
-            "en": "dead draken abomination",
-            "key": "item.11670.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "draken abominație moartă"
-          },
-          {
-            "en": "wooden roof",
-            "key": "item.1177.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "acoperiș de lemn"
-          },
-          {
-            "en": "wooden roof",
-            "key": "item.1178.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "acoperiș de lemn"
-          },
-          {
-            "en": "wooden roof",
-            "key": "item.1179.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "acoperiș de lemn"
-          },
-          {
-            "en": "wooden trunk",
-            "key": "item.11809.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "trunchi de lemn"
-          },
-          {
-            "en": "wooden trunk",
-            "key": "item.11810.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "trunchi de lemn"
-          },
-          {
-            "en": "tattered curtain",
-            "key": "item.11815.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "perdea zdrențuită"
-          },
-          {
-            "en": "tattered curtain",
-            "key": "item.11816.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "perdea zdrențuită"
-          },
-          {
-            "en": "tattered curtain",
-            "key": "item.11817.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "perdea zdrențuită"
-          },
-          {
-            "en": "tattered curtain",
-            "key": "item.11818.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "perdea zdrențuită"
-          },
-          {
-            "en": "wolf hide",
-            "key": "item.11823.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "ascunzătoare de lup"
-          },
-          {
-            "en": "wolf hide",
-            "key": "item.11824.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "ascunzătoare de lup"
-          },
-          {
-            "en": "hanging fur",
-            "key": "item.11835.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "blană atârnată"
-          },
-          {
-            "en": "hanging fur",
-            "key": "item.11836.name",
-            "source": "openai:openai/gpt-4o-mini",
-            "translated": "blană atârnată"
-          },
-          {
-            "en": "This lamp is glowing very dimly.",
-            "key": "item.13656.desc",
-            "source": "term_consistency_autofix",
-            "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab."
-          },
-          {
-            "en": "This lamp is glowing very dimly.",
-            "key": "item.13658.desc",
-            "source": "term_consistency_autofix",
-            "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab."
-          },
-          {
-            "en": "This is an emblem of wisdom. It was awarded by TibiaStat.com",
-            "key": "item.14760.desc",
-            "source": "term_consistency_autofix",
-            "translated": "Aceasta este o emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă a înțelepciunii. A fost acordat de TibiaStat.com"
-          },
-          {
-            "en": "dead orc marauder",
-            "key": "item.10334.name",
-            "source": "canonical_name_semantic_autofix",
-            "translated": "orc mort jefuitor"
-          },
-          {
-            "en": "lamp",
-            "key": "item.10507.name",
-            "source": "canonical_name_semantic_autofix",
-            "translated": "lampă"
-          },
-          {
-            "en": "ramp",
-            "key": "item.11365.name",
-            "source": "canonical_name_semantic_autofix",
-            "translated": "rampă"
-          }
-        ],
-        "recent_translated": 61,
+        "keys_to_translate": 13564,
+        "language": "it",
+        "recent_examples": [],
+        "recent_translated": 0,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
-      "category": "ro",
+      "category": "it",
       "documentation": {
         "cursor": 18,
         "documented": 18,
@@ -587,7 +466,7 @@
         "new_files_detected": 0,
         "quality_issues": 6017
       },
-      "last_update": "2026-04-29T23:53:51.632653",
+      "last_update": "2026-04-30T00:01:02.066630",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -811,7 +690,7 @@
         "files_with_hits": 5423,
         "hits": 112434
       },
-      "total_cycles": 15,
+      "total_cycles": 16,
       "translation_sync": {
         "json_file": "arena.json",
         "keys_to_sync": 184,
@@ -830,19 +709,19 @@
   "worker": {
     "current": {
       "category": "it",
-      "detail": "translated=31 guard_fail=0 strict_missing_key=0 strict_skipped_done=4351",
+      "detail": "cycle end",
       "eta_seconds": 0,
-      "file": "items.json",
+      "file": "-",
       "phase": "AUTO_TRANSLATE",
       "progress": {
-        "done": 31,
-        "total": 30,
-        "unit": "keys"
+        "done": 0,
+        "total": 0,
+        "unit": "units"
       },
-      "stage": "auto_done"
+      "stage": "cycle_end"
     },
     "cycle": 16,
-    "heartbeat_at_utc": "2026-04-29T21:58:52Z",
+    "heartbeat_at_utc": "2026-04-29T22:01:02Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

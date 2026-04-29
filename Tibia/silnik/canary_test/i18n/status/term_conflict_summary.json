@@ -1,141 +1,29 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:58:26.399078Z",
-  "lang": "it",
-  "json_file": "items.json",
-  "surface": "items",
+  "generated_at_utc": "2026-04-29T22:00:53.145757Z",
+  "lang": "es",
+  "json_file": "server.json",
+  "surface": "server",
   "term_registry_path": "term_registry_enriched.json",
-  "term_conflicts_total": 54,
-  "keys_visited": 2000,
-  "keys_scanned": 341,
-  "visit_limit_hit": true,
-  "keys_with_term_usages": 137,
-  "keys_with_conflicts": 22,
-  "term_conflict_rate_pct": 16.058,
-  "term_conflict_rate_delta_pct": 16.058,
-  "registry_terms_total": 18077,
+  "term_conflicts_total": 0,
+  "keys_visited": 0,
+  "keys_scanned": 0,
+  "visit_limit_hit": false,
+  "keys_with_term_usages": 0,
+  "keys_with_conflicts": 0,
+  "term_conflict_rate_pct": 0.0,
+  "term_conflict_rate_delta_pct": 0.0,
+  "registry_terms_total": 16737,
   "auto_fixed_english_name_leaks": 0,
-  "inflection_suspects_flagged": 11,
-  "manual_review_enqueued": 43,
-  "conflict_type_breakdown": {
-    "canonical_term_missing": 43,
-    "canonical_term_inflection_suspect": 11
-  },
+  "inflection_suspects_flagged": 0,
+  "manual_review_enqueued": 0,
+  "conflict_type_breakdown": {},
   "surface_breakdown": {
-    "items": {
-      "keys_with_term_usages": 137,
-      "keys_with_conflicts": 22,
-      "term_conflicts_total": 54
+    "server": {
+      "keys_with_term_usages": 0,
+      "keys_with_conflicts": 0,
+      "term_conflicts_total": 0
     }
   },
-  "top_conflicts": [
-    {
-      "key": "item.10028.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "contrarre",
-      "canonical_en": "contract",
-      "translated_text": "Un contratto in cui qualche disperato ha venduto la sua anima",
-      "source_file": "items.json",
-      "source_key": "item.129.name"
-    },
-    {
-      "key": "item.10218.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Pescare",
-      "canonical_en": "fish",
-      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
-      "source_file": "items.json",
-      "source_key": "item.10245.name"
-    },
-    {
-      "key": "item.10218.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Pescare",
-      "canonical_en": "fish",
-      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
-      "source_file": "items.json",
-      "source_key": "item.10246.name"
-    },
-    {
-      "key": "item.10218.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Pescare",
-      "canonical_en": "fish",
-      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
-      "source_file": "items.json",
-      "source_key": "item.3578.name"
-    },
-    {
-      "key": "item.10218.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Pescare",
-      "canonical_en": "fish",
-      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
-      "source_file": "items.json",
-      "source_key": "item.7885.name"
-    },
-    {
-      "key": "item.10218.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Pescare",
-      "canonical_en": "Fish",
-      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
-      "source_file": "monsters.json",
-      "source_key": "monster.fish.name"
-    },
-    {
-      "key": "item.11341.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "terra",
-      "canonical_en": "ground",
-      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
-      "source_file": "items.json",
-      "source_key": "item.10548.name"
-    },
-    {
-      "key": "item.11341.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "terra",
-      "canonical_en": "ground",
-      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
-      "source_file": "items.json",
-      "source_key": "item.10549.name"
-    },
-    {
-      "key": "item.11341.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "terra",
-      "canonical_en": "ground",
-      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
-      "source_file": "items.json",
-      "source_key": "item.10550.name"
-    },
-    {
-      "key": "item.11341.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "terra",
-      "canonical_en": "ground",
-      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
-      "source_file": "items.json",
-      "source_key": "item.10551.name"
-    },
-    {
-      "key": "item.11341.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "terra",
-      "canonical_en": "ground",
-      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
-      "source_file": "items.json",
-      "source_key": "item.10552.name"
-    },
-    {
-      "key": "item.11341.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "terra",
-      "canonical_en": "ground",
-      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
-      "source_file": "items.json",
-      "source_key": "item.10553.name"
-    }
-  ]
+  "top_conflicts": []
 }

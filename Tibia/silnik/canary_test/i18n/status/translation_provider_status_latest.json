@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:38:50.240172Z",
+  "generated_at_utc": "2026-04-29T21:41:02.486616Z",
   "active_provider": "OpenAI model pool",
   "active_provider_code": "openai_model_pool",
   "active_provider_source": "openai:openai/gpt-4o-mini",
   "active_provider_timestamp": "2026-04-29T21:38:23.968734Z",
   "active_model": "openai/gpt-4o-mini",
-  "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
+  "fallback_reason": "TM/simple → fallback to google translate validate fail [validate_word_salad] npc.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
   "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
   "router_registry_path": "provider_router_registry.json",
@@ -98,7 +98,7 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 19,
+    "fallbacks_last_200": 20,
     "fallback_action_breakdown": [
       {
         "action": "fallback_to_google_translate_high",
@@ -118,7 +118,7 @@
       {
         "action": "fallback_to_google_translate_validate_fail",
         "action_label": "fallback to google translate validate fail",
-        "count": 1
+        "count": 2
       }
     ],
     "providers": {
@@ -250,7 +250,7 @@
       "used_pct": 84.8,
       "monthly_cap": 250.0,
       "spent": 212.0,
-      "latest_age_s": 315.766775,
+      "latest_age_s": 520.890405,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false
@@ -283,14 +283,14 @@
     }
   },
   "latest_fallback": {
-    "timestamp": "2026-04-29T21:31:11.378532Z",
+    "timestamp": "2026-04-29T21:40:19.592711Z",
     "provider": "tm_simple",
     "provider_label": "TM/simple",
-    "source": "tm",
-    "action": "fallback_to_google_translate_high",
-    "action_label": "fallback to google translate high",
-    "decision_reason": "high_reject_types",
-    "json_file": "items.json",
-    "key": "item.1269.name"
+    "source": "simple",
+    "action": "fallback_to_google_translate_validate_fail",
+    "action_label": "fallback to google translate validate fail",
+    "decision_reason": "validate_word_salad",
+    "json_file": "npc.json",
+    "key": "npc.captain_haba_open_sea.greet_msg_1"
   }
 }

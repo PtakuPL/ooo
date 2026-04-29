@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:31:30.575648Z",
+  "generated_at_utc": "2026-04-29T22:33:37.801185Z",
   "window": {
     "trend_hours": 24,
     "samples": 1019,
-    "window_start_utc": "2026-04-28T22:32:19.198691Z",
-    "window_end_utc": "2026-04-29T22:31:30.575648Z"
+    "window_start_utc": "2026-04-28T22:34:37.124751Z",
+    "window_end_utc": "2026-04-29T22:33:37.801185Z"
   },
   "summary": {
     "surface_count": 4,
@@ -21,7 +21,7 @@
     "server": {
       "label": "Server",
       "total_reference_keys": 3602487,
-      "real_translated_keys": 411562,
+      "real_translated_keys": 411560,
       "coverage_real_pct": 11.42,
       "langs_count": 51,
       "delta_24h_pp": 0.55,
@@ -43,8 +43,8 @@
         }
       ],
       "trend_samples": 1019,
-      "window_oldest_utc": "2026-04-28T22:32:19.198691Z",
-      "window_latest_utc": "2026-04-29T22:31:30.575648Z"
+      "window_oldest_utc": "2026-04-28T22:34:37.124751Z",
+      "window_latest_utc": "2026-04-29T22:33:37.801185Z"
     },
     "website": {
       "label": "Website",
@@ -71,8 +71,8 @@
         }
       ],
       "trend_samples": 1019,
-      "window_oldest_utc": "2026-04-28T22:32:19.198691Z",
-      "window_latest_utc": "2026-04-29T22:31:30.575648Z"
+      "window_oldest_utc": "2026-04-28T22:34:37.124751Z",
+      "window_latest_utc": "2026-04-29T22:33:37.801185Z"
     },
     "launcher": {
       "label": "Launcher",
@@ -99,8 +99,8 @@
         }
       ],
       "trend_samples": 1019,
-      "window_oldest_utc": "2026-04-28T22:32:19.198691Z",
-      "window_latest_utc": "2026-04-29T22:31:30.575648Z"
+      "window_oldest_utc": "2026-04-28T22:34:37.124751Z",
+      "window_latest_utc": "2026-04-29T22:33:37.801185Z"
     },
     "installer": {
       "label": "Installer",
@@ -127,8 +127,8 @@
         }
       ],
       "trend_samples": 1019,
-      "window_oldest_utc": "2026-04-28T22:32:19.198691Z",
-      "window_latest_utc": "2026-04-29T22:31:30.575648Z"
+      "window_oldest_utc": "2026-04-28T22:34:37.124751Z",
+      "window_latest_utc": "2026-04-29T22:33:37.801185Z"
     }
   },
   "ranking": [
@@ -158,8 +158,8 @@
         }
       ],
       "trend_samples": 1019,
-      "window_oldest_utc": "2026-04-28T22:32:19.198691Z",
-      "window_latest_utc": "2026-04-29T22:31:30.575648Z",
+      "window_oldest_utc": "2026-04-28T22:34:37.124751Z",
+      "window_latest_utc": "2026-04-29T22:33:37.801185Z",
       "rank": 1
     },
     {
@@ -188,15 +188,15 @@
         }
       ],
       "trend_samples": 1019,
-      "window_oldest_utc": "2026-04-28T22:32:19.198691Z",
-      "window_latest_utc": "2026-04-29T22:31:30.575648Z",
+      "window_oldest_utc": "2026-04-28T22:34:37.124751Z",
+      "window_latest_utc": "2026-04-29T22:33:37.801185Z",
       "rank": 2
     },
     {
       "surface": "server",
       "label": "Server",
       "total_reference_keys": 3602487,
-      "real_translated_keys": 411562,
+      "real_translated_keys": 411560,
       "coverage_real_pct": 11.42,
       "langs_count": 51,
       "delta_24h_pp": 0.55,
@@ -218,8 +218,8 @@
         }
       ],
       "trend_samples": 1019,
-      "window_oldest_utc": "2026-04-28T22:32:19.198691Z",
-      "window_latest_utc": "2026-04-29T22:31:30.575648Z",
+      "window_oldest_utc": "2026-04-28T22:34:37.124751Z",
+      "window_latest_utc": "2026-04-29T22:33:37.801185Z",
       "rank": 3
     },
     {
@@ -248,8 +248,8 @@
         }
       ],
       "trend_samples": 1019,
-      "window_oldest_utc": "2026-04-28T22:32:19.198691Z",
-      "window_latest_utc": "2026-04-29T22:31:30.575648Z",
+      "window_oldest_utc": "2026-04-28T22:34:37.124751Z",
+      "window_latest_utc": "2026-04-29T22:33:37.801185Z",
       "rank": 4
     }
   ]

@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-04-29T22:31:28.763950Z",
+  "timestamp": "2026-04-29T22:33:35.612105Z",
   "global": {
     "total_reference_keys": 3875872,
-    "translated_keys": 712194,
-    "real_translated_keys": 438994,
+    "translated_keys": 712192,
+    "real_translated_keys": 438992,
     "english_copy_keys": 408761,
-    "placeholder_keys": 2173995,
+    "placeholder_keys": 2173997,
     "reference_keys": 7969,
     "missing_keys": 856235,
     "missing_files": 11,
@@ -54,18 +54,18 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 5066,
-    "guard_reports_blocked": 4918,
+    "guard_reports_total": 5067,
+    "guard_reports_blocked": 4919,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 4918
+    "cannot_translate_reports_visible": 4919
   },
   "cache": {
-    "lang_stats_hits": 52,
-    "lang_stats_misses": 0,
-    "lang_stats_hit_pct": 100.0,
-    "lang_stats_mode": "warm-cache",
-    "lang_file_hits": 2028,
-    "lang_file_misses": 0,
+    "lang_stats_hits": 51,
+    "lang_stats_misses": 1,
+    "lang_stats_hit_pct": 98.1,
+    "lang_stats_mode": "mixed",
+    "lang_file_hits": 2027,
+    "lang_file_misses": 1,
     "lang_file_hit_pct": 100.0,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
@@ -79,8 +79,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T21:31:27.449773Z",
-    "window_end_utc": "2026-04-29T22:31:27.449773Z",
+    "window_start_utc": "2026-04-29T21:33:34.338995Z",
+    "window_end_utc": "2026-04-29T22:33:34.338995Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -97,15 +97,15 @@
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 539,
-    "guard_fail": 0,
-    "guard_fail_rate_pct": 0.0,
+    "translated": 599,
+    "guard_fail": 2,
+    "guard_fail_rate_pct": 0.3,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 539.0,
+    "throughput_keys_per_h": 599.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
-    "suspicious_total": 593,
+    "suspicious_total": 591,
     "deferred_total": 33,
     "top_deferred_reasons": [
       {
@@ -131,6 +131,12 @@
       }
     ],
     "top_guard_fail_targets": [
+      {
+        "target": "ru/items.json",
+        "translated": 60,
+        "guard_fail": 2,
+        "guard_command": 0
+      },
       {
         "target": "cs/items.json",
         "translated": 97,
@@ -281,12 +287,12 @@
         "issues_count": 180946
       },
       "ru": {
-        "last_cycle": "2026-04-29T21:29:16.549147Z",
-        "last_translated": 62,
-        "total_suspicious": 91213,
-        "total_rejected": 9822,
-        "total_gt_guard_fail": 12643,
-        "cycles": 1272,
+        "last_cycle": "2026-04-29T22:33:19.537464Z",
+        "last_translated": 60,
+        "total_suspicious": 91217,
+        "total_rejected": 9824,
+        "total_gt_guard_fail": 12645,
+        "cycles": 1273,
         "quality_score": 60.1,
         "last_audit": "2026-04-29T22:26:35.343019Z",
         "issues_count": 378448
@@ -1076,11 +1082,11 @@
       "language_name": "Rosyjski",
       "scope": "global",
       "total_reference_keys": 74536,
-      "translated_keys": 34511,
-      "nominal_translated_keys": 34511,
-      "real_translated_keys": 33341,
+      "translated_keys": 34509,
+      "nominal_translated_keys": 34509,
+      "real_translated_keys": 33339,
       "english_copy_keys": 4775,
-      "placeholder_keys": 36438,
+      "placeholder_keys": 36440,
       "reference_keys": 163,
       "missing_keys": 0,
       "missing_files": 0,
@@ -1088,9 +1094,9 @@
       "nominal_completion_pct": 46.3,
       "real_completion_pct": 44.73,
       "server_keys": 70637,
-      "server_translated": 31367,
-      "server_real_translated": 30248,
-      "server_pct": 44.41,
+      "server_translated": 31365,
+      "server_real_translated": 30246,
+      "server_pct": 44.4,
       "server_real_pct": 42.82,
       "client_keys": 3899,
       "client_translated": 3144,

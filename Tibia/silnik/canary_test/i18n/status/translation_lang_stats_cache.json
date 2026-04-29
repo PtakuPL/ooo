@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "timestamp": "2026-04-29T22:31:26.926147Z",
+  "timestamp": "2026-04-29T22:33:34.234879Z",
   "scope": "all",
   "en_total_keys": 74536,
   "en_signature": [
@@ -239,10 +239,10 @@
       0
     ]
   ],
-  "cache_hits": 52,
-  "cache_misses": 0,
-  "file_cache_hits": 2028,
-  "file_cache_misses": 0,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 2027,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -35858,8 +35858,8 @@
         [
           "items.json",
           1,
-          1777498156364210048,
-          1849059
+          1777501999404199654,
+          1849126
         ],
         [
           "libs.json",
@@ -36011,11 +36011,11 @@
         "language_name": "Rosyjski",
         "scope": "global",
         "total_reference_keys": 74536,
-        "translated_keys": 34511,
-        "nominal_translated_keys": 34511,
-        "real_translated_keys": 33341,
+        "translated_keys": 34509,
+        "nominal_translated_keys": 34509,
+        "real_translated_keys": 33339,
         "english_copy_keys": 4775,
-        "placeholder_keys": 36438,
+        "placeholder_keys": 36440,
         "reference_keys": 163,
         "missing_keys": 0,
         "missing_files": 0,
@@ -36023,9 +36023,9 @@
         "nominal_completion_pct": 46.3,
         "real_completion_pct": 44.73,
         "server_keys": 70637,
-        "server_translated": 31367,
-        "server_real_translated": 30248,
-        "server_pct": 44.41,
+        "server_translated": 31365,
+        "server_real_translated": 30246,
+        "server_pct": 44.4,
         "server_real_pct": 42.82,
         "client_keys": 3899,
         "client_translated": 3144,
@@ -36335,16 +36335,16 @@
         "items.json": {
           "sig": [
             1,
-            1777498156364210048,
-            1849059
+            1777501999404199654,
+            1849126
           ],
           "row": {
             "total_reference_keys": 36733,
-            "translated_keys": 12665,
-            "nominal_translated_keys": 12665,
-            "real_translated_keys": 12665,
+            "translated_keys": 12663,
+            "nominal_translated_keys": 12663,
+            "real_translated_keys": 12663,
             "english_copy_keys": 0,
-            "placeholder_keys": 24068,
+            "placeholder_keys": 24070,
             "reference_keys": 163,
             "missing_keys": 0,
             "missing_files": 0

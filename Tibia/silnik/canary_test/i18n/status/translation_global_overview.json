@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T21:01:17.182624Z",
+  "timestamp": "2026-04-29T21:03:28.889320Z",
   "global": {
     "total_reference_keys": 3875872,
     "translated_keys": 711512,
@@ -60,12 +60,12 @@
     "cannot_translate_reports_visible": 4909
   },
   "cache": {
-    "lang_stats_hits": 51,
-    "lang_stats_misses": 1,
-    "lang_stats_hit_pct": 98.1,
-    "lang_stats_mode": "mixed",
-    "lang_file_hits": 2027,
-    "lang_file_misses": 1,
+    "lang_stats_hits": 52,
+    "lang_stats_misses": 0,
+    "lang_stats_hit_pct": 100.0,
+    "lang_stats_mode": "warm-cache",
+    "lang_file_hits": 2028,
+    "lang_file_misses": 0,
     "lang_file_hit_pct": 100.0,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
@@ -79,8 +79,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T20:01:15.910089Z",
-    "window_end_utc": "2026-04-29T21:01:15.910089Z",
+    "window_start_utc": "2026-04-29T20:03:27.679277Z",
+    "window_end_utc": "2026-04-29T21:03:27.679277Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -105,7 +105,7 @@
     "throughput_keys_per_h": 781.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
-    "suspicious_total": 522,
+    "suspicious_total": 541,
     "deferred_total": 34,
     "top_deferred_reasons": [
       {

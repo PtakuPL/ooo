@@ -61359,11 +61359,191 @@
         }
       ],
       "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T19:47:28.954344Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.10028.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "A contract in which some desperate person has sold his soul",
+      "attempted_translation": "Un contratto in cui qualche disperato ha venduto la sua anima",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'contrarre' for EN 'contract' from items.json:item.129.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:47:32.688151Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.10218.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This fish has been salted and already prepared as provision for soldiers",
+      "attempted_translation": "Questo pesce è stato salato e già preparato come provvista per i soldati",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Pescare' for EN 'fish' from items.json:item.10245.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:48:18.982530Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.11341.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This clay has been dug from sacred ground",
+      "attempted_translation": "Questa argilla è stata scavata da un terreno sacro",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'terra' for EN 'ground' from items.json:item.10548.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:48:20.009075Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.11635.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned energy wall rune",
+      "attempted_translation": "È una runa da muro energetico adornata",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'magico' for EN 'wall' from items.json:item.20579.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:48:20.163833Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.11636.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned energy wall rune",
+      "attempted_translation": "È una runa da muro energetico adornata",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'magico' for EN 'wall' from items.json:item.20579.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:48:20.289151Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.12557.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This fish, and rare ingredient, can only be found in the dirtiest, murkiest and muddiest of waters",
+      "attempted_translation": "Questo pesce, un ingrediente raro, può essere trovato solo nelle acque più sporche, torbide e fangose",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Pescare' for EN 'fish' from items.json:item.10245.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:48:34.997533Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.139.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This is Budriks old mining helmet.",
+      "attempted_translation": "Questo è il vecchio elmo da minatore di Budrik.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'casco da miniera' for EN 'mining helmet' from items.json:item.139.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:48:36.238890Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.14009.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The strange shape of this key glistens softly in the light",
+      "attempted_translation": "La strana forma di questa chiave brilla dolcemente alla luce",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Leggero' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:48:37.076958Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.14756.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Use it in your house to construct a cake cabinet",
+      "attempted_translation": "Usalo a casa tua per costruire un mobile per dolci",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'mobiletto' for EN 'cabinet' from items.json:item.11812.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:48:39.793824Z",
+      "status": "pending",
+      "lang": "it",
+      "json_file": "items.json",
+      "key": "item.14762.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You see a medusa skull. Her hair's snakes are still alive. Awarded only on TibiaPic.com",
+      "attempted_translation": "Vedi un teschio di medusa. I serpenti dei suoi capelli sono ancora vivi. Premiato solo su TibiaPic.com",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'cranio' for EN 'skull' from items.json:item.10876.name"
+        }
+      ],
+      "source": "term_consistency_scan"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3083
+    "total": 3093
   },
-  "updated_at": 1777491976
+  "updated_at": "2026-04-29T19:50:23.966435Z"
 }

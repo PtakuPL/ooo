@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:46:47.725888Z",
+  "generated_at_utc": "2026-04-29T19:46:53.397688Z",
   "summary": {
     "state": "in_progress",
     "state_label": "🟡 IN_PROGRESS",
@@ -58,8 +58,8 @@
       "required_waves": 3,
       "waves_observed": 0,
       "waves_considered": [],
-      "wave_history_rows_total": 1679,
-      "wave_history_rows_window": 1062,
+      "wave_history_rows_total": 1680,
+      "wave_history_rows_window": 1063,
       "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
       "stale_alerts_monitored": [
         "DLQ_GROWTH",
@@ -80,14 +80,14 @@
       "detail": "window=24.02h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
       "window_hours": 24,
       "window_start_utc": "2026-04-28T19:45:51.030797Z",
-      "window_end_utc": "2026-04-29T19:46:47.725888Z",
+      "window_end_utc": "2026-04-29T19:46:53.397688Z",
       "window_span_hours": 24.02,
       "has_min_24h_window": true,
       "files": {
         "client.json": {
-          "samples": 1064,
+          "samples": 1065,
           "oldest_timestamp": "2026-04-28T19:45:51.030797Z",
-          "latest_timestamp": "2026-04-29T19:46:47.725888Z",
+          "latest_timestamp": "2026-04-29T19:46:53.397688Z",
           "oldest_identical_to_en_pct": 31.4,
           "latest_identical_to_en_pct": 31.4,
           "delta_identical_to_en_pct": 0.0,
@@ -97,9 +97,9 @@
           "trend_pass": true
         },
         "otclient_modules.json": {
-          "samples": 1064,
+          "samples": 1065,
           "oldest_timestamp": "2026-04-28T19:45:51.030797Z",
-          "latest_timestamp": "2026-04-29T19:46:47.725888Z",
+          "latest_timestamp": "2026-04-29T19:46:53.397688Z",
           "oldest_identical_to_en_pct": 29.79,
           "latest_identical_to_en_pct": 29.79,
           "delta_identical_to_en_pct": 0.0,

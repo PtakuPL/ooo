@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-04-29T19:34:50.131550Z",
+  "timestamp": "2026-04-29T19:36:40.986945Z",
   "version": "statusd-mvp-1.0",
   "worker": {
     "pid": 586,
     "heartbeat_at": "2026-04-29T19:33:32Z",
-    "heartbeat_age_s": 78.1,
+    "heartbeat_age_s": 189.0,
     "cycle": 1,
     "mode": "continuous",
     "category": "?",
-    "pid_alive": true,
+    "pid_alive": false,
     "source": "worker_runtime_heartbeat"
   },
   "guardian": {
@@ -97,28 +97,28 @@
   },
   "worker_runtime_heartbeat": {
     "schema_version": 1,
-    "generated_at_utc": "2026-04-29T19:34:50.131550Z",
+    "generated_at_utc": "2026-04-29T19:36:40.986945Z",
     "source": "statusd.aggregate_telemetry",
     "status": "critical",
-    "reason": "guardian_daemon_owner_dead",
+    "reason": "worker_pid_not_alive",
     "current_key": "cs:items.json",
     "current_phase": "AUTO_TRANSLATE",
-    "current_stage": "heartbeat_tick",
+    "current_stage": "signal",
     "current_lang": "cs",
     "current_file": "items.json",
     "cycle": 1,
     "heartbeat_at_utc": "2026-04-29T19:33:32Z",
-    "heartbeat_age_s": 78.132,
+    "heartbeat_age_s": 188.987,
     "worker": {
       "pid": 586,
-      "pid_alive": true,
+      "pid_alive": false,
       "heartbeat_at_utc": "2026-04-29T19:33:32Z",
-      "heartbeat_age_s": 78.132,
+      "heartbeat_age_s": 188.987,
       "mode": "continuous",
       "category": "",
       "cycle": 1,
-      "activity_heartbeat_at_utc": "2026-04-29T19:33:32Z",
-      "activity_heartbeat_age_s": 78.132
+      "activity_heartbeat_at_utc": "2026-04-29T19:34:55Z",
+      "activity_heartbeat_age_s": 105.987
     },
     "guardian": {
       "timestamp": "2026-04-29T19:34:29.871266Z",
@@ -525,7 +525,7 @@
     "npc_total": 1028,
     "npc_migrated": 700,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-04-29T19:34:50.226871Z",
+    "statusd_live_snapshot_at_utc": "2026-04-29T19:36:41.095222Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -1214,15 +1214,15 @@
     "status": "active",
     "severity": "ok",
     "reason": "ok",
-    "latest_timestamp": "2026-04-29T19:34:40.532393Z",
-    "latest_age_s": 9.599,
+    "latest_timestamp": "2026-04-29T19:36:21.327155Z",
+    "latest_age_s": 19.66,
     "stale_warn_seconds": 1800,
     "stale_critical_seconds": 7200,
     "tracked_keys": 8917,
     "retry_due_now": 5431,
     "manual_review_locked": 2933,
     "cooldown_locked": 0,
-    "manual_review_queue_size": 2939,
+    "manual_review_queue_size": 2948,
     "deferred_backlog_total": 1947,
     "deferred_backlog_total_all_time": 52090,
     "deferred_backlog_window_seconds": 86400,
@@ -1274,9 +1274,9 @@
     "stats": {
       "enqueued": 0,
       "suppressed_cooldown": 0,
-      "suppressed_manual_review": 0,
+      "suppressed_manual_review": 26,
       "deduped_ttl": 0,
-      "manual_review_escalations": 2934
+      "manual_review_escalations": 2948
     },
     "alerts": []
   },
@@ -1420,9 +1420,9 @@
       "epoch_cooldown_seconds": 600,
       "runtime_epoch_id": "f1195a3ca976e41f",
       "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777491089|restart_cause=worker_missing|worker_pid=586",
-      "baseline_source": "auto_state",
+      "baseline_source": "manual_config",
       "auto_baseline_applied": false,
-      "auto_baseline_reason": "epoch_stable_reuse",
+      "auto_baseline_reason": "manual_baseline_active",
       "epoch_changed": false
     },
     "guardian_daemon_lock": {
@@ -1439,10 +1439,10 @@
     "runtime_epoch_id": "f1195a3ca976e41f",
     "runtime_epoch_raw": "script_mtime=1777490022|script_size=1502220|script_checkpoint=1777490022|restart_ts=1777491089|restart_cause=worker_missing|worker_pid=586",
     "baseline_ts_utc": "2026-04-09T17:59:08.154619Z",
-    "baseline_source": "auto_state",
+    "baseline_source": "manual_config",
     "auto_baseline_on_epoch_change": true,
     "auto_baseline_applied": false,
-    "auto_baseline_reason": "epoch_stable_reuse",
+    "auto_baseline_reason": "manual_baseline_active",
     "epoch_changed": false,
     "epoch_cooldown_seconds": 600
   }

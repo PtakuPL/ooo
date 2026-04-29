@@ -58911,11 +58911,749 @@
         }
       ],
       "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:16.065537Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11613.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned animate dead rune",
+      "attempted_translation": "Je to ozdobená animovaná mrtvá runa",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Animujte Dead Rune' for EN 'Animate Dead Rune' from spells.json:spell.animate_dead_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:41.210741Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11614.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned animate dead rune",
+      "attempted_translation": "Je to ozdobená animovaná mrtvá runa",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Animujte Dead Rune' for EN 'Animate Dead Rune' from spells.json:spell.animate_dead_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:44.910828Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11615.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned great fireball rune",
+      "attempted_translation": "Je to ozdobená velká runa ohnivé koule",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Fireball Rune' for EN 'fireball rune' from items.json:item.3189.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:46.551873Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11616.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned great fireball rune",
+      "attempted_translation": "Je to ozdobená velká runa ohnivé koule",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Fireball Rune' for EN 'fireball rune' from items.json:item.3189.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:47.633117Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11617.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned fireball rune",
+      "attempted_translation": "Je to ozdobená runa ohnivé koule",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Fireball Rune' for EN 'fireball rune' from items.json:item.3189.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:47.795145Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11618.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned fireball rune",
+      "attempted_translation": "Je to ozdobená runa ohnivé koule",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Fireball Rune' for EN 'fireball rune' from items.json:item.3189.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:48.268310Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11619.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned thunderstorm rune",
+      "attempted_translation": "Je to ozdobená runa bouřky",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Thunderstorm Rune' for EN 'thunderstorm rune' from items.json:item.3202.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:48.419105Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11620.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned thunderstorm rune",
+      "attempted_translation": "Je to ozdobená runa bouřky",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Thunderstorm Rune' for EN 'thunderstorm rune' from items.json:item.3202.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:48.551007Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11621.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned icicle rune",
+      "attempted_translation": "Je to ozdobená rampouchová runa",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Icicle Rune' for EN 'icicle rune' from items.json:item.3158.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:48.668772Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11622.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned icicle rune",
+      "attempted_translation": "Je to ozdobená rampouchová runa",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Icicle Rune' for EN 'icicle rune' from items.json:item.3158.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:48.812418Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11623.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned avalanche rune",
+      "attempted_translation": "Je to ozdobená lavinová runa",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Avalanche Rune' for EN 'avalanche rune' from items.json:item.3161.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:50.955927Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11624.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned avalanche rune",
+      "attempted_translation": "Je to ozdobená lavinová runa",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Avalanche Rune' for EN 'avalanche rune' from items.json:item.3161.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:52.689325Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11629.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned paralyze rune",
+      "attempted_translation": "Je to ozdobená paralyzující runa",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Paralyzovat Rune' for EN 'Paralyze Rune' from spells.json:spell.paralyze_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:53.208524Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11630.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned paralyze rune",
+      "attempted_translation": "Je to ozdobená paralyzující runa",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Paralyzovat Rune' for EN 'Paralyze Rune' from spells.json:spell.paralyze_rune.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:54.334348Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11631.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned disintegrate rune",
+      "attempted_translation": "Je to ozdobená rozpadlá runa",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Disintegrate Rune' for EN 'disintegrate rune' from items.json:item.3197.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:55.239987Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11632.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned disintegrate rune",
+      "attempted_translation": "Je to ozdobená rozpadlá runa",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Disintegrate Rune' for EN 'disintegrate rune' from items.json:item.3197.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:55.390212Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11633.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned chameleon rune",
+      "attempted_translation": "Je to ozdobená chameleonská runa",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Chameleon Rune' for EN 'chameleon rune' from items.json:item.3178.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:56.827950Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11634.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned chameleon rune",
+      "attempted_translation": "Je to ozdobená chameleonská runa",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Chameleon Rune' for EN 'chameleon rune' from items.json:item.3178.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:57.913225Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11647.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned light magic missile rune",
+      "attempted_translation": "Je to ozdobená runa světelné magické střely",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Světlo' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:58.413113Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11648.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It's an adorned light magic missile rune",
+      "attempted_translation": "Je to ozdobená runa světelné magické střely",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Světlo' for EN 'Light' from spells.json:spell.light.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:58.519672Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.11699.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The title of this heavy book reads: 'Rabaz' Unabridged Almanach Of Botany'",
+      "attempted_translation": "Název této těžké knihy zní: 'Rabaz' Unabridged Almanach Of Botany'",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'rezervovat' for EN 'book' from items.json:item.12276.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:58.836462Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.117.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It contains a lot of wine flasks.",
+      "attempted_translation": "Obsahuje hodně vinných baněk.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'víno' for EN 'wine' from items.json:item.2.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:36:59.609243Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.118.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "You swapped it with Bozo's crate of wine flasks",
+      "attempted_translation": "Vyměnil jsi to s Bozovou přepravkou lahví vína",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'bedna' for EN 'crate' from items.json:item.116.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:03.548467Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.12077.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This little critter just loves slime fungus",
+      "attempted_translation": "Toto malé zvířátko prostě miluje slizovitou houbu",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'slizniční houba' for EN 'slime fungus' from items.json:item.12059.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:16.644370Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.12175.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Adding some wool here and there would certainly make this look and feel like a real rabbit's foot",
+      "attempted_translation": "Pokud byste sem tam přidali nějakou vlnu, určitě by to vypadalo a vypadalo jako skutečná králičí noha",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'vlna' for EN 'wool' from items.json:item.10319.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:17.682661Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.12672.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Use this knife on a dead war wolf to retrieve some leather. Don't lose it and don't leave the cave",
+      "attempted_translation": "Použijte tento nůž na mrtvého válečného vlka, abyste získali trochu kůže. Neztrácejte to a neopouštějte jeskyni",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'mrtvý válečný vlk' for EN 'dead war wolf' from items.json:item.25241.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:17.931243Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.12785.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "Vascalir gave it to you to collect wasp poison",
+      "attempted_translation": "Vascalir ti to dal, abys sesbíral vosí jed",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Vosa' for EN 'Wasp' from monsters.json:monster.old_wasp.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:18.563387Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.12809.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This hat was handcrafted by Uman the Wise and cursed by Zathroth the Destroyer. It is awarded by TibiaWiki.com.br",
+      "attempted_translation": "Tento klobouk ručně vyrobil Uman Moudrý a proklel Zathroth Ničitel. Uděluje ji TibiaWiki.com.br",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'Torpédoborec' for EN 'Destroyer' from monsters.json:monster.destroyer.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:18.701738Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.12819.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This bucket is specially prepared for magical water, which is known to escape just about any vessel",
+      "attempted_translation": "Toto vědro je speciálně připraveno pro magickou vodu, o které je známo, že unikne téměř každému plavidlu",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'voda' for EN 'water' from items.json:item.1.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:23.582063Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.12935.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "There is a hole in the ceiling.",
+      "attempted_translation": "Ve stropě je díra.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'otvor' for EN 'hole' from items.json:item.12203.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:26.917803Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.133.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It contains holy water from the white raven monastery.",
+      "attempted_translation": "Obsahuje svěcenou vodu z kláštera bílého havrana.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'voda' for EN 'water' from items.json:item.1.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:29.825852Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.13656.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This lamp is glowing very dimly.",
+      "attempted_translation": "Tato lampa svítí velmi slabě.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'svítilna' for EN 'lamp' from items.json:item.10507.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:30.816175Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.13658.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This lamp is glowing very dimly.",
+      "attempted_translation": "Tato lampa svítí velmi slabě.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'svítilna' for EN 'lamp' from items.json:item.10507.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:31.235233Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.140.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "It is the parcel for the watchtower on the Femor Hills",
+      "attempted_translation": "Je to parcela pro strážní věž na Femor Hills",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'balíček' for EN 'parcel' from items.json:item.140.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:31.355459Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14032.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This plant urgently needs some water, else it will wither away and disappear completely",
+      "attempted_translation": "Tato rostlina nutně potřebuje trochu vody, jinak uschne a úplně zmizí",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'voda' for EN 'water' from items.json:item.1.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:32.114702Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14157.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This continuous stream of water seems strong enough to cut even the hardest of materials.",
+      "attempted_translation": "Tento nepřetržitý proud vody se zdá být dostatečně silný, aby řezal i ty nejtvrdší materiály.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'voda' for EN 'water' from items.json:item.1.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:32.884632Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14162.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This blood red gem is still rough",
+      "attempted_translation": "Tento krvavě červený drahokam je stále drsný",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'krev' for EN 'blood' from items.json:item.18620.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:33.402841Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14165.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate is full of fossilised coral. It needs to be obstructed in time or it will corrode",
+      "attempted_translation": "Tato bedna je plná zkamenělých korálů. Musí se včas zablokovat, jinak zkoroduje",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'zkamenělý korál' for EN 'fossilised coral' from items.json:item.14163.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:33.523850Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14166.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "This crate is full of fossilised coral. It needs to be obstructed in time or it will corrode.",
+      "attempted_translation": "Tato bedna je plná zkamenělých korálů. Musí se včas zablokovat, jinak zkoroduje.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'zkamenělý korál' for EN 'fossilised coral' from items.json:item.14163.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:33.666343Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14237.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "The chair is tied to this strange machine. You could use this if you had appropriate instructions.",
+      "attempted_translation": "Židle je přivázána k tomuto podivnému stroji. Mohli byste to použít, pokud byste měli příslušné pokyny.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'podivný stroj' for EN 'strange machine' from items.json:item.21743.name"
+        }
+      ],
+      "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T19:37:34.838994Z",
+      "status": "pending",
+      "lang": "cs",
+      "json_file": "items.json",
+      "key": "item.14238.desc",
+      "reason": "term_consistency_canonical_term_missing",
+      "en_text": "There is a hole in the ceiling.",
+      "attempted_translation": "Ve stropě je díra.",
+      "issues": [
+        {
+          "type": "canonical_term_missing",
+          "severity": "MEDIUM",
+          "message": "Expected canonical term 'otvor' for EN 'hole' from items.json:item.12203.name"
+        }
+      ],
+      "source": "term_consistency_scan"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 2947
+    "total": 2988
   },
-  "updated_at": "2026-04-29T19:34:56.313164Z"
+  "updated_at": "2026-04-29T19:37:35.086383Z"
 }

@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-04-29T20:21:53.179100Z",
-  "language": "tr",
+  "timestamp": "2026-04-29T20:29:06.474346Z",
+  "language": "ru",
   "json_file": "items.json",
-  "translated": 30,
+  "translated": 63,
   "entries": [
     {
-      "key": "item.14373.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14884.name",
+      "en": "basalt wall",
+      "translated": "басалт стена",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14374.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14885.name",
+      "en": "basalt wall",
+      "translated": "басалт стена",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14375.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14913.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14376.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14914.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14377.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14915.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14378.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14916.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14379.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14917.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.1438.name",
-      "en": "ornamented wall",
-      "translated": "süslü duvar",
-      "source": "simple"
+      "key": "item.14918.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14380.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14919.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14381.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14920.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14382.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14921.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14383.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14922.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14384.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14923.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14385.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14924.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14386.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14925.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14387.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14931.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14388.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.150.name",
+      "en": "ice shrine",
+      "translated": "ледяная святыня",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14389.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.15156.name",
+      "en": "large decorative mushroom",
+      "translated": "большой декоративный гриб",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.1439.name",
-      "en": "wall fountain",
-      "translated": "duvar çeşme",
-      "source": "simple"
+      "key": "item.15157.name",
+      "en": "large decorative mushroom",
+      "translated": "большой декоративный гриб",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14390.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "item.14930.name",
+      "en": "small stream",
+      "translated": "маленький ручей",
+      "source": "canonical_name_semantic_autofix"
     }
   ],
   "filtered_untranslated_marker": 0

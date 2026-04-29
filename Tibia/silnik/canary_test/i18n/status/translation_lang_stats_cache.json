@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "timestamp": "2026-04-29T20:26:58.124419Z",
+  "timestamp": "2026-04-29T20:29:11.870971Z",
   "scope": "all",
   "en_total_keys": 74536,
   "en_signature": [
@@ -239,10 +239,10 @@
       0
     ]
   ],
-  "cache_hits": 52,
-  "cache_misses": 0,
-  "file_cache_hits": 2028,
-  "file_cache_misses": 0,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 2027,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -35858,8 +35858,8 @@
         [
           "items.json",
           1,
-          1777487525279289253,
-          1848770
+          1777494546292232192,
+          1848883
         ],
         [
           "libs.json",
@@ -36335,8 +36335,8 @@
         "items.json": {
           "sig": [
             1,
-            1777487525279289253,
-            1848770
+            1777494546292232192,
+            1848883
           ],
           "row": {
             "total_reference_keys": 36733,

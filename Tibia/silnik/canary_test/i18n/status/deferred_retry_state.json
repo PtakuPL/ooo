@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-04-29T20:27:03.441265Z",
+  "updated_at": "2026-04-29T20:29:11.015401Z",
   "keys": {
     "f3a1183f17a2177ac3cbd8a6": {
       "lang": "es",
@@ -172961,7 +172961,7 @@
       "last_seen_epoch": 1777397763,
       "next_retry_not_before_epoch": 1777426563,
       "next_retry_not_before_utc": "2026-04-29T01:36:03Z",
-      "manual_review": false,
+      "manual_review": true,
       "first_seen_epoch": 1777397763,
       "first_seen_utc": "2026-04-28T17:36:03Z",
       "partial_events": 0,
@@ -224976,9 +224976,9 @@
   "stats": {
     "enqueued": 32,
     "suppressed_cooldown": 0,
-    "suppressed_manual_review": 64,
+    "suppressed_manual_review": 65,
     "deduped_ttl": 2,
-    "manual_review_escalations": 50,
+    "manual_review_escalations": 116,
     "partial_staged": 0,
     "partial_completed": 0,
     "retry_loop_cooldown": 0,

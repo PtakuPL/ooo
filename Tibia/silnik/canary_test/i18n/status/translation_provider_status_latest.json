@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:27:02.810104Z",
-  "active_provider": "TM/simple",
-  "active_provider_code": "tm_simple",
-  "active_provider_source": "simple",
-  "active_provider_timestamp": "2026-04-29T20:21:53.179100Z",
+  "generated_at_utc": "2026-04-29T20:29:16.594517Z",
+  "active_provider": "OpenAI model pool",
+  "active_provider_code": "openai_model_pool",
+  "active_provider_source": "openai:openai/gpt-4.1-mini",
+  "active_provider_timestamp": "2026-04-29T20:29:06.474346Z",
   "active_model": "openai/gpt-4.1-mini",
   "fallback_reason": "OpenAI model pool → fallback chain exhausted high reject types [high_reject_types] items.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -66,15 +66,15 @@
     "overall_status": "degraded",
     "signals": [
       "recent_fallback",
-      "provider_consistency_debt:305"
+      "provider_consistency_debt:307"
     ],
-    "provider_consistency_debt": 305,
-    "recent_window_writes": 558,
+    "provider_consistency_debt": 307,
+    "recent_window_writes": 577,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
         "provider_label": "OpenAI model pool",
-        "writes": 233
+        "writes": 252
       },
       {
         "provider": "tm_simple",
@@ -84,12 +84,12 @@
       {
         "provider": "free_google_translate",
         "provider_label": "Free Google Translate",
-        "writes": 96
+        "writes": 95
       },
       {
         "provider": "canonical_name_semantic_autofix",
         "provider_label": "canonical_name_semantic_autofix",
-        "writes": 22
+        "writes": 23
       },
       {
         "provider": "term_consistency_autofix",
@@ -128,7 +128,7 @@
       "free_google_translate": {
         "status": "active",
         "enabled": true,
-        "recent_writes": 96
+        "recent_writes": 95
       },
       "google_cloud": {
         "status": "disabled",
@@ -139,7 +139,7 @@
       "openai_model_pool": {
         "status": "active",
         "active_model": "openai/gpt-4.1-mini",
-        "recent_writes": 233,
+        "recent_writes": 252,
         "requests_today": 158
       }
     },
@@ -250,7 +250,7 @@
       "used_pct": 63.2,
       "monthly_cap": 250.0,
       "spent": 158.0,
-      "latest_age_s": 195.76713,
+      "latest_age_s": 333.446042,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

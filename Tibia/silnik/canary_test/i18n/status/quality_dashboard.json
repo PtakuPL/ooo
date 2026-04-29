@@ -77,12 +77,12 @@
     "issues_count": 180674
   },
   "ru": {
-    "last_cycle": "2026-04-29T18:32:05.585017Z",
-    "last_translated": 89,
-    "total_suspicious": 91205,
-    "total_rejected": 9818,
-    "total_gt_guard_fail": 12639,
-    "cycles": 1270,
+    "last_cycle": "2026-04-29T20:29:06.473187Z",
+    "last_translated": 63,
+    "total_suspicious": 91209,
+    "total_rejected": 9820,
+    "total_gt_guard_fail": 12641,
+    "cycles": 1271,
     "quality_score": 60.1,
     "last_audit": "2026-04-29T20:21:58.342178Z",
     "issues_count": 377489

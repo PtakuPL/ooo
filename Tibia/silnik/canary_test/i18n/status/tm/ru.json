@@ -123165,7 +123165,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:35.310953Z"
+    "updated_at": "2026-04-29T20:22:50.242168Z"
   },
   "item.14846.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
@@ -123173,7 +123173,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:35.315462Z"
+    "updated_at": "2026-04-29T20:22:50.247218Z"
   },
   "item.14848.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
@@ -123181,7 +123181,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:35.320194Z"
+    "updated_at": "2026-04-29T20:22:50.252270Z"
   },
   "item.14849.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
@@ -123189,7 +123189,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:35.326542Z"
+    "updated_at": "2026-04-29T20:22:50.257701Z"
   },
   "item.14850.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
@@ -123197,7 +123197,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:37.606078Z"
+    "updated_at": "2026-04-29T20:22:52.931704Z"
   },
   "item.14856.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
@@ -123205,7 +123205,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:37.614117Z"
+    "updated_at": "2026-04-29T20:22:52.936968Z"
   },
   "item.14857.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
@@ -123229,7 +123229,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:21.141802Z"
+    "updated_at": "2026-04-29T20:22:52.941843Z"
   },
   "item.14860.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
@@ -123237,7 +123237,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:21.151553Z"
+    "updated_at": "2026-04-29T20:22:52.946988Z"
   },
   "item.14861.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
@@ -123245,7 +123245,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:23.185814Z"
+    "updated_at": "2026-04-29T20:22:52.952373Z"
   },
   "item.14862.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
@@ -123253,7 +123253,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:23.196223Z"
+    "updated_at": "2026-04-29T20:22:52.958082Z"
   },
   "item.1487.name": {
     "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
@@ -123501,7 +123501,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:23.211022Z"
+    "updated_at": "2026-04-29T20:22:56.385167Z"
   },
   "item.14868.name": {
     "src_hash": "bfd8891de38d9fa39b5daa48c35ca1f3",
@@ -123509,7 +123509,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:23.221587Z"
+    "updated_at": "2026-04-29T20:22:56.398739Z"
   },
   "item.14869.name": {
     "src_hash": "bfd8891de38d9fa39b5daa48c35ca1f3",
@@ -123517,7 +123517,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:23.231091Z"
+    "updated_at": "2026-04-29T20:22:56.411995Z"
   },
   "item.14884.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
@@ -123525,15 +123525,15 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:23.238239Z"
+    "updated_at": "2026-04-29T20:22:56.420179Z"
   },
   "item.14885.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
     "text": "басалт стена",
-    "source": "canonical_name_semantic_autofix",
-    "confidence": 0.92,
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:58:53.365261Z"
+    "updated_at": "2026-04-29T20:22:56.428513Z"
   },
   "item.14913.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123541,7 +123541,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:25.772270Z"
+    "updated_at": "2026-04-29T20:22:56.438255Z"
   },
   "item.14914.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123549,7 +123549,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:25.782815Z"
+    "updated_at": "2026-04-29T20:22:58.446575Z"
   },
   "item.14915.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123557,7 +123557,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:25.792598Z"
+    "updated_at": "2026-04-29T20:22:58.451921Z"
   },
   "item.14916.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123565,7 +123565,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:25.799733Z"
+    "updated_at": "2026-04-29T20:22:58.457029Z"
   },
   "item.14917.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123573,7 +123573,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:25.806408Z"
+    "updated_at": "2026-04-29T20:22:58.462045Z"
   },
   "item.14918.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123581,7 +123581,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:27.922819Z"
+    "updated_at": "2026-04-29T20:22:58.466944Z"
   },
   "item.14919.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123589,7 +123589,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:27.936841Z"
+    "updated_at": "2026-04-29T20:22:58.471947Z"
   },
   "item.14920.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123597,7 +123597,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:27.947410Z"
+    "updated_at": "2026-04-29T20:23:05.074390Z"
   },
   "item.14921.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123605,7 +123605,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:27.953962Z"
+    "updated_at": "2026-04-29T20:23:05.080435Z"
   },
   "item.14922.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123613,7 +123613,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:27.960644Z"
+    "updated_at": "2026-04-29T20:23:05.086398Z"
   },
   "item.14923.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123621,7 +123621,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:27.975835Z"
+    "updated_at": "2026-04-29T20:23:05.092440Z"
   },
   "item.14924.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123629,7 +123629,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:29.630696Z"
+    "updated_at": "2026-04-29T20:23:05.098300Z"
   },
   "item.14925.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123637,7 +123637,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:29.637781Z"
+    "updated_at": "2026-04-29T20:23:05.103604Z"
   },
   "item.14926.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123673,19 +123673,19 @@
   },
   "item.14930.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
-    "text": "маленький поток",
-    "source": "openai:openai/gpt-4o-mini",
-    "confidence": 0.96,
+    "text": "маленький ручей",
+    "source": "canonical_name_semantic_autofix",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T17:14:42.891312Z"
+    "updated_at": "2026-04-29T20:27:10.191334Z"
   },
   "item.14931.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
-    "text": "маленький поток",
-    "source": "openai:openai/gpt-4o-mini",
+    "text": "маленький ручей",
+    "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:14:42.898982Z"
+    "updated_at": "2026-04-29T20:23:08.214659Z"
   },
   "item.14943.name": {
     "src_hash": "be86c8701b090cf034db2a5ab7370c2e",
@@ -124141,7 +124141,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T17:57:29.643957Z"
+    "updated_at": "2026-04-29T20:23:08.220962Z"
   },
   "item.15032.name": {
     "src_hash": "7f8f42ac05def7a47a0cfebed611f607",
@@ -124614,5 +124614,261 @@
     "confidence": 0.96,
     "verified": false,
     "updated_at": "2026-04-29T18:29:58.594989Z"
+  },
+  "item.1515.name": {
+    "src_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "text": "бамбуковая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:45.958739Z"
+  },
+  "item.15150.name": {
+    "src_hash": "195a9bcf6eeb01122594d58a3ceafa93",
+    "text": "мушрум коркскрев лестница",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:45.974453Z"
+  },
+  "item.1516.name": {
+    "src_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "text": "бамбуковая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.015014Z"
+  },
+  "item.1517.name": {
+    "src_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "text": "бамбуковая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.025063Z"
+  },
+  "item.1518.name": {
+    "src_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "text": "бамбуковая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.034987Z"
+  },
+  "item.1519.name": {
+    "src_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "text": "бамбуковая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.045169Z"
+  },
+  "item.152.name": {
+    "src_hash": "0dfe0d9880996dbaf08d42b2f2f1e01a",
+    "text": "ледяная святыня",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.054675Z"
+  },
+  "item.1520.name": {
+    "src_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "text": "бамбуковая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.064367Z"
+  },
+  "item.15205.name": {
+    "src_hash": "96518056f8c3d6c2e12aae704ecf97a5",
+    "text": "грибы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.071436Z"
+  },
+  "item.15206.name": {
+    "src_hash": "96518056f8c3d6c2e12aae704ecf97a5",
+    "text": "грибы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.078538Z"
+  },
+  "item.15207.name": {
+    "src_hash": "96518056f8c3d6c2e12aae704ecf97a5",
+    "text": "грибы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.085547Z"
+  },
+  "item.15208.name": {
+    "src_hash": "96518056f8c3d6c2e12aae704ecf97a5",
+    "text": "грибы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.093281Z"
+  },
+  "item.15209.name": {
+    "src_hash": "96518056f8c3d6c2e12aae704ecf97a5",
+    "text": "грибы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.100620Z"
+  },
+  "item.1521.name": {
+    "src_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "text": "бамбуковая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.110581Z"
+  },
+  "item.15210.name": {
+    "src_hash": "96518056f8c3d6c2e12aae704ecf97a5",
+    "text": "грибы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.117778Z"
+  },
+  "item.15211.name": {
+    "src_hash": "96518056f8c3d6c2e12aae704ecf97a5",
+    "text": "грибы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.125517Z"
+  },
+  "item.15212.name": {
+    "src_hash": "96518056f8c3d6c2e12aae704ecf97a5",
+    "text": "грибы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.133100Z"
+  },
+  "item.15213.name": {
+    "src_hash": "96518056f8c3d6c2e12aae704ecf97a5",
+    "text": "грибы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.140633Z"
+  },
+  "item.15214.name": {
+    "src_hash": "96518056f8c3d6c2e12aae704ecf97a5",
+    "text": "грибы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.147872Z"
+  },
+  "item.15215.name": {
+    "src_hash": "96518056f8c3d6c2e12aae704ecf97a5",
+    "text": "грибы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.155089Z"
+  },
+  "item.15216.name": {
+    "src_hash": "96518056f8c3d6c2e12aae704ecf97a5",
+    "text": "грибы",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.162283Z"
+  },
+  "item.15217.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.168024Z"
+  },
+  "item.15218.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.173775Z"
+  },
+  "item.15219.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.179543Z"
+  },
+  "item.1522.name": {
+    "src_hash": "b6b592bdc00ea7bcec0821cbb90e4867",
+    "text": "бамбуковая стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.189461Z"
+  },
+  "item.15220.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.195292Z"
+  },
+  "item.15225.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.200997Z"
+  },
+  "item.15226.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.206594Z"
+  },
+  "item.15227.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.212756Z"
+  },
+  "item.15228.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T20:22:46.219006Z"
+  },
+  "item.15156.name": {
+    "src_hash": "578a9cd5fac44ee0985a1709096ba731",
+    "text": "большой декоративный гриб",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:23:08.229542Z"
+  },
+  "item.15157.name": {
+    "src_hash": "578a9cd5fac44ee0985a1709096ba731",
+    "text": "большой декоративный гриб",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T20:23:08.237879Z"
   }
 }

@@ -65964,11 +65964,1163 @@
         }
       ],
       "source": "term_consistency_scan"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:13.432640Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.32418.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "brain head",
+      "attempted_translation": "голова мозга",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Мозговая голова' for EN 'brain head', but source key item.32418.name still uses conflicting variant 'голова мозга'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:13.548661Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.31486.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "calamary",
+      "attempted_translation": "кальмар",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Кальмары' for EN 'calamary', but source key item.31486.name still uses conflicting variant 'кальмар'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:13.665210Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.4995.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "canopic jar",
+      "attempted_translation": "caНетpic jar",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Канопик Джар' for EN 'canopic jar', but source key item.4995.name still uses conflicting variant 'caНетpic jar'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:13.782041Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.698.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "cot",
+      "attempted_translation": "походная койка",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'раскладушка' for EN 'cot', but source key item.698.name still uses conflicting variant 'походная койка'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:13.908436Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.699.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "cot",
+      "attempted_translation": "походная койка",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'раскладушка' for EN 'cot', but source key item.699.name still uses conflicting variant 'походная койка'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:14.024547Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.700.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "cot",
+      "attempted_translation": "походная койка",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'раскладушка' for EN 'cot', but source key item.700.name still uses conflicting variant 'походная койка'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:14.546814Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.701.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "cot",
+      "attempted_translation": "походная койка",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'раскладушка' for EN 'cot', but source key item.701.name still uses conflicting variant 'походная койка'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:20.033403Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.656.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "dead cyclops",
+      "attempted_translation": "мёртвый циклоп",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'мёртвый cyclops' for EN 'dead cyclops', but source key item.656.name still uses conflicting variant 'мёртвый циклоп'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:52.782650Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.657.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "dead cyclops",
+      "attempted_translation": "мёртвый циклоп",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'мёртвый cyclops' for EN 'dead cyclops', but source key item.657.name still uses conflicting variant 'мёртвый циклоп'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:27:52.874503Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.658.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "dead cyclops",
+      "attempted_translation": "мёртвый циклоп",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'мёртвый cyclops' for EN 'dead cyclops', but source key item.658.name still uses conflicting variant 'мёртвый циклоп'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:41.885968Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.659.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "dead cyclops",
+      "attempted_translation": "мёртвый циклоп",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'мёртвый cyclops' for EN 'dead cyclops', but source key item.659.name still uses conflicting variant 'мёртвый циклоп'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:42.004203Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.909.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "dead dragon hatchling",
+      "attempted_translation": "мёртвый дракон hatchling",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'мёртвый дракончик' for EN 'dead dragon hatchling', but source key item.909.name still uses conflicting variant 'мёртвый дракон hatchling'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:42.545110Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.910.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "dead dragon hatchling",
+      "attempted_translation": "мёртвый дракон hatchling",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'мёртвый дракончик' for EN 'dead dragon hatchling', but source key item.910.name still uses conflicting variant 'мёртвый дракон hatchling'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:42.666861Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.911.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "dead dragon hatchling",
+      "attempted_translation": "мёртвый дракон hatchling",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'мёртвый дракончик' for EN 'dead dragon hatchling', but source key item.911.name still uses conflicting variant 'мёртвый дракон hatchling'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:42.785937Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.30225.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "earth ground",
+      "attempted_translation": "земля ground",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'земляной грунт' for EN 'earth ground', but source key item.30225.name still uses conflicting variant 'земля ground'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:43.807669Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.918.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "earth ground",
+      "attempted_translation": "земля ground",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'земляной грунт' for EN 'earth ground', but source key item.918.name still uses conflicting variant 'земля ground'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:45.333393Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.9230.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "flower bouquet",
+      "attempted_translation": "цветок bouquet",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'букет цветов' for EN 'flower bouquet', but source key item.9230.name still uses conflicting variant 'цветок bouquet'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:45.451294Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.9069.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "flower pot",
+      "attempted_translation": "цветок pot",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'цветочный горшок' for EN 'flower pot', but source key item.9069.name still uses conflicting variant 'цветок pot'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:46.465693Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.9070.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "flower pot",
+      "attempted_translation": "цветок pot",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'цветочный горшок' for EN 'flower pot', but source key item.9070.name still uses conflicting variant 'цветок pot'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:48.979411Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.9073.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "flower pot",
+      "attempted_translation": "цветок pot",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'цветочный горшок' for EN 'flower pot', but source key item.9073.name still uses conflicting variant 'цветок pot'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:49.488932Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.9074.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "flower pot",
+      "attempted_translation": "цветок pot",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'цветочный горшок' for EN 'flower pot', but source key item.9074.name still uses conflicting variant 'цветок pot'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:49.575238Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.14975.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "fossilised spine",
+      "attempted_translation": "ископаемый шип",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'ископаемый позвоночник' for EN 'fossilised spine', but source key item.14975.name still uses conflicting variant 'ископаемый шип'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:50.081700Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.14976.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "fossilised spine",
+      "attempted_translation": "ископаемый шип",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'ископаемый позвоночник' for EN 'fossilised spine', but source key item.14976.name still uses conflicting variant 'ископаемый шип'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:50.172051Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.14977.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "fossilised spine",
+      "attempted_translation": "ископаемый шип",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'ископаемый позвоночник' for EN 'fossilised spine', but source key item.14977.name still uses conflicting variant 'ископаемый шип'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:50.262477Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.14978.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "fossilised spine",
+      "attempted_translation": "ископаемый шип",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'ископаемый позвоночник' for EN 'fossilised spine', but source key item.14978.name still uses conflicting variant 'ископаемый шип'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:50.352239Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11139.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "gate of expertise",
+      "attempted_translation": "ворота экспертизы",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'ворота expertise' for EN 'gate of expertise', but source key item.11139.name still uses conflicting variant 'ворота экспертизы'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:50.906600Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11140.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "gate of expertise",
+      "attempted_translation": "ворота экспертизы",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'ворота expertise' for EN 'gate of expertise', but source key item.11140.name still uses conflicting variant 'ворота экспертизы'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:50.992487Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11146.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "gate of expertise",
+      "attempted_translation": "ворота экспертизы",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'ворота expertise' for EN 'gate of expertise', but source key item.11146.name still uses conflicting variant 'ворота экспертизы'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:51.080277Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.11147.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "gate of expertise",
+      "attempted_translation": "ворота экспертизы",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'ворота expertise' for EN 'gate of expertise', but source key item.11147.name still uses conflicting variant 'ворота экспертизы'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:51.167566Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.39377.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "gore horn",
+      "attempted_translation": "кровавый рог",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Гор Хорн' for EN 'gore horn', but source key item.39377.name still uses conflicting variant 'кровавый рог'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:51.253876Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.5460.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "helmet of the deep",
+      "attempted_translation": "шлем the deep",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'шлем глубин' for EN 'helmet of the deep', but source key item.5460.name still uses conflicting variant 'шлем the deep'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:51.771324Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.39560.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "large coral",
+      "attempted_translation": "большой coral",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'большой корал' for EN 'large coral', but source key item.39560.name still uses conflicting variant 'большой coral'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:51.859413Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.32227.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "lost soul",
+      "attempted_translation": "lost душа",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Потерянная душа' for EN 'lost soul', but source key item.32227.name still uses conflicting variant 'lost душа'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:51.947268Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.37059.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "lucky clover amulet",
+      "attempted_translation": "lucky clover амулет",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'амулет из клевера на удачу' for EN 'lucky clover amulet', but source key item.37059.name still uses conflicting variant 'lucky clover амулет'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:52.033411Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.875.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "mining helmet",
+      "attempted_translation": "mining шлем",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'шахтёрский шлем' for EN 'mining helmet', but source key item.875.name still uses conflicting variant 'mining шлем'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:52.542387Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.3580.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "northern pike",
+      "attempted_translation": "Нетrthern pike",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'Нортерн Пике' for EN 'northern pike', but source key item.3580.name still uses conflicting variant 'Нетrthern pike'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:52.628875Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.6850.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "ornamented wall",
+      "attempted_translation": "ornamented стена",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'орнаментированная стена' for EN 'ornamented wall', but source key item.6850.name still uses conflicting variant 'ornamented стена'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:52.715168Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.6853.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "ornamented wall",
+      "attempted_translation": "ornamented стена",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'орнаментированная стена' for EN 'ornamented wall', but source key item.6853.name still uses conflicting variant 'ornamented стена'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:53.470175Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.15125.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "paxillus mushroom",
+      "attempted_translation": "гриб Паксиллус",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'гриб Паксилл' for EN 'paxillus mushroom', but source key item.15125.name still uses conflicting variant 'гриб Паксиллус'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:53.743908Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.21971.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "pitfall",
+      "attempted_translation": "ловушка",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'яма-ловушка' for EN 'pitfall', but source key item.21971.name still uses conflicting variant 'ловушка'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:55.728050Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.21972.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "pitfall",
+      "attempted_translation": "ловушка",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'яма-ловушка' for EN 'pitfall', but source key item.21972.name still uses conflicting variant 'ловушка'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:55.901148Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.33709.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "pitfall",
+      "attempted_translation": "ловушка",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'яма-ловушка' for EN 'pitfall', but source key item.33709.name still uses conflicting variant 'ловушка'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:56.879399Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.1099.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "RESERVED SPRITE",
+      "attempted_translation": "Зарезервированная Сприте",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.1099.name still uses conflicting variant 'Зарезервированная Сприте'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:57.850851Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.12032.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "RESERVED SPRITE",
+      "attempted_translation": "Зарезервированная Сприте",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.12032.name still uses conflicting variant 'Зарезервированная Сприте'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:57.940499Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.12064.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "RESERVED SPRITE",
+      "attempted_translation": "Зарезервированная Сприте",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.12064.name still uses conflicting variant 'Зарезервированная Сприте'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:58.113233Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.12074.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "RESERVED SPRITE",
+      "attempted_translation": "Зарезервированная Сприте",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.12074.name still uses conflicting variant 'Зарезервированная Сприте'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:58.278606Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.30032.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "RESERVED SPRITE",
+      "attempted_translation": "зарезервированная SPRITE",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.30032.name still uses conflicting variant 'зарезервированная SPRITE'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:28:58.966077Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.30130.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "RESERVED SPRITE",
+      "attempted_translation": "зарезервированная SPRITE",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.30130.name still uses conflicting variant 'зарезервированная SPRITE'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:01.857318Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.30199.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "RESERVED SPRITE",
+      "attempted_translation": "зарезервированная SPRITE",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.30199.name still uses conflicting variant 'зарезервированная SPRITE'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:01.945711Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.30217.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "RESERVED SPRITE",
+      "attempted_translation": "зарезервированная SPRITE",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.30217.name still uses conflicting variant 'зарезервированная SPRITE'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:03.131170Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.16204.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "RESERVED SPRITE",
+      "attempted_translation": "ЗАРЕЗЕРВИРОВАННЫЙ СПРАЙТ",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.16204.name still uses conflicting variant 'ЗАРЕЗЕРВИРОВАННЫЙ СПРАЙТ'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:03.336476Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.16241.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "RESERVED SPRITE",
+      "attempted_translation": "ЗАРЕЗЕРВИРОВАННЫЙ СПРАЙТ",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.16241.name still uses conflicting variant 'ЗАРЕЗЕРВИРОВАННЫЙ СПРАЙТ'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:03.630469Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.16243.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "RESERVED SPRITE",
+      "attempted_translation": "ЗАРЕЗЕРВИРОВАННЫЙ СПРАЙТ",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.16243.name still uses conflicting variant 'ЗАРЕЗЕРВИРОВАННЫЙ СПРАЙТ'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:03.813567Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.168.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "RESERVED SPRITE",
+      "attempted_translation": "ЗАРЕЗЕРВИРОВАННЫЙ СПРАЙТ",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.168.name still uses conflicting variant 'ЗАРЕЗЕРВИРОВАННЫЙ СПРАЙТ'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:04.021571Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.31926.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "reserved sprite",
+      "attempted_translation": "зарезервированная sprite",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.31926.name still uses conflicting variant 'зарезервированная sprite'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:04.191140Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.31928.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "reserved sprite",
+      "attempted_translation": "зарезервированная sprite",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.31928.name still uses conflicting variant 'зарезервированная sprite'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:04.352051Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.31930.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "reserved sprite",
+      "attempted_translation": "зарезервированная sprite",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.31930.name still uses conflicting variant 'зарезервированная sprite'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:04.512804Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.31960.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "reserved sprite",
+      "attempted_translation": "зарезервированная sprite",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.31960.name still uses conflicting variant 'зарезервированная sprite'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:04.630323Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.8755.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "sandstone floor",
+      "attempted_translation": "sandstone пол",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'песчаниковый пол' for EN 'sandstone floor', but source key item.8755.name still uses conflicting variant 'sandstone пол'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:04.747503Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.13988.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "shallow water",
+      "attempted_translation": "мелководье",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'shallow вода' for EN 'shallow water', but source key item.13988.name still uses conflicting variant 'мелководье'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:04.863864Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.13989.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "shallow water",
+      "attempted_translation": "мелководье",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'shallow вода' for EN 'shallow water', but source key item.13989.name still uses conflicting variant 'мелководье'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:04.981859Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.13678.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "small coral",
+      "attempted_translation": "маленький коралл",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'маленький coral' for EN 'small coral', but source key item.13678.name still uses conflicting variant 'маленький коралл'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:05.107369Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.3682.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "small fir tree",
+      "attempted_translation": "маленький fir tree",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'маленькая ель' for EN 'small fir tree', but source key item.3682.name still uses conflicting variant 'маленький fir tree'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:29:06.113332Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.30336.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "snowman",
+      "attempted_translation": "sНетwman",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'снеговик' for EN 'snowman', but source key item.30336.name still uses conflicting variant 'sНетwman'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3339
+    "total": 3403
   },
-  "updated_at": "2026-04-29T20:27:06.429302Z"
+  "updated_at": "2026-04-29T20:29:06.139750Z"
 }

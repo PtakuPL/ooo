@@ -192293,7 +192293,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:56.321406Z"
+    "updated_at": "2026-04-29T18:47:44.897242Z"
   },
   "npc.anerui.greet_1": {
     "src_hash": "afb8a66bbd457858c305533b93f273bb",
@@ -222965,7 +222965,7 @@
     "source": "canonical_name_semantic_autofix",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:59.319006Z"
+    "updated_at": "2026-04-29T18:51:45.180818Z"
   },
   "item.10028.name": {
     "src_hash": "466a6bdf5ea677b6e1344f8bd3619a4a",
@@ -224005,7 +224005,7 @@
     "source": "canonical_name_semantic_autofix",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:59.320592Z"
+    "updated_at": "2026-04-29T18:51:45.181833Z"
   },
   "item.1022.name": {
     "src_hash": "85d85c148d5415a351e4b5d8beae6a1a",
@@ -224125,7 +224125,7 @@
     "source": "canonical_name_semantic_autofix",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T18:16:59.319918Z"
+    "updated_at": "2026-04-29T18:51:45.181354Z"
   },
   "item.1031.name": {
     "src_hash": "852488ddd9570bc877783bf4397563e0",
@@ -231165,7 +231165,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:56.332246Z"
+    "updated_at": "2026-04-29T18:47:44.909284Z"
   },
   "item.12254.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
@@ -231173,7 +231173,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:56.345685Z"
+    "updated_at": "2026-04-29T18:47:44.923909Z"
   },
   "item.12255.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
@@ -231181,7 +231181,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:56.356373Z"
+    "updated_at": "2026-04-29T18:47:44.939522Z"
   },
   "item.12256.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
@@ -231189,7 +231189,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:56.367075Z"
+    "updated_at": "2026-04-29T18:47:44.951616Z"
   },
   "item.12257.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
@@ -231197,7 +231197,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:56.378844Z"
+    "updated_at": "2026-04-29T18:47:44.963199Z"
   },
   "item.12258.name": {
     "src_hash": "083608e20354f1c525939750530c235e",
@@ -231205,7 +231205,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:58.223318Z"
+    "updated_at": "2026-04-29T18:47:49.050755Z"
   },
   "item.12330.name": {
     "src_hash": "ceb185d06c0e157abe4c7255bc1aad2d",
@@ -231397,7 +231397,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:58.229969Z"
+    "updated_at": "2026-04-29T18:47:49.056975Z"
   },
   "item.12357.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231405,7 +231405,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:58.237859Z"
+    "updated_at": "2026-04-29T18:47:49.063208Z"
   },
   "item.12358.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231413,7 +231413,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:58.243470Z"
+    "updated_at": "2026-04-29T18:47:49.069665Z"
   },
   "item.12359.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231421,7 +231421,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:58.249302Z"
+    "updated_at": "2026-04-29T18:47:49.078783Z"
   },
   "item.12360.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231429,7 +231429,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:58.254649Z"
+    "updated_at": "2026-04-29T18:47:49.084789Z"
   },
   "item.12361.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231437,7 +231437,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:59.683820Z"
+    "updated_at": "2026-04-29T18:48:41.206779Z"
   },
   "item.12362.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231445,7 +231445,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:59.689522Z"
+    "updated_at": "2026-04-29T18:48:41.217058Z"
   },
   "item.12363.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231453,7 +231453,7 @@
     "source": "openai:openai/gpt-4.1-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:15:59.695209Z"
+    "updated_at": "2026-04-29T18:48:41.224187Z"
   },
   "item.12364.name": {
     "src_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
@@ -231678,5 +231678,277 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-04-29T18:37:06.201236Z"
+  },
+  "item.12429.name": {
+    "src_hash": "686a8c8bcf8ad02beb720a04523f6278",
+    "text": "muro rocoso",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:47:17.011524Z"
+  },
+  "item.1243.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:47:17.020189Z"
+  },
+  "item.12430.name": {
+    "src_hash": "686a8c8bcf8ad02beb720a04523f6278",
+    "text": "muro rocoso",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:47:17.027825Z"
+  },
+  "item.12435.name": {
+    "src_hash": "51b161da351fc0d79407d6a8e6ebc719",
+    "text": "bandera de hieroglyph",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:47:17.055325Z"
+  },
+  "item.12436.name": {
+    "src_hash": "51b161da351fc0d79407d6a8e6ebc719",
+    "text": "bandera de hieroglyph",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:47:17.074433Z"
+  },
+  "item.12437.name": {
+    "src_hash": "6d0e468b11adc14e7b1e573c154e4b42",
+    "text": "bandera de pharaoh",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:47:17.093580Z"
+  },
+  "item.12438.name": {
+    "src_hash": "6d0e468b11adc14e7b1e573c154e4b42",
+    "text": "bandera de pharaoh",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:47:17.112219Z"
+  },
+  "item.1244.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:47:17.132422Z"
+  },
+  "item.1245.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:47:17.219681Z"
+  },
+  "item.1246.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:47:17.294022Z"
+  },
+  "item.1247.name": {
+    "src_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "text": "tablero de molino",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:47:17.361623Z"
+  },
+  "item.12472.name": {
+    "src_hash": "02273b08a246cd73a1c0d0d6b3e7a3c6",
+    "text": "mesa de escorpión de ornamented",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T18:47:17.414380Z"
+  },
+  "item.12439.name": {
+    "src_hash": "8ba6bc76d5b7e048f654f096401e80ba",
+    "text": "adorno dorado",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:41.235844Z"
+  },
+  "item.12440.name": {
+    "src_hash": "8ba6bc76d5b7e048f654f096401e80ba",
+    "text": "adorno dorado",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:41.245020Z"
+  },
+  "item.12441.name": {
+    "src_hash": "195eac776afc0a6c9e91df1af343ce2c",
+    "text": "adorno de escorpión",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:41.255495Z"
+  },
+  "item.12442.name": {
+    "src_hash": "195eac776afc0a6c9e91df1af343ce2c",
+    "text": "adorno de escorpión",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:43.548457Z"
+  },
+  "item.12443.name": {
+    "src_hash": "d786aaeff706af6b7c986fbf102e0c8a",
+    "text": "jeroglíficos",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:43.558676Z"
+  },
+  "item.12444.name": {
+    "src_hash": "d786aaeff706af6b7c986fbf102e0c8a",
+    "text": "jeroglíficos",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:43.566093Z"
+  },
+  "item.12447.name": {
+    "src_hash": "be8bf2032062cfe16fa6aac116e23341",
+    "text": "talla de un escorpión",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:43.578057Z"
+  },
+  "item.12448.name": {
+    "src_hash": "be8bf2032062cfe16fa6aac116e23341",
+    "text": "talla de un escorpión",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:43.587396Z"
+  },
+  "item.12449.name": {
+    "src_hash": "be8bf2032062cfe16fa6aac116e23341",
+    "text": "talla de un escorpión",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:43.596960Z"
+  },
+  "item.12450.name": {
+    "src_hash": "be8bf2032062cfe16fa6aac116e23341",
+    "text": "talla de un escorpión",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:45.655491Z"
+  },
+  "item.12453.name": {
+    "src_hash": "db5d1e99f9ed06bf9e935f2434799196",
+    "text": "talla de una batalla",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:45.667562Z"
+  },
+  "item.12454.name": {
+    "src_hash": "db5d1e99f9ed06bf9e935f2434799196",
+    "text": "talla de una batalla",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:45.676314Z"
+  },
+  "item.12455.name": {
+    "src_hash": "db5d1e99f9ed06bf9e935f2434799196",
+    "text": "talla de una batalla",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:45.685282Z"
+  },
+  "item.12458.name": {
+    "src_hash": "db5d1e99f9ed06bf9e935f2434799196",
+    "text": "talla de una batalla",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:45.695320Z"
+  },
+  "item.12459.name": {
+    "src_hash": "db5d1e99f9ed06bf9e935f2434799196",
+    "text": "talla de una batalla",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:45.705168Z"
+  },
+  "item.12460.name": {
+    "src_hash": "db5d1e99f9ed06bf9e935f2434799196",
+    "text": "talla de una batalla",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:47.992109Z"
+  },
+  "item.12465.name": {
+    "src_hash": "982fc628df968b93260be5f1146d4030",
+    "text": "estatua de hiena",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:47.999456Z"
+  },
+  "item.12466.name": {
+    "src_hash": "982fc628df968b93260be5f1146d4030",
+    "text": "estatua de hiena",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:48.010465Z"
+  },
+  "item.12467.name": {
+    "src_hash": "af0739dc9597d25caf9a474dae14e792",
+    "text": "escorpión dorado",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:48.018020Z"
+  },
+  "item.12468.name": {
+    "src_hash": "af0739dc9597d25caf9a474dae14e792",
+    "text": "escorpión dorado",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:48.025968Z"
+  },
+  "item.12470.name": {
+    "src_hash": "223f718c7ebbbf6070264a45e8963bab",
+    "text": "pequeño escorpión dorado",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:48.036367Z"
+  },
+  "item.12471.name": {
+    "src_hash": "223f718c7ebbbf6070264a45e8963bab",
+    "text": "pequeño escorpión dorado",
+    "source": "openai:openai/gpt-4.1-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T18:48:49.028128Z"
   }
 }

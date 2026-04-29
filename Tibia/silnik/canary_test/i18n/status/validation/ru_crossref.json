@@ -4,10 +4,10 @@
   "crossref_enabled": true,
   "auto_fix_enabled": false,
   "auto_fix_limit": 30,
-  "checked_at": "2026-04-29T18:14:49.692688Z",
-  "issues_total": 524,
+  "checked_at": "2026-04-29T18:53:54.219536Z",
+  "issues_total": 525,
   "issues_by_type": {
-    "consistency_in_language": 89,
+    "consistency_in_language": 90,
     "pl_reference_missing_translation": 400,
     "length_ratio_crosscheck": 35
   },
@@ -954,6 +954,20 @@
         "items:item.14977.name",
         "items:item.14978.name",
         "items:item.14979.name"
+      ]
+    },
+    {
+      "type": "crossref_inconsistent_translation",
+      "severity": "MEDIUM",
+      "en": "paxillus mushroom",
+      "variants": [
+        "гриб Паксилл",
+        "гриб Паксиллус"
+      ],
+      "variants_count": 2,
+      "examples": [
+        "items:item.15124.name",
+        "items:item.15125.name"
       ]
     },
     {

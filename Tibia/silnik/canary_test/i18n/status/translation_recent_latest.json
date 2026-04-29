@@ -1,127 +1,127 @@
 {
-  "timestamp": "2026-04-29T18:44:08.508209Z",
-  "language": "ro",
+  "timestamp": "2026-04-29T18:53:29.435445Z",
+  "language": "es",
   "json_file": "items.json",
-  "translated": 47,
+  "translated": 55,
   "entries": [
     {
-      "key": "item.11762.name",
-      "en": "timber floor",
-      "translated": "podea din lemn",
-      "source": "simple"
-    },
-    {
-      "key": "item.11763.name",
-      "en": "timber floor",
-      "translated": "podea din lemn",
-      "source": "simple"
-    },
-    {
-      "key": "item.11764.name",
-      "en": "timber floor",
-      "translated": "podea din lemn",
-      "source": "simple"
-    },
-    {
-      "key": "item.10190.name",
-      "en": "dead draken warmaster",
-      "translated": "războinic draken mort",
+      "key": "item.12444.name",
+      "en": "hieroglyphs",
+      "translated": "jeroglíficos",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.10191.name",
-      "en": "dead draken warmaster",
-      "translated": "războinic draken mort",
+      "key": "item.12447.name",
+      "en": "carving of a scorpion",
+      "translated": "talla de un escorpión",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.10192.name",
-      "en": "dead draken warmaster",
-      "translated": "războinic draken mort",
+      "key": "item.12448.name",
+      "en": "carving of a scorpion",
+      "translated": "talla de un escorpión",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.10193.name",
-      "en": "dead draken warmaster",
-      "translated": "războinic draken mort",
+      "key": "item.12449.name",
+      "en": "carving of a scorpion",
+      "translated": "talla de un escorpión",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.10216.name",
-      "en": "dragon statue kit",
-      "translated": "kit statuie dragon",
+      "key": "item.12450.name",
+      "en": "carving of a scorpion",
+      "translated": "talla de un escorpión",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.10334.name",
-      "en": "dead orc marauder",
-      "translated": "marauder orc mort",
+      "key": "item.12453.name",
+      "en": "carving of a battle",
+      "translated": "talla de una batalla",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.10335.name",
-      "en": "dead orc marauder",
-      "translated": "marauder orc mort",
+      "key": "item.12454.name",
+      "en": "carving of a battle",
+      "translated": "talla de una batalla",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.10337.name",
-      "en": "dead orc marauder",
-      "translated": "marauder orc mort",
+      "key": "item.12455.name",
+      "en": "carving of a battle",
+      "translated": "talla de una batalla",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.11667.name",
-      "en": "dead draken abomination",
-      "translated": "draken abominație moartă",
+      "key": "item.12458.name",
+      "en": "carving of a battle",
+      "translated": "talla de una batalla",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.11668.name",
-      "en": "dead draken abomination",
-      "translated": "draken abominație moartă",
+      "key": "item.12459.name",
+      "en": "carving of a battle",
+      "translated": "talla de una batalla",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.11669.name",
-      "en": "dead draken abomination",
-      "translated": "draken abominație moartă",
+      "key": "item.12460.name",
+      "en": "carving of a battle",
+      "translated": "talla de una batalla",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.11670.name",
-      "en": "dead draken abomination",
-      "translated": "draken abominație moartă",
+      "key": "item.12465.name",
+      "en": "hyaena statue",
+      "translated": "estatua de hiena",
       "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.13656.desc",
-      "en": "This lamp is glowing very dimly.",
-      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
-      "source": "term_consistency_autofix"
+      "key": "item.12466.name",
+      "en": "hyaena statue",
+      "translated": "estatua de hiena",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.13658.desc",
-      "en": "This lamp is glowing very dimly.",
-      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
-      "source": "term_consistency_autofix"
+      "key": "item.12467.name",
+      "en": "golden scorpion",
+      "translated": "escorpión dorado",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.14760.desc",
-      "en": "This is an emblem of wisdom. It was awarded by TibiaStat.com",
-      "translated": "Aceasta este o emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă a înțelepciunii. A fost acordat de TibiaStat.com",
-      "source": "term_consistency_autofix"
+      "key": "item.12468.name",
+      "en": "golden scorpion",
+      "translated": "escorpión dorado",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "item.10507.name",
-      "en": "lamp",
-      "translated": "lampă",
+      "key": "item.12470.name",
+      "en": "small golden scorpion",
+      "translated": "pequeño escorpión dorado",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.12471.name",
+      "en": "small golden scorpion",
+      "translated": "pequeño escorpión dorado",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.10026.name",
+      "en": "baby rotworm",
+      "translated": "rotworm de bebé",
       "source": "canonical_name_semantic_autofix"
     },
     {
-      "key": "item.11365.name",
-      "en": "ramp",
-      "translated": "rampă",
+      "key": "item.10299.name",
+      "en": "badger fur",
+      "translated": "pelaje de badger",
+      "source": "canonical_name_semantic_autofix"
+    },
+    {
+      "key": "item.10194.name",
+      "en": "bamboo drawer",
+      "translated": "drawer de bambú",
       "source": "canonical_name_semantic_autofix"
     }
   ],

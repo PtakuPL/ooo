@@ -9706,7 +9706,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation",
     "source": "canonical_name_semantic_autofix",
-    "updated_at": "2026-04-29T18:16:59.319122Z",
+    "updated_at": "2026-04-29T18:51:45.180874Z",
     "en_hash": "aabdddfc93cdfc8322f94b68f9cc0760",
     "attempted_preview": "rotworm de bebé",
     "extra": {
@@ -9726,7 +9726,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation",
     "source": "canonical_name_semantic_autofix",
-    "updated_at": "2026-04-29T18:16:59.320625Z",
+    "updated_at": "2026-04-29T18:51:45.181859Z",
     "en_hash": "feb706aed35979e15f25a1f15bb6f71f",
     "attempted_preview": "drawer de bambú",
     "extra": {
@@ -9746,7 +9746,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation",
     "source": "canonical_name_semantic_autofix",
-    "updated_at": "2026-04-29T18:16:59.319958Z",
+    "updated_at": "2026-04-29T18:51:45.181381Z",
     "en_hash": "9269e34558de79bfe1e38796e2e9cd9e",
     "attempted_preview": "pelaje de badger",
     "extra": {
@@ -9766,7 +9766,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:15:39.509410Z",
+    "updated_at": "2026-04-29T18:47:06.345686Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -9778,7 +9778,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:15:39.509467Z",
+    "updated_at": "2026-04-29T18:47:06.345740Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -9790,7 +9790,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:15:39.509663Z",
+    "updated_at": "2026-04-29T18:47:06.345914Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -9802,7 +9802,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:15:39.509721Z",
+    "updated_at": "2026-04-29T18:47:06.345945Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -9814,7 +9814,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:15:39.509741Z",
+    "updated_at": "2026-04-29T18:47:06.345962Z",
     "en_hash": "3811727de5b0ddf6ae30defe2ca4d2c2",
     "attempted_preview": "fog",
     "attempted_hash": "3811727de5b0ddf6ae30defe2ca4d2c2"
@@ -9966,7 +9966,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:56.321210Z",
+    "updated_at": "2026-04-29T18:47:44.897094Z",
     "en_hash": "00e4afdc5609ceae258e378361bc4d11",
     "attempted_preview": "cobra de jade negro",
     "extra": {
@@ -9975,7 +9975,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:56Z"
+        "retry_not_before_utc": "2026-04-29T18:47:44Z"
       }
     },
     "attempted_hash": "cdec0faac30d497c1242f925dda0c551"
@@ -9987,7 +9987,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:56.332013Z",
+    "updated_at": "2026-04-29T18:47:44.908784Z",
     "en_hash": "083608e20354f1c525939750530c235e",
     "attempted_preview": "bayas invernales prensadas",
     "extra": {
@@ -9996,7 +9996,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:56Z"
+        "retry_not_before_utc": "2026-04-29T18:47:44Z"
       }
     },
     "attempted_hash": "db97818700ec02d46106bc5ac440bee5"
@@ -10008,7 +10008,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:56.345458Z",
+    "updated_at": "2026-04-29T18:47:44.923589Z",
     "en_hash": "083608e20354f1c525939750530c235e",
     "attempted_preview": "bayas invernales prensadas",
     "extra": {
@@ -10017,7 +10017,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:56Z"
+        "retry_not_before_utc": "2026-04-29T18:47:44Z"
       }
     },
     "attempted_hash": "db97818700ec02d46106bc5ac440bee5"
@@ -10029,7 +10029,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:56.356142Z",
+    "updated_at": "2026-04-29T18:47:44.939263Z",
     "en_hash": "083608e20354f1c525939750530c235e",
     "attempted_preview": "bayas invernales prensadas",
     "extra": {
@@ -10038,7 +10038,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:56Z"
+        "retry_not_before_utc": "2026-04-29T18:47:44Z"
       }
     },
     "attempted_hash": "db97818700ec02d46106bc5ac440bee5"
@@ -10050,7 +10050,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:56.366857Z",
+    "updated_at": "2026-04-29T18:47:44.951387Z",
     "en_hash": "083608e20354f1c525939750530c235e",
     "attempted_preview": "bayas invernales prensadas",
     "extra": {
@@ -10059,7 +10059,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:56Z"
+        "retry_not_before_utc": "2026-04-29T18:47:44Z"
       }
     },
     "attempted_hash": "db97818700ec02d46106bc5ac440bee5"
@@ -10071,7 +10071,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:56.378347Z",
+    "updated_at": "2026-04-29T18:47:44.962901Z",
     "en_hash": "083608e20354f1c525939750530c235e",
     "attempted_preview": "bayas invernales prensadas",
     "extra": {
@@ -10080,7 +10080,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:56Z"
+        "retry_not_before_utc": "2026-04-29T18:47:44Z"
       }
     },
     "attempted_hash": "db97818700ec02d46106bc5ac440bee5"
@@ -10092,7 +10092,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:58.223113Z",
+    "updated_at": "2026-04-29T18:47:49.050506Z",
     "en_hash": "083608e20354f1c525939750530c235e",
     "attempted_preview": "bayas invernales prensadas",
     "extra": {
@@ -10101,7 +10101,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:58Z"
+        "retry_not_before_utc": "2026-04-29T18:47:49Z"
       },
       "canonical_name_conflict": {
         "status": "auto_fixed_semantic_dominant",
@@ -10119,7 +10119,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:28.163803Z",
+    "updated_at": "2026-04-29T18:50:35.884740Z",
     "en_hash": "79a4b5069fcbc4556ba7782cd0240de7",
     "attempted_preview": "Esta caja contiene a conjunto de armas",
     "extra": {
@@ -10141,7 +10141,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:28.435597Z",
+    "updated_at": "2026-04-29T18:51:02.838293Z",
     "en_hash": "f3181b5d350c388079a2884540cb8a12",
     "attempted_preview": "Contiene el olor de una baba recién asesinada.",
     "extra": {
@@ -10163,7 +10163,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:29.476246Z",
+    "updated_at": "2026-04-29T18:51:09.970778Z",
     "en_hash": "a15684d18ef485ef77dd0b8b218583a5",
     "attempted_preview": "Esta caja ha sido marcada con símbolos de lagartos. Es lo suficientemente grande como para que quepa una persona adulta.",
     "extra": {
@@ -10185,7 +10185,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:29.656397Z",
+    "updated_at": "2026-04-29T18:51:10.280661Z",
     "en_hash": "89f4f1c1c993c508cbe01c1163c5d0c4",
     "attempted_preview": "Este cuenco fue hecho de madera sagrada y actualmente no está tratado.",
     "extra": {
@@ -10207,7 +10207,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:29.790770Z",
+    "updated_at": "2026-04-29T18:51:10.412557Z",
     "en_hash": "557ca322c4358b15b6f9f6082860c6db",
     "attempted_preview": "Este cuenco fue recubierto con arcilla sagrada y puede usarse para purificar pequeñas cantidades de agua corrupta.",
     "extra": {
@@ -10229,7 +10229,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:30.318465Z",
+    "updated_at": "2026-04-29T18:51:10.586404Z",
     "en_hash": "964010137d180c408e8d0cf4efe3bf94",
     "attempted_preview": "Es una runa curativa suprema adornada.",
     "extra": {
@@ -10251,7 +10251,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:30.467030Z",
+    "updated_at": "2026-04-29T18:51:10.776550Z",
     "en_hash": "964010137d180c408e8d0cf4efe3bf94",
     "attempted_preview": "Es una runa curativa suprema adornada.",
     "extra": {
@@ -10273,7 +10273,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:32.913233Z",
+    "updated_at": "2026-04-29T18:51:12.049032Z",
     "en_hash": "8d0504df5491ef3c971915357622291d",
     "attempted_preview": "Es una runa de pared mágica adornada.",
     "extra": {
@@ -10295,7 +10295,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:33.828089Z",
+    "updated_at": "2026-04-29T18:51:13.957944Z",
     "en_hash": "8d0504df5491ef3c971915357622291d",
     "attempted_preview": "Es una runa de pared mágica adornada.",
     "extra": {
@@ -10317,7 +10317,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:34.359384Z",
+    "updated_at": "2026-04-29T18:51:14.345325Z",
     "en_hash": "96d91350b79f099110fa17a2e283ea10",
     "attempted_preview": "Es una runa de pared de energía adornada.",
     "extra": {
@@ -10339,7 +10339,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:34.999575Z",
+    "updated_at": "2026-04-29T18:51:14.646978Z",
     "en_hash": "96d91350b79f099110fa17a2e283ea10",
     "attempted_preview": "Es una runa de pared de energía adornada.",
     "extra": {
@@ -10361,7 +10361,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:36.247366Z",
+    "updated_at": "2026-04-29T18:51:16.159825Z",
     "en_hash": "7353cd27d0e075e4188fe27bf8194a41",
     "attempted_preview": "Lo intercambiaste con la caja de frascos de vino de Bozo",
     "extra": {
@@ -10383,7 +10383,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:37.134892Z",
+    "updated_at": "2026-04-29T18:51:17.388064Z",
     "en_hash": "04c16c127086440130fc2ca3d73a2894",
     "attempted_preview": "Esta fruta fue recolectada del Cerezo Gritón.",
     "extra": {
@@ -10405,7 +10405,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:37.583197Z",
+    "updated_at": "2026-04-29T18:51:17.678505Z",
     "en_hash": "c0b89e9ef530b1575bb04fc07a8feda8",
     "attempted_preview": "Es la parcela de la torre de vigilancia de la Femor Hills",
     "extra": {
@@ -10427,7 +10427,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:39.098651Z",
+    "updated_at": "2026-04-29T18:51:19.086444Z",
     "en_hash": "fd3552c39886db2debf3933f425d3433",
     "attempted_preview": "Esta caja está llena de coral fosilizado. Necesita ser obstruida a tiempo o se corroerá",
     "extra": {
@@ -10449,7 +10449,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:40.766132Z",
+    "updated_at": "2026-04-29T18:51:19.871047Z",
     "en_hash": "d09d43bde11ada7b26331f3beb99fa62",
     "attempted_preview": "Esta caja está llena de coral fosilizado. Necesita ser obstruida a tiempo o se corroerá.",
     "extra": {
@@ -10471,7 +10471,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:41.105924Z",
+    "updated_at": "2026-04-29T18:51:24.370096Z",
     "en_hash": "e651d792e0f39e1745df3e5f891c26ea",
     "attempted_preview": "La silla está atada a esta extraña máquina. Podrías usar esto si tuvieras las instrucciones adecuadas.",
     "extra": {
@@ -10493,7 +10493,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:41.266306Z",
+    "updated_at": "2026-04-29T18:51:24.502767Z",
     "en_hash": "1481c5a049b02850e99ef99d46e4c402",
     "attempted_preview": "Nadie sabe realmente a dónde conduce, pero el cementerio de dragones podría revelar el secreto... o no.",
     "extra": {
@@ -10515,7 +10515,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:46.691630Z",
+    "updated_at": "2026-04-29T18:51:28.975459Z",
     "en_hash": "502aa3f6387a8aa8f6aef4c3fa1cb124",
     "attempted_preview": "Úsalo en tu casa para construir un gabinete para pasteles.",
     "extra": {
@@ -10537,7 +10537,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:47.379099Z",
+    "updated_at": "2026-04-29T18:51:31.757966Z",
     "en_hash": "55ce058c7a749973063cc5fdd638a4be",
     "attempted_preview": "Ves una calavera de medusa. Las serpientes de su pelo siguen vivas. Otorgado sólo en TibiaPic.com",
     "extra": {
@@ -10559,7 +10559,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:47.493795Z",
+    "updated_at": "2026-04-29T18:51:31.937044Z",
     "en_hash": "85c7ef7f6a17d9e060bc0182323c8d83",
     "attempted_preview": "Está vacío. Reúne algunas esporas ROJAS",
     "extra": {
@@ -10581,7 +10581,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:48.100558Z",
+    "updated_at": "2026-04-29T18:51:32.284991Z",
     "en_hash": "de6402e7310054867bd91403eaf4018a",
     "attempted_preview": "Contiene esporas rojas. Reúne algunas esporas VERDES",
     "extra": {
@@ -10603,7 +10603,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:48.561694Z",
+    "updated_at": "2026-04-29T18:51:33.316816Z",
     "en_hash": "356977365fb1ef63f4a7fed4ca1c3073",
     "attempted_preview": "Contiene esporas rojas y verdes. Reúne algunas esporas AZULES",
     "extra": {
@@ -10625,7 +10625,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:48.954252Z",
+    "updated_at": "2026-04-29T18:51:33.685263Z",
     "en_hash": "0157edfa55d4c042852b51df197da7cf",
     "attempted_preview": "Contiene esporas rojas, verdes y azules. Reúne algunas esporas AMARILLAS",
     "extra": {
@@ -10647,7 +10647,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:49.771337Z",
+    "updated_at": "2026-04-29T18:51:34.286825Z",
     "en_hash": "3b93915ccaa1d2a3d8dc56b9d380d092",
     "attempted_preview": "Contiene esporas rojas, verdes, azules y amarillas. Entregarlo a los gnomos",
     "extra": {
@@ -10669,7 +10669,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:50.078109Z",
+    "updated_at": "2026-04-29T18:51:35.572609Z",
     "en_hash": "50283fcdee5a10ddc24b58e33308b07f",
     "attempted_preview": "El cerdito necesita ser devuelto a su cuidador dentro de una hora",
     "extra": {
@@ -10691,7 +10691,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:50.716347Z",
+    "updated_at": "2026-04-29T18:51:38.031491Z",
     "en_hash": "50283fcdee5a10ddc24b58e33308b07f",
     "attempted_preview": "El cerdito necesita ser devuelto a su cuidador dentro de una hora",
     "extra": {
@@ -10713,7 +10713,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:51.812742Z",
+    "updated_at": "2026-04-29T18:51:38.563397Z",
     "en_hash": "7ef9bd1cc5a2a0699766c2b34237a24f",
     "attempted_preview": "Usa esta estatua para entrenar tu habilidad de lucha con garrotes y escudos sin conexión.",
     "extra": {
@@ -10735,7 +10735,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:16:51.977774Z",
+    "updated_at": "2026-04-29T18:51:39.810581Z",
     "en_hash": "0ceb71ec246c81495fa3acf78ca561d9",
     "attempted_preview": "Otro conjunto de símbolos extraños.",
     "extra": {
@@ -10757,7 +10757,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T18:17:05.898889Z",
+    "updated_at": "2026-04-29T18:51:52.922738Z",
     "en_hash": "82216cc2c5a03f3e65143a8ff763ba19",
     "attempted_preview": "gusano de carrion",
     "extra": {
@@ -10777,7 +10777,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T18:17:06.039889Z",
+    "updated_at": "2026-04-29T18:51:53.058791Z",
     "en_hash": "25b1331a71dad1d01977134b8c6b524f",
     "attempted_preview": "soul perdido",
     "extra": {
@@ -10797,7 +10797,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T18:17:07.770742Z",
+    "updated_at": "2026-04-29T18:51:54.756518Z",
     "en_hash": "508ca7cc112449d6c18b591aafcc35b7",
     "attempted_preview": "muñeco nórdico",
     "extra": {
@@ -10817,7 +10817,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T18:17:08.236557Z",
+    "updated_at": "2026-04-29T18:51:57.382811Z",
     "en_hash": "b7191a556bb13541494d8e7a52e6ff07",
     "attempted_preview": "duende reservado",
     "extra": {
@@ -10837,7 +10837,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T18:17:08.365001Z",
+    "updated_at": "2026-04-29T18:51:58.244440Z",
     "en_hash": "b7191a556bb13541494d8e7a52e6ff07",
     "attempted_preview": "duende reservado",
     "extra": {
@@ -10857,7 +10857,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T18:17:08.490934Z",
+    "updated_at": "2026-04-29T18:51:59.430624Z",
     "en_hash": "b7191a556bb13541494d8e7a52e6ff07",
     "attempted_preview": "duende reservado",
     "extra": {
@@ -10877,7 +10877,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T18:17:08.612764Z",
+    "updated_at": "2026-04-29T18:52:27.926357Z",
     "en_hash": "b7191a556bb13541494d8e7a52e6ff07",
     "attempted_preview": "duende reservado",
     "extra": {
@@ -10897,7 +10897,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T18:17:08.732598Z",
+    "updated_at": "2026-04-29T18:52:36.386837Z",
     "en_hash": "3cdb8d91181eb2a961cc85f9041147c5",
     "attempted_preview": "trofeo de sea serpent",
     "extra": {
@@ -10917,7 +10917,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T18:17:08.854560Z",
+    "updated_at": "2026-04-29T18:53:27.300134Z",
     "en_hash": "83a0e1cb6ac2b2644c45a102a9903416",
     "attempted_preview": "elemento desconocido",
     "extra": {
@@ -10937,7 +10937,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T18:17:09.312685Z",
+    "updated_at": "2026-04-29T18:53:27.459619Z",
     "en_hash": "83a0e1cb6ac2b2644c45a102a9903416",
     "attempted_preview": "elemento desconocido",
     "extra": {
@@ -10957,7 +10957,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T18:17:09.436853Z",
+    "updated_at": "2026-04-29T18:53:27.651579Z",
     "en_hash": "83a0e1cb6ac2b2644c45a102a9903416",
     "attempted_preview": "elemento desconocido",
     "extra": {
@@ -10977,7 +10977,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T18:17:09.558305Z",
+    "updated_at": "2026-04-29T18:53:27.824799Z",
     "en_hash": "83a0e1cb6ac2b2644c45a102a9903416",
     "attempted_preview": "elemento desconocido",
     "extra": {
@@ -10997,7 +10997,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T18:17:09.680005Z",
+    "updated_at": "2026-04-29T18:53:28.659465Z",
     "en_hash": "83a0e1cb6ac2b2644c45a102a9903416",
     "attempted_preview": "unkNown item",
     "extra": {
@@ -11017,7 +11017,7 @@
     "status": "manual_review",
     "reason": "canonical_name_semantic_conflict",
     "source": "canonical_name_conflicts",
-    "updated_at": "2026-04-29T18:17:09.808660Z",
+    "updated_at": "2026-04-29T18:53:28.910456Z",
     "en_hash": "83a0e1cb6ac2b2644c45a102a9903416",
     "attempted_preview": "unkNown item",
     "extra": {
@@ -51793,7 +51793,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:58.229528Z",
+    "updated_at": "2026-04-29T18:47:49.056791Z",
     "en_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
     "attempted_hash": "7be655f54dabb49b59a59545d7f0c668",
     "attempted_preview": "suelo rocoso",
@@ -51803,7 +51803,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:58Z"
+        "retry_not_before_utc": "2026-04-29T18:47:49Z"
       }
     }
   },
@@ -51814,7 +51814,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:58.237651Z",
+    "updated_at": "2026-04-29T18:47:49.063026Z",
     "en_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
     "attempted_hash": "7be655f54dabb49b59a59545d7f0c668",
     "attempted_preview": "suelo rocoso",
@@ -51824,7 +51824,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:58Z"
+        "retry_not_before_utc": "2026-04-29T18:47:49Z"
       }
     }
   },
@@ -51835,7 +51835,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:58.243285Z",
+    "updated_at": "2026-04-29T18:47:49.069461Z",
     "en_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
     "attempted_hash": "7be655f54dabb49b59a59545d7f0c668",
     "attempted_preview": "suelo rocoso",
@@ -51845,7 +51845,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:58Z"
+        "retry_not_before_utc": "2026-04-29T18:47:49Z"
       }
     }
   },
@@ -51856,7 +51856,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:58.249090Z",
+    "updated_at": "2026-04-29T18:47:49.078594Z",
     "en_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
     "attempted_hash": "7be655f54dabb49b59a59545d7f0c668",
     "attempted_preview": "suelo rocoso",
@@ -51866,7 +51866,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:58Z"
+        "retry_not_before_utc": "2026-04-29T18:47:49Z"
       }
     }
   },
@@ -51877,7 +51877,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:58.254446Z",
+    "updated_at": "2026-04-29T18:47:49.084604Z",
     "en_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
     "attempted_hash": "7be655f54dabb49b59a59545d7f0c668",
     "attempted_preview": "suelo rocoso",
@@ -51887,7 +51887,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:58Z"
+        "retry_not_before_utc": "2026-04-29T18:47:49Z"
       }
     }
   },
@@ -51898,7 +51898,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:59.683627Z",
+    "updated_at": "2026-04-29T18:48:41.206467Z",
     "en_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
     "attempted_hash": "7be655f54dabb49b59a59545d7f0c668",
     "attempted_preview": "suelo rocoso",
@@ -51908,7 +51908,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:59Z"
+        "retry_not_before_utc": "2026-04-29T18:48:41Z"
       }
     }
   },
@@ -51919,7 +51919,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:59.689317Z",
+    "updated_at": "2026-04-29T18:48:41.216636Z",
     "en_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
     "attempted_hash": "7be655f54dabb49b59a59545d7f0c668",
     "attempted_preview": "suelo rocoso",
@@ -51929,7 +51929,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:59Z"
+        "retry_not_before_utc": "2026-04-29T18:48:41Z"
       }
     }
   },
@@ -51940,7 +51940,7 @@
     "status": "translated_ok",
     "reason": "accepted_translation_with_style_debt",
     "source": "openai:openai/gpt-4.1-mini",
-    "updated_at": "2026-04-29T18:15:59.695027Z",
+    "updated_at": "2026-04-29T18:48:41.223885Z",
     "en_hash": "2c53c420e959fbc0dc10cbc4cf4e95a2",
     "attempted_hash": "7be655f54dabb49b59a59545d7f0c668",
     "attempted_preview": "suelo rocoso",
@@ -51950,7 +51950,7 @@
         "used_provider": "openai_model_pool",
         "pending": true,
         "reason": "style_authority_mismatch_openai_fallback",
-        "retry_not_before_utc": "2026-04-29T18:15:59Z"
+        "retry_not_before_utc": "2026-04-29T18:48:41Z"
       }
     }
   },
@@ -56909,5 +56909,611 @@
     "en_hash": "a2be34a687f6932731ef67aa778253ee",
     "attempted_hash": "11b3398791c0937e1255b8bd550faf7b",
     "attempted_preview": "podea din lemn"
+  },
+  "es::items.json::item.12429.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12429.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T18:47:17.011564Z",
+    "en_hash": "686a8c8bcf8ad02beb720a04523f6278",
+    "attempted_hash": "bb9875bcb4d35e97a644074d3ac7ce91",
+    "attempted_preview": "muro rocoso"
+  },
+  "es::items.json::item.1243.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.1243.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T18:47:17.020219Z",
+    "en_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "attempted_hash": "a1092bce3e9206a9121ad38d47c997dc",
+    "attempted_preview": "tablero de molino"
+  },
+  "es::items.json::item.12430.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12430.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T18:47:17.027917Z",
+    "en_hash": "686a8c8bcf8ad02beb720a04523f6278",
+    "attempted_hash": "bb9875bcb4d35e97a644074d3ac7ce91",
+    "attempted_preview": "muro rocoso"
+  },
+  "es::items.json::item.12435.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12435.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T18:47:17.055365Z",
+    "en_hash": "51b161da351fc0d79407d6a8e6ebc719",
+    "attempted_hash": "6eb1b3433bb7f0eab7027bce74c091b4",
+    "attempted_preview": "bandera de hieroglyph"
+  },
+  "es::items.json::item.12436.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12436.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T18:47:17.074466Z",
+    "en_hash": "51b161da351fc0d79407d6a8e6ebc719",
+    "attempted_hash": "6eb1b3433bb7f0eab7027bce74c091b4",
+    "attempted_preview": "bandera de hieroglyph"
+  },
+  "es::items.json::item.12437.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12437.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T18:47:17.093615Z",
+    "en_hash": "6d0e468b11adc14e7b1e573c154e4b42",
+    "attempted_hash": "22b5a06b5310ca03c104910c8ac16586",
+    "attempted_preview": "bandera de pharaoh"
+  },
+  "es::items.json::item.12438.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12438.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T18:47:17.112257Z",
+    "en_hash": "6d0e468b11adc14e7b1e573c154e4b42",
+    "attempted_hash": "22b5a06b5310ca03c104910c8ac16586",
+    "attempted_preview": "bandera de pharaoh"
+  },
+  "es::items.json::item.1244.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.1244.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T18:47:17.132459Z",
+    "en_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "attempted_hash": "a1092bce3e9206a9121ad38d47c997dc",
+    "attempted_preview": "tablero de molino"
+  },
+  "es::items.json::item.1245.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.1245.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T18:47:17.219743Z",
+    "en_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "attempted_hash": "a1092bce3e9206a9121ad38d47c997dc",
+    "attempted_preview": "tablero de molino"
+  },
+  "es::items.json::item.1246.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.1246.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T18:47:17.294078Z",
+    "en_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "attempted_hash": "a1092bce3e9206a9121ad38d47c997dc",
+    "attempted_preview": "tablero de molino"
+  },
+  "es::items.json::item.1247.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.1247.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T18:47:17.361728Z",
+    "en_hash": "f5faca2bd3917f3776d854197a9bca4b",
+    "attempted_hash": "a1092bce3e9206a9121ad38d47c997dc",
+    "attempted_preview": "tablero de molino"
+  },
+  "es::items.json::item.12472.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12472.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "word_dict",
+    "updated_at": "2026-04-29T18:47:17.414425Z",
+    "en_hash": "02273b08a246cd73a1c0d0d6b3e7a3c6",
+    "attempted_hash": "965466309814a18e58532008d9442f6e",
+    "attempted_preview": "mesa de escorpión de ornamented"
+  },
+  "es::items.json::item.12439.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12439.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:41.235477Z",
+    "en_hash": "8ba6bc76d5b7e048f654f096401e80ba",
+    "attempted_hash": "b106ce6257e3fae7385e5037a906304e",
+    "attempted_preview": "adorno dorado",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:41Z"
+      }
+    }
+  },
+  "es::items.json::item.12440.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12440.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:41.242791Z",
+    "en_hash": "8ba6bc76d5b7e048f654f096401e80ba",
+    "attempted_hash": "b106ce6257e3fae7385e5037a906304e",
+    "attempted_preview": "adorno dorado",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:41Z"
+      }
+    }
+  },
+  "es::items.json::item.12441.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12441.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:41.255288Z",
+    "en_hash": "195eac776afc0a6c9e91df1af343ce2c",
+    "attempted_hash": "5dfda624141909e739ebe7c7da48c589",
+    "attempted_preview": "adorno de escorpión",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:41Z"
+      }
+    }
+  },
+  "es::items.json::item.12442.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12442.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:43.548231Z",
+    "en_hash": "195eac776afc0a6c9e91df1af343ce2c",
+    "attempted_hash": "5dfda624141909e739ebe7c7da48c589",
+    "attempted_preview": "adorno de escorpión",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:43Z"
+      }
+    }
+  },
+  "es::items.json::item.12443.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12443.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:43.555339Z",
+    "en_hash": "d786aaeff706af6b7c986fbf102e0c8a",
+    "attempted_hash": "aadcf4f4cb433fa999a32e284cd3819c",
+    "attempted_preview": "jeroglíficos",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:43Z"
+      }
+    }
+  },
+  "es::items.json::item.12444.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12444.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:43.565779Z",
+    "en_hash": "d786aaeff706af6b7c986fbf102e0c8a",
+    "attempted_hash": "aadcf4f4cb433fa999a32e284cd3819c",
+    "attempted_preview": "jeroglíficos",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:43Z"
+      }
+    }
+  },
+  "es::items.json::item.12447.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12447.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:43.577790Z",
+    "en_hash": "be8bf2032062cfe16fa6aac116e23341",
+    "attempted_hash": "392871f40ad09eadb386e6a03edbb1c9",
+    "attempted_preview": "talla de un escorpión",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:43Z"
+      }
+    }
+  },
+  "es::items.json::item.12448.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12448.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:43.587111Z",
+    "en_hash": "be8bf2032062cfe16fa6aac116e23341",
+    "attempted_hash": "392871f40ad09eadb386e6a03edbb1c9",
+    "attempted_preview": "talla de un escorpión",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:43Z"
+      }
+    }
+  },
+  "es::items.json::item.12449.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12449.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:43.596689Z",
+    "en_hash": "be8bf2032062cfe16fa6aac116e23341",
+    "attempted_hash": "392871f40ad09eadb386e6a03edbb1c9",
+    "attempted_preview": "talla de un escorpión",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:43Z"
+      }
+    }
+  },
+  "es::items.json::item.12450.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12450.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:45.655310Z",
+    "en_hash": "be8bf2032062cfe16fa6aac116e23341",
+    "attempted_hash": "392871f40ad09eadb386e6a03edbb1c9",
+    "attempted_preview": "talla de un escorpión",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:45Z"
+      }
+    }
+  },
+  "es::items.json::item.12453.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12453.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:45.666865Z",
+    "en_hash": "db5d1e99f9ed06bf9e935f2434799196",
+    "attempted_hash": "89472298f12d2831fc5ad220af203127",
+    "attempted_preview": "talla de una batalla",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:45Z"
+      }
+    }
+  },
+  "es::items.json::item.12454.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12454.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:45.676128Z",
+    "en_hash": "db5d1e99f9ed06bf9e935f2434799196",
+    "attempted_hash": "89472298f12d2831fc5ad220af203127",
+    "attempted_preview": "talla de una batalla",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:45Z"
+      }
+    }
+  },
+  "es::items.json::item.12455.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12455.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:45.685074Z",
+    "en_hash": "db5d1e99f9ed06bf9e935f2434799196",
+    "attempted_hash": "89472298f12d2831fc5ad220af203127",
+    "attempted_preview": "talla de una batalla",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:45Z"
+      }
+    }
+  },
+  "es::items.json::item.12458.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12458.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:45.695029Z",
+    "en_hash": "db5d1e99f9ed06bf9e935f2434799196",
+    "attempted_hash": "89472298f12d2831fc5ad220af203127",
+    "attempted_preview": "talla de una batalla",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:45Z"
+      }
+    }
+  },
+  "es::items.json::item.12459.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12459.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:45.704976Z",
+    "en_hash": "db5d1e99f9ed06bf9e935f2434799196",
+    "attempted_hash": "89472298f12d2831fc5ad220af203127",
+    "attempted_preview": "talla de una batalla",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:45Z"
+      }
+    }
+  },
+  "es::items.json::item.12460.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12460.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:47.991891Z",
+    "en_hash": "db5d1e99f9ed06bf9e935f2434799196",
+    "attempted_hash": "89472298f12d2831fc5ad220af203127",
+    "attempted_preview": "talla de una batalla",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:47Z"
+      }
+    }
+  },
+  "es::items.json::item.12465.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12465.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:47.999241Z",
+    "en_hash": "982fc628df968b93260be5f1146d4030",
+    "attempted_hash": "19513ccb8956fb5881267f22794a7336",
+    "attempted_preview": "estatua de hiena",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:47Z"
+      }
+    }
+  },
+  "es::items.json::item.12466.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12466.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:48.010237Z",
+    "en_hash": "982fc628df968b93260be5f1146d4030",
+    "attempted_hash": "19513ccb8956fb5881267f22794a7336",
+    "attempted_preview": "estatua de hiena",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:48Z"
+      }
+    }
+  },
+  "es::items.json::item.12467.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12467.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:48.017796Z",
+    "en_hash": "af0739dc9597d25caf9a474dae14e792",
+    "attempted_hash": "890712e178265da17b01ecb42fae7c38",
+    "attempted_preview": "escorpión dorado",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:48Z"
+      }
+    }
+  },
+  "es::items.json::item.12468.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12468.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:48.025768Z",
+    "en_hash": "af0739dc9597d25caf9a474dae14e792",
+    "attempted_hash": "890712e178265da17b01ecb42fae7c38",
+    "attempted_preview": "escorpión dorado",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:48Z"
+      }
+    }
+  },
+  "es::items.json::item.12470.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12470.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:48.036116Z",
+    "en_hash": "223f718c7ebbbf6070264a45e8963bab",
+    "attempted_hash": "a02a05e89a9348913d47f885463f3d06",
+    "attempted_preview": "pequeño escorpión dorado",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:48Z"
+      }
+    }
+  },
+  "es::items.json::item.12471.name": {
+    "lang": "es",
+    "json_file": "items.json",
+    "key": "item.12471.name",
+    "status": "translated_ok",
+    "reason": "accepted_translation_with_style_debt",
+    "source": "openai:openai/gpt-4.1-mini",
+    "updated_at": "2026-04-29T18:48:49.027925Z",
+    "en_hash": "223f718c7ebbbf6070264a45e8963bab",
+    "attempted_hash": "a02a05e89a9348913d47f885463f3d06",
+    "attempted_preview": "pequeño escorpión dorado",
+    "extra": {
+      "provider_consistency": {
+        "preferred_provider": "free_google_translate",
+        "used_provider": "openai_model_pool",
+        "pending": true,
+        "reason": "style_authority_mismatch_openai_fallback",
+        "retry_not_before_utc": "2026-04-29T18:48:49Z"
+      }
+    }
   }
 }

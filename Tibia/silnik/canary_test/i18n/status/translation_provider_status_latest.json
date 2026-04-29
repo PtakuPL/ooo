@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:15:17.495521Z",
-  "active_provider": "OpenAI model pool",
-  "active_provider_code": "openai_model_pool",
-  "active_provider_source": "openai:openai/gpt-4o-mini",
-  "active_provider_timestamp": "2026-04-29T22:07:28.846623Z",
+  "generated_at_utc": "2026-04-29T22:17:28.834691Z",
+  "active_provider": "Free Google Translate",
+  "active_provider_code": "free_google_translate",
+  "active_provider_source": "google_translate",
+  "active_provider_timestamp": "2026-04-29T22:16:48.286755Z",
   "active_model": "openai/gpt-4o-mini",
   "fallback_reason": "-",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -69,7 +69,7 @@
       "provider_limit_telemetry:provider_budget_high"
     ],
     "provider_consistency_debt": 450,
-    "recent_window_writes": 554,
+    "recent_window_writes": 565,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
@@ -79,12 +79,12 @@
       {
         "provider": "tm_simple",
         "provider_label": "TM/simple",
-        "writes": 190
+        "writes": 188
       },
       {
         "provider": "free_google_translate",
         "provider_label": "Free Google Translate",
-        "writes": 100
+        "writes": 113
       },
       {
         "provider": "canonical_name_semantic_autofix",
@@ -102,12 +102,12 @@
     "providers": {
       "tm_simple": {
         "status": "active",
-        "recent_writes": 190
+        "recent_writes": 188
       },
       "free_google_translate": {
         "status": "active",
         "enabled": true,
-        "recent_writes": 100
+        "recent_writes": 113
       },
       "google_cloud": {
         "status": "disabled",
@@ -228,7 +228,7 @@
       "used_pct": 90.0,
       "monthly_cap": 250.0,
       "spent": 225.0,
-      "latest_age_s": 661.299139,
+      "latest_age_s": 799.264027,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

@@ -66046,5 +66046,1997 @@
     "confidence": 0.9,
     "verified": false,
     "updated_at": "2026-04-29T21:18:32.091467Z"
+  },
+  "npc.alia.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Mögen die Götter dich segnen, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.690189Z"
+  },
+  "npc.alia.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Willkommen, junger |PLAYERNAME|! Wenn Sie schwer verwundet oder vergiftet sind, kann ich Sie kostenlos {heal}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.697154Z"
+  },
+  "npc.alia.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Denken Sie daran: Wenn Sie schwer verwundet oder vergiftet sind, kann ich Sie kostenlos heilen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.713177Z"
+  },
+  "npc.alkestios.farewell_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Möge dein Weg immer eben sein.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.715205Z"
+  },
+  "npc.alkestios.greet_msg_1": {
+    "src_hash": "5b81f419e801f758404e0b93333cd44c",
+    "text": "Ein Segen der Natur, Reisender! Mögen Sie nicht von einer finsteren Macht beeinflusst werden.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.720314Z"
+  },
+  "npc.alkestios.say_4": {
+    "src_hash": "f4da29d209eea18ac68a79bfd9e66fc4",
+    "text": "Dann nicht.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.728835Z"
+  },
+  "npc.alkestios.walkaway_msg_1": {
+    "src_hash": "0dbb704e122bd8cf137d55d2d5a04d68",
+    "text": "Möge dein Weg immer eben sein.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.735588Z"
+  },
+  "npc.altar.farewell_msg_1": {
+    "src_hash": "a92da8c66b9b9619c20b6731ca45827d",
+    "text": "Tschüss, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.737114Z"
+  },
+  "npc.altar.greet_msg_1": {
+    "src_hash": "5a56bfe47b6a5f5fc45e2ab694a47926",
+    "text": "Knie nieder vor der alles verschlingenden Macht des blutigen Verfalls.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.741307Z"
+  },
+  "npc.altar.say_4": {
+    "src_hash": "62cb03af2f0829dd4c2a372fde981566",
+    "text": "Tut mir leid, du hast nicht genug Gold.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.745020Z"
+  },
+  "npc.alyxo.greet_msg_1": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Wie könnte ich Ihnen helfen?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.748658Z"
+  },
+  "npc.alyxo.greet_msg_2": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Wie könnte ich Ihnen helfen?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.750560Z"
+  },
+  "npc.alyxo.greet_msg_3": {
+    "src_hash": "c7a6e4191c99de64f7dd55aa78cb5998",
+    "text": "Wie könnte ich Ihnen helfen?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.752389Z"
+  },
+  "npc.alyxo.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Dann tschüss.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.759981Z"
+  },
+  "npc.amanda.farewell_msg_1": {
+    "src_hash": "52169408a92d87f0658c9b16383ab8e3",
+    "text": "Mögen die Götter dich segnen, |PLAYERNAME|!",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.762680Z"
+  },
+  "npc.amanda.greet_msg_1": {
+    "src_hash": "707abb9b8c9b23615339c48991dba3f4",
+    "text": "Willkommen, junger |PLAYERNAME|! Wenn Sie schwer verwundet oder vergiftet sind, kann ich Sie kostenlos {heal}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.768715Z"
+  },
+  "npc.amanda.walkaway_msg_1": {
+    "src_hash": "a8e5197f18b8fe4d4257134fcfac35fe",
+    "text": "Denken Sie daran: Wenn Sie schwer verwundet oder vergiftet sind, kann ich Sie kostenlos heilen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.787957Z"
+  },
+  "npc.amarie.farewell_1": {
+    "src_hash": "32f613d24b4d872019bc1ef7e6c89e32",
+    "text": "Auf Wiedersehen, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.789965Z"
+  },
+  "npc.ambassador_of_rathleton.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Dann tschüss.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.793558Z"
+  },
+  "npc.amber.farewell_msg_1": {
+    "src_hash": "887efd8fd27234772fbb778a5f22828a",
+    "text": "Bis später, |PLAYERNAME|.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.795311Z"
+  },
+  "npc.amber.greet_msg_1": {
+    "src_hash": "0f14fbac638796dd8c466ad8b633ef97",
+    "text": "Oh hallo, schön dich zu sehen |PLAYERNAME|. Sind Sie hier, um einige Geschichten über meinen {adventures} zu hören, oder benötigen Sie {help}?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.802930Z"
+  },
+  "npc.amber.walkaway_msg_1": {
+    "src_hash": "d732678ccaedfd5a4549c0b91b7b7eda",
+    "text": "Ja, bis später.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.833336Z"
+  },
+  "npc.anderson.farewell_msg_1": {
+    "src_hash": "73054ed73ab01017d508f1de2c11b12c",
+    "text": "Auf Wiedersehen. Gern geschehen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.836963Z"
+  },
+  "npc.anderson.greet_msg_1": {
+    "src_hash": "ce0f0f54b2e608f88df50d19913d0955",
+    "text": "Ahoi, junger Mann |PLAYERNAME| und willkommen bei Nordic Tibia Ferries. Wenn Sie einen {passage} benötigen, lassen Sie es mich wissen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.844349Z"
+  },
+  "npc.andrew_lyze.farewell_msg_1": {
+    "src_hash": "d759d60d170f9214b7bb1bf82e8a524d",
+    "text": "Auf Wiedersehen.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.847147Z"
+  },
+  "npc.andrew_lyze.greet_msg_1": {
+    "src_hash": "f19606ce8291abc3d128e0e13e6f48f8",
+    "text": "Hallo, ich bin der Leiter dieses {monument}. Der {sarcophagus} vor Ihnen wurde eingerichtet, um zu verhindern, dass Leute dorthin gehen {down}. Aber ich bezweifle, dass dieser Schritt ausreicht.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.857316Z"
+  },
+  "npc.andrew_lyze.greet_msg_2": {
+    "src_hash": "3c5ad370bd95ece0ddfe7c933191c2d7",
+    "text": "Mal sehen, ob Ihre Mission erfolgreich war. Bring mir einfach alles mit, was du brauchst {materials}.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.862914Z"
+  },
+  "npc.andrew_lyze.greet_msg_3": {
+    "src_hash": "be244788d22d3907aa89323df2de6a6b",
+    "text": "Wenn Sie alle drei Kristalle in ausreichender Menge ausgegraben und die Giftdrüse erhalten haben, kann die Aufladung Ihres Kompasses beginnen! Zum ersten Mal wird es durch den violetten Kristall aufgeladen. Bereit für {unleash} die Kraft der Kristalle?",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.875744Z"
+  },
+  "npc.andrew_lyze.say_7": {
+    "src_hash": "5ab08f734a333aa2f89e99fc8a386e83",
+    "text": "Du hast nicht genug Geld.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.905056Z"
+  },
+  "npc.andrew_lyze.walkaway_msg_1": {
+    "src_hash": "12c07eab90b9c6c8d6ceca84ab4a66cc",
+    "text": "Dann tschüss.",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:19.906747Z"
+  },
+  "npc.alia.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Empfange also den Schutz der Wendung des Schicksals, Pilger.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.527114Z"
+  },
+  "npc.alia.stdmod_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Empfange also den Schutz der Wendung des Schicksals, Pilger.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.529557Z"
+  },
+  "npc.alia.stdmod_11": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Du bist verletzt, mein Kind. Ich werde deine Wunden heilen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.531966Z"
+  },
+  "npc.alia.stdmod_12": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Du siehst nicht so schlecht aus. Tut mir leid, ich kann dir nicht helfen. Wenn Sie jedoch auf der Suche nach zusätzlichem Schutz sind, sollten Sie sich für den {pilgrimage} der Asche entscheiden oder sich hier den Schutz des {twist of fate} holen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.541408Z"
+  },
+  "npc.alia.stdmod_13": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Immer wenn Sie eine tödliche Wunde erleiden, wird Ihre Lebenskraft geschädigt und es besteht die Möglichkeit, dass Sie einen Teil Ihrer Ausrüstung verlieren. Mit jedem einzelnen der fünf {blessings}, die Sie haben, werden dieser Schaden und die Verlustwahrscheinlichkeit verringert.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.551491Z"
+  },
+  "npc.alia.stdmod_14": {
+    "src_hash": "a3792d1f9a45ee3da58f6150041da6e4",
+    "text": "Fünf heiligen Orten stehen fünf Segnungen zur Verfügung: der {spiritual}-Schutz, der Funke des {phoenix}, der {embrace} von Tibia, das Feuer des {suns} und die Weisheit von {solitude}. Zusätzlich können Sie hier den {twist of fate} erhalten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.562553Z"
+  },
+  "npc.alia.stdmod_15": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Wie ich sehe, hast du den spirituellen Schutz im Weißblumentempel südlich von Thais erhalten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.566218Z"
+  },
+  "npc.alia.stdmod_16": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Ich kann spüren, dass die Druiden nördlich von Carlin dich mit der Umarmung von Tibia ausgestattet haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.570131Z"
+  },
+  "npc.alia.stdmod_17": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Ich kann sehen, dass du im Sonnenturm in der Nähe von Ab'Dendriel den Segen der beiden Sonnen erhalten hast.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.574297Z"
+  },
+  "npc.alia.stdmod_18": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Ich kann spüren, dass dir der Funke des Phönix bereits in Kazordoon von den Zwergenpriestern der Erde und des Feuers gegeben wurde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.579290Z"
+  },
+  "npc.alia.stdmod_19": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Ich kann spüren, dass du bereits mit dem Einsiedler Eremo auf der Insel Cormaya gesprochen und diesen Segen erhalten hast.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.583730Z"
+  },
+  "npc.alia.stdmod_2": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bußgeld. Es steht Ihnen frei, mein Angebot abzulehnen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.585876Z"
+  },
+  "npc.alia.stdmod_20": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Sie können im Whiteflower-Tempel südlich von Thais um den Segen des spirituellen Schutzes bitten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.589497Z"
+  },
+  "npc.alia.stdmod_21": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Die Druiden nördlich von Carlin werden dich mit der Umarmung von Tibia versorgen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.592634Z"
+  },
+  "npc.alia.stdmod_22": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Sie können im Sonnenturm in der Nähe von Ab'Dendriel um den Segen der beiden Sonnen bitten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.596128Z"
+  },
+  "npc.alia.stdmod_23": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Der Funke des Phönix wird von den zwergischen Priestern der Erde und des Feuers in Kazordoon gegeben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.600100Z"
+  },
+  "npc.alia.stdmod_25": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Dies ist ein besonderer Segen, den ich Ihnen schenken kann, sobald Sie mindestens einen der anderen Segen erhalten haben und der etwas anders funktioniert. ... \\z\n\tEs funktioniert nur, wenn Sie von anderen Abenteurern getötet werden. Das bedeutet, dass mindestens die Hälfte des Schadens, der zu Ihrem Tod geführt hat, von anderen verursacht wurde und nicht von Monstern oder der Umwelt. ... \\z\n\tDer {twist of fate} verringert nicht wie die anderen Segnungen die Todesstrafe, sondern verhindert stattdessen, dass Sie Ihre anderen Segnungen sowie das Verlustamulett verlieren, falls Sie eines tragen. Es kostet das gleiche wie die anderen Segnungen. ... \\z\n\tMöchtest du diesen Schutz für ein Opfer von |PVPBLESSCOST| Gold erhalten, Kind?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.626279Z"
+  },
+  "npc.alia.stdmod_3": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Bewahren Sie den Stein Ihres Abenteurers gut auf.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.628299Z"
+  },
+  "npc.alia.stdmod_4": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, du möchtest deinen Abenteurerstein kostenlos ersetzen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.630638Z"
+  },
+  "npc.alia.stdmod_5": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Hier sind Sie ja. Aufpassen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:10:43.631767Z"
+  },
+  "npc.alia.stdmod_7": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, du möchtest deinen Abenteurerstein gegen 30 Gold eintauschen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:10.755168Z"
+  },
+  "npc.alia.stdmod_8": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Hier sind Sie ja. Aufpassen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:10.757315Z"
+  },
+  "npc.alia.stdmod_9": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Tut mir leid, Sie haben nicht genug Geld.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:10.760056Z"
+  },
+  "npc.alkestios.multi_1": {
+    "src_hash": "58b1eacb05ab0c0f6e1c4ed9db4100df",
+    "text": "Ich habe gehört, dass es ein Problem mit einer Wolfsmutter und ihren Welpen gibt. Allerdings weiß ich nicht mehr darüber. Eine meiner Schwestern, Ikassis, hat den Körper einer Schlange übernommen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.177492Z"
+  },
+  "npc.alkestios.multi_10": {
+    "src_hash": "a899672efab53f74c4aa88dd21c36cd8",
+    "text": "Es ist dir gelungen! Es scheint, dass die Wilderer Ihre kleine gefälschte Geschichte über das Töten von weißen Hirschen und den daraus resultierenden Untergang gelesen haben. Sie hörten auf, mich zu verfolgen. Danke schön! ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.189464Z"
+  },
+  "npc.alkestios.multi_11": {
+    "src_hash": "d22b5f6fa4e59ffbe7a207a59d537924",
+    "text": "Sie haben sich – zumindest für mich – als vertrauenswürdig erwiesen. Aber wie gesagt, ich bin eigentlich kein echtes Tier. Wenn Sie unsere versteckte Insel betreten möchten, müssen Sie nachweisen, dass Sie auch bereit sind, echten Tieren zu helfen. Würdest du das tun?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.204244Z"
+  },
+  "npc.alkestios.multi_2": {
+    "src_hash": "34db72aaa4cf6246a5ec734a5897ccab",
+    "text": "Sie weiß mehr über den Wolf. Suchen Sie sie im Nordwesten von Edron auf, in der Nähe eines Kreises aus stehenden Steinen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.211248Z"
+  },
+  "npc.alkestios.multi_3": {
+    "src_hash": "555372a227a38c57c28bc48b6f333a1c",
+    "text": "Ihre Entscheidung ehrt Sie. Wenn Sie jedoch erwägen, die betreffenden Wilderer zu töten, bitte ich Sie, damit aufzuhören. Wir, die Feen, sind eher friedliche Wesen und verabscheuen Blutvergießen. Deshalb müssen wir einen anderen Weg finden, dieses Problem zu lösen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.225127Z"
+  },
+  "npc.alkestios.multi_4": {
+    "src_hash": "ba359844d359c522b1d943e80ce4fd39",
+    "text": "Ich habe schon eine Idee: Einige Vögel sagten mir, dass Wilderer ein abergläubischer Haufen seien. Vielleicht können wir sie mit ihrem eigenen Irrglauben erwischen. Ich weiß, dass die Wilderer nördlich der Green Claw Swamps eine Art Lager haben. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.238371Z"
+  },
+  "npc.alkestios.multi_5": {
+    "src_hash": "d97b26f3dcd8fa1de301270b050c3695",
+    "text": "Bitte suchen Sie es heraus und prüfen Sie es genau. Vielleicht finden Sie etwas, das Sie gegen sie einsetzen können, um sie davon abzuhalten, Weißwild zu jagen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.247260Z"
+  },
+  "npc.alkestios.multi_6": {
+    "src_hash": "cd0b762bd0f9190a50716ab114f5bf32",
+    "text": "Ich habe tatsächlich einige Probleme, da ich diesen Teil der Welt bereise. Als ich den Körper eines weißen Hirsches übernahm, war mir nicht bewusst, dass ein solches Tier eine begehrte Beute für Jäger und Wilderer ist. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.259177Z"
+  },
+  "npc.alkestios.multi_7": {
+    "src_hash": "07b00bfa64547f6d10f9193719a33dd5",
+    "text": "Jetzt lebe ich in der ständigen Gefahr, erwischt und getötet zu werden. Natürlich könnte ich auch einfach ein anderes Tier übernehmen, aber dieses Reh ist mir wirklich ans Herz gewachsen. Ich würde diesem wunderschönen Hirsch gerne helfen, aber ich brauche deine Hilfe. Sind Sie bereit, mir zu helfen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.274729Z"
+  },
+  "npc.alkestios.multi_8": {
+    "src_hash": "def6d567fea01b151b112aa9e61b2b3f",
+    "text": "Ich freue mich sehr, dass Sie Feen und Tieren gleichermaßen helfen konnten. Sie haben unser Vertrauen gewonnen und dürfen nun unser geheimes Reich besuchen. Ich habe dich mit einem arkanen Feensiegel markiert. Hiermit können Sie die über Tibia verstreuten Elementarschreine nutzen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.289169Z"
+  },
+  "npc.alkestios.multi_9": {
+    "src_hash": "910d5b83b33243c8bea1e90a1573f2af",
+    "text": "Es gibt Feuer-, Eis-, Energie- und Erdschreine. Wenn Sie ihre Standorte nicht kennen, können Sie sie auch über die meisten Tempel dieser Welt erreichen. Die Elementarschreine werden Sie nach Feyrist transportieren, sobald Sie das magische Siegel tragen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.303007Z"
+  },
+  "npc.alkestios.say_1": {
+    "src_hash": "377a0e6b28dfbf9cf1a296871a3e6331",
+    "text": "Ähm... Vielleicht kann Ahmet in Ankrahmun uns helfen, dieses Buch zu fälschen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.307873Z"
+  },
+  "npc.alkestios.say_2": {
+    "src_hash": "27a343c52bbb0bc8542bbe981b4a1b0d",
+    "text": "Die Wilderer verfolgen mich immer noch. Bitte beeilen Sie sich und finden Sie einen Weg, mir zu helfen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.313946Z"
+  },
+  "npc.alkestios.say_3": {
+    "src_hash": "45a3d02871fbe1b7f343ba036cb06ded",
+    "text": "Sie haben diese Mission bereits begonnen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.316673Z"
+  },
+  "npc.alkestios.stdmod_1": {
+    "src_hash": "80d1d862328c252553f0df66980d3f56",
+    "text": "Außerhalb unseres Geheimnisses {realm} können meine Geschwister und ich unsere wahre Form nicht bewahren. Wenn wir andere Teile der Welt bereisen wollen, müssen wir die Körper von Tieren übernehmen. Aber wir fügen ihnen keinen Schaden zu und übernehmen einfach die Kontrolle, wenn es nötig ist.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.331774Z"
+  },
+  "npc.alkestios.stdmod_2": {
+    "src_hash": "431bce67f110fe1f75b3ac9405ba391e",
+    "text": "Wir nennen es Feyrist und es ist ein geheimer, versteckter Ort. Nur wenige Sterbliche erhalten die Erlaubnis, es zu betreten. Vor langer Zeit haben wir gelernt, unser Reich vor der Außenwelt zu verbergen. Nur wenn Sie unser Vertrauen gewinnen, verrate ich Ihnen, wie Sie es erreichen können.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.346897Z"
+  },
+  "npc.alkestios.stdmod_3": {
+    "src_hash": "22a649f42e3096787fbd47c2066d9d1c",
+    "text": "Wir nennen uns die Feen. Manche nennen uns Naturgeister oder Peri, wir bevorzugen jedoch den ersteren Begriff. Die meisten von uns sind eher zurückgezogen und führen ein friedliches Leben in unserem geheimen Reich. Wir verlassen es nur, um zu {protect} unser Zuhause zu bringen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:19.361566Z"
+  },
+  "npc.alkestios.stdmod_4": {
+    "src_hash": "22a649f42e3096787fbd47c2066d9d1c",
+    "text": "Wir nennen uns die Feen. Manche nennen uns Naturgeister oder Peri, wir bevorzugen jedoch den ersteren Begriff. Die meisten von uns sind eher zurückgezogen und führen ein friedliches Leben in unserem geheimen Reich. Wir verlassen es nur, um zu {protect} unser Zuhause zu bringen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.916771Z"
+  },
+  "npc.alkestios.stdmod_5": {
+    "src_hash": "28403810a6fc8d47cf418a9f2e1dbc9d",
+    "text": "Ich spüre in letzter Zeit eine Art dunkle Energie. Es durchdringt diese Welt, jeden Tag mehr und mehr. Dennoch weiß ich nicht, woher es kommt und was wir tun können, um es zu beseitigen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.923949Z"
+  },
+  "npc.alkestios.stdmod_6": {
+    "src_hash": "bb4f8fb73fba874738c356cf221f834b",
+    "text": "Es ist ziemlich subversiv, daher werden die meisten Kreaturen es noch nicht spüren. Aber seine zersetzende Kraft hat bereits begonnen, meine Art und unser verborgenes Reich auf unangenehme Weise zu beeinträchtigen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.931731Z"
+  },
+  "npc.alkestios.stdmod_7": {
+    "src_hash": "2979fa2a504a6f9b30948990058fab5f",
+    "text": "Manche nennen uns Naturgeister oder Peri, wir bevorzugen jedoch den Begriff Feen. Die meisten von uns sind eher zurückgezogen und führen ein friedliches Leben in unserem geheimen Reich. Wir verlassen es nur, um unser Zuhause zu schützen. ... \\z\n\tWir neigen dazu, unsere wahre Natur geheim zu halten, aber ich vermute, dass es einmal einen elfischen Weisen gab, der unser Reich besuchte und seine Erfahrungen zu Papier brachte. In der Bibliothek von Ab'Dendriel könnte es ein Buch über das Feenwesen geben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.949833Z"
+  },
+  "npc.altar.say_1": {
+    "src_hash": "ecb6f2d0a11063e8a2eab8bdb1427951",
+    "text": "Bereiten Sie Ihr Angebot vor und halten Sie der Heiligkeit dieses Ortes fest.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.953001Z"
+  },
+  "npc.altar.say_2": {
+    "src_hash": "8bd97fdacd6aa85f5e9683053300d733",
+    "text": "Fünf befleckte Herzen und fünf Herzen des dunklen Lichts ertranken in einem weltlichen Reichtum von 50000000 Goldstücken für die Gerechten. Sind Sie vorbereitet?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.958850Z"
+  },
+  "npc.altar.say_3": {
+    "src_hash": "14bdb7542e630b5df169f50398e69ad3",
+    "text": "Leider haben Sie nicht alle Artikel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.960282Z"
+  },
+  "npc.altar.say_5": {
+    "src_hash": "6a27fd3139eed29937a20e972d7e1ecf",
+    "text": "Dein Opfer wurde angenommen, Sterblicher. Nehmen Sie Ihre Belohnung an!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.963076Z"
+  },
+  "npc.altar.say_6": {
+    "src_hash": "66edd2e4f8cd1499c8e0412f667914e9",
+    "text": "Ok, dann nicht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.963800Z"
+  },
+  "npc.alternative_rock.stdmod_1": {
+    "src_hash": "5caa2825327f94afa6d67f09220019ce",
+    "text": "Passagen zu Tibia, Folda und Vega.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.965277Z"
+  },
+  "npc.alternative_rock.voice_1": {
+    "src_hash": "5caa2825327f94afa6d67f09220019ce",
+    "text": "Passagen zu Tibia, Folda und Vega.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.966714Z"
+  },
+  "npc.alwin.say_1": {
+    "src_hash": "0a34c72a3f7be860d20e39c6d29d41b0",
+    "text": "Nimm das!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.967230Z"
+  },
+  "npc.alyxo.say_1": {
+    "src_hash": "3b8ab35a8e9f53549160350e14c01d5a",
+    "text": "Könntest du 3 Bosse für mich töten?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.968646Z"
+  },
+  "npc.alyxo.say_10": {
+    "src_hash": "1ca4562ca2a0b24fc30024c3f0a358f9",
+    "text": "Hast du die 300 Mitglieder von Fafnars Kult getötet?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.970774Z"
+  },
+  "npc.alyxo.say_11": {
+    "src_hash": "66c69af2d0c27b6bdc9b96bee316c16a",
+    "text": "Danke. Sie haben die 300 Mitglieder der Fafnar-Kulte getötet.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.973167Z"
+  },
+  "npc.alyxo.say_13": {
+    "src_hash": "61d8b9f3b1fe5fc815fdb339ef5c7e59",
+    "text": "Habt Ihr es geschafft, Lyre zu finden?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.974661Z"
+  },
+  "npc.alyxo.say_14": {
+    "src_hash": "b6e31865836cee3ef71715de7dceea30",
+    "text": "Danke. Ich habe lange nach Lyre gesucht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.976285Z"
+  },
+  "npc.alyxo.say_16": {
+    "src_hash": "e65edbe04bf6f4e410a2d3121df5e640",
+    "text": "Konnten Sie die kleine Schildkröte finden?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.978095Z"
+  },
+  "npc.alyxo.say_17": {
+    "src_hash": "377f50e5418dbbd94fb6cf6c77a58762",
+    "text": "Danke. Ich war auf der Suche nach einer kleinen Schildkröte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.980548Z"
+  },
+  "npc.alyxo.say_19": {
+    "src_hash": "7ac248280bf3c65becaf9d83acc3b295",
+    "text": "Soll ich eine kleine Schildkröte steinigen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:11:45.982496Z"
+  },
+  "npc.alyxo.say_2": {
+    "src_hash": "4c404eafee31613ada4114baed6486c2",
+    "text": "Komm zurück, sobald du alle 3 Bosse getötet hast.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.596537Z"
+  },
+  "npc.alyxo.say_20": {
+    "src_hash": "923125149d41d9a2389bf05b9b302b5e",
+    "text": "Hier ist Ihre kleine versteinerte Schildkröte.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.598520Z"
+  },
+  "npc.alyxo.say_22": {
+    "src_hash": "7971ee7cdd7eccc6ab6900398706d968",
+    "text": "Hast du die 3 Jobs, die ich dir gegeben habe, erledigt?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.600869Z"
+  },
+  "npc.alyxo.say_23": {
+    "src_hash": "cd8f4fafcdd275e8b915c39e20941b35",
+    "text": "Herzlichen Glückwunsch, Sie haben die 3 Aufträge, die ich Ihnen gegeben habe, abgeschlossen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.604490Z"
+  },
+  "npc.alyxo.say_3": {
+    "src_hash": "d25a214b76d75fba1f133d58f855864e",
+    "text": "Leider haben Sie keinen Zugriff.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.605868Z"
+  },
+  "npc.alyxo.say_4": {
+    "src_hash": "103ffba0db8f958ef2a33974ff48e7d7",
+    "text": "Hast du es geschafft, allen drei Bossen gegenüberzutreten?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.608115Z"
+  },
+  "npc.alyxo.say_7": {
+    "src_hash": "710f995a43ef7b5993c37670d20b151f",
+    "text": "Könnten Sie mir bei weiteren Arbeiten helfen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.609864Z"
+  },
+  "npc.alyxo.say_8": {
+    "src_hash": "6881953a4a95469dbb45900a1438349f",
+    "text": "Töte 300 Mitglieder des Fafnar-Kults, hilf mir, die Elfenbeinleier zu finden und hilf mir, ein Tier zum Steinigen zu finden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.614653Z"
+  },
+  "npc.amanda.keyword_1": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Empfange also den Schutz der Wendung des Schicksals, Pilger.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.617023Z"
+  },
+  "npc.amanda.stdmod_1": {
+    "src_hash": "6f29cf9d6f04db721e0ee0348826e92b",
+    "text": "Na ja, ich würde es selbst machen, aber für längere Zeit kann ich die Stadt nicht verlassen. Wären Sie so freundlich, mir eine Phiole mit Weihwasser aus dem Kloster des Weißen Raben zu bringen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.624151Z"
+  },
+  "npc.amanda.stdmod_10": {
+    "src_hash": "260860a345f16f244facaefddafc245b",
+    "text": "Ah, du möchtest deinen Abenteurerstein gegen 30 Gold eintauschen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.626695Z"
+  },
+  "npc.amanda.stdmod_11": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Hier sind Sie ja. Aufpassen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.627829Z"
+  },
+  "npc.amanda.stdmod_12": {
+    "src_hash": "3537984e64e08990f99a3e72cb00621c",
+    "text": "Tut mir leid, Sie haben nicht genug Geld.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.629479Z"
+  },
+  "npc.amanda.stdmod_14": {
+    "src_hash": "53fd81ac2bcfd6002315412b51616c27",
+    "text": "Ich glaube, du hast vergessen, deinen Pflock mitzubringen, mein Kind.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.632053Z"
+  },
+  "npc.amanda.stdmod_15": {
+    "src_hash": "f77f9e23e9f53ed3829b775227500b92",
+    "text": "Ja, ich wurde darüber informiert, was zu tun ist. Sind Sie bereit, mein Gebet anzunehmen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.635407Z"
+  },
+  "npc.amanda.stdmod_16": {
+    "src_hash": "3e5608b70b165950ad01b6e87cecad21",
+    "text": "Nehmen Sie also mein Gebet an: 'Wicked curses shall be broken'. Bringen Sie nun Ihren Pfahl für die nächste Gebetszeile nach Kasmir in Darashia. Ich werde ihm sagen, was zu tun ist.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.642064Z"
+  },
+  "npc.amanda.stdmod_17": {
+    "src_hash": "89419f31e746a9a0e1f6657aadf53199",
+    "text": "Ich werde auf dich warten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.643121Z"
+  },
+  "npc.amanda.stdmod_18": {
+    "src_hash": "06bd04509d8b6687444154929713856a",
+    "text": "Du solltest jetzt Kasmir in Darashia besuchen, mein Kind.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.645319Z"
+  },
+  "npc.amanda.stdmod_19": {
+    "src_hash": "4a07b4810c2f9e011cda9e86a910f972",
+    "text": "Sie haben meinen Gebetstext bereits erhalten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.647063Z"
+  },
+  "npc.amanda.stdmod_2": {
+    "src_hash": "11c5a4fc342110a7476da2ef702cb888",
+    "text": "Ich bedanke mich schonmal im Voraus. Die Kraft des Weihwassers aus dem Kloster des Weißen Raben ist legendär. Für meine Aufgabe ist es unverzichtbar. Wir reden darüber, wenn du zurückkommst.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:10.653912Z"
+  },
+  "npc.amanda.stdmod_20": {
+    "src_hash": "75fb83802fd262cbfaeba21f5424f199",
+    "text": "Ein gesegneter Pfahl? Das ist eine seltsame Bitte. Vielleicht weiß Quentin mehr, schließlich ist er einer der ältesten Mönche.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.888853Z"
+  },
+  "npc.amanda.stdmod_21": {
+    "src_hash": "29f96c248cb43d48d48784ed291c9a26",
+    "text": "Du bist verletzt, mein Kind. Ich werde deine Wunden heilen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.891420Z"
+  },
+  "npc.amanda.stdmod_22": {
+    "src_hash": "20707dfe6553348902cd65d3cbae89b9",
+    "text": "Du siehst nicht so schlecht aus. Tut mir leid, ich kann dir nicht helfen. Wenn Sie jedoch auf der Suche nach zusätzlichem Schutz sind, sollten Sie sich für den {pilgrimage} der Asche entscheiden oder sich hier den Schutz des {twist of fate} holen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.900325Z"
+  },
+  "npc.amanda.stdmod_23": {
+    "src_hash": "4f9fff5a441db8ffc57e66e65a806e90",
+    "text": "Immer wenn Sie eine tödliche Wunde erleiden, wird Ihre Lebenskraft geschädigt und es besteht die Möglichkeit, dass Sie einen Teil Ihrer Ausrüstung verlieren. Mit jedem einzelnen der fünf {blessings}, die Sie haben, werden dieser Schaden und die Verlustwahrscheinlichkeit verringert.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.910695Z"
+  },
+  "npc.amanda.stdmod_24": {
+    "src_hash": "a3792d1f9a45ee3da58f6150041da6e4",
+    "text": "Fünf heiligen Orten stehen fünf Segnungen zur Verfügung: der {spiritual}-Schutz, der Funke des {phoenix}, der {embrace} von Tibia, das Feuer des {suns} und die Weisheit von {solitude}. Zusätzlich können Sie hier den {twist of fate} erhalten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.920320Z"
+  },
+  "npc.amanda.stdmod_25": {
+    "src_hash": "153faf85b8b3d71bb61b0f20d24dc2b1",
+    "text": "Wie ich sehe, hast du den spirituellen Schutz im Weißblumentempel südlich von Thais erhalten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.923907Z"
+  },
+  "npc.amanda.stdmod_26": {
+    "src_hash": "073708218c6e07ff028d2044b35a74ce",
+    "text": "Ich kann spüren, dass die Druiden nördlich von Carlin dich mit der Umarmung von Tibia ausgestattet haben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.927822Z"
+  },
+  "npc.amanda.stdmod_27": {
+    "src_hash": "c3a7be5817e53db6377ee9e045e437e4",
+    "text": "Ich kann sehen, dass du im Sonnenturm in der Nähe von Ab'Dendriel den Segen der beiden Sonnen erhalten hast.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.932036Z"
+  },
+  "npc.amanda.stdmod_28": {
+    "src_hash": "3b9af0c9196f5064a898fd567135a1e2",
+    "text": "Ich kann spüren, dass dir der Funke des Phönix bereits in Kazordoon von den Zwergenpriestern der Erde und des Feuers gegeben wurde.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.937495Z"
+  },
+  "npc.amanda.stdmod_29": {
+    "src_hash": "9c736fd1f36e0419fe02946893595295",
+    "text": "Ich kann spüren, dass du bereits mit dem Einsiedler Eremo auf der Insel Cormaya gesprochen und diesen Segen erhalten hast.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.942191Z"
+  },
+  "npc.amanda.stdmod_3": {
+    "src_hash": "b44dd1f93af39ebc45846f9cb66ef01f",
+    "text": "Es ist deine Entscheidung. Ich werde den nächsten gläubigen Geist fragen, der den Tempel von Banors Blut besucht.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.946430Z"
+  },
+  "npc.amanda.stdmod_30": {
+    "src_hash": "d1d3ba288259f26f26f6cc911b75e8cf",
+    "text": "Sie können im Whiteflower-Tempel südlich von Thais um den Segen des spirituellen Schutzes bitten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.950075Z"
+  },
+  "npc.amanda.stdmod_31": {
+    "src_hash": "d32b93216a0915dc88de44a17ebd57eb",
+    "text": "Die Druiden nördlich von Carlin werden dich mit der Umarmung von Tibia versorgen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.953208Z"
+  },
+  "npc.amanda.stdmod_32": {
+    "src_hash": "b988e03c23dbe58c420b9a18a02cc09e",
+    "text": "Sie können im Sonnenturm in der Nähe von Ab'Dendriel um den Segen der beiden Sonnen bitten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.956643Z"
+  },
+  "npc.amanda.stdmod_33": {
+    "src_hash": "9d3337bcafacaf9ab75737fec67ed6d6",
+    "text": "Der Funke des Phönix wird von den zwergischen Priestern der Erde und des Feuers in Kazordoon gegeben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.961155Z"
+  },
+  "npc.amanda.stdmod_35": {
+    "src_hash": "30b5278dbf807cf460d89bef6b5a021e",
+    "text": "Dies ist ein besonderer Segen, den ich Ihnen schenken kann, sobald Sie mindestens einen der anderen Segen erhalten haben und der etwas anders funktioniert. ... \\z\n\tEs funktioniert nur, wenn Sie von anderen Abenteurern getötet werden. Das bedeutet, dass mindestens die Hälfte des Schadens, der zu Ihrem Tod geführt hat, von anderen verursacht wurde und nicht von Monstern oder der Umwelt. ... \\z\n\tDer {twist of fate} verringert nicht wie die anderen Segnungen die Todesstrafe, sondern verhindert stattdessen, dass Sie Ihre anderen Segnungen sowie das Verlustamulett verlieren, falls Sie eines tragen. Es kostet das gleiche wie die anderen Segnungen. ... \\z\n\tMöchtest du diesen Schutz für ein Opfer von |PVPBLESSCOST| Gold erhalten, Kind?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.987197Z"
+  },
+  "npc.amanda.stdmod_4": {
+    "src_hash": "a6729120b204a7771c5c6ecc174211d8",
+    "text": "Ihre Aufgabe hier auf Tibia ist es, höflich und freundlich zu sein. Die Götter werden dich belohnen, das verspreche ich!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.991898Z"
+  },
+  "npc.amanda.stdmod_5": {
+    "src_hash": "6627e14145d69f5e0e9157410ccd208d",
+    "text": "Empfange also den Schutz der Wendung des Schicksals, Pilger.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.994266Z"
+  },
+  "npc.amanda.stdmod_6": {
+    "src_hash": "c576159ede46c81bf85ba0ffd0ff3037",
+    "text": "Bußgeld. Es steht Ihnen frei, mein Angebot abzulehnen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.996423Z"
+  },
+  "npc.amanda.stdmod_7": {
+    "src_hash": "8dd86fb79e0df192e5b5fce9a0aae0e9",
+    "text": "Bewahren Sie den Stein Ihres Abenteurers gut auf.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:19.998405Z"
+  },
+  "npc.amanda.stdmod_8": {
+    "src_hash": "edd0661b67953a25b9deeacccf4d8aac",
+    "text": "Ah, du möchtest deinen Abenteurerstein kostenlos ersetzen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.536316Z"
+  },
+  "npc.amanda.stdmod_9": {
+    "src_hash": "5a884e49b6bca4bf6024ccb59646c4de",
+    "text": "Hier sind Sie ja. Aufpassen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.537653Z"
+  },
+  "npc.amarie.voice_1": {
+    "src_hash": "6405deee33b18d2db9bde0497b20f39a",
+    "text": "Bitte lass mich in Ruhe... Ich muss lernen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.539331Z"
+  },
+  "npc.ambassador_of_rathleton.say_1": {
+    "src_hash": "b46f71dc85c36aca6dda5bac678b5c53",
+    "text": "Dies ist ein sehr schöner Ring. Vielen Dank für dieses großzügige Geschenk!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.542427Z"
+  },
+  "npc.ambassador_of_rathleton.say_2": {
+    "src_hash": "4c425f7c7541a1b75f72f8b9a3cb1be1",
+    "text": "Hast du mein Geschenk nicht mitgebracht?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.544038Z"
+  },
+  "npc.ambassador_of_rathleton.say_3": {
+    "src_hash": "ada774356cd5ba995fabfdc658c562ba",
+    "text": "Ich brauche im Moment kein Geschenk. Danke schön.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.546242Z"
+  },
+  "npc.ambassador_of_rathleton.voice_1": {
+    "src_hash": "fc8c761f4b533f3b519a74fe77623b64",
+    "text": "Was für ein wunderschöner Palast. Die Kilmareshianer sind äußerst begabte Architekten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.549424Z"
+  },
+  "npc.ambassador_of_rathleton.voice_2": {
+    "src_hash": "7a019cbce1619d363d350089d2795161",
+    "text": "Der neue Freundschafts- und Handelsvertrag mit Kilmaresh ist von größter Bedeutung.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.552562Z"
+  },
+  "npc.ambassador_of_rathleton.voice_3": {
+    "src_hash": "bcccd8a299743f4d38599117c6e55023",
+    "text": "Die ausstehende Fracht von den Safranküsten ist überfällig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.555040Z"
+  },
+  "npc.amber.say_1": {
+    "src_hash": "f4f7db2da5d4fe005b1f3993087d615e",
+    "text": "Ah, ist dir mein neues Accessoire aufgefallen? Leider steht dieses Exemplar nicht zum Verkauf. Es ist handgefertigt aus seltenem Minotaurus-Leder.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.560231Z"
+  },
+  "npc.amber.say_10": {
+    "src_hash": "d5ded97668b3577c5a3a5f487d5e1121",
+    "text": "Großartig! Okay, ich brauche eine Weile, um diesen Rucksack für dich fertigzustellen. Komm und frag mich später, okay?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.564572Z"
+  },
+  "npc.amber.say_11": {
+    "src_hash": "0673fa365b1423afe8658fe30aa444a2",
+    "text": "Ich weiß, es ist ziemlich viel Arbeit ... verliere nicht den Mut, töte einfach weiter Minotauren und irgendwann wirst du Glück haben. Möchten Sie lieber einen normalen Rucksack für 10 Gold kaufen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.571692Z"
+  },
+  "npc.amber.say_2": {
+    "src_hash": "b72e7f8fb14c914d28d67e2587789e92",
+    "text": "Ah, richtig, ich hätte den Rucksack fast vergessen! Habt Ihr mir wie gewünscht 100 Stück Minotaurus-Leder mitgebracht?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.576052Z"
+  },
+  "npc.amber.say_3": {
+    "src_hash": "eb55d899c046f1ae90f82e6cdeffbcb4",
+    "text": "Gerade noch rechtzeitig! Fertig ist Ihr Rucksack. Bitte schön, ich hoffe es gefällt euch.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.579397Z"
+  },
+  "npc.amber.say_4": {
+    "src_hash": "4a723411c4e5e088b4f0f2974ca16068",
+    "text": "Äh... ich habe nicht erwartet, dass du so früh zurückkommst. Tut mir leid, aber ich bin mit deinem Rucksack noch nicht fertig. Ich gebe mein Bestes, versprochen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.585270Z"
+  },
+  "npc.amber.say_5": {
+    "src_hash": "a422cba09f0199c184a1800b12dc405d",
+    "text": "Leider kann ich nur einen Rucksack pro Person herstellen, sonst müsste ich mein Geschäft schließen und eine Ledermanufaktur eröffnen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.589999Z"
+  },
+  "npc.amber.say_6": {
+    "src_hash": "848c7b73e272a8a1b769639e859d49e8",
+    "text": "Nun, wenn Ihnen dieser Rucksack wirklich gefällt, könnte ich einen für Sie anfertigen, aber Minotaurus-Leder ist heutzutage schwer zu bekommen. Sind Sie bereit, etwas Arbeit in diese Sache zu stecken?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.597139Z"
+  },
+  "npc.amber.say_7": {
+    "src_hash": "f985eb8b80214d769af000c03e0301e1",
+    "text": "Also gut, wenn du mir 100 Stücke feines Minotaurus-Leder bringst, werde ich sehen, was ich für dich tun kann. Allerdings musst du wahrscheinlich wirklich viele Minotauren töten ... also viel Glück!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.604316Z"
+  },
+  "npc.amber.say_8": {
+    "src_hash": "469e693a0673803c34829dd52fdd320e",
+    "text": "Tut mir leid, aber ich leite kein Sozialamt, wissen Sie... kein Schmerz, kein Gewinn.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.607653Z"
+  },
+  "npc.amber.say_9": {
+    "src_hash": "9ff43a2d5c70bf1b382016e7f7050bf9",
+    "text": "Tut mir leid, aber das ist noch nicht genug Leder, um einen dieser Rucksäcke herzustellen. Möchten Sie lieber einen normalen Rucksack für 10 Gold kaufen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:12:45.613250Z"
+  },
+  "npc.amber.stdmod_1": {
+    "src_hash": "a57d09546c12d2681c39538f07f77d09",
+    "text": "Ich wünschte, ich könnte jetzt etwas Lachs essen ... am besten zubereitet nach Liberty Bay-Art ... lecker.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.046755Z"
+  },
+  "npc.amber.stdmod_10": {
+    "src_hash": "6dda4d2d84da896aa119ae72f6557c71",
+    "text": "Meine Reise auf dem Meer war anstrengend. Das Wetter war schlecht, die Wellen hoch und mein Floß recht einfach. Es gibt jedoch eine gewisse Aufregung.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.055193Z"
+  },
+  "npc.amber.stdmod_11": {
+    "src_hash": "93974a71ed55a52cfb4807d2c107bad9",
+    "text": "Tut mir leid, ich habe meine Uhr bei einem Sturm verloren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.058761Z"
+  },
+  "npc.amber.stdmod_12": {
+    "src_hash": "785e2423d0cdde2f8894d2540d30340b",
+    "text": "Nun, ich kann Ihnen allgemeine {hints} geben oder Ihnen etwas über meine {adventures} und viele andere Themen erzählen. Oh, und wenn Ihnen langweilig ist, habe ich vielleicht ein kleines {quest} für Sie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.069875Z"
+  },
+  "npc.amber.stdmod_13": {
+    "src_hash": "785e2423d0cdde2f8894d2540d30340b",
+    "text": "Nun, ich kann Ihnen allgemeine {hints} geben oder Ihnen etwas über meine {adventures} und viele andere Themen erzählen. Oh, und wenn Ihnen langweilig ist, habe ich vielleicht ein kleines {quest} für Sie.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.080484Z"
+  },
+  "npc.amber.stdmod_14": {
+    "src_hash": "01f2231f0e28f80f05cc1b5665701f4f",
+    "text": "Ich hatte noch keine Zeit, die Kerker dieser Insel zu erkunden, aber ich habe im Osten zwei große Höhlen gesehen und im Nordwesten gibt es eine Turmruine. Oh, und da sind die {sewers}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.090357Z"
+  },
+  "npc.amber.stdmod_15": {
+    "src_hash": "ba922e090b7735fab86da882cdf1b422",
+    "text": "Ich mag Abwasserkanäle. Meine allerersten Kampferfahrungen habe ich in den Abwasserkanälen unterhalb von {Thais} gemacht. Das kleine Abwassersystem von {Rookgaard} hat einige fiese Ratten zu bekämpfen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.100862Z"
+  },
+  "npc.amber.stdmod_16": {
+    "src_hash": "1749ca9ac3ee36e4b2d830f922fe59a1",
+    "text": "Oh, ich habe gegen {orcs}, {cyclopses}, {minotaurs}, sogar gegen {dragons} und viele andere Kreaturen gekämpft.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.107380Z"
+  },
+  "npc.amber.stdmod_17": {
+    "src_hash": "3aa2381963f047b87bcad30bcf016f8f",
+    "text": "Mir gefällt nicht, wie sie dich ansehen. Ihr Blick scheint dich direkt zu durchdringen. Unheimlich!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.112820Z"
+  },
+  "npc.amber.stdmod_18": {
+    "src_hash": "781fc2114454a4d3c453ac6733ebb0d4",
+    "text": "Ihr Atem ist so heiß! Nach meiner letzten Begegnung mit einem Drachen musste ich mir die Haare schneiden, weil alle Enden verbrannt waren. Damit muss man als Abenteurerin klarkommen!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.122312Z"
+  },
+  "npc.amber.stdmod_19": {
+    "src_hash": "e6dc8e78121e7cf0bce46949687b7eb0",
+    "text": "Ich ließ mein Floß am südöstlichen Ufer zurück. Ich habe mein privates {notebook} darauf vergessen. Wenn Sie es mir zurückgeben könnten, wäre ich Ihnen sehr dankbar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.130740Z"
+  },
+  "npc.amber.stdmod_20": {
+    "src_hash": "e6dc8e78121e7cf0bce46949687b7eb0",
+    "text": "Ich ließ mein Floß am südöstlichen Ufer zurück. Ich habe mein privates {notebook} darauf vergessen. Wenn Sie es mir zurückgeben könnten, wäre ich Ihnen sehr dankbar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.139009Z"
+  },
+  "npc.amber.stdmod_21": {
+    "src_hash": "e6dc8e78121e7cf0bce46949687b7eb0",
+    "text": "Ich ließ mein Floß am südöstlichen Ufer zurück. Ich habe mein privates {notebook} darauf vergessen. Wenn Sie es mir zurückgeben könnten, wäre ich Ihnen sehr dankbar.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.147111Z"
+  },
+  "npc.amber.stdmod_22": {
+    "src_hash": "65f6aad5b865890db8cbccfac0c058a4",
+    "text": "Ich denke, dieser arme Kerl war eine schlechte Wahl als Leiter der {academy}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.151395Z"
+  },
+  "npc.amber.stdmod_23": {
+    "src_hash": "c4e5e5e41ea0a91903006c7a030d1c0d",
+    "text": "Eine gute Institution, aber sie braucht definitiv mehr Mittel von der {king}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.155620Z"
+  },
+  "npc.amber.stdmod_24": {
+    "src_hash": "a18f9cd05399ac33dcdb0789375068a8",
+    "text": "König Tibianus ist der Herrscher von {Thais}. Die Insel {Rookgaard} gehört zu seinem Königreich.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.160796Z"
+  },
+  "npc.amber.stdmod_25": {
+    "src_hash": "ab14b7234cbdc1578383392c81be7ec5",
+    "text": "Eine schöne Stadt, aber die {king} hat einige Probleme, das Gesetz durchzusetzen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.165268Z"
+  },
+  "npc.amber.stdmod_26": {
+    "src_hash": "d25f6cf5d5ae3d6799702c63b132a754",
+    "text": "Die besten Waffen auf dieser Insel sind im Vergleich zu den Waffen, die die Krieger auf {mainland} führen, nur Zahnstocher.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.171826Z"
+  },
+  "npc.amber.stdmod_27": {
+    "src_hash": "3feaf19ee0ce3ddbd3c7461c175791fa",
+    "text": "Zaubersprüche werden nur in den Gildenhallen des Festlandes gelehrt.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:13:10.175411Z"
+  },
+  "npc.amber.stdmod_29": {
+    "src_hash": "1402b332585e651f9e13bf07ab56cc15",
+    "text": "Wenn Sie nach Thais reisen, sollten Sie unbedingt das wunderbare Schloss dort besuchen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.198679Z"
+  },
+  "npc.amber.stdmod_3": {
+    "src_hash": "b28a374c3eea8ed80546c14f49c46754",
+    "text": "Wie war das nochmal für ein Wort in der orkischen Sprache... hmm.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.202314Z"
+  },
+  "npc.amber.stdmod_30": {
+    "src_hash": "8babf675462cddfd38b2961551708afa",
+    "text": "Sie werden überrascht sein, wenn Sie diese Insel verlassen. Die Welt da draußen ist riesig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.206650Z"
+  },
+  "npc.amber.stdmod_31": {
+    "src_hash": "a4388d1e02d2c69bd8b800068ee6a117",
+    "text": "Die wichtigsten Werkzeuge, die Sie benötigen, sind ein {rope}, ein {shovel} und möglicherweise ein {Fackel}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.212079Z"
+  },
+  "npc.amber.stdmod_32": {
+    "src_hash": "9b7ee4544ff4002379572b04694abd34",
+    "text": "Eines Tages fiel ich ohne Seil in ein Loch. Ich habe drei Tage lang um Hilfe geschrien! Irgendwann kam ein Fischer vorbei und zog mich mit seinem eigenen Seil heraus, ich hatte Glück.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.219831Z"
+  },
+  "npc.amber.stdmod_33": {
+    "src_hash": "8995d109f9f4a32fec68ac71a05b7860",
+    "text": "Manchmal verspüre ich den starken Drang, damit jemanden bewusstlos zu machen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.223509Z"
+  },
+  "npc.amber.stdmod_34": {
+    "src_hash": "60326a5fe41a265d97ba48d7ce59d0e1",
+    "text": "Wissen Sie, auf dem Festland können Sie Zaubersprüche wirken, die Sie mit Licht versorgen. Sie werden eigentlich keine Taschenlampen mehr brauchen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.229461Z"
+  },
+  "npc.amber.stdmod_35": {
+    "src_hash": "bb6d756dfa5eb3aa9b0eadfc92352388",
+    "text": "Ich habe sowieso fast kein Geld bei mir, also muss ich auch keins bei der Bank einzahlen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.233400Z"
+  },
+  "npc.amber.stdmod_36": {
+    "src_hash": "1a6966935153c285d290339598722e37",
+    "text": "Du wirst deine Bestimmung finden. Ich bin sicher, es ist etwas Großes und Wichtiges.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.237112Z"
+  },
+  "npc.amber.stdmod_37": {
+    "src_hash": "c4e5e5e41ea0a91903006c7a030d1c0d",
+    "text": "Eine gute Institution, aber sie braucht definitiv mehr Mittel von der {king}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.240897Z"
+  },
+  "npc.amber.stdmod_38": {
+    "src_hash": "eb800fabc95a35551bc9996399d42619",
+    "text": "Oh, es tut mir leid, aber ich habe kein Interesse daran, etwas zu kaufen oder zu verkaufen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.245149Z"
+  },
+  "npc.amber.stdmod_39": {
+    "src_hash": "4e22f2596c441c1b1acc9a8fbf49490d",
+    "text": "Ich möchte es nicht missen, ein Premium-Abenteurer zu sein. Alles ist so viel einfacher!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.249116Z"
+  },
+  "npc.amber.stdmod_4": {
+    "src_hash": "63b914b41069aae657a2ba13b2959f37",
+    "text": "Hallo du! Bist du auch ein Abenteurer?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.251213Z"
+  },
+  "npc.amber.stdmod_42": {
+    "src_hash": "f7c6f62680f46f6f16d2a43242f4e694",
+    "text": "Sie fragte mich ernsthaft, ob sie die Überreste meines {raft} als Feuerholz haben könnte! Kannst du dir das vorstellen??",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.256873Z"
+  },
+  "npc.amber.stdmod_43": {
+    "src_hash": "a7ad958291c96be3d69b15c1c770d8f7",
+    "text": "Er versprach, mein {raft} zu reparieren.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.259037Z"
+  },
+  "npc.amber.stdmod_44": {
+    "src_hash": "52316c3c97d370d2409f7d09e4f21856",
+    "text": "Wussten Sie, dass mein Name auch der Name eines Edelsteins ist?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.262218Z"
+  },
+  "npc.amber.stdmod_45": {
+    "src_hash": "706a84df128e7c0f86bc855342494576",
+    "text": "Auf mich kommt er etwas unhöflich vor, aber vielleicht ist das nur mein Eindruck.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.266025Z"
+  },
+  "npc.amber.stdmod_46": {
+    "src_hash": "ca09b5587c2cfe2e6ca086ca836decdd",
+    "text": "Ich habe gehört, dass ihre Angebote außerordentlich gut sind.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.268874Z"
+  },
+  "npc.amber.stdmod_47": {
+    "src_hash": "3274c49c889ae8ad437e332f8e532034",
+    "text": "Das Orakel soll dir deinen {destiny} zeigen, sobald du Level 8 erreicht hast.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.272470Z"
+  },
+  "npc.amber.stdmod_48": {
+    "src_hash": "78ca2176c74fc92171e365ae6932f171",
+    "text": "Sie hat sich sehr verändert, seit ich sie das letzte Mal gesehen habe.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:24.276005Z"
+  },
+  "npc.amber.stdmod_49": {
+    "src_hash": "65f6aad5b865890db8cbccfac0c058a4",
+    "text": "Ich denke, dieser arme Kerl war eine schlechte Wahl als Leiter der {academy}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.020030Z"
+  },
+  "npc.amber.stdmod_5": {
+    "src_hash": "e3e0e0e777936f5c090db6039d22a2e9",
+    "text": "<sings> Stürmisches Wetter, stürmisches Wetter... stürmisches Wetter auf dem Meer!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.023221Z"
+  },
+  "npc.amber.stdmod_50": {
+    "src_hash": "3d611ca54dab9d87ac2c66cef675b6f8",
+    "text": "Hm, ich glaube, ich habe sie noch nicht getroffen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.025304Z"
+  },
+  "npc.amber.stdmod_51": {
+    "src_hash": "4722b0a45f3eb3e090ab7d1682b49f68",
+    "text": "Er brachte mir etwas von seinem berühmten Ratteneintopf. Eigentlich wollte ich ihn nicht beleidigen, aber so etwas kann ich einfach nicht essen. Also sagte ich ihm, dass ich Vegetarier bin und nur Fisch esse. <schluckt>",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.033132Z"
+  },
+  "npc.amber.stdmod_52": {
+    "src_hash": "2ddeac74ee9bde62eb8780af1c7fd32f",
+    "text": "Er ist auf seine Art lustig.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.034289Z"
+  },
+  "npc.amber.stdmod_54": {
+    "src_hash": "bec67d6a5f8fc485350658be714274b9",
+    "text": "Eine sanfte Person. Sie sollten ihn aufsuchen, wenn Sie Fragen haben oder Heilung benötigen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.037840Z"
+  },
+  "npc.amber.stdmod_55": {
+    "src_hash": "19a6c603ac874fef67d1f8bed543db95",
+    "text": "Hyazinthe ist ein großartiger Heiler. Er lebt irgendwo versteckt auf dieser Insel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.041001Z"
+  },
+  "npc.amber.stdmod_56": {
+    "src_hash": "91960761b6a09309c7d277265a5c91bb",
+    "text": "Er ist ein lustiger kleiner Mann.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.042519Z"
+  },
+  "npc.amber.stdmod_57": {
+    "src_hash": "03cba46e13d36a5aa51bd171decc756a",
+    "text": "Ich kenne sie nicht wirklich, aber sie scheint ein nettes Mädchen zu sein.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.045372Z"
+  },
+  "npc.amber.stdmod_58": {
+    "src_hash": "e8a537a6af06755a5a5661ba66bba5fd",
+    "text": "Ein außergewöhnlicher Krieger. Er ist die erste und letzte Verteidigungslinie von {Rookgaard}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.048787Z"
+  },
+  "npc.amber.stdmod_59": {
+    "src_hash": "745c31cf59b7b68b3f97add7697498bf",
+    "text": "Nicht die nettesten Typen, denen man begegnen kann. Ich hatte einige Auseinandersetzungen mit ihnen und war schließlich für ein paar Monate ihr {prisoner}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.054768Z"
+  },
+  "npc.amber.stdmod_6": {
+    "src_hash": "ae0cd49c904844759a602a439c26acea",
+    "text": "Ich erhole mich von einer {sea}-Passage.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.056522Z"
+  },
+  "npc.amber.stdmod_60": {
+    "src_hash": "329f65a4b914d0176af98fed9ad99574",
+    "text": "Ich spreche einige orkische Wörter, allerdings nicht viele, nur ein paar Grundkenntnisse wie '{yes}' und '{no}'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.060897Z"
+  },
+  "npc.amber.stdmod_61": {
+    "src_hash": "0918a4a5792d04fbe6aa8200a9fb9c63",
+    "text": "Es ist 'mok' auf Orkisch. Ich erzähle dir mehr, wenn du mir etwas {food} mitbringst.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.064272Z"
+  },
+  "npc.amber.stdmod_62": {
+    "src_hash": "bfff76df614ee5df262cd54dd7c80daf",
+    "text": "Auf Orkisch ist das 'burp'. Ich erzähle dir mehr, wenn du mir etwas {food} mitbringst.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.067723Z"
+  },
+  "npc.amber.stdmod_63": {
+    "src_hash": "f58dc55cab329e13930a1cc1f5d73b2c",
+    "text": "Mein Lieblingsgericht ist {salmon}. Oh bitte, bring mir welche mit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.070375Z"
+  },
+  "npc.amber.stdmod_64": {
+    "src_hash": "9048a2627e13f1c8ae189f73d77f837d",
+    "text": "Ja! Wenn du mir etwas Lachs gibst, sage ich dir ein weiteres orkisches Wort. Okay?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.073680Z"
+  },
+  "npc.amber.stdmod_65": {
+    "src_hash": "3cf65c5ae59a05664c826b91fc620fc9",
+    "text": "Danke schön. Orks rufen Pfeile 'pixo'.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.075291Z"
+  },
+  "npc.amber.stdmod_66": {
+    "src_hash": "747e053fcda17fadf860ab219d959b7a",
+    "text": "Du hast keinen Lachs!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.076190Z"
+  },
+  "npc.amber.stdmod_8": {
+    "src_hash": "21cc69f11e1d56a0695d60f1bb51bf71",
+    "text": "Ich war fast überall in {Tibia}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:14:50.077682Z"
+  },
+  "npc.amber.stdmod_9": {
+    "src_hash": "90b43e9461cd444f34e89839b847794d",
+    "text": "Ich kämpfte heftig gegen {monsters}, bestieg die höchsten Berge, erkundete die tiefsten {dungeons} und überquerte den {sea} auf einem {raft}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.088548Z"
+  },
+  "npc.amber.voice_1": {
+    "src_hash": "a57d09546c12d2681c39538f07f77d09",
+    "text": "Ich wünschte, ich könnte jetzt etwas Lachs essen ... am besten zubereitet nach Liberty Bay-Art ... lecker.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.094659Z"
+  },
+  "npc.amber.voice_3": {
+    "src_hash": "b28a374c3eea8ed80546c14f49c46754",
+    "text": "Wie war das nochmal für ein Wort in der orkischen Sprache... hmm.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.098362Z"
+  },
+  "npc.amber.voice_4": {
+    "src_hash": "63b914b41069aae657a2ba13b2959f37",
+    "text": "Hallo du! Bist du auch ein Abenteurer?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.100576Z"
+  },
+  "npc.amber.voice_5": {
+    "src_hash": "e3e0e0e777936f5c090db6039d22a2e9",
+    "text": "<sings> Stürmisches Wetter, stürmisches Wetter... stürmisches Wetter auf dem Meer!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.105226Z"
+  },
+  "npc.an_old_dragon_lord.say_1": {
+    "src_hash": "51d011d4d36eb11e8006b2d85c46f608",
+    "text": "VERLASSEN SIE SOFORT DEN DRACHENFRIEDHOF!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.107539Z"
+  },
+  "npc.an_old_dragon_lord.say_2": {
+    "src_hash": "51d011d4d36eb11e8006b2d85c46f608",
+    "text": "VERLASSEN SIE SOFORT DEN DRACHENFRIEDHOF!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.109818Z"
+  },
+  "npc.an_old_dragon_lord.say_3": {
+    "src_hash": "3f745944595287ec2c3f875deda3f00b",
+    "text": "AHHHH DER SCHMERZ DES AGESSS! ICH BRAUCHE MUSSSSHRROOOMSSS, UM MEINE SCHMERZEN ZU LINDERN! BRRRING MICH MUSHRRROOOMSSS!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.115877Z"
+  },
+  "npc.an_old_dragon_lord.voice_1": {
+    "src_hash": "ab6b5b061caff66aa9b01827a7d3ece7",
+    "text": "AHHHH DER SCHMERZ DES AGESSS! DER SCHMERZ!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.118290Z"
+  },
+  "npc.anderson.stdmod_2": {
+    "src_hash": "7d084b1656150acfed5a2b9a3a2cea72",
+    "text": "Möchten Sie eine Passage nach {0} für {1}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.121095Z"
+  },
+  "npc.anderson.stdmod_3": {
+    "src_hash": "cc67edbe5929572b201f9b2aa0f478f9",
+    "text": "Gute Reise!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.121971Z"
+  },
+  "npc.anderson.stdmod_4": {
+    "src_hash": "8f3b71da455041c184184618a35b40fb",
+    "text": "Das Erlebnis sollten Sie sich nicht entgehen lassen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.124661Z"
+  },
+  "npc.anderson.stdmod_5": {
+    "src_hash": "03be748a0d7ba522e9dcf6e5868b218b",
+    "text": "Wohin möchtest du heute gehen? Wir bedienen die Routen nach Senja, {Folda} und {Vega} und zurück nach {Tibia}.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.131021Z"
+  },
+  "npc.anderson.voice_1": {
+    "src_hash": "5caa2825327f94afa6d67f09220019ce",
+    "text": "Passagen zu Tibia, Folda und Vega.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.133259Z"
+  },
+  "npc.andrew_lyze.multi_1": {
+    "src_hash": "6fa9d0a8083d8e35988350abcb26c7f3",
+    "text": "Ich habe diese Kristalle oben auf den Kompass gelegt. Wie Sie sehen, pulsiert der Kompass jetzt in einer warmen, violetten Farbe. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.140242Z"
+  },
+  "npc.andrew_lyze.multi_10": {
+    "src_hash": "d79e43b157fae1ec3b4e778c9f318d75",
+    "text": "Nun, vor einiger Zeit wurden rund um Tibia mächtige magische Geräte eingesetzt. Es handelt sich um kostenpflichtige Kompasse. Es gab nur ein Problem: Sie boten die Möglichkeit, Menschen auf ganz einfache Weise reich zu machen. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.152083Z"
+  },
+  "npc.andrew_lyze.multi_11": {
+    "src_hash": "64730d763fa45c4854cd3c56f88a7670",
+    "text": "Daher waren diese Instrumente sehr begehrt. Die Leute versuchten um jeden Preis, sie in ihre Hände zu bekommen. Und so geschah, was alle befürchteten: blutige Schlachten tobten. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.161722Z"
+  },
+  "npc.andrew_lyze.multi_12": {
+    "src_hash": "1061a67a90b8b6c010f70513b4460b52",
+    "text": "Um diesen grausamen Eskalationen ein Ende zu setzen, wurden schließlich alle Geräte eingesammelt und zerstört. Die Überreste wurden {deep} in der Erde begraben.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.170457Z"
+  },
+  "npc.andrew_lyze.multi_2": {
+    "src_hash": "bb1b4afc42ddb08aad70c042cbec7536",
+    "text": "Jetzt ist dieser Kompass einsatzbereit. Es kann die gebundene Energie auf andere unbelebte Objekte übertragen, um bestimmte Tore oder Truhen zu öffnen.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.179238Z"
+  },
+  "npc.andrew_lyze.multi_3": {
+    "src_hash": "84b31714a925d8d7cbab7d6cef17e415",
+    "text": "Hübsch! Nehmen Sie dazu diese goldene Axt und bauen Sie die markanten Kristalle in der Höhle ab. Außerdem brauche ich eine Giftdrüse von recht seltenen Spinnen, sie heißen Lucifuga araneae. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:16.189878Z"
+  },
+  "npc.andrew_lyze.multi_4": {
+    "src_hash": "7a287a70da83d6b1952afb564990df69",
+    "text": "Diese sind ziemlich schüchtern, aber ich habe ein {bait} für dich, um sie anzulocken. Aber achten Sie darauf, nicht zu vielen davon auf einmal gegenüberzutreten. Und beeilen Sie sich, die Wirkung wird nicht ewig anhalten!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:42.952192Z"
+  },
+  "npc.andrew_lyze.multi_5": {
+    "src_hash": "0d59397b958b243af1f4719bbf5257f0",
+    "text": "Okay, ich habe die Brille in das richtige Muster gebracht und kann den Kompass reparieren. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:42.955970Z"
+  },
+  "npc.andrew_lyze.multi_6": {
+    "src_hash": "4f44b310af66a93a92e3ee6b1cc2d599",
+    "text": "Da sind wir! Der nächste Schritt ist das Aufladen des Kompasses. Dafür musst du dort unten drei verschiedene Kristalle ausgraben: 5 blaue, 3 grüne und einen violetten Kristall. Sind Sie dazu bereit?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:42.963586Z"
+  },
+  "npc.andrew_lyze.multi_7": {
+    "src_hash": "f70ecfda16258fc088e95de15cb1b97d",
+    "text": "Nur in der Höhle dort unten finden Sie die Materialien, die Sie zur Reparatur des {Kompass} benötigen. Jetzt wissen Sie, warum der Eingang verschlossen ist. Da ist das Siegel, aber ich habe einen Deal für dich: ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:42.971685Z"
+  },
+  "npc.andrew_lyze.multi_8": {
+    "src_hash": "34a25eb8bea075ac8831e6f0537153f1",
+    "text": "Ich kann den Kompass für Sie reparieren, wenn Sie mir das liefern, was ich brauche. Außer dem kaputten Kompass musst du mir folgende Materialien mitbringen: 50 blaue Glasplatten, 15 grüne Glasplatten und 5 violette Glasplatten. ...",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:42.980328Z"
+  },
+  "npc.andrew_lyze.multi_9": {
+    "src_hash": "d02fba4cc76fd2924c2c503ce03b3c77",
+    "text": "Sie alle sind in dieser geschlossenen Höhle vor Ihnen zu finden. Ich hätte diesen Siegelschlüssel zerstören sollen, aber die Dinge haben sich geändert. Der Eingang ist jetzt geöffnet, gehen Sie hinunter und erledigen Sie, was zu tun ist.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:42.988723Z"
+  },
+  "npc.andrew_lyze.say_1": {
+    "src_hash": "b48c33f71e1755fc1184c6023de899a2",
+    "text": "Soweit ich weiß, ist es ein Ort höllischer Hitze mit blutrünstigen Monstern aller Art.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:42.991959Z"
+  },
+  "npc.andrew_lyze.say_10": {
+    "src_hash": "e0b6577d7972e7211589664265ef7f9a",
+    "text": "Du bist schon bei meinem Köder!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:42.993254Z"
+  },
+  "npc.andrew_lyze.say_11": {
+    "src_hash": "3f25161832ec0e5c8763047b7ffceda0",
+    "text": "Das können Sie noch nicht tun.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:42.994570Z"
+  },
+  "npc.andrew_lyze.say_12": {
+    "src_hash": "640859db0a22f0808e8fbfbc63c43196",
+    "text": "Es wurde beschlossen, alle Kompasse einzusammeln, zu zerstören und in die feurigen Tiefen von Tibia zu werfen. Einige davon habe ich noch hier. Ich {sell} sie zu einem günstigen Preis, wenn Sie möchten.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:43.002184Z"
+  },
+  "npc.andrew_lyze.say_13": {
+    "src_hash": "4f39be4d0dc57a3e50c5aff4a11f3846",
+    "text": "Möchten Sie einen kaputten Kompass für 10.000 Gold kaufen?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:43.004523Z"
+  },
+  "npc.andrew_lyze.say_14": {
+    "src_hash": "69ce05199222d304e8f82cb747eed8ab",
+    "text": "Verschwende nicht meine Zeit.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:43.005718Z"
+  },
+  "npc.andrew_lyze.say_15": {
+    "src_hash": "c066542c456632337339c67bf887b0a8",
+    "text": "Entschuldigung, ich habe es nicht verstanden.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:43.007424Z"
+  },
+  "npc.andrew_lyze.say_2": {
+    "src_hash": "6bc74e92a208218f718d6e89a44b3e83",
+    "text": "Dieser Sarkophag verschließt den Eingang zu den Höhlen dort unten. Nur hier erhalten Sie alle {materials}, die Sie für einen funktionierenden Kompass dieser Art benötigen. Also hier kein Eintritt – keine weiteren magischen Kompasse in Tibia. Theoretisch.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:43.017134Z"
+  },
+  "npc.andrew_lyze.say_3": {
+    "src_hash": "7d921fb55a237e01678e2bbb9e0fb83e",
+    "text": "Auf den ersten Blick sieht diese Höhle nicht sehr spektakulär aus, aber die Dinge, die man dort findet, sind es. Sie müssen wissen, dass dies der einzige Ort ist, dem Sie die entsprechenden Materialien zum Bau des Kompasses finden können.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:43.026003Z"
+  },
+  "npc.andrew_lyze.say_4": {
+    "src_hash": "2acaa449f8fa7497b8cd4ce756112881",
+    "text": "Darf ich Ihren Kompass reparieren, wenn möglich?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:43.027867Z"
+  },
+  "npc.andrew_lyze.say_5": {
+    "src_hash": "38a64287204cea939418f494503a079b",
+    "text": "Sie haben noch nicht die benötigten Artikel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:43.029695Z"
+  },
+  "npc.andrew_lyze.say_6": {
+    "src_hash": "26009f2a63ba72c0a7e7bb4604ebf935",
+    "text": "Hier ist dein kaputter Kompass!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:43.030931Z"
+  },
+  "npc.andrew_lyze.say_8": {
+    "src_hash": "38a64287204cea939418f494503a079b",
+    "text": "Sie haben noch nicht die benötigten Artikel.",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:43.032755Z"
+  },
+  "npc.andrew_lyze.say_9": {
+    "src_hash": "be413fb297635d6fa34118d17e0eb34a",
+    "text": "Erledigt. Seien Sie beunruhigt, die Wirkung wird nicht ewig anhalten!",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T22:15:43.035386Z"
   }
 }

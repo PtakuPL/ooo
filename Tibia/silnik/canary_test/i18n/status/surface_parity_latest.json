@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T18:40:40.876311Z",
+  "generated_at_utc": "2026-04-29T18:46:39.105867Z",
   "window": {
     "trend_hours": 24,
-    "samples": 1071,
-    "window_start_utc": "2026-04-28T18:42:22.247013Z",
-    "window_end_utc": "2026-04-29T18:40:40.876311Z"
+    "samples": 1075,
+    "window_start_utc": "2026-04-28T18:46:46.132130Z",
+    "window_end_utc": "2026-04-29T18:46:39.105867Z"
   },
   "summary": {
     "surface_count": 4,
@@ -21,7 +21,7 @@
     "server": {
       "label": "Server",
       "total_reference_keys": 3602487,
-      "real_translated_keys": 410340,
+      "real_translated_keys": 410350,
       "coverage_real_pct": 11.39,
       "langs_count": 51,
       "delta_24h_pp": 0.59,
@@ -42,9 +42,9 @@
           "missing_keys": 70031
         }
       ],
-      "trend_samples": 1071,
-      "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
-      "window_latest_utc": "2026-04-29T18:40:40.876311Z"
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:46:46.132130Z",
+      "window_latest_utc": "2026-04-29T18:46:39.105867Z"
     },
     "website": {
       "label": "Website",
@@ -70,9 +70,9 @@
           "missing_keys": 1554
         }
       ],
-      "trend_samples": 1071,
-      "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
-      "window_latest_utc": "2026-04-29T18:40:40.876311Z"
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:46:46.132130Z",
+      "window_latest_utc": "2026-04-29T18:46:39.105867Z"
     },
     "launcher": {
       "label": "Launcher",
@@ -98,9 +98,9 @@
           "missing_keys": 242
         }
       ],
-      "trend_samples": 1071,
-      "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
-      "window_latest_utc": "2026-04-29T18:40:40.876311Z"
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:46:46.132130Z",
+      "window_latest_utc": "2026-04-29T18:46:39.105867Z"
     },
     "installer": {
       "label": "Installer",
@@ -126,9 +126,9 @@
           "missing_keys": 2031
         }
       ],
-      "trend_samples": 1071,
-      "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
-      "window_latest_utc": "2026-04-29T18:40:40.876311Z"
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:46:46.132130Z",
+      "window_latest_utc": "2026-04-29T18:46:39.105867Z"
     }
   },
   "ranking": [
@@ -157,9 +157,9 @@
           "missing_keys": 242
         }
       ],
-      "trend_samples": 1071,
-      "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
-      "window_latest_utc": "2026-04-29T18:40:40.876311Z",
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:46:46.132130Z",
+      "window_latest_utc": "2026-04-29T18:46:39.105867Z",
       "rank": 1
     },
     {
@@ -187,16 +187,16 @@
           "missing_keys": 2031
         }
       ],
-      "trend_samples": 1071,
-      "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
-      "window_latest_utc": "2026-04-29T18:40:40.876311Z",
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:46:46.132130Z",
+      "window_latest_utc": "2026-04-29T18:46:39.105867Z",
       "rank": 2
     },
     {
       "surface": "server",
       "label": "Server",
       "total_reference_keys": 3602487,
-      "real_translated_keys": 410340,
+      "real_translated_keys": 410350,
       "coverage_real_pct": 11.39,
       "langs_count": 51,
       "delta_24h_pp": 0.59,
@@ -217,9 +217,9 @@
           "missing_keys": 70031
         }
       ],
-      "trend_samples": 1071,
-      "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
-      "window_latest_utc": "2026-04-29T18:40:40.876311Z",
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:46:46.132130Z",
+      "window_latest_utc": "2026-04-29T18:46:39.105867Z",
       "rank": 3
     },
     {
@@ -247,9 +247,9 @@
           "missing_keys": 1554
         }
       ],
-      "trend_samples": 1071,
-      "window_oldest_utc": "2026-04-28T18:42:22.247013Z",
-      "window_latest_utc": "2026-04-29T18:40:40.876311Z",
+      "trend_samples": 1075,
+      "window_oldest_utc": "2026-04-28T18:46:46.132130Z",
+      "window_latest_utc": "2026-04-29T18:46:39.105867Z",
       "rank": 4
     }
   ]

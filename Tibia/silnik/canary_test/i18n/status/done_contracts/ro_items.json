@@ -16,7 +16,7 @@
       "ok": false,
       "coverage_pct": 60.2,
       "total_keys": 36733,
-      "real_translations": 22115
+      "real_translations": 22125
     },
     "quality_entry_present": {
       "ok": true,
@@ -25,5 +25,5 @@
     }
   },
   "is_done": false,
-  "timestamp": "2026-04-29T18:11:28.412243Z"
+  "timestamp": "2026-04-29T18:44:13.484516Z"
 }

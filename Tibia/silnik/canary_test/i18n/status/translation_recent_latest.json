@@ -1,44 +1,128 @@
 {
-  "timestamp": "2026-04-29T18:40:25.947836Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 6,
+  "timestamp": "2026-04-29T18:44:08.508209Z",
+  "language": "ro",
+  "json_file": "items.json",
+  "translated": 47,
   "entries": [
     {
-      "key": "npc.captain_chelop.stdmod_2",
-      "en": "Do you seek a passage to Thais for |TRAVELCOST|?",
-      "translated": "¿Busca un pasaje a Thais para |TRAVELCOST|?",
-      "source": "tm"
+      "key": "item.11762.name",
+      "en": "timber floor",
+      "translated": "podea din lemn",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_fearless.greet_msg_1",
-      "en": "Welcome on board, |PLAYERNAME|. Where can I {sail} you today?",
-      "translated": "Bienvenido a bordo, |PLAYERNAME|. ¿Dónde puedo {sail} hoy?",
-      "source": "tm"
+      "key": "item.11763.name",
+      "en": "timber floor",
+      "translated": "podea din lemn",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_breezelda.stdmod_3",
-      "en": "Where do you want to go? To {Carlin}, {Venore} or {Thais}?",
-      "translated": "¿A dónde quieres ir? ¿A {Carlin}, {Venore} o {Thais}?",
-      "source": "google_translate"
+      "key": "item.11764.name",
+      "en": "timber floor",
+      "translated": "podea din lemn",
+      "source": "simple"
     },
     {
-      "key": "npc.captain_breezelda.stdmod_4",
-      "en": "Where do you want to go? To {Carlin}, {Venore} or {Thais}?",
-      "translated": "¿A dónde quieres ir? ¿A {Carlin}, {Venore} o {Thais}?",
-      "source": "google_translate"
+      "key": "item.10190.name",
+      "en": "dead draken warmaster",
+      "translated": "războinic draken mort",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "npc.captain_chelop.stdmod_4",
-      "en": "I can bring you back to {Thais} if you are weary or you can stay and fight. What shall it be?",
-      "translated": "Puedo traerte de regreso a {Thais} si estás cansado o puedes quedarte y luchar. ¿Qué será?",
-      "source": "google_translate"
+      "key": "item.10191.name",
+      "en": "dead draken warmaster",
+      "translated": "războinic draken mort",
+      "source": "openai:openai/gpt-4.1-mini"
     },
     {
-      "key": "npc.captain_dreadnought.say_8",
-      "en": "{} What do you say, {yes} or {no}?",
-      "translated": "{} ¿Qué dices, {yes} o {no}?",
-      "source": "google_translate"
+      "key": "item.10192.name",
+      "en": "dead draken warmaster",
+      "translated": "războinic draken mort",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.10193.name",
+      "en": "dead draken warmaster",
+      "translated": "războinic draken mort",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.10216.name",
+      "en": "dragon statue kit",
+      "translated": "kit statuie dragon",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.10334.name",
+      "en": "dead orc marauder",
+      "translated": "marauder orc mort",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.10335.name",
+      "en": "dead orc marauder",
+      "translated": "marauder orc mort",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.10337.name",
+      "en": "dead orc marauder",
+      "translated": "marauder orc mort",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.11667.name",
+      "en": "dead draken abomination",
+      "translated": "draken abominație moartă",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.11668.name",
+      "en": "dead draken abomination",
+      "translated": "draken abominație moartă",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.11669.name",
+      "en": "dead draken abomination",
+      "translated": "draken abominație moartă",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.11670.name",
+      "en": "dead draken abomination",
+      "translated": "draken abominație moartă",
+      "source": "openai:openai/gpt-4.1-mini"
+    },
+    {
+      "key": "item.13656.desc",
+      "en": "This lamp is glowing very dimly.",
+      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
+      "source": "term_consistency_autofix"
+    },
+    {
+      "key": "item.13658.desc",
+      "en": "This lamp is glowing very dimly.",
+      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
+      "source": "term_consistency_autofix"
+    },
+    {
+      "key": "item.14760.desc",
+      "en": "This is an emblem of wisdom. It was awarded by TibiaStat.com",
+      "translated": "Aceasta este o emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă a înțelepciunii. A fost acordat de TibiaStat.com",
+      "source": "term_consistency_autofix"
+    },
+    {
+      "key": "item.10507.name",
+      "en": "lamp",
+      "translated": "lampă",
+      "source": "canonical_name_semantic_autofix"
+    },
+    {
+      "key": "item.11365.name",
+      "en": "ramp",
+      "translated": "rampă",
+      "source": "canonical_name_semantic_autofix"
     }
   ],
   "filtered_untranslated_marker": 0

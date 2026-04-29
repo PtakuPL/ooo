@@ -1,141 +1,29 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:46:49.286989Z",
-  "lang": "ro",
-  "json_file": "items.json",
-  "surface": "items",
+  "generated_at_utc": "2026-04-29T20:49:17.966528Z",
+  "lang": "es",
+  "json_file": "server.json",
+  "surface": "server",
   "term_registry_path": "term_registry_enriched.json",
-  "term_conflicts_total": 80,
-  "keys_visited": 2000,
-  "keys_scanned": 341,
-  "visit_limit_hit": true,
-  "keys_with_term_usages": 111,
-  "keys_with_conflicts": 44,
-  "term_conflict_rate_pct": 39.64,
-  "term_conflict_rate_delta_pct": 39.64,
-  "registry_terms_total": 14356,
-  "auto_fixed_english_name_leaks": 3,
-  "inflection_suspects_flagged": 3,
-  "manual_review_enqueued": 77,
-  "conflict_type_breakdown": {
-    "canonical_term_missing": 77,
-    "canonical_term_inflection_suspect": 3
-  },
+  "term_conflicts_total": 0,
+  "keys_visited": 0,
+  "keys_scanned": 0,
+  "visit_limit_hit": false,
+  "keys_with_term_usages": 0,
+  "keys_with_conflicts": 0,
+  "term_conflict_rate_pct": 0.0,
+  "term_conflict_rate_delta_pct": 0.0,
+  "registry_terms_total": 16620,
+  "auto_fixed_english_name_leaks": 0,
+  "inflection_suspects_flagged": 0,
+  "manual_review_enqueued": 0,
+  "conflict_type_breakdown": {},
   "surface_breakdown": {
-    "items": {
-      "keys_with_term_usages": 111,
-      "keys_with_conflicts": 44,
-      "term_conflicts_total": 80
+    "server": {
+      "keys_with_term_usages": 0,
+      "keys_with_conflicts": 0,
+      "term_conflicts_total": 0
     }
   },
-  "top_conflicts": [
-    {
-      "key": "item.10218.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "peşte",
-      "canonical_en": "fish",
-      "translated_text": "Acest pește a fost sărat și deja pregătit ca provizie pentru soldați",
-      "source_file": "items.json",
-      "source_key": "item.10245.name"
-    },
-    {
-      "key": "item.10218.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "peşte",
-      "canonical_en": "fish",
-      "translated_text": "Acest pește a fost sărat și deja pregătit ca provizie pentru soldați",
-      "source_file": "items.json",
-      "source_key": "item.10246.name"
-    },
-    {
-      "key": "item.10288.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "tronul dragonului",
-      "canonical_en": "dragon throne",
-      "translated_text": "Folosește-l în casa ta pentru a construi un tron ​​de dragon",
-      "source_file": "items.json",
-      "source_key": "item.10286.name"
-    },
-    {
-      "key": "item.10288.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "tronul dragonului",
-      "canonical_en": "dragon throne",
-      "translated_text": "Folosește-l în casa ta pentru a construi un tron ​​de dragon",
-      "source_file": "items.json",
-      "source_key": "item.10287.name"
-    },
-    {
-      "key": "item.11473.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Aprinde",
-      "canonical_en": "Light",
-      "translated_text": "Este prea mare pentru a fi purtat de oameni, ci mai degrabă ușor",
-      "source_file": "spells.json",
-      "source_key": "spell.light.name"
-    },
-    {
-      "key": "item.11609.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Sudden Death Rune",
-      "canonical_en": "sudden death rune",
-      "translated_text": "Este o rună împodobită a morții subite",
-      "source_file": "items.json",
-      "source_key": "item.3155.name"
-    },
-    {
-      "key": "item.11610.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Sudden Death Rune",
-      "canonical_en": "sudden death rune",
-      "translated_text": "Este o rună împodobită a morții subite",
-      "source_file": "items.json",
-      "source_key": "item.3155.name"
-    },
-    {
-      "key": "item.11611.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Magic Wall Rune",
-      "canonical_en": "magic wall rune",
-      "translated_text": "Este o rună magică de perete împodobită",
-      "source_file": "items.json",
-      "source_key": "item.3180.name"
-    },
-    {
-      "key": "item.11611.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Runa peretelui magic",
-      "canonical_en": "Magic Wall Rune",
-      "translated_text": "Este o rună magică de perete împodobită",
-      "source_file": "spells.json",
-      "source_key": "spell.magic_wall_rune.name"
-    },
-    {
-      "key": "item.11612.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Magic Wall Rune",
-      "canonical_en": "magic wall rune",
-      "translated_text": "Este o rună magică de perete împodobită",
-      "source_file": "items.json",
-      "source_key": "item.3180.name"
-    },
-    {
-      "key": "item.11612.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Runa peretelui magic",
-      "canonical_en": "Magic Wall Rune",
-      "translated_text": "Este o rună magică de perete împodobită",
-      "source_file": "spells.json",
-      "source_key": "spell.magic_wall_rune.name"
-    },
-    {
-      "key": "item.11613.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "anima rune moarte",
-      "canonical_en": "animate dead rune",
-      "translated_text": "Este o rună moartă animată împodobită",
-      "source_file": "items.json",
-      "source_key": "item.3203.name"
-    }
-  ]
+  "top_conflicts": []
 }

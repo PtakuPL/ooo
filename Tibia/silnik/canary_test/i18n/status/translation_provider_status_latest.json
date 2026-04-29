@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:47:04.479755Z",
+  "generated_at_utc": "2026-04-29T20:49:26.062973Z",
   "active_provider": "OpenAI model pool",
   "active_provider_code": "openai_model_pool",
   "active_provider_source": "openai:openai/gpt-4.1-mini",
-  "active_provider_timestamp": "2026-04-29T20:43:48.631873Z",
+  "active_provider_timestamp": "2026-04-29T20:47:22.701695Z",
   "active_model": "openai/gpt-4.1-mini",
-  "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
+  "fallback_reason": "TM/simple → fallback to next provider validate fail [validate_word_salad] server.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
   "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
   "router_registry_path": "provider_router_registry.json",
@@ -66,25 +66,25 @@
     "overall_status": "degraded",
     "signals": [
       "recent_fallback",
-      "provider_consistency_debt:343"
+      "provider_consistency_debt:349"
     ],
-    "provider_consistency_debt": 343,
-    "recent_window_writes": 565,
+    "provider_consistency_debt": 349,
+    "recent_window_writes": 561,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
         "provider_label": "OpenAI model pool",
-        "writes": 236
+        "writes": 239
       },
       {
         "provider": "tm_simple",
         "provider_label": "TM/simple",
-        "writes": 206
+        "writes": 201
       },
       {
         "provider": "free_google_translate",
         "provider_label": "Free Google Translate",
-        "writes": 98
+        "writes": 96
       },
       {
         "provider": "canonical_name_semantic_autofix",
@@ -97,7 +97,7 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 11,
+    "fallbacks_last_200": 17,
     "fallback_action_breakdown": [
       {
         "action": "fallback_to_google_translate_high",
@@ -105,20 +105,30 @@
         "count": 9
       },
       {
+        "action": "fallback_to_next_provider_validate_fail",
+        "action_label": "fallback to next provider validate fail",
+        "count": 5
+      },
+      {
         "action": "fallback_chain_exhausted_high_reject_types",
         "action_label": "fallback chain exhausted high reject types",
         "count": 2
+      },
+      {
+        "action": "fallback_to_google_translate_validate_fail",
+        "action_label": "fallback to google translate validate fail",
+        "count": 1
       }
     ],
     "providers": {
       "tm_simple": {
         "status": "active",
-        "recent_writes": 206
+        "recent_writes": 201
       },
       "free_google_translate": {
         "status": "active",
         "enabled": true,
-        "recent_writes": 98
+        "recent_writes": 96
       },
       "google_cloud": {
         "status": "disabled",
@@ -129,7 +139,7 @@
       "openai_model_pool": {
         "status": "active",
         "active_model": "openai/gpt-4.1-mini",
-        "recent_writes": 236,
+        "recent_writes": 239,
         "requests_today": 175
       }
     },
@@ -240,7 +250,7 @@
       "used_pct": 70.0,
       "monthly_cap": 250.0,
       "spent": 175.0,
-      "latest_age_s": 53.76623,
+      "latest_age_s": 202.52922,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false
@@ -273,14 +283,14 @@
     }
   },
   "latest_fallback": {
-    "timestamp": "2026-04-29T20:38:27.433934Z",
+    "timestamp": "2026-04-29T20:48:13.717083Z",
     "provider": "tm_simple",
     "provider_label": "TM/simple",
     "source": "tm",
-    "action": "fallback_to_google_translate_high",
-    "action_label": "fallback to google translate high",
-    "decision_reason": "high_reject_types",
-    "json_file": "items.json",
-    "key": "item.1269.name"
+    "action": "fallback_to_next_provider_validate_fail",
+    "action_label": "fallback to next provider validate fail",
+    "decision_reason": "validate_word_salad",
+    "json_file": "server.json",
+    "key": "data.otservbr.global.scripts.quests.ferumbras.ascension.movements.shulgrax.lever.L16.1956"
   }
 }

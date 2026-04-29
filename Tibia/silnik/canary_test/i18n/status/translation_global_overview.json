@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T20:38:44.896580Z",
+  "timestamp": "2026-04-29T20:41:20.391118Z",
   "global": {
     "total_reference_keys": 3875872,
     "translated_keys": 711292,
@@ -79,8 +79,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T19:38:43.683549Z",
-    "window_end_utc": "2026-04-29T20:38:43.683549Z",
+    "window_start_utc": "2026-04-29T19:41:19.169234Z",
+    "window_end_utc": "2026-04-29T20:41:19.169234Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -88,11 +88,11 @@
       "i18n/status/suspicious_log.jsonl",
       "i18n/status/deferred_translation_queue.jsonl"
     ],
-    "total_cycles": 25,
+    "total_cycles": 24,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 25
+      "AUTO_TRANSLATE": 24
     },
-    "auto_translate_cycles": 25,
+    "auto_translate_cycles": 24,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
@@ -105,7 +105,7 @@
     "throughput_keys_per_h": 509.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
-    "suspicious_total": 419,
+    "suspicious_total": 367,
     "deferred_total": 34,
     "top_deferred_reasons": [
       {

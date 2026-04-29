@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-04-29T21:42:36.143558Z",
-  "window_end_utc": "2026-04-29T22:42:36.143558Z",
+  "window_start_utc": "2026-04-29T21:45:00.375151Z",
+  "window_end_utc": "2026-04-29T22:45:00.375151Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",

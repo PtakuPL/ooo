@@ -1,141 +1,141 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:40:32.656352Z",
-  "lang": "cs",
+  "generated_at_utc": "2026-04-29T22:45:05.343881Z",
+  "lang": "ro",
   "json_file": "items.json",
   "surface": "items",
   "term_registry_path": "term_registry_enriched.json",
-  "term_conflicts_total": 166,
+  "term_conflicts_total": 80,
   "keys_visited": 2000,
-  "keys_scanned": 340,
+  "keys_scanned": 341,
   "visit_limit_hit": true,
-  "keys_with_term_usages": 128,
-  "keys_with_conflicts": 70,
-  "term_conflict_rate_pct": 54.688,
-  "term_conflict_rate_delta_pct": 54.688,
-  "registry_terms_total": 10400,
-  "auto_fixed_english_name_leaks": 0,
-  "inflection_suspects_flagged": 32,
-  "manual_review_enqueued": 134,
+  "keys_with_term_usages": 111,
+  "keys_with_conflicts": 44,
+  "term_conflict_rate_pct": 39.64,
+  "term_conflict_rate_delta_pct": 39.64,
+  "registry_terms_total": 14386,
+  "auto_fixed_english_name_leaks": 3,
+  "inflection_suspects_flagged": 3,
+  "manual_review_enqueued": 77,
   "conflict_type_breakdown": {
-    "canonical_term_missing": 134,
-    "canonical_term_inflection_suspect": 32
+    "canonical_term_missing": 77,
+    "canonical_term_inflection_suspect": 3
   },
   "surface_breakdown": {
     "items": {
-      "keys_with_term_usages": 128,
-      "keys_with_conflicts": 70,
-      "term_conflicts_total": 166
+      "keys_with_term_usages": 111,
+      "keys_with_conflicts": 44,
+      "term_conflicts_total": 80
     }
   },
   "top_conflicts": [
     {
-      "key": "item.10216.desc",
+      "key": "item.10218.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "socha draka",
-      "canonical_en": "dragon statue",
-      "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+      "canonical": "peşte",
+      "canonical_en": "fish",
+      "translated_text": "Acest pește a fost sărat și deja pregătit ca provizie pentru soldați",
       "source_file": "items.json",
-      "source_key": "item.10029.name"
+      "source_key": "item.10245.name"
     },
     {
-      "key": "item.10216.desc",
+      "key": "item.10218.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "socha draka",
-      "canonical_en": "dragon statue",
-      "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
+      "canonical": "peşte",
+      "canonical_en": "fish",
+      "translated_text": "Acest pește a fost sărat și deja pregătit ca provizie pentru soldați",
       "source_file": "items.json",
-      "source_key": "item.10030.name"
-    },
-    {
-      "key": "item.10216.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "socha draka",
-      "canonical_en": "dragon statue",
-      "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
-      "source_file": "items.json",
-      "source_key": "item.10031.name"
-    },
-    {
-      "key": "item.10216.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "socha draka",
-      "canonical_en": "dragon statue",
-      "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
-      "source_file": "items.json",
-      "source_key": "item.10032.name"
-    },
-    {
-      "key": "item.10216.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "socha draka",
-      "canonical_en": "dragon statue",
-      "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
-      "source_file": "items.json",
-      "source_key": "item.10172.name"
-    },
-    {
-      "key": "item.10216.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "socha draka",
-      "canonical_en": "dragon statue",
-      "translated_text": "Použijte jej ve svém domě k postavení dračí sochy",
-      "source_file": "items.json",
-      "source_key": "item.10173.name"
-    },
-    {
-      "key": "item.10217.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "rezervovat",
-      "canonical_en": "book",
-      "translated_text": "Přineste tuto zašifrovanou knihu mudrci v Farmine, abyste získali moudrost nebo odemkli další Zaovu kulturu",
-      "source_file": "items.json",
-      "source_key": "item.12276.name"
+      "source_key": "item.10246.name"
     },
     {
       "key": "item.10288.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "dračí trůn",
+      "canonical": "tronul dragonului",
       "canonical_en": "dragon throne",
-      "translated_text": "Použijte jej ve svém domě k postavení dračího trůnu",
+      "translated_text": "Folosește-l în casa ta pentru a construi un tron ​​de dragon",
       "source_file": "items.json",
       "source_key": "item.10286.name"
     },
     {
       "key": "item.10288.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "dračí trůn",
+      "canonical": "tronul dragonului",
       "canonical_en": "dragon throne",
-      "translated_text": "Použijte jej ve svém domě k postavení dračího trůnu",
+      "translated_text": "Folosește-l în casa ta pentru a construi un tron ​​de dragon",
       "source_file": "items.json",
       "source_key": "item.10287.name"
     },
     {
-      "key": "item.10288.desc",
+      "key": "item.11473.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Drak",
-      "canonical_en": "Dragon",
-      "translated_text": "Použijte jej ve svém domě k postavení dračího trůnu",
-      "source_file": "monsters.json",
-      "source_key": "monster.dragon.name"
+      "canonical": "Aprinde",
+      "canonical_en": "Light",
+      "translated_text": "Este prea mare pentru a fi purtat de oameni, ci mai degrabă ușor",
+      "source_file": "spells.json",
+      "source_key": "spell.light.name"
     },
     {
-      "key": "item.10422.desc",
-      "conflict_type": "canonical_term_inflection_suspect",
-      "canonical": "socha",
-      "canonical_en": "statue",
-      "translated_text": "Můžete to použít a zkusit z toho vytvořit sochu",
+      "key": "item.11609.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "Sudden Death Rune",
+      "canonical_en": "sudden death rune",
+      "translated_text": "Este o rună împodobită a morții subite",
       "source_file": "items.json",
-      "source_key": "item.10322.name"
+      "source_key": "item.3155.name"
     },
     {
-      "key": "item.10422.desc",
-      "conflict_type": "canonical_term_inflection_suspect",
-      "canonical": "socha",
-      "canonical_en": "statue",
-      "translated_text": "Můžete to použít a zkusit z toho vytvořit sochu",
+      "key": "item.11610.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "Sudden Death Rune",
+      "canonical_en": "sudden death rune",
+      "translated_text": "Este o rună împodobită a morții subite",
       "source_file": "items.json",
-      "source_key": "item.2025.name"
+      "source_key": "item.3155.name"
+    },
+    {
+      "key": "item.11611.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "Magic Wall Rune",
+      "canonical_en": "magic wall rune",
+      "translated_text": "Este o rună magică de perete împodobită",
+      "source_file": "items.json",
+      "source_key": "item.3180.name"
+    },
+    {
+      "key": "item.11611.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "Runa peretelui magic",
+      "canonical_en": "Magic Wall Rune",
+      "translated_text": "Este o rună magică de perete împodobită",
+      "source_file": "spells.json",
+      "source_key": "spell.magic_wall_rune.name"
+    },
+    {
+      "key": "item.11612.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "Magic Wall Rune",
+      "canonical_en": "magic wall rune",
+      "translated_text": "Este o rună magică de perete împodobită",
+      "source_file": "items.json",
+      "source_key": "item.3180.name"
+    },
+    {
+      "key": "item.11612.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "Runa peretelui magic",
+      "canonical_en": "Magic Wall Rune",
+      "translated_text": "Este o rună magică de perete împodobită",
+      "source_file": "spells.json",
+      "source_key": "spell.magic_wall_rune.name"
+    },
+    {
+      "key": "item.11613.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "anima rune moarte",
+      "canonical_en": "animate dead rune",
+      "translated_text": "Este o rună moartă animată împodobită",
+      "source_file": "items.json",
+      "source_key": "item.3203.name"
     }
   ]
 }

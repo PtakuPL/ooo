@@ -1,141 +1,29 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:21:24.116177Z",
-  "lang": "tr",
-  "json_file": "items.json",
-  "surface": "items",
+  "generated_at_utc": "2026-04-29T21:23:50.686824Z",
+  "lang": "es",
+  "json_file": "server.json",
+  "surface": "server",
   "term_registry_path": "term_registry_enriched.json",
-  "term_conflicts_total": 71,
-  "keys_visited": 2000,
-  "keys_scanned": 337,
-  "visit_limit_hit": true,
-  "keys_with_term_usages": 125,
-  "keys_with_conflicts": 32,
-  "term_conflict_rate_pct": 25.6,
-  "term_conflict_rate_delta_pct": 25.6,
-  "registry_terms_total": 9009,
+  "term_conflicts_total": 0,
+  "keys_visited": 0,
+  "keys_scanned": 0,
+  "visit_limit_hit": false,
+  "keys_with_term_usages": 0,
+  "keys_with_conflicts": 0,
+  "term_conflict_rate_pct": 0.0,
+  "term_conflict_rate_delta_pct": 0.0,
+  "registry_terms_total": 16737,
   "auto_fixed_english_name_leaks": 0,
-  "inflection_suspects_flagged": 1,
-  "manual_review_enqueued": 70,
-  "conflict_type_breakdown": {
-    "canonical_term_inflection_suspect": 1,
-    "canonical_term_missing": 70
-  },
+  "inflection_suspects_flagged": 0,
+  "manual_review_enqueued": 0,
+  "conflict_type_breakdown": {},
   "surface_breakdown": {
-    "items": {
-      "keys_with_term_usages": 125,
-      "keys_with_conflicts": 32,
-      "term_conflicts_total": 71
+    "server": {
+      "keys_with_term_usages": 0,
+      "keys_with_conflicts": 0,
+      "term_conflicts_total": 0
     }
   },
-  "top_conflicts": [
-    {
-      "key": "item.10217.desc",
-      "conflict_type": "canonical_term_inflection_suspect",
-      "canonical": "kitap",
-      "canonical_en": "book",
-      "translated_text": "Bilgelik kazanmak veya Zao kültürünün daha fazlasının kilidini açmak için bu şifreli kitabı Farmine'daki bir bilgeye getirin",
-      "source_file": "items.json",
-      "source_key": "item.12276.name"
-    },
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
-      "source_file": "items.json",
-      "source_key": "item.116.name"
-    },
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
-      "source_file": "items.json",
-      "source_key": "item.117.name"
-    },
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
-      "source_file": "items.json",
-      "source_key": "item.118.name"
-    },
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
-      "source_file": "items.json",
-      "source_key": "item.12763.name"
-    },
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
-      "source_file": "items.json",
-      "source_key": "item.12764.name"
-    },
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
-      "source_file": "items.json",
-      "source_key": "item.14166.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.116.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.117.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.118.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.12763.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.12764.name"
-    }
-  ]
+  "top_conflicts": []
 }

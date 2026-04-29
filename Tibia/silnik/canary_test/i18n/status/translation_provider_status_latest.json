@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:15:24.946830Z",
+  "generated_at_utc": "2026-04-29T20:17:57.646108Z",
   "active_provider": "Free Google Translate",
   "active_provider_code": "free_google_translate",
   "active_provider_source": "google_translate",
@@ -69,7 +69,7 @@
       "provider_consistency_debt:305"
     ],
     "provider_consistency_debt": 305,
-    "recent_window_writes": 557,
+    "recent_window_writes": 542,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
@@ -79,7 +79,7 @@
       {
         "provider": "tm_simple",
         "provider_label": "TM/simple",
-        "writes": 201
+        "writes": 186
       },
       {
         "provider": "free_google_translate",
@@ -118,7 +118,7 @@
     "providers": {
       "tm_simple": {
         "status": "active",
-        "recent_writes": 201
+        "recent_writes": 186
       },
       "free_google_translate": {
         "status": "active",
@@ -245,7 +245,7 @@
       "used_pct": 60.8,
       "monthly_cap": 250.0,
       "spent": 152.0,
-      "latest_age_s": 568.47315,
+      "latest_age_s": 698.818564,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

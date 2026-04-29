@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:14:30.914349Z",
-  "lang": "de",
-  "json_file": "otclient_modules.json",
-  "surface": "otclient_modules",
+  "generated_at_utc": "2026-04-29T20:17:34.670108Z",
+  "lang": "es",
+  "json_file": "server.json",
+  "surface": "server",
   "term_registry_path": "term_registry_enriched.json",
   "term_conflicts_total": 0,
   "keys_visited": 0,
@@ -13,13 +13,13 @@
   "keys_with_conflicts": 0,
   "term_conflict_rate_pct": 0.0,
   "term_conflict_rate_delta_pct": 0.0,
-  "registry_terms_total": 1980,
+  "registry_terms_total": 16620,
   "auto_fixed_english_name_leaks": 0,
   "inflection_suspects_flagged": 0,
   "manual_review_enqueued": 0,
   "conflict_type_breakdown": {},
   "surface_breakdown": {
-    "otclient_modules": {
+    "server": {
       "keys_with_term_usages": 0,
       "keys_with_conflicts": 0,
       "term_conflicts_total": 0

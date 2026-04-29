@@ -71007,11 +71007,45 @@
         }
       ],
       "source": "google_translate"
+    },
+    {
+      "timestamp": "2026-04-29T23:24:20.070711Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.captain_haba_open_sea.straight_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
+      "attempted_translation": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "HIGH",
+      "issue_types": [
+        "artifact_tokens"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T22:49:20.720928Z"
+    },
+    {
+      "timestamp": "2026-04-29T23:24:21.732876Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.captain_haba_open_sea.straight_5",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
+      "attempted_translation": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "HIGH",
+      "issue_types": [
+        "artifact_tokens"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T22:49:20.768514Z"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3625
+    "total": 3627
   },
-  "updated_at": "2026-04-29T23:22:21.784807Z"
+  "updated_at": "2026-04-29T23:24:27.093742Z"
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:22:52.697088Z",
+  "generated_at_utc": "2026-04-29T23:25:06.693247Z",
   "active_provider": "TM/simple",
   "active_provider_code": "tm_simple",
   "active_provider_source": "simple",
@@ -228,7 +228,7 @@
       "used_pct": 100.8,
       "monthly_cap": 250.0,
       "spent": 252.0,
-      "latest_age_s": 1114.037873,
+      "latest_age_s": 1254.718145,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

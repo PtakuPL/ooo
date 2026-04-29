@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:35:46.817944Z",
+  "generated_at_utc": "2026-04-29T22:38:12.991835Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,29 +9,29 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-04-29 22:35:39"
+      "last_update": "2026-04-29 22:38:03"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "17s temu",
+      "freshness": "2min temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-04-29T22:35:29Z"
+      "last_update": "2026-04-29T22:36:03Z"
     },
     "PRE_MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "1min temu",
+      "freshness": "14s temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-04-29 22:35:39"
+      "last_update": "2026-04-29 22:38:03"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "ostatnie zapisy są historyczne",
-      "freshness": "2min temu",
+      "freshness": "4min temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
       "last_update": "2026-04-29T22:33:25.171398Z"
     },
@@ -39,9 +39,9 @@
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "9min temu",
+      "freshness": "2min temu",
       "source": "quality_audit_latest.json",
-      "last_update": "2026-04-29T22:26:35.343019Z"
+      "last_update": "2026-04-29T22:36:02.475237Z"
     },
     "HISTORY": {
       "state": "active",
@@ -49,15 +49,15 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-04-29 22:35:39"
+      "last_update": "2026-04-29 22:38:03"
     },
     "DOCTOR": {
       "state": "active",
       "state_label": "🟠 AKTYWNY",
       "reason": "1 alarmów",
-      "freshness": "0s temu",
+      "freshness": "1s temu",
       "source": "doctor_alerts_latest.json",
-      "last_update": "2026-04-29T22:35:46.816314Z"
+      "last_update": "2026-04-29T22:38:11.847796Z"
     }
   },
   "operator_panels": {
@@ -65,19 +65,19 @@
       "effective_state": "🟢 DZIAŁA",
       "phase": "AUTO_TRANSLATE",
       "stage": "heartbeat_tick",
-      "category": "ru",
+      "category": "cs",
       "json_file": "items.json",
-      "current_lang": "ru",
-      "current_lang_name": "Rosyjski",
+      "current_lang": "cs",
+      "current_lang_name": "Czeski",
       "current_scope": "Serwer",
       "detail": "auto translate in progress",
-      "current_key": "ru:items.json",
-      "heartbeat_at": "2026-04-29T22:35:29Z",
-      "heartbeat_age_s": 7,
-      "cycle": 18844
+      "current_key": "cs:items.json",
+      "heartbeat_at": "2026-04-29T22:36:03Z",
+      "heartbeat_age_s": 116,
+      "cycle": 18848
     },
     "recent_writes": {
-      "count": 17,
+      "count": 16,
       "items": [
         {
           "timestamp": "2026-04-29T22:33:19.538437Z",
@@ -253,17 +253,6 @@
           "sample_source": "openai:openai/gpt-4.1-mini",
           "sample_key": "item.11667.name",
           "sample_text": "draken abominație moartă",
-          "physical_verified": true
-        },
-        {
-          "timestamp": "2026-04-29T20:43:48.631873Z",
-          "lang": "cs",
-          "json_file": "items.json",
-          "surface": "Serwer",
-          "translated": 107,
-          "sample_source": "openai:openai/gpt-4.1-mini",
-          "sample_key": "item.15774.name",
-          "sample_text": "ledový mamutí roh",
           "physical_verified": true
         }
       ],
@@ -542,7 +531,7 @@
     },
     "launcher_quality_gate": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T22:35:43.793997Z",
+      "generated_at_utc": "2026-04-29T22:38:09.529831Z",
       "enabled": true,
       "files": [
         "client.json",
@@ -634,8 +623,8 @@
         "state_changes": 0,
         "latest_state": "pass",
         "oldest_state": "pass",
-        "latest_timestamp": "2026-04-29T22:35:43.793997Z",
-        "oldest_timestamp": "2026-04-28T22:36:53.819750Z",
+        "latest_timestamp": "2026-04-29T22:38:09.529831Z",
+        "oldest_timestamp": "2026-04-28T22:39:20.342114Z",
         "checks_failed_delta": 0,
         "word_salad_rejects_delta": 0,
         "placeholder_rejects_delta": 0,
@@ -2304,12 +2293,12 @@
     },
     "surface_parity": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T22:35:45.417317Z",
+      "generated_at_utc": "2026-04-29T22:38:09.559548Z",
       "window": {
         "trend_hours": 24,
         "samples": 1018,
-        "window_start_utc": "2026-04-28T22:36:53.938080Z",
-        "window_end_utc": "2026-04-29T22:35:45.417317Z"
+        "window_start_utc": "2026-04-28T22:39:20.361895Z",
+        "window_end_utc": "2026-04-29T22:38:09.559548Z"
       },
       "summary": {
         "surface_count": 4,
@@ -2347,8 +2336,8 @@
             }
           ],
           "trend_samples": 1018,
-          "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-          "window_latest_utc": "2026-04-29T22:35:45.417317Z"
+          "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+          "window_latest_utc": "2026-04-29T22:38:09.559548Z"
         },
         "website": {
           "label": "Website",
@@ -2375,8 +2364,8 @@
             }
           ],
           "trend_samples": 1018,
-          "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-          "window_latest_utc": "2026-04-29T22:35:45.417317Z"
+          "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+          "window_latest_utc": "2026-04-29T22:38:09.559548Z"
         },
         "launcher": {
           "label": "Launcher",
@@ -2403,8 +2392,8 @@
             }
           ],
           "trend_samples": 1018,
-          "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-          "window_latest_utc": "2026-04-29T22:35:45.417317Z"
+          "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+          "window_latest_utc": "2026-04-29T22:38:09.559548Z"
         },
         "installer": {
           "label": "Installer",
@@ -2431,8 +2420,8 @@
             }
           ],
           "trend_samples": 1018,
-          "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-          "window_latest_utc": "2026-04-29T22:35:45.417317Z"
+          "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+          "window_latest_utc": "2026-04-29T22:38:09.559548Z"
         }
       },
       "ranking": [
@@ -2462,8 +2451,8 @@
             }
           ],
           "trend_samples": 1018,
-          "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-          "window_latest_utc": "2026-04-29T22:35:45.417317Z",
+          "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+          "window_latest_utc": "2026-04-29T22:38:09.559548Z",
           "rank": 1
         },
         {
@@ -2492,8 +2481,8 @@
             }
           ],
           "trend_samples": 1018,
-          "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-          "window_latest_utc": "2026-04-29T22:35:45.417317Z",
+          "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+          "window_latest_utc": "2026-04-29T22:38:09.559548Z",
           "rank": 2
         },
         {
@@ -2522,8 +2511,8 @@
             }
           ],
           "trend_samples": 1018,
-          "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-          "window_latest_utc": "2026-04-29T22:35:45.417317Z",
+          "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+          "window_latest_utc": "2026-04-29T22:38:09.559548Z",
           "rank": 3
         },
         {
@@ -2552,15 +2541,15 @@
             }
           ],
           "trend_samples": 1018,
-          "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-          "window_latest_utc": "2026-04-29T22:35:45.417317Z",
+          "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+          "window_latest_utc": "2026-04-29T22:38:09.559548Z",
           "rank": 4
         }
       ]
     },
     "launcher_readiness": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T22:35:45.444265Z",
+      "generated_at_utc": "2026-04-29T22:38:09.586188Z",
       "summary": {
         "state": "in_progress",
         "state_label": "🟡 IN_PROGRESS",
@@ -2618,7 +2607,7 @@
           "required_waves": 3,
           "waves_observed": 0,
           "waves_considered": [],
-          "wave_history_rows_total": 1768,
+          "wave_history_rows_total": 1770,
           "wave_history_rows_window": 1018,
           "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
           "stale_alerts_monitored": [
@@ -2637,17 +2626,17 @@
         "quality_trend_24h": {
           "label": "Trend 24h identycznych EN + word_salad dla client/otclient_modules",
           "pass": true,
-          "detail": "window=24.00h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
+          "detail": "window=24.01h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
           "window_hours": 24,
-          "window_start_utc": "2026-04-28T22:35:35.523589Z",
-          "window_end_utc": "2026-04-29T22:35:45.444265Z",
-          "window_span_hours": 24.0,
+          "window_start_utc": "2026-04-28T22:37:37.925480Z",
+          "window_end_utc": "2026-04-29T22:38:09.586188Z",
+          "window_span_hours": 24.01,
           "has_min_24h_window": true,
           "files": {
             "client.json": {
               "samples": 1020,
-              "oldest_timestamp": "2026-04-28T22:35:35.523589Z",
-              "latest_timestamp": "2026-04-29T22:35:45.444265Z",
+              "oldest_timestamp": "2026-04-28T22:37:37.925480Z",
+              "latest_timestamp": "2026-04-29T22:38:09.586188Z",
               "oldest_identical_to_en_pct": 31.4,
               "latest_identical_to_en_pct": 31.4,
               "delta_identical_to_en_pct": 0.0,
@@ -2658,8 +2647,8 @@
             },
             "otclient_modules.json": {
               "samples": 1020,
-              "oldest_timestamp": "2026-04-28T22:35:35.523589Z",
-              "latest_timestamp": "2026-04-29T22:35:45.444265Z",
+              "oldest_timestamp": "2026-04-28T22:37:37.925480Z",
+              "latest_timestamp": "2026-04-29T22:38:09.586188Z",
               "oldest_identical_to_en_pct": 29.79,
               "latest_identical_to_en_pct": 29.79,
               "delta_identical_to_en_pct": 0.0,
@@ -2721,13 +2710,13 @@
     },
     "provider_routing": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T22:35:46.467511Z",
+      "generated_at_utc": "2026-04-29T22:38:11.488716Z",
       "active_provider": "OpenAI model pool",
       "active_provider_code": "openai_model_pool",
       "active_provider_source": "openai:openai/gpt-4o-mini",
       "active_provider_timestamp": "2026-04-29T22:33:19.538437Z",
       "active_model": "openai/gpt-4o-mini",
-      "fallback_reason": "TM/simple → fallback to next provider validate fail [validate_word_salad] server.json",
+      "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
       "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
       "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
       "router_registry_path": "provider_router_registry.json",
@@ -2791,12 +2780,12 @@
           "provider_limit_telemetry:provider_budget_high"
         ],
         "provider_consistency_debt": 450,
-        "recent_window_writes": 567,
+        "recent_window_writes": 547,
         "recent_write_breakdown": [
           {
             "provider": "openai_model_pool",
             "provider_label": "OpenAI model pool",
-            "writes": 257
+            "writes": 237
           },
           {
             "provider": "tm_simple",
@@ -2819,8 +2808,13 @@
             "writes": 3
           }
         ],
-        "fallbacks_last_200": 10,
+        "fallbacks_last_200": 19,
         "fallback_action_breakdown": [
+          {
+            "action": "fallback_to_google_translate_high",
+            "action_label": "fallback to google translate high",
+            "count": 11
+          },
           {
             "action": "fallback_to_next_provider_validate_fail",
             "action_label": "fallback to next provider validate fail",
@@ -2829,11 +2823,6 @@
           {
             "action": "fallback_chain_exhausted_high_reject_types",
             "action_label": "fallback chain exhausted high reject types",
-            "count": 2
-          },
-          {
-            "action": "fallback_to_google_translate_high",
-            "action_label": "fallback to google translate high",
             "count": 2
           },
           {
@@ -2861,8 +2850,8 @@
           "openai_model_pool": {
             "status": "active",
             "active_model": "openai/gpt-4o-mini",
-            "recent_writes": 257,
-            "requests_today": 231
+            "recent_writes": 237,
+            "requests_today": 238
           }
         },
         "openai_model_pool": {
@@ -2905,19 +2894,19 @@
           ],
           "request_budget_cap": 250,
           "request_budget_policy": "telemetry_only",
-          "requests_today": 231,
+          "requests_today": 238,
           "selected_model": "openai/gpt-4o-mini",
           "pool_latest": {
             "schema_version": "1.0",
-            "generated_at_utc": "2026-04-29T22:28:35.633931Z",
+            "generated_at_utc": "2026-04-29T22:37:43.948046Z",
             "status": "active",
             "reason": "ok",
             "active": true,
             "selected_model": "openai/gpt-4o-mini",
-            "response_ms": 1588,
+            "response_ms": 1778,
             "rate_limited": false,
-            "requests_total_today": 231,
-            "translated_total_today": 1202,
+            "requests_total_today": 238,
+            "translated_total_today": 1241,
             "request_budget_cap": 250,
             "request_budget_policy": "telemetry_only",
             "models": [
@@ -2934,12 +2923,12 @@
               {
                 "model": "openai/gpt-4o-mini",
                 "priority": 1,
-                "requests_today": 69,
-                "translated_today": 357,
+                "requests_today": 76,
+                "translated_today": 396,
                 "blocked_until_utc": "",
                 "last_status": "ok",
                 "last_error_reason": "",
-                "last_response_ms": 1588
+                "last_response_ms": 1778
               },
               {
                 "model": "openai/gpt-5",
@@ -2968,10 +2957,10 @@
             "warn_used_pct": 80.0,
             "critical_used_pct": 100.0
           },
-          "used_pct": 92.4,
+          "used_pct": 95.2,
           "monthly_cap": 250.0,
-          "spent": 231.0,
-          "latest_age_s": 424.947655,
+          "spent": 238.0,
+          "latest_age_s": 16.331425,
           "day_utc": "2026-04-29",
           "unit": "requests_per_day",
           "stale": false
@@ -3004,35 +2993,35 @@
         }
       },
       "latest_fallback": {
-        "timestamp": "2026-04-29T22:33:49.773804Z",
+        "timestamp": "2026-04-29T22:37:06.284706Z",
         "provider": "tm_simple",
         "provider_label": "TM/simple",
         "source": "tm",
-        "action": "fallback_to_next_provider_validate_fail",
-        "action_label": "fallback to next provider validate fail",
-        "decision_reason": "validate_word_salad",
-        "json_file": "server.json",
-        "key": "data.otservbr.global.scripts.quests.ferumbras.ascension.movements.shulgrax.lever.L16.1956"
+        "action": "fallback_to_google_translate_high",
+        "action_label": "fallback to google translate high",
+        "decision_reason": "high_reject_types",
+        "json_file": "items.json",
+        "key": "item.1269.name"
       }
     },
     "term_consistency": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T22:35:46.471182Z",
+      "generated_at_utc": "2026-04-29T22:38:11.490637Z",
       "available": true,
-      "lang": "ru",
-      "json_file": "items.json",
-      "surface": "items",
+      "lang": "es",
+      "json_file": "server.json",
+      "surface": "server",
       "registry_path": "term_registry_enriched.json",
-      "registry_terms_total": 14342,
-      "keys_scanned": 336,
-      "keys_with_term_usages": 152,
-      "keys_with_conflicts": 71,
-      "term_conflicts_total": 200,
-      "term_conflict_rate_pct": 46.711,
-      "term_conflict_rate_delta_pct": 46.711,
+      "registry_terms_total": 16771,
+      "keys_scanned": 0,
+      "keys_with_term_usages": 0,
+      "keys_with_conflicts": 0,
+      "term_conflicts_total": 0,
+      "term_conflict_rate_pct": 0.0,
+      "term_conflict_rate_delta_pct": 0.0,
       "auto_fixed_english_name_leaks": 0,
-      "inflection_suspects_flagged": 83,
-      "manual_review_enqueued": 117,
+      "inflection_suspects_flagged": 0,
+      "manual_review_enqueued": 0,
       "canonical_name_review_candidates": 0,
       "canonical_name_case_only_autofixed": 0,
       "canonical_name_semantic_autofixed": 0,
@@ -3040,120 +3029,8 @@
       "canonical_name_existing_quality_sanitized": 0,
       "canonical_name_existing_quality_sanitized_keys": [],
       "canonical_name_semantic_quality_blocked_keys": [],
-      "conflict_type_breakdown": {
-        "canonical_term_missing": 117,
-        "canonical_term_inflection_suspect": 83
-      },
-      "top_conflicts": [
-        {
-          "key": "item.10207.desc",
-          "conflict_type": "canonical_term_missing",
-          "canonical": "sНетwman",
-          "canonical_en": "snowman",
-          "translated_text": "Используйте его в своем доме, чтобы увидеть снеговика.",
-          "source_file": "items.json",
-          "source_key": "item.30336.name"
-        },
-        {
-          "key": "item.10216.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "статуя",
-          "canonical_en": "statue",
-          "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
-          "source_file": "items.json",
-          "source_key": "item.10322.name"
-        },
-        {
-          "key": "item.10216.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "статуя",
-          "canonical_en": "statue",
-          "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
-          "source_file": "items.json",
-          "source_key": "item.10975.name"
-        },
-        {
-          "key": "item.10216.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "статуя",
-          "canonical_en": "statue",
-          "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
-          "source_file": "items.json",
-          "source_key": "item.10976.name"
-        },
-        {
-          "key": "item.10216.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "статуя",
-          "canonical_en": "statue",
-          "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
-          "source_file": "items.json",
-          "source_key": "item.11696.name"
-        },
-        {
-          "key": "item.10216.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "статуя",
-          "canonical_en": "statue",
-          "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
-          "source_file": "items.json",
-          "source_key": "item.11697.name"
-        },
-        {
-          "key": "item.10216.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "статуя",
-          "canonical_en": "statue",
-          "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
-          "source_file": "items.json",
-          "source_key": "item.2025.name"
-        },
-        {
-          "key": "item.10217.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "книга",
-          "canonical_en": "book",
-          "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
-          "source_file": "items.json",
-          "source_key": "item.12276.name"
-        },
-        {
-          "key": "item.10217.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "книга",
-          "canonical_en": "book",
-          "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
-          "source_file": "items.json",
-          "source_key": "item.27929.name"
-        },
-        {
-          "key": "item.10217.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "книга",
-          "canonical_en": "book",
-          "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
-          "source_file": "items.json",
-          "source_key": "item.27930.name"
-        },
-        {
-          "key": "item.10217.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "книга",
-          "canonical_en": "book",
-          "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
-          "source_file": "items.json",
-          "source_key": "item.27931.name"
-        },
-        {
-          "key": "item.10217.desc",
-          "conflict_type": "canonical_term_inflection_suspect",
-          "canonical": "книга",
-          "canonical_en": "book",
-          "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
-          "source_file": "items.json",
-          "source_key": "item.2816.name"
-        }
-      ]
+      "conflict_type_breakdown": {},
+      "top_conflicts": []
     },
     "queue_health": {
       "blockers_state": "active",
@@ -3161,7 +3038,7 @@
       "blockers_missing_keys_total": 0,
       "blockers_missing_lang_files": 0,
       "visible_pending_tail": 397,
-      "oldest_visible_pending_age_s": 27606,
+      "oldest_visible_pending_age_s": 27751,
       "top_langs": [
         {
           "lang": "ru",
@@ -3199,23 +3076,23 @@
         }
       ],
       "deferred_state_keys_total": 8983,
-      "deferred_state_updated_at": "2026-04-29T22:35:36.402220Z",
-      "deferred_state_age_s": 6,
+      "deferred_state_updated_at": "2026-04-29T22:37:54.364574Z",
+      "deferred_state_age_s": 13,
       "deferred_state_stats": {
         "enqueued": 0,
         "suppressed_cooldown": 0,
-        "suppressed_manual_review": 4,
+        "suppressed_manual_review": 1,
         "deduped_ttl": 0,
         "manual_review_escalations": 0,
-        "partial_staged": 4,
+        "partial_staged": 0,
         "partial_completed": 0,
         "retry_loop_cooldown": 0,
-        "retry_loop_manual_review": 4
+        "retry_loop_manual_review": 0
       }
     },
     "doctor_alerts": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T22:35:46.816314Z",
+      "generated_at_utc": "2026-04-29T22:38:11.847796Z",
       "overall": "warning",
       "thresholds": {
         "heartbeat_stale_s": 300,
@@ -3230,16 +3107,16 @@
           "name": "HEARTBEAT_STALE",
           "status": "ok",
           "severity": "ok",
-          "value": 7,
+          "value": 116,
           "threshold": 300,
-          "detail": "Heartbeat świeży (7s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=ru:items.json].",
+          "detail": "Heartbeat świeży (116s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=cs:items.json].",
           "source": "worker_runtime_heartbeat.json"
         },
         {
           "name": "NO_WRITE",
           "status": "ok",
           "severity": "ok",
-          "value": 147,
+          "value": 292,
           "threshold": 900,
           "detail": "Recent writes wyglądają zdrowo.",
           "source": "translation_recent_report.jsonl"
@@ -3259,7 +3136,7 @@
           "severity": "warning",
           "value": {
             "pending": 397,
-            "oldest_s": 27606
+            "oldest_s": 27751
           },
           "threshold": {
             "pending_min": 200,
@@ -3296,26 +3173,20 @@
     },
     "doctor_remediation": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T22:27:02.221394Z",
+      "generated_at_utc": "2026-04-29T22:36:39.377334Z",
       "status": "ok",
       "open_alarms": [
-        {
-          "code": "DISPATCH_STALE",
-          "severity": "warning",
-          "source": "statusd_doctor.json",
-          "detail": "DISPATCH_STALE: dispatch state sprzed 1019s"
-        },
         {
           "code": "NATIVE_READINESS_BELOW_THRESHOLD",
           "severity": "warning",
           "source": "statusd_doctor.json",
-          "detail": "NATIVE_READINESS_BELOW_THRESHOLD: monitored=52/52 missing=[-] tier1=[-] tier2=[tr=35.83<50.0,sk=4.03<50.0,hu=4.14<50.0] tier3=[az=4.71<5.0,bg=4.7<5.0,bs=3.74<5.0,da=4.23<5.0,el=4.33<5.0,et=4.47<5.0,fi=4.19<5.0,hr=4.4<5.0"
+          "detail": "NATIVE_READINESS_BELOW_THRESHOLD: monitored=52/52 missing=[-] tier1=[-] tier2=[tr=35.87<50.0,sk=4.03<50.0,hu=4.14<50.0] tier3=[az=4.71<5.0,bg=4.7<5.0,bs=3.74<5.0,da=4.23<5.0,el=4.33<5.0,et=4.47<5.0,fi=4.19<5.0,hr=4.4<5.0"
         },
         {
           "code": "PROVIDER_BUDGET_80PCT",
           "severity": "warning",
           "source": "statusd_doctor.json",
-          "detail": "PROVIDER_BUDGET_80PCT: used=90.0% cap=250.0 spent=225.0 source=provider_budget_latest.json"
+          "detail": "PROVIDER_BUDGET_80PCT: used=92.4% cap=250.0 spent=231.0 source=provider_budget_latest.json"
         },
         {
           "code": "QUEUE_STARVATION_DETECTED",
@@ -3327,34 +3198,36 @@
           "code": "SURFACE_COVERAGE_IMBALANCE",
           "severity": "warning",
           "source": "statusd_doctor.json",
-          "detail": "SURFACE_COVERAGE_IMBALANCE: max_spread=36.23pp top=[ru:36.23pp,sr:32.41pp,pt:29.74pp,nl:27.42pp,de:19.46pp] source=statusd_report.json"
+          "detail": "SURFACE_COVERAGE_IMBALANCE: max_spread=36.24pp top=[ru:36.24pp,sr:32.41pp,pt:29.74pp,nl:27.42pp,de:19.46pp] source=statusd_report.json"
         },
         {
           "code": "SUSPICIOUS_HIGH_ELEVATED",
           "severity": "warning",
           "source": "statusd_doctor.json",
-          "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=322 rate=10.003% window=6.0h top_lang=cs:112 per_domain=[server.json:26(1300.0%/warning)]"
+          "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=277 rate=8.76% window=6.0h top_lang=es:97 per_domain=[server.json:26(1300.0%/warning)]"
         },
         {
           "code": "TERM_CONSISTENCY_REGRESSION",
           "severity": "critical",
           "source": "statusd_doctor.json",
-          "detail": "TERM_CONSISTENCY_REGRESSION: rate=28.235% delta=28.235% total=200 source=term_conflicts_latest.json"
+          "detail": "TERM_CONSISTENCY_REGRESSION: rate=46.711% delta=46.711% total=200 source=term_conflicts_latest.json"
         }
       ],
-      "resolved_this_cycle": [],
+      "resolved_this_cycle": [
+        "DISPATCH_STALE"
+      ],
       "newly_opened": [],
       "summary": {
-        "open_count": 7,
-        "resolved_count": 0,
+        "open_count": 6,
+        "resolved_count": 1,
         "tracked_alarms": 32
       },
       "action_plan": {
         "recommended_action": "force_auto",
         "selected_action": "none",
         "selected_command": "-",
-        "result": "pending",
-        "reason": "write_starvation_or_queue_starvation",
+        "result": "resolved_update",
+        "reason": "resolved_count=1",
         "suppressed_by_cooldown": true,
         "cooldown_remaining_cycles": 2
       }

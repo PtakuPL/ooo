@@ -1,17 +1,37 @@
 {
-  "category": "es",
-  "cycle": 20,
+  "category": "cs",
+  "cycle": 21,
   "eta_seconds": 0,
-  "file": "server.json",
-  "generated_at_utc": "2026-04-29T22:35:29Z",
+  "file": "items.json",
+  "generated_at_utc": "2026-04-29T22:36:49Z",
   "message": "auto translate in progress",
   "phase": "AUTO_TRANSLATE",
   "progress": {
     "done": 0,
-    "total": 9,
+    "total": 30,
     "unit": "keys"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "cs",
+      "cycle": 21,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T22:36:49Z"
+    },
+    {
+      "action": "update",
+      "category": "cs",
+      "cycle": 21,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_start",
+      "t": "2026-04-29T22:36:48Z"
+    },
     {
       "action": "update",
       "category": "es",
@@ -91,26 +111,6 @@
       "result": "ok",
       "stage": "auto_start",
       "t": "2026-04-29T22:27:06Z"
-    },
-    {
-      "action": "update",
-      "category": "tr",
-      "cycle": 19,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-04-29T22:26:34Z"
-    },
-    {
-      "action": "update",
-      "category": "tr",
-      "cycle": 19,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T22:25:32Z"
     }
   ],
   "stage": "heartbeat_tick",

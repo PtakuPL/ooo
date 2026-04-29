@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
-  "timestamp": "2026-04-29T22:25:31.738249Z",
-  "built_cycle": 19,
+  "timestamp": "2026-04-29T22:36:46.464188Z",
+  "built_cycle": 21,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -701,15 +701,15 @@
     {
       "lang": "ru",
       "json_file": "items.json",
-      "pending_total": 24068,
-      "todo": 24068,
-      "simple_todo": 21805,
-      "marker_todo": 24068,
+      "pending_total": 24070,
+      "todo": 24070,
+      "simple_todo": 21807,
+      "marker_todo": 24070,
       "missing_in_lang": 0,
       "name_total": 33425,
-      "name_pending": 21236,
+      "name_pending": 21238,
       "name_missing_in_lang": 0,
-      "name_coverage_pct": 36.47
+      "name_coverage_pct": 36.46
     },
     {
       "lang": "ru",
@@ -3431,15 +3431,15 @@
     {
       "lang": "tr",
       "json_file": "items.json",
-      "pending_total": 28631,
-      "todo": 28631,
-      "simple_todo": 26670,
-      "marker_todo": 28631,
+      "pending_total": 28601,
+      "todo": 28601,
+      "simple_todo": 26640,
+      "marker_todo": 28601,
       "missing_in_lang": 0,
       "name_total": 33425,
-      "name_pending": 26183,
+      "name_pending": 26153,
       "name_missing_in_lang": 0,
-      "name_coverage_pct": 21.67
+      "name_coverage_pct": 21.76
     },
     {
       "lang": "tr",

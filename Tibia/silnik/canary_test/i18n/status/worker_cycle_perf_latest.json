@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-29T22:27:06.455561Z",
-  "cycle": 20,
+  "timestamp": "2026-04-29T22:36:48.047675Z",
+  "cycle": 21,
   "mode": "AUTO_TRANSLATE",
-  "category": "ru",
+  "category": "cs",
   "events": {
-    "dispatch": 4193
+    "dispatch": 8740
   }
 }

@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:35:45.417317Z",
+  "generated_at_utc": "2026-04-29T22:38:09.559548Z",
   "window": {
     "trend_hours": 24,
     "samples": 1018,
-    "window_start_utc": "2026-04-28T22:36:53.938080Z",
-    "window_end_utc": "2026-04-29T22:35:45.417317Z"
+    "window_start_utc": "2026-04-28T22:39:20.361895Z",
+    "window_end_utc": "2026-04-29T22:38:09.559548Z"
   },
   "summary": {
     "surface_count": 4,
@@ -43,8 +43,8 @@
         }
       ],
       "trend_samples": 1018,
-      "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-      "window_latest_utc": "2026-04-29T22:35:45.417317Z"
+      "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+      "window_latest_utc": "2026-04-29T22:38:09.559548Z"
     },
     "website": {
       "label": "Website",
@@ -71,8 +71,8 @@
         }
       ],
       "trend_samples": 1018,
-      "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-      "window_latest_utc": "2026-04-29T22:35:45.417317Z"
+      "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+      "window_latest_utc": "2026-04-29T22:38:09.559548Z"
     },
     "launcher": {
       "label": "Launcher",
@@ -99,8 +99,8 @@
         }
       ],
       "trend_samples": 1018,
-      "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-      "window_latest_utc": "2026-04-29T22:35:45.417317Z"
+      "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+      "window_latest_utc": "2026-04-29T22:38:09.559548Z"
     },
     "installer": {
       "label": "Installer",
@@ -127,8 +127,8 @@
         }
       ],
       "trend_samples": 1018,
-      "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-      "window_latest_utc": "2026-04-29T22:35:45.417317Z"
+      "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+      "window_latest_utc": "2026-04-29T22:38:09.559548Z"
     }
   },
   "ranking": [
@@ -158,8 +158,8 @@
         }
       ],
       "trend_samples": 1018,
-      "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-      "window_latest_utc": "2026-04-29T22:35:45.417317Z",
+      "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+      "window_latest_utc": "2026-04-29T22:38:09.559548Z",
       "rank": 1
     },
     {
@@ -188,8 +188,8 @@
         }
       ],
       "trend_samples": 1018,
-      "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-      "window_latest_utc": "2026-04-29T22:35:45.417317Z",
+      "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+      "window_latest_utc": "2026-04-29T22:38:09.559548Z",
       "rank": 2
     },
     {
@@ -218,8 +218,8 @@
         }
       ],
       "trend_samples": 1018,
-      "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-      "window_latest_utc": "2026-04-29T22:35:45.417317Z",
+      "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+      "window_latest_utc": "2026-04-29T22:38:09.559548Z",
       "rank": 3
     },
     {
@@ -248,8 +248,8 @@
         }
       ],
       "trend_samples": 1018,
-      "window_oldest_utc": "2026-04-28T22:36:53.938080Z",
-      "window_latest_utc": "2026-04-29T22:35:45.417317Z",
+      "window_oldest_utc": "2026-04-28T22:39:20.361895Z",
+      "window_latest_utc": "2026-04-29T22:38:09.559548Z",
       "rank": 4
     }
   ]

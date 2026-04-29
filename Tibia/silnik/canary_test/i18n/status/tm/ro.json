@@ -1570,10 +1570,10 @@
   "item.10216.name": {
     "src_hash": "a5c37b0b99535230dcd569b7130cc54b",
     "text": "kit statuie dragon",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:07.745120Z"
+    "updated_at": "2026-04-29T21:48:11.364162Z"
   },
   "item.10217.name": {
     "src_hash": "910960a7c0b00d2d1e1209ff40d1381e",
@@ -75873,59 +75873,59 @@
   },
   "item.10334.name": {
     "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
-    "text": "marauder orc mort",
-    "source": "openai:openai/gpt-4.1-mini",
-    "confidence": 0.96,
+    "text": "orc mort jefuitor",
+    "source": "canonical_name_semantic_autofix",
+    "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:07.750769Z"
+    "updated_at": "2026-04-29T21:51:18.889199Z"
   },
   "item.10335.name": {
     "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
-    "text": "marauder orc mort",
-    "source": "openai:openai/gpt-4.1-mini",
+    "text": "orc mort jefuitor",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:10.002806Z"
+    "updated_at": "2026-04-29T21:48:13.840964Z"
   },
   "item.10337.name": {
     "src_hash": "959ce8c7e2a761366662cf50e48fffc8",
-    "text": "marauder orc mort",
-    "source": "openai:openai/gpt-4.1-mini",
+    "text": "orc mort jefuitor",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:10.009463Z"
+    "updated_at": "2026-04-29T21:48:13.846245Z"
   },
   "item.11667.name": {
     "src_hash": "770e51ca85f88a2ba066ab1f2ea5c70c",
     "text": "draken abominație moartă",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:10.018301Z"
+    "updated_at": "2026-04-29T21:48:13.853160Z"
   },
   "item.11668.name": {
     "src_hash": "770e51ca85f88a2ba066ab1f2ea5c70c",
     "text": "draken abominație moartă",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:10.026775Z"
+    "updated_at": "2026-04-29T21:48:13.859739Z"
   },
   "item.11669.name": {
     "src_hash": "770e51ca85f88a2ba066ab1f2ea5c70c",
     "text": "draken abominație moartă",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:10.035213Z"
+    "updated_at": "2026-04-29T21:48:13.866534Z"
   },
   "item.11670.name": {
     "src_hash": "770e51ca85f88a2ba066ab1f2ea5c70c",
     "text": "draken abominație moartă",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:10.043491Z"
+    "updated_at": "2026-04-29T21:48:13.873129Z"
   },
   "npc.a_fluffy_squirrel.voice_1": {
     "src_hash": "9280e35fe8a04c63939438a4aded92fa",
@@ -253833,27 +253833,27 @@
   },
   "item.13656.desc": {
     "src_hash": "3578c5b32f47da7a6e917932befd7db6",
-    "text": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
+    "text": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
     "source": "term_consistency_autofix",
     "confidence": 0.93,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:28.140826Z"
+    "updated_at": "2026-04-29T21:48:33.423305Z"
   },
   "item.13658.desc": {
     "src_hash": "3578c5b32f47da7a6e917932befd7db6",
-    "text": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
+    "text": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
     "source": "term_consistency_autofix",
     "confidence": 0.93,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:28.140927Z"
+    "updated_at": "2026-04-29T21:48:33.423415Z"
   },
   "item.14760.desc": {
     "src_hash": "234ede9831e1902a0c3fde8ec8683ebc",
-    "text": "Aceasta este o emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă a înțelepciunii. A fost acordat de TibiaStat.com",
+    "text": "Aceasta este o emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă a înțelepciunii. A fost acordat de TibiaStat.com",
     "source": "term_consistency_autofix",
     "confidence": 0.93,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:28.140975Z"
+    "updated_at": "2026-04-29T21:48:33.423467Z"
   },
   "item.10001.name": {
     "src_hash": "2476a5a90c029582282973dffc394319",
@@ -254869,7 +254869,7 @@
     "source": "canonical_name_semantic_autofix",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T20:46:53.301177Z"
+    "updated_at": "2026-04-29T21:51:18.892909Z"
   },
   "item.10508.name": {
     "src_hash": "c396e254e6f6b18e9e5d818ef79ac410",
@@ -257141,7 +257141,7 @@
     "source": "canonical_name_semantic_autofix",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T20:46:53.303029Z"
+    "updated_at": "2026-04-29T21:51:18.895136Z"
   },
   "item.11378.name": {
     "src_hash": "7f7eeecbd1e8f8c87f8cc7d1d94393d9",
@@ -258489,11 +258489,11 @@
   },
   "item.11628.name": {
     "src_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "text": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
+    "text": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.649106Z"
+    "updated_at": "2026-04-29T21:48:05.942631Z"
   },
   "item.11629.name": {
     "src_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
@@ -258513,83 +258513,83 @@
   },
   "item.11630.name": {
     "src_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "text": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
+    "text": "emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă de rună de aur",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.691239Z"
+    "updated_at": "2026-04-29T21:48:05.985274Z"
   },
   "item.11631.name": {
     "src_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "text": "emblemăăăăăăăăăăăăăă de rună de argint",
+    "text": "emblemăăăăăăăăăăăăăăă de rună de argint",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.703253Z"
+    "updated_at": "2026-04-29T21:48:05.998402Z"
   },
   "item.11632.name": {
     "src_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "text": "emblemăăăăăăăăăăăăăă de rună de aur",
+    "text": "emblemăăăăăăăăăăăăăăă de rună de aur",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.714432Z"
+    "updated_at": "2026-04-29T21:48:06.010264Z"
   },
   "item.11633.name": {
     "src_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "text": "emblemăăăăăăăăăăăăăă de rună de argint",
+    "text": "emblemăăăăăăăăăăăăăăă de rună de argint",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.726272Z"
+    "updated_at": "2026-04-29T21:48:06.022536Z"
   },
   "item.11634.name": {
     "src_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "text": "emblemăăăăăăăăăăăăăă de rună de aur",
+    "text": "emblemăăăăăăăăăăăăăăă de rună de aur",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.737372Z"
+    "updated_at": "2026-04-29T21:48:06.034194Z"
   },
   "item.11635.name": {
     "src_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "text": "emblemăăăăăăăăăăăăăă de rună de argint",
+    "text": "emblemăăăăăăăăăăăăăăă de rună de argint",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.749081Z"
+    "updated_at": "2026-04-29T21:48:06.046683Z"
   },
   "item.11636.name": {
     "src_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "text": "emblemăăăăăăăăăăăăăă de rună de aur",
+    "text": "emblemăăăăăăăăăăăăăăă de rună de aur",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.760181Z"
+    "updated_at": "2026-04-29T21:48:06.058466Z"
   },
   "item.11637.name": {
     "src_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "text": "emblemăăăăăăăăăăăăăă de rună de argint",
+    "text": "emblemăăăăăăăăăăăăăăă de rună de argint",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.771717Z"
+    "updated_at": "2026-04-29T21:48:06.070659Z"
   },
   "item.11638.name": {
     "src_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "text": "emblemăăăăăăăăăăăăăă de rună de aur",
+    "text": "emblemăăăăăăăăăăăăăăă de rună de aur",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.782585Z"
+    "updated_at": "2026-04-29T21:48:06.082287Z"
   },
   "item.11639.name": {
     "src_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "text": "emblemăăăăăăăăăăăăăă de rună de argint",
+    "text": "emblemăăăăăăăăăăăăăăă de rună de argint",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.794149Z"
+    "updated_at": "2026-04-29T21:48:06.094483Z"
   },
   "item.1164.name": {
     "src_hash": "38a1b03318bc9598ab07f0a475ade9aa",
@@ -258633,51 +258633,51 @@
   },
   "item.11644.name": {
     "src_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "text": "emblemăăăăăăăăăăă de rună de aur",
+    "text": "emblemăăăăăăăăăăăă de rună de aur",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.884153Z"
+    "updated_at": "2026-04-29T21:48:06.185371Z"
   },
   "item.11645.name": {
     "src_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "text": "emblemăăăăăăăăăăă de rună de argint",
+    "text": "emblemăăăăăăăăăăăă de rună de argint",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.895595Z"
+    "updated_at": "2026-04-29T21:48:06.197102Z"
   },
   "item.11646.name": {
     "src_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "text": "emblemăăăăăăăăăăă de rună de aur",
+    "text": "emblemăăăăăăăăăăăă de rună de aur",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.906217Z"
+    "updated_at": "2026-04-29T21:48:06.207751Z"
   },
   "item.11647.name": {
     "src_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "text": "emblemăăăăăăăăăăă de rună de argint",
+    "text": "emblemăăăăăăăăăăăă de rună de argint",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.917740Z"
+    "updated_at": "2026-04-29T21:48:06.219168Z"
   },
   "item.11648.name": {
     "src_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "text": "emblemăăăăăăăăăăă de rună de aur",
+    "text": "emblemăăăăăăăăăăăă de rună de aur",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.928917Z"
+    "updated_at": "2026-04-29T21:48:06.229880Z"
   },
   "item.11649.name": {
     "src_hash": "6aa2bc71f02e4c9148ea1b20ed8fd92f",
-    "text": "emblemăăăăăăăăăăă de rună de argint",
+    "text": "emblemăăăăăăăăăăăă de rună de argint",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.940801Z"
+    "updated_at": "2026-04-29T21:48:06.241270Z"
   },
   "item.1165.name": {
     "src_hash": "38a1b03318bc9598ab07f0a475ade9aa",
@@ -258689,11 +258689,11 @@
   },
   "item.11650.name": {
     "src_hash": "995b3486f4caf4ec71b7086b3301db06",
-    "text": "emblemăăăăăăăăăăă de rună de aur",
+    "text": "emblemăăăăăăăăăăăă de rună de aur",
     "source": "autofix_existing_normalization",
     "confidence": 0.9,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:00.958167Z"
+    "updated_at": "2026-04-29T21:48:06.256292Z"
   },
   "item.1166.name": {
     "src_hash": "38a1b03318bc9598ab07f0a475ade9aa",
@@ -258922,34 +258922,34 @@
   "item.10190.name": {
     "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
     "text": "războinic draken mort",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:07.715928Z"
+    "updated_at": "2026-04-29T21:48:11.339472Z"
   },
   "item.10191.name": {
     "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
     "text": "războinic draken mort",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:07.723890Z"
+    "updated_at": "2026-04-29T21:48:11.345914Z"
   },
   "item.10192.name": {
     "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
     "text": "războinic draken mort",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:07.731700Z"
+    "updated_at": "2026-04-29T21:48:11.352587Z"
   },
   "item.10193.name": {
     "src_hash": "c4f472440ff1cb095aa917bb4daa2be0",
     "text": "războinic draken mort",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:07.739241Z"
+    "updated_at": "2026-04-29T21:48:11.358859Z"
   },
   "item.11734.name": {
     "src_hash": "a2be34a687f6932731ef67aa778253ee",
@@ -259306,26 +259306,26 @@
   "item.1177.name": {
     "src_hash": "2737b0c4c8e6bf0de9757788b845d1d7",
     "text": "acoperiș de lemn",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:12.997140Z"
+    "updated_at": "2026-04-29T21:48:16.372109Z"
   },
   "item.1178.name": {
     "src_hash": "2737b0c4c8e6bf0de9757788b845d1d7",
     "text": "acoperiș de lemn",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:13.003401Z"
+    "updated_at": "2026-04-29T21:48:16.377168Z"
   },
   "item.1179.name": {
     "src_hash": "2737b0c4c8e6bf0de9757788b845d1d7",
     "text": "acoperiș de lemn",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:13.009449Z"
+    "updated_at": "2026-04-29T21:48:16.382123Z"
   },
   "item.11793.name": {
     "src_hash": "f8fb4ea35e369b17e15e65b3cd498cea",
@@ -259410,49 +259410,161 @@
   "item.11809.name": {
     "src_hash": "da0902528f41770f795689cb4945f609",
     "text": "trunchi de lemn",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:13.014772Z"
+    "updated_at": "2026-04-29T21:48:16.386376Z"
   },
   "item.11810.name": {
     "src_hash": "da0902528f41770f795689cb4945f609",
     "text": "trunchi de lemn",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:13.019648Z"
+    "updated_at": "2026-04-29T21:48:16.390471Z"
   },
   "item.11815.name": {
     "src_hash": "ac309a9c301524eba9556ec901d5f61c",
     "text": "perdea zdrențuită",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:13.024960Z"
+    "updated_at": "2026-04-29T21:48:16.395219Z"
   },
   "item.11816.name": {
     "src_hash": "ac309a9c301524eba9556ec901d5f61c",
     "text": "perdea zdrențuită",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:14.904883Z"
+    "updated_at": "2026-04-29T21:48:18.572156Z"
   },
   "item.11817.name": {
     "src_hash": "ac309a9c301524eba9556ec901d5f61c",
     "text": "perdea zdrențuită",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:14.910111Z"
+    "updated_at": "2026-04-29T21:48:18.577368Z"
   },
   "item.11818.name": {
     "src_hash": "ac309a9c301524eba9556ec901d5f61c",
     "text": "perdea zdrențuită",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:45:14.915139Z"
+    "updated_at": "2026-04-29T21:48:18.582302Z"
+  },
+  "item.11821.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Sprite rezervat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T21:48:07.251442Z"
+  },
+  "item.11822.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "Sprite rezervat",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T21:48:07.263467Z"
+  },
+  "item.1183.name": {
+    "src_hash": "2737b0c4c8e6bf0de9757788b845d1d7",
+    "text": "acoperiș de lemn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:48:07.288566Z"
+  },
+  "item.11837.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "obiect necunoscut",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T21:48:07.329581Z"
+  },
+  "item.11838.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "obiect necunoscut",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T21:48:07.341202Z"
+  },
+  "item.11839.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "obiect necunoscut",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T21:48:07.352853Z"
+  },
+  "item.1184.name": {
+    "src_hash": "2737b0c4c8e6bf0de9757788b845d1d7",
+    "text": "acoperiș de lemn",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:48:07.363957Z"
+  },
+  "item.11840.name": {
+    "src_hash": "83a0e1cb6ac2b2644c45a102a9903416",
+    "text": "obiect necunoscut",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T21:48:07.374894Z"
+  },
+  "item.11842.name": {
+    "src_hash": "b8b7f457a4f45ada248185d38d8bb2b4",
+    "text": "nisip magică",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:48:07.384635Z"
+  },
+  "item.11843.name": {
+    "src_hash": "b8b7f457a4f45ada248185d38d8bb2b4",
+    "text": "nisip magică",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:48:07.389340Z"
+  },
+  "item.11823.name": {
+    "src_hash": "86e8567a1912d0cf599fa7e384bcf453",
+    "text": "ascunzătoare de lup",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T21:48:18.587657Z"
+  },
+  "item.11824.name": {
+    "src_hash": "86e8567a1912d0cf599fa7e384bcf453",
+    "text": "ascunzătoare de lup",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T21:48:18.592963Z"
+  },
+  "item.11835.name": {
+    "src_hash": "1ffafb87da08e799ae23b55a345d2446",
+    "text": "blană atârnată",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T21:48:18.597065Z"
+  },
+  "item.11836.name": {
+    "src_hash": "1ffafb87da08e799ae23b55a345d2446",
+    "text": "blană atârnată",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T21:48:20.451788Z"
   }
 }

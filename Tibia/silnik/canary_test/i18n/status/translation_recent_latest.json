@@ -1,26 +1,128 @@
 {
-  "timestamp": "2026-04-29T21:46:03.531814Z",
-  "language": "es",
-  "json_file": "npc.json",
-  "translated": 3,
+  "timestamp": "2026-04-29T21:53:31.393383Z",
+  "language": "ro",
+  "json_file": "items.json",
+  "translated": 61,
   "entries": [
     {
-      "key": "npc.captain_haba_open_sea.larboard_1",
-      "en": "SET FULL SAILS! SEA SERPENT ON THE LARBOARD SIDE!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A BALAR !!",
-      "source": "tm"
+      "key": "item.11670.name",
+      "en": "dead draken abomination",
+      "translated": "draken abominație moartă",
+      "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "npc.captain_haba_open_sea.say_2",
-      "en": "Harharhar, landlubber, ya got it all wrong!! The correct command would be LARBOARD side. Don't forget that, 'kay? Last one, what you gonna say to me when ya see somethin' to the right?",
-      "translated": "¡¡Harharhar, marinero de agua dulce, lo entendiste todo mal!! El comando correcto sería BABOR. No lo olvides, ¿'kay? Last one, what you gonna say to me when ya see somethin' a la derecha?",
-      "source": "tm"
+      "key": "item.1177.name",
+      "en": "wooden roof",
+      "translated": "acoperiș de lemn",
+      "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "npc.captain_haba_open_sea.greet_msg_1",
-      "en": "Wha'd ya want? Ask me 'bout the {instructions} if you don't know what to do! If you wanna head back to {Svargrond}, let me know.",
-      "translated": "¿Qué quieres? Pregúntame 'bout the {instructions} if you don'¡No sé qué hacer! Si quieres regresar a {Svargrond}, házmelo saber.",
-      "source": "google_translate"
+      "key": "item.1178.name",
+      "en": "wooden roof",
+      "translated": "acoperiș de lemn",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.1179.name",
+      "en": "wooden roof",
+      "translated": "acoperiș de lemn",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11809.name",
+      "en": "wooden trunk",
+      "translated": "trunchi de lemn",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11810.name",
+      "en": "wooden trunk",
+      "translated": "trunchi de lemn",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11815.name",
+      "en": "tattered curtain",
+      "translated": "perdea zdrențuită",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11816.name",
+      "en": "tattered curtain",
+      "translated": "perdea zdrențuită",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11817.name",
+      "en": "tattered curtain",
+      "translated": "perdea zdrențuită",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11818.name",
+      "en": "tattered curtain",
+      "translated": "perdea zdrențuită",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11823.name",
+      "en": "wolf hide",
+      "translated": "ascunzătoare de lup",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11824.name",
+      "en": "wolf hide",
+      "translated": "ascunzătoare de lup",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11835.name",
+      "en": "hanging fur",
+      "translated": "blană atârnată",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.11836.name",
+      "en": "hanging fur",
+      "translated": "blană atârnată",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.13656.desc",
+      "en": "This lamp is glowing very dimly.",
+      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
+      "source": "term_consistency_autofix"
+    },
+    {
+      "key": "item.13658.desc",
+      "en": "This lamp is glowing very dimly.",
+      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
+      "source": "term_consistency_autofix"
+    },
+    {
+      "key": "item.14760.desc",
+      "en": "This is an emblem of wisdom. It was awarded by TibiaStat.com",
+      "translated": "Aceasta este o emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă a înțelepciunii. A fost acordat de TibiaStat.com",
+      "source": "term_consistency_autofix"
+    },
+    {
+      "key": "item.10334.name",
+      "en": "dead orc marauder",
+      "translated": "orc mort jefuitor",
+      "source": "canonical_name_semantic_autofix"
+    },
+    {
+      "key": "item.10507.name",
+      "en": "lamp",
+      "translated": "lampă",
+      "source": "canonical_name_semantic_autofix"
+    },
+    {
+      "key": "item.11365.name",
+      "en": "ramp",
+      "translated": "rampă",
+      "source": "canonical_name_semantic_autofix"
     }
   ],
   "filtered_untranslated_marker": 0

@@ -1639,42 +1639,42 @@
   },
   {
     "date": "2026-04-29",
-    "hours_covered": 26,
+    "hours_covered": 27,
     "threshold": 24,
     "is_final": true,
     "ts_first": "2026-04-29T00:32:55Z",
-    "ts_last": "2026-04-29T20:51:39Z",
-    "translated": 16698,
-    "guard_fail": 628,
-    "suspicious_high": 7526,
+    "ts_last": "2026-04-29T21:53:21Z",
+    "translated": 17376,
+    "guard_fail": 630,
+    "suspicious_high": 7640,
     "identical_to_en": 0,
     "repair_start": 114185,
-    "repair_end": 114127,
-    "cycles": 393,
+    "repair_end": 113875,
+    "cycles": 400,
     "coverage_start": 17.91,
-    "coverage_end": 18.35,
-    "guard_fail_pct": 3.62,
-    "throughput_per_h": 642.2,
+    "coverage_end": 18.37,
+    "guard_fail_pct": 3.5,
+    "throughput_per_h": 643.6,
     "per_lang": {
       "cs": {
-        "t": 3172,
+        "t": 3269,
         "gf": 283,
-        "cov": 51.91
+        "cov": 51.96
       },
       "de": {
-        "t": 2891,
+        "t": 3190,
         "gf": 84,
-        "cov": 68.29
+        "cov": 68.66
       },
       "ru": {
-        "t": 2801,
-        "gf": 65,
+        "t": 2863,
+        "gf": 67,
         "cov": 46.3
       },
       "tr": {
-        "t": 2352,
+        "t": 2382,
         "gf": 0,
-        "cov": 35.79
+        "cov": 35.83
       },
       "ro": {
         "t": 2104,
@@ -1682,23 +1682,23 @@
         "cov": 69.85
       },
       "it": {
-        "t": 1950,
+        "t": 1981,
         "gf": 40,
-        "cov": 71.7
+        "cov": 71.74
       },
       "es": {
-        "t": 1428,
+        "t": 1587,
         "gf": 0,
-        "cov": 79.45
+        "cov": 79.61
       }
     },
     "per_cat": {
       "items.json": {
-        "t": 13807,
-        "gf": 544
+        "t": 14186,
+        "gf": 546
       },
       "npc.json": {
-        "t": 1572,
+        "t": 1871,
         "gf": 42
       },
       "otclient_modules.json": {
@@ -1707,7 +1707,7 @@
       }
     },
     "mode_distribution": {
-      "AUTO_TRANSLATE": 1609
+      "AUTO_TRANSLATE": 1633
     },
     "migration_completed": 15,
     "migration_total": 15

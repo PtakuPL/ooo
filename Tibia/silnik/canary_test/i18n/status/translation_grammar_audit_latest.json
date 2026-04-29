@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-04-29T20:51:38.840219Z",
+  "timestamp": "2026-04-29T21:53:20.694679Z",
   "schema_version": "1.0",
   "total_langs": 52,
   "total_domains": 39,
-  "total_genuine_checked": 436958,
+  "total_genuine_checked": 437484,
   "total_issues": 1367,
   "severity_totals": {
     "critical": 65,
-    "warning": 621,
-    "info": 681
+    "warning": 626,
+    "info": 676
   },
   "issue_type_breakdown": {
     "punctuation_missing": 426,
-    "html_tag_mismatch": 348,
-    "number_drift": 165,
-    "length_anomaly": 145,
-    "bracket_mismatch": 65,
+    "html_tag_mismatch": 355,
+    "number_drift": 164,
+    "length_anomaly": 142,
+    "bracket_mismatch": 64,
     "double_spaces": 61,
-    "mixed_language": 49,
+    "mixed_language": 47,
     "artifact_token": 43,
     "placeholder_mismatch": 22,
     "format_token_mismatch": 16,
@@ -174,6 +174,21 @@
       }
     },
     {
+      "lang": "de",
+      "total_issues": 50,
+      "domains_affected": 5,
+      "critical": 1,
+      "warning": 45,
+      "info": 4,
+      "top_domains": {
+        "npc.json": 33,
+        "books.json": 10,
+        "html.json": 4,
+        "client.json": 2,
+        "dataroot.json": 1
+      }
+    },
+    {
       "lang": "fr",
       "total_issues": 50,
       "domains_affected": 6,
@@ -199,21 +214,6 @@
         "achievements.json": 39,
         "actions.json": 7,
         "npc.json": 4
-      }
-    },
-    {
-      "lang": "de",
-      "total_issues": 50,
-      "domains_affected": 7,
-      "critical": 1,
-      "warning": 40,
-      "info": 9,
-      "top_domains": {
-        "npc.json": 29,
-        "books.json": 10,
-        "html.json": 4,
-        "otclient_modules.json": 3,
-        "client.json": 2
       }
     },
     {
@@ -697,7 +697,7 @@
     }
   ],
   "domain_breakdown": {
-    "npc.json": 476,
+    "npc.json": 480,
     "achievements.json": 462,
     "books.json": 139,
     "monsters.json": 60,
@@ -710,9 +710,7 @@
     "dataroot.json": 8,
     "globalevents.json": 8,
     "arena.json": 6,
-    "otclient_modules.json": 3,
     "messages.json": 2,
-    "php.json": 1,
     "quests.json": 1
   },
   "issues": [
@@ -3237,6 +3235,96 @@
       "tr_sample": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>"
     },
     {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>']",
+      "lang": "de",
+      "domain": "npc.json",
+      "key": "npc.a_vulcongra.greet_msg_1",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>']",
+      "lang": "de",
+      "domain": "npc.json",
+      "key": "npc.a_vulcongra.greet_msg_2",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>']",
+      "lang": "de",
+      "domain": "npc.json",
+      "key": "npc.a_vulcongra.greet_msg_3",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>"
+    },
+    {
+      "type": "placeholder_mismatch",
+      "severity": "critical",
+      "detail": "missing=['{water}'] extra=['{Wasser}']",
+      "lang": "de",
+      "domain": "npc.json",
+      "key": "npc.a_weakened_forest_fury.multi_9",
+      "en_sample": "The purest {water} from the purest well needs to be brought there and poured and {birds} that give life need to be broug",
+      "tr_sample": "Das reinste {Wasser} aus dem reinsten Brunnen muss dorthin gebracht und gegossen werden und {birds}, das Leben gibt, mus"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>']",
+      "lang": "de",
+      "domain": "npc.json",
+      "key": "npc.a_wyrm.greet_msg_1",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>']",
+      "lang": "de",
+      "domain": "npc.json",
+      "key": "npc.a_wyrm.greet_msg_2",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<gives you an elaborate report on monster activity>'] tr_tags=['<gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>']",
+      "lang": "de",
+      "domain": "npc.json",
+      "key": "npc.a_wyrm.greet_msg_3",
+      "en_sample": "Pssst! Keep it down! <gives you an elaborate report on monster activity>",
+      "tr_sample": "Pssst! Halten Sie es ruhig! <gibt Ihnen einen ausführlichen Bericht über die Monsteraktivitäten>"
+    },
+    {
+      "type": "html_tag_mismatch",
+      "severity": "warning",
+      "detail": "en_tags=['<SIGH>', '<nothing happens>'] tr_tags=['<SEUFF>', '<nichts passiert>']",
+      "lang": "de",
+      "domain": "npc.json",
+      "key": "npc.ahmet.multi_6",
+      "en_sample": "<nothing happens>....<SIGH> Like usual, they hide at the slightest sign of trouble! YOU! Want to earn some quick money?",
+      "tr_sample": "<nichts passiert>....<SEUFF> Wie üblich verstecken sie sich beim geringsten Anzeichen von Ärger! DU! Möchten Sie schnell"
+    },
+    {
+      "type": "number_drift",
+      "severity": "warning",
+      "detail": "missing=['10000']",
+      "lang": "de",
+      "domain": "npc.json",
+      "key": "npc.aldo.say_1",
+      "en_sample": "Do you want to repair your worn soft boots for 10000 gold coins?",
+      "tr_sample": "Möchten Sie Ihre abgenutzten Softboots für 10.000 Goldmünzen reparieren?"
+    },
+    {
       "type": "length_anomaly",
       "severity": "info",
       "detail": "ratio=0.067 en_len=119 tr_len=8",
@@ -3245,96 +3333,6 @@
       "key": "npc.gnomargery.say_24",
       "en_sample": "If you lose the parcels, you'll have to get new ones. Gnomux sells all the equipment that is required for our missions.",
       "tr_sample": "Ok then."
-    },
-    {
-      "type": "length_anomaly",
-      "severity": "info",
-      "detail": "ratio=0.047 en_len=172 tr_len=8",
-      "lang": "de",
-      "domain": "npc.json",
-      "key": "npc.gnomargery.say_29",
-      "en_sample": "Gnometastic! Get three reports from our agents. You can find them anywhere in the caves around us. Just keep looking for",
-      "tr_sample": "Ok then."
-    },
-    {
-      "type": "length_anomaly",
-      "severity": "info",
-      "detail": "ratio=0.036 en_len=222 tr_len=8",
-      "lang": "de",
-      "domain": "npc.json",
-      "key": "npc.gnomargery.say_34",
-      "en_sample": "Gnometastic! Find the hottest spot of the lava pools in the caves. If you lose the GTMD before you find the hot spot, yo",
-      "tr_sample": "Ok then."
-    },
-    {
-      "type": "length_anomaly",
-      "severity": "info",
-      "detail": "ratio=0.121 en_len=66 tr_len=8",
-      "lang": "de",
-      "domain": "npc.json",
-      "key": "npc.gnomargery.say_39",
-      "en_sample": "Gnometastic! You should have no trouble finding enough drillworms.",
-      "tr_sample": "Ok then."
-    },
-    {
-      "type": "placeholder_mismatch",
-      "severity": "critical",
-      "detail": "missing=['{Rotworm Stew, Hydra Tongue Salad, Roasted Dragon Wings, Tropical Fried Terrorbird, Banana Chocolate Shake, Veggie Casserole, Filled Jalapeno Peppers, Blessed Steak, Northern Fishburger, Carrot Cake, Coconut Shrimp Bake, Blackjack, Demonic Candy Balls, Sweet Mangonaise Elixir}'] extra=['{Rotworm Stew, Hydra Tongue Salad, Roasted Dragon Wings, Tropical Fried Terrorbird, Banana Chocolate Shake, Veggie Casserole, Filled Jalapeno Peppers, Blessed Steak, Northern Fishburger, Carrot Cake, Kokos-Garnelen-Auflauf, Blackjack, Demonic Candy Balls, süßes Mangonaise-Elixier}']",
-      "lang": "de",
-      "domain": "npc.json",
-      "key": "npc.jean_pierre.say_3",
-      "en_sample": "You can now cook any dish you want from this list: {Rotworm Stew, Hydra Tongue Salad, Roasted Dragon Wings, Tropical Fri",
-      "tr_sample": "You can now cook any dish you want from this list: {Rotworm Stew, Hydra Tongue Salad, Roasted Dragon Wings, Tropical Fri"
-    },
-    {
-      "type": "mixed_language",
-      "severity": "info",
-      "detail": ">=4 consecutive EN words found in translation",
-      "lang": "de",
-      "domain": "npc.json",
-      "key": "npc.jean_pierre.say_3",
-      "en_sample": "You can now cook any dish you want from this list: {Rotworm Stew, Hydra Tongue Salad, Roasted Dragon Wings, Tropical Fri",
-      "tr_sample": "You can now cook any dish you want from this list: {Rotworm Stew, Hydra Tongue Salad, Roasted Dragon Wings, Tropical Fri"
-    },
-    {
-      "type": "number_drift",
-      "severity": "warning",
-      "detail": "missing=['0.1']",
-      "lang": "de",
-      "domain": "otclient_modules.json",
-      "key": "otclient_modules.bestiary.tr_5",
-      "en_sample": "The Animus Mastery for this creature is unlocked.\nIt yields %s%% bonus experience points, plus an additional 0.1%% for e",
-      "tr_sample": "Die Animus-Meisterschaft für diese Kreatur ist freigeschaltet.\nEs bringt %s%% Bonus-Erfahrungspunkte plus zusätzlich 0,1"
-    },
-    {
-      "type": "number_drift",
-      "severity": "warning",
-      "detail": "missing=['0.1']",
-      "lang": "de",
-      "domain": "otclient_modules.json",
-      "key": "otclient_modules.bestiary.tr_8",
-      "en_sample": "The Animus Mastery for this creature is unlocked.\nIt yields %s%% bonus experience points, plus an additional 0.1%% for e",
-      "tr_sample": "Die Animus-Meisterschaft für diese Kreatur ist freigeschaltet.\nEs bringt %s%% Bonus-Erfahrungspunkte plus zusätzlich 0,1"
-    },
-    {
-      "type": "bracket_mismatch",
-      "severity": "warning",
-      "detail": "')': en=3 tr=4",
-      "lang": "de",
-      "domain": "otclient_modules.json",
-      "key": "otclient_modules.game_screenshot_otui.tr_4",
-      "en_sample": "Enable this option to save screenshots of the most important\nmoments of your Tibia career! Whenever one of the events yo",
-      "tr_sample": "Aktivieren Sie diese Option, um Screenshots der wichtigsten zu speichern\nMomente Ihrer Tibia Karriere! Wann immer eines "
-    },
-    {
-      "type": "mixed_language",
-      "severity": "info",
-      "detail": ">=4 consecutive EN words found in translation",
-      "lang": "de",
-      "domain": "php.json",
-      "key": "php.mailer.text2",
-      "en_sample": "Error while sending mail to <strong>$mail_to</strong>. More info can be found in system/logs/mailer-error.log",
-      "tr_sample": "Fehler beim Senden einer E-Mail an <strong>$mail_to</strong>. Weitere Informationen finden Sie in system/logs/mailer-err"
     },
     {
       "type": "html_tag_mismatch",

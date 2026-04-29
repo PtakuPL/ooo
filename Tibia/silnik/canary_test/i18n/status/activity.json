@@ -3,15 +3,45 @@
   "cycle": 15,
   "eta_seconds": 0,
   "file": "items.json",
-  "generated_at_utc": "2026-04-29T21:49:22Z",
-  "message": "auto translate in progress",
+  "generated_at_utc": "2026-04-29T21:53:39Z",
+  "message": "translated=61 guard_fail=0 strict_missing_key=0 strict_skipped_done=1643",
   "phase": "AUTO_TRANSLATE",
   "progress": {
-    "done": 0,
+    "done": 61,
     "total": 30,
     "unit": "keys"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "ro",
+      "cycle": 15,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-04-29T21:53:39Z"
+    },
+    {
+      "action": "update",
+      "category": "ro",
+      "cycle": 15,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T21:53:27Z"
+    },
+    {
+      "action": "update",
+      "category": "ro",
+      "cycle": 15,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T21:51:57Z"
+    },
     {
       "action": "update",
       "category": "ro",
@@ -81,38 +111,8 @@
       "result": "ok",
       "stage": "heartbeat_tick",
       "t": "2026-04-29T21:40:14Z"
-    },
-    {
-      "action": "update",
-      "category": "es",
-      "cycle": 14,
-      "file": "npc.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T21:38:44Z"
-    },
-    {
-      "action": "update",
-      "category": "cs",
-      "cycle": 14,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-04-29T21:38:30Z"
-    },
-    {
-      "action": "update",
-      "category": "cs",
-      "cycle": 14,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T21:37:04Z"
     }
   ],
-  "stage": "heartbeat_tick",
+  "stage": "auto_done",
   "status": "running"
 }

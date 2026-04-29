@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T18:54:05.339674Z",
+  "generated_at_utc": "2026-04-29T18:56:27.718732Z",
   "active_provider": "OpenAI model pool",
   "active_provider_code": "openai_model_pool",
   "active_provider_source": "openai:openai/gpt-4.1-mini",
   "active_provider_timestamp": "2026-04-29T18:53:29.435445Z",
   "active_model": "openai/gpt-4.1-mini",
-  "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
+  "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] otclient_modules.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
   "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
   "router_registry_path": "provider_router_registry.json",
@@ -65,6 +65,7 @@
   "provider_pool_health": {
     "overall_status": "degraded",
     "signals": [
+      "recent_fallback",
       "provider_consistency_debt:258"
     ],
     "provider_consistency_debt": 258,
@@ -96,12 +97,12 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 9,
+    "fallbacks_last_200": 8,
     "fallback_action_breakdown": [
       {
         "action": "fallback_to_google_translate_high",
         "action_label": "fallback to google translate high",
-        "count": 9
+        "count": 8
       }
     ],
     "providers": {
@@ -234,7 +235,7 @@
       "used_pct": 48.8,
       "monthly_cap": 250.0,
       "spent": 122.0,
-      "latest_age_s": 277.94265,
+      "latest_age_s": 431.968193,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false
@@ -267,14 +268,14 @@
     }
   },
   "latest_fallback": {
-    "timestamp": "2026-04-29T18:33:01.148287Z",
+    "timestamp": "2026-04-29T18:54:32.077396Z",
     "provider": "tm_simple",
     "provider_label": "TM/simple",
-    "source": "tm",
+    "source": "simple",
     "action": "fallback_to_google_translate_high",
     "action_label": "fallback to google translate high",
     "decision_reason": "high_reject_types",
-    "json_file": "items.json",
-    "key": "item.1269.name"
+    "json_file": "otclient_modules.json",
+    "key": "otclient_modules.data_options.tr_10"
   }
 }

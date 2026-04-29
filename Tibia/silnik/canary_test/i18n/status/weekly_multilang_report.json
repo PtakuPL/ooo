@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-29T18:10:23.264226Z",
+  "timestamp": "2026-04-29T18:56:04.703380Z",
   "week_number": 18,
-  "global_pct": 18.33,
+  "global_pct": 18.34,
   "total_ref": 3875872,
-  "total_translated": 710566,
+  "total_translated": 710801,
   "languages": [
     {
       "lang": "pl",
@@ -13,8 +13,8 @@
       "total": 74536,
       "en_copy": 5023,
       "missing": 0,
-      "delta_pct": 13.21,
-      "delta_keys": 9849,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T1"
     },
     {
@@ -25,20 +25,20 @@
       "total": 74536,
       "en_copy": 48839,
       "missing": 0,
-      "delta_pct": 4.68,
-      "delta_keys": 3492,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T2"
     },
     {
       "lang": "es",
       "name": "Hiszpański",
-      "pct": 79.28,
-      "translated": 59092,
+      "pct": 79.37,
+      "translated": 59160,
       "total": 74536,
-      "en_copy": 9549,
+      "en_copy": 9530,
       "missing": 0,
-      "delta_pct": 1.03,
-      "delta_keys": 764,
+      "delta_pct": 0.09,
+      "delta_keys": 68,
       "tier": "T1"
     },
     {
@@ -49,44 +49,44 @@
       "total": 74536,
       "en_copy": 49478,
       "missing": 0,
-      "delta_pct": 3.67,
-      "delta_keys": 2731,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T2"
     },
     {
       "lang": "it",
       "name": "Włoski",
-      "pct": 71.62,
-      "translated": 53379,
+      "pct": 71.66,
+      "translated": 53409,
       "total": 74536,
       "en_copy": 10029,
       "missing": 0,
-      "delta_pct": 3.82,
-      "delta_keys": 2842,
+      "delta_pct": 0.04,
+      "delta_keys": 30,
       "tier": "T2"
     },
     {
       "lang": "ro",
       "name": "Rumuński",
-      "pct": 69.79,
-      "translated": 52015,
+      "pct": 69.81,
+      "translated": 52033,
       "total": 74536,
       "en_copy": 12998,
       "missing": 0,
-      "delta_pct": 0.7,
-      "delta_keys": 517,
+      "delta_pct": 0.02,
+      "delta_keys": 18,
       "tier": "T3"
     },
     {
       "lang": "de",
       "name": "Niemiecki",
-      "pct": 67.84,
-      "translated": 50562,
+      "pct": 67.88,
+      "translated": 50596,
       "total": 74536,
       "en_copy": 64864,
       "missing": 0,
-      "delta_pct": 0.12,
-      "delta_keys": 87,
+      "delta_pct": 0.04,
+      "delta_keys": 34,
       "tier": "T2"
     },
     {
@@ -104,37 +104,37 @@
     {
       "lang": "cs",
       "name": "Czeski",
-      "pct": 51.76,
-      "translated": 38583,
+      "pct": 51.8,
+      "translated": 38611,
       "total": 74536,
-      "en_copy": 29741,
+      "en_copy": 29739,
       "missing": 0,
-      "delta_pct": 3.46,
-      "delta_keys": 2579,
+      "delta_pct": 0.04,
+      "delta_keys": 28,
       "tier": "T2"
     },
     {
       "lang": "ru",
       "name": "Rosyjski",
-      "pct": 46.26,
-      "translated": 34484,
+      "pct": 46.3,
+      "translated": 34511,
       "total": 74536,
       "en_copy": 4775,
       "missing": 0,
-      "delta_pct": 1.84,
-      "delta_keys": 1378,
+      "delta_pct": 0.04,
+      "delta_keys": 27,
       "tier": "T2"
     },
     {
       "lang": "tr",
       "name": "Turecki",
-      "pct": 35.67,
-      "translated": 26589,
+      "pct": 35.71,
+      "translated": 26619,
       "total": 74536,
       "en_copy": 3838,
       "missing": 0,
-      "delta_pct": 3.7,
-      "delta_keys": 2757,
+      "delta_pct": 0.04,
+      "delta_keys": 30,
       "tier": "T2"
     },
     {
@@ -181,8 +181,8 @@
       "total": 74536,
       "en_copy": 3974,
       "missing": 20793,
-      "delta_pct": -0.09,
-      "delta_keys": -61,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T3"
     },
     {
@@ -205,8 +205,8 @@
       "total": 74536,
       "en_copy": 3960,
       "missing": 20793,
-      "delta_pct": -0.04,
-      "delta_keys": -31,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T3"
     },
     {
@@ -229,8 +229,8 @@
       "total": 74536,
       "en_copy": 3927,
       "missing": 20793,
-      "delta_pct": -0.08,
-      "delta_keys": -62,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T3"
     },
     {
@@ -241,8 +241,8 @@
       "total": 74536,
       "en_copy": 3935,
       "missing": 20793,
-      "delta_pct": -0.08,
-      "delta_keys": -61,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T3"
     },
     {
@@ -265,8 +265,8 @@
       "total": 74536,
       "en_copy": 3932,
       "missing": 20793,
-      "delta_pct": -0.09,
-      "delta_keys": -61,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T3"
     },
     {
@@ -277,8 +277,8 @@
       "total": 74536,
       "en_copy": 3959,
       "missing": 20793,
-      "delta_pct": -0.04,
-      "delta_keys": -31,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T3"
     },
     {
@@ -289,8 +289,8 @@
       "total": 74536,
       "en_copy": 3979,
       "missing": 20793,
-      "delta_pct": -0.04,
-      "delta_keys": -31,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T3"
     },
     {
@@ -337,8 +337,8 @@
       "total": 74536,
       "en_copy": 3806,
       "missing": 20957,
-      "delta_pct": -0.05,
-      "delta_keys": -31,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T3"
     },
     {
@@ -481,8 +481,8 @@
       "total": 74536,
       "en_copy": 2814,
       "missing": 20793,
-      "delta_pct": -0.05,
-      "delta_keys": -35,
+      "delta_pct": 0.0,
+      "delta_keys": 0,
       "tier": "T3"
     },
     {
@@ -633,46 +633,46 @@
   "tier_summary": {
     "T1": {
       "count": 2,
-      "avg_pct": 81.73,
-      "total_translated": 121845,
-      "total_delta_keys": 10613
+      "avg_pct": 81.78,
+      "total_translated": 121913,
+      "total_delta_keys": 68
     },
     "T2": {
       "count": 10,
-      "avg_pct": 49.76,
-      "total_translated": 370878,
-      "total_delta_keys": 15866
+      "avg_pct": 49.78,
+      "total_translated": 371027,
+      "total_delta_keys": 149
     },
     "T3": {
       "count": 40,
       "avg_pct": 7.31,
-      "total_translated": 217843,
-      "total_delta_keys": 113
+      "total_translated": 217861,
+      "total_delta_keys": 18
     }
   },
   "fastest": {
-    "lang": "pl",
-    "name": "Polski",
-    "pct": 84.19,
-    "translated": 62753,
+    "lang": "es",
+    "name": "Hiszpański",
+    "pct": 79.37,
+    "translated": 59160,
     "total": 74536,
-    "en_copy": 5023,
+    "en_copy": 9530,
     "missing": 0,
-    "delta_pct": 13.21,
-    "delta_keys": 9849,
+    "delta_pct": 0.09,
+    "delta_keys": 68,
     "tier": "T1"
   },
   "slowest": {
-    "lang": "ar",
-    "name": "Arabski",
-    "pct": 6.25,
-    "translated": 4662,
+    "lang": "ro",
+    "name": "Rumuński",
+    "pct": 69.81,
+    "translated": 52033,
     "total": 74536,
-    "en_copy": 3974,
-    "missing": 20793,
-    "delta_pct": -0.09,
-    "delta_keys": -61,
+    "en_copy": 12998,
+    "missing": 0,
+    "delta_pct": 0.02,
+    "delta_keys": 18,
     "tier": "T3"
   },
-  "eta_global": "120.1 tygodni"
+  "eta_global": "8166.0 tygodni"
 }

@@ -68368,14 +68368,167 @@
       ],
       "previous_state_source": "tm",
       "previous_state_updated_at": "2026-04-29T18:20:48.404107Z"
+    },
+    {
+      "timestamp": "2026-04-29T18:54:50.595518Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "key": "otclient_modules.charms.tr_51",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Removes a negative status effect and grants temporary immunity.",
+      "attempted_translation": "Entfernt einen negativen Statuseffekt und gewährt vorübergehende Immunität.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:18:16.390070Z"
+    },
+    {
+      "timestamp": "2026-04-29T18:54:52.596503Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "key": "otclient_modules.charms.tr_7",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Do you want to upgrade the Charm %s? This will cost you %d Charm Points?",
+      "attempted_translation": "Möchten Sie den Charm %s upgraden? Das kostet Sie %d Charm Points?",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:18:16.441601Z"
+    },
+    {
+      "timestamp": "2026-04-29T18:55:49.004285Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "key": "otclient_modules.charms1410_otui.tr_12",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "killin a monster has 10% chance to deal physical damage equal to 15& of its maximum health to all monsters in a small rabius",
+      "attempted_translation": "Das Töten eines Monsters hat eine Chance von 10 %, allen Monstern in einem kleinen Rabius physischen Schaden in Höhe von 15& seiner maximalen Gesundheit zuzufügen",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:18:16.479924Z"
+    },
+    {
+      "timestamp": "2026-04-29T18:55:49.182617Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "key": "otclient_modules.client.tr_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "No graphics card detected, everything will be drawn using the CPU,\nthus the performance will be really bad.\nPlease update your graphics driver to have a better performance.",
+      "attempted_translation": "Keine Grafikkarte erkannt, alles wird über die CPU gezeichnet,\nDaher wird die Leistung wirklich schlecht sein.\nBitte aktualisieren Sie Ihren Grafiktreiber, um eine bessere Leistung zu erzielen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:18:16.527637Z"
+    },
+    {
+      "timestamp": "2026-04-29T18:56:02.378058Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "key": "otclient_modules.console.tr_7",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Close Read-Only Tab",
+      "attempted_translation": "Schließen Sie die schreibgeschützte Registerkarte",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:18:16.606765Z"
+    },
+    {
+      "timestamp": "2026-04-29T18:56:02.834327Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "key": "otclient_modules.cyclopedia_widgets_otui.tr_27",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Unlocks if you reach the\nProwess level for any boss",
+      "attempted_translation": "Wird freigeschaltet, wenn Sie das erreichen\nFähigkeitsstufe für jeden Boss",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:18:16.727643Z"
+    },
+    {
+      "timestamp": "2026-04-29T18:56:04.188513Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "key": "otclient_modules.data_options.tr_5",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Animated Message Scale: %sx",
+      "attempted_translation": "Maßstab der animierten Nachricht: %sx",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T18:18:33.571091Z"
+    },
+    {
+      "timestamp": "2026-04-29T18:56:04.698137Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "key": "otclient_modules.editvip_otui.tr_5",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Enter a short description:",
+      "attempted_translation": "Geben Sie eine kurze Beschreibung ein:",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:18:16.781356Z"
+    },
+    {
+      "timestamp": "2026-04-29T18:56:04.877198Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "otclient_modules.json",
+      "key": "otclient_modules.effects_otui.tr_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Draw effect after drawing the entire floor.",
+      "attempted_translation": "Zeichnen Sie den Effekt, nachdem Sie den gesamten Boden gezeichnet haben.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T18:18:16.798507Z"
     }
   ],
   "stats": {
-    "total": 3475,
+    "total": 3484,
     "reviewed": 0,
     "approved": 0,
     "rejected": 0,
     "applied": 0
   },
-  "updated_at": "2026-04-29T18:53:28.690899Z"
+  "updated_at": "2026-04-29T18:56:04.979399Z"
 }

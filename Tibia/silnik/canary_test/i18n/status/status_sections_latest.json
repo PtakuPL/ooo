@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T18:54:05.884989Z",
+  "generated_at_utc": "2026-04-29T18:56:28.103812Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,29 +9,29 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-04-29 18:53:59"
+      "last_update": "2026-04-29 18:56:22"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "3min temu",
+      "freshness": "2min temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-04-29T18:50:30Z"
+      "last_update": "2026-04-29T18:53:58Z"
     },
     "PRE_MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "41s temu",
+      "freshness": "53s temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-04-29 18:53:59"
+      "last_update": "2026-04-29 18:56:22"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "27s temu",
+      "freshness": "2min temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
       "last_update": "2026-04-29T18:53:38.505938Z"
     },
@@ -39,7 +39,7 @@
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "23s temu",
+      "freshness": "2min temu",
       "source": "quality_audit_latest.json",
       "last_update": "2026-04-29T18:53:41.977745Z"
     },
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-04-29 18:53:59"
+      "last_update": "2026-04-29 18:56:22"
     },
     "DOCTOR": {
       "state": "active",
@@ -57,24 +57,24 @@
       "reason": "1 alarmów",
       "freshness": "0s temu",
       "source": "doctor_alerts_latest.json",
-      "last_update": "2026-04-29T18:54:05.883290Z"
+      "last_update": "2026-04-29T18:56:28.102178Z"
     }
   },
   "operator_panels": {
     "worker_live": {
       "effective_state": "🟢 DZIAŁA",
       "phase": "AUTO_TRANSLATE",
-      "stage": "cycle_end",
-      "category": "es",
-      "json_file": "items.json",
-      "current_lang": "es",
-      "current_lang_name": "Hiszpański",
-      "current_scope": "Serwer",
-      "detail": "cycle end",
-      "current_key": "es:items.json",
-      "heartbeat_at": "2026-04-29T18:50:30Z",
-      "heartbeat_age_s": 175,
-      "cycle": 18753
+      "stage": "heartbeat_tick",
+      "category": "de",
+      "json_file": "otclient_modules.json",
+      "current_lang": "de",
+      "current_lang_name": "Niemiecki",
+      "current_scope": "Klient",
+      "detail": "auto translate in progress",
+      "current_key": "de:otclient_modules.json",
+      "heartbeat_at": "2026-04-29T18:53:58Z",
+      "heartbeat_age_s": 110,
+      "cycle": 18757
     },
     "recent_writes": {
       "count": 18,
@@ -551,7 +551,7 @@
     },
     "launcher_quality_gate": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T18:54:03.730613Z",
+      "generated_at_utc": "2026-04-29T18:56:26.454721Z",
       "enabled": true,
       "files": [
         "client.json",
@@ -636,15 +636,15 @@
       },
       "trend_24h": {
         "window_hours": 24,
-        "samples": 1072,
-        "pass_samples": 1072,
+        "samples": 1074,
+        "pass_samples": 1074,
         "fail_samples": 0,
         "pass_rate_pct": 100.0,
         "state_changes": 0,
         "latest_state": "pass",
         "oldest_state": "pass",
-        "latest_timestamp": "2026-04-29T18:54:03.730613Z",
-        "oldest_timestamp": "2026-04-28T18:54:34.850289Z",
+        "latest_timestamp": "2026-04-29T18:56:26.454721Z",
+        "oldest_timestamp": "2026-04-28T18:56:57.793684Z",
         "checks_failed_delta": 0,
         "word_salad_rejects_delta": 0,
         "placeholder_rejects_delta": 0,
@@ -2313,12 +2313,12 @@
     },
     "surface_parity": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T18:54:03.773922Z",
+      "generated_at_utc": "2026-04-29T18:56:26.484142Z",
       "window": {
         "trend_hours": 24,
-        "samples": 1072,
-        "window_start_utc": "2026-04-28T18:54:34.881427Z",
-        "window_end_utc": "2026-04-29T18:54:03.773922Z"
+        "samples": 1074,
+        "window_start_utc": "2026-04-28T18:56:57.810058Z",
+        "window_end_utc": "2026-04-29T18:56:26.484142Z"
       },
       "summary": {
         "surface_count": 4,
@@ -2337,7 +2337,7 @@
           "real_translated_keys": 410384,
           "coverage_real_pct": 11.39,
           "langs_count": 51,
-          "delta_24h_pp": 0.59,
+          "delta_24h_pp": 0.58,
           "lagging_langs": [
             {
               "lang": "zh",
@@ -2355,9 +2355,9 @@
               "missing_keys": 70031
             }
           ],
-          "trend_samples": 1072,
-          "window_oldest_utc": "2026-04-28T18:54:34.881427Z",
-          "window_latest_utc": "2026-04-29T18:54:03.773922Z"
+          "trend_samples": 1074,
+          "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
+          "window_latest_utc": "2026-04-29T18:56:26.484142Z"
         },
         "website": {
           "label": "Website",
@@ -2383,9 +2383,9 @@
               "missing_keys": 1554
             }
           ],
-          "trend_samples": 1072,
-          "window_oldest_utc": "2026-04-28T18:54:34.881427Z",
-          "window_latest_utc": "2026-04-29T18:54:03.773922Z"
+          "trend_samples": 1074,
+          "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
+          "window_latest_utc": "2026-04-29T18:56:26.484142Z"
         },
         "launcher": {
           "label": "Launcher",
@@ -2411,9 +2411,9 @@
               "missing_keys": 242
             }
           ],
-          "trend_samples": 1072,
-          "window_oldest_utc": "2026-04-28T18:54:34.881427Z",
-          "window_latest_utc": "2026-04-29T18:54:03.773922Z"
+          "trend_samples": 1074,
+          "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
+          "window_latest_utc": "2026-04-29T18:56:26.484142Z"
         },
         "installer": {
           "label": "Installer",
@@ -2439,9 +2439,9 @@
               "missing_keys": 2031
             }
           ],
-          "trend_samples": 1072,
-          "window_oldest_utc": "2026-04-28T18:54:34.881427Z",
-          "window_latest_utc": "2026-04-29T18:54:03.773922Z"
+          "trend_samples": 1074,
+          "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
+          "window_latest_utc": "2026-04-29T18:56:26.484142Z"
         }
       },
       "ranking": [
@@ -2470,9 +2470,9 @@
               "missing_keys": 242
             }
           ],
-          "trend_samples": 1072,
-          "window_oldest_utc": "2026-04-28T18:54:34.881427Z",
-          "window_latest_utc": "2026-04-29T18:54:03.773922Z",
+          "trend_samples": 1074,
+          "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
+          "window_latest_utc": "2026-04-29T18:56:26.484142Z",
           "rank": 1
         },
         {
@@ -2500,9 +2500,9 @@
               "missing_keys": 2031
             }
           ],
-          "trend_samples": 1072,
-          "window_oldest_utc": "2026-04-28T18:54:34.881427Z",
-          "window_latest_utc": "2026-04-29T18:54:03.773922Z",
+          "trend_samples": 1074,
+          "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
+          "window_latest_utc": "2026-04-29T18:56:26.484142Z",
           "rank": 2
         },
         {
@@ -2512,7 +2512,7 @@
           "real_translated_keys": 410384,
           "coverage_real_pct": 11.39,
           "langs_count": 51,
-          "delta_24h_pp": 0.59,
+          "delta_24h_pp": 0.58,
           "lagging_langs": [
             {
               "lang": "zh",
@@ -2530,9 +2530,9 @@
               "missing_keys": 70031
             }
           ],
-          "trend_samples": 1072,
-          "window_oldest_utc": "2026-04-28T18:54:34.881427Z",
-          "window_latest_utc": "2026-04-29T18:54:03.773922Z",
+          "trend_samples": 1074,
+          "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
+          "window_latest_utc": "2026-04-29T18:56:26.484142Z",
           "rank": 3
         },
         {
@@ -2560,16 +2560,16 @@
               "missing_keys": 1554
             }
           ],
-          "trend_samples": 1072,
-          "window_oldest_utc": "2026-04-28T18:54:34.881427Z",
-          "window_latest_utc": "2026-04-29T18:54:03.773922Z",
+          "trend_samples": 1074,
+          "window_oldest_utc": "2026-04-28T18:56:57.810058Z",
+          "window_latest_utc": "2026-04-29T18:56:26.484142Z",
           "rank": 4
         }
       ]
     },
     "launcher_readiness": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T18:54:03.808597Z",
+      "generated_at_utc": "2026-04-29T18:56:26.512963Z",
       "summary": {
         "state": "in_progress",
         "state_label": "🟡 IN_PROGRESS",
@@ -2627,8 +2627,8 @@
           "required_waves": 3,
           "waves_observed": 0,
           "waves_considered": [],
-          "wave_history_rows_total": 1648,
-          "wave_history_rows_window": 1072,
+          "wave_history_rows_total": 1652,
+          "wave_history_rows_window": 1074,
           "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
           "stale_alerts_monitored": [
             "DLQ_GROWTH",
@@ -2646,17 +2646,17 @@
         "quality_trend_24h": {
           "label": "Trend 24h identycznych EN + word_salad dla client/otclient_modules",
           "pass": true,
-          "detail": "window=24.01h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
+          "detail": "window=24.02h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
           "window_hours": 24,
-          "window_start_utc": "2026-04-28T18:53:27.555536Z",
-          "window_end_utc": "2026-04-29T18:54:03.808597Z",
-          "window_span_hours": 24.01,
+          "window_start_utc": "2026-04-28T18:55:20.256327Z",
+          "window_end_utc": "2026-04-29T18:56:26.512963Z",
+          "window_span_hours": 24.02,
           "has_min_24h_window": true,
           "files": {
             "client.json": {
-              "samples": 1074,
-              "oldest_timestamp": "2026-04-28T18:53:27.555536Z",
-              "latest_timestamp": "2026-04-29T18:54:03.808597Z",
+              "samples": 1076,
+              "oldest_timestamp": "2026-04-28T18:55:20.256327Z",
+              "latest_timestamp": "2026-04-29T18:56:26.512963Z",
               "oldest_identical_to_en_pct": 31.4,
               "latest_identical_to_en_pct": 31.4,
               "delta_identical_to_en_pct": 0.0,
@@ -2666,9 +2666,9 @@
               "trend_pass": true
             },
             "otclient_modules.json": {
-              "samples": 1074,
-              "oldest_timestamp": "2026-04-28T18:53:27.555536Z",
-              "latest_timestamp": "2026-04-29T18:54:03.808597Z",
+              "samples": 1076,
+              "oldest_timestamp": "2026-04-28T18:55:20.256327Z",
+              "latest_timestamp": "2026-04-29T18:56:26.512963Z",
               "oldest_identical_to_en_pct": 29.79,
               "latest_identical_to_en_pct": 29.79,
               "delta_identical_to_en_pct": 0.0,
@@ -2730,13 +2730,13 @@
     },
     "provider_routing": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T18:54:05.339674Z",
+      "generated_at_utc": "2026-04-29T18:56:27.718732Z",
       "active_provider": "OpenAI model pool",
       "active_provider_code": "openai_model_pool",
       "active_provider_source": "openai:openai/gpt-4.1-mini",
       "active_provider_timestamp": "2026-04-29T18:53:29.435445Z",
       "active_model": "openai/gpt-4.1-mini",
-      "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
+      "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] otclient_modules.json",
       "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
       "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
       "router_registry_path": "provider_router_registry.json",
@@ -2795,6 +2795,7 @@
       "provider_pool_health": {
         "overall_status": "degraded",
         "signals": [
+          "recent_fallback",
           "provider_consistency_debt:258"
         ],
         "provider_consistency_debt": 258,
@@ -2826,12 +2827,12 @@
             "writes": 3
           }
         ],
-        "fallbacks_last_200": 9,
+        "fallbacks_last_200": 8,
         "fallback_action_breakdown": [
           {
             "action": "fallback_to_google_translate_high",
             "action_label": "fallback to google translate high",
-            "count": 9
+            "count": 8
           }
         ],
         "providers": {
@@ -2964,7 +2965,7 @@
           "used_pct": 48.8,
           "monthly_cap": 250.0,
           "spent": 122.0,
-          "latest_age_s": 277.94265,
+          "latest_age_s": 431.968193,
           "day_utc": "2026-04-29",
           "unit": "requests_per_day",
           "stale": false
@@ -2997,20 +2998,20 @@
         }
       },
       "latest_fallback": {
-        "timestamp": "2026-04-29T18:33:01.148287Z",
+        "timestamp": "2026-04-29T18:54:32.077396Z",
         "provider": "tm_simple",
         "provider_label": "TM/simple",
-        "source": "tm",
+        "source": "simple",
         "action": "fallback_to_google_translate_high",
         "action_label": "fallback to google translate high",
         "decision_reason": "high_reject_types",
-        "json_file": "items.json",
-        "key": "item.1269.name"
+        "json_file": "otclient_modules.json",
+        "key": "otclient_modules.data_options.tr_10"
       }
     },
     "term_consistency": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T18:54:05.343876Z",
+      "generated_at_utc": "2026-04-29T18:56:27.721497Z",
       "available": true,
       "lang": "es",
       "json_file": "items.json",
@@ -3154,33 +3155,33 @@
       "blockers_missing_keys_total": 0,
       "blockers_missing_lang_files": 0,
       "visible_pending_tail": 399,
-      "oldest_visible_pending_age_s": 20014,
+      "oldest_visible_pending_age_s": 20156,
       "top_langs": [
         {
           "lang": "ru",
-          "count": 378
+          "count": 374
         },
         {
           "lang": "cs",
           "count": 9
         },
         {
-          "lang": "es",
+          "lang": "de",
           "count": 8
         },
         {
-          "lang": "de",
-          "count": 4
+          "lang": "es",
+          "count": 8
         }
       ],
       "top_reason_buckets": [
         {
           "reason_bucket": "quality",
-          "count": 376
+          "count": 372
         },
         {
           "reason_bucket": "default",
-          "count": 15
+          "count": 19
         },
         {
           "reason_bucket": "word_salad",
@@ -3192,14 +3193,14 @@
         }
       ],
       "deferred_state_keys_total": 8881,
-      "deferred_state_updated_at": "2026-04-29T18:53:36.118445Z",
-      "deferred_state_age_s": 25,
+      "deferred_state_updated_at": "2026-04-29T18:56:01.904577Z",
+      "deferred_state_age_s": 23,
       "deferred_state_stats": {
         "enqueued": 0,
         "suppressed_cooldown": 0,
-        "suppressed_manual_review": 99,
+        "suppressed_manual_review": 0,
         "deduped_ttl": 0,
-        "manual_review_escalations": 0,
+        "manual_review_escalations": 4,
         "partial_staged": 0,
         "partial_completed": 0,
         "retry_loop_cooldown": 0,
@@ -3208,7 +3209,7 @@
     },
     "doctor_alerts": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T18:54:05.883290Z",
+      "generated_at_utc": "2026-04-29T18:56:28.102178Z",
       "overall": "warning",
       "thresholds": {
         "heartbeat_stale_s": 300,
@@ -3223,16 +3224,16 @@
           "name": "HEARTBEAT_STALE",
           "status": "ok",
           "severity": "ok",
-          "value": 175,
+          "value": 110,
           "threshold": 300,
-          "detail": "Heartbeat świeży (175s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=es:items.json].",
+          "detail": "Heartbeat świeży (110s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=de:otclient_modules.json].",
           "source": "worker_runtime_heartbeat.json"
         },
         {
           "name": "NO_WRITE",
           "status": "ok",
           "severity": "ok",
-          "value": 36,
+          "value": 178,
           "threshold": 900,
           "detail": "Recent writes wyglądają zdrowo.",
           "source": "translation_recent_report.jsonl"
@@ -3252,7 +3253,7 @@
           "severity": "warning",
           "value": {
             "pending": 399,
-            "oldest_s": 20014
+            "oldest_s": 20156
           },
           "threshold": {
             "pending_min": 200,
@@ -3289,20 +3290,20 @@
     },
     "doctor_remediation": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T18:46:26.378791Z",
+      "generated_at_utc": "2026-04-29T18:54:20.032787Z",
       "status": "ok",
       "open_alarms": [
         {
           "code": "DEFERRED_RETRY_PIPELINE_WARNING",
           "severity": "warning",
           "source": "statusd_doctor.json",
-          "detail": "DEFERRED_RETRY_PIPELINE_WARNING: status=deferred_backlog_pressure tracked_keys=8881 retry_due_now=5364 manual_locked=2939 cooldown_locked=0 manual_queue=3475 deferred_backlog=52054 deferred_recent_1h=66 latest_age=60.479"
+          "detail": "DEFERRED_RETRY_PIPELINE_WARNING: status=deferred_backlog_pressure tracked_keys=8881 retry_due_now=5364 manual_locked=2939 cooldown_locked=0 manual_queue=3475 deferred_backlog=52054 deferred_recent_1h=66 latest_age=57.707"
         },
         {
           "code": "FIXTURE_REGRESSION",
           "severity": "critical",
           "source": "statusd_doctor.json",
-          "detail": "FIXTURE_REGRESSION: failed=0 langs_failed=0/2 critical_max=0 critical_total=0 pack_max=0 latest_age=5351418.9s top_lang=pl src=critical_bad_keys_pack_regression_latest.json reason=fixture_regression_signal_stale_critical"
+          "detail": "FIXTURE_REGRESSION: failed=0 langs_failed=0/2 critical_max=0 critical_total=0 pack_max=0 latest_age=5351909.1s top_lang=pl src=critical_bad_keys_pack_regression_latest.json reason=fixture_regression_signal_stale_critical"
         },
         {
           "code": "NATIVE_READINESS_BELOW_THRESHOLD",
@@ -3326,30 +3327,28 @@
           "code": "SUSPICIOUS_HIGH_ELEVATED",
           "severity": "warning",
           "source": "statusd_doctor.json",
-          "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=1294 rate=33.197% window=6.0h top_lang=es:507 per_lang=[es:507(123.058%/warning)] per_domain=[npc.json:296(61.284%/warning),server.json:208(1300.0%/warning)]"
+          "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=1249 rate=33.077% window=6.0h top_lang=es:482 per_lang=[es:482(124.227%/warning)] per_domain=[npc.json:285(63.474%/warning),server.json:195(1300.0%/warning)]"
         },
         {
           "code": "TERM_CONSISTENCY_REGRESSION",
           "severity": "critical",
           "source": "statusd_doctor.json",
-          "detail": "TERM_CONSISTENCY_REGRESSION: rate=39.64% delta=39.64% total=80 source=term_conflicts_latest.json"
+          "detail": "TERM_CONSISTENCY_REGRESSION: rate=19.205% delta=19.205% total=86 source=term_conflicts_latest.json"
         }
       ],
-      "resolved_this_cycle": [
-        "LANG_PARITY_WARN"
-      ],
+      "resolved_this_cycle": [],
       "newly_opened": [],
       "summary": {
         "open_count": 7,
-        "resolved_count": 1,
+        "resolved_count": 0,
         "tracked_alarms": 32
       },
       "action_plan": {
         "recommended_action": "force_auto",
         "selected_action": "none",
         "selected_command": "-",
-        "result": "resolved_update",
-        "reason": "resolved_count=1",
+        "result": "pending",
+        "reason": "write_starvation_or_queue_starvation",
         "suppressed_by_cooldown": true,
         "cooldown_remaining_cycles": 2
       }

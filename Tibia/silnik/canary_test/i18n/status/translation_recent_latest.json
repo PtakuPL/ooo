@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-04-29T23:02:16.317717Z",
-  "language": "it",
+  "timestamp": "2026-04-29T23:06:52.780748Z",
+  "language": "es",
   "json_file": "items.json",
-  "translated": 43,
+  "translated": 64,
   "entries": [
     {
-      "key": "item.1469.name",
-      "en": "stone wall",
-      "translated": "muro di pietra",
-      "source": "simple"
-    },
-    {
-      "key": "item.14699.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.1470.name",
-      "en": "stone wall",
-      "translated": "muro di pietra",
-      "source": "simple"
-    },
-    {
-      "key": "item.14700.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14701.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14702.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.14703.name",
-      "en": "RESERVED SPRITE",
-      "translated": "SPRITE RISERVATO",
-      "source": "simple"
-    },
-    {
-      "key": "item.1069.name",
-      "en": "bug tral",
-      "translated": "trappola per insetti",
+      "key": "item.12591.name",
+      "en": "dirty water",
+      "translated": "agua sucia",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14687.name",
-      "en": "artist's easel",
-      "translated": "cavalletto dell'artista",
+      "key": "item.12592.name",
+      "en": "dirty water",
+      "translated": "agua sucia",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14688.name",
-      "en": "artist's easel",
-      "translated": "cavalletto dell'artista",
+      "key": "item.12593.name",
+      "en": "dirty water",
+      "translated": "agua sucia",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14689.name",
-      "en": "artist's easel",
-      "translated": "cavalletto dell'artista",
+      "key": "item.12594.name",
+      "en": "dirty water",
+      "translated": "agua sucia",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14690.name",
-      "en": "artist's easel",
-      "translated": "cavalletto dell'artista",
+      "key": "item.1261.name",
+      "en": "tic-tac-toe board",
+      "translated": "tablero de tres en raya",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14691.name",
-      "en": "masterpiece of a muse",
-      "translated": "capolavoro di una musa",
+      "key": "item.1262.name",
+      "en": "tic-tac-toe board",
+      "translated": "tablero de tres en raya",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14692.name",
-      "en": "masterpiece of a muse",
-      "translated": "capolavoro di una musa",
+      "key": "item.12624.name",
+      "en": "small shed",
+      "translated": "pequeño cobertizo",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14693.name",
-      "en": "painting of a muse",
-      "translated": "dipinto di una musa",
+      "key": "item.12625.name",
+      "en": "small shed",
+      "translated": "pequeño cobertizo",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14694.name",
-      "en": "painting of a muse",
-      "translated": "dipinto di una musa",
+      "key": "item.12626.name",
+      "en": "small shed",
+      "translated": "pequeño cobertizo",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14695.name",
-      "en": "masterpiece of a gozzler",
-      "translated": "capolavoro di un gozzler",
+      "key": "item.12627.name",
+      "en": "small shed",
+      "translated": "pequeño cobertizo",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14696.name",
-      "en": "masterpiece of a gozzler",
-      "translated": "capolavoro di un gozzler",
+      "key": "item.12628.name",
+      "en": "small shed",
+      "translated": "pequeño cobertizo",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14697.name",
-      "en": "painting of a gozzler",
-      "translated": "dipinto di un gozzler",
+      "key": "item.12629.name",
+      "en": "small shed",
+      "translated": "pequeño cobertizo",
       "source": "openai:openai/gpt-4o-mini"
     },
     {
-      "key": "item.14698.name",
-      "en": "painting of a gozzler",
-      "translated": "dipinto di un gozzler",
+      "key": "item.1263.name",
+      "en": "tic-tac-toe board",
+      "translated": "tablero de tres en raya",
       "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12630.name",
+      "en": "small shed",
+      "translated": "pequeño cobertizo",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.12631.name",
+      "en": "small shed",
+      "translated": "pequeño cobertizo",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.1264.name",
+      "en": "tic-tac-toe board",
+      "translated": "tablero de tres en raya",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.1265.name",
+      "en": "tic-tac-toe board",
+      "translated": "tablero de tres en raya",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.10026.name",
+      "en": "baby rotworm",
+      "translated": "rotworm de bebé",
+      "source": "canonical_name_semantic_autofix"
+    },
+    {
+      "key": "item.10299.name",
+      "en": "badger fur",
+      "translated": "pelaje de badger",
+      "source": "canonical_name_semantic_autofix"
+    },
+    {
+      "key": "item.10194.name",
+      "en": "bamboo drawer",
+      "translated": "drawer de bambú",
+      "source": "canonical_name_semantic_autofix"
     }
   ],
   "filtered_untranslated_marker": 0

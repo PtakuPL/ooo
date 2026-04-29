@@ -192293,7 +192293,7 @@
     "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T22:03:11.504324Z"
+    "updated_at": "2026-04-29T23:03:17.106548Z"
   },
   "npc.anerui.greet_1": {
     "src_hash": "afb8a66bbd457858c305533b93f273bb",
@@ -222965,7 +222965,7 @@
     "source": "canonical_name_semantic_autofix",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T22:05:46.614238Z"
+    "updated_at": "2026-04-29T23:06:40.408958Z"
   },
   "item.10028.name": {
     "src_hash": "466a6bdf5ea677b6e1344f8bd3619a4a",
@@ -224005,7 +224005,7 @@
     "source": "canonical_name_semantic_autofix",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T22:05:46.615185Z"
+    "updated_at": "2026-04-29T23:06:40.409935Z"
   },
   "item.1022.name": {
     "src_hash": "85d85c148d5415a351e4b5d8beae6a1a",
@@ -224125,7 +224125,7 @@
     "source": "canonical_name_semantic_autofix",
     "confidence": 0.92,
     "verified": false,
-    "updated_at": "2026-04-29T22:05:46.614728Z"
+    "updated_at": "2026-04-29T23:06:40.409439Z"
   },
   "item.1031.name": {
     "src_hash": "852488ddd9570bc877783bf4397563e0",
@@ -232226,242 +232226,242 @@
   "item.12559.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:30.563640Z"
+    "updated_at": "2026-04-29T23:03:17.111504Z"
   },
   "item.12560.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:32.956227Z"
+    "updated_at": "2026-04-29T23:03:17.116281Z"
   },
   "item.12561.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:32.961342Z"
+    "updated_at": "2026-04-29T23:03:17.120920Z"
   },
   "item.12562.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:32.966789Z"
+    "updated_at": "2026-04-29T23:03:17.125436Z"
   },
   "item.12563.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:32.972219Z"
+    "updated_at": "2026-04-29T23:03:17.130582Z"
   },
   "item.12583.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:32.977479Z"
+    "updated_at": "2026-04-29T23:03:19.439855Z"
   },
   "item.12584.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:32.982312Z"
+    "updated_at": "2026-04-29T23:03:19.445180Z"
   },
   "item.12585.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:34.954328Z"
+    "updated_at": "2026-04-29T23:03:19.449941Z"
   },
   "item.12586.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:34.959359Z"
+    "updated_at": "2026-04-29T23:03:19.454710Z"
   },
   "item.12587.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:34.964476Z"
+    "updated_at": "2026-04-29T23:03:19.459358Z"
   },
   "item.12588.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:34.969475Z"
+    "updated_at": "2026-04-29T23:03:19.463946Z"
   },
   "item.12589.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:34.974350Z"
+    "updated_at": "2026-04-29T23:03:22.455233Z"
   },
   "item.12590.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:34.979189Z"
+    "updated_at": "2026-04-29T23:03:22.460877Z"
   },
   "item.12591.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:36.789026Z"
+    "updated_at": "2026-04-29T23:03:22.465997Z"
   },
   "item.12592.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:36.794226Z"
+    "updated_at": "2026-04-29T23:03:22.471441Z"
   },
   "item.12593.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:36.798413Z"
+    "updated_at": "2026-04-29T23:03:22.476805Z"
   },
   "item.12594.name": {
     "src_hash": "b249c3e10e5f3e67ad658ee2c80aa85f",
     "text": "agua sucia",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:36.803461Z"
+    "updated_at": "2026-04-29T23:03:22.481861Z"
   },
   "item.1261.name": {
     "src_hash": "4b2eef524ee371e73b293e0987babf23",
     "text": "tablero de tres en raya",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:36.811649Z"
+    "updated_at": "2026-04-29T23:04:05.856189Z"
   },
   "item.1262.name": {
     "src_hash": "4b2eef524ee371e73b293e0987babf23",
     "text": "tablero de tres en raya",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:36.819763Z"
+    "updated_at": "2026-04-29T23:04:05.864285Z"
   },
   "item.12624.name": {
     "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
     "text": "pequeño cobertizo",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:38.759649Z"
+    "updated_at": "2026-04-29T23:04:05.870572Z"
   },
   "item.12625.name": {
     "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
     "text": "pequeño cobertizo",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:38.765808Z"
+    "updated_at": "2026-04-29T23:04:05.876952Z"
   },
   "item.12626.name": {
     "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
     "text": "pequeño cobertizo",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:38.771539Z"
+    "updated_at": "2026-04-29T23:04:05.883151Z"
   },
   "item.12627.name": {
     "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
     "text": "pequeño cobertizo",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:38.777154Z"
+    "updated_at": "2026-04-29T23:04:05.889543Z"
   },
   "item.12628.name": {
     "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
     "text": "pequeño cobertizo",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:38.781805Z"
+    "updated_at": "2026-04-29T23:04:08.818068Z"
   },
   "item.12629.name": {
     "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
     "text": "pequeño cobertizo",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:38.786535Z"
+    "updated_at": "2026-04-29T23:04:08.824616Z"
   },
   "item.1263.name": {
     "src_hash": "4b2eef524ee371e73b293e0987babf23",
     "text": "tablero de tres en raya",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:41.175151Z"
+    "updated_at": "2026-04-29T23:04:08.833603Z"
   },
   "item.12630.name": {
     "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
     "text": "pequeño cobertizo",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:41.181374Z"
+    "updated_at": "2026-04-29T23:04:08.840071Z"
   },
   "item.12631.name": {
     "src_hash": "2d21ed05cbbe939b4a362ab0085c4a36",
     "text": "pequeño cobertizo",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:41.187291Z"
+    "updated_at": "2026-04-29T23:04:08.846587Z"
   },
   "item.1264.name": {
     "src_hash": "4b2eef524ee371e73b293e0987babf23",
     "text": "tablero de tres en raya",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:41.195202Z"
+    "updated_at": "2026-04-29T23:04:08.854564Z"
   },
   "item.1265.name": {
     "src_hash": "4b2eef524ee371e73b293e0987babf23",
     "text": "tablero de tres en raya",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:05:41.202669Z"
+    "updated_at": "2026-04-29T23:04:10.141926Z"
   },
   "item.1266.name": {
     "src_hash": "4b2eef524ee371e73b293e0987babf23",
@@ -233854,5 +233854,221 @@
     "confidence": 0.96,
     "verified": false,
     "updated_at": "2026-04-29T22:03:23.725008Z"
+  },
+  "item.12943.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.343992Z"
+  },
+  "item.12944.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.360438Z"
+  },
+  "item.12945.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.377186Z"
+  },
+  "item.12946.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.393621Z"
+  },
+  "item.12947.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.409971Z"
+  },
+  "item.12948.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.426239Z"
+  },
+  "item.12949.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.442694Z"
+  },
+  "item.1295.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "muro de piedra",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.448522Z"
+  },
+  "item.12950.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.464914Z"
+  },
+  "item.12951.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.481224Z"
+  },
+  "item.12952.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.497549Z"
+  },
+  "item.12953.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.513601Z"
+  },
+  "item.12954.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.529919Z"
+  },
+  "item.12955.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.546190Z"
+  },
+  "item.12956.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.562621Z"
+  },
+  "item.12957.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.578828Z"
+  },
+  "item.12958.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.594905Z"
+  },
+  "item.12959.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.610977Z"
+  },
+  "item.1296.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "muro de piedra",
+    "source": "simple_dict",
+    "confidence": 0.98,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.616706Z"
+  },
+  "item.12960.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.632581Z"
+  },
+  "item.12962.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.655914Z"
+  },
+  "item.12963.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.671844Z"
+  },
+  "item.12964.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.688193Z"
+  },
+  "item.12965.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.704336Z"
+  },
+  "item.12966.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.720638Z"
+  },
+  "item.12967.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.736882Z"
+  },
+  "item.12968.name": {
+    "src_hash": "0325c7cfc2e414950e3a1022f0537823",
+    "text": "estructura de colmena",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T23:03:13.753251Z"
   }
 }

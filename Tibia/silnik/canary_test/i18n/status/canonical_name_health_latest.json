@@ -1,27 +1,54 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T23:02:20.853496Z",
-  "lang": "it",
+  "generated_at_utc": "2026-04-29T23:06:57.422787Z",
+  "lang": "es",
   "json_file": "items.json",
   "name_total": 33425,
-  "name_pending": 14430,
-  "name_suspicious": 34,
-  "name_coverage_pct": 56.83,
+  "name_pending": 14594,
+  "name_suspicious": 91,
+  "name_coverage_pct": 56.34,
   "pending_examples": [
+    "item.16104.name",
     "item.17372.name",
+    "item.21823.name",
+    "item.21824.name",
     "item.21952.name",
     "item.24394.name",
-    "item.280.name",
-    "item.30225.name",
     "item.31582.name",
     "item.31583.name",
     "item.32758.name",
     "item.32759.name",
     "item.32760.name",
-    "item.32761.name",
-    "item.32908.name"
+    "item.32761.name"
   ],
   "suspicious_examples": [
+    {
+      "key": "item.11695.name",
+      "issues": [
+        "mixed_language"
+      ]
+    },
+    {
+      "key": "item.18327.name",
+      "issues": [
+        "contains_tibia_proper_noun",
+        "mixed_language"
+      ]
+    },
+    {
+      "key": "item.18329.name",
+      "issues": [
+        "contains_tibia_proper_noun",
+        "mixed_language"
+      ]
+    },
+    {
+      "key": "item.18330.name",
+      "issues": [
+        "contains_tibia_proper_noun",
+        "mixed_language"
+      ]
+    },
     {
       "key": "item.20228.name",
       "issues": [
@@ -47,49 +74,27 @@
       ]
     },
     {
-      "key": "item.23514.name",
+      "key": "item.22769.name",
       "issues": [
-        "mixed_language"
+        "contains_tibia_proper_noun",
+        "game_term_missing"
       ]
     },
     {
-      "key": "item.25078.name",
+      "key": "item.22770.name",
       "issues": [
-        "mixed_language"
+        "contains_tibia_proper_noun",
+        "game_term_missing"
       ]
     },
     {
-      "key": "item.25080.name",
+      "key": "item.23373.name",
       "issues": [
-        "mixed_language"
+        "game_term_missing"
       ]
     },
     {
-      "key": "item.25081.name",
-      "issues": [
-        "mixed_language"
-      ]
-    },
-    {
-      "key": "item.29412.name",
-      "issues": [
-        "mixed_language"
-      ]
-    },
-    {
-      "key": "item.30141.name",
-      "issues": [
-        "mixed_language"
-      ]
-    },
-    {
-      "key": "item.30142.name",
-      "issues": [
-        "mixed_language"
-      ]
-    },
-    {
-      "key": "item.30143.name",
+      "key": "item.23526.name",
       "issues": [
         "mixed_language"
       ]

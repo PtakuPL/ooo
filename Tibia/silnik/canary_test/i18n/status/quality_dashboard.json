@@ -33,12 +33,12 @@
     "issues_count": 1417
   },
   "es": {
-    "last_cycle": "2026-04-29T22:59:31.593298Z",
-    "last_translated": 2,
-    "total_suspicious": 143485,
+    "last_cycle": "2026-04-29T23:06:52.779367Z",
+    "last_translated": 64,
+    "total_suspicious": 143487,
     "total_rejected": 9915,
     "total_gt_guard_fail": 92183,
-    "cycles": 4186,
+    "cycles": 4187,
     "quality_score": 60.1,
     "last_audit": "2026-04-29T23:02:25.126106Z",
     "issues_count": 756023

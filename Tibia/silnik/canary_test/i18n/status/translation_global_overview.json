@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T22:12:51.709286Z",
+  "timestamp": "2026-04-29T22:15:14.648147Z",
   "global": {
     "total_reference_keys": 3875872,
     "translated_keys": 711931,
@@ -79,8 +79,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T21:12:50.494861Z",
-    "window_end_utc": "2026-04-29T22:12:50.494861Z",
+    "window_start_utc": "2026-04-29T21:15:13.400104Z",
+    "window_end_utc": "2026-04-29T22:15:13.400104Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -105,28 +105,35 @@
     "throughput_keys_per_h": 651.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
-    "suspicious_total": 732,
-    "deferred_total": 33,
+    "suspicious_total": 687,
+    "deferred_total": 34,
     "top_deferred_reasons": [
       {
         "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
         "count": 30,
-        "share_pct": 90.9,
+        "share_pct": 88.2,
         "top_target": "ru/items.json",
         "top_target_count": 30
       },
       {
         "reason": "existing_canonical_name_quality_mixed_scripts",
         "count": 2,
-        "share_pct": 6.1,
+        "share_pct": 5.9,
         "top_target": "ru/items.json",
         "top_target_count": 2
       },
       {
         "reason": "retry_loop_cooldown_default",
         "count": 1,
-        "share_pct": 3.0,
+        "share_pct": 2.9,
         "top_target": "ru/items.json",
+        "top_target_count": 1
+      },
+      {
+        "reason": "gt_identity_retry_identical_to_en",
+        "count": 1,
+        "share_pct": 2.9,
+        "top_target": "de/npc.json",
         "top_target_count": 1
       }
     ],

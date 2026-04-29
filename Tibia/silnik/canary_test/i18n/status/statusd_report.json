@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-29T22:12:26.917247Z",
+  "timestamp": "2026-04-29T22:14:24.256607Z",
   "version": "statusd-mvp-1.0",
   "worker": {
     "pid": 6760,
-    "heartbeat_at": "2026-04-29T22:09:50Z",
-    "heartbeat_age_s": 156.9,
+    "heartbeat_at": "2026-04-29T22:11:35Z",
+    "heartbeat_age_s": 169.3,
     "cycle": 18,
     "mode": "continuous",
     "category": "?",
@@ -86,7 +86,7 @@
   },
   "worker_runtime_heartbeat": {
     "schema_version": 1,
-    "generated_at_utc": "2026-04-29T22:12:26.917247Z",
+    "generated_at_utc": "2026-04-29T22:14:24.256607Z",
     "source": "statusd.aggregate_telemetry",
     "status": "healthy",
     "reason": "heartbeat_fresh",
@@ -96,26 +96,26 @@
     "current_lang": "de",
     "current_file": "npc.json",
     "cycle": 18,
-    "heartbeat_at_utc": "2026-04-29T22:09:50Z",
-    "heartbeat_age_s": 156.917,
+    "heartbeat_at_utc": "2026-04-29T22:11:35Z",
+    "heartbeat_age_s": 169.257,
     "worker": {
       "pid": 6760,
       "pid_alive": true,
-      "heartbeat_at_utc": "2026-04-29T22:09:50Z",
-      "heartbeat_age_s": 156.917,
+      "heartbeat_at_utc": "2026-04-29T22:11:35Z",
+      "heartbeat_age_s": 169.257,
       "mode": "continuous",
       "category": "",
       "cycle": 18,
-      "activity_heartbeat_at_utc": "2026-04-29T22:11:35Z",
-      "activity_heartbeat_age_s": 51.917
+      "activity_heartbeat_at_utc": "2026-04-29T22:13:06Z",
+      "activity_heartbeat_age_s": 78.257
     },
     "guardian": {
-      "timestamp": "2026-04-29T22:12:16.402405Z",
+      "timestamp": "2026-04-29T22:12:46.843881Z",
       "state": "healthy",
-      "heartbeat_age_s": 146.4,
+      "heartbeat_age_s": 176.8,
       "pid_alive": true,
-      "worker_log_age_s": 263.4,
-      "guard_last_entry_age_s": 279.7,
+      "worker_log_age_s": 293.9,
+      "guard_last_entry_age_s": 310.1,
       "active_log_grace_seconds": 300.0,
       "throughput_per_h": 489.0,
       "guard_fail_rate_pct": 0.0,
@@ -127,7 +127,7 @@
       "pid": 9567,
       "owner_pid": 9567,
       "owner_pid_alive": true,
-      "lock_age_s": 0.0
+      "lock_age_s": 32.0
     },
     "thresholds": {
       "heartbeat_aging_seconds": 300.0,
@@ -136,8 +136,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T21:10:26.565222Z",
-    "window_end_utc": "2026-04-29T22:10:26.565222Z",
+    "window_start_utc": "2026-04-29T21:12:50.494861Z",
+    "window_end_utc": "2026-04-29T22:12:50.494861Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -145,11 +145,11 @@
       "i18n/status/suspicious_log.jsonl",
       "i18n/status/deferred_translation_queue.jsonl"
     ],
-    "total_cycles": 32,
+    "total_cycles": 28,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 32
+      "AUTO_TRANSLATE": 28
     },
-    "auto_translate_cycles": 32,
+    "auto_translate_cycles": 28,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
@@ -162,7 +162,7 @@
     "throughput_keys_per_h": 651.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
-    "suspicious_total": 761,
+    "suspicious_total": 732,
     "deferred_total": 33,
     "top_deferred_reasons": [
       {
@@ -501,8 +501,8 @@
     "scanned_files_live": 15,
     "scanned_files_history_pct": 46.7,
     "scanned_files_live_pct": 0.1,
-    "files_not_scanned_history": 7357,
-    "files_not_scanned_live": 13785,
+    "files_not_scanned_history": 7358,
+    "files_not_scanned_live": 13786,
     "scanned_files_history_minus_live": 6428,
     "files_migrated": 7,
     "files_in_progress": 0,
@@ -518,7 +518,7 @@
     "npc_total": 1028,
     "npc_migrated": 700,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-04-29T22:12:26.989674Z",
+    "statusd_live_snapshot_at_utc": "2026-04-29T22:14:24.326293Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -1064,10 +1064,10 @@
     "critical_count": 15000,
     "rate_warn_pct": 40.0,
     "rate_crit_pct": 85.0,
-    "entries": 74,
-    "translated_total": 3128,
+    "entries": 73,
+    "translated_total": 3097,
     "suspicious_high_total": 361,
-    "suspicious_high_rate_pct": 11.541,
+    "suspicious_high_rate_pct": 11.656,
     "status": "observed",
     "severity": "info",
     "worst_severity": "warning",
@@ -1163,8 +1163,8 @@
       {
         "domain": "items.json",
         "suspicious_high": 221,
-        "translated": 2249,
-        "rate_pct": 9.827,
+        "translated": 2218,
+        "rate_pct": 9.964,
         "severity": "info"
       },
       {
@@ -1196,19 +1196,19 @@
     "status": "active",
     "severity": "ok",
     "reason": "ok",
-    "latest_timestamp": "2026-04-29T22:10:11.693176Z",
-    "latest_age_s": 135.224,
+    "latest_timestamp": "2026-04-29T22:13:11.321977Z",
+    "latest_age_s": 72.935,
     "stale_warn_seconds": 1800,
     "stale_critical_seconds": 7200,
-    "tracked_keys": 8950,
+    "tracked_keys": 8951,
     "retry_due_now": 5651,
     "manual_review_locked": 2938,
     "cooldown_locked": 2,
     "manual_review_queue_size": 3531,
-    "deferred_backlog_total": 1782,
-    "deferred_backlog_total_all_time": 52157,
+    "deferred_backlog_total": 1783,
+    "deferred_backlog_total_all_time": 52158,
     "deferred_backlog_window_seconds": 86400,
-    "deferred_recent_1h": 33,
+    "deferred_recent_1h": 34,
     "top_reasons": [
       {
         "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
@@ -1224,7 +1224,7 @@
       },
       {
         "reason": "gt_identity_retry_identical_to_en",
-        "count": 16
+        "count": 17
       },
       {
         "reason": "gt_partial_validate_word_salad",
@@ -1254,11 +1254,11 @@
       }
     ],
     "stats": {
-      "enqueued": 0,
+      "enqueued": 1,
       "suppressed_cooldown": 0,
       "suppressed_manual_review": 0,
       "deduped_ttl": 0,
-      "manual_review_escalations": 58
+      "manual_review_escalations": 83
     },
     "alerts": []
   },
@@ -1273,9 +1273,9 @@
     "cycle_delta": 0,
     "started_at": "",
     "active_minutes": 0.0,
-    "baseline_quality_rate_pct": 11.541,
-    "current_quality_rate_pct": 11.541,
-    "best_quality_rate_pct": 11.541,
+    "baseline_quality_rate_pct": 11.656,
+    "current_quality_rate_pct": 11.656,
+    "best_quality_rate_pct": 11.656,
     "quality_drop_pct": 0.0,
     "best_quality_drop_pct": 0.0,
     "lang_completion": {},

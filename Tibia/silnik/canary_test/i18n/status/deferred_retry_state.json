@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-04-29T22:10:11.693176Z",
+  "updated_at": "2026-04-29T22:13:11.321977Z",
   "keys": {
     "f3a1183f17a2177ac3cbd8a6": {
       "lang": "es",
@@ -225772,14 +225772,39 @@
       "partial_completed": false,
       "last_status": "pending",
       "cooldown": false
+    },
+    "40c728d142d9b1d0aa229e0a": {
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.amber.stdmod_28",
+      "attempts_total": 1,
+      "attempts_by_bucket": {
+        "default": 1
+      },
+      "last_reason": "gt_identity_retry_identical_to_en",
+      "last_bucket": "default",
+      "last_attempt_epoch": 1777500790,
+      "last_seen_epoch": 1777500790,
+      "next_retry_not_before_epoch": 1777522390,
+      "next_retry_not_before_utc": "2026-04-30T04:13:10Z",
+      "manual_review": false,
+      "first_seen_epoch": 1777500790,
+      "first_seen_utc": "2026-04-29T22:13:10Z",
+      "partial_events": 0,
+      "partial_stage_max": 0,
+      "partial_last_stage_utc": "",
+      "partial_active": false,
+      "partial_completed": false,
+      "last_status": "pending",
+      "cooldown": false
     }
   },
   "stats": {
-    "enqueued": 0,
+    "enqueued": 1,
     "suppressed_cooldown": 0,
     "suppressed_manual_review": 0,
     "deduped_ttl": 0,
-    "manual_review_escalations": 58,
+    "manual_review_escalations": 83,
     "partial_staged": 0,
     "partial_completed": 0,
     "retry_loop_cooldown": 0,

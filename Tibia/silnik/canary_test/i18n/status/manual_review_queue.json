@@ -69336,11 +69336,29 @@
       ],
       "previous_state_source": "tm",
       "previous_state_updated_at": "2026-04-29T21:40:19.670630Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:31:32.983807Z",
+      "status": "pending",
+      "lang": "ru",
+      "json_file": "items.json",
+      "key": "item.31239.name",
+      "reason": "canonical_name_semantic_conflict",
+      "en_text": "RESERVED SPRITE",
+      "attempted_translation": "зарезервированная SPRITE",
+      "issues": [
+        {
+          "type": "canonical_name_semantic_conflict",
+          "severity": "MEDIUM",
+          "message": "Expected canonical lemma 'РЕСЕРВЕД СПРИТЕ' for EN 'reserved sprite', but source key item.31239.name still uses conflicting variant 'зарезервированная SPRITE'"
+        }
+      ],
+      "source": "canonical_name_conflicts"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3532
+    "total": 3533
   },
-  "updated_at": "2026-04-29T22:29:18.539769Z"
+  "updated_at": "2026-04-29T22:31:37.639968Z"
 }

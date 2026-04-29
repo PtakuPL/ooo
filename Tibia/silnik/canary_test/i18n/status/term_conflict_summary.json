@@ -1,141 +1,141 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T22:26:26.406966Z",
-  "lang": "tr",
+  "generated_at_utc": "2026-04-29T22:31:16.292222Z",
+  "lang": "ru",
   "json_file": "items.json",
   "surface": "items",
   "term_registry_path": "term_registry_enriched.json",
-  "term_conflicts_total": 71,
-  "keys_visited": 2000,
-  "keys_scanned": 337,
-  "visit_limit_hit": true,
-  "keys_with_term_usages": 125,
-  "keys_with_conflicts": 32,
-  "term_conflict_rate_pct": 25.6,
-  "term_conflict_rate_delta_pct": 25.6,
-  "registry_terms_total": 9039,
+  "term_conflicts_total": 200,
+  "keys_visited": 1971,
+  "keys_scanned": 336,
+  "visit_limit_hit": false,
+  "keys_with_term_usages": 152,
+  "keys_with_conflicts": 71,
+  "term_conflict_rate_pct": 46.711,
+  "term_conflict_rate_delta_pct": 46.711,
+  "registry_terms_total": 14342,
   "auto_fixed_english_name_leaks": 0,
-  "inflection_suspects_flagged": 1,
-  "manual_review_enqueued": 70,
+  "inflection_suspects_flagged": 83,
+  "manual_review_enqueued": 117,
   "conflict_type_breakdown": {
-    "canonical_term_inflection_suspect": 1,
-    "canonical_term_missing": 70
+    "canonical_term_missing": 117,
+    "canonical_term_inflection_suspect": 83
   },
   "surface_breakdown": {
     "items": {
-      "keys_with_term_usages": 125,
-      "keys_with_conflicts": 32,
-      "term_conflicts_total": 71
+      "keys_with_term_usages": 152,
+      "keys_with_conflicts": 71,
+      "term_conflicts_total": 200
     }
   },
   "top_conflicts": [
     {
+      "key": "item.10207.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "sНетwman",
+      "canonical_en": "snowman",
+      "translated_text": "Используйте его в своем доме, чтобы увидеть снеговика.",
+      "source_file": "items.json",
+      "source_key": "item.30336.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "статуя",
+      "canonical_en": "statue",
+      "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
+      "source_file": "items.json",
+      "source_key": "item.10322.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "статуя",
+      "canonical_en": "statue",
+      "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
+      "source_file": "items.json",
+      "source_key": "item.10975.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "статуя",
+      "canonical_en": "statue",
+      "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
+      "source_file": "items.json",
+      "source_key": "item.10976.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "статуя",
+      "canonical_en": "statue",
+      "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
+      "source_file": "items.json",
+      "source_key": "item.11696.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "статуя",
+      "canonical_en": "statue",
+      "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
+      "source_file": "items.json",
+      "source_key": "item.11697.name"
+    },
+    {
+      "key": "item.10216.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "статуя",
+      "canonical_en": "statue",
+      "translated_text": "Используйте его в своем доме, чтобы построить статую дракона.",
+      "source_file": "items.json",
+      "source_key": "item.2025.name"
+    },
+    {
       "key": "item.10217.desc",
       "conflict_type": "canonical_term_inflection_suspect",
-      "canonical": "kitap",
+      "canonical": "книга",
       "canonical_en": "book",
-      "translated_text": "Bilgelik kazanmak veya Zao kültürünün daha fazlasının kilidini açmak için bu şifreli kitabı Farmine'daki bir bilgeye getirin",
+      "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
       "source_file": "items.json",
       "source_key": "item.12276.name"
     },
     {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
+      "key": "item.10217.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "книга",
+      "canonical_en": "book",
+      "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
       "source_file": "items.json",
-      "source_key": "item.116.name"
+      "source_key": "item.27929.name"
     },
     {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
+      "key": "item.10217.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "книга",
+      "canonical_en": "book",
+      "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
       "source_file": "items.json",
-      "source_key": "item.117.name"
+      "source_key": "item.27930.name"
     },
     {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
+      "key": "item.10217.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "книга",
+      "canonical_en": "book",
+      "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
       "source_file": "items.json",
-      "source_key": "item.118.name"
+      "source_key": "item.27931.name"
     },
     {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
+      "key": "item.10217.desc",
+      "conflict_type": "canonical_term_inflection_suspect",
+      "canonical": "книга",
+      "canonical_en": "book",
+      "translated_text": "Принесите эту зашифрованную книгу мудрецу в Фармине, чтобы обрести мудрость или узнать больше о культуре Зао.",
       "source_file": "items.json",
-      "source_key": "item.12763.name"
-    },
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
-      "source_file": "items.json",
-      "source_key": "item.12764.name"
-    },
-    {
-      "key": "item.10247.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
-      "source_file": "items.json",
-      "source_key": "item.14166.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.116.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.117.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.118.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.12763.name"
-    },
-    {
-      "key": "item.11328.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.12764.name"
+      "source_key": "item.2816.name"
     }
   ]
 }

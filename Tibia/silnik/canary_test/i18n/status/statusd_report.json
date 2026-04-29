@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-29T22:28:58.941351Z",
+  "timestamp": "2026-04-29T22:30:32.973653Z",
   "version": "statusd-mvp-1.0",
   "worker": {
     "pid": 6760,
     "heartbeat_at": "2026-04-29T22:27:50Z",
-    "heartbeat_age_s": 68.9,
+    "heartbeat_age_s": 163.0,
     "cycle": 20,
     "mode": "continuous",
     "category": "?",
@@ -86,7 +86,7 @@
   },
   "worker_runtime_heartbeat": {
     "schema_version": 1,
-    "generated_at_utc": "2026-04-29T22:28:58.941351Z",
+    "generated_at_utc": "2026-04-29T22:30:32.973653Z",
     "source": "statusd.aggregate_telemetry",
     "status": "healthy",
     "reason": "heartbeat_fresh",
@@ -97,17 +97,17 @@
     "current_file": "items.json",
     "cycle": 20,
     "heartbeat_at_utc": "2026-04-29T22:27:50Z",
-    "heartbeat_age_s": 68.941,
+    "heartbeat_age_s": 162.974,
     "worker": {
       "pid": 6760,
       "pid_alive": true,
       "heartbeat_at_utc": "2026-04-29T22:27:50Z",
-      "heartbeat_age_s": 68.941,
+      "heartbeat_age_s": 162.974,
       "mode": "continuous",
       "category": "",
       "cycle": 20,
-      "activity_heartbeat_at_utc": "2026-04-29T22:27:50Z",
-      "activity_heartbeat_age_s": 68.941
+      "activity_heartbeat_at_utc": "2026-04-29T22:29:29Z",
+      "activity_heartbeat_age_s": 63.974
     },
     "guardian": {
       "timestamp": "2026-04-29T22:28:46.709710Z",
@@ -127,7 +127,7 @@
       "pid": 9567,
       "owner_pid": 9567,
       "owner_pid_alive": true,
-      "lock_age_s": 12.0
+      "lock_age_s": 24.0
     },
     "thresholds": {
       "heartbeat_aging_seconds": 300.0,
@@ -518,7 +518,7 @@
     "npc_total": 1028,
     "npc_migrated": 700,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-04-29T22:28:59.046442Z",
+    "statusd_live_snapshot_at_utc": "2026-04-29T22:30:33.045658Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -1064,21 +1064,21 @@
     "critical_count": 15000,
     "rate_warn_pct": 40.0,
     "rate_crit_pct": 85.0,
-    "entries": 69,
-    "translated_total": 3207,
-    "suspicious_high_total": 306,
-    "suspicious_high_rate_pct": 9.542,
+    "entries": 68,
+    "translated_total": 3153,
+    "suspicious_high_total": 285,
+    "suspicious_high_rate_pct": 9.039,
     "status": "observed",
     "severity": "info",
     "worst_severity": "warning",
     "top_langs": [
       {
-        "lang": "cs",
-        "suspicious_high": 112
-      },
-      {
         "lang": "es",
         "suspicious_high": 105
+      },
+      {
+        "lang": "cs",
+        "suspicious_high": 91
       },
       {
         "lang": "ro",
@@ -1100,7 +1100,7 @@
     "top_categories": [
       {
         "category": "items.json",
-        "suspicious_high": 185
+        "suspicious_high": 164
       },
       {
         "category": "npc.json",
@@ -1117,17 +1117,17 @@
     ],
     "per_lang": [
       {
-        "lang": "cs",
-        "suspicious_high": 112,
-        "translated": 589,
-        "rate_pct": 19.015,
-        "severity": "info"
-      },
-      {
         "lang": "es",
         "suspicious_high": 105,
         "translated": 530,
         "rate_pct": 19.811,
+        "severity": "info"
+      },
+      {
+        "lang": "cs",
+        "suspicious_high": 91,
+        "translated": 535,
+        "rate_pct": 17.009,
         "severity": "info"
       },
       {
@@ -1162,9 +1162,9 @@
     "per_domain": [
       {
         "domain": "items.json",
-        "suspicious_high": 185,
-        "translated": 2127,
-        "rate_pct": 8.698,
+        "suspicious_high": 164,
+        "translated": 2073,
+        "rate_pct": 7.911,
         "severity": "info"
       },
       {
@@ -1196,16 +1196,16 @@
     "status": "active",
     "severity": "ok",
     "reason": "ok",
-    "latest_timestamp": "2026-04-29T22:28:38.872115Z",
-    "latest_age_s": 20.069,
+    "latest_timestamp": "2026-04-29T22:29:20.106796Z",
+    "latest_age_s": 72.867,
     "stale_warn_seconds": 1800,
     "stale_critical_seconds": 7200,
-    "tracked_keys": 8951,
+    "tracked_keys": 8983,
     "retry_due_now": 5652,
-    "manual_review_locked": 2938,
+    "manual_review_locked": 2939,
     "cooldown_locked": 2,
     "manual_review_queue_size": 3532,
-    "deferred_backlog_total": 1783,
+    "deferred_backlog_total": 1782,
     "deferred_backlog_total_all_time": 52190,
     "deferred_backlog_window_seconds": 86400,
     "deferred_recent_1h": 33,
@@ -1220,7 +1220,7 @@
       },
       {
         "reason": "retry_loop_cooldown_default",
-        "count": 21
+        "count": 20
       },
       {
         "reason": "gt_identity_retry_identical_to_en",
@@ -1254,9 +1254,9 @@
       }
     ],
     "stats": {
-      "enqueued": 0,
+      "enqueued": 32,
       "suppressed_cooldown": 2,
-      "suppressed_manual_review": 0,
+      "suppressed_manual_review": 52,
       "deduped_ttl": 2,
       "manual_review_escalations": 0
     },
@@ -1273,9 +1273,9 @@
     "cycle_delta": 0,
     "started_at": "",
     "active_minutes": 0.0,
-    "baseline_quality_rate_pct": 9.542,
-    "current_quality_rate_pct": 9.542,
-    "best_quality_rate_pct": 9.542,
+    "baseline_quality_rate_pct": 9.039,
+    "current_quality_rate_pct": 9.039,
+    "best_quality_rate_pct": 9.039,
     "quality_drop_pct": 0.0,
     "best_quality_drop_pct": 0.0,
     "lang_completion": {},

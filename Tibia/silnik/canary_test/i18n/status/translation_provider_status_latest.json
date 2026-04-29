@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:10:24.168969Z",
-  "active_provider": "Free Google Translate",
-  "active_provider_code": "free_google_translate",
-  "active_provider_source": "google_translate",
-  "active_provider_timestamp": "2026-04-29T21:01:05.134189Z",
+  "generated_at_utc": "2026-04-29T21:12:52.653270Z",
+  "active_provider": "TM/simple",
+  "active_provider_code": "tm_simple",
+  "active_provider_source": "tm",
+  "active_provider_timestamp": "2026-04-29T21:10:24.953168Z",
   "active_model": "openai/gpt-4o-mini",
   "fallback_reason": "OpenAI model pool → fallback chain exhausted all models blocked [all_models_blocked] items.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -65,11 +65,10 @@
   "provider_pool_health": {
     "overall_status": "degraded",
     "signals": [
-      "recent_fallback",
       "provider_consistency_debt:409"
     ],
     "provider_consistency_debt": 409,
-    "recent_window_writes": 585,
+    "recent_window_writes": 566,
     "recent_write_breakdown": [
       {
         "provider": "openai_model_pool",
@@ -79,7 +78,7 @@
       {
         "provider": "tm_simple",
         "provider_label": "TM/simple",
-        "writes": 205
+        "writes": 186
       },
       {
         "provider": "free_google_translate",
@@ -97,7 +96,7 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 42,
+    "fallbacks_last_200": 36,
     "fallback_action_breakdown": [
       {
         "action": "fallback_chain_exhausted_all_models_blocked",
@@ -108,22 +107,12 @@
         "action": "fallback_chain_exhausted_model_unavailable",
         "action_label": "fallback chain exhausted model unavailable",
         "count": 6
-      },
-      {
-        "action": "fallback_to_next_provider_validate_fail",
-        "action_label": "fallback to next provider validate fail",
-        "count": 5
-      },
-      {
-        "action": "fallback_to_google_translate_validate_fail",
-        "action_label": "fallback to google translate validate fail",
-        "count": 1
       }
     ],
     "providers": {
       "tm_simple": {
         "status": "active",
-        "recent_writes": 205
+        "recent_writes": 186
       },
       "free_google_translate": {
         "status": "active",
@@ -246,7 +235,7 @@
       "used_pct": 77.6,
       "monthly_cap": 250.0,
       "spent": 194.0,
-      "latest_age_s": 800.142282,
+      "latest_age_s": 941.813309,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

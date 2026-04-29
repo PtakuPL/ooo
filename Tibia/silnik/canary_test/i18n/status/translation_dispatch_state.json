@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-29T20:54:29.504557Z",
-  "cycle_counter": 13292,
-  "last_target_key": "es:items.json",
-  "last_pending_total": 12933,
-  "last_marker_todo": 12933,
-  "last_tier": 1,
+  "timestamp": "2026-04-29T21:11:05.736398Z",
+  "cycle_counter": 13293,
+  "last_target_key": "de:npc.json",
+  "last_pending_total": 13022,
+  "last_marker_todo": 537,
+  "last_tier": 2,
   "last_cat_priority": 0,
   "candidates_count": 96,
   "active_candidates_count": 89,
@@ -14,7 +14,7 @@
   "marker_debt": {
     "priority_enabled": true,
     "priority_min_keys": 25,
-    "total_marker_todo": 152637,
+    "total_marker_todo": 152490,
     "top_candidates": [
       {
         "lang": "tr",
@@ -49,14 +49,14 @@
       {
         "lang": "it",
         "json_file": "items.json",
-        "marker_todo": 13594,
-        "pending_total": 13594
+        "marker_todo": 13564,
+        "pending_total": 13564
       },
       {
         "lang": "es",
         "json_file": "items.json",
-        "marker_todo": 12933,
-        "pending_total": 12933
+        "marker_todo": 12816,
+        "pending_total": 12816
       },
       {
         "lang": "ru",
@@ -135,14 +135,14 @@
       {
         "lang": "it",
         "json_file": "items.json",
-        "marker_todo": 13594,
-        "pending_total": 13594
+        "marker_todo": 13564,
+        "pending_total": 13564
       },
       {
         "lang": "es",
         "json_file": "items.json",
-        "marker_todo": 12933,
-        "pending_total": 12933
+        "marker_todo": 12816,
+        "pending_total": 12816
       },
       {
         "lang": "de",
@@ -175,9 +175,9 @@
     "w2": 3,
     "w3": 1
   },
-  "cache_hit": true,
+  "cache_hit": false,
   "cache_ttl_cycles": 5,
-  "cache_cycle": 10,
+  "cache_cycle": 11,
   "no_progress_counts": {
     "sv:dataroot.json": 0,
     "sr:dataroot.json": 0,
@@ -541,6 +541,14 @@
     "floor_pct": 25.0,
     "weight": 2,
     "gated_langs": {
+      "it": {
+        "allowed_domain": null,
+        "domain_coverages": {
+          "items.json": 52.9,
+          "npc.json": 76.51,
+          "quests.json": 99.18
+        }
+      },
       "cs": {
         "allowed_domain": null,
         "domain_coverages": {
@@ -563,14 +571,6 @@
           "items.json": 34.48,
           "npc.json": 19.1,
           "quests.json": 99.51
-        }
-      },
-      "it": {
-        "allowed_domain": null,
-        "domain_coverages": {
-          "items.json": 52.9,
-          "npc.json": 76.51,
-          "quests.json": 99.18
         }
       }
     },
@@ -672,12 +672,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 12822,
+        "name_pending_total": 12705,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 12822,
-            "name_coverage_pct": 61.64
+            "name_pending": 12705,
+            "name_coverage_pct": 61.99
           },
           "monsters.json": {
             "name_total": 1637,
@@ -745,12 +745,12 @@
           "items.json"
         ],
         "name_total": 35062,
-        "name_pending_total": 13593,
+        "name_pending_total": 13563,
         "pending_by_file": {
           "items.json": {
             "name_total": 33425,
-            "name_pending": 13593,
-            "name_coverage_pct": 59.33
+            "name_pending": 13563,
+            "name_coverage_pct": 59.42
           },
           "monsters.json": {
             "name_total": 1637,

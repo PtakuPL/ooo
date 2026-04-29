@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
-  "timestamp": "2026-04-29T20:51:30.134903Z",
-  "built_cycle": 9,
+  "timestamp": "2026-04-29T21:10:59.505765Z",
+  "built_cycle": 11,
   "cache_ttl_cycles": 5,
   "targets": [
     "pl",
@@ -415,15 +415,15 @@
     {
       "lang": "es",
       "json_file": "items.json",
-      "pending_total": 12933,
-      "todo": 12933,
-      "simple_todo": 12844,
-      "marker_todo": 12933,
+      "pending_total": 12816,
+      "todo": 12816,
+      "simple_todo": 12727,
+      "marker_todo": 12816,
       "missing_in_lang": 0,
       "name_total": 33425,
-      "name_pending": 12822,
+      "name_pending": 12705,
       "name_missing_in_lang": 0,
-      "name_coverage_pct": 61.64
+      "name_coverage_pct": 61.99
     },
     {
       "lang": "es",
@@ -467,10 +467,10 @@
     {
       "lang": "es",
       "json_file": "npc.json",
-      "pending_total": 893,
-      "todo": 893,
+      "pending_total": 892,
+      "todo": 892,
       "simple_todo": 87,
-      "marker_todo": 889,
+      "marker_todo": 888,
       "missing_in_lang": 0,
       "name_total": 0,
       "name_pending": 0,
@@ -1273,15 +1273,15 @@
     {
       "lang": "it",
       "json_file": "items.json",
-      "pending_total": 13594,
-      "todo": 13594,
-      "simple_todo": 13593,
-      "marker_todo": 13594,
+      "pending_total": 13564,
+      "todo": 13564,
+      "simple_todo": 13563,
+      "marker_todo": 13564,
       "missing_in_lang": 0,
       "name_total": 33425,
-      "name_pending": 13593,
+      "name_pending": 13563,
       "name_missing_in_lang": 0,
-      "name_coverage_pct": 59.33
+      "name_coverage_pct": 59.42
     },
     {
       "lang": "it",

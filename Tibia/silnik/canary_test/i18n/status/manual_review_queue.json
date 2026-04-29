@@ -67207,11 +67207,558 @@
         }
       ],
       "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:36.451981Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_31",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You feel a perfect mixture of joy, compassion and sudden peacefulness. Bright xanthous impressions of topaz, orange and white welcome you at the final halt of your journey. ...",
+      "attempted_translation": "Sie spüren eine perfekte Mischung aus Freude, Mitgefühl und plötzlichem Frieden. Helle Xanthus-Eindrücke von Topas, Orange und Weiß begrüßen Sie am letzten Halt Ihrer Reise. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:39.916539Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:38.048040Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_33",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You find yourself inside the dragon's dream. You can {look} around or {go} into a specific direction. You can also {take} or {use} an object. Enter {help} to display this information at any time.",
+      "attempted_translation": "Sie befinden sich im Traum des Drachen. Sie können {look} um oder {go} in eine bestimmte Richtung. Sie können auch ein Objekt {take} oder {use} verwenden. Geben Sie {help} ein, um diese Informationen jederzeit anzuzeigen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:39.945579Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:38.176107Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.multi_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You are now prepared to enter the realm of the evildoer. I am grateful for your help, wayfarer. Should you seek my council, use this charm I cede to you. For my spirit will guide you wherever you are. May you enjoy a sheltered future, you shall prevail.",
+      "attempted_translation": "Sie sind nun bereit, das Reich der Übeltäter zu betreten. Ich bin dankbar für deine Hilfe, Wanderer. Sollten Sie meinen Rat einholen, nutzen Sie diesen Zauber, den ich Ihnen überlasse. Denn mein Geist wird dich führen, wo immer du bist. Mögen Sie eine geschützte Zukunft genießen, Sie werden siegen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:39.982826Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:40.190439Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You find yourself inside the dragon's dream. You can {look} around or {go} into a specific direction. You can also {take} or {use} an object. Enter {help} to display this information at any time.",
+      "attempted_translation": "Sie befinden sich im Traum des Drachen. Sie können {look} um oder {go} in eine bestimmte Richtung. Sie können auch ein Objekt {take} oder {use} verwenden. Geben Sie {help} ein, um diese Informationen jederzeit anzuzeigen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.029255Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:41.180650Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_10",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You return through the semi-translucent gate to the west. ",
+      "attempted_translation": "Sie kehren durch das halbdurchsichtige Tor nach Westen zurück. ",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T19:03:43.963222Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:41.305465Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_13",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You take a rather large ruby out of a pile before you. ",
+      "attempted_translation": "Du nimmst einen ziemlich großen Rubin aus einem Stapel vor dir. ",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.049439Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:41.425068Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_15",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Avoiding the bright light, you carefully put the attachment on top of the strange socket. ...",
+      "attempted_translation": "Vermeiden Sie grelles Licht und setzen Sie den Aufsatz vorsichtig auf die fremde Fassung. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.067234Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:41.546475Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_16",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Your path to the north is open. You pass the gigantic gate wings to your left and right as you advance. After about an hour of travel you hear a slight rustling in the distance. You head further into that direction. ...",
+      "attempted_translation": "Dein Weg nach Norden ist offen. Auf Ihrem Weg passieren Sie links und rechts die riesigen Torflügel. Nach etwa einer Stunde Fahrt hört man in der Ferne ein leichtes Rascheln. Du gehst weiter in diese Richtung. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.097125Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:42.544897Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_17",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You travel all the way back down the dune and through the gate to the south. ",
+      "attempted_translation": "Sie gehen den ganzen Weg die Düne hinunter und durch das Tor nach Süden. ",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.106992Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:43.070196Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_21",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You continue travelling the barren sea of gemstones to the north. ",
+      "attempted_translation": "Sie reisen weiter durch das karge Meer aus Edelsteinen nach Norden. ",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.139027Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:44.081432Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_22",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You leave the massive open gate behind you and go to the west. ",
+      "attempted_translation": "Sie lassen das riesige offene Tor hinter sich und gehen nach Westen. ",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.148757Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:44.215048Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_27",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You put the stand into a small recess you find near the middle of the plateau.",
+      "attempted_translation": "Sie stellen den Ständer in eine kleine Aussparung, die Sie etwa in der Mitte des Plateaus finden.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.175198Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:44.957087Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_28",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "As the ruby slips into the notch, the strong red of the stone intensifies a thousandfold. You fear to hurt your eyes and turn away immediately. The ray seems to be directed to the centre of the plateau with astounding precision.",
+      "attempted_translation": "Wenn der Rubin in die Kerbe gleitet, intensiviert sich das kräftige Rot des Steins um das Tausendfache. Sie haben Angst, sich die Augen zu verletzen und wenden sich sofort ab. Der Strahl scheint mit erstaunlicher Präzision auf die Mitte des Plateaus gerichtet zu sein.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.205197Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:45.283146Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_29",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "As the sapphire slips into the notch, the deep blue of the stone intensifies a thousandfold. You fear to hurt your eyes and turn away immediately. The ray seems to be directed to the centre of the plateau with astounding precision.",
+      "attempted_translation": "Wenn der Saphir in die Kerbe gleitet, intensiviert sich das tiefe Blau des Steins um das Tausendfache. Sie haben Angst, sich die Augen zu verletzen und wenden sich sofort ab. Der Strahl scheint mit erstaunlicher Präzision auf die Mitte des Plateaus gerichtet zu sein.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.236119Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:45.695930Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_30",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "As the emerald slips into the notch, the vibrant green of the stone intensifies a thousandfold. You fear to hurt your eyes and turn away immediately. The ray seems to be directed to the centre of the plateau with astounding precision.",
+      "attempted_translation": "Wenn der Smaragd in die Kerbe gleitet, intensiviert sich das leuchtende Grün des Steins um das Tausendfache. Sie haben Angst, sich die Augen zu verletzen und wenden sich sofort ab. Der Strahl scheint mit erstaunlicher Präzision auf die Mitte des Plateaus gerichtet zu sein.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.272226Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:46.092641Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "As you rip the solid stand out of its socket and take it with you, the large gate opens with a deafening rumble. ",
+      "attempted_translation": "Wenn man den stabilen Ständer aus seiner Fassung reißt und mitnimmt, öffnet sich das große Tor mit ohrenbetäubendem Grollen. ",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.304867Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:47.046260Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_7",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You gasp at the size of the large open gate as you walk through to head further to the east.",
+      "attempted_translation": "Sie staunen über die Größe des großen offenen Tors, während Sie weiter nach Osten gehen.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.318413Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:47.490629Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_sleeping_dragon.say_8",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You reach for a small solitary arrangement of combined small houses and put it in your pocket.",
+      "attempted_translation": "Du greifst nach einer kleinen Solitäranordnung aus kombinierten Häuschen und steckst sie in die Tasche.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.338953Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:47.686563Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Yes, well for instance I tried for some time to figure out how to enter the fiery portal in this complex. Most of the draken never come up here. They rather hide somewhere down there, planning and plotting. ...",
+      "attempted_translation": "Ja, zum Beispiel habe ich einige Zeit versucht, herauszufinden, wie man das feurige Portal in diesem Komplex betritt. Die meisten Draken kommen nie hierher. Sie verstecken sich lieber irgendwo da unten und planen und schmieden Pläne. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.379944Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:47.848631Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_10",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Then something happened, lizardfolk started to appear, searching the place. I had to retreat from my hiding place and advance through a safer position. ...",
+      "attempted_translation": "Dann geschah etwas: Echsenmenschen tauchten auf und durchsuchten den Ort. Ich musste mich aus meinem Versteck zurückziehen und durch eine sicherere Position vordringen. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.397904Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:48.015991Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_11",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I needed to get close and blend in. So I came up with the ultimate disguise: a chalice. I could establish foothold right in their midst, would never be identified as an intruder and could even analyse their drinks! ...",
+      "attempted_translation": "Ich musste nah herankommen und untertauchen. Also habe ich mir die ultimative Verkleidung ausgedacht: einen Kelch. Ich könnte mitten unter ihnen Fuß fassen, würde nie als Eindringling identifiziert werden und könnte sogar ihre Getränke analysieren! ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.424633Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:48.200983Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_13",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "They also 'used' me a bit, you don't want to go into any details here. I am really {thirsty}.",
+      "attempted_translation": "Sie 'used' mich auch ein bisschen, du willst hier nicht auf Einzelheiten eingehen. Ich bin wirklich {thirsty}.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "diacritics_missing",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.448369Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:48.411533Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_16",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Since my valued and practical oriented colleague and mentor Spectulus did not join us, there is only one member of the academy exploration division to actually venture out to see the place - me. ...",
+      "attempted_translation": "Da mein geschätzter und praxisorientierter Kollege und Mentor Spectulus nicht zu uns kam, gibt es nur ein Mitglied der Erkundungsabteilung der Akademie, das sich tatsächlich auf den Weg macht, um den Ort zu besichtigen – mich. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.489479Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:48.573288Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_17",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "You must know, most things in the academy happen 'inside', behind closed doors. But some of us simply refuse to let theory reign over practical experience in science. ...",
+      "attempted_translation": "Sie müssen wissen, dass die meisten Dinge in der Akademie 'inside' hinter verschlossenen Türen passieren. Aber einige von uns weigern sich einfach, die Theorie über die praktische Erfahrung in der Wissenschaft herrschen zu lassen. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.514515Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:48.776881Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_18",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Well, basically Spectulus is the only one likeminded so far. In fact, he incited me to work in the field in first place. So here I am! {Disguised} as a chalice.",
+      "attempted_translation": "Nun ja, im Grunde ist Spectulus bisher der einzige Gleichgesinnte. Tatsächlich hat er mich überhaupt erst dazu angeregt, in diesem Bereich zu arbeiten. Also hier bin ich! {Disguised} als Kelch.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.539068Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:49.711510Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_19",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Well, besides being a renowned sorcerer and scholar at the magic academy in Edron, I am also the proud father of a beautiful daughter, Ivalisse. My little endeavour here must have troubled the poor thing all the time since I left. ...",
+      "attempted_translation": "Nun, ich bin nicht nur ein berühmter Zauberer und Gelehrter der Zauberakademie in Edron, sondern auch stolzer Vater einer wunderschönen Tochter, Ivalisse. Mein kleines Unterfangen hier muss das arme Ding seit meiner Abreise ständig beunruhigt haben. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.564999Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:50.066039Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_20",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Tell her I love her and that I will take care. I have to press on! My research is most valuable to the 'Edron-Zaoan Exploration Division'. You don't happen to have some water, do you? Ah nevermind. It's a long {story}.",
+      "attempted_translation": "Sag ihr, dass ich sie liebe und dass ich auf sie aufpassen werde. Ich muss weitermachen! Meine Forschung ist für 'Edron-Zaoan Exploration Division' am wertvollsten. Du hast nicht zufällig etwas Wasser, oder? Ach, egal. Es ist ein langes {story}.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "google_translate",
+      "previous_state_updated_at": "2026-04-29T19:03:44.001744Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:50.922768Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": " I heard them say it once, when a seemingly drunk guard yelled it in front of a wall mounted torch, hitting his head against it afterwards. He spilt all my contents on the floor, hmpf.",
+      "attempted_translation": "Ich hörte sie es einmal sagen, als ein scheinbar betrunkener Wachmann es vor einer der Wand befestigten Fackel schrie und anschließend mit dem Kopf dagegen schlug. Er hat meinen gesamten Inhalt auf den Boden verschüttet, hmpf.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.599023Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:51.801032Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_4",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Ah did I say that? Nevermind, I'm not really thirsty. It's part of this illusion. Somehow, I've been in hiding for so long, I started to... become... a vessel. ...",
+      "attempted_translation": "Ah, habe ich das gesagt? Egal, ich bin nicht wirklich durstig. Es ist Teil dieser Illusion. Irgendwie habe ich mich so lange versteckt, dass ich angefangen habe... zu einem Gefäß zu werden. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.620299Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:53.342153Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_6",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I basically communicate by making the metal of this goblet vibrate and using its form as a body of sound. Like a real voice, don't you think?? Yes, alright I know it's creepy. ...",
+      "attempted_translation": "Ich kommuniziere grundsätzlich, indem ich das Metall dieses Kelchs zum Schwingen bringe und seine Form als Klangkörper verwende. Wie eine echte Stimme, finden Sie nicht? Ja, alles klar, ich weiß, es ist gruselig. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.655288Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:53.466917Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_7",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "I am still in the middle of my research and do not want to go home, so please tell my daughter to not worry about my - this will be a breakthrough! I already {learned} a lot!",
+      "attempted_translation": "Ich bin immer noch mitten in meiner Recherche und möchte nicht nach Hause, also sagen Sie meiner Tochter bitte, sie soll sich keine Sorgen um mich machen – das wird ein Durchbruch sein! Ich {learned} schon viel!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.681348Z"
+    },
+    {
+      "timestamp": "2026-04-29T21:12:53.662940Z",
+      "status": "pending",
+      "lang": "de",
+      "json_file": "npc.json",
+      "key": "npc.a_strange_chalice.multi_8",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Oh yes, so since I wanted to study the Draken up close, I came up with an idea. Based on my research, and some slight bruises and a scar, the perfect hiding place is often right in the middle of subjects. ...",
+      "attempted_translation": "Oh ja, da ich die Draken aus der Nähe studieren wollte, kam mir eine Idee. Basierend auf meinen Recherchen und einigen leichten blauen Flecken und einer Narbe liegt das perfekte Versteck oft mitten in den Motiven. ...",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "MEDIUM",
+      "issue_types": [
+        "de_noun_lowercase"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:03:40.704799Z"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3408
+    "total": 3440
   },
-  "updated_at": "2026-04-29T21:10:19.553605Z"
+  "updated_at": "2026-04-29T21:12:53.688634Z"
 }

@@ -404,26 +404,147 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-04-29T21:26:28Z",
+  "generated_at_utc": "2026-04-29T21:29:26Z",
   "global": {
     "en_keys_total": 74536,
-    "errors_total": 11354,
+    "errors_total": 11356,
     "files_processed_total": 6443,
     "languages_total": 56
   },
   "legacy": {
     "i18n_global_stats": {
       "auto_translate": {
-        "guard_fail": 0,
+        "guard_fail": 2,
         "json_file": "items.json",
-        "keys_to_translate": 28661,
-        "language": "tr",
-        "recent_examples": [],
-        "recent_translated": 0,
+        "keys_to_translate": 24068,
+        "language": "ru",
+        "recent_examples": [
+          {
+            "en": "crystal geode",
+            "key": "item.14967.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "кристаллический геод"
+          },
+          {
+            "en": "crystal geode",
+            "key": "item.14968.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "кристаллический геод"
+          },
+          {
+            "en": "crystal geode",
+            "key": "item.14969.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "кристаллический геод"
+          },
+          {
+            "en": "crystal geode",
+            "key": "item.14970.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "кристаллический геод"
+          },
+          {
+            "en": "crystal geode",
+            "key": "item.14971.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "кристаллический геод"
+          },
+          {
+            "en": "fossilised spine",
+            "key": "item.14979.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "ископаемый позвоночник"
+          },
+          {
+            "en": "fossilised spine",
+            "key": "item.14980.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "ископаемый позвоночник"
+          },
+          {
+            "en": "fossilised spine",
+            "key": "item.14981.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "ископаемый позвоночник"
+          },
+          {
+            "en": "fossilised spine",
+            "key": "item.14982.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "ископаемый позвоночник"
+          },
+          {
+            "en": "fossilised spine",
+            "key": "item.14983.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "ископаемый позвоночник"
+          },
+          {
+            "en": "fossilised spine",
+            "key": "item.14984.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "ископаемый позвоночник"
+          },
+          {
+            "en": "fossilised spine",
+            "key": "item.14985.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "ископаемый позвоночник"
+          },
+          {
+            "en": "mossy floor",
+            "key": "item.15040.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "мшистый пол"
+          },
+          {
+            "en": "mossy floor",
+            "key": "item.15041.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "мшистый пол"
+          },
+          {
+            "en": "mossy floor",
+            "key": "item.15042.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "мшистый пол"
+          },
+          {
+            "en": "mossy floor",
+            "key": "item.15043.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "мшистый пол"
+          },
+          {
+            "en": "mossy floor",
+            "key": "item.15044.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "мшистый пол"
+          },
+          {
+            "en": "mossy floor",
+            "key": "item.15045.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "мшистый пол"
+          },
+          {
+            "en": "mossy wall",
+            "key": "item.15267.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "мшистая стена"
+          },
+          {
+            "en": "mossy wall",
+            "key": "item.15268.name",
+            "source": "openai:openai/gpt-4o-mini",
+            "translated": "мшистая стена"
+          }
+        ],
+        "recent_translated": 62,
         "strict_blocker": "",
         "strict_missing_key": 0
       },
-      "category": "tr",
+      "category": "ru",
       "documentation": {
         "cursor": 18,
         "documented": 18,
@@ -466,7 +587,7 @@
         "new_files_detected": 0,
         "quality_issues": 6017
       },
-      "last_update": "2026-04-29T23:23:59.302041",
+      "last_update": "2026-04-29T23:29:25.691107",
       "migration": {
         "batch_size": 110,
         "current_category": "errors",
@@ -690,7 +811,7 @@
         "files_with_hits": 5423,
         "hits": 112434
       },
-      "total_cycles": 12,
+      "total_cycles": 13,
       "translation_sync": {
         "json_file": "arena.json",
         "keys_to_sync": 184,
@@ -709,19 +830,19 @@
   "worker": {
     "current": {
       "category": "ru",
-      "detail": "auto translate in progress",
+      "detail": "cycle end",
       "eta_seconds": 0,
-      "file": "items.json",
+      "file": "-",
       "phase": "AUTO_TRANSLATE",
       "progress": {
         "done": 0,
-        "total": 30,
-        "unit": "keys"
+        "total": 0,
+        "unit": "units"
       },
-      "stage": "heartbeat_tick"
+      "stage": "cycle_end"
     },
     "cycle": 13,
-    "heartbeat_at_utc": "2026-04-29T21:26:14Z",
+    "heartbeat_at_utc": "2026-04-29T21:29:26Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

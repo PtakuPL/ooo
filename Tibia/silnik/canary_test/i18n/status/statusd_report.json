@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-29T21:26:58.474716Z",
+  "timestamp": "2026-04-29T21:28:43.862299Z",
   "version": "statusd-mvp-1.0",
   "worker": {
     "pid": 6760,
     "heartbeat_at": "2026-04-29T21:26:14Z",
-    "heartbeat_age_s": 44.5,
+    "heartbeat_age_s": 149.9,
     "cycle": 13,
     "mode": "continuous",
     "category": "?",
@@ -86,7 +86,7 @@
   },
   "worker_runtime_heartbeat": {
     "schema_version": 1,
-    "generated_at_utc": "2026-04-29T21:26:58.474716Z",
+    "generated_at_utc": "2026-04-29T21:28:43.862299Z",
     "source": "statusd.aggregate_telemetry",
     "status": "healthy",
     "reason": "heartbeat_fresh",
@@ -97,17 +97,17 @@
     "current_file": "items.json",
     "cycle": 13,
     "heartbeat_at_utc": "2026-04-29T21:26:14Z",
-    "heartbeat_age_s": 44.475,
+    "heartbeat_age_s": 149.862,
     "worker": {
       "pid": 6760,
       "pid_alive": true,
       "heartbeat_at_utc": "2026-04-29T21:26:14Z",
-      "heartbeat_age_s": 44.475,
+      "heartbeat_age_s": 149.862,
       "mode": "continuous",
       "category": "",
       "cycle": 13,
-      "activity_heartbeat_at_utc": "2026-04-29T21:26:14Z",
-      "activity_heartbeat_age_s": 44.475
+      "activity_heartbeat_at_utc": "2026-04-29T21:27:52Z",
+      "activity_heartbeat_age_s": 51.862
     },
     "guardian": {
       "timestamp": "2026-04-29T21:26:25.921633Z",
@@ -127,7 +127,7 @@
       "pid": 9567,
       "owner_pid": 9567,
       "owner_pid_alive": true,
-      "lock_age_s": 33.0
+      "lock_age_s": 29.0
     },
     "thresholds": {
       "heartbeat_aging_seconds": 300.0,
@@ -136,8 +136,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T20:24:04.015329Z",
-    "window_end_utc": "2026-04-29T21:24:04.015329Z",
+    "window_start_utc": "2026-04-29T20:27:02.356892Z",
+    "window_end_utc": "2026-04-29T21:27:02.356892Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -145,11 +145,11 @@
       "i18n/status/suspicious_log.jsonl",
       "i18n/status/deferred_translation_queue.jsonl"
     ],
-    "total_cycles": 25,
+    "total_cycles": 28,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 25
+      "AUTO_TRANSLATE": 28
     },
-    "auto_translate_cycles": 25,
+    "auto_translate_cycles": 28,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
@@ -162,9 +162,31 @@
     "throughput_keys_per_h": 745.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
-    "suspicious_total": 597,
-    "deferred_total": 0,
-    "top_deferred_reasons": [],
+    "suspicious_total": 667,
+    "deferred_total": 33,
+    "top_deferred_reasons": [
+      {
+        "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "count": 30,
+        "share_pct": 90.9,
+        "top_target": "ru/items.json",
+        "top_target_count": 30
+      },
+      {
+        "reason": "existing_canonical_name_quality_mixed_scripts",
+        "count": 2,
+        "share_pct": 6.1,
+        "top_target": "ru/items.json",
+        "top_target_count": 2
+      },
+      {
+        "reason": "retry_loop_cooldown_default",
+        "count": 1,
+        "share_pct": 3.0,
+        "top_target": "ru/items.json",
+        "top_target_count": 1
+      }
+    ],
     "top_guard_fail_targets": [
       {
         "target": "ru/items.json",
@@ -496,7 +518,7 @@
     "npc_total": 1028,
     "npc_migrated": 700,
     "npc_needs_migration": 0,
-    "statusd_live_snapshot_at_utc": "2026-04-29T21:26:58.546703Z",
+    "statusd_live_snapshot_at_utc": "2026-04-29T21:28:43.932884Z",
     "statusd_live_snapshot_source": "i18n_file_status+en_json"
   },
   "metrics_drift": {
@@ -1042,10 +1064,10 @@
     "critical_count": 15000,
     "rate_warn_pct": 40.0,
     "rate_crit_pct": 85.0,
-    "entries": 91,
-    "translated_total": 3457,
-    "suspicious_high_total": 587,
-    "suspicious_high_rate_pct": 16.98,
+    "entries": 90,
+    "translated_total": 3414,
+    "suspicious_high_total": 567,
+    "suspicious_high_rate_pct": 16.608,
     "status": "observed",
     "severity": "info",
     "worst_severity": "warning",
@@ -1059,12 +1081,12 @@
         "suspicious_high": 156
       },
       {
-        "lang": "ro",
-        "suspicious_high": 80
-      },
-      {
         "lang": "tr",
         "suspicious_high": 72
+      },
+      {
+        "lang": "ro",
+        "suspicious_high": 60
       },
       {
         "lang": "ru",
@@ -1082,7 +1104,7 @@
     "top_categories": [
       {
         "category": "items.json",
-        "suspicious_high": 361
+        "suspicious_high": 341
       },
       {
         "category": "npc.json",
@@ -1113,17 +1135,17 @@
         "severity": "info"
       },
       {
-        "lang": "ro",
-        "suspicious_high": 80,
-        "translated": 427,
-        "rate_pct": 18.735,
-        "severity": "info"
-      },
-      {
         "lang": "tr",
         "suspicious_high": 72,
         "translated": 296,
         "rate_pct": 24.324,
+        "severity": "info"
+      },
+      {
+        "lang": "ro",
+        "suspicious_high": 60,
+        "translated": 384,
+        "rate_pct": 15.625,
         "severity": "info"
       },
       {
@@ -1151,9 +1173,9 @@
     "per_domain": [
       {
         "domain": "items.json",
-        "suspicious_high": 361,
-        "translated": 2460,
-        "rate_pct": 14.675,
+        "suspicious_high": 341,
+        "translated": 2417,
+        "rate_pct": 14.108,
         "severity": "info"
       },
       {
@@ -1185,8 +1207,8 @@
     "status": "active",
     "severity": "ok",
     "reason": "ok",
-    "latest_timestamp": "2026-04-29T21:26:18.578773Z",
-    "latest_age_s": 39.896,
+    "latest_timestamp": "2026-04-29T21:27:53.058494Z",
+    "latest_age_s": 50.804,
     "stale_warn_seconds": 1800,
     "stale_critical_seconds": 7200,
     "tracked_keys": 8950,
@@ -1245,7 +1267,7 @@
     "stats": {
       "enqueued": 33,
       "suppressed_cooldown": 1,
-      "suppressed_manual_review": 59,
+      "suppressed_manual_review": 119,
       "deduped_ttl": 1,
       "manual_review_escalations": 0
     },
@@ -1262,9 +1284,9 @@
     "cycle_delta": 0,
     "started_at": "",
     "active_minutes": 0.0,
-    "baseline_quality_rate_pct": 16.98,
-    "current_quality_rate_pct": 16.98,
-    "best_quality_rate_pct": 16.98,
+    "baseline_quality_rate_pct": 16.608,
+    "current_quality_rate_pct": 16.608,
+    "best_quality_rate_pct": 16.608,
     "quality_drop_pct": 0.0,
     "best_quality_drop_pct": 0.0,
     "lang_completion": {},

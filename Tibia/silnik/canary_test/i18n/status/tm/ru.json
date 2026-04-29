@@ -123210,18 +123210,18 @@
   "item.14857.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
     "text": "басалт стена",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:37.622131Z"
+    "updated_at": "2026-04-29T21:25:19.764608Z"
   },
   "item.14858.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
     "text": "басалт стена",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:37.629835Z"
+    "updated_at": "2026-04-29T21:25:19.768726Z"
   },
   "item.14859.name": {
     "src_hash": "b5a61ffa400b95ea98495f07d310b8cf",
@@ -123642,34 +123642,34 @@
   "item.14926.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:37.637101Z"
+    "updated_at": "2026-04-29T21:25:19.773625Z"
   },
   "item.14927.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:37.644678Z"
+    "updated_at": "2026-04-29T21:25:19.778483Z"
   },
   "item.14928.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:40.045445Z"
+    "updated_at": "2026-04-29T21:25:22.300461Z"
   },
   "item.14929.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
     "text": "маленький ручей",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:40.051260Z"
+    "updated_at": "2026-04-29T21:25:22.306219Z"
   },
   "item.14930.name": {
     "src_hash": "88f73e2d4accdf053dac113c32b17a1a",
@@ -123690,90 +123690,90 @@
   "item.14943.name": {
     "src_hash": "be86c8701b090cf034db2a5ab7370c2e",
     "text": "большой упавший кристалл",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:40.064104Z"
+    "updated_at": "2026-04-29T21:25:22.314143Z"
   },
   "item.14944.name": {
     "src_hash": "be86c8701b090cf034db2a5ab7370c2e",
     "text": "большой упавший кристалл",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:40.072744Z"
+    "updated_at": "2026-04-29T21:25:22.322169Z"
   },
   "item.14945.name": {
     "src_hash": "be86c8701b090cf034db2a5ab7370c2e",
     "text": "большой упавший кристалл",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:40.085852Z"
+    "updated_at": "2026-04-29T21:25:22.329630Z"
   },
   "item.14946.name": {
     "src_hash": "be86c8701b090cf034db2a5ab7370c2e",
     "text": "большой упавший кристалл",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:40.095940Z"
+    "updated_at": "2026-04-29T21:25:22.336840Z"
   },
   "item.14947.name": {
     "src_hash": "be86c8701b090cf034db2a5ab7370c2e",
     "text": "большой упавший кристалл",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:42.858162Z"
+    "updated_at": "2026-04-29T21:25:24.667102Z"
   },
   "item.14948.name": {
     "src_hash": "be86c8701b090cf034db2a5ab7370c2e",
     "text": "большой упавший кристалл",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:42.869345Z"
+    "updated_at": "2026-04-29T21:25:24.673227Z"
   },
   "item.14967.name": {
     "src_hash": "3a38d224e159e6350615f6795773fc3e",
     "text": "кристаллический геод",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:42.877769Z"
+    "updated_at": "2026-04-29T21:25:24.678495Z"
   },
   "item.14968.name": {
     "src_hash": "3a38d224e159e6350615f6795773fc3e",
     "text": "кристаллический геод",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:42.885465Z"
+    "updated_at": "2026-04-29T21:25:24.683804Z"
   },
   "item.14969.name": {
     "src_hash": "3a38d224e159e6350615f6795773fc3e",
     "text": "кристаллический геод",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:42.892823Z"
+    "updated_at": "2026-04-29T21:25:24.688878Z"
   },
   "item.14970.name": {
     "src_hash": "3a38d224e159e6350615f6795773fc3e",
     "text": "кристаллический геод",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:42.906216Z"
+    "updated_at": "2026-04-29T21:25:24.693754Z"
   },
   "item.14971.name": {
     "src_hash": "3a38d224e159e6350615f6795773fc3e",
     "text": "кристаллический геод",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:44.873540Z"
+    "updated_at": "2026-04-29T21:25:27.972230Z"
   },
   "item.14975.name": {
     "src_hash": "7c09d42dc8122c01ded29ccdec1e8c99",
@@ -123810,58 +123810,58 @@
   "item.14979.name": {
     "src_hash": "7c09d42dc8122c01ded29ccdec1e8c99",
     "text": "ископаемый позвоночник",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:44.880760Z"
+    "updated_at": "2026-04-29T21:25:27.978701Z"
   },
   "item.14980.name": {
     "src_hash": "7c09d42dc8122c01ded29ccdec1e8c99",
     "text": "ископаемый позвоночник",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:44.893364Z"
+    "updated_at": "2026-04-29T21:25:27.984635Z"
   },
   "item.14981.name": {
     "src_hash": "7c09d42dc8122c01ded29ccdec1e8c99",
     "text": "ископаемый позвоночник",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:44.900811Z"
+    "updated_at": "2026-04-29T21:25:27.990105Z"
   },
   "item.14982.name": {
     "src_hash": "7c09d42dc8122c01ded29ccdec1e8c99",
     "text": "ископаемый позвоночник",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:44.910691Z"
+    "updated_at": "2026-04-29T21:25:27.994774Z"
   },
   "item.14983.name": {
     "src_hash": "7c09d42dc8122c01ded29ccdec1e8c99",
     "text": "ископаемый позвоночник",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:44.918470Z"
+    "updated_at": "2026-04-29T21:25:27.999479Z"
   },
   "item.14984.name": {
     "src_hash": "7c09d42dc8122c01ded29ccdec1e8c99",
     "text": "ископаемый позвоночник",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:46.899347Z"
+    "updated_at": "2026-04-29T21:25:29.995065Z"
   },
   "item.14985.name": {
     "src_hash": "7c09d42dc8122c01ded29ccdec1e8c99",
     "text": "ископаемый позвоночник",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:46.907102Z"
+    "updated_at": "2026-04-29T21:25:30.000726Z"
   },
   "item.14986.name": {
     "src_hash": "7c09d42dc8122c01ded29ccdec1e8c99",
@@ -124386,50 +124386,50 @@
   "item.15040.name": {
     "src_hash": "c2db4ec828af6bd890da974b6ca68cb7",
     "text": "мшистый пол",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:46.916104Z"
+    "updated_at": "2026-04-29T21:25:30.003856Z"
   },
   "item.15041.name": {
     "src_hash": "c2db4ec828af6bd890da974b6ca68cb7",
     "text": "мшистый пол",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:46.923006Z"
+    "updated_at": "2026-04-29T21:25:30.006991Z"
   },
   "item.15042.name": {
     "src_hash": "c2db4ec828af6bd890da974b6ca68cb7",
     "text": "мшистый пол",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:46.929357Z"
+    "updated_at": "2026-04-29T21:25:30.009955Z"
   },
   "item.15043.name": {
     "src_hash": "c2db4ec828af6bd890da974b6ca68cb7",
     "text": "мшистый пол",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:46.935756Z"
+    "updated_at": "2026-04-29T21:25:30.012899Z"
   },
   "item.15044.name": {
     "src_hash": "c2db4ec828af6bd890da974b6ca68cb7",
     "text": "мшистый пол",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:49.772928Z"
+    "updated_at": "2026-04-29T21:25:32.042030Z"
   },
   "item.15045.name": {
     "src_hash": "c2db4ec828af6bd890da974b6ca68cb7",
     "text": "мшистый пол",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T18:29:49.777305Z"
+    "updated_at": "2026-04-29T21:25:32.045377Z"
   },
   "item.15046.name": {
     "src_hash": "c2db4ec828af6bd890da974b6ca68cb7",
@@ -124870,5 +124870,261 @@
     "confidence": 0.96,
     "verified": false,
     "updated_at": "2026-04-29T20:23:08.237879Z"
+  },
+  "item.1523.name": {
+    "src_hash": "3355422c34ac82ed950028cf2dd3fac5",
+    "text": "бамбук палисаде",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.526091Z"
+  },
+  "item.15232.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.531836Z"
+  },
+  "item.15233.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.537514Z"
+  },
+  "item.15234.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.543216Z"
+  },
+  "item.15235.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.548911Z"
+  },
+  "item.15236.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.554555Z"
+  },
+  "item.1524.name": {
+    "src_hash": "3355422c34ac82ed950028cf2dd3fac5",
+    "text": "бамбук палисаде",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.565801Z"
+  },
+  "item.15241.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.572098Z"
+  },
+  "item.15242.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.578212Z"
+  },
+  "item.15243.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.584215Z"
+  },
+  "item.15244.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.590307Z"
+  },
+  "item.15245.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.596191Z"
+  },
+  "item.15246.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.602062Z"
+  },
+  "item.15247.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.607952Z"
+  },
+  "item.15248.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.613855Z"
+  },
+  "item.15249.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.619679Z"
+  },
+  "item.1525.name": {
+    "src_hash": "3355422c34ac82ed950028cf2dd3fac5",
+    "text": "бамбук палисаде",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.630443Z"
+  },
+  "item.15250.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.636175Z"
+  },
+  "item.15252.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.646828Z"
+  },
+  "item.15253.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.652635Z"
+  },
+  "item.15254.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.658237Z"
+  },
+  "item.15255.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.663932Z"
+  },
+  "item.15256.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.669615Z"
+  },
+  "item.15257.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.675218Z"
+  },
+  "item.15258.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.680975Z"
+  },
+  "item.15259.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "РЕСЕРВЕД СПРИТЕ",
+    "source": "transliteration_cyrillic",
+    "confidence": 0.95,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.686550Z"
+  },
+  "item.1526.name": {
+    "src_hash": "3355422c34ac82ed950028cf2dd3fac5",
+    "text": "бамбук палисаде",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.697486Z"
+  },
+  "item.15269.name": {
+    "src_hash": "cf6984d86cd32a41066cda1e0740c9a8",
+    "text": "кристальная стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.717818Z"
+  },
+  "item.1527.name": {
+    "src_hash": "3355422c34ac82ed950028cf2dd3fac5",
+    "text": "бамбук палисаде",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.728584Z"
+  },
+  "item.15270.name": {
+    "src_hash": "cf6984d86cd32a41066cda1e0740c9a8",
+    "text": "кристальная стена",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:15.739468Z"
+  },
+  "item.15267.name": {
+    "src_hash": "141d0026a165e6b6a8e945b0ab5859ee",
+    "text": "мшистая стена",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:32.048868Z"
+  },
+  "item.15268.name": {
+    "src_hash": "141d0026a165e6b6a8e945b0ab5859ee",
+    "text": "мшистая стена",
+    "source": "openai:openai/gpt-4o-mini",
+    "confidence": 0.96,
+    "verified": false,
+    "updated_at": "2026-04-29T21:25:32.052386Z"
   }
 }

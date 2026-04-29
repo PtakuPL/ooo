@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T21:27:03.893346Z",
+  "timestamp": "2026-04-29T21:29:22.361313Z",
   "global": {
     "total_reference_keys": 3875872,
     "translated_keys": 711822,
@@ -60,12 +60,12 @@
     "cannot_translate_reports_visible": 4911
   },
   "cache": {
-    "lang_stats_hits": 52,
-    "lang_stats_misses": 0,
-    "lang_stats_hit_pct": 100.0,
-    "lang_stats_mode": "warm-cache",
-    "lang_file_hits": 2028,
-    "lang_file_misses": 0,
+    "lang_stats_hits": 51,
+    "lang_stats_misses": 1,
+    "lang_stats_hit_pct": 98.1,
+    "lang_stats_mode": "mixed",
+    "lang_file_hits": 2027,
+    "lang_file_misses": 1,
     "lang_file_hit_pct": 100.0,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
@@ -79,8 +79,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T20:27:02.356892Z",
-    "window_end_utc": "2026-04-29T21:27:02.356892Z",
+    "window_start_utc": "2026-04-29T20:29:21.002890Z",
+    "window_end_utc": "2026-04-29T21:29:21.002890Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -97,12 +97,12 @@
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 745,
-    "guard_fail": 2,
-    "guard_fail_rate_pct": 0.3,
+    "translated": 682,
+    "guard_fail": 0,
+    "guard_fail_rate_pct": 0.0,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 745.0,
+    "throughput_keys_per_h": 682.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
     "suspicious_total": 667,
@@ -131,12 +131,6 @@
       }
     ],
     "top_guard_fail_targets": [
-      {
-        "target": "ru/items.json",
-        "translated": 63,
-        "guard_fail": 2,
-        "guard_command": 0
-      },
       {
         "target": "cs/items.json",
         "translated": 107,
@@ -270,12 +264,12 @@
         "issues_count": 180814
       },
       "ru": {
-        "last_cycle": "2026-04-29T20:29:06.473187Z",
-        "last_translated": 63,
-        "total_suspicious": 91209,
-        "total_rejected": 9820,
-        "total_gt_guard_fail": 12641,
-        "cycles": 1271,
+        "last_cycle": "2026-04-29T21:29:16.549147Z",
+        "last_translated": 62,
+        "total_suspicious": 91213,
+        "total_rejected": 9822,
+        "total_gt_guard_fail": 12643,
+        "cycles": 1272,
         "quality_score": 60.1,
         "last_audit": "2026-04-29T21:23:59.168856Z",
         "issues_count": 377919

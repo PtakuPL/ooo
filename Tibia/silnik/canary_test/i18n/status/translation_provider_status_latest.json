@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:27:08.076950Z",
-  "active_provider": "TM/simple",
-  "active_provider_code": "tm_simple",
-  "active_provider_source": "simple",
-  "active_provider_timestamp": "2026-04-29T21:21:28.607420Z",
+  "generated_at_utc": "2026-04-29T21:29:25.594581Z",
+  "active_provider": "OpenAI model pool",
+  "active_provider_code": "openai_model_pool",
+  "active_provider_source": "openai:openai/gpt-4o-mini",
+  "active_provider_timestamp": "2026-04-29T21:29:16.550699Z",
   "active_model": "openai/gpt-4o-mini",
   "fallback_reason": "OpenAI model pool → fallback chain exhausted high reject types [high_reject_types] items.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
@@ -66,10 +66,10 @@
     "overall_status": "degraded",
     "signals": [
       "recent_fallback",
-      "provider_consistency_debt:409",
+      "provider_consistency_debt:411",
       "provider_limit_telemetry:provider_budget_high"
     ],
-    "provider_consistency_debt": 409,
+    "provider_consistency_debt": 411,
     "recent_window_writes": 563,
     "recent_write_breakdown": [
       {
@@ -250,7 +250,7 @@
       "used_pct": 80.0,
       "monthly_cap": 250.0,
       "spent": 200.0,
-      "latest_age_s": 87.50117,
+      "latest_age_s": 192.882577,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

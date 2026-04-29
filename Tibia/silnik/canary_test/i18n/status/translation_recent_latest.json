@@ -1,8 +1,129 @@
 {
-  "timestamp": "2026-04-29T21:23:55.417356Z",
-  "language": "es",
-  "json_file": "server.json",
-  "translated": 0,
-  "entries": [],
+  "timestamp": "2026-04-29T21:29:16.550699Z",
+  "language": "ru",
+  "json_file": "items.json",
+  "translated": 62,
+  "entries": [
+    {
+      "key": "item.14967.name",
+      "en": "crystal geode",
+      "translated": "кристаллический геод",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.14968.name",
+      "en": "crystal geode",
+      "translated": "кристаллический геод",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.14969.name",
+      "en": "crystal geode",
+      "translated": "кристаллический геод",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.14970.name",
+      "en": "crystal geode",
+      "translated": "кристаллический геод",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.14971.name",
+      "en": "crystal geode",
+      "translated": "кристаллический геод",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.14979.name",
+      "en": "fossilised spine",
+      "translated": "ископаемый позвоночник",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.14980.name",
+      "en": "fossilised spine",
+      "translated": "ископаемый позвоночник",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.14981.name",
+      "en": "fossilised spine",
+      "translated": "ископаемый позвоночник",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.14982.name",
+      "en": "fossilised spine",
+      "translated": "ископаемый позвоночник",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.14983.name",
+      "en": "fossilised spine",
+      "translated": "ископаемый позвоночник",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.14984.name",
+      "en": "fossilised spine",
+      "translated": "ископаемый позвоночник",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.14985.name",
+      "en": "fossilised spine",
+      "translated": "ископаемый позвоночник",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15040.name",
+      "en": "mossy floor",
+      "translated": "мшистый пол",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15041.name",
+      "en": "mossy floor",
+      "translated": "мшистый пол",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15042.name",
+      "en": "mossy floor",
+      "translated": "мшистый пол",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15043.name",
+      "en": "mossy floor",
+      "translated": "мшистый пол",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15044.name",
+      "en": "mossy floor",
+      "translated": "мшистый пол",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15045.name",
+      "en": "mossy floor",
+      "translated": "мшистый пол",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15267.name",
+      "en": "mossy wall",
+      "translated": "мшистая стена",
+      "source": "openai:openai/gpt-4o-mini"
+    },
+    {
+      "key": "item.15268.name",
+      "en": "mossy wall",
+      "translated": "мшистая стена",
+      "source": "openai:openai/gpt-4o-mini"
+    }
+  ],
   "filtered_untranslated_marker": 0
 }

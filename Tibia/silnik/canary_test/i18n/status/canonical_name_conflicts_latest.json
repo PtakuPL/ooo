@@ -1,516 +1,483 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:23:55.451999Z",
-  "lang": "es",
+  "generated_at_utc": "2026-04-29T21:29:19.907992Z",
+  "lang": "ru",
   "source_files": [
     "items.json",
     "monsters.json",
     "spells.json"
   ],
-  "canonical_terms_total": 9513,
-  "total_conflicted_terms": 43,
-  "case_only_conflicts": 15,
-  "semantic_conflicts": 28,
-  "conflict_rate_pct": 0.45,
+  "canonical_terms_total": 6708,
+  "total_conflicted_terms": 41,
+  "case_only_conflicts": 2,
+  "semantic_conflicts": 39,
+  "conflict_rate_pct": 0.61,
   "examples": [
     {
-      "en_name": "an observer eye",
-      "selected_translation": "Un observer ojo (imune)",
+      "en_name": "brain head",
+      "selected_translation": "Мозговая голова",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "Un observer ojo (imune)",
+          "translated": "Мозговая голова",
           "count": 1,
           "source_files": [
             "monsters.json"
           ],
           "sample_keys": [
-            "monster.an_observer_eye_(imune).name"
+            "monster.brain_head.name"
           ]
         },
         {
-          "translated": "Un ojo de observer",
+          "translated": "голова мозга",
           "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.an_observer_eye.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "baby dragon",
-      "selected_translation": "dragón de bebé",
-      "conflict_type": "case_only",
-      "variants": [
-        {
-          "translated": "dragón de bebé",
-          "count": 2,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.23442.name",
-            "item.23443.name"
-          ]
-        },
-        {
-          "translated": "Dragón de bebé",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.baby_dragon.name"
+            "item.32418.name"
           ]
         }
       ]
     },
     {
-      "en_name": "bat",
-      "selected_translation": "murciélago",
-      "conflict_type": "case_only",
+      "en_name": "calamary",
+      "selected_translation": "Кальмары",
+      "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "murciélago",
+          "translated": "Кальмары",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.calamary.name"
+          ]
+        },
+        {
+          "translated": "кальмар",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.31486.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "canopic jar",
+      "selected_translation": "Канопик Джар",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Канопик Джар",
+          "count": 1,
+          "source_files": [
+            "monsters.json"
+          ],
+          "sample_keys": [
+            "monster.canopic_jar.name"
+          ]
+        },
+        {
+          "translated": "caНетpic jar",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.4995.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "cot",
+      "selected_translation": "раскладушка",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "раскладушка",
+          "count": 8,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.2489.name",
+            "item.2490.name",
+            "item.2491.name",
+            "item.2492.name"
+          ]
+        },
+        {
+          "translated": "походная койка",
           "count": 4,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.31487.name",
-            "item.33040.name",
-            "item.33041.name",
-            "item.33042.name"
-          ]
-        },
-        {
-          "translated": "Murciélago",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.bat.name"
+            "item.698.name",
+            "item.699.name",
+            "item.700.name",
+            "item.701.name"
           ]
         }
       ]
     },
     {
-      "en_name": "butterfly",
-      "selected_translation": "Mariposa roja",
+      "en_name": "dead cyclops",
+      "selected_translation": "мёртвый cyclops",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "Mariposa roja",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.red_butterfly.name"
-          ]
-        },
-        {
-          "translated": "Mariposa azul",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.blue_butterfly.name"
-          ]
-        },
-        {
-          "translated": "Mariposa rosa",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.pink_butterfly.name"
-          ]
-        },
-        {
-          "translated": "Mariposa púrpura",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.purple_butterfly.name"
-          ]
-        },
-        {
-          "translated": "Mariposa amarilla",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.yellow_butterfly.name"
-          ]
-        },
-        {
-          "translated": "Mariposa",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.butterfly.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "carrion worm",
-      "selected_translation": "Gusano carroñero",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "Gusano carroñero",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.carrion_worm.name"
-          ]
-        },
-        {
-          "translated": "gusano de carrion",
-          "count": 1,
+          "translated": "мёртвый cyclops",
+          "count": 8,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.9197.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "cosmic energy prism a",
-      "selected_translation": "Cosmic energía prisma invu",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "Cosmic energía prisma invu",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.cosmic_energy_prism_a_invu.name"
+            "item.3989.name",
+            "item.4251.name",
+            "item.4299.name",
+            "item.4300.name"
           ]
         },
         {
-          "translated": "Cosmic energía prisma",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.cosmic_energy_prism_a.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "cosmic energy prism b",
-      "selected_translation": "Cosmic energía prisma b",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "Cosmic energía prisma b",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.cosmic_energy_prism_b.name"
-          ]
-        },
-        {
-          "translated": "Cosmic energía prisma b invu",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.cosmic_energy_prism_b_invu.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "cosmic energy prism c",
-      "selected_translation": "Cosmic energía prisma c",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "Cosmic energía prisma c",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.cosmic_energy_prism_c.name"
-          ]
-        },
-        {
-          "translated": "Cosmic energía prisma c invu",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.cosmic_energy_prism_c_invu.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "cosmic energy prism d",
-      "selected_translation": "Cosmic energía prisma d invu",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "Cosmic energía prisma d invu",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.cosmic_energy_prism_d_invu.name"
-          ]
-        },
-        {
-          "translated": "Cosmic energía prisma d",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.cosmic_energy_prism_d.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "demon",
-      "selected_translation": "demonio",
-      "conflict_type": "case_only",
-      "variants": [
-        {
-          "translated": "demonio",
-          "count": 6,
+          "translated": "мёртвый циклоп",
+          "count": 4,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.26173.name",
-            "item.26174.name",
-            "item.26175.name",
-            "item.26176.name"
-          ]
-        },
-        {
-          "translated": "Demonio",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.demon.name"
+            "item.656.name",
+            "item.657.name",
+            "item.658.name",
+            "item.659.name"
           ]
         }
       ]
     },
     {
-      "en_name": "dorokoll the mystic",
-      "selected_translation": "Dorokoll místico",
+      "en_name": "dead dragon hatchling",
+      "selected_translation": "мёртвый дракончик",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "Dorokoll místico",
-          "count": 1,
+          "translated": "мёртвый дракончик",
+          "count": 7,
           "source_files": [
-            "monsters.json"
+            "items.json"
           ],
           "sample_keys": [
-            "monster.dorokoll_the_mystic.name"
+            "item.269.name",
+            "item.270.name",
+            "item.271.name",
+            "item.272.name"
           ]
         },
         {
-          "translated": "Dorokoll místico stop",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.dorokoll_the_mystic_stop.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "egg",
-      "selected_translation": "huevo",
-      "conflict_type": "case_only",
-      "variants": [
-        {
-          "translated": "huevo",
+          "translated": "мёртвый дракон hatchling",
           "count": 3,
           "source_files": [
             "items.json"
           ],
           "sample_keys": [
-            "item.25077.name",
-            "item.25087.name",
-            "item.3606.name"
-          ]
-        },
-        {
-          "translated": "Huevo",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.egg_the_welter.name"
+            "item.909.name",
+            "item.910.name",
+            "item.911.name"
           ]
         }
       ]
     },
     {
-      "en_name": "eliz the unyielding",
-      "selected_translation": "Eliz unyielding stop",
+      "en_name": "druid familiar",
+      "selected_translation": "Друид знакомый",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "Eliz unyielding stop",
+          "translated": "Друид знакомый",
           "count": 1,
           "source_files": [
             "monsters.json"
           ],
           "sample_keys": [
-            "monster.eliz_the_unyielding_stop.name"
+            "monster.druid_familiar.name"
           ]
         },
         {
-          "translated": "Eliz la Inquebrantable",
+          "translated": "Друид фамилиар",
           "count": 1,
           "source_files": [
-            "monsters.json"
+            "spells.json"
           ],
           "sample_keys": [
-            "monster.eliz_the_unyielding.name"
+            "spell.druid_familiar.name"
           ]
         }
       ]
     },
     {
-      "en_name": "eradicator",
-      "selected_translation": "Erradicador",
+      "en_name": "earth ground",
+      "selected_translation": "земляной грунт",
       "conflict_type": "semantic",
       "variants": [
         {
-          "translated": "Erradicador",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.eradicator.name"
-          ]
-        },
-        {
-          "translated": "Eradicator2",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.eradicator2.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "eshtaba the conjurer",
-      "selected_translation": "Eshtaba conjurador stop",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "Eshtaba conjurador stop",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.eshtaba_the_conjurer_stop.name"
-          ]
-        },
-        {
-          "translated": "Eshtaba conjurador",
-          "count": 1,
-          "source_files": [
-            "monsters.json"
-          ],
-          "sample_keys": [
-            "monster.eshtaba_the_conjurer.name"
-          ]
-        }
-      ]
-    },
-    {
-      "en_name": "feroxa",
-      "selected_translation": "Feroxa2",
-      "conflict_type": "semantic",
-      "variants": [
-        {
-          "translated": "Feroxa2",
+          "translated": "земляной грунт",
           "count": 2,
           "source_files": [
-            "monsters.json"
+            "items.json"
           ],
           "sample_keys": [
-            "monster.feroxa.name",
-            "monster.feroxa2.name"
+            "item.280.name",
+            "item.368.name"
           ]
         },
         {
-          "translated": "Feroxa4",
+          "translated": "земля ground",
+          "count": 2,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.30225.name",
+            "item.918.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "flower bouquet",
+      "selected_translation": "букет цветов",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "букет цветов",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.649.name"
+          ]
+        },
+        {
+          "translated": "цветок bouquet",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.9230.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "flower pot",
+      "selected_translation": "цветочный горшок",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "цветочный горшок",
+          "count": 30,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.14029.name",
+            "item.14030.name",
+            "item.14031.name",
+            "item.14033.name"
+          ]
+        },
+        {
+          "translated": "цветок pot",
+          "count": 8,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.9069.name",
+            "item.9070.name",
+            "item.9073.name",
+            "item.9074.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "fossilised spine",
+      "selected_translation": "ископаемый позвоночник",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "ископаемый позвоночник",
+          "count": 8,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.14979.name",
+            "item.14980.name",
+            "item.14981.name",
+            "item.14982.name"
+          ]
+        },
+        {
+          "translated": "ископаемый шип",
+          "count": 4,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.14975.name",
+            "item.14976.name",
+            "item.14977.name",
+            "item.14978.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "gate of expertise",
+      "selected_translation": "ворота expertise",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "ворота expertise",
+          "count": 52,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.5102.name",
+            "item.5103.name",
+            "item.5111.name",
+            "item.5112.name"
+          ]
+        },
+        {
+          "translated": "ворота экспертизы",
+          "count": 8,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.11139.name",
+            "item.11140.name",
+            "item.11146.name",
+            "item.11147.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "generator",
+      "selected_translation": "Генератор",
+      "conflict_type": "case_only",
+      "variants": [
+        {
+          "translated": "Генератор",
           "count": 1,
           "source_files": [
             "monsters.json"
           ],
           "sample_keys": [
-            "monster.feroxa4.name"
+            "monster.generator.name"
           ]
         },
         {
-          "translated": "Feroxa3",
+          "translated": "генератор",
+          "count": 1,
+          "source_files": [
+            "spells.json"
+          ],
+          "sample_keys": [
+            "spell.generator.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "gore horn",
+      "selected_translation": "Гор Хорн",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "Гор Хорн",
           "count": 1,
           "source_files": [
             "monsters.json"
           ],
           "sample_keys": [
-            "monster.feroxa3.name"
+            "monster.gore_horn.name"
           ]
         },
         {
-          "translated": "Feroxa5",
+          "translated": "кровавый рог",
           "count": 1,
           "source_files": [
-            "monsters.json"
+            "items.json"
           ],
           "sample_keys": [
-            "monster.feroxa5.name"
+            "item.39377.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "helmet of the deep",
+      "selected_translation": "шлем глубин",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "шлем глубин",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.11585.name"
+          ]
+        },
+        {
+          "translated": "шлем the deep",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.5460.name"
+          ]
+        }
+      ]
+    },
+    {
+      "en_name": "large coral",
+      "selected_translation": "большой корал",
+      "conflict_type": "semantic",
+      "variants": [
+        {
+          "translated": "большой корал",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.13688.name"
+          ]
+        },
+        {
+          "translated": "большой coral",
+          "count": 1,
+          "source_files": [
+            "items.json"
+          ],
+          "sample_keys": [
+            "item.39560.name"
           ]
         }
       ]
@@ -520,10 +487,39 @@
   "case_only_autofixed_keys": [],
   "semantic_autofixed": 0,
   "semantic_autofixed_keys": [],
-  "semantic_quality_blocked": 0,
-  "semantic_quality_blocked_keys": [],
-  "existing_quality_sanitized": 0,
-  "existing_quality_sanitized_keys": [],
-  "review_candidates_total": 0,
-  "review_keys": []
+  "semantic_quality_blocked": 2,
+  "semantic_quality_blocked_keys": [
+    "item.13678.name",
+    "item.11250.name"
+  ],
+  "existing_quality_sanitized": 32,
+  "existing_quality_sanitized_keys": [
+    "item.30015.name",
+    "item.30016.name",
+    "item.30017.name",
+    "item.30018.name",
+    "item.30019.name",
+    "item.3002.name",
+    "item.30020.name",
+    "item.30021.name",
+    "item.30022.name",
+    "item.30023.name",
+    "item.30024.name",
+    "item.30025.name"
+  ],
+  "review_candidates_total": 64,
+  "review_keys": [
+    "item.32418.name",
+    "item.31486.name",
+    "item.4995.name",
+    "item.698.name",
+    "item.699.name",
+    "item.700.name",
+    "item.701.name",
+    "item.656.name",
+    "item.657.name",
+    "item.658.name",
+    "item.659.name",
+    "item.909.name"
+  ]
 }

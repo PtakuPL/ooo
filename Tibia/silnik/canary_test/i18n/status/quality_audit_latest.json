@@ -1,32 +1,15 @@
 {
-  "timestamp": "2026-04-29T23:28:04.796882Z",
+  "timestamp": "2026-04-29T23:37:03.308525Z",
   "checked_entries": 100,
-  "issues_found": 2,
+  "issues_found": 0,
   "issues_by_type": {
-    "artifact_token": 2,
-    "suspicious_log_medium": 113,
-    "suspicious_log_low": 61,
-    "suspicious_log_critical": 2,
-    "suspicious_log_high": 24,
-    "suspicious_rejected_critical": 169,
-    "suspicious_rejected_high": 31
+    "suspicious_log_medium": 25,
+    "suspicious_log_low": 114,
+    "suspicious_log_high": 61,
+    "suspicious_rejected_critical": 167,
+    "suspicious_rejected_high": 33
   },
-  "issues": [
-    {
-      "key": "npc.captain_haba_open_sea.straight_3",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "LOOKOUT REPORTS SEA SERPENT ON SIGHT!! STRAIGHT AHEAD!!",
-      "translated": "¡¡MIRADOR INFORMA SERPIENTE MARINA A LA VISTA!! ¡¡TODO DERECHO!!"
-    },
-    {
-      "key": "npc.captain_haba_open_sea.straight_5",
-      "lang": "es",
-      "type": "artifact_token",
-      "en": "SET FULL SAILS! SEA SERPENT RIGHT IN FRONT OF US!!",
-      "translated": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA JUSTO FRENTE A NOSOTROS!!"
-    }
-  ],
+  "issues": [],
   "threshold": 10,
   "slow_mode": false
 }

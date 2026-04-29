@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T23:35:48.373786Z",
+  "timestamp": "2026-04-29T23:39:03.706595Z",
   "total_langs": 52,
   "total_domains": 39,
   "entries": [
@@ -15176,10 +15176,10 @@
       "lang": "ru",
       "domain": "items.json",
       "total_keys": 36733,
-      "genuine": 12663,
-      "genuine_pct": 34.47,
+      "genuine": 12713,
+      "genuine_pct": 34.61,
       "en_copy": 0,
-      "en_prefix": 24070,
+      "en_prefix": 24020,
       "missing": 0,
       "placeholder_mismatch": 0
     },

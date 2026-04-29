@@ -404,10 +404,10 @@
       "status": "idle"
     }
   },
-  "generated_at_utc": "2026-04-29T20:29:07Z",
+  "generated_at_utc": "2026-04-29T20:31:25Z",
   "global": {
     "en_keys_total": 74536,
-    "errors_total": 11346,
+    "errors_total": 11348,
     "files_processed_total": 6443,
     "languages_total": 56
   },
@@ -829,20 +829,20 @@
   "schema_version": "3.0",
   "worker": {
     "current": {
-      "category": "ru",
+      "category": "es",
       "detail": "auto translate in progress",
       "eta_seconds": 0,
-      "file": "items.json",
+      "file": "npc.json",
       "phase": "AUTO_TRANSLATE",
       "progress": {
         "done": 0,
-        "total": 30,
+        "total": 2,
         "unit": "keys"
       },
       "stage": "heartbeat_tick"
     },
     "cycle": 6,
-    "heartbeat_at_utc": "2026-04-29T20:28:40Z",
+    "heartbeat_at_utc": "2026-04-29T20:30:59Z",
     "host": "DESKTOP-338A5OQ",
     "mode": "continuous",
     "name": "i18n_worker_simple.sh",

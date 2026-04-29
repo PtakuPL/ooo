@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:29:16.594517Z",
+  "generated_at_utc": "2026-04-29T20:31:34.199433Z",
   "active_provider": "OpenAI model pool",
   "active_provider_code": "openai_model_pool",
   "active_provider_source": "openai:openai/gpt-4.1-mini",
@@ -97,7 +97,7 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 11,
+    "fallbacks_last_200": 10,
     "fallback_action_breakdown": [
       {
         "action": "fallback_to_next_provider_validate_fail",
@@ -105,13 +105,13 @@
         "count": 5
       },
       {
-        "action": "fallback_to_google_translate_high",
-        "action_label": "fallback to google translate high",
-        "count": 3
-      },
-      {
         "action": "fallback_chain_exhausted_high_reject_types",
         "action_label": "fallback chain exhausted high reject types",
+        "count": 2
+      },
+      {
+        "action": "fallback_to_google_translate_high",
+        "action_label": "fallback to google translate high",
         "count": 2
       },
       {
@@ -250,7 +250,7 @@
       "used_pct": 63.2,
       "monthly_cap": 250.0,
       "spent": 158.0,
-      "latest_age_s": 333.446042,
+      "latest_age_s": 471.633799,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false

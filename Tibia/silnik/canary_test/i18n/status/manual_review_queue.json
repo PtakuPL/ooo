@@ -67116,11 +67116,30 @@
         }
       ],
       "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T20:30:55.167786Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.captain_fearless.voice_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "Passages to Thais, Carlin, Ab'Dendriel, Krailos, Port Hope, Edron, Darashia, Liberty Bay, Svargrond, Gray Island, Yalahar and Ankrahmun.",
+      "attempted_translation": "Pasajes a Thais, Carlin, Ab'Dendriel, Krailos, Port Hope, Edron, Darashia, Liberty Bay, Svargrond, Gray Island, Yalahar y Ankrahmun.",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "HIGH",
+      "issue_types": [
+        "contains_tibia_proper_noun",
+        "diacritics_missing",
+        "partial_translation_mix"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T19:54:28.902393Z"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3403
+    "total": 3404
   },
-  "updated_at": "2026-04-29T20:29:06.139750Z"
+  "updated_at": "2026-04-29T20:31:00.223294Z"
 }

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T20:29:13.724433Z",
+  "timestamp": "2026-04-29T20:31:30.749446Z",
   "global": {
     "total_reference_keys": 3875872,
     "translated_keys": 711284,
@@ -20,8 +20,8 @@
     "scanned_files_live": 15,
     "scanned_files_history_pct": 46.7,
     "scanned_files_live_pct": 0.1,
-    "files_not_scanned_history": 7357,
-    "files_not_scanned_live": 13785,
+    "files_not_scanned_history": 7358,
+    "files_not_scanned_live": 13786,
     "scanned_files_history_minus_live": 6428,
     "files_migrated": 7,
     "files_in_progress": 0,
@@ -54,18 +54,18 @@
     ]
   },
   "reports": {
-    "guard_reports_total": 5052,
-    "guard_reports_blocked": 4904,
+    "guard_reports_total": 5053,
+    "guard_reports_blocked": 4905,
     "blockers_reports_total": 0,
-    "cannot_translate_reports_visible": 4904
+    "cannot_translate_reports_visible": 4905
   },
   "cache": {
-    "lang_stats_hits": 51,
-    "lang_stats_misses": 1,
-    "lang_stats_hit_pct": 98.1,
-    "lang_stats_mode": "mixed",
-    "lang_file_hits": 2027,
-    "lang_file_misses": 1,
+    "lang_stats_hits": 52,
+    "lang_stats_misses": 0,
+    "lang_stats_hit_pct": 100.0,
+    "lang_stats_mode": "warm-cache",
+    "lang_file_hits": 2028,
+    "lang_file_misses": 0,
     "lang_file_hit_pct": 100.0,
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
@@ -79,8 +79,8 @@
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T19:29:12.498513Z",
-    "window_end_utc": "2026-04-29T20:29:12.498513Z",
+    "window_start_utc": "2026-04-29T19:31:29.548412Z",
+    "window_end_utc": "2026-04-29T20:31:29.548412Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -97,15 +97,15 @@
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 446,
-    "guard_fail": 0,
-    "guard_fail_rate_pct": 0.0,
+    "translated": 509,
+    "guard_fail": 2,
+    "guard_fail_rate_pct": 0.4,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 323.0,
+    "throughput_keys_per_h": 368.6,
     "throughput_runtime_hours": 1.3809,
     "throughput_runtime_source": "cycle_duration_ms",
-    "suspicious_total": 379,
+    "suspicious_total": 397,
     "deferred_total": 34,
     "top_deferred_reasons": [
       {
@@ -138,6 +138,12 @@
       }
     ],
     "top_guard_fail_targets": [
+      {
+        "target": "ru/items.json",
+        "translated": 63,
+        "guard_fail": 2,
+        "guard_command": 0
+      },
       {
         "target": "ro/items.json",
         "translated": 50,

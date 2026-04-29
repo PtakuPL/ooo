@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T19:05:34.574875Z",
+  "timestamp": "2026-04-29T19:09:26.324472Z",
   "total_langs": 52,
   "total_domains": 39,
   "entries": [
@@ -3241,9 +3241,9 @@
       "lang": "de",
       "domain": "npc.json",
       "total_keys": 14815,
-      "genuine": 237,
-      "genuine_pct": 1.6,
-      "en_copy": 14041,
+      "genuine": 240,
+      "genuine_pct": 1.62,
+      "en_copy": 14038,
       "en_prefix": 537,
       "missing": 0,
       "placeholder_mismatch": 1
@@ -19895,10 +19895,10 @@
       "lang": "tr",
       "domain": "items.json",
       "total_keys": 36733,
-      "genuine": 7988,
-      "genuine_pct": 21.75,
+      "genuine": 8018,
+      "genuine_pct": 21.83,
       "en_copy": 24,
-      "en_prefix": 28721,
+      "en_prefix": 28691,
       "missing": 0,
       "placeholder_mismatch": 0
     },

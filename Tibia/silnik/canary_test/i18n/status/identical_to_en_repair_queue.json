@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T18:58:05.499104Z",
+  "timestamp": "2026-04-29T19:08:35.444424Z",
   "priority_langs": [
     "es",
     "pl",
@@ -70,7 +70,7 @@
     "es": 704,
     "pl": 767,
     "cs": 15153,
-    "de": 19847,
+    "de": 19844,
     "fr": 13129,
     "hu": 638,
     "it": 2993,
@@ -122,7 +122,7 @@
   },
   "cooldown_state_file": "i18n/status/repair_target_cooldown_state.json",
   "cooldown_filtered_entries": 0,
-  "last_selected_target": "es:npc.json",
+  "last_selected_target": "es:server.json",
   "top_entries": [
     {
       "lang": "es",
@@ -505,7 +505,7 @@
     {
       "lang": "de",
       "json_file": "npc.json",
-      "identical_to_en": 11958,
+      "identical_to_en": 11955,
       "domain_priority": 0
     },
     {
@@ -1327,8 +1327,8 @@
   ],
   "selected": {
     "lang": "es",
-    "json_file": "server.json",
-    "identical_to_en": 9,
-    "domain_priority": 1
+    "json_file": "npc.json",
+    "identical_to_en": 2,
+    "domain_priority": 0
   }
 }

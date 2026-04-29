@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-04-29T22:33:23.399129Z",
+  "updated_at": "2026-04-29T22:35:46.823045Z",
   "keys": {
     "f3a1183f17a2177ac3cbd8a6": {
       "lang": "es",
@@ -226600,14 +226600,14 @@
     }
   },
   "stats": {
-    "enqueued": 32,
-    "suppressed_cooldown": 2,
-    "suppressed_manual_review": 180,
-    "deduped_ttl": 2,
-    "manual_review_escalations": 1,
-    "partial_staged": 0,
+    "enqueued": 0,
+    "suppressed_cooldown": 0,
+    "suppressed_manual_review": 6,
+    "deduped_ttl": 0,
+    "manual_review_escalations": 0,
+    "partial_staged": 6,
     "partial_completed": 0,
-    "retry_loop_cooldown": 2,
-    "retry_loop_manual_review": 0
+    "retry_loop_cooldown": 0,
+    "retry_loop_manual_review": 6
   }
 }

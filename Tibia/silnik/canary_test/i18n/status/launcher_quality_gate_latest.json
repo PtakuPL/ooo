@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:05:46.261716Z",
+  "generated_at_utc": "2026-04-29T21:08:03.599012Z",
   "enabled": true,
   "files": [
     "client.json",
@@ -85,15 +85,15 @@
   },
   "trend_24h": {
     "window_hours": 24,
-    "samples": 1040,
-    "pass_samples": 1040,
+    "samples": 1039,
+    "pass_samples": 1039,
     "fail_samples": 0,
     "pass_rate_pct": 100.0,
     "state_changes": 0,
     "latest_state": "pass",
     "oldest_state": "pass",
-    "latest_timestamp": "2026-04-29T21:05:46.261716Z",
-    "oldest_timestamp": "2026-04-28T21:07:34.918664Z",
+    "latest_timestamp": "2026-04-29T21:08:03.599012Z",
+    "oldest_timestamp": "2026-04-28T21:10:20.376031Z",
     "checks_failed_delta": 0,
     "word_salad_rejects_delta": 0,
     "placeholder_rejects_delta": 0,

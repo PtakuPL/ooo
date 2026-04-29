@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T21:24:45.459731Z",
+  "timestamp": "2026-04-29T21:55:17.836127Z",
   "window_hours": 6.0,
   "min_samples": 6,
   "min_drop_required": 1,
@@ -9,13 +9,13 @@
   "reason": "top_target_changed",
   "top_key": "es:server.json",
   "top_count": 9,
-  "old_total": 114185,
+  "old_total": 114167,
   "new_total": 113875,
-  "decrease_pct": 0.27,
-  "old_ts": "2026-04-29T15:15:29.571888Z",
-  "new_ts": "2026-04-29T21:21:48.389621Z",
-  "hours_elapsed": 5.96,
-  "sample_count": 18,
+  "decrease_pct": 0.26,
+  "old_ts": "2026-04-29T15:46:02.293891Z",
+  "new_ts": "2026-04-29T21:49:36.258604Z",
+  "hours_elapsed": 5.59,
+  "sample_count": 17,
   "per_lang_trend": {
     "ar": {
       "old": 878,
@@ -48,10 +48,10 @@
       "decrease_pct": 0.0
     },
     "cs": {
-      "old": 15156,
+      "old": 15153,
       "new": 15153,
-      "delta": 3,
-      "decrease_pct": 0.02
+      "delta": 0,
+      "decrease_pct": 0.0
     },
     "da": {
       "old": 638,
@@ -60,10 +60,10 @@
       "decrease_pct": 0.0
     },
     "de": {
-      "old": 19865,
+      "old": 19855,
       "new": 19563,
-      "delta": 302,
-      "decrease_pct": 1.52
+      "delta": 292,
+      "decrease_pct": 1.47
     },
     "el": {
       "old": 638,
@@ -198,10 +198,10 @@
       "decrease_pct": 0.0
     },
     "nl": {
-      "old": 14063,
+      "old": 14061,
       "new": 14061,
-      "delta": 2,
-      "decrease_pct": 0.01
+      "delta": 0,
+      "decrease_pct": 0.0
     },
     "no": {
       "old": 638,
@@ -216,10 +216,10 @@
       "decrease_pct": 0.0
     },
     "pt": {
-      "old": 11474,
+      "old": 11471,
       "new": 11471,
-      "delta": 3,
-      "decrease_pct": 0.03
+      "delta": 0,
+      "decrease_pct": 0.0
     },
     "ro": {
       "old": 2338,

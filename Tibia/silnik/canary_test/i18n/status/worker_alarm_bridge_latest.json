@@ -1,13 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:47:41.352193Z",
-  "cycle": 15,
+  "generated_at_utc": "2026-04-29T21:54:05.527793Z",
+  "cycle": 16,
   "open_alarms": [
     {
       "code": "DISPATCH_STALE",
       "severity": "warning",
       "source": "statusd_doctor.json",
       "detail": "DISPATCH_STALE: dispatch state sprzed 1009s"
+    },
+    {
+      "code": "GUARD_REPORT_STALE",
+      "severity": "warning",
+      "source": "statusd_doctor.json",
+      "detail": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 866s"
     },
     {
       "code": "NATIVE_READINESS_BELOW_THRESHOLD",
@@ -19,7 +25,7 @@
       "code": "PROVIDER_BUDGET_80PCT",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "PROVIDER_BUDGET_80PCT: used=84.8% cap=250.0 spent=212.0 source=provider_budget_latest.json"
+      "detail": "PROVIDER_BUDGET_80PCT: used=86.8% cap=250.0 spent=217.0 source=provider_budget_latest.json"
     },
     {
       "code": "QUEUE_STARVATION_DETECTED",
@@ -37,21 +43,21 @@
       "code": "SUSPICIOUS_HIGH_ELEVATED",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=501 rate=14.836% window=6.0h top_lang=es:174 per_domain=[server.json:39(1300.0%/warning)]"
+      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=466 rate=14.121% window=6.0h top_lang=es:160 per_domain=[server.json:39(1300.0%/warning)]"
     },
     {
       "code": "TERM_CONSISTENCY_REGRESSION",
       "severity": "critical",
       "source": "statusd_doctor.json",
-      "detail": "TERM_CONSISTENCY_REGRESSION: rate=28.235% delta=28.235% total=200 source=term_conflicts_latest.json"
+      "detail": "TERM_CONSISTENCY_REGRESSION: rate=39.64% delta=39.64% total=80 source=term_conflicts_latest.json"
     }
   ],
   "resolved_this_cycle": [],
   "newly_opened": [
-    "DISPATCH_STALE"
+    "GUARD_REPORT_STALE"
   ],
   "summary": {
-    "open_count": 7,
+    "open_count": 8,
     "resolved_count": 0,
     "tracked_alarms": 32
   },

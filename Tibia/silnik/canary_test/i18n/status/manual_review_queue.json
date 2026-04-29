@@ -69354,11 +69354,45 @@
         }
       ],
       "source": "canonical_name_conflicts"
+    },
+    {
+      "timestamp": "2026-04-29T22:49:08.343406Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.captain_haba_open_sea.say_3",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "IS THAT ALL?!? SPEED UP, TIGHTEN THE MAINSAIL!!!",
+      "attempted_translation": "¿¡¿ESO ES TODO?!? ¡¡¡ACELERAR, APRETAR LA VELA MAYOR!!!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "HIGH",
+      "issue_types": [
+        "artifact_tokens"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T22:18:56.276474Z"
+    },
+    {
+      "timestamp": "2026-04-29T22:49:10.052805Z",
+      "status": "pending",
+      "lang": "es",
+      "json_file": "npc.json",
+      "key": "npc.captain_haba_open_sea.starboard_1",
+      "reason": "accepted_quality_retry_loop",
+      "en_text": "SET FULL SAILS! SEA SERPENT ON THE STARBOARD SIDE!!",
+      "attempted_translation": "¡LEVAN LAS VELAS A TODO LADO! ¡¡SERPIENTE MARINA A ESTRIBOR!!",
+      "source": "accepted_quality_retry_loop_guard",
+      "severity": "HIGH",
+      "issue_types": [
+        "artifact_tokens"
+      ],
+      "previous_state_source": "tm",
+      "previous_state_updated_at": "2026-04-29T22:18:56.414031Z"
     }
   ],
   "stats": {
     "applied": 0,
-    "total": 3533
+    "total": 3535
   },
-  "updated_at": "2026-04-29T22:47:13.855118Z"
+  "updated_at": "2026-04-29T22:49:22.987138Z"
 }

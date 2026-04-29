@@ -1,43 +1,43 @@
 {
-  "timestamp": "2026-04-29T21:47:37.197246Z",
+  "timestamp": "2026-04-29T22:47:58.516580Z",
   "window": {
-    "start_utc": "2026-04-28T21:47:37.197246Z",
-    "end_utc": "2026-04-29T21:47:37.197246Z",
+    "start_utc": "2026-04-28T22:47:58.516580Z",
+    "end_utc": "2026-04-29T22:47:58.516580Z",
     "hours": 24
   },
   "kpi_24h": {
-    "translated": 17073,
-    "guard_fail": 682,
-    "guard_fail_rate_pct": 3.84,
+    "translated": 16920,
+    "guard_fail": 651,
+    "guard_fail_rate_pct": 3.7,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_signal_hits": 0,
-    "cycle_total_entries": 415,
+    "cycle_total_entries": 394,
     "pending_skip_source": "pending_skip_24h_latest.json",
-    "throughput_keys_per_h_window": 711.4,
-    "throughput_keys_per_h_active": 715.9,
-    "guard_entries": 423
+    "throughput_keys_per_h_window": 705.0,
+    "throughput_keys_per_h_active": 706.1,
+    "guard_entries": 409
   },
   "quality_24h": {
-    "quality_entries": 640,
-    "suspicious_count": 7821,
-    "suspicious_high_count": 5281,
-    "suspicious_high_rate_pct": 29.354,
+    "quality_entries": 619,
+    "suspicious_count": 7599,
+    "suspicious_high_count": 5112,
+    "suspicious_high_rate_pct": 28.653,
     "suspicious_high_top_lang": "es",
-    "suspicious_high_top_lang_count": 2343,
+    "suspicious_high_top_lang_count": 2226,
     "identical_to_en_count": 0,
-    "gt_guard_fails_count": 826,
-    "latest_audit_timestamp": "2026-04-29T21:46:09.607563Z",
-    "latest_audit_issues_found": 1,
+    "gt_guard_fails_count": 793,
+    "latest_audit_timestamp": "2026-04-29T22:40:49.420656Z",
+    "latest_audit_issues_found": 2,
     "latest_audit_issues_by_type": {
-      "artifact_token": 1,
-      "suspicious_log_low": 109,
-      "suspicious_log_high": 90,
-      "suspicious_log_medium": 1,
-      "suspicious_rejected_critical": 172,
-      "suspicious_rejected_high": 28
+      "artifact_token": 2,
+      "suspicious_log_low": 86,
+      "suspicious_log_medium": 14,
+      "suspicious_log_high": 100,
+      "suspicious_rejected_critical": 170,
+      "suspicious_rejected_high": 30
     }
   },
   "coverage_snapshot": {
@@ -53,23 +53,23 @@
       "client_pct": 80.74
     },
     "es": {
-      "completion_pct": 79.61,
+      "completion_pct": 79.65,
       "missing_keys": 0,
-      "english_copy_keys": 9512,
+      "english_copy_keys": 9511,
       "server_keys": 70637,
-      "server_translated": 56178,
-      "server_pct": 79.53,
+      "server_translated": 56211,
+      "server_pct": 79.58,
       "client_keys": 3899,
       "client_translated": 3160,
       "client_pct": 81.05
     },
     "de": {
-      "completion_pct": 68.66,
+      "completion_pct": 68.98,
       "missing_keys": 0,
-      "english_copy_keys": 64561,
+      "english_copy_keys": 64314,
       "server_keys": 70637,
-      "server_translated": 49209,
-      "server_pct": 69.66,
+      "server_translated": 49442,
+      "server_pct": 69.99,
       "client_keys": 3899,
       "client_translated": 1970,
       "client_pct": 50.53
@@ -101,8 +101,8 @@
       "missing_keys": 0,
       "english_copy_keys": 4775,
       "server_keys": 70637,
-      "server_translated": 31367,
-      "server_pct": 44.41,
+      "server_translated": 31365,
+      "server_pct": 44.4,
       "client_keys": 3899,
       "client_translated": 3144,
       "client_pct": 80.64
@@ -152,14 +152,14 @@
     "active": false,
     "pending_langs": [],
     "pending_key": "",
-    "cycle_counter": 13296,
-    "start_cycle": 13296,
+    "cycle_counter": 13304,
+    "start_cycle": 13304,
     "cycle_delta": 0,
     "started_at": "",
     "active_minutes": 0.0,
-    "baseline_quality_rate_pct": 14.836,
-    "current_quality_rate_pct": 14.836,
-    "best_quality_rate_pct": 14.836,
+    "baseline_quality_rate_pct": 8.845,
+    "current_quality_rate_pct": 8.845,
+    "best_quality_rate_pct": 8.845,
     "quality_drop_pct": 0.0,
     "best_quality_drop_pct": 0.0,
     "lang_completion": {},
@@ -177,35 +177,35 @@
     "status": "active",
     "severity": "ok",
     "reason": "ok",
-    "latest_timestamp": "2026-04-29T21:46:05.083127Z",
-    "latest_age_s": 21.605,
+    "latest_timestamp": "2026-04-29T22:47:20.100420Z",
+    "latest_age_s": 30.812,
     "stale_warn_seconds": 1800,
     "stale_critical_seconds": 7200,
-    "tracked_keys": 8950,
-    "retry_due_now": 5619,
-    "manual_review_locked": 2938,
+    "tracked_keys": 8983,
+    "retry_due_now": 5684,
+    "manual_review_locked": 2939,
     "cooldown_locked": 2,
-    "manual_review_queue_size": 3448,
-    "deferred_backlog_total": 1814,
-    "deferred_backlog_total_all_time": 52157,
+    "manual_review_queue_size": 3533,
+    "deferred_backlog_total": 1782,
+    "deferred_backlog_total_all_time": 52190,
     "deferred_backlog_window_seconds": 86400,
     "deferred_recent_1h": 33,
     "top_reasons": [
       {
         "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
-        "count": 1493
+        "count": 1462
       },
       {
         "reason": "existing_canonical_name_quality_mixed_scripts",
-        "count": 267
+        "count": 266
       },
       {
         "reason": "retry_loop_cooldown_default",
-        "count": 21
+        "count": 20
       },
       {
         "reason": "gt_identity_retry_identical_to_en",
-        "count": 16
+        "count": 17
       },
       {
         "reason": "gt_partial_validate_word_salad",
@@ -231,13 +231,13 @@
       },
       {
         "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
-        "count": 1839
+        "count": 1868
       }
     ],
     "stats": {
       "enqueued": 0,
       "suppressed_cooldown": 0,
-      "suppressed_manual_review": 197,
+      "suppressed_manual_review": 119,
       "deduped_ttl": 0,
       "manual_review_escalations": 0
     },
@@ -309,85 +309,85 @@
     ]
   },
   "trend_per_language": {
-    "it": {
+    "ru": {
+      "entries": 53,
+      "translated": 2720,
+      "guard_fail": 63,
+      "guard_fail_rate_pct": 2.26,
+      "no_progress_entries": 0,
+      "no_progress_rate_pct": 0.0
+    },
+    "cs": {
       "entries": 52,
-      "translated": 2218,
-      "guard_fail": 46,
-      "guard_fail_rate_pct": 2.03,
+      "translated": 3116,
+      "guard_fail": 293,
+      "guard_fail_rate_pct": 8.59,
+      "no_progress_entries": 0,
+      "no_progress_rate_pct": 0.0
+    },
+    "it": {
+      "entries": 50,
+      "translated": 2100,
+      "guard_fail": 43,
+      "guard_fail_rate_pct": 2.01,
       "no_progress_entries": 0,
       "no_progress_rate_pct": 0.0
     },
     "ro": {
-      "entries": 51,
-      "translated": 2101,
-      "guard_fail": 176,
-      "guard_fail_rate_pct": 7.73,
+      "entries": 50,
+      "translated": 2065,
+      "guard_fail": 164,
+      "guard_fail_rate_pct": 7.36,
       "no_progress_entries": 0,
       "no_progress_rate_pct": 0.0
     },
     "es": {
-      "entries": 52,
-      "translated": 1429,
+      "entries": 50,
+      "translated": 1446,
       "guard_fail": 0,
       "guard_fail_rate_pct": 0.0,
       "no_progress_entries": 0,
       "no_progress_rate_pct": 0.0
     },
     "de": {
-      "entries": 107,
-      "translated": 2982,
-      "guard_fail": 94,
-      "guard_fail_rate_pct": 3.06,
+      "entries": 102,
+      "translated": 3088,
+      "guard_fail": 88,
+      "guard_fail_rate_pct": 2.77,
       "no_progress_entries": 0,
       "no_progress_rate_pct": 0.0
     },
     "tr": {
-      "entries": 54,
-      "translated": 2460,
+      "entries": 52,
+      "translated": 2385,
       "guard_fail": 0,
       "guard_fail_rate_pct": 0.0,
-      "no_progress_entries": 0,
-      "no_progress_rate_pct": 0.0
-    },
-    "ru": {
-      "entries": 54,
-      "translated": 2748,
-      "guard_fail": 63,
-      "guard_fail_rate_pct": 2.24,
-      "no_progress_entries": 0,
-      "no_progress_rate_pct": 0.0
-    },
-    "cs": {
-      "entries": 53,
-      "translated": 3135,
-      "guard_fail": 303,
-      "guard_fail_rate_pct": 8.81,
       "no_progress_entries": 0,
       "no_progress_rate_pct": 0.0
     }
   },
   "trend_per_category": {
     "items.json": {
-      "entries": 316,
-      "translated": 14091,
-      "guard_fail": 588,
-      "guard_fail_rate_pct": 4.01,
+      "entries": 307,
+      "translated": 13832,
+      "guard_fail": 563,
+      "guard_fail_rate_pct": 3.91,
       "no_progress_entries": 0,
       "no_progress_rate_pct": 0.0
     },
     "otclient_modules.json": {
-      "entries": 54,
-      "translated": 1112,
-      "guard_fail": 47,
-      "guard_fail_rate_pct": 4.06,
+      "entries": 51,
+      "translated": 1067,
+      "guard_fail": 44,
+      "guard_fail_rate_pct": 3.96,
       "no_progress_entries": 0,
       "no_progress_rate_pct": 0.0
     },
     "npc.json": {
-      "entries": 53,
-      "translated": 1870,
-      "guard_fail": 47,
-      "guard_fail_rate_pct": 2.45,
+      "entries": 51,
+      "translated": 2021,
+      "guard_fail": 44,
+      "guard_fail_rate_pct": 2.13,
       "no_progress_entries": 0,
       "no_progress_rate_pct": 0.0
     }
@@ -396,35 +396,35 @@
     "languages_by_translated": [
       {
         "lang": "cs",
-        "entries": 53,
-        "translated": 3135,
-        "guard_fail": 303,
-        "guard_fail_rate_pct": 8.81,
+        "entries": 52,
+        "translated": 3116,
+        "guard_fail": 293,
+        "guard_fail_rate_pct": 8.59,
         "no_progress_entries": 0,
         "no_progress_rate_pct": 0.0
       },
       {
         "lang": "de",
-        "entries": 107,
-        "translated": 2982,
-        "guard_fail": 94,
-        "guard_fail_rate_pct": 3.06,
+        "entries": 102,
+        "translated": 3088,
+        "guard_fail": 88,
+        "guard_fail_rate_pct": 2.77,
         "no_progress_entries": 0,
         "no_progress_rate_pct": 0.0
       },
       {
         "lang": "ru",
-        "entries": 54,
-        "translated": 2748,
+        "entries": 53,
+        "translated": 2720,
         "guard_fail": 63,
-        "guard_fail_rate_pct": 2.24,
+        "guard_fail_rate_pct": 2.26,
         "no_progress_entries": 0,
         "no_progress_rate_pct": 0.0
       },
       {
         "lang": "tr",
-        "entries": 54,
-        "translated": 2460,
+        "entries": 52,
+        "translated": 2385,
         "guard_fail": 0,
         "guard_fail_rate_pct": 0.0,
         "no_progress_entries": 0,
@@ -432,26 +432,26 @@
       },
       {
         "lang": "it",
-        "entries": 52,
-        "translated": 2218,
-        "guard_fail": 46,
-        "guard_fail_rate_pct": 2.03,
+        "entries": 50,
+        "translated": 2100,
+        "guard_fail": 43,
+        "guard_fail_rate_pct": 2.01,
         "no_progress_entries": 0,
         "no_progress_rate_pct": 0.0
       },
       {
         "lang": "ro",
-        "entries": 51,
-        "translated": 2101,
-        "guard_fail": 176,
-        "guard_fail_rate_pct": 7.73,
+        "entries": 50,
+        "translated": 2065,
+        "guard_fail": 164,
+        "guard_fail_rate_pct": 7.36,
         "no_progress_entries": 0,
         "no_progress_rate_pct": 0.0
       },
       {
         "lang": "es",
-        "entries": 52,
-        "translated": 1429,
+        "entries": 50,
+        "translated": 1446,
         "guard_fail": 0,
         "guard_fail_rate_pct": 0.0,
         "no_progress_entries": 0,
@@ -461,36 +461,36 @@
     "categories_by_translated": [
       {
         "category": "items.json",
-        "entries": 316,
-        "translated": 14091,
-        "guard_fail": 588,
-        "guard_fail_rate_pct": 4.01,
+        "entries": 307,
+        "translated": 13832,
+        "guard_fail": 563,
+        "guard_fail_rate_pct": 3.91,
         "no_progress_entries": 0,
         "no_progress_rate_pct": 0.0
       },
       {
         "category": "npc.json",
-        "entries": 53,
-        "translated": 1870,
-        "guard_fail": 47,
-        "guard_fail_rate_pct": 2.45,
+        "entries": 51,
+        "translated": 2021,
+        "guard_fail": 44,
+        "guard_fail_rate_pct": 2.13,
         "no_progress_entries": 0,
         "no_progress_rate_pct": 0.0
       },
       {
         "category": "otclient_modules.json",
-        "entries": 54,
-        "translated": 1112,
-        "guard_fail": 47,
-        "guard_fail_rate_pct": 4.06,
+        "entries": 51,
+        "translated": 1067,
+        "guard_fail": 44,
+        "guard_fail_rate_pct": 3.96,
         "no_progress_entries": 0,
         "no_progress_rate_pct": 0.0
       }
     ]
   },
   "strict_hourly_snapshot": {
-    "window_start_utc": "2026-04-29T20:46:14.357759Z",
-    "window_end_utc": "2026-04-29T21:46:14.357759Z",
+    "window_start_utc": "2026-04-29T21:47:25.025798Z",
+    "window_end_utc": "2026-04-29T22:47:25.025798Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -498,58 +498,58 @@
       "i18n/status/suspicious_log.jsonl",
       "i18n/status/deferred_translation_queue.jsonl"
     ],
-    "total_cycles": 25,
+    "total_cycles": 29,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 25
+      "AUTO_TRANSLATE": 29
     },
-    "auto_translate_cycles": 25,
+    "auto_translate_cycles": 29,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
     "pending_skip_share_migration_pct": 0.0,
-    "translated": 734,
+    "translated": 631,
     "guard_fail": 2,
     "guard_fail_rate_pct": 0.3,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 734.0,
+    "throughput_keys_per_h": 631.0,
     "throughput_runtime_hours": 1.0,
     "throughput_runtime_source": "window_hours_long_runtime_fallback",
-    "suspicious_total": 604,
+    "suspicious_total": 662,
     "deferred_total": 33,
     "top_deferred_reasons": [
       {
         "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
-        "count": 30,
-        "share_pct": 90.9,
+        "count": 29,
+        "share_pct": 87.9,
         "top_target": "ru/items.json",
-        "top_target_count": 30
+        "top_target_count": 29
       },
       {
         "reason": "existing_canonical_name_quality_mixed_scripts",
-        "count": 2,
-        "share_pct": 6.1,
+        "count": 3,
+        "share_pct": 9.1,
         "top_target": "ru/items.json",
-        "top_target_count": 2
+        "top_target_count": 3
       },
       {
-        "reason": "retry_loop_cooldown_default",
+        "reason": "gt_identity_retry_identical_to_en",
         "count": 1,
         "share_pct": 3.0,
-        "top_target": "ru/items.json",
+        "top_target": "de/npc.json",
         "top_target_count": 1
       }
     ],
     "top_guard_fail_targets": [
       {
         "target": "ru/items.json",
-        "translated": 62,
+        "translated": 60,
         "guard_fail": 2,
         "guard_command": 0
       },
       {
         "target": "ro/items.json",
-        "translated": 56,
+        "translated": 121,
         "guard_fail": 0,
         "guard_command": 0
       },
@@ -561,13 +561,13 @@
       },
       {
         "target": "es/items.json",
-        "translated": 159,
+        "translated": 71,
         "guard_fail": 0,
         "guard_command": 0
       },
       {
         "target": "de/npc.json",
-        "translated": 299,
+        "translated": 249,
         "guard_fail": 0,
         "guard_command": 0
       },
@@ -579,7 +579,7 @@
       },
       {
         "target": "cs/items.json",
-        "translated": 97,
+        "translated": 69,
         "guard_fail": 0,
         "guard_command": 0
       }
@@ -597,13 +597,13 @@
     "epoch_cooldown_seconds": 600
   },
   "repair_queue_24h": {
-    "latest_timestamp": "2026-04-29T21:38:44.143680Z",
+    "latest_timestamp": "2026-04-29T22:47:36.582035Z",
     "entries_total_latest": 733,
     "entries_by_lang_latest": {
       "es": 704,
       "pl": 767,
       "cs": 15153,
-      "de": 19563,
+      "de": 19343,
       "fr": 13129,
       "hu": 638,
       "it": 2993,
@@ -659,14 +659,14 @@
       "key": "es:npc.json",
       "identical_to_en": 2
     },
-    "samples_24h": 233,
-    "first_timestamp_24h": "2026-04-28T21:47:54.242013Z",
-    "last_timestamp_24h": "2026-04-29T21:38:44.143680Z",
+    "samples_24h": 230,
+    "first_timestamp_24h": "2026-04-28T22:49:48.859761Z",
+    "last_timestamp_24h": "2026-04-29T22:47:36.582035Z",
     "top_target_start_24h": {
       "lang": "es",
-      "json_file": "npc.json",
-      "key": "es:npc.json",
-      "identical_to_en": 2
+      "json_file": "server.json",
+      "key": "es:server.json",
+      "identical_to_en": 9
     },
     "top_target_latest_24h": {
       "lang": "es",
@@ -674,7 +674,7 @@
       "key": "es:npc.json",
       "identical_to_en": 2
     },
-    "top_target_changed_24h": false,
+    "top_target_changed_24h": true,
     "top_target_drop_24h": 0,
     "stagnation": {
       "window_hours": 6.0,
@@ -683,8 +683,8 @@
       "detected": false,
       "reason": "top_target_changed",
       "top_key": "es:npc.json",
-      "sample_count": 31,
-      "span_hours": 5.972,
+      "sample_count": 25,
+      "span_hours": 5.954,
       "top_locked_in_window": false,
       "baseline_count": 2,
       "latest_count": 2,
@@ -692,23 +692,23 @@
     }
   },
   "repair_tuning_24h": {
-    "samples_24h": 201,
-    "translated_total": 585,
-    "guard_fail_total": 121,
-    "guard_fail_rate_pct": 17.139,
-    "avg_limit": 143.82,
-    "avg_suspicious_high_pct": 505.08,
-    "gt_mode_true_samples": 201,
-    "latest_timestamp": "2026-04-29T21:46:09.069232Z",
+    "samples_24h": 193,
+    "translated_total": 545,
+    "guard_fail_total": 118,
+    "guard_fail_rate_pct": 17.798,
+    "avg_limit": 144.19,
+    "avg_suspicious_high_pct": 519.769,
+    "gt_mode_true_samples": 193,
+    "latest_timestamp": "2026-04-29T22:36:01.931396Z",
     "top_langs_by_samples": [
       {
         "lang": "es",
-        "samples": 201
+        "samples": 193
       }
     ],
     "tier_distribution": {
-      "low_backlog+suspicious_guard": 101,
-      "low_backlog": 100
+      "low_backlog": 97,
+      "low_backlog+suspicious_guard": 96
     },
     "top_risky_targets": [
       {
@@ -783,13 +783,13 @@
     "deferred_retry_pipeline agreguje retry_due_now/manual_review/backlog z deferred_retry_pipeline_latest + deferred queue."
   ],
   "repair_backlog": {
-    "current_total": 113875,
+    "current_total": 113655,
     "entries_total": 733,
     "by_lang": {
       "es": 704,
       "pl": 767,
       "cs": 15153,
-      "de": 19563,
+      "de": 19343,
       "fr": 13129,
       "hu": 638,
       "it": 2993,
@@ -839,10 +839,10 @@
       "zh": 729,
       "zh_TW": 1664
     },
-    "timestamp": "2026-04-29T21:38:44.143680Z",
+    "timestamp": "2026-04-29T22:47:36.582035Z",
     "stagnation_status": "ok",
-    "stagnation_decrease_pct": 0.27,
-    "stagnation_hours": 5.96,
+    "stagnation_decrease_pct": 0.45,
+    "stagnation_hours": 5.943,
     "stagnation_alert": false,
     "per_lang_trend": {
       "ar": {
@@ -876,10 +876,10 @@
         "decrease_pct": 0.0
       },
       "cs": {
-        "old": 15156,
+        "old": 15153,
         "new": 15153,
-        "delta": 3,
-        "decrease_pct": 0.02
+        "delta": 0,
+        "decrease_pct": 0.0
       },
       "da": {
         "old": 638,
@@ -888,10 +888,10 @@
         "decrease_pct": 0.0
       },
       "de": {
-        "old": 19865,
-        "new": 19563,
-        "delta": 302,
-        "decrease_pct": 1.52
+        "old": 19855,
+        "new": 19343,
+        "delta": 512,
+        "decrease_pct": 2.58
       },
       "el": {
         "old": 638,
@@ -1026,10 +1026,10 @@
         "decrease_pct": 0.0
       },
       "nl": {
-        "old": 14063,
+        "old": 14061,
         "new": 14061,
-        "delta": 2,
-        "decrease_pct": 0.01
+        "delta": 0,
+        "decrease_pct": 0.0
       },
       "no": {
         "old": 638,
@@ -1044,10 +1044,10 @@
         "decrease_pct": 0.0
       },
       "pt": {
-        "old": 11474,
+        "old": 11471,
         "new": 11471,
-        "delta": 3,
-        "decrease_pct": 0.03
+        "delta": 0,
+        "decrease_pct": 0.0
       },
       "ro": {
         "old": 2338,
@@ -1158,7 +1158,7 @@
         "decrease_pct": 0.0
       }
     },
-    "delta_24h": 310,
-    "delta_24h_pct": 0.27
+    "delta_24h": 530,
+    "delta_24h_pct": 0.46
   }
 }

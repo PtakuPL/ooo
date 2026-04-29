@@ -254434,10 +254434,10 @@
   "item.1069.name": {
     "src_hash": "5410d1752d6d66d5aef6dcd437b8056a",
     "text": "trappola per insetti",
-    "source": "openai:openai/gpt-4.1-mini",
+    "source": "openai:openai/gpt-4o-mini",
     "confidence": 0.96,
     "verified": false,
-    "updated_at": "2026-04-29T20:52:13.506184Z"
+    "updated_at": "2026-04-29T21:55:49.241652Z"
   },
   "item.14519.name": {
     "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
@@ -255398,5 +255398,245 @@
     "confidence": 0.92,
     "verified": false,
     "updated_at": "2026-04-29T20:52:10.450126Z"
+  },
+  "item.14628.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:45.932176Z"
+  },
+  "item.14629.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:45.946491Z"
+  },
+  "item.1463.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "muro di pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:45.958257Z"
+  },
+  "item.14630.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:45.972021Z"
+  },
+  "item.14631.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:45.985636Z"
+  },
+  "item.14632.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:45.998726Z"
+  },
+  "item.14633.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.011719Z"
+  },
+  "item.14634.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.024532Z"
+  },
+  "item.14635.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.037363Z"
+  },
+  "item.14636.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.049904Z"
+  },
+  "item.14637.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.062468Z"
+  },
+  "item.14638.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.074967Z"
+  },
+  "item.14639.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.087526Z"
+  },
+  "item.1464.name": {
+    "src_hash": "4b3801ac0694d6c26f558d205ae02e3e",
+    "text": "muro di pietra",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.098658Z"
+  },
+  "item.14640.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.111738Z"
+  },
+  "item.14641.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.124832Z"
+  },
+  "item.14642.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.137832Z"
+  },
+  "item.14643.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.150574Z"
+  },
+  "item.14644.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.163483Z"
+  },
+  "item.14645.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.176155Z"
+  },
+  "item.14646.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.188809Z"
+  },
+  "item.14647.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.201361Z"
+  },
+  "item.14648.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.213949Z"
+  },
+  "item.14649.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.226881Z"
+  },
+  "item.14650.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.248976Z"
+  },
+  "item.14651.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.261323Z"
+  },
+  "item.14652.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.273844Z"
+  },
+  "item.14653.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.287045Z"
+  },
+  "item.14654.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.299920Z"
+  },
+  "item.14655.name": {
+    "src_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
+    "text": "SPRITE RISERVATO",
+    "source": "word_dict",
+    "confidence": 0.92,
+    "verified": false,
+    "updated_at": "2026-04-29T21:55:46.312501Z"
   }
 }

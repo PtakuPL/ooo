@@ -1,141 +1,141 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:51:14.064135Z",
-  "lang": "ro",
+  "generated_at_utc": "2026-04-29T21:58:26.399078Z",
+  "lang": "it",
   "json_file": "items.json",
   "surface": "items",
   "term_registry_path": "term_registry_enriched.json",
-  "term_conflicts_total": 80,
+  "term_conflicts_total": 54,
   "keys_visited": 2000,
   "keys_scanned": 341,
   "visit_limit_hit": true,
-  "keys_with_term_usages": 111,
-  "keys_with_conflicts": 44,
-  "term_conflict_rate_pct": 39.64,
-  "term_conflict_rate_delta_pct": 39.64,
-  "registry_terms_total": 14372,
-  "auto_fixed_english_name_leaks": 3,
-  "inflection_suspects_flagged": 3,
-  "manual_review_enqueued": 77,
+  "keys_with_term_usages": 137,
+  "keys_with_conflicts": 22,
+  "term_conflict_rate_pct": 16.058,
+  "term_conflict_rate_delta_pct": 16.058,
+  "registry_terms_total": 18077,
+  "auto_fixed_english_name_leaks": 0,
+  "inflection_suspects_flagged": 11,
+  "manual_review_enqueued": 43,
   "conflict_type_breakdown": {
-    "canonical_term_missing": 77,
-    "canonical_term_inflection_suspect": 3
+    "canonical_term_missing": 43,
+    "canonical_term_inflection_suspect": 11
   },
   "surface_breakdown": {
     "items": {
-      "keys_with_term_usages": 111,
-      "keys_with_conflicts": 44,
-      "term_conflicts_total": 80
+      "keys_with_term_usages": 137,
+      "keys_with_conflicts": 22,
+      "term_conflicts_total": 54
     }
   },
   "top_conflicts": [
     {
+      "key": "item.10028.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "contrarre",
+      "canonical_en": "contract",
+      "translated_text": "Un contratto in cui qualche disperato ha venduto la sua anima",
+      "source_file": "items.json",
+      "source_key": "item.129.name"
+    },
+    {
       "key": "item.10218.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "peşte",
+      "canonical": "Pescare",
       "canonical_en": "fish",
-      "translated_text": "Acest pește a fost sărat și deja pregătit ca provizie pentru soldați",
+      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
       "source_file": "items.json",
       "source_key": "item.10245.name"
     },
     {
       "key": "item.10218.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "peşte",
+      "canonical": "Pescare",
       "canonical_en": "fish",
-      "translated_text": "Acest pește a fost sărat și deja pregătit ca provizie pentru soldați",
+      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
       "source_file": "items.json",
       "source_key": "item.10246.name"
     },
     {
-      "key": "item.10288.desc",
+      "key": "item.10218.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "tronul dragonului",
-      "canonical_en": "dragon throne",
-      "translated_text": "Folosește-l în casa ta pentru a construi un tron ​​de dragon",
+      "canonical": "Pescare",
+      "canonical_en": "fish",
+      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
       "source_file": "items.json",
-      "source_key": "item.10286.name"
+      "source_key": "item.3578.name"
     },
     {
-      "key": "item.10288.desc",
+      "key": "item.10218.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "tronul dragonului",
-      "canonical_en": "dragon throne",
-      "translated_text": "Folosește-l în casa ta pentru a construi un tron ​​de dragon",
+      "canonical": "Pescare",
+      "canonical_en": "fish",
+      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
       "source_file": "items.json",
-      "source_key": "item.10287.name"
+      "source_key": "item.7885.name"
     },
     {
-      "key": "item.11473.desc",
+      "key": "item.10218.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Aprinde",
-      "canonical_en": "Light",
-      "translated_text": "Este prea mare pentru a fi purtat de oameni, ci mai degrabă ușor",
-      "source_file": "spells.json",
-      "source_key": "spell.light.name"
+      "canonical": "Pescare",
+      "canonical_en": "Fish",
+      "translated_text": "Questo pesce è stato salato e già preparato come provvista per i soldati",
+      "source_file": "monsters.json",
+      "source_key": "monster.fish.name"
     },
     {
-      "key": "item.11609.desc",
+      "key": "item.11341.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Sudden Death Rune",
-      "canonical_en": "sudden death rune",
-      "translated_text": "Este o rună împodobită a morții subite",
+      "canonical": "terra",
+      "canonical_en": "ground",
+      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
       "source_file": "items.json",
-      "source_key": "item.3155.name"
+      "source_key": "item.10548.name"
     },
     {
-      "key": "item.11610.desc",
+      "key": "item.11341.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Sudden Death Rune",
-      "canonical_en": "sudden death rune",
-      "translated_text": "Este o rună împodobită a morții subite",
+      "canonical": "terra",
+      "canonical_en": "ground",
+      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
       "source_file": "items.json",
-      "source_key": "item.3155.name"
+      "source_key": "item.10549.name"
     },
     {
-      "key": "item.11611.desc",
+      "key": "item.11341.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Magic Wall Rune",
-      "canonical_en": "magic wall rune",
-      "translated_text": "Este o rună magică de perete împodobită",
+      "canonical": "terra",
+      "canonical_en": "ground",
+      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
       "source_file": "items.json",
-      "source_key": "item.3180.name"
+      "source_key": "item.10550.name"
     },
     {
-      "key": "item.11611.desc",
+      "key": "item.11341.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Runa peretelui magic",
-      "canonical_en": "Magic Wall Rune",
-      "translated_text": "Este o rună magică de perete împodobită",
-      "source_file": "spells.json",
-      "source_key": "spell.magic_wall_rune.name"
-    },
-    {
-      "key": "item.11612.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "Magic Wall Rune",
-      "canonical_en": "magic wall rune",
-      "translated_text": "Este o rună magică de perete împodobită",
+      "canonical": "terra",
+      "canonical_en": "ground",
+      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
       "source_file": "items.json",
-      "source_key": "item.3180.name"
+      "source_key": "item.10551.name"
     },
     {
-      "key": "item.11612.desc",
+      "key": "item.11341.desc",
       "conflict_type": "canonical_term_missing",
-      "canonical": "Runa peretelui magic",
-      "canonical_en": "Magic Wall Rune",
-      "translated_text": "Este o rună magică de perete împodobită",
-      "source_file": "spells.json",
-      "source_key": "spell.magic_wall_rune.name"
-    },
-    {
-      "key": "item.11613.desc",
-      "conflict_type": "canonical_term_missing",
-      "canonical": "anima rune moarte",
-      "canonical_en": "animate dead rune",
-      "translated_text": "Este o rună moartă animată împodobită",
+      "canonical": "terra",
+      "canonical_en": "ground",
+      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
       "source_file": "items.json",
-      "source_key": "item.3203.name"
+      "source_key": "item.10552.name"
+    },
+    {
+      "key": "item.11341.desc",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "terra",
+      "canonical_en": "ground",
+      "translated_text": "Questa argilla è stata scavata da un terreno sacro",
+      "source_file": "items.json",
+      "source_key": "item.10553.name"
     }
   ]
 }

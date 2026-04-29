@@ -1,128 +1,128 @@
 {
-  "timestamp": "2026-04-29T21:53:31.393383Z",
-  "language": "ro",
+  "timestamp": "2026-04-29T21:58:45.040393Z",
+  "language": "it",
   "json_file": "items.json",
-  "translated": 61,
+  "translated": 31,
   "entries": [
     {
-      "key": "item.11670.name",
-      "en": "dead draken abomination",
-      "translated": "draken abominație moartă",
+      "key": "item.14638.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14639.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.1464.name",
+      "en": "stone wall",
+      "translated": "muro di pietra",
+      "source": "simple"
+    },
+    {
+      "key": "item.14640.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14641.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14642.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14643.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14644.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14645.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14646.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14647.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14648.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14649.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14650.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14651.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14652.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14653.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14654.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.14655.name",
+      "en": "RESERVED SPRITE",
+      "translated": "SPRITE RISERVATO",
+      "source": "simple"
+    },
+    {
+      "key": "item.1069.name",
+      "en": "bug tral",
+      "translated": "trappola per insetti",
       "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.1177.name",
-      "en": "wooden roof",
-      "translated": "acoperiș de lemn",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.1178.name",
-      "en": "wooden roof",
-      "translated": "acoperiș de lemn",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.1179.name",
-      "en": "wooden roof",
-      "translated": "acoperiș de lemn",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11809.name",
-      "en": "wooden trunk",
-      "translated": "trunchi de lemn",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11810.name",
-      "en": "wooden trunk",
-      "translated": "trunchi de lemn",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11815.name",
-      "en": "tattered curtain",
-      "translated": "perdea zdrențuită",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11816.name",
-      "en": "tattered curtain",
-      "translated": "perdea zdrențuită",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11817.name",
-      "en": "tattered curtain",
-      "translated": "perdea zdrențuită",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11818.name",
-      "en": "tattered curtain",
-      "translated": "perdea zdrențuită",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11823.name",
-      "en": "wolf hide",
-      "translated": "ascunzătoare de lup",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11824.name",
-      "en": "wolf hide",
-      "translated": "ascunzătoare de lup",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11835.name",
-      "en": "hanging fur",
-      "translated": "blană atârnată",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.11836.name",
-      "en": "hanging fur",
-      "translated": "blană atârnată",
-      "source": "openai:openai/gpt-4o-mini"
-    },
-    {
-      "key": "item.13656.desc",
-      "en": "This lamp is glowing very dimly.",
-      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
-      "source": "term_consistency_autofix"
-    },
-    {
-      "key": "item.13658.desc",
-      "en": "This lamp is glowing very dimly.",
-      "translated": "Această lampăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă luminează foarte slab.",
-      "source": "term_consistency_autofix"
-    },
-    {
-      "key": "item.14760.desc",
-      "en": "This is an emblem of wisdom. It was awarded by TibiaStat.com",
-      "translated": "Aceasta este o emblemăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăăă a înțelepciunii. A fost acordat de TibiaStat.com",
-      "source": "term_consistency_autofix"
-    },
-    {
-      "key": "item.10334.name",
-      "en": "dead orc marauder",
-      "translated": "orc mort jefuitor",
-      "source": "canonical_name_semantic_autofix"
-    },
-    {
-      "key": "item.10507.name",
-      "en": "lamp",
-      "translated": "lampă",
-      "source": "canonical_name_semantic_autofix"
-    },
-    {
-      "key": "item.11365.name",
-      "en": "ramp",
-      "translated": "rampă",
-      "source": "canonical_name_semantic_autofix"
     }
   ],
   "filtered_untranslated_marker": 0

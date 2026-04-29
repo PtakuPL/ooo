@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "timestamp": "2026-04-29T21:56:04.598837Z",
+  "timestamp": "2026-04-29T21:58:57.077883Z",
   "scope": "all",
   "en_total_keys": 74536,
   "en_signature": [
@@ -239,10 +239,10 @@
       0
     ]
   ],
-  "cache_hits": 52,
-  "cache_misses": 0,
-  "file_cache_hits": 2028,
-  "file_cache_misses": 0,
+  "cache_hits": 51,
+  "cache_misses": 1,
+  "file_cache_hits": 2027,
+  "file_cache_misses": 1,
   "langs": {
     "ar": {
       "sig": [
@@ -20633,8 +20633,8 @@
         [
           "items.json",
           1,
-          1777496045272221057,
-          1722928
+          1777499924764205153,
+          1722814
         ],
         [
           "libs.json",
@@ -20786,22 +20786,22 @@
         "language_name": "Włoski",
         "scope": "global",
         "total_reference_keys": 74536,
-        "translated_keys": 53469,
-        "nominal_translated_keys": 53469,
-        "real_translated_keys": 47344,
+        "translated_keys": 53499,
+        "nominal_translated_keys": 53499,
+        "real_translated_keys": 47374,
         "english_copy_keys": 10029,
-        "placeholder_keys": 17188,
+        "placeholder_keys": 17158,
         "reference_keys": 0,
         "missing_keys": 0,
         "missing_files": 0,
-        "completion_pct": 71.74,
-        "nominal_completion_pct": 71.74,
-        "real_completion_pct": 63.52,
+        "completion_pct": 71.78,
+        "nominal_completion_pct": 71.78,
+        "real_completion_pct": 63.56,
         "server_keys": 70637,
-        "server_translated": 50496,
-        "server_real_translated": 44494,
-        "server_pct": 71.49,
-        "server_real_pct": 62.99,
+        "server_translated": 50526,
+        "server_real_translated": 44524,
+        "server_pct": 71.53,
+        "server_real_pct": 63.03,
         "client_keys": 3899,
         "client_translated": 2973,
         "client_real_translated": 2850,
@@ -21110,16 +21110,16 @@
         "items.json": {
           "sig": [
             1,
-            1777496045272221057,
-            1722928
+            1777499924764205153,
+            1722814
           ],
           "row": {
             "total_reference_keys": 36733,
-            "translated_keys": 23169,
-            "nominal_translated_keys": 23169,
-            "real_translated_keys": 19430,
+            "translated_keys": 23199,
+            "nominal_translated_keys": 23199,
+            "real_translated_keys": 19460,
             "english_copy_keys": 3739,
-            "placeholder_keys": 13564,
+            "placeholder_keys": 13534,
             "reference_keys": 0,
             "missing_keys": 0,
             "missing_files": 0

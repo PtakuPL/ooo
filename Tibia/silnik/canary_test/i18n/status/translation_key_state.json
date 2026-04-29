@@ -6,7 +6,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:24.143244Z",
+    "updated_at": "2026-04-29T19:09:58.897830Z",
     "en_hash": "c6a0aabd2af804ac1f00c1504af5edf4",
     "attempted_preview": "Grrr.",
     "attempted_hash": "c6a0aabd2af804ac1f00c1504af5edf4"
@@ -18,7 +18,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:24.242468Z",
+    "updated_at": "2026-04-29T19:09:59.002140Z",
     "en_hash": "c6a0aabd2af804ac1f00c1504af5edf4",
     "attempted_preview": "Grrr.",
     "attempted_hash": "c6a0aabd2af804ac1f00c1504af5edf4"
@@ -30,7 +30,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:24.574092Z",
+    "updated_at": "2026-04-29T19:10:01.559317Z",
     "en_hash": "22567aba8d64ab99fe9115b6f7cb9c48",
     "attempted_preview": "Oh...",
     "attempted_hash": "22567aba8d64ab99fe9115b6f7cb9c48"
@@ -42,7 +42,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:24.656817Z",
+    "updated_at": "2026-04-29T19:10:01.655692Z",
     "en_hash": "9280e35fe8a04c63939438a4aded92fa",
     "attempted_preview": "Chchch",
     "attempted_hash": "9280e35fe8a04c63939438a4aded92fa"
@@ -54,7 +54,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:25.435762Z",
+    "updated_at": "2026-04-29T19:10:02.745773Z",
     "en_hash": "03505a67a6a5e2c2c6f1f27b32d98a5f",
     "attempted_preview": "GRRRRRRRRRRRRR",
     "attempted_hash": "03505a67a6a5e2c2c6f1f27b32d98a5f"
@@ -66,7 +66,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:27.484728Z",
+    "updated_at": "2026-04-29T19:10:03.636162Z",
     "en_hash": "ad1b522fb407c0fba2321f3dbe4192c0",
     "attempted_preview": "ZzzzZzzZz...chrrr...",
     "attempted_hash": "ad1b522fb407c0fba2321f3dbe4192c0"
@@ -78,7 +78,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:27.484849Z",
+    "updated_at": "2026-04-29T19:10:03.636286Z",
     "en_hash": "d1144744bf5b053dfa241e2e60ca97a4",
     "attempted_preview": "SAETHELON TORILUN GARNUM. ...",
     "attempted_hash": "d1144744bf5b053dfa241e2e60ca97a4"
@@ -90,7 +90,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:29.701959Z"
+    "updated_at": "2026-04-29T19:10:06.126978Z"
   },
   "es::npc.json::npc.a_wrinkled_bonelord.stdmod_1": {
     "lang": "es",
@@ -99,7 +99,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:34.224060Z",
+    "updated_at": "2026-04-29T19:10:13.886412Z",
     "en_hash": "dff36104bc875d708f69d7668d7b162e",
     "attempted_preview": "485611800364197.",
     "attempted_hash": "dff36104bc875d708f69d7668d7b162e"
@@ -111,7 +111,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:34.528095Z",
+    "updated_at": "2026-04-29T19:10:14.205084Z",
     "en_hash": "a9c3a1056e6dde2147a9e1475a18b0a7",
     "attempted_preview": "78572611857643646724.",
     "attempted_hash": "a9c3a1056e6dde2147a9e1475a18b0a7"
@@ -123,7 +123,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:35.611689Z",
+    "updated_at": "2026-04-29T19:10:14.374328Z",
     "en_hash": "dff36104bc875d708f69d7668d7b162e",
     "attempted_preview": "485611800364197.",
     "attempted_hash": "dff36104bc875d708f69d7668d7b162e"
@@ -135,7 +135,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:35.611765Z",
+    "updated_at": "2026-04-29T19:10:14.374532Z",
     "en_hash": "a9c3a1056e6dde2147a9e1475a18b0a7",
     "attempted_preview": "78572611857643646724.",
     "attempted_hash": "a9c3a1056e6dde2147a9e1475a18b0a7"
@@ -147,7 +147,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:41.299474Z",
+    "updated_at": "2026-04-29T19:10:20.326690Z",
     "en_hash": "0260a8f661f73e2cf7fdba1080b888d1",
     "attempted_preview": "ok.",
     "attempted_hash": "0260a8f661f73e2cf7fdba1080b888d1"
@@ -159,7 +159,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:53.017400Z",
+    "updated_at": "2026-04-29T19:11:14.819092Z",
     "en_hash": "5c32b014f6386340dacd8f77421d501b",
     "attempted_preview": "J-T B^C J^BXT°",
     "attempted_hash": "5c32b014f6386340dacd8f77421d501b"
@@ -171,7 +171,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:53.148785Z",
+    "updated_at": "2026-04-29T19:11:14.950554Z",
     "en_hash": "4074c71bc81316b6970f63dbf84cfd14",
     "attempted_preview": "Grrrr.",
     "attempted_hash": "4074c71bc81316b6970f63dbf84cfd14"
@@ -183,7 +183,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:53.148990Z",
+    "updated_at": "2026-04-29T19:11:14.950715Z",
     "en_hash": "f694fc8565fd140d05b42787edf0207b",
     "attempted_preview": "Fetchi maruk buta.",
     "attempted_hash": "f694fc8565fd140d05b42787edf0207b"
@@ -195,7 +195,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:54.518660Z",
+    "updated_at": "2026-04-29T19:11:16.465998Z",
     "en_hash": "afb8a66bbd457858c305533b93f273bb",
     "attempted_preview": "Ashari, |PLAYERNAME|.",
     "attempted_hash": "afb8a66bbd457858c305533b93f273bb"
@@ -207,7 +207,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:54.518976Z",
+    "updated_at": "2026-04-29T19:11:16.466301Z",
     "en_hash": "aa4114434bc744c1e617f6dab17ec06c",
     "attempted_preview": "Ashari |PLAYERNAME|.",
     "attempted_hash": "aa4114434bc744c1e617f6dab17ec06c"
@@ -219,7 +219,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:36:03.745653Z",
+    "updated_at": "2026-04-29T19:11:26.895217Z",
     "en_hash": "2f43b42fd833d1e77420a8dae7419000",
     "attempted_preview": "...",
     "attempted_hash": "2f43b42fd833d1e77420a8dae7419000"
@@ -231,7 +231,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:36:03.745738Z",
+    "updated_at": "2026-04-29T19:11:26.895318Z",
     "en_hash": "2f43b42fd833d1e77420a8dae7419000",
     "attempted_preview": "...",
     "attempted_hash": "2f43b42fd833d1e77420a8dae7419000"
@@ -243,7 +243,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:36:03.745920Z",
+    "updated_at": "2026-04-29T19:11:26.895438Z",
     "en_hash": "c6a540a4c4921c80ccc2fed7e07af645",
     "attempted_preview": "Krrrrrng.",
     "attempted_hash": "c6a540a4c4921c80ccc2fed7e07af645"
@@ -255,7 +255,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:36:03.745963Z",
+    "updated_at": "2026-04-29T19:11:26.895463Z",
     "en_hash": "2f43b42fd833d1e77420a8dae7419000",
     "attempted_preview": "...",
     "attempted_hash": "2f43b42fd833d1e77420a8dae7419000"
@@ -279,7 +279,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:36:22.626741Z",
+    "updated_at": "2026-04-29T19:11:47.001600Z",
     "en_hash": "2caa81fc2a7bab3b44da39ab01a25b27",
     "attempted_preview": "Ikem Charach maruk.",
     "attempted_hash": "2caa81fc2a7bab3b44da39ab01a25b27"
@@ -291,7 +291,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:36:22.627065Z",
+    "updated_at": "2026-04-29T19:11:47.002216Z",
     "en_hash": "5e8f2d57e90e0d2d3d05019410015a16",
     "attempted_preview": "Maruk rambo zambo!",
     "attempted_hash": "5e8f2d57e90e0d2d3d05019410015a16"
@@ -303,7 +303,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:36:22.633884Z",
+    "updated_at": "2026-04-29T19:11:47.012115Z",
     "en_hash": "b8b8d67a4081daccdc640477b902adec",
     "attempted_preview": "Buta maruk klamuk!",
     "attempted_hash": "b8b8d67a4081daccdc640477b902adec"
@@ -315,7 +315,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:36:22.634024Z",
+    "updated_at": "2026-04-29T19:11:47.012336Z",
     "en_hash": "2caa81fc2a7bab3b44da39ab01a25b27",
     "attempted_preview": "Ikem Charach maruk.",
     "attempted_hash": "2caa81fc2a7bab3b44da39ab01a25b27"
@@ -327,7 +327,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:36:29.658305Z",
+    "updated_at": "2026-04-29T19:11:54.758619Z",
     "en_hash": "afb8a66bbd457858c305533b93f273bb",
     "attempted_preview": "Ashari, |PLAYERNAME|.",
     "attempted_hash": "afb8a66bbd457858c305533b93f273bb"
@@ -339,7 +339,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:36:35.337834Z",
+    "updated_at": "2026-04-29T19:12:15.530022Z",
     "en_hash": "4fc97451032f367fe2b63b922f5b48d2",
     "attempted_preview": "Bye, bye.",
     "attempted_hash": "4fc97451032f367fe2b63b922f5b48d2"
@@ -351,7 +351,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:36:36.795268Z",
+    "updated_at": "2026-04-29T19:12:16.977889Z",
     "en_hash": "174310f0757a36cf0bfc64cf663446c7",
     "attempted_preview": "Zzz...",
     "attempted_hash": "174310f0757a36cf0bfc64cf663446c7"
@@ -363,7 +363,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:36:37.578855Z",
+    "updated_at": "2026-04-29T19:12:17.664913Z",
     "en_hash": "4fc97451032f367fe2b63b922f5b48d2",
     "attempted_preview": "Bye, bye.",
     "attempted_hash": "4fc97451032f367fe2b63b922f5b48d2"
@@ -411,17 +411,17 @@
     "status": "manual_review",
     "reason": "retry_loop_manual_review_word_salad",
     "source": "deferred_retry_limiter",
-    "updated_at": "2026-04-29T18:36:52.577406Z",
+    "updated_at": "2026-04-29T19:12:33.223175Z",
     "en_hash": "ad535ccb23bdfeba4570628ceb2d9379",
     "attempted_preview": "Ikem pashak porak, bata, dora. ¿Ba goshak maruk?",
     "extra": {
       "partial_progress": {
         "active": true,
         "completed": false,
-        "stage": 10,
+        "stage": 11,
         "first_seen_utc": "2026-04-29T16:03:26.005623Z",
-        "last_stage_utc": "2026-04-29T18:36:52.445551Z",
-        "retry_not_before_utc": "2026-04-29T18:42:52Z",
+        "last_stage_utc": "2026-04-29T19:12:28.527092Z",
+        "retry_not_before_utc": "2026-04-29T19:18:28Z",
         "reason": "gt_partial_validate_word_salad",
         "source": "google_translate",
         "en_hash": "ad535ccb23bdfeba4570628ceb2d9379",
@@ -430,18 +430,18 @@
       },
       "deferred_retry_limiter": {
         "schema_version": "1.0",
-        "attempts_total": 10,
+        "attempts_total": 11,
         "attempts_by_bucket": {
-          "word_salad": 10
+          "word_salad": 11
         },
         "last_reason": "gt_partial_validate_word_salad",
         "last_bucket": "word_salad",
-        "last_seen_utc": "2026-04-29T18:36:52Z",
+        "last_seen_utc": "2026-04-29T19:12:28Z",
         "first_seen_utc": "2026-04-29T16:03:26Z",
         "bucket_limit": 4,
-        "bucket_attempts": 10,
+        "bucket_attempts": 11,
         "action": "manual_review",
-        "retry_not_before_utc": "2026-04-30T18:36:52Z",
+        "retry_not_before_utc": "2026-04-30T19:12:28Z",
         "cooldown_seconds": 86400
       }
     },
@@ -454,17 +454,17 @@
     "status": "manual_review",
     "reason": "retry_loop_manual_review_word_salad",
     "source": "deferred_retry_limiter",
-    "updated_at": "2026-04-29T18:36:57.051554Z",
+    "updated_at": "2026-04-29T19:13:26.402729Z",
     "en_hash": "bee5acd313505efe89ab204fa384647c",
     "attempted_preview": "Ikem pashak charcha, burka, burka bata, hakhak. ¿Ba goshak maruk?",
     "extra": {
       "partial_progress": {
         "active": true,
         "completed": false,
-        "stage": 10,
+        "stage": 11,
         "first_seen_utc": "2026-04-29T16:03:28.181979Z",
-        "last_stage_utc": "2026-04-29T18:36:54.549348Z",
-        "retry_not_before_utc": "2026-04-29T18:42:54Z",
+        "last_stage_utc": "2026-04-29T19:13:09.784072Z",
+        "retry_not_before_utc": "2026-04-29T19:19:09Z",
         "reason": "gt_partial_validate_word_salad",
         "source": "google_translate",
         "en_hash": "bee5acd313505efe89ab204fa384647c",
@@ -473,18 +473,18 @@
       },
       "deferred_retry_limiter": {
         "schema_version": "1.0",
-        "attempts_total": 10,
+        "attempts_total": 11,
         "attempts_by_bucket": {
-          "word_salad": 10
+          "word_salad": 11
         },
         "last_reason": "gt_partial_validate_word_salad",
         "last_bucket": "word_salad",
-        "last_seen_utc": "2026-04-29T18:36:54Z",
+        "last_seen_utc": "2026-04-29T19:13:09Z",
         "first_seen_utc": "2026-04-29T16:03:28Z",
         "bucket_limit": 4,
-        "bucket_attempts": 10,
+        "bucket_attempts": 11,
         "action": "manual_review",
-        "retry_not_before_utc": "2026-04-30T18:36:54Z",
+        "retry_not_before_utc": "2026-04-30T19:13:09Z",
         "cooldown_seconds": 86400
       }
     },
@@ -497,7 +497,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:37:49.808825Z",
+    "updated_at": "2026-04-29T19:14:23.218297Z",
     "en_hash": "4083b6eb97ef1d492dafe67ced5e1d1b",
     "attempted_preview": "Entonces, ¿por qué no muestras tu dedicación a los pobres? Ve y ayuda a Chavis en la casa de pobres. Está recolectando comida para gente como nosotros. ...",
     "extra": {
@@ -519,7 +519,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:13.220407Z",
+    "updated_at": "2026-04-29T19:14:23.398578Z",
     "en_hash": "29d0860547c71ca10af66af2624b6a71",
     "attempted_preview": "Gran acertijo, ¿no? Si puedes decirme la respuesta correcta, \\z te daré algo. ¡Jejeje!",
     "extra": {
@@ -541,7 +541,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:13.361192Z",
+    "updated_at": "2026-04-29T19:14:23.921665Z",
     "en_hash": "2746e0ec3b386589dd2916b4f142829c",
     "attempted_preview": "Mis números surrealistas se basan en hechos sorprendentes. \\z ¿Estás interesado en aprender el secreto de las matemáticas?",
     "extra": {
@@ -563,7 +563,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:16.554324Z",
+    "updated_at": "2026-04-29T19:14:24.170101Z",
     "en_hash": "7573058a6400d2fbf46d662914656cf4",
     "attempted_preview": "Te lanzas y arrojas el modelo al agua. Como no pasa nada, le das la espalda al océano. ...",
     "extra": {
@@ -585,7 +585,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:20.070115Z",
+    "updated_at": "2026-04-29T19:14:28.392162Z",
     "en_hash": "2f2109a72068de305a9443412ff32999",
     "attempted_preview": "Coges el espejo del suelo.",
     "extra": {
@@ -607,7 +607,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:20.731895Z",
+    "updated_at": "2026-04-29T19:14:30.118634Z",
     "en_hash": "4c26b218f329957ec066a35cf4c9405d",
     "attempted_preview": "Los sueños de dragones son dorados. ...",
     "extra": {
@@ -629,7 +629,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:20.885879Z",
+    "updated_at": "2026-04-29T19:14:30.693685Z",
     "en_hash": "4c26b218f329957ec066a35cf4c9405d",
     "attempted_preview": "Los sueños de dragones son dorados. ...",
     "extra": {
@@ -651,7 +651,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:21.861579Z",
+    "updated_at": "2026-04-29T19:14:35.122155Z",
     "en_hash": "fe8c629f05e42b0bb69fd556a53e0494",
     "attempted_preview": "Regresas al norte hasta la meseta.",
     "extra": {
@@ -673,7 +673,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:23.087778Z",
+    "updated_at": "2026-04-29T19:14:46.762220Z",
     "en_hash": "01035bcddef5e83e2f82ef180af0066a",
     "attempted_preview": "Te diriges hacia el norte pasando innumerables piedras en el mar carmesí de piedras bajo tus pies.",
     "extra": {
@@ -695,7 +695,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:25.557174Z",
+    "updated_at": "2026-04-29T19:15:45.085457Z",
     "en_hash": "71c018dceebc102602a24f5dc7a3b779",
     "attempted_preview": "Tu camino hacia el norte está abierto. Pasas las gigantescas alas de la puerta a tu izquierda y derecha a medida que avanzas. Después de aproximadamente una hora de viaje se oye un ligero crujido a lo lejos. Te diriges m",
     "extra": {
@@ -717,7 +717,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:27.627256Z",
+    "updated_at": "2026-04-29T19:16:22.473656Z",
     "en_hash": "5ad308bb5eb73e010d4ee498d1d179e8",
     "attempted_preview": "Regresas al este y a la meseta.",
     "extra": {
@@ -739,7 +739,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:32.624705Z",
+    "updated_at": "2026-04-29T19:16:23.031596Z",
     "en_hash": "572a06275397e11bdebb4bf5d13c222a",
     "attempted_preview": "Regresas al sur hasta el sitio con el mirador de ónix.",
     "extra": {
@@ -761,7 +761,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:34.463128Z",
+    "updated_at": "2026-04-29T19:16:23.731510Z",
     "en_hash": "b8be29c945f10470f8c478a07e49dfb3",
     "attempted_preview": "Levantas con cuidado el accesorio de ónix de su casquillo. Es más ligero de lo que esperabas.",
     "extra": {
@@ -783,7 +783,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:34.611114Z",
+    "updated_at": "2026-04-29T19:16:25.037974Z",
     "en_hash": "81c58f154000890828f67e0a1efb3390",
     "attempted_preview": "Cuando arrancas el sólido soporte de su soporte y te lo llevas, la gran puerta se abre con un estruendo ensordecedor.",
     "extra": {
@@ -805,7 +805,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:34.891405Z",
+    "updated_at": "2026-04-29T19:16:26.048587Z",
     "en_hash": "0afdd07c5e9244d4f001e1fce65f6dda",
     "attempted_preview": "Te quedas sin aliento ante el tamaño de la gran puerta abierta mientras caminas para dirigirte más hacia el este.",
     "extra": {
@@ -827,7 +827,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:35.220028Z",
+    "updated_at": "2026-04-29T19:16:26.242109Z",
     "en_hash": "fee45a3e5abbb7706203a5ac4f7919a9",
     "attempted_preview": "Sí, bueno, por ejemplo, intenté durante algún tiempo descubrir cómo ingresar al portal de fuego en este complejo. La mayoría de los draken nunca suben aquí. Prefieren esconderse en algún lugar ahí abajo, planeando y cons",
     "extra": {
@@ -849,7 +849,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:36.791417Z",
+    "updated_at": "2026-04-29T19:16:27.327958Z",
     "en_hash": "5c345ea0809b2e3a6500810748727b8f",
     "attempted_preview": "¡Rápidamente cavé un túnel para entrar a lo que supongo es una sala del trono y esperé a que me recogieran y me llevaran! ...",
     "extra": {
@@ -871,7 +871,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:37.311330Z",
+    "updated_at": "2026-04-29T19:16:27.924137Z",
     "en_hash": "c162c2e4c136122010b050ee35901260",
     "attempted_preview": "La academia instaló el 'Edron-Zaoan Exploration Division' poco después. Fui miembro fundador y director de la rama de investigación 'Draken'. ...",
     "extra": {
@@ -893,7 +893,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:37.755820Z",
+    "updated_at": "2026-04-29T19:16:28.284332Z",
     "en_hash": "6fe32ebc07fb787329d35533be7e6e5b",
     "attempted_preview": "Los escuché decirlo una vez, cuando un guardia aparentemente borracho lo gritó frente a una antorcha montada en la pared, y luego se golpeó la cabeza contra ella. Derramó todo mi contenido en el suelo, hmpf.",
     "extra": {
@@ -915,7 +915,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:38.438752Z",
+    "updated_at": "2026-04-29T19:16:28.468424Z",
     "en_hash": "7b783b4483041bd31834f44376de5e2d",
     "attempted_preview": "¿Qué? ¿Mi sombrero? ¡No tiene... nada de especial!",
     "extra": {
@@ -937,7 +937,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:42.147770Z",
+    "updated_at": "2026-04-29T19:16:28.642937Z",
     "en_hash": "88afe011f670126896134f2f2da5c7f0",
     "attempted_preview": "Por favor, dámelos para que pueda restaurar mi capa. ¡Pero no me mires! A las doncellas cisne no les gusta que las observen. Bendiciones de la naturaleza, ser humano. Le diré a Ikassis que has sido de gran ayuda.",
     "extra": {
@@ -959,7 +959,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:42.683972Z",
+    "updated_at": "2026-04-29T19:16:28.826230Z",
     "en_hash": "28f589eb678777cc11c66a2e59633d7e",
     "attempted_preview": "Oh. Puedo hacer algunos pequeños rayos desagradables con orbes del alma. ¿Un pequeño quiere cambiarlo todo?",
     "extra": {
@@ -981,7 +981,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:44.204571Z",
+    "updated_at": "2026-04-29T19:16:31.113429Z",
     "en_hash": "c6c80a3dde68893a72bf35c142b4d133",
     "attempted_preview": "Es malvado. El hierro demoníaco lo es. Ningún cíclope bueno va donde pueda encontrar y necesita llamas malignas para derretirse.",
     "extra": {
@@ -1003,7 +1003,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:44.332290Z",
+    "updated_at": "2026-04-29T19:16:31.833236Z",
     "en_hash": "4b4c28cf9514e263cd64e2cf8515fef0",
     "attempted_preview": "El tiempo de este claro se está acortando si no se hace nada pronto.",
     "extra": {
@@ -1025,7 +1025,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:45.036545Z",
+    "updated_at": "2026-04-29T19:16:32.154149Z",
     "en_hash": "182c8585598302535ced93e8c70f753e",
     "attempted_preview": "Entonces, si quieres asegurarte de que lean esto pronto, tal vez no escondas el libro en un estante o en un cofre. Asegúrate de colocarlo en algún lugar donde lo encuentren fácilmente, como obviamente en una mesa o algo ",
     "extra": {
@@ -1047,7 +1047,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:45.404489Z",
+    "updated_at": "2026-04-29T19:16:32.510387Z",
     "en_hash": "a14c7a41f6c9e27182cc5b1bf7f1d6aa",
     "attempted_preview": "Los vi salir corriendo de la ciudad y luego hacia el norte. Quizás se escondan en el oasis.",
     "extra": {
@@ -1069,7 +1069,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:45.537019Z",
+    "updated_at": "2026-04-29T19:16:33.354005Z",
     "en_hash": "ab0b75f114c227e77d33d8d27fbc5049",
     "attempted_preview": "<Nothing happens>....<SIGH> Como de costumbre, ¡se esconden ante la menor señal de problema! ¡TÚ! ¿Quieres ganar algo de dinero rápido?",
     "extra": {
@@ -1091,7 +1091,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:47.596774Z",
+    "updated_at": "2026-04-29T19:16:35.603968Z",
     "en_hash": "d741cb41b98b79e54149e4a468dbae50",
     "attempted_preview": "¿Necesita algunos documentos falsificados? Pero sólo haré algo para un amigo. ...",
     "extra": {
@@ -1113,7 +1113,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:49.030227Z",
+    "updated_at": "2026-04-29T19:16:41.081948Z",
     "en_hash": "b8e16f628db6fca387e34e3c3070d7dd",
     "attempted_preview": "Necesitas 5000 gps y reservar con leyendas antiguas.",
     "extra": {
@@ -1135,7 +1135,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:49.151569Z",
+    "updated_at": "2026-04-29T19:16:41.554476Z",
     "en_hash": "9cbe268f9091550035676742440f653c",
     "attempted_preview": "¿TUYO? ¡CUÁL ES EL TUYO! ¡NADA ES TUYO! ¡ES MÍO! VETE, ¡¿SÍ?!",
     "extra": {
@@ -1157,7 +1157,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:49.269321Z",
+    "updated_at": "2026-04-29T19:16:41.696735Z",
     "en_hash": "1a7cf3603f3c8b7dce848f0d9e79cdf1",
     "attempted_preview": "Si quieres desafiar a los monstruos en el {dungeons}, necesitas algunos {weapons} y {armadura} del {merchants} local.",
     "extra": {
@@ -1179,7 +1179,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:53.091820Z",
+    "updated_at": "2026-04-29T19:16:43.518860Z",
     "en_hash": "aea2ca891a25753f8c1c6d01c727729e",
     "attempted_preview": "Los arándanos crecen en los arbustos. Son bastante comunes en Tibia. ¡Simplemente recógelos de un arbusto si necesitas un refrigerio!",
     "extra": {
@@ -1201,7 +1201,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:38:53.210564Z",
+    "updated_at": "2026-04-29T19:16:43.686264Z",
     "en_hash": "b0d843e1b849e2f081d336edf5bea73d",
     "attempted_preview": "Hmm, la mejor dirección para buscar comida podría ser {Willie} o {Billy}. {Norma} también tiene algunos snacks a la venta.",
     "extra": {
@@ -1223,7 +1223,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:01.554234Z",
+    "updated_at": "2026-04-29T19:16:45.350675Z",
     "en_hash": "d0e5531f650021b1d8e488f627c74bd0",
     "attempted_preview": "Vendo cañas de pescar y lombrices si quieres pescar. Simplemente pídeme un {trade}.",
     "extra": {
@@ -1245,7 +1245,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:06.954937Z",
+    "updated_at": "2026-04-29T19:16:45.851783Z",
     "en_hash": "67e5624d4742eb7da886542ced51b032",
     "attempted_preview": "¡No te lances a la aventura sin cuerda y antorchas! ¡Compra tus insumos aquí!",
     "extra": {
@@ -1267,7 +1267,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:07.931647Z",
+    "updated_at": "2026-04-29T19:16:46.229428Z",
     "en_hash": "67e5624d4742eb7da886542ced51b032",
     "attempted_preview": "¡No te lances a la aventura sin cuerda y antorchas! ¡Compra tus insumos aquí!",
     "extra": {
@@ -1289,7 +1289,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:08.706406Z",
+    "updated_at": "2026-04-29T19:16:46.409280Z",
     "en_hash": "6d6c47a93e194bbded938709f693594c",
     "attempted_preview": "Puedes pasar este portal si tienes 50 plumas de acechador de los pantanos como oferta. ¿Tienes las plumas del acechador de los pantanos contigo?",
     "extra": {
@@ -1311,7 +1311,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:08.926007Z",
+    "updated_at": "2026-04-29T19:16:47.639044Z",
     "en_hash": "8758511cab8f6c329da20174d4ebd085",
     "attempted_preview": "Lo siento, no tienes suficientes plumas de acechador de los pantanos. Vuelve si puedes ofrecer cincuenta de ellos.",
     "extra": {
@@ -1333,7 +1333,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:10.264845Z",
+    "updated_at": "2026-04-29T19:16:47.873960Z",
     "en_hash": "5f037ab8cb0f437c9ce1a613870e8731",
     "attempted_preview": "Necesitas 5 tomos viejos y pesados.",
     "extra": {
@@ -1355,7 +1355,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:10.411202Z",
+    "updated_at": "2026-04-29T19:16:48.044368Z",
     "en_hash": "f417ebf365835e86276c5c4f060cf57c",
     "attempted_preview": "Que yo sepa, sólo hay un lugar donde se pueden encontrar estas piedras preciosas; sé con certeza que los Marid tienen al menos una de ellas. ...",
     "extra": {
@@ -1377,7 +1377,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:10.647020Z",
+    "updated_at": "2026-04-29T19:16:48.223153Z",
     "en_hash": "f417ebf365835e86276c5c4f060cf57c",
     "attempted_preview": "Que yo sepa, sólo hay un lugar donde se pueden encontrar estas piedras preciosas; sé con certeza que los Marid tienen al menos una de ellas. ...",
     "extra": {
@@ -1399,7 +1399,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:11.053709Z",
+    "updated_at": "2026-04-29T19:16:48.853951Z",
     "en_hash": "58b1eacb05ab0c0f6e1c4ed9db4100df",
     "attempted_preview": "Escuché que hay un problema con una madre loba y sus cachorros. Sin embargo, no sé más al respecto. Una de mis hermanas, Ikassis, se ha apoderado del cuerpo de una serpiente. ...",
     "extra": {
@@ -1421,7 +1421,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:11.247201Z",
+    "updated_at": "2026-04-29T19:16:49.013783Z",
     "en_hash": "a899672efab53f74c4aa88dd21c36cd8",
     "attempted_preview": "¡Lo lograste! Parece que los cazadores furtivos han leído tu pequeña historia falsa sobre la matanza de ciervos blancos y la consiguiente perdición. Dejaron de perseguirme. ¡Gracias! ...",
     "extra": {
@@ -1443,7 +1443,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:16.618975Z",
+    "updated_at": "2026-04-29T19:16:49.182410Z",
     "en_hash": "d97b26f3dcd8fa1de301270b050c3695",
     "attempted_preview": "Búsquelo y examínelo de cerca. Quizás encuentres algo que puedas usar contra ellos para evitar que cacen ciervos blancos.",
     "extra": {
@@ -1465,7 +1465,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:16.755061Z",
+    "updated_at": "2026-04-29T19:16:49.367320Z",
     "en_hash": "f4931e80a3a0de1044a064d5377b1798",
     "attempted_preview": "Lo llamamos Feyrist y es un lugar secreto y escondido. Sólo unos pocos mortales obtienen permiso para entrar. Hace mucho tiempo, aprendimos a ocultar nuestro reino del mundo exterior. Sólo si te ganas nuestra confianza t",
     "extra": {
@@ -1487,7 +1487,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:16.891662Z",
+    "updated_at": "2026-04-29T19:16:49.548666Z",
     "en_hash": "b4d2ba43d2990defe5bbe725480d282a",
     "attempted_preview": "Algunos nos llaman espíritus de la naturaleza o peri, pero nosotros preferimos el término fae. La mayoría de nosotros somos bastante solitarios y vivimos vidas pacíficas en nuestro reino secreto. Sólo lo dejamos para pro",
     "extra": {
@@ -1509,7 +1509,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:17.424948Z",
+    "updated_at": "2026-04-29T19:16:49.928831Z",
     "en_hash": "e65edbe04bf6f4e410a2d3121df5e640",
     "attempted_preview": "¿Conseguiste encontrar la Tortuga Pequeña?",
     "extra": {
@@ -1531,7 +1531,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:18.279575Z",
+    "updated_at": "2026-04-29T19:16:50.144285Z",
     "en_hash": "377f50e5418dbbd94fb6cf6c77a58762",
     "attempted_preview": "Gracias. Estaba buscando una tortuga pequeña.",
     "extra": {
@@ -1553,7 +1553,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:23.555791Z",
+    "updated_at": "2026-04-29T19:16:51.880580Z",
     "en_hash": "7ac248280bf3c65becaf9d83acc3b295",
     "attempted_preview": "¿Quieres que apedree una tortuga pequeña?",
     "extra": {
@@ -1575,7 +1575,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:29.353368Z",
+    "updated_at": "2026-04-29T19:16:56.336751Z",
     "en_hash": "6881953a4a95469dbb45900a1438349f",
     "attempted_preview": "Mata a 300 miembros del culto Fafnar, ayúdame a encontrar lira marfil y ayúdame a encontrar un animal para apedrear.",
     "extra": {
@@ -1597,7 +1597,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:29.579771Z",
+    "updated_at": "2026-04-29T19:16:56.556282Z",
     "en_hash": "93974a71ed55a52cfb4807d2c107bad9",
     "attempted_preview": "Lo siento, perdí mi reloj en una tormenta.",
     "extra": {
@@ -1619,7 +1619,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:29.849588Z",
+    "updated_at": "2026-04-29T19:16:58.908758Z",
     "en_hash": "65f6aad5b865890db8cbccfac0c058a4",
     "attempted_preview": "Creo que este pobre tipo fue una mala elección como jefe del {academy}.",
     "extra": {
@@ -1641,7 +1641,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:30.818631Z",
+    "updated_at": "2026-04-29T19:17:37.952582Z",
     "en_hash": "9b7ee4544ff4002379572b04694abd34",
     "attempted_preview": "Un día caí en un hoyo sin tener cuerda. ¡Estuve gritando pidiendo ayuda durante tres días enteros! Finalmente pasó un pescador y me sacó con su propia cuerda, por suerte para mí.",
     "extra": {
@@ -1663,7 +1663,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:30.974895Z",
+    "updated_at": "2026-04-29T19:17:38.606425Z",
     "en_hash": "f7c6f62680f46f6f16d2a43242f4e694",
     "attempted_preview": "¡En serio me preguntó si podía tener los restos de mi {balsa} como leña! ¿Te imaginas eso?",
     "extra": {
@@ -1685,7 +1685,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:31.279945Z",
+    "updated_at": "2026-04-29T19:17:39.618263Z",
     "en_hash": "65f6aad5b865890db8cbccfac0c058a4",
     "attempted_preview": "Creo que este pobre tipo fue una mala elección como jefe del {academy}.",
     "extra": {
@@ -1707,7 +1707,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:31.572980Z",
+    "updated_at": "2026-04-29T19:17:39.783237Z",
     "en_hash": "eba92c3afffa1f9c09ccb9f87935316e",
     "attempted_preview": "Si desenterraste los tres cristales en cantidad suficiente y obtuviste la glándula venenosa, ¡la carga de tu brújula puede comenzar! Por primera vez será cargado por el cristal violeta. ¿Listo para {unleash} el poder de ",
     "extra": {
@@ -1729,7 +1729,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:31.920779Z",
+    "updated_at": "2026-04-29T19:17:40.263779Z",
     "en_hash": "84b31714a925d8d7cbab7d6cef17e415",
     "attempted_preview": "¡Lindo! Para hacerlo, toma esta hacha dorada y extrae los cristales prominentes de la cueva. Además, necesito una glándula venenosa de arañas bastante raras, se llaman lucifuga araneae. ...",
     "extra": {
@@ -1751,7 +1751,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:33.973028Z",
+    "updated_at": "2026-04-29T19:17:40.928432Z",
     "en_hash": "34a25eb8bea075ac8831e6f0537153f1",
     "attempted_preview": "Todos ellos se pueden encontrar en esta cueva cerrada frente a ti. Debería haber destruido esta llave de sello pero las cosas han cambiado. La entrada está abierta ahora, baja y haz lo que tengas que hacer.",
     "extra": {
@@ -1773,7 +1773,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:34.088971Z",
+    "updated_at": "2026-04-29T19:17:41.184660Z",
     "en_hash": "e0b6577d7972e7211589664265ef7f9a",
     "attempted_preview": "¡Ya estás con mi cebo!",
     "extra": {
@@ -1795,7 +1795,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:35.621281Z",
+    "updated_at": "2026-04-29T19:17:41.618320Z",
     "en_hash": "4f39be4d0dc57a3e50c5aff4a11f3846",
     "attempted_preview": "¿Te gustaría comprar una brújula rota por 10.000 de oro?",
     "extra": {
@@ -1817,7 +1817,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:35.980098Z",
+    "updated_at": "2026-04-29T19:17:41.836373Z",
     "en_hash": "26009f2a63ba72c0a7e7bb4604ebf935",
     "attempted_preview": "¡Aquí está tu brújula rota!",
     "extra": {
@@ -1839,7 +1839,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:36.260683Z",
+    "updated_at": "2026-04-29T19:17:42.275743Z",
     "en_hash": "3c1ab8a891cc762e5e463a23be752ef5",
     "attempted_preview": "¿El Druid de Crunor? ¿Te dijo que aquí apareció una nueva cueva? Así es. Soy el jefe de un {project} que intenta saber más sobre este nuevo {area}.",
     "extra": {
@@ -1861,7 +1861,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:36.413052Z",
+    "updated_at": "2026-04-29T19:17:43.087016Z",
     "en_hash": "659bfc0a338a19e14c04ad411f0665e7",
     "attempted_preview": "¡Apártate de mi camino! Mataste a esta hermosa criatura. No tengo nada más que decir. ¡Maldito druida de Crunor!",
     "extra": {
@@ -1883,7 +1883,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:37.328034Z",
+    "updated_at": "2026-04-29T19:17:44.079016Z",
     "en_hash": "0887403150162318f92445d305c031d3",
     "attempted_preview": "¿El Druid de Crunor? ¿Te dijo que aquí apareció una nueva cueva? Así es. Soy el líder de un proyecto que intenta conocer más sobre esta nueva área.",
     "extra": {
@@ -1905,7 +1905,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:37.493156Z",
+    "updated_at": "2026-04-29T19:17:46.084406Z",
     "en_hash": "659bfc0a338a19e14c04ad411f0665e7",
     "attempted_preview": "¡Apártate de mi camino! Mataste a esta hermosa criatura. No tengo nada más que decir. ¡Maldito druida de Crunor!",
     "extra": {
@@ -1927,7 +1927,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:41.229707Z",
+    "updated_at": "2026-04-29T19:17:48.800234Z",
     "en_hash": "c523f3eef567f59edf8a2730534e5dda",
     "attempted_preview": "¿{Gareth} te dijo que hay rumores sobre artefactos falsos en el MoTA? ¿Y es tu tarea comprobarlo con una lupa? Veo. No necesito uno ahora, así que puedes tener uno mío. Encuentras uno en la caja de allí.",
     "extra": {
@@ -1949,7 +1949,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:41.369236Z",
+    "updated_at": "2026-04-29T19:17:51.578675Z",
     "en_hash": "7658be1e78e4fa62af43dfe438c83fa1",
     "attempted_preview": "¿Adquiriste la muestra de la planta campanillas de la selva que buscamos?",
     "extra": {
@@ -1971,7 +1971,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:42.705870Z",
+    "updated_at": "2026-04-29T19:18:01.233670Z",
     "en_hash": "d2ef0a97c44d4bfe0a19b1453939c6c1",
     "attempted_preview": "Usa el recipiente de este botánico en un caldero de brujas para recolectar una muestra para nosotros. Tráelo aquí e informa sobre tu colección de plantas.",
     "extra": {
@@ -1993,7 +1993,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:44.818053Z",
+    "updated_at": "2026-04-29T19:19:29.317290Z",
     "en_hash": "45aced636b00875c88331e566ef329fe",
     "attempted_preview": "Usa el recipiente de este botánico en una rosa gigante de la jungla para obtener una muestra para nosotros. Tráelo aquí e informa sobre tu colección de plantas.",
     "extra": {
@@ -2015,7 +2015,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:45.294643Z",
+    "updated_at": "2026-04-29T19:19:31.138797Z",
     "en_hash": "157e99609c7d1a235fee1a026d3e6b58",
     "attempted_preview": "Así que escuchen, por favor: tomen este picahielos y úselo en un bloque de hielo en las cuevas debajo de Folda. Consigue un poco de hielo y tráelo aquí lo más rápido que puedas...",
     "extra": {
@@ -2037,7 +2037,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:47.322046Z",
+    "updated_at": "2026-04-29T19:19:32.650235Z",
     "en_hash": "1d5709217f20cd4e7fa2c8d7790602cd",
     "attempted_preview": "Un poco estropeado pero servirá. ¡Gracias! Si cree que está listo, solicite otra caza de mariposas.",
     "extra": {
@@ -2059,7 +2059,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:50.861431Z",
+    "updated_at": "2026-04-29T19:19:36.077832Z",
     "en_hash": "1d5709217f20cd4e7fa2c8d7790602cd",
     "attempted_preview": "Un poco estropeado pero servirá. ¡Gracias! Si cree que está listo, solicite otra caza de mariposas.",
     "extra": {
@@ -2081,7 +2081,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:51.130386Z",
+    "updated_at": "2026-04-29T19:19:36.909731Z",
     "en_hash": "25c3ece525ecca75503019d34ce3d886",
     "attempted_preview": "¡Excelente! Así que viaja a la ciudad de Darashia y luego dirígete al noreste hacia la pirámide...",
     "extra": {
@@ -2103,7 +2103,7 @@
     "status": "manual_review",
     "reason": "term_consistency_english_name_leak",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:51.932788Z",
+    "updated_at": "2026-04-29T19:19:41.774907Z",
     "en_hash": "f77d26e0e22aafd1aa4b1ec5862c8ebb",
     "attempted_preview": "Las misiones disponibles para tu rango son las {butterfly hunt}, {plant collection} y {ice delivery}.",
     "extra": {
@@ -2125,7 +2125,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:52.069042Z",
+    "updated_at": "2026-04-29T19:19:41.973099Z",
     "en_hash": "76dcfff8b34ee35c2095bc5bd09e09a3",
     "attempted_preview": "¡Bien! Toma este contenedor y úsalo con un fantasma que haya sido asesinado recientemente. Regresa con el ectoplasma recolectado y pásame ese recipiente...",
     "extra": {
@@ -2147,7 +2147,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:58.486484Z",
+    "updated_at": "2026-04-29T19:19:43.689671Z",
     "en_hash": "61aecb7779029ce6572c4444b2f2f841",
     "attempted_preview": "Pobre Ratha. Gracias por devolver esta calavera a la sociedad. Nos ocuparemos de un entierro honorable de Ratha.",
     "extra": {
@@ -2169,7 +2169,7 @@
     "status": "manual_review",
     "reason": "term_consistency_english_name_leak",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:59.406374Z",
+    "updated_at": "2026-04-29T19:19:44.066586Z",
     "en_hash": "dc148f4328daa6643a2ddefe85239f95",
     "attempted_preview": "Las misiones disponibles para tu rango son {lizard urn}, {bonelord secrets} y {orc powder}.",
     "extra": {
@@ -2191,7 +2191,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:39:59.986469Z",
+    "updated_at": "2026-04-29T19:19:44.727700Z",
     "en_hash": "72d1121f9156271e019454ccefd39ccb",
     "attempted_preview": "Te daré uno de nuestros experimentados. ¡Cuidarse! Esté atento a las ramas bajas.",
     "extra": {
@@ -2213,7 +2213,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:40:00.507648Z",
+    "updated_at": "2026-04-29T19:19:45.576456Z",
     "en_hash": "7343145e7a314f3c434461b11611bb86",
     "attempted_preview": "Tienes que saber que yo era uno de ellos antes de abrir esa tienda aquí. Seguro que temen que yo revele su escondite. Dirígete hacia el norte, hay una pequeña cueva en las montañas con una roca en el medio. ...",
     "extra": {
@@ -2235,7 +2235,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:40:00.667058Z",
+    "updated_at": "2026-04-29T19:19:46.275286Z",
     "en_hash": "ed561743b105aaafb7a64e57cb44e3f1",
     "attempted_preview": "Si te paras frente a él, coloca una cimitarra, que es el arma de los nómadas, a tu izquierda y haz un sacrificio a la tierra vertiendo un poco de agua en el suelo a tu derecha. ...",
     "extra": {
@@ -2257,7 +2257,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:40:02.454821Z",
+    "updated_at": "2026-04-29T19:19:53.149759Z",
     "en_hash": "0c2ca278db2adaae955f9710511ea374",
     "attempted_preview": "Bien, escucha atentamente: en primer lugar, debes reunir 20 esmeraldas encantadas para poder ir a la esfera terrestre. En lo profundo de la academia, un piso debajo de los santuarios elementales, hay una máquina. Pon las",
     "extra": {
@@ -2279,7 +2279,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:40:03.031577Z",
+    "updated_at": "2026-04-29T19:19:56.008073Z",
     "en_hash": "f3f2900b5b25eab664d64fa336821874",
     "attempted_preview": "¡MADRE SUELO! Ahora necesitas encontrar un caballero, un paladín y un hechicero que también hayan completado esta primera tarea. ...",
     "extra": {
@@ -2301,7 +2301,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:40:03.593762Z",
+    "updated_at": "2026-04-29T19:20:04.130524Z",
     "en_hash": "fc0f26ef791e0b7a21ca34aea0a3d953",
     "attempted_preview": "¡PURA ENERGÍA! Ahora necesitas encontrar un druida, un paladín y un hechicero que también haya completado esta primera tarea. ...",
     "extra": {
@@ -2323,7 +2323,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:40:04.682307Z",
+    "updated_at": "2026-04-29T19:20:04.281482Z",
     "en_hash": "13bb3eda933a72b838d0cec3e3c0e4bd",
     "attempted_preview": "¡Él es tan fuerte! ¡Qué músculos! ¡Qué cuerpo! Por otro lado, comparado contigo parece bastante enclenque.",
     "extra": {
@@ -2345,7 +2345,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:40:05.680334Z",
+    "updated_at": "2026-04-29T19:20:04.633978Z",
     "en_hash": "97cb80c657eac5f32ecd495b547a5952",
     "attempted_preview": "Oh, solo soy una niña y no sé nada sobre espadas mágicas y cosas así.",
     "extra": {
@@ -2367,7 +2367,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:40:07.424377Z",
+    "updated_at": "2026-04-29T19:20:05.113491Z",
     "en_hash": "7bd09329cdd980a5a94aee69e5cf6850",
     "attempted_preview": "Bueno… lo conozco desde hace un tiempito.. pero esto no fue nada tumba.",
     "extra": {
@@ -2389,7 +2389,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:40:07.635986Z",
+    "updated_at": "2026-04-29T19:20:05.240823Z",
     "en_hash": "a166b17efc480b3bf61b1ba9381c9b95",
     "attempted_preview": "Lo siento, no tengo nada que vender.",
     "extra": {
@@ -2411,7 +2411,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:40:08.749767Z",
+    "updated_at": "2026-04-29T19:20:05.406242Z",
     "en_hash": "a875e17b3c4da63c138a091693b62e8d",
     "attempted_preview": "Trabajo algo de vez en cuando. Aunque nada inusual. Entonces tengo mucho tiempo para charlar. Si estás interesado en algún tema solo pregúntame.",
     "extra": {
@@ -2433,7 +2433,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:40:10.047041Z",
+    "updated_at": "2026-04-29T19:20:05.627564Z",
     "en_hash": "ece8bf5d0d736f2764582730d36e0f3b",
     "attempted_preview": "¡Hola, extraño! Estas cuevas deben parecerte extrañas. Me pregunto qué te trae por aquí... ¿quizás te interese algún trabajo? Hay varias tareas en las que podría necesitar ayuda.",
     "extra": {
@@ -2455,7 +2455,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:40:11.700996Z",
+    "updated_at": "2026-04-29T19:20:06.126718Z",
     "en_hash": "b9141107718bbdb4de3cca43bca1784b",
     "attempted_preview": "No olvides depositar tu dinero aquí en el Global Bank antes de salir a la aventura.",
     "extra": {
@@ -2477,7 +2477,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:40:15.984915Z",
+    "updated_at": "2026-04-29T19:20:06.691325Z",
     "en_hash": "3df7ce7781828c0e4afe26581316cbee",
     "attempted_preview": "Sí, hay algo. Estoy enamorado de Taegen, pero él es un fauno. Como tal, habita los bosques y baila con las hadas. Y yo, siendo sirena, vivo en el océano, nadando con los peces entre arrecifes de coral. ...",
     "extra": {
@@ -2499,7 +2499,7 @@
     "status": "manual_review",
     "reason": "term_consistency_canonical_term_missing",
     "source": "term_consistency_scan",
-    "updated_at": "2026-04-29T18:40:16.866685Z",
+    "updated_at": "2026-04-29T19:20:07.050152Z",
     "en_hash": "a9c6add16f11fe26fba49a9958d380dc",
     "attempted_preview": "Sin embargo, el escudo sólo se otorgará a aquellos aventureros que hayan terminado la misión del casco demoníaco. ...",
     "extra": {
@@ -11564,7 +11564,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:35:25.486206Z",
+    "updated_at": "2026-04-29T19:10:02.801186Z",
     "en_hash": "03505a67a6a5e2c2c6f1f27b32d98a5f",
     "attempted_preview": "GRRRRRRRRRRRRR",
     "attempted_hash": "03505a67a6a5e2c2c6f1f27b32d98a5f"
@@ -11576,7 +11576,7 @@
     "status": "blocked_no_translate",
     "reason": "proper_noun_passthrough",
     "source": "strict_mode",
-    "updated_at": "2026-04-29T18:36:36.560961Z",
+    "updated_at": "2026-04-29T19:12:16.706779Z",
     "en_hash": "174310f0757a36cf0bfc64cf663446c7",
     "attempted_preview": "Zzz...",
     "attempted_hash": "174310f0757a36cf0bfc64cf663446c7"
@@ -59572,5 +59572,41 @@
     "en_hash": "e4d2608c06d89ab9679ec8b62d27ff0c",
     "attempted_hash": "00e8ab813661182b0596c5fa4a2a7e74",
     "attempted_preview": "AYRILMIŞ SPRİTE"
+  },
+  "es::npc.json::npc.captain_fearless.stdmod_1": {
+    "lang": "es",
+    "json_file": "npc.json",
+    "key": "npc.captain_fearless.stdmod_1",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "tm",
+    "updated_at": "2026-04-29T19:12:27.646899Z",
+    "en_hash": "adad07d600e7a0e3121a1454f006b65b",
+    "attempted_hash": "16a7e81b31e198203fed06229f288a24",
+    "attempted_preview": "Pasajes a Thais, Carlin, Ab'Dendriel, Krailos, Port Hope, Edron, Darashia, Liberty Bay, Svargrond, Gray Island, Yalahar y Ankrahmun."
+  },
+  "es::npc.json::npc.captain_fearless.stdmod_5": {
+    "lang": "es",
+    "json_file": "npc.json",
+    "key": "npc.captain_fearless.stdmod_5",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "tm",
+    "updated_at": "2026-04-29T19:12:27.808147Z",
+    "en_hash": "b8ac3f00c5235570985abc4f620a559f",
+    "attempted_hash": "b3a131e50975f5891a947b1f5a012087",
+    "attempted_preview": "¿Busca un pasaje a Darashia para |TRAVELCOST|?"
+  },
+  "es::npc.json::npc.captain_fearless.stdmod_10": {
+    "lang": "es",
+    "json_file": "npc.json",
+    "key": "npc.captain_fearless.stdmod_10",
+    "status": "translated_ok",
+    "reason": "accepted_translation",
+    "source": "google_translate",
+    "updated_at": "2026-04-29T19:13:31.029278Z",
+    "en_hash": "fb01f4c8d8043db60f0ae48ebefde29d",
+    "attempted_hash": "d3195d90540b7e6ff1d3219db4316802",
+    "attempted_preview": "¿A dónde quieres ir? ¿A {Issavi} {krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Port Hope}, {Edron}, {Darashia}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Gray Island} o {Ankrahmun}?"
   }
 }

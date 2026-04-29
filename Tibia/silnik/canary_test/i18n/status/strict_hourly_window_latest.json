@@ -1,6 +1,6 @@
 {
-  "window_start_utc": "2026-04-29T18:16:56.275115Z",
-  "window_end_utc": "2026-04-29T19:16:56.275115Z",
+  "window_start_utc": "2026-04-29T18:19:56.130591Z",
+  "window_end_utc": "2026-04-29T19:19:56.130591Z",
   "window_hours": 1.0,
   "sources": [
     "i18n/status/worker_cycle_perf.jsonl",
@@ -8,53 +8,46 @@
     "i18n/status/suspicious_log.jsonl",
     "i18n/status/deferred_translation_queue.jsonl"
   ],
-  "total_cycles": 42,
+  "total_cycles": 38,
   "mode_distribution": {
-    "AUTO_TRANSLATE": 42
+    "AUTO_TRANSLATE": 38
   },
-  "auto_translate_cycles": 42,
+  "auto_translate_cycles": 38,
   "migration_cycles": 0,
   "pending_skip_count": 0,
   "pending_skip_share_pct": 0.0,
   "pending_skip_share_migration_pct": 0.0,
-  "translated": 553,
+  "translated": 457,
   "guard_fail": 2,
   "guard_fail_rate_pct": 0.4,
   "no_progress_entries": 0,
   "no_progress_rate_pct": 0.0,
-  "throughput_keys_per_h": 553.0,
+  "throughput_keys_per_h": 457.0,
   "throughput_runtime_hours": 1.0,
   "throughput_runtime_source": "window_hours_long_runtime_fallback",
-  "suspicious_total": 714,
-  "deferred_total": 38,
+  "suspicious_total": 742,
+  "deferred_total": 68,
   "top_deferred_reasons": [
     {
       "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
-      "count": 18,
-      "share_pct": 47.4,
+      "count": 45,
+      "share_pct": 66.2,
       "top_target": "ru/items.json",
-      "top_target_count": 18
+      "top_target_count": 45
     },
     {
       "reason": "existing_canonical_name_quality_mixed_scripts",
-      "count": 14,
-      "share_pct": 36.8,
+      "count": 19,
+      "share_pct": 27.9,
       "top_target": "ru/items.json",
-      "top_target_count": 14
+      "top_target_count": 19
     },
     {
       "reason": "gt_identity_retry_identical_to_en",
-      "count": 5,
-      "share_pct": 13.2,
+      "count": 4,
+      "share_pct": 5.9,
       "top_target": "de/otclient_modules.json",
-      "top_target_count": 5
-    },
-    {
-      "reason": "gt_partial_translation_mix",
-      "count": 1,
-      "share_pct": 2.6,
-      "top_target": "de/otclient_modules.json",
-      "top_target_count": 1
+      "top_target_count": 4
     }
   ],
   "top_guard_fail_targets": [
@@ -62,18 +55,6 @@
       "target": "ru/items.json",
       "translated": 89,
       "guard_fail": 2,
-      "guard_command": 0
-    },
-    {
-      "target": "es/items.json",
-      "translated": 106,
-      "guard_fail": 0,
-      "guard_command": 0
-    },
-    {
-      "target": "de/otclient_modules.json",
-      "translated": 119,
-      "guard_fail": 0,
       "guard_command": 0
     },
     {
@@ -97,6 +78,18 @@
     {
       "target": "ro/items.json",
       "translated": 47,
+      "guard_fail": 0,
+      "guard_command": 0
+    },
+    {
+      "target": "es/items.json",
+      "translated": 55,
+      "guard_fail": 0,
+      "guard_command": 0
+    },
+    {
+      "target": "de/otclient_modules.json",
+      "translated": 74,
       "guard_fail": 0,
       "guard_command": 0
     }

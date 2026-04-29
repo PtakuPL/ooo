@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-04-29T19:17:36.929207Z",
+  "generated_at_utc": "2026-04-29T19:19:18.660480Z",
   "source": "statusd.aggregate_telemetry",
   "status": "healthy",
   "reason": "heartbeat_fresh",
@@ -11,17 +11,17 @@
   "current_file": "items.json",
   "cycle": 1,
   "heartbeat_at_utc": "2026-04-29T19:15:40Z",
-  "heartbeat_age_s": 116.929,
+  "heartbeat_age_s": 218.66,
   "worker": {
     "pid": 58244,
     "pid_alive": true,
     "heartbeat_at_utc": "2026-04-29T19:15:40Z",
-    "heartbeat_age_s": 116.929,
+    "heartbeat_age_s": 218.66,
     "mode": "continuous",
     "category": "",
     "cycle": 1,
-    "activity_heartbeat_at_utc": "2026-04-29T19:17:33Z",
-    "activity_heartbeat_age_s": 3.929
+    "activity_heartbeat_at_utc": "2026-04-29T19:19:17Z",
+    "activity_heartbeat_age_s": 1.66
   },
   "guardian": {
     "timestamp": "2026-04-29T19:16:46.070628Z",
@@ -36,12 +36,12 @@
     "issues": []
   },
   "guardian_daemon": {
-    "timestamp": "2026-04-29T19:17:00.853426Z",
+    "timestamp": "2026-04-29T19:18:42.398594Z",
     "state": "blocked",
-    "pid": 59887,
+    "pid": 60521,
     "owner_pid": 42461,
     "owner_pid_alive": true,
-    "lock_age_s": 15.0
+    "lock_age_s": 18.0
   },
   "thresholds": {
     "heartbeat_aging_seconds": 300.0,

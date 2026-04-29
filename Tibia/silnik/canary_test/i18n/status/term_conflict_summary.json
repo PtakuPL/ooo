@@ -1,141 +1,142 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:09:05.962063Z",
-  "lang": "tr",
-  "json_file": "items.json",
-  "surface": "items",
+  "generated_at_utc": "2026-04-29T19:20:07.050222Z",
+  "lang": "es",
+  "json_file": "npc.json",
+  "surface": "npc",
   "term_registry_path": "term_registry_enriched.json",
-  "term_conflicts_total": 71,
-  "keys_visited": 2000,
-  "keys_scanned": 337,
-  "visit_limit_hit": true,
-  "keys_with_term_usages": 125,
-  "keys_with_conflicts": 32,
-  "term_conflict_rate_pct": 25.6,
-  "term_conflict_rate_delta_pct": 25.6,
-  "registry_terms_total": 8949,
+  "term_conflicts_total": 200,
+  "keys_visited": 1248,
+  "keys_scanned": 1247,
+  "visit_limit_hit": false,
+  "keys_with_term_usages": 340,
+  "keys_with_conflicts": 96,
+  "term_conflict_rate_pct": 28.235,
+  "term_conflict_rate_delta_pct": 28.235,
+  "registry_terms_total": 16558,
   "auto_fixed_english_name_leaks": 0,
-  "inflection_suspects_flagged": 1,
-  "manual_review_enqueued": 70,
+  "inflection_suspects_flagged": 5,
+  "manual_review_enqueued": 195,
   "conflict_type_breakdown": {
-    "canonical_term_inflection_suspect": 1,
-    "canonical_term_missing": 70
+    "canonical_term_missing": 188,
+    "canonical_term_inflection_suspect": 5,
+    "english_name_leak": 7
   },
   "surface_breakdown": {
-    "items": {
-      "keys_with_term_usages": 125,
-      "keys_with_conflicts": 32,
-      "term_conflicts_total": 71
+    "npc": {
+      "keys_with_term_usages": 340,
+      "keys_with_conflicts": 96,
+      "term_conflicts_total": 200
     }
   },
   "top_conflicts": [
     {
-      "key": "item.10217.desc",
-      "conflict_type": "canonical_term_inflection_suspect",
-      "canonical": "kitap",
-      "canonical_en": "book",
-      "translated_text": "Bilgelik kazanmak veya Zao kültürünün daha fazlasının kilidini açmak için bu şifreli kitabı Farmine'daki bir bilgeye getirin",
-      "source_file": "items.json",
-      "source_key": "item.12276.name"
+      "key": "npc.a_beggar.say_4",
+      "conflict_type": "canonical_term_missing",
+      "canonical": "Alimento",
+      "canonical_en": "Food",
+      "translated_text": "Entonces, ¿por qué no muestras tu dedicación a los pobres? Ve y ayuda a Chavis en la casa de pobres. Está recolectando comida para gente como nosotros. ...",
+      "source_file": "spells.json",
+      "source_key": "spell.food.name"
     },
     {
-      "key": "item.10247.desc",
+      "key": "npc.a_prisoner.say_1",
       "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
+      "canonical": "manzanas",
+      "canonical_en": "apples",
+      "translated_text": "Gran acertijo, ¿no? Si puedes decirme la respuesta correcta, \\z te daré algo. ¡Jejeje!",
       "source_file": "items.json",
-      "source_key": "item.116.name"
+      "source_key": "item.24490.name"
     },
     {
-      "key": "item.10247.desc",
+      "key": "npc.a_prisoner.say_2",
       "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
+      "canonical": "manzanas",
+      "canonical_en": "apples",
+      "translated_text": "Mis números surrealistas se basan en hechos sorprendentes. \\z ¿Estás interesado en aprender el secreto de las matemáticas?",
       "source_file": "items.json",
-      "source_key": "item.117.name"
+      "source_key": "item.24490.name"
     },
     {
-      "key": "item.10247.desc",
+      "key": "npc.a_sleeping_dragon.multi_17",
       "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
+      "canonical": "Nothing",
+      "canonical_en": "nothing",
+      "translated_text": "Te lanzas y arrojas el modelo al agua. Como no pasa nada, le das la espalda al océano. ...",
       "source_file": "items.json",
-      "source_key": "item.118.name"
+      "source_key": "item.31381.name"
     },
     {
-      "key": "item.10247.desc",
+      "key": "npc.a_sleeping_dragon.multi_20",
       "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
+      "canonical": "elegir",
+      "canonical_en": "pick",
+      "translated_text": "Coges el espejo del suelo.",
       "source_file": "items.json",
-      "source_key": "item.12763.name"
+      "source_key": "item.31613.name"
     },
     {
-      "key": "item.10247.desc",
+      "key": "npc.a_sleeping_dragon.multi_20",
       "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
+      "canonical": "elegir",
+      "canonical_en": "pick",
+      "translated_text": "Coges el espejo del suelo.",
       "source_file": "items.json",
-      "source_key": "item.12764.name"
+      "source_key": "item.31615.name"
     },
     {
-      "key": "item.10247.desc",
+      "key": "npc.a_sleeping_dragon.multi_20",
       "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandıkta bir dizi silah var",
+      "canonical": "elegir",
+      "canonical_en": "pick",
+      "translated_text": "Coges el espejo del suelo.",
       "source_file": "items.json",
-      "source_key": "item.14166.name"
+      "source_key": "item.3456.name"
     },
     {
-      "key": "item.11328.desc",
+      "key": "npc.a_sleeping_dragon.multi_21",
       "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.116.name"
+      "canonical": "Dragón",
+      "canonical_en": "Dragon",
+      "translated_text": "Los sueños de dragones son dorados. ...",
+      "source_file": "monsters.json",
+      "source_key": "monster.dragon.name"
     },
     {
-      "key": "item.11328.desc",
+      "key": "npc.a_sleeping_dragon.multi_32",
       "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
-      "source_file": "items.json",
-      "source_key": "item.117.name"
+      "canonical": "Dragón",
+      "canonical_en": "Dragon",
+      "translated_text": "Los sueños de dragones son dorados. ...",
+      "source_file": "monsters.json",
+      "source_key": "monster.dragon.name"
     },
     {
-      "key": "item.11328.desc",
+      "key": "npc.a_sleeping_dragon.say_11",
       "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+      "canonical": "cabeza",
+      "canonical_en": "head",
+      "translated_text": "Regresas al norte hasta la meseta.",
       "source_file": "items.json",
-      "source_key": "item.118.name"
+      "source_key": "item.33932.name"
     },
     {
-      "key": "item.11328.desc",
+      "key": "npc.a_sleeping_dragon.say_11",
       "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+      "canonical": "cabeza",
+      "canonical_en": "head",
+      "translated_text": "Regresas al norte hasta la meseta.",
       "source_file": "items.json",
-      "source_key": "item.12763.name"
+      "source_key": "item.33937.name"
     },
     {
-      "key": "item.11328.desc",
+      "key": "npc.a_sleeping_dragon.say_14",
       "conflict_type": "canonical_term_missing",
-      "canonical": "kasa",
-      "canonical_en": "crate",
-      "translated_text": "Bu sandık kertenkele sembolleriyle işaretlenmiştir. Yetişkin bir kişinin sığabileceği kadar büyük",
+      "canonical": "cabeza",
+      "canonical_en": "head",
+      "translated_text": "Te diriges hacia el norte pasando innumerables piedras en el mar carmesí de piedras bajo tus pies.",
       "source_file": "items.json",
-      "source_key": "item.12764.name"
+      "source_key": "item.33932.name"
     }
   ]
 }

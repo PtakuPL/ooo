@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T19:17:36.024105Z",
+  "generated_at_utc": "2026-04-29T19:20:05.615169Z",
   "current_phase": "AUTO_TRANSLATE",
   "sections": {
     "META": {
@@ -9,29 +9,29 @@
       "reason": "",
       "freshness": "teraz",
       "source": "update_github_status()",
-      "last_update": "2026-04-29 19:16:55"
+      "last_update": "2026-04-29 19:19:53"
     },
     "LIVE": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "3min temu",
+      "freshness": "4min temu",
       "source": "activity.json / worker_state.json",
-      "last_update": "2026-04-29T19:14:00Z"
+      "last_update": "2026-04-29T19:15:40Z"
     },
     "PRE_MIGRATION": {
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "2min temu",
+      "freshness": "47s temu",
       "source": "i18n/en/*.json (LIVE) + i18n_file_status.json + i18n_processed_files.txt",
-      "last_update": "2026-04-29 19:16:55"
+      "last_update": "2026-04-29 19:19:53"
     },
     "TRANSLATION": {
       "state": "active",
       "state_label": "🟢 AKTYWNY",
       "reason": "",
-      "freshness": "8min temu",
+      "freshness": "10min temu",
       "source": "translation_guard_latest.json / translation_recent_latest.json",
       "last_update": "2026-04-29T19:09:22.191916Z"
     },
@@ -39,7 +39,7 @@
       "state": "inactive",
       "state_label": "🔒 NIEAKTYWNY",
       "reason": "worker w trybie AUTO_TRANSLATE",
-      "freshness": "11min temu",
+      "freshness": "14min temu",
       "source": "quality_audit_latest.json",
       "last_update": "2026-04-29T19:05:37.923434Z"
     },
@@ -49,7 +49,7 @@
       "reason": "",
       "freshness": "teraz",
       "source": "daily/*.json / ops.jsonl",
-      "last_update": "2026-04-29 19:16:55"
+      "last_update": "2026-04-29 19:19:53"
     },
     "DOCTOR": {
       "state": "active",
@@ -57,7 +57,7 @@
       "reason": "1 alarmów",
       "freshness": "0s temu",
       "source": "doctor_alerts_latest.json",
-      "last_update": "2026-04-29T19:17:36.021420Z"
+      "last_update": "2026-04-29T19:20:05.613302Z"
     }
   },
   "operator_panels": {
@@ -72,8 +72,8 @@
       "current_scope": "Serwer",
       "detail": "auto translate in progress",
       "current_key": "ru:items.json",
-      "heartbeat_at": "2026-04-29T19:14:00Z",
-      "heartbeat_age_s": 55,
+      "heartbeat_at": "2026-04-29T19:15:40Z",
+      "heartbeat_age_s": 218,
       "cycle": 18766
     },
     "recent_writes": {
@@ -276,6 +276,32 @@
     "recent_rejects": {
       "count": 20,
       "items": [
+        {
+          "timestamp": "2026-04-29T19:19:33.647561Z",
+          "lang": "ru",
+          "category": "items.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "high_reject_types",
+          "reject_types": [
+            "mixed_scripts"
+          ],
+          "key": "item.14670.name"
+        },
+        {
+          "timestamp": "2026-04-29T19:19:30.028721Z",
+          "lang": "ru",
+          "category": "items.json",
+          "surface": "Serwer",
+          "source": "google_translate",
+          "guard_level": "hard_block",
+          "decision_reason": "high_reject_types",
+          "reject_types": [
+            "mixed_scripts"
+          ],
+          "key": "item.11541.name"
+        },
         {
           "timestamp": "2026-04-29T18:30:02.046142Z",
           "lang": "ru",
@@ -509,38 +535,12 @@
             "mixed_scripts"
           ],
           "key": "item.11541.name"
-        },
-        {
-          "timestamp": "2026-04-29T15:37:59.738692Z",
-          "lang": "de",
-          "category": "npc.json",
-          "surface": "Serwer",
-          "source": "google_translate",
-          "guard_level": "hard_block",
-          "decision_reason": "validate_identical_to_en",
-          "reject_types": [
-            "identical_to_en"
-          ],
-          "key": "npc.a_fluffy_squirrel.stdmod_1"
-        },
-        {
-          "timestamp": "2026-04-29T15:34:21.694919Z",
-          "lang": "de",
-          "category": "otclient_modules.json",
-          "surface": "Klient",
-          "source": "google_translate",
-          "guard_level": "hard_block",
-          "decision_reason": "validate_identical_to_en",
-          "reject_types": [
-            "identical_to_en"
-          ],
-          "key": "otclient_modules.charms.tr_34"
         }
       ]
     },
     "launcher_quality_gate": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T19:16:59.619407Z",
+      "generated_at_utc": "2026-04-29T19:19:59.776410Z",
       "enabled": true,
       "files": [
         "client.json",
@@ -625,15 +625,15 @@
       },
       "trend_24h": {
         "window_hours": 24,
-        "samples": 1072,
-        "pass_samples": 1072,
+        "samples": 1070,
+        "pass_samples": 1070,
         "fail_samples": 0,
         "pass_rate_pct": 100.0,
         "state_changes": 0,
         "latest_state": "pass",
         "oldest_state": "pass",
-        "latest_timestamp": "2026-04-29T19:16:59.619407Z",
-        "oldest_timestamp": "2026-04-28T19:17:25.697463Z",
+        "latest_timestamp": "2026-04-29T19:19:59.776410Z",
+        "oldest_timestamp": "2026-04-28T19:20:15.174457Z",
         "checks_failed_delta": 0,
         "word_salad_rejects_delta": 0,
         "placeholder_rejects_delta": 0,
@@ -2302,12 +2302,12 @@
     },
     "surface_parity": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T19:17:32.911698Z",
+      "generated_at_utc": "2026-04-29T19:20:00.929473Z",
       "window": {
         "trend_hours": 24,
-        "samples": 1071,
-        "window_start_utc": "2026-04-28T19:17:53.471011Z",
-        "window_end_utc": "2026-04-29T19:17:32.911698Z"
+        "samples": 1070,
+        "window_start_utc": "2026-04-28T19:20:15.195310Z",
+        "window_end_utc": "2026-04-29T19:20:00.929473Z"
       },
       "summary": {
         "surface_count": 4,
@@ -2344,9 +2344,9 @@
               "missing_keys": 70031
             }
           ],
-          "trend_samples": 1071,
-          "window_oldest_utc": "2026-04-28T19:17:53.471011Z",
-          "window_latest_utc": "2026-04-29T19:17:32.911698Z"
+          "trend_samples": 1070,
+          "window_oldest_utc": "2026-04-28T19:20:15.195310Z",
+          "window_latest_utc": "2026-04-29T19:20:00.929473Z"
         },
         "website": {
           "label": "Website",
@@ -2372,9 +2372,9 @@
               "missing_keys": 1554
             }
           ],
-          "trend_samples": 1071,
-          "window_oldest_utc": "2026-04-28T19:17:53.471011Z",
-          "window_latest_utc": "2026-04-29T19:17:32.911698Z"
+          "trend_samples": 1070,
+          "window_oldest_utc": "2026-04-28T19:20:15.195310Z",
+          "window_latest_utc": "2026-04-29T19:20:00.929473Z"
         },
         "launcher": {
           "label": "Launcher",
@@ -2400,9 +2400,9 @@
               "missing_keys": 242
             }
           ],
-          "trend_samples": 1071,
-          "window_oldest_utc": "2026-04-28T19:17:53.471011Z",
-          "window_latest_utc": "2026-04-29T19:17:32.911698Z"
+          "trend_samples": 1070,
+          "window_oldest_utc": "2026-04-28T19:20:15.195310Z",
+          "window_latest_utc": "2026-04-29T19:20:00.929473Z"
         },
         "installer": {
           "label": "Installer",
@@ -2428,9 +2428,9 @@
               "missing_keys": 2031
             }
           ],
-          "trend_samples": 1071,
-          "window_oldest_utc": "2026-04-28T19:17:53.471011Z",
-          "window_latest_utc": "2026-04-29T19:17:32.911698Z"
+          "trend_samples": 1070,
+          "window_oldest_utc": "2026-04-28T19:20:15.195310Z",
+          "window_latest_utc": "2026-04-29T19:20:00.929473Z"
         }
       },
       "ranking": [
@@ -2459,9 +2459,9 @@
               "missing_keys": 242
             }
           ],
-          "trend_samples": 1071,
-          "window_oldest_utc": "2026-04-28T19:17:53.471011Z",
-          "window_latest_utc": "2026-04-29T19:17:32.911698Z",
+          "trend_samples": 1070,
+          "window_oldest_utc": "2026-04-28T19:20:15.195310Z",
+          "window_latest_utc": "2026-04-29T19:20:00.929473Z",
           "rank": 1
         },
         {
@@ -2489,9 +2489,9 @@
               "missing_keys": 2031
             }
           ],
-          "trend_samples": 1071,
-          "window_oldest_utc": "2026-04-28T19:17:53.471011Z",
-          "window_latest_utc": "2026-04-29T19:17:32.911698Z",
+          "trend_samples": 1070,
+          "window_oldest_utc": "2026-04-28T19:20:15.195310Z",
+          "window_latest_utc": "2026-04-29T19:20:00.929473Z",
           "rank": 2
         },
         {
@@ -2519,9 +2519,9 @@
               "missing_keys": 70031
             }
           ],
-          "trend_samples": 1071,
-          "window_oldest_utc": "2026-04-28T19:17:53.471011Z",
-          "window_latest_utc": "2026-04-29T19:17:32.911698Z",
+          "trend_samples": 1070,
+          "window_oldest_utc": "2026-04-28T19:20:15.195310Z",
+          "window_latest_utc": "2026-04-29T19:20:00.929473Z",
           "rank": 3
         },
         {
@@ -2549,16 +2549,16 @@
               "missing_keys": 1554
             }
           ],
-          "trend_samples": 1071,
-          "window_oldest_utc": "2026-04-28T19:17:53.471011Z",
-          "window_latest_utc": "2026-04-29T19:17:32.911698Z",
+          "trend_samples": 1070,
+          "window_oldest_utc": "2026-04-28T19:20:15.195310Z",
+          "window_latest_utc": "2026-04-29T19:20:00.929473Z",
           "rank": 4
         }
       ]
     },
     "launcher_readiness": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T19:17:32.977824Z",
+      "generated_at_utc": "2026-04-29T19:20:00.955809Z",
       "summary": {
         "state": "in_progress",
         "state_label": "🟡 IN_PROGRESS",
@@ -2616,8 +2616,8 @@
           "required_waves": 3,
           "waves_observed": 0,
           "waves_considered": [],
-          "wave_history_rows_total": 1664,
-          "wave_history_rows_window": 1071,
+          "wave_history_rows_total": 1665,
+          "wave_history_rows_window": 1070,
           "wave_history_path": "i18n/status/launcher_wave_report.jsonl",
           "stale_alerts_monitored": [
             "DLQ_GROWTH",
@@ -2635,17 +2635,17 @@
         "quality_trend_24h": {
           "label": "Trend 24h identycznych EN + word_salad dla client/otclient_modules",
           "pass": true,
-          "detail": "window=24.00h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
+          "detail": "window=24.02h; client.json: id=+0.00pp, ws=+0, otclient_modules.json: id=+0.00pp, ws=+0",
           "window_hours": 24,
-          "window_start_utc": "2026-04-28T19:17:25.697463Z",
-          "window_end_utc": "2026-04-29T19:17:32.977824Z",
-          "window_span_hours": 24.0,
+          "window_start_utc": "2026-04-28T19:19:05.740277Z",
+          "window_end_utc": "2026-04-29T19:20:00.955809Z",
+          "window_span_hours": 24.02,
           "has_min_24h_window": true,
           "files": {
             "client.json": {
-              "samples": 1073,
-              "oldest_timestamp": "2026-04-28T19:17:25.697463Z",
-              "latest_timestamp": "2026-04-29T19:17:32.977824Z",
+              "samples": 1072,
+              "oldest_timestamp": "2026-04-28T19:19:05.740277Z",
+              "latest_timestamp": "2026-04-29T19:20:00.955809Z",
               "oldest_identical_to_en_pct": 31.4,
               "latest_identical_to_en_pct": 31.4,
               "delta_identical_to_en_pct": 0.0,
@@ -2655,9 +2655,9 @@
               "trend_pass": true
             },
             "otclient_modules.json": {
-              "samples": 1073,
-              "oldest_timestamp": "2026-04-28T19:17:25.697463Z",
-              "latest_timestamp": "2026-04-29T19:17:32.977824Z",
+              "samples": 1072,
+              "oldest_timestamp": "2026-04-28T19:19:05.740277Z",
+              "latest_timestamp": "2026-04-29T19:20:00.955809Z",
               "oldest_identical_to_en_pct": 29.79,
               "latest_identical_to_en_pct": 29.79,
               "delta_identical_to_en_pct": 0.0,
@@ -2719,13 +2719,13 @@
     },
     "provider_routing": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T19:17:35.337214Z",
+      "generated_at_utc": "2026-04-29T19:20:05.044133Z",
       "active_provider": "TM/simple",
       "active_provider_code": "tm_simple",
       "active_provider_source": "simple",
       "active_provider_timestamp": "2026-04-29T19:09:11.995193Z",
       "active_model": "openai/gpt-4.1-mini",
-      "fallback_reason": "TM/simple → fallback to google translate high [high_reject_types] items.json",
+      "fallback_reason": "OpenAI model pool → fallback chain exhausted high reject types [high_reject_types] items.json",
       "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
       "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
       "router_registry_path": "provider_router_registry.json",
@@ -2816,22 +2816,17 @@
             "writes": 3
           }
         ],
-        "fallbacks_last_200": 8,
+        "fallbacks_last_200": 4,
         "fallback_action_breakdown": [
           {
-            "action": "fallback_to_next_provider_validate_fail",
-            "action_label": "fallback to next provider validate fail",
-            "count": 5
+            "action": "fallback_chain_exhausted_high_reject_types",
+            "action_label": "fallback chain exhausted high reject types",
+            "count": 2
           },
           {
             "action": "fallback_to_google_translate_high",
             "action_label": "fallback to google translate high",
             "count": 2
-          },
-          {
-            "action": "fallback_to_google_translate_validate_fail",
-            "action_label": "fallback to google translate validate fail",
-            "count": 1
           }
         ],
         "providers": {
@@ -2854,7 +2849,7 @@
             "status": "active",
             "active_model": "openai/gpt-4.1-mini",
             "recent_writes": 231,
-            "requests_today": 122
+            "requests_today": 128
           }
         },
         "openai_model_pool": {
@@ -2897,31 +2892,31 @@
           ],
           "request_budget_cap": 250,
           "request_budget_policy": "telemetry_only",
-          "requests_today": 122,
+          "requests_today": 128,
           "selected_model": "openai/gpt-4.1-mini",
           "pool_latest": {
             "schema_version": "1.0",
-            "generated_at_utc": "2026-04-29T18:48:49.017156Z",
+            "generated_at_utc": "2026-04-29T19:19:29.314078Z",
             "status": "active",
             "reason": "ok",
             "active": true,
             "selected_model": "openai/gpt-4.1-mini",
-            "response_ms": 972,
+            "response_ms": 2365,
             "rate_limited": false,
-            "requests_total_today": 122,
-            "translated_total_today": 621,
+            "requests_total_today": 128,
+            "translated_total_today": 655,
             "request_budget_cap": 250,
             "request_budget_policy": "telemetry_only",
             "models": [
               {
                 "model": "openai/gpt-4.1-mini",
                 "priority": 0,
-                "requests_today": 104,
-                "translated_today": 551,
+                "requests_today": 110,
+                "translated_today": 585,
                 "blocked_until_utc": "",
                 "last_status": "ok",
                 "last_error_reason": "",
-                "last_response_ms": 972
+                "last_response_ms": 2365
               },
               {
                 "model": "openai/gpt-4o-mini",
@@ -2961,10 +2956,10 @@
             "warn_used_pct": 80.0,
             "critical_used_pct": 100.0
           },
-          "used_pct": 48.8,
+          "used_pct": 51.2,
           "monthly_cap": 250.0,
-          "spent": 122.0,
-          "latest_age_s": 1616.15099,
+          "spent": 128.0,
+          "latest_age_s": 0.535553,
           "day_utc": "2026-04-29",
           "unit": "requests_per_day",
           "stale": false
@@ -2997,12 +2992,12 @@
         }
       },
       "latest_fallback": {
-        "timestamp": "2026-04-29T19:17:34.678715Z",
-        "provider": "tm_simple",
-        "provider_label": "TM/simple",
-        "source": "tm",
-        "action": "fallback_to_google_translate_high",
-        "action_label": "fallback to google translate high",
+        "timestamp": "2026-04-29T19:17:51.594033Z",
+        "provider": "openai_model_pool",
+        "provider_label": "OpenAI model pool",
+        "source": "openai_model_pool",
+        "action": "fallback_chain_exhausted_high_reject_types",
+        "action_label": "fallback chain exhausted high reject types",
         "decision_reason": "high_reject_types",
         "json_file": "items.json",
         "key": "item.14670.name"
@@ -3010,7 +3005,7 @@
     },
     "term_consistency": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T19:17:35.343005Z",
+      "generated_at_utc": "2026-04-29T19:20:05.113369Z",
       "available": true,
       "lang": "tr",
       "json_file": "items.json",
@@ -3154,7 +3149,7 @@
       "blockers_missing_keys_total": 0,
       "blockers_missing_lang_files": 0,
       "visible_pending_tail": 399,
-      "oldest_visible_pending_age_s": 21424,
+      "oldest_visible_pending_age_s": 20200,
       "top_langs": [
         {
           "lang": "ru",
@@ -3191,24 +3186,24 @@
           "count": 1
         }
       ],
-      "deferred_state_keys_total": 8885,
-      "deferred_state_updated_at": "2026-04-29T19:16:39.144945Z",
-      "deferred_state_age_s": 19,
+      "deferred_state_keys_total": 8917,
+      "deferred_state_updated_at": "2026-04-29T19:19:53.563941Z",
+      "deferred_state_age_s": 4,
       "deferred_state_stats": {
-        "enqueued": 0,
+        "enqueued": 32,
         "suppressed_cooldown": 0,
-        "suppressed_manual_review": 56,
-        "deduped_ttl": 0,
+        "suppressed_manual_review": 10,
+        "deduped_ttl": 2,
         "manual_review_escalations": 0,
-        "partial_staged": 2,
+        "partial_staged": 0,
         "partial_completed": 0,
         "retry_loop_cooldown": 0,
-        "retry_loop_manual_review": 2
+        "retry_loop_manual_review": 0
       }
     },
     "doctor_alerts": {
       "schema_version": "1.0",
-      "generated_at_utc": "2026-04-29T19:17:36.021420Z",
+      "generated_at_utc": "2026-04-29T19:20:05.613302Z",
       "overall": "warning",
       "thresholds": {
         "heartbeat_stale_s": 300,
@@ -3223,16 +3218,16 @@
           "name": "HEARTBEAT_STALE",
           "status": "ok",
           "severity": "ok",
-          "value": 55,
+          "value": 218,
           "threshold": 300,
-          "detail": "Heartbeat świeży (55s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=ru:items.json].",
+          "detail": "Heartbeat świeży (218s, src=worker_runtime_heartbeat) Runtime[status=healthy, reason=heartbeat_fresh, phase=AUTO_TRANSLATE, key=ru:items.json].",
           "source": "worker_runtime_heartbeat.json"
         },
         {
           "name": "NO_WRITE",
           "status": "ok",
           "severity": "ok",
-          "value": 503,
+          "value": 653,
           "threshold": 900,
           "detail": "Recent writes wyglądają zdrowo.",
           "source": "translation_recent_report.jsonl"
@@ -3252,7 +3247,7 @@
           "severity": "warning",
           "value": {
             "pending": 399,
-            "oldest_s": 21424
+            "oldest_s": 20200
           },
           "threshold": {
             "pending_min": 200,

@@ -231950,5 +231950,13 @@
     "confidence": 0.96,
     "verified": false,
     "updated_at": "2026-04-29T18:48:49.028128Z"
+  },
+  "npc.captain_fearless.stdmod_10": {
+    "src_hash": "fb01f4c8d8043db60f0ae48ebefde29d",
+    "text": "¿A dónde quieres ir? ¿A {Issavi} {krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Port Hope}, {Edron}, {Darashia}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Gray Island} o {Ankrahmun}?",
+    "source": "google_translate",
+    "confidence": 0.9,
+    "verified": false,
+    "updated_at": "2026-04-29T19:13:31.029333Z"
   }
 }

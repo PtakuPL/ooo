@@ -1,128 +1,26 @@
 {
-  "timestamp": "2026-04-29T19:09:11.995193Z",
-  "language": "tr",
-  "json_file": "items.json",
-  "translated": 30,
+  "timestamp": "2026-04-29T19:20:13.086008Z",
+  "language": "es",
+  "json_file": "npc.json",
+  "translated": 3,
   "entries": [
     {
-      "key": "item.14346.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "npc.captain_fearless.stdmod_1",
+      "en": "Passages to Thais, Carlin, Ab'Dendriel, Krailos, Port Hope, Edron, Darashia, Liberty Bay, Svargrond, Gray Island, Yalahar and Ankrahmun.",
+      "translated": "Pasajes a Thais, Carlin, Ab'Dendriel, Krailos, Port Hope, Edron, Darashia, Liberty Bay, Svargrond, Gray Island, Yalahar y Ankrahmun.",
+      "source": "tm"
     },
     {
-      "key": "item.14347.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "npc.captain_fearless.stdmod_5",
+      "en": "Do you seek a passage to Darashia for |TRAVELCOST|?",
+      "translated": "¿Busca un pasaje a Darashia para |TRAVELCOST|?",
+      "source": "tm"
     },
     {
-      "key": "item.14348.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14349.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.1435.name",
-      "en": "ornamented wall",
-      "translated": "süslü duvar",
-      "source": "simple"
-    },
-    {
-      "key": "item.14350.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14351.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14352.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14353.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14354.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14355.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14356.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14357.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14358.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14359.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.1436.name",
-      "en": "ornamented wall",
-      "translated": "süslü duvar",
-      "source": "simple"
-    },
-    {
-      "key": "item.14360.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14361.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14362.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
-    },
-    {
-      "key": "item.14363.name",
-      "en": "RESERVED SPRITE",
-      "translated": "AYRILMIŞ SPRİTE",
-      "source": "simple"
+      "key": "npc.captain_fearless.stdmod_10",
+      "en": "Where do you want to go? To {Issavi} {krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Port Hope}, {Edron}, {Darashia}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Gray Island} or {Ankrahmun}?",
+      "translated": "¿A dónde quieres ir? ¿A {Issavi} {krailos}, {Thais}, {Carlin}, {Ab'Dendriel}, {Port Hope}, {Edron}, {Darashia}, {Liberty Bay}, {Svargrond}, {Yalahar}, {Gray Island} o {Ankrahmun}?",
+      "source": "google_translate"
     }
   ],
   "filtered_untranslated_marker": 0

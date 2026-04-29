@@ -1,17 +1,37 @@
 {
-  "category": "it",
-  "cycle": 9,
+  "category": "-",
+  "cycle": 10,
   "eta_seconds": 0,
-  "file": "items.json",
-  "generated_at_utc": "2026-04-29T20:51:31Z",
-  "message": "auto translate in progress",
-  "phase": "AUTO_TRANSLATE",
+  "file": "-",
+  "generated_at_utc": "2026-04-29T20:54:27Z",
+  "message": "cycle start",
+  "phase": "IDLE",
   "progress": {
     "done": 0,
-    "total": 30,
-    "unit": "keys"
+    "total": 0,
+    "unit": "units"
   },
   "recent": [
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 9,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "auto_done",
+      "t": "2026-04-29T20:54:13Z"
+    },
+    {
+      "action": "update",
+      "category": "it",
+      "cycle": 9,
+      "file": "items.json",
+      "phase": "AUTO_TRANSLATE",
+      "result": "ok",
+      "stage": "heartbeat_tick",
+      "t": "2026-04-29T20:53:37Z"
+    },
     {
       "action": "update",
       "category": "it",
@@ -91,28 +111,8 @@
       "result": "ok",
       "stage": "auto_start",
       "t": "2026-04-29T20:44:39Z"
-    },
-    {
-      "action": "update",
-      "category": "cs",
-      "cycle": 7,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "auto_done",
-      "t": "2026-04-29T20:44:22Z"
-    },
-    {
-      "action": "update",
-      "category": "cs",
-      "cycle": 7,
-      "file": "items.json",
-      "phase": "AUTO_TRANSLATE",
-      "result": "ok",
-      "stage": "heartbeat_tick",
-      "t": "2026-04-29T20:43:46Z"
     }
   ],
-  "stage": "heartbeat_tick",
+  "stage": "cycle_start",
   "status": "running"
 }

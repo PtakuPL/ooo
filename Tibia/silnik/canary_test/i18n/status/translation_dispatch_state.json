@@ -839,5 +839,7 @@
         }
       }
     }
-  }
+  },
+  "last_phase": "PRE_MIGRATION",
+  "last_phase_ts": "2026-04-29T22:54:28"
 }

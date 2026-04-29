@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:24:31.766558Z",
-  "cycle": 13,
+  "generated_at_utc": "2026-04-29T21:29:40.094243Z",
+  "cycle": 14,
   "open_alarms": [
-    {
-      "code": "GUARD_REPORT_STALE",
-      "severity": "warning",
-      "source": "statusd_doctor.json",
-      "detail": "GUARD_REPORT_STALE: guard_report nie aktualizowany od 1035s"
-    },
     {
       "code": "NATIVE_READINESS_BELOW_THRESHOLD",
       "severity": "warning",
       "source": "statusd_doctor.json",
       "detail": "NATIVE_READINESS_BELOW_THRESHOLD: monitored=52/52 missing=[-] tier1=[-] tier2=[tr=35.83<50.0,sk=4.03<50.0,hu=4.14<50.0] tier3=[az=4.71<5.0,bg=4.7<5.0,bs=3.74<5.0,da=4.23<5.0,el=4.33<5.0,et=4.47<5.0,fi=4.19<5.0,hr=4.4<5.0"
+    },
+    {
+      "code": "PROVIDER_BUDGET_80PCT",
+      "severity": "warning",
+      "source": "statusd_doctor.json",
+      "detail": "PROVIDER_BUDGET_80PCT: used=80.0% cap=250.0 spent=200.0 source=provider_budget_latest.json"
     },
     {
       "code": "QUEUE_STARVATION_DETECTED",
@@ -31,19 +31,21 @@
       "code": "SUSPICIOUS_HIGH_ELEVATED",
       "severity": "warning",
       "source": "statusd_doctor.json",
-      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=631 rate=17.957% window=6.0h top_lang=es:218 per_domain=[server.json:65(1300.0%/warning)]"
+      "detail": "SUSPICIOUS_HIGH_ELEVATED: suspicious_high=567 rate=16.608% window=6.0h top_lang=es:205 per_domain=[server.json:52(1300.0%/warning)]"
     },
     {
       "code": "TERM_CONSISTENCY_REGRESSION",
       "severity": "critical",
       "source": "statusd_doctor.json",
-      "detail": "TERM_CONSISTENCY_REGRESSION: rate=25.6% delta=25.6% total=71 source=term_conflicts_latest.json"
+      "detail": "TERM_CONSISTENCY_REGRESSION: rate=46.711% delta=46.711% total=200 source=term_conflicts_latest.json"
     }
   ],
   "resolved_this_cycle": [
-    "DISPATCH_STALE"
+    "GUARD_REPORT_STALE"
   ],
-  "newly_opened": [],
+  "newly_opened": [
+    "PROVIDER_BUDGET_80PCT"
+  ],
   "summary": {
     "open_count": 6,
     "resolved_count": 1,
@@ -62,6 +64,6 @@
     "selected_command": "-",
     "result": "resolved_update",
     "result_reason": "resolved_count=1",
-    "updated_at_utc": "2026-04-29T21:24:31.766558Z"
+    "updated_at_utc": "2026-04-29T21:29:40.094243Z"
   }
 }

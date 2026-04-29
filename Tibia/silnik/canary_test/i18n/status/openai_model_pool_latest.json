@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T21:25:32.037638Z",
+  "generated_at_utc": "2026-04-29T21:31:32.971208Z",
   "status": "active",
   "reason": "ok",
   "active": true,
   "selected_model": "openai/gpt-4o-mini",
-  "response_ms": 2018,
+  "response_ms": 2322,
   "rate_limited": false,
-  "requests_total_today": 200,
-  "translated_total_today": 1039,
+  "requests_total_today": 205,
+  "translated_total_today": 1069,
   "request_budget_cap": 250,
   "request_budget_policy": "telemetry_only",
   "models": [
@@ -25,12 +25,12 @@
     {
       "model": "openai/gpt-4o-mini",
       "priority": 1,
-      "requests_today": 38,
-      "translated_today": 194,
+      "requests_today": 43,
+      "translated_today": 224,
       "blocked_until_utc": "",
       "last_status": "ok",
       "last_error_reason": "",
-      "last_response_ms": 2018
+      "last_response_ms": 2322
     },
     {
       "model": "openai/gpt-5",

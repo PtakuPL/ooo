@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-29T20:22:14.131517Z",
+  "timestamp": "2026-04-29T20:24:35.773294Z",
   "global": {
     "total_reference_keys": 3875872,
     "translated_keys": 711284,
@@ -70,20 +70,17 @@
     "lang_stats_cache_file": "i18n/status/translation_lang_stats_cache.json"
   },
   "profiler_latest": {
-    "timestamp": "2026-04-29T20:22:07.827463Z",
-    "cycle": 5,
+    "timestamp": "2026-04-29T20:22:13.911527Z",
+    "cycle": 6,
     "mode": "AUTO_TRANSLATE",
-    "category": "tr",
+    "category": "ru",
     "events": {
-      "dispatch": 10799,
-      "mode_run": 230234,
-      "status_update": 8705,
-      "cycle_total": 250996
+      "dispatch": 1568
     }
   },
   "strict_hourly_window": {
-    "window_start_utc": "2026-04-29T19:22:12.933686Z",
-    "window_end_utc": "2026-04-29T20:22:12.933686Z",
+    "window_start_utc": "2026-04-29T19:24:34.107241Z",
+    "window_end_utc": "2026-04-29T20:24:34.107241Z",
     "window_hours": 1.0,
     "sources": [
       "i18n/status/worker_cycle_perf.jsonl",
@@ -91,11 +88,11 @@
       "i18n/status/suspicious_log.jsonl",
       "i18n/status/deferred_translation_queue.jsonl"
     ],
-    "total_cycles": 21,
+    "total_cycles": 22,
     "mode_distribution": {
-      "AUTO_TRANSLATE": 21
+      "AUTO_TRANSLATE": 22
     },
-    "auto_translate_cycles": 21,
+    "auto_translate_cycles": 22,
     "migration_cycles": 0,
     "pending_skip_count": 0,
     "pending_skip_share_pct": 0.0,
@@ -105,23 +102,37 @@
     "guard_fail_rate_pct": 0.0,
     "no_progress_entries": 0,
     "no_progress_rate_pct": 0.0,
-    "throughput_keys_per_h": 323.1,
-    "throughput_runtime_hours": 1.3805,
+    "throughput_keys_per_h": 323.0,
+    "throughput_runtime_hours": 1.3809,
     "throughput_runtime_source": "cycle_duration_ms",
-    "suspicious_total": 309,
-    "deferred_total": 2,
+    "suspicious_total": 377,
+    "deferred_total": 34,
     "top_deferred_reasons": [
+      {
+        "reason": "existing_canonical_name_quality_cyrillic_latin_mix",
+        "count": 27,
+        "share_pct": 79.4,
+        "top_target": "ru/items.json",
+        "top_target_count": 27
+      },
+      {
+        "reason": "existing_canonical_name_quality_mixed_scripts",
+        "count": 5,
+        "share_pct": 14.7,
+        "top_target": "ru/items.json",
+        "top_target_count": 5
+      },
       {
         "reason": "retry_loop_cooldown_default",
         "count": 1,
-        "share_pct": 50.0,
+        "share_pct": 2.9,
         "top_target": "de/otclient_modules.json",
         "top_target_count": 1
       },
       {
         "reason": "gt_partial_validate_quality",
         "count": 1,
-        "share_pct": 50.0,
+        "share_pct": 2.9,
         "top_target": "de/otclient_modules.json",
         "top_target_count": 1
       }

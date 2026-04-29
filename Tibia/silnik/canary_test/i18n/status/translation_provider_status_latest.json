@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-04-29T20:22:17.431266Z",
+  "generated_at_utc": "2026-04-29T20:24:38.751774Z",
   "active_provider": "TM/simple",
   "active_provider_code": "tm_simple",
   "active_provider_source": "simple",
   "active_provider_timestamp": "2026-04-29T20:21:53.179100Z",
   "active_model": "openai/gpt-4.1-mini",
-  "fallback_reason": "TM/simple → fallback to next provider validate fail [validate_word_salad] server.json",
+  "fallback_reason": "OpenAI model pool → fallback chain exhausted high reject types [high_reject_types] items.json",
   "current_runtime_chain": "TM/simple -> Free Google Translate -> OpenAI model pool",
   "target_policy_chain": "TM/simple -> Free Google Translate -> OpenAI model pool -> Google Cloud",
   "router_registry_path": "provider_router_registry.json",
@@ -97,7 +97,7 @@
         "writes": 3
       }
     ],
-    "fallbacks_last_200": 7,
+    "fallbacks_last_200": 11,
     "fallback_action_breakdown": [
       {
         "action": "fallback_to_next_provider_validate_fail",
@@ -107,7 +107,12 @@
       {
         "action": "fallback_to_google_translate_high",
         "action_label": "fallback to google translate high",
-        "count": 1
+        "count": 3
+      },
+      {
+        "action": "fallback_chain_exhausted_high_reject_types",
+        "action_label": "fallback chain exhausted high reject types",
+        "count": 2
       },
       {
         "action": "fallback_to_google_translate_validate_fail",
@@ -135,7 +140,7 @@
         "status": "active",
         "active_model": "openai/gpt-4.1-mini",
         "recent_writes": 233,
-        "requests_today": 152
+        "requests_today": 158
       }
     },
     "openai_model_pool": {
@@ -178,31 +183,31 @@
       ],
       "request_budget_cap": 250,
       "request_budget_policy": "telemetry_only",
-      "requests_today": 152,
+      "requests_today": 158,
       "selected_model": "openai/gpt-4.1-mini",
       "pool_latest": {
         "schema_version": "1.0",
-        "generated_at_utc": "2026-04-29T20:05:44.996260Z",
+        "generated_at_utc": "2026-04-29T20:23:06.656381Z",
         "status": "active",
         "reason": "ok",
         "active": true,
         "selected_model": "openai/gpt-4.1-mini",
-        "response_ms": 1640,
+        "response_ms": 1534,
         "rate_limited": false,
-        "requests_total_today": 152,
-        "translated_total_today": 784,
+        "requests_total_today": 158,
+        "translated_total_today": 818,
         "request_budget_cap": 250,
         "request_budget_policy": "telemetry_only",
         "models": [
           {
             "model": "openai/gpt-4.1-mini",
             "priority": 0,
-            "requests_today": 134,
-            "translated_today": 714,
+            "requests_today": 140,
+            "translated_today": 748,
             "blocked_until_utc": "",
             "last_status": "ok",
             "last_error_reason": "",
-            "last_response_ms": 1640
+            "last_response_ms": 1534
           },
           {
             "model": "openai/gpt-4o-mini",
@@ -242,10 +247,10 @@
         "warn_used_pct": 80.0,
         "critical_used_pct": 100.0
       },
-      "used_pct": 60.8,
+      "used_pct": 63.2,
       "monthly_cap": 250.0,
-      "spent": 152.0,
-      "latest_age_s": 959.141927,
+      "spent": 158.0,
+      "latest_age_s": 80.918399,
       "day_utc": "2026-04-29",
       "unit": "requests_per_day",
       "stale": false
@@ -273,19 +278,19 @@
       "pipeline_status": "active",
       "pipeline_severity": "ok",
       "pipeline_reason": "ok",
-      "top_reason": "existing_canonical_name_quality_cyrillic_latin_mix:1560",
+      "top_reason": "existing_canonical_name_quality_cyrillic_latin_mix:1587",
       "window_seconds": 86400
     }
   },
   "latest_fallback": {
-    "timestamp": "2026-04-29T20:15:12.465136Z",
-    "provider": "tm_simple",
-    "provider_label": "TM/simple",
-    "source": "tm",
-    "action": "fallback_to_next_provider_validate_fail",
-    "action_label": "fallback to next provider validate fail",
-    "decision_reason": "validate_word_salad",
-    "json_file": "server.json",
-    "key": "data.otservbr.global.scripts.quests.ferumbras.ascension.movements.shulgrax.lever.L16.1956"
+    "timestamp": "2026-04-29T20:22:50.236767Z",
+    "provider": "openai_model_pool",
+    "provider_label": "OpenAI model pool",
+    "source": "openai_model_pool",
+    "action": "fallback_chain_exhausted_high_reject_types",
+    "action_label": "fallback chain exhausted high reject types",
+    "decision_reason": "high_reject_types",
+    "json_file": "items.json",
+    "key": "item.14670.name"
   }
 }
